@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { RevealPanel } from "./RevealPanel";
 import { StructuredSections } from "./StructuredSections";
 import type { LessonStep, RevealKey } from "../types";
@@ -40,20 +41,47 @@ function VocabularyBody({
   revealed: Set<RevealKey>;
 }) {
   const sections = step.answer?.answer_sections;
-  const visible = revealed.has("answer");
+  const [visibleTerms, setVisibleTerms] = useState<Set<string>>(new Set());
+  const allVisible = revealed.has("answer");
 
   if (!sections || Array.isArray(sections)) return null;
 
+  const toggleTerm = (term: string) => {
+    setVisibleTerms((current) => {
+      const next = new Set(current);
+      if (next.has(term)) next.delete(term);
+      else next.add(term);
+      return next;
+    });
+  };
+
   return (
     <div className="vocabulary-grid">
-      {Object.entries(sections).map(([term, definition]) => (
-        <article className="vocabulary-card" key={term}>
-          <div className="vocabulary-card__term">{term}</div>
-          <div className={`vocabulary-card__definition ${visible ? "is-visible" : ""}`}>
-            {visible ? String(definition) : "Anlamı öğrenciden tahmin etmesini isteyin."}
-          </div>
-        </article>
-      ))}
+      {Object.entries(sections).map(([term, definition]) => {
+        const visible = allVisible || visibleTerms.has(term);
+        return (
+          <article className="vocabulary-card" key={term}>
+            <div className="vocabulary-card__term-row">
+              <div className="vocabulary-card__term">{term}</div>
+              <button
+                className="vocabulary-card__toggle"
+                type="button"
+                onClick={() => toggleTerm(term)}
+                disabled={allVisible}
+              >
+                {visible ? "Gizle" : "Anlamı göster"}
+              </button>
+            </div>
+            <div
+              className={`vocabulary-card__definition ${visible ? "is-visible" : ""}`}
+            >
+              {visible
+                ? String(definition)
+                : "Önce bağlamdan anlamını tahmin ettirin."}
+            </div>
+          </article>
+        );
+      })}
     </div>
   );
 }
