@@ -1,4 +1,6 @@
-function renderValue(value: unknown): JSX.Element {
+import type { ReactNode } from "react";
+
+function renderValue(value: unknown): ReactNode {
   if (Array.isArray(value)) {
     return (
       <div className="structured-list">
