@@ -25,6 +25,7 @@ const originalStepById = new Map(lesson.steps.map((step) => [step.id, step]));
 type StepOverride = {
   display_prompt?: string;
   layout?: LayoutKind;
+  reveal_order?: RevealKey[];
 };
 
 type StepOverrides = Record<string, StepOverride>;
@@ -74,13 +75,7 @@ function stepLabel(step: LessonStep) {
 }
 
 function revealOrder(step: LessonStep): RevealKey[] {
-  const keys: RevealKey[] = [];
-  if (step.answer?.guidance) keys.push("guidance");
-  if (step.answer) keys.push("answer");
-  if (step.answer?.evidence_quotes?.length) keys.push("evidence");
-  if (step.answer?.explanation) keys.push("explanation");
-  if (step.content?.note) keys.push("note");
-  return keys;
+  return step.reveal_order;
 }
 
 function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
@@ -89,7 +84,8 @@ function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
   return {
     ...step,
     display_prompt: override.display_prompt ?? step.display_prompt,
-    layout: override.layout ?? step.layout
+    layout: override.layout ?? step.layout,
+    reveal_order: override.reveal_order ?? step.reveal_order
   };
 }
 
@@ -184,6 +180,32 @@ export default function App() {
     [index, stepOrder.length]
   );
 
+  const moveRevealLayer = useCallback(
+    (stepId: string, key: RevealKey, delta: -1 | 1) => {
+      const currentStep = effectiveSteps.find((item) => item.id === stepId);
+      if (!currentStep) return;
+
+      const currentIndex = currentStep.reveal_order.indexOf(key);
+      const targetIndex = currentIndex + delta;
+      if (
+        currentIndex < 0 ||
+        targetIndex < 0 ||
+        targetIndex >= currentStep.reveal_order.length
+      ) {
+        return;
+      }
+
+      const nextOrder = [...currentStep.reveal_order];
+      [nextOrder[currentIndex], nextOrder[targetIndex]] = [
+        nextOrder[targetIndex],
+        nextOrder[currentIndex]
+      ];
+
+      updateStepOverride(stepId, { reveal_order: nextOrder });
+    },
+    [effectiveSteps, updateStepOverride]
+  );
+
   const resetStepOverride = useCallback((stepId: string) => {
     setOverrides((current) => {
       const next = { ...current };
@@ -214,6 +236,10 @@ export default function App() {
         override.display_prompt.trim() !== original.display_prompt
       ) {
         exported.prompt = override.display_prompt.trim();
+      }
+
+      if (effective.reveal_order.length) {
+        exported.reveal = effective.reveal_order;
       }
 
       if (original.content) {
@@ -444,6 +470,7 @@ export default function App() {
             updateStepOverride(step.id, { display_prompt: value })
           }
           onLayoutChange={(value) => updateStepOverride(step.id, { layout: value })}
+          onRevealMove={(key, delta) => moveRevealLayer(step.id, key, delta)}
           canMoveUp={index > 0}
           canMoveDown={index < effectiveSteps.length - 1}
           onMoveUp={() => moveCurrentStep(-1)}
