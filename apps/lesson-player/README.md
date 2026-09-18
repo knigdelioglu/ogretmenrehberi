@@ -8,6 +8,9 @@
 - 1. Tema — Bir Diyeceğim Var!
 - Karagöz / Yazıcı
 - basılı s.15–35
+- 49 ders adımı
+- 17 source-index kaydı
+- 39 answer-bank kaydı
 
 ## Çalıştırma
 
@@ -63,6 +66,8 @@ Bu görünümde:
 
 Bu sayede öğrenciler “Cevabı göster” gibi öğretmen UI öğelerini görmez.
 
+Üst menüde **Öğrenci ekranını aç** seçeneği ayrıca ikinci bir tarayıcı penceresi açar. Öğretmen görünümündeki adım, reveal ve kelime-anlam değişiklikleri bu pencereye anlık olarak senkronize edilir. İkinci ekran öğretmen kontrollerini göstermez.
+
 ## Düzenleme modu
 
 `D` veya üst menüde **Düzenle** ile açılır.
@@ -73,6 +78,8 @@ Bu sayede öğrenciler “Cevabı göster” gibi öğretmen UI öğelerini gör
 - layout türünü canlı değiştirir,
 - adımı yukarı/aşağı taşıyarak ders sırasını değiştirir,
 - yönlendirme/cevap/kanıt/açıklama katmanlarının açılma sırasını değiştirir,
+- süreç maddelerini ve bilgi kartlarını doğrudan düzenler,
+- adım bazında Geniş / Normal / Kompakt içerik yoğunluğu seçer,
 - değişiklikleri `localStorage` içinde saklar,
 - yalnız ilgili adımı sıfırlayabilir,
 - düzenlenmiş yapıyı `karagoz-flow.json` olarak dışa aktarabilir.
