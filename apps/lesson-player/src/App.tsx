@@ -3,6 +3,7 @@ import {
   useCallback,
   useEffect,
   useMemo,
+  useRef,
   useState
 } from "react";
 import lessonJson from "./generated/karagoz.json";
@@ -21,6 +22,9 @@ const modeKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection`;
 const overridesKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.overrides`;
 const orderKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.order`;
 const originalStepById = new Map(lesson.steps.map((step) => [step.id, step]));
+const projectionChannelName = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection-channel`;
+const displayOnly =
+  new URLSearchParams(window.location.search).get("display") === "1";
 
 type StepOverride = {
   display_prompt?: string;
@@ -29,6 +33,13 @@ type StepOverride = {
 };
 
 type StepOverrides = Record<string, StepOverride>;
+
+type ProjectionSyncState = {
+  index: number;
+  stepOrder: string[];
+  overrides: StepOverrides;
+  revealed: RevealKey[];
+};
 
 function restoredIndex() {
   const raw = window.localStorage.getItem(progressKey);
@@ -99,6 +110,20 @@ export default function App() {
   const [overrides, setOverrides] = useState<StepOverrides>(restoredOverrides);
   const [stepOrder, setStepOrder] = useState<string[]>(restoredOrder);
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
+  const projectionChannelRef = useRef<BroadcastChannel | null>(null);
+  const projectionStateRef = useRef<ProjectionSyncState>({
+    index,
+    stepOrder,
+    overrides,
+    revealed: []
+  });
+
+  projectionStateRef.current = {
+    index,
+    stepOrder,
+    overrides,
+    revealed: [...revealed]
+  };
 
   const effectiveSteps = useMemo(
     () =>
@@ -150,6 +175,29 @@ export default function App() {
     } else {
       await document.documentElement.requestFullscreen();
     }
+  }, []);
+
+  const openProjectionWindow = useCallback(() => {
+    const url = new URL(window.location.href);
+    url.searchParams.set("display", "1");
+
+    const displayWindow = window.open(
+      url.toString(),
+      `${lesson.lesson_id}-projection`,
+      "popup=yes,width=1280,height=720"
+    );
+
+    if (!displayWindow) return;
+
+    const publish = () => {
+      projectionChannelRef.current?.postMessage({
+        type: "lesson-state",
+        state: projectionStateRef.current
+      });
+    };
+
+    window.setTimeout(publish, 250);
+    window.setTimeout(publish, 900);
   }, []);
 
   const updateStepOverride = useCallback(
@@ -289,12 +337,72 @@ export default function App() {
   }, [stepOrder]);
 
   useEffect(() => {
+    if (!("BroadcastChannel" in window)) return;
+
+    const channel = new BroadcastChannel(projectionChannelName);
+    projectionChannelRef.current = channel;
+
+    channel.onmessage = (event: MessageEvent) => {
+      const message = event.data as
+        | { type: "request-state" }
+        | { type: "lesson-state"; state: ProjectionSyncState }
+        | undefined;
+
+      if (!message) return;
+
+      if (message.type === "request-state" && !displayOnly) {
+        channel.postMessage({
+          type: "lesson-state",
+          state: projectionStateRef.current
+        });
+        return;
+      }
+
+      if (message.type === "lesson-state" && displayOnly) {
+        const state = message.state;
+        setStepOrder(state.stepOrder);
+        setOverrides(state.overrides);
+        setIndex(
+          Math.max(0, Math.min(lesson.steps.length - 1, state.index))
+        );
+        setRevealed(new Set(state.revealed));
+      }
+    };
+
+    if (displayOnly) {
+      channel.postMessage({ type: "request-state" });
+    }
+
+    return () => {
+      channel.close();
+      if (projectionChannelRef.current === channel) {
+        projectionChannelRef.current = null;
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (displayOnly) return;
+    projectionChannelRef.current?.postMessage({
+      type: "lesson-state",
+      state: projectionStateRef.current
+    });
+  }, [index, overrides, revealed, stepOrder]);
+
+  useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (
         event.target instanceof HTMLInputElement ||
         event.target instanceof HTMLTextAreaElement ||
         event.target instanceof HTMLSelectElement
       ) {
+        return;
+      }
+
+      if (displayOnly) {
+        if (event.key.toLowerCase() === "f") {
+          void toggleFullscreen();
+        }
         return;
       }
 
@@ -344,9 +452,10 @@ export default function App() {
     <div
       className={[
         "app-shell",
-        outlineOpen && !presentationMode ? "outline-open" : "",
+        outlineOpen && !presentationMode && !displayOnly ? "outline-open" : "",
         presentationMode ? "presentation-mode" : "",
-        editorOpen ? "editor-open" : ""
+        displayOnly ? "external-display" : "",
+        editorOpen && !displayOnly ? "editor-open" : ""
       ]
         .filter(Boolean)
         .join(" ")}
@@ -363,8 +472,11 @@ export default function App() {
           <button type="button" onClick={() => setEditorOpen((value) => !value)}>
             {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
           </button>
+          <button type="button" onClick={openProjectionWindow}>
+            Öğrenci ekranını aç
+          </button>
           <button type="button" onClick={togglePresentationMode}>
-            Projeksiyon modu
+            Bu ekranda projeksiyon
           </button>
           <button type="button" onClick={() => void toggleFullscreen()}>
             Tam ekran
@@ -418,7 +530,7 @@ export default function App() {
           step={step}
           revealed={revealed}
           toggle={toggle}
-          presentationMode={presentationMode}
+          presentationMode={presentationMode || displayOnly}
         />
 
         <footer className="lesson-footer">
@@ -462,7 +574,7 @@ export default function App() {
         </footer>
       </div>
 
-      {editorOpen && !presentationMode ? (
+      {editorOpen && !presentationMode && !displayOnly ? (
         <EditorPanel
           step={step}
           hasOverride={Boolean(overrides[step.id])}
