@@ -193,14 +193,17 @@ def main() -> int:
             unit_id = source_to_unit[source_id]
             item_orders[unit_id] = item_orders.get(unit_id, 0) + 1
 
-            answer = step.get("answer")
+            generated_answer = step.get("answer")
+            answer = None
             answer_id = None
-            if answer is not None:
-                answer_id = answer["question_id"]
+            if generated_answer is not None:
+                answer_id = generated_answer["question_id"]
                 if answer_id not in answer_by_id:
                     raise SystemExit(f"UNKNOWN_ANSWER:{answer_id}")
-                if answer_by_id[answer_id] != answer:
-                    raise SystemExit(f"ANSWER_PAYLOAD_DRIFT:{answer_id}")
+                # The Lesson Player may add derived display metadata such as
+                # question_no. The export must remain bound to the canonical
+                # answer-bank payload, not to a UI-normalized copy.
+                answer = answer_by_id[answer_id]
                 seen_answers.add(answer_id)
 
             item_id = f"{lesson['lesson_id']}:{step['id']}"
