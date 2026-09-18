@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { RevealPanel } from "./RevealPanel";
 import { StructuredSections } from "./StructuredSections";
 import type { LessonStep, RevealKey } from "../types";
@@ -99,9 +100,32 @@ export function StepView({
   const { answer, content, source } = step;
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
+  const stageRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!presentationMode) return;
+
+    const lastRevealedKey = [...step.reveal_order]
+      .reverse()
+      .find((key) => revealed.has(key));
+
+    if (!lastRevealedKey) {
+      stageRef.current?.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const target = stageRef.current?.querySelector(
+      `[data-reveal-key="${lastRevealedKey}"]`
+    );
+
+    target?.scrollIntoView({
+      block: "nearest",
+      behavior: "smooth"
+    });
+  }, [presentationMode, revealed, step.id, step.reveal_order]);
 
   return (
-    <main className="lesson-stage" aria-live="polite">
+    <main ref={stageRef} className="lesson-stage" aria-live="polite">
       <div className="stage-meta">
         <span className="page-pill">Basılı s. {source.printed_page_range}</span>
         <span>{source.book_heading}</span>
@@ -189,44 +213,58 @@ export function StepView({
         ) : null}
 
         {answer?.guidance && revealed.has("guidance") ? (
-          <RevealPanel label="Yönlendirme" tone="guidance">
-            <p>{answer.guidance}</p>
-          </RevealPanel>
+          <div data-reveal-key="guidance">
+            <RevealPanel label="Yönlendirme" tone="guidance">
+              <p>{answer.guidance}</p>
+            </RevealPanel>
+          </div>
         ) : null}
 
         {answer && revealed.has("answer") && !isVocabulary ? (
-          <RevealPanel
-            label={answer.entry_type === "performance_support" ? "Uygulama desteği" : "Cevap"}
-            tone="answer"
-          >
-            <p>{answer.answer}</p>
-            {answer.answer_sections &&
-            !Array.isArray(answer.answer_sections) ? (
-              <StructuredSections sections={answer.answer_sections} />
-            ) : null}
-          </RevealPanel>
+          <div data-reveal-key="answer">
+            <RevealPanel
+              label={
+                answer.entry_type === "performance_support"
+                  ? "Uygulama desteği"
+                  : "Cevap"
+              }
+              tone="answer"
+            >
+              <p>{answer.answer}</p>
+              {answer.answer_sections &&
+              !Array.isArray(answer.answer_sections) ? (
+                <StructuredSections sections={answer.answer_sections} />
+              ) : null}
+            </RevealPanel>
+          </div>
         ) : null}
 
         {answer?.evidence_quotes?.length && revealed.has("evidence") ? (
-          <RevealPanel label="Metinden kısa kanıt" tone="evidence">
-            <div className="quote-list">
-              {answer.evidence_quotes.map((quote) => (
-                <strong key={quote}>“{quote}”</strong>
-              ))}
-            </div>
-          </RevealPanel>
+          <div data-reveal-key="evidence">
+            <RevealPanel label="Metinden kısa kanıt" tone="evidence">
+              <div className="quote-list">
+                {answer.evidence_quotes.map((quote) => (
+                  <strong key={quote}>“{quote}”</strong>
+                ))}
+              </div>
+            </RevealPanel>
+          </div>
         ) : null}
 
         {answer?.explanation && revealed.has("explanation") ? (
-          <RevealPanel label="Açıklama" tone="explanation">
-            <p>{answer.explanation}</p>
-          </RevealPanel>
+          <div data-reveal-key="explanation">
+            <RevealPanel label="Açıklama" tone="explanation">
+              <p>{answer.explanation}</p>
+            </RevealPanel>
+          </div>
         ) : null}
 
         {content?.note && revealed.has("note") ? (
-          <RevealPanel label="Öğretmen notu" tone="note">
-            <p>{content.note}</p>
-          </RevealPanel>
+          <div data-reveal-key="note">
+            <RevealPanel label="Öğretmen notu" tone="note">
+              <p>{content.note}</p>
+            </RevealPanel>
+          </div>
         ) : null}
       </section>
     </main>
