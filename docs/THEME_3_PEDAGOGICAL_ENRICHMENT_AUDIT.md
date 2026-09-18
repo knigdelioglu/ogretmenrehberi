@@ -250,3 +250,8 @@ Aşağıdaki başlıklarda kitap zaten yeterli bilgi sağladığı için ayrıca
 - tür dönüşümünün yazma aşamaları.
 
 Tema 3'te de temel ihtiyaç ansiklopedik ek bilgi değil; üç kısa kavramsal netleştirmedir: **biyografi–otobiyografi, zihniyet ve mülakat**.
+
+
+## Uygulama durumu
+
+Belirlenen üç tamamlayıcı bilgi Tema 3 answer-bank içine eklendi: biyografi–otobiyografi ayrımı, zihniyet kavramı ve mülakat tanımı.
