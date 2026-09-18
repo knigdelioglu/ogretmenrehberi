@@ -93,7 +93,7 @@ export function StepView({
         <span>{source.book_heading}</span>
       </div>
 
-      <section className="stage-card">
+      <section className={`stage-card density-${step.density}`}>
         {answer ? (
           <>
             <div className="stage-card__eyebrow">
