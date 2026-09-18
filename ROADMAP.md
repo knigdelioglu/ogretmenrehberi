@@ -225,6 +225,7 @@ Bir öğretmen 1. tema içinde yalnızca Kindle üzerinden, sürekli geri kaydı
 Kanonik veriyi sınıfta doğrudan yürütülebilen tam ekran bir ders arayüzüne dönüştürmek.
 
 ### Doğrulanmış dersler
+- **1. Tema / Giriş — s.12–14**
 - **Karagöz / Yazıcı — s.15–35**
 - **Mektup / Âli’ye Mektuplar — s.36–52**
 - **Edebiyat Atölyesi-1 / Konuşma — s.53–58**
@@ -252,7 +253,7 @@ Kanonik veriyi sınıfta doğrudan yürütülebilen tam ekran bir ders arayüzü
 Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
 
 ### Kalite kapısı
-Öğretmen Karagöz s.15–35 arasında EPUB'a dönmeden ilerleyebilmeli; ilgili source-index ve answer-bank kayıtlarından hiçbiri sessizce atlanamamalı.
+1. Tema s.12–83 arasında **7 ders / 176 adım / 129 source-index / 151 answer-bank** kaydıyla kesintisiz temsil edilmelidir. Herhangi bir source-index veya answer-bank kaydı sessizce atlanırsa build başarısız olmalıdır.
 
 ---
 
