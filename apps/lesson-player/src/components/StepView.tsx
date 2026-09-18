@@ -19,7 +19,8 @@ const taskTypeLabels: Record<string, string> = {
   REFERENCE: "BİLGİ",
   ACTIVITY: "ETKİNLİK",
   PERFORMANCE: "UYGULAMA",
-  ASSESSMENT: "DEĞERLENDİRME"
+  ASSESSMENT: "DEĞERLENDİRME",
+  VOCABULARY: "SÖZ VARLIĞI"
 };
 
 function taskTypeLabel(taskType: string) {
@@ -131,7 +132,15 @@ export function StepView({
         <span>{source.book_heading}</span>
       </div>
 
-      <section className={`stage-card density-${step.density}`}>
+      <section
+        className={[
+          "stage-card",
+          `density-${step.density}`,
+          isVocabulary ? "vocabulary-stage" : ""
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      >
         {answer ? (
           <>
             <div className="stage-card__eyebrow">
