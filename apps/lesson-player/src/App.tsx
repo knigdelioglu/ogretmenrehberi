@@ -19,6 +19,8 @@ const lesson = lessonJson as LessonData;
 const progressKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.index`;
 const modeKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection`;
 const overridesKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.overrides`;
+const orderKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.order`;
+const originalStepById = new Map(lesson.steps.map((step) => [step.id, step]));
 
 type StepOverride = {
   display_prompt?: string;
@@ -43,6 +45,27 @@ function restoredOverrides(): StepOverrides {
     return parsed && typeof parsed === "object" ? parsed : {};
   } catch {
     return {};
+  }
+}
+
+function restoredOrder(): string[] {
+  const canonical = lesson.steps.map((step) => step.id);
+  const raw = window.localStorage.getItem(orderKey);
+  if (!raw) return canonical;
+
+  try {
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed) || parsed.length !== canonical.length) return canonical;
+
+    const canonicalSet = new Set(canonical);
+    if (parsed.some((id) => typeof id !== "string" || !canonicalSet.has(id))) {
+      return canonical;
+    }
+
+    if (new Set(parsed).size !== canonical.length) return canonical;
+    return parsed;
+  } catch {
+    return canonical;
   }
 }
 
@@ -78,11 +101,17 @@ export default function App() {
   );
   const [editorOpen, setEditorOpen] = useState(false);
   const [overrides, setOverrides] = useState<StepOverrides>(restoredOverrides);
+  const [stepOrder, setStepOrder] = useState<string[]>(restoredOrder);
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
 
   const effectiveSteps = useMemo(
-    () => lesson.steps.map((item) => applyOverride(item, overrides[item.id])),
-    [overrides]
+    () =>
+      stepOrder.map((id) => {
+        const original = originalStepById.get(id);
+        if (!original) throw new Error(`Unknown lesson step in order: ${id}`);
+        return applyOverride(original, overrides[id]);
+      }),
+    [overrides, stepOrder]
   );
   const step = effectiveSteps[index];
 
@@ -140,6 +169,21 @@ export default function App() {
     []
   );
 
+  const moveCurrentStep = useCallback(
+    (delta: -1 | 1) => {
+      const target = index + delta;
+      if (target < 0 || target >= stepOrder.length) return;
+
+      setStepOrder((current) => {
+        const next = [...current];
+        [next[index], next[target]] = [next[target], next[index]];
+        return next;
+      });
+      setIndex(target);
+    },
+    [index, stepOrder.length]
+  );
+
   const resetStepOverride = useCallback((stepId: string) => {
     setOverrides((current) => {
       const next = { ...current };
@@ -149,8 +193,11 @@ export default function App() {
   }, []);
 
   const exportLessonFlow = useCallback(() => {
-    const steps = lesson.steps.map((original, itemIndex) => {
-      const effective = effectiveSteps[itemIndex];
+    const steps = effectiveSteps.map((effective) => {
+      const original = originalStepById.get(effective.id);
+      if (!original) {
+        throw new Error(`Unknown lesson step during export: ${effective.id}`);
+      }
       const override = overrides[original.id];
       const exported: Record<string, unknown> = {
         id: original.id,
@@ -210,6 +257,10 @@ export default function App() {
   useEffect(() => {
     window.localStorage.setItem(overridesKey, JSON.stringify(overrides));
   }, [overrides]);
+
+  useEffect(() => {
+    window.localStorage.setItem(orderKey, JSON.stringify(stepOrder));
+  }, [stepOrder]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -393,6 +444,10 @@ export default function App() {
             updateStepOverride(step.id, { display_prompt: value })
           }
           onLayoutChange={(value) => updateStepOverride(step.id, { layout: value })}
+          canMoveUp={index > 0}
+          canMoveDown={index < effectiveSteps.length - 1}
+          onMoveUp={() => moveCurrentStep(-1)}
+          onMoveDown={() => moveCurrentStep(1)}
           onReset={() => resetStepOverride(step.id)}
           onExport={exportLessonFlow}
           onClose={() => setEditorOpen(false)}
