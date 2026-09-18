@@ -1191,3 +1191,36 @@ button:focus-visible {
   font-size: clamp(0.93rem, 1.12vw, 1.03rem);
   line-height: 1.48;
 }
+
+
+/* Visual QA refinements */
+
+.app-shell:not(.presentation-mode):not(.external-display) .stage-card:not(.density-large) h1 {
+  max-width: 30ch;
+  font-size: clamp(1.9rem, 3.65vw, 3.85rem);
+  line-height: 1.06;
+}
+
+.topbar__actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.topbar__actions button {
+  white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .topbar__actions {
+    max-width: 62%;
+  }
+
+  .topbar button {
+    padding: 8px 10px;
+    font-size: 0.86rem;
+  }
+}
