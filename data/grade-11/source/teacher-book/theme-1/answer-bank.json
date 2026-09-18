@@ -14,10 +14,10 @@
     "note": "Gerçek kitap sayfası nihai kontroldür; eski soru envanteri eksik/özetlenmiş kayıtlar içerdiği için bu blok kitap sayfalarından yeniden indekslenmiştir."
   },
   "coverage": {
-    "printed_page_range": "14-35",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 (Anlama) / Okuma - Karagöz Oyunu (Yazıcı)",
-    "entry_count": 40,
-    "next_printed_page": 36
+    "printed_page_range": "14-52",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 (Karagöz / Yazıcı) + Metin Tahlili-2 (Mektup / Âli'ye Mektuplar + Dilekçe)",
+    "entry_count": 79,
+    "next_printed_page": 53
   },
   "parts": [
     {
@@ -54,6 +54,30 @@
     },
     {
       "path": "answer-bank/part-06c-page-35.json",
+      "entries": 1
+    },
+    {
+      "path": "answer-bank/part-07-pages-36-39.json",
+      "entries": 9
+    },
+    {
+      "path": "answer-bank/part-08-pages-40-41.json",
+      "entries": 7
+    },
+    {
+      "path": "answer-bank/part-09-pages-43-44.json",
+      "entries": 7
+    },
+    {
+      "path": "answer-bank/part-10-pages-45-47.json",
+      "entries": 8
+    },
+    {
+      "path": "answer-bank/part-11-pages-48-50.json",
+      "entries": 7
+    },
+    {
+      "path": "answer-bank/part-12-page-52.json",
       "entries": 1
     }
   ],
