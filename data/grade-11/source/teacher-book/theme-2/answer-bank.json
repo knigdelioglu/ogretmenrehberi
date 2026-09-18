@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "document_type": "OGRETMEN_REHBERI_ANSWER_BANK_INDEX",
+  "course_id": "TDE_11",
+  "grade": 11,
+  "theme_id": "TEMA_02",
+  "theme_title": "KÜLTÜR YOLCULUĞU",
+  "status": "PARTIAL_REBUILD",
+  "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
+  "block_standard": "docs/BLOCK_AUTHORING_STANDARD.md",
+  "source_policy": {
+    "legacy_answer_bank_reused": false,
+    "primary_source": "official_textbook_pdf",
+    "imported_question_inventory_used_as_completeness_source": false,
+    "note": "Gerçek kitap sayfası nihai kontroldür. Tema 2, doğal pedagojik bloklar hâlinde yeniden üretilir."
+  },
+  "coverage": {
+    "printed_page_range": "86-89",
+    "scope": "Temaya Başlarken + Ortak Türk Alfabesi + ana okuma öncesi ortak kelimeler araştırması",
+    "entry_count": 13,
+    "source_limited_entries": 1,
+    "next_printed_page": 90
+  },
+  "parts": [
+    {
+      "path": "answer-bank/part-01-pages-86-89.json",
+      "entries": 13
+    }
+  ],
+  "rendering_contract": {
+    "evidence_quotes": "bold",
+    "guidance": "optional",
+    "explanation": "optional",
+    "answer_sections": "structured when needed"
+  }
+}
