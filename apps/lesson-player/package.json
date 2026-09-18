@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "data": "node scripts/build-lesson-data.mjs",
+    "test:data": "node scripts/test-lesson-data.mjs",
     "dev": "npm run data && vite",
-    "build": "npm run data && tsc --noEmit && vite build",
+    "build": "npm run data && npm run test:data && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
