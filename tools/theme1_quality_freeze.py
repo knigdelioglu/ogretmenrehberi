@@ -164,7 +164,16 @@ def main() -> int:
 
     answer_index, answers = load_answers()
     source_index, sources = load_sources()
-    lessons = json.loads(args.lesson_catalog.read_text(encoding="utf-8"))
+    all_lessons = json.loads(args.lesson_catalog.read_text(encoding="utf-8"))
+    lessons = [
+        lesson
+        for lesson in all_lessons
+        if lesson.get("theme_id") == "TEMA_01"
+        or (
+            lesson.get("theme_id") is None
+            and str(lesson.get("lesson_id", "")).startswith("T11-T01-")
+        )
+    ]
     ogretmenos = json.loads(args.ogretmenos_export.read_text(encoding="utf-8"))
     epub_report = json.loads(args.epub_report.read_text(encoding="utf-8"))
     freeze_manifest = json.loads(args.freeze_manifest.read_text(encoding="utf-8"))
