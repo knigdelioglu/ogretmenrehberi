@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0.0",
+  "document_type": "OGRETMEN_REHBERI_ANSWER_BANK_INDEX",
+  "course_id": "TDE_11",
+  "grade": 11,
+  "theme_id": "TEMA_04",
+  "theme_title": "HAYATIN AYNASI",
+  "status": "PARTIAL_REBUILD",
+  "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
+  "block_standard": "docs/BLOCK_AUTHORING_STANDARD.md",
+  "source_policy": {
+    "legacy_answer_bank_reused": false,
+    "primary_source": "official_textbook_pdf",
+    "imported_question_inventory_used_as_completeness_source": false,
+    "note": "Gerçek kitap sayfası nihai kontroldür. Tema 4 doğal pedagojik bloklar hâlinde yeniden üretilir; görsel/biçim bağımlı sorular gerçek sayfa üzerinden doğrulanır."
+  },
+  "coverage": {
+    "printed_page_range": "238-242",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 / Ben, Mimar Sinan — konuya giriş ve okumayı yönetme",
+    "entry_count": 7,
+    "source_limited_entries": 0,
+    "next_printed_page": 243
+  },
+  "parts": [
+    {
+      "path": "answer-bank/part-01-pages-238-242.json",
+      "entries": 7
+    }
+  ],
+  "rendering_contract": {
+    "evidence_quotes": "bold",
+    "guidance": "optional",
+    "explanation": "optional",
+    "answer_sections": "structured when needed"
+  }
+}
