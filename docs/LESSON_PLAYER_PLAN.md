@@ -8,7 +8,7 @@ Ana ilke:
 
 > Kanonik veri tek gerçek içerik kaynağıdır. Uygulama, içeriği yeniden yazmaz; ders sırasını, görünümü ve aşamalı gösterimi tanımlar.
 
-İlk pilot yalnızca **11. Sınıf → 1. Tema → Metin Tahlili-1 → Karagöz / Yazıcı → basılı s.15–35** kapsamındadır.
+İlk pilot Karagöz / Yazıcı ile tamamlandı. Motor artık birden fazla lesson-flow dosyasını katalog hâlinde yükler; ikinci doğrulanmış ders **Mektup / Âli’ye Mektuplar → basılı s.36–52** kapsamıdır.
 
 ---
 
@@ -111,7 +111,7 @@ apps/lesson-player/
     │   ├── ProcessCard.tsx
     │   └── RevealPanel.tsx
     └── generated/
-        └── karagoz.json
+        └── lessons.json
 ```
 
 Sunum sözleşmesi:
@@ -121,13 +121,13 @@ data/.../source-index.json
              +
 data/.../answer-bank/*.json
              +
-data/.../presentation/...lesson-flow.json
+data/.../presentation/*-flow.json
              |
              v
 scripts/build-lesson-data.mjs
              |
              v
-src/generated/karagoz.json
+src/generated/lessons.json
              |
              v
 React Lesson Player
@@ -355,7 +355,9 @@ Build sırasında en az şu kontroller yapılır:
 - [ ] içerik bloklarını bölme/birleştirme
 
 ### Faz C — Tema 1 genelleştirme
-- [ ] Mektup
+- [x] çoklu lesson-flow kataloğu
+- [x] ders seçici ve lesson deep-link
+- [x] Mektup / Âli’ye Mektuplar (s.36–52)
 - [ ] Konuşma
 - [ ] Dinleme/İzleme
 - [ ] E-posta
@@ -364,8 +366,8 @@ Build sırasında en az şu kontroller yapılır:
 ### Faz D — Çıktılar
 - [ ] yazdırılabilir PDF
 - [ ] PPTX export
-- [ ] ders oturumu kaldığı yeri hatırlama
-- [ ] presenter ekranı
+- [x] ders oturumu kaldığı yeri hatırlama
+- [x] ayrı presenter/öğrenci ekranı
 
 ### Faz E — 11. sınıfın tamamı
 - [ ] Tema 2
