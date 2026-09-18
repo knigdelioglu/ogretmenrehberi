@@ -5,7 +5,8 @@ on:
   push:
     branches:
       - main
-      - "feat/theme1-quality-freeze"
+      - "feat/**"
+      - "fix/**"
     paths:
       - "tools/build_kindle_epub.py"
       - "tools/build_ogretmenos_export.py"
