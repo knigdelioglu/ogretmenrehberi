@@ -197,6 +197,31 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-yazma-self.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T01-YAZMA&step=s78-self"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-assessment-dialogue.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-DEGERLENDIRME&step=s81-q5"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-assessment-table.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-DEGERLENDIRME&step=s83-q12"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-assessment-source-limited.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T01-DEGERLENDIRME&step=s83-q13"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -218,5 +243,8 @@ jobs:
             lesson-player-yazma-plan.png
             lesson-player-yazma-email.png
             lesson-player-yazma-self.png
+            lesson-player-assessment-dialogue.png
+            lesson-player-assessment-table.png
+            lesson-player-assessment-source-limited.png
             apps/lesson-player/dist
           if-no-files-found: error
