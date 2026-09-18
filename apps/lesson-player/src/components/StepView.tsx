@@ -39,6 +39,13 @@ function answerControls(step: LessonStep): RevealKey[] {
   return step.reveal_order;
 }
 
+function revealButtonLabel(step: LessonStep, key: RevealKey) {
+  if (key === "answer" && step.answer?.entry_type === "source_limited") {
+    return "Kaynak notu";
+  }
+  return buttonLabels[key];
+}
+
 function VocabularyBody({
   step,
   revealed,
@@ -146,7 +153,9 @@ export function StepView({
             <div className="stage-card__eyebrow">
               {answer.entry_type === "performance_support"
                 ? "Uygulama / performans"
-                : taskTypeLabel(source.task_type)}
+                : answer.entry_type === "source_limited"
+                  ? "Kaynak sınırlı · " + taskTypeLabel(source.task_type)
+                  : taskTypeLabel(source.task_type)}
             </div>
             {answer.question_no ? (
               <div className="question-number">Soru {answer.question_no}</div>
@@ -215,7 +224,7 @@ export function StepView({
                 type="button"
               >
                 {revealed.has(key) ? "Gizle: " : "Göster: "}
-                {buttonLabels[key]}
+                {revealButtonLabel(step, key)}
               </button>
             ))}
           </div>
@@ -235,7 +244,9 @@ export function StepView({
               label={
                 answer.entry_type === "performance_support"
                   ? "Uygulama desteği"
-                  : "Cevap"
+                  : answer.entry_type === "source_limited"
+                    ? "Kaynak sınırı / doğrulanabilen çerçeve"
+                    : "Cevap"
               }
               tone="answer"
             >
