@@ -1,6 +1,6 @@
 # Roadmap — Öğretmen Rehberi
 
-Bu roadmap, 11. sınıf öğretmen rehberinin **kaynaklardan doğrulanabilir kanonik veriye**, oradan da **ÖğretmenOS** ve **Kindle uyumlu EPUB** çıktılarına dönüşmesini aşamalı olarak tanımlar.
+Bu roadmap, 11. sınıf öğretmen rehberinin **kaynaklardan doğrulanabilir kanonik veriye**, oradan da **ÖğretmenOS**, **Kindle uyumlu EPUB** ve **Ders Modu / Lesson Player** tüketicilerine dönüşmesini aşamalı olarak tanımlar.
 
 Ana ilke: içerik üretimini hızlandırmadan önce veri modeli, kaynak izi ve kalite kapıları sağlamlaştırılır.
 
@@ -219,7 +219,36 @@ Bir öğretmen 1. tema içinde yalnızca Kindle üzerinden, sürekli geri kaydı
 
 ---
 
-## Faz 7 — 1. Tema entegrasyon ve kalite dondurması
+## Faz 7 — Ders Modu / Lesson Player pilotu
+
+### Hedef
+Kanonik veriyi sınıfta doğrudan yürütülebilen tam ekran bir ders arayüzüne dönüştürmek.
+
+### İlk pilot
+**11. sınıf 1. Tema — Karagöz / Yazıcı — basılı s.15–35**
+
+### İşler
+- [x] uygulama planını ve lesson-flow sözleşmesini oluştur
+- [x] React/Vite uygulama kabuğunu oluştur
+- [x] source-index + answer-bank + lesson-flow veri derleyicisini oluştur
+- [x] source-index ve answer-bank eksiksizlik kapısını ekle
+- [x] soru, süreç, bilgi, vocabulary ve yapı görünümü için ilk rendererları oluştur
+- [x] kontrollü reveal, klavye navigasyonu ve tam ekranı ekle
+- [ ] CI build sonucunu doğrula
+- [ ] gerçek tarayıcı/projektör smoke testi
+- [ ] uzun içerik ve küçük ekran taşma testi
+- [ ] kullanıcı düzenleme modu
+- [ ] presenter/ikinci ekran görünümü
+- [ ] PDF/PPTX dışa aktarma
+
+Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
+
+### Kalite kapısı
+Öğretmen Karagöz s.15–35 arasında EPUB'a dönmeden ilerleyebilmeli; ilgili source-index ve answer-bank kayıtlarından hiçbiri sessizce atlanamamalı.
+
+---
+
+## Faz 8 — 1. Tema entegrasyon ve kalite dondurması
 
 ### Hedef
 Şemayı tüm temalara çoğaltmadan önce gerçek kullanım sorunlarını bulmak.
@@ -240,7 +269,7 @@ Bir öğretmen 1. tema içinde yalnızca Kindle üzerinden, sürekli geri kaydı
 
 ---
 
-## Faz 8 — 2–4. temalara ölçekleme
+## Faz 9 — 2–4. temalara ölçekleme
 
 ### Hedef
 Pilot mimariyi bozmadan kalan temaları tamamlamak.
@@ -270,7 +299,7 @@ Her tema için veri doğrulaması, kaynak izi ve review durumu ayrı raporlanır
 
 ---
 
-## Faz 9 — Arama ve indeks kalitesi
+## Faz 10 — Arama ve indeks kalitesi
 
 ### Hedef
 Rehberi yalnız doğrusal kitap olmaktan çıkarıp hızlı başvuru kaynağına dönüştürmek.
@@ -288,7 +317,7 @@ Rehberi yalnız doğrusal kitap olmaktan çıkarıp hızlı başvuru kaynağına
 
 ---
 
-## Faz 10 — Release hattı
+## Faz 11 — Release hattı
 
 ### Hedef
 Tek komutla doğrulanmış çıktılar üretmek.
