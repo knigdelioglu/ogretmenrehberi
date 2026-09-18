@@ -228,3 +228,8 @@ Aşağıdaki alanlarda kitap zaten yeterli bilgi sağladığı için ayrıca kon
 - kültürel miras ve müzelerin işlevi
 
 Tema 2'de de temel ihtiyaç daha fazla ansiklopedik bilgi değil; öğrencinin karşısına çıkan birkaç teknik kavramın kısa ve anlaşılır biçimde açıklanmasıdır.
+
+
+## Uygulama durumu
+
+Belirlenen altı tamamlayıcı bilgi Tema 2 answer-bank içine eklendi: alfabe–yazı dili ayrımı, fonoloji/morfoloji/sentaks, anı–hikâye ayrımı, konargöçer yaşam, anlam daralması ve izlenim yazısı tanımı.
