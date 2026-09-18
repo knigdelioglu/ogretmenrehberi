@@ -101,7 +101,17 @@
       "prompt_summary": "Kitaptaki ölçütlere uygun tamamlanmış örnek e-posta",
       "answer": "Kime: okulun resmî e-posta adresi\nKonu: Kütüphane Kullanım Süresinin Uzatılması Talebi\n\nSayın Müdürüm,\n\nOkulumuz kütüphanesinden özellikle ders çıkışlarında araştırma yapmak ve kitap okumak amacıyla yararlanıyoruz. Ancak mevcut kapanış saati, bazı günlerde çalışmalarımızı tamamlamamız için yeterli olmamaktadır.\n\nKütüphanenin haftanın belirli günlerinde ders bitiminden sonra bir saat daha açık tutulmasının öğrencilerin araştırma, ödev ve okuma çalışmalarına katkı sağlayacağını düşünüyorum. Uygun görülmesi hâlinde uygulamanın belirli bir süre denenmesi ve kullanım durumuna göre yeniden değerlendirilmesi mümkün olabilir.\n\nTalebimi değerlendirmenizi rica eder, iyi çalışmalar dilerim.\n\nSaygılarımla,\nAd Soyad\nSınıf / Numara",
       "guidance": "Bu örnek kopyalanacak tek doğru metin değildir. Öğrenci farklı bir amaç seçebilir; değerlendirmede konu satırı, hitap, açık amaç, gerekçe, uygun dil, düzen ve kapanış dikkate alınmalıdır.",
-      "source_locator": "basılı s.77 / PDF s.78"
+      "source_locator": "basılı s.77 / PDF s.78",
+      "answer_sections": {
+        "Gönderme Öncesi Kontrol": [
+          "Doğru alıcı seçilmiş mi?",
+          "Konu satırı açık ve içeriğe uygun mu?",
+          "Hitap alıcıya uygun mu?",
+          "İstek veya bilgi kısa ve anlaşılır biçimde ifade edilmiş mi?",
+          "Metinde sözü edilen ek gerçekten eklenmiş mi?",
+          "Uygun bir kapanış ve gönderenin adı yer alıyor mu?"
+        ]
+      }
     },
     {
       "question_id": "T1-P78-PERF01",

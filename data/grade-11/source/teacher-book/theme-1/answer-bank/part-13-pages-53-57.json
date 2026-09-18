@@ -12,7 +12,7 @@
       "prompt_summary": "Seksenler videosundaki sözlü iletişim engellerini belirleme",
       "answer": "Bu sorunun kesin cevabı QR bağlantılı Seksenler videosundaki sahneye bağlıdır; video içeriği ders kitabı PDF'sinde yer almadığı için sahnede görülmeyen davranışlar kesinmiş gibi yazılmamalıdır. Öğrenciler videoyu izlerken özellikle karşıdakini gerçekten dinlememe, söz kesme, yanlış anlama, önyargılı yaklaşma, uygun olmayan ses tonu ve beden dili gibi iletişim engellerinin bulunup bulunmadığını belirleyebilir.",
       "guidance": "Videoyu izlerken tahtaya iki sütun açılabilir: 'Gözlenen davranış' ve 'İletişime etkisi'. Yalnız videoda gerçekten görülen davranışlar kaydedilmelidir.",
-      "explanation": "Aynı bölümdeki İşitmek ve Dinlemek metni iletişim kopukluğunun temel nedenleri olarak gerçek anlamda dinlememeyi, kişinin kendi iç sorunlarına gömülmesini ve dinleme becerisinin yeterince gelişmemesini açıkça verir; ancak bunların Seksenler videosunda birebir bulunduğu PDF'den doğrulanamaz.",
+      "explanation": "Aynı bölümdeki İşitmek ve Dinlemek metni iletişim kopukluğunun temel nedenleri olarak gerçek anlamda dinlememeyi, kişinin kendi iç sorunlarına gömülmesini ve dinleme becerisinin yeterince gelişmemesini açıkça verir; ancak bunların Seksenler videosunda birebir bulunduğu PDF'den doğrulanamaz. Çok modlu metin; anlamı yalnız sözcüklerle değil, görüntü, ses, müzik, yazı, beden dili, grafik gibi birden fazla anlatım kanalını birlikte kullanarak kuran metindir.",
       "source_locator": "basılı s.53 / PDF s.54; QR video gerekli"
     },
     {
@@ -34,7 +34,8 @@
       "evidence_quotes": [
         "beni işitir ama dinlemez"
       ],
-      "source_locator": "basılı s.53-54 / PDF s.54-55"
+      "source_locator": "basılı s.53-54 / PDF s.54-55",
+      "explanation": "İşitmek, sesi fiziksel olarak algılamaktır; dinlemek ise dikkati vererek anlam kurma çabasıdır. Bu nedenle bir kişi karşısındakini işittiği hâlde onu gerçekten dinlemiyor olabilir."
     },
     {
       "question_id": "T1-P54-PERF01",

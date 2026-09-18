@@ -1,4 +1,4 @@
-# Tema 1 — Pedagojik Ek Bilgi ve Zamanlama Denetimi
+# Tema 1 — Pedagojik Ek Bilgi Denetimi
 
 **Tema:** Bir Diyeceğim Var!
 **Kapsam:** basılı s.14–83
@@ -9,12 +9,6 @@ Tema 1 özellikle Karagöz bloğunda ansiklopedik bilgi aktarmaktan çok şu sı
 
 Tema girişinde hedef, geleneksel Türk tiyatrosu hakkında bilgileri **pekiştirmek** olarak veriliyor. s.15'teki Seyirlik Halk Oyunları metni de bu bilgileri **hatırlatmak amacıyla** sunuluyor. Bu nedenle öğretmen rehberi tema başında Karagöz, ortaoyunu, meddah ve kukla hakkında uzun bir konu anlatımı vermemeli.
 
-Bu raporda dört karar etiketi kullanılır:
-
-- **VERME:** Kitap biraz sonra zaten öğretiyor; erkenden vermek keşif etkinliğini bozar.
-- **MİKRO EK BİLGİ:** 30–90 saniyelik kısa öğretmen açıklaması.
-- **SONRADAN PEKİŞTİR:** Öğrenci önce çıkarım yapsın, sonra öğretmen kavramı adlandırsın.
-- **OPSİYONEL ZENGİNLEŞTİRME:** Tema hedefi için zorunlu olmayan ek bilgi.
 
 ## s.14 — Edebî metin ve gerçeklik
 
@@ -61,7 +55,6 @@ Uzun konu anlatımı gerekli değil. Kitabın verdiği çekirdek ayrım yeterlid
 - Kukla → figür
 - Köy seyirlik → toplu geleneksel gösteri, dans/bedensel anlatım
 
-Mevcut rehberdeki T1-P31-Q07 cümlesindeki 'Karagöz-Hacivat ikilisinin orta oyunundaki karşılığı Kavuklu-Pişekâr'dır' ifadesi fazla kesin. 'İşlevleri bakımından benzer bir karşıtlık kurarlar; bire bir aynı kişiler değildir' şeklinde yumuşatılması daha doğru olur.
 
 ## s.32–35 — Yapı, çatışma, dil–üslup ve sosyal bilimler
 
@@ -128,13 +121,6 @@ Burada yeni öğretim yapılmamalı. Yeni görünen bilgi gerekiyorsa soru metni
 
 Bunların dışında Tema 1'de uzun ek ders anlatımı gerekli görünmüyor.
 
-## Rehber için yapısal öneri
+## Uygulama durumu
 
-Temel eksik, cevap değil **bilgi zamanlaması**. Öğretmen rehberinde ileride şu tür bir meta katman yararlı olacaktır:
-
-- timing: before_activity / after_student_attempt / after_block / optional_enrichment / fallback_only
-- note: kısa öğretmen bağlamı
-- do_not_preteach: henüz söylenmemesi gereken bilgi
-- later_in_book: kitabın bu bilgiyi vereceği sayfa
-
-Örnek: s.27'de Karagöz–Hacivat kişiliklerini öğrenci önce metinden çıkarsın; 'tip' kavramı etkinlikten sonra öğretmen tarafından 1–2 cümleyle adlandırılsın.
+Belirlenen beş tamamlayıcı bilgi answer-bank içine eklendi: tip kavramı, işitmek–dinlemek ayrımı, çok modlu metin tanımı, mektup türünü tanıma formülü ve e-posta gönderme öncesi kontrol listesi.
