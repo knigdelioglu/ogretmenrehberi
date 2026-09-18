@@ -3,11 +3,11 @@
   "lesson_id": "T11-T01-KONUSMA",
   "lesson_slug": "konusma",
   "title": "Edebiyat Atölyesi-1 — Konuşma",
-  "subtitle": "Sözlü İletişim Engellerini Konu Alan Bir Drama · 11. Sınıf · 1. Tema",
+  "subtitle": "Sözlü İletişim Engellerini Konu Alan Drama · 11. Sınıf · 1. Tema",
   "printed_page_range": "53-58",
   "required_source_range": {
     "from": "T01-S0057",
-    "to": "T01-S0062"
+    "to": "T01-S0063"
   },
   "steps": [
     {
@@ -23,7 +23,7 @@
       "source_record_id": "T01-S0057",
       "answer_id": "T1-P53-Q02",
       "layout": "question",
-      "prompt": "Bu engellerin iletişimi nasıl etkilediğini tartışınız.",
+      "prompt": "Bu engellerin iletişimi nasıl etkilediğini tartışınız ve ulaştığınız sonuçları performans görevinize hazırlık amacıyla tahtaya yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
@@ -31,134 +31,176 @@
       "source_record_id": "T01-S0057",
       "answer_id": "T1-P53-Q03",
       "layout": "question",
-      "prompt": "Doğru bir iletişimin niteliklerini günlük yaşam deneyimlerinizden hareketle açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt": "Doğru bir iletişimin niteliklerine dair fikirlerinizi günlük yaşamınızdaki deneyimlerinizden yola çıkarak açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
     },
     {
-      "id": "s54-process",
-      "source_record_id": "T01-S0058",
-      "layout": "process",
-      "prompt": "Drama çalışmasını planlayın",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "content": {
-        "lead": "Sözlü iletişim engellerini görünür kılacak kısa bir drama için hazırlık yapın.",
-        "items": [
-          "Öğretmeninizin rehberliğinde gruplara ayrılın.",
-          "Konuşmanın konusunu ve amacını belirleyin.",
-          "Gerekli gözlem, inceleme ve araştırmaları yapın.",
-          "Canlandırmanın süresini ve hedef kitlesini belirleyin.",
-          "Yöntem/strateji, araçlar, mekân ve teknik koşulları planlayın.",
-          "Canlandırmadan önce iletişim engeli oluşturabilecek ortam sorunlarını giderin."
-        ]
-      },
-      "density": "compact"
-    },
-    {
-      "id": "s54-perf",
+      "id": "s54-plan",
       "source_record_id": "T01-S0058",
       "answer_id": "T1-P54-PERF01",
       "layout": "structure",
-      "prompt": "Drama için örnek plan oluşturun.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "density": "compact"
-    },
-    {
-      "id": "s55-process",
-      "source_record_id": "T01-S0059",
-      "layout": "process",
-      "prompt": "Canlandırma metninin taslağını oluşturun",
+      "density": "compact",
+      "prompt": "Drama için planınızı oluşturun.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Konuşma metninizi hedef kitle, amaç ve bağlama uygun biçimde yapılandırın.",
+        "lead": "Sözlü iletişim engellerini konu alan canlandırmayı uygulamadan önce planlama kararlarını tamamlayın.",
         "items": [
-          "Ana düşünceyi belirleyin ve giriş–gelişme–sonuç akışını kurun.",
-          "Sözlü iletişim engelleriyle ilgili araştırma bulgularını seçin.",
-          "Söz varlığını hedef kitleye ve kullanım alanına göre ayarlayın.",
-          "Beden dili, diksiyon, telaffuz ve görsel/işitsel ögeleri planlayın.",
-          "Taslağı arkadaşlarınıza sunup geri bildirimle son hâline getirin."
+          "Gruplara ayrılın; konuşmanın konusunu ve amacını belirleyin.",
+          "Gerekli gözlem, inceleme ve araştırmayı yapın.",
+          "Kullanacağınız araçları ve canlandırma biçimini belirleyin.",
+          "Süreyi ve hedef kitlenin özelliklerini belirleyin.",
+          "Konuya uygun konuşma yöntem ve stratejisini seçin.",
+          "Mekân, teknik altyapı, görüntü ve ses koşullarını kontrol ederek olası iletişim engellerini azaltın."
         ]
-      },
-      "density": "compact"
+      }
     },
     {
-      "id": "s55-perf",
+      "id": "s55-content",
       "source_record_id": "T01-S0059",
       "answer_id": "T1-P55-PERF01",
       "layout": "structure",
-      "prompt": "Sözlü iletişim engellerini görünür kılan örnek bir canlandırma metni hazırlayın.",
+      "density": "compact",
+      "prompt": "Canlandırma metninize son şeklini verin.",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "density": "compact"
+      "content": {
+        "lead": "Metni giriş–gelişme–sonuç bütünlüğü içinde hazırlarken aşağıdaki kararların tamamını uygulayın.",
+        "items": [
+          "Hedef kitleyi düşünerek giriş, gelişme ve sonuç bölümlerini tasarlayın.",
+          "Konuşmanın amacına uygun ana düşünceyi ve karşılaştırma içeren iletileri belirleyin.",
+          "Özel, mesleki, kamusal veya eğitim alanına göre içeriği uyarlayın.",
+          "Sözlü iletişim engelleri hakkında araştırma yaparak bilgi toplayın.",
+          "Söz varlığını içeriğe ve hedef kitleye göre seçin.",
+          "Dil yapılarını işlevine uygun ve millî dil bilinciyle kullanın.",
+          "Beden dili, diksiyon ve telaffuzu etkili kullanmayı planlayın.",
+          "Amaca uygun görsel ve işitsel ögeleri seçin.",
+          "Taslağı arkadaşlarınıza sunup geri bildirimlere göre metni son hâline getirin."
+        ]
+      }
     },
     {
       "id": "s56-q1",
       "source_record_id": "T01-S0060",
       "answer_id": "T1-P56-Q01",
       "layout": "structure",
-      "prompt": "Canlandırmadaki iletişim hatalarını ve bunlara yönelik çözüm önerilerini eşleştiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "density": "compact"
+      "density": "compact",
+      "prompt": "Canlandırmada belirlediğiniz iletişim hatalarını ve çözüm önerilerini yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
       "id": "s56-q2",
       "source_record_id": "T01-S0060",
       "answer_id": "T1-P56-Q02",
       "layout": "structure",
+      "density": "compact",
       "prompt": "İletişim hatalarını ortam, dil kullanımı, tonlama, vurgu ve beden dili başlıklarına göre sınıflandırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "density": "compact"
+      "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
       "id": "s56-q3",
       "source_record_id": "T01-S0060",
       "answer_id": "T1-P56-Q03",
       "layout": "question",
-      "prompt": "Bu hataların iletişimi nasıl etkilediğini ve hangi durumlarda iletişim kazalarına yol açabileceğini tahmin ediniz.",
+      "prompt": "Bu hataların iletişimi nasıl etkilediği ve hangi durumlarda iletişim kazalarına yol açtığıyla ilgili tahminlerde bulununuz.",
       "prompt_mode": "VERBATIM_SHORT"
     },
     {
-      "id": "s57-rules",
+      "id": "s57-performance-1",
       "source_record_id": "T01-S0061",
       "layout": "process",
-      "prompt": "Canlandırmayı uygularken",
+      "density": "compact",
+      "prompt": "Canlandırmayı uygulayın — 1/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Canlandırmada içerik kadar uygulama biçimini de yönetin.",
+        "lead": "İlk aşamada konuşmanın yapısını ve anlatımını yönetin.",
         "items": [
-          "Kime, nerede, nasıl ve hangi araçlarla sunacağınızı plana bağlayın.",
-          "Başlangıç, sürdürme ve bitirme ifadelerini etkili kullanın.",
-          "Söz varlığı, ses tonu, beden dili, diksiyon ve telaffuzu bağlama uygun tutun.",
-          "Dinleyiciyle etkileşim kurun; zaman ve mekânı etkili kullanın.",
-          "Toplumsal hassasiyetlere dikkat edin ve iletinizi açık ya da örtük biçimde anlaşılır kılın."
+          "Kime, nasıl, nerede ve hangi araçlarla konuşacağınızı plana bağlayın.",
+          "Canlandırmaya plana uygun ve dikkat çekici biçimde başlayın.",
+          "Düşünceyi geliştirme yollarını kullanın.",
+          "Vermek istediğiniz iletileri açık veya örtük biçimde ifade edin.",
+          "Duygu, düşünce ve hayalleri özgün ve tutarlı bir üslupla aktarın.",
+          "Söz varlığını hedef kitleye, içeriğe ve bağlama uygun kullanın.",
+          "Sözcük bağdaşıklığından yararlanın."
         ]
-      },
-      "density": "compact"
+      }
     },
     {
-      "id": "s57-perf",
+      "id": "s57-performance-2",
       "source_record_id": "T01-S0061",
       "answer_id": "T1-P57-PERF01",
-      "layout": "structure",
-      "prompt": "Canlandırma sırasında kullanılacak kısa uygulama kontrolü",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "density": "compact"
-    },
-    {
-      "id": "s58-assessment",
-      "source_record_id": "T01-S0062",
-      "layout": "assessment",
-      "prompt": "Öz ve akran değerlendirme",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Canlandırmayı uygulayın — 2/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Canlandırma sonrasında performansınızı değerlendirip sonraki çalışma için geliştirme hedefi belirleyin.",
+        "lead": "İkinci aşamada değer, dil, beden dili, zaman-mekân ve dinleyici etkileşimini kontrol edin.",
         "items": [
-          "Araştırma, içerik seçimi ve planlama sürecinizi değerlendirin.",
-          "Konuşmayı başlatma, sürdürme ve bitirme biçiminizi gözden geçirin.",
-          "Söz varlığı, Türkçe kullanımı, beden dili, diksiyon ve dinleyici etkileşimini değerlendirin.",
-          "Akran ve öğretmen geri bildirimlerini karşılaştırın.",
-          "Eksik gördüğünüz beceriler için somut bir sonraki adım belirleyin."
+          "Başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
+          "Millî ve manevi değerler ile olumlu tutumları gözetin.",
+          "Toplumsal hassasiyetlere aykırı ögelerden kaçının.",
+          "Türkçenin dil yapısını ve işlevini amaca uygun kullanın.",
+          "Beden dili, diksiyon ve telaffuzu etkili kullanın.",
+          "Zamanı ve mekânı etkili kullanın.",
+          "Dinleyiciyle / izleyiciyle etkileşim hâlinde olun."
         ]
-      },
-      "density": "compact"
+      }
+    },
+    {
+      "id": "s58-self-assessment-1",
+      "source_record_id": "T01-S0062",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 1/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçüt için Evet / Kısmen / Hayır kararı verin.",
+        "items": [
+          "Sözlü iletişim engelleriyle ilgili araştırma yaparak bilgi topladım.",
+          "Konuşma içeriğini kullanım alanına göre belirledim.",
+          "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
+          "Düşünceyi geliştirme yollarından yararlandım.",
+          "Türkçenin yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim."
+        ]
+      }
+    },
+    {
+      "id": "s58-self-assessment-2",
+      "source_record_id": "T01-S0062",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 2/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kalan ölçütleri değerlendirerek öz değerlendirmenizi tamamlayın.",
+        "items": [
+          "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
+          "Toplumsal hassasiyetlere aykırı ögelerden kaçındım.",
+          "Millî, manevi ve kültürel değerleri gözetmeye dikkat ettim.",
+          "Beden dili, diksiyon ve telaffuzu etkili kullandım.",
+          "Dinleyiciyle etkileşimi sürdürdüm."
+        ]
+      }
+    },
+    {
+      "id": "s58-feedback",
+      "source_record_id": "T01-S0063",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Akran ve öğretmen geri bildirimini tamamlayın.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir grup arkadaşınızın çalışmasını kitapta verilen Akran Değerlendirme Formu ile değerlendirin.",
+        "sections": [
+          {
+            "title": "Öğretmen değerlendirmesi",
+            "body": "Çalışma; konu seçimi, içerik uygunluğu, özgünlük, dil ve üslup, plan ve canlandırma becerisi gibi ölçütlerle dereceli puanlama anahtarı üzerinden değerlendirilir."
+          },
+          {
+            "title": "Sonraki adım",
+            "body": "Öz, akran ve öğretmen geri bildirimlerinde belirlenen eksikleri tamamlayın; sonraki çalışmalarda aynı hataları tekrar etmemek için hedef belirleyin."
+          }
+        ],
+        "note": "Akran Değerlendirme Formu ve Dereceli Puanlama Anahtarı kitabın QR bağlantılarındadır; içerikleri kaynakta görünmediği için uygulama burada bu formları yeniden üretmez."
+      }
     }
   ]
 }
