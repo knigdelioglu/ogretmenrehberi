@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "THEME_QUALITY_FREEZE",
+  "course_id": "TDE_11",
+  "grade": 11,
+  "theme_id": "TEMA_01",
+  "theme_title": "BİR DİYECEĞİM VAR!",
+  "freeze_date": "2026-09-18",
+  "status": "FROZEN_REPO_QA",
+  "scope": {
+    "printed_page_range": "12-83",
+    "answer_bank_page_range": "14-83"
+  },
+  "canonical": {
+    "source_records": 129,
+    "verified_sources": 129,
+    "answer_entries": 151,
+    "source_limited_entries": 12
+  },
+  "lesson_player": {
+    "lessons": 7,
+    "steps": 176,
+    "source_records": 129,
+    "answer_entries": 151
+  },
+  "ogretmenos": {
+    "projection_contract": "OgretmenOS Generic Teacher Guide Runtime Contract v1",
+    "content_fingerprint": "sha256:6895cf6727dc094653ccc0c1b20ae814294f8c7e7025622a7e18a56f2a391105",
+    "deterministic_build": true,
+    "row_counts": {
+      "canonical_entities": 281,
+      "teacher_guides": 1,
+      "teacher_guide_sections": 7,
+      "teacher_guide_units": 129,
+      "teacher_guide_items": 176,
+      "teacher_guide_item_relations": 327
+    }
+  },
+  "epub": {
+    "answer_entries": 151,
+    "semantic_parity_entries": 151,
+    "source_limited_entries": 12,
+    "block_ranges": [
+      {
+        "title": "Temaya Başlarken",
+        "pages": "14-14",
+        "entries": 2
+      },
+      {
+        "title": "Metin Tahlili-1 · Karagöz / Yazıcı",
+        "pages": "15-35",
+        "entries": 39
+      },
+      {
+        "title": "Metin Tahlili-2 · Mektup / Âli’ye Mektuplar / Dilekçe",
+        "pages": "36-52",
+        "entries": 39
+      },
+      {
+        "title": "Edebiyat Atölyesi-1 · Konuşma",
+        "pages": "53-58",
+        "entries": 9
+      },
+      {
+        "title": "Metin Tahlili-3 · Dinleme / İzleme",
+        "pages": "59-73",
+        "entries": 36
+      },
+      {
+        "title": "Edebiyat Atölyesi-2 · Yazma / E-posta",
+        "pages": "74-78",
+        "entries": 13
+      },
+      {
+        "title": "Tema Sonu Ölçme ve Değerlendirme",
+        "pages": "79-83",
+        "entries": 13
+      }
+    ]
+  },
+  "editorial": {
+    "repetition_candidates": 0,
+    "errors": 0,
+    "warnings": 0,
+    "empty_optional_fields": 0
+  },
+  "schema_decision": {
+    "migration_required": false,
+    "answer_bank_schema": "2.0.0",
+    "lesson_flow_schema": "0.2.0",
+    "source_index_schema": "1.0.0",
+    "reason": "Mevcut alanlar Lesson Player, EPUB ve ÖğretmenOS projection bundle için kayıpsız ve doğrulanabilir."
+  },
+  "manual_validation": {
+    "kindle_physical_device": "PENDING_MANUAL",
+    "ogretmenos_runtime_import_and_device": "PENDING_MANUAL"
+  },
+  "freeze_policy": "Tema 1 kanonik kaynak, cevap bankası veya sunum akışı değişikliği bu manifestte bilinçli bir fingerprint/kapsam güncellemesi yapılmadan kabul edilmez; Theme 1 Quality Freeze CI PASS olmalıdır."
+}
