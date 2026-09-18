@@ -1,4 +1,9 @@
-import type { LayoutKind, LessonStep, RevealKey } from "../types";
+import type {
+  LayoutKind,
+  LessonStep,
+  RevealKey,
+  StepContent
+} from "../types";
 
 interface EditorPanelProps {
   step: LessonStep;
@@ -6,6 +11,7 @@ interface EditorPanelProps {
   onPromptChange: (value: string) => void;
   onLayoutChange: (value: LayoutKind) => void;
   onRevealMove: (key: RevealKey, delta: -1 | 1) => void;
+  onContentChange: (content: StepContent) => void;
   canMoveUp: boolean;
   canMoveDown: boolean;
   onMoveUp: () => void;
@@ -39,6 +45,7 @@ export function EditorPanel({
   onPromptChange,
   onLayoutChange,
   onRevealMove,
+  onContentChange,
   canMoveUp,
   canMoveDown,
   onMoveUp,
@@ -92,6 +99,150 @@ export function EditorPanel({
           ))}
         </select>
       </label>
+
+      {step.content ? (
+        <div className="editor-content-block">
+          <div className="editor-content-block__title">Ekran içeriği</div>
+
+          <label className="editor-field">
+            <span>Giriş / ana yönerge</span>
+            <textarea
+              rows={4}
+              value={step.content.lead ?? ""}
+              onChange={(event) =>
+                onContentChange({
+                  ...step.content!,
+                  lead: event.target.value
+                })
+              }
+            />
+          </label>
+
+          {step.content.items ? (
+            <div className="editor-field">
+              <span>Adımlar / maddeler</span>
+              <div className="editor-content-list">
+                {step.content.items.map((item, itemIndex) => (
+                  <div className="editor-content-list__row" key={itemIndex}>
+                    <textarea
+                      rows={2}
+                      value={item}
+                      onChange={(event) => {
+                        const items = [...(step.content?.items ?? [])];
+                        items[itemIndex] = event.target.value;
+                        onContentChange({ ...step.content!, items });
+                      }}
+                    />
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const items = (step.content?.items ?? []).filter(
+                          (_, index) => index !== itemIndex
+                        );
+                        onContentChange({ ...step.content!, items });
+                      }}
+                      aria-label="Maddeyi kaldır"
+                    >
+                      ×
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <button
+                className="editor-inline-add"
+                type="button"
+                onClick={() =>
+                  onContentChange({
+                    ...step.content!,
+                    items: [...(step.content?.items ?? []), "Yeni adım"]
+                  })
+                }
+              >
+                + Madde ekle
+              </button>
+            </div>
+          ) : null}
+
+          {step.content.sections ? (
+            <div className="editor-field">
+              <span>Bilgi kartları</span>
+              <div className="editor-section-list">
+                {step.content.sections.map((section, sectionIndex) => (
+                  <div className="editor-section-card" key={sectionIndex}>
+                    <input
+                      value={section.title}
+                      onChange={(event) => {
+                        const sections = [...(step.content?.sections ?? [])];
+                        sections[sectionIndex] = {
+                          ...sections[sectionIndex],
+                          title: event.target.value
+                        };
+                        onContentChange({ ...step.content!, sections });
+                      }}
+                      aria-label="Kart başlığı"
+                    />
+                    <textarea
+                      rows={3}
+                      value={section.body}
+                      onChange={(event) => {
+                        const sections = [...(step.content?.sections ?? [])];
+                        sections[sectionIndex] = {
+                          ...sections[sectionIndex],
+                          body: event.target.value
+                        };
+                        onContentChange({ ...step.content!, sections });
+                      }}
+                      aria-label="Kart açıklaması"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const sections = (step.content?.sections ?? []).filter(
+                          (_, index) => index !== sectionIndex
+                        );
+                        onContentChange({ ...step.content!, sections });
+                      }}
+                    >
+                      Kartı kaldır
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <button
+                className="editor-inline-add"
+                type="button"
+                onClick={() =>
+                  onContentChange({
+                    ...step.content!,
+                    sections: [
+                      ...(step.content?.sections ?? []),
+                      { title: "Yeni kart", body: "Açıklama" }
+                    ]
+                  })
+                }
+              >
+                + Kart ekle
+              </button>
+            </div>
+          ) : null}
+
+          {"note" in step.content ? (
+            <label className="editor-field">
+              <span>Öğretmen notu</span>
+              <textarea
+                rows={4}
+                value={step.content.note ?? ""}
+                onChange={(event) =>
+                  onContentChange({
+                    ...step.content!,
+                    note: event.target.value
+                  })
+                }
+              />
+            </label>
+          ) : null}
+        </div>
+      ) : null}
 
       {step.reveal_order.length > 1 ? (
         <div className="editor-field">
