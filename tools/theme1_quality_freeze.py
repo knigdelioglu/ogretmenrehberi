@@ -179,6 +179,8 @@ def main() -> int:
         add(errors, "ANSWER_BANK_STATUS", answer_index.get("status"))
     if source_index.get("answer_bank_status") != "COMPLETE_WITH_SOURCE_LIMITED":
         add(errors, "SOURCE_INDEX_ANSWER_STATUS", source_index.get("answer_bank_status"))
+    if source_index.get("counts") != {"records": 129, "verified_records": 129}:
+        add(errors, "SOURCE_INDEX_COUNTS", source_index.get("counts"))
 
     source_statuses = Counter(record.get("source_status") for record in sources)
     if source_statuses != Counter({"VERIFIED": 129}):
@@ -198,12 +200,14 @@ def main() -> int:
         if not isinstance(page, int) or not 14 <= page <= 83:
             add(errors, "ANSWER_PAGE_RANGE", {"id": qid, "page": page})
         for field in ("guidance", "explanation", "evidence_quotes", "answer_sections"):
+            if field in entry and not entry.get(field):
+                add(errors, "EMPTY_OPTIONAL_ANSWER_FIELD", {"id": qid, "field": field})
             if entry.get(field):
                 field_counts[field] += 1
         if entry.get("entry_type") == "source_limited":
             source_limited.append(entry)
             if not entry.get("guidance"):
-                add(warnings, "SOURCE_LIMITED_WITHOUT_GUIDANCE", qid)
+                add(errors, "SOURCE_LIMITED_WITHOUT_GUIDANCE", qid)
 
     if len(source_limited) != 12:
         add(errors, "SOURCE_LIMITED_COUNT", f"{len(source_limited)}!=12")
