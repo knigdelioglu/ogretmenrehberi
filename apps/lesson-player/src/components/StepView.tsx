@@ -8,7 +8,7 @@ interface StepViewProps {
   revealed: Set<RevealKey>;
   toggle: (key: RevealKey) => void;
   presentationMode: boolean;
-  showAnswerToggle: boolean;
+  showInlineControls: boolean;
   visibleVocabularyTerms: ReadonlySet<string>;
   toggleVocabularyTerm: (term: string) => void;
 }
@@ -37,7 +37,9 @@ const buttonLabels: Record<RevealKey, string> = {
 };
 
 function answerControls(step: LessonStep): RevealKey[] {
-  return step.reveal_order.filter((key) => key !== "answer");
+  return step.reveal_order.filter(
+    (key) => key !== "answer" && key !== "guidance"
+  );
 }
 
 function revealButtonLabel(_step: LessonStep, key: RevealKey) {
@@ -64,8 +66,20 @@ function AnswerToggleIcon({ active }: { active: boolean }) {
 
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M2.8 12s3.5-6 9.2-6 9.2 6 9.2 6-3.5 6-9.2 6-9.2-6-9.2-6Z" />
-      <circle cx="12" cy="12" r="2.3" />
+      <path d="m4 20 4.2-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z" />
+      <path d="m13.8 7.4 3 3" />
+      <path d="M8.2 19 5 15.8" />
+    </svg>
+  );
+}
+
+function GuidanceToggleIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M9 18h6" />
+      <path d="M10 21h4" />
+      <path d="M8.3 14.8A6 6 0 1 1 15.7 14.8c-.9.7-1.4 1.4-1.5 2.2h-4.4c-.1-.8-.6-1.5-1.5-2.2Z" />
+      <path d="M12 3v2" />
     </svg>
   );
 }
@@ -126,7 +140,7 @@ export function StepView({
   revealed,
   toggle,
   presentationMode,
-  showAnswerToggle,
+  showInlineControls,
   visibleVocabularyTerms,
   toggleVocabularyTerm
 }: StepViewProps) {
@@ -134,6 +148,7 @@ export function StepView({
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
   const answerVisible = Boolean(answer && revealed.has("answer") && !isVocabulary);
+  const guidanceVisible = Boolean(answer?.guidance && revealed.has("guidance"));
   const stageRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -218,17 +233,48 @@ export function StepView({
                 )}
               </div>
 
-              {!isVocabulary && showAnswerToggle ? (
-                <button
-                  className={answerVisible ? "answer-toggle is-active" : "answer-toggle"}
-                  type="button"
-                  onClick={() => toggle("answer")}
-                  aria-label={answerVisible ? "Soruyu göster" : "Cevabı göster"}
-                  aria-pressed={answerVisible}
-                  title={answerVisible ? "Soruyu göster" : "Cevabı göster"}
-                >
-                  <AnswerToggleIcon active={answerVisible} />
-                </button>
+              {!isVocabulary && showInlineControls ? (
+                <div className="stage-icon-controls" role="group" aria-label="Soru kontrolleri">
+                  <button
+                    className={
+                      answerVisible
+                        ? "stage-icon-toggle stage-icon-toggle--answer is-active"
+                        : "stage-icon-toggle stage-icon-toggle--answer"
+                    }
+                    type="button"
+                    onClick={() => toggle("answer")}
+                    aria-label={answerVisible ? "Soruyu göster" : "Cevabı göster"}
+                    aria-pressed={answerVisible}
+                    title={answerVisible ? "Soruyu göster" : "Cevabı göster"}
+                  >
+                    <AnswerToggleIcon active={answerVisible} />
+                  </button>
+
+                  {answer.guidance ? (
+                    <button
+                      className={
+                        guidanceVisible
+                          ? "stage-icon-toggle stage-icon-toggle--guidance is-active"
+                          : "stage-icon-toggle stage-icon-toggle--guidance"
+                      }
+                      type="button"
+                      onClick={() => toggle("guidance")}
+                      aria-label={
+                        guidanceVisible
+                          ? "Yönlendirmeyi gizle"
+                          : "Yönlendirmeyi göster"
+                      }
+                      aria-pressed={guidanceVisible}
+                      title={
+                        guidanceVisible
+                          ? "Yönlendirmeyi gizle"
+                          : "Yönlendirmeyi göster"
+                      }
+                    >
+                      <GuidanceToggleIcon />
+                    </button>
+                  ) : null}
+                </div>
               ) : null}
             </div>
           </>
