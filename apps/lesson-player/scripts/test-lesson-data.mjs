@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 1,
-  "Tema 2 üretiminin ilk aşamasında yalnız giriş dersi bulunmalı."
+  theme2Lessons.length === 2,
+  "Tema 2 üretiminin bu aşamasında giriş ve Oğulla Buluşma dersleri bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -131,6 +131,79 @@ for (const step of theme2Intro.steps) {
     step.source.source_status === "VERIFIED",
     `2. Tema giriş source kaydı VERIFIED olmalı: ${step.source.source_record_id}`
   );
+}
+
+const ogullaBulusma = byLessonId.get("T11-T02-OGULLA-BULUSMA");
+assert(ogullaBulusma, "2. Tema Oğulla Buluşma dersi catalog içinde bulunamadı.");
+assert(
+  ogullaBulusma.printed_page_range === "89-107",
+  "Oğulla Buluşma doğal bloğu s.89–107 aralığını kapsamalı."
+);
+assert(
+  ogullaBulusma.coverage.steps === 37 &&
+    ogullaBulusma.coverage.source_records === 32 &&
+    ogullaBulusma.coverage.answer_entries === 36,
+  "Oğulla Buluşma 37 adım / 32 source / 36 answer olmalı."
+);
+
+const ogullaById = new Map(ogullaBulusma.steps.map((step) => [step.id, step]));
+assert(
+  ogullaById.get("s89-common-words")?.answer?.question_id === "T2-P89-PERF01" &&
+    ogullaById.get("s89-common-words")?.layout === "process",
+  "s.89 Türk Dilleri araştırması performance/process olarak korunmalı."
+);
+assert(
+  ogullaById.get("s90-95-reading")?.answer === null &&
+    ogullaById.get("s90-95-reading")?.source?.printed_page_range === "90-95",
+  "Oğulla Buluşma ana metni yeniden yayımlanmadan s.90–95 okuma süreci olarak temsil edilmeli."
+);
+assert(
+  ogullaById.get("s95-q1")?.layout === "vocabulary" &&
+    Object.keys(ogullaById.get("s95-q1")?.answer?.answer_sections ?? {}).length === 6,
+  "s.95 söz varlığı altı yapılandırılmış kelime tanımını taşımalı."
+);
+assert(
+  ogullaById.get("s96-q4a")?.layout === "structure" &&
+    ogullaById.get("s98-q4c")?.layout === "comparison",
+  "Türk şiveleri çalışması yapı ve karşılaştırma görünümlerini kullanmalı."
+);
+assert(
+  ogullaById.get("s102-103-gram1")?.source?.printed_page_range === "102-103" &&
+    ogullaById.get("s103-gram2")?.answer?.question_id === "T2-P103-GRAM02" &&
+    ogullaById.get("s104-gram3")?.answer?.question_id === "T2-P104-GRAM03" &&
+    ogullaById.get("s104-gram4")?.answer?.question_id === "T2-P104-GRAM04",
+  "s.102–104 dört dil bilgisi görevi doğru sayfa ve answer kayıtlarıyla korunmalı."
+);
+assert(
+  ogullaById.get("s105-q1")?.layout === "structure" &&
+    ogullaById.get("s105-q2")?.layout === "structure",
+  "s.105 hikâye haritası ve ilişkiler yapılandırılmış görünümde olmalı."
+);
+assert(
+  ogullaById.get("s106-discussion")?.answer?.entry_type === "performance_support" &&
+    ogullaById.get("s107-conflict-group")?.answer?.entry_type === "performance_support" &&
+    ogullaById.get("s107-values")?.answer?.entry_type === "performance_support",
+  "s.106–107 tartışma/grup/değer çalışmaları klasik cevap anahtarına zorlanmamalı."
+);
+assert(
+  ogullaById.get("s107-aytmatov")?.answer?.question_id === "T2-P107-AYTMATOV",
+  "s.107 Aytmatov Fark Edelim cevabı erişilebilir olmalı."
+);
+
+assert(
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 51 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 46 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 48,
+  "Tema 2 mevcut üretim 51 adım / 46 source / 48 answer olmalı."
+);
+
+for (const lesson of theme2Lessons) {
+  for (const step of lesson.steps) {
+    assert(
+      step.source.source_status === "VERIFIED",
+      `Tema 2 kullanılan source kaydı VERIFIED olmalı: ${step.source.source_record_id}`
+    );
+  }
 }
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
