@@ -56,13 +56,12 @@ Her tema, bölüm, metin, etkinlik ve soru mümkün olduğunca aşağıdaki öğ
 - kitap sayfası ve kaynak konumu
 - tema / bölüm / metin / etkinlik / soru kimliği
 - TYMM öğrenme çıktısı ve ilgili program bağlantısı
-- sorunun veya etkinliğin öğretmenden beklediği amaç
-- beklenen cevap / örnek cevap / cevap bileşenleri
-- sınıfta kullanılabilecek açıklama ve yönlendirme
-- öğrenci zorlanırsa verilecek ipucu
-- olası yanlış anlama veya kavram yanılgısı
-- gerektiğinde ek örnek
-- tartışmayı derinleştirecek takip sorusu
+- soruya uygun, sınıfta doğrudan kullanılabilir cevap
+- yalnız gerektiğinde öğretmen yönlendirmesi
+- yalnız gerektiğinde kısa açıklama
+- metne dayanması yararlıysa kısa kanıt alıntıları
+- konuşma/yazma gibi üretim görevlerinde örnek plan veya örnek ürün
+- QR/video gibi görülmeyen kaynaklarda açık kaynak sınırlaması
 - kısa ders notu / öğretmen uyarısı
 - ilişkili başka sayfa, metin veya kavrama çapraz bağlantı
 - kaynak güveni ve öğretmen doğrulama durumu
@@ -86,10 +85,10 @@ grade
             ├── texts
             ├── activities
             │   └── questions
-            │       ├── expected_answer
-            │       ├── teacher_guidance
-            │       ├── hints
-            │       └── misconceptions
+            │       ├── answer
+            │       ├── guidance
+            │       ├── explanation
+            │       └── evidence_quotes
             └── teacher_notes
 ```
 
@@ -135,6 +134,13 @@ Kindle, genel amaçlı bir web tarayıcısı gibi EPUB içi JavaScript etkileşi
 - hızlı gezinme için kısa, düzenli başlıklar
 
 EPUB, kanonik veritabanından **üretilen bir çıktı** olacaktır; elle düzenlenen ana veri kaynağı olmayacaktır.
+
+## Üretim standartları
+
+- [Cevap bankası kalite standardı](docs/ANSWER_BANK_QUALITY_STANDARD.md)
+- [Blok bazlı rehber üretim standardı](docs/BLOCK_AUTHORING_STANDARD.md)
+
+Tema 1 pilotunda ortaya çıkan **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** farkları bu belgelerde kalıcılaştırılmıştır. Tema 2–4 üretilirken aynı blok disiplini yeniden uygulanır.
 
 ## Kalite ilkeleri
 
