@@ -7,7 +7,7 @@
   "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
   "counts": {
     "records": 158,
-    "linked_answers": 151
+    "linked_answers": 167
   },
   "records": [
     {
@@ -112,7 +112,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.88 / PDF s.89 — soru 1 / EBA video",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0010",
@@ -124,7 +124,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.88 / PDF s.89 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0011",
@@ -136,7 +136,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.88 / PDF s.89 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0012",
@@ -148,7 +148,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.88 / PDF s.89 — soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0013",
@@ -160,7 +160,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.88 / PDF s.89 — soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0014",
@@ -172,7 +172,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.88 / PDF s.89 — soru 6",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0015",
@@ -1813,5 +1813,5 @@
   ],
   "answer_linkage_policy": "DIRECT_QUESTION_ID_IN_NEW_ANSWER_BANK",
   "legacy_answer_refs_removed": true,
-  "answer_bank_status": "REBUILDING"
+  "answer_bank_status": "COMPLETE_WITH_SOURCE_LIMITED"
 }
