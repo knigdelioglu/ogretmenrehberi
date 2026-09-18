@@ -886,3 +886,55 @@ button:focus-visible {
   cursor: default;
   opacity: 0.38;
 }
+
+
+.editor-reveal-order {
+  display: grid;
+  gap: 7px;
+}
+
+.editor-reveal-row {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 9px;
+  align-items: center;
+  min-height: 40px;
+  padding: 6px 8px;
+  border: 1px solid #ddd7ca;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.editor-reveal-row__index {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.70rem;
+  font-weight: 820;
+}
+
+.editor-reveal-row__actions {
+  display: flex;
+  gap: 4px;
+}
+
+.editor-reveal-row__actions button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d3cdbf;
+  border-radius: 7px;
+  background: #f7f4ec;
+  color: #37423d;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+.editor-reveal-row__actions button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
