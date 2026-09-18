@@ -343,9 +343,9 @@ Build sırasında en az şu kontroller yapılır:
 - [x] canlı önizleme
 - [x] yerel override saklama
 - [x] JSON dışa aktarma
-- [ ] adım listesi düzenleme
+- [x] adım sırasını yukarı/aşağı taşıma
+- [x] reveal sırası düzenleme
 - [ ] sürükle-bırak sıralama
-- [ ] reveal sırası düzenleme
 - [ ] içerik bloklarını bölme/birleştirme
 
 ### Faz C — Tema 1 genelleştirme
