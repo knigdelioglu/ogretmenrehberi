@@ -1,10 +1,11 @@
-import type { LayoutKind, LessonStep } from "../types";
+import type { LayoutKind, LessonStep, RevealKey } from "../types";
 
 interface EditorPanelProps {
   step: LessonStep;
   hasOverride: boolean;
   onPromptChange: (value: string) => void;
   onLayoutChange: (value: LayoutKind) => void;
+  onRevealMove: (key: RevealKey, delta: -1 | 1) => void;
   canMoveUp: boolean;
   canMoveDown: boolean;
   onMoveUp: () => void;
@@ -13,6 +14,14 @@ interface EditorPanelProps {
   onExport: () => void;
   onClose: () => void;
 }
+
+const revealLabels: Record<RevealKey, string> = {
+  guidance: "Yönlendirme",
+  answer: "Cevap",
+  evidence: "Metinden kanıt",
+  explanation: "Açıklama",
+  note: "Öğretmen notu"
+};
 
 const layouts: Array<{ value: LayoutKind; label: string }> = [
   { value: "question", label: "Soru" },
@@ -29,6 +38,7 @@ export function EditorPanel({
   hasOverride,
   onPromptChange,
   onLayoutChange,
+  onRevealMove,
   canMoveUp,
   canMoveDown,
   onMoveUp,
@@ -82,6 +92,42 @@ export function EditorPanel({
           ))}
         </select>
       </label>
+
+      {step.reveal_order.length > 1 ? (
+        <div className="editor-field">
+          <span>Açılma sırası</span>
+          <div className="editor-reveal-order">
+            {step.reveal_order.map((key, index) => (
+              <div className="editor-reveal-row" key={key}>
+                <span className="editor-reveal-row__index">{index + 1}</span>
+                <span>{revealLabels[key]}</span>
+                <div className="editor-reveal-row__actions">
+                  <button
+                    type="button"
+                    onClick={() => onRevealMove(key, -1)}
+                    disabled={index === 0}
+                    aria-label={`${revealLabels[key]} katmanını yukarı taşı`}
+                  >
+                    ↑
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => onRevealMove(key, 1)}
+                    disabled={index === step.reveal_order.length - 1}
+                    aria-label={`${revealLabels[key]} katmanını aşağı taşı`}
+                  >
+                    ↓
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <small>
+            Space tuşuyla açılacak öğretmen katmanlarının sırasını belirler.
+            Katman silinmez; yalnız sırası değişir.
+          </small>
+        </div>
+      ) : null}
 
       <div className="editor-field">
         <span>Adım sırası</span>
