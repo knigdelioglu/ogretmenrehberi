@@ -1,0 +1,80 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Rust tooling
+target/
+
+# Generic build / temp
+build/
+dist/
+tmp/
+temp/
+.cache/
+coverage/
+*.log
+
+# Local source documents
+# Copyrighted/reference PDFs remain in Google Drive and must not be committed.
+sources/raw/
+sources/local/
+local-sources/
+*.pdf
+
+# Generated EPUB / ebook artifacts
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.kfx
+
+# EPUB build scratch
+epub-build/
+epub-tmp/
+
+# Local review / working files
+.review/
+scratch/
+notes.local.*
+*.local.json
+
+# Local databases / indexes
+*.db
+*.sqlite
+*.sqlite3
+
+# Keep canonical structured guide data versioned.
+!data/**/*.json
+!schema/**/*.json
