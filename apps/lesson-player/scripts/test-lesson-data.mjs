@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 2, "Lesson catalog en az iki ders içermeli.");
+assert(lessons.length >= 3, "Lesson catalog en az üç ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -221,6 +221,75 @@ assert(s51Reference, "s51 Dilekçe referans adımı eksik.");
 assert(
   s51Reference.source.source_record_id === "T01-S0055",
   "s51 Dilekçe doğru source-index kaydına bağlı olmalı."
+);
+
+const konusma = byLessonId.get("T11-T01-KONUSMA");
+assert(konusma, "Konuşma dersi catalog içinde bulunamadı.");
+assert(konusma.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
+assert(konusma.coverage.steps === 13, "Konuşma dersi 13 adım olmalı.");
+assert(
+  konusma.coverage.source_records === 6,
+  "Konuşma dersi 6 source-index kaydını kapsamalı."
+);
+assert(
+  konusma.coverage.answer_entries === 9,
+  "Konuşma dersi 9 answer-bank kaydını kapsamalı."
+);
+
+const konusmaById = new Map(konusma.steps.map((step) => [step.id, step]));
+const konusmaOrderedIds = konusma.steps.map((step) => step.id);
+
+const k53q1 = konusmaById.get("s53-q1");
+assert(k53q1, "Konuşma s53-q1 bulunamadı.");
+assert(
+  k53q1.answer?.entry_type === "source_limited",
+  "QR videoya bağlı s53-q1 source_limited olarak korunmalı."
+);
+assert(
+  k53q1.display_prompt_mode === "VERBATIM_SHORT",
+  "s53-q1 doğrulanmış kitap sorusunu kullanmalı."
+);
+
+const k54Process = konusmaById.get("s54-process");
+assert(k54Process, "Konuşma s54 planlama süreci eksik.");
+assert(
+  k54Process.layout === "process" && k54Process.answer === null,
+  "s54 planlama adımı cevaba bağlı olmayan süreç ekranı olmalı."
+);
+assert(
+  konusmaOrderedIds.indexOf("s54-process") <
+    konusmaOrderedIds.indexOf("s54-perf"),
+  "s54 planlama süreci örnek plandan önce gelmeli."
+);
+
+const k55Perf = konusmaById.get("s55-perf");
+assert(k55Perf, "Konuşma s55 canlandırma metni desteği eksik.");
+assert(
+  k55Perf.answer?.entry_type === "performance_support",
+  "s55 canlandırma metni performans desteği olmalı."
+);
+
+const k56q2 = konusmaById.get("s56-q2");
+assert(k56q2, "Konuşma s56-q2 bulunamadı.");
+assert(
+  k56q2.layout === "structure" && k56q2.density === "compact",
+  "s56 sınıflandırma ekranı kompakt yapı görünümünde olmalı."
+);
+
+const k57Rules = konusmaById.get("s57-rules");
+assert(k57Rules, "Konuşma s57 uygulama kuralları eksik.");
+assert(
+  konusmaOrderedIds.indexOf("s57-rules") <
+    konusmaOrderedIds.indexOf("s57-perf"),
+  "s57 uygulama kuralları performans kontrolünden önce gelmeli."
+);
+
+const k58 = konusmaById.get("s58-assessment");
+assert(k58, "Konuşma s58 öz/akran değerlendirme adımı eksik.");
+assert(
+  k58.source.source_record_id === "T01-S0062" &&
+    k58.layout === "assessment",
+  "s58 değerlendirme doğru kaynak ve layout ile bağlı olmalı."
 );
 
 const s52q1 = mektupById.get("s52-q1");
