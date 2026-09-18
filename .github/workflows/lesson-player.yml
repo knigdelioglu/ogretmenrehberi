@@ -136,7 +136,7 @@ jobs:
             --disable-gpu \
             --window-size=1440,900 \
             --screenshot="$GITHUB_WORKSPACE/lesson-player-speaking-performance.png" \
-            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s57-performance"
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s57-performance-1"
 
           "$CHROME" \
             --headless=new \
@@ -144,7 +144,7 @@ jobs:
             --disable-gpu \
             --window-size=1440,900 \
             --screenshot="$GITHUB_WORKSPACE/lesson-player-speaking-assessment.png" \
-            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s58-self-assessment"
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s58-self-assessment-1"
 
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
