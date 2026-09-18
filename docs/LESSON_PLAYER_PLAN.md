@@ -321,25 +321,32 @@ Build sırasında en az şu kontroller yapılır:
 
 ### Faz A — Çalışan Karagöz Player MVP
 - [x] mimariyi sabitle
-- [ ] lesson-flow v0.1
-- [ ] veri üretim scripti
-- [ ] React/Vite kabuğu
-- [ ] soru renderer
-- [ ] vocabulary renderer
-- [ ] process/reference renderer
-- [ ] reveal sistemi
-- [ ] sayfa/adım navigasyonu
-- [ ] klavye kısayolları
-- [ ] tam ekran
-- [ ] s.15–35 eksiksizlik testi
+- [x] lesson-flow v0.1
+- [x] veri üretim scripti
+- [x] React/Vite kabuğu
+- [x] soru renderer
+- [x] vocabulary renderer
+- [x] process/reference renderer
+- [x] reveal sistemi
+- [x] sayfa/adım navigasyonu
+- [x] klavye kısayolları
+- [x] tam ekran
+- [x] projeksiyon görünümü
+- [x] kaldığı adımı yerelde hatırlama
+- [x] s.15–35 eksiksizlik testi
+- [x] içerik assertion testleri
 
 ### Faz B — Düzenleme Modu
-- [ ] adım listesi
+- [x] mevcut adımı düzenleme paneli
+- [x] layout seçimi
+- [x] soru/başlık override
+- [x] canlı önizleme
+- [x] yerel override saklama
+- [x] JSON dışa aktarma
+- [ ] adım listesi düzenleme
 - [ ] sürükle-bırak sıralama
-- [ ] layout seçimi
 - [ ] reveal sırası düzenleme
-- [ ] önizleme
-- [ ] JSON dışa aktarma
+- [ ] içerik bloklarını bölme/birleştirme
 
 ### Faz C — Tema 1 genelleştirme
 - [ ] Mektup
