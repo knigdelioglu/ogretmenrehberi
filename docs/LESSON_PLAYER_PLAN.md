@@ -332,9 +332,11 @@ Build sırasında en az şu kontroller yapılır:
 - [x] klavye kısayolları
 - [x] tam ekran
 - [x] projeksiyon görünümü
+- [x] ayrı ve senkron öğrenci/projeksiyon penceresi
 - [x] kaldığı adımı yerelde hatırlama
-- [x] s.15–35 eksiksizlik testi
-- [x] içerik assertion testleri
+- [x] s.15–35 gerçek ders kitabıyla sayfa bazlı doğrulama
+- [x] 49 adımlık eksiksizlik testi
+- [x] içerik ve sıra assertion testleri
 
 ### Faz B — Düzenleme Modu
 - [x] mevcut adımı düzenleme paneli
@@ -345,6 +347,10 @@ Build sırasında en az şu kontroller yapılır:
 - [x] JSON dışa aktarma
 - [x] adım sırasını yukarı/aşağı taşıma
 - [x] reveal sırası düzenleme
+- [x] süreç maddelerini ve bilgi kartlarını canlı düzenleme
+- [x] öğretmen notunu canlı düzenleme
+- [x] adım bazlı geniş/normal/kompakt yoğunluk ayarı
+- [x] bütün sunum değişikliklerini kanonik duruma sıfırlama
 - [ ] sürükle-bırak sıralama
 - [ ] içerik bloklarını bölme/birleştirme
 
@@ -374,7 +380,7 @@ Karagöz pilotu tamamlanmış sayılırsa:
 
 1. Öğretmen s.15'ten s.35'e başka kaynağa dönmeden ilerleyebilir.
 2. Source-index'teki ilgili bütün ders adımları temsil edilir.
-3. Answer-bank'teki ilgili bütün cevaplar erişilebilir durumdadır.
+3. Answer-bank'teki ilgili 39 cevabın tamamı erişilebilir durumdadır.
 4. Kelime çalışmalarında kelime ve açıklama birlikte bulunur.
 5. Soru cevapları başlangıçta öğrenciye açık değildir.
 6. Guidance/answer/evidence/explanation ayrı ayrı açılabilir.
