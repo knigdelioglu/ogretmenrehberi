@@ -293,10 +293,16 @@ def main() -> int:
         missing = sorted(set(answer_by_id) - seen_answers)
         raise SystemExit(f"UNPROJECTED_ANSWERS:{missing}")
 
+    # generated_at is build metadata, not content. Excluding it keeps the
+    # fingerprint stable across identical rebuilds.
+    semantic_lessons = [
+        {key: value for key, value in lesson.items() if key != "generated_at"}
+        for lesson in lessons
+    ]
     canonical_payload = {
         "sources": sources,
         "answers": answers,
-        "lessons": lessons,
+        "lessons": semantic_lessons,
     }
     fingerprint = sha256_json(canonical_payload)
 
