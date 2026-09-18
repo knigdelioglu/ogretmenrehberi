@@ -15,16 +15,24 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 3 doğal pedagojik bloklar hâlinde yeniden üretilir; görsel/biçim bağımlı sorular gerçek sayfa üzerinden doğrulanır."
   },
   "coverage": {
-    "printed_page_range": "162-164",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 konuya giriş",
-    "entry_count": 9,
+    "printed_page_range": "162-176",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 / Huzur — okuma yönetimi, söz varlığı, üslup hazırlığı ve ilk anlama soruları",
+    "entry_count": 29,
     "source_limited_entries": 0,
-    "next_printed_page": 165
+    "next_printed_page": 177
   },
   "parts": [
     {
       "path": "answer-bank/part-01-pages-162-164.json",
       "entries": 9
+    },
+    {
+      "path": "answer-bank/part-02-pages-165-174.json",
+      "entries": 7
+    },
+    {
+      "path": "answer-bank/part-03-pages-175-176.json",
+      "entries": 13
     }
   ],
   "rendering_contract": {
