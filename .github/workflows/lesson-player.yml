@@ -63,9 +63,45 @@ jobs:
           grep -q "Karagöz" /tmp/lesson-player-dom.html
           grep -q "ÖĞRETMEN REHBERİ" /tmp/lesson-player-dom.html
 
-          "$CHROME"             --headless=new             --no-sandbox             --disable-gpu             --window-size=1440,900             --screenshot="$GITHUB_WORKSPACE/lesson-player-teacher.png"             http://127.0.0.1:4173/
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-teacher.png" \
+            "http://127.0.0.1:4173/?step=s15-q1"
 
-          "$CHROME"             --headless=new             --no-sandbox             --disable-gpu             --window-size=1440,900             --screenshot="$GITHUB_WORKSPACE/lesson-player-student.png"             "http://127.0.0.1:4173/?display=1"
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-student.png" \
+            "http://127.0.0.1:4173/?display=1&step=s15-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&step=s25-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-reference.png" \
+            "http://127.0.0.1:4173/?display=1&step=s26-reference"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-process.png" \
+            "http://127.0.0.1:4173/?display=1&step=s35-q1"
 
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
@@ -74,5 +110,8 @@ jobs:
           path: |
             lesson-player-teacher.png
             lesson-player-student.png
+            lesson-player-vocabulary.png
+            lesson-player-reference.png
+            lesson-player-process.png
             apps/lesson-player/dist
           if-no-files-found: error
