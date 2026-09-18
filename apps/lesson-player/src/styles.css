@@ -862,3 +862,27 @@ button:focus-visible {
   cursor: default;
   opacity: 0.45;
 }
+
+
+.editor-order-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.editor-order-actions button {
+  min-height: 40px;
+  border: 1px solid #d3cdbf;
+  border-radius: 9px;
+  background: #fff;
+  color: #37423d;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 720;
+}
+
+.editor-order-actions button:disabled {
+  cursor: default;
+  opacity: 0.38;
+}
