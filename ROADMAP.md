@@ -266,21 +266,35 @@ Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
 ## Faz 8 — 1. Tema entegrasyon ve kalite dondurması
 
 ### Hedef
-Şemayı tüm temalara çoğaltmadan önce gerçek kullanım sorunlarını bulmak.
+Şemayı tüm temalara çoğaltmadan önce gerçek kullanım sorunlarını bulmak ve Tema 1 için kanonik entegrasyon tabanını dondurmak.
 
 ### İşler
-- [ ] ÖğretmenOS ve EPUB çıktısını aynı veriden karşılaştır
-- [ ] kayıp alan kontrolü
-- [ ] Kindle gerçek cihaz kullanım notları
-- [ ] ÖğretmenOS ders içi kullanım notları
-- [ ] tekrar eden rehber cümlelerini tespit et
-- [ ] gereksiz alanları temizle
-- [ ] eksik öğretmen rehberliği alanlarını belirle
-- [ ] şema v0.2 gerekiyorsa migration yaz
-- [ ] 1. tema için öğretmen review tamamla
+- [x] ÖğretmenOS projection bundle ve EPUB çıktısını aynı kanonik veriye karşı karşılaştır
+- [x] answer/guidance/explanation/evidence/structured answer alanlarında kayıp alan kontrolü
+- [ ] Kindle gerçek cihaz kullanım notları — **manuel kabul testi**
+- [ ] ÖğretmenOS gerçek runtime importu ve ders içi kullanım notları — **manuel kabul testi**
+- [x] tekrar eden rehber cümlelerini tespit et — yüksek benzerlik/tam tekrar adayı: **0**
+- [x] gereksiz/stale alanları temizle — source-index rebuild metadata ve boş opsiyonel alan politikası
+- [x] eksik öğretmen rehberliği alanlarını belirle ve düzelt — source-limited s.73 yönlendirmesi tamamlandı
+- [x] şema migrasyonu kararını ver — **migration gerekmedi**
+- [x] 1. tema repo-içi kaynak/cevap öğretmen review'unu tamamla — 129/129 source `VERIFIED`, 151 answer QA
+
+### Dondurulmuş taban
+- 7 ders / 176 Lesson Player adımı
+- 129 source-index kaydı
+- 151 answer-bank kaydı
+- 12 source-limited kayıt
+- ÖğretmenOS projection: 1 guide / 7 section / 129 unit / 176 item / 327 relation
+- EPUB semantik paritesi: 151 / 151
+- otomatik QA: 0 hata / 0 uyarı / 0 tekrar adayı
+- freeze manifesti: `data/grade-11/source/teacher-book/theme-1/quality-freeze.json`
 
 ### Kalite kapısı
-Şema ancak bu fazdan sonra 2–4. temalar için “stabil” kabul edilir.
+Tema 1 repo-içi veri modeli ve üç tüketiciye projeksiyon sözleşmesi **FROZEN_REPO_QA** durumundadır. Kanonik veya sunum verisi değişirse freeze fingerprint'i bilinçli olarak güncellenmeden CI geçmez.
+
+Answer-bank 2.0, source-index 1.0 ve lesson-flow 0.2 ile veri kaybı saptanmadığı için yeni bir şema migrasyonu gerekmemiştir. Fiziksel Kindle ve gerçek ÖğretmenOS runtime/cihaz testleri ürün kabul testidir; bir sorun kanonik sözleşmede değişiklik gerektirirse freeze yeniden açılır.
+
+Ayrıntılı kanıt: [THEME_1_QUALITY_FREEZE_2026-09-18.md](docs/THEME_1_QUALITY_FREEZE_2026-09-18.md)
 
 ---
 

@@ -52,17 +52,34 @@ Böylece bir sorunun cevabı, öğretmen notu veya kazanım bağlantısı yalnı
 
 ## Ders Modu / Lesson Player
 
-İlk pilot **11. sınıf 1. Tema — Karagöz / Yazıcı, basılı s.15–35** kapsamındadır.
+11. sınıf **1. Tema — Bir Diyeceğim Var!** Lesson Player kapsamı basılı **s.12–83** arasında tamamlanmıştır.
 
 Uygulama:
 
-- `source-index.json` ile kitabın gerçek sırasını,
+- `source-index.json` ile kitabın gerçek sırasını ve süreç adımlarını,
 - `answer-bank/*.json` ile cevap/yönlendirme/açıklama/kanıt katmanlarını,
-- `data/grade-11/presentation/.../karagoz-flow.json` ile sunum davranışını
+- `data/grade-11/presentation/theme-1/*-flow.json` ile sınıf içi akış ve reveal davranışını
 
 birleştirir.
 
-Amaç, öğretmenin ders sırasında EPUB'a dönmeden ilerleyebilmesidir. Ayrıntılı mimari ve fazlar için [LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md) belgesine bakın.
+Dondurulmuş Tema 1 kapsamı **7 ders / 176 ders adımı / 129 source kaydı / 151 answer kaydıdır**. Amaç, öğretmenin ders sırasında EPUB'a dönmeden tema başından ölçme-değerlendirme sonuna kadar ilerleyebilmesidir. Ayrıntılı mimari ve fazlar için [LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md) belgesine bakın.
+
+## 1. Tema kalite dondurması
+
+Tema 1 için Lesson Player, Kindle EPUB ve ÖğretmenOS generic Teacher Guide runtime sözleşmesine uygun projection bundle aynı kanonik veriye karşı otomatik olarak karşılaştırılır.
+
+Kalite dondurması şunları zorunlu kılar:
+
+- 129/129 source kaydının `VERIFIED` olması,
+- 151/151 answer-bank kaydının Lesson Player ve EPUB'da kayıpsız temsil edilmesi,
+- 12 `source_limited` kaydın kaynak sınırını koruması,
+- EPUB'da answer, guidance, explanation, evidence ve structured answer alanlarının semantik paritesi,
+- ÖğretmenOS projection bundle'ın deterministik ve freeze fingerprint'iyle aynı olması,
+- boş opsiyonel alan, yinelenen cevap ve yüksek benzerlikli rehber cümlesi denetimi.
+
+Dondurma manifesti `data/grade-11/source/teacher-book/theme-1/quality-freeze.json`, ayrıntılı rapor ise [THEME_1_QUALITY_FREEZE_2026-09-18.md](docs/THEME_1_QUALITY_FREEZE_2026-09-18.md) dosyasındadır.
+
+Fiziksel Kindle cihaz testi ile ÖğretmenOS'un gerçek runtime/cihaz import testi otomatik dondurma kapsamına alınmamıştır; bunlar manuel kabul testi olarak ayrıca izlenir.
 
 ## Rehberde bulunacak içerik
 

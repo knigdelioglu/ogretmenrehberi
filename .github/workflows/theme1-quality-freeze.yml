@@ -1,0 +1,76 @@
+name: Theme 1 Quality Freeze
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "feat/theme1-quality-freeze"
+    paths:
+      - "tools/build_kindle_epub.py"
+      - "tools/build_ogretmenos_export.py"
+      - "tools/theme1_quality_freeze.py"
+      - "apps/lesson-player/**"
+      - "data/grade-11/presentation/theme-1/**"
+      - "data/grade-11/source/teacher-book/theme-1/**"
+      - ".github/workflows/theme1-quality-freeze.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: apps/lesson-player/package.json
+
+      - name: Compile Python quality tools
+        run: |
+          python3 -m py_compile             tools/build_kindle_epub.py             tools/build_ogretmenos_export.py             tools/theme1_quality_freeze.py
+
+      - name: Build and validate Lesson Player
+        working-directory: apps/lesson-player
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      - name: Build Kindle EPUB
+        run: |
+          python3 tools/build_kindle_epub.py             --theme 1             --output dist/Ogretmen-Rehberi-Tema-1-Kindle.epub
+
+      - name: Build ÖğretmenOS projection bundle
+        run: |
+          python3 tools/build_ogretmenos_export.py             --lesson-catalog apps/lesson-player/src/generated/lessons.json             --output dist/ogretmenos/theme-1-guide-projection.json
+
+      - name: Verify deterministic ÖğretmenOS projection
+        run: |
+          python3 tools/build_ogretmenos_export.py --lesson-catalog apps/lesson-player/src/generated/lessons.json --output /tmp/theme-1-guide-projection-rebuild.json
+          cmp dist/ogretmenos/theme-1-guide-projection.json /tmp/theme-1-guide-projection-rebuild.json
+
+      - name: Run Theme 1 freeze audit
+        run: |
+          python3 tools/theme1_quality_freeze.py             --lesson-catalog apps/lesson-player/src/generated/lessons.json             --ogretmenos-export dist/ogretmenos/theme-1-guide-projection.json             --epub dist/Ogretmen-Rehberi-Tema-1-Kindle.epub             --epub-report dist/Ogretmen-Rehberi-Tema-1-Kindle.build.json             --json-report dist/theme1-quality-freeze.json             --md-report dist/theme1-quality-freeze.md
+
+      - name: Upload freeze evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: theme1-quality-freeze
+          path: |
+            dist/theme1-quality-freeze.json
+            dist/theme1-quality-freeze.md
+            data/grade-11/source/teacher-book/theme-1/quality-freeze.json
+            dist/Ogretmen-Rehberi-Tema-1-Kindle.epub
+            dist/Ogretmen-Rehberi-Tema-1-Kindle.build.json
+            dist/ogretmenos/theme-1-guide-projection.json
+            apps/lesson-player/dist
+          if-no-files-found: error
+          retention-days: 90
