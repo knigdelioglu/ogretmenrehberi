@@ -5,7 +5,7 @@
   "grade": 11,
   "theme_id": "TEMA_02",
   "theme_title": "KÜLTÜR YOLCULUĞU",
-  "status": "PARTIAL_REBUILD",
+  "status": "COMPLETE_WITH_SOURCE_LIMITED",
   "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
   "block_standard": "docs/BLOCK_AUTHORING_STANDARD.md",
   "source_policy": {
@@ -15,11 +15,11 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 2, doğal pedagojik bloklar hâlinde yeniden üretilir."
   },
   "coverage": {
-    "printed_page_range": "86-154",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 + Metin Tahlili-2 + Edebiyat Atölyesi-1 (Konuşma) + Metin Tahlili-3 (Dinleme/İzleme) + Edebiyat Atölyesi-2 (Yazma — Sanal Müze)",
-    "entry_count": 158,
-    "source_limited_entries": 11,
-    "next_printed_page": 155
+    "printed_page_range": "86-159",
+    "scope": "2. Tema: Kültür Yolculuğu — temaya başlama, iki okuma/metin tahlili, konuşma, dinleme/izleme, yazma ve tema sonu ölçme-değerlendirme",
+    "entry_count": 167,
+    "source_limited_entries": 12,
+    "next_scope": "TEMA_03"
   },
   "parts": [
     {
@@ -65,6 +65,10 @@
     {
       "path": "answer-bank/part-11-pages-148-154.json",
       "entries": 11
+    },
+    {
+      "path": "answer-bank/part-12-pages-155-159.json",
+      "entries": 9
     }
   ],
   "rendering_contract": {
