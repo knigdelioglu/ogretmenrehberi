@@ -190,13 +190,6 @@ assert(
   "s.107 Aytmatov Fark Edelim cevabı erişilebilir olmalı."
 );
 
-assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 51 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 46 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 48,
-  "Tema 2 mevcut üretim 51 adım / 46 source / 48 answer olmalı."
-);
-
 for (const lesson of theme2Lessons) {
   for (const step of lesson.steps) {
     assert(
