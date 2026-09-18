@@ -22,8 +22,13 @@
 html,
 body,
 #root {
+  height: 100%;
   min-height: 100%;
   margin: 0;
+}
+
+body {
+  overflow: hidden;
 }
 
 button {
@@ -36,10 +41,12 @@ button:focus-visible {
 }
 
 .app-shell {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 0;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 0 minmax(0, 1fr);
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
   background:
     radial-gradient(circle at top right, rgb(49 94 84 / 0.08), transparent 32rem),
     #f3efe5;
@@ -102,7 +109,10 @@ button:focus-visible {
 
 .outline {
   min-width: 0;
+  min-height: 0;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
   border-right: 1px solid var(--line);
   background: #e9e5da;
 }
@@ -125,7 +135,8 @@ button:focus-visible {
 }
 
 .outline__steps {
-  height: calc(100vh - 132px);
+  min-height: 0;
+  height: auto;
   overflow: auto;
   padding: 10px;
 }
@@ -1222,5 +1233,61 @@ button:focus-visible {
   .topbar button {
     padding: 8px 10px;
     font-size: 0.86rem;
+  }
+}
+
+
+/* Viewport containment and vocabulary fit */
+
+.content-column {
+  overflow: hidden;
+}
+
+.lesson-stage {
+  min-height: 0;
+  overscroll-behavior: contain;
+}
+
+.external-display .lesson-stage,
+.presentation-mode .lesson-stage {
+  overflow: auto;
+}
+
+.external-display .stage-card.density-compact.vocabulary-stage,
+.presentation-mode .stage-card.density-compact.vocabulary-stage {
+  padding: clamp(18px, 2.2vw, 30px);
+}
+
+.stage-card.vocabulary-stage.density-compact h1 {
+  max-width: 36ch;
+  font-size: clamp(1.45rem, 2.45vw, 2.7rem);
+  line-height: 1.08;
+}
+
+.stage-card.vocabulary-stage.density-compact .vocabulary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.stage-card.vocabulary-stage.density-compact .vocabulary-card {
+  min-height: 0;
+  padding: 12px 14px;
+}
+
+.stage-card.vocabulary-stage.density-compact .vocabulary-card__term {
+  font-size: clamp(1.15rem, 1.7vw, 1.65rem);
+}
+
+.stage-card.vocabulary-stage.density-compact .vocabulary-card__definition {
+  min-height: 0;
+  margin-top: 8px;
+  font-size: clamp(0.82rem, 0.95vw, 0.96rem);
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  .stage-card.vocabulary-stage.density-compact .vocabulary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
