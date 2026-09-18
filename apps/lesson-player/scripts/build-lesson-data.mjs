@@ -231,6 +231,7 @@ const output = {
   title: flow.title,
   subtitle: flow.subtitle,
   printed_page_range: flow.printed_page_range,
+  required_source_range: flow.required_source_range,
   generated_at: new Date().toISOString(),
   coverage: {
     source_records: requiredSources.length,
