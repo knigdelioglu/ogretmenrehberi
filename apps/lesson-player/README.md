@@ -6,6 +6,7 @@ Mevcut doğrulanmış dersler:
 
 - **Karagöz / Yazıcı** — basılı s.15–35 — 49 ders adımı / 17 source kaydı / 39 cevap
 - **Mektup / Âli’ye Mektuplar** — basılı s.36–52 — 43 ders adımı / 36 source kaydı / 39 cevap
+- **Edebiyat Atölyesi-1 / Konuşma** — basılı s.53–58 — 11 ders adımı / 7 source kaydı / 9 cevap
 
 Uygulama tek derse bağlı değildir. `data/grade-11/presentation/theme-1/*-flow.json` dosyaları build sırasında otomatik keşfedilerek bir ders kataloğuna dönüştürülür.
 
@@ -92,6 +93,10 @@ Bu sayede öğrenciler “Cevabı göster” gibi öğretmen UI öğelerini gör
 - düzenlenmiş yapıyı açık olan dersin `<lesson-slug>-flow.json` dosyası olarak dışa aktarabilir.
 
 Bu düzenleme kanonik `answer-bank` içeriğini değiştirmez; yalnız presentation/lesson-flow katmanına uygulanır.
+
+## Kaynak sınırlı içerik
+
+QR video, dış rubrik veya PDF'de bulunmayan başka bir kaynağa bağlı sorular normal kesin cevap gibi gösterilmez. `source_limited` kayıtlarında uygulama **Kaynak sınırlı** etiketi ve **Kaynak notu** reveal'i kullanır; yalnız doğrulanabilen çerçeve sunulur.
 
 ## Söz varlığı
 
