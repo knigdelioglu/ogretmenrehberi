@@ -140,12 +140,14 @@ EPUB, kanonik veritabanından **üretilen bir çıktı** olacaktır; elle düzen
 - [Cevap bankası kalite standardı](docs/ANSWER_BANK_QUALITY_STANDARD.md)
 - [Blok bazlı rehber üretim standardı](docs/BLOCK_AUTHORING_STANDARD.md)
 
-Tema 1 pilotunda ortaya çıkan **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** farkları bu belgelerde kalıcılaştırılmıştır. Tema 2–4 üretilirken aynı blok disiplini yeniden uygulanır.
+Tema 1 ve Tema 2 üretiminde doğrulanan **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** farkları bu belgelerde kalıcılaştırılmıştır. Aynı üretim disiplini 3–4. temalarda ve daha sonra hazırlanacak diğer sınıf seviyelerinde varsayılan çalışma sözleşmesidir.
 
 ## Kalite ilkeleri
 
 - **Ders kitabı ana kaynak**, öğretim programı pedagojik doğrulama katmanıdır.
 - Kaynakta bulunmayan bilgi kaynakta varmış gibi gösterilmez.
+- Metin extraction'ında kaybolabilecek alt çizgi, renk, görsel ve tablo yerleşimi gerçek sayfa üzerinden doğrulanır; doğrulanamıyorsa tahmin edilmez.
+- Araştırma, gezi ve kişisel deneyim görevlerinde öğrencinin yerine sahte sonuç veya yaşanmışlık üretilmez.
 - Doğrudan kaynak bilgisi ile öğretmen için üretilmiş açıklama ayrılır.
 - Her önemli kayıt kaynak sayfasına / program bölümüne geri izlenebilir olmalıdır.
 - Belirsiz içerik `needs_teacher_review` benzeri açık bir durumla işaretlenir.
@@ -167,9 +169,9 @@ Veri modeli bağımsız sürümlenir:
 
 Kırıcı şema değişikliklerinde migrasyon tanımlanması hedeflenir. ÖğretmenOS ve EPUB üreticileri hangi şema sürümünü desteklediğini açıkça belirtir.
 
-## İlk hedef
+## Mevcut kalite temeli
 
-İlk kalite eşiği **11. sınıf 1. tema** üzerinde kurulacaktır. Şema, kaynak bağlantıları, öğretmen rehberliği ve çıktı üretimi burada yeterince olgunlaştırıldıktan sonra aynı yapı 2–4. temalara ölçeklenecektir.
+İlk kalite eşiği 11. sınıf 1. temada kurulmuş, 2. temada farklı okuma, konuşma, dinleme/izleme, yazma, araştırma ve ölçme görevleriyle ikinci kez sınanmıştır. Bu iki temadan çıkarılan kurallar artık sınıf numarasına bağlı değildir; 11. sınıfın kalan temalarında ve daha sonra hazırlanacak diğer sınıf seviyelerinde aynı standart kullanılacaktır.
 
 Ayrıntılı sınırlar için [SCOPE.md](SCOPE.md), aşamalar için [ROADMAP.md](ROADMAP.md) dosyasına bakın.
 
