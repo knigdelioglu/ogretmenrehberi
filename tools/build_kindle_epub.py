@@ -69,11 +69,20 @@ a { color: inherit; }
   margin: 1em 0;
 }
 .entry {
-  margin: 1.3em 0 1.8em;
+  margin: 0 0 1.8em;
   padding-top: 0.2em;
-  page-break-inside: avoid;
+  page-break-before: always;
+  break-before: page;
 }
-.entry + .entry { border-top: 1px solid #bbb; padding-top: 1.3em; }
+.entry + .entry { border-top: 0; padding-top: 0.2em; }
+.prompt {
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+.answer-label {
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
 .entry-meta {
   font-family: sans-serif;
   font-size: 0.82em;
@@ -247,8 +256,7 @@ def render_entry(entry: dict, chapter_slug: str) -> str:
     if entry.get("evidence_quotes"):
         quotes = " ".join(f"<strong>{e(q)}</strong>" for q in entry["evidence_quotes"])
         parts.append(f'<div class="evidence"><div class="aux-label">Metinden kısa kanıt</div><p>{quotes}</p></div>')
-    if entry.get("source_locator"):
-        parts.append(f'<div class="source">Kaynak: {e(entry["source_locator"])}</div>')
+    parts.append(f'<div class="source">Kaynak: basılı s. {e(page)}</div>')
     parts.append(f'<div class="back"><a href="#chapter-top">↑ Bölüm başına dön</a></div>')
     parts.append("</section>")
     return "".join(parts)
@@ -426,6 +434,8 @@ def build(theme_no: int, out_path: Path):
         "source_limited": len(limited),
         "blocks": [{"title": x[2], "entries": len(x[4]), "pages": f"{x[0]}-{x[1]}"} for x in blocks],
         "output": str(out_path),
+        "pagination": "one_entry_starts_on_new_page",
+        "source_display": "printed_page_only",
         "size_bytes": out_path.stat().st_size,
     }
 
