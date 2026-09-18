@@ -10,6 +10,7 @@ import lessonJson from "./generated/karagoz.json";
 import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
 import type {
+  DensityKind,
   LayoutKind,
   LessonData,
   LessonStep,
@@ -30,6 +31,7 @@ const displayOnly =
 type StepOverride = {
   display_prompt?: string;
   layout?: LayoutKind;
+  density?: DensityKind;
   reveal_order?: RevealKey[];
   content?: StepContent | null;
 };
@@ -99,6 +101,7 @@ function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
     ...step,
     display_prompt: override.display_prompt ?? step.display_prompt,
     layout: override.layout ?? step.layout,
+    density: override.density ?? step.density,
     reveal_order: override.reveal_order ?? step.reveal_order,
     content: override.content !== undefined ? override.content : step.content
   };
@@ -300,7 +303,8 @@ export default function App() {
       const exported: Record<string, unknown> = {
         id: original.id,
         source_record_id: original.source.source_record_id,
-        layout: effective.layout
+        layout: effective.layout,
+        density: effective.density
       };
 
       if (original.answer) {
@@ -615,6 +619,7 @@ export default function App() {
             updateStepOverride(step.id, { display_prompt: value })
           }
           onLayoutChange={(value) => updateStepOverride(step.id, { layout: value })}
+          onDensityChange={(value) => updateStepOverride(step.id, { density: value })}
           onRevealMove={(key, delta) => moveRevealLayer(step.id, key, delta)}
           onContentChange={(content) => updateStepOverride(step.id, { content })}
           canMoveUp={index > 0}
