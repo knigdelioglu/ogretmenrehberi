@@ -1,6 +1,8 @@
 # Answer Bank Quality Standard
 
-Bu belge, öğretmen rehberindeki cevap bankasının üretim kurallarını tanımlar.
+Bu belge, öğretmen rehberindeki cevap bankasının genel üretim kurallarını tanımlar.
+
+Blok türlerine özgü zorunlu üretim davranışları için ayrıca [BLOCK_AUTHORING_STANDARD.md](BLOCK_AUTHORING_STANDARD.md) uygulanır. Tema 2–4 üretiminde iki belge birlikte bağlayıcıdır.
 
 ## Temel yapı
 
