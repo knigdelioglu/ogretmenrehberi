@@ -116,6 +116,16 @@ function resolveRevealOrder(step, answer) {
   return [...step.reveal];
 }
 
+const allowedDensities = new Set(["large", "comfortable", "compact"]);
+
+function resolveDensity(step) {
+  const density = step.density ?? "comfortable";
+  if (!allowedDensities.has(density)) {
+    fail(`Unsupported density "${density}" for ${step.id}`);
+  }
+  return density;
+}
+
 function resolveDisplayPrompt(step, source, answer) {
   if (step.prompt?.trim()) {
     return { text: step.prompt.trim(), mode: "FLOW_OVERRIDE" };
@@ -208,10 +218,12 @@ const steps = flow.steps.map((step) => {
 
   const displayPrompt = resolveDisplayPrompt(step, source, answer);
   const revealOrder = resolveRevealOrder(step, answer);
+  const density = resolveDensity(step);
 
   return {
     id: step.id,
     layout: step.layout,
+    density,
     reveal_order: revealOrder,
     display_prompt: displayPrompt.text,
     display_prompt_mode: displayPrompt.mode,
