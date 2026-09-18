@@ -266,3 +266,8 @@ Aşağıdaki alanlarda kitap veya mevcut answer-bank zaten yeterli destek sağla
 - ayrıntılı telif hukuku.
 
 Tema 4'te temel ihtiyaç daha fazla ansiklopedik bilgi değil; **gösterme tekniği, alt metin ve belgeselde kurgu** kavramlarını kısa ve işlevsel biçimde netleştirmektir.
+
+
+## Uygulama durumu
+
+Belirlenen dört tamamlayıcı bilgi Tema 4 answer-bank içine eklendi: gösterme tekniği, alt metin, uzam ve belgeselde kurgu.
