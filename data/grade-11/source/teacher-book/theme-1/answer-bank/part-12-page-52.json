@@ -6,10 +6,12 @@
   "entries": [
     {
       "question_id": "T1-P52-Q01",
+      "entry_type": "performance_support",
       "printed_page": 52,
       "question_no": "Dilekçe",
       "prompt_summary": "Okul müdürlüğüne uygun bir konuda dilekçe yazma",
       "answer": "Örnek dilekçe:\n\nOKUL MÜDÜRLÜĞÜNE\n\nOkulumuz kütüphanesinin ders çıkışından sonra da öğrencilerin kullanımına açık tutulmasının, araştırma ve okuma çalışmalarımızı kolaylaştıracağını düşünüyorum. Kütüphanenin uygun görülen günlerde ders bitiminden sonra bir süre daha açık tutulması hususunda gereğini bilgilerinize arz ederim.\n\n... / ... / 2026\nİmza\nAdı Soyadı\nSınıfı / Numarası\nİletişim Bilgileri",
+      "guidance": "Konu öğrenci tarafından değiştirilebilir. Modelin amacı dilekçenin makam, açık talep, gerekçe, resmî üslup, tarih, imza ve kimlik bilgileri düzenini göstermektir; kişisel bilgiler gerçek öğrenciye göre doldurulmalıdır.",
       "explanation": "Dilekçede makam adı, açık ve kısa bir talep, resmî üslup, tarih, imza ve kimlik/iletişim bilgileri bulunmalıdır. Üst makama yazıldığı için sonuç cümlesinde 'arz ederim' kullanılır.",
       "source_locator": "basılı s.51-52 / PDF s.52-53"
     }

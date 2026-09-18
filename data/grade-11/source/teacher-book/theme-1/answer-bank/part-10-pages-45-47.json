@@ -6,6 +6,7 @@
   "entries": [
     {
       "question_id": "T1-P45-Q01",
+      "entry_type": "question_answer",
       "printed_page": 45,
       "question_no": "Değerlendirme",
       "prompt_summary": "Mektup türünün sosyal bilimlerle ilişkisini incelemenin bakış açısına etkisi",
@@ -15,6 +16,7 @@
     },
     {
       "question_id": "T1-P46-Q01",
+      "entry_type": "question_answer",
       "printed_page": 46,
       "question_no": "1",
       "prompt_summary": "Mektubu değerlendirmek için beğeni ölçütleri belirleme",
@@ -23,6 +25,7 @@
     },
     {
       "question_id": "T1-P46-Q02",
+      "entry_type": "question_answer",
       "printed_page": 46,
       "question_no": "2",
       "prompt_summary": "Belirlenen ölçütlere göre Mehmet Kaplan'ın mektubunu değerlendirme",
@@ -31,6 +34,7 @@
     },
     {
       "question_id": "T1-P46-Q03",
+      "entry_type": "question_answer",
       "printed_page": 46,
       "question_no": "3",
       "prompt_summary": "Yazarın mektubu yazma amacına ulaşıp ulaşmadığını değerlendirme",
@@ -39,15 +43,17 @@
     },
     {
       "question_id": "T1-P46-Q04",
+      "entry_type": "performance_support",
       "printed_page": 46,
       "question_no": "4",
       "prompt_summary": "Geri Gelen Mektup ile aynı içerik doğrultusunda mektup yazma",
-      "answer": "Örnek metin: 'Sevgili Dostum, Uzun zamandır görüşemediğimiz için seni daha çok düşündüğümü fark ediyorum. Uzaklık, birlikte geçirdiğimiz zamanların değerini azaltmadı; tersine onları daha canlı hatırlamama sebep oldu. Yeniden görüşeceğimiz günü umutla bekliyorum. Kendine iyi bak. Sevgiyle…' Bu örnekte şiirdeki özlem ve kavuşma isteği, mektup türüne uygun doğrudan ve samimi bir anlatıma dönüştürülmüştür.",
-      "guidance": "Öğrencinin mektubu birebir aynı cümlelerle yazması beklenmez; özlem, sevgi ve kavuşma isteğini mektup türünün yapısına uygun biçimde aktarması yeterlidir.",
+      "answer": "Örnek plan: Hitapta mektubun samimi tonu kurulabilir; gelişme bölümünde ayrılığın kişide bıraktığı özlem, geçmişte birlikte yaşananların hatırlanması ve yeniden görüşme isteği işlenebilir; kapanışta iyi dilek ve kavuşma umudu verilebilir. Örnek metin: 'Sevgili Dostum, Uzak kaldığımız günler, birlikte geçirdiğimiz zamanların değerini bana daha çok hissettirdi. Bazen küçük bir hatıra bile seni yanı başımdaymışsın gibi düşündürüyor. Yeniden görüşeceğimiz günü umutla bekliyorum. Kendine iyi bak. Sevgiyle…' Böylece şiirdeki özlem ve kavuşma isteği, mektubun doğrudan ve samimi anlatımına dönüştürülür.",
+      "guidance": "Örnek aynen kopyalanmamalıdır. Öğrenci şiirde kendisinin öne çıkardığı duygu veya düşünceyi koruyup hitap, gelişme ve kapanışı kendi anlatımıyla kurabilir.",
       "source_locator": "basılı s.46 / PDF s.47"
     },
     {
       "question_id": "T1-P47-Q01",
+      "entry_type": "question_answer",
       "printed_page": 47,
       "question_no": "1",
       "prompt_summary": "Mektuptaki gerçeklik ile nesnel gerçekliğin örtüşmesini değerlendirme",
@@ -57,6 +63,7 @@
     },
     {
       "question_id": "T1-P47-Q02",
+      "entry_type": "question_answer",
       "printed_page": 47,
       "question_no": "2",
       "prompt_summary": "Metin ve gerçek hayattan örneklerle gerçeklik değerlendirmesini destekleme",
@@ -65,6 +72,7 @@
     },
     {
       "question_id": "T1-P47-Q03",
+      "entry_type": "question_answer",
       "printed_page": 47,
       "question_no": "3",
       "prompt_summary": "Arkadaş görüşlerini değerlendirip katılma veya katılmama gerekçesi oluşturma",

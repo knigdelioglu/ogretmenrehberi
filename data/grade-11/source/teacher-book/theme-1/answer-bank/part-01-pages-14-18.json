@@ -6,14 +6,19 @@
   "entries": [
     {
       "question_id": "T1-P14-Q01",
+      "entry_type": "question_answer",
       "printed_page": 14,
       "question_no": "1",
       "prompt_summary": "Edebî eser ile gerçek hayat ilişkisi",
       "answer": "Edebî eser gerçek hayatı olduğu gibi kopyalamaz; gerçeklikten aldığı kişi, olay, duygu ve durumları sanatçının bakışıyla seçer, dönüştürür ve yeniden kurar. Bu nedenle edebî eserdeki gerçeklik yaşanmış hayatla bağlantılıdır fakat onun sanatsal biçimde yorumlanmış hâlidir.",
+      "evidence_quotes": [
+        "kurmaca metinlerin hareket noktası ve malzemesi gerçeklik dışında aranmamalıdır"
+      ],
       "source_locator": "basılı s.14 / PDF s.15"
     },
     {
       "question_id": "T1-P14-Q02",
+      "entry_type": "question_answer",
       "printed_page": 14,
       "question_no": "2",
       "prompt_summary": "Edebî dil ve sosyal bilimlerin iletişime katkısı",
@@ -23,6 +28,7 @@
     },
     {
       "question_id": "T1-P15-Q01",
+      "entry_type": "question_answer",
       "printed_page": 15,
       "question_no": "1",
       "prompt_summary": "Seyirlik halk oyunlarında dikkat çeken unsurlar",
@@ -34,6 +40,7 @@
     },
     {
       "question_id": "T1-P15-Q02",
+      "entry_type": "question_answer",
       "printed_page": 15,
       "question_no": "2",
       "prompt_summary": "Günlük hayatın tiyatroya yansıması",
@@ -43,17 +50,20 @@
     },
     {
       "question_id": "T1-P15-Q03",
+      "entry_type": "question_answer",
       "printed_page": 15,
       "question_no": "3",
       "prompt_summary": "Yazılı metin bulunmamasının nedeni",
       "answer": "Geleneksel Türk tiyatrosu doğaçlamaya dayandığı için önceden hazırlanmış ve ezberlenmiş ayrıntılı metinlere ihtiyaç duyulmaz. Temel bir olay çizgisi ve bazı kalıp sözler vardır; bunun dışındaki konuşmaları oyuncu oyunun akışına göre oluşturabilir.",
       "evidence_quotes": [
+        "önceden hazırlanmış, yazılmış, ezberlenmiş metinleri yoktur",
         "her şeyi irticalle söylemekte serbesttir"
       ],
       "source_locator": "basılı s.15 / PDF s.16"
     },
     {
       "question_id": "T1-P15-Q04",
+      "entry_type": "question_answer",
       "printed_page": 15,
       "question_no": "4",
       "prompt_summary": "Günümüzde benzer işlevleri üstlenen sanatlar",
@@ -64,6 +74,7 @@
     },
     {
       "question_id": "T1-P16-Q01",
+      "entry_type": "question_answer",
       "printed_page": 16,
       "question_no": "1",
       "prompt_summary": "Görsellerdeki Karagöz tiplerinin adları",
@@ -72,6 +83,7 @@
     },
     {
       "question_id": "T1-P16-Q02",
+      "entry_type": "question_answer",
       "printed_page": 16,
       "question_no": "2",
       "prompt_summary": "Fiziksel özelliklerden kişilik tahmini",
@@ -81,6 +93,7 @@
     },
     {
       "question_id": "T1-P16-Q03",
+      "entry_type": "question_answer",
       "printed_page": 16,
       "question_no": "3",
       "prompt_summary": "Tiplerin dili farklı kullanma nedenleri",
@@ -90,6 +103,7 @@
     },
     {
       "question_id": "T1-P17-Q01",
+      "entry_type": "question_answer",
       "printed_page": 17,
       "question_no": "1",
       "prompt_summary": "Yazıcı metninin açıklık ve anlaşılırlığı",
@@ -98,14 +112,22 @@
     },
     {
       "question_id": "T1-P17-Q02",
+      "entry_type": "question_answer",
       "printed_page": 17,
       "question_no": "2",
       "prompt_summary": "Dönemin dilini yansıtan kelime ve ifadeler",
       "answer": "Metinde 'cânân', 'meh-i tâbân', 'esbâb-ı mûcibe', 'mâ-nahnü-fîh', 'gonce-dehân' ve 'iskân-ı beyt' gibi bugün günlük dilde az kullanılan kelime ve tamlamalar dönemin dil özelliklerini yansıtır. Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark da sosyal dil çeşitliliğini gösterir.",
+      "evidence_quotes": [
+        "cânân",
+        "meh-i tâbân",
+        "esbâb-ı mûcibe",
+        "mâ-nahnü-fîh"
+      ],
       "source_locator": "basılı s.17 / PDF s.18; örnekler basılı s.18-23"
     },
     {
       "question_id": "T1-P17-Q03",
+      "entry_type": "question_answer",
       "printed_page": 17,
       "question_no": "3",
       "prompt_summary": "Dönemsel kelimelerin akıcılığa etkisi",
@@ -114,6 +136,7 @@
     },
     {
       "question_id": "T1-P18-Q01",
+      "entry_type": "question_answer",
       "printed_page": 18,
       "question_no": "1",
       "prompt_summary": "Yazıcı başlığından içerik tahmini",

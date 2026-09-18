@@ -6,6 +6,7 @@
   "entries": [
     {
       "question_id": "T1-P25-Q01",
+      "entry_type": "question_answer",
       "printed_page": 25,
       "question_no": "1",
       "prompt_summary": "Bağlamdan kelime anlamı çıkarma",
@@ -14,6 +15,7 @@
     },
     {
       "question_id": "T1-P25-Q02",
+      "entry_type": "question_answer",
       "printed_page": 25,
       "question_no": "2",
       "prompt_summary": "Eski kelimelere güncel karşılık önerme",
@@ -23,6 +25,7 @@
     },
     {
       "question_id": "T1-P25-Q03",
+      "entry_type": "question_answer",
       "printed_page": 25,
       "question_no": "3",
       "prompt_summary": "Metindeki başka eski veya bilinmeyen kelimeler",
@@ -32,6 +35,7 @@
     },
     {
       "question_id": "T1-P27-Q01",
+      "entry_type": "question_answer",
       "printed_page": 27,
       "question_no": "1",
       "prompt_summary": "Karagöz ve Hacivat'ın dilinden kişilik çıkarımı",
@@ -44,6 +48,7 @@
     },
     {
       "question_id": "T1-P27-Q02",
+      "entry_type": "question_answer",
       "printed_page": 27,
       "question_no": "2",
       "prompt_summary": "Kişilik çıkarımında kullanılan ipuçları",
@@ -52,20 +57,20 @@
     },
     {
       "question_id": "T1-P28-Q01",
+      "entry_type": "question_answer",
       "printed_page": 28,
       "question_no": "1",
       "prompt_summary": "Söz varlığı ile eğitim ve sosyal statü ilişkisi",
       "answer": "Tiplerin söz varlığı eğitim ve sosyal durumlarıyla uyumludur. Çelebi ve Hacivat daha eğitimli kişileri çağrıştıran ağır ve eski kelimeler kullanırken Karagöz bunları halk dili içinden benzer sesli sözlere dönüştürür. Örneğin 'iskân-ı beyt' sözünü 'iskelede bitleniyorum', 'hane-ber-dûşsunuz' sözünü de 'Muş değilim ben' diye anlaması bu karşıtlığı açıkça gösterir.",
       "evidence_quotes": [
         "iskân-ı beyt",
-        "İskelede bitleniyorum",
-        "hane-ber-dûşsunuz",
-        "Muş değilim ben"
+        "hane-ber-dûşsunuz"
       ],
       "source_locator": "basılı s.28 / PDF s.29"
     },
     {
       "question_id": "T1-P28-Q02",
+      "entry_type": "question_answer",
       "printed_page": 28,
       "question_no": "2",
       "prompt_summary": "Söz varlığının işlevinin başka yollarla sağlanması",
@@ -74,6 +79,7 @@
     },
     {
       "question_id": "T1-P28-Q03",
+      "entry_type": "question_answer",
       "printed_page": 28,
       "question_no": "3",
       "prompt_summary": "Benzer konuşma ve davranışların günlük hayatta değerlendirilmesi",
@@ -83,6 +89,7 @@
     },
     {
       "question_id": "T1-P29-Q01",
+      "entry_type": "question_answer",
       "printed_page": 29,
       "question_no": "1",
       "prompt_summary": "Karagöz ile Hacivat'ın farklılıklara rağmen dostluğu",
@@ -91,6 +98,7 @@
     },
     {
       "question_id": "T1-P29-Q02",
+      "entry_type": "question_answer",
       "printed_page": 29,
       "question_no": "2",
       "prompt_summary": "Dostluk kavramının anlamı",
