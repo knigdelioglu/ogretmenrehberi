@@ -11,7 +11,18 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length === 7, "1. Tema lesson catalog tam olarak yedi ders içermeli.");
+
+const theme1Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_01");
+const theme2Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_02");
+
+assert(
+  theme1Lessons.length === 7,
+  "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
+);
+assert(
+  theme2Lessons.length === 1,
+  "Tema 2 üretiminin ilk aşamasında yalnız giriş dersi bulunmalı."
+);
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -55,23 +66,72 @@ const expectedLessonOrder = [
   "T11-T01-DEGERLENDIRME"
 ];
 assert(
-  JSON.stringify(lessons.map((lesson) => lesson.lesson_id)) ===
+  JSON.stringify(theme1Lessons.map((lesson) => lesson.lesson_id)) ===
     JSON.stringify(expectedLessonOrder),
   "1. Tema ders kataloğu basılı kitap sırasını korumalı."
 );
 
 assert(
-  lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 176,
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 176,
   "1. Tema toplam 176 ders adımı içermeli."
 );
 assert(
-  lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
   "1. Tema 129 source-index kaydının tamamını kapsamalı."
 );
 assert(
-  lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 151,
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 151,
   "1. Tema 151 answer-bank kaydının tamamını kapsamalı."
 );
+
+const theme2Intro = byLessonId.get("T11-T02-GIRIS");
+assert(theme2Intro, "2. Tema giriş dersi catalog içinde bulunamadı.");
+assert(
+  theme2Intro.lesson_slug === "tema-2-girisi",
+  "2. Tema giriş lesson_slug benzersiz ve doğru olmalı."
+);
+assert(
+  theme2Intro.printed_page_range === "84-88",
+  "2. Tema giriş bloğu kitapta s.84–88 aralığını kapsamalı."
+);
+assert(
+  theme2Intro.coverage.steps === 14 &&
+    theme2Intro.coverage.source_records === 14 &&
+    theme2Intro.coverage.answer_entries === 12,
+  "2. Tema giriş bloğu 14 adım / 14 source / 12 answer olmalı."
+);
+
+const theme2IntroById = new Map(
+  theme2Intro.steps.map((step) => [step.id, step])
+);
+assert(
+  theme2IntroById.get("s84-overview")?.answer === null &&
+    theme2IntroById.get("s84-overview")?.layout === "reference" &&
+    theme2IntroById.get("s85-theme-presentation")?.answer === null,
+  "s.84–85 tema açılışı cevapsız referans ekranları olarak korunmalı."
+);
+assert(
+  theme2IntroById.get("s86-q1")?.answer?.question_id === "T2-P86-Q01" &&
+    theme2IntroById.get("s86-q3")?.answer?.guidance,
+  "s.86 Vatan yahut Silistre soruları ve gerekli yönlendirme erişilebilir olmalı."
+);
+assert(
+  theme2IntroById.get("s87-q1")?.answer?.explanation?.includes("Alfabe") &&
+    theme2IntroById.get("s87-q2")?.answer?.evidence_quotes?.length === 1,
+  "s.87 alfabe-yazı dili ayrımı ve metin kanıtı korunmalı."
+);
+assert(
+  theme2IntroById.get("s88-q3")?.answer?.guidance &&
+    theme2IntroById.get("s88-q1")?.answer?.explanation &&
+    theme2IntroById.get("s88-q5")?.answer?.explanation,
+  "s.88 açık uçlu ve QR-bağlamlı soruların öğretmen rehberliği korunmalı."
+);
+for (const step of theme2Intro.steps) {
+  assert(
+    step.source.source_status === "VERIFIED",
+    `2. Tema giriş source kaydı VERIFIED olmalı: ${step.source.source_record_id}`
+  );
+}
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
 assert(karagoz, "Karagöz dersi catalog içinde bulunamadı.");

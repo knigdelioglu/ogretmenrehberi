@@ -304,7 +304,16 @@ Ayrıntılı kanıt: [THEME_1_QUALITY_FREEZE_2026-09-18.md](docs/THEME_1_QUALITY
 Pilot mimariyi bozmadan kalan temaları tamamlamak.
 
 ### Sıra
-- [ ] 2. Tema — Kültür Yolculuğu
+- [~] 2. Tema — Kültür Yolculuğu
+  - [x] Tema Girişi / Temaya-Konuya Başlarken — s.84–88
+  - [ ] Türk Dilleri + Oğulla Buluşma — s.89–107
+  - [ ] Eski İstanbul’dan Çizgiler / Anı — s.108–112
+  - [ ] Orhun Abideleri — s.113–124
+  - [ ] Dîvânu Lugâti’t-Türk — s.125–128
+  - [ ] Konuşma — s.129–135
+  - [ ] Dinleme / İzleme — Âşık Atışması — s.136–147
+  - [ ] Yazma — Çevrim İçi Müze — s.148–154
+  - [ ] Ölçme ve Değerlendirme — s.155–159
 - [ ] 3. Tema — Yaşamın İzinde
 - [ ] 4. Tema — Hayatın Aynası
 
@@ -416,4 +425,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde** rehber üretimine, Tema 1 ve Tema 2'de doğrulanan blok bazlı kalite standardıyla devam etmek.
+**11. sınıf 2. Tema — Türk Dilleri + Oğulla Buluşma, basılı s.89–107** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.

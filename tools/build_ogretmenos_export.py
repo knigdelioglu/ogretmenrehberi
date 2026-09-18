@@ -78,7 +78,16 @@ def main() -> int:
 
     answer_index, answers = load_answers()
     source_index, sources = load_sources()
-    lessons = json.loads(args.lesson_catalog.read_text(encoding="utf-8"))
+    all_lessons = json.loads(args.lesson_catalog.read_text(encoding="utf-8"))
+    lessons = [
+        lesson
+        for lesson in all_lessons
+        if lesson.get("theme_id") == "TEMA_01"
+        or (
+            lesson.get("theme_id") is None
+            and str(lesson.get("lesson_id", "")).startswith("T11-T01-")
+        )
+    ]
 
     answer_by_id = {entry["question_id"]: entry for entry in answers}
     source_by_id = {record["source_record_id"]: record for record in sources}
@@ -296,7 +305,11 @@ def main() -> int:
     # generated_at is build metadata, not content. Excluding it keeps the
     # fingerprint stable across identical rebuilds.
     semantic_lessons = [
-        {key: value for key, value in lesson.items() if key != "generated_at"}
+        {
+            key: value
+            for key, value in lesson.items()
+            if key not in {"generated_at", "theme_id"}
+        }
         for lesson in lessons
     ]
     canonical_payload = {

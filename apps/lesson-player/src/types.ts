@@ -70,6 +70,7 @@ export interface LessonStep {
 
 export interface LessonData {
   schema_version: string;
+  theme_id: string;
   lesson_id: string;
   lesson_slug: string;
   title: string;
