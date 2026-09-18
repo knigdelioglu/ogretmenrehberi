@@ -137,6 +137,31 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-konusma-assessment.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s58-assessment"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-dinleme-prep.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-DINLEME-IZLEME&step=s64-observation"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-dinleme-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-DINLEME-IZLEME&step=s65-vocabulary"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-dinleme-exit.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-DINLEME-IZLEME&step=s73-exit"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -151,5 +176,8 @@ jobs:
             lesson-player-mektup-vocabulary.png
             lesson-player-konusma-plan.png
             lesson-player-konusma-assessment.png
+            lesson-player-dinleme-prep.png
+            lesson-player-dinleme-vocabulary.png
+            lesson-player-dinleme-exit.png
             apps/lesson-player/dist
           if-no-files-found: error
