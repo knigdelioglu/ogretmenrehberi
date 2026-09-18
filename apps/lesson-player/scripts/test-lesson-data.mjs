@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 3, "Lesson catalog en az üç ders içermeli.");
+assert(lessons.length >= 4, "Lesson catalog en az dört ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -301,6 +301,79 @@ assert(
 assert(
   JSON.stringify(s58Feedback.reveal_order) === JSON.stringify(["note"]),
   "s58 QR kaynak sınırı öğretmen notu reveal'i olarak erişilebilir olmalı."
+);
+
+const listening = byLessonId.get("T11-T01-DINLEME");
+assert(listening, "Dinleme/İzleme dersi catalog içinde bulunamadı.");
+assert(
+  listening.lesson_slug === "dinleme-izleme",
+  "Dinleme/İzleme lesson_slug doğru olmalı."
+);
+assert(listening.coverage.steps === 38, "Dinleme/İzleme dersi 38 adım olmalı.");
+assert(
+  listening.coverage.source_records === 38,
+  "Dinleme/İzleme 38 source-index kaydının tamamını kapsamalı."
+);
+assert(
+  listening.coverage.answer_entries === 36,
+  "Dinleme/İzleme 36 answer-bank kaydını kapsamalı."
+);
+
+const listeningById = new Map(listening.steps.map((step) => [step.id, step]));
+
+const l64Listen = listeningById.get("s64-listen");
+assert(l64Listen, "s64 QR dinleme/izleme süreci eksik.");
+assert(
+  l64Listen.answer === null && l64Listen.layout === "process",
+  "s64 QR dinleme/izleme adımı cevapsız süreç ekranı olmalı."
+);
+
+const l64Observation = listeningById.get("s64-observation");
+assert(l64Observation, "s64 Gözlem Formu eksik.");
+assert(
+  l64Observation.content?.items?.length === 8,
+  "s64 Gözlem Formu 8 ölçütü eksiksiz taşımalı."
+);
+
+const l65Vocabulary = listeningById.get("s65-vocabulary");
+assert(l65Vocabulary, "s65 söz varlığı adımı eksik.");
+assert(
+  l65Vocabulary.layout === "vocabulary" &&
+    l65Vocabulary.density === "compact",
+  "s65 söz varlığı kompakt vocabulary görünümünde olmalı."
+);
+for (const term of ["Tasavvur","Nörolojik","Sosyal","Güdü","Medeni","Muhabbet"]) {
+  assert(
+    l65Vocabulary.answer.answer_sections?.[term],
+    `Dinleme/İzleme söz varlığı tanımı eksik: ${term}`
+  );
+}
+
+const l66q4 = listeningById.get("s66-q4");
+assert(
+  l66q4?.answer?.entry_type === "source_limited",
+  "Video konu/tema sorusu source_limited kalmalı."
+);
+
+const l68 = listeningById.get("s68-future-communication");
+assert(
+  l68?.content?.items?.length === 5,
+  "s68 grup tartışması beş kitap adımını korumalı."
+);
+
+const l72q2 = listeningById.get("s72-q2");
+assert(
+  l72q2?.answer?.entry_type === "performance_support",
+  "s72 ilişki/etkileşim haritası performans desteği olmalı."
+);
+
+const l73Exit = listeningById.get("s73-exit");
+assert(l73Exit, "s73 3-2-1 Çıkış Kartı eksik.");
+assert(
+  l73Exit.answer?.answer_sections?.["Üç Yaz"] &&
+    l73Exit.answer?.answer_sections?.["İki Sor"] &&
+    l73Exit.answer?.answer_sections?.["Bir Paylaş"],
+  "s73 Çıkış Kartı 3-2-1 yapısını korumalı."
 );
 
 console.log(
