@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "OGRETMEN_REHBERI_SOURCE_MANIFEST",
+  "grade": 11,
+  "course_id": "TDE_11",
+  "course_title": "Türk Dili ve Edebiyatı",
+  "imported_from": {
+    "repository": "knigdelioglu/tymm",
+    "commit": "65e2128c75adf03f0f59fca2cbc5888efa714e2c",
+    "source_manifest_path": "courses/TDE_11/source_manifest.json"
+  },
+  "external_source_folder": "https://drive.google.com/drive/folders/1EDtxXnTOdKjp7BlSJVCVbs7HHEEK07LO",
+  "repository_policy": {
+    "pdf_binaries_committed": false,
+    "note": "Bu public repo yalnız kaynak kimliği, fingerprint ve türetilmiş doğrulanmış haritaları sürümler. PDF ikilileri repoya kopyalanmaz."
+  },
+  "textbook": {
+    "source_id": "textbook_tde11_local_pdf",
+    "source_type": "official_textbook",
+    "title": "Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı",
+    "filename": "turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf",
+    "edition_year": 2026,
+    "isbn": "978-605-06002-7-8",
+    "ttkb_acceptance": {
+      "date": "2026-07-27",
+      "reference_no": "164960037"
+    },
+    "pdf_page_count": 313,
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "theme_count": 4,
+    "section_count": 24,
+    "activity_count": 84,
+    "form_record_count": 43,
+    "verification_status": "VERIFIED"
+  },
+  "curriculum": {
+    "source_group_id": "curriculum_tde11_official_tymm_theme_bundle",
+    "expected_part_count": 4,
+    "verified_part_count": 4,
+    "bundle_sha256": "a931973ce05bfe067cccf6188a4ddc73a2c3e93a843ff0c324325f4ebb55ba93",
+    "parts": [
+      {
+        "source_id": "official_tymm_theme_01",
+        "source_type": "official_curriculum_theme",
+        "theme_id": "TEMA_01",
+        "title": "BİR DİYECEĞİM VAR!",
+        "official_url": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/267",
+        "filename": "Türk Dili Ve Edebiyatı Dersi 11.Sınıf 1. TEMA - BİR DİYECEĞİM VAR!.PDF",
+        "pdf_page_count": 11,
+        "size_bytes": 478569,
+        "sha256": "66d997920f0589cd19f735f1fce820916eafcf26412ab19091811f7248a55482",
+        "official_unit_id": 267,
+        "verification_status": "VERIFIED_OFFICIAL_REMOTE_AND_LOCAL_CONTENT"
+      },
+      {
+        "source_id": "official_tymm_theme_02",
+        "source_type": "official_curriculum_theme",
+        "theme_id": "TEMA_02",
+        "title": "KÜLTÜR YOLCULUĞU",
+        "official_url": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/276",
+        "filename": "Türk Dili Ve Edebiyatı Dersi 11.Sınıf 2. TEMA - KÜLTÜR YOLCULUĞU.PDF",
+        "pdf_page_count": 13,
+        "size_bytes": 548711,
+        "sha256": "2dd813e521d110d165fa93965189e6ed619ffb4da04b48d6616ab1b9f915cf58",
+        "official_unit_id": 276,
+        "verification_status": "VERIFIED_OFFICIAL_REMOTE_AND_LOCAL_CONTENT"
+      },
+      {
+        "source_id": "official_tymm_theme_03",
+        "source_type": "official_curriculum_theme",
+        "theme_id": "TEMA_03",
+        "title": "YAŞAMIN İZİNDE",
+        "official_url": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/322",
+        "filename": "Türk Dili Ve Edebiyatı Dersi 11.Sınıf 3. TEMA - YAŞAMIN İZİNDE.PDF",
+        "pdf_page_count": 14,
+        "size_bytes": 544923,
+        "sha256": "d9d414bd2dc9fdc7852ee7c66a421a8a146c0560d56b4025690ce988458de04e",
+        "official_unit_id": 322,
+        "verification_status": "VERIFIED_OFFICIAL_REMOTE_AND_LOCAL_CONTENT"
+      },
+      {
+        "source_id": "official_tymm_theme_04",
+        "source_type": "official_curriculum_theme",
+        "theme_id": "TEMA_04",
+        "title": "HAYATIN AYNASI",
+        "official_url": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332",
+        "filename": "Türk Dili Ve Edebiyatı Dersi 11.Sınıf 4. TEMA - HAYATIN AYNASI.PDF",
+        "pdf_page_count": 12,
+        "size_bytes": 475320,
+        "sha256": "14a5e5e17919c801127e9c157ef7bc1c947a0d3bcad0d8654cfc3a514aa147f5",
+        "official_unit_id": 332,
+        "verification_status": "VERIFIED_OFFICIAL_REMOTE_AND_LOCAL_CONTENT"
+      }
+    ]
+  },
+  "source_rules": {
+    "authority_order": [
+      "official_curriculum",
+      "official_textbook",
+      "verified_derived_indexes"
+    ],
+    "fail_closed": true,
+    "no_silent_source_replacement": true,
+    "fingerprint": "SHA-256"
+  }
+}

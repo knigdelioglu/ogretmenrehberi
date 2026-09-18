@@ -1,0 +1,1998 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "TYMM_TEACHER_BOOK_SOURCE_INDEX",
+  "course_id": "TDE_11",
+  "theme_id": "TEMA_04",
+  "authority": "OFFICIAL_TEXTBOOK_DERIVED",
+  "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
+  "counts": {
+    "records": 143,
+    "linked_answers": 114
+  },
+  "records": [
+    {
+      "source_record_id": "T04-S0001",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "236",
+      "book_heading": "4. Tema — Hayatın Aynası / tema çerçevesi ve anahtar kavramlar",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.236 / PDF s.237 — tema kapsamı, beklenen öğrenmeler ve anahtar kavramlar",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0001",
+        "T04-A0002"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0002",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "237",
+      "book_heading": "Tema eşiği — Yunus Emre ve kendini bilme",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.237 / PDF s.238 — Yunus Emre sözü; bağımsız soru yok",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0003"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0003",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "238",
+      "book_heading": "Temaya Başlarken — kitap ve sosyal gelişim",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Kitap okumanın insanın sosyal yönden gelişmesine katkılarını yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.238 / PDF s.239 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0004"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0004",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "238",
+      "book_heading": "Temaya Başlarken — kitap ve kalıcılık",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Şiirde kitapların neden ‘ebedî dostlar’ olarak nitelendirilebileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.238 / PDF s.239 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0004"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0005",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "239",
+      "book_heading": "Temaya Başlarken — sanatsal metnin özellikleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Metindeki ‘özel anlam yüklediğimiz bazı etkinlikleri sanat olarak adlandırıyoruz’ düşüncesinden hareketle sanatsal bir metnin özelliklerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.239 / PDF s.240 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0006",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "239",
+      "book_heading": "Temaya Başlarken — okur yaşantısı ve anlam",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Bir edebî eserde daha önce yaşadığınız bir olay veya durumla karşılaşmanız eseri sizin için daha anlamlı kılar mı? Gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.239 / PDF s.240 — soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0007",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "239",
+      "book_heading": "Temaya Başlarken — hayat kesiti ve tür seçimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Bir edebî metin yazsaydınız hangi türü seçer, hayatın hangi yönünü yansıtmak isterdiniz? Seçiminizi gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.239 / PDF s.240 — soru 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0008",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "240",
+      "book_heading": "Konuya Başlarken — Mimar Sinan bağlamından kısa tiyatro metni üretme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.240 / PDF s.241 — Konuya Başlarken 1-4. adımlar",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0006"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0009",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "241-242",
+      "book_heading": "Okumayı Yönetebilme — okuma çemberi, tahmin ve strateji",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.241-242 / PDF s.242-243 — Okumayı Yönetebilme ve Metni Okuyalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0007",
+        "T04-A0008"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0010",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "243-246",
+      "book_heading": "Metni Okuyalım — Ben, Mimar Sinan",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.243-246 / PDF s.244-247 — Ben, Mimar Sinan ana metni",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0009"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0011",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "247",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.247 / PDF s.248 — Söz Varlığımız",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0010"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0012",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "248-249",
+      "book_heading": "Sıra Sizde / Fark Edelim — tahminleri kontrol etme ve tiyatro sanatının işlevi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.248-249 / PDF s.249-250 — Sıra Sizde ve Fark Edelim / Tiyatro Sanatının İşlevi",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0013",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "249",
+      "book_heading": "Karşılaştıralım — gerçek hayat ve tiyatro",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Gerçek hayat ile tiyatro atmosferini olay/durum, mekân, kişiler ve söz varlığı bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0014",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "249",
+      "book_heading": "Karşılaştıralım — sanat metni ve hayat",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Sanatsal metinlerin gerçek hayattan farklı olmasının insan yaşamına katkıları hakkında çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0015",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "250",
+      "book_heading": "Sıra Sizde — ifadelerin sosyal hayatı yansıtma durumu",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.250 / PDF s.251 — Sıra Sizde sosyal hayat tablosu",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0016",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "251-252",
+      "book_heading": "Metni Anlayalım — Ben, Mimar Sinan",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Metnin konusunu ve yazılma amacını belirleyip metin ile yazar arasındaki ilişkiyi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.251 / PDF s.252 — Metni Anlayalım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0017",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "251-252",
+      "book_heading": "Metni Anlayalım — karakter özellikleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Karakter özelliklerini metin kanıtlarıyla belirleyip sizi en çok etkileyen özelliği ve başarılı olsaydınız hangi özelliklerle tanınmak isteyeceğinizi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.251-252 / PDF s.252-253 — Metni Anlayalım soru 2/a-b-c",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0018",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "252",
+      "book_heading": "Metni Anlayalım — bilgi, azim, çalışkanlık ve başarı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — ‘Bilgim, azmim ve çalışkanlığımla talihimi yenmiştim.’ iletisini yorumlayıp başarılı olmak için başka hangi kişilik özelliklerinin gerekli olabileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.252 / PDF s.253 — Metni Anlayalım soru 3/a-b",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0014"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0019",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "253-254",
+      "book_heading": "Karşılaştıralım — Ben, Mimar Sinan / Cimri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Ben, Mimar Sinan ile Cimri'yi içerik, dönem, zihniyet ve üslup bakımından karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.254 / PDF s.255 — Karşılaştıralım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0020",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "254",
+      "book_heading": "Karşılaştıralım — modern tiyatro türü",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — İki tiyatro metninin dram, komedi veya trajedi türlerinden hangisine daha yakın olduğunu gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.254 / PDF s.255 — Karşılaştıralım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0021",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "255",
+      "book_heading": "Sıra Sizde — tiyatro metnini özetleme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Ben, Mimar Sinan metnini ana olay çizgisini koruyarak özetleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.255 / PDF s.256 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0016"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0022",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "255",
+      "book_heading": "Sıra Sizde — amaç, dil ve tarihî gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Metnin yazılma amacı ile dil/anlatım ilişkisini ve tarihî gerçeklikle kurduğu ilişkiyi değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.255 / PDF s.256 — Sıra Sizde soru 2/a-b",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0016"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0023",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "255",
+      "book_heading": "Sıra Sizde — dekor tasarımı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Ben, Mimar Sinan'ın sahnelenmesi için tarihî atmosferi ve çalışma/mimari ortamını destekleyen dekor önerileri geliştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.255 / PDF s.256 — Sıra Sizde soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0016"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0024",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "256",
+      "book_heading": "Birlikte Çalışalım — yapı unsurları ve ilişkileri",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.256 / PDF s.257 — Birlikte Çalışalım 1-5. adımlar",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0017"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0025",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "257",
+      "book_heading": "Fark Edelim — monolog ve diyalog",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Metinden bir monolog ve bir diyalog örneği belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.257 / PDF s.258 — Fark Edelim soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0026",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "257-258",
+      "book_heading": "Fark Edelim — monolog ve diyaloğun işlevi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Metinde monolog ve diyaloğun hangi amaçlarla kullanıldığını açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.258 / PDF s.259 — Fark Edelim soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0027",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "258",
+      "book_heading": "Sıra Sizde — yazarın üslup seçimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Yazarın üslup tercihinin nedenlerini ve metne etkilerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.258 / PDF s.259 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0028",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "258",
+      "book_heading": "Sıra Sizde — cümle çeşitliliği ve üslup",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Verilen cümleleri yapı özelliklerine göre sınıflandırıp cümle çeşitliliğinin metnin üslubuna katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.258 / PDF s.259 — Sıra Sizde soru 2/a-b",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0029",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "259",
+      "book_heading": "Fark Edelim — tarih ve kültür bilinci",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Ben, Mimar Sinan'ın tarih ve kültür bilinci kazandırma amacı taşıyıp taşımadığını metin kanıtlarıyla değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.259 / PDF s.260 — Fark Edelim soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0030",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "259",
+      "book_heading": "Fark Edelim — Turgut Özakman'ın tarih ve kimlik anlayışı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Metinden hareketle Turgut Özakman'ın tarih ve millî kimlikle ilgili düşünceleri hakkında çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.259 / PDF s.260 — Fark Edelim soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0031",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "260",
+      "book_heading": "Sıra Sizde — metindeki değerler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Metinde öne çıkan değerleri belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0032",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "260",
+      "book_heading": "Sıra Sizde — değer ve metin kanıtı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Belirlediğiniz değerleri metindeki söz, davranış veya olaylarla örneklendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0033",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "260",
+      "book_heading": "Sıra Sizde — değerlerin günlük hayattaki önemi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Metindeki değerlerin günlük hayattaki önemini somut davranışlarla açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0034",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "260",
+      "book_heading": "Sıra Sizde — değerlerin Mimar Sinan'a yansıması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Çalışkanlık, estetik anlayışı ve sorumluluk gibi değerlerin Mimar Sinan'ın kişiliğine ve eserlerine nasıl yansıdığını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0035",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "260",
+      "book_heading": "Ders Dışı Etkinlik — Tiyatro ve Sosyal Bilimler",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.260 / PDF s.261 — Ders Dışı Etkinlik / Tiyatro ve Sosyal Bilimler",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0020"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0036",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "261",
+      "book_heading": "Birlikte Çalışalım — çatışmaların metne etkisi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.261 / PDF s.262 — Birlikte Çalışalım 1-5. adımlar",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0020"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0037",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "262",
+      "book_heading": "Süreci Değerlendirebilme / Ben Kimim — yaşam ilişkileri ve beğeni ölçütleri",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.262 / PDF s.263 — Süreci Değerlendirebilme ve Ben Kimim",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0021"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0038",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "262",
+      "book_heading": "Sıra Sizde — canlandırmak istediğiniz kişi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Ben, Mimar Sinan'daki kişilerden hangisini canlandırmak istediğinizi gerekçesiyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0039",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "262",
+      "book_heading": "Sıra Sizde — kişileri günlük hayat senaryosuna taşıma",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Seçtiğiniz kişiler için günlük hayatta karşılaşabilecekleri kısa bir olay/durum yazıp kişiliklerine uygun davranışlarını gösteriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0040",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "263",
+      "book_heading": "Konuya Başlarken — yaşam evreleri, yol/merdiven çağrışımı ve hikâye seçimi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.263 / PDF s.264 — Konuya Başlarken sorular 1-3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0023"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0041",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "264",
+      "book_heading": "Bilgi Köşesi — küçürek / minimal öykünün temel özellikleri",
+      "task_type": "REFERENCE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.264 / PDF s.265 — Bilgi Köşesi",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0024"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0042",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "264-265",
+      "book_heading": "Okumayı Yönetebilme — günlük hayat, merdiven çağrışımı, amaç/tahmin ve okuma stratejisi",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.264-265 / PDF s.265-266 — Okumayı Yönetebilme, Sıra Sizde ve Metni Okuyalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0025"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0043",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "266-268",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız: bağlam, alternatif kullanım ve merdiven çağrışımı",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.266-268 / PDF s.267-269 — Söz Varlığımız 1-5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0026"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0044",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "268",
+      "book_heading": "Düşünelim Paylaşalım — “Bahtiyar ol”",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — “Bahtiyar ol” ifadesinin anlamını bağlamdan hareketle tahmin ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.268 / PDF s.269 — Düşünelim Paylaşalım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0045",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "268",
+      "book_heading": "Düşünelim Paylaşalım — kültürümüzde iyi dilek kalıpları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Yaşlıların gençlere iyi niyet dileğini belirttiği benzer kalıplaşmış ifadeler yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.268 / PDF s.269 — Düşünelim Paylaşalım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0046",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "268",
+      "book_heading": "Düşünelim Paylaşalım — söz varlığı, dil ve günlük hayat",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Metnin söz varlığı ile dil/anlatım özelliklerinin günlük hayatı yansıtıp yansıtmadığını gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.268 / PDF s.269 — Düşünelim Paylaşalım soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0047",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — kişiler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — İhtiyar ve delikanlının duygu/düşünceleri hakkında metinden çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0048",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — ihtiyarın öğüdü",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — İhtiyarın koşuşturmanın değmeyeceğine ilişkin sözünü anlatıcının yerinden yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0049",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — “memur” sözcüğü ve yazarın insan/hayat bakışı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Kişilerin “memur” olarak verilmesinden hareketle yazarın hayata ve insana bakışına dair çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0050",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — inmek / çıkmak",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — “İnmek” ve “çıkmak” eylemleriyle yaşama dair hangi anlamların kurulabileceğini yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0051",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — düşündürdükleri ve yazılma amacı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Hikâyenin düşündürdüklerini ve yazarın bu hikâyeyi niçin yazmış olabileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0052",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — kişi sayısı ve tür",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Hikâyedeki kişi sayısının küçürek hikâye türüyle ilişkisini gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0053",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "269",
+      "book_heading": "Metni Anlayalım — şiirsel ritim",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Metne şiirsel ritim kazandıran sözcük ve tekrarları belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 7",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0054",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "270",
+      "book_heading": "Metni Anlayalım — finalde aşağı inme kararı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Anlatıcının yukarı çıkmaktan vazgeçip aşağı inmesini yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.270 / PDF s.271 — Metni Anlayalım soru 8",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0055",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "270",
+      "book_heading": "Çalışma Kâğıdı — konu, çatışma, açık/örtük ileti, zihniyet ve üslup",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.270 / PDF s.271 — Çalışma Kâğıdı",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0056",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "271",
+      "book_heading": "Fark Edelim — Soru 1: az sözle çok duygu / Soru 2: okurun metne katılımı",
+      "task_type": "COMPARISON",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.271 / PDF s.272 — Fark Edelim sorular 1-2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0030"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0057",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "272",
+      "book_heading": "Karşılaştıralım — Ben, Mimar Sinan / Merdiven",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Ben, Mimar Sinan ile Merdiven’i içerik, tür, şekil, dönem, yapı, dil/üslup ve ileti bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0031"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0058",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "272",
+      "book_heading": "Karşılaştıralım — değerleri yansıtmada tür tercihi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — İnsan ilişkilerindeki değerleri tiyatro mu hikâye mi daha iyi yansıtıyor? İki metinden hareketle gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0031"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0059",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "273",
+      "book_heading": "Sıra Sizde — Şair Tavafî / Merdiven karşılaştırması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Şair Tavafî ile Merdiven’i şiirsel dil, çağrışım gücü, içerik ve anlatıcı bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0060",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "273",
+      "book_heading": "Sıra Sizde — iki hikâyeden etkilenme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Şair Tavafî ile Merdiven’den hangisinden daha çok etkilendiğinizi gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0061",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "274",
+      "book_heading": "Birlikte Çalışalım — anlatıcı, ihtiyar ve genç memurun karakter çözümlemesi",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.274 / PDF s.275 — Birlikte Çalışalım karakter çözümleme",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0033"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0062",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "275",
+      "book_heading": "Sıra Sizde — Merdiven’in yapı unsurları",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.275 / PDF s.276 — Yapı Unsurları Çalışma Kâğıdı",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0033"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0063",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "275",
+      "book_heading": "Düşünelim Paylaşalım — dönem çıkarımı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Tür, içerik ve dilden hareketle metnin yazıldığı dönem hakkında çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0064",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "275",
+      "book_heading": "Düşünelim Paylaşalım — günümüz koşullarında kurgu ve akış",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2/a — Hikâye bugün yazılsaydı mimari ve teknolojik imkânlar olayların kurgu ve akışını nasıl değiştirirdi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/a",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0065",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "275",
+      "book_heading": "Düşünelim Paylaşalım — edebiyat ve hayat ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2/b — Güncelleme cevabınızdan hareketle edebiyatın hayatla ilişkisini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/b",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0066",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "276",
+      "book_heading": "Düşünelim Paylaşalım — kuşaklar arası farklılık",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Günümüzde genç ve yaşlı kuşaklar arasındaki benzer farklılıkları ve bunların toplumsal yararını yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.276 / PDF s.277 — Düşünelim Paylaşalım soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0067",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "276-277",
+      "book_heading": "Birlikte Çalışalım — iç çatışma / insan-insan çatışması ve alternatif olay akışı",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.276-277 / PDF s.277-278 — Birlikte Çalışalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0068",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "277",
+      "book_heading": "Sıra Sizde — durumları değerlerle ilişkilendirme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Metindeki davranışları uygun değer veya değerlerle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0069",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "277",
+      "book_heading": "Sıra Sizde — değer yargısıyla çelişen davranış",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Değer yargılarınızla çelişen bir durum/davranış varsa kendi tepkinizi gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0070",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "278",
+      "book_heading": "Fark Edelim — metin ayrıntılarını sosyal bilimler ve diğer disiplinlerle ilişkilendirme",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.278 / PDF s.279 — Fark Edelim disiplin tablosu",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0071",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "278-279",
+      "book_heading": "Fark Edelim — Ferit Edgü’nün küçürek hikâye anlayışı ve Merdiven",
+      "task_type": "QUESTION",
+      "prompt": "Soru — Ferit Edgü’nün küçürek hikâye anlayışının Merdiven’e nasıl yansıdığını metin ve biyografi üzerinden belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.278-279 / PDF s.279-280 — Ferit Edgü tahlil metni ve soru",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0035"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0072",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "279",
+      "book_heading": "Süreci Değerlendirebilme — kendi ölçütlerinle Merdiven’i değerlendirme",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.279 / PDF s.280 — Süreci Değerlendirebilme tablosu",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0036"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0073",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "279",
+      "book_heading": "Birlikte Çalışalım — “Ne işim var benim yukarda?” beyin fırtınası",
+      "task_type": "PROCESS",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.279 / PDF s.280 — Birlikte Çalışalım / beyin fırtınası",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0037"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0074",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "280",
+      "book_heading": "Konuşmayı Yönetebilme — tiyatro metninin diyaloglarından çıkarım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Bir tiyatro metninin yalnız diyaloglarından hareketle tiyatro hakkında hangi genel çıkarımlara ulaşılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0038"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0075",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "280",
+      "book_heading": "Konuşmayı Yönetebilme — rol hazırlığında dikkat edilecekler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Bir tiyatro metnini canlandırırken size verilen rolde en çok nelere dikkat ederdiniz? Nedenleriyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0038"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0076",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "281",
+      "book_heading": "Konuşmayı Yönetebilme — diyalog ve doğru dil",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Tiyatroda diyalogların ve dili doğru kullanmanın önemini günlük hayattan hareketle açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.281 / PDF s.282 — Konuşmayı Yönetebilme soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0039"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0077",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "281",
+      "book_heading": "Konuşmayı Yönetebilme — tiyatronun insanı insana insanla anlatması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — “İnsanı, insana, insanla anlatma sanatıdır.” sözünün tiyatroyu nasıl tanımladığını yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.281 / PDF s.282 — Konuşmayı Yönetebilme soru 4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0039"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0078",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "281",
+      "book_heading": "Performans Görevi — Ben, Mimar Sinan'dan seçilen bölümü yeniden kurgulayıp canlandırma",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.281 / PDF s.282 — Performans Görevi adımlar 1-6 ve Kontrol Listesi",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0040"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0079",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "282-283",
+      "book_heading": "İçerik Oluşturabilme / Kural Uygulayabilme — rolü içselleştirme ve canlandırma",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.282-283 / PDF s.283-284 — İçerik Oluşturabilme a-f ve Kural Uygulayabilme a-ğ",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0041"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0080",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "283",
+      "book_heading": "Süreci Değerlendirebilme — görünür ölçütler ve QR Dereceli Puanlama Anahtarı sınırı",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.283 / PDF s.284 — Süreci Değerlendirebilme / QR rubrik",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0042"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0081",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "283",
+      "book_heading": "Sıra Sizde — yansıtma yazısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Canlandırdığınız rolün sizde oluşturduğu duygu ve düşünceleri bir yansıtma yazısıyla değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0043"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0082",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "283",
+      "book_heading": "Sıra Sizde — rol arkadaşlarının görüşleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Canlandırdığınız rol hakkında rol arkadaşlarınızın görüşlerini alıp değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0043"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0083",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "283",
+      "book_heading": "Sıra Sizde — özgün konuşmacı kimliği",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Eleştirileriniz ve deneyimlerinizden hareketle özgün konuşmacı kimliğinizi nasıl geliştireceğinizi açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0043"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0084",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "284",
+      "book_heading": "Hatırlayalım — Soru 1: edebiyat-toplum ilişkisi / Soru 2: kırık ayna ve hayatın edebiyata yansıması",
+      "task_type": "COMPARISON",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.284 / PDF s.285 — Hatırlayalım sorular 1-2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0044"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0085",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "285-286",
+      "book_heading": "Dinleme / İzlemeyi Yönetebilme — amaç, tahmin, engeller, strateji, tema notları ve iletiler",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.285-286 / PDF s.286-287 — Dinleme/İzlemeyi Yönetebilme, Metni Dinleyelim/İzleyelim ve Kontrol Listesi / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0045"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0086",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "287",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.287 / PDF s.288 — Söz Varlığımız",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0087",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "287",
+      "book_heading": "Metni Anlayalım — Anadolu insanının karakter özellikleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Anadolu insanının genel karakter özelliklerine ilişkin bilgilerinizin videodaki karşılıklarını yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.287 / PDF s.288 — Metni Anlayalım soru 1 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0088",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "288",
+      "book_heading": "Metni Anlayalım — zihin haritası: tema, konu, ana/yardımcı düşünce ve bilgilerin sunuluşu",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Notlarınızdan hareketle videonun tema, konu, ana düşünce, yardımcı düşünce ve bilgilerin sunuluş biçimini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.288 / PDF s.289 — Metni Anlayalım soru 2 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0089",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "289",
+      "book_heading": "Metni Anlayalım — davranıştan duygu/düşünce çıkarımı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Metinde konu edilen kişinin davranışlarından hareketle duygu ve düşüncelerine yönelik çıkarım yapınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 3 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0090",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "289",
+      "book_heading": "Metni Anlayalım — ön tahmin / son tespit karşılaştırması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Dinleme/izleme öncesi tahminleriniz ile video sonrasındaki tespitlerinizi karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 4 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0091",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "289",
+      "book_heading": "Metni Anlayalım — belgesel türünün kurgu özelliği",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Videoyu belgesel türünün kurgu özelliğine uygunluğu yönünden değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 5 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0092",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "290",
+      "book_heading": "Metni Anlayalım — öznel / nesnel ifadeler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Belgeseldeki öznel ve nesnel ifadeleri balık kılçığı diyagramında ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 6 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0093",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "290",
+      "book_heading": "Metni Anlayalım — inandırıcılık ve güvenilirlik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Öznel/nesnel unsurların belgeselin inandırıcılığı ve güvenilirliğine etkisini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 7 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0094",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "290",
+      "book_heading": "Metni Anlayalım — açık / örtük iletiler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Belgeseldeki açık ve örtük iletileri belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 8 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0095",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "290",
+      "book_heading": "Metni Anlayalım — iletilerin güvenilirliğini sorgulama",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Tespit ettiğiniz açık ve örtük iletilerin güvenilirliğini sorgulayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 9 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0096",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "291",
+      "book_heading": "Metni Anlayalım — karakter davranışından duygu/düşünce",
+      "task_type": "QUESTION",
+      "prompt": "Soru 10 — Karakterlerin davranışlarından hareketle duygu ve düşüncelerine yönelik çıkarım yapınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.291 / PDF s.292 — Metni Anlayalım soru 10 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0097",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "291",
+      "book_heading": "Metni Anlayalım — çalışkanlık odağıyla özetleme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 11 — Öğrenme ve kavramada çalışkanlığın önemini gösterecek biçimde Fedakârlık videosunu özetleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.291 / PDF s.292 — Metni Anlayalım soru 11 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0098",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "292",
+      "book_heading": "Fark Edelim — iklim değişikliğinin zararları karşısında bireysel sorumluluk",
+      "task_type": "QUESTION",
+      "prompt": "Soru — İklim değişikliğinin yol açtığı zararların giderilmesinde bireylere düşen görevleri açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.292 / PDF s.293 — Fark Edelim",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0047"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0099",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "293",
+      "book_heading": "Karşılaştıralım — Çalışkanlık videosunun ana düşüncesi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini yazınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 2 / Çalışkanlık QR videosu gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0100",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "293",
+      "book_heading": "Karşılaştıralım — Fedakârlık / Çalışkanlık",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Fedakârlık ve Çalışkanlık belgesellerini dil/üslup, ileti, tür ve içerik bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 3 / iki QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0101",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "294",
+      "book_heading": "Çözümleyebilme — yapı unsurları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Videodaki ses, görsel, ışık, mekân ve zaman yapı unsurlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 1 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0102",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "294",
+      "book_heading": "Çözümleyebilme — yapı unsurlarının işlevi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Yapı unsurları ile içerik ilişkisinden hareketle bu unsurların işlevini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 2 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0103",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "294",
+      "book_heading": "Çözümleyebilme — yapı unsurlarının metne katkısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Belirlediğiniz yapı unsurlarının çok modlu metne katkısını değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 3 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0104",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "294",
+      "book_heading": "Çözümleyebilme — görsel/ses/nesne/mekân ilişkileri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Görsel-ses, görsel-nesne, görsel-mekân, ses-mekân ve ses-kişiler ilişkilerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 4/a-d / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0105",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "294",
+      "book_heading": "Çözümleyebilme — dil/anlatım, içerik ve günlük dil",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Dil/anlatım özelliklerini içerikle ilişkilendirip günlük dilinizle örtüşme durumunu gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 5 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0106",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "294",
+      "book_heading": "Çözümleyebilme — dilin iletileri yansıtma düzeyi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Videoda kullanılan dilin iletileri yansıtma düzeyini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 6 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0107",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "295",
+      "book_heading": "Çözümleyebilme — dilin işlevleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Metinde kullanılan dilin işlevlerini belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 7 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0108",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "295",
+      "book_heading": "Çözümleyebilme — karakter özellikleri ve amaçları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Metindeki karakterin özelliklerini ve amaçlarını yazınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 8 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0109",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "295",
+      "book_heading": "Çözümleyebilme — görsel, ses, nesne ve mekânın ileti işlevi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Görsel, ses, nesne ve mekânın iletileri vermedeki işlevini gerekçeleriyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 9 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0110",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "295",
+      "book_heading": "Çözümleyebilme — dönemin sosyal/ekonomik/kültürel özellikleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 10 — Belgeselde konu edilen dönemin sosyal, ekonomik, kültürel vb. özelliklerini tespit ediniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 10 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0111",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "295",
+      "book_heading": "Çözümleyebilme — içerik/yapı/dil ile dönem-toplum ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 11 — İçerik, yapı unsurları ve dil/anlatımın dönem ve toplumla ilişkisine yönelik çıkarımlarınızı sözlü ifade ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 11 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0112",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "295-296",
+      "book_heading": "Çözümleyebilme — ses/görüntüyü kaldırarak çok modluluk katkısını sınama",
+      "task_type": "QUESTION",
+      "prompt": "Soru 12 — Ses veya görüntü desteğini kaldırarak bu unsurların içerikle uyumunu ve çok modlu metne katkısını değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.295-296 / PDF s.296-297 — Çözümleyebilme soru 12 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0048"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0113",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "296",
+      "book_heading": "Çözümleyebilme — millî, manevi ve evrensel değerler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 13 — Belgeseldeki millî, manevi ve evrensel değerleri ve aktarılma yollarını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.296 / PDF s.297 — Çözümleyebilme soru 13 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0114",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "296",
+      "book_heading": "Çözümleyebilme — sosyoloji, psikoloji ve coğrafya ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 14 — Fedakârlık metninin sosyoloji, psikoloji ve coğrafya disiplinleriyle ilişkisini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.296 / PDF s.297 — Çözümleyebilme soru 14 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0115",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "297",
+      "book_heading": "Süreci Değerlendirebilme — belgeselin değer katan unsurları ve günlük hayat",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Belgeseli değer katan unsurları, günlük hayat gerçekleri ve kendi beğenileriniz açısından değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.297 / PDF s.298 — Süreci Değerlendirebilme soru 1 / QR video gerekli",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T04-S0116",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "297",
+      "book_heading": "Süreci Değerlendirebilme — etkin dinleyici Öğrenme Günlüğü",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.297 / PDF s.298 — Öğrenme Günlüğü",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0049"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0117",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "298",
+      "book_heading": "Afiş Tasarımında Değerlendirme Kriterleri — mesaj, mesaj-imge, sözel hiyerarşi ve fark edilirlik",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.298 / PDF s.299 — Afiş Tasarımında Değerlendirme Kriterleri",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0118",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "299",
+      "book_heading": "Yazmayı Yönetebilme — afişte ilk dikkat çeken unsur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Bir afişe baktığınızda dikkatinizi en çok çeken şey nedir?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.299 / PDF s.300 — soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0051"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0119",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "299",
+      "book_heading": "Yazmayı Yönetebilme — afişlerin etkileme gücü",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Afişlerin insanları etkileme gücü hakkında ne düşünüyorsunuz?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.299 / PDF s.300 — soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0051"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0120",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "299",
+      "book_heading": "Yazmayı Yönetebilme — afişte kullanılabilecek unsurlar",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Afiş hazırlamayla ilgili öğrendiklerinizden hareketle afişe hangi unsurlar eklenebilir?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.299 / PDF s.300 — soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0051"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0121",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "299",
+      "book_heading": "Performans Görevi — Fedakârlık belgeselinin içeriğini yansıtan özgün afiş",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.299 / PDF s.300 — Performans Görevi a-c / Fedakârlık videosu gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0052"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0122",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "300-301",
+      "book_heading": "İçerik Oluşturabilme — görsel/renk/yazı, ileti seçimi, bilgi toplama ve taslak geri bildirimi",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme a-f / Afiş Hazırlama Basamakları QR videosu dış kaynak",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0053"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0123",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "301",
+      "book_heading": "Kural Uygulayabilme — plan, özgünlük, hedef kitle, ileti, Türkçe ve toplumsal hassasiyet",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.301 / PDF s.302 — Kural Uygulayabilme a-g",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0054"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0124",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "302",
+      "book_heading": "Süreci Değerlendirebilme — süreçteki duygu/düşünce/davranış değişimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Afiş hazırlama sürecinde duygu, düşünce ve davranışlarınızda oluşan değişiklikleri ifade ederek kendinizi değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0055"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0125",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "302",
+      "book_heading": "Süreci Değerlendirebilme — afişi içerik, dil ve anlatım yönünden değerlendirme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Afişinizi içerik, dil ve anlatım yönünden değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0055"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0126",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "302",
+      "book_heading": "Süreci Değerlendirebilme — telif, hakkaniyet ve dürüstlük",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Afişteki görsel ve alıntıları telif hakları, hakkaniyet ve dürüstlük açısından değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0055"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0127",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "302",
+      "book_heading": "Süreci Değerlendirebilme — son ürünü uygun resmî ortamda paylaşma",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme madde 4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0055"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0128",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "302",
+      "book_heading": "Değerlendirme — görünür ölçütler ve QR Dereceli Puanlama Anahtarı sınırı",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.302 / PDF s.303 — Değerlendirme / QR Dereceli Puanlama Anahtarı",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0056"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0129",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "302",
+      "book_heading": "Tema Sonu Değerlendirme — Öğrenme Günlüğü",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.302 / PDF s.303 — Tema Sonu Değerlendirme / Öğrenme Günlüğü",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T04-A0057"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0130",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "303",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 1",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Doğu ve Batı tiyatro geleneklerinin modern Türk tiyatrosundaki sentezini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.303 / PDF s.304 — Soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0058"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0131",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "304",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 2",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — I ve II. metin arasındaki anlam ilişkisini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.304 / PDF s.305 — Soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0059"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0132",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "304",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 3",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Küçürek hikâyeye ilişkin parçadan çıkarılamayan yargıyı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.304 / PDF s.305 — Soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0059"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0133",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "304",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 4",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Metnin sizde uyandırdığı duyguyu metin ayrıntılarıyla gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.304 / PDF s.305 — Soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0060"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0134",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "305",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 5",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Metnin iletisini en uygun biçimde yansıtan afiş görselini seçip gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.305 / PDF s.306 — Soru 5 / görsel seçenekler",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0060"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0135",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "305",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 6",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Tiyatro kişisine uygun kostüm seçiminde hangi özelliklerin dikkate alınması gerektiğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.305-306 / PDF s.306-307 — Soru 6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0136",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "306",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 7",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Sözsüz iletişimin sahnedeki duygu, gerilim ve kişi ilişkisini nasıl yansıtabileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.306 / PDF s.307 — Soru 7",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0137",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "306",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 8",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Verilen tiyatro kesitlerinde görülebilen tiyatro terimlerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.306 / PDF s.307 — Soru 8",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0062"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0138",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "306",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 9",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Belgesel ve teknolojik dönüşümlerle ilgili parçadan desteklenmeyen yargıyı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.306-307 / PDF s.307-308 — Soru 9",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0063"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0139",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "307",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 10",
+      "task_type": "QUESTION",
+      "prompt": "Soru 10 — Belgesel arşivlerinin toplumsal belleğe katkısıyla ilgili doğru yargıyı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.307 / PDF s.308 — Soru 10",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0063"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0140",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "307",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 11",
+      "task_type": "QUESTION",
+      "prompt": "Soru 11 — Verilen tabloya göre belgesel izleme mecralarındaki teknolojik değişimi yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.307 / PDF s.308 — Soru 11",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0063"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0141",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "307",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 12",
+      "task_type": "QUESTION",
+      "prompt": "Soru 12 — Teknolojik gelişmelerin belgeselin etkisini güçlendirip güçlendirmediğini gerekçelerinizle tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.307 / PDF s.308 — Soru 12",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T04-A0064"
+      ]
+    },
+    {
+      "source_record_id": "T04-S0142",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "307",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 13",
+      "task_type": "QUESTION",
+      "prompt": "Soru 13 — Aidiyet videosundan hareketle Anadolu insanının belirgin özelliklerini kanıtlarıyla açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.307 / PDF s.308 — Soru 13 / Aidiyet dış QR videosu",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T04-S0143",
+      "theme_id": "TEMA_04",
+      "printed_page_range": "307",
+      "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 14",
+      "task_type": "QUESTION",
+      "prompt": "Soru 14 — Aidiyet kavramını videodan kanıtlarla yer, ilişki, kültür, emek veya toplumsal bağ açısından açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.307 / PDF s.308 — Soru 14 / Aidiyet dış QR videosu",
+      "source_status": "VERIFIED"
+    }
+  ]
+}

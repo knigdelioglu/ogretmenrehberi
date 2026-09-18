@@ -1,0 +1,1363 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "TYMM_TEACHER_BOOK_ANSWER_BANK",
+  "course_id": "TDE_11",
+  "theme_id": "TEMA_03",
+  "authority": "SOURCE_FILTERED_CANONICAL_ANSWERS",
+  "policy": "Retains source-bound answer content only. Retired guide prose, pedagogical criteria and authoring templates are excluded; this bank is for factual answer support, not style imitation.",
+  "counts": {
+    "answers": 64,
+    "excluded_legacy_or_pedagogical": 0,
+    "excluded_without_answer": 1
+  },
+  "answers": [
+    {
+      "answer_id": "T03-A0001",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "160",
+      "label": "Tema kapsamı ve beklenen öğrenmeler",
+      "item_type": "REFERENCE",
+      "expected_answer": {
+        "anlama": [
+          "Huzur romanı",
+          "Mehmet Akif Ersoy biyografisi",
+          "Usûlî tezkiresi",
+          "Direnişin Ustaları radyo tiyatrosu"
+        ],
+        "anlatma": [
+          "Huzur kişisiyle hayalî mülakat",
+          "radyo tiyatrosu diyaloğunu başka türe dönüştürme"
+        ],
+        "odak": [
+          "edebiyat-hayat ilişkisi",
+          "gerçeklik-kurmaca",
+          "yazar-eser ilişkisi",
+          "kişisel hayatı konu alan metinler"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.160 / PDF s.161"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0002",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "162",
+      "label": "Temaya Başlarken — görselden yaşam ve roman çağrışımları",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "Yoldaki kişi; yaşam yolculuğu, arayış, değişim, hedefe ilerleme veya belirsizlik gibi anlamlarla gerekçeli biçimde yorumlanabilir.",
+        "2": "Öğrencinin kendi yaşantısıyla kurduğu çağrışım gerekçeli ve görsel bir ayrıntıya dayalıysa kabul edilir.",
+        "3": "Görselden yalnız kesin olay bilgisi değil; yalnızlık, yolculuk, mücadele, umut, geçicilik gibi olası yaşam durumları çıkarılabilir.",
+        "4": "Roman adı serbesttir; görseldeki yol/kişi/atmosferle gerekçeli bağ kurulmalıdır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.162 / PDF s.163"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0003",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "163",
+      "label": "Görsellerin çağrışımı",
+      "item_type": "QUESTION",
+      "expected_answer": "Görseller, kişinin yaşam öyküsü, sanatçı kimliği, dönem, mekân, eser ve biyografik izler hakkında çağrışım oluşturabilir; somut görsel kanıtla gerekçelendirilen farklı cevaplar kabul edilir.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.163 / PDF s.164"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0004",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "163",
+      "label": "Biyografi ve tezkire ön örneklerini karşılaştırma",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "ortak": "Her ikisi de gerçek kişiyi, yaşamı/sanat kişiliğini ve belirgin özellikleri tanıtır.",
+        "fark": "Modern biyografi daha açık, belgeleyici ve sistematik anlatıma; tezkire ise döneminin dili, övgü/değerlendirme kalıpları ve şairlik örneklerine yaslanır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.163 / PDF s.164"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0005",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "164",
+      "label": "Konuya Başlarken — yazar, hayat ve roman",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "Yazar yaşantı, gözlem ve kültürel birikiminden beslenebilir; bunları seçer, dönüştürür ve kurmaca yapıda yeniden düzenler.",
+        "2": "“Hayatımı yazsam roman olurdu” sözü yaşanmışlıkların anlatı malzemesi olabileceğini vurgular; hayat ile roman aynı şey değildir.",
+        "3": "Kişisel deneyim ayrıntıları metne inandırıcılık ve psikolojik derinlik katabilir; tek başına doğruluk garantisi değildir."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.164 / PDF s.165"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0006",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "165",
+      "label": "Huzur’u okuma amacı, tahmin ve yazar araştırması",
+      "item_type": "PROCESS",
+      "expected_answer": [
+        "Metne göz gezdir ve başlık/görsellerden içerik tahmini yap.",
+        "Okuma amacını ve stratejini belirle.",
+        "Tanpınar’ın hayatı, sanat anlayışı, dil/üslubu hakkında güvenilir kaynaklardan kısa not çıkar.",
+        "Okuma sonunda ilk tahminlerini metinle karşılaştır."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.165 / PDF s.166"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0007",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "166",
+      "label": "Kelime–yaşam çağrışımı ve okuma stratejisi",
+      "item_type": "PROCESS",
+      "expected_answer": "Öğrenci verilen kelimeleri farklı bağlamlarda cümleleştirir; çağrışımların kişisel deneyimle değişebileceğini fark eder ve Huzur için uygun okuma stratejisi seçer.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.166 / PDF s.167"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0008",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "167-170",
+      "label": "Huzur ana metin okuması",
+      "item_type": "REFERENCE",
+      "expected_answer": [
+        "Mümtaz–Nuran ilişkisi",
+        "İstanbul/Boğaz’ın kültürel bellek taşıması",
+        "müzik ve estetik duyarlık",
+        "geçmiş–gelecek ve kimlik gerilimi",
+        "toplumsal hayat ile bireysel duyarlığın birlikte verilmesi"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.167-170"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0009",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "172",
+      "label": "Söz Varlığımız",
+      "item_type": "VOCABULARY",
+      "expected_answer": {
+        "cevher": "öz/değerli nitelik",
+        "zarafet": "incelik, estetik nezaket",
+        "hülasa": "özetle",
+        "mahzen": "yer altı depo/bodrum",
+        "yeis": "umutsuzluk",
+        "neşretmek": "yayımlamak/yaymak",
+        "muazzam": "çok büyük, görkemli",
+        "mustarip": "acı/sıkıntı çeken"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.172 / PDF s.173"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0010",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "174",
+      "label": "Huzur’un üslup özellikleri kavram haritası",
+      "item_type": "TABLE",
+      "expected_answer": [
+        "betimleyici ve çağrışımlı anlatım",
+        "kültür, tarih ve musiki göndermeleri",
+        "psikolojik çözümleme/iç dünya",
+        "uzun ve katmanlı cümle yapıları",
+        "mekânı estetik/kültürel anlam taşıyıcısı olarak kullanma"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.174 / PDF s.175"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0011",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "175-176",
+      "label": "Metni Anlayalım — Huzur",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "Başlangıç tahminleri metin kanıtıyla karşılaştırılır.",
+        "2": "Konu: Mümtaz’ın çevresi, Nuran’la ilişkisi ve İstanbul üzerinden hayat/kültür; tema: kimlik, geçmiş-gelecek, aşk, kültürel süreklilik ve huzur arayışı. Yazılma amacı yalnız bilgi vermek değil, insan ve toplum deneyimini estetik kurmaca ile düşündürmektir.",
+        "3": "Psikolojik/tahlil ve sosyal-kültürel yönleri güçlü modern roman olarak gerekçelendirilebilir; sınıflandırma gerekçesi metin özelliklerine dayanmalıdır.",
+        "4": "Boğaz/İstanbul yalnız fon değil; karakterlerin hafızası, kimliği ve estetik duyarlığıyla ilişkilidir.",
+        "5": "Geçmişe kök salarak geleceğe yönelme düşüncesini ifade eder.",
+        "6": "‘Kendi hayatımızın kaynakları’ tarih, kültür, sanat, dil, musikî ve ortak hafıza gibi beslenme kaynaklarına işaret eder.",
+        "7": "Şehir hayatı, halk, yoksulluk, semtler, gündelik yaşam, kültürel kurumlar ve dönemin toplumsal meseleleri örneklenebilir.",
+        "8": "Şehir; kalabalık, tarih, yoksulluk ve estetik zenginliğiyle ruh hâlini etkiler.",
+        "9": "Mekânlar karakter ilişkileri, yaşam tarzı ve dünya görüşlerini görünür kılar.",
+        "10": "Üsküdar gözlemi, kadınların gündelik/sosyal görünürlüğüne dair karakterin değerlendirmesidir; genelleme olarak değil metin bağlamında yorumlanmalıdır.",
+        "11": "Şeyh Gâlip’e yöneliş Mümtaz’ın tarih, klasik kültür ve sanat duyarlığını gösterir.",
+        "12": "Çanakkale, Kurtuluş Savaşı gibi tarihî olayları konu alan marş/türkü/şarkılar uygun gerekçeyle örneklenebilir.",
+        "13": "Musikî, karakterlerin hafıza, mekân ve duygu dünyasını örgütleyen temel kültürel/estetik unsurdur."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.175-176"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0012",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "180-181",
+      "label": "Kişiler — söz, davranış, kişilik ve dil",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "Mümtaz": "Sanat, tarih, kültür ve tabiat karşısında duyarlı; düşünsel ve çağrışımlı bir dil.",
+        "Nuran": "Dengeli, sorgulayıcı, estetik duyarlığı yüksek; Mümtaz’la diyaloglarında daha ölçülü/pratik tutum.",
+        "İhsan": "Mümtaz’ın düşünsel rehberi; tarih ve toplum üzerine kurucu fikirler taşıyan entelektüel.",
+        "Macide": "Şefkat ve aile sıcaklığıyla ilişkilendirilen destekleyici figür.",
+        "Suat": "Gerilim ve çatışma boyutunu güçlendiren, karamsarlık/uyumsuzlukla ilişkilendirilen figür.",
+        "Fâhir": "Nuran’ın geçmişi ve sosyal ilişkiler ağı içinde çatışma/gerilim kaynağı."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.180-181"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0013",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "182-183",
+      "label": "Gerçek hayat ile kurmaca arasındaki ilişki",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "gercek_hayat": "İhsan’ın bazı özelliklerinde Yahya Kemal, Nuran’ın hayattaki örneği ve Tanpınar’ın kendi deneyim/çevresinden izler gibi kaynaklar.",
+        "kurmaca": "Yazar gerçek kişilerden aldığı unsurları değiştirir, yeni ilişkiler ve koşullar kurar; örneğin Yahya Kemal’e dayanan İhsan’ı evli/çocuklu ve Mümtaz’la akraba kılar.",
+        "katki": "Gerçeklik duygusunu ve kültürel/psikolojik derinliği artırırken sanatçıya özgür kurmaca alanı sağlar."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.182-183"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0014",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "183-185",
+      "label": "Öznel/nesnel anlatım ve duyarlılık değeri",
+      "item_type": "QUESTION",
+      "expected_answer": "Öznel anlatım karakterlerin iç dünyasını, çağrışımlarını ve duygusal gerilimlerini derinleştirir; nesnel/olay bildirici bölümler bağlam ve eylem bilgisini kurar. Duyarlılık; halk, aile, hasta yakına bakım, hayvanlara merhamet, toplumsal sorumluluk ve kültürel köklere ilgi örnekleriyle tartışılabilir.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.183-185"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0015",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "186",
+      "label": "Huzur’un yapı unsurları",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "olay": "Mümtaz’ın hayatı, İhsan’ın hastalığı ve Nuran’la ilişkisi çevresinde gelişen olaylar; seçili parçaya göre ayrıntılandırılır.",
+        "mekan": "İstanbul başta olmak üzere Boğaz, Üsküdar, Emirgân ve çeşitli semtler.",
+        "kisiler": [
+          "Mümtaz",
+          "Nuran",
+          "İhsan",
+          "Macide",
+          "Suat",
+          "Fâhir"
+        ],
+        "zaman": "Cumhuriyet’in erken dönemine yaklaşan tarihsel/toplumsal atmosfer; metin içi zaman akışı ve geri dönüşler birlikte değerlendirilir."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.186 / PDF s.187"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0016",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "187-188",
+      "label": "Dil/üslup–yapı ilişkisi",
+      "item_type": "QUESTION",
+      "expected_answer": "Betimleme ve çağrışımlı dil mekânı kültürel/psikolojik bir unsura dönüştürür; iç çözümleme kişileri derinleştirir; geçmişe dönüş/hatırlama zamanı katmanlaştırır; dönem söz varlığı ve sanat-kültür göndermeleri Tanpınar’ın düşünsel-estetik üslubunu kurar.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.187-188"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0017",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "189",
+      "label": "Çatışmalar ve anlatım teknikleri",
+      "item_type": "QUESTION",
+      "expected_answer": [
+        "kişinin kendisiyle çatışması: Mümtaz’ın iç sıkıntıları/kararsızlıkları",
+        "kişiler arası çatışma: ilişkiler ve beklentiler",
+        "birey-toplum/tarih gerilimi: geçmiş-modern hayat/kimlik arayışı"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.189 / PDF s.190"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0018",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "190-191",
+      "label": "Dönem dili, cümle ögeleri ve yazım",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "dil_karsilastirma": "Metindeki bugün daha az kullanılan söz varlığı/yazım biçimleri ile günümüz Türkçesi karşılaştırılır; temel söz dizimi süreklilik de gösterebilir.",
+        "yazim_ornekleri": {
+          "ilân": "ilan",
+          "telâş": "telaş",
+          "eksilmiyen": "eksilmeyen"
+        },
+        "cumle_katkisi": "Uzun, bağlı ve betimleyici cümleler düşünce/çağrışım katmanlarını ve psikolojik ayrıntıyı taşır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.190-191"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0019",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "191",
+      "label": "Romanın tarih, sosyoloji ve psikolojiyle ilişkisi",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "tarih": "dönem ve kültürel geçmiş",
+        "sosyoloji": "şehir, halk, sınıfsal/toplumsal yapı",
+        "psikoloji": "karakterlerin iç dünyası, çatışmaları ve ilişkileri"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.191 / PDF s.192"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0020",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "192",
+      "label": "Huzur çözümleme çalışma kâğıdı",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "uslup": "Çağrışımlı, betimleyici, kültür ve iç dünya odaklı üslup; işleviyle gerekçelendirilir.",
+        "donem": "Dil, şehir hayatı, kültürel tartışmalar ve tarih bilinci dönemin izlerini taşır.",
+        "icerik_yapi_dil": "İçerik, yapı ve üslup toplum/dönemle ilişkilidir; kurmaca dönüşüm göz ardı edilmez.",
+        "degerler": [
+          "duyarlılık",
+          "aile bağları",
+          "kültürel mirasa saygı",
+          "sorumluluk",
+          "estetik duyarlık"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.192 / PDF s.193"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0021",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "193",
+      "label": "Kendi beğeni ölçütleriyle değerlendirme",
+      "item_type": "ASSESSMENT",
+      "expected_answer": "Tutarlılık örneğine ek olarak dil/üslup, karakter derinliği, atmosfer, özgünlük, kurgu bütünlüğü, çağrışım gücü gibi ölçütler belirlenebilir; her yargı metin kanıtıyla açıklanır.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.193 / PDF s.194"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0022",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "193",
+      "label": "3-2-1 Çıkış Kartı",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "uc_yaz": "Çağrışım zenginliği bakımından beğenilen üç yön/ifade özelliği.",
+        "iki_sor": "Bu çağrışım zenginliğini açmaya yönelik iki soru.",
+        "bir_paylas": "En etkileyici ifade ve etkilenme gerekçesi."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.193 / PDF s.194"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0023",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "194",
+      "label": "Biyografide hangi ayrıntılar ve okur için önemi",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": [
+          "doğum/ölüm",
+          "aile ve eğitim",
+          "meslek",
+          "eserler",
+          "dönüm noktaları",
+          "kişilik/sanat anlayışı",
+          "toplumsal etkiler"
+        ],
+        "2": "Biyografi, kişinin yaşamını ve eserlerini bağlama yerleştirerek okurun kişi-eser-dönem ilişkisini anlamasına, örnek yaşam deneyimlerinden çıkarım yapmasına ve güvenilir bilgi edinmesine katkı sağlar."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.194 / PDF s.195"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0024",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "195",
+      "label": "Mehmet Akif Ersoy metni — amaç, tahmin, strateji",
+      "item_type": "PROCESS",
+      "expected_answer": [
+        "Başlık ve görsellerden içerik tahmini yap.",
+        "Okuma amacını belirle.",
+        "Biyografik/bilgilendirici metne uygun okuma stratejisi seç.",
+        "Vurgu ve tonlamayı metnin bilgilendirici niteliğine göre ayarla."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.195 / PDF s.196"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0025",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "195-197",
+      "label": "Mehmet Akif Ersoy biyografisi — ana bilgi ekseni",
+      "item_type": "REFERENCE",
+      "expected_answer": [
+        "eğitim ve meslek hayatı",
+        "şiire yönelişi ve yayın faaliyetleri",
+        "Millî Mücadele’ye katılımı ve İstiklâl Marşı",
+        "Mısır yılları",
+        "Safahat ve sanat anlayışı",
+        "toplum, din ve millî meselelerle ilişkisi"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.195-197"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0026",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "198",
+      "label": "Biyografi söz varlığı",
+      "item_type": "VOCABULARY",
+      "expected_answer": {
+        "dolaylı": "doğrudan olmayan",
+        "ilham": "esin",
+        "duyarlı": "hassas",
+        "zillet": "hor görülme/aşağılanma durumu",
+        "vesile": "araç/sebep",
+        "tahribat": "yıkıp bozma/zarar",
+        "vurdumduymaz": "umursamaz"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.198 / PDF s.199"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0027",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "199",
+      "label": "Mehmet Akif’in kişiliği ve millî marş tutumu",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "Yoksul, çocuk, kadın, yaşlı ve toplumun kırılgan kesimlerine yönelmesi duyarlılık, vicdan ve toplumsal sorumluluk izlenimi doğurur.",
+        "2": "Toplum meselelerini İslâmî duyarlık ve değer çerçevesinde işlemesi nedeniyle ‘İslâm şairi’ nitelemesi kullanılır; bu, toplumcu/millî yönleri dışlamaz.",
+        "3": "Para ödülüne mesafe, millî marşı kişisel kazançtan üstün tutma ve görevi etik/millî sorumluluk olarak görmeyle ilişkilendirilebilir."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.199 / PDF s.200"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0028",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "201",
+      "label": "Biyografi çalışma kâğıdı",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "konu": "Mehmet Akif Ersoy’un hayatı, eserleri ve edebî/toplumsal kişiliği.",
+        "amac": "Kişinin yaşamı ve edebî kişiliği hakkında güvenilir bilgi vermek.",
+        "ana_dusunce": "Akif, şiirini millet ve toplum meseleleriyle birleştiren duyarlı, estetik kaygısı güçlü bir sanatçıdır.",
+        "dusunceyi_gelistirme": [
+          "örnekleme",
+          "açıklama",
+          "tanıklık/belge niteliğindeki kronolojik bilgiler"
+        ],
+        "anlatim": "Ağırlıkla açıklayıcı/bilgilendirici ve nesnel; değerlendirme içeren öznel cümleler de vardır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.201 / PDF s.202"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0029",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "202",
+      "label": "Biyografide öznel ve nesnel anlatım",
+      "item_type": "QUESTION",
+      "expected_answer": "Tarih, yer, görev, eser ve kronolojik olay bildiren cümleler nesneldir; ‘duyarlı ve vicdanlı bir aydın’, ‘önemli bir boşluğu doldurmuştur’ gibi değerleme içeren ifadeler öznel nitelik taşır. Biyografide doğrulanabilir nesnel bilgi ön plandadır.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.202 / PDF s.203"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0030",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "203",
+      "label": "Biyografi alt türü ve örneklerle karşılaştırma",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "benzerlik": "Mehmet Akif Ersoy metni, bilgi/araştırma temelli biyografik anlatı yönüyle ansiklopedi/monografi tipine yaklaşır.",
+        "tur": "Bilimsel biyografi/monografi niteliği ağır basar; yaşam ve sanat kişiliği belgelere/kronolojiye dayalı bütüncül biçimde ele alınır.",
+        "ayrim": "Nekroloji ölüm vesilesiyle yazılır; biyografik roman gerçek yaşamı kurmaca anlatı teknikleriyle işler."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.203 / PDF s.204"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0031",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "204",
+      "label": "Huzur–Mehmet Akif Ersoy ve siber zorbalık metni karşılaştırması",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "huzur": "kurmaca roman; estetik/çok anlamlı yapı, karakter ve olay örgüsü.",
+        "mehmet_akif": "gerçek kişiyi belgeleyici/bilgilendirici biyografi.",
+        "siber_zorbalik": "kurgu değil, açıklayıcı/bilgilendirici gerçeklik alanına dayandığı için Mehmet Akif Ersoy metnine daha yakındır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.204 / PDF s.205"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0032",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "label": "Mehmet Akif Ersoy — yapı, söz varlığı, değerler",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "yapi": "Kronolojik/tematik yaşam evreleri, eğitim-meslek-eser-toplumsal faaliyet ekseninde düzenlenir.",
+        "soz_uslup": "Alan terimleri, tarih/kurum/eser adları güvenilirlik ve bilgi yoğunluğu sağlar; açıklayıcı dil baskındır.",
+        "degerler": [
+          "vatanseverlik",
+          "sorumluluk",
+          "duyarlılık",
+          "çalışkanlık",
+          "maneviyat",
+          "toplumsal dayanışma"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.205 / PDF s.206"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0033",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "206-207",
+      "label": "Tezkire ve Usûlî",
+      "item_type": "REFERENCE",
+      "expected_answer": {
+        "tezkire": "Belirli alanda ünlenmiş kişilerin yaşam ve sanatından söz eden klasik biyografik tür.",
+        "suara_tezkire": "Şairlerin hayatı/şairliği ve şiir örneklerini içeren tezkire.",
+        "ilkler": {
+          "Türk_edebiyati": "Ali Şîr Nevâî — Mecâlisü’n-Nefâis",
+          "Anadolu": "Sehî Bey — Heşt-Bihişt"
+        },
+        "Usuli": "Bağdatlı Ahdî’nin Gülşen-i Şu’arâ’sından, şairin hayatı/kişiliği ve şiir örneklerini bir arada sunan parça."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.206-207"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0034",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "label": "Usûlî tezkiresini çözümleme",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "Günümüzde kullanılmayan söz varlığı bağlamdan tahmin edilir; on kelime sınıfça seçilip cümlede kullanılır.",
+        "2": "Metin, dönem dili ve övgü/değerlendirme üslubu nedeniyle tarihî/edebî bir izlenim uyandırabilir; gerekçeli kişisel yanıt kabul edilir.",
+        "3": "Osmanlı/Divan kültürü, tasavvuf çevresi, dönem söz varlığı ve sanatçı değerlendirme geleneği metnin içerik/yapı/diline yansır.",
+        "4": "Her ikisi de gerçek kişinin yaşamını, kişiliğini, meslek/sanat yönünü tanıtır.",
+        "5": "Bilgi verme, kişiyi tanıtma, örnek/kanıt sunma gibi öğretici metin özellikleri bulunur; buna karşın tezkire dönemsel edebî üslup ve öznel değerlendirmeler de taşır.",
+        "6": "Kişisel hayat metinleri sanatçının eserlerini, dönemini ve kişilik/üretim ilişkisini anlamayı; kültürel belleği korumayı sağlar."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.208 / PDF s.209"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0035",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "209",
+      "label": "Biyografi metnini ölçütlerle değerlendirme",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "olcut_ornekleri": [
+          "yalınlık/açıklık",
+          "bilgi güvenilirliği",
+          "düzen/kronoloji",
+          "tarafsızlık",
+          "edebî kişiliği açıklama yeterliliği"
+        ],
+        "degerlendirme": "Her ölçüt için metinden gözlenebilir kanıt ve gerekçe aranır.",
+        "amac": "Metin Mehmet Akif’in yaşam ve sanat kişiliğini kapsamlı biçimde tanıttığı ölçüde bilgi verme amacına ulaşır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.209 / PDF s.210"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0036",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "210",
+      "label": "Kemal Tahir mülakatından hareketle amaç ve planlama",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "Yazarın roman konusunu, kişilerini, çalışma yöntemini ve Türkçe hakkındaki görüşlerini doğrudan kendi sözlerinden öğrenmek.",
+        "2": "Önceden soru/süre/hedef kitle belirlemek konuşmayı odaklar, süre yönetimini kolaylaştırır, soruların niteliğini ve dinleyiciye uygunluğu artırır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.210 / PDF s.211"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0037",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "211",
+      "label": "Huzur kişisiyle hayalî mülakat — performans görevi",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": [
+        "Altı grup ve sözcü oluştur.",
+        "Bir Huzur kişisi seç ve seçim nedenini karakter özelliğiyle açıkla.",
+        "Amaç, hedef kitle, tür, içerik, hazırlık süresi ve stratejiyi belirle.",
+        "Roman kişisinin metindeki özelliklerini temel al."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.211 / PDF s.212"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0038",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "212",
+      "label": "Mülakat soru-cevap tasarımı",
+      "item_type": "PROCESS",
+      "expected_answer": [
+        "‘Gerçek hayatta olsaydı nasıl konuşur/davranır/ne işle uğraşırdı?’ benzeri sorular üret.",
+        "Soruları romanın yapı, içerik, dil/anlatım özelliklerine göre derecelendir.",
+        "En nitelikli soruları seç.",
+        "Roman kişisinin dil, beden dili, vurgu/tonlama ve varsa ağız özelliklerini bağlamdan türet.",
+        "Giriş-gelişme-sonuç ve hedef kitle beklentisini planla."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.212 / PDF s.213"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0039",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "213",
+      "label": "Mülakatı gerçekleştirme",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": [
+        "Dikkat çekici giriş, etkili sürdürme ve bitiriş.",
+        "Roman kişisine özgü, anlaşılır ve tutarlı cevaplar.",
+        "Düşünceyi geliştirme yolları ve açık/örtük iletiler.",
+        "Millî/manevi değerler ve kültürel unsurlara bağlama uygun yaklaşım.",
+        "Toplumsal hassasiyet, görgü kuralları ve dil doğruluğu.",
+        "Beden dili, diksiyon, zaman ve mekânın etkili kullanımı."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.213 / PDF s.214"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0040",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "214",
+      "label": "Açık/örtük iletiler ve yargıların dayanağı",
+      "item_type": "ASSESSMENT",
+      "expected_answer": "Öğrenci hayalî cevapların romandaki hangi söz, davranış, ilişki veya değerlerden türetildiğini açıklar; açık/örtük iletileri bu dayanaklarla değerlendirir.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.214 / PDF s.215"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0041",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "214",
+      "label": "Öz Değerlendirme Formu — görünen 6 ölçüt",
+      "item_type": "ASSESSMENT",
+      "expected_answer": [
+        "özgün ve tutarlı duygu/düşünce/hayal",
+        "dilin kullanım alanına uygunluk",
+        "beden dili-diksiyon-telaffuz",
+        "Türkçenin yapısı/işlevi/bağdaşıklık",
+        "akıcılık-duruluk-yalınlık",
+        "ekleri doğru ve kelimeleri bağlama uygun kullanma"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.214 / PDF s.215"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0042",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "215",
+      "label": "Radyo tiyatrosuna giriş",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "1": "İlginin azalması televizyon/dijital görsel kültür, eğlence odaklı yayın ve üretim koşullarıyla ilişkilendirilebilir; gerekçeli farklı açıklamalar kabul edilir.",
+        "2": "Edebî-estetik kaygının azalması dil/üslup niteliğinin, hayal gücü ve kültürel derinliğin zayıflamasına yol açabilir.",
+        "3": "Radyo tiyatrosu görseli hazır vermediği için ses, söz, müzik ve efekt üzerinden dinleyicinin zihinsel imge üretimine daha fazla alan açabilir; televizyon görselliği doğrudan sunar."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.215 / PDF s.216"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0043",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "216",
+      "label": "Dinleme amacı, strateji ve tahmin",
+      "item_type": "PROCESS",
+      "expected_answer": [
+        "Dinleme amacını seç ve açıkla.",
+        "Çözümlemeye uygun dinleme stratejisi belirle.",
+        "‘Direnişin Ustaları’ başlığından konu ve amaç için tahminde bulun.",
+        "Gözlem Formu ölçütlerini süreçte dikkate al."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.216 / PDF s.217"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0044",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "217",
+      "label": "Radyo tiyatrosu söz varlığı",
+      "item_type": "VOCABULARY",
+      "expected_answer": {
+        "direniş": "karşı koyma",
+        "ihbar": "yetkili makama bildirme/haber verme",
+        "torna": "metal/ahşabı döndürerek biçimlendiren tezgâh",
+        "kafa yormak": "üzerinde çok düşünmek",
+        "haber uçurmak": "gizlice/çabucak haber iletmek"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.217 / PDF s.218"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0045",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "218",
+      "label": "Radyo tiyatrosunda ses, söz, efekt, müzik",
+      "item_type": "REFERENCE",
+      "expected_answer": "Görüntü eksikliğini seslendirme, söz, efekt ve müzik tamamlar. Ses rengi, tonlama ve efektler kişi, mekân, zaman ve atmosferi zihinde kurdurur; küçük bir ses/efekt bile anlamı değiştirebilir.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.218 / PDF s.219"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0046",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "218-220",
+      "label": "Direnişin Ustaları — konu, tema, kişi, dönem/üslup/tür",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "cevaplama_kurali": "Konu, tema, amaç, kahraman davranışları, dönem, zihniyet, üslup, ileti ve yazarın sanat anlayışı yalnız izlenen/dinlenen medya kanıtına göre doldurulur.",
+        "tur": "Radyo tiyatrosu/radyo oyunu; ses, söz, müzik ve efekt üzerinden dramatik anlatı.",
+        "karsilastirma": "Sahnelenen tiyatro ile ortak dramatik yapı/diyalog/oyunculuk taşır; radyo tiyatrosunda dekor/görsel sahne yerine ses ve dinleyicinin hayal gücü belirleyicidir."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.218-220"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0047",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "220",
+      "label": "Osmancık sahne tiyatrosu ile karşılaştırma",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "olcutler": [
+          "müzik",
+          "dil kullanımı",
+          "ileti",
+          "maliyet",
+          "duygu değişimleri",
+          "dekor",
+          "ses tonu",
+          "atmosfer",
+          "empati"
+        ],
+        "genel": "Her iki tür dramatik anlatı ve oyuncu sesi kullanabilir; sahne tiyatrosu görsel dekor/beden/mekânı doğrudan gösterirken radyo tiyatrosu bunları ses ve hayal gücüyle kurar."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.220 / PDF s.221"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0048",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "221",
+      "label": "Radyo tiyatrosu yapı unsurları",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "alanlar": [
+          "kişi",
+          "yer/mekân",
+          "zaman",
+          "dramatik örgü",
+          "çatışma"
+        ],
+        "cevaplama_kurali": "Her alan dinlenen/izlenen metindeki somut kanıtla doldurulur."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.221 / PDF s.222"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0049",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "222",
+      "label": "Değerlerin iletilere etkisi — görüş geliştirme",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "odak_gorus": "Millî ve manevi değerleri yansıtan unsurlar arasındaki etkileşim, metnin iletilerinin ortaya çıkarılmasında işlevseldir.",
+        "deger_ornekleri": [
+          "saygı",
+          "vatanseverlik",
+          "duyarlılık",
+          "hoşgörü",
+          "aile bütünlüğü"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.222 / PDF s.223"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0050",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "223",
+      "label": "Radyo tiyatrosunu değerlendirme ve sosyal bilimlerle ilişki",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "olcut_ornegi": "Dil kullanımı: yalın, doğal ve etkileyici olup olmadığı medya kanıtıyla değerlendirilir.",
+        "sosyal_bilim": [
+          "metin-tarih",
+          "metin-sosyoloji",
+          "metin-psikoloji"
+        ],
+        "degerlendirme": [
+          "konuyu tarihî gerçeklerle karşılaştır",
+          "bir kişiyle empati kurup davranışını değerlendir"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.223 / PDF s.224"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0051",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "224",
+      "label": "Öğrenme Günlüğü",
+      "item_type": "ASSESSMENT",
+      "expected_answer": [
+        "Bu süreçte öğrendiklerim",
+        "Pekiştirmem gereken konular",
+        "Daha ayrıntılı incelemek istediğim konular",
+        "Kendimi geliştirmek için çaba harcadığım konular",
+        "Gelecekte kullanabileceğim bilgiler"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.224 / PDF s.225"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0052",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "225",
+      "label": "Radyo oyununun özellikleri ve dönüşüm görevi",
+      "item_type": "REFERENCE",
+      "expected_answer": {
+        "ozellikler": [
+          "temel göstergesi ses",
+          "diyalog merkezli dramatik yapı",
+          "müzik/efektle zaman ve mekân kurma",
+          "görülmeyen tiyatro ve dinleyici hayal gücü"
+        ],
+        "gorev": "Direnişin Ustaları’ndan seçilen bir diyaloğu bağlamı koruyarak hikâye, anı vb. başka türe dönüştürmek."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.225 / PDF s.226"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0053",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "225",
+      "label": "Yazma yöntemi ve stratejisi",
+      "item_type": "PROCESS",
+      "expected_answer": "Dönüştürülecek diyaloğun olay/kişi/ileti bağlamını koruyacak, hedef türün yapı ve anlatım özelliklerini kullanacak uygun yazma stratejisi belirlenir.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.225 / PDF s.226"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0054",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "226",
+      "label": "Dönüştürme yazısı planı",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": [
+        "Yazma amacını belirle.",
+        "Hedef türün özelliklerini belirle.",
+        "Tür ve stratejiyi seç.",
+        "Diyalogdaki kişileri kendi özelliklerine uygun konuştur/anlat.",
+        "Kişilerle empati kurarak iletiyi tahmin et.",
+        "Bölümleri planla."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.226 / PDF s.227"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0055",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "227",
+      "label": "Yazma uygulama ölçütleri",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": [
+        "Kaynak metnin genel dil özelliklerini gerektiği ölçüde koru.",
+        "Hedef kitle/tür/içerik/iletiyi belirle.",
+        "Hedef türe uygun yapı unsurlarını kullan.",
+        "Gerekli bilgi ve görselleri güvenilir kaynaklardan araştır.",
+        "Karşılaştırma cümlesi, anlatım biçimi ve düşünceyi geliştirme yollarından yararlan.",
+        "Söz varlığını ve dil işlevlerini planla.",
+        "Taslağı akran geri bildirimiyle geliştir.",
+        "Dikkat çekici giriş ve karaktere uygun anlatım kullan."
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.227 / PDF s.228"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T03-A0056",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "228",
+      "label": "Öğretmen değerlendirmesi ve düzeltme",
+      "item_type": "ASSESSMENT",
+      "expected_answer": [
+        "bağlama/hedef kitleye uygun söz varlığı",
+        "özgün ve tutarlı ifade",
+        "etkili başlatma-sürdürme-bitirme",
+        "açık/örtük ileti",
+        "olumlu değerler ve toplumsal hassasiyet",
+        "dil yapısı/bağdaşıklık/yazım-noktalama",
+        "içeriğe uygun başlık"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.228 / PDF s.229"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0057",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "229",
+      "label": "Öz Değerlendirme Formu — 6 ölçüt",
+      "item_type": "ASSESSMENT",
+      "expected_answer": [
+        "uygun başlık",
+        "dönüştürülen diyaloğun içeriğini yansıtma",
+        "bağlam/hedef kitleye uygun söz varlığı",
+        "anlatım biçimleri ve düşünceyi geliştirme yolları",
+        "dil yapısı/bağdaşıklık/yazım-noktalama",
+        "Türkçeyi bilinçli ve özenli kullanma"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.229 / PDF s.230"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0058",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "229",
+      "label": "Tema 3-2-1 Çıkış Kartı",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "uc_yaz": "Temada öğrenilen konu/kavramlarla ilgili üç bilgi.",
+        "iki_sor": "Eksik/kavram yanılgısına yönelik iki soru.",
+        "bir_paylas": "En çok etkileyen konu ve gerekçesi."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.229 / PDF s.230"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0059",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "230",
+      "label": "Soru 1-2 — tez/antitez ve sentez",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "degerlendirme": "Metinlerin tez/antitez sınıflandırmasında, parçanın yazar hayatıyla doğrulanabilir ilişkisi esas alınmalıdır. PDF sayfasında parçaların kaynak/yazar bilgileri görünmediği için rehber kaynaksız kesin numara anahtarı üretmez.",
+        "sentez_ornegi": "Edebî metinler sanatçının yaşantı ve gözlemlerinden izler taşıyabilir; ancak bu izler kurmaca ve estetik dönüştürme nedeniyle doğrudan hayat belgesi sayılmaz."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.230 / PDF s.231"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0060",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "231",
+      "label": "Soru 3-6 — kurmaca ve gerçeklik",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "3": {
+          "kurmaca": "Yazarın yarattığı anlatı dünyası.",
+          "gerceklik_izlenimi": "Kurmaca dünyanın gerçekmiş gibi inandırıcı algılanmasını sağlayan düzenleme.",
+          "okur_yorumu": "Okurun kültürel birikim, ilgi ve değerleriyle metne anlam vermesi.",
+          "nesnellik": "Dış dünyaya ilişkin doğrulanabilir/kişiden bağımsız olma iddiası.",
+          "cok_anlamlilik": "Metnin farklı okurlarca birden fazla tutarlı biçimde yorumlanabilmesi."
+        },
+        "4": "Kurmaca dış gerçeklikten yararlanabilir; değer yalnız ‘gerçeğe uygunluk’tan değil estetik kurgu, çok anlamlılık, inandırıcılık ve özgün anlatımdan doğar.",
+        "5": "E",
+        "6": "C"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.231 / PDF s.232"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0061",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "232-233",
+      "label": "Soru 7-11 — Orhan Veli ve biyografi yarışması",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "7": "Gündelik yaşam %40 ile en yüksek temadır; bu, Garip şiirinin sıradan insanı/gündelik hayatı şiire taşıma ve yalınlık anlayışıyla uyumludur.",
+        "8": "Orhan Veli; şair ve öykücü kimliği, Garip akımıyla ilişkisi, şiir ve öykülerindeki temaları, sade-akıcı üslubu ve Çehov tarzı öykücülüğü üzerinden tanıtılır.",
+        "9": "C",
+        "10": "II. grup Tablo A’dır: üç doğru (+15) ve ‘tutum’ ifadesi yanlış (-2) → 13 puan.",
+        "11": "I. grubun tam puan için ‘Tarafsızlık’ ve ‘Kronoloji’ açıklamalarını düzeltmesi gerekir: biyografide tarafsızlık göz ardı edilmez; kronolojik sıra yaygın olsa da mutlak zorunluluk değildir."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.232-233"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0062",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "234",
+      "label": "Soru 12-13 — Bir Bilim Adamının Romanı",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "12": "Fuzûlî’ye atıf, Mustafa İnan’ın kalabalık içinde hissedilen yalnızlığını kültürel/edebî bir gönderme ile yoğunlaştırır; karakterin iç durumunu somutlaştırır ve metne çağrışım/intertextüel derinlik katar.",
+        "13": [
+          "Evet",
+          "Evet",
+          "Evet",
+          "Evet",
+          "Hayır",
+          "Hayır",
+          "Hayır",
+          "Hayır"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.234 / PDF s.235"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0063",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "234",
+      "label": "Soru 14-15 — diyalog ve Aile Bağları videosu",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "14": "Diyalog, kişileri doğrudan konuşturarak anlatımı canlılaştırır; karakter ilişkisi ve düşünce/duygu farklarını aracısız görünür kılar.",
+        "15": "Kişi, mekân ve zamanın dramatik örgüye katkısı yalnız QR’deki Aile Bağları videosu izlenerek; olay/çatışmayı nasıl kurduğu somut medya kanıtıyla açıklanmalıdır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.234 / PDF s.235"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T03-A0064",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "235",
+      "label": "Soru 16 — roman/tezkire ve yazar hayatı",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "dogru": "C) I, IV, V",
+        "gerekce": "I ve V tezkire üslubuyla sanatçının hayat/mahlasına ilişkin olayı aktarır; IV kişisel yaşam/anı niteliğinde yazarın yaşantı çevresini verir. II ve III ise kurmaca kişinin/olayın iç yaşantısını öne çıkarır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.235 / PDF s.236"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    }
+  ]
+}

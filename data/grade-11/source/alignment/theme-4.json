@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.1",
+  "course_id": "TDE_11",
+  "grade": 11,
+  "theme_id": "TEMA_04",
+  "theme_no": 4,
+  "theme_title": "4. TEMA: HAYATIN AYNASI",
+  "alignment_status": "PASS_WITH_UNRESOLVED_ASSESSMENT_TARGETS",
+  "summary": {
+    "total_outcomes": 16,
+    "covered_count": 14,
+    "partially_covered_count": 2,
+    "not_covered_count": 0,
+    "unresolved_assessment_target_count": 2
+  },
+  "alignments": [
+    {
+      "outcome_id": "TDE11_T4_TDE1_1",
+      "outcome_code": "TDE1.1",
+      "skill_category": "Dinleme/İzleme",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinlerde dinlemeyi/izlemeyi yönetebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE1_1",
+      "resource_plan_id": "PLAN_T11_T4_TDE1_1",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.1"
+      },
+      "textbook_sections": [
+        "T4_SEC_04_DINLEME_BELGESEL"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_13_DINLEME_YONETIM"
+      ],
+      "textbook_form_ids": [
+        "FORM_T4_P286_KONTROL_LISTESI_03"
+      ],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.285-286"
+      ],
+      "textbook_student_action": "Dinleme/izleme amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve tahminde bulunur.",
+      "textbook_expected_evidence": "Amaç/strateji kaydı, tahmin ve hazırlık notları.",
+      "observed_assessment_structure": [
+        "checklist"
+      ],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.1",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.285-286"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE1_2",
+      "outcome_code": "TDE1.2",
+      "skill_category": "Dinleme/İzleme",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinlerde anlam oluşturabilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE1_2",
+      "resource_plan_id": "PLAN_T11_T4_TDE1_2",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.2"
+      },
+      "textbook_sections": [
+        "T4_SEC_04_DINLEME_BELGESEL"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_14_DINLEME_ICERIK_ANLAM"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.287-293"
+      ],
+      "textbook_student_action": "Dinlenen/izlenen metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+      "textbook_expected_evidence": "Anlama sorularına cevaplar ve yapılandırılmış dinleme/izleme notları.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.2",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.287-293"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE1_3",
+      "outcome_code": "TDE1.3",
+      "skill_category": "Dinleme/İzleme",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinleri çözümleyebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE1_3",
+      "resource_plan_id": "PLAN_T11_T4_TDE1_3",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.3"
+      },
+      "textbook_sections": [
+        "T4_SEC_04_DINLEME_BELGESEL"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_15_DINLEME_UYGULAMA_COZUMLEME"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.294-296"
+      ],
+      "textbook_student_action": "Çok modlu metni yapı, tür, dil-anlatım, kişi/olay/ileti ve bağlam yönlerinden çözümler.",
+      "textbook_expected_evidence": "Tahlil cevapları, karşılaştırma/şema kayıtları ve gerekçeli çıkarımlar.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.3",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.294-296"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE1_4",
+      "outcome_code": "TDE1.4",
+      "skill_category": "Dinleme/İzleme",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinlerden hareketle günlük hayatta karşılaşabileceği olay ve durumlarla ilgili görüşlerini paylaştığı süreci değerlendirebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE1_4",
+      "resource_plan_id": "PLAN_T11_T4_TDE1_4",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.4"
+      },
+      "textbook_sections": [
+        "T4_SEC_04_DINLEME_BELGESEL"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_16_DINLEME_DEGERLENDIRME"
+      ],
+      "textbook_form_ids": [
+        "FORM_T4_P297_OGRENME_GUNLUGU_04"
+      ],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.297"
+      ],
+      "textbook_student_action": "Dinleme/izleme sürecini ve metne ilişkin değerlendirmelerini ölçütlere dayalı biçimde yansıtır.",
+      "textbook_expected_evidence": "Öz değerlendirme, gözlem/öğrenme günlüğü veya gerekçeli değerlendirme kaydı.",
+      "observed_assessment_structure": [
+        "learning_journal"
+      ],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE1.4",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.297"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE2_1",
+      "outcome_code": "TDE2.1",
+      "skill_category": "Okuma",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinlerde okumayı yönetebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE2_1",
+      "resource_plan_id": "PLAN_T11_T4_TDE2_1",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.1"
+      },
+      "textbook_sections": [
+        "T4_SEC_01_OKUMA_TIYATRO",
+        "T4_SEC_02_OKUMA_KUCU_REK"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_01_OKUMA_YONETIM",
+        "T4_ACT_05_OKUMA_YONETIM"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.241-246",
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.264-265"
+      ],
+      "textbook_student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir. | Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+      "textbook_expected_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları. | Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.1",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.241-246",
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.264-265"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE2_2",
+      "outcome_code": "TDE2.2",
+      "skill_category": "Okuma",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinlerde anlam oluşturabilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE2_2",
+      "resource_plan_id": "PLAN_T11_T4_TDE2_2",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.2"
+      },
+      "textbook_sections": [
+        "T4_SEC_01_OKUMA_TIYATRO",
+        "T4_SEC_02_OKUMA_KUCU_REK"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_02_OKUMA_ICERIK_ANLAM",
+        "T4_ACT_06_OKUMA_ICERIK_ANLAM"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.247-255",
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.266-273"
+      ],
+      "textbook_student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur. | Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+      "textbook_expected_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları. | Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.2",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.247-255",
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.266-273"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE2_3",
+      "outcome_code": "TDE2.3",
+      "skill_category": "Okuma",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinleri çözümleyebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE2_3",
+      "resource_plan_id": "PLAN_T11_T4_TDE2_3",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.3"
+      },
+      "textbook_sections": [
+        "T4_SEC_01_OKUMA_TIYATRO",
+        "T4_SEC_02_OKUMA_KUCU_REK"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_03_OKUMA_UYGULAMA_COZUMLEME",
+        "T4_ACT_07_OKUMA_UYGULAMA_COZUMLEME"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.256-261",
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.274-278"
+      ],
+      "textbook_student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır. | Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+      "textbook_expected_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları. | Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.3",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.256-261",
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.274-278"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE2_4",
+      "outcome_code": "TDE2.4",
+      "skill_category": "Okuma",
+      "outcome_verbatim": "“Hayatın Aynası” temasında ele alınan metinlerde okuma sürecini değerlendirebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE2_4",
+      "resource_plan_id": "PLAN_T11_T4_TDE2_4",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.4"
+      },
+      "textbook_sections": [
+        "T4_SEC_01_OKUMA_TIYATRO",
+        "T4_SEC_02_OKUMA_KUCU_REK"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_04_OKUMA_DEGERLENDIRME",
+        "T4_ACT_08_OKUMA_DEGERLENDIRME"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.262",
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.279"
+      ],
+      "textbook_student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir. | Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+      "textbook_expected_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme. | Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE2.4",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.262",
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.279"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE3_1",
+      "outcome_code": "TDE3.1",
+      "skill_category": "Konuşma",
+      "outcome_verbatim": "Sosyal hayata dair gözlemleri yansıtan metinlerden hareketle sergileyeceği konuşmayı yönetebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE3_1",
+      "resource_plan_id": "PLAN_T11_T4_TDE3_1",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.1"
+      },
+      "textbook_sections": [
+        "T4_SEC_03_KONUSMA_CANLANDIRMA"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_09_KONUSMA_YONETIM"
+      ],
+      "textbook_form_ids": [
+        "FORM_T4_P281_KONTROL_LISTESI_01"
+      ],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.280-281"
+      ],
+      "textbook_student_action": "Konuşmanın amacını, hedef kitlesini, yöntem/stratejisini, hazırlık ve uygulama koşullarını planlar.",
+      "textbook_expected_evidence": "Konuşma/canlandırma planı, görev ve hazırlık kayıtları.",
+      "observed_assessment_structure": [
+        "checklist"
+      ],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.1",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.280-281"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE3_2",
+      "outcome_code": "TDE3.2",
+      "skill_category": "Konuşma",
+      "outcome_verbatim": "Günlük hayatta karşılaşılabilecek olay ya da durumu etkileyici ve inandırıcı biçimde canlandırmak için konuşmasının içeriğini oluşturabilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE3_2",
+      "resource_plan_id": "PLAN_T11_T4_TDE3_2",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.2"
+      },
+      "textbook_sections": [
+        "T4_SEC_03_KONUSMA_CANLANDIRMA"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_10_KONUSMA_ICERIK_ANLAM"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.282"
+      ],
+      "textbook_student_action": "Konuşma için bilgi, örnek, görsel/işitsel destek ve söz varlığını seçerek içeriği yapılandırır.",
+      "textbook_expected_evidence": "Konuşma metni/senaryo/akış taslağı ve içerik düzenleme kayıtları.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.2",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.282"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE3_3",
+      "outcome_code": "TDE3.3",
+      "skill_category": "Konuşma",
+      "outcome_verbatim": "Günlük hayatta karşılaşılabilecek olay ya da durumu etkileyici ve inandırıcı biçimde canlandırmak için konuşmasında kural uygulayabilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE3_3",
+      "resource_plan_id": "PLAN_T11_T4_TDE3_3",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.3"
+      },
+      "textbook_sections": [
+        "T4_SEC_03_KONUSMA_CANLANDIRMA"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_11_KONUSMA_UYGULAMA_COZUMLEME"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.282"
+      ],
+      "textbook_student_action": "Planladığı konuşmayı bağlama uygun dil, beden dili, ses, zaman ve mekân kullanımıyla gerçekleştirir.",
+      "textbook_expected_evidence": "Canlı sözlü performans/canlandırma ve performans kaydı.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.3",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.282"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE3_4",
+      "outcome_code": "TDE3.4",
+      "skill_category": "Konuşma",
+      "outcome_verbatim": "Hayata ayna tutan içeriği sahnelediği konuşması için konuşma sürecini değerlendirebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE3_4",
+      "resource_plan_id": "PLAN_T11_T4_TDE3_4",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.4"
+      },
+      "textbook_sections": [
+        "T4_SEC_03_KONUSMA_CANLANDIRMA"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "textbook_form_ids": [
+        "LINK_T4_KONUSMA_DPA"
+      ],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.283"
+      ],
+      "textbook_student_action": "Konuşma performansını öz/akran/öğretmen değerlendirmesi ve geri bildirimle geliştirir.",
+      "textbook_expected_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve yansıtma/revizyon kaydı.",
+      "observed_assessment_structure": [
+        "linked_assessment_resource"
+      ],
+      "primary_coverage": "PARTIALLY_COVERED",
+      "need_tags": [
+        "ASSESSMENT_TARGET_STRUCTURE_UNRESOLVED"
+      ],
+      "remaining_gap": "Official QR-linked Dereceli Puanlama Anahtarı target exists but its criterion×level structure is not visible in the local official textbook PDF and remains unresolved.",
+      "production_decision": "NO_ACTION_PENDING_ASSESSMENT_TARGET",
+      "priority": "REVIEW_REQUIRED",
+      "coverage_confidence": "HIGH_WITH_EXTERNAL_TARGET_STRUCTURE_UNRESOLVED",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE3.4",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.283"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE4_1",
+      "outcome_code": "TDE4.1",
+      "skill_category": "Yazma",
+      "outcome_verbatim": "Günlük hayatta karşılaşılabilecek olay ve durumları etkili bir şekilde aktaracağı yazısını yönetebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE4_1",
+      "resource_plan_id": "PLAN_T11_T4_TDE4_1",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.1"
+      },
+      "textbook_sections": [
+        "T4_SEC_05_YAZMA_AFIS"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_17_YAZMA_YONETIM"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.298-299"
+      ],
+      "textbook_student_action": "Yazma amacını, hedef kitlesini, türünü, yöntem/stratejisini ve üretim koşullarını planlar.",
+      "textbook_expected_evidence": "Yazma planı, amaç/hedef kitle ve strateji kaydı.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.1",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.298-299"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE4_2",
+      "outcome_code": "TDE4.2",
+      "skill_category": "Yazma",
+      "outcome_verbatim": "Farklı bakış açılarını, günlük deneyimleri ve sosyal yaşamı yansıttığı yazısı için içerik oluşturabilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE4_2",
+      "resource_plan_id": "PLAN_T11_T4_TDE4_2",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.2"
+      },
+      "textbook_sections": [
+        "T4_SEC_05_YAZMA_AFIS"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_18_YAZMA_ICERIK_ANLAM"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.300"
+      ],
+      "textbook_student_action": "Bilgi, örnek, görsel/işitsel öge ve söz varlığını seçerek yazılı/çok modlu içeriği tasarlar.",
+      "textbook_expected_evidence": "İçerik taslağı, plan/şema ve kaynak-seçim kayıtları.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.2",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.300"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE4_3",
+      "outcome_code": "TDE4.3",
+      "skill_category": "Yazma",
+      "outcome_verbatim": "Farklı bakış açılarını, günlük deneyimleri ve sosyal yaşamı yansıttığı yazısı için kural uygulayabilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE4_3",
+      "resource_plan_id": "PLAN_T11_T4_TDE4_3",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.3"
+      },
+      "textbook_sections": [
+        "T4_SEC_05_YAZMA_AFIS"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_19_YAZMA_UYGULAMA_COZUMLEME"
+      ],
+      "textbook_form_ids": [],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.301"
+      ],
+      "textbook_student_action": "Taslağını tür, bağlam, Türkçe kullanımı, yazım-noktalama ve bütünlük ilkelerine göre ürüne dönüştürür.",
+      "textbook_expected_evidence": "Düzenlenmiş yazılı veya çok modlu ürün.",
+      "observed_assessment_structure": [],
+      "primary_coverage": "COVERED",
+      "need_tags": [],
+      "remaining_gap": "NONE",
+      "production_decision": "REUSE_TEXTBOOK",
+      "priority": "NOT_NEEDED",
+      "coverage_confidence": "HIGH",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.3",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.301"
+        ]
+      },
+      "selection_fallback_used": false
+    },
+    {
+      "outcome_id": "TDE11_T4_TDE4_4",
+      "outcome_code": "TDE4.4",
+      "skill_category": "Yazma",
+      "outcome_verbatim": "Günlük hayatta karşılaşılabilecek olay ve durumları etkili bir şekilde aktardığı yazılı anlatımına yönelik yazma sürecini değerlendirebilme",
+      "process_components_verbatim": [],
+      "need_id": "NEED_T11_T4_TDE4_4",
+      "resource_plan_id": "PLAN_T11_T4_TDE4_4",
+      "program_assessment_requirement": {
+        "normative_requirement": "Öğrencinin ilgili öğrenme çıktısını görünür kanıt ve geri bildirim yolu üzerinden gerçekleştirmesi ve değerlendirmesi.",
+        "source_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.4"
+      },
+      "textbook_sections": [
+        "T4_SEC_05_YAZMA_AFIS"
+      ],
+      "textbook_activity_ids": [
+        "T4_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "textbook_form_ids": [
+        "FORM_T4_P302_OGRENME_GUNLUGU_06",
+        "LINK_T4_YAZMA_DPA"
+      ],
+      "textbook_locators": [
+        "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.302"
+      ],
+      "textbook_student_action": "Yazma sürecini ve ürünü öz/akran/öğretmen değerlendirmesiyle gözden geçirip geliştirir.",
+      "textbook_expected_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve revize edilmiş nihai ürün.",
+      "observed_assessment_structure": [
+        "learning_journal",
+        "linked_assessment_resource"
+      ],
+      "primary_coverage": "PARTIALLY_COVERED",
+      "need_tags": [
+        "ASSESSMENT_TARGET_STRUCTURE_UNRESOLVED"
+      ],
+      "remaining_gap": "Official QR-linked Dereceli Puanlama Anahtarı target exists but its criterion×level structure is not visible in the local official textbook PDF and remains unresolved.",
+      "production_decision": "NO_ACTION_PENDING_ASSESSMENT_TARGET",
+      "priority": "REVIEW_REQUIRED",
+      "coverage_confidence": "HIGH_WITH_EXTERNAL_TARGET_STRUCTURE_UNRESOLVED",
+      "provenance": {
+        "program_locator": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332#TDE4.4",
+        "textbook_locator": [
+          "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.302"
+        ]
+      },
+      "selection_fallback_used": false
+    }
+  ]
+}

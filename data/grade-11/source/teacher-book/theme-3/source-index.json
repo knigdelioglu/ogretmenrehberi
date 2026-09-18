@@ -1,0 +1,2135 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "TYMM_TEACHER_BOOK_SOURCE_INDEX",
+  "course_id": "TDE_11",
+  "theme_id": "TEMA_03",
+  "authority": "OFFICIAL_TEXTBOOK_DERIVED",
+  "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
+  "counts": {
+    "records": 146,
+    "linked_answers": 144
+  },
+  "records": [
+    {
+      "source_record_id": "T03-S0001",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "160-161",
+      "book_heading": "3. Tema — Yaşamın İzinde / tema çerçevesi",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.160-161 / PDF s.161-162 — tema açılışı ve tema sunusu",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0001"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0002",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "162",
+      "book_heading": "Temaya Başlarken — edebiyat ve yaşam",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Görselde bir yol üzerinde yürüyen insan ayrıntısının neyi temsil edebileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0002"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0003",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "162",
+      "book_heading": "Temaya Başlarken — edebiyat ve yaşam",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Görselin kendi hayatınızla ilgili çağrıştırdıklarını gerekçelendirerek ifade ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0002"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0004",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "162",
+      "book_heading": "Temaya Başlarken — edebiyat ve yaşam",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Görselden hareketle yaşama dair hangi çıkarımlarda bulunulabileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0002"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0005",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "162",
+      "book_heading": "Temaya Başlarken — edebiyat ve yaşam",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Görsel bir roman kapağı olsaydı romana hangi adı vereceğinizi gerekçesiyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0002"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0006",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "163",
+      "book_heading": "Temaya Başlarken — görsellerin çağrışımı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Verilen görsellerin size neleri çağrıştırdığını ifade ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.163 / PDF s.164 — soru 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0003"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0007",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "163",
+      "book_heading": "Temaya Başlarken — biyografi ve tezkire ön karşılaştırması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Alev Alatlı'yı tanıtan metin ile Sehî Beg tezkiresindeki Yahyâ maddesinin ortak ve farklı özelliklerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.163 / PDF s.164 — soru 6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0004"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0008",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "164",
+      "book_heading": "Konuya Başlarken — yazar, hayat ve roman",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Bir edebiyat sanatçısı ile ortaya koyduğu eser arasındaki ilişkiyi değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.164 / PDF s.165 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0009",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "164",
+      "book_heading": "Konuya Başlarken — yazar, hayat ve roman",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — ‘Hayatımı yazsam roman olurdu.’ sözü hayat ile roman arasında nasıl bir ilişki kurmaktadır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.164 / PDF s.165 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0010",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "164",
+      "book_heading": "Konuya Başlarken — yazar, hayat ve roman",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Yazarın kişisel deneyimlerini romana yansıtması eserin inandırıcılığını nasıl etkileyebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.164 / PDF s.165 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0011",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "165",
+      "book_heading": "Okumayı Yönetebilme — Huzur için tahmin, araştırma ve çalışma kâğıdı",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.165 / PDF s.166 — Okumayı Yönetebilme 1-5. adımlar",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0006"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0012",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "165-166",
+      "book_heading": "Fark Edelim / Sıra Sizde / Metni Okuyalım — kelime, çağrışım, tahmin ve okuma stratejisi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.165-166 / PDF s.166-167 — Fark Edelim, Sıra Sizde ve Metni Okuyalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0007"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0013",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "167-171",
+      "book_heading": "Metni Okuyalım — Huzur",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.167-171 / PDF s.168-172 — Huzur ana metni",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0008"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0014",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "172",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız 1-3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0009"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0015",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "174",
+      "book_heading": "Hatırlayalım — Huzur romanının üslup özellikleri",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.174 / PDF s.175 — Huzur Romanının Üslup Özellikleri",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0010"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0016",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "175",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Okuma öncesi tahminlerinizi Huzur metninden öğrendiklerinizle karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.175 / PDF s.176 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0017",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "175",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Romanın konusunu, temasını ve yazılış amacını belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.175 / PDF s.176 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0018",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Huzur'un temasına ve edebî akımına göre roman türünü belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0019",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Boğaz/İstanbul mekânına yüklenen işlevi ve bu işlevin hangi mekân özelliğine bağlandığını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0020",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — ‘Bizler, kökü mazide olan atiyiz.’ ifadesinin anlamını açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0021",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — ‘Kendi hayatımızın kaynakları’ ifadesini açıklayıp yaşadığınız şehirden benzer değerler örnekleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0022",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Metinde dönemin sosyal hayatını yansıtan ifadelere örnekler veriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 7",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0023",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Şehir hayatının insanların ruh hâline ve sosyal hayatına etkisi hakkında metinden hangi çıkarımlar yapılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 8",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0024",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Nuran ile Mümtaz'ın buluştukları mekânlar; ilişkileri, yaşam tarzları ve hayata bakışları hakkında neler düşündürmektedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 9",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0025",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 10 — Mümtaz'ın Üsküdar için ‘hakikî kadın saltanatı’ demesinin sebebini metin bağlamında açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 10",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0026",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 11 — Mümtaz'ın tarihî dönem romanına Şeyh Gâlip'in adını vermesinden kişiliği ve sanat anlayışı hakkında çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 11",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0027",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 12 — Tarihimizdeki önemli olayları anlatan türkü, şarkı veya marşlara gerekçeli örnekler veriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 12",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0028",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "176",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 13 — Nuran ile Mümtaz'ın bazı İstanbul mekânlarına müzikle ilgili adlar vermesinden sanatın hayatlarındaki etkisine yönelik çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.176 / PDF s.177 — soru 13",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0029",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "177",
+      "book_heading": "Metni Anlayalım — Huzur",
+      "task_type": "QUESTION",
+      "prompt": "Soru 14 — Huzur metnindeki açık ve örtük iletilere örnekler veriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.177 / PDF s.178 — soru 14",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0030",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "177-178",
+      "book_heading": "Karşılaştıralım — Huzur / Mescid-i Aksa",
+      "task_type": "COMPARISON",
+      "prompt": "Huzur ile Mescid-i Aksa'yı içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırınız.",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.177-178 / PDF s.178-179 — Karşılaştıralım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0031",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "178-179",
+      "book_heading": "Karşılaştıralım — Okuma Çemberi 1-2. adımlar",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.178-179 / PDF s.179-180 — Okuma Çemberi",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0032",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "180-181",
+      "book_heading": "Okuma Çemberi — 3-4. adımlar / kişiler, söz-davranış, kişilik ve dil",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.180-181 / PDF s.181-182 — Okuma Çemberi 3-4. adımlar",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0033",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "182",
+      "book_heading": "Fark Edelim — gerçek hayat / kurmaca balık kılçığı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Huzur'daki gerçek hayattan alınan unsurlarla kurgusal dönüşümleri balık kılçığı diyagramında ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0034",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "182",
+      "book_heading": "Sıra Sizde — yazar ile eser ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Sıra Sizde — Verilen metinlerden hareketle yazar ile eser arasındaki ilişkiye yönelik çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.182 / PDF s.183 — Sıra Sizde",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0035",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "183",
+      "book_heading": "Fark Edelim — gerçek hayat ve kurmacanın katkısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Gerçek hayattan alınan unsurlarla kurgusal unsurların birlikte kullanılmasının romana katkısını değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.183 / PDF s.184 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0036",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "183",
+      "book_heading": "Sıra Sizde — öznel ve nesnel anlatım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Parçalardaki öznel ve nesnel anlatım örneklerini belirleyip bunların metne ve kişilerin yansıtılmasına katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0037",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "184-185",
+      "book_heading": "Sıra Sizde — duyarlılık değeri ve insani çatışmalar",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — ‘Duyarlılık’ değerinden hareketle roman kişilerinin insani çelişki, ahlaki çatışma ve toplumsal güçlüklerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.184-185 / PDF s.185-186 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0038",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "186",
+      "book_heading": "Sıra Sizde — kahramanın dili / günlük dil karşılaştırması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Kendinize yakın bulduğunuz bir Huzur kişisinin konuşma biçimini günlük dilinizle karşılaştırıp farklılıkları gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.186 / PDF s.187 — Sıra Sizde soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0039",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "186",
+      "book_heading": "Çözümleyebilme — Huzur'un yapı unsurları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Huzur romanının olay, mekân, kişi kadrosu ve zaman unsurlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.186 / PDF s.187 — Çözümleyebilme soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0040",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "187",
+      "book_heading": "Çözümleyebilme — dil/üslup ile yapı unsurları ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Huzur'un dil ve üslup özellikleriyle olay, mekân, kişi kadrosu ve zaman arasındaki ilişkiyi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.187 / PDF s.188 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0016"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0041",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "187",
+      "book_heading": "Çözümleyebilme — yazarın üslup seçimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3/a — Romanın temasının yazarın üslubuna etkisini yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.187 / PDF s.188 — soru 3/a",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0042",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "188",
+      "book_heading": "Çözümleyebilme — yazarın üslup seçimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3/b — Yapı unsurları arasındaki etkileşimin yazarın üslubuna katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.188 / PDF s.189 — soru 3/b",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0043",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "188",
+      "book_heading": "Çözümleyebilme — yazarın üslup seçimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3/c — Romanın yazıldığı dönemin özelliklerinin yazarın üslubuna etkisini yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.188 / PDF s.189 — soru 3/c",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0044",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "188",
+      "book_heading": "Çözümleyebilme — yazarın üslup seçimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3/ç — Romandaki söz varlığı ile yazarın üslubu arasındaki ilişkiyi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.188 / PDF s.189 — soru 3/ç",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0045",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "188",
+      "book_heading": "Çözümleyebilme — kişiler, özellikleri ve amaçları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Mümtaz, Nuran, İhsan ve Suat'ın özelliklerini ve amaçlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.188 / PDF s.189 — soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0046",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "189",
+      "book_heading": "Düşünelim Paylaşalım — çatışma ögeleri ve anlatım teknikleri",
+      "task_type": "QUESTION",
+      "prompt": "Verilen Huzur parçalarındaki çatışmaları türleriyle belirleyip anlatıcı, anlatım biçimi ve tekniklerin bu çatışmalara katkısını tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.189 / PDF s.190 — Düşünelim Paylaşalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0017"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0047",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "190",
+      "book_heading": "Fark Edelim — dönem dili / günümüz dili",
+      "task_type": "QUESTION",
+      "prompt": "Huzur parçasında dönem dilinin günümüz dilinden farklı ve ortak yönlerini yapı, üslup, sanatçı ve dönem bağlamında belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.190 / PDF s.191 — Fark Edelim",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0048",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "190-191",
+      "book_heading": "Sıra Sizde — cümle ögeleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Huzur'dan verilen a-f cümlelerinin ögelerini tespit ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.190-191 / PDF s.191-192 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0049",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "191",
+      "book_heading": "Sıra Sizde — cümle kuruluşunun metne katkısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Tespit ettiğiniz cümle kuruluşlarının Huzur metnine katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0050",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "191",
+      "book_heading": "Sıra Sizde — günümüz yazım kuralları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Parçada günümüz yazım kurallarına göre farklı yazılan kelimeleri belirleyip güncel biçimlerini yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0051",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "191",
+      "book_heading": "Ders Dışı Etkinlik — romanın tarih, sosyoloji ve psikolojiyle ilişkisi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.191 / PDF s.192 — Ders Dışı Etkinlik",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0052",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "192",
+      "book_heading": "Süreci Değerlendirebilme — Huzur çözümleme çalışma kâğıdı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Huzur'un dil ve anlatımıyla ilgili beğeni/eleştirilerinizi gerekçelendirip çözümleme çalışma kâğıdını tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.192 / PDF s.193 — Süreci Değerlendirebilme soru 1 ve çalışma kâğıdı",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0020"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0053",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "193",
+      "book_heading": "Süreci Değerlendirebilme — kendi beğeni ölçütleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Huzur'u kendi belirlediğiniz metin değerlendirme ölçütlerine göre gerekçeli biçimde değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.193 / PDF s.194 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0021"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0054",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "193",
+      "book_heading": "Süreci Değerlendirebilme — kahramanın yerine geçme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Kendinizi Huzur kişilerinden birinin yerine koyup yaşadıkları karşısında ne düşünüp nasıl davranacağınızı gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.193 / PDF s.194 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0020"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0055",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "193",
+      "book_heading": "Çıkış Kartı — Üç Yaz / İki Sor / Bir Paylaş",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.193 / PDF s.194 — Çıkış Kartı",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0022"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0056",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "194",
+      "book_heading": "Konuya Başlarken — biyografide yaşam ayrıntıları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Biyografilerde kişinin hayatına ilişkin hangi tür ayrıntılara yer verilebileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.194 / PDF s.195 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0023"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0057",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "194",
+      "book_heading": "Konuya Başlarken — biyografinin okur açısından önemi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Biyografilerin okur açısından önemini içeriklerinden hareketle değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.194 / PDF s.195 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0023"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0058",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "195",
+      "book_heading": "Okumayı Yönetebilme — Mehmet Akif Ersoy",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.195 / PDF s.196 — Okumayı Yönetebilme / Metni Okuyalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0024"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0059",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "195-197",
+      "book_heading": "Metni Okuyalım — Mehmet Akif Ersoy",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.195-197 / PDF s.196-198 — ana metin",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0025"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0060",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "198",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.198 / PDF s.199 — Söz Varlığımız",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0026"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0061",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "199",
+      "book_heading": "Metni Anlayalım — Mehmet Akif Ersoy",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Toplumun zayıf ve yardıma muhtaç kesimlerine yer vermesi Mehmet Akif'in kişiliği hakkında sizde hangi duyguları/izlenimleri uyandırmaktadır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.199 / PDF s.200 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0062",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "199",
+      "book_heading": "Metni Anlayalım — Mehmet Akif Ersoy",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Mehmet Akif için toplumcu ve millî şair nitelemelerinin yanında neden ‘İslâm şairi’ de denildiğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.199 / PDF s.200 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0063",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "199",
+      "book_heading": "Metni Anlayalım — Mehmet Akif Ersoy",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Mehmet Akif'in millî marş yarışmasına ve özellikle para ödülüne mesafeli tutumunu değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.199 / PDF s.200 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0064",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "200",
+      "book_heading": "Fark Edelim — vatan, fedakârlık ve şehitlik bağlamı",
+      "task_type": "QUESTION",
+      "prompt": "Fark Edelim — Mehmet Akif'in vatan vurgusu ile verilen kişi/görsellerden hareketle duygu ve düşüncelerinizi gerekçeli biçimde ifade ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.200 / PDF s.201 — Fark Edelim",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0065",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "201",
+      "book_heading": "Çalışma Kâğıdı — Mehmet Akif Ersoy biyografisi",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.201 / PDF s.202 — Çalışma Kâğıdı",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0066",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "202",
+      "book_heading": "Sıra Sizde — biyografide öznel ve nesnel ifadeler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mehmet Akif Ersoy metninden öznel ve nesnel ifadelere örnekler bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.202 / PDF s.203 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0067",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "202",
+      "book_heading": "Sıra Sizde — biyografide baskın anlatım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Biyografi türünde öznel ve nesnel anlatımdan hangisinin ön planda olduğunu gerekçesiyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.202 / PDF s.203 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0068",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "203",
+      "book_heading": "Fark Edelim — biyografi örnekleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mehmet Akif Ersoy metninin verilen biyografi örneklerinden hangisine benzediğini gerekçesiyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.203 / PDF s.204 — Fark Edelim soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0030"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0069",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "203",
+      "book_heading": "Fark Edelim — biyografi alt türü",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Mehmet Akif Ersoy metninin hangi biyografi alt türüne dâhil edilebileceğini gerekçeleriyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.203 / PDF s.204 — Fark Edelim soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0030"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0070",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "204",
+      "book_heading": "Karşılaştıralım — Huzur / Mehmet Akif Ersoy",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Huzur ile Mehmet Akif Ersoy metinlerini içerik, tür, yapı, dönem, yapı unsurları, dil-üslup ve ileti bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.204 / PDF s.205 — Karşılaştıralım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0031"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0071",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "204",
+      "book_heading": "Karşılaştıralım — kurgu ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Siber Zorbalık metninin kurgu-gerçeklik bakımından Huzur ve Mehmet Akif Ersoy metinlerinden hangisine daha çok benzediğini gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.204 / PDF s.205 — Karşılaştıralım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0031"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0072",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "book_heading": "Çözümleyebilme — biyografinin yapı unsurları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mehmet Akif Ersoy metninin yapı unsurlarını ve bunların metne katkısını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0073",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "book_heading": "Çözümleyebilme — söz varlığı ve üslup",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Metindeki söz varlığı ile yazarın üslubu arasındaki ilişkiyi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0074",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "book_heading": "Çözümleyebilme — yapı ve üslup etkileşimi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Metnin yapı unsurları arasındaki etkileşimin yazarın üslubuna etkisini belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0075",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "book_heading": "Çözümleyebilme — millî, manevi ve evrensel değerler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Metinde yer alan millî, manevi ve evrensel değerleri belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0076",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "book_heading": "Sıra Sizde — Âsım'ın nesline duyulan güven",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mehmet Akif'in Âsım'ın nesline duyduğu güvenin günümüzde sürüp sürmediğini verilen görsellerden hareketle yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0077",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "205",
+      "book_heading": "Sıra Sizde — günümüz Âsım neslinin görevleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Görsellerden hareketle günümüz Âsım nesline düşen görevleri tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0032"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0078",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "206-207",
+      "book_heading": "Bilgi Köşesi / Ara Metin — Tezkire ve Usûlî",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.206-207 / PDF s.207-208 — Bilgi Köşesi ve Usûlî ara metni",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0033"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0079",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "book_heading": "Sıra Sizde — Usûlî tezkiresi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Günümüzde kullanılmayan kelimeleri bağlamdan tahmin edip doğrulayın; sınıfça seçilen on kelimeyi cümlede kullanın.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.208 / PDF s.209 — soru 1/a-c",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0080",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "book_heading": "Sıra Sizde — Usûlî tezkiresi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Usûlî tezkire metninin sizde uyandırdığı izlenimleri gerekçeli biçimde yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.208 / PDF s.209 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0081",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "book_heading": "Sıra Sizde — Usûlî tezkiresi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Tezkirenin içerik, yapı, dil ve anlatım özelliklerini yazıldığı dönem ve toplumla ilişkilendirerek değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.208 / PDF s.209 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0082",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "book_heading": "Sıra Sizde — Usûlî tezkiresi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Tezkirelerin biyografilerle ortak yönlerini Usûlî metninden hareketle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.208 / PDF s.209 — soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0083",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "book_heading": "Sıra Sizde — Usûlî tezkiresi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Tezkire metninde görülen öğretici metin özelliklerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.208 / PDF s.209 — soru 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0084",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "208",
+      "book_heading": "Sıra Sizde — Usûlî tezkiresi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Kişisel hayatı konu alan metinlerin edebî açıdan önemini tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.208 / PDF s.209 — soru 6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0034"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0085",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "209",
+      "book_heading": "Süreci Değerlendirebilme — beğeni ölçütü belirleme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mehmet Akif Ersoy metnini değerlendirmek için kendi beğeni ölçütlerinizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.209 / PDF s.210 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0035"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0086",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "209",
+      "book_heading": "Süreci Değerlendirebilme — ölçüte göre değerlendirme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Belirlediğiniz beğeni ölçütlerine göre Mehmet Akif Ersoy metnini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.209 / PDF s.210 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0035"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0087",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "209",
+      "book_heading": "Süreci Değerlendirebilme — beğeni ve eleştiri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Metinle ilgili beğeni ve eleştirilerinizi gerekçeleriyle yazınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.209 / PDF s.210 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0035"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0088",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "209",
+      "book_heading": "Süreci Değerlendirebilme — yazılma amacına ulaşma",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Metnin yazılma amacına ulaşıp ulaşmadığını gerekçeleriyle açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.209 / PDF s.210 — soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T03-A0035"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0089",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "210",
+      "book_heading": "Konuşmayı Yönetebilme — Kemal Tahir mülakatı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Kemal Tahir ile yapılan mülakatın amacı ne olabilir?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.210 / PDF s.211 — soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0036"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0090",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "210",
+      "book_heading": "Konuşmayı Yönetebilme — Kemal Tahir mülakatı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Soruların, sürenin ve hedef kitlenin önceden belirlenmesi mülakatı nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.210 / PDF s.211 — soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0036"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0091",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "211",
+      "book_heading": "Performans Görevi — Huzur kişisiyle hayalî mülakat",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.211 / PDF s.212 — Performans Görevi 1-3 ve Çalışma Kâğıdı",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0037"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0092",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "212",
+      "book_heading": "İçerik Oluşturabilme — mülakat soru/cevap ve taslak geliştirme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.212 / PDF s.213 — Düşünelim Paylaşalım 1-6 ve mülakat taslağı a-h",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0038"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0093",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "213",
+      "book_heading": "Kural Uygulayabilme — hayalî mülakatı gerçekleştirme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.213 / PDF s.214 — Kural Uygulayabilme a-j",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0039"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0094",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "214",
+      "book_heading": "Süreci Değerlendirebilme — açık ve örtük iletiler",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Hayalî mülakattaki roman kişisinin verebileceği cevaplardan hareketle açık ve örtük iletileri değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme soru 1",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T03-S0095",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "214",
+      "book_heading": "Süreci Değerlendirebilme — karakter yargılarının dayanağı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Roman kişileri hakkında ulaştığınız yargı ve bilgilerin dayanaklarını gerekçeli biçimde açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme soru 2",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T03-S0096",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "214",
+      "book_heading": "Süreci Değerlendirebilme — rubrik, öz değerlendirme, gelişim ve akran geri bildirimi",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme 3-7, Öz Değerlendirme Formu ve QR yönlendirmeleri",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0041"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0097",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "215",
+      "book_heading": "Konuya Başlarken — radyo tiyatrosuna ilginin azalması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Radyo tiyatrosuna dinleyici ilgisinin azalması hakkındaki düşüncelerinizi gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.215 / PDF s.216 — soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0042"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0098",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "215",
+      "book_heading": "Konuya Başlarken — edebî ve estetik kaygı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Edebî ve estetik kaygıların ortadan kalkmasının ne gibi sonuçları olabileceğini açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.215 / PDF s.216 — soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0042"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0099",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "215",
+      "book_heading": "Konuya Başlarken — radyo tiyatrosu / televizyon karşılaştırması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Radyo tiyatrosu ile televizyon programlarını hayal gücünü besleme yönünden karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.215 / PDF s.216 — soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0042"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0100",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "216",
+      "book_heading": "Dinleme / İzlemeyi Yönetebilme — amaç, strateji, tahmin ve Gözlem Formu",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.216 / PDF s.217 — Dinleme / İzlemeyi Yönetebilme 1-3 ve Metni Dinleyelim / İzleyelim",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0043"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0101",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "217",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.217 / PDF s.218 — Söz Varlığımız 1-2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0044"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0102",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "218",
+      "book_heading": "Hatırlayalım — radyo tiyatrosunun unsurları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Radyo tiyatrosunu oluşturan unsurları tiyatro ön bilgilerinizden hareketle belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.218 / PDF s.219 — Hatırlayalım soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0103",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "218",
+      "book_heading": "Hatırlayalım — müzik, efekt, seslendirme ve tonlama",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Radyo tiyatrosunda müzik, ses efektleri, seslendirme ve tonlamanın önemini tahmin ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.218 / PDF s.219 — Hatırlayalım soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0104",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "218",
+      "book_heading": "Metni Anlayalım — Direnişin Ustaları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Direnişin Ustaları'nın konusunu, temasını ve yazılma amacını belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.218 / PDF s.219 — Metni Anlayalım soru 1 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0105",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "219",
+      "book_heading": "Metni Anlayalım — Direnişin Ustaları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Kahramanların davranışlarından hareketle duygu ve düşüncelerine yönelik çıkarımlar yapınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.219 / PDF s.220 — Metni Anlayalım soru 2 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0106",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "219",
+      "book_heading": "Metni Anlayalım — Direnişin Ustaları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Kahramanlardan hangisini seslendirmek isterdiniz? Seçiminizi gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.219 / PDF s.220 — Metni Anlayalım soru 3 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0107",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "219",
+      "book_heading": "Metni Anlayalım — Direnişin Ustaları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Metni dönem, zihniyet, üslup, ileti ve tür özellikleri bakımından sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.219 / PDF s.220 — Metni Anlayalım soru 4 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0108",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "219",
+      "book_heading": "Metni Anlayalım — Direnişin Ustaları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — İçerik, dil ve üsluptan hareketle yazarın sanat anlayışına ilişkin çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.219 / PDF s.220 — Metni Anlayalım soru 5 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0046"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0109",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "220",
+      "book_heading": "Sıra Sizde — Osmancık / Direnişin Ustaları karşılaştırması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Osmancık ile Direnişin Ustaları'nı zihin haritasındaki dokuz ölçüte göre karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 1 / Osmancık QR videosu gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0047"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0110",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "220",
+      "book_heading": "Sıra Sizde — radyo tiyatrosunun dil becerilerine katkısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Dinlediğiniz radyo tiyatrosunun dil becerilerinize sağlayabileceği katkıları açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0047"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0111",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "220",
+      "book_heading": "Sıra Sizde — dil yapıları ve kişilerin iç dünyası",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Sözcük seçimi, cümle kuruluşu ve üslubun kişilerin iç dünyasını yansıtmadaki işlevini gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 3 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0047"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0112",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "221",
+      "book_heading": "Çözümleyebilme — radyo tiyatrosunun yapı unsurları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Çalışma kâğıdını doldurarak kişi, mekân, zaman, çatışma ve dramatik örgüyü belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 1 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0048"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0113",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "221",
+      "book_heading": "Çözümleyebilme — kişiler ve amaçları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Kişilerin özelliklerini ve amaçlarını belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 2 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0048"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0114",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "221",
+      "book_heading": "Çözümleyebilme — yapı unsurlarının katkısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Yapı unsurlarının metne katkısını açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 3 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0048"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0115",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "221",
+      "book_heading": "Çözümleyebilme — millî/manevi değerler ve kültür unsurları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Millî ve manevi değerleri yansıtan dil/kültür unsurlarını ve metne katkılarını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 4 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0048"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0116",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "222",
+      "book_heading": "Sıra Sizde — görüş geliştirme / değerlerin iletilere etkisi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.222 / PDF s.223 — Sıra Sizde 1-5",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0049"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0117",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "223",
+      "book_heading": "Ders Dışı Etkinlik — radyo tiyatrosunun sosyal bilimlerle ilişkisi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.223 / PDF s.224 — Ders Dışı Etkinlik",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0118",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "223",
+      "book_heading": "Süreci Değerlendirebilme — değerlendirme ölçütleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Direnişin Ustaları'nı değerlendirmek için çeşitli ölçütler belirleyip gerekçeli değerlendirmeler yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0119",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "223",
+      "book_heading": "Süreci Değerlendirebilme — tarihî gerçeklikle karşılaştırma",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Radyo tiyatrosunda ele alınan konuyu tarihî gerçeklerle karşılaştırarak değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 2 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0120",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "223",
+      "book_heading": "Süreci Değerlendirebilme — empati ve davranış değerlendirmesi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Çok modlu metindeki bir kişiyle empati kurarak davranışlarını değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 3 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0121",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "224",
+      "book_heading": "Süreci Değerlendirebilme — radyo tiyatrosuna yönelik beğeni",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Dinlediğiniz radyo tiyatrosuna yönelik beğenilerinizi gerekçelendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0122",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "224",
+      "book_heading": "Süreci Değerlendirebilme — metin / yaşam ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Metnin konusu ve ana düşüncesini kendi yaşamınız ve günlük deneyimlerinizle ilişkilendirerek yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 5 / QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0050"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0123",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "224",
+      "book_heading": "Süreci Değerlendirebilme — Öğrenme Günlüğü",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.224 / PDF s.225 — soru 6 / Öğrenme Günlüğü",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0051"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0124",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "225",
+      "book_heading": "Yazmayı Yönetebilme — Radyo Oyununun Özellikleri ve tür dönüşümü görevi",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.225 / PDF s.226 — Radyo Oyununun Özellikleri ve dönüşüm görevi",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0052"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0125",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "225",
+      "book_heading": "Yazmayı Yönetebilme — diyalog seçme ölçütleri ve yazma stratejisi",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.225 / PDF s.226 — 1-2. adımlar",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0053"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0126",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "226",
+      "book_heading": "Performans Görevi / İçerik Oluşturabilme — dönüşüm yazısını planlama",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.226 / PDF s.227 — Performans Görevi a-ç ve İçerik Oluşturabilme a-c",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0054"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0127",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "227-228",
+      "book_heading": "İçerik Oluşturabilme / Kural Uygulayabilme — taslaktan son metne",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.227-228 / PDF s.228-229 — İçerik Oluşturabilme ç-k ve Kural Uygulayabilme a-ı",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0055"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0128",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "228",
+      "book_heading": "Süreci Değerlendirebilme — değerlendirme, geri bildirim ve dış QR rubriği",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.228 / PDF s.229 — Süreci Değerlendirebilme 1-5 / dış QR rubriği REVIEW_REQUIRED",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0056"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0129",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "229",
+      "book_heading": "Öz Değerlendirme Formu — 6 görünür ölçüt",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.229 / PDF s.230 — Öz Değerlendirme Formu 1-6",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0057"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0130",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "229",
+      "book_heading": "Tema Sonu Değerlendirme — 3-2-1 Çıkış Kartı",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.229 / PDF s.230 — Tema Sonu Değerlendirme / Çıkış Kartı",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0058"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0131",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "230",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Üç metnin verilen tez ve antitezden hangisini desteklediğini Venn şemasında sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.230 / PDF s.231 — soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0059"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0132",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "230",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Venn şemasının kesişimindeki metinden hareketle tez ve antitezi anlamca birleştiren bir sentez cümlesi yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.230 / PDF s.231 — soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0059"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0133",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "231",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — kurmaca ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Kurmaca, gerçeklik izlenimi, okur yorumu, nesnellik ve çok anlamlılık kavramlarını metinle ilişkilendirerek açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.231 / PDF s.232 — soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0060"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0134",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "231",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — kurmaca ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Kurmaca bir metnin dış dünya gerçekliğini yansıtması, metnin değerini etkiler mi? Görüşünüzü gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.231 / PDF s.232 — soru 4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0060"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0135",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "231",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — kurmaca ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Metindeki okur yorumu anlayışıyla örtüşen seçeneği belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.231 / PDF s.232 — soru 5 / doğru seçenek E",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0060"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0136",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "231",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — kurmaca ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Kurmaca metinleri dış dünya gerçekliğinden ayıran farkı en iyi ifade eden seçeneği belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.231 / PDF s.232 — soru 6 / doğru seçenek C",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0060"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0137",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "232",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Orhan Veli",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Grafikte Orhan Veli şiirlerinde en yüksek orana sahip tema ile Garip şiiri anlayışı arasındaki ilişkiyi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.232 / PDF s.233 — soru 7",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0138",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "233",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Orhan Veli",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Orhan Veli'nin metinde hangi yönleriyle tanıtıldığını metinden kanıtlarla açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.233 / PDF s.234 — soru 8",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0139",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "233",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Orhan Veli",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Orhan Veli'yi tanıtan metinle ilgili söylenemeyecek seçeneği belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.233 / PDF s.234 — soru 9 / doğru seçenek C",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0140",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "233",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — biyografi yarışması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 10 — Biyografi özellikleri yarışmasında II. grubun seçmesi gereken tabloyu ve alacağı puanı hesaplayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.233 / PDF s.234 — soru 10",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0141",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "233",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — biyografi yarışması",
+      "task_type": "QUESTION",
+      "prompt": "Soru 11 — I. grubun tam puan alabilmesi için hangi biyografi açıklamalarını nasıl düzeltmesi gerektiğini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.233 / PDF s.234 — soru 11",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0061"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0142",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "234",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Bir Bilim Adamının Romanı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 12 — Parçada Fuzûlî'ye yapılan göndermenin anlatıma ve Mustafa İnan'ın yansıtılmasına katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.234 / PDF s.235 — soru 12",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0062"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0143",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "234",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Bir Bilim Adamının Romanı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 13 — Bir Bilim Adamının Romanı parçasıyla ilgili sekiz yargıyı Evet / Hayır / Bilgi yok biçiminde değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.234 / PDF s.235 — soru 13",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0062"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0144",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "234",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Aile Bağları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 14 — Aile Bağları'ndaki diyalog tekniğinin anlatıma ve kişilerin yansıtılmasına katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.234 / PDF s.235 — soru 14 / Aile Bağları QR videosu",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0063"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0145",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "234",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — Aile Bağları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 15 — Aile Bağları videosunda kişi, mekân ve zamanın dramatik örgüye katkısını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.234 / PDF s.235 — soru 15 / Aile Bağları QR medya gerekli",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0063"
+      ]
+    },
+    {
+      "source_record_id": "T03-S0146",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "235",
+      "book_heading": "3. Tema Ölçme ve Değerlendirme Soruları — yazar hayatından hareketle olay yazısı",
+      "task_type": "QUESTION",
+      "prompt": "Soru 16 — Verilen parçalardan hangilerinin yazarın hayatından hareketle bir olay yazısına dönüştürülmeye uygun olduğunu belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.235 / PDF s.236 — soru 16 / doğru seçenek C (I, IV, V)",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T03-A0064"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1697 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "TYMM_TEACHER_BOOK_SOURCE_INDEX",
+  "course_id": "TDE_11",
+  "theme_id": "TEMA_01",
+  "authority": "OFFICIAL_TEXTBOOK_DERIVED",
+  "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
+  "counts": {
+    "records": 129,
+    "linked_answers": 74
+  },
+  "records": [
+    {
+      "source_record_id": "T01-S0001",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "12-13",
+      "book_heading": "Tema açılışı",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.12-13 / PDF s.13-14",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0002",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "14",
+      "book_heading": "Temaya Başlarken: Edebî metin ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Edebî eser gerçek hayatı nasıl yansıtır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.14 / PDF s.15 — soru 1",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0003",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "14",
+      "book_heading": "Temaya Başlarken: Edebî metin ve gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Edebî dil ve sosyal bilimler iletişim becerisine nasıl katkı sağlar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.14 / PDF s.15 — soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0004",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "15",
+      "book_heading": "Konuya Başlarken",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Metin ve görsellerde dikkat çeken seyirlik unsurlar nelerdir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.15 / PDF s.16",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0005",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "16",
+      "book_heading": "Okumayı Yönetebilme — Hatırlayalım",
+      "task_type": "PROCESS",
+      "prompt": "Altı kişilik grup ve üç bilgi/düşünce kartı",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.16 / PDF s.17",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0002"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0006",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "17",
+      "book_heading": "Hatırlayalım / Sıra Sizde",
+      "task_type": "PROCESS",
+      "prompt": "Karagöz — düşün-eşleş-paylaş",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.17 / PDF s.18",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0003"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0007",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "18-24",
+      "book_heading": "Metni Okuyalım: “Yazıcı”",
+      "task_type": "PROCESS",
+      "prompt": "Tahmin, rol paylaşımı ve karaktere uygun sesli okuma",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.18-24 / PDF s.19-25",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0004"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0008",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "25",
+      "book_heading": "Söz Varlığımız — Kelime Duvarı",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.25 / PDF s.26",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0009",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "26",
+      "book_heading": "Bilgi Köşesi — Karagöz oyununun bölümleri",
+      "task_type": "REFERENCE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.26 / PDF s.27",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0005"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0010",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "27",
+      "book_heading": "Fark Edelim — Karagöz ve Hacivat'ı karşılaştırma",
+      "task_type": "COMPARISON",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.27 / PDF s.28",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0011",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "28",
+      "book_heading": "Yorumlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Yazıcı metnindeki tiplerin söz varlıklarının onların sosyal statülerine ve eğitim durumlarına uygunluğu hakkındaki düşüncelerinizi metinden örneklerle ifade ediniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.28 / PDF s.29",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0012",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "28",
+      "book_heading": "Yorumlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Edebî metinlerde kişilerin kullandığı söz varlığının metne katkısı başka bir yolla sağlanabilir mi? Açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.28 / PDF s.29",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0013",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "28",
+      "book_heading": "Yorumlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Günlük hayatta Yazıcı oyunundaki tiplere benzer şekilde konuşan veya davranan kişilerle karşılaştığınızda bu durum size ne hissettirir? Bu tür davranışları nasıl değerlendirirsiniz? Açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.28 / PDF s.29",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0014",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "29",
+      "book_heading": "Düşünelim / Paylaşalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Hacivat ve Karagöz’ün kişilik özellikleri, eğitim durumları, kültür düzeyleri ve sosyal statüleri farklıdır. Bu farklılıklara rağmen aralarındaki dostluğu nasıl sürdürebildiklerini tartışınız. Ulaştığınız sonuçları tahtaya yazınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.29 / PDF s.30",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0015",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "29",
+      "book_heading": "Düşünelim / Paylaşalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Aşağıdaki dörtlükten ve atasözünden hareketle “dostluk” kavramının sizin için ifade ettiği anlamları aşağıdaki alana yazınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.29 / PDF s.30",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0016",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "30-31",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "TABLE",
+      "prompt": "Geleneksel tiyatro eşleştirmesi, metin soruları ve “Yazıcı”–“Eskici Abdi” karşılaştırması",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.30-31 / PDF s.31-32",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0017",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "32",
+      "book_heading": "Çözümleyebilme — “Yazıcı”nın yapı unsurları",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.32 / PDF s.33",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0018",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "33",
+      "book_heading": "Çözümleyebilme — Karagöz/Hacivat dil-üslup ilişkisi",
+      "task_type": "QUESTION",
+      "prompt": "Dil ve üslup özellikleri kişilik/eğitim hakkında ne düşündürüyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.33 / PDF s.34",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0019",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "34",
+      "book_heading": "Fiilimsiler ve gölge oyununun sosyal bilimlerle ilişkisi",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.34 / PDF s.35",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0020",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "35",
+      "book_heading": "Süreci Değerlendirebilme",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.35 / PDF s.36",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0021",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "36",
+      "book_heading": "Konuya Başlarken",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mektup nedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.36 / PDF s.37 — Konuya Başlarken soru 1",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0022",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "36",
+      "book_heading": "Konuya Başlarken",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Bir sanat ürünü hangi bakımdan mektuba benzetilebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.36 / PDF s.37 — Konuya Başlarken soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0023",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "36",
+      "book_heading": "Konuya Başlarken",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Konuşur ya da mektup yazar gibi yazmanın anlatıma etkisi nedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.36 / PDF s.37 — Konuya Başlarken soru 3",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0024",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "37-38",
+      "book_heading": "Okumayı Yönetebilme — Âli’ye Mektuplar",
+      "task_type": "PROCESS",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.37-38 / PDF s.38-39",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0025",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "39",
+      "book_heading": "Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.39 / PDF s.40",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0026",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "40",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mehmet Kaplan'ın mektubu yazma amacı nedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.40 / PDF s.41 — Metni Anlayalım soru 1",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0027",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "40",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Roman hakkındaki düşüncelerin bir mektupta yer alması ne gösterir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.40 / PDF s.41 — Metni Anlayalım soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0028",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "40",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Mehmet Kaplan'ın roman anlayışında hangi özellikler öne çıkar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.40 / PDF s.41 — Metni Anlayalım soru 3",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0029",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "40",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Bir kişinin konuşma, davranış, geçmiş ve tepkilerinden hareketle çözümlenmesi nasıl açıklanabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.40 / PDF s.41 — Metni Anlayalım soru 4",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0030",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "40",
+      "book_heading": "Metni Anlayalım — Mektup çözümleme çalışma kâğıdı",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.40 / PDF s.41 — çözümleme çalışma kâğıdı",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0031",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "41",
+      "book_heading": "Fark Edelim",
+      "task_type": "QUESTION",
+      "prompt": "Mektup ve biyografi birlikte okunduğunda Mehmet Kaplan'ın yaşamı ve düşünce dünyasına ilişkin neler belirlenebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.41 / PDF s.42 — Fark Edelim",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0032",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "41",
+      "book_heading": "Sıra Sizde — Öznel ve nesnel ifadeler",
+      "task_type": "QUESTION",
+      "prompt": "Öznel ve nesnel ifadeleri ayırınız; bu ayrım mektubun türünü nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.41 / PDF s.42 — Sıra Sizde",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0033",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "42",
+      "book_heading": "Mektup türleri",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.42 / PDF s.43",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0034",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "43",
+      "book_heading": "Fark Edelim / Karşılaştıralım",
+      "task_type": "COMPARISON",
+      "prompt": "“Yazıcı” ile Âli’ye Mektuplar'ı içerik, tür, dönem/çevre, yapı, dil/üslup ve ileti bakımından karşılaştırma",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.43 / PDF s.44",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0035",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "44",
+      "book_heading": "Çözümleyebilme — Mektubun yapı unsurları",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.44 / PDF s.45 — yapı unsurları",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0036",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "44",
+      "book_heading": "Çözümleyebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Mektubun dili muhatapla yakınlığa uygun mudur?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.44 / PDF s.45 — soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0037",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "44",
+      "book_heading": "Çözümleyebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Mektubun yazıldığı dönem ile günümüz iletişimi nasıl karşılaştırılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.44 / PDF s.45 — soru 3",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0038",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "44",
+      "book_heading": "Çözümleyebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Mektuptan dönemin toplumsal ve kültürel yapısına ilişkin hangi izler çıkarılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.44 / PDF s.45 — soru 4",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0039",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "44",
+      "book_heading": "Çözümleyebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Mektupta hangi millî, manevi ve evrensel değerler görülebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.44 / PDF s.45 — soru 5",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0040",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "45",
+      "book_heading": "Mektup ve sosyal bilimler",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.45 / PDF s.46",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0041",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "46",
+      "book_heading": "Süreci Değerlendirebilme — Beğeni ölçütleri",
+      "task_type": "REFERENCE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.46 / PDF s.47 — değerlendirme ölçütleri",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0042",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "46",
+      "book_heading": "Süreci Değerlendirebilme",
+      "task_type": "QUESTION",
+      "prompt": "Mektubu belirlediğiniz beğeni ölçütlerine göre değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.46 / PDF s.47 — değerlendirme",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0043",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "46",
+      "book_heading": "Süreci Değerlendirebilme",
+      "task_type": "QUESTION",
+      "prompt": "Yazar mektubu yazma amacına ulaşmış mıdır? Gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.46 / PDF s.47 — yazarın amacı",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0044",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "46",
+      "book_heading": "Süreci Değerlendirebilme — Şiirden mektuba dönüşüm",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.46 / PDF s.47 — dönüştürme görevi",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0045",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "47",
+      "book_heading": "Metin ve Gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mektuptaki metinsel gerçeklik ile nesnel gerçeklik nasıl ilişkilendirilebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.47 / PDF s.48 — soru 1",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0046",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "47",
+      "book_heading": "Metin ve Gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Mektuptaki hangi ayrıntılar gerçek yaşamla ilişkilendirilebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.47 / PDF s.48 — soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0047",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "47",
+      "book_heading": "Metin ve Gerçeklik",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Mektubun gerçek yaşama dayanması onun tamamen tarafsız bir belge olduğu anlamına gelir mi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.47 / PDF s.48 — soru 3",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0048",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "48",
+      "book_heading": "İletişim, zaman ve teknoloji",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Şişeye bırakılan bir ileti hangi amaçlarla gönderilebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.48 / PDF s.49 — soru 1",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0049",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "48",
+      "book_heading": "İletişim, zaman ve teknoloji",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Bir iletinin geç ulaşması onun işlevini ve değerini nasıl değiştirir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.48 / PDF s.49 — soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0050",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "48",
+      "book_heading": "İletişim, zaman ve teknoloji",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Mağara resmi ile emoji iletişim bakımından hangi yönlerden benzer düşünülebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.48 / PDF s.49 — soru 3",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0051",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "49-50",
+      "book_heading": "Farklı dönemlerden iletişim örnekleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Beş iletişim örneğinin yazılış amaçları nelerdir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.49-50 / PDF s.50-51 — soru 1",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0052",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "49-50",
+      "book_heading": "Farklı dönemlerden iletişim örnekleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Biçimleri farklı olsa da bu metinler neden haberleşme kapsamında düşünülebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.49-50 / PDF s.50-51 — soru 2",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0053",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "49-50",
+      "book_heading": "Farklı dönemlerden iletişim örnekleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Örneklerin gerçekliği yansıtma biçimleri nasıl farklılaşır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.49-50 / PDF s.50-51 — soru 3",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0054",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "49-50",
+      "book_heading": "Farklı dönemlerden iletişim örnekleri",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Sevdiğiniz birine yazarken hangi örneğe yakın bir anlatımı seçerdiniz? Neden?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.49-50 / PDF s.50-51 — soru 4",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0055",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "51",
+      "book_heading": "Ara metin: Dilekçe",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.51 / PDF s.52 — Dilekçe bilgi bölümü",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0006"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0056",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "52",
+      "book_heading": "Dilekçe yazma / ileri okuma",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.52 / PDF s.53 — dilekçe yazma görevi ve ileri okuma hazırlığı",
+      "source_status": "VERIFIED"
+    },
+    {
+      "source_record_id": "T01-S0057",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "53",
+      "book_heading": "Edebiyat Atölyesi-1 — Drama hazırlığı",
+      "task_type": "QUESTION",
+      "prompt": "Sözlü iletişimi engelleyen davranışlar nelerdir; bu davranışlar iletişimi nasıl etkiler ve doğru iletişim için ne yapılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.53 / PDF s.54 — drama hazırlık çalışması",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0007"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0058",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "54",
+      "book_heading": "Konuşmayı Yönetebilme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.54 / PDF s.55 — Konuşmayı Yönetebilme",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0008"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0059",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "55-56",
+      "book_heading": "İçerik Oluşturabilme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.55-56 / PDF s.56-57 — İçerik Oluşturabilme",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0009"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0060",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "56",
+      "book_heading": "İletişim hataları ve çözüm önerileri",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.56 / PDF s.57 — hata/çözüm çalışması",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0010"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0061",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "57",
+      "book_heading": "Kural Uygulayabilme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.57 / PDF s.58 — Kural Uygulayabilme / canlı canlandırma",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T01-S0062",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "58",
+      "book_heading": "Süreci Değerlendirebilme",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.58 / PDF s.59 — görünür öz değerlendirme formu",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0011"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0063",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "58",
+      "book_heading": "Süreci Değerlendirebilme — akran/öğretmen değerlendirmesi",
+      "task_type": "REFERENCE",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.58 / PDF s.59 — dış QR rubrik sınırı",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T01-S0064",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "59",
+      "book_heading": "Konuya Başlarken — Hatırlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Dilin etkili ve güzel kullanımı iletişimde neden önemlidir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.59 / PDF s.60 — soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0065",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "59",
+      "book_heading": "Konuya Başlarken — Hatırlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — “Yıldızlara çobandık, değirmenlere su, / Bozkırlara bulut gölgesiydik.” dizelerini yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.59 / PDF s.60 — soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0066",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "59",
+      "book_heading": "Konuya Başlarken — Hatırlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Sağlıklı bir iletişim kurmanın yolları nelerdir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.59 / PDF s.60 — soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0012"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0067",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "60-61",
+      "book_heading": "Dinleme / İzlemeyi Yönetebilme — Sıra Sizde",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Hitap örneklerinden mektupların muhatabı ve içeriği hakkında tahminde bulununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.60-61 / PDF s.61-62 — Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0068",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "60-61",
+      "book_heading": "Dinleme / İzlemeyi Yönetebilme — Sıra Sizde",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Hitap ifadeleri saygı, sevgi ve dostluk gibi değerleri nasıl yansıtır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.60-61 / PDF s.61-62 — Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0069",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "62-63",
+      "book_heading": "Düşünelim Paylaşalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Mektup ve e-postalarda kullanılan hitapların benzer ve farklı yönleri nelerdir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0070",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "62-63",
+      "book_heading": "Düşünelim Paylaşalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Mektupların elektronik ortamda yazılabilmesi iletişim açısından hangi yararları sağlar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0071",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "62-63",
+      "book_heading": "Düşünelim Paylaşalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — I. Metin'de sizi en çok etkileyen ifadeyi seçip gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0072",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "62-63",
+      "book_heading": "Düşünelim Paylaşalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — I. Metin'de hangi değerlere ulaşılabilir? Gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0073",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "63",
+      "book_heading": "Ders Dışı Etkinlik — İletişim ve E-posta",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.63 / PDF s.64 — Ders Dışı Etkinlik",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0074",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "book_heading": "Metni Dinleyelim / İzleyelim",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Çok modlu metni dinleme/izleme amacınızı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.64 / PDF s.65 — adım 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0075",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "book_heading": "Metni Dinleyelim / İzleyelim",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Başlık ve görselden hareketle içeriğe ve türe yönelik tahminde bulununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.64 / PDF s.65 — adım 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0076",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "book_heading": "Metni Dinleyelim / İzleyelim",
+      "task_type": "PROCESS",
+      "prompt": "Adım 3 — Etkili dinleme/izlemeyi engelleyen metin ve ortam kaynaklı iletişim engellerini azaltınız.",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.64 / PDF s.65 — adım 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0077",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "book_heading": "Metni Dinleyelim / İzleyelim",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Günlük dil kullanımını kendi yaşamınızla ilişkilendirecek bir dinleme/izleme stratejisi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.64 / PDF s.65 — adım 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0078",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "book_heading": "Metni Dinleyelim / İzleyelim",
+      "task_type": "PROCESS",
+      "prompt": "Adım 5 — QR'daki çok modlu metni not alarak dinleyiniz/izleyiniz.",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.64 / PDF s.65 — adım 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0013"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0079",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "book_heading": "Gözlem Formu",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.64 / PDF s.65 — Gözlem Formu",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0014"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0080",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "65",
+      "book_heading": "Anlam Oluşturabilme — Söz Varlığımız",
+      "task_type": "VOCABULARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.65 / PDF s.66 — Söz Varlığımız",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0081",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "66",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — İletişim araçlarının gelişimine ilişkin araştırmanızla dinlediğiniz/izlediğiniz metin arasında hangi çıkarımları kurabilirsiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0082",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "66",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — E-posta diğer iletişim araçlarına göre hangi yönlerden avantajlı olabilir? Gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0083",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "66",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — “İletişim, bir medenileşme hareketidir.” sözünü insanın iletişim ihtiyacı bağlamında yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0084",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "66",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Metnin konu ve temasını belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "rights_mode": "LIMITED_QUOTATION",
+      "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0085",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "66",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Metnin ana düşüncesini ve yardımcı düşüncelerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 5",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0086",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "67",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Dinleme/izleme öncesi tahminleriniz ile sonrasındaki tespitlerinizi karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0087",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "67",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Tahmin ve tespitlerinizden hareketle iletişime dair ulaştığınız sonuçları yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 7",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0088",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "67",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Metinden öznel ve nesnel ifade örnekleri bulunuz; bunların metne katkısını değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 8",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0089",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "67",
+      "book_heading": "Metni Anlayalım",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Dinlediğiniz/izlediğiniz metinden anladıklarınızı özetleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 9",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0090",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "68",
+      "book_heading": "Birlikte Çalışalım",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.68 / PDF s.69 — Birlikte Çalışalım",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0091",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "68-69",
+      "book_heading": "Sıra Sizde — Paydos / iletişim aksaklıkları",
+      "task_type": "QUESTION",
+      "prompt": "Adım 2 — Paydos parçasında dilin yanlış kullanımından kaynaklanan iletişim aksaklıklarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.68-69 / PDF s.69-70 — Sıra Sizde adım 1-2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0092",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "70",
+      "book_heading": "Sıra Sizde — iletişim engelleri kavram haritası",
+      "task_type": "TABLE",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.70 / PDF s.71 — Sıra Sizde adım 3",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0093",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "70",
+      "book_heading": "Sıra Sizde — iletişim engellerine çözüm",
+      "task_type": "QUESTION",
+      "prompt": "Adım 4 — Belirlediğiniz iletişim engelleri nasıl ortadan kaldırılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.70 / PDF s.71 — Sıra Sizde adım 4",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0094",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "71",
+      "book_heading": "Sıra Sizde — çözüm yollarını karşılaştırma",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.71 / PDF s.72 — Sıra Sizde adım 5-6",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0095",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "71",
+      "book_heading": "Sıra Sizde — iletişim kanalları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Yüz yüze iletişim, telefon ve e-postada nasıl bir dil kullanılmalıdır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.71 / PDF s.72 — ikinci Sıra Sizde soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0096",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "71",
+      "book_heading": "Sıra Sizde — iletişim kanalları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Çok modlu metni dilin kullanımı açısından eleştirel biçimde değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.71 / PDF s.72 — ikinci Sıra Sizde soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0015"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0097",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "72",
+      "book_heading": "Çözümleyebilme",
+      "task_type": "TABLE",
+      "prompt": "Adım 1 — Güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleyiniz.",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.72 / PDF s.73 — Çözümleyebilme adım 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0016"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0098",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "72",
+      "book_heading": "Çözümleyebilme",
+      "task_type": "QUESTION",
+      "prompt": "Adım 2 — Belirlediğiniz iletişim unsurları arasındaki ilişki ve etkileşimi gösteriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.72 / PDF s.73 — Çözümleyebilme adım 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0016"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0099",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "73",
+      "book_heading": "Süreci Değerlendirebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Metnin dilini değerlendiriniz; beğenilerinizi gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.73 / PDF s.74 — Süreci Değerlendirebilme soru 1",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0017"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0100",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "73",
+      "book_heading": "Süreci Değerlendirebilme",
+      "task_type": "TABLE",
+      "prompt": "Soru 2 — Olumsuz eleştirilerinizi ve bunlara yönelik çözüm önerilerinizi eşleştiriniz.",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.73 / PDF s.74 — Süreci Değerlendirebilme soru 2",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0017"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0101",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "73",
+      "book_heading": "Çıkış Kartı",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.73 / PDF s.74 — 3-2-1 Çıkış Kartı",
+      "source_status": "VERIFIED",
+      "answer_refs": [
+        "T01-A0017"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0102",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74",
+      "book_heading": "Yazmayı Yönetebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — İletişimde zamanlamanın önemini günlük hayattan örneklerle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.74 / PDF s.75 — soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0103",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74",
+      "book_heading": "Yazmayı Yönetebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Bir iletiyi zihinde cevaplayıp göndermeyi unutmaya benzer durumlar günümüzde yaşanabilir mi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.74 / PDF s.75 — soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0104",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74",
+      "book_heading": "Yazmayı Yönetebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Mektup veya dijital iletişimden hangisi gelecek kuşaklara daha kalıcı kültürel miras bırakabilir? Gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.74 / PDF s.75 — soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0105",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74",
+      "book_heading": "Yazmayı Yönetebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Telgraf, mektup ve konferansı etkileyicilik, kalıcılık ve yaygınlık bakımından değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.74 / PDF s.75 — soru 4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0106",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74",
+      "book_heading": "Yazmayı Yönetebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5a — Eski ve güncel yazım farklılıkları dilin zaman içindeki değişiminin hangi yönünü gösterir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.74 / PDF s.75 — soru 5a",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0107",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74",
+      "book_heading": "Yazmayı Yönetebilme",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5b — Dijital iletişimdeki kısaltmaların Türkçe üzerindeki etkisini araştırıp değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.74 / PDF s.75 — soru 5b",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0108",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "75",
+      "book_heading": "Performans Görevi — İletişim ve E-posta",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.75 / PDF s.76 — Performans Görevi",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0018"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0109",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "76",
+      "book_heading": "İçerik Oluşturabilme — 1-4. basamaklar",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.76 / PDF s.77 — basamaklar 1-4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0110",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "76",
+      "book_heading": "İçerik Oluşturabilme — 5-9. basamaklar",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.76 / PDF s.77 — basamaklar 5-9",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0111",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "77",
+      "book_heading": "İçerik Oluşturabilme — 10-13. basamaklar",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.77 / PDF s.78 — basamaklar 10-13",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0019"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0112",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "77",
+      "book_heading": "Kural Uygulayabilme",
+      "task_type": "PROCESS",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.77 / PDF s.78 — Kural Uygulayabilme",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0020"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0113",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "78",
+      "book_heading": "Süreci Değerlendirebilme — Değerlendirme",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.78 / PDF s.79 — değerlendirme 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0021"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0114",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "78",
+      "book_heading": "Süreci Değerlendirebilme — Öz Değerlendirme Formu",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.78 / PDF s.79 — Öz Değerlendirme Formu",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0021"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0115",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "78",
+      "book_heading": "Tema Sonu Değerlendirme — Çıkış Kartı",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.78 / PDF s.79 — Çıkış Kartı",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0021"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0116",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "78",
+      "book_heading": "Süreci Değerlendirebilme — Dereceli Puanlama Anahtarı",
+      "task_type": "ASSESSMENT",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.78 / PDF s.79 — Dereceli Puanlama Anahtarı QR",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0021"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0117",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "79",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 1 — Kasiyer ile müşteri diyaloğundaki yanlış anlamanın Karagöz'ü çağrıştırma nedenini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.79 / PDF s.80 — soru 1",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0022"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0118",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "80",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 2 — Diyalogdaki boşluklara Karagöz ve Hacivat adlarını doğru sırayla yerleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.80 / PDF s.81 — soru 2",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0023"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0119",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "80",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 3 — Muamma geleneğinin günümüzdeki karşılıklarına örnek verip benzerliği açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.80 / PDF s.81 — soru 3",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0024"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0120",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "81",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 4 — Çelebi'nin Hacivat'ın yanına geliş amacını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.81 / PDF s.82 — soru 4",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0025"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0121",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "81",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 5 — Çelebi ile Karagöz'ün rollerini değiştirerek kısa bir diyalog oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.81 / PDF s.82 — soru 5",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T01-S0122",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "81",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 6 — Karagöz'ü günümüzden bir mizah/tiyatro sanatçısıyla benzerlik, farklılık ve toplumsal etki bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.81 / PDF s.82 — soru 6",
+      "source_status": "REVIEW_REQUIRED"
+    },
+    {
+      "source_record_id": "T01-S0123",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "81",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 7 — Tanpınar'ın Antalyalı genç kıza mektup yazma amacını en kapsamlı biçimde açıklayan seçeneği belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.81 / PDF s.82 — soru 7",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0026"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0124",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "82",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 8 — Mektubun kapanışındaki sözlerin gençlerle hangi değerler üzerinden nasıl bir iletişim kurduğunu açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.82 / PDF s.83 — soru 8",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0027"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0125",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "82",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 9 — Mektup ve Huzur örneğinden hareketle yazarın okuyucuya yaklaşımını ve metinle kurduğu iletişimi karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.82 / PDF s.83 — soru 9",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0028"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0126",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "82",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 10 — Dijitalleşmenin iletişim üzerindeki etkileriyle ilgili metinden ulaşılamayan yargıyı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.82 / PDF s.83 — soru 10",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0029"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0127",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "83",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 11 — Toplumun iletişim alışkanlıklarını değiştiren unsurları metinden örneklerle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.83 / PDF s.84 — soru 11",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0030"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0128",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "83",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "task_type": "QUESTION",
+      "prompt": "Soru 12 — Sekiz cümleyi metne göre Evet, Hayır veya Bilgi yok biçiminde değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.83 / PDF s.84 — soru 12",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0031"
+      ]
+    },
+    {
+      "source_record_id": "T01-S0129",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "83",
+      "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları — Olvido çok modlu metni",
+      "task_type": "QUESTION",
+      "prompt": "Soru 13 — Olvido çok modlu metninde şiirin duygusunun aktarılmasında etkili olan unsurları açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "PAGE_REFERENCE",
+      "source_locator": "basılı s.83 / PDF s.84 — soru 13 / EBA QR UEX5262fe7a",
+      "source_status": "REVIEW_REQUIRED",
+      "answer_refs": [
+        "T01-A0032"
+      ]
+    }
+  ]
+}

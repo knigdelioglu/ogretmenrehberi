@@ -1,0 +1,2376 @@
+{
+  "schema_version": "1.0",
+  "course_id": "TDE_11",
+  "grade": 11,
+  "source_id": "textbook_tde11_local_pdf",
+  "book_identity": {
+    "title": "Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı",
+    "publisher": "Millî Eğitim Bakanlığı Yayınları",
+    "edition_year": 2026,
+    "meb_publication_no": "10727",
+    "series_no": "2477",
+    "isbn": "978-605-06002-7-8",
+    "ttkb_acceptance": {
+      "date": "2026-07-27",
+      "reference_no": "164960037"
+    },
+    "identity_status": "VERIFIED_LOCAL_OFFICIAL_PDF"
+  },
+  "map_status": "PAGE_LEVEL_MAPPED_FROM_LOCAL_OFFICIAL_PDF",
+  "verification_status": "VERIFIED_LOCAL_OFFICIAL_PDF",
+  "freeze_status": "FROZEN_TEXTBOOK_ALIGNMENT_2026_09_11",
+  "primary_source": {
+    "source_id": "textbook_tde11_local_pdf",
+    "file_path": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf",
+    "role": "PRIMARY_ANALYSIS_SNAPSHOT",
+    "edition_year": 2026,
+    "isbn": "978-605-06002-7-8",
+    "ttkb_acceptance": {
+      "date": "2026-07-27",
+      "reference_no": "164960037"
+    },
+    "page_count_pdf": 313,
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_to_pdf_offset": 1,
+    "verification_status": "VERIFIED_LOCAL_OFFICIAL_PDF"
+  },
+  "rights_policy": "No long copyrighted body text; only structure, locators and short paraphrases are stored.",
+  "scope_summary": {
+    "theme_count": 4,
+    "section_count": 24,
+    "activity_count": 84,
+    "printed_theme_ranges": {
+      "TEMA_01": "12-83",
+      "TEMA_02": "84-159",
+      "TEMA_03": "160-235",
+      "TEMA_04": "236-307"
+    }
+  },
+  "themes": [
+    {
+      "theme_id": "TEMA_01",
+      "theme_no": 1,
+      "title": "1. TEMA: BİR DİYECEĞİM VAR!",
+      "exact_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+      "printed_page_range": "12-83",
+      "pdf_page_range": "13-84",
+      "sections": [
+        {
+          "section_id": "T1_SEC_01_OKUMA_KARAGOZ",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+          "title": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+          "printed_page_range": "15-35",
+          "pdf_page_range": "16-36",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.15-35",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T1_ACT_01_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 16,
+              "printed_page_range": "16-24",
+              "pdf_page": 17,
+              "pdf_page_range": "17-25",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.16-24",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_02_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 25,
+              "printed_page_range": "25-31",
+              "pdf_page": 26,
+              "pdf_page_range": "26-32",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.25-31",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_03_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 32,
+              "printed_page_range": "32-34",
+              "pdf_page": 33,
+              "pdf_page_range": "33-35",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.32-34",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_04_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 35,
+              "printed_page_range": "35",
+              "pdf_page": 36,
+              "pdf_page_range": "36",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [
+                "FORM_T1_P035_OZ_DEGERLENDIRME_01",
+                "LINK_T1_P035_AKRAN_QR_02"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.35",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T1_SEC_02_OKUMA_MEKTUP",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-2 (Anlama): Okuma — Mektup (Âli’ye Mektuplar) / Dilekçe",
+          "title": "Metin Tahlili-2 (Anlama): Okuma — Mektup (Âli’ye Mektuplar) / Dilekçe",
+          "printed_page_range": "36-52",
+          "pdf_page_range": "37-53",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.36-52",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T1_ACT_05_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 37,
+              "printed_page_range": "37-38",
+              "pdf_page": 38,
+              "pdf_page_range": "38-39",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.37-38",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_06_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 39,
+              "printed_page_range": "39-43",
+              "pdf_page": 40,
+              "pdf_page_range": "40-44",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.39-43",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_07_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 44,
+              "printed_page_range": "44-45",
+              "pdf_page": 45,
+              "pdf_page_range": "45-46",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.44-45",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_08_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 46,
+              "printed_page_range": "46-52",
+              "pdf_page": 47,
+              "pdf_page_range": "47-53",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.46-52",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T1_SEC_03_KONUSMA_DRAMA",
+          "section_type": "konusma",
+          "skill_domain": "Konuşma",
+          "section_title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Sözlü İletişim Engellerini Konu Alan Bir Drama",
+          "title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Sözlü İletişim Engellerini Konu Alan Bir Drama",
+          "printed_page_range": "53-58",
+          "pdf_page_range": "54-59",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.53-58",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T1_ACT_09_KONUSMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Konuşmayı Yönetebilme",
+              "activity_title": "Konuşmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Konuşma",
+              "printed_page": 53,
+              "printed_page_range": "53-54",
+              "pdf_page": 54,
+              "pdf_page_range": "54-55",
+              "student_action": "Konuşmanın amacını, hedef kitlesini, yöntem/stratejisini, hazırlık ve uygulama koşullarını planlar.",
+              "expected_product_or_evidence": "Konuşma/canlandırma planı, görev ve hazırlık kayıtları.",
+              "related_outcomes": [
+                "TDE3.1"
+              ],
+              "related_forms": [
+                "FORM_T1_P054_KONTROL_LISTESI_03"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.53-54",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_10_KONUSMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Konuşma",
+              "printed_page": 55,
+              "printed_page_range": "55-56",
+              "pdf_page": 56,
+              "pdf_page_range": "56-57",
+              "student_action": "Konuşma için bilgi, örnek, görsel/işitsel destek ve söz varlığını seçerek içeriği yapılandırır.",
+              "expected_product_or_evidence": "Konuşma metni/senaryo/akış taslağı ve içerik düzenleme kayıtları.",
+              "related_outcomes": [
+                "TDE3.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.55-56",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_11_KONUSMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Konuşma",
+              "printed_page": 57,
+              "printed_page_range": "57",
+              "pdf_page": 58,
+              "pdf_page_range": "58",
+              "student_action": "Planladığı konuşmayı bağlama uygun dil, beden dili, ses, zaman ve mekân kullanımıyla gerçekleştirir.",
+              "expected_product_or_evidence": "Canlı sözlü performans/canlandırma ve performans kaydı.",
+              "related_outcomes": [
+                "TDE3.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.57",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_12_KONUSMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Konuşma",
+              "printed_page": 58,
+              "printed_page_range": "58",
+              "pdf_page": 59,
+              "pdf_page_range": "59",
+              "student_action": "Konuşma performansını öz/akran/öğretmen değerlendirmesi ve geri bildirimle geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve yansıtma/revizyon kaydı.",
+              "related_outcomes": [
+                "TDE3.4"
+              ],
+              "related_forms": [
+                "LINK_T1_KONUSMA_DPA",
+                "FORM_T1_P058_OZ_DEGERLENDIRME_05",
+                "LINK_T1_P058_AKRAN_QR_06"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.58",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T1_SEC_04_DINLEME_ILETISIM",
+          "section_type": "dinleme",
+          "skill_domain": "Dinleme/İzleme",
+          "section_title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+          "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+          "printed_page_range": "59-73",
+          "pdf_page_range": "60-74",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.59-73",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T1_ACT_13_DINLEME_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 60,
+              "printed_page_range": "60-64",
+              "pdf_page": 61,
+              "pdf_page_range": "61-65",
+              "student_action": "Dinleme/izleme amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve tahminde bulunur.",
+              "expected_product_or_evidence": "Amaç/strateji kaydı, tahmin ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE1.1"
+              ],
+              "related_forms": [
+                "FORM_T1_P064_GOZLEM_FORMU_07"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.60-64",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_14_DINLEME_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 65,
+              "printed_page_range": "65-71",
+              "pdf_page": 66,
+              "pdf_page_range": "66-72",
+              "student_action": "Dinlenen/izlenen metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar ve yapılandırılmış dinleme/izleme notları.",
+              "related_outcomes": [
+                "TDE1.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.65-71",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_15_DINLEME_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 72,
+              "printed_page_range": "72",
+              "pdf_page": 73,
+              "pdf_page_range": "73",
+              "student_action": "Çok modlu metni yapı, tür, dil-anlatım, kişi/olay/ileti ve bağlam yönlerinden çözümler.",
+              "expected_product_or_evidence": "Tahlil cevapları, karşılaştırma/şema kayıtları ve gerekçeli çıkarımlar.",
+              "related_outcomes": [
+                "TDE1.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.72",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_16_DINLEME_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 73,
+              "printed_page_range": "73",
+              "pdf_page": 74,
+              "pdf_page_range": "74",
+              "student_action": "Dinleme/izleme sürecini ve metne ilişkin değerlendirmelerini ölçütlere dayalı biçimde yansıtır.",
+              "expected_product_or_evidence": "Öz değerlendirme, gözlem/öğrenme günlüğü veya gerekçeli değerlendirme kaydı.",
+              "related_outcomes": [
+                "TDE1.4"
+              ],
+              "related_forms": [
+                "FORM_T1_P073_CIKIS_KARTI_08"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.73",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T1_SEC_05_YAZMA_EPOSTA",
+          "section_type": "yazma",
+          "skill_domain": "Yazma",
+          "section_title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — E-Posta Yazabilme",
+          "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — E-Posta Yazabilme",
+          "printed_page_range": "74-78",
+          "pdf_page_range": "75-79",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.74-78",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T1_ACT_17_YAZMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Yazmayı Yönetebilme",
+              "activity_title": "Yazmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Yazma",
+              "printed_page": 74,
+              "printed_page_range": "74-75",
+              "pdf_page": 75,
+              "pdf_page_range": "75-76",
+              "student_action": "Yazma amacını, hedef kitlesini, türünü, yöntem/stratejisini ve üretim koşullarını planlar.",
+              "expected_product_or_evidence": "Yazma planı, amaç/hedef kitle ve strateji kaydı.",
+              "related_outcomes": [
+                "TDE4.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.74-75",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_18_YAZMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Yazma",
+              "printed_page": 76,
+              "printed_page_range": "76",
+              "pdf_page": 77,
+              "pdf_page_range": "77",
+              "student_action": "Bilgi, örnek, görsel/işitsel öge ve söz varlığını seçerek yazılı/çok modlu içeriği tasarlar.",
+              "expected_product_or_evidence": "İçerik taslağı, plan/şema ve kaynak-seçim kayıtları.",
+              "related_outcomes": [
+                "TDE4.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.76",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_19_YAZMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Yazma",
+              "printed_page": 77,
+              "printed_page_range": "77",
+              "pdf_page": 78,
+              "pdf_page_range": "78",
+              "student_action": "Taslağını tür, bağlam, Türkçe kullanımı, yazım-noktalama ve bütünlük ilkelerine göre ürüne dönüştürür.",
+              "expected_product_or_evidence": "Düzenlenmiş yazılı veya çok modlu ürün.",
+              "related_outcomes": [
+                "TDE4.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.77",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T1_ACT_20_YAZMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Yazma",
+              "printed_page": 78,
+              "printed_page_range": "78",
+              "pdf_page": 79,
+              "pdf_page_range": "79",
+              "student_action": "Yazma sürecini ve ürünü öz/akran/öğretmen değerlendirmesiyle gözden geçirip geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve revize edilmiş nihai ürün.",
+              "related_outcomes": [
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "LINK_T1_YAZMA_DPA",
+                "FORM_T1_P078_OZ_DEGERLENDIRME_10",
+                "FORM_T1_P078_CIKIS_KARTI_11"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.78",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T1_SEC_06_TEMA_OLCME",
+          "section_type": "olcme",
+          "skill_domain": null,
+          "section_title": "1. Tema Ölçme ve Değerlendirme Soruları",
+          "title": "1. Tema Ölçme ve Değerlendirme Soruları",
+          "printed_page_range": "79-83",
+          "pdf_page_range": "80-84",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.79-83",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T1_ACT_21_TEMA_OLCME",
+              "type": "theme_assessment",
+              "activity_type": "theme_assessment",
+              "exact_title": "1. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title": "1. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": null,
+              "printed_page": 79,
+              "printed_page_range": "79-83",
+              "pdf_page": 80,
+              "pdf_page_range": "80-84",
+              "student_action": "Tema boyunca edinilen bilgi ve becerileri farklı soru ve görev türlerinde kullanır.",
+              "expected_product_or_evidence": "Tema ölçme-değerlendirme sorularına verilen cevaplar ve gerekçeli performans kanıtları.",
+              "related_outcomes": [
+                "TDE1.1",
+                "TDE1.2",
+                "TDE1.3",
+                "TDE1.4",
+                "TDE2.1",
+                "TDE2.2",
+                "TDE2.3",
+                "TDE2.4",
+                "TDE3.1",
+                "TDE3.2",
+                "TDE3.3",
+                "TDE3.4",
+                "TDE4.1",
+                "TDE4.2",
+                "TDE4.3",
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "FORM_T1_P079_TEMA_TEST_12"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.79-83",
+              "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "TEMA_02",
+      "theme_no": 2,
+      "title": "2. TEMA: KÜLTÜR YOLCULUĞU",
+      "exact_title": "2. TEMA: KÜLTÜR YOLCULUĞU",
+      "printed_page_range": "84-159",
+      "pdf_page_range": "85-160",
+      "sections": [
+        {
+          "section_id": "T2_SEC_01_OKUMA_HIKAYE_ANI",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-1 (Anlama): Okuma — Hikâye / Anı",
+          "title": "Metin Tahlili-1 (Anlama): Okuma — Hikâye / Anı",
+          "printed_page_range": "88-112",
+          "pdf_page_range": "89-113",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.88-112",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T2_ACT_01_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 89,
+              "printed_page_range": "89-94",
+              "pdf_page": 90,
+              "pdf_page_range": "90-95",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.89-94",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_02_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 95,
+              "printed_page_range": "95-104",
+              "pdf_page": 96,
+              "pdf_page_range": "96-105",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [
+                "FORM_T2_P097_KONTROL_LISTESI_01"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.95-104",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_03_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 105,
+              "printed_page_range": "105-111",
+              "pdf_page": 106,
+              "pdf_page_range": "106-112",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.105-111",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_04_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 112,
+              "printed_page_range": "112",
+              "pdf_page": 113,
+              "pdf_page_range": "113",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [
+                "FORM_T2_P112_CIKIS_KARTI_02"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.112",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T2_SEC_02_OKUMA_ORHUN_DLT",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-2 (Anlama): Okuma — Orhun Abideleri / Dîvânu Lugâti’t-Türk",
+          "title": "Metin Tahlili-2 (Anlama): Okuma — Orhun Abideleri / Dîvânu Lugâti’t-Türk",
+          "printed_page_range": "113-128",
+          "pdf_page_range": "114-129",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.113-128",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T2_ACT_05_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 114,
+              "printed_page_range": "114-115",
+              "pdf_page": 115,
+              "pdf_page_range": "115-116",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.114-115",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_06_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 116,
+              "printed_page_range": "116-120",
+              "pdf_page": 117,
+              "pdf_page_range": "117-121",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.116-120",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_07_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 121,
+              "printed_page_range": "121-127",
+              "pdf_page": 122,
+              "pdf_page_range": "122-128",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.121-127",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_08_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 128,
+              "printed_page_range": "128",
+              "pdf_page": 129,
+              "pdf_page_range": "129",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.128",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T2_SEC_03_KONUSMA_TURK_KULTURU",
+          "section_type": "konusma",
+          "skill_domain": "Konuşma",
+          "section_title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Türk Kültürünün Özelliklerini Yansıtan Bir Konuşma",
+          "title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Türk Kültürünün Özelliklerini Yansıtan Bir Konuşma",
+          "printed_page_range": "129-135",
+          "pdf_page_range": "130-136",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.129-135",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T2_ACT_09_KONUSMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Konuşmayı Yönetebilme",
+              "activity_title": "Konuşmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Konuşma",
+              "printed_page": 129,
+              "printed_page_range": "129-130",
+              "pdf_page": 130,
+              "pdf_page_range": "130-131",
+              "student_action": "Konuşmanın amacını, hedef kitlesini, yöntem/stratejisini, hazırlık ve uygulama koşullarını planlar.",
+              "expected_product_or_evidence": "Konuşma/canlandırma planı, görev ve hazırlık kayıtları.",
+              "related_outcomes": [
+                "TDE3.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.129-130",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_10_KONUSMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Konuşma",
+              "printed_page": 131,
+              "printed_page_range": "131-133",
+              "pdf_page": 132,
+              "pdf_page_range": "132-134",
+              "student_action": "Konuşma için bilgi, örnek, görsel/işitsel destek ve söz varlığını seçerek içeriği yapılandırır.",
+              "expected_product_or_evidence": "Konuşma metni/senaryo/akış taslağı ve içerik düzenleme kayıtları.",
+              "related_outcomes": [
+                "TDE3.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.131-133",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_11_KONUSMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Konuşma",
+              "printed_page": 134,
+              "printed_page_range": "134",
+              "pdf_page": 135,
+              "pdf_page_range": "135",
+              "student_action": "Planladığı konuşmayı bağlama uygun dil, beden dili, ses, zaman ve mekân kullanımıyla gerçekleştirir.",
+              "expected_product_or_evidence": "Canlı sözlü performans/canlandırma ve performans kaydı.",
+              "related_outcomes": [
+                "TDE3.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.134",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_12_KONUSMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Konuşma",
+              "printed_page": 135,
+              "printed_page_range": "135",
+              "pdf_page": 136,
+              "pdf_page_range": "136",
+              "student_action": "Konuşma performansını öz/akran/öğretmen değerlendirmesi ve geri bildirimle geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve yansıtma/revizyon kaydı.",
+              "related_outcomes": [
+                "TDE3.4"
+              ],
+              "related_forms": [
+                "LINK_T2_KONUSMA_DPA",
+                "FORM_T2_P135_OZ_DEGERLENDIRME_04",
+                "LINK_T2_P135_AKRAN_QR_05"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.135",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T2_SEC_04_DINLEME_ASIK_ATISMASI",
+          "section_type": "dinleme",
+          "skill_domain": "Dinleme/İzleme",
+          "section_title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Âşık Atışması",
+          "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Âşık Atışması",
+          "printed_page_range": "136-147",
+          "pdf_page_range": "137-148",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.136-147",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T2_ACT_13_DINLEME_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 137,
+              "printed_page_range": "137-139",
+              "pdf_page": 138,
+              "pdf_page_range": "138-140",
+              "student_action": "Dinleme/izleme amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve tahminde bulunur.",
+              "expected_product_or_evidence": "Amaç/strateji kaydı, tahmin ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE1.1"
+              ],
+              "related_forms": [
+                "FORM_T2_P139_KONTROL_LISTESI_06",
+                "FORM_T2_P139_GOZLEM_FORMU_07"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.137-139",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_14_DINLEME_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 140,
+              "printed_page_range": "140-143",
+              "pdf_page": 141,
+              "pdf_page_range": "141-144",
+              "student_action": "Dinlenen/izlenen metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar ve yapılandırılmış dinleme/izleme notları.",
+              "related_outcomes": [
+                "TDE1.2"
+              ],
+              "related_forms": [
+                "FORM_T2_P143_KONTROL_LISTESI_08"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.140-143",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_15_DINLEME_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 144,
+              "printed_page_range": "144-146",
+              "pdf_page": 145,
+              "pdf_page_range": "145-147",
+              "student_action": "Çok modlu metni yapı, tür, dil-anlatım, kişi/olay/ileti ve bağlam yönlerinden çözümler.",
+              "expected_product_or_evidence": "Tahlil cevapları, karşılaştırma/şema kayıtları ve gerekçeli çıkarımlar.",
+              "related_outcomes": [
+                "TDE1.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.144-146",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_16_DINLEME_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 147,
+              "printed_page_range": "147",
+              "pdf_page": 148,
+              "pdf_page_range": "148",
+              "student_action": "Dinleme/izleme sürecini ve metne ilişkin değerlendirmelerini ölçütlere dayalı biçimde yansıtır.",
+              "expected_product_or_evidence": "Öz değerlendirme, gözlem/öğrenme günlüğü veya gerekçeli değerlendirme kaydı.",
+              "related_outcomes": [
+                "TDE1.4"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.147",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T2_SEC_05_YAZMA_MUZE",
+          "section_type": "yazma",
+          "skill_domain": "Yazma",
+          "section_title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — Çevrim İçi Müze Gezisiyle İlgili İzlenimleri Yazabilme",
+          "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — Çevrim İçi Müze Gezisiyle İlgili İzlenimleri Yazabilme",
+          "printed_page_range": "148-154",
+          "pdf_page_range": "149-155",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.148-154",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T2_ACT_17_YAZMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Yazmayı Yönetebilme",
+              "activity_title": "Yazmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Yazma",
+              "printed_page": 148,
+              "printed_page_range": "148-149",
+              "pdf_page": 149,
+              "pdf_page_range": "149-150",
+              "student_action": "Yazma amacını, hedef kitlesini, türünü, yöntem/stratejisini ve üretim koşullarını planlar.",
+              "expected_product_or_evidence": "Yazma planı, amaç/hedef kitle ve strateji kaydı.",
+              "related_outcomes": [
+                "TDE4.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.148-149",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_18_YAZMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Yazma",
+              "printed_page": 150,
+              "printed_page_range": "150-151",
+              "pdf_page": 151,
+              "pdf_page_range": "151-152",
+              "student_action": "Bilgi, örnek, görsel/işitsel öge ve söz varlığını seçerek yazılı/çok modlu içeriği tasarlar.",
+              "expected_product_or_evidence": "İçerik taslağı, plan/şema ve kaynak-seçim kayıtları.",
+              "related_outcomes": [
+                "TDE4.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.150-151",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_19_YAZMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Yazma",
+              "printed_page": 152,
+              "printed_page_range": "152",
+              "pdf_page": 153,
+              "pdf_page_range": "153",
+              "student_action": "Taslağını tür, bağlam, Türkçe kullanımı, yazım-noktalama ve bütünlük ilkelerine göre ürüne dönüştürür.",
+              "expected_product_or_evidence": "Düzenlenmiş yazılı veya çok modlu ürün.",
+              "related_outcomes": [
+                "TDE4.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.152",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T2_ACT_20_YAZMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Yazma",
+              "printed_page": 153,
+              "printed_page_range": "153-154",
+              "pdf_page": 154,
+              "pdf_page_range": "154-155",
+              "student_action": "Yazma sürecini ve ürünü öz/akran/öğretmen değerlendirmesiyle gözden geçirip geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve revize edilmiş nihai ürün.",
+              "related_outcomes": [
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "LINK_T2_YAZMA_DPA",
+                "FORM_T2_P153_OZ_DEGERLENDIRME_10",
+                "LINK_T2_P153_AKRAN_QR_11",
+                "FORM_T2_P154_OGRENME_GUNLUGU_12"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.153-154",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T2_SEC_06_TEMA_OLCME",
+          "section_type": "olcme",
+          "skill_domain": null,
+          "section_title": "2. Tema Ölçme ve Değerlendirme Soruları",
+          "title": "2. Tema Ölçme ve Değerlendirme Soruları",
+          "printed_page_range": "155-159",
+          "pdf_page_range": "156-160",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.155-159",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T2_ACT_21_TEMA_OLCME",
+              "type": "theme_assessment",
+              "activity_type": "theme_assessment",
+              "exact_title": "2. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title": "2. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": null,
+              "printed_page": 155,
+              "printed_page_range": "155-159",
+              "pdf_page": 156,
+              "pdf_page_range": "156-160",
+              "student_action": "Tema boyunca edinilen bilgi ve becerileri farklı soru ve görev türlerinde kullanır.",
+              "expected_product_or_evidence": "Tema ölçme-değerlendirme sorularına verilen cevaplar ve gerekçeli performans kanıtları.",
+              "related_outcomes": [
+                "TDE1.1",
+                "TDE1.2",
+                "TDE1.3",
+                "TDE1.4",
+                "TDE2.1",
+                "TDE2.2",
+                "TDE2.3",
+                "TDE2.4",
+                "TDE3.1",
+                "TDE3.2",
+                "TDE3.3",
+                "TDE3.4",
+                "TDE4.1",
+                "TDE4.2",
+                "TDE4.3",
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "FORM_T2_P155_TEMA_TEST_13"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.155-159",
+              "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "TEMA_03",
+      "theme_no": 3,
+      "title": "3. TEMA: YAŞAMIN İZİNDE",
+      "exact_title": "3. TEMA: YAŞAMIN İZİNDE",
+      "printed_page_range": "160-235",
+      "pdf_page_range": "161-236",
+      "sections": [
+        {
+          "section_id": "T3_SEC_01_OKUMA_HUZUR",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-1 (Anlama): Okuma — Roman / Huzur",
+          "title": "Metin Tahlili-1 (Anlama): Okuma — Roman / Huzur",
+          "printed_page_range": "164-193",
+          "pdf_page_range": "165-194",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.164-193",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T3_ACT_01_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 165,
+              "printed_page_range": "165-170",
+              "pdf_page": 166,
+              "pdf_page_range": "166-171",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.165-170",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_02_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 171,
+              "printed_page_range": "171-185",
+              "pdf_page": 172,
+              "pdf_page_range": "172-186",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.171-185",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_03_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 186,
+              "printed_page_range": "186-191",
+              "pdf_page": 187,
+              "pdf_page_range": "187-192",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.186-191",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_04_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 192,
+              "printed_page_range": "192-193",
+              "pdf_page": 193,
+              "pdf_page_range": "193-194",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [
+                "FORM_T3_P193_CIKIS_KARTI_01"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.192-193",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T3_SEC_02_OKUMA_BIYOGRAFI",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-2 (Anlama): Okuma — Biyografi / Tezkire",
+          "title": "Metin Tahlili-2 (Anlama): Okuma — Biyografi / Tezkire",
+          "printed_page_range": "194-209",
+          "pdf_page_range": "195-210",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.194-209",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T3_ACT_05_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 195,
+              "printed_page_range": "195-197",
+              "pdf_page": 196,
+              "pdf_page_range": "196-198",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.195-197",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_06_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 198,
+              "printed_page_range": "198-204",
+              "pdf_page": 199,
+              "pdf_page_range": "199-205",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.198-204",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_07_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 205,
+              "printed_page_range": "205-208",
+              "pdf_page": 206,
+              "pdf_page_range": "206-209",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.205-208",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_08_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 209,
+              "printed_page_range": "209",
+              "pdf_page": 210,
+              "pdf_page_range": "210",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.209",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T3_SEC_03_KONUSMA_MULAKAT",
+          "section_type": "konusma",
+          "skill_domain": "Konuşma",
+          "section_title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Hayalî Mülakat",
+          "title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Hayalî Mülakat",
+          "printed_page_range": "210-214",
+          "pdf_page_range": "211-215",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.210-214",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T3_ACT_09_KONUSMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Konuşmayı Yönetebilme",
+              "activity_title": "Konuşmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Konuşma",
+              "printed_page": 210,
+              "printed_page_range": "210-211",
+              "pdf_page": 211,
+              "pdf_page_range": "211-212",
+              "student_action": "Konuşmanın amacını, hedef kitlesini, yöntem/stratejisini, hazırlık ve uygulama koşullarını planlar.",
+              "expected_product_or_evidence": "Konuşma/canlandırma planı, görev ve hazırlık kayıtları.",
+              "related_outcomes": [
+                "TDE3.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.210-211",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_10_KONUSMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Konuşma",
+              "printed_page": 212,
+              "printed_page_range": "212",
+              "pdf_page": 213,
+              "pdf_page_range": "213",
+              "student_action": "Konuşma için bilgi, örnek, görsel/işitsel destek ve söz varlığını seçerek içeriği yapılandırır.",
+              "expected_product_or_evidence": "Konuşma metni/senaryo/akış taslağı ve içerik düzenleme kayıtları.",
+              "related_outcomes": [
+                "TDE3.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.212",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_11_KONUSMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Konuşma",
+              "printed_page": 213,
+              "printed_page_range": "213",
+              "pdf_page": 214,
+              "pdf_page_range": "214",
+              "student_action": "Planladığı konuşmayı bağlama uygun dil, beden dili, ses, zaman ve mekân kullanımıyla gerçekleştirir.",
+              "expected_product_or_evidence": "Canlı sözlü performans/canlandırma ve performans kaydı.",
+              "related_outcomes": [
+                "TDE3.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.213",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_12_KONUSMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Konuşma",
+              "printed_page": 214,
+              "printed_page_range": "214",
+              "pdf_page": 215,
+              "pdf_page_range": "215",
+              "student_action": "Konuşma performansını öz/akran/öğretmen değerlendirmesi ve geri bildirimle geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve yansıtma/revizyon kaydı.",
+              "related_outcomes": [
+                "TDE3.4"
+              ],
+              "related_forms": [
+                "LINK_T3_KONUSMA_DPA",
+                "FORM_T3_P214_OZ_DEGERLENDIRME_03",
+                "LINK_T3_P214_AKRAN_QR_04"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.214",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T3_SEC_04_DINLEME_RADYO_TIYATROSU",
+          "section_type": "dinleme",
+          "skill_domain": "Dinleme/İzleme",
+          "section_title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Radyo Tiyatrosu / Direnişin Ustaları",
+          "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Radyo Tiyatrosu / Direnişin Ustaları",
+          "printed_page_range": "215-224",
+          "pdf_page_range": "216-225",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.215-224",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T3_ACT_13_DINLEME_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 216,
+              "printed_page_range": "216",
+              "pdf_page": 217,
+              "pdf_page_range": "217",
+              "student_action": "Dinleme/izleme amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve tahminde bulunur.",
+              "expected_product_or_evidence": "Amaç/strateji kaydı, tahmin ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE1.1"
+              ],
+              "related_forms": [
+                "FORM_T3_P216_GOZLEM_FORMU_05"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.216",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_14_DINLEME_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 217,
+              "printed_page_range": "217-220",
+              "pdf_page": 218,
+              "pdf_page_range": "218-221",
+              "student_action": "Dinlenen/izlenen metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar ve yapılandırılmış dinleme/izleme notları.",
+              "related_outcomes": [
+                "TDE1.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.217-220",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_15_DINLEME_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 221,
+              "printed_page_range": "221-222",
+              "pdf_page": 222,
+              "pdf_page_range": "222-223",
+              "student_action": "Çok modlu metni yapı, tür, dil-anlatım, kişi/olay/ileti ve bağlam yönlerinden çözümler.",
+              "expected_product_or_evidence": "Tahlil cevapları, karşılaştırma/şema kayıtları ve gerekçeli çıkarımlar.",
+              "related_outcomes": [
+                "TDE1.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.221-222",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_16_DINLEME_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 223,
+              "printed_page_range": "223-224",
+              "pdf_page": 224,
+              "pdf_page_range": "224-225",
+              "student_action": "Dinleme/izleme sürecini ve metne ilişkin değerlendirmelerini ölçütlere dayalı biçimde yansıtır.",
+              "expected_product_or_evidence": "Öz değerlendirme, gözlem/öğrenme günlüğü veya gerekçeli değerlendirme kaydı.",
+              "related_outcomes": [
+                "TDE1.4"
+              ],
+              "related_forms": [
+                "FORM_T3_P224_OGRENME_GUNLUGU_06"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.223-224",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T3_SEC_05_YAZMA_DONUSTURME",
+          "section_type": "yazma",
+          "skill_domain": "Yazma",
+          "section_title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — Diyaloğu Başka Bir Türe Dönüştürme",
+          "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — Diyaloğu Başka Bir Türe Dönüştürme",
+          "printed_page_range": "225-229",
+          "pdf_page_range": "226-230",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.225-229",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T3_ACT_17_YAZMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Yazmayı Yönetebilme",
+              "activity_title": "Yazmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Yazma",
+              "printed_page": 225,
+              "printed_page_range": "225",
+              "pdf_page": 226,
+              "pdf_page_range": "226",
+              "student_action": "Yazma amacını, hedef kitlesini, türünü, yöntem/stratejisini ve üretim koşullarını planlar.",
+              "expected_product_or_evidence": "Yazma planı, amaç/hedef kitle ve strateji kaydı.",
+              "related_outcomes": [
+                "TDE4.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.225",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_18_YAZMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Yazma",
+              "printed_page": 226,
+              "printed_page_range": "226",
+              "pdf_page": 227,
+              "pdf_page_range": "227",
+              "student_action": "Bilgi, örnek, görsel/işitsel öge ve söz varlığını seçerek yazılı/çok modlu içeriği tasarlar.",
+              "expected_product_or_evidence": "İçerik taslağı, plan/şema ve kaynak-seçim kayıtları.",
+              "related_outcomes": [
+                "TDE4.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.226",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_19_YAZMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Yazma",
+              "printed_page": 227,
+              "printed_page_range": "227",
+              "pdf_page": 228,
+              "pdf_page_range": "228",
+              "student_action": "Taslağını tür, bağlam, Türkçe kullanımı, yazım-noktalama ve bütünlük ilkelerine göre ürüne dönüştürür.",
+              "expected_product_or_evidence": "Düzenlenmiş yazılı veya çok modlu ürün.",
+              "related_outcomes": [
+                "TDE4.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.227",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T3_ACT_20_YAZMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Yazma",
+              "printed_page": 228,
+              "printed_page_range": "228-229",
+              "pdf_page": 229,
+              "pdf_page_range": "229-230",
+              "student_action": "Yazma sürecini ve ürünü öz/akran/öğretmen değerlendirmesiyle gözden geçirip geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve revize edilmiş nihai ürün.",
+              "related_outcomes": [
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "LINK_T3_YAZMA_DPA",
+                "FORM_T3_P228_OZ_DEGERLENDIRME_08",
+                "FORM_T3_P229_OZ_DEGERLENDIRME_09",
+                "FORM_T3_P229_CIKIS_KARTI_10"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.228-229",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T3_SEC_06_TEMA_OLCME",
+          "section_type": "olcme",
+          "skill_domain": null,
+          "section_title": "3. Tema Ölçme ve Değerlendirme Soruları",
+          "title": "3. Tema Ölçme ve Değerlendirme Soruları",
+          "printed_page_range": "230-235",
+          "pdf_page_range": "231-236",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.230-235",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T3_ACT_21_TEMA_OLCME",
+              "type": "theme_assessment",
+              "activity_type": "theme_assessment",
+              "exact_title": "3. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title": "3. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": null,
+              "printed_page": 230,
+              "printed_page_range": "230-235",
+              "pdf_page": 231,
+              "pdf_page_range": "231-236",
+              "student_action": "Tema boyunca edinilen bilgi ve becerileri farklı soru ve görev türlerinde kullanır.",
+              "expected_product_or_evidence": "Tema ölçme-değerlendirme sorularına verilen cevaplar ve gerekçeli performans kanıtları.",
+              "related_outcomes": [
+                "TDE1.1",
+                "TDE1.2",
+                "TDE1.3",
+                "TDE1.4",
+                "TDE2.1",
+                "TDE2.2",
+                "TDE2.3",
+                "TDE2.4",
+                "TDE3.1",
+                "TDE3.2",
+                "TDE3.3",
+                "TDE3.4",
+                "TDE4.1",
+                "TDE4.2",
+                "TDE4.3",
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "FORM_T3_P230_TEMA_TEST_11"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.230-235",
+              "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme_id": "TEMA_04",
+      "theme_no": 4,
+      "title": "4. TEMA: HAYATIN AYNASI",
+      "exact_title": "4. TEMA: HAYATIN AYNASI",
+      "printed_page_range": "236-307",
+      "pdf_page_range": "237-308",
+      "sections": [
+        {
+          "section_id": "T4_SEC_01_OKUMA_TIYATRO",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-1 (Anlama): Okuma — Tiyatro / Ben, Mimar Sinan",
+          "title": "Metin Tahlili-1 (Anlama): Okuma — Tiyatro / Ben, Mimar Sinan",
+          "printed_page_range": "240-262",
+          "pdf_page_range": "241-263",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.240-262",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T4_ACT_01_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 241,
+              "printed_page_range": "241-246",
+              "pdf_page": 242,
+              "pdf_page_range": "242-247",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.241-246",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_02_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 247,
+              "printed_page_range": "247-255",
+              "pdf_page": 248,
+              "pdf_page_range": "248-256",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.247-255",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_03_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 256,
+              "printed_page_range": "256-261",
+              "pdf_page": 257,
+              "pdf_page_range": "257-262",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.256-261",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_04_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 262,
+              "printed_page_range": "262",
+              "pdf_page": 263,
+              "pdf_page_range": "263",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.262",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T4_SEC_02_OKUMA_KUCU_REK",
+          "section_type": "okuma",
+          "skill_domain": "Okuma",
+          "section_title": "Metin Tahlili-2 (Anlama): Okuma — Küçürek Hikâye / Merdiven",
+          "title": "Metin Tahlili-2 (Anlama): Okuma — Küçürek Hikâye / Merdiven",
+          "printed_page_range": "263-279",
+          "pdf_page_range": "264-280",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.263-279",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T4_ACT_05_OKUMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Okumayı Yönetebilme",
+              "activity_title": "Okumayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Okuma",
+              "printed_page": 264,
+              "printed_page_range": "264-265",
+              "pdf_page": 265,
+              "pdf_page_range": "265-266",
+              "student_action": "Okuma amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve metne ilişkin tahmin geliştirir.",
+              "expected_product_or_evidence": "Okuma öncesi cevaplar, tahminler ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE2.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.264-265",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_06_OKUMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Okuma",
+              "printed_page": 266,
+              "printed_page_range": "266-273",
+              "pdf_page": 267,
+              "pdf_page_range": "267-274",
+              "student_action": "Metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar, işaretlemeler ve anlamlandırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.266-273",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_07_OKUMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Okuma",
+              "printed_page": 274,
+              "printed_page_range": "274-278",
+              "pdf_page": 275,
+              "pdf_page_range": "275-279",
+              "student_action": "Metni yapı, tür, dil-anlatım ve dönem/bağlam özellikleri bakımından çözümler ve karşılaştırır.",
+              "expected_product_or_evidence": "Tahlil cevapları, tablo/şema ve gerekçeli karşılaştırma kayıtları.",
+              "related_outcomes": [
+                "TDE2.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.274-278",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_08_OKUMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Okuma",
+              "printed_page": 279,
+              "printed_page_range": "279",
+              "pdf_page": 280,
+              "pdf_page_range": "280",
+              "student_action": "Okuma sürecini ve metne ilişkin yargılarını belirlediği ölçütlerle değerlendirir.",
+              "expected_product_or_evidence": "Öz değerlendirme, çıkış kartı, öğrenme günlüğü veya gerekçeli değerlendirme.",
+              "related_outcomes": [
+                "TDE2.4"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.279",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T4_SEC_03_KONUSMA_CANLANDIRMA",
+          "section_type": "konusma",
+          "skill_domain": "Konuşma",
+          "section_title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Tiyatro Metnini Yeniden Kurgulayarak Canlandırma",
+          "title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — Tiyatro Metnini Yeniden Kurgulayarak Canlandırma",
+          "printed_page_range": "280-283",
+          "pdf_page_range": "281-284",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.280-283",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T4_ACT_09_KONUSMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Konuşmayı Yönetebilme",
+              "activity_title": "Konuşmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Konuşma",
+              "printed_page": 280,
+              "printed_page_range": "280-281",
+              "pdf_page": 281,
+              "pdf_page_range": "281-282",
+              "student_action": "Konuşmanın amacını, hedef kitlesini, yöntem/stratejisini, hazırlık ve uygulama koşullarını planlar.",
+              "expected_product_or_evidence": "Konuşma/canlandırma planı, görev ve hazırlık kayıtları.",
+              "related_outcomes": [
+                "TDE3.1"
+              ],
+              "related_forms": [
+                "FORM_T4_P281_KONTROL_LISTESI_01"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.280-281",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_10_KONUSMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Konuşma",
+              "printed_page": 282,
+              "printed_page_range": "282",
+              "pdf_page": 283,
+              "pdf_page_range": "283",
+              "student_action": "Konuşma için bilgi, örnek, görsel/işitsel destek ve söz varlığını seçerek içeriği yapılandırır.",
+              "expected_product_or_evidence": "Konuşma metni/senaryo/akış taslağı ve içerik düzenleme kayıtları.",
+              "related_outcomes": [
+                "TDE3.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.282",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_11_KONUSMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Konuşma",
+              "printed_page": 282,
+              "printed_page_range": "282",
+              "pdf_page": 283,
+              "pdf_page_range": "283",
+              "student_action": "Planladığı konuşmayı bağlama uygun dil, beden dili, ses, zaman ve mekân kullanımıyla gerçekleştirir.",
+              "expected_product_or_evidence": "Canlı sözlü performans/canlandırma ve performans kaydı.",
+              "related_outcomes": [
+                "TDE3.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.282",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_12_KONUSMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Konuşma",
+              "printed_page": 283,
+              "printed_page_range": "283",
+              "pdf_page": 284,
+              "pdf_page_range": "284",
+              "student_action": "Konuşma performansını öz/akran/öğretmen değerlendirmesi ve geri bildirimle geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve yansıtma/revizyon kaydı.",
+              "related_outcomes": [
+                "TDE3.4"
+              ],
+              "related_forms": [
+                "LINK_T4_KONUSMA_DPA"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.283",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T4_SEC_04_DINLEME_BELGESEL",
+          "section_type": "dinleme",
+          "skill_domain": "Dinleme/İzleme",
+          "section_title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık",
+          "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık",
+          "printed_page_range": "284-297",
+          "pdf_page_range": "285-298",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.284-297",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T4_ACT_13_DINLEME_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title": "Dinleme / İzlemeyi Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 285,
+              "printed_page_range": "285-286",
+              "pdf_page": 286,
+              "pdf_page_range": "286-287",
+              "student_action": "Dinleme/izleme amacını ve stratejisini belirler, ön bilgilerini etkinleştirir ve tahminde bulunur.",
+              "expected_product_or_evidence": "Amaç/strateji kaydı, tahmin ve hazırlık notları.",
+              "related_outcomes": [
+                "TDE1.1"
+              ],
+              "related_forms": [
+                "FORM_T4_P286_KONTROL_LISTESI_03"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.285-286",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_14_DINLEME_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Anlam Oluşturabilme",
+              "activity_title": "Anlam Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 287,
+              "printed_page_range": "287-293",
+              "pdf_page": 288,
+              "pdf_page_range": "288-294",
+              "student_action": "Dinlenen/izlenen metnin konu, tema, ileti, söz varlığı ve bağlamından anlam oluşturur.",
+              "expected_product_or_evidence": "Anlama sorularına cevaplar ve yapılandırılmış dinleme/izleme notları.",
+              "related_outcomes": [
+                "TDE1.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.287-293",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_15_DINLEME_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Çözümleyebilme",
+              "activity_title": "Çözümleyebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 294,
+              "printed_page_range": "294-296",
+              "pdf_page": 295,
+              "pdf_page_range": "295-297",
+              "student_action": "Çok modlu metni yapı, tür, dil-anlatım, kişi/olay/ileti ve bağlam yönlerinden çözümler.",
+              "expected_product_or_evidence": "Tahlil cevapları, karşılaştırma/şema kayıtları ve gerekçeli çıkarımlar.",
+              "related_outcomes": [
+                "TDE1.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.294-296",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_16_DINLEME_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Dinleme/İzleme",
+              "printed_page": 297,
+              "printed_page_range": "297",
+              "pdf_page": 298,
+              "pdf_page_range": "298",
+              "student_action": "Dinleme/izleme sürecini ve metne ilişkin değerlendirmelerini ölçütlere dayalı biçimde yansıtır.",
+              "expected_product_or_evidence": "Öz değerlendirme, gözlem/öğrenme günlüğü veya gerekçeli değerlendirme kaydı.",
+              "related_outcomes": [
+                "TDE1.4"
+              ],
+              "related_forms": [
+                "FORM_T4_P297_OGRENME_GUNLUGU_04"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.297",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T4_SEC_05_YAZMA_AFIS",
+          "section_type": "yazma",
+          "skill_domain": "Yazma",
+          "section_title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — Özgün Afiş Hazırlama",
+          "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma — Özgün Afiş Hazırlama",
+          "printed_page_range": "298-302",
+          "pdf_page_range": "299-303",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.298-302",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T4_ACT_17_YAZMA_YONETIM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Yazmayı Yönetebilme",
+              "activity_title": "Yazmayı Yönetebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 1,
+              "skill_domain": "Yazma",
+              "printed_page": 298,
+              "printed_page_range": "298-299",
+              "pdf_page": 299,
+              "pdf_page_range": "299-300",
+              "student_action": "Yazma amacını, hedef kitlesini, türünü, yöntem/stratejisini ve üretim koşullarını planlar.",
+              "expected_product_or_evidence": "Yazma planı, amaç/hedef kitle ve strateji kaydı.",
+              "related_outcomes": [
+                "TDE4.1"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.298-299",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_18_YAZMA_ICERIK_ANLAM",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "İçerik Oluşturabilme",
+              "activity_title": "İçerik Oluşturabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 2,
+              "skill_domain": "Yazma",
+              "printed_page": 300,
+              "printed_page_range": "300",
+              "pdf_page": 301,
+              "pdf_page_range": "301",
+              "student_action": "Bilgi, örnek, görsel/işitsel öge ve söz varlığını seçerek yazılı/çok modlu içeriği tasarlar.",
+              "expected_product_or_evidence": "İçerik taslağı, plan/şema ve kaynak-seçim kayıtları.",
+              "related_outcomes": [
+                "TDE4.2"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.300",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_19_YAZMA_UYGULAMA_COZUMLEME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Kural Uygulayabilme",
+              "activity_title": "Kural Uygulayabilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 3,
+              "skill_domain": "Yazma",
+              "printed_page": 301,
+              "printed_page_range": "301",
+              "pdf_page": 302,
+              "pdf_page_range": "302",
+              "student_action": "Taslağını tür, bağlam, Türkçe kullanımı, yazım-noktalama ve bütünlük ilkelerine göre ürüne dönüştürür.",
+              "expected_product_or_evidence": "Düzenlenmiş yazılı veya çok modlu ürün.",
+              "related_outcomes": [
+                "TDE4.3"
+              ],
+              "related_forms": [],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.301",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            },
+            {
+              "activity_id": "T4_ACT_20_YAZMA_DEGERLENDIRME",
+              "type": "curriculum_stage_activity",
+              "activity_type": "curriculum_stage_activity",
+              "exact_title": "Süreci Değerlendirebilme",
+              "activity_title": "Süreci Değerlendirebilme",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": 4,
+              "skill_domain": "Yazma",
+              "printed_page": 302,
+              "printed_page_range": "302",
+              "pdf_page": 303,
+              "pdf_page_range": "303",
+              "student_action": "Yazma sürecini ve ürünü öz/akran/öğretmen değerlendirmesiyle gözden geçirip geliştirir.",
+              "expected_product_or_evidence": "Öz/akran değerlendirme, öğretmen puanlama kanıtı ve revize edilmiş nihai ürün.",
+              "related_outcomes": [
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "LINK_T4_YAZMA_DPA",
+                "FORM_T4_P302_OGRENME_GUNLUGU_06"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.302",
+              "verification_status": "LOCAL_OFFICIAL_PDF_HEADING_AND_RANGE_VERIFIED"
+            }
+          ]
+        },
+        {
+          "section_id": "T4_SEC_06_TEMA_OLCME",
+          "section_type": "olcme",
+          "skill_domain": null,
+          "section_title": "4. Tema Ölçme ve Değerlendirme Soruları",
+          "title": "4. Tema Ölçme ve Değerlendirme Soruları",
+          "printed_page_range": "303-307",
+          "pdf_page_range": "304-308",
+          "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.303-307",
+          "verification_status": "LOCAL_OFFICIAL_PDF_TOC_AND_PAGE_STRUCTURE_VERIFIED",
+          "activities": [
+            {
+              "activity_id": "T4_ACT_21_TEMA_OLCME",
+              "type": "theme_assessment",
+              "activity_type": "theme_assessment",
+              "exact_title": "4. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title": "4. Tema Ölçme ve Değerlendirme Soruları",
+              "activity_title_status": "EXACT_PRINTED_HEADING",
+              "stage_code": null,
+              "printed_page": 303,
+              "printed_page_range": "303-307",
+              "pdf_page": 304,
+              "pdf_page_range": "304-308",
+              "student_action": "Tema boyunca edinilen bilgi ve becerileri farklı soru ve görev türlerinde kullanır.",
+              "expected_product_or_evidence": "Tema ölçme-değerlendirme sorularına verilen cevaplar ve gerekçeli performans kanıtları.",
+              "related_outcomes": [
+                "TDE1.1",
+                "TDE1.2",
+                "TDE1.3",
+                "TDE1.4",
+                "TDE2.1",
+                "TDE2.2",
+                "TDE2.3",
+                "TDE2.4",
+                "TDE3.1",
+                "TDE3.2",
+                "TDE3.3",
+                "TDE3.4",
+                "TDE4.1",
+                "TDE4.2",
+                "TDE4.3",
+                "TDE4.4"
+              ],
+              "related_forms": [
+                "FORM_T4_P303_TEMA_TEST_07"
+              ],
+              "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.303-307",
+              "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

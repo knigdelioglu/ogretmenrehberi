@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "OGRETMEN_REHBERI_TYMM_IMPORT_PROVENANCE",
+  "imported_at": "2026-09-18",
+  "source_repository": "knigdelioglu/tymm",
+  "source_commit": "65e2128c75adf03f0f59fca2cbc5888efa714e2c",
+  "target_repository": "knigdelioglu/ogretmenrehberi",
+  "scope": [
+    "phase-0",
+    "phase-1"
+  ],
+  "policy": {
+    "pdf_binaries_copied": false,
+    "source_snapshots_are_authoritative_inputs_not_guide_prose": true,
+    "teacher_guide_legacy_models_imported": false
+  },
+  "files": [
+    {
+      "target": "sources/manifest.json",
+      "source": "courses/TDE_11/source_manifest.json",
+      "source_blob_sha": "34fce3e1b0ff0c2919421552c641c9eee1f5dec2",
+      "mode": "NORMALIZED_FOR_PUBLIC_REPO"
+    },
+    {
+      "target": "data/grade-11/source/textbook-map.json",
+      "source": "courses/TDE_11/textbook_map.json",
+      "source_blob_sha": "f03c7f2de0a1da402ccda08d4ec1e41488aee177",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/textbook-question-inventory.json",
+      "source": "courses/TDE_11/textbook_question_inventory.json",
+      "source_blob_sha": "6066b44fd3a97f5fbd209d9c411836890b100254",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/textbook-forms-index.json",
+      "source": "courses/TDE_11/textbook_forms_index.json",
+      "source_blob_sha": "36db242cf0bb485080b1ae1c3c1fa247c184d4fe",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/curriculum-map.json",
+      "source": "courses/TDE_11/curriculum_map.json",
+      "source_blob_sha": "d33c03326cd81bd362c9f8ca39dbcd56e1007e42",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/curriculum-normative-text.json",
+      "source": "courses/TDE_11/curriculum_normative_text.json",
+      "source_blob_sha": "9f37234c0b20cb11a4eb4e99d916dc2f449accc9",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/curriculum-process-component-resolution.json",
+      "source": "courses/TDE_11/curriculum_process_component_resolution.json",
+      "source_blob_sha": "b0333a8bd65adf6b8e28d9d3440774defb03730d",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/alignment/theme-1.json",
+      "source": "courses/TDE_11/themes/tema_01/alignment.json",
+      "source_blob_sha": "18c48ea1c022092de763f3a4951d3e182e2aaea0",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/alignment/theme-2.json",
+      "source": "courses/TDE_11/themes/tema_02/alignment.json",
+      "source_blob_sha": "43b66e30dc74603730e0136b1c7aa80de5591085",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/alignment/theme-3.json",
+      "source": "courses/TDE_11/themes/tema_03/alignment.json",
+      "source_blob_sha": "ae8339e3c628cc704ee12588037398b4de5ed2a1",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/alignment/theme-4.json",
+      "source": "courses/TDE_11/themes/tema_04/alignment.json",
+      "source_blob_sha": "55fec1dbe007f3553ad9b0dc7d728787c51b58d2",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/manifest.json",
+      "source": "courses/TDE_11/teacher_book/source/manifest.json",
+      "source_blob_sha": "9096e514ee232a81e02b0ccf771ca2af9b36907c",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-1/source-index.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_01/source_index.json",
+      "source_blob_sha": "a465e0d05b4038b28fe74bf30f0cdd876514ddee",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-1/answer-bank.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_01/answer_bank.json",
+      "source_blob_sha": "2cdf61a6abf31b5fa602afecb949a27e5b74b204",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-2/source-index.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_02/source_index.json",
+      "source_blob_sha": "e232720332229a769275fa6ac73a0e9fde9f142a",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-2/answer-bank.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_02/answer_bank.json",
+      "source_blob_sha": "edf4ca157c6fa6ab3e2e35430b31cf933182dd5d",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-3/source-index.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_03/source_index.json",
+      "source_blob_sha": "5f8724334e815758748b6ddb7e8b2e4db6092b1b",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-3/answer-bank.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_03/answer_bank.json",
+      "source_blob_sha": "61a37a773c816088e55390324fdb2b74e6f1b78e",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-4/source-index.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_04/source_index.json",
+      "source_blob_sha": "db2a7700ab58b42e62fc92a423712b77607e1491",
+      "mode": "EXACT_COPY"
+    },
+    {
+      "target": "data/grade-11/source/teacher-book/theme-4/answer-bank.json",
+      "source": "courses/TDE_11/teacher_book/source/TEMA_04/answer_bank.json",
+      "source_blob_sha": "4c9fca467302d3f178aba26e800a7f6284a440f0",
+      "mode": "EXACT_COPY"
+    }
+  ]
+}

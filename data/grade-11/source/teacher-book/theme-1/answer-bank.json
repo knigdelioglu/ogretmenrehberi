@@ -1,0 +1,860 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "TYMM_TEACHER_BOOK_ANSWER_BANK",
+  "course_id": "TDE_11",
+  "theme_id": "TEMA_01",
+  "authority": "SOURCE_FILTERED_CANONICAL_ANSWERS",
+  "policy": "Retains source-bound answer content only. Retired guide prose, pedagogical criteria and authoring templates are excluded; this bank is for factual answer support, not style imitation.",
+  "counts": {
+    "answers": 32,
+    "excluded_legacy_or_pedagogical": 29,
+    "excluded_without_answer": 6
+  },
+  "answers": [
+    {
+      "answer_id": "T01-A0001",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "14",
+      "label": "Millî kimlik ve kültürel aktarım çerçevesi",
+      "item_type": "REFERENCE",
+      "expected_answer": "Edebiyat; toplumun dilini, ortak değerlerini, tarihî ve kültürel birikimini eserler aracılığıyla yaşatarak millî kimliğin oluşmasına ve kültürel hafızanın sonraki kuşaklara aktarılmasına katkıda bulunur.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.14 / PDF s.15 — etkinliğin üst yönergesi"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0002",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "16",
+      "label": "Altı kişilik grup ve üç bilgi/düşünce kartı",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "organizasyon": "Öğretmen rehberliğinde altı kişilik grup oluşturulur ve bir sözcü seçilir.",
+        "kart_ornekleri": [
+          "Geleneksel Türk tiyatrosunda doğaçlama önemli bir yere sahiptir.",
+          "Karagöz ve orta oyununda farklı toplum kesimlerini temsil eden tipler vardır.",
+          "Taklit, mizah ve günlük konuşma dili önemli özelliklerdendir."
+        ],
+        "paylasim": "Sözcü kartları okur; grup ortak ve farklı görüşleri tartışır."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.16 / PDF s.17"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0003",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "17",
+      "label": "Karagöz — düşün-eşleş-paylaş",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "odaklar": [
+          "dil ve anlatım özellikleri",
+          "yardımcı tiplerin işlevleri",
+          "beden/tasvir hareketlerinin anlatıma katkısı"
+        ],
+        "ornek_ortak_sonuc": "Karagöz oyununda söz oyunları, yanlış anlamalar, yöresel söyleyişler ve taklit mizahı kurar; yardımcı tipler toplumsal çeşitliliği gösterir; hareketler sözlü anlatımı destekler."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.17 / PDF s.18"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0004",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "18",
+      "label": "Yazıcı — tahmin, rol paylaşımı ve okuma stratejisi",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "tahmin": "Başlık ve görsellerden Karagöz'ün yazıcılık işi çevresinde farklı kişilerle yaşadığı yanlış anlamalara dayalı komik durumlar gelişeceği tahmin edilebilir.",
+        "rol_paylasimi": "Karagöz, Hacivat ve diğer tipler sınıf içinde paylaştırılır.",
+        "strateji": "Vurgu, tonlama, metindeki ağız/konuşma özellikleri ve yanlış anlamalar görünür kılınarak rolüne uygun sesli okuma yapılır."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map"
+      ],
+      "source_locators": [
+        "basılı s.18 / PDF s.19",
+        "T1_ACT_01_OKUMA_YONETIM"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0005",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "26",
+      "label": "Bilgi Köşesi — Karagöz oyununun bölümleri",
+      "item_type": "REFERENCE",
+      "expected_answer": {
+        "Mukaddime": "giriş",
+        "Muhavere": "Karagöz-Hacivat söyleşmesi",
+        "Fasıl": "asıl olay",
+        "Bitiş": "oyunun sonuçlanması"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.26 / PDF s.27"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0006",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "51",
+      "label": "Ara metin: Dilekçe — bilgi bölümü",
+      "item_type": "REFERENCE",
+      "expected_answer": {
+        "temel_kurallar": [
+          "açık, kısa, anlaşılır ve resmî dil",
+          "başvurulan makamın doğru yazılması",
+          "istek/şikâyet/talebin somut olması",
+          "uygun bitiriş",
+          "tarih, imza, ad-soyad ve gerekli iletişim/kimlik bilgileri",
+          "varsa eklerin belirtilmesi",
+          "gereksiz duygu ve konuşma dilinden kaçınma"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.51 / PDF s.52 — Dilekçe bilgi bölümü"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0007",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "53",
+      "label": "Sözlü iletişim engellerini belirleme",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "engel_ornekleri": [
+          "karşıdakini gerçekten dinlememek",
+          "sözünü kesmek",
+          "önyargılı/yargılayıcı dil",
+          "konuyu küçümsemek veya değersizleştirmek",
+          "kendi iç sorunlarına gömülüp iletişime kapanmak",
+          "dinleme becerisinin yetersiz olması"
+        ],
+        "etki": "Bu davranışlar mesajın doğru anlaşılmasını zorlaştırır, savunma ve çatışma yaratır, karşı tarafın kendini ifade etmesini engeller.",
+        "dogru_iletisim": [
+          "etkin dinleme",
+          "saygılı ve açık dil",
+          "empati",
+          "söz hakkına saygı",
+          "uygun geri bildirim",
+          "beden dili ve ses kullanımını bağlama göre ayarlama"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.53 / PDF s.54 — drama hazırlık çalışması"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0008",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "54",
+      "label": "Performans görevi — altışar kişilik grup ve canlandırma planı",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": {
+        "grup": "Öğretmen rehberliğinde altışar kişilik gruplar oluşturulur.",
+        "planlama": [
+          "konu ve amaç belirleme",
+          "gerekli gözlem/inceleme/araştırmayı yapma",
+          "süre ve hedef kitleyi belirleme",
+          "nasıl ve hangi araçlarla gerçekleştirileceğine karar verme",
+          "uygun konuşma yöntem/stratejisini belirleme",
+          "mekân, teknik altyapı, görüntü ve ses uygunluğunu kontrol etme",
+          "canlandırma sırasında ortaya çıkabilecek iletişim engellerini önceden azaltma"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "lesson_plan_set",
+        "textbook_map"
+      ],
+      "source_locators": [
+        "basılı s.54 / PDF s.55",
+        "T1_ACT_09_KONUSMA_YONETIM",
+        "FORM_T1_P054_KONTROL_LISTESI_03",
+        "BLOCK_T1_02_KONUSMA_P01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0009",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "55-56",
+      "label": "Canlandırma metninin içerik taslağı",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "adimlar": [
+          "hedef kitlenin özelliklerini tahmin ederek giriş-gelişme-sonuç düzeni tasarlama",
+          "konuşma amacına uygun ana düşünce ve karşılaştırma içeren iletiler oluşturma",
+          "dilin kullanım alanına göre içerik belirleme: özel/mesleki/kamusal/eğitim",
+          "sözlü iletişim engelleriyle ilgili araştırmadan bilgi toplama",
+          "Türkçenin dil yapılarını işlevine uygun ve bilinçli kullanma",
+          "söz varlığını içeriğe ve hedef kitleye göre seçme",
+          "beden dili, diksiyon ve telaffuzu planlama",
+          "amacına uygun işitsel/görsel öğeler belirleme",
+          "taslağı arkadaşlara sunup geri bildirimle son şeklini verme"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "lesson_plan_set",
+        "textbook_map"
+      ],
+      "source_locators": [
+        "basılı s.55-56 / PDF s.56-57",
+        "T1_ACT_10_KONUSMA_ICERIK_ANLAM",
+        "BLOCK_T1_02_KONUSMA_P02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0010",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "56",
+      "label": "İletişim hataları ve çözüm önerileri",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "ornekler": [
+          {
+            "hata": "söz kesme / dinlememe",
+            "cozum": "konuşanın sözünü tamamlamasına izin verme ve etkin dinleme"
+          },
+          {
+            "hata": "yargılayıcı/etiketleyici dil",
+            "cozum": "kişiyi değil davranış/durumu betimleyen saygılı dil"
+          },
+          {
+            "hata": "hedef kitleye uygun olmayan söz varlığı",
+            "cozum": "alıcının düzeyine ve bağlama uygun açık ifade"
+          },
+          {
+            "hata": "konuyu değersizleştirme",
+            "cozum": "iletinin içeriğini anlamaya yönelik soru ve geri bildirim"
+          }
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.56 / PDF s.57"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0011",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "58",
+      "label": "Öz Değerlendirme Formu — kitapta görünür ölçütler",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "olcutler": [
+          "sözlü iletişim engellerine dair araştırma yapıp bilgi toplama",
+          "dilin kullanım alanına göre konuşma içeriğini belirleme",
+          "konuşmayı başlatma-sürdürme-bitirme ifadelerini etkili kullanma",
+          "düşünceyi geliştirme yollarını kullanma",
+          "Türkçenin dil yapısına, işlevine ve bağdaşıklığa dikkat etme",
+          "söz varlığını hedef kitle ve bağlama uygun kullanma",
+          "toplumsal hassasiyet oluşturacak ögelerden kaçınma",
+          "millî ve manevi değerleri, kültürel unsurları ve olumlu tutumları gözetme",
+          "beden dili, diksiyon ve telaffuzu etkili kullanma",
+          "dinleyiciyle etkileşim kurma"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.58 / PDF s.59",
+        "FORM_T1_P058_OZ_DEGERLENDIRME_05",
+        "T1_ACT_12_KONUSMA_DEGERLENDIRME",
+        "BLOCK_T1_02_KONUSMA_P05"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T01-A0012",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "59",
+      "label": "Konuya Başlarken — üç hazırlık sorusu",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "q1_dilin_onemi": "Etkili ve güzel dil; duygu ve düşüncelerin açık, doğru ve karşıdakine uygun aktarılmasını kolaylaştırır, yanlış anlamayı azaltır ve iletişimin etkisini güçlendirir.",
+        "q2_dize_yorumu": "Dizelerde insanın doğa ve hayatla iç içe, çevresine yarar sağlayan ve geniş bir dünyaya açılan varlığı imgelerle anlatılır. Yıldızlara çoban, değirmenlere su ve bozkırlara gölge olma; yön verme, hayat verme ve koruyuculuk çağrışımları oluşturabilir. Metne dayalı farklı gerekçeli yorumlar kabul edilebilir.",
+        "q3_saglikli_iletisim": "Açık ve anlaşılır konuşma, etkin dinleme, uygun hitap ve ses tonu, empati, saygı, geri bildirim verme, söz kesmeme ve yanlış anlaşılınca açıklama isteme sağlıklı iletişimi destekler. Öğrencinin verdiği örnek bu davranışlardan biriyle ilişkilendirilmelidir."
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.59 / PDF s.60 — Konuya Başlarken / Hatırlayalım, soru 1-3"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0013",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "60-64",
+      "label": "Sıra Sizde, Düşünelim Paylaşalım, ders dışı araştırma ve Metni Dinleyelim/İzleyelim",
+      "item_type": "PROCESS",
+      "expected_answer": {
+        "p60_61_q1": "Hitap biçimlerinden alıcı ve içerik hakkında tahmin yapılabilir: 'kardeşim/canım' türü hitaplar yakın kişisel ilişkiyi; 'muhterem/sayın' biçimleri daha resmî veya mesafeli ilişkiyi düşündürür. Tahmin, hitap ve tarih/bağlam göstergesiyle gerekçelendirilmelidir.",
+        "p60_61_q2": "Hitap ifadeleri muhataba verilen değeri ve ilişki düzeyini gösterir. 'Sevgili/canım' sevgi ve yakınlığı; 'vefakâr dost' dostluk ve bağlılığı; 'muhterem/sayın' saygı ve nezaketi öne çıkarır.",
+        "p62_63_q1": "Mektup ve e-postada hitap muhataba göre seçilir; ikisinde de saygı/yakınlık derecesi görünür. E-posta hitapları çoğu zaman daha kısa ve güncel kalıplarla, geleneksel mektuplar ise dönemin ve ilişkinin özelliklerine göre daha ayrıntılı veya edebî ifadelerle kurulabilir.",
+        "p62_63_q2": "Elektronik ortam iletiyi çok hızlı ulaştırır; aynı anda çok kişiye gönderim, dosya ekleme, arşivleme, arama, düşük maliyet ve yerden bağımsız erişim gibi kolaylıklar sağlar.",
+        "p62_63_q3": "Kişisel bir yorum sorusudur. Öğrenci I. Metin'den kendisini etkileyen gerçek bir ifadeyi seçmeli ve seçimini duygu, kardeşlik, özlem, samimiyet veya anlatım özelliği gibi bir gerekçeyle açıklamalıdır.",
+        "p62_63_q4": "Kardeşlik, sevgi, özlem, bağlılık, paylaşma, yardımlaşma ve aile bağı gibi değerlere ulaşılabilir. Kabul için değer, metindeki bir davranış veya ifadeyle gerekçelendirilmelidir.",
+        "p63_research": "Üç grup yazılı, görsel ve işitsel iletişim araçlarının geçmişten bugüne değişimini araştırır; e-postaya kadar kullanılan araçları sınıflandırır ve hız/pratiklik artışının hem olumlu hem olumsuz sonuçlarını değerlendirir.",
+        "p64_q1_amac": "İletişim araçlarının geçmişten bugüne değişimini, bu değişimin insan yaşamına ve iletişim biçimlerine etkisini anlamak.",
+        "p64_q2_tahmin": "Başlık ve görselden, iletişim araçlarının değişimi ve bunun günlük hayata etkilerinin konuşulduğu bilgilendirici/tartışmaya dayalı çok modlu bir içerik beklenebilir. Tahmin daha sonra medya içeriğiyle karşılaştırılmalıdır.",
+        "p64_q3_engeller": "Gürültü, dikkat dağıtan cihazlar, uygunsuz oturma/görüş koşulları veya kişisel dikkat dağınıklığı gibi metin ve ortam engelleri dinleme öncesinde azaltılır.",
+        "p64_q4_strateji": "Not alma, anahtar kavramları belirleme, geçmiş–günümüz karşılaştırması yapma ve metindeki dil/iletişim örneklerini kendi yaşamıyla ilişkilendirme stratejileri kullanılabilir.",
+        "p64_q5_dinleme": "Öğrenci QR'daki çok modlu metni dikkatini yoğunlaştırarak dinler/izler ve önemli gördüğü noktaları not eder; bu görevde ürün, medyanın yerine geçen hazır transkript değil dinleme/izleme sırasında oluşan nottur."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.60-64 / PDF s.61-65",
+        "T1_ACT_13_DINLEME_YONETIM",
+        "BLOCK_T1_03_DINLEME_P01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0014",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "64",
+      "label": "Gözlem Formu",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "gorunur_olcutler": [
+          "dinleme/izlemeye hazırlık",
+          "amacı belirleme",
+          "içerik tahmini",
+          "iletişim engellerini ortadan kaldırma",
+          "dinleme/izleme yöntemine karar verme",
+          "dikkati yoğunlaştırma",
+          "başkalarını rahatsız etmeme",
+          "önemli yerler hakkında not alma"
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.64 / PDF s.65",
+        "FORM_T1_P064_GOZLEM_FORMU_07"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0015",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "65-71",
+      "label": "Söz Varlığımız, Metni Anlayalım, Birlikte Çalışalım ve Sıra Sizde",
+      "item_type": "QUESTION",
+      "expected_answer": {
+        "p65_vocab": {
+          "tasavvur": "göz önüne getirme, hayal etme, zihinde canlandırma",
+          "güdü": "davranışı doğuran, sürdürmesini sağlayan ve yön veren güç; saik",
+          "sosyal": "toplumsal",
+          "nörolojik": "sinir bilimsel",
+          "medeni": "uygar",
+          "muhabbet": "sevgi, dostluk; bağlama göre dostça konuşma/sohbet"
+        },
+        "q1_arastirma_baglantisi": "Araştırma ile medya arasında iletişim araçlarının zamanla hız, erişim ve pratiklik kazanması; mektup gibi araçların daha yavaş ama kişisel/kalıcı bir iletişim deneyimi sunması gibi bağlantılar kurulabilir. Kabul için öğrenci kendi araştırmasından bir bulguyu medyada duyduğu/gördüğü gerçek bir kanıtla ilişkilendirmelidir.",
+        "q2_eposta_avantaj": "E-posta hızlı ve düşük maliyetlidir; uzak mesafelere anında ulaşabilir, dosya/görsel eklenebilir, arşivlenebilir, aranabilir ve aynı ileti birden fazla alıcıya gönderilebilir. Avantajın hangi iletişim durumunda önemli olduğu gerekçelendirilmelidir.",
+        "q3_medenilesme": "İnsan sosyal bir varlık olarak bilgi, deneyim, duygu ve değerleri iletişim yoluyla paylaşır. Bu paylaşım ortak yaşamı, iş birliğini ve kültürel birikimin aktarılmasını geliştirir; bu nedenle iletişim medeniyetin oluşması ve sürdürülmesiyle ilişkilendirilebilir.",
+        "q4_konu_tema": {
+          "konu": "İletişim araçlarının geçmişten günümüze değişimi ve bu değişimin insan hayatındaki/ilişkilerindeki yeri.",
+          "tema": "İletişim, teknolojik değişim ve insan ilişkileri; hız/pratiklik ile iletişimin insani-duygusal boyutu arasındaki denge."
+        },
+        "q5_ana_yardimci": {
+          "ana_dusunce": "İletişim araçları değişip iletişimi hızlandırsa da nitelikli iletişim yalnız teknolojiye değil insanların birbirini anlama, uygun dil kullanma ve ilişki kurma biçimine bağlıdır.",
+          "yardimci_dusunceler": [
+            "İnsan iletişim kurma ihtiyacı taşır.",
+            "Mektup ve e-posta hız, emek, kalıcılık ve duygusal aktarım bakımından farklı özellikler gösterir.",
+            "Yeni araçlar hız ve erişim kolaylığı sağlar.",
+            "Teknolojik gelişme bazı iletişim alışkanlıklarını değiştirir.",
+            "İletişimin niteliğinde dil, saygı, nezaket ve karşılıklı anlayış önemlidir."
+          ]
+        },
+        "q6_tahmin_karsilastirma": "Öğrenci dinleme öncesi tahminini dinleme sonrası gerçek tespitleriyle yan yana koyar. Tahminin tutmaması hata sayılmaz; hangi medya kanıtının tahmini doğruladığı veya değiştirdiği açıklanmalıdır.",
+        "q7_iletisim_sonuclari": "İletişim araçları değişse de anlaşılma ihtiyacı sürer; hız tek başına iletişimin kalitesini garanti etmez. Dilin açıklığı, doğru kanal seçimi, dinleme, saygı ve geri bildirim iletişimin niteliğini belirler. Metin kanıtına dayalı farklı sonuçlar kabul edilebilir.",
+        "q8_oznel_nesnel": {
+          "oznel": "Kişisel beğeni, değerlendirme, özlem veya bir aracı daha samimi/değerli bulma gibi doğruluğu kişiden kişiye değişebilen ifadeler.",
+          "nesnel": "Tarih, araçların teknik özellikleri veya doğrulanabilir olgular gibi kişisel beğeniden bağımsız bilgiler.",
+          "katki": "Nesnel ifadeler bilgi ve dayanak sağlar; öznel ifadeler konuşmacının deneyim ve bakış açısını görünür kılar. Öğrenci örnekleri doğrudan medya içeriğinden seçmelidir."
+        },
+        "q9_ozet": "Özet; iletişim araçlarının geçmişten günümüze değişmesini, mektup/e-posta gibi araçların farklı özelliklerini, iletişimin insan ve toplum için önemini ve teknoloji gelişse de etkili iletişimde dil ve insani ilişkinin belirleyici oluşunu ana çizgileriyle vermelidir. Medyada yer almayan ayrıntı eklenmemelidir.",
+        "p68_gelecek_tartisma": "Gelecekte artırılmış/sanal gerçeklik, anlık çeviri, holografik görüşme, giyilebilir veya beyin-bilgisayar arayüzleri gibi araçların kullanılabileceği öne sürülebilir. Önemli olan araç adından çok bunun hız, erişim, mahremiyet, yüz yüze ilişki veya dil kullanımı üzerindeki olası etkisini gerekçelendirmektir.",
+        "p68_69_dil_aksakligi": "Paydos parçasında konuşmacının karşıdakini tam dinlememesi, söz kesme/konuşmayı tekeline alma, söyleneni yanlış yorumlama, bilgi üstünlüğü gösterme ve dilsel anlaşmazlığın konuşmanın amacının önüne geçmesi iletişim aksaklığı doğurur. Öğrenci seçtiği örneği metindeki bir replik/davranışla göstermelidir.",
+        "p70_engeller": {
+          "sosyokulturel": [
+            "ön yargılar",
+            "statü/eğitim farkına dayalı peşin hüküm"
+          ],
+          "fiziksel_cevre": [
+            "gürültü veya dikkat dağıtan çevresel etkenler"
+          ],
+          "dil_anlatim": [
+            "anlaşılmayan sözcükler",
+            "belirsiz/yanlış ifade",
+            "muhataba uygun olmayan dil"
+          ],
+          "davranissal_dusunsel": [
+            "söz kesme",
+            "dinlememe",
+            "ısrarla kendi bilgisini öne çıkarma"
+          ],
+          "psikolojik": [
+            "sabırsızlık",
+            "gerginlik",
+            "küçümseme veya savunmacı tutum"
+          ]
+        },
+        "p70_cozumler": "Etkin dinleme, açıklama isteme, anlaşılır ve muhataba uygun dil kullanma, söz kesmeme, ön yargıyı fark etme, çevresel gürültüyü azaltma ve sakin/empatik geri bildirim verme gibi çözümler iletişim engelinin türüne göre seçilmelidir.",
+        "p71_grup_karsilastirma": "Altı kişilik grup, ürettiği çözüm yollarını uygulanabilirlik, sorunun kaynağına uygunluk ve iletişimi gerçekten iyileştirme gücü açısından karşılaştırır; tek bir zorunlu çözüm yoktur.",
+        "p71_kanal_dili": {
+          "yuz_yuze": "Açık, saygılı ve karşılıklı geri bildirime açık dil; ses tonu ve beden dili sözü destekler.",
+          "telefon": "Kısa, açık ve anlaşılır sözlü dil; görsel ipucu olmadığı için tonlama ve açıklık daha önemlidir.",
+          "eposta": "Konu ve muhataba uygun, düzenli, açık ve gerektiğinde resmî dil; uygun hitap, konu satırı ve kapanış kullanılır."
+        },
+        "p71_elestirel_dil": "Çok modlu metnin dili açıklık, anlaşılır söz varlığı, muhataba uygunluk, nezaket, konuşma akışı ve öznel/nesnel denge bakımından değerlendirilebilir. Öğrenci olumlu veya olumsuz yargısını medyadan somut bir ifade/davranışla gerekçelendirmelidir."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.65-71 / PDF s.66-72",
+        "T1_ACT_14_DINLEME_ICERIK_ANLAM",
+        "BLOCK_T1_03_DINLEME_P02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0016",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "72",
+      "label": "İletişim unsurlarını tespit etme ve ilişkilendirme",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "q1_deger_ifadeleri": {
+          "nezaket": "Kitapta örnek olarak 'Aklıselim programına hoş geldiniz.' ifadesi verilmiştir.",
+          "guven": "Medyadan güven oluşturan gerçek bir ifade seçilmelidir.",
+          "saygi": "Medyadan muhataba saygıyı gösteren gerçek bir ifade seçilmelidir.",
+          "yapicilik": "Medyadan iletişimi çözüm/iş birliği yönünde ilerleten gerçek bir ifade seçilmelidir."
+        },
+        "q2_iliskiler": "Örneğin saygı ile nezaket birbirini destekler; güven açık ve yapıcı iletişimi kolaylaştırır. Kavram haritasındaki her bağ kısa bir gerekçeyle açıklanmalı ve mümkünse q1'de seçilen medya kanıtına dayanmalıdır."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.72 / PDF s.73",
+        "T1_ACT_15_DINLEME_UYGULAMA_COZUMLEME",
+        "BLOCK_T1_03_DINLEME_P03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0017",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "73",
+      "label": "Süreci değerlendirme ve 3-2-1 Çıkış Kartı",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "q1_dil_degerlendirme": "Öğrenci metnin dilini açıklık, anlaşılırlık, hitap, nezaket, akıcılık ve konuya uygunluk gibi ölçütlerden en az biriyle değerlendirir; beğenisini QR medyasındaki gerçek bir ifade veya konuşma davranışıyla gerekçelendirir.",
+        "q2_elestiri_cozum": "Olumsuz eleştirilen her hususun karşısına uygulanabilir bir çözüm yazılmalıdır. Örneğin ifade fazla belirsizse daha açık sözcük seçimi; konuşmacılar birbirinin sözünü kesiyorsa sıra ile konuşma/etkin dinleme önerilebilir. Öğrenci eleştirisini gerçek medya kanıtına dayandırmalıdır.",
+        "uc_yaz": "Dinleme/izleme çalışmalarında iletişime dair öğrenilen veya önemli bulunan üç ayrı bilgi.",
+        "iki_sor": "İlgi çeken ve daha fazla bilgi edinilmek istenen iki gerçek soru.",
+        "bir_paylas": "Çalışmalarda öğrenilenlere ilişkin arkadaşlarla paylaşılacak, gerekçelendirilebilir bir görüş."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.73 / PDF s.74",
+        "FORM_T1_P073_CIKIS_KARTI_08",
+        "T1_ACT_16_DINLEME_DEGERLENDIRME",
+        "BLOCK_T1_03_DINLEME_P04"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0018",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "74-75",
+      "label": "İletişim bağlamı soruları ve e-posta yazma planı",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": {
+        "p74_q1_zamanlama": "İletişimde zamanlama; mesajın amacına ulaşması, karşı tarafın beklentisinin yönetilmesi ve gecikmeden doğabilecek yanlış anlama veya iş kaybının önlenmesi bakımından önemlidir. Günlük hayatta randevu değişikliğini vaktinde bildirmek, bir başvuruya son tarihten önce cevap vermek veya önemli bir mesaja gecikmeden dönmek uygun örneklerdir.",
+        "p74_q2_guncel_benzer_durum": "Evet. Bir mesajı okuyup zihinde cevap vermek fakat göndermeyi unutmak, taslakta bırakmak veya bildirimi görüp daha sonra yanıtlayacağını düşünüp unutmak günümüzde benzer durumlardır.",
+        "p74_q3_kalici_kulturel_miras": "Tek zorunlu tercih yoktur. Mektup fiziksel arşiv, kişisel el yazısı ve dönem tanıklığı bakımından güçlü olabilir; dijital yazışmalar hızlı çoğaltılabilir ve aranabilir fakat platform, format ve erişim sürekliliğine bağlıdır. Öğrencinin seçtiği iletişim biçimini kalıcılık ve kültürel aktarım ölçütleriyle gerekçelendirmesi beklenir.",
+        "p74_q4_arac_karsilastirma": {
+          "telgraf": "Hızlı fakat kısa ve sınırlı içerikli; tarihsel olarak uzak mesafede etkili, bugün yaygınlığı düşüktür.",
+          "mektup": "Kişisel ve kalıcı kayıt oluşturabilir; iletim hızı düşüktür ve fiziksel dolaşıma bağlıdır.",
+          "konferans": "Canlı/sözlü etki ve geniş kitleye aynı anda ulaşma imkânı sağlar; kalıcılığı kayıt altına alınmasına bağlıdır."
+        },
+        "p74_q5a_yazim_degisim": "Örnekler, Türkçenin yazım/ortografi standartlarının ve kullanım alışkanlıklarının zaman içinde değişebildiğini gösterir; dil değişiminin özellikle yazı dili ve standartlaşma yönü görünür olur.",
+        "p74_q5b_dijital_kisaltmalar": "Araştırmaya dayalı cevap beklenir. Kısaltmalar hızlı ve pratik iletişim sağlayabilir; aşırı veya bağlam dışı kullanım standart yazım, anlaşılabilirlik ve Türkçeyi özenli kullanma alışkanlığı üzerinde olumsuz etki oluşturabilir. Öğrenci olumlu/olumsuz etkileri kaynak ve örnekle gerekçelendirmelidir.",
+        "p75_performans_plani": [
+          "Yazma amacı belirlenir: ikna, bilgilendirme, resmî talep vb.",
+          "Metnin özellikleri ve hedef kitle/alıcı belirlenir.",
+          "Yazma sürecindeki olası engeller azaltılır.",
+          "Amaç, konu ve alıcıya uygun yazma stratejisi seçilir ve yapılandırılır."
+        ]
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.74-75 / PDF s.75-76",
+        "T1_ACT_17_YAZMA_YONETIM",
+        "BLOCK_T1_04_YAZMA_P01"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0019",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "76-77",
+      "label": "E-posta içerik taslağı — 1-13. adımlar",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": {
+        "p76_01_onceki_ogrenme": "Dinleme/izleme bölümünde iletişim ve e-posta hakkında öğrenilen uygun bilgiler yeni e-posta görevine aktarılır.",
+        "p76_02_ek_belgeler": "Alıcı ve amaç dikkate alınarak müzik, video, resim veya metin gibi ekler seçilir; her ekin nerede ve hangi amaçla kullanılacağı açıklanır.",
+        "p76_03_mektup_eposta_karsilastirma": {
+          "benzerlikler": [
+            "Yazılı iletişim kurarlar.",
+            "Gönderici ve alıcı ilişkisi vardır.",
+            "Amaç, konu, hitap ve kapanış seçimleri içerir."
+          ],
+          "farkliliklar": [
+            "E-posta elektronik ortamda ve çok daha hızlı iletilir.",
+            "E-posta dijital ek, bağlantı ve çoklu alıcı kullanımını kolaylaştırır.",
+            "Mektup fiziksel taşıyıcı ve el yazısı gibi maddi özellikler taşıyabilir."
+          ]
+        },
+        "p76_04_ileti": "Öğrenci, seçtiği amaç ve hedef kitleye uygun temel iletiyi tek ve anlaşılır bir odakta yazar.",
+        "p76_05_icerik_taslagi": "Bilgiler önem ve akış sırasına göre düzenlenerek giriş–gelişme–sonuç/kapanış mantığı taşıyan bir içerik taslağı oluşturulur.",
+        "p76_06_dil_islevleri": "Amaca göre rica, koşul, gerekçelendirme, bilgilendirme veya talep gibi uygun dil işlevleri seçilir.",
+        "p76_07_soz_varligi": "Söz varlığı alıcıya, bağlama ve amaca uygun seçilir; karşılaştırma içeren iletiler açık ve anlaşılır biçimde kurulur.",
+        "p76_08_ek_siniflandirma": "Gönderilecek ekler türüne ve işlevine göre sınıflandırılır; gereksiz ekler çıkarılır.",
+        "p76_09_eposta_alanlari": "Gönderici, alıcı/kime, konu ve içerik alanlarında bulunması gereken bilgiler belirlenir; dil ve üslup alıcıya uygunlaştırılır.",
+        "p77_10_akran_ogretmen_gorusu": "Taslak, sınıf arkadaşı ve gerektiğinde öğretmen geri bildirimiyle gözden geçirilir; eksik bilgi ve kavram karmaşaları giderilir.",
+        "p77_11_gorsel_isitsel_destek": "İçeriği gerçekten destekleyen görsel/işitsel ögeler seçilir; süs niteliğindeki gereksiz ögeler elenir.",
+        "p77_12_akran_kontrolu": "Taslak bir akranla amaca uygunluk ve dilin doğru kullanımı gibi ölçütlerle kontrol edilir.",
+        "p77_13_revize_plan": "Alınan geri bildirim doğrultusunda içerik planı gözden geçirilir ve son hâline getirilir."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.76-77 / PDF s.77-78",
+        "T1_ACT_18_YAZMA_ICERIK_ANLAM",
+        "BLOCK_T1_04_YAZMA_P02"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0020",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "77",
+      "label": "E-posta yazma — kitap kontrol listesi",
+      "item_type": "PERFORMANCE_TASK",
+      "expected_answer": {
+        "kural_a_konu": "İçeriğe uygun ve alıcıya anlamlı bir konu satırı belirlenir.",
+        "kural_b_hitap_giris": "Alıcıya ve bağlama uygun dikkat çekici bir hitap/giriş kullanılır.",
+        "kural_c_baslatma_surdurme_bitirme": "Metnin başlangıç, sürdürme ve bitirme ifadeleri akışı destekler.",
+        "kural_c_dusunceyi_gelistirme": "İletinin doğru ve eksiksiz anlaşılması için uygun düşünceyi geliştirme yolu kullanılır.",
+        "kural_d_ozgun_tutarli_uslup": "Duygu ve düşünceler özgün, tutarlı ve anlaşılır bir üslupla ifade edilir.",
+        "kural_e_amac_konu_alici": "Dil ve üslup metnin amacı, konusu ve alıcısıyla uyumludur.",
+        "kural_f_soz_varligi": "Deyim, terim, mecaz vb. söz varlığı bağlama uygun kullanılır.",
+        "kural_g_acik_ortuk_ileti": "Verilmek istenen iletiler gerekli yerde açık veya örtük biçimde kurulur.",
+        "kural_gg_dogru_ifade": "Anlatılmak istenen içerik anlam kaybı oluşturmadan doğru ifade edilir.",
+        "kural_h_toplumsal_hassasiyet": "Toplumsal hassasiyetlere aykırı ögelerden kaçınılır.",
+        "kural_ii_deger_kultur": "Millî/manevi değer ve kültürel unsurlar bağlama uygunsa olumlu ve ölçülü biçimde gözetilir.",
+        "kural_i_dil_yazim": "Dil yapıları, bağdaşıklık, yazım ve noktalama kuralları ile Türkçeyi bilinçli ve özenli kullanma gözetilir."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.77 / PDF s.78",
+        "T1_ACT_19_YAZMA_UYGULAMA_COZUMLEME",
+        "BLOCK_T1_04_YAZMA_P03"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0021",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "78",
+      "label": "E-posta değerlendirme, öz değerlendirme ve çıkış kartı",
+      "item_type": "ASSESSMENT",
+      "expected_answer": {
+        "p78_degerlendirme_1_duzeltme": "Öğrenci kendi e-postasını yeniden okuyup yazım ve noktalama hatalarını düzeltir; yapılan düzeltme ürün üzerinde görünür olmalıdır.",
+        "p78_dpa_gorunen_olcutler": [
+          "Türkçenin doğru kullanımı",
+          "Üslup",
+          "Özgünlük",
+          "Gerekli durumlarda öznel ve nesnel ifadelere yer verme",
+          "Başlık ve hitap kullanımı",
+          "Yazım ve noktalama"
+        ],
+        "p78_oz_degerlendirme": [
+          "İçeriğe uygun taslak oluşturma",
+          "Ek belgeleri sınıflandırma",
+          "Alıcıya uygun dil ve üslup belirleme",
+          "İçeriğe uygun işitsel/görsel öge kullanma",
+          "Söz varlığını hedef kitle ve amaca uygun kullanma",
+          "Düşünceyi geliştirme yollarına başvurma",
+          "İçeriğe uygun başlık belirleme",
+          "Özgün ve tutarlı üslup kullanma"
+        ],
+        "p78_cikis_karti": "Üç Yaz: temayla ilgili öğrenilen üç bilgi; İki Sor: hakkında daha fazla bilgi edinilmek istenen iki soru; Bir Paylaş: öğrenmekte zorlanılan bir konu. Bunlar öğrenciye özgüdür, öğretmen tarafından önceden doldurulmaz."
+      },
+      "source_ids": [
+        "official_textbook_pdf",
+        "textbook_map",
+        "theme_alignment",
+        "lesson_plan_set"
+      ],
+      "source_locators": [
+        "basılı s.78 / PDF s.79",
+        "T1_ACT_20_YAZMA_DEGERLENDIRME",
+        "FORM_T1_P078_OZ_DEGERLENDIRME_10",
+        "FORM_T1_P078_CIKIS_KARTI_11",
+        "LINK_T1_YAZMA_DPA",
+        "BLOCK_T1_04_YAZMA_P04",
+        "BLOCK_T1_04_YAZMA_P05"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    },
+    {
+      "answer_id": "T01-A0022",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "79",
+      "label": "Soru 1 — Karagöz/Hacivat özelliklerini günlük iletişim durumuna uygulama",
+      "item_type": "QUESTION",
+      "expected_answer": "D",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.79, soru 1"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0023",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "80",
+      "label": "Soru 2 — Diyalogda Karagöz ve Hacivat rollerini belirleme",
+      "item_type": "QUESTION",
+      "expected_answer": [
+        "Hacivat",
+        "Karagöz",
+        "Hacivat",
+        "Karagöz"
+      ],
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.80, soru 2"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0024",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "80",
+      "label": "Soru 3 — Muamma geleneğinin günümüzdeki karşılıkları",
+      "item_type": "QUESTION",
+      "expected_answer": "Muamma geleneği günümüzde bilmece ve bulmaca yarışmaları, kelime/zekâ oyunları, şiirsel bilmece etkinlikleri veya çevrim içi soru-bulmaca yarışmaları gibi biçimlerde karşılık bulabilir. Ortak yön, ipuçlarından hareketle bir cevaba ulaşma ve bunu bir yarışma/etkileşim ortamında paylaşmadır.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.80, soru 3"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0025",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "81",
+      "label": "Soru 4 — Çelebi'nin geliş amacı",
+      "item_type": "QUESTION",
+      "expected_answer": "C",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.81, soru 4"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0026",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "81",
+      "label": "Soru 7 — Tanpınar'ın mektup yazma amacı",
+      "item_type": "QUESTION",
+      "expected_answer": "E",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.81, soru 7"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0027",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "82",
+      "label": "Soru 8 — Mektup kapanışındaki değerler ve iletişim biçimi",
+      "item_type": "QUESTION",
+      "expected_answer": "Kapanış, gencin mutlu ve çalışkan olmasını isteyen sıcak ve destekleyici bir iletişim kurar. Sevgi/şefkat, iyi dilek, çalışkanlık, sorumluluk ve başarıya teşvik gibi değerler öne çıkar; 'aziz yavrum' hitabı samimiyet ve koruyucu yakınlık oluşturur.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.82, soru 8"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0028",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "82",
+      "label": "Soru 9 — Mektup ve roman üzerinden yazar-okur iletişimi",
+      "item_type": "QUESTION",
+      "expected_answer": "Mektupta yazar belirli bir muhataba doğrudan, kişisel ve samimi biçimde seslenir. Romanda ise okurla kurmaca kişiler, mekân, imgeler ve karakterlerin iç dünyası üzerinden dolaylı ve estetik bir iletişim kurar. Mektup iletiyi daha açık verirken roman okurun gizli bağları kurmasını ve yorum yapmasını ister. Her iki durumda da yazar, yaşantı ve duygu dünyasını okurla paylaşarak ilişki kurar.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.82, soru 9"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0029",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "82",
+      "label": "Soru 10 — Dijitalleşme metninden ulaşılamayan yargı",
+      "item_type": "QUESTION",
+      "expected_answer": "C",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.82, soru 10"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0030",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "83",
+      "label": "Soru 11 — İletişim alışkanlıklarının değişmesini etkileyen unsurlar",
+      "item_type": "QUESTION",
+      "expected_answer": "Başlıca unsurlar teknolojik gelişmeler ve yeni iletişim araçlarının yaygınlaşmasıdır: matbaa yazılı bilginin daha geniş kitlelere ulaşmasını, telgraf ve telefon uzaklık engelinin azalmasını, radyo ve televizyon kitlesel iletişimin güçlenmesini, internet anlık etkileşimi; sosyal medya ise bireyin içerik üretip paylaşabilmesini sağlamıştır. Bu değişimler toplumun iletişim alışkanlıklarını hız, erişim, etkileşim ve üretici katılımı yönlerinden dönüştürmüştür.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.83, soru 11"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0031",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "83",
+      "label": "Soru 12 — Metne göre Evet/Hayır/Bilgi yok tablosu",
+      "item_type": "TABLE",
+      "expected_answer": {
+        "1_telgraf_telefon_mesafe": "Evet",
+        "2_radyo_televizyon_20yy": "Evet",
+        "3_2000lerde_hala_tek_yonlu": "Hayır",
+        "4_sosyal_medya_sadece_iletisim_etkilesim_amacli": "Bilgi yok",
+        "5_toplumsal_iletisim_temel_ihtiyac_icgudusuyle_dogdu": "Bilgi yok",
+        "6_internet_yayginlasmasi_buyuk_degisim": "Evet",
+        "7_2_dunya_savasi_sonrasi_uzun_kesinti": "Hayır",
+        "8_dijitallesme_arac_kullanim_sikligini_artirdi": "Bilgi yok"
+      },
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.83, soru 12"
+      ],
+      "verification_status": "VERIFIED"
+    },
+    {
+      "answer_id": "T01-A0032",
+      "theme_id": "TEMA_01",
+      "printed_page_range": "83",
+      "label": "Soru 13 — Çok modlu metinde şiir duygusunu aktaran unsurlar",
+      "item_type": "QUESTION",
+      "expected_answer": "Örnek kabul edilebilir cevap: Şiirin duygusunu seslendiren kişinin ses tonu, vurgu ve duraklamaları; kullanılan fon müziği/sesler; görseller, renkler, ışık, görüntü geçişleri ve gösterim temposu birlikte güçlendirebilir. Öğrenci, izlediği Olvido içeriğinde gerçekten gözlediği unsurları şiirin hüzün, özlem, yalnızlık veya hatırlama/unutma duygusuyla ilişkilendirerek açıklamalıdır.",
+      "source_ids": [
+        "official_textbook_pdf"
+      ],
+      "source_locators": [
+        "basılı s.83, soru 13",
+        "QR:https://www.eba.gov.tr/c?q=UEX5262fe7a"
+      ],
+      "verification_status": "REVIEW_REQUIRED"
+    }
+  ]
+}

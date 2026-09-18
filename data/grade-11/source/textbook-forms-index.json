@@ -1,0 +1,1768 @@
+{
+  "schema_version": "1.0",
+  "course_id": "TDE_11",
+  "source_id": "textbook_tde11_local_pdf",
+  "index_status": "LOCAL_PDF_STRUCTURE_MAPPED_EXTERNAL_DPA_TARGETS_UNRESOLVED",
+  "classification_rule": "Classify by observed structure, not title. QR-linked Dereceli Puanlama Anahtarı resources are tracked as unresolved linked assessment targets and are not classified as analytic rubrics without direct target inspection.",
+  "total_records": 43,
+  "summary": {
+    "physical_or_inbook_forms": 30,
+    "qr_linked_records": 13,
+    "unresolved_dereceli_puanlama_anahtari_targets": 8,
+    "analytic_rubrics_verified": 0
+  },
+  "forms": [
+    {
+      "form_id": "FORM_T1_P035_OZ_DEGERLENDIRME_01",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 35,
+      "pdf_page": 36,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.35",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_04_OKUMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T1_P035_AKRAN_QR_02",
+      "title": "Akran Değerlendirme Formu (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "linked_assessment_resource",
+      "printed_page": 35,
+      "pdf_page": 36,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.35",
+      "evaluator": "peer",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_04_OKUMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "linked_assessment_resource",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "peer",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=e714172e89fa290f94eb67fb064152bd&resourceType=1&resourceLocation=2",
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=e714172e89fa290f94eb67fb064152bd&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P054_KONTROL_LISTESI_03",
+      "title": "Kontrol Listesi",
+      "structural_type": "checklist",
+      "assessment_type": "checklist",
+      "printed_page": 54,
+      "pdf_page": 55,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.54",
+      "evaluator": "student_or_teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_09_KONUSMA_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "checklist",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "checklist",
+      "audience": "student_or_teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P058_OZ_DEGERLENDIRME_05",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 58,
+      "pdf_page": 59,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.58",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T1_KONUSMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 58,
+      "pdf_page": 59,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.58",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=04f09c63e8eb24d3f824a5cc5a62c13b&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=c09a7422b9d6b3f4a447317ec7df2b8b&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "LINK_T1_P058_AKRAN_QR_06",
+      "title": "Akran Değerlendirme Formu (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "linked_assessment_resource",
+      "printed_page": 58,
+      "pdf_page": 59,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.58",
+      "evaluator": "peer",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "linked_assessment_resource",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "peer",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=04f09c63e8eb24d3f824a5cc5a62c13b&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=c09a7422b9d6b3f4a447317ec7df2b8b&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P064_GOZLEM_FORMU_07",
+      "title": "Gözlem Formu",
+      "structural_type": "observation_form",
+      "assessment_type": "observation_form",
+      "printed_page": 64,
+      "pdf_page": 65,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.64",
+      "evaluator": "teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_13_DINLEME_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "observation_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "observation_form",
+      "audience": "teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P073_CIKIS_KARTI_08",
+      "title": "Çıkış Kartı",
+      "structural_type": "exit_ticket",
+      "assessment_type": "exit_ticket",
+      "printed_page": 73,
+      "pdf_page": 74,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.73",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_16_DINLEME_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "exit_ticket",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "exit_ticket",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P078_CIKIS_KARTI_11",
+      "title": "Çıkış Kartı",
+      "structural_type": "exit_ticket",
+      "assessment_type": "exit_ticket",
+      "printed_page": 78,
+      "pdf_page": 79,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.78",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "exit_ticket",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "exit_ticket",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P078_OZ_DEGERLENDIRME_10",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 78,
+      "pdf_page": 79,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.78",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T1_YAZMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 78,
+      "pdf_page": 79,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.78",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cef8b3ab1c15ac8aadc0370ab1ee74a9&resourceType=1&resourceLocation=2",
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cef8b3ab1c15ac8aadc0370ab1ee74a9&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T1_P079_TEMA_TEST_12",
+      "title": "1. Tema Ölçme ve Değerlendirme Soruları",
+      "structural_type": "test_question_set",
+      "assessment_type": "test_question_set",
+      "printed_page": 79,
+      "pdf_page": 80,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.79",
+      "evaluator": "student",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_01"
+      ],
+      "linked_activity_ids": [
+        "T1_ACT_21_TEMA_OLCME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "test_question_set",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "test_question_set",
+      "audience": "student",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P097_KONTROL_LISTESI_01",
+      "title": "Kontrol Listesi",
+      "structural_type": "checklist",
+      "assessment_type": "checklist",
+      "printed_page": 97,
+      "pdf_page": 98,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.97",
+      "evaluator": "student_or_teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_02_OKUMA_ICERIK_ANLAM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "checklist",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "checklist",
+      "audience": "student_or_teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P112_CIKIS_KARTI_02",
+      "title": "Çıkış Kartı",
+      "structural_type": "exit_ticket",
+      "assessment_type": "exit_ticket",
+      "printed_page": 112,
+      "pdf_page": 113,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.112",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_04_OKUMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "exit_ticket",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "exit_ticket",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P135_OZ_DEGERLENDIRME_04",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 135,
+      "pdf_page": 136,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.135",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T2_KONUSMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 135,
+      "pdf_page": 136,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.135",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=64f7d772724406aaa67ddb3c06d829c7&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=f33c24ac5b605032cd4eef3c19b8abf4&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "LINK_T2_P135_AKRAN_QR_05",
+      "title": "Akran Değerlendirme Formu (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "linked_assessment_resource",
+      "printed_page": 135,
+      "pdf_page": 136,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.135",
+      "evaluator": "peer",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "linked_assessment_resource",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "peer",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=64f7d772724406aaa67ddb3c06d829c7&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=f33c24ac5b605032cd4eef3c19b8abf4&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P139_GOZLEM_FORMU_07",
+      "title": "Gözlem Formu",
+      "structural_type": "observation_form",
+      "assessment_type": "observation_form",
+      "printed_page": 139,
+      "pdf_page": 140,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.139",
+      "evaluator": "teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_13_DINLEME_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "observation_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "observation_form",
+      "audience": "teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P139_KONTROL_LISTESI_06",
+      "title": "Kontrol Listesi",
+      "structural_type": "checklist",
+      "assessment_type": "checklist",
+      "printed_page": 139,
+      "pdf_page": 140,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.139",
+      "evaluator": "student_or_teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_13_DINLEME_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "checklist",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "checklist",
+      "audience": "student_or_teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P143_KONTROL_LISTESI_08",
+      "title": "Kontrol Listesi",
+      "structural_type": "checklist",
+      "assessment_type": "checklist",
+      "printed_page": 143,
+      "pdf_page": 144,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.143",
+      "evaluator": "student_or_teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_14_DINLEME_ICERIK_ANLAM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "checklist",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "checklist",
+      "audience": "student_or_teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P153_OZ_DEGERLENDIRME_10",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 153,
+      "pdf_page": 154,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.153",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T2_P153_AKRAN_QR_11",
+      "title": "Akran Değerlendirme Formu (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "linked_assessment_resource",
+      "printed_page": 153,
+      "pdf_page": 154,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.153",
+      "evaluator": "peer",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "linked_assessment_resource",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "peer",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=0a5f3e49733ee08695f6676dd06e8709&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cc3781f02c4cfe8c798d74c29fb74054&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "LINK_T2_YAZMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 153,
+      "pdf_page": 154,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.153",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=0a5f3e49733ee08695f6676dd06e8709&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cc3781f02c4cfe8c798d74c29fb74054&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P154_OGRENME_GUNLUGU_12",
+      "title": "Öğrenme Günlüğü",
+      "structural_type": "learning_journal",
+      "assessment_type": "learning_journal",
+      "printed_page": 154,
+      "pdf_page": 155,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.154",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "learning_journal",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "learning_journal",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T2_P155_TEMA_TEST_13",
+      "title": "2. Tema Ölçme ve Değerlendirme Soruları",
+      "structural_type": "test_question_set",
+      "assessment_type": "test_question_set",
+      "printed_page": 155,
+      "pdf_page": 156,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.155",
+      "evaluator": "student",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_02"
+      ],
+      "linked_activity_ids": [
+        "T2_ACT_21_TEMA_OLCME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "test_question_set",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "test_question_set",
+      "audience": "student",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P193_CIKIS_KARTI_01",
+      "title": "Çıkış Kartı",
+      "structural_type": "exit_ticket",
+      "assessment_type": "exit_ticket",
+      "printed_page": 193,
+      "pdf_page": 194,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.193",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_04_OKUMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "exit_ticket",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "exit_ticket",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P214_OZ_DEGERLENDIRME_03",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 214,
+      "pdf_page": 215,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.214",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T3_KONUSMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 214,
+      "pdf_page": 215,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.214",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=a7326f234616004a613cc4b4dc16468b&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=e962a10b80125931c65cc96a28c917d5&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "LINK_T3_P214_AKRAN_QR_04",
+      "title": "Akran Değerlendirme Formu (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "linked_assessment_resource",
+      "printed_page": 214,
+      "pdf_page": 215,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.214",
+      "evaluator": "peer",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "linked_assessment_resource",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "peer",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": null,
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=a7326f234616004a613cc4b4dc16468b&resourceType=1&resourceLocation=2",
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=e962a10b80125931c65cc96a28c917d5&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P216_GOZLEM_FORMU_05",
+      "title": "Gözlem Formu",
+      "structural_type": "observation_form",
+      "assessment_type": "observation_form",
+      "printed_page": 216,
+      "pdf_page": 217,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.216",
+      "evaluator": "teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_13_DINLEME_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "observation_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "observation_form",
+      "audience": "teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P224_OGRENME_GUNLUGU_06",
+      "title": "Öğrenme Günlüğü",
+      "structural_type": "learning_journal",
+      "assessment_type": "learning_journal",
+      "printed_page": 224,
+      "pdf_page": 225,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.224",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_16_DINLEME_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "learning_journal",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "learning_journal",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P228_OZ_DEGERLENDIRME_08",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 228,
+      "pdf_page": 229,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.228",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T3_YAZMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 228,
+      "pdf_page": 229,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.228",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=a551346add94a9be057f70a428d18a57&resourceType=1&resourceLocation=2",
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=a551346add94a9be057f70a428d18a57&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P229_CIKIS_KARTI_10",
+      "title": "Çıkış Kartı",
+      "structural_type": "exit_ticket",
+      "assessment_type": "exit_ticket",
+      "printed_page": 229,
+      "pdf_page": 230,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.229",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "exit_ticket",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "exit_ticket",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P229_OZ_DEGERLENDIRME_09",
+      "title": "Öz Değerlendirme Formu",
+      "structural_type": "self_assessment_form",
+      "assessment_type": "self_assessment_form",
+      "printed_page": 229,
+      "pdf_page": 230,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.229",
+      "evaluator": "student_self",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "self_assessment_form",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "self_assessment_form",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "3_point_rating_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T3_P230_TEMA_TEST_11",
+      "title": "3. Tema Ölçme ve Değerlendirme Soruları",
+      "structural_type": "test_question_set",
+      "assessment_type": "test_question_set",
+      "printed_page": 230,
+      "pdf_page": 231,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.230",
+      "evaluator": "student",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_03"
+      ],
+      "linked_activity_ids": [
+        "T3_ACT_21_TEMA_OLCME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "test_question_set",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "test_question_set",
+      "audience": "student",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T4_P281_KONTROL_LISTESI_01",
+      "title": "Kontrol Listesi",
+      "structural_type": "checklist",
+      "assessment_type": "checklist",
+      "printed_page": 281,
+      "pdf_page": 282,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.281",
+      "evaluator": "student_or_teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_09_KONUSMA_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "checklist",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "checklist",
+      "audience": "student_or_teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T4_KONUSMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 283,
+      "pdf_page": 284,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.283",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_12_KONUSMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=12637b763075475147c42351be7f5d50&resourceType=1&resourceLocation=2",
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=12637b763075475147c42351be7f5d50&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T4_P286_KONTROL_LISTESI_03",
+      "title": "Kontrol Listesi",
+      "structural_type": "checklist",
+      "assessment_type": "checklist",
+      "printed_page": 286,
+      "pdf_page": 287,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.286",
+      "evaluator": "student_or_teacher",
+      "criteria_present": true,
+      "level_descriptors_present": false,
+      "scoring_levels_present": true,
+      "response_options": [
+        "Evet",
+        "Hayır"
+      ],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_13_DINLEME_YONETIM"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "checklist",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "checklist",
+      "audience": "student_or_teacher",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "binary_checklist_scale",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": true,
+        "response_options": [
+          "Evet",
+          "Hayır"
+        ],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T4_P297_OGRENME_GUNLUGU_04",
+      "title": "Öğrenme Günlüğü",
+      "structural_type": "learning_journal",
+      "assessment_type": "learning_journal",
+      "printed_page": 297,
+      "pdf_page": 298,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.297",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_16_DINLEME_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "learning_journal",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "learning_journal",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "FORM_T4_P302_OGRENME_GUNLUGU_06",
+      "title": "Öğrenme Günlüğü",
+      "structural_type": "learning_journal",
+      "assessment_type": "learning_journal",
+      "printed_page": 302,
+      "pdf_page": 303,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.302",
+      "evaluator": "student_self",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "learning_journal",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "learning_journal",
+      "audience": "student_self",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    },
+    {
+      "form_id": "LINK_T4_YAZMA_DPA",
+      "title": "Dereceli Puanlama Anahtarı (QR)",
+      "structural_type": "linked_assessment_resource",
+      "assessment_type": "dereceli_puanlama_anahtari_link",
+      "printed_page": 302,
+      "pdf_page": 303,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.302",
+      "evaluator": "teacher",
+      "criteria_present": null,
+      "level_descriptors_present": null,
+      "scoring_levels_present": null,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_20_YAZMA_DEGERLENDIRME"
+      ],
+      "verification_status": "OFFICIAL_QR_ASSESSMENT_TARGET_PRESENT_STRUCTURE_UNRESOLVED",
+      "canonical_structural_family": "teacher_evaluation_form",
+      "taxonomy_relation": "NORMALIZED_TO_REFERENCE_FAMILY",
+      "structural_subtype": "linked_assessment_resource",
+      "audience": "teacher",
+      "location_category": "external_official_assessment_link",
+      "location_scope": "EXTERNAL_OFFICIAL_QR",
+      "structure_details": {
+        "scale_type": "unresolved_external_target",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": null,
+        "has_scoring_levels": null,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      },
+      "target_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=490ed5065aa31820b5a8097a5da4fc83&resourceType=1&resourceLocation=2",
+      "target_url_candidates": [
+        "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=490ed5065aa31820b5a8097a5da4fc83&resourceType=1&resourceLocation=2"
+      ],
+      "target_probe": {
+        "provisional_structural_classification": "unresolved",
+        "classification_confidence": "LOW",
+        "access_note": "QR-linked external assessment structure is not visible in the local textbook PDF; do not infer rubric levels or descriptors."
+      }
+    },
+    {
+      "form_id": "FORM_T4_P303_TEMA_TEST_07",
+      "title": "4. Tema Ölçme ve Değerlendirme Soruları",
+      "structural_type": "test_question_set",
+      "assessment_type": "test_question_set",
+      "printed_page": 303,
+      "pdf_page": 304,
+      "source_locator": "source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf:s.303",
+      "evaluator": "student",
+      "criteria_present": false,
+      "level_descriptors_present": false,
+      "scoring_levels_present": false,
+      "response_options": [],
+      "linked_theme_ids": [
+        "TEMA_04"
+      ],
+      "linked_activity_ids": [
+        "T4_ACT_21_TEMA_OLCME"
+      ],
+      "verification_status": "LOCAL_OFFICIAL_PDF_PAGE_STRUCTURE_VERIFIED",
+      "canonical_structural_family": "test_question_set",
+      "taxonomy_relation": "REFERENCE_FAMILY",
+      "structural_subtype": "test_question_set",
+      "audience": "student",
+      "location_category": "in_theme_section",
+      "location_scope": "IN_THEME",
+      "structure_details": {
+        "scale_type": "none_or_not_observed",
+        "criteria_count_observed_estimate": null,
+        "has_level_descriptors": false,
+        "has_scoring_levels": false,
+        "response_options": [],
+        "canonicalization_note": "Structure is classified from observed components; title alone is never sufficient."
+      }
+    }
+  ]
+}

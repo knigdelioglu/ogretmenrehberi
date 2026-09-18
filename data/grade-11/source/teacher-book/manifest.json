@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "TYMM_TEACHER_BOOK_SOURCE_MANIFEST",
+  "course_id": "TDE_11",
+  "grade": 11,
+  "authority_chain": [
+    "courses/TDE_11/curriculum_normative_text.json",
+    "courses/TDE_11/curriculum_map.json",
+    "courses/TDE_11/source_docs/turk-dili-ve-edebiyati-11sinif-ders-kitabi_compressed.pdf",
+    "courses/TDE_11/textbook_map.json",
+    "courses/TDE_11/textbook_question_inventory.json"
+  ],
+  "policy_ref": "courses/TDE_11/teacher_book/SOURCE_POLICY.md",
+  "totals": {
+    "source_records": 576,
+    "clean_answers": 234
+  },
+  "themes": [
+    {
+      "theme_id": "TEMA_01",
+      "source_index": "courses/TDE_11/teacher_book/source/TEMA_01/source_index.json",
+      "answer_bank": "courses/TDE_11/teacher_book/source/TEMA_01/answer_bank.json",
+      "source_records": 129,
+      "clean_answers": 32
+    },
+    {
+      "theme_id": "TEMA_02",
+      "source_index": "courses/TDE_11/teacher_book/source/TEMA_02/source_index.json",
+      "answer_bank": "courses/TDE_11/teacher_book/source/TEMA_02/answer_bank.json",
+      "source_records": 158,
+      "clean_answers": 74
+    },
+    {
+      "theme_id": "TEMA_03",
+      "source_index": "courses/TDE_11/teacher_book/source/TEMA_03/source_index.json",
+      "answer_bank": "courses/TDE_11/teacher_book/source/TEMA_03/answer_bank.json",
+      "source_records": 146,
+      "clean_answers": 64
+    },
+    {
+      "theme_id": "TEMA_04",
+      "source_index": "courses/TDE_11/teacher_book/source/TEMA_04/source_index.json",
+      "answer_bank": "courses/TDE_11/teacher_book/source/TEMA_04/answer_bank.json",
+      "source_records": 143,
+      "clean_answers": 64
+    }
+  ]
+}
