@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - "feat/**"
+      - "fix/**"
     paths:
       - "apps/lesson-player/**"
       - "data/grade-11/presentation/**"
