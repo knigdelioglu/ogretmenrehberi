@@ -64,13 +64,47 @@
     },
     {
       "question_id": "T2-P96-Q04A",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 96,
       "question_no": "4a",
       "prompt_summary": "Türk şivelerindeki altı çizili kelimelerde yapı ve anlam değişikliklerini belirleme",
-      "answer": "Metin çıkarımında sayfadaki alt çizgi biçimlendirmesi korunmadığı için hangi kelimelerin özellikle işaretlendiği kesin olarak belirlenememektedir. Bu nedenle altı çizili kelimelere özgü bir liste uydurulmamalıdır. Çalışma yapılırken işaretli biçim Türkiye Türkçesindeki karşılığıyla yan yana yazılıp ses, ek ve anlam değişikliği ayrı ayrı gösterilmelidir.",
-      "guidance": "Öğretmen sayfadaki alt çizili kelimeleri sınıfta görünür hâle getirerek karşılaştırmayı o sözcükler üzerinden yaptırmalıdır.",
-      "source_locator": "basılı s.96-97 / PDF s.97-98 — soru 4a"
+      "answer": "Altı çizili örnekler Türkiye Türkçesindeki karşılıklarıyla karşılaştırıldığında çoğunda anlam korunurken ses, ek veya kelime yapısı değişmektedir. Kazak Türkçesinde Dostıq → dostluk (q/k ve ek biçimi), isi → işi (s/ş), aqı → akıl (q/k ve son ses), künnin → günün (k/g ve ilgi hâli eki) örnekleri görülür. Türkmen Türkçesinde Men → ben (m/b), Giice → gece, Saansız → sayısız, haraabaanı → harabeyi, bes etdi → kesti, Binaaçılar → bina ustaları, sııldı → sildi biçimleri vardır; burada hem ses değişmeleri hem de farklı kelime/kelime grubu tercihleri görülür. Kırgız Türkçesinde ketpegen → gitmeyen, Kölü → gölü, Türlüü egin → türlü ekin, tan bütkön → tam biten; Uygur Türkçesinde Sadaliriñ kaldi → sedaları kaldı, Mukam → makam, ölginimde → öldüğümde; Azerbaycan Türkçesinde salma → yapma, ayılar → uyanır, Yatmışları → yatanları, oyatsın → uyandırsın karşılıkları verilebilir. Böylece ortak anlam ve kökler korunurken lehçelere göre ses, ek ve söz varlığı farklılıkları oluştuğu görülür.",
+      "guidance": "Öğrenciden yalnız “farklı yazılmış” demesi değil, farkın ses, ek/yapı veya söz varlığı düzeyinde olup olmadığını belirtmesi istenmelidir. Bazı örneklerde birden fazla açıklama mümkündür; amaç lehçeler arasındaki sistemli benzerlik ve farklılıkları fark ettirmektir.",
+      "source_locator": "basılı s.96-97 / PDF s.97-98 — soru 4a / altı çizili kelimeler gerçek sayfa üzerinden doğrulandı",
+      "answer_sections": {
+        "Kazak Türkçesi": [
+          "Dostıq → dostluk: q/k ve yapım eki biçimi farklı, anlam aynı.",
+          "isi → işi: s/ş ses farkı.",
+          "aqı → akıl: q/k ve son ses farkı.",
+          "künnin → günün: k/g ve ilgi hâli eki biçimi farklı."
+        ],
+        "Türkmen Türkçesi": [
+          "Men → ben: m/b ses farkı.",
+          "Giice → gece: ses/ünlü biçimi farklı.",
+          "Saansız → sayısız: ses ve biçim farkı.",
+          "haraabaanı → harabeyi: kök ve hâl eki biçimi farklı.",
+          "bes etdi → kesti: kelime grubu yerine tek fiil kullanılmış.",
+          "Binaaçılar → bina ustaları: türemiş kelime yerine kelime grubu kullanılmış.",
+          "sııldı → sildi: ses/biçim farkı."
+        ],
+        "Kırgız Türkçesi": [
+          "ketpegen → gitmeyen: kök ve olumsuz sıfat-fiil biçimi farklı.",
+          "Kölü → gölü: k/g ses farkı.",
+          "Türlüü egin → türlü ekin: ünlü uzunluğu ve g/k farkı.",
+          "tan bütkön → tam biten: ses ve sıfat-fiil biçimi farklı."
+        ],
+        "Uygur Türkçesi": [
+          "Sadaliriñ kaldi → sedaları kaldı: ses ve ek biçimi farklı.",
+          "Mukam → makam: u/a ünlü farkı.",
+          "ölginimde → öldüğümde: fiilimsinin kuruluşu farklı."
+        ],
+        "Azerbaycan Türkçesi": [
+          "salma → yapma: farklı fiil seçimi.",
+          "ayılar → uyanır: farklı fiil biçimi.",
+          "Yatmışları → yatanları: sıfat-fiil eki farklı.",
+          "oyatsın → uyandırsın: farklı ettirgen fiil kullanımı."
+        ]
+      }
     },
     {
       "question_id": "T2-P97-Q04B",
@@ -125,13 +159,21 @@
     },
     {
       "question_id": "T2-P99-Q02",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 99,
       "question_no": "2",
       "prompt_summary": "Sayfadaki görsellerin çağrıştırdığı kültür kavramları",
-      "answer": "Bu soru sayfadaki görsellerin ayrıntılarına doğrudan bağlıdır. Metin çıkarımı görsel içerikleri güvenilir biçimde taşımadığı için hangi görselin hangi kavramı çağrıştırdığı kesinleştirilmeden cevap üretilmemelidir. Öğrenci her görsel için nesne/uygulamayı tanımlayıp bunun gelenek, sanat, yaşam biçimi, tarih veya ortak değerlerle ilişkisini yazmalıdır.",
-      "guidance": "Görseli görmeden hazır kavram listesi vermek yerine görsel → kültür kavramı → gerekçe zinciri kurulmalıdır.",
-      "source_locator": "basılı s.99 / PDF s.100 — soru 2 / görsel gerekli"
+      "answer": "Görseller soldan sağa, üst sıradan alt sıraya şu kavramları çağrıştırabilir: 1) atlı kültür, geleneksel giyim ve bozkır yaşamı; 2) halı-kilim dokumacılığı ve geleneksel motifler; 3) süsleme sanatı ve ortak motif dünyası; 4) kahve kültürü, misafirperverlik ve sofra geleneği; 5) yurt/çadır ve konargöçer yaşam kültürü; 6) geleneksel okçuluk ve savaş/spor kültürü. Bu görseller, Türk dünyasında ortaklaşan yaşam biçimi, el sanatları, misafirperverlik ve geleneksel sporlar gibi kültür unsurlarını görünür kılar.",
+      "guidance": "Soru çağrışıma açık olduğundan tek kelime zorunlu değildir. Öğrenci görselde gerçekten görülen unsurla ilişkili başka bir kültür kavramını gerekçelendirebiliyorsa kabul edilebilir.",
+      "source_locator": "basılı s.99 / PDF s.100 — soru 2 / altı görsel gerçek PDF sayfasından doğrulandı",
+      "answer_sections": {
+        "1": "Atlı kültür, geleneksel giyim, bozkır yaşamı",
+        "2": "Halı-kilim dokumacılığı, el sanatı, motif",
+        "3": "Geleneksel süsleme ve motif sanatı",
+        "4": "Kahve kültürü, misafirperverlik, sofra geleneği",
+        "5": "Yurt/çadır, konargöçer yaşam",
+        "6": "Geleneksel okçuluk, spor ve savaş kültürü"
+      }
     },
     {
       "question_id": "T2-P99-Q03",

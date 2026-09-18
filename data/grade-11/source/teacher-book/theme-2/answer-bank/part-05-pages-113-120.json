@@ -88,10 +88,19 @@
       "entry_type": "question_answer",
       "printed_page": 116,
       "question_no": "Söz Varlığımız",
-      "prompt_summary": "Ecdat, yağız, kılmak, il, şad ve töre kelimelerini anlamlarıyla eşleştirme",
-      "answer": "Ecdat → geçmişteki büyükler, atalar. Yağız → esmer, kara. Kılmak → etmek, yapmak. İl → yurt, ülke/devlet. Töre → bir toplumda yerleşmiş davranış ve yaşama biçimi, geleneksel düzen. Şad → eski Türklerde hükümdar ailesinden olan ve yönetim görevi üstlenen yüksek rütbeli kişi.",
-      "explanation": "PDF metin çıkarımında 'şad' için verilen tanım satırı görünmüyor; diğer eşleştirmeler sayfadaki şemada açıkça yer alıyor. 'Şad' karşılığı tarihî Türk devlet teşkilatındaki kullanımıyla tamamlanmıştır.",
-      "source_locator": "basılı s.116 / PDF s.117 — Söz Varlığımız"
+      "prompt_summary": "Altı çizili ecdat, yağız, kılmak, il, şad ve töre sözcüklerinden sayfada tanımı verilenleri eşleştirme",
+      "answer": "Gerçek sayfadaki beş tanımın kesin eşleştirmesi şöyledir: ecdat → geçmişteki büyükler, atalar; il → yurt; yağız → esmer, kara; kılmak → etmek, yapmak; töre → bir toplumda yerleşmiş davranış ve yaşama biçimi. “Şad” sözcüğü metinde altı çizili olarak yer almasına rağmen sayfadaki tanım kutularında ona karşılık gelen altıncı bir tanım verilmemiştir. Bu nedenle yalnız ders kitabına dayanarak “şad” için ayrı bir anlam eklenmemelidir.",
+      "explanation": "Gerçek PDF sayfası incelendiğinde sorun metin çıkarımından kaynaklanmıyor: sayfada gerçekten altı sözcüğe karşı yalnız beş tanım kutusu bulunuyor. Önceki kayıt “şad” anlamını kaynak dışı genel bilgiyle sessizce tamamladığı için düzeltilmiştir.",
+      "source_locator": "basılı s.116 / PDF s.117 — Söz Varlığımız / 6 sözcük, 5 tanım kutusu",
+      "answer_sections": {
+        "ecdat": "Geçmişteki büyükler, atalar.",
+        "il": "Yurt.",
+        "yağız": "Esmer, kara.",
+        "kılmak": "Etmek, yapmak.",
+        "töre": "Bir toplumda yerleşmiş davranış ve yaşama biçimi.",
+        "şad": "Ders kitabı sayfasında karşılık gelen tanım kutusu bulunmuyor."
+      },
+      "guidance": "Değerlendirmede kitapta verilen beş eşleştirme kesin cevap olarak kullanılabilir. “Şad” için anlam ayrıca öğretilecekse bunun ders kitabı dışındaki doğrulanmış bir sözlük/tarih kaynağından geldiği açıkça belirtilmelidir."
     },
     {
       "question_id": "T2-P117-Q01",
