@@ -130,18 +130,17 @@ Geçersiz veri `main` üzerinde sessizce kabul edilmemeli.
 
 ### Üretim sırası
 
-Her bölüm için:
+Her doğal blok için:
 
-1. kaynak yapısını doğrula
-2. sayfa / metin / etkinlik / soruları kaydet
-3. TYMM bağlantılarını eşleştir
-4. beklenen cevapları oluştur
-5. öğretmen açıklamasını oluştur
-6. öğrenci için ipucu oluştur
-7. olası yanlış anlamaları ekle
-8. gerektiğinde ek örnek ve takip sorusu ekle
-9. çapraz referansları ekle
-10. öğretmen review gerektiren yerleri işaretle
+1. gerçek kitap sayfalarını ve blok sınırını doğrula
+2. soru envanterini gerçek sayfayla karşılaştır
+3. görsel / tablo / alt çizgi / QR gibi kaynak bağımlılıklarını işaretle
+4. her görev için `question_answer`, `performance_support` veya `source_limited` davranışını seç
+5. sınıfta kullanılabilir `answer` veya performans desteğini üret
+6. yalnız gerektiğinde `guidance`, `explanation` ve kısa `evidence_quotes` ekle
+7. TYMM ve kaynak bağlantılarını koru
+8. duplicate ID, boş cevap, yanlış entry type ve kaynak sınırı kontrolünü çalıştır
+9. ancak kalite kapısından sonra sonraki doğal bloğa geç
 
 ### İçerik kalite soruları
 
@@ -203,6 +202,8 @@ Aynı veriden elle içerik kopyalamadan kullanılabilir bir öğretmen e-kitabı
 - [ ] kavram indeksi
 - [ ] öğrenme çıktısı indeksi
 - [ ] soru → cevap / rehber → soru geri dönüş bağlantıları
+- [x] her rehber kaydını Kindle'da yeni sanal sayfadan başlat
+- [x] kullanıcıya dönük kaynak görünümünde yalnız basılı sayfayı göster
 - [ ] çapraz referans linkleri
 - [ ] Kindle uyumlu CSS
 - [ ] kapak ve metadata
@@ -262,7 +263,7 @@ extract
   -> EPUB build
 ```
 
-Tema 2–4 üretiminde [docs/BLOCK_AUTHORING_STANDARD.md](docs/BLOCK_AUTHORING_STANDARD.md) zorunlu çalışma sözleşmesidir. Yeni temada **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** blokları birbirinden ayrılır; konuşma/yazma görevleri klasik cevap anahtarına zorlanmaz ve erişilemeyen QR/video içeriği `source_limited` olarak işaretlenir.
+11. sınıfın kalan temalarında ve daha sonra hazırlanacak diğer sınıf seviyelerinde [docs/BLOCK_AUTHORING_STANDARD.md](docs/BLOCK_AUTHORING_STANDARD.md) zorunlu çalışma sözleşmesidir. **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** blokları pedagojik işlevlerine göre ayrılır; konuşma/yazma/araştırma görevleri klasik cevap anahtarına zorlanmaz. Harici kaynağın cevaba gerçekten gerekli olup olmadığı ayrıca değerlendirilir; gerekli ve erişilemezse `source_limited` kullanılır.
 
 ### Kalite kapısı
 Her tema için veri doğrulaması, kaynak izi ve review durumu ayrı raporlanır. Ayrıca her doğal blok tamamlandığında duplicate ID, boş cevap, yanlış entry type ve gereksiz yönlendirme kontrolü yapılmadan sonraki bloğa geçilmez.
@@ -357,6 +358,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**Faz 1: Kaynak haritalama.**
-
-İlk teknik iş, Drive'daki beş PDF için bir source manifest oluşturmak ve 11. sınıf ders kitabının 1. tema yapısını sayfa → bölüm → metin → etkinlik → soru düzeyinde çıkarmaktır. Bu harita tamamlanmadan toplu rehber içeriği üretilmeyecektir.
+**11. sınıf 3. Tema — Yaşamın İzinde** rehber üretimine, Tema 1 ve Tema 2'de doğrulanan blok bazlı kalite standardıyla devam etmek.
