@@ -124,6 +124,14 @@ const steps = flow.steps.map((step) => {
       fail(`Unknown answer_id in flow: ${step.answer_id}`);
     }
 
+    const questionNoMatch = /-Q(\d+)$/i.exec(answer.question_id);
+    if (!answer.question_no && questionNoMatch) {
+      answer = {
+        ...answer,
+        question_no: String(Number(questionNoMatch[1]))
+      };
+    }
+
     const count = (seenAnswerIds.get(step.answer_id) ?? 0) + 1;
     seenAnswerIds.set(step.answer_id, count);
     if (count > 1) {
