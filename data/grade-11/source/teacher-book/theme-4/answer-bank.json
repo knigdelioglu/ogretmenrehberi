@@ -5,7 +5,7 @@
   "grade": 11,
   "theme_id": "TEMA_04",
   "theme_title": "HAYATIN AYNASI",
-  "status": "PARTIAL_REBUILD",
+  "status": "COMPLETE_WITH_SOURCE_LIMITED",
   "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
   "block_standard": "docs/BLOCK_AUTHORING_STANDARD.md",
   "source_policy": {
@@ -15,11 +15,11 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 4 doğal pedagojik bloklar hâlinde yeniden üretilir; görsel/biçim bağımlı sorular gerçek sayfa üzerinden doğrulanır."
   },
   "coverage": {
-    "printed_page_range": "238-302",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 / Ben, Mimar Sinan + Metin Tahlili-2 / Küçürek Hikâye — Merdiven + Edebiyat Atölyesi-1 / Konuşma — Tiyatro Metnini Yeniden Kurgulayarak Canlandırma + Metin Tahlili-3 / Dinleme-İzleme — Anadolu İnsanı / Fedakârlık + Edebiyat Atölyesi-2 / Yazma — Belgesele Yönelik Özgün Afiş",
-    "entry_count": 142,
-    "source_limited_entries": 29,
-    "next_printed_page": 303
+    "printed_page_range": "238-307",
+    "scope": "Tema 4 / Hayatın Aynası — Temaya Başlarken, üç Metin Tahlili bloğu, iki Edebiyat Atölyesi ve Tema Ölçme-Değerlendirme bölümü tamamlandı",
+    "entry_count": 156,
+    "source_limited_entries": 32,
+    "next_printed_page": null
   },
   "parts": [
     {
@@ -64,6 +64,10 @@
     },
     {
       "path": "answer-bank/part-11-pages-298-302.json",
+      "entries": 14
+    },
+    {
+      "path": "answer-bank/part-12-pages-303-307.json",
       "entries": 14
     }
   ],
