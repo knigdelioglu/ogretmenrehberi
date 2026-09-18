@@ -15,16 +15,28 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 2, doğal pedagojik bloklar hâlinde yeniden üretilir."
   },
   "coverage": {
-    "printed_page_range": "86-89",
-    "scope": "Temaya Başlarken + Ortak Türk Alfabesi + ana okuma öncesi ortak kelimeler araştırması",
-    "entry_count": 13,
-    "source_limited_entries": 1,
-    "next_printed_page": 90
+    "printed_page_range": "86-112",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 (Okuma — Oğulla Buluşma / Eski İstanbul'dan Çizgiler ara metni dâhil)",
+    "entry_count": 62,
+    "source_limited_entries": 3,
+    "next_printed_page": 113
   },
   "parts": [
     {
       "path": "answer-bank/part-01-pages-86-89.json",
       "entries": 13
+    },
+    {
+      "path": "answer-bank/part-02-pages-90-99.json",
+      "entries": 12
+    },
+    {
+      "path": "answer-bank/part-03-pages-100-104.json",
+      "entries": 15
+    },
+    {
+      "path": "answer-bank/part-04-pages-105-112.json",
+      "entries": 22
     }
   ],
   "rendering_contract": {
