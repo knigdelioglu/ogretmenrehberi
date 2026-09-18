@@ -15,11 +15,11 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 4 doğal pedagojik bloklar hâlinde yeniden üretilir; görsel/biçim bağımlı sorular gerçek sayfa üzerinden doğrulanır."
   },
   "coverage": {
-    "printed_page_range": "238-297",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 / Ben, Mimar Sinan + Metin Tahlili-2 / Küçürek Hikâye — Merdiven + Edebiyat Atölyesi-1 / Konuşma — Tiyatro Metnini Yeniden Kurgulayarak Canlandırma + Metin Tahlili-3 / Dinleme-İzleme — Anadolu İnsanı / Fedakârlık",
-    "entry_count": 128,
-    "source_limited_entries": 28,
-    "next_printed_page": 298
+    "printed_page_range": "238-302",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 / Ben, Mimar Sinan + Metin Tahlili-2 / Küçürek Hikâye — Merdiven + Edebiyat Atölyesi-1 / Konuşma — Tiyatro Metnini Yeniden Kurgulayarak Canlandırma + Metin Tahlili-3 / Dinleme-İzleme — Anadolu İnsanı / Fedakârlık + Edebiyat Atölyesi-2 / Yazma — Belgesele Yönelik Özgün Afiş",
+    "entry_count": 142,
+    "source_limited_entries": 29,
+    "next_printed_page": 303
   },
   "parts": [
     {
@@ -61,6 +61,10 @@
     {
       "path": "answer-bank/part-10-pages-284-297.json",
       "entries": 42
+    },
+    {
+      "path": "answer-bank/part-11-pages-298-302.json",
+      "entries": 14
     }
   ],
   "rendering_contract": {
