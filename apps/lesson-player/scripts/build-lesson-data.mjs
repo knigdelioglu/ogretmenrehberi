@@ -70,6 +70,41 @@ const seenStepIds = new Set();
 const seenAnswerIds = new Map();
 const seenSourceIds = new Set();
 
+const answerStepCountBySource = new Map();
+for (const step of flow.steps) {
+  if (!step.answer_id) continue;
+  answerStepCountBySource.set(
+    step.source_record_id,
+    (answerStepCountBySource.get(step.source_record_id) ?? 0) + 1
+  );
+}
+
+function resolveDisplayPrompt(step, source, answer) {
+  if (step.prompt?.trim()) {
+    return { text: step.prompt.trim(), mode: "FLOW_OVERRIDE" };
+  }
+
+  const sourceIsUnambiguous =
+    source.prompt?.trim() &&
+    (answerStepCountBySource.get(source.source_record_id) ?? 0) === 1;
+
+  if (sourceIsUnambiguous) {
+    return {
+      text: source.prompt.trim().replace(/^Soru\s+\d+\s+[—-]\s+/i, ""),
+      mode: source.prompt_mode ?? "SOURCE_PROMPT"
+    };
+  }
+
+  if (answer?.prompt_summary?.trim()) {
+    return { text: answer.prompt_summary.trim(), mode: "ANSWER_SUMMARY" };
+  }
+
+  return {
+    text: step.content?.lead ?? source.prompt ?? source.book_heading,
+    mode: "SOURCE_OR_CONTENT"
+  };
+}
+
 const steps = flow.steps.map((step) => {
   if (seenStepIds.has(step.id)) {
     fail(`Duplicate lesson step id: ${step.id}`);
@@ -126,9 +161,13 @@ const steps = flow.steps.map((step) => {
     fail(`Step has neither answer_id nor content: ${step.id}`);
   }
 
+  const displayPrompt = resolveDisplayPrompt(step, source, answer);
+
   return {
     id: step.id,
     layout: step.layout,
+    display_prompt: displayPrompt.text,
+    display_prompt_mode: displayPrompt.mode,
     source,
     answer,
     content: step.content ?? null
