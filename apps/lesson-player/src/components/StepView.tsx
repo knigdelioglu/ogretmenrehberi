@@ -11,6 +11,20 @@ interface StepViewProps {
   toggleVocabularyTerm: (term: string) => void;
 }
 
+const taskTypeLabels: Record<string, string> = {
+  QUESTION: "SORU",
+  TABLE: "ÇALIŞMA",
+  PROCESS: "SÜREÇ",
+  REFERENCE: "BİLGİ",
+  ACTIVITY: "ETKİNLİK",
+  PERFORMANCE: "UYGULAMA",
+  ASSESSMENT: "DEĞERLENDİRME"
+};
+
+function taskTypeLabel(taskType: string) {
+  return taskTypeLabels[taskType] ?? taskType.replaceAll("_", " ");
+}
+
 const buttonLabels: Record<RevealKey, string> = {
   guidance: "Yönlendirme",
   answer: "Cevap",
@@ -99,7 +113,7 @@ export function StepView({
             <div className="stage-card__eyebrow">
               {answer.entry_type === "performance_support"
                 ? "Uygulama / performans"
-                : source.task_type}
+                : taskTypeLabel(source.task_type)}
             </div>
             {answer.question_no ? (
               <div className="question-number">Soru {answer.question_no}</div>
@@ -117,7 +131,7 @@ export function StepView({
           </>
         ) : (
           <>
-            <div className="stage-card__eyebrow">{source.task_type}</div>
+            <div className="stage-card__eyebrow">{taskTypeLabel(source.task_type)}</div>
             <h1>{step.display_prompt}</h1>
           </>
         )}
