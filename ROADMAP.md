@@ -234,11 +234,14 @@ Kanonik veriyi sınıfta doğrudan yürütülebilen tam ekran bir ders arayüzü
 - [x] source-index ve answer-bank eksiksizlik kapısını ekle
 - [x] soru, süreç, bilgi, vocabulary ve yapı görünümü için ilk rendererları oluştur
 - [x] kontrollü reveal, klavye navigasyonu ve tam ekranı ekle
-- [ ] CI build sonucunu doğrula
+- [x] CI build sonucunu doğrula
+- [x] gerçek ders kitabıyla s.15–35 akışını doğrula
+- [x] 49 adımlık source/answer/sıra kalite kapısını ekle
+- [x] kullanıcı düzenleme modunun ilk sürümünü ekle
+- [x] presenter/ikinci ekran görünümünü ekle
+- [x] adım bazlı içerik yoğunluğu kontrolünü ekle
 - [ ] gerçek tarayıcı/projektör smoke testi
 - [ ] uzun içerik ve küçük ekran taşma testi
-- [ ] kullanıcı düzenleme modu
-- [ ] presenter/ikinci ekran görünümü
 - [ ] PDF/PPTX dışa aktarma
 
 Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
