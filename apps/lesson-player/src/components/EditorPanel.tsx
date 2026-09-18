@@ -5,6 +5,10 @@ interface EditorPanelProps {
   hasOverride: boolean;
   onPromptChange: (value: string) => void;
   onLayoutChange: (value: LayoutKind) => void;
+  canMoveUp: boolean;
+  canMoveDown: boolean;
+  onMoveUp: () => void;
+  onMoveDown: () => void;
   onReset: () => void;
   onExport: () => void;
   onClose: () => void;
@@ -25,6 +29,10 @@ export function EditorPanel({
   hasOverride,
   onPromptChange,
   onLayoutChange,
+  canMoveUp,
+  canMoveDown,
+  onMoveUp,
+  onMoveDown,
   onReset,
   onExport,
   onClose
@@ -74,6 +82,22 @@ export function EditorPanel({
           ))}
         </select>
       </label>
+
+      <div className="editor-field">
+        <span>Adım sırası</span>
+        <div className="editor-order-actions">
+          <button type="button" onClick={onMoveUp} disabled={!canMoveUp}>
+            ↑ Yukarı taşı
+          </button>
+          <button type="button" onClick={onMoveDown} disabled={!canMoveDown}>
+            ↓ Aşağı taşı
+          </button>
+        </div>
+        <small>
+          Yalnız presentation sırasını değiştirir; source-index ve answer-bank
+          kayıtları değişmez.
+        </small>
+      </div>
 
       <div className="editor-panel__status">
         {hasOverride
