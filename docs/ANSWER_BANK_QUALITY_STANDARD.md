@@ -2,7 +2,7 @@
 
 Bu belge, öğretmen rehberindeki cevap bankasının genel üretim kurallarını tanımlar.
 
-Blok türlerine özgü zorunlu üretim davranışları için ayrıca [BLOCK_AUTHORING_STANDARD.md](BLOCK_AUTHORING_STANDARD.md) uygulanır. Tema 2–4 üretiminde iki belge birlikte bağlayıcıdır.
+Blok türlerine özgü zorunlu üretim davranışları için ayrıca [BLOCK_AUTHORING_STANDARD.md](BLOCK_AUTHORING_STANDARD.md) uygulanır. Bu iki belge yalnız 11. sınıf için değil, sonraki tüm sınıf ve tema üretimlerinde birlikte bağlayıcıdır.
 
 ## Temel yapı
 
@@ -43,6 +43,14 @@ Opsiyonel alanlar:
 11. Konuşma, yazma ve performans blokları klasik cevap anahtarına zorlanmaz. Görev bir ürün oluşturmayı gerektiriyorsa `performance_support` ile sınıfta kullanılabilir örnek plan veya örnek ürün verilir.
 12. Öz değerlendirme ve akran değerlendirme formlarında doğru cevap üretilmez; bunlar öğrencinin gerçek performansına göre doldurulur.
 13. QR video / dinleme içeriği erişilebilir değilse videoda görülmeyen ayrıntılar kesinmiş gibi yazılmaz.
+14. Metin extraction, alt çizgi/renk/görsel/tablo yerleşimi gibi biçim bilgisini kaybedebilir. Cevap bu bilgiye bağlıysa gerçek sayfa görseli doğrulanmadan tahmin yapılmaz.
+15. Harici medya içeren her soru otomatik `source_limited` değildir. Kitap metni cevabı destekliyorsa yalnız desteklenen kısım normal cevaplanabilir; medya özgü ayrıntılar eklenmez.
+16. Araştırma, gezi ve kişisel deneyim görevlerinde sahte sonuç veya yaşanmışlık üretilmez; yöntem, şablon ve model ürün verilir.
+17. Çok adımlı tek bir üretim süreci gereksiz yere ayrı cevaplara bölünmez; pedagojik olarak tek ürün oluşturuyorsa tek `performance_support` kaydında birleştirilebilir.
+18. Dil bilgisi ve sınıflandırma sorularında bütün hedef ögelerin kapsandığı kontrol edilir; birkaç örnekle yetinilmez.
+19. Ders kitabı varsayılan bilgi kaynağıdır. Kaynak dışı bilgi sessizce düzeltme veya tamamlama amacıyla eklenmez; dış bilgi kullanılacaksa açıkça ayrılır.
+20. Kanonik `source_locator` teknik olarak PDF sayfasını tutabilir; kullanıcıya dönük görünümde varsayılan referans basılı sayfadır.
+21. Kindle/EPUB çıktısında soru başlığı cevap gövdesinden kopmayacak şekilde kayıt yeni sanal sayfadan başlatılır.
 
 ## Alıntı gösterimi
 
