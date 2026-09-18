@@ -19,18 +19,7 @@ const buttonLabels: Record<RevealKey, string> = {
 };
 
 function answerControls(step: LessonStep): RevealKey[] {
-  const answer = step.answer;
-  if (!answer) {
-    return step.content?.note ? ["note"] : [];
-  }
-
-  const keys: RevealKey[] = [];
-  if (answer.guidance) keys.push("guidance");
-  keys.push("answer");
-  if (answer.evidence_quotes?.length) keys.push("evidence");
-  if (answer.explanation) keys.push("explanation");
-  if (step.content?.note) keys.push("note");
-  return keys;
+  return step.reveal_order;
 }
 
 function VocabularyBody({
