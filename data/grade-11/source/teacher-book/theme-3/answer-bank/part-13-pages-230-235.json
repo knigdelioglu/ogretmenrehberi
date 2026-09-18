@@ -10,9 +10,14 @@
       "printed_page": 230,
       "question_no": "1",
       "prompt_summary": "Üç metni, edebî metinlerin yazar hayatından iz taşıyıp taşımaması tez ve antitezine göre sınıflandırma",
-      "answer": "Metinler aynı ilişkiyi farklı düzeylerde gösterir. **2 numaralı metin**, doğrudan kişinin kendi hayatını anlattığı için 'edebî metinler yazarın hayatından iz taşır' yargısını en açık biçimde destekler. **1 numaralı metin**, kurmaca bir çevre ve olay dünyası kurduğu için yazar hayatıyla doğrudan özdeşleştirilemeyeceğini gösteren kutba yakındır. **3 numaralı metin** ise gerçek bir yer ve kişisel gözlem izlenimi taşıyan betimlemeyi edebî biçimde dönüştürdüğü için iki görüşün kesişiminde değerlendirilebilir: edebiyat hayattan izler taşıyabilir fakat bu izler kurmaca ve sanat yoluyla dönüştürülür.",
-      "explanation": "Bu sınıflandırmada belirleyici olan 'hayattan iz taşıma' ile 'hayatı birebir aktarma'nın aynı şey olmadığını ayırmaktır.",
-      "source_locator": "basılı s.230 / PDF s.231 — soru 1"
+      "answer": "Venn şemasındaki yerleşim: **TEZ → 2**, **ANTİTEZ → 1**, **KESİŞİM → 3**. 2 numaralı metin, doğrudan kişinin kendi hayatını anlattığı için “edebî metinler yazarın hayatından iz taşır” görüşünü en açık biçimde destekler. 1 numaralı metin kurmaca bir çevre ve olay dünyası kurduğu için yazar hayatıyla doğrudan özdeşleştirilemeyeceğini gösteren kutba yakındır. 3 numaralı metin ise gerçek bir yer ve kişisel gözlem izlenimini edebî biçimde dönüştürdüğü için iki görüşün kesişiminde yer alır: edebiyat hayattan izler taşıyabilir fakat bu izler sanat ve kurmaca yoluyla dönüştürülür.",
+      "explanation": "Bu sınıflandırmada belirleyici olan “hayattan iz taşıma” ile “hayatı birebir aktarma”nın aynı şey olmadığını ayırmaktır.",
+      "source_locator": "basılı s.230 / PDF s.231 — soru 1",
+      "answer_sections": {
+        "tez": "2",
+        "antitez": "1",
+        "kesisim": "3"
+      }
     },
     {
       "question_id": "T3-P230-Q02",
