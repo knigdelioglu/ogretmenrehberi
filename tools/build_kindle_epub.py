@@ -25,10 +25,10 @@ THEME_CONFIG = {
         "title": "Bir Diyeceğim Var!",
         "subtitle": "11. Sınıf Türk Dili ve Edebiyatı · Öğretmen Rehberi",
         "blocks": [
-            (14, 17, "Temaya Başlarken", "temaya-baslarken"),
-            (18, 35, "Metin Tahlili-1 · Karagöz / Yazıcı", "metin-tahlili-1"),
+            (14, 14, "Temaya Başlarken", "temaya-baslarken"),
+            (15, 35, "Metin Tahlili-1 · Karagöz / Yazıcı", "metin-tahlili-1"),
             (36, 52, "Metin Tahlili-2 · Mektup / Âli’ye Mektuplar / Dilekçe", "metin-tahlili-2"),
-            (53, 57, "Edebiyat Atölyesi-1 · Konuşma", "konusma"),
+            (53, 58, "Edebiyat Atölyesi-1 · Konuşma", "konusma"),
             (59, 73, "Metin Tahlili-3 · Dinleme / İzleme", "dinleme-izleme"),
             (74, 78, "Edebiyat Atölyesi-2 · Yazma / E-posta", "yazma"),
             (79, 83, "Tema Sonu Ölçme ve Değerlendirme", "olcme-degerlendirme"),
