@@ -1,0 +1,35 @@
+name: Lesson Player
+
+on:
+  push:
+    branches:
+      - feat/lesson-player-mvp
+    paths:
+      - "apps/lesson-player/**"
+      - "data/grade-11/presentation/**"
+      - "data/grade-11/source/teacher-book/theme-1/**"
+      - ".github/workflows/lesson-player.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: apps/lesson-player/package.json
+
+      - name: Install dependencies
+        working-directory: apps/lesson-player
+        run: npm install --no-audit --no-fund
+
+      - name: Build canonical lesson data and app
+        working-directory: apps/lesson-player
+        run: npm run build
