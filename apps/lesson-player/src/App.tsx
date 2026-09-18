@@ -627,6 +627,7 @@ export default function App() {
           revealed={revealed}
           toggle={toggle}
           presentationMode={presentationMode || displayOnly}
+          showAnswerToggle={!displayOnly}
           visibleVocabularyTerms={
             new Set(vocabularyTerms[step.id] ?? [])
           }
