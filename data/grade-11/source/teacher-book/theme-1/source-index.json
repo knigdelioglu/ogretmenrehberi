@@ -7,7 +7,7 @@
   "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
   "counts": {
     "records": 129,
-    "linked_answers": 74
+    "verified_records": 129
   },
   "records": [
     {
@@ -1472,7 +1472,6 @@
       "source_status": "VERIFIED"
     }
   ],
-  "answer_linkage_policy": "DIRECT_QUESTION_ID_IN_NEW_ANSWER_BANK",
   "legacy_answer_refs_removed": true,
-  "answer_bank_status": "REBUILDING"
+  "answer_bank_status": "COMPLETE_WITH_SOURCE_LIMITED"
 }
