@@ -662,3 +662,177 @@ button:focus-visible {
     padding: 26px 20px;
   }
 }
+
+
+/* Lesson Player v0.3 — live presentation editor */
+
+.editor-panel {
+  position: fixed;
+  top: 76px;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  width: min(430px, 42vw);
+  overflow: auto;
+  padding: 20px;
+  border-left: 1px solid var(--line);
+  background: #fbf8f0;
+  box-shadow: -18px 0 38px rgb(33 41 37 / 0.13);
+}
+
+.editor-panel__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.editor-panel__header h2 {
+  margin: 4px 0 0;
+  font-size: 1.28rem;
+}
+
+.editor-panel__header > button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 1.35rem;
+}
+
+.editor-panel__eyebrow {
+  color: var(--warm);
+  font-size: 0.70rem;
+  font-weight: 840;
+  letter-spacing: 0.10em;
+}
+
+.editor-panel__source {
+  display: grid;
+  gap: 7px;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f1ede3;
+}
+
+.editor-panel__source span {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.editor-panel__source strong {
+  line-height: 1.4;
+}
+
+.editor-panel__source code {
+  width: fit-content;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: rgb(49 94 84 / 0.08);
+  color: #46534e;
+  font-size: 0.72rem;
+}
+
+.editor-field {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.editor-field > span {
+  font-weight: 780;
+  color: #39433e;
+}
+
+.editor-field textarea,
+.editor-field select {
+  width: 100%;
+  border: 1px solid #cfc9bc;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.editor-field textarea {
+  resize: vertical;
+  min-height: 118px;
+  padding: 12px;
+  line-height: 1.5;
+}
+
+.editor-field select {
+  min-height: 44px;
+  padding: 0 10px;
+}
+
+.editor-field small {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.editor-panel__status {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.editor-panel__actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.editor-panel__actions button {
+  min-height: 44px;
+  border: 1px solid #d3cdbf;
+  border-radius: 10px;
+  background: #fff;
+  color: #37423d;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 720;
+}
+
+.editor-panel__actions button.primary {
+  border-color: #284b43;
+  background: #284b43;
+  color: #fff;
+}
+
+.editor-panel__actions button:disabled {
+  cursor: default;
+  opacity: 0.42;
+}
+
+.editor-open:not(.presentation-mode) .content-column {
+  margin-right: min(430px, 42vw);
+}
+
+@media (max-width: 900px) {
+  .editor-panel {
+    width: min(420px, 72vw);
+  }
+
+  .editor-open:not(.presentation-mode) .content-column {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .editor-panel {
+    top: 0;
+    width: 100vw;
+  }
+}
