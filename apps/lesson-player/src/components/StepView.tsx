@@ -6,6 +6,7 @@ interface StepViewProps {
   step: LessonStep;
   revealed: Set<RevealKey>;
   toggle: (key: RevealKey) => void;
+  presentationMode: boolean;
 }
 
 const buttonLabels: Record<RevealKey, string> = {
@@ -57,7 +58,7 @@ function VocabularyBody({
   );
 }
 
-export function StepView({ step, revealed, toggle }: StepViewProps) {
+export function StepView({ step, revealed, toggle, presentationMode }: StepViewProps) {
   const { answer, content, source } = step;
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
@@ -77,16 +78,30 @@ export function StepView({ step, revealed, toggle }: StepViewProps) {
                 ? "Uygulama / performans"
                 : source.task_type}
             </div>
-            <h1>{answer.prompt_summary}</h1>
+            {answer.question_no ? (
+              <div className="question-number">Soru {answer.question_no}</div>
+            ) : null}
+            <h1>{step.display_prompt}</h1>
+            {!presentationMode ? (
+              <div className="prompt-origin">
+                {step.display_prompt_mode === "VERBATIM_SHORT"
+                  ? "Kitaptaki kısa soru metni"
+                  : step.display_prompt_mode === "ANSWER_SUMMARY"
+                    ? "Rehber soru özeti"
+                    : "Kaynak temelli soru"}
+              </div>
+            ) : null}
           </>
         ) : (
           <>
             <div className="stage-card__eyebrow">{source.task_type}</div>
-            <h1>{content?.lead ?? source.prompt ?? source.book_heading}</h1>
+            <h1>{step.display_prompt}</h1>
           </>
         )}
 
-        {content?.lead && answer && <p className="lead">{content.lead}</p>}
+        {content?.lead && answer && content.lead !== step.display_prompt ? (
+          <p className="lead">{content.lead}</p>
+        ) : null}
 
         {content?.items?.length ? (
           <div className="process-list">
@@ -114,7 +129,7 @@ export function StepView({ step, revealed, toggle }: StepViewProps) {
           <VocabularyBody step={step} revealed={revealed} />
         ) : null}
 
-        {controls.length ? (
+        {controls.length && !presentationMode ? (
           <div className="reveal-actions" role="group" aria-label="Öğretmen kontrolleri">
             {controls.map((key) => (
               <button
