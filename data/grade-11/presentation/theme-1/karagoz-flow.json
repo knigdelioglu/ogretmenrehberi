@@ -143,7 +143,8 @@
       "answer_id": "T1-P25-Q01",
       "layout": "vocabulary",
       "prompt": "Bağlamdan hareketle altı çizili kelimelerin anlamlarını tahmin ediniz; ardından sözlükten kontrol ediniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "density": "compact"
     },
     {
       "id": "s25-q2",
