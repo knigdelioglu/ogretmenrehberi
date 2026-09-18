@@ -1,4 +1,5 @@
 import type {
+  DensityKind,
   LayoutKind,
   LessonStep,
   RevealKey,
@@ -10,6 +11,7 @@ interface EditorPanelProps {
   hasOverride: boolean;
   onPromptChange: (value: string) => void;
   onLayoutChange: (value: LayoutKind) => void;
+  onDensityChange: (value: DensityKind) => void;
   onRevealMove: (key: RevealKey, delta: -1 | 1) => void;
   onContentChange: (content: StepContent) => void;
   canMoveUp: boolean;
@@ -22,6 +24,12 @@ interface EditorPanelProps {
   onExport: () => void;
   onClose: () => void;
 }
+
+const densities: Array<{ value: DensityKind; label: string }> = [
+  { value: "large", label: "Geniş — daha büyük yazı, daha az içerik" },
+  { value: "comfortable", label: "Normal — varsayılan" },
+  { value: "compact", label: "Kompakt — daha fazla içerik" }
+];
 
 const revealLabels: Record<RevealKey, string> = {
   guidance: "Yönlendirme",
@@ -46,6 +54,7 @@ export function EditorPanel({
   hasOverride,
   onPromptChange,
   onLayoutChange,
+  onDensityChange,
   onRevealMove,
   onContentChange,
   canMoveUp,
@@ -102,6 +111,26 @@ export function EditorPanel({
             </option>
           ))}
         </select>
+      </label>
+
+      <label className="editor-field">
+        <span>İçerik yoğunluğu</span>
+        <select
+          value={step.density}
+          onChange={(event) =>
+            onDensityChange(event.target.value as DensityKind)
+          }
+        >
+          {densities.map((density) => (
+            <option value={density.value} key={density.value}>
+              {density.label}
+            </option>
+          ))}
+        </select>
+        <small>
+          Projektörde taşma olduğunda kompakt; kısa ve vurucu ekranlarda geniş
+          görünümü kullanabilirsiniz.
+        </small>
       </label>
 
       {step.content ? (
