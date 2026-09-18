@@ -75,12 +75,12 @@ Bu görünümde:
 - sol ders akışı gizlenir,
 - genel öğretmen kontrol düğmeleri gizlenir,
 - içerik daha büyük gösterilir,
-- soru kartındaki küçük cevap ikonu akıllı tahtadan dokunarak kullanılabilir,
+- soru kartındaki **kalem** ikonu cevabı, yönlendirme varsa **ampul** ikonu yönlendirmeyi akıllı tahtadan dokunarak açar,
 - cevap açıldığında soru metni aynı alanda cevapla yer değiştirir; tekrar dokununca soru geri gelir,
 - cevap/yönlendirme/açıklama klavye ile de açılabilir,
 - alt önceki/sonraki navigasyonu korunur.
 
-Ayrı **Öğrenci ekranı** penceresinde cevap ikonu gösterilmez; MacBook/öğretmen ekranındaki soru → cevap değişimi öğrenci ekranına senkronize edilir.
+Ayrı **Öğrenci ekranı** penceresinde kalem/ampul kontrol ikonları gösterilmez; MacBook/öğretmen ekranındaki cevap ve yönlendirme durumu öğrenci ekranına senkronize edilir.
 
 Üst menüde **Öğrenci ekranını aç** seçeneği ayrıca ikinci bir tarayıcı penceresi açar. Öğretmen görünümündeki adım, reveal ve kelime-anlam değişiklikleri bu pencereye anlık olarak senkronize edilir. İkinci ekran öğretmen kontrollerini göstermez.
 
