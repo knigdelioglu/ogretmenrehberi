@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 2, "Lesson catalog en az iki ders içermeli.");
+assert(lessons.length >= 3, "Lesson catalog en az üç ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -228,6 +228,68 @@ assert(s52q1, "s52 Dilekçe yazma adımı eksik.");
 assert(
   s52q1.answer?.entry_type === "performance_support",
   "s52 Dilekçe yazma performans desteği olarak korunmalı."
+);
+
+const speaking = byLessonId.get("T11-T01-KONUSMA");
+assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
+assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
+assert(speaking.coverage.steps === 11, "Konuşma dersi 11 adım olmalı.");
+assert(
+  speaking.coverage.source_records === 7,
+  "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
+);
+assert(
+  speaking.coverage.answer_entries === 9,
+  "Konuşma dersi 9 answer-bank kaydını kapsamalı."
+);
+
+const speakingById = new Map(speaking.steps.map((step) => [step.id, step]));
+
+const s53q1 = speakingById.get("s53-q1");
+assert(s53q1, "Konuşma s53-q1 bulunamadı.");
+assert(
+  s53q1.answer?.entry_type === "source_limited",
+  "Video bağımlı s53-q1 source_limited kalmalı."
+);
+assert(
+  s53q1.display_prompt_mode === "VERBATIM_SHORT",
+  "s53-q1 kitap soru metniyle gösterilmeli."
+);
+
+const s54Plan = speakingById.get("s54-plan");
+assert(s54Plan, "Konuşma s54 planlama adımı eksik.");
+assert(
+  s54Plan.answer?.entry_type === "performance_support",
+  "s54 planlama performans desteğine bağlı olmalı."
+);
+assert(
+  s54Plan.content?.items?.length === 6,
+  "s54 planlama altı zorunlu hazırlık adımını taşımalı."
+);
+
+const s57Performance = speakingById.get("s57-performance");
+assert(s57Performance, "Konuşma s57 canlı canlandırma adımı eksik.");
+assert(
+  s57Performance.content?.items?.length === 14,
+  "s57 canlı canlandırma 14 uygulama ölçütünü korumalı."
+);
+
+const s58Assessment = speakingById.get("s58-self-assessment");
+assert(s58Assessment, "Konuşma s58 öz değerlendirme adımı eksik.");
+assert(
+  s58Assessment.content?.items?.length === 10,
+  "s58 öz değerlendirme 10 görünür ölçütü korumalı."
+);
+
+const s58Feedback = speakingById.get("s58-feedback");
+assert(s58Feedback, "Konuşma s58 geri bildirim adımı eksik.");
+assert(
+  s58Feedback.source.source_record_id === "T01-S0063",
+  "s58 geri bildirim dış QR sınırını doğru source kaydıyla korumalı."
+);
+assert(
+  JSON.stringify(s58Feedback.reveal_order) === JSON.stringify(["note"]),
+  "s58 QR kaynak sınırı öğretmen notu reveal'i olarak erişilebilir olmalı."
 );
 
 console.log(
