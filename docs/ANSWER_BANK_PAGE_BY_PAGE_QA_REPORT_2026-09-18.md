@@ -16,7 +16,7 @@ Her tema için master `answer-bank.json` dosyasının indekslediği canonical pa
 |---|---:|---|---|
 | Tema 1 | 151 | **Düzeltildi / yeniden doğrulandı** | 79 `entry_type` ve 17 `source_locator` eksiği giderildi; s.34 araştırma desteği ve s.64 adım 3 eklendi; performans görevleri yeniden sınıflandırıldı |
 | Tema 2 | 167 | **Düzeltildi / yeniden doğrulandı** | s.88, s.96, s.99 ve s.116 bulguları giderildi; gerçek PDF görselleri kullanıldı; `source_limited` 12 → 9 |
-| Tema 3 | 146 | **Geçti** | Zorunlu alanlar temiz; doğrulanabilir sorularda belirgin yanlış/eksik bulunmadı; medya bağımlı `source_limited` kayıtlar yerinde |
+| Tema 3 | 146 | **Yeniden doğrulandı / küçük iyileştirme yapıldı** | Zorunlu alanlar temiz; source-limited kararları gerçek PDF ile yeniden doğrulandı; s.230 Venn cevabı doğrudan TEZ/ANTİTEZ/KESİŞİM biçiminde yapılandırıldı |
 | Tema 4 | 156 | **Düzeltme gerekli** | s.268 görev alt maddesi kısmi eksik; s.304/2 eksik çoktan seçmeli sonuç; s.305 yanlış `source_limited`; iki orphan/legacy part dosyası |
 
 Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamamlandığını gösterir. **Tema 1 ve Tema 2 bulguları 18.09.2026 tarihinde giderilmiş ve yeniden doğrulanmıştır.** Tema 4 için bu raporda açık kalan bulgular giderilmeden tüm sınıf için `QA_PASSED` benzeri bir durum verilmemelidir.
@@ -69,9 +69,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 
 ### Tema 3 — Yaşamın İzinde (s.162–235)
 
-Bu turda **kritik/yüksek/orta düzey doğrulanmış hata bulunmadı**. Huzur bölümündeki Suat/Fâhir gibi kitapta verilen parçalarla yeterince desteklenmeyen alanların `source_limited` bırakılması doğru. Direnişin Ustaları ve Aile Bağları gibi QR medyaya bağlı sorularda da sınır korunmuş. s.230–235 ölçme-değerlendirme cevapları seçenekler ve tablolarla uyumlu.
-
-Küçük kullanılabilirlik notu: `T3-P230-Q01` doğru mantığı veriyor fakat Venn şemasına doğrudan `TEZ: 2 / ANTİTEZ: 1 / KESİŞİM: 3` biçiminde sonuç eklenirse öğretmen kullanımında daha hızlı olur; bu bir doğruluk hatası değildir.
+**Yeniden doğrulama tamamlandı.** Kritik/yüksek/orta düzey doğrulanmış hata bulunmadı. Huzur bölümündeki `source_limited` kararları gerçek PDF sayfa render'larıyla tekrar kontrol edildi: s.177–178'de Mescid-i Aksa için karşılaştırma görseli ve boş tablo bulunuyor fakat karşılaştırmayı tam dolduracak ikinci metin görünmüyor; s.180–181'de Suat ve Fâhir satırlarını güvenilir biçimde tamamlayacak doğrudan kanıt yok. Bu nedenle bu sınırlandırmalar korunmuştur. Direnişin Ustaları ve Aile Bağları gibi QR medyaya bağlı kayıtlar da yerindedir. `T3-P230-Q01` ise kullanılabilirlik açısından iyileştirilerek Venn yerleşimi doğrudan `TEZ → 2 / ANTİTEZ → 1 / KESİŞİM → 3` biçiminde ve `answer_sections` alanıyla verilmiştir.
 
 ### Tema 4 — Hayatın Aynası (s.238–307)
 
@@ -422,6 +420,18 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 - Master part toplamı: **167**
 - Genel manifest answer-bank toplamı: **620**
 - Düzeltilen ana kayıtlar: `T2-P88-Q03`, `T2-P96-Q04A`, `T2-P99-Q02`, `T2-P116-VOC01`
+
+## Tema 3 yeniden doğrulama — 18.09.2026
+
+- İyileştirme commit'i: `598c4a36d4662644a65787a84dd4ae0cd42470bf`
+- Canonical Tema 3 kayıt sayısı: **146**
+- Zorunlu alan eksiği: **0**
+- Duplicate `question_id`: **0**
+- Boş `answer`: **0**
+- `source_limited`: **21** (gerçek kaynak sınırı nedeniyle korundu)
+- Orphan/indekssiz part dosyası: **0**
+- Master part toplamı: **146**
+- Kullanılabilirlik iyileştirmesi: `T3-P230-Q01` Venn sonucu yapılandırıldı
 
 ## Sonuç
 
