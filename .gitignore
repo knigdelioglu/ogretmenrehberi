@@ -35,7 +35,8 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Lesson Player generated data
-apps/lesson-player/src/generated/karagoz.json
+# Rebuilt by npm run dev/build from canonical source + presentation files.
+apps/lesson-player/src/generated/*.json
 
 # Rust tooling
 target/
