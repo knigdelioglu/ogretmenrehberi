@@ -223,80 +223,84 @@ assert(
   "s51 Dilekçe doğru source-index kaydına bağlı olmalı."
 );
 
-const konusma = byLessonId.get("T11-T01-KONUSMA");
-assert(konusma, "Konuşma dersi catalog içinde bulunamadı.");
-assert(konusma.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
-assert(konusma.coverage.steps === 13, "Konuşma dersi 13 adım olmalı.");
-assert(
-  konusma.coverage.source_records === 6,
-  "Konuşma dersi 6 source-index kaydını kapsamalı."
-);
-assert(
-  konusma.coverage.answer_entries === 9,
-  "Konuşma dersi 9 answer-bank kaydını kapsamalı."
-);
-
-const konusmaById = new Map(konusma.steps.map((step) => [step.id, step]));
-const konusmaOrderedIds = konusma.steps.map((step) => step.id);
-
-const k53q1 = konusmaById.get("s53-q1");
-assert(k53q1, "Konuşma s53-q1 bulunamadı.");
-assert(
-  k53q1.answer?.entry_type === "source_limited",
-  "QR videoya bağlı s53-q1 source_limited olarak korunmalı."
-);
-assert(
-  k53q1.display_prompt_mode === "VERBATIM_SHORT",
-  "s53-q1 doğrulanmış kitap sorusunu kullanmalı."
-);
-
-const k54Process = konusmaById.get("s54-process");
-assert(k54Process, "Konuşma s54 planlama süreci eksik.");
-assert(
-  k54Process.layout === "process" && k54Process.answer === null,
-  "s54 planlama adımı cevaba bağlı olmayan süreç ekranı olmalı."
-);
-assert(
-  konusmaOrderedIds.indexOf("s54-process") <
-    konusmaOrderedIds.indexOf("s54-perf"),
-  "s54 planlama süreci örnek plandan önce gelmeli."
-);
-
-const k55Perf = konusmaById.get("s55-perf");
-assert(k55Perf, "Konuşma s55 canlandırma metni desteği eksik.");
-assert(
-  k55Perf.answer?.entry_type === "performance_support",
-  "s55 canlandırma metni performans desteği olmalı."
-);
-
-const k56q2 = konusmaById.get("s56-q2");
-assert(k56q2, "Konuşma s56-q2 bulunamadı.");
-assert(
-  k56q2.layout === "structure" && k56q2.density === "compact",
-  "s56 sınıflandırma ekranı kompakt yapı görünümünde olmalı."
-);
-
-const k57Rules = konusmaById.get("s57-rules");
-assert(k57Rules, "Konuşma s57 uygulama kuralları eksik.");
-assert(
-  konusmaOrderedIds.indexOf("s57-rules") <
-    konusmaOrderedIds.indexOf("s57-perf"),
-  "s57 uygulama kuralları performans kontrolünden önce gelmeli."
-);
-
-const k58 = konusmaById.get("s58-assessment");
-assert(k58, "Konuşma s58 öz/akran değerlendirme adımı eksik.");
-assert(
-  k58.source.source_record_id === "T01-S0062" &&
-    k58.layout === "assessment",
-  "s58 değerlendirme doğru kaynak ve layout ile bağlı olmalı."
-);
-
 const s52q1 = mektupById.get("s52-q1");
 assert(s52q1, "s52 Dilekçe yazma adımı eksik.");
 assert(
   s52q1.answer?.entry_type === "performance_support",
   "s52 Dilekçe yazma performans desteği olarak korunmalı."
+);
+
+const speaking = byLessonId.get("T11-T01-KONUSMA");
+assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
+assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
+assert(speaking.coverage.steps === 13, "Konuşma dersi 13 adım olmalı.");
+assert(
+  speaking.coverage.source_records === 7,
+  "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
+);
+assert(
+  speaking.coverage.answer_entries === 9,
+  "Konuşma dersi 9 answer-bank kaydını kapsamalı."
+);
+
+const speakingById = new Map(speaking.steps.map((step) => [step.id, step]));
+
+const s53q1 = speakingById.get("s53-q1");
+assert(s53q1, "Konuşma s53-q1 bulunamadı.");
+assert(
+  s53q1.answer?.entry_type === "source_limited",
+  "Video bağımlı s53-q1 source_limited kalmalı."
+);
+assert(
+  s53q1.display_prompt_mode === "VERBATIM_SHORT",
+  "s53-q1 kitap soru metniyle gösterilmeli."
+);
+
+const s54Plan = speakingById.get("s54-plan");
+assert(s54Plan, "Konuşma s54 planlama adımı eksik.");
+assert(
+  s54Plan.answer?.entry_type === "performance_support",
+  "s54 planlama performans desteğine bağlı olmalı."
+);
+assert(
+  s54Plan.content?.items?.length === 6,
+  "s54 planlama altı zorunlu hazırlık adımını taşımalı."
+);
+
+const s57Performance1 = speakingById.get("s57-performance-1");
+const s57Performance2 = speakingById.get("s57-performance-2");
+assert(s57Performance1 && s57Performance2, "Konuşma s57 iki ekranı da bulunmalı.");
+assert(
+  (s57Performance1.content?.items?.length ?? 0) +
+    (s57Performance2.content?.items?.length ?? 0) === 14,
+  "s57 canlı canlandırma 14 uygulama ölçütünü iki ekranda korumalı."
+);
+assert(
+  s57Performance2.answer?.question_id === "T1-P57-PERF01",
+  "s57 performans desteği ikinci uygulama ekranında erişilebilir olmalı."
+);
+
+const s58Assessment1 = speakingById.get("s58-self-assessment-1");
+const s58Assessment2 = speakingById.get("s58-self-assessment-2");
+assert(
+  s58Assessment1 && s58Assessment2,
+  "Konuşma s58 öz değerlendirme iki ekranı da bulunmalı."
+);
+assert(
+  (s58Assessment1.content?.items?.length ?? 0) +
+    (s58Assessment2.content?.items?.length ?? 0) === 10,
+  "s58 öz değerlendirme 10 görünür ölçütü iki ekranda korumalı."
+);
+
+const s58Feedback = speakingById.get("s58-feedback");
+assert(s58Feedback, "Konuşma s58 geri bildirim adımı eksik.");
+assert(
+  s58Feedback.source.source_record_id === "T01-S0063",
+  "s58 geri bildirim dış QR sınırını doğru source kaydıyla korumalı."
+);
+assert(
+  JSON.stringify(s58Feedback.reveal_order) === JSON.stringify(["note"]),
+  "s58 QR kaynak sınırı öğretmen notu reveal'i olarak erişilebilir olmalı."
 );
 
 console.log(

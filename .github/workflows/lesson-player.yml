@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - "feat/**"
+      - "fix/**"
     paths:
       - "apps/lesson-player/**"
       - "data/grade-11/presentation/**"
@@ -121,21 +122,30 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-mektup-vocabulary.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T01-MEKTUP&step=s39-q1"
 
-          "$CHROME" \
-            --headless=new \
-            --no-sandbox \
-            --disable-gpu \
-            --window-size=1440,900 \
-            --screenshot="$GITHUB_WORKSPACE/lesson-player-konusma-plan.png" \
-            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s54-process"
 
           "$CHROME" \
             --headless=new \
             --no-sandbox \
             --disable-gpu \
             --window-size=1440,900 \
-            --screenshot="$GITHUB_WORKSPACE/lesson-player-konusma-assessment.png" \
-            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s58-assessment"
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-speaking-source-limited.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T01-KONUSMA&step=s53-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-speaking-performance.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s57-performance-1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-speaking-assessment.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-KONUSMA&step=s58-self-assessment-1"
 
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
@@ -149,7 +159,8 @@ jobs:
             lesson-player-process.png
             lesson-player-mektup.png
             lesson-player-mektup-vocabulary.png
-            lesson-player-konusma-plan.png
-            lesson-player-konusma-assessment.png
+            lesson-player-speaking-source-limited.png
+            lesson-player-speaking-performance.png
+            lesson-player-speaking-assessment.png
             apps/lesson-player/dist
           if-no-files-found: error

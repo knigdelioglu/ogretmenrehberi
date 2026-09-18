@@ -1338,3 +1338,39 @@ button:focus-visible {
     min-width: 180px;
   }
 }
+
+
+/* Long lesson titles: keep the teacher toolbar on one row on classroom displays */
+
+@media (min-width: 1181px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: minmax(250px, 360px) minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+  }
+
+  .topbar > :first-child {
+    min-width: 0;
+  }
+
+  .topbar__title {
+    line-height: 1.08;
+  }
+
+  .topbar__actions {
+    min-width: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  .lesson-select {
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 330px;
+  }
+
+  .topbar button {
+    padding: 9px 11px;
+  }
+}

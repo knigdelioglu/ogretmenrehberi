@@ -8,7 +8,7 @@ Ana ilke:
 
 > Kanonik veri tek gerçek içerik kaynağıdır. Uygulama, içeriği yeniden yazmaz; ders sırasını, görünümü ve aşamalı gösterimi tanımlar.
 
-İlk pilot Karagöz / Yazıcı ile tamamlandı. Motor artık birden fazla lesson-flow dosyasını katalog hâlinde yükler; ikinci doğrulanmış ders **Mektup / Âli’ye Mektuplar → basılı s.36–52** kapsamıdır.
+İlk pilot Karagöz / Yazıcı ile tamamlandı. Motor birden fazla lesson-flow dosyasını katalog hâlinde yükler. Doğrulanmış kapsam artık **Karagöz / Yazıcı s.15–35**, **Mektup / Âli’ye Mektuplar s.36–52** ve **Edebiyat Atölyesi-1 / Konuşma s.53–58** bloklarını içerir.
 
 ---
 
@@ -358,7 +358,7 @@ Build sırasında en az şu kontroller yapılır:
 - [x] çoklu lesson-flow kataloğu
 - [x] ders seçici ve lesson deep-link
 - [x] Mektup / Âli’ye Mektuplar (s.36–52)
-- [ ] Konuşma
+- [x] Edebiyat Atölyesi-1 / Konuşma (s.53–58)
 - [ ] Dinleme/İzleme
 - [ ] E-posta
 - [ ] Tema sonu ölçme-değerlendirme
