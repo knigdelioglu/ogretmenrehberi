@@ -5,7 +5,7 @@
   "grade": 11,
   "theme_id": "TEMA_01",
   "theme_title": "BİR DİYECEĞİM VAR!",
-  "status": "PARTIAL_REBUILD",
+  "status": "COMPLETE_WITH_SOURCE_LIMITED",
   "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
   "source_policy": {
     "legacy_answer_bank_reused": false,
@@ -14,10 +14,11 @@
     "note": "Gerçek kitap sayfası nihai kontroldür; eski soru envanteri eksik/özetlenmiş kayıtlar içerdiği için bu blok kitap sayfalarından yeniden indekslenmiştir."
   },
   "coverage": {
-    "printed_page_range": "14-78",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 + Metin Tahlili-2 + Edebiyat Atölyesi-1 (Konuşma) + Metin Tahlili-3 (Dinleme/İzleme) + Edebiyat Atölyesi-2 (Yazma / E-posta)",
-    "entry_count": 136,
-    "next_printed_page": 79
+    "printed_page_range": "14-83",
+    "scope": "1. Tema: Bir Diyeceğim Var! — temaya başlama, üç metin tahlili, konuşma, yazma ve tema sonu ölçme-değerlendirme",
+    "entry_count": 149,
+    "source_limited_entries": 12,
+    "next_scope": "TEMA_02"
   },
   "parts": [
     {
@@ -107,6 +108,10 @@
     {
       "path": "answer-bank/part-19-pages-75-78.json",
       "entries": 7
+    },
+    {
+      "path": "answer-bank/part-20-pages-79-83.json",
+      "entries": 13
     }
   ],
   "rendering_contract": {
