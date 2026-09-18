@@ -1,3 +1,5 @@
+export type DensityKind = "large" | "comfortable" | "compact";
+
 export type LayoutKind =
   | "question"
   | "vocabulary"
@@ -51,6 +53,7 @@ export interface StepContent {
 export interface LessonStep {
   id: string;
   layout: LayoutKind;
+  density: DensityKind;
   reveal_order: RevealKey[];
   display_prompt: string;
   display_prompt_mode:
