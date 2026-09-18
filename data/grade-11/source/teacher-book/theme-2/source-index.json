@@ -7,7 +7,8 @@
   "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
   "counts": {
     "records": 158,
-    "linked_answers": 167
+    "linked_answers": 167,
+    "verified_records": 46
   },
   "records": [
     {
@@ -177,12 +178,12 @@
     {
       "source_record_id": "T02-S0015",
       "theme_id": "TEMA_02",
-      "printed_page_range": "89",
+      "printed_page_range": "89-90",
       "book_heading": "Okumayı Yönetebilme — Sıra Sizde / Türk dünyasında ortak kelimeler",
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
-      "source_locator": "basılı s.89 / PDF s.90 — Sıra Sizde",
-      "source_status": "REVIEW_REQUIRED"
+      "source_locator": "basılı s.89-90 / PDF s.90-91",
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0016",
@@ -194,7 +195,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.90 / PDF s.91 — hazırlık sorusu 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0017",
@@ -206,7 +207,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.90 / PDF s.91 — hazırlık sorusu 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0018",
@@ -216,17 +217,17 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.90 / PDF s.91 — okuma stratejisi",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0019",
       "theme_id": "TEMA_02",
-      "printed_page_range": "90-94",
+      "printed_page_range": "90-95",
       "book_heading": "Metni Okuyalım — Oğulla Buluşma",
       "task_type": "REFERENCE",
       "rights_mode": "PAGE_REFERENCE",
-      "source_locator": "basılı s.90-94 / PDF s.91-95 — ana metin",
-      "source_status": "REVIEW_REQUIRED"
+      "source_locator": "basılı s.90-95 / PDF s.91-96",
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0020",
@@ -236,7 +237,7 @@
       "task_type": "VOCABULARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.95-96 / PDF s.96-97 — Söz Varlığımız",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0021",
@@ -248,7 +249,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.96 / PDF s.97 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0022",
@@ -258,7 +259,7 @@
       "task_type": "COMPARISON",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.96-98 / PDF s.97-99 — Türkçe çeşitliliği / Kontrol Listesi",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0023",
@@ -270,7 +271,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.98 / PDF s.99 — Hatırlayalım soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0024",
@@ -282,7 +283,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.99 / PDF s.100 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0025",
@@ -294,7 +295,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.99 / PDF s.100 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0026",
@@ -306,7 +307,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0027",
@@ -318,7 +319,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0028",
@@ -330,7 +331,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0029",
@@ -342,7 +343,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0030",
@@ -354,7 +355,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0031",
@@ -366,7 +367,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 6",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0032",
@@ -378,7 +379,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 7",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0033",
@@ -390,7 +391,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.100 / PDF s.101 — soru 8",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0034",
@@ -402,7 +403,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.101 / PDF s.102 — soru 9",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0035",
@@ -414,7 +415,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.101 / PDF s.102 — soru 10",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0036",
@@ -426,17 +427,17 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.102 / PDF s.103 — soru 11",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0037",
       "theme_id": "TEMA_02",
-      "printed_page_range": "102",
+      "printed_page_range": "102-103",
       "book_heading": "Sıra Sizde — fiil kipleri ve çekim",
       "task_type": "TABLE",
       "rights_mode": "DERIVED_ACTIVITY",
-      "source_locator": "basılı s.102 / PDF s.103 — dil bilgisi görev 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_locator": "basılı s.102-103 / PDF s.103-104",
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0038",
@@ -446,7 +447,7 @@
       "task_type": "TABLE",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.103 / PDF s.104 — dil bilgisi görev 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0039",
@@ -456,7 +457,7 @@
       "task_type": "TABLE",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.104 / PDF s.105 — dil bilgisi görev 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0040",
@@ -466,7 +467,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.104 / PDF s.105 — dil bilgisi görev 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0041",
@@ -476,7 +477,7 @@
       "task_type": "TABLE",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.105 / PDF s.106 — hikâye haritası ve ilişki açıklamaları",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0042",
@@ -486,7 +487,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.106 / PDF s.107 — görüş geliştirme tekniği",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0043",
@@ -498,7 +499,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.106 / PDF s.107 — soru 1a",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0044",
@@ -510,7 +511,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.107 / PDF s.108 — soru 1b",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0045",
@@ -520,7 +521,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.107 / PDF s.108 — grup değer çalışması",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0046",
@@ -532,7 +533,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.107 / PDF s.108 — Fark Edelim",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0047",
