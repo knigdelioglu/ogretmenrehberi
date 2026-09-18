@@ -47,6 +47,12 @@ type ProjectionSyncState = {
 };
 
 function restoredIndex() {
+  const requestedStep = new URLSearchParams(window.location.search).get("step");
+  if (requestedStep) {
+    const requestedIndex = lesson.steps.findIndex((step) => step.id === requestedStep);
+    if (requestedIndex >= 0) return requestedIndex;
+  }
+
   const raw = window.localStorage.getItem(progressKey);
   const parsed = raw ? Number(raw) : 0;
   if (!Number.isInteger(parsed)) return 0;
@@ -150,7 +156,17 @@ export default function App() {
     const clamped = Math.max(0, Math.min(lesson.steps.length - 1, next));
     setIndex(clamped);
     setRevealed(new Set());
-  }, []);
+
+    if (!displayOnly) {
+      const currentStepId = effectiveSteps[clamped]?.id;
+      if (currentStepId) {
+        const url = new URL(window.location.href);
+        url.searchParams.set("step", currentStepId);
+        url.searchParams.delete("display");
+        window.history.replaceState(null, "", url);
+      }
+    }
+  }, [effectiveSteps]);
 
   const toggle = useCallback((key: RevealKey) => {
     setRevealed((current) => {
