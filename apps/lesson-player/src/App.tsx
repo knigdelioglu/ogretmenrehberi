@@ -621,7 +621,22 @@ export default function App() {
           onLayoutChange={(value) => updateStepOverride(step.id, { layout: value })}
           onDensityChange={(value) => updateStepOverride(step.id, { density: value })}
           onRevealMove={(key, delta) => moveRevealLayer(step.id, key, delta)}
-          onContentChange={(content) => updateStepOverride(step.id, { content })}
+          onContentChange={(content) => {
+            let revealOrder = step.reveal_order;
+            const noteExists = Boolean(content.note?.trim());
+            const hasNoteReveal = revealOrder.includes("note");
+
+            if (!noteExists && hasNoteReveal) {
+              revealOrder = revealOrder.filter((key) => key !== "note");
+            } else if (noteExists && !hasNoteReveal) {
+              revealOrder = [...revealOrder, "note"];
+            }
+
+            updateStepOverride(step.id, {
+              content,
+              reveal_order: revealOrder
+            });
+          }}
           canMoveUp={index > 0}
           canMoveDown={index < effectiveSteps.length - 1}
           onMoveUp={() => moveCurrentStep(-1)}
