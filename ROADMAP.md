@@ -229,6 +229,7 @@ Kanonik veriyi sınıfta doğrudan yürütülebilen tam ekran bir ders arayüzü
 - **Mektup / Âli’ye Mektuplar — s.36–52**
 - **Edebiyat Atölyesi-1 / Konuşma — s.53–58**
 - **Metin Tahlili-3 / Dinleme-İzleme — s.59–73**
+- **Edebiyat Atölyesi-2 / Yazma — s.74–78**
 
 ### İşler
 - [x] uygulama planını ve lesson-flow sözleşmesini oluştur
@@ -257,6 +258,7 @@ Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
 - [x] çoklu ders kataloğu ve ders seçici
 - [x] Mektup / Âli’ye Mektuplar s.36–52
 - [x] Dinleme-İzleme s.59–73
+- [x] Edebiyat Atölyesi-2 / Yazma s.74–78
 
 ## Faz 8 — 1. Tema entegrasyon ve kalite dondurması
 
