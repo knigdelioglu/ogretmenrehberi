@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 6, "Lesson catalog en az altı ders içermeli.");
+assert(lessons.length === 7, "1. Tema lesson catalog tam olarak yedi ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -21,6 +21,56 @@ assert(
 assert(
   new Set(lessons.map((lesson) => lesson.lesson_slug)).size === lessons.length,
   "Lesson catalog içinde yinelenen lesson_slug olmamalı."
+);
+
+const themeIntro = byLessonId.get("T11-T01-GIRIS");
+assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");
+assert(themeIntro.lesson_slug === "tema-girisi", "Tema girişi lesson_slug doğru olmalı.");
+assert(
+  themeIntro.coverage.steps === 3 &&
+    themeIntro.coverage.source_records === 3 &&
+    themeIntro.coverage.answer_entries === 2,
+  "Tema girişi 3 adım / 3 source / 2 answer olmalı."
+);
+
+const themeIntroById = new Map(themeIntro.steps.map((step) => [step.id, step]));
+assert(
+  themeIntroById.get("s12-13-overview")?.answer === null &&
+    themeIntroById.get("s12-13-overview")?.layout === "reference",
+  "s.12-13 tema açılışı cevapsız referans ekranı olmalı."
+);
+assert(
+  themeIntroById.get("s14-q1")?.answer?.question_id === "T1-P14-Q01" &&
+    themeIntroById.get("s14-q2")?.answer?.question_id === "T1-P14-Q02",
+  "s.14 iki Temaya Başlarken sorusunun cevabı erişilebilir olmalı."
+);
+
+const expectedLessonOrder = [
+  "T11-T01-GIRIS",
+  "T11-T01-KARAGOZ",
+  "T11-T01-MEKTUP",
+  "T11-T01-KONUSMA",
+  "T11-T01-DINLEME-IZLEME",
+  "T11-T01-YAZMA",
+  "T11-T01-DEGERLENDIRME"
+];
+assert(
+  JSON.stringify(lessons.map((lesson) => lesson.lesson_id)) ===
+    JSON.stringify(expectedLessonOrder),
+  "1. Tema ders kataloğu basılı kitap sırasını korumalı."
+);
+
+assert(
+  lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 176,
+  "1. Tema toplam 176 ders adımı içermeli."
+);
+assert(
+  lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
+  "1. Tema 129 source-index kaydının tamamını kapsamalı."
+);
+assert(
+  lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 151,
+  "1. Tema 151 answer-bank kaydının tamamını kapsamalı."
 );
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
