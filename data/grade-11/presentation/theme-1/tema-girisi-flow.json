@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.2.0",
+  "lesson_id": "T11-T01-GIRIS",
+  "lesson_slug": "tema-girisi",
+  "title": "1. Tema — Giriş",
+  "subtitle": "Bir Diyeceğim Var! · 11. Sınıf",
+  "printed_page_range": "12-14",
+  "required_source_range": {
+    "from": "T01-S0001",
+    "to": "T01-S0003"
+  },
+  "steps": [
+    {
+      "id": "s12-13-overview",
+      "source_record_id": "T01-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Bir Diyeceğim Var! — Tema yol haritası",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu temada iletişim, dil ve edebiyat ilişkisini okuma, dinleme/izleme, konuşma ve yazma çalışmalarıyla birlikte izleyeceksiniz.",
+        "sections": [
+          {
+            "title": "Okuma",
+            "body": "Karagöz / Yazıcı, Âli’ye Mektuplar ve Dilekçe üzerinden dilin iletişimdeki işlevini inceleyin."
+          },
+          {
+            "title": "Dinleme / İzleme",
+            "body": "Değişen iletişim araçlarının günlük hayata ve iletişim alışkanlıklarına etkisini değerlendirin."
+          },
+          {
+            "title": "Konuşma",
+            "body": "Sözlü iletişim engellerini konu alan bir drama hazırlayıp sergileyin."
+          },
+          {
+            "title": "Yazma",
+            "body": "Amaç ve alıcıya uygun bir e-posta planlayıp yazın."
+          }
+        ],
+        "note": "Anahtar kavramlar arasında geleneksel Türk tiyatrosu, Karagöz, mektup, mizah, dilekçe ve e-posta yer alır."
+      }
+    },
+    {
+      "id": "s14-q1",
+      "source_record_id": "T01-S0002",
+      "answer_id": "T1-P14-Q01",
+      "layout": "question"
+    },
+    {
+      "id": "s14-q2",
+      "source_record_id": "T01-S0003",
+      "answer_id": "T1-P14-Q02",
+      "layout": "question"
+    }
+  ]
+}
