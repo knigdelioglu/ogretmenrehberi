@@ -284,6 +284,55 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-question.png" \
             "http://127.0.0.1:4173/?lesson=T11-T02-GIRIS&step=s87-q1"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-OGULLA-BULUSMA&step=s95-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-comparison.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-OGULLA-BULUSMA&step=s98-q4c"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-grammar.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-OGULLA-BULUSMA&step=s102-103-gram1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-map.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-OGULLA-BULUSMA&step=s105-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-discussion.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-OGULLA-BULUSMA&step=s106-discussion"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-values.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-OGULLA-BULUSMA&step=s107-values"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -312,5 +361,11 @@ jobs:
             lesson-player-theme-intro.png
             lesson-player-theme2-intro.png
             lesson-player-theme2-question.png
+            lesson-player-theme2-ogulla-vocabulary.png
+            lesson-player-theme2-ogulla-comparison.png
+            lesson-player-theme2-ogulla-grammar.png
+            lesson-player-theme2-ogulla-map.png
+            lesson-player-theme2-ogulla-discussion.png
+            lesson-player-theme2-ogulla-values.png
             apps/lesson-player/dist
           if-no-files-found: error
