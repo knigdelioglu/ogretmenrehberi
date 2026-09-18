@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { RevealPanel } from "./RevealPanel";
 import { StructuredSections } from "./StructuredSections";
 import type { LessonStep, RevealKey } from "../types";
@@ -8,6 +7,8 @@ interface StepViewProps {
   revealed: Set<RevealKey>;
   toggle: (key: RevealKey) => void;
   presentationMode: boolean;
+  visibleVocabularyTerms: ReadonlySet<string>;
+  toggleVocabularyTerm: (term: string) => void;
 }
 
 const buttonLabels: Record<RevealKey, string> = {
@@ -24,25 +25,21 @@ function answerControls(step: LessonStep): RevealKey[] {
 
 function VocabularyBody({
   step,
-  revealed
+  revealed,
+  visibleTerms,
+  toggleTerm,
+  presentationMode
 }: {
   step: LessonStep;
   revealed: Set<RevealKey>;
+  visibleTerms: ReadonlySet<string>;
+  toggleTerm: (term: string) => void;
+  presentationMode: boolean;
 }) {
   const sections = step.answer?.answer_sections;
-  const [visibleTerms, setVisibleTerms] = useState<Set<string>>(new Set());
   const allVisible = revealed.has("answer");
 
   if (!sections || Array.isArray(sections)) return null;
-
-  const toggleTerm = (term: string) => {
-    setVisibleTerms((current) => {
-      const next = new Set(current);
-      if (next.has(term)) next.delete(term);
-      else next.add(term);
-      return next;
-    });
-  };
 
   return (
     <div className="vocabulary-grid">
@@ -52,14 +49,16 @@ function VocabularyBody({
           <article className="vocabulary-card" key={term}>
             <div className="vocabulary-card__term-row">
               <div className="vocabulary-card__term">{term}</div>
-              <button
-                className="vocabulary-card__toggle"
-                type="button"
-                onClick={() => toggleTerm(term)}
-                disabled={allVisible}
-              >
-                {visible ? "Gizle" : "Anlamı göster"}
-              </button>
+              {!presentationMode ? (
+                <button
+                  className="vocabulary-card__toggle"
+                  type="button"
+                  onClick={() => toggleTerm(term)}
+                  disabled={allVisible}
+                >
+                  {visible ? "Gizle" : "Anlamı göster"}
+                </button>
+              ) : null}
             </div>
             <div
               className={`vocabulary-card__definition ${visible ? "is-visible" : ""}`}
@@ -75,7 +74,14 @@ function VocabularyBody({
   );
 }
 
-export function StepView({ step, revealed, toggle, presentationMode }: StepViewProps) {
+export function StepView({
+  step,
+  revealed,
+  toggle,
+  presentationMode,
+  visibleVocabularyTerms,
+  toggleVocabularyTerm
+}: StepViewProps) {
   const { answer, content, source } = step;
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
@@ -143,7 +149,13 @@ export function StepView({ step, revealed, toggle, presentationMode }: StepViewP
         ) : null}
 
         {isVocabulary && answer ? (
-          <VocabularyBody step={step} revealed={revealed} />
+          <VocabularyBody
+            step={step}
+            revealed={revealed}
+            visibleTerms={visibleVocabularyTerms}
+            toggleTerm={toggleVocabularyTerm}
+            presentationMode={presentationMode}
+          />
         ) : null}
 
         {controls.length && !presentationMode ? (
