@@ -1,0 +1,117 @@
+name: Lesson Player
+
+on:
+  push:
+    branches:
+      - feat/lesson-player-mvp
+    paths:
+      - "apps/lesson-player/**"
+      - "data/grade-11/presentation/**"
+      - "data/grade-11/source/teacher-book/theme-1/**"
+      - ".github/workflows/lesson-player.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: apps/lesson-player/package.json
+
+      - name: Install dependencies
+        working-directory: apps/lesson-player
+        run: npm install --no-audit --no-fund
+
+      - name: Build canonical lesson data and app
+        working-directory: apps/lesson-player
+        run: npm run build
+
+      - name: Browser smoke test and preview captures
+        working-directory: apps/lesson-player
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run preview -- --host 127.0.0.1 --port 4173 > /tmp/lesson-player-vite.log 2>&1 &
+          PREVIEW_PID=$!
+          trap 'kill "$PREVIEW_PID" 2>/dev/null || true' EXIT
+
+          for attempt in {1..20}; do
+            if curl --fail --silent http://127.0.0.1:4173/ > /dev/null; then
+              break
+            fi
+            sleep 1
+          done
+
+          curl --fail --silent http://127.0.0.1:4173/ > /dev/null
+
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          if [ -z "$CHROME" ]; then
+            echo "No Chrome/Chromium executable found on runner."
+            exit 1
+          fi
+
+          "$CHROME"             --headless=new             --no-sandbox             --disable-gpu             --window-size=1440,900             --dump-dom             http://127.0.0.1:4173/ > /tmp/lesson-player-dom.html
+
+          grep -q "Karagöz" /tmp/lesson-player-dom.html
+          grep -q "ÖĞRETMEN REHBERİ" /tmp/lesson-player-dom.html
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-teacher.png" \
+            "http://127.0.0.1:4173/?step=s15-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-student.png" \
+            "http://127.0.0.1:4173/?display=1&step=s15-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&step=s25-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-reference.png" \
+            "http://127.0.0.1:4173/?display=1&step=s26-reference"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-process.png" \
+            "http://127.0.0.1:4173/?display=1&step=s35-q1"
+
+      - name: Upload lesson player preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: lesson-player-preview
+          path: |
+            lesson-player-teacher.png
+            lesson-player-student.png
+            lesson-player-vocabulary.png
+            lesson-player-reference.png
+            lesson-player-process.png
+            apps/lesson-player/dist
+          if-no-files-found: error

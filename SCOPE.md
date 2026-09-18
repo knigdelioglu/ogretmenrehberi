@@ -6,10 +6,11 @@ Bu proje, **11. sınıf Türk Dili ve Edebiyatı** için kişisel kullanıma yö
 
 Ana ürün bir “kitap dosyası” değil, farklı istemcilerin tüketebileceği **kanonik öğretmen rehberi veritabanıdır**.
 
-Bu veritabanının ilk iki tüketicisi:
+Bu veritabanının ilk üç tüketicisi:
 
 - **ÖğretmenOS**
 - **Kindle uyumlu EPUB**
+- **Ders Modu / Lesson Player**
 
 ## 2. Birincil kullanıcı
 
@@ -179,7 +180,25 @@ EPUB çıktısı:
 
 “İnteraktif” sözcüğü burada **iç bağlantılar, indeksler, dipnot-benzeri notlar ve geri dönüş navigasyonu** anlamına gelir; Kindle'da güvenilir olmayan web uygulaması davranışları hedeflenmez.
 
-## 8. Kalite gereksinimleri
+## 8. Ders Modu / Lesson Player gereksinimleri
+
+Ders Modu kanonik veriyi sınıfta yürütülebilir bir akışa dönüştürmelidir.
+
+İlk pilotta:
+
+- source-index sırası eksiksiz temsil edilmeli,
+- cevap bankasındaki ilgili kayıtların hiçbiri sessizce atlanmamalı,
+- soru/görev başlangıçta öğrenciye görünür, cevap ve öğretmen katmanları kontrollü açılır olmalı,
+- kelime çalışmalarında terim ve açıklama birlikte erişilebilir olmalı,
+- süreç ve bilgi köşesi gibi answer-bank dışı kaynak adımları da görünür olmalı,
+- sayfa/adım navigasyonu ve klavye kısayolları bulunmalı,
+- tam ekran kullanım desteklenmeli,
+- uygulama çevrimdışı çalışabilmeli,
+- PowerPoint/PDF çıktıları ana veri değil, ileride üretilecek ikincil çıktılar olmalıdır.
+
+Ders Modu'na özgü sıra, layout ve reveal davranışı kanonik answer-bank verisine gömülmez; ayrı lesson-flow katmanında tutulur.
+
+## 9. Kalite gereksinimleri
 
 ### 8.1. İzlenebilirlik
 
@@ -203,7 +222,7 @@ Rehber yalnızca terim eşleştiren mekanik bir çıktı olmamalıdır. Öğretm
 
 Şema doğrulaması, kimlik benzersizliği, kırık çapraz bağlantılar ve zorunlu alanlar otomatik test edilmelidir.
 
-## 9. Telif sınırı
+## 10. Telif sınırı
 
 Kaynak PDF'ler repoya commit edilmez.
 
@@ -218,7 +237,7 @@ esastır.
 
 Repo public kaldığı sürece bu sınır özellikle önemlidir.
 
-## 10. İlk sürüm kapsamı
+## 11. İlk sürüm kapsamı
 
 ### Dahil
 
@@ -233,6 +252,7 @@ Repo public kaldığı sürece bu sınır özellikle önemlidir.
 - doğrulama araçları
 - ÖğretmenOS export formatı
 - Kindle uyumlu EPUB üreticisi
+- Karagöz s.15–35 pilotu ile Ders Modu / Lesson Player
 - temel otomatik kalite testleri
 
 ### Kapsam dışında — şimdilik
@@ -249,7 +269,7 @@ Repo public kaldığı sürece bu sınır özellikle önemlidir.
 - ders kitabı PDF'sini veya tam metnini dağıtma
 - otomatik olarak doğrulanmış kabul edilen model çıktısı
 
-## 11. Başarı ölçütleri
+## 12. Başarı ölçütleri
 
 İlk üretim hattı başarılı sayılırsa:
 
@@ -258,19 +278,22 @@ Repo public kaldığı sürece bu sınır özellikle önemlidir.
 3. Önemli öğretmen rehberliği kaynak ve program bağlantılarıyla izlenebilir durumdadır.
 4. Şema doğrulaması hatasız geçer.
 5. Kırık iç bağlantı / çapraz referans yoktur.
-6. Aynı veri hem ÖğretmenOS'a hem EPUB'a dönüştürülebilir.
+6. Aynı veri ÖğretmenOS, EPUB ve Ders Modu tarafından tüketilebilir.
 7. EPUB Kindle üzerinde rahat gezinilebilir durumdadır.
-8. Öğretmen rehberi tekrar eden genel cümlelerden ziyade soru ve bağlama özgü değer üretir.
-9. Belirsiz veya öğretmen kararı gerektiren kayıtlar açık biçimde işaretlenmiştir.
-10. 2–4. temalara geçiş için veri modeli yeniden tasarlanmak zorunda kalmaz.
+8. Karagöz pilotunda öğretmen s.15–35 arasında EPUB'a dönmeden dersi yürütebilir.
+9. Ders Modu build'i kaynak veya answer-bank kapsamı eksikse başarısız olur.
+10. Öğretmen rehberi tekrar eden genel cümlelerden ziyade soru ve bağlama özgü değer üretir.
+11. Belirsiz veya öğretmen kararı gerektiren kayıtlar açık biçimde işaretlenmiştir.
+12. 2–4. temalara geçiş için veri modeli yeniden tasarlanmak zorunda kalmaz.
 
-## 12. Kapsam değişikliği ilkesi
+## 13. Kapsam değişikliği ilkesi
 
 Yeni bir ihtiyaç ortaya çıktığında önce şu ayrım yapılır:
 
 - **kanonik veriye ait mi?**
 - **ÖğretmenOS sunumuna mı ait?**
 - **EPUB sunumuna mı ait?**
+- **Ders Modu / lesson-flow sunumuna mı ait?**
 - **build / doğrulama aracına mı ait?**
 
 Sunum katmanına özgü bir ihtiyaç mümkün olduğunca kanonik veri modelini kirletmemelidir.

@@ -2,10 +2,11 @@
 
 11. sınıf Türk Dili ve Edebiyatı dersi için, **ders kitabını ana kaynak** ve **Türkiye Yüzyılı Maarif Modeli (TYMM) öğretim programını pedagojik çerçeve** kabul eden kişisel öğretmen rehberi projesi.
 
-Bu repo tek bir içerik kaynağından iki farklı çıktı üretmeyi hedefler:
+Bu repo tek bir içerik kaynağından üç farklı tüketici/çıktı üretmeyi hedefler:
 
 1. **ÖğretmenOS veri kaynağı** — ders sırasında hızlı arama, etkinlik/soru bazlı rehberlik ve yapılandırılmış öğretmen notları.
 2. **Kindle uyumlu EPUB** — çevrimdışı okunabilen, içerik tablosu, iç bağlantılar, geri dönüş bağlantıları ve çapraz referanslarla kitap gibi kullanılabilen rehber.
+3. **Ders Modu / Lesson Player** — sınıfta tam ekran ilerleyen; soru, yönlendirme, cevap, kanıt ve açıklamayı kontrollü biçimde açan ders yürütme arayüzü.
 
 > Bu çalışma öğrenci ders kitabının yerine geçmez. Amaç; kitabın sayfa, metin, etkinlik ve sorularını öğretmen açısından anlamlandırmak, ders akışını hızlandırmak ve TYMM bağlantılarını görünür kılmaktır.
 
@@ -25,7 +26,7 @@ https://drive.google.com/drive/folders/1EDtxXnTOdKjp7BlSJVCVbs7HHEEK07LO
 
 ## Temel ilke: tek kaynak, çok çıktı
 
-Projenin merkezinde sunuma özel Markdown veya EPUB sayfaları değil, **sürüm kontrollü kanonik bir rehber veritabanı** bulunacaktır.
+Projenin merkezinde sunuma özel Markdown, PPTX veya EPUB sayfaları değil, **sürüm kontrollü kanonik bir rehber veritabanı** bulunacaktır.
 
 ```text
 Ders kitabı PDF
@@ -38,16 +39,30 @@ Kaynak çıkarımı / doğrulama
        v
 Kanonik Rehber Veritabanı
        |
-       +--------------------+
-       |                    |
-       v                    v
-ÖğretmenOS             Kindle EPUB
-       |                    |
-arama / filtre         kitap görünümü /
-ders içi kullanım      iç bağlantılar
+       +----------------------+----------------------+
+       |                      |                      |
+       v                      v                      v
+ÖğretmenOS               Kindle EPUB          Ders Modu
+       |                      |                      |
+arama / filtre           kitap görünümü /      sınıf içi akış /
+ders içi kullanım        iç bağlantılar        kontrollü reveal
 ```
 
-Böylece bir sorunun cevabı, öğretmen notu veya kazanım bağlantısı yalnızca **bir yerde** düzenlenir; ÖğretmenOS ve EPUB aynı veriden üretilir.
+Böylece bir sorunun cevabı, öğretmen notu veya kazanım bağlantısı yalnızca **bir yerde** düzenlenir; ÖğretmenOS, EPUB ve Ders Modu aynı veriyi tüketir.
+
+## Ders Modu / Lesson Player
+
+İlk pilot **11. sınıf 1. Tema — Karagöz / Yazıcı, basılı s.15–35** kapsamındadır.
+
+Uygulama:
+
+- `source-index.json` ile kitabın gerçek sırasını,
+- `answer-bank/*.json` ile cevap/yönlendirme/açıklama/kanıt katmanlarını,
+- `data/grade-11/presentation/.../karagoz-flow.json` ile sunum davranışını
+
+birleştirir.
+
+Amaç, öğretmenin ders sırasında EPUB'a dönmeden ilerleyebilmesidir. Ayrıntılı mimari ve fazlar için [LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md) belgesine bakın.
 
 ## Rehberde bulunacak içerik
 
@@ -70,7 +85,7 @@ Amaç yalnızca “sorunun cevabını vermek” değil; **öğretmenin o sayfay�
 
 ## Veri mimarisi
 
-İlk hedef JSON tabanlı, insan tarafından okunabilir ve Git ile sürümlenebilir bir veri modelidir. Şema kesinleşmeden içerik üretimine toplu olarak başlanmayacaktır.
+İlk hedef JSON tabanlı, insan tarafından okunabilir ve Git ile sürümlenebilir bir veri modelidir.
 
 Planlanan üst düzey yapı:
 
@@ -92,38 +107,11 @@ grade
             └── teacher_notes
 ```
 
-Her kayıtta kararlı bir `id` bulunacak. Sayfa numarası veya başlık değişse bile ÖğretmenOS ve EPUB bağlantılarının mümkün olduğunca bozulmaması hedeflenir.
-
-## Önerilen repo yapısı
-
-Bu dizinler içerik üretimi başladıkça oluşturulacaktır:
-
-```text
-ogretmenrehberi/
-├── README.md
-├── SCOPE.md
-├── ROADMAP.md
-├── schema/
-│   ├── guide.schema.json
-│   └── examples/
-├── data/
-│   └── grade-11/
-│       ├── index.json
-│       ├── theme-1/
-│       ├── theme-2/
-│       ├── theme-3/
-│       └── theme-4/
-├── tools/
-│   ├── validate/
-│   ├── ogretmenos-export/
-│   └── epub/
-├── tests/
-└── dist/
-```
+Her kayıtta kararlı bir `id` bulunur. Sayfa numarası veya başlık değişse bile tüketici bağlantılarının mümkün olduğunca bozulmaması hedeflenir.
 
 ## Kindle yaklaşımı
 
-Kindle, genel amaçlı bir web tarayıcısı gibi EPUB içi JavaScript etkileşimine güvenilir biçimde dayanmaz. Bu nedenle “interaktif” çıktı şu özelliklerle tasarlanacaktır:
+Kindle, genel amaçlı bir web tarayıcısı gibi EPUB içi JavaScript etkileşimine güvenilir biçimde dayanmaz. Bu nedenle “interaktif” çıktı şu özelliklerle tasarlanır:
 
 - güçlü içindekiler yapısı
 - tema → bölüm → etkinlik → soru navigasyonu
@@ -139,8 +127,9 @@ EPUB, kanonik veritabanından **üretilen bir çıktı** olacaktır; elle düzen
 
 - [Cevap bankası kalite standardı](docs/ANSWER_BANK_QUALITY_STANDARD.md)
 - [Blok bazlı rehber üretim standardı](docs/BLOCK_AUTHORING_STANDARD.md)
+- [Ders Modu uygulama planı](docs/LESSON_PLAYER_PLAN.md)
 
-Tema 1 ve Tema 2 üretiminde doğrulanan **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** farkları bu belgelerde kalıcılaştırılmıştır. Aynı üretim disiplini 3–4. temalarda ve daha sonra hazırlanacak diğer sınıf seviyelerinde varsayılan çalışma sözleşmesidir.
+Tema 1 ve Tema 2 üretiminde doğrulanan **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** farkları bu belgelerde kalıcılaştırılmıştır.
 
 ## Kalite ilkeleri
 
@@ -150,11 +139,12 @@ Tema 1 ve Tema 2 üretiminde doğrulanan **Anlama/Okuma, Konuşma, Dinleme-İzle
 - Araştırma, gezi ve kişisel deneyim görevlerinde öğrencinin yerine sahte sonuç veya yaşanmışlık üretilmez.
 - Doğrudan kaynak bilgisi ile öğretmen için üretilmiş açıklama ayrılır.
 - Her önemli kayıt kaynak sayfasına / program bölümüne geri izlenebilir olmalıdır.
-- Belirsiz içerik `needs_teacher_review` benzeri açık bir durumla işaretlenir.
+- Belirsiz içerik açık bir durumla işaretlenir.
 - Otomatik üretim, doğrulama yapılmadan “kesin” kabul edilmez.
 - Aynı açıklamanın farklı başlıklarda gereksiz tekrarından kaçınılır.
 - Şema doğrulaması ve içerik kalite testleri otomatikleştirilir.
 - Uzun telifli metinler veya kaynak PDF'ler repoya kopyalanmaz.
+- Ders Modu build'i, ilgili source-index ve answer-bank kapsamı eksikse başarısız olmalıdır.
 
 ## Sürümleme
 
@@ -167,7 +157,7 @@ Veri modeli bağımsız sürümlenir:
 }
 ```
 
-Kırıcı şema değişikliklerinde migrasyon tanımlanması hedeflenir. ÖğretmenOS ve EPUB üreticileri hangi şema sürümünü desteklediğini açıkça belirtir.
+Kırıcı şema değişikliklerinde migrasyon tanımlanması hedeflenir. Tüketiciler destekledikleri şema sürümünü açıkça belirtir.
 
 ## Mevcut kalite temeli
 
