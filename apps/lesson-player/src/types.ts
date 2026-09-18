@@ -50,6 +50,14 @@ export interface StepContent {
 export interface LessonStep {
   id: string;
   layout: LayoutKind;
+  display_prompt: string;
+  display_prompt_mode:
+    | "FLOW_OVERRIDE"
+    | "VERBATIM_SHORT"
+    | "VERIFIED_SUMMARY"
+    | "SOURCE_PROMPT"
+    | "ANSWER_SUMMARY"
+    | "SOURCE_OR_CONTENT";
   source: SourceRecord;
   answer: AnswerEntry | null;
   content: StepContent | null;
