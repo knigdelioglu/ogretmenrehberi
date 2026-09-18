@@ -34,6 +34,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Lesson Player generated data
+apps/lesson-player/src/generated/karagoz.json
+
 # Rust tooling
 target/
 
