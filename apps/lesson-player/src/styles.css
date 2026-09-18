@@ -1291,3 +1291,102 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+
+/* Final viewport-fit pass */
+
+html,
+body,
+#root,
+.app-shell {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content-column,
+.outline {
+  max-height: 100%;
+}
+
+.lesson-stage {
+  min-height: 0;
+  max-height: 100%;
+  overscroll-behavior: contain;
+}
+
+.lesson-footer {
+  flex: 0 0 auto;
+  min-height: 84px;
+  padding-block: 10px;
+}
+
+@media (max-height: 820px) and (min-width: 851px) {
+  .topbar {
+    min-height: 64px;
+    padding-block: 10px;
+  }
+
+  .lesson-stage {
+    padding-block: 18px;
+  }
+
+  .stage-meta {
+    margin-bottom: 9px;
+  }
+
+  .stage-card {
+    padding-block: 30px;
+  }
+
+  .lesson-footer {
+    min-height: 74px;
+    padding-block: 8px;
+  }
+
+  .shortcut-hint {
+    margin-top: 5px;
+    font-size: 0.66rem;
+  }
+}
+
+/* Vocabulary is intentionally denser on a classroom projector. */
+.stage-card.density-compact .vocabulary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.stage-card.density-compact .vocabulary-card {
+  min-height: 0;
+  padding: 10px 12px;
+}
+
+.stage-card.density-compact .vocabulary-card__term {
+  font-size: clamp(1.18rem, 1.65vw, 1.55rem);
+}
+
+.stage-card.density-compact .vocabulary-card__definition {
+  min-height: 0;
+  margin-top: 7px;
+  font-size: 0.88rem;
+  line-height: 1.34;
+}
+
+.external-display .stage-card.density-compact {
+  padding: clamp(20px, 2.6vw, 34px);
+}
+
+.external-display .stage-card.density-compact h1 {
+  font-size: clamp(1.7rem, 3.1vw, 3.15rem);
+}
+
+.external-display .stage-card.density-compact .vocabulary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .stage-card.density-compact .vocabulary-grid,
+  .external-display .stage-card.density-compact .vocabulary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
