@@ -172,6 +172,31 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-dinleme-exit.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T01-DINLEME-IZLEME&step=s73-exit"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-yazma-plan.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-YAZMA&step=s75-plan"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-yazma-email.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-YAZMA&step=s77-write"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-yazma-self.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-YAZMA&step=s78-self"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -190,5 +215,8 @@ jobs:
             lesson-player-dinleme-prep.png
             lesson-player-dinleme-vocabulary.png
             lesson-player-dinleme-exit.png
+            lesson-player-yazma-plan.png
+            lesson-player-yazma-email.png
+            lesson-player-yazma-self.png
             apps/lesson-player/dist
           if-no-files-found: error

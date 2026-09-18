@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 4, "Lesson catalog en az dört ders içermeli.");
+assert(lessons.length >= 5, "Lesson catalog en az beş ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -378,6 +378,81 @@ assert(
     d73Exit.answer?.answer_sections?.["İki Sor"] &&
     d73Exit.answer?.answer_sections?.["Bir Paylaş"],
   "s73 çıkış kartının 3-2-1 yapısı eksiksiz olmalı."
+);
+
+const yazma = byLessonId.get("T11-T01-YAZMA");
+assert(yazma, "Yazma dersi catalog içinde bulunamadı.");
+assert(yazma.lesson_slug === "yazma", "Yazma lesson_slug doğru olmalı.");
+assert(yazma.coverage.steps === 17, "Yazma dersi 17 adım olmalı.");
+assert(
+  yazma.coverage.source_records === 15,
+  "Yazma dersi 15 source-index kaydını kapsamalı."
+);
+assert(
+  yazma.coverage.answer_entries === 13,
+  "Yazma dersi 13 answer-bank kaydını kapsamalı."
+);
+
+const yazmaById = new Map(yazma.steps.map((step) => [step.id, step]));
+const yazmaOrderedIds = yazma.steps.map((step) => step.id);
+
+const y75Plan = yazmaById.get("s75-plan");
+assert(y75Plan, "s75 e-posta planlama adımı eksik.");
+assert(
+  y75Plan.answer?.entry_type === "performance_support" &&
+    y75Plan.content?.items?.length === 5,
+  "s75 planlama, performans desteği ve beş hazırlık adımını korumalı."
+);
+
+const y76Compare = yazmaById.get("s76-q3");
+assert(y76Compare, "s76 e-posta/mektup karşılaştırması eksik.");
+assert(
+  y76Compare.layout === "comparison" &&
+    y76Compare.answer?.answer_sections?.benzerlikler &&
+    y76Compare.answer?.answer_sections?.farkliliklar,
+  "s76 karşılaştırma yapılandırılmış benzerlik/farklılık verisini korumalı."
+);
+
+const y77Feedback = yazmaById.get("s77-feedback");
+const y77Write = yazmaById.get("s77-write");
+assert(y77Feedback && y77Write, "s77 geri bildirim/yazma adımları eksik.");
+assert(
+  y77Feedback.answer === null &&
+    yazmaOrderedIds.indexOf("s77-feedback") <
+      yazmaOrderedIds.indexOf("s77-write"),
+  "Taslak geri bildirimi e-posta yazımından önce, cevapsız süreç adımı olmalı."
+);
+assert(
+  y77Write.answer?.entry_type === "performance_support",
+  "s77 e-posta yazma örneği performance_support olmalı."
+);
+
+const y78Self = yazmaById.get("s78-self");
+assert(y78Self, "s78 öz değerlendirme eksik.");
+assert(
+  y78Self.content?.items?.length === 8,
+  "s78 öz değerlendirme kitaptaki sekiz görünür ölçütü korumalı."
+);
+
+const y78Exit = yazmaById.get("s78-exit");
+assert(y78Exit, "s78 tema çıkış kartı eksik.");
+assert(
+  y78Exit.layout === "assessment" &&
+    y78Exit.answer?.entry_type === "performance_support",
+  "s78 çıkış kartı assessment + performance_support olarak korunmalı."
+);
+assert(
+  y78Exit.answer?.answer_sections?.["Üç Yaz"] &&
+    y78Exit.answer?.answer_sections?.["İki Sor"] &&
+    y78Exit.answer?.answer_sections?.["Bir Paylaş"],
+  "s78 tema çıkış kartının 3-2-1 yapısı eksiksiz olmalı."
+);
+
+const y78Rubric = yazmaById.get("s78-rubric");
+assert(y78Rubric, "s78 dereceli puanlama/kaynak sınırı adımı eksik.");
+assert(
+  y78Rubric.answer === null && y78Rubric.layout === "reference",
+  "s78 QR dereceli puanlama adımı cevap uydurmadan referans olarak kalmalı."
 );
 
 console.log(

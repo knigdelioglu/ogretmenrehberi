@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.2.0",
+  "lesson_id": "T11-T01-YAZMA",
+  "lesson_slug": "yazma",
+  "title": "Edebiyat Atölyesi-2 — Yazma",
+  "subtitle": "E-posta Yazabilme · 11. Sınıf · 1. Tema",
+  "printed_page_range": "74-78",
+  "required_source_range": {
+    "from": "T01-S0102",
+    "to": "T01-S0116"
+  },
+  "steps": [
+    {
+      "id": "s74-q1",
+      "source_record_id": "T01-S0102",
+      "answer_id": "T1-P74-Q01",
+      "layout": "question"
+    },
+    {
+      "id": "s74-q2",
+      "source_record_id": "T01-S0103",
+      "answer_id": "T1-P74-Q02",
+      "layout": "question"
+    },
+    {
+      "id": "s74-q3",
+      "source_record_id": "T01-S0104",
+      "answer_id": "T1-P74-Q03",
+      "layout": "question"
+    },
+    {
+      "id": "s74-q4",
+      "source_record_id": "T01-S0105",
+      "answer_id": "T1-P74-Q04",
+      "layout": "comparison",
+      "density": "compact"
+    },
+    {
+      "id": "s74-q5a",
+      "source_record_id": "T01-S0106",
+      "answer_id": "T1-P74-Q05A",
+      "layout": "question"
+    },
+    {
+      "id": "s74-q5b",
+      "source_record_id": "T01-S0107",
+      "answer_id": "T1-P74-Q05B",
+      "layout": "structure",
+      "density": "compact"
+    },
+    {
+      "id": "s75-plan",
+      "source_record_id": "T01-S0108",
+      "answer_id": "T1-P75-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "E-posta yazma görevini planlayın",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yazmaya başlamadan önce amaç, alıcı, konu ve stratejiyi birbiriyle uyumlu hâle getirin.",
+        "items": [
+          "Yazma amacınızı belirleyin: bilgilendirme, ikna etme, resmî talep vb.",
+          "Hedef kitleyi ve alıcıyı belirleyin.",
+          "Yazma sürecini aksatabilecek engelleri ortadan kaldırın.",
+          "Amaç ve alıcıya uygun yazma stratejisini seçin.",
+          "Seçtiğiniz stratejiyi uygulanabilir bir plana dönüştürün."
+        ]
+      }
+    },
+    {
+      "id": "s76-q2",
+      "source_record_id": "T01-S0109",
+      "answer_id": "T1-P76-Q02",
+      "layout": "question"
+    },
+    {
+      "id": "s76-q3",
+      "source_record_id": "T01-S0109",
+      "answer_id": "T1-P76-Q03",
+      "layout": "comparison",
+      "density": "compact"
+    },
+    {
+      "id": "s76-q4",
+      "source_record_id": "T01-S0109",
+      "answer_id": "T1-P76-Q04",
+      "layout": "question"
+    },
+    {
+      "id": "s76-draft",
+      "source_record_id": "T01-S0110",
+      "answer_id": "T1-P76-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "E-posta içerik taslağını oluşturun",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Taslağı oluştururken e-postanın işlevini ve alıcıya uygun dil kullanımını birlikte planlayın.",
+        "items": [
+          "Alıcı ve amaç doğrultusunda içeriği düzenleyin.",
+          "Kullanacağınız dil işlevlerini belirleyin: rica, koşul, gerekçelendirme vb.",
+          "Karşılaştırma içeren iletileri ve söz varlığını bağlama uygun kullanın.",
+          "Gerekli ekleri sınıflandırın.",
+          "Kime, Konu, Hitap ve Kapanış alanlarını alıcıya uygun biçimde hazırlayın."
+        ]
+      }
+    },
+    {
+      "id": "s77-feedback",
+      "source_record_id": "T01-S0111",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Taslağı geri bildirimle geliştirin",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk taslağı doğrudan göndermeyin; akran ve öğretmen geri bildirimiyle son hâline getirin.",
+        "items": [
+          "İfadeleri gözden geçirmek için sınıf arkadaşlarınızın görüşünü alın.",
+          "Eksik bilgi veya kavram karmaşası varsa öğretmenden destek alın.",
+          "İçeriğe uygun görsel/işitsel ögeleri seçin.",
+          "Taslağı amaç ve Türkçe kullanımı bakımından bir akranla kontrol edin.",
+          "Geri bildirimler doğrultusunda planı son hâline getirin."
+        ]
+      }
+    },
+    {
+      "id": "s77-write",
+      "source_record_id": "T01-S0112",
+      "answer_id": "T1-P77-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "E-postayı yazın ve gönderme öncesi kontrol edin",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "E-postayı oluştururken konu, hitap, açık ileti, uygun dil ve teknik doğruluğu birlikte koruyun.",
+        "items": [
+          "İçeriğe uygun konu satırı ve dikkat çekici bir hitap kullanın.",
+          "Düşünceyi geliştirme yollarıyla mesajı açık ve eksiksiz kılın.",
+          "Söz varlığını bağlama; dil ve üslubu amaç ile alıcıya uygun seçin.",
+          "Yazmayı başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
+          "Yazım, noktalama, bağdaşıklık ve Türkçenin özenli kullanımını kontrol edin.",
+          "Toplumsal hassasiyetlere ve olumlu değerlere aykırı ifadelerden kaçının."
+        ]
+      }
+    },
+    {
+      "id": "s78-review",
+      "source_record_id": "T01-S0113",
+      "layout": "assessment",
+      "density": "large",
+      "prompt": "Göndermeden önce son kontrol",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yazdığınız e-postayı yeniden okuyun; yazım ve noktalama hatalarını düzeltin. Başlık, hitap, üslup, özgünlük ve gerekli yerlerde öznel/nesnel anlatımın amaca uygunluğunu kontrol edin."
+      }
+    },
+    {
+      "id": "s78-self",
+      "source_record_id": "T01-S0114",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "E-postanızı kendi gerçek performansınıza göre değerlendirin.",
+        "items": [
+          "İçeriğe uygun bir taslak oluşturdum.",
+          "Göndereceğim ek belgeleri sınıflandırdım.",
+          "Alıcıya uygun dil ve üslup belirledim.",
+          "İçeriğe uygun görsel/işitsel ögeler kullandım.",
+          "Söz varlığını hedef kitleye ve amaca uygun kullandım.",
+          "Düşünceyi geliştirme yollarından yararlandım.",
+          "İçeriğe uygun bir başlık belirledim.",
+          "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim."
+        ]
+      }
+    },
+    {
+      "id": "s78-exit",
+      "source_record_id": "T01-S0115",
+      "answer_id": "T1-P78-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Tema Çıkış Kartı — Üç Yaz · İki Sor · Bir Paylaş",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s78-rubric",
+      "source_record_id": "T01-S0116",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Dereceli puanlama ve geliştirme",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğretmen değerlendirmesinde Türkçenin doğru kullanımı, üslup, özgünlük, başlık/hitap, yazım ve noktalama gibi ölçütleri dikkate alın. Öz değerlendirmede Kısmen veya Hayır işaretlenen beceriler için somut geliştirme adımı belirleyin."
+      }
+    }
+  ]
+}
