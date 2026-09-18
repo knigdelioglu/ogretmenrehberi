@@ -1,11 +1,31 @@
-import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
+import {
+  Fragment,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState
+} from "react";
 import lessonJson from "./generated/karagoz.json";
+import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
-import type { LessonData, RevealKey } from "./types";
+import type {
+  LayoutKind,
+  LessonData,
+  LessonStep,
+  RevealKey
+} from "./types";
 
 const lesson = lessonJson as LessonData;
 const progressKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.index`;
 const modeKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection`;
+const overridesKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.overrides`;
+
+type StepOverride = {
+  display_prompt?: string;
+  layout?: LayoutKind;
+};
+
+type StepOverrides = Record<string, StepOverride>;
 
 function restoredIndex() {
   const raw = window.localStorage.getItem(progressKey);
@@ -14,11 +34,23 @@ function restoredIndex() {
   return Math.max(0, Math.min(lesson.steps.length - 1, parsed));
 }
 
-function stepLabel(step: LessonData["steps"][number]) {
+function restoredOverrides(): StepOverrides {
+  const raw = window.localStorage.getItem(overridesKey);
+  if (!raw) return {};
+
+  try {
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function stepLabel(step: LessonStep) {
   return step.display_prompt ?? step.answer?.prompt_summary ?? step.source.book_heading;
 }
 
-function revealOrder(step: LessonData["steps"][number]): RevealKey[] {
+function revealOrder(step: LessonStep): RevealKey[] {
   const keys: RevealKey[] = [];
   if (step.answer?.guidance) keys.push("guidance");
   if (step.answer) keys.push("answer");
@@ -28,15 +60,31 @@ function revealOrder(step: LessonData["steps"][number]): RevealKey[] {
   return keys;
 }
 
+function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
+  if (!override) return step;
+
+  return {
+    ...step,
+    display_prompt: override.display_prompt ?? step.display_prompt,
+    layout: override.layout ?? step.layout
+  };
+}
+
 export default function App() {
   const [index, setIndex] = useState(restoredIndex);
   const [outlineOpen, setOutlineOpen] = useState(true);
   const [presentationMode, setPresentationMode] = useState(
     () => window.localStorage.getItem(modeKey) === "true"
   );
+  const [editorOpen, setEditorOpen] = useState(false);
+  const [overrides, setOverrides] = useState<StepOverrides>(restoredOverrides);
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
 
-  const step = lesson.steps[index];
+  const effectiveSteps = useMemo(
+    () => lesson.steps.map((item) => applyOverride(item, overrides[item.id])),
+    [overrides]
+  );
+  const step = effectiveSteps[index];
 
   const goTo = useCallback((next: number) => {
     const clamped = Math.max(0, Math.min(lesson.steps.length - 1, next));
@@ -63,7 +111,10 @@ export default function App() {
   const togglePresentationMode = useCallback(() => {
     setPresentationMode((current) => {
       const next = !current;
-      if (next) setOutlineOpen(false);
+      if (next) {
+        setOutlineOpen(false);
+        setEditorOpen(false);
+      }
       return next;
     });
   }, []);
@@ -76,6 +127,78 @@ export default function App() {
     }
   }, []);
 
+  const updateStepOverride = useCallback(
+    (stepId: string, patch: StepOverride) => {
+      setOverrides((current) => ({
+        ...current,
+        [stepId]: {
+          ...current[stepId],
+          ...patch
+        }
+      }));
+    },
+    []
+  );
+
+  const resetStepOverride = useCallback((stepId: string) => {
+    setOverrides((current) => {
+      const next = { ...current };
+      delete next[stepId];
+      return next;
+    });
+  }, []);
+
+  const exportLessonFlow = useCallback(() => {
+    const steps = lesson.steps.map((original, itemIndex) => {
+      const effective = effectiveSteps[itemIndex];
+      const override = overrides[original.id];
+      const exported: Record<string, unknown> = {
+        id: original.id,
+        source_record_id: original.source.source_record_id,
+        layout: effective.layout
+      };
+
+      if (original.answer) {
+        exported.answer_id = original.answer.question_id;
+      }
+
+      if (
+        override?.display_prompt?.trim() &&
+        override.display_prompt.trim() !== original.display_prompt
+      ) {
+        exported.prompt = override.display_prompt.trim();
+      }
+
+      if (original.content) {
+        exported.content = original.content;
+      }
+
+      return exported;
+    });
+
+    const payload = {
+      schema_version: lesson.schema_version,
+      lesson_id: lesson.lesson_id,
+      title: lesson.title,
+      subtitle: lesson.subtitle,
+      printed_page_range: lesson.printed_page_range,
+      required_source_range: lesson.required_source_range,
+      steps
+    };
+
+    const blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], {
+      type: "application/json"
+    });
+    const href = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = href;
+    anchor.download = "karagoz-flow.json";
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(href);
+  }, [effectiveSteps, overrides]);
+
   useEffect(() => {
     window.localStorage.setItem(progressKey, String(index));
   }, [index]);
@@ -85,10 +208,15 @@ export default function App() {
   }, [presentationMode]);
 
   useEffect(() => {
+    window.localStorage.setItem(overridesKey, JSON.stringify(overrides));
+  }, [overrides]);
+
+  useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (
         event.target instanceof HTMLInputElement ||
-        event.target instanceof HTMLTextAreaElement
+        event.target instanceof HTMLTextAreaElement ||
+        event.target instanceof HTMLSelectElement
       ) {
         return;
       }
@@ -104,6 +232,8 @@ export default function App() {
         toggle("guidance");
       } else if (event.key.toLowerCase() === "e" && step.answer?.explanation) {
         toggle("explanation");
+      } else if (event.key.toLowerCase() === "d" && !presentationMode) {
+        setEditorOpen((current) => !current);
       } else if (event.key.toLowerCase() === "p") {
         togglePresentationMode();
       } else if (event.key.toLowerCase() === "f") {
@@ -120,6 +250,7 @@ export default function App() {
   }, [
     goTo,
     index,
+    presentationMode,
     revealNext,
     step,
     toggle,
@@ -137,7 +268,8 @@ export default function App() {
       className={[
         "app-shell",
         outlineOpen && !presentationMode ? "outline-open" : "",
-        presentationMode ? "presentation-mode" : ""
+        presentationMode ? "presentation-mode" : "",
+        editorOpen ? "editor-open" : ""
       ]
         .filter(Boolean)
         .join(" ")}
@@ -150,6 +282,9 @@ export default function App() {
         <div className="topbar__actions">
           <button type="button" onClick={() => setOutlineOpen((value) => !value)}>
             {outlineOpen ? "Akışı kapat" : "Ders akışı"}
+          </button>
+          <button type="button" onClick={() => setEditorOpen((value) => !value)}>
+            {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
           </button>
           <button type="button" onClick={togglePresentationMode}>
             Projeksiyon modu
@@ -168,8 +303,8 @@ export default function App() {
           </span>
         </div>
         <div className="outline__steps">
-          {lesson.steps.map((item, itemIndex) => {
-            const previous = lesson.steps[itemIndex - 1];
+          {effectiveSteps.map((item, itemIndex) => {
+            const previous = effectiveSteps[itemIndex - 1];
             const pageChanged =
               !previous ||
               previous.source.printed_page_range !== item.source.printed_page_range;
@@ -231,7 +366,7 @@ export default function App() {
             {!presentationMode ? (
               <div className="shortcut-hint">
                 ←/→ adım · Space aç/ilerle · C cevap · G yönlendirme · E açıklama ·
-                P projeksiyon · F tam ekran
+                D düzenle · P projeksiyon · F tam ekran
               </div>
             ) : (
               <div className="shortcut-hint shortcut-hint--projection">
@@ -249,6 +384,20 @@ export default function App() {
           </button>
         </footer>
       </div>
+
+      {editorOpen && !presentationMode ? (
+        <EditorPanel
+          step={step}
+          hasOverride={Boolean(overrides[step.id])}
+          onPromptChange={(value) =>
+            updateStepOverride(step.id, { display_prompt: value })
+          }
+          onLayoutChange={(value) => updateStepOverride(step.id, { layout: value })}
+          onReset={() => resetStepOverride(step.id)}
+          onExport={exportLessonFlow}
+          onClose={() => setEditorOpen(false)}
+        />
+      ) : null}
     </div>
   );
 }
