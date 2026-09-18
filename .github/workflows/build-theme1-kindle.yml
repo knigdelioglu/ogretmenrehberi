@@ -43,7 +43,7 @@ jobs:
               assert "OEBPS/toc.ncx" in z.namelist()
 
           data = json.loads(report.read_text(encoding="utf-8"))
-          assert data["entries"] == 149
+          assert data["entries"] == 151
           assert data["source_limited"] == 12
           print(json.dumps(data, ensure_ascii=False, indent=2))
           PY
