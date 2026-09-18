@@ -1,0 +1,59 @@
+name: Build Theme 1 Kindle EPUB
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-theme1-kindle.yml"
+      - "tools/build_kindle_epub.py"
+      - "data/grade-11/source/teacher-book/theme-1/**"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build EPUB
+        run: |
+          python3 tools/build_kindle_epub.py             --theme 1             --output dist/Ogretmen-Rehberi-Tema-1-Kindle.epub
+
+      - name: Inspect EPUB
+        run: |
+          python3 - <<'PY'
+          import json, zipfile
+          from pathlib import Path
+
+          epub = Path("dist/Ogretmen-Rehberi-Tema-1-Kindle.epub")
+          report = Path("dist/Ogretmen-Rehberi-Tema-1-Kindle.build.json")
+          assert epub.exists() and epub.stat().st_size > 0
+          assert report.exists()
+
+          with zipfile.ZipFile(epub) as z:
+              assert z.namelist()[0] == "mimetype"
+              assert z.read("mimetype") == b"application/epub+zip"
+              assert z.testzip() is None
+              assert "OEBPS/content.opf" in z.namelist()
+              assert "OEBPS/nav.xhtml" in z.namelist()
+              assert "OEBPS/toc.ncx" in z.namelist()
+
+          data = json.loads(report.read_text(encoding="utf-8"))
+          assert data["entries"] == 149
+          assert data["source_limited"] == 12
+          print(json.dumps(data, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Upload Kindle EPUB
+        uses: actions/upload-artifact@v4
+        with:
+          name: ogretmen-rehberi-tema-1-kindle
+          path: |
+            dist/Ogretmen-Rehberi-Tema-1-Kindle.epub
+            dist/Ogretmen-Rehberi-Tema-1-Kindle.build.json
+          if-no-files-found: error
+          retention-days: 30
