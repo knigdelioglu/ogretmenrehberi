@@ -1,6 +1,6 @@
 # Blok Bazlı Rehber Üretim Standardı
 
-Bu belge, 11. sınıf Türk Dili ve Edebiyatı öğretmen rehberinde Tema 1 pilotundan elde edilen üretim kurallarını **Tema 2, Tema 3 ve Tema 4 için zorunlu çalışma standardı** hâline getirir.
+Bu belge, 11. sınıf Tema 1 ve Tema 2 üretiminden elde edilen kalite derslerini **tüm sınıf seviyeleri, temalar ve benzer öğretmen rehberi projeleri için zorunlu çalışma standardı** hâline getirir. 11. sınıf mevcut uygulama alanıdır; kurallar sınıf numarasına bağlı değildir.
 
 Amaç, farklı ders bloklarını tek tip "soru-cevap" yapısına zorlamadan; her bloğun pedagojik işlevine uygun, öğretmenin sınıfta doğrudan kullanabileceği rehber içeriği üretmektir.
 
@@ -660,17 +660,253 @@ Bu statü düşük kalite anlamına gelmez. Kaynağın görülmediği yerde bilg
 
 ---
 
-## 18. Tema 2–4 için değişmez kalite kuralı
+## 18. Tüm sınıf ve temalar için değişmez kalite kuralı
 
 Tema değiştiğinde içerik değişir; **üretim disiplini değişmez**.
 
 Özellikle:
 
-- Tema 3'ün konuşma bölümüne gelindiğinde konuşma standardı,
-- Tema 4'ün yazma bölümüne gelindiğinde yazma standardı,
-- herhangi bir temanın QR videosuna gelindiğinde source-limited standardı,
-- bütün tema sonu sorularında ölçme-değerlendirme standardı
+- hangi sınıf veya temada olursa olsun konuşma bölümüne gelindiğinde konuşma standardı,
+- hangi sınıf veya temada olursa olsun yazma bölümüne gelindiğinde yazma standardı,
+- herhangi bir QR/video/dinleme kaynağına gelindiğinde source-limited karar kuralları,
+- bütün tema/ünite sonu sorularında ölçme-değerlendirme standardı
 
 yeniden uygulanır.
 
 Yeni temanın farklı bir görev yapısı varsa bu belgeye mekanik biçimde uydurulmaz; önce kitabın gerçek pedagojik amacı belirlenir, sonra en yakın kayıt davranışı seçilir. Gerekirse yeni bir `entry_type` eklenmeden önce bu standart güncellenir.
+
+
+---
+
+## 19. Kaynak bütünlüğü ve görsel doğrulama protokolü
+
+Tema 2 üretiminde metin extraction'ının her zaman sayfadaki görsel biçimi korumadığı görülmüştür. Özellikle:
+
+- alt çizgi,
+- renk,
+- ok / bağlantı çizgisi,
+- tablo hücresi konumu,
+- görsel içeriği,
+- vurgu kutusu,
+- sayfadaki mekânsal ilişki
+
+düz metinde kaybolabilir.
+
+Bu nedenle soru cevabı biçim bilgisine bağlıysa şu sıra uygulanır:
+
+1. düz metni incele,
+2. biçim bilgisi gerekli görünüyorsa gerçek PDF sayfasını / sayfa görselini incele,
+3. görsel doğrulama mümkünse cevabı buna göre üret,
+4. görsel doğrulama mümkün değilse ayrıntı uydurma ve kaydı `source_limited` yap.
+
+Örnek:
+
+> "Altı çizili kelimeleri karşılaştırınız."
+
+Düz metin hangi kelimelerin altı çizili olduğunu taşımıyorsa kelimeler tahmin edilmez.
+
+Aynı kural yalnız PDF için değil ekran görüntüsü, tablo, infografik, harita ve görsel soruları için de geçerlidir.
+
+---
+
+## 20. Harici kaynak bağımlılığında karar ağacı
+
+QR/video/dinleme içeren her soru otomatik olarak `source_limited` değildir.
+
+### A. Harici kaynak yalnız bağlam sağlıyorsa
+
+Soru metni veya ders kitabındaki açıklama cevabı kurmak için yeterliyse `question_answer` kullanılabilir.
+
+Kurallar:
+
+- yalnız kitapta açıkça desteklenen kısım cevaplanır,
+- video görülmüş gibi ayrıntı eklenmez,
+- gerekiyorsa `explanation` ile sınır belirtilir.
+
+### B. Cevabın özü harici kaynağa bağlıysa
+
+Örneğin soru:
+
+- videodaki benzetmeleri,
+- konuşmacının beden dilini,
+- kullanılan müziği,
+- belirli görselleri,
+- videonun ana düşüncesini,
+- dinleme metnindeki tam ifadeleri
+
+soruyorsa ve kaynak incelenmediyse `source_limited` kullanılır.
+
+### C. Kısmen desteklenen soru
+
+Sorunun bir bölümü kitaptan, bir bölümü harici kaynaktan cevaplanabiliyorsa:
+
+- desteklenen kısmı açıkça ver,
+- desteklenmeyen kısmı sınırla,
+- tüm soruyu tahminle doldurma.
+
+Amaç `source_limited` sayısını azaltmak değil, **kanıt sınırını doğru çizmek**tir.
+
+---
+
+## 21. Araştırma, gezi ve kişisel deneyim görevleri
+
+Tema 2'de sanal müze ve kültür araştırması görevleri, hazır cevap üretmenin yanlış olabileceğini açıkça göstermiştir.
+
+### Araştırma görevi
+
+Öğrenci gerçek araştırma yapacaksa `performance_support` şu tür destek verir:
+
+- araştırma sorusu,
+- güvenilir kaynak ölçütü,
+- veri toplama yöntemi,
+- karşılaştırma tablosu,
+- doldurulabilir şablon,
+- kaynak gösterme biçimi.
+
+Şunlar yapılmaz:
+
+- araştırılmamış güncel bilgi uydurmak,
+- erişilmemiş site/müze/kurum özelliğini varmış gibi yazmak,
+- öğrencinin yapması gereken araştırmayı sahte sonuçlarla tamamlamak.
+
+### Gezi / gözlem görevi
+
+Öğrenci gerçek veya sanal bir gezi yapacaksa:
+
+- ziyaret edilmiş gibi kişisel izlenim yazılmaz,
+- gözlem notu şablonu verilir,
+- örnek cümlede doldurulacak alanlar açık bırakılabilir,
+- örnek ürün varsa bunun model olduğu belirtilir.
+
+### Kişisel / yansıtıcı görev
+
+Öğrencinin:
+
+- kendi hayatı,
+- kendi öğrenmesi,
+- kendi beğenisi,
+- kendi araştırma sonucu,
+- kendi performansı
+
+isteniyorsa rehber öğrencinin yerine yaşanmışlık üretmez.
+
+Model cevap yalnız **beklenen derinlik ve yapı düzeyini** gösterir.
+
+---
+
+## 22. Çok adımlı görevleri bölme veya birleştirme kuralı
+
+Kitapta aynı üretim sürecinin 5, 6, 7, 8, 9 gibi art arda numaralanmış adımları bulunabilir.
+
+### Ayrı kayıt oluştur
+
+Alt sorular:
+
+- bağımsız cevaplanabiliyorsa,
+- farklı pedagojik amaç taşıyorsa,
+- öğretmen derste ayrı ayrı başvuracaksa.
+
+### Tek `performance_support` kaydında birleştir
+
+Adımlar tek bir ürünün ardışık üretim süreci ise:
+
+```text
+amaç
+→ plan
+→ içerik
+→ görsel/kaynak seçimi
+→ taslak
+→ geri bildirim
+→ son ürün
+```
+
+gereksiz tekrar üretmek yerine tek süreç kaydı kullanılabilir.
+
+Birleştirilen kayıtta `question_no` alanı `5-9` gibi gerçek kitap aralığını koruyabilir.
+
+Amaç kayıt sayısını azaltmak değil, **öğretmenin kullanacağı pedagojik birimi doğru seçmektir**.
+
+---
+
+## 23. Dil bilgisi ve sınıflandırma sorularında kalite kontrolü
+
+Dil bilgisi sorularında yalnız örnek birkaç cevap vermek yeterli olmayabilir.
+
+Liste veya sınıflandırma isteniyorsa:
+
+1. kaynakta verilen bütün hedef ögeleri say,
+2. her ögenin hangi kategoriye girdiğini kontrol et,
+3. kategorilerin birbirini yanlışlıkla örtüp örtmediğini kontrol et,
+4. çekimli fiil / fiilimsi, geçişli / geçişsiz, etken / edilgen gibi ayrımlarda sorunun istediği düzeyi koru,
+5. kaynakta hedef olmayan biçimleri listeye ekleme.
+
+Tarihî dil ve eski söz varlığında:
+
+- kitabın kullandığı terim ve yazım korunur,
+- kaynakta olmayan modernleştirme sessizce yapılmaz,
+- dış bilgi gerekiyorsa bunun kaynak dışı açıklama olduğu belirtilir.
+
+---
+
+## 24. Kaynak ile genel bilgi arasında sınır
+
+Rehber üretiminin varsayılan modu **kaynağa bağlı üretimdir**.
+
+Bu nedenle:
+
+- ders kitabındaki bilgi sessizce düzeltilmez,
+- kaynakta bulunmayan genel bilgi, kaynakta varmış gibi eklenmez,
+- tarihî, dilbilimsel veya kültürel bir nokta dış bilgiyle genişletilecekse bu açıkça rehber açıklaması olarak ayrılır,
+- kullanıcı ayrıca araştırma / doğrulama isterse dış kaynaklar ayrı katman olarak kullanılabilir.
+
+Bu kural özellikle başka sınıf seviyelerine geçildiğinde içeriklerin farklı kitap ve program sürümlerine ait olabileceği için önemlidir.
+
+---
+
+## 25. Kullanıcıya görünen sayfa ve iç kaynak izi
+
+Kanonik veride izlenebilirlik için `source_locator` içinde:
+
+- basılı sayfa,
+- PDF sayfası,
+- soru / etkinlik bilgisi
+
+tutulabilir.
+
+Ancak öğretmene dönük EPUB / Kindle / ÖğretmenOS görünümünde varsayılan sayfa referansı:
+
+> **Basılı s. X**
+
+olmalıdır.
+
+PDF sayfa numarası teknik provenance bilgisidir; öğretmenin kitabıyla eşleştirmesini gereksiz yere zorlaştırmamalıdır.
+
+### Kindle / EPUB özel kuralı
+
+Bir soru başlığı önceki sanal sayfanın sonunda kalıp cevabı sonraki sayfaya taşmamalıdır.
+
+Bu nedenle Kindle renderer:
+
+- her rehber kaydını yeni sanal sayfadan başlatır,
+- soru başlığını cevap etiketinden ayırmamaya çalışır,
+- `evidence_quotes`, yönlendirme ve açıklamayı aynı kayıt içinde tutar.
+
+---
+
+## 26. Yeni sınıfa geçerken yapılacaklar
+
+Yeni sınıf seviyesi başlatıldığında bu standart otomatik olarak uygulanır; ancak önce yeni kitabın kendi yapısı çıkarılır.
+
+Kontrol listesi:
+
+- [ ] sınıf / kitap sürümü doğrulandı mı?
+- [ ] tema / ünite yapısı gerçek kitaptan çıkarıldı mı?
+- [ ] blok türleri önceki sınıftan mekanik olarak kopyalanmadı mı?
+- [ ] sayfa–PDF ofseti belirlendi mi?
+- [ ] soru envanterinin eksiksiz olmadığı varsayımıyla gerçek sayfa kontrol edildi mi?
+- [ ] görsel/biçim bağımlı sorular işaretlendi mi?
+- [ ] QR / harici medya bağımlılıkları sınıflandırıldı mı?
+- [ ] doğal küçük üretim blokları belirlendi mi?
+- [ ] yalnız ilk bloktan başlanıyor mu?
+
+Bu belge başka sınıfa geçildiğinde yeniden icat edilecek bir öneri değil, **varsayılan üretim sözleşmesidir**.
