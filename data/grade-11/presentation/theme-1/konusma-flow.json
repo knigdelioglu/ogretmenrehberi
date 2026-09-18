@@ -104,15 +104,14 @@
       "prompt_mode": "VERBATIM_SHORT"
     },
     {
-      "id": "s57-performance",
+      "id": "s57-performance-1",
       "source_record_id": "T01-S0061",
-      "answer_id": "T1-P57-PERF01",
       "layout": "process",
       "density": "compact",
-      "prompt": "Canlandırmayı uygulayın.",
+      "prompt": "Canlandırmayı uygulayın — 1/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Canlandırma sırasında aşağıdaki uygulama ölçütlerini izleyin.",
+        "lead": "İlk aşamada konuşmanın yapısını ve anlatımını yönetin.",
         "items": [
           "Kime, nasıl, nerede ve hangi araçlarla konuşacağınızı plana bağlayın.",
           "Canlandırmaya plana uygun ve dikkat çekici biçimde başlayın.",
@@ -120,7 +119,21 @@
           "Vermek istediğiniz iletileri açık veya örtük biçimde ifade edin.",
           "Duygu, düşünce ve hayalleri özgün ve tutarlı bir üslupla aktarın.",
           "Söz varlığını hedef kitleye, içeriğe ve bağlama uygun kullanın.",
-          "Sözcük bağdaşıklığından yararlanın.",
+          "Sözcük bağdaşıklığından yararlanın."
+        ]
+      }
+    },
+    {
+      "id": "s57-performance-2",
+      "source_record_id": "T01-S0061",
+      "answer_id": "T1-P57-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Canlandırmayı uygulayın — 2/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İkinci aşamada değer, dil, beden dili, zaman-mekân ve dinleyici etkileşimini kontrol edin.",
+        "items": [
           "Başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
           "Millî ve manevi değerler ile olumlu tutumları gözetin.",
           "Toplumsal hassasiyetlere aykırı ögelerden kaçının.",
@@ -132,11 +145,11 @@
       }
     },
     {
-      "id": "s58-self-assessment",
+      "id": "s58-self-assessment-1",
       "source_record_id": "T01-S0062",
       "layout": "assessment",
       "density": "compact",
-      "prompt": "Canlandırmanızı öz değerlendirme ölçütleriyle değerlendirin.",
+      "prompt": "Öz değerlendirme — 1/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Her ölçüt için Evet / Kısmen / Hayır kararı verin.",
@@ -145,7 +158,20 @@
           "Konuşma içeriğini kullanım alanına göre belirledim.",
           "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
           "Düşünceyi geliştirme yollarından yararlandım.",
-          "Türkçenin yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim.",
+          "Türkçenin yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim."
+        ]
+      }
+    },
+    {
+      "id": "s58-self-assessment-2",
+      "source_record_id": "T01-S0062",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 2/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kalan ölçütleri değerlendirerek öz değerlendirmenizi tamamlayın.",
+        "items": [
           "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
           "Toplumsal hassasiyetlere aykırı ögelerden kaçındım.",
           "Millî, manevi ve kültürel değerleri gözetmeye dikkat ettim.",
