@@ -282,6 +282,14 @@ export default function App() {
     });
   }, []);
 
+  const resetAllPresentationChanges = useCallback(() => {
+    setOverrides({});
+    setStepOrder(lesson.steps.map((item) => item.id));
+    setIndex(0);
+    setRevealed(new Set());
+    setVocabularyTerms({});
+  }, []);
+
   const exportLessonFlow = useCallback(() => {
     const steps = effectiveSteps.map((effective) => {
       const original = originalStepById.get(effective.id);
@@ -613,7 +621,12 @@ export default function App() {
           canMoveDown={index < effectiveSteps.length - 1}
           onMoveUp={() => moveCurrentStep(-1)}
           onMoveDown={() => moveCurrentStep(1)}
+          hasAnyPresentationChanges={
+            Object.keys(overrides).length > 0 ||
+            stepOrder.some((id, itemIndex) => id !== lesson.steps[itemIndex]?.id)
+          }
           onReset={() => resetStepOverride(step.id)}
+          onResetAll={resetAllPresentationChanges}
           onExport={exportLessonFlow}
           onClose={() => setEditorOpen(false)}
         />
