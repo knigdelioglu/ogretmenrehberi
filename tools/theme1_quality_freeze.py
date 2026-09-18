@@ -143,6 +143,11 @@ def main() -> int:
         default=ROOT / "dist/Ogretmen-Rehberi-Tema-1-Kindle.build.json",
     )
     parser.add_argument(
+        "--freeze-manifest",
+        type=Path,
+        default=THEME_ROOT / "quality-freeze.json",
+    )
+    parser.add_argument(
         "--json-report",
         type=Path,
         default=ROOT / "dist/theme1-quality-freeze.json",
@@ -162,6 +167,7 @@ def main() -> int:
     lessons = json.loads(args.lesson_catalog.read_text(encoding="utf-8"))
     ogretmenos = json.loads(args.ogretmenos_export.read_text(encoding="utf-8"))
     epub_report = json.loads(args.epub_report.read_text(encoding="utf-8"))
+    freeze_manifest = json.loads(args.freeze_manifest.read_text(encoding="utf-8"))
 
     answer_ids = [entry.get("question_id") for entry in answers]
     source_ids = [record.get("source_record_id") for record in sources]
@@ -324,6 +330,53 @@ def main() -> int:
     }
     if row_counts != expected_rows:
         add(errors, "OGRETMENOS_ROW_COUNTS", row_counts)
+
+    # Frozen baseline: future canonical/presentation changes must update the
+    # manifest intentionally rather than silently moving the quality target.
+    if freeze_manifest.get("status") != "FROZEN_REPO_QA":
+        add(errors, "FREEZE_STATUS", freeze_manifest.get("status"))
+    if freeze_manifest.get("canonical") != {
+        "source_records": len(sources),
+        "verified_sources": source_statuses.get("VERIFIED", 0),
+        "answer_entries": len(answers),
+        "source_limited_entries": len(source_limited),
+    }:
+        add(errors, "FREEZE_CANONICAL_DRIFT", freeze_manifest.get("canonical"))
+    if freeze_manifest.get("lesson_player") != {
+        "lessons": len(lessons),
+        "steps": lp_steps,
+        "source_records": len(set(lp_source_ids)),
+        "answer_entries": len(lp_answer_ids),
+    }:
+        add(errors, "FREEZE_LESSON_PLAYER_DRIFT", freeze_manifest.get("lesson_player"))
+
+    frozen_ogretmenos = freeze_manifest.get("ogretmenos") or {}
+    if frozen_ogretmenos.get("content_fingerprint") != ogretmenos.get("content_fingerprint"):
+        add(errors, "FREEZE_FINGERPRINT_DRIFT", {
+            "frozen": frozen_ogretmenos.get("content_fingerprint"),
+            "actual": ogretmenos.get("content_fingerprint"),
+        })
+    if frozen_ogretmenos.get("row_counts") != row_counts:
+        add(errors, "FREEZE_OGRETMENOS_ROW_DRIFT", frozen_ogretmenos.get("row_counts"))
+    if frozen_ogretmenos.get("deterministic_build") is not True:
+        add(errors, "FREEZE_DETERMINISM_NOT_DECLARED", frozen_ogretmenos.get("deterministic_build"))
+
+    frozen_epub = freeze_manifest.get("epub") or {}
+    if (
+        frozen_epub.get("answer_entries") != len(answers)
+        or frozen_epub.get("semantic_parity_entries") != len(answers)
+        or frozen_epub.get("source_limited_entries") != len(source_limited)
+    ):
+        add(errors, "FREEZE_EPUB_DRIFT", frozen_epub)
+
+    frozen_schema = freeze_manifest.get("schema_decision") or {}
+    if (
+        frozen_schema.get("migration_required") is not False
+        or frozen_schema.get("answer_bank_schema") != answer_index.get("schema_version")
+        or frozen_schema.get("lesson_flow_schema") != "0.2.0"
+        or frozen_schema.get("source_index_schema") != source_index.get("schema_version")
+    ):
+        add(errors, "FREEZE_SCHEMA_DRIFT", frozen_schema)
 
     # EPUB parity: every canonical answer and every rendered teacher field must survive.
     epub_entries, epub_files = epub_sections(args.epub)
