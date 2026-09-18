@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.0.0",
+  "theme_id": "TEMA_03",
+  "part_id": "PART_12",
+  "printed_page_range": "225-229",
+  "entries": [
+    {
+      "question_id": "T3-P225-PERF01",
+      "entry_type": "performance_support",
+      "printed_page": 225,
+      "question_no": "Yazmayı Yönetebilme 1-2",
+      "prompt_summary": "Direnişin Ustaları'ndan dönüştürülecek diyaloğu seçme ve uygun yazma stratejisi belirleme",
+      "answer": "Diyalog seçerken şu ölçütler kullanılabilir: metnin ana çatışmasını veya önemli bir değeri yansıtması, en az iki kişi arasında anlamlı bir etkileşim içermesi, başka türe dönüştürüldüğünde olay ve duygu bütünlüğünü koruyabilmesi, çok uzun olmaması ve kişilerin özelliklerini görünür kılması. Dönüştürme stratejisi olarak önce diyaloğun bağlamı, kişiler, amaç, duygu ve çatışma not edilir; sonra seçilen türün özelliklerine göre diyalog anlatı, betimleme, iç konuşma veya anı biçimine dönüştürülür. Dönüşümde olayın özü korunurken anlatım biçimi değiştirilebilir.",
+      "guidance": "Seçilecek gerçek diyalog ses/video kaydından alınmalıdır. Kaynakta olmayan bir diyalog rehber tarafından uydurulmamalıdır.",
+      "source_locator": "basılı s.225 / PDF s.226 — Yazmayı Yönetebilme 1-2"
+    },
+    {
+      "question_id": "T3-P226-PERF01",
+      "entry_type": "performance_support",
+      "printed_page": 226,
+      "question_no": "Performans Görevi a-ç",
+      "prompt_summary": "Diyaloğu başka türe dönüştürmek için amaç, tür, yöntem ve yazma engellerini planlama",
+      "answer": "Örnek plan: Yazma amacı → dinlenen diyaloğun anlamını ve karakter ilişkisini koruyarak başka bir edebî türde yeniden kurmak. Tür → örneğin hikâye veya anı. Tür özellikleri → hikâyede olay, kişi, mekân, zaman ve anlatıcı; anıda yaşanmışlık izlenimi, kişisel bakış ve geçmişe dönük anlatım. Yöntem → diyalogdaki temel olay ve iletileri belirleme, anlatıcı seçme, sahneyi betimleme, konuşmaları gerektiği kadar koruma, anlatı bölümleri ekleme. Olası engeller → karakterlerin kişiliğini bozmak, yeni olaylar uydurmak, bağlamdan kopmak, tür özelliklerini karıştırmak. Çözüm → her yeni cümleyi 'kaynak diyalogla uyumlu mu?' sorusuyla kontrol etmek.",
+      "answer_sections": {
+        "amac": "Diyaloğun anlam ve karakter ilişkisini koruyarak başka türde yeniden kurmak.",
+        "olasi_turler": [
+          "Hikâye",
+          "Anı"
+        ],
+        "yontem": [
+          "Ana olay/iletiyi çıkarma",
+          "Anlatıcı seçme",
+          "Mekân ve zamanı açıklama",
+          "Gerekli diyalogları koruma",
+          "Anlatı/betimleme ekleme"
+        ],
+        "engeller": [
+          "Bağlamdan kopma",
+          "Karakteri değiştirme",
+          "Kaynakta olmayan olay ekleme",
+          "Tür özelliklerini karıştırma"
+        ]
+      },
+      "source_locator": "basılı s.226 / PDF s.227 — Performans Görevi a-ç"
+    },
+    {
+      "question_id": "T3-P226-PERF02",
+      "entry_type": "performance_support",
+      "printed_page": 226,
+      "question_no": "İçerik Oluşturabilme a-k",
+      "prompt_summary": "Dönüştürülecek metnin kişi, ileti, yapı, söz varlığı ve taslak planını oluşturma",
+      "answer": "Doldurulabilir plan örneği:\n\n**Kaynak diyalog:** [dinlenen metinden seçilen bölüm]\n**Kişiler:** [kişi 1], [kişi 2]\n**Bağlam:** [olayın geçtiği durum]\n**Temel çatışma / sorun:** [...]\n**Ana ileti:** [...]\n**Seçilen tür:** [hikâye / anı / başka uygun tür]\n**Anlatıcı:** [...]\n**Mekân:** [...]\n**Zaman:** [...]\n**Giriş:** sahnenin ve kişilerin kısa tanıtımı.\n**Gelişme:** kaynak diyaloğun olay ve duygu çizgisinin anlatıya dönüştürülmesi.\n**Sonuç:** diyaloğun taşıdığı iletinin türün yapısına uygun biçimde tamamlanması.\n**Korunacak dil özellikleri:** karakterlerin konuşma biçimi, döneme/bağlama uygun kelimeler, temel hitaplar.\n**Kullanılacak düşünceyi geliştirme/anlatım yolları:** betimleme, öyküleme, karşılaştırma, gerekçelendirme.\n**Hedef kitle:** sınıf arkadaşları / öğretmen.\n**Geri bildirim sonrası düzeltilecekler:** [...].",
+      "guidance": "Plan, gerçek dinleme notlarıyla doldurulmalıdır. Karakterlerin duygu, düşünce ve davranışları kaynakta görülmeyen ayrıntılarla genişletilmemelidir.",
+      "source_locator": "basılı s.226-227 / PDF s.227-228 — İçerik Oluşturabilme"
+    },
+    {
+      "question_id": "T3-P227-PERF01",
+      "entry_type": "performance_support",
+      "printed_page": 227,
+      "question_no": "Kural Uygulayabilme a-ı",
+      "prompt_summary": "Diyaloğu başka türe dönüştürürken uygulanacak yazma kuralları",
+      "answer": "Yazı şu kontrollerden geçirilmelidir: dikkat çekici fakat bağlama uygun bir giriş; seçilen türün yapı unsurlarına uygunluk; karakterlerin kaynak metindeki kişilik özelliklerini koruma; anlatım biçimlerini işlevsel kullanma; hedef kitleye uygun söz varlığı; açık ve örtük iletileri dengeli verme; yazıyı başlatma, sürdürme ve bitirme ifadelerinin doğal kullanımı; olumlu tutum ve değerleri bağlamı bozmadan öne çıkarma; millî/manevi değerler ve toplumsal hassasiyetlerde ölçülü dil; bağdaşıklık, yazım ve noktalama kurallarına uygunluk; özgün fakat kaynakla çelişmeyen üslup; içeriğe uygun başlık.",
+      "guidance": "Dönüştürme 'serbestçe yeni hikâye yazma' değildir. Tür değişebilir; fakat seçilen diyaloğun bağlamı, kişiler ve temel iletisi korunmalıdır.",
+      "source_locator": "basılı s.227-228 / PDF s.228-229 — Kural Uygulayabilme"
+    },
+    {
+      "question_id": "T3-P228-PERF01",
+      "entry_type": "performance_support",
+      "printed_page": 228,
+      "question_no": "Süreci Değerlendirebilme 1-5",
+      "prompt_summary": "Yazma performansını öz değerlendirme, öğretmen geri bildirimi ve revizyonla geliştirme",
+      "answer": "Öğrenci önce yazma sürecinde neyi kolay/zor bulduğunu, hangi kararları neden verdiğini ve kaynak diyaloğa ne kadar bağlı kaldığını gözden geçirir. Öğretmen değerlendirmesinde kitapta açıkça verilen ölçütler kullanılabilir: dil ve üslup, özgünlük, konuya uygunluk, öznel ve nesnel ifadelerin kullanımı, başlık, yazım ve noktalama. Geri bildirim sonrasında yalnız yüzeysel yazım düzeltmesi değil; bağlam, karakter tutarlılığı, tür yapısı ve iletinin açıklığı da yeniden kontrol edilir. Sonraki çalışma için bir-iki somut hedef belirlenir.",
+      "guidance": "QR'deki dereceli puanlama anahtarı görülmeden puan aralıkları veya ek ölçütler uydurulmamalıdır.",
+      "source_locator": "basılı s.228 / PDF s.229 — Süreci Değerlendirebilme 1-5 / QR rubrik"
+    },
+    {
+      "question_id": "T3-P229-PERF01",
+      "entry_type": "performance_support",
+      "printed_page": 229,
+      "question_no": "Öz Değerlendirme Formu + Çıkış Kartı",
+      "prompt_summary": "Yazma öz değerlendirmesini ve tema sonu çıkış kartını gerçek performansa göre kullanma",
+      "answer": "Öz Değerlendirme Formundaki Evet/Kısmen/Hayır alanları hazır doldurulmamalıdır. Öğrenci şu altı ölçüte göre kendi metnini değerlendirir: uygun başlık, dönüştürülen diyaloğun içeriğini yansıtma, bağlama/hedef kitleye uygun söz varlığı, farklı anlatım biçimleri ve düşünceyi geliştirme yolları, bağdaşıklık-yazım-noktalama, Türkçeyi bilinçli ve özenli kullanma. 'Kısmen' veya 'Hayır' işaretlenen her ölçüt için somut düzeltme yapılır.\n\nÇıkış kartı için örnek yapı: **Üç Yaz:** bu temada öğrendiğin üç kavram/bilgi. **İki Sor:** hâlâ açıklığa kavuşturman gereken iki nokta. **Bir Paylaş:** seni en çok etkileyen bir öğrenme. Burada içerik öğrencinin gerçek öğrenmesine göre doldurulmalıdır.",
+      "guidance": "Öz değerlendirme ve çıkış kartı rehberin öğrencinin yerine cevaplayacağı alanlar değildir; rehber yalnız doğru kullanım biçimini ve beklenen derinliği gösterir.",
+      "source_locator": "basılı s.229 / PDF s.230 — Öz Değerlendirme Formu ve Çıkış Kartı"
+    }
+  ]
+}
