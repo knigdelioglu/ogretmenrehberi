@@ -10,9 +10,15 @@ Zorunlu alanlar:
 
 - `question_id`
 - `printed_page`
-- `prompt`
+- `prompt_summary`
 - `answer`
 - `source_locator`
+
+İhtiyaca göre `entry_type` kullanılabilir:
+
+- `question_answer`: Doğrudan cevaplanabilir soru.
+- `performance_support`: Konuşma, yazma, drama veya benzeri üretim görevleri için tek doğru iddiası taşımayan örnek plan / örnek ürün.
+- `source_limited`: QR video, dinleme kaydı veya dış içerik görülmeden kesinleştirilemeyen soru. Bu tür kayıtta bilgi uydurulmaz; sınır açıkça belirtilir.
 
 Opsiyonel alanlar:
 
@@ -32,6 +38,9 @@ Opsiyonel alanlar:
 8. İçe aktarılmış legacy soru envanteri eksiksizlik kaynağı kabul edilmez; gerçek kitap sayfası nihai kontroldür.
 9. Aynı genel cümle farklı sorulara kopyalanmaz; her cevap sorunun bağlamına özgü yazılır.
 10. Büyük toplu üretim yapılmaz. İçerik doğal ders blokları hâlinde üretilir ve gözden geçirilir.
+11. Konuşma, yazma ve performans blokları klasik cevap anahtarına zorlanmaz. Görev bir ürün oluşturmayı gerektiriyorsa `performance_support` ile sınıfta kullanılabilir örnek plan veya örnek ürün verilir.
+12. Öz değerlendirme ve akran değerlendirme formlarında doğru cevap üretilmez; bunlar öğrencinin gerçek performansına göre doldurulur.
+13. QR video / dinleme içeriği erişilebilir değilse videoda görülmeyen ayrıntılar kesinmiş gibi yazılmaz.
 
 ## Alıntı gösterimi
 
