@@ -1291,3 +1291,50 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+
+/* Multi-lesson selector */
+
+.lesson-select {
+  display: grid;
+  gap: 3px;
+  min-width: min(280px, 28vw);
+}
+
+.lesson-select > span {
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.68;
+}
+
+.lesson-select select {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 9px;
+  padding: 0 30px 0 10px;
+  background: rgb(255 255 255 / 0.10);
+  color: #fff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 680;
+}
+
+.lesson-select option {
+  color: #1f2522;
+  background: #fffdf8;
+}
+
+@media (max-width: 1180px) {
+  .lesson-select {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 760px) {
+  .lesson-select {
+    min-width: 180px;
+  }
+}

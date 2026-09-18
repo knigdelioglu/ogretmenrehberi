@@ -3,7 +3,8 @@ name: Lesson Player
 on:
   push:
     branches:
-      - feat/lesson-player-mvp
+      - main
+      - "feat/**"
     paths:
       - "apps/lesson-player/**"
       - "data/grade-11/presentation/**"
@@ -103,6 +104,23 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-process.png" \
             "http://127.0.0.1:4173/?display=1&step=s35-q1"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-mektup.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-MEKTUP&step=s36-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-mektup-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T01-MEKTUP&step=s39-q1"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -113,5 +131,7 @@ jobs:
             lesson-player-vocabulary.png
             lesson-player-reference.png
             lesson-player-process.png
+            lesson-player-mektup.png
+            lesson-player-mektup-vocabulary.png
             apps/lesson-player/dist
           if-no-files-found: error

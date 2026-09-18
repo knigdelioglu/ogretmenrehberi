@@ -6,7 +6,7 @@ import {
   useRef,
   useState
 } from "react";
-import lessonJson from "./generated/karagoz.json";
+import lessonsJson from "./generated/lessons.json";
 import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
 import type {
@@ -18,15 +18,33 @@ import type {
   StepContent
 } from "./types";
 
-const lesson = lessonJson as LessonData;
+const lessonCatalog = lessonsJson as LessonData[];
+if (!lessonCatalog.length) {
+  throw new Error("Lesson catalog is empty.");
+}
+
+const lessonSelectionKey = "ogretmenrehberi.lesson.last-selected";
+const initialParams = new URLSearchParams(window.location.search);
+const requestedLesson =
+  initialParams.get("lesson") ??
+  window.localStorage.getItem(lessonSelectionKey);
+
+const lesson =
+  lessonCatalog.find(
+    (item) =>
+      item.lesson_id === requestedLesson ||
+      item.lesson_slug === requestedLesson
+  ) ?? lessonCatalog[0];
+
+window.localStorage.setItem(lessonSelectionKey, lesson.lesson_id);
+
 const progressKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.index`;
 const modeKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection`;
 const overridesKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.overrides`;
 const orderKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.order`;
 const originalStepById = new Map(lesson.steps.map((step) => [step.id, step]));
 const projectionChannelName = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection-channel`;
-const displayOnly =
-  new URLSearchParams(window.location.search).get("display") === "1";
+const displayOnly = initialParams.get("display") === "1";
 
 type StepOverride = {
   display_prompt?: string;
@@ -161,6 +179,7 @@ export default function App() {
       const currentStepId = effectiveSteps[clamped]?.id;
       if (currentStepId) {
         const url = new URL(window.location.href);
+        url.searchParams.set("lesson", lesson.lesson_id);
         url.searchParams.set("step", currentStepId);
         url.searchParams.delete("display");
         window.history.replaceState(null, "", url);
@@ -197,6 +216,18 @@ export default function App() {
     else if (index < lesson.steps.length - 1) goTo(index + 1);
   }, [goTo, index, revealed, step, toggle]);
 
+  const switchLesson = useCallback((lessonId: string) => {
+    const target = lessonCatalog.find((item) => item.lesson_id === lessonId);
+    if (!target || target.lesson_id === lesson.lesson_id) return;
+
+    window.localStorage.setItem(lessonSelectionKey, target.lesson_id);
+    const url = new URL(window.location.href);
+    url.searchParams.set("lesson", target.lesson_id);
+    url.searchParams.delete("step");
+    url.searchParams.delete("display");
+    window.location.assign(url.toString());
+  }, []);
+
   const togglePresentationMode = useCallback(() => {
     setPresentationMode((current) => {
       const next = !current;
@@ -218,6 +249,7 @@ export default function App() {
 
   const openProjectionWindow = useCallback(() => {
     const url = new URL(window.location.href);
+    url.searchParams.set("lesson", lesson.lesson_id);
     url.searchParams.set("display", "1");
 
     const displayWindow = window.open(
@@ -361,7 +393,7 @@ export default function App() {
     const href = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = href;
-    anchor.download = "karagoz-flow.json";
+    anchor.download = `${lesson.lesson_slug}-flow.json`;
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
@@ -515,17 +547,32 @@ export default function App() {
           <div className="topbar__title">{lesson.title}</div>
         </div>
         <div className="topbar__actions">
+          {lessonCatalog.length > 1 ? (
+            <label className="lesson-select">
+              <span>Ders</span>
+              <select
+                value={lesson.lesson_id}
+                onChange={(event) => switchLesson(event.target.value)}
+              >
+                {lessonCatalog.map((item) => (
+                  <option value={item.lesson_id} key={item.lesson_id}>
+                    {item.title} · s. {item.printed_page_range}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : null}
           <button type="button" onClick={() => setOutlineOpen((value) => !value)}>
-            {outlineOpen ? "Akışı kapat" : "Ders akışı"}
+            {outlineOpen ? "Akış" : "Akış"}
           </button>
           <button type="button" onClick={() => setEditorOpen((value) => !value)}>
             {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
           </button>
           <button type="button" onClick={openProjectionWindow}>
-            Öğrenci ekranını aç
+            Öğrenci ekranı
           </button>
           <button type="button" onClick={togglePresentationMode}>
-            Bu ekranda projeksiyon
+            Projeksiyon
           </button>
           <button type="button" onClick={() => void toggleFullscreen()}>
             Tam ekran

@@ -2,15 +2,12 @@
 
 Öğretmen Rehberi kanonik verisini sınıfta tam ekran yürütmek için React/Vite tabanlı ders oynatıcı ve sunum düzenleyici.
 
-İlk pilot:
+Mevcut doğrulanmış dersler:
 
-- 11. sınıf
-- 1. Tema — Bir Diyeceğim Var!
-- Karagöz / Yazıcı
-- basılı s.15–35
-- 49 ders adımı
-- 17 source-index kaydı
-- 39 answer-bank kaydı
+- **Karagöz / Yazıcı** — basılı s.15–35 — 49 ders adımı / 17 source kaydı / 39 cevap
+- **Mektup / Âli’ye Mektuplar** — basılı s.36–52 — 43 ders adımı / 36 source kaydı / 39 cevap
+
+Uygulama tek derse bağlı değildir. `data/grade-11/presentation/theme-1/*-flow.json` dosyaları build sırasında otomatik keşfedilerek bir ders kataloğuna dönüştürülür.
 
 ## Çalıştırma
 
@@ -20,7 +17,7 @@ npm install
 npm run dev
 ```
 
-`npm run dev` önce `scripts/build-lesson-data.mjs` çalıştırır. UI içine cevaplar elle kopyalanmaz; generated veri mevcut `source-index.json`, `answer-bank` ve `karagoz-flow.json` dosyalarından üretilir.
+`npm run dev` önce `scripts/build-lesson-data.mjs` çalıştırır. UI içine cevaplar elle kopyalanmaz; generated veri mevcut `source-index.json`, `answer-bank` ve bütün `*-flow.json` dosyalarından üretilir. Çıktı `src/generated/lessons.json` ders kataloğudur.
 
 Production doğrulaması:
 
@@ -31,9 +28,19 @@ npm run build
 Build sırası:
 
 1. kanonik ders verisini üretir,
-2. Karagöz kapsam/test assertionlarını çalıştırır,
+2. bütün derslerin kapsam/test assertionlarını çalıştırır,
 3. TypeScript doğrulaması yapar,
 4. Vite production build üretir.
+
+## Ders seçimi
+
+Üst araç çubuğundaki **Ders** seçicisinden katalogdaki dersler arasında geçiş yapılabilir. Seçilen ders hatırlanır.
+
+Doğrudan bağlantılar da desteklenir:
+
+- `?lesson=T11-T01-MEKTUP`
+- `?lesson=mektup&step=s39-q1`
+- `?lesson=T11-T01-KARAGOZ&step=s25-q1`
 
 ## Öğretmen görünümü
 
@@ -82,7 +89,7 @@ Bu sayede öğrenciler “Cevabı göster” gibi öğretmen UI öğelerini gör
 - adım bazında Geniş / Normal / Kompakt içerik yoğunluğu seçer,
 - değişiklikleri `localStorage` içinde saklar,
 - yalnız ilgili adımı sıfırlayabilir,
-- düzenlenmiş yapıyı `karagoz-flow.json` olarak dışa aktarabilir.
+- düzenlenmiş yapıyı açık olan dersin `<lesson-slug>-flow.json` dosyası olarak dışa aktarabilir.
 
 Bu düzenleme kanonik `answer-bank` içeriğini değiştirmez; yalnız presentation/lesson-flow katmanına uygulanır.
 
@@ -109,10 +116,10 @@ Vocabulary görünümünde:
 
 ## Veri güvenlik kapıları
 
-Karagöz pilotunda build şu koşullarda hata verir:
+Her lesson-flow için build şu koşullarda hata verir:
 
-- s.15–35 içindeki gerekli source-index kaydı lesson-flow içinde yoksa,
-- ilgili answer-bank kaydı lesson-flow içinde yoksa,
+- `required_source_range` içindeki gerekli source-index kaydı lesson-flow içinde yoksa,
+- dersin basılı sayfa aralığındaki answer-bank kaydı lesson-flow içinde yoksa,
 - vocabulary kaydında yapılandırılmış kelime/anlam verisi yoksa,
 - lesson-flow bilinmeyen source/answer ID kullanıyorsa,
 - soru sayfası ile bağlandığı source kaydı çelişiyorsa.
