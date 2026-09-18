@@ -109,6 +109,9 @@ assert(wordWall.density === "large", "Kelime duvarı adımı geniş görünüm k
 const s30q1 = byId.get("s30-q1");
 assert(s30q1?.answer?.question_no === "1", "Eksik question_no Q01'den türetilmeli.");
 
+const s35q1 = byId.get("s35-q1");
+assert(s35q1?.density === "compact", "Yoğun s35-q1 projeksiyonda kompakt olmalı.");
+
 const s35q3 = byId.get("s35-q3");
 assert(s35q3?.answer?.question_no === "3", "Eksik question_no Q03'ten türetilmeli.");
 
