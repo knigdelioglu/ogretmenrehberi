@@ -71,6 +71,7 @@ export interface LessonStep {
 export interface LessonData {
   schema_version: string;
   lesson_id: string;
+  lesson_slug: string;
   title: string;
   subtitle: string;
   printed_page_range: string;
