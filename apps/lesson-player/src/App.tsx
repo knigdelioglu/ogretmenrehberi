@@ -39,6 +39,7 @@ type ProjectionSyncState = {
   stepOrder: string[];
   overrides: StepOverrides;
   revealed: RevealKey[];
+  vocabularyTerms: Record<string, string[]>;
 };
 
 function restoredIndex() {
@@ -110,19 +111,22 @@ export default function App() {
   const [overrides, setOverrides] = useState<StepOverrides>(restoredOverrides);
   const [stepOrder, setStepOrder] = useState<string[]>(restoredOrder);
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
+  const [vocabularyTerms, setVocabularyTerms] = useState<Record<string, string[]>>({});
   const projectionChannelRef = useRef<BroadcastChannel | null>(null);
   const projectionStateRef = useRef<ProjectionSyncState>({
     index,
     stepOrder,
     overrides,
-    revealed: []
+    revealed: [],
+    vocabularyTerms: {}
   });
 
   projectionStateRef.current = {
     index,
     stepOrder,
     overrides,
-    revealed: [...revealed]
+    revealed: [...revealed],
+    vocabularyTerms
   };
 
   const effectiveSteps = useMemo(
@@ -148,6 +152,19 @@ export default function App() {
       if (next.has(key)) next.delete(key);
       else next.add(key);
       return next;
+    });
+  }, []);
+
+  const toggleVocabularyTerm = useCallback((stepId: string, term: string) => {
+    setVocabularyTerms((current) => {
+      const existing = new Set(current[stepId] ?? []);
+      if (existing.has(term)) existing.delete(term);
+      else existing.add(term);
+
+      return {
+        ...current,
+        [stepId]: [...existing]
+      };
     });
   }, []);
 
@@ -366,6 +383,7 @@ export default function App() {
           Math.max(0, Math.min(lesson.steps.length - 1, state.index))
         );
         setRevealed(new Set(state.revealed));
+        setVocabularyTerms(state.vocabularyTerms ?? {});
       }
     };
 
@@ -387,7 +405,7 @@ export default function App() {
       type: "lesson-state",
       state: projectionStateRef.current
     });
-  }, [index, overrides, revealed, stepOrder]);
+  }, [index, overrides, revealed, stepOrder, vocabularyTerms]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -531,6 +549,10 @@ export default function App() {
           revealed={revealed}
           toggle={toggle}
           presentationMode={presentationMode || displayOnly}
+          visibleVocabularyTerms={
+            new Set(vocabularyTerms[step.id] ?? [])
+          }
+          toggleVocabularyTerm={(term) => toggleVocabularyTerm(step.id, term)}
         />
 
         <footer className="lesson-footer">
