@@ -69,6 +69,10 @@ export interface LessonData {
   title: string;
   subtitle: string;
   printed_page_range: string;
+  required_source_range: {
+    from: string;
+    to: string;
+  };
   generated_at: string;
   coverage: {
     source_records: number;
