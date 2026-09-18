@@ -25,12 +25,11 @@
       "printed_page": 304,
       "question_no": "2",
       "prompt_summary": "I. metindeki açıklama ile II. metindeki örnekler arasındaki anlam ilişkisini belirleme",
-      "answer": "II. metin, I. metinde açıklanan düşünceyi somutlaştırıp desteklemektedir. I. metin modern Türk tiyatrosunda geleneksel tiyatro birikimi ile Batılı tekniklerin birleştiğini genel olarak söyler; II. metin ise Meddah, Karagöz ve Ortaoyunu özelliklerinin modern yazarlık teknikleriyle birleştirilmesini örnek gösterir. Bu nedenle iki metin arasında açıklama-örneklendirme ve genelden somuta ilerleme ilişkisi vardır.",
+      "answer": "Doğru cevap **A** seçeneğidir. II. metin, I. metindeki genel açıklamayı somut bir tiyatro örneği üzerinden destekleyip örneklendirir. I. metinde geleneksel Türk tiyatrosunun biçimsel özellikleriyle Batı tiyatrosunun teknik ve düşünsel yaklaşımlarının modern Türk tiyatrosunda buluştuğu belirtilir; II. metinde ise Haldun Taner ve Turgut Özakman'ın Meddah, Karagöz ve Ortaoyunu biçimlerini modern yazarlık teknikleriyle birleştirmesi bu açıklamanın somut karşılığı olarak verilir.",
       "evidence_quotes": [
         "Meddah, Karagöz ve Ortaoyunu’nun biçimlerini modern yazarlık teknikleriyle buluşturuyordu."
       ],
-      "explanation": "PDF metin çıkarımında bu sorunun seçenekleri görünmediği için seçenek harfi tahmin edilmemiş, metinler arasındaki doğru ilişki doğrudan açıklanmıştır.",
-      "source_locator": "basılı s.304 / PDF s.305 — Soru 2"
+      "source_locator": "basılı s.304 / PDF s.305 — Soru 2 / doğru seçenek A"
     },
     {
       "question_id": "T4-P304-Q03",
@@ -56,13 +55,19 @@
     },
     {
       "question_id": "T4-P305-Q05",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 305,
       "question_no": "5",
       "prompt_summary": "Çadır metninin iletisini en uygun yansıtan afiş görsellerini seçip gerekçelendirme",
-      "answer": "Sorudaki görsel seçenekler metin çıkarımında görünmediği için hangi görselin seçilmesi gerektiği kesin olarak belirtilemez. Seçilecek görsel; metindeki çocuk, kardeşlik, paylaşma, okul, oyun, doğa ve sevinç gibi unsurlardan en az birini açık biçimde yansıtmalı ve metnin daha erdemli, paylaşımcı ve mutlu bir yaşam özlemiyle ilişkilendirilebilmelidir. Gerekçe, yalnız 'güzel olduğu için' değil, görseldeki somut ayrıntının metindeki hangi dize veya düşünceyle örtüştüğünü açıklamalıdır.",
-      "guidance": "Gerçek sayfadaki görseller görüldüğünde seçim, 'görsel ayrıntı + metindeki karşılığı + iletinin nasıl güçlendiği' biçiminde gerekçelendirilmelidir.",
-      "source_locator": "basılı s.305 / PDF s.306 — Soru 5 / görsel seçenekler"
+      "answer": "Örnek seçim olarak **çiçek açmış ağaç görseli** ile **açık havada birlikte vakit geçiren aile/çocuklar görseli** kullanılabilir. Çiçekli ağaç; metindeki doğa, erik ağacı, güzellik ve çocuklara yetecek paylaşım düşüncesini destekler. Birlikte ve mutlu görünen aile/çocuklar ise kardeşlik, sevgi, oyun ve sevinç iletisini görünür kılar. Apartman görseli barınma/topluluk çağrışımı üzerinden kullanılabilir ama metnin temel iletilerine daha dolaylı bağlanır. Orman yangını görseli ise metnin kurduğu güvenli, erdemli ve sevinçli yaşam tasarımıyla doğrudan örtüşmez; ancak karşıtlık kurmak amacı açıkça gerekçelendirilirse yaratıcı bir tercih olarak tartışılabilir.",
+      "guidance": "Soru yorumlamaya açıktır; tek zorunlu görsel seçimi yoktur. Değerlendirmede öğrencinin 'görselde ne görüyorum → metindeki hangi söz/düşünceyle ilişkilendiriyorum → afişin iletisini nasıl güçlendiriyor?' zincirini kurması aranmalıdır.",
+      "source_locator": "basılı s.305 / PDF s.306 — Soru 5 / dört görsel gerçek PDF sayfasından doğrulandı",
+      "answer_sections": {
+        "onerilen_1": "Çiçek açmış ağaç → doğa, erik ağacı, güzellik, paylaşım ve yaşam sevinci.",
+        "onerilen_2": "Açık havada mutlu aile/çocuklar → kardeşlik, sevgi, oyun, sevinç ve birlikte yaşam.",
+        "daha_dolayli": "Apartmanlar → barınma ve topluluk çağrışımı kurulabilir; metne bağı daha dolaylıdır.",
+        "karsitlik_amacli": "Orman yangını → doğrudan uygun değildir; yalnız metindeki olumlu yaşam tasarımına karşıtlık kurmak için gerekçeli biçimde kullanılabilir."
+      }
     },
     {
       "question_id": "T4-P305-Q06",

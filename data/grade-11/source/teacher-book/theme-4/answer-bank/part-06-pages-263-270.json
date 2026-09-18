@@ -43,12 +43,37 @@
     {
       "question_id": "T4-P267-VOC02",
       "entry_type": "performance_support",
-      "printed_page": 267,
+      "printed_page": "267-268",
       "question_no": "Söz Varlığımız 4-5",
-      "prompt_summary": "Kelime ve kelime gruplarını farklı anlamlarda kullanma; merdiven kavramının çağrışımlarını belirleme",
-      "answer": "Örnek farklı anlam kullanımları: 'Çabuk çıkıyorum.' → 'Bu ay satışlar hızla çıktı.'; 'Yol vermek' → 'Bu karar yeni tartışmalara yol verdi.'; 'Yerinde olurdu' → 'Tablonun yeri salonda daha uygun oldu.'; 'İşimi bitirdim.' → 'Bu ilaç sonunda işi bitirdi.'; 'Yukarı çıkmak' → 'Görevinde hızla yukarı çıktı.' Merdiven kavramı fiziksel anlamının yanında yükselme, kariyer, yaş alma, ilerleme, iniş, gerileme, hayatın basamakları ve ölüm gibi çağrışımlar oluşturabilir.",
-      "guidance": "Altı çizili kelimenin hangi anlamının değiştiği açıkça gösterilmelidir; yalnız yeni bir cümle yazmak yeterli değildir.",
-      "source_locator": "basılı s.267-268 / PDF s.268-269 — Söz Varlığımız 4-5"
+      "prompt_summary": "Kelime ve kelime gruplarını farklı anlamlarda kullanma; merdiven kavramının çağrışımlarını belirleyip bu çağrışımlarla ilişkisini açıklama",
+      "answer": "4. madde için örnek farklı anlam kullanımları: 'Çabuk çıkıyorum.' → 'Bu ay satışlar hızla çıktı.'; 'yol vermek' → 'Bu karar yeni tartışmalara yol verdi.'; 'yerinde olurdu' → 'Tablonun yeri salonda daha uygun oldu.'; 'işimi bitirdim' → 'Bu ilaç sonunda işi bitirdi.'; 'yukarı çıkmak' → 'Görevinde hızla yukarı çıktı.' 5/a için merdiven; yükselme, kariyer, ilerleme, yaşamın basamakları, yaş alma, iniş, gerileme, kuşak değişimi ve ölüm/son gibi çağrışımlar oluşturabilir. 5/b için ilişki şöyle kurulabilir: Merdivende yukarı çıkmak fiziksel bir hareketken hikâyede meslekte yükselmeyi ve ilerleme isteğini de düşündürür; basamakların birer birer aşılması yaşam evrelerinin zamanla geçmesine benzer; aşağı inmek geri çekilme ve öncelikleri yeniden düşünme çağrışımı kazanır; merdivendeki ihtiyar–anlatıcı–delikanlı sıralaması ise kuşakların yer değiştirmesini ve yaşlanmayı görünür kılar. Böylece merdiven, yalnız mekân değil yaşam ve meslek döngüsünü taşıyan bir simgeye dönüşür.",
+      "guidance": "5/a'da tek bir çağrışım listesi zorunlu değildir. 5/b'de ise öğrenci yalnız kavram saymamalı; seçtiği çağrışımın merdivenin fiziksel özelliği veya hikâyedeki kullanımıyla bağını bir cümleyle açıklamalıdır.",
+      "source_locator": "basılı s.267-268 / PDF s.268-269 — Söz Varlığımız 4, 5/a ve 5/b",
+      "answer_sections": {
+        "4_farkli_anlam_ornekleri": [
+          "çıkmak → satışların/fiyatların artması",
+          "yol vermek → bir sonuca sebep olmak",
+          "yerinde → uygun/doğru olmak veya bir şeyin bulunduğu konum",
+          "işini bitirmek → bir işi tamamlamak / bağlama göre sona erdirmek",
+          "yukarı çıkmak → görevde veya konumda yükselmek"
+        ],
+        "5a_merdivenin_cagrisimlari": [
+          "yükselme ve kariyer",
+          "ilerleme",
+          "yaşamın basamakları",
+          "yaş alma",
+          "iniş ve geri çekilme",
+          "kuşak değişimi",
+          "ölüm / yaşamın sonu"
+        ],
+        "5b_kurulan_iliskiler": [
+          "Yukarı çıkma ↔ meslekte yükselme ve ilerleme isteği",
+          "Basamak basamak ilerleme ↔ yaşam evrelerinin zamanla geçmesi",
+          "Aşağı inme ↔ geri çekilme ve öncelikleri yeniden değerlendirme",
+          "İhtiyar–anlatıcı–delikanlı sıralaması ↔ kuşakların yer değiştirmesi ve yaşlanma",
+          "Merdivenin sonu ↔ yaşamın sınırlılığı ve ölüm düşüncesi"
+        ]
+      }
     },
     {
       "question_id": "T4-P268-Q01",
