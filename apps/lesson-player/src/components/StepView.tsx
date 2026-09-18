@@ -8,6 +8,7 @@ interface StepViewProps {
   revealed: Set<RevealKey>;
   toggle: (key: RevealKey) => void;
   presentationMode: boolean;
+  showAnswerToggle: boolean;
   visibleVocabularyTerms: ReadonlySet<string>;
   toggleVocabularyTerm: (term: string) => void;
 }
@@ -36,14 +37,37 @@ const buttonLabels: Record<RevealKey, string> = {
 };
 
 function answerControls(step: LessonStep): RevealKey[] {
-  return step.reveal_order;
+  return step.reveal_order.filter((key) => key !== "answer");
 }
 
-function revealButtonLabel(step: LessonStep, key: RevealKey) {
-  if (key === "answer" && step.answer?.entry_type === "source_limited") {
-    return "Kaynak notu";
-  }
+function revealButtonLabel(_step: LessonStep, key: RevealKey) {
   return buttonLabels[key];
+}
+
+function answerLabel(step: LessonStep) {
+  if (step.answer?.entry_type === "performance_support") return "Uygulama desteği";
+  if (step.answer?.entry_type === "source_limited") {
+    return "Kaynak sınırı / doğrulanabilen çerçeve";
+  }
+  return "Cevap";
+}
+
+function AnswerToggleIcon({ active }: { active: boolean }) {
+  if (active) {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9.4 7.4 4.8 12l4.6 4.6" />
+        <path d="M5.2 12h8.1c3.6 0 5.7-1.7 5.7-5" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M2.8 12s3.5-6 9.2-6 9.2 6 9.2 6-3.5 6-9.2 6-9.2-6-9.2-6Z" />
+      <circle cx="12" cy="12" r="2.3" />
+    </svg>
+  );
 }
 
 function VocabularyBody({
@@ -102,12 +126,14 @@ export function StepView({
   revealed,
   toggle,
   presentationMode,
+  showAnswerToggle,
   visibleVocabularyTerms,
   toggleVocabularyTerm
 }: StepViewProps) {
   const { answer, content, source } = step;
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
+  const answerVisible = Boolean(answer && revealed.has("answer") && !isVocabulary);
   const stageRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -157,19 +183,54 @@ export function StepView({
                   ? "Kaynak sınırlı · " + taskTypeLabel(source.task_type)
                   : taskTypeLabel(source.task_type)}
             </div>
-            {answer.question_no ? (
-              <div className="question-number">Soru {answer.question_no}</div>
-            ) : null}
-            <h1>{step.display_prompt}</h1>
-            {!presentationMode ? (
-              <div className="prompt-origin">
-                {step.display_prompt_mode === "VERBATIM_SHORT"
-                  ? "Kitaptaki kısa soru metni"
-                  : step.display_prompt_mode === "ANSWER_SUMMARY"
-                    ? "Rehber soru özeti"
-                    : "Kaynak temelli soru"}
+
+            <div className="question-swap">
+              <div className="question-swap__content">
+                {answerVisible ? (
+                  <div
+                    className="inline-answer"
+                    data-reveal-key="answer"
+                    aria-label={answerLabel(step)}
+                  >
+                    <div className="inline-answer__label">{answerLabel(step)}</div>
+                    <p className="inline-answer__text">{answer.answer}</p>
+                    {answer.answer_sections &&
+                    !Array.isArray(answer.answer_sections) ? (
+                      <StructuredSections sections={answer.answer_sections} />
+                    ) : null}
+                  </div>
+                ) : (
+                  <>
+                    {answer.question_no ? (
+                      <div className="question-number">Soru {answer.question_no}</div>
+                    ) : null}
+                    <h1>{step.display_prompt}</h1>
+                    {!presentationMode ? (
+                      <div className="prompt-origin">
+                        {step.display_prompt_mode === "VERBATIM_SHORT"
+                          ? "Kitaptaki kısa soru metni"
+                          : step.display_prompt_mode === "ANSWER_SUMMARY"
+                            ? "Rehber soru özeti"
+                            : "Kaynak temelli soru"}
+                      </div>
+                    ) : null}
+                  </>
+                )}
               </div>
-            ) : null}
+
+              {!isVocabulary && showAnswerToggle ? (
+                <button
+                  className={answerVisible ? "answer-toggle is-active" : "answer-toggle"}
+                  type="button"
+                  onClick={() => toggle("answer")}
+                  aria-label={answerVisible ? "Soruyu göster" : "Cevabı göster"}
+                  aria-pressed={answerVisible}
+                  title={answerVisible ? "Soruyu göster" : "Cevabı göster"}
+                >
+                  <AnswerToggleIcon active={answerVisible} />
+                </button>
+              ) : null}
+            </div>
           </>
         ) : (
           <>
@@ -178,11 +239,11 @@ export function StepView({
           </>
         )}
 
-        {content?.lead && answer && content.lead !== step.display_prompt ? (
+        {!answerVisible && content?.lead && answer && content.lead !== step.display_prompt ? (
           <p className="lead">{content.lead}</p>
         ) : null}
 
-        {content?.items?.length ? (
+        {!answerVisible && content?.items?.length ? (
           <div className="process-list">
             {content.items.map((item, index) => (
               <div className="process-list__row" key={item}>
@@ -193,7 +254,7 @@ export function StepView({
           </div>
         ) : null}
 
-        {content?.sections?.length ? (
+        {!answerVisible && content?.sections?.length ? (
           <div className="reference-grid">
             {content.sections.map((section) => (
               <article className="reference-card" key={section.title}>
@@ -234,27 +295,6 @@ export function StepView({
           <div data-reveal-key="guidance">
             <RevealPanel label="Yönlendirme" tone="guidance">
               <p>{answer.guidance}</p>
-            </RevealPanel>
-          </div>
-        ) : null}
-
-        {answer && revealed.has("answer") && !isVocabulary ? (
-          <div data-reveal-key="answer">
-            <RevealPanel
-              label={
-                answer.entry_type === "performance_support"
-                  ? "Uygulama desteği"
-                  : answer.entry_type === "source_limited"
-                    ? "Kaynak sınırı / doğrulanabilen çerçeve"
-                    : "Cevap"
-              }
-              tone="answer"
-            >
-              <p>{answer.answer}</p>
-              {answer.answer_sections &&
-              !Array.isArray(answer.answer_sections) ? (
-                <StructuredSections sections={answer.answer_sections} />
-              ) : null}
             </RevealPanel>
           </div>
         ) : null}
