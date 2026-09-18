@@ -47,9 +47,11 @@ export interface StepContent {
   note?: string;
 }
 
+
 export interface LessonStep {
   id: string;
   layout: LayoutKind;
+  reveal_order: RevealKey[];
   display_prompt: string;
   display_prompt_mode:
     | "FLOW_OVERRIDE"
