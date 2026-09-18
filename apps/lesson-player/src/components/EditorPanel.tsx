@@ -16,7 +16,9 @@ interface EditorPanelProps {
   canMoveDown: boolean;
   onMoveUp: () => void;
   onMoveDown: () => void;
+  hasAnyPresentationChanges: boolean;
   onReset: () => void;
+  onResetAll: () => void;
   onExport: () => void;
   onClose: () => void;
 }
@@ -50,7 +52,9 @@ export function EditorPanel({
   canMoveDown,
   onMoveUp,
   onMoveDown,
+  hasAnyPresentationChanges,
   onReset,
+  onResetAll,
   onExport,
   onClose
 }: EditorPanelProps) {
@@ -305,6 +309,13 @@ export function EditorPanel({
       <div className="editor-panel__actions">
         <button type="button" onClick={onReset} disabled={!hasOverride}>
           Bu adımı sıfırla
+        </button>
+        <button
+          type="button"
+          onClick={onResetAll}
+          disabled={!hasAnyPresentationChanges}
+        >
+          Tüm sunum ayarlarını sıfırla
         </button>
         <button type="button" className="primary" onClick={onExport}>
           lesson-flow JSON dışa aktar
