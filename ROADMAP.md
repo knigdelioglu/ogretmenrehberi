@@ -255,7 +255,6 @@ Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
 
 - [x] çoklu ders kataloğu ve ders seçici
 - [x] Mektup / Âli’ye Mektuplar s.36–52
-- [x] Edebiyat Atölyesi-1 / Konuşma s.53–58
 
 ## Faz 8 — 1. Tema entegrasyon ve kalite dondurması
 
