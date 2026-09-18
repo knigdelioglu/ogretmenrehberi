@@ -12,7 +12,7 @@
   "policy_ref": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
   "totals": {
     "source_records": 576,
-    "answer_bank_entries": 0
+    "answer_bank_entries": 40
   },
   "themes": [
     {
@@ -20,7 +20,9 @@
       "source_index": "data/grade-11/source/teacher-book/theme-1/source-index.json",
       "answer_bank": "data/grade-11/source/teacher-book/theme-1/answer-bank.json",
       "source_records": 129,
-      "answer_bank_status": "PENDING_REGENERATION"
+      "answer_bank_status": "PARTIAL_REBUILD",
+      "answer_bank_entries": 40,
+      "rebuilt_printed_page_range": "14-35"
     },
     {
       "theme_id": "TEMA_02",
@@ -45,9 +47,11 @@
     }
   ],
   "answer_bank": {
-    "status": "REBUILDING_FROM_OFFICIAL_SOURCES",
+    "status": "PARTIAL_REBUILD",
     "linkage": "question_id",
     "legacy_answer_banks_removed": true,
-    "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md"
+    "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
+    "current_scope": "TEMA_01 basılı s.14-35",
+    "next_scope": "TEMA_01 basılı s.36 ve sonrası"
   }
 }
