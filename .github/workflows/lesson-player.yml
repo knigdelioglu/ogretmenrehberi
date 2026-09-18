@@ -9,7 +9,7 @@ on:
     paths:
       - "apps/lesson-player/**"
       - "data/grade-11/presentation/**"
-      - "data/grade-11/source/teacher-book/theme-1/**"
+      - "data/grade-11/source/teacher-book/**"
       - ".github/workflows/lesson-player.yml"
   workflow_dispatch:
 
@@ -267,6 +267,23 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme-intro.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T01-GIRIS&step=s12-13-overview"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-intro.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-GIRIS&step=s84-overview"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-question.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-GIRIS&step=s87-q1"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -293,5 +310,7 @@ jobs:
             lesson-player-assessment-table.png
             lesson-player-assessment-source-limited.png
             lesson-player-theme-intro.png
+            lesson-player-theme2-intro.png
+            lesson-player-theme2-question.png
             apps/lesson-player/dist
           if-no-files-found: error
