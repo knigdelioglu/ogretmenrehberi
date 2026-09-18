@@ -26,7 +26,7 @@ interface EditorPanelProps {
 }
 
 const densities: Array<{ value: DensityKind; label: string }> = [
-  { value: "large", label: "Geniş — daha büyük yazı, daha az içerik" },
+  { value: "large", label: "Geniş — daha büyük ve ferah görünüm" },
   { value: "comfortable", label: "Normal — varsayılan" },
   { value: "compact", label: "Kompakt — daha fazla içerik" }
 ];
@@ -67,6 +67,17 @@ export function EditorPanel({
   onExport,
   onClose
 }: EditorPanelProps) {
+  const supportsVocabulary =
+    Boolean(step.answer?.answer_sections) &&
+    !Array.isArray(step.answer?.answer_sections) &&
+    Object.values(step.answer?.answer_sections ?? {}).every(
+      (value) => typeof value === "string"
+    );
+
+  const supportedLayouts = layouts.filter(
+    (layout) => layout.value !== "vocabulary" || supportsVocabulary
+  );
+
   return (
     <aside className="editor-panel" aria-label="Sunum düzenleme paneli">
       <div className="editor-panel__header">
@@ -105,7 +116,7 @@ export function EditorPanel({
           value={step.layout}
           onChange={(event) => onLayoutChange(event.target.value as LayoutKind)}
         >
-          {layouts.map((layout) => (
+          {supportedLayouts.map((layout) => (
             <option value={layout.value} key={layout.value}>
               {layout.label}
             </option>
