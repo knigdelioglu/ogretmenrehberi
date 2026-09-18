@@ -79,6 +79,43 @@ for (const step of flow.steps) {
   );
 }
 
+function availableRevealKeys(answer, content) {
+  const keys = [];
+  if (answer?.guidance) keys.push("guidance");
+  if (answer) keys.push("answer");
+  if (answer?.evidence_quotes?.length) keys.push("evidence");
+  if (answer?.explanation) keys.push("explanation");
+  if (content?.note) keys.push("note");
+  return keys;
+}
+
+function resolveRevealOrder(step, answer) {
+  const available = availableRevealKeys(answer, step.content);
+  if (!step.reveal) return available;
+
+  if (!Array.isArray(step.reveal)) {
+    fail(`Reveal order must be an array: ${step.id}`);
+  }
+
+  if (new Set(step.reveal).size !== step.reveal.length) {
+    fail(`Reveal order contains duplicates: ${step.id}`);
+  }
+
+  const availableSet = new Set(available);
+  const configuredSet = new Set(step.reveal);
+  const unsupported = step.reveal.filter((key) => !availableSet.has(key));
+  const missing = available.filter((key) => !configuredSet.has(key));
+
+  if (unsupported.length || missing.length) {
+    fail(
+      `Reveal order must contain each available layer exactly once for ${step.id}. ` +
+      `Unsupported: ${unsupported.join(", ") || "none"}; missing: ${missing.join(", ") || "none"}`
+    );
+  }
+
+  return [...step.reveal];
+}
+
 function resolveDisplayPrompt(step, source, answer) {
   if (step.prompt?.trim()) {
     return { text: step.prompt.trim(), mode: "FLOW_OVERRIDE" };
@@ -170,10 +207,12 @@ const steps = flow.steps.map((step) => {
   }
 
   const displayPrompt = resolveDisplayPrompt(step, source, answer);
+  const revealOrder = resolveRevealOrder(step, answer);
 
   return {
     id: step.id,
     layout: step.layout,
+    reveal_order: revealOrder,
     display_prompt: displayPrompt.text,
     display_prompt_mode: displayPrompt.mode,
     source,
