@@ -15,11 +15,11 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 2, doğal pedagojik bloklar hâlinde yeniden üretilir."
   },
   "coverage": {
-    "printed_page_range": "86-128",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 (Oğulla Buluşma) + Metin Tahlili-2 (Orhun Abideleri / Dîvânu Lugâti’t-Türk)",
-    "entry_count": 108,
-    "source_limited_entries": 4,
-    "next_printed_page": 129
+    "printed_page_range": "86-135",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 + Metin Tahlili-2 + Edebiyat Atölyesi-1 (Konuşma — Türk Dünyası Ortak Kültürü)",
+    "entry_count": 122,
+    "source_limited_entries": 5,
+    "next_printed_page": 136
   },
   "parts": [
     {
@@ -49,6 +49,10 @@
     {
       "path": "answer-bank/part-07-pages-127-128.json",
       "entries": 13
+    },
+    {
+      "path": "answer-bank/part-08-pages-129-135.json",
+      "entries": 14
     }
   ],
   "rendering_contract": {
