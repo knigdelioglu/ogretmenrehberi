@@ -1,0 +1,371 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-OGULLA-BULUSMA",
+  "lesson_slug": "ogulla-bulusma",
+  "title": "Oğulla Buluşma",
+  "subtitle": "Türk Dilleri · Hikâye · 2. Tema",
+  "printed_page_range": "89-107",
+  "required_source_range": {
+    "from": "T02-S0015",
+    "to": "T02-S0046"
+  },
+  "steps": [
+    {
+      "id": "s89-common-words",
+      "source_record_id": "T02-S0015",
+      "answer_id": "T2-P89-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Türk dünyasında kullanılan ortak kelimeler ve dil yapılarıyla ilgili kısa bir araştırma yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki karşılaştırma tablosunu model alarak ortaklık ve düzenli ses değişmelerini araştırın.",
+        "items": [
+          "Tabloda aynı veya çok benzer biçimde kullanılan kelimeleri belirleyin.",
+          "Ses değişikliği gösteren örnekleri ayrı bir grupta toplayın.",
+          "Güvenilir sözlük veya dil kaynaklarından yeni örnekler bulun ve kaynağını not edin.",
+          "Örnekleri küçük kâğıtlara yazıp anlam tahmini yaptıktan sonra sınıfta kelime duvarı oluşturun."
+        ]
+      }
+    },
+    {
+      "id": "s90-q1",
+      "source_record_id": "T02-S0016",
+      "answer_id": "T2-P90-Q01",
+      "layout": "question",
+      "prompt": "Metnin adından, görselinden ve yazarından yola çıkarak söz varlığıyla ilgili çıkarımlarda bulununuz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s90-q2",
+      "source_record_id": "T02-S0017",
+      "answer_id": "T2-P90-Q02",
+      "layout": "question",
+      "prompt": "Metnin başlığından ve görselinden yararlanarak konusuna ve türüne dair tahminlerinizi ifade ediniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s90-strategy",
+      "source_record_id": "T02-S0018",
+      "answer_id": "T2-P90-PERF01",
+      "layout": "process",
+      "prompt": "Oğulla Buluşma için okuma amacınıza uygun bir okuma stratejisi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Okuma boyunca yalnız olayları değil, Çordon'un duygu değişimini ve zaman geçişlerini de izleyin.",
+        "items": [
+          "İlk okumada ana olay çizgisini ve kişiler arasındaki ilişkileri takip edin.",
+          "Geriye dönüşleri ve zaman değişimlerini işaretleyin.",
+          "Çordon'un duygu değişimlerini ve savaşla ilgili bölümleri not edin.",
+          "Diyaloglarda vurgu ve tonlamaya dikkat ederek çatışmaları belirleyin."
+        ]
+      }
+    },
+    {
+      "id": "s90-95-reading",
+      "source_record_id": "T02-S0019",
+      "layout": "process",
+      "density": "comfortable",
+      "prompt": "Oğulla Buluşma — yönlendirilmiş okuma",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana metni ders kitabından okuyun; Lesson Player metni yeniden yayımlamak yerine okuma sürecini yönetir.",
+        "items": [
+          "Çordon'un bugünkü yolculuğu ile geçmişteki olayların birbirine nasıl bağlandığını izleyin.",
+          "Oğul özlemi, yas ve hatıra duygusunun hangi davranışlarda görünür olduğunu işaretleyin.",
+          "Çordon, kızları ve Nazifkan'ın aynı olaya neden farklı yaklaştığını not edin.",
+          "İstasyon ve vedalaşma bölümünde dilin duygu yoğunluğunu nasıl artırdığına dikkat edin."
+        ]
+      }
+    },
+    {
+      "id": "s95-q1",
+      "source_record_id": "T02-S0020",
+      "answer_id": "T2-P95-Q01",
+      "layout": "vocabulary",
+      "density": "compact",
+      "prompt": "Bağlamdan hareketle yular, üzengi, katar, kampana, hat ve toynak kelimelerinin anlamlarını tahmin ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s95-q2",
+      "source_record_id": "T02-S0020",
+      "answer_id": "T2-P95-Q02",
+      "layout": "question",
+      "prompt": "Bu kelimeleri metindeki anlamlarını koruyacak biçimde birer cümlede kullanınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s96-q3",
+      "source_record_id": "T02-S0021",
+      "answer_id": "T2-P96-Q03",
+      "layout": "question",
+      "prompt": "Hikâyede bu kelimelerin seçilme nedenlerine ilişkin tahminlerinizi yazınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s96-q4a",
+      "source_record_id": "T02-S0022",
+      "answer_id": "T2-P96-Q04A",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Türkçenin farklı şivelerindeki altı çizili kelimelerde yapı ve anlam değişikliklerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s97-q4b",
+      "source_record_id": "T02-S0022",
+      "answer_id": "T2-P97-Q04B",
+      "layout": "question",
+      "prompt": "Bu değişikliklerin nedenleriyle ilgili beyin fırtınası yapınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s98-q4c",
+      "source_record_id": "T02-S0022",
+      "answer_id": "T2-P98-Q04C",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "İncelediğiniz metinlerin dili ile Türkiye Türkçesini dil ve anlatım yönünden karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s98-q1",
+      "source_record_id": "T02-S0023",
+      "answer_id": "T2-P98-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Anlatmaya bağlı edebî metinlerin ayırt edici özelliklerini kavram haritasına yerleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s99-q2",
+      "source_record_id": "T02-S0024",
+      "answer_id": "T2-P99-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Görsellerin sizde çağrıştırdığı Türk dünyası ortak kültür kavramlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s99-q3",
+      "source_record_id": "T02-S0025",
+      "answer_id": "T2-P99-Q03",
+      "layout": "question",
+      "prompt": "Bu görsellerin dışında Türk dünyasının ortak kültürünü yansıtabilecek başka görsellere gerekçeli örnekler veriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s100-q1",
+      "source_record_id": "T02-S0026",
+      "answer_id": "T2-P100-Q01",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q2",
+      "source_record_id": "T02-S0027",
+      "answer_id": "T2-P100-Q02",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q3",
+      "source_record_id": "T02-S0028",
+      "answer_id": "T2-P100-Q03",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q4",
+      "source_record_id": "T02-S0029",
+      "answer_id": "T2-P100-Q04",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q5",
+      "source_record_id": "T02-S0030",
+      "answer_id": "T2-P100-Q05",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q6",
+      "source_record_id": "T02-S0031",
+      "answer_id": "T2-P100-Q06",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q7",
+      "source_record_id": "T02-S0032",
+      "answer_id": "T2-P100-Q07",
+      "layout": "question",
+      "density": "comfortable"
+    },
+    {
+      "id": "s100-q8",
+      "source_record_id": "T02-S0033",
+      "answer_id": "T2-P100-Q08",
+      "layout": "structure",
+      "density": "compact"
+    },
+    {
+      "id": "s101-q9",
+      "source_record_id": "T02-S0034",
+      "answer_id": "T2-P101-Q09",
+      "layout": "question",
+      "prompt": "Metindeki öznel ve nesnel ifadelere örnekler bulunuz; hangilerinin sizi daha çok etkilediğini gerekçesiyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s101-q10",
+      "source_record_id": "T02-S0035",
+      "answer_id": "T2-P101-Q10",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metnin açık ve örtük iletileri, zihniyeti, üslubu ve anlatım özellikleriyle ilgili tespitlerinizi sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s102-q11",
+      "source_record_id": "T02-S0036",
+      "answer_id": "T2-P102-Q11",
+      "layout": "question",
+      "prompt": "Oğulla Buluşma metnini ana olay sırasını koruyarak özetleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s102-103-gram1",
+      "source_record_id": "T02-S0037",
+      "answer_id": "T2-P102-GRAM01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Verilen metinlerdeki çekimli fiilleri kip ve çekim yapısına göre sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s103-gram2",
+      "source_record_id": "T02-S0038",
+      "answer_id": "T2-P103-GRAM02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Verilen fiilleri öznesine göre çatı özellikleri bakımından sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s104-gram3",
+      "source_record_id": "T02-S0039",
+      "answer_id": "T2-P104-GRAM03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Verilen fiilleri nesnesine göre çatı özellikleri bakımından sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s104-gram4",
+      "source_record_id": "T02-S0040",
+      "answer_id": "T2-P104-GRAM04",
+      "layout": "question",
+      "prompt": "Parçadaki noktalama işaretlerinin kullanım amaçlarını açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s105-q1",
+      "source_record_id": "T02-S0041",
+      "answer_id": "T2-P105-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Oğulla Buluşma metninin hikâye haritasını tamamlayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s105-q2",
+      "source_record_id": "T02-S0041",
+      "answer_id": "T2-P105-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Hikâye haritasındaki unsurların birbirleriyle ilişkilerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s106-discussion",
+      "source_record_id": "T02-S0042",
+      "answer_id": "T2-P106-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "“Temanın oluşmasını sağlayan çatışmalarda dil etkili bir ögedir.” yargısını görüş geliştirme tekniğiyle tartışınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Görüşünüzü seçin, gerekçelendirin ve karşı görüşleri dinledikten sonra yeniden değerlendirin.",
+        "items": [
+          "Katılıyorum / Kesinlikle katılıyorum / Kararsızım / Katılmıyorum / Kesinlikle katılmıyorum seçeneklerinden birini belirleyin.",
+          "Aynı görüşü paylaşanlarla gerekçelerinizi karşılaştırın.",
+          "Metinden olay, söz veya davranış örneği kullanarak görüşünüzü savunun.",
+          "Diğer görüşleri dinledikten sonra ilk seçiminizi yeniden değerlendirin."
+        ]
+      }
+    },
+    {
+      "id": "s106-q1a",
+      "source_record_id": "T02-S0043",
+      "answer_id": "T2-P106-Q1A",
+      "layout": "question",
+      "prompt": "Çordon ve kızları arasındaki etkileşimi çatışan değer ve beklentiler üzerinden açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s107-q1b",
+      "source_record_id": "T02-S0044",
+      "answer_id": "T2-P107-Q1B",
+      "layout": "question",
+      "prompt": "Çordon ile eşinin bulunduğu parçada görünür ve içsel çatışmaları açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s107-conflict-group",
+      "source_record_id": "T02-S0044",
+      "answer_id": "T2-P107-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çatışmaya ilişkin görüşlerinizi grup içinde gerekçelendirip ortak bir sonuca ulaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üçer kişilik gruplarda farklı yorumları karşılaştırın.",
+        "items": [
+          "Grup sözcünüzü seçin.",
+          "Çatışma hakkındaki görüşünüzü metinden kanıtla savunun.",
+          "Ortak görüşü gerekçelendirerek sınıfa sunun."
+        ]
+      }
+    },
+    {
+      "id": "s107-values",
+      "source_record_id": "T02-S0045",
+      "answer_id": "T2-P107-PERF02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Oğulla Buluşma hikâyesindeki millî, manevi ve evrensel değerleri sınıflandırınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Üç grup, aynı metindeki değerleri farklı başlıklardan inceleyip sonuçlarını karşılaştırsın.",
+        "items": [
+          "Birinci grup: millî değerler",
+          "İkinci grup: manevi değerler",
+          "Üçüncü grup: evrensel değerler",
+          "Sınıflandırmayı metindeki olay ve davranışlarla gerekçelendirin."
+        ]
+      }
+    },
+    {
+      "id": "s107-aytmatov",
+      "source_record_id": "T02-S0046",
+      "answer_id": "T2-P107-AYTMATOV",
+      "layout": "question",
+      "prompt": "Aytmatov'un edebî kişiliğinin Oğulla Buluşma hikâyesine nasıl yansıdığını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    }
+  ]
+}
