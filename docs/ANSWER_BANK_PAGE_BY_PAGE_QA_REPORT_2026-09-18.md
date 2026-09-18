@@ -14,16 +14,16 @@ Her tema için master `answer-bank.json` dosyasının indekslediği canonical pa
 
 | Tema | Kayıt | Sonuç | Ana bulgular |
 |---|---:|---|---|
-| Tema 1 | 149 | **Düzeltme gerekli** | 79 kayıtta `entry_type` yok; 17 kayıtta `source_locator` yok; s.34 araştırma desteği ve s.64 adım 3 kısmi eksik |
+| Tema 1 | 151 | **Düzeltildi / yeniden doğrulandı** | 79 `entry_type` ve 17 `source_locator` eksiği giderildi; s.34 araştırma desteği ve s.64 adım 3 eklendi; performans görevleri yeniden sınıflandırıldı |
 | Tema 2 | 167 | **Düzeltme gerekli** | s.96 ve s.99 gerçek PDF görseli incelenmeden `source_limited`; s.88 gereksiz sınırlama; s.116 kaynak/provenans sorunu |
 | Tema 3 | 146 | **Geçti** | Zorunlu alanlar temiz; doğrulanabilir sorularda belirgin yanlış/eksik bulunmadı; medya bağımlı `source_limited` kayıtlar yerinde |
 | Tema 4 | 156 | **Düzeltme gerekli** | s.268 görev alt maddesi kısmi eksik; s.304/2 eksik çoktan seçmeli sonuç; s.305 yanlış `source_limited`; iki orphan/legacy part dosyası |
 
-Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu, bu QA turuna göre **içerik üretimi tamamlanmış olsa da kalite kapısından geçmiş sayılmamalıdır**. Özellikle Tema 1 şema sorunları ve Tema 4 s.268 eksikliği giderilmeden `QA_PASSED` benzeri bir durum verilmemelidir.
+Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamamlandığını gösterir. **Tema 1 bulguları 18.09.2026 tarihinde giderilmiş ve yeniden doğrulanmıştır.** Tema 2 ve Tema 4 için bu raporda açık kalan bulgular giderilmeden tüm sınıf için `QA_PASSED` benzeri bir durum verilmemelidir.
 
 ## Kesin bulgular
 
-### Kritik — Tema 1 şema bütünlüğü
+### Kritik — Tema 1 şema bütünlüğü — **GİDERİLDİ**
 
 - **79/149** Tema 1 kaydında zorunlu `entry_type` alanı yok.
 - **17/149** Tema 1 kaydında zorunlu `source_locator` alanı yok. Bunlar s.30–35 arasındaki kayıtlarda yoğunlaşıyor.
@@ -42,7 +42,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu, bu QA turuna göre **iç
 - `T4-P267-VOC02` bu görevi `Söz Varlığımız 4-5` diye topluyor ve çağrışım örnekleri veriyor, fakat **5/b ilişki açıklamasını karşılamıyor**.
 - Ayrıca kayıt `printed_page: 267` iken `source_locator` s.267–268; s.268'deki alt görevin sayfa eşlemesi görünmez kalıyor. Ayrı kayıt veya `printed_page: "267-268"` tercih edilmeli.
 
-### Orta — Tema 1 süreç görevlerinde eksik öğretmen desteği
+### Orta — Tema 1 süreç görevlerinde eksik öğretmen desteği — **GİDERİLDİ**
 
 - **s.34:** “Gölge Oyununun Sosyal Bilimlerle İlişkisi” başlıklı 1 haftalık tarih/sosyoloji/psikoloji araştırması var. Veritabanı yalnız fiilimsi çalışmasını ve araştırma sonu değerlendirme sorusunu içeriyor; araştırmanın nasıl yürütüleceğine yönelik `performance_support` yok. Mevcut standartta araştırma görevlerine yöntem/model desteği verilmesi gerekiyor.
 - **s.64:** Dinleme/izleme adım 3, metin ve ortam kaynaklı iletişim engellerini azaltmayı açıkça istiyor. Q1, Q2 ve dinleme stratejisi var; bu adım için ayrı/açık destek bulunmuyor. Küçük fakat gerçek bir kapsam boşluğu.
@@ -61,7 +61,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu, bu QA turuna göre **iç
 
 ### Tema 1 — Bir Diyeceğim Var! (s.14–83)
 
-İçerik cevaplarının büyük kısmı ders kitabı bağlamıyla uyumlu; ölçme-değerlendirme s.79–83'teki çoktan seçmeli cevaplar (1:D, 4:C, 7:E, 10:C) ve Evet/Hayır/Bilgi yok dizisi PDF ile tutarlı görünüyor. Ana problem içerikten çok **eski şemada kalan kayıtlar** ve iki süreç görevindeki kısmi kapsama boşluğu.
+**Remediation tamamlandı.** İçerik cevaplarının büyük kısmı ders kitabı bağlamıyla uyumluydu; eski şema kayıtları güncel standarda taşındı. 79 kayda `entry_type`, 17 kayda `source_locator` eklendi; s.34 araştırma görevi ve s.64 dinleme/izleme adım 3 için yeni `performance_support` kayıtları oluşturuldu. Dilekçe, şiirden mektuba dönüşüm ve okuma stratejisi gibi üretim görevleri de uygun `performance_support` türüne geçirildi. Tema 1 artık 151 canonical kayıttan oluşuyor ve yeniden doğrulamada zorunlu alan hatası bulunmadı.
 
 ### Tema 2 — Kültür Yolculuğu (s.86–159)
 
@@ -85,45 +85,45 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 
 | Sayfa | Durum | Not |
 |---:|---|---|
-| 14 | **UYARI** | Şema: entry_type eksik |
-| 15 | **UYARI** | Şema: entry_type eksik |
-| 16 | **UYARI** | Şema: entry_type eksik |
-| 17 | **UYARI** | Şema: entry_type eksik |
-| 18 | **UYARI** | Şema: entry_type eksik |
+| 14 | OK | Düzeltildi: Şema: entry_type eksik |
+| 15 | OK | Düzeltildi: Şema: entry_type eksik |
+| 16 | OK | Düzeltildi: Şema: entry_type eksik |
+| 17 | OK | Düzeltildi: Şema: entry_type eksik |
+| 18 | OK | Düzeltildi: Şema: entry_type eksik |
 | 19 | OK | — |
 | 20 | OK | — |
 | 21 | OK | — |
 | 22 | OK | — |
 | 23 | OK | — |
 | 24 | OK | — |
-| 25 | **UYARI** | Şema: entry_type eksik |
+| 25 | OK | Düzeltildi: Şema: entry_type eksik |
 | 26 | OK | — |
-| 27 | **UYARI** | Şema: entry_type eksik |
-| 28 | **UYARI** | Şema: entry_type eksik |
-| 29 | **UYARI** | Şema: entry_type eksik |
-| 30 | **UYARI** | Şema: entry_type + source_locator eksik |
-| 31 | **UYARI** | Şema: entry_type + source_locator eksik |
-| 32 | **UYARI** | Şema: entry_type + source_locator eksik |
-| 33 | **UYARI** | Şema: entry_type + source_locator eksik |
-| 34 | **UYARI** | Şema: entry_type + source_locator eksik; 1 haftalık sosyal bilimler araştırması için performance_support yok |
-| 35 | **UYARI** | Şema: entry_type + source_locator eksik |
-| 36 | **UYARI** | Şema: entry_type eksik |
-| 37 | **UYARI** | Şema: entry_type eksik |
+| 27 | OK | Düzeltildi: Şema: entry_type eksik |
+| 28 | OK | Düzeltildi: Şema: entry_type eksik |
+| 29 | OK | Düzeltildi: Şema: entry_type eksik |
+| 30 | OK | Düzeltildi: Şema: entry_type + source_locator eksik |
+| 31 | OK | Düzeltildi: Şema: entry_type + source_locator eksik |
+| 32 | OK | Düzeltildi: Şema: entry_type + source_locator eksik |
+| 33 | OK | Düzeltildi: Şema: entry_type + source_locator eksik |
+| 34 | OK | Düzeltildi: Şema: entry_type + source_locator eksik; 1 haftalık sosyal bilimler araştırması için performance_support yok |
+| 35 | OK | Düzeltildi: Şema: entry_type + source_locator eksik |
+| 36 | OK | Düzeltildi: Şema: entry_type eksik |
+| 37 | OK | Düzeltildi: Şema: entry_type eksik |
 | 38 | OK | — |
-| 39 | **UYARI** | Şema: entry_type eksik |
-| 40 | **UYARI** | Şema: entry_type eksik |
-| 41 | **UYARI** | Şema: entry_type eksik |
+| 39 | OK | Düzeltildi: Şema: entry_type eksik |
+| 40 | OK | Düzeltildi: Şema: entry_type eksik |
+| 41 | OK | Düzeltildi: Şema: entry_type eksik |
 | 42 | OK | — |
-| 43 | **UYARI** | Şema: entry_type eksik |
-| 44 | **UYARI** | Şema: entry_type eksik |
-| 45 | **UYARI** | Şema: entry_type eksik |
-| 46 | **UYARI** | Şema: entry_type eksik |
-| 47 | **UYARI** | Şema: entry_type eksik |
-| 48 | **UYARI** | Şema: entry_type eksik |
+| 43 | OK | Düzeltildi: Şema: entry_type eksik |
+| 44 | OK | Düzeltildi: Şema: entry_type eksik |
+| 45 | OK | Düzeltildi: Şema: entry_type eksik |
+| 46 | OK | Düzeltildi: Şema: entry_type eksik |
+| 47 | OK | Düzeltildi: Şema: entry_type eksik |
+| 48 | OK | Düzeltildi: Şema: entry_type eksik |
 | 49 | OK | — |
-| 50 | **UYARI** | Şema: entry_type eksik |
+| 50 | OK | Düzeltildi: Şema: entry_type eksik |
 | 51 | OK | — |
-| 52 | **UYARI** | Şema: entry_type eksik |
+| 52 | OK | Düzeltildi: Şema: entry_type eksik |
 | 53 | OK | — |
 | 54 | OK | — |
 | 55 | OK | — |
@@ -135,7 +135,7 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 | 61 | OK | — |
 | 62 | OK | — |
 | 63 | OK | — |
-| 64 | **UYARI** | Kapsam kısmi: dinleme/izleme adım 3 (metin/ortam kaynaklı engelleri azaltma) için açık performance_support kaydı yok |
+| 64 | OK | Düzeltildi: Kapsam kısmi: dinleme/izleme adım 3 (metin/ortam kaynaklı engelleri azaltma) için açık performance_support kaydı yok |
 | 65 | OK | — |
 | 66 | OK | — |
 | 67 | OK | — |
@@ -400,6 +400,17 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 7. Tema 4'te iki orphan eski part dosyası kaldırılmalı veya arşivlenmeli; tüketicilerin yalnız master indeksini izlemesi güvenceye alınmalı.
 8. Bu düzeltmelerden sonra 4 tema için tekrar schema/duplicate/blank/source-limited QA çalıştırılmalı ve ancak sonra genel durum QA-passed yapılmalı.
 
+## Tema 1 remediation doğrulaması — 18.09.2026
+
+- Uygulama commit'i: `6aaa33d895955bfca13a08fa6d7507cabaade450`
+- Canonical Tema 1 kayıt sayısı: **151**
+- Zorunlu alan eksiği: **0**
+- Geçersiz `entry_type`: **0**
+- Boş `answer`: **0**
+- `source_limited`: **12** (değişmedi)
+- Master part toplamı: **151**
+- Genel manifest answer-bank toplamı: **620**
+
 ## Sonuç
 
-Veritabanı genel olarak kullanılabilir ve Tema 2–4'ün yeni üretimlerinde kalite belirgin biçimde yükselmiş. Bununla birlikte mevcut manifestteki “tüm temalar tamamlandı” ifadesi **üretim tamamlandı** anlamında doğru olsa da **kalite kontrolünden geçti** anlamında doğru değildir. En büyük teknik borç Tema 1'in eski şemasıdır; en belirgin içerik hataları ise görsel sayfaların render edilmeden `source_limited` bırakıldığı üç kayıttır.
+Veritabanı genel olarak kullanılabilir ve Tema 2–4'ün yeni üretimlerinde kalite belirgin biçimde yükselmiş. Bununla birlikte mevcut manifestteki “tüm temalar tamamlandı” ifadesi **üretim tamamlandı** anlamında doğru olsa da **kalite kontrolünden geçti** anlamında doğru değildir. Tema 1'in eski şema borcu bu rapordan sonra giderilmiştir. Açık kalan en belirgin içerik hataları Tema 2 ve Tema 4'te görsel sayfaların render edilmeden `source_limited` bırakıldığı kayıtlardır.
