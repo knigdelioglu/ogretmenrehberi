@@ -73,12 +73,14 @@ Uygulama son açık dersi/adımı `localStorage` içinde hatırlar.
 Bu görünümde:
 
 - sol ders akışı gizlenir,
-- öğretmen kontrol düğmeleri gizlenir,
+- genel öğretmen kontrol düğmeleri gizlenir,
 - içerik daha büyük gösterilir,
-- cevap/yönlendirme/açıklama yine klavye ile açılabilir,
+- soru kartındaki küçük cevap ikonu akıllı tahtadan dokunarak kullanılabilir,
+- cevap açıldığında soru metni aynı alanda cevapla yer değiştirir; tekrar dokununca soru geri gelir,
+- cevap/yönlendirme/açıklama klavye ile de açılabilir,
 - alt önceki/sonraki navigasyonu korunur.
 
-Bu sayede öğrenciler “Cevabı göster” gibi öğretmen UI öğelerini görmez.
+Ayrı **Öğrenci ekranı** penceresinde cevap ikonu gösterilmez; MacBook/öğretmen ekranındaki soru → cevap değişimi öğrenci ekranına senkronize edilir.
 
 Üst menüde **Öğrenci ekranını aç** seçeneği ayrıca ikinci bir tarayıcı penceresi açar. Öğretmen görünümündeki adım, reveal ve kelime-anlam değişiklikleri bu pencereye anlık olarak senkronize edilir. İkinci ekran öğretmen kontrollerini göstermez.
 
