@@ -15,11 +15,11 @@ Her tema için master `answer-bank.json` dosyasının indekslediği canonical pa
 | Tema | Kayıt | Sonuç | Ana bulgular |
 |---|---:|---|---|
 | Tema 1 | 151 | **Düzeltildi / yeniden doğrulandı** | 79 `entry_type` ve 17 `source_locator` eksiği giderildi; s.34 araştırma desteği ve s.64 adım 3 eklendi; performans görevleri yeniden sınıflandırıldı |
-| Tema 2 | 167 | **Düzeltme gerekli** | s.96 ve s.99 gerçek PDF görseli incelenmeden `source_limited`; s.88 gereksiz sınırlama; s.116 kaynak/provenans sorunu |
+| Tema 2 | 167 | **Düzeltildi / yeniden doğrulandı** | s.88, s.96, s.99 ve s.116 bulguları giderildi; gerçek PDF görselleri kullanıldı; `source_limited` 12 → 9 |
 | Tema 3 | 146 | **Geçti** | Zorunlu alanlar temiz; doğrulanabilir sorularda belirgin yanlış/eksik bulunmadı; medya bağımlı `source_limited` kayıtlar yerinde |
 | Tema 4 | 156 | **Düzeltme gerekli** | s.268 görev alt maddesi kısmi eksik; s.304/2 eksik çoktan seçmeli sonuç; s.305 yanlış `source_limited`; iki orphan/legacy part dosyası |
 
-Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamamlandığını gösterir. **Tema 1 bulguları 18.09.2026 tarihinde giderilmiş ve yeniden doğrulanmıştır.** Tema 2 ve Tema 4 için bu raporda açık kalan bulgular giderilmeden tüm sınıf için `QA_PASSED` benzeri bir durum verilmemelidir.
+Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamamlandığını gösterir. **Tema 1 ve Tema 2 bulguları 18.09.2026 tarihinde giderilmiş ve yeniden doğrulanmıştır.** Tema 4 için bu raporda açık kalan bulgular giderilmeden tüm sınıf için `QA_PASSED` benzeri bir durum verilmemelidir.
 
 ## Kesin bulgular
 
@@ -30,7 +30,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 - Tema 1 master dosyası `schema_version: 2.0.0` ve `COMPLETE_WITH_SOURCE_LIMITED` görünmesine rağmen kayıtların önemli bölümü güncel kalite standardının zorunlu şemasını karşılamıyor.
 - Yasaklanan eski katmanlar (`expected_answer`, `wrong_answer`, `misconception`, `teacher_moves`, `why_it_matters`) answer-bank içinde bulunmadı; bu kısım temiz.
 
-### Yüksek — PDF'de görünür olduğu hâlde `source_limited` bırakılan kayıtlar
+### Yüksek — PDF'de görünür olduğu hâlde `source_limited` bırakılan kayıtlar — **TEMA 2 BULGULARI GİDERİLDİ**
 
 1. **T2-P96-Q04A (s.96)** — Altı çizili sözcükler sayfa render'ında açıkça görünüyor. Kayıt “metin çıkarımında alt çizgi korunmadı” gerekçesiyle cevap vermiyor. Standart gereği gerçek PDF sayfası incelenmeliydi.
 2. **T2-P99-Q02 (s.99)** — Altı görsel PDF'de açıkça görünür: geleneksel kıyafetli atlılar, halı/kilim, bezeme/desen, kahve takımı, yurt/çadırlar ve okçuluk. Kayıt görselleri göremediğini söyleyerek `source_limited` kalmış.
@@ -47,7 +47,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 - **s.34:** “Gölge Oyununun Sosyal Bilimlerle İlişkisi” başlıklı 1 haftalık tarih/sosyoloji/psikoloji araştırması var. Veritabanı yalnız fiilimsi çalışmasını ve araştırma sonu değerlendirme sorusunu içeriyor; araştırmanın nasıl yürütüleceğine yönelik `performance_support` yok. Mevcut standartta araştırma görevlerine yöntem/model desteği verilmesi gerekiyor.
 - **s.64:** Dinleme/izleme adım 3, metin ve ortam kaynaklı iletişim engellerini azaltmayı açıkça istiyor. Q1, Q2 ve dinleme stratejisi var; bu adım için ayrı/açık destek bulunmuyor. Küçük fakat gerçek bir kapsam boşluğu.
 
-### Orta — Tema 2 gereksiz sınırlama ve kaynak provenansı
+### Orta — Tema 2 gereksiz sınırlama ve kaynak provenansı — **GİDERİLDİ**
 
 - **T2-P88-Q03:** “Gönül coğrafyamız” ifadesinin çağrıştırdığı coğrafyalara örnek isteniyor. Bu kişisel/yorumlayıcı soru, videoya özgü olay bilgisi gerektirmeden örnek cevap alabilir. `source_limited` fazla katı.
 - **T2-P116-VOC01:** Kitap sayfası altı kelime (`yağız, ecdat, il, töre, şad, kılmak`) verir fakat yalnız beş anlam kutusu gösterir; `şad` için tanım sayfada yoktur. Veritabanındaki “eski Türklerde yönetim görevi olan yüksek rütbeli kişi” bilgisi içerik olarak makul olsa da kitap dışı tamamlamadır. Bu bilgi ya dış kaynağa bağlanmalı ya da “kitapta tanım eksik” şeklinde açık kaynak sınırıyla sunulmalıdır.
@@ -65,7 +65,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 
 ### Tema 2 — Kültür Yolculuğu (s.86–159)
 
-Şema tutarlı ve ölçme-değerlendirme cevapları s.155–159 ile uyumlu (2:C, 3:A, 5:B, 6:D). Sorunlar ağırlıkla PDF'nin görsel/biçim bilgisinin kullanılmamasından kaynaklanıyor. Özellikle s.96 ve s.99 doğrudan düzeltilebilir.
+**Remediation tamamlandı.** Şema ve ölçme-değerlendirme cevapları zaten tutarlıydı. s.88 Q3 normal `question_answer` olarak örnek cevapla yeniden yazıldı. s.96 Q4a'da gerçek PDF sayfasındaki bütün altı çizili örnekler Kazak, Türkmen, Kırgız, Uygur ve Azerbaycan Türkçesi başlıkları altında karşılaştırıldı. s.99 Q2'de altı gerçek görsel doğrudan incelenerek kültür kavramlarıyla eşleştirildi. s.116'da sayfanın gerçekten 6 sözcüğe karşı yalnız 5 tanım kutusu verdiği doğrulandı; `şad` için kaynak dışı anlam ekleme kaldırıldı. Tema 2 `source_limited` sayısı 12'den 9'a düştü.
 
 ### Tema 3 — Yaşamın İzinde (s.162–235)
 
@@ -162,7 +162,7 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 |---:|---|---|
 | 86 | OK | — |
 | 87 | OK | — |
-| 88 | **UYARI** | T2-P88-Q03 gereksiz source_limited; soru örnek coğrafya çağrışımı istemekte ve örnek cevap verilebilir |
+| 88 | OK | Düzeltildi: T2-P88-Q03 gereksiz source_limited; soru örnek coğrafya çağrışımı istemekte ve örnek cevap verilebilir |
 | 89 | OK | — |
 | 90 | OK | — |
 | 91 | OK | — |
@@ -170,10 +170,10 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 | 93 | OK | — |
 | 94 | OK | — |
 | 95 | OK | — |
-| 96 | **UYARI** | T2-P96-Q04A yanlış source_limited; altı çizili sözcükler gerçek PDF sayfasında görünür |
+| 96 | OK | Düzeltildi: T2-P96-Q04A yanlış source_limited; altı çizili sözcükler gerçek PDF sayfasında görünür |
 | 97 | OK | — |
 | 98 | OK | — |
-| 99 | **UYARI** | T2-P99-Q02 yanlış source_limited; altı görsel gerçek PDF sayfasında açıkça görünür |
+| 99 | OK | Düzeltildi: T2-P99-Q02 yanlış source_limited; altı görsel gerçek PDF sayfasında açıkça görünür |
 | 100 | OK | — |
 | 101 | OK | — |
 | 102 | OK | — |
@@ -190,7 +190,7 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 | 113 | OK | — |
 | 114 | OK | — |
 | 115 | OK | — |
-| 116 | **UYARI** | T2-P116-VOC01: kitap 6 sözcük için 5 tanım veriyor; 'şad' cevabı dış bilgiden tamamlanmış ancak kaynak/provenans ayrı gösterilmiyor |
+| 116 | OK | Düzeltildi: T2-P116-VOC01: kitap 6 sözcük için 5 tanım veriyor; 'şad' cevabı dış bilgiden tamamlanmış ancak kaynak/provenans ayrı gösterilmiyor |
 | 117 | OK | — |
 | 118 | OK | — |
 | 119 | OK | — |
@@ -411,6 +411,18 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 - Master part toplamı: **151**
 - Genel manifest answer-bank toplamı: **620**
 
+## Tema 2 remediation doğrulaması — 18.09.2026
+
+- Uygulama commit'i: `ed82fd81cb2db1d00ae075f945f2719f5c149e39`
+- Canonical Tema 2 kayıt sayısı: **167**
+- Zorunlu alan eksiği: **0**
+- Duplicate `question_id`: **0**
+- Boş `answer`: **0**
+- `source_limited`: **9** (12 → 9)
+- Master part toplamı: **167**
+- Genel manifest answer-bank toplamı: **620**
+- Düzeltilen ana kayıtlar: `T2-P88-Q03`, `T2-P96-Q04A`, `T2-P99-Q02`, `T2-P116-VOC01`
+
 ## Sonuç
 
-Veritabanı genel olarak kullanılabilir ve Tema 2–4'ün yeni üretimlerinde kalite belirgin biçimde yükselmiş. Bununla birlikte mevcut manifestteki “tüm temalar tamamlandı” ifadesi **üretim tamamlandı** anlamında doğru olsa da **kalite kontrolünden geçti** anlamında doğru değildir. Tema 1'in eski şema borcu bu rapordan sonra giderilmiştir. Açık kalan en belirgin içerik hataları Tema 2 ve Tema 4'te görsel sayfaların render edilmeden `source_limited` bırakıldığı kayıtlardır.
+Veritabanı genel olarak kullanılabilir ve Tema 2–4'ün yeni üretimlerinde kalite belirgin biçimde yükselmiş. Bununla birlikte mevcut manifestteki “tüm temalar tamamlandı” ifadesi **üretim tamamlandı** anlamında doğru olsa da **kalite kontrolünden geçti** anlamında doğru değildir. Tema 1'in eski şema borcu bu rapordan sonra giderilmiştir. Tema 2'deki görsel/biçim ve kaynak-provenans sorunları da giderilmiştir. Açık kalan doğrulanmış bulgular Tema 4'tedir.
