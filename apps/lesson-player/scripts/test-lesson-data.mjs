@@ -53,6 +53,29 @@ for (const term of ["Dadı", "Esbab", "Murat", "Bendeniz", "Silsile", "İspir"])
   );
 }
 
+const s15q4 = byId.get("s15-q4");
+assert(s15q4, "s15-q4 bulunamadı.");
+assert(
+  JSON.stringify(s15q4.reveal_order) ===
+    JSON.stringify(["guidance", "answer", "explanation"]),
+  "s15-q4 reveal sırası guidance → answer → explanation olmalı."
+);
+
+const s27q1 = byId.get("s27-q1");
+assert(s27q1, "s27-q1 bulunamadı.");
+assert(
+  JSON.stringify(s27q1.reveal_order) ===
+    JSON.stringify(["answer", "evidence"]),
+  "s27-q1 cevap ve kanıt katmanlarını sırayla taşımalı."
+);
+
+const s26 = byId.get("s26-reference");
+assert(s26, "s26-reference bulunamadı.");
+assert(
+  JSON.stringify(s26.reveal_order) === JSON.stringify(["note"]),
+  "s26 öğretmen notu reveal katmanı olarak korunmalı."
+);
+
 const s30q1 = byId.get("s30-q1");
 assert(s30q1?.answer?.question_no === "1", "Eksik question_no Q01'den türetilmeli.");
 
