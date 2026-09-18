@@ -254,15 +254,18 @@ Her tema için aynı pipeline:
 ```text
 extract
   -> map
-  -> generate
+  -> identify block type
+  -> generate in small natural blocks
   -> validate
   -> teacher review
   -> ÖğretmenOS export
   -> EPUB build
 ```
 
+Tema 2–4 üretiminde [docs/BLOCK_AUTHORING_STANDARD.md](docs/BLOCK_AUTHORING_STANDARD.md) zorunlu çalışma sözleşmesidir. Yeni temada **Anlama/Okuma, Konuşma, Dinleme-İzleme, Yazma ve Ölçme-Değerlendirme** blokları birbirinden ayrılır; konuşma/yazma görevleri klasik cevap anahtarına zorlanmaz ve erişilemeyen QR/video içeriği `source_limited` olarak işaretlenir.
+
 ### Kalite kapısı
-Her tema için veri doğrulaması, kaynak izi ve review durumu ayrı raporlanır.
+Her tema için veri doğrulaması, kaynak izi ve review durumu ayrı raporlanır. Ayrıca her doğal blok tamamlandığında duplicate ID, boş cevap, yanlış entry type ve gereksiz yönlendirme kontrolü yapılmadan sonraki bloğa geçilmez.
 
 ---
 
