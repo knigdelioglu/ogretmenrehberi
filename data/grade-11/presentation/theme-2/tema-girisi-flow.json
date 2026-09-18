@@ -1,0 +1,163 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-GIRIS",
+  "lesson_slug": "tema-2-girisi",
+  "title": "2. Tema — Giriş",
+  "subtitle": "Kültür Yolculuğu · 11. Sınıf",
+  "printed_page_range": "84-88",
+  "required_source_range": {
+    "from": "T02-S0001",
+    "to": "T02-S0014"
+  },
+  "steps": [
+    {
+      "id": "s84-overview",
+      "source_record_id": "T02-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kültür Yolculuğu — Tema yol haritası",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu temada dil, edebiyat ve kültür ilişkisini Türk dünyası, ortak kültürel miras ve edebî metinler üzerinden izleyeceksiniz.",
+        "sections": [
+          {
+            "title": "Okuma",
+            "body": "Oğulla Buluşma, Eski İstanbul’dan Çizgiler, Orhun Abideleri ve Dîvânu Lugâti’t-Türk üzerinden dil, kültür ve millî kimlik ilişkisini inceleyin."
+          },
+          {
+            "title": "Dinleme / İzleme",
+            "body": "Âşık atışmasını dinleyip izleyerek âşıklık geleneği, sözlü kültür, mizah ve karşılıklı söyleyiş özelliklerini değerlendirin."
+          },
+          {
+            "title": "Konuşma",
+            "body": "Türk kültürünün özelliklerini yansıtan bilgileri seçip düzenleyerek hedef kitleye uygun bir konuşma hazırlayın."
+          },
+          {
+            "title": "Yazma",
+            "body": "Çevrim içi müze gezisinde dikkatinizi çeken kültürel unsurları kişisel gözlem ve değerlendirmeyle izlenim yazısına dönüştürün."
+          }
+        ],
+        "note": "Anahtar kavramlar arasında anlatıcı, geriye dönüş, olay örgüsü, söz varlığı, edebî metin ve öğretici metin yer alır."
+      }
+    },
+    {
+      "id": "s85-theme-presentation",
+      "source_record_id": "T02-S0002",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Dede Korkut ile temaya giriş",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tema sunusu, Dede Korkut anlatıları üzerinden kültürel hafızanın kuşaklar boyunca taşınmasına dikkat çeker.",
+        "sections": [
+          {
+            "title": "Kültürel hafıza",
+            "body": "Dede Korkut anlatıları ortak değerlerin, yaşayış biçimlerinin ve sözlü anlatı geleneğinin edebiyat yoluyla korunmasına örnek oluşturur."
+          },
+          {
+            "title": "Tema sorusu",
+            "body": "Bir edebî eser yalnız geçmişi anlatmakla kalmayıp bir topluluğun ortak kimliğini ve kültürünü nasıl geleceğe taşıyabilir?"
+          }
+        ],
+        "note": "Bu ekranı uzun konu anlatımına çevirmeyin; öğrencilerin kültürün hangi yollarla kuşaktan kuşağa aktarıldığına dair kısa örnekler vermesini sağlayın."
+      }
+    },
+    {
+      "id": "s86-q1",
+      "source_record_id": "T02-S0003",
+      "answer_id": "T2-P86-Q01",
+      "layout": "question",
+      "prompt": "Edebiyatın millî kimliğin ve kültürün oluşmasındaki işleviyle ilgili çıkarımlarınızı yazınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s86-q2",
+      "source_record_id": "T02-S0004",
+      "answer_id": "T2-P86-Q02",
+      "layout": "question",
+      "prompt": "“İslâm Bey, sadece kahraman değil, aynı zamanda, adeta vatan fikrinin nazariyatçısıdır.” ifadesini nasıl yorumlarsınız?",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s86-q3",
+      "source_record_id": "T02-S0005",
+      "answer_id": "T2-P86-Q03",
+      "layout": "question",
+      "prompt": "Türk millî kimliğinin ve kültürünün oluşmasında edebiyatın işlevini, bildiğiniz edebî eserlerden örnekler vererek açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s87-q1",
+      "source_record_id": "T02-S0006",
+      "answer_id": "T2-P87-Q01",
+      "layout": "question",
+      "prompt": "Aynı dili konuşan ülkelerin ortak bir yazı dili kullanması o dili hangi yönlerden etkiler? Açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s87-q2",
+      "source_record_id": "T02-S0007",
+      "answer_id": "T2-P87-Q02",
+      "layout": "question",
+      "prompt": "Ortak bir Türk alfabesi kullanılmasının Türk diline katkıları neler olabilir? Yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s87-q3",
+      "source_record_id": "T02-S0008",
+      "answer_id": "T2-P87-Q03",
+      "layout": "question",
+      "prompt": "Türk dünyasında dil birliğini sağlamak ve kültürel bağları güçlendirmek için neler yapılabilir? Düşüncelerinizi açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s88-q1",
+      "source_record_id": "T02-S0009",
+      "answer_id": "T2-P88-Q01",
+      "layout": "question",
+      "prompt": "“Toplantı ve toplantı sonrası eğlence” anlamına gelen toyların toplumda birliği sağlaması hakkındaki görüşlerinizi açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s88-q2",
+      "source_record_id": "T02-S0010",
+      "answer_id": "T2-P88-Q02",
+      "layout": "question",
+      "prompt": "Hasat zamanı ve Nevruz Bayramı’nda düzenlenen eğlencelerin Türk dünyasında ortak bir kültürün gelişmesi açısından önemini açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s88-q3",
+      "source_record_id": "T02-S0011",
+      "answer_id": "T2-P88-Q03",
+      "layout": "question",
+      "prompt": "“Gönül coğrafyamız” sözü size dünyadaki hangi coğrafyaları çağrıştırmaktadır? Örnekler veriniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s88-q4",
+      "source_record_id": "T02-S0012",
+      "answer_id": "T2-P88-Q04",
+      "layout": "question",
+      "prompt": "“Yaş” kelimesinin taze bitki anlamına da gelmesi ve yeşil (yaşıl) kelimesiyle kökteş olması Türk insanının tabiatla kurduğu bağla ilgili size neleri düşündürmektedir?",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s88-q5",
+      "source_record_id": "T02-S0013",
+      "answer_id": "T2-P88-Q05",
+      "layout": "question",
+      "prompt": "Kültürümüzde önemli bir yere sahip olan “imece”nin birlik ve beraberlik açısından önemini açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s88-q6",
+      "source_record_id": "T02-S0014",
+      "answer_id": "T2-P88-Q06",
+      "layout": "question",
+      "prompt": "Tarlalar ekilirken besmele çekilerek tarlaya tohum saçılması ve kuşların da hakkının gözetilmesi kültürümüzün hangi özelliğini göstermektedir?",
+      "prompt_mode": "VERBATIM_SHORT"
+    }
+  ]
+}
