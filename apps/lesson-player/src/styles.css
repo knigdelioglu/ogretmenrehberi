@@ -836,3 +836,29 @@ button:focus-visible {
     width: 100vw;
   }
 }
+
+
+.vocabulary-card__term-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vocabulary-card__toggle {
+  flex: 0 0 auto;
+  border: 1px solid #c8d7d1;
+  border-radius: 9px;
+  padding: 7px 9px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 780;
+}
+
+.vocabulary-card__toggle:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
