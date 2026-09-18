@@ -15,16 +15,24 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 4 doğal pedagojik bloklar hâlinde yeniden üretilir; görsel/biçim bağımlı sorular gerçek sayfa üzerinden doğrulanır."
   },
   "coverage": {
-    "printed_page_range": "238-242",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 / Ben, Mimar Sinan — konuya giriş ve okumayı yönetme",
-    "entry_count": 7,
+    "printed_page_range": "238-255",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 / Ben, Mimar Sinan — okuma yönetimi, ana metin, söz varlığı, gerçeklik/tiyatro karşılaştırması ve ilk anlama-değerlendirme soruları",
+    "entry_count": 22,
     "source_limited_entries": 0,
-    "next_printed_page": 243
+    "next_printed_page": 256
   },
   "parts": [
     {
       "path": "answer-bank/part-01-pages-238-242.json",
       "entries": 7
+    },
+    {
+      "path": "answer-bank/part-02-pages-243-250.json",
+      "entries": 6
+    },
+    {
+      "path": "answer-bank/part-03-pages-251-255.json",
+      "entries": 9
     }
   ],
   "rendering_contract": {
