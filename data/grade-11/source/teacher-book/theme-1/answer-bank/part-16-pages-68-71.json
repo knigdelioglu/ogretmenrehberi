@@ -34,9 +34,29 @@
       "printed_page": 70,
       "question_no": "3",
       "prompt_summary": "Paydos parçasındaki iletişim engellerini sınıflandırma",
-      "answer": "Davranışsal ve düşünsel engeller: dinlememe, söz kesme, peşin hüküm verme, karşıdakini küçümseme ve kendi bilgisini öne çıkarma. Dil ve anlatımdan kaynaklı engeller: 'tez' kelimesinin farklı anlamlarda kullanılması ve tarihî adlar üzerindeki anlaşmazlık. Psikolojik engeller: sabırsızlık, kendini kanıtlama isteği ve gerginlik. Sosyokültürel engeller: kişilerin bilgi ve eğitim düzeylerindeki farklılıkların konuşmaya yansıması. Fiziksel/çevresel bir engel ise bu parçada açık biçimde gösterilmemektedir.",
+      "answer": "Parçada görülen iletişim engelleri kaynağına göre şöyle ayrılabilir:",
       "explanation": "Kavram haritasında 'gürültü' genel bir fiziksel/çevresel engel örneği olarak verilmiştir; Paydos sahnesinde bunun gerçekleştiğini gösteren açık bir kanıt yoktur.",
-      "source_locator": "basılı s.68-70 / PDF s.69-71"
+      "source_locator": "basılı s.68-70 / PDF s.69-71",
+      "answer_sections": {
+        "Davranışsal ve düşünsel engeller": [
+          "Dinlememe",
+          "Söz kesme",
+          "Peşin hüküm verme",
+          "Karşıdakini küçümseme",
+          "Kendi bilgisini öne çıkarma"
+        ],
+        "Dil ve anlatımdan kaynaklı engeller": [
+          "“tez” kelimesinin farklı anlamlarda kullanılması",
+          "Tarihî adlar üzerindeki anlaşmazlık"
+        ],
+        "Psikolojik engeller": [
+          "Sabırsızlık",
+          "Kendini kanıtlama isteği",
+          "Gerginlik"
+        ],
+        "Sosyokültürel engeller": "Kişilerin bilgi ve eğitim düzeylerindeki farklılıkların konuşmaya yansıması.",
+        "Fiziksel / çevresel engeller": "Bu parçada açık biçimde gösterilmemektedir."
+      }
     },
     {
       "question_id": "T1-P70-Q04",

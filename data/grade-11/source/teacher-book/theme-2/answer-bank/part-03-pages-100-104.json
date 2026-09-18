@@ -143,9 +143,71 @@
       "printed_page": 102,
       "question_no": "Dil Bilgisi 1",
       "prompt_summary": "Metinlerdeki çekimli fiilleri kip ve çekim yapısına göre sınıflandırma",
-      "answer": "Haber kipleriyle çekimlenen örnekler: kalkmış, diktirmişti, yükselmişti, ederdi, bıktım, usandım, bilemezdim, soğuyordu, dolduruyordu, düşündün, sustun, olurdu, düşündürtmez, söyletirdi, düşündüm, verdi, karardı, oldu, koptu, başladı. Dilek/tasarlama kipleri: yaşayalım, alsa, kalsa, sararsa, buyur, çal. Basit çekimli örnekler: kalkmış, bıktım, usandım, yaşayalım, alsa, kalsa, sararsa, düşündün, sustun, düşündürtmez, düşündüm, verdi, buyur, çal, karardı, oldu, koptu, başladı. Birleşik çekimli örnekler: diktirmişti, yükselmişti, ederdi, bilemezdim, soğuyordu, dolduruyordu, olurdu, söyletirdi.",
+      "answer": "Fiiller kip ve çekim özelliklerine göre aşağıdaki gruplarda sınıflandırılabilir:",
       "explanation": "İsim-fiil ve zarf-fiil biçimleri ('sürüklemekten', 'verip', 'götürmeden' vb.) çekimli fiil listesine alınmamıştır.",
-      "source_locator": "basılı s.102-103 / PDF s.103-104 — dil bilgisi soru 1"
+      "source_locator": "basılı s.102-103 / PDF s.103-104 — dil bilgisi soru 1",
+      "answer_sections": {
+        "Haber kipleriyle çekimlenenler": [
+          "kalkmış",
+          "diktirmişti",
+          "yükselmişti",
+          "ederdi",
+          "bıktım",
+          "usandım",
+          "bilemezdim",
+          "soğuyordu",
+          "dolduruyordu",
+          "düşündün",
+          "sustun",
+          "olurdu",
+          "düşündürmez",
+          "söyletirdi",
+          "düşündüm",
+          "verdi",
+          "karardı",
+          "oldu",
+          "koptu",
+          "başladı"
+        ],
+        "Dilek / tasarlama kipleri": [
+          "yaşayalım",
+          "alsa",
+          "kalsa",
+          "sararsa",
+          "buyur",
+          "çal"
+        ],
+        "Basit çekimli örnekler": [
+          "kalkmış",
+          "bıktım",
+          "usandım",
+          "yaşayalım",
+          "alsa",
+          "kalsa",
+          "sararsa",
+          "düşündün",
+          "sustun",
+          "düşündürmez",
+          "düşündüm",
+          "verdi",
+          "buyur",
+          "çal",
+          "karardı",
+          "oldu",
+          "koptu",
+          "başladı"
+        ],
+        "Birleşik çekimli örnekler": [
+          "diktirmişti",
+          "yükselmişti",
+          "ederdi",
+          "bilemezdim",
+          "soğuyordu",
+          "dolduruyordu",
+          "olurdu",
+          "söyletirdi"
+        ]
+      }
     },
     {
       "question_id": "T2-P103-GRAM02",
@@ -153,7 +215,7 @@
       "printed_page": 103,
       "question_no": "Dil Bilgisi 2",
       "prompt_summary": "Fiilleri öznesine göre çatı bakımından sınıflandırma",
-      "answer": "Etken: yalvarır, tükenmez, geldiler, aldılar, kodular, seviniyor. Edilgen: döğüldü, çalındı, kurulmuştu, dizilmişti; ayrıca 'beğenilen' edilgen çatılı bir sıfat-fiildir. Dönüşlü: övünüyorum. İşteş: kapışırlar, sözleşmiştik.",
+      "answer": "Fiiller çatı özelliklerine göre aşağıdaki biçimde sınıflandırılır.",
       "answer_sections": {
         "etken": [
           "yalvarır",
@@ -186,7 +248,7 @@
       "printed_page": 104,
       "question_no": "Dil Bilgisi 3",
       "prompt_summary": "Fiilleri nesnesine göre çatı bakımından sınıflandırma",
-      "answer": "Geçişsiz: ölmez, ölür, daldı, çıkıp, doğruldun, geldin, bindin. Geçişli: bağladı, bıraktı, aldı, verdi, sunarak. Ettirgen: diktirmişti ve sürdürdü; geçişli fiiller bir başkasına yaptırma anlamı kazanmıştır. Oldurgan: püskürttü; geçişsiz 'püskürmek' fiili bir nesne alabilecek biçime getirilmiştir.",
+      "answer": "Fiiller nesne alıp almama ve ettirgenlik/oldurganlık bakımından aşağıdaki gruplarda gösterilebilir.",
       "answer_sections": {
         "gecisli": [
           "bağladı",

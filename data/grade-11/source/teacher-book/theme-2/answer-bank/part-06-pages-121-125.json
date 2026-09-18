@@ -77,8 +77,14 @@
       "printed_page": 122,
       "question_no": "4",
       "prompt_summary": "Metindeki bilgi verme, ikna etme, sorgulatma ve yönlendirme amaçlarını belirleme",
-      "answer": "Metinde birden fazla amaç vardır. Bilgi verme: seferler, coğrafya, geçmiş kağanlar ve Kül Tigin'in ölümü anlatılır. Yönlendirme ve ikna: Türk beyleri ve milleti Ötüken'de kalmaya, töreyi korumaya ve geçmiş hataları tekrarlamamaya çağrılır. Sorgulatma: 'Türk milleti, ilini töreni kim bozabilecekti?' gibi sorularla milletin kendi durumunu düşünmesi sağlanır. Tanıtma ve anma: Kül Tigin'in hizmetleri ve Bilge Kağan'ın devlet için yaptıkları kalıcılaştırılır.",
-      "source_locator": "basılı s.122 / PDF s.123 — soru 4"
+      "answer": "Metinde tek bir amaç değil, birbirini tamamlayan birkaç amaç vardır:",
+      "source_locator": "basılı s.122 / PDF s.123 — soru 4",
+      "answer_sections": {
+        "Bilgi verme": "Seferler, coğrafya, geçmiş kağanlar ve Kül Tigin'in ölümü anlatılır.",
+        "Yönlendirme ve ikna": "Türk beyleri ve milleti Ötüken'de kalmaya, töreyi korumaya ve geçmiş hataları tekrarlamamaya çağrılır.",
+        "Sorgulatma": "“Türk milleti, ilini töreni kim bozabilecekti?” gibi sorularla milletin kendi durumunu düşünmesi sağlanır.",
+        "Tanıtma ve anma": "Kül Tigin'in hizmetleri ve Bilge Kağan'ın devlet için yaptıkları kalıcılaştırılır."
+      }
     },
     {
       "question_id": "T2-P123-Q05",
@@ -86,7 +92,7 @@
       "printed_page": 123,
       "question_no": "5",
       "prompt_summary": "Kül Tigin Âbidesi'nin dil ve anlatım özelliklerini örneklerle belirleme",
-      "answer": "Sadelik: ana düşünceler kısa ve doğrudan cümlelerle verilir. Açıklık: seslenilen kişi ve amaç çoğu yerde nettir. Kelime çeşitliliği: devlet, savaş, coğrafya, toplum ve duygu alanlarına ait zengin söz varlığı kullanılır. Akıcılık: tekrarlar ve paralel cümle yapıları söyleve ritim kazandırır. Farklı cümle yapıları: bildirme, emir, soru ve seslenme cümleleri birlikte bulunur. Etkileyicilik: karşıtlıklar, tekrarlar ve doğrudan hitap duygusal ve ikna edici gücü artırır.",
+      "answer": "Metnin dil ve anlatım özellikleri aşağıdaki ölçütler üzerinden değerlendirilebilir.",
       "answer_sections": {
         "sadelik": "Kısa ve doğrudan yargılar.",
         "aciklik": "Muhatap, olay ve öğütlerin açık biçimde belirtilmesi.",
@@ -156,7 +162,7 @@
       "printed_page": 124,
       "question_no": "Sıra Sizde",
       "prompt_summary": "Kül Tigin Âbidesi'ndeki millî, manevi ve evrensel değerleri sınıflandırma",
-      "answer": "Örnek sınıflandırma: Millî değerler: millet, devlet, töre, vatan/Ötüken, birlik ve tarih bilinci. Manevi değerler: kardeş sevgisi, atalara bağlılık, yas ve hatıraya saygı, Tanrı inancı. Evrensel değerler: sorumluluk, fedakârlık, adaletli yönetim, dayanışma, çalışkanlık ve toplumu koruma. Bazı değerler birden fazla başlıkla ilişkilendirilebilir; önemli olan metindeki söz veya davranışla gerekçelendirilmesidir.",
+      "answer": "Değerler millî, manevi ve evrensel başlıkları altında sınıflandırılabilir; sınıflandırma mutlaka metindeki söz veya davranışla gerekçelendirilmelidir.",
       "answer_sections": {
         "milli": [
           "Millet",
@@ -188,9 +194,15 @@
       "printed_page": 124,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Orhun Abidelerini tarih, coğrafya ve sosyolojiyle ilişkilendirme",
-      "answer": "Örnek araştırma çerçevesi: Tarih ilişkisi: Göktürklerin devlet düzeni, savaşlar, kağanlar ve Kül Tigin'in ölümü. Coğrafya ilişkisi: Ötüken, Şantung, Tibet, İnci Irmağı ve Demir Kapı gibi yerlerin siyasi ve askerî önemleri. Sosyoloji ilişkisi: kağan-bey-millet ilişkisi, töre, toplumsal birlik, yöneticinin halka karşı sorumluluğu ve yas töreni. Bilge Kağan ve Tonyukuk yazıtlarıyla karşılaştırıldığında ortak devlet ve toplum anlayışı daha görünür hâle getirilebilir.",
+      "answer": "Orhun Abideleri sosyal bilimlerle aşağıdaki yönlerden ilişkilendirilebilir:",
       "guidance": "Araştırmada tarihî ve coğrafi ayrıntılar güvenilir kaynaklardan doğrulanmalı; metindeki ifadelerle dış kaynak bilgisi birbirinden ayrılmalıdır.",
-      "source_locator": "basılı s.124-125 / PDF s.125-126 — Ders Dışı Etkinlik"
+      "source_locator": "basılı s.124-125 / PDF s.125-126 — Ders Dışı Etkinlik",
+      "answer_sections": {
+        "Tarih": "Göktürklerin devlet düzeni, savaşlar, kağanlar ve Kül Tigin'in ölümü.",
+        "Coğrafya": "Ötüken, Şantung, Tibet, İnci Irmağı ve Demir Kapı gibi yerlerin siyasi ve askerî önemleri.",
+        "Sosyoloji": "Kağan-bey-millet ilişkisi, töre, toplumsal birlik, yöneticinin halka karşı sorumluluğu ve yas töreni.",
+        "Karşılaştırma": "Bilge Kağan ve Tonyukuk yazıtlarıyla karşılaştırıldığında ortak devlet ve toplum anlayışı daha görünür hâle getirilebilir."
+      }
     },
     {
       "question_id": "T2-P125-Q01",

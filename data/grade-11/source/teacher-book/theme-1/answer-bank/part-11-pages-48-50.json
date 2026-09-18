@@ -37,7 +37,7 @@
       "printed_page": 50,
       "question_no": "1",
       "prompt_summary": "Beş metnin yazılış amaçları",
-      "answer": "1. metin, muhatabın sağlık ve hâlini sormak ve iyi dilek iletmek amacı taşır. 2. metin, hitap edilen kişiye moral ve umut vermeyi amaçlayan şiirsel bir sesleniştir. 3. metin, sağlık durumu ve tedavi hakkında doktora bilgi verip görüş istemek için yazılmıştır. 4. metin, sevilen kişiye özlem ve kavuşma isteğini aktarmayı amaçlar. 5. metin ise sevgiliye duyulan özlemi ve yakında kavuşma vaadini şiir yoluyla iletir.",
+      "answer": "Beş metnin iletişim amaçları birbirinden ayrılarak değerlendirilmelidir.",
       "answer_sections": {
         "metin_1": "Selam, hâl-hatır sorma ve iyi dilek",
         "metin_2": "Moral, umut ve cesaret verme",
@@ -63,8 +63,15 @@
       "printed_page": 50,
       "question_no": "3",
       "prompt_summary": "Metinlerin gerçekliği yansıtma biçimlerini karşılaştırma",
-      "answer": "1. metin doğrudan hâl-hatır sormaya dayalı tarihî bir yazışma örneğidir. 3. metin belirli kişi, tarih ve sağlık bilgileri taşıdığı için gerçek yaşama doğrudan bağlı bir kişisel belgedir. 4. metin bir roman kişisinin mektubu olduğundan kurmaca gerçeklik içinde duygusal bir yaşantıyı yansıtır. 2. ve 5. metinlerde ise gerçeklik şiirin duygu, imge ve sesleniş imkânlarıyla dönüştürülerek verilir.",
-      "source_locator": "basılı s.49-50 / PDF s.50-51"
+      "answer": "Metinlerin gerçeklikle ilişkisi, türlerine göre farklı düzeylerde kurulmaktadır:",
+      "source_locator": "basılı s.49-50 / PDF s.50-51",
+      "answer_sections": {
+        "1. metin": "Doğrudan hâl-hatır sormaya dayalı tarihî bir yazışma örneğidir.",
+        "2. metin": "Gerçeklik, şiirin duygu, imge ve sesleniş imkânlarıyla dönüştürülür.",
+        "3. metin": "Belirli kişi, tarih ve sağlık bilgileri taşıdığı için gerçek yaşama doğrudan bağlı kişisel bir belgedir.",
+        "4. metin": "Bir roman kişisinin mektubu olduğu için kurmaca gerçeklik içinde duygusal bir yaşantıyı yansıtır.",
+        "5. metin": "Gerçeklik, şiirin duygu, imge ve sesleniş imkânlarıyla dönüştürülür."
+      }
     },
     {
       "question_id": "T1-P50-Q04",

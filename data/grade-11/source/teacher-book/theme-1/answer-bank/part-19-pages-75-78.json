@@ -10,9 +10,22 @@
       "printed_page": 75,
       "question_no": "Performans Görevi - Planlama",
       "prompt_summary": "E-posta yazma amacı, hedef kitle ve strateji için örnek plan",
-      "answer": "Örnek plan: Amaç: okul kütüphanesinin ders çıkışından sonra daha uzun süre açık tutulmasını istemek. Alıcı: okul müdürlüğü. Hedef kitle: resmî kurum yöneticisi. Konu: 'Kütüphane Kullanım Süresinin Uzatılması Talebi'. Strateji: önce ihtiyacı kısa ve açık biçimde belirtmek, ardından talebin gerekçesini açıklamak, uygulanabilir bir öneri sunmak ve nazik bir sonuç cümlesiyle bitirmek. Dil: resmî, açık ve ölçülü.",
+      "answer": "E-posta yazma görevi aşağıdaki planla hazırlanabilir:",
       "guidance": "Öğrenciler farklı amaç ve alıcı seçebilir. Önemli olan amaç, alıcı, konu, dil ve stratejinin birbiriyle uyumlu olmasıdır.",
-      "source_locator": "basılı s.75 / PDF s.76"
+      "source_locator": "basılı s.75 / PDF s.76",
+      "answer_sections": {
+        "Amaç": "Okul kütüphanesinin ders çıkışından sonra daha uzun süre açık tutulmasını istemek.",
+        "Alıcı": "Okul müdürlüğü.",
+        "Hedef kitle": "Resmî kurum yöneticisi.",
+        "Konu": "Kütüphane Kullanım Süresinin Uzatılması Talebi.",
+        "Strateji": [
+          "İhtiyacı kısa ve açık biçimde belirtmek.",
+          "Talebin gerekçesini açıklamak.",
+          "Uygulanabilir bir öneri sunmak.",
+          "Nazik bir sonuç cümlesiyle bitirmek."
+        ],
+        "Dil": "Resmî, açık ve ölçülü."
+      }
     },
     {
       "question_id": "T1-P76-Q02",
@@ -62,7 +75,7 @@
       "printed_page": 76,
       "question_no": "5-9",
       "prompt_summary": "E-posta içerik taslağı, dil işlevleri, ekler ve alanların düzenlenmesi",
-      "answer": "Örnek taslak: Kime: okulun resmî e-posta adresi. Konu: Kütüphane Kullanım Süresinin Uzatılması Talebi. Hitap: 'Sayın Müdürüm,'. Giriş: talebin kısa biçimde belirtilmesi. Gelişme: öğrencilerin ders sonrası araştırma ve okuma ihtiyacının gerekçelendirilmesi; mevcut süre ile önerilen süre arasında karşılaştırma yapılması. Sonuç: uygun görülmesi hâlinde uygulamanın belirli günlerde denenmesinin rica edilmesi. Dil işlevleri: rica, gerekçelendirme ve öneri. Ek: gerekiyorsa öğrenci görüşlerini veya kullanım ihtiyacını gösteren kısa bir tablo. Kapanış: 'Bilgilerinize arz ederim.' ve ad-soyad/sınıf bilgisi.",
+      "answer": "Örnek e-posta taslağının bölümleri aşağıdaki sırayla yapılandırılabilir.",
       "answer_sections": {
         "alici": "Okul müdürlüğü",
         "konu": "Kütüphane Kullanım Süresinin Uzatılması Talebi",
@@ -96,9 +109,21 @@
       "printed_page": 78,
       "question_no": "Çıkış Kartı",
       "prompt_summary": "Bir Diyeceğim Var teması için Üç Yaz - İki Sor - Bir Paylaş örneği",
-      "answer": "Örnek 'Üç Yaz': 1) İletişimde doğru anlama, kullanılan araç kadar önemlidir. 2) Mektup ve e-posta aynı temel iletişim işlevini farklı araçlarla gerçekleştirir. 3) Dil, muhataba ve iletişim ortamına göre değişir. Örnek 'İki Sor': 1) Dijital iletişim gelecekte mektubun hangi özelliklerini koruyabilir? 2) Yanlış anlamaları azaltmak için farklı iletişim kanallarında hangi yöntemler daha etkilidir? Örnek 'Bir Paylaş': 'Hitap, kelime seçimi ve zamanlamanın iletişimin sonucunu düşündüğümden daha fazla etkilediğini fark ettim.'",
+      "answer": "“Üç Yaz – İki Sor – Bir Paylaş” etkinliği örnek olarak şöyle düzenlenebilir:",
       "guidance": "Öz değerlendirme formundaki Evet/Kısmen/Hayır seçenekleri için hazır cevap verilmemelidir; öğrenci gerçek performansına göre işaretleme yapmalıdır. Çıkış kartındaki örnek de yalnız beklenen düzeyi göstermek içindir.",
-      "source_locator": "basılı s.78 / PDF s.79"
+      "source_locator": "basılı s.78 / PDF s.79",
+      "answer_sections": {
+        "Üç Yaz": [
+          "İletişimde doğru anlama, kullanılan araç kadar önemlidir.",
+          "Mektup ve e-posta aynı temel iletişim işlevini farklı araçlarla gerçekleştirir.",
+          "Dil, muhataba ve iletişim ortamına göre değişir."
+        ],
+        "İki Sor": [
+          "Dijital iletişim gelecekte mektubun hangi özelliklerini koruyabilir?",
+          "Yanlış anlamaları azaltmak için farklı iletişim kanallarında hangi yöntemler daha etkilidir?"
+        ],
+        "Bir Paylaş": "Hitap, kelime seçimi ve zamanlamanın iletişimin sonucunu düşündüğümden daha fazla etkilediğini fark ettim."
+      }
     }
   ]
 }

@@ -74,9 +74,20 @@
       "printed_page": 241,
       "question_no": "Okumayı Yönetebilme",
       "prompt_summary": "Ben, Mimar Sinan için okuma amacı, ön tahmin ve okuma çemberi stratejisi",
-      "answer": "Örnek okuma amacı: Ben, Mimar Sinan'ın Mimar Sinan'ın hayatını ve sanat anlayışını tiyatro yoluyla nasıl anlattığını; tarihî bilgi, dramatik kurgu ve sahne unsurlarının nasıl birleştiğini belirlemek. Okuma öncesi tahmin: Başlık ve kişi adından metnin Mimar Sinan'ın kendi ağzından hayatını anlattığı, önemli eser ve dönüm noktalarını sahne üzerinde canlandırdığı bir tiyatro metni olduğu düşünülebilir. Okuma çemberinde roller şöyle kullanılabilir: Bağ Kurucu → metindeki tarihî/kültürel unsurları günümüzle ilişkilendirir; Sorgulayıcı → olay ve kişiler hakkında sorular üretir; Ressam → sahne/mekân veya olay akışını görselleştirir; Okuma Aydınlatıcısı → önemli bir ifade seçer; Özetleyici → ana olayları çıkarır; Tahmin Edici → sonraki gelişmeleri öngörür; Karakter Çözümleyici → Sinan'ın özelliklerini belirler; Kelime Avcısı → bilinmeyen sözleri açıklar; Hareket İzcisi → sahne ve mekân değişimlerini takip eder.",
+      "answer": "Okuma amacı, tahmin ve okuma çemberi rolleri ayrı başlıklarda planlanabilir.",
       "guidance": "Okuma öncesi tahmin ile okuma sonrasında doğrulanan bilgileri birbirine karıştırmamak gerekir. Tahminler metni okuduktan sonra geriye dönük olarak 'doğruymuş' gibi yeniden yazılmamalıdır.",
-      "source_locator": "basılı s.241-242 / PDF s.242-243 — Okumayı Yönetebilme"
+      "source_locator": "basılı s.241-242 / PDF s.242-243 — Okumayı Yönetebilme",
+      "answer_sections": {
+        "Okuma amacı": "Ben, Mimar Sinan'ın hayatını ve sanat anlayışını tiyatro yoluyla nasıl anlattığını; tarihî bilgi, dramatik kurgu ve sahne unsurlarının nasıl birleştiğini belirlemek.",
+        "Okuma öncesi tahmin": "Başlık ve kişi adından metnin Mimar Sinan'ın kendi ağzından hayatını anlattığı, önemli eser ve dönüm noktalarını sahnede canlandırdığı bir tiyatro metni olduğu düşünülebilir.",
+        "Bağ Kurucu": "Metindeki tarihî ve kültürel unsurları günümüzle ilişkilendirir.",
+        "Sorgulayıcı": "Olay ve kişiler hakkında sorular üretir.",
+        "Ressam": "Sahne, mekân veya olay akışını görselleştirir.",
+        "Okuma Aydınlatıcısı": "Tartışmaya değer bir ifade seçip neden önemli olduğunu açıklar.",
+        "Özetleyici": "Metnin ana olay ve düşünce çizgisini kısa biçimde verir.",
+        "Kelime Avcısı": "Döneme ve mimariye ait söz varlığını bağlamıyla açıklar.",
+        "Karakter Çözümleyici": "Mimar Sinan ve diğer kişilerin söz ve davranışlarından temel özelliklerini çıkarır."
+      }
     }
   ]
 }

@@ -108,9 +108,31 @@
       "printed_page": 287,
       "question_no": "Söz Varlığımız 1-2",
       "prompt_summary": "Fedakârlık, hemzemin geçit, mesai, aksaklık ve tahammül sözlerinin anlamını ve bağlama uygun karşılıklarını belirleme",
-      "answer": "Bağlama göre kullanılabilecek temel karşılıklar şöyledir: fedakârlık: bir amaç veya başkası için kendi çıkarından/rahatından vazgeçme; öneri 'özveri'. Hemzemin geçit: kara yolu ile demir yolunun aynı seviyede kesiştiği geçit; öneri 'eş düzey geçit' açıklamasıyla kullanılabilir. Mesai: çalışma süresi veya çalışma işi; öneri 'çalışma süresi/çalışma'. Aksaklık: işleyişi bozan sorun veya gecikme; öneri 'sorun/bozukluk'. Tahammül: güç bir duruma dayanabilme; öneri 'dayanma/sabır'.",
+      "answer": "Söz varlığı çalışmasındaki kelimeler, bağlam anlamları ve önerilebilecek yakın karşılıklarla aşağıda gösterilmiştir.",
       "explanation": "Kitaptaki görev kelimelerin videodaki bağlamını esas alır. Video cümleleri görülmediği için önerilen eş anlamlıların her cümlede bire bir değiştirilebilir olduğu iddia edilmemelidir.",
-      "source_locator": "basılı s.287 / PDF s.288 — Söz Varlığımız"
+      "source_locator": "basılı s.287 / PDF s.288 — Söz Varlığımız",
+      "answer_sections": {
+        "fedakârlık": {
+          "anlam": "Bir amaç veya başkası için kendi çıkarından ya da rahatından vazgeçme.",
+          "öneri": "özveri"
+        },
+        "hemzemin geçit": {
+          "anlam": "Kara yolu ile demir yolunun aynı seviyede kesiştiği geçit.",
+          "öneri": "eş düzey geçit (açıklama amacıyla)"
+        },
+        "mesai": {
+          "anlam": "Çalışma süresi veya çalışma işi.",
+          "öneri": "çalışma süresi / çalışma"
+        },
+        "aksaklık": {
+          "anlam": "İşleyişi bozan sorun veya gecikme.",
+          "öneri": "sorun / bozukluk"
+        },
+        "tahammül": {
+          "anlam": "Güç bir duruma dayanabilme.",
+          "öneri": "dayanma / sabır"
+        }
+      }
     },
     {
       "question_id": "T4-P287-Q01",

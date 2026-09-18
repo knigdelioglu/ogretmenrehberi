@@ -66,3 +66,18 @@ Veride Markdown işareti saklamak yerine kısa alıntılar ayrı tutulur:
 ```
 
 ÖğretmenOS bu alanı kalın metin; EPUB üreticisi `<strong>` olarak gösterecektir.
+
+
+## Yapısal cevap sunumu
+
+Öğretmen rehberinde doğal olarak liste, eşleştirme, tablo, sınıflandırma, adım dizisi veya kişi/özellik karşılaştırması oluşturan cevaplar tek paragraf içine sıkıştırılmamalıdır.
+
+- Üç veya daha fazla `terim: açıklama`, `öge → karşılık` ya da numaralı adım varsa `answer_sections` kullanılmalıdır.
+- Sözlük/eşleştirme sorularında her kelime veya öge ayrı satır/alan olmalıdır.
+- Kişi–özellik, değer–davranış, ölçüt–değerlendirme ve metinler arası karşılaştırmalar ayrı başlıklarla yapılandırılmalıdır.
+- Süreç görevlerinde birbirinden bağımsız adımlar numaralı/liste yapısında tutulmalıdır.
+- `Üç Yaz – İki Sor – Bir Paylaş`, altı şapka, öğrenme günlüğü gibi hazır şablonların alt başlıkları ayrı alanlara bölünmelidir.
+- `answer` alanı, `answer_sections` zaten ayrıntıyı taşıyorsa kısa bir giriş/özet cümlesi olmalı; aynı maddeler paragraf biçiminde tekrar edilmemelidir.
+- Diyalog, örnek mektup, örnek e-posta gibi gerçekten akış hâlinde okunması gereken metinler sırf noktalama içeriyor diye listeye dönüştürülmemelidir.
+
+Bu kural ÖğretmenOS, EPUB ve diğer tüketicilerde aynı içeriğin okunabilir biçimde render edilmesi için veri katmanında uygulanır.

@@ -102,7 +102,7 @@
       "printed_page": 107,
       "question_no": "Birlikte Çalışalım",
       "prompt_summary": "Hikâyedeki millî, manevi ve evrensel değerleri sınıflandırma",
-      "answer": "Örnek sınıflandırma: Millî değerler: vatan sevgisi, görev bilinci, savaş dönemindeki toplumsal dayanışma. Manevi değerler: aile bağlılığı, anne-baba ve evlat sevgisi, sadakat, hatıraya bağlılık. Evrensel değerler: sevgi, sorumluluk, cesaret, fedakârlık, saygı, merhamet. Bazı değerler birden fazla başlıkla ilişkilendirilebilir; sınıflandırmanın metindeki davranışlarla gerekçelendirilmesi gerekir.",
+      "answer": "Metindeki değerler millî, manevi ve evrensel başlıkları altında sınıflandırılabilir; bazı değerlerin birden fazla gruba girebileceği unutulmamalıdır.",
       "answer_sections": {
         "milli": [
           "Vatan sevgisi",
@@ -142,9 +142,15 @@
       "printed_page": 108,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Oğulla Buluşma'yı tarih, coğrafya ve sosyolojiyle ilişkilendirme",
-      "answer": "Örnek araştırma çerçevesi: Tarih ilişkisi: II. Dünya Savaşı, 1941'de cepheye asker sevki ve savaşın sivil ailelere etkisi. Coğrafya ilişkisi: köy, dağ yolu, vadi, şehir ve demiryolunun olayların akışına etkisi; kırsal yaşam ve atlı ulaşım. Sosyoloji ilişkisi: aile içi roller, köy-şehir farkı, eğitim, askerlik/görev anlayışı ve savaş dönemindeki toplumsal davranışlar. Değerlendirme: Tarih, coğrafya ve sosyoloji bilgisi hikâyedeki olayların neden böyle geliştiğini ve kişilerin davranışlarını daha derin anlamayı sağlar.",
+      "answer": "Hikâyenin sosyal bilimlerle ilişkisi üç disiplin üzerinden incelenebilir:",
       "guidance": "Araştırma sonuçları metinden alınan örneklerle desteklenmeli; metinde olmayan tarihî veya toplumsal ayrıntılar kaynak gösterilmeden eklenmemelidir.",
-      "source_locator": "basılı s.108 / PDF s.109 — Ders Dışı Etkinlik"
+      "source_locator": "basılı s.108 / PDF s.109 — Ders Dışı Etkinlik",
+      "answer_sections": {
+        "Tarih": "II. Dünya Savaşı, 1941'de cepheye asker sevki ve savaşın sivil ailelere etkisi.",
+        "Coğrafya": "Köy, dağ yolu, vadi, şehir ve demiryolunun olay akışına etkisi; kırsal yaşam ve atlı ulaşım.",
+        "Sosyoloji": "Aile içi roller, köy-şehir farkı, eğitim, askerlik/görev anlayışı ve savaş dönemindeki toplumsal davranışlar.",
+        "Değerlendirme": "Tarih, coğrafya ve sosyoloji bilgisi olayların neden böyle geliştiğini ve kişilerin davranışlarını daha derin anlamayı sağlar."
+      }
     },
     {
       "question_id": "T2-P108-Q01",
@@ -209,9 +215,15 @@
       "printed_page": 111,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Eski İstanbul'dan Çizgiler'i tarih, coğrafya ve sosyolojiyle ilişkilendirme",
-      "answer": "Örnek araştırma çerçevesi: Tarih ilişkisi: motorlu araçların yaygınlaşmasından önceki ulaşım, geleneksel esnaf ve mahalle hayatı, dönemin siyasî-toplumsal olaylarına ilişkin hatıralar. Coğrafya ilişkisi: Kapalıçarşı, Sultanhamamı, Beyazıt, Kıztaşı gibi İstanbul mekânlarının gündelik yaşamdaki rolü. Sosyoloji ilişkisi: esnaf-müşteri ilişkileri, komşuluk, selamlaşma, aile meclisleri, kadınların sosyal çevresi, mahalle güvenliği ve geleneksel eğlenceler. Değerlendirme: Sosyal bilimler anı metnindeki ayrıntıları yalnız kişisel hatıra olarak değil, bir dönemin toplumsal ve kültürel tanıklığı olarak okumayı sağlar.",
+      "answer": "Anı metninin sosyal bilimlerle ilişkisi aşağıdaki başlıklarda incelenebilir:",
       "guidance": "Araştırma bulguları metindeki somut örneklerle eşleştirilmelidir.",
-      "source_locator": "basılı s.111 / PDF s.112 — Ders Dışı Etkinlik"
+      "source_locator": "basılı s.111 / PDF s.112 — Ders Dışı Etkinlik",
+      "answer_sections": {
+        "Tarih": "Motorlu araçların yaygınlaşmasından önceki ulaşım, geleneksel esnaf ve mahalle hayatı, dönemin siyasî-toplumsal olaylarına ilişkin hatıralar.",
+        "Coğrafya": "Kapalıçarşı, Sultanhamamı, Beyazıt, Kıztaşı gibi İstanbul mekânlarının gündelik yaşamdaki rolü.",
+        "Sosyoloji": "Esnaf-müşteri ilişkileri, komşuluk, selamlaşma, aile meclisleri, kadınların sosyal çevresi, mahalle güvenliği ve geleneksel eğlenceler.",
+        "Değerlendirme": "Sosyal bilimler, anıdaki ayrıntıları yalnız kişisel hatıra olarak değil bir dönemin toplumsal ve kültürel tanıklığı olarak okumayı sağlar."
+      }
     },
     {
       "question_id": "T2-P112-Q01",
@@ -273,9 +285,21 @@
       "printed_page": 112,
       "question_no": "Çıkış Kartı",
       "prompt_summary": "Oğulla Buluşma için Üç Yaz - İki Sor - Bir Paylaş örneği",
-      "answer": "Örnek 'Üç Yaz': 1) Seçilen ifadeler baba-oğul sevgisini doğrudan açıklamadan hissettiriyor. 2) Geçmiş ile bugün arasında güçlü çağrışımlar kuruyor. 3) Savaş ve ayrılık duygusunu kişisel bir hatıraya dönüştürüyor. Örnek 'İki Sor': 1) Çordon'un 'kalbim böyle söylüyor' sözü gerçeklikle duygusal ihtiyaç arasındaki çatışmayı nasıl gösterir? 2) 'Kendisinin gençliği' ifadesi baba-oğul benzerliğini yalnız dış görünüşten mi anlatır? Örnek 'Bir Paylaş': 'O, tam kendisiydi, kendisinin gençliği.' ifadesi kuşaklar arasındaki bağı en güçlü hissettiren cümle olarak seçilebilir.",
+      "answer": "“Üç Yaz – İki Sor – Bir Paylaş” etkinliği örnek olarak şöyle düzenlenebilir:",
       "guidance": "Çıkış kartı öğrencinin gerçek seçimine dayanmalıdır; bu yalnızca beklenen derinlik ve biçimi gösteren modeldir.",
-      "source_locator": "basılı s.112 / PDF s.113 — Çıkış Kartı"
+      "source_locator": "basılı s.112 / PDF s.113 — Çıkış Kartı",
+      "answer_sections": {
+        "Üç Yaz": [
+          "Seçilen ifadeler baba-oğul sevgisini doğrudan açıklamadan hissettiriyor.",
+          "Geçmiş ile bugün arasında güçlü çağrışımlar kuruyor.",
+          "Savaş ve ayrılık duygusunu kişisel bir hatıraya dönüştürüyor."
+        ],
+        "İki Sor": [
+          "Çordon'un “kalbim böyle söylüyor” sözü gerçeklikle duygusal ihtiyaç arasındaki çatışmayı nasıl gösterir?",
+          "“Kendisinin gençliği” ifadesi baba-oğul benzerliğini yalnız dış görünüşten mi anlatır?"
+        ],
+        "Bir Paylaş": "“O, tam kendisiydi, kendisinin gençliği.” ifadesi kuşaklar arasındaki bağı güçlü biçimde hissettirir."
+      }
     }
   ]
 }

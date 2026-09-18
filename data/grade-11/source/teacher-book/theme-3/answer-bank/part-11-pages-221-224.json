@@ -26,8 +26,15 @@
       "printed_page": 221,
       "question_no": "Çözümleyebilme 2",
       "prompt_summary": "Direnişin Ustaları'ndaki kişilerin özellikleri ve amaçları",
-      "answer": "Kişi özellikleri ve amaçları, kahramanların gerçek söz ve davranışlarından çıkarılmalıdır. Kaynakta karakter listesi veya diyalog metni bulunmadığından kişilere belirli özellikler ve hedefler yüklenmemelidir. Dinleme sırasında 'kişi → davranış/söz → özellik → amacı → kanıt' biçiminde bir tablo kullanılabilir.",
-      "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 2 / QR medya gerekli"
+      "answer": "Kişi özellikleri ve amaçları gerçek söz ve davranışlardan çıkarılmalıdır. Dinleme sırasında aşağıdaki tablo kullanılabilir:",
+      "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 2 / QR medya gerekli",
+      "answer_sections": [
+        "Kişi",
+        "Davranış / söz",
+        "Özellik",
+        "Amaç",
+        "Kanıt"
+      ]
     },
     {
       "question_id": "T3-P221-Q03",
@@ -53,9 +60,24 @@
       "printed_page": 222,
       "question_no": "Sıra Sizde 1-5",
       "prompt_summary": "Millî ve manevi değerlerin metnin iletilerine etkisini görüş geliştirme tekniğiyle tartışma",
-      "answer": "Örnek uygulama: Kitabın örnek kavram haritasında **saygı, vatanseverlik, duyarlılık, hoşgörü ve aile bütünlüğü** başlıkları verilmektedir. Öğrenciler 'Dinlenen metinde millî ve manevi değerleri yansıtan unsurlar arasındaki etkileşim, metnin iletilerini ortaya çıkarmada önemlidir.' görüşüne katılma derecelerini seçer. Her grup, seçtiği değerin radyo tiyatrosunda gerçekten hangi söz, davranış veya olayla görünür olduğunu belirtir ve bunun iletiye katkısını açıklar. Örnek ilişki biçimi: 'değer → metindeki kanıt → kişiler üzerindeki etkisi → ana iletiye katkısı'.",
+      "answer": "Değerler videoda gerçekten görülen kanıtlarla ilişkilendirilmelidir. Kitabın kavram haritasındaki örnek başlıklar ve ilişki şablonu aşağıdadır.",
       "guidance": "Kitabın kavram haritasındaki değer adları kaynakta vardır; ancak bunların her birinin radyo tiyatrosunda nasıl işlendiği ses kaydından kanıtlanmadan ayrıntılandırılmamalıdır.",
-      "source_locator": "basılı s.222 / PDF s.223 — Sıra Sizde 1-5"
+      "source_locator": "basılı s.222 / PDF s.223 — Sıra Sizde 1-5",
+      "answer_sections": {
+        "Değer başlıkları": [
+          "Saygı",
+          "Vatanseverlik",
+          "Duyarlılık",
+          "Hoşgörü",
+          "Aile bütünlüğü"
+        ],
+        "İlişki şablonu": [
+          "Değer",
+          "Metindeki kanıt",
+          "Kişiler üzerindeki etkisi",
+          "Ana iletiye katkısı"
+        ]
+      }
     },
     {
       "question_id": "T3-P223-PERF01",
@@ -63,9 +85,15 @@
       "printed_page": 223,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Direnişin Ustaları'nı tarih, sosyoloji ve psikolojiyle ilişkilendiren grup araştırması",
-      "answer": "Örnek araştırma çerçevesi: Metin–Tarih grubu → radyo tiyatrosunda geçen kişi, olay, dönem ve mekânları güvenilir tarih kaynaklarıyla karşılaştırır. Metin–Sosyoloji grubu → aile, grup dayanışması, toplumsal roller, değerler ve dönemin sosyal ilişkileri üzerinde durur. Metin–Psikoloji grubu → kişilerin korku, kararlılık, çatışma, dayanışma veya karar süreçlerini gerçek söz ve davranışlardan hareketle inceler. Her grup dış kaynaktan öğrendiği bilgiyi radyo tiyatrosunda gerçekten bulunan kanıttan ayrı göstermelidir.",
+      "answer": "Direnişin Ustaları üç sosyal bilim grubu üzerinden incelenebilir:",
       "guidance": "Ses kaydı dinlenmeden metne özgü tarihî olay veya psikolojik durum yazılmamalıdır; araştırma, dinleme notları üzerine kurulmalıdır.",
-      "source_locator": "basılı s.223 / PDF s.224 — Ders Dışı Etkinlik"
+      "source_locator": "basılı s.223 / PDF s.224 — Ders Dışı Etkinlik",
+      "answer_sections": {
+        "Metin–Tarih grubu": "Kişi, olay, dönem ve mekânları güvenilir tarih kaynaklarıyla karşılaştırır.",
+        "Metin–Sosyoloji grubu": "Aile, grup dayanışması, toplumsal roller, değerler ve dönemin sosyal ilişkileri üzerinde durur.",
+        "Metin–Psikoloji grubu": "Kişilerin korku, kararlılık, çatışma, dayanışma veya karar süreçlerini gerçek söz ve davranışlardan hareketle inceler.",
+        "Çalışma kuralı": "Dış kaynaktan öğrenilen bilgi, radyo tiyatrosunda gerçekten bulunan kanıttan ayrı gösterilmelidir."
+      }
     },
     {
       "question_id": "T3-P223-PERF02",
@@ -83,8 +111,14 @@
       "printed_page": 223,
       "question_no": "Süreci Değerlendirebilme 2",
       "prompt_summary": "Radyo tiyatrosundaki konuyu tarihî gerçeklerle karşılaştırma",
-      "answer": "Bu karşılaştırma için önce Direnişin Ustaları'nın hangi tarihî olay, dönem, kişi veya toplumsal durumu ele aldığı ses kaydından belirlenmelidir. Transkript veya medya erişilebilir olmadığı için tarihî konu tahmin edilmemeli ve dış kaynakla sahte bir karşılaştırma kurulmamaldır. Dinleme sonrasında 'radyo tiyatrosundaki bilgi → tarih kaynağındaki bilgi → örtüşen yön → dramatik/kurmaca dönüşüm' biçiminde karşılaştırma yapılabilir.",
-      "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 2 / QR medya gerekli"
+      "answer": "Tarihî karşılaştırma için önce radyo tiyatrosunun gerçek konusu belirlenmelidir. Sonrasında şu karşılaştırma sütunları kullanılabilir:",
+      "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 2 / QR medya gerekli",
+      "answer_sections": [
+        "Radyo tiyatrosundaki bilgi",
+        "Tarih kaynağındaki bilgi",
+        "Örtüşen yön",
+        "Dramatik / kurmaca dönüşüm"
+      ]
     },
     {
       "question_id": "T3-P223-Q03",
@@ -121,9 +155,16 @@
       "printed_page": 224,
       "question_no": "Öğrenme Günlüğü",
       "prompt_summary": "Direnişin Ustaları dinleme sürecini öğrenme günlüğüyle değerlendirme",
-      "answer": "Örnek doldurma modeli: 'Bu süreçte öğrendiklerim: Radyo tiyatrosunda görüntünün görevini ses, söz, efekt ve müziğin birlikte üstlendiği; dinlerken kişi ve mekânı ses ipuçlarından kurmak gerektiği. Pekiştirmem gereken konular: Dinlerken hızlı biçimde kişi–çatışma notu alma. Daha ayrıntılı incelemek istediğim konular: Radyo oyununda efekt ve müzik tasarımı. Kendimi geliştirmek için çaba harcadığım konular: Vurgu ve tonlamadan duygu çıkarma. Gelecekte kullanabileceğim bilgiler: Görüntü olmadan da ses unsurlarını çözümleyerek anlatının yapı ve iletilerini belirleyebilme.'",
+      "answer": "Öğrenme günlüğü örnek olarak aşağıdaki başlıklarda doldurulabilir:",
       "guidance": "Günlük öğrencinin gerçek dinleme deneyimini yansıtmalıdır. Örnek, yalnız beklenen yansıtma düzeyini gösterir.",
-      "source_locator": "basılı s.224 / PDF s.225 — Öğrenme Günlüğü"
+      "source_locator": "basılı s.224 / PDF s.225 — Öğrenme Günlüğü",
+      "answer_sections": {
+        "Bu süreçte öğrendiklerim": "Radyo tiyatrosunda görüntünün görevini ses, söz, efekt ve müziğin birlikte üstlendiği; dinlerken kişi ve mekânı ses ipuçlarından kurmak gerektiği.",
+        "Pekiştirmem gereken konular": "Dinlerken hızlı biçimde kişi–çatışma notu alma.",
+        "Daha ayrıntılı incelemek istediğim konular": "Radyo oyununda efekt ve müzik tasarımı.",
+        "Kendimi geliştirmek için çaba harcadığım konular": "Vurgu ve tonlamadan duygu çıkarma.",
+        "Gelecekte kullanabileceğim bilgiler": "Görüntü olmadan da ses unsurlarını çözümleyerek anlatının yapı ve iletilerini belirleyebilme."
+      }
     }
   ]
 }

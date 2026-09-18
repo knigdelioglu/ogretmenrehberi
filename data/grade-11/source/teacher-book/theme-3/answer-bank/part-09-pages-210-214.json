@@ -28,7 +28,7 @@
       "printed_page": 211,
       "question_no": "Performans Görevi 1-3",
       "prompt_summary": "Huzur'daki bir kişiyle hayalî mülakat için plan ve kişi seçimi",
-      "answer": "Örnek seçim: **Mümtaz**. Seçim gerekçesi: İstanbul, musiki, tarih ve kimlik üzerine düşünmesi; dili ve iç dünyasının kitapta ayrıntılı biçimde görünür olması. Örnek plan: Amaç → Mümtaz'ın geçmiş, İstanbul, musiki ve 'yeni hayat' düşüncesini anlamak. Hedef kitle → sınıf arkadaşları. Tür → hayalî mülakat. Strateji → kısa, açık uçlu sorular; her cevabın romandaki söz ve davranışlarla uyumlu olması. Hazırlık → Mümtaz'ın s.167–193 arasındaki sözleri ve çözümleme notları yeniden gözden geçirilir.",
+      "answer": "Hayalî mülakat için kişi seçimi ve hazırlık planı aşağıdaki başlıklarda düzenlenebilir.",
       "answer_sections": {
         "secilen_kisi": "Mümtaz",
         "secim_gerekcesi": "Düşünce dünyası, dili ve değerleri verilen parçalarda yeterince görünür.",
@@ -80,9 +80,22 @@
       "printed_page": 214,
       "question_no": "Değerlendirme 1",
       "prompt_summary": "Hayalî mülakat cevaplarından açık ve örtük iletileri değerlendirme",
-      "answer": "Mümtaz modeli üzerinden örnek değerlendirme: Açık iletiler → İstanbul ve geçmiş kültür kimliği besler; yeni bir hayata ihtiyaç vardır; musiki ve şehir birbirini tamamlayan kültürel alanlardır. Örtük iletiler → gelecek geçmişten tamamen koparılamaz; estetik duyarlılık toplumsal gerçekliği görmezden gelmeye dönüşmemelidir; kişinin kimliği yaşadığı şehir, sanat ve hatıralarla biçimlenir. Mülakatta verilen cevapların bu iletilerle çelişmemesi gerekir.",
+      "answer": "Mümtaz modeli üzerinden açık ve örtük iletiler ayrı gruplarda değerlendirilebilir:",
       "guidance": "Öğrenci başka bir roman kişisini seçtiyse açık/örtük ileti değerlendirmesi o kişinin kaynakta görülen söz ve davranışlarına göre yeniden yapılmalıdır.",
-      "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme soru 1"
+      "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme soru 1",
+      "answer_sections": {
+        "Açık iletiler": [
+          "İstanbul ve geçmiş kültür kimliği besler.",
+          "Yeni bir hayata ihtiyaç vardır.",
+          "Musiki ve şehir birbirini tamamlayan kültürel alanlardır."
+        ],
+        "Örtük iletiler": [
+          "Gelecek geçmişten tamamen koparılamaz.",
+          "Estetik duyarlılık toplumsal gerçekliği görmezden gelmeye dönüşmemelidir.",
+          "Kişinin kimliği yaşadığı şehir, sanat ve hatıralarla biçimlenir."
+        ],
+        "Değerlendirme ölçütü": "Mülakatta verilen cevapların bu iletilerle çelişmemesi gerekir."
+      }
     },
     {
       "question_id": "T3-P214-Q02",

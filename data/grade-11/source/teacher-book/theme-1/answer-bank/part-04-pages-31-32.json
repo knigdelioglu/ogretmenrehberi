@@ -26,8 +26,20 @@
       "entry_type": "question_answer",
       "printed_page": 32,
       "prompt_summary": "Yazıcı metninin yapı unsurları",
-      "answer": "Kişiler: Karagöz, Hacivat ve yazıcı dükkânına gelen farklı tipler. Mekân: İstanbul çevresi; olayların önemli bölümü yazıcı dükkânında geçer. Zaman: Kesin tarih verilmez, geleneksel İstanbul hayatını yansıtan kısa bir zaman dilimidir. Çatışma: Karagöz'ün okuma-yazma bilmemesi ve ağır sözleri yanlış anlamasıyla doğan iletişim çatışmalarıdır. Dramatik örgü: iş arama, dükkân açma, müşterilerle yanlış anlamalar, işten vazgeçme ve Hacivat'la çatışma biçiminde ilerler.",
-      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme"
+      "answer": "Metnin dramatik yapı unsurları aşağıdaki başlıklarda toplanabilir:",
+      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
+      "answer_sections": {
+        "Kişiler": "Karagöz, Hacivat ve yazıcı dükkânına gelen farklı tipler.",
+        "Mekân": "İstanbul çevresi; olayların önemli bölümü yazıcı dükkânında geçer.",
+        "Zaman": "Kesin tarih verilmez; geleneksel İstanbul hayatını yansıtan kısa bir zaman dilimidir.",
+        "Çatışma": "Karagöz'ün okuma-yazma bilmemesi ve ağır sözleri yanlış anlamasıyla doğan iletişim çatışmaları.",
+        "Dramatik örgü": [
+          "Karagöz'ün iş araması ve dükkân açması.",
+          "Müşterilerle yanlış anlamaların ortaya çıkması.",
+          "Karagöz'ün işten vazgeçmesi.",
+          "Hacivat'la çatışmanın sürmesi."
+        ]
+      }
     },
     {
       "question_id": "T1-P32-Q04",

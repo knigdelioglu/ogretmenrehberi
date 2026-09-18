@@ -87,8 +87,14 @@
       "printed_page": 219,
       "question_no": "2",
       "prompt_summary": "Kahramanların davranışlarından duygu ve düşüncelerine çıkarım",
-      "answer": "Bu sorunun cevabı, radyo tiyatrosundaki kişilerin gerçek davranış ve sözlerine bağlıdır. Ses kaydı görülmeden kişi adı, davranış, duygu veya düşünce uydurulmamalıdır. Dinleme sırasında 'kişi → söylediği/yaptığı → olası duygu/düşünce → gerekçe' biçiminde bir tablo kullanılabilir.",
-      "source_locator": "basılı s.219 / PDF s.220 — soru 2 / QR medya gerekli"
+      "answer": "Ses kaydı olmadan kişi, davranış, duygu veya düşünce uydurulmamalıdır. Dinleme sırasında şu tablo kullanılabilir:",
+      "source_locator": "basılı s.219 / PDF s.220 — soru 2 / QR medya gerekli",
+      "answer_sections": [
+        "Kişi",
+        "Söylediği / yaptığı",
+        "Olası duygu / düşünce",
+        "Gerekçe"
+      ]
     },
     {
       "question_id": "T3-P219-Q03",
@@ -132,8 +138,27 @@
       "printed_page": 220,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Osmancık sahne tiyatrosu ile Direnişin Ustaları radyo tiyatrosunu dokuz ölçütte karşılaştırma",
-      "answer": "Kitap karşılaştırma ölçütlerini açıkça verir: müzik, dil kullanımı, ileti, maliyet, duygu değişimleri, dekor, ses tonu, atmosfer ve empati. Ancak iki yapımın gerçek performans ayrıntıları QR videolara bağlıdır. Videolar görülmeden bu dokuz başlıkta yapımlara özgü benzerlik/farklılık yazılmamalıdır. İzleme sırasında her ölçüt için 'Osmancık gözlemi → Direnişin Ustaları gözlemi → benzerlik → farklılık' biçiminde dört sütun kullanılabilir.",
-      "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 1 / iki QR medya gerekli"
+      "answer": "Karşılaştırma dokuz ölçüt üzerinden yapılmalıdır; yapımlara özgü ayrıntılar QR videolar görülmeden doldurulmamalıdır.",
+      "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 1 / iki QR medya gerekli",
+      "answer_sections": {
+        "Karşılaştırma ölçütleri": [
+          "Müzik",
+          "Dil kullanımı",
+          "İleti",
+          "Maliyet",
+          "Duygu değişimleri",
+          "Dekor",
+          "Ses tonu",
+          "Atmosfer",
+          "Empati"
+        ],
+        "Her ölçüt için kullanılacak sütunlar": [
+          "Osmancık gözlemi",
+          "Direnişin Ustaları gözlemi",
+          "Benzerlik",
+          "Farklılık"
+        ]
+      }
     },
     {
       "question_id": "T3-P220-Q02",

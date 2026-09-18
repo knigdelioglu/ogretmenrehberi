@@ -20,7 +20,7 @@
       "printed_page": 226,
       "question_no": "Performans Görevi a-ç",
       "prompt_summary": "Diyaloğu başka türe dönüştürmek için amaç, tür, yöntem ve yazma engellerini planlama",
-      "answer": "Örnek plan: Yazma amacı → dinlenen diyaloğun anlamını ve karakter ilişkisini koruyarak başka bir edebî türde yeniden kurmak. Tür → örneğin hikâye veya anı. Tür özellikleri → hikâyede olay, kişi, mekân, zaman ve anlatıcı; anıda yaşanmışlık izlenimi, kişisel bakış ve geçmişe dönük anlatım. Yöntem → diyalogdaki temel olay ve iletileri belirleme, anlatıcı seçme, sahneyi betimleme, konuşmaları gerektiği kadar koruma, anlatı bölümleri ekleme. Olası engeller → karakterlerin kişiliğini bozmak, yeni olaylar uydurmak, bağlamdan kopmak, tür özelliklerini karıştırmak. Çözüm → her yeni cümleyi 'kaynak diyalogla uyumlu mu?' sorusuyla kontrol etmek.",
+      "answer": "Diyaloğu başka bir türe dönüştürme planı aşağıdaki başlıklarda yapılandırılabilir.",
       "answer_sections": {
         "amac": "Diyaloğun anlam ve karakter ilişkisini koruyarak başka türde yeniden kurmak.",
         "olasi_turler": [
@@ -79,9 +79,22 @@
       "printed_page": 229,
       "question_no": "Öz Değerlendirme Formu + Çıkış Kartı",
       "prompt_summary": "Yazma öz değerlendirmesini ve tema sonu çıkış kartını gerçek performansa göre kullanma",
-      "answer": "Öz Değerlendirme Formundaki Evet/Kısmen/Hayır alanları hazır doldurulmamalıdır. Öğrenci şu altı ölçüte göre kendi metnini değerlendirir: uygun başlık, dönüştürülen diyaloğun içeriğini yansıtma, bağlama/hedef kitleye uygun söz varlığı, farklı anlatım biçimleri ve düşünceyi geliştirme yolları, bağdaşıklık-yazım-noktalama, Türkçeyi bilinçli ve özenli kullanma. 'Kısmen' veya 'Hayır' işaretlenen her ölçüt için somut düzeltme yapılır.\n\nÇıkış kartı için örnek yapı: **Üç Yaz:** bu temada öğrendiğin üç kavram/bilgi. **İki Sor:** hâlâ açıklığa kavuşturman gereken iki nokta. **Bir Paylaş:** seni en çok etkileyen bir öğrenme. Burada içerik öğrencinin gerçek öğrenmesine göre doldurulmalıdır.",
+      "answer": "Öz değerlendirme formu hazır doldurulmamalıdır. Öğrenci önce metnini altı ölçüte göre kontrol eder, ardından çıkış kartını kendi öğrenmesine göre tamamlar.",
       "guidance": "Öz değerlendirme ve çıkış kartı rehberin öğrencinin yerine cevaplayacağı alanlar değildir; rehber yalnız doğru kullanım biçimini ve beklenen derinliği gösterir.",
-      "source_locator": "basılı s.229 / PDF s.230 — Öz Değerlendirme Formu ve Çıkış Kartı"
+      "source_locator": "basılı s.229 / PDF s.230 — Öz Değerlendirme Formu ve Çıkış Kartı",
+      "answer_sections": {
+        "Öz değerlendirme ölçütleri": [
+          "Uygun başlık",
+          "Dönüştürülen diyaloğun içeriğini yansıtma",
+          "Bağlama ve hedef kitleye uygun söz varlığı",
+          "Farklı anlatım biçimleri ve düşünceyi geliştirme yolları",
+          "Bağdaşıklık, yazım ve noktalama",
+          "Türkçeyi bilinçli ve özenli kullanma"
+        ],
+        "Üç Yaz": "Bu temada öğrendiğin üç kavram veya bilgi.",
+        "İki Sor": "Hâlâ açıklığa kavuşturman gereken iki nokta.",
+        "Bir Paylaş": "Seni en çok etkileyen bir öğrenme."
+      }
     }
   ]
 }

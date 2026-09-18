@@ -10,7 +10,7 @@
       "printed_page": 165,
       "question_no": "Okumayı Yönetebilme 1-5",
       "prompt_summary": "Huzur için okuma öncesi tahmin, Tanpınar araştırması ve yazar-eser çalışma kâğıdı",
-      "answer": "Örnek çalışma akışı: 1) 'Huzur' adından hareketle bireyin iç dünyası, mutluluk/huzur arayışı ve insan ilişkileriyle ilgili bir roman olabileceği tahmin edilir; görseldeki ayrıntılar ayrıca not edilir. 2) Tahminler okuma sonrasında karşılaştırılmak üzere saklanır. 3) Kitaptaki yazar biyografisine göre Ahmet Hamdi Tanpınar İstanbul'da doğmuş; Yahya Kemal Beyatlı ve Ahmet Haşim'den etkilenmiş; roman, hikâye, deneme, makale, edebiyat tarihi ve şiir alanlarında eser vermiş; tarih, sanat tarihi, felsefe ve müzikle yakından ilgilenmiştir. 4) Yazar-eser ilişkisi için Huzur'daki İstanbul, eski musiki, tarih, gelenek-modernlik gerilimi ve bireyin iç dünyası; Tanpınar'ın biyografisindeki tarih, müzik ve modernleşme ilgisiyle ilişkilendirilebilir. 5) Üslup tespitlerinde betimleme, zengin kültür söz varlığı, şiirsel/mecazlı söyleyiş, uzun cümleler, diyalog ve iç dünyayı yansıtan anlatım öne çıkarılabilir.",
+      "answer": "Huzur için okuma öncesi hazırlık; tahmin, yazar bilgisi ve yazar–eser ilişkisini ayrı adımlarda yürütmelidir.",
       "answer_sections": {
         "yazar_eser_iliskisi": [
           "İstanbul ve tarihî mekânlar",
@@ -64,7 +64,7 @@
       "printed_page": 172,
       "question_no": "Söz Varlığımız 1-2",
       "prompt_summary": "Huzur'daki dokuz kelimenin bağlamsal anlamları ve yerine kullanılabilecek sözcükler",
-      "answer": "Mustarip (muzdarip): acı veya sıkıntı çeken → 'sıkıntılı / acı çeken'. Mahzen: yer altındaki kapalı bölüm; 'iç mahzen' kullanımında insanın karanlık ve derin iç dünyası → 'iç derinlik'. Cevher: bir şeyin özü, temel niteliği → 'öz / mahiyet'. Yeis: umutsuzluk → 'ümitsizlik'. Zarafet: incelik ve hoşluk → 'incelik'. Neşretmek: yayımlamak, yaymak → 'yayımlamak'. Hulâsa (hülasa): sözün özü, kısaca → 'özetle / kısacası'. Muazzam: çok büyük, güçlü veya etkileyici → 'çok büyük / görkemli'. Cins: tür, çeşit → 'türden'.",
+      "answer": "Söz varlığı çalışmasındaki kelimeler, bağlam anlamı ve güncel karşılığıyla aşağıdaki biçimde düzenlenebilir.",
       "answer_sections": {
         "mustarip (muzdarip)": "Acı/sıkıntı çeken → sıkıntılı, acı çeken",
         "mahzen": "Kapalı yer; bağlamda iç dünyanın derinliği → iç derinlik",
@@ -84,9 +84,16 @@
       "printed_page": 172,
       "question_no": "Söz Varlığımız 3",
       "prompt_summary": "Metindeki diğer bilinmeyen kelimeleri belirleyip sözlükten doğrulama",
-      "answer": "Öğrenci kendi bilmediği kelimeleri belirlemelidir; bu nedenle sabit bir liste üretmek doğru değildir. Uygulama modeli: 'Kelime → bağlamdan tahmin → TDK sözlük anlamı → tahminimle karşılaştırma → metindeki anlam'. Böylece sözlükteki bütün anlamları kopyalamak yerine Huzur'daki kullanıma uygun anlam seçilir.",
+      "answer": "Öğrencinin kendi bilmediği kelimeleri çalışması için sabit liste yerine şu işlem sırası kullanılmalıdır:",
       "guidance": "Bu görevde hangi kelimenin bilinmediği kişiye göre değişir; rehber öğrencinin yerine 'bilmediği kelimeleri' belirlememelidir.",
-      "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız 3"
+      "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız 3",
+      "answer_sections": [
+        "Kelimeyi metindeki bağlamıyla belirle.",
+        "Bağlamdan hareketle anlam tahmini yap.",
+        "TDK sözlüğünden uygun anlamı bul.",
+        "Sözlük anlamıyla kendi tahminini karşılaştır.",
+        "Metindeki kullanıma en uygun anlamı kısa biçimde yaz."
+      ]
     },
     {
       "question_id": "T3-P174-PERF01",
@@ -94,7 +101,7 @@
       "printed_page": 174,
       "question_no": "Hatırlayalım",
       "prompt_summary": "Huzur'un üslup özelliklerini kavram haritasına yerleştirme",
-      "answer": "Örnek kavram haritası: Betimleyici → İstanbul, Boğaz, mimari ve insan görünüşleri ayrıntılı anlatılır. Şiirsel/mecazlı → güneş, akşam, musiki ve mekânlar yoğun benzetme ve imgeyle verilir. Zengin söz varlığı → mimari, tarih ve klasik Türk musikisine ait çok sayıda özel terim kullanılır. Düşünsel → kişiler üzerinden tarih, kültür, modernleşme ve kimlik meseleleri tartışılır. Psikolojik → Mümtaz'ın ve diğer kişilerin duygu ve iç çatışmaları anlatıya yansır. Uzun ve ritmik cümleli → betimleme ve düşünce bölümlerinde geniş, iç içe geçmiş cümle yapıları görülür.",
+      "answer": "Huzur'un üslup özellikleri kavram haritasında aşağıdaki başlıklarda gösterilebilir.",
       "answer_sections": {
         "betimleyici": "Mekân, insan ve tabiat ayrıntılı biçimde canlandırılır.",
         "siirsel_mecazli": "İmge, benzetme ve çağrışımlarla estetik anlatım kurulur.",

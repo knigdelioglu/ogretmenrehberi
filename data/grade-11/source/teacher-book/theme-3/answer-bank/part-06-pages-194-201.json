@@ -28,9 +28,15 @@
       "printed_page": 195,
       "question_no": "Okumayı Yönetebilme",
       "prompt_summary": "Mehmet Akif Ersoy biyografisi için okuma amacı, tahmin ve strateji belirleme",
-      "answer": "Örnek okuma amacı: Mehmet Akif Ersoy'un hayatındaki önemli dönüm noktalarını, edebî kişiliğinin nasıl oluştuğunu, eserleriyle yaşadığı dönem arasındaki ilişkiyi ve İstiklâl Marşı sürecindeki tutumunu belirlemek. Başlık ve görsellerden metnin doğumdan ölüme uzanan hayat çizgisini, eğitimini, meslek hayatını, Millî Mücadele'ye katkısını ve eserlerini ele alacağı tahmin edilebilir. Uygun strateji olarak kronolojik not alma kullanılabilir: 'yıl/dönem → olay → kişinin hayatına veya sanatına etkisi'.",
+      "answer": "Mehmet Akif Ersoy biyografisi için okuma öncesi plan aşağıdaki başlıklarda kurulabilir:",
       "guidance": "Metin yoğun tarih ve eser bilgisi taşıdığı için her cümleyi not etmek yerine dönüm noktaları ve bunların sonuçları seçilmelidir.",
-      "source_locator": "basılı s.195-197 / PDF s.196-198 — Okumayı Yönetebilme / Metni Okuyalım"
+      "source_locator": "basılı s.195-197 / PDF s.196-198 — Okumayı Yönetebilme / Metni Okuyalım",
+      "answer_sections": {
+        "Okuma amacı": "Hayatındaki önemli dönüm noktalarını, edebî kişiliğinin oluşumunu, eserleriyle dönemi arasındaki ilişkiyi ve İstiklâl Marşı sürecindeki tutumunu belirlemek.",
+        "Tahmin": "Metnin doğumdan ölüme uzanan hayat çizgisini, eğitimini, meslek hayatını, Millî Mücadele'ye katkısını ve eserlerini ele alacağı tahmin edilebilir.",
+        "Strateji": "Kronolojik not alma.",
+        "Not şablonu": "Yıl/dönem → olay → kişinin hayatına veya sanatına etkisi."
+      }
     },
     {
       "question_id": "T3-P198-VOC01",
@@ -38,9 +44,18 @@
       "printed_page": 198,
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Hakkın Sesleri parçasındaki kelimeleri verilen anlamlarla eşleştirme",
-      "answer": "Doğru eşleştirmeler: hor görülme → **e) zillet**; hassas → **d) duyarlı**; vasıtalı → **a) dolaylı**; yıkıp bozma → **c) tahribat**; esin → **b) ilham**; umursamayan → **ç) vurdumduymaz**. Kutucuklarda yer alan **f) vesile** bu altı anlam arasında kullanılmayan seçenektir.",
+      "answer": "Eşleştirmeler aşağıdaki gibidir; “vesile” kullanılmayan seçenektir.",
       "explanation": "Sayfanın görseli kontrol edildi; etkinlikte yedi kelime seçeneğine karşılık altı anlam verildiği için bir seçenek artmaktadır.",
-      "source_locator": "basılı s.198 / PDF s.199 — Söz Varlığımız / sayfa görseli doğrulandı"
+      "source_locator": "basılı s.198 / PDF s.199 — Söz Varlığımız / sayfa görseli doğrulandı",
+      "answer_sections": {
+        "hor görülme": "e) zillet",
+        "hassas": "d) duyarlı",
+        "vasıtalı": "a) dolaylı",
+        "yıkıp bozma": "c) tahribat",
+        "esin": "b) ilham",
+        "umursamayan": "ç) vurdumduymaz",
+        "kullanılmayan seçenek": "f) vesile"
+      }
     },
     {
       "question_id": "T3-P199-Q01",
@@ -88,7 +103,7 @@
       "printed_page": 201,
       "question_no": "Çalışma Kâğıdı",
       "prompt_summary": "Mehmet Akif Ersoy biyografi metninin konu, amaç, ana düşünce ve anlatım özellikleri",
-      "answer": "Çalışma kâğıdı metnin biyografik ve öğretici yapısına göre doldurulabilir. Konu: Mehmet Akif Ersoy'un hayatı, edebî kişiliği, eserleri ve toplumsal/millî faaliyetleri. Yazılma amacı: Mehmet Akif'in yaşamını ve Türk edebiyatındaki yerini bilgiye dayalı biçimde tanıtmak. Ana düşünce: Mehmet Akif, hayatı ve sanatı toplum, millet, din ve memleket meseleleriyle iç içe geçmiş önemli bir şair ve aydındır. Düşünceyi geliştirme yolları: örnekleme, tarih ve olaylardan yararlanma, eser adlarıyla somutlaştırma, açıklama. Yardımcı düşünceler: eğitimi ve meslek hayatı; Millî Mücadele'deki faaliyetleri; İstiklâl Marşı süreci; Safahat ve şiir anlayışı; toplumun farklı kesimlerine duyarlılığı. Açık iletiler: hayatındaki tarih ve görevler, eserleri, Millî Mücadele'ye katılması gibi doğrudan bilgiler. Örtük iletiler: sanatçının toplumdan kopuk olmadığı; edebî üretimin yaşanan dönem ve değerlerle ilişkili olduğu. Anlatım biçimleri: ağırlıklı açıklayıcı anlatım, yer yer öyküleyici anlatım. Bilgilerin sunuluş şekli: büyük ölçüde kronolojik ve konu kümeleri hâlinde.",
+      "answer": "Çalışma kâğıdının biyografik ve öğretici yapı başlıkları aşağıda düzenlenmiştir.",
       "answer_sections": {
         "konu": "Mehmet Akif'in hayatı, edebî kişiliği, eserleri ve toplumsal/millî faaliyetleri.",
         "yazilma_amaci": "Hayatını ve edebiyattaki yerini bilgiye dayalı biçimde tanıtmak.",

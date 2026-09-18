@@ -17,8 +17,17 @@
       "entry_type": "question_answer",
       "printed_page": 34,
       "prompt_summary": "Cümlelerdeki fiilimsilerin türü ve işlevi",
-      "answer": "Yazılmış: sıfat-fiil ve bir adı niteler. Derken ile çıkarak: zarf-fiildir. Beklemek: isim-fiildir ve amaç anlamı kurar. Oturanlar: adlaşmış sıfat-fiildir. Sallandıkça ile geçerken: zarf-fiildir; ilki süreklilik, ikincisi zaman bildirir.",
-      "source_locator": "basılı s.34 / PDF s.35 — fiilimsiler soru 8"
+      "answer": "Fiilimsiler, türleri ve cümledeki işlevleriyle şöyle gösterilebilir:",
+      "source_locator": "basılı s.34 / PDF s.35 — fiilimsiler soru 8",
+      "answer_sections": {
+        "yazılmış": "Sıfat-fiil; bir adı niteler.",
+        "derken": "Zarf-fiil.",
+        "çıkarak": "Zarf-fiil.",
+        "beklemek": "İsim-fiil; amaç anlamının kurulmasına katkı sağlar.",
+        "oturanlar": "Adlaşmış sıfat-fiil.",
+        "sallandıkça": "Zarf-fiil; süreklilik bildirir.",
+        "geçerken": "Zarf-fiil; zaman bildirir."
+      }
     },
     {
       "question_id": "T1-P34-Q09",
@@ -35,9 +44,16 @@
       "printed_page": 34,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Yazıcı adlı gölge oyununu tarih, sosyoloji ve psikolojiyle ilişkilendiren bir haftalık grup araştırmasını planlama",
-      "answer": "Örnek çalışma planı: Sınıf üç gruba ayrılır. Tarih grubu metindeki dönem dili, meslekler, gündelik hayat ve geleneksel tiyatro unsurlarını; sosyoloji grubu kişiler arasındaki sosyal roller, eğitim ve statü farklılıkları ile iletişim biçimlerini; psikoloji grubu yanlış anlama, tepki, niyet ve çatışma davranışlarını inceler. Her grup bulgusunu 'metindeki unsur → disiplinle ilişkisi → metinden kanıt → yararlanılan ek kaynak' biçiminde kaydeder. Ek kaynak kullanılacaksa yazar/kurum ve erişim bilgisi not edilir; araştırılmamış sonuçlar hazır kabul edilmez. Hafta sonunda her grup 3-5 dakikalık kısa sunum yapar ve diğer gruplardan gelen bir soruyu yanıtlar.",
+      "answer": "Araştırma üç disiplin grubuna ayrılarak yürütülebilir. Her grup bulgusunu metin kanıtı ile dış kaynak bilgisini ayırarak sunmalıdır.",
       "guidance": "Amaç öğrencinin araştırmasını onun yerine tamamlamak değil, güvenilir kaynak kullanarak Yazıcı metnini üç farklı sosyal bilim perspektifinden incelemesini sağlamaktır. Metindeki kanıt ile dış kaynaktan edinilen bilgi ayrı tutulmalıdır.",
-      "source_locator": "basılı s.34 / PDF s.35 — Ders Dışı Etkinlik: Gölge Oyununun Sosyal Bilimlerle İlişkisi"
+      "source_locator": "basılı s.34 / PDF s.35 — Ders Dışı Etkinlik: Gölge Oyununun Sosyal Bilimlerle İlişkisi",
+      "answer_sections": {
+        "Tarih grubu": "Metindeki dönem dili, meslekler, gündelik hayat ve geleneksel tiyatro unsurlarını inceler.",
+        "Sosyoloji grubu": "Sosyal roller, eğitim ve statü farklılıkları ile iletişim biçimlerini inceler.",
+        "Psikoloji grubu": "Yanlış anlama, tepki, niyet ve çatışma davranışlarını inceler.",
+        "Kayıt biçimi": "Metindeki unsur → disiplinle ilişkisi → metinden kanıt → yararlanılan ek kaynak.",
+        "Sunum": "Hafta sonunda her grup 3–5 dakikalık kısa sunum yapar ve diğer gruplardan gelen bir soruyu yanıtlar."
+      }
     }
   ]
 }

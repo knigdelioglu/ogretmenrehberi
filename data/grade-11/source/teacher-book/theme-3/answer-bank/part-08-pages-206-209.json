@@ -10,9 +10,51 @@
       "printed_page": 208,
       "question_no": "1/a-c",
       "prompt_summary": "Usûlî tezkire metnindeki günümüzde kullanılmayan kelimeleri anlamlandırma ve cümlede kullanma",
-      "answer": "Örnek on kelime: **evsâf-ı hamîde** → güzel ve övülen nitelikler; **gûş itmek** → duymak; **şu'arâ** → şairler; **dervîş-sıfât** → derviş tabiatlı; **âdemî-hilkat** → insanî yaratılışlı; **tahsîl-i ma'rifet** → bilgi edinme/öğrenme; **hıdmet** → hizmet; **tasfiye-i bâtın** → iç dünyayı arındırma; **avdet** → geri dönme; **tavattun** → bir yere yerleşme. Örnek cümleler: 'Şairin evsâf-ı hamîdesinden söz edildi.' 'Haberi gûş edince şaşırdı.' 'Tezkirede pek çok şu'arâ tanıtılır.' 'Dervîş-sıfât bir hayat sürdü.' 'Metin onu âdemî-hilkat bir kişi olarak anlatır.' 'İlim tahsîl-i ma'rifet yoluyla gelişir.' 'Uzun süre hocasının hıdmetinde bulundu.' 'Tasfiye-i bâtın için çileye girdi.' 'Mısır'dan Rûm'a avdet etti.' 'Döndükten sonra kendi şehrinde tavattun etti.'",
+      "answer": "Eski söz varlığı için anlam ve örnek cümleler aşağıdaki başlıklarda ayrı ayrı verilebilir.",
       "guidance": "Öğrenci farklı kelimeler seçebilir. Anlamlar, s.207'deki sadeleştirilmiş metinle karşılaştırılarak doğrulanmalıdır; amaç eski kelimeleri ezberlemek değil, bağlamdan anlam çıkarma becerisidir.",
-      "source_locator": "basılı s.206-208 / PDF s.207-209 — Usûlî ve soru 1/a-c"
+      "source_locator": "basılı s.206-208 / PDF s.207-209 — Usûlî ve soru 1/a-c",
+      "answer_sections": {
+        "evsâf-ı hamîde": {
+          "anlam": "Güzel ve övülen nitelikler.",
+          "örnek": "Şairin evsâf-ı hamîdesinden söz edildi."
+        },
+        "gûş itmek": {
+          "anlam": "Duymak.",
+          "örnek": "Haberi gûş edince şaşırdı."
+        },
+        "şu'arâ": {
+          "anlam": "Şairler.",
+          "örnek": "Tezkirede pek çok şu'arâ tanıtılır."
+        },
+        "dervîş-sıfât": {
+          "anlam": "Derviş tabiatlı.",
+          "örnek": "Dervîş-sıfât bir hayat sürdü."
+        },
+        "âdemî-hilkat": {
+          "anlam": "İnsanî yaratılışlı.",
+          "örnek": "Metin onu âdemî-hilkat bir kişi olarak anlatır."
+        },
+        "tahsîl-i ma'rifet": {
+          "anlam": "Bilgi edinme, öğrenme.",
+          "örnek": "İlim tahsîl-i ma'rifet yoluyla gelişir."
+        },
+        "hıdmet": {
+          "anlam": "Hizmet.",
+          "örnek": "Uzun süre hocasının hıdmetinde bulundu."
+        },
+        "tasfiye-i bâtın": {
+          "anlam": "İç dünyayı arındırma.",
+          "örnek": "Tasfiye-i bâtın düşüncesine önem verdi."
+        },
+        "avdet": {
+          "anlam": "Geri dönme.",
+          "örnek": "Memleketine avdet etti."
+        },
+        "tavattun": {
+          "anlam": "Bir yere yerleşme.",
+          "örnek": "Şehirde tavattun etmeye karar verdi."
+        }
+      }
     },
     {
       "question_id": "T3-P208-Q02",

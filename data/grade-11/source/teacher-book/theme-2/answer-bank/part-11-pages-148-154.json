@@ -10,9 +10,15 @@
       "printed_page": 149,
       "question_no": "1",
       "prompt_summary": "Çevrim içi gezilebilecek müzeleri araştırıp kısa tanıtım listesi hazırlama",
-      "answer": "Bu görev gerçek bir araştırma gerektirir; ders kitabı belirli çevrim içi müzelerin adlarını vermemektedir. Örnek çalışma yöntemi: 1) Resmî müze veya kurum sitelerinden çevrim içi gezilebilen müzeleri belirle. 2) Her müze için ad, şehir/ülke, koleksiyonun ana konusu ve çevrim içi gezide sunulan imkânı birer cümleyle yaz. 3) Kaynağı not et. 4) Aynı türden çok sayıda müze yerine farklı alanları temsil eden kısa bir liste oluştur.",
+      "answer": "Gerçek bir araştırma gerektiren bu görev için aşağıdaki yöntem kullanılabilir:",
       "guidance": "İnternetten doğrulanmamış müze adı veya sanal tur özelliği hazır cevap olarak eklenmemelidir. Öğrencinin gerçekten erişebildiği resmî çevrim içi kaynaklar esas alınmalıdır.",
-      "source_locator": "basılı s.149 / PDF s.150 — soru 1"
+      "source_locator": "basılı s.149 / PDF s.150 — soru 1",
+      "answer_sections": [
+        "Resmî müze veya kurum sitelerinden çevrim içi gezilebilen müzeleri belirle.",
+        "Her müze için ad, şehir/ülke, koleksiyonun ana konusu ve çevrim içi gezide sunulan imkânı kısa biçimde yaz.",
+        "Kullandığın kaynağı not et.",
+        "Aynı türden çok sayıda müze yerine farklı alanları temsil eden kısa bir liste oluştur."
+      ]
     },
     {
       "question_id": "T2-P149-PERF02",
@@ -30,7 +36,7 @@
       "printed_page": 149,
       "question_no": "3-7",
       "prompt_summary": "Sanal müze izlenim yazısı için yöntem, amaç, hedef kitle ve strateji belirleme",
-      "answer": "Örnek plan: Yazma amacı: bilgilendirme ile kişisel izlenimi birleştirmek. Hedef kitle: sınıf arkadaşları ve öğretmen. Metin düzeni: girişte müzeyi ve seçme nedenini tanıtma; gelişmede dikkat çeken eser/alanları, bunların oluşturduğu izlenimleri ve kültürel anlamı açıklama; sonuçta sanal geziyi genel olarak değerlendirme. Cümle ve paragraf stratejisi: her paragrafta tek ana düşünce; gözlem ile yorumu birbirinden ayırma; gerektiğinde karşılaştırma ve örnekleme kullanma. Yazma engelleri: kaynak bilgisini not etmemek, gezi sırasında ayrıntıları kaydetmemek, çok sayıda ekran görüntüsü arasında odak kaybetmek ve yalnız katalog bilgisi kopyalamak. Çözüm: gezi sırasında kısa gözlem notları almak ve yazıyı bu notlardan kurmak.",
+      "answer": "Sanal müze gezi yazısı için plan aşağıdaki başlıklarda düzenlenebilir.",
       "answer_sections": {
         "amac": "Bilgilendirme + kişisel izlenim",
         "hedef_kitle": "Sınıf arkadaşları ve öğretmen",
@@ -128,9 +134,16 @@
       "printed_page": 154,
       "question_no": "Öğrenme Günlüğü",
       "prompt_summary": "Tema sonu öğrenme günlüğünü anlamlı biçimde doldurma",
-      "answer": "Örnek doldurma modeli: 'Bu süreçte öğrendiklerim: Dil, tarih ve kültürün birbirini taşıdığı; Orhun Abideleri, Dîvânu Lugâti’t-Türk ve âşıklık geleneğinin kültürel bellekteki rolü. Pekiştirmem gereken konular: Türk lehçelerindeki ses ve kelime farklılıkları. Daha ayrıntılı incelemek istediğim konular: Orhun yazıtlarının tarihî bağlamı ve farklı Türk topluluklarındaki âşıklık geleneği. Kendimi geliştirmek için çaba harcadığım konular: metinleri karşılaştırma ve kültürel unsurları sınıflandırma. Gelecekte kullanabileceğim bilgiler: kültürel mirası değerlendirirken maddi unsur ile onun arkasındaki görünmeyen kültürel anlamı birlikte düşünmek.'",
+      "answer": "Öğrenme günlüğü örnek olarak aşağıdaki başlıklarda doldurulabilir:",
       "guidance": "Öğrenme günlüğü öğrencinin gerçek öğrenme durumunu yansıtmalıdır; bu metin yalnız beklenen ayrıntı düzeyini gösteren örnektir.",
-      "source_locator": "basılı s.154 / PDF s.155 — Öğrenme Günlüğü"
+      "source_locator": "basılı s.154 / PDF s.155 — Öğrenme Günlüğü",
+      "answer_sections": {
+        "Bu süreçte öğrendiklerim": "Dil, tarih ve kültürün birbirini taşıdığı; Orhun Abideleri, Dîvânu Lugâti’t-Türk ve âşıklık geleneğinin kültürel bellekteki rolü.",
+        "Pekiştirmem gereken konular": "Türk lehçelerindeki ses ve kelime farklılıkları.",
+        "Daha ayrıntılı incelemek istediğim konular": "Orhun yazıtlarının tarihî bağlamı ve farklı Türk topluluklarındaki âşıklık geleneği.",
+        "Kendimi geliştirmek için çaba harcadığım konular": "Metinleri karşılaştırma ve kültürel unsurları sınıflandırma.",
+        "Gelecekte kullanabileceğim bilgiler": "Kültürel mirası değerlendirirken maddi unsur ile onun arkasındaki görünmeyen kültürel anlamı birlikte düşünmek."
+      }
     }
   ]
 }

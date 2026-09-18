@@ -42,9 +42,28 @@
       "printed_page": 299,
       "question_no": "Performans Görevi a-c",
       "prompt_summary": "Fedakârlık belgeselini yansıtan özgün afiş için amaç, özellik ve yazma stratejisi oluşturma",
-      "answer": "Örnek çalışma planı: Amaç: Fedakârlık belgeselinde öne çıkan ve izleme sırasında doğrulanan temel iletiyi kısa sürede anlaşılacak görsel bir mesaja dönüştürmek. Afiş özellikleri: tek ana ileti; bir güçlü görsel; 3-6 sözcüklük kısa slogan; okunaklı yazı; başlık-görsel bütünlüğü; belirgin görsel hiyerarşi; gereksiz ayrıntıdan kaçınma. Yazma stratejisi: önce hedef kitle ve iletiyi belirleme, sonra 3-4 slogan taslağı üretme, en açık olanı seçme, görselle ilişkisini kontrol etme, taslağı sadeleştirip son hâle getirme.",
+      "answer": "Özgün afiş görevi amaç, afiş özellikleri ve yazma stratejisi başlıklarında planlanabilir.",
       "guidance": "Belgeselin gerçek iletisi video izlenmeden rehber tarafından doldurulmamalıdır. Öğrenci s.286-296'daki kendi notlarından doğruladığı bir iletiyi seçmelidir.",
-      "source_locator": "basılı s.299 / PDF s.300 — Performans Görevi a-c; Afiş Tasarımında Değerlendirme Kriterleri basılı s.298 / PDF s.299"
+      "source_locator": "basılı s.299 / PDF s.300 — Performans Görevi a-c; Afiş Tasarımında Değerlendirme Kriterleri basılı s.298 / PDF s.299",
+      "answer_sections": {
+        "Amaç": "Fedakârlık belgeselinde izleme sırasında doğrulanan temel iletiyi kısa sürede anlaşılacak görsel bir mesaja dönüştürmek.",
+        "Afiş özellikleri": [
+          "Tek ana ileti",
+          "Bir güçlü görsel",
+          "3–6 sözcüklük kısa slogan",
+          "Okunaklı yazı",
+          "Başlık–görsel bütünlüğü",
+          "Belirgin görsel hiyerarşi",
+          "Gereksiz ayrıntıdan kaçınma"
+        ],
+        "Yazma stratejisi": [
+          "Hedef kitleyi ve iletiyi belirle.",
+          "3–4 slogan taslağı üret.",
+          "En açık olanı seç.",
+          "Slogan–görsel ilişkisini kontrol et.",
+          "Taslağı sadeleştirip son hâle getir."
+        ]
+      }
     },
     {
       "question_id": "T4-P300-PERF01",
@@ -52,9 +71,17 @@
       "printed_page": "300-301",
       "question_no": "İçerik Oluşturabilme a-b, d-f",
       "prompt_summary": "Afişin görsel, renk, yazı, bilgi, dil ve geri bildirim kararlarını yapılandırma",
-      "answer": "Örnek üretim zinciri: 1) Çevredeki afişlerden hangi düzenlerin hızlı anlaşıldığı gözlenir; kalabalık tasarımların neden zor okunduğu tartışılır. 2) Bir ana görsel, iki veya üç temel renk ve uzaktan okunabilen bir yazı karakteri seçilir. 3) Afişte kullanılacak bilgiler yalnız ana iletiyi destekleyenlerle sınırlandırılır. 4) Slogan kısa, açık ve hedef kitleye uygun hâle getirilir. 5) Görsel, sloganı yalnız tekrar etmemeli; onu açıklamalı, yorumlamalı veya güçlendirmelidir. 6) Taslak başka bir öğrenciye 5-6 saniye gösterilir; 'ne anladın, ilk neyi gördün, mesaj açık mı?' geri bildirimi alınarak düzenleme yapılır.",
+      "answer": "Afişin içerik üretimi aşağıdaki sıra izlenerek yürütülebilir:",
       "explanation": "Kitaptaki QR 'Afiş Hazırlama Basamakları' videosu yardımcı kaynaktır. Kitapta a-f adımları açıkça verildiği için bu süreç bütünüyle source_limited değildir.",
-      "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme a-b, d-f"
+      "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme a-b, d-f",
+      "answer_sections": [
+        "Çevredeki afişlerden hangi düzenlerin hızlı anlaşıldığını gözlemle; kalabalık tasarımların neden zor okunduğunu tartış.",
+        "Bir ana görsel, iki veya üç temel renk ve uzaktan okunabilen bir yazı karakteri seç.",
+        "Afişteki bilgileri yalnız ana iletiyi destekleyenlerle sınırlandır.",
+        "Sloganı kısa, açık ve hedef kitleye uygun hâle getir.",
+        "Görseli sloganı tekrar etmek için değil, onu açıklamak, yorumlamak veya güçlendirmek için kullan.",
+        "Taslağı başka bir öğrenciye 5–6 saniye göster; “ne anladın, ilk neyi gördün, mesaj açık mı?” geri bildirimiyle düzenle."
+      ]
     },
     {
       "question_id": "T4-P300-SL01",

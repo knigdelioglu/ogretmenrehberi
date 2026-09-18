@@ -49,8 +49,16 @@
       "printed_page": 65,
       "question_no": "Kelime Ağacı",
       "prompt_summary": "Kelime ağacındaki kavramları verilen anlamlarla eşleştirme",
-      "answer": "Tasavvur → göz önüne getirme, hayal etme, zihinde canlandırma. Nörolojik → sinir bilimsel. Sosyal → toplumsal. Güdü → bilinçli veya bilinçsiz olarak davranışı doğuran ve ona yön veren güç. Medeni → uygar. 'Muhabbet' bu etkinlikte eşleştirme için verilen anlam kutularından birine karşılık gelmeyen çeldirici sözcüktür.",
-      "source_locator": "basılı s.65 / PDF s.66"
+      "answer": "Eşleştirme aşağıdaki biçimde yapılabilir. “Muhabbet” bu etkinlikte verilen anlam kutularından birine karşılık gelmeyen çeldirici sözcüktür.",
+      "source_locator": "basılı s.65 / PDF s.66",
+      "answer_sections": {
+        "Tasavvur": "Göz önüne getirme, hayal etme, zihinde canlandırma.",
+        "Nörolojik": "Sinir bilimsel.",
+        "Sosyal": "Toplumsal.",
+        "Güdü": "Bilinçli veya bilinçsiz olarak davranışı doğuran ve ona yön veren güç.",
+        "Medeni": "Uygar.",
+        "Muhabbet": "Çeldirici sözcük; verilen anlam kutularıyla eşleşmez."
+      }
     },
     {
       "question_id": "T1-P66-Q01",

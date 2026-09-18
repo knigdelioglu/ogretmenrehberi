@@ -10,7 +10,7 @@
       "printed_page": 230,
       "question_no": "1",
       "prompt_summary": "Üç metni, edebî metinlerin yazar hayatından iz taşıyıp taşımaması tez ve antitezine göre sınıflandırma",
-      "answer": "Venn şemasındaki yerleşim: **TEZ → 2**, **ANTİTEZ → 1**, **KESİŞİM → 3**. 2 numaralı metin, doğrudan kişinin kendi hayatını anlattığı için “edebî metinler yazarın hayatından iz taşır” görüşünü en açık biçimde destekler. 1 numaralı metin kurmaca bir çevre ve olay dünyası kurduğu için yazar hayatıyla doğrudan özdeşleştirilemeyeceğini gösteren kutba yakındır. 3 numaralı metin ise gerçek bir yer ve kişisel gözlem izlenimini edebî biçimde dönüştürdüğü için iki görüşün kesişiminde yer alır: edebiyat hayattan izler taşıyabilir fakat bu izler sanat ve kurmaca yoluyla dönüştürülür.",
+      "answer": "Venn şemasındaki yerleşim doğrudan aşağıdaki gibidir; gerekçeler ilgili başlıklarda verilmiştir.",
       "explanation": "Bu sınıflandırmada belirleyici olan “hayattan iz taşıma” ile “hayatı birebir aktarma”nın aynı şey olmadığını ayırmaktır.",
       "source_locator": "basılı s.230 / PDF s.231 — soru 1",
       "answer_sections": {
@@ -34,7 +34,7 @@
       "printed_page": 231,
       "question_no": "3",
       "prompt_summary": "Kurmaca, gerçeklik izlenimi, okur yorumu, nesnellik ve çok anlamlılık kavramlarını açıklama",
-      "answer": "Kurmaca: Gerçek dünyadan yararlansa da yazarın seçme, düzenleme ve hayal gücüyle oluşturduğu anlatı dünyasıdır. Gerçeklik izlenimi: Kurmaca kişi, olay, zaman ve mekânların okura gerçekmiş gibi inandırıcı sunulmasıdır. Okur yorumu: Okurun kültürel birikimi, inancı, ilgisi ve kişisel deneyimlerine göre metne farklı anlamlar vermesidir. Nesnellik: Dış dünyadaki yaşanmış ve doğrulanabilir gerçekliğin özelliğidir; kurmaca bundan farklı olarak yaratılmış bir dünyadır. Çok anlamlılık: Kurmaca metnin tek ve değişmez bir anlama kapanmayıp farklı okurlar tarafından farklı biçimlerde yorumlanabilmesidir.",
+      "answer": "Kavramlar birbirinden ayrılarak aşağıdaki biçimde tanımlanabilir.",
       "answer_sections": {
         "kurmaca": "Gerçeklikten yararlanan fakat yaratıcı biçimde yeniden kurulan anlatı dünyası.",
         "gerceklik_izlenimi": "Kurmaca dünyanın gerçekmiş gibi inandırıcı görünmesi.",
@@ -155,7 +155,7 @@
       "printed_page": 234,
       "question_no": "13",
       "prompt_summary": "Bir Bilim Adamının Romanı parçasındaki sekiz yargıyı Evet/Hayır/Bilgi yok olarak değerlendirme",
-      "answer": "Değerlendirme: 1) Bilgi vermek amaçlanmıştır → **Evet**. 2) Biyografik roman türünden alınmıştır → **Evet**. 3) Açık ve anlaşılır bir dil kullanılmıştır → **Evet**. 4) Mustafa İnan'ın yaşadıklarından söz edilmiştir → **Evet**. 5) Kahraman anlatıcı tarafından aktarılmıştır → **Hayır**. 6) Devrik cümleler kullanılarak anlatım güçlendirilmiştir → **Evet**. 7) Nesnel bir anlatımla kaleme alınmıştır → **Hayır**; anlatıda yorum ve edebî değerlendirme vardır. 8) Zamanda kronolojik bir sıra takip edilmiştir → **Hayır**; parça bir anı/olay kesitine ve anlatıcının geriye dönük aktarımlarına dayanır.",
+      "answer": "Sekiz ifade için değerlendirme sonuçları aşağıdaki biçimde gösterilir.",
       "answer_sections": {
         "1": "Evet",
         "2": "Evet",
@@ -174,9 +174,15 @@
       "printed_page": 234,
       "question_no": "14",
       "prompt_summary": "Aile Bağları'ndaki diyalog tekniğinin anlatıma ve kişilerin yansıtılmasına katkısı",
-      "answer": "Bu soru doğrudan Aile Bağları QR videosundaki gerçek diyaloglara bağlıdır. Video/transkript kaynakta bulunmadığı için hangi kişilerin ne söylediği ve diyalogların hangi duygu veya çatışmayı görünür kıldığı kesinleştirilemez. İzleme sırasında her diyalog için 'kim konuşuyor → ne söylüyor → ilişkide/çatışmada neyi gösteriyor → anlatıma katkısı' biçiminde kısa not tutulmalıdır.",
+      "answer": "Video/transkript olmadan gerçek diyaloglar uydurulmamalıdır. İzleme sırasında her diyalog için şu alanlar not edilmelidir:",
       "guidance": "Genel olarak diyalog kişilerin duygu, düşünce ve ilişkilerini doğrudan gösterebilir; ancak bu yapımda nasıl kullanıldığı video görülmeden örneklendirilmemelidir.",
-      "source_locator": "basılı s.234 / PDF s.235 — soru 14 / Aile Bağları QR videosu gerekli"
+      "source_locator": "basılı s.234 / PDF s.235 — soru 14 / Aile Bağları QR videosu gerekli",
+      "answer_sections": [
+        "Kim konuşuyor?",
+        "Ne söylüyor?",
+        "İlişkide veya çatışmada neyi gösteriyor?",
+        "Anlatıma katkısı nedir?"
+      ]
     },
     {
       "question_id": "T3-P234-Q15",

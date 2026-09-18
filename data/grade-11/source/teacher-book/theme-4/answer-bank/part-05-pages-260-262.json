@@ -46,12 +46,20 @@
       "printed_page": 260,
       "question_no": "2",
       "prompt_summary": "Belirlenen değerleri metindeki söz, davranış ve olaylarla örneklendirme",
-      "answer": "Çalışkanlık ve azim → Sinan'ın seferlerde gördüğü yapıları incelemesi, Van Gölü'ndeki güçlükleri aşarak gemileri tamamlaması ve ileri yaşına rağmen Selimiye üzerinde çalışması. Saygı ve değerbilirlik → Ayasofya'nın mimarlarının başarısını kabul edip onlara saygı duyması. Estetik duyarlılık → Süleymaniye'de yalnız büyüklüğü değil güzelliği amaçlaması. Sorumluluk → verdiği işi zamanında ve eksiksiz tamamlama anlayışı. Liyakat → Lütfü Paşa'nın mimarbaşılık için Sinan'ı yeterliliği nedeniyle önermesi. İnanç ve tevazu → eserin açılışında başarıyı gösterişe dönüştürmek yerine secde ve şükürle ilişkilendiren yaklaşım. Hoşgörü, adalet, cömertlik ve değerbilirlik → oyunun sonunda Sinan'ın yaşadığı çağın toplumunu bu değerlerle nitelemesi.",
+      "answer": "Metindeki değerler, bunları görünür kılan davranış ve olaylarla birlikte aşağıdaki biçimde gösterilebilir:",
       "evidence_quotes": [
         "Güzellik, büyüklükten daha güçlüdür.",
         "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı."
       ],
-      "source_locator": "basılı s.243-260 / PDF s.244-261 — Sıra Sizde soru 2"
+      "source_locator": "basılı s.243-260 / PDF s.244-261 — Sıra Sizde soru 2",
+      "answer_sections": {
+        "Çalışkanlık ve azim": "Sinan'ın seferlerde gördüğü yapıları incelemesi, Van Gölü'ndeki güçlükleri aşarak gemileri tamamlaması ve ileri yaşına rağmen Selimiye üzerinde çalışması.",
+        "Saygı ve değerbilirlik": "Ayasofya mimarlarının başarısını kabul edip onlara saygı duyması.",
+        "Estetik duyarlılık": "Süleymaniye'de yalnız büyüklüğü değil güzelliği amaçlaması.",
+        "Sorumluluk": "Verdiği işi zamanında ve eksiksiz tamamlama anlayışı.",
+        "Liyakat": "Lütfü Paşa'nın mimarbaşılık için Sinan'ı yeterliliği nedeniyle önermesi.",
+        "İnanç ve tevazu": "Eserin açılışında başarıyı gösterişe dönüştürmek yerine secde ve şükürle ilişkilendiren yaklaşım."
+      }
     },
     {
       "question_id": "T4-P260-PERF03",
@@ -78,9 +86,15 @@
       "printed_page": 260,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Ben, Mimar Sinan'ı tarih, psikoloji ve sosyolojiyle ilişkilendiren araştırma planı",
-      "answer": "Örnek araştırma çerçevesi: Metin–Tarih → Mimar Sinan'ın yaşadığı dönem, görevleri, yapıların tarihî bağlamı ve XVI. yüzyıl Osmanlı kültür çevresi incelenir. Metin–Psikoloji → Sinan'ın kendini kanıtlama isteği, Ayasofya karşısındaki mesleki hedefi, güçlüklerle baş etmesi, ileri yaşta Selimiye'yi üstlenirken yaşadığı kaygı ve sevinç ele alınır. Metin–Sosyoloji → eğitim ve meslek sistemi, mimarbaşılık kurumu, sanatçı-devlet ilişkisi, ortak kültürel değerler ve üretimin toplumla ilişkisi araştırılır. Bu disiplinlerin birlikte kullanılması, yazarın tarih, insan davranışı ve toplum yapısını tiyatro kurgusunda bir araya getiren geniş bir kültürel ilgi alanına sahip olduğunu düşündürür.",
+      "answer": "Metnin sosyal bilimlerle ilişkisi üç disiplin üzerinden incelenebilir:",
       "guidance": "Dış kaynak bilgisiyle oyundaki bilgi birbirinden ayrılmalı; araştırmada bulunan her tarihsel ayrıntı oyunda geçiyormuş gibi gösterilmemelidir.",
-      "source_locator": "basılı s.260 / PDF s.261 — Ders Dışı Etkinlik / Tiyatro ve Sosyal Bilimler"
+      "source_locator": "basılı s.260 / PDF s.261 — Ders Dışı Etkinlik / Tiyatro ve Sosyal Bilimler",
+      "answer_sections": {
+        "Metin–Tarih": "Mimar Sinan'ın yaşadığı dönem, görevleri, yapıların tarihî bağlamı ve XVI. yüzyıl Osmanlı kültür çevresi.",
+        "Metin–Psikoloji": "Sinan'ın kendini kanıtlama isteği, Ayasofya karşısındaki mesleki hedefi, güçlüklerle baş etmesi, ileri yaşta Selimiye'yi üstlenirken yaşadığı kaygı ve sevinç.",
+        "Metin–Sosyoloji": "Eğitim ve meslek sistemi, mimarbaşılık kurumu, sanatçı-devlet ilişkisi, ortak kültürel değerler ve üretimin toplumla ilişkisi.",
+        "Birlikte değerlendirme": "Bu üç alan, yazarın tarih, insan davranışı ve toplum yapısını tiyatro kurgusunda nasıl birleştirdiğini görünür kılar."
+      }
     },
     {
       "question_id": "T4-P261-Q01",
@@ -88,7 +102,7 @@
       "printed_page": 261,
       "question_no": "Birlikte Çalışalım",
       "prompt_summary": "Ben, Mimar Sinan'daki çatışmaları ve bunların metne etkisini belirleme",
-      "answer": "Başlıca çatışmalar: 1) Sinan'ın büyük bir mimar olma ve kendini kanıtlama isteği ↔ karşısına çıkan teknik ve mesleki güçlükler. 2) Ayasofya'nın üstünlüğü iddiası ↔ Sinan'ın kendi mimarlık geleneğinin de büyük eser verebileceğini gösterme isteği. 3) 'Daha büyük' yapı yapma düşüncesi ↔ Sinan'ın güzelliği ve özgünlüğü önceleyen estetik tercihi. 4) İnsan ömrünün ve saltanatın geçiciliği ↔ kalıcı eser bırakma arzusu. 5) Selimiye gibi son büyük fırsatın doğurduğu kaygı ↔ Sinan'ın bilgi ve deneyimine güvenmesi. Bu çatışmalar metni yalnız biyografik bilgi sıralamasından çıkarır; merak ve gerilim oluşturur, Sinan'ın kişiliğinin gelişimini gösterir ve Şehzade–Süleymaniye–Selimiye çizgisindeki dramatik ilerlemeyi anlamlı kılar.",
+      "answer": "Metindeki başlıca çatışmalar aşağıdaki başlıklarda yapılandırılmıştır.",
       "answer_sections": {
         "catismalar": [
           "Hedef ve kendini kanıtlama ↔ teknik/mesleki güçlük",
@@ -107,7 +121,7 @@
       "printed_page": 262,
       "question_no": "Süreci Değerlendirebilme",
       "prompt_summary": "Oyundaki insan ilişkilerini belirleme ve metni kişisel beğeni ölçütleriyle değerlendirme",
-      "answer": "Oyunda günlük insan ilişkilerine benzeyen başlıca kesitler; yeteneğe güvenme ve görev verme, verilen sözü yerine getirme, yöneticinin uzmana danışması, kişinin kendisinden önceki ustalara saygı göstermesi, ekip hâlinde çalışma ve öğrenciler yetiştirmedir. Örnek beğeni ölçütleri: **etkileyicilik** → müzik, ışık ve projeksiyon yönergeleri sahne etkisini artırır. **Anlaşılırlık** → tarihî bilgiler Sinan'ın doğrudan anlatımıyla açıklanır. **Karakter tutarlılığı** → Sinan'ın öğrenme isteği, azmi ve estetik anlayışı farklı olaylarda sürdürülür. **Tarih ve kültür bilinci** → kişiler, yapılar ve dönem sanatçıları aynı tarihî çerçevede ilişkilendirilir. **Sahnelenebilirlik** → dekor yerine değişebilir fon, ses ve ışık kullanımı farklı zaman ve mekânlara hızlı geçiş sağlar.",
+      "answer": "Günlük hayatla ilişkilendirilen kesitler ve beğeni ölçütleri aşağıdaki yapı içinde değerlendirilebilir.",
       "answer_sections": {
         "insan_iliskileri": [
           "Güven ve görev verme",
@@ -154,9 +168,14 @@
       "printed_page": 262,
       "question_no": "Sıra Sizde 2",
       "prompt_summary": "Metindeki kişilerin günlük bir olay karşısındaki davranışlarını kişiliklerine uygun kısa senaryolarla gösterme",
-      "answer": "Örnek senaryolar: **Mimar Sinan:** Bir ekip önemli bir projede beklenmedik teknik sorunla karşılaşır. Sinan sorunu şansa bırakmak yerine ölçüm yapar, farklı çözümleri inceler, ekibin görüşünü alır ve uygulanabilir çözümü sabırla dener. Bu davranış onun bilgiye, çalışmaya ve sorumluluğa verdiği önemle uyumludur. **Lütfü Paşa:** Bir görev için birkaç kişi arasından seçim yapılacaktır. Kişisel yakınlıktan çok işi yapabilecek kişinin deneyim ve yeterliliğini dikkate alır; bu, oyunda Sinan'ı mimarbaşılık için önermesiyle uyumludur. **Kanuni'yi temsil eden 8. Ses:** Bir kamu yapısı yaptırırken yalnız büyüklük istemek yerine uzmanına güvenip güzel ve kalıcı bir eser talep eder.",
+      "answer": "Kişilerin değer ve özelliklerini güncel bir duruma taşıyan örnek senaryolar şöyle düzenlenebilir:",
       "explanation": "Senaryolar hayalîdir; karakterlerin kaynakta görülen özelliklerinden hareketle yeni günlük durumlara uygulanmıştır.",
-      "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 2"
+      "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 2",
+      "answer_sections": {
+        "Mimar Sinan": "Bir ekip önemli bir projede beklenmedik teknik sorunla karşılaşır. Sinan ölçüm yapar, farklı çözümleri inceler, ekibin görüşünü alır ve uygulanabilir çözümü sabırla dener.",
+        "Lütfü Paşa": "Bir görev için birkaç kişi arasından seçim yapılırken kişisel yakınlıktan çok deneyim ve yeterlilik gözetir.",
+        "Kanuni'yi temsil eden 8. Ses": "Bir kamu yapısında yalnız büyüklük istemek yerine uzmanına güvenip estetik ve işlevsel dengeyi önemser."
+      }
     }
   ]
 }

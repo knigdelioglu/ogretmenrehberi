@@ -36,9 +36,20 @@
       "printed_page": 137,
       "question_no": "Dinleme/İzlemeyi Yönetebilme",
       "prompt_summary": "Âşık Atışması için dinleme amacı, strateji ve ortam hazırlığı",
-      "answer": "Örnek plan: Amaç: Âşık atışmasında sazın, doğaçlamanın, söz oyunlarının, mizahın ve karşılıklı söyleyişin nasıl kullanıldığını belirlemek. Strateji: İlk dinlemede genel akışı ve iki âşığın birbirine verdiği cevapları takip etmek; ikinci dinlemede dikkat çeken benzetme, söz oyunu, hitap ve mizah örneklerini kısa notlarla kaydetmek. Başlık ve görselden hareketle bunun karşılıklı ve doğaçlamaya dayalı bir halk şiiri icrası olduğu tahmin edilebilir. Ortam için ses düzeyi, ekran görünürlüğü ve dikkat dağıtıcı unsurlar önceden kontrol edilmelidir.",
+      "answer": "Âşık atışması için dinleme/izleme planı aşağıdaki biçimde kurulabilir:",
       "guidance": "Öğrencinin her dizeyi yazması beklenmemelidir; anahtar kelime ve kısa ifade notları yeterlidir.",
-      "source_locator": "basılı s.137 / PDF s.138 — adımlar 1-4"
+      "source_locator": "basılı s.137 / PDF s.138 — adımlar 1-4",
+      "answer_sections": {
+        "Amaç": "Sazın, doğaçlamanın, söz oyunlarının, mizahın ve karşılıklı söyleyişin nasıl kullanıldığını belirlemek.",
+        "İlk dinleme": "Genel akışı ve iki âşığın birbirine verdiği cevapları takip etmek.",
+        "İkinci dinleme": "Benzetme, söz oyunu, hitap ve mizah örneklerini kısa notlarla kaydetmek.",
+        "Okuma öncesi tahmin": "Başlık ve görselden hareketle karşılıklı ve doğaçlamaya dayalı bir halk şiiri icrası olabileceğini tahmin etmek.",
+        "Ortam kontrolü": [
+          "Ses düzeyi",
+          "Ekran görünürlüğü",
+          "Dikkat dağıtıcı unsurlar"
+        ]
+      }
     },
     {
       "question_id": "T2-P138-Q01",

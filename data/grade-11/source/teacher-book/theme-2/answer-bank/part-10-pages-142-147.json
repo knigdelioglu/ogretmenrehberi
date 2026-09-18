@@ -126,9 +126,17 @@
       "printed_page": 145,
       "question_no": "Altı Şapka",
       "prompt_summary": "Âşık atışmasını altı şapka tekniğiyle değerlendirme",
-      "answer": "Altı şapka soruları videonun gerçek içeriğine göre cevaplanmalıdır. Video görülmeden belirli iyimser/olumsuz ileti, duygu veya ana ileti uydurulmamalıdır. Uygulama modeli: beyaz şapka → gözlenen somut bilgiler; kırmızı → dinlerken hissedilen duygu; siyah → sorunlu/olumsuz yönler; sarı → olumlu/iyimser yönler; yeşil → atışmayı farklı biçimde sürdürme önerisi; mavi → bütün değerlendirmeyi ortak bir sonuca bağlama.",
+      "answer": "Altı şapka etkinliği videonun gerçek içeriğine göre doldurulmalıdır. Video görülmeden belirli ileti veya duygu uydurulmamalıdır.",
       "guidance": "Gruplar cevaplarını videodan en az bir gözlemle gerekçelendirmelidir.",
-      "source_locator": "basılı s.145 / PDF s.146 — Altı Şapka / QR video gerekli"
+      "source_locator": "basılı s.145 / PDF s.146 — Altı Şapka / QR video gerekli",
+      "answer_sections": {
+        "Beyaz şapka": "Gözlenen somut bilgiler.",
+        "Kırmızı şapka": "Dinlerken hissedilen duygu.",
+        "Siyah şapka": "Sorunlu veya olumsuz yönler.",
+        "Sarı şapka": "Olumlu veya iyimser yönler.",
+        "Yeşil şapka": "Atışmayı farklı biçimde sürdürme önerisi.",
+        "Mavi şapka": "Bütün değerlendirmeyi ortak bir sonuca bağlama."
+      }
     },
     {
       "question_id": "T2-P146-PERF01",
