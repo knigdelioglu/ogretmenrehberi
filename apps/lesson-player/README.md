@@ -11,10 +11,13 @@ Mevcut doğrulanmış dersler:
 - **Metin Tahlili-3 / Dinleme-İzleme** — basılı s.59–73 — 38 ders adımı / 38 source kaydı / 36 cevap
 - **Edebiyat Atölyesi-2 / Yazma — E-posta** — basılı s.74–78 — 17 ders adımı / 15 source kaydı / 13 cevap
 - **1. Tema / Ölçme ve Değerlendirme** — basılı s.79–83 — 13 ders adımı / 13 source kaydı / 13 cevap
+- **2. Tema / Giriş** — basılı s.84–88 — 14 ders adımı / 14 source kaydı / 12 cevap
 
-1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı**. Böylece tema açılışından s.83 ölçme-değerlendirmeye kadar kanonik envanterin tamamı Lesson Player içinde temsil edilir.
+1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
-Uygulama tek derse bağlı değildir. `data/grade-11/presentation/theme-1/*-flow.json` dosyaları build sırasında otomatik keşfedilerek bir ders kataloğuna dönüştürülür.
+2. Tema üretimi küçük doğal bloklarla ilerler. İlk blokta **Kültür Yolculuğu tema açılışı, Vatan yahut Silistre, Ortak Türk Alfabesi ve Konuya Başlarken** s.84–88 aralığında tamamlanmıştır. s.89'daki Türk Dilleri etkinliği s.90'a taşarak Oğulla Buluşma hazırlığına bağlandığı için bir sonraki doğal bloğa bırakılmıştır.
+
+Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
 ## Çalıştırma
 
@@ -135,6 +138,7 @@ Her lesson-flow için build şu koşullarda hata verir:
 - dersin basılı sayfa aralığındaki answer-bank kaydı lesson-flow içinde yoksa,
 - vocabulary kaydında yapılandırılmış kelime/anlam verisi yoksa,
 - lesson-flow bilinmeyen source/answer ID kullanıyorsa,
-- soru sayfası ile bağlandığı source kaydı çelişiyorsa.
+- soru sayfası ile bağlandığı source kaydı çelişiyorsa,
+- lesson-flow'un zorunlu source aralığında `REVIEW_REQUIRED` veya başka doğrulanmamış bir kaynak kaydı varsa.
 
 Ayrıntılı mimari: `docs/LESSON_PLAYER_PLAN.md`.
