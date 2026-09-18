@@ -17,9 +17,9 @@ Her tema için master `answer-bank.json` dosyasının indekslediği canonical pa
 | Tema 1 | 151 | **Düzeltildi / yeniden doğrulandı** | 79 `entry_type` ve 17 `source_locator` eksiği giderildi; s.34 araştırma desteği ve s.64 adım 3 eklendi; performans görevleri yeniden sınıflandırıldı |
 | Tema 2 | 167 | **Düzeltildi / yeniden doğrulandı** | s.88, s.96, s.99 ve s.116 bulguları giderildi; gerçek PDF görselleri kullanıldı; `source_limited` 12 → 9 |
 | Tema 3 | 146 | **Yeniden doğrulandı / küçük iyileştirme yapıldı** | Zorunlu alanlar temiz; source-limited kararları gerçek PDF ile yeniden doğrulandı; s.230 Venn cevabı doğrudan TEZ/ANTİTEZ/KESİŞİM biçiminde yapılandırıldı |
-| Tema 4 | 156 | **Düzeltme gerekli** | s.268 görev alt maddesi kısmi eksik; s.304/2 eksik çoktan seçmeli sonuç; s.305 yanlış `source_limited`; iki orphan/legacy part dosyası |
+| Tema 4 | 156 | **Düzeltildi / yeniden doğrulandı** | s.268 5/b tamamlandı; s.304/2 doğru şık A ile düzeltildi; s.305 görsel sorusu gerçek PDF'ye göre yanıtlandı; iki orphan part kaldırıldı |
 
-Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamamlandığını gösterir. **Tema 1 ve Tema 2 bulguları 18.09.2026 tarihinde giderilmiş ve yeniden doğrulanmıştır.** Tema 4 için bu raporda açık kalan bulgular giderilmeden tüm sınıf için `QA_PASSED` benzeri bir durum verilmemelidir.
+Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamamlandığını gösterir. **Tema 1, Tema 2 ve Tema 4 bulguları 18.09.2026 tarihinde giderilmiş; Tema 3 de yeniden doğrulanmıştır.** Bu raporda açık kalan doğrulanmış kritik/yüksek/orta answer-bank bulgusu yoktur.
 
 ## Kesin bulgular
 
@@ -36,7 +36,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 2. **T2-P99-Q02 (s.99)** — Altı görsel PDF'de açıkça görünür: geleneksel kıyafetli atlılar, halı/kilim, bezeme/desen, kahve takımı, yurt/çadırlar ve okçuluk. Kayıt görselleri göremediğini söyleyerek `source_limited` kalmış.
 3. **T4-P305-Q05 (s.305)** — Çiçekli ağaç, apartmanlar, açık havada mutlu aile/çocuklar ve orman yangını görselleri görünür. “Bir çadır çiz, çocuk!” metniyle örnek seçim ve gerekçe verilebilir. Mevcut `source_limited` sınıflaması hatalı.
 
-### Yüksek — Tema 4 s.268 kısmi içerik eksikliği
+### Yüksek — Tema 4 s.268 kısmi içerik eksikliği — **GİDERİLDİ**
 
 - Kitap s.268'de Söz Varlığımız **5/a** bölümünde “merdiven” kavramının çağrışımları tabloya yazdırılıyor; **5/b** bölümünde bu çağrışımlarla merdiven kavramı arasında kurulan ilişkiler açıklatılıyor.
 - `T4-P267-VOC02` bu görevi `Söz Varlığımız 4-5` diye topluyor ve çağrışım örnekleri veriyor, fakat **5/b ilişki açıklamasını karşılamıyor**.
@@ -52,7 +52,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 - **T2-P88-Q03:** “Gönül coğrafyamız” ifadesinin çağrıştırdığı coğrafyalara örnek isteniyor. Bu kişisel/yorumlayıcı soru, videoya özgü olay bilgisi gerektirmeden örnek cevap alabilir. `source_limited` fazla katı.
 - **T2-P116-VOC01:** Kitap sayfası altı kelime (`yağız, ecdat, il, töre, şad, kılmak`) verir fakat yalnız beş anlam kutusu gösterir; `şad` için tanım sayfada yoktur. Veritabanındaki “eski Türklerde yönetim görevi olan yüksek rütbeli kişi” bilgisi içerik olarak makul olsa da kitap dışı tamamlamadır. Bu bilgi ya dış kaynağa bağlanmalı ya da “kitapta tanım eksik” şeklinde açık kaynak sınırıyla sunulmalıdır.
 
-### Orta — Tema 4 ölçme-değerlendirme ve repo hijyeni
+### Orta — Tema 4 ölçme-değerlendirme ve repo hijyeni — **GİDERİLDİ**
 
 - **T4-P304-Q02:** Mevcut açıklama anlam bakımından doğru; fakat gerçek sayfadaki seçenekler render edildiğinde doğru şık **A**'dır. Kayıt “seçenekler görünmedi” diyerek harf vermiyor. Bu açıklama silinmeli ve cevap `A` olarak tamamlanmalı.
 - Tema 4 answer-bank klasöründe master indeksine girmeyen iki eski/örtüşen dosya bulunuyor: `part-06-pages-263-268.json` ve `part-07-pages-269-273.json`. Canonical dosyalar sırasıyla `part-06-pages-263-270.json` ve `part-07-pages-271-273.json`. Dosyaları glob ile okuyan tüketicilerde çifte/çelişkili veri riski var.
@@ -73,7 +73,7 @@ Genel `ALL_THEMES_COMPLETE_WITH_SOURCE_LIMITED` durumu içerik üretiminin tamam
 
 ### Tema 4 — Hayatın Aynası (s.238–307)
 
-Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak doğru. Ancak s.268'de bir alt görev kısmen kaybolmuş, s.305 görsel sorusu gereksiz `source_limited`, s.304/2 ise gerçek seçenek incelenmeden eksik bırakılmış. Ayrıca klasörde iki orphan eski part dosyası var. Bu nedenle Tema 4 şu hâliyle içerik olarak büyük ölçüde tamam olsa da QA'dan geçmiş kabul edilmemeli.
+**Remediation tamamlandı.** s.268'deki Söz Varlığımız 4-5 kaydı gerçek etkinlik yapısına göre `printed_page: 267-268` olarak genişletildi; 5/a çağrışım listesine ek olarak 5/b'deki çağrışım-merdiven ilişkileri açıkça yapılandırıldı. s.304/2 gerçek çoktan seçmeli sonuçla **A** olarak tamamlandı ve geçersiz extraction açıklaması kaldırıldı. s.305/5'te dört gerçek görsel incelenerek `source_limited` kaldırıldı; örnek görsel seçimleri ve gerekçeleri verildi. Master tarafından kullanılmayan iki eski/örtüşen part dosyası silindi. Tema 4 `source_limited` sayısı 32'den 31'e düştü.
 
 ## Sayfa bazlı denetim matrisi
 
@@ -346,7 +346,7 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 | 265 | OK | — |
 | 266 | OK | — |
 | 267 | OK | — |
-| 268 | **UYARI** | T4-P267-VOC02 p.267-268 görevini tek kayda bağlıyor; printed_page=267. S.268/5a çağrışım listesi kısmen var, 5b çağrışım ilişkilerinin açıklaması eksik |
+| 268 | OK | Düzeltildi: T4-P267-VOC02 p.267-268 görevini tek kayda bağlıyor; printed_page=267. S.268/5a çağrışım listesi kısmen var, 5b çağrışım ilişkilerinin açıklaması eksik |
 | 269 | OK | — |
 | 270 | OK | — |
 | 271 | OK | — |
@@ -382,12 +382,14 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 | 301 | OK | — |
 | 302 | OK | — |
 | 303 | OK | — |
-| 304 | **UYARI** | T4-P304-Q02 anlam ilişkisini doğru açıklıyor fakat gerçek sayfadaki çoktan seçmeli cevap A olduğu hâlde şık verilmemiş; “seçenekler görünmedi” açıklaması artık geçersiz |
-| 305 | **UYARI** | T4-P305-Q05 yanlış source_limited; dört görsel PDF'de görünür ve örnek seçim/gerekçe üretilebilir |
+| 304 | OK | Düzeltildi: T4-P304-Q02 anlam ilişkisini doğru açıklıyor fakat gerçek sayfadaki çoktan seçmeli cevap A olduğu hâlde şık verilmemiş; “seçenekler görünmedi” açıklaması artık geçersiz |
+| 305 | OK | Düzeltildi: T4-P305-Q05 yanlış source_limited; dört görsel PDF'de görünür ve örnek seçim/gerekçe üretilebilir |
 | 306 | OK | — |
 | 307 | OK | — |
 
 ## Düzeltme önceliği
+
+> **Durum:** Aşağıdaki maddeler bu raporun ilk QA turunda oluşturulan iş listesidir. Tema 1, 2 ve 4 düzeltmeleri uygulanmış; Tema 3 yeniden doğrulanmıştır. Liste tarihsel iz için korunmaktadır.
 
 1. Tema 1'de 79 kayda `entry_type`, 17 kayda `source_locator` eklenerek şema normalize edilmeli.
 2. `T2-P96-Q04A`, `T2-P99-Q02`, `T4-P305-Q05` gerçek PDF görüntülerine göre yeniden yazılmalı ve `source_limited` kaldırılmalı.
@@ -433,6 +435,19 @@ Yeni üretilen blokların şeması güçlü ve QR/video sınırı genel olarak d
 - Master part toplamı: **146**
 - Kullanılabilirlik iyileştirmesi: `T3-P230-Q01` Venn sonucu yapılandırıldı
 
+## Tema 4 remediation doğrulaması — 18.09.2026
+
+- İçerik düzeltme commit'i: `4d728e2556f1e106e163dc7957e8c602b1d87370`
+- Orphan silme commit'leri: `3a1339f70d63baa2172bcc818c856aec862b6c18`, `ed206b14af290add6edf69671cf7a91580f970d2`
+- Canonical Tema 4 kayıt sayısı: **156**
+- Zorunlu alan eksiği: **0**
+- Duplicate `question_id`: **0**
+- Boş `answer`: **0**
+- `source_limited`: **31** (32 → 31)
+- Orphan/indekssiz part dosyası: **0**
+- Master part toplamı: **156**
+- Düzeltilen ana kayıtlar: `T4-P267-VOC02`, `T4-P304-Q02`, `T4-P305-Q05`
+
 ## Sonuç
 
-Veritabanı genel olarak kullanılabilir ve Tema 2–4'ün yeni üretimlerinde kalite belirgin biçimde yükselmiş. Bununla birlikte mevcut manifestteki “tüm temalar tamamlandı” ifadesi **üretim tamamlandı** anlamında doğru olsa da **kalite kontrolünden geçti** anlamında doğru değildir. Tema 1'in eski şema borcu bu rapordan sonra giderilmiştir. Tema 2'deki görsel/biçim ve kaynak-provenans sorunları da giderilmiştir. Açık kalan doğrulanmış bulgular Tema 4'tedir.
+Veritabanı genel olarak kullanılabilir ve Tema 2–4'ün yeni üretimlerinde kalite belirgin biçimde yükselmiş. Bununla birlikte mevcut manifestteki “tüm temalar tamamlandı” ifadesi **üretim tamamlandı** anlamında doğru olsa da **kalite kontrolünden geçti** anlamında doğru değildir. Tema 1'in eski şema borcu bu rapordan sonra giderilmiştir. Tema 2 ve Tema 4'teki görsel/biçim, kapsam ve repo hijyeni sorunları da giderilmiştir. Tema 3 yeniden doğrulanmış ve mevcut kaynak sınırları korunmuştur. Bu raporda açık kalan doğrulanmış answer-bank bulgusu bulunmamaktadır.
