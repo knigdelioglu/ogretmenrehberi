@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 3, "Lesson catalog en az üç ders içermeli.");
+assert(lessons.length >= 4, "Lesson catalog en az dört ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -297,6 +297,87 @@ assert(s52q1, "s52 Dilekçe yazma adımı eksik.");
 assert(
   s52q1.answer?.entry_type === "performance_support",
   "s52 Dilekçe yazma performans desteği olarak korunmalı."
+);
+
+const dinleme = byLessonId.get("T11-T01-DINLEME-IZLEME");
+assert(dinleme, "Dinleme/İzleme dersi catalog içinde bulunamadı.");
+assert(
+  dinleme.lesson_slug === "dinleme-izleme",
+  "Dinleme/İzleme lesson_slug doğru olmalı."
+);
+assert(dinleme.coverage.steps === 38, "Dinleme/İzleme dersi 38 adım olmalı.");
+assert(
+  dinleme.coverage.source_records === 38,
+  "Dinleme/İzleme dersi 38 source-index kaydını kapsamalı."
+);
+assert(
+  dinleme.coverage.answer_entries === 36,
+  "Dinleme/İzleme dersi 36 answer-bank kaydını kapsamalı."
+);
+
+const dinlemeById = new Map(dinleme.steps.map((step) => [step.id, step]));
+const dinlemeOrderedIds = dinleme.steps.map((step) => step.id);
+
+const d64Listen = dinlemeById.get("s64-listen");
+const d64Observation = dinlemeById.get("s64-observation");
+assert(d64Listen && d64Observation, "s64 süreç/gözlem adımları eksik.");
+assert(
+  d64Listen.answer === null && d64Observation.answer === null,
+  "s64 not alma ve Gözlem Formu answer-bank cevabına bağlı olmamalı."
+);
+assert(
+  dinlemeOrderedIds.indexOf("s64-strategy") <
+    dinlemeOrderedIds.indexOf("s64-listen") &&
+    dinlemeOrderedIds.indexOf("s64-listen") <
+      dinlemeOrderedIds.indexOf("s64-observation"),
+  "s64 hazırlık → strateji → dinleme → gözlem sırası korunmalı."
+);
+
+const d65Vocabulary = dinlemeById.get("s65-vocabulary");
+assert(d65Vocabulary, "s65 söz varlığı adımı eksik.");
+assert(
+  d65Vocabulary.layout === "vocabulary" &&
+    d65Vocabulary.density === "compact",
+  "s65 söz varlığı kompakt vocabulary görünümünde olmalı."
+);
+for (const term of ["Tasavvur", "Nörolojik", "Sosyal", "Güdü", "Medeni", "Muhabbet"]) {
+  assert(
+    d65Vocabulary.answer.answer_sections?.[term],
+    `Dinleme/İzleme söz varlığı tanımı eksik: ${term}`
+  );
+}
+
+for (const id of ["s66-q1", "s66-q4", "s66-q5", "s67-q6", "s67-q8", "s67-q9", "s71-q2", "s72-q1", "s73-q1", "s73-q2"]) {
+  const step = dinlemeById.get(id);
+  assert(step, `Dinleme/İzleme source-limited kontrol adımı eksik: ${id}`);
+}
+assert(
+  dinlemeById.get("s66-q1")?.answer?.entry_type === "source_limited" &&
+    dinlemeById.get("s66-q4")?.answer?.entry_type === "source_limited" &&
+    dinlemeById.get("s71-q2")?.answer?.entry_type === "source_limited",
+  "QR videoya bağlı cevaplar source_limited olarak korunmalı."
+);
+
+assert(
+  dinlemeOrderedIds.indexOf("s68-future") <
+    dinlemeOrderedIds.indexOf("s68-69-q2") &&
+    dinlemeOrderedIds.indexOf("s70-q4") <
+      dinlemeOrderedIds.indexOf("s71-solutions"),
+  "s68–71 tartışma ve çözüm akışı kitap sırasını korumalı."
+);
+
+const d73Exit = dinlemeById.get("s73-exit");
+assert(d73Exit, "s73 çıkış kartı eksik.");
+assert(
+  d73Exit.layout === "assessment" &&
+    d73Exit.answer?.entry_type === "performance_support",
+  "s73 çıkış kartı assessment + performance_support olarak korunmalı."
+);
+assert(
+  d73Exit.answer?.answer_sections?.["Üç Yaz"] &&
+    d73Exit.answer?.answer_sections?.["İki Sor"] &&
+    d73Exit.answer?.answer_sections?.["Bir Paylaş"],
+  "s73 çıkış kartının 3-2-1 yapısı eksiksiz olmalı."
 );
 
 console.log(
