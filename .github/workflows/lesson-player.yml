@@ -70,6 +70,20 @@ jobs:
             --no-sandbox \
             --disable-gpu \
             --window-size=1366,768 \
+            --dump-dom \
+            "http://127.0.0.1:4173/?lesson=T11-T01-KARAGOZ&step=s15-q1" > /tmp/lesson-player-question-dom.html
+
+          grep -q 'aria-label="Cevabı göster"' /tmp/lesson-player-question-dom.html
+          if grep -q "Göster: Cevap" /tmp/lesson-player-question-dom.html; then
+            echo "Legacy text answer button is still rendered."
+            exit 1
+          fi
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
             --screenshot="$GITHUB_WORKSPACE/lesson-player-teacher.png" \
             "http://127.0.0.1:4173/?step=s15-q1"
 
