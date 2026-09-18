@@ -6,13 +6,13 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
 const repoRoot = path.resolve(appRoot, "../..");
 
-const themeBase = path.join(
+const teacherBookRoot = path.join(
   repoRoot,
-  "data/grade-11/source/teacher-book/theme-1"
+  "data/grade-11/source/teacher-book"
 );
-const presentationDir = path.join(
+const presentationRoot = path.join(
   repoRoot,
-  "data/grade-11/presentation/theme-1"
+  "data/grade-11/presentation"
 );
 const outputPath = path.join(appRoot, "src/generated/lessons.json");
 
@@ -24,10 +24,13 @@ function fail(message) {
   throw new Error(`Lesson data build failed: ${message}`);
 }
 
-function sourceOrdinal(id) {
-  const match = /^T01-S(\d+)$/.exec(id);
+function sourceParts(id) {
+  const match = /^T(\d{2})-S(\d+)$/.exec(id);
   if (!match) fail(`Invalid source_record_id: ${id}`);
-  return Number(match[1]);
+  return {
+    theme: match[1],
+    ordinal: Number(match[2])
+  };
 }
 
 function pageBounds(value) {
@@ -42,27 +45,68 @@ function pageBounds(value) {
   };
 }
 
-const sourceIndex = readJson(path.join(themeBase, "source-index.json"));
-const answerIndex = readJson(path.join(themeBase, "answer-bank.json"));
+const themeDataCache = new Map();
 
-const answers = [];
-for (const part of answerIndex.parts) {
-  const payload = readJson(path.join(themeBase, part.path));
-  answers.push(...(payload.entries ?? []));
-}
+function loadThemeData(themeCode) {
+  if (themeDataCache.has(themeCode)) {
+    return themeDataCache.get(themeCode);
+  }
 
-const sourceById = new Map(
-  sourceIndex.records.map((record) => [record.source_record_id, record])
-);
-const answerById = new Map(
-  answers.map((entry) => [entry.question_id, entry])
-);
+  const themeNumber = Number(themeCode);
+  if (!Number.isInteger(themeNumber) || themeNumber < 1) {
+    fail(`Invalid theme code: ${themeCode}`);
+  }
 
-if (sourceById.size !== sourceIndex.records.length) {
-  fail("Duplicate source_record_id detected");
-}
-if (answerById.size !== answers.length) {
-  fail("Duplicate question_id detected");
+  const themeBase = path.join(teacherBookRoot, `theme-${themeNumber}`);
+  const sourceIndexPath = path.join(themeBase, "source-index.json");
+  const answerIndexPath = path.join(themeBase, "answer-bank.json");
+
+  if (!fs.existsSync(sourceIndexPath) || !fs.existsSync(answerIndexPath)) {
+    fail(`Missing canonical teacher-book data for theme ${themeNumber}`);
+  }
+
+  const sourceIndex = readJson(sourceIndexPath);
+  const answerIndex = readJson(answerIndexPath);
+  const answers = [];
+
+  for (const part of answerIndex.parts ?? []) {
+    const payload = readJson(path.join(themeBase, part.path));
+    answers.push(...(payload.entries ?? []));
+  }
+
+  const sourceById = new Map(
+    sourceIndex.records.map((record) => [record.source_record_id, record])
+  );
+  const answerById = new Map(
+    answers.map((entry) => [entry.question_id, entry])
+  );
+
+  if (sourceById.size !== sourceIndex.records.length) {
+    fail(`Duplicate source_record_id detected in theme ${themeNumber}`);
+  }
+  if (answerById.size !== answers.length) {
+    fail(`Duplicate question_id detected in theme ${themeNumber}`);
+  }
+  if (
+    Number(answerIndex.coverage?.entry_count) !== answers.length
+  ) {
+    fail(
+      `Answer index count mismatch in theme ${themeNumber}: ` +
+      `${answerIndex.coverage?.entry_count} != ${answers.length}`
+    );
+  }
+
+  const data = {
+    themeCode,
+    themeNumber,
+    sourceIndex,
+    answerIndex,
+    answers,
+    sourceById,
+    answerById
+  };
+  themeDataCache.set(themeCode, data);
+  return data;
 }
 
 const allowedDensities = new Set(["large", "comfortable", "compact"]);
@@ -159,6 +203,29 @@ function buildLesson(flowPath) {
   }
   if (!flow.required_source_range?.from || !flow.required_source_range?.to) {
     fail(`Missing required_source_range in ${flowName}`);
+  }
+
+  const fromParts = sourceParts(flow.required_source_range.from);
+  const toParts = sourceParts(flow.required_source_range.to);
+  if (fromParts.theme !== toParts.theme) {
+    fail(`Source range crosses themes in ${flow.lesson_id}`);
+  }
+
+  const themeData = loadThemeData(fromParts.theme);
+  const {
+    sourceIndex,
+    answers,
+    sourceById,
+    answerById
+  } = themeData;
+
+  if (
+    flow.theme_id &&
+    flow.theme_id !== sourceIndex.theme_id
+  ) {
+    fail(
+      `theme_id mismatch in ${flow.lesson_id}: ${flow.theme_id} != ${sourceIndex.theme_id}`
+    );
   }
 
   const seenStepIds = new Set();
@@ -281,17 +348,24 @@ function buildLesson(flowPath) {
     );
   }
 
-  const fromOrdinal = sourceOrdinal(flow.required_source_range.from);
-  const toOrdinal = sourceOrdinal(flow.required_source_range.to);
   const requiredSources = sourceIndex.records.filter((record) => {
-    const ordinal = sourceOrdinal(record.source_record_id);
-    return ordinal >= fromOrdinal && ordinal <= toOrdinal;
+    const parts = sourceParts(record.source_record_id);
+    return (
+      parts.theme === fromParts.theme &&
+      parts.ordinal >= fromParts.ordinal &&
+      parts.ordinal <= toParts.ordinal
+    );
   });
 
   for (const record of requiredSources) {
     if (!seenSourceIds.has(record.source_record_id)) {
       fail(
         `Source-index record in ${flow.lesson_id} range is not represented: ${record.source_record_id}`
+      );
+    }
+    if (record.source_status !== "VERIFIED") {
+      fail(
+        `Source-index record is not VERIFIED in ${flow.lesson_id}: ${record.source_record_id} (${record.source_status})`
       );
     }
   }
@@ -309,6 +383,7 @@ function buildLesson(flowPath) {
     schema_version: flow.schema_version,
     lesson_id: flow.lesson_id,
     lesson_slug: lessonSlug,
+    theme_id: sourceIndex.theme_id,
     title: flow.title,
     subtitle: flow.subtitle,
     printed_page_range: flow.printed_page_range,
@@ -323,18 +398,33 @@ function buildLesson(flowPath) {
   };
 }
 
-const flowFiles = fs
-  .readdirSync(presentationDir)
-  .filter((name) => name.endsWith("-flow.json"))
-  .sort();
+const presentationThemeDirs = fs
+  .readdirSync(presentationRoot, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory() && /^theme-\d+$/.test(entry.name))
+  .sort((a, b) => {
+    const left = Number(a.name.replace("theme-", ""));
+    const right = Number(b.name.replace("theme-", ""));
+    return left - right;
+  });
 
-if (!flowFiles.length) {
-  fail(`No lesson flow files found in ${presentationDir}`);
+const flowPaths = [];
+for (const themeDir of presentationThemeDirs) {
+  const dirPath = path.join(presentationRoot, themeDir.name);
+  const files = fs
+    .readdirSync(dirPath)
+    .filter((name) => name.endsWith("-flow.json"))
+    .sort();
+
+  for (const fileName of files) {
+    flowPaths.push(path.join(dirPath, fileName));
+  }
 }
 
-const lessons = flowFiles.map((name) =>
-  buildLesson(path.join(presentationDir, name))
-);
+if (!flowPaths.length) {
+  fail(`No lesson flow files found in ${presentationRoot}`);
+}
+
+const lessons = flowPaths.map((flowPath) => buildLesson(flowPath));
 
 const lessonIds = new Set();
 const lessonSlugs = new Set();
@@ -349,9 +439,13 @@ for (const lesson of lessons) {
   lessonSlugs.add(lesson.lesson_slug);
 }
 
-lessons.sort(
-  (a, b) => pageBounds(a.printed_page_range).from - pageBounds(b.printed_page_range).from
-);
+lessons.sort((a, b) => {
+  const pageDelta =
+    pageBounds(a.printed_page_range).from -
+    pageBounds(b.printed_page_range).from;
+  if (pageDelta !== 0) return pageDelta;
+  return a.lesson_id.localeCompare(b.lesson_id, "tr");
+});
 
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, JSON.stringify(lessons, null, 2) + "\n", "utf8");
