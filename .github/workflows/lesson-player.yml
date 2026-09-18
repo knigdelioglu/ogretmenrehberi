@@ -85,7 +85,7 @@ jobs:
             --disable-gpu \
             --window-size=1366,768 \
             --screenshot="$GITHUB_WORKSPACE/lesson-player-teacher.png" \
-            "http://127.0.0.1:4173/?step=s15-q1"
+            "http://127.0.0.1:4173/?lesson=T11-T01-KARAGOZ&step=s15-q1"
 
           "$CHROME" \
             --headless=new \
