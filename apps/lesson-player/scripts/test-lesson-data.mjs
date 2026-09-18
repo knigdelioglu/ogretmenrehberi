@@ -11,7 +11,7 @@ function assert(condition, message) {
 }
 
 assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
-assert(lessons.length >= 5, "Lesson catalog en az beş ders içermeli.");
+assert(lessons.length >= 6, "Lesson catalog en az altı ders içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -453,6 +453,50 @@ assert(y78Rubric, "s78 dereceli puanlama/kaynak sınırı adımı eksik.");
 assert(
   y78Rubric.answer === null && y78Rubric.layout === "reference",
   "s78 QR dereceli puanlama adımı cevap uydurmadan referans olarak kalmalı."
+);
+
+const degerlendirme = byLessonId.get("T11-T01-DEGERLENDIRME");
+assert(degerlendirme, "Tema değerlendirme dersi catalog içinde bulunamadı.");
+assert(
+  degerlendirme.lesson_slug === "degerlendirme",
+  "Tema değerlendirme lesson_slug doğru olmalı."
+);
+assert(
+  degerlendirme.coverage.steps === 13 &&
+    degerlendirme.coverage.source_records === 13 &&
+    degerlendirme.coverage.answer_entries === 13,
+  "Tema değerlendirme 13 adım / 13 source / 13 answer olmalı."
+);
+
+const degerlendirmeById = new Map(
+  degerlendirme.steps.map((step) => [step.id, step])
+);
+
+const dQ5 = degerlendirmeById.get("s81-q5");
+const dQ6 = degerlendirmeById.get("s81-q6");
+assert(dQ5 && dQ6, "s81 yaratıcı değerlendirme adımları eksik.");
+assert(
+  dQ5.answer?.entry_type === "performance_support" &&
+    dQ6.answer?.entry_type === "performance_support",
+  "s81 yaratıcı diyalog ve karşılaştırma performance_support kalmalı."
+);
+
+const dQ12 = degerlendirmeById.get("s83-q12");
+assert(dQ12, "s83 Evet/Hayır/Bilgi yok adımı eksik.");
+assert(
+  Object.keys(dQ12.answer?.answer_sections ?? {}).length === 8,
+  "s83 soru 12 sekiz değerlendirme cümlesinin tamamını korumalı."
+);
+assert(
+  dQ12.layout === "structure" && dQ12.density === "compact",
+  "s83 soru 12 projeksiyonda kompakt yapı görünümünde olmalı."
+);
+
+const dQ13 = degerlendirmeById.get("s83-q13");
+assert(dQ13, "s83 Olvido sorusu eksik.");
+assert(
+  dQ13.answer?.entry_type === "source_limited",
+  "Olvido dış video sorusu source_limited kalmalı."
 );
 
 console.log(
