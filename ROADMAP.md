@@ -224,8 +224,9 @@ Bir öğretmen 1. tema içinde yalnızca Kindle üzerinden, sürekli geri kaydı
 ### Hedef
 Kanonik veriyi sınıfta doğrudan yürütülebilen tam ekran bir ders arayüzüne dönüştürmek.
 
-### İlk pilot
-**11. sınıf 1. Tema — Karagöz / Yazıcı — basılı s.15–35**
+### Doğrulanmış dersler
+- **Karagöz / Yazıcı — s.15–35**
+- **Mektup / Âli’ye Mektuplar — s.36–52**
 
 ### İşler
 - [x] uygulama planını ve lesson-flow sözleşmesini oluştur
@@ -250,6 +251,9 @@ Ayrıntılı tasarım: [docs/LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md)
 Öğretmen Karagöz s.15–35 arasında EPUB'a dönmeden ilerleyebilmeli; ilgili source-index ve answer-bank kayıtlarından hiçbiri sessizce atlanamamalı.
 
 ---
+
+- [x] çoklu ders kataloğu ve ders seçici
+- [x] Mektup / Âli’ye Mektuplar s.36–52
 
 ## Faz 8 — 1. Tema entegrasyon ve kalite dondurması
 
