@@ -5,7 +5,7 @@
   "grade": 11,
   "theme_id": "TEMA_03",
   "theme_title": "YAŞAMIN İZİNDE",
-  "status": "PARTIAL_REBUILD",
+  "status": "COMPLETE_WITH_SOURCE_LIMITED",
   "quality_standard": "docs/ANSWER_BANK_QUALITY_STANDARD.md",
   "block_standard": "docs/BLOCK_AUTHORING_STANDARD.md",
   "source_policy": {
@@ -15,11 +15,11 @@
     "note": "Gerçek kitap sayfası nihai kontroldür. Tema 3 doğal pedagojik bloklar hâlinde yeniden üretilir; görsel/biçim bağımlı sorular gerçek sayfa üzerinden doğrulanır."
   },
   "coverage": {
-    "printed_page_range": "162-229",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 / Huzur + Metin Tahlili-2 / Biyografi-Tezkire + Edebiyat Atölyesi-1 / Konuşma + Metin Tahlili-3 / Dinleme-İzleme + Edebiyat Atölyesi-2 / Yazma",
-    "entry_count": 130,
-    "source_limited_entries": 19,
-    "next_printed_page": 230
+    "printed_page_range": "162-235",
+    "scope": "3. Tema: Yaşamın İzinde — temaya başlama, Huzur, biyografi-tezkire, konuşma, radyo tiyatrosu dinleme/izleme, yazma ve tema sonu ölçme-değerlendirme",
+    "entry_count": 146,
+    "source_limited_entries": 21,
+    "next_scope": "TEMA_04"
   },
   "parts": [
     {
@@ -69,6 +69,10 @@
     {
       "path": "answer-bank/part-12-pages-225-229.json",
       "entries": 6
+    },
+    {
+      "path": "answer-bank/part-13-pages-230-235.json",
+      "entries": 16
     }
   ],
   "rendering_contract": {
