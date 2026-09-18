@@ -390,3 +390,18 @@ Karagöz pilotu tamamlanmış sayılırsa:
 8. Klavyeyle ders yürütülebilir.
 9. Uygulama çevrimdışı çalışır.
 10. İçerik düzeltildiğinde generated veri yeniden üretilebilir.
+
+
+## 1. Tema tam kapsam durumu
+
+1. Tema Lesson Player kapsamı tema açılışından ölçme-değerlendirme sonuna kadar tamamlanmıştır:
+
+- basılı sayfa aralığı: s.12–83
+- ders sayısı: 7
+- ders adımı: 176
+- source-index kaydı: 129 / 129
+- answer-bank kaydı: 151 / 151
+- katalog sırası: basılı kitap sayfa sırası
+- Chrome görsel QA: temsilî ekranlar CI artifact'i olarak üretilir
+
+Bu toplamlar `test-lesson-data.mjs` içinde kalite kapısı olarak sabitlenmiştir.
