@@ -233,7 +233,7 @@ assert(
 const speaking = byLessonId.get("T11-T01-KONUSMA");
 assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
 assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
-assert(speaking.coverage.steps === 11, "Konuşma dersi 11 adım olmalı.");
+assert(speaking.coverage.steps === 13, "Konuşma dersi 13 adım olmalı.");
 assert(
   speaking.coverage.source_records === 7,
   "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
@@ -267,18 +267,29 @@ assert(
   "s54 planlama altı zorunlu hazırlık adımını taşımalı."
 );
 
-const s57Performance = speakingById.get("s57-performance");
-assert(s57Performance, "Konuşma s57 canlı canlandırma adımı eksik.");
+const s57Performance1 = speakingById.get("s57-performance-1");
+const s57Performance2 = speakingById.get("s57-performance-2");
+assert(s57Performance1 && s57Performance2, "Konuşma s57 iki ekranı da bulunmalı.");
 assert(
-  s57Performance.content?.items?.length === 14,
-  "s57 canlı canlandırma 14 uygulama ölçütünü korumalı."
+  (s57Performance1.content?.items?.length ?? 0) +
+    (s57Performance2.content?.items?.length ?? 0) === 14,
+  "s57 canlı canlandırma 14 uygulama ölçütünü iki ekranda korumalı."
+);
+assert(
+  s57Performance2.answer?.question_id === "T1-P57-PERF01",
+  "s57 performans desteği ikinci uygulama ekranında erişilebilir olmalı."
 );
 
-const s58Assessment = speakingById.get("s58-self-assessment");
-assert(s58Assessment, "Konuşma s58 öz değerlendirme adımı eksik.");
+const s58Assessment1 = speakingById.get("s58-self-assessment-1");
+const s58Assessment2 = speakingById.get("s58-self-assessment-2");
 assert(
-  s58Assessment.content?.items?.length === 10,
-  "s58 öz değerlendirme 10 görünür ölçütü korumalı."
+  s58Assessment1 && s58Assessment2,
+  "Konuşma s58 öz değerlendirme iki ekranı da bulunmalı."
+);
+assert(
+  (s58Assessment1.content?.items?.length ?? 0) +
+    (s58Assessment2.content?.items?.length ?? 0) === 10,
+  "s58 öz değerlendirme 10 görünür ölçütü iki ekranda korumalı."
 );
 
 const s58Feedback = speakingById.get("s58-feedback");
