@@ -13,7 +13,8 @@ import type {
   LayoutKind,
   LessonData,
   LessonStep,
-  RevealKey
+  RevealKey,
+  StepContent
 } from "./types";
 
 const lesson = lessonJson as LessonData;
@@ -30,6 +31,7 @@ type StepOverride = {
   display_prompt?: string;
   layout?: LayoutKind;
   reveal_order?: RevealKey[];
+  content?: StepContent | null;
 };
 
 type StepOverrides = Record<string, StepOverride>;
@@ -97,7 +99,8 @@ function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
     ...step,
     display_prompt: override.display_prompt ?? step.display_prompt,
     layout: override.layout ?? step.layout,
-    reveal_order: override.reveal_order ?? step.reveal_order
+    reveal_order: override.reveal_order ?? step.reveal_order,
+    content: override.content !== undefined ? override.content : step.content
   };
 }
 
@@ -307,8 +310,8 @@ export default function App() {
         exported.reveal = effective.reveal_order;
       }
 
-      if (original.content) {
-        exported.content = original.content;
+      if (effective.content) {
+        exported.content = effective.content;
       }
 
       return exported;
@@ -605,6 +608,7 @@ export default function App() {
           }
           onLayoutChange={(value) => updateStepOverride(step.id, { layout: value })}
           onRevealMove={(key, delta) => moveRevealLayer(step.id, key, delta)}
+          onContentChange={(content) => updateStepOverride(step.id, { content })}
           canMoveUp={index > 0}
           canMoveDown={index < effectiveSteps.length - 1}
           onMoveUp={() => moveCurrentStep(-1)}
