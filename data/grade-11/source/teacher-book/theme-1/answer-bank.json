@@ -14,10 +14,10 @@
     "note": "Gerçek kitap sayfası nihai kontroldür; eski soru envanteri eksik/özetlenmiş kayıtlar içerdiği için bu blok kitap sayfalarından yeniden indekslenmiştir."
   },
   "coverage": {
-    "printed_page_range": "14-57",
-    "scope": "Temaya Başlarken + Metin Tahlili-1 (Karagöz / Yazıcı) + Metin Tahlili-2 (Mektup / Âli'ye Mektuplar + Dilekçe) + Edebiyat Atölyesi-1 (Konuşma / Sözlü İletişim Engelleri)",
-    "entry_count": 88,
-    "next_printed_page": 59
+    "printed_page_range": "14-73",
+    "scope": "Temaya Başlarken + Metin Tahlili-1 (Karagöz / Yazıcı) + Metin Tahlili-2 (Mektup / Âli'ye Mektuplar + Dilekçe) + Edebiyat Atölyesi-1 (Konuşma) + Metin Tahlili-3 (Dinleme / İzleme)",
+    "entry_count": 123,
+    "next_printed_page": 74
   },
   "parts": [
     {
@@ -83,6 +83,22 @@
     {
       "path": "answer-bank/part-13-pages-53-57.json",
       "entries": 9
+    },
+    {
+      "path": "answer-bank/part-14-pages-59-63.json",
+      "entries": 10
+    },
+    {
+      "path": "answer-bank/part-15-pages-64-67.json",
+      "entries": 13
+    },
+    {
+      "path": "answer-bank/part-16-pages-68-71.json",
+      "entries": 7
+    },
+    {
+      "path": "answer-bank/part-17-pages-72-73.json",
+      "entries": 5
     }
   ],
   "rendering_contract": {
