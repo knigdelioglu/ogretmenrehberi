@@ -563,16 +563,16 @@ export default function App() {
             </label>
           ) : null}
           <button type="button" onClick={() => setOutlineOpen((value) => !value)}>
-            {outlineOpen ? "Akışı kapat" : "Ders akışı"}
+            {outlineOpen ? "Akış" : "Akış"}
           </button>
           <button type="button" onClick={() => setEditorOpen((value) => !value)}>
             {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
           </button>
           <button type="button" onClick={openProjectionWindow}>
-            Öğrenci ekranını aç
+            Öğrenci ekranı
           </button>
           <button type="button" onClick={togglePresentationMode}>
-            Bu ekranda projeksiyon
+            Projeksiyon
           </button>
           <button type="button" onClick={() => void toggleFullscreen()}>
             Tam ekran
