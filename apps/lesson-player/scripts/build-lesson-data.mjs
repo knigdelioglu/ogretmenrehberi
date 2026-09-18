@@ -128,7 +128,10 @@ function resolveDensity(step) {
 
 function resolveDisplayPrompt(step, source, answer) {
   if (step.prompt?.trim()) {
-    return { text: step.prompt.trim(), mode: "FLOW_OVERRIDE" };
+    return {
+      text: step.prompt.trim(),
+      mode: step.prompt_mode ?? "FLOW_OVERRIDE"
+    };
   }
 
   const sourceIsUnambiguous =
