@@ -306,7 +306,7 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
 ### Sıra
 - [~] 2. Tema — Kültür Yolculuğu
   - [x] Tema Girişi / Temaya-Konuya Başlarken — s.84–88
-  - [ ] Türk Dilleri + Oğulla Buluşma — s.89–107
+  - [x] Türk Dilleri + Oğulla Buluşma — s.89–107
   - [ ] Eski İstanbul’dan Çizgiler / Anı — s.108–112
   - [ ] Orhun Abideleri — s.113–124
   - [ ] Dîvânu Lugâti’t-Türk — s.125–128
@@ -425,4 +425,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 2. Tema — Türk Dilleri + Oğulla Buluşma, basılı s.89–107** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
+**11. sınıf 2. Tema — Eski İstanbul’dan Çizgiler / Anı + süreç değerlendirmesi, basılı s.108–112** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
