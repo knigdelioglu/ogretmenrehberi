@@ -164,7 +164,7 @@ Sonuç: **0 boş opsiyonel alan**.
 
 Dondurulmuş answer-bank'te:
 
-- guidance bulunan kayıt: 57
+- guidance bulunan kayıt: 56
 - explanation bulunan kayıt: 10
 - evidence_quotes bulunan kayıt: 18
 - structured answer_sections bulunan kayıt: 24
