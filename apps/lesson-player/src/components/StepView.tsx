@@ -20,6 +20,7 @@ const taskTypeLabels: Record<string, string> = {
   ACTIVITY: "ETKİNLİK",
   PERFORMANCE: "UYGULAMA",
   ASSESSMENT: "DEĞERLENDİRME",
+  VOCABULARY: "SÖZ VARLIĞI",
   VOCABULARY: "SÖZ VARLIĞI"
 };
 
