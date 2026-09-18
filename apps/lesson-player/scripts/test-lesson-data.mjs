@@ -164,12 +164,13 @@ const mektupOrderedIds = mektup.steps.map((step) => step.id);
 const s36q1 = mektupById.get("s36-q1");
 assert(s36q1, "Mektup s36-q1 bulunamadı.");
 assert(
-  s36q1.display_prompt === "Mektup nedir?",
-  "Mektup s36-q1 source-index sorusunu kullanmalı."
+  s36q1.display_prompt ===
+    "Metinden hareketle “mektup” kelimesinin size neler ifade ettiğini hayatınızdan örnekler vererek açıklayınız.",
+  "Mektup s36-q1 kitap soru metnini kullanmalı."
 );
 assert(
-  s36q1.display_prompt_mode === "VERIFIED_SUMMARY",
-  "Mektup s36-q1 doğrulanmış özet olarak işaretlenmeli."
+  s36q1.display_prompt_mode === "VERBATIM_SHORT",
+  "Mektup s36-q1 kitap soru metni olarak işaretlenmeli."
 );
 
 const s37q1 = mektupById.get("s37-q1");
