@@ -71,6 +71,8 @@ Bu sayede öğrenciler “Cevabı göster” gibi öğretmen UI öğelerini gör
 
 - ekranda gösterilen soru/başlığı canlı değiştirir,
 - layout türünü canlı değiştirir,
+- adımı yukarı/aşağı taşıyarak ders sırasını değiştirir,
+- yönlendirme/cevap/kanıt/açıklama katmanlarının açılma sırasını değiştirir,
 - değişiklikleri `localStorage` içinde saklar,
 - yalnız ilgili adımı sıfırlayabilir,
 - düzenlenmiş yapıyı `karagoz-flow.json` olarak dışa aktarabilir.
