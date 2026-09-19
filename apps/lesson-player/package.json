@@ -9,7 +9,8 @@
     "dev": "npm run data && vite",
     "build": "npm run data && npm run test:data && npm run test:runtime && tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test:runtime": "node scripts/test-runtime-contract.mjs"
+    "test:runtime": "node scripts/test-runtime-contract.mjs",
+    "test:browser": "node scripts/test-browser-runtime.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",
