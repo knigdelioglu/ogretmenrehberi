@@ -93,6 +93,14 @@ export function restoreOverrideEnvelope(raw, signature, validStepIds) {
     ) {
       return { overrides: parsed.overrides, needsBackup: false };
     }
+    // Empty legacy/stale preferences carry no user edits and need no warning.
+    if (parsed && !Array.isArray(parsed) && typeof parsed === "object") {
+      const values = parsed.overrides && typeof parsed.overrides === "object" &&
+        !Array.isArray(parsed.overrides) ? parsed.overrides : parsed;
+      if (Object.keys(values).length === 0) {
+        return { overrides: {}, needsBackup: false };
+      }
+    }
     // Never silently reapply unversioned, stale, or malformed edits over updated data.
     return { overrides: {}, needsBackup: true };
   } catch {
@@ -126,4 +134,13 @@ export function studentVisibleOverrides(overrides) {
       return [id, visible];
     })
   );
+}
+
+export function projectionLessonUrl(href, lessonId, stepId) {
+  const url = new URL(href);
+  url.searchParams.set("display", "1");
+  url.searchParams.set("lesson", lessonId);
+  if (stepId) url.searchParams.set("step", stepId);
+  else url.searchParams.delete("step");
+  return url.toString();
 }
