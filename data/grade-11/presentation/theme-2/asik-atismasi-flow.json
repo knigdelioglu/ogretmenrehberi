@@ -1,0 +1,341 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-ASIK-ATISMASI",
+  "lesson_slug": "asik-atismasi",
+  "title": "Âşık Atışması",
+  "subtitle": "Dinleme / İzleme · Âşıklık Geleneği · 2. Tema",
+  "printed_page_range": "136-147",
+  "required_source_range": {
+    "from": "T02-S0116",
+    "to": "T02-S0137"
+  },
+  "steps": [
+    {
+      "id": "s136-q1",
+      "source_record_id": "T02-S0116",
+      "answer_id": "T2-P136-Q01",
+      "layout": "question",
+      "prompt": "Ozanların ve âşıkların sanatlarını icra etmede ve günlük hayatlarında sazın yerini ve önemini açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s136-q2",
+      "source_record_id": "T02-S0117",
+      "answer_id": "T2-P136-Q02",
+      "layout": "question",
+      "prompt": "“Sen petek misâli Veysel de arı” dizesini sanat-sanatçı ilişkisi bakımından açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s137-plan",
+      "source_record_id": "T02-S0118",
+      "answer_id": "T2-P137-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Âşık Atışması için dinleme / izleme amacınızı ve stratejinizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her dizeyi yazmaya çalışmak yerine anahtar kelime ve kısa ifade notları kullanın.",
+        "items": [
+          "Dinleme / izleme amacınızı belirleyin.",
+          "Amaca uygun strateji seçin.",
+          "Başlık ve görselden içerik ve tür tahmini yapın.",
+          "Ses, ekran ve dikkat dağıtıcı ortam engellerini giderin."
+        ]
+      }
+    },
+    {
+      "id": "s138-q1",
+      "source_record_id": "T02-S0119",
+      "answer_id": "T2-P138-Q01",
+      "layout": "question",
+      "prompt": "Dinleyeceğiniz / izleyeceğiniz Âşık Atışması'nın hangi geleneğin ürünü olduğunu tahmin ediniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s138-q2",
+      "source_record_id": "T02-S0120",
+      "answer_id": "T2-P138-Q02",
+      "layout": "question",
+      "prompt": "Âşıkların sanatsal güçlerinin dayandığı temel unsurları açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s138-rules",
+      "source_record_id": "T02-S0121",
+      "answer_id": "T2-P138-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Etkin dinleme / izleme kurallarını uygulayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Dikkatlice ve anlayarak dinleyin.",
+          "Sabır ve saygıyla, ön yargıdan uzak durun.",
+          "Diğer dinleyicileri rahatsız etmeyin.",
+          "Yorum veya soru için söyleyişin tamamlanmasını bekleyin.",
+          "Dikkat dağıtıcı davranışlardan kaçının."
+        ]
+      }
+    },
+    {
+      "id": "s139-checklist",
+      "source_record_id": "T02-S0121",
+      "answer_id": "T2-P139-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Dinleme / izleme kontrol listenizi gerçek performansınıza göre tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Dinleme / izleme amacımı belirledim.",
+          "Metinle ilgili önceki bilgilerimi gözden geçirdim.",
+          "Dikkatlice ve anlayarak dinledim / izledim.",
+          "Sabır ve saygıyla, ön yargıdan uzak dinledim / izledim.",
+          "Yorum veya soru için anlatımın bitmesini bekledim.",
+          "Diğer dinleyicileri rahatsız edecek davranışlardan kaçındım."
+        ]
+      }
+    },
+    {
+      "id": "s139-observation",
+      "source_record_id": "T02-S0121",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Öğretmen gözlemi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğretmen, dinleme / izleme sürecini kitapta verilen Gözlem Formu doğrultusunda değerlendirir.",
+        "sections": [
+          {
+            "title": "Gözlenebilir davranış",
+            "body": "Amaç belirleme, dikkat, sabır, saygı, sözün bitmesini bekleme ve sınıf dinleme ortamına uyum gibi davranışları süreç içinde gözleyin."
+          },
+          {
+            "title": "Geri bildirim",
+            "body": "Öğrencinin kişiliğini değil, gözlenen dinleme davranışını ve bir sonraki çalışmada geliştirebileceği somut hedefi ifade edin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s140-listen",
+      "source_record_id": "T02-S0122",
+      "layout": "process",
+      "density": "large",
+      "prompt": "Âşık Atışması'nı not alarak dinleyiniz / izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin.",
+        "items": [
+          "Bir âşığın diğerinin sözüne nasıl cevap verdiğini not edin.",
+          "Mizah, benzetme ve söz oyunu örneklerini işaretleyin.",
+          "Saz-söz ilişkisini ve ritmi gözleyin.",
+          "Beden dili, ses tonu ve dinleyiciyle etkileşim için kısa notlar alın."
+        ]
+      }
+    },
+    {
+      "id": "s140-vocabulary",
+      "source_record_id": "T02-S0122",
+      "answer_id": "T2-P140-VOC01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çağ, kahır, canan, saban ve sine kelimelerini videodaki bağlamlarından hareketle anlamlandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce geçtiği dizeyi not edin, sonra bağlamdan tahmin yapın; en son sözlükle kontrol edin.",
+        "items": [
+          "çağ",
+          "kahır",
+          "canan",
+          "saban",
+          "sine"
+        ]
+      }
+    },
+    {
+      "id": "s141-q1",
+      "source_record_id": "T02-S0123",
+      "answer_id": "T2-P141-Q01",
+      "layout": "question",
+      "prompt": "Âşıklık geleneğinin korunması ve yaşatılması için neler yapılabileceğini açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s141-q2",
+      "source_record_id": "T02-S0124",
+      "answer_id": "T2-P141-Q02",
+      "layout": "question",
+      "prompt": "Âşıklık geleneğinin sürdürülmesinin Türk kültür mirası açısından önemini açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s142-q1",
+      "source_record_id": "T02-S0125",
+      "answer_id": "T2-P142-Q01",
+      "layout": "question",
+      "prompt": "Atışmanın âşıklık geleneğindeki yerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s142-q2",
+      "source_record_id": "T02-S0126",
+      "answer_id": "T2-P142-Q02",
+      "layout": "question",
+      "prompt": "Atışmadaki benzetmeleri belirleyip atışmaya katkılarını videodan örneklerle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s142-humor",
+      "source_record_id": "T02-S0127",
+      "answer_id": "T2-P142-PERF01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Âşık atışmalarındaki mizah ile günlük hayattaki mizahı karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s143-language",
+      "source_record_id": "T02-S0128",
+      "answer_id": "T2-P143-Q02",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Günlük dil ile atışmadaki dilin benzerlik ve farklılıklarını videodaki dizelerle karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s143-q3",
+      "source_record_id": "T02-S0128",
+      "answer_id": "T2-P143-Q03",
+      "layout": "question",
+      "prompt": "Âşıkların dili kullanma biçimi hakkında çıkarımda bulununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s143-q4",
+      "source_record_id": "T02-S0128",
+      "answer_id": "T2-P143-Q04",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Münacaat şiiri ile âşık şiirlerinin dilini karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s143-preference",
+      "source_record_id": "T02-S0129",
+      "answer_id": "T2-P143-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Âşık atışmasını değerlendirirken kullanacağınız beğeni ölçütlerini oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Söz varlığının zenginliği",
+          "Doğaçlama gücü",
+          "Mizah",
+          "Uyak ve ritim",
+          "Karşılıklı cevapların uygunluğu",
+          "Saz-söz uyumu",
+          "Söyleyiş tarzı ve dinleyici etkisi"
+        ]
+      }
+    },
+    {
+      "id": "s144-q1",
+      "source_record_id": "T02-S0130",
+      "answer_id": "T2-P144-Q01",
+      "layout": "question",
+      "prompt": "Usta-çırak geleneğinde “saygı” değerinin nasıl görünür olduğunu açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s144-q2",
+      "source_record_id": "T02-S0131",
+      "answer_id": "T2-P144-Q02",
+      "layout": "question",
+      "prompt": "Dilin ve kültürel belleğin korunmasında âşıkların rolünü açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s144-q3",
+      "source_record_id": "T02-S0132",
+      "answer_id": "T2-P144-Q03",
+      "layout": "question",
+      "prompt": "Âşıkların söz oyunlarındaki ustalığını usta-çırak ilişkisi bağlamında yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s144-map",
+      "source_record_id": "T02-S0133",
+      "answer_id": "T2-P144-MAP01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Âşık atışmasının çok modlu unsurlarını videodaki gözlemlerinizle tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Mekân",
+          "Beden dili",
+          "Söyleyiş tarzı",
+          "Estetik"
+        ]
+      }
+    },
+    {
+      "id": "s145-hats",
+      "source_record_id": "T02-S0134",
+      "answer_id": "T2-P145-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Âşık atışmasını altı şapka tekniğiyle değerlendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s146-viewpoints",
+      "source_record_id": "T02-S0135",
+      "answer_id": "T2-P146-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Atışmaların neden şiir biçiminde söylendiğine ilişkin yargıları görüş geliştirme tekniğiyle değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her yargı için ilk görüşünüzü seçin, gerekçelendirin, karşı görüşleri dinleyip son kararınızı yeniden yazın.",
+        "items": [
+          "Şiir, ozanın duygu ve düşüncelerini etkili ifade etmesini sağlar.",
+          "Halk şiirinde saz ve şiir iç içedir.",
+          "Ölçü ve uyak doğaçlama sırasında ritim ve kalıp sağlar.",
+          "Şiir biçimi dinleyicinin anlamasını ve hatırlamasını kolaylaştırabilir."
+        ]
+      }
+    },
+    {
+      "id": "s147-q1",
+      "source_record_id": "T02-S0136",
+      "answer_id": "T2-P147-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Atışmaya değer katan unsurlar ile söyleyicinin metne katkısını gerçek performanstan hareketle değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s147-reflection",
+      "source_record_id": "T02-S0137",
+      "answer_id": "T2-P147-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Âşık Atışması — yansıtıcı yazı",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Atışmadan ne anladım?",
+          "Atışmada neleri fark ettim?",
+          "Bu temada öğrendiklerim hayatıma neler kattı?",
+          "Neyi farklı yapabilirdim?",
+          "Ek öğrenmeye ihtiyacım var mı?"
+        ]
+      }
+    }
+  ]
+}

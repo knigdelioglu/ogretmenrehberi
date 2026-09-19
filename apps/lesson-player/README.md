@@ -17,7 +17,7 @@ Mevcut doğrulanmış dersler:
 
 1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
-2. Tema üretimi küçük doğal bloklarla ilerler. Şu anda **s.84–112** aralığı üç doğal blokta tamamlanmıştır. Mevcut Tema 2 toplamı **6 ders / 132 adım / 115 source / 122 answer** kaydıdır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
+2. Tema üretimi küçük doğal bloklarla ilerler. Şu anda **s.84–112** aralığı üç doğal blokta tamamlanmıştır. Mevcut Tema 2 toplamı **7 ders / 159 adım / 137 source / 147 answer** kaydıdır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
 
 Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
