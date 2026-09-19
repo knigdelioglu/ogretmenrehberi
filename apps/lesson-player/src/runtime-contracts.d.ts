@@ -24,6 +24,21 @@ export function restoreOverrideEnvelope<T extends Record<string, object>>(
   validStepIds: string[]
 ): { overrides: T; needsBackup: boolean };
 
+export function orderEnvelope(
+  signature: string,
+  order: string[]
+): {
+  schemaVersion: number;
+  canonicalSignature: string;
+  order: string[];
+};
+
+export function restoreOrderEnvelope(
+  raw: string | null,
+  signature: string,
+  canonicalIds: string[]
+): { order: string[]; needsBackup: boolean };
+
 export function restoredStepIndex(
   orderedIds: string[],
   requestedStepId: string | null,
