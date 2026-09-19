@@ -324,7 +324,9 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Huzur: kahramanın dili, yapı, karakterler ve üslup çözümleme — s.186–188
   - [x] Huzur: üç çatışma parçası, dönem dili, yedi cümle, yazım ve sosyal bilimler — s.189–191
   - [x] Huzur: süreç değerlendirme çalışma kâğıdı ve çıkış kartı — s.192–193
-  - [ ] Metin Tahlili-2 / Anlama: biyografi ve tezkire — s.194'ten itibaren
+  - [x] Metin Tahlili-2: biyografi hazırlığı / Mehmet Akif Ersoy ana metni ve Söz Varlığımız — s.194–198
+  - [ ] Metin Tahlili-2: Mehmet Akif Ersoy soruları, çalışma kâğıdı — s.199–201
+  - [ ] Metin Tahlili-2: biyografi/tezkire devamı — s.202'den itibaren
 - [ ] 4. Tema — Hayatın Aynası
 
 Her tema için aynı pipeline:
@@ -435,4 +437,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** Huzur s.164–193 doğal bloklar hâlinde tamamlandı. Sıradaki doğal blok s.194'ten başlayan biyografi / tezkire Konuya Başlarken ve okuma hazırlığıdır; kitaba göre küçük bölüm belirlenerek sürdürülmeli. Tema 3 mevcut: 9 ders / 147 adım / 56 VERIFIED kaynak kullanımı / 58 answer (s.178–179 kaynağı iki blokta ortaktır). Tema 1 ve 2 kalite kapsamını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** Huzur s.164–193 tamamlandı; biyografi Mehmet Akif giriş/okuma/söz varlığı s.194–198 hazır. Sıradaki doğal blok s.199–201 Mehmet Akif metin soruları ve çalışma kâğıdı. Tema 3 mevcut: 10 ders / 165 adım / 61 VERIFIED kaynak kullanımı / 62 answer (s.178–179 kaynağı iki blokta ortaktır). Tema 1 ve 2 kalite kapsamını korumak.
