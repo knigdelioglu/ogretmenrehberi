@@ -1,0 +1,325 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-ORHUN",
+  "lesson_slug": "orhun-abideleri",
+  "title": "Orhun Abideleri",
+  "subtitle": "Kül Tigin Âbidesi · 2. Tema",
+  "printed_page_range": "113-124",
+  "required_source_range": {
+    "from": "T02-S0058",
+    "to": "T02-S0087"
+  },
+  "steps": [
+    {
+      "id": "s113-q1",
+      "source_record_id": "T02-S0058",
+      "answer_id": "T2-P113-Q01",
+      "layout": "question",
+      "prompt": "Orhun Vadisi videosunda anlatılan bölgeyle ilgili bildiklerinizi, videoda gerçekten gördüğünüz ayrıntılarla ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s113-q2",
+      "source_record_id": "T02-S0059",
+      "answer_id": "T2-P113-Q02",
+      "layout": "question",
+      "prompt": "Orhun Abidelerinin neden yazılmış olabileceğini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s113-q3",
+      "source_record_id": "T02-S0060",
+      "answer_id": "T2-P113-Q03",
+      "layout": "question",
+      "prompt": "Orhun Abidelerinin Türk dili, tarihi ve kültürü açısından önemini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s113-q4",
+      "source_record_id": "T02-S0061",
+      "answer_id": "T2-P113-Q04",
+      "layout": "question",
+      "prompt": "Yazıtların Çince yüzünün Türk dili ve tarih araştırmalarına sağlayabileceği katkıları açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s113-q5",
+      "source_record_id": "T02-S0062",
+      "answer_id": "T2-P113-Q05",
+      "layout": "question",
+      "prompt": "Kaplumbağa figürü ile “bengü taş” düşüncesini kalıcılık ve ebediyet kavramlarıyla ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s114-q1",
+      "source_record_id": "T02-S0063",
+      "answer_id": "T2-P114-Q01",
+      "layout": "question",
+      "prompt": "Kül Tigin Âbidesi için okuma amacınızı belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s114-q2",
+      "source_record_id": "T02-S0063",
+      "answer_id": "T2-P114-Q02",
+      "layout": "question",
+      "prompt": "Başlık ve görselden hareketle metnin içeriğine ve türüne dair tahminde bulununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s114-strategy",
+      "source_record_id": "T02-S0063",
+      "answer_id": "T2-P114-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Kül Tigin Âbidesi için etkili bir okuma stratejisi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Taş yazıtın kısa ve yoğun anlatımında anahtar kavramları, tekrarları ve hitapları işaretleyin.",
+        "items": [
+          "Bilge Kağan'ın kimlere seslendiğini ve hangi olaylardan söz ettiğini belirleyin.",
+          "Millet, il, töre, Ötüken ve Kül Tigin gibi anahtar kavramları işaretleyin.",
+          "Öğüt, uyarı, tarihî bilgi ve duygu bildiren bölümleri farklı işaretlerle ayırın.",
+          "Güney, doğu ve kuzey cephelerindeki parçaların ortak amaca nasıl bağlandığını not edin."
+        ]
+      }
+    },
+    {
+      "id": "s114-115-reading",
+      "source_record_id": "T02-S0063",
+      "layout": "process",
+      "density": "comfortable",
+      "prompt": "Kül Tigin Âbidesi — yönlendirilmiş okuma",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana metni ders kitabından okuyun; Lesson Player metni yeniden yayımlamak yerine okuma sürecini yönetir.",
+        "items": [
+          "Doğrudan hitap edilen kişi ve toplulukları belirleyin.",
+          "Tarihî bilgi ile öğüt/uyarı niteliğindeki bölümleri ayırın.",
+          "Bilge Kağan'ın devlet, millet ve töre ilişkisini nasıl kurduğunu izleyin.",
+          "Kül Tigin'in ölümüyle ilgili bölümde tarihî kayıt ile kişisel yasın nasıl birleştiğine dikkat edin."
+        ]
+      }
+    },
+    {
+      "id": "s116-vocabulary",
+      "source_record_id": "T02-S0064",
+      "answer_id": "T2-P116-VOC01",
+      "layout": "vocabulary",
+      "density": "compact",
+      "prompt": "Ecdat, yağız, kılmak, il, şad ve töre kelimelerini metindeki bağlamlarıyla eşleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s117-q1",
+      "source_record_id": "T02-S0065",
+      "answer_id": "T2-P117-Q01",
+      "layout": "question",
+      "prompt": "Bilge Kağan bu abidede söyledikleriyle neyi amaçlamış olabilir? Açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s117-q2",
+      "source_record_id": "T02-S0066",
+      "answer_id": "T2-P117-Q02",
+      "layout": "question",
+      "prompt": "“Her ne sözüm varsa ebedî taşa vurdum.” ifadesini yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s117-q3",
+      "source_record_id": "T02-S0067",
+      "answer_id": "T2-P117-Q03",
+      "layout": "question",
+      "prompt": "Türk milleti ve beylere verilen öğütleri belirleyip günümüzdeki geçerliliğini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s117-bilge",
+      "source_record_id": "T02-S0068",
+      "answer_id": "T2-P117-BILGE01",
+      "layout": "question",
+      "prompt": "Metinlerden hareketle Bilge Kağan'ın tarihî kişiliği ve yönetici özellikleri hakkında çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s118-rhetoric",
+      "source_record_id": "T02-S0069",
+      "answer_id": "T2-P118-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metinden deyim, benzetme, tezat, istifham ve seslenme örneklerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s119-compare",
+      "source_record_id": "T02-S0070",
+      "answer_id": "T2-P119-COMP01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Oğulla Buluşma ile Kül Tigin Âbidesi'ni içerik, tür, dönem, zihniyet, üslup ve ileti bakımından karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s119-q1",
+      "source_record_id": "T02-S0071",
+      "answer_id": "T2-P119-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "İki metindeki gerçeklik anlayışını karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s120-q2",
+      "source_record_id": "T02-S0072",
+      "answer_id": "T2-P120-Q02",
+      "layout": "question",
+      "prompt": "İki metnin yazılış amaçlarının tür ve anlatım tercihlerine etkisini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s120-q3",
+      "source_record_id": "T02-S0073",
+      "answer_id": "T2-P120-Q03",
+      "layout": "question",
+      "prompt": "Dil, kültür ve tarih birliğinin millet hayatındaki önemini Orhun örneğiyle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s121-q1",
+      "source_record_id": "T02-S0074",
+      "answer_id": "T2-P121-Q01",
+      "layout": "question",
+      "prompt": "Bilge Kağan'ın Ötüken'de kalma öğüdünü konargöçer hayat bağlamında değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s121-q2",
+      "source_record_id": "T02-S0075",
+      "answer_id": "T2-P121-Q02",
+      "layout": "question",
+      "prompt": "Yerleşik ve konargöçer hayatın devletin uzun ömürlülüğü ve gelişimi üzerindeki etkisini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s121-q3",
+      "source_record_id": "T02-S0076",
+      "answer_id": "T2-P121-Q03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kül Tigin Âbidesi'ndeki anlatıcının özelliklerini ve amaçlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s122-q2",
+      "source_record_id": "T02-S0077",
+      "answer_id": "T2-P122-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metnin içerik, yapı, dil ve anlatım özelliklerinin yazıldığı dönem ve toplumla ilişkisini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s122-q3",
+      "source_record_id": "T02-S0078",
+      "answer_id": "T2-P122-Q03",
+      "layout": "question",
+      "prompt": "Metnin bölümleri arasındaki anlam bütünlüğünü, tutarlılığını ve yazılış amacına uygunluğunu değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s122-q4",
+      "source_record_id": "T02-S0079",
+      "answer_id": "T2-P122-Q04",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metindeki bilgi verme, ikna etme, sorgulatma, yönlendirme ve anma amaçlarını örneklerle belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s123-q5",
+      "source_record_id": "T02-S0080",
+      "answer_id": "T2-P123-Q05",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kül Tigin Âbidesi'nin dil ve anlatım özelliklerini verilen ölçütlere göre tespit ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s123-y1",
+      "source_record_id": "T02-S0081",
+      "answer_id": "T2-P123-Y01",
+      "layout": "question",
+      "prompt": "Metnin önceki yıllarda öğrendiğiniz öğretici metin türlerinden hangileriyle benzerlik gösterdiğini gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s123-y2",
+      "source_record_id": "T02-S0082",
+      "answer_id": "T2-P123-Y02",
+      "layout": "question",
+      "prompt": "Söz varlığı ve üslup seçimlerinin nedenlerini ve metne etkisini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s123-y3",
+      "source_record_id": "T02-S0083",
+      "answer_id": "T2-P123-Y03",
+      "layout": "question",
+      "prompt": "Metnin içerik, yapı, dil ve üslup unsurlarının birbiriyle uyumunu değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s124-y4",
+      "source_record_id": "T02-S0084",
+      "answer_id": "T2-P124-Y04",
+      "layout": "question",
+      "prompt": "Söylev, anı ve tarihî belge özelliklerinin metnin üslubuna etkisini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s124-y5",
+      "source_record_id": "T02-S0085",
+      "answer_id": "T2-P124-Y05",
+      "layout": "question",
+      "prompt": "Kül Tigin'in ölümü ve yas anlatısından dönemin kültürüne ilişkin çıkarımlarda bulununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s124-values",
+      "source_record_id": "T02-S0086",
+      "answer_id": "T2-P124-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kül Tigin Âbidesi'ndeki millî, manevi ve evrensel değerleri sınıflandırınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Üç grup değerleri farklı başlıklardan incelesin; her sınıflandırmayı metin kanıtıyla gerekçelendirin.",
+        "items": [
+          "Birinci grup: millî değerler",
+          "İkinci grup: manevi değerler",
+          "Üçüncü grup: evrensel değerler"
+        ]
+      }
+    },
+    {
+      "id": "s124-social-sciences",
+      "source_record_id": "T02-S0087",
+      "answer_id": "T2-P124-PERF02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Orhun Abidelerini tarih, coğrafya ve sosyolojiyle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ders dışı araştırma s.124'te başlar ve s.125'te devam eder.",
+        "items": [
+          "Birinci grup: Orhun Abideleri — tarih ilişkisi",
+          "İkinci grup: Orhun Abideleri — coğrafya ilişkisi",
+          "Üçüncü grup: Orhun Abideleri — sosyoloji ilişkisi",
+          "Bilge Kağan ve Tonyukuk yazıtlarından da yararlanıp bulguları metin örnekleriyle sunun."
+        ]
+      }
+    }
+  ]
+}
