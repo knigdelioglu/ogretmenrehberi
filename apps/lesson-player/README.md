@@ -130,6 +130,12 @@ Ayrı **Öğrenci ekranı** penceresinde kalem/ampul kontrol ikonları gösteril
 
 Bu düzenleme kanonik `answer-bank` içeriğini değiştirmez; yalnız presentation/lesson-flow katmanına uygulanır. İlerleme adım kimliğiyle saklandığından yeniden sıralama sonrası bağlantı aynı adıma döner. Kanonik ders içeriği güncellenmişse eski yerel düzenlemeler otomatik uygulanmaz; yedeklenir ve ekranda **Eski düzenlemeleri indir** seçeneği görünür. Dışa aktarma mevcut soru metnini ve `prompt_mode` bilgisini korur.
 
+## Görev tipine göre görünüm ve testler
+
+Karşılaştırmalar ölçüt ve ikili kart düzeniyle, yapılandırılmış çalışmalar alan kutularıyla, değerlendirmeler ölçüt listesiyle, süreç görevleri numaralı adımlarla gösterilir. İçeriğin başlık ve metinleri ile kaynak/cevap bağlantıları değiştirilmez; dar ekranda karşılaştırma sütunları alt alta iner. Cevap açıldığında da türün görünüm dili korunur.
+
+`npm run test:data` dört tema için `scripts/lesson-data/theme-*.mjs` dosyalarını çalıştırır. `npm run test:runtime` export, öğretmen notu ve yerel düzenleme sözleşmelerini denetler. `npm run test:browser` çalışan Vite preview ve `CHROME` yolu gerektirir; gerçek tarayıcıda adım sırası, projeksiyon ve görev görünümü regresyonlarını sınar. `npm run build`, veri testini, runtime testini, TypeScript ve Vite production build'i çalıştırır.
+
 ## Kaynak sınırlı içerik
 
 QR video, dış rubrik veya PDF'de bulunmayan başka bir kaynağa bağlı sorular normal kesin cevap gibi gösterilmez. `source_limited` kayıtlarında uygulama **Kaynak sınırlı** etiketi ve **Kaynak notu** reveal'i kullanır; yalnız doğrulanabilen çerçeve sunulur.
