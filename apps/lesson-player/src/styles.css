@@ -1650,3 +1650,33 @@ button:focus-visible {
     scroll-behavior: auto;
   }
 }
+
+
+/* Revealed answer sections inherit the task's visual semantics. */
+.answer-sections--comparison.answer-sections--paired {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.answer-sections--comparison .section-card {
+  border-top: 3px solid var(--accent);
+  background: #f4f8f5;
+}
+.answer-sections--comparison.answer-sections--paired .section-card:nth-child(2) {
+  border-top-color: var(--warm);
+  background: #fff8f0;
+}
+.answer-sections--structure .section-card {
+  border-left: 3px solid var(--accent);
+  background: #f6f9f6;
+}
+.answer-sections--assessment {
+  grid-template-columns: minmax(0, 1fr);
+}
+.answer-sections--assessment .section-card {
+  border-color: #e1d3bb;
+  background: #fcf8ef;
+}
+@media (max-width: 700px) {
+  .answer-sections--comparison.answer-sections--paired {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
