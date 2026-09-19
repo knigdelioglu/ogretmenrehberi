@@ -1,0 +1,392 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-KEMAL-TAHIR-MULAKAT-210-214",
+  "lesson_slug": "kemal-tahir-mulakat-210-214",
+  "title": "Kemal Tahir — Hayalî Mülakat",
+  "subtitle": "Yaşamın İzinde · Konuşma / Huzur kişisiyle mülakat / öz değerlendirme",
+  "printed_page_range": "210-214",
+  "required_source_range": {
+    "from": "T03-S0089",
+    "to": "T03-S0096"
+  },
+  "steps": [
+    {
+      "id": "s210-interview-reading",
+      "source_record_id": "T03-S0089",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Kemal Tahir mülakatını ders kitabından okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Söyleşide iki soru kümesini ve yazarın her birine verdiği cevabın ana düşüncesini ayırın.",
+        "items": [
+          "Roman için konu ve kişi seçerken nelere dikkat ettiğini işaretleyin.",
+          "Hazırlık, not tutma ve roman kişisinin gelişmesi hakkındaki düşünceleri belirleyin.",
+          "Türkçenin sanat ve düşünceyi anlatma gücüne ilişkin görüşü bulun."
+        ],
+        "note": "Ana mülakat metnini kopyalamayın. Kitabın basılı s.210 sayfasından okuyun; soru ve cevabın doğrudan yazarın sözleri olduğu ayrımını koruyun."
+      }
+    },
+    {
+      "id": "s210-q1",
+      "source_record_id": "T03-S0089",
+      "answer_id": "T3-P210-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Konuşmayı Yönetebilme 1 — Kemal Tahir ile yapılan mülakatın amacı nedir? Açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki iki soru başlığını birlikte düşünün; yalnız 'yazarı tanımak' cevabıyla yetinmeyin."
+      }
+    },
+    {
+      "id": "s210-q2",
+      "source_record_id": "T03-S0090",
+      "answer_id": "T3-P210-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Konuşmayı Yönetebilme 2 — Soru, süre ve hedef kitlenin önceden belirlenmesi mülakatı nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Soruların niteliği, zaman yönetimi ve dinleyiciye uygun anlatımı ayrı ayrı ele alın."
+      }
+    },
+    {
+      "id": "s211-task",
+      "source_record_id": "T03-S0091",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Performans görevi — Huzur'dan bir kişiyle hayalî mülakat hazırlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Altı grup oluşturun; her grup Huzur'un ders kitabında okunan parçalarından hareketle bir roman kişisi seçsin.",
+        "sections": [
+          {
+            "title": "Ürün",
+            "body": "Seçilen kişinin düşüncelerini ve söyleyişini temel alan, soru–cevap düzeninde hayalî bir mülakat."
+          },
+          {
+            "title": "Çalışma süreci",
+            "body": "Planlama, soru hazırlama, taslak, geri bildirim, sunum ve öz değerlendirme."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "Öğrencilerin okumadığı roman bölümleri karakterin yaşanmış deneyimiymiş gibi sunulmaz."
+          }
+        ],
+        "note": "Kitabın süre bilgisi 8 ders saatidir. Sunum sırası ve süre dağılımı sınıfa göre uyarlanabilir."
+      }
+    },
+    {
+      "id": "s211-six-people",
+      "source_record_id": "T03-S0091",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çalışma kâğıdı — Altı roman kişisini metinde görülen özelliklerine göre inceleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.211 tablosundaki altı kişiyi ayrı tutun; okunan metinde doğrudan sözü/davranışı olmayanlara özellik uydurmayın.",
+        "items": [
+          "Mümtaz",
+          "Nuran",
+          "İhsan",
+          "Suat",
+          "Fâhir",
+          "Macide"
+        ],
+        "note": "Her satırda metin dayanağı bulunmayan kısmı kesin kişilik özelliği olarak doldurmayın."
+      }
+    },
+    {
+      "id": "s211-choice",
+      "source_record_id": "T03-S0091",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Seçtiğiniz roman kişisiyle neden mülakat yapmak istiyorsunuz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişiyi yalnız sevdiğinizi söylemekle yetinmeyin; size yakın gelen özelliğini okunan parçalardaki bir söz veya davranışla ilişkilendirin.",
+        "sections": [
+          {
+            "title": "Seçilen kişi",
+            "body": "Grupça seçtiğiniz roman kişisini belirtin."
+          },
+          {
+            "title": "Etkilendiğiniz özellik",
+            "body": "Sözünü, davranışını veya düşüncesini metindeki bir örnekle gösterin."
+          },
+          {
+            "title": "Mülakat amacı",
+            "body": "Bu kişiyi konuşturarak neyi anlamayı hedeflediğinizi belirtin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s211-plan",
+      "source_record_id": "T03-S0091",
+      "answer_id": "T3-P211-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Mülakat planı — Amaç, hedef kitle, hazırlık ve yöntem.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Konuşmayı yazmaya geçmeden grup içinde dört temel hazırlık kararını netleştirin.",
+        "items": [
+          "Bilgilendirme veya başka konuşma amacını seçin.",
+          "Sınıf arkadaşları gibi hedef kitleyi tanımlayın.",
+          "Kişiye uygun, açık uçlu ve metin dayanaklı sorular için yöntem belirleyin.",
+          "Önceki konuşma deneyimlerinden yararlanıp hazırlık, sunum ve değerlendirmeyi planlayın."
+        ]
+      }
+    },
+    {
+      "id": "s212-character-prediction",
+      "source_record_id": "T03-S0092",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İçerik Oluşturabilme — Roman kişisini gerçek hayatta hayal ederken dayanağı koruyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişinin nasıl konuşabileceğine veya davranabileceğine ilişkin tahminlerinizi metnin gösterdikleriyle sınırlandırın.",
+        "items": [
+          "Metinde görülen söz veya davranışı işaretleyin.",
+          "Bundan çıkarılabilecek olası soruyu önerin.",
+          "Yalnız tahmin olan ayrıntıyı romanda gerçekleşmiş olay diye söylemeyin."
+        ]
+      }
+    },
+    {
+      "id": "s212-question-pool",
+      "source_record_id": "T03-S0092",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Grupça açık uçlu mülakat soruları oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grup üyelerinin sorularını bir havuzda toplayın; aynı konuyu tekrarlayan soruları daha sonra ayıklayın.",
+        "items": [
+          "Karakterin hayatına ve düşünce dünyasına ilişkin sorular yazın.",
+          "Her sorunun romanda dayanağı olup olmadığını belirtin.",
+          "Hedef kitlenin anlayabileceği sözcükler seçin.",
+          "Birbirini dinleyip soruları ortaklaşa gözden geçirin."
+        ]
+      }
+    },
+    {
+      "id": "s212-perf-questions",
+      "source_record_id": "T03-S0092",
+      "answer_id": "T3-P212-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soruları ölçütlerle eleyip mülakatın amacına uygun sıraya koyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hazır örnek soruları ancak grup kendi taslağını çıkardıktan sonra açın.",
+        "sections": [
+          {
+            "title": "İçerik",
+            "body": "Seçilen kişi ve metnin düşünce dünyasıyla ilişkili mi?"
+          },
+          {
+            "title": "Biçim",
+            "body": "Açık uçlu, anlaşılır ve tekrar içermeyen bir soru mu?"
+          },
+          {
+            "title": "Dayanak",
+            "body": "Okunan Huzur parçalarından kanıt bulunabiliyor mu?"
+          },
+          {
+            "title": "Dinleyici",
+            "body": "Sınıfın bilgi düzeyine ve mülakat amacına uygun mu?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s212-outline",
+      "source_record_id": "T03-S0092",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Hayalî mülakatın giriş, gelişme ve sonuç düzenini planlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Soru–cevapların karakteri tanıtmaya hizmet eden bir akış oluşturmasını sağlayın.",
+        "sections": [
+          {
+            "title": "Giriş",
+            "body": "Kişiyi ve görüşmenin amacını kısa biçimde tanıtın."
+          },
+          {
+            "title": "Gelişme",
+            "body": "Metinden dayanaklı soruları ilişkili bir sırayla sorun."
+          },
+          {
+            "title": "Sonuç",
+            "body": "Görüşmedeki temel düşünceyi toparlayıp konuşmayı doğal biçimde bitirin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s212-sample",
+      "source_record_id": "T03-S0092",
+      "answer_id": "T3-P212-PERF02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Mülakat taslağı — Sorulara roman bağlamına uygun hayalî cevaplar oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce kendi soru ve cevap taslağınızı hazırlayın. Daha sonra örnek taslağı karşılaştırma için açın; cevaplar romanda birebir söylenmiş cümleler değildir.",
+        "items": [
+          "Karakterin söz varlığını ve bakış açısını koruyun.",
+          "Yorumla romanda görülen bilgiyi ayırt edin.",
+          "Soru–cevapların birbiriyle tutarlılığını denetleyin.",
+          "Gereksiz uzun cevapları ve dayanağı bulunmayan iddiaları düzeltin."
+        ]
+      }
+    },
+    {
+      "id": "s212-revision",
+      "source_record_id": "T03-S0092",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Taslağı geliştirin — Söyleyiş, geri bildirim ve sunum desteği.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Diğer grupların ve öğretmenin görüşlerini değerlendirip sunumdan önce bir revizyon yapın.",
+        "items": [
+          "Kişiye uygun olmayan soru ve cevapları yeniden yazın.",
+          "Bağlama uygun sözcük, vurgu ve tonlamayı kontrol edin.",
+          "Sözlü dil ile yazılı taslak arasındaki farkları gözden geçirin.",
+          "Gerçekten gerekli görsel veya işitsel ögeleri seçin.",
+          "Grup içinden hayalî karakteri canlandıracak kişiyi belirleyin."
+        ]
+      }
+    },
+    {
+      "id": "s213-rehearsal",
+      "source_record_id": "T03-S0093",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Kural Uygulayabilme — Hayalî mülakatı prova ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sunumda yalnız metni okumayın; soruyu, cevabı ve dinleyiciyle ilişkiyi birlikte yönetin.",
+        "items": [
+          "Kısa ve dikkat çekici bir girişle başlayın.",
+          "Sorular arasında doğal geçişler yapın.",
+          "Seçilen roman kişisine uygun, anlaşılır Türkçe kullanın.",
+          "Vurgu, tonlama, tempo ve beden dilini birlikte kontrol edin.",
+          "Sunumu verilen süre ve mekâna göre düzenleyin."
+        ]
+      }
+    },
+    {
+      "id": "s213-perf",
+      "source_record_id": "T03-S0093",
+      "answer_id": "T3-P213-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Hayalî mülakatı sınıfta gerçekleştirin; konuşma kurallarını kontrol edin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grup arkadaşınız hayalî kişiyi canlandırırken diğer üyeler soruları ve sunum akışını yönetsin.",
+        "sections": [
+          {
+            "title": "İfade",
+            "body": "Özgün, tutarlı, akıcı ve bağlama uygun konuşma."
+          },
+          {
+            "title": "İletişim",
+            "body": "Sözü başlatma, sürdürme ve bitirme; ses, beden dili ve dinleyiciyle ilişki."
+          },
+          {
+            "title": "Metne bağlılık",
+            "body": "Karakterin roman parçalarında görülen değerleriyle çelişmeyen cevaplar."
+          },
+          {
+            "title": "Dönüt",
+            "body": "Sunum sonunda yalnız gözlenen güçlü ve geliştirilecek yönleri not edin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s214-q1",
+      "source_record_id": "T03-S0094",
+      "answer_id": "T3-P214-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Değerlendirme 1 — Mülakattaki açık ve örtük iletileri belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrencinin gerçekten hazırladığı hayalî cevapları ele alın; örnek Mümtaz cevabı yalnız modeldir.",
+        "items": [
+          "Doğrudan söylenen düşünceleri açık ileti olarak ayırın.",
+          "Cevaplardan gerekçeyle çıkarılan düşünceleri örtük ileti olarak ayırın.",
+          "Bu iki ileti türünü karakterin okunan metindeki sözleriyle karşılaştırın."
+        ]
+      }
+    },
+    {
+      "id": "s214-q2",
+      "source_record_id": "T03-S0095",
+      "answer_id": "T3-P214-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Değerlendirme 2 — Roman kişileri hakkındaki yargılarınızı hangi söz, davranış veya olayla desteklersiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir yargı seçin; hangi metin ayrıntısına dayandığını gösterin. Hayalî mülakatta türettiğiniz cevabı özgün romandan alıntı gibi göstermeyin."
+      }
+    },
+    {
+      "id": "s214-eval",
+      "source_record_id": "T03-S0096",
+      "answer_id": "T3-P214-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — Performansınıza göre her ölçütü işaretleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.214 formunu kullanın: Her ölçüt için Evet / Kısmen / Hayır seçeneklerinden birini gerçek sunumunuza göre belirleyin.",
+        "items": [
+          "Duygu ve düşüncelerimi özgün, tutarlı biçimde ifade ettim.",
+          "Dil kullanım alanına uygun konuştum.",
+          "Beden dili, diksiyon ve telaffuzu uygun kullandım.",
+          "Türkçenin yapısına ve cümleler arası bağdaşıklığa dikkat ettim.",
+          "Akıcılık, duruluk ve yalınlığı korudum.",
+          "Ek ve kelimeleri anlam ve bağlama uygun seçtim."
+        ],
+        "note": "Bu altı ölçüt sınıf içi öz değerlendirme içindir; öğretmenin QR rubriğindeki ölçütleri veya puanları görülmeden çoğaltmayın."
+      }
+    },
+    {
+      "id": "s214-feedback",
+      "source_record_id": "T03-S0096",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Öz değerlendirmeden sonraki konuşma hedefinizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öz değerlendirme formunda Kısmen veya Hayır işaretlediğiniz her ölçüt için uygulanabilir bir sonraki adım yazın.",
+        "sections": [
+          {
+            "title": "Koruyacağım davranış",
+            "body": "Evet işaretlediğiniz ve sonraki konuşmada sürdürmek istediğiniz beceriyi belirtin."
+          },
+          {
+            "title": "Geliştireceğim beceri",
+            "body": "Somut bir gözleme dayanan kısa çalışma hedefi yazın."
+          },
+          {
+            "title": "Akran geri bildirimi",
+            "body": "Kitaptaki QR formuna erişilmişse ona göre değerlendirin; görülmeyen formu burada varsaymayın."
+          }
+        ]
+      }
+    }
+  ]
+}
