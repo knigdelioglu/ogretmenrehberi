@@ -955,6 +955,69 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-characters.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s188-q4"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-conflict.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s189-think"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-dialogue.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s189-three"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-period.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s190-compare"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-grammar.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s190-191-grammar"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-long.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s190-gram-d"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-spelling.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s191-spell"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-research.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s191-research"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1061,5 +1124,12 @@ jobs:
             lesson-player-theme3-style-style-four.png
             lesson-player-theme3-style-period.png
             lesson-player-theme3-style-characters.png
+            lesson-player-theme3-conflict-conflict.png
+            lesson-player-theme3-conflict-dialogue.png
+            lesson-player-theme3-conflict-period.png
+            lesson-player-theme3-conflict-grammar.png
+            lesson-player-theme3-conflict-long.png
+            lesson-player-theme3-conflict-spelling.png
+            lesson-player-theme3-conflict-research.png
             apps/lesson-player/dist
           if-no-files-found: error
