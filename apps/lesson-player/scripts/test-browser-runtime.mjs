@@ -136,8 +136,15 @@ try {
 
   await teacher.send("Page.navigate", { url: karagoz });
   await until(
-    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
-    "Teacher display restored after guide isolation test"
+    () => teacher.evaluate(`(() => {
+      const params = new URLSearchParams(location.search);
+      return params.get('display') !== '1' &&
+        document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi') &&
+        Array.from(document.querySelectorAll('button')).some(
+          b => b.textContent.trim() === 'Öğrenci ekranı'
+        );
+    })()`),
+    "Teacher display and controls restored after guide isolation test"
   );
 
   await teacher.evaluate(
