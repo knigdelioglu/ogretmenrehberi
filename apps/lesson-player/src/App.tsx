@@ -8,6 +8,7 @@ import {
 import lessonsJson from "./generated/lessons.json";
 import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
+import { TeacherGuidePanel } from "./components/TeacherGuidePanel";
 import { LessonOutline } from "./components/LessonOutline";
 import { LessonFooter } from "./components/LessonFooter";
 import { LessonToolbar } from "./components/LessonToolbar";
@@ -211,6 +212,7 @@ export default function App() {
     () => window.localStorage.getItem(modeKey) === "true"
   );
   const [editorOpen, setEditorOpen] = useState(false);
+  const [teacherGuideOpen, setTeacherGuideOpen] = useState(false);
   const [overrides, setOverrides] = useState<StepOverrides>(overrideRestore.overrides);
   const [stepOrder, setStepOrder] = useState<string[]>(
     () => displayOnly ? lesson.steps.map((item) => item.id) : orderRestore.order
@@ -638,14 +640,26 @@ export default function App() {
         backupKey={overrideRestore.backupKey ?? orderRestore.backupKey}
         outlineOpen={outlineOpen}
         editorOpen={editorOpen}
+        teacherGuideOpen={teacherGuideOpen}
         onWarningDismiss={() => setOverrideWarning(null)}
         onLessonChange={switchLesson}
         onOutlineToggle={() => setOutlineOpen((value) => !value)}
         onEditorToggle={() => setEditorOpen((value) => !value)}
+        onTeacherGuideToggle={() => setTeacherGuideOpen((value) => !value)}
         onOpenStudentDisplay={openProjectionWindow}
         onPresentationToggle={togglePresentationMode}
         onFullscreen={() => void toggleFullscreen()}
       />
+
+      {teacherGuideOpen && !presentationMode && !displayOnly ? (
+        <div id="teacher-guide-panel">
+          <TeacherGuidePanel
+            lesson={lesson}
+            step={step}
+            onClose={() => setTeacherGuideOpen(false)}
+          />
+        </div>
+      ) : null}
 
       <LessonOutline
         lesson={lesson}
