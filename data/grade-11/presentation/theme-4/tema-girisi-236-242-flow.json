@@ -58,11 +58,21 @@
       "source_record_id": "T04-S0002",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Yunus Emre — Kendini bilmek ile hayatı ve sanatı anlamak arasında nasıl bağ kurulabilir?",
+      "prompt": "Yunus Emre — Kendini bilmek ve Tema Sunusu karekoduyla temaya giriş",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.237'deki Yunus Emre beytini okuyun. Şiirin söylediklerini kişisel deneyim ve edebî metinle kurduğunuz ilişki üzerinden düşünün.",
-        "note": "Bu sayfada bağımsız kitap sorusu yoktur. Tartışma tema eşiği içindir; kanonik cevap oluşturulmaz."
+        "lead": "Basılı s.237'deki Yunus Emre beytini okuyun; kendini bilme düşüncesini hayatı ve sanatı anlamayla ilişkilendirin.",
+        "sections": [
+          {
+            "title": "Yunus Emre",
+            "body": "“İlim ilim bilmekdir, ilim kendin bilmekdir; sen kendini bilmezsin, ya niçe okumakdır.”"
+          },
+          {
+            "title": "Tema Sunusu",
+            "body": "Kitaptaki Tema Sunusu karekodunu bu aşamada açın. Sunu erişilemiyorsa beyit ve tema eşiği sorusu üzerinden devam edin."
+          }
+        ],
+        "note": "PDF s.238 / basılı s.237'de hem Tema karekodu hem Tema Sunusu karekodu bulunur. Bu sayfada bağımsız kitap sorusu yoktur; kanonik cevap oluşturulmaz."
       }
     },
     {
