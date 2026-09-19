@@ -29,13 +29,18 @@ Mevcut doğrulanmış dersler:
 - **4. Tema / Merdiven — Söz Varlığı ve Metni Anlama** — basılı s.266–270 — 17 ders adımı / 13 source kaydı / 15 cevap
 - **4. Tema / Merdiven — Tür Özellikleri ve Karşılaştırmalar** — basılı s.271–273 — 10 ders adımı / 5 source kaydı / 5 cevap
 - **4. Tema / Merdiven — Karakter, Çatışma ve Değerlendirme** — basılı s.274–279 — 21 ders adımı / 13 source kaydı / 14 cevap
+- **4. Tema / Tiyatro Metnini Canlandırma — Konuşma Atölyesi** — basılı s.280–283 — 16 ders adımı / 10 source kaydı / 12 cevap
+- **4. Tema / Anadolu İnsanı — Dinleme ve Anlama** — basılı s.284–290 — 22 ders adımı / 12 source kaydı / 20 cevap
+- **4. Tema / Anadolu İnsanı — Çözümleme ve Değerlendirme** — basılı s.291–297 — 24 ders adımı / 21 source kaydı / 22 cevap
+- **4. Tema / Fedakârlık Belgeseli — Afiş Yazma Atölyesi** — basılı s.298–302 — 18 ders adımı / 13 source kaydı / 14 cevap
+- **4. Tema / Ölçme ve Değerlendirme** — basılı s.303–307 — 18 ders adımı / 14 source kaydı / 14 cevap
 - **2. Tema / Eski İstanbul’dan Çizgiler + Süreç Değerlendirmesi** — basılı s.108–112 — 15 ders adımı / 11 source kaydı / 14 cevap
 
 1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
 2. Tema s.84–159 aralığı **9 doğal ders bloğuyla** kapsanır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
 
-3. Tema Lesson Player üretimi **s.160–235** aralığında tamamlanmıştır: **18 doğal ders / 310 adım / 147 source / 147 answer** kaydı. Son blok **Tema Sonu Ölçme ve Değerlendirme s.230–235** (24 adım / 16 source / 16 answer) olup Venn şeması, Orhan Veli grafiği, biyografi yarışması ve sekiz satırlı değerlendirme tablosunu içerir. Basılı s.210–235 kaynakları 11. sınıf ders kitabı PDF'iyle karşılaştırılarak `VERIFIED` durumuna alındı; görülemeyen QR medya/rubrik ayrıntıları cevap bankasında kaynak sınırlı kalır. 4. Tema üretimi **s.236–279** aralığına ulaştı: **9 doğal ders / 135 adım / 73 source / 75 answer**. Merdiven'in küçürek hikâye özellikleri, Ben, Mimar Sinan ve Şair Tavafî karşılaştırmaları; karakter, yapı, çatışma, değer, disiplin, Ferit Edgü poetikası ve süreç değerlendirmesi tamamlandı. Sonraki doğal blok **s.280–283 — tiyatro canlandırması / konuşma atölyesi**dir.
+3. Tema Lesson Player üretimi **s.160–235** aralığında tamamlanmıştır: **18 doğal ders / 310 adım / 147 source / 147 answer** kaydı. Son blok **Tema Sonu Ölçme ve Değerlendirme s.230–235** (24 adım / 16 source / 16 answer) olup Venn şeması, Orhan Veli grafiği, biyografi yarışması ve sekiz satırlı değerlendirme tablosunu içerir. Basılı s.210–235 kaynakları 11. sınıf ders kitabı PDF'iyle karşılaştırılarak `VERIFIED` durumuna alındı; görülemeyen QR medya/rubrik ayrıntıları cevap bankasında kaynak sınırlı kalır. 4. Tema Lesson Player üretimi **s.236–307** aralığında tamamlanmıştır: **14 doğal ders / 233 adım / 143 source / 157 answer** kaydı. Ben, Mimar Sinan; Merdiven; tiyatro canlandırma; Anadolu İnsanı / Fedakârlık dinleme-izleme ve çözümleme; afiş yazma atölyesi ile tema sonu ölçme-değerlendirme bloklarının tamamı kapsanmıştır. QR video veya rubrik ayrıntısı gerektiren sorular `source_limited`/rehberlik sınırında tutulur; kitapta görülen görev ve ölçütler ise doğrudan kaynak sayfalarıyla eşleştirilmiştir.
 
 Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
