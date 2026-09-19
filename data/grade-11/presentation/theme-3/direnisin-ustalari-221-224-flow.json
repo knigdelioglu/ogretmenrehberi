@@ -1,0 +1,318 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-DIRENISIN-USTALARI-221-224",
+  "lesson_slug": "direnisin-ustalari-221-224",
+  "title": "Direnişin Ustaları — Çözümleme ve Değerlendirme",
+  "subtitle": "Yaşamın İzinde · Dramatik yapı / görüş geliştirme / disiplinler arası araştırma",
+  "printed_page_range": "221-224",
+  "required_source_range": {
+    "from": "T03-S0112",
+    "to": "T03-S0123"
+  },
+  "steps": [
+    {
+      "id": "s221-q1",
+      "source_record_id": "T03-S0112",
+      "answer_id": "T3-P221-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 1 — Direnişin Ustaları'nın yapı unsurlarını çalışma kâğıdına yerleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Alanları yalnız gerçek kayıttan hareketle doldurun. Her unsuru bir olay, ses veya sözle destekleyin.",
+        "items": [
+          "Kişi",
+          "Yer / mekân",
+          "Zaman",
+          "Dramatik örgü",
+          "Çatışma"
+        ],
+        "note": "Kitapta transkript bulunmadığı için kişi adı, mekân veya tarih önceden doldurulamaz."
+      }
+    },
+    {
+      "id": "s221-work-method",
+      "source_record_id": "T03-S0112",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çalışma kâğıdı — Yapı unsurları için dinleme kanıtı bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk dinlemede gözden kaçırdığınız unsurları ikinci dinlemede doğrulayın.",
+        "sections": [
+          {
+            "title": "Kim, nerede, ne zaman?",
+            "body": "Kişi, mekân ve zamanı diyalog veya ses ipuçlarıyla belirleyin."
+          },
+          {
+            "title": "Nasıl ilerliyor?",
+            "body": "Olayların başlangıcını, gelişimini ve sonuç ilişkisini sıralayın."
+          },
+          {
+            "title": "Çatışma nerede?",
+            "body": "Kişilerin veya koşulların karşı karşıya gelişini duyulan örnekle gösterin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s221-q2",
+      "source_record_id": "T03-S0113",
+      "answer_id": "T3-P221-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 2 — Kişilerin özelliklerini ve amaçlarını söz ve davranışlarından çıkarınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce davranışı kaydedin; özellik veya amaç sonucunu kanıta bağlayın. Ses kaydında olmayan karakter bilgisi eklemeyin.",
+        "items": [
+          "Kişi",
+          "Söylediği / yaptığı",
+          "Çıkarılan özellik",
+          "Amacı",
+          "Kanıt"
+        ]
+      }
+    },
+    {
+      "id": "s221-q3",
+      "source_record_id": "T03-S0114",
+      "answer_id": "T3-P221-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3 — Yapı unsurları radyo tiyatrosuna nasıl katkı sağlıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce hangi unsurun metinde nasıl kullanıldığını belirtin, sonra etkisini açıklayın; genel tür bilgisini metne özgü sonuç gibi yazmayın."
+      }
+    },
+    {
+      "id": "s221-q4",
+      "source_record_id": "T03-S0115",
+      "answer_id": "T3-P221-Q04",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 4 — Millî ve manevi değerleri gösteren dil veya kültür unsurları nelerdir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız bir değer adı söylemeyin; duyduğunuz ifade veya davranışı ve bunun metnin iletisine katkısını birlikte açıklayın."
+      }
+    },
+    {
+      "id": "s222-stance",
+      "source_record_id": "T03-S0116",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Görüş geliştirme — Değerlerin metnin iletilerini oluşturmadaki işlevini tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın görüşüne katılma derecenizi seçmeden önce metinden bir dil, davranış veya kültür örneği düşünün.",
+        "items": [
+          "Kesinlikle katılıyorum",
+          "Katılıyorum",
+          "Kararsızım",
+          "Katılmıyorum",
+          "Kesinlikle katılmıyorum"
+        ],
+        "note": "Kartlar görüş bildirmek için kullanılır; öğrencilere tek doğru görüş dayatılmaz."
+      }
+    },
+    {
+      "id": "s222-perf",
+      "source_record_id": "T03-S0116",
+      "answer_id": "T3-P222-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Görüşünüzü metinden kanıtla savunun, sonra yeniden değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Farklı görüşteki arkadaşlarınızın gerekçelerini dinleyip gerekiyorsa görüşünüzü değiştirin.",
+        "items": [
+          "Seçtiğiniz görüşü gerekçelendirin.",
+          "Başka görüşün dayanağını özetleyin.",
+          "Görüşünüz değiştiyse nedenini açıklayın.",
+          "Sonucu bir kavram haritasında görünür kılın."
+        ]
+      }
+    },
+    {
+      "id": "s222-map",
+      "source_record_id": "T03-S0116",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Değerler ve iletiler — Kitaptaki beş başlığı kavram haritasında kullanınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu başlıklar kitabın verdiği değer örnekleridir; her birinin radyo tiyatrosunda işlendiği, kayıt dinlenmeden ileri sürülmez.",
+        "items": [
+          "Saygı",
+          "Vatanseverlik",
+          "Duyarlılık",
+          "Hoşgörü",
+          "Aile bütünlüğü"
+        ],
+        "note": "Her değer için metindeki kanıtı ve ana iletiyle ilişkiyi ayrı yazdırın."
+      }
+    },
+    {
+      "id": "s223-research",
+      "source_record_id": "T03-S0117",
+      "answer_id": "T3-P223-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ders Dışı Etkinlik — Metni tarih, sosyoloji ve psikolojiyle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üç gruba ayrılıp sözcü seçin. Bir haftalık araştırmada radyo tiyatrosunun gerçekten dinlenen ayrıntılarıyla dış kaynakları ayırın.",
+        "sections": [
+          {
+            "title": "Metin–Tarih",
+            "body": "Dönem ve olay bilgilerini güvenilir tarih kaynaklarıyla karşılaştırın."
+          },
+          {
+            "title": "Metin–Sosyoloji",
+            "body": "Toplumsal ilişkiler, roller, değerler ve dayanışma üzerinde durun."
+          },
+          {
+            "title": "Metin–Psikoloji",
+            "body": "Kişilerin duygu, karar ve çatışmalarını gerçek söz ve davranışla ilişkilendirin."
+          }
+        ],
+        "note": "Kitaptaki araştırma süresi 1 haftadır; kaynakta bulunmayan tarih ve kişi bilgisi üretmeyin."
+      }
+    },
+    {
+      "id": "s223-research-share",
+      "source_record_id": "T03-S0117",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Araştırma sonuçlarını ve bulduğunuz başka radyo tiyatrosu örneklerini paylaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sunum sonunda yeni bilgilerin radyo tiyatrosuna bakış açınızı nasıl etkilediğini kısaca açıklayın.",
+        "items": [
+          "Kullanılan dış kaynağı belirtin.",
+          "Direnişin Ustaları'ndan gerçek dinleme dayanağını gösterin.",
+          "Araştırmadan çıkardığınız yorumu kanıttan ayırın.",
+          "Başka bir radyo tiyatrosu örneğiyle karşılaştırın."
+        ]
+      }
+    },
+    {
+      "id": "s223-criteria",
+      "source_record_id": "T03-S0118",
+      "answer_id": "T3-P223-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 1 — Radyo tiyatrosu için ölçüt belirleyin ve değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın dil kullanımı örneğini inceleyin; diğer ölçütleri dinlediğiniz metne göre kendiniz belirleyin.",
+        "items": [
+          "Ölçütü adlandırın.",
+          "Metindeki gözlenebilir örneği gösterin.",
+          "Bu ölçüte göre gerekçeli değerlendirme yapın."
+        ]
+      }
+    },
+    {
+      "id": "s223-q2",
+      "source_record_id": "T03-S0119",
+      "answer_id": "T3-P223-Q02",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 2 — İşlenen konuyu tarihî kaynaklarla karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce radyo tiyatrosundaki olayın gerçekten ne olduğunu belirleyin. Dış kaynak bilgisini dramatik anlatının kendi ayrıntılarından ayırın.",
+        "items": [
+          "Radyo tiyatrosunda verilen bilgi",
+          "Tarih kaynağındaki karşılık",
+          "Örtüşen yön",
+          "Dramatik veya kurmaca dönüşüm"
+        ]
+      }
+    },
+    {
+      "id": "s223-q3",
+      "source_record_id": "T03-S0120",
+      "answer_id": "T3-P223-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 3 — Bir kişiyle empati kurup davranışlarını gerekçeli değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişinin gerçek olay içindeki koşulunu ve duyulan davranışını gösterin; onun söylemediği sözü ona yüklemeyin."
+      }
+    },
+    {
+      "id": "s224-q4",
+      "source_record_id": "T03-S0121",
+      "answer_id": "T3-P224-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 4 — Beğendiğiniz yönleri somut dinleme kanıtıyla açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız 'çok güzeldi' demek yerine bir ses, diyalog, atmosfer veya kurgu örneğinin üzerinizdeki etkisini açıklayın."
+      }
+    },
+    {
+      "id": "s224-q5",
+      "source_record_id": "T03-S0122",
+      "answer_id": "T3-P224-Q05",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 5 — Konu ve ana düşünceyi kendi yaşamınızla ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce metnin gerçek konusunu ve ana düşüncesini ayırt edin. Ardından yalnız kendi deneyimlerinize dayanan bağlantı kurun."
+      }
+    },
+    {
+      "id": "s224-journal",
+      "source_record_id": "T03-S0123",
+      "answer_id": "T3-P224-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öğrenme Günlüğü — Dinleme sürecinizi beş başlıkta değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.224 günlüğünü kendi dinleme ve öğrenme deneyiminize göre doldurun; örnek metni hazır kişisel deneyim gibi kopyalamayın.",
+        "items": [
+          "Bu süreçte öğrendiklerim",
+          "Pekiştirmem gereken konular",
+          "Daha ayrıntılı incelemek istediğim konular",
+          "Kendimi geliştirmek için çaba harcadığım konular",
+          "Öğrendiğim ve gelecekte kullanabileceğim bilgiler"
+        ]
+      }
+    },
+    {
+      "id": "s224-next-step",
+      "source_record_id": "T03-S0123",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Günlükten sonraki öğrenme hedefinizi seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Günlüğünüzdeki yalnız bir geliştirilecek beceriyi sonraki dinlemede uygulanabilir hedefe dönüştürün.",
+        "sections": [
+          {
+            "title": "Gözlediğim güçlük",
+            "body": "Örneğin kişi–olay notunu dinleme sırasında takip edememek."
+          },
+          {
+            "title": "Deneyeceğim strateji",
+            "body": "İlk dinlemede olay çizgisi, ikinci dinlemede kısa kanıt notları tutmak."
+          },
+          {
+            "title": "Kontrol",
+            "body": "Sonraki dinlemede belirlediğiniz becerinin gelişip gelişmediğine bakın."
+          }
+        ]
+      }
+    }
+  ]
+}
