@@ -29,6 +29,20 @@ Atölye çıktısı ve geri bildirim dosyalanır; grup konuşmasında bireysel r
 - Her ayrı çalışma için öğrencinin Ek-1 değerlendirmesi ve buna bağlı sunusu takip edilir.
 - Dört eser/film kanıtı, tema içi sekiz atölye ürününün yerine geçirilmez.
 
+## 2026–2027 için önerilen sunum haftaları
+
+Bu tarihler **resmî takvim veya zorunlu tarih değil**, okulun yazılı sınav takvimi ve zümre planıyla uyarlanacak önerilen zaman dilimleridir. Dönem yerleştirmesi ve film için ikinci dönem tercihi pedagojik planlama önerisidir.
+
+| Çalışma | Önerilen sunum haftası | Tema bağlantısı |
+|---|---|---|
+| 1. eser | 23–27 Kasım 2026 | 1. temanın ardından, ara tatil dönüşü |
+| 2. eser | 11–15 Ocak 2027 | 2. temanın sonu, dönem bitmeden |
+| 3. eser | 22–26 Mart 2027 | 3. temadaki roman/yaşam–eser incelemesi |
+| Film | 3–7 Mayıs 2027 | 4. temanın çok modlu metin ve belgesel çalışması |
+| 4. eser | 24–28 Mayıs 2027 | 4. temanın ilerleyen bölümü, yıl sonundan önce |
+
+**Hazırlık:** Her eser/film için Ek-1 formu ve okuma/izleme çalışması sunumdan yaklaşık bir hafta önce tamamlanabilir. 2. eser sunumu okulun yazılılarıyla çakışırsa 18–21 Ocak 2027 ders günlerine kaydırılması düşünülebilir. Film için program bir *yıllık* çalışma öngörür; yalnızca ikinci dönemi zorunlu kılmaz.
+
 ## Puanlama güvenlik sınırı
 
 `teacher-workflow.json` yalnız görev ve belge **rehberidir**; öğrenci adları, notlar, puanlar veya teslim durumları saklanmaz. Derste değerlendirilen atölye görevlerinin sonuçları ve eser/film değerlendirmesi ayrı izlenir. **Dört atölyenin basit ortalaması = performans notu** diye kanonik bir formül kodlanmaz; zümrenin ve geçerli ölçme-değerlendirme hükümlerinin belirlediği yöntem uygulanır. Kitapta erişilemeyen QR rubriklerinin düzey betimleyicileri bu panelde uydurulmaz.
