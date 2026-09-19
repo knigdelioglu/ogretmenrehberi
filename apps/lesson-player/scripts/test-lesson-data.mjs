@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 10,
-  "Tema 4 s.236–283 okuma ve konuşma atölyesi bloklarını içermeli.");
+assert(theme4Lessons.length === 11,
+  "Tema 4 s.236–290 okuma, konuşma ve belgesel bloklarını içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -391,10 +391,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 151 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 83 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 87,
-  "Tema 4 s.236–283 toplam 10 ders / 151 ekran / 83 kaynak / 87 cevap olmalı.");
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 173 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 95 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 107,
+  "Tema 4 s.236–290 toplam 11 ders / 173 ekran / 95 kaynak / 107 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -706,6 +706,54 @@ for (const id of ["s280-q2","s281-plan","s281-checklist","s282-content","s282-ru
 for (const step of theatreWorkshop.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tiyatro canlandırma s.280–283 doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
+
+const anadoluListening = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-284-290");
+assert(anadoluListening && anadoluListening.printed_page_range === "284-290" &&
+  anadoluListening.coverage.steps === 22 && anadoluListening.coverage.source_records === 12 &&
+  anadoluListening.coverage.answer_entries === 20,
+  "Anadolu İnsanı s.284–290 22 ekran / 12 kaynak / 20 cevap içermeli.");
+const anadoluById = new Map(anadoluListening.steps.map(step => [step.id, step]));
+assert(anadoluById.size === 22, "Anadolu İnsanı ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s284-q1","T04-S0084","T4-P284-Q01"],
+  ["s284-q2","T04-S0084","T4-P284-Q02"],
+  ["s285-q1","T04-S0085","T4-P285-Q01"],
+  ["s285-q2","T04-S0085","T4-P285-Q02"],
+  ["s285-q3","T04-S0085","T4-P285-Q03"],
+  ["s285-q4","T04-S0085","T4-P285-Q04"],
+  ["s285-watch","T04-S0085","T4-P285-PERF01"],
+  ["s286-theme-words","T04-S0085","T4-P286-Q02"],
+  ["s286-messages","T04-S0085","T4-P286-Q03"],
+  ["s286-checklist","T04-S0085","T4-P286-PERF01"],
+  ["s287-vocab","T04-S0086","T4-P287-VOC01"],
+  ["s287-q1","T04-S0087","T4-P287-Q01"],
+  ["s288-q2","T04-S0088","T4-P288-Q02"],
+  ["s289-q3","T04-S0089","T4-P289-Q03"],
+  ["s289-q4","T04-S0090","T4-P289-Q04"],
+  ["s289-q5","T04-S0091","T4-P289-Q05"],
+  ["s290-q6","T04-S0092","T4-P290-Q06"],
+  ["s290-q7","T04-S0093","T4-P290-Q07"],
+  ["s290-q8","T04-S0094","T4-P290-Q08"],
+  ["s290-q9","T04-S0095","T4-P290-Q09"]
+]) {
+  assert(anadoluById.get(id)?.source?.source_record_id === sourceId &&
+    anadoluById.get(id)?.answer?.question_id === answerId,
+    `Anadolu İnsanı s.284–290 kanonik bağlantı: ${id}`);
+}
+assert(anadoluById.get("s287-vocab")?.content?.items?.length === 5 &&
+  Object.keys(anadoluById.get("s287-vocab")?.answer?.answer_sections ?? {}).length === 5,
+  "Anadolu İnsanı söz varlığı beş kelimeyi korumalı.");
+assert(anadoluById.get("s288-q2")?.content?.items?.length === 5 &&
+  anadoluById.get("s286-checklist")?.content?.items?.length === 5,
+  "Zihin haritası ve dinleme kontrol listesi beşli yapıyı korumalı.");
+for (const id of ["s286-theme-words","s286-messages","s287-q1","s288-q2","s289-q3","s289-q5","s290-q6","s290-q7","s290-q8","s290-q9"]) {
+  assert(anadoluById.get(id)?.answer?.entry_type === "source_limited",
+    `QR video görülmeden kesin cevap üretilmemeli: ${id}`);
+}
+for (const step of anadoluListening.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Anadolu İnsanı s.284–290 doğrulanmış kitap kaynağı: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
