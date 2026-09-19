@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-ANLAMA-175-176",
+  "lesson_slug": "huzur-metni-anlayalim-175-176",
+  "title": "Huzur — Metni Anlayalım",
+  "subtitle": "11. Sınıf · Yaşamın İzinde · Sorular 1–13",
+  "printed_page_range": "175-176",
+  "required_source_range": {
+    "from": "T03-S0016",
+    "to": "T03-S0028"
+  },
+  "steps": [
+    {
+      "id": "s175-q1",
+      "source_record_id": "T03-S0016",
+      "answer_id": "T3-P175-Q01",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Okuma öncesindeki Huzur tahminlerinizle metinden öğrendiklerinizi karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.165'te kendi yazdığınız ilk tahminlere geri dönün. Ardından s.167–171'den bu tahmini doğrulayan veya değiştiren ayrıntıları gösterin."
+      }
+    },
+    {
+      "id": "s175-q2",
+      "source_record_id": "T03-S0017",
+      "answer_id": "T3-P175-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Huzur'un konusunu, temasını ve yazılış amacını ayrı ayrı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.175'teki üç kutusunu ayrı düşünün: Anlatılanlar ne? Hangi temel duygu/düşünce öne çıkıyor? Metin okura neyi düşündürmek istiyor?",
+        "items": [
+          "Konu",
+          "Tema",
+          "Yazılış amacı"
+        ]
+      }
+    },
+    {
+      "id": "s176-q3",
+      "source_record_id": "T03-S0018",
+      "answer_id": "T3-P176-Q03",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Huzur'u temasına ve edebî akımına göre hangi roman türlerinde değerlendirirsiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.173'teki konusuna göre ve s.174'teki edebî akıma göre sınıflandırmaları birbirinden ayırın."
+      }
+    },
+    {
+      "id": "s176-q4",
+      "source_record_id": "T03-S0019",
+      "answer_id": "T3-P176-Q04",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Boğaz, Mümtaz için yalnız bir mekân mıdır? Yüklenen işlev hangi özelliğine dayanır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.167'deki Ada–Boğaz karşıtlığını; manzara, mimari ve “hepsi bizimdi” ifadesiyle birlikte okuyun."
+      }
+    },
+    {
+      "id": "s176-q5",
+      "source_record_id": "T03-S0020",
+      "answer_id": "T3-P176-Q05",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "“Bizler, kökü mazide olan atiyiz.” ifadesi geçmiş ile gelecek arasında nasıl bir ilişki kurar?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Mümtaz'ın yeni hayat için bir dayanak ve kimlik gerektiğini söylediği bölüme (s.169) dönün."
+      }
+    },
+    {
+      "id": "s176-q6",
+      "source_record_id": "T03-S0021",
+      "answer_id": "T3-P176-Q06",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "“Kendi hayatımızın kaynakları” ne demektir? Yaşadığınız şehirden örneklerle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce İhsan'ın kendi kültürüne dönüşünü anlatan parçayı yorumlayın. Sonra kendi şehrinizden gerekçelendirebildiğiniz bir değer seçin.",
+        "items": [
+          "İfadenin metindeki anlamı",
+          "Şehrinizden tarihî/kültürel bir değer",
+          "Bu değerin bugünle kurduğu bağ"
+        ]
+      }
+    },
+    {
+      "id": "s176-q7",
+      "source_record_id": "T03-S0022",
+      "answer_id": "T3-P176-Q07",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Huzur'da dönemin sosyal hayatını yansıtan ayrıntılara metinden örnekler veriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.167'deki vapur yolcuları, iskele kahveleri ve güreşler ile s.169–170'teki semt gezileri ve sosyal farkları inceleyin."
+      }
+    },
+    {
+      "id": "s176-q8",
+      "source_record_id": "T03-S0023",
+      "answer_id": "T3-P176-Q08",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Şehir hayatı kişilerin ruh hâlini ve sosyal ilişkilerini metinde nasıl etkiliyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Boğaz manzarasının uyandırdığı duyguları, yoksul semtlerin yarattığı etki ve ortak buluşma yerleriyle karşılaştırın."
+      }
+    },
+    {
+      "id": "s176-q9",
+      "source_record_id": "T03-S0024",
+      "answer_id": "T3-P176-Q09",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Nuran ve Mümtaz'ın buluştukları mekânlar ilişkileri ve yaşam tarzları hakkında ne düşündürüyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kanlıca, Çamlıca, Üsküdar ve Boğaz'daki gezileri yalnız yer adı olarak değil, beraber gerçekleştirdikleri etkinliklerle ilişkilendirin."
+      }
+    },
+    {
+      "id": "s176-q10",
+      "source_record_id": "T03-S0025",
+      "answer_id": "T3-P176-Q10",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Üsküdar için söylenen “hakikî kadın saltanatı” ifadesinin gerekçesi nedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.168'deki dört büyük cami ve bunların aşk, güzellik ya da annelikle ilişkisine odaklanın.",
+        "note": "Kitabın sorusu sözü Mümtaz'a atfediyor; metindeki “— Mümtaz, ...” seslenişi ise konuşanın başka biri olabileceğini düşündürüyor."
+      }
+    },
+    {
+      "id": "s176-q11",
+      "source_record_id": "T03-S0026",
+      "answer_id": "T3-P176-Q11",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Mümtaz'ın tarihî dönem romanına Şeyh Gâlip'in adını vermesi kişiliğini ve sanatını nasıl gösterir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.169'da tarihî roman taslağı ile Nuran'ın Mümtaz'a etkisinin birlikte anlatıldığı bölümü düşünün."
+      }
+    },
+    {
+      "id": "s176-q12",
+      "source_record_id": "T03-S0027",
+      "answer_id": "T3-P176-PERF12",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Önemli tarihî olayları anlatan türkü, şarkı veya marşlara örnekler verip tarihî bağlarını açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitapta özel eser adları sıralanmıyor. Bildiğiniz veya araştırdığınız bir eseri adı ve tarihî bağlamıyla paylaşın; uydurma eser adı üretmeyin.",
+        "items": [
+          "Eserin adı ve türü",
+          "İlişkili tarihî olay veya dönem",
+          "Eserde vurgulanan duygu ve toplumsal hafıza"
+        ]
+      }
+    },
+    {
+      "id": "s176-q13",
+      "source_record_id": "T03-S0028",
+      "answer_id": "T3-P176-Q13",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Nuran ve Mümtaz'ın mekânlara müzikle ilgili adlar vermesi sanatın hayatlarındaki yerini nasıl gösterir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.168'deki Derûnidil ve Nühüft beste adlarından hareketle müzik, mekân ve ortak hatıra bağını kurun."
+      }
+    }
+  ]
+}
