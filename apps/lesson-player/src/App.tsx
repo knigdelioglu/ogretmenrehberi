@@ -171,31 +171,29 @@ function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
 
 export default function App() {
   const [index, setIndex] = useState(restoredIndex);
+  const [overrideRestore] = useState(restoredOverrides);
+  const [overrideWarning, setOverrideWarning] = useState(overrideRestore.warning);
   const [outlineOpen, setOutlineOpen] = useState(true);
   const [presentationMode, setPresentationMode] = useState(
     () => window.localStorage.getItem(modeKey) === "true"
   );
   const [editorOpen, setEditorOpen] = useState(false);
-  const [overrides, setOverrides] = useState<StepOverrides>(restoredOverrides);
-  const [stepOrder, setStepOrder] = useState<string[]>(restoredOrder);
+  const [overrides, setOverrides] = useState<StepOverrides>(overrideRestore.overrides);
+  const [stepOrder, setStepOrder] = useState<string[]>(
+    () => displayOnly ? lesson.steps.map((item) => item.id) : restoredOrder()
+  );
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
   const [vocabularyTerms, setVocabularyTerms] = useState<Record<string, string[]>>({});
   const projectionChannelRef = useRef<BroadcastChannel | null>(null);
   const projectionStateRef = useRef<ProjectionSyncState>({
+    lessonId: lesson.lesson_id,
+    stepId: lesson.steps[0].id,
     index,
     stepOrder,
-    overrides,
+    overrides: {},
     revealed: [],
     vocabularyTerms: {}
   });
-
-  projectionStateRef.current = {
-    index,
-    stepOrder,
-    overrides,
-    revealed: studentVisibleRevealKeys(revealed),
-    vocabularyTerms
-  };
 
   const effectiveSteps = useMemo(
     () =>
@@ -207,6 +205,16 @@ export default function App() {
     [overrides, stepOrder]
   );
   const step = effectiveSteps[index];
+
+  projectionStateRef.current = {
+    lessonId: lesson.lesson_id,
+    stepId: step.id,
+    index,
+    stepOrder,
+    overrides: studentVisibleOverrides(overrides),
+    revealed: studentVisibleRevealKeys(revealed),
+    vocabularyTerms
+  };
 
   const goTo = useCallback((next: number) => {
     const clamped = Math.max(0, Math.min(lesson.steps.length - 1, next));
