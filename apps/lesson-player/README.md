@@ -15,13 +15,14 @@ Mevcut doğrulanmış dersler:
 - **2. Tema / Türk Dilleri + Oğulla Buluşma** — basılı s.89–107 — 37 ders adımı / 32 source kaydı / 36 cevap
 - **3. Tema / Mehmet Âkif Ersoy çözümlemesi** — basılı s.202–205 — 17 ders adımı / 12 source kaydı / 12 cevap
 - **3. Tema / Usûlî — Tezkire ve biyografi** — basılı s.206–209 — 15 ders adımı / 11 source kaydı / 10 cevap
+- **3. Tema / Kemal Tahir — Hayalî Mülakat** — basılı s.210–214 — 19 ders adımı / 8 source kaydı / 9 cevap
 - **2. Tema / Eski İstanbul’dan Çizgiler + Süreç Değerlendirmesi** — basılı s.108–112 — 15 ders adımı / 11 source kaydı / 14 cevap
 
 1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
 2. Tema s.84–159 aralığı **9 doğal ders bloğuyla** kapsanır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
 
-3. Tema Lesson Player üretimi **s.160–209** aralığına ulaşmıştır: **13 doğal ders / 213 adım / 89 source / 89 answer** kaydı. Son tamamlanan iki doğal blok **Mehmet Âkif Ersoy çözümlemesi s.202–205** (17 adım, 12 source, 12 answer) ve **Usûlî / Tezkire s.206–209** (15 adım, 11 source, 10 answer). Sonraki blok s.210'dan başlar; source-index'te bu aralıktaki kayıtlar `REVIEW_REQUIRED` olduğu sürece üretim kalite kapısından geçirilmez.
+3. Tema Lesson Player üretimi **s.160–214** aralığına ulaşmıştır: **14 doğal ders / 232 adım / 97 source / 98 answer** kaydı. Son tamamlanan doğal blok **Kemal Tahir — Hayalî Mülakat s.210–214** (19 adım, 8 source, 9 answer). Bu bloktaki `T03-S0089`–`T03-S0096` kaynakları 11. sınıf ders kitabının basılı s.210–214 sayfalarıyla karşılaştırılarak `VERIFIED` durumuna alındı. Sonraki doğal blok **s.215–220 radyo tiyatrosu**; kaynak doğrulaması gereklidir.
 
 Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
