@@ -14,9 +14,11 @@ import { LessonToolbar } from "./components/LessonToolbar";
 import {
   buildExportedStep,
   canonicalLessonSignature,
+  orderEnvelope,
   overrideEnvelope,
   projectionLessonUrl,
   restoredStepIndex,
+  restoreOrderEnvelope,
   restoreOverrideEnvelope,
   studentVisibleOverrides,
   studentVisibleRevealKeys
@@ -88,7 +90,7 @@ function restoredIndex() {
   const legacyIndex = raw ? Number(raw) : 0;
   const orderedIds = displayOnly
     ? lesson.steps.map((step) => step.id)
-    : restoredOrder();
+    : initialOrderRestore.order;
   return restoredStepIndex(
     orderedIds,
     initialParams.get("step"),
@@ -134,26 +136,48 @@ function restoredOverrides(): {
   }
 }
 
-function restoredOrder(): string[] {
+function restoredOrder(): {
+  order: string[];
+  warning: string | null;
+  backupKey: string | null;
+  canPersist: boolean;
+} {
   const canonical = lesson.steps.map((step) => step.id);
+  if (displayOnly) {
+    return { order: canonical, warning: null, backupKey: null, canPersist: false };
+  }
+
   const raw = window.localStorage.getItem(orderKey);
-  if (!raw) return canonical;
+  const restored = restoreOrderEnvelope(raw, overrideSignature, canonical);
+  if (!restored.needsBackup) {
+    return {
+      order: restored.order,
+      warning: null,
+      backupKey: null,
+      canPersist: true
+    };
+  }
 
   try {
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed) || parsed.length !== canonical.length) return canonical;
-
-    const canonicalSet = new Set(canonical);
-    if (parsed.some((id) => typeof id !== "string" || !canonicalSet.has(id))) {
-      return canonical;
-    }
-
-    if (new Set(parsed).size !== canonical.length) return canonical;
-    return parsed;
+    const backupKey = `${orderKey}.backup.${Date.now()}`;
+    window.localStorage.setItem(backupKey, raw ?? "");
+    return {
+      order: canonical,
+      warning: "Önceki sürüme ait özel adım sırası yedeklendi; güncel kanonik sıra yüklendi.",
+      backupKey,
+      canPersist: true
+    };
   } catch {
-    return canonical;
+    return {
+      order: canonical,
+      warning: "Eski adım sırası yedeklenemedi; kanonik sıra gösteriliyor ve sıra kaydı korunuyor.",
+      backupKey: null,
+      canPersist: false
+    };
   }
 }
+
+const initialOrderRestore = restoredOrder();
 
 function revealOrder(step: LessonStep): RevealKey[] {
   return step.reveal_order;
@@ -175,7 +199,13 @@ function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
 export default function App() {
   const [index, setIndex] = useState(restoredIndex);
   const [overrideRestore] = useState(restoredOverrides);
-  const [overrideWarning, setOverrideWarning] = useState(overrideRestore.warning);
+  const [orderRestore] = useState(() => initialOrderRestore);
+  const [overrideWarning, setOverrideWarning] = useState(
+    () =>
+      [overrideRestore.warning, orderRestore.warning]
+        .filter(Boolean)
+        .join(" ") || null
+  );
   const [outlineOpen, setOutlineOpen] = useState(true);
   const [presentationMode, setPresentationMode] = useState(
     () => window.localStorage.getItem(modeKey) === "true"
@@ -183,7 +213,7 @@ export default function App() {
   const [editorOpen, setEditorOpen] = useState(false);
   const [overrides, setOverrides] = useState<StepOverrides>(overrideRestore.overrides);
   const [stepOrder, setStepOrder] = useState<string[]>(
-    () => displayOnly ? lesson.steps.map((item) => item.id) : restoredOrder()
+    () => displayOnly ? lesson.steps.map((item) => item.id) : orderRestore.order
   );
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
   const [vocabularyTerms, setVocabularyTerms] = useState<Record<string, string[]>>({});
@@ -451,9 +481,12 @@ export default function App() {
   }, [overrides, overrideRestore.canPersist]);
 
   useEffect(() => {
-    if (displayOnly) return;
-    window.localStorage.setItem(orderKey, JSON.stringify(stepOrder));
-  }, [stepOrder]);
+    if (displayOnly || !orderRestore.canPersist) return;
+    window.localStorage.setItem(
+      orderKey,
+      JSON.stringify(orderEnvelope(overrideSignature, stepOrder))
+    );
+  }, [stepOrder, orderRestore.canPersist]);
 
   useEffect(() => {
     if (!("BroadcastChannel" in window)) return;
@@ -602,7 +635,7 @@ export default function App() {
         lessons={lessonCatalog}
         displayOnly={displayOnly}
         overrideWarning={overrideWarning}
-        backupKey={overrideRestore.backupKey}
+        backupKey={overrideRestore.backupKey ?? orderRestore.backupKey}
         outlineOpen={outlineOpen}
         editorOpen={editorOpen}
         onWarningDismiss={() => setOverrideWarning(null)}
