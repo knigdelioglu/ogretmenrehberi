@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 13,
-  "Tema 4 s.236–302 okuma, konuşma, belgesel ve afiş bloklarını içermeli.");
+assert(theme4Lessons.length === 14,
+  "Tema 4 s.236–307 tüm doğal Lesson Player bloklarını içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -391,10 +391,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 215 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 129 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 143,
-  "Tema 4 s.236–302 toplam 13 ders / 215 ekran / 129 kaynak / 143 cevap olmalı.");
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 233 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 157,
+  "Tema 4 tamamı 14 ders / 233 ekran / 143 kaynak / 157 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -845,6 +845,45 @@ assert(posterById.get("s302-rubric")?.content?.items?.length === 5 &&
 for (const step of posterWorkshop.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Afiş s.298–302 doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
+
+const theme4Assessment = lessons.find(lesson => lesson.lesson_id === "T11-T04-DEGERLENDIRME-303-307");
+assert(theme4Assessment && theme4Assessment.printed_page_range === "303-307" &&
+  theme4Assessment.coverage.steps === 18 && theme4Assessment.coverage.source_records === 14 &&
+  theme4Assessment.coverage.answer_entries === 14,
+  "Tema 4 değerlendirme s.303–307 18 ekran / 14 kaynak / 14 cevap içermeli.");
+const theme4AssessmentById = new Map(theme4Assessment.steps.map(step => [step.id, step]));
+assert(theme4AssessmentById.size === 18, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s303-q1","T04-S0130","T4-P303-Q01"],
+  ["s304-q2","T04-S0131","T4-P304-Q02"],
+  ["s304-q3","T04-S0132","T4-P304-Q03"],
+  ["s304-q4","T04-S0133","T4-P304-Q04"],
+  ["s305-q5","T04-S0134","T4-P305-Q05"],
+  ["s305-q6","T04-S0135","T4-P305-Q06"],
+  ["s306-q7","T04-S0136","T4-P306-Q07"],
+  ["s306-q8","T04-S0137","T4-P306-Q08"],
+  ["s306-q9","T04-S0138","T4-P306-Q09"],
+  ["s307-q10","T04-S0139","T4-P307-Q10"],
+  ["s307-q11","T04-S0140","T4-P307-Q11"],
+  ["s307-q12","T04-S0141","T4-P307-Q12"],
+  ["s307-q13","T04-S0142","T4-P307-SL13"],
+  ["s307-q14","T04-S0143","T4-P307-SL14"]
+]) {
+  assert(theme4AssessmentById.get(id)?.source?.source_record_id === sourceId &&
+    theme4AssessmentById.get(id)?.answer?.question_id === answerId,
+    `Tema 4 değerlendirme kanonik bağlantı: ${id}`);
+}
+assert(theme4AssessmentById.get("s307-q11")?.content?.items?.length === 3 &&
+  theme4AssessmentById.get("s305-q5")?.answer?.answer_sections &&
+  Object.keys(theme4AssessmentById.get("s305-q5")?.answer?.answer_sections ?? {}).length === 4,
+  "İzleme mecraları tablosu ve afiş görsel değerlendirmesi yapılandırılmış kalmalı.");
+assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
+  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "source_limited",
+  "Aidiyet videosu görülmeden son iki soru kesin cevap gibi sunulmamalı.");
+for (const step of theme4Assessment.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Tema 4 s.303–307 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
