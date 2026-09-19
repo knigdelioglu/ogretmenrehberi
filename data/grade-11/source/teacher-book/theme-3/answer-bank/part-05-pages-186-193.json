@@ -136,9 +136,28 @@
       "printed_page": 189,
       "question_no": "Düşünelim Paylaşalım",
       "prompt_summary": "Verilen Huzur parçalarındaki çatışmaları ve anlatım unsurlarının katkısını tartışma",
-      "answer": "Örnek tespitler: Birinci parçada Mümtaz'ın gündelik hayat içinde taşıdığı derin hüzün, kişi–kendi iç dünyası çatışmasıdır; hâkim anlatıcı ve psikolojik çözümleme bu hüznü görünür kılar. İkinci parçada Boğaz'ın güzelliğine rağmen Mümtaz'ın yalnızlığa tahammül edememesi yine iç çatışma ve kısmen kişi–çevre ilişkisidir; diyalog çatışmayı doğrudan gösterir. Üçüncü parçada Nuran'ın İhsan ve Macide'yle tanışma isteği ile 'nişanlı olarak takdim edilme' konusundaki çekincesi arasında iç çatışma vardır; karşılıklı konuşma karakterin tereddüdünü kısa ve doğal biçimde verir.",
-      "guidance": "Tartışmada yalnız çatışmanın adını söylemek değil, hangi anlatım tekniğinin bunu görünür hâle getirdiğini göstermek gerekir.",
-      "source_locator": "basılı s.189 / PDF s.190 — Düşünelim Paylaşalım"
+      "answer": "Üç parçada aynı tür gerilim yoktur: önce Mümtaz'ın derin hüznü, ardından Boğaz'ın güzelliği karşısındaki yalnızlığı, son olarak Nuran'ın tanışmaya istekli olmasına rağmen nişanlı olarak takdim edilmekten çekinmesi görülür. Metindeki kanıtı ve anlatımın bu gerilimi nasıl açığa çıkardığını ayrı gösteriniz.",
+      "guidance": "Bu soru DÜŞÜN–EŞLEŞ–PAYLAŞ sürecidir: çatışmayı tek başına adlandırmak yeterli değil, onu belirginleştiren anlatım aracını da gösterin. Üçüncü sahnede Nuran'ın İhsan'la tanışmaktan tümüyle vazgeçtiğini söylemeyin; 'Nasıl olsa görürüz' der.",
+      "source_locator": "basılı s.189 / PDF s.190 — üç Huzur parçası ve Düşün/Eşleş/Paylaş yönergeleri",
+      "answer_sections": {
+        "1 · Vapur düdükleri ve çocukluk hatırası": {
+          "catisma": "Gündelik hayatın ortasında ortaya çıkan zenginleştirici fakat şifasız diye nitelenen hüzün; Mümtaz'ın iç dünyasında gerilim (kişi–kendisi).",
+          "anlatim": "Üçüncü kişi anlatıcı, hatıra ve vapur düdüğü çağrışımıyla Mümtaz'ın iç duygu dünyasını betimler; psikolojik çözümleme işlevi görür."
+        },
+        "2 · Kışın Boğaz ve yalnızlık": {
+          "catisma": "Boğaz'ı güzel bulduğu hâlde yalnızlığına tahammül edememe; iç çatışma, mekân ile ruh hâli etkileşimi.",
+          "anlatim": "Kış gecesi betimlemesiyle karşılıklı konuşma yan yana gelir. Mümtaz'ın 'Edemiyorum' demesi gerilimi doğrudan duyurur."
+        },
+        "3 · İhsan ve Macide ile tanışma": {
+          "catisma": "Nuran'ın onları tanımak istemesiyle bu yaşta nişanlı olarak tanıtılmayı istememesi arasında tereddüt; kişi–kendisi ve toplumsal sunuluş beklentisi.",
+          "anlatim": "Anlatıcı Nuran'ın düşünüp karar verdiğini söyler; diyalog tanışma isteği ile çekinceyi karşı karşıya getirir."
+        },
+        "Üç aşamalı sınıf çalışması": {
+          "dusun": "Üç parçanın her birinden bir gerilim ve türünü metin sözü/davranışıyla belirleyin.",
+          "esles": "Eşinizle anlatıcı, betimleme, iç çözümleme, diyalog ve hatıranın etkisini ayrı ayrı tartışın.",
+          "paylas": "Çatışmayı ve görünür kılan tekniği birlikte söyleyip gerekçelendirin."
+        }
+      }
     },
     {
       "question_id": "T3-P190-Q01",
@@ -146,21 +165,22 @@
       "printed_page": 190,
       "question_no": "Fark Edelim",
       "prompt_summary": "Huzur'daki dönem dili ile günümüz dilinin ortak ve farklı yönleri",
-      "answer": "Ortak yönler: Türkçenin temel söz dizimi, fiil çekimleri ve birçok gündelik kelime günümüzde de anlaşılır durumdadır. Farklı yönler: 'hendesi, mazi, hulya, daüssıla, bilhassa, müsvette, tasvir, âdeta' gibi bugün daha az kullanılan veya yazımı değişmiş sözler; uzun ve iç içe geçmiş cümleler; klasik musiki ve tarih söz varlığının yoğunluğu dönemin dilini günümüz gündelik kullanımından ayırır. Tanpınar'ın şiirsel ve kültürel yoğun üslubu bu farkı daha belirgin hâle getirir.",
+      "answer": "İki dilde ortak olan, Türkçenin temel söz dizimi ve gündelik iletişimidir; ayrım ise s.190'daki parçada yoğunlaşan tarihî musiki/mimari bağlamı, seyrek kullanılan sözler ve Tanpınar'ın betimleyici, çağrışımlı cümleleridir. Eski kelimeyi doğrudan 'yazım yanlışı' saymadan söz varlığı ile yazımı ayırınız.",
       "answer_sections": {
         "ortak_yonler": [
-          "Temel Türkçe söz dizimi",
-          "Fiil ve ek sisteminin sürekliliği",
-          "Günümüzde de kullanılan birçok gündelik kelime"
+          "'Ertesi gün ... dolaştılar' gibi yüklem ve olay kuruluşları bugünün Türkçesinde de anlaşılır.",
+          "'gün', 'ev', 'güneş', 'yer', 'seviyordu' gibi gündelik söz ve ekler süreklidir.",
+          "İstanbul gezileri, Nuran'ın beğenileri ve Mümtaz'ın yazma uğraşı güncel dille de anlatılabilir."
         ],
         "farkli_yonler": [
-          "Eski veya seyrek kullanılan kelimeler",
-          "Bazı eski yazım biçimleri",
-          "Uzun ve yoğun cümle kuruluşları",
-          "Klasik musiki/tarih söz varlığının yoğunluğu"
-        ]
+          "'hendesi', 'mazi', 'hülya', 'daüssıla', 'bilhassa', 'müsvedde/tasvir' gibi bugün günlük konuşmada seyrek sözler.",
+          "Şemsipaşa, Küçük Valde, Şeyh Gâlip gibi tarihî-kültürel göndermelerin yoğunluğu.",
+          "İstanbul akşamlarını 'ziyafet sofraları'na benzeten şiirsel söz söyleyişi ve uzun, çağrışımlı betimlemeler."
+        ],
+        "baglam": "Sanatçının tarihî İstanbul ve geçmiş/kimlik ilgisi dönemsel söz varlığını ve şiirsel üslubu birlikte belirler."
       },
-      "source_locator": "basılı s.190 / PDF s.191 — Fark Edelim"
+      "source_locator": "basılı s.190 / PDF s.191 — Fark Edelim",
+      "guidance": "Kitaptaki görev karşılaştırmadır: en az bir ortak ve bir farklı yönü s.190'daki belirli bir kelime veya cümleyle gerekçelendirin; 'eski Türkçe/yeni Türkçe' gibi genel etiketle yetinmeyin."
     },
     {
       "question_id": "T3-P190-GRAM01",
@@ -168,17 +188,56 @@
       "printed_page": 190,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur'dan verilen a-f cümlelerinin ögelerini belirleme",
-      "answer": "Cümle ögeleri her cümle için ayrı satırda çözümlenmiştir.",
+      "answer": "Kitabın s.190'da a–d, s.191'de e–f olarak verdiği yedi harfli altı cümle (a, b, c, ç, d, e, f) tek tek çözümlenir. b'de iki yüklem vardır; d'deki uzun zaman grubu ile nesne parçalanmaz.",
       "answer_sections": {
-        "a": "Y: bir parçasıyız · Ö: gizli biz · ZT: ister istemez",
-        "b": "1) Y: seviyoruz · Ö: gizli biz · N: eski musıkîmizi. 2) Y: anlıyoruz · Ö: gizli biz · N: ortak/eksiltili eski musıkîmizi · ZT: iyi kötü",
-        "c": "Ö: İstanbul'un bu semtleri · Y: bitaptı · ZT: bu ağustos gününde; pislikten, tozdan, sıcaktan",
-        "ç": "YT: biraz ötede · Ö: kubbesi yıkılmış bir türbe · ZT: düzgün ve vakur cephesiyle · N: kendisini · Y: gösteriyor",
-        "d": "Ö: Mümtaz · Y: anlardı · ZT: ... dinlediği zaman; ara sıra · N: hüznün şifasızlığının hangi pınarlardan toplanıp geldiğini",
-        "e": "Ö: gizli Nuran · ZT: bu gezintilerden dönüşlerinde; Şeyh Gâlip için · N: Mümtaz'ı · Y: sıkıştırıyordu",
-        "f": "Ö: Nuran · YT: medreselere; harap Tabhane'ye; ... yüzük taşı biçimine · Y: hayran oldu"
+        "a": {
+          "cumle": "İster istemez onların bir parçasıyız.",
+          "ozne": "(Biz) — gizli özne",
+          "yuklem": "onların bir parçasıyız — isim soylu yüklem",
+          "zarf_tumleci": "ister istemez"
+        },
+        "b": {
+          "cumle": "Eski musıkîmizi seviyoruz, iyi kötü anlıyoruz.",
+          "birinci_yargi": "(Biz) / eski musıkîmizi / seviyoruz — gizli özne / belirtili nesne / yüklem",
+          "ikinci_yargi": "(Biz) / (eski musıkîmizi) / iyi kötü / anlıyoruz — gizli özne / ortak-eksiltili nesne / zarf tümleci / yüklem"
+        },
+        "c": {
+          "cumle": "İstanbul'un bu semtleri bu ağustos gününde pislikten, tozdan, sıcaktan bitaptı.",
+          "ozne": "İstanbul'un bu semtleri",
+          "zaman_zarfi": "bu ağustos gününde",
+          "neden_zarflari": "pislikten, tozdan, sıcaktan",
+          "yuklem": "bitaptı — isim soylu yüklem"
+        },
+        "ç": {
+          "cumle": "Biraz ötede kubbesi yıkılmış bir türbe düzgün ve vakur cephesiyle kendisini gösteriyor.",
+          "yer_tamlayicisi": "biraz ötede",
+          "ozne": "kubbesi yıkılmış bir türbe",
+          "zarf_tumleci": "düzgün ve vakur cephesiyle",
+          "belirtili_nesne": "kendisini",
+          "yuklem": "gösteriyor"
+        },
+        "d": {
+          "ozne": "Mümtaz",
+          "zaman_zarfi": "çok küçüklük hatıralarına eğilip de vapur düdüklerinin ... akislerini dinlediği zaman — bütün zaman grubu",
+          "siklik_zarfi": "ara sıra",
+          "belirtili_nesne": "içinde kabaran ... hüznün şifasızlığının hangi pınarlardan toplanıp geldiğini — bütün isim-fiil grubu",
+          "yuklem": "anlardı"
+        },
+        "e": {
+          "cumle": "Bu gezintilerden dönüşlerinde Mümtaz'ı yazmakta olduğu Şeyh Gâlip için sıkıştırıyordu.",
+          "ozne": "(Nuran) — önceki metinden anlaşılan gizli özne",
+          "zarf_tumleci": "bu gezintilerden dönüşlerinde; yazmakta olduğu Şeyh Gâlip için",
+          "belirtili_nesne": "Mümtaz'ı",
+          "yuklem": "sıkıştırıyordu"
+        },
+        "f": {
+          "ozne": "Nuran",
+          "yer_tamlayicilari": "avlularında ot bitmiş, damı çökük, fukara yatağı medreselere; harap Tabhane'ye; Hekimoğlu Alipaşa Camii'nin yüzük taşı biçimine",
+          "yuklem": "hayran oldu"
+        }
       },
-      "source_locator": "basılı s.190-191 / PDF s.191-192 — Sıra Sizde soru 1"
+      "source_locator": "basılı s.190–191 / PDF s.191–192 — Sıra Sizde soru 1, a/b/c/ç/d/e/f cümleleri",
+      "explanation": "a–f ifadesi kitapta a, b, c, ç, d, e, f olmak üzere yedi cümledir; b kendi içinde iki yargı taşıdığı için ayrı çözülür. d'de fiilimsi içeren uzun ögeyi yalnız 'dinlediği zaman' diye kesmek doğru değildir. e'nin gizli öznesi, bir önceki s.190 paragrafındaki Nuran'dır."
     },
     {
       "question_id": "T3-P191-GRAM02",
@@ -186,8 +245,13 @@
       "printed_page": 191,
       "question_no": "Sıra Sizde 2",
       "prompt_summary": "Cümle kuruluşlarının Huzur'un anlatımına katkısı",
-      "answer": "Tanpınar kısa ve doğrudan cümlelerle temel düşünceleri vurgularken uzun ve iç içe geçmiş cümlelerle betimleme, çağrışım ve psikolojik çözümlemeyi ayrıntılandırır. Sıralı ve birleşik yapılar, Mümtaz'ın düşüncelerinin birbirine bağlanarak akmasını ve İstanbul'un çok katmanlı görünümünün aynı cümlede verilmesini sağlar. Bu çeşitlilik metne ritim, düşünsel yoğunluk ve şiirsellik kazandırır.",
-      "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 2"
+      "answer": "Kısa cümleler düşünceyi ve duygu değişimini vurgularken uzun fiilimsi grupları yer, zaman ve ruh hâlini tek bir akışta birleştirir. s.190 b'deki iki yüklem musikiyi hem sevme hem anlama eylemini art arda gösterir; s.190 d'deki uzun zaman ve nesne grupları çocukluk hatırasının hüzne bağlanmasını gecikmeli, çağrışımlı biçimde kurar. Sıralama ve ritim romanın şiirsel anlatımına hizmet eder.",
+      "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 2",
+      "answer_sections": {
+        "b · İki yargı": "Sevmek ve anlamak yüklemleri 'eski musıkî' çevresinde peş peşe gelir; vurgu artar.",
+        "d · Uzun fiilimsi grupları": "Vapur sesi ve hatıranın ayrıntıları ana yükleme kadar birikir; hüzün düşüncesinin kaynağına geçilir.",
+        "a · Kısa vurgu": "'İster istemez' zarfı ile kimliğe/aidiyete ilişkin yargı kısa ve yoğun verilir."
+      }
     },
     {
       "question_id": "T3-P191-GRAM03",
@@ -195,16 +259,15 @@
       "printed_page": 191,
       "question_no": "Sıra Sizde 3",
       "prompt_summary": "Parçadaki eski yazımları günümüz yazımına çevirme",
-      "answer": "Metindeki eski yazım biçimleri güncel yazımlarıyla şöyle karşılaştırılabilir:",
+      "answer": "Parçadaki gerçekten farklı yazılmış dört biçim fevkalâdelik, ilân, telâştan ve eksilmiyen kelimeleridir. Şikâyet ve hâlini gibi anlamı/söyleyişi ayıran şapkalı biçimler bu soru için otomatik yanlış sayılmaz.",
       "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 3",
       "answer_sections": {
         "fevkalâdelik": "fevkaladelik",
         "ilân": "ilan",
         "telâştan": "telaştan",
-        "eksilmiyen": "eksilmeyen",
-        "şikâyet": "Güncel yazımda düzeltme işareti korunabilir.",
-        "hâlini": "Anlam ve söyleyiş ayrımını göstermek için düzeltme işareti korunabilir."
-      }
+        "eksilmiyen": "eksilmeyen"
+      },
+      "explanation": "Kaynakta dört değişiklik gerekçelendirilebilir. 'şikâyet' ve 'hâlini' kelimelerini düzeltilecek yanlışlar listesine eklemeyin; düzeltme işareti, her kelimede aynı şekilde kaldırılmaz."
     },
     {
       "question_id": "T3-P191-PERF01",
@@ -212,14 +275,15 @@
       "printed_page": 191,
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Huzur'u tarih, sosyoloji ve psikolojiyle ilişkilendiren grup araştırması",
-      "answer": "Huzur'un sosyal bilimlerle ilişkisi üç disiplin grubunda incelenebilir:",
+      "answer": "Ders dışı etkinlik 1 haftalık, üç grup ve üç sözcüyle yürütülen bir araştırmadır. Her grup Huzur'dan bir sahne/ifade seçer; tarih, sosyoloji veya psikoloji açısından neden anlamlı olduğunu kendi bulgularıyla açıklar. Sonuçlar sınıfta grup sözcülerince paylaşılır.",
       "guidance": "Araştırmanın amacı romana dışarıdan bilgi yığmak değil, sosyal bilim bilgisinin metindeki olay ve kişileri nasıl daha iyi açıkladığını göstermektir.",
-      "source_locator": "basılı s.191 / PDF s.192 — Ders Dışı Etkinlik",
+      "source_locator": "basılı s.191 / PDF s.192 — Ders Dışı Etkinlik; 1 hafta, 3 grup, araştırma ve paylaşım",
       "answer_sections": {
-        "Roman–Tarih": "İstanbul'un tarihî mekânları, geçmiş kültür, modernleşme ve dönemsel değişimlerin metne yansıması.",
-        "Roman–Sosyoloji": "Yoksul semtler, sosyal sınıflar, şehir hayatı, aile/ilişki biçimleri ve yeni toplum kurma tartışmaları.",
-        "Roman–Psikoloji": "Mümtaz'ın hüzün, yalnızlık, aşk, geçmişe bağlılık ve kaygı hâlleri; kişilerin iç çatışmaları ve hatıraların davranışlara etkisi.",
-        "Çalışma kuralı": "Her bulgu romandan bir sahne veya ifadeyle eşleştirilmeli; dış kaynak bilgisi metindeki kanıttan ayrı gösterilmelidir."
+        "1 · Hazırlık": "Üç grup oluşturulur; her grup bir sözcü belirler. Süre: 1 hafta.",
+        "2 · Roman–Tarih": "Üsküdar camileri, İstanbul semtleri, eski musiki ve modernleşme için sahne → tarihî-kültürel bağ kurulur.",
+        "2 · Roman–Sosyoloji": "Yoksul semtler, şehir yaşamı, aile ve toplumsal dönüşüm tartışmalarından metin dayanakları seçilir.",
+        "2 · Roman–Psikoloji": "Mümtaz'ın yalnızlığı ve hatıraları ile Nuran'ın çekincesi gibi davranışlar metinden desteklenir.",
+        "3 · Paylaşım": "Her sözcü metin kanıtını ve grubun araştırma sonucunu ayrı belirtir; görülmemiş kaynak alıntısı uydurulmaz."
       }
     },
     {
