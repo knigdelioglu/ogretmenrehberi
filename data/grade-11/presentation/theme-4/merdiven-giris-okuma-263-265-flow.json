@@ -1,0 +1,191 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-MERDIVEN-GIRIS-263-265",
+  "lesson_slug": "merdiven-giris-263-265",
+  "title": "Merdiven — Yaşamın Evreleri ve Okuma",
+  "subtitle": "Hayatın Aynası · Küçürek hikâye / yaşam çağrışımı / ön okuma",
+  "printed_page_range": "263-265",
+  "required_source_range": {
+    "from": "T04-S0040",
+    "to": "T04-S0042"
+  },
+  "steps": [
+    {
+      "id": "s263-intro",
+      "source_record_id": "T04-S0040",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuya Başlarken — Yaşamın evrelerini görseller üzerinden tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Görselleri kitaptan inceleyin. Aynı evre farklı öğrencilerde farklı çağrışımlar oluşturabilir.",
+        "items": [
+          "Çocukluk",
+          "Gençlik",
+          "Yetişkinlik",
+          "Yaşlılık"
+        ],
+        "note": "Öğrencinin kendi yaşantısı rehber tarafından doldurulmaz."
+      }
+    },
+    {
+      "id": "s263-metaphors",
+      "source_record_id": "T04-S0040",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Yaşam–yolculuk çağrışımları — Verilen sözler size neler düşündürüyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki 'yolun başı', 'ikinci bahar' gibi sözlerin yalnız fiziksel bir yol anlatmadığını açıklayın.",
+        "items": [
+          "Başlangıç ve ilerleme",
+          "Güçlükler ve seçimler",
+          "Yavaşlama veya geri bakış",
+          "Yeniden başlama ihtimali"
+        ]
+      }
+    },
+    {
+      "id": "s263-q",
+      "source_record_id": "T04-S0040",
+      "answer_id": "T4-P263-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Konuya Başlarken 1–3 — Hangi yaşam evresini kısa bir hikâyeye dönüştürmek istersiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce görseller ve yolculuk benzetmeleri için kendi görüşünüzü oluşturun, sonra bir yaşam evresini neden seçtiğinizi açıklayın.",
+        "items": [
+          "Seçilen yaşam evresi",
+          "Bu dönemin sizde uyandırdığı duygu",
+          "Hikâyeye dönüşebilecek bir durum veya karşılaşma"
+        ]
+      }
+    },
+    {
+      "id": "s264-short-story",
+      "source_record_id": "T04-S0041",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Bilgi Köşesi — Küçürek hikâyenin ayırt edici özelliklerini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.264'teki kısa açıklamayı okuyun; yalnız metnin kısalığını değil, az sözle çağrışım kurmasını da düşünün.",
+        "sections": [
+          {
+            "title": "Hacim",
+            "body": "Sınırlı sözcükle kurulan çok kısa anlatı."
+          },
+          {
+            "title": "Yoğunluk",
+            "body": "Ayrıntılı açıklamanın yerine seçilmiş olay, söz veya görüntüler."
+          },
+          {
+            "title": "Şiirsellik",
+            "body": "Sözcük tekrarları ve çağrışımla çoğalan anlam."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s264-ordinary",
+      "source_record_id": "T04-S0042",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Günlük hayatın hangi durumları edebî metne dönüşebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki görselleri inceleyip aynı olayın hikâye, şiir ve tiyatroda farklı biçimlerde kurulabileceğini düşünün.",
+        "items": [
+          "Sıradan bir karşılaşma",
+          "Kuşaklar arası bir konuşma",
+          "Çalışma hayatından bir an",
+          "Gündelik bir kararın büyük çağrışımı"
+        ]
+      }
+    },
+    {
+      "id": "s264-stairs",
+      "source_record_id": "T04-S0042",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Yaşam ve merdiven — Ortak çağrışımlarını karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Fiziksel merdivenin hareketini hayata uygularken bunun henüz metin öncesi tahmin olduğunu açık tutun.",
+        "sections": [
+          {
+            "title": "Basamak",
+            "body": "Zamanla ilerleme veya yaşam evresi."
+          },
+          {
+            "title": "Çıkma",
+            "body": "Hedefe yönelme, yükselme veya çaba."
+          },
+          {
+            "title": "İnme",
+            "body": "Yavaşlama, geri dönme ya da bakış açısı değişimi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s264-aim",
+      "source_record_id": "T04-S0042",
+      "answer_id": "T4-P264-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Okumayı Yönetebilme — Merdiven için okuma amacı ve ilk tahmininizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Başlık üzerinden bir tahmin söyleyin. Metni okuyunca hangi kısmının doğrulandığını ayrıca kaydedeceksiniz.",
+        "items": [
+          "Metinden öğrenmek istediğiniz soru",
+          "Başlığın düşündürdüğü olası anlam",
+          "Tahmini dayandırdığınız başlık veya görsel"
+        ],
+        "note": "Okuma sonrası bulunan anlam ilk tahmin olarak yeniden yazılmaz."
+      }
+    },
+    {
+      "id": "s265-read",
+      "source_record_id": "T04-S0042",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Metni Okuyalım — Ferit Edgü'nün Merdiven hikâyesini kitaptan okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.265'te metnin tamamını okuyun. Kısa cümleler ve tekrarlar üzerinden hız değişimini fark edin.",
+        "items": [
+          "İlk karşılaşmada kim kime yol veriyor?",
+          "İhtiyarın ikinci sözünde ne değişiyor?",
+          "Delikanlı sahneye geldiğinde ne tersine dönüyor?",
+          "Anlatıcının son kararı önceki hareketlerinden nasıl ayrılıyor?"
+        ],
+        "note": "Ana hikâye metni Lesson Player'a kopyalanmaz; kitaptan okunur."
+      }
+    },
+    {
+      "id": "s265-check",
+      "source_record_id": "T04-S0042",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ön tahmini kontrol edin — Metinde merdiven yalnız fiziksel bir mekân mı?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk tahmininize dönün ve daha sonra s.267–270'te tartışacağınız simgesel anlamlara hazırlık yapın.",
+        "sections": [
+          {
+            "title": "Somut düzey",
+            "body": "Memurların katlar arasında inip çıkması ve yolda karşılaşması."
+          },
+          {
+            "title": "Çağrışım",
+            "body": "Anlatıcının hayata, yaşlanmaya ve çalışmaya bakışındaki değişimi düşündüren tekrarlar."
+          }
+        ]
+      }
+    }
+  ]
+}
