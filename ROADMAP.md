@@ -437,4 +437,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** Huzur s.164–193 tamamlandı; biyografi Mehmet Akif giriş/okuma/söz varlığı s.194–198 hazır. Sıradaki doğal blok s.199–201 Mehmet Akif metin soruları ve çalışma kâğıdı. Tema 3 mevcut: 10 ders / 165 adım / 61 VERIFIED kaynak kullanımı / 62 answer (s.178–179 kaynağı iki blokta ortaktır). Tema 1 ve 2 kalite kapsamını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** Mehmet Akif biyografisi s.194–201 giriş, metin ve çalışma kâğıdı hazır. Sıradaki küçük doğal blok s.202–205 öznel/nesnel anlatım, biyografi türü ve Huzur karşılaştırmasıdır; gerçek kitap sayfaları doğrulanarak üretilecek. Tema 3 mevcut: 11 ders / 181 adım / 66 VERIFIED kaynak kullanımı / 67 answer (s.178–179 kaynak kaydı iki blokta ortaktır). Tema 1 ve 2 kalite kapsamını korumak.

@@ -1126,6 +1126,60 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-vocab.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s198-vocab"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-q1.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s199-q1"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-q2.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s199-q2"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-q3.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s199-q3"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-visual.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s200-task"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-work.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s201-work"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-messages.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s201-message"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1251,5 +1305,11 @@ jobs:
             lesson-player-theme3-bio-reading.png
             lesson-player-theme3-bio-anthem.png
             lesson-player-theme3-bio-vocab.png
+            lesson-player-theme3-akif199-q1.png
+            lesson-player-theme3-akif199-q2.png
+            lesson-player-theme3-akif199-q3.png
+            lesson-player-theme3-akif199-visual.png
+            lesson-player-theme3-akif199-work.png
+            lesson-player-theme3-akif199-messages.png
             apps/lesson-player/dist
           if-no-files-found: error
