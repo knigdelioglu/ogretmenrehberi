@@ -1,0 +1,342 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-AFIS-ATOLYESI-298-302",
+  "lesson_slug": "afis-atolyesi-298-302",
+  "title": "Fedakârlık Belgeseli — Afiş Yazma Atölyesi",
+  "subtitle": "Hayatın Aynası · Mesaj / görsel hiyerarşi / telif / öğrenme günlüğü",
+  "printed_page_range": "298-302",
+  "required_source_range": {
+    "from": "T04-S0117",
+    "to": "T04-S0129"
+  },
+  "steps": [
+    {
+      "id": "s298-reference",
+      "source_record_id": "T04-S0117",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Afiş Tasarımında Değerlendirme Kriterleri — Dört temel ilkeyi okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.298'deki metni okuyup afiş tasarımında mesaj, mesaj–imge bütünlüğü, sözel hiyerarşi ve fark edilirlik ilkelerini ayırın.",
+        "items": [
+          "Mesaj",
+          "Mesaj–imge bütünlüğü",
+          "Sözel hiyerarşi",
+          "Fark edilirlik"
+        ],
+        "note": "Afişte sözel unsurların azaltılması, tek güçlü görsel ve okunaklı yazı karakteri gibi önerileri tasarım kararlarınızda kullanın."
+      }
+    },
+    {
+      "id": "s299-q1",
+      "source_record_id": "T04-S0118",
+      "answer_id": "T4-P299-Q01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Yazmayı Yönetebilme 1 — Bir afişte ilk dikkatinizi ne çeker?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Renk, slogan, fotoğraf, tipografi veya başka bir unsur seçebilirsiniz; nedenini kısa algılama süresiyle ilişkilendirin."
+      }
+    },
+    {
+      "id": "s299-q2",
+      "source_record_id": "T04-S0119",
+      "answer_id": "T4-P299-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Yazmayı Yönetebilme 2 — Afişlerin insanları etkileme gücü nereden gelir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Görsel, renk, yazı büyüklüğü, slogan ve hedef kitle uyumunun birlikte oluşturduğu etkiyi açıklayın."
+      }
+    },
+    {
+      "id": "s299-q3",
+      "source_record_id": "T04-S0120",
+      "answer_id": "T4-P299-Q03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Yazmayı Yönetebilme 3 — Etkili bir afişte hangi unsurlar bulunabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her unsurun ana mesaja hizmet etmesini sağlayın; gereksiz ayrıntıyı tasarım zenginliği sanmayın.",
+        "items": [
+          "Kısa başlık veya slogan",
+          "Ana görsel",
+          "Zemin / renk",
+          "Okunaklı yazı",
+          "Gerekirse kısa destekleyici bilgi"
+        ]
+      }
+    },
+    {
+      "id": "s299-task",
+      "source_record_id": "T04-S0121",
+      "answer_id": "T4-P299-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Performans Görevi — Fedakârlık belgeselinin içeriğini yansıtan özgün bir afiş planlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce kendi izleme notlarınızdan doğruladığınız tek bir ana ileti seçin; ardından bu iletiyi görselleştirecek afiş planını oluşturun.",
+        "items": [
+          "Afişi hazırlama amacı",
+          "Afişin temel özellikleri",
+          "Hedef kitle",
+          "Yazma/tasarım stratejisi",
+          "Seçilecek ana ileti"
+        ],
+        "note": "Belgesel görülmeden Lesson Player slogan veya sahne uydurmaz."
+      }
+    },
+    {
+      "id": "s299-strategy",
+      "source_record_id": "T04-S0121",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Afiş stratejisi — Mesajı altı saniyede anlaşılır kılacak biçimde sadeleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "3–4 slogan taslağı üretin; en açık ve kısa olanı seçin. Görselin slogandaki sözcükleri tekrar etmek yerine mesajı güçlendirmesini sağlayın.",
+        "sections": [
+          {
+            "title": "Slogan",
+            "body": "3–6 sözcük, kısa ve akılda kalıcı."
+          },
+          {
+            "title": "Görsel",
+            "body": "Tek güçlü imge; ana iletiyi yorumlayan veya destekleyen."
+          },
+          {
+            "title": "Hiyerarşi",
+            "body": "İlk bakışta neyin önce görüleceği açık."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s300-content",
+      "source_record_id": "T04-S0122",
+      "answer_id": "T4-P300-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İçerik Oluşturabilme — Görsel, renk, yazı ve bilgi kararlarını yapılandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Çevredeki afişleri inceleyip hızlı anlaşılan tasarımların ortak özelliklerini belirleyin.",
+        "items": [
+          "Bir ana görsel seçin.",
+          "İki veya üç temel renk belirleyin.",
+          "Uzaktan okunabilen yazı karakteri kullanın.",
+          "Bilgileri ana iletiyi destekleyenlerle sınırlandırın.",
+          "Görsel–slogan ilişkisini kontrol edin.",
+          "Taslağı kısa süre gösterip geri bildirim alın."
+        ]
+      }
+    },
+    {
+      "id": "s300-message",
+      "source_record_id": "T04-S0122",
+      "answer_id": "T4-P300-SL01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "İçerik Oluşturabilme c–ç — Belgeselden afişte öne çıkaracağınız iletiyi seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kendi s.286–296 notlarınızdan 2–4 ileti çıkarın; her biri için videodaki kanıtı gösterin ve tek bir iletiyi afiş için seçin.",
+        "sections": [
+          {
+            "title": "Belgeseldeki ileti",
+            "body": "Gerçek video notundan alınan yargı."
+          },
+          {
+            "title": "Kanıt",
+            "body": "Söz, davranış veya sahne."
+          },
+          {
+            "title": "Afişte görünür hâle getirme",
+            "body": "Slogan ve görselin iletiyi nasıl taşıyacağı."
+          }
+        ],
+        "note": "Fedakârlık videosunun gerçek içeriği görülmeden hazır mesaj/slogan verilmez."
+      }
+    },
+    {
+      "id": "s301-finalize",
+      "source_record_id": "T04-S0122",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Taslak planı geri bildirimle son hâline getiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Taslağı bir arkadaşınıza birkaç saniye gösterin ve üç soruyla test edin.",
+        "items": [
+          "İlk neyi gördün?",
+          "Afişin mesajı ne?",
+          "Neresi kalabalık veya anlaşılması zor?"
+        ]
+      }
+    },
+    {
+      "id": "s301-rules",
+      "source_record_id": "T04-S0123",
+      "answer_id": "T4-P301-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kural Uygulayabilme — Son ürünü sekiz kontrol başlığında gözden geçiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yeni unsur eklemek yerine gerektiğinde tasarımı sadeleştirin.",
+        "items": [
+          "Plana bağlılık",
+          "Özgün duygu/düşünce",
+          "Hedef kitleye uygun söz varlığı ve üslup",
+          "İletinin dikkat çekici verilmesi",
+          "İfadelerin tutarlılığı",
+          "Türkçe, bağdaşıklık, yazım ve noktalama",
+          "Millî-manevi/kültürel unsurların bağlama uygunluğu",
+          "Toplumsal hassasiyetlere uygunluk"
+        ]
+      }
+    },
+    {
+      "id": "s301-model",
+      "source_record_id": "T04-S0123",
+      "answer_id": "T4-P301-PERF02",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Örnek afiş iskeleti — Kopyalanacak tasarım değil, yapı modeli.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üstte kısa slogan, merkezde tek güçlü görsel, altta gerekiyorsa tek cümle destekleyici açıklama düşünün.",
+        "note": "Slogan, kişi ve görsel içeriği öğrencinin gerçek video notlarına göre üretilir; model aynen kopyalanmaz."
+      }
+    },
+    {
+      "id": "s302-q1",
+      "source_record_id": "T04-S0124",
+      "answer_id": "T4-P302-PERFQ01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 1 — Afiş hazırlama sürecinde sizde ne değişti?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Başlangıçtaki tasarım anlayışınız ile son üründeki kararlarınızı karşılaştırın; gerçek süreçte yaşamadığınız değişimi yazmayın."
+      }
+    },
+    {
+      "id": "s302-q2",
+      "source_record_id": "T04-S0125",
+      "answer_id": "T4-P302-PERFQ02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 2 — Afişi içerik, dil ve anlatım yönünden değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her başlık için bir güçlü yön ve gerekiyorsa bir geliştirme noktası belirleyin.",
+        "items": [
+          "İçerik: ana ileti belgeselle ilişkili mi?",
+          "Dil: slogan kısa, doğru ve hedef kitleye uygun mu?",
+          "Anlatım: başlık, görsel ve yardımcı unsurlar aynı mesajı destekliyor mu?"
+        ]
+      }
+    },
+    {
+      "id": "s302-q3",
+      "source_record_id": "T04-S0126",
+      "answer_id": "T4-P302-PERFQ03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 3 — Görsel ve alıntıları telif, hakkaniyet ve dürüstlük açısından kontrol ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kendi üretiminiz ile dışarıdan aldığınız içeriği ayırın; izinsiz görseli veya başkasının tasarımını kendi üretiminiz gibi sunmayın."
+      }
+    },
+    {
+      "id": "s302-q4",
+      "source_record_id": "T04-S0127",
+      "answer_id": "T4-P302-PERF04",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 4 — Son afişi uygun okul ortamında paylaşmaya hazırlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Paylaşmadan önce kişisel veri, izin, telif, yazım ve okunabilirlik kontrolü yapın.",
+        "items": [
+          "Sınıf / okul panosu",
+          "Okulun resmî çevrim içi ortamı",
+          "Baskı boyutu / çözünürlük",
+          "Kaynak ve izin kontrolü"
+        ]
+      }
+    },
+    {
+      "id": "s302-rubric",
+      "source_record_id": "T04-S0128",
+      "answer_id": "T4-P302-PERF05",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Değerlendirme — Kitapta görünür ölçütlerle son ürünü gözden geçiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "QR'deki ayrıntılı dereceli puanlama anahtarı görülmeden puan, seviye veya yeni rubrik maddesi üretmeyin.",
+        "items": [
+          "Konuya uygunluk",
+          "Yaratıcılık",
+          "Özgünlük",
+          "Etkileyicilik",
+          "Görsel/işitsel ögelerin seçimi"
+        ],
+        "note": "Öğretmen geri bildirimi sonrası eksikler son üründe düzeltilir."
+      }
+    },
+    {
+      "id": "s302-journal",
+      "source_record_id": "T04-S0129",
+      "answer_id": "T4-P302-PERF06",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Tema Sonu Değerlendirme — Öğrenme Günlüğü'nü kendi öğrenme kanıtlarınızla tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Genel övgü yerine en az bir metin, etkinlik veya beceri örneğine dayanın.",
+        "items": [
+          "Tema öncesi bildiklerim",
+          "Tema sonrasında öğrendiklerim",
+          "Hayatın gerçeklerinin duygu/düşünce/davranışlara yansımasına ilişkin fark ettiklerim",
+          "Kelime dağarcığı, anlatım ve dil kullanımına etkisi",
+          "Konuşmacı ve yazar kimliğime etkisi"
+        ]
+      }
+    },
+    {
+      "id": "s302-next",
+      "source_record_id": "T04-S0129",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Tema sonu günlüğünden sonraki kişisel hedefinizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir sonraki yazma veya konuşma görevi için yalnız bir gözlenebilir davranış seçin.",
+        "sections": [
+          {
+            "title": "Hedef",
+            "body": "Örneğin ana iletiyi tasarımdan önce tek cümlede netleştirmek."
+          },
+          {
+            "title": "Uygulama",
+            "body": "İlk taslağa başlamadan 3 kısa mesaj seçeneği üretmek."
+          },
+          {
+            "title": "Kontrol",
+            "body": "Akran geri bildiriminde mesajın ilk bakışta anlaşılması."
+          }
+        ]
+      }
+    }
+  ]
+}
