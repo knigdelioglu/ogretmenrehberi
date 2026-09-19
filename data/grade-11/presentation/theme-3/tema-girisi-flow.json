@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-GIRIS",
+  "lesson_slug": "tema-3-girisi",
+  "title": "3. Tema — Giriş",
+  "subtitle": "Yaşamın İzinde · 11. Sınıf",
+  "printed_page_range": "160-163",
+  "required_source_range": {
+    "from": "T03-S0001",
+    "to": "T03-S0007"
+  },
+  "steps": [
+    {
+      "id": "s160-overview",
+      "source_record_id": "T03-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yaşamın İzinde — Tema yol haritası",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu temada hayatın ve sanatçının yaşantısının edebî esere nasıl dönüştüğünü roman, yaşam öyküsü ve sesli anlatım üzerinden araştırın.",
+        "sections": [
+          {
+            "title": "Okuma",
+            "body": "Huzur romanı, Mehmet Âkif Ersoy biyografisi ve Usûlî hakkında tezkireyi okuyarak gerçek yaşam, kurmaca ve kişi tanıtımını karşılaştırın."
+          },
+          {
+            "title": "Dinleme / İzleme",
+            "body": "Direnişin Ustaları radyo tiyatrosunu dinleyerek olayları, kişileri ve sesle kurulan anlatımı çözümleyin."
+          },
+          {
+            "title": "Konuşma",
+            "body": "Seçtiğiniz roman kişisiyle eserin bağlamına uygun hayalî bir mülakat gerçekleştirin."
+          },
+          {
+            "title": "Yazma",
+            "body": "Dinlediğiniz / izlediğiniz metinden seçtiğiniz bir diyaloğu bağlamına uygun biçimde başka bir türe dönüştürün."
+          }
+        ],
+        "note": "Anahtar kavramlar: kurmaca, gerçek, yaşam öyküsü, roman, tezkire, üslup, nesnellik, öznellik ve radyo tiyatrosu."
+      }
+    },
+    {
+      "id": "s161-theme-presentation",
+      "source_record_id": "T03-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Hoca Ahmed Yesevî — Dîvân-ı Hikmet ile temaya giriş",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tema sunusundaki dizeler, gönlü kırılmış kişiye destek olma ve yardıma ihtiyaç duyana yoldaşlık etme çağrısı yapar.",
+        "sections": [
+          {
+            "title": "Yaşamla bağ",
+            "body": "Edebî söz, kişinin başka insanların yaşantısına duyarlı biçimde yaklaşmasını ve yaşam karşısında tutum geliştirmesini sağlayabilir."
+          },
+          {
+            "title": "Tema sorusu",
+            "body": "İnsanın yaşadıkları, değerleri ve çevresindeki kişiler bir edebî eserin içeriğine ve söyleyişine nasıl yansıyabilir?"
+          }
+        ],
+        "note": "Basılı s.161'deki Yesevî dizelerini öğrenciler kitaptan okusun; yalnız metnin iletisini kaynakla sınırlı biçimde tartışın."
+      }
+    },
+    {
+      "id": "s162-q1",
+      "source_record_id": "T03-S0002",
+      "answer_id": "T3-P162-Q01",
+      "layout": "question",
+      "prompt": "Görselde yol üzerinde yürüyen insan neyi temsil ediyor olabilir? Açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.162'deki yol, yürüyen insan ve saat ayrıntılarını birlikte inceleyin."
+      }
+    },
+    {
+      "id": "s162-q2",
+      "source_record_id": "T03-S0003",
+      "answer_id": "T3-P162-Q02",
+      "layout": "question",
+      "prompt": "Görselin kendi hayatınızla ilgili çağrıştırdıklarını gerekçeleriyle açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s162-q3",
+      "source_record_id": "T03-S0004",
+      "answer_id": "T3-P162-Q03",
+      "layout": "question",
+      "prompt": "Görselden hareketle yaşama dair hangi çıkarımlarda bulunabilirsiniz? Açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s162-q4",
+      "source_record_id": "T03-S0005",
+      "answer_id": "T3-P162-Q04",
+      "layout": "question",
+      "prompt": "Görsel bir roman kapağına ait olsaydı romana hangi adı verirdiniz? Gerekçelendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s163-q5",
+      "source_record_id": "T03-S0006",
+      "answer_id": "T3-P163-Q05",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Radyo ve kayıt yapılan mülakat görselleri size neleri çağrıştırıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki görseli birbirinden ayırın: ilkinde radyo cihazı, ikincisinde kamera karşısındaki söyleşi gösteriliyor.",
+        "sections": [
+          {
+            "title": "İlk görsel — Radyo",
+            "body": "Ses, anlatı, dinleyici ve kitle iletişimi."
+          },
+          {
+            "title": "İkinci görsel — Mülakat",
+            "body": "Sorular, yanıtlar, kişisel deneyim ve görüntülü kayıt."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s163-q6",
+      "source_record_id": "T03-S0007",
+      "answer_id": "T3-P163-Q06",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Alev Alatlı hakkında verilen metin ile Sehî Beg'in Yahyâ maddesinin ortak ve farklı yönlerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki iki metni okuyun; tanıtılan kişi, meslek, eser, üslup ve anlatım uzunluğu yönünden karşılaştırın.",
+        "sections": [
+          {
+            "title": "Ortak yön",
+            "body": "İkisi de edebî kişiliği yaşamı ve eserleri üzerinden tanıtır."
+          },
+          {
+            "title": "Alev Alatlı metni",
+            "body": "Modern, ayrıntılı ve çözümleyici; romanların konuları, söz varlığı ve anlatım yolları üzerinde durur."
+          },
+          {
+            "title": "Yahyâ tezkiresi",
+            "body": "Kısa, tarihî söyleyişli ve övgü içeren; köken, meslek, üslup ve Şâh u Gedâ hakkında özlü bilgi verir."
+          }
+        ]
+      }
+    }
+  ]
+}

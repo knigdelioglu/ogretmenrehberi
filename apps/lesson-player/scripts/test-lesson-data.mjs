@@ -14,6 +14,7 @@ assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
 
 const theme1Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_01");
 const theme2Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_02");
+const theme3Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_03");
 
 assert(
   theme1Lessons.length === 7,
@@ -24,6 +25,8 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
+assert(theme3Lessons.length === 1, "Tema 3 üretimi başlangıçta tek giriş bloğu içermeli.");
+
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
   byLessonId.size === lessons.length,
@@ -33,6 +36,40 @@ assert(
   new Set(lessons.map((lesson) => lesson.lesson_slug)).size === lessons.length,
   "Lesson catalog içinde yinelenen lesson_slug olmamalı."
 );
+
+const theme3Intro = byLessonId.get("T11-T03-GIRIS");
+assert(theme3Intro, "3. Tema giriş dersi catalog içinde bulunamadı.");
+assert(
+  theme3Intro.printed_page_range === "160-163" &&
+  theme3Intro.coverage.steps === 8 &&
+  theme3Intro.coverage.source_records === 7 &&
+  theme3Intro.coverage.answer_entries === 6,
+  "Tema 3 girişi 8 adım / 7 source / 6 answer içermeli."
+);
+const theme3IntroById = new Map(theme3Intro.steps.map(step => [step.id, step]));
+assert(
+  theme3IntroById.get("s160-overview")?.answer === null &&
+  theme3IntroById.get("s161-theme-presentation")?.answer === null &&
+  theme3IntroById.get("s160-overview")?.layout === "reference",
+  "s.160–161 kaynak açılışı soru gibi cevaplanmamalı."
+);
+assert(
+  theme3IntroById.get("s162-q1")?.answer?.question_id === "T3-P162-Q01" &&
+  theme3IntroById.get("s162-q4")?.answer?.question_id === "T3-P162-Q04" &&
+  theme3IntroById.get("s163-q5")?.answer?.question_id === "T3-P163-Q05" &&
+  theme3IntroById.get("s163-q6")?.answer?.question_id === "T3-P163-Q06",
+  "s.162 dört ve s.163 iki sorunun kanonik cevapları bulunmalı."
+);
+assert(
+  theme3IntroById.get("s163-q5")?.content?.sections?.length === 2 &&
+  theme3IntroById.get("s163-q6")?.layout === "comparison" &&
+  Object.keys(theme3IntroById.get("s163-q6")?.answer?.answer_sections ?? {}).length === 2,
+  "Radyo/mülakat ve biyografi/tezkire karşılaştırmaları ayrı, yapılandırılmış olmalı."
+);
+for(const step of theme3Intro.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Tema 3 giriş source kaydı VERIFIED olmalı: ${step.source.source_record_id}`);
+}
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");

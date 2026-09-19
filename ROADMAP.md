@@ -314,7 +314,9 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Dinleme / İzleme — Âşık Atışması — s.136–147
   - [x] Yazma — Çevrim İçi Müze — s.148–154
   - [x] Ölçme ve Değerlendirme — s.155–159
-- [ ] 3. Tema — Yaşamın İzinde
+- [~] 3. Tema — Yaşamın İzinde
+  - [x] Tema Girişi / Temaya Başlarken — s.160–163
+  - [ ] Huzur: Konuya Başlarken / Metni Okuyalım — s.164–174
 - [ ] 4. Tema — Hayatın Aynası
 
 Her tema için aynı pipeline:
@@ -425,4 +427,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** ilk doğal bloğun sayfa sınırlarını resmî ders kitabında doğrulayıp küçük blokla Lesson Player üretimine başlamak. Tema 2 için 9 ders / 187 adım / 158 VERIFIED source / 167 answer kapsamını ve Tema 1 kalite dondurmasını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** s.164–174 Huzur / Konuya Başlarken–Metni Okuyalım doğal bloğunu resmî kitabın sayfalarıyla doğrulayarak üretmek. Tema 3 giriş s.160–163: 1 ders / 8 adım / 7 VERIFIED source / 6 answer. Tema 1 ve 2 kalite kapsamını korumak.
