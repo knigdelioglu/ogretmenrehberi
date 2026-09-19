@@ -125,6 +125,25 @@ try {
       localStorage.getItem(key + ".index") === "1";
   })()`), "Reordered deep link reload");
 
+  await teacher.evaluate(
+    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Düzenle').click()"
+  );
+  await until(
+    () => teacher.evaluate("Array.from(document.querySelectorAll('button')).some(b => b.textContent.includes('Tüm sunum ayarlarını sıfırla'))"),
+    "Reset editor action"
+  );
+  await teacher.evaluate(
+    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Tüm sunum ayarlarını sıfırla')).click()"
+  );
+  await until(() => teacher.evaluate(`(() => {
+    const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
+    const order = JSON.parse(localStorage.getItem(key + ".order") ?? "[]");
+    return order[0] === "s15-q1" &&
+      localStorage.getItem(key + ".step-id") === "s15-q1" &&
+      localStorage.getItem(key + ".index") === "0" &&
+      new URLSearchParams(location.search).get("step") === "s15-q1";
+  })()`), "Reset restores the canonical step and deep link");
+
   const reference = `${root}/?lesson=T11-T01-KARAGOZ&step=s26-reference`;
   await teacher.send("Page.navigate", { url: reference });
   await until(
@@ -198,7 +217,7 @@ try {
   })()`);
   if (!safe) throw new Error("Legacy overrides masked current content or were not backed up.");
 
-  console.log("Browser runtime assertions passed: reordered reload, student note isolation, cross-lesson projection, stale edit backup.");
+  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup.");
 } finally {
   for (const client of clients) client.close();
   browser.kill();
