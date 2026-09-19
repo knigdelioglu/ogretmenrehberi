@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 4, "Tema 3 giriş, Huzur okuma, s.175–176 ve s.177–178 bloklarını içermeli.");
+assert(theme3Lessons.length === 5, "Tema 3 beş doğal bloğu içermeli: giriş, okuma, anlama, karşılaştırma ve okuma çemberi.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -124,10 +124,10 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===55 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===31 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===32,
-  "Tema 3 mevcut kapsamı 55 adım / 31 source / 32 answer olmalı.");
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===72 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===33 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===34,
+  "Tema 3 mevcut kapsamı 72 adım / 33 source / 34 answer olmalı.");
 
 
 const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
@@ -166,10 +166,10 @@ assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü M
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
-assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 55 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 31 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 32,
-  "Tema 3 mevcut kapsamı 4 ders / 55 adım / 31 source / 32 answer olmalı.");
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 72 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 33 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 34,
+  "Tema 3 mevcut kapsamı 5 ders / 72 adım / 33 source / 34 answer olmalı.");
 
 
 const huzur177 = byLessonId.get("T11-T03-HUZUR-177-178");
@@ -201,7 +201,7 @@ for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]
 }
 assert(huzur177ById.get("s178-circle-plan")?.answer?.question_id === "T3-P178-PERF01" &&
   huzur177ById.get("s178-circle-plan")?.answer?.entry_type === "performance_support" &&
-  Object.keys(huzur177ById.get("s178-circle-plan")?.answer?.answer_sections ?? {}).length===8,
+  Object.keys(huzur177ById.get("s178-circle-plan")?.answer?.answer_sections ?? {}).length===9,
   "Okuma çemberi rol desteği tek doğru cevap olmadan mevcut olmalı.");
 for(const id of ["s178-role-link","s178-role-visual","s178-role-inquiry","s178-role-highlight"]){
   assert(huzur177ById.get(id)?.answer===null &&
@@ -211,6 +211,61 @@ for(const id of ["s178-role-link","s178-role-visual","s178-role-inquiry","s178-r
 for(const step of huzur177.steps){
   assert(step.source.source_status==="VERIFIED",
     `s.177–178 kaynak VERIFIED olmalı: ${step.source.source_record_id}`);
+}
+
+
+const huzur179 = byLessonId.get("T11-T03-HUZUR-OKUMA-CEMBERI-179-181");
+assert(huzur179 && huzur179.printed_page_range === "179-181",
+  "Huzur Okuma Çemberi s.179–181 doğal bloğu olmalı.");
+assert(huzur179.coverage.steps === 17 &&
+  huzur179.coverage.source_records === 2 &&
+  huzur179.coverage.answer_entries === 2,
+  "Huzur Okuma Çemberi 17 adım / 2 source / 2 answer içermeli.");
+const huzur179ById = new Map(huzur179.steps.map(s => [s.id, s]));
+assert(huzur179ById.size === 17, "s.179–181 bütün ekran kimlikleri tekil olmalı.");
+for(const id of ["s179-summary","s179-words","s179-predict","s179-place","s179-character"]){
+  assert(huzur179ById.get(id)?.source?.source_record_id === "T03-S0031" &&
+    huzur179ById.get(id)?.answer === null,
+    `Kitaptaki beş seçimlik rol ayrı ve kanonik kaynaklı olmalı: ${id}`);
+}
+assert(huzur179ById.get("s179-roles-intro")?.content?.items?.length === 5 &&
+  huzur179ById.get("s179-predict")?.content?.sections?.length === 3,
+  "Beş seçimlik rolde Tahmin Edici kaybolmamalı ve tahmin-gerçek ayrımı korunmalı.");
+assert(huzur179ById.get("s179-roles-change")?.answer === null &&
+  huzur179ById.get("s179-roles-change")?.source?.source_record_id === "T03-S0031",
+  "Rol değişimi tek doğru cevap gerektirmeyen süreç olarak kalmalı.");
+const t180 = huzur179ById.get("s180-table-q3");
+assert(t180?.answer?.question_id === "T3-P180-TABLE01" &&
+  t180?.answer?.entry_type === "source_limited" &&
+  Object.keys(t180?.answer?.answer_sections??{}).length === 6 &&
+  Object.keys(t180?.answer?.answer_sections?.Mümtaz??{}).length === 2 &&
+  t180?.answer?.answer_sections?.Suat?.cikarim?.includes("uydurulmaz"),
+  "s.180 altı kişide söz/davranış ve çıkarım ayrılmalı, eksik kaynak uydurulmamalı.");
+const t181 = huzur179ById.get("s181-table-q4");
+assert(t181?.answer?.question_id === "T3-P181-TABLE02" &&
+  t181?.answer?.entry_type === "source_limited" &&
+  Object.keys(t181?.answer?.answer_sections??{}).length === 6 &&
+  t181?.answer?.answer_sections?.İhsan?.dil?.includes("doğrudan konuşması") &&
+  t181?.answer?.answer_sections?.Macide?.dil?.includes("konuşma örneği"),
+  "s.181 altı kişide kişilik/dil ayrı; konuşması olmayanlara üslup uydurulmamalı.");
+for(const id of ["s180-mumtaz-nuran","s180-ihsan-macide","s180-suat-fahir",
+  "s181-mumtaz-nuran","s181-other-people"]){
+  assert(huzur179ById.get(id)?.answer === null &&
+    huzur179ById.get(id)?.source?.source_record_id === "T03-S0032",
+    `s.180–181 kişi incelemesi doğru kaynakla ilgili olmalı: ${id}`);
+}
+const firsts = ["s181-firsts-1","s181-firsts-2"].map(id=>huzur179ById.get(id));
+assert(firsts.every(s=>s?.source?.source_record_id==="T03-S0032" && s.answer===null) &&
+  firsts.reduce((n,s)=>n+(s.content?.items?.length??0),0)===12 &&
+  firsts[1].content.items.some(x=>x.includes("Zehra")&&x.includes("natüralist")) &&
+  firsts[1].content.items.some(x=>x.includes("Yeniçeriler")&&x.includes("denemesi")),
+  "s.181 Bilgi Köşesi 12 ilk ve ayrı deneme etiketlerini korumalı.");
+assert(huzur179ById.get("s181-game-qr")?.answer === null &&
+  huzur179ById.get("s181-game-qr")?.content?.lead?.includes("Oyunun içeriği sayfada yazılı değildir"),
+  "s.181 QR oyunun görülmeyen içeriği icat edilmemeli.");
+for(const step of huzur179.steps){
+  assert(step.source.source_status === "VERIFIED",
+    `s.179–181 kaynak kaydı VERIFIED olmalı: ${step.source.source_record_id}`);
 }
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");

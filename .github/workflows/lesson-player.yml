@@ -793,6 +793,60 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-177-role-question.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-177-178&step=s178-role-inquiry"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-roles.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s179-roles-intro"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-predict.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s179-predict"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-table3.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s180-table-q3"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-table4.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s181-table-q4"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-firsts.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s181-firsts-2"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-qr.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s181-game-qr"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -881,5 +935,11 @@ jobs:
             lesson-player-theme3-huzur-177-comparison.png
             lesson-player-theme3-huzur-177-roles.png
             lesson-player-theme3-huzur-177-role-question.png
+            lesson-player-theme3-circle-roles.png
+            lesson-player-theme3-circle-predict.png
+            lesson-player-theme3-circle-table3.png
+            lesson-player-theme3-circle-table4.png
+            lesson-player-theme3-circle-firsts.png
+            lesson-player-theme3-circle-qr.png
             apps/lesson-player/dist
           if-no-files-found: error
