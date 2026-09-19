@@ -1,0 +1,187 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-DEGERLENDIRME",
+  "lesson_slug": "tema-2-degerlendirme",
+  "title": "2. Tema — Ölçme ve Değerlendirme",
+  "subtitle": "Kültür Yolculuğu · Tema sonu · 11. Sınıf",
+  "printed_page_range": "155-159",
+  "required_source_range": {
+    "from": "T02-S0150",
+    "to": "T02-S0158"
+  },
+  "steps": [
+    {
+      "id": "s155-q1",
+      "source_record_id": "T02-S0150",
+      "answer_id": "T2-P155-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Orhun Abideleri'ndeki sözler toplumun hangi özelliklerini yansıtır? Bu özellikler bugün neden önemlidir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki sekiz atasözü ve deyimi inceleyin; söyleyiş biçimi ile yansıttığı değeri ayırın.",
+        "items": [
+          "Yufka–kalın / ince–yoğun: dayanıklılık ve birlik",
+          "Kan ve ter: emek",
+          "Baş eğdirmek / diz çöktürmek: mücadele ve güç",
+          "Birleşik millet: birlik ve dayanışma",
+          "İl ve töre: düzen",
+          "Devlet sahibi olmak: bağımsızlık",
+          "Gece gündüz çalışmak: özveri",
+          "Ölesiye çalışıp kazanmak: sebat"
+        ]
+      }
+    },
+    {
+      "id": "s155-q2",
+      "source_record_id": "T02-S0151",
+      "answer_id": "T2-P155-Q02",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Bu sözlerin genel amacı hangisidir? Kitaptaki A–E seçeneklerinden birini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tablonun ortak iletisine odaklanın; tek sözün anlamıyla genel amacı ayırın.",
+        "items": [
+          "A · Ticaret",
+          "B · Günlük yaşam",
+          "C · Devletin temel değerleri",
+          "D · Sorunlara çözüm",
+          "E · Yabancı kültürlere karşı koruma"
+        ]
+      }
+    },
+    {
+      "id": "s156-source",
+      "source_record_id": "T02-S0152",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Üç eseri karşılaştırmadan önce s.156'daki bilgi kartlarını ve tabloyu okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "3–5. sorularda dönem, tür ve kültürel işlev bilgilerini birlikte kullanın.",
+        "sections": [
+          {
+            "title": "Kutadgu Bilig",
+            "body": "Yusuf Has Hacib; 11. yüzyıl, mesnevi ve siyasetname; öğretici-siyasi içerik."
+          },
+          {
+            "title": "Dede Korkut Hikâyeleri",
+            "body": "Oğuz kültürü, destan-halk hikâyesi geçişi, yiğitlik ve toplumsal hafıza."
+          },
+          {
+            "title": "Kamus-ı Türkî",
+            "body": "Şemsettin Sami; 19. yüzyıl, Tanzimat; Türkçenin söz varlığını derleyen sözlük."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s157-q3",
+      "source_record_id": "T02-S0152",
+      "answer_id": "T2-P157-Q03",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Üç eserle ilgili verilen bilgilerden hangi çıkarıma ulaşılamaz? (Soru 3)",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sözlü kültürden yazılı kültüre geçiş iddiasını her eserin tarihiyle ayrı ayrı sınayın.",
+        "items": [
+          "A · Üç eser de sözlü kültürden yazılı kültüre geçiş sırasında ortaya çıkmıştır.",
+          "B · Kutadgu Bilig ve Dede Korkut, İslamiyet etkisindeki dönemi farklı biçimlerde yansıtır.",
+          "C · Eserler, dönemlerinin toplumsal ve kültürel dünyasından izler taşır.",
+          "D · Kamus-ı Türkî, Türkçenin söz varlığını derlemeyi amaçlar.",
+          "E · Eserler, farklı dönemlerin dil ve düşünce dünyasını belgeleyebilir."
+        ]
+      }
+    },
+    {
+      "id": "s157-q4",
+      "source_record_id": "T02-S0153",
+      "answer_id": "T2-P157-Q04",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Bu eserlerden hangisi Orhun Abideleri ile benzerlik gösterir? Somut bir ortak yönle gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Benzerliği eserlerde gerçekten bulunan kültür, yönetim, toplum veya dil işlevlerinden hareketle kurun."
+      }
+    },
+    {
+      "id": "s157-q5",
+      "source_record_id": "T02-S0154",
+      "answer_id": "T2-P157-Q05",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Üç eserle ilgili notlarda I, II, III bilgilerinden hangisi hepsi için ortaktır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "sections": [
+          {
+            "title": "Önermeler",
+            "body": "I. Eserlerin yazarları · II. İlk olma niteliği · III. Yazıldıkları yüzyıllar"
+          },
+          {
+            "title": "Seçenekler",
+            "body": "A) Yalnız I · B) Yalnız II · C) Yalnız III · D) I ve II · E) I, II ve III"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s158-q6",
+      "source_record_id": "T02-S0155",
+      "answer_id": "T2-P158-Q06",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Açılan ayağa uyacak ve âşığı yenik düşürmeyecek dörtlük hangi seçenektedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki atışmayı ve A–E seçeneklerini okuyun. Son dizeyi, önceki dizelerin uyak düzenini ve söyleyiş sırasını karşılaştırın."
+      }
+    },
+    {
+      "id": "s159-q7",
+      "source_record_id": "T02-S0156",
+      "answer_id": "T2-P159-Q07",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "7/a: Hangi öğrencinin değerlendirmesi yanlıştır? 7/b: Atışma hakkında kendi değerlendirmenizi kurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki dört yargıyı dörtlüklerle karşılaştırın. Kendi görüşünüzü en az bir somut metin özelliğiyle gerekçelendirin.",
+        "items": [
+          "Esin · didaktik söyleyiş",
+          "Yunus · yerel dil",
+          "Ahmet · sanatlı söyleyiş karşılaştırması",
+          "Yasemin · biçimsel özellikler"
+        ]
+      }
+    },
+    {
+      "id": "s159-q8",
+      "source_record_id": "T02-S0157",
+      "answer_id": "T2-P159-Q08",
+      "layout": "question",
+      "density": "comfortable",
+      "prompt": "Orhun Abideleri geçmişten günümüze kültürel köprünün bir ayağıysa diğer ayağına hangi eserleri koyardınız? Gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Göktürklerin Dirilişi QR videosunu açıp gerçekten sunulan örnekleri not edin. Kitaptaki genel bilgilerle videonun ayrıntılarını karıştırmayın."
+      }
+    },
+    {
+      "id": "s159-q9",
+      "source_record_id": "T02-S0158",
+      "answer_id": "T2-P159-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Taşa kazınan tarih ve törenin günümüze yol göstermesiyle ilgili kısa bir slogan oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kendi sloganınızı üretin: geçmişten gelen söz, kültürel bellek ve geleceğe yol gösterme bağlantısını kısa bir ifadeye dönüştürün."
+      }
+    }
+  ]
+}
