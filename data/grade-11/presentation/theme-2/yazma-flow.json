@@ -1,0 +1,250 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-YAZMA",
+  "lesson_slug": "tema-2-yazma",
+  "title": "Çevrim İçi Müze",
+  "subtitle": "Edebiyat Atölyesi-2 · Yazma · 2. Tema",
+  "printed_page_range": "148-154",
+  "required_source_range": {
+    "from": "T02-S0138",
+    "to": "T02-S0149"
+  },
+  "steps": [
+    {
+      "id": "s148-reading",
+      "source_record_id": "T02-S0138",
+      "layout": "process",
+      "density": "comfortable",
+      "prompt": "Sanal Müzecilikte Yeni Yaklaşımlar — yönlendirilmiş okuma",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metni ders kitabından okuyun; sanal müzenin avantajlarını ve fiziksel müzeden ayrılan yönlerini yazma görevinize hazırlık için belirleyin.",
+        "items": [
+          "Zamandan ve mekândan bağımsız erişimle ilgili avantajları belirleyin.",
+          "Güncelleme ve yenilenme hızının neden önemli olduğunu düşünün.",
+          "Sanal müzelerin oluşturabildiği yeni sosyal etkileşim alanlarını işaretleyin.",
+          "Metindeki bilgi ile kendi sanal müze deneyiminizi birbirinden ayırın."
+        ]
+      }
+    },
+    {
+      "id": "s149-museums",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çevrim içi gezilebilecek müzeleri araştırıp kısa bir tanıtım listesi hazırlayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s149-select",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF02",
+      "layout": "question",
+      "prompt": "İlgi alanınıza uygun bir müze seçiniz ve seçiminizi gerekçelendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s149-plan",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sanal müze izlenim yazınız için yöntem, amaç, hedef kitle ve strateji belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s150-task",
+      "source_record_id": "T02-S0140",
+      "layout": "process",
+      "density": "comfortable",
+      "prompt": "Kültürel Miras ve Müzeler — performans görevine hazırlık",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Müzeler ve Toplum metnini ders kitabından okuyup görünen nesne ile görünmeyen kültürel anlam arasındaki ilişkiyi izleyin.",
+        "items": [
+          "Müzede sergilenen maddi kültür unsurunu belirleyin.",
+          "Bu unsurun üretim, kullanım ve anlamıyla ilgili görünmeyen kültürel mirası düşünün.",
+          "Müzenin farklı toplumlar arasında kültürel iletişim kurma işlevini not edin.",
+          "Sanal müze gezinizde gözlem ile kişisel yorumu ayrı not sütunlarında tutun."
+        ]
+      }
+    },
+    {
+      "id": "s150-q1",
+      "source_record_id": "T02-S0141",
+      "answer_id": "T2-P150-Q01",
+      "layout": "question",
+      "prompt": "Müzelerde bulunabilecek ve kültürümüzü yansıtabilecek unsurlar hakkında tahminlerde bulununuz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s151-q2",
+      "source_record_id": "T02-S0142",
+      "answer_id": "T2-P151-PERF01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Müzelerde yer alabilecek kültür unsurlarını kendi hayatınızdaki kültür unsurlarıyla karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s151-q3",
+      "source_record_id": "T02-S0143",
+      "answer_id": "T2-P151-Q03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kültürün hangi yollarla aktarıldığını sınıflandırınız ve örneklerle açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s151-enrich",
+      "source_record_id": "T02-S0144",
+      "answer_id": "T2-P151-PERF02",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Karşılaştırma ve sınıflandırma sonuçlarıyla yazınızın içeriğini zenginleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Müze çalışmanızı arkadaşlarınızla paylaşın.",
+          "Karşılaştırma ve sınıflandırmadan özgün yorum üretin.",
+          "Görsel veya işitsel ögeyi belirli bir gözlem ya da düşünceyi desteklemek için kullanın.",
+          "Başka metinden kısa alıntı kullanırsanız kaynağını belirtin ve kendi yorumunuzun yerine geçirmeyin."
+        ]
+      }
+    },
+    {
+      "id": "s152-rules-1",
+      "source_record_id": "T02-S0145",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İzlenim yazısı ölçütleri — 1",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Kime, neyi, nasıl ve hangi araçlarla anlatacağınızı düşünerek plan yapın.",
+          "Yazma planına uygun, ilgi çekici bir girişle başlayın.",
+          "Metnin içeriğine uygun bir başlık belirleyin.",
+          "Başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
+          "Söz varlığını hedef kitleye ve bağlama uygun seçin.",
+          "Anlatım biçimleri ve düşünceyi geliştirme yollarından yararlanın.",
+          "Duygu, düşünce ve hayallerinizi özgün ve tutarlı bir üslupla ifade edin."
+        ]
+      }
+    },
+    {
+      "id": "s152-rules-2",
+      "source_record_id": "T02-S0145",
+      "answer_id": "T2-P152-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İzlenim yazısı ölçütleri — 2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Açık veya örtük iletileri amaca uygun biçimde ayrıntılandırın.",
+          "Millî ve manevi değerlerle kültürel unsurlara dikkat edin.",
+          "Toplumsal hassasiyetlere aykırı ögelerden kaçınıp olumlu değerleri vurgulayın.",
+          "Dil bilgisi kurallarını işlevine uygun uygulayıp farklı cümle yapıları kullanın.",
+          "Türkçeyi bilinçli ve özenli kullanın.",
+          "Yazım ve noktalama kurallarına uyun."
+        ]
+      }
+    },
+    {
+      "id": "s152-check",
+      "source_record_id": "T02-S0145",
+      "answer_id": "T2-P152-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Yazınızı teslim etmeden önce kısa kontrol listesini uygulayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s153-revision",
+      "source_record_id": "T02-S0146",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Geri bildirim, revizyon ve paylaşma",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Öğretmen, öz ve akran değerlendirme geri bildirimlerini birlikte inceleyin.",
+          "Geri bildirimler doğrultusunda gerekli düzeltmeleri yapın ve yeni hedef belirleyin.",
+          "Özgün yazar kimliğinizi oluşturmaya çalışın.",
+          "Son hâli sınıf/okul panosu veya okulun resmî çevrim içi ortamında paylaşın."
+        ]
+      }
+    },
+    {
+      "id": "s153-self-1",
+      "source_record_id": "T02-S0147",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 1",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Kime, neyi, nasıl ve hangi araçlarla anlatacağımı düşünerek plan yaptım.",
+          "Planıma uygun ve dikkat çekici bir girişle başladım.",
+          "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
+          "Anlatım biçimleri ve düşünceyi geliştirme yollarından yararlandım.",
+          "Türkçenin bağdaşıklık ögelerine dikkat ederek yazdım."
+        ]
+      }
+    },
+    {
+      "id": "s153-self-2",
+      "source_record_id": "T02-S0147",
+      "answer_id": "T2-P153-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
+          "Toplumsal hassasiyet oluşturacak ögelerden kaçındım.",
+          "Millî ve manevi değerlere ve kültürel unsurlara dikkat ettim.",
+          "Metnin içeriğine uygun bir başlık belirledim.",
+          "Duygu, düşünce ve hayallerimi özgün ve tutarlı bir üslupla ifade ettim."
+        ]
+      }
+    },
+    {
+      "id": "s153-reference",
+      "source_record_id": "T02-S0148",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Dereceli puanlama ve akran değerlendirme",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap, ayrıntılı dereceli puanlama anahtarı ve akran değerlendirme formuna QR kod üzerinden yönlendirir.",
+        "sections": [
+          {
+            "title": "Sayfada görülen genel alanlar",
+            "body": "Dil ve üslup, özgünlük, öznel-nesnel ifade dengesi, görsel kullanımı, yazım ve noktalama gibi genel değerlendirme alanları görünürdür."
+          },
+          {
+            "title": "Akran değerlendirmesi",
+            "body": "Kişiye değil metindeki gözlenebilir özelliklere ve somut geliştirme önerilerine odaklanın."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "QR formunun ayrıntılı puanları veya görünmeyen ek ölçütleri kaynak açılmadan yeniden üretilmemelidir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s154-journal",
+      "source_record_id": "T02-S0149",
+      "answer_id": "T2-P154-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "2. Tema — Öğrenme Günlüğü",
+      "prompt_mode": "VERBATIM_SHORT"
+    }
+  ]
+}
