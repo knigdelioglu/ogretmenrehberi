@@ -167,10 +167,16 @@ try {
   );
   const studentTargets = await until(async () => {
     const response = await fetch(`http://127.0.0.1:${port}/json/list`);
-    return (await response.json()).filter(t => t.type === "page" && t.url.includes("display=1"));
+    const matches = (await response.json()).filter(
+      t => t.type === "page" && t.url.includes("display=1")
+    );
+    return matches.length === 1 ? matches : false;
   }, "Student window reuse");
-  if (studentTargets.length !== 1) {
-    throw new Error(`Expected one reusable projection popup, got ${studentTargets.length}.`);
+  await sleep(200);
+  const latestTargets = (await (await fetch(`http://127.0.0.1:${port}/json/list`)).json())
+    .filter(t => t.type === "page" && t.url.includes("display=1"));
+  if (studentTargets.length !== 1 || latestTargets.length !== 1) {
+    throw new Error(`Expected one reusable projection popup, got ${latestTargets.length}.`);
   }
 
   await teacher.evaluate(`(() => {
