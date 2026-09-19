@@ -1,5 +1,4 @@
 import {
-  Fragment,
   useCallback,
   useEffect,
   useMemo,
@@ -9,6 +8,8 @@ import {
 import lessonsJson from "./generated/lessons.json";
 import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
+import { LessonOutline } from "./components/LessonOutline";
+import { LessonFooter } from "./components/LessonFooter";
 import {
   buildExportedStep,
   canonicalLessonSignature,
@@ -151,10 +152,6 @@ function restoredOrder(): string[] {
   } catch {
     return canonical;
   }
-}
-
-function stepLabel(step: LessonStep) {
-  return step.display_prompt ?? step.answer?.prompt_summary ?? step.source.book_heading;
 }
 
 function revealOrder(step: LessonStep): RevealKey[] {
@@ -587,11 +584,6 @@ export default function App() {
     togglePresentationMode
   ]);
 
-  const pageProgress = useMemo(
-    () => Math.round(((index + 1) / lesson.steps.length) * 100),
-    [index]
-  );
-
   return (
     <div
       className={[
@@ -668,46 +660,12 @@ export default function App() {
         </div>
       </header>
 
-      <aside className="outline" aria-label="Ders akışı">
-        <div className="outline__header">
-          <strong>{lesson.subtitle}</strong>
-          <span>
-            s. {lesson.printed_page_range} · {lesson.steps.length} adım
-          </span>
-        </div>
-        <div className="outline__steps">
-          {effectiveSteps.map((item, itemIndex) => {
-            const previous = effectiveSteps[itemIndex - 1];
-            const pageChanged =
-              !previous ||
-              previous.source.printed_page_range !== item.source.printed_page_range;
-
-            return (
-              <Fragment key={item.id}>
-                {pageChanged ? (
-                  <div className="outline-page-group">
-                    Basılı s. {item.source.printed_page_range}
-                  </div>
-                ) : null}
-                <button
-                  className={
-                    itemIndex === index ? "outline-step is-active" : "outline-step"
-                  }
-                  onClick={() => goTo(itemIndex)}
-                  type="button"
-                >
-                  <span className="outline-step__number">
-                    {item.answer?.question_no
-                      ? `S.${item.answer.question_no}`
-                      : String(itemIndex + 1).padStart(2, "0")}
-                  </span>
-                  <span className="outline-step__label">{stepLabel(item)}</span>
-                </button>
-              </Fragment>
-            );
-          })}
-        </div>
-      </aside>
+      <LessonOutline
+        lesson={lesson}
+        steps={effectiveSteps}
+        index={index}
+        goTo={goTo}
+      />
 
       <div className="content-column">
         <StepView
@@ -723,45 +681,13 @@ export default function App() {
           toggleVocabularyTerm={(term) => toggleVocabularyTerm(step.id, term)}
         />
 
-        <footer className="lesson-footer">
-          <button
-            type="button"
-            disabled={index === 0}
-            onClick={() => goTo(index - 1)}
-          >
-            ← Önceki
-          </button>
-
-          <div className="progress-area">
-            <div className="progress-area__text">
-              <span>
-                {index + 1} / {lesson.steps.length} · s. {step.source.printed_page_range}
-              </span>
-              <span>%{pageProgress}</span>
-            </div>
-            <div className="progress-track" aria-hidden="true">
-              <div className="progress-fill" style={{ width: `${pageProgress}%` }} />
-            </div>
-            {!presentationMode ? (
-              <div className="shortcut-hint">
-                ←/→ adım · Space aç/ilerle · C cevap · G yönlendirme · E açıklama ·
-                D düzenle · P projeksiyon · F tam ekran
-              </div>
-            ) : (
-              <div className="shortcut-hint shortcut-hint--projection">
-                P: öğretmen görünümüne dön
-              </div>
-            )}
-          </div>
-
-          <button
-            type="button"
-            disabled={index === lesson.steps.length - 1}
-            onClick={() => goTo(index + 1)}
-          >
-            Sonraki →
-          </button>
-        </footer>
+        <LessonFooter
+          index={index}
+          totalSteps={lesson.steps.length}
+          step={step}
+          presentationMode={presentationMode}
+          goTo={goTo}
+        />
       </div>
 
       {editorOpen && !presentationMode && !displayOnly ? (
