@@ -19,14 +19,12 @@
       "prompt": "Sıra Sizde — Oyundaki değerleri belirlemeden önce metin kanıtlarını hatırlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Bir değer adı ile o değeri gösteren somut söz, davranış veya olayı birbirinden ayırın.",
-          "items": [
-            "Mimar Sinan'ın eğitim ve çalışma tutumuna dönün.",
-            "Ayasofya'nın mimarlarını değerlendirdiği bölümü hatırlayın.",
-            "Eserini tamamlaması ve başarısını nasıl yorumladığına bakın."
-          ]
-        }
+        "lead": "Bir değer adı ile o değeri gösteren somut söz, davranış veya olayı birbirinden ayırın.",
+        "items": [
+          "Mimar Sinan'ın eğitim ve çalışma tutumuna dönün.",
+          "Ayasofya'nın mimarlarını değerlendirdiği bölümü hatırlayın.",
+          "Eserini tamamlaması ve başarısını nasıl yorumladığına bakın."
+        ]
       }
     },
     {
@@ -38,14 +36,12 @@
       "prompt": "Sıra Sizde 1 — Millî, manevi ve evrensel değerleri gruplandırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Her başlıktan bir veya iki değer belirleyip oyundan gerekçe gösterin; değer adlarını kanıt olmadan çoğaltmayın.",
-          "items": [
-            "Millî değerler",
-            "Manevi değerler",
-            "Evrensel değerler"
-          ]
-        }
+        "lead": "Her başlıktan bir veya iki değer belirleyip oyundan gerekçe gösterin; değer adlarını kanıt olmadan çoğaltmayın.",
+        "items": [
+          "Millî değerler",
+          "Manevi değerler",
+          "Evrensel değerler"
+        ]
       }
     },
     {
@@ -57,15 +53,13 @@
       "prompt": "Sıra Sizde 2 — Her değerin karşısına oyundaki örneğini yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Kitabın iki sütunlu değerler–metinden örnekler tablosunu kullanın.",
-          "items": [
-            "Değer",
-            "Metinden söz / davranış / olay",
-            "Bu örneğin değeri nasıl gösterdiği"
-          ],
-          "note": "Ders kitabında geçmeyen bir sözü Mimar Sinan'a alıntı olarak yüklemeyin."
-        }
+        "lead": "Kitabın iki sütunlu değerler–metinden örnekler tablosunu kullanın.",
+        "items": [
+          "Değer",
+          "Metinden söz / davranış / olay",
+          "Bu örneğin değeri nasıl gösterdiği"
+        ],
+        "note": "Ders kitabında geçmeyen bir sözü Mimar Sinan'a alıntı olarak yüklemeyin."
       }
     },
     {
@@ -76,23 +70,21 @@
       "prompt": "Değer ve kanıt — Çalışkanlık, estetik ve sorumluluğu aynı örnekle açıklamak yeterli mi?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Bir davranış birden fazla değere işaret edebilir; her yorumun dayanağını ayrı görünür kılın.",
-          "sections": [
-            {
-              "title": "Çalışkanlık",
-              "body": "Öğrenmeyi ve teknik sorunları aşmayı gösteren somut bir olay."
-            },
-            {
-              "title": "Estetik duyarlılık",
-              "body": "Yalnız büyüklük değil, güzellik ve özgünlük arayışı."
-            },
-            {
-              "title": "Sorumluluk",
-              "body": "Verilen görevi ve sözü yerine getirme."
-            }
-          ]
-        }
+        "lead": "Bir davranış birden fazla değere işaret edebilir; her yorumun dayanağını ayrı görünür kılın.",
+        "sections": [
+          {
+            "title": "Çalışkanlık",
+            "body": "Öğrenmeyi ve teknik sorunları aşmayı gösteren somut bir olay."
+          },
+          {
+            "title": "Estetik duyarlılık",
+            "body": "Yalnız büyüklük değil, güzellik ve özgünlük arayışı."
+          },
+          {
+            "title": "Sorumluluk",
+            "body": "Verilen görevi ve sözü yerine getirme."
+          }
+        ]
       }
     },
     {
@@ -104,14 +96,12 @@
       "prompt": "Sıra Sizde 3 — Bu değerler günlük yaşamda hangi davranışlarda görünür?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Öğrenci kendi çevresinden gerçek veya olası bir durum seçip değer–davranış ilişkisini gerekçelendirir.",
-          "items": [
-            "Bir değer seçin.",
-            "Günlük hayatta görülebilecek somut davranış belirleyin.",
-            "Bu davranışın insan ilişkilerine katkısını açıklayın."
-          ]
-        }
+        "lead": "Öğrenci kendi çevresinden gerçek veya olası bir durum seçip değer–davranış ilişkisini gerekçelendirir.",
+        "items": [
+          "Bir değer seçin.",
+          "Günlük hayatta görülebilecek somut davranış belirleyin.",
+          "Bu davranışın insan ilişkilerine katkısını açıklayın."
+        ]
       }
     },
     {
@@ -123,9 +113,7 @@
       "prompt": "Sıra Sizde 4 — Çalışkanlık, estetik ve sorumluluk Sinan'ın kişiliğine ve eserlerine nasıl yansır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Üç değeri ayrı örneklerle temellendirdikten sonra bunların bir mimari eserde nasıl birlikte görünür olduğunu söyleyin."
-        }
+        "lead": "Üç değeri ayrı örneklerle temellendirdikten sonra bunların bir mimari eserde nasıl birlikte görünür olduğunu söyleyin."
       }
     },
     {
@@ -137,15 +125,13 @@
       "prompt": "Ders Dışı Etkinlik — Tiyatro ve sosyal bilimler için üç araştırma grubu oluşturunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Kitaptaki bir haftalık araştırma sürecinde her grup farklı bir disiplinin sorusuna cevap arar.",
-          "items": [
-            "Metin–Tarih",
-            "Metin–Psikoloji",
-            "Metin–Sosyoloji"
-          ],
-          "note": "Tarihî bilgi dış kaynaktan öğrenilmişse bunu oyunun sözü gibi sunmayın."
-        }
+        "lead": "Kitaptaki bir haftalık araştırma sürecinde her grup farklı bir disiplinin sorusuna cevap arar.",
+        "items": [
+          "Metin–Tarih",
+          "Metin–Psikoloji",
+          "Metin–Sosyoloji"
+        ],
+        "note": "Tarihî bilgi dış kaynaktan öğrenilmişse bunu oyunun sözü gibi sunmayın."
       }
     },
     {
@@ -156,23 +142,21 @@
       "prompt": "Üç disiplin aynı sahneden hangi farklı soruları üretir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Tek bir oyun olayını üç disiplin açısından ele alarak grupların sorularını ayırt edin.",
-          "sections": [
-            {
-              "title": "Tarih",
-              "body": "Dönem, görev ve yapı bilgilerinin belgelerle ilişkisi."
-            },
-            {
-              "title": "Psikoloji",
-              "body": "Kişinin hedefi, kararları ve güçlüklerle baş etmesi."
-            },
-            {
-              "title": "Sosyoloji",
-              "body": "Kurumlar, toplumsal roller ve ortak üretim."
-            }
-          ]
-        }
+        "lead": "Tek bir oyun olayını üç disiplin açısından ele alarak grupların sorularını ayırt edin.",
+        "sections": [
+          {
+            "title": "Tarih",
+            "body": "Dönem, görev ve yapı bilgilerinin belgelerle ilişkisi."
+          },
+          {
+            "title": "Psikoloji",
+            "body": "Kişinin hedefi, kararları ve güçlüklerle baş etmesi."
+          },
+          {
+            "title": "Sosyoloji",
+            "body": "Kurumlar, toplumsal roller ve ortak üretim."
+          }
+        ]
       }
     },
     {
@@ -183,14 +167,12 @@
       "prompt": "Araştırma sonuçlarını paylaşın ve oyun–bilim ilişkisini değerlendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Grup sözcüsü tarih, psikoloji veya sosyoloji bulgusunun oyundaki bir ayrıntıyı anlamaya nasıl yardımcı olduğunu gösterir.",
-          "items": [
-            "Metindeki gözlemi söyleyin.",
-            "Dış kaynağı ayırarak belirtin.",
-            "Yazarın farklı alanlarla ilgisi hakkında yalnız bu bulguların desteklediği çıkarımı ifade edin."
-          ]
-        }
+        "lead": "Grup sözcüsü tarih, psikoloji veya sosyoloji bulgusunun oyundaki bir ayrıntıyı anlamaya nasıl yardımcı olduğunu gösterir.",
+        "items": [
+          "Metindeki gözlemi söyleyin.",
+          "Dış kaynağı ayırarak belirtin.",
+          "Yazarın farklı alanlarla ilgisi hakkında yalnız bu bulguların desteklediği çıkarımı ifade edin."
+        ]
       }
     },
     {
@@ -201,14 +183,12 @@
       "prompt": "Birlikte Çalışalım — Altı kişilik gruplarda oyundaki çatışmaları belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Önce çatışmayı iki karşıt istek, durum veya hedef olarak ifade edin; ardından olayın akışına etkisine geçin.",
-          "items": [
-            "Grubu ve sözcüyü belirleyin.",
-            "Her çatışma için karşı karşıya gelen yönleri yazın.",
-            "Bir sahne veya sözle gerekçelendirin."
-          ]
-        }
+        "lead": "Önce çatışmayı iki karşıt istek, durum veya hedef olarak ifade edin; ardından olayın akışına etkisine geçin.",
+        "items": [
+          "Grubu ve sözcüyü belirleyin.",
+          "Her çatışma için karşı karşıya gelen yönleri yazın.",
+          "Bir sahne veya sözle gerekçelendirin."
+        ]
       }
     },
     {
@@ -220,17 +200,15 @@
       "prompt": "Çatışmalar ve metne etkisi — İki sütunu doldurunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Çatışma adını listelemek yeterli değil; karakterde veya olay örgüsünde neyi değiştirdiğini açıklayın.",
-          "items": [
-            "Hedef ↔ teknik güçlük",
-            "Ayasofya'yı aşma isteği ↔ yeni mimari başarı",
-            "Büyüklük ↔ güzellik",
-            "Geçicilik ↔ kalıcı eser",
-            "Kaygı ↔ deneyim ve güven"
-          ],
-          "note": "Bu karşıtlıkların hangisinin hangi bölümde açıkça yer aldığını kitaptan doğrulayın."
-        }
+        "lead": "Çatışma adını listelemek yeterli değil; karakterde veya olay örgüsünde neyi değiştirdiğini açıklayın.",
+        "items": [
+          "Hedef ↔ teknik güçlük",
+          "Ayasofya'yı aşma isteği ↔ yeni mimari başarı",
+          "Büyüklük ↔ güzellik",
+          "Geçicilik ↔ kalıcı eser",
+          "Kaygı ↔ deneyim ve güven"
+        ],
+        "note": "Bu karşıtlıkların hangisinin hangi bölümde açıkça yer aldığını kitaptan doğrulayın."
       }
     },
     {
@@ -241,23 +219,21 @@
       "prompt": "Çatışma, Sinan'ın bir sonraki karara geçişini nasıl sağlar?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Her grup bir çatışmayı bir sahneyle ilişkilendirip 'önce – güçlük – karar – sonuç' dizisini açıklasın.",
-          "sections": [
-            {
-              "title": "Önce",
-              "body": "Karakterin hedefi veya içinde bulunduğu durum."
-            },
-            {
-              "title": "Güçlük",
-              "body": "Karşısına çıkan teknik ya da kişisel engel."
-            },
-            {
-              "title": "Karar ve sonuç",
-              "body": "Çatışmanın dramatik örgüyü nasıl ileri taşıdığı."
-            }
-          ]
-        }
+        "lead": "Her grup bir çatışmayı bir sahneyle ilişkilendirip 'önce – güçlük – karar – sonuç' dizisini açıklasın.",
+        "sections": [
+          {
+            "title": "Önce",
+            "body": "Karakterin hedefi veya içinde bulunduğu durum."
+          },
+          {
+            "title": "Güçlük",
+            "body": "Karşısına çıkan teknik ya da kişisel engel."
+          },
+          {
+            "title": "Karar ve sonuç",
+            "body": "Çatışmanın dramatik örgüyü nasıl ileri taşıdığı."
+          }
+        ]
       }
     },
     {
@@ -268,15 +244,13 @@
       "prompt": "Süreci Değerlendirebilme — Oyunda günlük insan ilişkilerinden hangi kesitler var?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Beyin fırtınasında önce düşünceleri serbestçe toplayın, ardından kitaptaki bir söz veya davranışla ilişkilendirin.",
-          "items": [
-            "Sınıf yazıcısını seçin.",
-            "Güven, görev verme ve sözünü tutma gibi gözlemleri tahtaya yazın.",
-            "Farklı görüşleri sınıfça değerlendirin.",
-            "Kendi beğeni ölçütlerinizi belirleyin."
-          ]
-        }
+        "lead": "Beyin fırtınasında önce düşünceleri serbestçe toplayın, ardından kitaptaki bir söz veya davranışla ilişkilendirin.",
+        "items": [
+          "Sınıf yazıcısını seçin.",
+          "Güven, görev verme ve sözünü tutma gibi gözlemleri tahtaya yazın.",
+          "Farklı görüşleri sınıfça değerlendirin.",
+          "Kendi beğeni ölçütlerinizi belirleyin."
+        ]
       }
     },
     {
@@ -288,14 +262,12 @@
       "prompt": "Beğeni ölçütleri tablosu — Metni örneklerle değerlendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Kitabın etkileyicilik örneğini inceleyin; başka ölçütleri öğrenciler belirlesin. Her biri için oyun içinden kanıt isteyin.",
-          "items": [
-            "Ölçüt",
-            "Metinden örnek",
-            "Ölçüte göre gerekçeli değerlendirme"
-          ]
-        }
+        "lead": "Kitabın etkileyicilik örneğini inceleyin; başka ölçütleri öğrenciler belirlesin. Her biri için oyun içinden kanıt isteyin.",
+        "items": [
+          "Ölçüt",
+          "Metinden örnek",
+          "Ölçüte göre gerekçeli değerlendirme"
+        ]
       }
     },
     {
@@ -306,14 +278,12 @@
       "prompt": "Ben Kimim? — Seçtiğiniz karakteri adı geçmeden tanıtınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Söz ve davranışlara dayanan birkaç ipucu hazırlayın. Eser adını veya karakter adını söyleyerek oyunu hemen bitirmeyin.",
-          "items": [
-            "Karakteri sessizce seçin.",
-            "Üç özgül özellik veya davranış belirleyin.",
-            "Arkadaşlarınız tahmin ettikten sonra açıklayın."
-          ]
-        }
+        "lead": "Söz ve davranışlara dayanan birkaç ipucu hazırlayın. Eser adını veya karakter adını söyleyerek oyunu hemen bitirmeyin.",
+        "items": [
+          "Karakteri sessizce seçin.",
+          "Üç özgül özellik veya davranış belirleyin.",
+          "Arkadaşlarınız tahmin ettikten sonra açıklayın."
+        ]
       }
     },
     {
@@ -325,14 +295,12 @@
       "prompt": "Ben Kimim? — Karakteri tanıtan kısa metni okuyup tahminleri karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Model tanıtımı öğrenciler kendi ipuçlarını hazırladıktan sonra açın. Örnek, gerçek oyunda geçen tek parça bir monolog değildir.",
-          "items": [
-            "İpuçlarının dayanağını gösterin.",
-            "Tahminlerin hangi ipucuna dayandığını sorun.",
-            "Yanıtı açıklayın ve farklı tanıtım yollarını tartışın."
-          ]
-        }
+        "lead": "Model tanıtımı öğrenciler kendi ipuçlarını hazırladıktan sonra açın. Örnek, gerçek oyunda geçen tek parça bir monolog değildir.",
+        "items": [
+          "İpuçlarının dayanağını gösterin.",
+          "Tahminlerin hangi ipucuna dayandığını sorun.",
+          "Yanıtı açıklayın ve farklı tanıtım yollarını tartışın."
+        ]
       }
     },
     {
@@ -344,9 +312,7 @@
       "prompt": "Sıra Sizde 1 — Hangi karakteri canlandırmak istersiniz? Neden?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Seçilen karakteri bir replik, davranış veya hedefle ilişkilendirin; tek doğru karakter aranmaz."
-        }
+        "lead": "Seçilen karakteri bir replik, davranış veya hedefle ilişkilendirin; tek doğru karakter aranmaz."
       }
     },
     {
@@ -358,15 +324,13 @@
       "prompt": "Sıra Sizde 2 — Karakterin özelliğini günlük bir olaya taşıyan kısa senaryo yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "content": {
-          "lead": "Hayalî senaryonuzun gerçek oyunda yaşanmış bir sahne olmadığını açık tutun.",
-          "items": [
-            "Oyundan bir kişilik özelliği seçin.",
-            "Gündelik bir durum tasarlayın.",
-            "Karakterin nasıl davranacağını özelliğiyle gerekçelendirin.",
-            "Sınıfla paylaşın."
-          ]
-        }
+        "lead": "Hayalî senaryonuzun gerçek oyunda yaşanmış bir sahne olmadığını açık tutun.",
+        "items": [
+          "Oyundan bir kişilik özelliği seçin.",
+          "Gündelik bir durum tasarlayın.",
+          "Karakterin nasıl davranacağını özelliğiyle gerekçelendirin.",
+          "Sınıfla paylaşın."
+        ]
       }
     }
   ]
