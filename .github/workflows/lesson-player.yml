@@ -1428,6 +1428,46 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-235-final.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s235-q16"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-236-overview.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-GIRIS-236-242&step=s236-map"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-238-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-GIRIS-236-242&step=s238-q2"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-240-performance.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-GIRIS-236-242&step=s240-performance"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-241-roles.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-GIRIS-236-242&step=s241-core-roles"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-242-roles.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-GIRIS-236-242&step=s242-optional-roles"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1590,5 +1630,10 @@ jobs:
             lesson-player-theme3-233-scoring.png
             lesson-player-theme3-234-eight-claims.png
             lesson-player-theme3-235-final.png
+            lesson-player-theme4-236-overview.png
+            lesson-player-theme4-238-reading.png
+            lesson-player-theme4-240-performance.png
+            lesson-player-theme4-241-roles.png
+            lesson-player-theme4-242-roles.png
             apps/lesson-player/dist
           if-no-files-found: error
