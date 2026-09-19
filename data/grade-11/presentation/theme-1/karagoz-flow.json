@@ -10,6 +10,22 @@
   },
   "steps": [
     {
+      "id": "s15-source-reminder",
+      "source_record_id": "T01-S0004",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuya Başlarken — Önce kitaptaki “Seyirlik Halk Oyunları” metnini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.15'teki dört soruyu Pertev Naili Boratav'ın metninden hareketle cevaplayın. Geleneksel Türk Tiyatrosu karekod çalışması erişilebiliyorsa destekleyici kaynak olarak açın.",
+        "items": [
+          "Gösteri/seyirlik olma özelliğini işaretleyin.",
+          "Taklit ve doğaçlamayla ilgili ifadeleri bulun.",
+          "Yazılı metin bulunmamasının gerekçesini metinden çıkarın."
+        ]
+      }
+    },
+    {
       "id": "s15-q1",
       "source_record_id": "T01-S0004",
       "answer_id": "T1-P15-Q01",
@@ -120,7 +136,9 @@
       "id": "s18-q1",
       "source_record_id": "T01-S0007",
       "answer_id": "T1-P18-Q01",
-      "layout": "question"
+      "layout": "question",
+      "prompt": "Başlık ve görsellerden yararlanarak metnin içeriğine dair tahminlerde bulununuz.",
+      "prompt_mode": "VERBATIM_SHORT"
     },
     {
       "id": "s18-24-reading",
