@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 3,
-  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma ve Eski İstanbul dersleri bulunmalı."
+  theme2Lessons.length === 4,
+  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul ve Orhun dersleri bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -237,10 +237,59 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 66 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 57 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 62,
-  "Tema 2 mevcut üretim 66 adım / 57 source / 62 answer olmalı."
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 99 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 87 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 94,
+  "Tema 2 mevcut üretim 99 adım / 87 source / 94 answer olmalı."
+);
+
+const orhun = byLessonId.get("T11-T02-ORHUN");
+assert(orhun, "2. Tema Orhun Abideleri dersi catalog içinde bulunamadı.");
+assert(
+  orhun.printed_page_range === "113-124",
+  "Orhun Abideleri doğal bloğu s.113–124 aralığını kapsamalı."
+);
+assert(
+  orhun.coverage.steps === 33 &&
+    orhun.coverage.source_records === 30 &&
+    orhun.coverage.answer_entries === 32,
+  "Orhun Abideleri 33 adım / 30 source / 32 answer olmalı."
+);
+
+const orhunById = new Map(orhun.steps.map((step) => [step.id, step]));
+assert(
+  orhunById.get("s113-q1")?.answer?.entry_type === "source_limited" &&
+    orhunById.get("s113-q1")?.answer?.guidance,
+  "s.113 QR video sorusu source_limited ve yönlendirmeli kalmalı."
+);
+assert(
+  orhunById.get("s114-115-reading")?.answer === null &&
+    orhunById.get("s114-115-reading")?.layout === "process",
+  "Kül Tigin ana metni kopyalanmadan yönlendirilmiş okuma olarak temsil edilmeli."
+);
+assert(
+  orhunById.get("s116-vocabulary")?.layout === "vocabulary" &&
+    Object.keys(orhunById.get("s116-vocabulary")?.answer?.answer_sections ?? {}).length === 6 &&
+    orhunById.get("s116-vocabulary")?.answer?.answer_sections?.["şad"]?.includes("bulunmuyor"),
+  "s.116 söz varlığı altı sözcüğü ve kitaptaki şad tanım eksikliğini dürüstçe korumalı."
+);
+assert(
+  orhunById.get("s118-rhetoric")?.layout === "structure" &&
+    orhunById.get("s119-compare")?.layout === "comparison",
+  "s.118 söz sanatları ve s.119 metin karşılaştırması yapılandırılmış görünüm kullanmalı."
+);
+assert(
+  orhunById.get("s121-q3")?.layout === "structure" &&
+    orhunById.get("s122-q2")?.layout === "structure" &&
+    orhunById.get("s122-q4")?.layout === "structure" &&
+    orhunById.get("s123-q5")?.layout === "structure",
+  "s.121–123 çözümleme tabloları yapılandırılmış görünümde olmalı."
+);
+assert(
+  orhunById.get("s124-values")?.answer?.entry_type === "performance_support" &&
+    orhunById.get("s124-social-sciences")?.answer?.entry_type === "performance_support" &&
+    orhunById.get("s124-social-sciences")?.source?.printed_page_range === "124-125",
+  "s.124 değerler ve s.124-125 sosyal bilimler çalışmaları performance olarak korunmalı."
 );
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
