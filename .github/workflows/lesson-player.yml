@@ -649,6 +649,60 @@ jobs:
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-GIRIS&step=s163-q6"
 
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-research.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s165-research"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-words.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s165-166-fark"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s169-reading"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s172-vocabulary"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-types.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s173-types-1"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-style.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s174-style"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -721,5 +775,11 @@ jobs:
             lesson-player-theme3-life.png
             lesson-player-theme3-media.png
             lesson-player-theme3-biography.png
+            lesson-player-theme3-huzur-research.png
+            lesson-player-theme3-huzur-words.png
+            lesson-player-theme3-huzur-reading.png
+            lesson-player-theme3-huzur-vocabulary.png
+            lesson-player-theme3-huzur-types.png
+            lesson-player-theme3-huzur-style.png
             apps/lesson-player/dist
           if-no-files-found: error
