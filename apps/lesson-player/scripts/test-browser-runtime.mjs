@@ -107,7 +107,7 @@ try {
   );
   await until(
     () => teacher.evaluate(
-      "document.querySelector('.teacher-guide')?.textContent?.includes('1. dönem · Eser ve film çalışmaları')"
+      "document.querySelector('.teacher-guide')?.textContent?.includes('2 · Dört eser + bir film sunumları')"
     ),
     "Teacher annual reading and portfolio guidance"
   );
@@ -122,30 +122,6 @@ try {
       guide.includes('performans puan');
   })()`);
   if (!annualAndWorkshops) throw new Error("Teacher workflow evidence incomplete.");
-
-  await teacher.send("Page.navigate", { url: `${karagoz}&display=1` });
-  await until(
-    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
-    "Standalone student display for teacher guidance isolation"
-  );
-  const teacherGuideLeaked = await teacher.evaluate(`(() =>
-    Boolean(document.querySelector('.teacher-guide')) ||
-    [...document.querySelectorAll('button')].some(b => b.textContent.trim() === 'Öğretmen rehberi')
-  )()`);
-  if (teacherGuideLeaked) throw new Error("Teacher guidance leaked into student display.");
-
-  await teacher.send("Page.navigate", { url: karagoz });
-  await until(
-    () => teacher.evaluate(`(() => {
-      const params = new URLSearchParams(location.search);
-      return params.get('display') !== '1' &&
-        document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi') &&
-        Array.from(document.querySelectorAll('button')).some(
-          b => b.textContent.trim() === 'Öğrenci ekranı'
-        );
-    })()`),
-    "Teacher display and controls restored after guide isolation test"
-  );
 
   await teacher.evaluate(
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Düzenle').click()"
@@ -204,6 +180,13 @@ try {
     () => student.evaluate("document.body.innerText.includes('Mukaddime')"),
     "Student projection opens"
   );
+  const teacherGuideLeaked = await student.evaluate(`(() =>
+    Boolean(document.querySelector('.teacher-guide')) ||
+    [...document.querySelectorAll('button')].some(
+      b => b.textContent.trim() === 'Öğretmen rehberi'
+    )
+  )()`);
+  if (teacherGuideLeaked) throw new Error("Teacher guidance leaked into student display.");
   await teacher.evaluate("window.dispatchEvent(new KeyboardEvent('keydown', { key: ' ', bubbles: true }))");
   const secret = "Bu şemayı öğrenciler kitap örneklerini";
   await until(
