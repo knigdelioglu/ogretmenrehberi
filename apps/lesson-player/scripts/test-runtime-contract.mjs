@@ -89,6 +89,9 @@ assert(
 );
 
 const appSource = fs.readFileSync(path.join(appRoot, "src/App.tsx"), "utf8");
+const toolbarSource = fs.readFileSync(
+  path.join(appRoot, "src/components/LessonToolbar.tsx"), "utf8"
+);
 const stepViewSource = fs.readFileSync(
   path.join(appRoot, "src/components/StepView.tsx"),
   "utf8"
@@ -219,7 +222,7 @@ assert(
 assert(
   appSource.includes("overrideEnvelope(overrideSignature, overrides)") &&
     appSource.includes("window.localStorage.setItem(backupKey, raw ?? \"\")") &&
-    appSource.includes("Eski düzenlemeleri indir"),
+    toolbarSource.includes("Eski düzenlemeleri indir"),
   "Stale local edits must be archived before storing the new revision."
 );
 
