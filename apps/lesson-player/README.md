@@ -110,7 +110,7 @@ Bu görünümde:
 
 Ayrı **Öğrenci ekranı** penceresinde kalem/ampul kontrol ikonları gösterilmez; MacBook/öğretmen ekranındaki cevap ve yönlendirme durumu öğrenci ekranına senkronize edilir.
 
-Üst menüde **Öğrenci ekranını aç** seçeneği ayrıca ikinci bir tarayıcı penceresi açar. Öğretmen görünümündeki adım, reveal ve kelime-anlam değişiklikleri bu pencereye anlık olarak senkronize edilir. İkinci ekran öğretmen kontrollerini göstermez.
+Üst menüde **Öğrenci ekranını aç** seçeneği ayrıca ikinci bir tarayıcı penceresi açar. Öğretmen görünümündeki adım, reveal ve kelime-anlam değişiklikleri bu pencereye anlık olarak senkronize edilir. İkinci ekran öğretmen kontrollerini göstermez. Öğrenci penceresi ders değişiminde kapanmadan yeni dersi takip eder; öğretmene özel notlar bu pencerede gösterilmez.
 
 ## Düzenleme modu
 
@@ -128,7 +128,7 @@ Ayrı **Öğrenci ekranı** penceresinde kalem/ampul kontrol ikonları gösteril
 - yalnız ilgili adımı sıfırlayabilir,
 - düzenlenmiş yapıyı açık olan dersin `<lesson-slug>-flow.json` dosyası olarak dışa aktarabilir.
 
-Bu düzenleme kanonik `answer-bank` içeriğini değiştirmez; yalnız presentation/lesson-flow katmanına uygulanır.
+Bu düzenleme kanonik `answer-bank` içeriğini değiştirmez; yalnız presentation/lesson-flow katmanına uygulanır. İlerleme adım kimliğiyle saklandığından yeniden sıralama sonrası bağlantı aynı adıma döner. Kanonik ders içeriği güncellenmişse eski yerel düzenlemeler otomatik uygulanmaz; yedeklenir ve ekranda **Eski düzenlemeleri indir** seçeneği görünür. Dışa aktarma mevcut soru metnini ve `prompt_mode` bilgisini korur.
 
 ## Kaynak sınırlı içerik
 
