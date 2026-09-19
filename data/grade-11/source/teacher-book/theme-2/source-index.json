@@ -8,7 +8,7 @@
   "counts": {
     "records": 158,
     "linked_answers": 167,
-    "verified_records": 46
+    "verified_records": 57
   },
   "records": [
     {
@@ -539,13 +539,13 @@
       "source_record_id": "T02-S0047",
       "theme_id": "TEMA_02",
       "printed_page_range": "108",
-      "book_heading": "Eski İstanbul’dan Çizgiler — hazırlık",
+      "book_heading": "Ders Dışı Etkinlik / Eski İstanbul’dan Çizgiler — hazırlık",
       "task_type": "QUESTION",
       "prompt": "Soru 1 — Vatanımızla bağımızı oluşturan unsurları açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
-      "source_locator": "basılı s.108 / PDF s.109 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_locator": "basılı s.108 / PDF s.109 — ders dışı etkinlik + hazırlık soru 1",
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0048",
@@ -557,7 +557,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.108 / PDF s.109 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0049",
@@ -569,7 +569,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.108 / PDF s.109 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0050",
@@ -579,7 +579,7 @@
       "task_type": "REFERENCE",
       "rights_mode": "PAGE_REFERENCE",
       "source_locator": "basılı s.108-110 / PDF s.109-111 — ana metin",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0051",
@@ -589,7 +589,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.111 / PDF s.112 — Karşılaştıralım / Ders Dışı Etkinlik",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0052",
@@ -601,7 +601,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.112 / PDF s.113 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0053",
@@ -613,7 +613,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.112 / PDF s.113 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0054",
@@ -625,7 +625,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.112 / PDF s.113 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0055",
@@ -637,7 +637,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.112 / PDF s.113 — soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0056",
@@ -649,7 +649,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.112 / PDF s.113 — soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0057",
@@ -659,7 +659,7 @@
       "task_type": "ASSESSMENT",
       "rights_mode": "PAGE_REFERENCE",
       "source_locator": "basılı s.112 / PDF s.113 — Çıkış Kartı",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0058",

@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 2,
-  "Tema 2 üretiminin bu aşamasında giriş ve Oğulla Buluşma dersleri bulunmalı."
+  theme2Lessons.length === 3,
+  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma ve Eski İstanbul dersleri bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -190,13 +190,6 @@ assert(
   "s.107 Aytmatov Fark Edelim cevabı erişilebilir olmalı."
 );
 
-assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 51 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 46 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 48,
-  "Tema 2 mevcut üretim 51 adım / 46 source / 48 answer olmalı."
-);
-
 for (const lesson of theme2Lessons) {
   for (const step of lesson.steps) {
     assert(
@@ -205,6 +198,50 @@ for (const lesson of theme2Lessons) {
     );
   }
 }
+
+const eskiIstanbul = byLessonId.get("T11-T02-ESKI-ISTANBUL");
+assert(eskiIstanbul, "2. Tema Eski İstanbul dersi catalog içinde bulunamadı.");
+assert(
+  eskiIstanbul.printed_page_range === "108-112",
+  "Eski İstanbul doğal bloğu s.108–112 aralığını kapsamalı."
+);
+assert(
+  eskiIstanbul.coverage.steps === 15 &&
+    eskiIstanbul.coverage.source_records === 11 &&
+    eskiIstanbul.coverage.answer_entries === 14,
+  "Eski İstanbul bloğu 15 adım / 11 source / 14 answer olmalı."
+);
+
+const eskiById = new Map(eskiIstanbul.steps.map((step) => [step.id, step]));
+assert(
+  eskiById.get("s108-social-sciences")?.answer?.entry_type === "performance_support" &&
+    eskiById.get("s108-social-sciences")?.layout === "process",
+  "s.108 Oğulla Buluşma sosyal bilimler görevi performance/process olmalı."
+);
+assert(
+  eskiById.get("s108-110-reading")?.answer === null &&
+    eskiById.get("s108-110-reading")?.source?.printed_page_range === "108-110",
+  "Eski İstanbul ana metni kopyalanmadan s.108–110 yönlendirilmiş okuma olarak temsil edilmeli."
+);
+assert(
+  eskiById.get("s111-q1")?.layout === "comparison" &&
+    eskiById.get("s111-card-technique")?.answer?.entry_type === "performance_support" &&
+    eskiById.get("s111-social-sciences")?.answer?.explanation?.includes("Anı"),
+  "s.111 karşılaştırma, kart gösterme ve anı-sosyal bilimler rehberliği korunmalı."
+);
+assert(
+  eskiById.get("s112-q5")?.answer?.evidence_quotes?.length === 3 &&
+    eskiById.get("s112-exit")?.answer?.entry_type === "performance_support" &&
+    eskiById.get("s112-exit")?.layout === "assessment",
+  "s.112 ifade seçimi ve 3-2-1 çıkış kartı doğru katmanlarla korunmalı."
+);
+
+assert(
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 66 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 57 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 62,
+  "Tema 2 mevcut üretim 66 adım / 57 source / 62 answer olmalı."
+);
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
 assert(karagoz, "Karagöz dersi catalog içinde bulunamadı.");

@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-ESKI-ISTANBUL",
+  "lesson_slug": "eski-istanbul",
+  "title": "Eski İstanbul’dan Çizgiler",
+  "subtitle": "Anı · Kültür ve sosyal bilimler · 2. Tema",
+  "printed_page_range": "108-112",
+  "required_source_range": {
+    "from": "T02-S0047",
+    "to": "T02-S0057"
+  },
+  "steps": [
+    {
+      "id": "s108-social-sciences",
+      "source_record_id": "T02-S0047",
+      "answer_id": "T2-P108-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Oğulla Buluşma'yı tarih, coğrafya ve sosyolojiyle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üç grup aynı hikâyeyi farklı sosyal bilim merceklerinden incelesin.",
+        "items": [
+          "Birinci grup: metin-tarih ilişkisi",
+          "İkinci grup: metin-coğrafya ilişkisi",
+          "Üçüncü grup: metin-sosyoloji ilişkisi",
+          "Her grup bulgusunu hikâyedeki somut bir olay, mekân veya davranışla destekleyerek sınıfa sunsun."
+        ]
+      }
+    },
+    {
+      "id": "s108-q1",
+      "source_record_id": "T02-S0047",
+      "answer_id": "T2-P108-Q01",
+      "layout": "question",
+      "prompt": "Vatanımızla bağımızı oluşturan unsurlar nelerdir? Açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s108-q2",
+      "source_record_id": "T02-S0048",
+      "answer_id": "T2-P108-Q02",
+      "layout": "question",
+      "prompt": "Vatanımızı neden sevmemiz gerektiğine dair düşüncelerinizi ifade ediniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s108-q3",
+      "source_record_id": "T02-S0049",
+      "answer_id": "T2-P108-Q03",
+      "layout": "question",
+      "prompt": "Eski İstanbul’dan Çizgiler'e göz gezdirerek millî kültür unsurlarını yansıtabilecek kelime ve ifadeler hakkında tahminde bulununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s108-110-reading",
+      "source_record_id": "T02-S0050",
+      "layout": "process",
+      "density": "comfortable",
+      "prompt": "Eski İstanbul’dan Çizgiler — yönlendirilmiş anı okuması",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana metni ders kitabından okuyun; Lesson Player metni kopyalamadan kültür söz varlığı ve anı türü üzerine okuma sürecini yönetir.",
+        "items": [
+          "Eski İstanbul gündelik hayatına ait esnaf, ulaşım, mahalle, sanat ve eğlence unsurlarını işaretleyin.",
+          "Yazarın kişisel hatırası ile dönemin toplumsal hayatına ilişkin gözlemleri birbirinden ayırın.",
+          "Bugün daha az kullanılan kültür kelimelerini not edin ve bağlamdan anlam tahmini yapın.",
+          "Anı türünde gerçek yaşama bağlılık ile anlatıcının seçimi ve yorumunun birlikte nasıl bulunduğuna dikkat edin."
+        ]
+      }
+    },
+    {
+      "id": "s111-q1",
+      "source_record_id": "T02-S0051",
+      "answer_id": "T2-P111-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Okuma öncesi tahminlerinizle metinde gerçekten karşılaştığınız millî kültür unsurlarını karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s111-card-technique",
+      "source_record_id": "T02-S0051",
+      "answer_id": "T2-P111-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Tahminlerinizi kart gösterme tekniğiyle sınıflandırınız ve kararınızı metinden kanıtla gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kart rengi tek başına cevap değildir; her seçim metindeki dayanağıyla açıklanmalıdır.",
+        "items": [
+          "Mavi: katıldığınız tahminler",
+          "Kırmızı: katılmadığınız tahminler",
+          "Kahverengi: kararsız kaldığınız tahminler",
+          "Benzer ve farklı tahminleri kültür alanlarına göre gruplandırın."
+        ]
+      }
+    },
+    {
+      "id": "s111-q3",
+      "source_record_id": "T02-S0051",
+      "answer_id": "T2-P111-Q03",
+      "layout": "question",
+      "prompt": "Yaptığınız sınıflandırmadan hareketle metinde kullanılan dille ilgili çıkarımlarda bulununuz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s111-social-sciences",
+      "source_record_id": "T02-S0051",
+      "answer_id": "T2-P111-PERF02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Eski İstanbul’dan Çizgiler'i tarih, coğrafya ve sosyolojiyle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s112-q1",
+      "source_record_id": "T02-S0052",
+      "answer_id": "T2-P112-Q01",
+      "layout": "question",
+      "prompt": "Oğulla Buluşma hikâyesindeki farklı kültür unsurlarını belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s112-q2",
+      "source_record_id": "T02-S0053",
+      "answer_id": "T2-P112-Q02",
+      "layout": "question",
+      "prompt": "Hikâyedeki farklı kültür unsurlarıyla ilgili düşünce ve duygularınızı açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s112-q3",
+      "source_record_id": "T02-S0054",
+      "answer_id": "T2-P112-Q03",
+      "layout": "question",
+      "prompt": "Kendinizi Çordon'un yerine koyunuz. Siz olsaydınız nasıl davranır, neler düşünürdünüz?",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s112-q4",
+      "source_record_id": "T02-S0055",
+      "answer_id": "T2-P112-Q04",
+      "layout": "question",
+      "prompt": "Sultan'ın hayata bakışı ve amaçlarını düşündüğünüzde ona hak veriyor musunuz? Gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s112-q5",
+      "source_record_id": "T02-S0056",
+      "answer_id": "T2-P112-Q05",
+      "layout": "question",
+      "prompt": "Hikâyede en çok beğendiğiniz ifadeleri yazınız ve seçiminizi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s112-exit",
+      "source_record_id": "T02-S0057",
+      "answer_id": "T2-P112-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Oğulla Buluşma — Üç Yaz / İki Sor / Bir Paylaş",
+      "prompt_mode": "VERBATIM_SHORT"
+    }
+  ]
+}

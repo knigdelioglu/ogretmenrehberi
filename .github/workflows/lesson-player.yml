@@ -333,6 +333,31 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-ogulla-values.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T02-OGULLA-BULUSMA&step=s107-values"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-eski-social.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-ESKI-ISTANBUL&step=s108-social-sciences"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-eski-cards.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ESKI-ISTANBUL&step=s111-card-technique"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-eski-exit.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ESKI-ISTANBUL&step=s112-exit"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -367,5 +392,8 @@ jobs:
             lesson-player-theme2-ogulla-map.png
             lesson-player-theme2-ogulla-discussion.png
             lesson-player-theme2-ogulla-values.png
+            lesson-player-theme2-eski-social.png
+            lesson-player-theme2-eski-cards.png
+            lesson-player-theme2-eski-exit.png
             apps/lesson-player/dist
           if-no-files-found: error
