@@ -1316,6 +1316,70 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis220-comparison.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s220-comp"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis221-structure.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-221-224&step=s221-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis222-opinions.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-221-224&step=s222-stance"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis223-research.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-221-224&step=s223-research"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis224-journal.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-221-224&step=s224-journal"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-radyo225-choice.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-RADYO-DIYALOG-YAZMA-225-229&step=s225-choice"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-radyo226-plan.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-RADYO-DIYALOG-YAZMA-225-229&step=s226-plan"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-radyo228-assessment.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-RADYO-DIYALOG-YAZMA-225-229&step=s228-reflection"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-radyo229-exit.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-RADYO-DIYALOG-YAZMA-225-229&step=s229-exit"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1464,5 +1528,13 @@ jobs:
             lesson-player-direnis218-structure.png
             lesson-player-direnis219-characters.png
             lesson-player-direnis220-comparison.png
+            lesson-player-direnis221-structure.png
+            lesson-player-direnis222-opinions.png
+            lesson-player-direnis223-research.png
+            lesson-player-direnis224-journal.png
+            lesson-player-radyo225-choice.png
+            lesson-player-radyo226-plan.png
+            lesson-player-radyo228-assessment.png
+            lesson-player-radyo229-exit.png
             apps/lesson-player/dist
           if-no-files-found: error
