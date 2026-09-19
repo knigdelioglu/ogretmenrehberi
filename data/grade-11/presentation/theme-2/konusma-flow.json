@@ -12,6 +12,17 @@
   },
   "steps": [
     {
+      "id": "s129-media-reminder",
+      "source_record_id": "T02-S0103",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Türklerin dünya medeniyetine katkıları — Sorudan önce kitaptaki videoyu izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu soru videoda verilen örneklerin kullanılmasını gerektirir. Karekod erişilebiliyorsa önce videoyu izleyip örnekleri not edin; erişilemiyorsa videoya özgü katkı örneklerini uydurmayın."
+      }
+    },
+    {
       "id": "s129-q1",
       "source_record_id": "T02-S0103",
       "answer_id": "T2-P129-Q01",

@@ -211,6 +211,17 @@
       }
     },
     {
+      "id": "s307-aidiyet-media-reminder",
+      "source_record_id": "T04-S0142",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Aidiyet — Sorular 13–14'ten önce kitaptaki videoyu karekoddan izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Soru 13 videodaki Anadolu insanının özelliklerini kanıtlamayı, Soru 14 ise aidiyet düşüncesini video örneğiyle ilişkilendirmeyi gerektirir. Karekod erişilebiliyorsa videoyu izleyip davranış, söz ve sahne kanıtlarını not edin; erişilemiyorsa videoya özgü ayrıntı üretmeyin."
+      }
+    },
+    {
       "id": "s307-q13",
       "source_record_id": "T04-S0142",
       "answer_id": "T4-P307-SL13",

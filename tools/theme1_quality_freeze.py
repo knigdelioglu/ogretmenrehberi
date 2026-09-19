@@ -298,7 +298,7 @@ def main() -> int:
     ]
     if lesson_order != expected_order:
         add(errors, "LESSON_ORDER", lesson_order)
-    if len(lessons) != 7 or lp_steps != 176:
+    if len(lessons) != 7 or lp_steps != 180:
         add(errors, "LESSON_PLAYER_TOTALS", {"lessons": len(lessons), "steps": lp_steps})
     if set(lp_source_ids) != set(source_ids):
         add(errors, "LESSON_PLAYER_SOURCE_PARITY", {
@@ -316,7 +316,7 @@ def main() -> int:
     coverage = ogretmenos.get("coverage", {})
     expected_coverage = {
         "lessons": 7,
-        "lesson_steps": 176,
+        "lesson_steps": 180,
         "source_records": 129,
         "answer_entries": 151,
         "source_limited_entries": 12,
@@ -334,8 +334,8 @@ def main() -> int:
         "teacher_guides": 1,
         "teacher_guide_sections": 7,
         "teacher_guide_units": 129,
-        "teacher_guide_items": 176,
-        "teacher_guide_item_relations": 327,
+        "teacher_guide_items": 180,
+        "teacher_guide_item_relations": 331,
     }
     if row_counts != expected_rows:
         add(errors, "OGRETMENOS_ROW_COUNTS", row_counts)

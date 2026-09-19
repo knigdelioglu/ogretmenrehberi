@@ -11,7 +11,7 @@ assert(
   "2. Tema giriş bloğu kitapta s.84–88 aralığını kapsamalı."
 );
 assert(
-  theme2Intro.coverage.steps === 14 &&
+  theme2Intro.coverage.steps === 15 &&
     theme2Intro.coverage.source_records === 14 &&
     theme2Intro.coverage.answer_entries === 12,
   "2. Tema giriş bloğu 14 adım / 14 source / 12 answer olmalı."
@@ -153,10 +153,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 187 &&
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 190 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 158 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 167,
-  "Tema 2 tam kapsam 187 adım / 158 source / 167 answer olmalı."
+  "Tema 2 tam kapsam 190 adım / 158 source / 167 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -166,13 +166,20 @@ assert(
   "Orhun Abideleri doğal bloğu s.113–124 aralığını kapsamalı."
 );
 assert(
-  orhun.coverage.steps === 33 &&
+  orhun.coverage.steps === 34 &&
     orhun.coverage.source_records === 30 &&
     orhun.coverage.answer_entries === 32,
   "Orhun Abideleri 33 adım / 30 source / 32 answer olmalı."
 );
 
 const orhunById = new Map(orhun.steps.map((step) => [step.id, step]));
+const orhunOrderedIds = orhun.steps.map((step) => step.id);
+assert(
+  orhunById.get("s113-media-reminder")?.layout === "process" &&
+    orhunOrderedIds.indexOf("s113-media-reminder") <
+      orhunOrderedIds.indexOf("s113-q1"),
+  "s.113 Orhun Vadisi video hatırlatması ilk sorudan önce gelmeli."
+);
 assert(
   orhunById.get("s113-q1")?.answer?.entry_type === "source_limited" &&
     orhunById.get("s113-q1")?.answer?.guidance,
@@ -255,13 +262,20 @@ assert(
   "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
 );
 assert(
-  speaking2.coverage.steps === 18 &&
+  speaking2.coverage.steps === 19 &&
     speaking2.coverage.source_records === 13 &&
     speaking2.coverage.answer_entries === 14,
   "2. Tema Konuşma 18 adım / 13 source / 14 answer olmalı."
 );
 
 const speaking2ById = new Map(speaking2.steps.map((step) => [step.id, step]));
+const speaking2OrderedIds = speaking2.steps.map((step) => step.id);
+assert(
+  speaking2ById.get("s129-media-reminder")?.layout === "process" &&
+    speaking2OrderedIds.indexOf("s129-media-reminder") <
+      speaking2OrderedIds.indexOf("s129-q1"),
+  "s.129 video hatırlatması kaynak sınırlı sorudan önce gelmeli."
+);
 assert(
   speaking2ById.get("s129-q1")?.answer?.entry_type === "source_limited" &&
     speaking2ById.get("s129-q1")?.answer?.guidance,

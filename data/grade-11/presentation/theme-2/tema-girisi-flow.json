@@ -112,6 +112,21 @@
       "prompt_mode": "VERBATIM_SHORT"
     },
     {
+      "id": "s88-media-reminder",
+      "source_record_id": "T02-S0009",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Türklerde Toylar, Merasimler, Festivaller ve Şenlikler — Sorulara geçmeden önce kitaptaki çok modlu metni karekoddan izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sayfa 88'deki altı soru bu çok modlu metinden hareketle cevaplanır. Karekod erişilebiliyorsa önce videoyu izleyin; erişilemiyorsa videoya özgü örnek, sahne veya anlatım ayrıntısı uydurmayın.",
+        "items": [
+          "Toy, bayram/şenlik, gönül coğrafyası, tabiatla ilişki, imece ve paylaşma örneklerini not edin.",
+          "Cevaplarda videoda gerçekten görülen veya duyulan ayrıntıları kitapta verilen soru kökleriyle ilişkilendirin."
+        ]
+      }
+    },
+    {
       "id": "s88-q1",
       "source_record_id": "T02-S0009",
       "answer_id": "T2-P88-Q01",

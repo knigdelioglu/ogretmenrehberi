@@ -152,6 +152,11 @@ export function StepView({
   const isVocabulary = step.layout === "vocabulary";
   const answerVisible = Boolean(answer && revealed.has("answer") && !isVocabulary);
   const guidanceVisible = Boolean(answer?.guidance && revealed.has("guidance"));
+  const preserveStructuredContentWithAnswer =
+    answerVisible &&
+    (step.layout === "structure" ||
+      step.layout === "comparison" ||
+      step.layout === "assessment");
   const stageRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -291,7 +296,7 @@ export function StepView({
           <p className="lead">{content.lead}</p>
         ) : null}
 
-        {!answerVisible ? (
+        {!answerVisible || preserveStructuredContentWithAnswer ? (
           <StepContentLayout layout={step.layout} content={content} />
         ) : null}
 

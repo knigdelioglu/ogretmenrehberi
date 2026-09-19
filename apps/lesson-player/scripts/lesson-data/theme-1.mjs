@@ -4,10 +4,10 @@ const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");
 assert(themeIntro.lesson_slug === "tema-girisi", "Tema girişi lesson_slug doğru olmalı.");
 assert(
-  themeIntro.coverage.steps === 3 &&
+  themeIntro.coverage.steps === 4 &&
     themeIntro.coverage.source_records === 3 &&
     themeIntro.coverage.answer_entries === 2,
-  "Tema girişi 3 adım / 3 source / 2 answer olmalı."
+  "Tema girişi 4 adım / 3 source / 2 answer olmalı."
 );
 
 const themeIntroById = new Map(themeIntro.steps.map((step) => [step.id, step]));
@@ -38,8 +38,8 @@ assert(
 );
 
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 176,
-  "1. Tema toplam 176 ders adımı içermeli."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 180,
+  "1. Tema toplam 180 ders adımı içermeli."
 );
 assert(
   theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
@@ -53,7 +53,7 @@ assert(
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
 assert(karagoz, "Karagöz dersi catalog içinde bulunamadı.");
-assert(karagoz.coverage.steps === 49, "Karagöz pilotu 49 adım olmalı.");
+assert(karagoz.coverage.steps === 50, "Karagöz pilotu 50 adım olmalı.");
 assert(
   karagoz.coverage.source_records === 17,
   "Karagöz pilotu 17 source-index kaydını kapsamalı."
@@ -64,6 +64,20 @@ assert(
 );
 
 const karagozById = new Map(karagoz.steps.map((step) => [step.id, step]));
+
+const karagozOrderedIdsForMedia = karagoz.steps.map((step) => step.id);
+assert(
+  karagozById.get("s15-source-reminder")?.layout === "process" &&
+    karagozOrderedIdsForMedia.indexOf("s15-source-reminder") <
+      karagozOrderedIdsForMedia.indexOf("s15-q1"),
+  "s.15 kaynak/karekod hatırlatması sorulardan önce gelmeli."
+);
+assert(
+  karagozById.get("s18-q1")?.display_prompt ===
+    "Başlık ve görsellerden yararlanarak metnin içeriğine dair tahminlerde bulununuz." &&
+    karagozById.get("s18-q1")?.display_prompt_mode === "VERBATIM_SHORT",
+  "s18-q1 PDF'deki gerçek soru kökünü verbatim göstermeli."
+);
 
 const s15q2 = karagozById.get("s15-q2");
 assert(s15q2, "s15-q2 bulunamadı.");
@@ -261,7 +275,7 @@ assert(
 const speaking = byLessonId.get("T11-T01-KONUSMA");
 assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
 assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
-assert(speaking.coverage.steps === 13, "Konuşma dersi 13 adım olmalı.");
+assert(speaking.coverage.steps === 14, "Konuşma dersi 14 adım olmalı.");
 assert(
   speaking.coverage.source_records === 7,
   "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
@@ -272,6 +286,14 @@ assert(
 );
 
 const speakingById = new Map(speaking.steps.map((step) => [step.id, step]));
+
+const speakingOrderedIds = speaking.steps.map((step) => step.id);
+assert(
+  speakingById.get("s53-media-reminder")?.layout === "process" &&
+    speakingOrderedIds.indexOf("s53-media-reminder") <
+      speakingOrderedIds.indexOf("s53-q1"),
+  "s.53 Seksenler medya hatırlatması ilk sorudan önce gelmeli."
+);
 
 const s53q1 = speakingById.get("s53-q1");
 assert(s53q1, "Konuşma s53-q1 bulunamadı.");
@@ -490,10 +512,10 @@ assert(
   "Tema değerlendirme lesson_slug doğru olmalı."
 );
 assert(
-  degerlendirme.coverage.steps === 13 &&
+  degerlendirme.coverage.steps === 14 &&
     degerlendirme.coverage.source_records === 13 &&
     degerlendirme.coverage.answer_entries === 13,
-  "Tema değerlendirme 13 adım / 13 source / 13 answer olmalı."
+  "Tema değerlendirme 14 adım / 13 source / 13 answer olmalı."
 );
 
 const degerlendirmeById = new Map(
@@ -518,6 +540,14 @@ assert(
 assert(
   dQ12.layout === "structure" && dQ12.density === "compact",
   "s83 soru 12 projeksiyonda kompakt yapı görünümünde olmalı."
+);
+
+const degerlendirmeOrderedIds = degerlendirme.steps.map((step) => step.id);
+assert(
+  degerlendirmeById.get("s83-olvido-media-reminder")?.layout === "process" &&
+    degerlendirmeOrderedIds.indexOf("s83-olvido-media-reminder") <
+      degerlendirmeOrderedIds.indexOf("s83-q13"),
+  "s.83 Olvido medya hatırlatması soru 13'ten önce gelmeli."
 );
 
 const dQ13 = degerlendirmeById.get("s83-q13");

@@ -12,6 +12,17 @@
   },
   "steps": [
     {
+      "id": "s113-media-reminder",
+      "source_record_id": "T02-S0058",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Orhun Vadisi — İlk sorudan önce kitaptaki videoyu karekoddan izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk soru Orhun Vadisi videosundaki bölgeye dayanır. Karekod erişilebiliyorsa videoyu izleyip yer, çevre ve anıtlarla ilgili somut ayrıntıları not edin; erişilemiyorsa videoda görülmeyen ayrıntıları kesin bilgi gibi kullanmayın."
+      }
+    },
+    {
       "id": "s113-q1",
       "source_record_id": "T02-S0058",
       "answer_id": "T2-P113-Q01",

@@ -88,6 +88,17 @@
       "density": "compact"
     },
     {
+      "id": "s83-olvido-media-reminder",
+      "source_record_id": "T01-S0129",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Olvido — Soru 13'ten önce kitaptaki çok modlu metni karekoddan dinleyiniz / izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Soru 13 çok modlu Olvido kaynağına dayanır. Karekod erişilebiliyorsa önce kaynağı dinleyin/izleyin ve şiirin ses, vurgu, görüntü ya da sunum özelliklerine ilişkin kısa notlar alın; erişilemiyorsa kaynağa özgü ayrıntı üretmeyin."
+      }
+    },
+    {
       "id": "s83-q13",
       "source_record_id": "T01-S0129",
       "answer_id": "T1-P83-Q13",

@@ -41,6 +41,18 @@
       }
     },
     {
+      "id": "s13-threshold-quote",
+      "source_record_id": "T01-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yusuf Has Hacib — “Dünya malı ne kadar toplanırsa toplansın, tükenir biter; söz kaleme alınırsa kalır, dünyayı gezinir.”",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kutadgu Bilig'den bu sözle temaya giriş yapın: sözün kalıcılığı ile iletişim, yazı ve edebiyat arasındaki bağı öğrencilerden kısa örneklerle açıklamalarını isteyin.",
+        "note": "Kitaptaki Tema Sunusu karekodu erişilebiliyorsa bu aşamada açılabilir; erişilemiyorsa tema girişine alıntı üzerinden devam edin."
+      }
+    },
+    {
       "id": "s14-q1",
       "source_record_id": "T01-S0002",
       "answer_id": "T1-P14-Q01",
