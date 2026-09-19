@@ -1,0 +1,279 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250",
+  "lesson_slug": "ben-mimar-sinan-okuma-243-250",
+  "title": "Ben, Mimar Sinan — Okuma ve Sanatın İşlevi",
+  "subtitle": "Hayatın Aynası · Okuma çemberi / söz varlığı / hayat ve tiyatro",
+  "printed_page_range": "243-250",
+  "required_source_range": {
+    "from": "T04-S0010",
+    "to": "T04-S0015"
+  },
+  "steps": [
+    {
+      "id": "s243-read",
+      "source_record_id": "T04-S0010",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ben, Mimar Sinan — Oyunun başlangıcını ders kitabından okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metnin s.243–246 arasındaki ana bölümünü sırayla okuyun. Başlangıçta konuşmacı, ses, müzik, ışık ve görüntü yönergelerini birbirinden ayırın.",
+        "items": [
+          "Sinan'ın doğrudan izleyiciye seslenişini belirleyin.",
+          "Işık ve müzik yönergelerinin hangi anlarda değiştiğini işaretleyin.",
+          "Ayasofya'ya ilişkin anlatılan olayla sahne üzerindeki temsilini ayırın."
+        ],
+        "note": "Oyun metni Lesson Player'a kopyalanmaz. s.240 bilgi görselindeki kesinleşmemiş doğum tarihiyle oyun kişisinin s.243'te verdiği kesin tarih aynı tür kanıt değildir."
+      }
+    },
+    {
+      "id": "s243-sinan-motive",
+      "source_record_id": "T04-S0010",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Oyunun başlangıcında Sinan'ın mimarlığa yönelişini hangi olaylar besliyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Karakterin Ayasofya'yı incelemesini, başka mimarlara duyduğu saygıyı ve meslekte ilerleme isteğini metinden kanıtla açıklayın.",
+        "sections": [
+          {
+            "title": "Gözlem",
+            "body": "Sinan'ın gördüğü yapıyı teknik bir öğrenme nesnesi olarak incelemesi."
+          },
+          {
+            "title": "Çatışma ve hedef",
+            "body": "Yapıların büyüklüğü üzerine duyduğu sözlerin karakterde yeni bir hedef oluşturması."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s244-journey",
+      "source_record_id": "T04-S0010",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Mimar Sinan'ın yolculuğunu ve mesleki ilerleyişini izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Okurken görev, zorluk ve çözüm ilişkisini metin üzerinde gösterin.",
+        "items": [
+          "Askerî görevlerde edinilen deneyim",
+          "Gemi ve köprü gibi teknik sorunlara bulunan çözümler",
+          "Mimarbaşılığa geçiş",
+          "Mimarlıkta ustalığın eserler üzerinden sunulması"
+        ]
+      }
+    },
+    {
+      "id": "s245-scenic",
+      "source_record_id": "T04-S0010",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Tiyatroda tarihî olay nasıl canlandırılıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Aynı tarihî olayı düz bir yaşam öyküsünden okumak ile sahnede ses ve görüntüyle izlemek arasındaki farkı düşünün.",
+        "sections": [
+          {
+            "title": "Söz",
+            "body": "Sinan'ın birinci kişi konuşması ve başka kişilerin sesleri."
+          },
+          {
+            "title": "Sahne",
+            "body": "Işık, fon ve müzikle zaman veya mekân geçişleri."
+          },
+          {
+            "title": "Olay",
+            "body": "Tarihî malzemenin seçilerek dramatik bir sırada sunulması."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s246-after-reading",
+      "source_record_id": "T04-S0010",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Okuma çemberi — Rol notlarınızı metnin sonuna kadar tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grubunuzun seçtiği rolün somut ürününü hazırlayın. Tahmini, metinde gördüğünüz bilgiyi ve kendi çıkarımınızı ayırın.",
+        "items": [
+          "Seçtiğiniz role uygun bir metin kanıtı gösterin.",
+          "Okurken değişen bir düşüncenizi kaydedin.",
+          "Sonraki söz varlığı çalışması için bir kelime veya ifade seçin."
+        ]
+      }
+    },
+    {
+      "id": "s247-vocab",
+      "source_record_id": "T04-S0011",
+      "answer_id": "T4-P247-VOC01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Söz Varlığımız — Altı kelime ve kelime grubunun anlamını bağlamdan bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce kelimenin geçtiği cümleden tahminde bulunun; anlamı ve yakın karşılığı ancak sonrasında açın.",
+        "items": [
+          "çağdaş",
+          "özge",
+          "görkemli",
+          "şevk",
+          "avaze",
+          "sadr-ı âzam"
+        ],
+        "note": "Güncel Türkçe Sözlük ile doğruladıktan sonra yeni kelimenin cümlede aynı anlama uyup uymadığını tartışın."
+      }
+    },
+    {
+      "id": "s247-vocab-check",
+      "source_record_id": "T04-S0011",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Söz varlığını doğrulama — Aynı karşılık her bağlamda kullanılabilir mi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız sözlük anlamını söylemekle yetinmeyin; metinde bir kelimenin yerine önerdiğiniz karşılığı yerleştirip anlamın korunup korunmadığını kontrol edin.",
+        "sections": [
+          {
+            "title": "Tarihî görev adı",
+            "body": "sadr-ı âzam gibi bir unvanı sıradan kişilik özelliğine dönüştürmeyin."
+          },
+          {
+            "title": "Şiir dili",
+            "body": "avaze ve özge gibi ifadelerde dize içindeki anlamı göz önünde bulundurun."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s248-prediction",
+      "source_record_id": "T04-S0012",
+      "answer_id": "T4-P248-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Okuma öncesi tahminlerinizle okuma sonrası bulguları karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.241'de kaydettiğiniz ilk tahmini aynen koruyup yeni tespitlerinizle karşılaştırın.",
+        "items": [
+          "Okumadan önce ne düşündüm?",
+          "Metin hangi tahminimi doğruladı?",
+          "Hangi yeni bilgi veya tiyatro özelliği dikkatimi çekti?"
+        ],
+        "note": "Tahmin sonradan doğru görünecek biçimde yeniden yazılmaz."
+      }
+    },
+    {
+      "id": "s248-theatre-function",
+      "source_record_id": "T04-S0012",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Tiyatro Sanatının İşlevi — Sevda Şener'in metnini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.248'deki açıklayıcı metinden üç işlevi ayırın.",
+        "items": [
+          "Gerçekleri tanıtma",
+          "Düşünme ve eleştirme becerisini geliştirme",
+          "İnsanın çevresiyle ilişkisini değerlendirme"
+        ],
+        "note": "Metinden yapılan alıntı veya örnek için doğrudan ders kitabına dönün."
+      }
+    },
+    {
+      "id": "s249-buzz",
+      "source_record_id": "T04-S0012",
+      "answer_id": "T4-P249-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Vızıltı grubu — Tiyatro zihinsel ve duygusal farkındalığı nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Altı kişilik gruplarda sözcü seçin. Önce kişisel izleniminizi söyleyin; ardından Sevda Şener'in metnindeki bir işleve bağlayın.",
+        "items": [
+          "Altı dakika boyunca örnekleri tartışın.",
+          "Ortaklaştığınız ve ayrıştığınız görüşleri ayırın.",
+          "Grup sözcüsüyle sınıfa gerekçeli sonuç aktarın."
+        ],
+        "note": "Bu değerlendirme kişisel görüş içerir; tek bir hazır öğrenci yanıtı aranmaz."
+      }
+    },
+    {
+      "id": "s249-comp-q1",
+      "source_record_id": "T04-S0013",
+      "answer_id": "T4-P249-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 1 — Gerçek hayatla tiyatro atmosferini dört ölçütte karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın balık kılçığı şemasını doldurun. Olay/durum, mekân, kişi ve söz varlığını ayrı ayrı ele alın.",
+        "items": [
+          "Olay ve durum",
+          "Mekân",
+          "Kişiler",
+          "Söz varlığı"
+        ],
+        "note": "Örneği oyundan seçip gerçek hayatla karşılaştırın; tiyatroyu bütünüyle gerçeğe aykırı bir alan gibi sunmayın."
+      }
+    },
+    {
+      "id": "s249-comp-q2",
+      "source_record_id": "T04-S0014",
+      "answer_id": "T4-P249-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 2 — Sanat metninin gerçek hayattan farklı olması insana ne kazandırabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir olayın seçilip yoğunlaştırılmasının kendinizin veya başka insanların yaşantısına farklı gözle bakmaya nasıl yardım edebileceğini gerekçelendirin."
+      }
+    },
+    {
+      "id": "s250-social-table",
+      "source_record_id": "T04-S0015",
+      "answer_id": "T4-P250-TABLE01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Altı çizili ifadeler dönemin sosyal hayatını yansıtıyor mu?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.250 tablosunda her ifade için Evet/Hayır kararı verip somut gerekçe yazın.",
+        "items": [
+          "Acemi Ocağı",
+          "harabe",
+          "mimarbaşı",
+          "kervansaray",
+          "meşale",
+          "cami",
+          "fırsat gözlemek"
+        ],
+        "note": "Kelimenin eski görünmesi, tek başına dönemin toplumsal kurumunu veya yaşayışını yansıttığı anlamına gelmez."
+      }
+    },
+    {
+      "id": "s250-social-table-rest",
+      "source_record_id": "T04-S0015",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sosyal hayat tablosu — Kalan altı ifadeyi gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önceki ekrandaki aynı Evet/Hayır ölçütünü kullanarak tabloyu tamamlayın.",
+        "items": [
+          "maddi ve manevi zenginlik",
+          "Tanrı evi",
+          "sabrımın meyvesini toplamak",
+          "padişah",
+          "tahta çıkmak",
+          "gemi"
+        ],
+        "note": "Deyim/mecaz ile dönemle ilişkili kurum, yönetim veya gündelik yaşam unsurlarını ayırın."
+      }
+    }
+  ]
+}
