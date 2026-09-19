@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 3, "Tema 3 giriş, Huzur okuma ve Metni Anlayalım bloklarını içermeli.");
+assert(theme3Lessons.length === 4, "Tema 3 giriş, Huzur okuma, s.175–176 ve s.177–178 bloklarını içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -124,10 +124,10 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===44 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===28 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===29,
-  "Tema 3 mevcut kapsamı 44 adım / 28 source / 29 answer olmalı.");
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===55 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===31 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===32,
+  "Tema 3 mevcut kapsamı 55 adım / 31 source / 32 answer olmalı.");
 
 
 const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
@@ -166,10 +166,52 @@ assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü M
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
-assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 44 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 28 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 29,
-  "Tema 3 mevcut kapsamı 3 ders / 44 adım / 28 source / 29 answer olmalı.");
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 55 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 31 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 32,
+  "Tema 3 mevcut kapsamı 4 ders / 55 adım / 31 source / 32 answer olmalı.");
+
+
+const huzur177 = byLessonId.get("T11-T03-HUZUR-177-178");
+assert(huzur177 && huzur177.printed_page_range === "177-178",
+  "Huzur s.177–178 doğal blok bulunmalı.");
+assert(huzur177.coverage.steps === 11 &&
+  huzur177.coverage.source_records === 3 &&
+  huzur177.coverage.answer_entries === 3,
+  "Huzur s.177–178 11 ekran / 3 source / 3 answer içermeli.");
+const huzur177ById = new Map(huzur177.steps.map(step => [step.id, step]));
+assert(huzur177ById.size === 11, "Huzur s.177–178 benzersiz 11 ekran içermeli.");
+assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
+  huzur177ById.get("s177-q14")?.source?.source_record_id === "T03-S0029" &&
+  Object.keys(huzur177ById.get("s177-q14")?.answer?.answer_sections ?? {}).length === 2 &&
+  huzur177ById.get("s177-q14")?.answer?.answer_sections?.acik_iletiler?.length===3 &&
+  huzur177ById.get("s177-q14")?.answer?.answer_sections?.ortuk_iletiler?.length===3,
+  "s.177 14. soruda açık/örtük iletiler ayrıştırılmalı.");
+assert(huzur177ById.get("s177-source-photo")?.answer === null &&
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("ikinci yazılı metin görünmüyor"),
+  "Mescid-i Aksa fotoğrafı yazılı metinmiş gibi sunulmamalı.");
+assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
+  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
+  Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 8,
+  "Huzur yedi ölçütü çözülmeli, görünmeyen ikinci metin source_limited kalmalı.");
+for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]){
+  assert(huzur177ById.get(id)?.answer === null &&
+    huzur177ById.get(id)?.source?.source_record_id === "T03-S0030",
+    `Huzur karşılaştırma ölçütleri yalnız kaynak destekli olmalı: ${id}`);
+}
+assert(huzur177ById.get("s178-circle-plan")?.answer?.question_id === "T3-P178-PERF01" &&
+  huzur177ById.get("s178-circle-plan")?.answer?.entry_type === "performance_support" &&
+  Object.keys(huzur177ById.get("s178-circle-plan")?.answer?.answer_sections ?? {}).length===8,
+  "Okuma çemberi rol desteği tek doğru cevap olmadan mevcut olmalı.");
+for(const id of ["s178-role-link","s178-role-visual","s178-role-inquiry","s178-role-highlight"]){
+  assert(huzur177ById.get(id)?.answer===null &&
+    huzur177ById.get(id)?.source?.source_record_id==="T03-S0031",
+    `s.178 dört temel okuma çemberi rolü ayrı açıklanmalı: ${id}`);
+}
+for(const step of huzur177.steps){
+  assert(step.source.source_status==="VERIFIED",
+    `s.177–178 kaynak VERIFIED olmalı: ${step.source.source_record_id}`);
+}
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");
