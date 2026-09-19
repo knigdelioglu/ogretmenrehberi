@@ -1,0 +1,311 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205",
+  "lesson_slug": "biyografi-akif-cozumleme-202-205",
+  "title": "Mehmet Âkif Ersoy — Biyografi Çözümlemesi",
+  "subtitle": "Yaşamın İzinde · Öznel–nesnel / biyografi türleri / karşılaştırma / yapı–üslup",
+  "printed_page_range": "202-205",
+  "required_source_range": {
+    "from": "T03-S0066",
+    "to": "T03-S0077"
+  },
+  "steps": [
+    {
+      "id": "s202-q1",
+      "source_record_id": "T03-S0066",
+      "answer_id": "T3-P202-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Mehmet Âkif Ersoy biyografisinden öznel ve nesnel ifadelere örnekler bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrenciden önce biyografi metninde gördüğü cümleyi göstermesini, sonra yargısını gerekçelendirmesini isteyin.",
+        "items": [
+          "Doğrulanabilir tarih, kurum, eser veya görev bilgisi bulun.",
+          "Yazarın beğeni, önem ya da kişilik değerlendirmesi içeren bir cümlesini bulun.",
+          "İki örneğin neden aynı tür anlatım olmadığını açıklayın."
+        ]
+      }
+    },
+    {
+      "id": "s202-q1-criterion",
+      "source_record_id": "T03-S0066",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Öznel mi, nesnel mi? — Ayırt etme ölçütünüzü belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Örnekleri kitaptan doğruladıktan sonra iki tür cümlenin ölçütünü karşılaştırın.",
+        "sections": [
+          {
+            "title": "Nesnel",
+            "body": "Tarih, görev, kurum ve eser gibi bağımsız kaynakla denetlenebilir bilgi."
+          },
+          {
+            "title": "Öznel",
+            "body": "Yazarın kişisel değerlendirmesi veya yorumu; olgusal ifadeyle karıştırmayın."
+          }
+        ],
+        "note": "Öznel cümlenin mutlaka yanlış, nesnel cümlenin ise tek başına yeterli açıklama olduğunu düşündürmeyin."
+      }
+    },
+    {
+      "id": "s202-q2",
+      "source_record_id": "T03-S0067",
+      "answer_id": "T3-P202-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Biyografide hangi anlatım ön plandadır? Metinden hareketle gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Birinci soruda belirlenen iki cümle türünü kullanıp biyografinin bilgi verme amacıyla ilişki kurun."
+      }
+    },
+    {
+      "id": "s203-q1",
+      "source_record_id": "T03-S0068",
+      "answer_id": "T3-P203-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Fark Edelim 1 — Mehmet Âkif Ersoy biyografisi, verilen örneklerden hangisine hangi yönleriyle benzer?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sayfadaki örnekleri okuyup seçiminizi içerik, anlatım ve yazılma amacıyla gerekçelendirin.",
+        "items": [
+          "Necip Fazıl biyografisindeki kronoloji, eser ve sanat hayatı bilgilerini inceleyin.",
+          "Riza Fazıl metninin ölüm üzerine yazılmış olmasını ayırt edin.",
+          "Mustafa İnan metnindeki romanlaştırılmış anlatımın işlevini düşünün."
+        ]
+      }
+    },
+    {
+      "id": "s203-types",
+      "source_record_id": "T03-S0068",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Üç örneğin ayrımını hangi özellik belirler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki Bilgi Köşesi ve üç örneği esas alın.",
+        "sections": [
+          {
+            "title": "Bilgiye dayalı biyografi",
+            "body": "Yaşam çizgisi, görevler, eserler ve doğrulanabilir bilgiler öne çıkar."
+          },
+          {
+            "title": "Nekroloji",
+            "body": "Ölüm vesilesiyle kişiyi anma ve değerlendirme yönü belirgindir."
+          },
+          {
+            "title": "Biyografik roman",
+            "body": "Gerçek bir yaşamdan hareket eder; romanın anlatı ve kurgu imkânlarını kullanır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s203-q2",
+      "source_record_id": "T03-S0069",
+      "answer_id": "T3-P203-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Fark Edelim 2 — Mehmet Âkif Ersoy metnini hangi biyografi alt türüne dâhil edersiniz? Gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tür adını söylemekle yetinmeyin: kronoloji, kaynak ve anlatım bakımından metinden dayanak gösterin."
+      }
+    },
+    {
+      "id": "s204-q1",
+      "source_record_id": "T03-S0070",
+      "answer_id": "T3-P204-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 1 — Huzur ile Mehmet Âkif Ersoy metnini kitabın yedi ölçütüne göre karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçütte iki metni de ele alın; yalnız bir metnin özelliklerini sıralamayın. Cevap bölümünde yedi ölçütün karşılıkları ayrılmıştır.",
+        "items": [
+          "İçerik",
+          "Tür",
+          "Yapı",
+          "Dönem",
+          "Yapı unsurları",
+          "Dil ve üslup",
+          "İleti"
+        ]
+      }
+    },
+    {
+      "id": "s204-q1-first",
+      "source_record_id": "T03-S0070",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Karşılaştırma 1/2 — İçerik, tür, yapı ve dönem ölçütlerini doldurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki karşılaştırma tablosunu iki sütun hâlinde ele alın.",
+        "sections": [
+          {
+            "title": "Huzur",
+            "body": "Kurmaca romanın kişiler, olaylar ve kültürel bağlamla kurduğu dünyadan kanıt gösterin."
+          },
+          {
+            "title": "Mehmet Âkif Ersoy",
+            "body": "Gerçek yaşam çizgisi, eser ve tarih bilgilerini kaynak olarak kullanın."
+          }
+        ],
+        "note": "Metnin yazıldığı dönem ile biyografide anlatılan kişinin yaşadığı dönemi aynı başlık gibi sunmayın."
+      }
+    },
+    {
+      "id": "s204-q1-second",
+      "source_record_id": "T03-S0070",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Karşılaştırma 2/2 — Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki metnin benzer bir yaşam–kültür ilişkisini farklı anlatma yollarıyla kurabildiğini tartışın.",
+        "sections": [
+          {
+            "title": "Romanın yapısı",
+            "body": "Kişi, olay, mekân ve zaman kurmaca bir bütün oluşturur."
+          },
+          {
+            "title": "Biyografinin yapısı",
+            "body": "Merkez kişi, hayat olayları, tarih, eser ve görev bilgileri düzenlenir."
+          },
+          {
+            "title": "Ortak tartışma",
+            "body": "Kişi ve yaşadığı toplum arasındaki bağ iki metinde hangi farklı anlatımlarla görünür?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s204-q2",
+      "source_record_id": "T03-S0071",
+      "answer_id": "T3-P204-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 2 — Siber Zorbalık, kurgu–gerçeklik bakımından hangi metne daha yakındır? Neden?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce öğretici metin ile kurmaca metnin amacını ayırt edin; ardından Siber Zorbalık'ın olguya dayalı anlatımını gerekçe gösterin."
+      }
+    },
+    {
+      "id": "s205-q1",
+      "source_record_id": "T03-S0072",
+      "answer_id": "T3-P205-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 1 — Mehmet Âkif Ersoy biyografisinin yapı unsurlarını ve metne katkılarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Roman çözümlemesindeki unsurları biyografiye mekanik biçimde taşımayın; gerçek hayat bilgisinin nasıl sıralandığını inceleyin.",
+        "items": [
+          "Merkez kişi ve yaşam olayları",
+          "Zaman ve kronolojik düzen",
+          "Mekân ve görev/seyahat bilgileri",
+          "Bu düzenin okurun anlamasına katkısı"
+        ]
+      }
+    },
+    {
+      "id": "s205-q1-chronology",
+      "source_record_id": "T03-S0072",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Biyografide yaşam çizgisi: Olayları oluş sırasına yerleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki olayları kaynak sayfadan doğrulayarak sıralayın; tarih verilmediyse tahmin etmeyin.",
+        "items": [
+          "Eğitim ve mesleğe başlangıç",
+          "Yayın hayatı ve eserler",
+          "Millî Mücadele ve İstiklâl Marşı",
+          "Mısır yılları ve son dönem"
+        ],
+        "note": "Hayat olayları ile eserler arasındaki ilişkiyi bir tarih ezberine indirgemeyin."
+      }
+    },
+    {
+      "id": "s205-q2",
+      "source_record_id": "T03-S0073",
+      "answer_id": "T3-P205-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 2 — Metnin söz varlığı, yazarın üslubunu nasıl destekler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki tarih, kurum, eser ve edebiyat terimlerini gösterip bunların açıklayıcı anlatıma katkısını söyleyin."
+      }
+    },
+    {
+      "id": "s205-q3",
+      "source_record_id": "T03-S0074",
+      "answer_id": "T3-P205-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3 — Yapı unsurlarının birlikte kullanılması biyografinin üslubunu nasıl etkiler?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Zaman, mekân, görev ve eser bilgilerinin birbirine bağlandığı bir bölümden hareketle cevaplayın."
+      }
+    },
+    {
+      "id": "s205-q4",
+      "source_record_id": "T03-S0075",
+      "answer_id": "T3-P205-Q04",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 4 — Metindeki millî, manevi ve evrensel değerleri belirleyiniz.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Bir değer söylerken biyografideki hangi davranışın, eserin veya olayın buna dayanak olduğunu da sorun.",
+        "items": [
+          "Millî değerler",
+          "Manevi değerler",
+          "Evrensel değerler"
+        ]
+      }
+    },
+    {
+      "id": "s205-asim-q1",
+      "source_record_id": "T03-S0076",
+      "answer_id": "T3-P205-PERF01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Âsım'ın nesline duyulan güveni sayfadaki görsellerden hareketle yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Görsellerin temsil ettiği emek, bilim ve üretim alanlarını söyleyin; bilmediğiniz teknik özellikler hakkında iddiada bulunmayın.",
+        "items": [
+          "KAAN ve TCG Anadolu",
+          "Göktürk-1 ve BİLSAT",
+          "Görsellerin ortak düşündürdüğü çalışma ve sorumluluk"
+        ]
+      }
+    },
+    {
+      "id": "s205-asim-q2",
+      "source_record_id": "T03-S0077",
+      "answer_id": "T3-P205-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Bugünün Âsım neslinin üstlenebileceği görevleri görsellerle ilişkilendirerek tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrenci kendi önerisini gerekçelendirir; tek bir doğru görev listesi aranmaz.",
+        "items": [
+          "Bir görev önerin.",
+          "Görsellerden biriyle bağ kurun.",
+          "Bu görevi gerçekleştirmek için gereken bilgi, emek veya iş birliğini açıklayın."
+        ]
+      }
+    }
+  ]
+}
