@@ -116,7 +116,7 @@ try {
     return guide.includes('İletişim engellerini canlandırma') &&
       guide.includes('E-posta yazma') &&
       guide.includes('Ek-1') &&
-      guide.includes('performans notu');
+      guide.includes('performans puan');
   })()`);
   if (!annualAndWorkshops) throw new Error("Teacher workflow evidence incomplete.");
 
