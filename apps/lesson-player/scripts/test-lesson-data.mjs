@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 5,
-  "Tema 4 s.236–262 giriş, okuma ve çözümleme/değerler bloklarını içermeli.");
+assert(theme4Lessons.length === 7,
+  "Tema 4 s.236–270 Mimar Sinan ve Merdiven bloklarını içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -391,10 +391,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 78 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 39 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 39,
-  "Tema 4 s.236–262 toplam 5 ders / 78 ekran / 39 kaynak / 39 cevap olmalı.");
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 104 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 55 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 55,
+  "Tema 4 s.236–270 toplam 7 ders / 104 ekran / 55 kaynak / 55 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -510,6 +510,73 @@ assert(mimarValuesById.get("s262-q1")?.answer?.entry_type === "performance_suppo
 for (const step of mimarValues.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.260–262 doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
+
+const merdivenIntro = lessons.find(lesson => lesson.lesson_id === "T11-T04-MERDIVEN-GIRIS-263-265");
+assert(merdivenIntro && merdivenIntro.printed_page_range === "263-265" &&
+  merdivenIntro.coverage.steps === 9 && merdivenIntro.coverage.source_records === 3 &&
+  merdivenIntro.coverage.answer_entries === 2,
+  "Merdiven giriş s.263–265 9 ekran / 3 kaynak / 2 cevap içermeli.");
+const merdivenIntroById = new Map(merdivenIntro.steps.map(step => [step.id, step]));
+assert(merdivenIntroById.size === 9,
+  "Merdiven ön okuma ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s263-q","T04-S0040","T4-P263-PERF01"],
+  ["s264-aim","T04-S0042","T4-P264-PERF01"]
+]) {
+  assert(merdivenIntroById.get(id)?.source?.source_record_id === sourceId &&
+    merdivenIntroById.get(id)?.answer?.question_id === answerId,
+    `Merdiven ön okuma kanonik bağlantı: ${id}`);
+}
+assert(merdivenIntroById.get("s264-short-story")?.source?.source_record_id === "T04-S0041" &&
+  merdivenIntroById.get("s264-short-story")?.answer === null &&
+  merdivenIntroById.get("s265-read")?.source?.source_record_id === "T04-S0042",
+  "Küçürek hikâye Bilgi Köşesi ve ana metin kitap referansı olarak kalmalı.");
+for (const step of merdivenIntro.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Merdiven s.263–265 doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
+
+const merdivenAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-MERDIVEN-ANLAMA-266-270");
+assert(merdivenAnalysis && merdivenAnalysis.printed_page_range === "266-270" &&
+  merdivenAnalysis.coverage.steps === 17 &&
+  merdivenAnalysis.coverage.source_records === 13 &&
+  merdivenAnalysis.coverage.answer_entries === 14,
+  "Merdiven anlama s.266–270 17 ekran / 13 kaynak / 14 cevap içermeli.");
+const merdivenById = new Map(merdivenAnalysis.steps.map(step => [step.id, step]));
+assert(merdivenById.size === 17, "Merdiven anlama ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s266-vocabulary","T04-S0043","T4-P266-VOC01"],
+  ["s267-q4","T04-S0043","T4-P267-VOC02"],
+  ["s268-q1","T04-S0044","T4-P268-Q01"],
+  ["s268-q2","T04-S0045","T4-P268-Q02"],
+  ["s268-q3","T04-S0046","T4-P268-Q03"],
+  ["s269-q1","T04-S0047","T4-P269-Q01"],
+  ["s269-q2","T04-S0048","T4-P269-Q02"],
+  ["s269-q3","T04-S0049","T4-P269-Q03"],
+  ["s269-q4","T04-S0050","T4-P269-Q04"],
+  ["s269-q5","T04-S0051","T4-P269-Q05"],
+  ["s269-q6","T04-S0052","T4-P269-Q06"],
+  ["s269-q7","T04-S0053","T4-P269-Q07"],
+  ["s270-q8","T04-S0054","T4-P270-Q08"],
+  ["s270-work","T04-S0055","T4-P270-WORK01"]
+]) {
+  assert(merdivenById.get(id)?.source?.source_record_id === sourceId &&
+    merdivenById.get(id)?.answer?.question_id === answerId,
+    `Merdiven s.266–270 kanonik bağlantı: ${id}`);
+}
+assert(merdivenById.get("s266-vocabulary")?.content?.items?.length === 6 &&
+  Object.keys(merdivenById.get("s266-vocabulary")?.answer?.answer_sections ?? {}).length === 6 &&
+  Object.keys(merdivenById.get("s267-q4")?.answer?.answer_sections ?? {}).length === 3,
+  "Altı kelime ile Söz Varlığımız 4–5 üç ayrı cevap bölümü korunmalı.");
+assert(merdivenById.get("s268-q5")?.answer === null &&
+  merdivenById.get("s269-q7")?.content?.items?.length === 5 &&
+  merdivenById.get("s270-work")?.content?.items?.length === 6 &&
+  Object.keys(merdivenById.get("s270-work")?.answer?.answer_sections ?? {}).length === 6,
+  "Çağrışım süreci ve altı başlıklı Merdiven çalışma kâğıdı korunmalı.");
+for (const step of merdivenAnalysis.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Merdiven s.266–270 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
