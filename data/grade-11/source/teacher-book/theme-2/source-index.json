@@ -8,7 +8,7 @@
   "counts": {
     "records": 158,
     "linked_answers": 167,
-    "verified_records": 115
+    "verified_records": 137
   },
   "records": [
     {
@@ -1345,7 +1345,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.136 / PDF s.137 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0117",
@@ -1357,7 +1357,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.136 / PDF s.137 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0118",
@@ -1367,7 +1367,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.137 / PDF s.138 — adımlar 1-4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0119",
@@ -1379,7 +1379,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.138 / PDF s.139 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0120",
@@ -1391,7 +1391,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.138 / PDF s.139 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0121",
@@ -1401,7 +1401,7 @@
       "task_type": "ASSESSMENT",
       "rights_mode": "PAGE_REFERENCE",
       "source_locator": "basılı s.138-139 / PDF s.139-140 — etkin dinleme kuralları, Kontrol Listesi ve Gözlem Formu",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0122",
@@ -1411,7 +1411,7 @@
       "task_type": "VOCABULARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.140 / PDF s.141 — Âşık Atışması QR medyası / Söz Varlığımız",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0123",
@@ -1423,7 +1423,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.141 / PDF s.142 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0124",
@@ -1435,7 +1435,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.141 / PDF s.142 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0125",
@@ -1447,7 +1447,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.142 / PDF s.143 — Metni Anlayalım soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0126",
@@ -1459,7 +1459,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.142 / PDF s.143 — Metni Anlayalım soru 2 / Âşık Atışması QR medyası",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0127",
@@ -1469,7 +1469,7 @@
       "task_type": "COMPARISON",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.142 / PDF s.143 — Karşılaştıralım",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0128",
@@ -1479,7 +1479,7 @@
       "task_type": "COMPARISON",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.143 / PDF s.144 — Karşılaştıralım 2-4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0129",
@@ -1489,7 +1489,7 @@
       "task_type": "ASSESSMENT",
       "rights_mode": "PAGE_REFERENCE",
       "source_locator": "basılı s.143 / PDF s.144 — Sıra Sizde / Kontrol Listesi",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0130",
@@ -1501,7 +1501,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.144 / PDF s.145 — Fark Edelim soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0131",
@@ -1513,7 +1513,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.144 / PDF s.145 — Fark Edelim soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0132",
@@ -1525,7 +1525,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.144 / PDF s.145 — Fark Edelim soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0133",
@@ -1535,7 +1535,7 @@
       "task_type": "TABLE",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.144 / PDF s.145 — Çözümleyebilme zihin haritası / Âşık Atışması QR medyası",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0134",
@@ -1545,7 +1545,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.145 / PDF s.146 — Altı Şapka tekniği",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0135",
@@ -1555,7 +1555,7 @@
       "task_type": "PROCESS",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.146 / PDF s.147 — görüş geliştirme / Çalışma Kâğıdı",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0136",
@@ -1565,7 +1565,7 @@
       "task_type": "ASSESSMENT",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.147 / PDF s.148 — Süreci Değerlendirebilme soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0137",
@@ -1575,7 +1575,7 @@
       "task_type": "ASSESSMENT",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.147 / PDF s.148 — Süreci Değerlendirebilme soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0138",
