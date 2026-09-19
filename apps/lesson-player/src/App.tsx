@@ -267,6 +267,10 @@ export default function App() {
     if (!target || target.lesson_id === lesson.lesson_id) return;
 
     window.localStorage.setItem(lessonSelectionKey, target.lesson_id);
+    projectionChannelRef.current?.postMessage({
+      type: "lesson-switch",
+      lessonId: target.lesson_id
+    });
     const url = new URL(window.location.href);
     url.searchParams.set("lesson", target.lesson_id);
     url.searchParams.delete("step");
@@ -297,10 +301,11 @@ export default function App() {
     const url = new URL(window.location.href);
     url.searchParams.set("lesson", lesson.lesson_id);
     url.searchParams.set("display", "1");
+    url.searchParams.set("step", step.id);
 
     const displayWindow = window.open(
       url.toString(),
-      `${lesson.lesson_id}-projection`,
+      projectionWindowName,
       "popup=yes,width=1280,height=720"
     );
 
@@ -315,7 +320,7 @@ export default function App() {
 
     window.setTimeout(publish, 250);
     window.setTimeout(publish, 900);
-  }, []);
+  }, [step.id]);
 
   const updateStepOverride = useCallback(
     (stepId: string, patch: StepOverride) => {
@@ -423,18 +428,26 @@ export default function App() {
   }, [effectiveSteps, overrides]);
 
   useEffect(() => {
+    if (displayOnly) return;
     window.localStorage.setItem(progressKey, String(index));
-  }, [index]);
+    window.localStorage.setItem(progressStepKey, step.id);
+  }, [index, step.id]);
 
   useEffect(() => {
+    if (displayOnly) return;
     window.localStorage.setItem(modeKey, String(presentationMode));
   }, [presentationMode]);
 
   useEffect(() => {
-    window.localStorage.setItem(overridesKey, JSON.stringify(overrides));
-  }, [overrides]);
+    if (displayOnly || !overrideRestore.canPersist) return;
+    window.localStorage.setItem(
+      overridesKey,
+      JSON.stringify(overrideEnvelope(overrideSignature, overrides))
+    );
+  }, [overrides, overrideRestore.canPersist]);
 
   useEffect(() => {
+    if (displayOnly) return;
     window.localStorage.setItem(orderKey, JSON.stringify(stepOrder));
   }, [stepOrder]);
 
