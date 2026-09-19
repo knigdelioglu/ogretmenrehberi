@@ -1692,6 +1692,102 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-279-poetics.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-COZUMLEME-274-279&step=s279-q1"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-280-role.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-TIYATRO-CANLANDIRMA-280-283&step=s280-q2"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-282-rules.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-TIYATRO-CANLANDIRMA-280-283&step=s282-rules"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-283-eval.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-TIYATRO-CANLANDIRMA-280-283&step=s283-performance"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-285-plan.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-ANADOLU-INSANI-284-290&step=s285-plan"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-287-vocab.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-ANADOLU-INSANI-284-290&step=s287-vocab"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-290-messages.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-ANADOLU-INSANI-284-290&step=s290-q8"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-294-structure.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-ANADOLU-INSANI-COZUMLEME-291-297&step=s294-q4"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-295-multimodal.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-ANADOLU-INSANI-COZUMLEME-291-297&step=s295-q12"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-299-poster.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-AFIS-ATOLYESI-298-302&step=s299-task"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-302-rubric.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-AFIS-ATOLYESI-298-302&step=s302-rubric"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-303-synthesis.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-DEGERLENDIRME-303-307&step=s303-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-307-table.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-DEGERLENDIRME-303-307&step=s307-q11"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1887,5 +1983,17 @@ jobs:
             lesson-player-theme4-276-conflicts.png
             lesson-player-theme4-278-disciplines.png
             lesson-player-theme4-279-poetics.png
+            lesson-player-theme4-280-role.png
+            lesson-player-theme4-282-rules.png
+            lesson-player-theme4-283-eval.png
+            lesson-player-theme4-285-plan.png
+            lesson-player-theme4-287-vocab.png
+            lesson-player-theme4-290-messages.png
+            lesson-player-theme4-294-structure.png
+            lesson-player-theme4-295-multimodal.png
+            lesson-player-theme4-299-poster.png
+            lesson-player-theme4-302-rubric.png
+            lesson-player-theme4-303-synthesis.png
+            lesson-player-theme4-307-table.png
             apps/lesson-player/dist
           if-no-files-found: error
