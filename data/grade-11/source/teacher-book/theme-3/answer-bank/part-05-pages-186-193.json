@@ -10,9 +10,15 @@
       "printed_page": 186,
       "question_no": "Sıra Sizde 3",
       "prompt_summary": "Kendine yakın bulunan Huzur kişisinin konuşma biçimini günlük dille karşılaştırma",
-      "answer": "Örnek seçim: Mümtaz. Mümtaz'ın dili günlük konuşmadan daha şiirsel, mecazlı ve kültürel göndermelerle yüklüdür; uzun cümleler, eski kelimeler ve musiki/tarih terimleri kullanır. Günlük dil ise genellikle daha kısa, doğrudan ve güncel söz varlığına dayanır. Örnek gerekçe: 'Mümtaz'ın sanata ve geçmişe duyarlılığını kendime yakın buluyorum; ancak günlük konuşmamda onun kadar uzun ve mecazlı cümleler kullanmıyorum.'",
-      "guidance": "Öğrenci başka bir kişiyi seçebilir. Değerlendirmede kişiye neden yakınlık duyduğu ve dil farkını somut bir örnekle açıklaması önemlidir.",
-      "source_locator": "basılı s.186 / PDF s.187 — Sıra Sizde soru 3"
+      "answer": "Örnek seçim Mümtaz olabilir: s.169'da Mümtaz eski musiki ve kültürel kimlikten söz ederken ‘mazi’ ve ‘hüviyet’ gibi kavramlara başvurur, düşüncesini açıklayıcı cümlelerle geliştirir. Öğrencinin günlük dilinde benzer duygu daha kısa, güncel kelimelerle dile getirilebilir. Ancak cevap, öğrencinin gerçekte yakın bulduğu kişinin metinde duyulan sözü ve kendi konuşma alışkanlığı üzerinden kurulmalıdır.",
+      "guidance": "Öğrenci başka kahramanı seçebilir; konuşma örneği görülmeyen kişiye doğrudan söz veya belirli bir konuşma biçimi atfetmeyin. Öğrencinin kişisel dilini onun yerine kesinleştirmeyin.",
+      "source_locator": "basılı s.186 / PDF s.187 — Sıra Sizde soru 3",
+      "answer_sections": {
+        "kahraman_ve_yakinlik": "Örnek: Mümtaz; sanata ve İstanbul'un geçmişine ilgi duyduğu için.",
+        "romandaki_dil": "s.169'da ‘mazi’, ‘hüviyet’ ve eski musikiye ilişkin adlarla geçmiş/yeni hayat ilişkisini açıklar.",
+        "gunluk_dil_ile_fark": "Örnek günlük söyleyiş: ‘Geçmişimizi bilmeden geleceğimizi kuramayız.’ Gündelik cümle daha kısa ve güncel söz varlığıyla kurulur.",
+        "gerekce": "Mümtaz'ın tarihî ve estetik kavramları düşüncesini ayrıntılandırır; öğrencinin söyleyişi yakın anlamı daha doğrudan aktarabilir."
+      }
     },
     {
       "question_id": "T3-P186-Q01",
@@ -20,30 +26,26 @@
       "printed_page": 186,
       "question_no": "Çözümleyebilme 1",
       "prompt_summary": "Huzur'un olay, mekân, kişi kadrosu ve zaman unsurları",
-      "answer": "Kitapta verilen parçalar üzerinden olay; Mümtaz ile Nuran'ın ilişkisi, İstanbul gezileri, sanat ve geçmiş üzerine konuşmaları ile İhsan'ın hastalığının Mümtaz üzerindeki etkisi çevresinde gelişir. Mekân ağırlıklı olarak İstanbul'dur; Boğaz, Üsküdar, Emirgân, Kanlıca, Çamlıca, Beyoğlu ve tarihî semtler öne çıkar. Kişi kadrosunda Mümtaz, Nuran, İhsan, Macide, Suat ve Fâhir başta olmak üzere çeşitli kişiler yer alır. Zaman, kişilerin şimdiki yaşantıları ile geçmiş hatıraları ve tarihî çağrışımlar arasında gidip gelir.",
+      "answer": "Ders kitabında okunan kesit ve yardımcı parçalar üzerinden dört yapı unsuru ayrı belirlenebilir; bu, Huzur'un bütünü için eksiksiz olay örgüsü iddiası taşımaz.",
       "answer_sections": {
-        "olay": "Mümtaz-Nuran ilişkisi, İstanbul ve sanat çevresindeki yaşantılar; İhsan'ın hastalığı ve geçmiş/kimlik tartışmaları.",
+        "olay": "Mümtaz ile Nuran'ın Boğaz ve İstanbul gezileri, musiki ile geçmiş/kimlik üzerine konuşmaları; yardımcı parçada İhsan'ın hastalığının Mümtaz'a etkisi.",
         "mekan": [
-          "İstanbul",
-          "Boğaz",
-          "Üsküdar",
-          "Emirgân",
-          "Kanlıca",
-          "Çamlıca",
-          "Beyoğlu ve tarihî semtler"
+          "Boğaz ve vapur",
+          "Üsküdar'ın tarihî camileri",
+          "Kanlıca, Çamlıca, Emirgân ve diğer İstanbul semtleri",
+          "İhsan'ın hasta olduğu ev (s.182 ve s.185 yardımcı parçaları)"
         ],
         "kisi_kadrosu": [
-          "Mümtaz",
-          "Nuran",
-          "İhsan",
-          "Macide",
-          "Suat",
-          "Fâhir ve yardımcı kişiler"
+          "Mümtaz: düşünce ve duygu merkezindeki kişi",
+          "Nuran: gezilerin ve diyalogların diğer temel kişisi",
+          "İhsan: Mümtaz'ın rehberi, hastalık parçasında bakım gördüğü kişi",
+          "Macide: Mümtaz'ın aile çevresi; s.182'de anlatılır",
+          "Suat ve Fâhir: etkinlik tablolarında adları geçer; verilen kesitte ayrıntılı davranışları görülmez"
         ],
-        "zaman": "Şimdiki olay akışı ile hatıralar ve geçmişe dönüşlerin iç içe geçtiği zaman yapısı."
+        "zaman": "Vapurda akşamdan geceye ilerleyen saatler, farklı günlere yayılan geziler ve s.170'teki ağustos günü; Mümtaz'ın çocukluk hatıraları ile tarihî geçmişe dönüşleri anlatıyı derinleştirir."
       },
-      "explanation": "Bu cevap, ders kitabında verilen Huzur parçaları ve tablolarıyla sınırlıdır; romanın bütün olay örgüsünün ayrıntılı özeti değildir.",
-      "source_locator": "basılı s.167-186 / PDF s.168-187 — yapı unsurları"
+      "explanation": "Olay/mekân/kişi/zaman bu metin parçasına göre açıklanır. Soru ‘roman’ dese de kaynağın veremediği kesin takvim, tüm romanın olay sırası veya Suat/Fâhir'in ayrıntılı rolü eklenmez.",
+      "source_locator": "basılı s.167–170, s.182, s.185 ve yapı tablosu s.186 / PDF s.168–171, s.183, s.186–187"
     },
     {
       "question_id": "T3-P187-Q02",
@@ -51,14 +53,14 @@
       "printed_page": 187,
       "question_no": "2",
       "prompt_summary": "Dil ve üslupla olay, mekân, kişi kadrosu ve zaman arasındaki ilişki",
-      "answer": "Üslup; olay, mekân, kişi ve zamanla kurduğu ilişki bakımından aşağıdaki başlıklarda değerlendirilebilir.",
+      "answer": "Kitabın dört başlığını birbirinden ayırarak metinde gözlenen söyleyişin her yapı unsuruna nasıl hizmet ettiğini açıklayınız.",
       "answer_sections": {
-        "olay_dil_uslup": "Psikolojik çözümleme, düşünsel anlatım ve diyalog dış olaydan çok iç çatışmayı görünür kılar.",
-        "mekan_dil_uslup": "Şiirsel ve ayrıntılı betimleme İstanbul'u kimlik/hafıza mekânına dönüştürür.",
-        "kisi_dil_uslup": "Kişilerin düşünce ve kültür düzeylerine göre konuşma ve iç dünya anlatımı farklılaşır.",
-        "zaman_dil_uslup": "Hatıra, çağrışım ve geriye dönüşler geçmiş ile şimdiyi iç içe geçirir."
+        "olay_dil_uslup": "Diyaloglar eski-yeni hayat tartışmasını görünür kılar; iç değerlendirme ve anlatıcı yorumları gezilerden düşünsel/psikolojik meseleye geçişi sağlar.",
+        "mekan_dil_uslup": "Boğaz'ın ışığı ve sesiyle Üsküdar'ın camileri ayrıntılı ve çağrışımlı betimlenir; mekân bir aidiyet ve kültürel hafıza alanı olur.",
+        "kisi_dil_uslup": "Mümtaz'ın soyut ve musikili düşünce diliyle Nuran'ın doğrudan soruları, kişiler arasındaki bakış farkını konuşturur.",
+        "zaman_dil_uslup": "Çocukluk hatıraları, eski musiki ve tarih çağrışımları şimdiki gezi anlatısıyla iç içe geçirilerek çok katmanlı zaman hissi kurulur."
       },
-      "source_locator": "basılı s.187 / PDF s.188 — soru 2"
+      "source_locator": "basılı s.167–170 ve soru s.187 / PDF s.168–171 ve s.188"
     },
     {
       "question_id": "T3-P187-Q03A",
@@ -66,7 +68,7 @@
       "printed_page": 187,
       "question_no": "3/a",
       "prompt_summary": "Roman temasının Tanpınar'ın üslubuna etkisi",
-      "answer": "Huzur ve kimlik arayışı, aşk, geçmişle bağ ve yeni hayat ihtiyacı gibi temalar; Tanpınar'ı kişilerin dış davranışlarından çok iç dünyalarına, çağrışımlarına ve düşüncelerine yönelten bir üsluba taşır. Bu nedenle şiirsel betimlemeler, musiki ve tarih göndermeleri, iç çözümleme ve uzun düşünsel cümleler sıklaşır.",
+      "answer": "Metnin huzur/kimlik arayışı, aşk, geçmişle bağ ve yeni hayat ihtiyacı; yazarın yalnız olayları sıralamak yerine kişinin hatıralarını, duygularını ve düşüncelerini uzun, çağrışımlı cümlelerle işlemesine yol açar. İstanbul betimlemeleriyle musikinin iç içe geçmesi, aranan huzuru hem kişisel hem kültürel düzeyde duyurur.",
       "source_locator": "basılı s.187 / PDF s.188 — soru 3/a"
     },
     {
@@ -75,7 +77,7 @@
       "printed_page": 188,
       "question_no": "3/b",
       "prompt_summary": "Yapı unsurlarının etkileşiminin üsluba katkısı",
-      "answer": "Kişilerin iç dünyası İstanbul mekânları, musiki, hatıralar ve geçmişe dönüşlerle sürekli ilişki hâlindedir. Bu etkileşim, anlatımın yalnız olay aktaran bir çizgide kalmamasını; betimleme, psikolojik çözümleme, diyalog ve çağrışımın iç içe geçmesini sağlar. Böylece üslup, romanın olay-kahraman-mekân-zaman bütünlüğünü estetik bir bağla birleştirir.",
+      "answer": "Mümtaz ve Nuran'ın İstanbul gezileri yalnız bir olay çizgisi değildir: gidilen semtler eski musikiyi hatırlatır; musiki kişisel hatırayı ve geçmiş tartışmasını açar. Böylece kişi, mekân ve zamanın birlikte işlemesi; betimlemeden diyaloğa, oradan iç çözümleme ve tarihî çağrışıma geçebilen bir üslup oluşturur.",
       "source_locator": "basılı s.188 / PDF s.189 — soru 3/b"
     },
     {
@@ -84,8 +86,8 @@
       "printed_page": 188,
       "question_no": "3/c",
       "prompt_summary": "Romanın yazıldığı dönemin özelliklerinin üsluba etkisi",
-      "answer": "Kitaptaki Tanpınar biyografisinde çağdaşlaşma sürecindeki bireyin geleneksel kültürle modern kültür arasında sıkışmasının eserlerine yansıdığı belirtilir. Huzur'da bu dönemsel gerilim, eski musiki ve tarihî İstanbul'a ait söz varlığıyla 'yeni bir hayat' ihtiyacının aynı metinde tartışılmasına yol açar. Üslup bu nedenle hem geçmiş kültürün kavramlarını taşır hem modern bireyin iç çatışmasını psikolojik ve düşünsel bir anlatımla verir.",
-      "source_locator": "basılı s.171 ve s.188 / PDF s.172 ve s.189 — soru 3/c"
+      "answer": "s.171'deki yazar biyografisi çağdaşlaşma sürecinde geleneksel ve modern kültür arasındaki gerilimin Tanpınar'ın eserlerine yansıdığını söyler. Okunan kesitte eski musiki, tarihî İstanbul, kimlik ihtiyacı ve yoksul semtlerin bugünkü koşulları birlikte anıldığı için anlatım geçmişi çağrıştıran söz varlığını yeni hayat sorusuyla birleştirir. Bu yorum, kitapta görülen metin ve biyografiyle sınırlıdır.",
+      "source_locator": "basılı s.169–171 ve s.188 / PDF s.170–172 ve s.189 — soru 3/c"
     },
     {
       "question_id": "T3-P188-Q03CC",
@@ -93,8 +95,12 @@
       "printed_page": 188,
       "question_no": "3/ç",
       "prompt_summary": "Söz varlığı ile Tanpınar'ın üslubu arasındaki ilişki",
-      "answer": "Metindeki mimari, tarih ve klasik Türk musikisine ait kelimeler Tanpınar'ın kültür birikimini ve geçmişle kurduğu ilişkiyi üsluba taşır. Bunun yanında 'mazi, hülasa, yeis, muazzam' gibi bugün daha seyrek kullanılan kelimeler dönem havasını güçlendirir. Zengin söz varlığı, betimleme ve düşünce bölümlerine çağrışım derinliği kazandırarak romanın şiirsel ve kültürel yoğunluğunu artırır.",
-      "source_locator": "basılı s.172 ve s.188 / PDF s.173 ve s.189 — soru 3/ç"
+      "answer": "‘Mazi’, ‘hüviyet’, ‘musiki’, makam/beste adları ve cami-mimari terimleri, geçmiş ile kimlik meselesini metnin ses ve anlam dünyasına taşır. Bu söz varlığı İstanbul'u yalnız görülen bir yer değil, kültür ve hafıza alanı gibi anlatmayı sağlar. Uzun betimleme ve çağrışım cümleleri bu kelimelerle daha yoğun ve şiirsel bir söyleyiş kazanır.",
+      "source_locator": "basılı s.167–170, s.188 / PDF s.168–171, s.189 — soru 3/ç",
+      "evidence_quotes": [
+        "Bir hüviyet lâzım.",
+        "İstanbul’u tanımadıkça kendimizi bulamayız."
+      ]
     },
     {
       "question_id": "T3-P188-Q04",
@@ -102,26 +108,27 @@
       "printed_page": 188,
       "question_no": "4",
       "prompt_summary": "Mümtaz, Nuran, İhsan ve Suat'ın özellikleri ve amaçları",
-      "answer": "Kaynak üzerinden güvenle belirlenebilen kişi özellikleri ve amaçları aşağıdaki tabloda gösterilebilir; Suat için yeterli doğrudan veri yoktur.",
+      "answer": "Dört kişi için özellik ve amaç sütunları birlikte açıklanabilir; Suat'ın adı tabloda bulunduğu hâlde okunan Huzur parçası onun davranış ve amacını saptamaya yetmez. Nuran ve İhsan'ın amaçları da doğrudan ilan edilmiş hedefler değil, görülen söz ve davranışlarından çıkarımlardır.",
       "answer_sections": {
         "Mümtaz": {
-          "ozellikler": "Hassas, sanatçı duyarlılığı yüksek, geçmiş ve kimlik odaklı.",
-          "amac": "Geçmişle bağını koruyarak kendi kimliğini ve yeni hayatı anlamlandırmak."
+          "ozellikler": "Sanata, geçmişe ve şehrin kültürüne duyarlı; zaman zaman içe dönük ve sorgulayıcı.",
+          "amac": "Nuran'la ortak hayatı ve yeni hayat düşüncesini kültürel kimlik arayışıyla anlamlandırmak."
         },
         "Nuran": {
-          "ozellikler": "Sanata açık, sorgulayıcı, toplumsal gerçekliğe duyarlı.",
-          "amac": "İlişkisini ve hayatını geçmişle bugün arasında daha dengeli kurmak."
+          "ozellikler": "Sanatı ve tarihî İstanbul'u seven, yoksulluğu ve insanların bugünkü ihtiyaçlarını da gören.",
+          "amac": "Gezilerle İstanbul'u tanımak; eskiye bağlılıkla bugünün hayatı arasındaki dengeyi sorgulamak (metinden çıkarım)."
         },
         "İhsan": {
-          "ozellikler": "Fikir adamı, öğretici, Mümtaz üzerinde güçlü etkisi olan rehber.",
-          "amac": "Tarih ve kültür bilinciyle toplumun ve insanın geleceğini düşünmek."
+          "ozellikler": "Mümtaz'ın anlattığına göre öğretici, kültüre dönük, düşünsel rehber.",
+          "amac": "Kendi hayatlarının tarihî-kültürel kaynaklarını tanımak ve yaşamak (Mümtaz'ın aktardıklarından çıkarım)."
         },
         "Suat": {
-          "ozellikler": "Verilen kaynak parçalarında yeterli veri yok.",
-          "amac": "Verilen kaynak parçalarında yeterli veri yok."
+          "ozellikler": "Kitapta okunan parçada yeterli doğrudan özellik kanıtı yok.",
+          "amac": "Bu parçada belirlenemez; tam roman veya ek metin gerekir."
         }
       },
-      "source_locator": "basılı s.188 / PDF s.189 — soru 4"
+      "source_locator": "basılı s.167–170, s.182 ve soru s.188 / PDF s.168–171, s.183, s.189",
+      "guidance": "Tablo ‘özellikleri’ ile ‘amaçları’nı farklı sütunlar olarak ister. Metnin vermediği Suat özelliklerini dışarıdan eklemeyin; Nuran ve İhsan için amaçları çıkarım olduğunu belirterek sunun."
     },
     {
       "question_id": "T3-P189-PERF01",

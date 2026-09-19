@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-YAPI-USLUP-186-188",
+  "lesson_slug": "huzur-yapi-uslup-186-188",
+  "title": "Huzur — Yapı ve Üslup",
+  "subtitle": "Yaşamın İzinde · Kahramanın dili / Çözümleyebilme",
+  "printed_page_range": "186-188",
+  "required_source_range": {
+    "from": "T03-S0038",
+    "to": "T03-S0045"
+  },
+  "steps": [
+    {
+      "id": "s186-voice-choice",
+      "source_record_id": "T03-S0038",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 3 — Yakın bulduğunuz kahramanın konuşmasını kendi günlük dilinizle karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P186-PERF01",
+      "content": {
+        "lead": "Seçtiğiniz kişinin metinde gerçekten söylediği bir sözü bulun; önce yakınlık gerekçesini, sonra kelime/cümle ve söyleyiş farkını açıklayın.",
+        "items": [
+          "Kahraman ve neden yakın bulduğunuz",
+          "Metindeki konuşma biçimi ve örnek",
+          "Günlük hayatta aynı düşünceyi nasıl söylersiniz?",
+          "Farkın gerekçesi"
+        ]
+      }
+    },
+    {
+      "id": "s186-voice-model",
+      "source_record_id": "T03-S0038",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Günlük dile karşılaştırma örneği: Mümtaz",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu örnek öğrencinin kendi seçiminin yerine geçmez.",
+        "sections": [
+          {
+            "title": "Metindeki söyleyiş",
+            "body": "Mümtaz ‘mazi’ ve ‘hüviyet’ gibi kavramlarla geçmiş/gelecek ilişkisini açıklar (s.169)."
+          },
+          {
+            "title": "Günlük karşılık",
+            "body": "‘Geçmişimizi bilmeden geleceğimizi kuramayız.’ Aynı düşünce daha kısa, doğrudan ifade edilir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s186-structure",
+      "source_record_id": "T03-S0039",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 1 — Olay, kişi kadrosu, mekân ve zaman kutularını metne göre tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P186-Q01",
+      "content": {
+        "lead": "Ders kitabının s.186'daki dört boş kutusunu metinde görülen ayrıntılarla doldurun; tüm romanı okumuş gibi bütün olayları eklemeyin.",
+        "items": [
+          "Olay",
+          "Kişi kadrosu",
+          "Mekân",
+          "Zaman"
+        ]
+      }
+    },
+    {
+      "id": "s186-event",
+      "source_record_id": "T03-S0039",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yapı unsurunu belirleyin: Olay",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İstanbul gezileri ve Nuran-Mümtaz ilişkisi; sanat, geçmiş ve yeni hayat konuşmaları. Yardımcı parçada İhsan'ın hastalığı da anlatılır.",
+        "sections": [
+          {
+            "title": "Kitaptaki dayanak",
+            "body": "s.168–170'te geziler ve konuşmalar, s.185'te hasta İhsan'la ilgilenme."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s186-place",
+      "source_record_id": "T03-S0039",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yapı unsurunu belirleyin: Mekân",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Boğaz'da vapur; Üsküdar, Kanlıca, Çamlıca ve Emirgân gibi İstanbul semtleri. Yardımcı hastalık parçasında İhsan'ın evi.",
+        "sections": [
+          {
+            "title": "Mekânın işlevi",
+            "body": "Tarihî ve kültürel hafızayı çağrıştırır; bakımsız sokaklar aynı şehrin bugünkü güçlüklerini gösterir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s186-people",
+      "source_record_id": "T03-S0039",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yapı unsurunu belirleyin: Kişi kadrosu",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Okunan kesitte Mümtaz ile Nuran öndedir; İhsan ve Macide Mümtaz'ın aktardığı/açıklanan yakın çevresidir.",
+        "sections": [
+          {
+            "title": "Kaynak sınırı",
+            "body": "Suat ve Fâhir'in isimleri kitap etkinliklerinde yer alır; verilen kesitte ayrıntılı davranışları gösterilmez."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s186-time",
+      "source_record_id": "T03-S0039",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yapı unsurunu belirleyin: Zaman",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Vapur akşamından geceye, farklı günlerin gezileri ve ağustos günü; ayrıca çocukluk hatıraları ile tarihî geçmiş çağrışımları.",
+        "sections": [
+          {
+            "title": "Metindeki işlev",
+            "body": "Şimdiki gezinin içine Mümtaz'ın hatırladıkları ve eski İstanbul kültürü girer; kesin roman takvimi kaynakta verilmez."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s187-four",
+      "source_record_id": "T03-S0040",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 2 — Dil ve üslupla dört yapı unsuru arasındaki ilişkiyi ayrı ayrı yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P187-Q02",
+      "content": {
+        "lead": "s.187'de dört ayrı not alanı vardır. Her birinde 'hangi anlatım seçimi, o unsurun hangi yönünü görünür kılıyor?' sorusunu yanıtlayın.",
+        "items": [
+          "Olay–dil ve üslup",
+          "Kişi kadrosu–dil ve üslup",
+          "Mekân–dil ve üslup",
+          "Zaman–dil ve üslup"
+        ]
+      }
+    },
+    {
+      "id": "s187-event-style",
+      "source_record_id": "T03-S0040",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Olay–dil ve üslup ilişkisi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Nuran ile Mümtaz'ın geçmiş/bugün konuşması olay çizgisini düşünceye dönüştürür.",
+        "sections": [
+          {
+            "title": "Nasıl?",
+            "body": "Diyalog tartışmayı doğrudan gösterir; iç çözümleme Mümtaz'ın duygusal gerilimini açar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s187-person-style",
+      "source_record_id": "T03-S0040",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kişi kadrosu–dil ve üslup ilişkisi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın kavramsal, musikili ifadeleriyle Nuran'ın sorgulayan kısa soruları aynı olaya farklı bakışı duyurur.",
+        "sections": [
+          {
+            "title": "Soru",
+            "body": "‘Niçin eskiye bu kadar bağlıyız?’ sorusu, Mümtaz'ın uzun geçmiş/kimlik açıklamasını nasıl tetikliyor?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s187-place-style",
+      "source_record_id": "T03-S0040",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Mekân–dil ve üslup ilişkisi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Boğaz ve Üsküdar'ın ayrıntılı betimlenmesi hem görülen çevreyi hem kişilerin kültürel aidiyetini anlatır.",
+        "sections": [
+          {
+            "title": "Karşıtlık",
+            "body": "Boğaz'ın ışık/ses güzelliği ile bakımsız semtlerin yorgunluğu aynı şehirde farklı duygu oluşturur."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s187-time-style",
+      "source_record_id": "T03-S0040",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Zaman–dil ve üslup ilişkisi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın çocukluk hatıraları, eski musikiyi bugünkü geziyle birleştiren çağrışımları geçmiş ve şimdi arasında geçiş sağlar.",
+        "sections": [
+          {
+            "title": "Sınır",
+            "body": "Romanda adı verilmeyen tarih ve süreleri kesinleştirmeyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s187-3a",
+      "source_record_id": "T03-S0041",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3/a — Tema, Tanpınar'ın üslubunu nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P187-Q03A",
+      "content": {
+        "lead": "Huzur ve kimlik arayışının neden düz olay anlatımından çok çağrışım, iç dünya, musiki ve şehir betimlemesi gerektirdiğini açıklayın."
+      }
+    },
+    {
+      "id": "s188-3b",
+      "source_record_id": "T03-S0042",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3/b — Yapı unsurlarının birbirini etkilemesi üsluba ne kazandırır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P188-Q03B",
+      "content": {
+        "lead": "Nuran ve Mümtaz'ın bir İstanbul gezisinin musikiye, tarihî hafızaya ve kişisel duyguya dönüşmesini takip edin."
+      }
+    },
+    {
+      "id": "s188-3c",
+      "source_record_id": "T03-S0043",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3/c — Dönemin özellikleri Tanpınar'ın üslubuna nasıl yansır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P188-Q03C",
+      "content": {
+        "lead": "s.171 Tanpınar biyografisindeki geleneksel/modern kültür gerilimini, metindeki 'yeni hayat' ve eski musiki konuşmasıyla ilişkilendirin."
+      }
+    },
+    {
+      "id": "s188-3cc",
+      "source_record_id": "T03-S0044",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3/ç — Söz varlığıyla üslup arasında nasıl bir bağ var?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P188-Q03CC",
+      "content": {
+        "lead": "‘Mazi’, ‘hüviyet’, musiki ve tarihî mimari adlarının metne kattığı çağrışımı açıklayın."
+      }
+    },
+    {
+      "id": "s188-q4",
+      "source_record_id": "T03-S0045",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 4 — Mümtaz, Nuran, İhsan ve Suat'ın özellikleriyle amaçlarını ayrı sütunlara yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P188-Q04",
+      "content": {
+        "lead": "s.188'de dört kişi için iki sütun var. Suat'ın adı tabloda geçse de okuduğunuz Huzur parçasında özelliklerini/amacını gösteren doğrudan kanıt bulunmuyor.",
+        "items": [
+          "Mümtaz",
+          "Nuran",
+          "İhsan",
+          "Suat"
+        ]
+      }
+    },
+    {
+      "id": "s188-mumtaz",
+      "source_record_id": "T03-S0045",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kişi tablosu — Mümtaz",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Geçmişi, musikiyi ve kültürel kimliği önemser; Nuran'la yaşantısını ve yeni hayat ihtiyacını anlamlandırmaya çalışır.",
+        "sections": [
+          {
+            "title": "Metin dayanağı",
+            "body": "Üsküdar ve musiki konuşması (s.168–169); İhsan'ı hocası olarak tanıtması (s.170)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s188-nuran",
+      "source_record_id": "T03-S0045",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kişi tablosu — Nuran",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tarihî şehre ve sanata açıktır; yoksul insanların bugünkü sorunlarını da düşünür.",
+        "sections": [
+          {
+            "title": "Amaç hakkında çıkarım",
+            "body": "İstanbul'u tanımak ve kültür sevgisiyle yaşayan insanların ihtiyaçları arasındaki ilişkiyi sorgulamak; metinde açık bir hedef beyanı değildir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s188-ihsan",
+      "source_record_id": "T03-S0045",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kişi tablosu — İhsan",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın anlattığına göre öğretici bir rehberdir; kendi kültürlerinin kaynaklarını yaşamaya önem verir.",
+        "sections": [
+          {
+            "title": "Kaynak sınırı",
+            "body": "Amacı, Mümtaz'ın İhsan'ı tanıtmasından çıkarılır. İhsan'ın doğrudan uzun konuşması bu kesitte yer almıyor."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s188-suat",
+      "source_record_id": "T03-S0045",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kişi tablosu — Suat",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap bu kişinin adını tabloya koyar fakat okunan Huzur parçasında özellikleri ve amacı hakkında yeterli doğrudan veri sağlamaz.",
+        "sections": [
+          {
+            "title": "Öğretmen notu",
+            "body": "Eğer sınıfta romanın tamamı veya ek bir parça okunmuşsa o metnin kanıtıyla tamamlayın; burada kesin bilgi icat etmeyin."
+          }
+        ]
+      }
+    }
+  ]
+}

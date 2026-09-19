@@ -321,7 +321,8 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Huzur: açık/örtük ileti, Mescid-i Aksa karşılaştırması ve Okuma Çemberi temel rolleri — s.177–178
   - [x] Huzur: Okuma Çemberi seçimlik roller, kişi çözümlemesi, Türk Romanında İlkler — s.179–181
   - [x] Huzur: gerçek yaşam/kurmaca, öznel/nesnel anlatım, duyarlılık — s.182–185
-  - [ ] Huzur: dil, yapı, karakterler ve üslup çözümleme — s.186–193
+  - [x] Huzur: kahramanın dili, yapı, karakterler ve üslup çözümleme — s.186–188
+  - [ ] Huzur: çatışma, anlatıcı ve dil bilgisi — s.189–193
 - [ ] 4. Tema — Hayatın Aynası
 
 Her tema için aynı pipeline:
@@ -432,4 +433,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** s.186–188 kahramanın dili, romanın yapı unsurları ve üslup çözümlemesini ilk küçük blok olarak kitap sayfalarından üretmek. Tema 3 mevcut: 6 ders / 90 adım / 38 VERIFIED kaynak kullanımı / 39 answer (s.178–179 kaynak kaydı iki blokta kullanılır). Tema 1 ve 2 kalite kapsamını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** s.189–193 çatışma, dil ve dil bilgisi etkinliklerini gerçek kitaba göre küçük bloklara ayırarak sürdürmek. Tema 3 mevcut: 7 ders / 111 adım / 46 VERIFIED kaynak kullanımı / 47 answer (s.178–179 kaynağı iki blokta ortak). Tema 1 ve 2 kalite kapsamını korumak.

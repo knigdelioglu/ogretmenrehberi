@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 6, "Tema 3 girişten Huzur s.182–185 dahil altı doğal blok içermeli.");
+assert(theme3Lessons.length === 7, "Tema 3 girişten Huzur s.186–188 dahil yedi doğal blok içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -124,10 +124,10 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===90 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===38 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===39,
-  "Tema 3 mevcut kapsamı 90 adım / 38 source / 39 answer olmalı.");
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===111 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===46 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===47,
+  "Tema 3 mevcut kapsamı 111 adım / 46 source / 47 answer olmalı.");
 
 
 const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
@@ -166,10 +166,10 @@ assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü M
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
-assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 90 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 38 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 39,
-  "Tema 3 mevcut kapsamı 6 ders / 90 adım / 38 source / 39 answer olmalı.");
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 111 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 46 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 47,
+  "Tema 3 mevcut kapsamı 7 ders / 111 adım / 46 source / 47 answer olmalı.");
 
 
 const huzur177 = byLessonId.get("T11-T03-HUZUR-177-178");
@@ -312,10 +312,74 @@ for(const id of ["s184-halk","s184-new-life","s185-animals","s185-illness"]){
   huzur182ById.get(id)?.source?.source_record_id==="T03-S0037",
   `Duyarlılık alt parçası tek cevap bankası kaydında olmalı: ${id}`);
 }
-assert(theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0)===90 &&
- theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0)===38 &&
- theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0)===39,
- "Tema 3 yeni toplam 6 ders / 90 adım / 38 source / 39 answer olmalı.");
+assert(theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0)===111 &&
+ theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0)===46 &&
+ theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0)===47,
+ "Tema 3 yeni toplam 7 ders / 111 adım / 46 source / 47 answer olmalı.");
+
+
+const huzur186 = byLessonId.get("T11-T03-HUZUR-YAPI-USLUP-186-188");
+assert(huzur186?.printed_page_range === "186-188" &&
+  huzur186.coverage.steps === 21 &&
+  huzur186.coverage.source_records === 8 &&
+  huzur186.coverage.answer_entries === 8,
+  "Huzur s.186–188: 21 step / 8 source / 8 answer olmalı.");
+const huzur186ById = new Map(huzur186.steps.map(s => [s.id,s]));
+assert(huzur186ById.size === 21, "s.186–188 step id tekil olmalı.");
+for(const [id,source,answer] of [
+ ["s186-voice-choice","T03-S0038","T3-P186-PERF01"],
+ ["s186-structure","T03-S0039","T3-P186-Q01"],
+ ["s187-four","T03-S0040","T3-P187-Q02"],
+ ["s187-3a","T03-S0041","T3-P187-Q03A"],
+ ["s188-3b","T03-S0042","T3-P188-Q03B"],
+ ["s188-3c","T03-S0043","T3-P188-Q03C"],
+ ["s188-3cc","T03-S0044","T3-P188-Q03CC"],
+ ["s188-q4","T03-S0045","T3-P188-Q04"]
+]){
+ const step=huzur186ById.get(id);
+ assert(step?.source?.source_record_id === source &&
+   step?.answer?.question_id === answer &&
+   step?.source?.source_status==="VERIFIED",
+   `Huzur yapı/üslup source-answer bağlantısı: ${id}`);
+}
+assert(huzur186ById.get("s186-voice-choice")?.answer?.entry_type === "performance_support" &&
+ Object.keys(huzur186ById.get("s186-voice-choice")?.answer?.answer_sections??{}).length===4,
+ "s.186 kişisel dil karşılaştırması dört bölümden oluşmalı.");
+for(const id of ["s186-event","s186-place","s186-people","s186-time"]){
+ assert(huzur186ById.get(id)?.answer===null &&
+  huzur186ById.get(id)?.source?.source_record_id==="T03-S0039",
+  `Dört yapı unsuru bağımsız kaynak adımı olmalı: ${id}`);
+}
+assert(Object.keys(huzur186ById.get("s186-structure")?.answer?.answer_sections??{}).length===4 &&
+ huzur186ById.get("s186-structure")?.answer?.explanation?.includes("tüm romanın"),
+ "Yapı unsurları s.167–170 ve yardımcı parçalarla sınırlı kalmalı.");
+assert(Object.keys(huzur186ById.get("s187-four")?.answer?.answer_sections??{}).length===4 &&
+ huzur186ById.get("s187-four")?.content?.items?.length===4,
+ "s.187 dört üslup/yapı başlığı ayrı olmalı.");
+for(const id of ["s187-event-style","s187-person-style","s187-place-style","s187-time-style"]){
+ assert(huzur186ById.get(id)?.answer===null &&
+ huzur186ById.get(id)?.source?.source_record_id==="T03-S0040",
+ `s.187 ilişki ekranı kaynaklı olmalı: ${id}`);
+}
+assert(huzur186ById.get("s188-3c")?.answer?.answer?.includes("s.171") &&
+ huzur186ById.get("s188-3cc")?.answer?.answer?.includes("Mazi"),
+ "Dönem ve söz varlığı soruları ayrı, kitaba dayalı olmalı.");
+const character4 = huzur186ById.get("s188-q4");
+assert(character4?.answer?.entry_type==="source_limited" &&
+ character4.content.items.length===4 &&
+ Object.keys(character4.answer.answer_sections??{}).length===4 &&
+ character4.answer.answer_sections.Suat.amac.includes("belirlenemez") &&
+ character4.answer.answer_sections.Nuran.amac.includes("çıkarım"),
+ "s.188 dört kişi/özellik/amaç cevaplarında Suat sınırı ve çıkarım statüsü açık olmalı.");
+for(const id of ["s188-mumtaz","s188-nuran","s188-ihsan","s188-suat"]){
+ assert(huzur186ById.get(id)?.answer===null &&
+  huzur186ById.get(id)?.source?.source_record_id==="T03-S0045",
+ `s.188 kişi satırı doğru kaynağa bağlı olmalı: ${id}`);
+}
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===111 &&
+ theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===46 &&
+ theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===47,
+ "Tema 3 yedi ders / 111 adım / 46 kaynak kullanımı / 47 answer olmalı.");
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");
