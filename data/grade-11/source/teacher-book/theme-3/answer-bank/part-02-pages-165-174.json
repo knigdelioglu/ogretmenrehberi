@@ -35,9 +35,35 @@
       "printed_page": 165,
       "question_no": "Fark Edelim 1-4",
       "prompt_summary": "Huzur, rüya, tarih, saz, garp ve boğaz kelimelerini farklı yaşam bağlamlarında kullanma",
-      "answer": "Örnek cümleler: 'Sessiz bir yürüyüş bana huzur verdi.' / 'Uzun süredir beklediğim haber gelince içimde huzur oluştu.' 'Gece gördüğüm rüyayı sabah hatırlayamadım.' / 'Bu proje benim için yıllardır kurduğum bir rüyanın gerçekleşmesi oldu.' 'Şehrin tarihini öğrenmek, yaşadığım çevreye başka gözle bakmamı sağladı.' / 'Bu eşya aile tarihimizin küçük bir parçası.' 'Sazın sesi salonda yankılandı.' / 'Sanatçının sözü kadar sazı da anlatımı güçlendirdi.' 'Metindeki garp sözü Batı dünyasını karşılıyor.' / 'Garp yönünde gökyüzü kızarmaya başladı.' 'Vapur boğazdan geçerken kıyıları izledik.' / 'Heyecandan boğazı düğümlendi.' Bu örnekler kelimelerin gerçek, mecaz veya özel bağlama göre anlam değiştirebildiğini gösterir.",
+      "answer": "Altı kelimeyi öğrencinin kendi yaşamından iki farklı bağlamda kullandırın. Aşağıdaki cümleler modeldir; öğrencinin özgün örneklerinin yerini almaz.",
       "guidance": "Öğrencinin kendi hayatından cümle kurması esastır. Cümle duvarında seçilecek örneklerde kelimenin farklı bağlamda gerçekten farklı anlam/çağrışım kazanıp kazanmadığı tartışılabilir.",
-      "source_locator": "basılı s.165-166 / PDF s.166-167 — Fark Edelim"
+      "source_locator": "basılı s.165-166 / PDF s.166-167 — Fark Edelim",
+      "answer_sections": {
+        "huzur": [
+          "Bu yürüyüş bana huzur verdi.",
+          "Öğretmenin huzurunda konuşurken heyecanlandım."
+        ],
+        "rüya": [
+          "Gece gördüğüm rüyayı hatırladım.",
+          "Bir kitap yazmak çocukluğumdan beri rüyam."
+        ],
+        "saz": [
+          "Sazın sesi salona yayıldı.",
+          "Dere kıyısındaki sazlar rüzgârda eğildi."
+        ],
+        "boğaz": [
+          "Boğazdan geçen vapuru izledik.",
+          "Soğuk su içince boğazım rahatladı."
+        ],
+        "tarih": [
+          "Yaşadığım şehrin tarihini araştırıyorum.",
+          "Mektubun üzerine bugünün tarihini yazdım."
+        ],
+        "garp": [
+          "Güneş garp yönünde battı.",
+          "Garp musikisi üzerine bir kitap okudum."
+        ]
+      }
     },
     {
       "question_id": "T3-P166-PERF01",

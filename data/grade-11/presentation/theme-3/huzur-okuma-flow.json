@@ -1,0 +1,459 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-OKUMA",
+  "lesson_slug": "huzur-okuma",
+  "title": "Huzur — Okuma ve Söz Varlığı",
+  "subtitle": "Metin Tahlili-1 · Ahmet Hamdi Tanpınar · Yaşamın İzinde",
+  "printed_page_range": "164-174",
+  "required_source_range": {
+    "from": "T03-S0008",
+    "to": "T03-S0015"
+  },
+  "steps": [
+    {
+      "id": "s164-q1",
+      "source_record_id": "T03-S0008",
+      "layout": "question",
+      "prompt": "Bir edebiyat sanatçısının ortaya koyduğu eserle ilişkisini nasıl değerlendirirsiniz? Açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P164-Q01",
+      "content": {
+        "lead": "Peyami Safa'nın mülakatından hareketle yaşanmış olayla edebî kurmacayı ayırın."
+      }
+    },
+    {
+      "id": "s164-q2",
+      "source_record_id": "T03-S0009",
+      "layout": "question",
+      "prompt": "“Hayatımı yazsam roman olurdu.” diyen biri hayatını neden romanla ilişkilendirir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P164-Q02",
+      "content": {
+        "lead": "Bir hayat hikâyesinin olay örgüsüne dönüştürülmesinin ne gerektirdiğini düşünün."
+      }
+    },
+    {
+      "id": "s164-q3",
+      "source_record_id": "T03-S0010",
+      "layout": "question",
+      "prompt": "Yazarın kişisel deneyimlerini romana yansıtması eserin inandırıcılığını nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P164-Q03",
+      "content": {
+        "lead": "Mülakattaki yaşanmış bölümler ile kurmacanın gerçeklik etkisi arasındaki ayrımı kullanın."
+      }
+    },
+    {
+      "id": "s165-guess",
+      "source_record_id": "T03-S0011",
+      "layout": "process",
+      "prompt": "Huzur adı ve görsellerinden romanın içeriği ve yazılış amacı hakkında ilk tahminlerinizi yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ön tahminlerde okuma sonrası öğrenilen olayları geri dönük bilgi gibi kullanmayın.",
+        "items": [
+          "Başlığın çağrıştırdıklarını yazın.",
+          "Görsellerden hareketle olası içerik belirtin.",
+          "İçerik ve yazılış amacı için ayrı tahminler kaydedin."
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s165-research",
+      "source_record_id": "T03-S0011",
+      "layout": "structure",
+      "prompt": "Tanpınar araştırmasıyla roman–yazar ilişkisini ve dil–üslup tespitlerini çalışma kâğıdına yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P165-PERF01",
+      "content": {
+        "lead": "Kitabın iki sütununu ayırın; ilk tahminleri okuma sonrası bilgilerden ayrı tutun.",
+        "sections": [
+          {
+            "title": "Roman ve yazar",
+            "body": "İstanbul, tarihî mekânlar, musiki, bireyin iç dünyası ve gelenek–modern hayat gerilimi."
+          },
+          {
+            "title": "Dil ve üslup",
+            "body": "Betimleme, şiirsel çağrışım, uzun ritmik cümleler; tarih, mimari ve musiki söz varlığı."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s165-share",
+      "source_record_id": "T03-S0011",
+      "layout": "process",
+      "prompt": "İlk tahminlerinizi kaydedin; okuma sonunda çalışma kâğıdındaki tespitlerinizi sınıfta paylaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önceden bilinenle okurken fark edileni birbirinden ayırın.",
+        "items": [
+          "İlk tahminin yanına okuma sonrası metin kanıtı ekleyin.",
+          "Yazar ile eser arasında somut bağlantı kurun.",
+          "Üslup tespitlerini metinden örnekle destekleyin."
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s165-166-fark",
+      "source_record_id": "T03-S0012",
+      "layout": "structure",
+      "prompt": "Huzur, rüya, saz, boğaz, tarih ve garp kelimelerini iki farklı yaşam bağlamında cümlelerle kullanınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P165-PERF02",
+      "content": {
+        "lead": "Öğrencinin kendi cümlesi esastır; öğretmen örnekleri gerektiğinde açılır.",
+        "items": [
+          "huzur",
+          "rüya",
+          "saz",
+          "boğaz",
+          "tarih",
+          "garp"
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s166-meaning",
+      "source_record_id": "T03-S0012",
+      "layout": "comparison",
+      "prompt": "Kelimelerin farklı cümlelerdeki anlam ve çağrışımlarını karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Aynı kelime farklı anlam veya kişisel çağrışım taşıyabilir.",
+        "sections": [
+          {
+            "title": "Anlam",
+            "body": "Örneğin boğaz sözü bedendeki bölgeyi veya İstanbul Boğazı'nı karşılayabilir."
+          },
+          {
+            "title": "Yaşamdan iz",
+            "body": "Arkadaşınızın deneyimini cümlesinden kesin varsaymayın; kendisine sorarak açıklamasını dinleyin."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s166-wall",
+      "source_record_id": "T03-S0012",
+      "layout": "process",
+      "prompt": "Arkadaşlarınızın cümlelerini yorumlayıp cümle duvarı oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Fark Edelim bölümünün üçüncü ve dördüncü adımlarını sınıfta uygulayın.",
+        "items": [
+          "Cümleyi bağlamına göre değerlendirin.",
+          "Yaşamdan iz taşıma gerekçesini açıklayın.",
+          "Seçilen cümleleri kâğıtlara yazıp duvarda gruplayın."
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s166-predict",
+      "source_record_id": "T03-S0012",
+      "layout": "process",
+      "prompt": "Huzur'dan rastgele seçtiğiniz kelimelerle konu, dil ve anlatım tahminleri kurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P166-PERF01",
+      "content": {
+        "lead": "Rastgele kelime listesi öğrenciden öğrenciye değişir; tek bir hazır tahmin zorunlu değildir.",
+        "items": [
+          "Göz gezdirerek kelime ve kelime gruplarını işaretleyin.",
+          "Anlam alanlarına ayırın.",
+          "Konu ve dil–anlatım için ayrı tahminler kurun."
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s166-read-method",
+      "source_record_id": "T03-S0012",
+      "layout": "process",
+      "prompt": "Metne uygun okuma stratejisini seçip vurgu ve tonlamayla okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P166-PERF02",
+      "content": {
+        "lead": "Uzun betimlemeleri anlam gruplarına ayırın; Mümtaz ve Nuran'ın görüşlerini ayrı izleyin.",
+        "items": [
+          "Mekân ve musiki söz varlığını işaretleyin.",
+          "Düşünsel bölümlerde yavaşlayın.",
+          "Diyaloglarda konuşmacı değişimini ve anlam vurgusunu koruyun."
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s167-reading",
+      "source_record_id": "T03-S0013",
+      "layout": "reference",
+      "prompt": "Huzur — Boğaz ve İstanbul'un Mümtaz için anlamını s.167'den okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana metin kitapta okunur; bu ekran romanın telifli bölümlerini yeniden yayımlamaz.",
+        "sections": [
+          {
+            "title": "Ada ve Boğaz",
+            "body": "İki mekânın Mümtaz'da uyandırdığı farklı duyguları ayırın."
+          },
+          {
+            "title": "Şehir ve anı",
+            "body": "Mescit, çeşme, yalı, iskele ve vapur ayrıntılarını aidiyetle ilişkilendirin."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s168-reading",
+      "source_record_id": "T03-S0013",
+      "layout": "reference",
+      "prompt": "Huzur — Nuran, musiki ve İstanbul gezilerini s.168'den okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Manzara tasvirinin kişisel duygu ve müzikle buluşmasını izleyin.",
+        "sections": [
+          {
+            "title": "İnsan ve manzara",
+            "body": "Nuran'ın akşam ışığında betimlenişini bulun."
+          },
+          {
+            "title": "Musiki haritası",
+            "body": "Çamlıca ve Boğaz yerlerine verilen musikiyle ilişkili adları işaretleyin."
+          },
+          {
+            "title": "Üsküdar",
+            "body": "Camiler, hatıralar ve birlikte gezmenin kişisel anlamını ayırt edin."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s169-reading",
+      "source_record_id": "T03-S0013",
+      "layout": "comparison",
+      "prompt": "Huzur — Mümtaz ve Nuran'ın geçmiş ile yeni hayat üzerine görüşlerini karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki bakışı birbirine karıştırmadan metin kanıtı gösterin.",
+        "sections": [
+          {
+            "title": "Mümtaz",
+            "body": "Musiki, tarih ve şehir mirasını kimliğin kaynakları olarak görür."
+          },
+          {
+            "title": "Nuran",
+            "body": "Geçmişi sevse de yoksulluk, bakımsızlık ve bugünün ihtiyaçlarını hatırlatır."
+          },
+          {
+            "title": "Tartışma",
+            "body": "Yeni bir hayata yönelirken geçmişe dayanmak ne anlam taşır?"
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s170-reading",
+      "source_record_id": "T03-S0013",
+      "layout": "reference",
+      "prompt": "Huzur — İhsan'ın etkisini ve İstanbul'un sosyal görünümünü s.170'ten okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Şehir güzelliği ile yorgun insanlar, bakımsız evler ve eski konaklar arasındaki karşıtlığı izleyin.",
+        "sections": [
+          {
+            "title": "İhsan",
+            "body": "Mümtaz'ın geçmiş ve kültürle bağında İhsan'ın etkisini belirleyin."
+          },
+          {
+            "title": "Şehir ve insan",
+            "body": "Tarihî yapılarla toplumsal yoksulluk tasvirini ayırın."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s171-author",
+      "source_record_id": "T03-S0013",
+      "layout": "reference",
+      "prompt": "Tanpınar'ın kitapta verilen biyografisini Huzur ile ilişkilendiriniz (s.171).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sanatçı hayatını kurmacayla özdeşleştirmeden somut ortak temaları buldurun.",
+        "sections": [
+          {
+            "title": "Kitaptaki biyografi",
+            "body": "Yahya Kemal–Ahmet Haşim etkisi; tarih, sanat ve musiki ilgisi."
+          },
+          {
+            "title": "Huzur'daki izler",
+            "body": "İstanbul, eski musiki, bireyin iç dünyası ve kültür gerilimi."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s172-vocabulary",
+      "source_record_id": "T03-S0014",
+      "layout": "vocabulary",
+      "prompt": "Dokuz kelime için bağlamdan anlam tahmini yapıp uygun karşılık öneriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P172-VOC01",
+      "content": {
+        "lead": "TDK ile doğrulamadan önce metinde geçtiği cümleyi inceleyin.",
+        "items": [
+          "mustarip (muzdarip)",
+          "mahzen",
+          "cevher",
+          "yeis",
+          "zarafet",
+          "neşretmek",
+          "hulâsa (hülasa)",
+          "muazzam",
+          "cins"
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s172-other",
+      "source_record_id": "T03-S0014",
+      "layout": "process",
+      "prompt": "Metinde sizin bilmediğiniz diğer kelimeleri seçip sözlükte doğrulayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P172-PERF01",
+      "content": {
+        "lead": "Bilinmeyen kelime her öğrenci için farklı olabilir.",
+        "items": [
+          "Kelimeyi metindeki bağlamıyla seçin.",
+          "Tahminde bulunun.",
+          "Sözlük anlamını kontrol edin.",
+          "Bağlamdaki anlamla karşılaştırın."
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s173-types-1",
+      "source_record_id": "T03-S0015",
+      "layout": "reference",
+      "prompt": "Konusuna göre romanlar: biyografik, otobiyografik, sosyal, psikolojik, tarihî türleri ayırt ediniz (s.173).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki tanımları ve eser örneklerini karşılaştırın.",
+        "sections": [
+          {
+            "title": "Biyografik / Otobiyografik",
+            "body": "Başkasının yaşamı ile yazarın kendi yaşantısının kurgulanması farkı."
+          },
+          {
+            "title": "Sosyal / Psikolojik",
+            "body": "Toplumsal sorunlarla bireyin iç dünyası arasındaki odak farkı."
+          },
+          {
+            "title": "Tarihî",
+            "body": "Tarihî kişi ve olayların kurmaca içindeki yeri."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s173-types-2",
+      "source_record_id": "T03-S0015",
+      "layout": "reference",
+      "prompt": "Konusuna göre romanlar: macera, bilim kurgu, tezli ve fantastik türleri ayırt ediniz (s.173).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitapta verilen kalan dört başlığı kendi örnekleriyle inceleyin.",
+        "sections": [
+          {
+            "title": "Macera / Bilim kurgu",
+            "body": "Hareket ve merak ile bilim–teknoloji kurmacasını ayırın."
+          },
+          {
+            "title": "Tezli / Fantastik",
+            "body": "Bir görüşü savunma ile gerçeküstü evrenin kurulması arasındaki farkı gösterin."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s174-types-1",
+      "source_record_id": "T03-S0015",
+      "layout": "reference",
+      "prompt": "Edebî akımına göre romanlar: klasik, romantik, realist ve natüralist (s.174).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki başlık, tanım ve eser örneklerini birlikte okuyun.",
+        "sections": [
+          {
+            "title": "Klasik / Romantik",
+            "body": "Dönemini yansıtan yerleşik örneklik ile duygusal tepkileri öne çıkaran anlatım."
+          },
+          {
+            "title": "Realist / Natüralist",
+            "body": "Gerçekçi yansıtma ile bilimsel yönteme dayandırılmaya çalışılan anlatım."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s174-types-2",
+      "source_record_id": "T03-S0015",
+      "layout": "reference",
+      "prompt": "Edebî akımına göre romanlar: modernist, varoluşçu ve postmodern (s.174).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Son üç başlığı kitaptaki eser örnekleriyle birlikte karşılaştırın.",
+        "sections": [
+          {
+            "title": "Modernist",
+            "body": "Bireyin iç dünyası, yabancılaşma ve geleneksel yapıdan uzaklaşma."
+          },
+          {
+            "title": "Varoluşçu",
+            "body": "Varoluş, özgürlük, sorumluluk ve bunalım."
+          },
+          {
+            "title": "Postmodern",
+            "body": "Kurmaca gerçeklik ve anlam çoğulluğu."
+          }
+        ]
+      },
+      "density": "compact"
+    },
+    {
+      "id": "s174-style",
+      "source_record_id": "T03-S0015",
+      "layout": "structure",
+      "prompt": "Huzur'un üslup özelliklerini kavram haritasında gösteriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P174-PERF01",
+      "content": {
+        "lead": "s.174'te üslubun anlatım yolu olarak tanımını ve metinde gözlenen özellikleri birlikte kullanın.",
+        "items": [
+          "Ayrıntılı mekân/insan betimlemesi",
+          "Şiirsel-mecazlı anlatım",
+          "Tarih ve musiki söz varlığı",
+          "Geçmiş ve yeni hayat üzerine düşünce",
+          "Kişilerin iç dünyası",
+          "Uzun ve ritmik cümleler"
+        ]
+      },
+      "density": "compact"
+    }
+  ]
+}
