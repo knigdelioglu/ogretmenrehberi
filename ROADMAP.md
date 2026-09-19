@@ -318,7 +318,7 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Tema Girişi / Temaya Başlarken — s.160–163
   - [x] Huzur: Konuya Başlarken / Metni Okuyalım — s.164–174
   - [x] Huzur: Metni Anlayalım — s.175–176 / soru 1–13
-  - [ ] Huzur: açık/örtük ileti ve Mescid-i Aksa karşılaştırması — s.177–178
+  - [x] Huzur: açık/örtük ileti, Mescid-i Aksa karşılaştırması ve Okuma Çemberi temel rolleri — s.177–178
   - [ ] Huzur: Okuma Çemberi / metin tahlili — s.178–193
 - [ ] 4. Tema — Hayatın Aynası
 
@@ -430,4 +430,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** s.177–178 Huzur soru 14, Mescid-i Aksa karşılaştırması ve Okuma Çemberi başlangıcını resmî kitaptan küçük blok olarak üretmek. Tema 3 mevcut: 3 ders / 44 adım / 28 VERIFIED source / 29 answer. Tema 1 ve 2 kalite kapsamını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** s.179–181 Okuma Çemberi seçimlik roller, karakterlerin söz/davranışları ve dil kullanımı bloğunu gerçek kitabın sayfalarına göre üretmek. Tema 3 mevcut: 4 ders / 55 adım / 31 VERIFIED source / 32 answer. Tema 1 ve 2 kalite kapsamını korumak.

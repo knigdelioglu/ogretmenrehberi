@@ -748,6 +748,51 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-anlama-music.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-ANLAMA-175-176&step=s176-q12"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-177-message.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-177-178&step=s177-q14"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-177-photo.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-177-178&step=s177-source-photo"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-177-comparison.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-177-178&step=s178-compare-task"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-177-roles.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-177-178&step=s178-circle-plan"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-177-role-question.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-177-178&step=s178-role-inquiry"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -831,5 +876,10 @@ jobs:
             lesson-player-theme3-huzur-anlama-identity.png
             lesson-player-theme3-huzur-anlama-attribution.png
             lesson-player-theme3-huzur-anlama-music.png
+            lesson-player-theme3-huzur-177-message.png
+            lesson-player-theme3-huzur-177-photo.png
+            lesson-player-theme3-huzur-177-comparison.png
+            lesson-player-theme3-huzur-177-roles.png
+            lesson-player-theme3-huzur-177-role-question.png
             apps/lesson-player/dist
           if-no-files-found: error

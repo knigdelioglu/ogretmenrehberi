@@ -1,0 +1,248 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-177-178",
+  "lesson_slug": "huzur-177-178",
+  "title": "Huzur — İletiler ve Karşılaştırma",
+  "subtitle": "Yaşamın İzinde · Metni Anlayalım 14 / Karşılaştıralım",
+  "printed_page_range": "177-178",
+  "required_source_range": {
+    "from": "T03-S0029",
+    "to": "T03-S0031"
+  },
+  "steps": [
+    {
+      "id": "s177-q14",
+      "source_record_id": "T03-S0029",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Huzur metnindeki açık ve örtük iletilere ayrı ayrı örnekler yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P177-Q14",
+      "content": {
+        "lead": "s.167–171'de doğrudan söylenenleri, kişi ve mekân ayrıntılarından çıkardıklarınızdan ayırın.",
+        "sections": [
+          {
+            "title": "Açık ileti",
+            "body": "Metinde söylenmiş bir görüşü bulun: İstanbul'u tanımak, yeni hayat ve geçmişle bağ."
+          },
+          {
+            "title": "Örtük ileti",
+            "body": "Şehir, musiki ve yoksul semtlerin birlikte düşündürdüğü sonucu gerekçelendirin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s177-source-photo",
+      "source_record_id": "T03-S0030",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Karşılaştıralım: s.177'deki Mescid-i Aksa görselini ve yönergeyi kontrol ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap 'Aşağıdaki metni okuyarak' diyor; görselde Mescid-i Aksa yer alıyor, ancak karşılaştırılacak ikinci yazılı metin görünmüyor.",
+        "sections": [
+          {
+            "title": "Görünen kaynak",
+            "body": "Mescid-i Aksa fotoğrafı ve s.178'de Huzur / Mescid-i Aksa karşılaştırma tablosu."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "Fotoğraftan yazılı bir metnin şairi, türü, edebî dönemi veya üslubu çıkarılamaz."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-compare-task",
+      "source_record_id": "T03-S0030",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Huzur ile Mescid-i Aksa için verilen yedi ölçütü karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P177-COMP01",
+      "content": {
+        "lead": "Önce Huzur sütununu doldurun. Mescid-i Aksa'nın yazılı metni kaynakta görünmediği için o sütunu varsayımla doldurmayın.",
+        "items": [
+          "İçerik",
+          "Tür",
+          "Şekil",
+          "Dönem",
+          "Zihniyet",
+          "Üslup",
+          "İleti"
+        ]
+      }
+    },
+    {
+      "id": "s178-huzur-content",
+      "source_record_id": "T03-S0030",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu üç ölçütü Huzur'un kitabınızda okuduğunuz bölümüne dayanarak doldurun.",
+        "sections": [
+          {
+            "title": "İçerik",
+            "body": "Mümtaz ve Nuran üzerinden İstanbul, musiki, geçmiş ve kimlikle kurulan bağ."
+          },
+          {
+            "title": "Tür",
+            "body": "Roman; burada romanın bir bölümü okunur."
+          },
+          {
+            "title": "Şekil",
+            "body": "Düzyazı. Şiirle kıyas yapmadan önce karşı metni görmek gerekir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-huzur-context",
+      "source_record_id": "T03-S0030",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Huzur sütunu: dönem ve zihniyet farkını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dönem tarihsel konum, zihniyet ise metnin insan ve değerler dünyasına bakışıdır.",
+        "sections": [
+          {
+            "title": "Dönem",
+            "body": "Cumhuriyet Dönemi Türk edebiyatı."
+          },
+          {
+            "title": "Zihniyet",
+            "body": "Modernleşme sürecinde tarihî/kültürel mirasla yeni hayat arasında kimlik arayışı."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-huzur-message",
+      "source_record_id": "T03-S0030",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Huzur sütunu: üslup ve iletiyi ayrı yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üslup 'nasıl anlatılmış', ileti ise 'okurda hangi düşünce uyandırılıyor' sorusuna cevap verir.",
+        "sections": [
+          {
+            "title": "Üslup",
+            "body": "Betimleyici ve şiirsel; musiki/tarih söz varlığıyla düşünce ve ruh hâli iç içe."
+          },
+          {
+            "title": "İleti",
+            "body": "Yeni bir hayat kurarken geçmişle ve kültürel kimlikle ilişki sürdürülmelidir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-circle-plan",
+      "source_record_id": "T03-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dörder kişilik okuma çemberleri kurup ilk toplantı için temel bir rol seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P178-PERF01",
+      "content": {
+        "lead": "s.178'de dört temel rol var; s.179'daki seçimlik rolleri ve sonraki toplantıyı sonraki blokta işleyeceksiniz.",
+        "items": [
+          "Dört kişilik grup oluşturun.",
+          "Herkes farklı bir temel rol seçsin.",
+          "Huzur'dan kendi rolüne uygun metin dayanağı belirlesin.",
+          "Bir sonraki toplantıda rol değiştirmeyi planlayın."
+        ]
+      }
+    },
+    {
+      "id": "s178-role-link",
+      "source_record_id": "T03-S0031",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Temel rol: Bağ Kurucu",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metin ile dış dünya arasındaki bağlantıyı kurun.",
+        "sections": [
+          {
+            "title": "Görev",
+            "body": "Huzur'daki İstanbul ve kültür ilgisini kendi şehrinizden bir mekân ya da başka bir yaşantıyla ilişkilendirin."
+          },
+          {
+            "title": "Öğrenciye soru",
+            "body": "Sizin çevrenizde hangi yer, şehrin geçmişini bugünle buluşturuyor?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-role-visual",
+      "source_record_id": "T03-S0031",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Temel rol: Ressam",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Okuduğunuz metnin önemli bir yönünü kroki, diyagram veya çizimle görselleştirin.",
+        "sections": [
+          {
+            "title": "Görev",
+            "body": "Boğaz–Üsküdar gezi hattı veya Mümtaz'ın geçmiş–yeni hayat düşüncesi için görsel hazırlayın."
+          },
+          {
+            "title": "Sınır",
+            "body": "Çizimi gerçek olay örgüsüne dayandırın; kitaptaki mekânı göstermediği hâlde varmış gibi çizmeyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-role-inquiry",
+      "source_record_id": "T03-S0031",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Temel rol: Sorgulayıcı",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grup arkadaşlarınızın düşüncelerini ortaya çıkaracak bir soru hazırlayın.",
+        "sections": [
+          {
+            "title": "Görev",
+            "body": "Mümtaz, Nuran, musiki veya İstanbul mekânlarıyla ilgili tartışmaya açık bir soru kurun."
+          },
+          {
+            "title": "Örnek soru",
+            "body": "Mümtaz'ın geçmişi önemsemesiyle Nuran'ın bugünün sorunlarını hatırlatması birbiriyle nasıl ilişkilidir?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s178-role-highlight",
+      "source_record_id": "T03-S0031",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Temel rol: Okuma Aydınlatıcısı",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grubun tartışmaya değer bulacağı kısa bir ifadeyi metinden seçin.",
+        "sections": [
+          {
+            "title": "Görev",
+            "body": "Sözün yerini belirleyin; neden şaşırtıcı, önemli veya düşünmeye değer olduğunu kendi gerekçenizle anlatın."
+          },
+          {
+            "title": "Sınır",
+            "body": "Metinden uzun paragraf kopyalamayın. Sözü ve yorumunu birbirinden ayırın."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -10,20 +10,25 @@
       "printed_page": 177,
       "question_no": "14",
       "prompt_summary": "Huzur metnindeki açık ve örtük iletilere örnek verme",
-      "answer": "Metindeki açık ve örtük iletiler ayrı başlıklarda değerlendirilebilir.",
+      "answer": "Açık ileti metinde doğrudan söylenir; örtük ileti ise söylenenlerden ve mekân, kişi, musiki gibi ayrıntılardan çıkarılır.",
       "answer_sections": {
         "acik_iletiler": [
-          "İstanbul'u tanımak insanın kendisini tanımasıyla ilişkilidir.",
-          "Yeni bir hayata ihtiyaç vardır.",
-          "Eski musiki kültürel kimliğin önemli bir parçasıdır."
+          "Mümtaz, İstanbul'u tanımanın insanın kendisini tanımasıyla ilişkili olduğunu doğrudan söyler.",
+          "Yeni bir hayatın gerekli olduğu, bunun için de bir kimliğe ve geçmişe dayanmak gerektiği açıkça dile getirilir.",
+          "Eski musikinin kişileri geçmişe ulaştıran bir anahtar olduğu anlatılır."
         ],
         "ortuk_iletiler": [
-          "Gelecek sağlam bir geçmiş ve kimlik bilinci üzerinde kurulmalıdır.",
-          "Sanat ve şehir insanın duygu ve kimlik dünyasını biçimlendirir.",
-          "Geçmiş sevgisi bugünün sosyal sorunlarına kayıtsız kalmaya dönüşmemelidir."
+          "Kültürel miras, gelecek için vazgeçilecek bir yük değil kimlik oluşturan bir kaynak olabilir.",
+          "Mekânlar, musiki ve ortak hatıralar kişilerin duygularını ve birbirleriyle ilişkisini biçimlendirir.",
+          "Geçmişe duyulan hayranlık, yoksul semtlerin ve insanların bugünkü güçlüklerinin görülmesini engellememelidir."
         ]
       },
-      "source_locator": "basılı s.167-177 / PDF s.168-178 — soru 14"
+      "source_locator": "basılı s.167-177 / PDF s.168-178 — soru 14",
+      "guidance": "İfadeyi metinde doğrudan bulabiliyorsanız açık ileti; birden çok söz ve ayrıntıdan gerekçeli çıkarım yapıyorsanız örtük ileti olarak değerlendiriniz.",
+      "evidence_quotes": [
+        "İstanbul’u tanımadıkça kendimizi bulamayız.",
+        "Bir hüviyet lâzım."
+      ]
     },
     {
       "question_id": "T3-P177-COMP01",
@@ -31,9 +36,9 @@
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Kaynak üzerinden Huzur sütunu doldurulabilir; Mescid-i Aksa metninin içeriği kitapta görünür biçimde yer almadığı için ikinci sütun kaynak görülmeden tamamlanmamalıdır.",
-      "guidance": "Mescid-i Aksa metni ayrıca öğretmen tarafından sağlanmışsa aynı yedi ölçüt üzerinden ikinci sütun doldurulup benzerlik ve farklılıklar çıkarılabilir.",
-      "source_locator": "basılı s.177-178 / PDF s.178-179 — Karşılaştıralım / ikinci metin kaynakta görünmüyor",
+      "answer": "Kitapta Huzur metni ve karşılaştırma tablosu bulunuyor; s.177'de Mescid-i Aksa görseli yer alsa da karşılaştırılacak ikinci yazılı metin görünmüyor. Huzur'a ait yedi ölçüt belirlenebilir, ikinci metnin içeriği, türü, dönemi, zihniyeti, üslubu ve iletisi kaynak görülmeden kesinleştirilemez.",
+      "guidance": "Görseli ikinci bir şiir veya yazı gibi değerlendirmeyin. Öğretmen ikinci yazılı metni ayrıca sağlarsa öğrenciler aynı yedi ölçütle karşılaştırmayı tamamlayabilir.",
+      "source_locator": "basılı s.177-178 / PDF s.178-179 — Mescid-i Aksa görseli, Huzur karşılaştırma tablosu; ikinci yazılı metin bulunamadı",
       "answer_sections": {
         "Huzur — İçerik": "Mümtaz ve Nuran çevresinde İstanbul, musiki, geçmiş ve kimlik ilişkisi.",
         "Huzur — Tür": "Roman.",
@@ -44,7 +49,7 @@
         "Huzur — İleti": "Geçmişle bağ kurarak yeni bir hayat ve kimlik oluşturma gereği.",
         "Mescid-i Aksa": "Karşılaştırma yapılabilmesi için ikinci metnin ayrıca görülmesi gerekir."
       },
-      "explanation": "Zihniyet, bir dönemin veya toplumun olaylara, insana, değerlere ve yaşama bakışını biçimlendiren ortak düşünce, inanç ve kabuller bütünüdür. Metnin zihniyetini belirlerken kişilerin değerlerine, davranışlarına, sosyal ilişkilere ve dönemin kabullerine bakılır. Bu nedenle 'dönem' ile 'zihniyet' aynı şey değildir; dönem tarihsel zamanı, zihniyet ise o zamanın baskın düşünme ve değer dünyasını gösterir."
+      "explanation": "Kitabın s.177'sinde 'Aşağıdaki metni okuyarak' denmesine rağmen bu başlığın altında yalnız Mescid-i Aksa fotoğrafı var; s.178'de iki metin için karşılaştırma tablosu yer alıyor. Fotoğraftan görsel gözlem yapılabilir, ancak fotoğraf bir şiirin türünü, üslubunu veya dönemini doğrulamaz. Rehber bunu ikinci metin varmış gibi tamamlamaz."
     },
     {
       "question_id": "T3-P178-PERF01",
