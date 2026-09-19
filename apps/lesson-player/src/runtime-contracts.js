@@ -35,3 +35,95 @@ export function buildExportedStep(original, effective, override) {
 
   return exported;
 }
+
+const overrideSchemaVersion = 1;
+
+export function canonicalLessonSignature(lesson) {
+  const canonical = JSON.stringify([
+    lesson.schema_version,
+    lesson.lesson_id,
+    lesson.title,
+    lesson.subtitle,
+    lesson.steps.map((step) => [
+      step.id,
+      step.display_prompt,
+      step.display_prompt_mode,
+      step.layout,
+      step.density,
+      step.reveal_order,
+      step.content,
+      step.source.source_record_id,
+      step.answer?.question_id ?? null
+    ])
+  ]);
+  let hash = 2166136261;
+  for (let index = 0; index < canonical.length; index += 1) {
+    hash = Math.imul(hash ^ canonical.charCodeAt(index), 16777619);
+  }
+  return `v1:${(hash >>> 0).toString(16)}:${canonical.length}`;
+}
+
+export function overrideEnvelope(signature, overrides) {
+  return {
+    schemaVersion: overrideSchemaVersion,
+    canonicalSignature: signature,
+    overrides
+  };
+}
+
+export function restoreOverrideEnvelope(raw, signature, validStepIds) {
+  if (!raw) return { overrides: {}, needsBackup: false };
+  try {
+    const parsed = JSON.parse(raw);
+    if (
+      parsed &&
+      !Array.isArray(parsed) &&
+      parsed.schemaVersion === overrideSchemaVersion &&
+      parsed.canonicalSignature === signature &&
+      parsed.overrides &&
+      typeof parsed.overrides === "object" &&
+      !Array.isArray(parsed.overrides) &&
+      Object.entries(parsed.overrides).every(
+        ([id, value]) =>
+          validStepIds.includes(id) &&
+          value &&
+          typeof value === "object" &&
+          !Array.isArray(value)
+      )
+    ) {
+      return { overrides: parsed.overrides, needsBackup: false };
+    }
+    // Never silently reapply unversioned, stale, or malformed edits over updated data.
+    return { overrides: {}, needsBackup: true };
+  } catch {
+    return { overrides: {}, needsBackup: true };
+  }
+}
+
+export function restoredStepIndex(orderedIds, requestedStepId, savedStepId, legacyIndex) {
+  for (const id of [requestedStepId, savedStepId]) {
+    if (id) {
+      const index = orderedIds.indexOf(id);
+      if (index >= 0) return index;
+    }
+  }
+  return Number.isInteger(legacyIndex)
+    ? Math.max(0, Math.min(orderedIds.length - 1, legacyIndex))
+    : 0;
+}
+
+export function studentVisibleOverrides(overrides) {
+  return Object.fromEntries(
+    Object.entries(overrides).map(([id, override]) => {
+      const visible = { ...override };
+      if (visible.reveal_order) {
+        visible.reveal_order = studentVisibleRevealKeys(visible.reveal_order);
+      }
+      if (visible.content?.note !== undefined) {
+        const { note: _teacherOnly, ...content } = visible.content;
+        visible.content = content;
+      }
+      return [id, visible];
+    })
+  );
+}
