@@ -218,7 +218,8 @@ assert(
 );
 assert(
   appSource.includes("overrideEnvelope(overrideSignature, overrides)") &&
-    appSource.includes("window.localStorage.setItem(`${overridesKey}.backup.${Date.now()}`"),
+    appSource.includes("window.localStorage.setItem(backupKey, raw ?? \"\")") &&
+    appSource.includes("Eski düzenlemeleri indir"),
   "Stale local edits must be archived before storing the new revision."
 );
 
