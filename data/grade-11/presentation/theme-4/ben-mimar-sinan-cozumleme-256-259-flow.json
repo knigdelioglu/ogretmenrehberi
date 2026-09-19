@@ -1,0 +1,314 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-BEN-MIMAR-SINAN-COZUMLEME-256-259",
+  "lesson_slug": "ben-mimar-sinan-cozumleme-256-259",
+  "title": "Ben, Mimar Sinan — Yapı, Anlatım ve Kültür",
+  "subtitle": "Hayatın Aynası · Yapı unsurları / monolog–diyalog / cümle türleri",
+  "printed_page_range": "256-259",
+  "required_source_range": {
+    "from": "T04-S0024",
+    "to": "T04-S0030"
+  },
+  "steps": [
+    {
+      "id": "s256-group",
+      "source_record_id": "T04-S0024",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Birlikte Çalışalım — Dörder kişilik gruplarda yapı unsurlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Önce grup sözcüsünü seçin, ardından basılı s.256 çalışma kâğıdını açın. Aynı olayın kişisini, mekânını ve dramatik işlevini birbirine karıştırmadan kaydedin.",
+          "items": [
+            "Grubu oluşturun ve sözcüyü seçin.",
+            "Metinden her yapı unsuru için kanıt bulun.",
+            "Ögeler arasındaki ilişkiyi ikinci aşamada kurun."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s256-elements",
+      "source_record_id": "T04-S0024",
+      "answer_id": "T4-P256-TABLE01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Yapı unsurları — Kişi, mekân, zaman, çatışma ve dramatik örgüyü doldurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Kitaptaki beş başlığı ayrı ayrı ele alın. Oyunda sözü geçen tarihî yerle sahnede onu temsil eden dekoru ayırın.",
+          "items": [
+            "Kişiler",
+            "Yer (mekân)",
+            "Zaman",
+            "Çatışmalar",
+            "Dramatik örgü"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s256-people-places",
+      "source_record_id": "T04-S0024",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Kişiler ve mekân — Mesleki hedef hangi yerlerde gelişir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Sinan'ın görevi ve ilişkileri değiştikçe mekânın dramatik işlevini açıklayın.",
+          "sections": [
+            {
+              "title": "Öğrenme ve gözlem",
+              "body": "Ağırnas, İstanbul, Acemi Ocağı ve Ayasofya'ya ilişkin oyun bölümlerine dönün."
+            },
+            {
+              "title": "Görev ve yapım",
+              "body": "Sefer, saray ve cami inşaatları gibi yerlerin karakterin hedefine katkısını gösterin."
+            }
+          ],
+          "note": "Kaynakta tarihî bağlam olarak anılan yer ile sahnede gerçek dekor olarak kurulan mekânı aynı kabul etmeyin."
+        }
+      }
+    },
+    {
+      "id": "s256-relations",
+      "source_record_id": "T04-S0024",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Yapı unsurları arasındaki dört ilişkiyi gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Çalışma kâğıdının ikinci bölümünü doldurun; her ilişkide metinden bir sahne veya söz gösterin.",
+          "items": [
+            "Kişiler ve mekân",
+            "Kişiler ve çatışmalar",
+            "Mekân ve zaman",
+            "Çatışmalar ve dramatik örgü"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s256-share",
+      "source_record_id": "T04-S0024",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Grup sözcüleriyle yapı çözümlemenizi paylaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Gruplar benzer kişi veya mekânları bulmuş olabilir; farklı olan, bunların oyundaki işlevini nasıl gerekçelendirdikleridir.",
+          "items": [
+            "Bir yapı unsurunu kaynakla gösterin.",
+            "Bu unsurun başka bir unsurla ilişkisini açıklayın.",
+            "Farklı grupların kanıtlarını karşılaştırın."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s257-excerpt",
+      "source_record_id": "T04-S0025",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Fark Edelim — Kanuni, Sinan ve Selimiye sahnelerini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Kitabın s.257 parçasında konuşma satırlarını sahne yönergelerinden ayırın.",
+          "items": [
+            "8. Ses ile Sinan arasındaki karşılıklı konuşmayı bulun.",
+            "Sinan'ın seyirciye ve kendine dönük değerlendirmelerini bulun.",
+            "Parantez içindeki ışık, görüntü ve müzik yönergelerinin işlevini açıklayın."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s257-q1",
+      "source_record_id": "T04-S0025",
+      "answer_id": "T4-P257-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Fark Edelim 1 — Metinden bir monolog ve bir diyalog örneği seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Örneğin nerede başladığını ve kaç konuşmacının rol aldığını kitap üzerinden gösterin. İç sesi, repliği ve sahne yönergesini karıştırmayın.",
+          "sections": [
+            {
+              "title": "Monolog",
+              "body": "Sinan'ın kendi değerlendirmelerini kesintisiz biçimde dile getirdiği bölümü seçin."
+            },
+            {
+              "title": "Diyalog",
+              "body": "Sinan ile Kanuni'yi temsil eden 8. Ses arasında karşılıklı konuşma bölümünü seçin."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s258-q2",
+      "source_record_id": "T04-S0026",
+      "answer_id": "T4-P258-Q02",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Fark Edelim 2 — Monolog ve diyalog karakteri nasıl farklı yollarla tanıtır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Yalnız konuşmacı sayısını söylemeyin; karakterin iç dünyası ile kişiler arası ilişkiyi karşılaştırın.",
+          "sections": [
+            {
+              "title": "Monoloğun işlevi",
+              "body": "Sinan'ın düşünce, heyecan ve öz değerlendirmesini doğrudan gösterir."
+            },
+            {
+              "title": "Diyaloğun işlevi",
+              "body": "Görev, beklenti, güven ve görüş ayrılıklarını karşılıklı sözler üzerinden görünür kılar."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s258-showing",
+      "source_record_id": "T04-S0026",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Gösterme tekniği — Seyirci karakterin özelliğine nasıl kendisi ulaşır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Bir özelliği anlatıcının açıklaması ile karakterin söz ve davranışından çıkarma arasındaki farkı tartışın.",
+          "items": [
+            "Sinan'ın bir kararını repliğinden bulun.",
+            "Başka kişinin ona yönelik beklentisini diyalogdan ayırın.",
+            "Sahne yönergesinin duyguyu nasıl pekiştirdiğini gösterin."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s258-q1",
+      "source_record_id": "T04-S0027",
+      "answer_id": "T4-P258-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Yazar bu üslubu neden seçmiş; nasıl bir etki oluşturmuştur?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Tarih bilgisiyle dramatik anlatımın birleşmesine, izleyiciye doğrudan seslenmeye ve sahne işaretlerine metinden örnek bulun."
+        }
+      }
+    },
+    {
+      "id": "s258-grammar",
+      "source_record_id": "T04-S0028",
+      "answer_id": "T4-P258-GRAM01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2/a — Verilen cümleleri dört yönden sınıflandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Basılı s.258'deki örnek satırı inceleyin. Diğer altı cümle için yüklemi veya eksiltili yapıyı bulduktan sonra her sütunu doldurun.",
+          "items": [
+            "Yüklemin türü: isim / fiil",
+            "Yüklemin yeri: kurallı / devrik / eksiltili",
+            "Anlam: olumlu / olumsuz / soru",
+            "Yapı: basit / birleşik / bağlı"
+          ],
+          "note": "'Ama nasıl?' cümlesinde önceki cümleden tamamlanan yüklemi düşünün; yüzeyde görünmeyen yüklemi uydurma bir alıntı gibi yazmayın."
+        }
+      }
+    },
+    {
+      "id": "s258-grammar-apply",
+      "source_record_id": "T04-S0028",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dil bilgisi — Altı cümlede aynı sınıflandırma sırasını uygulayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Örnek satırın sınıflandırması yenilmez; öğrenciye kendi çözümünü karşılaştırması için model olur.",
+          "items": [
+            "Kendisini ... bilmiyordu.",
+            "Bir gün geldi ki ... başladım.",
+            "İmparator Justinyanos ... durmuş ve ... bağırmış.",
+            "Güzellik, büyüklükten daha güçlüdür.",
+            "Göreyim seni koca mimar!",
+            "Ama nasıl?"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s258-grammar-style",
+      "source_record_id": "T04-S0028",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2/b — Cümle çeşitliliği oyunun anlatımını nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Kısa ve uzun cümleler, soru, emir/istek ve açıklama satırları arasında geçişin konuşma ritmine katkısını metinden gösterin."
+        }
+      }
+    },
+    {
+      "id": "s259-source",
+      "source_record_id": "T04-S0029",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Türk Tiyatrosunun Kaynakları — Cumhuriyet dönemi tiyatrosunu anlatan metni okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Enver Töre'nin s.259'daki açıklamasından tarih, toplumsal hayat ve millî kimlikle ilgili ana düşünceleri belirleyin.",
+          "items": [
+            "Tarihî malzemenin piyeslerde kullanımı",
+            "Gelecek nesillere tarih ve kültür aktarımı",
+            "Tiyatronun toplumsal sorunları işlemesi"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s259-q1",
+      "source_record_id": "T04-S0029",
+      "answer_id": "T4-P259-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Fark Edelim 1 — Ben, Mimar Sinan gelecek kuşaklara tarih ve kültür bilinci kazandırmayı amaçlıyor mu?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Oyundan kişi, eser, sanat çevresi ve mimari mirasa ilişkin en az iki somut dayanak seçin."
+        }
+      }
+    },
+    {
+      "id": "s259-q2",
+      "source_record_id": "T04-S0030",
+      "answer_id": "T4-P259-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Fark Edelim 2 — Özakman'ın tarih ve millî kimliğe bakışı hakkında hangi çıkarımlar yapılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Enver Töre'nin metniyle oyundaki çalışma, sanat ve ortak kültürel miras düşüncesini ilişkilendirin. Çıkarımınızı yazarın doğrudan sözüymüş gibi göstermeyin."
+        }
+      }
+    }
+  ]
+}
