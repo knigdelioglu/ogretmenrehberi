@@ -1,0 +1,330 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201",
+  "lesson_slug": "biyografi-akif-anlama-199-201",
+  "title": "Mehmet Akif Ersoy — Anlama ve Çalışma Kâğıdı",
+  "subtitle": "Yaşamın İzinde · Metni Anlayalım / Fark Edelim / Çalışma Kâğıdı",
+  "printed_page_range": "199-201",
+  "required_source_range": {
+    "from": "T03-S0061",
+    "to": "T03-S0065"
+  },
+  "steps": [
+    {
+      "id": "s199-q1",
+      "source_record_id": "T03-S0061",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 1 — Şairin yardıma muhtaç insanlara yer vermesi sizde hangi duyguları uyandırıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P199-Q01",
+      "content": {
+        "lead": "Kendi duygunuzu söyleyin; biyografinin andığı en az bir eser veya insan grubuyla gerekçelendirin. Örneğin ‘Küfe’ ve ‘Hasta'daki çocuklar."
+      }
+    },
+    {
+      "id": "s199-q1-evidence",
+      "source_record_id": "T03-S0061",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Soru 1 — Biyografinin verdiği eser–insan grubu örneklerini ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Çocuklar, yaşlılar ve toplumun diğer kesimleri için biyografide anılan eserleri inceleyin.",
+        "sections": [
+          {
+            "title": "Çocuklar",
+            "body": "‘Küfe’ ve ‘Hasta’. "
+          },
+          {
+            "title": "Yaşlılar",
+            "body": "‘Seyfi Baba’ ve ‘Yemişçi İhtiyar’. "
+          },
+          {
+            "title": "Duygunuz",
+            "body": "Yalnız eser adını tekrarlamayın; hangi insani durumu düşündürdüğünü söyleyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s199-q2",
+      "source_record_id": "T03-S0062",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 2 — Biyografi neden toplumcu ve millî sıfatlarına ek olarak ‘İslâm şairi’ diyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P199-Q02",
+      "content": {
+        "lead": "s.196–197'deki gençlik şiirlerinin dinî konuları ve olgunluk dönemindeki toplum sorunlarının dinî duyarlılıkla anlatılışını birlikte değerlendirin."
+      }
+    },
+    {
+      "id": "s199-q2-context",
+      "source_record_id": "T03-S0062",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Soru 2 — Şair için kullanılan nitelemeleri hangi metin bilgileri destekliyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yazarın nitelemesini tek bir bütün şiirler özeti gibi düşünmeyin.",
+        "sections": [
+          {
+            "title": "Toplumcu şair",
+            "body": "Çocuklar, yaşlılar ve toplumun sıkıntıları şiirlerde görünür."
+          },
+          {
+            "title": "Millî şair",
+            "body": "Millî Mücadele ve İstiklâl Marşı anlatısı."
+          },
+          {
+            "title": "İslâm şairi",
+            "body": "Biyografi yazarı dinî-hikemî şiirler ve İslâmî duyarlılıktan söz eder."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s199-q3",
+      "source_record_id": "T03-S0063",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 3 — Akif'in marş yarışmasındaki para ödülüne mesafeli tutumunu değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P199-Q03",
+      "content": {
+        "lead": "Önce metnin açıkça anlattığı olay dizisini bulun, ardından bu davranışın sizde düşündürdüğünü ayrı söyleyin."
+      }
+    },
+    {
+      "id": "s199-q3-chain",
+      "source_record_id": "T03-S0063",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Soru 3 — Olayla yorumu birbirinden ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın verdiği sırayla ilerleyin. Kişinin iç niyetine ilişkin bilmediğiniz ayrıntıları kesin olay diye yazmayın.",
+        "items": [
+          "Yarışmaya ve para ödülüne mesafeli duruş",
+          "İlk aşamada katılmama",
+          "Ödülü almama şartıyla şiiri yazmayı kabul etme",
+          "Şiirin Mecliste okunup kabul edilmesi"
+        ]
+      }
+    },
+    {
+      "id": "s200-source",
+      "source_record_id": "T03-S0064",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Fark Edelim — İki dizeyi, dört yaşam bilgisini ve anıt görselini sayfadan inceleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap Şenay Aybüke Yalçın, Necmettin Yılmaz, Ferhat Gedik ve Gülşah Güler için kısa bilgiler; ortada Çanakkale'deki Vatan ve Millî Mücadele Anıtı fotoğrafı verir.",
+        "sections": [
+          {
+            "title": "Kaynak ayrımı",
+            "body": "Kişilere ilişkin olgular kısa kitap notlarından; anıta ilişkin gözlem görsel ve altyazısından gelir."
+          },
+          {
+            "title": "Duygu ve düşünce",
+            "body": "Öğrencinin kişisel yorumu bu bilgiler ve verilen dizelerden hareketle kurulur."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s200-task",
+      "source_record_id": "T03-S0064",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Fark Edelim — Sayfadaki dört kişinin bilgisi ve anıtı verilen vatan dizeleriyle ilişkilendirerek duygu ve düşüncelerinizi ifade ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P200-PERF01",
+      "content": {
+        "lead": "Duyguyu öğrenci seçer; kısa yaşam bilgilerini varsayımla genişletmeyin.",
+        "items": [
+          "Şenay Aybüke Yalçın ve Necmettin Yılmaz",
+          "Ferhat Gedik ve Gülşah Güler",
+          "Vatan ve Millî Mücadele Anıtı",
+          "Metnin çağrıştırdığı kişisel düşünce"
+        ]
+      }
+    },
+    {
+      "id": "s200-educators",
+      "source_record_id": "T03-S0064",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Fark Edelim — İki öğretmenin sayfada verilen bilgilerini ayırt ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki öğretmenin adı, atanma yılı ve ölümüne ilişkin kısa metin dışında ayrıntı eklemeyin.",
+        "sections": [
+          {
+            "title": "Şenay Aybüke Yalçın",
+            "body": "2016'da müzik öğretmeni olarak atanmış; kitap 9 Haziran 2017 olayını verir."
+          },
+          {
+            "title": "Necmettin Yılmaz",
+            "body": "2016'da sınıf öğretmeni olarak atanmış; kitap 16 Haziran 2017 olayını verir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s200-others",
+      "source_record_id": "T03-S0064",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Fark Edelim — Ferhat Gedik, Gülşah Güler ve anıtla ilgili gözlemleri ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki kısa biyografik bilgi ile anıt fotoğrafının temsil ettiği ortak anmayı birbirine karıştırmayın.",
+        "sections": [
+          {
+            "title": "Ferhat Gedik",
+            "body": "Kitap 11 Ağustos 2017'de Eren Bülbül'ü korurken hayatını kaybettiğini bildirir."
+          },
+          {
+            "title": "Gülşah Güler",
+            "body": "Kitap 15 Temmuz 2016 saldırısına ilişkin kısa bilgi verir."
+          },
+          {
+            "title": "Anıt",
+            "body": "Fotoğrafın altında ‘Vatan ve Millî Mücadele Anıtı — Azmi Sekban (Çanakkale)’ bilgisi bulunur."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s201-work",
+      "source_record_id": "T03-S0065",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Mehmet Akif Ersoy biyografisini dokuz başlıkta çözümleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P201-WORK01",
+      "content": {
+        "lead": "Kitabın s.201 tablosu dokuz ayrı yanıt alanı içerir. Tür, konu, ana düşünce ve örtük iletiyi birbirinin yerine yazmayın.",
+        "items": [
+          "Konu",
+          "Ana Düşünce",
+          "Yardımcı Düşünceler",
+          "Yazılma Amacı",
+          "Anlatım Biçimleri",
+          "Düşünceyi Geliştirme Yolları",
+          "Açık İletiler",
+          "Örtük İletiler",
+          "Bilgilerin Sunuluş Şekli"
+        ]
+      }
+    },
+    {
+      "id": "s201-content",
+      "source_record_id": "T03-S0065",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Konu, ana düşünce ve yazılma amacını ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu üç alan aynı cevabın üç farklı söylenişi değildir.",
+        "sections": [
+          {
+            "title": "Konu",
+            "body": "Akif'in yaşamı, eserleri ve toplumsal/edebî çalışmaları."
+          },
+          {
+            "title": "Ana düşünce",
+            "body": "Sanatçının hayatı ve eserleri yaşadığı toplum ve tarihî dönemle bağlantılıdır."
+          },
+          {
+            "title": "Amaç",
+            "body": "Okuru kişi, eserler ve edebî kişilik hakkında bilgilendirmek."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s201-support",
+      "source_record_id": "T03-S0065",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Yardımcı düşünceleri metnin hangi bölümleri destekliyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Eğitim/yayın, Millî Mücadele ve şiir anlayışı üç ayrı dayanak kümesidir.",
+        "items": [
+          "1893 öğrenim ve mesleğe başlangıç; 1908 yayın hayatı",
+          "1920 Millî Mücadele ve 1921 İstiklâl Marşı",
+          "Safahat kitapları ve toplumun farklı kesimleri"
+        ]
+      }
+    },
+    {
+      "id": "s201-method",
+      "source_record_id": "T03-S0065",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Anlatım biçimleri ve düşünceyi geliştirme yollarını ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Açıklama/öyküleme metnin nasıl anlatıldığına; örnekleme/karşılaştırma düşüncenin nasıl desteklendiğine ilişkindir.",
+        "sections": [
+          {
+            "title": "Anlatım biçimleri",
+            "body": "Öğrenim ve eserleri açıklama; Millî Mücadele olaylarını zamanla ilerleyerek öyküleme."
+          },
+          {
+            "title": "Düşünceyi geliştirme",
+            "body": "‘Küfe’/‘Hasta’ eser örnekleri; gençlik ve olgunluk şiirlerinin karşılaştırılması."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s201-message",
+      "source_record_id": "T03-S0065",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Açık ve örtük iletiye ayrı örnekler veriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Açık ileti biyografide söylenen bilgi; örtük ileti bilgiden gerekçeli çıkarılan düşüncedir.",
+        "sections": [
+          {
+            "title": "Açık",
+            "body": "Akif'in 1893'te okulunu bitirdiği, İstiklâl Marşı'nın 1921'de kabul edildiği."
+          },
+          {
+            "title": "Örtük",
+            "body": "Eğitim, yayın çevresi ve dönem olayları, bir sanatçının üretimini biçimlendirebilir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s201-order",
+      "source_record_id": "T03-S0065",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Biyografik bilgiler hangi sırayla sunuluyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Çocukluk ve eğitimden Millî Mücadele ve Mısır yıllarına kronolojik ilerleme vardır; şiir kitapları ayrıca tematik gruplarla ele alınır.",
+        "sections": [
+          {
+            "title": "Kronoloji",
+            "body": "Öğrenim → çalışma ve yayın → Millî Mücadele → Mısır/son yıllar."
+          },
+          {
+            "title": "Tematik açıklama",
+            "body": "Şiirlerinin gençlik/olgunluk dönemlerine ve toplum/dinî konulara göre sınıflandırılması."
+          }
+        ]
+      }
+    }
+  ]
+}
