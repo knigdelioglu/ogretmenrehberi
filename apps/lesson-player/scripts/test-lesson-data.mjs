@@ -124,10 +124,10 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===31 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===15 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===16,
-  "Tema 3 mevcut kapsamı 31 adım / 15 source / 16 answer olmalı.");
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===44 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===28 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===29,
+  "Tema 3 mevcut kapsamı 44 adım / 28 source / 29 answer olmalı.");
 
 
 const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
