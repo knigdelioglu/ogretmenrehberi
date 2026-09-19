@@ -246,7 +246,7 @@
       "layout": "assessment",
       "density": "compact",
       "prompt": "Süreci Değerlendirebilme 3 — Metinle ilgili beğeni ve eleştirilerinizi gerekçelendirin.",
-      "prompt_mode": "VERBATIM_SHORT",
+      "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Bir beğeni ve bir eleştiri söyleyin; her biri için metinde gözlenebilir bir özellik gösterin."
       }
@@ -258,7 +258,7 @@
       "layout": "assessment",
       "density": "compact",
       "prompt": "Süreci Değerlendirebilme 4 — Metnin yazılma amacına ulaşıp ulaşmadığını açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT",
+      "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Biyografinin okura kişiyi, eserleri ve edebî kişiliğini tanıtma amacıyla somut içeriği ilişkilendirerek değerlendirin."
       }
