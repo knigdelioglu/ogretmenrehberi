@@ -1,0 +1,378 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-ANADOLU-INSANI-284-290",
+  "lesson_slug": "anadolu-insani-284-290",
+  "title": "Anadolu İnsanı / Fedakârlık — Dinleme ve Anlama",
+  "subtitle": "Hayatın Aynası · Belgesel / söz varlığı / öznel-nesnel / iletiler",
+  "printed_page_range": "284-290",
+  "required_source_range": {
+    "from": "T04-S0084",
+    "to": "T04-S0095"
+  },
+  "steps": [
+    {
+      "id": "s284-source",
+      "source_record_id": "T04-S0084",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuya Başlarken — Hayat ve Edebiyat metnini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.284'te edebiyatın bireysel yaratma ile toplumsal çevre arasındaki ilişkisini nasıl açıkladığını belirleyin.",
+        "items": [
+          "Yazarın yaşadığı dönem ve toplum",
+          "Edebî eserde hayatın seçilip yeniden kurulması",
+          "Okurun kendi yaşantısıyla anlam kurması"
+        ]
+      }
+    },
+    {
+      "id": "s284-q1",
+      "source_record_id": "T04-S0084",
+      "answer_id": "T4-P284-Q01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Konuya Başlarken 1 — Kendi yaşamınızdan hareketle edebiyat–toplum ilişkisini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir kitap, şiir, dizi/tiyatro metni ya da günlük yaşam deneyimi üzerinden toplumun izlerinin eserde nasıl göründüğünü açıklayın."
+      }
+    },
+    {
+      "id": "s284-q2",
+      "source_record_id": "T04-S0084",
+      "answer_id": "T4-P284-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Konuya Başlarken 2 — 'Kırık ayna' benzetmesi edebî eserin hayatı yansıtma biçimini nasıl anlatır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Edebî eserin hayatın tamamını kopyalamadığını; belirli bir parçasını sanatçının bakışıyla seçip yeniden kurduğunu vurgulayın."
+      }
+    },
+    {
+      "id": "s285-plan",
+      "source_record_id": "T04-S0085",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dinleme / İzlemeyi Yönetebilme — Anadolu İnsanı / Fedakârlık videosuna hazırlanın.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "QR videoyu açmadan önce amaç, tahmin, ortam ve strateji kararlarını ayrı ayrı belirleyin.",
+        "items": [
+          "Dinleme/izleme amacı",
+          "Başlık, görsel ve jenerikten tahmin",
+          "İletişim engellerini giderme",
+          "İzleme stratejisi ve kısa not yöntemi"
+        ],
+        "note": "Video içeriği görülmeden olay, kişi veya sonuç ayrıntısı önceden verilmez."
+      }
+    },
+    {
+      "id": "s285-q1",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P285-Q01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Hazırlık 1 — Dinleme/izleme amacınızı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Amaç, izlerken neye dikkat edeceğinizi belirleyecek kadar somut olsun; örneğin fedakârlığın hangi davranışlarla gösterildiğini izlemek."
+      }
+    },
+    {
+      "id": "s285-q2",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P285-Q02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Hazırlık 2 — Başlık, görsel ve jenerikten içeriğe ilişkin tahmin yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tahmini kesin olay bilgisi gibi yazmayın; hangi görsel veya başlık ipucundan yola çıktığınızı belirtin."
+      }
+    },
+    {
+      "id": "s285-q3",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P285-Q03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Hazırlık 3 — Etkili dinleme/izleme için hangi iletişim engellerini ortadan kaldırmalısınız?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ses, ekran, bildirim, konuşma ve not alma düzenini izleme başlamadan hazırlayın."
+      }
+    },
+    {
+      "id": "s285-q4",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P285-Q04",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Hazırlık 4 — Amacınıza uygun yöntem ve stratejinizi seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk izleyişte bütünlüğe, gerekirse ikinci izleyişte kişi–davranış–ileti–kanıt notlarına odaklanın."
+      }
+    },
+    {
+      "id": "s285-watch",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P285-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Metni Dinleyelim / İzleyelim — QR videoyu seçtiğiniz stratejiyle izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk izleyişte her ayrıntıyı yazmaya çalışmayın; olayın bütününü ve ana kişileri takip edin.",
+        "items": [
+          "Kişi",
+          "Olay",
+          "Dikkat çeken davranış",
+          "Anahtar söz",
+          "Mekân",
+          "Görsel/ses desteği"
+        ]
+      }
+    },
+    {
+      "id": "s286-theme-words",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P286-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Dinleme notları 2 — Hayatın Aynası temasını yansıtan gerçek kelime ve ifadeleri kaydediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Genel çağrışım üretmeyin; videoda gerçekten duyduğunuz kelime veya ifadeyi not edin.",
+        "items": [
+          "İfade",
+          "Videoda geçtiği bağlam",
+          "Hayatın Aynası temasıyla ilişkisi"
+        ],
+        "note": "QR video içeriği elimizde olmadığı için Lesson Player hazır kelime listesi üretmez."
+      }
+    },
+    {
+      "id": "s286-messages",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P286-Q03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Dinleme notları 3 — Belgeselin iletilerini kanıtlarla belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ileti için videodaki bir söz, davranış veya olay dayanağı gösterin.",
+        "items": [
+          "İleti",
+          "Dayanak",
+          "Açık mı / örtük mü?"
+        ]
+      }
+    },
+    {
+      "id": "s286-checklist",
+      "source_record_id": "T04-S0085",
+      "answer_id": "T4-P286-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Kontrol Listesi — Dinleme/izleme davranışlarınızı gerçek gözleme göre değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Evet/Hayır alanlarını otomatik doldurmayın; her 'Hayır' sonraki izleme için bir gelişim hedefi olsun.",
+        "items": [
+          "Dikkatlice ve anlayarak izleme",
+          "Sabır ve saygı",
+          "Diğer dinleyicileri rahatsız etmeme",
+          "Yorum/soru için bitişi bekleme",
+          "Dikkat dağıtıcı davranışlardan kaçınma"
+        ]
+      }
+    },
+    {
+      "id": "s287-vocab",
+      "source_record_id": "T04-S0086",
+      "answer_id": "T4-P287-VOC01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Söz Varlığımız — Beş kelime ve kelime grubunu bağlam içinde anlamlandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce videodaki bağlamdan tahmin edin, sonra sözlük anlamını ve uygun yakın karşılığı kontrol edin.",
+        "items": [
+          "fedakârlık",
+          "hemzemin geçit",
+          "mesai",
+          "aksaklık",
+          "tahammül"
+        ],
+        "note": "Yakın karşılığın videodaki cümleye bire bir uyduğu ancak gerçek bağlam görülerek doğrulanabilir."
+      }
+    },
+    {
+      "id": "s287-q1",
+      "source_record_id": "T04-S0087",
+      "answer_id": "T4-P287-Q01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 1 — Anadolu insanıyla ilişkilendirdiğiniz özelliklerin videodaki karşılıklarını yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Özellik etiketi tek başına yeterli değil; her özellik için videodan somut davranış veya olay kanıtı gösterin."
+      }
+    },
+    {
+      "id": "s288-q2",
+      "source_record_id": "T04-S0088",
+      "answer_id": "T4-P288-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 2 — Zihin haritasını beş başlıkta doldurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Konu, tema ve ana düşünceyi birbirine karıştırmayın; bilgilerin sunuluş biçimini gerçekten kullanılan video yöntemlerine göre yazın.",
+        "items": [
+          "Konu",
+          "Tema",
+          "Ana düşünce",
+          "Yardımcı düşünceler",
+          "Bilgilerin sunuluş şekli"
+        ]
+      }
+    },
+    {
+      "id": "s289-q3",
+      "source_record_id": "T04-S0089",
+      "answer_id": "T4-P289-Q03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 3 — Kişinin davranışlarından duygu ve düşüncelerine yönelik çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce gözlenebilir davranışı yazın; ardından 'bu davranış ... düşündürüyor' biçiminde ihtiyatlı çıkarım kurun."
+      }
+    },
+    {
+      "id": "s289-q4",
+      "source_record_id": "T04-S0090",
+      "answer_id": "T4-P289-Q04",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 4 — İzleme öncesi tahminlerinizle izleme sonrası tespitlerinizi karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız doğrulanan tahminleri değil, değişen ve yanlışlananları da yazın.",
+        "sections": [
+          {
+            "title": "Önceki tahmin",
+            "body": "Başlık/görsel/jenerikten ne bekliyordunuz?"
+          },
+          {
+            "title": "Sonraki tespit",
+            "body": "Video gerçekten neye odaklandı?"
+          },
+          {
+            "title": "Karşılaştırma",
+            "body": "Hangi yön doğrulandı, hangi yön değişti?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s289-q5",
+      "source_record_id": "T04-S0091",
+      "answer_id": "T4-P289-Q05",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 5 — Belgeselin kurgu özelliğini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Belgeselde kurgu 'uydurma' demek değildir; gerçek malzemenin seçilme, sıralanma ve ses-görüntü ilişkisi içinde düzenlenme biçimini inceleyin.",
+        "items": [
+          "Gerçek kişi/olay/mekân kullanımı",
+          "Görüntü sıralaması",
+          "Anlatıcı veya röportaj",
+          "Zaman akışı",
+          "Ses–müzik–görüntü ilişkisi"
+        ]
+      }
+    },
+    {
+      "id": "s290-q6",
+      "source_record_id": "T04-S0092",
+      "answer_id": "T4-P290-Q06",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 6 — Öznel ve nesnel ifadeleri balık kılçığında ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Videodaki gerçek ifadeleri kullanın. Doğrulanabilir bilgi ve gözlenebilir olguyu yorum/değer yargısından ayırın.",
+        "sections": [
+          {
+            "title": "Nesnel",
+            "body": "Tarih, sayı, yer, gözlenebilir olay veya doğrulanabilir bilgi."
+          },
+          {
+            "title": "Öznel",
+            "body": "Yorum, değerlendirme, beğeni veya değer yargısı."
+          }
+        ],
+        "note": "Video transkripti bulunmadığı için Lesson Player örnek cümle uydurmaz."
+      }
+    },
+    {
+      "id": "s290-q7",
+      "source_record_id": "T04-S0093",
+      "answer_id": "T4-P290-Q07",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 7 — Öznel ve nesnel unsurlar inandırıcılık ve güvenilirliği nasıl etkiler?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "6. soruda bulduğunuz gerçek örneklerden hareketle, olgu ve yorumun ayrılıp ayrılmadığını değerlendirin."
+      }
+    },
+    {
+      "id": "s290-q8",
+      "source_record_id": "T04-S0094",
+      "answer_id": "T4-P290-Q08",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 8 — Açık ve örtük iletileri ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Açık ileti doğrudan söylenen yargıdan; örtük ileti olay, davranış ve görsel-ses düzeninden çıkarılır.",
+        "sections": [
+          {
+            "title": "Açık ileti",
+            "body": "Videoda doğrudan dile getirilen düşünce."
+          },
+          {
+            "title": "Örtük ileti",
+            "body": "Doğrudan söylenmeyip kanıtlardan çıkarılan anlam."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s290-q9",
+      "source_record_id": "T04-S0095",
+      "answer_id": "T4-P290-Q09",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 9 — Tespit ettiğiniz iletilerin güvenilirliğini sorgulayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İletiye katılıp katılmadığınızı değil, hangi kanıta dayandığını ve görüntünün/sözün gerçekten onu destekleyip desteklemediğini sorgulayın.",
+        "items": [
+          "Kanıt nedir?",
+          "Olgu ile yorum ayrılmış mı?",
+          "Başka açıklama mümkün mü?",
+          "Görüntü/ses yargıyı gerçekten destekliyor mu?"
+        ]
+      }
+    }
+  ]
+}
