@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 11,
-  "Tema 4 s.236–290 okuma, konuşma ve belgesel bloklarını içermeli.");
+assert(theme4Lessons.length === 12,
+  "Tema 4 s.236–297 okuma, konuşma ve belgesel çözümleme bloklarını içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -391,10 +391,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 173 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 95 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 107,
-  "Tema 4 s.236–290 toplam 11 ders / 173 ekran / 95 kaynak / 107 cevap olmalı.");
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 197 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 116 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 129,
+  "Tema 4 s.236–297 toplam 12 ders / 197 ekran / 116 kaynak / 129 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -754,6 +754,56 @@ for (const id of ["s286-theme-words","s286-messages","s287-q1","s288-q2","s289-q
 for (const step of anadoluListening.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Anadolu İnsanı s.284–290 doğrulanmış kitap kaynağı: ${step.source.source_record_id}`);
+}
+
+const anadoluAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297");
+assert(anadoluAnalysis && anadoluAnalysis.printed_page_range === "291-297" &&
+  anadoluAnalysis.coverage.steps === 24 && anadoluAnalysis.coverage.source_records === 21 &&
+  anadoluAnalysis.coverage.answer_entries === 22,
+  "Anadolu İnsanı çözümleme s.291–297 24 ekran / 21 kaynak / 22 cevap içermeli.");
+const anadoluAnalysisById = new Map(anadoluAnalysis.steps.map(step => [step.id, step]));
+assert(anadoluAnalysisById.size === 24, "Anadolu İnsanı çözümleme ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s291-q10","T04-S0096","T4-P291-Q10"],
+  ["s291-q11","T04-S0097","T4-P291-Q11"],
+  ["s292-q1","T04-S0098","T4-P292-Q01"],
+  ["s293-watch","T04-S0099","T4-P293-Q01"],
+  ["s293-q2","T04-S0099","T4-P293-Q02"],
+  ["s293-q3","T04-S0100","T4-P293-Q03"],
+  ["s294-q1","T04-S0101","T4-P294-Q01"],
+  ["s294-q2","T04-S0102","T4-P294-Q02"],
+  ["s294-q3","T04-S0103","T4-P294-Q03"],
+  ["s294-q4","T04-S0104","T4-P294-Q04"],
+  ["s294-q5","T04-S0105","T4-P294-Q05"],
+  ["s294-q6","T04-S0106","T4-P294-Q06"],
+  ["s295-q7","T04-S0107","T4-P295-Q07"],
+  ["s295-q8","T04-S0108","T4-P295-Q08"],
+  ["s295-q9","T04-S0109","T4-P295-Q09"],
+  ["s295-q10","T04-S0110","T4-P295-Q10"],
+  ["s295-q11","T04-S0111","T4-P295-Q11"],
+  ["s295-q12","T04-S0112","T4-P295-Q12"],
+  ["s296-q13","T04-S0113","T4-P296-Q13"],
+  ["s296-q14","T04-S0114","T4-P296-Q14"],
+  ["s297-q1","T04-S0115","T4-P297-Q01"],
+  ["s297-q2","T04-S0116","T4-P297-PERF02"]
+]) {
+  assert(anadoluAnalysisById.get(id)?.source?.source_record_id === sourceId &&
+    anadoluAnalysisById.get(id)?.answer?.question_id === answerId,
+    `Anadolu İnsanı s.291–297 kanonik bağlantı: ${id}`);
+}
+assert(anadoluAnalysisById.get("s294-q1")?.content?.items?.length === 5 &&
+  anadoluAnalysisById.get("s294-q4")?.content?.items?.length === 5,
+  "Belgesel yapı unsurları ve aralarındaki beş ilişki korunmalı.");
+assert(anadoluAnalysisById.get("s295-q12")?.answer?.entry_type === "source_limited" &&
+  anadoluAnalysisById.get("s295-q12")?.answer?.printed_page === 295,
+  "Çözümleyebilme 12 sayfa alanı sayısal olmalı ve QR sınırı korunmalı.");
+for (const id of ["s291-q10","s291-q11","s293-q2","s293-q3","s294-q1","s294-q2","s294-q3","s294-q4","s294-q5","s294-q6","s295-q7","s295-q8","s295-q9","s295-q10","s295-q11","s295-q12","s296-q13","s296-q14"]) {
+  assert(anadoluAnalysisById.get(id)?.answer?.entry_type === "source_limited",
+    `QR video görülmeden çözümleme cevabı kesinleştirilmemeli: ${id}`);
+}
+for (const step of anadoluAnalysis.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Anadolu İnsanı s.291–297 doğrulanmış kitap kaynağı: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
