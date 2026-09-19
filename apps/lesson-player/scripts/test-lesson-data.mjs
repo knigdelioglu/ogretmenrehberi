@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 5,
-  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul, Orhun ve Dîvânu Lugâti’t-Türk dersleri bulunmalı."
+  theme2Lessons.length === 6,
+  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul, Orhun, Dîvânu Lugâti’t-Türk ve Konuşma dersleri bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -237,10 +237,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 114 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 102 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 108,
-  "Tema 2 mevcut üretim 114 adım / 102 source / 108 answer olmalı."
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 132 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 115 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 122,
+  "Tema 2 mevcut üretim 132 adım / 115 source / 122 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -330,6 +330,62 @@ assert(
   divanById.get("s127-fark2")?.answer?.guidance &&
     divanById.get("s128-q2")?.answer?.explanation,
   "Açık uçlu değerlendirmelerde guidance ve gerçeklik açıklaması korunmalı."
+);
+
+const speaking2 = byLessonId.get("T11-T02-KONUSMA");
+assert(speaking2, "2. Tema Konuşma dersi catalog içinde bulunamadı.");
+assert(
+  speaking2.printed_page_range === "129-135",
+  "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
+);
+assert(
+  speaking2.coverage.steps === 18 &&
+    speaking2.coverage.source_records === 13 &&
+    speaking2.coverage.answer_entries === 14,
+  "2. Tema Konuşma 18 adım / 13 source / 14 answer olmalı."
+);
+
+const speaking2ById = new Map(speaking2.steps.map((step) => [step.id, step]));
+assert(
+  speaking2ById.get("s129-q1")?.answer?.entry_type === "source_limited" &&
+    speaking2ById.get("s129-q1")?.answer?.guidance,
+  "s.129 QR-video sorusu source_limited ve yönlendirmeli kalmalı."
+);
+assert(
+  speaking2ById.get("s130-plan")?.answer?.entry_type === "performance_support" &&
+    speaking2ById.get("s130-stations")?.content?.items?.length === 6,
+  "s.130 planlama ve altı istasyonlu performans görevi korunmalı."
+);
+assert(
+  speaking2ById.get("s132-133-comparison")?.layout === "comparison" &&
+    speaking2ById.get("s132-133-comparison")?.answer?.guidance,
+  "s.132–133 ülke kültürü araştırması hazır kalıplara zorlanmadan comparison olmalı."
+);
+assert(
+  speaking2ById.get("s133-production-1")?.answer === null &&
+    speaking2ById.get("s133-production-2")?.answer?.question_id === "T2-P133-PERF01" &&
+    speaking2ById.get("s133-speech")?.answer?.question_id === "T2-P133-PERF02",
+  "s.133 üretim zinciri yoğunluğu iki süreç ekranına bölünmeli ve örnek konuşma ayrı kalmalı."
+);
+assert(
+  (speaking2ById.get("s134-rules-1")?.content?.items?.length ?? 0) +
+    (speaking2ById.get("s134-rules-2")?.content?.items?.length ?? 0) === 12 &&
+    speaking2ById.get("s134-rules-2")?.answer?.question_id === "T2-P134-PERF01",
+  "s.134 konuşma uygulama ölçütleri iki ekranda toplam 12 görünür ölçüt olarak korunmalı."
+);
+assert(
+  (speaking2ById.get("s135-self-1")?.content?.items?.length ?? 0) +
+    (speaking2ById.get("s135-self-2")?.content?.items?.length ?? 0) === 10 &&
+    speaking2ById.get("s135-self-2")?.answer?.question_id === "T2-P135-PERF01",
+  "s.135 öz değerlendirme formundaki 10 ölçüt iki ekranda korunmalı."
+);
+assert(
+  speaking2ById.get("s135-reference")?.answer === null &&
+    speaking2ById.get("s135-reference")?.source?.source_record_id === "T02-S0115" &&
+    speaking2ById.get("s135-reference")?.content?.sections?.some(
+      (section) => section.title === "Kaynak sınırı"
+    ),
+  "s.135 QR dereceli/akran formları görünmeyen ayrıntılar uydurulmadan referans ekranında kalmalı."
 );
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
