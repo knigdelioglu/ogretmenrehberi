@@ -8,7 +8,7 @@
   "counts": {
     "records": 158,
     "linked_answers": 167,
-    "verified_records": 149
+    "verified_records": 158
   },
   "records": [
     {
@@ -1713,7 +1713,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.155 / PDF s.156 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0151",
@@ -1725,7 +1725,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.155 / PDF s.156 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0152",
@@ -1737,7 +1737,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.156-157 / PDF s.157-158 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0153",
@@ -1749,7 +1749,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.157 / PDF s.158 — soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0154",
@@ -1761,7 +1761,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.157 / PDF s.158 — soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0155",
@@ -1773,7 +1773,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.158 / PDF s.159 — soru 6",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0156",
@@ -1785,7 +1785,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.159 / PDF s.160 — soru 7 a-b",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0157",
@@ -1797,7 +1797,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.159 / PDF s.160 — soru 8 / Göktürklerin Dirilişi QR videosu",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0158",
@@ -1809,7 +1809,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.159 / PDF s.160 — soru 9 / Göktürklerin Dirilişi QR videosu",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     }
   ],
   "answer_linkage_policy": "DIRECT_QUESTION_ID_IN_NEW_ANSWER_BANK",

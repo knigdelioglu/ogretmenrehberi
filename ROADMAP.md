@@ -304,7 +304,7 @@ Ayrıntılı kanıt: [THEME_1_QUALITY_FREEZE_2026-09-18.md](docs/THEME_1_QUALITY
 Pilot mimariyi bozmadan kalan temaları tamamlamak.
 
 ### Sıra
-- [~] 2. Tema — Kültür Yolculuğu
+- [x] 2. Tema — Kültür Yolculuğu
   - [x] Tema Girişi / Temaya-Konuya Başlarken — s.84–88
   - [x] Türk Dilleri + Oğulla Buluşma — s.89–107
   - [x] Eski İstanbul’dan Çizgiler / Anı — s.108–112
@@ -312,8 +312,8 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Dîvânu Lugâti’t-Türk — s.125–128
   - [x] Konuşma — s.129–135
   - [x] Dinleme / İzleme — Âşık Atışması — s.136–147
-  - [ ] Yazma — Çevrim İçi Müze — s.148–154
-  - [ ] Ölçme ve Değerlendirme — s.155–159
+  - [x] Yazma — Çevrim İçi Müze — s.148–154
+  - [x] Ölçme ve Değerlendirme — s.155–159
 - [ ] 3. Tema — Yaşamın İzinde
 - [ ] 4. Tema — Hayatın Aynası
 
@@ -425,4 +425,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 2. Tema — Edebiyat Atölyesi-2 / Yazma: Çevrim İçi Müze, basılı s.148–154** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** ilk doğal bloğun sayfa sınırlarını resmî ders kitabında doğrulayıp küçük blokla Lesson Player üretimine başlamak. Tema 2 için 9 ders / 187 adım / 158 VERIFIED source / 167 answer kapsamını ve Tema 1 kalite dondurmasını korumak.

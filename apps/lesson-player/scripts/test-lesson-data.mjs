@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 8,
-  "Tema 2 üretiminde Yazma dâhil sekiz doğal blok bulunmalı."
+  theme2Lessons.length === 9,
+  "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -237,10 +237,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 177 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 149 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 158,
-  "Tema 2 mevcut üretim 177 adım / 149 source / 158 answer olmalı."
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 187 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 158 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 167,
+  "Tema 2 tam kapsam 187 adım / 158 source / 167 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -490,6 +490,45 @@ assert(
 for (const step of museumWriting.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Yazma source kaydı VERIFIED olmalı: ${step.source.source_record_id}`);
+}
+
+
+const theme2Assessment = byLessonId.get("T11-T02-DEGERLENDIRME");
+assert(theme2Assessment, "Tema 2 değerlendirme dersi bulunamadı.");
+assert(
+  theme2Assessment.printed_page_range === "155-159" &&
+    theme2Assessment.coverage.steps === 10 &&
+    theme2Assessment.coverage.source_records === 9 &&
+    theme2Assessment.coverage.answer_entries === 9,
+  "Tema 2 değerlendirme 10 adım / 9 source / 9 answer olmalı."
+);
+const assessment2ById = new Map(theme2Assessment.steps.map(step => [step.id, step]));
+assert(
+  assessment2ById.get("s156-source")?.answer === null &&
+    assessment2ById.get("s156-source")?.content?.sections?.length === 3,
+  "s.156 üç eser bilgi kartı cevap uydurulmadan referans ekranında bulunmalı."
+);
+for (const [id, qid] of [["s155-q1", "T2-P155-Q01"], ["s155-q2", "T2-P155-Q02"], ["s157-q3", "T2-P157-Q03"], ["s157-q4", "T2-P157-Q04"], ["s157-q5", "T2-P157-Q05"], ["s158-q6", "T2-P158-Q06"], ["s159-q7", "T2-P159-Q07"], ["s159-q8", "T2-P159-Q08"], ["s159-q9", "T2-P159-PERF01"]]) {
+  assert(assessment2ById.get(id)?.answer?.question_id === qid, `Tema 2 değerlendirme cevap bağlantısı eksik: ${id}`);
+}
+assert(
+  assessment2ById.get("s157-q3")?.answer?.answer.startsWith("Doğru cevap: A.") &&
+    assessment2ById.get("s157-q5")?.answer?.answer.startsWith("Doğru cevap: B") &&
+    assessment2ById.get("s158-q6")?.answer?.answer.startsWith("Doğru cevap: D."),
+  "s.157–158 çoktan seçmeli cevaplar kitap ve atışma ile eşleşmeli."
+);
+assert(
+  assessment2ById.get("s159-q7")?.answer?.answer.includes("Ahmet") &&
+    assessment2ById.get("s159-q7")?.display_prompt.includes("7/b"),
+  "s.159 soru 7 yanlış değerlendirme ve kişisel yanıtı birlikte kapsamalı."
+);
+assert(
+  assessment2ById.get("s159-q8")?.answer?.entry_type === "source_limited" &&
+    assessment2ById.get("s159-q9")?.answer?.entry_type === "performance_support",
+  "QR ayrıntıları uydurulmamalı, slogan tek doğru gibi sunulmamalı."
+);
+for (const step of theme2Assessment.steps) {
+  assert(step.source.source_status === "VERIFIED", `Tema 2 assessment source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
