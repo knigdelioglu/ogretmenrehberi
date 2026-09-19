@@ -1,20 +1,5 @@
 // Theme-specific assertions extracted without changing their order or conditions.
 export function checkTheme3({ lessons, byLessonId, assert, theme3Lessons }) {
-const theme3Intro = byLessonId.get("T11-T03-GIRIS");
-const theme3IntroById = new Map((theme3Intro?.steps ?? []).map(step => [step.id, step]));
-const s161Theme = theme3IntroById.get("s161-theme-presentation");
-assert(
-  s161Theme?.answer === null &&
-    s161Theme?.display_prompt.includes("Tema Sunusu") &&
-    s161Theme?.content?.sections?.some(section =>
-      section.body.includes("Nerde görsen gönlü kırık")
-    ) &&
-    s161Theme?.content?.sections?.some(section =>
-      section.body.includes("karekod")
-    ),
-  "Tema 3 s.161 tema sunusu Yesevî alıntısını ve karekod geçişini görünür tutmalı."
-);
-
 const akif202 = lessons.find(lesson => lesson.lesson_id === "T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205");
 assert(akif202 && akif202.printed_page_range === "202-205" &&
   akif202.coverage.steps === 17 && akif202.coverage.source_records === 12 &&
@@ -323,6 +308,17 @@ assert(
   theme3IntroById.get("s161-theme-presentation")?.answer === null &&
   theme3IntroById.get("s160-overview")?.layout === "reference",
   "s.160–161 kaynak açılışı soru gibi cevaplanmamalı."
+);
+const s161Theme = theme3IntroById.get("s161-theme-presentation");
+assert(
+  s161Theme?.display_prompt.includes("Tema Sunusu") &&
+    s161Theme?.content?.sections?.some(section =>
+      section.body.includes("Nerde görsen gönlü kırık")
+    ) &&
+    s161Theme?.content?.sections?.some(section =>
+      section.body.includes("karekod")
+    ),
+  "Tema 3 s.161 tema sunusu Yesevî alıntısını ve karekod geçişini görünür tutmalı."
 );
 assert(
   theme3IntroById.get("s162-q1")?.answer?.question_id === "T3-P162-Q01" &&
