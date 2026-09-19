@@ -309,6 +309,17 @@ assert(
   theme3IntroById.get("s160-overview")?.layout === "reference",
   "s.160–161 kaynak açılışı soru gibi cevaplanmamalı."
 );
+const s161Theme = theme3IntroById.get("s161-theme-presentation");
+assert(
+  s161Theme?.display_prompt.includes("Tema Sunusu") &&
+    s161Theme?.content?.sections?.some(section =>
+      section.body.includes("Nerde görsen gönlü kırık")
+    ) &&
+    s161Theme?.content?.sections?.some(section =>
+      section.body.includes("karekod")
+    ),
+  "Tema 3 s.161 tema sunusu Yesevî alıntısını ve karekod geçişini görünür tutmalı."
+);
 assert(
   theme3IntroById.get("s162-q1")?.answer?.question_id === "T3-P162-Q01" &&
   theme3IntroById.get("s162-q4")?.answer?.question_id === "T3-P162-Q04" &&
