@@ -1268,6 +1268,54 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-kemal214-evaluation.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-KEMAL-TAHIR-MULAKAT-210-214&step=s214-eval"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis215-question.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s215-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis216-listen.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s216-listen"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis217-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s217-vocabulary"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis218-structure.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s218-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis219-characters.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s219-q2"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-direnis220-comparison.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DIRENISIN-USTALARI-215-220&step=s220-comp"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1410,5 +1458,11 @@ jobs:
             lesson-player-kemal212-draft.png
             lesson-player-kemal213-performance.png
             lesson-player-kemal214-evaluation.png
+            lesson-player-direnis215-question.png
+            lesson-player-direnis216-listen.png
+            lesson-player-direnis217-vocabulary.png
+            lesson-player-direnis218-structure.png
+            lesson-player-direnis219-characters.png
+            lesson-player-direnis220-comparison.png
             apps/lesson-player/dist
           if-no-files-found: error
