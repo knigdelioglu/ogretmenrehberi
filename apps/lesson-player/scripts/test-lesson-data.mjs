@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 12,
-  "Tema 4 s.236–297 okuma, konuşma ve belgesel çözümleme bloklarını içermeli.");
+assert(theme4Lessons.length === 13,
+  "Tema 4 s.236–302 okuma, konuşma, belgesel ve afiş bloklarını içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -391,10 +391,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 197 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 116 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 129,
-  "Tema 4 s.236–297 toplam 12 ders / 197 ekran / 116 kaynak / 129 cevap olmalı.");
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 215 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 129 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 143,
+  "Tema 4 s.236–302 toplam 13 ders / 215 ekran / 129 kaynak / 143 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -804,6 +804,47 @@ for (const id of ["s291-q10","s291-q11","s293-q2","s293-q3","s294-q1","s294-q2",
 for (const step of anadoluAnalysis.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Anadolu İnsanı s.291–297 doğrulanmış kitap kaynağı: ${step.source.source_record_id}`);
+}
+
+const posterWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-AFIS-ATOLYESI-298-302");
+assert(posterWorkshop && posterWorkshop.printed_page_range === "298-302" &&
+  posterWorkshop.coverage.steps === 18 && posterWorkshop.coverage.source_records === 13 &&
+  posterWorkshop.coverage.answer_entries === 14,
+  "Afiş atölyesi s.298–302 18 ekran / 13 kaynak / 14 cevap içermeli.");
+const posterById = new Map(posterWorkshop.steps.map(step => [step.id, step]));
+assert(posterById.size === 18, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s299-q1","T04-S0118","T4-P299-Q01"],
+  ["s299-q2","T04-S0119","T4-P299-Q02"],
+  ["s299-q3","T04-S0120","T4-P299-Q03"],
+  ["s299-task","T04-S0121","T4-P299-PERF01"],
+  ["s300-content","T04-S0122","T4-P300-PERF01"],
+  ["s300-message","T04-S0122","T4-P300-SL01"],
+  ["s301-rules","T04-S0123","T4-P301-PERF01"],
+  ["s301-model","T04-S0123","T4-P301-PERF02"],
+  ["s302-q1","T04-S0124","T4-P302-PERFQ01"],
+  ["s302-q2","T04-S0125","T4-P302-PERFQ02"],
+  ["s302-q3","T04-S0126","T4-P302-PERFQ03"],
+  ["s302-q4","T04-S0127","T4-P302-PERF04"],
+  ["s302-rubric","T04-S0128","T4-P302-PERF05"],
+  ["s302-journal","T04-S0129","T4-P302-PERF06"]
+]) {
+  assert(posterById.get(id)?.source?.source_record_id === sourceId &&
+    posterById.get(id)?.answer?.question_id === answerId,
+    `Afiş s.298–302 kanonik bağlantı: ${id}`);
+}
+assert(posterById.get("s298-reference")?.content?.items?.length === 4 &&
+  posterById.get("s299-q3")?.content?.items?.length === 5,
+  "Afiş tasarımının dört ana kriteri ve temel afiş unsurları korunmalı.");
+assert(posterById.get("s300-content")?.answer?.printed_page === 300 &&
+  posterById.get("s300-message")?.answer?.printed_page === 300,
+  "s.300–301 cevaplarının printed_page alanı sayısal başlangıç sayfası olmalı.");
+assert(posterById.get("s302-rubric")?.content?.items?.length === 5 &&
+  posterById.get("s302-rubric")?.content?.note?.includes("QR"),
+  "Afiş rubriğinde yalnız görünür beş ölçüt kullanılmalı.");
+for (const step of posterWorkshop.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Afiş s.298–302 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
