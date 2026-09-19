@@ -1,0 +1,391 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-MERDIVEN-COZUMLEME-274-279",
+  "lesson_slug": "merdiven-cozumleme-274-279",
+  "title": "Merdiven — Karakter, Çatışma ve Değerlendirme",
+  "subtitle": "Hayatın Aynası · Karakter çözümleme / değerler / disiplinler / Ferit Edgü",
+  "printed_page_range": "274-279",
+  "required_source_range": {
+    "from": "T04-S0061",
+    "to": "T04-S0073"
+  },
+  "steps": [
+    {
+      "id": "s274-groups",
+      "source_record_id": "T04-S0061",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Birlikte Çalışalım — Üç karakter için üç çözümleme grubu oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her grup yalnız bir karaktere odaklansın; özellik, amaç, niyet ve hikâyedeki işlevi metin kanıtıyla ayırsın.",
+        "items": [
+          "1. grup: Anlatıcı",
+          "2. grup: İhtiyar memur",
+          "3. grup: Genç memur"
+        ],
+        "note": "Karaktere ilişkin çıkarım, doğrudan söylenen söz ve gösterilen davranıştan ayrılmalıdır."
+      }
+    },
+    {
+      "id": "s274-analysis",
+      "source_record_id": "T04-S0061",
+      "answer_id": "T4-P274-ANALYSIS01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Karakter çözümleme — Üç kişinin hikâyedeki işlevini karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grupların sunumlarını aynı çerçevede birleştirin: başlangıç durumu, kritik söz/davranış ve anlatıcıdaki değişime katkı.",
+        "items": [
+          "Anlatıcı",
+          "İhtiyar memur",
+          "Genç memur"
+        ]
+      }
+    },
+    {
+      "id": "s274-narrator",
+      "source_record_id": "T04-S0061",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "1. grup — Anlatıcının değişimini hangi üç aşamada görüyorsunuz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Başlangıçtaki acele ve yükselme odağı ile finaldeki aşağı inme kararını aynı çizgide açıklayın.",
+        "sections": [
+          {
+            "title": "Başlangıç",
+            "body": "İşe ve yukarı çıkmaya odaklı, ihtiyarın uyarısını önemsemeyen tutum."
+          },
+          {
+            "title": "Kırılma",
+            "body": "İhtiyarın ölümü ve genç memurun anlatıcıya yol vermesi."
+          },
+          {
+            "title": "Değişim",
+            "body": "Kendi yaşını ve konumunu fark edip yükselme telaşını sorgulaması."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s274-old",
+      "source_record_id": "T04-S0061",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "2. grup — İhtiyar memurun iki sözü aynı işlevi mi görüyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk sözün nezaket/iyi dilek, ikinci sözün yaşam deneyimine dayalı uyarı yönünü karşılaştırın.",
+        "items": [
+          "İyi dilek",
+          "Hayat deneyimi",
+          "Anlatıcı üzerindeki gecikmiş etki"
+        ]
+      }
+    },
+    {
+      "id": "s274-young",
+      "source_record_id": "T04-S0061",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "3. grup — Genç memur kuşak değişimini nasıl görünür kılıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Gencin yalnız yaşını değil, anlatıcıya yol vermesi ve ölüm haberini aktarışındaki sakinliği de değerlendirin.",
+        "items": [
+          "Anlatıcıya karşı tavrı",
+          "Ölüm haberini aktarışı",
+          "Anlatıcının kendi yaşını fark etmesine etkisi"
+        ]
+      }
+    },
+    {
+      "id": "s275-work",
+      "source_record_id": "T04-S0062",
+      "answer_id": "T4-P275-WORK01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Merdiven'in yapı unsurlarını çalışma kâğıdına yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişi, mekân, zaman ve olay örgüsünü kısa fakat somut biçimde doldurun.",
+        "items": [
+          "Kişiler",
+          "Yer (mekân)",
+          "Zaman",
+          "Olay örgüsü"
+        ]
+      }
+    },
+    {
+      "id": "s275-q1",
+      "source_record_id": "T04-S0063",
+      "answer_id": "T4-P275-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 1 — Tür, içerik ve dilden hareketle metnin yazıldığı dönem hakkında çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Modern büro yaşamı, memuriyet, cankurtaran ve sade konuşma dili gibi ipuçlarını Ferit Edgü'nün kitapta verilen biyografisiyle ilişkilendirin."
+      }
+    },
+    {
+      "id": "s275-q2a",
+      "source_record_id": "T04-S0064",
+      "answer_id": "T4-P275-Q02A",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 2/a — Hikâye bugün yazılsaydı kurgu nasıl değişebilirdi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Asansör, yürüyen merdiven veya dijital iletişim gibi yeni imkânların karşılaşma sıklığını ve merdiven simgesini nasıl etkileyebileceğini düşünün.",
+        "sections": [
+          {
+            "title": "Mimari",
+            "body": "Merdivenin yerini başka bir hareket/ulaşım düzeni alabilir."
+          },
+          {
+            "title": "Teknoloji",
+            "body": "Acil haber ve kişiler arası iletişim daha hızlı gerçekleşebilir."
+          },
+          {
+            "title": "Korunabilecek tema",
+            "body": "Yaşlanma, kuşak değişimi ve meslek hırsı farklı ayrıntılarla sürebilir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s275-q2b",
+      "source_record_id": "T04-S0065",
+      "answer_id": "T4-P275-Q02B",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 2/b — Bu güncelleme edebiyatın hayatla ilişkisi hakkında ne gösterir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Değişen teknoloji ve mekânın anlatı ayrıntılarını değiştirmesiyle, temel insan deneyimlerinin dönemler arasında sürmesini birlikte ele alın."
+      }
+    },
+    {
+      "id": "s276-q3",
+      "source_record_id": "T04-S0066",
+      "answer_id": "T4-P276-Q03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 3 — Günümüzde genç ve yaşlı kuşaklar arasındaki farklılıklar topluma nasıl katkı sağlayabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kendi çevrenizden gerçek bir örnekle yenilik ve deneyim arasındaki karşılıklı öğrenmeyi tartışın.",
+        "note": "Bu güncel gözlem sorusunun tek bir hazır cevabı yoktur."
+      }
+    },
+    {
+      "id": "s276-conflict-groups",
+      "source_record_id": "T04-S0067",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Birlikte Çalışalım — İç çatışma ve insan–insan çatışmalarını iki grupta belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Açık kavga aramak yerine birbiriyle gerilim oluşturan istek, bakış ve davranışları bulun.",
+        "items": [
+          "1. grup: İnsanın kendisiyle çatışması",
+          "2. grup: İnsan–insan çatışmaları"
+        ]
+      }
+    },
+    {
+      "id": "s276-conflicts",
+      "source_record_id": "T04-S0067",
+      "answer_id": "T4-P276-CONFLICT01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çatışmalar — Anlatıcının iç gerilimleri ve kuşak karşıtlıklarını ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her çatışmayı iki karşıt yönle yazın ve anlatıcıdaki değişime etkisini belirtin.",
+        "sections": [
+          {
+            "title": "İç çatışmalar",
+            "body": "Yükselme/acele ↔ hayatın geçiciliği; gençlik algısı ↔ yaşlanmayı kabul etme."
+          },
+          {
+            "title": "İnsan–insan",
+            "body": "İhtiyarın deneyimi ↔ anlatıcının aceleciliği; anlatıcının gence önyargısı ↔ gencin nazik tavrı."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s277-whatif",
+      "source_record_id": "T04-S0067",
+      "answer_id": "T4-P277-PERF00",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Birlikte Çalışalım b — Üç karşılaşmadan biri olmasaydı hikâye nasıl değişirdi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her varsayımda olayın yalnız bir ayrıntısını değil, finaldeki farkındalığın gücünü de değerlendirin.",
+        "items": [
+          "Anlatıcı ihtiyarla karşılaşmasaydı",
+          "İhtiyar ölmemiş olsaydı",
+          "Anlatıcı genç memurla karşılaşmasaydı"
+        ]
+      }
+    },
+    {
+      "id": "s277-q1",
+      "source_record_id": "T04-S0068",
+      "answer_id": "T4-P277-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Davranışları yansıttıkları değerlerle eşleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir davranış birden fazla değeri gösterebilir; eşleştirmeyi davranışın bağlamıyla gerekçelendirin.",
+        "items": [
+          "İhtiyara yol verme",
+          "Görev için hızlı çıkma",
+          "'Bahtiyar ol' iyi dileği",
+          "Genç memura yol verme",
+          "İhtiyarı merak etme"
+        ]
+      }
+    },
+    {
+      "id": "s277-q2",
+      "source_record_id": "T04-S0069",
+      "answer_id": "T4-P277-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Değer yargınızla çelişen bir davranış var mı? Siz nasıl tepki verirdiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce davranışı metinden belirleyin, sonra kendi değerinizle neden çeliştiğini ve alternatif tepkinizi açıklayın.",
+        "note": "Öğrencinin farklı davranışları seçmesi mümkündür."
+      }
+    },
+    {
+      "id": "s278-disciplines",
+      "source_record_id": "T04-S0070",
+      "answer_id": "T4-P278-TABLE01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Fark Edelim — Yedi ayrıntıyı ilgili disiplinlerle eşleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki tabloyu doldururken bir ayrıntının birden fazla disiplinle ilişkili olabileceğini unutmayın.",
+        "items": [
+          "Kurumda yaş/konum ilişkileri",
+          "Yaşlılık–ölüm–meslek iç çatışmaları",
+          "Modern koşuşturma eleştirisi",
+          "Yaşlılık, sağlık ve ani ölüm",
+          "Kuşak değişimi",
+          "Mesleki rollerin değişmesi",
+          "Ölüm karşısında yaşamı sorgulama"
+        ]
+      }
+    },
+    {
+      "id": "s278-edgu-source",
+      "source_record_id": "T04-S0071",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ferit Edgü'nün küçürek hikâye anlayışına ilişkin tahlil metnini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.278–279'daki açıklamada Merdiven için doğrudan kullanabileceğiniz kavramları seçin.",
+        "items": [
+          "Varoluş kaygısı ve bireyin kendini arayışı",
+          "Yoğunlaştırılmış anlatım",
+          "Okurun aktif katılımı",
+          "Şiirsel düzyazı ve simgeler",
+          "Kısa zaman / sezdirilen mekân",
+          "Diyalog ve açık yapıt"
+        ]
+      }
+    },
+    {
+      "id": "s279-q1",
+      "source_record_id": "T04-S0071",
+      "answer_id": "T4-P279-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Fark Edelim — Edgü'nün küçürek hikâye anlayışı Merdiven'e nasıl yansıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her özelliğin karşısına Merdiven'den bir yapı, sözcük veya olay kanıtı koyun.",
+        "items": [
+          "Varoluşçu tema",
+          "Yoğun anlatım",
+          "Okur katılımı",
+          "Şiirsel düzyazı",
+          "Simgeler",
+          "Zaman–mekân",
+          "Diyalog",
+          "Açık yapıt"
+        ]
+      }
+    },
+    {
+      "id": "s279-assessment",
+      "source_record_id": "T04-S0072",
+      "answer_id": "T4-P279-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme — Merdiven'i kendi beğeni ölçütlerinizle değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki örnek ölçütü model alın; Beğendim/Beğenmedim kararı kadar gerekçe de önemlidir.",
+        "items": [
+          "Konu / konunun işlenişi",
+          "Ana düşünce veya ileti",
+          "Dil",
+          "Üslup",
+          "Karakter kullanımı",
+          "Açıklık / yoruma açıklık"
+        ],
+        "note": "Hazır model, öğrencinin gerçek beğeni kararının yerine geçmez."
+      }
+    },
+    {
+      "id": "s279-brainstorm",
+      "source_record_id": "T04-S0073",
+      "answer_id": "T4-P279-PERF02",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Birlikte Çalışalım — 'Ne işim var benim yukarda?' sorusu için beyin fırtınası yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce fikirleri elemeden toplayın; sınıflandırma ve oylama daha sonra yapılsın.",
+        "items": [
+          "Bir yazıcı seçin.",
+          "Anlatıcının yerinden olabildiğince farklı cevaplar üretin.",
+          "Benzer görüşleri sınıflandırın.",
+          "En ilgi çekici yorumu oylayın."
+        ]
+      }
+    },
+    {
+      "id": "s279-themes",
+      "source_record_id": "T04-S0073",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Beyin fırtınası sonuçlarını dört anlam kümesinde karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üretilen fikirleri tek doğru yorumda eritmeyin; hangi metin ayrıntısının hangi kümeyi desteklediğini tartışın.",
+        "items": [
+          "Kariyer / yükselme sorgulaması",
+          "Yaşlanma farkındalığı",
+          "Ölüm bilinci",
+          "Kuşak değişimi"
+        ]
+      }
+    }
+  ]
+}
