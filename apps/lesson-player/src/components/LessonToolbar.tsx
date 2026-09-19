@@ -88,9 +88,11 @@ export function LessonToolbar({
           <button type="button" onClick={onOutlineToggle}>
             {outlineOpen ? "Akış" : "Akış"}
           </button>
-          <button type="button" onClick={onTeacherGuideToggle} aria-expanded={teacherGuideOpen} aria-controls="teacher-guide-panel">
-            {teacherGuideOpen ? "Rehberi kapat" : "Öğretmen rehberi"}
-          </button>
+          {!displayOnly ? (
+            <button type="button" onClick={onTeacherGuideToggle} aria-expanded={teacherGuideOpen} aria-controls="teacher-guide-panel">
+              {teacherGuideOpen ? "Rehberi kapat" : "Öğretmen rehberi"}
+            </button>
+          ) : null}
           <button type="button" onClick={onEditorToggle}>
             {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
           </button>
