@@ -1,0 +1,373 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-BEN-MIMAR-SINAN-DEGERLER-260-262",
+  "lesson_slug": "ben-mimar-sinan-degerler-260-262",
+  "title": "Ben, Mimar Sinan — Değerler ve Değerlendirme",
+  "subtitle": "Hayatın Aynası · Değer–kanıt / çatışma / sosyal bilimler / Ben Kimim?",
+  "printed_page_range": "260-262",
+  "required_source_range": {
+    "from": "T04-S0031",
+    "to": "T04-S0039"
+  },
+  "steps": [
+    {
+      "id": "s260-values-intro",
+      "source_record_id": "T04-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Oyundaki değerleri belirlemeden önce metin kanıtlarını hatırlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Bir değer adı ile o değeri gösteren somut söz, davranış veya olayı birbirinden ayırın.",
+          "items": [
+            "Mimar Sinan'ın eğitim ve çalışma tutumuna dönün.",
+            "Ayasofya'nın mimarlarını değerlendirdiği bölümü hatırlayın.",
+            "Eserini tamamlaması ve başarısını nasıl yorumladığına bakın."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s260-q1",
+      "source_record_id": "T04-S0031",
+      "answer_id": "T4-P260-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Millî, manevi ve evrensel değerleri gruplandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Her başlıktan bir veya iki değer belirleyip oyundan gerekçe gösterin; değer adlarını kanıt olmadan çoğaltmayın.",
+          "items": [
+            "Millî değerler",
+            "Manevi değerler",
+            "Evrensel değerler"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s260-q2",
+      "source_record_id": "T04-S0032",
+      "answer_id": "T4-P260-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Her değerin karşısına oyundaki örneğini yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Kitabın iki sütunlu değerler–metinden örnekler tablosunu kullanın.",
+          "items": [
+            "Değer",
+            "Metinden söz / davranış / olay",
+            "Bu örneğin değeri nasıl gösterdiği"
+          ],
+          "note": "Ders kitabında geçmeyen bir sözü Mimar Sinan'a alıntı olarak yüklemeyin."
+        }
+      }
+    },
+    {
+      "id": "s260-evidence",
+      "source_record_id": "T04-S0032",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Değer ve kanıt — Çalışkanlık, estetik ve sorumluluğu aynı örnekle açıklamak yeterli mi?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Bir davranış birden fazla değere işaret edebilir; her yorumun dayanağını ayrı görünür kılın.",
+          "sections": [
+            {
+              "title": "Çalışkanlık",
+              "body": "Öğrenmeyi ve teknik sorunları aşmayı gösteren somut bir olay."
+            },
+            {
+              "title": "Estetik duyarlılık",
+              "body": "Yalnız büyüklük değil, güzellik ve özgünlük arayışı."
+            },
+            {
+              "title": "Sorumluluk",
+              "body": "Verilen görevi ve sözü yerine getirme."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s260-q3",
+      "source_record_id": "T04-S0033",
+      "answer_id": "T4-P260-PERF03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 3 — Bu değerler günlük yaşamda hangi davranışlarda görünür?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Öğrenci kendi çevresinden gerçek veya olası bir durum seçip değer–davranış ilişkisini gerekçelendirir.",
+          "items": [
+            "Bir değer seçin.",
+            "Günlük hayatta görülebilecek somut davranış belirleyin.",
+            "Bu davranışın insan ilişkilerine katkısını açıklayın."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s260-q4",
+      "source_record_id": "T04-S0034",
+      "answer_id": "T4-P260-Q04",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 4 — Çalışkanlık, estetik ve sorumluluk Sinan'ın kişiliğine ve eserlerine nasıl yansır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Üç değeri ayrı örneklerle temellendirdikten sonra bunların bir mimari eserde nasıl birlikte görünür olduğunu söyleyin."
+        }
+      }
+    },
+    {
+      "id": "s260-groups",
+      "source_record_id": "T04-S0035",
+      "answer_id": "T4-P260-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ders Dışı Etkinlik — Tiyatro ve sosyal bilimler için üç araştırma grubu oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Kitaptaki bir haftalık araştırma sürecinde her grup farklı bir disiplinin sorusuna cevap arar.",
+          "items": [
+            "Metin–Tarih",
+            "Metin–Psikoloji",
+            "Metin–Sosyoloji"
+          ],
+          "note": "Tarihî bilgi dış kaynaktan öğrenilmişse bunu oyunun sözü gibi sunmayın."
+        }
+      }
+    },
+    {
+      "id": "s260-groups-compare",
+      "source_record_id": "T04-S0035",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Üç disiplin aynı sahneden hangi farklı soruları üretir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Tek bir oyun olayını üç disiplin açısından ele alarak grupların sorularını ayırt edin.",
+          "sections": [
+            {
+              "title": "Tarih",
+              "body": "Dönem, görev ve yapı bilgilerinin belgelerle ilişkisi."
+            },
+            {
+              "title": "Psikoloji",
+              "body": "Kişinin hedefi, kararları ve güçlüklerle baş etmesi."
+            },
+            {
+              "title": "Sosyoloji",
+              "body": "Kurumlar, toplumsal roller ve ortak üretim."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s260-share",
+      "source_record_id": "T04-S0035",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Araştırma sonuçlarını paylaşın ve oyun–bilim ilişkisini değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Grup sözcüsü tarih, psikoloji veya sosyoloji bulgusunun oyundaki bir ayrıntıyı anlamaya nasıl yardımcı olduğunu gösterir.",
+          "items": [
+            "Metindeki gözlemi söyleyin.",
+            "Dış kaynağı ayırarak belirtin.",
+            "Yazarın farklı alanlarla ilgisi hakkında yalnız bu bulguların desteklediği çıkarımı ifade edin."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s261-group",
+      "source_record_id": "T04-S0036",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Birlikte Çalışalım — Altı kişilik gruplarda oyundaki çatışmaları belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Önce çatışmayı iki karşıt istek, durum veya hedef olarak ifade edin; ardından olayın akışına etkisine geçin.",
+          "items": [
+            "Grubu ve sözcüyü belirleyin.",
+            "Her çatışma için karşı karşıya gelen yönleri yazın.",
+            "Bir sahne veya sözle gerekçelendirin."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s261-conflicts",
+      "source_record_id": "T04-S0036",
+      "answer_id": "T4-P261-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çatışmalar ve metne etkisi — İki sütunu doldurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Çatışma adını listelemek yeterli değil; karakterde veya olay örgüsünde neyi değiştirdiğini açıklayın.",
+          "items": [
+            "Hedef ↔ teknik güçlük",
+            "Ayasofya'yı aşma isteği ↔ yeni mimari başarı",
+            "Büyüklük ↔ güzellik",
+            "Geçicilik ↔ kalıcı eser",
+            "Kaygı ↔ deneyim ve güven"
+          ],
+          "note": "Bu karşıtlıkların hangisinin hangi bölümde açıkça yer aldığını kitaptan doğrulayın."
+        }
+      }
+    },
+    {
+      "id": "s261-effect",
+      "source_record_id": "T04-S0036",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çatışma, Sinan'ın bir sonraki karara geçişini nasıl sağlar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Her grup bir çatışmayı bir sahneyle ilişkilendirip 'önce – güçlük – karar – sonuç' dizisini açıklasın.",
+          "sections": [
+            {
+              "title": "Önce",
+              "body": "Karakterin hedefi veya içinde bulunduğu durum."
+            },
+            {
+              "title": "Güçlük",
+              "body": "Karşısına çıkan teknik ya da kişisel engel."
+            },
+            {
+              "title": "Karar ve sonuç",
+              "body": "Çatışmanın dramatik örgüyü nasıl ileri taşıdığı."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "s262-brainstorm",
+      "source_record_id": "T04-S0037",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme — Oyunda günlük insan ilişkilerinden hangi kesitler var?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Beyin fırtınasında önce düşünceleri serbestçe toplayın, ardından kitaptaki bir söz veya davranışla ilişkilendirin.",
+          "items": [
+            "Sınıf yazıcısını seçin.",
+            "Güven, görev verme ve sözünü tutma gibi gözlemleri tahtaya yazın.",
+            "Farklı görüşleri sınıfça değerlendirin.",
+            "Kendi beğeni ölçütlerinizi belirleyin."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s262-assessment",
+      "source_record_id": "T04-S0037",
+      "answer_id": "T4-P262-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Beğeni ölçütleri tablosu — Metni örneklerle değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Kitabın etkileyicilik örneğini inceleyin; başka ölçütleri öğrenciler belirlesin. Her biri için oyun içinden kanıt isteyin.",
+          "items": [
+            "Ölçüt",
+            "Metinden örnek",
+            "Ölçüte göre gerekçeli değerlendirme"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s262-who-intro",
+      "source_record_id": "T04-S0037",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ben Kimim? — Seçtiğiniz karakteri adı geçmeden tanıtınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Söz ve davranışlara dayanan birkaç ipucu hazırlayın. Eser adını veya karakter adını söyleyerek oyunu hemen bitirmeyin.",
+          "items": [
+            "Karakteri sessizce seçin.",
+            "Üç özgül özellik veya davranış belirleyin.",
+            "Arkadaşlarınız tahmin ettikten sonra açıklayın."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s262-who",
+      "source_record_id": "T04-S0037",
+      "answer_id": "T4-P262-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Ben Kimim? — Karakteri tanıtan kısa metni okuyup tahminleri karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Model tanıtımı öğrenciler kendi ipuçlarını hazırladıktan sonra açın. Örnek, gerçek oyunda geçen tek parça bir monolog değildir.",
+          "items": [
+            "İpuçlarının dayanağını gösterin.",
+            "Tahminlerin hangi ipucuna dayandığını sorun.",
+            "Yanıtı açıklayın ve farklı tanıtım yollarını tartışın."
+          ]
+        }
+      }
+    },
+    {
+      "id": "s262-q1",
+      "source_record_id": "T04-S0038",
+      "answer_id": "T4-P262-PERFQ01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Hangi karakteri canlandırmak istersiniz? Neden?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Seçilen karakteri bir replik, davranış veya hedefle ilişkilendirin; tek doğru karakter aranmaz."
+        }
+      }
+    },
+    {
+      "id": "s262-q2",
+      "source_record_id": "T04-S0039",
+      "answer_id": "T4-P262-PERFQ02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Karakterin özelliğini günlük bir olaya taşıyan kısa senaryo yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "content": {
+          "lead": "Hayalî senaryonuzun gerçek oyunda yaşanmış bir sahne olmadığını açık tutun.",
+          "items": [
+            "Oyundan bir kişilik özelliği seçin.",
+            "Gündelik bir durum tasarlayın.",
+            "Karakterin nasıl davranacağını özelliğiyle gerekçelendirin.",
+            "Sınıfla paylaşın."
+          ]
+        }
+      }
+    }
+  ]
+}
