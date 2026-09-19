@@ -432,6 +432,55 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-divan-evaluation.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T02-DIVANU-LUGATIT-TURK&step=s128-q2"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-source-limited.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-KONUSMA&step=s129-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-stations.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-KONUSMA&step=s130-stations"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-comparison.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-KONUSMA&step=s132-133-comparison"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-rules.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-KONUSMA&step=s134-rules-1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-self.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-KONUSMA&step=s135-self-1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-reference.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-KONUSMA&step=s135-reference"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -478,5 +527,11 @@ jobs:
             lesson-player-theme2-divan-comparison.png
             lesson-player-theme2-divan-dictionary.png
             lesson-player-theme2-divan-evaluation.png
+            lesson-player-theme2-speaking-source-limited.png
+            lesson-player-theme2-speaking-stations.png
+            lesson-player-theme2-speaking-comparison.png
+            lesson-player-theme2-speaking-rules.png
+            lesson-player-theme2-speaking-self.png
+            lesson-player-theme2-speaking-reference.png
             apps/lesson-player/dist
           if-no-files-found: error
