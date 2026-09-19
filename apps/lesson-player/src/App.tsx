@@ -10,6 +10,7 @@ import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
 import { LessonOutline } from "./components/LessonOutline";
 import { LessonFooter } from "./components/LessonFooter";
+import { LessonToolbar } from "./components/LessonToolbar";
 import {
   buildExportedStep,
   canonicalLessonSignature,
@@ -596,69 +597,22 @@ export default function App() {
         .filter(Boolean)
         .join(" ")}
     >
-      <header className="topbar">
-        <div>
-          <div className="topbar__kicker">ÖĞRETMEN REHBERİ · DERS MODU</div>
-          <div className="topbar__title">{lesson.title}</div>
-          {!displayOnly && overrideWarning ? (
-            <div className="override-warning" role="status">
-              <span>{overrideWarning}</span>
-              {overrideRestore.backupKey ? (
-                <button type="button" onClick={() => {
-                  const raw = window.localStorage.getItem(overrideRestore.backupKey!);
-                  if (raw === null) return;
-                  const blob = new Blob([raw], { type: "application/json" });
-                  const href = URL.createObjectURL(blob);
-                  const link = document.createElement("a");
-                  link.href = href;
-                  link.download = `${lesson.lesson_slug}-old-edits-backup.json`;
-                  document.body.appendChild(link);
-                  link.click();
-                  link.remove();
-                  URL.revokeObjectURL(href);
-                }}>
-                  Eski düzenlemeleri indir
-                </button>
-              ) : null}
-              <button type="button" onClick={() => setOverrideWarning(null)}>
-                Kapat
-              </button>
-            </div>
-          ) : null}
-        </div>
-        <div className="topbar__actions">
-          {lessonCatalog.length > 1 ? (
-            <label className="lesson-select">
-              <span>Ders</span>
-              <select
-                value={lesson.lesson_id}
-                onChange={(event) => switchLesson(event.target.value)}
-              >
-                {lessonCatalog.map((item) => (
-                  <option value={item.lesson_id} key={item.lesson_id}>
-                    {item.title} · s. {item.printed_page_range}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ) : null}
-          <button type="button" onClick={() => setOutlineOpen((value) => !value)}>
-            {outlineOpen ? "Akış" : "Akış"}
-          </button>
-          <button type="button" onClick={() => setEditorOpen((value) => !value)}>
-            {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
-          </button>
-          <button type="button" onClick={openProjectionWindow}>
-            Öğrenci ekranı
-          </button>
-          <button type="button" onClick={togglePresentationMode}>
-            Projeksiyon
-          </button>
-          <button type="button" onClick={() => void toggleFullscreen()}>
-            Tam ekran
-          </button>
-        </div>
-      </header>
+      <LessonToolbar
+        lesson={lesson}
+        lessons={lessonCatalog}
+        displayOnly={displayOnly}
+        overrideWarning={overrideWarning}
+        backupKey={overrideRestore.backupKey}
+        outlineOpen={outlineOpen}
+        editorOpen={editorOpen}
+        onWarningDismiss={() => setOverrideWarning(null)}
+        onLessonChange={switchLesson}
+        onOutlineToggle={() => setOutlineOpen((value) => !value)}
+        onEditorToggle={() => setEditorOpen((value) => !value)}
+        onOpenStudentDisplay={openProjectionWindow}
+        onPresentationToggle={togglePresentationMode}
+        onFullscreen={() => void toggleFullscreen()}
+      />
 
       <LessonOutline
         lesson={lesson}
