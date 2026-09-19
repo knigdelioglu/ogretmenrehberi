@@ -523,7 +523,7 @@ assert(bioById.get("s194-q1")?.answer?.answer_sections?.["Tarık Buğra örneği
  "s.194 iki biyografi örneği ve okur için anlamı metin dayanaklı olmalı.");
 assert(bioById.get("s195-goal")?.answer?.entry_type==="performance_support" &&
  bioById.get("s195-goal")?.answer?.answer_sections?.["Tahmin (okumadan önce)"]?.
- includes("okunmayan") &&
+ includes("sonradan") &&
  bioById.get("s195-prediction")?.answer===null &&
  bioById.get("s195-prediction")?.content?.lead?.includes("ilk tahmin"),
  "s.195 öğrenci ön-tahmini sonradan öğrenilen olaylarla geriye dönük doldurulmamalı.");
