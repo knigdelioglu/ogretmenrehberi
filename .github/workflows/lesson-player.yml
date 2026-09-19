@@ -1580,6 +1580,62 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-262-guess.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-DEGERLER-260-262&step=s262-who"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-263-stages.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-GIRIS-263-265&step=s263-intro"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-264-shortstory.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-GIRIS-263-265&step=s264-short-story"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-265-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-GIRIS-263-265&step=s265-read"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-266-words.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-ANLAMA-266-270&step=s266-vocabulary"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-268-symbol.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-ANLAMA-266-270&step=s268-q5"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-269-inout.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-ANLAMA-266-270&step=s269-q4"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-270-worksheet.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-ANLAMA-266-270&step=s270-work"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1761,5 +1817,12 @@ jobs:
             lesson-player-theme4-260-values.png
             lesson-player-theme4-261-conflicts.png
             lesson-player-theme4-262-guess.png
+            lesson-player-theme4-263-stages.png
+            lesson-player-theme4-264-shortstory.png
+            lesson-player-theme4-265-reading.png
+            lesson-player-theme4-266-words.png
+            lesson-player-theme4-268-symbol.png
+            lesson-player-theme4-269-inout.png
+            lesson-player-theme4-270-worksheet.png
             apps/lesson-player/dist
           if-no-files-found: error
