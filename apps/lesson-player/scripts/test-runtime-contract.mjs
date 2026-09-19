@@ -144,10 +144,38 @@ assert(
   ).overrides) === JSON.stringify(userEdits),
   "Edits must survive reload against the same canonical lesson."
 );
-const canonicalOrder = sampleLesson.steps.map((step) => step.id);\nconst customOrder = [...canonicalOrder];\n[customOrder[0], customOrder[1]] = [customOrder[1], customOrder[0]];\nconst currentOrderEnvelope = JSON.stringify(orderEnvelope(signature, customOrder));\nassert(\n  JSON.stringify(\n    restoreOrderEnvelope(currentOrderEnvelope, signature, canonicalOrder).order\n  ) === JSON.stringify(customOrder),\n  "Custom step order must survive reload against the same canonical lesson."\n);\nassert(\n  restoreOrderEnvelope(JSON.stringify(customOrder), signature, canonicalOrder).needsBackup,\n  "Legacy custom order must be archived instead of silently applied."\n);\nassert(\n  !restoreOrderEnvelope(JSON.stringify(canonicalOrder), signature, canonicalOrder).needsBackup,\n  "Legacy canonical order should migrate without a warning."\n);\nconst changedLesson = structuredClone(sampleLesson);
+const canonicalOrder = sampleLesson.steps.map((step) => step.id);
+const customOrder = [...canonicalOrder];
+[customOrder[0], customOrder[1]] = [customOrder[1], customOrder[0]];
+const currentOrderEnvelope = JSON.stringify(orderEnvelope(signature, customOrder));
+assert(
+  JSON.stringify(
+    restoreOrderEnvelope(currentOrderEnvelope, signature, canonicalOrder).order
+  ) === JSON.stringify(customOrder),
+  "Custom step order must survive reload against the same canonical lesson."
+);
+assert(
+  restoreOrderEnvelope(JSON.stringify(customOrder), signature, canonicalOrder).needsBackup,
+  "Legacy custom order must be archived instead of silently applied."
+);
+assert(
+  !restoreOrderEnvelope(JSON.stringify(canonicalOrder), signature, canonicalOrder).needsBackup,
+  "Legacy canonical order should migrate without a warning."
+);
+const changedLesson = structuredClone(sampleLesson);
 changedLesson.steps[0].display_prompt += " [new edition]";
 const changedSignature = canonicalLessonSignature(changedLesson);
-assert(changedSignature !== signature, "Canonical content changes must invalidate old edits.");\nassert(\n  restoreOrderEnvelope(currentOrderEnvelope, changedSignature, canonicalOrder).needsBackup,\n  "A canonical lesson revision must invalidate stale custom step order."\n);\nassert(\n  JSON.stringify(\n    restoreOrderEnvelope(currentOrderEnvelope, changedSignature, canonicalOrder).order\n  ) === JSON.stringify(canonicalOrder),\n  "Stale custom order must fall back to the new canonical order."\n);
+assert(changedSignature !== signature, "Canonical content changes must invalidate old edits.");
+assert(
+  restoreOrderEnvelope(currentOrderEnvelope, changedSignature, canonicalOrder).needsBackup,
+  "A canonical lesson revision must invalidate stale custom step order."
+);
+assert(
+  JSON.stringify(
+    restoreOrderEnvelope(currentOrderEnvelope, changedSignature, canonicalOrder).order
+  ) === JSON.stringify(canonicalOrder),
+  "Stale custom order must fall back to the new canonical order."
+);
 assert(
   restoreOverrideEnvelope(
     currentEnvelope, changedSignature, sampleLesson.steps.map((step) => step.id)
@@ -222,7 +250,9 @@ assert(
   "Progress and reordered deep links must use the stable step identity."
 );
 assert(
-  appSource.includes("orderEnvelope(overrideSignature, stepOrder)") &&\n    appSource.includes("restoreOrderEnvelope(raw, overrideSignature, canonical)") &&\n    appSource.includes("overrideEnvelope(overrideSignature, overrides)") &&
+  appSource.includes("orderEnvelope(overrideSignature, stepOrder)") &&
+    appSource.includes("restoreOrderEnvelope(raw, overrideSignature, canonical)") &&
+    appSource.includes("overrideEnvelope(overrideSignature, overrides)") &&
     appSource.includes("window.localStorage.setItem(backupKey, raw ?? \"\")") &&
     toolbarSource.includes("Eski düzenlemeleri indir"),
   "Stale local edits must be archived before storing the new revision."
