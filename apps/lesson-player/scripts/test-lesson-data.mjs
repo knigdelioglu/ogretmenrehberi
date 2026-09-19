@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 2,
-  "Tema 4 s.236–250 giriş ve okuma bloğu içermeli.");
+assert(theme4Lessons.length === 3,
+  "Tema 4 s.236–255 giriş, okuma ve anlama bloklarını içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -391,10 +391,50 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 31 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 15 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 13,
-  "Tema 4 s.236–250 toplam 2 ders / 31 ekran / 15 kaynak / 13 cevap olmalı.");
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 44 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 23 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 22,
+  "Tema 4 s.236–255 toplam 3 ders / 44 ekran / 23 kaynak / 22 cevap olmalı.");
+
+const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
+assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
+  mimarAnalysis.coverage.steps === 13 && mimarAnalysis.coverage.source_records === 8 &&
+  mimarAnalysis.coverage.answer_entries === 9,
+  "Mimar Sinan anlama s.251–255 13 ekran / 8 kaynak / 9 cevap içermeli.");
+const mimarAnalysisById = new Map(mimarAnalysis.steps.map(step => [step.id, step]));
+assert(mimarAnalysisById.size === 13, "Mimar Sinan anlama ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s251-q1","T04-S0016","T4-P251-Q01"],
+  ["s251-q2a","T04-S0017","T4-P251-Q02A"],
+  ["s252-q2bc","T04-S0017","T4-P252-PERF02BC"],
+  ["s252-q3","T04-S0018","T4-P252-Q03"],
+  ["s254-q1","T04-S0019","T4-P254-Q01"],
+  ["s254-q2","T04-S0020","T4-P254-Q02"],
+  ["s255-q1","T04-S0021","T4-P255-Q01"],
+  ["s255-q2","T04-S0022","T4-P255-Q02"],
+  ["s255-q3","T04-S0023","T4-P255-PERF03"]
+]) {
+  assert(mimarAnalysisById.get(id)?.source?.source_record_id === sourceId &&
+    mimarAnalysisById.get(id)?.answer?.question_id === answerId,
+    `Mimar Sinan s.251–255 kanonik kaynak/cevap eşleşmesi: ${id}`);
+}
+assert(mimarAnalysisById.get("s251-q2a")?.content?.items?.length === 4 &&
+  mimarAnalysisById.get("s252-characters")?.content?.items?.length === 3 &&
+  mimarAnalysisById.get("s252-characters")?.answer === null &&
+  Object.keys(mimarAnalysisById.get("s251-q2a")?.answer?.answer_sections ?? {}).length === 7,
+  "Karakter tablosu yedi satırda ve tek kanonik kayıtta kalmalı.");
+assert(mimarAnalysisById.get("s251-q1")?.content?.items?.length === 3 &&
+  mimarAnalysisById.get("s254-q1")?.content?.items?.length === 4 &&
+  Object.keys(mimarAnalysisById.get("s254-q1")?.answer?.answer_sections ?? {}).length === 4,
+  "Konu–amaç–yazar ve Cimri karşılaştırma ölçütleri korunmalı.");
+assert(mimarAnalysisById.get("s254-caution")?.answer === null &&
+  mimarAnalysisById.get("s255-q2")?.content?.note?.includes("kesinleşmemiş doğum tarihi") &&
+  mimarAnalysisById.get("s255-q3")?.answer?.entry_type === "performance_support",
+  "Tarihî kaynak sınırı ve dekorun açık uçlu niteliği korunmalı.");
+for (const step of mimarAnalysis.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Mimar Sinan anlama doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
