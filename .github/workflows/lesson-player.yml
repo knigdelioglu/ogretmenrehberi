@@ -1380,6 +1380,54 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-radyo229-exit.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-RADYO-DIYALOG-YAZMA-225-229&step=s229-exit"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-230-venn.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s230-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-231-concepts.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s231-q3"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-232-chart.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s232-veli-chart"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-233-scoring.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s233-q10"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-234-eight-claims.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s234-q13"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-235-final.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-DEGERLENDIRME-230-235&step=s235-q16"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1536,5 +1584,11 @@ jobs:
             lesson-player-radyo226-plan.png
             lesson-player-radyo228-assessment.png
             lesson-player-radyo229-exit.png
+            lesson-player-theme3-230-venn.png
+            lesson-player-theme3-231-concepts.png
+            lesson-player-theme3-232-chart.png
+            lesson-player-theme3-233-scoring.png
+            lesson-player-theme3-234-eight-claims.png
+            lesson-player-theme3-235-final.png
             apps/lesson-player/dist
           if-no-files-found: error
