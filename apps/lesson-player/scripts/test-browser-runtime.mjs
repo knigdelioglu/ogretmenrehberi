@@ -116,6 +116,9 @@ try {
     return guide.includes('İletişim engellerini canlandırma') &&
       guide.includes('E-posta yazma') &&
       guide.includes('Ek-1') &&
+      guide.includes('23–27 Kasım 2026') &&
+      guide.includes('11–15 Ocak 2027') &&
+      guide.includes('Önerilen sunum haftası') &&
       guide.includes('performans puan');
   })()`);
   if (!annualAndWorkshops) throw new Error("Teacher workflow evidence incomplete.");
