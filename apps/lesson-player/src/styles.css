@@ -87,6 +87,28 @@ button:focus-visible {
   gap: 8px;
 }
 
+.override-warning {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+  max-width: 70ch;
+  font-size: 0.79rem;
+  line-height: 1.35;
+  color: #fff3c3;
+}
+
+.override-warning button {
+  border: 1px solid rgb(255 243 195 / 0.5);
+  border-radius: 5px;
+  background: transparent;
+  padding: 2px 7px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
 .topbar button,
 .lesson-footer button,
 .reveal-actions button {
