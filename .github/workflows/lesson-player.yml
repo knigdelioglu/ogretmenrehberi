@@ -1468,6 +1468,62 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-242-roles.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T04-GIRIS-236-242&step=s242-optional-roles"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-243-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250&step=s243-read"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-247-words.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250&step=s247-vocab"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-249-compare.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250&step=s249-comp-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-250-table.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250&step=s250-social-table"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-251-characters.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255&step=s251-q2a"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-254-cimri.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255&step=s254-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-255-decor.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255&step=s255-q3"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1635,5 +1691,12 @@ jobs:
             lesson-player-theme4-240-performance.png
             lesson-player-theme4-241-roles.png
             lesson-player-theme4-242-roles.png
+            lesson-player-theme4-243-reading.png
+            lesson-player-theme4-247-words.png
+            lesson-player-theme4-249-compare.png
+            lesson-player-theme4-250-table.png
+            lesson-player-theme4-251-characters.png
+            lesson-player-theme4-254-cimri.png
+            lesson-player-theme4-255-decor.png
             apps/lesson-player/dist
           if-no-files-found: error
