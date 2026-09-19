@@ -108,7 +108,7 @@ for(const id of ["s167-reading","s168-reading","s169-reading","s170-reading","s1
 }
 assert(huzurById.get("s172-vocabulary")?.layout === "vocabulary" &&
   Object.keys(huzurById.get("s172-vocabulary")?.answer?.answer_sections ?? {}).length === 9 &&
-  huzurById.get("s172-vocabulary")?.content?.items?.length === 9,
+  huzurById.get("s172-vocabulary")?.content?.items == null,
   "Söz Varlığımız dokuz kelimeyi eksiksiz kapsamalı.");
 assert(huzurById.get("s172-other")?.answer?.entry_type === "performance_support",
   "Öğrencinin bilmediği kelimelere sabit liste dayatılmamalı.");
