@@ -113,8 +113,8 @@ try {
   );
   await until(() => teacher.evaluate(`(() => {
     const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
-    const order = JSON.parse(localStorage.getItem(key + ".order") ?? "[]");
-    return order[1] === "s15-q1" &&
+    const stored = JSON.parse(localStorage.getItem(key + ".order") ?? "{}");
+    return stored.schemaVersion === 1 && stored.order?.[1] === "s15-q1" &&
       localStorage.getItem(key + ".step-id") === "s15-q1" &&
       localStorage.getItem(key + ".index") === "1";
   })()`), "Reordered step ID persistence");
@@ -137,8 +137,8 @@ try {
   );
   await until(() => teacher.evaluate(`(() => {
     const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
-    const order = JSON.parse(localStorage.getItem(key + ".order") ?? "[]");
-    return order[0] === "s15-q1" &&
+    const stored = JSON.parse(localStorage.getItem(key + ".order") ?? "{}");
+    return stored.schemaVersion === 1 && stored.order?.[0] === "s15-q1" &&
       localStorage.getItem(key + ".step-id") === "s15-q1" &&
       localStorage.getItem(key + ".index") === "0" &&
       new URLSearchParams(location.search).get("step") === "s15-q1";
@@ -216,6 +216,30 @@ try {
       !document.querySelector(".stage-card h1")?.textContent?.includes("STALE PROMPT");
   })()`);
   if (!safe) throw new Error("Legacy overrides masked current content or were not backed up.");
+
+  await teacher.evaluate(`(() => {
+    const key = "ogretmenrehberi.lesson.T11-T01-MEKTUP.order";
+    const current = JSON.parse(localStorage.getItem(key));
+    const legacyCustom = [...current.order];
+    [legacyCustom[0], legacyCustom[1]] = [legacyCustom[1], legacyCustom[0]];
+    localStorage.setItem(key, JSON.stringify(legacyCustom));
+  })()`);
+  await teacher.send("Page.reload");
+  await until(
+    () => teacher.evaluate("document.body.innerText.includes('özel adım sırası yedeklendi')"),
+    "Stale custom order recovery notice"
+  );
+  const safeOrder = await teacher.evaluate(`(() => {
+    const key = "ogretmenrehberi.lesson.T11-T01-MEKTUP.order";
+    const backup = Object.keys(localStorage).find(k => k.startsWith(key + ".backup."));
+    const current = JSON.parse(localStorage.getItem(key));
+    return Boolean(backup) &&
+      current.schemaVersion === 1 &&
+      current.order?.[0] === "s36-q1";
+  })()`);
+  if (!safeOrder) {
+    throw new Error("Legacy custom order masked the canonical flow or was not backed up.");
+  }
 
   // Verify that Chrome renders each layout, not merely that JSON contains its items.
   for (const check of [
