@@ -457,12 +457,23 @@ export default function App() {
     const channel = new BroadcastChannel(projectionChannelName);
     projectionChannelRef.current = channel;
 
+    const navigateDisplay = (lessonId: string, stepId?: string) => {
+      const target = lessonCatalog.find((item) => item.lesson_id === lessonId);
+      if (!target || target.lesson_id === lesson.lesson_id) return;
+      const url = new URL(window.location.href);
+      url.searchParams.set("display", "1");
+      url.searchParams.set("lesson", target.lesson_id);
+      if (stepId) url.searchParams.set("step", stepId);
+      else url.searchParams.delete("step");
+      window.location.replace(url.toString());
+    };
+
     channel.onmessage = (event: MessageEvent) => {
       const message = event.data as
         | { type: "request-state" }
+        | { type: "lesson-switch"; lessonId: string }
         | { type: "lesson-state"; state: ProjectionSyncState }
         | undefined;
-
       if (!message) return;
 
       if (message.type === "request-state" && !displayOnly) {
@@ -473,14 +484,28 @@ export default function App() {
         return;
       }
 
+      if (message.type === "lesson-switch" && displayOnly) {
+        navigateDisplay(message.lessonId);
+        return;
+      }
+
       if (message.type === "lesson-state" && displayOnly) {
         const state = message.state;
-        setStepOrder(state.stepOrder);
-        setOverrides(state.overrides);
-        setIndex(
-          Math.max(0, Math.min(lesson.steps.length - 1, state.index))
-        );
-        setRevealed(new Set(studentVisibleRevealKeys(state.revealed)));
+        if (state.lessonId !== lesson.lesson_id) {
+          navigateDisplay(state.lessonId, state.stepId);
+          return;
+        }
+        const canonical = lesson.steps.map((item) => item.id);
+        const orderedIds = Array.isArray(state.stepOrder) &&
+          state.stepOrder.length === canonical.length &&
+          new Set(state.stepOrder).size === canonical.length &&
+          state.stepOrder.every((id) => canonical.includes(id))
+            ? state.stepOrder
+            : canonical;
+        setStepOrder(orderedIds);
+        setOverrides(studentVisibleOverrides(state.overrides ?? {}));
+        setIndex(restoredStepIndex(orderedIds, state.stepId, null, state.index));
+        setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [])));
         setVocabularyTerms(state.vocabularyTerms ?? {});
       }
     };
