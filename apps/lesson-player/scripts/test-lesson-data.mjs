@@ -320,8 +320,8 @@ for (const step of theme3Assessment.steps) {
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
-assert(theme4Lessons.length === 1,
-  "Tema 4 s.236–242 giriş ve okuma çemberiyle başlamalı.");
+assert(theme4Lessons.length === 2,
+  "Tema 4 s.236–250 giriş ve okuma bloğu içermeli.");
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
@@ -356,6 +356,45 @@ for (const step of theme4Intro.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 4 açılışında doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
+
+const mimarReading = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250");
+assert(mimarReading && mimarReading.printed_page_range === "243-250" &&
+  mimarReading.coverage.steps === 14 && mimarReading.coverage.source_records === 6 &&
+  mimarReading.coverage.answer_entries === 6,
+  "Mimar Sinan okuma s.243–250 14 ekran / 6 kaynak / 6 cevap içermeli.");
+const mimarReadingById = new Map(mimarReading.steps.map(step => [step.id, step]));
+assert(mimarReadingById.size === 14, "Mimar Sinan okuma ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s247-vocab","T04-S0011","T4-P247-VOC01"],
+  ["s248-prediction","T04-S0012","T4-P248-PERF01"],
+  ["s249-buzz","T04-S0012","T4-P249-PERF01"],
+  ["s249-comp-q1","T04-S0013","T4-P249-Q01"],
+  ["s249-comp-q2","T04-S0014","T4-P249-Q02"],
+  ["s250-social-table","T04-S0015","T4-P250-TABLE01"]
+]) {
+  assert(mimarReadingById.get(id)?.source?.source_record_id === sourceId &&
+    mimarReadingById.get(id)?.answer?.question_id === answerId,
+    `Mimar Sinan s.243–250 kanonik kaynak / cevap eşleşmesi: ${id}`);
+}
+assert(mimarReadingById.get("s247-vocab")?.content?.items?.length === 6 &&
+  Object.keys(mimarReadingById.get("s247-vocab")?.answer?.answer_sections ?? {}).length === 6,
+  "Mimar Sinan kelime duvarı altı sözcüğü korumalı.");
+assert(mimarReadingById.get("s249-comp-q1")?.content?.items?.length === 4 &&
+  Object.keys(mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections ?? {}).length === 4,
+  "Gerçek hayat / tiyatro karşılaştırması dört ölçütü korumalı.");
+assert(mimarReadingById.get("s250-social-table")?.content?.items?.length === 7 &&
+  mimarReadingById.get("s250-social-table-rest")?.content?.items?.length === 6 &&
+  mimarReadingById.get("s250-social-table-rest")?.answer === null &&
+  Object.keys(mimarReadingById.get("s250-social-table")?.answer?.answer_sections ?? {}).length === 13,
+  "Sosyal hayat tablosunun on üç ifadesi tek kanonik cevaba bağlı olmalı.");
+for (const step of mimarReading.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 31 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 15 &&
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 13,
+  "Tema 4 s.236–250 toplam 2 ders / 31 ekran / 15 kaynak / 13 cevap olmalı.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
