@@ -11,6 +11,7 @@ export type LayoutKind =
 
 export type AnswerSections =
   | Record<string, string | string[] | Record<string, unknown>>
+  | string[]
   | null;
 
 export interface AnswerEntry {
