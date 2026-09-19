@@ -1,0 +1,347 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-RADYO-DIYALOG-YAZMA-225-229",
+  "lesson_slug": "radyo-diyalog-yazma-225-229",
+  "title": "Radyo Tiyatrosu — Diyaloğu Başka Türe Dönüştürme",
+  "subtitle": "Yaşamın İzinde · Yazma / tür dönüşümü / öz değerlendirme / çıkış kartı",
+  "printed_page_range": "225-229",
+  "required_source_range": {
+    "from": "T03-S0124",
+    "to": "T03-S0130"
+  },
+  "steps": [
+    {
+      "id": "s225-reference",
+      "source_record_id": "T03-S0124",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yazmayı Yönetebilme — Radyo oyununun tür özelliklerini kitap metninden belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.225'teki Radyo Oyununun Özellikleri metnini okuyun; görüntü yerine ses, söz, müzik ve efektin hangi görevi üstlendiğini düşünün.",
+        "sections": [
+          {
+            "title": "Diyalog",
+            "body": "Kişiler ve çatışma konuşmalar üzerinden izlenir."
+          },
+          {
+            "title": "Ses dünyası",
+            "body": "Müzik ve efekt mekân veya zaman geçişine işaret edebilir."
+          },
+          {
+            "title": "Yazma görevi",
+            "body": "Kaydı dinlerken seçtiğiniz diyaloğu başka bir türe dönüştürün; kaynakta olmayan diyaloğu icat etmeyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s225-choice",
+      "source_record_id": "T03-S0125",
+      "answer_id": "T3-P225-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dönüştürmek için Direnişin Ustaları'ndan bir diyalog seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kayıtta gerçekten geçen, kişiler arası ilişkiyi ve anlamlı bir çatışma veya iletiyi taşıyan bir konuşma belirleyin.",
+        "items": [
+          "Diyaloğun hangi bölümden alındığını not edin.",
+          "Konuşan kişileri ve bağlamı ayırt edin.",
+          "Seçiminizi anlam, karakter ve dönüştürülebilirlik bakımından gerekçelendirin.",
+          "Sınıf panosunda akran görüşü alıp seçimi gözden geçirin."
+        ]
+      }
+    },
+    {
+      "id": "s225-strategy",
+      "source_record_id": "T03-S0125",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Diyaloğu başka türe dönüştürmek için yazma stratejinizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hikâye, anı veya uygun başka tür seçilebilir; türün gerektirdiği anlatıcı ve yapı kararlarını kaynak diyaloğun anlamını bozmadan alın.",
+        "sections": [
+          {
+            "title": "Kaynak",
+            "body": "Diyalog, kişiler, olay ve temel ileti."
+          },
+          {
+            "title": "Yeni biçim",
+            "body": "Seçilen türün anlatıcısı, olay dizisi ve anlatım yolları."
+          },
+          {
+            "title": "Korunacak",
+            "body": "Kişilerin kaynakta görülen tutumları, diyalog bağlamı ve ana anlam."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s226-task",
+      "source_record_id": "T03-S0126",
+      "answer_id": "T3-P226-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Performans görevi — Diyaloğu başka türe dönüştürme planınızı hazırlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.226'daki amaç, tür, yöntem ve olası engeller başlıklarını yazmaya başlamadan önce doldurun.",
+        "items": [
+          "Yazma amacınızı belirleyin.",
+          "Dönüştüreceğiniz türü seçin.",
+          "Seçilen türün gerekli anlatım yollarını belirleyin.",
+          "Bağlamdan kopma veya karakteri değiştirme riskini önceden düşünün."
+        ],
+        "note": "Kitaptaki görev süresi 8 ders saatidir."
+      }
+    },
+    {
+      "id": "s226-plan",
+      "source_record_id": "T03-S0126",
+      "answer_id": "T3-P226-PERF02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "İçerik Oluşturabilme — Seçtiğiniz diyaloğun planını oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hazır model planı açmadan önce kendi dinleme notlarıyla kaynak kişi, bağlam ve çatışmayı doldurun.",
+        "items": [
+          "Kaynak diyalog ve konuşan kişiler",
+          "Bağlam ve temel çatışma",
+          "Ana ileti ve seçilecek tür",
+          "Anlatıcı, mekân ve zaman",
+          "Giriş, gelişme, sonuç",
+          "Korunacak dil ve hitap biçimleri",
+          "Geri bildirimden sonra düzeltilecekler"
+        ]
+      }
+    },
+    {
+      "id": "s226-genre",
+      "source_record_id": "T03-S0126",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Tür değişiyor; kaynak diyalogdan ne korunuyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Diyaloğun karşılıklı konuşma yapısını yeni türün gerektirdiği anlatımla yeniden kurarken metnin özünü kaybetmeyin.",
+        "sections": [
+          {
+            "title": "Hikâye",
+            "body": "Olayı anlatıcı, kişi, mekân ve zaman düzeniyle yeniden kurabilir."
+          },
+          {
+            "title": "Anı",
+            "body": "Seçilen kişinin yaşadığı olayın hatırlanması biçiminde düzenlenebilir; kaynakta yaşanmamış olay eklemeyin."
+          },
+          {
+            "title": "Kaynakla denetim",
+            "body": "Kim neyi, hangi koşulda söyledi; temel ileti nasıl korunuyor?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s227-content",
+      "source_record_id": "T03-S0127",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Taslağı geliştiriniz — Hedef kitle, ileti ve yapı.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dönüştürdüğünüz metnin bütününde konuşmaların işlevini ve karakterlerin bağlamını koruyun.",
+        "items": [
+          "Hedef kitleyi ve metni paylaşacağınız kullanım alanını belirleyin.",
+          "Açık veya örtük iletiyi kaynak konuşmayla bağlayın.",
+          "Türün yapı unsurlarını seçin.",
+          "Gereken araştırma ve görsel desteği belirleyin.",
+          "Yazma planınızda işlevsel karşılaştırmaya yer verin."
+        ]
+      }
+    },
+    {
+      "id": "s227-word-choice",
+      "source_record_id": "T03-S0127",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Söz varlığı, dil işlevi ve taslağa geri bildirim.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Karakterlerin konuşma özelliklerini silmeden yeni türün dilini oluşturun.",
+        "items": [
+          "Kaynak diyalogdaki anlamlı hitap ve kelimeleri koruyun.",
+          "Rica, koşul veya gerekçelendirme gibi kullanılacak dil işlevlerini seçin.",
+          "Taslağı grup arkadaşlarıyla paylaşın.",
+          "Geri bildirimden sonra anlatıcı, akış ve sözcük seçimlerini düzeltin."
+        ]
+      }
+    },
+    {
+      "id": "s227-rules",
+      "source_record_id": "T03-S0127",
+      "answer_id": "T3-P227-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Kural Uygulayabilme — Diyaloğu başka türe dönüştürürken nelere dikkat edersiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişilerin söz ve davranışlarını değiştiren 'serbest yeni hikâye' yazmayın; seçilen türün gereğini kaynakla tutarlı biçimde uygulayın.",
+        "items": [
+          "Bağlam ve karakter tutarlılığı",
+          "Seçilen türün yapısı ve anlatım biçimi",
+          "Hedef kitleye uygun söz varlığı",
+          "Açık/örtük ileti ve doğal geçişler",
+          "Bağdaşıklık, yazım ve noktalama"
+        ]
+      }
+    },
+    {
+      "id": "s228-writing",
+      "source_record_id": "T03-S0127",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Yazınızı oluşturunuz — Planı gerçek metne dönüştürünüz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk taslağı yazarken sahne ve karakteri yalnız kitapta dinlediğiniz bağlam içinde tutun.",
+        "items": [
+          "Dikkat çekici fakat kaynakla tutarlı bir giriş yapın.",
+          "Gelişmede kişilerin duygu ve davranışlarını yeni tür içinde anlatın.",
+          "Gereken diyalogları anlamını bozmayacak biçimde koruyun.",
+          "Seçtiğiniz türün sonuç düzeniyle metni tamamlayın."
+        ]
+      }
+    },
+    {
+      "id": "s228-edit",
+      "source_record_id": "T03-S0127",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Son okuma — Metniniz kaynak diyalogla çelişiyor mu?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız noktalama kontrolü yeterli değildir. Kaynak metin ile kendi yazınızı yan yana inceleyin.",
+        "sections": [
+          {
+            "title": "Bağlam",
+            "body": "Olayın özü ve kişiler korunmuş mu?"
+          },
+          {
+            "title": "Tür",
+            "body": "Yeni yazıda seçilen türün anlatıcı ve yapı özellikleri görünür mü?"
+          },
+          {
+            "title": "Dil",
+            "body": "Özgünlük, bağdaşıklık, yazım ve noktalama dengeli mi?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s228-reflection",
+      "source_record_id": "T03-S0128",
+      "answer_id": "T3-P228-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme — Yazma sürecinizi ve ürününüzü gözden geçiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce kendi kararlarınıza dönün; öğretmen geri bildiriminden sonra anlam, karakter, anlatım ve biçim düzeltmelerini ayırın.",
+        "items": [
+          "Hangi kararınız metnin bağlamını korudu?",
+          "Hangi bölümde yeniden yazmaya ihtiyaç duydunuz?",
+          "Geri bildirimden sonra hangi değişikliği yaptınız?",
+          "Sonraki yazma göreviniz için hangi somut hedefi koydunuz?"
+        ],
+        "note": "QR dereceli puanlama anahtarı görülmeden puan aralığı veya ek rubrik ölçütü üretilmez."
+      }
+    },
+    {
+      "id": "s228-sharing",
+      "source_record_id": "T03-S0128",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Düzeltme ve paylaşım — Son metninizi uygun ortamda sununuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Paylaşmadan önce geri bildirimleri uygulayın; sınıf panosu, okul gazetesi veya güvenilir çevrim içi ortam seçeneklerini düşünün.",
+        "items": [
+          "Kaynakla tutarlılığı son kez denetleyin.",
+          "Başlık, imla ve paragraf bütünlüğünü kontrol edin.",
+          "Paylaşılacak ortamı ve hedef kitleyi belirleyin.",
+          "Sonraki yazma görevi için bir geliştirme hedefi kaydedin."
+        ]
+      }
+    },
+    {
+      "id": "s229-self",
+      "source_record_id": "T03-S0129",
+      "answer_id": "T3-P229-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — Yazınızı kitapta verilen altı ölçüte göre değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçüt için Evet / Kısmen / Hayır seçin. Hazır cevap değil, kendi ürününüzün gerçek durumunu işaretleyin.",
+        "items": [
+          "İçeriğe uygun başlık",
+          "Kaynak diyaloğun içeriğini yansıtma",
+          "Hedef kitleye ve bağlama uygun söz varlığı",
+          "Farklı anlatım biçimleri ve düşünceyi geliştirme yolları",
+          "Bağdaşıklık, yazım ve noktalama",
+          "Türkçeyi bilinçli ve özenli kullanma"
+        ]
+      }
+    },
+    {
+      "id": "s229-gaps",
+      "source_record_id": "T03-S0129",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Öz değerlendirme sonucunda geliştirilecek iki davranış belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kısmen veya Hayır seçtiğiniz alanlar için yeni çalışma hedefleri yazın; yalnız genel 'daha çok çalışacağım' ifadesiyle yetinmeyin.",
+        "sections": [
+          {
+            "title": "Birinci hedef",
+            "body": "Gözlediğiniz eksikliği ve hangi uygulamayla geliştireceğinizi belirtin."
+          },
+          {
+            "title": "İkinci hedef",
+            "body": "Metni başka bir öğrenciye okuyup geri bildirim almak gibi somut bir yöntem seçin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s229-exit",
+      "source_record_id": "T03-S0130",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Tema Sonu Değerlendirme — Üç Yaz / İki Sor / Bir Paylaş çıkış kartı.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Temayı tamamlayan öğrenciler kendi öğrenmelerinden üç bilgi, iki soru ve bir paylaşım oluşturur.",
+        "sections": [
+          {
+            "title": "Üç Yaz",
+            "body": "Bu temada öğrendiğiniz üç kavram veya bilgiyi yazın."
+          },
+          {
+            "title": "İki Sor",
+            "body": "Hâlâ açıklığa kavuşturmak istediğiniz iki soruyu belirleyin."
+          },
+          {
+            "title": "Bir Paylaş",
+            "body": "Sizi en çok etkileyen öğrenmeyi sınıf arkadaşlarınızla paylaşın."
+          }
+        ],
+        "note": "Çıkış kartına öğrenci adına hazır kişisel yanıt yazılmaz."
+      }
+    }
+  ]
+}
