@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 5, "Tema 3 beş doğal bloğu içermeli: giriş, okuma, anlama, karşılaştırma ve okuma çemberi.");
+assert(theme3Lessons.length === 6, "Tema 3 girişten Huzur s.182–185 dahil altı doğal blok içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -124,10 +124,10 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===72 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===33 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===34,
-  "Tema 3 mevcut kapsamı 72 adım / 33 source / 34 answer olmalı.");
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===90 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===38 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===39,
+  "Tema 3 mevcut kapsamı 90 adım / 38 source / 39 answer olmalı.");
 
 
 const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
@@ -166,10 +166,10 @@ assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü M
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
-assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 72 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 33 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 34,
-  "Tema 3 mevcut kapsamı 5 ders / 72 adım / 33 source / 34 answer olmalı.");
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 90 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 38 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 39,
+  "Tema 3 mevcut kapsamı 6 ders / 90 adım / 38 source / 39 answer olmalı.");
 
 
 const huzur177 = byLessonId.get("T11-T03-HUZUR-177-178");
@@ -267,6 +267,55 @@ for(const step of huzur179.steps){
   assert(step.source.source_status === "VERIFIED",
     `s.179–181 kaynak kaydı VERIFIED olmalı: ${step.source.source_record_id}`);
 }
+
+
+const huzur182 = byLessonId.get("T11-T03-HUZUR-HAYAT-KURMACA-182-185");
+assert(huzur182?.printed_page_range === "182-185" &&
+  huzur182.coverage.steps === 18 &&
+  huzur182.coverage.source_records === 5 &&
+  huzur182.coverage.answer_entries === 5,
+  "Huzur s.182–185: 18 ders adımı, beş VERIFIED source, beş answer olmalı.");
+const huzur182ById = new Map(huzur182.steps.map(step => [step.id,step]));
+assert(huzur182ById.size === 18, "Huzur s.182–185 benzersiz adımlara sahip olmalı.");
+for(const [id,sourceId,answerId] of [
+ ["s182-fish","T03-S0033","T3-P182-Q01"],
+ ["s182-author","T03-S0034","T3-P182-Q02"],
+ ["s183-contribution","T03-S0035","T3-P183-Q02"],
+ ["s183-subject-object","T03-S0036","T3-P183-Q01"],
+ ["s184-185-value-q2","T03-S0037","T3-P184-Q02"]
+]){
+ const step=huzur182ById.get(id);
+ assert(step?.source?.source_record_id === sourceId &&
+   step?.answer?.question_id === answerId &&
+   step?.source?.source_status === "VERIFIED",
+   `Huzur s.182–185 kaynak-cevap eşleşmesi: ${id}`);
+}
+assert(huzur182ById.get("s182-fish")?.source?.book_heading?.includes("Sıra Sizde") &&
+ huzur182ById.get("s182-author")?.source?.book_heading?.includes("Fark Edelim") &&
+ huzur182ById.get("s182-fish")?.answer?.question_no==="Sıra Sizde 1" &&
+ huzur182ById.get("s182-author")?.answer?.question_no==="Fark Edelim",
+ "s.182 kitaptaki başlıkların yeri korunmalı; balık kılçığı Sıra Sizde, yazar-eser Fark Edelim.");
+assert(huzur182ById.get("s182-fish")?.answer?.answer_sections?.gercek_hayattan_alinanlar?.length===4 &&
+ huzur182ById.get("s182-fish")?.answer?.answer_sections?.kurgusal_unsurlar?.length===3,
+ "Gerçek yaşam ve kurmaca diyagramında iki ayrı cevap grubu olmalı.");
+assert(huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.gozlenebilir_olay_ve_davranis?.length===2 &&
+ huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.oznel_duygu_ve_degerlendirme?.length===2 &&
+ huzur182ById.get("s183-subject-object")?.answer?.guidance?.includes("s.185"),
+ "s.183 öznel-nesnel örnekleri yanlışlıkla s.185'ten alınmamalı.");
+const value=huzur182ById.get("s184-185-value-q2");
+assert(Object.keys(value?.answer?.answer_sections??{}).length===4 &&
+ value.answer.answer_sections["3 · Nuran, serçeler ve köpek"]?.toplumsal_gucluk?.includes("verilmez") &&
+ value.content.items.length===4,
+ "s.184–185 dört renkli kaynak parçasının ayrı yanıtı olmalı; olmayan güçlük icat edilmemeli.");
+for(const id of ["s184-halk","s184-new-life","s185-animals","s185-illness"]){
+ assert(huzur182ById.get(id)?.answer===null &&
+  huzur182ById.get(id)?.source?.source_record_id==="T03-S0037",
+  `Duyarlılık alt parçası tek cevap bankası kaydında olmalı: ${id}`);
+}
+assert(theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0)===90 &&
+ theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0)===38 &&
+ theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0)===39,
+ "Tema 3 yeni toplam 6 ders / 90 adım / 38 source / 39 answer olmalı.");
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");

@@ -847,6 +847,60 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-circle-qr.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA-CEMBERI-179-181&step=s181-game-qr"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-fish.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s182-fish"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-author.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s182-author"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-objective.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s183-subject-object"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-memory.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s183-text-inner"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-sensitivity.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s184-185-value-q2"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-animals.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s185-animals"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -941,5 +995,11 @@ jobs:
             lesson-player-theme3-circle-table4.png
             lesson-player-theme3-circle-firsts.png
             lesson-player-theme3-circle-qr.png
+            lesson-player-theme3-life-fish.png
+            lesson-player-theme3-life-author.png
+            lesson-player-theme3-life-objective.png
+            lesson-player-theme3-life-memory.png
+            lesson-player-theme3-life-sensitivity.png
+            lesson-player-theme3-life-animals.png
             apps/lesson-player/dist
           if-no-files-found: error

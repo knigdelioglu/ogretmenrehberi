@@ -1,0 +1,388 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-HAYAT-KURMACA-182-185",
+  "lesson_slug": "huzur-hayat-kurmaca-182-185",
+  "title": "Huzur — Gerçek Yaşam ve Kurmaca",
+  "subtitle": "Yaşamın İzinde · Balık kılçığı, öznel anlatım ve duyarlılık",
+  "printed_page_range": "182-185",
+  "required_source_range": {
+    "from": "T03-S0033",
+    "to": "T03-S0037"
+  },
+  "steps": [
+    {
+      "id": "s182-two-texts",
+      "source_record_id": "T03-S0033",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Fark Edelim — Huzur ve Mehmet Kaplan'ın yazısından iki parçayı okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk parçada Mümtaz'ın İhsan ve Macide'yle aile bağı, ikinci parçada Mehmet Kaplan'ın gerçek kişilerden kurmaca kişilere uzanan değerlendirmesi bulunur.",
+        "sections": [
+          {
+            "title": "Roman parçası",
+            "body": "Mümtaz'ın anne-babasının ölümünden sonra İhsan ile Macide'nin onun yaşamındaki yeri."
+          },
+          {
+            "title": "Eleştiri parçası",
+            "body": "Kaplan'a göre Mümtaz, İhsan ve Nuran gerçek yaşamdan izler taşısa da Tanpınar kişilerinin özelliklerini ve ilişkilerini değiştirir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s182-fish",
+      "source_record_id": "T03-S0033",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Gerçek hayattan alınanlarla kurgusal unsurları balık kılçığının iki tarafına ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P182-Q01",
+      "content": {
+        "lead": "Edebî kişinin esin kaynağı ile roman içinde sonradan kurulmuş özellik ve ilişkilerini ayırın.",
+        "sections": [
+          {
+            "title": "Gerçek hayattan alınan",
+            "body": "Kaplan'ın verdiği yazar, Yahya Kemal, Nuran'a esin veren kişi ve İstanbul/kültür izlerini belirleyin."
+          },
+          {
+            "title": "Kurgusal dönüşüm",
+            "body": "Kişilerin akrabalığının, aile durumunun veya kişilik özelliklerinin romanda nasıl değiştirildiğini belirleyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s182-real",
+      "source_record_id": "T03-S0033",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Balık kılçığı — hangi unsurların gerçek hayatta bir karşılığı var?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kaynakta söyleneni esas alın; gerçek kişinin tüm hayatını romanda yaşanmış gibi aktarmayın.",
+        "sections": [
+          {
+            "title": "Mümtaz",
+            "body": "Kaplan, Mümtaz'ın Tanpınar'dan izler taşıdığını belirtir."
+          },
+          {
+            "title": "İhsan",
+            "body": "Kaplan, İhsan'ın Yahya Kemal'den özellikler taşıdığını açıklar."
+          },
+          {
+            "title": "Nuran ve çevre",
+            "body": "Nuran'ın hayattan esinlenen örneği ile İstanbul/kültür çevresi gerçek kaynaklardır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s182-fiction",
+      "source_record_id": "T03-S0033",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Balık kılçığı — hangi ilişkiler romanda yeniden kurulmuş?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Aynı gerçek kişi kurmaca dünyada başka hayat koşullarına taşınabilir.",
+        "sections": [
+          {
+            "title": "Yahya Kemal → İhsan",
+            "body": "Kaplan'a göre gerçek kişi bekârken romanda benzeri evli ve çocukludur."
+          },
+          {
+            "title": "Akrabalık",
+            "body": "Romanda İhsan ile Mümtaz arasında, gerçek hayattaki iki kişi arasında bulunmayan akrabalık kurgulanır."
+          },
+          {
+            "title": "Yeniden kurma",
+            "body": "Yazar kişilere yeni nitelikler ve yaşam koşulları verebilir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s182-author",
+      "source_record_id": "T03-S0034",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Fark Edelim — Bu iki parçadan hareketle yazar ile eser arasındaki ilişki hakkında ne çıkarırsınız?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P182-Q02",
+      "content": {
+        "lead": "Yaşamdan esinlenme ile gerçek kişi ve olayları olduğu gibi aktarmanın aynı şey olmadığını düşünün."
+      }
+    },
+    {
+      "id": "s183-contribution",
+      "source_record_id": "T03-S0035",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Gerçek yaşamla kurgusal unsurların birlikte kullanılması romana ne kazandırır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P183-Q02",
+      "content": {
+        "lead": "Bir önceki sayfadaki balık kılçığından bir gerçek kaynak ve onun kurmaca dönüşümünü seçerek yanıtlayın."
+      }
+    },
+    {
+      "id": "s183-contribution-example",
+      "source_record_id": "T03-S0035",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Örnek üzerinden düşünelim: İhsan neden Yahya Kemal'in birebir biyografisi değildir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu örnek, önceki soruya dönmek için metin dayanağı sağlar.",
+        "sections": [
+          {
+            "title": "Gerçek kaynak",
+            "body": "Kaplan, İhsan'ın düşünce dünyasında Yahya Kemal'den izler bulunduğunu söyler."
+          },
+          {
+            "title": "Kurmaca değişim",
+            "body": "Tanpınar, İhsan'a başka bir aile yapısı ve Mümtaz'la akrabalık verir."
+          },
+          {
+            "title": "Edebî katkı",
+            "body": "Bu değişimler, kişinin romandaki ilişkiler ve çatışmalar içinde görev almasına olanak tanır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s183-text-memory",
+      "source_record_id": "T03-S0036",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Sıra Sizde — Birinci Huzur parçasını kitaptan okuyunuz (s.183).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın Nuran'a anlattığı garip hikâyeleri ve bunları şimdi hatırlarken yaşadığı duyguyu ayırın.",
+        "sections": [
+          {
+            "title": "Dış olay ve davranış",
+            "body": "Nuran'ın gülümsemesi, şakayı kesmesi veya oyuna katılması."
+          },
+          {
+            "title": "Değerlendirme ve duygu",
+            "body": "Hatırlamanın Mümtaz için artık hüzün uyandırması; Nuran'a ilişkin iç duygu."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s183-text-inner",
+      "source_record_id": "T03-S0036",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Sıra Sizde — İkinci Huzur parçasını kitaptan okuyunuz (s.183).",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın kendisini sorguladığı iç konuşma ile uykusuzluk ve dükkânda oturma gibi anlatılan durumları ayırın.",
+        "sections": [
+          {
+            "title": "İç sorgulama",
+            "body": "Başkalarıyla alay ederken kendisinin de kaçıp kaçmadığını düşünmesi."
+          },
+          {
+            "title": "Dış çerçeve",
+            "body": "Dükkânda oturması, uykularının bozulması ve düşüncelerini takip etmekte zorlanması."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s183-subject-object",
+      "source_record_id": "T03-S0036",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — İki parçadaki öznel ve nesnel anlatım örneklerini ve katkılarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P183-Q01",
+      "content": {
+        "lead": "Dıştan gözlenebilen durum ile Mümtaz'ın duygu, benzetme ve yorumlarını ayrı düşünün.",
+        "items": [
+          "Gözlenebilir olay veya davranış",
+          "Duygu ve değerlendirme içeren anlatım",
+          "Bu farkın Mümtaz'ı tanımamıza katkısı"
+        ]
+      }
+    },
+    {
+      "id": "s183-subjective",
+      "source_record_id": "T03-S0036",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Mümtaz'ın duygusal yorumları hangi söz ve düşüncelerle belirginleşiyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İç konuşma ve benzetmelerden hareketle açıklayın.",
+        "sections": [
+          {
+            "title": "Nuran'ı anma",
+            "body": "Geçmiş eğlenceli anıları şimdi hüzün duygusuyla hatırlar."
+          },
+          {
+            "title": "Kendini sorgulama",
+            "body": "Dükkânda bulunmanın bile sıkıntılardan bir kaçış olup olmadığını düşünür."
+          },
+          {
+            "title": "Anlatımın katkısı",
+            "body": "Okur, Mümtaz'ın özlemini, suçluluğunu ve sıkışmışlığını algılar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s183-objective",
+      "source_record_id": "T03-S0036",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Dış olay betimlemesi Mümtaz'ın durumunu nasıl somutlaştırıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "‘Nesnel’ sözü burada anlatıda gözlenebilir durumu ifade eder; romanın gerçek hayatta yaşandığını kanıtlamaz.",
+        "sections": [
+          {
+            "title": "İlk parça",
+            "body": "Nuran'ın şakaya bazen katılması ya da şakayı kesmesi anlatılır."
+          },
+          {
+            "title": "İkinci parça",
+            "body": "Mümtaz dükkândadır; son günlerde uykuları bozulmuştur."
+          },
+          {
+            "title": "Anlatımın katkısı",
+            "body": "Kişinin duyguları, ilişki ve yaşam koşulları içinde anlaşılır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s184-185-value-q2",
+      "source_record_id": "T03-S0037",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Dört parçada duyarlılığın insani çelişkilere, ahlaki çatışmalara ve toplumsal güçlüklere yansımasını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P184-Q02",
+      "content": {
+        "lead": "s.184'te iki, s.185'te iki renkli parça ve her parçanın altında ayrı yanıt alanı var. Her birini ayrı kanıtla değerlendirin.",
+        "items": [
+          "Halkı sevme söylemi ve insanı kavramlaştırma",
+          "Yeni toplum kurma ve tarihî kökler",
+          "Nuran'ın serçelere ve köpeğe duyarlılığı",
+          "Mümtaz'ın hasta İhsan'a karşı sorumluluğu"
+        ]
+      }
+    },
+    {
+      "id": "s184-halk",
+      "source_record_id": "T03-S0037",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Birinci parça — Halkı sevmekle halkı bir kavram olarak görmek arasında ne fark var?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Konuşmadaki 'halk mı, hayat mı, mefhumlar mı' karşıtlığından hareket edin.",
+        "sections": [
+          {
+            "title": "İnsani gerilim",
+            "body": "Halka değer vermek ile halkı soyut bir fikir olarak sevmek aynı olmayabilir."
+          },
+          {
+            "title": "Duyarlılık",
+            "body": "İnsanı yalnız düşünce konusu değil, yaşayan ve konuşan bir özne olarak görmek."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s184-new-life",
+      "source_record_id": "T03-S0037",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "İkinci parça — Yeni hayatın kurulmasıyla tarihî köklerden beslenme nasıl birlikte düşünülüyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Aile, ev, şehir ve köyü yeniden kurmaya ilişkin düşüncelerle tarihî süreklilik vurgusunu karşılaştırın.",
+        "sections": [
+          {
+            "title": "Toplumsal zorluk",
+            "body": "Üretim ve yaşam şartlarını düzenlemek; yeni bir insan ve toplum anlayışı oluşturmak."
+          },
+          {
+            "title": "İnsani gerilim",
+            "body": "Değişim için çalışırken geçmişten ve insandan kopmamak."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s185-animals",
+      "source_record_id": "T03-S0037",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Üçüncü parça — Nuran'ın serçelerle ve köpekle ilişkisi hangi duyarlılığı gösteriyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kuşları beslemek istemesi, köpeğin soğuktan içeri alınması ve köpeğin kuşlara bakışı arasındaki farkı okuyun.",
+        "sections": [
+          {
+            "title": "Davranış",
+            "body": "Nuran serçelerle ilgilenir; köpek barınır, Mümtaz pencere önüne ekmek ufakları koyar."
+          },
+          {
+            "title": "Çıkarım",
+            "body": "Canlıların farklı ihtiyaçlarına karşı şefkat; parça birinin kasıtlı olarak zarar verdiğini söylemez."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s185-illness",
+      "source_record_id": "T03-S0037",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Dördüncü parça — İhsan'ın hastalığı Mümtaz'a hangi sorumlulukları yüklüyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Doktor, eczane, telefon, hasta başında kalma ve yeğenlerle ilgilenme ayrıntılarını temel alın.",
+        "sections": [
+          {
+            "title": "Davranış",
+            "body": "Mümtaz bakım işlerini ve evdekilerin ihtiyaçlarını üstlenir."
+          },
+          {
+            "title": "Çıkarım",
+            "body": "Aile sorumluluğu ve şefkat, kişisel zamanını ve günlük yaşamını sınırlayabilir."
+          },
+          {
+            "title": "Güçlük",
+            "body": "Hastalıkla birlikte ev halkında korku ve kaygı artar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s185-check",
+      "source_record_id": "T03-S0037",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dört parçayı birlikte gözden geçirin: Hangisi hangi somut örneğe dayanıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dört yanıt alanını tek bir genel cümleyle doldurmayın.",
+        "items": [
+          "Her parça için gözlenen söz veya davranışı seçin.",
+          "Çıkarımı o parçaya bağlayın.",
+          "Metnin göstermediği toplumsal güçlüğü varmış gibi yazmayın."
+        ]
+      }
+    }
+  ]
+}
