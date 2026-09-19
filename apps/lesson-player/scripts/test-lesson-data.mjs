@@ -25,7 +25,50 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 11, "Tema 3 biyografi s.199–201 ile on bir doğal blok içermeli.");
+assert(theme3Lessons.length === 12, "Tema 3 biyografi s.202–205 ile on iki doğal blok içermeli.");
+
+const akif202 = lessons.find(lesson => lesson.lesson_id === "T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205");
+assert(akif202 && akif202.printed_page_range === "202-205" &&
+  akif202.coverage.steps === 17 && akif202.coverage.source_records === 12 &&
+  akif202.coverage.answer_entries === 12,
+  "Âkif s.202–205 çözümleme bloğu 17 ekran, 12 kaynak ve 12 cevap içermeli.");
+const akif202ById = new Map(akif202.steps.map(step => [step.id, step]));
+assert(akif202ById.size === 17, "Âkif s.202–205 ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s202-q1", "T03-S0066", "T3-P202-Q01"],
+  ["s202-q2", "T03-S0067", "T3-P202-Q02"],
+  ["s203-q1", "T03-S0068", "T3-P203-Q01"],
+  ["s203-q2", "T03-S0069", "T3-P203-Q02"],
+  ["s204-q1", "T03-S0070", "T3-P204-Q01"],
+  ["s204-q2", "T03-S0071", "T3-P204-Q02"],
+  ["s205-q1", "T03-S0072", "T3-P205-Q01"],
+  ["s205-q2", "T03-S0073", "T3-P205-Q02"],
+  ["s205-q3", "T03-S0074", "T3-P205-Q03"],
+  ["s205-q4", "T03-S0075", "T3-P205-Q04"],
+  ["s205-asim-q1", "T03-S0076", "T3-P205-PERF01"],
+  ["s205-asim-q2", "T03-S0077", "T3-P205-PERF02"]
+]) {
+  assert(akif202ById.get(id)?.source?.source_record_id === sourceId &&
+    akif202ById.get(id)?.answer?.question_id === answerId,
+    `Âkif s.202–205 kanonik kaynak/cevap bağlantısı: ${id}`);
+}
+assert(akif202ById.get("s204-q1")?.layout === "comparison" &&
+  akif202ById.get("s204-q1")?.content?.items?.length === 7 &&
+  Object.keys(akif202ById.get("s204-q1")?.answer?.answer_sections ?? {}).length === 7,
+  "Huzur–Âkif karşılaştırmasında kitabın yedi ölçütü korunmalı.");
+assert(akif202ById.get("s202-q1-criterion")?.answer === null &&
+  akif202ById.get("s203-types")?.answer === null &&
+  akif202ById.get("s204-q1-first")?.answer === null &&
+  akif202ById.get("s204-q1-second")?.answer === null &&
+  akif202ById.get("s205-q1-chronology")?.answer === null,
+  "Ek süreç ve bilgi ekranları yeni cevap üretmemeli.");
+assert(akif202ById.get("s205-asim-q1")?.answer?.entry_type === "performance_support" &&
+  akif202ById.get("s205-asim-q2")?.answer?.entry_type === "performance_support",
+  "Âsım'ın nesli soruları örnek performans desteği olarak kalmalı.");
+for (const step of akif202.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Âkif s.202–205 kaynak doğrulaması: ${step.source.source_record_id}`);
+}
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -124,9 +167,9 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===181 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===66 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===67,
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===198 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===78 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===79,
   "Tema 3 mevcut kapsamı 181 adım / 66 source / 67 answer olmalı.");
 
 
@@ -166,9 +209,9 @@ assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü M
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
-assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 181 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 66 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 67,
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 198 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 78 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 79,
   "Tema 3 mevcut kapsamı 11 ders / 181 adım / 66 source / 67 answer olmalı.");
 
 
