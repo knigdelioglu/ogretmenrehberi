@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "11. sınıf / öğretmen görünümü",
+  "sources": {
+    "general": "https://www.meb.gov.tr/turkiye-yuzyili-maarif-modeline-iliskin-genelge-yayimlandi/haber/34511/tr",
+    "curriculum": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi",
+    "note": "Tema görevleri resmî TYMM tema sayfaları ve 2026 ders kitabı basılı sayfaları ile eşleştirilir; yıllık zamanlama ve portfolyo dosya düzeni pedagojik uygulama önerisidir."
+  },
+  "themes": [
+    {
+      "id": "TEMA_01", "title": "Bir Diyeceğim Var!", "term": 1,
+      "source": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/267",
+      "tasks": [
+        {"id":"t1-speaking","skill":"Konuşma","title":"İletişim engellerini canlandırma","from":53,"to":58,"portfolio":"Konuşma/rol planı, varsa grup metni, öğrencinin kendi katkısı ve değerlendirme geri bildirimi.","assessment":"Canlandırma performansı: ilgili dereceli puanlama anahtarı. Grup çalışmasında bireysel katkıyı ayrıca görünür kıl.","timing":"Konuşma atölyesi tamamlanırken kayda al."},
+        {"id":"t1-writing","skill":"Yazma","title":"E-posta yazma","from":74,"to":78,"portfolio":"E-postanın son hâli; gelişimi gösteriyorsa taslak ve geri bildirim.","assessment":"Yazılı ürün: ilgili dereceli puanlama anahtarı; öz/akran değerlendirmesi varsa ekle.","timing":"Yazma atölyesi sonunda son ürünü saklat."}
+      ],
+      "reflection":{"title":"Tema sonu 3-2-1 çıkış kartı","page":78,"portfolio":"Öğrenilen 3 şey, merak edilen 2 şey ve zorlanılan 1 şey."}
+    },
+    {
+      "id": "TEMA_02", "title": "Kültür Yolculuğu", "term": 1,
+      "source": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/276",
+      "tasks": [
+        {"id":"t2-speaking","skill":"Konuşma","title":"Türk dünyasının ortak kültürünü tanıtma","from":130,"to":135,"portfolio":"Konuşma planı ve kullanılan görseller, öğrencinin bireysel katkısı ve değerlendirme geri bildirimi.","assessment":"Konuşma performansı: ilgili dereceli puanlama anahtarı; öz/akran değerlendirmesini izle.","timing":"Konuşma atölyesi sonunda kayda al."},
+        {"id":"t2-writing","skill":"Yazma","title":"Çevrim içi müze gezisi izlenim yazısı","from":150,"to":153,"portfolio":"Müze seçimi/gerekçesi ve izlenim yazısının son hâli; varsa düzeltilmiş taslak.","assessment":"Yazılı ürün: ilgili dereceli puanlama anahtarı ve geri bildirim.","timing":"Yazma atölyesi sonunda ürünü saklat."}
+      ],
+      "reflection":{"title":"Tema sonu öğrenme günlüğü","page":154,"portfolio":"Öğrencinin ne öğrendiği ve hangi yönünü geliştirmek istediği."}
+    },
+    {
+      "id": "TEMA_03", "title": "Yaşamın İzinde", "term": 2,
+      "source": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/322",
+      "tasks": [
+        {"id":"t3-speaking","skill":"Konuşma","title":"Roman kişisiyle hayalî mülakat","from":210,"to":214,"portfolio":"Roman kişisini seçme gerekçesi, mülakat planı/metni, bireysel performans kanıtı ve geri bildirim.","assessment":"Konuşma performansı: ilgili dereceli puanlama anahtarı. Romanın bağlamına dayanan soruları/cevapları kontrol et.","timing":"Roman incelemesinden sonra konuşma atölyesinde kayda al."},
+        {"id":"t3-writing","skill":"Yazma","title":"Radyo tiyatrosu diyaloğunu başka türe dönüştürme","from":225,"to":229,"portfolio":"Seçilen diyalog ve bağlama uygun dönüştürülmüş son metin; varsa önceki taslak.","assessment":"Yazılı ürün: ilgili dereceli puanlama anahtarı ve süreç geri bildirimi.","timing":"Yazma atölyesi sonunda ürünü saklat."}
+      ],
+      "reflection":{"title":"Tema sonu çıkış kartı","page":229,"portfolio":"Öğrencinin roman, sanatçı ve yaşam ilişkisiyle ilgili öz değerlendirmesi."}
+    },
+    {
+      "id": "TEMA_04", "title": "Hayatın Aynası", "term": 2,
+      "source": "https://tymm.meb.gov.tr/turk-dili-ve-edebiyati-dersi/unite/332",
+      "tasks": [
+        {"id":"t4-speaking","skill":"Konuşma","title":"Tiyatro metnini canlandırma","from":280,"to":283,"portfolio":"Rol ve sahne planı; bireysel katkı/rol yansıtması, varsa uygun kayıt bağlantısı ve geri bildirim.","assessment":"Canlandırma performansı: ilgili dereceli puanlama anahtarı. Grup ürününde bireysel katkıyı ayır.","timing":"Konuşma atölyesi sonunda kayda al."},
+        {"id":"t4-writing","skill":"Yazma","title":"Belgesel için afiş hazırlama","from":298,"to":302,"portfolio":"Afişin son hâli, seçilen görsellerin kaynakları, varsa taslak ve geri bildirim.","assessment":"Afiş ürünü: ilgili dereceli puanlama anahtarı; kaynak ve telif farkındalığına dikkat et.","timing":"Yazma atölyesi sonunda saklat."}
+      ],
+      "reflection":{"title":"Tema sonu öğrenme günlüğü","page":302,"portfolio":"Tema öncesi–sonrası öğrenme karşılaştırması ve geliştirme hedefi."}
+    }
+  ],
+  "annual": {
+    "note": "Yıllık eser/film çalışması, tema içi Edebiyat Atölyesi performansından ayrı takip edilir. Tarihleri okul takvimi ve zümre kararı kesinleştirir.",
+    "form": "Ek-1 Eleştirel Okuma, Dinleme/İzleme Formu",
+    "items": [
+      {"id":"book-1","term":1,"title":"1. eser","window":"1. dönem / ilk tema sonu","portfolio":"Ek-1 + değerlendirme sunusu"},
+      {"id":"book-2","term":1,"title":"2. eser","window":"1. dönem / ikinci tema sonu","portfolio":"Ek-1 + değerlendirme sunusu"},
+      {"id":"book-3","term":2,"title":"3. eser","window":"2. dönem / roman incelemesi çevresi","portfolio":"Ek-1 + değerlendirme sunusu"},
+      {"id":"film","term":2,"title":"Eleştirel film analizi","window":"2. dönemde yapılması önerilir; program yıl içinde bir film ister, dönemi sabitlemez","portfolio":"Ek-1 + eleştirel sunu"},
+      {"id":"book-4","term":2,"title":"4. eser","window":"2. dönem / son tema bitmeden","portfolio":"Ek-1 + değerlendirme sunusu"}
+    ],
+    "assessment":"Dönemdeki iki performans puanından eser/film değerlendirmelerine ayrılan puanı ve atölye ürünleri için kullanılan değerlendirmeyi ayrı izle. Yüzde, aritmetik ortalama veya puan dağılımını zümre kararı olmadan otomatik belirleme.",
+    "portfolio":"Doldurulmuş her Ek-1 formu ve ona karşılık gelen sunu, tema atölyesi ürünlerinden ayrı dosyalanır."
+  }
+}
