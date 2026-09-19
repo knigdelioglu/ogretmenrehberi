@@ -101,6 +101,28 @@ try {
     "Karagöz initial step"
   );
 
+  // The guidance is teacher-only and must never leak into the student display.
+  await teacher.evaluate(
+    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğretmen rehberi').click()"
+  );
+  await until(
+    () => teacher.evaluate(
+      "document.querySelector('.teacher-guide')?.textContent?.includes('2 · Dört eser + bir film sunumları')"
+    ),
+    "Teacher annual reading and portfolio guidance"
+  );
+  const annualAndWorkshops = await teacher.evaluate(`(() => {
+    const guide = document.querySelector('.teacher-guide')?.textContent ?? '';
+    return guide.includes('İletişim engellerini canlandırma') &&
+      guide.includes('E-posta yazma') &&
+      guide.includes('Ek-1') &&
+      guide.includes('23–27 Kasım 2026') &&
+      guide.includes('11–15 Ocak 2027') &&
+      guide.includes('Önerilen sunum haftası') &&
+      guide.includes('performans puan');
+  })()`);
+  if (!annualAndWorkshops) throw new Error("Teacher workflow evidence incomplete.");
+
   await teacher.evaluate(
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Düzenle').click()"
   );
@@ -158,6 +180,13 @@ try {
     () => student.evaluate("document.body.innerText.includes('Mukaddime')"),
     "Student projection opens"
   );
+  const teacherGuideLeaked = await student.evaluate(`(() =>
+    Boolean(document.querySelector('.teacher-guide')) ||
+    [...document.querySelectorAll('button')].some(
+      b => b.textContent.trim() === 'Öğretmen rehberi'
+    )
+  )()`);
+  if (teacherGuideLeaked) throw new Error("Teacher guidance leaked into student display.");
   await teacher.evaluate("window.dispatchEvent(new KeyboardEvent('keydown', { key: ' ', bubbles: true }))");
   const secret = "Bu şemayı öğrenciler kitap örneklerini";
   await until(
@@ -181,8 +210,26 @@ try {
     () => student.evaluate("new URLSearchParams(location.search).get('lesson') === 'T11-T01-MEKTUP'"),
     "Student follows new lesson"
   );
-  await teacher.evaluate(
-    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğrenci ekranı').click()"
+  await until(
+    () => teacher.evaluate(`(() => {
+      const params = new URLSearchParams(location.search);
+      return params.get('lesson') === 'T11-T01-MEKTUP' &&
+        Array.from(document.querySelectorAll('button')).some(
+          b => b.textContent.trim() === 'Öğrenci ekranı'
+        );
+    })()`),
+    "Teacher controls ready after cross-lesson navigation"
+  );
+  await until(
+    () => teacher.evaluate(`(() => {
+      const button = Array.from(document.querySelectorAll('button')).find(
+        b => b.textContent.trim() === 'Öğrenci ekranı'
+      );
+      if (!button) return false;
+      button.click();
+      return true;
+    })()`),
+    "Reusable student window control"
   );
   const studentTargets = await until(async () => {
     const response = await fetch(`http://127.0.0.1:${port}/json/list`);
@@ -311,7 +358,7 @@ try {
     }
   }
 
-  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views.");
+  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views, teacher workflow visibility and student isolation.");
 } finally {
   for (const client of clients) client.close();
   browser.kill();
