@@ -1,0 +1,205 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
+  "lesson_slug": "merdiven-karsilastirma-271-273",
+  "title": "Merdiven — Tür Özellikleri ve Karşılaştırmalar",
+  "subtitle": "Hayatın Aynası · Küçürek hikâye / Ben, Mimar Sinan / Şair Tavafî",
+  "printed_page_range": "271-273",
+  "required_source_range": {
+    "from": "T04-S0056",
+    "to": "T04-S0060"
+  },
+  "steps": [
+    {
+      "id": "s271-examples",
+      "source_record_id": "T04-S0056",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Fark Edelim — Rotterdam’da ve Yorumsuz küçürek hikâyelerini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki kısa metni ders kitabının s.271 sayfasından okuyun. Olayı uzun uzun anlatmayan fakat okuru düşünmeye zorlayan cümleleri işaretleyin.",
+        "items": [
+          "Hangi duygu doğrudan söyleniyor?",
+          "Hangi anlam okurun tamamlamasına bırakılıyor?",
+          "Kısa cümle, soru veya beklenmedik geçiş nerede yoğunluk oluşturuyor?"
+        ],
+        "note": "Bu iki örneğin tam metni Lesson Player'a kopyalanmaz; karşılaştırma için kitap sayfası kullanılır."
+      }
+    },
+    {
+      "id": "s271-q12",
+      "source_record_id": "T04-S0056",
+      "answer_id": "T4-P271-COMP01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Fark Edelim 1–2 — Az sözle çok duygu ve okur katılımı nasıl sağlanıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Rotterdam’da, Yorumsuz ve Merdiven için aynı iki soruyu sorun: Metin neyi söylemiyor; okur hangi boşluğu kendisi dolduruyor?",
+        "sections": [
+          {
+            "title": "Az sözle yoğunluk",
+            "body": "Uzun betimleme yerine seçilmiş ayrıntı, kısa sahne, tekrar veya soru cümlesi."
+          },
+          {
+            "title": "Okurun katılımı",
+            "body": "Açıklanmayan bağların, simgelerin ve duyguların okur tarafından tamamlanması."
+          },
+          {
+            "title": "Merdiven bağlantısı",
+            "body": "İnmek–çıkmak, yol vermek ve son kararın yaşlanma/meslek hayatı çağrışımını nasıl büyüttüğü."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s271-compare",
+      "source_record_id": "T04-S0056",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Küçürek hikâye için ortak bir ölçüt cümlesi yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üç metindeki ortak özelliği yalnız 'kısadır' diye açıklamayın; az sözcükle çok anlam ve okurun aktif yorumunu birlikte ifade edin.",
+        "items": [
+          "Kısalık",
+          "Yoğun çağrışım",
+          "Eksiltili / açık bırakılan anlam",
+          "Okurun metne katılımı"
+        ]
+      }
+    },
+    {
+      "id": "s272-table",
+      "source_record_id": "T04-S0057",
+      "answer_id": "T4-P272-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 1 — Ben, Mimar Sinan ile Merdiven'i yedi ölçütte karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.272 tablosunu satır satır doldurun; her ölçütte iki metni de yazmadan sonraki satıra geçmeyin.",
+        "items": [
+          "İçerik",
+          "Tür",
+          "Şekil",
+          "Dönem",
+          "Yapı unsurları",
+          "Dil ve üslup",
+          "İleti"
+        ]
+      }
+    },
+    {
+      "id": "s272-period-caution",
+      "source_record_id": "T04-S0057",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Dönem karşılaştırması — Metnin anlattığı zaman ile yazıldığı zamanı ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ben, Mimar Sinan XVI. yüzyıl Osmanlı tarihini sahneye taşır; Merdiven modern büro ve çalışma hayatını yansıtır. Buradaki karşılaştırma metinlerin kurduğu dünya üzerindendir.",
+        "note": "Yazarların yaşadığı yılları veya eserlerin yayın tarihini bu tabloya otomatik olarak 'dönem' cevabı diye taşımayın."
+      }
+    },
+    {
+      "id": "s272-q2",
+      "source_record_id": "T04-S0058",
+      "answer_id": "T4-P272-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 2 — İnsan ilişkilerindeki değerleri tiyatro mu hikâye mi daha etkili yansıtıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir türü seçebilirsiniz fakat diğer türün güçlü yönünü de görünür kılın. Gerekçenizi iki metinden somut örnekle destekleyin.",
+        "sections": [
+          {
+            "title": "Tiyatro",
+            "body": "Diyalog ve davranışla kişiler arası ilişkiyi doğrudan gösterme."
+          },
+          {
+            "title": "Küçürek hikâye",
+            "body": "Az söz, simge ve boşluklarla duygu ve değeri yoğunlaştırma."
+          }
+        ],
+        "note": "Tek bir doğru tür yoktur; değerlendirme metin kanıtına göre yapılır."
+      }
+    },
+    {
+      "id": "s273-tavafi",
+      "source_record_id": "T04-S0059",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Şair Tavafî — Hikâye parçasını okuyup anlatım özelliklerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.273'teki parçayı okuyun. Yolculuk, han ortamı, anlatıcının gözlemleri ve konuşma dilinin mizahi tonuna dikkat edin.",
+        "items": [
+          "Anlatıcı kaçıncı kişi?",
+          "Mekân ve kişiler ne kadar ayrıntılı veriliyor?",
+          "Mizah veya ironi hangi gözlem ve konuşmalarda ortaya çıkıyor?"
+        ]
+      }
+    },
+    {
+      "id": "s273-q1",
+      "source_record_id": "T04-S0059",
+      "answer_id": "T4-P273-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Şair Tavafî ile Merdiven'i dört ölçütte karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Karşılaştırmayı yalnız uzunluk farkına indirgemeyin; iki metnin çağrışımı nasıl kurduğunu ve anlatıcının işlevini de açıklayın.",
+        "items": [
+          "Şiirsel dil kullanımı",
+          "İçerik",
+          "Sözcüklerin çağrışım gücü",
+          "Anlatıcı"
+        ]
+      }
+    },
+    {
+      "id": "s273-density",
+      "source_record_id": "T04-S0059",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Aynı birinci kişi anlatıcı iki hikâyede neden farklı bir etki oluşturuyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Şair Tavafî'de gözlem ve konuşma ayrıntıları; Merdiven'de ise eksiltili, simgesel ve tekrar eden anlatım öne çıkar.",
+        "sections": [
+          {
+            "title": "Şair Tavafî",
+            "body": "Anlatıcı çevreyi, insanları ve konuşmaları ayrıntılandırır; mizah ve dönem atmosferi oluşur."
+          },
+          {
+            "title": "Merdiven",
+            "body": "Anlatıcı birkaç karşılaşma ve tekrarla kendi yaşlanma farkındalığına ulaşır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s273-q2",
+      "source_record_id": "T04-S0060",
+      "answer_id": "T4-P273-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Hangi hikâye sizi daha çok etkiledi? Gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Beğeninizi 'daha güzel' gibi genel bir yargıyla bırakmayın. Dil, içerik, anlatıcı, çağrışım veya ritim ölçütlerinden en az birini kullanın.",
+        "items": [
+          "Seçtiğiniz metin",
+          "Kullandığınız ölçüt",
+          "Metinden somut dayanak",
+          "Kendi okur deneyiminizde bıraktığı etki"
+        ],
+        "note": "İki metinden herhangi biri seçilebilir; kanıtlı gerekçe esastır."
+      }
+    }
+  ]
+}
