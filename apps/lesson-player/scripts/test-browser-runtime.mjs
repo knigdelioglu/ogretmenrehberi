@@ -227,8 +227,26 @@ try {
     () => student.evaluate("new URLSearchParams(location.search).get('lesson') === 'T11-T01-MEKTUP'"),
     "Student follows new lesson"
   );
-  await teacher.evaluate(
-    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğrenci ekranı').click()"
+  await until(
+    () => teacher.evaluate(`(() => {
+      const params = new URLSearchParams(location.search);
+      return params.get('lesson') === 'T11-T01-MEKTUP' &&
+        Array.from(document.querySelectorAll('button')).some(
+          b => b.textContent.trim() === 'Öğrenci ekranı'
+        );
+    })()`),
+    "Teacher controls ready after cross-lesson navigation"
+  );
+  await until(
+    () => teacher.evaluate(`(() => {
+      const button = Array.from(document.querySelectorAll('button')).find(
+        b => b.textContent.trim() === 'Öğrenci ekranı'
+      );
+      if (!button) return false;
+      button.click();
+      return true;
+    })()`),
+    "Reusable student window control"
   );
   const studentTargets = await until(async () => {
     const response = await fetch(`http://127.0.0.1:${port}/json/list`);
