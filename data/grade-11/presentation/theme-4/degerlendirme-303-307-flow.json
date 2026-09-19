@@ -1,0 +1,240 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-DEGERLENDIRME-303-307",
+  "lesson_slug": "degerlendirme-303-307",
+  "title": "4. Tema — Ölçme ve Değerlendirme",
+  "subtitle": "Hayatın Aynası · Tiyatro / küçürek hikâye / afiş / belgesel / aidiyet",
+  "printed_page_range": "303-307",
+  "required_source_range": {
+    "from": "T04-S0130",
+    "to": "T04-S0143"
+  },
+  "steps": [
+    {
+      "id": "s303-reading",
+      "source_record_id": "T04-S0130",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "4. Tema Ölçme ve Değerlendirme — Modern Türk tiyatrosunda Doğu–Batı sentezi metinlerini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "I. metindeki genel açıklama ile tiyatro parçasındaki biçim ve kültür unsurlarını ayrı ayrı belirleyin.",
+        "items": [
+          "Batılı/modern tiyatro biçimi ve sahne düzeni",
+          "Geleneksel veya yerli kültürel unsurlar",
+          "İçerikte vatan, şehitlik, dinî/gündelik söyleyişler"
+        ]
+      }
+    },
+    {
+      "id": "s303-q1",
+      "source_record_id": "T04-S0130",
+      "answer_id": "T4-P303-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Soru 1 — Batılı tiyatro biçimi ile Doğulu/Türk kültürel özellikler aynı parçada nasıl birleşiyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "En az bir biçimsel tiyatro özelliği ile bir yerli/kültürel içerik unsurunu ilişkilendirerek açıklayın."
+      }
+    },
+    {
+      "id": "s304-q2",
+      "source_record_id": "T04-S0131",
+      "answer_id": "T4-P304-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 2 — II. metin, I. metindeki düşünceyle hangi anlam ilişkisini kuruyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Genel açıklamanın somut örneklerle desteklenip desteklenmediğine bakın; seçeneği yalnız anahtar kelime benzerliğiyle işaretlemeyin."
+      }
+    },
+    {
+      "id": "s304-q3",
+      "source_record_id": "T04-S0132",
+      "answer_id": "T4-P304-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 3 — Küçürek hikâyeye ilişkin parçadan çıkarılamayan yargıyı belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metinde açıkça verilen modern yaşam, yalnızlaşma, dikkat aralığı ve kısalıp özleşme bilgileriyle seçenekleri karşılaştırın."
+      }
+    },
+    {
+      "id": "s304-source",
+      "source_record_id": "T04-S0133",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Sorular 4–5 — Çadır metnini duygu, değer ve yaşam tasarımı açısından okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki çocuk, erdem, vicdan, doğa, kardeşlik, okul, oyun ve sevinç ayrıntılarını işaretleyin."
+      }
+    },
+    {
+      "id": "s304-q4",
+      "source_record_id": "T04-S0133",
+      "answer_id": "T4-P304-Q04",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soru 4 — Çadırın içine hangi duyguyu katardınız? Metin ayrıntılarıyla gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Umut, sevgi, güven, merhamet veya başka bir duygu seçebilirsiniz; seçiminizi metindeki somut ayrıntılarla ilişkilendirin."
+      }
+    },
+    {
+      "id": "s305-q5",
+      "source_record_id": "T04-S0134",
+      "answer_id": "T4-P305-Q05",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soru 5 — Metnin iletisini yansıtacak afiş görsellerini seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her görsel için 'ne görüyorum → metindeki hangi düşünceyle bağlantılı → afiş mesajını nasıl güçlendiriyor?' zincirini kurun.",
+        "note": "Tek zorunlu görsel seçimi yoktur; karşıtlık amacıyla seçilen görsel de açıkça gerekçelendirilmelidir."
+      }
+    },
+    {
+      "id": "s305-theatre",
+      "source_record_id": "T04-S0135",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Sorular 6–8 — Paydos ile Bir Çift Yün Çorap Böyle Aşk Duydunuz mu? sahne kesitlerini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dekor, kişilerin hareketleri ve sözsüz iletişim ayrıntılarını işaretleyin; kesitlerde konuşma cümlesi bulunup bulunmadığını ayrıca kontrol edin."
+      }
+    },
+    {
+      "id": "s305-q6",
+      "source_record_id": "T04-S0135",
+      "answer_id": "T4-P305-Q06",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soru 6 — Bu oyun kişilerine uygun sahne kostümleri nasıl olmalıdır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dönem, mekân, yaş ve sosyal konum bilgisi gerçekten metinde varsa kullanın; kaynakta olmayan ayrıntıyı kesin bilgi gibi eklemeyin."
+      }
+    },
+    {
+      "id": "s306-q7",
+      "source_record_id": "T04-S0136",
+      "answer_id": "T4-P306-Q07",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 7 — Sözsüz iletişim duygu, gerilim ve kişi ilişkisini nasıl yansıtıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bakma, gezinme ve eşyayı tekrar tekrar yer değiştirme gibi hareketlerin konuşma olmadan neyi görünür kıldığını açıklayın."
+      }
+    },
+    {
+      "id": "s306-q8",
+      "source_record_id": "T04-S0137",
+      "answer_id": "T4-P306-Q08",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 8 — Verilen kesitlerden hangi tiyatro terimleri kesinlikle çıkarılamaz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dekor ve sözsüz hareketlerin görünür olduğunu; diyalog/monolog için ise gerçek konuşma cümlesi gerekip gerekmediğini kontrol edin."
+      }
+    },
+    {
+      "id": "s306-source",
+      "source_record_id": "T04-S0138",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Sorular 9–12 — Belgesel film ve teknolojik dönüşüm metnini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kamera/ses teknolojisi, kurgu, izleyiciye ulaşma araçları, toplumsal bellek ve teknoloji–sanat ilişkisini ayrı not edin."
+      }
+    },
+    {
+      "id": "s306-q9",
+      "source_record_id": "T04-S0138",
+      "answer_id": "T4-P306-Q09",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 9 — Belgesel yapımının zaman içinde değişmesini sağlayan etkenlerden hangisi metinde desteklenmiyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki teknolojik değişmeleri açıkça verilen ifadelerle karşılaştırın; 'tamamen' gibi aşırı genellemelere dikkat edin."
+      }
+    },
+    {
+      "id": "s307-q10",
+      "source_record_id": "T04-S0139",
+      "answer_id": "T4-P307-Q10",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 10 — Belgeselin toplumsal belleğe katkısı hangi benzetmeyle en iyi açıklanır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Geçmişe ilişkin bilgi ve deneyimin korunup sonraki kuşaklara aktarılması ortak noktasını arayın."
+      }
+    },
+    {
+      "id": "s307-q11",
+      "source_record_id": "T04-S0140",
+      "answer_id": "T4-P307-Q11",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Soru 11 — 2005–2025 belgesel izleme mecraları tablosunu yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Televizyon, bilgisayar ve internet platformlarındaki oran değişimini doğrudan tablodan okuyun.",
+        "items": [
+          "2005: TV %70 / bilgisayar %20 / internet %10",
+          "2015: TV %40 / bilgisayar %30 / internet %30",
+          "2025: TV %15 / bilgisayar %20 / internet %65"
+        ]
+      }
+    },
+    {
+      "id": "s307-q12",
+      "source_record_id": "T04-S0141",
+      "answer_id": "T4-P307-Q12",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soru 12 — Teknolojik gelişmeler belgeselin etkisini güçlendirmiş midir, zayıflatmış mıdır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dijital üretim, kurgu ve erişim imkânlarını metinle gerekçelendirin; teknolojinin tek başına nitelikli/güvenilir içerik garantisi olmadığını da tartışabilirsiniz."
+      }
+    },
+    {
+      "id": "s307-q13",
+      "source_record_id": "T04-S0142",
+      "answer_id": "T4-P307-SL13",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soru 13 — Aidiyet videosundaki Anadolu insanının belirgin özelliklerini kanıtlarıyla açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Özellik adı tek başına yeterli değildir; videoda gerçekten gördüğünüz davranış, söz veya sahneyi kanıt gösterin.",
+        "note": "Aidiyet QR videosu görülmeden Lesson Player kişi ve davranış ayrıntısı üretmez."
+      }
+    },
+    {
+      "id": "s307-q14",
+      "source_record_id": "T04-S0143",
+      "answer_id": "T4-P307-SL14",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Soru 14 — Bir kişinin yaşadığı yere aidiyet duygusu geliştirmesi nelere bağlıdır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yer, ilişki, kültür, emek, anı ve kabul görme gibi kavramları açıklayabilirsiniz; videoya dayalı örneği gerçek Aidiyet görüntüsünden seçin.",
+        "note": "Kavramsal açıklama yapılabilir; video örneği uydurulmaz."
+      }
+    }
+  ]
+}
