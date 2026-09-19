@@ -393,8 +393,8 @@ for (const step of mimarReading.steps) {
 }
 assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 104 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 55 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 55,
-  "Tema 4 s.236–270 toplam 7 ders / 104 ekran / 55 kaynak / 55 cevap olmalı.");
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 56,
+  "Tema 4 s.236–270 toplam 7 ders / 104 ekran / 55 kaynak / 56 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -541,13 +541,14 @@ const merdivenAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-ME
 assert(merdivenAnalysis && merdivenAnalysis.printed_page_range === "266-270" &&
   merdivenAnalysis.coverage.steps === 17 &&
   merdivenAnalysis.coverage.source_records === 13 &&
-  merdivenAnalysis.coverage.answer_entries === 14,
-  "Merdiven anlama s.266–270 17 ekran / 13 kaynak / 14 cevap içermeli.");
+  merdivenAnalysis.coverage.answer_entries === 15,
+  "Merdiven anlama s.266–270 17 ekran / 13 kaynak / 15 cevap içermeli.");
 const merdivenById = new Map(merdivenAnalysis.steps.map(step => [step.id, step]));
 assert(merdivenById.size === 17, "Merdiven anlama ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s266-vocabulary","T04-S0043","T4-P266-VOC01"],
   ["s267-q4","T04-S0043","T4-P267-VOC02"],
+  ["s268-q5","T04-S0043","T4-P268-VOC03"],
   ["s268-q1","T04-S0044","T4-P268-Q01"],
   ["s268-q2","T04-S0045","T4-P268-Q02"],
   ["s268-q3","T04-S0046","T4-P268-Q03"],
@@ -567,9 +568,10 @@ for (const [id, sourceId, answerId] of [
 }
 assert(merdivenById.get("s266-vocabulary")?.content?.items?.length === 6 &&
   Object.keys(merdivenById.get("s266-vocabulary")?.answer?.answer_sections ?? {}).length === 6 &&
-  Object.keys(merdivenById.get("s267-q4")?.answer?.answer_sections ?? {}).length === 3,
+  Object.keys(merdivenById.get("s267-q4")?.answer?.answer_sections ?? {}).length === 1 &&
+  Object.keys(merdivenById.get("s268-q5")?.answer?.answer_sections ?? {}).length === 2,
   "Altı kelime ile Söz Varlığımız 4–5 üç ayrı cevap bölümü korunmalı.");
-assert(merdivenById.get("s268-q5")?.answer === null &&
+assert(merdivenById.get("s268-q5")?.answer?.question_id === "T4-P268-VOC03" &&
   merdivenById.get("s269-q7")?.content?.items?.length === 5 &&
   merdivenById.get("s270-work")?.content?.items?.length === 6 &&
   Object.keys(merdivenById.get("s270-work")?.answer?.answer_sections ?? {}).length === 6,
