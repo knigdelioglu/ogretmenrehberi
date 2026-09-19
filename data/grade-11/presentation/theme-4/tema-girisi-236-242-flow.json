@@ -1,0 +1,317 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-GIRIS-236-242",
+  "lesson_slug": "tema-girisi-236-242",
+  "title": "Hayatın Aynası — Temaya Giriş",
+  "subtitle": "4. Tema · Kitap ve hayat / Mimar Sinan / okuma çemberi",
+  "printed_page_range": "236-242",
+  "required_source_range": {
+    "from": "T04-S0001",
+    "to": "T04-S0009"
+  },
+  "steps": [
+    {
+      "id": "s236-map",
+      "source_record_id": "T04-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "4. Tema — Hayatın Aynası: Bu temada hangi metinleri ve becerileri işleyeceğiz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Temanın basılı s.236 çerçevesine bakın. Okuma, dinleme/izleme, konuşma ve yazma görevlerini ayırın.",
+        "sections": [
+          {
+            "title": "Okuma",
+            "body": "Ben, Mimar Sinan tiyatrosu ve Merdiven küçürek hikâyesi."
+          },
+          {
+            "title": "Dinleme / İzleme",
+            "body": "Anadolu İnsanı / Fedakârlık belgeseli."
+          },
+          {
+            "title": "Konuşma ve yazma",
+            "body": "Tiyatro canlandırması ve belgesel için özgün afiş."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s236-concepts",
+      "source_record_id": "T04-S0001",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Tema kavramları — Tiyatro terimlerini okuma sırasında izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kavramları tek başına ezberlemek yerine örnekleri metinde gördüğünüzde geri dönün.",
+        "items": [
+          "Dramatik örgü, oyun, perde, sahne",
+          "Diyalog ve monolog",
+          "Dekor ve kostüm",
+          "Gösterme tekniği ve küçürek hikâye"
+        ]
+      }
+    },
+    {
+      "id": "s237-threshold",
+      "source_record_id": "T04-S0002",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yunus Emre — Kendini bilmek ile hayatı ve sanatı anlamak arasında nasıl bağ kurulabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.237'deki Yunus Emre beytini okuyun. Şiirin söylediklerini kişisel deneyim ve edebî metinle kurduğunuz ilişki üzerinden düşünün.",
+        "note": "Bu sayfada bağımsız kitap sorusu yoktur. Tartışma tema eşiği içindir; kanonik cevap oluşturulmaz."
+      }
+    },
+    {
+      "id": "s238-source",
+      "source_record_id": "T04-S0003",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Temaya Başlarken — Kitap ve okurlukla ilgili görsel ve şiiri inceleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce s.238'deki görseli ve Latîfî beytinin günümüz Türkçesi açıklamasını okuyun.",
+        "items": [
+          "Görselin okuma ve insan ilişkileriyle bağlantısını düşünün.",
+          "Beyitte kitap ile dostluk arasında kurulan ilişkiyi işaretleyin."
+        ]
+      }
+    },
+    {
+      "id": "s238-q1",
+      "source_record_id": "T04-S0003",
+      "answer_id": "T4-P238-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Temaya Başlarken 1 — Kitap okumak sosyal gelişimimizi nasıl etkileyebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Farklı kişilerin bakış açısını anlama, empati ve kendini ifade etme bakımından somut örnek geliştirin."
+      }
+    },
+    {
+      "id": "s238-q2",
+      "source_record_id": "T04-S0004",
+      "answer_id": "T4-P238-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Temaya Başlarken 2 — Şiirde kitaplar neden 'ebedî dostlar' olarak nitelendirilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir metne farklı yaşlarda tekrar döndüğünüzde onun size farklı anlamlar sunabilmesini düşünün."
+      }
+    },
+    {
+      "id": "s239-source",
+      "source_record_id": "T04-S0005",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Edebiyatta Gerçekçilik ve Alımlama Estetiği — Metni okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.239'da edebiyatın hayatı kopyalama değil, sanatçının diliyle yeniden kurma fikrine odaklanın.",
+        "items": [
+          "Edebî eserin bireysel yaşantıyla ilişkisi",
+          "Sanatçının dönemi ve kültürüyle ilişkisi",
+          "Okurun eserde kendi hayatına dair bir anlam bulabilmesi"
+        ]
+      }
+    },
+    {
+      "id": "s239-q3",
+      "source_record_id": "T04-S0005",
+      "answer_id": "T4-P239-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Temaya Başlarken 3 — Sanatsal bir metni diğer anlatımlardan ayıran özellikler nelerdir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metinde geçen özel anlam, estetik ifade, hayatın yeniden kurulması ve dönem izlerini birbirleriyle ilişkilendirin."
+      }
+    },
+    {
+      "id": "s239-q4",
+      "source_record_id": "T04-S0006",
+      "answer_id": "T4-P239-PERF01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Temaya Başlarken 4 — Kendi yaşantınıza benzeyen bir olay eseri sizin için daha anlamlı kılar mı?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Cevabınız kişisel olabilir. Yalnız yaşadığınız gerçek bir deneyim veya duyguyla metindeki durum arasında nasıl bağ kurduğunuzu gerekçelendirin."
+      }
+    },
+    {
+      "id": "s239-q5",
+      "source_record_id": "T04-S0007",
+      "answer_id": "T4-P239-PERF02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Temaya Başlarken 5 — Hangi türü seçer, hayatın hangi yönünü yazmak isterdiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tür seçiminizi, anlatmak istediğiniz durumun biçimine neden uygun olduğunu söyleyerek açıklayın."
+      }
+    },
+    {
+      "id": "s240-infographic",
+      "source_record_id": "T04-S0008",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Mimar Sinan — Bilgi görselinden doğrulanabilir yaşam ve eser bilgilerini inceleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.240'taki bilgi görselini okuyun; sanatçının yetiştiği çevre, görevleri, yapıları ve mimarlıkta ilerlemesi hakkında verilen bilgileri not edin.",
+        "sections": [
+          {
+            "title": "Yaşam bilgisi",
+            "body": "Kayseri Ağırnas, seferler ve mimarbaşılık gibi somut kaynak bilgileri."
+          },
+          {
+            "title": "Eser ve meslek çizgisi",
+            "body": "Şehzade, Süleymaniye ve Selimiye'nin kitapta çıraklık–kalfalık–ustalık bağlamında sunuluşu."
+          }
+        ],
+        "note": "Bilgi görselinde Sinan'ın kesin doğum tarihi belirtilmez; tiyatrodaki kesin tarih anlatımıyla aynı kaynak statüsünde sunmayın."
+      }
+    },
+    {
+      "id": "s240-performance",
+      "source_record_id": "T04-S0008",
+      "answer_id": "T4-P240-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuya Başlarken — Beş kişilik gruplarda Mimar Sinan üzerine kısa diyalog ve monolog hazırlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grup sözcüsünü belirleyin. Diyalog ile tek kişinin konuştuğu monoloğu farklı işlevlerle kurun.",
+        "items": [
+          "Görselden kullanılacak gerçek bilgileri seçin.",
+          "İki kişi arasında anlamlı bir konuşma oluşturun.",
+          "Mimar Sinan'ın bakış açısını yansıtan bir monolog yazın.",
+          "Grup sözcüsüyle sınıfta paylaşın."
+        ],
+        "note": "Sahnelenmek üzere üretilen konuşmalar hayalîdir; Mimar Sinan'ın tarihî sözleriymiş gibi aktarılmaz."
+      }
+    },
+    {
+      "id": "s240-fact-fiction",
+      "source_record_id": "T04-S0008",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Bilgi görseli ile hayalî tiyatro konuşmasını ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metnin etkileyici olması için eklediğiniz sözler, kitapta doğrulanan olayları ve kişileri değiştirmesin.",
+        "sections": [
+          {
+            "title": "Bilgi görseli",
+            "body": "Kaynağın verdiği tarihî ve biyografik bilgiler."
+          },
+          {
+            "title": "Öğrencinin hayalî metni",
+            "body": "Görseldeki verilerden hareketle kurulan yeni diyalog ve monolog."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s241-preview",
+      "source_record_id": "T04-S0009",
+      "answer_id": "T4-P241-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ben, Mimar Sinan — Ön okuma tahmininizi kaydediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metnin ana bölümünü okumadan önce başlığa, görsellere, biçimsel özelliklere ve kişilere göz gezdirin.",
+        "items": [
+          "Başlık ve görsellerden ilk tahmininizi söyleyin.",
+          "Tiyatro metni olduğunu düşündüren biçimsel unsuru gösterin.",
+          "Tahmini s.241'deki alana not edin; okuma sonrası geriye dönük değiştirmeyin."
+        ]
+      }
+    },
+    {
+      "id": "s241-core-roles",
+      "source_record_id": "T04-S0009",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Okuma çemberi — Temel rollerin görevlerini paylaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metni birlikte okumak için birbirini tamamlayan dört temel rolü grup üyelerine dağıtın.",
+        "sections": [
+          {
+            "title": "Bağ Kurucu",
+            "body": "Metinle hayat veya başka metin arasında ilişki kurar."
+          },
+          {
+            "title": "Sorgulayıcı",
+            "body": "Tartışmayı açan, metne dayalı sorular hazırlar."
+          },
+          {
+            "title": "Ressam",
+            "body": "Metnin bir sahnesini, kişisini veya olayını görselleştirir."
+          },
+          {
+            "title": "Okuma Aydınlatıcısı",
+            "body": "Tartışmaya değer bir ifadeyi gerekçeyle seçer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s242-optional-roles",
+      "source_record_id": "T04-S0009",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Okuma çemberi — Seçimlik rolleri belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Grubun ihtiyacına göre ek roller seçin; okuma sonunda her rol somut ürününü paylaşsın.",
+        "sections": [
+          {
+            "title": "Özetleyici",
+            "body": "Metnin ana olay ve düşünce çizgisini kısa biçimde verir."
+          },
+          {
+            "title": "Tahmin Edici",
+            "body": "Okurken gelecek olay veya davranış hakkında gerekçeli tahmin yapar."
+          },
+          {
+            "title": "Karakter Çözümleyici",
+            "body": "Kişilerin söz ve davranışlarından özellik çıkarır."
+          },
+          {
+            "title": "Kelime Avcısı",
+            "body": "Bilinmeyen söz varlığını bağlamla ve sözlükle açıklar."
+          },
+          {
+            "title": "Hareket İzcisi",
+            "body": "Mekânı ve sahne değişimlerini takip eder."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s242-read-next",
+      "source_record_id": "T04-S0009",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Okuma çemberinizi kurup Ben, Mimar Sinan metnine geçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Rol paylaşımı tamamlandıktan sonra kitabın s.243–246 ana metnini okuyun; okuyuş sırasında her rol için kısa kanıt notu tutun.",
+        "items": [
+          "Ön tahmin kaydını koruyun.",
+          "Sahne ve ses yönergeleriyle konuşma bölümlerini ayırın.",
+          "Bilgi görselindeki tarihî verilerle oyun içindeki dramatik anlatımı ayrı değerlendirin."
+        ]
+      }
+    }
+  ]
+}
