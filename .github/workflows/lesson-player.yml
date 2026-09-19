@@ -1180,6 +1180,54 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-akif199-messages.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201&step=s201-message"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-akif202-subjective.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205&step=s202-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-akif204-compare.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205&step=s204-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-akif205-asim.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205&step=s205-asim-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-usuli206-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-USULI-TEZKIRE-206-209&step=s206-reference"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-usuli208-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-USULI-TEZKIRE-206-209&step=s208-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-usuli209-evaluation.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-USULI-TEZKIRE-206-209&step=s209-q2"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1311,5 +1359,11 @@ jobs:
             lesson-player-theme3-akif199-visual.png
             lesson-player-theme3-akif199-work.png
             lesson-player-theme3-akif199-messages.png
+            lesson-player-akif202-subjective.png
+            lesson-player-akif204-compare.png
+            lesson-player-akif205-asim.png
+            lesson-player-usuli206-reading.png
+            lesson-player-usuli208-vocabulary.png
+            lesson-player-usuli209-evaluation.png
             apps/lesson-player/dist
           if-no-files-found: error
