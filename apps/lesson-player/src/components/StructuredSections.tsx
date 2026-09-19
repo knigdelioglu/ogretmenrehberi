@@ -33,8 +33,11 @@ function renderValue(value: unknown): ReactNode {
 export function StructuredSections({
   sections
 }: {
-  sections: Record<string, unknown>;
+  sections: Record<string, unknown> | string[];
 }) {
+  if (Array.isArray(sections)) {
+    return <div className="section-grid">{renderValue(sections)}</div>;
+  }
   return (
     <div className="section-grid">
       {Object.entries(sections).map(([key, value]) => (
