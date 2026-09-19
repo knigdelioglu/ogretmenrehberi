@@ -9,6 +9,10 @@ import {
 import lessonsJson from "./generated/lessons.json";
 import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
+import {
+  buildExportedStep,
+  studentVisibleRevealKeys
+} from "./runtime-contracts.js";
 import type {
   DensityKind,
   LayoutKind,
@@ -155,7 +159,7 @@ export default function App() {
     index,
     stepOrder,
     overrides,
-    revealed: [...revealed],
+    revealed: studentVisibleRevealKeys(revealed),
     vocabularyTerms
   };
 
@@ -347,39 +351,15 @@ export default function App() {
       if (!original) {
         throw new Error(`Unknown lesson step during export: ${effective.id}`);
       }
-      const override = overrides[original.id];
-      const exported: Record<string, unknown> = {
-        id: original.id,
-        source_record_id: original.source.source_record_id,
-        layout: effective.layout,
-        density: effective.density
-      };
 
-      if (original.answer) {
-        exported.answer_id = original.answer.question_id;
-      }
-
-      if (
-        override?.display_prompt?.trim() &&
-        override.display_prompt.trim() !== original.display_prompt
-      ) {
-        exported.prompt = override.display_prompt.trim();
-      }
-
-      if (effective.reveal_order.length) {
-        exported.reveal = effective.reveal_order;
-      }
-
-      if (effective.content) {
-        exported.content = effective.content;
-      }
-
-      return exported;
+      return buildExportedStep(original, effective, overrides[original.id]);
     });
 
     const payload = {
       schema_version: lesson.schema_version,
+      theme_id: lesson.theme_id,
       lesson_id: lesson.lesson_id,
+      lesson_slug: lesson.lesson_slug,
       title: lesson.title,
       subtitle: lesson.subtitle,
       printed_page_range: lesson.printed_page_range,
@@ -445,7 +425,7 @@ export default function App() {
         setIndex(
           Math.max(0, Math.min(lesson.steps.length - 1, state.index))
         );
-        setRevealed(new Set(state.revealed));
+        setRevealed(new Set(studentVisibleRevealKeys(state.revealed)));
         setVocabularyTerms(state.vocabularyTerms ?? {});
       }
     };
@@ -628,6 +608,7 @@ export default function App() {
           toggle={toggle}
           presentationMode={presentationMode || displayOnly}
           showInlineControls={!displayOnly}
+          showTeacherNotes={!displayOnly}
           visibleVocabularyTerms={
             new Set(vocabularyTerms[step.id] ?? [])
           }
