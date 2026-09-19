@@ -13,11 +13,15 @@ Mevcut doğrulanmış dersler:
 - **1. Tema / Ölçme ve Değerlendirme** — basılı s.79–83 — 13 ders adımı / 13 source kaydı / 13 cevap
 - **2. Tema / Giriş** — basılı s.84–88 — 14 ders adımı / 14 source kaydı / 12 cevap
 - **2. Tema / Türk Dilleri + Oğulla Buluşma** — basılı s.89–107 — 37 ders adımı / 32 source kaydı / 36 cevap
+- **3. Tema / Mehmet Âkif Ersoy çözümlemesi** — basılı s.202–205 — 17 ders adımı / 12 source kaydı / 12 cevap
+- **3. Tema / Usûlî — Tezkire ve biyografi** — basılı s.206–209 — 15 ders adımı / 11 source kaydı / 10 cevap
 - **2. Tema / Eski İstanbul’dan Çizgiler + Süreç Değerlendirmesi** — basılı s.108–112 — 15 ders adımı / 11 source kaydı / 14 cevap
 
 1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
-2. Tema üretimi küçük doğal bloklarla ilerler. Şu anda **s.84–112** aralığı üç doğal blokta tamamlanmıştır. Mevcut Tema 2 toplamı **7 ders / 159 adım / 137 source / 147 answer** kaydıdır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
+2. Tema s.84–159 aralığı **9 doğal ders bloğuyla** kapsanır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
+
+3. Tema Lesson Player üretimi **s.160–209** aralığına ulaşmıştır: **13 doğal ders / 213 adım / 89 source / 89 answer** kaydı. Son tamamlanan iki doğal blok **Mehmet Âkif Ersoy çözümlemesi s.202–205** (17 adım, 12 source, 12 answer) ve **Usûlî / Tezkire s.206–209** (15 adım, 11 source, 10 answer). Sonraki blok s.210'dan başlar; source-index'te bu aralıktaki kayıtlar `REVIEW_REQUIRED` olduğu sürece üretim kalite kapısından geçirilmez.
 
 Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
