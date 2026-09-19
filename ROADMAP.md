@@ -309,7 +309,7 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Türk Dilleri + Oğulla Buluşma — s.89–107
   - [x] Eski İstanbul’dan Çizgiler / Anı — s.108–112
   - [x] Orhun Abideleri — s.113–124
-  - [ ] Dîvânu Lugâti’t-Türk — s.125–128
+  - [x] Dîvânu Lugâti’t-Türk — s.125–128
   - [ ] Konuşma — s.129–135
   - [ ] Dinleme / İzleme — Âşık Atışması — s.136–147
   - [ ] Yazma — Çevrim İçi Müze — s.148–154
@@ -425,4 +425,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 2. Tema — Dîvânu Lugâti’t-Türk + süreç değerlendirme, basılı s.125–128** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
+**11. sınıf 2. Tema — Edebiyat Atölyesi-1 / Konuşma, basılı s.129–135** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
