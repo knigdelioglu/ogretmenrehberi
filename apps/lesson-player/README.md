@@ -16,13 +16,14 @@ Mevcut doğrulanmış dersler:
 - **3. Tema / Mehmet Âkif Ersoy çözümlemesi** — basılı s.202–205 — 17 ders adımı / 12 source kaydı / 12 cevap
 - **3. Tema / Usûlî — Tezkire ve biyografi** — basılı s.206–209 — 15 ders adımı / 11 source kaydı / 10 cevap
 - **3. Tema / Kemal Tahir — Hayalî Mülakat** — basılı s.210–214 — 19 ders adımı / 8 source kaydı / 9 cevap
+- **3. Tema / Direnişin Ustaları — Dinleme ve Anlama** — basılı s.215–220 — 21 ders adımı / 15 source kaydı / 15 cevap
 - **2. Tema / Eski İstanbul’dan Çizgiler + Süreç Değerlendirmesi** — basılı s.108–112 — 15 ders adımı / 11 source kaydı / 14 cevap
 
 1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
 2. Tema s.84–159 aralığı **9 doğal ders bloğuyla** kapsanır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
 
-3. Tema Lesson Player üretimi **s.160–214** aralığına ulaşmıştır: **14 doğal ders / 232 adım / 97 source / 98 answer** kaydı. Son tamamlanan doğal blok **Kemal Tahir — Hayalî Mülakat s.210–214** (19 adım, 8 source, 9 answer). Bu bloktaki `T03-S0089`–`T03-S0096` kaynakları 11. sınıf ders kitabının basılı s.210–214 sayfalarıyla karşılaştırılarak `VERIFIED` durumuna alındı. Sonraki doğal blok **s.215–220 radyo tiyatrosu**; kaynak doğrulaması gereklidir.
+3. Tema Lesson Player üretimi **s.160–220** aralığına ulaşmıştır: **15 doğal ders / 253 adım / 112 source / 113 answer** kaydı. Son tamamlanan doğal bloklar **Kemal Tahir — Hayalî Mülakat s.210–214** (19 adım, 8 source, 9 answer) ile **Direnişin Ustaları — Dinleme ve Anlama s.215–220** (21 adım, 15 source, 15 answer). Bu aralıkların kaynakları 11. sınıf ders kitabı PDF'iyle karşılaştırılarak `VERIFIED` durumuna alındı. QR video veya ses kaydı gerektiren soruların answer-bank kayıtları `source_limited` kalır. Sonraki doğal blok s.221'den başlar.
 
 Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
