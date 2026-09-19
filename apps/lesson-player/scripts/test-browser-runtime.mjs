@@ -223,7 +223,7 @@ try {
       lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
       step: "s273-q1",
       selector: '[data-content-layout="comparison"] .comparison-criterion',
-      count: 7
+      count: 4
     },
     {
       lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
