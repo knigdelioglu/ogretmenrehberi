@@ -358,6 +358,47 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-eski-exit.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ESKI-ISTANBUL&step=s112-exit"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-orhun-source-limited.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-ORHUN&step=s113-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-orhun-vocabulary.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ORHUN&step=s116-vocabulary"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-orhun-comparison.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ORHUN&step=s119-compare"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-orhun-analysis.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ORHUN&step=s122-q2"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-orhun-values.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ORHUN&step=s124-values"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -395,5 +436,10 @@ jobs:
             lesson-player-theme2-eski-social.png
             lesson-player-theme2-eski-cards.png
             lesson-player-theme2-eski-exit.png
+            lesson-player-theme2-orhun-source-limited.png
+            lesson-player-theme2-orhun-vocabulary.png
+            lesson-player-theme2-orhun-comparison.png
+            lesson-player-theme2-orhun-analysis.png
+            lesson-player-theme2-orhun-values.png
             apps/lesson-player/dist
           if-no-files-found: error
