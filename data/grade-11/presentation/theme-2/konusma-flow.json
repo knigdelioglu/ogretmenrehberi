@@ -1,0 +1,279 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-KONUSMA",
+  "lesson_slug": "tema-2-konusma",
+  "title": "Türk Dünyası Ortak Kültürü",
+  "subtitle": "Edebiyat Atölyesi-1 · Konuşma · 2. Tema",
+  "printed_page_range": "129-135",
+  "required_source_range": {
+    "from": "T02-S0103",
+    "to": "T02-S0115"
+  },
+  "steps": [
+    {
+      "id": "s129-q1",
+      "source_record_id": "T02-S0103",
+      "answer_id": "T2-P129-Q01",
+      "layout": "question",
+      "prompt": "Türklerin dünya medeniyetine katkılarını videoda gerçekten verilen örneklerle ilişkilendirerek açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s129-q2",
+      "source_record_id": "T02-S0104",
+      "answer_id": "T2-P129-Q02",
+      "layout": "question",
+      "prompt": "Türk dünyasının farklı siyasi yapılardaki varlığının uluslararası siyasetteki yerini yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s129-q3",
+      "source_record_id": "T02-S0105",
+      "answer_id": "T2-P129-Q03",
+      "layout": "question",
+      "prompt": "Geniş bir coğrafyada varlık gösteren Türklerin tarihe yön vermesiyle ilgili düşüncelerinizi açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s130-plan",
+      "source_record_id": "T02-S0106",
+      "answer_id": "T2-P130-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Türk dünyasının ortak kültürünü tanıtan hazırlıklı konuşmanızı planlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Planı amaç, hedef kitle, süre, içerik, yöntem ve teknik hazırlık boyutlarında kurun.",
+        "items": [
+          "Konuşmanın amacını belirleyin.",
+          "Hedef kitle ve süreyi netleştirin.",
+          "Kullanacağınız kültür başlıklarını seçin.",
+          "Görsel, ses ve mekân hazırlığını kontrol edin.",
+          "Olası iletişim engellerini önceden azaltın."
+        ]
+      }
+    },
+    {
+      "id": "s130-stations",
+      "source_record_id": "T02-S0106",
+      "answer_id": "T2-P130-PERF02",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Altı istasyonlu Türk dünyası ortak kültürü çalışmasını uygulayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her grup yeni istasyonda önceki grubun bıraktığı yerden devam etsin; tekrar yerine eksik noktayı tamamlasın.",
+        "items": [
+          "Millî ve manevi değerler",
+          "Önde gelen şahsiyetler",
+          "Önemli eserler",
+          "Ortak lezzetler",
+          "Müzik kültürü",
+          "Ortak gelenek ve görenekler"
+        ]
+      }
+    },
+    {
+      "id": "s131-structure",
+      "source_record_id": "T02-S0107",
+      "answer_id": "T2-P131-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Konuşma metninizi giriş, gelişme ve sonuç düzeninde tasarlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana düşünceyi karşılaştırma ve güvenilir kültür örnekleriyle destekleyin.",
+        "items": [
+          "Giriş: hedef kitlenin ilgisini çekecek soru, görsel veya kısa karşılaştırma.",
+          "Gelişme: ortak kültür unsurlarını örneklerle açıklama ve karşılaştırma.",
+          "Sonuç: ortak kök ile bölgesel çeşitliliği tek ana düşüncede birleştirme."
+        ]
+      }
+    },
+    {
+      "id": "s132-q1",
+      "source_record_id": "T02-S0108",
+      "answer_id": "T2-P132-Q01",
+      "layout": "question",
+      "prompt": "Türk dünyasında kültür unsurlarının farklılaşmasının nedenleri neler olabilir?",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s132-q2",
+      "source_record_id": "T02-S0109",
+      "answer_id": "T2-P132-Q02",
+      "layout": "question",
+      "prompt": "Bazı kültür unsurlarının zamanla yok olmasının nedenleri hakkında tahminde bulununuz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s132-q3",
+      "source_record_id": "T02-S0110",
+      "answer_id": "T2-P132-Q03",
+      "layout": "question",
+      "prompt": "Türk kültürünün dile yansımaları hakkında çıkarımlarda bulununuz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s132-133-comparison",
+      "source_record_id": "T02-S0111",
+      "answer_id": "T2-P132-PERF01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Türkiye, Azerbaycan, Türkmenistan, Özbekistan ve Kırgızistan kültür unsurlarını güvenilir kaynaklarla karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hazır ülke kalıpları dağıtmayın; araştırma bulgularını kaynak göstererek karşılaştırın.",
+        "items": [
+          "Dil",
+          "Din",
+          "Sanat",
+          "Gelenek ve görenek",
+          "Giyim",
+          "Yemek",
+          "Millî ve manevi değerler"
+        ]
+      }
+    },
+    {
+      "id": "s133-production-1",
+      "source_record_id": "T02-S0112",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuşma taslağını geliştirin — görsel, söz varlığı ve plan",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Her ana başlık için işlevi açık bir görsel seçin ve kaynağını not edin.",
+          "Görselin hangi düşünceyi desteklediğini tek cümlede açıklayın.",
+          "Hedef kitleye uygun, gereksiz teknik kelimelerden arındırılmış söz varlığı oluşturun.",
+          "Girişte dikkat çekici bir soru veya kısa karşılaştırma kullanın."
+        ]
+      }
+    },
+    {
+      "id": "s133-production-2",
+      "source_record_id": "T02-S0112",
+      "answer_id": "T2-P133-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuşma taslağını geliştirin — gelişme, sonuç ve geri bildirim",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Görselleri yalnız süs olarak değil düşünceyi destekleyen kanıtlar olarak kullanın.",
+          "Sonuçta ortak kültür ile bölgesel farklılıkları tek ana düşüncede birleştirin.",
+          "Taslağı bir arkadaşınıza sunup anlaşılmayan yerler ve gereksiz ayrıntılar için geri bildirim alın."
+        ]
+      }
+    },
+    {
+      "id": "s133-speech",
+      "source_record_id": "T02-S0112",
+      "answer_id": "T2-P133-PERF02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Belirlediğiniz amaca ve konuya uygun etkileşimli konuşmanızı yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s134-rules-1",
+      "source_record_id": "T02-S0113",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuşma sırasında uygulanacak ölçütler — 1",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Konuşmaya plana uygun ve dikkat çekici biçimde başlayın.",
+          "Duygu ve düşüncelerinizi özgün, tutarlı bir üslupla ifade edin.",
+          "Millî ve manevi değerleri, kültürel unsurları ve olumlu davranışları örneklerle vurgulayın.",
+          "Düşünceyi geliştirme yollarından yararlanın.",
+          "Söz varlığını hedef kitleye ve bağlama uygun kullanın.",
+          "Toplumsal hassasiyetlere aykırı ögelerden kaçının."
+        ]
+      }
+    },
+    {
+      "id": "s134-rules-2",
+      "source_record_id": "T02-S0113",
+      "answer_id": "T2-P134-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuşma sırasında uygulanacak ölçütler — 2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "İletilerinizi açık veya örtük biçimde amaca uygun aktarın.",
+          "Konuşmayı başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
+          "Görsellerdeki bilginin dayanağını gerekçeli biçimde açıklayın.",
+          "Ekleri, kelime seçimini ve cümle bağlarını doğru kullanın.",
+          "Göz teması kurun; mekânı, süreyi ve görgü kurallarını yönetin.",
+          "Akıcılık, duruluk ve yalınlığı koruyup beden dili ile sesi anlamı güçlendirecek biçimde kullanın."
+        ]
+      }
+    },
+    {
+      "id": "s135-self-1",
+      "source_record_id": "T02-S0114",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 1",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Ortak kültürü yansıtan uygun görseller buldum ve bunlardan hareketle Türk kültürünü tanıttım.",
+          "Görsellerden elde ettiğim bilgilerin dayanağına ilişkin gerekçeli açıklamalar yaptım.",
+          "Doğru sıralama ve kelime seçimiyle dil farkındalığımı ortaya koyan söz varlığı kullandım.",
+          "Kültürü tanıtmak için düşünceyi geliştirme yollarından yararlandım.",
+          "Türkçenin dil yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim."
+        ]
+      }
+    },
+    {
+      "id": "s135-self-2",
+      "source_record_id": "T02-S0114",
+      "answer_id": "T2-P135-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
+          "Toplumsal hassasiyet oluşturacak ögelerden kaçındım.",
+          "Millî ve manevi değerleri, kültürel unsurları ve olumlu tutumları vurguladım.",
+          "Beden dilini, diksiyonu ve telaffuzu doğru ve etkili kullandım.",
+          "Göz teması kurdum; mekânı ve süreyi etkili kullanıp görgü kurallarına uydum."
+        ]
+      }
+    },
+    {
+      "id": "s135-reference",
+      "source_record_id": "T02-S0115",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Dereceli puanlama ve akran değerlendirme",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap, ayrıntılı dereceli puanlama anahtarı ile akran değerlendirme formuna QR kod üzerinden yönlendirir.",
+        "sections": [
+          {
+            "title": "Öğretmen değerlendirmesi",
+            "body": "Konuya hâkim olma, söz varlığı, beden dili ve ses, zaman-mekân yönetimi ve dinleyici ilgisi gibi sayfada açıkça belirtilen genel ölçütleri izleyin."
+          },
+          {
+            "title": "Akran değerlendirmesi",
+            "body": "Kişiye değil gözlenebilir performansa ve adil ölçütlere odaklanın."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "QR formlarının ayrıntılı puanları ve görünmeyen ölçütleri kaynak görülmeden yeniden üretilmemelidir."
+          }
+        ],
+        "note": "Öz ve akran değerlendirmede belirlenen eksikleri sonraki konuşma için somut hedeflere dönüştürün."
+      }
+    }
+  ]
+}
