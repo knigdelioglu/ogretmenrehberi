@@ -8,7 +8,7 @@
   "counts": {
     "records": 158,
     "linked_answers": 167,
-    "verified_records": 57
+    "verified_records": 87
   },
   "records": [
     {
@@ -671,7 +671,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "PAGE_REFERENCE",
       "source_locator": "basılı s.113 / PDF s.114 — Orhun Vadisi videosu ve soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0059",
@@ -683,7 +683,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.113 / PDF s.114 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0060",
@@ -695,7 +695,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.113 / PDF s.114 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0061",
@@ -707,7 +707,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.113 / PDF s.114 — soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0062",
@@ -719,7 +719,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.113 / PDF s.114 — soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0063",
@@ -730,7 +730,7 @@
       "prompt": "Okuma amacını belirleyin; başlık/görselden tahmin oluşturup aktif okuma stratejisi seçin.",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.114-115 / PDF s.115-116 — Okumayı Yönetebilme",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0064",
@@ -740,7 +740,7 @@
       "task_type": "VOCABULARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.116 / PDF s.117 — Söz Varlığımız",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0065",
@@ -752,7 +752,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.117 / PDF s.118 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0066",
@@ -764,7 +764,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.117 / PDF s.118 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0067",
@@ -776,7 +776,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.117 / PDF s.118 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0068",
@@ -788,7 +788,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.117 / PDF s.118 — Fark Edelim",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0069",
@@ -799,7 +799,7 @@
       "prompt": "Metinden benzetme, zıtlık, istifham, nida ve deyim örnekleri belirleyip anlatıma katkısını açıklayın.",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.118 / PDF s.119 — Sıra Sizde",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0070",
@@ -810,7 +810,7 @@
       "prompt": "İki metni içerik, tür, dönem/zihniyet, üslup ve ileti bakımından karşılaştırın.",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.119 / PDF s.120 — Karşılaştıralım",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0071",
@@ -822,7 +822,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.119 / PDF s.120 — Yorumlayalım soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0072",
@@ -834,7 +834,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.120 / PDF s.121 — Yorumlayalım soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0073",
@@ -846,7 +846,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.120 / PDF s.121 — Düşünelim Paylaşalım",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0074",
@@ -858,7 +858,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.121 / PDF s.122 — soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0075",
@@ -870,7 +870,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.121 / PDF s.122 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0076",
@@ -882,7 +882,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.121 / PDF s.122 — Fark Edelim soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0077",
@@ -894,7 +894,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.122 / PDF s.123 — soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0078",
@@ -906,7 +906,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.122 / PDF s.123 — soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0079",
@@ -918,7 +918,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.122 / PDF s.123 — soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0080",
@@ -930,7 +930,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.123 / PDF s.124 — soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0081",
@@ -942,7 +942,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 1",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0082",
@@ -954,7 +954,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 2",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0083",
@@ -966,7 +966,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 3",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0084",
@@ -978,7 +978,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.124 / PDF s.125 — Yorumlayalım soru 4",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0085",
@@ -990,7 +990,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.124 / PDF s.125 — Yorumlayalım soru 5",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0086",
@@ -1001,7 +1001,7 @@
       "prompt": "Metindeki değerleri millî, manevi ve evrensel başlıklarında metin kanıtıyla sınıflandırın.",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.124 / PDF s.125 — Sıra Sizde",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0087",
@@ -1012,7 +1012,7 @@
       "prompt": "Orhun Abidelerini tarih, coğrafya ve sosyolojiyle ilişkilendirip grup araştırması/sunumu yapın.",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.124-125 / PDF s.125-126 — Ders Dışı Etkinlik",
-      "source_status": "REVIEW_REQUIRED"
+      "source_status": "VERIFIED"
     },
     {
       "source_record_id": "T02-S0088",
