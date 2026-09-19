@@ -23,13 +23,15 @@ Mevcut doğrulanmış dersler:
 - **4. Tema / Hayatın Aynası — Giriş ve Okuma Çemberi** — basılı s.236–242 — 17 ders adımı / 9 source kaydı / 7 cevap
 - **4. Tema / Ben, Mimar Sinan — Okuma ve Sanatın İşlevi** — basılı s.243–250 — 14 ders adımı / 6 source kaydı / 6 cevap
 - **4. Tema / Ben, Mimar Sinan — Anlama ve Karşılaştırma** — basılı s.251–255 — 13 ders adımı / 8 source kaydı / 9 cevap
+- **4. Tema / Ben, Mimar Sinan — Yapı, Anlatım ve Kültür** — basılı s.256–259 — 16 ders adımı / 7 source kaydı / 7 cevap
+- **4. Tema / Ben, Mimar Sinan — Değerler ve Değerlendirme** — basılı s.260–262 — 18 ders adımı / 9 source kaydı / 10 cevap
 - **2. Tema / Eski İstanbul’dan Çizgiler + Süreç Değerlendirmesi** — basılı s.108–112 — 15 ders adımı / 11 source kaydı / 14 cevap
 
 1. Tema toplamı: **7 ders / 176 ders adımı / 129 source-index kaydı / 151 answer-bank kaydı** ve kalite dondurması altında korunur.
 
 2. Tema s.84–159 aralığı **9 doğal ders bloğuyla** kapsanır. Oğulla Buluşma ve Eski İstanbul’dan Çizgiler ana metinleri Lesson Player içine kopyalanmaz; kitap üzerinden yürütülen yönlendirilmiş okuma süreçleri olarak temsil edilir.
 
-3. Tema Lesson Player üretimi **s.160–235** aralığında tamamlanmıştır: **18 doğal ders / 310 adım / 147 source / 147 answer** kaydı. Son blok **Tema Sonu Ölçme ve Değerlendirme s.230–235** (24 adım / 16 source / 16 answer) olup Venn şeması, Orhan Veli grafiği, biyografi yarışması ve sekiz satırlı değerlendirme tablosunu içerir. Basılı s.210–235 kaynakları 11. sınıf ders kitabı PDF'iyle karşılaştırılarak `VERIFIED` durumuna alındı; görülemeyen QR medya/rubrik ayrıntıları cevap bankasında kaynak sınırlı kalır. 4. Tema üretimi **s.236–255** aralığına ulaştı: **3 doğal ders / 44 adım / 23 source / 22 answer**. Hayatın Aynası girişi, Ben, Mimar Sinan ana metni, söz varlığı, tiyatronun işlevi, anlama ve Cimri karşılaştırması kapsandı. Sonraki doğal blok **s.256–259 — yapı, monolog/diyalog, üslup ve tarih-kültür bilinci**dir.
+3. Tema Lesson Player üretimi **s.160–235** aralığında tamamlanmıştır: **18 doğal ders / 310 adım / 147 source / 147 answer** kaydı. Son blok **Tema Sonu Ölçme ve Değerlendirme s.230–235** (24 adım / 16 source / 16 answer) olup Venn şeması, Orhan Veli grafiği, biyografi yarışması ve sekiz satırlı değerlendirme tablosunu içerir. Basılı s.210–235 kaynakları 11. sınıf ders kitabı PDF'iyle karşılaştırılarak `VERIFIED` durumuna alındı; görülemeyen QR medya/rubrik ayrıntıları cevap bankasında kaynak sınırlı kalır. 4. Tema üretimi **s.236–262** aralığına ulaştı: **5 doğal ders / 78 adım / 39 source / 39 answer**. Hayatın Aynası girişi ile Ben, Mimar Sinan okuma, anlama, yapı çözümlemesi, dil bilgisi, değerler ve değerlendirme blokları kapsandı. Sonraki doğal blok **s.263–270 — Merdiven / küçürek hikâye**dir.
 
 Uygulama tek temaya veya derse bağlı değildir. Build sırasında `data/grade-11/presentation/theme-*/*-flow.json` dosyaları otomatik keşfedilir; her akış kendi temasının `source-index.json` ve `answer-bank.json` verisiyle doğrulanarak ortak ders kataloğuna eklenir.
 
