@@ -108,6 +108,54 @@ export function restoreOverrideEnvelope(raw, signature, validStepIds) {
   }
 }
 
+const orderSchemaVersion = 1;
+
+export function orderEnvelope(signature, order) {
+  return {
+    schemaVersion: orderSchemaVersion,
+    canonicalSignature: signature,
+    order
+  };
+}
+
+export function restoreOrderEnvelope(raw, signature, canonicalIds) {
+  const canonical = [...canonicalIds];
+  if (!raw) return { order: canonical, needsBackup: false };
+
+  try {
+    const parsed = JSON.parse(raw);
+    const isValidOrder = (value) =>
+      Array.isArray(value) &&
+      value.length === canonical.length &&
+      new Set(value).size === canonical.length &&
+      value.every((id) => typeof id === "string" && canonical.includes(id));
+
+    if (
+      parsed &&
+      !Array.isArray(parsed) &&
+      parsed.schemaVersion === orderSchemaVersion &&
+      parsed.canonicalSignature === signature &&
+      isValidOrder(parsed.order)
+    ) {
+      return { order: parsed.order, needsBackup: false };
+    }
+
+    // A legacy canonical array carries no customization; migrate it silently.
+    if (
+      Array.isArray(parsed) &&
+      isValidOrder(parsed) &&
+      parsed.every((id, index) => id === canonical[index])
+    ) {
+      return { order: canonical, needsBackup: false };
+    }
+
+    // Any custom legacy/stale/malformed order must not override a new canonical flow.
+    return { order: canonical, needsBackup: true };
+  } catch {
+    return { order: canonical, needsBackup: true };
+  }
+}
+
 export function restoredStepIndex(orderedIds, requestedStepId, savedStepId, legacyIndex) {
   for (const id of [requestedStepId, savedStepId]) {
     if (id) {
