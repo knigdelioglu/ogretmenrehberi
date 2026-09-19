@@ -71,10 +71,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 233 &&
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 234 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 157,
-  "Tema 4 tamamı 14 ders / 233 ekran / 143 kaynak / 157 cevap olmalı.");
+  "Tema 4 tamamı 14 ders / 234 ekran / 143 kaynak / 157 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -530,11 +530,18 @@ for (const step of posterWorkshop.steps) {
 
 const theme4Assessment = lessons.find(lesson => lesson.lesson_id === "T11-T04-DEGERLENDIRME-303-307");
 assert(theme4Assessment && theme4Assessment.printed_page_range === "303-307" &&
-  theme4Assessment.coverage.steps === 18 && theme4Assessment.coverage.source_records === 14 &&
+  theme4Assessment.coverage.steps === 19 && theme4Assessment.coverage.source_records === 14 &&
   theme4Assessment.coverage.answer_entries === 14,
-  "Tema 4 değerlendirme s.303–307 18 ekran / 14 kaynak / 14 cevap içermeli.");
+  "Tema 4 değerlendirme s.303–307 19 ekran / 14 kaynak / 14 cevap içermeli.");
 const theme4AssessmentById = new Map(theme4Assessment.steps.map(step => [step.id, step]));
-assert(theme4AssessmentById.size === 18, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
+assert(theme4AssessmentById.size === 19, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
+const theme4AssessmentOrderedIds = theme4Assessment.steps.map((step) => step.id);
+assert(
+  theme4AssessmentById.get("s307-aidiyet-media-reminder")?.layout === "process" &&
+    theme4AssessmentOrderedIds.indexOf("s307-aidiyet-media-reminder") <
+      theme4AssessmentOrderedIds.indexOf("s307-q13"),
+  "s.307 Aidiyet video hatırlatması soru 13'ten önce gelmeli."
+);
 for (const [id, sourceId, answerId] of [
   ["s303-q1","T04-S0130","T4-P303-Q01"],
   ["s304-q2","T04-S0131","T4-P304-Q02"],
