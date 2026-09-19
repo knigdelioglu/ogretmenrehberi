@@ -1,0 +1,316 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-YAZMA",
+  "lesson_slug": "tema-2-yazma",
+  "title": "Çevrim İçi Müze — İzlenim Yazısı",
+  "subtitle": "Edebiyat Atölyesi-2 · Yazma · Kültür Yolculuğu",
+  "printed_page_range": "148-154",
+  "required_source_range": {
+    "from": "T02-S0138",
+    "to": "T02-S0149"
+  },
+  "steps": [
+    {
+      "id": "s148-reference",
+      "source_record_id": "T02-S0138",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Sanal Müzecilikte Yeni Yaklaşımlar — okuma ve tartışma",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kaynak metni kitaptan okuyup sanal müzeciliğin imkânlarını yazma göreviyle ilişkilendirin.",
+        "sections": [
+          {
+            "title": "Zaman ve erişim",
+            "body": "Metin, sanal müzelere günün farklı saatlerinde ve coğrafi sınırları aşarak ulaşılabilmesine dikkat çeker."
+          },
+          {
+            "title": "Güncellenebilirlik",
+            "body": "Yeni eserlerin ve kültürel miras unsurlarının dijital sergilere daha hızlı eklenebilmesi vurgulanır."
+          },
+          {
+            "title": "Katılım",
+            "body": "Bazı sanal müzelerde ziyaretçi yorumlarının eserler etrafında yeni bir paylaşım ortamı oluşturabileceği belirtilir."
+          }
+        ],
+        "note": "Sınıfı yalnız sanal müzeler hakkında bilgi toplamaya değil; gerçek gezi sırasında gözlediklerini kişisel izlenime dönüştürmeye hazırlayın."
+      }
+    },
+    {
+      "id": "s149-research",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çevrim içi gezilebilen müzeleri araştırıp kısa tanıtım listesi hazırlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrenci gerçek erişimi doğrulayarak kısa ve farklı koleksiyonları temsil eden bir liste oluştursun.",
+        "items": [
+          "Resmî müze veya kurum sitesinden çevrim içi erişimi doğrulayın.",
+          "Müzenin adı, konumu ve koleksiyonunu kısaca kaydedin.",
+          "Sanal turda hangi imkânların sunulduğunu gerçekten kontrol edin.",
+          "Her kayıt için kaynak adresini not edip listenizi sınıfla paylaşın."
+        ]
+      }
+    },
+    {
+      "id": "s149-select",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF02",
+      "layout": "question",
+      "prompt": "İlgi alanlarınıza uygun bir müze seçiniz ve seçiminizi gerekçelendiriniz.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s149-plan",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "İzlenim yazısının yöntemini, amacını, hedef kitlesini ve yapısını planlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki 3–7. adımları uygulayın: metnin amacı, hedef kitlesi, düzeni, engelleri ve stratejisi birbiriyle uyumlu olsun.",
+        "items": [
+          "Gezi notlarınızı gözlem / duygu / kişisel yorum olarak ayırın.",
+          "Kime, neyi, neden yazacağınızı belirleyin.",
+          "Giriş-gelişme-sonuç için ana düşünce ve örnek seçin.",
+          "Kaynak, erişim ve zaman gibi yazma engellerini giderin."
+        ]
+      }
+    },
+    {
+      "id": "s150-task",
+      "source_record_id": "T02-S0140",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Kültürel Miras ve Müzeler — performans görevi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Amaç, çevrim içi gezdiğiniz müzeye ilişkin gerçek izlenimlerinizi yazıya dönüştürmek. Kitap bu çalışma için 8 ders saati öngörüyor.",
+        "items": [
+          "Kitaptaki Müzeler ve Toplum metnini okuyun.",
+          "Maddi kültür nesnesi ile nesnenin ardındaki görünmeyen kültürel anlamı ayırın.",
+          "Sanal geziyi gerçekleştirin; gerçekten gördüğünüz eser/bölümlere ilişkin not alın.",
+          "Hazırlık, taslak, gözden geçirme ve paylaşma basamaklarını izleyin."
+        ],
+        "note": "Henüz ziyaret edilmemiş bir müzeye ait eser ya da deneyimi hazır cevap olarak vermeyin."
+      }
+    },
+    {
+      "id": "s150-q1",
+      "source_record_id": "T02-S0141",
+      "answer_id": "T2-P150-Q01",
+      "layout": "question",
+      "prompt": "Okuduğunuz metinden hareketle müzelerde kültürümüzü yansıtabilecek unsurları tahmin ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s151-compare",
+      "source_record_id": "T02-S0142",
+      "answer_id": "T2-P151-PERF01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Müzelerde yer alabilecek kültür unsurlarını kendi hayatınızdakilerle karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Nesnenin aynısını aramayın; kültürel kullanımın bugün nasıl sürdüğünü, değiştiğini veya kaybolduğunu karşılaştırın."
+      }
+    },
+    {
+      "id": "s151-carriers",
+      "source_record_id": "T02-S0143",
+      "answer_id": "T2-P151-Q03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kültürün hangi yollarla aktarıldığını sınıflandırıp örneklerle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki dil örneğinden başlayarak diğer kültür taşıyıcılarını gerekçeli biçimde gruplandırın."
+      }
+    },
+    {
+      "id": "s151-enrich",
+      "source_record_id": "T02-S0144",
+      "answer_id": "T2-P151-PERF02",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Karşılaştırma ve sınıflandırmayı yazıya dönüştürüp içeriği zenginleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Müze-kültür çalışmasını arkadaşlarınızla paylaşın.",
+          "Listelemekle kalmayın; gözlemden kişisel çıkarım üretin.",
+          "Görsel/işitsel ögeyi yalnız ilgili düşünceyi destekliyorsa ekleyin.",
+          "Kısa alıntıda kaynak belirtin; başkasının metnini kendi yorumunuzun yerine koymayın."
+        ]
+      }
+    },
+    {
+      "id": "s152-rules-1",
+      "source_record_id": "T02-S0145",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İzlenim yazısını oluşturma ölçütleri — 1/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın yazma ölçütleri, ilk bölüm.",
+        "items": [
+          "Kime, neyi, nasıl ve hangi araçlarla anlatacağınızı planlayın.",
+          "Planla uyumlu, dikkat çekici bir giriş yazın.",
+          "İçeriğe uygun başlık belirleyin.",
+          "Başlatma, sürdürme ve bitirme ifadelerini yerinde kullanın.",
+          "Söz varlığını hedef kitleye ve bağlama göre seçin.",
+          "Düşünceyi anlatım biçimleri ve geliştirme yollarıyla destekleyin.",
+          "Özgün ve tutarlı bir üslupla duygu ve düşüncelerinizi aktarın."
+        ]
+      }
+    },
+    {
+      "id": "s152-rules-2",
+      "source_record_id": "T02-S0145",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İzlenim yazısını oluşturma ölçütleri — 2/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın kalan yazma ölçütleri.",
+        "items": [
+          "Vermek istediğiniz açık ve örtük iletileri ayrıntılandırın.",
+          "Millî-manevi değerleri ve kültürel unsurları gözetin.",
+          "Toplumsal hassasiyetlere aykırı ögelerden kaçınarak olumlu değerleri vurgulayın.",
+          "Dil bilgisi ve cümle yapılarını işlevine uygun kullanın.",
+          "Türkçeyi bilinçli ve özenli kullanın.",
+          "Yazım kurallarını ve noktalamayı son kez kontrol edin."
+        ]
+      }
+    },
+    {
+      "id": "s152-draft",
+      "source_record_id": "T02-S0145",
+      "answer_id": "T2-P152-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Gerçek sanal müze gezi notlarından kendi izlenim yazınızın taslağını yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu yalnız bir iskelettir; köşeli alanları gerçekten gördüğünüz müze eserleri, izlenim ve yorumlarla doldurun."
+      }
+    },
+    {
+      "id": "s152-check",
+      "source_record_id": "T02-S0145",
+      "answer_id": "T2-P152-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "İzlenim yazısı — teslim öncesi 10 maddelik kontrol",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Başlık içeriğe uygun mu?",
+          "Giriş müzeyi ve yazma amacını tanıtıyor mu?",
+          "Her paragrafta tek ana düşünce var mı?",
+          "Gözlem ile kişisel yorum ayrılabiliyor mu?",
+          "Görsel ve alıntı metinde işlev görüyor mu?",
+          "Kültürel unsur gerçekten kaynakta gözlendi mi?",
+          "Dil ve üslup hedef kitleye uygun mu?",
+          "Gereksiz tekrar / anlatım bozukluğu var mı?",
+          "Yazım ve noktalama kontrol edildi mi?",
+          "Sonuç kişisel kazanımı belirtiyor mu?"
+        ]
+      }
+    },
+    {
+      "id": "s153-feedback",
+      "source_record_id": "T02-S0146",
+      "answer_id": "T2-P153-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Öz ve akran geri bildirimlerini düzeltme hedefine dönüştürünüz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kısmen / Hayır işaretlenen ölçütler gerçek metin üzerinde somut değişikliğe dönüşmeli.",
+        "items": [
+          "Öğretmenin genel değerlendirmesi ile öz/akran geri bildirimlerini karşılaştırın.",
+          "Eksik görülen ölçüt için somut metin düzeltmesi yapın.",
+          "Sonraki çalışmaya yönelik yeni hedef belirleyin.",
+          "Düzeltilmiş yazınızı uygun sınıf/okul ortamında paylaşın."
+        ]
+      }
+    },
+    {
+      "id": "s153-self-1",
+      "source_record_id": "T02-S0147",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 1/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçüte kendi yazınıza bakarak Evet / Kısmen / Hayır kararı verin.",
+        "items": [
+          "Kime, neyi, nasıl ve hangi araçlarla anlatacağımı planladım.",
+          "Planıma uygun, dikkat çekici bir giriş yazdım.",
+          "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
+          "Anlatım biçimi ve düşünceyi geliştirme yollarından yararlandım.",
+          "Türkçenin bağdaşıklık ögelerine dikkat ettim."
+        ]
+      }
+    },
+    {
+      "id": "s153-self-2",
+      "source_record_id": "T02-S0147",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öz değerlendirme — 2/2",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "items": [
+          "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
+          "Toplumsal hassasiyet oluşturacak ögelerden kaçındım.",
+          "Millî-manevi değerleri ve kültürel unsurları gözetip olumlu tutumları vurguladım.",
+          "İçeriğe uygun bir başlık belirledim.",
+          "Duygu, düşünce ve hayallerimi özgün ve tutarlı üslupla ifade ettim."
+        ]
+      }
+    },
+    {
+      "id": "s153-rubric",
+      "source_record_id": "T02-S0148",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Dereceli puanlama ve akran değerlendirme — QR kaynak sınırı",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap ayrıntılı dereceli puanlama ve akran değerlendirme formlarına QR ile yönlendiriyor.",
+        "sections": [
+          {
+            "title": "Sayfada görünür ölçütler",
+            "body": "Dil ve üslup, özgünlük, öznel/nesnel ifadeler, görsel kullanımı, yazım ve noktalama."
+          },
+          {
+            "title": "Öğretmen uygulaması",
+            "body": "Öz değerlendirmede Kısmen / Hayır işaretlenen maddeleri sonraki düzeltmeye bağlayın."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "QR formlarına erişmeden puan aralığı veya ek ölçüt uydurmayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s154-journal",
+      "source_record_id": "T02-S0149",
+      "answer_id": "T2-P154-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Öğrenme Günlüğü — tema boyunca öğrendiklerim ve geliştireceklerim",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Günlüğü öğrenci kendi öğrenmesine dayanarak doldurur; aşağıdaki cevap yalnız örnek ayrıntı düzeyidir."
+      }
+    }
+  ]
+}
