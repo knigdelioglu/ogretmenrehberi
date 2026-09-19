@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 6,
-  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul, Orhun, Dîvânu Lugâti’t-Türk ve Konuşma dersleri bulunmalı."
+  theme2Lessons.length === 7,
+  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul, Orhun, Dîvânu Lugâti’t-Türk, Konuşma ve Âşık Atışması dersleri bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -237,10 +237,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 132 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 115 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 122,
-  "Tema 2 mevcut üretim 132 adım / 115 source / 122 answer olmalı."
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 159 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 137 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 147,
+  "Tema 2 mevcut üretim 159 adım / 137 source / 147 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -386,6 +386,55 @@ assert(
       (section) => section.title === "Kaynak sınırı"
     ),
   "s.135 QR dereceli/akran formları görünmeyen ayrıntılar uydurulmadan referans ekranında kalmalı."
+);
+
+const asik = byLessonId.get("T11-T02-ASIK-ATISMASI");
+assert(asik, "2. Tema Âşık Atışması dersi catalog içinde bulunamadı.");
+assert(
+  asik.printed_page_range === "136-147",
+  "Âşık Atışması doğal bloğu s.136–147 aralığını kapsamalı."
+);
+assert(
+  asik.coverage.steps === 27 &&
+    asik.coverage.source_records === 22 &&
+    asik.coverage.answer_entries === 25,
+  "Âşık Atışması 27 adım / 22 source / 25 answer olmalı."
+);
+
+const asikById = new Map(asik.steps.map((step) => [step.id, step]));
+assert(
+  asikById.get("s137-plan")?.answer?.entry_type === "performance_support" &&
+    asikById.get("s139-checklist")?.content?.items?.length === 6 &&
+    asikById.get("s139-observation")?.answer === null,
+  "Dinleme planı, altı maddelik kontrol listesi ve öğretmen gözlemi ayrı süreçler olarak korunmalı."
+);
+assert(
+  asikById.get("s140-listen")?.answer === null &&
+    asikById.get("s140-vocabulary")?.answer?.entry_type === "source_limited" &&
+    asikById.get("s140-vocabulary")?.content?.items?.length === 5,
+  "Gerçek video dinleme adımı ile bağlama bağımlı beş sözcük ayrılmalı."
+);
+assert(
+  asikById.get("s142-q2")?.answer?.entry_type === "source_limited" &&
+    asikById.get("s143-language")?.answer?.entry_type === "source_limited" &&
+    asikById.get("s144-map")?.answer?.entry_type === "source_limited",
+  "Benzetme, video dili ve çok modlu unsur çözümlemeleri kaynak-sınırlı kalmalı."
+);
+assert(
+  asikById.get("s145-hats")?.answer?.entry_type === "source_limited" &&
+    Object.keys(asikById.get("s145-hats")?.answer?.answer_sections ?? {}).length === 6,
+  "Altı şapka çerçevesi korunmalı ancak gerçek video içeriği uydurulmamalı."
+);
+assert(
+  asikById.get("s146-viewpoints")?.answer?.entry_type === "performance_support" &&
+    asikById.get("s146-viewpoints")?.content?.items?.length === 4,
+  "s.146 görüş geliştirme dört kitap yargısını görünür tutmalı."
+);
+assert(
+  asikById.get("s147-q1")?.answer?.entry_type === "source_limited" &&
+    asikById.get("s147-reflection")?.answer?.entry_type === "performance_support" &&
+    asikById.get("s147-reflection")?.content?.items?.length === 5,
+  "s.147 performans değerlendirmesi kaynak-sınırlı; yansıtıcı yazı beş soruluk yapı olmalı."
 );
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
