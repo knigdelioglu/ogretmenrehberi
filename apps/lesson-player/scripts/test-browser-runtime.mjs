@@ -128,7 +128,7 @@ try {
   const reference = `${root}/?lesson=T11-T01-KARAGOZ&step=s26-reference`;
   await teacher.send("Page.navigate", { url: reference });
   await until(
-    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('bölümleri')"),
+    () => teacher.evaluate("document.body.innerText.includes('Mukaddime')"),
     "Teacher-only reference step"
   );
   await teacher.evaluate(
@@ -136,7 +136,7 @@ try {
   );
   const student = await connectTarget(port, (target) => target.url.includes("display=1"));
   await until(
-    () => student.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('bölümleri')"),
+    () => student.evaluate("document.body.innerText.includes('Mukaddime')"),
     "Student projection opens"
   );
   await teacher.evaluate("window.dispatchEvent(new KeyboardEvent('keydown', { key: ' ', bubbles: true }))");
