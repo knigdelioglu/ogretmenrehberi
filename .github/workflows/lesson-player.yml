@@ -1072,6 +1072,60 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-three.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s193-three"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-prep.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s194-q1"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-life.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s194-q2"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-prediction.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s195-prediction"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s195-reading"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-anthem.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s196-anthem"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-bio-vocab.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-BIYOGRAFI-AKIF-194-198&step=s198-vocab"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1191,5 +1245,11 @@ jobs:
             lesson-player-theme3-exit-voice.png
             lesson-player-theme3-exit-exit.png
             lesson-player-theme3-exit-three.png
+            lesson-player-theme3-bio-prep.png
+            lesson-player-theme3-bio-life.png
+            lesson-player-theme3-bio-prediction.png
+            lesson-player-theme3-bio-reading.png
+            lesson-player-theme3-bio-anthem.png
+            lesson-player-theme3-bio-vocab.png
             apps/lesson-player/dist
           if-no-files-found: error
