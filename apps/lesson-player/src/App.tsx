@@ -98,9 +98,10 @@ function restoredIndex() {
 function restoredOverrides(): {
   overrides: StepOverrides;
   warning: string | null;
+  backupKey: string | null;
   canPersist: boolean;
 } {
-  if (displayOnly) return { overrides: {}, warning: null, canPersist: false };
+  if (displayOnly) return { overrides: {}, warning: null, backupKey: null, canPersist: false };
   const raw = window.localStorage.getItem(overridesKey);
   const restored = restoreOverrideEnvelope<StepOverrides>(
     raw,
@@ -108,21 +109,24 @@ function restoredOverrides(): {
     lesson.steps.map((step) => step.id)
   );
   if (!restored.needsBackup) {
-    return { overrides: restored.overrides, warning: null, canPersist: true };
+    return { overrides: restored.overrides, warning: null, backupKey: null, canPersist: true };
   }
 
   try {
     // Archive legacy and stale edits before writing the new canonical revision.
-    window.localStorage.setItem(`${overridesKey}.backup.${Date.now()}`, raw ?? "");
+    const backupKey = `${overridesKey}.backup.${Date.now()}`;
+    window.localStorage.setItem(backupKey, raw ?? "");
     return {
       overrides: {},
       warning: "Önceki sürüme ait yerel düzenlemeler yedeklendi; güncel ders içeriği yüklendi.",
+      backupKey,
       canPersist: true
     };
   } catch {
     return {
       overrides: {},
       warning: "Eski düzenlemeler yedeklenemedi; eski veri korunuyor, yeni değişiklikler kaydedilmeyecek.",
+      backupKey: null,
       canPersist: false
     };
   }
@@ -601,6 +605,23 @@ export default function App() {
           {!displayOnly && overrideWarning ? (
             <div className="override-warning" role="status">
               <span>{overrideWarning}</span>
+              {overrideRestore.backupKey ? (
+                <button type="button" onClick={() => {
+                  const raw = window.localStorage.getItem(overrideRestore.backupKey!);
+                  if (raw === null) return;
+                  const blob = new Blob([raw], { type: "application/json" });
+                  const href = URL.createObjectURL(blob);
+                  const link = document.createElement("a");
+                  link.href = href;
+                  link.download = `${lesson.lesson_slug}-old-edits-backup.json`;
+                  document.body.appendChild(link);
+                  link.click();
+                  link.remove();
+                  URL.revokeObjectURL(href);
+                }}>
+                  Eski düzenlemeleri indir
+                </button>
+              ) : null}
               <button type="button" onClick={() => setOverrideWarning(null)}>
                 Kapat
               </button>
