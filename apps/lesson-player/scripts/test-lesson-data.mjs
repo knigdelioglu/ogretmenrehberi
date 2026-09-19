@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 12, "Tema 3 biyografi s.202–205 ile on iki doğal blok içermeli.");
+assert(theme3Lessons.length === 13, "Tema 3 tezkire s.206–209 ile on üç doğal blok içermeli.");
 
 const akif202 = lessons.find(lesson => lesson.lesson_id === "T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205");
 assert(akif202 && akif202.printed_page_range === "202-205" &&
@@ -68,6 +68,47 @@ assert(akif202ById.get("s205-asim-q1")?.answer?.entry_type === "performance_supp
 for (const step of akif202.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Âkif s.202–205 kaynak doğrulaması: ${step.source.source_record_id}`);
+}
+
+const usuli = lessons.find(lesson => lesson.lesson_id === "T11-T03-USULI-TEZKIRE-206-209");
+assert(usuli && usuli.printed_page_range === "206-209" &&
+  usuli.coverage.steps === 15 && usuli.coverage.source_records === 11 &&
+  usuli.coverage.answer_entries === 10,
+  "Usûlî s.206–209, 15 ekran / 11 kaynak / 10 cevap içermeli.");
+const usuliById = new Map(usuli.steps.map(step => [step.id, step]));
+assert(usuliById.size === 15, "Usûlî s.206–209 ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s208-q1", "T03-S0079", "T3-P208-PERF01"],
+  ["s208-q2", "T03-S0080", "T3-P208-Q02"],
+  ["s208-q3", "T03-S0081", "T3-P208-Q03"],
+  ["s208-q4", "T03-S0082", "T3-P208-Q04"],
+  ["s208-q5", "T03-S0083", "T3-P208-Q05"],
+  ["s208-q6", "T03-S0084", "T3-P208-Q06"],
+  ["s209-q1", "T03-S0085", "T3-P209-PERF01"],
+  ["s209-q2", "T03-S0086", "T3-P209-PERF02"],
+  ["s209-q3", "T03-S0087", "T3-P209-PERF03"],
+  ["s209-q4", "T03-S0088", "T3-P209-Q04"]
+]) {
+  assert(usuliById.get(id)?.source?.source_record_id === sourceId &&
+    usuliById.get(id)?.answer?.question_id === answerId,
+    `Usûlî s.206–209 kanonik kaynak/cevap bağlantısı: ${id}`);
+}
+assert(usuliById.get("s206-reference")?.answer === null &&
+  usuliById.get("s207-reading")?.answer === null &&
+  usuliById.get("s208-word-method")?.answer === null &&
+  usuliById.get("s208-q3-layout")?.answer === null &&
+  usuliById.get("s209-criteria")?.answer === null,
+  "Usûlî yardımcı süreç ve bilgi ekranları cevap uydurmamalı.");
+assert(usuliById.get("s208-q1")?.layout === "structure" &&
+  Object.keys(usuliById.get("s208-q1")?.answer?.answer_sections ?? {}).length === 10,
+  "Usûlî on kelimenin yapılandırılmış anlam/örnek verisi kaybolmamalı.");
+assert(usuliById.get("s209-q1")?.answer?.entry_type === "performance_support" &&
+  usuliById.get("s209-q2")?.answer?.entry_type === "performance_support" &&
+  usuliById.get("s209-q3")?.answer?.entry_type === "performance_support",
+  "Usûlî değerlendirme sorularında öğrenci görüşü tek doğruya indirgenmemeli.");
+for (const step of usuli.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Usûlî s.206–209 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -167,9 +208,9 @@ for(const step of huzurReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
 }
-assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===198 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===78 &&
-  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===79,
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===213 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===89 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===89,
   "Tema 3 mevcut kapsamı 181 adım / 66 source / 67 answer olmalı.");
 
 
@@ -209,9 +250,9 @@ assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü M
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
-assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 198 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 78 &&
-  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 79,
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 213 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 89 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 89,
   "Tema 3 mevcut kapsamı 11 ders / 181 adım / 66 source / 67 answer olmalı.");
 
 
