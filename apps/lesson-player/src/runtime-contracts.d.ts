@@ -35,3 +35,9 @@ export function studentVisibleOverrides<T extends Record<string, {
   content?: StepContent | null;
   reveal_order?: RevealKey[];
 }>>(overrides: T): T;
+
+export function projectionLessonUrl(
+  href: string,
+  lessonId: string,
+  stepId?: string
+): string;
