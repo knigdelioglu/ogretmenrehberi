@@ -221,15 +221,21 @@ try {
   for (const check of [
     {
       lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
-      step: "s272-table",
+      step: "s273-q1",
       selector: '[data-content-layout="comparison"] .comparison-criterion',
       count: 7
     },
     {
       lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
-      step: "s272-q2",
+      step: "s273-density",
       selector: '[data-content-layout="comparison"] .comparison-pair .reference-card',
       count: 2
+    },
+    {
+      lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
+      step: "s272-table",
+      selector: '[data-content-layout="structure"] .structure-field',
+      count: 7
     },
     {
       lesson: "T11-T04-MERDIVEN-COZUMLEME-274-279",
@@ -261,7 +267,7 @@ try {
     );
   }
 
-  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, five dedicated layout views.");
+  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views.");
 } finally {
   for (const client of clients) client.close();
   browser.kill();
