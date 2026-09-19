@@ -251,7 +251,7 @@
       "layout": "question",
       "density": "compact",
       "prompt": "Çözümleyebilme 3 — Yapı unsurlarının birlikte kullanılması biyografinin üslubunu nasıl etkiler?",
-      "prompt_mode": "VERBATIM_SHORT",
+      "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Zaman, mekân, görev ve eser bilgilerinin birbirine bağlandığı bir bölümden hareketle cevaplayın."
       }
@@ -263,7 +263,7 @@
       "layout": "structure",
       "density": "compact",
       "prompt": "Çözümleyebilme 4 — Metindeki millî, manevi ve evrensel değerleri belirleyiniz.",
-      "prompt_mode": "VERBATIM_SHORT",
+      "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Bir değer söylerken biyografideki hangi davranışın, eserin veya olayın buna dayanak olduğunu da sorun.",
         "items": [
