@@ -14,7 +14,7 @@ assert(
   theme2Intro.coverage.steps === 15 &&
     theme2Intro.coverage.source_records === 14 &&
     theme2Intro.coverage.answer_entries === 12,
-  "2. Tema giriş bloğu 14 adım / 14 source / 12 answer olmalı."
+  "2. Tema giriş bloğu 15 adım / 14 source / 12 answer olmalı."
 );
 
 const theme2IntroById = new Map(
@@ -26,6 +26,17 @@ assert(
     theme2IntroById.get("s85-theme-presentation")?.answer === null,
   "s.84–85 tema açılışı cevapsız referans ekranları olarak korunmalı."
 );
+const s85Theme = theme2IntroById.get("s85-theme-presentation");
+assert(
+  s85Theme?.display_prompt.includes("Tema Sunusu") &&
+    s85Theme?.content?.sections?.some((section) =>
+      section.body.includes("Onlar da bu dünyadan geldi geçti")
+    ) &&
+    s85Theme?.content?.sections?.some((section) =>
+      section.body.includes("karekod")
+    ),
+  "s.85 Dede Korkut alıntısı ve Tema Sunusu karekod hatırlatması görünür olmalı."
+);
 assert(
   theme2IntroById.get("s86-q1")?.answer?.question_id === "T2-P86-Q01" &&
     theme2IntroById.get("s86-q3")?.answer?.guidance,
@@ -36,11 +47,17 @@ assert(
     theme2IntroById.get("s87-q2")?.answer?.evidence_quotes?.length === 1,
   "s.87 alfabe-yazı dili ayrımı ve metin kanıtı korunmalı."
 );
+for (const id of ["s88-q1", "s88-q2", "s88-q3", "s88-q4", "s88-q5", "s88-q6"]) {
+  assert(
+    theme2IntroById.get(id)?.answer?.entry_type === "source_limited" &&
+      theme2IntroById.get(id)?.answer?.guidance,
+    `s.88 çok modlu metin sorusu source_limited ve yönlendirmeli olmalı: ${id}`
+  );
+}
 assert(
-  theme2IntroById.get("s88-q3")?.answer?.guidance &&
-    theme2IntroById.get("s88-q1")?.answer?.explanation &&
+  theme2IntroById.get("s88-q1")?.answer?.explanation &&
     theme2IntroById.get("s88-q5")?.answer?.explanation,
-  "s.88 açık uçlu ve QR-bağlamlı soruların öğretmen rehberliği korunmalı."
+  "s.88 kitap soru kökünden doğrulanabilen çerçeve açıklamaları korunmalı."
 );
 for (const step of theme2Intro.steps) {
   assert(
@@ -169,7 +186,7 @@ assert(
   orhun.coverage.steps === 34 &&
     orhun.coverage.source_records === 30 &&
     orhun.coverage.answer_entries === 32,
-  "Orhun Abideleri 33 adım / 30 source / 32 answer olmalı."
+  "Orhun Abideleri 34 adım / 30 source / 32 answer olmalı."
 );
 
 const orhunById = new Map(orhun.steps.map((step) => [step.id, step]));
@@ -265,7 +282,7 @@ assert(
   speaking2.coverage.steps === 19 &&
     speaking2.coverage.source_records === 13 &&
     speaking2.coverage.answer_entries === 14,
-  "2. Tema Konuşma 18 adım / 13 source / 14 answer olmalı."
+  "2. Tema Konuşma 19 adım / 13 source / 14 answer olmalı."
 );
 
 const speaking2ById = new Map(speaking2.steps.map((step) => [step.id, step]));
