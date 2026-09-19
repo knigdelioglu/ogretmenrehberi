@@ -1,0 +1,251 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255",
+  "lesson_slug": "ben-mimar-sinan-anlama-251-255",
+  "title": "Ben, Mimar Sinan — Anlama ve Karşılaştırma",
+  "subtitle": "Hayatın Aynası · Karakter / Cimri / tiyatro türleri / dekor",
+  "printed_page_range": "251-255",
+  "required_source_range": {
+    "from": "T04-S0016",
+    "to": "T04-S0023"
+  },
+  "steps": [
+    {
+      "id": "s251-q1",
+      "source_record_id": "T04-S0016",
+      "answer_id": "T4-P251-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 1 — Oyunun konusu, yazılma amacı ve metin–yazar ilişkisini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üç alanı aynı cümleyle doldurmayın. Önce oyundan konu ve amaç için dayanak bulun, ardından yazarın tarihî ve kültürel ilgisiyle ilişkilendirin.",
+        "items": [
+          "Konu",
+          "Yazılma amacı",
+          "Metin–yazar ilişkisi"
+        ]
+      }
+    },
+    {
+      "id": "s251-q2a",
+      "source_record_id": "T04-S0017",
+      "answer_id": "T4-P251-Q02A",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 2/a — Kişilerin sözlerinden özelliklerini çıkarınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.251–252 tablosunda kişiye ait sözü okuyup yalnız onun desteklediği özelliği yazın.",
+        "items": [
+          "Mimar Sinan — yapıları inceleme ve öğrenme",
+          "15. Ses — kalıcı bir eser isteği",
+          "9. Ses — mimari yapıları karşılaştırma",
+          "Mimar Sinan — yapabileceğini söyleme ve sözü tutma"
+        ],
+        "note": "'Ses' numaraları kitapta oyuncu adı değil, oyundaki konuşma işaretidir; kaynakta bulunmayan tarihî kişi adları eklemeyin."
+      }
+    },
+    {
+      "id": "s252-characters",
+      "source_record_id": "T04-S0017",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Karakter tablosu devamı — Kalan üç sözün desteklediği özellikleri belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her özelliği ilgili repliğe dayandırın; tablonun yedi satırını tamamlayın.",
+        "items": [
+          "8. Ses — zamanın geçiciliği ve eser bırakma isteği",
+          "3. Ses — mimarbaşılığa uygun kişiyi belirleme",
+          "Mimar Sinan — verilen işi söz verilen zamanda tamamlama"
+        ],
+        "note": "Cevap kaydı önceki ekranla ortaktır; yeni ve bağımsız bir kitap sorusu oluşturulmaz."
+      }
+    },
+    {
+      "id": "s252-q2bc",
+      "source_record_id": "T04-S0017",
+      "answer_id": "T4-P252-PERF02BC",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 2/b–c — Sizi etkileyen özellik ve tanınmak istediğiniz yönler.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce oyunda sizi etkileyen bir özelliği söz veya davranışla gerekçelendirin; ardından kişisel tercihinizi ayrı ifade edin.",
+        "items": [
+          "2/b: Hangi kişilik özelliği sizi etkiledi? Neden?",
+          "2/c: Başarılı biri olsaydınız hangi özelliklerinizle tanınmak isterdiniz?"
+        ],
+        "note": "Örnek öğrenci yanıtı kişisel deneyim yerine geçmez; farklı gerekçeli görüşler mümkündür."
+      }
+    },
+    {
+      "id": "s252-q3",
+      "source_record_id": "T04-S0018",
+      "answer_id": "T4-P252-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 3/a–b — Bilgi, azim ve çalışkanlığın başarıdaki rolünü yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce Sinan'ın zorluk karşısında bilgisini nasıl kullandığını metinden gösterin. Ardından başarı için gerekli olabilecek başka özellikleri gerekçelendirin."
+      }
+    },
+    {
+      "id": "s253-cimri",
+      "source_record_id": "T04-S0019",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Cimri — Harpagon'un söz ve davranışlarını inceleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.253–254'ündeki parçayı okuyun. Para saklama kaygısı, kuşku, çocuklarla konuşma ve evlilik meselesini ayrı gözleyin.",
+        "items": [
+          "Harpagon'un tekrarlanan düşüncesini bulun.",
+          "Çocuklarıyla konuşmasında yanlış anlama ve mizahı belirleyin.",
+          "Oyunun dilinde hızlanan karşılıklı konuşmaları işaretleyin."
+        ],
+        "note": "Cimri'nin yalnız kitapta verilen parçasıyla karşılaştırma yapın; romandan veya oyunun tamamından görülmeyen olayları eklemeyin."
+      }
+    },
+    {
+      "id": "s254-q1",
+      "source_record_id": "T04-S0019",
+      "answer_id": "T4-P254-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 1 — Ben, Mimar Sinan ile Cimri'yi dört başlıkta karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "T diyagramındaki her başlıkta iki oyunu da ele alın. Dönem karşılaştırmasında metnin ele aldığı tarihî zamanla yazıldığı zamanı ayırın.",
+        "items": [
+          "İçerik",
+          "Dönem",
+          "Zihniyet",
+          "Üslup"
+        ]
+      }
+    },
+    {
+      "id": "s254-caution",
+      "source_record_id": "T04-S0019",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Karşılaştırma için kaynak sınırı — Dönem bilgisi.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mimar Sinan oyunu XVI. yüzyıl Osmanlı dünyasını sahneler. Cimri'nin verilen kesiti ise kesin tarih bilgisi vermiyor.",
+        "sections": [
+          {
+            "title": "Sahnelenen zaman",
+            "body": "Oyunda anlatılan olayların ait olduğu tarihî bağlam."
+          },
+          {
+            "title": "Yazıldığı dönem",
+            "body": "Yazarın yaşadığı veya oyunun üretildiği dönem; kitap kesitinde verilmemişse dış bilgiyi metnin içeriği gibi sunmayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s254-q2",
+      "source_record_id": "T04-S0020",
+      "answer_id": "T4-P254-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 2 — İki tiyatro metni dram, komedi ve trajedi bakımından nasıl sınıflandırılır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tür etiketini ezberden söylemek yerine oyunun olay işleme biçimi, tonu ve kişiler üzerindeki etkisiyle gerekçelendirin."
+      }
+    },
+    {
+      "id": "s255-q1",
+      "source_record_id": "T04-S0021",
+      "answer_id": "T4-P255-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Ben, Mimar Sinan'ın ana olay çizgisini özetleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Özet bir tarih listesi olmasın; oyunun başlangıç ve ilerleyiş ilişkisini koruyun.",
+        "items": [
+          "Ağırnas, İstanbul ve öğrenme yılları",
+          "Ayasofya'dan etkilenme ve mimarlık hedefi",
+          "Askerî görevler, gözlem ve teknik çözümler",
+          "Mimarbaşılık ve büyük eserler",
+          "Toplumun birikimiyle ilişkilendirilen başarı"
+        ]
+      }
+    },
+    {
+      "id": "s255-q2",
+      "source_record_id": "T04-S0022",
+      "answer_id": "T4-P255-Q02",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2/a–b — Yazılma amacı, dil–üslup ve tarihî gerçeklik ilişkisini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Oyunun tarihî kişiyi tanıtma amacıyla sahne sanatının anlatım imkânlarını birlikte düşünün.",
+        "sections": [
+          {
+            "title": "Amaç ve üslup",
+            "body": "İzleyiciye seslenme, açıklayıcı bilgiler ve görsel-işitsel sahne yönergeleri."
+          },
+          {
+            "title": "Tarihî gerçeklik",
+            "body": "Gerçek kişi, yapı ve yerlerden yararlanan; dramatik konuşma ve olay düzeniyle yeniden kurulmuş oyun."
+          }
+        ],
+        "note": "Oyun kişisinin her sözü bağımsız belge değildir; bilgi görselindeki kesinleşmemiş doğum tarihi buna somut örnektir."
+      }
+    },
+    {
+      "id": "s255-q3",
+      "source_record_id": "T04-S0023",
+      "answer_id": "T4-P255-PERF03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 3 — Ben, Mimar Sinan sahnelenirken nasıl bir dekor tasarlarsınız?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sabit ve ağır dekoru çoğaltmadan farklı mekânların nasıl gösterilebileceğini tartışın.",
+        "items": [
+          "Çizim tezgâhı ve mimarlık araçları",
+          "Ayasofya ve büyük yapıların fon görüntüleri",
+          "Sefer, saray ve yapım sahneleri için ışık ve ses",
+          "Geçişlerin olayın anlaşılırlığına katkısı"
+        ],
+        "note": "Dekor tasarımı özgün bir öneridir; tek zorunlu malzeme listesi olarak sunulmaz."
+      }
+    },
+    {
+      "id": "s255-stage",
+      "source_record_id": "T04-S0023",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dekor önerinizi oyunun sahne yönergeleriyle kontrol ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metinden bir sahne yönergesi seçin ve tasarımınızın onu nasıl karşıladığını gösterin.",
+        "sections": [
+          {
+            "title": "Oyun gerekçesi",
+            "body": "Metinde geçen bir mekân veya olay geçişini belirtin."
+          },
+          {
+            "title": "Sahne çözümü",
+            "body": "Işık, fon, ses veya sembolik eşyanın o geçişteki işlevini açıklayın."
+          },
+          {
+            "title": "Sınır",
+            "body": "Tarihî nesne veya sahne ayrıntısını yalnız görsel etkisi için kaynakta varmış gibi sunmayın."
+          }
+        ]
+      }
+    }
+  ]
+}
