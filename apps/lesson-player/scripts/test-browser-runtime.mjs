@@ -217,7 +217,51 @@ try {
   })()`);
   if (!safe) throw new Error("Legacy overrides masked current content or were not backed up.");
 
-  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup.");
+  // Verify that Chrome renders each layout, not merely that JSON contains its items.
+  for (const check of [
+    {
+      lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
+      step: "s272-table",
+      selector: '[data-content-layout="comparison"] .comparison-criterion',
+      count: 7
+    },
+    {
+      lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
+      step: "s272-q2",
+      selector: '[data-content-layout="comparison"] .comparison-pair .reference-card',
+      count: 2
+    },
+    {
+      lesson: "T11-T04-MERDIVEN-COZUMLEME-274-279",
+      step: "s275-work",
+      selector: '[data-content-layout="structure"] .structure-field',
+      count: 4
+    },
+    {
+      lesson: "T11-T04-TIYATRO-CANLANDIRMA-280-283",
+      step: "s281-plan",
+      selector: '[data-content-layout="process"] .process-list__row',
+      count: 6
+    },
+    {
+      lesson: "T11-T04-TIYATRO-CANLANDIRMA-280-283",
+      step: "s283-performance",
+      selector: '[data-content-layout="assessment"] .assessment-criterion',
+      count: 5
+    }
+  ]) {
+    await teacher.send("Page.navigate", {
+      url: `${root}/?lesson=${check.lesson}&step=${check.step}`
+    });
+    await until(
+      () => teacher.evaluate(
+        `document.querySelectorAll(${JSON.stringify(check.selector)}).length === ${check.count}`
+      ),
+      `Dedicated content layout: ${check.lesson}/${check.step}`
+    );
+  }
+
+  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, five dedicated layout views.");
 } finally {
   for (const client of clients) client.close();
   browser.kill();
