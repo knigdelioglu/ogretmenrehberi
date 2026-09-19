@@ -316,7 +316,8 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Ölçme ve Değerlendirme — s.155–159
 - [~] 3. Tema — Yaşamın İzinde
   - [x] Tema Girişi / Temaya Başlarken — s.160–163
-  - [ ] Huzur: Konuya Başlarken / Metni Okuyalım — s.164–174
+  - [x] Huzur: Konuya Başlarken / Metni Okuyalım — s.164–174
+  - [ ] Huzur: Metni Anlayalım / Metin Tahlili — s.175–193
 - [ ] 4. Tema — Hayatın Aynası
 
 Her tema için aynı pipeline:
@@ -427,4 +428,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** s.164–174 Huzur / Konuya Başlarken–Metni Okuyalım doğal bloğunu resmî kitabın sayfalarıyla doğrulayarak üretmek. Tema 3 giriş s.160–163: 1 ders / 8 adım / 7 VERIFIED source / 6 answer. Tema 1 ve 2 kalite kapsamını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** s.175–193 Huzur / Metni Anlayalım ve metin tahlili doğal bloğunu küçük parçalara ayırarak gerçek ders kitabından üretmek. Tema 3 mevcut: 2 ders / 31 adım / 15 VERIFIED source / 16 answer. Tema 1 ve Tema 2 kalite kapsamını korumak.

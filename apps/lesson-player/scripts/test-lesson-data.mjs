@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 1, "Tema 3 üretimi başlangıçta tek giriş bloğu içermeli.");
+assert(theme3Lessons.length === 2, "Tema 3 giriş ve Huzur okuma bloklarını içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -70,6 +70,64 @@ for(const step of theme3Intro.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 3 giriş source kaydı VERIFIED olmalı: ${step.source.source_record_id}`);
 }
+
+
+const huzurReading = byLessonId.get("T11-T03-HUZUR-OKUMA");
+assert(huzurReading && huzurReading.printed_page_range === "164-174",
+  "Huzur okuma s.164–174 doğal bloğu bulunmalı.");
+assert(huzurReading.coverage.steps === 23 &&
+  huzurReading.coverage.source_records === 8 &&
+  huzurReading.coverage.answer_entries === 10,
+  "Huzur okuma 23 adım / 8 source / 10 answer kapsamını korumalı.");
+const huzurById = new Map(huzurReading.steps.map(step => [step.id, step]));
+for(const [id, qid] of [
+  ["s164-q1","T3-P164-Q01"],["s164-q2","T3-P164-Q02"],["s164-q3","T3-P164-Q03"],
+  ["s165-research","T3-P165-PERF01"],["s165-166-fark","T3-P165-PERF02"],
+  ["s166-predict","T3-P166-PERF01"],["s166-read-method","T3-P166-PERF02"],
+  ["s172-vocabulary","T3-P172-VOC01"],["s172-other","T3-P172-PERF01"],
+  ["s174-style","T3-P174-PERF01"]
+]) {
+  assert(huzurById.get(id)?.answer?.question_id === qid,
+    `Huzur kanonik answer bağlantısı eksik: ${id}`);
+}
+assert(huzurById.get("s165-guess")?.answer === null &&
+  huzurById.get("s165-share")?.answer === null &&
+  huzurById.get("s165-research")?.answer?.entry_type === "performance_support",
+  "İlk tahmin ile sonradan doğrulanan bilgi ayrı tutulmalı.");
+assert(Object.keys(huzurById.get("s165-166-fark")?.answer?.answer_sections ?? {}).length === 6 &&
+  huzurById.get("s165-166-fark")?.content?.items?.length === 6 &&
+  huzurById.get("s165-166-fark")?.answer?.answer_sections?.saz?.length === 2,
+  "Fark Edelim altı kelimenin iki farklı bağlamını korumalı.");
+assert(huzurById.get("s166-wall")?.answer === null &&
+  huzurById.get("s166-predict")?.answer?.entry_type === "performance_support",
+  "Cümle duvarı ve kelime tahmininde tek-doğru cevap dayatılmamalı.");
+for(const id of ["s167-reading","s168-reading","s169-reading","s170-reading","s171-author"]) {
+  assert(huzurById.get(id)?.answer === null &&
+    huzurById.get(id)?.source?.source_record_id === "T03-S0013",
+    `Huzur metni telifli okumayı tekrar yayımlamadan işlenmeli: ${id}`);
+}
+assert(huzurById.get("s172-vocabulary")?.layout === "vocabulary" &&
+  Object.keys(huzurById.get("s172-vocabulary")?.answer?.answer_sections ?? {}).length === 9 &&
+  huzurById.get("s172-vocabulary")?.content?.items == null,
+  "Söz Varlığımız dokuz kelimeyi eksiksiz kapsamalı.");
+assert(huzurById.get("s172-other")?.answer?.entry_type === "performance_support",
+  "Öğrencinin bilmediği kelimelere sabit liste dayatılmamalı.");
+for(const id of ["s173-types-1","s173-types-2","s174-types-1","s174-types-2"]) {
+  assert(huzurById.get(id)?.answer === null &&
+    huzurById.get(id)?.source?.printed_page_range === "173-174",
+    `Roman türleri s.173-174 gerçek kaynak aralığıyla sunulmalı: ${id}`);
+}
+assert(huzurById.get("s174-style")?.answer?.entry_type === "performance_support" &&
+  Object.keys(huzurById.get("s174-style")?.answer?.answer_sections ?? {}).length === 6,
+  "Huzur üslup kavram haritası korunmalı.");
+for(const step of huzurReading.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Huzur source VERIFIED olmalı: ${step.source.source_record_id}`);
+}
+assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===31 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===15 &&
+  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===16,
+  "Tema 3 mevcut kapsamı 31 adım / 15 source / 16 answer olmalı.");
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");
