@@ -15,6 +15,7 @@ assert(Array.isArray(lessons), "Lesson catalog bir dizi olmalı.");
 const theme1Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_01");
 const theme2Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_02");
 const theme3Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_03");
+const theme4Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_04");
 
 assert(
   theme1Lessons.length === 7,
@@ -317,6 +318,43 @@ for (const id of ["s234-q14","s234-q15"]) {
 for (const step of theme3Assessment.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
+}
+
+assert(theme4Lessons.length === 1,
+  "Tema 4 s.236–242 giriş ve okuma çemberiyle başlamalı.");
+const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
+assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
+  theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
+  theme4Intro.coverage.answer_entries === 7,
+  "Tema 4 açılışı s.236–242, 17 ekran / 9 kaynak / 7 cevap içermeli.");
+const theme4IntroById = new Map(theme4Intro.steps.map(step => [step.id, step]));
+assert(theme4IntroById.size === 17, "Tema 4 giriş ekran kimlikleri benzersiz olmalı.");
+for (const [id, sourceId, answerId] of [
+  ["s238-q1","T04-S0003","T4-P238-Q01"],
+  ["s238-q2","T04-S0004","T4-P238-Q02"],
+  ["s239-q3","T04-S0005","T4-P239-Q03"],
+  ["s239-q4","T04-S0006","T4-P239-PERF01"],
+  ["s239-q5","T04-S0007","T4-P239-PERF02"],
+  ["s240-performance","T04-S0008","T4-P240-PERF01"],
+  ["s241-preview","T04-S0009","T4-P241-PERF01"]
+]) {
+  assert(theme4IntroById.get(id)?.source?.source_record_id === sourceId &&
+    theme4IntroById.get(id)?.answer?.question_id === answerId,
+    `Tema 4 giriş kanonik kaynak / cevap eşleşmesi: ${id}`);
+}
+assert(theme4IntroById.get("s236-map")?.source?.source_record_id === "T04-S0001" &&
+  theme4IntroById.get("s237-threshold")?.source?.source_record_id === "T04-S0002" &&
+  theme4IntroById.get("s237-threshold")?.answer === null,
+  "Tema çerçevesi ve Yunus Emre eşiğinde uydurma soru/cevap olmamalı.");
+assert(theme4IntroById.get("s241-core-roles")?.content?.sections?.length === 4 &&
+  theme4IntroById.get("s242-optional-roles")?.content?.sections?.length === 5,
+  "Okuma çemberi dört temel ve beş seçimlik rolü korumalı.");
+assert(theme4IntroById.get("s240-infographic")?.content?.note?.includes("kesin doğum tarihi belirtilmez") &&
+  theme4IntroById.get("s240-performance")?.answer?.guidance?.includes("hayalî"),
+  "Mimar Sinan bilgi görseli ve hayalî konuşma arasında kaynak ayrımı korunmalı.");
+for (const step of theme4Intro.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Tema 4 açılışında doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
