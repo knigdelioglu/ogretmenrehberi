@@ -901,6 +901,60 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life-animals.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-HAYAT-KURMACA-182-185&step=s185-animals"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-voice.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s186-voice-choice"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-structure.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s186-structure"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-time.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s186-time"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-style-four.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s187-four"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-period.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s188-3c"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-style-characters.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-YAPI-USLUP-186-188&step=s188-q4"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1001,5 +1055,11 @@ jobs:
             lesson-player-theme3-life-memory.png
             lesson-player-theme3-life-sensitivity.png
             lesson-player-theme3-life-animals.png
+            lesson-player-theme3-style-voice.png
+            lesson-player-theme3-style-structure.png
+            lesson-player-theme3-style-time.png
+            lesson-player-theme3-style-style-four.png
+            lesson-player-theme3-style-period.png
+            lesson-player-theme3-style-characters.png
             apps/lesson-player/dist
           if-no-files-found: error
