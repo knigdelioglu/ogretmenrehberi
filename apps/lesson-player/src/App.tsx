@@ -13,6 +13,7 @@ import {
   buildExportedStep,
   canonicalLessonSignature,
   overrideEnvelope,
+  projectionLessonUrl,
   restoredStepIndex,
   restoreOverrideEnvelope,
   studentVisibleOverrides,
@@ -298,13 +299,8 @@ export default function App() {
   }, []);
 
   const openProjectionWindow = useCallback(() => {
-    const url = new URL(window.location.href);
-    url.searchParams.set("lesson", lesson.lesson_id);
-    url.searchParams.set("display", "1");
-    url.searchParams.set("step", step.id);
-
     const displayWindow = window.open(
-      url.toString(),
+      projectionLessonUrl(window.location.href, lesson.lesson_id, step.id),
       projectionWindowName,
       "popup=yes,width=1280,height=720"
     );
@@ -460,12 +456,9 @@ export default function App() {
     const navigateDisplay = (lessonId: string, stepId?: string) => {
       const target = lessonCatalog.find((item) => item.lesson_id === lessonId);
       if (!target || target.lesson_id === lesson.lesson_id) return;
-      const url = new URL(window.location.href);
-      url.searchParams.set("display", "1");
-      url.searchParams.set("lesson", target.lesson_id);
-      if (stepId) url.searchParams.set("step", stepId);
-      else url.searchParams.delete("step");
-      window.location.replace(url.toString());
+      window.location.replace(
+        projectionLessonUrl(window.location.href, target.lesson_id, stepId)
+      );
     };
 
     channel.onmessage = (event: MessageEvent) => {
