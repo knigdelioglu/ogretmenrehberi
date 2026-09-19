@@ -114,15 +114,15 @@ try {
   await until(() => teacher.evaluate(`(() => {
     const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
     const stored = JSON.parse(localStorage.getItem(key + ".order") ?? "{}");
-    return stored.schemaVersion === 1 && stored.order?.[1] === "s15-q1" &&
+    return stored.schemaVersion === 1 && stored.order?.[2] === "s15-q1" &&
       localStorage.getItem(key + ".step-id") === "s15-q1" &&
-      localStorage.getItem(key + ".index") === "1";
+      localStorage.getItem(key + ".index") === "2";
   })()`), "Reordered step ID persistence");
   await teacher.send("Page.reload");
   await until(() => teacher.evaluate(`(() => {
     const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
     return document.querySelector(".stage-card h1")?.textContent?.includes("dikkatinizi") &&
-      localStorage.getItem(key + ".index") === "1";
+      localStorage.getItem(key + ".index") === "2";
   })()`), "Reordered deep link reload");
 
   await teacher.evaluate(
@@ -138,9 +138,9 @@ try {
   await until(() => teacher.evaluate(`(() => {
     const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
     const stored = JSON.parse(localStorage.getItem(key + ".order") ?? "{}");
-    return stored.schemaVersion === 1 && stored.order?.[0] === "s15-q1" &&
+    return stored.schemaVersion === 1 && stored.order?.[1] === "s15-q1" &&
       localStorage.getItem(key + ".step-id") === "s15-q1" &&
-      localStorage.getItem(key + ".index") === "0" &&
+      localStorage.getItem(key + ".index") === "1" &&
       new URLSearchParams(location.search).get("step") === "s15-q1";
   })()`), "Reset restores the canonical step and deep link");
 
@@ -301,6 +301,12 @@ try {
           `document.querySelectorAll(${JSON.stringify(answerClass)}).length === ${check.count}`
         ),
         `Dedicated revealed answer: ${check.lesson}/${check.step}`
+      );
+      await until(
+        () => teacher.evaluate(
+          `document.querySelectorAll(${JSON.stringify(check.selector)}).length === ${check.count}`
+        ),
+        `Structured task content remains visible with answer: ${check.lesson}/${check.step}`
       );
     }
   }
