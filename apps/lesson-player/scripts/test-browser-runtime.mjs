@@ -265,6 +265,20 @@ try {
       ),
       `Dedicated content layout: ${check.lesson}/${check.step}`
     );
+    if (check.step === "s272-table" || check.step === "s273-q1") {
+      await teacher.evaluate(
+        "document.querySelector('.stage-icon-toggle--answer')?.click()"
+      );
+      const answerClass = check.step === "s272-table"
+        ? ".answer-sections--structure .section-card"
+        : ".answer-sections--comparison .section-card";
+      await until(
+        () => teacher.evaluate(
+          `document.querySelectorAll(${JSON.stringify(answerClass)}).length === ${check.count}`
+        ),
+        `Dedicated revealed answer: ${check.lesson}/${check.step}`
+      );
+    }
   }
 
   console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views.");
