@@ -57,15 +57,16 @@
       "printed_page": 178,
       "question_no": "Okuma Çemberi 1-2",
       "prompt_summary": "Huzur için okuma çemberi rollerinin uygulanması",
-      "answer": "Okuma çemberindeki roller aşağıdaki görevlerle uygulanabilir:",
+      "answer": "Dört temel rol s.178'de, beş seçimlik rol s.179'da verilir. Öğrenci seçtiği rolü okuduğu Huzur bölümünden bir dayanakla yürütür; sonraki okuma çemberinde rol değiştirebilir.",
       "guidance": "Roller tek doğru ürün üretmez; öğrenci seçtiği rolü metinden somut bir örnekle yürütmelidir.",
-      "source_locator": "basılı s.178-179 / PDF s.179-180 — Okuma Çemberi",
+      "source_locator": "basılı s.178-179 / PDF s.179-180 — dört temel ve beş seçimlik okuma çemberi rolü",
       "answer_sections": {
         "Bağ Kurucu": "Huzur'daki İstanbul ve kimlik ilişkisini öğrencinin yaşadığı şehirdeki tarihî/kültürel mekânlarla ilişkilendirir.",
         "Ressam": "Boğaz, Üsküdar veya Mümtaz'ın geçmiş–yeni hayat gerilimini kroki/şema ile gösterir.",
         "Okuma Aydınlatıcısı": "Tartışmaya değer bir ifade seçip neden önemli olduğunu açıklar.",
         "Sorgulayıcı": "Metnin kişileri, düşünceleri ve olaylarıyla ilgili tartışma soruları üretir.",
         "Özetleyici": "Ana olay ve düşünce çizgisini kısa biçimde özetler.",
+        "Tahmin Edici": "Okunan parçadan hareketle bir karakterin daha sonra ne yapabileceğine ilişkin gerekçeli tahmin kurar; bunu romanda gerçekleşmiş bir olay olarak sunmaz.",
         "Kelime Avcısı": "Mazi, musiki, yeis gibi kelimeleri bağlamıyla açıklar.",
         "Hareket İzcisi": "Boğaz, Üsküdar ve İstanbul semtlerinin olay ve duygu üzerindeki etkisini izler.",
         "Karakter Çözümleyici": "Kişilerin söz ve davranışlarından temel özelliklerini çıkarır."
@@ -77,16 +78,35 @@
       "printed_page": 180,
       "question_no": "3",
       "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
-      "answer": "Kişilerin duygu ve düşüncelerine yönelik çıkarımlar tablo başlıkları altında verilmiştir; Suat ve Fâhir için kitapta yeterli doğrudan kanıt bulunmadığından bu satırlar kaynak dışı bilgiyle doldurulmamalıdır.",
+      "answer": "Tabloyu kişilerin metinde görülen söz veya davranışından hareketle doldurun. Mümtaz ve Nuran için doğrudan kanıt vardır; İhsan ile Macide hakkında anlatılanlarla doğrudan konuşmayı ayırın. Suat ve Fâhir'in satırları, kitap parçasında yeterli veri olmadığında varsayımla doldurulmaz.",
       "answer_sections": {
-        "Mümtaz": "Geçmiş, kültür ve kimlik arasında güçlü bağ kuran; sanat ve şehre duyarlı.",
-        "Nuran": "Sanatı ve geçmişi seven; aynı zamanda bugünün toplumsal gerçeklerini sorgulayan.",
-        "İhsan": "Mümtaz'ın düşünsel gelişiminde öğretmen ve rehber.",
-        "Macide": "Şefkat ve güzellik terbiyesiyle Mümtaz'ın hayatında koruyucu etki.",
-        "Suat": "Verilen kaynak parçalarında yeterli söz/davranış örneği yok.",
-        "Fâhir": "Verilen kaynak parçalarında yeterli söz/davranış örneği yok."
+        "Mümtaz": {
+          "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur (s.169 ve kitaptaki s.180 örneği).",
+          "cikarim": "Kültürün yeni bir hayat için dayanak olduğuna inanır; geçmiş ile geleceği birlikte düşünür."
+        },
+        "Nuran": {
+          "soz_davranis": "Eskiyi niçin bu kadar sevdiklerini sorar; Üsküdar'ın yoksul ve bakımsız insanlarını hatırlar (s.169).",
+          "cikarim": "Sanatı ve geçmişi severken bugünün toplumsal sorunlarına da duyarlıdır."
+        },
+        "İhsan": {
+          "soz_davranis": "Mümtaz onu asıl hocası olarak tanıtır; fikirlerini ve kültürle ilişkisini kendisinden öğrendiğini söyler (s.169–170).",
+          "cikarim": "Mümtaz'ın düşünsel ve kültürel gelişiminde etkilidir; bu çıkarım İhsan'ın doğrudan sözüne değil Mümtaz'ın anlatımına dayanır."
+        },
+        "Macide": {
+          "soz_davranis": "s.182'de Mümtaz'ın yaşamına şefkat ve koruyuculukla girdiği anlatılır; s.167–171 kesitinde doğrudan konuşması yoktur.",
+          "cikarim": "Mümtaz için aile ve şefkat kaynağıdır; doğrudan sözüne dayalı ayrı bir çıkarım yapılamaz."
+        },
+        "Suat": {
+          "soz_davranis": "Verilen Huzur parçasında bu kişi için yeterli doğrudan söz veya davranış örneği yok.",
+          "cikarim": "Kişilik veya duygu uydurulmaz; tam romandan ek kanıt gerekebilir."
+        },
+        "Fâhir": {
+          "soz_davranis": "Verilen Huzur parçasında bu kişi için yeterli doğrudan söz veya davranış örneği yok.",
+          "cikarim": "Kişilik veya duygu uydurulmaz; tam romandan ek kanıt gerekebilir."
+        }
       },
-      "source_locator": "basılı s.180-182 / PDF s.181-183 — karakter tablosu ve yardımcı parçalar"
+      "source_locator": "basılı s.167–171, 180 ve Macide için s.182 / PDF s.168–172, 181 ve 183 — Okuma Çemberi soru 3",
+      "guidance": "Kitabın Mümtaz satırı örnek olarak dolu, diğer beş satır boştur. Bir kişinin metinde yalnız başka biri tarafından anlatılması, kendi sözünün verildiği anlamına gelmez."
     },
     {
       "question_id": "T3-P181-TABLE02",
@@ -94,34 +114,35 @@
       "printed_page": 181,
       "question_no": "4",
       "prompt_summary": "Huzur kahramanlarını kişilik özellikleri ve dil kullanımları bakımından karşılaştırma",
-      "answer": "Kahramanların kişilik ve dil özellikleri aşağıdaki tabloda karşılaştırılabilir; Suat ve Fâhir için kaynak sınırı korunmalıdır.",
+      "answer": "Kitaptaki Mümtaz örneğini ölçüt alın: bir kişilik özelliği ile o kişinin gerçekten kullandığı dili ayrı kaydedin. Konuşması bulunmayan kişilere söz, üslup ve karakter özelliği yakıştırmayın.",
       "answer_sections": {
         "Mümtaz": {
-          "kisilik": "Hassas, sanatçı duyarlılığı yüksek, geçmiş/kimlik odaklı.",
-          "dil": "Şiirsel, mecazlı, kültürel ve musikî terimleriyle zengin."
+          "kisilik": "Sanatçı duyarlığı yüksek; doğa, sanat ve kültür üzerinden düşünür (kitabın örnek satırı).",
+          "dil": "s.181'deki örnekte şiirsel, çağrışımlı, yüksek söyleyiş ve doğrudan seslenme görülür."
         },
         "Nuran": {
-          "kisilik": "Sorgulayıcı, ölçülü, sanata açık; bugünün hayatını da önemser.",
-          "dil": "Daha doğal ve doğrudan; Mümtaz'ın soyut düşüncelerini sorgulayan."
+          "kisilik": "Eski kültüre ilgi duyar; yoksulluğu ve bugünün gereksinimlerini de hesaba katar.",
+          "dil": "s.169'da ‘Niçin eskiye bu kadar bağlıyız?’ diye kısa ve sorgulayıcı konuşur; Mümtaz'ın düşüncesine karşı soru açar."
         },
         "İhsan": {
-          "kisilik": "Rehber, öğretici, fikir adamı.",
-          "dil": "Tarih, toplum ve kültür üzerine açıklayıcı ve kavramsal."
+          "kisilik": "Mümtaz'ın anlattıklarından onun hocası ve kültürel rehberi olduğu anlaşılır.",
+          "dil": "Kitapta okunan Huzur kesitinde doğrudan konuşması verilmez; kendisine ait kesin bir dil örneği yazılamaz."
         },
         "Macide": {
-          "kisilik": "Şefkatli ve koruyucu.",
-          "dil": "Kaynakta yeterli doğrudan konuşma örneği yok."
+          "kisilik": "s.182'deki Mümtaz anlatımında koruyucu ve şefkatli bir kişi olarak görünür.",
+          "dil": "Bu parçada doğrudan konuşma örneği bulunmadığı için dil kullanımını belirlemek mümkün değildir."
         },
         "Suat": {
-          "kisilik": "Kaynakta yeterli veri yok.",
-          "dil": "Kaynakta yeterli veri yok."
+          "kisilik": "Verilen parçada yeterli kanıt yok.",
+          "dil": "Doğrudan söz örneği yok; üslup belirlenemez."
         },
         "Fâhir": {
-          "kisilik": "Kaynakta yeterli veri yok.",
-          "dil": "Kaynakta yeterli veri yok."
+          "kisilik": "Verilen parçada yeterli kanıt yok.",
+          "dil": "Doğrudan söz örneği yok; üslup belirlenemez."
         }
       },
-      "source_locator": "basılı s.181-182 / PDF s.182-183 — karakter karşılaştırma tablosu"
+      "source_locator": "basılı s.168–171, 181 ve Macide için s.182 / PDF s.169–172, 182 ve 183 — Okuma Çemberi soru 4",
+      "guidance": "Kitap Mümtaz için hem kişilik hem dil örneğini vermiştir. Diğer kişilerde doğrudan alıntı bulunmuyorsa konuşma biçimini tahmin edip kesin bir üslup özelliği gibi yazmayın."
     },
     {
       "question_id": "T3-P182-Q01",

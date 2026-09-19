@@ -1,0 +1,351 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-OKUMA-CEMBERI-179-181",
+  "lesson_slug": "huzur-okuma-cemberi-179-181",
+  "title": "Huzur — Okuma Çemberi",
+  "subtitle": "Yaşamın İzinde · Seçimlik roller, kişi çözümlemesi ve Türk romanında ilkler",
+  "printed_page_range": "179-181",
+  "required_source_range": {
+    "from": "T03-S0031",
+    "to": "T03-S0032"
+  },
+  "steps": [
+    {
+      "id": "s179-roles-intro",
+      "source_record_id": "T03-S0031",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Okuma Çemberi — beş seçimlik rol (s.179)",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.178'deki dört temel rolün ardından kitap beş seçimlik rol tanımlar. Bir sonraki toplantıda rolünüzü değiştirip yeni rol için metin dayanağı hazırlayın.",
+        "items": [
+          "Özetleyici",
+          "Kelime Avcısı",
+          "Tahmin Edici",
+          "Hareket İzcisi",
+          "Karakter Çözümleyici"
+        ]
+      }
+    },
+    {
+      "id": "s179-summary",
+      "source_record_id": "T03-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Seçimlik rol: Özetleyici",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metnin önemli bölümlerini ve düşünce değişimini kısa, kendi sözlerinizle özetleyin.",
+        "sections": [
+          {
+            "title": "Huzur'dan izlek",
+            "body": "Mümtaz ve Nuran'ın İstanbul gezilerinin kültür ve yeni hayat tartışmasına nasıl uzandığını metin sırasını bozmayarak anlatın."
+          },
+          {
+            "title": "Sınır",
+            "body": "Kitapta yalnız bir roman kesiti var; tüm romanın sonunu yazmış gibi özetlemeyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s179-words",
+      "source_record_id": "T03-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Seçimlik rol: Kelime Avcısı",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metinde anlamı bilinmeyen veya başka bağlamlarda kullanılabilen kelimeleri seçin.",
+        "items": [
+          "Kelimenin geçtiği yeri işaretleyin.",
+          "Önce bağlamdan anlam tahmin edin.",
+          "Sözlükle doğrulayın.",
+          "Metne uygun anlamı kendi cümlenizle anlatın."
+        ]
+      }
+    },
+    {
+      "id": "s179-predict",
+      "source_record_id": "T03-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Seçimlik rol: Tahmin Edici",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sadece okuduklarınızdan hareketle devamında ne olabileceğine yönelik gerekçeli bir tahmin kurun.",
+        "sections": [
+          {
+            "title": "Tahmin konusu",
+            "body": "Bir kişinin sonraki davranışı, olayın gelişimi veya mekân değişimi."
+          },
+          {
+            "title": "Dayanak",
+            "body": "Tahmininize neden olan söz, davranış ya da olay."
+          },
+          {
+            "title": "Uyarı",
+            "body": "Tahmin gerçekleşmiş olay değildir. Romanın okunmayan bölümlerini biliyormuş gibi anlatmayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s179-place",
+      "source_record_id": "T03-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Seçimlik rol: Hareket İzcisi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mekânı ve metin içinde nasıl değiştiğini izleyin.",
+        "sections": [
+          {
+            "title": "İzlenecek hat",
+            "body": "Boğaz, Üsküdar, semt gezileri ve sosyal çevre."
+          },
+          {
+            "title": "Gerekçe",
+            "body": "Yalnız yer adı sıralamayın; mekânın duygu, kişi ve olayla ilişkisini söyleyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s179-character",
+      "source_record_id": "T03-S0031",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Seçimlik rol: Karakter Çözümleyici",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metindeki kişilerin özelliklerini kendi söz ve davranışlarına dayandırın.",
+        "sections": [
+          {
+            "title": "Örnek",
+            "body": "Mümtaz'ın geçmişe dayanmadan yeni hayata geçilemeyeceğini düşünmesi, kültürle ilişkisini gösterir."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "Adı geçen fakat doğrudan davranışı görülmeyen kişiyi kesin özelliklerle tanıtmayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s179-roles-change",
+      "source_record_id": "T03-S0031",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Temel ve seçimlik rollerden sonraki toplantı için seçim yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dörder kişilik grubunuzda her öğrenci farklı bir rol denesin. Ürünler tek doğru cevaba indirgenmez.",
+        "items": [
+          "İlk oturumun metin kanıtlarını paylaşın.",
+          "Yeni rolünüzü seçin.",
+          "Sadece seçtiğiniz rol için bir somut ürün hazırlayın."
+        ]
+      }
+    },
+    {
+      "id": "s180-table-q3",
+      "source_record_id": "T03-S0032",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Soru 3 — Altı kişinin söz ve davranışlarıyla duygu ve düşünce çıkarımlarını tabloya yerleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P180-TABLE01",
+      "content": {
+        "lead": "Kitapta Mümtaz satırı örnek doldurulmuştur. Her kişi için ‘metinde söylenen/yapılan’ ile ‘buradan çıkarılan’ sütunlarını ayırın.",
+        "items": [
+          "Mümtaz",
+          "Nuran",
+          "İhsan",
+          "Macide",
+          "Suat",
+          "Fâhir"
+        ]
+      }
+    },
+    {
+      "id": "s180-mumtaz-nuran",
+      "source_record_id": "T03-S0032",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Soru 3 — Mümtaz ve Nuran için metin dayanağını karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki kişinin görüşleri farklıdır; yalnız ‘geçmişi seviyorlar’ demekle yetinmeyin.",
+        "sections": [
+          {
+            "title": "Mümtaz",
+            "body": "Yeni hayatı kültür ve kimlik bilincine dayandırır (s.169; kitap s.180 örneği)."
+          },
+          {
+            "title": "Nuran",
+            "body": "Geçmişi sevse de yoksul insanların bugünkü koşullarını görür; 'Niçin eskiye bu kadar bağlıyız?' diye sorar (s.169)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s180-ihsan-macide",
+      "source_record_id": "T03-S0032",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İhsan'ın Mümtaz üzerindeki etkisi s.169–170'te Mümtaz tarafından anlatılır. Macide'nin koruyucu yönü ise s.182'deki yardımcı parçada görülür.",
+        "sections": [
+          {
+            "title": "İhsan",
+            "body": "Öğretici ve düşünsel rehber; bu çıkarım Mümtaz'ın anlatımından gelir."
+          },
+          {
+            "title": "Macide",
+            "body": "Şefkat ve aile desteği; s.182'de anlatıcının verdiği bilgiye dayanır."
+          },
+          {
+            "title": "Sınır",
+            "body": "İki kişiye bu kesitte söylemedikleri sözleri atfetmeyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s180-suat-fahir",
+      "source_record_id": "T03-S0032",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Soru 3 — Suat ve Fâhir için kaynak sınırını belirtiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tabloda isimleri var ama verilen Huzur kesitinde yeterli doğrudan söz ve davranış bulunmuyor.",
+        "sections": [
+          {
+            "title": "Öğretmen notu",
+            "body": "Bu satırlar metinden kanıt yokken uydurularak doldurulmaz; tam roman ya da öğretmenin sağlayacağı ek parçalar gerekir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s181-table-q4",
+      "source_record_id": "T03-S0032",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Soru 4 — Aynı altı kişiyi kişilik özellikleri ve dil kullanımları bakımından karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P181-TABLE02",
+      "content": {
+        "lead": "s.181'de Mümtaz'ın iki sütunu örnek doldurulmuş; diğer beş kişinin dilini yalnız konuşma örneği varsa yazın.",
+        "items": [
+          "Kişilik: söz, davranış, anlatıcının tanıtımı",
+          "Dil: gerçekten söylenen sözün anlatım özelliği",
+          "Kaynağı yetersiz kişi: ‘bu kesitte belirlenemiyor’"
+        ]
+      }
+    },
+    {
+      "id": "s181-mumtaz-nuran",
+      "source_record_id": "T03-S0032",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Soru 4 — Mümtaz ile Nuran'ın kişilik ve dil özelliklerini karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki Mümtaz örneğini, Nuran'ın s.169'daki kısa ve sorgulayıcı sorusuyla karşılaştırın.",
+        "sections": [
+          {
+            "title": "Mümtaz",
+            "body": "Sanatçı duyarlığı; s.181 örnek cümlesinde çağrışımlı, şiirsel ve seslenmeli dil."
+          },
+          {
+            "title": "Nuran",
+            "body": "Sanata açık fakat yaşamın güçlüklerine duyarlı; s.169'da daha kısa ve doğrudan soru kurar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s181-other-people",
+      "source_record_id": "T03-S0032",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Birinin kişiliğinin anlatılması onun kendi konuşma üslubunu göstermez.",
+        "sections": [
+          {
+            "title": "İhsan / Macide",
+            "body": "İhsan'ın etkisi ve Macide'nin şefkati dolaylı anlatılır; bu kesitte doğrudan konuşma örneği yoktur."
+          },
+          {
+            "title": "Suat / Fâhir",
+            "body": "Kitabın bu roman kesiti dil ve kişilikleri için yeterli doğrudan kanıt sağlamaz."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s181-firsts-1",
+      "source_record_id": "T03-S0032",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Bilgi Köşesi — Türk Romanında İlkler: ilk altı kayıt (s.181)",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki tür, eser ve yazar eşleşmesini koruyun; bu ekran dış kaynak doğrulaması değil ders kitabı başvurusudur.",
+        "items": [
+          "İlk çeviri roman — Tercüme-i Telemak · Yusuf Kâmil Paşa",
+          "İlk yerli roman — Taaşşuk-ı Talat ve Fitnat · Şemsettin Sami",
+          "İlk edebî roman — İntibah · Namık Kemal",
+          "İlk realist roman — Araba Sevdası · Recaizade Mahmut Ekrem",
+          "İlk köy romanı — Karabibik · Nabizade Nâzım",
+          "İlk psikolojik roman — Eylül · Mehmet Rauf"
+        ]
+      }
+    },
+    {
+      "id": "s181-firsts-2",
+      "source_record_id": "T03-S0032",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Bilgi Köşesi — Türk Romanında İlkler: diğer altı kayıt (s.181)",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tür adlarını kendi aralarında birleştirmeden, s.181'deki ayrımları aynen koruyun.",
+        "items": [
+          "Batı tekniğine uygun ilk roman — Mai ve Siyah · Halit Ziya Uşaklıgil",
+          "İlk psikolojik roman denemesi, ilk natüralist ve tezli roman — Zehra · Nabizade Nâzım",
+          "İlk tarihî uzun hikâye–roman denemesi — Yeniçeriler · Ahmet Mithat Efendi",
+          "İlk tarihî roman — Cezmi · Namık Kemal",
+          "İlk polisiye roman — Esrâr-ı Cinâyât · Ahmet Mithat Efendi",
+          "Millî Mücadele'nin işlendiği ilk roman — Ateşten Gömlek · Halide Edip Adıvar"
+        ]
+      }
+    },
+    {
+      "id": "s181-game-qr",
+      "source_record_id": "T03-S0032",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yazar–Eser–Kahraman oyunu: s.181 karekod notu",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bilgi Köşesi yanında oyuna yönlendiren bir karekod bulunur. Oyunun içeriği sayfada yazılı değildir; öğretmen erişirse sınıfta açar.",
+        "sections": [
+          {
+            "title": "Sınıfta kullanım",
+            "body": "Oyuna erişmeden oyun sorularını, kurallarını veya sonuçlarını rehbere eklemeyin."
+          }
+        ]
+      }
+    }
+  ]
+}
