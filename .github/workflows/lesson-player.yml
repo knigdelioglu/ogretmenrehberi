@@ -1228,6 +1228,46 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-usuli209-evaluation.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-USULI-TEZKIRE-206-209&step=s209-q2"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-kemal210-question.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-KEMAL-TAHIR-MULAKAT-210-214&step=s210-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-kemal211-people.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-KEMAL-TAHIR-MULAKAT-210-214&step=s211-six-people"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-kemal212-draft.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-KEMAL-TAHIR-MULAKAT-210-214&step=s212-sample"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-kemal213-performance.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-KEMAL-TAHIR-MULAKAT-210-214&step=s213-perf"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-kemal214-evaluation.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-KEMAL-TAHIR-MULAKAT-210-214&step=s214-eval"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1365,5 +1405,10 @@ jobs:
             lesson-player-usuli206-reading.png
             lesson-player-usuli208-vocabulary.png
             lesson-player-usuli209-evaluation.png
+            lesson-player-kemal210-question.png
+            lesson-player-kemal211-people.png
+            lesson-player-kemal212-draft.png
+            lesson-player-kemal213-performance.png
+            lesson-player-kemal214-evaluation.png
             apps/lesson-player/dist
           if-no-files-found: error
