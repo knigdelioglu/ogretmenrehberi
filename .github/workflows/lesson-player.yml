@@ -1018,6 +1018,60 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-conflict-research.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-CATISMA-DIL-189-191&step=s191-research"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-worksheet.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s192-worksheet"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-personal.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s192-personal"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-criteria.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s193-criteria"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-voice.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s193-voice"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-exit.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s193-exit"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-exit-three.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-DEGERLENDIRME-192-193&step=s193-three"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1131,5 +1185,11 @@ jobs:
             lesson-player-theme3-conflict-long.png
             lesson-player-theme3-conflict-spelling.png
             lesson-player-theme3-conflict-research.png
+            lesson-player-theme3-exit-worksheet.png
+            lesson-player-theme3-exit-personal.png
+            lesson-player-theme3-exit-criteria.png
+            lesson-player-theme3-exit-voice.png
+            lesson-player-theme3-exit-exit.png
+            lesson-player-theme3-exit-three.png
             apps/lesson-player/dist
           if-no-files-found: error

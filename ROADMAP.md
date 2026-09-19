@@ -323,7 +323,8 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Huzur: gerçek yaşam/kurmaca, öznel/nesnel anlatım, duyarlılık — s.182–185
   - [x] Huzur: kahramanın dili, yapı, karakterler ve üslup çözümleme — s.186–188
   - [x] Huzur: üç çatışma parçası, dönem dili, yedi cümle, yazım ve sosyal bilimler — s.189–191
-  - [ ] Huzur: süreç değerlendirme çalışma kâğıdı ve çıkış kartı — s.192–193
+  - [x] Huzur: süreç değerlendirme çalışma kâğıdı ve çıkış kartı — s.192–193
+  - [ ] Metin Tahlili-2 / Anlama: biyografi ve tezkire — s.194'ten itibaren
 - [ ] 4. Tema — Hayatın Aynası
 
 Her tema için aynı pipeline:
@@ -434,4 +435,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 3. Tema — Yaşamın İzinde:** s.192–193 Huzur süreç değerlendirme çalışma kâğıdı, kişisel ölçütler, rol üstlenme ve Üç Yaz–İki Sor–Bir Paylaş çıkış kartını gerçek kitabın tablo/şemalarından küçük blokla üretmek. Tema 3 mevcut: 8 ders / 133 adım / 52 VERIFIED kaynak kullanımı / 53 answer (s.178–179 kaynağı iki blokta ortak). Tema 1 ve 2 kalite kapsamını korumak.
+**11. sınıf 3. Tema — Yaşamın İzinde:** Huzur s.164–193 doğal bloklar hâlinde tamamlandı. Sıradaki doğal blok s.194'ten başlayan biyografi / tezkire Konuya Başlarken ve okuma hazırlığıdır; kitaba göre küçük bölüm belirlenerek sürdürülmeli. Tema 3 mevcut: 9 ders / 147 adım / 56 VERIFIED kaynak kullanımı / 58 answer (s.178–179 kaynağı iki blokta ortaktır). Tema 1 ve 2 kalite kapsamını korumak.
