@@ -271,5 +271,16 @@ try {
 } finally {
   for (const client of clients) client.close();
   browser.kill();
-  fs.rmSync(profile, { recursive: true, force: true });
+  await sleep(350);
+  try {
+    fs.rmSync(profile, {
+      recursive: true,
+      force: true,
+      maxRetries: 10,
+      retryDelay: 200
+    });
+  } catch (error) {
+    // Cleanup must never mask a failed browser assertion.
+    console.warn("Chrome test profile cleanup skipped:", error.message);
+  }
 }
