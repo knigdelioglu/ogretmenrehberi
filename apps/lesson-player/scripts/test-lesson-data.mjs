@@ -211,7 +211,7 @@ for(const step of huzurReading.steps) {
 assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===213 &&
   theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===89 &&
   theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===89,
-  "Tema 3 mevcut kapsamı 181 adım / 66 source / 67 answer olmalı.");
+  "Tema 3 mevcut kapsamı 213 adım / 89 source / 89 answer olmalı.");
 
 
 const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
@@ -253,7 +253,7 @@ assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_sup
 assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 213 &&
   theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 89 &&
   theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 89,
-  "Tema 3 mevcut kapsamı 11 ders / 181 adım / 66 source / 67 answer olmalı.");
+  "Tema 3 mevcut kapsamı 13 ders / 213 adım / 89 source / 89 answer olmalı.");
 
 
 const huzur177 = byLessonId.get("T11-T03-HUZUR-177-178");
