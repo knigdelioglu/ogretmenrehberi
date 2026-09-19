@@ -615,6 +615,40 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-assessment-slogan.png" \
             "http://127.0.0.1:4173/?lesson=T11-T02-DEGERLENDIRME&step=s159-q9"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-intro.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-GIRIS&step=s160-overview"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-life.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T03-GIRIS&step=s162-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-media.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-GIRIS&step=s163-q5"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-biography.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-GIRIS&step=s163-q6"
+
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -683,5 +717,9 @@ jobs:
             lesson-player-theme2-assessment-atismasi.png
             lesson-player-theme2-assessment-source-limited.png
             lesson-player-theme2-assessment-slogan.png
+            lesson-player-theme3-intro.png
+            lesson-player-theme3-life.png
+            lesson-player-theme3-media.png
+            lesson-player-theme3-biography.png
             apps/lesson-player/dist
           if-no-files-found: error
