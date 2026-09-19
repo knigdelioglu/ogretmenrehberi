@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { RevealPanel } from "./RevealPanel";
 import { StructuredSections } from "./StructuredSections";
+import { StepContentLayout } from "./StepContentLayout";
 import type { LessonStep, RevealKey } from "../types";
 
 interface StepViewProps {
@@ -290,26 +291,8 @@ export function StepView({
           <p className="lead">{content.lead}</p>
         ) : null}
 
-        {!answerVisible && content?.items?.length ? (
-          <div className="process-list">
-            {content.items.map((item, index) => (
-              <div className="process-list__row" key={item}>
-                <span className="process-list__index">{index + 1}</span>
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        ) : null}
-
-        {!answerVisible && content?.sections?.length ? (
-          <div className="reference-grid">
-            {content.sections.map((section) => (
-              <article className="reference-card" key={section.title}>
-                <h3>{section.title}</h3>
-                <p>{section.body}</p>
-              </article>
-            ))}
-          </div>
+        {!answerVisible ? (
+          <StepContentLayout layout={step.layout} content={content} />
         ) : null}
 
         {isVocabulary && answer ? (
