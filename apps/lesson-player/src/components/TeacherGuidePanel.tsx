@@ -15,19 +15,20 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
   const currentTasks = theme.tasks.filter(
     (task) => currentPage >= task.from && currentPage <= task.to
   );
+  const termThemes = workflow.themes.filter((item) => item.term === theme.term);
   const termItems = workflow.annual.items.filter((item) => item.term === theme.term);
 
   return (
     <aside
       className="teacher-guide"
       role="dialog"
-      aria-label="Öğretmen çalışma ve portfolyo rehberi"
+      aria-label="Öğretmen atölye, sunum ve portfolyo rehberi"
       aria-modal="false"
     >
       <header className="teacher-guide__header">
         <div>
           <span className="teacher-guide__kicker">ÖĞRETMENE ÖZEL · {theme.term}. DÖNEM</span>
-          <h2>Atölye, portfolyo ve eser takibi</h2>
+          <h2>Üç takip hattı · {theme.title}</h2>
         </div>
         <button type="button" onClick={onClose} aria-label="Öğretmen rehberini kapat">
           Kapat
@@ -35,6 +36,12 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
       </header>
 
       <div className="teacher-guide__body">
+        <p className="teacher-guide__context">
+          Bu üç hat dört temanın tamamında ayrı gösterilir. Dersin sayfasına bağlı atölye
+          hatırlatmasıyla birlikte dönemlik eser/film ve portfolyo rehberi kullanılır.
+          Bu panel öğrenci veya puan verisi kaydetmez.
+        </p>
+
         {currentTasks.length ? (
           <section className="teacher-guide__current" aria-label="Şu anki ders görevi">
             <h3>Şu anki sayfayla ilgili görev · s. {currentPage}</h3>
@@ -49,36 +56,36 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
           </section>
         ) : (
           <p className="teacher-guide__context">
-            Bu sayfada atölye teslimi yok. Temanın yaklaşan ürünleri aşağıda; her alıştırmayı
-            portfolyoya ekletmek zorunda değilsiniz.
+            Bu sayfada atölye teslimi yok. İlgili ürünler aşağıda;
+            her sınıf içi alıştırma otomatik olarak portfolyo ödevi değildir.
           </p>
         )}
 
-        <section aria-labelledby="teacher-guide-theme">
-          <h3 id="teacher-guide-theme">{theme.title} · Tema ürünleri</h3>
+        <section aria-labelledby="teacher-guide-workshop">
+          <h3 id="teacher-guide-workshop">1 · Edebiyat Atölyesi</h3>
           <p className="teacher-guide__context">
-            Her temada iki ayrı atölye performansı vardır: konuşma ve yazma.
-            İki tema bir dönemi oluşturur; bunları tek bir görev saymayın.
+            {theme.term}. dönemde {termThemes.length} tema × 2 atölye = 4 ayrı
+            konuşma/yazma ürünü. Bu temanın görevleri:
           </p>
           {theme.tasks.map((task) => (
             <details key={task.id} open={currentTasks.some((item) => item.id === task.id)}>
               <summary>{task.skill} · s. {task.from}–{task.to} · {task.title}</summary>
-              <p><b>Portfolyoya:</b> {task.portfolio}</p>
+              <p><b>Uygulama:</b> {task.timing}</p>
               <p><b>Ölçme:</b> {task.assessment}</p>
-              <p><b>Zaman:</b> {task.timing}</p>
             </details>
           ))}
-          <details>
-            <summary>Öz değerlendirme · s. {theme.reflection.page} · {theme.reflection.title}</summary>
-            <p>{theme.reflection.portfolio}</p>
-          </details>
+          <p className="teacher-guide__context">
+            Aynı dönemdeki diğer tema:{" "}
+            {termThemes.filter((item) => item.id !== theme.id)
+              .map((item) => item.title).join(", ")}.
+          </p>
           <a href={theme.source} target="_blank" rel="noreferrer">
             Resmî {theme.title} tema programını aç ↗
           </a>
         </section>
 
         <section aria-labelledby="teacher-guide-annual">
-          <h3 id="teacher-guide-annual">{theme.term}. dönem · Eser ve film çalışmaları</h3>
+          <h3 id="teacher-guide-annual">2 · Dört eser + bir film sunumları</h3>
           <p className="teacher-guide__context">{workflow.annual.note}</p>
           {termItems.map((item) => (
             <details key={item.id}>
@@ -95,10 +102,24 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
           </p>
         </section>
 
-        <section aria-labelledby="teacher-guide-records">
-          <h3 id="teacher-guide-records">Değerlendirme ve dosyalama ayrımı</h3>
-          <p>{workflow.annual.assessment}</p>
-          <p>{workflow.annual.portfolio}</p>
+        <section aria-labelledby="teacher-guide-portfolio">
+          <h3 id="teacher-guide-portfolio">3 · Portfolyo ve değerlendirme kayıtları</h3>
+          <p className="teacher-guide__context">
+            Bu tema için iki atölye ürünü ve bir tema sonu yansıtması:
+          </p>
+          {theme.tasks.map((task) => (
+            <details key={task.id}>
+              <summary>{task.skill} portfolyosu · {task.title}</summary>
+              <p><b>Saklanacak kanıt:</b> {task.portfolio}</p>
+              <p><b>Değerlendirme:</b> {task.assessment}</p>
+            </details>
+          ))}
+          <details>
+            <summary>Öz değerlendirme · s. {theme.reflection.page} · {theme.reflection.title}</summary>
+            <p><b>Portfolyo:</b> {theme.reflection.portfolio}</p>
+          </details>
+          <p><b>Yıllık eser/film dosyası:</b> {workflow.annual.portfolio}</p>
+          <p><b>Puanlama ayrımı:</b> {workflow.annual.assessment}</p>
           <p className="teacher-guide__context">
             Öğrencinin ürünü ve geri bildirimi portfolyosunda; öğretmenin puan kaydı
             öğretmen tarafında tutulabilir. Bu ekran öğrenci/puan verisi saklamaz.
