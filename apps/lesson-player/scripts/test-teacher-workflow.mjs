@@ -23,6 +23,25 @@ assert.deepEqual(
   ["book-3", "film", "book-4"]
 );
 
+// Proposed presentation windows must remain labelled as guidance, not mandatory dates.
+const expectedWeeks = [
+  ["book-1", "2026-11-23", "2026-11-27", "23–27 Kasım 2026"],
+  ["book-2", "2027-01-11", "2027-01-15", "11–15 Ocak 2027"],
+  ["book-3", "2027-03-22", "2027-03-26", "22–26 Mart 2027"],
+  ["film", "2027-05-03", "2027-05-07", "3–7 Mayıs 2027"],
+  ["book-4", "2027-05-24", "2027-05-28", "24–28 Mayıs 2027"]
+];
+for (const [id, start, end, label] of expectedWeeks) {
+  const item = workflow.annual.items.find((candidate) => candidate.id === id);
+  assert.deepEqual(item?.suggested_presentation, { start, end, label });
+  assert.equal(new Date(`${start}T00:00:00Z`).getUTCDay(), 1, `${id} begins Monday`);
+  assert.equal(new Date(`${end}T00:00:00Z`).getUTCDay(), 5, `${id} ends Friday`);
+}
+assert.match(workflow.annual.note, /resmî zorunlu tarih değildir/);
+assert.match(workflow.annual.note, /zümre kararı/);
+assert.match(workflow.annual.preparation_note, /bir hafta önce/);
+assert.match(workflow.annual.exam_fallback, /18–21 Ocak 2027/);
+
 const seen = new Set();
 for (const [index, theme] of workflow.themes.entries()) {
   assert.equal(theme.id, `TEMA_0${index + 1}`);
