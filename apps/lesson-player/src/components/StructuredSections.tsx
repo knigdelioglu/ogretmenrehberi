@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { LayoutKind } from "../types";
 
 function renderValue(value: unknown): ReactNode {
   if (Array.isArray(value)) {
@@ -7,7 +8,7 @@ function renderValue(value: unknown): ReactNode {
         {value.map((item, index) => (
           <div className="structured-list__row" key={index}>
             <span className="structured-list__index">{index + 1}</span>
-            <span>{String(item)}</span>
+            <span>{renderValue(item)}</span>
           </div>
         ))}
       </div>
@@ -31,15 +32,27 @@ function renderValue(value: unknown): ReactNode {
 }
 
 export function StructuredSections({
-  sections
+  sections,
+  layout = "question"
 }: {
   sections: Record<string, unknown> | string[];
+  layout?: LayoutKind;
 }) {
+  const className = [
+    "section-grid",
+    `answer-sections--${layout}`,
+    layout === "comparison" &&
+    !Array.isArray(sections) &&
+    Object.keys(sections).length === 2
+      ? "answer-sections--paired"
+      : ""
+  ].filter(Boolean).join(" ");
+
   if (Array.isArray(sections)) {
-    return <div className="section-grid">{renderValue(sections)}</div>;
+    return <div className={className}>{renderValue(sections)}</div>;
   }
   return (
-    <div className="section-grid">
+    <div className={className}>
       {Object.entries(sections).map(([key, value]) => (
         <article className="section-card" key={key}>
           <h3>{key.replaceAll("_", " ")}</h3>
