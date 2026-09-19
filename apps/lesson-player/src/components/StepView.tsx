@@ -213,7 +213,7 @@ export function StepView({
                     <div className="inline-answer__label">{answerLabel(step)}</div>
                     <p className="inline-answer__text">{answer.answer}</p>
                     {answer.answer_sections ? (
-                      <StructuredSections sections={answer.answer_sections} />
+                      <StructuredSections sections={answer.answer_sections} layout={step.layout} />
                     ) : null}
                   </div>
                 ) : (
