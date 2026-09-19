@@ -1,0 +1,267 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-USULI-TEZKIRE-206-209",
+  "lesson_slug": "usuli-tezkire-206-209",
+  "title": "Usûlî — Tezkire ve Biyografi",
+  "subtitle": "Yaşamın İzinde · Tezkire / söz varlığı / tür karşılaştırması / değerlendirme",
+  "printed_page_range": "206-209",
+  "required_source_range": {
+    "from": "T03-S0078",
+    "to": "T03-S0088"
+  },
+  "steps": [
+    {
+      "id": "s206-reference",
+      "source_record_id": "T03-S0078",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Bilgi Köşesi — Tezkireyi tanıyalım.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki tezkire açıklamasını okuyun; yeni metne geçmeden önce türün bilgi verme ve edebî değerlendirme yönünü ayırt edin.",
+        "sections": [
+          {
+            "title": "Kimi tanıtır?",
+            "body": "Şairleri; hayatları, yetiştikleri çevre ve şiirleriyle birlikte."
+          },
+          {
+            "title": "Nasıl tanıtır?",
+            "body": "Hayat bilgisi, kişilik ve sanat değerlendirmesi ile şiir örneklerini bir araya getirir."
+          },
+          {
+            "title": "Neden önemlidir?",
+            "body": "Şairlerin ve dönemin edebî çevresinin izlerini sonraki okura aktarır."
+          }
+        ],
+        "note": "Bilgi Köşesi metnini burada aynen çoğaltmayın; öğrenciden basılı s.206'yı kullanmasını isteyin."
+      }
+    },
+    {
+      "id": "s207-reading",
+      "source_record_id": "T03-S0078",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Usûlî — Tezkire metnini özgün ve sadeleştirilmiş biçimleriyle karşılaştırarak okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana metni ders kitabından okuyun; Lesson Player metni tekrar yayımlamak yerine okuma sürecini yönetir.",
+        "items": [
+          "Özgün metinde tanıtılan kişinin hayatına ilişkin bilgileri işaretleyin.",
+          "Şairin kişiliğine ve şiirine yönelik yargıları bulun.",
+          "Anlamı güç kelimeleri sadeleştirilmiş karşılıklarıyla karşılaştırın.",
+          "Dikkat çeken bir söyleyiş için özgün ve sadeleştirilmiş metindeki yeri gösterin."
+        ]
+      }
+    },
+    {
+      "id": "s208-q1",
+      "source_record_id": "T03-S0079",
+      "answer_id": "T3-P208-PERF01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1/a–c — Günümüzde kullanılmayan kelimeleri tahmin edip doğrulayınız ve cümlede kullanınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrencinin bulduğu kelimeler farklı olabilir. Önce bağlam tahmini, sonra sadeleştirilmiş metinle karşılaştırma yaptırın.",
+        "items": [
+          "Özgün metinden sözcük seçin.",
+          "Bağlama göre anlamını tahmin edin.",
+          "Sadeleştirilmiş metinle karşılaştırıp anlamı doğrulayın.",
+          "Sınıfça seçilen on kelimeyle yeni cümleler kurun."
+        ]
+      }
+    },
+    {
+      "id": "s208-word-method",
+      "source_record_id": "T03-S0079",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Söz varlığı — Bir kelimenin anlamını nasıl doğrularız?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Tek tek kelime anlamlarını göstermek yerine çözüm yolunu öğrenciyle uygulayın.",
+        "sections": [
+          {
+            "title": "1. Özgün bağlam",
+            "body": "Kelimenin bulunduğu cümleye geri dönün."
+          },
+          {
+            "title": "2. Anlam tahmini",
+            "body": "Cümlenin bütününden makul bir anlam önerin."
+          },
+          {
+            "title": "3. Doğrulama",
+            "body": "Sadeleştirilmiş metin ve gerekiyorsa güvenilir sözlükle kontrol edin."
+          },
+          {
+            "title": "4. Yeni kullanım",
+            "body": "Öğrencinin cümlesi kelimenin bağlamdaki anlamını korusun."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s208-q2",
+      "source_record_id": "T03-S0080",
+      "answer_id": "T3-P208-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Usûlî tezkiresi sizde hangi izlenimleri uyandırdı? Metinden gerekçelendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişisel izleniminizi belirledikten sonra yaşam bilgisi, nükteli söyleyiş veya dil özelliklerinden somut dayanak seçin."
+      }
+    },
+    {
+      "id": "s208-q3",
+      "source_record_id": "T03-S0081",
+      "answer_id": "T3-P208-Q03",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 3 — Tezkirenin içerik, yapı, dil ve anlatımını dönemle ilişkilendirerek değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her başlığı metinden gözlemlenebilen bilgiyle doldurun. Dönem ve toplum ilişkisini yalnız terim sıralayarak geçmeyin.",
+        "items": [
+          "İçerik: Kişi hakkında ne öğreniyoruz?",
+          "Yapı: Hangi bilgiler hangi sırayla veriliyor?",
+          "Dil: Özgün metinde hangi dil özellikleri belirgin?",
+          "Anlatım: Bilgi ve sanat değerlendirmesi nasıl birleşiyor?",
+          "Dönem bağlantısı: Edebiyat ve tasavvuf çevresini hangi ayrıntılar yansıtıyor?"
+        ]
+      }
+    },
+    {
+      "id": "s208-q3-layout",
+      "source_record_id": "T03-S0081",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Tezkireyi beş ölçütte inceleyiniz; kanıt ile yorumu ayrı tutunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın özgün ve sadeleştirilmiş metinlerine dönerek her başlık için bir örnek hazırlayın.",
+        "sections": [
+          {
+            "title": "İçerik ve yapı",
+            "body": "Yaşam bilgisi → kişilik/sanat değerlendirmesi → şiir örnekleri."
+          },
+          {
+            "title": "Dil ve anlatım",
+            "body": "Özgün metnin söz varlığı ile bilgi verme ve övgü yönünü ayırın."
+          },
+          {
+            "title": "Dönem ve toplum",
+            "body": "Şair çevresi, öğrenim ve tasavvuf bağlantısını metindeki bilgilerle temellendirin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s208-q4",
+      "source_record_id": "T03-S0082",
+      "answer_id": "T3-P208-Q04",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Sıra Sizde 4 — Tezkire ile biyografinin ortak yönlerini Usûlî metninden gösteriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mehmet Âkif biyografisiyle bağlantı kurun: hayat, eğitim, kişilik, eser ve edebî çevre bilgilerinden hangileri iki türde de var?"
+      }
+    },
+    {
+      "id": "s208-q5",
+      "source_record_id": "T03-S0083",
+      "answer_id": "T3-P208-Q05",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 5 — Usûlî tezkiresindeki öğretici metin özelliklerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metnin gerçek bir şairi tanıtan hangi bilgileri ve örnekleri verdiğini gösterin; sanatlı dilin öğretici işlevi ortadan kaldırıp kaldırmadığını tartışın."
+      }
+    },
+    {
+      "id": "s208-q6",
+      "source_record_id": "T03-S0084",
+      "answer_id": "T3-P208-Q06",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 6 — Kişisel hayatı konu alan metinler edebiyat açısından neden önemlidir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız sanatçıyı tanıma demeyin; eser, dönem ve kültür ilişkisini Usûlî veya Mehmet Âkif örneğiyle açıklayın."
+      }
+    },
+    {
+      "id": "s209-criteria",
+      "source_record_id": "T03-S0085",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme — Önce ölçüt belirleyin, sonra aynı ölçütlerle metni değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Beğeni, eleştiri ve yazılma amacı sorularını tek ve gerekçesiz bir yargıda birleştirmeyin.",
+        "items": [
+          "Metni değerlendirmek için gözlenebilir bir ölçüt seçin.",
+          "Ölçüte karşılık gelen metin özelliğini bulun.",
+          "Beğeni veya eleştirinizi somut örnekle gerekçelendirin.",
+          "Metnin yazılma amacıyla değerlendirme sonucunu ilişkilendirin."
+        ]
+      }
+    },
+    {
+      "id": "s209-q1",
+      "source_record_id": "T03-S0085",
+      "answer_id": "T3-P209-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 1 — Mehmet Âkif Ersoy biyografisi için kendi beğeni ölçütlerinizi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hazır ölçüt listesini hemen açmayın; önce öğrencilerin ölçüt önermesini ve neden seçtiğini söylemesini isteyin."
+      }
+    },
+    {
+      "id": "s209-q2",
+      "source_record_id": "T03-S0086",
+      "answer_id": "T3-P209-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 2 — Metni, ilk soruda seçtiğiniz ölçütlere göre değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Birinci sorudaki ölçütleri değiştirmeden kullanın. Her ölçüt için metinden örnek gösterin.",
+        "items": [
+          "Seçtiğiniz ölçütü yazın.",
+          "Metindeki karşılığını bulun.",
+          "Ölçüte göre yargınızı gerekçelendirin."
+        ]
+      }
+    },
+    {
+      "id": "s209-q3",
+      "source_record_id": "T03-S0087",
+      "answer_id": "T3-P209-PERF03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 3 — Metinle ilgili beğeni ve eleştirilerinizi gerekçelendirin.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Bir beğeni ve bir eleştiri söyleyin; her biri için metinde gözlenebilir bir özellik gösterin."
+      }
+    },
+    {
+      "id": "s209-q4",
+      "source_record_id": "T03-S0088",
+      "answer_id": "T3-P209-Q04",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 4 — Metnin yazılma amacına ulaşıp ulaşmadığını açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Biyografinin okura kişiyi, eserleri ve edebî kişiliğini tanıtma amacıyla somut içeriği ilişkilendirerek değerlendirin."
+      }
+    }
+  ]
+}
