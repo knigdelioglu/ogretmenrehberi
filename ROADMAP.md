@@ -325,7 +325,7 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Huzur: üç çatışma parçası, dönem dili, yedi cümle, yazım ve sosyal bilimler — s.189–191
   - [x] Huzur: süreç değerlendirme çalışma kâğıdı ve çıkış kartı — s.192–193
   - [x] Metin Tahlili-2: biyografi hazırlığı / Mehmet Akif Ersoy ana metni ve Söz Varlığımız — s.194–198
-  - [ ] Metin Tahlili-2: Mehmet Akif Ersoy soruları, çalışma kâğıdı — s.199–201
+  - [x] Metin Tahlili-2: Mehmet Akif Ersoy soruları, çalışma kâğıdı — s.199–201
   - [ ] Metin Tahlili-2: biyografi/tezkire devamı — s.202'den itibaren
 - [ ] 4. Tema — Hayatın Aynası
 
