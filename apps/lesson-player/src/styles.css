@@ -1542,3 +1542,111 @@ button:focus-visible {
     padding: 9px 11px;
   }
 }
+
+
+/* Task-specific classroom layouts. Headings and evidence remain unchanged. */
+.layout-content {
+  min-width: 0;
+}
+.comparison-criteria,
+.structure-fields,
+.assessment-criteria {
+  display: grid;
+  gap: 10px;
+  margin-top: 25px;
+}
+.comparison-criteria {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+}
+.comparison-criterion {
+  display: flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 12px 16px;
+  border: 1px solid #b9d1c8;
+  border-left: 4px solid var(--accent);
+  border-radius: 11px;
+  background: #eef5f1;
+  color: #24483f;
+  font-weight: 730;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.comparison-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.comparison-pair .reference-card {
+  border-top: 4px solid var(--accent);
+  background: #f4f8f5;
+}
+.comparison-pair .reference-card:nth-child(2) {
+  border-top-color: var(--warm);
+  background: #fff8f0;
+}
+.structure-fields {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+}
+.structure-field {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  min-height: 65px;
+  padding: 15px;
+  border: 1px solid #d0dcd5;
+  border-radius: 12px;
+  background: #f6f9f6;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.structure-field__number {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 830;
+  font-variant-numeric: tabular-nums;
+}
+.structure-sections .reference-card {
+  border-left: 3px solid var(--accent);
+}
+.assessment-criteria {
+  grid-template-columns: minmax(0, 1fr);
+}
+.assessment-criterion {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 13px 16px;
+  border: 1px solid #e1d3bb;
+  border-radius: 11px;
+  background: #fcf8ef;
+  line-height: 1.48;
+}
+.assessment-criterion__marker {
+  flex: 0 0 14px;
+  height: 14px;
+  margin-top: 4px;
+  border: 2px solid #ac8758;
+  border-radius: 3px;
+}
+.assessment-sections .reference-card {
+  background: #fcf8ef;
+  border-color: #e1d3bb;
+}
+.layout-content--process .process-list__row {
+  position: relative;
+  border-left: 3px solid #aecac0;
+  background: #f4f6f2;
+}
+.layout-content--process .process-list__index {
+  background: var(--accent);
+}
+@media (max-width: 700px) {
+  .comparison-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-card .layout-content * {
+    scroll-behavior: auto;
+  }
+}
