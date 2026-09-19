@@ -1,0 +1,322 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-BIYOGRAFI-AKIF-194-198",
+  "lesson_slug": "biyografi-akif-194-198",
+  "title": "Biyografi — Mehmet Akif Ersoy'a Hazırlık",
+  "subtitle": "Yaşamın İzinde · Konuya Başlarken / Metni Okuyalım / Söz Varlığımız",
+  "printed_page_range": "194-198",
+  "required_source_range": {
+    "from": "T03-S0056",
+    "to": "T03-S0060"
+  },
+  "steps": [
+    {
+      "id": "s194-two-biographies",
+      "source_record_id": "T03-S0056",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Konuya Başlarken — Tarık Buğra ve Âşık Veysel'e ilişkin iki parçayı okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın ilk metni Tarık Buğra'nın radyo oyunu ve ilk telifini; ikinci metni Âşık Veysel'in tanışmaları ile gezilerini anlatır.",
+        "sections": [
+          {
+            "title": "Tarık Buğra — Askerde / İlk Telif Ücreti",
+            "body": "Aile içindeki iddia → radyofonik oyunun yazılması → kabul edilmesi → ilk telif."
+          },
+          {
+            "title": "Âşık Veysel — Gençlik Yılları",
+            "body": "Ahmet Kutsi Tecer'le tanışma → Âşıklar Bayramı → belge → başka illere açılma."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s194-q1",
+      "source_record_id": "T03-S0056",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Soru 1 — Biyografilerde kişinin hayatındaki hangi tür ayrıntılara yer verilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P194-Q01",
+      "content": {
+        "lead": "Doğum–eğitim gibi genel bilgilerin yanı sıra hayatı etkileyen belirli olaylar ve kişiler de önemlidir.",
+        "items": [
+          "Aile, öğrenim ve yaşadığı dönem",
+          "Meslek, sanat ve eserleri",
+          "Yol açıcı tanışmalar ve dönüm noktaları",
+          "Çalışmaların sonuçları"
+        ]
+      }
+    },
+    {
+      "id": "s194-tarik",
+      "source_record_id": "T03-S0056",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Tarık Buğra'nın biyografisinde hangi dönüm noktasına yer verilmiş?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bir radyo programı üzerine aile ortamında başlayan iddianın ‘Arayan Bulur’ piyesine ve ilk telife dönüşmesi.",
+        "sections": [
+          {
+            "title": "Neden seçilmiş?",
+            "body": "Küçük bir olayın yazarın meslek yaşamında somut sonuç doğurduğunu gösterir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s194-veysel",
+      "source_record_id": "T03-S0056",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Âşık Veysel'in yaşamında hangi kişi ve olay değişim yaratmış?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "1930'da Ahmet Kutsi Tecer'le tanışır; 1931'de Sivas Âşıklar Bayramı'na katılır ve ‘Halk Şairi’ belgesi sonrası farklı illerde şiir söyler.",
+        "sections": [
+          {
+            "title": "Neden seçilmiş?",
+            "body": "Sanatçının çevresiyle kurduğu bağ ve yeni imkânların biyografideki rolünü gösterir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s194-q2",
+      "source_record_id": "T03-S0057",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Soru 2 — Bu iki hayat hikâyesinden hareketle biyografinin okur açısından önemini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P194-Q02",
+      "content": {
+        "lead": "İki sanatçının yalnız başarılarını değil o başarılara zemin oluşturan kişi, olay ve koşulları karşılaştırın."
+      }
+    },
+    {
+      "id": "s195-goal",
+      "source_record_id": "T03-S0058",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Okumayı Yönetebilme 1 — Mehmet Akif Ersoy biyografisi için okuma amacınızı seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P195-PERF01",
+      "content": {
+        "lead": "Amaç örneği: Sanatçının eğitimi, meslek ve yayın hayatındaki dönüm noktalarını izlemek. Kendi okuma amacınızı derse başlamadan belirleyin.",
+        "items": [
+          "Öğrenmek istediğim yaşam dönemi",
+          "İzleyeceğim bilgi türü",
+          "Okuma sonunda cevaplayacağım soru"
+        ]
+      }
+    },
+    {
+      "id": "s195-prediction",
+      "source_record_id": "T03-S0058",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Okumayı Yönetebilme 2 — Yalnız başlık ve görsellerle içeriğe ilişkin tahmin oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metni henüz okumadan düşünün. İleride görülecek tarihler, Millî Mücadele bilgileri ve İstiklâl Marşı sonucu ilk tahmin gibi yazılmamalıdır.",
+        "items": [
+          "Başlıktan hareketle metin türü tahmini",
+          "Görsel varsa çıkarılabilen bilgi",
+          "Sınıfta paylaşılacak gerekçe"
+        ]
+      }
+    },
+    {
+      "id": "s195-strategy",
+      "source_record_id": "T03-S0058",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Metni Okuyalım 1–2 — Okuma stratejisi seçip vurgu ve tonlamayla okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Biyografiyi tarih/olay/etki notlarıyla takip edin; özel adlar, dönemler ve alıntıların vurgu-tonlama bakımından işlevini fark edin.",
+        "items": [
+          "Yılları ve dönüm noktalarını işaretleyin.",
+          "Eğitim, iş ve eserleri farklı notlayın.",
+          "Uzun cümleleri anlam gruplarına ayırarak seslendirin."
+        ]
+      }
+    },
+    {
+      "id": "s195-reading",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Metni Okuyalım — Mehmet Akif Ersoy (s.195): aile, öğrenim ve edebiyata giriş",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metni kitaptan okuyun; 1878–1893 öğrenim zincirini ve 1908–1912 dergi/kitap sürecini ayrı izleyin. Yalnız başlık ve not çerçevesi burada verilir; tam metin tekrar yayımlanmaz.",
+        "sections": [
+          {
+            "title": "Yaşam dönemi",
+            "body": "Fatih'te çocukluk ve öğrenim; baytarlık eğitimi ve memuriyete başlangıç."
+          },
+          {
+            "title": "Edebiyat ve yayın",
+            "body": "İlk şiirler, Sırat-ı Müstakim/Sebilürreşat ve Safahat."
+          },
+          {
+            "title": "Kendi notunuz",
+            "body": "Tarih → olay → bu olayın sanat/meslek yaşamındaki yeri."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s195-struggle",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.195 — Millî Mücadele'ye katılışın metindeki kronolojisini izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın verdiği 10 Nisan ve 24 Nisan 1920 tarihleriyle Ankara'ya gidişi ve sonraki görevleri ayırın.",
+        "sections": [
+          {
+            "title": "Kaynak sınırı",
+            "body": "Burada yalnız s.195'teki açık tarihler ve olaylar esas alınır; metnin s.196'daki devamı sonraki adımda okunur."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s196-anthem",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.196 — Millî marş yarışmasına ilişkin anlatılan olay sırasını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yarışma ilanı → para ödülüne mesafeli duruş → ödülü almama şartıyla yazma → 1 Mart 1921 okuma → 12 Mart 1921 kabul.",
+        "sections": [
+          {
+            "title": "Öğretmene not",
+            "body": "Bu bilgiler s.196 metninin içeriğidir; s.195'teki okuma öncesi tahmin yerine geçmez."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s196-egypt",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.196 — Mısır yılları ve İstanbul'a dönüş bölümünü okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "1923–1936 arasında Mısır'a gidiş/dönüşleri ve tercüme/öğretim çalışmalarını tarihlerle takip edin.",
+        "sections": [
+          {
+            "title": "Yaşam çizgisi",
+            "body": "Kronolojik olayları eser/meslek değerlendirmeleriyle karıştırmadan notlayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s196-works",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.196 — Şiirleri ve diğer eserlerinin ayrımını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitap şiirleri gençlik/olgunluk; diğer eserleri ağırlıklı olarak tercüme ve düzyazı çalışmaları şeklinde tanıtır.",
+        "sections": [
+          {
+            "title": "Soru",
+            "body": "Bir kişinin biyografisinde eser adları, yayımlanma çevresi ve yaşam dönemleri nasıl ilişkilendirilmiş?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s197-author",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.197 — Biyografi yazarına ilişkin bilgi kutusunu metinden ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitapta Mehmet Akif metnini hazırlayan Fazıl Gökçek'e ilişkin ayrı bir tanıtım kutusu vardır. Bunu Akif'in yaşam bilgisi gibi not etmeyin.",
+        "sections": [
+          {
+            "title": "Kaynak türü",
+            "body": "Biyografinin yazarı hakkında kısa ek bilgi; ana kişinin biyografisinin bir olayı değildir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s197-portrait",
+      "source_record_id": "T03-S0059",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.197 — Akif'in toplum ve edebiyat anlayışına ilişkin değerlendirmeleri okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Çocuklar ve toplumun farklı kesimleri, millet/memleket meseleleri ve şiirde estetik işçilikle ilgili kitabın değerlendirmesini ayrıştırın.",
+        "sections": [
+          {
+            "title": "Olgu / değerlendirme ayrımı",
+            "body": "Eser adları ve yayın bilgileriyle biyografi yazarının ‘duyarlı’ gibi nitelemelerini aynı kanıt türü saymayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s198-text",
+      "source_record_id": "T03-S0060",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.198 — Hakkın Sesleri üzerine verilen parçayı okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Balkan Savaşı, şairin duyarlılığı ve sosyal olaylara bakışının anlatıldığı metindeki altı çizili kelimelerin bağlamını belirleyin.",
+        "sections": [
+          {
+            "title": "Kelime çalışmasına geçiş",
+            "body": "Önce altı çizili kelimenin cümlede nasıl kullanıldığını görün, ardından kutucuktaki anlamla eşleştirin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s198-vocab",
+      "source_record_id": "T03-S0060",
+      "layout": "vocabulary",
+      "density": "compact",
+      "prompt": "Söz Varlığımız — Altı anlamı uygun kelimelerle eşleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P198-VOC01",
+      "content": {
+        "lead": "Kitap yedi kelime seçeneği verir; altı tanım eşleştirilir ve ‘vesile’ kullanılmadan kalır. Sözlük karekodu doğrulama adımıdır."
+      }
+    },
+    {
+      "id": "s198-words-extra",
+      "source_record_id": "T03-S0060",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Eşleştirmeyi kontrol ediniz: Altı tanım, yedi seçenek",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hor görülme–zillet; hassas–duyarlı; vasıtalı–dolaylı; yıkıp bozma–tahribat; esin–ilham; umursamayan–vurdumduymaz.",
+        "sections": [
+          {
+            "title": "Kullanılmayan",
+            "body": "f) vesile — sayfada bu kelimeye karşılık gelen bir tanım kutusu bulunmuyor."
+          }
+        ]
+      }
+    }
+  ]
+}
