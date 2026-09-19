@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-DEGERLENDIRME-192-193",
+  "lesson_slug": "huzur-degerlendirme-192-193",
+  "title": "Huzur — Değerlendirme ve Çıkış Kartı",
+  "subtitle": "Yaşamın İzinde · Çalışma Kâğıdı / Süreci Değerlendirebilme / Çıkış Kartı",
+  "printed_page_range": "192-193",
+  "required_source_range": {
+    "from": "T03-S0052",
+    "to": "T03-S0055"
+  },
+  "steps": [
+    {
+      "id": "s192-worksheet",
+      "source_record_id": "T03-S0052",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Huzur çözümlemelerini beş satırda tamamlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P192-WORKSHEET",
+      "content": {
+        "lead": "Üstteki çalışma kâğıdı beş ayrı başlık içerir; alttaki kişisel beğeni sorusuyla aynı yanıt değildir.",
+        "items": [
+          "1. Yazarın üslup seçiminin nedenleri ve sonuçları",
+          "2. Metnin yazıldığı dönemin özellikleri",
+          "3. İçerik, yapı, dil, dönem ve toplum ilişkisi",
+          "4. Yapı unsurlarının metne katkısı",
+          "5. Millî, manevi ve evrensel değerler"
+        ]
+      }
+    },
+    {
+      "id": "s192-style",
+      "source_record_id": "T03-S0052",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı 1 — Üslup seçiminin nedenlerini ve sonuçlarını ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın huzur/kimlik arayışının şiirsel betimlemeyi, musikiyi ve iç çözümlemeyi nasıl öne çıkardığını düşünün.",
+        "items": [
+          "Neden: metnin hangi sorusu veya duygusu?",
+          "Sonuç: hangi anlatım yolu ve okur üzerindeki etkisi?"
+        ]
+      }
+    },
+    {
+      "id": "s192-period",
+      "source_record_id": "T03-S0052",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı 2 — Yazıldığı dönemin metne yansıyan özelliklerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki Tanpınar biyografisiyle Huzur kesitinin ‘yeni hayat’ ve eski kültür üzerine sözlerini birlikte okuyun.",
+        "items": [
+          "Geleneksel kültür / musiki",
+          "Modernleşme ve yeni hayat ihtiyacı"
+        ]
+      }
+    },
+    {
+      "id": "s192-society",
+      "source_record_id": "T03-S0052",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı 3 — İçerik, yapı, dil ve toplum arasındaki ilişkiyi gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın kültür sevgisiyle Nuran'ın Üsküdar'ın gündelik güçlüklerini hatırlatması aynı şehir anlatısında yer alır.",
+        "items": [
+          "İçerik ve kişi görüşleri",
+          "Mekân, zaman ve kültürel hafıza",
+          "Söz varlığı ve sosyal hayat"
+        ]
+      }
+    },
+    {
+      "id": "s192-structure",
+      "source_record_id": "T03-S0052",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı 4 — Olay, kişi, mekân ve zamanın metne katkısını söyleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişiler farklı görüşleri, tarihî semtler hafızayı, hatıralar da geçmişle şimdiki yaşantı arasındaki bağı taşır."
+      }
+    },
+    {
+      "id": "s192-values",
+      "source_record_id": "T03-S0052",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı 5 — Millî, manevi ve evrensel değerleri birbirine karıştırmadan yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her başlık için metinden somut kişi, söz veya davranış bulun.",
+        "items": [
+          "Millî: tarihî şehir ve musiki mirası",
+          "Manevi: aile bağı, şefkat, saygı",
+          "Evrensel: sevgi ve başkasına/canlılara duyarlılık"
+        ]
+      }
+    },
+    {
+      "id": "s192-personal",
+      "source_record_id": "T03-S0052",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 1 — Huzur'un dil ve anlatımıyla ilgili beğeni ve eleştirilerinizi gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P192-Q01",
+      "content": {
+        "lead": "Öğrencinin beğenisi ve eleştirisi aynı olmak zorunda değildir; her görüşünü metindeki belirli bir anlatım tercihiyle ilişkilendirsin."
+      }
+    },
+    {
+      "id": "s193-criteria",
+      "source_record_id": "T03-S0053",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 2 — Kendi metin değerlendirme ölçütlerinizi ve gerekçeli sonuçlarınızı tabloya yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P193-PERF01",
+      "content": {
+        "lead": "Kitap bir örnek satır verir: Tutarlılık. Ardındaki beş satır öğrencinin kendisinin belirleyeceği ölçüt ve değerlendirmeler için boştur.",
+        "items": [
+          "Ölçüt: Ne hakkında karar veriyorum?",
+          "Değerlendirme: Metinde bunu hangi söz veya sahne gösteriyor?",
+          "Kitabın Tutarlılık örneğini koruyun; diğer ölçütleri kendiniz belirleyin."
+        ]
+      }
+    },
+    {
+      "id": "s193-criteria-model",
+      "source_record_id": "T03-S0053",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kişisel ölçüt tablosunu nasıl doldurursunuz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki Tutarlılık satırını inceleyin. Diğer satırlara yalnız sevip sevmediğinizi değil gerekçenizi yazın.",
+        "sections": [
+          {
+            "title": "Ölçüt örneği",
+            "body": "Dil ve söz varlığı."
+          },
+          {
+            "title": "Metinden dayanak",
+            "body": "‘Mazi’, ‘hüviyet’ ve musiki sözcükleri."
+          },
+          {
+            "title": "Değerlendirme sorusu",
+            "body": "Bu sözler sizce metni zenginleştiriyor mu, anlaşılmasını zorlaştırıyor mu? Niçin?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s193-voice",
+      "source_record_id": "T03-S0054",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 3 — Kendinizi bir Huzur kişisinin yerine koyup ne düşünüp nasıl davranacağınızı sözlü anlatınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P193-PERF02",
+      "content": {
+        "lead": "Kitap bu cevabı yazılı değil sözlü ister. Öğrenci gerçek metin davranışından hareketle kendi düşünce ve davranışını gerekçelendirmeli.",
+        "items": [
+          "Kişiyi ve neden seçtiğinizi belirtin.",
+          "Metindeki söz veya davranışı hatırlatın.",
+          "O kişinin yerinde nasıl düşüneceğinizi söyleyin.",
+          "Neyi neden farklı veya benzer yapacağınızı açıklayın."
+        ]
+      }
+    },
+    {
+      "id": "s193-exit",
+      "source_record_id": "T03-S0055",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çıkış Kartı — Beğendiğiniz ifadelerin çağrışım zenginliğini Üç Yaz–İki Sor–Bir Paylaş ile değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P193-PERF03",
+      "content": {
+        "lead": "s.193'te üç yazı, iki soru ve bir paylaşım için ayrı numaralı alanlar var. Metinden gerçekten seçtiğiniz ifadelerle doldurun.",
+        "items": [
+          "Üç Yaz (3)",
+          "İki Sor (2)",
+          "Bir Paylaş (1)"
+        ]
+      }
+    },
+    {
+      "id": "s193-three",
+      "source_record_id": "T03-S0055",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Üç Yaz — Seçtiğiniz ifadelerin çağrışım zenginliğinde beğendiğiniz üç yönü yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İfade → çağrıştırdığı düşünce/duygu → neden etkileyici olduğu biçiminde yazın. Örnekleri yaşanmış kişisel beğeninizmiş gibi kopyalamayın.",
+        "items": [
+          "1. Tarihî şehir ve aidiyet",
+          "2. Musiki ile hafıza",
+          "3. Ses, manzara veya sözcükle doğan duygu"
+        ]
+      }
+    },
+    {
+      "id": "s193-two",
+      "source_record_id": "T03-S0055",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İki Sor — Beğendiğiniz ifadelerin çağrışımlarını açacak iki soru kurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sorularınız tek kelimelik bilgi aramasın; ifadenin geçmiş, kimlik, şehir veya duygu bağlantısını düşündürsün.",
+        "items": [
+          "1. İfadenin metindeki bağlamı neden önemli?",
+          "2. Aynı ifade farklı okurda başka ne çağrıştırabilir?"
+        ]
+      }
+    },
+    {
+      "id": "s193-one",
+      "source_record_id": "T03-S0055",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Bir Paylaş — Sizi en çok etkileyen bir ifadeyi gerekçenizle paylaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Gerçekten seçtiğiniz kısa metin ifadesini gösterin, çağrıştırdığı tek bir düşünce veya duyguyu kendi sözünüzle açıklayın."
+      }
+    }
+  ]
+}
