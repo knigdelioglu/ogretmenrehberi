@@ -284,7 +284,7 @@ export function StepView({
           </>
         )}
 
-        {!answerVisible && content?.lead && answer && content.lead !== step.display_prompt ? (
+        {!answerVisible && content?.lead && content.lead !== step.display_prompt ? (
           <p className="lead">{content.lead}</p>
         ) : null}
 
