@@ -1,0 +1,397 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297",
+  "lesson_slug": "anadolu-insani-cozumleme-291-297",
+  "title": "Anadolu İnsanı / Fedakârlık — Çözümleme ve Değerlendirme",
+  "subtitle": "Hayatın Aynası · Çok modluluk / dil / değerler / disiplinler / öğrenme günlüğü",
+  "printed_page_range": "291-297",
+  "required_source_range": {
+    "from": "T04-S0096",
+    "to": "T04-S0116"
+  },
+  "steps": [
+    {
+      "id": "s291-q10",
+      "source_record_id": "T04-S0096",
+      "answer_id": "T4-P291-Q10",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 10 — Karakterin davranışlarından duygu ve düşüncelerine yönelik çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce videoda gözlenen davranışı yazın; ardından olası duygu/düşünceyi ve gerekçeyi belirtin.",
+        "items": [
+          "Davranış",
+          "Olası duygu/düşünce",
+          "Gerekçe"
+        ],
+        "note": "Video görülmeden karaktere kesin duygu yüklenmez."
+      }
+    },
+    {
+      "id": "s291-q11",
+      "source_record_id": "T04-S0097",
+      "answer_id": "T4-P291-Q11",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 11 — Fedakârlık videosunu çalışkanlığın öğrenme ve kavramadaki önemini gösterecek biçimde özetleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız videoda bulunan ana olay, kişi, fedakârlık davranışı ve sonuçları seçin; yeni olay eklemeyin."
+      }
+    },
+    {
+      "id": "s292-source",
+      "source_record_id": "T04-S0098",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Fark Edelim — İklim Değişikliği ve Türkiye metnini okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İnsan faaliyetleri, atmosfer dengesi, kuraklık/taşkın ve su kaynakları arasındaki neden–sonuç ilişkisini belirleyin."
+      }
+    },
+    {
+      "id": "s292-q1",
+      "source_record_id": "T04-S0098",
+      "answer_id": "T4-P292-Q01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Fark Edelim — İklim değişikliğinin zararlarını azaltmada bireylere hangi sorumluluklar düşer?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Enerji, su, ulaşım, tüketim ve atık davranışlarından somut örnekler verin; yalnız oluşmuş zararı değil yeni zararı azaltmayı da düşünün."
+      }
+    },
+    {
+      "id": "s293-watch",
+      "source_record_id": "T04-S0099",
+      "answer_id": "T4-P293-Q01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 1 — Anadolu İnsanı / Çalışkanlık videosunu dinleme-izleme kurallarına uygun izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Fedakârlık videosuyla karşılaştırma yapacağınız için dört başlıkta kısa not tutun.",
+        "items": [
+          "Dil ve üslup",
+          "İleti",
+          "Tür",
+          "İçerik"
+        ],
+        "note": "Çalışkanlık videosunun ayrıntıları QR kaynak görülmeden Lesson Player tarafından doldurulmaz."
+      }
+    },
+    {
+      "id": "s293-q2",
+      "source_record_id": "T04-S0099",
+      "answer_id": "T4-P293-Q02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 2 — Çalışkanlık videosunun ana düşüncesini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana düşünceyi yalnız başlıktan çıkarmayın; tekrarlanan davranış, sonuç ve final vurgusuyla kanıtlayın."
+      }
+    },
+    {
+      "id": "s293-q3",
+      "source_record_id": "T04-S0100",
+      "answer_id": "T4-P293-Q03",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Karşılaştıralım 3 — Fedakârlık ve Çalışkanlık belgesellerini dört ölçütte karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçütte en az bir benzerlik ve bir farklılık yazın; iki videodan da gerçek kanıt kullanın.",
+        "items": [
+          "Dil ve üslup",
+          "İleti",
+          "Tür",
+          "İçerik"
+        ]
+      }
+    },
+    {
+      "id": "s294-q1",
+      "source_record_id": "T04-S0101",
+      "answer_id": "T4-P294-Q01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 1 — Belgeselin beş yapı unsurunu belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız videoda gerçekten bulunan unsurları yazın.",
+        "items": [
+          "Ses",
+          "Görsel",
+          "Işık",
+          "Mekân",
+          "Zaman"
+        ]
+      }
+    },
+    {
+      "id": "s294-q2",
+      "source_record_id": "T04-S0102",
+      "answer_id": "T4-P294-Q02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 2 — Yapı unsurları içerikle ilişkili olarak hangi işlevleri üstleniyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her unsur için 'ne işe yarıyor?' sorusunu videodaki bir örnekle cevaplayın."
+      }
+    },
+    {
+      "id": "s294-q3",
+      "source_record_id": "T04-S0103",
+      "answer_id": "T4-P294-Q03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 3 — Yapı unsurlarının çok modlu metne katkısını değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Anlaşılırlık, duygu, gerçeklik duygusu, kişi/mekân tanıtımı veya dikkat yönlendirme işlevlerinden hangilerinin gerçekten görüldüğünü kanıtlayın."
+      }
+    },
+    {
+      "id": "s294-q4",
+      "source_record_id": "T04-S0104",
+      "answer_id": "T4-P294-Q04",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 4 — Yapı unsurları arasındaki beş ilişkiyi belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki unsurun yalnız aynı anda bulunmasını değil, birbirinin anlamını nasıl tamamladığını açıklayın.",
+        "items": [
+          "Görsel–ses",
+          "Görsel–nesne",
+          "Görsel–mekân",
+          "Ses–mekân",
+          "Ses–kişiler"
+        ]
+      }
+    },
+    {
+      "id": "s294-q5",
+      "source_record_id": "T04-S0105",
+      "answer_id": "T4-P294-Q05",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 5 — Dil ve anlatım özelliklerini içerikle ve günlük dilinizle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kelime seçimi, resmiyet, açıklayıcı/duygusal ton ve yerel söyleyiş varsa bunları gerçek video örnekleriyle karşılaştırın."
+      }
+    },
+    {
+      "id": "s294-q6",
+      "source_record_id": "T04-S0106",
+      "answer_id": "T4-P294-Q06",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 6 — Kullanılan dil iletileri ne ölçüde yansıtıyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dil, ana iletiyi açıklaştırıyor mu; hedef kitleye uygun mu; sözlü anlatım görsellerle uyumlu mu? Videodan kanıt gösterin."
+      }
+    },
+    {
+      "id": "s295-q7",
+      "source_record_id": "T04-S0107",
+      "answer_id": "T4-P295-Q07",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 7 — Metinde kullanılan dilin işlevlerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İşlev adını videodan gerçek bir söz veya konuşma örneğiyle eşleştirin.",
+        "items": [
+          "Bilgi verme / açıklama",
+          "Duygu ve tutum bildirme",
+          "Düşündürme / yönlendirme",
+          "Kişiler arası iletişim"
+        ]
+      }
+    },
+    {
+      "id": "s295-q8",
+      "source_record_id": "T04-S0108",
+      "answer_id": "T4-P295-Q08",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 8 — Karakterin özelliklerini ve amaçlarını yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Özellik için davranış; amaç için karar, söz veya eylem dayanağı kullanın. QR video görülmeden kişilik özelliği uydurmayın."
+      }
+    },
+    {
+      "id": "s295-q9",
+      "source_record_id": "T04-S0109",
+      "answer_id": "T4-P295-Q09",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 9 — Görsel, ses, nesne ve mekân iletileri aktarmada ne kadar işlevsel?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her başlık için 'hangi iletiyi, nasıl güçlendirdi?' sorusunu cevaplayın.",
+        "items": [
+          "Görsel",
+          "Ses",
+          "Nesne",
+          "Mekân"
+        ]
+      }
+    },
+    {
+      "id": "s295-q10",
+      "source_record_id": "T04-S0110",
+      "answer_id": "T4-P295-Q10",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 10 — Dönemin sosyal, ekonomik ve kültürel özelliklerini ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Videoda görülmeyen dönem bilgilerini dışarıdan eklemeyin.",
+        "items": [
+          "Sosyal: ilişkiler, kurumlar, roller",
+          "Ekonomik: çalışma ve geçim şartları",
+          "Kültürel: dil, gelenek, değer, gündelik uygulama"
+        ]
+      }
+    },
+    {
+      "id": "s295-q11",
+      "source_record_id": "T04-S0111",
+      "answer_id": "T4-P295-Q11",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 11 — İçerik, yapı ve dilin dönem/toplumla ilişkisini sözlü açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Üç ayrı bağ kurun: olay/kişiler, görsel-ses-mekân ve dil/anlatım. Her çıkarım için video kanıtı gösterin."
+      }
+    },
+    {
+      "id": "s295-q12",
+      "source_record_id": "T04-S0112",
+      "answer_id": "T4-P295-Q12",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 12 — Ses veya görüntüyü kaldırdığınızda belgeselin anlamı nasıl değişiyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Aynı bölümü normal, yalnız görüntü ve yalnız ses koşullarında karşılaştırın.",
+        "sections": [
+          {
+            "title": "Bilgi kaybı",
+            "body": "Hangi bilgi yalnız ses veya yalnız görüntüyle eksiliyor?"
+          },
+          {
+            "title": "Duygusal etki",
+            "body": "Müzik, ton, yüz ifadesi veya görüntü ritmi neyi değiştiriyor?"
+          },
+          {
+            "title": "Çok modluluk",
+            "body": "Ses ve görüntü birlikte hangi daha geniş anlamı kuruyor?"
+          }
+        ],
+        "note": "Fedakârlık videosuna özgü sonuç, gerçek deneyden sonra yazılmalıdır."
+      }
+    },
+    {
+      "id": "s296-q13",
+      "source_record_id": "T04-S0113",
+      "answer_id": "T4-P296-Q13",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 13 — Millî, manevi ve evrensel değerleri ve aktarılma yollarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Değer adını yazdıktan sonra hangi söz, davranış, olay, görsel veya ses unsuruyla aktarıldığını gösterin.",
+        "items": [
+          "Millî değer",
+          "Manevi değer",
+          "Evrensel değer",
+          "Aktarılma yolu"
+        ]
+      }
+    },
+    {
+      "id": "s296-q14",
+      "source_record_id": "T04-S0114",
+      "answer_id": "T4-P296-Q14",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çözümleyebilme 14 — Belgeselin sosyoloji, psikoloji ve coğrafyayla ilişkisini çalışma kâğıdına yazınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her disiplin için videodan bir somut örnek ve bu örneğin neden o disiplinle ilişkili olduğunu belirtin.",
+        "items": [
+          "Metin–Sosyoloji",
+          "Metin–Psikoloji",
+          "Metin–Coğrafya"
+        ]
+      }
+    },
+    {
+      "id": "s297-q1",
+      "source_record_id": "T04-S0115",
+      "answer_id": "T4-P297-Q01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 1 — Belgeseli günlük hayat ve kişisel beğeni açısından değerlendirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kendi yaşamınızda karşılık bulan bir ayrıntıyı seçin; görsel/ses/anlatım tercihlerinin sizi neden etkilediğini açıklayın."
+      }
+    },
+    {
+      "id": "s297-q2",
+      "source_record_id": "T04-S0116",
+      "answer_id": "T4-P297-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Süreci Değerlendirebilme 2 — Etkin dinleyici kimliğiniz için Öğrenme Günlüğü'nü doldurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hazır cevap yazmayın; kendi izleme deneyiminizi dört alanda değerlendirin.",
+        "items": [
+          "Belgeselin bana kattığı değerler",
+          "Uygulayabileceğim davranışlar",
+          "Hayatımı yansıtan yaşantılar",
+          "Daha etkin izleyici olarak dikkat edeceğim hususlar"
+        ]
+      }
+    },
+    {
+      "id": "s297-next",
+      "source_record_id": "T04-S0116",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Dinleme/izleme bloğunu kişisel bir hedefle kapatınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrenme günlüğünüzden yalnız bir davranışı bir sonraki video izleme görevinizde uygulanabilir hedefe dönüştürün.",
+        "sections": [
+          {
+            "title": "Hedef",
+            "body": "Örneğin olgu ile yorumu ayrı not etmek."
+          },
+          {
+            "title": "Uygulama",
+            "body": "İlk izleyiş bütünlük, ikinci izleyiş kanıt notu."
+          },
+          {
+            "title": "Kontrol",
+            "body": "Sonraki çalışmada hedefin gerçekleşip gerçekleşmediğini değerlendirmek."
+          }
+        ]
+      }
+    }
+  ]
+}
