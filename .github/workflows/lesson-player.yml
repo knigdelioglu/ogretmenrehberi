@@ -1636,6 +1636,62 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-270-worksheet.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-ANLAMA-266-270&step=s270-work"
 
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-271-density.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-KARSILASTIRMA-271-273&step=s271-q12"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-272-table.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-KARSILASTIRMA-271-273&step=s272-table"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-273-tavafi.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-KARSILASTIRMA-271-273&step=s273-q1"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-274-characters.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-COZUMLEME-274-279&step=s274-analysis"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-276-conflicts.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-COZUMLEME-274-279&step=s276-conflicts"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-278-disciplines.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-COZUMLEME-274-279&step=s278-disciplines"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme4-279-poetics.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T04-MERDIVEN-COZUMLEME-274-279&step=s279-q1"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -1824,5 +1880,12 @@ jobs:
             lesson-player-theme4-268-symbol.png
             lesson-player-theme4-269-inout.png
             lesson-player-theme4-270-worksheet.png
+            lesson-player-theme4-271-density.png
+            lesson-player-theme4-272-table.png
+            lesson-player-theme4-273-tavafi.png
+            lesson-player-theme4-274-characters.png
+            lesson-player-theme4-276-conflicts.png
+            lesson-player-theme4-278-disciplines.png
+            lesson-player-theme4-279-poetics.png
             apps/lesson-player/dist
           if-no-files-found: error
