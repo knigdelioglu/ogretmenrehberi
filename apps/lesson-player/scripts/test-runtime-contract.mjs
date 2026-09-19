@@ -3,6 +3,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   buildExportedStep,
+  canonicalLessonSignature,
+  overrideEnvelope,
+  projectionLessonUrl,
+  restoredStepIndex,
+  restoreOverrideEnvelope,
+  studentVisibleOverrides,
   studentVisibleRevealKeys
 } from "../src/runtime-contracts.js";
 
@@ -94,7 +100,7 @@ assert(
 );
 assert(
   appSource.includes(
-    "setRevealed(new Set(studentVisibleRevealKeys(state.revealed)))"
+    "setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [])))"
   ),
   "Student projection must sanitize incoming reveal state defensively."
 );
@@ -107,6 +113,113 @@ assert(
     'showTeacherNotes && content?.note && revealed.has("note")'
   ),
   "StepView must gate teacher-note rendering explicitly."
+);
+
+const reorderedIds = ["first", "third", "second"];
+assert(
+  restoredStepIndex(reorderedIds, "second", "first", 0) === 2,
+  "Deep link must resolve the step ID in the reordered presentation."
+);
+assert(
+  restoredStepIndex(reorderedIds, "missing", "third", 0) === 1,
+  "Saved step ID must restore progress when URL step is stale."
+);
+assert(
+  restoredStepIndex(reorderedIds, null, null, 99) === 2,
+  "Legacy numeric progress must be clamped to the current order."
+);
+
+const sampleLesson = lessons[0];
+const signature = canonicalLessonSignature(sampleLesson);
+const userEdits = { [sampleLesson.steps[0].id]: { density: "compact" } };
+const currentEnvelope = JSON.stringify(overrideEnvelope(signature, userEdits));
+assert(
+  JSON.stringify(restoreOverrideEnvelope(
+    currentEnvelope, signature, sampleLesson.steps.map((step) => step.id)
+  ).overrides) === JSON.stringify(userEdits),
+  "Edits must survive reload against the same canonical lesson."
+);
+const changedLesson = structuredClone(sampleLesson);
+changedLesson.steps[0].display_prompt += " [new edition]";
+const changedSignature = canonicalLessonSignature(changedLesson);
+assert(changedSignature !== signature, "Canonical content changes must invalidate old edits.");
+assert(
+  restoreOverrideEnvelope(
+    currentEnvelope, changedSignature, sampleLesson.steps.map((step) => step.id)
+  ).needsBackup,
+  "Stale overrides must be archived instead of silently masking new content."
+);
+assert(
+  restoreOverrideEnvelope(
+    JSON.stringify(userEdits), signature, sampleLesson.steps.map((step) => step.id
+  )).needsBackup,
+  "Unversioned legacy edits must not be silently applied."
+);
+assert(
+  !restoreOverrideEnvelope("{}", signature, sampleLesson.steps.map((step) => step.id
+  )).needsBackup,
+  "An empty legacy preference object should not create a backup warning."
+);
+assert(
+  restoreOverrideEnvelope(
+    "{broken", signature, sampleLesson.steps.map((step) => step.id
+  )).needsBackup,
+  "Malformed stored edits must not crash the player or be reapplied."
+);
+assert(
+  restoreOverrideEnvelope(
+    JSON.stringify(overrideEnvelope(signature, { unknownStep: { density: "large" } })),
+    signature, sampleLesson.steps.map((step) => step.id)
+  ).needsBackup,
+  "Overrides for unknown step IDs must not silently apply."
+);
+
+const teacherOverrides = {
+  "step-one": {
+    reveal_order: ["answer", "note"],
+    content: { lead: "Visible", note: "Teacher-only" }
+  }
+};
+const studentOverrides = studentVisibleOverrides(teacherOverrides);
+assert(
+  !JSON.stringify(studentOverrides).includes("Teacher-only") &&
+    !studentOverrides["step-one"].reveal_order.includes("note"),
+  "Projection overrides must never carry teacher-only notes or reveal layers."
+);
+assert(
+  teacherOverrides["step-one"].content.note === "Teacher-only",
+  "Projection sanitization must not mutate teacher overrides."
+);
+const nextUrl = new URL(projectionLessonUrl(
+  "https://example.test/lesson?lesson=old&step=old-step&display=1",
+  "new-lesson", "new-step"
+));
+assert(
+  nextUrl.searchParams.get("lesson") === "new-lesson" &&
+    nextUrl.searchParams.get("step") === "new-step" &&
+    nextUrl.searchParams.get("display") === "1",
+  "An existing student screen must navigate to a new lesson and step."
+);
+assert(
+  !new URL(projectionLessonUrl(nextUrl.toString(), "another-lesson")).searchParams.has("step"),
+  "Switching lessons without an explicit step must drop stale step deep links."
+);
+assert(
+  appSource.includes('const projectionWindowName = "ogretmenrehberi-lesson-player-projection"') &&
+    appSource.includes('type: "lesson-switch"') &&
+    appSource.includes("navigateDisplay(message.lessonId)") &&
+    appSource.includes("projectionLessonUrl(window.location.href, target.lesson_id, stepId)"),
+  "The student popup must be reusable and follow cross-lesson navigation."
+);
+assert(
+  appSource.includes("window.localStorage.setItem(progressStepKey, step.id)") &&
+    appSource.includes("restoredStepIndex("),
+  "Progress and reordered deep links must use the stable step identity."
+);
+assert(
+  appSource.includes("overrideEnvelope(overrideSignature, overrides)") &&
+    appSource.includes("window.localStorage.setItem(`${overridesKey}.backup.${Date.now()}`"),
+  "Stale local edits must be archived before storing the new revision."
 );
 
 console.log(
