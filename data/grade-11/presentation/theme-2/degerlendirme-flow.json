@@ -86,7 +86,14 @@
       "prompt": "Üç eserle ilgili verilen bilgilerden hangi çıkarıma ulaşılamaz? (Soru 3)",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sözlü kültürden yazılı kültüre geçiş iddiasını her eserin tarihiyle ayrı ayrı sınayın."
+        "lead": "Sözlü kültürden yazılı kültüre geçiş iddiasını her eserin tarihiyle ayrı ayrı sınayın.",
+        "items": [
+          "A · Üç eser de sözlü kültürden yazılı kültüre geçiş sırasında ortaya çıkmıştır.",
+          "B · Kutadgu Bilig ve Dede Korkut, İslamiyet etkisindeki dönemi farklı biçimlerde yansıtır.",
+          "C · Eserler, dönemlerinin toplumsal ve kültürel dünyasından izler taşır.",
+          "D · Kamus-ı Türkî, Türkçenin söz varlığını derlemeyi amaçlar.",
+          "E · Eserler, farklı dönemlerin dil ve düşünce dünyasını belgeleyebilir."
+        ]
       }
     },
     {
@@ -110,10 +117,15 @@
       "prompt": "Üç eserle ilgili notlarda I, II, III bilgilerinden hangisi hepsi için ortaktır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "items": [
-          "I · Yazarının belirtilmesi",
-          "II · İlk olma özelliği taşıması",
-          "III · Yazıldığı yüzyılın belirtilmesi"
+        "sections": [
+          {
+            "title": "Önermeler",
+            "body": "I. Eserlerin yazarları · II. İlk olma niteliği · III. Yazıldıkları yüzyıllar"
+          },
+          {
+            "title": "Seçenekler",
+            "body": "A) Yalnız I · B) Yalnız II · C) Yalnız III · D) I ve II · E) I, II ve III"
+          }
         ]
       }
     },
