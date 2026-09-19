@@ -11,6 +11,11 @@ import { EditorPanel } from "./components/EditorPanel";
 import { StepView } from "./components/StepView";
 import {
   buildExportedStep,
+  canonicalLessonSignature,
+  overrideEnvelope,
+  restoredStepIndex,
+  restoreOverrideEnvelope,
+  studentVisibleOverrides,
   studentVisibleRevealKeys
 } from "./runtime-contracts.js";
 import type {
@@ -40,15 +45,20 @@ const lesson =
       item.lesson_slug === requestedLesson
   ) ?? lessonCatalog[0];
 
-window.localStorage.setItem(lessonSelectionKey, lesson.lesson_id);
+const displayOnly = initialParams.get("display") === "1";
+if (!displayOnly) {
+  window.localStorage.setItem(lessonSelectionKey, lesson.lesson_id);
+}
 
 const progressKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.index`;
+const progressStepKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.step-id`;
 const modeKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection`;
 const overridesKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.overrides`;
 const orderKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.order`;
 const originalStepById = new Map(lesson.steps.map((step) => [step.id, step]));
-const projectionChannelName = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection-channel`;
-const displayOnly = initialParams.get("display") === "1";
+const overrideSignature = canonicalLessonSignature(lesson);
+const projectionChannelName = "ogretmenrehberi.lesson-player.projection-channel";
+const projectionWindowName = "ogretmenrehberi-lesson-player-projection";
 
 type StepOverride = {
   display_prompt?: string;
@@ -61,6 +71,8 @@ type StepOverride = {
 type StepOverrides = Record<string, StepOverride>;
 
 type ProjectionSyncState = {
+  lessonId: string;
+  stepId: string;
   index: number;
   stepOrder: string[];
   overrides: StepOverrides;
@@ -69,27 +81,49 @@ type ProjectionSyncState = {
 };
 
 function restoredIndex() {
-  const requestedStep = new URLSearchParams(window.location.search).get("step");
-  if (requestedStep) {
-    const requestedIndex = lesson.steps.findIndex((step) => step.id === requestedStep);
-    if (requestedIndex >= 0) return requestedIndex;
-  }
-
-  const raw = window.localStorage.getItem(progressKey);
-  const parsed = raw ? Number(raw) : 0;
-  if (!Number.isInteger(parsed)) return 0;
-  return Math.max(0, Math.min(lesson.steps.length - 1, parsed));
+  const raw = displayOnly ? null : window.localStorage.getItem(progressKey);
+  const legacyIndex = raw ? Number(raw) : 0;
+  const orderedIds = displayOnly
+    ? lesson.steps.map((step) => step.id)
+    : restoredOrder();
+  return restoredStepIndex(
+    orderedIds,
+    initialParams.get("step"),
+    displayOnly ? null : window.localStorage.getItem(progressStepKey),
+    legacyIndex
+  );
 }
 
-function restoredOverrides(): StepOverrides {
+function restoredOverrides(): {
+  overrides: StepOverrides;
+  warning: string | null;
+  canPersist: boolean;
+} {
+  if (displayOnly) return { overrides: {}, warning: null, canPersist: false };
   const raw = window.localStorage.getItem(overridesKey);
-  if (!raw) return {};
+  const restored = restoreOverrideEnvelope<StepOverrides>(
+    raw,
+    overrideSignature,
+    lesson.steps.map((step) => step.id)
+  );
+  if (!restored.needsBackup) {
+    return { overrides: restored.overrides, warning: null, canPersist: true };
+  }
 
   try {
-    const parsed = JSON.parse(raw);
-    return parsed && typeof parsed === "object" ? parsed : {};
+    // Archive legacy and stale edits before writing the new canonical revision.
+    window.localStorage.setItem(`${overridesKey}.backup.${Date.now()}`, raw ?? "");
+    return {
+      overrides: {},
+      warning: "Önceki sürüme ait yerel düzenlemeler yedeklendi; güncel ders içeriği yüklendi.",
+      canPersist: true
+    };
   } catch {
-    return {};
+    return {
+      overrides: {},
+      warning: "Eski düzenlemeler yedeklenemedi; eski veri korunuyor, yeni değişiklikler kaydedilmeyecek.",
+      canPersist: false
+    };
   }
 }
 
