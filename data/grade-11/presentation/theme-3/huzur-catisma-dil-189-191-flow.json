@@ -1,0 +1,387 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_03",
+  "lesson_id": "T11-T03-HUZUR-CATISMA-DIL-189-191",
+  "lesson_slug": "huzur-catisma-dil-189-191",
+  "title": "Huzur — Çatışma ve Dil",
+  "subtitle": "Yaşamın İzinde · Düşün–Eşleş–Paylaş, dil karşılaştırması, cümle ögeleri",
+  "printed_page_range": "189-191",
+  "required_source_range": {
+    "from": "T03-S0046",
+    "to": "T03-S0051"
+  },
+  "steps": [
+    {
+      "id": "s189-3passages",
+      "source_record_id": "T03-S0046",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım — Huzur'dan verilen üç parçayı ders kitabından okuyunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "s.189'un üç parçası birbirinden bağımsız çatışma kanıtları içerir: çocukluk hatırasının hüznü, kış Boğazı'nın yalnızlığı ve Nuran'ın tanışma çekincesi.",
+        "items": [
+          "Vapur düdükleri ve çocukluk hatırası",
+          "Kışın Boğaz, güzellik ve yalnızlık",
+          "İhsan/Macide ile nişanlı olarak tanışma"
+        ]
+      }
+    },
+    {
+      "id": "s189-think",
+      "source_record_id": "T03-S0046",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "DÜŞÜN — Üç parçadaki çatışmaları ve türlerini metne dayanarak belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P189-PERF01",
+      "content": {
+        "lead": "Her parçada 'kim/ne ile ne arasında' gerilim olduğunu saptayın. Yalnız tür adı değil söz ya da davranış gerekçesi bulun.",
+        "items": [
+          "1. Hatıra ve şifasız hüzün",
+          "2. Güzel Boğaz ve yalnızlığa tahammül",
+          "3. Tanışmak istemek ve nişanlı olarak tanıtılmaktan çekinmek"
+        ]
+      }
+    },
+    {
+      "id": "s189-one",
+      "source_record_id": "T03-S0046",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Birinci parçada çocukluk hatırası nasıl bir iç gerilim doğuruyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Mümtaz'ın vapur düdükleriyle hatıralara gitmesi ve hüznü 'şifasız' bulması üzerinde durun.",
+        "sections": [
+          {
+            "title": "Çatışma",
+            "body": "Gündelik yaşamı zenginleştiren hatıranın aynı anda iyileşmeyen hüzne dönüşmesi."
+          },
+          {
+            "title": "Anlatım",
+            "body": "Anlatıcının Mümtaz'ın duygusuna yaklaşması ve ses–hatıra çağrışımı."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s189-two",
+      "source_record_id": "T03-S0046",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "İkinci parçada Boğaz'ın güzelliği neden huzur vermeye yetmiyor?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Güzellik beğenisiyle yalnızlığa katlanamama düşüncesini ayrı söyleyin.",
+        "sections": [
+          {
+            "title": "Çatışma",
+            "body": "Mümtaz'ın içinde yaşadığı yalnızlık; mekânın güzelliğiyle ruh hâli karşı karşıya gelir."
+          },
+          {
+            "title": "Anlatım",
+            "body": "Gece/kış betimlemesinin ardından gelen kısa diyalog Mümtaz'ın gerilimini görünür kılar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s189-three",
+      "source_record_id": "T03-S0046",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Üçüncü parçada Nuran'ın kararını nasıl yorumlarsınız?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Nuran hem İhsan ile Macide'yi seveceğini söyler hem nişanlı sıfatıyla takdim edilmeye çekinir.",
+        "sections": [
+          {
+            "title": "Çatışma",
+            "body": "Tanışma arzusu ile tanıtılma biçimine yönelik tereddüt."
+          },
+          {
+            "title": "Sınır",
+            "body": "'Nasıl olsa görürüz' dediği için tanışmayı tümden reddetmiş saymayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s189-pair",
+      "source_record_id": "T03-S0046",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "EŞLEŞ — Anlatıcı, betimleme, diyalog ve psikolojik çözümlemenin çatışmaya katkısını tartışınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sıra arkadaşınızla her parça için bir anlatım aracı ve onu görünür kıldığı duygu/gerilim arasında bağ kurun.",
+        "items": [
+          "Birinci: üçüncü kişi anlatıcı, ses/hatıra çağrışımı",
+          "İkinci: kış/Boğaz betimlemesi ve diyalog",
+          "Üçüncü: Nuran'ın düşünmesi ve diyalogla tereddüdünü söylemesi"
+        ]
+      }
+    },
+    {
+      "id": "s189-share",
+      "source_record_id": "T03-S0046",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "PAYLAŞ — Çatışmalar ve bunları kuran anlatım yollarıyla ilgili bulgunuzu sınıfa aktarınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metinden kısa kanıt + çatışmanın türü + anlatımın katkısı şeklinde konuşun.",
+        "items": [
+          "Metindeki hangi söz/davranış?",
+          "Kim, ne ile karşı karşıya?",
+          "Anlatım biçimi bu gerilimi nasıl duyuruyor?"
+        ]
+      }
+    },
+    {
+      "id": "s190-compare",
+      "source_record_id": "T03-S0047",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Fark Edelim — s.190'daki parçada dönem dili ve günümüz dili için ortak ve farklı yönler bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P190-Q01",
+      "content": {
+        "lead": "Karşılaştırmada yapı, üslup, sanatçı ve dönem boyutlarını birlikte göz önüne alın.",
+        "items": [
+          "Ortak kelimeler / ekler / cümle işleyişi",
+          "Seyrek tarihî kelimeler ve kültürel göndermeler",
+          "Uzun ve şiirsel betimlemenin etkisi"
+        ]
+      }
+    },
+    {
+      "id": "s190-words",
+      "source_record_id": "T03-S0047",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "s.190'daki dil karşılaştırmasına metinden kanıt seçiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "'Hendesi', 'mazi', 'hülya', 'daüssıla', 'bilhassa' gibi kelimeleri güncel kelimelerden ayırın.",
+        "sections": [
+          {
+            "title": "Ortak yan",
+            "body": "'Gün', 'ev', 'seviyordu' gibi bugün de kullanılan dil ögeleri."
+          },
+          {
+            "title": "Farklı yan",
+            "body": "Tarihî/mimari adlar ve bugün daha seyrek duyulan sözler."
+          },
+          {
+            "title": "Üslup",
+            "body": "İstanbul akşamlarının 'ziyafet sofraları'na benzetilmesi duygu ve çağrışımı artırır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s190-191-grammar",
+      "source_record_id": "T03-S0048",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — s.190–191'deki a, b, c, ç, d, e, f cümlelerinin ögelerini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P190-GRAM01",
+      "content": {
+        "lead": "Kitapta yedi alt madde vardır. İki yüklemli b ile uzun fiilimsi gruplu d'yi sözcük sözcük parçalamadan çözümleyin.",
+        "items": [
+          "a — İster istemez...",
+          "b — Eski musıkîmizi...",
+          "c — İstanbul'un bu semtleri...",
+          "ç — Biraz ötede...",
+          "d — Mümtaz, çok küçüklük...",
+          "e — Bu gezintilerden...",
+          "f — Nuran, avlularında..."
+        ]
+      }
+    },
+    {
+      "id": "s190-gram-a",
+      "source_record_id": "T03-S0048",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "a) ‘İster istemez onların bir parçasıyız.’ cümlesinin ögelerini ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yüklem isim soyludur; özne 'biz' ekinden anlaşılır.",
+        "sections": [
+          {
+            "title": "Düşünme yolu",
+            "body": "Kim? (biz) / Ne durumdayız? (onların bir parçasıyız) / Nasıl? (ister istemez)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s190-gram-b",
+      "source_record_id": "T03-S0048",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "b) ‘Eski musıkîmizi seviyoruz, iyi kötü anlıyoruz.’ cümlesinde iki yargıyı çözünüz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Nesne ilk yargıda açıkça söylenir, ikinci yargıda bağlamca ortaktır; ‘iyi kötü’ ikinci yüklemi niteler.",
+        "sections": [
+          {
+            "title": "İki yüklem",
+            "body": "seviyoruz / anlıyoruz"
+          },
+          {
+            "title": "Ortak nesne",
+            "body": "eski musıkîmizi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s190-gram-c",
+      "source_record_id": "T03-S0048",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "c) ‘İstanbul'un bu semtleri ... bitaptı.’ cümlesinde zaman ve neden bildiren grupları ayırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "'Bu ağustos gününde' zaman, 'pislikten, tozdan, sıcaktan' neden bildirir."
+      }
+    },
+    {
+      "id": "s190-gram-cc",
+      "source_record_id": "T03-S0048",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "ç) ‘Biraz ötede ... bir türbe ... kendisini gösteriyor.’ cümlesinin ögelerini bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "'Kubbesi yıkılmış' öznenin içindedir; ‘düzgün ve vakur cephesiyle’ bütün olarak zarf görevindedir."
+      }
+    },
+    {
+      "id": "s190-gram-d",
+      "source_record_id": "T03-S0048",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "d) Mümtaz'ın vapur düdüklerini dinlediği uzun cümleyi ana yüklemden geriye doğru çözünüz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ana yüklem ‘anlardı’. Uzun zaman ve nesne grupları fiilimsi içerir; bunların içindeki sözcükleri ana cümlenin bağımsız ögeleri sanmayın.",
+        "items": [
+          "Özne: Mümtaz",
+          "Yüklem: anlardı",
+          "Zaman grubu: ... akislerini dinlediği zaman",
+          "Sıklık: ara sıra",
+          "Nesne: ... hüznün şifasızlığının hangi pınarlardan toplanıp geldiğini"
+        ]
+      }
+    },
+    {
+      "id": "s191-gram-e",
+      "source_record_id": "T03-S0048",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "e) ‘Bu gezintilerden dönüşlerinde Mümtaz'ı ... sıkıştırıyordu.’ cümlesinde gizli özneyi bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Söz konusu kişi, s.190'da Mümtaz'ı Şeyh Gâlip çalışması için sıkıştırdığı anlatılan Nuran'dır."
+      }
+    },
+    {
+      "id": "s191-gram-f",
+      "source_record_id": "T03-S0048",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "f) ‘Nuran ... medreselere ... Tabhane'ye ... biçimine hayran oldu.’ cümlesindeki ortak yüklemi bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Birden çok yer tamlayıcısı aynı ‘hayran oldu’ yüklemine bağlanır."
+      }
+    },
+    {
+      "id": "s191-build",
+      "source_record_id": "T03-S0049",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Bu cümle kuruluşları Huzur'un anlatımına ne katar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P191-GRAM02",
+      "content": {
+        "lead": "b'deki iki yüklemi ve d'deki uzun zaman/nesne yapısını karşılaştırın."
+      }
+    },
+    {
+      "id": "s191-spell",
+      "source_record_id": "T03-S0050",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Sıra Sizde 3 — İhsan'ın hastalığı parçasındaki farklı yazılan biçimleri güncel yazıma çeviriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P191-GRAM03",
+      "content": {
+        "lead": "s.191'deki parçayı okuyun; kelimenin gerçekten farklı yazılmış olmasına bakın. Bütün düzeltme işaretlerini kaldırmayın.",
+        "items": [
+          "fevkalâdelik",
+          "ilân",
+          "telâştan",
+          "eksilmiyen"
+        ]
+      }
+    },
+    {
+      "id": "s191-spell-rule",
+      "source_record_id": "T03-S0050",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Yazım denetimi — hangi kelimeler 'yanlış' diye düzeltilmez?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "'şikâyet' ve 'hâlini' kelimeleri sırf düzeltme işareti taşıdığı için yazım yanlışı sayılmaz.",
+        "sections": [
+          {
+            "title": "İlke",
+            "body": "Bu soruda değiştirilecek dört biçimi metinden tek tek doğrulayın; anlamı ayıran işaretleri gelişigüzel silmeyin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s191-research",
+      "source_record_id": "T03-S0051",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Ders Dışı Etkinlik — ‘Romanın Sosyal Bilimlerle İlişkisi’ için üç grup kurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "answer_id": "T3-P191-PERF01",
+      "content": {
+        "lead": "Kitapta süre 1 hafta; üç grup ve üç sözcü istenir. Her grup metinden kanıtla araştırma yapar ve sonucu paylaşır.",
+        "items": [
+          "Roman–Tarih",
+          "Roman–Sosyoloji",
+          "Roman–Psikoloji"
+        ]
+      }
+    },
+    {
+      "id": "s191-research-share",
+      "source_record_id": "T03-S0051",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Bir haftalık çalışmanın sonuçlarını grup sözcüleri aracılığıyla paylaşınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Öğrenci araştırmasını yapılmış gibi yazmayın. Her grup gerçekten kullandığı kaynağı ve Huzur'daki sahneyi ayrı göstersin.",
+        "items": [
+          "Hangi sahne veya ifade?",
+          "Hangi sosyal bilim konusu?",
+          "Dış kaynak bunu nasıl açıklar?",
+          "Sözcünün 1–2 dakikalık bulgusu"
+        ]
+      }
+    }
+  ]
+}
