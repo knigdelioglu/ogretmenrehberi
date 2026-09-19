@@ -1,0 +1,313 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-MERDIVEN-ANLAMA-266-270",
+  "lesson_slug": "merdiven-anlama-266-270",
+  "title": "Merdiven — Söz Varlığı ve Metni Anlama",
+  "subtitle": "Hayatın Aynası · Küçürek hikâye / simge / kuşak değişimi / çalışma kâğıdı",
+  "printed_page_range": "266-270",
+  "required_source_range": {
+    "from": "T04-S0043",
+    "to": "T04-S0055"
+  },
+  "steps": [
+    {
+      "id": "s266-vocabulary",
+      "source_record_id": "T04-S0043",
+      "answer_id": "T4-P266-VOC01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Söz Varlığımız 1–3 — Altı sözcüğün anlamını bağlam içinde tahmin ediniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Sözcüğü metinde geçtiği cümleyle birlikte düşünün; anlam ve karşılığı tahminden sonra açın.",
+        "items": [
+          "daire",
+          "yeni yetme",
+          "kanımca",
+          "yol vermek",
+          "gereksinme",
+          "duralamak"
+        ],
+        "note": "Sözlükteki her anlam değil, Merdiven hikâyesindeki kullanım esas alınır."
+      }
+    },
+    {
+      "id": "s266-dictionary",
+      "source_record_id": "T04-S0043",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Söz varlığı — Tahmin, sözlük doğrulaması ve yeni karşılık.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "TDK Güncel Türkçe Sözlük ile tahmininizi kontrol edin. Önerdiğiniz karşılığı ilgili cümlede deneyin.",
+        "sections": [
+          {
+            "title": "Bağlam",
+            "body": "Hikâyede kim, hangi olay içinde kullanıyor?"
+          },
+          {
+            "title": "Tahmin",
+            "body": "Bu bağlamdan hangi anlama ulaştınız?"
+          },
+          {
+            "title": "Doğrulama",
+            "body": "Sözlük ve cümle birlikte bu anlamı destekliyor mu?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s267-q4",
+      "source_record_id": "T04-S0043",
+      "answer_id": "T4-P267-VOC02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Söz Varlığımız 4 — Kelime ve kelime gruplarını başka anlamlarıyla cümlede kullanınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hikâyedeki kullanımdan farklı fakat dil bakımından geçerli bir cümle yazın.",
+        "items": [
+          "çıkmak",
+          "yol vermek",
+          "yerinde",
+          "işini bitirmek",
+          "yukarı çıkmak"
+        ]
+      }
+    },
+    {
+      "id": "s268-q5",
+      "source_record_id": "T04-S0043",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Söz Varlığımız 5/a–b — Merdivenin çağrışımlarını metinle ilişkilendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce kendi çağrışımlarınızı söyleyin; ardından her birinin hikâyedeki hangi basamak, yön veya kişi değişimiyle ilişkili olduğunu açıklayın.",
+        "sections": [
+          {
+            "title": "Somut hareket",
+            "body": "Çıkma, inme, yol verme, basamakta durma."
+          },
+          {
+            "title": "Simgesel anlam",
+            "body": "Mesleki yükselme, yaş alma, kuşak değişimi veya yaşamın sonu gibi olası anlamlar."
+          }
+        ],
+        "note": "Sadece kavram listesi değil, metinle ilişki gerekçesi isteniyor."
+      }
+    },
+    {
+      "id": "s268-q1",
+      "source_record_id": "T04-S0044",
+      "answer_id": "T4-P268-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 1 — 'Bahtiyar ol' ifadesi hikâyede ne anlama gelir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İhtiyarın kendisine yol veren anlatıcıya söylediği iyi dileği, konuşma bağlamında açıklayın."
+      }
+    },
+    {
+      "id": "s268-q2",
+      "source_record_id": "T04-S0045",
+      "answer_id": "T4-P268-Q02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 2 — Kültürümüzdeki benzer iyi dilekleri bulunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kalıplaşmış ifadeleri yalnız listelemeyin; niçin iyi dilek veya dua olarak kullanıldığını da açıklayın.",
+        "items": [
+          "Yaşça büyük kişinin genç birine sözü",
+          "İyi niyet / geleceğe yönelik dilek",
+          "Günlük yaşamda kullanım durumu"
+        ]
+      }
+    },
+    {
+      "id": "s268-q3",
+      "source_record_id": "T04-S0046",
+      "answer_id": "T4-P268-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Düşünelim Paylaşalım 3 — Hikâyenin söz varlığı günlük hayatı yansıtıyor mu?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Büro, merdiven, memur ve kısa konuşmalar içinden örnekler verin; yalın dilin daha geniş çağrışımlarla bağını da kurun."
+      }
+    },
+    {
+      "id": "s269-q1",
+      "source_record_id": "T04-S0047",
+      "answer_id": "T4-P269-Q01",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 1 — İhtiyar ve delikanlının duygu ve düşüncelerini karşılaştırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Duyguya ilişkin her çıkarımı gerçekten söylenen söz veya gösterilen davranışa bağlayın.",
+        "sections": [
+          {
+            "title": "İhtiyar",
+            "body": "İyi dileği, yavaş hareketi ve koşuşturma üzerine uyarısı."
+          },
+          {
+            "title": "Delikanlı",
+            "body": "Ölüm haberini aktarması ve anlatıcıya yol vermesi."
+          }
+        ],
+        "note": "Kişilerin zihninde geçen şeyleri doğrudan biliyormuş gibi kesinleştirmeyin."
+      }
+    },
+    {
+      "id": "s269-q2",
+      "source_record_id": "T04-S0048",
+      "answer_id": "T4-P269-Q02",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 2 — İhtiyarın koşuşturma hakkındaki sözünü anlatıcının yerinden yorumlayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İlk karşılaşmada duyup geçilen söz, sonraki olaydan sonra neden yeni anlam kazanıyor?"
+      }
+    },
+    {
+      "id": "s269-q3",
+      "source_record_id": "T04-S0049",
+      "answer_id": "T4-P269-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 3 — Kişilerin 'memur' olarak verilmesi hangi insan ve hayat görüşünü düşündürür?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Özel adlar yerine yaş ve çalışma konumunun öne çıkmasının kuşak ve meslek döngüsüne etkisini açıklayın."
+      }
+    },
+    {
+      "id": "s269-q4",
+      "source_record_id": "T04-S0050",
+      "answer_id": "T4-P269-Q04",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 4 — 'İnmek' ve 'çıkmak' hangi somut ve simgesel anlamları taşır?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Önce fiillerin gerçek hareketi, ardından yaşam ve meslek üzerindeki olası çağrışımlarını ayırın.",
+        "sections": [
+          {
+            "title": "Çıkmak",
+            "body": "Üst kata hareket; yükselme, hedef ve ilerleme çağrışımı."
+          },
+          {
+            "title": "İnmek",
+            "body": "Alt kata hareket; geri çekilme, yavaşlama veya bakış değişimi çağrışımı."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s269-q5",
+      "source_record_id": "T04-S0051",
+      "answer_id": "T4-P269-Q05",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 5 — Hikâye size ne düşündürdü; yazılma amacı ne olabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kendi yorumunuz ile yazarın amacına ilişkin gerekçeli çıkarımınızı ayırın. Tek bir kişisel duygu zorunlu değildir."
+      }
+    },
+    {
+      "id": "s269-q6",
+      "source_record_id": "T04-S0052",
+      "answer_id": "T4-P269-Q06",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 6 — Sınırlı kişi kadrosunun küçürek hikâyeyle ilişkisi nedir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Anlatıcı, ihtiyar ve delikanlının işlevini gösterin; neden ayrıntılı yaşam öykülerine ihtiyaç duyulmadığını açıklayın."
+      }
+    },
+    {
+      "id": "s269-q7",
+      "source_record_id": "T04-S0053",
+      "answer_id": "T4-P269-Q07",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 7 — Şiirsel ritmi kuran sözcük ve tekrarları belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Hikâyeyi sesli okuyup hareketi ve kuşak değişimini tekrarla duyuran kelimeleri işaretleyin.",
+        "items": [
+          "merdiven / merdivenlerden",
+          "çıkmak / inmek",
+          "yol vermek",
+          "Bahtiyar ol oğlum",
+          "yukarı / aşağı"
+        ]
+      }
+    },
+    {
+      "id": "s270-q8",
+      "source_record_id": "T04-S0054",
+      "answer_id": "T4-P270-Q08",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Metni Anlayalım 8 — Anlatıcı neden yukarı çıkmayıp aşağı inmeyi seçer?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Son kararı hem gerçek bir merdiven hareketi hem de mesleki hedef ve yaşam önceliği bakımından yorumlayın."
+      }
+    },
+    {
+      "id": "s270-work",
+      "source_record_id": "T04-S0055",
+      "answer_id": "T4-P270-WORK01",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Çalışma Kâğıdı — Merdiven'in altı çözümleme alanını doldurunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki altı başlığı birbirine karıştırmayın; açık iletiyi doğrudan söylenen sözle, örtük iletiyi yorumla gösterin.",
+        "items": [
+          "Konu",
+          "Çatışma",
+          "Örtük iletiler",
+          "Açık iletiler",
+          "Zihniyet",
+          "Üslup"
+        ]
+      }
+    },
+    {
+      "id": "s270-work-review",
+      "source_record_id": "T04-S0055",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Çalışma kâğıdını metin kanıtıyla son kez denetleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Konu bir olayın kısa tanımıdır; tema ve örtük ileti onun anlamına ilişkin daha genel yorum olabilir.",
+        "sections": [
+          {
+            "title": "Açık",
+            "body": "İhtiyarın konuşmasında doğrudan ifade edilen uyarı."
+          },
+          {
+            "title": "Örtük",
+            "body": "Anlatıcının kararından çıkarılan yaşlanma, zaman ve iş hayatı düşünceleri."
+          },
+          {
+            "title": "Üslup",
+            "body": "Az söz, tekrar, çağrışım ve okurdan çıkarım bekleyen anlatım."
+          }
+        ],
+        "note": "Metnin tamamını yeniden açıklamak yerine kitaptaki çalışma kâğıdının alanlarını doldurun."
+      }
+    }
+  ]
+}
