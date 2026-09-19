@@ -399,6 +399,39 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-orhun-values.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ORHUN&step=s124-values"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-divan-reading.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-DIVANU-LUGATIT-TURK&step=s125-126-reading"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-divan-comparison.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-DIVANU-LUGATIT-TURK&step=s127-q6"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-divan-dictionary.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-DIVANU-LUGATIT-TURK&step=s127-q7"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-divan-evaluation.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-DIVANU-LUGATIT-TURK&step=s128-q2"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -441,5 +474,9 @@ jobs:
             lesson-player-theme2-orhun-comparison.png
             lesson-player-theme2-orhun-analysis.png
             lesson-player-theme2-orhun-values.png
+            lesson-player-theme2-divan-reading.png
+            lesson-player-theme2-divan-comparison.png
+            lesson-player-theme2-divan-dictionary.png
+            lesson-player-theme2-divan-evaluation.png
             apps/lesson-player/dist
           if-no-files-found: error

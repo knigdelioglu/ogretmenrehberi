@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_02",
+  "lesson_id": "T11-T02-DIVANU-LUGATIT-TURK",
+  "lesson_slug": "divanu-lugatit-turk",
+  "title": "Dîvânu Lugâti’t-Türk",
+  "subtitle": "Dil ve kültür hazinesi · 2. Tema",
+  "printed_page_range": "125-128",
+  "required_source_range": {
+    "from": "T02-S0088",
+    "to": "T02-S0102"
+  },
+  "steps": [
+    {
+      "id": "s125-orhun-eval",
+      "source_record_id": "T02-S0088",
+      "answer_id": "T2-P125-Q01",
+      "layout": "question",
+      "prompt": "Orhun Abidelerinin Türk dili ve tarihi açısından değerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s125-126-reading",
+      "source_record_id": "T02-S0089",
+      "layout": "process",
+      "density": "comfortable",
+      "prompt": "Dîvânu Lugâti’t-Türk — yönlendirilmiş ara metin okuması",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ara metni ders kitabından okuyun; Lesson Player uzun metni yeniden yayımlamak yerine sözlüğün dil ve kültür kanıtı olarak nasıl çalıştığını görünür kılar.",
+        "items": [
+          "Kaşgarlı Mahmud'un eseri neden ve kimler için hazırladığını belirleyin.",
+          "Kelime maddelerinin yalnız tanım değil atasözü, şiir, kullanım ve kültür bilgisi de taşıdığı örnekleri işaretleyin.",
+          "Farklı Türk boylarının dil özelliklerini yerinde inceleme yaklaşımına dikkat edin.",
+          "Öğüt, hediyeleşme, borç, tabiat ve gündelik hayata ilişkin kültür izlerini not edin."
+        ]
+      }
+    },
+    {
+      "id": "s127-q1",
+      "source_record_id": "T02-S0090",
+      "answer_id": "T2-P127-Q01",
+      "layout": "question",
+      "prompt": "Sözlük örneklerinde Türk dünyasının hangi ortak kültürel değerlerine yer verildiğini belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s127-q2",
+      "source_record_id": "T02-S0091",
+      "answer_id": "T2-P127-Q02",
+      "layout": "question",
+      "prompt": "Dîvânu Lugâti’t-Türk'ün dil bilimi açısından önemli bir eser olmasının nedenlerini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s127-q3",
+      "source_record_id": "T02-S0092",
+      "answer_id": "T2-P127-Q03",
+      "layout": "question",
+      "prompt": "“Edgü” örneğinden hareketle hediyeleşme ve yakınları ağırlamanın Türk kültüründeki yerini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s127-q4",
+      "source_record_id": "T02-S0093",
+      "answer_id": "T2-P127-Q04",
+      "layout": "question",
+      "prompt": "“Erük/erik” kelimesindeki anlam değişmesini açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s127-q5",
+      "source_record_id": "T02-S0094",
+      "answer_id": "T2-P127-Q05",
+      "layout": "question",
+      "prompt": "“Uçmak” kelimesinin geçtiği şiirin türünü belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s127-q6",
+      "source_record_id": "T02-S0095",
+      "answer_id": "T2-P127-Q06",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Kül Tigin Âbidesi ile Dîvânu Lugâti’t-Türk'ü dil, anlatım ve yazılış amacı bakımından karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s127-q7",
+      "source_record_id": "T02-S0096",
+      "answer_id": "T2-P127-Q07",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Bir Türk dilleri sözlüğü hazırlamak isteseydiniz hangi çalışmaları yapmanız gerekirdi?",
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Kaşgarlı Mahmud'un saha çalışması yaklaşımını çağdaş bir sözlük projesine uyarlayın.",
+        "items": [
+          "Kapsanacak Türk dilleri ve lehçelerini belirleyin.",
+          "Yazılı ve sözlü kaynaklardan doğrulanabilir kullanım örnekleri toplayın.",
+          "Aynı kökten gelen kelimeleri ses, biçim ve anlam yönünden karşılaştırın.",
+          "Anlam, telaffuz, örnek cümle, bölgesel kullanım ve kaynak bilgisini düzenli biçimde kaydedin."
+        ]
+      }
+    },
+    {
+      "id": "s127-fark1",
+      "source_record_id": "T02-S0097",
+      "answer_id": "T2-P127-FARK01",
+      "layout": "question",
+      "prompt": "“Kaşgarlı'nın lugatı yazılı bir atlı göçebe medeniyeti müzesidir.” sözünü yorumlayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
+    },
+    {
+      "id": "s127-fark2",
+      "source_record_id": "T02-S0098",
+      "answer_id": "T2-P127-FARK02",
+      "layout": "question",
+      "prompt": "Dilin arkeolojiden daha önemli bir kültür hazinesi olduğu düşüncesini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s128-fark3",
+      "source_record_id": "T02-S0099",
+      "answer_id": "T2-P128-FARK03",
+      "layout": "question",
+      "prompt": "Türkçenin tarihî süreçte çok geniş bir coğrafyaya yayılmasının neden ve sonuçlarına ilişkin çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s128-q1",
+      "source_record_id": "T02-S0100",
+      "answer_id": "T2-P128-Q01",
+      "layout": "question",
+      "prompt": "Kül Tigin Âbidesi'nde beğendiğiniz yönleri gerekçelendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s128-q2",
+      "source_record_id": "T02-S0101",
+      "answer_id": "T2-P128-Q02",
+      "layout": "question",
+      "prompt": "Metindeki gerçeklik ile gerçek dünyanın örtüşme biçimini örneklerle açıklayınız.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s128-q3",
+      "source_record_id": "T02-S0102",
+      "answer_id": "T2-P128-Q03",
+      "layout": "question",
+      "prompt": "Kendinizi anlatıcının yerine koyarak sözlerini kendi bakış açınızla değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    }
+  ]
+}

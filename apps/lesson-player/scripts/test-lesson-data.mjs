@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 4,
-  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul ve Orhun dersleri bulunmalı."
+  theme2Lessons.length === 5,
+  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul, Orhun ve Dîvânu Lugâti’t-Türk dersleri bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -237,10 +237,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 99 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 87 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 94,
-  "Tema 2 mevcut üretim 99 adım / 87 source / 94 answer olmalı."
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 114 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 102 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 108,
+  "Tema 2 mevcut üretim 114 adım / 102 source / 108 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -290,6 +290,46 @@ assert(
     orhunById.get("s124-social-sciences")?.answer?.entry_type === "performance_support" &&
     orhunById.get("s124-social-sciences")?.source?.printed_page_range === "124-125",
   "s.124 değerler ve s.124-125 sosyal bilimler çalışmaları performance olarak korunmalı."
+);
+
+const divan = byLessonId.get("T11-T02-DIVANU-LUGATIT-TURK");
+assert(divan, "2. Tema Dîvânu Lugâti’t-Türk dersi catalog içinde bulunamadı.");
+assert(
+  divan.printed_page_range === "125-128",
+  "Dîvânu Lugâti’t-Türk doğal bloğu s.125–128 aralığını kapsamalı."
+);
+assert(
+  divan.coverage.steps === 15 &&
+    divan.coverage.source_records === 15 &&
+    divan.coverage.answer_entries === 14,
+  "Dîvânu Lugâti’t-Türk 15 adım / 15 source / 14 answer olmalı."
+);
+
+const divanById = new Map(divan.steps.map((step) => [step.id, step]));
+assert(
+  divanById.get("s125-126-reading")?.answer === null &&
+    divanById.get("s125-126-reading")?.source?.printed_page_range === "125-126",
+  "Dîvânu Lugâti’t-Türk ara metni kopyalanmadan yönlendirilmiş okuma olarak temsil edilmeli."
+);
+assert(
+  divanById.get("s127-q2")?.answer?.evidence_quotes?.length === 2 &&
+    divanById.get("s127-q3")?.answer?.evidence_quotes?.length === 2,
+  "s.127 dil bilimi ve kültür sorularındaki metin kanıtları korunmalı."
+);
+assert(
+  divanById.get("s127-q6")?.layout === "comparison" &&
+    divanById.get("s127-q6")?.answer?.answer_sections?.kul_tigin,
+  "Kül Tigin / Dîvânu karşılaştırması yapılandırılmış comparison görünümünde olmalı."
+);
+assert(
+  divanById.get("s127-q7")?.answer?.entry_type === "performance_support" &&
+    divanById.get("s127-q7")?.layout === "process",
+  "Türk dilleri sözlüğü hazırlama görevi performance/process olarak korunmalı."
+);
+assert(
+  divanById.get("s127-fark2")?.answer?.guidance &&
+    divanById.get("s128-q2")?.answer?.explanation,
+  "Açık uçlu değerlendirmelerde guidance ve gerçeklik açıklaması korunmalı."
 );
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
