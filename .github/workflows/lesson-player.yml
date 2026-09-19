@@ -481,6 +481,55 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-speaking-reference.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T02-KONUSMA&step=s135-reference"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-asik-checklist.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ASIK-ATISMASI&step=s139-checklist"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-asik-vocabulary.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-ASIK-ATISMASI&step=s140-vocabulary"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-asik-language.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ASIK-ATISMASI&step=s143-language"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-asik-map.png" \
+            "http://127.0.0.1:4173/?lesson=T11-T02-ASIK-ATISMASI&step=s144-map"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-asik-hats.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ASIK-ATISMASI&step=s145-hats"
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme2-asik-reflection.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T02-ASIK-ATISMASI&step=s147-reflection"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -533,5 +582,11 @@ jobs:
             lesson-player-theme2-speaking-rules.png
             lesson-player-theme2-speaking-self.png
             lesson-player-theme2-speaking-reference.png
+            lesson-player-theme2-asik-checklist.png
+            lesson-player-theme2-asik-vocabulary.png
+            lesson-player-theme2-asik-language.png
+            lesson-player-theme2-asik-map.png
+            lesson-player-theme2-asik-hats.png
+            lesson-player-theme2-asik-reflection.png
             apps/lesson-player/dist
           if-no-files-found: error
