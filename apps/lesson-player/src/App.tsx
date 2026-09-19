@@ -605,6 +605,14 @@ export default function App() {
         <div>
           <div className="topbar__kicker">ÖĞRETMEN REHBERİ · DERS MODU</div>
           <div className="topbar__title">{lesson.title}</div>
+          {!displayOnly && overrideWarning ? (
+            <div className="override-warning" role="status">
+              <span>{overrideWarning}</span>
+              <button type="button" onClick={() => setOverrideWarning(null)}>
+                Kapat
+              </button>
+            </div>
+          ) : null}
         </div>
         <div className="topbar__actions">
           {lessonCatalog.length > 1 ? (
