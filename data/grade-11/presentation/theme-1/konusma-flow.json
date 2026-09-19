@@ -11,6 +11,21 @@
   },
   "steps": [
     {
+      "id": "s53-media-reminder",
+      "source_record_id": "T01-S0057",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Seksenler — Sorulara geçmeden önce kitaptaki çok modlu metni karekoddan izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bu bölümdeki ilk sorular videodaki sözlü iletişim engellerine dayanır. Karekod erişilebiliyorsa videoyu izleyin; erişilemiyorsa videoya özgü davranış, söz veya sahne ayrıntısını kesinleştirmeyin.",
+        "items": [
+          "İzlerken iletişimi bozan davranışları kısa notlarla kaydedin.",
+          "Her gözlemi iletişime etkisiyle eşleştirin."
+        ]
+      }
+    },
+    {
       "id": "s53-q1",
       "source_record_id": "T01-S0057",
       "answer_id": "T1-P53-Q01",
