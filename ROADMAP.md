@@ -310,7 +310,7 @@ Pilot mimariyi bozmadan kalan temaları tamamlamak.
   - [x] Eski İstanbul’dan Çizgiler / Anı — s.108–112
   - [x] Orhun Abideleri — s.113–124
   - [x] Dîvânu Lugâti’t-Türk — s.125–128
-  - [ ] Konuşma — s.129–135
+  - [x] Konuşma — s.129–135
   - [ ] Dinleme / İzleme — Âşık Atışması — s.136–147
   - [ ] Yazma — Çevrim İçi Müze — s.148–154
   - [ ] Ölçme ve Değerlendirme — s.155–159
@@ -425,4 +425,4 @@ Bunlar v1 kapsamının parçası değildir; ancak veri modeli izin verirse sonra
 
 ## Şu anki sonraki adım
 
-**11. sınıf 2. Tema — Edebiyat Atölyesi-1 / Konuşma, basılı s.129–135** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
+**11. sınıf 2. Tema — Dinleme / İzleme: Âşık Atışması, basılı s.136–147** doğal bloğunu resmî ders kitabıyla sayfa sayfa doğrulayarak Lesson Player akışına taşımak.
