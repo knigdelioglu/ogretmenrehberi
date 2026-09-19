@@ -312,10 +312,10 @@ for(const id of ["s184-halk","s184-new-life","s185-animals","s185-illness"]){
   huzur182ById.get(id)?.source?.source_record_id==="T03-S0037",
   `Duyarlılık alt parçası tek cevap bankası kaydında olmalı: ${id}`);
 }
-assert(theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0)===90 &&
- theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0)===38 &&
- theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0)===39,
- "Tema 3 yeni toplam 6 ders / 90 adım / 38 source / 39 answer olmalı.");
+assert(theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0)===111 &&
+ theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0)===46 &&
+ theme3Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0)===47,
+ "Tema 3 yeni toplam 7 ders / 111 adım / 46 source / 47 answer olmalı.");
 
 
 const huzur186 = byLessonId.get("T11-T03-HUZUR-YAPI-USLUP-186-188");
