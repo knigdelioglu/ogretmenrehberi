@@ -9,6 +9,7 @@ interface StepViewProps {
   toggle: (key: RevealKey) => void;
   presentationMode: boolean;
   showInlineControls: boolean;
+  showTeacherNotes: boolean;
   visibleVocabularyTerms: ReadonlySet<string>;
   toggleVocabularyTerm: (term: string) => void;
 }
@@ -141,6 +142,7 @@ export function StepView({
   toggle,
   presentationMode,
   showInlineControls,
+  showTeacherNotes,
   visibleVocabularyTerms,
   toggleVocabularyTerm
 }: StepViewProps) {
@@ -364,7 +366,7 @@ export function StepView({
           </div>
         ) : null}
 
-        {content?.note && revealed.has("note") ? (
+        {showTeacherNotes && content?.note && revealed.has("note") ? (
           <div data-reveal-key="note">
             <RevealPanel label="Öğretmen notu" tone="note">
               <p>{content.note}</p>
