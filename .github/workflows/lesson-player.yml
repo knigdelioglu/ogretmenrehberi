@@ -703,6 +703,51 @@ jobs:
             --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-style.png" \
             "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-OKUMA&step=s174-style"
 
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-anlama-logic.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-ANLAMA-175-176&step=s175-q2"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-anlama-memory.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-ANLAMA-175-176&step=s176-q4"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-anlama-identity.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-ANLAMA-175-176&step=s176-q6"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1440,900 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-anlama-attribution.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-ANLAMA-175-176&step=s176-q10"
+
+
+          "$CHROME" \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --window-size=1366,768 \
+            --screenshot="$GITHUB_WORKSPACE/lesson-player-theme3-huzur-anlama-music.png" \
+            "http://127.0.0.1:4173/?display=1&lesson=T11-T03-HUZUR-ANLAMA-175-176&step=s176-q12"
+
       - name: Upload lesson player preview
         uses: actions/upload-artifact@v4
         with:
@@ -781,5 +826,10 @@ jobs:
             lesson-player-theme3-huzur-vocabulary.png
             lesson-player-theme3-huzur-types.png
             lesson-player-theme3-huzur-style.png
+            lesson-player-theme3-huzur-anlama-logic.png
+            lesson-player-theme3-huzur-anlama-memory.png
+            lesson-player-theme3-huzur-anlama-identity.png
+            lesson-player-theme3-huzur-anlama-attribution.png
+            lesson-player-theme3-huzur-anlama-music.png
             apps/lesson-player/dist
           if-no-files-found: error

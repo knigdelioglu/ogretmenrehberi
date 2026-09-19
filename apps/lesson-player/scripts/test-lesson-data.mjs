@@ -25,7 +25,7 @@ assert(
   "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
 );
 
-assert(theme3Lessons.length === 2, "Tema 3 giriş ve Huzur okuma bloklarını içermeli.");
+assert(theme3Lessons.length === 3, "Tema 3 giriş, Huzur okuma ve Metni Anlayalım bloklarını içermeli.");
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -128,6 +128,48 @@ assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===31 &&
   theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===15 &&
   theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===16,
   "Tema 3 mevcut kapsamı 31 adım / 15 source / 16 answer olmalı.");
+
+
+const huzurQuestions = byLessonId.get("T11-T03-HUZUR-ANLAMA-175-176");
+assert(huzurQuestions && huzurQuestions.printed_page_range === "175-176",
+  "Huzur Metni Anlayalım s.175–176 bulunmalı.");
+assert(huzurQuestions.coverage.steps === 13 &&
+  huzurQuestions.coverage.source_records === 13 &&
+  huzurQuestions.coverage.answer_entries === 13,
+  "Huzur Metni Anlayalım 13 ayrı soru / source / answer içermeli.");
+const huzurQuestionMap = new Map(huzurQuestions.steps.map(s => [s.id,s]));
+assert(huzurQuestionMap.size === 13, "Huzur Metni Anlayalım step id tekil olmalı.");
+for(let n=1;n<=13;n++) {
+  const page = n<=2 ? 175 : 176;
+  const id = `s${page}-q${n}`;
+  const s = huzurQuestionMap.get(id);
+  const qid = n===12 ? "T3-P176-PERF12" :
+    `T3-P${page}-Q${String(n).padStart(2,"0")}`;
+  assert(s?.answer?.question_id === qid, `Huzur s.175–176 cevap eşleşmesi: ${id}`);
+  assert(s?.source?.source_record_id ===
+    `T03-S${String(n+15).padStart(4,"0")}`,
+    `Huzur s.175–176 kaynak eşleşmesi: ${id}`);
+  assert(s.source.source_status === "VERIFIED",
+    `Huzur s.175–176 source VERIFIED olmalı: ${id}`);
+}
+assert(huzurQuestionMap.get("s175-q1")?.answer?.entry_type === "performance_support" &&
+  huzurQuestionMap.get("s175-q1")?.answer?.guidance?.includes("gerçek tahmini"),
+  "s.175 Q1 öğrencinin gerçek önceki tahminiyle çalışmalı.");
+assert(huzurQuestionMap.get("s175-q2")?.layout === "structure" &&
+  Object.keys(huzurQuestionMap.get("s175-q2")?.answer?.answer_sections??{}).length===3,
+  "s.175 Q2 konu/tema/yazılış amacı üçlü tablosunu korumalı.");
+assert(huzurQuestionMap.get("s176-q6")?.answer?.entry_type === "performance_support" &&
+  huzurQuestionMap.get("s176-q6")?.content?.items?.length===3,
+  "s.176 Q6 şehir örneği kişisel performans olarak kalmalı.");
+assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü Mümtaz'a atfeder"),
+  "s.176 Q10 ders kitabı soru/metin konuşmacı atıf farkı gizlenmemeli.");
+assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
+  huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
+  "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
+assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0) === 44 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.source_records,0) === 28 &&
+  theme3Lessons.reduce((s,l)=>s+l.coverage.answer_entries,0) === 29,
+  "Tema 3 mevcut kapsamı 3 ders / 44 adım / 28 source / 29 answer olmalı.");
 
 const themeIntro = byLessonId.get("T11-T01-GIRIS");
 assert(themeIntro, "1. Tema giriş dersi catalog içinde bulunamadı.");
