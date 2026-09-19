@@ -82,11 +82,14 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
           <p className="teacher-guide__context">{workflow.annual.note}</p>
           {termItems.map((item) => (
             <details key={item.id}>
-              <summary>{item.title} · {item.window}</summary>
+              <summary>{item.title} · Önerilen sunum haftası: {item.suggested_presentation.label}</summary>
+              <p><b>Zamanlama gerekçesi:</b> {item.window}</p>
               <p><b>Öğrenciden alınacak:</b> {item.portfolio}</p>
               <p><b>Form:</b> {workflow.annual.form}</p>
             </details>
           ))}
+          <p className="teacher-guide__context">{workflow.annual.preparation_note}</p>
+          <p className="teacher-guide__context">{workflow.annual.exam_fallback}</p>
           <p className="teacher-guide__context">
             Film için 2. dönem yalnız öneridir; resmî yıllık hüküm filmin dönemini sabitlemez.
           </p>
