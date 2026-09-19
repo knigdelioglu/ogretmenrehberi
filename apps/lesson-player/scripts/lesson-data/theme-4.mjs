@@ -26,6 +26,16 @@ assert(theme4IntroById.get("s236-map")?.source?.source_record_id === "T04-S0001"
   theme4IntroById.get("s237-threshold")?.source?.source_record_id === "T04-S0002" &&
   theme4IntroById.get("s237-threshold")?.answer === null,
   "Tema çerçevesi ve Yunus Emre eşiğinde uydurma soru/cevap olmamalı.");
+assert(
+  theme4IntroById.get("s237-threshold")?.display_prompt.includes("Tema Sunusu") &&
+    theme4IntroById.get("s237-threshold")?.content?.sections?.some(section =>
+      section.body.includes("İlim ilim bilmekdir")
+    ) &&
+    theme4IntroById.get("s237-threshold")?.content?.sections?.some(section =>
+      section.body.includes("karekod")
+    ),
+  "s.237 Tema Sunusu karekod geçişi ve Yunus Emre beyti görünür olmalı."
+);
 assert(theme4IntroById.get("s241-core-roles")?.content?.sections?.length === 4 &&
   theme4IntroById.get("s242-optional-roles")?.content?.sections?.length === 5,
   "Okuma çemberi dört temel ve beş seçimlik rolü korumalı.");
