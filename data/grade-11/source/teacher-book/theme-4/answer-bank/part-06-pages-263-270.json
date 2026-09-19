@@ -58,10 +58,9 @@
       "question_id": "T4-P267-VOC02",
       "entry_type": "performance_support",
       "printed_page": 267,
-      "question_no": "Söz Varlığımız 4-5",
-      "prompt_summary": "Kelime ve kelime gruplarını farklı anlamlarda kullanma; merdiven kavramının çağrışımlarını belirleyip bu çağrışımlarla ilişkisini açıklama",
-      "answer": "4. madde, 5/a çağrışımları ve 5/b ilişki açıklamaları aşağıdaki üç bölümde yapılandırılmıştır.",
-      "guidance": "5/a'da tek bir çağrışım listesi zorunlu değildir. 5/b'de ise öğrenci yalnız kavram saymamalı; seçtiği çağrışımın merdivenin fiziksel özelliği veya hikâyedeki kullanımıyla bağını bir cümleyle açıklamalıdır.",
+      "question_no": "Söz Varlığımız 4",
+      "prompt_summary": "Kelime ve kelime gruplarını metindeki anlamından farklı anlamlarla cümlede kullanma",
+      "answer": "Beş ifade için metindeki anlamdan farklı kullanım örnekleri aşağıda verilmiştir.",
       "source_locator": "basılı s.267-268 / PDF s.268-269 — Söz Varlığımız 4, 5/a ve 5/b",
       "answer_sections": {
         "4_farkli_anlam_ornekleri": [
@@ -70,7 +69,17 @@
           "yerinde → uygun/doğru olmak veya bir şeyin bulunduğu konum",
           "işini bitirmek → bir işi tamamlamak / bağlama göre sona erdirmek",
           "yukarı çıkmak → görevde veya konumda yükselmek"
-        ],
+        ]
+      }
+    },
+    {
+      "question_id": "T4-P268-VOC03",
+      "entry_type": "performance_support",
+      "printed_page": 268,
+      "question_no": "Söz Varlığımız 5/a-b",
+      "prompt_summary": "Merdiven kavramının çağrışımlarını belirleyip somut ve simgesel yönlerini ilişkilendirme",
+      "answer": "Merdiven kavramının çağrışımları ve metindeki hareketlerle kurulan ilişkiler aşağıdaki iki bölümde verilmiştir.",
+      "answer_sections": {
         "5a_merdivenin_cagrisimlari": [
           "yükselme ve kariyer",
           "ilerleme",
@@ -87,7 +96,9 @@
           "İhtiyar–anlatıcı–delikanlı sıralaması ↔ kuşakların yer değiştirmesi ve yaşlanma",
           "Merdivenin sonu ↔ yaşamın sınırlılığı ve ölüm düşüncesi"
         ]
-      }
+      },
+      "guidance": "5/a'da tek bir çağrışım listesi zorunlu değildir. 5/b'de ise öğrenci yalnız kavram saymamalı; seçtiği çağrışımın merdivenin fiziksel özelliği veya hikâyedeki kullanımıyla bağını bir cümleyle açıklamalıdır.",
+      "source_locator": "basılı s.268 / PDF s.269 — Söz Varlığımız soru 5/a-b"
     },
     {
       "question_id": "T4-P268-Q01",
