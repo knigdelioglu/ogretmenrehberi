@@ -390,6 +390,12 @@ export default function App() {
     setIndex(0);
     setRevealed(new Set());
     setVocabularyTerms({});
+    if (!displayOnly) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lesson", lesson.lesson_id);
+      url.searchParams.set("step", lesson.steps[0].id);
+      window.history.replaceState(null, "", url);
+    }
   }, []);
 
   const exportLessonFlow = useCallback(() => {
