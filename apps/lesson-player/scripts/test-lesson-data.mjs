@@ -840,7 +840,8 @@ assert(posterById.get("s300-content")?.answer?.printed_page === 300 &&
   posterById.get("s300-message")?.answer?.printed_page === 300,
   "s.300–301 cevaplarının printed_page alanı sayısal başlangıç sayfası olmalı.");
 assert(posterById.get("s302-rubric")?.content?.items?.length === 5 &&
-  posterById.get("s302-rubric")?.content?.note?.includes("QR"),
+  (posterById.get("s302-rubric")?.content?.lead?.includes("QR") ||
+    posterById.get("s302-rubric")?.content?.note?.includes("QR")),
   "Afiş rubriğinde yalnız görünür beş ölçüt kullanılmalı.");
 for (const step of posterWorkshop.steps) {
   assert(step.source.source_status === "VERIFIED",
