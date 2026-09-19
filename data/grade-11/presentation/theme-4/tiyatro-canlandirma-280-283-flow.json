@@ -1,0 +1,324 @@
+{
+  "schema_version": "0.2.0",
+  "theme_id": "TEMA_04",
+  "lesson_id": "T11-T04-TIYATRO-CANLANDIRMA-280-283",
+  "lesson_slug": "tiyatro-canlandirma-280-283",
+  "title": "Tiyatro Metnini Canlandırma — Konuşma Atölyesi",
+  "subtitle": "Hayatın Aynası · Rol yaratma / alt metin / prova / performans değerlendirme",
+  "printed_page_range": "280-283",
+  "required_source_range": {
+    "from": "T04-S0074",
+    "to": "T04-S0083"
+  },
+  "steps": [
+    {
+      "id": "s280-source",
+      "source_record_id": "T04-S0074",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Rol Yaratmada Uzamın İşlevi — Metni okuyup rol yaratma sürecinin temel boyutlarını belirleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Basılı s.280'deki açıklamada rolün yalnız sözcüklerden oluşmadığını; tarihsel, toplumsal, psikolojik ve fiziksel bağlamla kurulduğunu fark edin.",
+        "items": [
+          "Dışsal / sosyolojik boyut",
+          "İç aksiyon / psikolojik boyut",
+          "Fiziksel / biyolojik boyut",
+          "Alt metin ve oyuncunun deneyimi"
+        ]
+      }
+    },
+    {
+      "id": "s280-q1",
+      "source_record_id": "T04-S0074",
+      "answer_id": "T4-P280-Q01",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Konuşmayı Yönetebilme 1 — Bir tiyatro metninin yalnız diyaloglarından hangi genel çıkarımlar yapılabilir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kişi ilişkileri, çatışma, amaç ve duygu hakkında çıkarım yapılabilir; dekor, ışık ve beden dilinin ise yalnız diyalogla tam görülemeyeceğini de belirtin."
+      }
+    },
+    {
+      "id": "s280-q2",
+      "source_record_id": "T04-S0075",
+      "answer_id": "T4-P280-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Konuşmayı Yönetebilme 2 — Size verilen bir rolü canlandırırken en çok nelere dikkat ederdiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Rolün sözlerini ezberlemekle yetinmeyin; karakterin amacı, ilişkileri, alt metni, ses ve beden kullanımını birlikte düşünün.",
+        "items": [
+          "Karakterin amacı ve ilişkileri",
+          "Ses tonu, vurgu ve tempo",
+          "Jest, mimik ve beden dili",
+          "Sahne konumu ve diğer oyuncularla etkileşim"
+        ]
+      }
+    },
+    {
+      "id": "s280-subtext",
+      "source_record_id": "T04-S0075",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Alt metin ve uzam — Oyuncu söylenmeyeni nasıl görünür kılar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Karakterin açıkça söylediği söz ile o sözü neden söylediği arasındaki farkı bir örnek replik üzerinden tartışın.",
+        "sections": [
+          {
+            "title": "Söz",
+            "body": "Metinde doğrudan duyulan cümle."
+          },
+          {
+            "title": "Alt metin",
+            "body": "Karakterin niyeti, duygusu veya gizlediği düşünce."
+          },
+          {
+            "title": "Uzam",
+            "body": "Karakterin tarihsel, toplumsal, psikolojik ve fiziksel çevresi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s281-q3",
+      "source_record_id": "T04-S0076",
+      "answer_id": "T4-P281-Q03",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Konuşmayı Yönetebilme 3 — Diyalog ve dili doğru kullanmak tiyatroda neden önemlidir?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Günlük hayattan bir yanlış anlaşılma örneği verip vurgu, kelime seçimi ve ifade açıklığının sahnedeki karşılığını açıklayın."
+      }
+    },
+    {
+      "id": "s281-q4",
+      "source_record_id": "T04-S0077",
+      "answer_id": "T4-P281-Q04",
+      "layout": "question",
+      "density": "compact",
+      "prompt": "Konuşmayı Yönetebilme 4 — 'İnsanı, insana, insanla anlatma sanatı' sözü tiyatroyu nasıl açıklar?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İnsan yaşamının oyuncu tarafından başka insanlara beden, ses ve söz yoluyla gösterilmesi düşüncesini merkeze alın."
+      }
+    },
+    {
+      "id": "s281-plan",
+      "source_record_id": "T04-S0078",
+      "answer_id": "T4-P281-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Performans Görevi — Ben, Mimar Sinan'dan canlandıracağınız bölümü seçip planınızı oluşturunuz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın altı hazırlık adımını sırayla uygulayın; grupça seçilen sahne metindeki karakter ilişkisini ve temel iletiyi korusun.",
+        "items": [
+          "Canlandırma amacını belirleme",
+          "Grup oluşturma",
+          "Bölüm seçme",
+          "Rol dağılımı",
+          "Hedef kitle/süre/strateji",
+          "İletişim engellerini giderme"
+        ]
+      }
+    },
+    {
+      "id": "s281-checklist",
+      "source_record_id": "T04-S0078",
+      "answer_id": "T4-P281-PERF02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Kontrol Listesi — Hazırlığınızın beş ölçütünü gerçek durumunuza göre işaretleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Evet/Hayır kararını hazır doldurmayın. 'Hayır' olan her alan için prova öncesinde somut bir düzeltme belirleyin.",
+        "items": [
+          "Amaç belirlendi mi?",
+          "Bölüm seçildi mi?",
+          "Rol dağılımı yapıldı mı?",
+          "Yöntem ve strateji belirlendi mi?",
+          "İletişim engelleri için önlem alındı mı?"
+        ]
+      }
+    },
+    {
+      "id": "s282-content",
+      "source_record_id": "T04-S0079",
+      "answer_id": "T4-P282-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İçerik Oluşturabilme — Seçilen sahneyi canlandırma için yeniden yapılandırınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Metnin temel anlamını bozmadan karakter ilişkisi, jest-mimik, doğaçlama ve görsel-işitsel ögeleri planlayın.",
+        "items": [
+          "Sahnenin başlangıcı, çatışması ve sonu",
+          "Karakterlerin doğrudan/dolaylı ilişkileri",
+          "Jest, mimik ve beden duruşu",
+          "Beyin fırtınasıyla rolü içselleştirme",
+          "Karaktere uygun kısa doğaçlamalar",
+          "Taslak prova ve geri bildirim"
+        ]
+      }
+    },
+    {
+      "id": "s282-improv",
+      "source_record_id": "T04-S0079",
+      "layout": "comparison",
+      "density": "compact",
+      "prompt": "Doğaçlama — Ne kadar özgür, ne kadar metne bağlı?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Doğaçlamanın karakterin kişiliği, tarihsel bağlam ve oyunun ana iletileriyle çelişmemesi gerekir.",
+        "sections": [
+          {
+            "title": "Korunacak",
+            "body": "Karakterin amacı, ilişkisi, dönem ve temel ileti."
+          },
+          {
+            "title": "Özgür alan",
+            "body": "Doğal geçiş, kısa tepki, beden kullanımı ve sahne ritmi."
+          },
+          {
+            "title": "Kaçınılacak",
+            "body": "Karaktere kaynakta olmayan kesin tarihî görüş veya olay yüklemek."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s282-rules",
+      "source_record_id": "T04-S0079",
+      "answer_id": "T4-P282-PERF02",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "Kural Uygulayabilme — Canlandırma sırasında hangi kuralları uygulayacaksınız?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitabın s.282–283 listesini konuşma, beden dili, karakter tutarlılığı ve değerler başlıklarında gruplayın.",
+        "items": [
+          "Dikkat çekici ve plana uygun başlangıç",
+          "Role uygun söz varlığı",
+          "Karakterin duygu ve düşüncelerinde tutarlılık",
+          "İzleyiciyle iletişim, zaman ve mekân kullanımı",
+          "Türkçe, diksiyon ve telaffuz",
+          "Millî-manevi/kültürel unsurları bağlama uygun kullanma",
+          "Toplumsal hassasiyetlere dikkat"
+        ]
+      }
+    },
+    {
+      "id": "s283-performance",
+      "source_record_id": "T04-S0080",
+      "answer_id": "T4-P283-PERF01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Değerlendirme — Canlandırmanızı görünür ölçütlerle gözden geçiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitapta görünen eksenleri kullanın; QR dereceli puanlama anahtarındaki görülmeyen puan ve seviyeleri uydurmayın.",
+        "items": [
+          "Kurgulanan içeriğe uygunluk",
+          "Özgünlük",
+          "Sözü etkili kullanma",
+          "Beden dilini etkili kullanma",
+          "Grupla uyum içinde çalışma"
+        ],
+        "note": "QR rubriğin ayrıntılı puanları kaynakta görünmediği için Lesson Player yalnız görünür ölçütleri kullanır."
+      }
+    },
+    {
+      "id": "s283-q1",
+      "source_record_id": "T04-S0081",
+      "answer_id": "T4-P283-PERFQ01",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 1 — Canlandırdığınız rol sizde hangi duygu ve düşünceleri oluşturdu?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yansıtma yazınızda karakterin bir kararına veya sahnesine bağlanın; yalnız 'iyi hissettim' gibi genel ifadelerle yetinmeyin.",
+        "items": [
+          "Hissettiğim duygu",
+          "Bu duyguyu oluşturan sahne/karar",
+          "Rolü oynarken zorlandığım nokta",
+          "Rol hakkında fark ettiğim yeni şey"
+        ]
+      }
+    },
+    {
+      "id": "s283-q2",
+      "source_record_id": "T04-S0082",
+      "answer_id": "T4-P283-PERFQ02",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 2 — Rol arkadaşlarınızın geri bildirimlerini değerlendiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Geri bildirimi kişiye değil, gözlenebilir performans davranışına yöneltin.",
+        "sections": [
+          {
+            "title": "Güçlü yön",
+            "body": "Arkadaşların gözlediği somut davranış."
+          },
+          {
+            "title": "Geliştirilecek yön",
+            "body": "Ses, tempo, beden dili, etkileşim veya metne bağlılık."
+          },
+          {
+            "title": "Benim değerlendirmem",
+            "body": "Geri bildirime katılıp katılmadığınızı prova deneyiminizle açıklayın."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s283-q3",
+      "source_record_id": "T04-S0083",
+      "answer_id": "T4-P283-PERFQ03",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Sıra Sizde 3 — Özgün konuşmacı kimliğinizi geliştirmek için hangi hedefleri belirleyeceksiniz?",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Başkalarını taklit etmek yerine kendi doğal sesinizi, açık ifade biçiminizi ve kontrollü beden dilinizi geliştirmeye odaklanın.",
+        "items": [
+          "Konuşma hızı",
+          "Vurgu ve tonlama",
+          "Göz teması ve beden dili",
+          "Metne aşırı bağımlılığı azaltma",
+          "Bir sonraki provada somut hedef"
+        ]
+      }
+    },
+    {
+      "id": "s283-next",
+      "source_record_id": "T04-S0083",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Konuşma atölyesini kişisel gelişim hedefiyle kapatınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Yalnız bir geliştirme hedefi seçin ve sonraki konuşma/canlandırma görevinde nasıl ölçüleceğini yazın.",
+        "sections": [
+          {
+            "title": "Hedef",
+            "body": "Örneğin önemli cümlelerde tempoyu düşürmek."
+          },
+          {
+            "title": "Uygulama",
+            "body": "Prova sırasında belirli iki sahnede bilinçli deneme."
+          },
+          {
+            "title": "Kontrol",
+            "body": "Akran veya öğretmen geri bildirimiyle yeniden değerlendirme."
+          }
+        ]
+      }
+    }
+  ]
+}
