@@ -1680,3 +1680,11 @@ button:focus-visible {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.structured-list__value {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.structured-list__value > p {
+  margin: 0;
+}
