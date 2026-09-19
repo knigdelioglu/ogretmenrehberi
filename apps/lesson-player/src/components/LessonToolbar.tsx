@@ -8,10 +8,12 @@ interface LessonToolbarProps {
   backupKey: string | null;
   outlineOpen: boolean;
   editorOpen: boolean;
+  teacherGuideOpen: boolean;
   onWarningDismiss: () => void;
   onLessonChange: (lessonId: string) => void;
   onOutlineToggle: () => void;
   onEditorToggle: () => void;
+  onTeacherGuideToggle: () => void;
   onOpenStudentDisplay: () => void;
   onPresentationToggle: () => void;
   onFullscreen: () => void;
@@ -25,10 +27,12 @@ export function LessonToolbar({
   backupKey,
   outlineOpen,
   editorOpen,
+  teacherGuideOpen,
   onWarningDismiss,
   onLessonChange,
   onOutlineToggle,
   onEditorToggle,
+  onTeacherGuideToggle,
   onOpenStudentDisplay,
   onPresentationToggle,
   onFullscreen
@@ -83,6 +87,9 @@ export function LessonToolbar({
           ) : null}
           <button type="button" onClick={onOutlineToggle}>
             {outlineOpen ? "Akış" : "Akış"}
+          </button>
+          <button type="button" onClick={onTeacherGuideToggle} aria-expanded={teacherGuideOpen} aria-controls="teacher-guide-panel">
+            {teacherGuideOpen ? "Rehberi kapat" : "Öğretmen rehberi"}
           </button>
           <button type="button" onClick={onEditorToggle}>
             {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
