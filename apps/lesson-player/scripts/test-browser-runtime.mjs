@@ -101,6 +101,42 @@ try {
     "Karagöz initial step"
   );
 
+  // The guidance is teacher-only and must never leak into the student display.
+  await teacher.evaluate(
+    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğretmen rehberi').click()"
+  );
+  await until(
+    () => teacher.evaluate(
+      "document.querySelector('.teacher-guide')?.textContent?.includes('1. dönem · Eser ve film çalışmaları')"
+    ),
+    "Teacher annual reading and portfolio guidance"
+  );
+  const annualAndWorkshops = await teacher.evaluate(`(() => {
+    const guide = document.querySelector('.teacher-guide')?.textContent ?? '';
+    return guide.includes('İletişim engellerini canlandırma') &&
+      guide.includes('E-posta yazma') &&
+      guide.includes('Ek-1') &&
+      guide.includes('performans notu');
+  })()`);
+  if (!annualAndWorkshops) throw new Error("Teacher workflow evidence incomplete.");
+
+  await teacher.send("Page.navigate", { url: `${karagoz}&display=1` });
+  await until(
+    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
+    "Standalone student display for teacher guidance isolation"
+  );
+  const teacherGuideLeaked = await teacher.evaluate(`(() =>
+    Boolean(document.querySelector('.teacher-guide')) ||
+    [...document.querySelectorAll('button')].some(b => b.textContent.trim() === 'Öğretmen rehberi')
+  )()`);
+  if (teacherGuideLeaked) throw new Error("Teacher guidance leaked into student display.");
+
+  await teacher.send("Page.navigate", { url: karagoz });
+  await until(
+    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
+    "Teacher display restored after guide isolation test"
+  );
+
   await teacher.evaluate(
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Düzenle').click()"
   );
@@ -311,7 +347,7 @@ try {
     }
   }
 
-  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views.");
+  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views, teacher workflow visibility and student isolation.");
 } finally {
   for (const client of clients) client.close();
   browser.kill();
