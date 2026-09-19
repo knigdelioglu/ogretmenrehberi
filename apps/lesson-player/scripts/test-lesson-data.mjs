@@ -20,8 +20,8 @@ assert(
   "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
 );
 assert(
-  theme2Lessons.length === 7,
-  "Tema 2 üretiminin bu aşamasında giriş, Oğulla Buluşma, Eski İstanbul, Orhun, Dîvânu Lugâti’t-Türk, Konuşma ve Âşık Atışması dersleri bulunmalı."
+  theme2Lessons.length === 8,
+  "Tema 2 üretiminde Yazma dâhil sekiz doğal blok bulunmalı."
 );
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
@@ -237,10 +237,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 159 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 137 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 147,
-  "Tema 2 mevcut üretim 159 adım / 137 source / 147 answer olmalı."
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 177 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 149 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 158,
+  "Tema 2 mevcut üretim 177 adım / 149 source / 158 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -436,6 +436,61 @@ assert(
     asikById.get("s147-reflection")?.content?.items?.length === 5,
   "s.147 performans değerlendirmesi kaynak-sınırlı; yansıtıcı yazı beş soruluk yapı olmalı."
 );
+
+const museumWriting = byLessonId.get("T11-T02-YAZMA");
+assert(museumWriting, "2. Tema çevrim içi müze yazma dersi bulunamadı.");
+assert(
+  museumWriting.printed_page_range === "148-154" &&
+    museumWriting.coverage.steps === 18 &&
+    museumWriting.coverage.source_records === 12 &&
+    museumWriting.coverage.answer_entries === 11,
+  "Tema 2 Yazma s.148–154, 18 adım / 12 source / 11 answer olmalı."
+);
+const museumById = new Map(museumWriting.steps.map((step) => [step.id, step]));
+assert(
+  museumById.get("s148-reference")?.answer === null &&
+    museumById.get("s148-reference")?.layout === "reference" &&
+    museumById.get("s150-task")?.answer === null,
+  "Sanal Müzecilik ve Müzeler ve Toplum metinleri yeniden yayımlanmadan süreç olarak temsil edilmeli."
+);
+assert(
+  museumById.get("s149-research")?.answer?.question_id === "T2-P149-PERF01" &&
+    Array.isArray(museumById.get("s149-research")?.answer?.answer_sections) &&
+    museumById.get("s149-research")?.answer?.answer_sections?.length === 4 &&
+    museumById.get("s149-select")?.answer?.entry_type === "performance_support",
+  "s.149 müze araştırmasının liste biçimli desteği ve gerçek seçim yönlendirmesi korunmalı."
+);
+assert(
+  museumById.get("s151-compare")?.layout === "comparison" &&
+    museumById.get("s151-carriers")?.layout === "structure" &&
+    museumById.get("s151-enrich")?.answer?.entry_type === "performance_support",
+  "s.151 karşılaştırma, kültür taşıyıcıları ve yazı zenginleştirme ayrı adımlar olmalı."
+);
+assert(
+  (museumById.get("s152-rules-1")?.content?.items?.length ?? 0) +
+    (museumById.get("s152-rules-2")?.content?.items?.length ?? 0) === 13 &&
+    museumById.get("s152-draft")?.answer?.entry_type === "performance_support" &&
+    museumById.get("s152-check")?.content?.items?.length === 10,
+  "s.152 on üç yazma ölçütü, kişisel izlenim iskeleti ve on maddelik kontrol ayrı korunmalı."
+);
+assert(
+  (museumById.get("s153-self-1")?.content?.items?.length ?? 0) +
+    (museumById.get("s153-self-2")?.content?.items?.length ?? 0) === 10 &&
+    museumById.get("s153-rubric")?.answer === null &&
+    museumById.get("s153-rubric")?.content?.sections?.some(
+      (section) => section.title === "Kaynak sınırı"
+    ),
+  "s.153 öz değerlendirme 10 ölçüt içermeli; QR formları kaynak görülmeden uydurulmamalı."
+);
+assert(
+  Object.keys(museumById.get("s154-journal")?.answer?.answer_sections ?? {}).length === 5 &&
+    museumById.get("s154-journal")?.answer?.entry_type === "performance_support",
+  "s.154 öğrenme günlüğünün beş gerçek başlığı model olarak korunmalı."
+);
+for (const step of museumWriting.steps) {
+  assert(step.source.source_status === "VERIFIED",
+    `Yazma source kaydı VERIFIED olmalı: ${step.source.source_record_id}`);
+}
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
 assert(karagoz, "Karagöz dersi catalog içinde bulunamadı.");
