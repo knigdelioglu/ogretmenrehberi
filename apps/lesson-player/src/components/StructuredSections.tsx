@@ -8,7 +8,7 @@ function renderValue(value: unknown): ReactNode {
         {value.map((item, index) => (
           <div className="structured-list__row" key={index}>
             <span className="structured-list__index">{index + 1}</span>
-            <span>{renderValue(item)}</span>
+            <div className="structured-list__value">{renderValue(item)}</div>
           </div>
         ))}
       </div>
