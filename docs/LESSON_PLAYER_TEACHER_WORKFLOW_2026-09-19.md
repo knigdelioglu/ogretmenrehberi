@@ -47,6 +47,35 @@ Bu tarihler **resmî takvim veya zorunlu tarih değil**, okulun yazılı sınav 
 
 `teacher-workflow.json` yalnız görev ve belge **rehberidir**; öğrenci adları, notlar, puanlar veya teslim durumları saklanmaz. Derste değerlendirilen atölye görevlerinin sonuçları ve eser/film değerlendirmesi ayrı izlenir. **Dört atölyenin basit ortalaması = performans notu** diye kanonik bir formül kodlanmaz; zümrenin ve geçerli ölçme-değerlendirme hükümlerinin belirlediği yöntem uygulanır. Kitapta erişilemeyen QR rubriklerinin düzey betimleyicileri bu panelde uydurulmaz.
 
+## Dört temada üç bağımsız takip hattı
+
+**Tema değiştirici:** Öğretmen rehberindeki 1–4. Tema düğmeleri, açık dersin
+sırasını değiştirmeden her temanın atölye, yıllık sunum ve portfolyo kontrolünü
+gösterir. Açık ders teması seçiliyse mevcut basılı sayfanın atölye görevi öne çıkar;
+başka tema seçilince o temanın bütün görevleri gösterilir.
+
+| Tema | Atölye | Önerilen eser/film haftası | Portfolyo kanıtları |
+|---|---|---|---|
+| 1 | Canlandırma + e-posta | 1. eser, 23–27 Kasım 2026 | İki atölye ürünü, 3-2-1 çıkış kartı, eser 1 Ek-1 ve sunu |
+| 2 | Türk dünyası konuşması + müze izlenim yazısı | 2. eser, 11–15 Ocak 2027 | İki atölye ürünü, öğrenme günlüğü, eser 2 Ek-1 ve sunu |
+| 3 | Roman kişisiyle mülakat + diyalog dönüştürme | 3. eser, 22–26 Mart 2027 | İki atölye ürünü, çıkış kartı, eser 3 Ek-1 ve sunu |
+| 4 | Tiyatro canlandırma + belgesel afişi | Film 3–7 Mayıs ve 4. eser 24–28 Mayıs 2027 | İki atölye ürünü, öğrenme günlüğü, film ve eser 4 için ayrı Ek-1 ve sunu |
+
+Tema/sunum eşlemesi **pedagojik öneridir**: 11. sınıfın dört teması
+resmîdir ancak örneğin film için 4. tema veya ikinci dönem zorunluluğu
+getirilmez. İlgili dönemdeki bütün önerilen sunumlar da görünür; “Bu tema”
+vurgusu yalnız önerilen eşleşmeyi gösterir.
+
+**Kontrol listeleri:** Üç hat ayrı ayrı işaretlenir: atölye uygulama ve
+değerlendirme hatırlatması; eser/film sunum planı; iki atölye ürünü,
+tema yansıtması ve bu temaya bağlanan eser/film Ek-1 + sunu için
+portfolyo hatırlatması. İşaretler
+`ogretmenrehberi.teacher-workflow.2026-2027.v1` anahtarında **yalnız bu
+tarayıcıda** saklanan öğretmen planlamasıdır. Sınıf, öğrenci bazlı
+teslim veya e-Okul notu değildir; kesin teslim alındı belgesi gibi
+kullanılmaz. Başka cihazla eşitlenmez. Saklama engellenirse ekranda uyarı
+gösterilir. Tekrar tıklanarak işaret kaldırılabilir.
+
 ## Arayüz
 
 Üst menüde **Öğretmen rehberi**: güncel dersin temasını ve basılı sayfasını kullanarak ilgili görevi öne çıkarır; iki tema ürünü, tema yansıtması, o dönemin eser/film takibi, değerlendirme ve portfolyo ayrımı gösterilir. **Projeksiyon ve bağımsız öğrenci ekranı** bu öğretmen panelini göstermez. Veri kaynağı: `apps/lesson-player/src/teacher-workflow.json`; kapsam regresyon testi: `npm run test:data`.
