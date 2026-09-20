@@ -88,7 +88,8 @@ allowlist'i, yayın kapsamı, test matrisi. Web `App.tsx`,
 `build-lesson-data.mjs` ile bire bir davranış envanteri.
 **Çıktı:** [mimari ADR](LESSON_PLAYER_ANDROID_ARCHITECTURE.md),
 [koddan çıkarılmış davranış envanteri ve riskler](LESSON_PLAYER_ANDROID_PHASE_0_AUDIT.md),
-[ekran/komut/fixture/öğrenci projection sözleşmesi](LESSON_PLAYER_ANDROID_PHASE_0_CONTRACT.md).
+[ekran/komut/fixture/öğrenci projection sözleşmesi](LESSON_PLAYER_ANDROID_PHASE_0_CONTRACT.md),
+[özgün Compose tablet tasarım brifi](LESSON_PLAYER_ANDROID_PHASE_0_DESIGN_BRIEF.md).
 **Kapı: BELGE DÜZEYİNDE GEÇTİ.** API36 ve Compose kararı onaylı; 48 ders, 4 tema,
 5 sunum ve 3 takip hattı sözleşmede sayılmış; kapsam dışı açık.
 Faz 2/3'te çözülecek P0 teknik risklerin belgelenmiş olması onların
@@ -231,6 +232,7 @@ engel oluşturmayacak şekilde tasarlanır.
 - [Compose ADR](LESSON_PLAYER_ANDROID_ARCHITECTURE.md)
 - [Faz 0 mevcut kod denetimi ve risk matrisi](LESSON_PLAYER_ANDROID_PHASE_0_AUDIT.md)
 - [Faz 0 ürün, durum ve test sözleşmesi](LESSON_PLAYER_ANDROID_PHASE_0_CONTRACT.md)
+- [Faz 0 tablet tasarım brifi](LESSON_PLAYER_ANDROID_PHASE_0_DESIGN_BRIEF.md)
 - [Lesson Player web README](../apps/lesson-player/README.md)
 - [Üç takip hattı](LESSON_PLAYER_TEACHER_WORKFLOW_2026-09-19.md)
 - https://developer.android.com/about/versions/16/setup-sdk
