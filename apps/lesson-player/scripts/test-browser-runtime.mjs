@@ -123,6 +123,75 @@ try {
   })()`);
   if (!annualAndWorkshops) throw new Error("Teacher workflow evidence incomplete.");
 
+  // All four themes must have the three independent tracks, with no yearly
+  // presentation duplicated in the recommended theme allocation.
+  for (const [themeNumber, title, workshop, annualDate] of [
+    [1, "Bir Diyeceğim Var!", "E-posta yazma", "23–27 Kasım 2026"],
+    [2, "Kültür Yolculuğu", "Çevrim içi müze gezisi izlenim yazısı", "11–15 Ocak 2027"],
+    [3, "Yaşamın İzinde", "Roman kişisiyle hayalî mülakat", "22–26 Mart 2027"],
+    [4, "Hayatın Aynası", "Belgesel için afiş hazırlama", "3–7 Mayıs 2027"]
+  ]) {
+    await teacher.evaluate(
+      `document.querySelectorAll('.teacher-guide__theme-tabs button')[${themeNumber - 1}]?.click()`
+    );
+    await until(
+      () => teacher.evaluate(`(() => {
+        const guide = document.querySelector('.teacher-guide');
+        const text = guide?.textContent ?? '';
+        return text.includes(${JSON.stringify(title)}) &&
+          text.includes(${JSON.stringify(workshop)}) &&
+          text.includes(${JSON.stringify(annualDate)}) &&
+          text.includes('1 · Edebiyat Atölyesi') &&
+          text.includes('2 · Dört eser + bir film sunumları') &&
+          text.includes('3 · Portfolyo ve değerlendirme kayıtları');
+      })()`),
+      `Teacher's three tracking streams for theme ${themeNumber}`
+    );
+  }
+  const expectedTrackControls = [
+    ['workshop', 't4-speaking'],
+    ['annual', 'film'],
+    ['portfolio', 'task:t4-speaking'],
+    ['portfolio', 'reflection:TEMA_04'],
+    ['portfolio', 'annual:film']
+  ];
+  for (const [track, itemId] of expectedTrackControls) {
+    const selector = `input[data-track=${JSON.stringify(track)}][data-item-id=${JSON.stringify(itemId)}]`;
+    await teacher.evaluate(`document.querySelector(${JSON.stringify(selector)})?.click()`);
+  }
+  await until(() => teacher.evaluate(`(() => {
+    const saved = JSON.parse(localStorage.getItem('ogretmenrehberi.teacher-workflow.2026-2027.v1') ?? '{}');
+    return saved.workshop?.includes('t4-speaking') &&
+      saved.annual?.includes('film') &&
+      saved.portfolio?.includes('task:t4-speaking') &&
+      saved.portfolio?.includes('reflection:TEMA_04') &&
+      saved.portfolio?.includes('annual:film');
+  })()`), "Three independent local teacher plan marks persisted");
+  await teacher.send("Page.reload");
+  await until(
+    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
+    "Teacher lesson after plan reload"
+  );
+  await until(
+    () => teacher.evaluate("Array.from(document.querySelectorAll('button')).some(b => b.textContent.trim() === 'Öğretmen rehberi')"),
+    "Teacher guide control after plan reload"
+  );
+  await teacher.evaluate(
+    "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğretmen rehberi').click()"
+  );
+  await teacher.evaluate("document.querySelectorAll('.teacher-guide__theme-tabs button')[3]?.click()");
+  await until(() => teacher.evaluate(`(() => {
+    const inputs = [
+      ['workshop','t4-speaking'],['annual','film'],
+      ['portfolio','task:t4-speaking'],['portfolio','reflection:TEMA_04'],
+      ['portfolio','annual:film']
+    ];
+    return document.querySelector('.teacher-guide')?.textContent?.includes('Hayatın Aynası') &&
+      inputs.every(([track,id]) => [...document.querySelectorAll('input[data-track]')]
+        .some(input => input.dataset.track === track && input.dataset.itemId === id && input.checked));
+  })()`), "Three teacher plan tracks survive reload in theme four");
+
+
   await teacher.evaluate(
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Düzenle').click()"
   );
