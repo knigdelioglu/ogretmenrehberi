@@ -1815,3 +1815,71 @@ button:focus-visible {
     width: auto;
   }
 }
+
+
+/* Four-theme navigation and three independently tracked teacher planning streams. */
+.teacher-guide__theme-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 13px;
+}
+.teacher-guide__theme-tabs button {
+  border: 1px solid #b8c9bf;
+  border-radius: 9px;
+  padding: 9px 6px;
+  background: #f3f5f1;
+  color: #294b40;
+  font: inherit;
+  font-size: 0.79rem;
+  font-weight: 730;
+  cursor: pointer;
+}
+.teacher-guide__theme-tabs button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: white;
+  background: var(--accent);
+}
+.teacher-guide__count {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: #566b5f;
+}
+.teacher-guide__entry {
+  margin: 9px 0;
+  padding: 0;
+  border: 1px solid #d9e2d8;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.teacher-guide__body .teacher-guide__entry details {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.teacher-guide__check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 13px;
+  border-top: 1px solid #d9e2d8;
+  background: #f2f7f0;
+  color: #2b5144;
+  font-size: 0.82rem;
+  line-height: 1.42;
+  cursor: pointer;
+}
+.teacher-guide__check input {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  margin: 1px 0 0;
+  accent-color: var(--accent);
+}
+@media (max-width: 440px) {
+  .teacher-guide__theme-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
