@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# A checksummed Gradle bootstrap until the standard binary wrapper JAR
+# can be committed to this repository. No unverified executable is run.
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+VERSION="8.13"
+EXPECTED="20f1b1176237254a6fc204d8434196fa11a4cfb387567519c61556e8710aed78"
+URL="https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip"
+PROPERTIES="$ROOT/gradle/wrapper/gradle-wrapper.properties"
+GRADLE_HOME="${GRADLE_USER_HOME:-$HOME/.gradle}"
+INSTALL_DIR="$GRADLE_HOME/lesson-player-bootstrap/gradle-${VERSION}"
+GRADLE="$INSTALL_DIR/bin/gradle"
+
+sha256() { shasum -a 256 "$1" | awk '{print $1}'; }
+
+# Prevent drift between the Android Studio distribution and CLI bootstrap.
+grep -Fx "distributionSha256Sum=$EXPECTED" "$PROPERTIES" >/dev/null ||
+  { echo "Gradle distribution checksum pin does not match properties." >&2; exit 1; }
+
+if [[ ! -x "$GRADLE" ]]; then
+  command -v curl >/dev/null || { echo "curl is required to bootstrap Gradle." >&2; exit 1; }
+  command -v unzip >/dev/null || { echo "unzip is required to bootstrap Gradle." >&2; exit 1; }
+  TMP="$(mktemp -d)"
+  trap 'rm -rf "$TMP"' EXIT
+  curl --fail --location --retry 3 --silent --show-error "$URL" --output "$TMP/gradle.zip"
+  if [[ "$(sha256 "$TMP/gradle.zip")" != "$EXPECTED" ]]; then
+    echo "Gradle 8.13 ZIP SHA-256 mismatch; refusing to execute." >&2
+    exit 1
+  fi
+  unzip -q "$TMP/gradle.zip" -d "$TMP"
+  test -x "$TMP/gradle-$VERSION/bin/gradle" ||
+    { echo "Gradle distribution missing executable." >&2; exit 1; }
+  mkdir -p "$(dirname "$INSTALL_DIR")"
+  if [[ ! -x "$GRADLE" ]]; then
+    mv "$TMP/gradle-$VERSION" "$INSTALL_DIR"
+  fi
+fi
+
+exec "$GRADLE" "$@"

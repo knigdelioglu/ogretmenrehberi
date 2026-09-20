@@ -82,3 +82,17 @@ notes.local.*
 # Keep canonical structured guide data versioned.
 !data/**/*.json
 !schema/**/*.json
+
+# Native Android Lesson Player
+apps/lesson-player-android/.gradle/
+apps/lesson-player-android/.kotlin/
+apps/lesson-player-android/local.properties
+apps/lesson-player-android/**/build/
+apps/lesson-player-android/.cxx/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Official Gradle wrapper JAR is checksum-verified on bootstrap
+apps/lesson-player-android/gradle/wrapper/gradle-wrapper.jar
