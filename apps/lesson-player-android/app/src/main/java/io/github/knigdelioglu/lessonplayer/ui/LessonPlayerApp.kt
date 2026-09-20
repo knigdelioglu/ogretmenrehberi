@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -27,7 +28,9 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import io.github.knigdelioglu.lessonplayer.R
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
 
@@ -74,7 +77,7 @@ internal fun LessonPlayerShell(currentScreen: AppScreen, navigate: (AppScreen) -
                             NavigationBarItem(
                                 selected = currentScreen == destination,
                                 onClick = { navigate(destination) },
-                                icon = { Text(destination.shortLabel.take(1)) },
+                                icon = { AppNavigationIcon(destination) },
                                 label = { Text(destination.shortLabel) },
                                 alwaysShowLabel = true
                             )
@@ -93,7 +96,7 @@ internal fun LessonPlayerShell(currentScreen: AppScreen, navigate: (AppScreen) -
                             NavigationRailItem(
                                 selected = currentScreen == destination,
                                 onClick = { navigate(destination) },
-                                icon = { Text(destination.shortLabel.take(1)) },
+                                icon = { AppNavigationIcon(destination) },
                                 label = { Text(destination.shortLabel) },
                                 alwaysShowLabel = true
                             )
@@ -106,4 +109,15 @@ internal fun LessonPlayerShell(currentScreen: AppScreen, navigate: (AppScreen) -
             }
         }
     }
+}
+
+@Composable
+private fun AppNavigationIcon(destination: AppScreen) {
+    val icon = when (destination) {
+        AppScreen.LIBRARY -> R.drawable.ic_library
+        AppScreen.LESSON -> R.drawable.ic_lesson
+        AppScreen.GUIDE -> R.drawable.ic_guide
+        AppScreen.SETTINGS -> R.drawable.ic_settings
+    }
+    Icon(painter = painterResource(icon), contentDescription = null)
 }
