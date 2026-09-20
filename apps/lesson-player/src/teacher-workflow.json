@@ -141,7 +141,7 @@
     }
   ],
   "annual": {
-    "note": "Yıllık eser/film çalışması, tema içi Edebiyat Atölyesi performansından ayrı takip edilir. Gösterilen sunum haftaları 2026–2027 için pedagojik öneridir; resmî zorunlu tarih değildir. Okulun yazılı takvimi ve zümre kararıyla değiştirilebilir; film için resmî olarak yalnız öğretim yılı içinde bir analiz istenir.",
+    "note": "Yıllık eser/film çalışması, tema içi Edebiyat Atölyesi performansından ayrı takip edilir. Gösterilen sunum haftaları 2026–2027 için pedagojik öneridir; resmî zorunlu tarih değildir. Okulun yazılı takvimi ve zümre kararıyla değiştirilebilir; film için resmî olarak yalnız öğretim yılı içinde bir analiz istenir. Sunuların temalara bağlanması da önerilen planlama eşleştirmesidir; resmî tema zorunluluğu değildir.",
     "form": "Ek-1 Eleştirel Okuma, Dinleme/İzleme Formu",
     "items": [
       {
@@ -154,7 +154,8 @@
           "start": "2026-11-23",
           "end": "2026-11-27",
           "label": "23–27 Kasım 2026"
-        }
+        },
+        "recommended_theme_id": "TEMA_01"
       },
       {
         "id": "book-2",
@@ -166,7 +167,8 @@
           "start": "2027-01-11",
           "end": "2027-01-15",
           "label": "11–15 Ocak 2027"
-        }
+        },
+        "recommended_theme_id": "TEMA_02"
       },
       {
         "id": "book-3",
@@ -178,7 +180,8 @@
           "start": "2027-03-22",
           "end": "2027-03-26",
           "label": "22–26 Mart 2027"
-        }
+        },
+        "recommended_theme_id": "TEMA_03"
       },
       {
         "id": "film",
@@ -190,7 +193,8 @@
           "start": "2027-05-03",
           "end": "2027-05-07",
           "label": "3–7 Mayıs 2027"
-        }
+        },
+        "recommended_theme_id": "TEMA_04"
       },
       {
         "id": "book-4",
@@ -202,7 +206,8 @@
           "start": "2027-05-24",
           "end": "2027-05-28",
           "label": "24–28 Mayıs 2027"
-        }
+        },
+        "recommended_theme_id": "TEMA_04"
       }
     ],
     "assessment": "Dönemdeki iki performans puanından eser/film değerlendirmelerine ayrılan puanı ve atölye ürünleri için kullanılan değerlendirmeyi ayrı izle. Yüzde, aritmetik ortalama veya puan dağılımını zümre kararı olmadan otomatik belirleme.",
