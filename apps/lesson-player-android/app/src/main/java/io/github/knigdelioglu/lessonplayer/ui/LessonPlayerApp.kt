@@ -1,7 +1,7 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
 import androidx.activity.compose.BackHandler
-import androidx.compose.foundation.Box
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.BoxWithConstraints
