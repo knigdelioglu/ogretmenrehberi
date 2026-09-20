@@ -4,7 +4,10 @@
 
 **Platform:** Android 16 ve üzeri; `minSdk = 36`, `targetSdk = 36`, `compileSdk = 36` (daha yeni araç zincirine geçilirse compile/target yükseltilebilir, `minSdk` 36 altına düşmez). 64-bit ARM Android tablet öncelikli. İlk gerçek cihaz: Samsung Galaxy Tab A11 Plus SM-X230 / Android 16.
 
-**Asıl plan:** [LESSON_PLAYER_ANDROID_PHASED_PLAN.md](LESSON_PLAYER_ANDROID_PHASED_PLAN.md).
+**Asıl plan:** [Fazlı plan](LESSON_PLAYER_ANDROID_PHASED_PLAN.md). Faz 0 çıktı belgeleri:
+[kod denetimi](LESSON_PLAYER_ANDROID_PHASE_0_AUDIT.md),
+[ürün ve test sözleşmesi](LESSON_PLAYER_ANDROID_PHASE_0_CONTRACT.md),
+[tablet tasarım brifi](LESSON_PLAYER_ANDROID_PHASE_0_DESIGN_BRIEF.md).
 
 ## Karar
 
