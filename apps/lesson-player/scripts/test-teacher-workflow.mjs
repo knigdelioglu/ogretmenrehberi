@@ -42,6 +42,27 @@ assert.match(workflow.annual.note, /zümre kararı/);
 assert.match(workflow.annual.preparation_note, /bir hafta önce/);
 assert.match(workflow.annual.exam_fallback, /18–21 Ocak 2027/);
 
+// Each proposed reading/film slot is tied to exactly one theme in the four-theme guide.
+const themeAssignments = [
+  ["book-1", "TEMA_01"],
+  ["book-2", "TEMA_02"],
+  ["book-3", "TEMA_03"],
+  ["film", "TEMA_04"],
+  ["book-4", "TEMA_04"]
+];
+for (const [id, themeId] of themeAssignments) {
+  const item = workflow.annual.items.find((candidate) => candidate.id === id);
+  assert.equal(item?.recommended_theme_id, themeId);
+  assert.ok(workflow.themes.some((theme) => theme.id === themeId));
+}
+assert.deepEqual(
+  workflow.themes.map((theme) =>
+    workflow.annual.items.filter((item) => item.recommended_theme_id === theme.id).length
+  ),
+  [1, 1, 1, 2],
+  "Every theme gets a reading/film planning slot without duplicating any annual item"
+);
+
 const seen = new Set();
 for (const [index, theme] of workflow.themes.entries()) {
   assert.equal(theme.id, `TEMA_0${index + 1}`);
