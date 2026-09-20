@@ -93,3 +93,6 @@ apps/lesson-player-android/.cxx/
 *.aab
 *.jks
 *.keystore
+
+# Official Gradle wrapper JAR is checksum-verified on bootstrap
+apps/lesson-player-android/gradle/wrapper/gradle-wrapper.jar

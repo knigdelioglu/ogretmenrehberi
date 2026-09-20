@@ -23,20 +23,23 @@ native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır
 - Sürüm sabitlemeleri `gradle/libs.versions.toml` içindedir.
 - `local.properties` (Android Studio tarafından oluşturulur) ve
   signing anahtarları repoya eklenmez.
+- `./gradlew` ilk çağrıda resmî Gradle 8.13 wrapper JAR'ını indirir;
+  **sabit resmî SHA-256** ile doğrulamadan çalıştırmaz.
+  Dağıtım ZIP'i de Gradle wrapper özelliklerindeki SHA-256 ile doğrulanır.
 
-Android Studio'da **bu klasörü ayrı proje olarak aç**.
-Gradle 8.13 yüklüyse:
+Android Studio'da **bu klasörü ayrı proje olarak aç**. Öncesinde
+JDK 17 ve Android SDK 36 kuruluyken:
 
 ```bash
 cd apps/lesson-player-android
-gradle :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
+./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
 ```
 
-CI, `gradle/actions/setup-gradle` ile Gradle 8.13'ü kurup aynı komutu çalıştırır.
-**Şimdilik Gradle wrapper JAR'ı repoda yoktur**: Android Studio veya sistem
-Gradle 8.13 gerekir. Doğrulanmış resmî Gradle wrapper'ının eklenmesi
-ayrı tamamlanma işi olarak izlenir; bu eksik giderilmeden tam yeniden
-üretilebilir geliştirme kurulumu iddia edilmez.
+Wrapper JAR'ın kaynak koda ikili dosya olarak eklenmemesi bilinçlidir:
+ilk çalıştırmada yalnız resmî Gradle adresinden alınır, SHA-256
+doğrulanır ve sonraki açılışlarda cache'ten kullanılır. İlk kurulum
+internete ihtiyaç duyar; uygulamanın kendisi Faz 2'den itibaren
+internetsiz ders açacaktır.
 
 ## Çalıştırma ve sınama
 
