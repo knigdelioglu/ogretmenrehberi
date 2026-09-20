@@ -8,8 +8,6 @@ on:
   push:
     branches:
       - main
-      - "feat/**"
-      - "fix/**"
     paths:
       - "apps/lesson-player-android/**"
       - ".github/workflows/lesson-player-android.yml"
@@ -41,10 +39,11 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.13"
-      - name: Verify native API 36 contract and build
+      - name: Verify pinned wrapper, native API 36 contract and test compilation
         run: |
           set -euo pipefail
-          gradle --no-daemon :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
+          ./gradlew --version
+          ./gradlew --no-daemon :app:assembleDebug :app:assembleDebugAndroidTest :app:testDebugUnitTest :app:lintDebug
           APK="app/build/outputs/apk/debug/app-debug.apk"
           test -s "$APK"
           AAPT="$(find "${ANDROID_HOME}/build-tools" -name aapt -type f | sort -V | tail -1)"
@@ -84,7 +83,7 @@ jobs:
           arch: x86_64
           profile: pixel_6
           disable-animations: true
-          script: gradle --project-dir apps/lesson-player-android --no-daemon :app:connectedDebugAndroidTest
+          script: apps/lesson-player-android/gradlew --project-dir apps/lesson-player-android --no-daemon :app:connectedDebugAndroidTest
       - uses: actions/upload-artifact@v4
         if: always()
         with:
