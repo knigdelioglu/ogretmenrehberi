@@ -79,7 +79,7 @@ Doğrudan bağlantılar da desteklenir:
 
 ## Öğretmen rehberi: atölye, portfolyo ve yıllık eser/film
 
-Üst menüdeki **Öğretmen rehberi** düğmesi, güncel tema ve basılı kitap sayfasıyla eşleşen Edebiyat Atölyesi görevini öne çıkarır. Her temanın konuşma ve yazma ürünlerini, tema sonu yansıtmasını, aynı dönemde yapılacak eser/film çalışmalarını ve Ek-1 formunu gösterir. Portfolyoya alınacak ürün ve değerlendirme kanıtı ayrı belirtilir; önerilen tarihlerin resmî takvim olmadığı açıklanır.
+Üst menüdeki **Öğretmen rehberi** düğmesi, güncel tema ve basılı kitap sayfasıyla eşleşen Edebiyat Atölyesi görevini öne çıkarır. Paneldeki **1–4. Tema** düğmeleriyle dört temanın tamamına ait üç ayrı takip hattı incelenir; görev, sunum planı ve portfolyo hatırlatmaları bağımsız olarak işaretlenebilir. İşaretler yalnız tarayıcıdaki öğretmen planına kaydedilir, öğrenci veya sınıf bazlı teslim/not kaydı değildir. Her temanın konuşma ve yazma ürünlerini, tema sonu yansıtmasını, aynı dönemde yapılacak eser/film çalışmalarını ve Ek-1 formunu gösterir. Portfolyoya alınacak ürün ve değerlendirme kanıtı ayrı belirtilir; önerilen tarihlerin resmî takvim olmadığı açıklanır.
 
 Dört tema × iki atölye görevi = yılda sekiz ayrı atölye ürünü. Yıldaki dört eser + bir film bu atölyelerin yerine geçmez. Öğretmen rehberi **öğrenci projeksiyonunda gösterilmez**, öğrenci ve not kaydı tutmaz, zümre kararı olmadan performans notu formülü uygulamaz. Ayrıntılı kaynak ve uygulama sınırları: `docs/LESSON_PLAYER_TEACHER_WORKFLOW_2026-09-19.md`.
 
