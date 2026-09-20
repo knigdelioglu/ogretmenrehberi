@@ -1,6 +1,6 @@
 # Lesson Player Android — Fazlı uygulama planı
 
-**Statü:** Onay için geliştirme planı; **bu PR APK/uygulama kodu içermez**. Önceki Tauri Android planının yerine Kotlin + Jetpack Compose seçilmiştir.
+**Statü:** Faz 0 dokümantasyonu tamamlandı; Faz 1+ uygulama kodu henüz başlamadı. **Bu PR APK/uygulama kodu içermez**. Önceki Tauri Android planının yerine Kotlin + Jetpack Compose seçilmiştir.
 
 **Başlangıç:** `knigdelioglu/ogretmenrehberi` main `65459a0`, `apps/lesson-player`.
 **Platform sözleşmesi:** **minimum Android 16 = API 36**. İlk Gradle yapılandırması:
@@ -86,9 +86,13 @@ Kaydetme katmanında **kanonik içerik** ile **kişisel değişiklik** daima ayr
 allowlist'i, yayın kapsamı, test matrisi. Web `App.tsx`,
 `runtime-contracts.js`, `types.ts`, `teacher-workflow.json`,
 `build-lesson-data.mjs` ile bire bir davranış envanteri.
-**Çıktı:** mimari ADR + onaylı faz planı + gap checklist.
-**Kapı:** API36 ve Compose kararında Tauri kalıntısı yok; 48 ders, 4 tema,
+**Çıktı:** [mimari ADR](LESSON_PLAYER_ANDROID_ARCHITECTURE.md),
+[koddan çıkarılmış davranış envanteri ve riskler](LESSON_PLAYER_ANDROID_PHASE_0_AUDIT.md),
+[ekran/komut/fixture/öğrenci projection sözleşmesi](LESSON_PLAYER_ANDROID_PHASE_0_CONTRACT.md).
+**Kapı: BELGE DÜZEYİNDE GEÇTİ.** API36 ve Compose kararı onaylı; 48 ders, 4 tema,
 5 sunum ve 3 takip hattı sözleşmede sayılmış; kapsam dışı açık.
+Faz 2/3'te çözülecek P0 teknik risklerin belgelenmiş olması onların
+uygulamada çözülmüş olduğu anlamına gelmez.
 
 ## Faz 1 — Native Android proje ve CI iskeleti
 
@@ -225,6 +229,8 @@ engel oluşturmayacak şekilde tasarlanır.
 ## İlgili kaynaklar
 
 - [Compose ADR](LESSON_PLAYER_ANDROID_ARCHITECTURE.md)
+- [Faz 0 mevcut kod denetimi ve risk matrisi](LESSON_PLAYER_ANDROID_PHASE_0_AUDIT.md)
+- [Faz 0 ürün, durum ve test sözleşmesi](LESSON_PLAYER_ANDROID_PHASE_0_CONTRACT.md)
 - [Lesson Player web README](../apps/lesson-player/README.md)
 - [Üç takip hattı](LESSON_PLAYER_TEACHER_WORKFLOW_2026-09-19.md)
 - https://developer.android.com/about/versions/16/setup-sdk
