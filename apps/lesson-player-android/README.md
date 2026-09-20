@@ -23,9 +23,11 @@ native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır
 - Sürüm sabitlemeleri `gradle/libs.versions.toml` içindedir.
 - `local.properties` (Android Studio tarafından oluşturulur) ve
   signing anahtarları repoya eklenmez.
-- `./gradlew` ilk çağrıda resmî Gradle 8.13 wrapper JAR'ını indirir;
-  **sabit resmî SHA-256** ile doğrulamadan çalıştırmaz.
-  Dağıtım ZIP'i de Gradle wrapper özelliklerindeki SHA-256 ile doğrulanır.
+- `./gradlew` geçici, denetlenebilir bir Gradle 8.13 başlatıcısıdır:
+  ilk kullanımda **resmî Gradle dağıtım ZIP'ini** indirir ve
+  Gradle'ın yayımladığı SHA-256 ile doğrulamadan çalıştırmaz.
+  `gradle-wrapper.properties` ile sabit hash'in uyumu da denetlenir.
+  Bu repo henüz standart ikili `gradle-wrapper.jar` dosyasını içermez.
 
 Android Studio'da **bu klasörü ayrı proje olarak aç**. Öncesinde
 JDK 17 ve Android SDK 36 kuruluyken:
@@ -35,17 +37,18 @@ cd apps/lesson-player-android
 ./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
 ```
 
-Wrapper JAR'ın kaynak koda ikili dosya olarak eklenmemesi bilinçlidir:
-ilk çalıştırmada yalnız resmî Gradle adresinden alınır, SHA-256
-doğrulanır ve sonraki açılışlarda cache'ten kullanılır. İlk kurulum
-internete ihtiyaç duyar; uygulamanın kendisi Faz 2'den itibaren
-internetsiz ders açacaktır.
+Gradle dağıtımı `~/.gradle/lesson-player-bootstrap/` altında
+saklanır. İlk kurulum internete ihtiyaç duyar; uygulamanın
+kendisi Faz 2'den itibaren internetsiz ders açacaktır.
+Android Studio projeyi bağımsız açabilir; standart Gradle wrapper
+JAR gerektiren bazı IDE entegrasyonları için standart wrapper'ın
+eklenmesi ayrıca izlenir.
 
 ## Çalıştırma ve sınama
 
 Android Studio > Run `app` (API 36 emülatör/Android 16 tablet).
-Unit: `gradle :app:testDebugUnitTest`.
-Instrumented Compose smoke: `gradle :app:connectedDebugAndroidTest`
+Unit: `./gradlew :app:testDebugUnitTest`.
+Instrumented Compose smoke: `./gradlew :app:connectedDebugAndroidTest`
 (API 36 bağlı emülatör/cihaz gerektirir).
 CI debug APK'yı yalnız faz testi için saklar; kullanıcıya release diye sunulmaz.
 
