@@ -1,0 +1,55 @@
+name: Lesson Player Android 16
+
+on:
+  pull_request:
+    paths:
+      - "apps/lesson-player-android/**"
+      - ".github/workflows/lesson-player-android.yml"
+  push:
+    branches:
+      - main
+      - "feat/**"
+      - "fix/**"
+    paths:
+      - "apps/lesson-player-android/**"
+      - ".github/workflows/lesson-player-android.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: apps/lesson-player-android
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: android-actions/setup-android@v3
+      - name: Install Android 16 SDK
+        run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.13"
+      - name: Verify native API 36 contract and build
+        run: |
+          set -euo pipefail
+          gradle --no-daemon :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
+          APK="app/build/outputs/apk/debug/app-debug.apk"
+          test -s "$APK"
+          AAPT="$(find "${ANDROID_HOME}/build-tools" -name aapt -type f | sort -V | tail -1)"
+          "$AAPT" dump badging "$APK" | grep -F "sdkVersion:'36'"
+          "$AAPT" dump badging "$APK" | grep -F "targetSdkVersion:'36'"
+          ! "$AAPT" dump badging "$APK" | grep -F "android.permission.INTERNET"
+          sha256sum "$APK"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lesson-player-android16-phase1-debug
+          path: apps/lesson-player-android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
