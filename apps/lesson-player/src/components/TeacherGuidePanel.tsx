@@ -182,6 +182,8 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
               <label className="teacher-guide__check">
                 <input
                   type="checkbox"
+                  data-track="workshop"
+                  data-item-id={task.id}
                   checked={marked("workshop", task.id)}
                   onChange={() => toggleMark("workshop", task.id)}
                 />
@@ -221,6 +223,8 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
               <label className="teacher-guide__check">
                 <input
                   type="checkbox"
+                  data-track="annual"
+                  data-item-id={item.id}
                   checked={marked("annual", item.id)}
                   onChange={() => toggleMark("annual", item.id)}
                 />
@@ -256,6 +260,8 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
               <label className="teacher-guide__check">
                 <input
                   type="checkbox"
+                  data-track="portfolio"
+                  data-item-id={`task:${task.id}`}
                   checked={marked("portfolio", `task:${task.id}`)}
                   onChange={() => toggleMark("portfolio", `task:${task.id}`)}
                 />
@@ -271,6 +277,8 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
             <label className="teacher-guide__check">
               <input
                 type="checkbox"
+                data-track="portfolio"
+                data-item-id={`reflection:${theme.id}`}
                 checked={marked("portfolio", `reflection:${theme.id}`)}
                 onChange={() => toggleMark("portfolio", `reflection:${theme.id}`)}
               />
@@ -287,6 +295,8 @@ export function TeacherGuidePanel({ lesson, step, onClose }: TeacherGuidePanelPr
               <label className="teacher-guide__check">
                 <input
                   type="checkbox"
+                  data-track="portfolio"
+                  data-item-id={`annual:${item.id}`}
                   checked={marked("portfolio", `annual:${item.id}`)}
                   onChange={() => toggleMark("portfolio", `annual:${item.id}`)}
                 />
