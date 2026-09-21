@@ -9,45 +9,58 @@
       "entry_type": "question_answer",
       "printed_page": 43,
       "question_no": "Fark Edelim",
-      "prompt_summary": "Mehmet Kaplan'ın mektubunun türünü belirleme",
-      "answer": "Metin en uygun biçimde edebî mektup olarak değerlendirilebilir. Kaplan belirli bir kişiye samimi biçimde hitap ederken günlük yaşamının yanında roman, yazma, okuma ve edebiyat anlayışı üzerine ayrıntılı düşüncelerini de paylaşır. Bu nedenle metin özel mektubun yakın ve kişisel havasını taşırken aynı zamanda edebî ve düşünsel bir belge niteliği kazanır.",
+      "prompt_summary": "Mehmet Kaplan'ın mektubunun mektup türlerinden hangisini örneklediği ve gerekçelendirilmesi",
+      "answer": "Mehmet Kaplan'ın mektubu temelde 'edebî mektup' türünü örneklemektedir; bununla birlikte 'özel mektup'un samimi ve içten özelliklerini de bünyesinde barındıran melez bir nitelik taşır.",
       "source_locator": "basılı s.43 / PDF s.44; ana metin s.37-38",
-      "explanation": "Mektubun türünü belirlerken şu dört soruyu sırayla sormak işi kolaylaştırır: Kim yazıyor? Kime yazıyor? Hangi amaçla yazıyor? Nasıl bir dil ve üslup kullanıyor?"
+      "answer_sections": {
+        "Edebî mektup olma gerekçeleri (Asıl tür)": "Metin iki edebiyatçı arasında yazılmıştır. Kaplan mektubunda roman türünün teknik sorunlarını (Dostoyevski, Stendhal, Karamazof Kardeşler), kişi tahlili yöntemlerini ('mazi koridoru'), sanat anlayışını ve yazma disiplinini ele alır. Bu fikirler yalnızca iki kişi arasındaki günlük bir sohbeti aşarak dönemin edebiyat ve düşünce hayatına ışık tutan estetik ve kuramsal bir belge niteliği kazanır.",
+        "Özel mektup özellikleri (Biçimsel ve duygusal zemin)": "Mektup doğrudan samimi bir hitapla ('Âli,') başlar, günlük aile haberlerini (kardeşleri Behice, Münevver, Kemal), yalnızlık duygusunu, sağlık durumunu ve selamları içerir; yer, tarih ve adres bilgisiyle özel mektup kalıbını kullanır.",
+        "Sonuç": "Mektup, özel mektup samimiyetiyle yazılmış fakat içeriğindeki yoğun edebî tahliller ve yazarının sanatçı kimliği sebebiyle Türk edebiyatında klasikleşmiş bir 'edebî mektup' örneğidir."
+      },
+      "explanation": "Mektubun türünü belirlerken şu dört ölçüt göz önünde tutulmalıdır: Kim yazıyor? (Edebiyat araştırmacısı), Kime yazıyor? (Edebiyatçı dostuna), Hangi amaçla yazıyor? (Haberleşmenin yanında edebiyat kuramı ve roman tahlili yapmak amacıyla), Nasıl bir dille yazıyor? (Samimi fakat edebî ve düşünsel derinliği olan bir dille).",
+      "guidance": "Öğrencilerin mektubu doğrudan özel mektup olarak nitelemesi durumunda, metindeki Dostoyevski tahlili ve roman görüşlerinin onu 'edebî mektup' seviyesine taşıdığı fark ettirilmelidir.",
+      "evidence_quotes": [
+        "Karamazoflar romanı şimdiye kadar okuduklarıma hiç benzemiyor",
+        "ben bu hâle mazi koridoru diyorum",
+        "Bana Rus usulü daha derin ve psikolojik geliyor",
+        "Bu roman bende yine roman yazmak arzusunu canlandırdı"
+      ]
     },
     {
       "question_id": "T1-P43-Q02",
       "entry_type": "question_answer",
       "printed_page": 43,
       "question_no": "Karşılaştıralım",
-      "prompt_summary": "Yazıcı ile Âli'ye Mektuplar'ı verilen ölçütlere göre karşılaştırma",
-      "answer": "Yazıcı, Karagöz'ün yazıcılık yaparken yaşadığı yanlış anlamaları konu alan geleneksel bir gölge oyunudur; Âli'ye Mektuplar ise Kaplan'ın dostuna kişisel ve edebî düşüncelerini aktardığı bir mektuptur. Yazıcı karşılıklı konuşma, söz oyunu, tipler ve sahne düzeniyle ilerler; mektup hitap, giriş, gelişme, sonuç ve kapanış bölümleriyle kurulur. Yazıcı'nın dili tiplerin sosyal ve eğitim farklılıklarını yansıtan mizahî bir dildir; mektubun dili samimi, düşünsel ve yer yer dönemin kelime kadrosunu taşıyan bir düzyazıdır.",
+      "prompt_summary": "Yazıcı adlı Karagöz metni ile Mehmet Kaplan'ın mektubunun verilen 6 ölçüte göre karşılaştırılması",
+      "answer": "Yazıcı adlı Karagöz oyunu ile Âli'ye Mektuplar metni; içerik, tür, dönem, yapı unsurları, dil-üslup ve ileti ölçütleri bakımından tablodaki karşıtlık ve benzerliklerle incelenir:",
+      "source_locator": "basılı s.43 / PDF s.44; Yazıcı s.18-24; Âli'ye Mektuplar s.37-38",
       "answer_sections": {
-        "icerik": {
-          "yazici": "Karagöz'ün yazıcılık yapması ve iletişim yanlışlıkları",
-          "mektup": "Kaplan'ın günlük yaşamı, duyguları, edebiyat görüşleri ve Âli'ye tavsiyeleri"
+        "İçerik": {
+          "Yazıcı": "Karagöz'ün geçim derdiyle bilmediği yazıcılık işine kalkışması, yazı yazdırmaya gelen müşterilerin (Hanım, Lâz, Tiryaki, Çelebi) sözlerini yanlış anlaması ve yaşanan komik sürtüşmeler.",
+          "Mektup (Âli'ye Mektuplar)": "Mehmet Kaplan'ın gurbetteki dostu Âli'ye günlük hayatını, iç dünyasını, yalnızlığını, Dostoyevski ve roman üzerine edebî tahlillerini aktarması ve dostuna yazma cesareti vermesi."
         },
-        "tur": {
-          "yazici": "Geleneksel gölge oyunu",
-          "mektup": "Edebî mektup; özel mektup özellikleri de taşır"
+        "Tür": {
+          "Yazıcı": "Geleneksel Türk tiyatrosu / Gölge oyunu (göstermeye bağlı edebî metin).",
+          "Mektup (Âli'ye Mektuplar)": "Edebî mektup / Özel mektup (kişisel hayatı konu alan öğretici metin)."
         },
-        "donem": {
-          "yazici": "Geleneksel Türk tiyatrosu ve eski İstanbul çevresini yansıtır",
-          "mektup": "24 Haziran 1940 tarihli"
+        "Dönem": {
+          "Yazıcı": "Klasik Osmanlı dönemi geleneksel halk kültürü ve eski İstanbul hayatı.",
+          "Mektup (Âli'ye Mektuplar)": "Cumhuriyet Dönemi Türk Edebiyatı (24 Haziran 1940 tarihli mektup)."
         },
-        "yapi_unsurlari": {
-          "yazici": "Mukaddime, muhavere, fasıl ve bitiş; kişiler, sahne ve dramatik çatışma",
-          "mektup": "Hitap, giriş, gelişme, sonuç, tarih-yer ve yazar adı"
+        "Yapı Unsurları": {
+          "Yazıcı": "Mukaddime (giriş), muhavere (söyleşme), fasıl (asıl oyun) ve bitiş bölümleri; kişiler (tipler), dramatik mekân (yazıcı dükkânı), sahneleme ortamı (hayal perdesi), dramatik çatışma ve olay örgüsü.",
+          "Mektup (Âli'ye Mektuplar)": "Tarih ve yer kaydı, hitap bölümü, giriş, gelişme (edebî tahliller ve günlük haberler), sonuç (selam ve dilekler), imza ve adres bölümü."
         },
-        "dil_ve_uslup": {
-          "yazici": "Diyalog, halk dili, ağız özellikleri, yanlış anlamalar ve söz oyunları",
-          "mektup": "Samimi, açıklayıcı, düşünsel ve konuşma havasına yakın düzyazı"
+        "Dil ve Üslup": {
+          "Yazıcı": "Karşılıklı konuşmaya (diyalog) dayalı, ses benzerlikleri ve söz oyunlarıyla örülü, yöresel ağızları ve zümre dillerini yansıtan mizahî halk dili.",
+          "Mektup (Âli'ye Mektuplar)": "Samimi, akıcı, düşünsel ve çözümleyici bir anlatım; konuşma havasında ilerleyen, dönemin zengin kelime kadrosunu taşıyan özenli bir düzyazı dili."
         },
-        "ileti": {
-          "yazici": "Dil ve sosyal farklılıkların iletişime etkisi",
-          "mektup": "Dostluk, paylaşma, çalışma, cesaret ve edebiyat üzerine düşünme"
+        "İleti": {
+          "Yazıcı": "Kişinin yetkin olmadığı işe kalkışmasının doğuracağı uyuşmazlıklar; dil ve kültür farklılıklarının iletişimdeki rolü (açık ve örtük mizah).",
+          "Mektup (Âli'ye Mektuplar)": "Dostluğun ve paylaşmanın iyileştirici gücü; kabiliyetin sabır, çalışma ve iradeyle gelişeceği; edebiyatın hayatı derinleştiren bir mücadele olduğu."
         }
       },
-      "source_locator": "basılı s.43 / PDF s.44; Yazıcı s.18-24; Âli'ye Mektuplar s.37-38"
+      "guidance": "Tabloda yer alan 6 ölçütün tamamının karşılaştırmalı olarak doldurulması sağlanmalı; göstermeye bağlı bir sahne sanatı ile kişisel hayatı konu alan bir öğretici metnin yapı ve amaç farkı vurgulanmalıdır."
     },
     {
       "question_id": "T1-P44-Q01",

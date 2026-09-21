@@ -10,95 +10,158 @@
       "printed_page": 36,
       "question_no": "1",
       "prompt_summary": "Mektup kavramının çağrıştırdıkları ve günlük hayatla ilişkisi",
-      "answer": "Mektup, bir kişinin başka bir kişiye haber, duygu, düşünce veya isteğini yazılı olarak iletmesidir. Yalnız bilgi vermek için değil; özlem, sevgi, teşekkür, tavsiye ve hatıra paylaşmak için de kullanılabilir. Günümüzde aynı işlevin bir bölümünü e-posta ve mesajlaşma uygulamaları üstlense de mektup daha düşünülmüş ve kalıcı bir iletişim biçimi olarak değerlendirilebilir.",
-      "guidance": "Soru kişisel örnek istediği için öğrencinin kendi hayatından veya çevresinden verdiği gerekçeli örnek yeterlidir.",
-      "source_locator": "basılı s.36 / PDF s.37"
+      "answer": "Mektup; aradaki mesafeye rağmen duygu, düşünce, özlem ve haberleri muhatabına samimiyetle ulaştıran, zamana direnen kalıcı ve kişisel bir iletişim aracıdır. Günümüzde dijital mesajlar anlık ve hızlı olsa da mektup; el yazısı, harcanan zaman, özenli dil ve bıraktığı somut hatıra değeriyle çok daha derin ve düşünülmüş bir anlam taşır.",
+      "source_locator": "basılı s.36 / PDF s.37",
+      "answer_sections": {
+        "Kavramsal anlam": "Uzaktaki bir kişiyle doğrudan, içten ve aracısız bir bağ kurma; iç dünyayı, sevinç ve hüzünleri söze dökme yolu.",
+        "Günlük hayatla ilişki ve kişisel örnek": "Günümüzde bayram tebriği, asker veya gurbet mektubu, sevilen bir dosta yazılan doğum günü mektubu ya da dedelerimizin sandıkta sakladığı sararmış zarflar gibi somut örnekler verilebilir. Anlık iletilerin aksine mektup, saklanan ve yıllar sonra yeniden okunabilen bir duygu arşividir."
+      },
+      "guidance": "Soru öğrencinin kişisel deneyim ve gözlemlerine dayanmaktadır. Öğrencilerin hızlı dijital iletişim (SMS, e-posta, anlık mesaj) ile mektubun özenli, kalıcı ve duygusal yapısı arasındaki farkı vurgulamaları teşvik edilmelidir."
     },
     {
       "question_id": "T1-P36-Q02",
       "entry_type": "question_answer",
       "printed_page": 36,
       "question_no": "2",
-      "prompt_summary": "Her sanat ürününün bir mektup gibi düşünülebilmesi",
-      "answer": "Bir resim, ezgi, yapı veya edebî eser de onu oluşturan kişinin duygu, düşünce ve bakışını başkalarına aktarabilir. Bu nedenle iletişim yalnız sözcüklerle gerçekleşmez; sanat eseri de üreticisinden alıcısına anlam taşıyan bir ileti hâline gelebilir. Ataç'ın benzetmesi, sanatın insanla insan arasında bağ kuran yönünü vurgular.",
+      "prompt_summary": "Nurullah Ataç'ın her sanat ürününü bir mektuba benzeten sözünün iletişim bağlamında yorumlanması",
+      "answer": "Nurullah Ataç'ın benzetmesi, sanatın özünde bir iletişim eylemi olduğunu vurgular. Tıpkı mektubun bir göndericiden bir alıcıya duygu ve düşünce iletmesi gibi; bir resim renk ve çizgilerle, bir ezgi seslerle, bir mimari yapı taş ve formlarla, bir edebî eser de kelimelerle üreticisinden alıcısına bir ileti taşır.",
+      "source_locator": "basılı s.36 / PDF s.37",
+      "answer_sections": {
+        "İletişim ögeleriyle ilişkilendirme": "Sanatçı 'gönderici' (kaynak), sanat eseri 'ileti' (mesaj), sanatsever veya toplum ise 'alıcı' konumundadır. Kullanılan mecra (tuval, nota, taş veya kâğıt) ise 'kanal' işlevini görür.",
+        "Sanatın mektup niteliği": "Mektup gibi sanat eseri de tek taraflı bir nesne değildir; bir başkasıyla temas kurma, anlaşılma, insanla insan arasında köprü atma ve duyguyu paylaşma arzusundan doğar."
+      },
+      "guidance": "Öğrencilerin iletişimin temel ögelerini (gönderici, alıcı, ileti, kanal, bağlam) hatırlayarak resim, müzik ve mimari gibi farklı sanat kollarının insanla nasıl konuştuğunu örneklemeleri sağlanmalıdır.",
       "evidence_quotes": [
-        "Her yazı bir mektuptur"
-      ],
-      "source_locator": "basılı s.36 / PDF s.37"
+        "Her yazı bir mektup olduğu gibi her resim, her ezgi, her yapı da birer mektuptur."
+      ]
     },
     {
       "question_id": "T1-P36-Q03",
       "entry_type": "question_answer",
       "printed_page": 36,
       "question_no": "3",
-      "prompt_summary": "Konuşur veya mektup yazar gibi serbest ilerleyen anlatımı değerlendirme",
-      "answer": "Bu anlatım biçimi metne doğallık, samimiyet ve konuşma havası kazandırabilir; yazarın düşünceler arasında serbestçe geçmesine imkân verir. Bununla birlikte konu geçişleri kontrol edilmezse metnin bütünlüğü zayıflayabilir. Bu nedenle böyle bir üslup etkili olabilir fakat düşünceler arasındaki bağın korunması gerekir.",
-      "guidance": "Katılma veya katılmama yönünde tek zorunlu cevap yoktur; gerekçenin anlatımın doğallığı ve bütünlüğüyle ilişkilendirilmesi önemlidir.",
-      "source_locator": "basılı s.36 / PDF s.37"
+      "prompt_summary": "Nurullah Ataç'ın konuşur ve mektup yazar gibi serbest ilerleyen anlatım tarzına katılma durumu ve gerekçelendirilmesi",
+      "answer": "Soru açık uçludur; öğrenci katılma veya katılmama yönündeki görüşünü tutarlı bir gerekçeyle savunabilir. Konuşur veya mektup yazar gibi serbest ilerleyen anlatım metne doğallık, akıcılık ve samimi bir sohbet havası kazandırırken; aşırı konu sapmaları metnin ana fikrinin dağılmasına ve düşünce disiplininin zayıflamasına yol açabilir.",
+      "source_locator": "basılı s.36 / PDF s.37",
+      "answer_sections": {
+        "Görüşe katılan yaklaşım (Olumlu değerlendirme)": "Bu tarz anlatım, yazar ile okur arasındaki mesafeyi sıfırlar; yazıyı kuruluktan ve ders verme edasından kurtarıp içten bir düşünce akışına dönüştürür. Deneme ve mektup türünün doğasına çok uygundur; zihnin çağrışımlarla özgürce dolaşmasını sağlar.",
+        "Görüşe katılmayan yaklaşım (Eleştirel değerlendirme)": "Düşüncelerin plansız ve başıboş aktarılması, konunun dağılmasına, metnin bütünlüğünün bozulmasına ve okuyucunun ana fikri yakalamakta zorlanmasına neden olabilir. Bilgilendirici veya öğretici metinlerde belirli bir mantık ve plan sırası aranmalıdır."
+      },
+      "guidance": "Soruda tek bir doğru cevap yoktur; öğrencinin 'katılıyorum' ya da 'katılmıyorum' tercihini anlatımın içtenliği, çağrışım zenginliği ya da metin bütünlüğü ve düşünce disiplini kavramlarıyla temellendirmesi esastır.",
+      "evidence_quotes": [
+        "Elimde değil: ben bir konuya bağlanamıyorum, konuşur gibi, mektup yazar gibi, ondan ona geçeyim diyorum."
+      ]
     },
     {
       "question_id": "T1-P37-Q01",
       "entry_type": "question_answer",
       "printed_page": 37,
       "question_no": "1",
-      "prompt_summary": "Âli'ye Mektuplar için okuma amacı belirleme",
-      "answer": "Okuma amacı; Mehmet Kaplan'ın Âli ile nasıl iletişim kurduğunu, mektupta hangi kişisel ve edebî konuları ele aldığını ve mektup türünün dil, yapı ve üslup özelliklerinin metinde nasıl göründüğünü belirlemek olabilir.",
-      "source_locator": "basılı s.37 / PDF s.38"
+      "prompt_summary": "Âli'ye Mektuplar metnini okuma amacını belirleme",
+      "answer": "Metni okuma amacı; Mehmet Kaplan'ın bir dostuna yazdığı mektup aracılığıyla onun iç dünyasını, edebiyat ve roman anlayışını (özellikle Dostoyevski ve Karamazof Kardeşler çözümlemesini) kavramak ve mektup türünün yapısal, dilsel ve işlevsel özelliklerini örnek metin üzerinden çözümlemektir.",
+      "source_locator": "basılı s.37 / PDF s.38",
+      "answer_sections": {
+        "Edebî ve türsel amaç": "Mektup türünün hitap, tarih, yer, serbest söyleyiş ve kapanış unsurlarını somut bir edebiyatçı metninde gözlemlemek.",
+        "Düşünsel ve içeriksel amaç": "Mehmet Kaplan'ın edebiyat araştırmacısı kimliğinin kişisel bir mektupta nasıl yansıdığını, Dostoyevski ve roman türü hakkındaki değerlendirmelerini ve genç bir araştırmacıya verdiği tavsiyeleri keşfetmek."
+      },
+      "guidance": "Okuma amacı, metnin hem edebî tür (mektup) hem de içerik (edebiyat eleştirisi ve kişisel düşünceler) boyutunu içermelidir."
     },
     {
       "question_id": "T1-P37-Q02",
       "entry_type": "question_answer",
       "printed_page": 37,
       "question_no": "2",
-      "prompt_summary": "Hitap ve görselden hareketle içerik ve tür tahmini",
-      "answer": "Doğrudan 'Âli' hitabıyla başlaması, tarih ve yer bilgisinin bulunması metnin belirli bir kişiye yazılmış mektup olduğunu düşündürür. Yazarın edebiyatçı kimliği de mektupta günlük hayatın yanında edebiyat, okuma ve yazma üzerine düşüncelerin yer alabileceğini tahmin ettirir.",
-      "guidance": "Bu soru okuma öncesi tahmindir; metni okumadan önce kurulabilecek makul ve gerekçeli farklı tahminler kabul edilebilir.",
-      "source_locator": "basılı s.37 / PDF s.38"
+      "prompt_summary": "Hitap bölümü ve görselden hareketle içerik ve türe ilişkin tahminlerde bulunma",
+      "answer": "Metnin '24 Haziran 940 İstanbul' tarih-yer kaydıyla ve doğrudan 'Âli,' hitabıyla başlaması, sağ tarafta yazarın daktilo veya çalışma masası başındaki portresinin bulunması metnin samimi bir kişiye yazılmış 'özel/edebî mektup' olduğunu gösterir. Yazarın edebiyatçı kimliği ve hitaptaki yakınlık; metinde hem günlük hayata ve sağlığa dair haberlerin hem de edebiyat, kitaplar ve yazma süreci üzerine derin değerlendirmelerin yer alacağını tahmin ettirir.",
+      "source_locator": "basılı s.37 / PDF s.38",
+      "answer_sections": {
+        "Tür tahmini": "Hitap cümlesi (\"Âli,\"), tarih/yer bilgisi ve kişisel sesleniş biçimi doğrudan mektup türüne işaret eder.",
+        "İçerik tahmini": "Yazarın çalışma ortamını yansıtan görsel ve akademisyen kimliği, mektupta yalnızca gündelik hal hatır sormanın değil, okunan kitaplar, çalışma hayatı ve edebî tahlillerin de bulunacağını düşündürür."
+      },
+      "guidance": "Bu soru okuma öncesi tahmin basamağıdır. Tahminlerin metindeki biçimsel ipuçlarına (tarih, hitap, yazar görseli) dayandırılması gerekir.",
+      "evidence_quotes": [
+        "24 Haziran 940 İstanbul",
+        "Âli,"
+      ]
     },
     {
       "question_id": "T1-P37-Q03",
       "entry_type": "performance_support",
       "printed_page": 37,
       "question_no": "3",
-      "prompt_summary": "Mektuba uygun okuma yöntem ve stratejisi seçme",
-      "answer": "Önce tarih, hitap, paragraf başları ve kapanış bölümü gözden geçirilerek metnin genel yapısı belirlenebilir. Ardından sessiz ve dikkatli okumayla günlük yaşam, duygu paylaşımı, edebiyat görüşleri ve tavsiyeler gibi konu değişimleri işaretlenebilir. Anlamı bilinmeyen kelimeler not edilip önemli cümleler ikinci okumada yeniden değerlendirilebilir.",
-      "source_locator": "basılı s.37 / PDF s.38"
+      "prompt_summary": "Mektup türüne ve içeriğine uygun okuma yöntem ve stratejisi belirleme",
+      "answer": "Metin için 'amaçlı, işaretleyerek ve iki aşamalı okuma stratejisi' uygulanmalıdır. İlk aşamada genel yapıyı, hitap ve duygu akışını kavramak için genel bir sessiz okuma yapılır; ikinci aşamada ise yazarın edebiyat görüşleri, kitap tahlilleri ve tavsiyeleri satır altları çizilerek/not alınarak derinlemesine çözümlenir.",
+      "source_locator": "basılı s.37 / PDF s.38",
+      "answer_sections": {
+        "1. Aşama (Göz Gezdirerek / İlk Sessiz Okuma)": "Metnin tarih, yer, hitap, paragraflar ve imza gibi biçimsel ögelerine göz atılır; metnin genel konusu ve samimi havası kavranır.",
+        "2. Aşama (İşaretleyerek ve Not Alarak Okuma)": "İkinci okumada iki ayrı odakla işaretleme yapılır: Birincisi günlük hayat, Küllük kahvesi, aile ve yalnızlık duygusuna dair ifadeler; ikincisi ise Dostoyevski, Karamazof Kardeşler, Stendhal, 'mazi koridoru' kavramı ve yazma disiplinine dair tespitlerin altının çizilmesidir.",
+        "3. Aşama (Bilinmeyen Kelimeleri Fişleme)": "Metindeki döneme özgü eski ve terimsel sözcüklerin (tahfif, mütemadî, mamafih, mücerret, inkişaf vb.) bağlam içindeki anlamları sorgulanıp not edilir."
+      },
+      "guidance": "Öğrencilerin yalnızca düz bir okuma yapmayıp metnin çift katmanlı yapısını (günlük hayat haberleşmesi + edebiyat kuramı tahlili) ayrıştıracak bir not alma tekniği geliştirmeleri sağlanmalıdır."
     },
     {
       "question_id": "T1-P39-Q01",
       "entry_type": "question_answer",
       "printed_page": 39,
       "question_no": "1",
-      "prompt_summary": "Bağlamdan hareketle seçili kelimelerin anlamlarını belirleme",
-      "answer": "Mektuptaki söz varlığı aşağıdaki anlamlarla açıklanabilir:",
+      "prompt_summary": "Bağlamdan hareketle seçili altı kelimenin anlam tahminleri ve TDK karşılıkları",
+      "answer": "Metindeki altı çizili kelimeler bağlam özellikleri ve TDK Güncel Türkçe Sözlük anlamlarıyla şöyle açıklanır:",
       "source_locator": "basılı s.39 / PDF s.40",
       "answer_sections": {
-        "Umumiyetle": "Genellikle.",
-        "Mücerretlik": "Soyutluk.",
-        "Tahlil": "Çözümleme, inceleme.",
-        "Mamafih": "Bununla birlikte, yine de.",
-        "İdealizm": "Bağlamda ideal veya ülküsel değerlere ağırlık veren anlayış.",
-        "Vaka": "Olay."
-      }
+        "Umumiyetle": "Genellikle, çoğunlukla, genel olarak.",
+        "Mücerretlik": "Soyutluk; somut ve elle tutulur olmama durumu (bağlamda: roman kahramanlarının hislerinin canlı bir insandan kopuk, zihinsel ve kuramsal kalması).",
+        "Tahlil": "Çözümleme, tahlil etme, ruhsal veya yapısal inceleme (bağlamda: karakterlerin iç dünyalarının, duygularının ayrıntılı tahlili).",
+        "Mamafih": "Bununla birlikte, durum böyleyken, yine de, ne var ki.",
+        "İdealizm": "Ülkücülük; düşüncede veya sanatta gerçeği ideal olan doğrultusunda algılama ve yüceltme anlayışı.",
+        "Vaka": "Olay, olgu, meydana gelen hadise."
+      },
+      "guidance": "Kelimelerin yalnızca sözlükteki ilk genel anlamları değil, romancılık ve edebiyat eleştirisi bağlamında taşıdığı anlam nüansları üzerinde durulmalıdır.",
+      "evidence_quotes": [
+        "Umumiyetle",
+        "mücerretlik",
+        "tahlil",
+        "Mamafih",
+        "idealizm",
+        "vaka"
+      ]
     },
     {
       "question_id": "T1-P39-Q02",
       "entry_type": "question_answer",
       "printed_page": 39,
       "question_no": "2",
-      "prompt_summary": "Seçili kelimelere bağlama uygun güncel karşılık önerme",
-      "answer": "Umumiyetle yerine 'genellikle', mücerretlik yerine 'soyutluk', tahlil yerine 'çözümleme', mamafih yerine 'bununla birlikte' veya 'yine de', idealizm yerine bağlama göre 'ideal değerlere yöneliş', vaka yerine 'olay' kullanılabilir. Bu karşılıklar metni günümüz okuru için daha kolay anlaşılır hâle getirir.",
-      "source_locator": "basılı s.39 / PDF s.40"
+      "prompt_summary": "Altı çizili kelimelerin yerine bağlama uygun güncel Türkçe karşılık önerileri",
+      "answer": "Altı çizili kelimelerin yerine metnin anlamına ve akışına zarar vermeden şu güncel karşılıklar kullanılabilir: umumiyetle yerine 'genellikle', mücerretlik yerine 'soyutluk', tahlil yerine 'çözümleme', mamafih yerine 'bununla birlikte' veya 'yine de', idealizm yerine 'ülkücülük', vaka yerine 'olay'.",
+      "source_locator": "basılı s.39 / PDF s.40",
+      "answer_sections": {
+        "Umumiyetle": "Genellikle / Çoğunlukla",
+        "Mücerretlik": "Soyutluk",
+        "Tahlil": "Çözümleme / İnceleme",
+        "Mamafih": "Bununla birlikte / Yine de",
+        "İdealizm": "Ülkücülük / İdeal değerlere bağlılık",
+        "Vaka": "Olay"
+      },
+      "explanation": "Bu güncel sözcükler metne yerleştirildiğinde cümlenin anlamı bozulmaz; ancak dönemin edebî ve üslupsal havasını hissettirmesi bakımından yazarın orijinal tercihlerinin değeri de göz ardı edilmemelidir."
     },
     {
       "question_id": "T1-P39-Q03",
       "entry_type": "question_answer",
       "printed_page": 39,
       "question_no": "3",
-      "prompt_summary": "Mektuptaki başka eski veya bilinmeyen kelimeleri belirleme",
-      "answer": "Örnek olarak 'müsamahakâr' hoşgörülü, 'malumat' bilgi, 'sathî' yüzeysel, 'inkişaf' gelişme, 'mazi' geçmiş, 'takbih' kınama anlamındadır. Öğrencinin seçtiği kelimeler farklı olabilir; önemli olan anlamın sözlükten doğrulanıp metindeki kullanımla ilişkilendirilmesidir.",
-      "guidance": "Tek bir zorunlu kelime listesi yoktur; öğrencinin gerçekten bilmediği kelimeler üzerinden çalışılabilir.",
-      "source_locator": "basılı s.39 / PDF s.40"
+      "prompt_summary": "Metindeki diğer dönemsel ve yabancı kökenli söz varlığını belirleme ve açıklama",
+      "answer": "Mektup metninde geçen diğer eski ve dönemsel sözcükler bağlam içindeki anlamlarıyla şöyle açıklanabilir:",
+      "source_locator": "basılı s.39 / PDF s.40",
+      "answer_sections": {
+        "Tahfif etmek": "Hafifletmek, yükünü veya azabını azaltmak (bağlamda: 'vicdan azabımı tahfif edişini').",
+        "Mütemadî": "Sürekli, aralıksız, kesintisiz (bağlamda: 'Yalnızlığım mütemadî bir boşluk hâlinde').",
+        "Müsamahakâr": "Hoşgörülü, anlayışlı, toleranslı.",
+        "Takbih": "Kınama, ayıplama, beğenmeme.",
+        "İnkişaf": "Gelişme, açılma, serpilme (bağlamda: kabiliyetlerin inkişaf etmesi).",
+        "Sathî": "Yüzeysel, derine inmeyen (bağlamda: 'sathî bir samimiyet', 'vaka sathı').",
+        "Hâlet-i ruhiye": "Ruh hâli, psikolojik durum.",
+        "Kani": "İnanmış, kanaat getirmiş ('güzel şeyler verebileceğine kaniim')."
+      },
+      "guidance": "Öğrencilerin bu sözcükleri metnin cümle bağlamı içindeki kullanımından hareketle yorumlamaları ve sözlükten teyit etmeleri sağlanmalıdır."
     }
   ]
 }
