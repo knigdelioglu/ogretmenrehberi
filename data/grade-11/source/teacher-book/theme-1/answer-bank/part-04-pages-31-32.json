@@ -25,37 +25,57 @@
       "question_id": "T1-P32-Q03",
       "entry_type": "question_answer",
       "printed_page": 32,
-      "prompt_summary": "Yazıcı metninin yapı unsurları",
-      "answer": "Metnin dramatik yapı unsurları aşağıdaki başlıklarda toplanabilir:",
+      "prompt_summary": "Çalışma kâğıdı: Yazıcı metninin kişiler, mekân, zaman, çatışma ve dramatik örgü bakımından yapı unsurları",
+      "answer": "Yazıcı metninin yapı unsurları kişiler, dramatik mekân, zaman, çatışma ve olayların sahnedeki ilerleyişini oluşturan dramatik örgü başlıklarında incelenebilir.",
       "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
       "answer_sections": {
-        "Kişiler": "Karagöz, Hacivat ve yazıcı dükkânına gelen farklı tipler.",
-        "Mekân": "İstanbul çevresi; olayların önemli bölümü yazıcı dükkânında geçer.",
-        "Zaman": "Kesin tarih verilmez; geleneksel İstanbul hayatını yansıtan kısa bir zaman dilimidir.",
-        "Çatışma": "Karagöz'ün okuma-yazma bilmemesi ve ağır sözleri yanlış anlamasıyla doğan iletişim çatışmaları.",
+        "Kişiler": "Karagöz, Hacivat ve yazıcılık işi sırasında Karagöz'le karşılaşan farklı sosyal çevreleri temsil eden tiplerdir. Bu kişiler arasındaki eğitim, kültür ve konuşma biçimi farklılıkları oyunun mizahını ve çatışmasını besler.",
+        "Yer (mekân)": {
+          "Dramatik mekân": "Olayların önemli bölümü Karagöz'ün yazıcılık yaptığı dükkân/yazıhane çevresinde geçer. Bu mekân farklı kişilerin sırayla Karagöz'le karşılaşmasını sağlar.",
+          "Sahneleme ortamı": "Karagöz bir gölge oyunu olduğu için gösterim hayal perdesinde gerçekleştirilir; hayal perdesi oyunun sahneleme ortamıdır, olayın kurmaca içindeki asıl mekânı değildir."
+        },
+        "Zaman": "Kesin bir tarih verilmez. Olaylar, yazıcılık işinin sürdüğü kısa bir zaman diliminde ve geleneksel şehir hayatını çağrıştıran belirsiz bir zamanda geçer. Metnin tarihsel ve dilsel özellikleri Osmanlı dönemi şehir hayatını düşündürse de soruda asıl belirlenebilen unsur kesin tarihin verilmemiş olmasıdır.",
+        "Çatışma": "Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yapmaya girişmesi temel durum çatışmasını oluşturur. Buna Karagöz ile Hacivat arasındaki eğitim ve dil farkı, Karagöz'ün ağır veya alışılmadık sözleri ses benzerliğiyle başka anlamlara çekmesi ve müşterilerle yaşanan iletişim anlaşmazlıkları eklenir.",
         "Dramatik örgü": [
-          "Karagöz'ün iş araması ve dükkân açması.",
-          "Müşterilerle yanlış anlamaların ortaya çıkması.",
-          "Karagöz'ün işten vazgeçmesi.",
-          "Hacivat'la çatışmanın sürmesi."
+          "Hacivat, iş arayan Karagöz'e yazıcılık/kâtiplik yapma fikrini verir.",
+          "Karagöz okuma-yazma bilmemesine rağmen para kazanmak amacıyla yazıcılık yapmaya başlar.",
+          "Yazı yazdırmak isteyen kişiler Karagöz'e gelir.",
+          "Karagöz söylenenleri yanlış anlar; yazma işini gerçekten yapamadığı için komik durumlar ve sözlü çatışmalar ortaya çıkar.",
+          "Karagöz'ün yazıcılık konusundaki yetersizliği giderek görünür hâle gelir; yaşanan karışıklıklar oyunun çatışmasını doruğa taşır ve bölüm sonuca bağlanır."
         ]
-      }
+      },
+      "question_no": "3"
     },
     {
       "question_id": "T1-P32-Q04",
       "entry_type": "question_answer",
       "printed_page": 32,
-      "prompt_summary": "Çatışmaların kaynağı, tarafları ve dramatik ögelerin etkisi",
-      "answer": "Çatışmaların temel kaynağı Karagöz'ün eğitim ve dil bakımından diğer tiplerden farklı olması, sözcükleri yanlış anlaması ve bilmediği bir işi yapmaya kalkışmasıdır. Taraflar çoğunlukla Karagöz ile Hacivat veya dükkâna gelen müşterilerdir. Yazıcı dükkânı farklı tipleri aynı yerde buluşturur; asıl belirleyici unsur kişilerin dil, eğitim ve karakter farklılıklarıdır.",
-      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme"
+      "prompt_summary": "Yazıcı metnindeki çatışmaların kaynağı, tarafları ve kişiler, mekân, zaman ögelerinin çatışmaya etkisi",
+      "answer": "Yazıcı'daki çatışmaların temelinde Karagöz'ün yapmaya giriştiği işle sahip olduğu bilgi arasındaki uyumsuzluk ve kişiler arasındaki dil/eğitim farklılıkları vardır. Yanlış anlamalar bu temel karşıtlığı sürekli görünür hâle getirir.",
+      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
+      "question_no": "4",
+      "answer_sections": {
+        "Kaynağı": "Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yapmaya kalkışması; Hacivat'ın ve diğer tiplerin kullandığı sözleri ses benzerliği üzerinden yanlış anlaması; eğitim, kültür ve söz varlığı farklılıklarının iletişimi aksatmasıdır.",
+        "Tarafları": "Başlıca Karagöz–Hacivat ve Karagöz–yazı yazdırmak için gelen kişiler arasında ortaya çıkar. Daha genel düzeyde halk söyleyişi ile daha eğitimli çevrelerin ağır dili karşı karşıya gelir.",
+        "Kişilerin etkisi": "Karagöz'ün daha az eğitimli, halk söyleyişine yakın, hazırcevap ve doğrudan tavrı ile Hacivat'ın daha eğitimli, ağır ve zaman zaman bilgiççe konuşması çatışmanın ana dinamiğidir. Diğer tiplerin farklı sosyal ve dilsel özellikleri de bu karşıtlığı çeşitlendirir.",
+        "Mekânın etkisi": "Yazıcı dükkânı/yazıhane, farklı sosyal çevrelerden kişileri aynı noktada buluşturan işlevsel bir dramatik mekândır. Böylece dil, eğitim ve beklenti farklılıkları doğrudan karşılaşır ve çatışmaya dönüşür.",
+        "Zamanın etkisi": "Kesin tarih belirtilmez; ancak yazıcılık, mektup/arzuhal yazdırma ihtiyacı ve metnin dil özellikleri geleneksel şehir hayatını çağrıştıran tarihsel bir zemin oluşturur. Bu toplumsal bağlam, okuryazarlık ve eğitim farklılıklarının çatışmada işlev kazanmasını sağlar."
+      },
+      "guidance": "“Cahil–aydın” gibi keskin etiketler yerine çatışmayı metinde gözlenebilen eğitim, söz varlığı, iletişim ve davranış farklılıkları üzerinden açıklamak daha isabetlidir."
     },
     {
       "question_id": "T1-P32-Q05",
       "entry_type": "question_answer",
       "printed_page": 32,
-      "prompt_summary": "Dil özelliklerini en çok etkileyen yapı unsurları",
-      "answer": "En etkili yapı unsuru kişilerdir. Her tipin eğitim düzeyi, sosyal konumu, mesleği ve geldiği çevre kullandığı dili doğrudan belirler. Hacivat ve Çelebi daha ağır bir dille, Karagöz halk diliyle, Laz ise bölgesel söyleyiş özellikleriyle konuşur. Mekân da bu farklı kişileri bir araya getirerek dil çeşitliliğini görünür kılar.",
-      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme"
+      "prompt_summary": "Kişilerin dil özelliklerinin oluşmasında en etkili yapı unsurlarını gerekçelendirme",
+      "answer": "En etkili yapı unsuru kişilerdir; mekân ise bu dil farklılıklarını görünür hâle getiren güçlü bir destekleyici unsurdur. Tiplerin eğitim düzeyi, sosyal çevresi, mesleği ve kültürel birikimi kullandıkları söz varlığını ve söyleyiş biçimini belirler.",
+      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
+      "question_no": "5",
+      "answer_sections": {
+        "Kişiler (temel unsur)": "Geleneksel Karagöz oyununda tiplerin dili onların sosyal çevrelerini, eğitim düzeylerini ve kültürel özelliklerini ayırt etmenin başlıca yollarından biridir. Karagöz daha yalın ve halk söyleyişine yakın bir dil kullanırken Hacivat daha ağır, eski kelime ve tamlamalara yer veren bir söyleyiş kullanır. Diğer tiplerin bölgesel veya toplumsal konuşma özellikleri de dil çeşitliliğini artırır.",
+        "Mekân (destekleyici unsur)": "Yazıcı dükkânı farklı çevrelerden kişilerin aynı yerde karşılaşmasını sağlar. Böylece farklı söz varlıkları, söyleyiş biçimleri ve iletişim alışkanlıkları yan yana gelir; yanlış anlamalar ve dil çatışması dramatik bir işlev kazanır."
+      },
+      "guidance": "Soruda tek bir zorunlu cevap yoktur. Kişiler en güçlü gerekçeye sahip yapı unsurudur; mekânın etkisi de farklı tipleri karşılaştırmaya olanak sağlaması bakımından savunulabilir."
     }
   ]
 }
