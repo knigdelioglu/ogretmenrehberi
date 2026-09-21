@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilledTonalButton
@@ -35,8 +34,8 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 
 /**
- * Phase 3 reference teacher player: working command/persistence flow.
- * The seven purpose-designed layouts and final adaptive lesson UI belong to Phase 4.
+ * Adaptive teacher lesson player for the seven canonical layout kinds.
+ * Presentation mode is rendered by a separate student-safe surface.
  */
 @Composable
 internal fun SessionLessonScreen(
@@ -261,10 +260,12 @@ internal fun SessionLessonScreen(
                 FilledTonalButton(
                     onClick = { dispatch(LessonCommand.RevealNext) },
                     modifier = Modifier.weight(1f)
+                        .heightIn(min = LessonTarget.minimum)
                 ) { Text("Aç / ilerle") }
                 OutlinedButton(
                     onClick = { dispatch(LessonCommand.Next) },
-                    modifier = Modifier.weight(1f),
+                    modifier = Modifier.weight(1f)
+                        .heightIn(min = LessonTarget.minimum),
                     enabled = ordinal < state.order.lastIndex
                 ) { Text("Sonraki") }
             }
