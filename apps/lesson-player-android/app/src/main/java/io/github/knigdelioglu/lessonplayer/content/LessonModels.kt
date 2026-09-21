@@ -111,8 +111,12 @@ data class LessonBundle(
     val contentSha256: String,
     val workflowSha256: String,
     val lessons: List<LessonData>,
-    val workflow: TeacherWorkflow
+    val workflow: TeacherWorkflow,
+    val lessonSha256: Map<String, String>
 ) {
     val byId: Map<String, LessonData> = lessons.associateBy { it.lessonId }
     val byTheme: Map<String, List<LessonData>> = lessons.groupBy { it.themeId }
+
+    /** Per-lesson identity: an unrelated lesson update must not invalidate this lesson's edits. */
+    fun lessonDigest(lessonId: String): String = lessonSha256.getValue(lessonId)
 }

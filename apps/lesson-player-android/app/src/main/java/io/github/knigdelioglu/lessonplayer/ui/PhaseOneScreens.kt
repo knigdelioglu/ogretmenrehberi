@@ -20,6 +20,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.content.LessonData
+import io.github.knigdelioglu.lessonplayer.player.LessonCommand
+import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -28,12 +30,15 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 internal fun PhaseOneScreen(
     screen: AppScreen,
     bundle: LessonBundle,
-    selectedLessonId: String?,
-    selectLesson: (String) -> Unit
+    session: LessonSession,
+    selectLesson: (String) -> Unit,
+    navigateToCurrent: () -> Unit,
+    dispatch: (LessonCommand) -> Unit
 ) {
     when (screen) {
-        AppScreen.LIBRARY -> LibraryScreen(bundle, selectLesson)
-        AppScreen.LESSON -> LessonScreen(bundle.byId[selectedLessonId] ?: bundle.lessons.first())
+        AppScreen.LIBRARY -> LibraryScreen(bundle, session, selectLesson, navigateToCurrent)
+        AppScreen.LESSON -> SessionLessonScreen(bundle.byId.getValue(session.lessonId),
+            session, dispatch)
         AppScreen.GUIDE -> GuideScreen(bundle)
         AppScreen.SETTINGS -> SettingsScreen(bundle)
     }
@@ -47,7 +52,7 @@ private fun PhaseTag() {
         shape = RoundedCornerShape(LessonShape.chip)
     ) {
         Text(
-            "FAZ 2 · ÇEVRİMDIŞI İÇERİK",
+            "FAZ 3 · DERS MOTORU",
             modifier = Modifier.padding(horizontal = 14.dp, vertical = 9.dp),
             style = MaterialTheme.typography.labelMedium
         )
@@ -80,7 +85,8 @@ private fun SectionCard(
 }
 
 @Composable
-internal fun LibraryScreen(bundle: LessonBundle, selectLesson: (String) -> Unit) {
+internal fun LibraryScreen(bundle: LessonBundle, session: LessonSession,
+    selectLesson: (String) -> Unit, navigateToCurrent: () -> Unit) {
     LazyColumn(
         modifier = Modifier.fillMaxWidth(),
         contentPadding = PaddingValues(LessonSpacing.large),
@@ -96,6 +102,19 @@ internal fun LibraryScreen(bundle: LessonBundle, selectLesson: (String) -> Unit)
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
+        }
+        item {
+            SectionCard(
+                eyebrow = "KALDIĞIN YER",
+                title = bundle.byId.getValue(session.lessonId).title,
+                description = "Adım ${session.order.indexOf(session.stepId) + 1} /${session.order.size}",
+                action = {
+                    Button(onClick = navigateToCurrent,
+                        modifier = Modifier.heightIn(min = LessonTarget.minimum)) {
+                        Text("Derse devam et")
+                    }
+                }
+            )
         }
         bundle.workflow.themes.forEach { theme ->
             item {
@@ -115,33 +134,6 @@ internal fun LibraryScreen(bundle: LessonBundle, selectLesson: (String) -> Unit)
                     }
                 )
             }
-        }
-    }
-}
-
-@Composable
-internal fun LessonScreen(lesson: LessonData) {
-    LazyColumn(
-        modifier = Modifier.fillMaxWidth(),
-        contentPadding = PaddingValues(LessonSpacing.large),
-        verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
-    ) {
-        item {
-            PhaseTag()
-            Text(lesson.title, modifier = Modifier.padding(top = LessonSpacing.medium),
-                style = MaterialTheme.typography.headlineMedium)
-            Text("Basılı s. ${lesson.printedPageRange} · ${lesson.steps.size} adım",
-                style = MaterialTheme.typography.bodyLarge)
-            Text("Salt okunur kaynak önizlemesi. Cevap açma ve ders motoru Faz 3–4'te gelecek.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant)
-        }
-        items(lesson.steps, key = { it.id }) { step ->
-            SectionCard(
-                eyebrow = "BASILI s. ${step.source.printedPageRange} · ${step.layout.wire}",
-                title = step.displayPrompt,
-                description = "${step.source.bookHeading} · ${step.source.taskType}"
-            )
         }
     }
 }
