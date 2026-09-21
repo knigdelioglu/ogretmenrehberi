@@ -22,6 +22,7 @@ import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -33,6 +34,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import io.github.knigdelioglu.lessonplayer.player.LessonCommand
+import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
+import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
 import io.github.knigdelioglu.lessonplayer.R
 import io.github.knigdelioglu.lessonplayer.content.ContentRepository
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
@@ -46,13 +52,17 @@ fun LessonPlayerApp() {
         var bundle by remember { mutableStateOf<LessonBundle?>(null) }
         var loadError by remember { mutableStateOf<String?>(null) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
-        var selectedLessonId by rememberSaveable { mutableStateOf<String?>(null) }
+        val sessionViewModel: LessonSessionViewModel = viewModel()
+        val sessionUi by sessionViewModel.state.collectAsState()
         LaunchedEffect(appContext) {
             try {
                 bundle = ContentRepository(appContext).load()
             } catch (error: Exception) {
                 loadError = error.message ?: error::class.simpleName ?: "Bilinmeyen hata"
             }
+        }
+        LaunchedEffect(bundle?.contentSha256) {
+            bundle?.let(sessionViewModel::initialize)
         }
         BackHandler(enabled = currentScreen != AppScreen.LIBRARY) {
             currentScreen = backDestination(currentScreen)
@@ -65,15 +75,30 @@ fun LessonPlayerApp() {
             }
             bundle == null -> Box(Modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center) { Text("Dersler doğrulanıyor…") }
-            else -> LessonPlayerShell(
+            sessionUi is LessonSessionUiState.Error ->
+                Box(Modifier.fillMaxSize().padding(LessonSpacing.large),
+                    contentAlignment = Alignment.Center) {
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)) {
+                        Text((sessionUi as LessonSessionUiState.Error).message,
+                            color = MaterialTheme.colorScheme.error)
+                        androidx.compose.material3.Button(onClick = {
+                            bundle?.let(sessionViewModel::initialize)
+                        }) { Text("Kaydı yeniden yükle") }
+                    }
+                }
+            sessionUi is LessonSessionUiState.Ready -> LessonPlayerShell(
                 currentScreen = currentScreen, bundle = bundle!!,
-                selectedLessonId = selectedLessonId,
+                session = (sessionUi as LessonSessionUiState.Ready).session,
                 navigate = { currentScreen = it },
                 selectLesson = {
-                    selectedLessonId = it
+                    sessionViewModel.openLesson(it)
                     currentScreen = AppScreen.LESSON
-                }
+                },
+                dispatch = sessionViewModel::dispatch
             )
+            else -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                Text("Ders durumu yükleniyor…")
+            }
         }
     }
 }
@@ -82,9 +107,10 @@ fun LessonPlayerApp() {
 internal fun LessonPlayerShell(
     currentScreen: AppScreen,
     bundle: LessonBundle,
-    selectedLessonId: String?,
+    session: LessonSession,
     navigate: (AppScreen) -> Unit,
-    selectLesson: (String) -> Unit
+    selectLesson: (String) -> Unit,
+    dispatch: (LessonCommand) -> Unit
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val wide = maxWidth >= 840.dp
@@ -143,7 +169,8 @@ internal fun LessonPlayerShell(
                     }
                 }
                 Box(modifier = Modifier.weight(1f).fillMaxSize()) {
-                    PhaseOneScreen(currentScreen, bundle, selectedLessonId, selectLesson)
+                    PhaseOneScreen(currentScreen, bundle, session, selectLesson,
+                        { navigate(AppScreen.LESSON) }, dispatch)
                 }
             }
         }
