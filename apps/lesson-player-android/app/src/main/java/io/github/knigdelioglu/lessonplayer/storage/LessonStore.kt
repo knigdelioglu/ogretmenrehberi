@@ -95,19 +95,19 @@ class LessonStore(private val database: LessonDatabase) {
         database.withTransaction {
             require(snapshot.progress.map { it.lessonId }.distinct().size ==
                 snapshot.progress.size) { "Yedekte yinelenen ders kaydı" }
-            require(snapshot.marks.map { "\${it.academicYear}:\${it.track}:\${it.itemId}" }
+            require(snapshot.marks.map { "${it.academicYear}:${it.track}:${it.itemId}" }
                 .distinct().size == snapshot.marks.size) {
                 "Yedekte yinelenen öğretmen işareti"
             }
             val rows = snapshot.progress.map { backup ->
                 val lesson = bundle.byId[backup.lessonId]
-                    ?: error("Yedekte bilinmeyen ders: \${backup.lessonId}")
+                    ?: error("Yedekte bilinmeyen ders: ${backup.lessonId}")
                 require(backup.contentDigest == bundle.lessonDigest(lesson.lessonId)) {
-                    "Ders içeriği imzası uyuşmuyor: \${lesson.lessonId}"
+                    "Ders içeriği imzası uyuşmuyor: ${lesson.lessonId}"
                 }
                 val order = readOrder(backup.stepOrderJson)
                 require(LessonEngine.validOrder(order, lesson)) {
-                    "Geçersiz ders sırası: \${lesson.lessonId}"
+                    "Geçersiz ders sırası: ${lesson.lessonId}"
                 }
                 val overrides = readOverrides(backup.overridesJson)
                 var restored = LessonEngine.initial(lesson, backup.contentDigest).copy(
@@ -129,7 +129,7 @@ class LessonStore(private val database: LessonDatabase) {
                 )
             }
             val marks = snapshot.marks.map {
-                require(it.academicYear.matches(Regex("\\\\d{4}-\\\\d{4}")))
+                require(it.academicYear.matches(Regex("\\d{4}-\\d{4}")))
                 require(it.track in setOf("workshop", "annual", "portfolio"))
                 require(it.itemId.isNotBlank())
                 TeacherMarkRow(it.academicYear, it.track, it.itemId, it.checked)
