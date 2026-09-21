@@ -2,6 +2,7 @@ package io.github.knigdelioglu.lessonplayer.storage
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertThrows
+import org.json.JSONObject
 import org.junit.Test
 
 class LessonBackupCodecTest {
@@ -68,10 +69,11 @@ class LessonBackupCodecTest {
         val raw = LessonBackupCodec.encode(
             snapshot, passphrase.copyOf(), contentSignature, workflowSignature
         )
-        val tampered = raw.replaceFirst(
-            Regex("(\"ciphertext\":\")([A-Za-z0-9+/])"),
-            "$1${if (Regex("\\2").matches("")) "A" else "B"}"
-        )
+        val envelope = JSONObject(raw)
+        val ciphertext = envelope.getString("ciphertext")
+        envelope.put("ciphertext", (if (ciphertext.first() == 'A') "B" else "A") +
+            ciphertext.drop(1))
+        val tampered = envelope.toString()
 
         assertThrows(IllegalArgumentException::class.java) {
             LessonBackupCodec.decode(
