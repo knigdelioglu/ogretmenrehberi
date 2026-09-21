@@ -56,6 +56,11 @@ function answerLabel(step: LessonStep) {
   return "Cevap";
 }
 
+function questionNumberLabel(questionNo: string) {
+  const label = questionNo.trim();
+  return /^\d/.test(label) ? `Soru ${label}` : label;
+}
+
 function AnswerToggleIcon({ active }: { active: boolean }) {
   if (active) {
     return (
@@ -224,7 +229,7 @@ export function StepView({
                 ) : (
                   <>
                     {answer.question_no ? (
-                      <div className="question-number">Soru {answer.question_no}</div>
+                      <div className="question-number">{questionNumberLabel(answer.question_no)}</div>
                     ) : null}
                     <h1>{step.display_prompt}</h1>
                     {!presentationMode ? (
