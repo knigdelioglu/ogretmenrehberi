@@ -111,9 +111,9 @@ class TeacherPlanViewModel(application: Application) : AndroidViewModel(applicat
                         marks = ready.marks.updated(
                             track,
                             if (checked) {
-                                ready.marksFor(track) + itemId
+                                ready.marks.marksFor(track) + itemId
                             } else {
-                                ready.marksFor(track) - itemId
+                                ready.marks.marksFor(track) - itemId
                             }
                         ),
                         warning = null
