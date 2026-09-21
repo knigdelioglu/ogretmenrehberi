@@ -8,10 +8,15 @@
       "question_id": "T1-P35-Q02",
       "entry_type": "question_answer",
       "printed_page": 35,
-      "prompt_summary": "Çatışmanın hangi dramatik ögeyle daha etkili verilebileceği",
-      "answer": "Kişiler üzerinden daha etkili verilebilir. Çünkü metindeki temel çatışma kişilerin eğitim, sosyal statü, karakter ve konuşma biçimi farklılıklarından doğar. Bu karşıtlıklar daha belirgin davranışlar ve tepkilerle güçlendirilirse çatışmanın nedeni seyirci için daha görünür hâle gelir.",
-      "guidance": "Mekân veya zaman cevabı da güçlü bir gerekçeyle savunulabilir; tek zorunlu seçenek yoktur.",
-      "source_locator": "basılı s.35 / PDF s.36 — Süreci Değerlendirebilme soru 2"
+      "prompt_summary": "Metindeki çatışmaların hangi dramatik öge (mekân, zaman, kişiler) üzerinden daha etkili verilebileceği",
+      "answer": "Bu soru açık uçludur. Metindeki çatışmayı güçlendirmek için en güçlü iki yaklaşım kişiler ve zaman ögeleridir. Kişiler ögesi mevcut karakter karşıtlığını derinleştirir; zaman baskısı ise sürtüşme, telaş ve gerilimi artırarak çatışmayı daha dinamik hâle getirebilir.",
+      "guidance": "Soru yorum sorusudur. Kişiler veya zaman dışında mekân da metne dayalı ve tutarlı bir gerekçeyle savunulabilir; önemli olan seçilen dramatik ögenin çatışmayı nasıl güçlendireceğini açıklamaktır.",
+      "source_locator": "basılı s.35 / PDF s.36 — Süreci Değerlendirebilme soru 2",
+      "question_no": "2",
+      "answer_sections": {
+        "Kişiler": "Karagöz ile Hacivat arasındaki eğitim, kültür ve kavrayış farkı çatışmanın ana kaynağıdır. Okuma yazma bilmeyen fakat hazırcevap Karagöz ile daha eğitimli ve kuralcı Hacivat'ın zıt karakter özellikleri, kişisel zaafları ve çatışan beklentileri daha ayrıntılı işlenseydi çatışma belirginleşebilirdi. Farklı toplumsal tabakalardan yan tiplerin —örneğin acelesi olan bir memurun veya derdini anlatmakta zorlanan bir köylünün— oyuna katılması da bu karşıtlığı zenginleştirebilirdi.",
+        "Zaman": "Oyuna bir “zaman baskısı” veya “gecikme telaşı” eklenebilirdi. Acil yazılması gereken bir arzuhal ya da mektup veya yetişmesi gereken resmî bir süre kurgulansaydı, zaman kısıtının doğurduğu telaş Karagöz ile Hacivat arasındaki sürtüşmeyi ve gerilimi daha dinamik kılabilirdi."
+      }
     }
   ]
 }
