@@ -164,13 +164,23 @@ object LessonEngine {
                 session.copy(presentationMode = command.enabled)
             is LessonCommand.ApplyOverride -> {
                 require(command.stepId in originalById)
-                validateOverride(command.stepId, command.patch)
-                session.copy(overrides = session.overrides +
-                    (command.stepId to command.patch),
+                val previous = session.overrides[command.stepId]
+                val patch = command.patch
+                val merged = StepOverride(
+                    displayPrompt = patch.displayPrompt ?: previous?.displayPrompt,
+                    layout = patch.layout ?: previous?.layout,
+                    density = patch.density ?: previous?.density,
+                    revealOrder = patch.revealOrder ?: previous?.revealOrder,
+                    content = if (patch.hasContentOverride) patch.content else previous?.content,
+                    hasContentOverride = patch.hasContentOverride ||
+                        (previous?.hasContentOverride == true)
+                )
+                validateOverride(command.stepId, merged)
+                session.copy(overrides = session.overrides + (command.stepId to merged),
                     revealed = if (command.stepId == session.stepId)
                         session.revealed.intersect(
                             effectiveStep(originalById.getValue(command.stepId),
-                                command.patch).revealOrder.toSet()
+                                merged).revealOrder.toSet()
                         ) else session.revealed)
             }
             is LessonCommand.ResetStep -> {

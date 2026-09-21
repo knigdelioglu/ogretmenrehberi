@@ -42,7 +42,7 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
                 try {
                     val preferred = preferences.lastLessonId.first()
                     val chosen = bundle.byId[preferred] ?: bundle.lessons.first()
-                    val saved = store.restore(chosen, bundle.contentSha256)
+                    val saved = store.restore(chosen, bundle.lessonDigest(chosen.lessonId))
                     val mode = preferences.presentationMode.first()
                     currentBundle = bundle
                     mutableState.value = LessonSessionUiState.Ready(
@@ -61,7 +61,7 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
                 val bundle = currentBundle ?: return@withLock
                 val lesson = bundle.byId[id] ?: return@withLock
                 try {
-                    val session = store.restore(lesson, bundle.contentSha256)
+                    val session = store.restore(lesson, bundle.lessonDigest(lesson.lessonId))
                         .copy(presentationMode = preferences.presentationMode.first())
                     // Prefer persisted selection only after a successful restore.
                     preferences.rememberLesson(id)

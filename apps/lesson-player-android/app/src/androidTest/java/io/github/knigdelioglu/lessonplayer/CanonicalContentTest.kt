@@ -30,6 +30,9 @@ class CanonicalContentTest {
         assertEquals(8, bundle.workflow.themes.sumOf { it.tasks.size })
         assertEquals(5, bundle.workflow.annualItems.size)
         assertEquals(64, bundle.contentSha256.length)
+        assertEquals(48, bundle.lessonSha256.size)
+        assertEquals(bundle.byId.keys, bundle.lessonSha256.keys)
+        assertTrue(bundle.lessonSha256.values.all { it.matches(Regex("[0-9a-f]{64}")) })
         bundle.lessons.forEach { lesson ->
             assertEquals(lesson.steps.size, lesson.steps.map { it.id }.distinct().size)
             assertTrue(lesson.steps.all { it.source.sourceStatus == "VERIFIED" })

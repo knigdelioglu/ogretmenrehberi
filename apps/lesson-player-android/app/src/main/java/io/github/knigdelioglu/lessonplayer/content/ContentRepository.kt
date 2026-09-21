@@ -48,11 +48,20 @@ class ContentRepository(private val context: Context) {
                     "TEMA_04" to themes.getInt("TEMA_04"))) { "Theme coverage mismatch" }
             val byLesson = manifest.getJSONArray("lessons")
             require(byLesson.length() == lessons.size) { "Manifest lesson count mismatch" }
-            lessons.forEachIndexed { index, lesson ->
-                val entry = byLesson.getJSONObject(index)
-                require(entry.getString("lessonId") == lesson.lessonId &&
-                    entry.getString("themeId") == lesson.themeId &&
-                    entry.getInt("steps") == lesson.steps.size) { "Manifest lesson mismatch" }
+            val lessonDigests = buildMap {
+                lessons.forEachIndexed { index, lesson ->
+                    val entry = byLesson.getJSONObject(index)
+                    require(entry.getString("lessonId") == lesson.lessonId &&
+                        entry.getString("themeId") == lesson.themeId &&
+                        entry.getInt("steps") == lesson.steps.size) { "Manifest lesson mismatch" }
+                    val digest = entry.getString("sha256")
+                    require(digest.matches(Regex("[0-9a-f]{64}"))) {
+                        "Invalid per-lesson digest: ${lesson.lessonId}"
+                    }
+                    require(put(lesson.lessonId, digest) == null) {
+                        "Duplicate per-lesson digest identity: ${lesson.lessonId}"
+                    }
+                }
             }
             require(workflow.themes.size == counts.getInt("themes") &&
                 workflow.themes.sumOf { it.tasks.size } == counts.getInt("teacherWorkshops") &&
@@ -60,7 +69,7 @@ class ContentRepository(private val context: Context) {
             require(workflow.themes.map { it.id }.toSet() == lessons.map { it.themeId }.toSet()) {
                 "Workflow/theme identity mismatch"
             }
-            return LessonBundle(contentHash, workflowHash, lessons, workflow)
+            return LessonBundle(contentHash, workflowHash, lessons, workflow, lessonDigests)
         }
 
         private fun parseLesson(value: JSONObject): LessonData {

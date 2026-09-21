@@ -102,6 +102,24 @@ class LessonEngineTest {
         assertTrue(state.overrides.isEmpty())
     }
 
+    @Test fun partialPresentationEditsMergeRatherThanDiscardEarlierFields() {
+        var state = LessonEngine.reduce(LessonEngine.initial(lesson, digest), lesson,
+            LessonCommand.GoToStep(second.id))
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.ApplyOverride(second.id,
+                StepOverride(displayPrompt = "Öğretmenin soru metni")))
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.ApplyOverride(second.id, StepOverride(density = "compact")))
+        val edited = LessonEngine.effectiveStep(second, state.overrides[second.id])
+        assertEquals("Öğretmenin soru metni", edited.displayPrompt)
+        assertEquals("compact", edited.density)
+        assertEquals(second.layout, edited.layout)
+        assertEquals(second.revealOrder, edited.revealOrder)
+        state = LessonEngine.reduce(state, lesson, LessonCommand.ResetStep(second.id))
+        assertEquals(second.displayPrompt,
+            LessonEngine.effectiveStep(second, state.overrides[second.id]).displayPrompt)
+    }
+
     @Test fun invalidPermutationAndRevealRejected() {
         assertFalse(LessonEngine.validOrder(listOf(first.id, first.id, second.id), lesson))
         assertThrows(IllegalArgumentException::class.java) {
