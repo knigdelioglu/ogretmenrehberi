@@ -8,9 +8,30 @@
       "question_id": "T1-P35-Q03",
       "entry_type": "question_answer",
       "printed_page": 35,
-      "prompt_summary": "Çatışmayı güçlendirebilecek başka dil unsurları",
-      "answer": "Çatışmalar ironi, alay, abartma, deyim ve atasözleri, çift anlamlı sözler, tekrarlar, farklı ağız ve şiveler, ses tonu ve vurgu gibi unsurlarla daha etkili hâle getirilebilir. Aynı sözün farklı anlamlarda kullanılması veya kişilerin birbirinin niyetini yanlış yorumlaması sözlü çatışmayı güçlendirir.",
-      "source_locator": "basılı s.35 / PDF s.36 — Süreci Değerlendirebilme soru 3"
+      "prompt_summary": "Yanlış anlama ve söz oyunları dışında çatışmayı güçlendirebilecek dil unsurları",
+      "answer": "Çatışmalar; ironi ve tezat, şive/ağız farklılıkları, deyim ve atasözlerinin mecaz-gerçek anlam karşıtlığı, mübalağa, tariz ve kinaye gibi dil unsurlarıyla daha etkili hâle getirilebilir. Bu unsurlar iletişim uyuşmazlığını görünür kılar, sözlü çatışmayı çeşitlendirir ve komedi temposunu yükseltir.",
+      "source_locator": "basılı s.35 / PDF s.36 — Süreci Değerlendirebilme soru 3",
+      "question_no": "3",
+      "answer_sections": {
+        "İroni ve tezat": [
+          "Karakterin söylediğiyle gerçekte olan arasındaki karşıtlık çatışmayı ve mizahı güçlendirebilir.",
+          "Örnek kurgu: Karagöz kendini çok bilgili gösterirken yazısını kendisinin bile okuyamadığını söyleyebilir; bu karşıtlık karakterler arasındaki söz düellosunu besler."
+        ],
+        "Şive ve ağız taklitleri": [
+          "Farklı yöresel söyleyişler ve söz varlığı, karakterlerin birbirini anlamasını zorlaştırarak iletişim çatışmasını artırabilir.",
+          "Örnek kurgu: Yazıhaneye farklı yöresel söyleyişe sahip bir tipin gelmesi ve Karagöz'ün söylenenleri başka anlama çekmesi yeni bir yanlış anlama zinciri oluşturabilir."
+        ],
+        "Deyim ve atasözlerinde mecaz-gerçek anlam karşıtlığı": [
+          "Kalıplaşmış mecazlı ifadelerin gerçek anlamıyla yorumlanması, karakterler arasındaki kavrayış farkını belirginleştirebilir.",
+          "Örnek kurgu: Hacivat'ın “işe dört elle sarılmak” sözünü Karagöz'ün “Bende iki el var; öteki iki eli nereden bulayım?” biçiminde anlaması."
+        ],
+        "Mübalağa (abartma)": [
+          "Açlık, şaşkınlık veya öfkenin olağanüstü boyutlarda anlatılması hem komik etkiyi hem de çatışmanın temposunu artırabilir.",
+          "Örnek kurgu: Karagöz'ün açlığını “Karnımın gurultusu Üsküdar'dan duyuldu.” gibi ölçüsüz bir ifadeyle anlatması."
+        ],
+        "Tariz ve kinaye": "Karakterlerin birbirini doğrudan suçlamak yerine üstü kapalı biçimde iğnelemesi veya sözün görünen anlamı ile asıl kastı arasında fark oluşturması, diyalogu sıradan bir yanlış anlamadan daha ince bir söz düellosuna dönüştürebilir."
+      },
+      "explanation": "Buradaki örnekler metinden alınmış alıntılar değil, sorunun “başka hangi dil unsurlarıyla” ifadesine yönelik olası uygulama örnekleridir."
     }
   ]
 }
