@@ -93,7 +93,7 @@ internal fun LessonOutlinePane(
                     val selected = stepId == session.stepId
                     Surface(
                         modifier = Modifier.fillMaxWidth(),
-                        shape = RoundedCornerShape(LessonShape.smallCard),
+                        shape = RoundedCornerShape(16.dp),
                         color = if (selected) {
                             MaterialTheme.colorScheme.primaryContainer
                         } else {
