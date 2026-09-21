@@ -152,14 +152,14 @@ internal fun LessonOutlinePane(
 }
 
 @Composable
-private fun PhaseTag() {
+private fun PhaseTag(label: String = "FAZ 4 · UYARLANABİLİR DERS YÜZEYİ") {
     Surface(
         color = MaterialTheme.colorScheme.primaryContainer,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
         shape = RoundedCornerShape(LessonShape.chip)
     ) {
         Text(
-            "FAZ 4 · UYARLANABİLİR DERS YÜZEYİ",
+            label,
             modifier = Modifier.padding(horizontal = 14.dp, vertical = 9.dp),
             style = MaterialTheme.typography.labelMedium
         )
@@ -290,7 +290,7 @@ internal fun GuideScreen(
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
     ) {
         item {
-            PhaseTag()
+            PhaseTag("FAZ 5 · ÖĞRETMEN REHBERİ")
             Text(
                 "Üç ayrı takip hattı",
                 modifier = Modifier.padding(top = LessonSpacing.medium),
