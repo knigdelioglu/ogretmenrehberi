@@ -1,9 +1,9 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
 import androidx.activity.compose.BackHandler
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -22,31 +22,70 @@ import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.R
+import io.github.knigdelioglu.lessonplayer.content.ContentRepository
+import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
 
 @Composable
 fun LessonPlayerApp() {
     LessonTheme {
+        val appContext = LocalContext.current.applicationContext
+        var bundle by remember { mutableStateOf<LessonBundle?>(null) }
+        var loadError by remember { mutableStateOf<String?>(null) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
+        var selectedLessonId by rememberSaveable { mutableStateOf<String?>(null) }
+        LaunchedEffect(appContext) {
+            try {
+                bundle = ContentRepository(appContext).load()
+            } catch (error: Exception) {
+                loadError = error.message ?: error::class.simpleName ?: "Bilinmeyen hata"
+            }
+        }
         BackHandler(enabled = currentScreen != AppScreen.LIBRARY) {
             currentScreen = backDestination(currentScreen)
         }
-        LessonPlayerShell(currentScreen = currentScreen, navigate = { currentScreen = it })
+        when {
+            loadError != null -> Box(Modifier.fillMaxSize().padding(LessonSpacing.large),
+                contentAlignment = Alignment.Center) {
+                Text("Ders paketi doğrulanamadı: $loadError",
+                    color = MaterialTheme.colorScheme.error)
+            }
+            bundle == null -> Box(Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center) { Text("Dersler doğrulanıyor…") }
+            else -> LessonPlayerShell(
+                currentScreen = currentScreen, bundle = bundle!!,
+                selectedLessonId = selectedLessonId,
+                navigate = { currentScreen = it },
+                selectLesson = {
+                    selectedLessonId = it
+                    currentScreen = AppScreen.LESSON
+                }
+            )
+        }
     }
 }
 
 @Composable
-internal fun LessonPlayerShell(currentScreen: AppScreen, navigate: (AppScreen) -> Unit) {
+internal fun LessonPlayerShell(
+    currentScreen: AppScreen,
+    bundle: LessonBundle,
+    selectedLessonId: String?,
+    navigate: (AppScreen) -> Unit,
+    selectLesson: (String) -> Unit
+) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val wide = maxWidth >= 840.dp
         Scaffold(
@@ -104,7 +143,7 @@ internal fun LessonPlayerShell(currentScreen: AppScreen, navigate: (AppScreen) -
                     }
                 }
                 Box(modifier = Modifier.weight(1f).fillMaxSize()) {
-                    PhaseOneScreen(currentScreen, navigate)
+                    PhaseOneScreen(currentScreen, bundle, selectedLessonId, selectLesson)
                 }
             }
         }

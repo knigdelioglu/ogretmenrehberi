@@ -54,3 +54,14 @@ dependencies {
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.test.ext.junit)
 }
+
+ 
+// Generate assets from the *same validated data as web* before any APK build.
+val prepareLessonAssets = tasks.register<Exec>("prepareLessonAssets") {
+    workingDir = rootProject.projectDir
+    commandLine("node",
+        rootProject.projectDir.resolve("../lesson-player/scripts/package-android-data.mjs"))
+}
+tasks.named("preBuild") { dependsOn(prepareLessonAssets) }
+tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Assets") }
+    .configureEach { dependsOn(prepareLessonAssets) }

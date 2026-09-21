@@ -4,12 +4,20 @@ on:
   pull_request:
     paths:
       - "apps/lesson-player-android/**"
+      - "apps/lesson-player/scripts/**"
+      - "apps/lesson-player/src/teacher-workflow.json"
+      - "data/grade-11/presentation/**"
+      - "data/grade-11/source/teacher-book/**"
       - ".github/workflows/lesson-player-android.yml"
   push:
     branches:
       - main
     paths:
       - "apps/lesson-player-android/**"
+      - "apps/lesson-player/scripts/**"
+      - "apps/lesson-player/src/teacher-workflow.json"
+      - "data/grade-11/presentation/**"
+      - "data/grade-11/source/teacher-book/**"
       - ".github/workflows/lesson-player-android.yml"
   workflow_dispatch:
 
@@ -25,6 +33,9 @@ jobs:
         working-directory: apps/lesson-player-android
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -39,13 +50,18 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.13"
-      - name: Verify pinned wrapper, native API 36 contract and test compilation
+      - name: Validate canonical web data, package Android assets and compile
         run: |
           set -euo pipefail
           ./gradlew --version
           ./gradlew --no-daemon :app:assembleDebug :app:assembleDebugAndroidTest :app:testDebugUnitTest :app:lintDebug
           APK="app/build/outputs/apk/debug/app-debug.apk"
           test -s "$APK"
+          node ../lesson-player/scripts/package-android-data.mjs --check
+          node ../lesson-player/scripts/test-android-data.mjs
+          unzip -l "$APK" | grep -F 'assets/lesson-player/content-manifest.json'
+          unzip -l "$APK" | grep -F 'assets/lesson-player/lessons.json'
+          unzip -l "$APK" | grep -F 'assets/lesson-player/teacher-workflow.json'
           AAPT="$(find "${ANDROID_HOME}/build-tools" -name aapt -type f | sort -V | tail -1)"
           "$AAPT" dump badging "$APK" | grep -F "sdkVersion:'36'"
           "$AAPT" dump badging "$APK" | grep -F "targetSdkVersion:'36'"
@@ -63,6 +79,9 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -83,7 +102,10 @@ jobs:
           arch: x86_64
           profile: pixel_6
           disable-animations: true
-          script: apps/lesson-player-android/gradlew --project-dir apps/lesson-player-android --no-daemon :app:connectedDebugAndroidTest
+          script: |
+            adb shell svc wifi disable
+            adb shell svc data disable
+            apps/lesson-player-android/gradlew --project-dir apps/lesson-player-android --no-daemon :app:connectedDebugAndroidTest
       - uses: actions/upload-artifact@v4
         if: always()
         with:
