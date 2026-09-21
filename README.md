@@ -50,6 +50,18 @@ ders içi kullanım        iç bağlantılar        kontrollü reveal
 
 Böylece bir sorunun cevabı, öğretmen notu veya kazanım bağlantısı yalnızca **bir yerde** düzenlenir; ÖğretmenOS, EPUB ve Ders Modu aynı veriyi tüketir.
 
+## Zorunlu veri kaynağı kuralı
+
+**Eski veritabanı, eski öğretmen rehberi çıktısı veya eski EPUB verisi hiçbir yeni işte kaynak olarak kullanılmayacaktır.**
+
+Yeni üretim ve düzeltmelerde önce kanonik, sürüm kontrollü JSON verisi esas alınır:
+
+- Tema 1 için `data/grade-11/source/teacher-book/theme-1/source-index.json`
+- Tema 1 cevapları için `data/grade-11/source/teacher-book/theme-1/answer-bank.json` ve bağlı `answer-bank/*.json` parçaları
+- Lesson Player akışı için bunları kullanan `data/grade-11/presentation/theme-1/*-flow.json` dosyaları
+
+`apps/lesson-player/src/generated/lessons.json`, ÖğretmenOS projection bundle'ı ve EPUB dosyaları **üretilmiş çıktıdır; ana veritabanı değildir**. Gelecekte bir iş talebi geldiğinde bu kural varsayılan kabul edilir; eski bir veri/çıktı görülürse kullanılmaz ve kanonik kaynak yeniden doğrulanır.
+
 ## Ders Modu / Lesson Player
 
 11. sınıf **1. Tema — Bir Diyeceğim Var!** Lesson Player kapsamı basılı **s.12–83** arasında tamamlanmıştır.
