@@ -8,9 +8,41 @@
       "question_id": "T1-P33-Q07",
       "entry_type": "question_answer",
       "printed_page": 33,
-      "prompt_summary": "Karagöz ve Hacivat'ın dil ve üslup özellikleri",
-      "answer": "Karagöz'ün dili halk söyleyişine yakın, doğrudan ve mizahîdir; ağır kelimeleri ses benzerliği üzerinden başka anlamlara çeker. Hacivat ise daha eğitimli bir çevreyi yansıtan, eski kelime ve tamlamalara yer veren, daha resmî ve açıklayıcı bir üslup kullanır. Bu dil karşıtlığı iki kişinin eğitim farkını gösterdiği gibi oyunun temel güldürü kaynağını da oluşturur.",
-      "source_locator": "basılı s.33 / PDF s.34 — Çözümleyebilme soru 7"
+      "prompt_summary": "Karagöz ve Hacivat'ın eğitim durumu ve kişilik özellikleriyle dil ve üslupları arasındaki ilişki",
+      "answer": "Karagöz ile Hacivat'ın dil ve üslubu; eğitim düzeyleri, kültürel çevreleri ve kişilik özellikleri arasındaki karşıtlığı görünür kılar. Karagöz daha yalın ve halk söyleyişine yakın bir dil kullanırken Hacivat daha ağır, eski kelime ve tamlamalara dayanan bir söyleyiş kullanır; bu fark yanlış anlamaları ve güldürüyü besler.",
+      "source_locator": "basılı s.33 / PDF s.34 — Çözümleyebilme soru 7",
+      "question_no": "7",
+      "answer_sections": {
+        "Karagöz": {
+          "Eğitim durumu ve kişilik": "Daha az eğitimli, halk tabakasını temsil eden; saf görünüşünün yanında hazırcevap, pratik zekâlı, doğrudan ve dobra bir tip olarak belirginleşir.",
+          "Dil ve üslup": "Yalın ve dolaysız bir halk Türkçesi kullanır. Hacivat'ın ağır ve yabancı kökenli kelimelerini çoğu kez ses benzerliklerinden hareketle günlük hayattaki somut kelimelere dönüştürür. Nükteli, alaycı ve hazırcevap bir söyleyişi vardır.",
+          "İlişki ve metinden örnekler": [
+            "Hacivat'ın “hutûr etti” sözünü “tarçın mı gitti” biçiminde anlaması, ağır sözcükleri ses benzerliğiyle gündelik kelimelere dönüştürdüğünü gösterir.",
+            "“tesmiye ederler” ifadesini “ispiri dövmüşler mi” biçiminde yanlış anlaması, dil farklılığının güldürüye dönüşmesine örnektir.",
+            "“mâ-nahnü-fîhimize” sözünü “mahallede evimize” biçiminde algılaması, yabancı tamlamaları halk söyleyişi içinde yeniden kurduğunu gösterir.",
+            "Yahnikapan Sokağı sorusuna “Dolmayutan Sokağı” karşılığını vermesi, hazırcevaplığını ve söz oyununa dayalı mizahını ortaya koyar."
+          ]
+        },
+        "Hacivat": {
+          "Eğitim durumu ve kişilik": "Karagöz'e göre daha eğitimli ve kültürlü bir çevreyi temsil eder. Bilgili görünmeye önem veren, düzenli ve açıklayıcı konuşan; zaman zaman bilgiççe ve üstten bir tavır sergileyen bir tiptir.",
+          "Dil ve üslup": "Arapça ve Farsça kökenli kelime ve tamlamalara daha sık yer veren, dönemin eğitimli çevrelerini çağrıştıran ağır ve kurallı bir dil kullanır. Açıklayıcı, öğretici ve yer yer karşısındakini sınayan bir söyleyişe sahiptir.",
+          "İlişki ve metinden örnekler": [
+            "“sual”, “hutûr etti”, “tesmiye ederler” ve “mâ-nahnü-fîhimize” gibi ifadeleri tercih etmesi eğitim ve kültür farkını dil üzerinden görünür kılar.",
+            "Karagöz'e “Bilemezsin, hem de bulamazsın.” diyerek soru yöneltmesi, konuşmada kendisini daha bilgili konuma yerleştiren tavrını gösterir.",
+            "Karagöz'ün yanlış anlamalarını düzeltmeye çalışması, Hacivat'ın açıklayıcı ve kuralcı söyleyişini belirginleştirir."
+          ]
+        }
+      },
+      "guidance": "Çözümlemede karakterlere ilişkin hükümler doğrudan metindeki konuşma biçimleri ve tepkilerle ilişkilendirilmelidir. Hacivat'ın belirli bir eğitim kurumundan mezun olduğu veya Karagöz'ün eğitim geçmişinin ayrıntıları metinde açıkça verilmedikçe kesin biyografik bilgi gibi sunulmamalıdır.",
+      "evidence_quotes": [
+        "hutûr etti",
+        "tarçın mı gitti",
+        "tesmiye ederler",
+        "ispiri dövmüşler mi",
+        "Biz gelelim mâ-nahnü-fîhimize",
+        "Biz gelelim mahallede evimize",
+        "Bilemezsin, hem de bulamazsın."
+      ]
     },
     {
       "question_id": "T1-P34-Q08",
