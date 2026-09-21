@@ -1,12 +1,11 @@
 package io.github.knigdelioglu.lessonplayer
 
-import androidx.compose.ui.test.assertDoesNotExist
-import androidx.compose.ui.test.assertExists
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 
@@ -20,23 +19,26 @@ class AndroidShellTest {
                 hasText("Ders, elinin altında.")
             ).fetchSemanticsNodes().isNotEmpty()
         }
-        onNodeWithText("Ders, elinin altında.").assertExists()
-        onNodeWithText("48 ders · 914 adım · internet gerekmez").assertExists()
+        composeRule.onNodeWithText("Ders, elinin altında.").assertExists()
+        composeRule.onNodeWithText("48 ders · 914 adım · internet gerekmez").assertExists()
 
-        onAllNodesWithText("Adımları incele").onFirst().performClick()
+        composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(
                 hasText("Sınıf sunumuna geç")
             ).fetchSemanticsNodes().isNotEmpty()
         }
-        onNodeWithText("Sınıf sunumuna geç").performClick()
+        composeRule.onNodeWithText("Sınıf sunumuna geç").performClick()
 
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(
                 hasText("Sunumdan çık")
             ).fetchSemanticsNodes().isNotEmpty()
         }
-        onNodeWithText("Sunumdan çık").assertExists()
-        onNodeWithText("Öğretmen notu").assertDoesNotExist()
+        composeRule.onNodeWithText("Sunumdan çık").assertExists()
+        assertTrue(
+            composeRule.onAllNodesWithText("Öğretmen notu")
+                .fetchSemanticsNodes().isEmpty()
+        )
     }
 }
