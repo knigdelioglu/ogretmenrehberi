@@ -1,6 +1,9 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
+import android.net.Uri
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -38,6 +41,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import io.github.knigdelioglu.lessonplayer.R
 import io.github.knigdelioglu.lessonplayer.content.ContentRepository
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
+import io.github.knigdelioglu.lessonplayer.player.BackupUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
@@ -60,6 +64,19 @@ fun LessonPlayerApp() {
         val sessionUi by sessionViewModel.state.collectAsState()
         val teacherPlanUi by teacherPlanViewModel.state.collectAsState()
         val readySession = sessionUi as? LessonSessionUiState.Ready
+        val backupUi by sessionViewModel.backupState.collectAsState()
+        var pendingExportPassphrase by rememberSaveable { mutableStateOf("") }
+        var pendingImportPassphrase by rememberSaveable { mutableStateOf("") }
+        val createBackup = rememberLauncherForActivityResult(
+            ActivityResultContracts.CreateDocument("application/json")
+        ) { uri: Uri? ->
+            uri?.let { sessionViewModel.exportBackup(it, pendingExportPassphrase) }
+        }
+        val openBackup = rememberLauncherForActivityResult(
+            ActivityResultContracts.OpenDocument()
+        ) { uri: Uri? ->
+            uri?.let { sessionViewModel.importBackup(it, pendingImportPassphrase) }
+        }
 
         LaunchedEffect(appContext) {
             try {
@@ -131,7 +148,16 @@ fun LessonPlayerApp() {
                 },
                 dispatch = sessionViewModel::dispatch,
                 teacherPlan = teacherPlanUi,
-                toggleTeacherMark = teacherPlanViewModel::toggle
+                toggleTeacherMark = teacherPlanViewModel::toggle,
+                backupState = backupUi,
+                beginExport = { passphrase ->
+                    pendingExportPassphrase = passphrase
+                    createBackup.launch("ogretmenrehberi-backup.json")
+                },
+                beginImport = { passphrase ->
+                    pendingImportPassphrase = passphrase
+                    openBackup.launch(arrayOf("application/json", "text/*"))
+                }
             )
             else -> Box(
                 Modifier.fillMaxSize(),
@@ -152,7 +178,10 @@ internal fun LessonPlayerShell(
     selectLesson: (String) -> Unit,
     dispatch: (LessonCommand) -> Unit,
     teacherPlan: TeacherPlanUiState,
-    toggleTeacherMark: (TeacherTrack, String) -> Unit
+    toggleTeacherMark: (TeacherTrack, String) -> Unit,
+    backupState: BackupUiState,
+    beginExport: (String) -> Unit,
+    beginImport: (String) -> Unit
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val wide = maxWidth >= 840.dp
@@ -260,7 +289,10 @@ internal fun LessonPlayerShell(
                                 { navigate(AppScreen.LESSON) },
                                 dispatch,
                                 teacherPlan,
-                                toggleTeacherMark
+                                toggleTeacherMark,
+                                backupState,
+                                beginExport,
+                                beginImport
                             )
                         }
                     }

@@ -22,6 +22,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
@@ -29,6 +31,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.content.LessonData
+import io.github.knigdelioglu.lessonplayer.player.BackupUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
@@ -47,7 +50,10 @@ internal fun PhaseOneScreen(
     navigateToCurrent: () -> Unit,
     dispatch: (LessonCommand) -> Unit,
     teacherPlan: TeacherPlanUiState,
-    toggleTeacherMark: (TeacherTrack, String) -> Unit
+    toggleTeacherMark: (TeacherTrack, String) -> Unit,
+    backupState: BackupUiState,
+    beginExport: (String) -> Unit,
+    beginImport: (String) -> Unit
 ) {
     when (screen) {
         AppScreen.LIBRARY -> LibraryScreen(bundle, session, selectLesson, navigateToCurrent)
@@ -57,7 +63,7 @@ internal fun PhaseOneScreen(
             dispatch
         )
         AppScreen.GUIDE -> GuideScreen(bundle, teacherPlan, toggleTeacherMark)
-        AppScreen.SETTINGS -> SettingsScreen(bundle)
+        AppScreen.SETTINGS -> SettingsScreen(bundle, backupState, beginExport, beginImport)
     }
 }
 
@@ -441,7 +447,12 @@ private fun TeacherMarkRow(
 }
 
 @Composable
-internal fun SettingsScreen(bundle: LessonBundle) {
+internal fun SettingsScreen(
+    bundle: LessonBundle,
+    backupState: BackupUiState,
+    beginExport: (String) -> Unit,
+    beginImport: (String) -> Unit
+) {
     LazyColumn(
         contentPadding = PaddingValues(LessonSpacing.large),
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
@@ -462,10 +473,61 @@ internal fun SettingsScreen(bundle: LessonBundle) {
             )
         }
         item {
+            BackupSection(backupState, beginExport, beginImport)
+        }
+        item {
             SectionCard(
                 eyebrow = "YEREL VERİ",
                 title = "İnternetsiz katalog",
-                description = "Ders paketi APK içinde okunur. Kişisel ilerleme yerelde tutulur; düzenleme ve JSON yedek Faz 6'da gelecek."
+                description = "Ders paketi APK içinde okunur. Kişisel ilerleme ve öğretmen düzenlemeleri yerelde tutulur; kanonik içerik değişmez."
+            )
+        }
+    }
+}
+
+
+@Composable
+private fun BackupSection(
+    backupState: BackupUiState,
+    beginExport: (String) -> Unit,
+    beginImport: (String) -> Unit
+) {
+    var passphrase by androidx.compose.runtime.saveable.rememberSaveable { 
+        androidx.compose.runtime.mutableStateOf("")
+    }
+    SectionCard(
+        eyebrow = "ŞİFRELİ YEDEK",
+        title = "Öğretmen verisini taşı",
+        description = "Yedek; düzenlemeleri, ilerlemeyi ve rehber işaretlerini taşır. Kanonik ders cevapları APK'dan yeniden doğrulanır."
+    ) {
+        androidx.compose.material3.OutlinedTextField(
+            value = passphrase,
+            onValueChange = { passphrase = it },
+            modifier = Modifier.fillMaxWidth(),
+            label = { Text("Yedek parolası") },
+            supportingText = { Text("En az 8 karakter") },
+            singleLine = true
+        )
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+        ) {
+            Button(
+                onClick = { beginExport(passphrase) },
+                enabled = passphrase.length >= 8 && !backupState.busy,
+                modifier = Modifier.weight(1f)
+            ) { Text("Dışa aktar") }
+            Button(
+                onClick = { beginImport(passphrase) },
+                enabled = passphrase.length >= 8 && !backupState.busy,
+                modifier = Modifier.weight(1f)
+            ) { Text("İçe aktar") }
+        }
+        backupState.message?.let {
+            Text(
+                it,
+                color = if (backupState.isError) MaterialTheme.colorScheme.error
+                else MaterialTheme.colorScheme.primary
             )
         }
     }
