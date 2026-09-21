@@ -220,8 +220,8 @@ object LessonBackupCodec {
     }
 
     private fun hmac(key: ByteArray, value: ByteArray): ByteArray =
-        Mac.getInstance(SIGNATURE).run {
-            init(SecretKeySpec(key, SIGNATURE))
+        Mac.getInstance("HmacSHA256").run {
+            init(SecretKeySpec(key, "HmacSHA256"))
             doFinal(value)
         }
 
