@@ -2,7 +2,6 @@ package io.github.knigdelioglu.lessonplayer
 
 import androidx.compose.ui.test.assertDoesNotExist
 import androidx.compose.ui.test.assertExists
-import androidx.compose.ui.test.createComposeRule
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
