@@ -24,6 +24,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
@@ -285,6 +286,7 @@ internal fun GuideScreen(
         ?: (planState as? TeacherPlanUiState.Ready)?.warning
 
     LazyColumn(
+        modifier = Modifier.testTag("teacher-guide-list"),
         contentPadding = PaddingValues(LessonSpacing.large),
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
     ) {
