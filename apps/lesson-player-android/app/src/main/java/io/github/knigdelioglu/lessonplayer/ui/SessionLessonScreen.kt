@@ -1,7 +1,11 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -12,6 +16,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -43,16 +48,28 @@ internal fun SessionLessonScreen(
     val answer = step.answer
     val answerVisible = RevealKey.ANSWER in state.revealed
     val ordinal = state.order.indexOf(state.stepId)
-    LazyColumn(
-        modifier = Modifier.fillMaxWidth(),
-        contentPadding = PaddingValues(LessonSpacing.large),
-        verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
-    ) {
+    Column(modifier = Modifier.fillMaxSize()) {
+        LazyColumn(
+            modifier = Modifier.weight(1f).fillMaxWidth(),
+            contentPadding = PaddingValues(LessonSpacing.large),
+            verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+        ) {
         item {
             Text(lesson.title, style = MaterialTheme.typography.headlineMedium)
             Text("Basılı s. ${step.source.printedPageRange} · ${ordinal + 1}/${state.order.size}",
                 color = MaterialTheme.colorScheme.secondary,
                 style = MaterialTheme.typography.bodyMedium)
+        }
+        item {
+            FilledTonalButton(
+                onClick = {
+                    dispatch(LessonCommand.SetPresentationMode(!state.presentationMode))
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(if (state.presentationMode) "Öğretmen görünümüne dön"
+                    else "Sınıf sunumuna geç")
+            }
         }
         item {
             Card(
@@ -91,19 +108,15 @@ internal fun SessionLessonScreen(
                             LayoutKind.ASSESSMENT
                         )
                     ) {
-                        step.content?.let { content ->
-                            content.lead?.let {
+                        if (!answerVisible) {
+                            step.content?.lead?.takeIf { it != step.displayPrompt }?.let {
                                 Text(it, style = MaterialTheme.typography.bodyLarge)
                             }
-                            content.items.forEachIndexed { index, item ->
-                                Text("${index + 1}. $item",
-                                    style = MaterialTheme.typography.bodyMedium)
-                            }
-                            content.sections.forEach { section ->
-                                Text(section.title, style = MaterialTheme.typography.titleMedium)
-                                Text(section.body, style = MaterialTheme.typography.bodyMedium)
-                            }
                         }
+                        LessonContentLayout(step)
+                    }
+                    if (answerVisible && step.layout != LayoutKind.VOCABULARY) {
+                        AnswerSections(answer?.answerSections)
                     }
                     if (step.layout == LayoutKind.VOCABULARY) {
                         val terms = (answer?.answerSections as? JsonValue.Object)
@@ -115,7 +128,7 @@ internal fun SessionLessonScreen(
                             Text(
                                 if (visible) when (definition) {
                                     is JsonValue.Text -> definition.value
-                                    else -> definition.toString()
+                                    else -> readableAnswerValue(definition)
                                 } else "Önce bağlamdan anlamını tahmin ettirin.",
                                 style = MaterialTheme.typography.bodyMedium
                             )
@@ -185,23 +198,33 @@ internal fun SessionLessonScreen(
                 }
             }
         }
-        item {
-            Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-                Button(
-                    onClick = { dispatch(LessonCommand.RevealNext) },
-                    modifier = Modifier.fillMaxWidth()
-                ) { Text("Sıradaki katman / adım") }
+        } // LazyColumn: lesson content scrolls independently from navigation.
+        Surface(
+            color = MaterialTheme.colorScheme.surface,
+            shadowElevation = 6.dp
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(
+                    horizontal = LessonSpacing.small,
+                    vertical = LessonSpacing.tiny
+                ),
+                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+            ) {
                 OutlinedButton(
                     onClick = { dispatch(LessonCommand.Previous) },
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.weight(1f),
                     enabled = ordinal > 0
-                ) { Text("← Önceki") }
+                ) { Text("Önceki") }
+                FilledTonalButton(
+                    onClick = { dispatch(LessonCommand.RevealNext) },
+                    modifier = Modifier.weight(1f)
+                ) { Text("Aç / ilerle") }
                 OutlinedButton(
                     onClick = { dispatch(LessonCommand.Next) },
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.weight(1f),
                     enabled = ordinal < state.order.lastIndex
-                ) { Text("Sonraki →") }
+                ) { Text("Sonraki") }
             }
         }
-    }
+    } // Column
 }
