@@ -2,6 +2,8 @@ package io.github.knigdelioglu.lessonplayer
 
 import androidx.compose.ui.test.assertHeightIsAtLeast
 import androidx.compose.ui.test.hasText
+import androidx.compose.ui.test.onNodeWithTag
+import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -56,4 +58,29 @@ class AndroidShellTest {
         }
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
     }
+    @Test
+    fun teacherGuideShowsThreePersistentTrackingLanes() {
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("Ders, elinin altında.")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithText("Rehber").performClick()
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("Üç ayrı takip hattı")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
+        val guideList = composeRule.onNodeWithTag("teacher-guide-list")
+        guideList.performScrollToNode(hasText("1 · EDEBİYAT ATÖLYESİ"))
+        composeRule.onNodeWithText("1 · EDEBİYAT ATÖLYESİ").assertExists()
+        guideList.performScrollToNode(hasText("2 · DÖRT ESER + BİR FİLM"))
+        composeRule.onNodeWithText("2 · DÖRT ESER + BİR FİLM").assertExists()
+        guideList.performScrollToNode(hasText("3 · PORTFOLYO VE DEĞERLENDİRME"))
+        composeRule.onNodeWithText("3 · PORTFOLYO VE DEĞERLENDİRME").assertExists()
+        guideList.performScrollToNode(hasText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı"))
+        composeRule.onNodeWithText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı")
+            .assertExists()
+    }
+
 }

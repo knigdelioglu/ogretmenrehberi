@@ -42,6 +42,9 @@ import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
+import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanUiState
+import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanViewModel
+import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
 
@@ -53,7 +56,9 @@ fun LessonPlayerApp() {
         var loadError by remember { mutableStateOf<String?>(null) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
         val sessionViewModel: LessonSessionViewModel = viewModel()
+        val teacherPlanViewModel: TeacherPlanViewModel = viewModel()
         val sessionUi by sessionViewModel.state.collectAsState()
+        val teacherPlanUi by teacherPlanViewModel.state.collectAsState()
         val readySession = sessionUi as? LessonSessionUiState.Ready
 
         LaunchedEffect(appContext) {
@@ -65,6 +70,9 @@ fun LessonPlayerApp() {
         }
         LaunchedEffect(bundle?.contentSha256) {
             bundle?.let(sessionViewModel::initialize)
+        }
+        LaunchedEffect(bundle?.workflow?.schemaVersion) {
+            bundle?.workflow?.let(teacherPlanViewModel::initialize)
         }
         BackHandler(
             enabled = readySession?.session?.presentationMode == true ||
@@ -121,7 +129,9 @@ fun LessonPlayerApp() {
                     sessionViewModel.openLesson(it)
                     currentScreen = AppScreen.LESSON
                 },
-                dispatch = sessionViewModel::dispatch
+                dispatch = sessionViewModel::dispatch,
+                teacherPlan = teacherPlanUi,
+                toggleTeacherMark = teacherPlanViewModel::toggle
             )
             else -> Box(
                 Modifier.fillMaxSize(),
@@ -140,7 +150,9 @@ internal fun LessonPlayerShell(
     session: LessonSession,
     navigate: (AppScreen) -> Unit,
     selectLesson: (String) -> Unit,
-    dispatch: (LessonCommand) -> Unit
+    dispatch: (LessonCommand) -> Unit,
+    teacherPlan: TeacherPlanUiState,
+    toggleTeacherMark: (TeacherTrack, String) -> Unit
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val wide = maxWidth >= 840.dp
@@ -246,7 +258,9 @@ internal fun LessonPlayerShell(
                                 session,
                                 selectLesson,
                                 { navigate(AppScreen.LESSON) },
-                                dispatch
+                                dispatch,
+                                teacherPlan,
+                                toggleTeacherMark
                             )
                         }
                     }

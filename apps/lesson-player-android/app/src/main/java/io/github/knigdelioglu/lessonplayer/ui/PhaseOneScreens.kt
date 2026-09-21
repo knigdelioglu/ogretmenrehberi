@@ -3,6 +3,7 @@ package io.github.knigdelioglu.lessonplayer.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
@@ -15,6 +16,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -22,6 +24,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
@@ -31,6 +34,9 @@ import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
+import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanMarks
+import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanUiState
+import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 
 @Composable
 internal fun PhaseOneScreen(
@@ -39,7 +45,9 @@ internal fun PhaseOneScreen(
     session: LessonSession,
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit,
-    dispatch: (LessonCommand) -> Unit
+    dispatch: (LessonCommand) -> Unit,
+    teacherPlan: TeacherPlanUiState,
+    toggleTeacherMark: (TeacherTrack, String) -> Unit
 ) {
     when (screen) {
         AppScreen.LIBRARY -> LibraryScreen(bundle, session, selectLesson, navigateToCurrent)
@@ -48,7 +56,7 @@ internal fun PhaseOneScreen(
             session,
             dispatch
         )
-        AppScreen.GUIDE -> GuideScreen(bundle)
+        AppScreen.GUIDE -> GuideScreen(bundle, teacherPlan, toggleTeacherMark)
         AppScreen.SETTINGS -> SettingsScreen(bundle)
     }
 }
@@ -144,14 +152,14 @@ internal fun LessonOutlinePane(
 }
 
 @Composable
-private fun PhaseTag() {
+private fun PhaseTag(label: String = "FAZ 4 · UYARLANABİLİR DERS YÜZEYİ") {
     Surface(
         color = MaterialTheme.colorScheme.primaryContainer,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
         shape = RoundedCornerShape(LessonShape.chip)
     ) {
         Text(
-            "FAZ 4 · UYARLANABİLİR DERS YÜZEYİ",
+            label,
             modifier = Modifier.padding(horizontal = 14.dp, vertical = 9.dp),
             style = MaterialTheme.typography.labelMedium
         )
@@ -257,39 +265,178 @@ internal fun LibraryScreen(
 }
 
 @Composable
-internal fun GuideScreen(bundle: LessonBundle) {
+internal fun GuideScreen(
+    bundle: LessonBundle,
+    planState: TeacherPlanUiState,
+    toggleMark: (TeacherTrack, String) -> Unit
+) {
+    val marks = (planState as? TeacherPlanUiState.Ready)?.marks ?: TeacherPlanMarks()
+    val themeTitleById = bundle.workflow.themes.associate { it.id to it.title }
+    val workshopTotal = bundle.workflow.themes.sumOf { it.tasks.size }
+    val annualTotal = bundle.workflow.annualItems.size
+    val portfolioIds = buildList {
+        bundle.workflow.themes.forEach { theme ->
+            addAll(theme.tasks.map { "task:${it.id}" })
+            add("reflection:${theme.id}")
+        }
+        addAll(bundle.workflow.annualItems.map { "annual:${it.id}" })
+    }
+    val portfolioDone = portfolioIds.count { marks.contains(TeacherTrack.PORTFOLIO, it) }
+    val warning = (planState as? TeacherPlanUiState.Error)?.message
+        ?: (planState as? TeacherPlanUiState.Ready)?.warning
+
     LazyColumn(
+        modifier = Modifier.testTag("teacher-guide-list"),
         contentPadding = PaddingValues(LessonSpacing.large),
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
     ) {
         item {
-            PhaseTag()
+            PhaseTag("FAZ 5 · ÖĞRETMEN REHBERİ")
             Text(
                 "Üç ayrı takip hattı",
                 modifier = Modifier.padding(top = LessonSpacing.medium),
                 style = MaterialTheme.typography.headlineMedium
             )
             Text(
-                "Görevler kanonik öğretmen rehberinden okunuyor; işaretleme Faz 5'te gelecek.",
+                "Bu işaretler yalnızca bu cihazdaki öğretmen planına aittir; öğrenci teslimi veya not kaydı değildir.",
                 style = MaterialTheme.typography.bodyLarge
             )
+            Text(
+                "Atölye ${marks.workshop.size}/$workshopTotal · Yıllık çalışma ${marks.annual.size}/$annualTotal · Portfolyo $portfolioDone/${portfolioIds.size}",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            warning?.let {
+                Text(it, color = MaterialTheme.colorScheme.error)
+            }
         }
-        items(bundle.workflow.themes, key = { it.id }) { theme ->
+        item {
             SectionCard(
-                eyebrow = theme.id,
-                title = theme.title,
-                description = theme.tasks.joinToString(" · ") {
-                    "${it.skill}: ${it.title}"
+                eyebrow = "1 · EDEBİYAT ATÖLYESİ",
+                title = "Uygulama ve değerlendirme",
+                description = "${marks.workshop.size}/$workshopTotal plan işareti",
+                action = {
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                        bundle.workflow.themes.forEach { theme ->
+                            Text(
+                                theme.title,
+                                style = MaterialTheme.typography.titleMedium,
+                                modifier = Modifier.padding(top = LessonSpacing.small)
+                            )
+                            theme.tasks.forEach { task ->
+                                TeacherMarkRow(
+                                    label = "${task.skill} · ${task.title}",
+                                    checked = marks.contains(TeacherTrack.WORKSHOP, task.id),
+                                    onCheckedChange = {
+                                        toggleMark(TeacherTrack.WORKSHOP, task.id)
+                                    }
+                                )
+                            }
+                        }
+                    }
                 }
             )
         }
         item {
             SectionCard(
-                eyebrow = "YILLIK ÇALIŞMA · ÖNERİ",
-                title = "Dört eser ve bir film",
-                description = bundle.workflow.annualItems.joinToString(" · ") { it.title }
+                eyebrow = "2 · DÖRT ESER + BİR FİLM",
+                title = "Yıllık sunum planı",
+                description = "${marks.annual.size}/$annualTotal plan işareti",
+                action = {
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                        bundle.workflow.annualItems.forEach { item ->
+                            TeacherMarkRow(
+                                label = "${item.title} · ${themeTitleById[item.recommendedThemeId] ?: item.recommendedThemeId}",
+                                checked = marks.contains(TeacherTrack.ANNUAL, item.id),
+                                onCheckedChange = {
+                                    toggleMark(TeacherTrack.ANNUAL, item.id)
+                                }
+                            )
+                        }
+                    }
+                }
             )
         }
+        item {
+            SectionCard(
+                eyebrow = "3 · PORTFOLYO VE DEĞERLENDİRME",
+                title = "Kanıt ve yansıtma takibi",
+                description = "$portfolioDone/${portfolioIds.size} kanıt işareti",
+                action = {
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                        bundle.workflow.themes.forEach { theme ->
+                            Text(
+                                theme.title,
+                                style = MaterialTheme.typography.titleMedium,
+                                modifier = Modifier.padding(top = LessonSpacing.small)
+                            )
+                            theme.tasks.forEach { task ->
+                                TeacherMarkRow(
+                                    label = "${task.skill} portfolyosu · ${task.title}",
+                                    checked = marks.contains(
+                                        TeacherTrack.PORTFOLIO, "task:${task.id}"
+                                    ),
+                                    onCheckedChange = {
+                                        toggleMark(
+                                            TeacherTrack.PORTFOLIO, "task:${task.id}"
+                                        )
+                                    }
+                                )
+                            }
+                            TeacherMarkRow(
+                                label = "Tema sonu yansıtma · ${theme.reflectionTitle}",
+                                checked = marks.contains(
+                                    TeacherTrack.PORTFOLIO, "reflection:${theme.id}"
+                                ),
+                                onCheckedChange = {
+                                    toggleMark(
+                                        TeacherTrack.PORTFOLIO, "reflection:${theme.id}"
+                                    )
+                                }
+                            )
+                            bundle.workflow.annualItems
+                                .filter { it.recommendedThemeId == theme.id }
+                                .forEach { item ->
+                                    TeacherMarkRow(
+                                        label = "${item.title} · Ek-1 ve sunu",
+                                        checked = marks.contains(
+                                            TeacherTrack.PORTFOLIO, "annual:${item.id}"
+                                        ),
+                                        onCheckedChange = {
+                                            toggleMark(
+                                                TeacherTrack.PORTFOLIO, "annual:${item.id}"
+                                            )
+                                        }
+                                    )
+                                }
+                        }
+                    }
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun TeacherMarkRow(
+    label: String,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit
+) {
+    Row(
+        modifier = Modifier.fillMaxWidth().heightIn(min = LessonTarget.minimum),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+    ) {
+        Checkbox(
+            checked = checked,
+            onCheckedChange = onCheckedChange
+        )
+        Text(
+            label,
+            modifier = Modifier.weight(1f),
+            style = MaterialTheme.typography.bodyMedium
+        )
     }
 }
 

@@ -15,8 +15,8 @@ native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır
   derleme sırasında web ile aynı doğrulama kapısından geçip APK içine alınır.
 - Dört temanın ders kitaplığı, doğrulanmış kaynak başlıkları, kalıcı ders oturumu,
   yedi içerik düzeni ve Android içi sınıf sunumu çalışır.
-- Cevap açma ve kalıcı ders ilerlemesi çalışır; öğretmen düzenlemesi,
-  takip hattı işaretleri ve JSON yedekleme henüz yoktur ve Faz 5–6 kapsamındadır.
+- Cevap açma, kalıcı ders ilerlemesi ve üç öğretmen takip hattının işaretleri
+  çalışır; native düzenleme ve JSON yedekleme henüz yoktur ve Faz 6 kapsamındadır.
   Bu bir release APK değildir.
 
 ## Araç zinciri
@@ -81,6 +81,6 @@ node ../lesson-player/scripts/test-android-data.mjs
 Android 16 emülatör CI'sında Wi-Fi ve hücresel veri kapatılarak
 assets tabanlı test yapılır. İlk Gradle/SDK kurulumu internete ihtiyaç
 duysa da **uygulamanın ders okuması internete ihtiyaç duymaz**.
-Faz 5–6'da öğretmen rehberi işaretleri, native düzenleme ve JSON yedek eklenecek.
+Faz 6'da native düzenleme ve JSON yedek eklenecek.
 
 Plan: [Fazlar](../../docs/LESSON_PLAYER_ANDROID_PHASED_PLAN.md).
