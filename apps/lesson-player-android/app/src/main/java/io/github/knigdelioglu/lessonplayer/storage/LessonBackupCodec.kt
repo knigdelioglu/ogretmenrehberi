@@ -148,21 +148,25 @@ object LessonBackupCodec {
 
     private fun payloadJson(snapshot: LessonBackupSnapshot): JSONObject = JSONObject().apply {
         put("schemaVersion", SCHEMA_VERSION)
-        put("progress", JSONArray(snapshot.progress.map {
-            JSONObject()
-                .put("lessonId", it.lessonId)
-                .put("contentDigest", it.contentDigest)
-                .put("stepId", it.stepId)
-                .put("stepOrderJson", it.stepOrderJson)
-                .put("overridesJson", it.overridesJson)
-        }))
-        put("marks", JSONArray(snapshot.marks.map {
-            JSONObject()
-                .put("academicYear", it.academicYear)
-                .put("track", it.track)
-                .put("itemId", it.itemId)
-                .put("checked", it.checked)
-        }))
+        put("progress", JSONArray().apply {
+            snapshot.progress.forEach {
+                put(JSONObject()
+                    .put("lessonId", it.lessonId)
+                    .put("contentDigest", it.contentDigest)
+                    .put("stepId", it.stepId)
+                    .put("stepOrderJson", it.stepOrderJson)
+                    .put("overridesJson", it.overridesJson))
+            }
+        })
+        put("marks", JSONArray().apply {
+            snapshot.marks.forEach {
+                put(JSONObject()
+                    .put("academicYear", it.academicYear)
+                    .put("track", it.track)
+                    .put("itemId", it.itemId)
+                    .put("checked", it.checked))
+            }
+        })
     }
 
     private fun readPayload(raw: String): LessonBackupSnapshot {
