@@ -63,9 +63,12 @@ private val LessonTypography = Typography(
 )
 
 @Composable
-fun LessonTheme(content: @Composable () -> Unit) {
+fun LessonTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit
+) {
     MaterialTheme(
-        colorScheme = if (isSystemInDarkTheme()) Dark else Light,
+        colorScheme = if (darkTheme) Dark else Light,
         typography = LessonTypography,
         content = content
     )
