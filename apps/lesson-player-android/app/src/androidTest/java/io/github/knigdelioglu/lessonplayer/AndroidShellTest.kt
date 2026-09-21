@@ -59,6 +59,27 @@ class AndroidShellTest {
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
     }
     @Test
+    fun teacherCanOpenNativeEditorWithoutPresentationMode() {
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("Ders, elinin altında.")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("Sınıf sunumuna geç")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
+        val lessonList = composeRule.onNodeWithTag("lesson-screen-list")
+        lessonList.performScrollToNode(hasText("Adımı düzenle"))
+        composeRule.onNodeWithText("Adımı düzenle").performClick()
+        composeRule.onNodeWithText("Yerel adım düzenleme").assertExists()
+        composeRule.onNodeWithText("Soru / başlık").assertExists()
+        composeRule.onNodeWithText("Düzenlemeyi kapat").performClick()
+    }
+
+    @Test
     fun teacherGuideShowsThreePersistentTrackingLanes() {
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(

@@ -19,6 +19,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.heightIn
@@ -50,7 +51,7 @@ internal fun SessionLessonScreen(
     val ordinal = state.order.indexOf(state.stepId)
     Column(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
-            modifier = Modifier.weight(1f).fillMaxWidth(),
+            modifier = Modifier.weight(1f).fillMaxWidth().testTag("lesson-screen-list"),
             contentPadding = PaddingValues(LessonSpacing.large),
             verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
         ) {
@@ -237,6 +238,16 @@ internal fun SessionLessonScreen(
                         }
                     }
                 }
+            }
+        }
+        if (!state.presentationMode) {
+            item {
+                LessonEditorPanel(
+                    step = step,
+                    state = state,
+                    ordinal = ordinal,
+                    dispatch = dispatch
+                )
             }
         }
         } // LazyColumn: lesson content scrolls independently from navigation.
