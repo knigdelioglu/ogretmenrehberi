@@ -10,9 +10,23 @@
       "printed_page": 68,
       "question_no": "Sıra Sizde",
       "prompt_summary": "Uzak gelecekte kullanılabilecek iletişim araçları ve olası etkileri üzerine tartışma",
-      "answer": "Örnek fikirler: artırılmış gerçeklik gözlükleriyle uzaktaki kişilerin aynı ortamdaymış gibi görülmesi, anlık konuşma çevirisi yapan sistemler, üç boyutlu holografik görüşmeler ve beyin-bilgisayar arayüzleriyle daha doğrudan iletişim kurulması düşünülebilir. Bu araçlar uzaklığı ve dil engelini azaltabilir; ancak mahremiyet, veri güvenliği, yanlış bilgi, teknolojiye bağımlılık ve yüz yüze iletişimin azalması gibi yeni sorunlar da doğurabilir.",
-      "guidance": "Amaç geleceği doğru tahmin etmek değil; önerilen aracın iletişime sağlayacağı yarar ile oluşturabileceği riski birlikte gerekçelendirmektir.",
-      "source_locator": "basılı s.68 / PDF s.69"
+      "answer": "Uzak gelecekte iletişim; fiziksel ekranları aşarak artırılmış ve sanal gerçeklik, zihin-makine arayüzleri, üç boyutlu holografik projeksiyonlar ve anlık yapay zekâ çeviri sistemleri üzerinden şekillenecektir. Bu araçlar mekân ve dil sınırlarını tamamen kaldırarak küresel etkileşimi ve bilgiye erişimi hızlandıracak; ancak mahremiyet kaybı, düşünce güvenliği, gerçeklikten kopuş ve yüz yüze duygusal temasın azalması gibi derin etik ve insani riskler doğuracaktır.",
+      "answer_sections": {
+        "Geleceğin İletişim Araçları ve Teknolojileri": [
+          "Holografik Eş Zamanlı İletişim: Bireylerin binlerce kilometre uzaktaki toplantı, ders veya aile ortamına 3 boyutlu canlı kopyalarıyla katılması.",
+          "Nörolojik / Zihinsel İletişim Arayüzleri: Düşüncelerin, hislerin ve tasavvurların sözcük veya klavye kullanmaksızın doğrudan zihinden zihne aktarımı.",
+          "Kişiselleştirilmiş Yapay Zekâ Temsilcileri (Avatarlar): Bireyin yerine rutin yazışmaları yürüten, toplantıları özetleyen ve onun üslubuyla kararlar alan dijital ikizler."
+        ],
+        "İletişim ve İnsan İlişkilerine Olası Etkileri": {
+          "Fırsatlar ve Kolaylıklar": "Dünyanın her yerindeki uzmanlara, hekimlere ve okullara saniyeler içinde bağlanabilme; dil engelinin anlık çeviriyle tarihe karışması; engelli bireylerin zihinsel komutlarla engelsiz iletişim kurması.",
+          "Riskler ve Tehditler": "Zihin mahremiyetinin ve düşünce özgürlüğünün siber saldırılara açık hâle gelmesi; yapay ile gerçeğin ayırt edilememesi (manipülasyon); yüz yüze temas, mimik ve doğal sıcaklığın yerini mekanik algılara bırakması."
+        },
+        "Öğretmen Tartışma Rehberi": [
+          "Öğrencilere 'Teknoloji ne kadar ilerlerse ilerlesin insanın yerini alamayacak olan iletişim unsuru nedir?' sorusu yöneltilmeli; samimiyet, vicdan, şefkat ve gerçek göz temasının değeri vurgulanmalıdır."
+        ]
+      },
+      "guidance": "Tartışmada öğrencilerin yalnızca bilim kurgusal teknolojileri saymakla kalmayıp bunların getireceği etik sorumlulukları ve insan psikolojisine etkilerini gerekçelendirmeleri sağlanmalıdır.",
+      "source_locator": "basılı s.68 / PDF s.69 — Fikir Taraması"
     },
     {
       "question_id": "T1-P68-Q02",
@@ -20,13 +34,22 @@
       "printed_page": 68,
       "question_no": "2",
       "prompt_summary": "Paydos parçasında dil kullanımından kaynaklanan iletişim aksaklıkları",
-      "answer": "Parçada Hasan'ın Hatice'nin parasızlık ve borç sıkıntısını anlatmasına rağmen sürekli 'Çok güzel' ve 'Çok iyi' demesi, karşısındakini gerçekten dinlemediğini gösterir. Daha sonra 'tez' kelimesinin Rıdvan tarafından akademik çalışma, İbrahim tarafından ise 'çabuk' anlamıyla kullanılması anlam karışıklığı oluşturur. Konuşmacıların birbirinin sözünü kesmesi ve konuyu ayrıntı tartışmasına çevirmesi de asıl mesajın ilerlemesini engeller.",
+      "answer": "Paydos metninde iletişim aksaklıkları temel olarak üç noktadan kaynaklanır: Hasan'ın Hatice'nin borç ve yoksulluk feryadını dinlemeyip duruma tamamen zıt biçimde ezbere 'Çok güzel, çok iyi' sözleriyle geçiştirmesi; 'tez' sözcüğünün Rıdvan tarafından akademik araştırma, İbrahim tarafından ise acele/çabuk anlamında kullanılmasıyla ortaya çıkan anlamsal karmaşa; ve kişilerin birbirinin sözünü keserek konuyu tarihsel kişi isimleri üzerinden şahsi bir üstünlük çatışmasına dönüştürmesidir.",
+      "answer_sections": {
+        "Etkin Dinlememe ve Ezbere Tepki (Hasan)": "Hatice konağın borcunu, sıkıntısını ve paranın yetmediğini acıyla anlatırken muhtar Hasan'ın zihninin define hikâyesinde olması sebebiyle 'Çok güzel, çok güzel... Çok iyi, çok iyi... Alâ... Alâ...' diyerek duruma uygunsuz ve ilgisiz tepkiler vermesi iletişimi koparır.",
+        "Sesteş / Çok Anlamlı Sözcüğün Yanlış Anlaşılması ('Tez')": "Rıdvan 'O kadar iyi bildiğim bahisler ki bunlar... Tez yazdım...' derken üniversite/akademik bitirme çalışmasını kasteder; İbrahim ise bunu 'çabuk/erken' anlamında alarak 'Benim analığım da bana söyleyeli 10 sene olmuyor ya.. Tez söyledi..' karşılığını verir. Bu anlamsal uyuşmazlık iletişimi rayından çıkarır ve komik bir tartışma doğurur.",
+        "Bilgiçlik Taslama ve Söz Kesme (Rıdvan)": "Rıdvan'ın anlatıcıların sözünü sürekli kesip tarihî detaylar (Zenbilli Ali Efendi, Ebussuud Efendi, Yavuz Sultan Selim, 450 yıl) üzerinden ukalalık yapması, asıl mesele olan define konusunun anlatılmasını engeller.",
+        "Kişiliğe Saldırı / Ad Hominem (Ömer)": "Ömer'in 'Analığı da onun gibidir inanmayın!' diyerek konuyu tartışmak yerine İbrahim'in ve ailesinin kişiliğine saldırması çatışmayı körükler."
+      },
       "evidence_quotes": [
-        "Çok güzel, çok güzel",
-        "Tez yazdım",
-        "Tez söyledi"
+        "Çok güzel, çok güzel...",
+        "Çok iyi, çok iyi...",
+        "Tez yazdım...",
+        "Tez söyledi..",
+        "Ukalâlığı bırak diyorum Rıdvan. Mesele Şeyhülislâmın isminde değil..."
       ],
-      "source_locator": "basılı s.68-69 / PDF s.69-70"
+      "guidance": "Öğrencilerin sadece 'birbirlerini anlamıyorlar' demesi yeterli görülmemeli; Hasan'ın geçiştirmesi ve 'tez' kelimesinin yarattığı anlam karmaşası metindeki alıntılarla somutlaştırılmalıdır.",
+      "source_locator": "basılı s.68-69 / PDF s.69-70 — Sıra Sizde soru 2"
     },
     {
       "question_id": "T1-P70-Q03",
@@ -34,29 +57,39 @@
       "printed_page": 70,
       "question_no": "3",
       "prompt_summary": "Paydos parçasındaki iletişim engellerini sınıflandırma",
-      "answer": "Parçada görülen iletişim engelleri kaynağına göre şöyle ayrılabilir:",
-      "explanation": "Kavram haritasında 'gürültü' genel bir fiziksel/çevresel engel örneği olarak verilmiştir; Paydos sahnesinde bunun gerçekleştiğini gösteren açık bir kanıt yoktur.",
-      "source_locator": "basılı s.68-70 / PDF s.69-71",
+      "answer": "Paydos metninde karşılaşılan iletişim engelleri, kavram haritasındaki kategorilere göre şöyle sınıflandırılır:",
       "answer_sections": {
-        "Davranışsal ve düşünsel engeller": [
-          "Dinlememe",
-          "Söz kesme",
-          "Peşin hüküm verme",
-          "Karşıdakini küçümseme",
-          "Kendi bilgisini öne çıkarma"
+        "Davranışsal ve Düşünsel Engeller": [
+          "Etkin dinlememe ve muhatabı geçiştirme (Hasan'ın borç anlatan Hatice'ye 'Çok güzel' demesi).",
+          "Söz kesme ve konuşmacıya nefes aldırmama (Rıdvan'ın her cümleye müdahale etmesi).",
+          "Bilgiçlik taslama ve üstünlük kurma çabası (Rıdvan'ın tez yazmış olmasıyla övünmesi).",
+          "Kişiliğe saldırma ve küçümseme (Ömer'in 'Analığı da onun gibidir inanmayın' sözü)."
         ],
-        "Dil ve anlatımdan kaynaklı engeller": [
-          "“tez” kelimesinin farklı anlamlarda kullanılması",
-          "Tarihî adlar üzerindeki anlaşmazlık"
+        "Dil ve Anlatımdan Kaynaklı Engeller": [
+          "Çok anlamlı / sesteş sözcüğün bağlam dışı algılanması ('Tez' kelimesinin akademik çalışma ile 'çabuk' anlamları arasındaki karışıklık).",
+          "Tarihî adlar ve tarihler üzerindeki belirsizlik (Zenbilli Ali Efendi mi, Ebussuud Efendi mi tartışması)."
         ],
-        "Psikolojik engeller": [
-          "Sabırsızlık",
-          "Kendini kanıtlama isteği",
-          "Gerginlik"
+        "Sosyokültürel Engeller": [
+          "Kişilerin eğitim ve kültür düzeyleri arasındaki uçurum: Üniversite eğitimi almış/tez yazmış Rıdvan ile 'Hem biz cahil insanlarız' diyen Hasan ve halk rivayetine dayanan İbrahim arasındaki algı ve anlatım farkı."
         ],
-        "Sosyokültürel engeller": "Kişilerin bilgi ve eğitim düzeylerindeki farklılıkların konuşmaya yansıması.",
-        "Fiziksel / çevresel engeller": "Bu parçada açık biçimde gösterilmemektedir."
-      }
+        "Psikolojik Engeller": [
+          "Hatice'nin borç ve geçim sıkıntısından doğan çaresizlik ve gerginliği.",
+          "Hasan'ın defineye odaklanmış sabırsızlığı ve Hatice'nin derdine kayıtsız kalması.",
+          "İbrahim'in bilgisiz görünmekten korkup savunmaya geçmesi ve alınganlığı.",
+          "Rıdvan'ın bilgisini kabul ettirme hırsı ve tahammülsüzlüğü."
+        ],
+        "Fiziksel ve Çevresel Engeller": [
+          "Kavram haritasında şematik örnek olarak 'Gürültü' verilmiştir; ancak Paydos sahnesinde iletişimi aksatan somut bir gürültü veya mekânsal engel bulunmamaktadır; engeller tamamen insanidir."
+        ]
+      },
+      "explanation": "Kavram haritasında verilen 'gürültü' ifadesi genel bir fiziksel engel kategorisini temsil eder; tiyatro sahnesinde gürültüden kaynaklanan bir aksama yoktur, sorun tamamen davranışsal ve dilseldir.",
+      "evidence_quotes": [
+        "Tez yazdım...",
+        "Tez söyledi..",
+        "Hem biz cahil insanlarız. Kusurumuza bakmamalı!",
+        "Ukalâlığı bırak diyorum Rıdvan."
+      ],
+      "source_locator": "basılı s.68-70 / PDF s.69-71 — Sıra Sizde soru 3"
     },
     {
       "question_id": "T1-P70-Q04",
@@ -64,8 +97,15 @@
       "printed_page": 70,
       "question_no": "4",
       "prompt_summary": "Paydos parçasındaki iletişim engellerini ortadan kaldırma yolları",
-      "answer": "Hasan otomatik tepkiler vermek yerine Hatice'nin anlattıklarını dikkatle dinlemeli ve uygun geri bildirim vermelidir. Rıdvan söz kesmeden konuşmacının anlatımını tamamlamasını beklemeli; tarihî ayrıntıları düzeltmek gerekiyorsa bunu konuşmanın akışını bozmadan yapmalıdır. 'Tez' gibi birden fazla anlamı olan sözcüklerde bağlam açıklığa kavuşturulmalı; küçümseyici ve suçlayıcı sözlerden kaçınılmalıdır. Böylece konu dağılmadan ortak anlam kurulabilir.",
-      "source_locator": "basılı s.68-70 / PDF s.69-71"
+      "answer": "Paydos metnindeki iletişim engellerini ortadan kaldırmak için tarafların benmerkezci tutumlarını terk ederek empatik dinlemeye geçmesi, söz kesmeyi bırakması, çok anlamlı sözcükleri bağlamına göre netleştirmesi ve bilgi farkını bir üstünlük yarışına dönüştürmekten kaçınması gerekir.",
+      "answer_sections": {
+        "Etkin ve Empatik Dinleme": "Hasan otomatik olarak 'Çok iyi' demek yerine Hatice'nin gözlerine bakarak 'Banka borcu sizi çok zorlamış, anlıyorum; peki define meselesini nasıl bağlayalım?' diyerek dinlediğini hissettirmelidir.",
+        "Söz Kesmeme ve Sabır": "Rıdvan konuşmacının cümlesini tamamlamasını beklemeli; tarihî bir yanlış varsa bunu alaycı ve bilmiş bir tavırla değil, anlatım bittikten sonra 'Bir katkı sunabilir miyim?' diyerek nazikçe düzeltmelidir.",
+        "Dilde Açıklık ve Teyit": "'Tez' sözcüğünün yarattığı karışıklıkta Rıdvan 'Ben akademik bitirme araştırmasını kastettim' diyerek kavramı kısaca açıklamalı, İbrahim'i küçük düşürücü tavırdan kaçınmalıdır.",
+        "Ön Yargı ve Hakaretten Uzak Durma": "Ömer gibi kişiliğe saldıran ad hominem çıkışlar yerine tartışma doğrudan konu (konağın geçmişi) üzerinde tutulmalıdır."
+      },
+      "guidance": "Öğrencilerin çözümleri soyut bırakmayıp sahnedeki diyalogları 'Doğrusu nasıl söylenmeliydi?' şeklinde somutlaştırmaları sağlanmalıdır.",
+      "source_locator": "basılı s.68-70 / PDF s.69-71 — Sıra Sizde soru 4"
     },
     {
       "question_id": "T1-P71-PERF01",
@@ -73,9 +113,18 @@
       "printed_page": 71,
       "question_no": "5-6",
       "prompt_summary": "İletişim sorunlarına yönelik çözüm yollarını tartışıp karşılaştırma",
-      "answer": "Örnek karşılaştırma: Birinci çözüm 'söz kesmeme', ikinci çözüm 'aktif dinleme ve geri bildirim', üçüncü çözüm 'açık ve tek anlamlı ifade kullanma', dördüncü çözüm 'önyargıdan kaçınma', beşinci çözüm 'uygun ses tonu ve beden dili', altıncı çözüm 'konuyu dağıtan ayrıntıları sınırlama' olabilir. En etkili yaklaşım tek bir çözüm yerine aktif dinleme, açık anlatım ve saygılı davranışı birlikte uygulamaktır; çünkü sahnedeki sorunlar tek bir kaynaktan doğmamaktadır.",
-      "guidance": "Altı tartışmacının mutlaka birbirinden tamamen farklı çözüm bulması gerekmez. Önemli olan önerileri etkileri bakımından karşılaştırıp gerekçeli bir ortak sonuca ulaşmaktır.",
-      "source_locator": "basılı s.71 / PDF s.72"
+      "answer": "Altı kişilik vızıltı grubunda üretilebilecek ve birbiriyle karşılaştırılabilecek örnek çözüm önerileri şöyledir:",
+      "answer_sections": {
+        "1. Tartışmacı (Aktif Dinleme Odaklı)": "Konuşmacı konuşurken zihnen başka yerde olmamak, göz teması kurmak ve söz bitiminde uygun geri bildirim vermek (Hasan'ın Hatice'yi gerçekten dinlemesi).",
+        "2. Tartışmacı (Söz Kesmeme ve Sabır Odaklı)": "Muhatap cümlesini bitirene kadar araya girmemek, itiraz veya düzeltmeleri konuşmanın tamamlanmasının ardından nezaketle iletmek (Rıdvan'ın söz kesmeyi bırakması).",
+        "3. Tartışmacı (Dilde Anlam Netliği Odaklı)": "Çok anlamlı, mecaz veya yabancı terimler kullanıldığında yanlış anlamayı önlemek için anlamı baştan açıklığa kavuşturmak ('Tez' kelimesinin akademik anlamını belirtmek).",
+        "4. Tartışmacı (Ön Yargısız ve Saygılı Tutum)": "Muhatabın eğitimine, yaşına veya sosyal konumuna bakarak küçümseyici tutum takınmamak, kişiliğe değil konuya odaklanmak (Ömer'in hakaret etmesini engellemek).",
+        "5. Tartışmacı (Empati ve Duygusal Farkındalık)": "Karşıdaki insanın o anki psikolojik durumunu (Hatice'nin borç sıkıntısı, İbrahim'in mahcubiyeti) gözeterek konuşmanın ağırlığını ve tonunu ayarlamak.",
+        "6. Tartışmacı (Ortak Amaç ve Moderatörlük)": "Konuşmanın ana konusundan kopulmasına izin vermemek, tali tartışmalar (Şeyhülislam ismi vb.) çıktığında grubu ana hedefe yönlendirmek (Hatice'nin sakinleştirici rolü).",
+        "Karşılaştırma ve En Etkili Çözüm Sentezi": "Grup tartışmasında tek bir çözümün yetersiz kalacağı; ancak aralarında en belirleyici olanın 'Aktif Dinleme ve Söz Kesmeme' olduğu sonucuna varılır; çünkü dinleme ve saygının olmadığı bir ortamda dil ne kadar doğru kullanılırsa kullanılsın iletişim kopacaktır."
+      },
+      "guidance": "Tabloda altı tartışmacının görüşlerinin birbirinden bağımsız ve pedagojik olarak farklı bir iletişim boyutunu temsil etmesi, sonrasında ise hangisinin öncelikli olduğunun ortak kararla gerekçelendirilmesi sağlanmalıdır.",
+      "source_locator": "basılı s.71 / PDF s.72 — Sıra Sizde soru 5-6"
     },
     {
       "question_id": "T1-P71-Q01",
@@ -83,8 +132,23 @@
       "printed_page": 71,
       "question_no": "1",
       "prompt_summary": "Yüz yüze, e-posta ve telefonda kullanılacak dilin özellikleri",
-      "answer": "Yüz yüze iletişimde sözlerin yanında ses tonu, vurgu, mimik ve beden dili önemlidir; dil duruma göre daha doğal ve etkileşimlidir. Telefonda beden dili görünmediği için açık anlatım, uygun tonlama ve karşı tarafın anlayıp anlamadığını kontrol etmek daha önemlidir. E-postada ise yazılı kayıt kalacağı için konu başlığı, düzen, açık cümleler, uygun hitap ve nezaket ifadeleri öne çıkar. Kanal değiştikçe dilin resmiyet ve açıklık düzeyi de muhataba göre ayarlanmalıdır.",
-      "source_locator": "basılı s.71 / PDF s.72"
+      "answer": "İletişim kanalı değiştikçe kullanılan dilin yapısı, tonu ve biçimsel kuralları da değişmelidir. Yüz yüze iletişimde jest, mimik ve beden dili belirleyiciyken; telefonda ses tonu ve diksiyon, e-postada ise yazılı açıklık, dil bilgisi kuralları ve biçimsel nezaket öne çıkar.",
+      "answer_sections": {
+        "Yüz Yüze İletişim": {
+          "Dil ve Üslup Özelliği": "Doğal, samimi, etkileşimli ve anlık geri bildirime açık bir dil.",
+          "Kanalın Gücü": "Sözlerin etkisi beden dili, tebessüm, göz teması ve duruşla desteklenir; yanlış anlamalar muhatabın yüz ifadesinden anında sezilerek düzeltilebilir."
+        },
+        "Telefon ile İletişim": {
+          "Dil ve Üslup Özelliği": "Açık, net, tane tane ve ses tonu kontrollü bir dil.",
+          "Kanalın Hassasiyeti": "Beden dili görülmediği için ses tonundaki soğukluk veya acele hemen olumsuz algılanabilir; bu yüzden 'anlaşabildik mi?', 'sesim net geliyor mu?' gibi teyit cümleleri ve nezaket sözcükleri daha sık kullanılmalıdır."
+        },
+        "E-posta ile İletişim": {
+          "Dil ve Üslup Özelliği": "Resmî veya yarı resmî, kurallı, konu başlığı içeren, yazım ve noktalama kurallarına tam riayet eden mesafeli bir dil.",
+          "Kanalın Kalıcılığı": "Yazılan her söz arşivleneceği için duygusal/öfkeli ifadelerden kesinlikle kaçınılmalı; talep, gerekçe ve ekler net paragraflarla yapılandırılmalıdır."
+        }
+      },
+      "guidance": "Kanala uygun dil seçilmediğinde doğacak sorunlar (örneğin e-postada konuşma diliyle argo yazılması veya telefonda yüz ifadesine güvenilerek eksik konuşulması) tartışılmalıdır.",
+      "source_locator": "basılı s.71 / PDF s.72 — Sıra Sizde soru 1"
     },
     {
       "question_id": "T1-P71-Q02",
@@ -92,8 +156,19 @@
       "printed_page": 71,
       "question_no": "2",
       "prompt_summary": "Değişen İletişim Araçlarının Hayatımızdaki Yeri videosunu dil kullanımı açısından eleştirel değerlendirme",
-      "answer": "Videonun gerçek dil kullanımı dinlenmeden kesin bir değerlendirme yapılamaz. Değerlendirme yapılırken anlatımın açık ve anlaşılır olup olmadığı, kullanılan kelimelerin hedef kitleye uygunluğu, gereksiz yabancı veya teknik terim bulunup bulunmadığı, cümlelerin akıcılığı, ses tonu ve görsel-sözlü anlatımın birbirini destekleyip desteklemediği incelenmelidir.",
-      "guidance": "Öğrenciden en az bir olumlu ve gerekiyorsa bir geliştirilebilir özellik için videodan somut örnek göstermesi istenebilir.",
+      "answer": "Videonun dil kullanımı doğrudan dinleme kaydındaki ifadelere bağlı olduğundan nesnel bir eleştiri için video içeriği esas alınmalıdır. Bir çok modlu metin olarak dilin kullanımı şu ölçütler üzerinden eleştirel süzgeçten geçirilmelidir:",
+      "answer_sections": {
+        "Olumlu Dil Özellikleri (Güçlü Yönler)": [
+          "Anlatımın Açıklığı ve Düzeyi: Cümlelerin lise düzeyine uygun, açık ve gereksiz ağdalı terimlerden arındırılmış olması.",
+          "Görsel ve Sözlü Anlatım Uyumu: Ekranda beliren grafik, resim ve yazıların seslendirilen metinle eş zamanlı ilerlemesi; terimlerin ekranda metin olarak da vurgulanması.",
+          "Ses Tonu ve Vurgulama: Konuşmacının monotonluktan uzak, önemli noktaları (örneğin 'iletişim bir medenileşme hareketidir' ifadesini) tonlama ve duraklamayla öne çıkarması."
+        ],
+        "Eleştirilebilecek ve Geliştirilebilecek Hususlar": [
+          "Terim Yoğunluğu: 'Nörolojik', 'tasavvur', 'saik' gibi soyut kavramların bağlamı yeterince açılmadan hızlı geçilmesi durumunda kavrama güçlüğü doğurabilmesi.",
+          "Hız ve Akış: Bilgi yoğunluğunun yüksek olduğu bölümlerde dinleyicinin not almasına imkân tanıyacak eslerin verilmemesi."
+        ]
+      },
+      "guidance": "Öğrenciden videodan somut bir cümle veya sahneyi örnek göstererek 'Buradaki dil kullanımı başarılıydı çünkü...' veya 'Şu kısım daha açık anlatılabilirdi çünkü...' şeklinde gerekçeli eleştiri yapması istenmelidir.",
       "source_locator": "basılı s.71 / PDF s.72; QR video gerekli"
     }
   ]

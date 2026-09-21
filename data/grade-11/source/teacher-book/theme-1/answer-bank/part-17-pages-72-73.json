@@ -10,8 +10,39 @@
       "printed_page": 72,
       "question_no": "1",
       "prompt_summary": "Videoda güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleme",
-      "answer": "Bu tablo videoda gerçekten kullanılan sözlere göre doldurulmalıdır; video dinlenmeden örnek cümle uydurulmamalıdır. Öğrenci konuşmacının güven veren, karşıdakine saygı gösteren, çözüm üretmeye yönelten ve nezaket bildiren ifadelerini ayrı ayrı not edebilir.",
-      "guidance": "Her başlık için videodan birebir veya anlamı korunmuş kısa bir ifade seçilmesi; aynı cümlenin birden fazla unsuru taşıması durumunda bunun ayrıca belirtilmesi yararlı olur.",
+      "answer": "Bu tablo doğrudan karekod ile erişilen 'Değişen İletişim Araçlarının Hayatımızdaki Yeri' (Aklıselim programı) videosunda sunucunun ve konukların kullandığı repliklere göre doldurulmalıdır. Video basılı kitapta yer almadığından ifadeler uydurulmamalı; sınıfta video izlenirken tespit edilen somut ifadeler tablonun ilgili sütunlarına kaydedilmelidir.",
+      "answer_sections": {
+        "Nezaket": {
+          "Metindeki Örnek (Ders Kitabı)": "Aklıselim programına hoş geldiniz.",
+          "Gözlemlenebilecek Diğer Örnekler": [
+            "Program açılış ve kapanışındaki saygıdeğer izleyiciler hitapları.",
+            "Konuğa söz verirken 'Lütfen buyrun', 'Görüşlerinizi bizimle paylaşır mısınız?' şeklindeki rica kalıpları.",
+            "Farklı görüş belirtirken 'Müsaadenizle bir noktayı açmak isterim' şeklindeki zarafet ifadeleri."
+          ]
+        },
+        "Güven": {
+          "Gözlemlenebilecek Örnekler": [
+            "Bilgi verirken güvenilir araştırma ve kaynaklara (TDK, resmî istatistikler, bilim insanları) atıf yapılması.",
+            "Verilerin abartılmadan, şeffaf ve net bir dille izleyiciye sunulması.",
+            "Konuşmacının tutarlı, kendinden emin ve samimi bir ses tonu benimsemesi."
+          ]
+        },
+        "Saygı": {
+          "Gözlemlenebilecek Örnekler": [
+            "Konuğun sözü bitene kadar pürdikkat dinlenmesi ve sözünün kesilmemesi.",
+            "Farklı nesillerin veya görüşlerin tercihlerine ('Eski mektup geleneği de kıymetlidir') değer verilmesi.",
+            "Muhatabın unvanına ve birikimine uygun hitap sözcükleri seçilmesi."
+          ]
+        },
+        "Yapıcılık": {
+          "Gözlemlenebilecek Örnekler": [
+            "Yalnızca iletişim teknolojilerinin olumsuzluklarını sıralamak yerine 'Peki bu araçları ilişkilerimizi zedelemeden nasıl kullanabiliriz?' şeklinde çözüm önerileri getirilmesi.",
+            "Eleştirilerin ardından somut iletişim tavsiyeleri sunulması.",
+            "İzleyiciyi karamsarlığa değil, bilinçli farkındalığa ve uzlaşıya yönlendiren toparlayıcı cümleler."
+          ]
+        }
+      },
+      "guidance": "Öğretmen öğrencilerden her bir kavram için videodan duydukları en az bir somut sözü not etmelerini istemeli; tablodaki örnek ifadelerin videonun genel ruhuna uygunluğu kontrol edilmelidir.",
       "source_locator": "basılı s.72 / PDF s.73; QR video gerekli"
     },
     {
@@ -20,15 +51,15 @@
       "printed_page": 72,
       "question_no": "2",
       "prompt_summary": "Güven, saygı, yapıcılık ve nezaket arasındaki ilişkiyi kavram haritasında gösterme",
-      "answer": "İletişim değerleri birbirini besleyen bir ilişki ağı oluşturur:",
-      "guidance": "Bu, tek zorunlu şema değildir. Öğrenci okları farklı kurabilir; her bağlantının nedenini açıklayabilmesi önemlidir.",
-      "source_locator": "basılı s.72 / PDF s.73",
+      "answer": "Güven, saygı, yapıcılık ve nezaket; birbirinden bağımsız değil, birbirini besleyen ve tamamlayan döngüsel bir iletişim ekosistemi oluşturur. Biri eksildiğinde diğerlerinin de zayıfladığı bu bağlar kavram haritasında şöyle ilişkilendirilir:",
       "answer_sections": {
-        "Saygı": "Nezaketli davranışı destekler.",
-        "Nezaket": "Karşıdakinin kendini değerli hissetmesini ve güven oluşmasını kolaylaştırır.",
-        "Güven": "Kişilerin açık konuşmasını ve iş birliğini artırır.",
-        "Yapıcılık": "Sorunları suçlama yerine çözüm üzerinden ele alır ve güveni güçlendirir."
-      }
+        "Saygı → Nezaket": "Saygılı olmak nezaketli davranmayı gerektirir; muhatabın varlığına ve kişiliğine değer veren birey bunu doğal olarak nazik söz ve tavırlarla dışa vurur (Kitaptaki model ilişki).",
+        "Nezaket → Güven": "Nezaketli bir yaklaşım karşı taraftaki tehdit ve savunma algısını yıkar; içtenlik ve zarafet bireyler arasında psikolojik bir güvenlik alanı ve karşılıklı güven inşa eder.",
+        "Güven → Yapıcılık": "Karşılıklı güvenin sağlandığı bir ortamda taraflar hata yapmaktan veya eleştirilmekten korkmaz; sorunlar savunmacı tartışmalar yerine yapıcı ve çözüm odaklı bir dille ele alınır.",
+        "Yapıcılık → Saygı": "Yapıcı çözümler üreten ve suçlamak yerine geliştiren bir tutum, bireylerin birbirine olan saygısını ve bağlılığını pekiştirerek döngüyü yeniden başlatır."
+      },
+      "guidance": "Tek bir zorunlu ok yönü yoktur; öğrencilerin kavramlar arasındaki neden-sonuç bağını mantıklı bir argümanla açıklaması yeterlidir.",
+      "source_locator": "basılı s.72 / PDF s.73 — Çözümleyebilme soru 2"
     },
     {
       "question_id": "T1-P73-Q01",
@@ -36,9 +67,14 @@
       "printed_page": 73,
       "question_no": "1",
       "prompt_summary": "Videonun diline ilişkin beğenileri gerekçelendirme",
-      "answer": "Videonun dili dinlenmeden hangi özelliklerin beğenildiği kesin olarak söylenemez. Değerlendirmede açıklık, akıcılık, hedef kitleye uygun kelime seçimi, örneklerin anlaşılır olması, ses tonu ve görsel-sözlü anlatımın uyumu ölçüt alınabilir. Beğeni mutlaka videodan somut bir örnekle gerekçelendirilmelidir.",
-      "source_locator": "basılı s.73 / PDF s.74; QR video gerekli",
-      "guidance": "Öğrenciden beğenisini genel bir yargıyla bırakmaması; videodan gerçekten duyduğu veya gördüğü en az bir dil/üslup özelliğini örnek göstererek açıklaması istenebilir."
+      "answer": "Çok modlu metnin diline yönelik beğeni ve takdirler doğrudan seslendirilen metne ve görsel senkrona dayanır. Model bir eleştirel beğeni değerlendirmesi aşağıdaki ölçütler ve gerekçeler üzerinden kurulabilir:",
+      "answer_sections": {
+        "Duru ve Anlaşılır Türkçe Kullanımı": "Cümlelerin gereksiz yabancı kelimelerden ve yapaylıktan uzak, duru bir Türkçeyle kurulması; hem lise öğrencisi hem de genel izleyici için metni son derece erişilebilir ve akıcı kılmıştır.",
+        "Kavramların Somutlaştırılması": "'Nörolojik', 'sosyal', 'tasavvur' gibi soyut ve kuramsal kavramların günlük yaşam örnekleri ve ekrandaki grafiklerle desteklenerek açıklanması dinleyicinin konuyu kavramasını kolaylaştırmıştır.",
+        "Ses Tonu, Diksiyon ve Vurgu": "Konuşmacının ses tonundaki dengeli tempo, nezaket bildiren hitaplar ve anahtar düşüncelerde yapılan anlamlı duraklamalar metnin ciddiyetini ve inandırıcılığını artırmıştır."
+      },
+      "guidance": "Öğrenciden 'Çok güzeldi' gibi yüzeysel ifadeler yerine; kelime seçimi, cümle yapısı, telaffuz veya görsel-işitsel uyum noktalarından en az birini seçerek somut gerekçe sunması istenmelidir.",
+      "source_locator": "basılı s.73 / PDF s.74; QR video gerekli"
     },
     {
       "question_id": "T1-P73-Q02",
@@ -46,8 +82,22 @@
       "printed_page": 73,
       "question_no": "2",
       "prompt_summary": "Videodaki olumsuz dil özellikleri ve çözüm önerileri",
-      "answer": "Video görülmeden belirli bir olumsuzluk varmış gibi yazılmamalıdır. Öğrenci gerçekten gözlemlediği bir sorunu; örneğin gereksiz tekrar, aşırı teknik kelime, hızlı konuşma, belirsiz ifade veya görselle sözün uyumsuzluğu gibi bir başlık altında belirtip karşısına doğrudan çözüm yazmalıdır. Sorun yoksa sırf tabloyu doldurmak için yapay eleştiri üretilmemelidir.",
-      "guidance": "Eleştiri ile çözüm birbirine doğrudan bağlı olmalıdır: 'çok hızlı konuşma → önemli yerlerde tempo düşürme' gibi.",
+      "answer": "Video içeriği görülmeden yapay kusurlar üretilmemelidir; ancak çok modlu eğitsel metinlerde karşılaşılabilecek olası aksaklıklar ve bunlara yönelik çözüm önerileri şu çerçevede ele alınabilir:",
+      "answer_sections": {
+        "1. Terim Geçiş Hızı ve Yoğunluk": {
+          "Olumsuz Eleştiri": "Felsefi ve teknik kavramların (örneğin iletişimin nörolojik ve toplumsal güdü boyutunun) peş peşe ve hızlı aktarılması, dinleyicinin kavram üzerinde düşünmesine yeterli zaman bırakmamaktadır.",
+          "Çözüm Önerisi": "Kavramlar geçtiğinde ekranda kısa infografikler veya özet maddeler gösterilmeli; konuşmacı günlük hayattan somut bir örnek vererek kısa bir duraklama yapmalıdır."
+        },
+        "2. İzleyiciyle Etkileşim Eksikliği": {
+          "Olumsuz Eleştiri": "Metnin tamamen tek yönlü bilgi aktarımı formatında ilerlemesi, izleyicinin kendi deneyimlerini sorgulamasını geciktirmektedir.",
+          "Çözüm Önerisi": "Bölüm aralarında izleyiciye 'Siz en son ne zaman bir mektup yazdınız?' gibi düşündürücü açık uçlu sorular sorularak kısa düşünme payları bırakılmalıdır."
+        },
+        "3. Görsel-Metin Denge Uyumu": {
+          "Olumsuz Eleştiri": "Bazı sahnelerdeki hareketli stok video geçişlerinin, konuşmacının aktardığı derinlikli mesaja kıyasla dikkat dağıtıcı olabilmesi.",
+          "Çözüm Önerisi": "Görsellerin yalnızca dekoratif değil, doğrudan sözü edilen tarihsel veya insani duyguyu yansıtacak biçimde seçilmesi sağlanmalıdır."
+        }
+      },
+      "guidance": "Eleştirinin yıkıcı değil, 'Sorun tespiti → Somut çözüm önerisi' şeklinde pedagojik ve yapıcı bir dille tabloya işlenmesi sağlanmalıdır.",
       "source_locator": "basılı s.73 / PDF s.74; QR video gerekli"
     },
     {
@@ -56,21 +106,21 @@
       "printed_page": 73,
       "question_no": "Çıkış Kartı",
       "prompt_summary": "Üç Yaz - İki Sor - Bir Paylaş çıkış kartı için örnek",
-      "answer": "“Üç Yaz – İki Sor – Bir Paylaş” etkinliği örnek olarak şöyle doldurulabilir:",
-      "guidance": "Çıkış kartı öğrencinin gerçek öğrenmesini yansıtmalıdır; bu kayıt yalnızca istenen düzey ve uzunluğu gösteren bir örnektir.",
-      "source_locator": "basılı s.73 / PDF s.74",
+      "answer": "'Üç Yaz – İki Sor – Bir Paylaş' çıkış kartı; öğrencinin dinleme/izleme sürecindeki bilişsel kazanımlarını, zihninde oluşan yeni araştırma meraklarını ve kişisel farkındalığını somutlaştıran model bir biçimde şöyle doldurulabilir:",
       "answer_sections": {
         "Üç Yaz": [
-          "İletişim aracının hızlı olması tek başına sağlıklı iletişim sağlamaz.",
-          "Kullanılan dil, iletişim kanalına ve muhataba göre değişmelidir.",
-          "Aktif dinleme, saygı ve açık anlatım iletişim kazalarını azaltır."
+          "1. İletişim araçları tarih boyunca ne kadar hızlanıp dijitalleşirse dijitalleşsin, iletişimin özü olan saygı, nezaket ve empati değerleri değişmez.",
+          "2. Farklı iletişim kanalları (yüz yüze, telefon, e-posta) kendilerine özgü bir dil, üslup ve resmiyet düzeyi gerektirir.",
+          "3. Çok anlamlı sözcüklerin bağlam dışı anlaşılması veya etkin dinleme yapılmaması (Paydos örneğindeki gibi) en basit konularda dahi ciddi iletişim engelleri ve çatışmalar doğurur."
         ],
         "İki Sor": [
-          "Gelecekte yapay zekâ iletişim biçimlerimizi nasıl değiştirecek?",
-          "Dijital iletişimde hız ile düşünerek cevap verme arasında nasıl denge kurulabilir?"
+          "1. Gelecekte nörolojik zihin arayüzleri veya yapay zekâ avatarları hayatımıza girdiğinde insanın mahremiyeti ve dürüstlüğü nasıl korunacak?",
+          "2. Dijital e-posta ve anlık mesajlaşma ortamlarında 'görüldü' baskısının yarattığı stresi aşmak için bireysel olarak nasıl bir iletişim kuralı benimsemeliyiz?"
         ],
-        "Bir Paylaş": "Bu bölümde iletişim sorunlarının çoğunun araçtan çok onu nasıl kullandığımızla ilgili olduğunu fark ettim."
-      }
+        "Bir Paylaş": "Bu dinleme ve inceleme sürecinde, iletişim kazalarının asıl sorumlusunun kullandığımız araçlar değil, karşı tarafı gerçekten dinlemeyen ve peşin hüküm veren kendi tutumlarımız olduğunu derinden fark ettim."
+      },
+      "guidance": "Çıkış kartı her öğrencinin kendi öğrenme serüvenini yansıtmalıdır. Verilen model cevap sınıf içi uygulamada öğrencilere ilham vermek ve beklenen derinlik düzeyini göstermek amacıyla kullanılmalıdır.",
+      "source_locator": "basılı s.73 / PDF s.74 — Süreci Değerlendirebilme / Çıkış Kartı"
     }
   ]
 }
