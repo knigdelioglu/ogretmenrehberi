@@ -113,11 +113,11 @@
         "Düşünceyi Geliştirme Yolları": [
           "Karşılaştırma (Dostoyevski ile Stendhal, Rus romanı ile Fransız romanı, mazi koridoru ile vaka sathı)",
           "Benzetme ve Somutlama (Yazı yazmayı yıllarca keman çalmaya benzetme; geçmiş tahlillerini 'mazi koridoru'na benzetme)",
-          "Örnekleme (Julien Sorel, Uzun Mehmet, Kazan Mektebi örnekleri)"
+          "Örnekleme (Julien Sorel ve Uzun Mehmet örnekleri)"
         ],
         "Açık ve Örtük İletiler": {
-          "Açık ileti": "Çalışmak kabiliyeti yaratır; yazmak için cesaret ve sabır şarttır.",
-          "Örtük ileti": "Edebiyat ve sanat masa başında soyut bir heves değil, insan ruhunu ve toplum gerçekliğini bütünüyle kavrama mücadelesidir."
+          "Açık ileti": "Çalışmak kabiliyeti keşfedip geliştirebilir; yazmak için cesaret, sabır ve irade gerekir.",
+          "Örtük ileti": "Yazma ve düşünme, kişinin kendini tanımasına ve geliştirmesine yardım eden; süreklilik ve emek isteyen bir süreçtir."
         }
       },
       "guidance": "Çalışma kâğıdında ana düşüncenin tek bir kuşatıcı cümleyle ifade edilmesine, anlatım biçimlerinin ise metinden somut bölümlerle eşleştirilmesine dikkat edilmelidir."
@@ -128,14 +128,15 @@
       "printed_page": 41,
       "question_no": "Fark Edelim",
       "prompt_summary": "Mektuptan, biyografiden ve Orhan Okay'ın metninden hareketle Mehmet Kaplan'ın hayatı ve düşünce dünyasına ilişkin tespitler",
-      "answer": "Metinler bir arada incelendiğinde Mehmet Kaplan'ın akademik disiplini, çalışma ahlakı, öğrencileri ve dostlarına karşı diğerkâm (özgeci) tavrı ile edebiyata dogmatik olmayan, çok yönlü ve tahlilci bakışı somut biçimde ortaya çıkar.",
+      "answer": "Mektup, biyografi ve Orhan Okay'ın tanıklık metni birlikte okunduğunda Mehmet Kaplan'ın günlük ve akademik hayatına, çalışma anlayışına, insan ilişkilerine ve edebiyata bakışına ilişkin birbirini tamamlayan ayrıntılar görülür.",
       "source_locator": "basılı s.41 / PDF s.42; ana metin ve biyografi s.37-38",
       "answer_sections": {
-        "Mektuptan yansıyan hayatı ve ruh hâli": "İstanbul Üniversitesi Edebiyat Fakültesinde asistanlık dönemi, sınavlar, Küllük kahvesi çevresi, Eskişehir bağları, ailesine (Behice, Münevver, Kemal) düşkünlüğü, derin yalnızlık hissi ve Namık Kemal üzerine yürüttüğü akademik tez çalışmaları.",
-        "Mektuptan yansıyan düşünce dünyası": "Edebiyatta psikolojik derinliği, karakter canlılığını ve çok sesliliği önemsemesi (Dostoyevski hayranlığı); kabiliyetin çalışmayla kazanılan bir irade eseri olduğunu savunması; dostunu yetiştirmeye ve cesaretlendirmeye adanmış hocalık vasfı.",
-        "Biyografi ve Orhan Okay'ın metninden tamamlanan yönler": "Yeni Türk Edebiyatı kürsüsünün kurucusu olması, Tanpınar ile çalışması, mektuplarını birer 'ders takriri' gibi öğrencilerini yetiştirmek için kullanması; asla kendi otoritesini dayatmayan, metotların alternatiflerine açık ve bilim ahlakını önceleyen hocalık kimliği."
+        "Mektuptan doğrudan görülenler": "Fakültede sınavların başlaması, Küllük kahvesine gitmesi, yalnızlık duygusu, ailesiyle ilişkileri, Eskişehir'e gitme planı, Namık Kemal'in eserlerini okuyup tahlil etmesi ve gelecek yıl onun çevresiyle hayatını araştırmayı planlaması; Dostoyevski ve roman tekniği üzerine düşünmesi; Âli'yi çalışmaya ve yazmaya teşvik etmesi.",
+        "Biyografiden öğrenilenler": "1935'te İstanbul Üniversitesi Edebiyat Fakültesi Türk Dili ve Edebiyatı Bölümüne kaydolduğu; Tanzimat'ın 100. yılı dolayısıyla kurulan Yeni Türk Edebiyatı kürsüsünde asistan olduğu ve kürsünün başına getirilen Ahmet Hamdi Tanpınar'la çalıştığı; sonraki yıllarda edebiyat, kültür ve dil alanlarında araştırma, inceleme ve denemeler verdiği.",
+        "M. Orhan Okay'ın tanıklığından öğrenilenler": "Kaplan'ın karşısındaki insanın sorunlarıyla yakından ilgilenen diğerkâm bir hoca olduğu; mektuplarının öğrencileri ve genç araştırmacıları yetiştiren birer ders niteliği taşıdığı; Türk üniversitelerinde Yeni Türk Edebiyatı disiplininin kurucusu ve yol göstericilerinden biri sayıldığı; kendi yöntemini tek ve değişmez doğru olarak dayatmayıp alternatif metotlara açık olduğu.",
+        "Birlikte değerlendirildiğinde": "Mektuptaki çalışma disiplini, edebî merakı ve yönlendirici tavır; biyografi ve Orhan Okay'ın tanıklığındaki akademisyen, araştırmacı ve rehber hoca kimliğiyle örtüşür. Böylece kişisel mektupta görülen özelliklerin sonraki akademik kişiliğinin önemli çizgileriyle uyumlu olduğu söylenebilir."
       },
-      "guidance": "Öğrencilerin mektuptaki kişisel itiraflar ile biyografik ve tanıklık metnindeki nesnel gerçeklikleri birbiriyle örtüştürmeleri sağlanmalıdır.",
+      "guidance": "Öğrenciden her bilgiyi hangi kaynaktan çıkardığını belirtmesini isteyin: “Bunu mektupta mı görüyoruz, biyografide mi öğreniyoruz, yoksa Orhan Okay mı söylüyor?” Ardından bu üç kaynağın Kaplan'ın hangi ortak yönünü desteklediğini sordurun.",
       "evidence_quotes": [
         "Fakülte’de imtihanlar başladı",
         "Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim",
