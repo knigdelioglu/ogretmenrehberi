@@ -1,7 +1,9 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -12,6 +14,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
@@ -25,12 +28,14 @@ import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
+import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.toStudentProjection
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
+import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
 
 /**
  * The Android in-tablet class presentation surface.
@@ -44,13 +49,24 @@ internal fun PresentationLessonScreen(
     lesson: LessonData,
     state: LessonSession,
     dispatch: (LessonCommand) -> Unit,
-    exit: () -> Unit
+    exit: () -> Unit,
+    actionState: LessonActionUiState = LessonActionUiState(),
+    retryLastAction: () -> Unit = {}
 ) {
     val sourceStep = lesson.steps.first { it.id == state.stepId }
     val step = LessonEngine.effectiveStep(sourceStep, state.overrides[sourceStep.id])
     val projection = toStudentProjection(lesson, state)
     val answerVisible = RevealKey.ANSWER in state.revealed
     val ordinal = state.order.indexOf(state.stepId)
+    val density = lessonVisualDensity(step.density)
+    val answerDetails = projection.answerSections?.takeIf {
+        readableAnswerValue(it) != projection.answerText
+    }
+    val advanceEnabled = step.revealOrder.any { it !in state.revealed } ||
+        ordinal < state.order.lastIndex
+    val send: (LessonCommand) -> Unit = { command ->
+        if (!actionState.busy) dispatch(command)
+    }
 
     Column(
         modifier = Modifier
@@ -58,38 +74,49 @@ internal fun PresentationLessonScreen(
             .background(MaterialTheme.colorScheme.background)
             .windowInsetsPadding(WindowInsets.safeDrawing)
     ) {
-        LazyColumn(
-            modifier = Modifier.weight(1f).fillMaxWidth(),
-            contentPadding = PaddingValues(
-                horizontal = LessonSpacing.large,
-                vertical = LessonSpacing.medium
-            ),
-            verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+        Surface(
+            color = MaterialTheme.colorScheme.surface,
+            shadowElevation = 4.dp
         ) {
-            item {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(
+                    horizontal = LessonSpacing.medium,
+                    vertical = LessonSpacing.tiny
+                ),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
+                    Text(
+                        "SINIF SUNUMU",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.secondary
+                    )
+                    Text(
+                        "${ordinal + 1} / ${state.order.size}",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                }
+                TextButton(
+                    onClick = exit,
+                    modifier = Modifier.heightIn(min = LessonTarget.minimum)
                 ) {
-                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
-                        Text(
-                            "SINIF SUNUMU",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.secondary
-                        )
-                        Text(
-                            "${ordinal + 1} / ${state.order.size}",
-                            style = MaterialTheme.typography.titleMedium
-                        )
-                    }
-                    TextButton(
-                        onClick = exit,
-                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                    ) {
-                        Text("Sunumdan çık")
-                    }
+                    Text("Sunumdan çık")
                 }
             }
+        }
+        LessonActionStatus(actionState, retryLastAction)
+        Box(
+            modifier = Modifier.weight(1f).fillMaxWidth(),
+            contentAlignment = androidx.compose.ui.Alignment.TopCenter
+        ) {
+            LazyColumn(
+                modifier = Modifier.fillMaxWidth().widthIn(max = 960.dp),
+                contentPadding = PaddingValues(
+                    horizontal = density.screenPadding,
+                    vertical = density.blockGap
+                ),
+                verticalArrangement = Arrangement.spacedBy(density.blockGap)
+            ) {
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
                     Text(lesson.title, style = MaterialTheme.typography.headlineLarge)
@@ -108,21 +135,23 @@ internal fun PresentationLessonScreen(
                     shape = MaterialTheme.shapes.extraLarge
                 ) {
                     Column(
-                        modifier = Modifier.padding(LessonSpacing.large),
+                        modifier = Modifier.padding(density.cardPadding),
                         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
                     ) {
                         Text(
-                            if (sourceStep.answer?.entryType == "source_limited")
+                            if (step.answer?.entryType == "source_limited")
                                 "KAYNAK SINIRI"
-                            else sourceStep.source.taskType.uppercase(),
+                            else step.source.taskType.uppercase(),
                             style = MaterialTheme.typography.labelLarge,
                             color = MaterialTheme.colorScheme.secondary
                         )
-                        Text(
-                            projection.answerText ?: projection.prompt
+                        AnimatedContent(
+                            targetState = projection.answerText ?: projection.prompt
                                 ?: step.displayPrompt,
-                            style = MaterialTheme.typography.headlineLarge
-                        )
+                            label = "presentation-prompt-answer"
+                        ) { text ->
+                            Text(text, style = MaterialTheme.typography.headlineLarge)
+                        }
                     }
                 }
             }
@@ -145,7 +174,7 @@ internal fun PresentationLessonScreen(
                             shape = MaterialTheme.shapes.extraLarge
                         ) {
                             Column(
-                                modifier = Modifier.padding(LessonSpacing.large),
+                                modifier = Modifier.padding(density.cardPadding),
                                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                             ) {
                                 projection.visibleVocabulary.forEach { (term, value) ->
@@ -170,7 +199,7 @@ internal fun PresentationLessonScreen(
                     }
                 }
             }
-            if (answerVisible && step.layout != LayoutKind.VOCABULARY) {
+            if (answerVisible && step.layout != LayoutKind.VOCABULARY && answerDetails != null) {
                 item {
                     Surface(
                         modifier = Modifier.fillMaxWidth(),
@@ -178,14 +207,11 @@ internal fun PresentationLessonScreen(
                         shape = MaterialTheme.shapes.extraLarge
                     ) {
                         Column(
-                            modifier = Modifier.padding(LessonSpacing.large),
+                            modifier = Modifier.padding(density.cardPadding),
                             verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                         ) {
-                            Text("CEVAP", style = MaterialTheme.typography.labelLarge)
-                            projection.answerText?.let {
-                                Text(it, style = MaterialTheme.typography.headlineMedium)
-                            }
-                            AnswerSections(projection.answerSections)
+                            Text("CEVAP AYRINTILARI", style = MaterialTheme.typography.labelLarge)
+                            AnswerSections(answerDetails)
                         }
                     }
                 }
@@ -204,6 +230,7 @@ internal fun PresentationLessonScreen(
             projection.explanation?.let { value ->
                 item { PresentationRevealCard("AÇIKLAMA", value) }
             }
+            }
         }
         Surface(
             color = MaterialTheme.colorScheme.surface,
@@ -219,21 +246,22 @@ internal fun PresentationLessonScreen(
                 horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
             ) {
                 FilledTonalButton(
-                    onClick = { dispatch(LessonCommand.Previous) },
+                    onClick = { send(LessonCommand.Previous) },
                     modifier = Modifier.weight(1f)
                         .heightIn(min = LessonTarget.minimum),
-                    enabled = ordinal > 0
+                    enabled = !actionState.busy && ordinal > 0
                 ) { Text("Önceki") }
                 FilledTonalButton(
-                    onClick = { dispatch(LessonCommand.RevealNext) },
-                    modifier = Modifier.weight(1f)
-                        .heightIn(min = LessonTarget.minimum)
-                ) { Text("Aç / ilerle") }
-                FilledTonalButton(
-                    onClick = { dispatch(LessonCommand.Next) },
+                    onClick = { send(LessonCommand.RevealNext) },
                     modifier = Modifier.weight(1f)
                         .heightIn(min = LessonTarget.minimum),
-                    enabled = ordinal < state.order.lastIndex
+                    enabled = !actionState.busy && advanceEnabled
+                ) { Text(nextLessonActionLabel(step, state)) }
+                FilledTonalButton(
+                    onClick = { send(LessonCommand.Next) },
+                    modifier = Modifier.weight(1f)
+                        .heightIn(min = LessonTarget.minimum),
+                    enabled = !actionState.busy && ordinal < state.order.lastIndex
                 ) { Text("Sonraki") }
             }
         }

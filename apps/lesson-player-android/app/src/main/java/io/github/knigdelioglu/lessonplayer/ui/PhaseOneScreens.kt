@@ -12,26 +12,34 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Tab
+import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.content.LessonData
 import io.github.knigdelioglu.lessonplayer.player.BackupUiState
+import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
@@ -49,6 +57,8 @@ internal fun PhaseOneScreen(
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit,
     dispatch: (LessonCommand) -> Unit,
+    actionState: LessonActionUiState,
+    retryLastAction: () -> Unit,
     teacherPlan: TeacherPlanUiState,
     toggleTeacherMark: (TeacherTrack, String) -> Unit,
     backupState: BackupUiState,
@@ -60,7 +70,9 @@ internal fun PhaseOneScreen(
         AppScreen.LESSON -> SessionLessonScreen(
             bundle.byId.getValue(session.lessonId),
             session,
-            dispatch
+            dispatch,
+            actionState,
+            retryLastAction
         )
         AppScreen.GUIDE -> GuideScreen(bundle, teacherPlan, toggleTeacherMark)
         AppScreen.SETTINGS -> SettingsScreen(bundle, backupState, beginExport, beginImport)
@@ -158,7 +170,7 @@ internal fun LessonOutlinePane(
 }
 
 @Composable
-private fun PhaseTag(label: String = "FAZ 4 · UYARLANABİLİR DERS YÜZEYİ") {
+private fun StatusTag(label: String = "ÇEVRİMDIŞI DERS PAKETİ") {
     Surface(
         color = MaterialTheme.colorScheme.primaryContainer,
         contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
@@ -212,6 +224,22 @@ internal fun LibraryScreen(
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit
 ) {
+    var searchQuery by rememberSaveable { mutableStateOf("") }
+    val query = searchQuery.trim()
+    val visibleLessonsByTheme = bundle.workflow.themes.associate { theme ->
+        theme.id to bundle.byTheme[theme.id].orEmpty().filter { lesson ->
+            query.isBlank() ||
+                theme.title.contains(query, ignoreCase = true) ||
+                listOf(
+                    lesson.title,
+                    lesson.subtitle,
+                    lesson.lessonId,
+                    lesson.printedPageRange
+                ).any { value -> value.contains(query, ignoreCase = true) }
+        }
+    }
+    val visibleLessonCount = visibleLessonsByTheme.values.sumOf { it.size }
+
     LazyColumn(
         modifier = Modifier.fillMaxWidth(),
         contentPadding = PaddingValues(LessonSpacing.large),
@@ -219,7 +247,7 @@ internal fun LibraryScreen(
     ) {
         item {
             Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-                PhaseTag()
+                StatusTag()
                 Text("Ders, elinin altında.", style = MaterialTheme.typography.headlineLarge)
                 Text(
                     "${bundle.lessons.size} ders · ${bundle.lessons.sumOf { it.steps.size }} adım · internet gerekmez",
@@ -227,6 +255,16 @@ internal fun LibraryScreen(
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
+        }
+        item {
+            OutlinedTextField(
+                value = searchQuery,
+                onValueChange = { searchQuery = it },
+                modifier = Modifier.fillMaxWidth(),
+                label = { Text("Ders ara") },
+                supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
+                singleLine = true
+            )
         }
         item {
             SectionCard(
@@ -243,28 +281,45 @@ internal fun LibraryScreen(
                 }
             )
         }
-        bundle.workflow.themes.forEach { theme ->
+        if (visibleLessonCount == 0) {
             item {
-                Text(
-                    theme.title,
-                    style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.padding(top = LessonSpacing.medium)
-                )
-            }
-            items(bundle.byTheme[theme.id].orEmpty(), key = { it.lessonId }) { lesson ->
-                SectionCard(
-                    eyebrow = "11. SINIF · ${theme.id} · BASILI s. ${lesson.printedPageRange}",
-                    title = lesson.title,
-                    description = "${lesson.steps.size} adım · ${lesson.subtitle}",
-                    action = {
-                        Button(
-                            onClick = { selectLesson(lesson.lessonId) },
-                            modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                        ) {
-                            Text("Adımları incele")
-                        }
+                Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                    Text("Ders bulunamadı", style = MaterialTheme.typography.titleLarge)
+                    Text(
+                        "Arama metnini değiştirerek tekrar deneyin.",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    TextButton(onClick = { searchQuery = "" }) {
+                        Text("Aramayı temizle")
                     }
-                )
+                }
+            }
+        }
+        bundle.workflow.themes.forEach { theme ->
+            val lessons = visibleLessonsByTheme[theme.id].orEmpty()
+            if (lessons.isNotEmpty()) {
+                item {
+                    Text(
+                        theme.title,
+                        style = MaterialTheme.typography.headlineMedium,
+                        modifier = Modifier.padding(top = LessonSpacing.medium)
+                    )
+                }
+                items(lessons, key = { it.lessonId }) { lesson ->
+                    SectionCard(
+                        eyebrow = "11. SINIF · ${theme.id} · BASILI s. ${lesson.printedPageRange}",
+                        title = lesson.title,
+                        description = "${lesson.steps.size} adım · ${lesson.subtitle}",
+                        action = {
+                            Button(
+                                onClick = { selectLesson(lesson.lessonId) },
+                                modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                            ) {
+                                Text("Adımları incele")
+                            }
+                        }
+                    )
+                }
             }
         }
     }
@@ -290,6 +345,7 @@ internal fun GuideScreen(
     val portfolioDone = portfolioIds.count { marks.contains(TeacherTrack.PORTFOLIO, it) }
     val warning = (planState as? TeacherPlanUiState.Error)?.message
         ?: (planState as? TeacherPlanUiState.Ready)?.warning
+    var selectedTrack by rememberSaveable { mutableStateOf(TeacherTrack.WORKSHOP) }
 
     LazyColumn(
         modifier = Modifier.testTag("teacher-guide-list"),
@@ -297,7 +353,7 @@ internal fun GuideScreen(
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
     ) {
         item {
-            PhaseTag("FAZ 5 · ÖĞRETMEN REHBERİ")
+            StatusTag("ÖĞRETMEN PLANLAMA")
             Text(
                 "Üç ayrı takip hattı",
                 modifier = Modifier.padding(top = LessonSpacing.medium),
@@ -317,7 +373,27 @@ internal fun GuideScreen(
             }
         }
         item {
-            SectionCard(
+            TabRow(selectedTabIndex = selectedTrack.ordinal) {
+                Tab(
+                    selected = selectedTrack == TeacherTrack.WORKSHOP,
+                    onClick = { selectedTrack = TeacherTrack.WORKSHOP },
+                    text = { Text("Atölye") }
+                )
+                Tab(
+                    selected = selectedTrack == TeacherTrack.ANNUAL,
+                    onClick = { selectedTrack = TeacherTrack.ANNUAL },
+                    text = { Text("Yıllık plan") }
+                )
+                Tab(
+                    selected = selectedTrack == TeacherTrack.PORTFOLIO,
+                    onClick = { selectedTrack = TeacherTrack.PORTFOLIO },
+                    text = { Text("Portfolyo") }
+                )
+            }
+        }
+        if (selectedTrack == TeacherTrack.WORKSHOP) {
+            item {
+                SectionCard(
                 eyebrow = "1 · EDEBİYAT ATÖLYESİ",
                 title = "Uygulama ve değerlendirme",
                 description = "${marks.workshop.size}/$workshopTotal plan işareti",
@@ -341,10 +417,12 @@ internal fun GuideScreen(
                         }
                     }
                 }
-            )
+                )
+            }
         }
-        item {
-            SectionCard(
+        if (selectedTrack == TeacherTrack.ANNUAL) {
+            item {
+                SectionCard(
                 eyebrow = "2 · DÖRT ESER + BİR FİLM",
                 title = "Yıllık sunum planı",
                 description = "${marks.annual.size}/$annualTotal plan işareti",
@@ -361,10 +439,12 @@ internal fun GuideScreen(
                         }
                     }
                 }
-            )
+                )
+            }
         }
-        item {
-            SectionCard(
+        if (selectedTrack == TeacherTrack.PORTFOLIO) {
+            item {
+                SectionCard(
                 eyebrow = "3 · PORTFOLYO VE DEĞERLENDİRME",
                 title = "Kanıt ve yansıtma takibi",
                 description = "$portfolioDone/${portfolioIds.size} kanıt işareti",
@@ -418,7 +498,8 @@ internal fun GuideScreen(
                         }
                     }
                 }
-            )
+                )
+            }
         }
     }
 }
@@ -430,13 +511,19 @@ private fun TeacherMarkRow(
     onCheckedChange: (Boolean) -> Unit
 ) {
     Row(
-        modifier = Modifier.fillMaxWidth().heightIn(min = LessonTarget.minimum),
+        modifier = Modifier.fillMaxWidth()
+            .heightIn(min = LessonTarget.minimum)
+            .toggleable(
+                value = checked,
+                role = Role.Checkbox,
+                onValueChange = onCheckedChange
+            ),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
     ) {
         Checkbox(
             checked = checked,
-            onCheckedChange = onCheckedChange
+            onCheckedChange = null
         )
         Text(
             label,
@@ -457,7 +544,7 @@ internal fun SettingsScreen(
         contentPadding = PaddingValues(LessonSpacing.large),
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
     ) {
-        item { PhaseTag() }
+        item { StatusTag("UYGULAMA VE VERİ") }
         item {
             Text("Tablet için tasarlandı", style = MaterialTheme.typography.headlineMedium)
             Text(

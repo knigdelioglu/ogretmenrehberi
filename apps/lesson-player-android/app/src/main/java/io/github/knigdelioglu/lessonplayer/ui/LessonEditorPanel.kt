@@ -164,7 +164,7 @@ internal fun LessonEditorPanel(
 
             Text("Açılım sırası", style = MaterialTheme.typography.titleMedium)
             Text(
-                "Ders içinde “Aç / ilerle” düğmesinin izleyeceği sıra.",
+                "Ders içinde gösterme ve sonraki adıma geçiş düğmesinin izleyeceği sıra.",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.secondary
             )
