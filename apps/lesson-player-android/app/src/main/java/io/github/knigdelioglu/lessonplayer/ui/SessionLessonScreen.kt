@@ -19,7 +19,10 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.heightIn
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
@@ -64,6 +67,7 @@ internal fun SessionLessonScreen(
                     dispatch(LessonCommand.SetPresentationMode(!state.presentationMode))
                 },
                 modifier = Modifier.fillMaxWidth()
+                    .heightIn(min = LessonTarget.minimum)
             ) {
                 Text(if (state.presentationMode) "Öğretmen görünümüne dön"
                     else "Sınıf sunumuna geç")
@@ -96,7 +100,15 @@ internal fun SessionLessonScreen(
                         FilledTonalButton(
                             onClick = { dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
                             modifier = Modifier.fillMaxWidth()
+                                .heightIn(min = LessonTarget.minimum)
                                 .padding(top = LessonSpacing.small)
+                                .semantics {
+                                    stateDescription = if (answerVisible) {
+                                        "Cevap açık"
+                                    } else {
+                                        "Cevap kapalı"
+                                    }
+                                }
                         ) {
                             Text(if (answerVisible) "Soruyu göster" else "Cevabı göster")
                         }
@@ -136,6 +148,14 @@ internal fun SessionLessonScreen(
                                         dispatch(LessonCommand.ToggleTerm(state.stepId, term))
                                     },
                                     modifier = Modifier.fillMaxWidth()
+                                    .heightIn(min = LessonTarget.minimum)
+                                    .semantics {
+                                        stateDescription = if (visible) {
+                                            "Anlam açık"
+                                        } else {
+                                            "Anlam kapalı"
+                                        }
+                                    }
                                 ) { Text(if (visible) "Gizle" else "Anlamı göster") }
                             }
                         }
@@ -145,6 +165,14 @@ internal fun SessionLessonScreen(
                                     dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER))
                                 },
                                 modifier = Modifier.fillMaxWidth()
+                                .heightIn(min = LessonTarget.minimum)
+                                .semantics {
+                                    stateDescription = if (answerVisible) {
+                                        "Tüm anlamlar açık"
+                                    } else {
+                                        "Tüm anlamlar kapalı"
+                                    }
+                                }
                             ) {
                                 Text(if (answerVisible) "Anlamları gizle"
                                     else "Bütün anlamları göster")
@@ -161,6 +189,14 @@ internal fun SessionLessonScreen(
                         OutlinedButton(
                             onClick = { dispatch(LessonCommand.ToggleReveal(key)) },
                             modifier = Modifier.fillMaxWidth()
+                            .heightIn(min = LessonTarget.minimum)
+                            .semantics {
+                                stateDescription = if (key in state.revealed) {
+                                    "Açık"
+                                } else {
+                                    "Kapalı"
+                                }
+                            }
                         ) {
                             Text(
                                 (if (key in state.revealed) "Gizle: " else "Göster: ") +
@@ -187,6 +223,14 @@ internal fun SessionLessonScreen(
                         onClick = {
                             dispatch(LessonCommand.ToggleReveal(RevealKey.NOTE))
                         }, modifier = Modifier.fillMaxWidth()
+                        .heightIn(min = LessonTarget.minimum)
+                        .semantics {
+                            stateDescription = if (RevealKey.NOTE in state.revealed) {
+                                "Açık"
+                            } else {
+                                "Kapalı"
+                            }
+                        }
                     ) { Text("Öğretmen notu") }
                     if (RevealKey.NOTE in state.revealed) {
                         step.content?.note?.let {
@@ -210,7 +254,8 @@ internal fun SessionLessonScreen(
             ) {
                 OutlinedButton(
                     onClick = { dispatch(LessonCommand.Previous) },
-                    modifier = Modifier.weight(1f),
+                    modifier = Modifier.weight(1f)
+                        .heightIn(min = LessonTarget.minimum),
                     enabled = ordinal > 0
                 ) { Text("Önceki") }
                 FilledTonalButton(
