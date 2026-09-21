@@ -9,53 +9,73 @@
       "entry_type": "question_answer",
       "printed_page": 48,
       "question_no": "1",
-      "prompt_summary": "Şişeye bırakılan mektubun iletişim amacı",
-      "answer": "Şişeye bırakılan mektubun amacı, kim olduğu önceden bilinmeyen bir alıcıyla iletişim kurmak, mesaj göndermek ve karşılık alınırsa yeni bir ilişki başlatmak olabilir. Metinde mektubu bulan kişinin e-posta yoluyla göndericilere ulaşması ve sonrasında sosyal medyada arkadaşlık kurulması bu iletişim amacının gerçekleştiğini gösterir.",
-      "source_locator": "basılı s.48 / PDF s.49"
+      "prompt_summary": "Rodos'tan denize atılan şişe mektubunun iletişim amacı",
+      "answer": "Şişe içinde denize bırakılan mektubun amacı; belirli bir alıcısı olmaksızın tesadüfe ve doğanın akışına bırakılmış, zaman ve mekân sınırlarını aşan sıra dışı bir merak, macera ve tanışma iletişimi başlatmaktır. Göndericiler, mektubun dünyanın herhangi bir kıyısında hiç tanımadıkları bir insana ulaşması ve onunla beklenmedik bir insani bağ kurma heyecanını hedeflemiştir.",
+      "source_locator": "basılı s.48 / PDF s.49",
+      "answer_sections": {
+        "Doğrudan İletişim Amacı": "Geleneksel posta ağının dışına çıkarak açık denizin akıntılarına emanet edilmiş rastlantısal bir köprü kurmak.",
+        "Metindeki Gerçekleşme": "Rodos'tan atılan mektubun Gazze sahilinde Gazzeli balıkçı Cihad Sultan tarafından bulunması ve mektuptaki e-posta adresi üzerinden sosyal medyada kıtalar arası bir dostluğa dönüşmesi bu hedefin gerçekleştiğini kanıtlar."
+      },
+      "guidance": "Öğrencilerin şişe mektubunu sıradan bir mektuptan ayıran 'belirsiz alıcı' ve 'rastlantısal kanal' ögelerine dikkat etmeleri sağlanmalıdır."
     },
     {
       "question_id": "T1-P48-Q02",
       "entry_type": "question_answer",
       "printed_page": 48,
       "question_no": "2",
-      "prompt_summary": "İletinin geç ulaşmasının iletişim üzerindeki etkisi",
-      "answer": "İletinin geç ulaşması, anlık haberleşme işlevini zayıflatabilir; bilgi güncelliğini kaybedebilir ve göndericinin beklediği cevap gecikebilir. Buna karşılık çok uzun süre sonra ulaşan bir mektup tarihî, duygusal ve hatıra değeri kazanabilir. Asker mektubunun yıllar sonra torunlara ulaşması, iletişim işlevi gecikse bile belgenin aile belleği açısından değerini koruyabileceğini gösterir.",
-      "source_locator": "basılı s.48 / PDF s.49"
+      "prompt_summary": "İletinin alıcıya ulaşma süresinin uzamasının iletişim üzerindeki etkileri",
+      "answer": "İletinin ulaşma süresinin uzaması, kısa vadede anlık haberleşme ve pratik bilgi akışı işlevini ortadan kaldırır; ancak uzun vadede iletiyi kişisel bir mesaj olmaktan çıkarıp paha biçilmez bir tarihî vesikaya, aile mirasına ve kolektif bellek unsuruna dönüştürür.",
+      "source_locator": "basılı s.48 / PDF s.49",
+      "answer_sections": {
+        "Olumsuz / Kayıp Yönü": "Göndericinin haber alma, yardım isteme veya anlık duygusunu paylaşma amacı zamanında gerçekleşemez; gönderici cevabı alamadan hayatını kaybedebilir (1918'de esir düşen askerin babasına yazdığı mektubun babasına hiç ulaşamaması gibi).",
+        "Kazanım / Dönüşüm Yönü": "Aradan bir asır geçtikten sonra (103 yıl sonra Kızılay arşivinden torunlara teslim edilen mektup örneğinde olduğu gibi), metin dedenin varlığını, şehadetini ve fedakârlığını belgeleyen manevi ve kutsal bir tarih belgesine dönüşür; kuşaklar arası duygusal bağı inşa eder."
+      },
+      "guidance": "İletişim süresinin uzamasının hem işlevsel kaybı hem de tarihsel/duygusal kazancı birlikte ele alınmalıdır."
     },
     {
       "question_id": "T1-P48-Q03",
       "entry_type": "question_answer",
       "printed_page": 48,
       "question_no": "3",
-      "prompt_summary": "Mağara resimleri ile emojilerin iletişim bakımından benzerliği",
-      "answer": "Her ikisi de düşünce, duygu veya durumu görsel işaretlerle anlatır. Sözcük kullanılmadan da anlam aktarılabilir ve bir sembol ortak bir kültürel kod hâline gelebilir. Bununla birlikte sembollerin anlamı dönem ve bağlama göre değişebileceği için hem mağara resimlerinin hem de emojilerin doğru yorumlanmasında bağlam önemlidir.",
-      "source_locator": "basılı s.48 / PDF s.49"
+      "prompt_summary": "Tarih öncesi mağara resimleri ile günümüz emojileri (resimce) arasındaki iletişimsel benzerlik",
+      "answer": "Mağara resimleri ile günümüz emojileri; dil, alfabe ve ses sınırlarını aşarak duygu, nesne ve eylemleri doğrudan görsel sembollerle (piktografik anlatım) aktarma prensibinde birleşir.",
+      "source_locator": "basılı s.48 / PDF s.49",
+      "answer_sections": {
+        "Evrensel ve Doğrudan İfade": "Her iki iletişim biçimi de harflere ve kelimelere ihtiyaç duymadan, gören herkes tarafından anlaşılabilecek ortak insanlık kodlarına dayanır. Mağara duvarındaki bizon, el izi veya av sahnesi gibi emojideki gülen yüz, kalp veya el sıkışma da tercümeye gerek kalmadan evrensel bir anlam üretir.",
+        "Hız ve Ekonomi": "Tek bir sembol veya resim, uzun paragraflarla anlatılacak bir duyguyu (korku, sevinç, av başarısı veya sevgi) anında ve etkili biçimde özetler.",
+        "Kültürel Kodlama ve Bağlam İhtiyacı": "Tıpkı mağara resimlerinin dönemin inanç ve av ritüelleri bağlamında çözümlenmesi gerektiği gibi, emojilerin de kullanıldığı dijital bağlama göre doğru yorumlanması gerekir."
+      },
+      "guidance": "Görsel iletişimin (piktografi) insanlığın yazılı tarihten önceki en ilkel aşaması ile en modern dijital çağındaki ortak buluşma noktası olduğu vurgulanmalıdır."
     },
     {
       "question_id": "T1-P50-Q01",
       "entry_type": "question_answer",
       "printed_page": 50,
       "question_no": "1",
-      "prompt_summary": "Beş metnin yazılış amaçları",
-      "answer": "Beş metnin iletişim amaçları birbirinden ayrılarak değerlendirilmelidir.",
+      "prompt_summary": "Verilen beş farklı mektup metninin yazılış amaçlarını belirleme",
+      "answer": "Metinler incelendiğinde; esenlik dilemekten moral ve umut aşılamaya, sağlık durumunu bildirmekten gurbetteki sevgiliye kavuşma müjdesi vermeye kadar farklı iletişim amaçları taşıdıkları görülür:",
+      "source_locator": "basılı s.49-50 / PDF s.50-51",
       "answer_sections": {
-        "metin_1": "Selam, hâl-hatır sorma ve iyi dilek",
-        "metin_2": "Moral, umut ve cesaret verme",
-        "metin_3": "Sağlık ve tedavi hakkında bilgi verme, görüş isteme",
-        "metin_4": "Özlem ve kavuşma isteğini paylaşma",
-        "metin_5": "Sevgi, özlem ve kavuşma vaadini iletme"
-      },
-      "source_locator": "basılı s.49-50 / PDF s.50-51"
+        "1. Metin (Kutadgu Bilig)": "Hükümdarın tebaasından zeki ve bilgili bir insana esenlik ve sağlık dilemesi, hal hatır sorması ve devran yükünü nasıl taşıdığını felsefi/yönetimsel bir merakla sorgulaması.",
+        "2. Metin (Necip Fazıl Kısakürek - Zindandan Mehmed'e Mektup)": "Cezaevindeki şairin gıyabında evladına ve gençliğe moral, sabır, direnme gücü, inanç ve 'Yarın elbet bizimdir' diyerek gelecek zafer umudu aşılaması.",
+        "3. Metin (Mustafa Kemal Atatürk - Dr. Rasim Ferit Bey'e Mektup)": "Viyana'da Cottage Sanatoryumundaki tedavi sürecini, hekimlerin teşhisini ve sağlık durumunu güvendiği bir hekim dostuna resmî/özel dille haber vermesi.",
+        "4. Metin (Roman İçi Mektup)": "Ayrılık acısı çeken kahramanın sevdiği kişiye duyduğu derin bağlılığı, iç çatışmalarını ve vuslat arzusunu doğrudan itiraf etmesi.",
+        "5. Metin (Bekir Sıtkı Erdoğan - Bir Yağmur Başladı)": "Gurbetteki sevgilinin 'Gel gayrı!' çağrısına cevap vererek tabiatın uyanışıyla (ibibikler öter ötmez, sütler kaymak tutar tutmaz) kavuşacağını müjdelemesi ve teselli vermesi."
+      }
     },
     {
       "question_id": "T1-P50-Q02",
       "entry_type": "question_answer",
       "printed_page": 50,
       "question_no": "2",
-      "prompt_summary": "Farklı biçimlerdeki metinlerin haberleşme işlevini değerlendirme",
-      "answer": "Yargıya genel olarak katılınabilir; çünkü metinlerin ortak yönü bir duygu, haber, dilek veya düşünceyi bir muhataba ulaştırmalarıdır. Ancak örneklerin hepsi biçim bakımından doğrudan mektup değildir; bazıları şiir içinde mektup ve hitap söyleyişinden yararlanır. Bu yüzden ortak nokta, biçimden çok iletişim kurma ve bir başkasına seslenme işlevidir.",
-      "explanation": "Bu ayrım, 'mektup biçimi' ile 'mektubun haberleşme işlevi'ni birbirine karıştırmamak için önemlidir.",
-      "source_locator": "basılı s.49-50 / PDF s.50-51"
+      "prompt_summary": "Yazılış şekilleri farklı olsa da her mektubun bir haberleşme aracı olduğu yargısının değerlendirilmesi",
+      "answer": "Yargıya bütünüyle katılıyoruz. Biçim bakımından klasik düzyazı mektup (Mustafa Kemal), manzum şiir mektubu (Necip Fazıl, Bekir Sıtkı Erdoğan) veya mesnevi beyiti (Kutadgu Bilig) şeklinde kurulmuş olsalar da metinlerin tamamı uzaktaki bir muhataba seslenmekte, bir duygu, haber, niyet veya düşünceyi aktararak haberleşme işlevini yerine getirmektedir.",
+      "source_locator": "basılı s.49-50 / PDF s.50-51",
+      "answer_sections": {
+        "Haberleşme Özünün Korunması": "Mektubun asıl kurucu niteliği biçimi değil, bir göndericiden belirli bir alıcıya yöneltilmiş 'iletişim kasdı'dır. Şiir biçiminde yazılmış olsa bile birine hitap eden ve ona içini döken her metin işlevsel olarak mektuptur.",
+        "Biçimsel Çeşitlilik": "Metinler mektubun yalnızca zarf ve kâğıttan ibaret kalıplaşmış bir nesne olmadığını; edebî, felsefi ve sanatsal olarak şiirin içine de yedirilebilen çok yönlü bir ifade tarzı olduğunu kanıtlar."
+      },
+      "explanation": "Bu ayrım, 'mektup şekli' (biçimsel kalıp) ile 'mektubun haberleşme işlevi' (iletişim özü) arasındaki farkı kavramak açısından önemlidir."
     },
     {
       "question_id": "T1-P50-Q03",
@@ -63,14 +83,14 @@
       "printed_page": 50,
       "question_no": "3",
       "prompt_summary": "Metinlerin gerçekliği yansıtma biçimlerini karşılaştırma",
-      "answer": "Metinlerin gerçeklikle ilişkisi, türlerine göre farklı düzeylerde kurulmaktadır:",
+      "answer": "Beş metin gerçeklikle kurdukları ilişki bakımından tarihsel-nesnel gerçeklikten lirik-kurmaca gerçekliğe kadar farklı düzeylerde yer alır:",
       "source_locator": "basılı s.49-50 / PDF s.50-51",
       "answer_sections": {
-        "1. metin": "Doğrudan hâl-hatır sormaya dayalı tarihî bir yazışma örneğidir.",
-        "2. metin": "Gerçeklik, şiirin duygu, imge ve sesleniş imkânlarıyla dönüştürülür.",
-        "3. metin": "Belirli kişi, tarih ve sağlık bilgileri taşıdığı için gerçek yaşama doğrudan bağlı kişisel bir belgedir.",
-        "4. metin": "Bir roman kişisinin mektubu olduğu için kurmaca gerçeklik içinde duygusal bir yaşantıyı yansıtır.",
-        "5. metin": "Gerçeklik, şiirin duygu, imge ve sesleniş imkânlarıyla dönüştürülür."
+        "1. Metin (Kutadgu Bilig)": "Alegorik ve Öğretici Gerçeklik: Hükümdar ve bilge insan simgeleri üzerinden devlet idaresi ve insan tabiatına dair evrensel doğruları sembolik bir çerçevede yansıtır.",
+        "2. Metin (Necip Fazıl Kısakürek)": "Lirik ve Metaforik Gerçeklik: Cezaevi ve mahkûmiyet gibi somut bir gerçekliği dava inancı, sabır ve yüksek imgelerle ('tekerlek tümsekte kalmaz') dönüştürerek aktarır.",
+        "3. Metin (Mustafa Kemal Atatürk)": "Tarihî ve Biyografik Nesnel Gerçeklik: Tarih (5 Haziran 1918), hekim isimleri, sanatoryum adı ve hastalık tanısı tamamen somut, belgelenebilir ve doğrulanabilir dış dünya gerçekliğidir.",
+        "4. Metin (Roman Metni)": "Kurmaca Gerçeklik: Yazarın hayal gücüyle oluşturduğu kurmaca bir dünyada, roman kişisinin psikolojik gerçekliğini yansıtır.",
+        "5. Metin (Bekir Sıtkı Erdoğan)": "Pastoral ve Lirik Gerçeklik: Ayrılık ve kavuşma duygusunu Anadolu köy hayatının somut imgeleriyle ('ibibiklerin ötmesi', 'sütün kaymak tutması') harmanlayarak şiirselleştirir."
       }
     },
     {
@@ -78,10 +98,14 @@
       "entry_type": "question_answer",
       "printed_page": 50,
       "question_no": "4",
-      "prompt_summary": "Sevilen birine yazılacak mektup için örneklerden birini seçme ve gerekçelendirme",
-      "answer": "Örnek olarak 4. metne benzer bir mektup seçilebilir; çünkü doğrudan muhataba seslenmesi, samimi bir dil kullanması ve özlemi açık biçimde ifade etmesi kişisel mektuba uygundur. Ancak öğrencinin başka bir metni seçmesi de mümkündür; seçim, o metnin hangi anlatım özelliğini kullanmak istediğiyle gerekçelendirilmelidir.",
-      "guidance": "Bu soruda tek doğru metin yoktur. Seçim ile gerekçe arasındaki tutarlılık esas alınmalıdır.",
-      "source_locator": "basılı s.49-50 / PDF s.50-51"
+      "prompt_summary": "Sevdiklerine yazılacak bir mektup için metinlerden birini seçme ve gerekçelendirme",
+      "answer": "Soru kişisel tercihe dayanır; öğrenci seçtiği metnin üslup ve duygu yapısına göre tutarlı bir gerekçe sunabilir. İki güçlü seçenek örneği verilebilir:",
+      "source_locator": "basılı s.49-50 / PDF s.50-51",
+      "answer_sections": {
+        "1. Tercih Modeli (Bekir Sıtkı Erdoğan tarzı manzum mektup)": "Sevdiklerime 5. metne benzer manzum bir mektup yazmak isterdim; çünkü Anadolu'nun saf doğa imgeleriyle ('ibibiklerin ötüşü, sütün kaymak tutması') örülü bu üslup, hasreti ve kavuşma sevincini sıradan kelimelerden çok daha naif, samimi ve kalıcı bir musikiyle hissettirmektedir.",
+        "2. Tercih Modeli (Mustafa Kemal Atatürk tarzı doğrudan mektup)": "3. metne benzer bir mektup yazmak isterdim; çünkü içten bir dostluk hitabıyla başlayıp yaşananları, sağlığı ve gerçek durumu lafı dolandırmadan, net, dürüst ve saygılı bir üslupla paylaşmak en güven verici iletişim yoludur."
+      },
+      "guidance": "Öğrencinin seçiminde tek bir doğru cevap aranmamalı; seçtiği metnin hangi anlatım özelliğini (lirik duygu, samimi dürüstlük, moral gücü vb.) benimsediğini gerekçelendirmesi yeterli görülmelidir."
     }
   ]
 }

@@ -68,21 +68,44 @@
       "printed_page": 44,
       "question_no": "1",
       "prompt_summary": "Mehmet Kaplan'ın mektubunun yapı unsurları",
-      "answer": "Hitap bölümü 'Âli,' ifadesidir. Girişte Kaplan aldığı mektuba cevap verir, Âli'nin durumuyla ilgilenir ve onunla konuşma ihtiyacını belirtir. Gelişmede günlük hayatını, yalnızlık duygusunu, ailesini, akademik çalışmalarını, okuduğu romanları ve yazma düşüncelerini anlatır; Âli'ye tavsiyelerde bulunur. Sonuçta haberleşmeyi sürdürmek istediğini, planlarını ve selamlarını iletir. Yer ve tarih '24 Haziran 940 İstanbul', yazar adı ise Mehmet Kaplan'dır. Cevap için adres bilgisi metnin sonunda ayrıca belirtilmiştir.",
-      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38"
+      "answer": "Mehmet Kaplan'ın mektubu; tarih-yer kaydı, hitap, giriş, gelişme, sonuç, ad-soyad/imza ve adres olmak üzere mektup türünün bütün klasik yapı unsurlarını eksiksiz içerir.",
+      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
+      "answer_sections": {
+        "Yer ve Tarih": "“24 Haziran 940 İstanbul” (Mektubun sağ üst köşesinde belirtilmiştir).",
+        "Hitap Bölümü": "“Âli,” (Sol üst köşede, virgülle ayrılmış doğrudan ve samimi hitap).",
+        "Giriş Bölümü": "Mektubu alma haberi, gecikmeden duyulan sıkıntı ve doğrudan dertleşme isteği (“Mektubunu bugün aldım... Zaten seninle konuşmaya da ihtiyacım var.”).",
+        "Gelişme Bölümü": "Âli'nin durumunu öğrenmekten duyulan memnuniyet, vicdan azabının hafiflemesi, üniversite sınavları, Küllük kahvesi, yalnızlık hissi, ev ve aile hayatı (Behice), Dostoyevski ve Karamazof Kardeşler incelemesi, Rus ve Fransız roman karşılaştırması ('mazi koridoru'), Âli'ye çalışma ve yazma tavsiyeleri, ortak tanıdıklar (Hamdi Bey, Uzun Mehmet).",
+        "Sonuç Bölümü": "Eskişehir seyahati planı, mektup bekleme dileği, iyi niyetler ve selamlar (“Şimdilik selâm. Gözlerinden öperim. Behice’nin de selâmı var... Cahit’e mektup beklediğimi yaz olur mu?”).",
+        "Adı-Soyadı ve İmza": "“Mehmet Kaplan” (Mektubun sağ alt kısmında yer alır).",
+        "Adres Bölümü": "Cevabın ulaştırılacağı yer tarifi (“İstasyonda Kasap İbrahim vasıtasıyla Mehmet Kaplan / Eskişehir”)."
+      },
+      "guidance": "Öğrencilerin metnin kenarındaki 'Mektupta Yer Alması Gerekenler' kutusundaki 8 temel yapı unsurunun tamamını metindeki somut yerleriyle eşleştirmeleri sağlanmalıdır.",
+      "evidence_quotes": [
+        "24 Haziran 940 İstanbul",
+        "Âli,",
+        "Mehmet Kaplan",
+        "İstasyonda Kasap İbrahim vasıtasıyla Mehmet Kaplan"
+      ]
     },
     {
       "question_id": "T1-P44-Q02",
       "entry_type": "question_answer",
       "printed_page": 44,
       "question_no": "2",
-      "prompt_summary": "Mektubun muhataba ve içeriğe uygun dil kullanıp kullanmadığı",
-      "answer": "Kaplan, yakın olduğu Âli'ye uygun biçimde samimi ve doğrudan bir dil kullanır. Duygularını açıkça anlatır, günlük hayatından söz eder, sorular sorar ve öğüt verir. Buna karşılık edebiyat ve roman üzerine konuşurken daha kavramsal ve düşünsel bir anlatıma geçer. Böylece dil hem dostça ilişkiye hem de iki kişi arasındaki entelektüel paylaşıma uygundur.",
+      "prompt_summary": "Mektubun muhataba ve içeriğe uygun dil ve anlatım benimseyip benimsemediği",
+      "answer": "Mehmet Kaplan, mektubunda hem hitap ettiği kişinin yakınlık derecesine hem de mektubun ele aldığı kişisel ve düşünsel içeriğe tam anlamıyla uygun, çift katmanlı dengeli bir dil benimsemiştir.",
+      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
+      "answer_sections": {
+        "Muhataba yakınlığın belirlediği samimi dil": "Âli çok yakın bir dost ve eski bir öğrencidir. Bu yakınlık sebebiyle resmî kalıplar yerine içten, teklifsiz bir söyleyiş tercih edilmiştir. Duyguların, yalnızlığın ve iç sıkıntısının filtresiz paylaşılması (“Zaten seninle konuşmaya da ihtiyacım var”, “yalnız senin hükümlerinden korkuyorum”, “Gözlerinden öperim”) dilin samimiyetini kanıtlar.",
+        "İçeriğin gerektirdiği düşünsel ve edebî dil": "Mektupta gündelik sohbetten Dostoyevski romanı, 'mazi koridoru', 'vaka sathı' ve irade terbiyesine geçildiğinde dil ciddileşir; edebiyat kuramı ve felsefesine uygun tahlilci, kavramsal bir üslup kazanır. Yazar hocalık ve araştırmacı kimliğini dostluk samimiyetiyle harmanlar.",
+        "Sonuç": "Kullanılan dil; kuru bir resmîyetten uzak olduğu gibi laubalilikten de arınmış, iki aydın dost arasındaki derin manevi bağı yansıtan seviyeli ve doğal bir anlatımdır."
+      },
       "evidence_quotes": [
         "Zaten seninle konuşmaya da ihtiyacım var",
-        "Bana hayatından daha geniş malumat ver"
-      ],
-      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38"
+        "yalnız senin hükümlerinden korkuyorum",
+        "Bana hayatından daha geniş malumat ver",
+        "Gözlerinden öperim"
+      ]
     },
     {
       "question_id": "T1-P44-Q03",
@@ -90,27 +113,57 @@
       "printed_page": 44,
       "question_no": "3",
       "prompt_summary": "Mektubun yazıldığı dönem ile günümüz insan ilişkilerini karşılaştırma",
-      "answer": "Mektupta haberleşmenin daha yavaş olduğu, kişiler arasındaki uzaklığın ayrıntılı ve uzun mektuplarla aşılmaya çalışıldığı görülür. Kaplan günlük yaşamını, duygularını, okuduklarını ve çevresindeki insanları ayrıntılı biçimde aktarır. Günümüzde mesajlaşma ve görüntülü görüşme iletişimi çok hızlandırmıştır; buna karşılık iletişim çoğu zaman daha kısa ve parçalı olabilir. Bu fark, ilişkilerin değerinden çok iletişim araçlarının ritmini ve biçimini değiştirmiştir.",
-      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38"
+      "answer": "Mektubun yazıldığı 1940'lı yıllarda insan ilişkileri; fiziksel mesafelerin doğurduğu sabır, derin paylaşım ve mektubun özenli diline dayanırken günümüzde dijital araçların sağladığı hız, anlık temas ve buna bağlı yüzeysellikle şekillenmektedir.",
+      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
+      "answer_sections": {
+        "Dönemin insan ilişkileri (1940'lar)": "İletişim imkânları kısıtlı olduğundan haberleşme zaman alır; bu gecikme merak, özlem ve derin bir iç hesaplaşma doğurur. İnsanlar birbirine uzun uzun iç dünyalarını döker, okudukları kitapları ve düşüncelerini paylaşır; mektuplar saklanır ve bir dostluk vesikası hâline gelir.",
+        "Günümüz insan ilişkileri": "Akıllı telefonlar, anlık mesajlaşma ve görüntülü konuşma sayesinde mesafeler önemsizleşmiş, iletişim anlık hâle gelmiştir. Ancak bu hız, ilişkilerde sabrı ve özeni azaltmış; duygu paylaşımları emojiler ve kısa iletilerle sınırlandığı için ilişkiler daha yüzeysel ve hızlı tüketilen bir nitelik kazanmıştır.",
+        "Karşılaştırma sonucu": "Eski dönemde iletişim araçlarının yavaşlığı insan ilişkilerini derinleştirip anlamlandırırken günümüzde iletişimin hızı ilişkilerin derinliğini ve kalıcılığını zayıflatabilmektedir."
+      },
+      "guidance": "Öğrencilerin karşılaştırmayı yaparken yalnızca nostaljik bir tutum sergilemeyip iletişim araçlarının insan psikolojisi ve ilişki dinamikleri üzerindeki dönüştürücü etkisini vurgulamaları sağlanmalıdır."
     },
     {
       "question_id": "T1-P44-Q04",
       "entry_type": "question_answer",
       "printed_page": 44,
       "question_no": "4",
-      "prompt_summary": "Mektubu dönemin toplumsal yapısıyla ilişkilendirme",
-      "answer": "Mektup dönemin üniversite ve edebiyat çevresine, aile ilişkilerine, askerlik şartlarına ve mektupla haberleşme alışkanlığına dair izler taşır. Âli'nin askerî bir birlikte bulunması, Kaplan'ın fakülte sınavlarından, araştırmalarından, arkadaş çevresinden ve Eskişehir yolculuğundan söz etmesi günlük hayatın farklı yönlerini gösterir. Dilindeki bugün daha az kullanılan kelimeler de metnin dönemsel niteliğini güçlendirir.",
-      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38"
+      "prompt_summary": "Mektubu yazıldığı dönemin toplumsal ve kültürel yapısıyla ilişkilendirme",
+      "answer": "Mehmet Kaplan'ın mektubu; içerik, dil ve kurumlar açısından İkinci Dünya Savaşı yıllarındaki Türkiye'nin toplumsal hayatını, üniversite ve aydın çevresini, aile dayanışmasını ve dönemin iletişim imkânlarını doğrudan yansıtır.",
+      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
+      "answer_sections": {
+        "Dönemin siyasi ve askerî atmosferi": "1940 yılı II. Dünya Savaşı'nın en sıcak dönemidir; Türkiye savaşa girmese de genel seferberlik ilan edilmiştir. Mektupta Âli'nin kıtasının Diyarbakır'a nakledilmesi ve askerlik görevi bu dönemin zorunlu şartlarını yansıtır.",
+        "Üniversite ve entelektüel hayat": "İstanbul Üniversitesi Edebiyat Fakültesinde imtihanlar, yeni kurulan Türk edebiyatı kürsüsü çalışmaları, Namık Kemal araştırmaları ve Beyazıt'taki meşhur edebiyatçı mahfili Küllük Kahvesi dönemin kültür ortamını belgeler.",
+        "Aile yapısı ve kadın eğitimi": "Yazarın kız kardeşi Münevver'i Kız Muallim Mektebine verme arzusu, Cumhuriyet döneminde öğretmenlik mesleğine ve kız çocuklarının eğitimine verilen toplumsal değeri gösterir.",
+        "Posta ve haberleşme kültürü": "Mektubun 'İstasyonda Kasap İbrahim vasıtasıyla' ulaştırılması, dönemin taşra-merkez haberleşmesinde tren istasyonlarının ve güvenilir mahalle esnafının üstlendiği toplumsal aracılık rolünü gözler önüne serer."
+      },
+      "evidence_quotes": [
+        "senin kıtanın başka yere nakledildiğini söylemişti",
+        "Fakülte’de imtihanlar başladı",
+        "Ara sıra Küllük kahvesine gidiyorum",
+        "Onu Kız Muallim mektebine vermek istiyorum",
+        "İstasyonda Kasap İbrahim vasıtasıyla Mehmet Kaplan"
+      ]
     },
     {
       "question_id": "T1-P44-Q05",
       "entry_type": "question_answer",
       "printed_page": 44,
       "question_no": "5",
-      "prompt_summary": "Mektuptaki millî, manevi ve evrensel değerler",
-      "answer": "Millî değerler bakımından Türk edebiyatına ve özellikle Namık Kemal üzerine çalışmaya duyulan ilgi öne çıkar. Manevi değerler arasında aile bağları, dostluk, yakınlarına selam gönderme, umut ve Allah'a yönelen ifadeler bulunur. Evrensel değerler olarak ise çalışkanlık, sabır, cesaret, dayanışma, dostluk, kendini geliştirme ve başkasını destekleme belirgindir.",
-      "guidance": "Değerler farklı başlıklar altında sınıflandırılabilir; önemli olan seçilen değeri metindeki bir davranış veya ifadeyle ilişkilendirmektir.",
-      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38"
+      "prompt_summary": "Mektup metnindeki millî, manevi ve evrensel değerleri tespit etme",
+      "answer": "Mektupta millî değerler Türk edebiyatı araştırmaları ve vatan hizmetiyle, manevi değerler aile sadakati ve içten dualarla, evrensel değerler ise çalışma azmi ve insan sevgisiyle somutlaşır.",
+      "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
+      "answer_sections": {
+        "Millî Değerler": "Millî edebiyat mirasına sahip çıkma (Namık Kemal'in eserlerini ve hayatını araştırma gayreti), vatan savunması ve askerlik hizmetine duyulan saygı.",
+        "Manevi Değerler": "Dostluk hukuku, vefa, diğerkâmlık (başkalarını düşünme), aile fertlerine ve kardeşlere kol kanat germe, sabır, Allah'a sığınma ve iyi dilekler (“Allah bir fırsat ve imkân verse çok güzel olacak Âli”).",
+        "Evrensel Değerler": "Çalışkanlık ve sabır (keman çalma analojisiyle yeteneğin çalışarak inşa edilmesi), irade eğitimi, dünya kültür ve edebiyatına açık olma (Dostoyevski, Stendhal tahlili), dostunu yüreklendirme, ümitsizliği yenme ve insan dayanışması."
+      },
+      "guidance": "Değerlerin metindeki somut tutum ve cümlelerle ilişkilendirilmesine dikkat edilmelidir.",
+      "evidence_quotes": [
+        "Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim",
+        "İyi keman çalabilmek için yıllarca çalışmak lâzım",
+        "Çalışmanın kabiliyeti keşfettiğini, hatta yarattığını iddia edeceğim",
+        "Allah bir fırsat ve imkân verse çok güzel olacak Âli"
+      ]
     }
   ]
 }

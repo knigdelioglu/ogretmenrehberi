@@ -10,9 +10,48 @@
       "printed_page": 52,
       "question_no": "Dilekçe",
       "prompt_summary": "Okul müdürlüğüne uygun bir konuda dilekçe yazma",
-      "answer": "Örnek dilekçe:\n\nOKUL MÜDÜRLÜĞÜNE\n\nOkulumuz kütüphanesinin ders çıkışından sonra da öğrencilerin kullanımına açık tutulmasının, araştırma ve okuma çalışmalarımızı kolaylaştıracağını düşünüyorum. Kütüphanenin uygun görülen günlerde ders bitiminden sonra bir süre daha açık tutulması hususunda gereğini bilgilerinize arz ederim.\n\n... / ... / 2026\nİmza\nAdı Soyadı\nSınıfı / Numarası\nİletişim Bilgileri",
-      "guidance": "Konu öğrenci tarafından değiştirilebilir. Modelin amacı dilekçenin makam, açık talep, gerekçe, resmî üslup, tarih, imza ve kimlik bilgileri düzenini göstermektir; kişisel bilgiler gerçek öğrenciye göre doldurulmalıdır.",
-      "explanation": "Dilekçede makam adı, açık ve kısa bir talep, resmî üslup, tarih, imza ve kimlik/iletişim bilgileri bulunmalıdır. Üst makama yazıldığı için sonuç cümlesinde 'arz ederim' kullanılır.",
+      "answer": "Dilekçe, Anayasa'nın 74. maddesi ve 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun ile güvence altına alınan, yurttaşların dilek ve şikâyetlerini resmî makamlara ilettiği yasal ve biçimsel bir metindir. Okul müdürlüğüne yazılacak dilekçede; kurum makam başlığı (büyük harflerle ve ortalanarak), konuyu ve nesnel gerekçeyi bildiren ana metin, üst makama sunulduğu için mutlaka 'arz ederim' ifadesiyle biten talep cümlesi, sağ altta tarih-imza-ad soyad ve sol altta açık adres ile öğrenci kimlik/iletişim bilgileri yer almalıdır.",
+      "answer_sections": {
+        "Dilekçe_Yazım_Kuralları_ve_Biçim_İlkeleri": [
+          "Kâğıt Düzeni: Çizgisiz, temiz A4 beyaz kâğıda; sayfa kenarlarında (üst, alt, sol, sağ) standart boşluklar bırakılarak dolma kalem, mavi/siyah tükenmez kalem veya bilgisayar ortamında hazırlanır.",
+          "Makam Başlığı: Dilekçenin hitap ettiği makam adı sayfa başında büyük harflerle, kısaltma yapılmadan ve kurumun bulunduğu il/ilçe belirtilerek yazılır (örn. '... ANADOLU LİSESİ MÜDÜRLÜĞÜNE / İSTANBUL').",
+          "Metin ve Üslup: Durum, gerekçe ve istek kısa, net, yalın ve ciddiyet taşıyan resmî bir üslupla yazılır; abartılı duygusal ifadelere veya gereksiz ayrıntılara yer verilmez.",
+          "Bitiriş İfadesi: Okul müdürlüğü öğrenciye göre hiyerarşik üst makam olduğu için metin mutlaka 'Gereğini bilgilerinize saygılarımla arz ederim.' veya 'Gereğini arz ederim.' şeklinde bitirilir ('rica ederim' asla kullanılmaz).",
+          "Sağ Alt Köşe: Güncel tarih (gün/ay/yıl), altına ıslak imza, onun da altına unvan belirtilmeden ad ve soyad yazılır.",
+          "Sol Alt Köşe: Öğrencinin sınıfı, şubesi, okul numarası, açık ikametgâh adresi ve iletişim telefonları; varsa dilekçeye iliştirilen ek belgeler ('Ek-1:') bu alanda düzenli biçimde listelenir."
+        ],
+        "Model_Dilekçe_1_Kütüphane_Çalışma_Saatlerinin_Uzatılması": [
+          "Makam: ... ANADOLU LİSESİ MÜDÜRLÜĞÜNE",
+          "Gövde Metni: Okulunuz 11-A sınıfı 542 numaralı öğrencisiyim. Okul çıkış saatlerinde ders dışı bireysel araştırma yapmak, YKS hazırlık kaynaklarından faydalanmak ve zümre proje ödevlerini okul ortamında sessizce tamamlayabilmek amacıyla okul kütüphanemizin hafta içi ders bitiminden sonra 18.00'e kadar açık tutulmasını talep etmekteyim.",
+          "Talep ve Saygı: Kütüphanemizin belirtilen saatlerde hizmete açık tutulması hususunda gereğini yüksek makam ve tensiplerinize saygılarımla arz ederim.",
+          "Tarih / İmza / Ad-Soyad: 24/10/2026 | İmza | Adı Soyadı",
+          "İletişim / Öğrenci Bilgisi: Adres: Atatürk Mah. Gül Sok. No: 12/4 Kadıköy / İSTANBUL | Tel: 0505 000 00 00 | Sınıf/No: 11-A / 542"
+        ],
+        "Model_Dilekçe_2_Okul_Münazara_Topluluğu_ve_Salon_Tahsisi": [
+          "Makam: ... FEN LİSESİ MÜDÜRLÜĞÜNE",
+          "Gövde Metni: Okulunuz 11-B sınıfı 876 numaralı öğrencisiyim. 1. Dönem Türk Dili ve Edebiyatı dersi münazara kazanımları doğrultusunda, öğrenciler arasında eleştirel düşünme, hitabet ve argümantasyon becerilerini geliştirmek amacıyla Türk Dili ve Edebiyatı zümre öğretmenlerimizin rehberliğinde bir 'Okul Münazara Topluluğu' kurmak ve her hafta çarşamba günleri ders çıkışında konferans salonunda münazara oturumları gerçekleştirmek istiyoruz.",
+          "Talep ve Saygı: Kulübün kuruluşu ve belirtilen günlerde konferans salonunun tahsis edilmesi hususunda gereğini bilgilerinize arz ederim.",
+          "Tarih / İmza / Ad-Soyad: 24/10/2026 | İmza | Adı Soyadı",
+          "İletişim ve Ekler: Adres: Çankaya Mah. İnönü Bulvarı No: 45 Çankaya / ANKARA | Tel: 0532 000 00 00 | Sınıf/No: 11-B / 876 | Ek: Kulüp Tüzük Taslağı ve Kurucu Öğrenci Listesi (2 sayfa)"
+        ],
+        "Öğretmen_Değerlendirme_Rubriği": [
+          "Makam Başlığının Doğruluğu (15 Puan): Kurum adının eksiksiz, büyük harflerle, kısaltmasız ve yerleşke bilgisiyle ortalanmış olması.",
+          "Metin Açıklığı ve Gerekçelendirme (30 Puan): İsteğin somut ve net gerekçelerle temellendirilmesi, gereksiz ayrıntılardan arındırılmış olması.",
+          "Resmî Dil ve Nezaket (20 Puan): Resmî yazışma kurallarına tam uyum; üst makama yazıldığı için 'arz ederim' ifadesinin doğru kullanılması.",
+          "Biçim ve Sayfa Yerleşimi (25 Puan): A4 kâğıt düzeni, tarih-imza-isim sağ altta; adres, T.C. kimlik no, okul no ve eklerin sol altta standart yerleşimi.",
+          "İmla ve Noktalama (10 Puan): TDK kurallarına tam uyum, kurum ve kuruluş adlarına gelen eklerin kesme işaretiyle ayrılmaması kuralına dikkat edilmesi."
+        ]
+      },
+      "guidance": "Öğrenciler dilekçelerinde kütüphane saatleri, kulüp faaliyeti, ortak sınav mazereti, sosyal tesis kullanımı veya okul fiziki iyileştirmesi gibi okul müdürlüğünün idari yetki alanına giren farklı konuları seçebilir. Önemli olan biçimsel kurallara (başlık, arz ifadesi, tarih, ıslak imza, iletişim ve kimlik bilgileri) tam uyulmasıdır. Anayasa'nın 74. maddesi ve 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun hatırlatılarak dilekçenin demokratik bir hak ve yurttaşlık bilinci olduğu vurgulanmalı; idarelerin dilekçelere 30 gün içinde yanıt verme yükümlülüğü olduğu öğrencilere açıklanmalıdır.",
+      "explanation": "Dilekçe, yurttaşların kendileriyle veya kamuyla ilgili dilek ve şikâyetlerini idari makamlara resmî yoldan ilettikleri anayasal bir başvuru aracıdır (Anayasa m.74; 3071 sayılı Kanun). Öğrenci ile okul müdürlüğü arasındaki hiyerarşik ilişkide müdürlük üst makam olduğu için dilekçe 'arz ederim' ifadesiyle bitirilir. Çizgisiz beyaz kâğıt kullanımı, kenar boşlukları, silinti-kazıntı yapılmaması, sağ alttaki ıslak imza ve sol alttaki net ikametgâh/okul numarası dilekçenin resmî geçerlilik koşullarıdır.",
+      "evidence_quotes": [
+        "Dilekçe, vatandaşların kendileri ya da kamu ile ilgili bir dilek veya şikâyetini resmî makamlara bildirmek için sunduğu imzalı ve adresli yazıdır. (basılı s.51)",
+        "Dilekçe hakkı, Anayasa’nın 74. maddesinde temel haklar ve ödevler arasında yer almaktadır ve bu hakkın kullanılmasına ilişkin usul ve esaslar 01.11.1984 tarihli ve 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun ile düzenlenmiştir. (basılı s.51)",
+        "Dilekçede tarih, dilekçeyi yazanın adı, soyadı, imzası ve adresi bulunmak zorundadır. Yazılan dilekçeye en geç otuz gün içinde ilgili kurum tarafından cevap verilmelidir. (basılı s.51)",
+        "Açık, yalın bir anlatım ve resmî bir üslup kullanılır. (basılı s.51)",
+        "Üst makama arz, alt makama rica edilerek tamamlanır. (basılı s.51)",
+        "Sağ altta sırasıyla tarih, dilekçe sahibinin imzası, adı-soyadı yer almalıdır. Sol altta dilekçe sahibinin adresi, T.C. kimlik numarası ve diğer iletişim bilgileri yer almalıdır. (basılı s.51)"
+      ],
       "source_locator": "basılı s.51-52 / PDF s.52-53"
     }
   ]
