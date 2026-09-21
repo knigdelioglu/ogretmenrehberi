@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
+import io.github.knigdelioglu.lessonplayer.storage.LessonBackupCodec
 import io.github.knigdelioglu.lessonplayer.storage.LessonDatabase
 import io.github.knigdelioglu.lessonplayer.storage.LessonPreferences
 import io.github.knigdelioglu.lessonplayer.storage.LessonStore
