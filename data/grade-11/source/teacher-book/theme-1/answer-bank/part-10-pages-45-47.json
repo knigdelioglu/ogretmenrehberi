@@ -5,23 +5,64 @@
   "printed_page_range": "45-47",
   "entries": [
     {
+      "question_id": "T1-P45-PERF01",
+      "entry_type": "performance_support",
+      "printed_page": 45,
+      "question_no": "Ders Dışı Etkinlik",
+      "prompt_summary": "Mektup türünün tarih, sosyoloji ve psikolojiyle ilişkisini araştırma süreci için öğretmen desteği",
+      "answer": "Araştırma, üç grubun önce Mehmet Kaplan'ın mektubundaki somut ipuçlarını belirlemesi, ardından tarih, sosyoloji veya psikoloji açısından araştırma soruları üretip güvenilir dış kaynaklarla bu soruları geliştirmesi üzerine kurulabilir.",
+      "source_locator": "basılı s.45 / PDF s.46",
+      "answer_sections": {
+        "1. Grup — Mektup ve Tarih": {
+          "Metinden başlangıç noktaları": "24 Haziran 1940 tarihi, askerî birlik/kıta bilgisi, fakülte sınavları, Küllük kahvesi, Eskişehir yolculuğu ve dönemin haberleşme biçimi.",
+          "Araştırma soruları": [
+            "1940 Türkiye'sinin siyasi ve toplumsal şartları bu mektuptaki hangi ayrıntıları açıklamaya yardımcı olabilir?",
+            "Üniversite, askerlik, ulaşım ve haberleşme pratikleri dönemin gündelik hayatında nasıl bir yere sahiptir?"
+          ],
+          "Öğretmen yönlendirmesi": "Öğrenciden önce metindeki tarihsel ipucunu göstermesini, sonra bu ipucunun hangi dış kaynakla doğrulanabileceğini söylemesini isteyin."
+        },
+        "2. Grup — Mektup ve Sosyoloji": {
+          "Metinden başlangıç noktaları": "Aile ilişkileri, dostluk ağı, üniversite çevresi, kahvehane/kültür çevresi, kadın eğitimiyle ilgili ifade ve şehirler arası bağlantılar.",
+          "Araştırma soruları": [
+            "Mektuptaki ilişkiler bize yazarın sosyal çevresi ve dönemin eğitim-kültür hayatı hakkında ne düşündürüyor?",
+            "Kişisel bir mektup, toplumun hangi yönlerini gösterebilir; hangi yönleri için tek başına yeterli değildir?"
+          ],
+          "Öğretmen yönlendirmesi": "Tek bir kişinin mektubundan bütün topluma genelleme yapılmaması gerektiğini hatırlatın; kişisel tanıklık ile toplumsal çıkarımı ayırın."
+        },
+        "3. Grup — Mektup ve Psikoloji": {
+          "Metinden başlangıç noktaları": "Yalnızlık, vicdan azabı, dostla konuşma ihtiyacı, yazma arzusu, ümitsizlik ve çalışma/irade üzerine ifadeler.",
+          "Araştırma soruları": [
+            "Yazar hangi duygu ve düşüncelerini doğrudan ifade ediyor?",
+            "Bu ifadeler hangi psikoloji kavramlarıyla tartışılabilir ve hangileri yalnızca yorum düzeyinde kalmalıdır?"
+          ],
+          "Öğretmen yönlendirmesi": "Önce metinde açıkça ifade edilen duygu veya davranışı buldurun; psikolojik kavramı daha sonra ve yorum olarak kullanın. Metinden hareketle tanı veya kesin niyet atamayın."
+        },
+        "Araştırma sunumu için ortak şablon": [
+          "Metinden somut kanıt",
+          "Araştırma sorusu",
+          "Dış kaynak bulgusu",
+          "Yorum / sonuç",
+          "Kaynakça"
+        ]
+      },
+      "guidance": "Her grubun sunumunda “metnin söylediği”, “dış kaynaktan öğrendiğimiz” ve “bizim yorumumuz” ayrı başlıklarla gösterilmelidir. Öğrenciyi doğrudan sonuca götürmek yerine kanıt → soru → araştırma → yorum sırasını kullanın."
+    },
+    {
       "question_id": "T1-P45-Q01",
       "entry_type": "question_answer",
       "printed_page": 45,
       "question_no": "Değerlendirme",
       "prompt_summary": "Mektup türünün sosyal bilimlerle ilişkisini incelemenin öğrencinin bakış açısına etkisi",
-      "answer": "Sosyal bilimler temelli araştırma; mektubun yalnızca iki kişi arasındaki sübjektif ve sıradan bir haberleşme vasıtası olmadığını, tarih, sosyoloji ve psikoloji disiplinleri için birinci elden paha biçilmez bir kültürel belge ve insanlık arşivi niteliği taşıdığını fark ettirir.",
+      "answer": "Araştırma, öğrencinin mektubu yalnız kişisel haberleşme ürünü olarak değil; tarihsel çevre, toplumsal ilişkiler ve bireyin duygu-düşünce dünyası hakkında araştırma soruları üretebilen bir kaynak olarak da görmesini sağlayabilir.",
       "source_locator": "basılı s.45 / PDF s.46",
       "answer_sections": {
-        "Önceki bakış açısı (Yüzeysel algı)": "Mektubu yalnızca teknoloji öncesi dönemde kalmış, iki kişi arasında hal hatır sorup günlük olayları bildiren dar kapsamlı kişisel bir yazışma türü olarak değerlendirme.",
-        "Kazanılan disiplinler arası bakış açısı": {
-          "Mektup–Tarih": "Resmî evrakların ve tarih kitaplarının kaydedemediği gündelik yaşam ayrıntılarını, dönemin seferberlik ve askerlik şartlarını (1940 yılı), taşra-şehir ulaşımını ve kurumsal işleyişleri birinci elden belgelemesi.",
-          "Mektup–Sosyoloji": "Toplumsal tabakalaşmayı, aile içi rolleri, Cumhuriyet aydınının sosyal çevresini (Küllük kahvesi mahfili), kadınların eğitimine verilen önemi (Kız Muallim Mektebi) ve haberleşme ağlarını yansıtması.",
-          "Mektup–Psikoloji": "Yazarın sansürsüz iç dünyasını, yalnızlık ve boşluk duygusunu, vicdan azabını hafifletme arzusunu, dostluk ve bağlanma ihtiyacı ile motivasyon dinamiklerini doğrudan açığa vurması."
-        },
-        "Sonuç": "Edebî metinlerin aynı zamanda insanı ve toplumu bütüncül bir yaklaşımla anlamada sosyal bilimlerle müşterek çalışan yaşayan bir tanıklık olduğu kavranır."
+        "Örnek bakış açısı değişimi": "Öğrenci araştırmadan önce mektubun daha çok kişisel haberleşme yönüne odaklanmış olabilir; çalışma sonrasında aynı metindeki tarih, kurum, sosyal çevre ve duygu ayrıntılarının farklı disiplinler için de anlam taşıdığını fark edebilir.",
+        "Tarih açısından": "Tarih, kurum, askerlik, eğitim, ulaşım ve haberleşme gibi ayrıntılar dönemin koşullarını araştırmak için başlangıç noktası olabilir.",
+        "Sosyoloji açısından": "Aile, arkadaşlık, eğitim çevresi ve gündelik ilişkiler toplumsal yapı hakkında sorular üretmeye yardımcı olabilir.",
+        "Psikoloji açısından": "Yazarın açıkça ifade ettiği yalnızlık, kaygı, vicdan azabı, cesaretlendirme ve çalışma iradesi gibi durumlar insan davranışları ve duyguları açısından tartışılabilir.",
+        "Kişisel sonuç": "Öğrencinin gerçek bakış açısı değişimi kendi araştırma deneyimine göre farklı olabilir; değişim olmadığını söyleyen öğrenci de bunu gerekçelendirebilir."
       },
-      "guidance": "Soru bir kişisel farkındalık ve öz değerlendirme sorusudur; öğrencinin araştırma öncesi algısı ile araştırma sonrasındaki kazanımını somut disiplin bağlamları (tarih, sosyoloji, psikoloji) üzerinden gerekçelendirmesi yeterlidir."
+      "guidance": "“Araştırmadan önce mektubun hangi yönüne dikkat ediyordun?”, “Araştırmada hangi somut bulgu yeni bir şey fark ettirdi?” ve “Bu bulgu tarih/sosyoloji/psikolojiden hangisiyle ilişkili?” sorularıyla yönlendirin. Öğrencinin önceki bakış açısını varsaymayın."
     },
     {
       "question_id": "T1-P46-Q01",
@@ -46,14 +87,15 @@
       "printed_page": 46,
       "question_no": "2",
       "prompt_summary": "Belirlenen beğeni ölçütlerine göre Mehmet Kaplan'ın mektubunu değerlendirme",
-      "answer": "Belirlenen beğeni ölçütlerine göre incelendiğinde; Kaplan'ın mektubu samimiyet ve düşünsel derinlik bakımından üstün bir başarı sergilemekte, günlük hayat ile edebiyat kuramını kusursuz bir doğallıkla kaynaştırmaktadır.",
+      "answer": "Öğrenci kendi belirlediği ölçütlere göre farklı bir değerlendirme yapabilir. Örneğin yalınlık-akıcılık, içtenlik, düşünsel derinlik ve muhataba uygunluk ölçütleri seçildiğinde Kaplan'ın mektubunun bu alanlarda güçlü yönler taşıdığı söylenebilir.",
       "source_locator": "basılı s.46 / PDF s.47; ana metin s.37-38",
       "answer_sections": {
-        "Yalınlık ve Akıcılık Açısından": "Döneme özgü bazı eski sözcükler bulunsa da cümleler konuşma doğallığındadır; yazar aklına geleni dostuna anlatır gibi akıcı bir ritim yakalamıştır.",
-        "İçtenlik Açısından": "Yazarın “yalnız senin hükümlerinden korkuyorum”, “kendimi dinleyemiyorum”, “yalnızlığım mütemadî bir boşluk hâlinde” itirafları, mektubu yapaylıktan tamamen uzaklaştırıp derin bir iç döküşe dönüştürmüştür.",
-        "Düşünsel Derinlik Açısından": "Dostoyevski'nin Karamazof Kardeşler romanını Stendhal ve Fransız romanıyla kıyaslaması, 'mazi koridoru' kuramını geliştirmesi metne olağanüstü bir estetik ve eleştirel derinlik kazandırmıştır.",
-        "Muhataba Uygunluk Açısından": "Dostunu hem şefkatle dinleyen hem de onu kabiliyetsizlik zannından kurtarıp “Harekete geç” diyerek cesaretlendiren pedagojik ve dostane bir denge kurulmuştur."
-      }
+        "Yalınlık ve Akıcılık Açısından": "Döneme özgü bazı kelimeler günümüz okuru için açıklama gerektirse de mektup çoğunlukla konuşma doğallığıyla ilerler.",
+        "İçtenlik Açısından": "“Zaten seninle konuşmaya da ihtiyacım var”, yalnızlık ve vicdan azabına ilişkin ifadeler yazarın kişisel duygu ve düşüncelerini açıkça paylaşmasını gösterir.",
+        "Düşünsel Derinlik Açısından": "Dostoyevski ve Stendhal karşılaştırması, karakterlerin geçmişine ilişkin “mazi koridoru” adlandırması ve yazma/çalışma üzerine düşünceler mektubun düşünsel katmanını güçlendirir.",
+        "Muhataba Uygunluk Açısından": "Kaplan bir yandan dostça ve samimi konuşurken bir yandan Âli'yi çalışmaya ve yazmaya teşvik eder; bu iki ton aynı mektupta birlikte yürür."
+      },
+      "guidance": "Bu cevap bir örnek değerlendirmedir, zorunlu hüküm değildir. Öğrenciden önce kendi ölçütünü söylemesini, sonra metinden bu ölçütü destekleyen ve gerekiyorsa sınırlayan örnek göstermesini isteyin."
     },
     {
       "question_id": "T1-P46-Q03",
@@ -61,14 +103,16 @@
       "printed_page": 46,
       "question_no": "3",
       "prompt_summary": "Oluşturulan ölçütlerden hareketle yazarın mektubu yazma amacına ulaşıp ulaşmadığını değerlendirme",
-      "answer": "Yazar belirlediği amaçlara tam anlamıyla ulaşmıştır. Hem dostunun mektubunu geciktirmesinden doğan azaptan kurtulmuş ve dertleşmiş hem Dostoyevski üzerine geliştirdiği özgün fikirleri aktarmış hem de Âli'ye çalışma azmi ve cesaret aşılayarak mektup arkadaşlığını canlı tutmuştur.",
+      "answer": "Metin içindeki göstergelere göre Kaplan'ın haberleşme, düşüncelerini paylaşma ve Âli'yi çalışmaya/yazmaya teşvik etme amaçlarına uygun bir mektup kurduğu söylenebilir. Ancak mektubun Âli üzerinde gerçekten nasıl bir etki yarattığını bilmediğimiz için “amacına kesin olarak ulaştı” hükmü verilemez.",
       "source_locator": "basılı s.46 / PDF s.47; ana metin s.37-38",
       "answer_sections": {
-        "Dertleşme ve rahatlama amacı": "Kaplan mektubu yazarak içindeki yalnızlığı ve vicdan azabını hafiflettiğini belirtmiş, hedefine ulaşmıştır.",
-        "Düşünsel paylaşım amacı": "Roman üzerine geliştirdiği kuramsal fikirleri bir dosta sunarak düşüncelerini olgunlaştırmıştır.",
-        "Muhatabı motive etme amacı": "Âli'nin ümitsizliğini sertçe eleştirip ona irade ve çalışma disiplini aşılamış, somut hedefler göstermiştir.",
-        "İletişimi sürdürme amacı": "Mektubun sonunda Eskişehir adresini verip yeni mektup beklediğini vurgulayarak dostluk bağını pekiştirmiştir."
-      }
+        "Dertleşme ve iletişim kurma amacı": "Kaplan “Zaten seninle konuşmaya da ihtiyacım var” diyerek iletişim ve dertleşme isteğini açıkça ortaya koyar.",
+        "Düşünsel paylaşım amacı": "Okudukları, roman tekniği ve yazma üzerine görüşlerini ayrıntılı biçimde aktarır.",
+        "Muhatabı cesaretlendirme amacı": "Âli'ye kabiliyetsizlik konusunda acele hüküm vermemesini, çalışmasını ve “Harekete geç”mesini söyler.",
+        "Haberleşmeyi sürdürme amacı": "Mektubun sonunda yeni haber beklediğini ve cevap için ulaştırma bilgisini verir.",
+        "Değerlendirme sınırı": "Bunlar yazarın amaçlarını ve kullandığı araçları gösterir; muhatabın gerçekten ikna olup olmadığı veya davranışını değiştirip değiştirmediği bu metinden bilinemez."
+      },
+      "guidance": "“Yazar ne yapmak istiyor?”, “Bunu hangi söz veya bölümle yapmaya çalışıyor?” ve “Muhatabın tepkisini biliyor muyuz?” sorularını ayırarak değerlendirin."
     },
     {
       "question_id": "T1-P46-Q04",
@@ -94,14 +138,15 @@
       "printed_page": 47,
       "question_no": "1",
       "prompt_summary": "Mektuptaki gerçeklik ile nesnel gerçekliğin örtüşme düzeyini değerlendirme",
-      "answer": "Mehmet Kaplan'ın mektubu kurmaca bir edebî eser değil, gerçek bir kişinin gerçek bir zaman ve mekânda kaleme aldığı otantik bir mektuptur; bu yönüyle nesnel tarihsel gerçeklikle tam bir örtüşme gösterir. Ancak yazarın aktardığı duygu, yalnızlık, beğeni ve hükümler sübjektif (öznel) bir gerçeklik niteliğindedir.",
+      "answer": "Mektup gerçek kişi, tarih, yer ve gündelik olaylara dayanan kişisel bir tanıklıktır; bu nedenle nesnel gerçeklikle ilişkilendirilebilecek çok sayıda unsur taşır. Ancak metindeki her ayrıntının doğruluğu dış kaynakla sınanmadan “tam örtüşme” sonucuna gidilmemeli; yazarın duygu, beğeni ve yorumlarının öznel olduğu ayrıca belirtilmelidir.",
       "source_locator": "basılı s.47 / PDF s.48; ana metin s.37-38",
       "answer_sections": {
-        "Nesnel Gerçeklikle Örtüşen Boyut": "Mektuptaki tarih (24 Haziran 1940), yer (İstanbul / Fakülte), kişi isimleri (Mehmet Kaplan, Âli, Cahit, Behice, Hamdi Bey/Ahmet Hamdi Tanpınar), mekânlar (Küllük kahvesi, Eskişehir) ve olaylar (üniversite sınavları, tez çalışmaları) dönemin tarihsel ve biyografik gerçekliğiyle birebir örtüşür.",
-        "Öznel Gerçeklik Boyutu": "Kaplan'ın iç dünyasındaki mütemadî yalnızlık hissi, vicdan azabı, Rus ve Fransız romanlarına dair estetik kıyaslamaları ve dostuna yönelik kişisel tavsiyeleri yazarın zihninde şekillenen öznel gerçekliktir.",
-        "Çıkarım": "Metin, nesnel bir tarihsel iskelet üzerine inşa edilmiş samimi bir öznel tanıklıktır."
+        "Metinde doğrulanabilir nitelikteki unsurlar": "24 Haziran 1940 tarihi, İstanbul/Fakülte, kişi ve yer adları, sınavlar, Namık Kemal okumaları, Eskişehir yolculuğu gibi ayrıntılar dış kaynaklarla karşılaştırılabilecek somut verilerdir.",
+        "Öznel gerçeklik": "Yalnızlık duygusu, vicdan azabı, Dostoyevski ve Fransız romanına ilişkin beğeni/yargılar, Âli'ye yönelik tavsiyeler yazarın kişisel bakışını yansıtır.",
+        "Sonuç": "Mektup tarihsel araştırma için değerli bir birincil tanıklık olabilir; fakat kişisel bakış açısı taşıdığı için tek başına bütünüyle tarafsız veya eksiksiz bir tarih belgesi sayılmaz."
       },
-      "explanation": "Bu soruda 'gerçek olaylara dayanma' (nesnellik) ile 'yazarın kişisel bakış açısı ve duyguları' (öznellik) arasındaki dengeyi doğru kurmak esastır."
+      "explanation": "Bu soruda 'gerçek olaylara dayanma' (nesnellik) ile 'yazarın kişisel bakış açısı ve duyguları' (öznellik) arasındaki dengeyi doğru kurmak esastır.",
+      "guidance": "“Metinde hangi bilgi dışarıdan doğrulanabilir?”, “Hangisi yazarın yorumu veya duygusu?” sorularıyla iki katmanı ayırın. Dış araştırma yapılmadan kişi eşleştirmelerini veya tarihsel ayrıntıları kesinleştirmeyin."
     },
     {
       "question_id": "T1-P47-Q02",
@@ -109,24 +154,26 @@
       "printed_page": 47,
       "question_no": "2",
       "prompt_summary": "Metinden ve gerçek hayattan örneklerle gerçeklik değerlendirmesini destekleme",
-      "answer": "Mektuptaki ifadeler ile yazarın hayatına ve dönemin şartlarına dair nesnel gerçeklikler tablodaki gibi somut verilerle eşleşir:",
+      "answer": "Görüşü desteklemek için önce mektuptaki somut ayrıntılar seçilmeli, ardından bunların gerçek yaşam karşılıkları biyografi, dönem kaynakları veya güvenilir tarih-edebiyat araştırmalarıyla kontrol edilmelidir.",
       "source_locator": "basılı s.47 / PDF s.48; biyografi s.38",
       "answer_sections": {
         "Metinden Örnekler": [
           "“24 Haziran 940 İstanbul” ve “Fakülte’de imtihanlar başladı.”",
           "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim...”",
           "“Ara sıra Küllük kahvesine gidiyorum.”",
-          "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım. İstasyonda Kasap İbrahim vasıtasıyla...”",
+          "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.”",
           "“Hamdi Bey’le yine sathî bir samimiyetimiz var.”"
         ],
-        "Gerçek Hayattan Örnekler": [
-          "Mehmet Kaplan, 1939'da mezun olduğu İÜ Edebiyat Fakültesinde asistanlığa başlamış ve sınav dönemlerinde görev almıştır.",
-          "Kaplan, 1942 yılında tamamladığı 'Namık Kemal: Hayatı ve Eserleri' başlıklı doktora tezi için 1940 yılında yoğun okuma ve arşiv çalışması yapmaktadır.",
-          "Beyazıt'ta Sahaflar Çarşısı yanındaki tarihî Küllük Kahvesi, 1940'larda Ahmet Hamdi Tanpınar, Yahya Kemal ve dönemin üniversite gençliğinin buluşma yeridir.",
-          "Mehmet Kaplan Sivrihisar/Eskişehir doğumludur; yaz aylarında ailesinin yanına Eskişehir'e gitmiş, mektuplar istasyon esnafı aracılığıyla iletilmiştir.",
-          "Mektupta geçen 'Hamdi Bey', Kaplan'ın asistanı olduğu kürsü başkanı Ahmet Hamdi Tanpınar'dır."
-        ]
-      }
+        "Dış araştırmada karşılaştırılabilecek başlıklar": [
+          "Kaplan'ın 1939–1940 yıllarındaki İstanbul Üniversitesi ve asistanlık hayatı.",
+          "Namık Kemal üzerine çalışmalarının hangi tarihlerde ve hangi akademik bağlamda yürüdüğü.",
+          "Küllük Kahvesi'nin dönemin edebiyat ve üniversite çevresindeki yeri.",
+          "Kaplan'ın Eskişehir/Sivrihisar bağları ve mektuptaki ulaştırma bilgisinin dönemin haberleşme pratiğiyle ilişkisi.",
+          "Mektupta geçen “Hamdi Bey”in kimliğinin biyografik/akademik kaynaklardan doğrulanması."
+        ],
+        "Kullanım ilkesi": "Dış kaynakta doğrulanan sonuç, “metinde açıkça yazıyor” diye değil “dış araştırmayla doğrulanan/ilişkilendirilen bilgi” olarak gösterilmelidir."
+      },
+      "guidance": "Öğrenciden her satır için iki sütun kullanmasını isteyin: “Mektuptaki kanıt” ve “Dış kaynakta bulduğum karşılık”. Kaynak göstermeden biyografik eşleştirme yaptırmayın."
     },
     {
       "question_id": "T1-P47-Q03",
@@ -134,13 +181,13 @@
       "printed_page": 47,
       "question_no": "3",
       "prompt_summary": "Arkadaş görüşlerini değerlendirip katılma veya katılmama gerekçesi oluşturma",
-      "answer": "Sınıf içi tartışmada öne çıkabilecek farklı arkadaş görüşleri metin kanıtlarıyla şöyle değerlendirilebilir:",
+      "answer": "Bu soru sınıf arkadaşlarının gerçek görüşlerine göre cevaplanmalıdır. Öğretmen, öğrencinin bir görüşe katılıp katılmadığını metin ve araştırma kanıtıyla gerekçelendirmesini sağlamalıdır.",
       "source_locator": "basılı s.47 / PDF s.48",
       "answer_sections": {
-        "1. Arkadaş Görüşü": "“Bu mektup tamamen tarihî ve nesnel bir belgedir, edebî kurmaca değildir.” → Değerlendirme: Bu görüşe kısmen katılıyorum; çünkü kişi ve olaylar gerçektir. Ancak tamamen nesnel sayılamaz; yazarın yalnızlık, keder ve Dostoyevski romanı hakkındaki yorumları tamamen öznel ve estetik değerlendirmelerdir.",
-        "2. Arkadaş Görüşü": "“Mektup kişisel bir iç döküştür, dönem hakkında genel ve güvenilir bir bilgi vermez.” → Değerlendirme: Bu görüşe katılmıyorum; mektup her ne kadar kişisel duygularla yazılmış olsa da 1940'lar üniversite atmosferini, tren-istasyon haberleşme ağını ve Tanpınar çevresini yansıtması bakımından dönemin sosyal yapısını aydınlatan tarihî bir belge gücüne sahiptir."
+        "Örnek görüş 1": "“Mektup gerçek kişilere ve olaylara dayandığı için tarihsel araştırmada kullanılabilir.” → Katılınabilir; ancak kişisel duygu ve değerlendirmeler içerdiği için tamamen tarafsız bir belge olduğu sonucuna gidilmemelidir.",
+        "Örnek görüş 2": "“Kişisel bir mektup dönem hakkında hiçbir bilgi vermez.” → Katılmayabilirsiniz; çünkü tarih, kurum, eğitim, gündelik hayat ve haberleşme gibi somut ayrıntılar dönemi araştırmak için ipucu sağlar. Bununla birlikte tek bir kişinin deneyiminin bütün toplumu temsil etmediği belirtilmelidir."
       },
-      "guidance": "Gerçek sınıf ortamında öğrencilerin birbirlerinin argümanlarını dinleyerek 'katılıyorum/katılmıyorum çünkü...' kalıbıyla metin kanıtı sunmaları sağlanmalıdır."
+      "guidance": "Gerçek sınıf tartışmasında öğrencilerin görüşlerini aynen kaydedin; hazır örnekleri yalnızca tartışmayı başlatmak için kullanın. “Katılıyorum/katılmıyorum çünkü...” ifadesini mutlaka metin veya dış araştırma kanıtıyla tamamlatın."
     }
   ]
 }
