@@ -62,6 +62,24 @@ interface LessonDao {
     @Query("SELECT * FROM teacher_marks WHERE academicYear = :academicYear AND track = :track")
     suspend fun marks(academicYear: String, track: String): List<TeacherMarkRow>
 
+    @Query("SELECT * FROM lesson_progress")
+    suspend fun allProgress(): List<ProgressRow>
+
+    @Query("SELECT * FROM teacher_marks")
+    suspend fun allMarks(): List<TeacherMarkRow>
+
+    @Query("DELETE FROM lesson_progress")
+    suspend fun deleteAllProgress()
+
+    @Query("DELETE FROM teacher_marks")
+    suspend fun deleteAllMarks()
+
+    @Upsert
+    suspend fun upsertProgress(rows: List<ProgressRow>)
+
+    @Upsert
+    suspend fun upsertMarks(rows: List<TeacherMarkRow>)
+
     @Upsert
     suspend fun upsertMark(row: TeacherMarkRow)
 }
