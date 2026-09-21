@@ -15,8 +15,9 @@ native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır
   derleme sırasında web ile aynı doğrulama kapısından geçip APK içine alınır.
 - Dört temanın ders kitaplığı, doğrulanmış kaynak başlıkları, kalıcı ders oturumu,
   yedi içerik düzeni ve Android içi sınıf sunumu çalışır.
-- Cevap açma, kalıcı ilerleme, düzenleme ve işaretleme **henüz yok**:
-  Faz 3–6 işidir. Bu bir release APK değildir.
+- Cevap açma ve kalıcı ders ilerlemesi çalışır; öğretmen düzenlemesi,
+  takip hattı işaretleri ve JSON yedekleme henüz yoktur ve Faz 5–6 kapsamındadır.
+  Bu bir release APK değildir.
 
 ## Araç zinciri
 
