@@ -33,7 +33,8 @@ class AndroidShellTest {
             ).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithText("Önceki").assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithText("Aç / ilerle").assertHeightIsAtLeast(48.dp)
+        composeRule.onAllNodes(hasText("Göster:", substring = true))[0]
+            .assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithText("Sonraki").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithText("Sınıf sunumuna geç").performClick()
 
@@ -93,14 +94,21 @@ class AndroidShellTest {
                 hasText("Üç ayrı takip hattı")
             ).fetchSemanticsNodes().isNotEmpty()
         }
-        val guideList = composeRule.onNodeWithTag("teacher-guide-list")
-        guideList.performScrollToNode(hasText("1 · EDEBİYAT ATÖLYESİ"))
         composeRule.onNodeWithText("1 · EDEBİYAT ATÖLYESİ").assertExists()
-        guideList.performScrollToNode(hasText("2 · DÖRT ESER + BİR FİLM"))
+        composeRule.onNodeWithText("Yıllık plan").performClick()
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("2 · DÖRT ESER + BİR FİLM")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
         composeRule.onNodeWithText("2 · DÖRT ESER + BİR FİLM").assertExists()
-        guideList.performScrollToNode(hasText("3 · PORTFOLYO VE DEĞERLENDİRME"))
+        composeRule.onNodeWithText("Portfolyo").performClick()
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("3 · PORTFOLYO VE DEĞERLENDİRME")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
         composeRule.onNodeWithText("3 · PORTFOLYO VE DEĞERLENDİRME").assertExists()
-        guideList.performScrollToNode(hasText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı"))
         composeRule.onNodeWithText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı")
             .assertExists()
     }

@@ -1,12 +1,15 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
@@ -27,12 +30,14 @@ import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
+import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
+import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
 
 /**
  * Adaptive teacher lesson player for the seven canonical layout kinds.
@@ -42,19 +47,33 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 internal fun SessionLessonScreen(
     lesson: LessonData,
     state: LessonSession,
-    dispatch: (LessonCommand) -> Unit
+    dispatch: (LessonCommand) -> Unit,
+    actionState: LessonActionUiState = LessonActionUiState(),
+    retryLastAction: () -> Unit = {}
 ) {
     val sourceStep = lesson.steps.first { it.id == state.stepId }
     val step = LessonEngine.effectiveStep(sourceStep, state.overrides[sourceStep.id])
     val answer = step.answer
     val answerVisible = RevealKey.ANSWER in state.revealed
     val ordinal = state.order.indexOf(state.stepId)
+    val density = lessonVisualDensity(step.density)
+    val advanceEnabled = step.revealOrder.any { it !in state.revealed } ||
+        ordinal < state.order.lastIndex
+    val send: (LessonCommand) -> Unit = { command ->
+        if (!actionState.busy) dispatch(command)
+    }
     Column(modifier = Modifier.fillMaxSize()) {
-        LazyColumn(
-            modifier = Modifier.weight(1f).fillMaxWidth().testTag("lesson-screen-list"),
-            contentPadding = PaddingValues(LessonSpacing.large),
-            verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+        LessonActionStatus(actionState, retryLastAction)
+        Box(
+            modifier = Modifier.weight(1f).fillMaxWidth(),
+            contentAlignment = androidx.compose.ui.Alignment.TopCenter
         ) {
+            LazyColumn(
+                modifier = Modifier.fillMaxWidth().widthIn(max = 960.dp)
+                    .testTag("lesson-screen-list"),
+                contentPadding = PaddingValues(density.screenPadding),
+                verticalArrangement = Arrangement.spacedBy(density.blockGap)
+            ) {
         item {
             Text(lesson.title, style = MaterialTheme.typography.headlineMedium)
             Text("Basılı s. ${step.source.printedPageRange} · ${ordinal + 1}/${state.order.size}",
@@ -64,7 +83,7 @@ internal fun SessionLessonScreen(
         item {
             FilledTonalButton(
                 onClick = {
-                    dispatch(LessonCommand.SetPresentationMode(!state.presentationMode))
+                    send(LessonCommand.SetPresentationMode(!state.presentationMode))
                 },
                 modifier = Modifier.fillMaxWidth()
                     .heightIn(min = LessonTarget.minimum)
@@ -81,7 +100,7 @@ internal fun SessionLessonScreen(
                 )
             ) {
                 Column(
-                    modifier = Modifier.fillMaxWidth().padding(LessonSpacing.large),
+                    modifier = Modifier.fillMaxWidth().padding(density.cardPadding),
                     verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
                 ) {
                     Text(
@@ -91,14 +110,19 @@ internal fun SessionLessonScreen(
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.secondary
                     )
-                    Text(
-                        if (answerVisible && step.layout != LayoutKind.VOCABULARY)
-                            answer?.answer.orEmpty() else step.displayPrompt,
-                        style = MaterialTheme.typography.headlineMedium
-                    )
+                    AnimatedContent(
+                        targetState = if (answerVisible && step.layout != LayoutKind.VOCABULARY) {
+                            answer?.answer.orEmpty()
+                        } else {
+                            step.displayPrompt
+                        },
+                        label = "teacher-prompt-answer"
+                    ) { text ->
+                        Text(text, style = MaterialTheme.typography.headlineMedium)
+                    }
                     if (answer != null && step.layout != LayoutKind.VOCABULARY) {
                         FilledTonalButton(
-                            onClick = { dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
+                            onClick = { send(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
                             modifier = Modifier.fillMaxWidth()
                                 .heightIn(min = LessonTarget.minimum)
                                 .padding(top = LessonSpacing.small)
@@ -145,7 +169,7 @@ internal fun SessionLessonScreen(
                             if (!answerVisible) {
                                 OutlinedButton(
                                     onClick = {
-                                        dispatch(LessonCommand.ToggleTerm(state.stepId, term))
+                                        send(LessonCommand.ToggleTerm(state.stepId, term))
                                     },
                                     modifier = Modifier.fillMaxWidth()
                                     .heightIn(min = LessonTarget.minimum)
@@ -162,7 +186,7 @@ internal fun SessionLessonScreen(
                         if (answer != null) {
                             FilledTonalButton(
                                 onClick = {
-                                    dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER))
+                                    send(LessonCommand.ToggleReveal(RevealKey.ANSWER))
                                 },
                                 modifier = Modifier.fillMaxWidth()
                                 .heightIn(min = LessonTarget.minimum)
@@ -187,7 +211,7 @@ internal fun SessionLessonScreen(
                 step.revealOrder.filter { it !in setOf(RevealKey.ANSWER, RevealKey.NOTE) }
                     .forEach { key ->
                         OutlinedButton(
-                            onClick = { dispatch(LessonCommand.ToggleReveal(key)) },
+                            onClick = { send(LessonCommand.ToggleReveal(key)) },
                             modifier = Modifier.fillMaxWidth()
                             .heightIn(min = LessonTarget.minimum)
                             .semantics {
@@ -221,7 +245,7 @@ internal fun SessionLessonScreen(
                 if (!state.presentationMode && RevealKey.NOTE in step.revealOrder) {
                     OutlinedButton(
                         onClick = {
-                            dispatch(LessonCommand.ToggleReveal(RevealKey.NOTE))
+                            send(LessonCommand.ToggleReveal(RevealKey.NOTE))
                         }, modifier = Modifier.fillMaxWidth()
                         .heightIn(min = LessonTarget.minimum)
                         .semantics {
@@ -246,11 +270,12 @@ internal fun SessionLessonScreen(
                     step = step,
                     state = state,
                     ordinal = ordinal,
-                    dispatch = dispatch
+                    dispatch = send
                 )
             }
         }
-        } // LazyColumn: lesson content scrolls independently from navigation.
+            } // LazyColumn: lesson content scrolls independently from navigation.
+        }
         Surface(
             color = MaterialTheme.colorScheme.surface,
             shadowElevation = 6.dp
@@ -263,21 +288,22 @@ internal fun SessionLessonScreen(
                 horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
             ) {
                 OutlinedButton(
-                    onClick = { dispatch(LessonCommand.Previous) },
+                    onClick = { send(LessonCommand.Previous) },
                     modifier = Modifier.weight(1f)
                         .heightIn(min = LessonTarget.minimum),
-                    enabled = ordinal > 0
+                    enabled = !actionState.busy && ordinal > 0
                 ) { Text("Önceki") }
                 FilledTonalButton(
-                    onClick = { dispatch(LessonCommand.RevealNext) },
-                    modifier = Modifier.weight(1f)
-                        .heightIn(min = LessonTarget.minimum)
-                ) { Text("Aç / ilerle") }
-                OutlinedButton(
-                    onClick = { dispatch(LessonCommand.Next) },
+                    onClick = { send(LessonCommand.RevealNext) },
                     modifier = Modifier.weight(1f)
                         .heightIn(min = LessonTarget.minimum),
-                    enabled = ordinal < state.order.lastIndex
+                    enabled = !actionState.busy && advanceEnabled
+                ) { Text(nextLessonActionLabel(step, state)) }
+                OutlinedButton(
+                    onClick = { send(LessonCommand.Next) },
+                    modifier = Modifier.weight(1f)
+                        .heightIn(min = LessonTarget.minimum),
+                    enabled = !actionState.busy && ordinal < state.order.lastIndex
                 ) { Text("Sonraki") }
             }
         }

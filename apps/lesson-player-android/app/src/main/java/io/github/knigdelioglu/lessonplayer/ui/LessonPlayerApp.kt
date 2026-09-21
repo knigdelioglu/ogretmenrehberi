@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -43,6 +44,7 @@ import io.github.knigdelioglu.lessonplayer.content.ContentRepository
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.player.BackupUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
+import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
@@ -51,6 +53,7 @@ import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanViewModel
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
+import kotlin.math.roundToInt
 
 @Composable
 fun LessonPlayerApp() {
@@ -65,6 +68,7 @@ fun LessonPlayerApp() {
         val teacherPlanUi by teacherPlanViewModel.state.collectAsState()
         val readySession = sessionUi as? LessonSessionUiState.Ready
         val backupUi by sessionViewModel.backupState.collectAsState()
+        val actionUi by sessionViewModel.actionState.collectAsState()
         var pendingExportPassphrase by rememberSaveable { mutableStateOf("") }
         var pendingImportPassphrase by rememberSaveable { mutableStateOf("") }
         val createBackup = rememberLauncherForActivityResult(
@@ -147,6 +151,8 @@ fun LessonPlayerApp() {
                     currentScreen = AppScreen.LESSON
                 },
                 dispatch = sessionViewModel::dispatch,
+                actionState = actionUi,
+                retryLastAction = sessionViewModel::retryLastAction,
                 teacherPlan = teacherPlanUi,
                 toggleTeacherMark = teacherPlanViewModel::toggle,
                 backupState = backupUi,
@@ -177,6 +183,8 @@ internal fun LessonPlayerShell(
     navigate: (AppScreen) -> Unit,
     selectLesson: (String) -> Unit,
     dispatch: (LessonCommand) -> Unit,
+    actionState: LessonActionUiState,
+    retryLastAction: () -> Unit,
     teacherPlan: TeacherPlanUiState,
     toggleTeacherMark: (TeacherTrack, String) -> Unit,
     backupState: BackupUiState,
@@ -184,16 +192,25 @@ internal fun LessonPlayerShell(
     beginImport: (String) -> Unit
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
-        val wide = maxWidth >= 840.dp
-        val twoPaneLesson = maxWidth >= 1100.dp &&
+        val windowLayout = lessonWindowLayout(
+            widthDp = maxWidth.value.roundToInt(),
+            heightDp = maxHeight.value.roundToInt()
+        )
+        val wide = windowLayout.usesRail
+        val twoPaneLesson = windowLayout.usesLessonOutline &&
             currentScreen == AppScreen.LESSON
+        val dispatchAction: (LessonCommand) -> Unit = { command ->
+            if (!actionState.busy) dispatch(command)
+        }
 
         if (currentScreen == AppScreen.LESSON && session.presentationMode) {
             PresentationLessonScreen(
                 lesson = bundle.byId.getValue(session.lessonId),
                 state = session,
-                dispatch = dispatch,
-                exit = { dispatch(LessonCommand.SetPresentationMode(false)) }
+                dispatch = dispatchAction,
+                actionState = actionState,
+                retryLastAction = retryLastAction,
+                exit = { dispatchAction(LessonCommand.SetPresentationMode(false)) }
             )
         } else {
             Scaffold(
@@ -262,13 +279,16 @@ internal fun LessonPlayerShell(
                             }
                         }
                     }
-                    Box(modifier = Modifier.weight(1f).fillMaxSize()) {
+                    Box(
+                        modifier = Modifier.weight(1f).fillMaxSize(),
+                        contentAlignment = Alignment.TopCenter
+                    ) {
                         if (twoPaneLesson) {
                             Row(modifier = Modifier.fillMaxSize()) {
                                 LessonOutlinePane(
                                     lesson = bundle.byId.getValue(session.lessonId),
                                     session = session,
-                                    dispatch = dispatch
+                                    dispatch = dispatchAction
                                 )
                                 Box(
                                     modifier = Modifier.weight(1f).fillMaxSize()
@@ -276,24 +296,33 @@ internal fun LessonPlayerShell(
                                     SessionLessonScreen(
                                         lesson = bundle.byId.getValue(session.lessonId),
                                         state = session,
-                                        dispatch = dispatch
+                                        dispatch = dispatchAction,
+                                        actionState = actionState,
+                                        retryLastAction = retryLastAction
                                     )
                                 }
                             }
                         } else {
-                            PhaseOneScreen(
-                                currentScreen,
-                                bundle,
-                                session,
-                                selectLesson,
-                                { navigate(AppScreen.LESSON) },
-                                dispatch,
-                                teacherPlan,
-                                toggleTeacherMark,
-                                backupState,
-                                beginExport,
-                                beginImport
-                            )
+                            Box(
+                                modifier = Modifier.fillMaxWidth().fillMaxHeight()
+                                    .widthIn(max = 960.dp)
+                            ) {
+                                PhaseOneScreen(
+                                    currentScreen,
+                                    bundle,
+                                    session,
+                                    selectLesson,
+                                    { navigate(AppScreen.LESSON) },
+                                    dispatchAction,
+                                    actionState,
+                                    retryLastAction,
+                                    teacherPlan,
+                                    toggleTeacherMark,
+                                    backupState,
+                                    beginExport,
+                                    beginImport
+                                )
+                            }
                         }
                     }
                 }

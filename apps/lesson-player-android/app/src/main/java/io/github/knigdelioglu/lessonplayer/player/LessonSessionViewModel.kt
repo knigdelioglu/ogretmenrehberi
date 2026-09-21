@@ -25,6 +25,12 @@ data class BackupUiState(
     val isError: Boolean = false
 )
 
+data class LessonActionUiState(
+    val busy: Boolean = false,
+    val message: String? = null,
+    val isError: Boolean = false
+)
+
 sealed interface LessonSessionUiState {
     data object Loading : LessonSessionUiState
     data class Ready(val session: LessonSession) : LessonSessionUiState
@@ -44,6 +50,10 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
     val state: StateFlow<LessonSessionUiState> = mutableState.asStateFlow()
     private val mutableBackupState = MutableStateFlow(BackupUiState())
     val backupState: StateFlow<BackupUiState> = mutableBackupState.asStateFlow()
+    private val mutableActionState = MutableStateFlow(LessonActionUiState())
+    val actionState: StateFlow<LessonActionUiState> = mutableActionState.asStateFlow()
+    private var lastFailedCommand: LessonCommand? = null
+    private var lastFailedLessonId: String? = null
 
     fun initialize(bundle: LessonBundle) {
         viewModelScope.launch {
@@ -68,19 +78,30 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
     }
 
     fun openLesson(id: String) {
+        if (mutableActionState.value.busy) return
+        lastFailedCommand = null
+        lastFailedLessonId = null
+        mutableActionState.value = LessonActionUiState(busy = true)
         viewModelScope.launch {
             mutex.withLock {
-                val bundle = currentBundle ?: return@withLock
-                val lesson = bundle.byId[id] ?: return@withLock
+                val bundle = currentBundle ?: run {
+                    failAction("Ders paketi henüz hazır değil.")
+                    return@withLock
+                }
+                val lesson = bundle.byId[id] ?: run {
+                    failAction("Ders bulunamadı. Önceki ders korunuyor.")
+                    return@withLock
+                }
                 try {
                     val session = store.restore(lesson, bundle.lessonDigest(lesson.lessonId))
                         .copy(presentationMode = preferences.presentationMode.first())
                     // Prefer persisted selection only after a successful restore.
                     preferences.rememberLesson(id)
                     mutableState.value = LessonSessionUiState.Ready(session)
+                    clearAction()
                 } catch (error: Exception) {
-                    mutableState.value = LessonSessionUiState.Error(
-                        "Ders açılamadı: ${error.message}")
+                    lastFailedLessonId = id
+                    failAction("Ders açılamadı. Önceki ders korunuyor.")
                 }
             }
         }
@@ -156,26 +177,63 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
     }
 
     fun dispatch(command: LessonCommand) {
+        if (mutableActionState.value.busy ||
+            mutableState.value !is LessonSessionUiState.Ready ||
+            currentBundle == null
+        ) return
+        mutableActionState.value = LessonActionUiState(busy = true)
         viewModelScope.launch {
             mutex.withLock {
                 val ready = mutableState.value as? LessonSessionUiState.Ready
-                    ?: return@withLock
-                val bundle = currentBundle ?: return@withLock
-                val lesson = bundle.byId[ready.session.lessonId] ?: return@withLock
+                    ?: run {
+                        clearAction()
+                        return@withLock
+                    }
+                val bundle = currentBundle ?: run {
+                    failAction("Ders paketi henüz hazır değil.")
+                    return@withLock
+                }
+                val lesson = bundle.byId[ready.session.lessonId] ?: run {
+                    failAction("Ders bulunamadı. Önceki durum korundu.")
+                    return@withLock
+                }
                 try {
                     val next = LessonEngine.reduce(ready.session, lesson, command)
-                    if (next == ready.session) return@withLock
+                    if (next == ready.session) {
+                        clearAction()
+                        return@withLock
+                    }
                     // Persist progress/customization first, never reset on bootstrap.
                     store.save(next)
                     if (command is LessonCommand.SetPresentationMode) {
                         preferences.setPresentationMode(command.enabled)
                     }
                     mutableState.value = LessonSessionUiState.Ready(next)
+                    lastFailedCommand = null
+                    lastFailedLessonId = null
+                    clearAction()
                 } catch (error: Exception) {
-                    mutableState.value = LessonSessionUiState.Error(
-                        "İşlem kaydedilemedi: ${error.message}")
+                    lastFailedCommand = command
+                    lastFailedLessonId = null
+                    failAction("İşlem kaydedilemedi. Önceki durum korundu.")
                 }
             }
         }
+    }
+
+    fun retryLastAction() {
+        lastFailedCommand?.let(::dispatch)
+            ?: lastFailedLessonId?.let(::openLesson)
+    }
+
+    private fun clearAction() {
+        mutableActionState.value = LessonActionUiState()
+    }
+
+    private fun failAction(message: String) {
+        mutableActionState.value = LessonActionUiState(
+            message = message,
+            isError = true
+        )
     }
 }
