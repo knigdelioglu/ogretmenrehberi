@@ -56,9 +56,6 @@ class AndroidShellTest {
         }
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
     }
-}
-
-
     @Test
     fun teacherGuideShowsThreePersistentTrackingLanes() {
         composeRule.waitUntil(timeoutMillis = 30_000) {
@@ -78,3 +75,5 @@ class AndroidShellTest {
         composeRule.onNodeWithText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı")
             .assertExists()
     }
+
+}
