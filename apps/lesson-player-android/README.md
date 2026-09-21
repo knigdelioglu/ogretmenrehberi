@@ -1,6 +1,6 @@
 # Lesson Player · Android 16
 
-**Faz 2: kanonik çevrimdışı içerik + Faz 1 native iskeleti.** Kotlin + Jetpack Compose, WebView/Tauri yok.
+**Faz 4: kanonik çevrimdışı içerik + Kotlin motoru + uyarlanabilir Compose ders yüzeyi.** Kotlin + Jetpack Compose, WebView/Tauri yok.
 Minimum Android 16 (`minSdk=36`), `compileSdk=targetSdk=36`.
 İlk hedef tablet; portrait/landscape ve değişken pencere genişliği için
 native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır.
@@ -13,8 +13,8 @@ native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır
 - Android Back, API 36 edge-to-edge için Compose safe insets.
 - İnternet izni yok. **48 ders / 914 adım ve 4 temanın gerçek kanonik JSON'u**
   derleme sırasında web ile aynı doğrulama kapısından geçip APK içine alınır.
-- Dört temanın ders kitaplığı, doğrulanmış kaynak başlıkları ve
-  her dersin adımlarının salt okunur önizlemesi çalışır.
+- Dört temanın ders kitaplığı, doğrulanmış kaynak başlıkları, kalıcı ders oturumu,
+  yedi içerik düzeni ve Android içi sınıf sunumu çalışır.
 - Cevap açma, kalıcı ilerleme, düzenleme ve işaretleme **henüz yok**:
   Faz 3–6 işidir. Bu bir release APK değildir.
 
@@ -80,6 +80,6 @@ node ../lesson-player/scripts/test-android-data.mjs
 Android 16 emülatör CI'sında Wi-Fi ve hücresel veri kapatılarak
 assets tabanlı test yapılır. İlk Gradle/SDK kurulumu internete ihtiyaç
 duysa da **uygulamanın ders okuması internete ihtiyaç duymaz**.
-Faz 3'te step-ID tabanlı oturum motoru ve kalıcı kayıt eklenecek.
+Faz 5–6'da öğretmen rehberi işaretleri, native düzenleme ve JSON yedek eklenecek.
 
 Plan: [Fazlar](../../docs/LESSON_PLAYER_ANDROID_PHASED_PLAN.md).
