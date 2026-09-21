@@ -195,18 +195,23 @@
     },
     {
       "question_id": "T1-P67-Q07",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 67,
       "question_no": "7",
       "prompt_summary": "İletişime dair genel sonuç çıkarma",
-      "answer": "Yapılan tahmin ve tespitlerin sonucunda; iletişimin teknolojik araçların varlığıyla değil, bireylerin birbirini anlama, dinleme ve değer verme isteğiyle hayat bulduğu sonucuna ulaşılır. İletişim araçları birer köprüdür; o köprüden geçen sözcüklerin niteliği, nezaketi ve dürüstlüğü iletişimin başarısını tayin eder.",
+      "answer": "Bu sonuç, öğrencinin kendi dinleme öncesi tahminleri ile videodan elde ettiği gerçek tespitlere dayanmalıdır. PDF'de video içeriği bulunmadığı için rehber tek bir iletişim sonucu dayatmamalı; öğrencinin kanıttan genellemeye nasıl ulaşacağını göstermelidir.",
       "answer_sections": {
-        "Araç ve Amaç Ayrımı": "Teknoloji yalnızca iletişimin aracını ve iletim hızını değiştirir; iletişimin temel amacı olan 'anlaşılmak, paylaşmak ve bağ kurmak' ise değişmez insani bir ihtiyaçtır.",
-        "Dilin ve Üslubun Belirleyiciliği": "Kanal ne olursa olsun (yüz yüze, telefon, e-posta), seçilen dilin nezaketi, açıklığı ve muhataba uygunluğu ilişkinin geleceğini belirler.",
-        "Bilinçli Kullanım Zorunluluğu": "Hızlı iletişim ortamlarında düşünmeden verilen ani tepkiler yerine sabırla, tartarak ve empatiyle iletişim kurmak dijital çağın en kritik becerisidir."
+        "Kanıtlarım": [
+          "Dinleme/izleme öncesi tahminim: [...]",
+          "Videodan dikkatimi çeken gerçek tespit 1: [...]",
+          "Videodan dikkatimi çeken gerçek tespit 2: [...]"
+        ],
+        "Bu Kanıtlardan Çıkardığım Sonuç": "“Bu örneklerden hareketle iletişim hakkında ... sonucuna ulaştım; çünkü ...”",
+        "Günlük Yaşamla Bağlantı": "“Bu sonucu kendi iletişimimde ... durumunda kullanabilirim / gözlemleyebilirim.”"
       },
-      "guidance": "Öğrencilerin sonuç cümlelerini kendi günlük iletişim pratikleriyle (sosyal medya kullanımı, aile içi diyalog vb.) ilişkilendirmeleri sağlanmalıdır.",
-      "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 7"
+      "guidance": "Sonucun videodaki tespitlerden gerçekten çıkıp çıkmadığını sorgulayın. “Teknoloji kötüdür/iyidir”, “iletişimin tek şartı şudur” gibi aşırı genellemeler yerine öğrencinin kanıtıyla sınırlı ve gerekçeli sonuçları kabul edin.",
+      "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 7",
+      "explanation": "source_limited: bu sorunun içeriği öğrencinin QR videodan yaptığı gerçek tespitlere bağlıdır; rehber yalnız çıkarım yapısını verir."
     },
     {
       "question_id": "T1-P67-Q08",
