@@ -57,3 +57,24 @@ class AndroidShellTest {
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
     }
 }
+
+
+    @Test
+    fun teacherGuideShowsThreePersistentTrackingLanes() {
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("Ders, elinin altında.")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithText("Rehber").performClick()
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                hasText("Üç ayrı takip hattı")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithText("1 · EDEBİYAT ATÖLYESİ").assertExists()
+        composeRule.onNodeWithText("2 · DÖRT ESER + BİR FİLM").assertExists()
+        composeRule.onNodeWithText("3 · PORTFOLYO VE DEĞERLENDİRME").assertExists()
+        composeRule.onNodeWithText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı")
+            .assertExists()
+    }
