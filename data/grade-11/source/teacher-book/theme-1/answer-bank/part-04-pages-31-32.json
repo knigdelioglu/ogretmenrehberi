@@ -25,57 +25,91 @@
       "question_id": "T1-P32-Q03",
       "entry_type": "question_answer",
       "printed_page": 32,
-      "prompt_summary": "Çalışma kâğıdı: Yazıcı metninin kişiler, mekân, zaman, çatışma ve dramatik örgü bakımından yapı unsurları",
-      "answer": "Yazıcı metninin yapı unsurları kişiler, dramatik mekân, zaman, çatışma ve olayların sahnedeki ilerleyişini oluşturan dramatik örgü başlıklarında incelenebilir.",
+      "question_no": "3",
+      "prompt_summary": "Çalışma kâğıdı: Yazıcı metninin kişiler, yer (mekân), zaman, çatışma ve dramatik örgü bakımından yapı unsurları",
+      "answer": "Yazıcı metninin yapı unsurları; geleneksel tiplerden oluşan kişiler kadrosu, yazıcı dükkânı etrafında kurulan dramatik mekân, belirsiz geleneksel zaman dilimi, okuma yazma bilmeyen Karagöz'ün yazıcılık yapmasından doğan temel çatışma ve fasıl boyunca müşterilerle gelişen dramatik örgü başlıklarında incelenir.",
       "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
       "answer_sections": {
-        "Kişiler": "Karagöz, Hacivat ve yazıcılık işi sırasında Karagöz'le karşılaşan farklı sosyal çevreleri temsil eden tiplerdir. Bu kişiler arasındaki eğitim, kültür ve konuşma biçimi farklılıkları oyunun mizahını ve çatışmasını besler.",
-        "Yer (mekân)": {
-          "Dramatik mekân": "Olayların önemli bölümü Karagöz'ün yazıcılık yaptığı dükkân/yazıhane çevresinde geçer. Bu mekân farklı kişilerin sırayla Karagöz'le karşılaşmasını sağlar.",
-          "Sahneleme ortamı": "Karagöz bir gölge oyunu olduğu için gösterim hayal perdesinde gerçekleştirilir; hayal perdesi oyunun sahneleme ortamıdır, olayın kurmaca içindeki asıl mekânı değildir."
+        "Kişiler": {
+          "Asıl tipler": "Karagöz (okuma yazma bilmeyen, iş arayan, hazırcevap, saf görünüşlü fakat pratik zekâlı halk tipi) ve Hacivat (yarı aydın, kurallı ve eğitimli konuşan, Karagöz'e dükkân kiralayan akıl hocası tipi).",
+          "Fasılda gelen müşteriler (yan tipler)": "II. Hanım ve Halayık (mektup yazdırmak isteyen konak hanımı ve hizmetçisi), Lâz (Trabzon'a gemiyle mal gönderip memleketine mektup yazdırmak isteyen Karadenizli gemici), Tiryaki (Mısırçarşısı'ndan alacağı baharat ve ilaçların listesini yazdırmak isteyen uyuşuk esnaf), Çelebi (sevdiği kıza şiir yazdırmak isteyen mirasyedi, kibar İstanbul genci)."
         },
-        "Zaman": "Kesin bir tarih verilmez. Olaylar, yazıcılık işinin sürdüğü kısa bir zaman diliminde ve geleneksel şehir hayatını çağrıştıran belirsiz bir zamanda geçer. Metnin tarihsel ve dilsel özellikleri Osmanlı dönemi şehir hayatını düşündürse de soruda asıl belirlenebilen unsur kesin tarihin verilmemiş olmasıdır.",
-        "Çatışma": "Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yapmaya girişmesi temel durum çatışmasını oluşturur. Buna Karagöz ile Hacivat arasındaki eğitim ve dil farkı, Karagöz'ün ağır veya alışılmadık sözleri ses benzerliğiyle başka anlamlara çekmesi ve müşterilerle yaşanan iletişim anlaşmazlıkları eklenir.",
+        "Yer (Mekân)": {
+          "Dramatik (kurmaca) mekân": "Olayların asıl geliştiği yer Hacivat'ın evinin altındaki yazıhane / yazıcı dükkânı ve önüdür. Diyaloglarda ayrıca Zeyrek, Unkapanı, Yahnikapan Sokağı ve Mısırçarşısı gibi tarihsel İstanbul semtleri anılır.",
+          "Sahneleme ortamı": "Karagöz bir geleneksel gölge oyunu olduğu için temsil 'hayal perdesi'nde (Şeyh Küşterî Meydanı) gerçekleştirilir. Perde sahneleme ortamıdır; kurmacanın iç mekânı ise yazıcı dükkânıdır."
+        },
+        "Zaman": {
+          "Vaka zamanı": "Kesin bir gün, ay veya yıl belirtilmez. Karagöz'ün dükkân açıp müşterilerin sırayla geldiği bir veya birkaç günlük kısa bir zaman diliminde cereyan eder.",
+          "Tarihsel dönem": "Kullanılan para birimleri (kuruş, dirhem), meslekler (yazıcılık, çene kavaflığı, ispir), mektup/arzuhal geleneği ve dil özellikleri klasik Osmanlı dönemi geleneksel İstanbul hayatına işaret eder."
+        },
+        "Çatışma": {
+          "Temel durum çatışması": "Karagöz'ün okuma yazma bilmediği hâlde geçim derdiyle yazıcılık dükkânı işletmeye kalkışmasıdır.",
+          "İletişim ve dil çatışması": "Eğitimli, kibar veya yöresel dille konuşan tiplerin sözlerini Karagöz'ün ses benzerliğinden hareketle tamamen yanlış, somut ve absürt anlamlara çekmesidir.",
+          "Kişiler arası çatışma": "Karagöz ile müşteriler arasındaki sözlü sürtüşmeler ve dükkân kirası/hâsılat paylaşımı yüzünden Karagöz ile Hacivat arasındaki çekişmedir."
+        },
         "Dramatik örgü": [
-          "Hacivat, iş arayan Karagöz'e yazıcılık/kâtiplik yapma fikrini verir.",
-          "Karagöz okuma-yazma bilmemesine rağmen para kazanmak amacıyla yazıcılık yapmaya başlar.",
-          "Yazı yazdırmak isteyen kişiler Karagöz'e gelir.",
-          "Karagöz söylenenleri yanlış anlar; yazma işini gerçekten yapamadığı için komik durumlar ve sözlü çatışmalar ortaya çıkar.",
-          "Karagöz'ün yazıcılık konusundaki yetersizliği giderek görünür hâle gelir; yaşanan karışıklıklar oyunun çatışmasını doruğa taşır ve bölüm sonuca bağlanır."
+          "Giriş ve Muhavere: Hacivat'ın perde gazeli ve semai ile perdeye gelmesi, Karagöz ile aralarında tekerlemeli söz düellosu ve yanlış anlamalar yaşanması.",
+          "Faslın başlaması: Karagöz'ün geçim derdiyle iş aradığını söylemesi üzerine Hacivat'ın ona evinin altındaki dükkânda yazıcılık yapma fikrini vermesi ve dükkânı kiralaması.",
+          "Müşterilerin gelişi: Karagöz'ün hokka ve kalemle dükkâna oturması; sırayla II. Hanım ve Halayık, Lâz, Tiryaki ve Çelebi'nin yazı yazdırmak üzere dükkâna gelmesi.",
+          "Yanlış anlamalar ve çatışmanın tırmanması: Karagöz'ün müşterilerin mektup, şiir ve sipariş listesi taleplerini ters anlaması, okuma yazma bilmediği hâlde kâğıtları uydurma sözlerle karalayarak vermesi ve taraflar arasında komik sürtüşmelerin doğması.",
+          "Sonuç: Karagöz'ün bu işi sürdüremeyeceğini anlaması, dükkânın tekin olmadığını öne sürerek işten vazgeçmesi ve Hacivat ile para/kira kavgasına tutuşması."
         ]
       },
-      "question_no": "3"
+      "guidance": "Çalışma kâğıdında dramatik mekân (yazıcı dükkânı) ile sahneleme ortamının (hayal perdesi) birbirinden ayırt edilmesi gerektiği belirtilmelidir. Kişiler sıralanırken fasılda dükkâna gelen yan tiplerin rollerine de yer verilmelidir.",
+      "evidence_quotes": [
+        "Kavaflık yapamam ama, yazıcılık yaparım.",
+        "Önümdeki âletlerimi görmüyor musunuz: hokka, kalem, kâğıt.",
+        "Ben rakam bilmem, okumam yazmam yok.",
+        "Ben buna bir katakofti söylerim.",
+        "Öyleyse, benim evimin altında bir dükkân var, sana vereyim de işlet."
+      ]
     },
     {
       "question_id": "T1-P32-Q04",
       "entry_type": "question_answer",
       "printed_page": 32,
-      "prompt_summary": "Yazıcı metnindeki çatışmaların kaynağı, tarafları ve kişiler, mekân, zaman ögelerinin çatışmaya etkisi",
-      "answer": "Yazıcı'daki çatışmaların temelinde Karagöz'ün yapmaya giriştiği işle sahip olduğu bilgi arasındaki uyumsuzluk ve kişiler arasındaki dil/eğitim farklılıkları vardır. Yanlış anlamalar bu temel karşıtlığı sürekli görünür hâle getirir.",
-      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
       "question_no": "4",
+      "prompt_summary": "Yazıcı metnindeki çatışmaların kaynağı, tarafları ve kişiler, mekân, zaman ögelerinin çatışmaya etkisi",
+      "answer": "Yazıcı metnindeki çatışmaların temelinde Karagöz'ün üstlendiği yazıcılık görevi ile sahip olduğu bilgi arasındaki uyuşmazlık, eğitim ve dil farklılıkları yer alır. Karagöz ile Hacivat ve gelen müşteriler arasında gelişen bu çatışmayı yazıcı dükkânı mekânı buluşturur; tiplerin zıt nitelikleri ise çatışmayı sürekli canlı tutar.",
+      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
       "answer_sections": {
-        "Kaynağı": "Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yapmaya kalkışması; Hacivat'ın ve diğer tiplerin kullandığı sözleri ses benzerliği üzerinden yanlış anlaması; eğitim, kültür ve söz varlığı farklılıklarının iletişimi aksatmasıdır.",
-        "Tarafları": "Başlıca Karagöz–Hacivat ve Karagöz–yazı yazdırmak için gelen kişiler arasında ortaya çıkar. Daha genel düzeyde halk söyleyişi ile daha eğitimli çevrelerin ağır dili karşı karşıya gelir.",
-        "Kişilerin etkisi": "Karagöz'ün daha az eğitimli, halk söyleyişine yakın, hazırcevap ve doğrudan tavrı ile Hacivat'ın daha eğitimli, ağır ve zaman zaman bilgiççe konuşması çatışmanın ana dinamiğidir. Diğer tiplerin farklı sosyal ve dilsel özellikleri de bu karşıtlığı çeşitlendirir.",
-        "Mekânın etkisi": "Yazıcı dükkânı/yazıhane, farklı sosyal çevrelerden kişileri aynı noktada buluşturan işlevsel bir dramatik mekândır. Böylece dil, eğitim ve beklenti farklılıkları doğrudan karşılaşır ve çatışmaya dönüşür.",
-        "Zamanın etkisi": "Kesin tarih belirtilmez; ancak yazıcılık, mektup/arzuhal yazdırma ihtiyacı ve metnin dil özellikleri geleneksel şehir hayatını çağrıştıran tarihsel bir zemin oluşturur. Bu toplumsal bağlam, okuryazarlık ve eğitim farklılıklarının çatışmada işlev kazanmasını sağlar."
+        "Çatışmaların kaynağı": "Karagöz'ün okuma yazma bilmediği hâlde dükkân açıp kâtiplik yapmaya girişmesi; müşterilerin ve Hacivat'ın kullandığı ağdalı, kibar veya yöresel sözleri Karagöz'ün ses benzerliğinden hareketle yanlış anlaması; geçim sıkıntısı ile kira ödeme mecburiyeti arasındaki gerilimdir.",
+        "Çatışmaların tarafları": {
+          "Karagöz – Hacivat": "Halk sağduyusu ve yalın söyleyiş (Karagöz) ile yarı aydın kuralcılık ve çıkar hesabı (Hacivat) karşı karşıyadır.",
+          "Karagöz – Müşteriler": "II. Hanım ile konak edebi-halk dili çatışması; Lâz ile hızlı konuşma ve sabırsızlık çatışması; Tiryaki ile ayrıntılı liste-uydurmacılık çatışması; Çelebi ile divan aşk dili-kaba gerçekçilik çatışması yaşanır."
+        },
+        "Kişilerin etkisi": "Çatışmanın en temel itici gücüdür. Karagöz'ün bilgisizliğini hazırcevaplık ve alayla gizleme tavrı, Hacivat'ın bilgiçliği ve dükkâna gelen tiplerin birbirinden farklı sosyal/kültürel aidiyetleri çatışmayı kaçınılmaz kılar.",
+        "Mekânın etkisi": "Yazıcı dükkânı, toplumun farklı tabakalarından ve coğrafyalarından gelen tipleri aynı noktada buluşturan işlevsel bir kesişim mekânıdır. Dükkân ortamı olmasaydı bu zıt tipler karşılaşamayacak ve Karagöz'ün yetersizliği bu derece görünür olmayacaktı.",
+        "Zamanın etkisi": "Olayların belirli bir Osmanlı dönemi şehir ortamında geçmesi arzuhal ve mektup ihtiyacını inandırıcı kılar; müşterilerin dükkâna art arda gelmesi ise çatışmanın temposunu hızlandırır."
       },
-      "guidance": "“Cahil–aydın” gibi keskin etiketler yerine çatışmayı metinde gözlenebilen eğitim, söz varlığı, iletişim ve davranış farklılıkları üzerinden açıklamak daha isabetlidir."
+      "guidance": "Çatışma analizinde 'Bilgi Köşesi'ndeki tanımdan yararlanılmalı; çatışma yalnızca şahsi bir münakaşa olarak değil, toplumdaki eğitim, zihniyet ve dil karşıtlıklarının metne yansıması olarak değerlendirilmelidir.",
+      "evidence_quotes": [
+        "Aydan aya beş yüz kuruş ver.",
+        "Sen çene kavaflığından başka hiçbir işe yaramazsın.",
+        "Ben rakam bilmem, okumam yazmam yok.",
+        "Düzcesi, Karagöz, bana para vermeyim diye dükkânın adını çıkarıyorsun."
+      ]
     },
     {
       "question_id": "T1-P32-Q05",
       "entry_type": "question_answer",
       "printed_page": 32,
-      "prompt_summary": "Kişilerin dil özelliklerinin oluşmasında en etkili yapı unsurlarını gerekçelendirme",
-      "answer": "En etkili yapı unsuru kişilerdir; mekân ise bu dil farklılıklarını görünür hâle getiren güçlü bir destekleyici unsurdur. Tiplerin eğitim düzeyi, sosyal çevresi, mesleği ve kültürel birikimi kullandıkları söz varlığını ve söyleyiş biçimini belirler.",
-      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
       "question_no": "5",
+      "prompt_summary": "Kişilerin dil özelliklerinin oluşmasında en etkili yapı unsurlarını gerekçelendirme",
+      "answer": "Kişilerin dil özelliklerinin oluşmasında doğrudan en etkili yapı unsuru kişilerdir; mekân ise bu dil çeşitliliğini aynı sahnede buluşturup karşıtlık yaratarak görünür kılan destekleyici unsurdur.",
+      "source_locator": "basılı s.32 / PDF s.33 — Çözümleyebilme",
       "answer_sections": {
-        "Kişiler (temel unsur)": "Geleneksel Karagöz oyununda tiplerin dili onların sosyal çevrelerini, eğitim düzeylerini ve kültürel özelliklerini ayırt etmenin başlıca yollarından biridir. Karagöz daha yalın ve halk söyleyişine yakın bir dil kullanırken Hacivat daha ağır, eski kelime ve tamlamalara yer veren bir söyleyiş kullanır. Diğer tiplerin bölgesel veya toplumsal konuşma özellikleri de dil çeşitliliğini artırır.",
-        "Mekân (destekleyici unsur)": "Yazıcı dükkânı farklı çevrelerden kişilerin aynı yerde karşılaşmasını sağlar. Böylece farklı söz varlıkları, söyleyiş biçimleri ve iletişim alışkanlıkları yan yana gelir; yanlış anlamalar ve dil çatışması dramatik bir işlev kazanır."
+        "Kişiler (asli ve belirleyici unsur)": "Geleneksel Türk tiyatrosunda tipler doğrudan dil ve söyleyiş özellikleriyle tanımlanır. Her tipin eğitim düzeyi, sosyal çevresi, mesleği ve etnik/kültürel kökeni kullandığı dili belirler: Karagöz sade halk dili ve argo sözcüklerle; Hacivat medrese/kitap dili ve tamlamalarla; Çelebi kibar İstanbul Türkçesi ve divan şiiri alıntılarıyla; Lâz Karadeniz ağzıyla; Tiryaki ise aktar terimleriyle konuşur. Dolayısıyla dil özelliklerini doğuran ana öge kişilerin tip özellikleridir.",
+        "Mekân (destekleyici ve işlevsel unsur)": "Yazıcı dükkânı, kendi başlarına farklı ortamlarda yaşayan bu kişileri bir araya getiren mekânsal çatıdır. Dükkân ortamı sayesinde farklı söz varlıkları ve söyleyiş tarzları yan yana gelir, çatışır ve aralarındaki dil uçurumu dramatik bir işlev kazanır."
       },
-      "guidance": "Soruda tek bir zorunlu cevap yoktur. Kişiler en güçlü gerekçeye sahip yapı unsurudur; mekânın etkisi de farklı tipleri karşılaştırmaya olanak sağlaması bakımından savunulabilir."
+      "guidance": "Soruda tek bir zorunlu cevap yoktur. Öğrencilerin 'kişiler' unsurunu dilin kaynağı olarak, 'mekân' unsurunu ise bu dilleri karşılaştıran ve çatıştıran ortam olarak gerekçelendirmeleri kabul edilmelidir.",
+      "evidence_quotes": [
+        "esbâb-ı mûcibesi",
+        "puradan kaktuh, gittuh Trabzan’a",
+        "Yirmi dirhem sinâmeki",
+        "Nerede iskân-ı beyt edersiniz?",
+        "Hokka, kalem, kâğıt"
+      ]
     }
   ]
 }
