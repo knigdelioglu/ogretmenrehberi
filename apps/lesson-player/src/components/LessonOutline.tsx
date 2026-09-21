@@ -5,6 +5,11 @@ function stepLabel(step: LessonStep) {
   return step.display_prompt ?? step.answer?.prompt_summary ?? step.source.book_heading;
 }
 
+function outlineQuestionLabel(questionNo: string) {
+  const label = questionNo.trim();
+  return /^\d/.test(label) ? `S.${label}` : label;
+}
+
 export function LessonOutline({
   lesson,
   steps,
@@ -48,7 +53,7 @@ export function LessonOutline({
                 >
                   <span className="outline-step__number">
                     {item.answer?.question_no
-                      ? `S.${item.answer.question_no}`
+                      ? outlineQuestionLabel(item.answer.question_no)
                       : String(itemIndex + 1).padStart(2, "0")}
                   </span>
                   <span className="outline-step__label">{stepLabel(item)}</span>
