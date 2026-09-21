@@ -9,10 +9,13 @@ class AndroidShellTest {
     @get:Rule val composeRule = createAndroidComposeRule<MainActivity>()
 
     @Test
-    fun nativeLibraryIsVisibleWithoutBundledLessons() {
+    fun nativeLibraryUsesValidatedOfflineCatalog() {
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(
+                androidx.compose.ui.test.hasText("Ders, elinin altında.")
+            ).fetchSemanticsNodes().isNotEmpty()
+        }
         composeRule.onNodeWithText("Ders, elinin altında.").assertExists()
-        composeRule.onNodeWithText(
-            "Bu ekran yerel uygulama iskeletidir. Doğrulanmış 48 ders akışı Faz 2'de bağlanacak."
-        ).assertExists()
+        composeRule.onNodeWithText("48 ders · 914 adım · internet gerekmez").assertExists()
     }
 }

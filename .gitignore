@@ -96,3 +96,6 @@ apps/lesson-player-android/.cxx/
 
 # Official Gradle wrapper JAR is checksum-verified on bootstrap
 apps/lesson-player-android/gradle/wrapper/gradle-wrapper.jar
+
+# Deterministically generated Android content bundle; never commit copied lesson data
+apps/lesson-player-android/app/src/main/assets/lesson-player/*.json
