@@ -29,6 +29,8 @@ import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
+import io.github.knigdelioglu.lessonplayer.content.StepContent
+import io.github.knigdelioglu.lessonplayer.content.SupplementalSection
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.StepOverride
@@ -194,6 +196,14 @@ internal fun LessonEditorPanel(
                 }
             }
 
+            step.content?.let { content ->
+                LessonContentEditor(
+                    stepId = step.id,
+                    sourceContent = content,
+                    dispatch = dispatch
+                )
+            }
+
             Text("Adım sırası", style = MaterialTheme.typography.titleMedium)
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -227,6 +237,127 @@ internal fun LessonEditorPanel(
             ) {
                 Text("Düzenlemeyi kapat")
             }
+        }
+    }
+}
+
+@Composable
+private fun LessonContentEditor(
+    stepId: String,
+    sourceContent: StepContent,
+    dispatch: (LessonCommand) -> Unit
+) {
+    var leadDraft by rememberSaveable(stepId) {
+        mutableStateOf(sourceContent.lead.orEmpty())
+    }
+    var itemDrafts by rememberSaveable(stepId) {
+        mutableStateOf(sourceContent.items)
+    }
+    var sectionTitles by rememberSaveable(stepId) {
+        mutableStateOf(sourceContent.sections.map { it.title })
+    }
+    var sectionBodies by rememberSaveable(stepId) {
+        mutableStateOf(sourceContent.sections.map { it.body })
+    }
+
+    LaunchedEffect(stepId, sourceContent) {
+        leadDraft = sourceContent.lead.orEmpty()
+        itemDrafts = sourceContent.items
+        sectionTitles = sourceContent.sections.map { it.title }
+        sectionBodies = sourceContent.sections.map { it.body }
+    }
+
+    val draft = StepContent(
+        lead = leadDraft.ifBlank { null },
+        items = itemDrafts,
+        sections = sectionTitles.indices.map { index ->
+            SupplementalSection(sectionTitles[index], sectionBodies[index])
+        },
+        // Teacher notes stay canonical and are not exposed by this editor.
+        note = sourceContent.note
+    )
+    val valid = itemDrafts.all(String::isNotBlank) &&
+        sectionTitles.zip(sectionBodies).all { (title, body) ->
+            title.isNotBlank() && body.isNotBlank()
+        }
+
+    Column(
+        verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+    ) {
+        Text("Süreç maddeleri ve bilgi kartları",
+            style = MaterialTheme.typography.titleMedium)
+        Text(
+            "Bu alanlar yalnızca bu adımın yerel öğretmen düzenini değiştirir.",
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.secondary
+        )
+        OutlinedTextField(
+            value = leadDraft,
+            onValueChange = { leadDraft = it },
+            modifier = Modifier.fillMaxWidth(),
+            label = { Text("Giriş açıklaması (isteğe bağlı)") },
+            minLines = 2
+        )
+        itemDrafts.forEachIndexed { index, item ->
+            OutlinedTextField(
+                value = item,
+                onValueChange = { value ->
+                    itemDrafts = itemDrafts.toMutableList().also {
+                        it[index] = value
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+                label = { Text("Süreç / bilgi maddesi ${index + 1}") },
+                minLines = 2
+            )
+        }
+        sectionTitles.forEachIndexed { index, title ->
+            Text(
+                "Bilgi kartı ${index + 1}",
+                style = MaterialTheme.typography.titleMedium
+            )
+            OutlinedTextField(
+                value = title,
+                onValueChange = { value ->
+                    sectionTitles = sectionTitles.toMutableList().also {
+                        it[index] = value
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+                label = { Text("Kart başlığı") }
+            )
+            OutlinedTextField(
+                value = sectionBodies[index],
+                onValueChange = { value ->
+                    sectionBodies = sectionBodies.toMutableList().also {
+                        it[index] = value
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+                label = { Text("Kart içeriği") },
+                minLines = 4
+            )
+        }
+        if (!valid) {
+            Text(
+                "Süreç maddesi ve bilgi kartı alanları boş bırakılamaz.",
+                color = MaterialTheme.colorScheme.error,
+                style = MaterialTheme.typography.bodyMedium
+            )
+        }
+        OutlinedButton(
+            onClick = {
+                dispatch(
+                    LessonCommand.ApplyOverride(
+                        stepId,
+                        StepOverride(content = draft, hasContentOverride = true)
+                    )
+                )
+            },
+            enabled = valid && draft != sourceContent,
+            modifier = Modifier.fillMaxWidth().heightIn(min = LessonTarget.minimum)
+        ) {
+            Text("Süreç / bilgi kartı değişikliklerini kaydet")
         }
     }
 }

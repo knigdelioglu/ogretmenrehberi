@@ -28,6 +28,12 @@ class LessonStorageTest {
             val store = LessonStore(database)
             val first = lesson.steps.first()
             val second = lesson.steps[1]
+            val contentStep = lesson.steps.first { it.content != null }
+            val originalContent = contentStep.content!!
+            val editedContent = originalContent.copy(
+                lead = "Yerel giriş",
+                items = listOf("Yerel süreç maddesi")
+            )
             var session = LessonEngine.initial(lesson, bundle.lessonDigest(lesson.lessonId))
             session = LessonEngine.reduce(session, lesson, LessonCommand.GoToStep(second.id))
             session = LessonEngine.reduce(session, lesson,
@@ -35,6 +41,11 @@ class LessonStorageTest {
             session = LessonEngine.reduce(session, lesson,
                 LessonCommand.ApplyOverride(second.id,
                     StepOverride(displayPrompt = "Öğretmen sunum düzeni")))
+            session = LessonEngine.reduce(session, lesson,
+                LessonCommand.ApplyOverride(
+                    contentStep.id,
+                    StepOverride(content = editedContent, hasContentOverride = true)
+                ))
             store.save(session)
             val restored = store.restore(lesson, bundle.lessonDigest(lesson.lessonId))
             assertEquals(second.id, restored.stepId)
@@ -42,6 +53,12 @@ class LessonStorageTest {
             assertEquals(first.id, restored.order[1])
             assertEquals("Öğretmen sunum düzeni",
                 restored.overrides[second.id]?.displayPrompt)
+            assertEquals("Yerel giriş",
+                restored.overrides[contentStep.id]?.content?.lead)
+            assertEquals(listOf("Yerel süreç maddesi"),
+                restored.overrides[contentStep.id]?.content?.items)
+            assertEquals(originalContent.note,
+                restored.overrides[contentStep.id]?.content?.note)
             assertEquals(0, store.archived(lesson.lessonId).size)
         } finally {
             database.close()

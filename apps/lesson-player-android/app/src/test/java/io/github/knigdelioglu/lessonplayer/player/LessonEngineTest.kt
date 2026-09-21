@@ -8,6 +8,7 @@ import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.content.SourceRecord
 import io.github.knigdelioglu.lessonplayer.content.StepContent
+import io.github.knigdelioglu.lessonplayer.content.SupplementalSection
 import org.junit.Assert.*
 import org.junit.Test
 
@@ -118,6 +119,32 @@ class LessonEngineTest {
         state = LessonEngine.reduce(state, lesson, LessonCommand.ResetStep(second.id))
         assertEquals(second.displayPrompt,
             LessonEngine.effectiveStep(second, state.overrides[second.id]).displayPrompt)
+    }
+
+    @Test fun contentOverrideReplacesProcessAndCardTextButKeepsTeacherNote() {
+        var state = LessonEngine.initial(lesson, digest)
+        val original = first.content!!
+        val edited = original.copy(
+            lead = "Yerel giriş",
+            items = listOf("Yerel süreç maddesi"),
+            sections = listOf(SupplementalSection("Kart başlığı", "Kart gövdesi"))
+        )
+        state = LessonEngine.reduce(
+            state,
+            lesson,
+            LessonCommand.ApplyOverride(
+                first.id,
+                StepOverride(content = edited, hasContentOverride = true)
+            )
+        )
+        val effective = LessonEngine.effectiveStep(first, state.overrides[first.id])
+        assertEquals("Yerel giriş", effective.content?.lead)
+        assertEquals("Yerel süreç maddesi", effective.content?.items?.single())
+        assertEquals("Kart gövdesi", effective.content?.sections?.single()?.body)
+        assertEquals(original.note, effective.content?.note)
+
+        state = LessonEngine.reduce(state, lesson, LessonCommand.ResetStep(first.id))
+        assertEquals(original, LessonEngine.effectiveStep(first, state.overrides[first.id]).content)
     }
 
     @Test fun invalidPermutationAndRevealRejected() {

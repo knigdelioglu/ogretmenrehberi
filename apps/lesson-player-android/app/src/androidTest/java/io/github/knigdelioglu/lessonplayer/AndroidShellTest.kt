@@ -76,6 +76,7 @@ class AndroidShellTest {
         composeRule.onNodeWithText("Adımı düzenle").performClick()
         composeRule.onNodeWithText("Yerel adım düzenleme").assertExists()
         composeRule.onNodeWithText("Soru / başlık").assertExists()
+        composeRule.onNodeWithText("Süreç maddeleri ve bilgi kartları").assertExists()
         composeRule.onNodeWithText("Düzenlemeyi kapat").performClick()
     }
 
