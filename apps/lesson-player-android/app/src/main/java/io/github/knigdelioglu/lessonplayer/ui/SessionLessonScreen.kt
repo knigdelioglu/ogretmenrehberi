@@ -239,6 +239,16 @@ internal fun SessionLessonScreen(
                 }
             }
         }
+        if (!state.presentationMode) {
+            item {
+                LessonEditorPanel(
+                    step = step,
+                    state = state,
+                    ordinal = ordinal,
+                    dispatch = dispatch
+                )
+            }
+        }
         } // LazyColumn: lesson content scrolls independently from navigation.
         Surface(
             color = MaterialTheme.colorScheme.surface,
