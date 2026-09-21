@@ -85,7 +85,7 @@ internal fun LessonOutlinePane(
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
             LazyColumn(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.weight(1f).fillMaxWidth(),
                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
             ) {
                 itemsIndexed(session.order, key = { _, stepId -> stepId }) { index, stepId ->
