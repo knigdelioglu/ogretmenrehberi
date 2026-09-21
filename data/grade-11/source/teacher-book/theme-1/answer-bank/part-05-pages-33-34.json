@@ -48,44 +48,103 @@
       "question_id": "T1-P34-Q08",
       "entry_type": "question_answer",
       "printed_page": 34,
-      "prompt_summary": "Cümlelerdeki fiilimsilerin türü ve işlevi",
-      "answer": "Fiilimsiler, türleri ve cümledeki işlevleriyle şöyle gösterilebilir:",
+      "question_no": "8",
+      "prompt_summary": "Yazıcı metninden alınan cümlelerdeki fiilimsilerin türleri ve kullanım işlevleri",
+      "answer": "Cümlelerdeki fiilimsiler türleri ve cümledeki işlevleriyle şöyle belirlenir: “yazılmış” sıfat-fiil olup niteleme sıfatı işlevindedir; “derken” zaman bildiren zarf-fiil, “çıkarak” durum bildiren zarf-fiil işlevindedir; “beklemek” amaç anlamı kuran isim-fiil (edat grubu) işlevindedir; “oturanlar” adlaşmış sıfat-fiil olup özne görevindedir; “sallandukça” eylemin yinelenerek sürdüğünü belirten zarf-fiil işlevindedir; “geçerken” ise zaman bildiren zarf-fiil işlevindedir.",
       "source_locator": "basılı s.34 / PDF s.35 — fiilimsiler soru 8",
       "answer_sections": {
-        "yazılmış": "Sıfat-fiil; bir adı niteler.",
-        "derken": "Zarf-fiil.",
-        "çıkarak": "Zarf-fiil.",
-        "beklemek": "İsim-fiil; amaç anlamının kurulmasına katkı sağlar.",
-        "oturanlar": "Adlaşmış sıfat-fiil.",
-        "sallandıkça": "Zarf-fiil; süreklilik bildirir.",
-        "geçerken": "Zarf-fiil; zaman bildirir."
-      }
-    },
-    {
-      "question_id": "T1-P34-Q09",
-      "entry_type": "question_answer",
-      "printed_page": 34,
-      "prompt_summary": "Sosyal bilimler araştırmasının gölge oyununa bakışı nasıl değiştirdiği",
-      "answer": "Bu çalışma gölge oyununa yalnız bir eğlence türü olarak değil, tarih, sosyoloji ve psikolojiye ilişkin veriler taşıyan bir kültür ürünü olarak bakmayı sağlar. Tiplerin dili, meslekleri, davranışları ve çatışmaları dönemin toplumsal yapısını ve insan ilişkilerini anlamak için de kullanılabilir.",
-      "guidance": "Bu değerlendirme kişiseldir; öğrencinin araştırmadan sonra bakışında neyin değiştiğini gerekçelendirmesi yeterlidir.",
-      "source_locator": "basılı s.34 / PDF s.35 — Ders Dışı Etkinlik / Değerlendirme"
+        "1. Cümle (“yazılmış”)": {
+          "Fiilimsi": "yazılmış (yaz-ıl-mış)",
+          "Türü": "Sıfat-fiil (-mış / -miş)",
+          "İşlevi": "“Fermân” adını niteleyerek sıfat tamlaması kurmuştur; cümlede sıfat görevinde kullanılmıştır (ders kitabında örnek olarak verilmiştir)."
+        },
+        "2. Cümle (“derken”, “çıkarak”)": {
+          "Fiilimsiler": "derken (de-r-ken), çıkarak (çık-arak)",
+          "Türü": "Her iki sözcük de zarf-fiildir (-ken ve -arak / -erek ekleri).",
+          "İşlevi": "“derken” temel eylemin gerçekleştiği anı göstererek zaman bildirme işlevindedir; “çıkarak” ise eylemin yapılış tarzını belirterek durum (tarz) bildirme işlevindedir."
+        },
+        "3. Cümle (“beklemek”)": {
+          "Fiilimsi": "beklemek (bekle-mek)",
+          "Türü": "İsim-fiil (-mek / -mak)",
+          "İşlevi": "Harekete ad vererek isim görevinde kullanılmış; “için” edatıyla öbekleşerek cümleye amaç anlamı katmıştır (amaç-sonuç ilgisi kuran edat grubu işlevindedir)."
+        },
+        "4. Cümle (“oturanlar”)": {
+          "Fiilimsi": "oturanlar (otur-an-lar)",
+          "Türü": "Sıfat-fiil (-an / -en)",
+          "İşlevi": "Nitelediği “kişiler / kiracılar” ismi düştüğü için adlaşmış sıfat-fiil olmuştur; çoğul eki alarak cümlenin öznesi görevinde kullanılmıştır."
+        },
+        "5. Cümle (“sallandukça”)": {
+          "Fiilimsi": "sallandukça (sallan-dukça)",
+          "Türü": "Zarf-fiil (-dıkça / -dukça)",
+          "İşlevi": "Yüklemin bildirdiği sallanma eyleminin art arda tekrarlandığını ve devam ettiğini belirterek durum ve süreklilik bildirme işlevindedir."
+        },
+        "6. Cümle (“geçerken”)": {
+          "Fiilimsi": "geçerken (geç-er-ken)",
+          "Türü": "Zarf-fiil (-ken)",
+          "İşlevi": "Dövme eyleminin hangi zaman diliminde yapıldığını belirterek zaman bildirme işlevindedir."
+        }
+      },
+      "guidance": "İkinci cümlede iki ayrı fiilimsi ('derken' ve 'çıkarak') bulunmaktadır; her ikisinin de tür ve işlev yönünden belirtilmesi gerekir. 'Oturanlar' sözcüğünün adlaşmış sıfat-fiil olduğu ve cümlenin öznesi görevini üstlendiği mutlaka vurgulanmalıdır.",
+      "evidence_quotes": [
+        "Beyâz üzre yazılmış elde bir fermânımız vardır.",
+        "Derken, bilâder can sıkıntısıyle evden çıkarak ver elini Zeyrek!",
+        "Sen bana aydan aya burayı beklemek için yüz kuruş ver.",
+        "Senden evvel burada oturanlar altı yüz kuruşa oturuyorlardı.",
+        "sallandukça sallandu",
+        "O sokaktan geçerken ispiri dövmüşler mi?"
+      ]
     },
     {
       "question_id": "T1-P34-PERF01",
       "entry_type": "performance_support",
       "printed_page": 34,
       "question_no": "Ders Dışı Etkinlik",
-      "prompt_summary": "Yazıcı adlı gölge oyununu tarih, sosyoloji ve psikolojiyle ilişkilendiren bir haftalık grup araştırmasını planlama",
-      "answer": "Araştırma üç disiplin grubuna ayrılarak yürütülebilir. Her grup bulgusunu metin kanıtı ile dış kaynak bilgisini ayırarak sunmalıdır.",
-      "guidance": "Amaç öğrencinin araştırmasını onun yerine tamamlamak değil, güvenilir kaynak kullanarak Yazıcı metnini üç farklı sosyal bilim perspektifinden incelemesini sağlamaktır. Metindeki kanıt ile dış kaynaktan edinilen bilgi ayrı tutulmalıdır.",
+      "prompt_summary": "Yazıcı adlı gölge oyununu tarih, sosyoloji ve psikoloji disiplinleriyle ilişkilendiren bir haftalık grup araştırmasını planlama ve yürütme",
+      "answer": "Araştırma, sınıfın üç disiplin grubuna (Tarih, Sosyoloji, Psikoloji) ayrılmasıyla bir haftalık süreçte yürütülür. Her grup Yazıcı metnindeki somut replik, meslek, tip ve davranışları ilgili disiplinin kavramlarıyla eşleştirir; güvenilir dış kaynaklarla destekleyerek sınıfta sunar.",
       "source_locator": "basılı s.34 / PDF s.35 — Ders Dışı Etkinlik: Gölge Oyununun Sosyal Bilimlerle İlişkisi",
       "answer_sections": {
-        "Tarih grubu": "Metindeki dönem dili, meslekler, gündelik hayat ve geleneksel tiyatro unsurlarını inceler.",
-        "Sosyoloji grubu": "Sosyal roller, eğitim ve statü farklılıkları ile iletişim biçimlerini inceler.",
-        "Psikoloji grubu": "Yanlış anlama, tepki, niyet ve çatışma davranışlarını inceler.",
-        "Kayıt biçimi": "Metindeki unsur → disiplinle ilişkisi → metinden kanıt → yararlanılan ek kaynak.",
-        "Sunum": "Hafta sonunda her grup 3–5 dakikalık kısa sunum yapar ve diğer gruplardan gelen bir soruyu yanıtlar."
-      }
+        "1. Grup: Metin–Tarih İlişkisi": {
+          "Araştırma odağı": "Metindeki Osmanlı dönemi kurumları, meslekleri, gündelik hayatı ve maddi kültür unsurlarını inceleme.",
+          "Metinden somut ipuçları": "Yazıcılık ve arzuhalcilik geleneği, çene kavaflığı, ispir (seyis/uşak), ferman, hokka-kalem-kâğıt, kuruş ve dirhem para/ağırlık birimleri, Zeyrek, Unkapanı ve Mısırçarşısı gibi tarihsel İstanbul mekânları.",
+          "Dış kaynak araştırması": "Osmanlı toplumunda okuryazarlık oranları, mahalle yazıhaneleri ve arzuhalciler loncası, geleneksel Türk tiyatrosunun doğuşu ve Osmanlı şehir tarihi kaynakları."
+        },
+        "2. Grup: Metin–Sosyoloji İlişkisi": {
+          "Araştırma odağı": "Oyundaki tipler üzerinden Osmanlı toplumunun sosyal yapısını, etnik/bölgesel çeşitliliğini, statü ve dil hiyerarşisini çözümleme.",
+          "Metinden somut ipuçları": "Lâz tiplemesinin Karadeniz ağzı ve deniz ticareti; Çelebi'nin mirasyedi, kibar tavrı ve divan edebiyatı kültürü; Tiryaki'nin aktar ve çarşı esnafı kimliği; II. Hanım ve Halayık arasındaki efendi-hizmetçi ilişkisi; Karagöz'ün alt tabaka halkı temsil eden geçim mücadelesi.",
+          "Dış kaynak araştırması": "Osmanlı'da toplumsal tabakalaşma, kozmopolit kent kültürü, gölge oyununun toplumsal işlevi ve halkın ortak değerlerini yansıtma gücü."
+        },
+        "3. Grup: Metin–Psikoloji İlişkisi": {
+          "Araştırma odağı": "Karakterlerin niyetleri, tepkileri, çatışma davranışları, savunma mekanizmaları ve mizahın psikolojik temellerini inceleme.",
+          "Metinden somut ipuçları": "Karagöz'ün cehaletini ve yetersizliğini gizlemek için başvurduğu saldırganlık, hazırcevaplık ve uydurmacılık (“katakofti”); Hacivat'ın kendini bilgili gösterme ve üstünlük kurma eğilimi; tarafların iletişim kopukluğu karşısında yaşadığı sabırsızlık ve öfke patlamaları.",
+          "Dış kaynak araştırması": "İletişim çatışmaları, savunma mekanizmaları (yansıtma, bastırma, telafi), aşağılık-üstünlük duygusu ve gülme teorileri (uyumsuzluk kuramı, rahatlama kuramı)."
+        },
+        "Uygulama ve sunum adımları": [
+          "1. Gün: 4–5 kişilik grupların kurulması, sözcülerin belirlenmesi ve görev dağılımı yapılması.",
+          "2–5. Günler: Metin içi kanıtların fişlenmesi, kütüphane/EBA/akademik kaynak taraması yapılması.",
+          "6. Gün: Bulguların “Metindeki unsur → Disiplin kavramı → Metin kanıtı → Açıklama” şablonunda birleştirilmesi.",
+          "7. Gün: Her grubun 3–5 dakikalık sunum yapması, hazırlanan infografik veya özet tablonun sınıfla paylaşılması ve akran sorularının cevaplanması."
+        ]
+      },
+      "guidance": "Etkinlikte amaç öğrencinin araştırmasını hazır bilgiye boğmak değil, metin kanıtı ile dış kaynak verisini ayırt etme becerisini geliştirmektir. Her grubun çalışmasında mutlaka Yazıcı metninden doğrudan alıntılanmış replik ve unsurların bulunması şart koşulmalıdır."
+    },
+    {
+      "question_id": "T1-P34-Q09",
+      "entry_type": "question_answer",
+      "printed_page": 34,
+      "question_no": "Değerlendirme",
+      "prompt_summary": "Sosyal bilimler araştırmasının öğrencinin gölge oyununa bakış açısına etkisi",
+      "answer": "Sosyal bilimler temelli bu araştırma; gölge oyununun yalnızca güldürme ve vakit geçirme amaçlı basit bir seyirlik oyun olmadığını, Osmanlı-Türk kültürünün tarihsel, sosyolojik ve psikolojik kodlarını bünyesinde taşıyan çok katmanlı bir kültürel belge olduğunu fark ettirir.",
+      "source_locator": "basılı s.34 / PDF s.35 — Ders Dışı Etkinlik / Değerlendirme",
+      "answer_sections": {
+        "Önceki bakış açısı (Salt güldürü ve eğlence)": "Gölge oyununu yalnızca perde gerisindeki figürlerin kaba komedisi, Karagöz'ün saflığı, yanlış anlamalara dayalı söz düelloları ve nostaljik bir ramazan eğlencesi olarak değerlendirme.",
+        "Araştırma sonrası kazanılan bakış açısı (Disiplinler arası derinlik)": {
+          "Tarihsel bakış": "Metnin Osmanlı dönemi mahalle yaşantısını, bürokratik/ticari alışkanlıklarını, meslek gruplarını ve günlük yaşam pratiklerini belgeleyen yaşayan bir tanık olduğunu görme.",
+          "Sosyolojik bakış": "Oyundaki tiplerin dil, şive, kılık ve meslek özelliklerinin imparatorluk coğrafyasındaki sosyal tabakalaşmayı ve birlikte yaşama kültürünü yansıttığını anlama.",
+          "Psikolojik bakış": "Karakterlerin çatışmalarının, gülme eyleminin ve uydurmacılığın altında yatan insani zaafları, savunma mekanizmalarını ve psikolojik dinamikleri çözümleyebilme."
+        },
+        "Sonuç ve çıkarım": "Edebî metinlerin salt estetik bir kurgu olmayıp toplumun hafızasını, inançlarını ve insan gerçekliğini yansıttığını; edebiyat ile sosyal bilimlerin birbirini besleyen ve tamamlayan alanlar olduğunu kavrama."
+      },
+      "guidance": "Soru bir kişisel farkındalık ve öz değerlendirme sorusudur. Tek tip bir cevap beklenmez; öğrencinin araştırma öncesi algısı ile araştırma sonrasındaki kazanımını somut disiplin bağlamları (tarih, sosyoloji, psikoloji) üzerinden gerekçelendirmesi yeterlidir."
     }
   ]
 }
