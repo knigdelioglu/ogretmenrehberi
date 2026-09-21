@@ -6,6 +6,7 @@ import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.content.StepContent
+import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.content.SupplementalSection
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
@@ -67,6 +68,78 @@ class LessonStore(private val database: LessonDatabase) {
     }
 
     suspend fun archived(lessonId: String): List<ArchivedProgressRow> = dao.archived(lessonId)
+
+    suspend fun exportBackupSnapshot(): LessonBackupSnapshot =
+        database.withTransaction {
+            LessonBackupSnapshot(
+                progress = dao.allProgress().map {
+                    BackupProgress(
+                        lessonId = it.lessonId,
+                        contentDigest = it.contentDigest,
+                        stepId = it.stepId,
+                        stepOrderJson = it.stepOrderJson,
+                        overridesJson = it.overridesJson
+                    )
+                },
+                marks = dao.allMarks().map {
+                    BackupMark(it.academicYear, it.track, it.itemId, it.checked)
+                }
+            )
+        }
+
+    /**
+     * Validates every record before deleting anything. The Room transaction makes
+     * replacement all-or-nothing if a write fails after validation.
+     */
+    suspend fun importBackupSnapshot(snapshot: LessonBackupSnapshot, bundle: LessonBundle) {
+        database.withTransaction {
+            require(snapshot.progress.map { it.lessonId }.distinct().size ==
+                snapshot.progress.size) { "Yedekte yinelenen ders kaydı" }
+            require(snapshot.marks.map { "\${it.academicYear}:\${it.track}:\${it.itemId}" }
+                .distinct().size == snapshot.marks.size) {
+                "Yedekte yinelenen öğretmen işareti"
+            }
+            val rows = snapshot.progress.map { backup ->
+                val lesson = bundle.byId[backup.lessonId]
+                    ?: error("Yedekte bilinmeyen ders: \${backup.lessonId}")
+                require(backup.contentDigest == bundle.lessonDigest(lesson.lessonId)) {
+                    "Ders içeriği imzası uyuşmuyor: \${lesson.lessonId}"
+                }
+                val order = readOrder(backup.stepOrderJson)
+                require(LessonEngine.validOrder(order, lesson)) {
+                    "Geçersiz ders sırası: \${lesson.lessonId}"
+                }
+                val overrides = readOverrides(backup.overridesJson)
+                var restored = LessonEngine.initial(lesson, backup.contentDigest).copy(
+                    order = order,
+                    stepId = LessonEngine.restoredStepId(order, null, backup.stepId, 0)
+                )
+                for ((id, override) in overrides) {
+                    restored = LessonEngine.reduce(
+                        restored, lesson, LessonCommand.ApplyOverride(id, override)
+                    )
+                }
+                ProgressRow(
+                    lessonId = restored.lessonId,
+                    contentDigest = restored.contentDigest,
+                    stepId = restored.stepId,
+                    stepOrderJson = JSONArray(restored.order).toString(),
+                    overridesJson = writeOverrides(restored.overrides),
+                    updatedAtMillis = System.currentTimeMillis()
+                )
+            }
+            val marks = snapshot.marks.map {
+                require(it.academicYear.matches(Regex("\\\\d{4}-\\\\d{4}")))
+                require(it.track in setOf("workshop", "annual", "portfolio"))
+                require(it.itemId.isNotBlank())
+                TeacherMarkRow(it.academicYear, it.track, it.itemId, it.checked)
+            }
+            dao.deleteAllProgress()
+            dao.deleteAllMarks()
+            if (rows.isNotEmpty()) dao.upsertProgress(rows)
+            if (marks.isNotEmpty()) dao.upsertMarks(marks)
+        }
+    }
 
     suspend fun setTeacherMark(
         academicYear: String, track: String, itemId: String, checked: Boolean
