@@ -35,13 +35,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import io.github.knigdelioglu.lessonplayer.R
+import io.github.knigdelioglu.lessonplayer.content.ContentRepository
+import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
-import io.github.knigdelioglu.lessonplayer.R
-import io.github.knigdelioglu.lessonplayer.content.ContentRepository
-import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
 
@@ -54,6 +54,8 @@ fun LessonPlayerApp() {
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
         val sessionViewModel: LessonSessionViewModel = viewModel()
         val sessionUi by sessionViewModel.state.collectAsState()
+        val readySession = sessionUi as? LessonSessionUiState.Ready
+
         LaunchedEffect(appContext) {
             try {
                 bundle = ContentRepository(appContext).load()
@@ -64,31 +66,56 @@ fun LessonPlayerApp() {
         LaunchedEffect(bundle?.contentSha256) {
             bundle?.let(sessionViewModel::initialize)
         }
-        BackHandler(enabled = currentScreen != AppScreen.LIBRARY) {
-            currentScreen = backDestination(currentScreen)
-        }
-        when {
-            loadError != null -> Box(Modifier.fillMaxSize().padding(LessonSpacing.large),
-                contentAlignment = Alignment.Center) {
-                Text("Ders paketi doğrulanamadı: $loadError",
-                    color = MaterialTheme.colorScheme.error)
+        BackHandler(
+            enabled = readySession?.session?.presentationMode == true ||
+                currentScreen != AppScreen.LIBRARY
+        ) {
+            if (readySession?.session?.presentationMode == true) {
+                sessionViewModel.dispatch(LessonCommand.SetPresentationMode(false))
+            } else {
+                currentScreen = backDestination(currentScreen)
             }
-            bundle == null -> Box(Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center) { Text("Dersler doğrulanıyor…") }
+        }
+
+        when {
+            loadError != null -> Box(
+                Modifier.fillMaxSize().padding(LessonSpacing.large),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    "Ders paketi doğrulanamadı: $loadError",
+                    color = MaterialTheme.colorScheme.error
+                )
+            }
+            bundle == null -> Box(
+                Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                Text("Dersler doğrulanıyor…")
+            }
             sessionUi is LessonSessionUiState.Error ->
-                Box(Modifier.fillMaxSize().padding(LessonSpacing.large),
-                    contentAlignment = Alignment.Center) {
-                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)) {
-                        Text((sessionUi as LessonSessionUiState.Error).message,
-                            color = MaterialTheme.colorScheme.error)
+                Box(
+                    Modifier.fillMaxSize().padding(LessonSpacing.large),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Column(
+                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+                    ) {
+                        Text(
+                            (sessionUi as LessonSessionUiState.Error).message,
+                            color = MaterialTheme.colorScheme.error
+                        )
                         androidx.compose.material3.Button(onClick = {
                             bundle?.let(sessionViewModel::initialize)
-                        }) { Text("Kaydı yeniden yükle") }
+                        }) {
+                            Text("Kaydı yeniden yükle")
+                        }
                     }
                 }
-            sessionUi is LessonSessionUiState.Ready -> LessonPlayerShell(
-                currentScreen = currentScreen, bundle = bundle!!,
-                session = (sessionUi as LessonSessionUiState.Ready).session,
+            readySession != null -> LessonPlayerShell(
+                currentScreen = currentScreen,
+                bundle = bundle!!,
+                session = readySession.session,
                 navigate = { currentScreen = it },
                 selectLesson = {
                     sessionViewModel.openLesson(it)
@@ -96,7 +123,10 @@ fun LessonPlayerApp() {
                 },
                 dispatch = sessionViewModel::dispatch
             )
-            else -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            else -> Box(
+                Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
                 Text("Ders durumu yükleniyor…")
             }
         }
@@ -114,63 +144,112 @@ internal fun LessonPlayerShell(
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val wide = maxWidth >= 840.dp
-        Scaffold(
-            contentWindowInsets = WindowInsets.safeDrawing,
-            containerColor = MaterialTheme.colorScheme.background,
-            topBar = {
+        val twoPaneLesson = maxWidth >= 1100.dp &&
+            currentScreen == AppScreen.LESSON
+
+        if (currentScreen == AppScreen.LESSON && session.presentationMode) {
+            PresentationLessonScreen(
+                lesson = bundle.byId.getValue(session.lessonId),
+                state = session,
+                dispatch = dispatch,
+                exit = { dispatch(LessonCommand.SetPresentationMode(false)) }
+            )
+        } else {
+            Scaffold(
+                contentWindowInsets = WindowInsets.safeDrawing,
+                containerColor = MaterialTheme.colorScheme.background,
+                topBar = {
+                    Row(
+                        modifier = Modifier.fillMaxWidth()
+                            .background(MaterialTheme.colorScheme.surface)
+                            .heightIn(min = 76.dp)
+                            .padding(
+                                horizontal = LessonSpacing.large,
+                                vertical = LessonSpacing.small
+                            ),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Column {
+                            Text(
+                                "ÖĞRETMEN REHBERİ",
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.secondary
+                            )
+                            Text(
+                                currentScreen.title,
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                        }
+                        Text(
+                            "11. SINIF",
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.secondary
+                        )
+                    }
+                },
+                bottomBar = {
+                    if (!wide) {
+                        NavigationBar {
+                            AppScreen.entries.forEach { destination ->
+                                NavigationBarItem(
+                                    selected = currentScreen == destination,
+                                    onClick = { navigate(destination) },
+                                    icon = { AppNavigationIcon(destination) },
+                                    label = { Text(destination.shortLabel) },
+                                    alwaysShowLabel = true
+                                )
+                            }
+                        }
+                    }
+                }
+            ) { safePadding ->
                 Row(
-                    modifier = Modifier.fillMaxWidth()
-                        .background(MaterialTheme.colorScheme.surface)
-                        .heightIn(min = 76.dp)
-                        .padding(horizontal = LessonSpacing.large, vertical = LessonSpacing.small),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
+                    modifier = Modifier.fillMaxSize().padding(safePadding),
+                    verticalAlignment = Alignment.Top
                 ) {
-                    Column {
-                        Text("ÖĞRETMEN REHBERİ", style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.secondary)
-                        Text(currentScreen.title, style = MaterialTheme.typography.titleLarge)
+                    if (wide) {
+                        NavigationRail {
+                            AppScreen.entries.forEach { destination ->
+                                NavigationRailItem(
+                                    selected = currentScreen == destination,
+                                    onClick = { navigate(destination) },
+                                    icon = { AppNavigationIcon(destination) },
+                                    label = { Text(destination.shortLabel) },
+                                    alwaysShowLabel = true
+                                )
+                            }
+                        }
                     }
-                    Text("11. SINIF", style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.secondary)
-                }
-            },
-            bottomBar = {
-                if (!wide) {
-                    NavigationBar {
-                        AppScreen.entries.forEach { destination ->
-                            NavigationBarItem(
-                                selected = currentScreen == destination,
-                                onClick = { navigate(destination) },
-                                icon = { AppNavigationIcon(destination) },
-                                label = { Text(destination.shortLabel) },
-                                alwaysShowLabel = true
+                    Box(modifier = Modifier.weight(1f).fillMaxSize()) {
+                        if (twoPaneLesson) {
+                            Row(modifier = Modifier.fillMaxSize()) {
+                                LessonOutlinePane(
+                                    lesson = bundle.byId.getValue(session.lessonId),
+                                    session = session,
+                                    dispatch = dispatch
+                                )
+                                Box(
+                                    modifier = Modifier.weight(1f).fillMaxSize()
+                                ) {
+                                    SessionLessonScreen(
+                                        lesson = bundle.byId.getValue(session.lessonId),
+                                        state = session,
+                                        dispatch = dispatch
+                                    )
+                                }
+                            }
+                        } else {
+                            PhaseOneScreen(
+                                currentScreen,
+                                bundle,
+                                session,
+                                selectLesson,
+                                { navigate(AppScreen.LESSON) },
+                                dispatch
                             )
                         }
                     }
-                }
-            }
-        ) { safePadding ->
-            Row(
-                modifier = Modifier.fillMaxSize().padding(safePadding),
-                verticalAlignment = Alignment.Top
-            ) {
-                if (wide) {
-                    NavigationRail {
-                        AppScreen.entries.forEach { destination ->
-                            NavigationRailItem(
-                                selected = currentScreen == destination,
-                                onClick = { navigate(destination) },
-                                icon = { AppNavigationIcon(destination) },
-                                label = { Text(destination.shortLabel) },
-                                alwaysShowLabel = true
-                            )
-                        }
-                    }
-                }
-                Box(modifier = Modifier.weight(1f).fillMaxSize()) {
-                    PhaseOneScreen(currentScreen, bundle, session, selectLesson,
-                        { navigate(AppScreen.LESSON) }, dispatch)
                 }
             }
         }
