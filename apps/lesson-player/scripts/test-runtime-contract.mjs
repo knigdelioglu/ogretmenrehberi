@@ -67,8 +67,8 @@ for (const lesson of lessons) {
 
 assert(stepCount === 914, `Expected 914 Lesson Player steps, got ${stepCount}.`);
 assert(
-  teacherNoteCount === 89,
-  `Expected 89 teacher-note steps for projection regression coverage, got ${teacherNoteCount}.`
+  teacherNoteCount === 90,
+  `Expected 90 teacher-note steps for projection regression coverage, got ${teacherNoteCount}.`
 );
 
 const sample = lessons

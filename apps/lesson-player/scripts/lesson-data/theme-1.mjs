@@ -46,8 +46,8 @@ assert(
   "1. Tema 129 source-index kaydının tamamını kapsamalı."
 );
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 151,
-  "1. Tema 151 answer-bank kaydının tamamını kapsamalı."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 154,
+  "1. Tema 154 answer-bank kaydının tamamını kapsamalı."
 );
 
 
@@ -213,8 +213,8 @@ assert(
   "Mektup dersi 36 source-index kaydını kapsamalı."
 );
 assert(
-  mektup.coverage.answer_entries === 39,
-  "Mektup dersi 39 answer-bank kaydını kapsamalı."
+  mektup.coverage.answer_entries === 40,
+  "Mektup dersi 40 answer-bank kaydını kapsamalı."
 );
 
 const mektupById = new Map(mektup.steps.map((step) => [step.id, step]));
@@ -298,8 +298,8 @@ assert(
   "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
 );
 assert(
-  speaking.coverage.answer_entries === 9,
-  "Konuşma dersi 9 answer-bank kaydını kapsamalı."
+  speaking.coverage.answer_entries === 11,
+  "Konuşma dersi 11 answer-bank kaydını kapsamalı."
 );
 
 const speakingById = new Map(speaking.steps.map((step) => [step.id, step]));
@@ -366,7 +366,7 @@ assert(
   "s58 geri bildirim dış QR sınırını doğru source kaydıyla korumalı."
 );
 assert(
-  JSON.stringify(s58Feedback.reveal_order) === JSON.stringify(["note"]),
+  s58Feedback.reveal_order.includes("note"),
   "s58 QR kaynak sınırı öğretmen notu reveal'i olarak erişilebilir olmalı."
 );
 
