@@ -75,7 +75,7 @@
       "prompt": "Görselde yol üzerinde yürüyen insan neyi temsil ediyor olabilir? Açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.162'deki yol, yürüyen insan ve saat ayrıntılarını birlikte inceleyin."
+        "lead": "Yol, yürüyen insan, saat ve çevredeki karşıtlıkları inceleyin; bunların tek bir zorunlu anlamı olmadığını unutmayın."
       }
     },
     {
@@ -92,7 +92,15 @@
       "answer_id": "T3-P162-Q03",
       "layout": "question",
       "prompt": "Görselden hareketle yaşama dair hangi çıkarımlarda bulunabilirsiniz? Açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Görsel ayrıntısından çıkarıma gidin; farklı gerekçeli yaşam yorumları mümkündür.",
+        "items": [
+          "Görselde hangi ayrıntıya dayanıyorum?",
+          "Bu ayrıntı bana yaşamla ilgili ne düşündürüyor?",
+          "Başka biri aynı ayrıntıyı farklı yorumlayabilir mi?"
+        ]
+      }
     },
     {
       "id": "s162-q4",
@@ -111,7 +119,7 @@
       "prompt": "Radyo ve kayıt yapılan mülakat görselleri size neleri çağrıştırıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki görseli birbirinden ayırın: ilkinde radyo cihazı, ikincisinde kamera karşısındaki söyleşi gösteriliyor.",
+        "lead": "İki görsel için olası çağrışımları ayrı ayrı üretin; ilerideki tema görevlerini bu sorunun hazır cevabı hâline getirmeyin.",
         "sections": [
           {
             "title": "İlk görsel — Radyo",
@@ -133,19 +141,19 @@
       "prompt": "Alev Alatlı hakkında verilen metin ile Sehî Beg'in Yahyâ maddesinin ortak ve farklı yönlerini belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki iki metni okuyun; tanıtılan kişi, meslek, eser, üslup ve anlatım uzunluğu yönünden karşılaştırın.",
+        "lead": "İki metni verdikleri bilgi türü, ayrıntı düzeyi ve üslup bakımından karşılaştırın; Alev Alatlı parçasının bir yaşam öyküsü olmadığını dikkate alın.",
         "sections": [
           {
             "title": "Ortak yön",
-            "body": "İkisi de edebî kişiliği yaşamı ve eserleri üzerinden tanıtır."
+            "body": "İkisi de bir edebiyatçı hakkında bilgi verir; edebî kişilik/üslup ve eser üretimine değinir."
           },
           {
             "title": "Alev Alatlı metni",
-            "body": "Modern, ayrıntılı ve çözümleyici; romanların konuları, söz varlığı ve anlatım yolları üzerinde durur."
+            "body": "Romanlardaki konu, söz varlığı, terim ve anlatım özelliklerini ayrıntılı, çözümleyici biçimde inceler."
           },
           {
             "title": "Yahyâ tezkiresi",
-            "body": "Kısa, tarihî söyleyişli ve övgü içeren; köken, meslek, üslup ve Şâh u Gedâ hakkında özlü bilgi verir."
+            "body": "Köken, meslek, üslup ve Şah u Gedâ hakkında kısa, övgü içeren bilgi verir."
           }
         ]
       }
