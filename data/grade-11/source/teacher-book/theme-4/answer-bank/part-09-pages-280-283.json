@@ -125,8 +125,15 @@
       "question_no": "Sıra Sizde 1",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 1",
       "prompt_summary": "Canlandırılan rolün oluşturduğu duygu ve düşünceleri yansıtma yazısıyla değerlendirme",
-      "answer": "Örnek yansıtma: “Rolü hazırlarken karakterin sözlerinin arkasındaki amacı düşünmek, sahnedeki duyguyu daha iyi anlamama yardım etti. Prova sırasında sesimi ve bedenimi birlikte kullanmanın önemli olduğunu fark ettim. Bir sonraki çalışmada daha anlaşılır konuşmaya ve sahne arkadaşlarımı daha dikkatli dinlemeye çalışacağım.”",
-      "guidance": "Bu metin yalnızca örnek yapıyı gösterir. Öğrenci kendi yaşadığı duyguyu ve gerçek performansını yazmalıdır."
+      "answer": "Yansıtma yazısı, öğrencinin gerçekten yaptığı canlandırmanın kendisinde oluşturduğu duygu ve düşüncelere dayanmalıdır; rehber bu deneyimi öğrenci adına üretmez.",
+      "guidance": "Yaşanmamış prova, duygu veya farkındalık uydurmayın. Öğrenci gerçek performansını yansıtmalıdır.",
+      "answer_sections": {
+        "rol_hazirliginda_hissettiklerim": "[...]",
+        "canlandirma_sirasinda_fark_ettigim": "[...]",
+        "iyi_yaptigimi_dusundugum_nokta": "[...]",
+        "gelistirmek_istedigim_nokta": "[...]",
+        "sonraki_calismada_yapacagim": "[...]"
+      }
     },
     {
       "question_id": "T4-P283-PERFQ02",
@@ -135,8 +142,14 @@
       "question_no": "Sıra Sizde 2",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2",
       "prompt_summary": "Rol arkadaşlarından alınan görüşleri performans açısından değerlendirme",
-      "answer": "Örnek değerlendirme şablonu: “Arkadaşım, karakterin duygusunu ses tonumla iyi yansıttığımı belirtti. Replik sırasını daha iyi takip etmemi önerdi. Bu geri bildirimi bir sonraki provada replik girişlerini işaretleyip karşılık verirken arkadaşımın yüzüne yönelerek uygulayacağım.”",
-      "guidance": "Görüş, gerçekten alınmış akran geri bildirimine dayanmalıdır; örnekteki yorum öğrencinin yaşadığı bir olay gibi kullanılmamalıdır."
+      "answer": "Bu değerlendirme gerçekten alınmış akran görüşüne dayanmalıdır. Rehber yalnız geri bildirimi kaydetme ve eyleme dönüştürme şablonu sağlar.",
+      "guidance": "Öğrenci adına 'arkadaşım ses tonumu beğendi' gibi alınmamış geri bildirim yazmayın.",
+      "answer_sections": {
+        "rol_arkadasimin_soyledigi_guclu_yon": "[...]",
+        "rol_arkadasimin_onerisi": "[...]",
+        "bu_goruse_katiliyorum_katilmiyorum": "[...]",
+        "sonraki_provada_uygulayacagim_degisim": "[...]"
+      }
     },
     {
       "question_id": "T4-P283-PERFQ03",
@@ -145,7 +158,14 @@
       "question_no": "Sıra Sizde 3",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3",
       "prompt_summary": "Eleştiri ve deneyimlerden hareketle özgün konuşmacı kimliğini geliştirme planı",
-      "answer": "Örnek gelişim planı: Güçlü yanım olarak anlaşılır ve sakin konuşmayı korurum; prova geri bildiriminde belirlenen vurgu, tempo veya göz teması ihtiyacından birini seçip sonraki sunumda özellikle çalışırım. Metni ezberlemekle yetinmeyip dinleyiciyi izler, kendi anlatım biçimimi korurken Türkçeyi doğru ve etkili kullanmaya dikkat ederim."
+      "answer": "Özgün konuşmacı kimliği, öğrencinin aldığı gerçek eleştiriler ve kendi deneyimi üzerinden oluşturulmalıdır. Öğrenci güçlü yönünü ve geliştirmek istediği bir konuşma becerisini belirleyerek somut bir sonraki adım seçmelidir.",
+      "answer_sections": {
+        "korumak_istedigim_guclu_yon": "[...]",
+        "aldigim_gercek_elestiri_veya_fark_ettigim_ihtiyac": "[...]",
+        "gelistirecegim_beceri": "[...]",
+        "bir_sonraki_konusmada_uygulayacagim_somut_adim": "[...]"
+      },
+      "guidance": "Öğrenci adına güçlü yön, göz teması, tempo veya vurgu sorunu seçmeyin; bunlar ancak gerçek performansta gözlenmişse yazılmalıdır."
     }
   ]
 }
