@@ -1,6 +1,7 @@
 {
   "schema_version": "2.0.0",
   "theme_id": "TEMA_03",
+  "theme_title": "YAŞAMIN İZİNDE",
   "part_id": "PART_05",
   "printed_page_range": "186-193",
   "entries": [
@@ -10,14 +11,14 @@
       "printed_page": 186,
       "question_no": "Sıra Sizde 3",
       "prompt_summary": "Kendine yakın bulunan Huzur kişisinin konuşma biçimini günlük dille karşılaştırma",
-      "answer": "Örnek seçim Mümtaz olabilir: s.169'da Mümtaz eski musiki ve kültürel kimlikten söz ederken ‘mazi’ ve ‘hüviyet’ gibi kavramlara başvurur, düşüncesini açıklayıcı cümlelerle geliştirir. Öğrencinin günlük dilinde benzer duygu daha kısa, güncel kelimelerle dile getirilebilir. Ancak cevap, öğrencinin gerçekte yakın bulduğu kişinin metinde duyulan sözü ve kendi konuşma alışkanlığı üzerinden kurulmalıdır.",
-      "guidance": "Öğrenci başka kahramanı seçebilir; konuşma örneği görülmeyen kişiye doğrudan söz veya belirli bir konuşma biçimi atfetmeyin. Öğrencinin kişisel dilini onun yerine kesinleştirmeyin.",
+      "answer": "Örnek seçim Mümtaz üzerinden modellenebilir: Ders kitabının 169. sayfasındaki parçada Mümtaz; eski Türk musikisi, mimari ve mazi mirası üzerine konuşurken 'mazi', 'hüviyet', 'terkip' gibi felsefi ve kültürel kavramlara başvurur; düşüncesini birbirine bağlı yan cümleciklerle ayrıntılandırır. Günlük konuşma dilinde ise benzer duygu ve düşünceler daha yalın, kısa ve dolaysız ifadelerle dile getirilir. Cevap, öğrencinin yakın bulduğu kahramanın metinde duyulan sahici sözü üzerinden kurulmalıdır.",
+      "guidance": "Öğrenci Mümtaz yerine Nuran'ı da seçebilir; ancak metinde doğrudan konuşması bulunmayan kişilere (İhsan, Suat vb.) yapay bir üslup atfedilmemelidir. Öğrencinin gündelik dilini onun yerine dikte etmeyin; aradaki söz varlığı ve cümle yapısı farkını keşfetmesini sağlayın.",
       "source_locator": "basılı s.186 / PDF s.187 — Sıra Sizde soru 3",
       "answer_sections": {
-        "kahraman_ve_yakinlik": "Örnek: Mümtaz; sanata ve İstanbul'un geçmişine ilgi duyduğu için.",
-        "romandaki_dil": "s.169'da ‘mazi’, ‘hüviyet’ ve eski musikiye ilişkin adlarla geçmiş/yeni hayat ilişkisini açıklar.",
-        "gunluk_dil_ile_fark": "Örnek günlük söyleyiş: ‘Geçmişimizi bilmeden geleceğimizi kuramayız.’ Gündelik cümle daha kısa ve güncel söz varlığıyla kurulur.",
-        "gerekce": "Mümtaz'ın tarihî ve estetik kavramları düşüncesini ayrıntılandırır; öğrencinin söyleyişi yakın anlamı daha doğrudan aktarabilir."
+        "kahraman_ve_yakinlik": "Örnek Kahraman: Mümtaz. Gerekçe: Sanata, musikiye ve İstanbul'un kültürel derinliğine duyduğu estetik hayranlık ve geçmişle bugün arasında kurmaya çalıştığı samimi köprü bana yakın geliyor.",
+        "romandaki_dil": "Romandaki İfade: s.169'da 'Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.' diyerek 'mazi', 'hüviyet', 'terkip' gibi soyut ve kültürel terimlerle, uzun ve ahenkli cümlelerle konuşur.",
+        "gunluk_dil_ile_fark": "Örnek Günlük Söyleyiş: 'Geçmişimizi ve kültürümüzü iyi bilmeden sağlam bir gelecek kuramayız.' Günlük dil daha dolaysız, somut ve yalın sözcüklerle örülüdür.",
+        "gerekce": "Mümtaz'ın edebî ve felsefi dili duygunun arkasındaki medeniyet derinliğini hissettirir; günlük dil ise aynı ana fikri pratik ve hızlı bir iletişim amacıyla aktarır."
       }
     },
     {
@@ -26,25 +27,25 @@
       "printed_page": 186,
       "question_no": "Çözümleyebilme 1",
       "prompt_summary": "Huzur'un olay, mekân, kişi kadrosu ve zaman unsurları",
-      "answer": "Ders kitabında okunan kesit ve yardımcı parçalar üzerinden dört yapı unsuru ayrı belirlenebilir; bu, Huzur'un bütünü için eksiksiz olay örgüsü iddiası taşımaz.",
+      "answer": "Ders kitabında okunan Huzur kesiti ve yardımcı parçalar üzerinden romanın dört temel yapı unsuru aşağıdaki biçimde çözümlenir:",
       "answer_sections": {
-        "olay": "Mümtaz ile Nuran'ın Boğaz ve İstanbul gezileri, musiki ile geçmiş/kimlik üzerine konuşmaları; yardımcı parçada İhsan'ın hastalığının Mümtaz'a etkisi.",
+        "olay": "Mümtaz ile Nuran'ın Boğaziçi ve İstanbul'un tarihî semtlerinde yaptıkları vapur ve kara gezileri; bu geziler sırasında eski musiki, mimari, mazi şuuru ve Doğu-Batı sentezi üzerine yaptıkları derin sohbetler; yardımcı parçada ise amcasının oğlu İhsan'ın ağır zatürre hastalığı sebebiyle Mümtaz'ın yaşadığı iç sıkıntısı ve hastane/doktor koşturmacası.",
         "mekan": [
-          "Boğaz ve vapur",
-          "Üsküdar'ın tarihî camileri",
-          "Kanlıca, Çamlıca, Emirgân ve diğer İstanbul semtleri",
-          "İhsan'ın hasta olduğu ev (s.182 ve s.185 yardımcı parçaları)"
+          "Boğaziçi ve vapur güvertesi: İnsanı kendi derinliğine çağıran, ışık ve ses akisleriyle dolu ana estetik mekân.",
+          "Üsküdar ve tarihî camiler: Mihrimah Sultan, Valide-i Atik, Yeni Valide ve Çinili Cami ile kadın zarafetinin sindiği vakıf coğrafyası.",
+          "Kanlıca, Çamlıca ve Emirgân: Doğa ile musikinin birleştiği, koy ve korulara makam isimlerinin verildiği mesire mekânları.",
+          "İhsan'ın hasta olduğu ev ve mahalle dükkânı: Hastalık psikolojisinin, kaygının ve iç hesaplaşmanın yaşandığı kapalı mekânlar."
         ],
         "kisi_kadrosu": [
-          "Mümtaz: düşünce ve duygu merkezindeki kişi",
-          "Nuran: gezilerin ve diyalogların diğer temel kişisi",
-          "İhsan: Mümtaz'ın rehberi, hastalık parçasında bakım gördüğü kişi",
-          "Macide: Mümtaz'ın aile çevresi; s.182'de anlatılır",
-          "Suat ve Fâhir: etkinlik tablolarında adları geçer; verilen kesitte ayrıntılı davranışları görülmez"
+          "Mümtaz: Olayların, duyguların ve felsefi arayışın merkezindeki hassas, melankolik, şair ruhlu aydın.",
+          "Nuran: Mümtaz'ın sevdiği kadın; estetik duyarlılığı yüksek olmakla birlikte bugünün yoksul insanlarına da dikkat çeken gerçekçi taraf.",
+          "İhsan: Mümtaz'ın düşünce dünyasını şekillendiren tarih hocası ve akıl hocası; kültürün yaşayan kaynaklarına yönelen entelektüel.",
+          "Macide: İhsan'ın eşi; Mümtaz'a şefkat gösteren koruyucu aile unsuru.",
+          "Suat ve Fâhir: Etkinlik tablolarında adları anılan, Mümtaz ile çatışma hâlindeki roman şahısları (verilen kesitte doğrudan eylemleri görülmez)."
         ],
-        "zaman": "Vapurda akşamdan geceye ilerleyen saatler, farklı günlere yayılan geziler ve s.170'teki ağustos günü; Mümtaz'ın çocukluk hatıraları ile tarihî geçmişe dönüşleri anlatıyı derinleştirir."
+        "zaman": "Kronolojik Zaman: Akşam vapurunun hareketinden geceye uzanan saatler, ağustos sıcağında geçen geziler ve İhsan'ın bir haftalık hastalık nöbeti. Psikolojik Zaman: Mümtaz'ın çocukluk hatıralarına, vapur düdüğünün çağrıştırdığı maziye ve Osmanlı'nın klasik çağlarına uzanan kesintisiz, Bergsoncu geniş zaman akışı."
       },
-      "explanation": "Olay/mekân/kişi/zaman bu metin parçasına göre açıklanır. Soru ‘roman’ dese de kaynağın veremediği kesin takvim, tüm romanın olay sırası veya Suat/Fâhir'in ayrıntılı rolü eklenmez.",
+      "explanation": "Yapı unsurları kitabın verdiği metin parçalarıyla sınırlı olarak çözümlenmiştir; tüm romanın eksiksiz olay örgüsü veya bu kesitte görünmeyen Suat/Fâhir olayları metin dışından eklenmemiştir.",
       "source_locator": "basılı s.167–170, s.182, s.185 ve yapı tablosu s.186 / PDF s.168–171, s.183, s.186–187"
     },
     {
@@ -53,12 +54,12 @@
       "printed_page": 187,
       "question_no": "2",
       "prompt_summary": "Dil ve üslupla olay, mekân, kişi kadrosu ve zaman arasındaki ilişki",
-      "answer": "Kitabın dört başlığını birbirinden ayırarak metinde gözlenen söyleyişin her yapı unsuruna nasıl hizmet ettiğini açıklayınız.",
+      "answer": "Huzur romanında dil ve üslup, metnin yapı unsurlarıyla (olay, mekân, kişi kadrosu, zaman) organik bir bütünlük içindedir. Tanpınar'ın sanatkârane söyleyişi bu unsurları dışsal birer öge olmaktan çıkarıp içselleştirir:",
       "answer_sections": {
-        "olay_dil_uslup": "Diyaloglar eski-yeni hayat tartışmasını görünür kılar; iç değerlendirme ve anlatıcı yorumları gezilerden düşünsel/psikolojik meseleye geçişi sağlar.",
-        "mekan_dil_uslup": "Boğaz'ın ışığı ve sesiyle Üsküdar'ın camileri ayrıntılı ve çağrışımlı betimlenir; mekân bir aidiyet ve kültürel hafıza alanı olur.",
-        "kisi_dil_uslup": "Mümtaz'ın soyut ve musikili düşünce diliyle Nuran'ın doğrudan soruları, kişiler arasındaki bakış farkını konuşturur.",
-        "zaman_dil_uslup": "Çocukluk hatıraları, eski musiki ve tarih çağrışımları şimdiki gezi anlatısıyla iç içe geçirilerek çok katmanlı zaman hissi kurulur."
+        "olay_dil_uslup": "Romanda dış olaylar son derece azdır; olay çizgisi Mümtaz'ın iç dünyasındaki düşünce çatışmalarına ve estetik izlenimlere dönüşür. Yazar, diyaloglar ve iç monologlarla olayı bir eylem dizisi olmaktan çıkarıp felsefi ve kültürel bir tartışmaya evriltir.",
+        "mekan_dil_uslup": "Mekân tasvirlerinde pitoresk (resimsel) ve lirik bir üslup hâkimdir. Boğaz, Üsküdar ve mezarlıklar ışık, renk ve ses oyunlarıyla bir tablo gibi çizilir; zengin mimari ve musiki terimleriyle mekâna hafıza ve ruh kazandırılır.",
+        "kisi_dil_uslup": "Kişilerin konuşma dili onların dünya görüşlerini ve mizaçlarını yansıtır. Mümtaz'ın şiirsel, soyut ve musiki kavramlarıyla yüklü lirik dili ile Nuran'ın daha sade, sorgulayıcı ve doğrudan üslubu iki farklı bakış açısını konuşturur.",
+        "zaman_dil_uslup": "Zamanın akışı iç içe geçmiş uzun ve ritmik cümlelerle verilir. Vapur düdüğü veya bir musiki nağmesiyle şimdiki zamandan çocukluk hatırasına ve oradan tarihin derinliklerine geçişler, akıcı çağrışım zincirleriyle sağlanır."
       },
       "source_locator": "basılı s.167–170 ve soru s.187 / PDF s.168–171 ve s.188"
     },
@@ -68,7 +69,7 @@
       "printed_page": 187,
       "question_no": "3/a",
       "prompt_summary": "Roman temasının Tanpınar'ın üslubuna etkisi",
-      "answer": "Metnin huzur/kimlik arayışı, aşk, geçmişle bağ ve yeni hayat ihtiyacı; yazarın yalnız olayları sıralamak yerine kişinin hatıralarını, duygularını ve düşüncelerini uzun, çağrışımlı cümlelerle işlemesine yol açar. İstanbul betimlemeleriyle musikinin iç içe geçmesi, aranan huzuru hem kişisel hem kültürel düzeyde duyurur.",
+      "answer": "Huzur romanının ana temaları olan huzur arayışı, Doğu-Batı ikilemi, mazi şuuru ve bireyin içsel yalnızlığı; Tanpınar'ın üslubunu doğrudan biçimlendirmiştir:\n\n1. Şiirsel ve Melankolik Anlatım: Huzursuzluğun ve huzur arayışının doğurduğu gerilim, anlatımı yalın bir vaka kaydı olmaktan çıkarıp lirik, sembolik ve hüzünlü bir şiir diline dönüştürmüştür.\n2. Musikili ve Ritmik Cümleler: Eski musikinin geçmişi canlandıran bir terkip aracı olarak temaya yerleşmesi; romanın cümle yapısına da musikiye benzer bir iç ahenk, dalgalanma ve ritim kazandırmıştır.\n3. Felsefi Derinlik: Kimlik ve medeniyet arayışı, üslubu kuru bir kurgudan çıkararak derin iç tahliller, felsefi diyaloglar ve metaforlarla zenginleştirmiştir.",
       "source_locator": "basılı s.187 / PDF s.188 — soru 3/a"
     },
     {
@@ -77,7 +78,7 @@
       "printed_page": 188,
       "question_no": "3/b",
       "prompt_summary": "Yapı unsurlarının etkileşiminin üsluba katkısı",
-      "answer": "Mümtaz ve Nuran'ın İstanbul gezileri yalnız bir olay çizgisi değildir: gidilen semtler eski musikiyi hatırlatır; musiki kişisel hatırayı ve geçmiş tartışmasını açar. Böylece kişi, mekân ve zamanın birlikte işlemesi; betimlemeden diyaloğa, oradan iç çözümleme ve tarihî çağrışıma geçebilen bir üslup oluşturur.",
+      "answer": "Olay, mekân, kişi ve zaman unsurlarının birbirini sürekli beslemesi ve iç içe geçmesi, Huzur'un üslubuna çok katmanlı bir zenginlik kazandırmıştır:\n\n- Mekân ile Kişi Etkileşimi: Mümtaz ve Nuran Boğaziçi'nde gezerken Boğaz'ın manzarası salt dış mekân olarak kalmaz; Mümtaz'ın ruhundaki hüznü ve aşkı besler, üslubu lirik bir iç döküşe çevirir.\n- Zaman ile Mekân Etkileşimi: Üsküdar'ın asırlık camileri ve mezarlıkları, şimdiki zamanda yürüyen kahramanların zihninde tarihî geçmişi ve ölümü canlandırır; bu durum üsluba nostaljik ve felsefi bir derinlik katar.\n- Sonuç: Yapı unsurlarının bu dinamik kaynaşması, anlatımın betimlemeden birdenbire iç monoloğa, oradan da medeniyet tartışmasına akıcı bir doğallıkla geçebilmesini sağlar.",
       "source_locator": "basılı s.188 / PDF s.189 — soru 3/b"
     },
     {
@@ -86,7 +87,7 @@
       "printed_page": 188,
       "question_no": "3/c",
       "prompt_summary": "Romanın yazıldığı dönemin özelliklerinin üsluba etkisi",
-      "answer": "s.171'deki yazar biyografisi çağdaşlaşma sürecinde geleneksel ve modern kültür arasındaki gerilimin Tanpınar'ın eserlerine yansıdığını söyler. Okunan kesitte eski musiki, tarihî İstanbul, kimlik ihtiyacı ve yoksul semtlerin bugünkü koşulları birlikte anıldığı için anlatım geçmişi çağrıştıran söz varlığını yeni hayat sorusuyla birleştirir. Bu yorum, kitapta görülen metin ve biyografiyle sınırlıdır.",
+      "answer": "Ders kitabının s.171'deki yazar biyografisinde belirtildiği üzere, Cumhuriyet döneminde geleneksel kültür ile modern hayat arasındaki sıkışma ve medeniyet değişimi Tanpınar'ın üslubuna doğrudan yansımıştır:\n\n- Dil ve Kelime Kadrosu: Yazar hem Osmanlı'dan devralınan zengin tarihî-kültürel söz varlığını ('mazi', 'hüviyet', 'terkip', 'uhreviyet') hem de Cumhuriyet'in yeni düşünce iklimini ve Türkçesini ustalıkla bağdaştırmıştır.\n- Medeniyet Buhranının Sesi: İki dünya arasında bocalayan dönemin aydınının tereddütleri, üslupta tezatsal karşıtlıklar (Ada züppeliği vs. Boğaz yerliliği; geçmişin görkemi vs. kenar mahallelerin sefaleti) şeklinde yankı bulmuştur.",
       "source_locator": "basılı s.169–171 ve s.188 / PDF s.170–172 ve s.189 — soru 3/c"
     },
     {
@@ -95,7 +96,7 @@
       "printed_page": 188,
       "question_no": "3/ç",
       "prompt_summary": "Söz varlığı ile Tanpınar'ın üslubu arasındaki ilişki",
-      "answer": "‘Mazi’, ‘hüviyet’, ‘musiki’, makam/beste adları ve cami-mimari terimleri, geçmiş ile kimlik meselesini metnin ses ve anlam dünyasına taşır. Bu söz varlığı İstanbul'u yalnız görülen bir yer değil, kültür ve hafıza alanı gibi anlatmayı sağlar. Uzun betimleme ve çağrışım cümleleri bu kelimelerle daha yoğun ve şiirsel bir söyleyiş kazanır.",
+      "answer": "Tanpınar'ın metinde kullandığı zengin söz varlığı üslubunun ayırt edici temel omurgasıdır:\n\n- Mazi, hüviyet, terkip, aksiseda, fecir kızları, sedef rüyası gibi kavramlar; metne metafizik, şiirsel ve kültürel bir ağırlık katar.\n- Klasik musiki terimleri (Dede Efendi, Itrî, neva, ferahfeza) ve mimari kavramlar (çini, kubbe, türbe, külliye, ayna taşı); İstanbul'u salt coğrafi bir şehir değil, yaşayan bir sanat eseri ve medeniyet hafızası olarak resmeder.\n- Bu kelime kadrosu, yazarın uzun ve ahenkli cümlelerinde birbirine estetik bir titizlikle bağlanarak Tanpınar'a has benzersiz musiki ve düşünce ritmini oluşturur.",
       "source_locator": "basılı s.167–170, s.188 / PDF s.168–171, s.189 — soru 3/ç",
       "evidence_quotes": [
         "Bir hüviyet lâzım.",
@@ -136,7 +137,7 @@
       "printed_page": 189,
       "question_no": "Düşünelim Paylaşalım",
       "prompt_summary": "Verilen Huzur parçalarındaki çatışmaları ve anlatım unsurlarının katkısını tartışma",
-      "answer": "Üç parçada aynı tür gerilim yoktur: önce Mümtaz'ın derin hüznü, ardından Boğaz'ın güzelliği karşısındaki yalnızlığı, son olarak Nuran'ın tanışmaya istekli olmasına rağmen nişanlı olarak takdim edilmekten çekinmesi görülür. Metindeki kanıtı ve anlatımın bu gerilimi nasıl açığa çıkardığını ayrı gösteriniz.",
+      "answer": "Kitabın 189. sayfasındaki üç parçada yer alan çatışmalar ve bunları görünür kılan anlatım unsurları DÜŞÜN–EŞLEŞ–PAYLAŞ yöntemiyle çözümlenir:\n\n1. Parça: Mümtaz'ın iç dünyasındaki derin ve şifasız hüzün gerilimi (birey-kendi içi çatışması).\n2. Parça: Boğaziçi'nin kış güzelliği karşısında duyulan yalnızlığa tahammül edememe çatışması (birey-mekân ve yalnızlık gerilimi).\n3. Parça: Nuran'ın İhsan ve Macide ile tanışma isteğine karşılık bu yaşta nişanlı olarak takdim edilmekten duyduğu tereddüt çatışması (birey-toplumsal roller gerilimi).",
       "guidance": "Bu soru DÜŞÜN–EŞLEŞ–PAYLAŞ sürecidir: çatışmayı tek başına adlandırmak yeterli değil, onu belirginleştiren anlatım aracını da gösterin. Üçüncü sahnede Nuran'ın İhsan'la tanışmaktan tümüyle vazgeçtiğini söylemeyin; 'Nasıl olsa görürüz' der.",
       "source_locator": "basılı s.189 / PDF s.190 — üç Huzur parçası ve Düşün/Eşleş/Paylaş yönergeleri",
       "answer_sections": {
@@ -165,7 +166,7 @@
       "printed_page": 190,
       "question_no": "Fark Edelim",
       "prompt_summary": "Huzur'daki dönem dili ile günümüz dilinin ortak ve farklı yönleri",
-      "answer": "İki dilde ortak olan, Türkçenin temel söz dizimi ve gündelik iletişimidir; ayrım ise s.190'daki parçada yoğunlaşan tarihî musiki/mimari bağlamı, seyrek kullanılan sözler ve Tanpınar'ın betimleyici, çağrışımlı cümleleridir. Eski kelimeyi doğrudan 'yazım yanlışı' saymadan söz varlığı ile yazımı ayırınız.",
+      "answer": "Huzur metnindeki dönem dili ile günümüz Türkçesi arasındaki ortak ve farklı yönler metindeki somut dil verileriyle karşılaştırılır:\n\n1. Ortak Yönler: Türkçenin temel cümle yapısı (özne-nesne-yüklem söz dizimi), fiil çekimleri ve temel kelime kadrosu ('gün', 'ev', 'güneş', 'yer', 'seviyordu') bütünüyle aynıdır. Metin genel akışı itibarıyla bugünün okuru tarafından da doğrudan anlaşılabilir durumdadır.\n2. Farklı Yönler: Dönem dilinde Osmanlı Türkçesine ait Arapça ve Farsça kökenli tamlamalar ve sözcükler ('hendesi', 'mazi', 'hülya', 'daüssıla', 'bilhassa', 'müsvedde', 'tasvir') daha yoğun ve tabiidir. Ayrıca düzeltme işaretli yazımlar ('lâzım', 'plâj', 'fevkalâdelik') ve şiirsel, uzun, bileşik cümle mimarisi dönemin edebi zevkini yansıtır.",
       "answer_sections": {
         "ortak_yonler": [
           "'Ertesi gün ... dolaştılar' gibi yüklem ve olay kuruluşları bugünün Türkçesinde de anlaşılır.",
@@ -294,11 +295,11 @@
       "prompt_summary": "Huzur çözümlemesi için çalışma kâğıdındaki beş konu başlığını doldurma",
       "answer": "Çalışma kâğıdının beş satırını önceki Huzur çözümlemelerinden yararlanarak ayrı ayrı tamamlayınız. Aşağıdakiler sınıfta kullanılabilecek metne dayalı örneklerdir.",
       "answer_sections": {
-        "1 · Üslup seçiminin nedenleri ve sonuçları": "Mümtaz'ın aşkı, huzur/kimlik arayışı ve kültürel hafızası; betimleme, musiki çağrışımı, diyalog ve iç çözümlemeyi gerektirir. İstanbul gezisi dış olay olmaktan çıkar, kişinin düşünce ve duygu dünyasını gösterir.",
-        "2 · Yazıldığı dönemin özellikleri": "Kitaptaki Tanpınar biyografisinin işaret ettiği gelenek–modernleşme gerilimi, ‘yeni hayat’ isteği ile eski musiki ve tarihî İstanbul'a bağlılıkta birlikte görülür.",
-        "3 · İçerik, yapı, dil ve toplum ilişkisi": "Mümtaz ve Nuran'ın İstanbul'daki konuşmaları tarihî mimari ve musiki üzerinden geçmişle bağ kurarken bakımsız semtlere duyarlılığı da açar. Diyalog ve şiirsel betimleme kültürel değişimi görünür kılar.",
-        "4 · Yapı unsurlarının katkısı": "Boğaz ve Üsküdar mekânı hafızayı canlandırır; Mümtaz ve Nuran farklı bakışları konuşturur; gezi, anı ve tarih çağrışımları şimdiki olaylara zaman derinliği katar.",
-        "5 · Millî, manevi ve evrensel değerler": {
+        "1 · Yazarın üslup seçiminin nedenleri ve sonuçları": "Mümtaz'ın aşkı, huzur/kimlik arayışı ve kültürel hafızası; betimleme, musiki çağrışımı, diyalog ve iç çözümlemeyi gerektirir. İstanbul gezisi dış olay olmaktan çıkar, kişinin düşünce ve duygu dünyasını gösterir.",
+        "2 · Metnin yazıldığı dönemin özellikleri": "Kitaptaki Tanpınar biyografisinin işaret ettiği gelenek–modernleşme gerilimi, ‘yeni hayat’ isteği ile eski musiki ve tarihî İstanbul'a bağlılıkta birlikte görülür.",
+        "3 · Metnin içeriğinin, yapı unsurlarının, dil ve anlatım özelliklerinin yazıldığı dönem ve toplumla ilişkisi": "Mümtaz ve Nuran'ın İstanbul'daki konuşmaları tarihî mimari ve musiki üzerinden geçmişle bağ kurarken bakımsız semtlere duyarlılığı da açar. Diyalog ve şiirsel betimleme kültürel değişimi görünür kılar.",
+        "4 · Metnin yapı unsurlarının metne katkısı": "Boğaz ve Üsküdar mekânı hafızayı canlandırır; Mümtaz ve Nuran farklı bakışları konuşturur; gezi, anı ve tarih çağrışımları şimdiki olaylara zaman derinliği katar.",
+        "5 · Metinde yer alan millî, manevi ve evrensel değerler": {
           "milli": "İstanbul'un tarihî mirasını ve eski musiki kültürünü tanıma ve koruma.",
           "manevi": "İhsan ile Macide'nin Mümtaz'ın hayatındaki aile bağı ve şefkat; hasta İhsan'la ilgilenme.",
           "evrensel": "Sevgi, başkasının güçlüğünü gözetme ve canlılara duyarlılık; Nuran'ın yoksul semtleri hatırlatması ve kuşlara ilgisi."

@@ -1,6 +1,7 @@
 {
   "schema_version": "2.0.0",
   "theme_id": "TEMA_03",
+  "theme_title": "YAŞAMIN İZİNDE",
   "part_id": "PART_03",
   "printed_page_range": "175-176",
   "entries": [
@@ -10,8 +11,8 @@
       "printed_page": 175,
       "question_no": "1",
       "prompt_summary": "Okuma öncesi Huzur tahminlerini metinden öğrenilenlerle karşılaştırma",
-      "answer": "Örnek karşılaştırma: Okuma öncesinde romanın yalnız bireysel huzur arayışı ve insan ilişkileri üzerine olabileceği tahmin edilmiş olabilir. Metin okunduğunda ise bireysel duygu dünyasının İstanbul, eski musiki, tarih, mimari, geçmişle bağ ve yeni hayat arayışıyla birlikte işlendiği görülür. Böylece ilk tahmin genişler; 'huzur' kavramının yalnız kişisel mutluluk değil, kültür ve kimlikle de ilişkili olduğu anlaşılır.",
-      "guidance": "Öğrencinin gerçek tahmini neyse onunla karşılaştırma yapılmalıdır; bu örnek yalnız karşılaştırma biçimini gösterir.",
+      "answer": "Okuma öncesinde romanın adına ('Huzur') ve Boğaz görsellerine dayanılarak yapılan tahminler ile metin okunduktan sonra ulaşılan somut gerçekler aşağıdaki eksenlerde karşılaştırılır:\n\n1. Tahmin Edilen İçerik: Romanın sakin, dertsiz, dingin bir aşkı ya da bireysel bir mutluluk ve huzur hikâyesini anlatacağı tahmin edilmiş olabilir.\n2. Metinden Öğrenilen Hakikat: Romanın aslında doğrudan hazır bir huzuru değil; modern Türk aydınının (Mümtaz) yaşadığı derin kimlik buhranını, iç çatışmalarını, 'huzur arayışı'nı ve huzursuzluğunu işlediği görülür. Bireysel aşk hikâyesi (Mümtaz ile Nuran); İstanbul'un tarihî mekânları, eski Türk musikisi, mazi şuuru ve Doğu-Batı ikilemiyle iç içe geçmiştir.\n3. Sonuç ve Çıkarım: Okuma öncesi tahminin dar bir kişisel huzurla sınırlı kalmasına karşılık, romandaki huzur kavramının medeniyet, kültür, hafıza ve toplumsal süreklilikle doğrudan ilişkili çok katmanlı bir mesele olduğu anlaşılır.",
+      "guidance": "Öğretmen, öğrencinin okuma öncesinde kendi not ettiği gerçek tahmini neyse onunla karşılaştırma yapmasını sağlamalıdır. Sonradan edinilen bilgileri 'zaten tahmin etmiştim' şeklinde geriye dönük doğrulama yanılgısına (hindsight bias) düşülmemeli; tahmin ile metin arasındaki farkın bilişsel zenginliği vurgulanmalıdır.",
       "source_locator": "basılı s.175 / PDF s.176 — soru 1"
     },
     {
@@ -20,12 +21,13 @@
       "printed_page": 175,
       "question_no": "2",
       "prompt_summary": "Huzur'un konusu, teması ve yazılış amacı",
-      "answer": "Konu, tema ve yazılış amacı birbirinden ayrılarak aşağıdaki biçimde gösterilebilir.",
+      "answer": "Huzur romanının konusu, teması ve yazılış amacı metnin estetik ve düşünsel yapısına uygun olarak üçlü tabloda yapılandırılmıştır.",
       "answer_sections": {
-        "konu": "Mümtaz ile Nuran'ın ilişkisi çevresinde İstanbul, musiki, tarih ve kültürle kurulan bağ.",
-        "tema": "Huzur ve kimlik arayışı; geçmiş ile yeni hayat arasındaki gerilim.",
-        "yazilis_amaci": "Bireyin iç dünyasını ve kültürel aidiyetini sanat, şehir ve tarih üzerinden düşündürmek."
+        "konu": "Mümtaz ile Nuran'ın İstanbul'un tarihî ve doğal mekânlarında (Boğaziçi, Üsküdar, Emirgân) filizlenen aşkları çerçevesinde; eski musiki, mimari, mazi mirası ve aydınların iç dünyalarındaki Doğu-Batı çatışması.",
+        "tema": "Huzur arayışı, Doğu-Batı medeniyet buhranı, kültürel aidiyet ve mazi ile yeni hayat arasındaki varoluşsal gerilim.",
+        "yazilis_amaci": "Modernleşme sürecindeki Türk aydınına geçmişinden ve kültürel köklerinden kopmadan yeni bir hayat ve kimlik inşa etme gerekliliğini; sanat, mimari ve musikinin dönüştürücü gücü üzerinden estetik bir bilinçle düşündürmek."
       },
+      "guidance": "Konu (metinde ele alınan somut durum/olay), tema (metnin bütününe hâkim olan soyut ve genel duygu/düşünce) ve yazılış amacı (yazarın okurda uyandırmak istediği nihai farkındalık) arasındaki kavramsal sınırlar net olarak ayırt edilmelidir.",
       "source_locator": "basılı s.175 / PDF s.176 — soru 2"
     },
     {
@@ -34,7 +36,7 @@
       "printed_page": 176,
       "question_no": "3",
       "prompt_summary": "Huzur'un temasına ve edebî akımına göre roman türü",
-      "answer": "Temasına göre Huzur, kişilerin ruhsal durumlarını ve iç çatışmalarını öne çıkardığı için psikolojik (tahlil) roman olarak değerlendirilebilir. Edebî anlayışı bakımından ise Tanpınar'ın bireyin iç dünyasını, yabancılaşma ve gelenek-modernlik gerilimini modernist bir yaklaşımla işlemesi nedeniyle modernist roman özellikleri taşır.",
+      "answer": "Huzur romanı ders kitabının 173-174. sayfalarındaki sınıflandırmalara göre şu tür özellikleri taşır:\n\n1. Temasına Göre Roman Türü:\n- Psikolojik Roman (Tahlil Romanı): Eserde dış olay örgüsünden ziyade kahramanların (özellikle Mümtaz'ın) ruhsal dalgalanmaları, iç hesaplaşmaları, hüznün kaynakları, bilinçaltı rüyaları ve estetik duyarlılıkları derinlemesine çözümlenir.\n- Aynı zamanda kültür ve medeniyet krizini tartışması bakımından 'sosyal ve felsefi/tezli roman' boyutları da barındırır.\n\n2. Edebî Akımına Göre Roman Türü:\n- Modernist Roman: Geleneksel kronolojik vaka anlatımını kırarak iç monolog, bilinç akışı, geriye dönüşler ve çağrışımlarla zenginleşen çok katmanlı bir anlatım kurar. Bireyin yabancılaşmasını, kalabalıklar içindeki yalnızlığını ve anlam arayışını merkezine alır.\n- Şiirsel dil ve duygu yoğunluğu bakımından ise Tanpınar'ın estetiğini besleyen 'sembolizm' ve 'empresyonizm' akımlarının derin izlerini taşır.",
       "source_locator": "basılı s.173-176 / PDF s.174-177 — soru 3 ve Bilgi Köşesi"
     },
     {
@@ -43,7 +45,7 @@
       "printed_page": 176,
       "question_no": "4",
       "prompt_summary": "Boğaz mekânına yüklenen işlev ve bunun dayandığı özellik",
-      "answer": "Boğaz yalnız olayların geçtiği bir dekor değildir; Mümtaz'ın kendisini, geçmişini ve ait olduğu kültürü daha derinden hissetmesini sağlayan bir kimlik ve hafıza mekânı olarak kullanılır. Bu işlev, Boğaz'ın manzarası, mimarisi, mescitleri, çeşmeleri, yalıları, kahveleri ve hatıralarıyla tarihî-kültürel birikimi taşımasına bağlanır.",
+      "answer": "Yazar bu bölümde Boğaz mekânına yalnızca olayların geçtiği coğrafi bir sahne/dekor işlevi değil; bireyi kendi öz kimliğine, kültürel hafızasına ve ruhsal derinliğine çağıran 'canlı bir kimlik ve terkip mekânı' işlevi yüklemiştir.\n\nİşlevin Dayandığı Özellikler:\n1. 'Terkibi idare eden şeylerin hepsi bizimdi': Boğaz'ın mimarisi, manzarası, küçük mescitli köyleri, kireç sıvalı duvarları, kırık çeşmeleri ve tekkeleri Türk-İslam medeniyetinin ruhuyla yoğrulmuş; milletin tarihiyle beraber kurulup şekillenmiştir.\n2. Ada ile Karşıtlık: Ada 'standart insanların ve bizi kendimizden uzaklaştıran sahte heveslerin' yeriyken, Boğaz 'insanı kendisine çağıran ve kendi derinliğine indiren' yerli ve sahici bir varoluş alanıdır.\n3. Ses ve Işık Akisleri: Boğaz'da her şey geçmişin bir yankısıdır; vapur düdüğünden cami silüetlerine kadar her ayrıntı insanın içindeki şifasız hüznü ve kültürel aidiyeti uyandırır.",
       "evidence_quotes": [
         "her şey insanı kendisine çağırır, kendi derinliğine indirirdi",
         "hepsi bizimdi"
@@ -56,7 +58,7 @@
       "printed_page": 176,
       "question_no": "5",
       "prompt_summary": "'Bizler, kökü mazide olan atiyiz.' sözünü açıklama",
-      "answer": "Söz, geleceğin geçmişten kopuk biçimde kurulamayacağını anlatır. İnsan ve toplum geleceğe yönelirken tarih, kültür ve ortak hafızadan beslenir; geçmiş yalnız geride bırakılacak bir dönem değil, kimliğin temelidir. Metindeki Mümtaz da yeni bir hayat gerektiğini kabul ederken bu yeni hayatın sağlam bir kimlik ve geçmiş bilgisi üzerinde yükselmesi gerektiğini savunur.",
+      "answer": "Yahya Kemal Beyatlı'ya ait bu mısra; bir milletin geleceğe (ati) doğru yürürken geçmişinden (mazi), tarihî mirasından ve kültürel köklerinden asla kopamayacağını; aksine geleceğin ancak o köklerden beslenerek yeşerebileceğini ifade eder.\n\nMetinle İlişkisi ve Çözümlemesi:\n- Bir Çınar Metaforu: Kökleri toprağın derinliklerine inmeyen bir ağaç ilk fırtınada nasıl devrilirse, geçmiş hafızasını yitiren bir toplum da gelecekte ayakta kalamaz ve başkalarını körü körüne taklit etmek zorunda kalır.\n- Mümtaz'ın Düşüncesi: Romanda Mümtaz, yeni bir hayatın ve modernleşmenin gerekliliğini kabul eder; ancak bu yeni hayatın taklitçi bir köksüzlükle değil, milletin kendi hüviyetiyle inşa edilmesi gerektiğini savunur: 'Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.'\n- Sentez Arayışı: Söz, geçmişe saplanıp kalmayı değil; geçmişin öz değerleriyle geleceğin imkânlarını birleştiren dinamik bir medeniyet sentezini öğütler.",
       "evidence_quotes": [
         "Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor."
       ],
@@ -68,8 +70,8 @@
       "printed_page": 176,
       "question_no": "6",
       "prompt_summary": "'Kendi hayatımızın kaynakları' ifadesini açıklama ve yaşanan şehirden örnekleme",
-      "answer": "'Kendi hayatımızın kaynakları', bir toplumun bugününü besleyen tarihî ve kültürel birikimi anlatır. Buna dil, mimari, musiki, edebiyat, gelenekler, tarihî mekânlar ve ortak hatıralar dâhil olabilir. Şehir örneği için şu yapı kullanılabilir: '[Şehrimdeki tarihî yapı / gelenek / sanat / yerel anlatı], geçmişle bugün arasında bağ kurduğu ve yerel kimliğin bir parçası olduğu için kendi hayatımızın kaynaklarından biri sayılabilir.'",
-      "guidance": "Öğrencinin yaşadığı şehir kişisel bağlamdır; rehber belirli bir şehir veya örneği öğrenci adına seçmemelidir.",
+      "answer": "'Kendi hayatımızın kaynakları' ifadesi; bir milletin asırlar boyunca ürettiği dil, musiki, mimari, sanat, inanç, örf, ortak hatıralar ve duyuş tarzını kapsayan milli kültür damarlarını ifade eder. İhsan ve Mümtaz için bu kaynaklar; Batı taklitçiliğinden kurtulup kendi ruhuna dönmeyi simgeler.\n\nÖğrencinin Yaşadığı Şehirden Verilebilecek Model Örnekler:\n1. Tarihî Mimari ve Vakıf Eserleri: Şehrimizdeki Selçuklu ve Osmanlı dönemi ulu camileri, medreseler, hanlar, köprüler ve çeşmeler; ecdadımızın hayat tasavvurunu ve zarafetini taşta donduran yaşayan kaynaklardır.\n2. Yerel Sözlü Kültür ve Müzik: Yöremize ait türküler, ağıtlar, bozlaklar ve halk hikâyeleri; halkımızın sevinç, yas ve kahramanlık hafızasını günümüze taşıyan canlı pınarlardır.\n3. Yaşayan Gelenekler ve Zanaatlar: Geleneksel el sanatları, ahilik ahlakıyla yoğrulan çarşı kültürü ve bayramlaşma/komşuluk ritüelleri bugünkü toplumsal birliğimizi besleyen değerlerdir.",
+      "guidance": "Öğrencinin yaşadığı şehir kişisel bağlamdır; öğretmen belirli bir ili veya eseri tek doğru olarak dayatmamalıdır. Önemli olan, öğrencinin kendi çevresindeki somut bir tarihî eser, müzik ezgisi veya kültürel gelenek ile 'kendi hayatımızın kaynakları' ifadesi arasında mantıklı bir süreklilik bağı kurmasıdır.",
       "source_locator": "basılı s.176 / PDF s.177 — soru 6"
     },
     {
@@ -78,7 +80,7 @@
       "printed_page": 176,
       "question_no": "7",
       "prompt_summary": "Metinde dönemin sosyal hayatını yansıtan ifadeler",
-      "answer": "Metinde vapurdaki küçük memurlar, gezmeden ve plajlardan dönenler, genç öğrenciler, subaylar ve yaşlı kadınlar; yalı çocuklarının ağız çalgıları çalması; insanların vapurda birbirini çağırması; iskele kahveleri, pehlivan güreşleri, kahveler, plajlar ve semt gezileri dönemin sosyal hayatını yansıtan örneklerdir. Ayrıca özel otomobillerle yoksul mahallelerin yan yana verilmesi şehirdeki toplumsal farklılıkları da gösterir.",
+      "answer": "Huzur metninde 1930'lu ve 40'lı yılların İstanbul'undaki gündelik ve sosyal yaşamı yansıtan çok sayıda somut ayrıntı yer alır:\n\n1. Vapur Seferleri ve Şehir Hareketliliği: Şehirdeki işlerinden dönen küçük memurlar, gezintilerden ve plajlardan gelenler, genç mektepliler, zabitler ve yaşlı hanımlarla akşam saatlerinde hıncahınç dolan Boğaz vapurları.\n2. Gündelik Eğlenceler ve Sesler: Vapur güvertesinde yalı çocuklarının ağız mızıkaları (çalgıları) çalması, gençlerin tecrübesiz seslerle şarkılar söylemesi, vapur yolcularının kalabalık içinde birbirine seslenmesi.\n3. Mahalle ve Meydan Kültürü: İskele kahveleri, çırakların sesleri, İstanbul Ramazanlarının uhrevi atmosferi, eski davullu zurnalı pehlivan güreşlerinin yapıldığı mahalle meydanları.\n4. Sosyal Tabakalaşma ve Karşıtlıklar: Ada vapurlarındaki Batılı tarzda eğlenen zümre ile Boğaz'ın geleneksel mahalleleri; caddelerdeki özel otomobiller ile toz, pislik ve sıcak içinde bitap düşen fukara kenar semtlerin oluşturduğu toplumsal tezat.",
       "source_locator": "basılı s.167-170 / PDF s.168-171 — soru 7"
     },
     {
@@ -87,7 +89,7 @@
       "printed_page": 176,
       "question_no": "8",
       "prompt_summary": "Şehir hayatının insanların ruh hâline ve sosyal hayatına etkisi",
-      "answer": "Metinde şehir ve insan birbirini karşılıklı olarak etkiler. Boğaz'ın güzelliği, akşam ışığı ve musiki çağrışımları kişileri sakinleştirip iç dünyalarına yöneltirken; bakımsız, yoksul semtler yorgunluk, hüzün ve çaresizlik duygusunu güçlendirir. Vapur, kahve, semt gezileri ve ortak mekânlar ise insanların karşılaşmasını ve sosyal ilişkilerini biçimlendirir. Böylece şehir hem ruh hâlinin hem sosyal yaşamın etkin bir parçasıdır.",
+      "answer": "Metinde şehir mekânı ile insanın iç dünyası arasında karşılıklı ve dönüştürücü organik bir ilişki sergilenir:\n\n1. Ruh Hâline Etkisi:\n- Boğaz'ın Dinginliği ve Işığı: Boğaz suları, akşam aydınlığı ve tarihi silüet; insanları gündelik telaşlardan çekip alarak kendi iç derinliklerine yöneltir, melankolik ve lirik bir ruh zenginliği kazandırır ('kendilerini bu akşam saatine teslim etmişe benziyorlardı').\n- Kenar Semtlerin Bunalımı: Tozlu, bakımsız ve yoksul mahalleler ise insanda bezginlik, bitaplık, çaresizlik ve hayatın yükü altında ezilme duygusu uyandırır.\n\n2. Sosyal Hayata Etkisi:\n- Ortak Kamusal Alanlar: Vapurlar, iskele kahveleri ve mesire alanları farklı toplumsal kesimlerden (memur, subay, öğrenci, ihtiyar) insanları aynı ritimde buluşturur; bireyler şehrin ritmine uyarak ortak bir duygu atmosferini paylaşır.",
       "source_locator": "basılı s.167-170 / PDF s.168-171 — soru 8"
     },
     {
@@ -96,7 +98,7 @@
       "printed_page": 176,
       "question_no": "9",
       "prompt_summary": "Nuran ve Mümtaz'ın buluştukları mekânlardan sosyal ilişkileri ve yaşam tarzlarına ilişkin çıkarım",
-      "answer": "Boğaz, Kanlıca, Çamlıca, Üsküdar ve tarihî semtlerde buluşmaları onların yalnız birlikte vakit geçirmekten çok İstanbul'u, sanatı ve geçmişi ortak bir ilgi alanı hâline getirdiklerini gösterir. Kayık gezileri, kahveler, camiler ve musikiyle ilişkilendirdikleri mekânlar; ilişkilerinin estetik ve kültürel paylaşım üzerinden derinleştiğini düşündürür. Yaşam tarzları şehirle temas eden, gezmeyi ve sanat üzerine konuşmayı önemseyen bir yapıdadır.",
+      "answer": "Nuran ve Mümtaz'ın buluştukları mekânlar (Boğaziçi, Kanlıca, Çamlıca, Üsküdar camileri, Emirgân, kır kahveleri) kahramanların sosyal ilişkileri ve hayat tarzları hakkında derin ipuçları verir:\n\n1. Estetik ve Entelektüel İlişki: Onların ilişkisi sıradan ve yüzeysel bir buluşma değil; şehri, mimariyi, tarihi ve musikiyi birlikte keşfeden entelektüel bir ruh akrabalığıdır.\n2. Yaşam Tarzı ve Değerler: Gösterişli, yapay ve Batı taklitçisi tüketim mekânları (Ada gazinoları, lüks eğlence yerleri) yerine; tarihin sindiği sakin kıyıları, cami avlularını ve doğayı tercih ederler. Bu durum onların manevi ve estetik değerleri maddi zevklerin üstünde tuttuklarını gösterir.\n3. Birlikte İnşa Edilen Hafıza: Gezdikleri her köşeye musikiden bir makam veya hatıra bağlayarak mekânı kendileri için özel ve şiirsel bir dünyaya dönüştürürler.",
       "source_locator": "basılı s.168-170 / PDF s.169-171 — soru 9"
     },
     {
@@ -105,7 +107,7 @@
       "printed_page": 176,
       "question_no": "10",
       "prompt_summary": "Mümtaz'ın Üsküdar için 'hakikî kadın saltanatı' demesinin nedeni",
-      "answer": "Mümtaz, Üsküdar'da gezdikleri dört büyük caminin aşk, güzellik veya annelik duygusuyla ilişkilendirildiğini fark ettiği için bu ifadeyi kullanır. Mekânların kadınlarla bağlantılı tarihî ve duygusal çağrışımları, Üsküdar'ı onun gözünde kadın varlığının belirgin olduğu özel bir kültürel alan hâline getirir.",
+      "answer": "Üsküdar için bu ifadenin kullanılmasının temel nedeni; ilçedeki anıtsal dört büyük caminin ve külliyenin (Mihrimah Sultan İskele Camii, Valide-i Atik / Eski Valide Camii, Valide-i Cedid / Yeni Valide Camii ve Çinili Cami) padişah anneleri ve hanım sultanlar tarafından yaptırılmış olmasıdır.\n\nMetin Bağlamı ve Anlamı:\n- Bu eserler devletin siyasi gücünü değil; kadının şefkatini, aşkı, güzelliği ve annelik duygusunu taş ve çini zarafetine dönüştürmüştür.\n- Tarihteki olumsuz siyasi 'kadınlar saltanatı' algısının aksine, burada hayırseverlik, estetik incelik ve manevi koruyuculukla taçlanmış gerçek ve asil bir kadın medeniyeti kastedilmektedir.",
       "evidence_quotes": [
         "Üsküdar’ın bu dört büyük camii aşka, güzelliğe, yahut hiç olmazsa annelik duygusuna ithaf edilmişti."
       ],
@@ -118,7 +120,7 @@
       "printed_page": 176,
       "question_no": "11",
       "prompt_summary": "Mümtaz'ın tarihî dönem romanına Şeyh Gâlip'in adını vermesinden kişiliği ve sanat anlayışına ilişkin çıkarım",
-      "answer": "Mümtaz'ın tarihî bir dönemi anlatan romana Şeyh Gâlip'in adını vermesi, klasik Türk edebiyatına ve geçmişin sanatçılarına güçlü bir ilgi duyduğunu gösterir. Tarihi yalnız bilgi olarak değil, edebiyat ve estetik üzerinden anlamlandırır. Nuran'ı düşünerek tarihî kişilerin portrelerini çizmesi de sanatında geçmiş ile kişisel deneyimi iç içe geçirdiğini düşündürür.",
+      "answer": "Mümtaz'ın 18. yüzyıl sonu Osmanlı dönemini anlatan tarihî romanına divan edebiyatının son büyük mutasavvıf şairi Şeyh Gâlip'in adını vermesi, kişiliği ve sanat anlayışı hakkında şu derin çıkarımları sağlar:\n\n1. Klasik Edebiyata ve Tasavvufa Bağlılık: Şeyh Gâlip ('Hüsn ü Aşk' şairi), sembolik anlatımın, ateş denizinde mumdan kayıklarla yüzme cesaretinin ve ilahi aşkın zirvesidir. Mümtaz'ın onu roman kahramanı yapması, klasik kültürümüzün estetik ve tasavvufi derinliğine duyduğu hayranlığı gösterir.\n2. Tarihe Estetik ve Canlı Bakış: Mümtaz tarihi kuru bir kronoloji veya savaşlar dizisi olarak değil; ruh, sanat ve fikir hayatı olarak kavrar. Dönemi padişahların veya vezirlerin değil, bir şairin gözünden anlatmayı seçmesi sanat merkezli tarih şuurunun kanıtıdır.\n3. Sanatında Aşkı ve Şahsiyeti Birleştirme: Romanda Nuran'ı düşünerek Şeyh Gâlip çevresindeki kadın tiplerini çizmesi; Mümtaz'ın kendi kişisel aşkı ile edebî kurmacayı birbirine maya yaptığını gösterir.",
       "source_locator": "basılı s.169 / PDF s.170 — soru 11"
     },
     {
@@ -127,8 +129,8 @@
       "printed_page": 176,
       "question_no": "12",
       "prompt_summary": "Tarihî olayları anlatan türkü, şarkı veya marşlara örnek verme",
-      "answer": "Ders kitabındaki Huzur parçası bu soruya verilecek özel eser adlarını listelememektedir. Uygun cevapta öğrenci bir türkü, şarkı veya marş adı vermeli; bunun hangi tarihî olay, dönem veya toplumsal hafızayla ilişkili olduğunu bir cümleyle açıklamalıdır. Örnek cevap kalıbı: '[Eser adı], [tarihî olay/dönem] ile ilişkilidir; eserde bu olayın [duygu/hafıza/toplumsal etkisi] dile getirilir.'",
-      "guidance": "Kaynakta bulunmayan eser adlarını rehberin kesin cevabı gibi eklemek yerine öğrencinin bildiği veya araştırdığı örneğin tarihî bağını doğrulamak gerekir.",
+      "answer": "Ders kitabındaki Huzur parçası bu soruya verilecek özel eser adlarını listelememektedir. Kitapta Mümtaz'ın 'Medeniyetimizin bütün yönleri musikimizde vardır' düşüncesinden hareketle tarihimizdeki büyük zafer, göç, savaş ve felaketleri terennüm eden müzik eserleri örneklenebilir.\n\nÖrnek Eser Modelleri ve Tarihî Bağlantıları:\n1. Çanakkale Türküsü ('Çanakkale içinde vurdular beni'): 1915 Çanakkale Savaşları'nda gencecik fidanların vatan savunmasında şehit düşüşünü ve milletin ortak acısını dile getirir.\n2. Yemen Türküsü ('Havada bulut yok bu ne dumandır'): 1. Dünya Savaşı öncesinde Yemen çöllerine gidip geri dönemeyen Osmanlı askerlerinin ve Anadolu analarının feryadını taşır.\n3. Plevne Marşı ('Tuna nehri akmam diyor'): 1877-1878 Osmanlı-Rus Harbi'nde (93 Harbi) Gazi Osman Paşa'nın Plevne'de gösterdiği destansı kahramanlığı ve direnişi anlatır.\n4. Estergon Kalesi Türküsü: Osmanlı'nın Macaristan seferleri ve serhat boylarındaki gaza ruhunun hüzünlü hatırasını yansıtır.",
+      "guidance": "Öğretmen, kitapta bulunmayan eser adlarını rehberin tek ve mutlak cevabı gibi sunmamalıdır. Kitapta özel eser adları listelenmemiştir; öğrencinin kendi bildiği veya araştırdığı bir türkü/marş ile tarihî olay arasında kurduğu somut hafıza bağını ve duyguyu değerlendirmek esastır.",
       "source_locator": "basılı s.176 / PDF s.177 — soru 12"
     },
     {
@@ -137,7 +139,7 @@
       "printed_page": 176,
       "question_no": "13",
       "prompt_summary": "Mekânlara müzikle ilgili adlar verilmesinden sanatın kahramanların hayatındaki etkisine ilişkin çıkarım",
-      "answer": "Nuran ve Mümtaz'ın Çamlıca ve Boğaz'daki bazı yerlere musikiden adlar vermesi, sanatın onların gündelik hayatını algılama biçimini dönüştürdüğünü gösterir. Mekânları yalnız fiziksel özellikleriyle değil, dinledikleri eserlerin duygusu ve çağrışımıyla hatırlarlar. Musiki ortak bir dil hâline gelir; ilişkilerini, İstanbul'a bakışlarını ve geçmişle bağlarını derinleştirir.",
+      "answer": "Nuran ve Mümtaz'ın Çamlıca, Kanlıca ve Boğaz'daki koylara, korulara klasik Türk musikisi makam ve eserlerinin adlarını vermeleri, sanatın onların varoluşunu bütünüyle kuşattığını kanıtlar:\n\n1. Sanat Algıyı Şekillendiren Bir Filtredir: Kahramanlar için musiki yalnızca dinlenen bir eğlence değil; dış dünyayı algılama, görme ve hissetme biçimidir. Şehrin topografyası onların zihninde notalara, seslere ve melodilere bürünür.\n2. Mekân ile Duygunun Birleşmesi: Bir koyu seyrederken Dede Efendi'nin ferahfeza veya neva makamındaki bir bestesini hatırlamak, o mekânı maddi sınırlarından çıkarıp metafizik ve estetik bir derinliğe kavuşturur.\n3. Ruhsal Terkip: Alıntıda belirtildiği gibi 'İstanbul manzaralarıyla eski musıkîmiz birleşiyor, sesten, hayalden bir harita gittikçe büyüyordu.' Bu durum sanatın insan ile vatan coğrafyası arasında kurabileceği en asil ve kopmaz manevi köprüdür.",
       "evidence_quotes": [
         "İstanbul manzaralarıyla eski musıkîmiz birleşiyor, sesten, hayalden bir harita gittikçe büyüyordu."
       ],
