@@ -68,15 +68,19 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P165-PERF01",
       "content": {
-        "lead": "Kitabın iki sütununu ayırın; ilk tahminleri okuma sonrası bilgilerden ayrı tutun.",
+        "lead": "Üç katmanı ayırın: okuma öncesi tahmin, dış araştırma bulgusu ve Huzur metninde doğrulanan kanıt.",
         "sections": [
           {
+            "title": "Tanpınar araştırması",
+            "body": "Kaynak → araştırmada bulduğum bilgi → Huzur'da sınayacağım ilişki. Dış bilgiyi ders kitabının hazır cevabı gibi sunmayın."
+          },
+          {
             "title": "Roman ve yazar",
-            "body": "İstanbul, tarihî mekânlar, musiki, bireyin iç dünyası ve gelenek–modern hayat gerilimi."
+            "body": "Araştırma bulgusunu ancak Huzur'da gerçek bir unsur ve metin dayanağıyla ilişkilendirin."
           },
           {
             "title": "Dil ve üslup",
-            "body": "Betimleme, şiirsel çağrışım, uzun ritmik cümleler; tarih, mimari ve musiki söz varlığı."
+            "body": "Metinde gerçekten gözlenen betimleme, mecaz, söz varlığı ve cümle yapısını somut örnekle kaydedin."
           }
         ]
       },
@@ -91,9 +95,9 @@
       "content": {
         "lead": "Önceden bilinenle okurken fark edileni birbirinden ayırın.",
         "items": [
-          "İlk tahminin yanına okuma sonrası metin kanıtı ekleyin.",
-          "Yazar ile eser arasında somut bağlantı kurun.",
-          "Üslup tespitlerini metinden örnekle destekleyin."
+          "İlk tahmini olduğu hâliyle koruyun.",
+          "Dış araştırma bilgisinin kaynağını belirtin.",
+          "Okuma sonrası her tespiti metinden gerçek kanıtla destekleyin."
         ]
       },
       "density": "compact"
@@ -163,11 +167,13 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P166-PERF01",
       "content": {
-        "lead": "Rastgele kelime listesi öğrenciden öğrenciye değişir; tek bir hazır tahmin zorunlu değildir.",
+        "lead": "Öğrencinin seçtiği rastgele kelimeler esastır; hazır kelime listesi veya hazır konu sonucu verilmez.",
         "items": [
-          "Göz gezdirerek kelime ve kelime gruplarını işaretleyin.",
-          "Anlam alanlarına ayırın.",
-          "Konu ve dil–anlatım için ayrı tahminler kurun."
+          "Göz gezdirerek kendi kelime ve kelime gruplarınızı seçin.",
+          "Seçtiklerinizi kendi anlam alanlarınıza ayırın.",
+          "Kelime kanıtından konu tahmini kurun.",
+          "Ayrı bir dil–anlatım tahmini yazın.",
+          "Tam okumadan sonra tahmininizi kontrol edin."
         ]
       },
       "density": "compact"
@@ -180,11 +186,13 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P166-PERF02",
       "content": {
-        "lead": "Uzun betimlemeleri anlam gruplarına ayırın; Mümtaz ve Nuran'ın görüşlerini ayrı izleyin.",
+        "lead": "Metne göz gezdirmede fark ettiğiniz gerçek özelliğe göre strateji seçin; romanın sonraki çözümlemelerini önceden cevap olarak vermeyin.",
         "items": [
-          "Mekân ve musiki söz varlığını işaretleyin.",
-          "Düşünsel bölümlerde yavaşlayın.",
-          "Diyaloglarda konuşmacı değişimini ve anlam vurgusunu koruyun."
+          "Uzun/yoğun cümleleri gerekirse anlam öbeklerine ayırın.",
+          "Bilinmeyen veya dikkat çeken kelimeleri işaretleyin.",
+          "Kişi, mekân ve düşünceler için kısa notlar alın.",
+          "Diyaloglarda konuşmacı değişimini takip edin.",
+          "Anlamı öne çıkaran doğal vurgu, hız ve duraklama kullanın."
         ]
       },
       "density": "compact"
