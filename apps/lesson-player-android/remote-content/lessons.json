@@ -30471,8 +30471,13 @@
           "question_no": "2/b-c",
           "source_locator": "basılı s.252 / PDF s.253 — Metni Anlayalım soru 2/b-c",
           "prompt_summary": "Öğrencinin etkileyici bulduğu kişilik özelliğini ve kendi başarı anlayışını gerekçelendirme",
-          "answer": "Örnek cevap: Beni en çok Sinan’ın bilgi edinmek için sürekli gözlem yapması ve öğrendiğini çalışarak uygulaması etkiliyor. Bu, başarının yalnız yetenekle değil, merak ve emekle de geliştiğini gösteriyor. Ben de başarılı olsaydım güvenilirliğim, sabrım ve iş birliğine açık oluşumla tanınmak isterdim.",
-          "guidance": "Öğrenci başka bir karakter özelliğini seçebilir. Kendi hakkında yaşanmamış başarı veya deneyim iddiası aranmaz; seçtiği özelliği açıklaması yeterlidir."
+          "answer": "2/b ve 2/c kişisel değerlendirme sorularıdır. Rehber, öğrencinin neyin kendisini etkilediğini veya hangi özellikleriyle tanınmak istediğini onun adına belirlememelidir. Metindeki karakter özellikleri yalnız seçim yapmayı destekleyen kanıt havuzu olarak kullanılabilir.",
+          "guidance": "Öğrenci adına 'beni en çok ... etkiledi' veya '... ile tanınmak isterdim' biçiminde kişisel cevap yazmayın. Değerlendirme, öğrencinin gerçek seçimi ve gerekçesine dayanmalıdır.",
+          "answer_sections": {
+            "2b_etkilendigim_ozellik": "Seçtiğim özellik: [...]. Bu özelliği metinde gösteren söz/davranış: [...]. Beni etkileme nedeni: [...].",
+            "2c_taninmak_istedigim_ozellik": "Mimar Sinan gibi başarılı biri olsaydım tanınmak istediğim özellik/özellikler: [...]. Neden: [...].",
+            "metinden_secilebilecek_kanitlar": "Örneğin Sinan'ın öğrenmeye açıklığı, gözlemciliği, çalışkanlığı, azmi, sorumluluğu veya başkasının emeğine saygısı metindeki söz ve davranışlarla tartışılabilir; öğrenci bunlardan birini seçmek zorunda değildir."
+          }
         },
         "content": {
           "lead": "Önce oyunda sizi etkileyen bir özelliği söz veya davranışla gerekçelendirin; ardından kişisel tercihinizi ayrı ifade edin.",
@@ -31068,6 +31073,7 @@
         "layout": "comparison",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence"
         ],
@@ -31092,15 +31098,16 @@
           "question_no": "Fark Edelim 1",
           "source_locator": "basılı s.257 / PDF s.258 — Fark Edelim soru 1",
           "prompt_summary": "Oyundan karakter dilini gösteren bir monolog ve diyalog seçme",
-          "answer": "Monologda Sinan kendi düşüncesini tek başına dile getirir; diyalogda ise Sinan ile hükümdar karşılıklı konuşarak istek ve yanıtı görünür kılar.",
+          "answer": "Monolog için karakterin başka bir kişiyle karşılıklı konuşmadan kendi düşüncesini dile getirdiği bölüm; diyalog için iki kişinin karşılıklı replikleri seçilmelidir.",
           "answer_sections": {
-            "Monolog örneği": "Mimar Sinan’ın “Güzellik, büyüklükten daha güçlüdür.” sözü, Süleymaniye’yi tasarlarken benimsediği düşünceyi tek başına dile getirdiği kısa bir örnektir.",
-            "Diyalog örneği": "8. Ses: “Güzel bir cami, mimarbaşı!” / Mimar Sinan: “Haklısınız hünkârım.” Bu karşılıklı konuşma, hükümdarın isteğini ve Sinan’ın yanıtını gösterir."
+            "Monolog örneği": "Mimar Sinan'ın banttan verilen kendi sesinde Ayasofya'nın mimarlarına seslenerek başarısını yalnız kendisine mal etmediğini ve onları meslektaşı/yurttaşı olarak gördüğünü anlattığı bölüm monolog örneğidir.",
+            "Diyalog örneği": "8. Ses'in “Güzel bir cami, mimarbaşı!” sözüne Mimar Sinan'ın “Haklısınız hünkârım.” diye karşılık verdiği bölüm kısa bir diyalog örneğidir."
           },
           "evidence_quotes": [
             "Güzellik, büyüklükten daha güçlüdür.",
             "Güzel bir cami, mimarbaşı!"
-          ]
+          ],
+          "guidance": "'Güzellik, büyüklükten daha güçlüdür.' cümlesini tek başına monolog diye sınıflandırmayın; bu söz karşılıklı konuşmanın devamındadır. Öğrenci metinden başka doğru monolog ve diyalog örnekleri de seçebilir."
         },
         "content": {
           "lead": "Örneğin nerede başladığını ve kaç konuşmacının rol aldığını kitap üzerinden gösterin. İç sesi, repliği ve sahne yönergesini karıştırmayın.",
@@ -31967,13 +31974,15 @@
           "question_no": "Süreci Değerlendirebilme",
           "source_locator": "basılı s.262 / PDF s.263 — Süreci Değerlendirebilme",
           "prompt_summary": "Oyundaki gündelik insan ilişkilerini tartışıp metni beğeni ölçütleriyle değerlendirme",
-          "answer": "Örnek değerlendirme: Oyunda güven ve sorumluluk ilişkisi, padişahın Sinan’a önemli bir yapı görevi vermesi ve Sinan’ın bunu yerine getirmesiyle; mesleki dayanışma, Lütfü Paşa’nın yeteneğini fark edip onu önermesiyle görünür. Sinan’ın önceki mimarlara saygı duyması da rekabet içinde nezaketin mümkün olduğunu gösterir. Benim için sahne yönergeleri ve müzik, bu ilişkileri etkileyici kılan başlıca unsurlardır.",
+          "answer": "Bu değerlendirme sınıftaki beyin fırtınası ve öğrencinin kendi beğeni ölçütleriyle tamamlanmalıdır. Rehber günlük insan ilişkilerine ilişkin metin kanıtlarını gösterebilir; ancak hangi unsurun öğrenci için etkileyici olduğunu önceden belirlemez.",
           "answer_sections": {
-            "Etkileyicilik": "Kitaptaki örnekte olduğu gibi müzik ve ışık geçişlerini belirten sahne yönergeleri olayların duygusunu güçlendirir.",
-            "İnsan ilişkileri": "Görev verme ve güvenme, yeteneği fark etme, sözüne bağlı kalma ve önceki ustalara saygı gösterme.",
-            "Örnek ölçüt": "Öğrenci seçtiği ölçüte (ör. karakter inandırıcılığı, tarihî atmosfer, sahneleme) metinden örnek göstermelidir."
+            "gunluk_insan_iliskileri_icin_olasi_kanitlar": "Görev verme ve güvenme, yeteneğin fark edilmesi, sözüne bağlı kalma, başkasının emeğine saygı gösterme gibi ilişkiler metinden kanıtlarla tartışılabilir.",
+            "benim_olcutum": "[...]",
+            "metinden_ornegim": "[...]",
+            "begendim_begenmedim": "[...]",
+            "gerekcem": "[...]"
           },
-          "guidance": "Beğeni kişiseldir. Farklı değerlendirmeler, metinden uygun bir örnekle gerekçelendirildiğinde kabul edilir."
+          "guidance": "Öğrenci adına 'benim için müzik ve ışık en etkileyici' gibi bir beğeni yazmayın. Kitapta verilen örnek ölçüt de öğrencinin kendi tablosunu doldurması için modeldir; tek doğru değerlendirme değildir."
         },
         "content": {
           "lead": "Kitabın etkileyicilik örneğini inceleyin; başka ölçütleri öğrenciler belirlesin. Her biri için oyun içinden kanıt isteyin.",
@@ -32077,8 +32086,13 @@
           "question_no": "Sıra Sizde 1",
           "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 1",
           "prompt_summary": "Canlandırılacak karakteri seçip gerekçelendirme",
-          "answer": "Örnek cevap: Mimar Sinan’ı canlandırmak isterdim; çünkü meraklı oluşu, gözlemlediklerini çalışarak geliştirmesi ve başarıyı tek başına sahiplenmemesi sahnede farklı duygu ve tutumları göstermek için olanak sağlar.",
-          "guidance": "Başka bir karakter seçilebilir. Gerekçe, oyundaki söz veya davranışla ilişkilendirilmelidir."
+          "answer": "Canlandırılacak karakter öğrencinin kişisel tercihidir. Cevap, seçilen karakterin adını ve bu tercihi destekleyen metindeki bir söz, davranış veya özellik kanıtını içermelidir.",
+          "guidance": "Mimar Sinan veya başka bir karakteri öğrenci adına seçmeyin.",
+          "answer_sections": {
+            "canlandirmak_istedigim_karakter": "[...]",
+            "metindeki_kanit": "[...]",
+            "secme_gerekcem": "[...]"
+          }
         },
         "content": {
           "lead": "Seçilen karakteri bir replik, davranış veya hedefle ilişkilendirin; tek doğru karakter aranmaz."
@@ -32114,9 +32128,16 @@
           "question_no": "Sıra Sizde 2",
           "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 2",
           "prompt_summary": "Seçilen tiyatro kişisinin günlük yaşamda karşılaşabileceği duruma uygun kısa senaryo yazma",
-          "answer": "Örnek senaryo: Bir öğrenci ekibi okulun ortak kullanım alanı için tasarım hazırlamaktadır. İlk taslak güvenli ve kullanışlı değildir. Sinan’ı örnek alan ekip üyesi, alanı yeniden ölçer, farklı tasarımları inceler ve arkadaşlarının önerilerini dinleyerek planı düzeltir. Sonunda grup çalışmayı birlikte tamamlayıp herkesin kullanabileceği bir çözüm sunar.",
-          "guidance": "Senaryo kurmacadır; karakterin metinde görülen niteliğini (ör. gözlem, sabır, sorumluluk) günlük bir duruma taşıması yeterlidir.",
-          "explanation": "Bu, tarihî Sinan’ın yaşadığı bir olay değildir; onun oyunda görülen gözlem, sabır ve sorumluluk özelliklerini güncel bir duruma taşıyan hayalî bir senaryodur."
+          "answer": "Öğrenci, seçtiği kişinin metinde görülen bir özelliğini günlük hayatta karşılaşılabilecek yeni bir duruma taşıyan kısa ve tutarlı bir senaryo kurmalıdır. Hazır senaryo yerine yapı iskelesi verilmelidir.",
+          "guidance": "Senaryo kurmaca olabilir; fakat öğrenci adına tam bir olay örgüsü üretip teslim edilecek cevap gibi sunmayın. Yeni davranış, karakterin metinde görülen niteliğiyle çelişmemelidir.",
+          "explanation": "Bu, tarihî Sinan’ın yaşadığı bir olay değildir; onun oyunda görülen gözlem, sabır ve sorumluluk özelliklerini güncel bir duruma taşıyan hayalî bir senaryodur.",
+          "answer_sections": {
+            "sectigim_kisi": "[...]",
+            "metinde_gorulen_ozellik": "[...]",
+            "gunluk_hayat_durumu": "[...]",
+            "karakter_bu_durumda_nasil_davranirdi": "[...]",
+            "metinle_tutarlilik_kaniti": "[...]"
+          }
         },
         "content": {
           "lead": "Hayalî senaryonuzun gerçek oyunda yaşanmış bir sahne olmadığını açık tutun.",
