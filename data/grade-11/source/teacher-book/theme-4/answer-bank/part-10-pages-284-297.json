@@ -11,8 +11,14 @@
       "question_no": "1",
       "source_locator": "basılı s.284 / PDF s.285 — Konuya Başlarken soru 1",
       "prompt_summary": "Kişisel yaşantıdan hareketle edebiyat-toplum ilişkisini açıklama",
-      "answer": "Örnek cevap: Edebiyat, yaşadığımız çevredeki ilişkileri ve değişimleri seçerek anlatır; okur da kendi deneyimiyle metin arasında bağ kurar. Örneğin kuşakların teknolojiye veya işe ayırdığı zamana farklı yaklaşması bir öyküde işlenebilir. Böylece kişisel bir yaşantı toplumsal bir durumu düşünmeye açılır; ancak tek bir eser toplumun bütününü temsil etmez.",
-      "guidance": "Bu bir kişisel yorum sorusudur. Örnek cevap öğrencinin yaşantısı gibi sunulmamalı; öğrenci kendi seçtiği ilişki veya durumu yazmalıdır."
+      "answer": "Bu soru öğrencinin kendi yaşamından hareketle edebiyat-toplum ilişkisini açıklamasını ister. Rehber öğrenci adına teknoloji, kuşak ilişkisi veya başka bir yaşanmış durum seçmez.",
+      "guidance": "Öğrenci adına kişisel deneyim uydurmayın. Farklı yaşam örnekleri kabul edilir; sonuç, seçilen örnekle edebiyat-toplum bağını açıklamalıdır.",
+      "answer_sections": {
+        "kendi_yasamimdan_gozlem_veya_durum": "[...]",
+        "bu_durumun_toplumsal_yonu": "[...]",
+        "edebiyatta_nasil_islenebilir": "[...]",
+        "edebiyat_toplum_iliskisine_dair_sonucum": "[...]"
+      }
     },
     {
       "question_id": "T4-P284-Q02",
@@ -39,8 +45,8 @@
       "question_no": "2",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
       "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
-      "answer": "Örnek tahmin: “Fedakârlık” başlığı ve toprakla çalışan bir kişiyi gösteren küçük görsel, bir kişinin emek vererek başka insanlara ya da ortak bir amaca katkıda bulunacağı izlenimini verebilir. Bu yalnızca başlık ve görselden doğan tahmindir; videoda gerçekten ne anlatıldığı izleme sonrasında belirlenmelidir.",
-      "guidance": "Tahminleri video izlendikten sonra geriye dönük olarak kesin bilgi gibi yazmayın."
+      "answer": "Olası tahmin: 'Fedakârlık' başlığı ile görselde ray/demir yolu hattı çevresinde fiziksel bir çalışma görülmesi, emek, sorumluluk veya bir güçlüğü giderme çevresinde bir içerik olabileceğini düşündürebilir. Bu yalnız başlık ve görselden yapılan ön tahmindir; kişi, olay, amaç ve sonuç video izlenmeden kesinleştirilmez.",
+      "guidance": "Görseli 'toprakla çalışan bir kişi' diye kesinleştirmeyin. Görülebilen unsuru betimleyin; fedakârlığın kim tarafından, kime karşı ve nasıl gerçekleştiğini videodan önce uydurmayın."
     },
     {
       "question_id": "T4-P285-Q03",
@@ -128,8 +134,14 @@
       "question_no": "1",
       "source_locator": "basılı s.287 / PDF s.288 — Metni Anlayalım soru 1 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Anadolu insanının özelliklerini Fedakârlık videosundaki örneklerle eşleştirme",
-      "answer": "Bu soru video davranışlarına dayanır. EBA kaydı açılamadığı için hangi karakter özelliğinin hangi sahnede görüldüğü belirlenemez. Öğrenci, ön bilgilerini kullanarak bir özellik seçmeli; ardından videoda gördüğü belirli bir davranışla bu özelliği doğrulamalı veya gözleminin beklentisinden farklı olduğunu belirtmelidir.",
-      "guidance": "Çalışkanlık, dayanışma veya sabır gibi genel özellikler ancak videoda gözlenen kanıtla eşleşiyorsa yazılmalıdır."
+      "answer": "Bu soru doğrudan Fedakârlık videosunda gözlenen davranışlara dayanır. Kayıt görülmeden Anadolu insanına veya videodaki kişilere belirli özellikler atanamaz.",
+      "guidance": "Çalışkanlık, dayanışma, sabır veya başka bir özelliği önceden hazır seçenek gibi yönlendirmeyin; özellik önce videodaki gerçek davranıştan çıkarılmalıdır.",
+      "answer_sections": {
+        "videoda_gozledigim_davranis": "[...]",
+        "bu_davranistan_cikardigim_ozellik": "[...]",
+        "gerekcem": "[...]",
+        "on_bilgimle_karsilastirma": "Beklentimle örtüştü / farklılaştı çünkü: [...]"
+      }
     },
     {
       "question_id": "T4-P288-Q02",
