@@ -238,6 +238,18 @@ assert(dialogueById.get("s225-reference")?.answer === null &&
   dialogueById.get("s228-reflection")?.answer?.guidance?.includes("QR") &&
   dialogueById.get("s229-self")?.answer?.entry_type === "performance_support",
   "Kitap referansı, QR rubrik sınırı ve gerçek öz değerlendirme korunmalı.");
+const writing225229Text = dialogueWriting.steps
+  .map(step => JSON.stringify({ answer: step.answer, content: step.content }))
+  .join("\n");
+for (const forbidden of ["Başusta", "genç çırak", "gizli atölye", "silah parçası", "devriye sesleri"]) {
+  assert(!writing225229Text.includes(forbidden),
+    `s.225–229 QR kaydında doğrulanmayan hazır ayrıntı bulunmamalı: ${forbidden}`);
+}
+assert(!dialogueById.get("s229-self")?.answer?.answer?.includes("(Evet)") &&
+  !dialogueById.get("s229-self")?.answer?.answer?.includes("(Kısmen)"),
+  "s.229 öz değerlendirme öğrenci adına önceden işaretlenmemeli.");
+assert(dialogueById.get("s227-rules")?.content?.items?.length === 11,
+  "s.227–228 Kural Uygulayabilme bölümündeki 11 görünür kural flow'da korunmalı.");
 for (const step of dialogueWriting.steps) {
   assert(step.source.source_status === "VERIFIED",
     `s.225–229 kitap doğrulaması: ${step.source.source_record_id}`);
@@ -287,6 +299,19 @@ for (const id of ["s234-q14","s234-q15"]) {
   assert(t3AssessmentById.get(id)?.answer?.entry_type === "source_limited",
     `Aile Bağları QR videosu olmadan cevap kesinleştirilmemeli: ${id}`);
 }
+const aile14 = t3AssessmentById.get("s234-q14")?.answer;
+const aile15 = t3AssessmentById.get("s234-q15")?.answer;
+for (const forbidden of ["kuşak çatışması", "aile evi", "günün saati", "mevsim"]) {
+  assert(!JSON.stringify({ aile14, aile15 }).toLocaleLowerCase("tr").includes(
+    forbidden.toLocaleLowerCase("tr")
+  ), `Aile Bağları videosu görülmeden yapım ayrıntısı uydurulmamalı: ${forbidden}`);
+}
+assert(!t3AssessmentById.get("s232-q7")?.answer?.answer?.includes("Süleyman Efendi") &&
+  !t3AssessmentById.get("s232-q7")?.answer?.answer?.includes("tramvay"),
+  "s.232 Orhan Veli cevabı bu sayfalarda verilmeyen dış örneklere yaslanmamalı.");
+assert(!t3AssessmentById.get("s235-q16")?.answer?.answer?.includes("tahsili") &&
+  !t3AssessmentById.get("s235-q16")?.answer?.answer?.includes("şiir hevesi"),
+  "s.235 I ve V parçalarına kaynakta görünmeyen biyografik ayrıntı eklenmemeli.");
 for (const step of theme3Assessment.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 3 s.230–235 doğrulanmış kaynak: ${step.source.source_record_id}`);
