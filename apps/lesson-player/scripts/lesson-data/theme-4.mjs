@@ -584,4 +584,69 @@ for (const step of theme4Assessment.steps) {
     `Tema 4 s.303–307 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 
+
+// Master-prompt regressions: personal/open responses stay student-owned and source bounds stay strict.
+assert(!theme4IntroById.get("s239-q3")?.answer?.answer?.includes("farklı okurlar") &&
+  theme4IntroById.get("s239-q3")?.answer?.guidance?.includes("metnin açıkça"),
+  "s.239 sanatsal metin cevabı kaynak metni aşan alımlama kuramına genişlememeli.");
+assert(theme4IntroById.get("s239-q4")?.answer?.answer?.includes("gerçek yaşantı") &&
+  !theme4IntroById.get("s239-q4")?.answer?.answer?.includes("ayrılık"),
+  "s.239 kişisel yaşantı sorusunda öğrenci adına deneyim uydurulmamalı.");
+assert(theme4IntroById.get("s239-q5")?.answer?.answer_sections?.sectigim_tur === "[...]",
+  "s.239 tür seçimi öğrenci adına doldurulmamalı.");
+
+assert(!JSON.stringify(mimarReadingById.get("s247-vocab")?.answer).includes("başbakan") &&
+  JSON.stringify(mimarReadingById.get("s247-vocab")?.answer).includes("başvezir"),
+  "s.247 tarihî sadr-ı âzam karşılığı modern makam adıyla değiştirilmemeli.");
+assert(mimarReadingById.get("s248-prediction")?.answer?.answer_sections?.okumadan_onceki_tahminim?.includes("daha önce yazdığı gerçek tahmin"),
+  "s.248 okuma öncesi tahmin geriye dönük üretilmemeli.");
+
+assert(!mimarAnalysisById.get("s252-q2bc")?.answer?.answer?.includes("Beni en çok") &&
+  mimarAnalysisById.get("s252-q2bc")?.answer?.guidance?.includes("Öğrenci adına"),
+  "s.252 kişisel özellik ve başarı tercihi öğrenci adına yazılmamalı.");
+assert(!mimarStructureById.get("s257-q1")?.answer?.answer_sections?.["Monolog örneği"]?.includes("Güzellik, büyüklükten daha güçlüdür") &&
+  mimarStructureById.get("s257-q1")?.answer?.guidance?.includes("karşılıklı konuşmanın devamındadır"),
+  "s.257 karşılıklı konuşma cümlesi monolog diye sınıflandırılmamalı.");
+
+assert(mimarValuesById.get("s262-assessment")?.answer?.answer_sections?.begendim_begenmedim === "[...]" &&
+  mimarValuesById.get("s262-q1")?.answer?.answer_sections?.canlandirmak_istedigim_karakter === "[...]",
+  "s.262 beğeni ve karakter tercihi öğrenci adına sabitlenmemeli.");
+assert(mimarValuesById.get("s262-q2")?.answer?.answer_sections?.gunluk_hayat_durumu === "[...]",
+  "s.262 yaratıcı senaryo hazır öğrenci ürünü yerine iskelet olarak kalmalı.");
+
+assert(!JSON.stringify(merdivenIntroById.get("s263-q")?.answer).includes("Nihat") &&
+  merdivenIntroById.get("s263-q")?.answer?.answer_sections?.hikaye_yazmak_istedigim_yasam_donemi === "[...]",
+  "s.263 yaratıcı hikâye görevi rehber tarafından tamamlanmamalı.");
+assert(merdivenCompareById.get("s272-q2")?.answer?.answer_sections?.tercihim?.includes("Tiyatro / hikâye") &&
+  merdivenCompareById.get("s273-q2")?.answer?.answer_sections?.daha_cok_etkilendigim_hikaye === "[...]",
+  "s.272–273 kişisel tür ve beğeni tercihleri açık uçlu kalmalı.");
+assert(!JSON.stringify(merdivenDeepById.get("s277-q2")?.answer).includes("Ben olsaydım") &&
+  merdivenDeepById.get("s279-assessment")?.answer?.answer_sections?.begendim_begenmedim === "[...]",
+  "s.277 ve s.279 kişisel değer/beğeni cevapları öğrenci adına üretilmemeli.");
+
+assert(theatreWorkshopById.get("s283-q1")?.answer?.answer_sections?.rol_hazirliginda_hissettiklerim === "[...]" &&
+  theatreWorkshopById.get("s283-q2")?.answer?.answer_sections?.rol_arkadasimin_soyledigi_guclu_yon === "[...]" &&
+  theatreWorkshopById.get("s283-q3")?.answer?.answer_sections?.korumak_istedigim_guclu_yon === "[...]",
+  "s.283 öz/akran değerlendirmesinde yaşanmamış performans geçmişi uydurulmamalı.");
+
+assert(!anadoluById.get("s285-q2")?.answer?.answer?.includes("toprakla çalışan") &&
+  anadoluById.get("s285-q2")?.answer?.guidance?.includes("ray"),
+  "s.285 görseli toprakta çalışan kişi diye yanlış kesinleştirilmemeli.");
+assert(anadoluById.get("s287-q1")?.answer?.entry_type === "source_limited" &&
+  anadoluById.get("s287-q1")?.answer?.answer_sections?.videoda_gozledigim_davranis === "[...]",
+  "s.287 karakter özelliği video görülmeden hazır sonuç olarak verilmemeli.");
+
+assert(posterById.get("s299-q1")?.answer?.answer_sections?.ilk_dikkatimi_ceken_unsur === "[...]" &&
+  posterById.get("s302-q1")?.answer?.answer_sections?.surecte_degisen_nokta === "[...]" &&
+  posterById.get("s302-q3")?.answer?.answer_sections?.kullandigim_gorsel_veya_alinti === "[...]",
+  "s.299 ve s.302 kişisel afiş deneyimi öğrenci adına doldurulmamalı.");
+
+assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.sectigim_duygu === "[...]" &&
+  !JSON.stringify(theme4AssessmentById.get("s305-q5")?.answer).includes("Kiraz"),
+  "s.304–305 kişisel duygu tercihi ve görsel türü gereksiz biçimde kesinleştirilmemeli.");
+assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
+  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.videoda_gozledigim_kisi_veya_davranis === "[...]" &&
+  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.videodan_gercek_ornek === "[...]",
+  "s.307 Aidiyet cevapları video kanıtı olmadan doldurulmamalı.");
+
 }
