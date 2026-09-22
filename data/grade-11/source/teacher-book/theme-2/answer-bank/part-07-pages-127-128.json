@@ -10,16 +10,17 @@
       "printed_page": 127,
       "question_no": "1",
       "prompt_summary": "Dîvânu Lugâti’t-Türk örneklerinde görülen ortak kültürel değerler",
-      "answer": "Dîvânu Lugâti’t-Türk'ün sözlük bölümünden alınan örnek maddelerde Türk dünyasının kadim ahlakını, inanç dünyasını ve sosyal hayatını yansıtan ortak kültürel değerler:",
+      "answer": "Dîvânu Lugâti’t-Türk'teki örnek maddeler, yalnız kelime anlamlarını değil dönemin öğüt, iyilik, borç-alacak ilişkisi, yeme-içme, sağlık/tedbir, zaman ve inanç gibi kültürel alanlarını da yansıtır.",
       "source_locator": "basılı s.125-127 / PDF s.126-128 — soru 1",
       "answer_sections": {
-        "Hikmet Arayışı ve Terbiye (ögüt)": "Büyüklere hürmet etme, öğüt dinleme, edep ve erdem sahibi olarak kavme bilgeliğiyle rehberlik etme ideali.",
-        "İyilik, Cömertlik ve Misafirperverlik (eḍgü)": "Akraba ve komşuları ağırlama, ikramda bulunma; kabul edilen hediyeye daha güzeliyle karşılık vererek sosyal bağları güçlendirme ahlakı.",
-        "Borç ve Hak Hukuku Sorumluluğu (alım)": "Borcun insan onuru üzerindeki ağırlığı; alacaklının vakarı ile borçlunun mahcubiyetini vurgulayan dürüstlük ve mesuliyet anlayışı.",
-        "Kanaat, Tokgözlülük ve Edep (āç)": "Nimetin kıymetini bilme; açgözlülükten ve tokluğun getirdiği kibre kapılıp nimeti ayıplamaktan sakınma terbiyesi.",
-        "Tabiat Bilgisi, Tedbirlilik ve Sağlık (aŋduz)": "Bozkırın zorlu şartlarında atların tedavisinde kullanılan andız otu üzerinden yolculuğa ve hayata daima tedbirli çıkma bilinci.",
-        "İnanç, Ölüm ve Sonsuzluk Tasavvuru (ö.ḍ ve uçma.k)": "Zamanın akıcılığı, insanın faniliği, cennet inancı ve tabiatın dirilişiyle ahiret hayatı arasında kurulan manevi bağ."
-      }
+        "Öğüt ve Bilgelik — ögüt": "“Benden öğüt al...” örneği, bilgi ve terbiyenin kuşaktan kuşağa aktarılmasına verilen önemi gösterir.",
+        "İyilik ve Ağırlama — eḍgü": "Yakınlara iyilik etme, onları ağırlama ve alınan hediyeye karşılık verme öğütlenir.",
+        "Borç–Alacak — alım": "Alacaklı ve borçlu arasındaki ilişki bir atasözüyle somutlaştırılır; ekonomik ilişkilerin dilde atasözlerine yansıdığı görülür.",
+        "Açlık ve Tokluk — āç": "Aç ve tok kişinin davranışını karşılaştıran atasözü, gündelik hayat deneyiminin kalıplaşmış söze dönüşmesine örnektir.",
+        "Sağlık ve Tedbir — aŋduz": "Andız otunun at tedavisinde kullanılması ve yolculuğa çıkana tedbirli olma öğüdü, dönemin pratik bilgisini gösterir.",
+        "Zaman ve İnanç — öḍ / uçma.k": "Zamanın geçişi, insanın faniliği ve “uçmak” kelimesinin cennet anlamı, dönemin düşünce ve inanç dünyasına ilişkin ipuçları taşır."
+      },
+      "guidance": "Her sözlük maddesinden geniş bir ahlak sistemi çıkarmayın. Önce maddede açıkça verilen anlam, atasözü veya açıklamayı gösterin; kültürel yorumu bununla sınırlı tutun."
     },
     {
       "question_id": "T2-P127-Q02",
@@ -27,12 +28,20 @@
       "printed_page": 127,
       "question_no": "2",
       "prompt_summary": "Dîvânu Lugâti’t-Türk'ün dil bilimi açısından önemi",
-      "answer": "Dîvânu Lugâti’t-Türk; 11. yüzyılda Kâşgarlı Mahmud tarafından yazılmış, Türk dil bilimi (türkoloji) tarihinin tartışmasız en büyük kurucu eseridir:\n\n1. İlk Karşılaştırmalı Türk Lehçeleri Sözlüğü: Kâşgarlı Mahmud, Türk boylarının (Oğuz, Karluk, Çigil, Yağma, Kırgız vb.) yaşadığı coğrafyaları adım adım gezerek dil malzemesini bizzat kaynağından derlemiştir.\n2. Bilimsel Fonetik ve Gramer Kuralları: Eser yalnızca kelime anlamlarını vermez; ses denkliklerini (d/z, b/w değişimleri), harf çevrim kurallarını, eklerin işlevlerini ve morfolojik yapıları çağdaş dil bilim standartlarında açıklar.\n3. Yaşayan Bağlam Yöntemi: Sözcükleri soyut tanımlarla bırakmamış; her kelimeyi o dönemin atasözleri (sav), şiirleri (koşuk/sagu) ve halk söyleyişleriyle örneklendirerek kelimelerin canlı kullanım alanlarını belgelemiştir.\n4. Türkçenin Üstünlüğünün İspatı: Türkçenin zenginliğini, anlatım gücünü ve inceliğini ortaya koyarak dönemin kültür dili olan Arapça karşısında Türk dilinin yüksek itibarını kanıtlamıştır.",
+      "answer": "Dîvânu Lugâti’t-Türk, farklı Türk boy ve topluluklarının dil malzemesini derlemesi, kelimeleri anlamlarıyla kaydetmesi ve bunları atasözü, şiir ve nesir örnekleriyle göstermesi bakımından Türk dili araştırmaları için çok önemli bir kaynaktır.",
       "evidence_quotes": [
         "onların ülkelerini ve bozkırlarını inceledim",
         "her boyun dili bende en mükemmel şeklini buldu"
       ],
-      "source_locator": "basılı s.125-127 / PDF s.126-128 — soru 2"
+      "source_locator": "basılı s.125-127 / PDF s.126-128 — soru 2",
+      "answer_sections": {
+        "Saha ve Dil Derlemesi": "Kâşgarlı Mahmud, “onların ülkelerini ve bozkırlarını inceledim” diyerek farklı toplulukların dillerini yerinde araştırdığını belirtir.",
+        "Karşılaştırmalı Malzeme": "Türk, Türkmen, Oğuz, Çigil, Yağma ve Kırgız gibi farklı toplulukların dil özelliklerini bir araya getirir; bu durum lehçeler arası karşılaştırma için tarihî veri sağlar.",
+        "Sözlük Düzeni": "Kelimeleri belirli bir düzende verir; anlamlarını açıklayarak arayan kişinin kelimeyi bulmasını amaçlar.",
+        "Bağlamlı Örnekleme": "Atasözleri, şiirler, seciler ve nesir örnekleri sayesinde kelimelerin yalnız anlamını değil kullanım bağlamını da kaydeder.",
+        "Dil Tarihi İçin Önemi": "11. yüzyıl Türkçesinin söz varlığı, lehçe çeşitliliği ve kullanım örnekleri hakkında doğrudan malzeme sunar."
+      },
+      "guidance": "“Tartışmasız en büyük kurucu eser”, “çağdaş dil bilim standartları”, “Türkçenin Arapçaya üstünlüğünü ispat” gibi değerlendirmeleri kitap parçasının zorunlu cevabı hâline getirmeyin."
     },
     {
       "question_id": "T2-P127-Q03",
@@ -40,12 +49,17 @@
       "printed_page": 127,
       "question_no": "3",
       "prompt_summary": "Edgü örneğinden hareketle hediyeleşme ve yakınları ağırlama",
-      "answer": "“Eḍgü” (iyi/iyilik) maddesinde geçen beyit, Türk kültüründe akrabalık, komşuluk ve sosyal dayanışmanın ahlaki temelini özetler:\n\n• Yakınları Ağırlama ve Misafirperverlik: Beyitte 'Yakınlarına iyilik et ve onları ağırla.' denilerek soydaşlara, komşulara ve misafirlere izzet-i ikramda bulunmanın bir lütuf değil, insanî ve ahlakî bir ödev olduğu belirtilir. Bu gelenek, toplumsal birliğin ve huzurun teminatıdır.\n• Hediyeleşmede Karşılıklılık ve İncelik: 'Hediye kabul ettiğin zaman güzel bir şeyle karşılığını hazırla.' öğüdü; hediyeyi tek taraflı bir menfaat veya minnet vesilesi olmaktan çıkarıp karşılıklı sevgi, hürmet ve denge ilişkisine dönüştürür. Hediyeye daha güzeliyle mukabele etmek, Türk edep ve zarafetinin köklü bir göstergesidir.",
+      "answer": "“Eḍgü” maddesindeki beyit, yakınlara iyilik etmenin ve onları ağırlamanın değerli görüldüğünü; hediye kabul edildiğinde karşılık vermenin de karşılıklı ilişkiyi ve nezaketi sürdürmenin bir yolu sayıldığını gösterir.",
       "evidence_quotes": [
         "Yakınlarına iyilik et ve onları ağırla.",
         "Hediye kabul ettiğin zaman güzel bir şeyle karşılığını hazırla."
       ],
-      "source_locator": "basılı s.126-127 / PDF s.127-128 — soru 3"
+      "source_locator": "basılı s.126-127 / PDF s.127-128 — soru 3",
+      "answer_sections": {
+        "Yakınları Ağırlama": "“Yakınlarına iyilik et ve onları ağırla.” sözü, yakın çevreyle ilgilenme ve misafirperverlik anlayışını yansıtır.",
+        "Hediyeleşmede Karşılıklılık": "“Hediye kabul ettiğin zaman güzel bir şeyle karşılığını hazırla.” sözü, hediyeleşmenin karşılıklı bağ kuran bir davranış olarak görüldüğünü gösterir."
+      },
+      "guidance": "Beyitten “toplumsal huzurun teminatı”, “ahlaki ödev” gibi daha geniş sonuçlar çıkarmak yerine verilen iki açık öğüt üzerinden ilerleyin."
     },
     {
       "question_id": "T2-P127-Q04",
@@ -63,8 +77,14 @@
       "printed_page": 127,
       "question_no": "5",
       "prompt_summary": "Uçmak kelimesinin geçtiği şiirin türünü belirleme",
-      "answer": "“Uçma.k” (cennet) kelimesinin geçtiği dörtlük, İslamiyet öncesi Türk sözlü edebiyatı geleneğindeki koşuk türünün kusursuz bir örneğidir:\n\n• Gerekçe: Şiirde kış mevsiminin sona ermesi, baharın gelişi, rengârenk çiçeklerin ipek halı gibi serilmesi ve tabiatın bir cennet bahçesine dönüşmesi tasvir edilmektedir. 10. sınıf Türk dili ve edebiyatı müfredatında öğrenildiği üzere; sığır ve şölen törenlerinde kopuz eşliğinde söylenen, tabiat güzelliklerini, baharı, sevgiyi ve coşkuyu işleyen hece ölçülü lirik nazım şekline 'koşuk' denir. Metindeki dörtlük de tam bir bahar koşuğudur.",
-      "source_locator": "basılı s.126-127 / PDF s.127-128 — soru 5"
+      "answer": "“Uçma.k” kelimesinin geçtiği dörtlük, 10. sınıfta öğrenilen özelliklerden hareketle koşuk olarak değerlendirilebilir. Şiirde baharın gelişi, çiçeklerin açması ve tabiat güzelliği anlatıldığı için koşuklarda görülen tabiat ve mevsim temasına uygundur.",
+      "source_locator": "basılı s.126-127 / PDF s.127-128 — soru 5",
+      "answer_sections": {
+        "Tür": "Koşuk",
+        "Gerekçe": "Dörtlük tabiatın canlanmasını ve bahar güzelliğini coşkulu/lirik bir söyleyişle anlatır; bu içerik koşuk türüyle ilişkilendirilir.",
+        "Sınır": "Bu kısa parçadan şiirin hangi törende söylendiği, ölçüsü veya ezgisi doğrudan görülemez; bunlar 10. sınıf tür bilgisinden gelen genel özelliklerdir."
+      },
+      "guidance": "Türü belirlerken önce verilen dörtlüğün gerçek içeriğini kullanın; türün bütün tarihî özelliklerini bu parçadan doğrudan çıkmış gibi göstermeyin."
     },
     {
       "question_id": "T2-P127-Q06",
@@ -72,18 +92,19 @@
       "printed_page": 127,
       "question_no": "6",
       "prompt_summary": "Kül Tigin Âbidesi ile Dîvânu Lugâti’t-Türk'ü dil, anlatım ve yazılış amacı bakımından karşılaştırma",
-      "answer": "Kül Tigin Âbidesi ile Dîvânu Lugâti’t-Türk eserlerinin dil, anlatım ve yazılış amaçları bakımından karşılaştırmalı tablosu:",
+      "answer": "İki eser de Türk dili ve kültürü için temel tarihî kaynaklardır; fakat türleri, anlatım biçimleri ve yazılış amaçları farklıdır.",
       "source_locator": "basılı s.127 / PDF s.128 — soru 6",
       "answer_sections": {
         "kul_tigin": {
-          "dil_anlatim": "8. yüzyıl Göktürk Türkçesinin arı ve yalın söz varlığı; sert granit taşa kazınmış, hitabet ateşi yüksek, ritmik aliterasyonlara, seslenişlere ve karşıtlıklara dayalı buyurgan ve lirik bir söylev dili.",
-          "yazilis_amaci": "Devletin kuruluş ve toparlanma tarihini kayda geçirmek, Kül Tigin'in kahramanlığını ebedîleştirmek, Türk milletine töreyi ve bağımsızlığı korumaları için hesap verip vasiyette bulunmak."
+          "dil_anlatim": "Kısa, doğrudan ve hitabet gücü yüksek bir yazıt dilidir; seslenme, emir/uyarı, tekrar ve karşıtlıklardan yararlanır.",
+          "yazilis_amaci": "Tarihî olayları ve devlet tecrübesini kaydetmek, millete öğüt vermek, Kül Tigin'i anmak ve sözleri kalıcılaştırmak."
         },
         "divanu_lugatit_turk": {
-          "dil_anlatim": "11. yüzyıl Karahanlı Türkçesi ve lehçelerinin zengin söz varlığı; Arapça açıklamalı, alfabetik ve sistematik bir sözlük düzeni; tanımları atasözleri, şiirler ve gramer kurallarıyla tahkim eden bilimsel ve öğretici anlatım.",
-          "yazilis_amaci": "Türkçenin Arapça kadar zengin, incelikli ve köklü bir medeniyet dili olduğunu kanıtlamak; Araplara Türk dilini öğretmek ve Türk dünyasının söz varlığı ile kültürel zenginliğini ebedî bir hazine olarak kayıt altına almak."
+          "dil_anlatim": "Açıklayıcı ve öğretici bir sözlük düzeni vardır; kelimeler tanımlanır ve atasözü, şiir veya nesir örnekleriyle kullanımları gösterilir.",
+          "yazilis_amaci": "Farklı Türk topluluklarının söz varlığını ve dil özelliklerini kaydetmek, kelimeleri düzenli bir sözlükte öğretmek/tanıtmak ve eseri kalıcı bir hazine hâline getirmek."
         }
-      }
+      },
+      "guidance": "Dîvânu Lugâti’t-Türk için “Türkçenin Arapça kadar üstün olduğunu kanıtlamak” gibi kitap parçasında doğrudan kurulmamış amaçları zorunlu cevap yapmayın."
     },
     {
       "question_id": "T2-P127-Q07",
@@ -91,15 +112,15 @@
       "printed_page": 127,
       "question_no": "7",
       "prompt_summary": "Türk dilleri sözlüğü hazırlamak için yapılacak çalışmalar",
-      "answer": "Kâşgarlı Mahmud'un saha metodolojisini çağdaş dil bilim ilkeleriyle birleştiren modern bir 'Türk Dilleri ve Lehçeleri Sözlüğü' projesi yol haritası:",
-      "guidance": "Öğrencilerin günümüz teknolojisinden (dijital derlemler, ses kayıtları, yapay zekâ veri tabanları) yararlanırken Kâşgarlı Mahmud'un doğrudan sahaya inen yerinde tespit yaklaşımını örnek almaları sağlanmalıdır.",
+      "answer": "Bir Türk dilleri sözlüğü hazırlamak için önce kapsam belirlenir, güvenilir yazılı ve sözlü kaynaklardan kelimeler toplanır, ana dili konuşurlarından kullanım ve telaffuz örnekleri derlenir, benzer/farklı biçimler karşılaştırılır ve her madde uzman kontrolünden geçirilerek düzenlenir.",
+      "guidance": "IPA, ayrıntılı modern lehçe sınıflandırmaları, yapay zekâ veya belirli ses denklikleri öğretmen zenginleştirmesi olabilir; öğrencinin temel cevabı için zorunlu değildir. Kâşgarlı'nın sahada dil malzemesi toplaması tarihî model olarak kullanılabilir.",
       "source_locator": "basılı s.127 / PDF s.128 — soru 7",
       "answer_sections": {
-        "1. Kapsam, Tasnif ve Lehçe Alanlarının Belirlenmesi": "Türk dil ailesinin modern kolları (Oğuz, Kıpçak, Karluk, Sibirya/Altay, Çuvaş, Saha) sınıflandırılır; taranacak coğrafi bölgeler ve yazı dilleri belirlenir.",
-        "2. Alan Araştırması, Canlı Kaynak Derlemesi ve Metin Taraması": "Kâşgarlı gibi sahadaki kaynak kişilerden sesli/görüntülü derlemeler yapılır; tarihî ve modern edebî eserler taranarak dijital metin külliyatı (korpus) oluşturulur.",
-        "3. Karşılaştırmalı Morfolojik ve Etimolojik Analiz": "Ortak kökten gelen kelimelerin ses denklikleri (örn. taş/tāş, yıl/cıl, ayak/adak) tespit edilir; anlam değişmeleri ve genişlemeleri haritalandırılır.",
-        "4. Madde Başı Standartları ve Kültürel Bağlam": "Her kelime için IPA sesletimi, kökeni, tanımları, atasözü ve edebî cümle örnekleri, bölgesel şive varyantları eksiksiz düzenlenir.",
-        "5. Dijital Veri Tabanı ve Çok Dilli İnteraktif Platform": "Veriler açık erişimli, sesli telaffuz içeren, harita destekli interaktif bir çevrim içi sözlük arayüzünde araştırmacıların ve halkın kullanımına sunulur."
+        "1. Kapsamı Belirleme": "Hangi Türk dilleri/yazı dilleri ve hangi dönemlerin sözlüğe alınacağı kararlaştırılır.",
+        "2. Veri Toplama": "Sözlükler, edebî metinler, günlük kullanım ve ana dili konuşurlarından kelime/örnek cümleler derlenir.",
+        "3. Karşılaştırma": "Aynı veya benzer kökten gelen kelimelerin biçim, anlam ve kullanım farkları kaydedilir.",
+        "4. Madde Yazımı": "Her kelime için anlam, kullanım örneği, telaffuz ve hangi dil/bölgede kullanıldığı belirtilir.",
+        "5. Doğrulama ve Yayın": "Veriler alan uzmanlarınca kontrol edilir; basılı veya dijital, aranabilir bir sözlük hâline getirilir."
       }
     },
     {
@@ -108,11 +129,19 @@
       "printed_page": 127,
       "question_no": "Fark Edelim 1",
       "prompt_summary": "'Kaşgarlı'nın lugatı yazılı bir atlı göçebe medeniyeti müzesidir.' sözünü yorumlama",
-      "answer": "Prof. Dr. Mehmet Kaplan'ın bu tespiti, Dîvânu Lugâti’t-Türk'ün sıradan bir sözlük değil, kapsamlı bir kültür ve medeniyet ansiklopedisi olduğunu mükemmel biçimde özetler:\n\n• Yaşayan Maddi Kültür Müzesi: Eserde at donanımları, eyer takımları, ok ve yay çeşitleri, çadır türleri, giyim kuşam unsurları, av ve savaş aletleri en ince ayrıntısına kadar kelime maddeleriyle kayıt altına alınmıştır. Bu kelimeleri okuyan kişi, 11. yüzyıl bozkır hayatını bir etnografya müzesinde gezer gibi canlı olarak müşahede eder.\n• Manevi ve Sosyal Hayatın Aynası: Atasözleri, inançlar, tedavi usulleri (andız otu), töre kuralları ve sosyal ilişkiler (edgü, alım); bozkır insanının zihniyet dünyasını ve ahlakını yazılı bir sergi hâlinde geleceğe taşımıştır.",
+      "answer": "Mehmet Kaplan'ın “Kaşgarlı'nın lugatı yazılı bir atlı göçebe medeniyeti müzesidir.” sözü, sözlükte kelimelerle birlikte dönemin yaşayışına ait çok çeşitli bilgilerin de korunmuş olmasını vurgular.",
       "evidence_quotes": [
         "Kaşgarlı’nın lugatı yazılı bir atlı göçebe medeniyeti müzesidir."
       ],
-      "source_locator": "basılı s.127 / PDF s.128 — Fark Edelim soru 1"
+      "source_locator": "basılı s.127 / PDF s.128 — Fark Edelim soru 1",
+      "answer_sections": {
+        "Gündelik Hayat ve Maddi Kültür": "erük maddesi meyve adlandırmalarını, aŋduz maddesi at tedavisinde kullanılan bir bitkiyi gösterir.",
+        "Sosyal ve Ahlaki Hayat": "ögüt ve eḍgü maddeleri öğüt verme, yakınları ağırlama ve hediyeleşme gibi davranışları yansıtır.",
+        "Ekonomik İlişkiler": "alım maddesi borç–alacak ilişkisini bir atasözüyle birlikte kaydeder.",
+        "İnanç ve Düşünce": "öḍ ve uçma.k maddeleri zaman, fanilik ve cennet gibi kavramların söz varlığındaki karşılıklarını gösterir.",
+        "Sonuç": "Sözlük, kelimeleri tanımlarken onların kullanıldığı hayat alanlarını da belgelediği için bir kültür müzesi gibi okunabilir."
+      },
+      "guidance": "Verilen parçada görünmeyen çadır, silah, eyer vb. ayrıntıları eserde kesin varmış gibi sıralamak yerine ders kitabında gerçekten gösterilen sözlük maddelerini kanıt olarak kullanın."
     },
     {
       "question_id": "T2-P127-FARK02",
@@ -120,9 +149,14 @@
       "printed_page": 127,
       "question_no": "Fark Edelim 2",
       "prompt_summary": "Dilin arkeolojiden daha önemli bir kültür hazinesi olduğu düşüncesini değerlendirme",
-      "answer": "Mehmet Kaplan'ın 'dilin arkeolojiden daha önemli bir kültür hazinesi olduğu' görüşü, kültürel mirasın korunması bağlamında çok haklı ve çarpıcı bir tespittir:\n\n• Maddenin Faniliği Karşısında Sözün Kalıcılığı: Arkeolojik kazılar taş, maden veya pişmiş toprak gibi dayanıklı maddeleri gün yüzüne çıkarabilir; fakat ahşap, deri, kumaş veya at kılından yapılan organik eşyalar binlerce yıl toprak altında kalamaz, çürür. Kaplan'ın verdiği 'gözündürük' örneğinde olduğu gibi; Türklerin karlı sahalarda güneş körlüğünü önlemek için at kılından güneş gözlüğü yaptığını hiçbir kazıda bulamayız; ancak bu icat dildeki adı sayesinde asırlar boyu varlığını korur.\n• İki Alanın Birbirini Tamamlayıcılığı: Bununla birlikte dil ve arkeoloji birbirini dışlamaz; arkeoloji maddi kalıntıları, dil ise o kalıntıların ruhunu, adını ve arkasındaki medeniyet zihniyetini tamamlayarak geçmişi aydınlatır.",
-      "guidance": "Öğrencilerin bu görüşü 'gözündürük' örneği üzerinden tartışmaları; dilin soyut hafızası ile arkeolojinin somut bulgularını mukayese ederek kendi kanaatlerini gerekçelendirmeleri sağlanmalıdır.",
-      "source_locator": "basılı s.127 / PDF s.128 — Fark Edelim soru 2"
+      "answer": "Bu görüş açık uçlu biçimde değerlendirilebilir. Dil, maddi örneği günümüze kalmamış bazı eşya ve uygulamaların adını ve bilgisini koruyabilir; Kaplan'ın “gözündürük” örneği bunu göstermek için kullanılır. Buna karşılık arkeoloji de maddi kalıntılar üzerinden geçmişe ilişkin doğrudan kanıt sağlar. Bu nedenle iki alanı birbirinin alternatifi değil, birbirini tamamlayan kültür kaynakları olarak görmek mümkündür.",
+      "guidance": "“Hiçbir kazıda bulunamaz” gibi mutlak hükümlerden kaçının. Soru öğrencinin görüşünü gerekçelendirmesini ister.",
+      "source_locator": "basılı s.127 / PDF s.128 — Fark Edelim soru 2",
+      "answer_sections": {
+        "Dile Katılma Gerekçesi": "Bir nesne ortadan kalksa bile adı ve kullanımına dair bilgi metinlerde yaşayabilir.",
+        "Arkeolojinin Katkısı": "Maddi kalıntılar nesnenin biçimi, yapım tekniği ve kullanım çevresi hakkında başka türden kanıt sunabilir.",
+        "Dengeli Sonuç": "Öğrenci Kaplan'ın görüşüne tamamen, kısmen veya hiç katılmayabilir; önemli olan “gözündürük” örneği ile dil ve arkeolojinin kanıt türlerini karşılaştırarak gerekçe vermesidir."
+      }
     },
     {
       "question_id": "T2-P128-FARK03",
@@ -130,15 +164,21 @@
       "printed_page": 128,
       "question_no": "Fark Edelim 3",
       "prompt_summary": "Türkçenin geniş bir coğrafyaya yayılmasının nedenleri ve sonuçları",
-      "answer": "Ertuğrul Yaman'ın metninden hareketle Türkçenin tarihî süreçte çok geniş bir coğrafyaya yayılmasının nedenleri ve sonuçları:",
+      "answer": "Ertuğrul Yaman'ın verilen metnine göre Türklerin tarih boyunca farklı coğrafyalara yayılması, Türkçenin de geniş bir alana taşınmasına yol açmıştır. Farklı devlet ve bölgelerde yaşayan toplulukların konuşmaları zamanla lehçe ve ağız çeşitliliği göstermiştir.",
       "evidence_quotes": [
         "Türkler nereye gitmişlerse, dillerini de oraya götürmüşler"
       ],
       "source_locator": "basılı s.128 / PDF s.129 — Fark Edelim soru 3",
       "answer_sections": {
-        "Yayılmanın Tarihî Nedenleri": "• Büyük Göçler ve Fetihler: Türk boylarının Orta Asya ana yurdundan başlayarak Kafkaslara, Ön Asya'ya, Anadolu'ya, Kuzey Karadeniz'e ve Balkanlara kadar uzanan sürekli göç ve iskân hareketleri.\n• Devlet Kurma Kabiliyeti: Türklerin gittikleri her coğrafyada güçlü idari ve askerî teşkilatlar kurarak dillerini resmî devlet ve ordu dili yapmaları.\n• Kültürel Bağlılık: Metinde vurgulandığı gibi, Türklerin nereye gitmişlerse dillerini ve geleneklerini de beraberlerinde taşıma konusundaki yüksek şuurları.",
-        "Ortaya Çıkan Sonuçlar": "• Balkanlar'dan Çin'e Ulaşan Dil Coğrafyası: Macar bilgini Vambery'nin de belirttiği gibi, Türkçe bilen birinin Balkanlar'dan Çin Seddi'ne kadar tercümansız seyahat edebileceği devasa bir iletişim alanı oluşmuştur.\n• Lehçe ve Ağız Çeşitliliği: Geniş coğrafyalarda farklı siyasi sınırların etkisiyle Türkçenin kollara, lehçe ve ağızlara ayrılması; dilin ifade zenginliğinin katlanması.\n• Dünya Sıralamasında İlk Beş: Günümüzde 250 milyonu aşkın insan tarafından konuşulan Türkçe, yeryüzünün en çok konuşulan ilk beş dili arasında saygın bir yer edinmiştir."
-      }
+        "Metinde Verilen Neden": "“Türkler nereye gitmişlerse, dillerini de oraya götürmüşler” ifadesi, coğrafi yayılma ile dilin yayılması arasında doğrudan bağ kurar.",
+        "Metinde Verilen Sonuçlar": [
+          "Türkçe Balkanlar'dan Çin'e kadar geniş bir alanda farklı yoğunluklarda kullanılmaktadır.",
+          "Farklı siyasi yapılar ve bölgeler içinde farklı konuşma biçimleri gelişmiştir.",
+          "Metin, Türkçe konuşanların sayısına ilişkin yaklaşık değerler ve dilin dünya sıralamasına ilişkin bir değerlendirme de sunar."
+        ],
+        "Kaynak Statüsü": "“250 milyon civarı” ve “ilk beş” gibi sayısal/sıralama ifadeleri Ertuğrul Yaman'ın verilen metnindeki iddialardır; güncel bağımsız istatistik gibi sunulmamalıdır."
+      },
+      "guidance": "Büyük göçler, fetihler, devlet dili olma gibi tarihî nedenler araştırılabilir; ancak bunlar bu kısa metnin doğrudan söylediği bilgiler değildir. Ana cevap önce metnin kendi neden-sonuç ilişkisine dayanmalıdır."
     },
     {
       "question_id": "T2-P128-Q01",
@@ -146,12 +186,17 @@
       "printed_page": 128,
       "question_no": "1",
       "prompt_summary": "Kül Tigin Âbidesi'nde beğenilen yönleri gerekçelendirme",
-      "answer": "Kül Tigin Âbidesi metninde en çok beğenilen yönler ve metin gerekçeleri:\n\n1. Yöneticinin Halka Karşı Sarsıcı Fedakârlığı ve Şeffaflığı: 'Türk milleti için gece uyumadım, gündüz oturmadım... ölecek milleti diriltip besledim. Çıplak milleti elbiseli, fakir milleti zengin kıldım.' ifadeleri; bir liderin şahsi ihtiraslardan arınarak kendini bütünüyle milletinin refahına adamış olmasını anlatan en yüksek ahlaki duruştur.\n2. Duygusal Samimiyet ve Kardeşlik Vefası: Bir cihan hakanının kardeşi için döktüğü gözyaşlarını ve çaresizliğini 'Görür gözüm görmez gibi, bilir aklım bilmez gibi oldu' diyerek halkıyla paylaşması, metnin resmiyetini kırarak edebiyatımızın en samimi ağıtlarından birini oluşturmuştur.\n3. Bin Yılı Aşan Hitabet Gücü: 'Üstte gök basmasa, altta yer delinmese, Türk milleti, ilini töreni kim boza bilecekti?' nidası, aradan geçen 1300 yıla rağmen insanın tüylerini ürperten muazzam bir millî özgüven aşılamaktadır.",
+      "answer": "Bu soru kişisel beğeniye açıktır. Öğrenci, Kül Tigin Âbidesi'nde etkileyici bulduğu bir dil, içerik veya anlatım özelliğini metinden somut bir örnekle gerekçelendirmelidir.",
       "evidence_quotes": [
         "Türk milleti için gece uyumadım, gündüz oturmadım."
       ],
-      "guidance": "Beğeni özneldir; öğrencilerin metinden seçtikleri somut bir ifadeyi gerekçelendirerek açıklamaları yeterlidir.",
-      "source_locator": "basılı s.128 / PDF s.129 — Süreci Değerlendirebilme soru 1"
+      "guidance": "“En yüksek ahlaki duruş”, “insanın tüylerini ürpertir” gibi değerlendirmeleri ortak doğruya dönüştürmeyin. Öğrencinin kendi beğenisini metin kanıtıyla açıklaması yeterlidir.",
+      "source_locator": "basılı s.128 / PDF s.129 — Süreci Değerlendirebilme soru 1",
+      "answer_sections": {
+        "Örnek Beğeni 1": "“Türk milleti için gece uyumadım, gündüz oturmadım.” sözü, yöneticinin millet için çalıştığını kısa ve güçlü bir karşıtlıkla anlatması bakımından etkileyici bulunabilir.",
+        "Örnek Beğeni 2": "“Görür gözüm görmez gibi, bilir aklım bilmez gibi oldu.” sözü, Kül Tigin'in ölümü karşısındaki üzüntüyü tarihî bir metinde çok insani bir dille vermesi bakımından beğenilebilir.",
+        "Örnek Beğeni 3": "Doğrudan “işitin / dinle” seslenişleri, metnin okuyucuya/dinleyiciye güçlü biçimde yönelmesini sağlayabilir."
+      }
     },
     {
       "question_id": "T2-P128-Q02",
@@ -159,9 +204,16 @@
       "printed_page": 128,
       "question_no": "2",
       "prompt_summary": "Kül Tigin Âbidesi'ndeki gerçeklik ile gerçek dünyanın örtüşmesi",
-      "answer": "Kül Tigin Âbidesi metninde sunulan gerçeklik ile gerçek dünya neredeyse bütünüyle örtüşmektedir; metin edebî bir fantezi veya mitoloji değil, tarihsel bir belgedir:\n\n• Tarihî Kişiler ve Hadiseler: Bumin Kağan, İstemi Kağan, Bilge Kağan, Kül Tigin, Yollug Tigin tarihte yaşamış gerçek şahsiyetlerdir. Çin ile yapılan savaşlar, esaret dönemi, ayaklanmalar ve Kül Tigin'in koyun yılında vefatı somut tarihsel gerçeklerdir.\n• Coğrafi Mekânlar: Ötüken ormanı, Şantung ovası, Tibet, İnci (Seyhun) Nehri, Demir Kapı yeryüzünde mevcut olan gerçek coğrafi noktalardır.\n• Anlatıcının Bakış Açısı ve Seçicilik: Bununla birlikte, olaylar Bilge Kağan'ın gözünden ve onun siyasi hedefleri doğrultusunda aktarılmıştır. Kağan kendi ve kardeşinin başarılarını öne çıkarırken dönemin siyasi şartlarını kendi hitabet süzgecinden geçirmiştir; bu da tarihî gerçekliğin öznel bir devlet aklıyla yorumlandığını gösterir.",
+      "answer": "Kül Tigin Âbidesi tarihî kişi, yer ve olaylara gönderme yaptığı için gerçek dünya ile güçlü bağ kurar; ancak metindeki her ayrıntının doğruluğu yalnız metnin kendisine bakılarak bağımsız biçimde kanıtlanmış sayılamaz. Ayrıca olaylar Bilge Kağan'ın amacı ve bakış açısından seçilip anlatılır.",
       "explanation": "Tarihî metinlerdeki gerçeklik, dış dünyadaki somut olaylarla örtüşür; ancak anlatıcının hitabet gayesi, idealleri ve siyasi duruşu olayların sunumunda seçici bir rol oynar.",
-      "source_locator": "basılı s.128 / PDF s.129 — Süreci Değerlendirebilme soru 2"
+      "source_locator": "basılı s.128 / PDF s.129 — Süreci Değerlendirebilme soru 2",
+      "answer_sections": {
+        "Gerçek Dünyayla Bağ": "Bumin Kağan, İstemi Kağan, Bilge Kağan, Kül Tigin gibi kişiler; Ötüken, Tibet ve Demir Kapı gibi yerler tarihî/coğrafi referans niteliğindedir.",
+        "Tarihî Belge Niteliği": "Yazıt seferler, yönetim, Kül Tigin'in ölümü ve yazıtın oluşturulması gibi olayları kayda geçirir.",
+        "Anlatıcı ve Seçicilik": "Bilge Kağan millete öğüt vermek ve kendi döneminin devlet tecrübesini aktarmak amacıyla konuşur; dolayısıyla anlatım bütünüyle tarafsız bir kronik değildir.",
+        "Doğrulama İlkesi": "Belirli olayın tarihsel ayrıntısını kesinleştirmek için başka yazıtlar ve güvenilir tarih kaynaklarıyla karşılaştırma gerekir."
+      },
+      "guidance": "“Gerçek dünya ile neredeyse bütünüyle örtüşür” gibi kesin bir oran/hüküm vermeyin. Tarihî referans ile bağımsız tarihsel doğrulama arasındaki farkı gösterin."
     },
     {
       "question_id": "T2-P128-Q03",
@@ -169,9 +221,15 @@
       "printed_page": 128,
       "question_no": "3",
       "prompt_summary": "Kendini anlatıcının yerine koyarak sözlerini değerlendirme",
-      "answer": "Kendimi Kül Tigin Âbidesi'ndeki anlatıcı olan Bilge Kağan'ın yerine koysaydım:\n\n• Halka Hesap Verme ve Vasiyet Bırakma Kararlılığı: Ben de milletimin geçmişte yaşadığı esaret felaketlerini ve kardeşimin canı pahasına kazandığımız bağımsızlığı asla unutulmayacak biçimde taşa kazıtırdım. Çünkü sözlerin hafızalardan silinebileceğini, fakat taşa vurulan sözün nesiller boyu milletime yol göstereceğini bilirdim.\n• Ötüken Merkezli Duruş: Milletimi Çin'in ipeğine ve hilelerine kanmamaları için aynı sertlikte uyarırdım; bağımsızlığın yabancıların lütfuyla değil, kendi vatanında kendi töresine sahip çıkarak korunacağını vurgulardım.\n• Kardeşlik Acısı ve İnsanî Yön: Bir yandan kağan olmanın getirdiği çelik iradeyi korurken diğer yandan can yoldaşım Kül Tigin'in vefatındaki hüznümü gizlemez, halkımın da bu kederi benimle paylaşarak birlik duygusunu tazelemesini sağlardım.",
-      "guidance": "Öğrencilerin empati kurarak bir kağanın omuzlarındaki devlet sorumluluğu ile kardeşini kaybetmiş bir insanın yüreğindeki acı arasındaki dengeyi kendi cümleleriyle ifade etmeleri beklenir.",
-      "source_locator": "basılı s.128 / PDF s.129 — Süreci Değerlendirebilme soru 3"
+      "answer": "Bu soru empati ve kişisel değerlendirmeye açıktır. Öğrenci kendini Bilge Kağan'ın yerine koyduğunda onun bazı sözlerine katılabilir, bazılarını kendi bakış açısından farklı yorumlayabilir.",
+      "guidance": "Öğrenciyi “aynı sertlikte Çin'e karşı uyarırdım” gibi tek bir tarihî-politik tutuma yönlendirmeyin. Empati, metni anlamaya yarar; anlatıcının bütün görüşlerini benimsemeyi gerektirmez.",
+      "source_locator": "basılı s.128 / PDF s.129 — Süreci Değerlendirebilme soru 3",
+      "answer_sections": {
+        "Örnek Değerlendirme": "Milletin geçmişte yaşadığı sıkıntıları ve yöneticilerin yaptığı işleri kalıcı biçimde kaydetmeyi önemli bulurdum; çünkü gelecek kuşakların geçmişten ders çıkarmasına yardımcı olabilir.",
+        "Öğütler Hakkında": "Birlik, töre ve yöneticinin halka karşı sorumluluğu vurgularını anlamlı bulabilirdim; ancak tarihî dönemin koşullarına bağlı bazı siyasi öğütlerin bugüne aynı biçimde taşınamayacağını da düşünürdüm.",
+        "Kül Tigin'in Kaybı": "Kardeş kaybıyla ilgili açık üzüntüyü saklamamasını insani ve etkileyici bulabilirdim.",
+        "Açık Uçluluk": "Öğrenci Bilge Kağan'ın bütün görüşlerine katılmak zorunda değildir; kendi değerlendirmesini metindeki sözlerle ilişkilendirmesi gerekir."
+      }
     }
   ]
 }
