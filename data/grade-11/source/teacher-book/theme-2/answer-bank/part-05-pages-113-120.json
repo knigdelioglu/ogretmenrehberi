@@ -10,8 +10,8 @@
       "printed_page": 113,
       "question_no": "1",
       "prompt_summary": "Orhun Vadisi videosundaki bölgeyi ön bilgilerle ilişkilendirme",
-      "answer": "Bu sorunun eksiksiz ve doğrulanmış cevabı, ders kitabındaki karekod üzerinden erişilen çok modlu 'Orhun Vadisi' videosunda sunulan görsel ve işitsel ayrıntılara dayanmaktadır. Video izlenmeden vadinin günümüzdeki fiziki durumu, müze yerleşkesi, kazı sahası veya gösterilen coğrafi ayrıntılar hakkında kesin yargılarda bulunulmamalıdır. Öğrencilerden beklenen; Moğolistan sınırlarında yer alan Orhun Nehri vadisi, Ötüken havzası ve Göktürk kağanlığı hakkındaki tarihî ön bilgilerini, videoda bizzat gördükleri vadi coğrafyası, anıt kalıntıları ve bengü taşların bugünkü korunma ortamıyla karşılaştırarak eşleştirmeleridir.",
-      "guidance": "Çalışmada iki sütunlu bir gözlem çizelgesi uygulanmalıdır: Birinci sütuna 'Orhun Vadisi ve Yazıtlar Hakkında Önceden Bildiklerim', ikinci sütuna ise 'Videoda Bizzat Gördüğüm / Duyduğum Somut Ayrıntılar' yazılmalıdır. Yalnızca videoda açıkça gösterilen mekânsal verilerin ikinci sütuna kaydedilmesine dikkat edilmelidir.",
+      "answer": "Bu sorunun eksiksiz cevabı QR bağlantılı Orhun Vadisi videosuna bağlıdır. Öğrenci, bölgeyle ilgili önceden bildiklerini videoda gerçekten gördüğü ve duyduğu ayrıntılarla karşılaştırmalıdır; video izlenmeden günümüzdeki vadi, müze, kazı alanı veya anıtların korunma biçimi hakkında kesin bilgi eklenmemelidir.",
+      "guidance": "İki sütun kullanılabilir: “Önceden bildiğim” ve “Videoda gerçekten gördüğüm/duyduğum”. İkinci sütuna yalnız videoda doğrulanan ayrıntılar yazılmalıdır.",
       "source_locator": "basılı s.113 / PDF s.114 — Hatırlayalım soru 1 / Orhun Vadisi QR videosu gerekli"
     },
     {
@@ -20,11 +20,18 @@
       "printed_page": 113,
       "question_no": "2",
       "prompt_summary": "Orhun Abidelerinin yazılma nedenleri",
-      "answer": "Orhun Abideleri; Türk milletinin ve bağımsız devletinin (II. Göktürk / Kutluk Kağanlığı) yaşadığı büyük tarihî badireleri, esaret yıllarını, toparlanma ve yeniden yükseliş mücadelesini kalıcı bir hafıza hâline getirmek amacıyla dikilmiştir. Yazıtların temel yazılma gerekçeleri şunlardır:\n\n1. Tarihî Hafızayı ve Devlet Tecrübesini Ebedîleştirmek: Kağanların millet uğruna yaptığı savaşları, kazanılan zaferleri ve devlet teşkilatlanmasını kayda geçirmek.\n2. Millete ve Beylere Hesap Vermek: Yöneticilerin halka karşı sorumluluklarını yerine getirdiğini (aç milleti doyurmak, çıplak milleti giydirmek) göstererek hesap verilebilir bir yönetim sergilemek.\n3. Gelecek Nesilleri Uyarmak ve Öğüt Vermek: Çin'in tatlı sözlerine, yumuşak ipeklerine kanarak millî benliğini yitiren geçmiş kuşakların düştüğü felaketleri hatırlatıp gelecek kuşakların aynı hatalara düşmesini önlemek.\n4. Kardeşlik Vefası ve Kahramanlık Mirası: Bilge Kağan'ın, devletin kurucu kahramanı olan küçük kardeşi Kül Tigin'in fedakârlıklarını ve adını sonsuza kadar yaşatmak istemesi.",
+      "answer": "Orhun Abidelerinin yazılma nedenleri; Türk milletinin ve devletinin yaşadığı önemli olayları kalıcı hâle getirmek, yöneticilerin yaptıklarını ve devlet tecrübesini kayda geçirmek, millete ve beylere öğüt vermek, geçmişteki hatalardan ders çıkarılmasını sağlamak ve Kül Tigin'in hatırasını yaşatmak şeklinde açıklanabilir.",
       "evidence_quotes": [
         "Her ne sözüm varsa ebedî taşa vurdum."
       ],
-      "source_locator": "basılı s.113-117 / PDF s.114-118 — Hatırlayalım soru 2 ve Kül Tigin Âbidesi"
+      "source_locator": "basılı s.113-117 / PDF s.114-118 — Hatırlayalım soru 2 ve Kül Tigin Âbidesi",
+      "answer_sections": {
+        "Tarihî Hafızayı Korumak": "Devletin kuruluş, mücadele ve toparlanma sürecini gelecek kuşaklara aktarmak.",
+        "Millete Öğüt Vermek": "Birliğin, törenin ve bağımsızlığın korunması konusunda uyarıda bulunmak.",
+        "Yönetimin Yaptıklarını Kayda Geçirmek": "Bilge Kağan'ın millet için yaptığı çalışmaları ve devlet tecrübesini anlatmak.",
+        "Kül Tigin'i Anmak": "Kül Tigin'in devlet için yaptığı hizmetleri ve onun hatırasını kalıcılaştırmak."
+      },
+      "guidance": "Cevabı metindeki ifadelerle sınırlandırın. “II. Göktürk/Kutluk Kağanlığı”, “sosyal devlet sözleşmesi” gibi dış tarih/siyaset kavramları kullanılacaksa ek bilgi olarak açıkça ayrılmalıdır."
     },
     {
       "question_id": "T2-P113-Q03",
@@ -32,13 +39,14 @@
       "printed_page": 113,
       "question_no": "3",
       "prompt_summary": "Orhun Abidelerinin Türk dili, tarihi ve kültürü açısından önemi",
-      "answer": "Yaklaşık bin üç yüz yıllık bir geçmişe sahip olan Orhun Abideleri, Türk medeniyetinin kurucu şaheseridir ve üç temel boyutta hayati bir öneme sahiptir:",
+      "answer": "Orhun Abideleri; Türk dilinin günümüze ulaşan ilk yazılı örnekleri kabul edilmesi, Türklerin tarihî olayları ve devlet anlayışı hakkında bilgi vermesi ve dönemin toplum/kültür hayatını yansıtması bakımından önemlidir.",
       "source_locator": "basılı s.113 ve s.117 / PDF s.114 ve s.118 — Hatırlayalım soru 3 / Bilgi Köşesi",
       "answer_sections": {
-        "Türk Dili Açısından Önemi": "Türkçenin bilinen ve metin hâlinde günümüze ulaşan en eski yazılı belgeleridir. İlk millî alfabemiz olan Göktürk (Orhun) alfabesiyle yazılmıştır. 8. yüzyılda Türkçenin son derece gelişmiş, soyut kavramları, felsefi ve siyasi düşünceleri, derin keder ve heyecanları ustalıkla ifade edebilen olgun bir edebî ve hitabet dili olduğunu tartışmasız biçimde kanıtlar.",
-        "Türk Tarihi Açısından Önemi": "'Türk' adının bir devlet ve millet adı olarak geçtiği ilk resmî Türkçe belgedir. Göktürklerin kuruluşunu, Çin esaretini, bağımsızlık savaşlarını, boy isyanlarını ve dış siyasetini doğrudan olayın öznelerinin kaleminden aktaran birinci elden eşsiz bir tarih kaynağıdır.",
-        "Türk Kültürü ve Sosyolojisi Açısından Önemi": "Türk devlet felsefesini, kut inancını, cihan hâkimiyeti mefkûresini, töre nizamını ve 'sosyal devlet' anlayışını ('fakir milleti zengin, aç milleti tok kıldım') ortaya koyar. Aynı zamanda atlı göçebe bozkır yaşantısı, yuğ (cenaze) merasimleri ve millî birlik şuuruna dair ilk yazılı ahlaki ve hukuki beyannamedir."
-      }
+        "Türk Dili": "Bilgi Köşesi'ne göre anıtlar 38 harften oluşan Göktürk alfabesiyle yazılmıştır; dilinin sade, kurallı ve güçlü bir anlatıma sahip olduğu belirtilir.",
+        "Türk Tarihi": "Kağanlar, seferler, devletin yaşadığı sıkıntılar ve yeniden toparlanma süreci hakkında birinci ağızdan bilgiler içerir.",
+        "Türk Kültürü": "İl, töre, millet, yönetici-halk ilişkisi, yas/anma ve toplumsal yaşam gibi kültürel unsurları görünür kılar."
+      },
+      "guidance": "“Cihan hâkimiyeti”, “sosyal devlet”, “ilk resmî belge” gibi daha özel tarihî kavramları kitapta açıkça verilmiyorsa ana cevapta kesinleştirmeyin."
     },
     {
       "question_id": "T2-P113-Q04",
@@ -46,13 +54,14 @@
       "printed_page": 113,
       "question_no": "4",
       "prompt_summary": "Yazıtların Çince yüzünün tarih ve dil araştırmalarına katkısı",
-      "answer": "Bilge Kağan ve Kül Tigin Yazıtları'nın batı cephelerinin Çince yazılmış olması, Türk dili, edebiyatı ve tarihi araştırmaları açısından paha biçilmez kazanımlar sağlamıştır:",
+      "answer": "Bilge Kağan ve Kül Tigin yazıtlarının bir yüzünün Çince olması, aynı anıt üzerinde iki farklı dildeki bilgilerin karşılaştırılmasına imkân verir. Bu durum kişi adlarının, unvanların, tarihî olayların ve Türk-Çin ilişkilerinin dil ve tarih araştırmalarında birlikte incelenmesini kolaylaştırır.",
       "source_locator": "basılı s.113 / PDF s.114 — Hatırlayalım soru 4",
       "answer_sections": {
-        "Göktürk Alfabesinin Deşifre Edilmesindeki 'Rosetta Taşı' Rolü": "1893 yılında Danimarkalı dil bilimci Wilhelm Thomsen, yazıtların batı yüzündeki Çince metinde geçen kağan, prens ve özel adların (Kül Tigin, Bilge Kağan) Türkçe karşılıklarını eşleştirerek Orhun harflerinin ses değerlerini çözmüş; ilk olarak 'Tengri' ve 'Türk' sözcüklerini okuyarak yazıtları dünya bilim âlemine kazandırmıştır.",
-        "Karşılaştırmalı Tarih ve Çift Yönlü Doğrulama": "Aynı dönemin askerî, siyasi ve diplomatik olaylarının hem Göktürk bakış açısından hem de dönemin en büyük rakibi olan Çin İmparatorluğu'nun resmî kayıtlarından karşılaştırılarak teyit edilmesini ve tarihlendirilmesini sağlamıştır.",
-        "Diplomatik ve Kültürel İletişim": "Göktürk Kağanlığı'nın kendi bağımsızlık mesajını ve gücünü yalnızca kendi tebaasına değil, Çin sarayına ve Çin halkına da kendi dillerinde doğrudan ilan eden evrensel bir devlet ciddiyeti taşıdığını gösterir."
-      }
+        "Dil Araştırmaları": "Özel adların, unvanların ve bazı kavramların iki dildeki karşılıklarının karşılaştırılmasına yardımcı olur.",
+        "Tarih Araştırmaları": "Aynı dönem ve kişiler hakkında Türkçe ve Çince verilerin birlikte değerlendirilmesine imkân sağlar.",
+        "Kültürel/Diplomatik İlişki": "Anıtın çok dilli yapısı, dönemin Türk-Çin ilişkilerine ilişkin ayrı bir araştırma alanı oluşturur."
+      },
+      "guidance": "Wilhelm Thomsen'in çözümleme süreci gibi dış tarih bilgileri öğretmen zenginleştirmesi olarak kullanılabilir; ancak ders kitabının bu sorusunun doğrudan cevabıymış gibi “Rosetta Taşı” benzetmesiyle sunulmamalıdır."
     },
     {
       "question_id": "T2-P113-Q05",
@@ -60,9 +69,15 @@
       "printed_page": 113,
       "question_no": "5",
       "prompt_summary": "Kaplumbağa figürü ile bengü taş ve kalıcılık düşüncesi",
-      "answer": "Kül Tigin Yazıtı'nın taştan yontulmuş devasa bir kaplumbağa heykeli üzerine oturtulması, 'bengü taş' (ebedî / sonsuz taş) felsefesiyle doğrudan bağlantılı derin bir sembolik anlam taşır:\n\n1. Uzun Ömür ve Ebediyet Simgesi: Kaplumbağa, kadim Türk ve Doğu mitolojisinde yüzlerce yıl yaşayan ömrüyle sarsılmazlığın, sabrın, değişmezliğin ve zamanın aşındırmasına karşı direncin simgesidir.\n2. Yeryüzü ve Kozmik Denge: Mitolojik tasavvurda kaplumbağanın yassı alt kabuğu yeri (yeryüzünü), kubbeli üst kabuğu ise göğü (gök kubbeyi) temsil eder; anıtın bu kaideye oturtulması, gök ile yer arasındaki Türk nizamının sürekliliğini simgeler.\n3. Bengü Taşın Sarsılmaz Temeli: Bilge Kağan'ın milletine vasiyet ettiği sözlerin ve törenin, tıpkı kaplumbağa kaidesi gibi dünya durdukça ayakta kalacağı, hiçbir fırtınanın ve düşmanlığın bu devleti yıkamayacağı inancı maddileştirilmiştir.",
+      "answer": "'Bengü taş' ifadesi kalıcılık ve ölümsüzleştirme düşüncesini taşır. Yazıtın kaplumbağa biçimli bir kaide üzerine yerleştirilmesi de, kaplumbağanın uzun ömür ve dayanıklılıkla ilişkilendirilebilmesi nedeniyle sözlerin ve hatıranın uzun süre yaşaması düşüncesini destekleyen sembolik bir tercih olarak yorumlanabilir.",
       "explanation": "Sorunun odağında biyolojik bir hayvan tasviri değil; 'bengü taş' kavramını taşıyacak mitolojik ve felsefi bir ebediyet sembolü yer almaktadır.",
-      "source_locator": "basılı s.113 ve s.117 / PDF s.114 ve s.118 — Hatırlayalım soru 5 / Bilgi Köşesi"
+      "source_locator": "basılı s.113 ve s.117 / PDF s.114 ve s.118 — Hatırlayalım soru 5 / Bilgi Köşesi",
+      "answer_sections": {
+        "Bengü Taş": "Sözlerin ve hatıranın gelecek kuşaklara kalması isteğini gösterir.",
+        "Kaplumbağa Figürü": "Uzun ömür ve dayanıklılık çağrışımı üzerinden kalıcılık fikriyle ilişkilendirilebilir.",
+        "Yorum Sınırı": "Kaplumbağanın göğü-yeri temsil ettiği, belirli bir kozmolojiye kesin olarak gönderme yaptığı gibi mitolojik açıklamalar dış kaynak olmadan bu sorunun zorunlu cevabı değildir."
+      },
+      "guidance": "Soru yorum istemektedir. “Kaplumbağa kesin olarak şu mitolojik sistemi temsil eder” yerine “uzun ömür/kalıcılıkla ilişkilendirilebilir” dili kullanın."
     },
     {
       "question_id": "T2-P114-Q01",
@@ -70,8 +85,9 @@
       "printed_page": 114,
       "question_no": "1",
       "prompt_summary": "Kül Tigin Âbidesi için okuma amacı belirleme",
-      "answer": "Kül Tigin Âbidesi metnini okurken hedeflenebilecek temel okuma amaçları:\n1. 8. yüzyıl Göktürk Türkçesinin kelime dağarcığını, cümle yapısını ve anlatım gücünü incelemek.\n2. Bilge Kağan'ın Türk milletine, beylerine ve gelecek nesillere yönelik tarihî uyarı ve öğütlerini tespit etmek.\n3. Kül Tigin'in kahramanlıkları ve ölümü etrafında gelişen kardeşlik vefasını ve yas psikolojisini tahlil etmek.\n4. Metnin söylev (hitabet), anı ve tarihî belge niteliklerini bir arada nasıl barındırdığını kavramak.",
-      "source_locator": "basılı s.114 / PDF s.115 — Okumayı Yönetebilme soru 1"
+      "answer": "Okuma amacı; Kül Tigin Âbidesi'nin hangi tarihî olayları ve değerleri aktardığını, anlatıcının kimlere seslendiğini, hangi öğütleri verdiğini ve dil-anlatım özelliklerinin bu mesajları nasıl güçlendirdiğini belirlemek olabilir.",
+      "source_locator": "basılı s.114 / PDF s.115 — Okumayı Yönetebilme soru 1",
+      "guidance": "Okuma amacı, metin henüz ayrıntılı okunmadan belirlenir. Kül Tigin'in ölümü, yas bölümü veya belirli tarihî olaylar gibi sonradan öğrenilecek ayrıntıları amaç cümlesinde spoiler olarak vermeyin."
     },
     {
       "question_id": "T2-P114-Q02",
@@ -79,9 +95,14 @@
       "printed_page": 114,
       "question_no": "2",
       "prompt_summary": "Başlık ve görselden Kül Tigin Âbidesi'nin içerik ve türüne ilişkin tahmin",
-      "answer": "'Orhun Abideleri / Kül Tigin Âbidesi' başlığı ve abideye ait dikilitaş görselinden hareketle yapılan ön tahminler:\n• İçerik Tahmini: Tarihî bir kahraman olan Kül Tigin'in devlet için yaptığı fedakârlıkların, katıldığı savaşların, kazandığı zaferlerin ve ölümünün ardından duyulan millî yasın anlatıldığı tahmin edilebilir. Ayrıca Bilge Kağan'ın milletine hitap ederek birlik ve vatan sevgisi aşıladığı öngörülür.\n• Tür Tahmini: Doğrudan halka seslenen hitabet cümleleri içermesi bakımından 'söylev (nutuk)', geçmiş olayları birinci ağızdan aktarması bakımından 'anı', yaşanan seferleri ve tarihleri belgelemesi bakımından ise 'tarihî anıt mezar metni (yazıt)' niteliğinde olduğu tahmin edilir.",
-      "guidance": "Okuma öncesi tahminde tek bir kesin doğru aranmaz; öğrencinin görsel ve başlıktan yola çıkarak mantıklı gerekçeler sunması yeterlidir.",
-      "source_locator": "basılı s.114 / PDF s.115 — Okumayı Yönetebilme soru 2"
+      "answer": "Başlık ve taş yazıt görseli, metnin Kül Tigin adlı tarihî bir kişiyle ve ona ilişkin bir anıt/yazıtla ilgili olabileceğini düşündürür. İçeriğinde kişi, devlet ve geçmiş olaylara ilişkin bilgiler bulunabileceği tahmin edilebilir. Tür bakımından ise tarihî bir yazıt/anıt metni olduğu öngörülebilir.",
+      "guidance": "Bu bir okuma öncesi tahmindir; öğrencinin başlık ve görselden gerekçelendirdiği farklı olasılıklar kabul edilmelidir.",
+      "source_locator": "basılı s.114 / PDF s.115 — Okumayı Yönetebilme soru 2",
+      "answer_sections": {
+        "İçerik Tahmini": "Kül Tigin'in kimliği, onunla ilgili olaylar ve dönemin devlet/toplum hayatı.",
+        "Tür Tahmini": "Taş üzerine yazılmış tarihî yazıt/anıt metni.",
+        "Tahmin Sınırı": "Savaşlar, ölüm/yas, söylev-anı özellikleri veya belirli öğütler metin okunmadan kesinleştirilmemelidir."
+      }
     },
     {
       "question_id": "T2-P114-PERF01",
@@ -89,14 +110,15 @@
       "printed_page": 114,
       "question_no": "Okuma Stratejisi",
       "prompt_summary": "Kül Tigin Âbidesi için etkili okuma stratejisi",
-      "answer": "Kül Tigin Âbidesi metninin yoğun ve tarihî dokusunu kavramaya yönelik aşamalı okuma stratejisi rehberi:",
-      "guidance": "Taş yazıtın lakonik (özlü ve yoğun) anlatımı nedeniyle öğrencilerin metni alelacele değil, bir hitabet abidesi olduğunu hissederek ses tonuna ve kavram tekrarlarına dikkat ederek okumaları sağlanmalıdır.",
-      "source_locator": "basılı s.114-115 / PDF s.115-116 — Metni Okuyalım" ,
+      "answer": "Kül Tigin Âbidesi için örnek okuma stratejisi, metin okunmadan içerik ayrıntılarını açıklamadan şu şekilde uygulanabilir:",
+      "guidance": "Strateji, metnin cevabını önceden vermemeli; öğrencinin okuma sırasında keşfetmesini kolaylaştırmalıdır.",
+      "source_locator": "basılı s.114-115 / PDF s.115-116 — Metni Okuyalım",
       "answer_sections": {
-        "1. Hazırlayıcı ve Sesli Okuma": "Metin ilk olarak bir hükümdarın millet meclisinde halkına seslendiği vakar ve ciddiyetle, hitap tonlamalarına dikkat edilerek sesli okunur.",
-        "2. Kavram Haritalama ve İşaretleme": "Metinde sıkça tekrarlanan 'il (devlet/vatan)', 'töre (nizam/kanun)', 'Tengri (Gök Tanrı)', 'Ötüken', 'millet', 'budun', 'şadpıt beyleri' gibi anahtar siyasi ve kültürel terimler farklı renklerle çizilir.",
-        "3. Cephe Odaklı Anlam Ayrımı": "Metin cephelere ayrılarak tahlil edilir: Güney cephesinde coğrafya ve siyasi hitap; doğu cephesinde yaratılış miti, tarihî seferler ve sosyal devlet icraatları; kuzey cephesinde ise Kül Tigin'in kaybıyla yaşanan sarsıcı keder ve yas süreci çözümlenir.",
-        "4. Orijinal Metin ve Günümüz Türkçesi Karşılaştırması": "Kitapta verilen Göktürkçe orijinal alıntılar ile Türkiye Türkçesi aktarımı karşılaştırılarak ses ve anlam akrabalığı gözlemlenir."
+        "1. Göz Gezdirme": "Başlık, cephe başlıkları, görseller ve paragraf yapısına bakarak metnin genel düzenini fark etme.",
+        "2. Sesleniş ve Anahtar Kavramları İşaretleme": "Metni okurken anlatıcının kimlere seslendiğini ve tekrar eden il, töre, millet, kağan gibi anahtar kelimeleri işaretleme.",
+        "3. İşlevlere Göre Not Alma": "Tarihî bilgi, öğüt/uyarı, yöneticinin yaptığı işler ve duygu bildiren bölümleri farklı işaretlerle ayırma.",
+        "4. Bölümler Arası Bağlantı": "Farklı cephelerde anlatılanların ortak amaçla nasıl birleştiğini not etme.",
+        "5. Orijinal–Aktarım Karşılaştırması": "Kitapta verilen orijinal metin parçaları ile Türkiye Türkçesi aktarımındaki tanınabilir kelime ve yapıları karşılaştırma."
       }
     },
     {
@@ -164,17 +186,19 @@
       "printed_page": 117,
       "question_no": "Fark Edelim",
       "prompt_summary": "Bilge Kağan'ın tarihî kişiliği ve yönetici özellikleri",
-      "answer": "Metinden ve İbrahim Kafesoğlu'nun değerlendirmelerinden hareketle Bilge Kağan'ın öne çıkan tarihî kişiliği ve yöneticilik vasıfları:",
+      "answer": "İbrahim Kafesoğlu'nun parçası ile Kül Tigin Âbidesi birlikte okunduğunda Bilge Kağan'ın hayatına ve yaptığı işlere ilişkin şu ayrıntılara ulaşılabilir:",
       "evidence_quotes": [
         "Türk milleti için gece uyumadım, gündüz oturmadım."
       ],
       "source_locator": "basılı s.117 / PDF s.118 — Fark Edelim",
       "answer_sections": {
-        "Alp ve Bilge Hükümdar Timsali": "Yalnızca kılıç çalan bir savaşçı değil; devlet felsefesi olan, milletinin geleceğini derinlemesine planlayan, ileri görüşlü ve basiretli bir filozoftur.",
-        "Fedakâr ve Halka Hizmetkâr Lider": "'Gece uyumadım, gündüz oturmadım' ifadesiyle özetlenen; iktidarı şahsi zevk veya servet için değil, milletini esaretten kurtarıp refaha kavuşturmak için kullanan sosyal devlet lideridir.",
-        "Cesur, Açık Sözlü ve Şeffaf Yönetici": "Milletin yaptığı hataları, iç isyanları ve zafiyetleri saklamadan, açık yüreklilikle taşa kazıtarak halkı gerçeğe ve özeleştiriye davet eden yüksek ahlaklı bir devlet adamıdır.",
-        "Yüksek Vefa ve Kardeşlik Sevgisi": "Kül Tigin'in vefatında duyduğu derin acı ('Görür gözüm görmez gibi, bilir aklım bilmez gibi oldu'), onun demir disiplinli bir komutan olmanın ötesinde çok hassas, merhametli ve vefalı bir insan olduğunu somutlar."
-      }
+        "Kül Tigin'le Akrabalığı": "Kül Tigin'in ağabeyidir; yazıtta kardeşinden ve onun ölümünde yaşadığı derin üzüntüden söz eder.",
+        "Kağan ve Yönetici Oluşu": "Türk milletini yöneten bir kağandır; seferlerden, devletin düzenlenmesinden ve millet için yaptığı çalışmalardan söz eder.",
+        "Kül Tigin'le Birlikte Mücadele Etmesi": "Metinde Kül Tigin'le birlikte milletin adı sanı yok olmasın diye çalıştığını, “gece uyumadım, gündüz oturmadım” diyerek anlatır.",
+        "Kül Tigin Kitabesi ve Barkı": "Kafesoğlu'nun parçasına göre Kül Tigin Kitabesi ile onun için yaptırılan, içi resimlerle süslü bark Bilge Kağan'ın emri ve himmetiyle meydana gelmiştir.",
+        "Millete Öğüt Veren Yönü": "Kitabedeki sözleriyle milletin yaşaması için gerekli gördüğü yolları, uyarıları ve devlet anlayışını gelecek kuşaklara aktarmaya çalışır."
+      },
+      "guidance": "Soru “hayatıyla ilgili ayrıntılar” istemektedir. Bilge Kağan'ı “filozof”, “sosyal devlet lideri”, “şeffaf yönetici” gibi modern değerlendirme etiketleriyle övmek yerine metin ve Kafesoğlu parçasında gerçekten verilen yaşam/eylem ayrıntılarını çıkarın."
     },
     {
       "question_id": "T2-P118-Q01",
@@ -182,32 +206,28 @@
       "printed_page": 118,
       "question_no": "Sıra Sizde",
       "prompt_summary": "Kül Tigin Âbidesi'nden deyim ve söz sanatı örnekleri bulma",
-      "answer": "Kül Tigin Âbidesi metninde yer alan deyimler ve anlatımı güçlendiren söz sanatları:",
+      "answer": "Kitaptaki tabloda verilen hazır örnekleri tekrar etmek yerine, metinden bulunabilecek ek örnekler şöyle gösterilebilir:",
       "source_locator": "basılı s.118 / PDF s.119 — Sıra Sizde",
       "answer_sections": {
-        "benzetme": "“Görür gözüm görmez gibi, bilir aklım bilmez gibi oldu.” (Kül Tigin'in ölümü karşısında yaşanan felç edici keder ve şaşkınlık, aklın ve gözün melekelerini yitirmesine benzetilmiştir).",
+        "benzetme": "“Görür gözüm görmez gibi, bilir aklım bilmez gibi oldu.” — Kül Tigin'in ölümü karşısındaki şaşkınlık ve keder benzetmeli bir söyleyişle anlatılır.",
         "deyim": [
-          "düşünceye dalmak (derin keder, tefekkür ve ıstırap içine gömülmek)",
-          "il tutmak (devlet kurmak, vatanı yönetip muhafaza etmek)",
-          "sözünü kırmamak (hatır saymak, isteği geri çevirmemek)",
-          "uçmak / uçup gitmek (vefat etmek, ruhun cennete kanatlanması)"
+          "“düşünceye dalmak”",
+          "“adı sanı yok olmak”",
+          "“sözünü kırmamak”"
         ],
         "seslenme": [
-          "“Tengri teg tengride bolmış Türk Bilge Kağan bu ödke olurtum. Sabımın tüketi eşidgil!”",
-          "“Türk, Oğuz beyleri, milleti, işitin!”",
           "“Dokuz Oğuz Beyleri, milleti! Bu sözümü iyice işit, adamakıllı dinle!”"
         ],
         "istifham": [
-          "“Türk milleti, ilini töreni kim boza bilecekti?” (Sözde soru yoluyla töreye uyulduğu sürece devleti hiçbir gücün yıkamayacağını vurgular).",
           "“Şimdiki Türk milleti, beyleri, bu zamanda itaat eden beyler olarak mı yanılacaksınız?”"
         ],
         "tezat": [
-          "“Üstte mavi gök — altta yağız yer” (Kozmik karşıtlık)",
-          "“Gece uyumadım — gündüz oturmadım” (Zaman karşıtlığı ve kesintisiz emek)",
-          "“Çıplak milleti elbiseli — fakir milleti zengin kıldım” (Sosyal durum zıtlığı)",
-          "“Az milleti çok kıldım” (Miktar ve nüfus zıtlığı)"
+          "“Çıplak milleti elbiseli, fakir milleti zengin kıldım.”",
+          "“Az milleti çok kıldım.”",
+          "“Gece uyumadım, gündüz oturmadım.”"
         ]
-      }
+      },
+      "guidance": "Tabloda hazır verilen “il tutmak”, “Türk beyleri, milleti, bunu işitin!”, “Türk milleti, ilini töreni kim bozabilecekti?” ve “güney–kuzey” örneklerini öğrencinin bulduğu yeni örnekler gibi tekrar yazmayın."
     },
     {
       "question_id": "T2-P119-COMP01",
@@ -259,8 +279,13 @@
       "printed_page": 120,
       "question_no": "2",
       "prompt_summary": "İki metnin tür ve yazılış amaçlarının anlatım tercihlerine etkisi",
-      "answer": "Metinlerin yazılış amaçları ve türsel aidiyetleri, yazarların tercih ettiği anlatım tekniklerini doğrudan belirlemiştir:\n\n1. Oğulla Buluşma (Hikâye): Amacı okuyucuda estetik bir heyecan uyandırmak ve savaşın bireydeki duygusal sarsıntısını hissettirmektir. Bu nedenle yazar; olay örgüsü, serim-düğüm-çözüm planı, geriye dönüşler (flashback), tabiat ve eşya betimlemeleri ile kahramanın iç dünyasını açığa vuran psikolojik tahlil tekniklerini seçmiştir.\n2. Kül Tigin Âbidesi (Söylev / Anıt Mezar): Amacı milleti uyarmak, devletin hafızasını ebedîleştirmek ve Kül Tigin'in kahramanlığını kayda geçirmektir. Bu nedenle anlatıcı; doğrudan seslenişler ('işitin!', 'dinle!'), keskin antitezler ('fakir-zengin', 'aç-tok'), kısa ve net hüküm cümleleri, emir kipleri ve ritmik hitabet tekniklerini kullanmıştır.",
-      "source_locator": "basılı s.120 / PDF s.121 — Yorumlayalım soru 2"
+      "answer": "Tür ve metinden hareketle yorumlanan yazılış amaçları, iki eserin anlatım tercihlerini farklılaştırır.",
+      "source_locator": "basılı s.120 / PDF s.121 — Yorumlayalım soru 2",
+      "answer_sections": {
+        "Oğulla Buluşma": "Hikâye türündedir. Metinden hareketle, savaşın aile ve birey üzerindeki etkisini baba-oğul ilişkisi üzerinden düşündürme amacı taşıdığı yorumlanabilir. Bu nedenle olay örgüsü, geriye dönüş, betimleme ve kişilerin iç dünyasını yansıtan anlatım kullanılır.",
+        "Kül Tigin Âbidesi": "Tarihî yazıt ve hitabet özellikleri taşır. Tarihî olayları kaydetme, millete seslenme/öğüt verme ve Kül Tigin'in hatırasını yaşatma amacı; doğrudan sesleniş, emir/uyarı cümleleri, tekrar ve karşıtlıkların kullanılmasını açıklar."
+      },
+      "guidance": "Oğulla Buluşma'nın “yazılış amacı” yazarın doğrudan beyanı değildir; metnin içeriği ve türünden yapılan gerekçeli bir yorum olarak sunulmalıdır."
     },
     {
       "question_id": "T2-P120-Q03",
