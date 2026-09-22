@@ -34188,8 +34188,14 @@
           "question_no": "Sıra Sizde 2",
           "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 2",
           "prompt_summary": "Öğrencinin değer yargısıyla çelişen davranışa vereceği tepkiyi gerekçelendirme",
-          "answer": "Örnek cevap: Anlatıcının “yeni yetme” sözüyle genç memuru küçümsemesini uygun bulmam. Ben olsaydım önce kişinin ne söylediğini dinler, yaşına veya kıdemine bakmadan saygılı konuşurdum. Ancak genç memurun yaşlı memurun durumunu gülümseyerek aktarması da duyarsız görünebilir; metin bunun nedenini açıklamadığı için yargımı temkinli kurarım.",
-          "guidance": "Öğrenci başka bir davranışı seçebilir. Tepki, kişisel bir değer yargısı olarak açıkça belirtilip gerekçelendirilmelidir."
+          "answer": "Bu soru öğrencinin kendi değer yargısına dayanır. Önce metindeki rahatsız edici/uygun bulunmayan söz veya davranış seçilmeli, ardından öğrencinin aynı durumda nasıl davranacağı kendi gerçek değerleriyle açıklanmalıdır.",
+          "guidance": "Öğrenci adına anlatıcının 'yeni yetme' sözünü seçmeyin ve 'ben olsaydım...' cevabını hazır yazmayın. Genç memurun, anlatıcının veya başka bir davranışın gerekçeli biçimde seçilmesi mümkündür.",
+          "answer_sections": {
+            "sectigim_soz_veya_davranis": "[...]",
+            "neden_deger_yargimla_celisiyor": "[...]",
+            "benzer_durumda_benim_tepkim": "[...]",
+            "metinden_kanit": "[...]"
+          }
         },
         "content": {
           "lead": "Önce davranışı metinden belirleyin, sonra kendi değerinizle neden çeliştiğini ve alternatif tepkinizi açıklayın.",
@@ -34364,13 +34370,21 @@
           "question_no": "Süreci Değerlendirebilme",
           "source_locator": "basılı s.279 / PDF s.280 — Süreci Değerlendirebilme",
           "prompt_summary": "Merdiven öyküsünü seçilen kişisel ölçütlerle öznel olarak değerlendirme",
-          "answer": "Örnek değerlendirme: “Konunun işlenişi” ölçütünde beğendim; çünkü sıradan bir iş yeri karşılaşması, anlatıcının acele ve yaşam önceliklerini sorgulamasına dönüşüyor. “Dil ve üslup” ölçütünde de yalın cümleler ve yinelemeler öykünün ritmini destekliyor. Başka bir öğrenci aynı ölçütü beğenmeyebilir; kendi yargısını metinden örnekle açıklaması beklenir.",
+          "answer": "Beğendim/Beğenmedim alanları öğrencinin gerçek değerlendirmesine göre doldurulmalıdır. Rehber yalnız ölçüt üretmeye ve gerekçeyi metin kanıtına bağlamaya yardım eder.",
           "answer_sections": {
-            "Konu/ana düşünce": "Gündelik karşılaşmaların insanın yaşam anlayışını değiştirebilmesi.",
-            "Dil/üslup": "Kısa, yalın ve tekrarlı anlatım; açık uçlu son.",
-            "Gerekçe": "Seçilen ölçütün okur üzerindeki etkisini belirli bir anlatım veya olay ayrıntısıyla açıklar."
+            "olasi_olcutler": [
+              "Konu/ana düşüncenin işlenişi",
+              "Dil ve üslup",
+              "Açık uçlu anlatım",
+              "Karakterlerin sunuluşu",
+              "Çağrışım gücü"
+            ],
+            "sectigim_olcut": "[...]",
+            "begendim_begenmedim": "[...]",
+            "metinden_kanit": "[...]",
+            "gerekcem": "[...]"
           },
-          "guidance": "Beğendim/beğenmedim işaretleri öğrencinin gerçek değerlendirmesine göre doldurulur; öğretmen adına tek seçim yapılmaz."
+          "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir."
         },
         "content": {
           "lead": "Kitaptaki örnek ölçütü model alın; Beğendim/Beğenmedim kararı kadar gerekçe de önemlidir.",
@@ -34986,8 +35000,15 @@
           "question_no": "Sıra Sizde 1",
           "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 1",
           "prompt_summary": "Canlandırılan rolün oluşturduğu duygu ve düşünceleri yansıtma yazısıyla değerlendirme",
-          "answer": "Örnek yansıtma: “Rolü hazırlarken karakterin sözlerinin arkasındaki amacı düşünmek, sahnedeki duyguyu daha iyi anlamama yardım etti. Prova sırasında sesimi ve bedenimi birlikte kullanmanın önemli olduğunu fark ettim. Bir sonraki çalışmada daha anlaşılır konuşmaya ve sahne arkadaşlarımı daha dikkatli dinlemeye çalışacağım.”",
-          "guidance": "Bu metin yalnızca örnek yapıyı gösterir. Öğrenci kendi yaşadığı duyguyu ve gerçek performansını yazmalıdır."
+          "answer": "Yansıtma yazısı, öğrencinin gerçekten yaptığı canlandırmanın kendisinde oluşturduğu duygu ve düşüncelere dayanmalıdır; rehber bu deneyimi öğrenci adına üretmez.",
+          "guidance": "Yaşanmamış prova, duygu veya farkındalık uydurmayın. Öğrenci gerçek performansını yansıtmalıdır.",
+          "answer_sections": {
+            "rol_hazirliginda_hissettiklerim": "[...]",
+            "canlandirma_sirasinda_fark_ettigim": "[...]",
+            "iyi_yaptigimi_dusundugum_nokta": "[...]",
+            "gelistirmek_istedigim_nokta": "[...]",
+            "sonraki_calismada_yapacagim": "[...]"
+          }
         },
         "content": {
           "lead": "Yansıtma yazınızda karakterin bir kararına veya sahnesine bağlanın; yalnız 'iyi hissettim' gibi genel ifadelerle yetinmeyin.",
@@ -35028,8 +35049,14 @@
           "question_no": "Sıra Sizde 2",
           "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2",
           "prompt_summary": "Rol arkadaşlarından alınan görüşleri performans açısından değerlendirme",
-          "answer": "Örnek değerlendirme şablonu: “Arkadaşım, karakterin duygusunu ses tonumla iyi yansıttığımı belirtti. Replik sırasını daha iyi takip etmemi önerdi. Bu geri bildirimi bir sonraki provada replik girişlerini işaretleyip karşılık verirken arkadaşımın yüzüne yönelerek uygulayacağım.”",
-          "guidance": "Görüş, gerçekten alınmış akran geri bildirimine dayanmalıdır; örnekteki yorum öğrencinin yaşadığı bir olay gibi kullanılmamalıdır."
+          "answer": "Bu değerlendirme gerçekten alınmış akran görüşüne dayanmalıdır. Rehber yalnız geri bildirimi kaydetme ve eyleme dönüştürme şablonu sağlar.",
+          "guidance": "Öğrenci adına 'arkadaşım ses tonumu beğendi' gibi alınmamış geri bildirim yazmayın.",
+          "answer_sections": {
+            "rol_arkadasimin_soyledigi_guclu_yon": "[...]",
+            "rol_arkadasimin_onerisi": "[...]",
+            "bu_goruse_katiliyorum_katilmiyorum": "[...]",
+            "sonraki_provada_uygulayacagim_degisim": "[...]"
+          }
         },
         "content": {
           "lead": "Geri bildirimi kişiye değil, gözlenebilir performans davranışına yöneltin.",
@@ -35054,6 +35081,7 @@
         "layout": "assessment",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Sıra Sizde 3 — Özgün konuşmacı kimliğinizi geliştirmek için hangi hedefleri belirleyeceksiniz?",
@@ -35077,7 +35105,14 @@
           "question_no": "Sıra Sizde 3",
           "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3",
           "prompt_summary": "Eleştiri ve deneyimlerden hareketle özgün konuşmacı kimliğini geliştirme planı",
-          "answer": "Örnek gelişim planı: Güçlü yanım olarak anlaşılır ve sakin konuşmayı korurum; prova geri bildiriminde belirlenen vurgu, tempo veya göz teması ihtiyacından birini seçip sonraki sunumda özellikle çalışırım. Metni ezberlemekle yetinmeyip dinleyiciyi izler, kendi anlatım biçimimi korurken Türkçeyi doğru ve etkili kullanmaya dikkat ederim."
+          "answer": "Özgün konuşmacı kimliği, öğrencinin aldığı gerçek eleştiriler ve kendi deneyimi üzerinden oluşturulmalıdır. Öğrenci güçlü yönünü ve geliştirmek istediği bir konuşma becerisini belirleyerek somut bir sonraki adım seçmelidir.",
+          "answer_sections": {
+            "korumak_istedigim_guclu_yon": "[...]",
+            "aldigim_gercek_elestiri_veya_fark_ettigim_ihtiyac": "[...]",
+            "gelistirecegim_beceri": "[...]",
+            "bir_sonraki_konusmada_uygulayacagim_somut_adim": "[...]"
+          },
+          "guidance": "Öğrenci adına güçlü yön, göz teması, tempo veya vurgu sorunu seçmeyin; bunlar ancak gerçek performansta gözlenmişse yazılmalıdır."
         },
         "content": {
           "lead": "Başkalarını taklit etmek yerine kendi doğal sesinizi, açık ifade biçiminizi ve kontrollü beden dilinizi geliştirmeye odaklanın.",
@@ -35202,8 +35237,14 @@
           "question_no": "1",
           "source_locator": "basılı s.284 / PDF s.285 — Konuya Başlarken soru 1",
           "prompt_summary": "Kişisel yaşantıdan hareketle edebiyat-toplum ilişkisini açıklama",
-          "answer": "Örnek cevap: Edebiyat, yaşadığımız çevredeki ilişkileri ve değişimleri seçerek anlatır; okur da kendi deneyimiyle metin arasında bağ kurar. Örneğin kuşakların teknolojiye veya işe ayırdığı zamana farklı yaklaşması bir öyküde işlenebilir. Böylece kişisel bir yaşantı toplumsal bir durumu düşünmeye açılır; ancak tek bir eser toplumun bütününü temsil etmez.",
-          "guidance": "Bu bir kişisel yorum sorusudur. Örnek cevap öğrencinin yaşantısı gibi sunulmamalı; öğrenci kendi seçtiği ilişki veya durumu yazmalıdır."
+          "answer": "Bu soru öğrencinin kendi yaşamından hareketle edebiyat-toplum ilişkisini açıklamasını ister. Rehber öğrenci adına teknoloji, kuşak ilişkisi veya başka bir yaşanmış durum seçmez.",
+          "guidance": "Öğrenci adına kişisel deneyim uydurmayın. Farklı yaşam örnekleri kabul edilir; sonuç, seçilen örnekle edebiyat-toplum bağını açıklamalıdır.",
+          "answer_sections": {
+            "kendi_yasamimdan_gozlem_veya_durum": "[...]",
+            "bu_durumun_toplumsal_yonu": "[...]",
+            "edebiyatta_nasil_islenebilir": "[...]",
+            "edebiyat_toplum_iliskisine_dair_sonucum": "[...]"
+          }
         },
         "content": {
           "lead": "Bir kitap, şiir, dizi/tiyatro metni ya da günlük yaşam deneyimi üzerinden toplumun izlerinin eserde nasıl göründüğünü açıklayın."
@@ -35331,8 +35372,8 @@
           "question_no": "2",
           "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
           "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
-          "answer": "Örnek tahmin: “Fedakârlık” başlığı ve toprakla çalışan bir kişiyi gösteren küçük görsel, bir kişinin emek vererek başka insanlara ya da ortak bir amaca katkıda bulunacağı izlenimini verebilir. Bu yalnızca başlık ve görselden doğan tahmindir; videoda gerçekten ne anlatıldığı izleme sonrasında belirlenmelidir.",
-          "guidance": "Tahminleri video izlendikten sonra geriye dönük olarak kesin bilgi gibi yazmayın."
+          "answer": "Olası tahmin: 'Fedakârlık' başlığı ile görselde ray/demir yolu hattı çevresinde fiziksel bir çalışma görülmesi, emek, sorumluluk veya bir güçlüğü giderme çevresinde bir içerik olabileceğini düşündürebilir. Bu yalnız başlık ve görselden yapılan ön tahmindir; kişi, olay, amaç ve sonuç video izlenmeden kesinleştirilmez.",
+          "guidance": "Görseli 'toprakla çalışan bir kişi' diye kesinleştirmeyin. Görülebilen unsuru betimleyin; fedakârlığın kim tarafından, kime karşı ve nasıl gerçekleştiğini videodan önce uydurmayın."
         },
         "content": {
           "lead": "Tahmini kesin olay bilgisi gibi yazmayın; hangi görsel veya başlık ipucundan yola çıktığınızı belirtin."
@@ -35646,8 +35687,14 @@
           "question_no": "1",
           "source_locator": "basılı s.287 / PDF s.288 — Metni Anlayalım soru 1 / Fedakârlık QR videosu gerekli",
           "prompt_summary": "Anadolu insanının özelliklerini Fedakârlık videosundaki örneklerle eşleştirme",
-          "answer": "Bu soru video davranışlarına dayanır. EBA kaydı açılamadığı için hangi karakter özelliğinin hangi sahnede görüldüğü belirlenemez. Öğrenci, ön bilgilerini kullanarak bir özellik seçmeli; ardından videoda gördüğü belirli bir davranışla bu özelliği doğrulamalı veya gözleminin beklentisinden farklı olduğunu belirtmelidir.",
-          "guidance": "Çalışkanlık, dayanışma veya sabır gibi genel özellikler ancak videoda gözlenen kanıtla eşleşiyorsa yazılmalıdır."
+          "answer": "Bu soru doğrudan Fedakârlık videosunda gözlenen davranışlara dayanır. Kayıt görülmeden Anadolu insanına veya videodaki kişilere belirli özellikler atanamaz.",
+          "guidance": "Çalışkanlık, dayanışma, sabır veya başka bir özelliği önceden hazır seçenek gibi yönlendirmeyin; özellik önce videodaki gerçek davranıştan çıkarılmalıdır.",
+          "answer_sections": {
+            "videoda_gozledigim_davranis": "[...]",
+            "bu_davranistan_cikardigim_ozellik": "[...]",
+            "gerekcem": "[...]",
+            "on_bilgimle_karsilastirma": "Beklentimle örtüştü / farklılaştı çünkü: [...]"
+          }
         },
         "content": {
           "lead": "Özellik etiketi tek başına yeterli değil; her özellik için videodan somut davranış veya olay kanıtı gösterin."
