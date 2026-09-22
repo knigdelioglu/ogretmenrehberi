@@ -29351,6 +29351,7 @@
         "layout": "question",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence"
         ],
@@ -29375,10 +29376,17 @@
           "question_no": "3",
           "source_locator": "basılı s.239 / PDF s.240 — soru 3",
           "prompt_summary": "Sanatsal metnin özelliklerini metindeki sanat anlayışından hareketle açıklama",
-          "answer": "Sanatsal metin, hayatı olduğu gibi kopyalamak yerine sanatçının seçtiği yaşantıları, duygu ve düşünceleri estetik bir biçimde yeniden kurar. Sözcüklerin, imgelerin ve anlatım düzeninin bilinçli seçimi okurda anlam ve duygu uyandırır. Metin aynı zamanda yazarın döneminden ve kültüründen izler taşıyabilir; farklı okurlar kendi deneyimleriyle metni farklı biçimlerde anlamlandırabilir.",
+          "answer": "Sanatsal metin, hayatı olduğu gibi aktaran bir kayıt değildir; sanatçının seçtiği insan hâllerini, duygu ve düşünceleri kendi dünyasında yeniden düzenleyip biçimlendirdiği bir anlatıdır. Bu nedenle sanatçının yaşadığı dönemin ruhundan, dünya görüşünden ve kültüründen izler taşıyabilir; aynı zamanda toplumun maddi ve manevi değerlerini sonraki kuşaklara aktarmaya katkı sağlar.",
           "evidence_quotes": [
             "hayatı yeniden kurar ve yeniden biçimlendirir"
-          ]
+          ],
+          "guidance": "Cevabı bu sayfadaki metnin açıkça kurduğu hayatı yeniden kurma, dönemi yansıtma ve kültür aktarımı ekseninde tutun. Metinde açıklanmayan alımlama kuramı, çok anlamlılık veya okur merkezli kuramsal sonuçları zorunlu cevap yapmayın.",
+          "answer_sections": {
+            "hayatla_iliskisi": "Hayattan ve insanın değişik hâllerinden hareket eder.",
+            "sanatsal_donusturme": "Hayatı yazarın dünyasında yeniden düzenler ve biçimlendirir; birebir kopyalamaz.",
+            "donem_ve_kultur": "Sanatçının döneminin ruhu, dünya görüşü ve kültürel değerleri esere yansıyabilir.",
+            "kultur_aktarimi": "Geçmiş ile gelecek arasında bağ kurmaya ve kültürel belleğin aktarılmasına katkı sağlar."
+          }
         },
         "content": {
           "lead": "Metinde geçen özel anlam, estetik ifade, hayatın yeniden kurulması ve dönem izlerini birbirleriyle ilişkilendirin."
@@ -29413,8 +29421,14 @@
           "question_no": "4",
           "source_locator": "basılı s.239 / PDF s.240 — soru 4",
           "prompt_summary": "Önceki yaşantıların edebî eseri anlamlandırmaya etkisini gerekçelendirme",
-          "answer": "Örnek cevap: Evet, daha önce yaşadığım bir ayrılık ya da bekleyişi bir eserde görmek onu benim için daha anlamlı kılabilir. Kişinin tanıdığı bir duyguyla karşılaşması, karakterin davranışlarını kendi yaşantısıyla ilişkilendirip metne daha yakından katılmasını sağlar. Bununla birlikte, farklı deneyimleri olan bir okur aynı eseri başka bir yönüyle anlamlı bulabilir.",
-          "guidance": "Bu kişisel bir yorum sorusudur. Öğrenci, yaşantıların eseri daha anlamlı kılmadığını savunabilir; gerekçesi metin-okur ilişkisini açıklıyorsa bu cevap da kabul edilmelidir."
+          "answer": "Bu soru öğrencinin gerçek yaşantısına göre cevaplanmalıdır; rehber öğrenci adına bir ayrılık, bekleyiş, kayıp veya başka bir deneyim uydurmaz. Uygulanabilir cevap şablonu: Karşılaştığım gerçek olay/durum: [...] → Eserdeki benzer olay/durum: [...] → Bu benzerlik eseri benim için daha anlamlı kıldı/kılmadı çünkü: [...].",
+          "guidance": "Kişisel deneyim alanı boş bırakılmalıdır. Öğrenci yaşantı benzerliğinin eseri daha anlamlı kıldığını da kılmadığını da savunabilir; gerekçesinin kendi gerçek deneyimi ile metin arasındaki ilişkiyi açıklaması yeterlidir.",
+          "answer_sections": {
+            "gercek_yasanti": "[...]",
+            "metindeki_benzerlik": "[...]",
+            "anlamlandirmaya_etkisi": "Daha anlamlı kıldı / kılmadı / kısmen etkiledi.",
+            "gerekce": "[...]"
+          }
         },
         "content": {
           "lead": "Cevabınız kişisel olabilir. Yalnız yaşadığınız gerçek bir deneyim veya duyguyla metindeki durum arasında nasıl bağ kurduğunuzu gerekçelendirin."
@@ -29449,8 +29463,14 @@
           "question_no": "5",
           "source_locator": "basılı s.239 / PDF s.240 — soru 5",
           "prompt_summary": "Seçilecek edebî türü ve yansıtılacak hayat yönünü gerekçelendirme",
-          "answer": "Örnek cevap: Kısa öykü yazmayı seçerdim. Farklı kuşaklardan iki kişinin aynı mahallede yaşadığı değişimi nasıl algıladığını anlatmak isterdim. Öykünün sınırlı kişi ve olayla yoğun bir yaşantıyı göstermeye elverişli olması, bu konuyu kısa ama etkili biçimde işlememi sağlayabilir.",
-          "guidance": "Tür, hayatın yönü ve gerekçe öğrencinin seçimine bağlıdır. Şiir, tiyatro, roman ya da başka bir tür için metinle tutarlı bir gerekçe sunan cevaplar da uygundur."
+          "answer": "Tek bir doğru tür veya hayat kesiti yoktur. Öğrenci kendi yazma tercihini belirlemeli ve türün imkânlarıyla anlatmak istediği hayat yönü arasında ilişki kurmalıdır.",
+          "guidance": "Öğrenci adına 'kısa öykü seçerdim' gibi bir tercih yazmayın. Şiir, hikâye, tiyatro, roman veya başka bir edebî tür seçilebilir; tür, konu ve gerekçe birbiriyle tutarlı olmalıdır.",
+          "answer_sections": {
+            "sectigim_tur": "[...]",
+            "yansitmak_istedigim_hayat_yonu": "[...]",
+            "neden_bu_tur": "[...]",
+            "turun_bu_konuyu_anlatmaya_sagladigi_imkan": "[...]"
+          }
         },
         "content": {
           "lead": "Tür seçiminizi, anlatmak istediğiniz durumun biçimine neden uygun olduğunu söyleyerek açıklayın."
@@ -29923,14 +29943,14 @@
           "prompt_summary": "Metindeki altı sözcük ve söz öbeğinin bağlamsal anlamını ve alternatiflerini bulma",
           "answer": "Aşağıdaki karşılıklar metindeki kullanıma göre verilmiştir. Karekodla sözlükten doğrulama yapılırken sözcüğün bu bağlamdaki anlamı esas alınabilir.",
           "answer_sections": {
-            "sadr-ı âzam": "Bağlamdaki anlamı sadrazam, yani hükümetin başındaki vezirdir. Öneri: sadrazam / başbakan (dönemin adlandırması korunacaksa sadrazam).",
-            "görkemli": "İhtişamlı, etkileyici, büyük ve gösterişli. Öneri: ihtişamlı, görkemli.",
+            "sadr-ı âzam": "Bağlamdaki anlamı sadrazamdır; Osmanlı devlet teşkilatındaki tarihî görev adı korunmalıdır. Öneri: sadrazam / başvezir.",
+            "görkemli": "İhtişamlı, etkileyici, büyük ve gösterişli. Öneri: ihtişamlı / gösterişli.",
             "şevk": "Bir işi yapma isteği, coşku ve heves. Öneri: istek, heyecan.",
             "çağdaş": "Aynı dönemde yaşayan veya aynı çağa ait olan. Öneri: dönemdaşı.",
             "avaze": "Ses, ün veya sesin yayılışı; Baki dizesinde adın/sesin dünyaya duyurulması anlamı öne çıkar. Öneri: ses, ün.",
             "özge": "Başka, gayrı. Öneri: başka, gayrı."
           },
-          "guidance": "“Avaze” gibi şiirsel kullanımlarda sözcüğün sözlük anlamı ile dizedeki mecazlı işlevi birlikte ele alınmalıdır."
+          "guidance": "Tarihî terimlerde modern makam adlarını eş anlamlıymış gibi kullanmayın. 'Sadr-ı âzam' için sadrazam/başvezir; şiirsel 'avaze' için sözlük anlamı ile dizedeki işlev birlikte ele alınmalıdır."
         },
         "content": {
           "lead": "Önce kelimenin geçtiği cümleden tahminde bulunun; anlamı ve yakın karşılığı ancak sonrasında açın.",
@@ -30005,13 +30025,14 @@
           "question_no": "Sıra Sizde 1-3",
           "source_locator": "basılı s.248 / PDF s.249 — Sıra Sizde",
           "prompt_summary": "Okuma öncesi tahminleri metin sonrası tespitlerle karşılaştırma",
-          "answer": "Örnek tablo: Okumadan önce başlıktan ve görsellerden Sinan’ın yaşamını, eserlerini ve mesleki gelişimini anlatan bir oyun beklendi. Okuduktan sonra metnin Sinan’ı konuşturduğu; Ayasofya’ya duyduğu hayranlığı, mimarlık öğrenimini, görevlerini ve önemli eserlerini sahne yönergeleriyle anlattığı görüldü. Tahmin ana çerçevede uyuştu; oyundaki sesler, görseller ve sahne düzeni tahmini genişletti.",
+          "answer": "Karşılaştırmanın ilk sütunu öğrencinin s.241-242'de gerçekten yazdığı okuma öncesi tahminden gelmelidir; rehber bu geçmiş cevabı sonradan üretmez. Okuma sonrasında ise metinde doğrulanan özellikler kaydedilir ve iki kayıt karşılaştırılır.",
           "answer_sections": {
-            "Okumadan önceki tahmin": "Mimar Sinan’ın yaşamı ve önemli yapıları çevresinde gelişen bir tiyatro metni olabileceği.",
-            "Okuduktan sonraki tespit": "Metin, Sinan’ın yaşam öyküsünü onun ağzından; sahne yönergeleri, farklı sesler ve yapı görselleriyle anlatır.",
-            "Değerlendirme": "Tahmin genel konu bakımından uyuşmuştur; tiyatroya özgü sahneleme biçimi okuma sonrasında belirginleşmiştir."
+            "okumadan_onceki_tahminim": "[Öğrencinin s.241-242'de daha önce yazdığı gerçek tahmin aynen/özetle buraya taşınır.]",
+            "okuduktan_sonraki_tespitim": "Metin Mimar Sinan'ın yaşamını ve mesleki gelişimini onun ağzından; farklı sesler, sahne yönergeleri, müzik ve yapı görselleriyle tiyatro biçiminde anlatır.",
+            "uyusan_yonler": "[...]",
+            "degisen_veya_genisleyen_yonler": "[...]"
           },
-          "guidance": "Öğrencilerin ilk tahminleri farklı olabilir. Değerlendirme, tahminin metinle hangi yönlerden örtüştüğünü ve nerede değiştiğini kanıtlamalıdır."
+          "guidance": "Ön tahmini metin okunduktan sonra geriye dönük olarak 'doğru tahmin' biçiminde yazmayın. Öğrencinin gerçek önceki kaydı neyse onunla karşılaştırın."
         },
         "content": {
           "lead": "s.241'de kaydettiğiniz ilk tahmini aynen koruyup yeni tespitlerinizle karşılaştırın.",
@@ -30058,6 +30079,7 @@
         "layout": "assessment",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer",
           "note"
         ],
@@ -30080,7 +30102,14 @@
           "question_no": "Fark Edelim / Vızıltı Grubu",
           "source_locator": "basılı s.248-249 / PDF s.249-250 — Fark Edelim ve vızıltı grubu",
           "prompt_summary": "Tiyatronun zihinsel ve duygusal farkındalık işlevini grup tartışmasında değerlendirme",
-          "answer": "Örnek grup sonucu: Tiyatro, insanları ve toplumsal ilişkileri sahnede görünür kılar; izleyiciye olayları başka kişilerin bakış açısından değerlendirme fırsatı verir. Bu, hem empatiyi hem de eleştirel düşünmeyi geliştirebilir. Seyirciler aynı oyunu birlikte izleyip tartıştıklarında ortak sorunlar ve değerler üzerine konuşabilirler. Etki, oyunun konusu ve sahnelemenin izleyicide uyandırdığı düşünceye göre değişebilir."
+          "answer": "Bu etkinlikte tek bir hazır grup sonucu yoktur. Gruplar kendi sosyal hayat gözlemlerinden ve gerçekten okudukları/izledikleri tiyatro eserlerinden hareketle tiyatronun zihinsel ve duygusal farkındalığa olası etkilerini tartışmalıdır.",
+          "answer_sections": {
+            "gercek_gozlem_veya_eser": "[...]",
+            "zihinsel_etki": "Bu örnek düşünme, sorgulama veya farklı bakış açısını görme bakımından ne sağladı? [...]",
+            "duygusal_etki": "Empati, duygu farkındalığı veya ilişkilere bakış bakımından ne sağladı? [...]",
+            "grup_sonucu": "Altı dakikalık tartışma sonunda ulaştığımız ortak/ayrışan görüşler: [...]"
+          },
+          "guidance": "Öğrenci veya grup adına daha önce izlenmiş bir oyun, yaşanmış sosyal deneyim ya da kesin bir etki uydurmayın. Tartışma sonucunu gerçek sınıf çalışması belirlemelidir."
         },
         "content": {
           "lead": "Altı kişilik gruplarda sözcü seçin. Önce kişisel izleniminizi söyleyin; ardından Sevda Şener'in metnindeki bir işleve bağlayın.",
