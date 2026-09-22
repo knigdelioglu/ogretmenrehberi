@@ -102,6 +102,23 @@ assert(
   "s28-q1 verbatim kısa soru olarak işaretlenmeli."
 );
 
+assert(
+  s28q1.layout === "comparison" &&
+    s28q1.content?.sections?.some((section) => section.title === "Tip") &&
+    s28q1.content?.sections?.some((section) => section.title === "Karakter"),
+  "s28-q1 tip–karakter ayrımını iki karşılaştırma kartıyla göstermeli."
+);
+assert(
+  s28q1.content?.items?.length === 3 &&
+    s28q1.answer?.guidance?.includes("tip–karakter mini uygulamasına") &&
+    s28q1.answer?.explanation?.includes("Karakter ise bireysel yönleri"),
+  "s28-q1 kavram açıklaması ve metne dayalı uygulama rehberliğini birlikte taşımalı."
+);
+assert(
+  s28q1.content?.note?.includes("ders kitabında bağımsız bir soru değildir"),
+  "Tip–karakter zenginleştirmesi kitapta varmış gibi sunulmamalı."
+);
+
 const vocabulary = karagozById.get("s25-q1");
 assert(vocabulary, "s25-q1 bulunamadı.");
 for (const term of ["Dadı", "Esbab", "Murat", "Bendeniz", "Silsile", "İspir"]) {
