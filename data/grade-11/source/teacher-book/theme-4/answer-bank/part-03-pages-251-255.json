@@ -43,8 +43,13 @@
       "question_no": "2/b-c",
       "source_locator": "basılı s.252 / PDF s.253 — Metni Anlayalım soru 2/b-c",
       "prompt_summary": "Öğrencinin etkileyici bulduğu kişilik özelliğini ve kendi başarı anlayışını gerekçelendirme",
-      "answer": "Örnek cevap: Beni en çok Sinan’ın bilgi edinmek için sürekli gözlem yapması ve öğrendiğini çalışarak uygulaması etkiliyor. Bu, başarının yalnız yetenekle değil, merak ve emekle de geliştiğini gösteriyor. Ben de başarılı olsaydım güvenilirliğim, sabrım ve iş birliğine açık oluşumla tanınmak isterdim.",
-      "guidance": "Öğrenci başka bir karakter özelliğini seçebilir. Kendi hakkında yaşanmamış başarı veya deneyim iddiası aranmaz; seçtiği özelliği açıklaması yeterlidir."
+      "answer": "2/b ve 2/c kişisel değerlendirme sorularıdır. Rehber, öğrencinin neyin kendisini etkilediğini veya hangi özellikleriyle tanınmak istediğini onun adına belirlememelidir. Metindeki karakter özellikleri yalnız seçim yapmayı destekleyen kanıt havuzu olarak kullanılabilir.",
+      "guidance": "Öğrenci adına 'beni en çok ... etkiledi' veya '... ile tanınmak isterdim' biçiminde kişisel cevap yazmayın. Değerlendirme, öğrencinin gerçek seçimi ve gerekçesine dayanmalıdır.",
+      "answer_sections": {
+        "2b_etkilendigim_ozellik": "Seçtiğim özellik: [...]. Bu özelliği metinde gösteren söz/davranış: [...]. Beni etkileme nedeni: [...].",
+        "2c_taninmak_istedigim_ozellik": "Mimar Sinan gibi başarılı biri olsaydım tanınmak istediğim özellik/özellikler: [...]. Neden: [...].",
+        "metinden_secilebilecek_kanitlar": "Örneğin Sinan'ın öğrenmeye açıklığı, gözlemciliği, çalışkanlığı, azmi, sorumluluğu veya başkasının emeğine saygısı metindeki söz ve davranışlarla tartışılabilir; öğrenci bunlardan birini seçmek zorunda değildir."
+      }
     },
     {
       "question_id": "T4-P252-Q03",
