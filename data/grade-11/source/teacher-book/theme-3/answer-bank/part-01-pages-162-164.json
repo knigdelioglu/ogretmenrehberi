@@ -11,9 +11,15 @@
       "printed_page": 162,
       "question_no": "1",
       "prompt_summary": "Yol üzerinde yürüyen insan ayrıntısının temsil ettiği anlam",
-      "answer": "Görselde tek başına ufka doğru uzanan yolda yürüyen insan figürü, hayatın geri döndürülemez bir süreç oluşunu ve insanın bu süreçte kendi seçimleriyle varoluşunu inşa etmesini temsil eder.\n\nSembolik Katmanlar:\n1. Yol ve Yürüyen İnsan: Yol, doğumdan ölüme uzanan ömür çizgisidir. İnsanın tek başına yürümesi, hayat yolculuğunun nihai olarak bireysel bir deneyim olduğunu; kişinin kendi kararları, sorumlulukları ve vicdanıyla baş başa kaldığını gösterir.\n2. Arka Plandaki Saat: Zamanın durmaksızın ve acımasızca aktığını, her adımın ömürden eksilen bir ana karşılık geldiğini simgeler.\n3. İki Yanın Karşıtlığı: Yolun bir tarafındaki canlı, yeşil vadi ile diğer tarafındaki çorak, sarı arazi; insanın yaşam boyu karşılaşacağı güzellikler ve zorluklar, neşe ve keder arasındaki kaçınılmaz dengeyi temsil eder.",
-      "guidance": "Öğrencilerin yorumlarını doğrudan görseldeki somut nesnelerle (yol, insan, saat kadranı, yeşil vadi, çorak tepe) gerekçelendirmeleri sağlanmalıdır.",
-      "source_locator": "basılı s.162 / PDF s.163 — soru 1 / görsel doğrulandı"
+      "answer": "Bu görsel tek bir zorunlu anlama indirgenmemelidir. **Örnek bir yorum olarak** yol üzerinde yürüyen insan, yaşam yolculuğunu; arka plandaki saat, zamanın geçişini; yeşil ve daha kurak görünen alanların karşıtlığı ise yaşamın farklı dönemlerini veya imkân–güçlük karşıtlığını çağrıştırabilir. Aynı ayrıntılar farklı öğrencilerde başka gerekçeli anlamlar da uyandırabilir.",
+      "guidance": "“Yol kesinlikle doğumdan ölüme ömür çizgisidir” veya “saat acımasız zamanı simgeler” gibi tek anlam dayatmayın. Öğrencinin yol, insan, saat ve çevre ayrıntılarından hareketle kurduğu farklı ama gerekçeli yorumları kabul edin.",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 1 / görsel doğrulandı",
+      "answer_sections": {
+        "Örnek yorum — yol ve insan": "Yaşamda ilerleme, bir hedefe yönelme, seçim yapma veya belirsiz bir geleceğe doğru yürüme.",
+        "Örnek yorum — saat": "Zamanın geçişi, ömrün sınırlılığı, geçmiş–şimdi–gelecek ilişkisi.",
+        "Örnek yorum — karşıt alanlar": "Kolaylık–zorluk, umut–kaygı, değişim veya yaşamın farklı dönemleri.",
+        "Değerlendirme ölçütü": "Yorumun tek doğru olması değil, görseldeki somut ayrıntıyla açıkça gerekçelendirilmesi."
+      }
     },
     {
       "question_id": "T3-P162-Q02",
@@ -21,9 +27,14 @@
       "printed_page": 162,
       "question_no": "2",
       "prompt_summary": "Görselin kişinin kendi hayatıyla ilgili çağrışımları",
-      "answer": "Örnek Öğrenci Yanıtı: Görsel bana lise hayatımın bu evresinde geleceğe, üniversiteye ve meslek seçimine doğru attığım adımları çağrıştırıyor. Zamanın (arka plandaki saat) hızla geçtiğini ve artık kararlarımı kendi irademle vermem gereken bir döneme girdiğimi hissediyorum.\n\nGerekçelendirme: Yolun bir tarafının yemyeşil, diğer tarafının kurak olması; hayatımda her şeyin her zaman kusursuz gitmeyeceğini, karşıma engeller ve çetin dönemler çıksa bile kararlılıkla yürümeye devam etmem gerektiğini hatırlatıyor. İnsanın kendi yolunu çizmesi cesaret ve emek gerektirir.",
-      "guidance": "Kişisel çağrışımlarda tek bir doğru cevap yoktur; öğrencinin kendi yaşam hedeflerini, dönüm noktalarını veya tereddütlerini görseldeki detaylarla ilişkilendirmesi teşvik edilmelidir.",
-      "source_locator": "basılı s.162 / PDF s.163 — soru 2 / görsel doğrulandı"
+      "answer": "Bu soru kişisel çağrışıma açıktır. **Örnek cevap:** “Görsel bana gelecekle ilgili kararlarımı ve önümdeki seçenekleri düşündürüyor. Yol, ilerlemeyi; saat ise karar vermek için zamanın geçmesini çağrıştırıyor. Yolun iki yanındaki farklı görünüm de yaşamda aynı anda hem umut veren hem zorlayıcı dönemler bulunabileceğini düşündürüyor.”",
+      "guidance": "Üniversite, meslek veya belirli bir aile/yaşam deneyimini öğrenci adına varsaymayın. Öğrencinin kendi gerçek deneyimiyle görsel arasında kurduğu bağ esastır.",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 2 / görsel doğrulandı",
+      "answer_sections": {
+        "Kişisel bağlantı": "[Öğrencinin kendi hayatından gerçek hedef, dönüm noktası, duygu veya deneyim]",
+        "Görsel dayanağı": "[Yol / insan / saat / çevredeki karşıtlık vb.]",
+        "Gerekçe": "“Bu ayrıntı bana ... çağrıştırıyor; çünkü ...”"
+      }
     },
     {
       "question_id": "T3-P162-Q03",
@@ -31,8 +42,20 @@
       "printed_page": 162,
       "question_no": "3",
       "prompt_summary": "Görselden hareketle yaşama dair çıkarımlar",
-      "answer": "Görselden hareketle insan yaşamına dair 4 temel felsefi ve edebi çıkarıma ulaşılır:\n\n1. Yaşam Doğrusal ve Geri Dönüşsüz Bir Süreçtir: Zaman (saat) durmaz; insan adımlarını geçmişe değil, yalnızca geleceğe doğru atabilir.\n2. Hayat Karşıtlıkların Bir Aradalığıdır: Yeşillik ile çoraklık, sevinç ile hüzün, kolaylık ile zorluk hayatın iki yakasıdır; olgunlaşmak bu iki gerçeği de kucaklamayı gerektirir.\n3. İnsan Kendi Yolunun Mimarıdır: Yol hazır gibi görünse de üzerinde yürümek, yön seçmek ve menzile varmak bireyin kendi iradesine ve çabasına bağlıdır.\n4. Yolda Olmak Hedefe Varmaktan Değerlidir: Yaşam, yalnızca varılacak son duraktan ibaret değildir; yol boyunca görülen manzaralar, hissedilen duygular ve edinilen tecrübeler insanı insan yapar.",
-      "source_locator": "basılı s.162 / PDF s.163 — soru 3 / görsel doğrulandı"
+      "answer": "Görselden yaşama ilişkin farklı çıkarımlar yapılabilir. Örneğin zamanın geçmesi, insanın bir yol üzerinde ilerlemesi, seçim ve belirsizlik, umut ve güçlüklerin bir arada bulunması, yaşamın değişim içermesi gibi düşünceler görsel ayrıntılarıyla ilişkilendirilebilir. Bunların hiçbiri tek zorunlu yorum değildir.",
+      "source_locator": "basılı s.162 / PDF s.163 — soru 3 / görsel doğrulandı",
+      "answer_sections": {
+        "Olası çıkarım alanları": [
+          "Zaman ve değişim",
+          "İlerleme ve yön seçme",
+          "Belirsizlik ve gelecek",
+          "Umut ile güçlüğün bir aradalığı",
+          "Bireysel yolculuk ve deneyim"
+        ],
+        "Örnek gerekçelendirme": "“Saat zamanın geçişini düşündürdüğü için yaşamın değişim içinde olduğunu çıkarıyorum.”",
+        "Açık uçluluk": "Öğrenci, görseldeki gerçek bir ayrıntıya dayandırdığı başka bir yaşam çıkarımı da yapabilir."
+      },
+      "guidance": "“İnsan kendi yolunun mimarıdır”, “yolda olmak hedefe varmaktan değerlidir” gibi belirli felsefi yargıları görselin zorunlu mesajı olarak vermeyin."
     },
     {
       "question_id": "T3-P162-Q04",
@@ -40,8 +63,8 @@
       "printed_page": 162,
       "question_no": "4",
       "prompt_summary": "Görsele uygun roman adı önerme ve gerekçelendirme",
-      "answer": "Örnek Başlık Önerileri ve Gerekçeleri:\n\n1. Öneri: 'Zamanın Gölgesinde Tek Başına'\nGerekçe: Kapaktaki devasa saat zamanın kaçınılmaz baskısını, yolda tek başına yürüyen insan ise bireyin varoluşsal yalnızlığını ve iç hesaplaşmalarını anlatan psikolojik bir roman içeriğini çağrıştırır.\n\n2. Öneri: 'İki İklim Arasında'\nGerekçe: Yolun solundaki yeşil vadi ile sağındaki çorak arazi, roman kahramanının gelenekle modernlik, arzuyla sorumluluk veya iki farklı hayat tercihi arasında yaşadığı derin çatışmayı simgeler.\n\n3. Öneri: 'Akrep, Yelkovan ve Adımlar'\nGerekçe: Mekanik zamanın soğuk ritmi ile insanın kendi kaderine doğru attığı canlı adımların dramatik gerilimini yansıtır.",
-      "guidance": "Öğrencinin önerdiği roman adının görseldeki yol, zaman, zıtlıklar veya yalnızlık unsurlarından en az biriyle kurgusal bir bağ kurması beklenir.",
+      "answer": "Bu soru yaratıcı ve açık uçludur. Aşağıdaki başlıklar yalnız **örnek modeldir**:\n\n- **“Zamanın Gölgesinde”** — saat ve yol ayrıntıları, zaman içinde ilerleyen bir kahramanı çağrıştırabilir.\n- **“İki Yol Arasında”** — çevredeki karşıtlıklar, farklı yaşam seçenekleri veya dönemleri üzerine bir roman fikri doğurabilir.\n- **“Adımlar”** — yürüyen insan figürü, ilerleme ve yaşam yolculuğu çağrışımı yaratabilir.\n\nÖğrencinin önerdiği başka bir ad, görseldeki gerçek bir ayrıntıyla gerekçelendirildiğinde geçerlidir.",
+      "guidance": "Başlığın mutlaka psikolojik roman, varoluşsal yalnızlık, gelenek–modernlik veya kader teması taşıması gerekmez. Başlık–görsel bağına odaklanın.",
       "source_locator": "basılı s.162 / PDF s.163 — soru 4 / görsel doğrulandı"
     },
     {
@@ -50,8 +73,14 @@
       "printed_page": 163,
       "question_no": "5",
       "prompt_summary": "Radyo ve kayıt altına alınan mülakat görsellerinin çağrıştırdıkları",
-      "answer": "Kitap s.163'teki iki görsel insan yaşamının ve düşüncesinin farklı iletişim kanallarıyla kayda geçirilmesini ve sanata dönüşmesini simgeler:\n\n1. Radyo Görseli: Sesin gücünü, kitle iletişimini ve edebiyatın sesli formlarını (radyo tiyatrosu, arkası yarın, sesli hikâye) çağrıştırır. Görsel olmadan yalnızca ses ve efektlerle dinleyicinin zihninde canlı dünyalar kurma gücünü temsil eder (3. Temadaki 'Direnişin Ustaları' radyo tiyatrosu kazanımının görsel ön hazırlığıdır).\n2. Kayıt Altına Alınan Mülakat Görseli: Bir sanatçının, tanığın veya düşünürün yaşam tecrübelerini, anılarını ve fikirlerini soru-cevap yoluyla belgelemeyi (mülakat, sözlü tarih, biyografik kayıt) çağrıştırır (3. Temadaki 'Hayalî Mülakat' konuşma atölyesinin ön hazırlığıdır).\n\nOrtak Çağrışım: Her iki görsel de 'Yaşamın İzinde' temasının temel omurgasını; yani insan tecrübesinin sesle, konuşmayla ve kayıtla edebî bir hafızaya dönüştürülmesini ifade eder.",
-      "source_locator": "basılı s.163 / PDF s.164 — soru 5 / görseller doğrulandı"
+      "answer": "Görseller farklı iletişim ve kayıt biçimlerini çağrıştırabilir. **Radyo görseli** ses, yayın, dinleyici, haber, müzik veya radyo tiyatrosunu; **kayıt yapılan söyleşi görseli** ise soru-cevap, görüşme, bir kişinin düşünce ve deneyimlerinin ses/görüntüyle kaydedilmesini çağrıştırabilir. Öğrencinin görsel ayrıntılardan hareketle kurduğu başka bağlantılar da kabul edilmelidir.",
+      "source_locator": "basılı s.163 / PDF s.164 — soru 5 / görseller doğrulandı",
+      "answer_sections": {
+        "Radyo görselinden olası çağrışımlar": "Sesli yayın, dinleme, haber, müzik, radyo tiyatrosu, geniş bir dinleyici kitlesine ulaşma.",
+        "Söyleşi/kayıt görselinden olası çağrışımlar": "Soru-cevap, mülakat, kişinin düşüncelerinin veya yaşam deneyimlerinin kayda alınması.",
+        "Ortak yön için olası yorum": "İnsanların sözünün, sesinin veya deneyiminin iletişim araçlarıyla başkalarına aktarılması."
+      },
+      "guidance": "Bu görselleri ilerideki “Direnişin Ustaları” veya “Hayalî Mülakat” görevlerinin kesin ön hazırlığı diye öğrenci cevabına eklemeyin. Soru yalnız görsellerin çağrışımını ister."
     },
     {
       "question_id": "T3-P163-Q06",
@@ -59,19 +88,19 @@
       "printed_page": 163,
       "question_no": "6",
       "prompt_summary": "Alev Alatlı'yı tanıtan metin ile Sehî Beg tezkiresindeki Yahyâ maddesini karşılaştırma",
-      "answer": "Alev Alatlı metni ile Sehî Beg'in Heşt Bihişt tezkiresindeki Yahyâ maddesi, bir edebiyatçıyı hayatı ve sanatı üzerinden tanıtma amacı güden iki farklı döneme ait metinlerdir:",
+      "answer": "İki metin de bir edebiyatçı hakkında bilgi verir ve onun edebî yönüne değinir; ancak verdikleri bilgi türü ve anlatım biçimleri belirgin biçimde farklıdır.",
       "answer_sections": {
         "ortak_ozellikler": [
-          "Her iki metin de bir edebiyat sanatçısının kökeni, mesleği ve hayatına dair somut bilgiler verir.",
-          "Sanatçıların edebî kişiliklerini, eserlerini ve üslup özelliklerini tanıtmayı amaçlar.",
-          "Kişi tanıtımı (biyografi / tezkire) türünün kendi dönemlerindeki temsilcileridir."
+          "Her iki metin de bir edebiyatçı hakkında bilgi verir.",
+          "Her iki metinde de sanatçının edebî kişiliği veya üslubuyla ilgili değerlendirme bulunur.",
+          "Her iki metin de sanatçının eser veya eser üretimiyle ilgili bilgi içerir."
         ],
         "farkliliklar": {
-          "alev_alatli_metni": "Modern, akademik ve çözümleyici bir edebiyat sözlüğü maddesidir. Yazarın romanlarındaki düşünsel temaları (yeni dünya düzeni, toplumsal afazi), söz varlığını, terim zenginliğini ve anlatım tekniklerini (bilinç akışı, hiciv, makale üslubu) ayrıntılı biçimde irdeler.",
-          "yahya_tezkire_maddesi": "16. yüzyıl klasik divan edebiyatı tezkiresi geleneğine uygun olarak son derece kısa, özlü ve övgüye dayalıdır. Şairin sipahi olduğunu, Arnavut asıllı olduğunu, tatlı sözlü ve hoş söyleyişli üslubunu ve 'Şah u Gedâ' adlı eserinde kendi hâlini anlattığını geleneksel tezkire kalıplarıyla belirtir."
+          "alev_alatli_metni": "Alev Alatlı'nın romanlarında ele aldığı toplumsal-siyasal konuları, söz varlığını, deyim/terim kullanımını ve hiciv, bilinç akışı, deneme-makale üslubu gibi anlatım özelliklerini ayrıntılı ve çözümleyici biçimde inceler. Metin Alatlı'nın kökeni ve mesleğini tanıtan bir yaşam öyküsü değildir.",
+          "yahya_tezkire_maddesi": "Yahyâ'nın İstanbul'da bulunduğunu, sipahi ve Arnavut asıllı olduğunu, yeni üslubunu, tatlı sözlü/hoş söyleyişli oluşunu ve Şah u Gedâ adlı eserini kısa ve övgü içeren tezkire söyleyişiyle bildirir."
         }
       },
-      "explanation": "Bu karşılaştırma, 16. yüzyıldaki şair tezkireleri ile Cumhuriyet dönemi biyografik edebiyat sözlükleri arasındaki tarihsel ve yöntemsel evrimi kavramayı sağlar.",
+      "explanation": "Karşılaştırmanın güvenli ekseni, bir sanatçı hakkında *hangi tür bilgilerin* verildiği ve bu bilgilerin ne kadar ayrıntılı/özlü sunulduğudur. Alev Alatlı parçasını modern bir biyografi gibi göstermemek gerekir.",
       "source_locator": "basılı s.163 / PDF s.164 — soru 6"
     },
     {
@@ -80,10 +109,15 @@
       "printed_page": 164,
       "question_no": "1",
       "prompt_summary": "Edebiyat sanatçısı ile ortaya koyduğu eser arasındaki ilişki",
-      "answer": "Edebiyat sanatçısı ile ortaya koyduğu eser arasında organik, dönüştürücü ve estetik bir bağ vardır:\n\n1. Yaşam Deneyimi Ham Malzemedir: Sanatçının çocukluğu, tanıklıkları, geçirdiği hastalıklar, aşkları, acıları ve yaşadığı dönemin toplumsal buhranları eserlerinin zeminini oluşturur. Peyami Safa'nın çocukluğundaki kemik rahatsızlığını 'Dokuzuncu Hariciye Koğuşu'na aktarması bunun somut örneğidir.\n2. Kurmaca ve Estetik Dönüşüm: Edebî eser asla bir anı defteri veya tutanak değildir. Yazar gerçek yaşamdan aldığı olay ve kişileri eler, değiştirir, hayal gücüyle zenginleştirir ve kurmaca dünyanın yasalarına göre yeniden biçimlendirir.\n3. Evrensel Boyuta Ulaşma: Yazar kendi bireysel ızdırabını veya neşesini anlatırken onu bütün insanlığın ortak duygusuna tercüman olacak bir estetik derinliğe ulaştırır; böylece eser yazarın şahsını aşarak bağımsız bir sanat varlığı kazanır.",
-      "explanation": "Yazarın hayatını bilmek eserin ipuçlarını yakalamaya yardımcı olur; ancak eseri yalnızca yazarın biyografisine indirgemek sanatın kurmaca doğasını gözden kaçırmak demektir.",
-      "guidance": "Öğretmen, Peyami Safa'nın 'Romanın mevzuu insandır... Hakikatte ben ruh ve beden doktoru değilim. Sadece romancıyım.' sözünden hareketle yazarın gözlemci ve dönüştürücü kimliğini vurgulamalıdır.",
-      "source_locator": "basılı s.164 / PDF s.165 — soru 1"
+      "answer": "Peyami Safa'nın mülakatından hareketle sanatçı ile eseri arasında doğrudan özdeşlik değil, **seçme ve dönüştürme ilişkisi** olduğu söylenebilir. Yazar kendi hayatından parçalar ve başka insanların deneyimlerinden yararlanabilir; fakat bunları kurmaca içinde değiştirerek, birleştirerek veya yaşanmamış parçalar ekleyerek yeni bir eser oluşturur. Bu nedenle edebî eser, yazarın hayatının birebir kaydı değildir.",
+      "explanation": "Mülakatta Safa'nın çocukluk dönemindeki **sağ kolunda ciddi bir rahatsızlıktan** söz edilir. Kaynak bunu “kemik rahatsızlığı” diye adlandırmaz.",
+      "guidance": "“Aşkları, çocukluğu, toplumsal buhranları her eserin zorunlu ham maddesidir” gibi genel liste vermek yerine, bu metindeki Safa örneği üzerinden yaşanmışlık–kurmaca ayrımını kurdurun.",
+      "source_locator": "basılı s.164 / PDF s.165 — soru 1",
+      "answer_sections": {
+        "Yaşantıdan yararlanma": "Safa, romanlarında kendi hayatından parçalar bulunduğunu ve bazı eserlerinde başkalarının deneyimlerinden de yararlandığını söyler.",
+        "Kurmaca dönüşüm": "Yaşanmış olaylar romanın tek malzemesi değildir; yazar seçim yapar ve yaşanmamış parçalar da kurar.",
+        "Sonuç": "Yazarın yaşamını bilmek bazı bağlantıları anlamaya yardımcı olabilir; ancak eseri yalnız biyografiyle açıklamak doğru değildir."
+      }
     },
     {
       "question_id": "T3-P164-Q02",
@@ -91,8 +125,14 @@
       "printed_page": 164,
       "question_no": "2",
       "prompt_summary": "'Hayatımı yazsam roman olurdu.' sözünün hayat ile roman arasında kurduğu ilişki",
-      "answer": "'Hayatımı yazsam roman olurdu.' sözü, kişinin kendi yaşadığı olayları sıradan bir gündelik akıştan öte; dramatik çatışmalar, büyük kırılmalar, beklenmedik sürprizler ve derin acılarla dolu gördüğünü ifade eder.\n\nYorum ve Edebi Hakikat:\n- Neden Romanla İlişkilendirilir?: Roman sanatı insanın iç dünyasındaki buhranları, toplumsal engellerle mücadelesini ve kader anlarını anlattığı için, insanlar hayatlarındaki olağanüstü dönemleri ancak bir roman kurgusuyla açıklayabileceklerini düşünürler.\n- Gerçek Hayat ile Roman Ayrımı: Ancak gerçek bir hayat hikâyesi kendiliğinden romana dönüşmez. Bir hayatın roman olabilmesi için; olayların sebep-sonuç ilişkisine bağlanması, karakterlerin derinleştirilmesi, gereksiz ayrıntıların ayıklanması ve güçlü bir dil ve üslup mimarisiyle yeniden kurgulanması gerekir.",
-      "source_locator": "basılı s.164 / PDF s.165 — soru 2"
+      "answer": "“Hayatımı yazsam roman olurdu.” sözü, kişinin kendi yaşamında anlatılmaya değer, sıra dışı, beklenmedik, yoğun veya kendisi için anlamlı olaylar bulunduğunu düşündüğünü ifade edebilir. Bu ifade yalnız acı ve büyük dramlarla sınırlı değildir. Bir yaşamın romana dönüşmesi ise olayların seçilip düzenlenmesini, kişilerin ve çatışmaların kurmaca bütünlük içinde işlenmesini ve dil-anlatım yoluyla yeniden kurulmasını gerektirir.",
+      "source_locator": "basılı s.164 / PDF s.165 — soru 2",
+      "answer_sections": {
+        "Sözün olası anlamı": "Kişi hayatını olaylı, ilginç, beklenmedik veya anlatılmaya değer buluyor olabilir.",
+        "Romanla farkı": "Gerçek hayatta yaşanmış olmak, bir anlatıyı kendiliğinden roman yapmaz.",
+        "Kurmaca boyutu": "Romancı olayları seçer, sıralar, dönüştürür ve anlatım yoluyla estetik bir bütün kurar."
+      },
+      "guidance": "“Derin acılar, kader anları ve büyük kırılmalar olmak zorundadır” gibi tek dramatik açıklama vermeyin. Öğrencinin gerekçeli farklı yorumlarını kabul edin."
     },
     {
       "question_id": "T3-P164-Q03",
@@ -100,14 +140,20 @@
       "printed_page": 164,
       "question_no": "3",
       "prompt_summary": "Yazarın kişisel deneyimlerini romana yansıtmasının inandırıcılığa etkisi",
-      "answer": "Yazarın kişisel deneyimlerini romana yansıtması inandırıcılık bakımından iki boyutlu bir etki üretir:\n\n1. Sahicilik ve Psikolojik Derinlik Katması: Yazar bizzat yaşadığı, kokusunu duyduğu, acısını çektiği bir durumu (örneğin Peyami Safa'nın hastane koğuşlarındaki çaresizliği ve ameliyat korkusunu) anlattığında; mekân betimlemeleri, psikolojik tahliller ve duygu tonu son derece canlı ve sahici olur. Bu durum okuyucunun anlatılan dünyaya güven duymasını ve empati kurmasını kolaylaştırır.\n2. Peyami Safa'nın 'Edebî Gerçeklik' Paradoksu: Safa'nın mülakatta belirttiği gibi, 'Romanda yaşanmamış kısımlar, yaşanmışlardan daha gerçektirler. Çünkü roman olağanı olmuş göstermek sanatıdır.' Gerçek hayatta yaşanan her olay kurgu içinde inandırıcı durmayabilir. Sanatta inandırıcılık, olayın 'bizzat yaşanmış olmasından' değil, kurmaca yapının kendi iç mantığına ve estetik inandırma gücüne uygunluğundan kaynaklanır.",
+      "answer": "Kişisel deneyim, yazara ayrıntı, gözlem ve duygu malzemesi sağlayabilir; ancak **tek başına inandırıcılık garantisi değildir**. Peyami Safa'nın mülakatındaki asıl vurgu, otobiyografik malzemenin yaratma özgürlüğünü sınırlayabileceği ve romanda yaşanmamış parçaların da çok güçlü bir gerçeklik etkisi yaratabileceğidir. Bu nedenle romanın inandırıcılığı, olayların gerçekten yaşanmasından çok kurmaca dünyanın kendi içinde tutarlı ve ikna edici kurulmasına bağlıdır.",
       "evidence_quotes": [
         "romanda yaşanmamış kısımlar, yaşanmışlardan daha gerçektirler",
         "roman olağanı olmuş göstermek sanatıdır"
       ],
-      "explanation": "Otobiyografik romanlarda yazar kendi hayatına çok sıkı bağlandığında yaratma hürriyeti daralabilir. Bu nedenle iyi bir romancı, yaşanmış hatırayı kurmacanın özgürlüğü içinde eriterek edebî bir gerçekliğe yükseltir.",
-      "guidance": "Öğretmen, 'Yaşanmış bir olay her zaman inandırıcı mıdır, yoksa iyi kurgulanmış bir hayal gerçeğin yerine geçebilir mi?' sorusuyla edebî gerçeklik kavramını sınıfta tartıştırmalıdır.",
-      "source_locator": "basılı s.164 / PDF s.165 — soru 3"
+      "explanation": "Kaynakta Peyami Safa'nın “ameliyat korkusu” veya hastane koğuşlarındaki belirli duyguları bu sorunun kanıtı olarak verilmez; bunları hazır biyografik ayrıntı olarak eklememek gerekir.",
+      "guidance": "Öğrenciden “Gerçekten olmuş bir olay kötü kurgulanırsa inandırıcı olabilir mi?” ve “Hiç yaşanmamış bir olay iyi kurulursa inandırıcı olabilir mi?” sorularıyla iki yönlü değerlendirme isteyin.",
+      "source_locator": "basılı s.164 / PDF s.165 — soru 3",
+      "answer_sections": {
+        "Kişisel deneyimin katkısı": "Yazara bildiği bir durum hakkında ayrıntı ve gözlem malzemesi sağlayabilir.",
+        "Sınırı": "Yaşanmış olması, bir olayın romanda otomatik olarak daha inandırıcı olacağı anlamına gelmez.",
+        "Safa'nın görüşü": "Otobiyografik roman yaratma özgürlüğünü kısıtlayabilir; yaşanmamış parçalar da kurmacada güçlü bir gerçeklik etkisi oluşturabilir.",
+        "Sonuç": "İnandırıcılık = yaşanmışlık değil; kurmaca tutarlılık, seçme-dönüştürme ve anlatım gücü."
+      }
     }
   ]
 }
