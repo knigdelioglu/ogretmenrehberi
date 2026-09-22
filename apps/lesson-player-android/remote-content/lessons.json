@@ -37005,6 +37005,7 @@
         "layout": "assessment",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Yazmayı Yönetebilme 1 — Bir afişte ilk dikkatinizi ne çeker?",
@@ -37028,7 +37029,13 @@
           "question_no": "1",
           "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 1",
           "prompt_summary": "Afişte dikkati çeken tasarım unsurunu açıklama",
-          "answer": "Örnek cevap: Önce büyük ölçekli ana görsel ve kısa, belirgin başlık dikkatimi çeker. Güçlü renk karşıtlığı da uzaktan fark edilmeyi kolaylaştırır. Ancak hangi unsurun ilk algılandığı afişin tasarımına ve izleyicinin bakışına göre değişebilir."
+          "answer": "Bu soru kişisel algıya açıktır; afişte ilk dikkat çeken unsur öğrenciye ve incelenen afişe göre değişebilir. Öğrenci gerçekten dikkatini çeken ögeyi adlandırıp bunun neden öne çıktığını açıklamalıdır.",
+          "answer_sections": {
+            "ilk_dikkatimi_ceken_unsur": "[...]",
+            "neden": "[...]",
+            "tasarimla_iliskisi": "Boyut, konum, renk karşıtlığı, başlık, görsel veya başka bir özellik: [...]"
+          },
+          "guidance": "Öğrenci adına 'önce büyük görsel dikkatimi çeker' gibi sabit bir kişisel algı cevabı vermeyin."
         },
         "content": {
           "lead": "Renk, slogan, fotoğraf, tipografi veya başka bir unsur seçebilirsiniz; nedenini kısa algılama süresiyle ilişkilendirin."
@@ -37446,8 +37453,14 @@
           "question_no": "1",
           "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 1",
           "prompt_summary": "Afiş hazırlama sürecindeki duygu, düşünce ve davranış değişimini öz değerlendirmeyle açıklama",
-          "answer": "Örnek yansıtma: “Taslak hazırlarken çok sayıda görsel ve sözü bir arada kullanmak istedim; ölçütleri gözden geçirince tek bir iletiye odaklanmanın daha anlaşılır olduğunu fark ettim. Geri bildirimi aldıktan sonra başlığı kısalttım ve görseli büyüttüm. Sonraki çalışmada taslağı daha erken paylaşacağım.”",
-          "guidance": "Bu yalnızca örnek yapıdır; öğrencinin kendi yaşadığı değişimi ve yaptığı düzenlemeyi anlatması gerekir."
+          "answer": "Bu öz değerlendirme öğrencinin gerçekten yaşadığı afiş hazırlama sürecine dayanmalıdır. Rehber duygu, düşünce veya davranış değişimini öğrenci adına uydurmaz.",
+          "guidance": "Başlığı kısalttım, görseli büyüttüm gibi yapılmamış düzenlemeleri örnek öğrenci geçmişi olarak yazmayın.",
+          "answer_sections": {
+            "baslangictaki_duygu_dusunce_davranisim": "[...]",
+            "surecte_degisen_nokta": "[...]",
+            "degisime_yol_acan_gercek_deneyim_veya_geri_bildirim": "[...]",
+            "sonraki_calismada_yapacagim": "[...]"
+          }
         },
         "content": {
           "lead": "Başlangıçtaki tasarım anlayışınız ile son üründeki kararlarınızı karşılaştırın; gerçek süreçte yaşamadığınız değişimi yazmayın."
@@ -37521,8 +37534,14 @@
           "question_no": "3",
           "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 3",
           "prompt_summary": "Afişte kullanılan görsel ve alıntıları telif, hakkaniyet ve dürüstlük açısından değerlendirme",
-          "answer": "Kullandığım görseli kendim üretmediysem kullanım izni veya lisans koşulunu kontrol eder, gerekiyorsa kaynağını belirtirim. Başka bir afişi olduğu gibi kopyalamam; alıntıyı kendi sözüm gibi göstermem ve bağlamından koparmam. Böylece emeğe saygı ve içerik sahipliğine ilişkin dürüstlük korunur.",
-          "guidance": "Bu cevap genel sınıf içi uygulama rehberidir; hukuki görüş yerine geçmez."
+          "answer": "Afişte gerçekten kullanılan her görsel ve alıntı ayrı ayrı değerlendirilmelidir. Öğrenci, kaynağını ve kullanım koşulunu bildiği materyalleri belirtmeli; başkasının emeğini kendi üretimi gibi göstermemelidir.",
+          "guidance": "Öğrenci adına hangi görseli kullandığını veya izin/lisans kontrolü yaptığını varsaymayın. Genel telif ilkelerini uygulama şablonu olarak verin; hukuki görüş üretmeyin.",
+          "answer_sections": {
+            "kullandigim_gorsel_veya_alinti": "[...]",
+            "kaynak_sahibi": "[...]",
+            "kullanim_izni_lisans_veya_kaynak_gosterimi": "[...]",
+            "hakkaniyet_ve_durustluk_degerlendirmem": "[...]"
+          }
         },
         "content": {
           "lead": "Kendi üretiminiz ile dışarıdan aldığınız içeriği ayırın; izinsiz görseli veya başkasının tasarımını kendi üretiminiz gibi sunmayın."
@@ -37892,8 +37911,14 @@
           "question_no": "4",
           "source_locator": "basılı s.304-305 / PDF s.305-306 — Soru 4",
           "prompt_summary": "Şiirdeki çadırın içine eklenecek duyguyu seçip gerekçelendirme",
-          "answer": "Örnek sözlü cevap: Çadıra “güven” duygusunu eklerdim. Şiirde çocukların utanma, vicdan, sevgi ve kardeşlik içinde yaşayabileceği bir yer tasarlanıyor; güven, herkesin bu ortak yerde korkmadan ve dışlanmadan bulunabilmesini sağlar.",
-          "guidance": "Öğrenci umut, huzur, merhamet veya başka bir duygu seçebilir. Seçimini şiirdeki çocuk, okul, oyun, sevinç ya da kardeşlik düşüncesiyle ilişkilendirmelidir."
+          "answer": "Bu soru kişisel ve açık uçludur. Öğrenci çadıra eklemek istediği duyguyu kendisi seçmeli; seçimini şiirdeki somut bir söz, değer veya yaşam tasarısıyla ilişkilendirmelidir.",
+          "guidance": "Öğrenci adına 'güven eklerdim' gibi tek bir tercih yapmayın. Metinle gerekçelendirilen başka duygular da kabul edilmelidir.",
+          "answer_sections": {
+            "sectigim_duygu": "[...]",
+            "siirden_dayandigim_ayrinti": "[...]",
+            "bu_duygunun_cadira_katkisi": "[...]",
+            "olasi_ama_zorunlu_olmayan_secimler": "Umut, güven, huzur, merhamet, dayanışma vb. yalnız örnek olasılıklardır."
+          }
         },
         "content": {
           "lead": "Umut, sevgi, güven, merhamet veya başka bir duygu seçebilirsiniz; seçiminizi metindeki somut ayrıntılarla ilişkilendirin."
@@ -37929,14 +37954,14 @@
           "question_no": "5",
           "source_locator": "basılı s.305 / PDF s.306 — Soru 5 / dört görsel gerçek PDF sayfasından doğrulandı",
           "prompt_summary": "Şiire uygun afiş için görsel seçip gerekçelendirme",
-          "answer": "Örnek tercih: Kiraz çiçeklerini gösteren görsel ile birlikte oynayan aile/çocuk görselini kullanırdım. İlki doğayı ve büyümeyi, ikincisi sevgi, paylaşma ve çocukların mutluluğunu çağrıştırır; bu yönleri şiirdeki ortak yaşam tasarısıyla örtüşür.",
+          "answer": "Bu soru görsel seçimine ve gerekçeye açıktır; tek bir zorunlu afiş görseli yoktur. Öğrenci seçtiği görselin şiirdeki hangi düşünceyi desteklediğini açıklamalıdır.",
           "answer_sections": {
-            "Çiçekli dal": "Doğal güzellik, umut ve büyümeyi destekler.",
-            "Apartmanlar": "Barınma ve ortak yaşamı çağrıştırabilir; şiirdeki çadır fikriyle ilişki kurulacaksa gerekçe açıklanmalıdır.",
-            "Aile ve çocuklar": "Sevgi, kardeşlik, oyun ve çocukların güvenli yaşamı düşüncesini görünür kılar.",
-            "Orman görevlisi": "Doğayı koruma ve başkaları için emek verme ile ilişkilendirilebilir; şiirle bağlantı gerekçelendirilmelidir."
+            "Görsel 1 — çiçekli dal": "Doğa, güzellik, büyüme veya şiirdeki ağaç imgesiyle ilişkilendirilebilir; botanik türü görselden kesinleştirilmez.",
+            "Görsel 2 — apartmanlar": "Barınma ve birlikte yaşam çağrışımı kurulabilir; şiirdeki çadır fikriyle bağ gerekçelendirilmelidir.",
+            "Görsel 3 — açık havada birlikte vakit geçiren yetişkin ve çocuklar": "Çocuk, oyun, sevgi, paylaşma veya birlikte yaşam düşünceleriyle ilişkilendirilebilir.",
+            "Görsel 4 — orman yangınına müdahale görüntüsü": "Sorumluluk, dayanışma, doğayı koruma veya zorluğa karşı ortak çaba ile ilişkilendirilebilir; şiirle bağ öğrenci tarafından açıklanmalıdır."
           },
-          "guidance": "Tek bir zorunlu görsel seçimi yoktur. Öğrenci hangi görseli seçtiğini ve şiirin hangi düşüncesini desteklediğini açıklamalıdır."
+          "guidance": "'Kiraz çiçeği' gibi görselden kesinleştirilemeyen tür adı kullanmayın. Öğrenci bir, birkaç veya tüm görselleri gerekçeli biçimde seçebilir."
         },
         "content": {
           "lead": "Her görsel için 'ne görüyorum → metindeki hangi düşünceyle bağlantılı → afiş mesajını nasıl güçlendiriyor?' zincirini kurun.",
@@ -38265,6 +38290,7 @@
         "layout": "assessment",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer",
           "note"
         ],
@@ -38289,7 +38315,13 @@
           "question_no": "13",
           "source_locator": "basılı s.307 / PDF s.308 — Soru 13 / Anadolu İnsanı-Aidiyet QR videosu",
           "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-          "answer": "Soru, Anadolu İnsanı / Aidiyet videosundaki kişilerin davranışlarına dayanır. EBA kaydı bu incelemede açılamadığı için belirli özellikler video kanıtıymış gibi yazılamaz. Öğrenci videoda görülen uyum, dayanışma, emek veya yerel bilgi gibi özelliklerden yalnızca kanıt bulduklarını seçmeli; her birini gerçek bir davranış, söz ya da mekânla ilişkilendirmelidir."
+          "answer": "Bu soru Anadolu İnsanı / Aidiyet QR videosundaki gerçek kişi ve davranışlara dayanır. Video görülmeden insanların belirgin özellikleri listelenemez.",
+          "answer_sections": {
+            "videoda_gozledigim_kisi_veya_davranis": "[...]",
+            "cikardigim_ozellik": "[...]",
+            "video_kanitim": "[...]"
+          },
+          "guidance": "Uyum, dayanışma, emek, yerel bilgi veya başka bir özelliği video öncesinde hazır sonuç olarak önermeyin. Özellik videodaki gerçek kanıttan çıkarılmalıdır."
         },
         "content": {
           "lead": "Özellik adı tek başına yeterli değildir; videoda gerçekten gördüğünüz davranış, söz veya sahneyi kanıt gösterin.",
@@ -38301,6 +38333,7 @@
         "layout": "assessment",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer",
           "note"
         ],
@@ -38325,7 +38358,13 @@
           "question_no": "14",
           "source_locator": "basılı s.307 / PDF s.308 — Soru 14 / Anadolu İnsanı-Aidiyet QR videosu",
           "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-          "answer": "Genel olarak aidiyet, kişinin bir yerde kurduğu ilişkiler, ortak anılar, kültürel yaşama katılımı, emek vermesi ve kendini orada güvende/kabul edilmiş hissetmesiyle gelişebilir. Ancak soru QR videosuna dayandığından, video özelindeki örnekler burada kesinleştirilemez. Öğrenci bu genel çerçeveyi ancak kayıtta gördüğü gerçek bir kişi, davranış veya mekân örneğiyle destekleyerek kullanmalıdır."
+          "answer": "Sorunun video-temelli bölümü kayıt izlenmeden kesinleştirilemez. Genel kavramsal çerçeve olarak aidiyet; kişinin bir yerde kurduğu ilişkiler, anılar, katılım ve kendini oraya bağlı hissetmesiyle ilişkili olabilir; ancak bu genel bilgi, videonun cevabı değildir.",
+          "answer_sections": {
+            "genel_kavramsal_cerceve": "Aidiyetin ilişkiler, ortak deneyimler, kültürel katılım ve emek gibi unsurlarla bağlantısı tartışılabilir.",
+            "videodan_gercek_ornek": "[...]",
+            "bu_ornegin_aidiyetle_iliskisi": "[...]"
+          },
+          "guidance": "Genel kavramsal bilgiyi video kanıtı gibi sunmayın. Soruya tam cevap için öğrencinin QR kaydından gerçek kişi, davranış veya mekân örneği göstermesi gerekir."
         },
         "content": {
           "lead": "Yer, ilişki, kültür, emek, anı ve kabul görme gibi kavramları açıklayabilirsiniz; videoya dayalı örneği gerçek Aidiyet görüntüsünden seçin.",
