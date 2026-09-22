@@ -32255,13 +32255,15 @@
           "question_no": "Konuya Başlarken 1-3",
           "source_locator": "basılı s.263 / PDF s.264 — Konuya Başlarken",
           "prompt_summary": "Yaşam evreleri görselleri ve yolculuk ifadelerinden hareketle duygu ve kısa hikâye üretme",
-          "answer": "Örnek çalışma: Görseller bebeklikten çocukluğa, gençliğe ve yaşlılığa uzanan değişimi düşündürür. Bu değişim, insanın farklı dönemlerde farklı ihtiyaç ve sorumluluklar taşıdığını gösterir.",
+          "answer": "Bu çalışma görsellerin çağrıştırdığı duygu ve düşünceler ile öğrencinin seçtiği yaşam dönemine dayanır. Rehber, öğrenci adına Nihat, torun, marangozluk gibi tamamlanmış bir hikâye üretmez; yalnız düşünme ve planlama desteği verir.",
           "answer_sections": {
-            "Görseller ve duygu": "Bebek ve çocuk görselleri korunma, merak ve büyüme; gençlerin birlikte olduğu görsel arkadaşlık ve gelecek; yetişkin ve yaşlı görselleri ise sorumluluk, deneyim ve zamanın geçişini çağrıştırabilir.",
-            "Yol ifadeleri": "“Yaşam bir yolculuktur” deneyimlerle ilerlemeyi; “yolun başı” gençliği veya başlangıcı; “yolun sonu” yaşlılığı ya da bir sürecin tamamlanmasını; “dikenli yollar” güçlükleri; “ömrün baharı” gençliği; “ikinci bahar” ilerleyen yaşta yeniden başlayan bir umudu anlatabilir.",
-            "Kısa hikâye örneği": "Emekli olduktan sonra eski marangoz tezgâhını yeniden kuran Nihat, torununa küçük bir kuş evi yapmayı öğretir. İlk denemede tahta eğri kesilir; ikisi ölçüyü yeniden alır. Günün sonunda Nihat, yıllar önce öğrendiği bir işi paylaşmanın kendisine yeni bir başlangıç verdiğini düşünür."
+            "gorsellerin_bende_uyandirdigi_duygu_ve_dusunceler": "[...]",
+            "yolculuk_ifadelerinin_cagristirdiklari": "Yaşam yolculuğu, başlangıç, güçlük, gençlik, yaşlılık veya yeniden başlangıç gibi çağrışımlar gerekçeli biçimde yazılabilir.",
+            "hikaye_yazmak_istedigim_yasam_donemi": "[...]",
+            "neden_bu_donem": "[...]",
+            "olasi_kisi_mekan_durum": "Kişi: [...] / Mekân: [...] / Temel durum: [...]"
           },
-          "guidance": "Görsellere ilişkin duygular ve hikâyenin seçilen yaşam dönemi kişiseldir. Farklı, gerekçeli yorumlar kabul edilir."
+          "guidance": "Duygular, çağrışımlar ve hikâye seçimi kişiseldir. Tam bir örnek hikâye öğrencinin yaratıcı görevini devralır; bunun yerine plan iskeleti ve gerekçelendirme desteği verin."
         },
         "content": {
           "lead": "Önce görseller ve yolculuk benzetmeleri için kendi görüşünüzü oluşturun, sonra bir yaşam evresini neden seçtiğinizi açıklayın.",
@@ -33427,8 +33429,14 @@
           "question_no": "2",
           "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 2",
           "prompt_summary": "İnsan ilişkilerindeki değerlerin tiyatro ya da hikâyede daha etkili yansıtılmasına ilişkin gerekçeli görüş",
-          "answer": "Örnek görüş: Tiyatro, kişilerin sözlerini ve karşılıklı tepkilerini sahnede doğrudan gösterdiği için güven, saygı ve görev ilişkilerini izleyiciye daha görünür kılabilir. Ben, Mimar Sinan’da hükümdarın Sinan’a görev vermesi ve Sinan’ın bu sorumluluğu üstlenmesi buna örnektir. Bununla birlikte Merdiven, birkaç kısa karşılaşmayla nezaket ve kuşak farkı üzerine güçlü çağrışımlar kurar; tercih, okurun hangi anlatım yolundan daha çok etkilendiğine bağlıdır.",
-          "guidance": "Tiyatro ya da hikâye yönünde farklı cevaplar kabul edilir. Öğrenci iki metinden de kanıt gösterip seçiminin gerekçesini açıklamalıdır."
+          "answer": "Bu soruda tiyatro veya hikâye lehine tek bir doğru sonuç yoktur. Öğrenci iki metinden kanıt göstererek insan ilişkilerindeki değerlerin hangi türde kendisine göre daha etkili yansıtıldığını gerekçelendirmelidir.",
+          "guidance": "Öğrenci adına 'tiyatro daha iyi yansıtır' seçimini yapmayın. Her iki yönde de metin kanıtlı cevap kabul edilmelidir.",
+          "answer_sections": {
+            "tiyatrodan_kanitim": "Ben, Mimar Sinan'da seçtiğim söz/davranış/ilişki: [...].",
+            "hikayeden_kanitim": "Merdiven'de seçtiğim söz/davranış/ilişki: [...].",
+            "tercihim": "Tiyatro / hikâye / iki türün farklı üstünlükleri var.",
+            "gerekcem": "[...]"
+          }
         },
         "content": {
           "lead": "Bir türü seçebilirsiniz fakat diğer türün güçlü yönünü de görünür kılın. Gerekçenizi iki metinden somut örnekle destekleyin.",
@@ -33584,8 +33592,13 @@
           "question_no": "2",
           "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 2",
           "prompt_summary": "İki hikâyeden hangisinin daha etkileyici olduğunu metne dayalı gerekçeyle belirtme",
-          "answer": "Örnek cevap: Merdiven’den daha çok etkilendim; çünkü tekrar eden çıkma-inme ve yol verme hareketleri önce sıradan görünürken son karşılaşmadan sonra anlam değiştiriyor. Kısa ve açık uçlu anlatım, anlatıcının ne düşündüğünü benim tamamlamama imkân veriyor. Şair Tavafî’yi seçen bir öğrenci de ayrıntılı çevre tasvirini ve konukseverlik ilişkilerini gerekçe gösterebilir.",
-          "guidance": "Beğeni kişiseldir; gerekçenin iki hikâyeden bir ayrıntıyla ilişkilendirilmesi yeterlidir."
+          "answer": "Hangi hikâyenin daha etkileyici bulunduğu kişisel beğeni sorusudur. Öğrenci Şair Tavafî veya Merdiven'i seçebilir; tercihini ilgili metindeki somut bir dil, anlatıcı, içerik veya çağrışım özelliğiyle gerekçelendirmelidir.",
+          "guidance": "Öğrenci adına Merdiven'i veya Şair Tavafî'yi seçmeyin; tek bir beğeni cevabı yoktur.",
+          "answer_sections": {
+            "daha_cok_etkilendigim_hikaye": "[...]",
+            "metinden_ayrinti": "[...]",
+            "beni_etkileme_nedeni": "[...]"
+          }
         },
         "content": {
           "lead": "Beğeninizi 'daha güzel' gibi genel bir yargıyla bırakmayın. Dil, içerik, anlatıcı, çağrışım veya ritim ölçütlerinden en az birini kullanın.",
