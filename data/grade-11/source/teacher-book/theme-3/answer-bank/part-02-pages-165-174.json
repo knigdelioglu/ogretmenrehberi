@@ -119,19 +119,19 @@
       "printed_page": 172,
       "question_no": "Söz Varlığımız 1-2",
       "prompt_summary": "Huzur'daki dokuz kelimenin bağlamsal anlamları ve yerine kullanılabilecek sözcükler",
-      "answer": "Huzur metninde altı çizili dokuz kelimenin bağlamsal anlamları, TDK Güncel Türkçe Sözlük karşılıkları ve metnin akışına uygun alternatif sözcük önerileri aşağıda yapılandırılmıştır.",
+      "answer": "Bu etkinlikte önce bağlamdan anlam tahmini yapılır, ardından öğrenci TDK Güncel Türkçe Sözlük'ten doğrulama yapar. Aşağıdaki açıklamalar **metindeki kullanıma yönelik öğretmen desteğidir**; sözlük maddesi diye sunulmaz.",
       "answer_sections": {
-        "mustarip (muzdarip)": "TDK: Acı çeken, ıstırap duyan | Metin Bağlamı: Ruhsal acı ve keder içinde olan | Öneri: acı çeken, dertli, kederli",
-        "mahzen": "TDK: Yeraltı deposu, karanlık basık yapı | Metin Bağlamı: İnsanın en gizli ve kuytu iç dünyası, bilinçaltı | Öneri: iç derinlik, kuytu köşe, gizli sığınak",
-        "cevher": "TDK: Öz, maya, asıl nitelik; değerli taş | Metin Bağlamı: İnsanın kendi varoluşsal özü, ruhsal mayası | Öneri: öz, asıl, mahiyet, maya",
-        "yeis": "TDK: Umutsuzluktan doğan karamsarlık, üzüntü | Metin Bağlamı: Derin çaresizlik ve umutsuzluk hâli | Öneri: ümitsizlik, karamsarlık, bezginlik",
-        "zarafet": "TDK: İncelik, güzellik, nezaket | Metin Bağlamı: Doğuştan gelen soylu ve ince tavır | Öneri: incelik, nezaket, kibarlık",
-        "neşretmek": "TDK: Yayımlamak; dağıtmak, yaymak | Metin Bağlamı: Notaların ve musiki eserlerinin basılıp halka sunulması | Öneri: yayımlamak, basmak, gün ışığına çıkarmak",
-        "hulâsa (hülasa)": "TDK: Özet, bir şeyin en özlü kısmı; kısaca | Metin Bağlamı: Sözün özü, kısacası, özet olarak | Öneri: kısacası, özetle, velhasıl",
-        "muazzam": "TDK: Çok büyük, devasa, görkemli | Metin Bağlamı: Sanat değeri ve büyüklüğü olağanüstü olan | Öneri: görkemli, devasa, eşsiz büyüklükte",
-        "cins": "TDK: Tür, çeşit; kendine özgü niteliği olan | Metin Bağlamı: Belli bir karakter veya mizaçtaki insan tipi | Öneri: türden, mizaçta, tıynette"
+        "mustarip (muzdarip)": "Bağlamdaki olası anlam: acı/sıkıntı çeken. Öneri: acı çeken, dertli.",
+        "mahzen": "Temel anlamı kapalı/depo niteliğindeki yer; “iç mahzeniniz” sözünde kişinin iç dünyasının kuytu/derin tarafı için mecazlı kullanılmıştır. Öneri: iç derinlik, içteki kuytu yer.",
+        "cevher": "Bağlamda kişinin özü/asıl niteliği. Öneri: öz, maya.",
+        "yeis": "Bağlamda umutsuzluk ve karamsarlık. Öneri: umutsuzluk.",
+        "zarafet": "Bağlamda incelik ve hoşluk. Öneri: incelik, nezaket.",
+        "neşretmek": "Notaları yayımlamak/basılı olarak dolaşıma sokmak anlamında kullanılmıştır. Öneri: yayımlamak.",
+        "hulâsa (hülasa)": "Bağlamda “kısacası, özetle”. Öneri: kısacası, özetle.",
+        "muazzam": "Bağlamda çok büyük/değerli eserler için kullanılan güçlü bir niteleme. Öneri: çok büyük, görkemli.",
+        "cins": "“Bu cinsten insanlar” sözünde tür/çeşit anlamındadır. Öneri: bu türden, bu çeşit."
       },
-      "guidance": "Öğretmen, öğrencilerin önce metnin bağlamından tahmin yapmalarını, ardından TDK Güncel Türkçe Sözlük'ten doğrulama yapmalarını sağlamalıdır. 'Önerim' kısmında önerilen sözcüğün metindeki cümle akışını ve estetik ahengi bozup bozmadığı sınıfta tartışılmalıdır.",
+      "guidance": "Öğrenci önce kendi tahminini yazmalı, sonra karekodla TDK sözlüğünden uygun anlamı doğrulamalıdır. Rehberdeki bağlam açıklamasını TDK'nin birebir tanımı gibi okutmayın. Özellikle ‘mahzen = bilinçaltı’, ‘cevher = varoluşsal ruhsal maya’ gibi metnin ötesine geçen psikolojik/felsefi karşılıklar vermeyin.",
       "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız"
     },
     {
@@ -140,15 +140,15 @@
       "printed_page": 172,
       "question_no": "Söz Varlığımız 3",
       "prompt_summary": "Metindeki diğer bilinmeyen kelimeleri belirleyip sözlükten doğrulama",
-      "answer": "Öğrencinin kendi bilmediği kelimeleri tespit edip sözlükten doğrulaması için şu aşamalı işlem basamakları ve metinden model kelime havuzu kullanılır:\n\nİşlem Basamakları:\n1. Kelimeyi metindeki bağlamıyla birlikte tespit et ve altını çiz.\n2. Cümlenin gelişinden ve çağrışımlarından hareketle kendi anlam tahminini oluştur.\n3. Karekod aracılığıyla TDK Güncel Türkçe Sözlük'e girerek kelimenin sözlük tanımını incele.\n4. Sözlükteki birden çok anlamdan metnin bağlamına tam uyanını seç ve tahmininle kıyasla.\n5. Kelimeyi kendi kuracağın özgün bir cümlede kullanarak kişisel söz varlığına kazandır.\n\nMetinden Karşılaşılabilecek Örnek Söz Varlığı Havuzu:\n- Mefhum: Kavram, zihindeki soyut tasarım ('hayatı mı daha çok seversiniz yahut mefhumları?').\n- İstihsal: Üretim ('kendi piyasamızı kendi istihsalimize açacağız').\n- Masuniyet: Dokunulmazlık, korunmuşluk, güven içinde olma ('her türlü masuniyet içinde').\n- İstiğna: Tokgözlülük, tenezzül etmeme, nazlanma ('her zaman o kadar istiğna gösterdiği Mümtaz'ın davetini').\n- Taaccüp: Hayret etme, şaşma ('taaccüpleri arasında ciddiyetle devam eder').\n- Fevkalâdelik: Olağanüstülük, fevkalade durum ('zatürree fevkalâdelik hâlini ilân etmiş').\n- İstihare: Hayırlı olanı anlamak için rüyaya yatma niyetiyle uyuma ('istihareye yatmak istediğini').\n- Hüviyet: Kimlik, bir kimsenin veya milletin öz nitelikleri ('Bir hüviyet lâzım.').",
-      "guidance": "Bu görevde hangi kelimenin bilinmediği öğrencinin bireysel kelime dağarcığına göre değişir. Rehber öğrencinin yerine kelime dayatmamalı, ancak yukarıdaki örnek havuz gibi öğrencilerin metni tararken karşılaşabilecekleri tarihî ve felsefi kavramları keşfetmelerine rehberlik etmelidir.",
+      "answer": "Bu görevde sabit bir 'bilinmeyen kelimeler' listesi yoktur. Öğrenci kendi bilmediği kelimeleri seçer, bağlamdan tahmin eder ve TDK Güncel Türkçe Sözlük'ten doğrular. Öğretmen yalnızca işlemi modellemelidir.",
+      "guidance": "Mefhum, istihsal, masuniyet, istiğna, taaccüp, istihare, hüviyet gibi sözler yalnız **örnek tarama adaylarıdır**; öğrencinin bunları bilmediği varsayılmaz ve sözlük sonucu önceden verilmez. Gerekiyorsa öğretmen bir kelime üzerinde işlemi sınıfta örnekler.",
       "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız 3",
       "answer_sections": [
-        "Kelimeyi metindeki bağlamıyla belirle.",
-        "Bağlamdan hareketle anlam tahmini yap.",
-        "TDK sözlüğünden uygun anlamı bul.",
-        "Sözlük anlamıyla kendi tahminini karşılaştır.",
-        "Metindeki kullanıma en uygun anlamı kısa biçimde yaz."
+        "1. Metinde anlamını bilmediğin kelime/kelime grubunu seç.",
+        "2. Geçtiği cümleyi okuyup bağlamdan bir anlam tahmini yaz.",
+        "3. TDK Güncel Türkçe Sözlük'te kelimeyi araştır; birden çok anlam varsa bağlama uyanı seç.",
+        "4. Tahminin ile sözlük sonucunu karşılaştır.",
+        "5. Kelimeyi metindeki anlamıyla kısa bir cümlede kullan."
       ]
     },
     {
@@ -157,16 +157,16 @@
       "printed_page": 174,
       "question_no": "Hatırlayalım",
       "prompt_summary": "Huzur'un üslup özelliklerini kavram haritasına yerleştirme",
-      "answer": "Huzur romanından hareketle tespit edilen üslup özellikleri, kitabın s.174-175'teki kavram haritasında şu altı ana boyutta somutlaşır:\n\n1. Betimleyici (Tasvirî) Anlatım: Mekân, insan ve tabiat ayrıntılı biçimde canlandırılır. İstanbul, Boğaz, tarihî yapılar, insanlar ve ışık değişimleri ayrıntılı betimlemelerle canlandırılır.\n2. Şiirsel ve Mecazlı Söyleyiş: Şair kimliğini romana taşıyan Tanpınar; imge, benzetme ve çağrışımlarla estetik bir anlatım kurar ('fecir kızları', 'sedef rüyası', 'ışık akisti, ses akisti').\n3. Zengin ve Katmanlı Söz Varlığı: Tarih, mimari, eski musiki makamları ve tasavvuf terimleri metnin temel dokusunu oluşturur; dil kültürel bir hafıza görevi görür.\n4. Düşünsel ve Felsefi Derinlik: Olay anlatımından çok; Geçmiş, kültür, şehir, sanat ve yeni hayat üzerine düşünceler olay akışının yanında önemli yer tutar.\n5. Psikolojik ve İç Çözümlemeci Yaklaşım: Kişilerin ruh hâlleri, kaygıları, hatıraları ve iç gerilimleri anlatımın önemli bir parçasıdır.\n6. Uzun, Bağlaçlı ve Ritmik Cümle Yapısı: Cümleler yan cümleciklerle genişler; musikiye benzer bir iç ritim ve dalgalanma taşıyarak düşünce ve duygu akışını taşır.",
+      "answer": "Huzur parçasında gözlenebilen üslup özellikleri kavram haritasına metin kanıtlarıyla yerleştirilebilir. Aşağıdaki başlıklar örnek bir haritadır; her özellik metinden kısa bir dayanakla eşleştirilmelidir.",
       "answer_sections": {
-        "betimleyici": "Mekân, insan ve tabiat ayrıntılı biçimde canlandırılır; ışık, ses ve şehir ayrıntıları betimlemeyi zenginleştirir.",
-        "siirsel_mecazli": "İmge, benzetme ve çağrışımlarla estetik anlatım kurulur ('sedef rüyası', 'ses ve ışık akisleri').",
-        "zengin_soz_varligi": "Tarih, klasik mimari, felsefe ve Türk musikisi terimleri belirgindir ('terkip', 'hüviyet', 'Dede Efendi').",
-        "dusunsel": "Kültür, geçmiş, şehir, sanat ve yeni hayat üzerine düşünceler diyalog ve anlatıcı değerlendirmeleriyle işlenir.",
-        "psikolojik": "Kişilerin ruh hâlleri, hatıraları ve iç gerilimleri yansıtılır.",
-        "uzun_ritmik_cumleler": "Geniş betimleme ve düşünce akışı, musiki ahengine sahip uzun ve ritmik cümlelerle kurulur."
+        "betimleyici": "İstanbul, Boğaz, yapılar, insanlar, ışık ve ses ayrıntılı biçimde canlandırılır.",
+        "siirsel_mecazli": "“fecir kızları”, “sedef rüyası”, “ışık akisti, ses akisti” gibi imge, benzetme ve çağrışımlar kullanılır.",
+        "zengin_soz_varligi": "Tarih, mimari ve klasik Türk musikisine ait ad ve terimler metnin söz varlığını zenginleştirir.",
+        "dusunsel": "Geçmiş, kültür, kimlik, şehir, sanat ve yeni hayat üzerine düşünceler diyalog ve anlatıcı değerlendirmeleriyle işlenir.",
+        "psikolojik": "Kişilerin ruh hâlleri, hatıraları ve iç gerilimleri anlatılır.",
+        "uzun_cagrisimli_cumleler": "Betimleme ve düşünce akışı yer yer uzun, yan cümleciklerle genişleyen ve çağrışımları bir arada taşıyan cümlelerle kurulur."
       },
-      "guidance": "Kavram haritasına yalnız Huzur parçasında gerçekten gözlenebilen özellikleri yazdırın ve her başlığın yanına metinden örnek ekletin. “Empresyonist”, “varoluşsal” gibi dış eleştiri terimleri kullanılacaksa ayrıca kaynaklandırılmalıdır.",
+      "guidance": "Kavram haritasına yalnız okunan Huzur parçasında gerçekten gözlenebilen özellikleri yazdırın. “Empresyonist”, “Bergsoncu”, “varoluşsal” gibi dış eleştiri terimlerini bu etkinliğin hazır cevabı yapmayın.",
       "source_locator": "basılı s.174-175 / PDF s.175-176 — Huzur Romanının Üslup Özellikleri"
     }
   ]

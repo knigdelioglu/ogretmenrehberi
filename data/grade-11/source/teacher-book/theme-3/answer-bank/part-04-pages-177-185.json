@@ -11,20 +11,20 @@
       "printed_page": 177,
       "question_no": "14",
       "prompt_summary": "Huzur metnindeki açık ve örtük iletilere örnek verme",
-      "answer": "Açık ileti metinde sözcüklerin temel ve ilk anlamlarıyla doğrudan dile getirilen yargılardır; örtük ileti ise metnin satır aralarında, simgelerinde, çağrışımlarında ve çatışmalarında gizlenen ve okurun çıkarım yapmasını gerektiren derin anlam katmanlarıdır.\n\nHuzur Metninden Model İletiler:\n- Açık İletiler: Doğrudan diyalog veya anlatıcı cümleleriyle ifade edilmiştir.\n- Örtük İletiler: Şehir manzarası, mimari akisler, vapur yolcularının hüznü ve musiki tasvirlerinin arkasındaki felsefi ve psikolojik duyarlılıktan süzülen iletilerdir.",
+      "answer": "Açık ileti, metinde doğrudan söylenen düşüncedir; örtük ileti ise birden çok ayrıntıdan çıkarım yapmayı gerektirir. Huzur parçasında bu iki düzey birbirinden ayrılmalıdır.",
       "answer_sections": {
         "acik_iletiler": [
-          "Mümtaz, İstanbul'un mimarisini, semtlerini ve tarihî mirasını tanımanın insanın kendi öz benliğini tanımasıyla eş değer olduğunu doğrudan söyler: 'İstanbul’u tanımadıkça kendimizi bulamayız.'",
-          "Yeni bir hayatın ve cemiyet nizamının kurulabilmesi için milletin kendi tarihî köklerine ve hüviyetine dayanması gerektiği açıkça ifade edilir: 'Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.'",
-          "Klasik Türk musikisinin geçmiş medeniyetimizin ruhuna ve milli şuurumuza ulaştıran en temel estetik anahtar olduğu doğrudan dile getirilir: 'Eski musıkîmizi seviyoruz, iyi kötü anlıyoruz.'"
+          "“İstanbul’u tanımadıkça kendimizi bulamayız.” → İstanbul'u/kültürel çevreyi tanıma ile kendini tanıma arasında doğrudan bağ kurulur.",
+          "“Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” → yeni hayat kurarken geçmişten gelen bir kimlik/dayanak gerektiği doğrudan savunulur.",
+          "Nuran'ın bakımsız semtler için “Bir şeyler yapmak, bu hasta insanları tedavi etmek, bu işsizlere iş bulmak...” diye düşünmesi → bugünün insanlarının somut ihtiyaçlarına yönelme gereği açıkça dile getirilir."
         ],
         "ortuk_iletiler": [
-          "Tarihî ve kültürel miras; modernleşme uğruna feda edilecek geçmişte kalmış bir yük değil, modern insanın varoluşsal yalnızlığına ve kimlik krizine şifa sunan canlı bir kaynaktır.",
-          "Şehir mekânları, deniz akisleri ve musiki yalnızca fiziksel çevre unsurları değil; insan ilişkilerini, ruhsal derinliği ve aşkı yoğurup biçimlendiren manevi bir atmosferdir.",
-          "Maziye ve estetik güzelliklere duyulan büyük hayranlık; kenar semtlerdeki toz, pislik ve sefalet içinde yaşayan insanların somut acılarına ve toplumsal gerçekliğe göz kapatma gerekçesi olmamalıdır."
+          "Boğaz'ın mimari, ses ve hatıralarla birlikte anlatılması; mekânın kişisel ve kültürel hafızayı harekete geçirebildiğini düşündürür.",
+          "Mümtaz'ın eski musiki ve geçmişe ilgisine karşı Nuran'ın yoksulluk ve bakımsızlığı hatırlatması; geçmişe değer verirken bugünün ihtiyaçlarını ihmal etmeme gereğini düşündürebilir.",
+          "Vapur düdüklerinin çocukluk hatırasını ve hüznü çağrıştırması; sıradan bir sesin kişisel hafızayı canlandırabileceğini gösterir."
         ]
       },
-      "guidance": "İfadeyi metinde doğrudan bulabiliyorsanız açık ileti; birden çok söz ve ayrıntıdan gerekçeli çıkarım yapıyorsanız örtük ileti olarak değerlendiriniz. Öğretmen, örtük iletilerin çıkarımında öğrencilerin metindeki somut ayrıntıları (vapur düdükleri, cami avluları, yıkık türbeler) dayanak göstermelerini sağlamalıdır.",
+      "guidance": "Bir cümlenin kendisi doğrudan alıntılanabiliyorsa, alıntının ötesindeki geniş yorumu ‘açık ileti’ diye sunmayın. ‘Millî şuurun en temel anahtarı’, ‘varoluşsal yalnızlığa şifa’ gibi sonuçlar metinde açıkça söylenmediği için zorunlu ileti değildir.",
       "evidence_quotes": [
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
         "Bir hüviyet lâzım."
@@ -79,35 +79,35 @@
       "printed_page": 180,
       "question_no": "3",
       "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
-      "answer": "Tabloyu kişilerin metinde görülen söz veya davranışından hareketle doldurun. Mümtaz ve Nuran için doğrudan kanıt vardır; İhsan ile Macide hakkında anlatılanlarla doğrudan konuşmayı ayırın. Suat ve Fâhir'in satırları, kitap parçasında yeterli veri olmadığında varsayımla doldurulmaz.",
+      "answer": "Tablo yalnız **bu aşamaya kadar okunan Huzur parçasındaki** söz ve davranışlardan doldurulmalıdır. Mümtaz ve Nuran için doğrudan kanıt vardır; İhsan hakkında Mümtaz'ın anlatımı kullanılabilir. Macide, Suat ve Fâhir için bu noktada yeterli söz/davranış bulunmadığında boşluğu varsayımla doldurmayın.",
       "answer_sections": {
         "Mümtaz": {
-          "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur (s.169 ve kitaptaki s.180 örneği).",
-          "cikarim": "Kültürün yeni bir hayat için dayanak olduğuna inanır; geçmiş ile geleceği birlikte düşünür."
+          "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur.",
+          "cikarim": "Geçmiş ile gelecek arasında bağ kurmaya önem verir."
         },
         "Nuran": {
-          "soz_davranis": "Eskiyi niçin bu kadar sevdiklerini sorar; Üsküdar'ın yoksul ve bakımsız insanlarını hatırlar (s.169).",
-          "cikarim": "Sanatı ve geçmişi severken bugünün toplumsal sorunlarına da duyarlıdır."
+          "soz_davranis": "“Niçin eskiye bu kadar bağlıyız?” diye sorar; bakımsız semtlerde insanların bugünkü ihtiyaçlarını düşünür.",
+          "cikarim": "Geçmişe ve sanata ilgi duysa da güncel toplumsal sorunları da hesaba katar."
         },
         "İhsan": {
-          "soz_davranis": "Mümtaz onu asıl hocası olarak tanıtır; fikirlerini ve kültürle ilişkisini kendisinden öğrendiğini söyler (s.169–170).",
-          "cikarim": "Mümtaz'ın düşünsel ve kültürel gelişiminde etkilidir; bu çıkarım İhsan'ın doğrudan sözüne değil Mümtaz'ın anlatımına dayanır."
+          "soz_davranis": "Mümtaz onu “asıl hocam” diye tanıtır; gençliğinde kendi hayatlarının kaynakları etrafında dolaştığını anlatır.",
+          "cikarim": "Mümtaz'ın düşünce ve kültür dünyasında etkili bir rehberdir; bu çıkarım İhsan'ın doğrudan sözüne değil Mümtaz'ın anlatımına dayanır."
         },
         "Macide": {
-          "soz_davranis": "s.182'de Mümtaz'ın yaşamına şefkat ve koruyuculukla girdiği anlatılır; s.167–171 kesitinde doğrudan konuşması yoktur.",
-          "cikarim": "Mümtaz için aile ve şefkat kaynağıdır; doğrudan sözüne dayalı ayrı bir çıkarım yapılamaz."
+          "soz_davranis": "s.180'e kadar okunan Huzur kesitinde yeterli doğrudan söz veya davranış örneği yok.",
+          "cikarim": "Bu aşamada kişilik/duygu uydurulmaz; sonraki metinler ayrı etkinlikte kullanılabilir."
         },
         "Suat": {
-          "soz_davranis": "Verilen Huzur parçasında bu kişi için yeterli doğrudan söz veya davranış örneği yok.",
-          "cikarim": "Kişilik veya duygu uydurulmaz; tam romandan ek kanıt gerekebilir."
+          "soz_davranis": "Okunan kesitte yeterli doğrudan söz veya davranış örneği yok.",
+          "cikarim": "Bu aşamada belirlenemez."
         },
         "Fâhir": {
-          "soz_davranis": "Verilen Huzur parçasında bu kişi için yeterli doğrudan söz veya davranış örneği yok.",
-          "cikarim": "Kişilik veya duygu uydurulmaz; tam romandan ek kanıt gerekebilir."
+          "soz_davranis": "Okunan kesitte yeterli doğrudan söz veya davranış örneği yok.",
+          "cikarim": "Bu aşamada belirlenemez."
         }
       },
-      "source_locator": "basılı s.167–171, 180 ve Macide için s.182 / PDF s.168–172, 181 ve 183 — Okuma Çemberi soru 3",
-      "guidance": "Kitabın Mümtaz satırı örnek olarak dolu, diğer beş satır boştur. Bir kişinin metinde yalnız başka biri tarafından anlatılması, kendi sözünün verildiği anlamına gelmez."
+      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3",
+      "guidance": "s.182'de daha sonra verilen Macide–İhsan aile bilgilerini s.180 tablosuna geriye taşımayın. Etkinliğin amacı öğrencinin o ana kadar gördüğü söz/davranıştan çıkarım yapmasıdır."
     },
     {
       "question_id": "T3-P181-TABLE02",
@@ -115,35 +115,35 @@
       "printed_page": 181,
       "question_no": "4",
       "prompt_summary": "Huzur kahramanlarını kişilik özellikleri ve dil kullanımları bakımından karşılaştırma",
-      "answer": "Kitaptaki Mümtaz örneğini ölçüt alın: bir kişilik özelliği ile o kişinin gerçekten kullandığı dili ayrı kaydedin. Konuşması bulunmayan kişilere söz, üslup ve karakter özelliği yakıştırmayın.",
+      "answer": "Kişilik özelliği ve dil kullanımı, **s.181'e kadar görülen metin kanıtıyla** ayrı ayrı belirlenmelidir. Doğrudan konuşması bulunmayan kişilere dil özelliği yakıştırmayın.",
       "answer_sections": {
         "Mümtaz": {
-          "kisilik": "Sanatçı duyarlığı yüksek; doğa, sanat ve kültür üzerinden düşünür (kitabın örnek satırı).",
-          "dil": "s.181'deki örnekte şiirsel, çağrışımlı, yüksek söyleyiş ve doğrudan seslenme görülür."
+          "kisilik": "Kitabın örneğinde hayata sanatçı duyarlılığıyla bakan, tabiatı ve sanatı birlikte düşünen hassas bir karakter olarak verilir.",
+          "dil": "Kitabın verdiği sözünde şiirsel, çağrışımlı ve yüksek söyleyiş görülür."
         },
         "Nuran": {
-          "kisilik": "Eski kültüre ilgi duyar; yoksulluğu ve bugünün gereksinimlerini de hesaba katar.",
-          "dil": "s.169'da ‘Niçin eskiye bu kadar bağlıyız?’ diye kısa ve sorgulayıcı konuşur; Mümtaz'ın düşüncesine karşı soru açar."
+          "kisilik": "Eski kültüre ilgi duyar; aynı zamanda bakımsızlık ve yoksulluk gibi güncel sorunları sorgular.",
+          "dil": "“Niçin eskiye bu kadar bağlıyız?” gibi kısa, doğrudan ve sorgulayıcı cümleler kullanır."
         },
         "İhsan": {
-          "kisilik": "Mümtaz'ın anlattıklarından onun hocası ve kültürel rehberi olduğu anlaşılır.",
-          "dil": "Kitapta okunan Huzur kesitinde doğrudan konuşması verilmez; kendisine ait kesin bir dil örneği yazılamaz."
+          "kisilik": "Mümtaz'ın anlatımından onun hocası ve kültürel rehberi olduğu anlaşılır.",
+          "dil": "Bu aşamaya kadar okunan Huzur kesitinde doğrudan konuşması verilmediği için kesin dil özelliği yazılamaz."
         },
         "Macide": {
-          "kisilik": "s.182'deki Mümtaz anlatımında koruyucu ve şefkatli bir kişi olarak görünür.",
-          "dil": "Bu parçada doğrudan konuşma örneği bulunmadığı için dil kullanımını belirlemek mümkün değildir."
+          "kisilik": "s.181'e kadar okunan kesitte yeterli doğrudan kişilik kanıtı yok.",
+          "dil": "Doğrudan konuşma örneği yok; belirlenemez."
         },
         "Suat": {
-          "kisilik": "Verilen parçada yeterli kanıt yok.",
-          "dil": "Doğrudan söz örneği yok; üslup belirlenemez."
+          "kisilik": "Bu kesitte yeterli kanıt yok.",
+          "dil": "Doğrudan söz örneği yok; belirlenemez."
         },
         "Fâhir": {
-          "kisilik": "Verilen parçada yeterli kanıt yok.",
-          "dil": "Doğrudan söz örneği yok; üslup belirlenemez."
+          "kisilik": "Bu kesitte yeterli kanıt yok.",
+          "dil": "Doğrudan söz örneği yok; belirlenemez."
         }
       },
-      "source_locator": "basılı s.168–171, 181 ve Macide için s.182 / PDF s.169–172, 182 ve 183 — Okuma Çemberi soru 4",
-      "guidance": "Kitap Mümtaz için hem kişilik hem dil örneğini vermiştir. Diğer kişilerde doğrudan alıntı bulunmuyorsa konuşma biçimini tahmin edip kesin bir üslup özelliği gibi yazmayın."
+      "source_locator": "basılı s.168–171 ve 181 / PDF s.169–172 ve 182 — Okuma Çemberi soru 4",
+      "guidance": "Macide'nin s.182'deki ‘şefkat’ bilgisi bu tabloya önceden taşınmamalıdır. Kaynak yetersizliği de geçerli bir öğretmen notudur."
     },
     {
       "question_id": "T3-P182-Q01",
@@ -151,22 +151,22 @@
       "printed_page": 182,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur'da gerçek hayattan alınan unsurlar ile kurgusal dönüşümleri ayırma",
-      "answer": "Balık kılçığı diyagramında romanın gerçek yaşamdan beslenen kökleri ile yazarın kurmaca dehasıyla gerçekleştirdiği estetik dönüşümler iki ayrı eksende yapılandırılır:\n\n1. Gerçek Hayattan Alınan Unsurlar: Tanpınar'ın biyografisi, dostlukları ve yaşadığı çevre doğrudan romanın mayasını oluşturur.\n2. Kurgusal Dönüşümler: Yazar gerçek kişileri ve olayları olduğu gibi aktarmaz; onları kurmaca dünyanın çatışmalarına, sembolizmine ve estetik gereksinimlerine göre yeniden yaratır.",
+      "answer": "Balık kılçığında, Mehmet Kaplan'ın verdiği **gerçek hayattaki esin kaynakları** ile Tanpınar'ın romanda yaptığı **kurmaca değişiklikler** karşılaştırılır.",
       "answer_sections": {
         "gercek_hayattan_alinanlar": [
-          "Mümtaz karakteri, edebiyat tarihçisi Mehmet Kaplan'ın belirttiği gibi doğrudan yazar Ahmet Hamdi Tanpınar'ın kendi hayatından, mizacından ve iç dünyasından derin izler taşır.",
-          "İhsan karakterinde Tanpınar'ın hocası ve dostu olan büyük şair Yahya Kemal Beyatlı'nın dünya görüşü, tarih şuuru ve sohbet adamı kimliği yaşamaktadır.",
-          "Nuran karakteri, Kaplan'ın tanıklığına göre Tanpınar'ın gerçek hayatında karşılaştığı ve derin bir hayranlık beslediği gerçek bir hanımdan esinlenerek yaratılmıştır.",
-          "İstanbul'un Boğaziçi, Üsküdar, Emirgân, Çamlıca gibi tarihî ve kültürel mekânları ile buralardaki klasik mimari eserler gerçek dünyadan birebir alınmıştır."
+          "Kaplan, Mümtaz'ı Tanpınar'ın ‘bir projeksiyonu’ olarak niteler.",
+          "İhsan'ın dünya görüşü, mizacı ve bazı yönleriyle Yahya Kemal'den esinlendiğini belirtir.",
+          "Nuran'ın hayatta bir örneği olan genç ve güzel bir kadın bulunduğunu söyler.",
+          "İstanbul'un gerçek semt ve yapıları romanda mekân olarak kullanılır."
         ],
         "kurgusal_unsurlar": [
-          "Gerçek hayatta Yahya Kemal ömrü boyunca hiç evlenmemişken, romanda onun bir yansıması olan İhsan karakteri evli, çocuklu ve aile babası olarak kurgulanmıştır.",
-          "Gerçek hayatta Tanpınar ile Yahya Kemal arasında hoca-öğrenci ve dostluk bağı varken; romanda İhsan ile Mümtaz arasında amca çocukluğu ve ağabeylik gibi organik bir akrabalık bağı kurulmuştur.",
-          "Gerçek hayattaki esin kaynaklarına sahip olmadıkları mizaç özellikleri, kurgusal aşk ilişkileri ve dramatik olay örgüleri yüklenerek kurmaca bir evren inşa edilmiştir."
+          "Tanpınar gerçek kişilerden esinlense de onları ‘az çok değiştirmiş’, yeni özellikler ve şartlar vermiştir.",
+          "Yahya Kemal bekâr olduğu hâlde onun romandaki benzeri İhsan evli ve çocuklu kurgulanmıştır.",
+          "Tanpınar ile Yahya Kemal arasında akrabalık olmadığı hâlde Mümtaz ile İhsan romanda akraba yapılmıştır."
         ]
       },
       "source_locator": "basılı s.182 / PDF s.183 — Sıra Sizde soru 1, iki kaynak metin ve balık kılçığı",
-      "guidance": "Balık kılçığında örneğin ‘Yahya Kemal'den iz’ gerçek kaynak, ‘İhsan'ın evli/çocuklu olması’ kurmaca dönüşüm tarafına yazılmalıdır. Yazarın hayatıyla roman olaylarını özdeşleştirmeyin."
+      "guidance": "Kaplan metninde Nuran'ın gerçek hayattaki örneği için ‘derin hayranlık duyduğu kadın’ denmiyor; yalnız genç ve güzel kadın örneğinden söz ediliyor. Kaynakta olmayan duygu ve ilişki eklemeyin."
     },
     {
       "question_id": "T3-P182-Q02",
@@ -186,8 +186,14 @@
       "printed_page": 183,
       "question_no": "2",
       "prompt_summary": "Gerçek ve kurgusal unsurların birlikte kullanılmasının romana katkısı",
-      "answer": "Gerçek ve kurmaca unsurların bir arada harmanlanması roman sanatına iki hayati estetik katkı sağlar:\n\n1. İnandırıcılık ve Tanıdıklık (Gerçeklik Zemini): Yazarın gerçek İstanbul sokaklarını, somut mimari eserleri ve çevresindeki canlı insan tiplerini kullanması; esere güçlü bir inandırıcılık, sahicilik ve tarihsel-kültürel derinlik kazandırır. Okur anlatılan atmosferi zihninde somutlaştırır.\n2. Sanatsal Özgürlük ve Estetik Bütünlük (Kurmaca Gücü): Yazar gerçek hayattaki kişileri olduğu gibi aktarsaydı biyografi veya anı sınırlarında kalırdı. Onları kurgusal olarak değiştirmesi; romana tema, çatışma, felsefi derinlik ve dramatik gerilim kazandırmasını sağlar. Böylece eser tek bir bireyin dar hatıralarını aşarak evrensel bir sanat yapıtına dönüşür.",
-      "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde soru 2, balık kılçığına dönüş"
+      "answer": "Gerçek hayattan alınan unsurlar ile kurmaca değişikliklerin birlikte kullanılması, romana tanıdık ve somut bir zemin sağlarken yazara kişileri, ilişkileri ve olayları metnin ihtiyacına göre yeniden kurma imkânı verir.",
+      "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde soru 2, balık kılçığına dönüş",
+      "answer_sections": {
+        "gerceklik_zemini": "Gerçek İstanbul mekânları ve gerçek kişilerden gelen bazı özellikler okurun anlatılan çevreyi somutlaştırmasına yardımcı olabilir.",
+        "kurmaca_ozgurlugu": "Yazar, esin aldığı kişileri birebir kopyalamak zorunda değildir; özelliklerini, aile durumlarını ve ilişkilerini değiştirebilir.",
+        "metne_katkisi": "Bu dönüşüm, gerçek yaşam malzemesinin romanın kişi, çatışma ve tema düzenine uyarlanmasını sağlar."
+      },
+      "guidance": "‘Gerçek kişiler aynen aktarılsaydı eser yalnız biyografi olurdu’ veya ‘böylece evrensel sanat yapıtına dönüşür’ gibi zorunlu estetik hükümler kurmayın; katkıyı s.182'deki somut dönüşümlerle açıklayın."
     },
     {
       "question_id": "T3-P183-Q01",
