@@ -149,11 +149,12 @@
       "prompt": "İçerik Oluşturabilme — Roman kişisini gerçek hayatta hayal ederken dayanağı koruyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kişinin nasıl konuşabileceğine veya davranabileceğine ilişkin tahminlerinizi metnin gösterdikleriyle sınırlandırın.",
+        "lead": "Kitap, seçtiğiniz roman kişisini gerçek hayatta hayal ederek “nasıl konuşurdu, nasıl davranırdı, ne işle uğraşırdı?” gibi yaratıcı tahminler üretmenizi ister. Bu tahminleri romanda gerçekleşmiş bilgi gibi sunmayın.",
         "items": [
-          "Metinde görülen söz veya davranışı işaretleyin.",
-          "Bundan çıkarılabilecek olası soruyu önerin.",
-          "Yalnız tahmin olan ayrıntıyı romanda gerçekleşmiş olay diye söylemeyin."
+          "Metinde görülen söz, davranış veya değerlerden bir dayanak seçin.",
+          "Gerçek hayatta nasıl konuşabileceği veya davranabileceği üzerine hayalî bir tahmin geliştirin.",
+          "Ne işle uğraşabileceğine ilişkin bir varsayım kuracaksanız bunu ‘romanda böyledir’ diye değil, karaktere uygun yaratıcı tahmin olarak belirtin.",
+          "Tahminin okunan parçalarla çelişip çelişmediğini kontrol edin."
         ]
       }
     },
@@ -183,23 +184,23 @@
       "prompt": "Soruları ölçütlerle eleyip mülakatın amacına uygun sıraya koyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Hazır örnek soruları ancak grup kendi taslağını çıkardıktan sonra açın.",
+        "lead": "Grubun hazırladığı soruları kitabın özellikle istediği romanın yapısı, içeriği, dil ve anlatım özellikleri üzerinden derecelendirin; sonra hedef kitleye ve mülakat amacına uygun olanları seçin.",
         "sections": [
           {
+            "title": "Yapı",
+            "body": "Soru, roman kişisini ve kurmaca bağlamı bozuyor mu?"
+          },
+          {
             "title": "İçerik",
-            "body": "Seçilen kişi ve metnin düşünce dünyasıyla ilişkili mi?"
+            "body": "Okunan Huzur parçalarıyla ilişki kurulabiliyor mu; yaratıcı varsayım olduğu yerde açık mı?"
           },
           {
-            "title": "Biçim",
-            "body": "Açık uçlu, anlaşılır ve tekrar içermeyen bir soru mu?"
+            "title": "Dil",
+            "body": "Karakterin kullanabileceği dil ve söz varlığıyla çelişiyor mu?"
           },
           {
-            "title": "Dayanak",
-            "body": "Okunan Huzur parçalarından kanıt bulunabiliyor mu?"
-          },
-          {
-            "title": "Dinleyici",
-            "body": "Sınıfın bilgi düzeyine ve mülakat amacına uygun mu?"
+            "title": "Anlatım",
+            "body": "Açık uçlu, anlaşılır, tekrar etmeyen ve hedef kitleye uygun bir soru mu?"
           }
         ]
       }
@@ -238,7 +239,7 @@
       "prompt": "Mülakat taslağı — Sorulara roman bağlamına uygun hayalî cevaplar oluşturunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce kendi soru ve cevap taslağınızı hazırlayın. Daha sonra örnek taslağı karşılaştırma için açın; cevaplar romanda birebir söylenmiş cümleler değildir.",
+        "lead": "Önce kendi soru ve cevap taslağınızı hazırlayın. Daha sonra örnek taslağı karşılaştırma için açın; cevaplar romanda birebir söylenmiş cümleler değildir ve yaratıcı varsayım olan ayrıntılar açıkça varsayım olarak kalmalıdır.",
         "items": [
           "Karakterin söz varlığını ve bakış açısını koruyun.",
           "Yorumla romanda görülen bilgiyi ayırt edin.",
@@ -273,13 +274,14 @@
       "prompt": "Kural Uygulayabilme — Hayalî mülakatı prova ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sunumda yalnız metni okumayın; soruyu, cevabı ve dinleyiciyle ilişkiyi birlikte yönetin.",
+        "lead": "Kitabın s.213'teki a-j kurallarını prova sırasında kontrol edin; yalnız metni okumak yerine konuşmayı, karakter üslubunu ve dinleyiciyle ilişkiyi birlikte yönetin.",
         "items": [
-          "Kısa ve dikkat çekici bir girişle başlayın.",
-          "Sorular arasında doğal geçişler yapın.",
-          "Seçilen roman kişisine uygun, anlaşılır Türkçe kullanın.",
-          "Vurgu, tonlama, tempo ve beden dilini birlikte kontrol edin.",
-          "Sunumu verilen süre ve mekâna göre düzenleyin."
+          "Dikkat çekici giriş; konuşmayı başlatma, sürdürme ve bitirme.",
+          "Toplumsal hassasiyetler, görgü kuralları ve millî-manevi/kültürel unsurlara dikkat.",
+          "Ekleri doğru kullanma, bağlama uygun kelime seçme, bağdaşıklık ve anlatım ilkeleri.",
+          "Hayalî kişiye özgü üslup ve gerektiğinde düşünceyi geliştirme yolları.",
+          "Beden dili, diksiyon, zaman ve mekânı etkili kullanma.",
+          "Açık/örtük iletileri ve duygu-düşünceleri özgün, tutarlı biçimde ifade etme."
         ]
       }
     },
@@ -292,23 +294,31 @@
       "prompt": "Hayalî mülakatı sınıfta gerçekleştirin; konuşma kurallarını kontrol edin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Grup arkadaşınız hayalî kişiyi canlandırırken diğer üyeler soruları ve sunum akışını yönetsin.",
+        "lead": "Grup arkadaşınız hayalî kişiyi canlandırırken kitabın s.213'te verdiği kuralları somut gözlemlerle kontrol edin.",
         "sections": [
           {
-            "title": "İfade",
-            "body": "Özgün, tutarlı, akıcı ve bağlama uygun konuşma."
+            "title": "Konuşmayı yönetme",
+            "body": "Dikkat çekici giriş; başlatma, sürdürme ve bitirme ifadeleri."
           },
           {
-            "title": "İletişim",
-            "body": "Sözü başlatma, sürdürme ve bitirme; ses, beden dili ve dinleyiciyle ilişki."
+            "title": "Toplumsal ve kültürel uygunluk",
+            "body": "Toplumsal hassasiyetler, görgü kuralları, millî-manevi değerler ve kültürel unsurlar."
           },
           {
-            "title": "Metne bağlılık",
-            "body": "Karakterin okunan roman parçalarındaki söz, düşünce ve davranışlarıyla çelişmeyen cevaplar."
+            "title": "Dil ve anlatım",
+            "body": "Doğru ek ve kelime kullanımı, bağdaşıklık, akıcılık, duruluk, yalınlık ve bağlama/amaca uygunluk."
           },
           {
-            "title": "Dönüt",
-            "body": "Sunum sonunda yalnız gözlenen güçlü ve geliştirilecek yönleri not edin."
+            "title": "Karakter üslubu",
+            "body": "Hayalî kişiye özgü ama okunan roman parçalarıyla çelişmeyen üslup; kaynak dışı olay veya kişilik özelliği eklememe."
+          },
+          {
+            "title": "Düşünce ve ileti",
+            "body": "Düşünceyi geliştirme yolları; açık/örtük iletileri anlaşılır biçimde kurma."
+          },
+          {
+            "title": "Sunum",
+            "body": "Beden dili, diksiyon, zaman ve mekânı etkili kullanma; duygu ve düşünceleri özgün ve tutarlı ifade etme."
           }
         ]
       }
