@@ -238,7 +238,27 @@
       "id": "s28-q1",
       "source_record_id": "T01-S0011",
       "answer_id": "T1-P28-Q01",
-      "layout": "question"
+      "layout": "comparison",
+      "density": "compact",
+      "content": {
+        "lead": "Kitaptaki soruyu cevapladıktan sonra kısa pekiştirme: Tip ile karakter arasındaki farkı Yazıcı üzerinden uygulayın.",
+        "items": [
+          "Karagöz veya Hacivat için metinden en az iki söz ya da davranış kanıtı seçin.",
+          "Seçtiğiniz kanıtların kişiyi temsilî/kalıplaşmış bir tipe mi, yoksa bireysel ve çok yönlü bir karaktere mi yaklaştırdığını tartışın.",
+          "Sonucunuzu gerekçelendirin; seçtiğiniz kişinin karakter yönünün güçlenmesi için iç dünya, çelişki, geçmiş, seçim veya değişim bakımından hangi ayrıntıların eklenebileceğini söyleyin."
+        ],
+        "sections": [
+          {
+            "title": "Tip",
+            "body": "Belirgin ve tekrarlanan özellikleriyle bir toplumsal kesimi, mesleği, yöresel kimliği ya da davranış biçimini temsil eder; temsil işlevi bireysel psikolojik ayrıntının önündedir."
+          },
+          {
+            "title": "Karakter",
+            "body": "Bireysel yönleri, iç dünyası, çelişkileri, geçmişi ve seçimleri daha ayrıntılı işlenir; tek bir temsil özelliğine indirgenmesi daha zordur."
+          }
+        ],
+        "note": "Bu karşılaştırma ve mini uygulama ders kitabında bağımsız bir soru değildir; s.27–29'daki tip–karakter kavramsal boşluğunu kapatan öğretmen rehberi zenginleştirmesidir."
+      }
     },
     {
       "id": "s28-q2",
