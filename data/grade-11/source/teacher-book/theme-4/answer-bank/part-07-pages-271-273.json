@@ -9,95 +9,67 @@
       "entry_type": "question_answer",
       "printed_page": 271,
       "question_no": "Fark Edelim 1-2",
-      "prompt_summary": "Rotterdam’da ve Yorumsuz metinlerinden hareketle küçürek hikâyede az sözle çok duygu ve okur katılımını açıklama",
-      "answer": "Her iki metin de ayrıntılı olay örgüsü ve uzun betimleme yerine kısa sahneler, çağrışımlı sözcükler, soru cümleleri ve beklenmedik geçişlerle yoğun duygu oluşturur. Rotterdam’da metni iç sorgulamalarla yaşam, yalnızlık ve gözlemci olma hâlini yoğunlaştırır; Yorumsuz ise gerçek ile düşü, çocukluk ile yetişkinliği açıklamadan yan yana getirerek okuru boşlukları tamamlamaya zorlar. Merdiven de benzer biçimde birkaç kişi, birkaç karşılaşma ve 'inmek-çıkmak' tekrarlarıyla yaşlanma, ölüm ve mesleki hırsı düşündürür. Uzun açıklamalar verilmediği için okur metindeki simgeler ve eksik bırakılan bağlar üzerinden aktif olarak anlam kurar.",
-      "source_locator": "basılı s.271 / PDF s.272 — Fark Edelim sorular 1-2"
+      "source_locator": "basılı s.271 / PDF s.272 — Fark Edelim sorular 1-2",
+      "prompt_summary": "İki küçürek hikâyede yoğun anlatımı ve okurun metni tamamlama rolünü Merdiven’le karşılaştırma",
+      "answer": "Üç metin de sınırlı olay ve ayrıntıyla geniş bir duygu alanı açar; okur, açıkça anlatılmayan düşünce ve ilişkileri ipuçlarından tamamlar.",
+      "answer_sections": {
+        "Az sözle duygu": "Rotterdam’da anlatıcının art arda sorduğu iç sorular, yaşantının içine katılma ile gözlemci kalma arasındaki gerilimi yoğunlaştırır. Yorumsuz’da göl, merdiven, sinek ve çocukluk görüntüleri hızlı geçişlerle büyüme ve belleği düşündürür. Merdiven’de kısa karşılaşma, yinelenen yol verme ve son yön değişikliği acele, yaşlılık ve yaşam üzerine anlam üretir.",
+        "Okurun katılımı": "Metinler kişilerin geçmişini, duygularının tamamını ve bazı geçişlerin nedenini açıklamaz. Okur, simgeleri ve boşlukları kendi deneyimiyle ilişkilendirerek anlamı kurar; aynı ayrıntı için gerekçeli farklı yorumlar geliştirebilir."
+      },
+      "guidance": "Metinlerden uzun alıntı yerine kısa, metne özgü ayrıntı kullanın. Öğrencinin kendi yorumunu ilgili bir ipucuyla desteklemesi beklenir."
     },
     {
       "question_id": "T4-P272-Q01",
       "entry_type": "question_answer",
       "printed_page": 272,
       "question_no": "1",
-      "prompt_summary": "Ben, Mimar Sinan ile Merdiven'i içerik, tür, şekil, dönem, yapı, dil/üslup ve ileti bakımından karşılaştırma",
-      "answer": "Ben, Mimar Sinan tarihî bir kişinin hayatını ve mimarlık serüvenini anlatan tiyatro metnidir; Merdiven ise sıradan bir memurun yaşlanma ve ölüm farkındalığını konu alan küçürek hikâyedir. Ben, Mimar Sinan sahne, diyalog, monolog, müzik ve görsel yönergelerle ilerler; Merdiven kısa düzyazı, tekrar ve simgesel anlatımla kurulur. İlk metin XVI. yüzyıl Osmanlı tarihini sahneye taşırken, Merdiven modern büro/çalışma hayatını yansıtır. Ben, Mimar Sinan'da geniş kişi ve zaman çizgisi; Merdiven'de üç kişi, dar mekân ve çok kısa zaman vardır. İlki bilgi verici ve dramatik, ikincisi yalın, yoğun, şiirsel ve eksiltilidir. İleti bakımından ilki çalışma, üretme ve kültürel mirası; ikincisi hayatın geçiciliği ve yükselme telaşını sorgular.",
+      "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 1",
+      "prompt_summary": "Ben, Mimar Sinan ile Merdiven metinlerini yedi ölçütte karşılaştırma",
+      "answer": "İki metin de yaşamdan aldığı malzemeyle insanın tutum ve değerlerini düşündürür; bunu farklı tür ve anlatım yollarıyla yapar.",
       "answer_sections": {
-        "icerik": {
-          "Ben_Mimar_Sinan": "Mimar Sinan'ın hayatı ve eserleri.",
-          "Merdiven": "Yaşlanma, ölüm ve mesleki yükselme telaşı."
-        },
-        "tur": {
-          "Ben_Mimar_Sinan": "Tiyatro/dram.",
-          "Merdiven": "Küçürek hikâye."
-        },
-        "sekil": {
-          "Ben_Mimar_Sinan": "Sahne metni, diyalog/monolog/yönerge.",
-          "Merdiven": "Kısa düzyazı."
-        },
-        "donem": {
-          "Ben_Mimar_Sinan": "XVI. yüzyıl tarihî dünyası.",
-          "Merdiven": "Modern çalışma hayatı."
-        },
-        "yapi": {
-          "Ben_Mimar_Sinan": "Geniş zaman ve çoklu kişi/mekân.",
-          "Merdiven": "Üç kişi, dar mekân, kısa zaman."
-        },
-        "dil_uslup": {
-          "Ben_Mimar_Sinan": "Dramatik, açıklayıcı, tarihî bilgilerle zengin.",
-          "Merdiven": "Yalın, şiirsel, yoğun, simgesel."
-        },
-        "ileti": {
-          "Ben_Mimar_Sinan": "Çalışma, üretme, kültürel miras.",
-          "Merdiven": "Hayatın geçiciliği ve hırsın sorgulanması."
-        }
-      },
-      "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 1"
+        "İçerik": "Ben, Mimar Sinan Sinan’ın mesleki yaşamını, yapılarını ve yaşadığı çağın kültürünü işler. Merdiven, iş yerindeki kısa bir karşılaşmadan yola çıkarak acele, yaşlılık ve mesleki yükselme isteğini sorgular.",
+        "Tür": "Ben, Mimar Sinan tiyatro metnidir; Merdiven küçürek hikâyedir.",
+        "Şekil": "Tiyatro parçası karakter replikleri, farklı sesler ve parantez içi sahne yönergeleriyle kurulur. Merdiven, birinci kişili düzyazı anlatıdır; kısa cümle ve konuşmalarla ilerler.",
+        "Dönem": "Sinan’ın olayları 16. yüzyılda geçer; oyun çağdaş yazarın tarihî kişiyi sahneye taşımasıdır. Merdiven’in kesin yazılma tarihi bu sayfalarda verilmez; anlatı güncel bir büro ortamını düşündürür.",
+        "Yapı unsurları": "Ben, Mimar Sinan’da kişiler ve görevler boyunca ilerleyen çok aşamalı bir yaşam çizgisi vardır; teknik ve kişisel güçlükler eserlerle çözülür. Merdiven tek bir merdiven karşılaşmasına yoğunlaşır; anlatıcının kararındaki değişim ve açık uçlu son yapıyı tamamlar.",
+        "Dil ve üslup": "Tiyatroda tarihî anlatım, doğrudan konuşma, sahne ve ses yönergeleri ile vurgulu sözler kullanılır. Merdiven’in dili yalın, kısa ve gündelik; tekrarları ve yön karşıtlığı çağrışım kurar.",
+        "İleti": "İlk metin emek, öğrenme, sorumluluk ve kültürel mirası; ikinci metin ise koşuşturmayı sorgulamayı ve yaşamın sınırlılığını düşündürür."
+      }
     },
     {
       "question_id": "T4-P272-PERF02",
       "entry_type": "performance_support",
       "printed_page": 272,
       "question_no": "2",
-      "prompt_summary": "İnsan ilişkilerindeki değerlerin tiyatro mu hikâye mi daha iyi yansıtıldığını gerekçelendirme",
-      "answer": "Örnek görüş: Tiyatro, kişiler arasındaki konuşma ve davranışları doğrudan sahnede gösterdiği için güven, saygı, sorumluluk ve liyakat gibi değerleri ilişkiler içinde daha görünür kılabilir. Ben, Mimar Sinan'da görev verme, söze güvenme ve ustaya saygı diyaloglarla açıkça gösterilir. Buna karşılık Merdiven, çok az sözle kuşaklar arası saygı, duyarlılık ve ölüm karşısındaki farkındalığı daha yoğun ve yoruma açık biçimde hissettirir. Bu nedenle 'hangisi daha iyi?' sorusunun tek cevabı yoktur; tiyatro doğrudan etkileşimi, küçürek hikâye ise yoğun çağrışımı daha güçlü kullanır.",
-      "guidance": "Öğrenci iki türden birini seçebilir; gerekçe mutlaka iki metinden somut örnekle desteklenmelidir.",
-      "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 2"
+      "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 2",
+      "prompt_summary": "İnsan ilişkilerindeki değerlerin tiyatro ya da hikâyede daha etkili yansıtılmasına ilişkin gerekçeli görüş",
+      "answer": "Örnek görüş: Tiyatro, kişilerin sözlerini ve karşılıklı tepkilerini sahnede doğrudan gösterdiği için güven, saygı ve görev ilişkilerini izleyiciye daha görünür kılabilir. Ben, Mimar Sinan’da hükümdarın Sinan’a görev vermesi ve Sinan’ın bu sorumluluğu üstlenmesi buna örnektir. Bununla birlikte Merdiven, birkaç kısa karşılaşmayla nezaket ve kuşak farkı üzerine güçlü çağrışımlar kurar; tercih, okurun hangi anlatım yolundan daha çok etkilendiğine bağlıdır.",
+      "guidance": "Tiyatro ya da hikâye yönünde farklı cevaplar kabul edilir. Öğrenci iki metinden de kanıt gösterip seçiminin gerekçesini açıklamalıdır."
     },
     {
       "question_id": "T4-P273-Q01",
       "entry_type": "question_answer",
       "printed_page": 273,
       "question_no": "1",
-      "prompt_summary": "Şair Tavafî ile Merdiven'i şiirsel dil, içerik, çağrışım gücü ve anlatıcı bakımından karşılaştırma",
-      "answer": "Şair Tavafî daha ayrıntılı, gözleme ve mizaha dayalı bir hikâye parçasıdır; yolculuk, han ortamı ve yerel insanlarla karşılaşma anlatılır. Birinci kişi anlatıcı olayları kendi gözünden aktarır, uzun cümleler ve konuşma ayrıntıları kullanılır. Merdiven ise çok daha kısa, yoğun ve simgeseldir; büro merdivenindeki birkaç karşılaşmayla yaşlanma ve ölüm düşüncesini kurar. Onda da birinci kişi anlatıcı vardır fakat anlatım daha sade ve eksiltilidir. Şair Tavafî'de çağrışım gücü gözlem, ironi ve konuşma diliyle; Merdiven'de 'merdiven, inmek, çıkmak, yol vermek' gibi tekrar eden simgesel sözcüklerle oluşur. Şiirsel yoğunluk Merdiven'de daha belirgindir.",
+      "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 1",
+      "prompt_summary": "Şair Tavafî ve Merdiven metinlerini şiirsel dil, çağrışım, içerik ve anlatıcı bakımından karşılaştırma",
+      "answer": "İki öykü de birinci kişili anlatımla gündelik bir karşılaşmayı aktarır; ancak ayrıntı miktarı ve çağrışım biçimi farklıdır.",
       "answer_sections": {
-        "siirsel_dil": {
-          "Sair_Tavafi": "Görece sınırlı; gözlem ve mizah ağırlıklı.",
-          "Merdiven": "Yoğun, tekrar ve simgelerle şiirsel."
-        },
-        "icerik": {
-          "Sair_Tavafi": "Yolculukta han ve kasaba insanlarıyla karşılaşma.",
-          "Merdiven": "Yaşlanma, ölüm ve mesleki hırs."
-        },
-        "cagrisim": {
-          "Sair_Tavafi": "İroni, yerel hayat, konuşmalar.",
-          "Merdiven": "Merdiven/inmek/çıkmak/yol verme simgeleri."
-        },
-        "anlatici": {
-          "Sair_Tavafi": "Birinci kişi.",
-          "Merdiven": "Birinci kişi."
-        }
-      },
-      "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 1"
+        "Şiirsel dil kullanımı": "Şair Tavafî’de uzun betimlemeler, yolculuk ve han ayrıntıları, anlatıcının iç konuşmaları öne çıkar. Merdiven’de kısa cümleler, tekrarlar ve çıkma-inme karşıtlığı şiirsel bir yoğunluk sağlar.",
+        "Sözcüklerin çağrışım gücü": "Şair Tavafî’de han, yolculuk, kahve ve konuk ağırlama ayrıntıları Anadolu’daki konukseverliği ve sosyal çevreyi çağrıştırır. Merdiven sözcüğü hem gerçek mekânı hem yaşam basamaklarını ve yön değiştirmeyi düşündürür.",
+        "İçerik": "Şair Tavafî’de yorgun bir yolcunun kasabadaki kişilerce karşılanması ve anlatıcının dinlenme isteği anlatılır. Merdiven’de memurların karşılaşması, yaşlılık ve acele üzerine düşünceye dönüşür.",
+        "Anlatıcı": "İki metinde de olayları yaşayan birinci kişi anlatıcı vardır. Şair Tavafî anlatıcısı dış çevreyi ve kendi çekingenliğini daha ayrıntılı aktarır; Merdiven anlatıcısı kısa karşılaşmalar ve son kararı üzerinden iç değişimini gösterir."
+      }
     },
     {
       "question_id": "T4-P273-PERF02",
       "entry_type": "performance_support",
       "printed_page": 273,
       "question_no": "2",
-      "prompt_summary": "Şair Tavafî ve Merdiven'den hangisinin daha etkileyici bulunduğunu gerekçelendirme",
-      "answer": "Örnek görüş: Merdiven daha etkileyici bulunabilir; çünkü çok kısa bir olay içinde yaşlanma, ölüm ve çalışma hayatındaki yükselme arzusunu aynı simge çevresinde toplar. Özellikle anlatıcının genç memura ilk kez yol vermesi ve sonunda 'Ne işim var benim yukarda?' demesi, açıklanmadan bırakıldığı için okurun kendi hayatıyla bağlantı kurmasına imkân verir. Şair Tavafî ise gündelik gözlem, mizah ve dönem atmosferi bakımından daha zengin bulunabilir.",
-      "guidance": "Bu kişisel beğeni sorusudur. Öğrenci diğer metni de seçebilir; gerekçesi dil, içerik, anlatıcı veya çağrışım gücü gibi ölçütlere dayanmalıdır.",
-      "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 2"
+      "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 2",
+      "prompt_summary": "İki hikâyeden hangisinin daha etkileyici olduğunu metne dayalı gerekçeyle belirtme",
+      "answer": "Örnek cevap: Merdiven’den daha çok etkilendim; çünkü tekrar eden çıkma-inme ve yol verme hareketleri önce sıradan görünürken son karşılaşmadan sonra anlam değiştiriyor. Kısa ve açık uçlu anlatım, anlatıcının ne düşündüğünü benim tamamlamama imkân veriyor. Şair Tavafî’yi seçen bir öğrenci de ayrıntılı çevre tasvirini ve konukseverlik ilişkilerini gerekçe gösterebilir.",
+      "guidance": "Beğeni kişiseldir; gerekçenin iki hikâyeden bir ayrıntıyla ilişkilendirilmesi yeterlidir."
     }
   ]
 }

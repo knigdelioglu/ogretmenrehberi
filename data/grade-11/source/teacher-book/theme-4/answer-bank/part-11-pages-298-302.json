@@ -9,164 +9,165 @@
       "entry_type": "question_answer",
       "printed_page": 299,
       "question_no": "1",
-      "prompt_summary": "Bir afişte ilk dikkati çeken unsuru açıklama",
-      "answer": "Örnek cevap: Bir afişte ilk olarak büyük ve çarpıcı görsel ile başlık/slogan dikkatimi çeker. Bunun nedeni, afişe uzaktan veya kısa süre bakıldığında önce büyük biçimlerin ve güçlü karşıtlıkların algılanmasıdır. Görsel ile başlık birbiriyle uyumluysa afişin vermek istediği mesajı daha hızlı anlamak mümkün olur.",
-      "guidance": "Bu soru kişisel beğeni içerir. Renk, slogan, fotoğraf, tipografi gibi farklı unsurları öne çıkaran gerekçeli cevaplar da kabul edilebilir.",
-      "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 1"
+      "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 1",
+      "prompt_summary": "Afişte dikkati çeken tasarım unsurunu açıklama",
+      "answer": "Örnek cevap: Önce büyük ölçekli ana görsel ve kısa, belirgin başlık dikkatimi çeker. Güçlü renk karşıtlığı da uzaktan fark edilmeyi kolaylaştırır. Ancak hangi unsurun ilk algılandığı afişin tasarımına ve izleyicinin bakışına göre değişebilir."
     },
     {
       "question_id": "T4-P299-Q02",
       "entry_type": "question_answer",
       "printed_page": 299,
       "question_no": "2",
+      "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 2",
       "prompt_summary": "Afişlerin insanları etkileme gücünü değerlendirme",
-      "answer": "Afişler kısa sürede dikkat çekip tek bir iletiyi güçlü biçimde öne çıkarabildikleri için insanları düşünmeye, hatırlamaya veya belirli bir konuda harekete geçmeye yöneltebilir. Etkileri yalnız sözcüklerden değil; görsel, renk, yazı büyüklüğü, slogan ve bunların birlikte oluşturduğu duygudan kaynaklanır. Ancak etkili olması için mesajın açık, görsel düzenin anlaşılır ve hedef kitleye uygun olması gerekir.",
-      "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 2"
+      "answer": "Afiş, kısa sürede çok kişiye ulaşabildiği için bir bilgiyi duyurabilir, dikkat çekebilir veya izleyiciyi düşünmeye yöneltebilir. Etkisi mesajın açıklığına, hedef kitleye uygunluğuna ve görsel ile sözün uyumuna bağlıdır. Görsel dikkat çekse bile ileti anlaşılmıyorsa afiş amacına ulaşmayabilir."
     },
     {
       "question_id": "T4-P299-Q03",
       "entry_type": "question_answer",
       "printed_page": 299,
       "question_no": "3",
-      "prompt_summary": "Bir afişte kullanılabilecek temel unsurları belirleme",
-      "answer": "Bir afişte ana mesajı taşıyan kısa bir başlık veya slogan, mesajı destekleyen fotoğraf/illüstrasyon, uygun zemin, okunaklı yazı karakteri, dikkat çekici fakat kontrollü renkler ve gerektiğinde kısa açıklayıcı bilgi kullanılabilir. Bu unsurlar birbirini tekrar etmek yerine aynı mesajı farklı yönlerden desteklemeli; afişte önem sırası başlık, görsel ve yardımcı bilgiler arasında açıkça görülmelidir.",
-      "evidence_quotes": [
-        "sözel unsurlar mümkün olduğunca azaltılmalıdır",
-        "sözel unsurlar ve imgeler arasında açıklayıcı, destekleyici, yorumlayıcı ya da kontrast oluşturan bir ilişki kurulmalı"
-      ],
-      "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 3; ölçütler basılı s.298 / PDF s.299"
+      "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 3; ölçütler basılı s.298 / PDF s.299",
+      "prompt_summary": "Afişte kullanılabilecek içerik ve tasarım ögelerini belirleme",
+      "answer": "Afişte açık bir ana mesaj, kısa başlık veya slogan, mesajı destekleyen tek ve belirgin bir fotoğraf/illüstrasyon, okunaklı yazı, uygun renk ve güçlü karşıtlık kullanılabilir. Ögeler birbirini tekrar etmek yerine tamamlamalıdır; görsel veya alıntı kullanılacaksa kaynağı ve kullanım hakkı gözetilmelidir.",
+      "answer_sections": {
+        "Söz": "Başlık ve slogan kısa, hiyerarşisi belirgin ve hedef kitleye uygun olmalı.",
+        "Görsel": "Bir ana imgeyi büyük kullanın; mesajla uyumunu kontrol edin.",
+        "Düzen": "Okunaklı yazı karakteri, sınırlı sözcük ve yeterli renk karşıtlığı seçin."
+      }
     },
     {
       "question_id": "T4-P299-PERF01",
       "entry_type": "performance_support",
       "printed_page": 299,
       "question_no": "Performans Görevi a-c",
-      "prompt_summary": "Fedakârlık belgeselini yansıtan özgün afiş için amaç, özellik ve yazma stratejisi oluşturma",
-      "answer": "Özgün afiş görevi amaç, afiş özellikleri ve yazma stratejisi başlıklarında planlanabilir.",
-      "guidance": "Belgeselin gerçek iletisi video izlenmeden rehber tarafından doldurulmamalıdır. Öğrenci s.286-296'daki kendi notlarından doğruladığı bir iletiyi seçmelidir.",
       "source_locator": "basılı s.299 / PDF s.300 — Performans Görevi a-c; Afiş Tasarımında Değerlendirme Kriterleri basılı s.298 / PDF s.299",
+      "prompt_summary": "Fedakârlık belgeseline yönelik afişin amacını, özelliklerini ve yazma stratejisini planlama",
+      "answer": "Örnek plan: Afişin amacı, izlenen Fedakârlık belgeselinde kanıtla belirlenen temel iletiyi hedef kitleye kısa ve etkili biçimde ulaştırmaktır. İçerik seçilmeden önce videodaki ileti doğrulanmalı; ardından mesaj, görsel ve sözlü hiyerarşi belirlenmelidir.",
       "answer_sections": {
-        "Amaç": "Fedakârlık belgeselinde izleme sırasında doğrulanan temel iletiyi kısa sürede anlaşılacak görsel bir mesaja dönüştürmek.",
-        "Afiş özellikleri": [
-          "Tek ana ileti",
-          "Bir güçlü görsel",
-          "3–6 sözcüklük kısa slogan",
-          "Okunaklı yazı",
-          "Başlık–görsel bütünlüğü",
-          "Belirgin görsel hiyerarşi",
-          "Gereksiz ayrıntıdan kaçınma"
-        ],
-        "Yazma stratejisi": [
-          "Hedef kitleyi ve iletiyi belirle.",
-          "3–4 slogan taslağı üret.",
-          "En açık olanı seç.",
-          "Slogan–görsel ilişkisini kontrol et.",
-          "Taslağı sadeleştirip son hâle getir."
-        ]
-      }
+        "Afişi hazırlama amacım": "Belgeselde gerçekten gözlenen bir iletiyi sınıf arkadaşlarına anlaşılır ve dikkat çekici biçimde aktarmak.",
+        "Afişin özellikleri": "Tek ana ileti; mesajla uyumlu bir veya az sayıda görsel; kısa başlık/slogan; başlık, alt başlık ve slogan arasında belirgin hiyerarşi; uzaktan okunabilen yazı ve karşıt renk.",
+        "Yazma stratejisi": "İzleme notlarından iletiyi seç → hedef kitleyi belirle → görsel ve slogan seçeneklerini tasarla → taslak hazırla → arkadaş geri bildirimiyle düzelt."
+      },
+      "guidance": "Afişin mesajı, öğrenci Fedakârlık videosunu gerçekten izledikten sonra seçilmelidir; video içeriği tahminle doldurulmaz."
     },
     {
       "question_id": "T4-P300-PERF01",
       "entry_type": "performance_support",
       "printed_page": 300,
       "question_no": "İçerik Oluşturabilme a-b, d-f",
-      "prompt_summary": "Afişin görsel, renk, yazı, bilgi, dil ve geri bildirim kararlarını yapılandırma",
-      "answer": "Afişin içerik üretimi aşağıdaki sıra izlenerek yürütülebilir:",
-      "explanation": "Kitaptaki QR 'Afiş Hazırlama Basamakları' videosu yardımcı kaynaktır. Kitapta a-f adımları açıkça verildiği için bu süreç bütünüyle source_limited değildir.",
       "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme a-b, d-f",
-      "answer_sections": [
-        "Çevredeki afişlerden hangi düzenlerin hızlı anlaşıldığını gözlemle; kalabalık tasarımların neden zor okunduğunu tartış.",
-        "Bir ana görsel, iki veya üç temel renk ve uzaktan okunabilen bir yazı karakteri seç.",
-        "Afişteki bilgileri yalnız ana iletiyi destekleyenlerle sınırlandır.",
-        "Sloganı kısa, açık ve hedef kitleye uygun hâle getir.",
-        "Görseli sloganı tekrar etmek için değil, onu açıklamak, yorumlamak veya güçlendirmek için kullan.",
-        "Taslağı başka bir öğrenciye 5–6 saniye göster; “ne anladın, ilk neyi gördün, mesaj açık mı?” geri bildirimiyle düzenle."
-      ]
+      "prompt_summary": "Afiş için görsel, renk, yazı, bilgi ve geri bildirim sürecini planlama",
+      "answer": "Afişin ana iletisi izlenmiş videodan seçildikten sonra şu plan uygulanabilir.",
+      "answer_sections": {
+        "Fikir alışverişi": "Reklam, tiyatro ve film afişlerinden başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik örnekleri inceleyin.",
+        "Renk ve görsel": "Tek ana görsel seçin; renkleri belgeselde gözlenen iletiyi destekleyecek ve yazıyı okunur kılacak biçimde kullanın.",
+        "Bilgi ve söz varlığı": "Yalnızca videoda doğrulanan bilgi ve ifadeleri alın; hedef kitleye uygun, kısa sözcüklerle taslağı kurun.",
+        "Dil ve malzeme": "Kendi çiziminiz, izinli görsel veya kaynağı belirtilmiş materyal seçin; görseli afiş amacına ve bağlama uygun kullanın.",
+        "Geri bildirim": "Taslağı arkadaşlara sunun; mesajın ilk bakışta anlaşılıp anlaşılmadığı, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneriler alıp düzeltin."
+      },
+      "guidance": "Belgeselin hangi iletisini seçtiğiniz, ayrı video-temelli kayıtta doğrulanmalıdır."
     },
     {
       "question_id": "T4-P300-SL01",
       "entry_type": "source_limited",
       "printed_page": 300,
       "question_no": "İçerik Oluşturabilme c-ç",
-      "prompt_summary": "Fedakârlık belgeselindeki iletilerden afiş için birini seçme ve belgeselin etkileyicilik unsurlarını değerlendirme",
-      "answer": "Fedakârlık videosunun gerçek içeriği erişilebilir olmadığı için 'Belgeseldeki İletiler' tablosu ve 'Seçtiğim İleti' alanı hazır içerikle doldurulmamalıdır. Öğrenci kendi izleme notlarından 2-4 ileti çıkarıp her birini videodaki bir söz, davranış veya sahneyle doğrulamalı; afiş için tek bir ileti seçmelidir. Belgeselin etkileyiciliği değerlendirilirken yalnız gerçekten gözlenen görsel, ses, mekân, kişi davranışı ve anlatım tercihleri kullanılmalıdır.",
-      "guidance": "Öğretmen öğrenciden 'ileti + videodaki kanıt + afişte nasıl görünür hâle getirileceği' üçlüsünü kurmasını isteyebilir.",
-      "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme c-ç / Fedakârlık QR videosu gerekli"
+      "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme c-ç / Fedakârlık QR videosu gerekli",
+      "prompt_summary": "Fedakârlık belgeselinden seçilen iletiyi ve etkileyicilik unsurlarını belirleme",
+      "answer": "Bu tablo belgeseldeki gerçek iletilere ve görüntü/ses kullanımına bağlıdır; EBA videosu burada açılamadığı için ileti veya etkileyicilik unsuru doldurulamaz. Öğrenci izlediği kayıttan iletiyi kendi sözleriyle yazmalı; bunu destekleyen bir davranış, söz, görüntü veya ses ayrıntısını belirtmelidir. Afiş planında yalnız doğrulanan ileti kullanılmalıdır.",
+      "guidance": "Başlıktan hareketle bir mesaj uydurup belgeselde verilmiş gibi sunmayın."
     },
     {
       "question_id": "T4-P301-PERF01",
       "entry_type": "performance_support",
       "printed_page": 301,
       "question_no": "Kural Uygulayabilme a-g",
-      "prompt_summary": "Afişi plan, özgünlük, hedef kitle, dil, değer ve toplumsal hassasiyet ölçütleriyle oluşturma",
-      "answer": "Son ürün kontrolü şu sırayla yapılabilir: plana bağlılık; duygu ve düşüncenin özgün biçimde ifade edilmesi; hedef kitleye uygun söz varlığı ve üslup; ana iletinin dikkat çekici biçimde verilmesi; ifadelerin kendi içinde tutarlı olması; Türkçenin dil yapısı, bağdaşıklık, yazım ve noktalama kurallarına uygunluk; millî-manevi ve kültürel unsurların bağlama uygun kullanılması; toplumsal hassasiyetlere aykırı ögelerden kaçınılması. Bu maddelerden biri afişi kalabalıklaştırıyorsa yeni unsur eklemek yerine mevcut unsur sadeleştirilmelidir.",
-      "source_locator": "basılı s.301 / PDF s.302 — Kural Uygulayabilme a-g"
+      "source_locator": "basılı s.301 / PDF s.302 — Kural Uygulayabilme a-g",
+      "prompt_summary": "Afişi plan, özgünlük, hedef kitle, ileti, Türkçe ve toplumsal hassasiyet kurallarına göre oluşturma",
+      "answer": "Son ürünü hazırlarken aşağıdaki kontrol noktalarını kullanın.",
+      "answer_sections": {
+        "Plana bağlılık": "Taslakta kararlaştırılan amaç, ileti ve görsel düzeni koruyun.",
+        "Özgünlük": "Duygu ve düşünceyi kendi sözlerinizle ifade edin; başka afişi kopyalamayın.",
+        "Hedef kitle ve üslup": "Söz varlığı ve anlatım biçimini afişi görecek kişilere uygun seçin.",
+        "İleti ve tutarlılık": "Mesajı dikkat çekici ve açık verin; seçilen görsel ve sözler aynı iletiyi desteklesin.",
+        "Türkçe": "Anlam açıklığı, sözcük uyumu, bağlam, yazım ve noktalama kurallarını gözden geçirin.",
+        "Hassasiyet ve değerler": "Toplumsal hassasiyetleri gözetin; millî, manevi ve kültürel ögeleri saygılı ve olumlu biçimde kullanın."
+      }
     },
     {
       "question_id": "T4-P301-PERF02",
       "entry_type": "performance_support",
       "printed_page": 301,
       "question_no": "Örnek afiş iskeleti",
-      "prompt_summary": "Fedakârlık belgeseli için ezberletilmeyecek örnek afiş yapısı",
-      "answer": "Örnek iskelet: Üstte 3-6 sözcüklük bir slogan; merkezde belgeseldeki seçilmiş iletiyi temsil eden tek güçlü görsel; altta yalnız gerekiyorsa bir cümlelik destekleyici açıklama. Slogan, '[videoda doğrulanan ana ileti]'yi doğrudan söylemek yerine akılda kalıcı ve kısa biçimde yeniden kurmalıdır. Görsel de aynı cümleyi tekrar etmek yerine mesajın duygusal veya düşünsel yönünü görünür kılmalıdır. Tasarımın geri kalanında boş alan korunmalı ve görsel hiyerarşi bozulmamalıdır.",
-      "guidance": "Bu iskelet aynen kullanılacak afiş değildir. Belgesel görülmeden slogan, kişi, sahne veya görsel içeriği rehber tarafından uydurulmaz.",
-      "source_locator": "basılı s.298-301 / PDF s.299-302 — Afiş kriterleri + Performans Görevi"
+      "source_locator": "basılı s.298-301 / PDF s.299-302 — Afiş kriterleri + Performans Görevi",
+      "prompt_summary": "Kitap ölçütlerine uygun, video iletisi sonradan yerleştirilecek afiş taslağı oluşturma",
+      "answer": "Video içeriği izlenmeden doldurulmayacak alanlarla örnek afiş iskeleti:",
+      "answer_sections": {
+        "Başlık/slogan": "[Videoda kanıtlanan ana iletiyi kısa biçimde ifade eden 3–5 sözcük.]",
+        "Ana görsel": "[Videoda gerçekten görülen davranış veya izinli/özgün bir çizim; tek ve büyük imge.]",
+        "Alt bilgi": "[Gerekliyse belgeselin adı veya kısa açıklama; sloganı tekrarlamayan bilgi.]",
+        "Düzen": "Başlık en belirgin; ana görsel mesajı destekler; yazı okunaklı ve renk karşıtlığı yeterli.",
+        "Kaynak notu": "Dışarıdan alınan görsel veya alıntı varsa kaynağını ve kullanım koşulunu belirtin."
+      },
+      "guidance": "Köşeli alanlar öğrenci videoyu izledikten ve iletiyi doğruladıktan sonra doldurulur."
     },
     {
       "question_id": "T4-P302-PERFQ01",
       "entry_type": "performance_support",
       "printed_page": 302,
       "question_no": "1",
-      "prompt_summary": "Afiş hazırlama sürecindeki duygu, düşünce ve davranış değişimini değerlendirerek öz değerlendirme yapma",
-      "answer": "Örnek yansıtma iskeleti: 'Başlangıçta afişi daha çok güzel görünen bir tasarım olarak düşünüyordum. Çalışma sırasında mesajın açıklığı, hedef kitle ve görsel-söz ilişkisi üzerinde daha fazla durmam gerektiğini fark ettim. İlk taslağımda [...] sorununu gördüm; geri bildirim sonrasında [...] değişikliğini yaptım. Bundan sonraki çalışmalarımda önce ana iletiyi netleştirip ardından görsel seçmeye dikkat edeceğim.'",
-      "guidance": "Öğrencinin gerçek sürecinde yaşamadığı değişiklikler yazılmamalıdır; örnek yalnız yansıtmanın yapısını gösterir.",
-      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 1"
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 1",
+      "prompt_summary": "Afiş hazırlama sürecindeki duygu, düşünce ve davranış değişimini öz değerlendirmeyle açıklama",
+      "answer": "Örnek yansıtma: “Taslak hazırlarken çok sayıda görsel ve sözü bir arada kullanmak istedim; ölçütleri gözden geçirince tek bir iletiye odaklanmanın daha anlaşılır olduğunu fark ettim. Geri bildirimi aldıktan sonra başlığı kısalttım ve görseli büyüttüm. Sonraki çalışmada taslağı daha erken paylaşacağım.”",
+      "guidance": "Bu yalnızca örnek yapıdır; öğrencinin kendi yaşadığı değişimi ve yaptığı düzenlemeyi anlatması gerekir."
     },
     {
       "question_id": "T4-P302-PERFQ02",
       "entry_type": "performance_support",
       "printed_page": 302,
       "question_no": "2",
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 2",
       "prompt_summary": "Hazırlanan afişi içerik, dil ve anlatım yönünden değerlendirme",
-      "answer": "Örnek değerlendirme çerçevesi: İçerik açısından ana ileti belgeselle ilişkili ve tek bakışta anlaşılır mı? Dil açısından slogan kısa, doğru, hedef kitleye uygun ve yazım-noktalama bakımından temiz mi? Anlatım açısından başlık, görsel ve yardımcı unsurlar aynı mesajı destekliyor mu; önem sırası açık mı; gereksiz ayrıntı var mı? Öğrenci her başlıkta bir güçlü yön ve mümkünse bir geliştirme noktası belirtmelidir.",
-      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 2"
+      "answer": "Öz değerlendirmede üç noktayı kontrol edin: İçerik videodaki kanıtlı iletiyi doğru yansıtıyor mu; dil kısa, anlaşılır ve hedef kitleye uygun mu; yazı ile görsel birbirini tamamlıyor mu? Güçlü yönün yanına düzeltilecek somut bir nokta da yazılmalıdır."
     },
     {
       "question_id": "T4-P302-PERFQ03",
       "entry_type": "performance_support",
       "printed_page": 302,
       "question_no": "3",
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 3",
       "prompt_summary": "Afişte kullanılan görsel ve alıntıları telif, hakkaniyet ve dürüstlük açısından değerlendirme",
-      "answer": "Afişte kullanılan her görsel ve alıntının kaynağı kontrol edilmelidir. Başkasına ait görsel, metin veya tasarım unsuru öğrencinin kendi üretimi gibi sunulmamalı; kullanılmasına izin verilen içerik seçilmeli ve gerektiğinde kaynak belirtilmelidir. Alıntı bağlamından koparılmamalı, anlamı değiştirilmemeli; başka bir afişin düzeni doğrudan kopyalanmamalıdır. Öğrenci kendi ürettiği görsel veya metin ile dışarıdan aldığı içeriği açıkça ayırabilmelidir.",
-      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 3"
+      "answer": "Kullandığım görseli kendim üretmediysem kullanım izni veya lisans koşulunu kontrol eder, gerekiyorsa kaynağını belirtirim. Başka bir afişi olduğu gibi kopyalamam; alıntıyı kendi sözüm gibi göstermem ve bağlamından koparmam. Böylece emeğe saygı ve içerik sahipliğine ilişkin dürüstlük korunur.",
+      "guidance": "Bu cevap genel sınıf içi uygulama rehberidir; hukuki görüş yerine geçmez."
     },
     {
       "question_id": "T4-P302-PERF04",
       "entry_type": "performance_support",
       "printed_page": 302,
       "question_no": "4",
-      "prompt_summary": "Son afişi uygun resmî okul ortamında paylaşma",
-      "answer": "Paylaşım öncesi son kontrol yapılmalıdır: kişisel veri veya izinsiz kişi görüntüsü bulunmaması, kullanılan dış içeriklerin telif durumunun uygun olması, yazım hatalarının giderilmesi ve afişin okulun resmî paylaşım kurallarına uyması. Fiziksel panoda baskı boyutu ve okunabilirlik; çevrim içi paylaşımda görsel çözünürlük ve metnin ekranda okunabilirliği ayrıca kontrol edilmelidir.",
-      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme madde 4"
+      "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme madde 4",
+      "prompt_summary": "Son afişi sınıf veya okul panosunda ya da okulun resmî çevrim içi ortamında paylaşma",
+      "answer": "Afişin son sürümünü sınıf/okul panosunda sergilemek veya okulun resmî çevrim içi ortamında paylaşmak için okunaklı baskı ya da dijital kopya hazırlayın. Paylaşmadan önce yazım, görsel kaynağı ve seçilen iletinin doğruluğunu yeniden kontrol edin; çevrim içi paylaşımı okulun belirlenmiş süreciyle yürütün."
     },
     {
       "question_id": "T4-P302-PERF05",
       "entry_type": "performance_support",
       "printed_page": 302,
       "question_no": "Değerlendirme",
-      "prompt_summary": "Afişi kitapta görünür olan değerlendirme ölçütleriyle gözden geçirme",
-      "answer": "Kitapta açıkça görülen değerlendirme eksenleri şunlardır: konuya uygunluk, yaratıcılık, özgünlük, etkileyicilik ve görsel/işitsel ögelerin seçimi. Öğretmen bu başlıklarda somut geri bildirim vermeli; öğrenci tespit edilen eksikleri son üründe düzeltmelidir. QR'deki Dereceli Puanlama Anahtarı görülmeden puan aralıkları, seviye adları veya ayrıntılı rubrik maddeleri uydurulmamalıdır.",
-      "source_locator": "basılı s.302 / PDF s.303 — Değerlendirme / QR Dereceli Puanlama Anahtarı"
+      "source_locator": "basılı s.302 / PDF s.303 — Değerlendirme / QR Dereceli Puanlama Anahtarı",
+      "prompt_summary": "Afişi öğretmenin QR dereceli puanlama anahtarına göre değerlendirip eksikleri giderme",
+      "answer": "Sayfada görünen değerlendirme ölçütleri konuya uygunluk, yaratıcılık, özgünlük, etkileyicilik ve görsel/işitsel ögelerin seçimi gibi başlıklardır. QR dereceli puanlama anahtarının ayrıntısı bu incelemede açılmadı; düzey adları, puan aralıkları veya ek ölçütler uydurulmamalıdır. Anahtara erişildiğinde öğretmen ve öğrenci tespit edilen eksikleri ona göre düzeltir."
     },
     {
       "question_id": "T4-P302-PERF06",
       "entry_type": "performance_support",
       "printed_page": 302,
       "question_no": "Tema Sonu Değerlendirme / Öğrenme Günlüğü",
-      "prompt_summary": "Tema sonu öğrenme günlüğünü kişisel öğrenme kanıtlarıyla tamamlama",
-      "answer": "Öğrenme günlüğü öğrencinin gerçek öğrenmesine göre doldurulmalıdır. 'Tema öncesi bildiklerim' ile başlangıç düzeyi; 'tema sonrasında öğrendiklerim' ile yeni bilgi ve beceriler; 'hayatın gerçeklerinin duygu, düşünce ve davranışlara yansıması' ile temadaki metinlerden çıkarılan farkındalık; 'kelime dağarcığı, anlatım ve dil kullanımı' ile somut gelişim; 'konuşmacı ve yazar kimliğime etkisi' ile sonraki çalışmalar için kişisel hedef yazılmalıdır.",
-      "guidance": "Genel övgü cümleleri yerine öğrencinin en az bir metin, etkinlik veya beceri örneğine dayanması daha anlamlı bir değerlendirme sağlar.",
-      "source_locator": "basılı s.302 / PDF s.303 — Tema Sonu Değerlendirme / Öğrenme Günlüğü"
+      "source_locator": "basılı s.302 / PDF s.303 — Tema Sonu Değerlendirme / Öğrenme Günlüğü",
+      "prompt_summary": "Tema sonu öğrenme günlüğünü öğrencinin kendi öğrenme ve yazar kimliği üzerine tamamlaması",
+      "answer": "Öğrenme günlüğü öğrencinin tema öncesi ve sonrası bilgisini, hayat deneyimiyle ilgili farkındalığını ve konuşmacı/yazar kimliğindeki değişimi kendi örnekleriyle yazdığı kişisel bir çalışmadır. Öğretmen, “Bu temada öğrendiğim bir şey…”, “Hayatın gerçeklerinin duygu ve davranışlara yansıdığını şu metinde fark ettim…”, “Bir sonraki yazma/konuşma çalışmamda…” gibi başlangıçlar sunabilir.",
+      "guidance": "Öğrenci adına öğrenme sonucu, kişisel farkındalık veya öz değerlendirme doldurmayın."
     }
   ]
 }

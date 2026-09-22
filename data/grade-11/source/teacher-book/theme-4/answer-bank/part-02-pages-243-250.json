@@ -9,101 +9,90 @@
       "entry_type": "question_answer",
       "printed_page": 247,
       "question_no": "Söz Varlığımız 1-2",
-      "prompt_summary": "Çağdaş, özge, görkemli, şevk, avaze ve sadr-ı âzam kelimelerini bağlam içinde anlamlandırma",
-      "answer": "Söz varlığı çalışmasındaki kelimeler, anlamları ve kullanılabilecek yakın karşılıklarıyla aşağıda gösterilmiştir.",
+      "source_locator": "basılı s.247 / PDF s.248 — Söz Varlığımız",
+      "prompt_summary": "Metindeki altı sözcük ve söz öbeğinin bağlamsal anlamını ve alternatiflerini bulma",
+      "answer": "Aşağıdaki karşılıklar metindeki kullanıma göre verilmiştir. Karekodla sözlükten doğrulama yapılırken sözcüğün bu bağlamdaki anlamı esas alınabilir.",
       "answer_sections": {
-        "çağdaş": "Aynı dönemde yaşayan → dönemdaşı",
-        "özge": "Başka, diğer → başka",
-        "görkemli": "İhtişamlı, etkileyici → ihtişamlı",
-        "şevk": "İstek ve coşku → büyük istek / coşku",
-        "avaze": "Yüksek ses, seda → ses",
-        "sadr-ı âzam": "Osmanlı'da en yüksek devlet görevlilerinden biri → başvezir"
+        "sadr-ı âzam": "Bağlamdaki anlamı sadrazam, yani hükümetin başındaki vezirdir. Öneri: sadrazam / başbakan (dönemin adlandırması korunacaksa sadrazam).",
+        "görkemli": "İhtişamlı, etkileyici, büyük ve gösterişli. Öneri: ihtişamlı, görkemli.",
+        "şevk": "Bir işi yapma isteği, coşku ve heves. Öneri: istek, heyecan.",
+        "çağdaş": "Aynı dönemde yaşayan veya aynı çağa ait olan. Öneri: dönemdaşı.",
+        "avaze": "Ses, ün veya sesin yayılışı; Baki dizesinde adın/sesin dünyaya duyurulması anlamı öne çıkar. Öneri: ses, ün.",
+        "özge": "Başka, gayrı. Öneri: başka, gayrı."
       },
-      "source_locator": "basılı s.247 / PDF s.248 — Söz Varlığımız"
+      "guidance": "“Avaze” gibi şiirsel kullanımlarda sözcüğün sözlük anlamı ile dizedeki mecazlı işlevi birlikte ele alınmalıdır."
     },
     {
       "question_id": "T4-P248-PERF01",
       "entry_type": "performance_support",
       "printed_page": 248,
       "question_no": "Sıra Sizde 1-3",
-      "prompt_summary": "Okuma öncesi Ben, Mimar Sinan tahminleriyle okuma sonrası tespitleri karşılaştırma",
-      "answer": "Örnek karşılaştırma: Okuma öncesinde metnin Mimar Sinan'ın hayatını, önemli eserlerini ve mimarlık serüvenini anlatacağı tahmin edilmiş olabilir. Okuma sonrasında bu tahmine ek olarak oyunun Sinan'ın Ayasofya'yla kurduğu mesleki rekabeti, bilgi ve çalışkanlıkla yükselişini, Şehzade-Süleymaniye-Selimiye çizgisini, dönemin sanat ve devlet çevresini ve tarihî bilgileri sahne, müzik, görüntü ve seslerle dramatikleştirdiği görülür. Böylece temel tahmin büyük ölçüde doğrulanırken tiyatroya özgü dramatik ve görsel-işitsel yönler ilk tahmini genişletir.",
-      "guidance": "Öğrencinin gerçek ilk tahmini neyse onunla karşılaştırma yapılmalıdır; okuma sonrasında tahmin geriye dönük biçimde değiştirilmemelidir.",
-      "source_locator": "basılı s.248 / PDF s.249 — Sıra Sizde"
+      "source_locator": "basılı s.248 / PDF s.249 — Sıra Sizde",
+      "prompt_summary": "Okuma öncesi tahminleri metin sonrası tespitlerle karşılaştırma",
+      "answer": "Örnek tablo: Okumadan önce başlıktan ve görsellerden Sinan’ın yaşamını, eserlerini ve mesleki gelişimini anlatan bir oyun beklendi. Okuduktan sonra metnin Sinan’ı konuşturduğu; Ayasofya’ya duyduğu hayranlığı, mimarlık öğrenimini, görevlerini ve önemli eserlerini sahne yönergeleriyle anlattığı görüldü. Tahmin ana çerçevede uyuştu; oyundaki sesler, görseller ve sahne düzeni tahmini genişletti.",
+      "answer_sections": {
+        "Okumadan önceki tahmin": "Mimar Sinan’ın yaşamı ve önemli yapıları çevresinde gelişen bir tiyatro metni olabileceği.",
+        "Okuduktan sonraki tespit": "Metin, Sinan’ın yaşam öyküsünü onun ağzından; sahne yönergeleri, farklı sesler ve yapı görselleriyle anlatır.",
+        "Değerlendirme": "Tahmin genel konu bakımından uyuşmuştur; tiyatroya özgü sahneleme biçimi okuma sonrasında belirginleşmiştir."
+      },
+      "guidance": "Öğrencilerin ilk tahminleri farklı olabilir. Değerlendirme, tahminin metinle hangi yönlerden örtüştüğünü ve nerede değiştiğini kanıtlamalıdır."
     },
     {
       "question_id": "T4-P249-PERF01",
       "entry_type": "performance_support",
       "printed_page": 249,
       "question_no": "Fark Edelim / Vızıltı Grubu",
-      "prompt_summary": "Tiyatronun zihinsel ve duygusal farkındalık kazandırma işlevini tartışma",
-      "answer": "Örnek tartışma sonucu: Tiyatro, insanı olayların ve ilişkilerin dışarıdan izleyicisi hâline getirerek kendi hayatına daha mesafeli bakmasına yardım edebilir. Farklı kişilerin çatışmalarını ve duygularını canlı biçimde görmek empatiyi, eleştirel düşünmeyi ve toplumsal ilişkileri değerlendirme becerisini geliştirebilir. Sevda Şener'in metninde de tiyatronun gerçekleri tanıtma, düşünme yeteneğini geliştirme ve insanın çevresiyle ilişkisini düzenlemesine yardım etme işlevleri vurgulanır.",
-      "evidence_quotes": [
-        "Tiyatro gerçekleri tanıtır",
-        "Tiyatro düşünme yeteneğini geliştirir"
-      ],
-      "source_locator": "basılı s.248-249 / PDF s.249-250 — Fark Edelim ve vızıltı grubu"
+      "source_locator": "basılı s.248-249 / PDF s.249-250 — Fark Edelim ve vızıltı grubu",
+      "prompt_summary": "Tiyatronun zihinsel ve duygusal farkındalık işlevini grup tartışmasında değerlendirme",
+      "answer": "Örnek grup sonucu: Tiyatro, insanları ve toplumsal ilişkileri sahnede görünür kılar; izleyiciye olayları başka kişilerin bakış açısından değerlendirme fırsatı verir. Bu, hem empatiyi hem de eleştirel düşünmeyi geliştirebilir. Seyirciler aynı oyunu birlikte izleyip tartıştıklarında ortak sorunlar ve değerler üzerine konuşabilirler. Etki, oyunun konusu ve sahnelemenin izleyicide uyandırdığı düşünceye göre değişebilir."
     },
     {
       "question_id": "T4-P249-Q01",
       "entry_type": "question_answer",
       "printed_page": 249,
       "question_no": "Karşılaştıralım 1",
-      "prompt_summary": "Gerçek hayat ile tiyatro atmosferini olay/durum, mekân, kişiler ve söz varlığı bakımından karşılaştırma",
-      "answer": "Gerçek hayatta olay ve durumlar önceden bütünüyle tasarlanmış değildir; tiyatroda ise seçilip düzenlenerek dramatik bir kurgu içinde sunulur. Gerçek mekân sınırsız ve değişkendir; tiyatro mekânı dekor, ışık, ses ve sahne düzeniyle temsil edilir. Gerçek hayattaki insanlar bütün yönleriyle karmaşıktır; tiyatro kişileri belirli çatışma, amaç ve özellikleri görünür kılacak biçimde seçilip yoğunlaştırılır. Gerçek hayattaki söz varlığı doğal ve anlık çeşitlilik taşırken tiyatrodaki sözler karakter, dönem, tema ve sahne etkisine göre bilinçli biçimde düzenlenir.",
+      "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 1",
+      "prompt_summary": "Gerçek hayat ile tiyatro atmosferini dört ölçütte karşılaştırma",
+      "answer": "Gerçek hayat yaşanırken tiyatro onu seçer, düzenler ve sahnede yeniden kurar. Bu nedenle iki atmosfer arasında benzerlikler bulunsa da tiyatrodaki olaylar ve kişiler sanatsal bir düzen içinde sunulur.",
       "answer_sections": {
-        "olay_durum": {
-          "gercek_hayat": "Kendiliğinden ve çok yönlü gelişebilir.",
-          "tiyatro": "Seçilmiş ve dramatik örgüye göre düzenlenmiş olay/durumlar."
-        },
-        "mekan": {
-          "gercek_hayat": "Gerçek ve sınırsız çevre.",
-          "tiyatro": "Dekor, ışık ve sesle temsil edilen sahne mekânı."
-        },
-        "kisiler": {
-          "gercek_hayat": "Çok yönlü gerçek insanlar.",
-          "tiyatro": "Belirli özellik ve çatışmaları öne çıkarılmış dramatik kişiler."
-        },
-        "soz_varligi": {
-          "gercek_hayat": "Doğal, anlık ve değişken.",
-          "tiyatro": "Karaktere, döneme ve dramatik amaca göre seçilmiş."
-        }
-      },
-      "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 1"
+        "Olay/durum": "Gerçek hayattaki olaylar kesintisiz ve her zaman öngörülemez biçimde gelişir. Tiyatro, seçilmiş olayları çatışma ve sahne düzeni çevresinde yoğunlaştırır.",
+        "Mekân": "Gerçek mekân gündelik işlevleriyle vardır; sahne mekânı dekor ve ışıkla temsil edilir, değiştirilebilir ve anlam kazanır.",
+        "Kişiler": "Gerçek kişiler kendi yaşamlarını sürdürür. Oyundaki kişiler oyuncularca canlandırılan karakterlerdir; davranışları oyunun yapısı içinde düzenlenmiştir.",
+        "Söz varlığı": "Gerçek hayatta konuşma doğal ve dağınık akabilir. Tiyatroda sözler karaktere, döneme ve sahne etkisine göre seçilip düzenlenir."
+      }
     },
     {
       "question_id": "T4-P249-Q02",
       "entry_type": "question_answer",
       "printed_page": 249,
       "question_no": "Karşılaştıralım 2",
-      "prompt_summary": "Sanat metinlerinin gerçek hayattan farklı oluşunun insan yaşamına katkıları",
-      "answer": "Sanat metni gerçek hayatı seçip yoğunlaştırarak okurun veya izleyicinin gündelik hayatta fark etmeyebileceği bir durumu daha açık görmesini sağlayabilir. Kurmaca uzaklık, insanın kendi sorunlarını başka kişilerin yaşantıları üzerinden değerlendirmesine, empati kurmasına ve farklı ihtimalleri düşünmesine imkân verir. Bu nedenle sanatın gerçek hayattan farklı oluşu bir eksiklik değil, hayatı yeniden görme ve yorumlama olanağıdır.",
-      "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 2"
+      "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 2",
+      "prompt_summary": "Sanat metinlerinin gerçek hayattan farklı oluşunun katkılarını çıkarma",
+      "answer": "Sanat metni gerçekliğin tamamını kopyalamak yerine belirli bir yönünü seçip yoğunlaştırdığı için okur ya da izleyici yaşantıya dışarıdan bakabilir. Bu mesafe, olayların nedenlerini ve sonuçlarını düşünmeyi, başka kişilerin deneyimlerini anlamayı ve gündelik hayatta fark edilmeyen değerleri görmeyi kolaylaştırır. Tiyatronun sahne düzeni ayrıca dağınık yaşantıları ortak bir odakta toplar."
     },
     {
       "question_id": "T4-P250-TABLE01",
       "entry_type": "question_answer",
       "printed_page": 250,
       "question_no": "Sıra Sizde",
-      "prompt_summary": "Altı çizili kelime ve kelime gruplarının dönemin sosyal hayatını yansıtıp yansıtmadığını değerlendirme",
-      "answer": "Unsurların dönemin sosyal hayatını yansıtıp yansıtmadığı aşağıdaki tabloda ayrı ayrı değerlendirilmiştir.",
+      "source_locator": "basılı s.250 / PDF s.251 — sosyal hayat tablosu / görsel doğrulandı",
+      "prompt_summary": "Tiyatro metnindeki altı çizili ifadelerin sosyal hayatı yansıtma durumunu gerekçelendirme",
+      "answer": "Örnek sınıflandırma aşağıdadır. Özellikle mecazlı ve genel ifadelerde öğrencinin gerekçeli farklı değerlendirmeleri de kabul edilebilir.",
       "answer_sections": {
-        "Acemi Ocağı": "Evet — askerî eğitim ve meslek sistemi.",
-        "Cami": "Evet — dinî ve mimari hayat.",
-        "Mimarbaşı": "Evet — devlet teşkilatı ve meslek düzeni.",
-        "fırsat gözlemek": "Hayır — genel deyim.",
-        "kervansaray": "Evet — ticaret, ulaşım ve konaklama.",
-        "sabrımın meyvesini toplamak": "Hayır — genel mecaz/deyim.",
-        "harabe": "Hayır — tek başına döneme özgü sosyal hayat göstergesi değil.",
-        "meşale": "Evet — dönemin aydınlatma/çalışma imkânı.",
-        "tahta çıkmak": "Evet — monarşik yönetim düzeni.",
-        "manevi zenginlik": "Evet — toplumun değer ve kültür dünyası.",
-        "padişah": "Evet — yönetim yapısı.",
-        "Tanrı evi": "Evet — dinî hayat.",
-        "gemi": "Evet — ulaşım ve denizcilik."
-      },
-      "explanation": "Altı çizili ifadeler PDF sayfasından görsel olarak doğrulanmıştır; düz metin extraction'ındaki sıra kullanılmamıştır.",
-      "source_locator": "basılı s.250 / PDF s.251 — sosyal hayat tablosu / görsel doğrulandı"
+        "Acemi Ocağı": "Evet. Osmanlı dönemindeki askerî eğitim ve meslek yetiştirme düzenine ilişkin bir kurum adıdır.",
+        "sekiz bin kandil": "Evet. Caminin kullanımı ve aydınlatılması üzerinden ibadet mekânlarının dönemin gündelik yaşamındaki yerini gösterir.",
+        "Ağalar; şahit olun": "Evet. Hitap biçimini, toplumsal hiyerarşiyi ve bir olaya tanıkların çağrıldığı ilişki biçimini yansıtır.",
+        "fırsat gözlemek": "Hayır. Bu kullanım öncelikle kişinin mesleki ilerleme isteğini anlatan genel bir deyimdir; belirli bir toplumsal kurumu veya yaşam biçimini göstermez.",
+        "medrese, han, kervansaray": "Evet. Eğitim, konaklama ve ticaret/yolculukla ilgili toplumsal kurum ve mekânları adlandırır.",
+        "meyvesini toplamak": "Hayır. Çalışmanın sonucunu anlatan mecazlı bir söyleyiştir; kendi başına belirli bir sosyal uygulamayı göstermez.",
+        "bir ders gibi": "Hayır. İncelemenin değerini anlatan benzetmedir; toplumsal yaşamdan çok anlatıcının yaklaşımını belirtir.",
+        "meşale ışıkları": "Evet. Dönemin aydınlatma koşullarını ve çalışma ortamını görünür kılar.",
+        "tahta çıkmak": "Evet. Hükümdarlık ve yönetimin el değiştirmesiyle ilgili tarihsel-siyasal yaşamı yansıtır.",
+        "maddi ve manevi zenginlik": "Evet. Toplumun üretimini, kültürel birikimini ve değer anlayışını anlatır.",
+        "padişah": "Evet. Yönetim biçimini ve hükümdarın toplumsal konumunu gösterir.",
+        "Tanrı evi": "Evet. Dinin ve ibadethanenin toplumsal-kültürel yaşamdaki yerini yansıtır.",
+        "gemilere binmek; gölün doğu kıyısı": "Evet. Sefer, ulaşım ve görev için kullanılan araçlarla dönemin hareketliliğine ilişkin bilgi verir."
+      }
     }
   ]
 }

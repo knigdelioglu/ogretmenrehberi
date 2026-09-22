@@ -9,121 +9,143 @@
       "entry_type": "question_answer",
       "printed_page": 280,
       "question_no": "1",
-      "prompt_summary": "Bir tiyatro metninin yalnız diyaloglarından hareketle ulaşılabilecek genel çıkarımlar",
-      "answer": "Diyaloglardan kişilerin birbirleriyle ilişkileri, çatışmaları, amaçları, duygu durumları ve kullandıkları dil hakkında önemli çıkarımlar yapılabilir. Ayrıca konuşmaların sırası ve içeriği olayın hangi yönde ilerlediğini, hangi konunun öne çıktığını ve kişilerin sosyal konumlarını sezdirir. Ancak dekor, ışık, beden dili, sahne hareketi ve bazı mekân/zaman ayrıntıları yalnız diyalogdan tam olarak anlaşılamayabilir.",
-      "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 1"
+      "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 1",
+      "prompt_summary": "Yalnız diyaloglardan hareketle tiyatro metni ve sahne hakkında çıkarım yapma",
+      "answer": "Diyaloglardan konuşan kişileri, aralarındaki ilişki ve çatışmaları, karakterlerin söz varlığını ve olayın bazı gelişmelerini çıkarabiliriz. Sözlerin tonu ile güç, yakınlık veya tereddüt gibi ilişkiler hakkında da ipuçları bulunabilir. Ancak yalnız diyalog metni sahne dekorunu, hareketleri, ışığı ve konuşma biçimini bütünüyle göstermez; bunlar için sahne yönergeleri ve canlandırma da incelenmelidir."
     },
     {
       "question_id": "T4-P280-PERF02",
       "entry_type": "performance_support",
       "printed_page": 280,
       "question_no": "2",
-      "prompt_summary": "Bir tiyatro rolünü canlandırırken dikkat edilecek unsurları gerekçelendirme",
-      "answer": "Örnek yaklaşım: Önce karakterin kim olduğu, diğer kişilerle ilişkisi, amacı, korkuları ve çatışmaları anlaşılmalıdır. Ardından ses tonu, vurgu, tempo, beden dili, jest-mimik, sahnedeki konum ve diğer oyuncularla etkileşim role uygun seçilmelidir. Metindeki sözleri doğru söylemek tek başına yeterli değildir; karakterin neden o sözü söylediğini ve o anda ne hissettiğini de yansıtmak gerekir.",
-      "guidance": "Öğrenci farklı öncelikler belirleyebilir; gerekçenin rol yaratma süreciyle ilişkili olması önemlidir.",
       "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 2",
-      "explanation": "Alt metin, karakterin açıkça söylediği sözlerin altında bulunan asıl niyet, duygu veya düşüncedir. Oyuncu bir cümleyi yalnız kelimelerine göre değil, karakterin o anda ne istediğini, ne hissettiğini ve neden öyle söylediğini düşünerek canlandırır. Uzam ise tiyatroda yalnız fiziksel mekânı değil; karakterin içinde bulunduğu tarihsel, toplumsal ve psikolojik çevreyi de kapsayan daha geniş bağlamdır."
+      "prompt_summary": "Bir rolde canlandırma yaparken dikkat edilecek karakter ve sahne unsurlarını gerekçelendirme",
+      "answer": "Örnek cevap: Önce karakterin hangi dönemde, şehirde ve toplumsal çevrede yaşadığını; sahnedeki amacını ve duygusunu anlamaya çalışırdım. Söylenen sözlerin altındaki niyeti de düşünürdüm: metindeki “alt metin” sözü burada karakterin açıkça söylemediği amaç ve duygulara işaret eder, ancak kitap bunu ayrı bir tanım olarak açmaz. Sonra bu yorumu tutarlı jest, mimik, ses tonu, diksiyon ve mekân kullanımıyla canlandırırdım.",
+      "guidance": "Öğrenci farklı unsurları öne çıkarabilir; seçtiği noktayı rolün yaşamı ve canlandırma amacıyla ilişkilendirmelidir."
     },
     {
       "question_id": "T4-P281-Q03",
       "entry_type": "question_answer",
       "printed_page": 281,
       "question_no": "3",
-      "prompt_summary": "Tiyatroda diyalogların ve dili doğru kullanmanın önemini günlük hayatla ilişkilendirme",
-      "answer": "Tiyatroda diyalog, kişilerin birbirini anlamasını, çatışmanın görünür hâle gelmesini ve olayın ilerlemesini sağlar. Dili doğru kullanmak ise duygu ve niyetin yanlış anlaşılmasını önler. Günlük hayatta da yanlış vurgu, eksik ifade veya uygunsuz kelime seçimi iletişim sorunlarına yol açabildiği gibi sahnede de aynı durum karakter ilişkisini ve izleyicinin anlamasını zayıflatabilir.",
-      "source_locator": "basılı s.281 / PDF s.282 — Konuşmayı Yönetebilme soru 3"
+      "source_locator": "basılı s.281 / PDF s.282 — Konuşmayı Yönetebilme soru 3",
+      "prompt_summary": "Diyalog ve dili doğru kullanmanın gündelik iletişimdeki önemini açıklama",
+      "answer": "Günlük hayatta diyalog, kişilerin ihtiyaçlarını ve düşüncelerini birbirine aktarmasını; karşısındakini dinleyip yanlış anlamaları gidermesini sağlar. Sözcükleri amaca ve kişiye uygun seçmek, düşünceyi anlaşılır kılar ve saygılı ilişkiyi destekler. Söz kesmek, belirsiz ya da incitici konuşmak ise iletişimi zorlaştırabilir. Tiyatro bu ilişkileri sahnede görünür kılar."
     },
     {
       "question_id": "T4-P281-Q04",
       "entry_type": "question_answer",
       "printed_page": 281,
       "question_no": "4",
-      "prompt_summary": "'İnsanı, insana, insanla anlatma sanatıdır.' sözünü tiyatro açısından yorumlama",
-      "answer": "Bu söz tiyatronun konusunun insan ve insan ilişkileri olduğunu, anlatım aracının da yine insan olduğunu vurgular. Tiyatroda oyuncu, başka insanların yaşantılarını, çatışmalarını ve duygularını sahne üzerinde beden, ses ve söz yoluyla izleyiciye aktarır. Böylece insan, başka bir insanı canlandırırken yine insan olan seyirciye hayatı gösterir.",
-      "source_locator": "basılı s.281 / PDF s.282 — Konuşmayı Yönetebilme soru 4"
+      "source_locator": "basılı s.281 / PDF s.282 — Konuşmayı Yönetebilme soru 4",
+      "prompt_summary": "Tiyatroyu insanı insana insanla anlatma sanatı olarak yorumlama",
+      "answer": "Bu tanımda tiyatro, insanın yaşamını ve ilişkilerini başka insanlar tarafından canlandırarak yine insan izleyiciye ulaştıran bir sanat olarak açıklanır. Oyuncuların sözleri, bedenleri ve sahnedeki ilişkileri; sevgi, çatışma, korku veya sorumluluk gibi deneyimleri izleyicinin görüp düşünmesini sağlar."
     },
     {
       "question_id": "T4-P281-PERF01",
       "entry_type": "performance_support",
       "printed_page": 281,
       "question_no": "Performans Görevi 1-6",
-      "prompt_summary": "Ben, Mimar Sinan'dan seçilen bir bölümü yeniden kurgulayarak canlandırma için plan oluşturma",
-      "answer": "Canlandırma hazırlığı aşağıdaki adımlarla yürütülebilir:",
-      "guidance": "Seçilen bölüm öğrencilerin gerçek tercihine göre değişebilir. Rehber tek bir sahneyi zorunlu örnek gibi dayatmamalıdır.",
       "source_locator": "basılı s.281 / PDF s.282 — Performans Görevi 1-6",
-      "answer_sections": [
-        "Amaç: Seçilen sahneyi karakterlerin temel özelliklerini ve ana iletileri koruyarak daha etkili biçimde canlandırmak.",
-        "Grup ve rol dağılımı: Rolleri metindeki kişi özelliklerine göre paylaşmak.",
-        "Bölüm seçimi: Karakter ilişkisi ve çatışması belirgin bir sahne seçmek.",
-        "Hedef kitle: Sınıf arkadaşları ve öğretmen.",
-        "Yöntem: Masa başı okuma → bloklama/sahne hareketi → prova.",
-        "İletişim engelleri: Hızlı konuşma, ezber kaygısı, birbirini dinlememe, düşük ses ve sahne alanını yanlış kullanma; bunlara karşı tempo, nefes, göz teması ve prova düzenlemek."
-      ]
+      "prompt_summary": "Ben, Mimar Sinan’dan bir bölümü yeniden kurgulayıp grupla canlandırma planı",
+      "answer": "Örnek plan: Süleymaniye için verilen görevin konuşulduğu bölümü seçip Sinan’ın estetik amacı ile hükümdarın isteği arasındaki ilişkiyi görünür kılmak.",
+      "answer_sections": {
+        "Amaç": "İzleyiciye bir mimari başarının yalnız boyutla değil, tasarım ve sorumlulukla da ilgili olduğunu göstermek.",
+        "Rol ve hedef kitle": "Sinan, Kanuni Sultan Süleyman ve gerekiyorsa kısa geçişleri anlatan bir ses; sınıf arkadaşları.",
+        "Yöntem": "Kısa sahneleme; çalışma tezgâhı ve cami görseliyle iki mekânı ayırma; metinden seçilen sözleri ve sahne yönergelerini kullanma. Yeniden kurgulanan replikler eklenirse bunları özgün metinden ayırma.",
+        "İletişim engellerini giderme": "Rol ve söz sırasını önceden paylaşın; anlaşmazlıkta metindeki amacı ölçüt alın; herkesin fikrini dinleyin; prova sırasında anlaşılmayan replikleri ve sahne geçişlerini yeniden düzenleyin.",
+        "Hazırlık basamakları": "Amaç ve bölüm seçimi → rol dağılımı → hedef kitleye göre yöntem → prova ve geri bildirim → canlandırma."
+      },
+      "guidance": "Kitapta verilen 8 ders saati çalışma süresidir; öğrenciye tek bir sahne veya yorum zorunlu kılınmaz."
     },
     {
       "question_id": "T4-P281-PERF02",
       "entry_type": "performance_support",
       "printed_page": 281,
       "question_no": "Kontrol Listesi",
-      "prompt_summary": "Canlandırma hazırlığını kontrol listesiyle değerlendirme",
-      "answer": "Kontrol listesi hazır işaretlenmemelidir. Öğrenci/grup gerçek hazırlığına göre şu ölçütleri kontrol etmelidir: amaç belirleme, uygun bölüm seçme, rol alma, yöntem ve strateji belirleme, iletişim engellerini önceden giderme. 'Hayır' işaretlenen her madde prova öncesinde somut düzeltmeye dönüştürülmelidir.",
-      "source_locator": "basılı s.281 / PDF s.282 — Kontrol Listesi"
+      "source_locator": "basılı s.281 / PDF s.282 — Kontrol Listesi",
+      "prompt_summary": "Canlandırma kontrol listesindeki ölçütleri performans sırasında gözlemleme",
+      "answer": "Kontrol listesi, öğrencinin gerçek hazırlık ve canlandırma sürecine bakılarak öğretmen tarafından doldurulmalıdır; önceden “Evet” veya “Hayır” cevabı verilemez.",
+      "answer_sections": {
+        "Amaç": "Öğrenci canlandırma amacını grup çalışmasına başlamadan belirledi mi?",
+        "Bölüm seçimi": "Seçilen kısım tahlil edilen Ben, Mimar Sinan oyunundan mı?",
+        "Rol alma": "Öğrenci canlandırmada kendisine düşen rolü aldı ve hazırlığa katıldı mı?",
+        "Yöntem ve strateji": "Grup hedef kitle, süre ve amaçla uyumlu bir canlandırma yolu belirledi mi?",
+        "İletişim engelleri": "Grup, prova sırasında karşılaşılan anlaşmazlık veya iletişim güçlüklerini gidermeye çalıştı mı?"
+      },
+      "guidance": "Ölçütleri gerçek süreç gözlemine göre işaretleyin; rol paylaşımının eşitliği ve katılım kanıtları göz önünde bulundurulabilir."
     },
     {
       "question_id": "T4-P282-PERF01",
       "entry_type": "performance_support",
       "printed_page": 282,
       "question_no": "İçerik Oluşturabilme a-f",
-      "prompt_summary": "Canlandırma içeriğini karakter ilişkileri, jest-mimik, doğaçlama ve geri bildirimle yapılandırma",
-      "answer": "Örnek hazırlık zinciri: a) Seçilen sahnenin başı, çatışma noktası ve sonu belirlenir. b) Her karakterin amacı, ilişkisi ve duygusal yönelimi yazılır; doğrudan ve dolaylı ilişkiler ayrılır. c) Karaktere uygun jest, mimik ve beden duruşu için kısa öneriler oluşturulur. ç) Rolü içselleştirmek amacıyla grubun birlikte beyin fırtınası yapması sağlanır. d) Metnin ruhunu bozmadan, gerektiğinde karaktere uygun kısa doğaçlama sözler planlanır. e) Beden dili, diksiyon, telaffuz, görsel ve işitsel desteklerin ne zaman kullanılacağı belirlenir. f) Taslak prova arkadaşlara gösterilir ve geri bildirimle son hâline getirilir.",
-      "guidance": "Doğaçlama, karakterin kişiliği ve metnin tarihsel/tematik bağlamıyla çelişmemelidir.",
-      "source_locator": "basılı s.282 / PDF s.283 — İçerik Oluşturabilme a-f"
+      "source_locator": "basılı s.282 / PDF s.283 — İçerik Oluşturabilme a-f",
+      "prompt_summary": "Canlandırma için sahne, rol, beden dili ve prova taslağı oluşturma",
+      "answer": "Uygulanabilir hazırlık taslağı aşağıdadır.",
+      "answer_sections": {
+        "Bölüm ve amaç": "Seçilen sahnenin neyi göstereceğini ve izleyicinin neyi anlamasının beklendiğini yazın.",
+        "Rol ve ilişki": "Karakterlerin doğrudan ve dolaylı ilişkilerini, sahnedeki amaçlarını ve duygularını belirleyin.",
+        "Hareket ve söz": "Jest, mimik, beden yönü ve ses tonunu karakterin amacıyla eşleştirin. Doğaçlama söz eklenecekse dil ve dönem bağlamını koruyun.",
+        "Görsel-işitsel düzen": "Mekân ve sahne geçişi için gerekli görsel, ışık ve sesleri seçin; her ögeyi anlamlı bir işleve bağlayın.",
+        "Geri bildirim ve son taslak": "Planı arkadaşlara sunun; anlaşılırlık, rol tutarlılığı, diksiyon ve sahne geçişi üzerine alınan önerilerle taslağı düzeltin."
+      }
     },
     {
       "question_id": "T4-P282-PERF02",
       "entry_type": "performance_support",
       "printed_page": 282,
       "question_no": "Kural Uygulayabilme a-ğ",
-      "prompt_summary": "Canlandırma sırasında uygulanacak konuşma, beden dili, karakter tutarlılığı ve değer kuralları",
-      "answer": "Canlandırmada şu kurallar uygulanmalıdır: dikkat çekici ve plana uygun başlangıç; role ait söz varlığını bağlama uygun kullanma; karakterin duygu, düşünce ve hayallerini tutarlı yansıtma; karakterin olumlu tutum ve değerlerini görünür kılma; izleyiciyle iletişim kurma; zamanı ve sahne mekânını etkili kullanma; Türkçenin anlam zenginliğine, diksiyon ve telaffuza dikkat etme; rolün duygusunu özgün ama abartısız biçimde yansıtma; millî-manevi değerleri ve kültürel unsurları bağlamı bozmadan kullanma; toplumsal hassasiyetlere aykırı ögelerden kaçınma.",
-      "source_locator": "basılı s.282-283 / PDF s.283-284 — Kural Uygulayabilme a-ğ"
+      "source_locator": "basılı s.282-283 / PDF s.283-284 — Kural Uygulayabilme a-ğ",
+      "prompt_summary": "Canlandırma sırasında kitaptaki dil, karakter ve sahneleme kurallarını uygulama",
+      "answer": "Prova sırasında aşağıdaki noktalar kontrol edilebilir.",
+      "answer_sections": {
+        "Başlangıç": "Dikkat çekici bir giriş yapın ve sahne planına uygun ilerleyin.",
+        "Karakter": "Duyguları kişisel bir üslupla yansıtın; söz, davranış ve hayaller arasında tutarlılık kurun.",
+        "Dil": "Karakterin bağlamına uygun söz varlığı, Türkçenin anlam olanakları, diksiyon ve telaffuzu gözetin.",
+        "Değerler": "Karakterin olumlu tutumlarını, millî-manevi değerleri ve kültürel ögeleri sahneye uygun biçimde vurgulayın.",
+        "Sahne ve izleyici": "Beden dili, görsel-işitsel ögeler, zaman ve mekân kullanımını izleyiciyle iletişimi destekleyecek biçimde düzenleyin.",
+        "Toplumsal hassasiyet": "İncitici veya toplumsal hassasiyetlere aykırı ögelerden kaçının."
+      }
     },
     {
       "question_id": "T4-P283-PERF01",
       "entry_type": "performance_support",
       "printed_page": 283,
       "question_no": "Değerlendirme",
-      "prompt_summary": "Canlandırmayı dereceli puanlama ölçütlerine göre gözden geçirme",
-      "answer": "Kitapta açıkça belirtilen değerlendirme eksenleri: kurgulanan içeriğe uygunluk, özgünlük, sözü etkili kullanma, beden dilini etkili kullanma ve grupla uyum içinde çalışma. Öğretmen geri bildirimi sonrası öğrenci/grup bu ölçütlerdeki eksikleri belirleyip yeni provada düzeltmelidir. QR'deki puanlama anahtarının ayrıntılı puanları görülmeden seviye veya puan aralığı uydurulmamalıdır.",
-      "source_locator": "basılı s.283 / PDF s.284 — Değerlendirme / QR rubrik"
+      "source_locator": "basılı s.283 / PDF s.284 — Değerlendirme / QR rubrik",
+      "prompt_summary": "Canlandırmayı kitapta belirtilen performans ölçütleriyle değerlendirme",
+      "answer": "Sayfada görünen ölçütler kurgulanan içeriğe uygunluk, özgünlük, söz ve beden dilini etkili kullanma ve grupla uyumlu çalışmadır. Ayrıntılı dereceli puanlama anahtarına sayfadaki QR kod üzerinden ulaşılır; bağlantı içeriği incelenmeden performans düzeyleri veya puan aralıkları oluşturulmamalıdır.",
+      "guidance": "Karekod anahtarına erişildiğinde eksikler o ölçütlere göre giderilir. Buradaki görünür ölçütler, rubriğin tamamı olarak sunulmamalıdır."
     },
     {
       "question_id": "T4-P283-PERFQ01",
       "entry_type": "performance_support",
       "printed_page": 283,
       "question_no": "Sıra Sizde 1",
-      "prompt_summary": "Canlandırılan rolün oluşturduğu duygu ve düşünceler üzerine yansıtma yazısı",
-      "answer": "Örnek yansıtma iskeleti: 'Bu rolü canlandırırken en çok [...] duygusunu hissettim; çünkü karakterin [...] durumunda verdiği karar bana [... ] düşündürdü. Rolün sözlerini söylemek kolay/zor geldi; özellikle [... ] bölümünde ses tonu ve beden dilimi değiştirmem gerekti. Bu çalışma sonunda karakteri yalnız metindeki sözleriyle değil, amacı ve ilişkileriyle birlikte düşünmem gerektiğini fark ettim.'",
-      "guidance": "Yansıtma öğrencinin gerçek deneyimini ifade etmelidir; örnek metin yalnız yapı ve derinlik modelidir.",
-      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 1"
+      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 1",
+      "prompt_summary": "Canlandırılan rolün oluşturduğu duygu ve düşünceleri yansıtma yazısıyla değerlendirme",
+      "answer": "Örnek yansıtma: “Rolü hazırlarken karakterin sözlerinin arkasındaki amacı düşünmek, sahnedeki duyguyu daha iyi anlamama yardım etti. Prova sırasında sesimi ve bedenimi birlikte kullanmanın önemli olduğunu fark ettim. Bir sonraki çalışmada daha anlaşılır konuşmaya ve sahne arkadaşlarımı daha dikkatli dinlemeye çalışacağım.”",
+      "guidance": "Bu metin yalnızca örnek yapıyı gösterir. Öğrenci kendi yaşadığı duyguyu ve gerçek performansını yazmalıdır."
     },
     {
       "question_id": "T4-P283-PERFQ02",
       "entry_type": "performance_support",
       "printed_page": 283,
       "question_no": "Sıra Sizde 2",
-      "prompt_summary": "Rol arkadaşlarının görüşlerini alarak performansı değerlendirme",
-      "answer": "Örnek geri bildirim çerçevesi: 'Arkadaşlarım rolümde en güçlü yönün [...] olduğunu söyledi. Geliştirmem gereken nokta olarak [...] belirtildi. Bu görüşlere katılıyorum/katılmıyorum; çünkü prova sırasında [...]. Bir sonraki canlandırmada [...] üzerinde çalışacağım.' Geri bildirim kişiye değil, gözlenebilir performans davranışına odaklanmalıdır.",
-      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2"
+      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2",
+      "prompt_summary": "Rol arkadaşlarından alınan görüşleri performans açısından değerlendirme",
+      "answer": "Örnek değerlendirme şablonu: “Arkadaşım, karakterin duygusunu ses tonumla iyi yansıttığımı belirtti. Replik sırasını daha iyi takip etmemi önerdi. Bu geri bildirimi bir sonraki provada replik girişlerini işaretleyip karşılık verirken arkadaşımın yüzüne yönelerek uygulayacağım.”",
+      "guidance": "Görüş, gerçekten alınmış akran geri bildirimine dayanmalıdır; örnekteki yorum öğrencinin yaşadığı bir olay gibi kullanılmamalıdır."
     },
     {
       "question_id": "T4-P283-PERFQ03",
       "entry_type": "performance_support",
       "printed_page": 283,
       "question_no": "Sıra Sizde 3",
-      "prompt_summary": "Eleştiri ve deneyimlerden hareketle özgün konuşmacı kimliği geliştirme",
-      "answer": "Özgün konuşmacı kimliği; başkasını taklit etmekten çok kendi doğal sesini, uygun beden dilini, anlaşılır diksiyonu ve düşünceyi açık ifade etme biçimini geliştirmekle oluşur. Öğrenci aldığı geri bildirimlerden yararlanarak örneğin hızını düşürme, vurgu çeşitliliğini artırma, daha doğal göz teması kurma veya metne aşırı bağlı kalmadan konuşma gibi kişisel hedefler belirleyebilir.",
-      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3"
+      "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3",
+      "prompt_summary": "Eleştiri ve deneyimlerden hareketle özgün konuşmacı kimliğini geliştirme planı",
+      "answer": "Örnek gelişim planı: Güçlü yanım olarak anlaşılır ve sakin konuşmayı korurum; prova geri bildiriminde belirlenen vurgu, tempo veya göz teması ihtiyacından birini seçip sonraki sunumda özellikle çalışırım. Metni ezberlemekle yetinmeyip dinleyiciyi izler, kendi anlatım biçimimi korurken Türkçeyi doğru ve etkili kullanmaya dikkat ederim."
     }
   ]
 }

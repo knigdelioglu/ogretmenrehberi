@@ -9,108 +9,94 @@
       "entry_type": "question_answer",
       "printed_page": 256,
       "question_no": "Birlikte Çalışalım 1-5",
-      "prompt_summary": "Ben, Mimar Sinan'ın yapı unsurlarını ve bunlar arasındaki ilişkileri belirleme",
-      "answer": "Dramatik yapı unsurları aşağıdaki çalışma kâğıdında başlıklar hâlinde düzenlenmiştir.",
+      "source_locator": "basılı s.256 / PDF s.257 — Çözümleyebilme / Birlikte Çalışalım",
+      "prompt_summary": "Ben, Mimar Sinan oyununun yapı unsurlarını ve aralarındaki ilişkileri çözümleme",
+      "answer": "Aşağıdaki çalışma kâğıdı, oyunun olay çizgisine ve sahne yönergelerine dayanan örnek bir çözümdür. Grup, kullandığı kanıtları oyunun farklı sahnelerinden seçebilir.",
       "answer_sections": {
-        "kisiler": [
-          "Mimar Sinan",
-          "Kanuni Sultan Süleyman",
-          "II. Selim",
-          "Lütfü Paşa",
-          "Farklı 'Ses'lerle temsil edilen kişiler"
-        ],
-        "mekan": [
-          "Ağırnas",
-          "İstanbul",
-          "Acemi Ocağı",
-          "Ayasofya",
-          "Van Gölü",
-          "Topkapı Sarayı",
-          "Edirne",
-          "Sinan'ın eserlerinin bulunduğu farklı coğrafyalar"
-        ],
-        "zaman": "1490'dan ileri meslek yıllarına uzanan, XVI. yüzyıl ağırlıklı tarihsel zaman.",
-        "catismalar": [
-          "Kendini kanıtlama isteği ↔ teknik/mesleki güçlükler",
-          "Ayasofya'yı aşma arzusu ↔ özgün ve daha güzel eser kurma arayışı",
-          "İnsan hayatının geçiciliği ↔ kalıcı eser bırakma isteği"
-        ],
-        "dramatik_orgu": "Yetişme → deneyim → mimarbaşılık → Şehzade → Süleymaniye → Selimiye → tarih ve kültür bilinciyle kapanış.",
-        "iliskiler": {
-          "kisiler_mekan": "Kişilerin görevleri ve amaçları, saray, sefer alanı ve cami inşaatları gibi mekânlarla anlam kazanır.",
-          "mekan_zaman": "Mekân değişimleri Sinan'ın hayatının ve mesleğinin farklı dönemlerini görünür kılar.",
-          "kisiler_catismalar": "Sinan'ın hedefleri, padişahların beklentileri ve karşılaştığı güçlükler çatışmaları doğurur.",
-          "catismalar_dramatik_orgu": "Her yeni güçlük Sinan'ın gelişimini ve bir sonraki büyük esere ilerleyişini sağlar."
-        }
-      },
-      "source_locator": "basılı s.256 / PDF s.257 — Çözümleyebilme / Birlikte Çalışalım"
+        "Kişiler": "Mimar Sinan merkezî kişidir. Kanuni Sultan Süleyman, II. Selim, Lütfü Paşa ve farklı “sesler” onun yaşamındaki görev, karar ve değerlendirmeleri görünür kılar. Ayasofya’nın mimarları Artemios ile İsidoros da Sinan’ın konuşmasında anılır.",
+        "Yer/mekân": "Ağırnas ve İstanbul’daki Acemi Ocağı; Ayasofya ve Sinan’ın çalışma tezgâhı; sefer alanları ve Prut; saray; Şehzade, Süleymaniye ve Selimiye camilerinin çevresi. Sahne yönergeleri bu yerleri görüntü ve dekorla değiştirir.",
+        "Zaman": "Sinan’ın gençliğinden mimarbaşılık dönemine uzanan, ağırlığı 16. yüzyılda olan kronolojik yaşam kesitleri. Metinde belirli tarihler ve yaşlar verilir; s.240’taki bilgi görseli doğum tarihinin kesin bilinmediğini söylediğinden, tarih ayrıntılarında bu kitap içi fark gözetilmelidir.",
+        "Çatışmalar": "Sinan’ın öğrenme ve kendini kanıtlama isteği ile karşılaştığı teknik güçlükler; Ayasofya’nın kubbesini aşma düşüncesi ile büyüklük değil güzellik hedefi; hükümdarların kalıcı eser bırakma isteği ile insan ömrünün geçiciliği. Bu karşıtlıklar Sinan’ın mesleki ve kişisel gelişimini besler.",
+        "Dramatik örgü": "Sinan’ın eğitim ve gözlem dönemiyle başlayan anlatı, Prut’ta gemi yapma başarısı ve mimarbaşılığa yükselişle ilerler. Şehzade, Süleymaniye ve Selimiye yapıları ayrı dönüm noktaları oluşturur; Selimiye’nin açılışı ve Sinan’ın başarısını ortak kültürel birikime bağlamasıyla tamamlanır.",
+        "Kişiler ve mekân": "Sinan’ın farklı şehir ve yapılarda gözlem yapması mesleki bilgisini geliştirir; tezgâhı tasarlama ve çalışma alanıdır. Hükümdarların istekleri, cami yapımını belirli şehirlere ve kamusal mekânlara taşır.",
+        "Mekân ve zaman": "Mekânlar yaşamının farklı evreleriyle birlikte değişir: eğitim ve İstanbul, seferler, saray görevleri, ardından cami şantiyeleri. Görseller ve ışık değişimleri bu zaman-mekân geçişlerini sahnede belirginleştirir.",
+        "Kişiler ve çatışmalar": "Sinan’ın hükümdarların büyük yapı taleplerini teknik ve estetik çözümlerle karşılama çabası temel ilişkiyi kurar. Lütfü Paşa’nın Sinan’ı önermesi, yeteneğin tanınması; Ayasofya mimarlarına saygı duyması ise rekabetin küçümsemeye dönüşmemesi bakımından önemlidir.",
+        "Çatışmalar ve dramatik örgü": "Her yeni görev, Sinan’ın bilgi ve becerisini sınayan bir aşama yaratır. Teknik zorluklar ve kendini kanıtlama arzusu olayları ileri taşır; eserlerin tamamlanması çatışmaları çözer ve mesleki gelişimini görünür kılar."
+      }
     },
     {
       "question_id": "T4-P257-Q01",
       "entry_type": "question_answer",
       "printed_page": 257,
       "question_no": "Fark Edelim 1",
-      "prompt_summary": "Ben, Mimar Sinan'dan bir monolog ve bir diyalog örneği belirleme",
-      "answer": "Monolog örneği olarak Mimar Sinan'ın Selimiye'nin açılışından sonra Ayasofya'nın mimarları Artemios ve İsodoros'a zihninden seslendiği bölüm seçilebilir. Bu bölümde Sinan, başarısını yalnız kendisine değil yaşadığı çağın ve toplumun birikimine bağlar. Diyalog örneği olarak Kanuni'yi temsil eden 8. Ses ile Mimar Sinan'ın Süleymaniye'nin yapılması üzerine konuşması verilebilir; padişah güzel bir cami ister, Sinan da görevi kabul eder ve estetik hedefini açıklar.",
+      "source_locator": "basılı s.257 / PDF s.258 — Fark Edelim soru 1",
+      "prompt_summary": "Oyundan karakter dilini gösteren bir monolog ve diyalog seçme",
+      "answer": "Monologda Sinan kendi düşüncesini tek başına dile getirir; diyalogda ise Sinan ile hükümdar karşılıklı konuşarak istek ve yanıtı görünür kılar.",
+      "answer_sections": {
+        "Monolog örneği": "Mimar Sinan’ın “Güzellik, büyüklükten daha güçlüdür.” sözü, Süleymaniye’yi tasarlarken benimsediği düşünceyi tek başına dile getirdiği kısa bir örnektir.",
+        "Diyalog örneği": "8. Ses: “Güzel bir cami, mimarbaşı!” / Mimar Sinan: “Haklısınız hünkârım.” Bu karşılıklı konuşma, hükümdarın isteğini ve Sinan’ın yanıtını gösterir."
+      },
       "evidence_quotes": [
-        "Güzellik, büyüklükten daha güçlüdür."
-      ],
-      "source_locator": "basılı s.257 / PDF s.258 — Fark Edelim soru 1"
+        "Güzellik, büyüklükten daha güçlüdür.",
+        "Güzel bir cami, mimarbaşı!"
+      ]
     },
     {
       "question_id": "T4-P258-Q02",
       "entry_type": "question_answer",
       "printed_page": 258,
       "question_no": "Fark Edelim 2",
-      "prompt_summary": "Monolog ve diyaloğun metinde kullanılma amaçları",
-      "answer": "Monolog, Mimar Sinan'ın dışarıdan görülmeyen düşünce, heyecan ve değerlendirmelerini doğrudan seyirciye açar; özellikle mesleki hedeflerini, tarih bilincini ve başarıya bakışını derinleştirir. Diyalog ise kişiler arasındaki ilişkiyi, görev ve beklentileri, güveni ve görüş farklılıklarını sahne üzerinde canlı biçimde gösterir. Böylece monolog karakterin iç dünyasını, diyalog ise kişiler arası etkileşimi ve dramatik hareketi güçlendirir.",
       "source_locator": "basılı s.257-258 / PDF s.258-259 — Fark Edelim soru 2",
-      "explanation": "Gösterme tekniği, anlatıcının bir durumu uzun uzun açıklaması yerine kişilerin konuşma, davranış ve hareketlerinin doğrudan verilmesiyle okurun ya da izleyicinin sonuca kendisinin ulaşmasını sağlayan anlatım yoludur. Tiyatro, olay ve kişileri sahne üzerinde doğrudan gösterdiği için bu tekniğin en belirgin kullanıldığı türlerden biridir."
+      "prompt_summary": "Monolog ve diyaloğun oyundaki işlevlerini açıklama",
+      "answer": "Monolog, Sinan’ın kendi düşüncelerini, hedeflerini ve verdiği kararların gerekçesini seyirciyle paylaşmasını sağlar; örneğin büyüklük yerine güzelliği önemsemesini açık eder. Diyaloglar ise hükümdarların isteklerini, Sinan’ın bunlara yanıtını ve kişiler arasındaki güven veya görev ilişkisini sahnede kurar. Böylece seyirci hem karakterlerin iç dünyasını hem de olayların nasıl ilerlediğini izler."
     },
     {
       "question_id": "T4-P258-Q01",
       "entry_type": "question_answer",
       "printed_page": 258,
       "question_no": "Sıra Sizde 1",
-      "prompt_summary": "Turgut Özakman'ın üslup tercihinin nedenleri ve sonuçları",
-      "answer": "Yazar, Mimar Sinan'ın hayatını genç okur/izleyici için hem öğretici hem sahnede canlı tutulabilir hâle getirmek amacıyla tarihî bilgiyi dramatik anlatımla birleştirir. Sinan'ın seyirciye doğrudan seslenmesi bilgi aktarımını kolaylaştırır; diyalog ve monologlar kişileri canlandırır; parantez içi sahne yönergeleri, müzik, ışık, projeksiyon ve efektler tarihî atmosferi somutlaştırır. Sonuçta metin yalnız bir biyografi özeti olmaktan çıkar, tarih ve kültür bilgisini tiyatro deneyimine dönüştürür.",
-      "source_locator": "basılı s.258 / PDF s.259 — Sıra Sizde soru 1"
+      "source_locator": "basılı s.258 / PDF s.259 — Sıra Sizde soru 1",
+      "prompt_summary": "Yazarın üslup seçiminin nedenlerini ve metne etkilerini açıklama",
+      "answer": "Birinci kişili anlatım, Sinan’ın yaşamını kendi ağzından dinliyormuş etkisi yaratarak izleyiciyi tarihî kişiye yaklaştırır. Kısa ve vurgulu sözler, sesler, müzik ve sahne yönergeleri önemli anları görünür kılar; yapı görselleri de mimarlık temasını sahneye taşır. Bu seçimler metni yalnızca bilgi veren bir yaşam öyküsü olmaktan çıkarıp oynanabilir, duygusal etkisi olan bir tiyatro anlatısına dönüştürür."
     },
     {
       "question_id": "T4-P258-GRAM01",
       "entry_type": "question_answer",
       "printed_page": 258,
       "question_no": "Sıra Sizde 2/a-b",
-      "prompt_summary": "Verilen cümleleri yüklem türü, yüklem yeri, anlam ve yapı bakımından sınıflandırma; çeşitliliğin üsluba katkısını açıklama",
-      "answer": "Cümlelerin tür, diziliş, anlam ve yapı özellikleri her cümle için ayrı satırda sınıflandırılmıştır.",
+      "source_locator": "basılı s.258 / PDF s.259 — Sıra Sizde soru 2/a-b",
+      "prompt_summary": "Oyundan alınan cümleleri cümle özelliklerine göre sınıflandırıp çeşitliliğin işlevini açıklama",
+      "answer": "Kitap ilk cümleyi örnek olarak sınıflandırmıştır; tabloda kalan altı cümle aşağıdaki gibidir. Metinde cümlelerin uzunluğu ve kuruluşu değiştikçe anlatımın ritmi de değişir: kısa soru ve ünlemler vurgu ve sahne etkisi yaratırken daha uzun cümleler olay ve düşünceyi ayrıntılandırır.",
       "answer_sections": {
-        "Kendisini... bilmiyordu.": "Fiil · Kurallı · Olumsuz · Birleşik (fiilimsi içeren)",
-        "Bir gün geldi ki... başladım.": "Fiil · Kurallı · Olumlu · Ki'li birleşik",
-        "İmparator Justinyanos... durmuş ve... bağırmış.": "Fiil · Kurallı · Olumlu · Bağlı",
-        "Güzellik, büyüklükten daha güçlüdür.": "İsim · Kurallı · Olumlu · Basit",
-        "Göreyim seni koca mimar!": "Fiil · Devrik · Olumlu · Basit",
-        "Ama nasıl?": "Bağlamda fiil yüklemli · Eksiltili · Soru · Basit"
+        "Kendisini, Edirne’de çok acı bir haberin beklediğini henüz bilmiyordu.": "Fiil cümlesi; kurallı; olumsuz; girişik birleşik cümle. “Beklediğini” sözcüğündeki -dik sıfat-fiil eki yan yargı kurar.",
+        "Bir gün geldi ki, artık kendimi göstermek için fırsat gözlemeye başladım.": "Fiil cümlesi; kurallı; olumlu; “ki” ile kurulan birleşik cümle.",
+        "İmparator Justinyanos, kubbenin altında durmuş ve şöyle bağırmış:": "Fiil cümlesi; kurallı; olumlu; “ve” ile bağlanan iki yüklemli bağlı cümle.",
+        "Güzellik, büyüklükten daha güçlüdür.": "İsim cümlesi; kurallı; olumlu; basit cümle.",
+        "Göreyim seni koca mimar!": "Fiil cümlesi; devrik; olumlu ve istek/ünlem tonlu; basit cümle.",
+        "Ama nasıl?": "Eksiltili soru cümlesidir. Açık bir yüklemi bulunmadığından yüklemin türü ve yeri bakımından sınıflandırılamaz."
       },
-      "explanation": "'Ama nasıl?' önceki 'Ayasofya'yı aşmalıydı' cümlesindeki yüklemin bağlamdan tamamlandığı eksiltili bir soru cümlesidir.",
-      "source_locator": "basılı s.258 / PDF s.259 — Sıra Sizde soru 2/a-b"
+      "explanation": "“Beklediğini” sözcüğü yan yargıyı kuran bir fiilimsi olduğu için cümle yapısı basit değil, girişik birleşiktir. Uzun ve kısa cümlelerin; bildirme, soru ve ünlem biçimlerinin değişmesi tiyatro metninin ritmini ve vurgusunu çeşitlendirir."
     },
     {
       "question_id": "T4-P259-Q01",
       "entry_type": "question_answer",
       "printed_page": 259,
       "question_no": "Fark Edelim 1",
-      "prompt_summary": "Ben, Mimar Sinan'ın gelecek nesillere tarih ve kültür bilinci kazandırma amacı taşıyıp taşımadığını değerlendirme",
-      "answer": "Evet. Metin Mimar Sinan'ın hayatını anlatırken yalnız kişisel başarılarını değil, XVI. yüzyılın sanat, mimarlık ve devlet çevresini de görünür kılar. Ayasofya'nın mimari mirası, Baki, Fuzuli, Matrakçı Nasuh ve Piri Reis gibi çağdaşların anılması; Şehzade, Süleymaniye ve Selimiye'nin tarihî bağlam içinde anlatılması genç okura bir kültür ve dönem panoraması sunar. Oyunun sonunda Sinan'ın başarısını yaşadığı toplumun maddi ve manevi birikimiyle ilişkilendirmesi de tarih bilincini bireysel kahramanlıktan daha geniş bir kültürel sürekliliğe bağlar.",
-      "source_locator": "basılı s.259 / PDF s.260 — Fark Edelim soru 1"
+      "source_locator": "basılı s.259 / PDF s.260 — Fark Edelim soru 1",
+      "prompt_summary": "Ben, Mimar Sinan oyununun tarih bilinci ve kültür aktarma amacını metin kanıtlarıyla değerlendirme",
+      "answer": "Evet. Oyun, Sinan’ın yaşamını Osmanlı dönemindeki mimarlık ve sanat çevresiyle birlikte sunar; Ayasofya’dan Selimiye’ye uzanan yapı geleneğini ve farklı alanlarda üretim yapan kişileri anarak tarihî-kültürel bir çerçeve kurar. Son bölümde Sinan’ın başarısını yalnız kendisine mal etmeyip yaşadığı toplumun birikimiyle ilişkilendirmesi, genç okura kültürel mirasın ortak emekle oluştuğunu düşündürür."
     },
     {
       "question_id": "T4-P259-Q02",
       "entry_type": "question_answer",
       "printed_page": 259,
       "question_no": "Fark Edelim 2",
-      "prompt_summary": "Turgut Özakman'ın tarih ve millî kimliğe bakışına ilişkin çıkarım",
-      "answer": "Kitaptaki biyografi ve Cumhuriyet tiyatrosu üzerine verilen metin birlikte değerlendirildiğinde Özakman'ın tarihi yalnız geçmişte kalmış olaylar toplamı olarak değil, kültürel belleği ve kimliği besleyen bir kaynak olarak gördüğü çıkarılabilir. Ben, Mimar Sinan'da geçmişi idealize etmekten çok bir sanatçının nasıl yetiştiğini, hangi kültür çevresinde üretim yaptığını ve bu birikimin gelecek kuşaklara nasıl aktarılabileceğini gösterir. Millî kimlik, metinde üretme, çalışma, sanat, tarih bilinci ve ortak kültürel miras üzerinden kurulmaktadır.",
-      "source_locator": "basılı s.259 / PDF s.260 — Fark Edelim soru 2"
+      "source_locator": "basılı s.259 / PDF s.260 — Fark Edelim soru 2",
+      "prompt_summary": "Turgut Özakman’ın tarih ve millî kimlik yaklaşımını metinden çıkarma",
+      "answer": "Özakman’ın oyunu, geçmişi yalnızca anmak için değil, bugünkü kuşakların kültürel belleğini beslemek için kullandığını düşündürür. Sinan’ın eserleri, dönemin üretim gücü ve sanat çevresi millî kimliğin tarihî dayanakları olarak sunulur. Bununla birlikte Sinan’ın Artemios ve İsidoros’u meslektaşı ve yurttaşı sayması, kimlik anlatısının başka kültürlerin katkısını yok saymadan kurulabileceğini gösterir.",
+      "evidence_quotes": [
+        "tek başıma yenmedim"
+      ]
     }
   ]
 }

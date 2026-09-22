@@ -9,56 +9,31 @@
       "entry_type": "question_answer",
       "printed_page": 260,
       "question_no": "1",
-      "prompt_summary": "Ben, Mimar Sinan'da öne çıkan millî, manevi ve evrensel değerleri belirleme",
-      "answer": "Millî değerler arasında tarih ve kültür bilinci, ortak mirasa sahip çıkma, üretme ve toplumun başarılarını gelecek kuşaklara aktarma öne çıkar. Manevi değerler arasında inanç, şükür, tevazu ve insanın yaptığı işi bir sorumluluk olarak görmesi yer alır. Evrensel değerler ise çalışkanlık, azim, sabır, sorumluluk, saygı, hoşgörü, adalet, cömertlik, değerbilirlik, liyakat ve estetik duyarlılıktır.",
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 1",
+      "prompt_summary": "Ben, Mimar Sinan oyunundaki millî, manevi ve evrensel değerleri belirleme",
+      "answer": "Metinde millî, manevi ve evrensel değerler iç içe verilir. Sinan, başarısını yalnız kendi yeteneğine bağlamaz; ortak tarih ve kültür birikimini de anarak bireysel emeği toplumsal mirasla ilişkilendirir. Öğrenci değerleri başka başlıklara yerleştirebilir; önemli olan seçimini metin örneğiyle gerekçelendirmesidir.",
       "answer_sections": {
-        "milli": [
-          "Tarih ve kültür bilinci",
-          "Ortak mirasa sahip çıkma",
-          "Üretme",
-          "Kültürel belleği gelecek kuşaklara aktarma"
-        ],
-        "manevi": [
-          "İnanç",
-          "Şükür",
-          "Tevazu",
-          "Sorumluluk bilinci"
-        ],
-        "evrensel": [
-          "Çalışkanlık",
-          "Azim",
-          "Sabır",
-          "Sorumluluk",
-          "Saygı",
-          "Hoşgörü",
-          "Adalet",
-          "Cömertlik",
-          "Değerbilirlik",
-          "Liyakat",
-          "Estetik duyarlılık"
-        ]
-      },
-      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 1"
+        "Millî değerler": "Sinan, kendi çağını çalışkan, hoşgörülü, cömert, adil ve erdemli Türklerin yüzyılı olarak niteler; kendisini ve önceki mimarları Anadolu’nun ortak kültür mirası içinde görür. Başarıyı tek başına sahiplenmemesi millî aidiyeti ve ortak üretimi vurgular.",
+        "Manevi değerler": "Süleymaniye’yi söz verdiği zamanda bitirirken Tanrı’nın yardımına dayanacağını söyler; Selimiye’nin açılışındaki başarısını böbürlenerek kutlamak yerine secdeye kapanmayla anlatır. İnanç ve tevazu öne çıkar.",
+        "Evrensel değerler": "Öğrenme, çalışkanlık, azim, sorumluluk, estetik ve başkasının emeğine saygı metin boyunca görülür. Sinan farklı yapıları inceler, büyüklük yerine güzelliği hedefler ve önceki mimarların katkısını teslim eder."
+      }
     },
     {
       "question_id": "T4-P260-Q02",
       "entry_type": "question_answer",
       "printed_page": 260,
       "question_no": "2",
-      "prompt_summary": "Belirlenen değerleri metindeki söz, davranış ve olaylarla örneklendirme",
-      "answer": "Metindeki değerler, bunları görünür kılan davranış ve olaylarla birlikte aşağıdaki biçimde gösterilebilir:",
-      "evidence_quotes": [
-        "Güzellik, büyüklükten daha güçlüdür.",
-        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı."
-      ],
       "source_locator": "basılı s.243-260 / PDF s.244-261 — Sıra Sizde soru 2",
+      "prompt_summary": "Belirlenen değerleri oyundan örneklerle eşleştirme",
+      "answer": "Değerler, Sinan’ın sözleri ve davranışları kadar diğer kişilerle kurduğu ilişkilerde de görülür.",
       "answer_sections": {
-        "Çalışkanlık ve azim": "Sinan'ın seferlerde gördüğü yapıları incelemesi, Van Gölü'ndeki güçlükleri aşarak gemileri tamamlaması ve ileri yaşına rağmen Selimiye üzerinde çalışması.",
-        "Saygı ve değerbilirlik": "Ayasofya mimarlarının başarısını kabul edip onlara saygı duyması.",
-        "Estetik duyarlılık": "Süleymaniye'de yalnız büyüklüğü değil güzelliği amaçlaması.",
-        "Sorumluluk": "Verdiği işi zamanında ve eksiksiz tamamlama anlayışı.",
-        "Liyakat": "Lütfü Paşa'nın mimarbaşılık için Sinan'ı yeterliliği nedeniyle önermesi.",
-        "İnanç ve tevazu": "Eserin açılışında başarıyı gösterişe dönüştürmek yerine secde ve şükürle ilişkilendiren yaklaşım."
+        "Çalışkanlık ve azim": "Sinan, gördüğü yapıları dikkatle inceler; Prut’ta gemi yapma görevini zorluklara rağmen tamamlar.",
+        "Bilgi ve öğrenme": "Yeniçeri ordusunda gittiği yerlerdeki binaları bir öğrenme kaynağı olarak değerlendirir.",
+        "Sorumluluk ve güvenilirlik": "Süleymaniye’yi verdiği sürede tamamlayacağını söyler ve yapıyı açılışa hazır hâle getirir.",
+        "Estetik anlayışı": "Ayasofya’yı yalnız boyutla aşmayı değil, daha güzel bir mimari eser yaratmayı hedefler.",
+        "Saygı ve hoşgörü": "Artemios ve İsidoros’u küçümsemez; onları meslektaşı ve aynı toprağın insanları olarak anar.",
+        "Millî aidiyet ve ortak miras": "Sinan, kendi başarısını yaşadığı toplumun üretim ve kültür birikimiyle birlikte açıklar.",
+        "İnanç ve tevazu": "Selimiye’nin açılışında zafer iddiasıyla övünmek yerine secdeye kapanmayı anlatır."
       }
     },
     {
@@ -66,116 +41,98 @@
       "entry_type": "performance_support",
       "printed_page": 260,
       "question_no": "3",
-      "prompt_summary": "Metindeki değerlerin günlük hayattaki yeri ve önemini açıklama",
-      "answer": "Örnek açıklama: Çalışkanlık, bir işi düzenli biçimde sürdürmeyi; sorumluluk, verilen sözü ve görevi yerine getirmeyi; saygı, başkasının emeğini ve başarısını kabul etmeyi; adalet ve liyakat ise görevleri kişisel yakınlığa değil yeterliliğe göre değerlendirmeyi gerektirir. Estetik duyarlılık, yalnız sanat eserlerinde değil yaşadığımız çevreyi düzenlerken de güzellik ve işlevi birlikte düşünmeye yardımcı olur. Bu değerler günlük hayatta güveni, iş birliğini ve nitelikli üretimi güçlendirir.",
-      "guidance": "Öğrenci değerleri kendi hayatından farklı somut davranışlarla örneklendirebilir; tek bir doğru örnek yoktur.",
-      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 3"
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 3",
+      "prompt_summary": "Seçilen değerlerin günlük hayattaki önemini somut davranışlarla açıklama",
+      "answer": "Örnek cevap: Sorumluluk, verilen işi zamanında ve özenle tamamlayarak; saygı, başkasının emeğini küçümsemeden dinleyerek; çalışkanlık ise zorlanan bir konuda düzenli biçimde çalışıp yardım isteyerek günlük hayatta gösterilebilir. Bu değerler grup çalışmalarında güven oluşturur ve ortak işin niteliğini yükseltir.",
+      "guidance": "Öğrenci kendi yaşantısından örnek verebilir; öğretmen yaşanmamış kişisel deneyim istemek yerine değerin nasıl davranışa dönüştüğünü aramalıdır."
     },
     {
       "question_id": "T4-P260-Q04",
       "entry_type": "question_answer",
       "printed_page": 260,
       "question_no": "4",
-      "prompt_summary": "Çalışkanlık, estetik anlayışı ve sorumluluğun Mimar Sinan'ın kişiliğine ve eserlerine yansıması",
-      "answer": "Çalışkanlık, Sinan'ın eğitimden seferlere kadar her ortamı öğrenme fırsatı olarak görmesinde ve uzun yıllar üretmeye devam etmesinde görülür. Estetik anlayışı, Ayasofya'yı yalnız boyut bakımından geçmeye çalışmak yerine daha güzel ve özgün bir eser kurmayı hedeflemesinde belirgindir. Sorumluluk ise üstlendiği görevleri zorluklara rağmen tamamlaması ve verdiği sözün arkasında durmasıyla yansıtılır. Bu üç değer birleşerek onun eserlerinde teknik yeterlilik, özgünlük ve güvenilirlik olarak görünür.",
-      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 4"
+      "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 4",
+      "prompt_summary": "Çalışkanlık, estetik ve sorumluluğun Sinan’ın kişiliğiyle eserlerine yansımasını açıklama",
+      "answer": "Sinan’ın çalışkanlığı, gördüğü yapıları incelemesi ve farklı görevlerde deneyim kazanmasıyla; sorumluluğu, üstlendiği yapı işlerini söz verdiği zamanda tamamlama çabasıyla belirginleşir. Estetik anlayışı ise Ayasofya’yı yalnız daha büyük bir kubbeyle geçmek yerine “güzel bir cami” yapmayı hedeflemesinde görülür. Bu özellikler, eserlerinin çokluğu kadar her birinin farklı plana ve tasarıma sahip oluşunu da açıklar.",
+      "evidence_quotes": [
+        "Güzellik, büyüklükten daha güçlüdür."
+      ]
     },
     {
       "question_id": "T4-P260-PERF01",
       "entry_type": "performance_support",
       "printed_page": 260,
       "question_no": "Ders Dışı Etkinlik",
-      "prompt_summary": "Ben, Mimar Sinan'ı tarih, psikoloji ve sosyolojiyle ilişkilendiren araştırma planı",
-      "answer": "Metnin sosyal bilimlerle ilişkisi üç disiplin üzerinden incelenebilir:",
-      "guidance": "Dış kaynak bilgisiyle oyundaki bilgi birbirinden ayrılmalı; araştırmada bulunan her tarihsel ayrıntı oyunda geçiyormuş gibi gösterilmemelidir.",
       "source_locator": "basılı s.260 / PDF s.261 — Ders Dışı Etkinlik / Tiyatro ve Sosyal Bilimler",
+      "prompt_summary": "Tiyatro metnini tarih, psikoloji ve sosyoloji disiplinleriyle araştırıp sunma",
+      "answer": "Uygulanabilir araştırma planı: Üç grup metni farklı bir mercekle inceler; her grup oyundan kısa kanıtlar seçer ve başka bir tiyatro metniyle karşılaştırmasını ayrıca kaynaklandırır.",
       "answer_sections": {
-        "Metin–Tarih": "Mimar Sinan'ın yaşadığı dönem, görevleri, yapıların tarihî bağlamı ve XVI. yüzyıl Osmanlı kültür çevresi.",
-        "Metin–Psikoloji": "Sinan'ın kendini kanıtlama isteği, Ayasofya karşısındaki mesleki hedefi, güçlüklerle baş etmesi, ileri yaşta Selimiye'yi üstlenirken yaşadığı kaygı ve sevinç.",
-        "Metin–Sosyoloji": "Eğitim ve meslek sistemi, mimarbaşılık kurumu, sanatçı-devlet ilişkisi, ortak kültürel değerler ve üretimin toplumla ilişkisi.",
-        "Birlikte değerlendirme": "Bu üç alan, yazarın tarih, insan davranışı ve toplum yapısını tiyatro kurgusunda nasıl birleştirdiğini görünür kılar."
-      }
+        "Tarih grubu": "Sinan’ın yaşam evrelerini, eserlerin yapıldığı dönemi ve oyun ile bilgi görseli arasındaki tarih ayrıntılarını karşılaştırma tablosuna yazın. Oyundaki sahne konuşmalarını tarih belgesi gibi göstermeyin.",
+        "Psikoloji grubu": "Sinan’ın merak, azim, kaygı ve sorumluluk taşıdığı anları belirleyin; her çıkarımı bir davranış veya kısa sözle destekleyin.",
+        "Sosyoloji grubu": "Hükümdar, mimarbaşı, usta ve toplum arasındaki görev ilişkilerini; büyük yapıların kamusal yaşamdaki yerini inceleyin.",
+        "Sunum ve değerlendirme": "Her bulgu için metin sayfası ve karşılaştırılan diğer oyunun künyesi belirtilir. Son değerlendirmede, farklı disiplinlerden veri kullanmanın yazarın tarih ve toplum ilgisini nasıl görünür kıldığı açıklanır."
+      },
+      "guidance": "Başka tiyatro metni üzerinde araştırma yapılmadan onunla ilgili sonuç uydurmayın; grup çalışmasında gerçek kaynak ve metin kanıtı kullanın."
     },
     {
       "question_id": "T4-P261-Q01",
       "entry_type": "question_answer",
       "printed_page": 261,
       "question_no": "Birlikte Çalışalım",
-      "prompt_summary": "Ben, Mimar Sinan'daki çatışmaları ve bunların metne etkisini belirleme",
-      "answer": "Metindeki başlıca çatışmalar aşağıdaki başlıklarda yapılandırılmıştır.",
+      "source_locator": "basılı s.261 / PDF s.262 — Birlikte Çalışalım / çatışmalar",
+      "prompt_summary": "Oyundaki çatışmaları belirleyip dramatik anlatı üzerindeki etkilerini açıklama",
+      "answer": "Çatışmalar, Sinan’ın gelişimini ve eserlerin yapımını ilerleten aşamalar oluşturur.",
       "answer_sections": {
-        "catismalar": [
-          "Hedef ve kendini kanıtlama ↔ teknik/mesleki güçlük",
-          "Ayasofya'nın üstünlüğü iddiası ↔ yeni bir mimari başarı ortaya koyma",
-          "Büyüklük ↔ güzellik ve özgünlük",
-          "Geçicilik ↔ kalıcı eser bırakma",
-          "Kaygı ↔ deneyim ve özgüven"
-        ],
-        "metne_etkisi": "Gerilim ve ilerleme sağlar; karakteri derinleştirir; büyük eserlerin ortaya çıkışını dramatik bir neden-sonuç çizgisine bağlar."
-      },
-      "source_locator": "basılı s.261 / PDF s.262 — Birlikte Çalışalım / çatışmalar"
+        "Teknik güçlük ve çözüm": "Büyük yapılar kurma ve zor koşullarda gemi yapma görevleri, Sinan’ın bilgisini ve becerisini sınar.",
+        "Kendini kanıtlama ve alçakgönüllülük": "Ayasofya’yı aşma arzusu vardır; ancak Sinan hedefi yalnız büyüklük yarışı olarak görmez ve önceki mimarların değerini teslim eder.",
+        "Kalıcı eser ve ölümlülük": "Hükümdarlar adlarının geleceğe taşınmasını isterken oyun hayatın ve saltanatın geçiciliğini hatırlatır.",
+        "Metne etkisi": "Her görev yeni bir amaç ve gerilim doğurur; tamamlanan eserler Sinan’ın mesleki gelişiminde dönüm noktası olur. Son bölümdeki ortak miras vurgusu kişisel rekabeti daha geniş bir kültür anlatısına bağlar."
+      }
     },
     {
       "question_id": "T4-P262-PERF01",
       "entry_type": "performance_support",
       "printed_page": 262,
       "question_no": "Süreci Değerlendirebilme",
-      "prompt_summary": "Oyundaki insan ilişkilerini belirleme ve metni kişisel beğeni ölçütleriyle değerlendirme",
-      "answer": "Günlük hayatla ilişkilendirilen kesitler ve beğeni ölçütleri aşağıdaki yapı içinde değerlendirilebilir.",
+      "source_locator": "basılı s.262 / PDF s.263 — Süreci Değerlendirebilme",
+      "prompt_summary": "Oyundaki gündelik insan ilişkilerini tartışıp metni beğeni ölçütleriyle değerlendirme",
+      "answer": "Örnek değerlendirme: Oyunda güven ve sorumluluk ilişkisi, padişahın Sinan’a önemli bir yapı görevi vermesi ve Sinan’ın bunu yerine getirmesiyle; mesleki dayanışma, Lütfü Paşa’nın yeteneğini fark edip onu önermesiyle görünür. Sinan’ın önceki mimarlara saygı duyması da rekabet içinde nezaketin mümkün olduğunu gösterir. Benim için sahne yönergeleri ve müzik, bu ilişkileri etkileyici kılan başlıca unsurlardır.",
       "answer_sections": {
-        "insan_iliskileri": [
-          "Güven ve görev verme",
-          "Sözünü tutma",
-          "Uzmanlığa saygı",
-          "Usta ve geçmişe saygı",
-          "Ekip çalışması",
-          "Öğrenci yetiştirme"
-        ],
-        "begeni_olcutleri": {
-          "etkileyicilik": "Müzik, ışık ve görsel yönergeler.",
-          "anlasilirlik": "Tarihî bilgilerin açık ve doğrudan aktarılması.",
-          "karakter_tutarliligi": "Sinan'ın temel özelliklerinin olaylar boyunca korunması.",
-          "tarih_kultur_bilinci": "Tarihî kişi, eser ve kültür çevresinin bütünlük içinde sunulması.",
-          "sahnelenebilirlik": "Hızlı mekân/zaman değişimine uygun sahne yönergeleri."
-        }
+        "Etkileyicilik": "Kitaptaki örnekte olduğu gibi müzik ve ışık geçişlerini belirten sahne yönergeleri olayların duygusunu güçlendirir.",
+        "İnsan ilişkileri": "Görev verme ve güvenme, yeteneği fark etme, sözüne bağlı kalma ve önceki ustalara saygı gösterme.",
+        "Örnek ölçüt": "Öğrenci seçtiği ölçüte (ör. karakter inandırıcılığı, tarihî atmosfer, sahneleme) metinden örnek göstermelidir."
       },
-      "guidance": "Beğeni ölçütleri öğrenci tarafından değiştirilebilir; her değerlendirme metinden somut örnekle desteklenmelidir.",
-      "source_locator": "basılı s.262 / PDF s.263 — Süreci Değerlendirebilme"
+      "guidance": "Beğeni kişiseldir. Farklı değerlendirmeler, metinden uygun bir örnekle gerekçelendirildiğinde kabul edilir."
     },
     {
       "question_id": "T4-P262-PERF02",
       "entry_type": "performance_support",
       "printed_page": 262,
       "question_no": "Ben Kimim?",
-      "prompt_summary": "Bir karakteri adını söylemeden özellikleriyle tanıtma",
-      "answer": "Örnek tanıtım: 'Küçük bir yerden büyük bir şehre geldim. Öğrendiğim mesleği yalnız okulda değil, gördüğüm her yapıdan ders çıkararak geliştirdim. Zorluklar karşısında çalışmayı bırakmadım; büyüklükten çok güzelliği önemsedim ve verdiğim sözü yerine getirmeyi ilke saydım.' Bu tanıtımın cevabı **Mimar Sinan**dır.",
-      "guidance": "Tanıtımda karakterin adını veya onu hemen ele veren tek bir eser adını kullanmadan, birkaç belirgin özelliği bir araya getirmek etkinliği daha işlevsel kılar.",
-      "source_locator": "basılı s.262 / PDF s.263 — Birlikte Çalışalım / Ben Kimim?"
+      "source_locator": "basılı s.262 / PDF s.263 — Birlikte Çalışalım / Ben Kimim?",
+      "prompt_summary": "Ben Kimim? oyunu için seçilen karakteri açıklamadan tanıtma",
+      "answer": "Örnek tanıtım: “Çocukluğumdan başlayarak yeni şeyler öğrendim. Gördüğüm yapıları dikkatle inceledim. Bana verilen zor görevlerde hemen işe koyuldum; yıllar sonra önemli eserler tasarladım.” Tahminler alındıktan sonra karakterin Mimar Sinan olduğu açıklanabilir."
     },
     {
       "question_id": "T4-P262-PERFQ01",
       "entry_type": "performance_support",
       "printed_page": 262,
       "question_no": "Sıra Sizde 1",
-      "prompt_summary": "Canlandırılmak istenen karakteri seçip gerekçelendirme",
-      "answer": "Örnek seçim: **Mimar Sinan**. Onu canlandırmak isterdim; çünkü metinde merak eden, öğrenen, güçlüklerle mücadele eden ve yaptığı işin estetik yönünü önemseyen çok katmanlı bir kişi olarak sunulur. Farklı yaş dönemlerinden geçmesi ve duygu değişimlerinin sahne yönergeleriyle verilmesi, canlandırma sırasında ses tonu ve beden dili bakımından da zengin imkân sağlar.",
-      "guidance": "Öğrenci başka bir karakteri seçebilir; gerekçenin o karakterin metinde görülen söz, davranış veya amacıyla bağlantılı olması gerekir.",
-      "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 1"
+      "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 1",
+      "prompt_summary": "Canlandırılacak karakteri seçip gerekçelendirme",
+      "answer": "Örnek cevap: Mimar Sinan’ı canlandırmak isterdim; çünkü meraklı oluşu, gözlemlediklerini çalışarak geliştirmesi ve başarıyı tek başına sahiplenmemesi sahnede farklı duygu ve tutumları göstermek için olanak sağlar.",
+      "guidance": "Başka bir karakter seçilebilir. Gerekçe, oyundaki söz veya davranışla ilişkilendirilmelidir."
     },
     {
       "question_id": "T4-P262-PERFQ02",
       "entry_type": "performance_support",
       "printed_page": 262,
       "question_no": "Sıra Sizde 2",
-      "prompt_summary": "Metindeki kişilerin günlük bir olay karşısındaki davranışlarını kişiliklerine uygun kısa senaryolarla gösterme",
-      "answer": "Kişilerin değer ve özelliklerini güncel bir duruma taşıyan örnek senaryolar şöyle düzenlenebilir:",
-      "explanation": "Senaryolar hayalîdir; karakterlerin kaynakta görülen özelliklerinden hareketle yeni günlük durumlara uygulanmıştır.",
       "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 2",
-      "answer_sections": {
-        "Mimar Sinan": "Bir ekip önemli bir projede beklenmedik teknik sorunla karşılaşır. Sinan ölçüm yapar, farklı çözümleri inceler, ekibin görüşünü alır ve uygulanabilir çözümü sabırla dener.",
-        "Lütfü Paşa": "Bir görev için birkaç kişi arasından seçim yapılırken kişisel yakınlıktan çok deneyim ve yeterlilik gözetir.",
-        "Kanuni'yi temsil eden 8. Ses": "Bir kamu yapısında yalnız büyüklük istemek yerine uzmanına güvenip estetik ve işlevsel dengeyi önemser."
-      }
+      "prompt_summary": "Seçilen tiyatro kişisinin günlük yaşamda karşılaşabileceği duruma uygun kısa senaryo yazma",
+      "answer": "Örnek senaryo: Bir öğrenci ekibi okulun ortak kullanım alanı için tasarım hazırlamaktadır. İlk taslak güvenli ve kullanışlı değildir. Sinan’ı örnek alan ekip üyesi, alanı yeniden ölçer, farklı tasarımları inceler ve arkadaşlarının önerilerini dinleyerek planı düzeltir. Sonunda grup çalışmayı birlikte tamamlayıp herkesin kullanabileceği bir çözüm sunar.",
+      "guidance": "Senaryo kurmacadır; karakterin metinde görülen niteliğini (ör. gözlem, sabır, sorumluluk) günlük bir duruma taşıması yeterlidir.",
+      "explanation": "Bu, tarihî Sinan’ın yaşadığı bir olay değildir; onun oyunda görülen gözlem, sabır ve sorumluluk özelliklerini güncel bir duruma taşıyan hayalî bir senaryodur."
     }
   ]
 }

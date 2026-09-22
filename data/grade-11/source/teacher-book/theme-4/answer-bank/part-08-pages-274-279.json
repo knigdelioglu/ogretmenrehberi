@@ -9,124 +9,97 @@
       "entry_type": "question_answer",
       "printed_page": 274,
       "question_no": "Birlikte Çalışalım",
-      "prompt_summary": "Anlatıcı, ihtiyar memur ve genç memurun özellik, amaç, niyet ve hikâyedeki işlevlerini çözümleme",
-      "answer": "Anlatıcı başlangıçta aceleci, işine ve yukarı çıkmaya odaklıdır; ihtiyarın sözlerini önemsemez ve genç memuru 'yeni yetme' diye küçümser. İhtiyarın ölümü ve gençle karşılaşması, kendi yaşını ve meslek hayatındaki yerini fark etmesini sağlar; sonunda ilk kez genç birine yol verip yukarı çıkmaktan vazgeçer. İhtiyar memur sakin, deneyimli ve iyi niyetlidir; 'Bahtiyar ol' sözüyle nezaket, 'Bu kadar koşuşma oğlum, değmez' sözüyle hayat deneyimine dayanan bir uyarı taşır. Genç memur ise polite, soğukkanlı ve doğrudandır; anlatıcıya yol vermesi ve ihtiyarın ölümünü haber vermesi, anlatıcının artık genç kuşağın karşısındaki konumunu fark etmesini sağlar.",
+      "source_locator": "basılı s.274 / PDF s.275 — Birlikte Çalışalım karakter çözümleme",
+      "prompt_summary": "Merdiven’de anlatıcı, yaşlı memur ve genç memurun davranış, amaç ve niyetlerini çözümleme",
+      "answer": "Karakter çözümlemesinde kişilerin söyledikleri ile anlatıcının onlar hakkındaki yorumlarını ayırmak gerekir. İç dünyaları bütünüyle açıklanmadığı için çıkarımlar olasılık olarak kurulmalıdır.",
       "answer_sections": {
-        "anlatici": {
-          "baslangic": "Aceleci, meslek ve iş odaklı, genç memura mesafeli.",
-          "degisim": "Ölüm ve kuşak değişimiyle yüzleşip yükselme telaşını sorgular.",
-          "kritik_davranis": "İlk kez kendinden genç bir memura yol vermesi ve aşağı inmeyi seçmesi."
-        },
-        "ihtiyar": {
-          "ozellikler": "Sakin, deneyimli, iyi niyetli.",
-          "iletiler": [
-            "Bahtiyar ol oğlum",
-            "Bu kadar koşuşma oğlum, değmez"
-          ],
-          "sembolik_islev": "Yaşlılık, deneyim ve hayatın sonluluğunu temsil eden figür."
-        },
-        "genc_memur": {
-          "ozellikler": "Genç, doğrudan, soğukkanlı; anlatıcıya karşı nazik.",
-          "islev": "Kuşak değişimini görünür kılar ve anlatıcının kendi yaşını fark etmesini tetikler."
-        }
+        "Anlatıcı": "Başlangıçta işini bitirmeye ve merdivenleri hızla çıkıp inmeye odaklanır; kıdem ve yaş farkını önemserken genç memura “yeni yetme” der. İhtiyarın sözünü ilk anda düşünmez. Yaşlı memurun öldüğünü öğrenmesi ve genç memurun yol vermesi, kendi konumunu ve acele alışkanlığını sorgulamasına yol açar. Bu değişim, kendiyle çatışmasının merkezidir.",
+        "İhtiyar memur": "Anlatıcı yol verdiğinde iyi dilekte bulunur; ikinci karşılaşmada onun koşuşturmasını görünce bunun değmeyeceğini söyler. Sözleri deneyim, nezaket ve yaşamın sınırlılığına ilişkin bir uyarı olarak yorumlanabilir. Yaşlılık ve zamanın geçişini çağrıştırsa da metindeki kişi aynı zamanda sıradan bir memurdur.",
+        "Genç memur": "Anlatıcıya yol verir ve yaşlı memurun durumunu doğrudan, gülümseyerek aktarır. Bu tutum kayıtsız, ironik veya yalnızca pratik bir yaklaşım olarak okunabilir; metin kesin bir duygu belirtmez. “Buyrun, buyrun siz de çıkın” sözü hem yol verme hem anlatıcıyı ölüm gerçeğiyle karşı karşıya bırakma işlevi taşır."
       },
-      "source_locator": "basılı s.274 / PDF s.275 — Birlikte Çalışalım karakter çözümleme"
+      "explanation": "Anlatıcının telaşı ve merdivenleri hızla kullanması işini bitirme, yetişme ve ilerleme alışkanlığını düşündürür. İhtiyarın ilk sözü, yol verilmesine karşı bir iyi dilektir; ikinci sözü, anlatıcının aynı telaşla yeniden karşılaşmasından sonra gelen deneyim uyarısı olarak okunabilir. Genç memur yaşlı çalışanın öldüğünü doğrudan aktarır. “Buyrun, buyrun siz de çıkın” sözü hem gerçek bir yol verme hem de anlatıcının yaş, kıdem ve kendi hedefi hakkındaki düşüncelerini değiştiren bir karşılaşma işlevi taşır. Anlatıcının geri dönme kararı bir sorgulamayı gösterir; bunu tümüyle değiştiğinin kesin kanıtı saymak gerekmez. İhtiyar yaşlılığı ve deneyimi çağrıştırabilir, genç memur da yeni kuşağa benzetilebilir; ancak bu simgesel okumalar olasılık olarak sunulmalı, tek tek karakterlerin metindeki söz ve davranışlarıyla temellendirilmelidir.\n\nAnlatıcının telaşı iş yaşamına ve ilerleme alışkanlığına bağlıdır. İhtiyarın iki sözü farklı anlara karşılık gelir: ilkinde nezaketle karşılık verir, ikincisinde aceleye dair öğüt sunar. Genç memurla karşılaşma, anlatıcının kendinden genç birine ilk kez yol vermesini sağlar; bu, yaş ve kıdem üzerinden kurduğu önceliğin değişmeye başladığını gösterir. Yeni kuşak yorumu bütün gençlere genellenmemeli, yalnız karakterin metindeki tutumuna dayanmalıdır."
     },
     {
       "question_id": "T4-P275-WORK01",
       "entry_type": "question_answer",
       "printed_page": 275,
       "question_no": "Çalışma Kâğıdı",
-      "prompt_summary": "Merdiven'in kişi, mekân, zaman ve olay örgüsü yapı unsurları",
-      "answer": "Merdiven'in yapı unsurları ve olay akışı aşağıdaki çalışma kâğıdında ayrı başlıklar hâlinde gösterilmiştir.",
+      "source_locator": "basılı s.275 / PDF s.276 — Yapı Unsurları Çalışma Kâğıdı",
+      "prompt_summary": "Merdiven öyküsünün kişi, mekân, zaman ve olay örgüsünü belirleme",
+      "answer": "Örnek yapı çözümlemesi aşağıdadır.",
       "answer_sections": {
-        "kisiler": [
-          "Anlatıcı",
-          "İhtiyar memur",
-          "Genç memur"
-        ],
-        "mekan": "İş yeri binasının merdivenleri ve üst kat.",
-        "zaman": "Kesin tarih verilmez; kısa bir çalışma süresi.",
-        "olay_orgusu": [
-          "Anlatıcı ihtiyara yol verir.",
-          "İhtiyar ikinci karşılaşmada koşuşturmanın değmeyeceğini söyler.",
-          "Anlatıcı genç memurdan ihtiyarın durumunu öğrenir.",
-          "Genç memur anlatıcıya yol verir.",
-          "Anlatıcı yaşını/konumunu fark ederek aşağı inmeyi seçer."
-        ]
-      },
-      "source_locator": "basılı s.275 / PDF s.276 — Yapı Unsurları Çalışma Kâğıdı"
+        "Kişiler": "Adı verilmeyen anlatıcı memur, yaşlı memur ve genç memur.",
+        "Yer/mekân": "Bir dairedeki merdivenler, üst kat ve yaşlı memurun bulunduğu kanepe çevresi. Mekân dar tutulduğu için karşılaşmalar ve yol verme hareketi öne çıkar.",
+        "Zaman": "Aynı iş günü içindeki birkaç kısa karşılaşma; belirli tarih ve saat verilmez.",
+        "Olay örgüsü": "Anlatıcı işini görmek için merdivenleri hızla çıkar ve yaşlı memura yol verir. Bir süre sonra inerken yeniden karşılaştığı yaşlı adamın aceleyi sorgulayan sözünü önemsemez. Daha sonra genç memurla karşılaşır, yaşlı adamın öldüğünü öğrenir ve ilk kez genç birine yol verir. Yukarı çıkma amacını sorgulayıp aşağı inmeyi seçer."
+      }
     },
     {
       "question_id": "T4-P275-Q01",
       "entry_type": "question_answer",
       "printed_page": 275,
       "question_no": "Düşünelim Paylaşalım 1",
-      "prompt_summary": "Tür, içerik ve dilden hareketle Merdiven'in yazıldığı dönem hakkında çıkarım",
-      "answer": "Metin modern büro hayatı, memuriyet, cankurtaran ve cenaze arabası gibi güncel şehir yaşamına ait unsurlar taşır; dili sade ve konuşma diline yakındır. Küçürek hikâyenin yoğun, açık uçlu ve sembolik anlatımı da modern edebiyat anlayışıyla uyumludur. Ferit Edgü'nün kitapta 1950 kuşağı sanatçılarından ve küçürek hikâyenin önemli temsilcilerinden biri olarak tanıtılması, metni Cumhuriyet Dönemi Türk edebiyatı içinde değerlendirmeyi destekler.",
-      "source_locator": "basılı s.266 ve s.275 / PDF s.267 ve s.276 — Düşünelim Paylaşalım soru 1"
+      "source_locator": "basılı s.266 ve s.275 / PDF s.267 ve s.276 — Düşünelim Paylaşalım soru 1",
+      "prompt_summary": "Merdiven’in türü, içeriği ve dilinden yazıldığı döneme ilişkin çıkarım yapma",
+      "answer": "Daire, memur, işini bitirme ve cankurtaran çağırma gibi ayrıntılar metnin modern büro yaşamında geçtiğini düşündürür. Kısa anlatım ve gündelik diyaloglar da bu çevreyi destekler. Ancak bu sayfalarda öykünün yazıldığı kesin yıl verilmez; Ferit Edgü’nün biyografisindeki kuşak bilgisi, tek başına metnin yazım tarihini belirlemez."
     },
     {
       "question_id": "T4-P275-Q02A",
       "entry_type": "question_answer",
       "printed_page": 275,
       "question_no": "2/a",
-      "prompt_summary": "Merdiven günümüz mimari ve teknolojik imkânlarıyla yazılsaydı kurgu ve akışın değişimi",
-      "answer": "Günümüzde aynı olay bir asansörde, yürüyen merdivende veya kartlı geçiş sistemine sahip bir ofiste yaşanabilirdi. Anlatıcı katlar arasında asansör kullansaydı ihtiyarla tekrar tekrar merdivende karşılaşma olasılığı azalır, dolayısıyla hikâyenin temel sembolü olan 'çıkmak-inmek' hareketi başka bir nesne veya durumla kurulmak zorunda kalırdı. Acil durum haberi telefon veya kurum içi mesajlaşmayla daha hızlı yayılabilir; çalışanların yüz yüze karşılaşmaları dijital iletişim nedeniyle azalabilirdi. Buna rağmen yaşlanma, meslek hırsı ve kuşak değişimi gibi temel meseleler farklı bir kurgu içinde korunabilirdi.",
-      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/a"
+      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/a",
+      "prompt_summary": "Günümüz mimari ve teknoloji koşullarının Merdiven’in olay akışını nasıl değiştirebileceğini yorumlama",
+      "answer": "Örnek cevap: Binada asansör varsa kişiler merdivende karşılaşmayabilir; bu durumda yol verme hareketi ve anlatıcının yukarı-aşağı yön değişimi başka bir yerde kurulmak zorunda kalır. Asansörde beklemek, kat düğmelerine basmak veya telefondan haber almak yeni karşılaşma biçimleri yaratabilir. Buna rağmen yaşlılık, acele ve ölüm üzerine düşünme temaları güncel koşullarda da korunabilir."
     },
     {
       "question_id": "T4-P275-Q02B",
       "entry_type": "question_answer",
       "printed_page": 275,
       "question_no": "2/b",
-      "prompt_summary": "Güncelleme üzerinden edebiyatın hayatla ilişkisini açıklama",
-      "answer": "Edebiyat yaşanan hayatın mekânlarından, teknolojisinden, çalışma biçimlerinden ve insan ilişkilerinden malzeme alır. Hayat değiştikçe sanat metinlerinin ayrıntıları ve kurgu imkânları da değişebilir; örneğin merdivenin yerini asansör veya dijital iletişim alabilir. Buna karşılık zamanın geçmesi, yaşlanma, ölüm, başarı isteği ve kuşak değişimi gibi temel insan deneyimleri farklı dönemlerde yeni biçimlerle yeniden anlatılabilir. Bu durum edebiyatın hem yaşadığı döneme bağlı hem de dönemleri aşan yönleri olduğunu gösterir.",
-      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/b"
+      "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/b",
+      "prompt_summary": "Öykünün güncellenmesinden edebiyatın hayatla ilişkisine çıkarım yapma",
+      "answer": "Edebiyat, kendi döneminin mekânlarını, teknolojisini ve gündelik ilişkilerini kullanarak hayatı anlatır; bu ayrıntılar değişse de insanın yaşama, zamana ve başkalarına ilişkin soruları sürebilir. Öykü güncellendiğinde olayın araçları değişebilir, fakat değişen hayat koşulları anlatımın biçimini ve anlamını da etkiler."
     },
     {
       "question_id": "T4-P276-Q03",
       "entry_type": "performance_support",
       "printed_page": 276,
       "question_no": "Düşünelim Paylaşalım 3",
-      "prompt_summary": "Günümüzde genç ve yaşlı kuşaklar arasındaki farklılıkların toplumsal yararını yorumlama",
-      "answer": "Örnek görüş: Genç ve yaşlı kuşaklar teknoloji kullanımı, çalışma hızı, iletişim biçimi, risk alma ve deneyime bakış bakımından farklılaşabilir. Bu farklılık çatışmaya dönüşebileceği gibi karşılıklı öğrenme fırsatı da oluşturabilir. Gençler yeni yöntem ve teknolojileri daha hızlı benimserken yaşlı kuşak deneyim, kurum hafızası ve uzun vadeli sonuçları değerlendirme konusunda katkı sağlayabilir. Kuşakların birbirini küçümsemek yerine dinlemesi, toplumda yenilik ile deneyim arasında denge kurulmasına yardım eder.",
-      "guidance": "Bu soru güncel gözleme açıktır; öğrencinin kendi çevresindeki gerçek örneklerle gerekçelendirmesi beklenir.",
-      "source_locator": "basılı s.276 / PDF s.277 — Düşünelim Paylaşalım soru 3"
+      "source_locator": "basılı s.276 / PDF s.277 — Düşünelim Paylaşalım soru 3",
+      "prompt_summary": "Kuşaklar arası farklılıkları ve bunların toplumsal yaşama katkısını yorumlama",
+      "answer": "Örnek yorum: Gençler ve yaşlılar teknolojiye, işe ayrılan zamana veya önceliklere farklı yaklaşabilir; bu fark her birey için aynı değildir. Deneyim aktarımı olası riskleri görmeye yardım ederken yeni kuşakların önerileri alışılmış çözümleri yenileyebilir. Karşılıklı dinleme olduğunda farklılıklar çatışma yerine öğrenme ve dayanışma fırsatına dönüşür."
     },
     {
       "question_id": "T4-P276-CONFLICT01",
       "entry_type": "question_answer",
       "printed_page": 276,
       "question_no": "Birlikte Çalışalım / çatışmalar",
-      "prompt_summary": "Merdiven'deki iç çatışmaları ve insan-insan çatışmalarını belirleme",
-      "answer": "İç çatışmalar: Anlatıcının sürekli yukarı çıkma/iş yetiştirme isteği ile hayatın geçiciliğini fark etmesi; kendisini genç ve yükselen biri olarak görme alışkanlığı ile artık kendinden genç bir kuşağın geldiğini kabul etmesi; meslek konumu ile ölüm karşısında hayatın anlamı arasındaki gerilim. İnsan-insan çatışmaları ise açık bir kavga biçiminde değildir; daha çok bakış ve kuşak farkı olarak görülür. İhtiyarın 'koşuşma değmez' uyarısı anlatıcının hız ve kariyer anlayışıyla; anlatıcının 'yeni yetme' diye gördüğü genç memurun sakin biçimde ona yol vermesi de anlatıcının kendi konum algısıyla karşıtlık oluşturur.",
+      "source_locator": "basılı s.276-277 / PDF s.277-278 — Birlikte Çalışalım / çatışmalar",
+      "prompt_summary": "Merdiven’de iç ve kişiler arası çatışmaları, bunların sonuçlarını ve varsayımsal gelişmeleri açıklama",
+      "answer": "Öykünün çatışmaları kısa karşılaşmalarla anlatıcının kararını değiştirir; bazı gelişmeler gerçekleşmemiş olsaydı son da farklılaşabilirdi.",
       "answer_sections": {
-        "ic_catismalar": [
-          "Yükselme ve acele ↔ hayatın geçiciliği",
-          "Kendini genç/ilerleyen görme ↔ yaşlanmayı ve kuşak değişimini kabul etme",
-          "Meslek konumu ↔ ölüm karşısında hayatın anlamı"
-        ],
-        "insan_insan": [
-          "İhtiyarın hayat deneyimi ↔ anlatıcının aceleci çalışma anlayışı",
-          "Anlatıcının genç memura küçümseyici bakışı ↔ gencin sakin ve nazik tavrı"
-        ]
-      },
-      "source_locator": "basılı s.276-277 / PDF s.277-278 — Birlikte Çalışalım / çatışmalar"
+        "İnsanın kendisiyle çatışması": "Anlatıcı işine yetişme ve sürekli hareket etme alışkanlığı ile yaşlı memurun uyarısını düşünme arasında kalır. Kıdem ve yükselme anlayışıyla yaşamın sınırlılığı karşı karşıya gelir.",
+        "İnsan-insan çatışması": "Anlatıcının yaşlı memura önce yol vermesi, sonra sözünü önemsememesi; genç memurla yaş ve kıdem konusundaki ilk tepkisi ve sonunda ona yol vermesi. Bu çatışma açık bir kavga değil, tutum ve bakış açılarındaki gerilimdir.",
+        "Genç memura yol verme": "Başlangıçta “yeni yetme” diye küçümsediği birine yol vermesi, yaş ve kıdemin her durumda öncelik sağlamadığını fark ettiğini; kendisinin de başkasına yer açabileceğini gösterir.",
+        "Anlatıcı ihtiyarla karşılaşmasaydı": "Aceleye ilişkin uyarı ve yaşlılıkla ilgili ilk karşılaşma yaşanmazdı; anlatıcının iş telaşını sorgulaması için önemli bir neden eksilirdi.",
+        "Anlatıcı genç memurla karşılaşmasaydı": "Yaşlı memurun ölümünü ve yukarıdaki durumu öğrenmeyebilirdi. Bu nedenle son kararı ve genç birine yol verme anı muhtemelen oluşmazdı.",
+        "İhtiyar memur ölmemiş olsaydı": "Anlatıcı onun sözlerini sorup deneyimini öğrenebilirdi; ölümün yarattığı sarsıntı yerine iki kişi arasında daha doğrudan bir konuşma gelişebilirdi. Öykünün sonundaki sorgulama yine mümkün olsa da etkisi değişirdi."
+      }
     },
     {
       "question_id": "T4-P277-PERF00",
       "entry_type": "performance_support",
       "printed_page": 277,
       "question_no": "Birlikte Çalışalım b",
-      "prompt_summary": "İhtiyar veya genç memurla karşılaşma gerçekleşmeseydi hikâyenin olası gelişimini tartışma",
-      "answer": "Üç varsayımın hikâyenin anlamına etkisi ayrı ayrı değerlendirilebilir:",
-      "guidance": "Bunlar metnin neden-sonuç örgüsünden çıkarılan olasılıklardır; tek zorunlu alternatif kurgu değildir.",
       "source_locator": "basılı s.277 / PDF s.278 — Birlikte Çalışalım varsayımsal durumlar",
+      "prompt_summary": "Öyküdeki çatışma ve kişi karşılaşmalarına ilişkin gerçekleşmeyen durumlar için alternatif olay akışı kurma",
+      "answer": "Aşağıdaki alternatifler olası kurgu önerileridir. Öğrenci farklı bir akış kurabilir; değişikliğin anlatıcının kararı ve öykünün sonu üzerindeki etkisini tutarlı biçimde açıklamalıdır.",
+      "guidance": "Tek bir doğru alternatif yoktur. Olay örgüsünde neden-sonuç bağı korunmalı; metinde bulunmayan yeni bir olay kesinleşmiş gibi değil, öğrencinin kurduğu olasılık olarak sunulmalıdır.",
       "answer_sections": {
-        "Anlatıcı ihtiyar memurla karşılaşmasaydı": "“Bu kadar koşuşma oğlum, değmez” uyarısı ve yaşlılık karşılaştırması olmayacağı için finaldeki farkındalık zayıflayabilirdi.",
-        "İhtiyar memur ölmemiş olsaydı": "Anlatıcının ölümle doğrudan yüzleşmesi gerçekleşmez, sözün ağırlığı azalabilir ve yukarı çıkmaktan vazgeçmesi için güçlü bir kırılma oluşmayabilirdi.",
-        "Anlatıcı genç memurla karşılaşmasaydı": "Kendisinin artık genç kuşağın yerini almakta değil ona yer açmakta olduğunu fark etmesi zorlaşır; kuşak değişimi sembolü ortadan kalkardı."
+        "Anlatıcı ihtiyar memurla karşılaşmasaydı": "Yaşlı adamın iyi dileğini ve aceleye ilişkin uyarısını duymazdı. Genç memurdan ölüm haberini alsa bile, yaşlı kişiyle yaşadığı karşılaşmaların kurduğu düşünsel bağ bulunmayacağından son kararı farklı gerekçelerle gelişebilirdi.",
+        "Anlatıcı genç memurla karşılaşmasaydı": "İhtiyar memurun ölüm haberini o anda öğrenmez; merdivenleri çıkıp işine devam edebilirdi. Eski çalışma düzenini sürdürmesi ve son bölümde yukarı çıkma amacını sorgulamaması olası bir akıştır.",
+        "İhtiyar memur ölmemiş olsaydı": "Genç memur ölüm haberini vermezdi. Anlatıcı yaşlı adamı yeniden görebilir ve önceki uyarısı üzerine konuşabilirdi; böylece değişim ölüm haberiyle değil, yüz yüze bir konuşma ya da başka bir deneyimle kurulabilirdi."
       }
     },
     {
@@ -134,96 +107,89 @@
       "entry_type": "question_answer",
       "printed_page": 277,
       "question_no": "Sıra Sizde 1",
-      "prompt_summary": "Metindeki davranışları uygun değerlerle ilişkilendirme",
-      "answer": "Davranışlarla değerler aşağıdaki eşleştirmeler üzerinden ilişkilendirilebilir.",
+      "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 1",
+      "prompt_summary": "Öyküdeki davranışları uygun değerlerle ilişkilendirme",
+      "answer": "Tablodaki örnek satıra ek olarak davranışlar şu değerlerle ilişkilendirilebilir.",
       "answer_sections": {
-        "İhtiyara yol verme": "Saygı, duyarlılık",
-        "Görev için hızlı çıkma": "Sorumluluk, çalışkanlık, görev bilinci",
-        "Bahtiyar ol oğlum": "İyi niyet, nezaket, değerbilirlik",
-        "Genç memura yol verme": "Saygı, alçakgönüllülük, kabullenme",
-        "İhtiyarı merak etme": "Duyarlılık, ilgi, merhamet"
-      },
-      "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 1"
+        "Anlatıcının görevini yapmak için merdivenleri hızla çıkması": "Sorumluluk ve çalışkanlık; aynı zamanda aşırı acele olarak da değerlendirilebilir.",
+        "Anlatıcının kendisinden genç birine yol vermesi": "Saygı, nezaket, tevazu ve başkasına alan açma.",
+        "İhtiyar memurun “Bahtiyar ol oğlum” demesi": "İyi niyet, şefkat, dua ve nezaket.",
+        "Anlatıcının ihtiyar memuru merak edip gence sorması": "Duyarlılık, ilgi ve insana değer verme."
+      }
     },
     {
       "question_id": "T4-P277-PERF02",
       "entry_type": "performance_support",
       "printed_page": 277,
       "question_no": "Sıra Sizde 2",
-      "prompt_summary": "Kişisel değerlerle çelişen davranışı belirleyip alternatif tepki geliştirme",
-      "answer": "Örnek cevap: Anlatıcının genç memuru henüz tanımadan 'yeni yetme' diye küçümseyen iç değerlendirmesi, insanları yaşına göre peşinen yargılamamak gerektiği düşüncemle çelişir. Onun yerinde olsaydım genç memurun kim olduğunu ve neden orada bulunduğunu doğrudan, saygılı bir biçimde sorar; yaşını deneyimsizlikle otomatik olarak eşleştirmezdim.",
-      "guidance": "Öğrenci farklı bir davranışı değerleriyle çelişkili bulabilir; tepkinin seçilen değerle tutarlı ve gerekçeli olması gerekir.",
-      "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 2"
+      "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 2",
+      "prompt_summary": "Öğrencinin değer yargısıyla çelişen davranışa vereceği tepkiyi gerekçelendirme",
+      "answer": "Örnek cevap: Anlatıcının “yeni yetme” sözüyle genç memuru küçümsemesini uygun bulmam. Ben olsaydım önce kişinin ne söylediğini dinler, yaşına veya kıdemine bakmadan saygılı konuşurdum. Ancak genç memurun yaşlı memurun durumunu gülümseyerek aktarması da duyarsız görünebilir; metin bunun nedenini açıklamadığı için yargımı temkinli kurarım.",
+      "guidance": "Öğrenci başka bir davranışı seçebilir. Tepki, kişisel bir değer yargısı olarak açıkça belirtilip gerekçelendirilmelidir."
     },
     {
       "question_id": "T4-P278-TABLE01",
       "entry_type": "question_answer",
       "printed_page": 278,
       "question_no": "Fark Edelim / disiplin tablosu",
-      "prompt_summary": "Merdiven'deki ayrıntıları ilgili disiplinlerle eşleştirme",
-      "answer": "Metindeki durumlar, ilişkili oldukları disiplinlerle aşağıdaki biçimde eşleştirilebilir.",
+      "source_locator": "basılı s.278 / PDF s.279 — Fark Edelim disiplin tablosu",
+      "prompt_summary": "Merdiven öyküsündeki ayrıntıları ilgili sosyal bilim ve disiplinlerle eşleştirme",
+      "answer": "Bir ayrıntı birden fazla disiplinle ilişkilendirilebilir; aşağıdaki tablo örnek eşleştirmeler sunar.",
       "answer_sections": {
-        "Kurumda yaş/konum ilişkileri": "Sosyoloji, psikoloji",
-        "Yaşlılık-ölüm-meslek iç çatışmaları": "Psikoloji, felsefe",
-        "Modern koşuşturma eleştirisi": "Sosyoloji, felsefe",
-        "Yaşlılık-sağlık-ani ölüm": "Sağlık bilimleri/tıp, psikoloji",
-        "Kuşak değişimi": "Sosyoloji, psikoloji",
-        "Mesleki rollerin değişmesi": "Sosyoloji, çalışma/örgüt psikolojisi",
-        "Ölüm karşısında yaşamı sorgulama": "Felsefe, psikoloji"
+        "Yaş ve konumları farklı çalışanların ilişkileri": "Sosyoloji, psikoloji (kitaptaki örnek).",
+        "Yaşlılık, sağlık durumu ve ani ölüm": "Tıp/sağlık bilimleri, gerontoloji, psikoloji.",
+        "Anlatıcının yaşlılık, ölüm ve meslek konumuna ilişkin bilinçaltı çatışmaları": "Psikoloji; bilinçaltı ifadesi özellikle psikanalitik yaklaşımla ilişkilendirilebilir.",
+        "Meslek yaşamında rollerin zamanla değişmesi": "Sosyoloji, çalışma yaşamı araştırmaları, psikoloji.",
+        "Anlatıcının kuşak değişimiyle yüzleşmesi": "Sosyoloji ve psikoloji.",
+        "İhtiyar memurun modern yaşamın koşuşturmasını eleştirmesi": "Sosyoloji, felsefe.",
+        "Ölüm karşısında yaşamı sorgulama": "Felsefe ve psikoloji."
       },
-      "explanation": "Kitap bu ayrıntıların birden fazla disiplinle ilişkilendirilebileceğini açık bırakır; eşleştirmeler örnek niteliktedir.",
-      "source_locator": "basılı s.278 / PDF s.279 — Fark Edelim disiplin tablosu"
+      "guidance": "Bu eşleştirmeler tek doğru disiplin listesi değildir. Öğrencinin ayrıntı ile disiplin arasındaki bağı açıklaması beklenir."
     },
     {
       "question_id": "T4-P279-Q01",
       "entry_type": "question_answer",
       "printed_page": 279,
       "question_no": "Ferit Edgü poetikası",
-      "prompt_summary": "Ferit Edgü'nün küçürek hikâye anlayışının Merdiven'e yansımaları",
-      "answer": "Kaynak metinde Ferit Edgü'nün küçürek hikâyelerinde varoluş kaygısı, yalnızlık, iletişimsizlik ve bireyin kendini arayışı; yoğunlaştırılmış anlatım, okurun aktif katılımı, şiirsel düzyazı, simgeler, açık yapıt, kısa zaman, sezdirilen mekân ve yoğun diyalog özellikleri vurgulanır. Merdiven'de bu özellikler açıkça görülür: yaşlanma ve ölüm anlatıcıyı kendi varoluşunu sorgulamaya iter; metin çok kısa bir zaman ve tek ana mekân çevresinde kurulur; 'merdiven', 'çıkmak', 'inmek' ve 'yol vermek' simgesel anlam kazanır; açıklanmayan anlam boşluklarını okur tamamlar; kısa diyaloglar kişilerin dünyasını verir ve finaldeki 'Ne işim var benim yukarda?' sorusu metni açık uçlu bırakır.",
+      "source_locator": "basılı s.278-279 / PDF s.279-280 — Ferit Edgü tahlil metni ve soru",
+      "prompt_summary": "Ferit Edgü’nün küçürek öykü anlayışının Merdiven’e yansımasını tahlil etme",
+      "answer": "Ferit Edgü’nün biyografisinde öne çıkan yalnızlık, yabancılaşma ve varoluşsal kaygılar ile inceleme parçasında anlatılan yoğun ve açık uçlu küçürek öykü anlayışı Merdiven’de gündelik bir karşılaşma üzerinden görünür olur. Öykü, anlatıcıya kesin bir sonuç açıklamak yerine okurun ayrıntıları birleştirip anlam kurmasını sağlar.",
       "answer_sections": {
-        "varoluscu_tema": "Yaşlanma, ölüm, meslek hırsı ve hayatın anlamını sorgulama.",
-        "yogun_anlatim": "Çok kısa olay ve az kişiyle geniş anlam alanı.",
-        "okur_katilimi": "Sembollerin ve final sorusunun yorumunu okur tamamlar.",
-        "siirsel_duzyazi": "Tekrar, karşıtlık ve ritmik kısa cümleler.",
-        "simgeler": [
-          "Merdiven",
-          "Yukarı-aşağı",
-          "Yol vermek"
-        ],
-        "zaman_mekan": "Kısa zaman; esas olarak merdiven mekânı.",
-        "diyalog": "Az sözle kişilik ve kuşak farkını gösterir.",
-        "acik_yapit": "Final kesin açıklama yerine sorgulama bırakır."
+        "Varoluşçu tema": "Anlatıcının aceleyle işini görme alışkanlığı, yaşlı memurun ölümü ve “Ne işim var benim yukarda?” sorusu, zamanın sınırlılığı karşısında yaşamın ve mesleki hedeflerin anlamını sorgulatır.",
+        "Yoğun anlatım": "Kısa öykü birkaç merdiven karşılaşmasına ve bunların anlatıcıda yarattığı değişime odaklanır; karakter geçmişleri ve olayın kesin tarihi açıklanmaz.",
+        "Okur katılımı": "Yaşlı memurun sözleri ile son sorunun anlamı tek bir açıklamayla kapatılmaz. Okur, karşılaşmaları ve anlatıcının dönüşünü ilişkilendirerek çıkarım yapar.",
+        "Şiirsel düzyazı": "Tekrarlanan çıkma-inme ve yol verme hareketleri, kısa diyaloglar ve “Bahtiyar ol” gibi gündelik sözler anlatımda ritim ve çağrışım oluşturur.",
+        "Simgeler": "Merdiven, olayda gerçek bir mekân olmasının yanında yükselme, ilerleme ve yön değiştirme çağrışımları taşıyabilir. Yol verme de başkasına alan açma ya da öncelik tanıma olarak yorumlanabilir.",
+        "Zaman–mekân": "Olay, bir iş yerinin merdivenleri ve üst katıyla sınırlıdır; belirli bir tarih verilmez. Kısa karşılaşmaların ardışıklığı zamanın geçtiğini sezdirir.",
+        "Diyalog": "Yaşlı memurun iki farklı sözü ve genç memurun ölüm haberini iletmesi, kişilerin tutumlarını ve anlatıcının kararındaki değişimi kendi söylemleriyle açığa çıkarır.",
+        "Açık yapıt": "Anlatıcının neden vazgeçtiği ve yukarı çıkmanın onun için neyi temsil ettiği kesin olarak açıklanmaz; metin birden fazla tutarlı yoruma alan bırakır."
       },
-      "source_locator": "basılı s.278-279 / PDF s.279-280 — Ferit Edgü tahlil metni ve soru"
+      "explanation": "Simgeler için tek ve kesin karşılık dayatılmamalıdır. Öğrencinin yorumu, öyküdeki bir söz, davranış veya yapı unsuruyla temellendirilmelidir."
     },
     {
       "question_id": "T4-P279-PERF01",
       "entry_type": "performance_support",
       "printed_page": 279,
       "question_no": "Süreci Değerlendirebilme",
-      "prompt_summary": "Merdiven'i konu, ana düşünce, dil, üslup ve benzeri beğeni ölçütleriyle değerlendirme",
-      "answer": "Metin, aşağıdaki beğeni ölçütleriyle değerlendirilebilir:",
-      "guidance": "Beğendim/Beğenmedim alanları öğrencinin gerçek okuma deneyimine göre doldurulmalıdır; bu kayıt yalnız gerekçeli değerlendirme modelidir.",
       "source_locator": "basılı s.279 / PDF s.280 — Süreci Değerlendirebilme",
+      "prompt_summary": "Merdiven öyküsünü seçilen kişisel ölçütlerle öznel olarak değerlendirme",
+      "answer": "Örnek değerlendirme: “Konunun işlenişi” ölçütünde beğendim; çünkü sıradan bir iş yeri karşılaşması, anlatıcının acele ve yaşam önceliklerini sorgulamasına dönüşüyor. “Dil ve üslup” ölçütünde de yalın cümleler ve yinelemeler öykünün ritmini destekliyor. Başka bir öğrenci aynı ölçütü beğenmeyebilir; kendi yargısını metinden örnekle açıklaması beklenir.",
       "answer_sections": {
-        "Konunun işlenişi — Beğendim": "Sıradan bir iş yeri anı üzerinden yaşlanma ve meslek hırsı yoğun biçimde verilir.",
-        "Ana düşünce / ileti — Beğendim": "Doğrudan öğüt vermeden hayatın geçiciliğini düşündürür.",
-        "Dil — Beğendim": "Kısa ve günlük cümleler okuma kolaylığı sağlar.",
-        "Üslup — Beğendim": "Tekrarlar ve merdiven sembolü metne şiirsel yoğunluk kazandırır.",
-        "Karakter derinliği — Beğendim": "Kişiler ayrıntılı tanıtılmasa da birkaç söz ve davranışla işlevsel biçimde kurulmuştur.",
-        "Açıklık — Okura göre değişebilir": "Bazı anlamlar açıkça söylenmediği için yorum gerektirir; bu özellik kimi okurlar için güçlü, kimileri için zorlayıcı olabilir."
-      }
+        "Konu/ana düşünce": "Gündelik karşılaşmaların insanın yaşam anlayışını değiştirebilmesi.",
+        "Dil/üslup": "Kısa, yalın ve tekrarlı anlatım; açık uçlu son.",
+        "Gerekçe": "Seçilen ölçütün okur üzerindeki etkisini belirli bir anlatım veya olay ayrıntısıyla açıklar."
+      },
+      "guidance": "Beğendim/beğenmedim işaretleri öğrencinin gerçek değerlendirmesine göre doldurulur; öğretmen adına tek seçim yapılmaz."
     },
     {
       "question_id": "T4-P279-PERF02",
       "entry_type": "performance_support",
       "printed_page": 279,
       "question_no": "Birlikte Çalışalım / Beyin Fırtınası",
-      "prompt_summary": "'Ne işim var benim yukarda?' sorusuna anlatıcının yerinden farklı anlamlar geliştirme",
-      "answer": "Beyin fırtınasında üretilebilecek örnek anlamlar: 'Bu kadar meslek hırsının peşinde koşmaya değer mi?', 'Artık yükselmekten çok hayatın kendisine zaman ayırmalıyım.', 'Ben de yaşlandım; yerimi yeni kuşağa bırakmanın zamanı geliyor.', 'İhtiyarın ölümü bana yukarı çıkmanın sonsuz olmadığını gösterdi.', 'Makam ve görev, ölüm karşısında sandığım kadar önemli değil.', 'Belki de aşağı inmek geri düşmek değil, başka bir öncelik seçmektir.' Bu görüşler kariyer sorgulaması, yaşlanma farkındalığı, ölüm bilinci ve kuşak değişimi başlıkları altında sınıflandırılabilir.",
-      "guidance": "Beyin fırtınasında ilk aşamada fikirler elenmemeli; sınıflandırma ve oylama fikir üretimi tamamlandıktan sonra yapılmalıdır.",
-      "source_locator": "basılı s.279 / PDF s.280 — Birlikte Çalışalım / beyin fırtınası"
+      "source_locator": "basılı s.279 / PDF s.280 — Birlikte Çalışalım / beyin fırtınası",
+      "prompt_summary": "Anlatıcının son sorusuna beyin fırtınasıyla farklı cevaplar üretip sınıflandırma",
+      "answer": "Örnek fikir havuzu: “Yukarıda işim var ama neden sürekli yetişmeye çalışıyorum?”, “Yükselmek gerçekten önceliğim mi?”, “Yaşlı memurun uyarısını şimdi daha iyi anlıyorum”, “Belki de bugün durup düşünmem gerekiyor.” Görüşler; iş ve sorumluluk, kariyer telaşı, yaşamın anlamı ve anlatıcının duygusal değişimi başlıklarında gruplanabilir.",
+      "guidance": "Beyin fırtınasında önce farklı cevapları yargılamadan toplayın; benzer görüşleri sonradan sınıflandırın. En ilgi çekici cevap, sınıfın oylamasıyla belirlenir."
     }
   ]
 }
