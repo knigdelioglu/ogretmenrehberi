@@ -69,12 +69,16 @@
       "question_no": "Dinleme/İzlemeyi Yönetebilme 1-3",
       "prompt_summary": "Direnişin Ustaları için dinleme amacı, strateji ve okuma öncesi tahmin",
       "answer": "Üç adım birbirinden ayrılmalıdır: kişisel dinleme amacı, çözümleme stratejisi ve başlıktan yapılan ön tahmin.",
-      "guidance": "Başlıktan doğrudan Millî Mücadele, fabrika/atölye, zanaatkâr direnişi veya vatan savunması sonucu çıkarmayın; bunlar ancak QR medya dinlendikten sonra doğrulanabilir.",
+      "guidance": "Başlıktan doğrudan Millî Mücadele, fabrika/atölye, zanaatkâr direnişi veya vatan savunması sonucu çıkarmayın. Kitap hem içeriğe hem yazılış amacına yönelik tahmin ister; iki tahmini de başlığın izin verdiği genel düzeyde tutun ve QR medya dinlendikten sonra doğrulayın.",
       "source_locator": "basılı s.216 / PDF s.217 — Dinleme/İzlemeyi Yönetebilme",
       "answer_sections": {
         "1_kisisel_amac": "Öğrenci keyif almak, eğlenmek veya hayal dünyasını zenginleştirmek seçeneklerinden kendisi için öncelikli olanı seçip gerekçelendirir. Tek doğru seçim yoktur.",
         "2_cozumleme_stratejisi": "İlk dinlemede genel olay/kişileri takip etme; gerekirse ikinci dinlemede kişi–amaç–çatışma, ses/efekt/müzik ve dikkat çeken sözler için kısa not alma.",
-        "3_basliktan_tahmin": "“Direnişin Ustaları” başlığı, bir zorluk veya baskı karşısında direnme ve bu işte deneyimli/ustalaşmış kişilerle ilgili bir anlatıyı çağrıştırabilir. Tarihî dönem, atölye, silah üretimi, karakter adları veya kesin amaç dinleme öncesinde bilinmez.",
+        "3_basliktan_tahmin": {
+          "icerik_tahmini": "“Direnişin Ustaları” başlığı, bir zorluk veya baskı karşısında direnme ve bu konuda deneyimli/ustalaşmış kişilerle ilgili bir anlatıyı çağrıştırabilir.",
+          "yazilis_amaci_tahmini": "Yalnız başlıktan hareketle, direnme deneyimini anlatmak, dinleyiciyi bu deneyim üzerinde düşündürmek veya direnme fikrine dikkat çekmek gibi genel amaçlar tahmin edilebilir.",
+          "sinir": "Tarihî dönem, atölye, silah üretimi, karakter adları, Millî Mücadele veya belirli bir ideolojik/duygusal amaç dinleme öncesinde bilinmez."
+        },
         "okuma_sonrasi_kontrol": "Tahmin → doğrulandı / kısmen doğrulandı / değişti; gerçek ses kaydı kanıtıyla açıklanır."
       }
     },
