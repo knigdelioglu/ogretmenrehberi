@@ -62,19 +62,19 @@
       "prompt": "Diyaloğu başka türe dönüştürmek için yazma stratejinizi belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Hikâye, anı veya uygun başka tür seçilebilir; türün gerektirdiği anlatıcı ve yapı kararlarını kaynak diyaloğun anlamını bozmadan alın.",
+        "lead": "Seçtiğiniz diyaloğu başka bir türe dönüştürmek için, o türün gerektirdiği yapı ve anlatım kararlarını kaynak diyaloğun anlamını ve bağlamını bozmadan belirleyin.",
         "sections": [
           {
             "title": "Kaynak",
-            "body": "Diyalog, kişiler, olay ve temel ileti."
+            "body": "Gerçek diyalog, konuşan kişiler, bağlam ve temel ileti."
           },
           {
-            "title": "Yeni biçim",
-            "body": "Seçilen türün anlatıcısı, olay dizisi ve anlatım yolları."
+            "title": "Yeni tür",
+            "body": "Öğrencinin seçtiği tür ve bu türe uygun yöntem/strateji."
           },
           {
             "title": "Korunacak",
-            "body": "Kişilerin kaynakta görülen tutumları, diyalog bağlamı ve ana anlam."
+            "body": "Kaynakta görülen kişi özellikleri, konuşmanın bağlamı ve ana anlam."
           }
         ]
       }
@@ -107,15 +107,16 @@
       "prompt": "İçerik Oluşturabilme — Seçtiğiniz diyaloğun planını oluşturunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Hazır model planı açmadan önce kendi dinleme notlarıyla kaynak kişi, bağlam ve çatışmayı doldurun.",
+        "lead": "Hazır olay örneği açmadan önce kendi dinleme notlarınızla planı doldurun. Kitabın s.226-227 adımlarını gerçek seçiminize uygulayın.",
         "items": [
-          "Kaynak diyalog ve konuşan kişiler",
-          "Bağlam ve temel çatışma",
-          "Ana ileti ve seçilecek tür",
-          "Anlatıcı, mekân ve zaman",
-          "Giriş, gelişme, sonuç",
-          "Korunacak dil ve hitap biçimleri",
-          "Geri bildirimden sonra düzeltilecekler"
+          "Seçtiğiniz gerçek diyalog ve konuşan kişiler",
+          "Diyaloğun bağlamı ve aktarılmak istenen ileti",
+          "Seçilen yeni tür ve yapı unsurları",
+          "Hedef kitle ve kullanım alanı",
+          "Korunacak dil özellikleri ve söz varlığı",
+          "Yazının bölüm/taslak planı",
+          "Kullanılacak dil işlevleri ve karşılaştırmalar",
+          "Akran geri bildiriminden sonra yapılacak düzeltmeler"
         ]
       }
     },
@@ -127,19 +128,19 @@
       "prompt": "Tür değişiyor; kaynak diyalogdan ne korunuyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Diyaloğun karşılıklı konuşma yapısını yeni türün gerektirdiği anlatımla yeniden kurarken metnin özünü kaybetmeyin.",
+        "lead": "Kitap belirli bir dönüşüm türünü zorunlu tutmaz. Öğrencinin seçtiği yeni türün gereklerini uygularken kaynak diyaloğun bağlamını koruyun.",
         "sections": [
           {
-            "title": "Hikâye",
-            "body": "Olayı anlatıcı, kişi, mekân ve zaman düzeniyle yeniden kurabilir."
+            "title": "Seçilen tür",
+            "body": "Tür: [...]. Bu türün temel yapı/anlatım özellikleri: [...]."
           },
           {
-            "title": "Anı",
-            "body": "Seçilen kişinin yaşadığı olayın hatırlanması biçiminde düzenlenebilir; kaynakta yaşanmamış olay eklemeyin."
+            "title": "Dönüştürme kararı",
+            "body": "Diyalog yeni türde hangi anlatım ve yapı yollarıyla yeniden kurulacak? [...]"
           },
           {
             "title": "Kaynakla denetim",
-            "body": "Kim neyi, hangi koşulda söyledi; temel ileti nasıl korunuyor?"
+            "body": "Kim neyi, hangi koşulda söylüyor; temel ileti ve kişi özellikleri korunuyor mu?"
           }
         ]
       }
@@ -188,13 +189,19 @@
       "prompt": "Kural Uygulayabilme — Diyaloğu başka türe dönüştürürken nelere dikkat edersiniz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kişilerin söz ve davranışlarını değiştiren 'serbest yeni hikâye' yazmayın; seçilen türün gereğini kaynakla tutarlı biçimde uygulayın.",
+        "lead": "Kitabın s.227-228'de verdiği kuralları seçtiğiniz gerçek diyaloğa uygulayın; kayıtta olmayan karakter özelliği veya olay üretmeyin.",
         "items": [
-          "Bağlam ve karakter tutarlılığı",
-          "Seçilen türün yapısı ve anlatım biçimi",
-          "Hedef kitleye uygun söz varlığı",
-          "Açık/örtük ileti ve doğal geçişler",
-          "Bağdaşıklık, yazım ve noktalama"
+          "Dikkat çekici giriş.",
+          "Anlatım biçimleri ve düşünceyi geliştirme yolları.",
+          "Kişilerin duygu, düşünce ve davranışlarına uygun dil.",
+          "Bağlama ve hedef kitleye uygun söz varlığı.",
+          "Açık veya örtük ileti.",
+          "Başlatma, sürdürme ve bitirme ifadeleri.",
+          "Millî-manevi/kültürel unsurlar ve toplumsal hassasiyet.",
+          "Olumlu tutum ve değerler.",
+          "Dil yapıları, bağdaşıklık, yazım ve noktalama; bilinçli Türkçe kullanımı.",
+          "Özgün ve tutarlı üslup.",
+          "İçeriğe uygun başlık."
         ]
       }
     },
