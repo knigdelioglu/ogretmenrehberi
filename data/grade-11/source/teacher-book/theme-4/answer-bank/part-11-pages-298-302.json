@@ -11,7 +11,13 @@
       "question_no": "1",
       "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 1",
       "prompt_summary": "Afişte dikkati çeken tasarım unsurunu açıklama",
-      "answer": "Örnek cevap: Önce büyük ölçekli ana görsel ve kısa, belirgin başlık dikkatimi çeker. Güçlü renk karşıtlığı da uzaktan fark edilmeyi kolaylaştırır. Ancak hangi unsurun ilk algılandığı afişin tasarımına ve izleyicinin bakışına göre değişebilir."
+      "answer": "Bu soru kişisel algıya açıktır; afişte ilk dikkat çeken unsur öğrenciye ve incelenen afişe göre değişebilir. Öğrenci gerçekten dikkatini çeken ögeyi adlandırıp bunun neden öne çıktığını açıklamalıdır.",
+      "answer_sections": {
+        "ilk_dikkatimi_ceken_unsur": "[...]",
+        "neden": "[...]",
+        "tasarimla_iliskisi": "Boyut, konum, renk karşıtlığı, başlık, görsel veya başka bir özellik: [...]"
+      },
+      "guidance": "Öğrenci adına 'önce büyük görsel dikkatimi çeker' gibi sabit bir kişisel algı cevabı vermeyin."
     },
     {
       "question_id": "T4-P299-Q02",
@@ -119,8 +125,14 @@
       "question_no": "1",
       "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 1",
       "prompt_summary": "Afiş hazırlama sürecindeki duygu, düşünce ve davranış değişimini öz değerlendirmeyle açıklama",
-      "answer": "Örnek yansıtma: “Taslak hazırlarken çok sayıda görsel ve sözü bir arada kullanmak istedim; ölçütleri gözden geçirince tek bir iletiye odaklanmanın daha anlaşılır olduğunu fark ettim. Geri bildirimi aldıktan sonra başlığı kısalttım ve görseli büyüttüm. Sonraki çalışmada taslağı daha erken paylaşacağım.”",
-      "guidance": "Bu yalnızca örnek yapıdır; öğrencinin kendi yaşadığı değişimi ve yaptığı düzenlemeyi anlatması gerekir."
+      "answer": "Bu öz değerlendirme öğrencinin gerçekten yaşadığı afiş hazırlama sürecine dayanmalıdır. Rehber duygu, düşünce veya davranış değişimini öğrenci adına uydurmaz.",
+      "guidance": "Başlığı kısalttım, görseli büyüttüm gibi yapılmamış düzenlemeleri örnek öğrenci geçmişi olarak yazmayın.",
+      "answer_sections": {
+        "baslangictaki_duygu_dusunce_davranisim": "[...]",
+        "surecte_degisen_nokta": "[...]",
+        "degisime_yol_acan_gercek_deneyim_veya_geri_bildirim": "[...]",
+        "sonraki_calismada_yapacagim": "[...]"
+      }
     },
     {
       "question_id": "T4-P302-PERFQ02",
@@ -138,8 +150,14 @@
       "question_no": "3",
       "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 3",
       "prompt_summary": "Afişte kullanılan görsel ve alıntıları telif, hakkaniyet ve dürüstlük açısından değerlendirme",
-      "answer": "Kullandığım görseli kendim üretmediysem kullanım izni veya lisans koşulunu kontrol eder, gerekiyorsa kaynağını belirtirim. Başka bir afişi olduğu gibi kopyalamam; alıntıyı kendi sözüm gibi göstermem ve bağlamından koparmam. Böylece emeğe saygı ve içerik sahipliğine ilişkin dürüstlük korunur.",
-      "guidance": "Bu cevap genel sınıf içi uygulama rehberidir; hukuki görüş yerine geçmez."
+      "answer": "Afişte gerçekten kullanılan her görsel ve alıntı ayrı ayrı değerlendirilmelidir. Öğrenci, kaynağını ve kullanım koşulunu bildiği materyalleri belirtmeli; başkasının emeğini kendi üretimi gibi göstermemelidir.",
+      "guidance": "Öğrenci adına hangi görseli kullandığını veya izin/lisans kontrolü yaptığını varsaymayın. Genel telif ilkelerini uygulama şablonu olarak verin; hukuki görüş üretmeyin.",
+      "answer_sections": {
+        "kullandigim_gorsel_veya_alinti": "[...]",
+        "kaynak_sahibi": "[...]",
+        "kullanim_izni_lisans_veya_kaynak_gosterimi": "[...]",
+        "hakkaniyet_ve_durustluk_degerlendirmem": "[...]"
+      }
     },
     {
       "question_id": "T4-P302-PERF04",
