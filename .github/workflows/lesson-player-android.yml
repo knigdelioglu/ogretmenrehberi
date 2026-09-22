@@ -65,7 +65,7 @@ jobs:
           AAPT="$(find "${ANDROID_HOME}/build-tools" -name aapt -type f | sort -V | tail -1)"
           "$AAPT" dump badging "$APK" | grep -F "sdkVersion:'36'"
           "$AAPT" dump badging "$APK" | grep -F "targetSdkVersion:'36'"
-          ! "$AAPT" dump badging "$APK" | grep -F "android.permission.INTERNET"
+          "$AAPT" dump badging "$APK" | grep -F "android.permission.INTERNET"
           sha256sum "$APK"
       - uses: actions/upload-artifact@v4
         with:

@@ -24,7 +24,7 @@ class AndroidShellTest {
             ).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithText("Ders, elinin altında.").assertExists()
-        composeRule.onNodeWithText("48 ders · 914 adım · internet gerekmez").assertExists()
+        composeRule.onNode(hasText("ders ·", substring = true)).assertExists()
 
         composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {

@@ -1,26 +1,289 @@
 package io.github.knigdelioglu.lessonplayer.content
 
 import android.content.Context
+import io.github.knigdelioglu.lessonplayer.BuildConfig
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.withContext
 import org.json.JSONArray
 import org.json.JSONObject
+import java.io.ByteArrayOutputStream
+import java.io.DataInputStream
+import java.io.DataOutputStream
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileOutputStream
+import java.net.HttpURLConnection
+import java.net.URL
+import java.nio.file.AtomicMoveNotSupportedException
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
 import java.security.MessageDigest
+import javax.net.ssl.HttpsURLConnection
 
-/** Reads only APK assets; no HTTP, account, storage permission or writable canonical catalog. */
-class ContentRepository(private val context: Context) {
-    suspend fun load(): LessonBundle = withContext(Dispatchers.IO) {
-        fun asset(name: String): ByteArray =
-            context.assets.open("lesson-player/$name").use { it.readBytes() }
-        decode(asset("lessons.json"), asset("teacher-workflow.json"),
-            asset("content-manifest.json"))
+enum class ContentOrigin { REMOTE, CACHE, APK }
+
+data class ContentLoadResult(
+    val bundle: LessonBundle,
+    val origin: ContentOrigin,
+    val statusMessage: String
+)
+
+fun interface ContentSource {
+    suspend fun fetch(fileName: String): ByteArray
+}
+
+/**
+ * Loads the published canonical bundle first, keeping one validated local copy
+ * for offline use. APK assets are the first-install/recovery fallback only.
+ */
+class ContentRepository(
+    context: Context,
+    private val remoteSource: ContentSource = HttpsContentSource(
+        BuildConfig.LESSON_CONTENT_BASE_URL
+    ),
+    private val cacheFile: File = File(
+        context.applicationContext.filesDir, "lesson-player-content.cache"
+    )
+) {
+    private val appContext = context.applicationContext
+
+    suspend fun load(): ContentLoadResult = withContext(Dispatchers.IO) {
+        val cached = readCandidate(cacheFile, ContentOrigin.CACHE)
+        val packaged = if (cached == null) readAssets() else null
+        val fallback = cached ?: packaged
+
+        try {
+            val manifestBytes = remoteSource.fetch(MANIFEST_FILE)
+            val manifest = JSONObject(manifestBytes.toString(Charsets.UTF_8))
+            require(manifest.getInt("schemaVersion") == 1) {
+                "Desteklenmeyen uzaktaki içerik manifesti"
+            }
+            val advertisedContentHash = manifest.getString("contentSha256")
+            val advertisedWorkflowHash = manifest.getString("workflowSha256")
+            require(isSha256(advertisedContentHash) && isSha256(advertisedWorkflowHash)) {
+                "Uzak içerik imzaları geçersiz"
+            }
+
+            if (fallback != null &&
+                advertisedContentHash == fallback.bundle.contentSha256 &&
+                advertisedWorkflowHash == fallback.bundle.workflowSha256
+            ) {
+                // Validate the new manifest against the already verified payload too.
+                val verified = decode(
+                    fallback.files.lessons,
+                    fallback.files.workflow,
+                    manifestBytes
+                )
+                val current = Candidate(
+                    ContentFiles(fallback.files.lessons, fallback.files.workflow, manifestBytes),
+                    verified,
+                    ContentOrigin.REMOTE
+                )
+                val hasOfflineCopy = fallback.origin == ContentOrigin.CACHE ||
+                    saveOfflineCopy(current.files)
+                return@withContext ContentLoadResult(
+                    verified,
+                    ContentOrigin.REMOTE,
+                    if (hasOfflineCopy) "İçerik güncel; çevrimdışı kopya hazır."
+                    else "İçerik güncel; APK içindeki yedek çevrimdışı kullanılabilir."
+                )
+            }
+
+            val (lessonsBytes, workflowBytes) = coroutineScope {
+                val lessons = async(Dispatchers.IO) { remoteSource.fetch(LESSONS_FILE) }
+                val workflow = async(Dispatchers.IO) { remoteSource.fetch(WORKFLOW_FILE) }
+                lessons.await() to workflow.await()
+            }
+            val bundle = decode(lessonsBytes, workflowBytes, manifestBytes)
+            val files = ContentFiles(lessonsBytes, workflowBytes, manifestBytes)
+            ContentLoadResult(
+                bundle,
+                ContentOrigin.REMOTE,
+                if (saveOfflineCopy(files)) "Yeni içerik indirildi, doğrulandı ve çevrimdışı saklandı."
+                else "Yeni içerik indirildi ve doğrulandı; cihaza çevrimdışı kaydedilemedi."
+            )
+        } catch (error: Exception) {
+            if (error is CancellationException) throw error
+            if (fallback != null) {
+                val localDescription = when (fallback.origin) {
+                    ContentOrigin.CACHE -> "son doğrulanmış çevrimdışı kopya"
+                    ContentOrigin.APK -> "APK içindeki başlangıç kopyası"
+                    ContentOrigin.REMOTE -> error("Remote fallback cannot be selected before fetch")
+                }
+                ContentLoadResult(
+                    fallback.bundle,
+                    fallback.origin,
+                    "İçerik güncellenemedi; $localDescription kullanılıyor."
+                )
+            } else {
+                throw IllegalStateException(
+                    "Uzak içerik alınamadı ve geçerli yerel içerik bulunamadı: " +
+                        (error.message ?: error::class.simpleName),
+                    error
+                )
+            }
+        }
+    }
+
+    private fun readCandidate(file: File, origin: ContentOrigin): Candidate? {
+        if (!file.isFile) return null
+        return runCatching {
+            val files = readCache(file)
+            Candidate(files, decode(files.lessons, files.workflow, files.manifest), origin)
+        }.getOrNull()
+    }
+
+    private fun readAssets(): Candidate? = runCatching {
+        val files = ContentFiles(
+            asset(LESSONS_FILE), asset(WORKFLOW_FILE), asset(MANIFEST_FILE)
+        )
+        Candidate(files, decode(files.lessons, files.workflow, files.manifest), ContentOrigin.APK)
+    }.getOrNull()
+
+    private fun asset(name: String): ByteArray =
+        appContext.assets.open("lesson-player/$name").use { it.readBytes() }
+
+    private fun writeCache(files: ContentFiles) {
+        val parent = cacheFile.parentFile ?: error("İçerik önbelleği yolu geçersiz")
+        require(parent.isDirectory || parent.mkdirs()) { "İçerik önbelleği oluşturulamadı" }
+        val temporary = File(parent, "${cacheFile.name}.tmp")
+        try {
+            FileOutputStream(temporary).use { output ->
+                DataOutputStream(output).use { data ->
+                    data.writeInt(CACHE_MAGIC)
+                    data.writeInt(CACHE_VERSION)
+                    data.writeSizedBytes(files.lessons)
+                    data.writeSizedBytes(files.workflow)
+                    data.writeSizedBytes(files.manifest)
+                    data.flush()
+                    output.fd.sync()
+                }
+            }
+            try {
+                Files.move(
+                    temporary.toPath(), cacheFile.toPath(),
+                    StandardCopyOption.ATOMIC_MOVE,
+                    StandardCopyOption.REPLACE_EXISTING
+                )
+            } catch (_: AtomicMoveNotSupportedException) {
+                Files.move(temporary.toPath(), cacheFile.toPath(),
+                    StandardCopyOption.REPLACE_EXISTING)
+            }
+        } finally {
+            if (temporary.exists()) temporary.delete()
+        }
+    }
+
+    private fun saveOfflineCopy(files: ContentFiles): Boolean =
+        runCatching { writeCache(files) }.isSuccess
+
+    private fun readCache(file: File): ContentFiles = DataInputStream(FileInputStream(file)).use { input ->
+        require(input.readInt() == CACHE_MAGIC && input.readInt() == CACHE_VERSION) {
+            "Bilinmeyen içerik önbelleği"
+        }
+        val files = ContentFiles(
+            input.readSizedBytes(), input.readSizedBytes(), input.readSizedBytes()
+        )
+        require(input.read() == -1) { "İçerik önbelleğinde fazladan veri var" }
+        files
+    }
+
+    private fun DataOutputStream.writeSizedBytes(bytes: ByteArray) {
+        require(bytes.isNotEmpty() && bytes.size <= MAX_FILE_BYTES) {
+            "İçerik dosyası boyutu sınır dışında"
+        }
+        writeInt(bytes.size)
+        write(bytes)
+    }
+
+    private fun DataInputStream.readSizedBytes(): ByteArray {
+        val size = readInt()
+        require(size in 1..MAX_FILE_BYTES) { "Önbellekte geçersiz içerik boyutu" }
+        return ByteArray(size).also(::readFully)
+    }
+
+    private data class ContentFiles(
+        val lessons: ByteArray,
+        val workflow: ByteArray,
+        val manifest: ByteArray
+    )
+
+    private data class Candidate(
+        val files: ContentFiles,
+        val bundle: LessonBundle,
+        val origin: ContentOrigin
+    )
+
+    private class HttpsContentSource(private val baseUrl: String) : ContentSource {
+        init {
+            require(baseUrl.startsWith("https://")) {
+                "İçerik adresi HTTPS olmalı"
+            }
+        }
+
+        override suspend fun fetch(fileName: String): ByteArray {
+            require(fileName in CONTENT_FILES) { "Bilinmeyen içerik dosyası" }
+            val connection = URL("${baseUrl.trimEnd('/')}/$fileName")
+                .openConnection() as? HttpsURLConnection
+                ?: error("İçerik adresi HTTPS bağlantısı açmadı")
+            try {
+                connection.connectTimeout = CONNECT_TIMEOUT_MS
+                connection.readTimeout = READ_TIMEOUT_MS
+                connection.requestMethod = "GET"
+                connection.useCaches = false
+                connection.setRequestProperty("Cache-Control", "no-cache")
+                connection.setRequestProperty("Pragma", "no-cache")
+                connection.setRequestProperty("Accept", "application/json")
+                connection.setRequestProperty("User-Agent", "OgretmenRehberi-LessonPlayer/1")
+                require(connection.responseCode == HttpURLConnection.HTTP_OK) {
+                    "İçerik sunucusu HTTP ${connection.responseCode} döndürdü"
+                }
+                require(connection.url.protocol == "https") {
+                    "Güvenli olmayan içerik yönlendirmesi reddedildi"
+                }
+                require(connection.contentLengthLong <= MAX_FILE_BYTES) {
+                    "İçerik dosyası boyut sınırını aşıyor"
+                }
+                return connection.inputStream.use { input ->
+                    val output = ByteArrayOutputStream()
+                    val buffer = ByteArray(DEFAULT_BUFFER_SIZE)
+                    while (true) {
+                        val count = input.read(buffer)
+                        if (count < 0) break
+                        require(output.size().toLong() + count <= MAX_FILE_BYTES) {
+                            "İçerik dosyası boyut sınırını aşıyor"
+                        }
+                        output.write(buffer, 0, count)
+                    }
+                    output.toByteArray()
+                }
+            } finally {
+                connection.disconnect()
+            }
+        }
     }
 
     companion object {
+        private const val LESSONS_FILE = "lessons.json"
+        private const val WORKFLOW_FILE = "teacher-workflow.json"
+        private const val MANIFEST_FILE = "content-manifest.json"
+        private val CONTENT_FILES = setOf(LESSONS_FILE, WORKFLOW_FILE, MANIFEST_FILE)
+        private const val MAX_FILE_BYTES = 8 * 1024 * 1024
+        private const val CONNECT_TIMEOUT_MS = 2_500
+        private const val READ_TIMEOUT_MS = 4_000
+        private const val CACHE_MAGIC = 0x4c504342 // LPCB
+        private const val CACHE_VERSION = 1
+
         fun sha256(bytes: ByteArray): String =
             MessageDigest.getInstance("SHA-256").digest(bytes).joinToString("") {
                 "%02x".format(it.toInt() and 0xff)
             }
+
+        private fun isSha256(value: String): Boolean =
+            value.matches(Regex("[0-9a-f]{64}"))
 
         /** Exposed for instrumented tamper/parity tests; validates before accepting data. */
         fun decode(lessonBytes: ByteArray, workflowBytes: ByteArray, manifestBytes: ByteArray): LessonBundle {
@@ -34,18 +297,24 @@ class ContentRepository(private val context: Context) {
             val lessons = (0 until lessonsArray.length()).map { parseLesson(lessonsArray.getJSONObject(it)) }
             val workflow = parseWorkflow(JSONObject(workflowBytes.toString(Charsets.UTF_8)))
             val counts = manifest.getJSONObject("counts")
-            require(counts.getInt("themes") == 4 && counts.getInt("lessons") == 48 &&
-                counts.getInt("steps") == 914) { "Unsupported lesson dataset size" }
-            require(lessons.size == counts.getInt("lessons") &&
-                lessons.sumOf { it.steps.size } == counts.getInt("steps")) { "Lesson coverage mismatch" }
+            val declaredLessons = counts.getInt("lessons")
+            val declaredSteps = counts.getInt("steps")
+            val declaredThemes = counts.getInt("themes")
+            require(declaredLessons > 0 && declaredSteps > 0 && declaredThemes > 0) {
+                "Invalid lesson manifest counts"
+            }
+            require(lessons.size == declaredLessons &&
+                lessons.sumOf { it.steps.size } == declaredSteps) { "Lesson coverage mismatch" }
             require(lessons.map { it.lessonId }.distinct().size == lessons.size &&
                 lessons.map { it.lessonSlug }.distinct().size == lessons.size) { "Duplicate lesson identity" }
-            val themes = manifest.getJSONObject("themes")
-            require(lessons.groupingBy { it.themeId }.eachCount() ==
-                mapOf("TEMA_01" to themes.getInt("TEMA_01"),
-                    "TEMA_02" to themes.getInt("TEMA_02"),
-                    "TEMA_03" to themes.getInt("TEMA_03"),
-                    "TEMA_04" to themes.getInt("TEMA_04"))) { "Theme coverage mismatch" }
+            val themeCounts = manifest.getJSONObject("themes")
+            val declaredThemeCounts = themeCounts.keys().asSequence().associateWith { themeId ->
+                themeCounts.getInt(themeId).also { require(it > 0) { "Invalid theme count: $themeId" } }
+            }
+            require(declaredThemeCounts.size == declaredThemes &&
+                lessons.groupingBy { it.themeId }.eachCount() == declaredThemeCounts) {
+                "Theme coverage mismatch"
+            }
             val byLesson = manifest.getJSONArray("lessons")
             require(byLesson.length() == lessons.size) { "Manifest lesson count mismatch" }
             val lessonDigests = buildMap {
@@ -55,15 +324,13 @@ class ContentRepository(private val context: Context) {
                         entry.getString("themeId") == lesson.themeId &&
                         entry.getInt("steps") == lesson.steps.size) { "Manifest lesson mismatch" }
                     val digest = entry.getString("sha256")
-                    require(digest.matches(Regex("[0-9a-f]{64}"))) {
-                        "Invalid per-lesson digest: ${lesson.lessonId}"
-                    }
+                    require(isSha256(digest)) { "Invalid per-lesson digest: ${lesson.lessonId}" }
                     require(put(lesson.lessonId, digest) == null) {
                         "Duplicate per-lesson digest identity: ${lesson.lessonId}"
                     }
                 }
             }
-            require(workflow.themes.size == counts.getInt("themes") &&
+            require(workflow.themes.size == declaredThemes &&
                 workflow.themes.sumOf { it.tasks.size } == counts.getInt("teacherWorkshops") &&
                 workflow.annualItems.size == counts.getInt("annualItems")) { "Workflow coverage mismatch" }
             require(workflow.themes.map { it.id }.toSet() == lessons.map { it.themeId }.toSet()) {
@@ -83,7 +350,7 @@ class ContentRepository(private val context: Context) {
             require(coverage.getInt("steps") == steps.size) { "Step count mismatch: $id" }
             val range = value.getJSONObject("required_source_range")
             val theme = value.getString("theme_id")
-            require(theme.matches(Regex("TEMA_0[1-4]"))) { "Invalid theme: $id" }
+            require(theme.matches(Regex("TEMA_\\d{2,}"))) { "Invalid theme: $id" }
             return LessonData(
                 schemaVersion = value.getString("schema_version"),
                 themeId = theme,

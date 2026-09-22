@@ -9,6 +9,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const webRoot = path.resolve(here, "..");
 const androidRoot = path.resolve(webRoot, "../lesson-player-android");
 const assets = path.join(androidRoot, "app/src/main/assets/lesson-player");
+const published = path.join(androidRoot, "remote-content");
 const generated = path.join(webRoot, "src/generated/lessons.json");
 const workflowSource = path.join(webRoot, "src/teacher-workflow.json");
 const checkOnly = process.argv.includes("--check");
@@ -45,7 +46,8 @@ const lessons = withoutVolatileBuildTime(JSON.parse(fs.readFileSync(generated, "
 const workflow = JSON.parse(fs.readFileSync(workflowSource, "utf8"));
 const lessonBytes = stableBytes(lessons);
 const workflowBytes = fs.readFileSync(workflowSource);
-const countByTheme = Object.fromEntries(["TEMA_01", "TEMA_02", "TEMA_03", "TEMA_04"]
+const themeIds = [...new Set(lessons.map(lesson => lesson.theme_id))].sort();
+const countByTheme = Object.fromEntries(themeIds
   .map(id => [id, lessons.filter(lesson => lesson.theme_id === id).length]));
 const manifest = {
   schemaVersion: 1,
@@ -53,7 +55,7 @@ const manifest = {
   contentSha256: sha256(lessonBytes),
   workflowSha256: sha256(workflowBytes),
   counts: {
-    themes: 4,
+    themes: themeIds.length,
     lessons: lessons.length,
     steps: lessons.reduce((total, lesson) => total + lesson.steps.length, 0),
     teacherWorkshops: workflow.themes.reduce((total, theme) => total + theme.tasks.length, 0),
@@ -67,11 +69,8 @@ const manifest = {
     sha256: sha256(stableBytes(lesson))
   }))
 };
-assert.deepEqual(manifest.themes, { TEMA_01: 7, TEMA_02: 9, TEMA_03: 18, TEMA_04: 14 });
-assert.equal(manifest.counts.lessons, 48);
-assert.equal(manifest.counts.steps, 914);
-assert.equal(manifest.counts.teacherWorkshops, 8);
-assert.equal(manifest.counts.annualItems, 5);
+assert.ok(manifest.counts.lessons > 0);
+assert.ok(manifest.counts.steps > 0);
 const outputs = {
   "lessons.json": lessonBytes,
   "teacher-workflow.json": workflowBytes,
@@ -81,11 +80,15 @@ if (checkOnly) {
   for (const [name, bytes] of Object.entries(outputs)) {
     assert.deepEqual(fs.readFileSync(path.join(assets, name)), Buffer.from(bytes),
       `Stale/missing Android asset: ${name}`);
+    assert.deepEqual(fs.readFileSync(path.join(published, name)), Buffer.from(bytes),
+      `Stale/missing published content: ${name}`);
   }
 } else {
   fs.mkdirSync(assets, { recursive: true });
+  fs.mkdirSync(published, { recursive: true });
   for (const [name, bytes] of Object.entries(outputs)) {
     fs.writeFileSync(path.join(assets, name), bytes);
+    fs.writeFileSync(path.join(published, name), bytes);
   }
 }
-console.log(`Android lesson assets ${checkOnly ? "verified" : "generated"}: ${manifest.counts.lessons} lessons / ${manifest.counts.steps} steps / ${manifest.contentSha256}`);
+console.log(`Android content ${checkOnly ? "verified" : "generated"}: ${manifest.counts.lessons} lessons / ${manifest.counts.steps} steps / ${manifest.contentSha256}`);

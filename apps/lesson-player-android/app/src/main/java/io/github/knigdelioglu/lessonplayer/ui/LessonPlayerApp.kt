@@ -61,6 +61,7 @@ fun LessonPlayerApp() {
     LessonTheme {
         val appContext = LocalContext.current.applicationContext
         var bundle by remember { mutableStateOf<LessonBundle?>(null) }
+        var contentStatus by remember { mutableStateOf<String?>(null) }
         var loadError by remember { mutableStateOf<String?>(null) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
         val sessionViewModel: LessonSessionViewModel = viewModel()
@@ -85,7 +86,9 @@ fun LessonPlayerApp() {
 
         LaunchedEffect(appContext) {
             try {
-                bundle = ContentRepository(appContext).load()
+                val loaded = ContentRepository(appContext).load()
+                bundle = loaded.bundle
+                contentStatus = loaded.statusMessage
             } catch (error: Exception) {
                 loadError = error.message ?: error::class.simpleName ?: "Bilinmeyen hata"
             }
@@ -93,8 +96,8 @@ fun LessonPlayerApp() {
         LaunchedEffect(bundle?.contentSha256) {
             bundle?.let(sessionViewModel::initialize)
         }
-        LaunchedEffect(bundle?.workflow?.schemaVersion) {
-            bundle?.workflow?.let(teacherPlanViewModel::initialize)
+        LaunchedEffect(bundle?.workflowSha256) {
+            bundle?.let { teacherPlanViewModel.initialize(it.workflow, it.workflowSha256) }
         }
         BackHandler(
             enabled = readySession?.session?.presentationMode == true ||
@@ -145,6 +148,7 @@ fun LessonPlayerApp() {
             readySession != null -> LessonPlayerShell(
                 currentScreen = currentScreen,
                 bundle = bundle!!,
+                contentStatus = contentStatus.orEmpty(),
                 session = readySession.session,
                 navigate = { currentScreen = it },
                 selectLesson = {
@@ -180,6 +184,7 @@ fun LessonPlayerApp() {
 internal fun LessonPlayerShell(
     currentScreen: AppScreen,
     bundle: LessonBundle,
+    contentStatus: String,
     session: LessonSession,
     navigate: (AppScreen) -> Unit,
     selectLesson: (String) -> Unit,
@@ -311,6 +316,7 @@ internal fun LessonPlayerShell(
                                 PhaseOneScreen(
                                     currentScreen,
                                     bundle,
+                                    contentStatus,
                                     session,
                                     selectLesson,
                                     { navigate(AppScreen.LESSON) },

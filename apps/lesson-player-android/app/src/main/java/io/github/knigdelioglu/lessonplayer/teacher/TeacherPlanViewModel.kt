@@ -60,18 +60,18 @@ class TeacherPlanViewModel(application: Application) : AndroidViewModel(applicat
     private val mutableState = MutableStateFlow<TeacherPlanUiState>(
         TeacherPlanUiState.Loading
     )
-    private var initializedSchema: String? = null
+    private var initializedContentDigest: String? = null
     private var allowed: Map<TeacherTrack, Set<String>> = emptyMap()
 
     val state: StateFlow<TeacherPlanUiState> = mutableState.asStateFlow()
 
-    fun initialize(workflow: TeacherWorkflow) {
-        if (initializedSchema == workflow.schemaVersion &&
+    fun initialize(workflow: TeacherWorkflow, contentDigest: String) {
+        if (initializedContentDigest == contentDigest &&
             mutableState.value !is TeacherPlanUiState.Error
         ) return
 
         allowed = allowedMarkIds(workflow)
-        initializedSchema = workflow.schemaVersion
+        initializedContentDigest = contentDigest
         mutableState.value = TeacherPlanUiState.Loading
         viewModelScope.launch {
             mutex.withLock {
@@ -87,7 +87,7 @@ class TeacherPlanViewModel(application: Application) : AndroidViewModel(applicat
                         )
                     )
                 } catch (error: Exception) {
-                    initializedSchema = null
+                    initializedContentDigest = null
                     mutableState.value = TeacherPlanUiState.Error(
                         "Öğretmen planı yüklenemedi: ${error.message}"
                     )

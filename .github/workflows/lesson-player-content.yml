@@ -1,0 +1,46 @@
+name: Publish Lesson Player content
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "apps/lesson-player/scripts/**"
+      - "apps/lesson-player/src/teacher-workflow.json"
+      - "data/grade-11/presentation/**"
+      - "data/grade-11/source/teacher-book/**"
+      - ".github/workflows/lesson-player-content.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lesson-player-content-main
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Build and validate the published bundle
+        run: node apps/lesson-player/scripts/package-android-data.mjs
+      - name: Publish changed content files
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/lesson-player-android/remote-content
+          if git diff --cached --quiet; then
+            echo "Published bundle already matches canonical content."
+          else
+            git commit -m "Publish Lesson Player content bundle"
+            git push origin HEAD:main
+          fi

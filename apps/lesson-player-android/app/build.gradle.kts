@@ -5,6 +5,10 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
+val lessonContentBaseUrl = providers.gradleProperty("lessonContentBaseUrl")
+    .orElse("https://raw.githubusercontent.com/knigdelioglu/ogretmenrehberi/main/apps/lesson-player-android/remote-content")
+    .get()
+
 android {
     namespace = "io.github.knigdelioglu.lessonplayer"
     compileSdk = 36
@@ -16,6 +20,7 @@ android {
         versionCode = 1
         versionName = "0.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "LESSON_CONTENT_BASE_URL", "\"$lessonContentBaseUrl\"")
     }
 
     buildTypes {
@@ -35,6 +40,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

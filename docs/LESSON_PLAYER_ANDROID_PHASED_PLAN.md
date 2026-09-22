@@ -1,15 +1,16 @@
 # Lesson Player Android — Fazlı uygulama planı
 
-**Statü:** Faz 0 dokümantasyonu tamamlandı; Faz 1+ uygulama kodu henüz başlamadı. **Bu PR APK/uygulama kodu içermez**. Önceki Tauri Android planının yerine Kotlin + Jetpack Compose seçilmiştir.
+**Statü:** Bu belge başlangıç faz planıdır; native Android uygulaması ve uzaktan içerik güncelleme yolu artık kodda uygulanmıştır. Güncel araçlar ve içerik yayımlama adımları için [Android README](../apps/lesson-player-android/README.md) esas alınır. Önceki Tauri Android planının yerine Kotlin + Jetpack Compose seçilmiştir.
 
 **Başlangıç:** `knigdelioglu/ogretmenrehberi` main `65459a0`, `apps/lesson-player`.
-**Platform sözleşmesi:** **minimum Android 16 = API 36**. İlk Gradle yapılandırması:
-`minSdk = 36`, `targetSdk = 36`, `compileSdk = 36`; Kotlin/AGP/Compose sürümleri P1'de birlikte uyumlu kararlı sürümlerle sabitlenecek.
+**Platform sözleşmesi:** **minimum Android 16 = API 36**. Gradle yapılandırması:
+`minSdk = 36`, `targetSdk = 36`, `compileSdk = 36`; Kotlin/AGP/Compose sürümleri `apps/lesson-player-android/gradle/libs.versions.toml` içinde sabitlenir.
 Android 15 ve altı cihazlar kapsam dışıdır; `minSdk` düşürülmez.
 **Gerçek cihaz:** Galaxy Tab A11 Plus SM-X230, Android 16; dikey, yatay,
 bölünmüş pencere, sistem yazı ölçeği ve klavye kontrolü.
-**Ürün hedefi:** Yerel, çevrimdışı, görsel olarak özgün ve sınıfta kararlı 11. sınıf
-öğretmen ders oynatıcısı; Pardus/Pi implementasyonu sonraki projedir.
+**Ürün hedefi:** Uzaktan güncel içerik alan, çevrimdışı da kullanılabilen, görsel
+olarak özgün ve sınıfta kararlı 11. sınıf öğretmen ders oynatıcısı; Pardus/Pi
+implementasyonu sonraki projedir.
 
 ## Değiştirilmeyecek doğrular
 
@@ -30,8 +31,8 @@ bölünmüş pencere, sistem yazı ölçeği ve klavye kontrolü.
   veri geldiği ölçüde destekler.
 - Tablet internetsiz ders anlatabilir. QR/video veya dış rubrik kaynakları
   çevrimdışı varlık gibi sunulmaz; `source_limited` uyarısı korunur.
-- **Öğrenci/puan verisi, Pi, WebSocket, Pardus istemcisi, hesap/bulut
-  senkronizasyonu ve kitap PDF'sini uygulamaya gömme bu planın dışındadır.**
+- **Öğrenci/puan verisi, Pi, WebSocket, Pardus istemcisi, öğretmen hesabı/kişisel
+  verilerin bulut senkronizasyonu ve kitap PDF'sini uygulamaya gömme bu planın dışındadır.**
   Üç öğretmen takip hattı, öğrenci bazlı teslim/puan anlamına gelmez.
 
 ## Nihai modül ve veri sınırları
@@ -62,10 +63,10 @@ olarak gönderir; repository kalıcı kaydı yönetir.
 
 ```text
 source-index + answer-bank + flow JSON
-           ↓ existing validation/build
-   lessons.json + teacher-workflow.json
-           ↓ manifest: schema + stable content digest
-       APK assets (immutable)
+           ↓ existing validation/build + publisher workflow
+   lessons.json + teacher-workflow.json + manifest
+           ↓ GitHub raw content bundle / HTTPS refresh
+      validated device cache ← APK fallback
            ↓ Kotlin content repository
        LessonEngine (pure)
            ↓ StateFlow / ViewModel
@@ -109,11 +110,13 @@ metadata API 36 altını kabul etmez; web CI bozulmaz.
 
 **İş:** var olan `npm run data/test:data/test:runtime` kapısını kullan;
 `lessons.json`, `teacher-workflow.json` ve sürümlü manifest'i Android
-assets'e deterministik kopyala. Kotlin parse + referans/kimlik/alan
+assets'e ve uzaktan yayımlanacak pakete deterministik üret. Kotlin HTTPS
+yenileme/önbellek akışı ile parse + referans/kimlik/alan
 validator; UTF-8 Türkçe, null, uzun metin, answer_sections list/map
 tipleri, `source_limited` işaretleri. TS ve Kotlin tarafının aynı
 fixture'lar üzerinde şema ve semantik doğrulaması.
-**Çıktı:** read-only Android `ContentRepository`, tema/ders kataloğu.
+**Çıktı:** HTTPS üzerinden içerik denetleyen, doğrulanmış paketi çevrimdışı
+saklayan Android `ContentRepository` ve tema/ders kataloğu.
 **Kapı:** dört temadaki 48 dersin kimlik/adım/sayfa/reveal sayımları
 kanonik çıktı ile eşleşir; eksik ya da bayat assets build'i durdurur;
 uçak modunda katalog ve içerik okunur.

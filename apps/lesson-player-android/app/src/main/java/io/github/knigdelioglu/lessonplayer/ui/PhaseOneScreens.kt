@@ -53,6 +53,7 @@ import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 internal fun PhaseOneScreen(
     screen: AppScreen,
     bundle: LessonBundle,
+    contentStatus: String,
     session: LessonSession,
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit,
@@ -66,7 +67,9 @@ internal fun PhaseOneScreen(
     beginImport: (String) -> Unit
 ) {
     when (screen) {
-        AppScreen.LIBRARY -> LibraryScreen(bundle, session, selectLesson, navigateToCurrent)
+        AppScreen.LIBRARY -> LibraryScreen(
+            bundle, contentStatus, session, selectLesson, navigateToCurrent
+        )
         AppScreen.LESSON -> SessionLessonScreen(
             bundle.byId.getValue(session.lessonId),
             session,
@@ -220,6 +223,7 @@ private fun SectionCard(
 @Composable
 internal fun LibraryScreen(
     bundle: LessonBundle,
+    contentStatus: String,
     session: LessonSession,
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit
@@ -250,9 +254,14 @@ internal fun LibraryScreen(
                 StatusTag()
                 Text("Ders, elinin altında.", style = MaterialTheme.typography.headlineLarge)
                 Text(
-                    "${bundle.lessons.size} ders · ${bundle.lessons.sumOf { it.steps.size }} adım · internet gerekmez",
+                    "${bundle.lessons.size} ders · ${bundle.lessons.sumOf { it.steps.size }} adım · çevrimdışı kullanılabilir",
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Text(
+                    contentStatus,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.secondary
                 )
             }
         }

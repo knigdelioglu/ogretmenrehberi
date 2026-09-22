@@ -3,6 +3,7 @@ package io.github.knigdelioglu.lessonplayer
 import androidx.room.Room
 import androidx.test.platform.app.InstrumentationRegistry
 import io.github.knigdelioglu.lessonplayer.content.ContentRepository
+import io.github.knigdelioglu.lessonplayer.content.ContentSource
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.StepOverride
@@ -15,13 +16,17 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.io.IOException
 
 class LessonStorageTest {
     private val context get() = InstrumentationRegistry.getInstrumentation().targetContext
+    private fun offlineRepository() = ContentRepository(
+        context, remoteSource = ContentSource { throw IOException("offline test") }
+    )
 
     @Test
     fun progressAndCustomEditsSurviveRestartByStableStepId() = runBlocking {
-        val bundle = ContentRepository(context).load()
+        val bundle = offlineRepository().load().bundle
         val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
         val database = Room.inMemoryDatabaseBuilder(context, LessonDatabase::class.java).build()
         try {
@@ -67,7 +72,7 @@ class LessonStorageTest {
 
     @Test
     fun staleContentArchivesAllOldStateBeforeCanonicalFallback() = runBlocking {
-        val bundle = ContentRepository(context).load()
+        val bundle = offlineRepository().load().bundle
         val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
         val database = Room.inMemoryDatabaseBuilder(context, LessonDatabase::class.java).build()
         try {
@@ -94,7 +99,7 @@ class LessonStorageTest {
 
     @Test
     fun changesInAnotherLessonDoNotArchiveThisLessonProgress() = runBlocking {
-        val bundle = ContentRepository(context).load()
+        val bundle = offlineRepository().load().bundle
         val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
         val otherLesson = bundle.lessons.first { it.lessonId != lesson.lessonId }
         val database = Room.inMemoryDatabaseBuilder(context, LessonDatabase::class.java).build()
@@ -120,7 +125,7 @@ class LessonStorageTest {
 
     @Test
     fun malformedOrderIsArchivedAndTeacherMarksAreIndependent() = runBlocking {
-        val bundle = ContentRepository(context).load()
+        val bundle = offlineRepository().load().bundle
         val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
         val database = Room.inMemoryDatabaseBuilder(context, LessonDatabase::class.java).build()
         try {
