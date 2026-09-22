@@ -96,13 +96,15 @@
       "question_no": "Süreci Değerlendirebilme",
       "source_locator": "basılı s.262 / PDF s.263 — Süreci Değerlendirebilme",
       "prompt_summary": "Oyundaki gündelik insan ilişkilerini tartışıp metni beğeni ölçütleriyle değerlendirme",
-      "answer": "Örnek değerlendirme: Oyunda güven ve sorumluluk ilişkisi, padişahın Sinan’a önemli bir yapı görevi vermesi ve Sinan’ın bunu yerine getirmesiyle; mesleki dayanışma, Lütfü Paşa’nın yeteneğini fark edip onu önermesiyle görünür. Sinan’ın önceki mimarlara saygı duyması da rekabet içinde nezaketin mümkün olduğunu gösterir. Benim için sahne yönergeleri ve müzik, bu ilişkileri etkileyici kılan başlıca unsurlardır.",
+      "answer": "Bu değerlendirme sınıftaki beyin fırtınası ve öğrencinin kendi beğeni ölçütleriyle tamamlanmalıdır. Rehber günlük insan ilişkilerine ilişkin metin kanıtlarını gösterebilir; ancak hangi unsurun öğrenci için etkileyici olduğunu önceden belirlemez.",
       "answer_sections": {
-        "Etkileyicilik": "Kitaptaki örnekte olduğu gibi müzik ve ışık geçişlerini belirten sahne yönergeleri olayların duygusunu güçlendirir.",
-        "İnsan ilişkileri": "Görev verme ve güvenme, yeteneği fark etme, sözüne bağlı kalma ve önceki ustalara saygı gösterme.",
-        "Örnek ölçüt": "Öğrenci seçtiği ölçüte (ör. karakter inandırıcılığı, tarihî atmosfer, sahneleme) metinden örnek göstermelidir."
+        "gunluk_insan_iliskileri_icin_olasi_kanitlar": "Görev verme ve güvenme, yeteneğin fark edilmesi, sözüne bağlı kalma, başkasının emeğine saygı gösterme gibi ilişkiler metinden kanıtlarla tartışılabilir.",
+        "benim_olcutum": "[...]",
+        "metinden_ornegim": "[...]",
+        "begendim_begenmedim": "[...]",
+        "gerekcem": "[...]"
       },
-      "guidance": "Beğeni kişiseldir. Farklı değerlendirmeler, metinden uygun bir örnekle gerekçelendirildiğinde kabul edilir."
+      "guidance": "Öğrenci adına 'benim için müzik ve ışık en etkileyici' gibi bir beğeni yazmayın. Kitapta verilen örnek ölçüt de öğrencinin kendi tablosunu doldurması için modeldir; tek doğru değerlendirme değildir."
     },
     {
       "question_id": "T4-P262-PERF02",
@@ -120,8 +122,13 @@
       "question_no": "Sıra Sizde 1",
       "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 1",
       "prompt_summary": "Canlandırılacak karakteri seçip gerekçelendirme",
-      "answer": "Örnek cevap: Mimar Sinan’ı canlandırmak isterdim; çünkü meraklı oluşu, gözlemlediklerini çalışarak geliştirmesi ve başarıyı tek başına sahiplenmemesi sahnede farklı duygu ve tutumları göstermek için olanak sağlar.",
-      "guidance": "Başka bir karakter seçilebilir. Gerekçe, oyundaki söz veya davranışla ilişkilendirilmelidir."
+      "answer": "Canlandırılacak karakter öğrencinin kişisel tercihidir. Cevap, seçilen karakterin adını ve bu tercihi destekleyen metindeki bir söz, davranış veya özellik kanıtını içermelidir.",
+      "guidance": "Mimar Sinan veya başka bir karakteri öğrenci adına seçmeyin.",
+      "answer_sections": {
+        "canlandirmak_istedigim_karakter": "[...]",
+        "metindeki_kanit": "[...]",
+        "secme_gerekcem": "[...]"
+      }
     },
     {
       "question_id": "T4-P262-PERFQ02",
@@ -130,9 +137,16 @@
       "question_no": "Sıra Sizde 2",
       "source_locator": "basılı s.262 / PDF s.263 — Sıra Sizde soru 2",
       "prompt_summary": "Seçilen tiyatro kişisinin günlük yaşamda karşılaşabileceği duruma uygun kısa senaryo yazma",
-      "answer": "Örnek senaryo: Bir öğrenci ekibi okulun ortak kullanım alanı için tasarım hazırlamaktadır. İlk taslak güvenli ve kullanışlı değildir. Sinan’ı örnek alan ekip üyesi, alanı yeniden ölçer, farklı tasarımları inceler ve arkadaşlarının önerilerini dinleyerek planı düzeltir. Sonunda grup çalışmayı birlikte tamamlayıp herkesin kullanabileceği bir çözüm sunar.",
-      "guidance": "Senaryo kurmacadır; karakterin metinde görülen niteliğini (ör. gözlem, sabır, sorumluluk) günlük bir duruma taşıması yeterlidir.",
-      "explanation": "Bu, tarihî Sinan’ın yaşadığı bir olay değildir; onun oyunda görülen gözlem, sabır ve sorumluluk özelliklerini güncel bir duruma taşıyan hayalî bir senaryodur."
+      "answer": "Öğrenci, seçtiği kişinin metinde görülen bir özelliğini günlük hayatta karşılaşılabilecek yeni bir duruma taşıyan kısa ve tutarlı bir senaryo kurmalıdır. Hazır senaryo yerine yapı iskelesi verilmelidir.",
+      "guidance": "Senaryo kurmaca olabilir; fakat öğrenci adına tam bir olay örgüsü üretip teslim edilecek cevap gibi sunmayın. Yeni davranış, karakterin metinde görülen niteliğiyle çelişmemelidir.",
+      "explanation": "Bu, tarihî Sinan’ın yaşadığı bir olay değildir; onun oyunda görülen gözlem, sabır ve sorumluluk özelliklerini güncel bir duruma taşıyan hayalî bir senaryodur.",
+      "answer_sections": {
+        "sectigim_kisi": "[...]",
+        "metinde_gorulen_ozellik": "[...]",
+        "gunluk_hayat_durumu": "[...]",
+        "karakter_bu_durumda_nasil_davranirdi": "[...]",
+        "metinle_tutarlilik_kaniti": "[...]"
+      }
     }
   ]
 }
