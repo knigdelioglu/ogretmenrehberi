@@ -43,22 +43,23 @@
       "printed_page": 76,
       "question_no": "3",
       "prompt_summary": "E-posta ile mektubun benzer ve farklı yönlerini karşılaştırma",
-      "answer": "Geleneksel mektup ile çağdaş e-posta; temel iletişim amacı bakımından kardeş türler olmakla birlikte iletim kanalı, hız, çok modluluk ve biçimsel kurallar yönünden belirgin farklılıklara sahiptir.",
+      "answer": "Mektup ile e-posta aynı temel iletişim ihtiyacını karşılayabilir; ancak iletim kanalı, hız, teknik alanlar ve ek içerik kullanımı bakımından farklılaşır. Samimiyet, resmiyet ve kalıcılık ise yalnız türün adına değil, amaç, muhatap ve kullanım biçimine bağlıdır.",
       "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 3 (T Diyagramı)",
       "answer_sections": {
         "benzerlikler": [
-          "Temel İletişim Amacı: Her iki tür de belirli bir göndericiden belirli bir alıcıya duygu, düşünce, haber, bilgi veya talep iletmek amacıyla kaleme alınır.",
-          "Metin Mimarisi: Her iki türde de hitapla başlama, konuyu giriş-gelişme-sonuç mantığıyla sunma, nezaketle bitirme ve gönderenin kimliğini belirtme esastır.",
-          "Alıcıya Göre Üslup Belirleme: Hem mektupta hem e-postada dil ve anlatım; muhatabın resmî makam, akraba veya yakın bir arkadaş olmasına göre özenle ayarlanır.",
-          "Yazılı İletişim Kuralları: Dil bilgisi, bağdaşıklık, kelime seçimi, yazım ve noktalama kurallarına riayet her iki türün de anlaşılırlığı için zorunludur."
+          "Her ikisi de bir göndericiden alıcıya duygu, düşünce, haber, bilgi veya talep iletmek için kullanılabilir.",
+          "Hitap, ana ileti, açıklama/gerekçelendirme ve kapanış gibi işlevsel bölümler her iki türde de bulunabilir.",
+          "Dil ve üslup; muhatap, amaç ve bağlama göre samimi, resmî veya yarı resmî olabilir.",
+          "Yazım, noktalama, açıklık ve bağdaşıklık iki türde de anlaşılırlığı destekler."
         ],
         "farkliliklar": [
-          "İletim Hızı ve Taşıyıcı Ortam: Mektup kâğıt, zarf ve posta idaresi aracılığıyla günler veya haftalar içinde iletilirken; e-posta dijital sunucular üzerinden saniyeler içinde muhatabına ulaşır.",
-          "Biçimsel Alanlar ve Konu Satırı: E-postada gönderici, alıcı, bilgi (CC/BCC) ve metnin özünü veren 'Konu' satırı gibi standart teknik kutular bulunur; geleneksel mektupta ise tarih sağ üstte yer alır ve ayrıca konu satırı açılmaz.",
-          "Çok Modlu Ek Belgeler (Multimodalite): E-postaya tek tıkla ses, video, yüksek çözünürlüklü belge veya bağlantı linkleri iliştirilebilirken; mektupta yalnızca zarf içine sığabilecek kâğıt üzeri fotoğraflar veya kartpostallar gönderilebilir.",
-          "Maddi ve Duygusal İz (Kalıcılık): Mektup gönderenin el yazısını, kâğıdın kokusunu, pulu ve mürekkebi barındıran fiziksel ve samimi bir hatıra nesnesidir; e-posta ise standart dijital fontlarla oluşturulan, pratik, aranabilir ve arşivlenebilir bir metindir."
+          "İletim kanalı ve hız: Geleneksel mektup fiziksel posta yoluyla, e-posta ise dijital ağ üzerinden iletilir; e-posta çoğu durumda daha hızlı ulaşır.",
+          "Teknik alanlar: E-postada alıcı, konu, CC/BCC ve ek gibi ayrı teknik alanlar bulunabilir; geleneksel mektupta yerleşim farklıdır.",
+          "Ek içerikler: E-postaya dosya, görsel, ses, video veya bağlantı eklemek kolaydır; mektuba da fotoğraf, belge veya başka fiziksel ekler konabilir.",
+          "Kalıcılık ve maddi iz: Mektup el yazısı, kâğıt, zarf gibi fiziksel izler taşıyabilir; e-posta ise kopyalanabilir, aranabilir ve yedeklenebilir. Her iki biçimin de korunması uygun arşivleme koşullarına bağlıdır."
         ]
-      }
+      },
+      "guidance": "“Mektup samimidir, e-posta resmîdir” veya “mektup kalıcıdır, e-posta geçicidir” gibi otomatik eşleştirmelerden kaçının. Öğrenciye amaç, muhatap ve saklama koşullarını da düşündürün."
     },
     {
       "question_id": "T1-P76-Q04",
@@ -88,25 +89,26 @@
       "printed_page": 76,
       "question_no": "5-9",
       "prompt_summary": "E-posta içerik taslağı, dil işlevleri, ekler ve alanların düzenlenmesi",
-      "answer": "E-posta içerik taslağı; belirlenen amaç doğrultusunda dil işlevleri, söz varlığı, ek belgeler ve resmî e-posta alanlarının uyumu gözetilerek şu şekilde düzenlenir:",
+      "answer": "Aşağıdaki içerik, okul kütüphanesiyle ilgili resmî e-posta için örnek bir taslaktır. Adres, kişi, saat, anket veya ek belge gibi ayrıntılar yalnız gerçekten mevcutsa kullanılmalı; bulunmayan bilgi kanıt gibi uydurulmamalıdır.",
       "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme basamak 5-9",
       "answer_sections": {
-        "alici": "Okul Müdürlüğü (resmi.posta@okul.k12.tr)",
-        "konu": "Öğrenci Kütüphanesinin Çalışma Saatlerinin Uzatılması Talebi hk.",
+        "alici": "[Okulun / kurumun gerçek e-posta adresi]",
+        "konu": "Kütüphane Kullanım Süresinin Değerlendirilmesi Talebi",
         "dil_islevleri": [
-          "Rica / İsteme İşlevi: '...talebinin uygun görülüp onaylanmasını saygılarımla arz ederim.'",
-          "Gerekçelendirme İşlevi: 'Okul çıkışında toplu taşıma sefer aralıklarının uzun olması ve ev ortamında sessiz çalışma imkânı bulamayan öğrencilerimiz bulunması sebebiyle...'",
-          "Koşul İşlevi: 'Haftanın her günü mümkün olmadığı takdirde en azından salı ve perşembe günleri deneme süreci başlatılırsa...'",
-          "Karşılaştırma İşlevi: 'Mevcut kapanış saati olan 16.00 ile talep edilen 17.15 arasındaki ek süre, öğrencilerin günlük araştırma verimliliğini belirgin biçimde artıracaktır.'"
+          "Rica / İsteme: “Kütüphanenin ders bitiminden sonra belirli günlerde daha uzun süre açık tutulması talebimin değerlendirilmesini arz ederim.”",
+          "Gerekçelendirme: “Ders çıkışından sonra araştırma ve çalışma yapmak isteyen öğrencilerin kütüphaneden daha uzun süre yararlanabilmesi bu talebin gerekçesidir.”",
+          "Koşul / Alternatif: “Her gün uygulanması mümkün değilse uygun görülen günlerde deneme uygulaması yapılabilir.”",
+          "Karşılaştırma: Mevcut ve önerilen uygulama ancak gerçek saatler biliniyorsa somut saatlerle karşılaştırılmalıdır."
         ],
-        "soz_varligi_ve_ifade": "Metinde 'akademik verim', 'kültürel iklim', 'zaman yönetimi', 'imkân eşitliği' gibi kavramlar kullanılarak resmiyet ve ikna gücü desteklenir.",
+        "soz_varligi_ve_ifade": "Açık, ölçülü ve resmî bir dil kullanılmalı; kanıtlanmamış “öğrencilerin çoğu istiyor”, “başarıyı artıracaktır” gibi ifadeler veri olmadan kesin hüküm olarak yazılmamalıdır.",
         "ekler": [
-          "Kutuphane_Ihtiyac_Talebi_Ogrenci_Imza_Listesi.pdf (Gerekçeyi belgeleyen liste)",
-          "Haftalik_Kutuphane_Nobet_Onerisi_Cizelgesi.xlsx (Uygulanabilir nöbet önerisi)"
+          "[Varsa gerçek öğrenci görüş/talep belgesi]",
+          "[Varsa gerçek çizelge, anket sonucu veya gerekçe raporu]"
         ],
         "hitap": "Sayın Okul Müdürüm,",
-        "kapanis": "Gereğini bilgilerinize ve yüksek takdirlerinize saygılarımla arz ederim."
-      }
+        "kapanis": "Talebimin değerlendirilmesini saygılarımla arz ederim."
+      },
+      "guidance": "Modeldeki köşeli parantezleri öğrencinin gerçek bilgileriyle doldurun. Yapılmamış anket, alınmamış imza, belirlenmemiş saat veya var olmayan ek belge üretmeyin."
     },
     {
       "question_id": "T1-P77-PERF01",
@@ -114,28 +116,30 @@
       "printed_page": 77,
       "question_no": "E-posta Yazma",
       "prompt_summary": "Kitaptaki ölçütlere uygun tamamlanmış örnek e-posta",
-      "answer": "Kitaptaki tüm yazma kurallarını (a'dan i'ye kadar) eksiksiz uygulayan örnek model e-posta:",
-      "guidance": "Bu metin sınıfta tek doğru cevap olarak ezberletilmemelidir. Öğrenciler farklı okul, kulüp veya bireysel talepler seçebilir; değerlendirme ölçütleri doğrultusunda kendi özgün e-postalarını oluşturmalıdır.",
+      "answer": "Aşağıdaki metin, kitaptaki yazma yönergelerinin nasıl uygulanabileceğini gösteren örnek bir e-postadır. Tek doğru metin değildir; gerçek kişi, adres, saat ve belgeler öğrencinin kendi bağlamına göre doldurulmalıdır.",
+      "guidance": "Modeli aynen kopyalatmayın. Öğrenci kendi gerçek bağlamını, alıcısını ve gerekçelerini kullanmalı; örnek e-posta yalnız yapıyı ve üslubu göstermelidir.",
       "source_locator": "basılı s.77 / PDF s.78 — Kural Uygulayabilme",
       "answer_sections": {
-        "Model E-posta Metni": "Kime: yonetim@anadolulisesi.meb.k12.tr\nBilgi (CC): edebiyat.kulubu@anadolulisesi.meb.k12.tr\nKonu: Öğrenci Kütüphanesinin Çalışma Saatlerinin Uzatılması Talebi hk.\nEkler: Ek1_Ogrenci_Talep_Dilekcesi_ve_Anket.pdf (240 KB)\n\nSayın Okul Müdürüm,\n\nOkulumuz kütüphanesinden ders bitimlerinde araştırma yapmak, ders çalışmak ve edebî eserleri incelemek amacıyla düzenli olarak faydalanmaktayız. Ancak kütüphanemizin mevcut kapanış saati olan 16.00, son ders zilinin ardından kapsamlı bir çalışma yapmamız için yeterli bir zaman aralığı bırakmamaktadır.\n\nEv ortamında sessiz ve kaynaklara erişilebilir bir çalışma alanı bulmakta güçlük çeken arkadaşlarımız ve yaklaşan ortak sınavlara hazırlanan öğrenciler için kütüphanemizin sunduğu akademik iklim büyük bir değer taşımaktadır. Yapılan küçük çaplı anket çalışmamızda (Ek-1), öğrencilerin büyük çoğunluğunun kütüphanenin en azından salı ve perşembe günleri 17.15'e kadar açık kalmasını talep ettiği görülmüştür. Gönüllü kulüp öğrencilerimiz ve nöbetçi öğretmenlerimizin desteğiyle bu saatlerde düzenin eksiksiz sağlanabileceğini öngörüyoruz.\n\nÖğrencilerimizin akademik başarısına ve okuma kültürüne önemli katkı sağlayacağına inandığımız bu uygulamanın değerlendirilmesini; haftada iki gün pilot uygulama olarak başlatılması hususunu saygılarımla arz ederim.\n\nİyi çalışmalar dilerim.\n\nSaygılarımla,\nKadir Can YILMAZ\n11-A Sınıfı / 412 No.lu Öğrenci\nEdebiyat Kulübü Temsilcisi",
-        "Kitaptaki Yazma Kurallarının Metindeki Karşılıkları": [
-          "a) Konu Seçimi: Kütüphanenin kapanış saatinin uzatılması talebi.",
-          "b) Dikkat Çekici Hitap ve Giriş: 'Sayın Okul Müdürüm,' hitabıyla başlanarak mevcut yararlanma durumuna işaret edildi.",
-          "c) Başlatma, Sürdürme ve Bitirme: 'Okulumuz kütüphanesinden...', 'Ev ortamında...', '...uygulanmasının değerlendirilmesini saygılarımla arz ederim.' akışı sağlandı.",
-          "ç) Düşünceyi Geliştirme Yolları: Karşılaştırma (mevcut 16.00 saati ile talep edilen 17.15 saati) ve sayısal veriye dayalı anket örneklendirmesi kullanıldı.",
-          "d-e) Üslup ve Muhataba Uygunluk: Resmî makama uygun, ciddiyet ve nezaket dengesi korunan kurumsal bir dil benimsendi.",
-          "f) Söz Varlığı: 'Akademik iklim', 'okuma kültürü', 'pilot uygulama' gibi terim ve kavramlar yerinde kullanıldı.",
-          "g-ğ) Açık İleti ve Doğru İfade: Meram dolandırmadan, net ve saygılı bir talep cümlesiyle bağlandı.",
-          "h-ı) Toplumsal Değerler ve Hassasiyetler: Ortak çalışma ahlakı, eğitime verilen kıymet ve okul düzenine saygı ön planda tutuldu.",
-          "i) Dil Yapısı ve İmla: Paragraflar arası bağdaşıklık sağlandı, yazım ve noktalama kurallarına eksiksiz uyuldu."
+        "Model E-posta Metni": "Kime: [Kurumun gerçek e-posta adresi]\nKonu: Kütüphane Kullanım Süresinin Değerlendirilmesi Talebi\nEkler: [Varsa gerçek ek belgenin adı]\n\nSayın Okul Müdürüm,\n\nOkul kütüphanesinden ders bitiminden sonra araştırma, okuma ve ders çalışma amacıyla yararlanmak isteyen öğrenciler bulunmaktadır. Mevcut kullanım süresinin öğrencilerin bu çalışmalarını sürdürmesi açısından yeniden değerlendirilmesinin yararlı olabileceğini düşünüyorum.\n\nUygun görülmesi hâlinde kütüphanenin belirli günlerde ders bitiminden sonra bir süre daha açık tutulması veya bu konuda kısa süreli bir deneme uygulaması yapılması değerlendirilebilir. Talebi destekleyen gerçek öğrenci görüşleri, kullanım verileri ya da başka belgeler varsa e-postaya eklenebilir.\n\nKütüphane kullanım süresinin öğrencilerin ihtiyaçları ve okulun imkânları doğrultusunda değerlendirilmesini saygılarımla arz ederim.\n\nİyi çalışmalar dilerim.\n\nSaygılarımla,\n[Ad Soyad]\n[Sınıf / Şube / Numara]\n[Varsa görev veya kulüp bilgisi]",
+        "Kitaptaki Yazma Yönergelerinin Örnekteki Karşılıkları": [
+          "Konu: Kütüphane kullanım süresinin değerlendirilmesi.",
+          "Hitap ve giriş: Muhataba uygun resmî hitap ve talebin bağlamını açıklayan kısa giriş.",
+          "Başlatma, sürdürme ve bitirme: İhtiyaç → öneri → değerlendirme talebi sırası.",
+          "Düşünceyi geliştirme: Gerekçelendirme ve koşula bağlı alternatif öneri.",
+          "Üslup ve muhataba uygunluk: Resmî, saygılı ve ölçülü dil.",
+          "Söz varlığı: Kurum ve talep bağlamına uygun sözcükler.",
+          "Açık ileti: Talep doğrudan ve anlaşılır biçimde belirtilir.",
+          "Değerler ve hassasiyetler: Kurumun imkânlarına saygı gösterilir; dayanağı olmayan iddialardan kaçınılır.",
+          "Dil yapısı, yazım ve noktalama: Gönderme öncesi ayrıca kontrol edilmelidir."
         ],
         "Gönderme Öncesi Kontrol Listesi": [
-          "Doğru Alıcı ve Konu Satırı: Resmî e-posta adresi ve özetleyici konu başlığı yazıldı mı?",
-          "Hitap ve Nezaket: Makama uygun saygılı hitap seçildi mi?",
-          "Gerekçelendirme: Talep somut verilerle ve nezaketle temellendirildi mi?",
-          "Ek Kontrolü: Metinde sözü edilen Ek-1 belgesi e-postaya eklendi mi?",
-          "İmza Bloğu: Ad, soyad, sınıf, numara ve temsil görevi belirtildi mi?"
+          "Alıcı adresi gerçekten doğru mu?",
+          "Konu satırı mesajı açıkça özetliyor mu?",
+          "Talep ve gerekçe anlaşılır mı?",
+          "Metinde geçen ekler gerçekten e-postaya eklendi mi?",
+          "Ad-soyad ve öğrenci bilgileri doğru mu?",
+          "Yapılmamış anket veya doğrulanmamış sayı/iddia var mı?",
+          "Yazım, noktalama ve üslup son kez kontrol edildi mi?"
         ]
       }
     },
@@ -145,22 +149,20 @@
       "printed_page": 78,
       "question_no": "Çıkış Kartı",
       "prompt_summary": "Bir Diyeceğim Var teması için Üç Yaz - İki Sor - Bir Paylaş örneği",
-      "answer": "Bir Diyeceğim Var! temasında edinilen kazanımları özetleyen ve üstbilişsel farkındalık sağlayan örnek Çıkış Kartı çalışması:",
-      "guidance": "Öz Değerlendirme Formu öğrencinin kişisel performansına ait olduğu için tek bir doğru cevap üretilmemelidir. Çıkış Kartı'ndaki cevaplar ise temadaki okuma, konuşma, dinleme/izleme ve yazma süreçlerinin bütününe dair örnek bir sentez sunar.",
+      "answer": "Çıkış Kartı öğrencinin temada gerçekten öğrendiklerini, merak ettiği konuları ve öğrenmekte zorlandığı bir noktayı yansıtmalıdır. Aşağıdaki cevaplar yalnız örnek biçimdir.",
+      "guidance": "“Bir Paylaş” bölümünde öğrenciden öğrendiği bir görüşü değil, kitabın yönergesine uygun olarak öğrenmekte zorlandığı bir konuyu paylaşmasını isteyin. Cevap gerçekten öğrenciye göre değişmelidir.",
       "source_locator": "basılı s.78 / PDF s.79 — Süreci Değerlendirebilme Çıkış Kartı",
       "answer_sections": {
         "Üç Yaz": [
-          "1. Sözlü İletişim Engelleri ve Çözümleri: İletişimde mesajın iletimi kadar alıcının algısı, ses tonu, beden dili, gürültü ve peşin hükümlerin iletinin kaderini belirlediğini; Karagöz oyunundaki nükte ve çatışmaların bu engellerden doğduğunu öğrendim.",
-          "2. Mektup ve E-postanın Metin Mimarisi: Mektubun el yazısı, kâğıt ve kişisel üslupla taşıdığı samimi ve kültürel hafıza değerini; e-postanın ise konu satırı, hızlı iletim ve çok modlu ek belgelerle modern iş ve iletişim dünyasının vazgeçilmez bir türü olduğunu öğrendim.",
-          "3. Dilin Canlılığı ve İmla Standartlaşması: Ses kurallarının (özellikle ünsüz sertleşmesi) ve kelime tercihlerinin tarihî süreçte standartlaştığını; dijital kısaltmaların hız sağlasa da dil zevkini ve standart Türkçeyi yozlaştırma riski taşıdığını öğrendim."
+          "İletişimde yalnız sözcüklerin değil; dinleme, tonlama, beden dili, bağlam ve zamanlamanın da etkili olduğunu öğrendim.",
+          "Mektup ile e-postanın benzer iletişim amaçlarına hizmet edebildiğini, fakat iletim kanalı ve teknik özellikler bakımından farklılaştığını öğrendim.",
+          "Bir talep veya bilgilendirme e-postasında amaç, alıcı, konu, üslup ve gerekçenin birbiriyle uyumlu olması gerektiğini öğrendim."
         ],
         "İki Sor": [
-          "1. Yapay zekâ ve anlık sesli çeviri teknolojileri gelecekte bireylerin yazılı mektup ve e-posta kurma alışkanlıklarını nasıl bir dönüşüme uğratacak?",
-          "2. Karagöz ve Hacivat'ın temsil ettiği iki farklı toplumsal zümrenin dil çatışması, günümüz dijital platformlarındaki hangi iletişim kırılmalarına tekabül etmektedir?"
+          "Dijital iletişimde kullanılan yeni söyleyiş biçimleri standart yazı dilini uzun vadede nasıl etkileyebilir?",
+          "Bir e-postanın hem kısa hem de yeterince açıklayıcı olması için hangi ölçütler kullanılabilir?"
         ],
-        "Bir Paylaş": [
-          "1. Bir talep veya rica metni yazarken gerekçeleri nesnel verilerle desteklemenin ve muhatabın konumuna göre üslubu ayarlamanın iletinin kabul edilmesinde ne kadar belirleyici olduğunu bu temada bizzat uygulayarak fark ettim."
-        ]
+        "Bir Paylaş": "Mektup ve e-postada muhataba göre resmiyet düzeyini belirlerken hangi ifadelerin fazla samimi, hangilerinin gereğinden ağır kaldığını ayırt etmekte zorlandım."
       }
     }
   ]
