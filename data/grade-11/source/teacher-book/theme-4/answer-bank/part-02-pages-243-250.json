@@ -13,14 +13,14 @@
       "prompt_summary": "Metindeki altı sözcük ve söz öbeğinin bağlamsal anlamını ve alternatiflerini bulma",
       "answer": "Aşağıdaki karşılıklar metindeki kullanıma göre verilmiştir. Karekodla sözlükten doğrulama yapılırken sözcüğün bu bağlamdaki anlamı esas alınabilir.",
       "answer_sections": {
-        "sadr-ı âzam": "Bağlamdaki anlamı sadrazam, yani hükümetin başındaki vezirdir. Öneri: sadrazam / başbakan (dönemin adlandırması korunacaksa sadrazam).",
-        "görkemli": "İhtişamlı, etkileyici, büyük ve gösterişli. Öneri: ihtişamlı, görkemli.",
+        "sadr-ı âzam": "Bağlamdaki anlamı sadrazamdır; Osmanlı devlet teşkilatındaki tarihî görev adı korunmalıdır. Öneri: sadrazam / başvezir.",
+        "görkemli": "İhtişamlı, etkileyici, büyük ve gösterişli. Öneri: ihtişamlı / gösterişli.",
         "şevk": "Bir işi yapma isteği, coşku ve heves. Öneri: istek, heyecan.",
         "çağdaş": "Aynı dönemde yaşayan veya aynı çağa ait olan. Öneri: dönemdaşı.",
         "avaze": "Ses, ün veya sesin yayılışı; Baki dizesinde adın/sesin dünyaya duyurulması anlamı öne çıkar. Öneri: ses, ün.",
         "özge": "Başka, gayrı. Öneri: başka, gayrı."
       },
-      "guidance": "“Avaze” gibi şiirsel kullanımlarda sözcüğün sözlük anlamı ile dizedeki mecazlı işlevi birlikte ele alınmalıdır."
+      "guidance": "Tarihî terimlerde modern makam adlarını eş anlamlıymış gibi kullanmayın. 'Sadr-ı âzam' için sadrazam/başvezir; şiirsel 'avaze' için sözlük anlamı ile dizedeki işlev birlikte ele alınmalıdır."
     },
     {
       "question_id": "T4-P248-PERF01",
@@ -29,13 +29,14 @@
       "question_no": "Sıra Sizde 1-3",
       "source_locator": "basılı s.248 / PDF s.249 — Sıra Sizde",
       "prompt_summary": "Okuma öncesi tahminleri metin sonrası tespitlerle karşılaştırma",
-      "answer": "Örnek tablo: Okumadan önce başlıktan ve görsellerden Sinan’ın yaşamını, eserlerini ve mesleki gelişimini anlatan bir oyun beklendi. Okuduktan sonra metnin Sinan’ı konuşturduğu; Ayasofya’ya duyduğu hayranlığı, mimarlık öğrenimini, görevlerini ve önemli eserlerini sahne yönergeleriyle anlattığı görüldü. Tahmin ana çerçevede uyuştu; oyundaki sesler, görseller ve sahne düzeni tahmini genişletti.",
+      "answer": "Karşılaştırmanın ilk sütunu öğrencinin s.241-242'de gerçekten yazdığı okuma öncesi tahminden gelmelidir; rehber bu geçmiş cevabı sonradan üretmez. Okuma sonrasında ise metinde doğrulanan özellikler kaydedilir ve iki kayıt karşılaştırılır.",
       "answer_sections": {
-        "Okumadan önceki tahmin": "Mimar Sinan’ın yaşamı ve önemli yapıları çevresinde gelişen bir tiyatro metni olabileceği.",
-        "Okuduktan sonraki tespit": "Metin, Sinan’ın yaşam öyküsünü onun ağzından; sahne yönergeleri, farklı sesler ve yapı görselleriyle anlatır.",
-        "Değerlendirme": "Tahmin genel konu bakımından uyuşmuştur; tiyatroya özgü sahneleme biçimi okuma sonrasında belirginleşmiştir."
+        "okumadan_onceki_tahminim": "[Öğrencinin s.241-242'de daha önce yazdığı gerçek tahmin aynen/özetle buraya taşınır.]",
+        "okuduktan_sonraki_tespitim": "Metin Mimar Sinan'ın yaşamını ve mesleki gelişimini onun ağzından; farklı sesler, sahne yönergeleri, müzik ve yapı görselleriyle tiyatro biçiminde anlatır.",
+        "uyusan_yonler": "[...]",
+        "degisen_veya_genisleyen_yonler": "[...]"
       },
-      "guidance": "Öğrencilerin ilk tahminleri farklı olabilir. Değerlendirme, tahminin metinle hangi yönlerden örtüştüğünü ve nerede değiştiğini kanıtlamalıdır."
+      "guidance": "Ön tahmini metin okunduktan sonra geriye dönük olarak 'doğru tahmin' biçiminde yazmayın. Öğrencinin gerçek önceki kaydı neyse onunla karşılaştırın."
     },
     {
       "question_id": "T4-P249-PERF01",
@@ -44,7 +45,14 @@
       "question_no": "Fark Edelim / Vızıltı Grubu",
       "source_locator": "basılı s.248-249 / PDF s.249-250 — Fark Edelim ve vızıltı grubu",
       "prompt_summary": "Tiyatronun zihinsel ve duygusal farkındalık işlevini grup tartışmasında değerlendirme",
-      "answer": "Örnek grup sonucu: Tiyatro, insanları ve toplumsal ilişkileri sahnede görünür kılar; izleyiciye olayları başka kişilerin bakış açısından değerlendirme fırsatı verir. Bu, hem empatiyi hem de eleştirel düşünmeyi geliştirebilir. Seyirciler aynı oyunu birlikte izleyip tartıştıklarında ortak sorunlar ve değerler üzerine konuşabilirler. Etki, oyunun konusu ve sahnelemenin izleyicide uyandırdığı düşünceye göre değişebilir."
+      "answer": "Bu etkinlikte tek bir hazır grup sonucu yoktur. Gruplar kendi sosyal hayat gözlemlerinden ve gerçekten okudukları/izledikleri tiyatro eserlerinden hareketle tiyatronun zihinsel ve duygusal farkındalığa olası etkilerini tartışmalıdır.",
+      "answer_sections": {
+        "gercek_gozlem_veya_eser": "[...]",
+        "zihinsel_etki": "Bu örnek düşünme, sorgulama veya farklı bakış açısını görme bakımından ne sağladı? [...]",
+        "duygusal_etki": "Empati, duygu farkındalığı veya ilişkilere bakış bakımından ne sağladı? [...]",
+        "grup_sonucu": "Altı dakikalık tartışma sonunda ulaştığımız ortak/ayrışan görüşler: [...]"
+      },
+      "guidance": "Öğrenci veya grup adına daha önce izlenmiş bir oyun, yaşanmış sosyal deneyim ya da kesin bir etki uydurmayın. Tartışma sonucunu gerçek sınıf çalışması belirlemelidir."
     },
     {
       "question_id": "T4-P249-Q01",
