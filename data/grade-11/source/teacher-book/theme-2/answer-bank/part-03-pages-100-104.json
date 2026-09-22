@@ -10,20 +10,22 @@
       "printed_page": 100,
       "question_no": "1",
       "prompt_summary": "Çordon'un ani kararı ve psikolojik nedeni",
-      "answer": "Çordon, yaklaşık yirmi yıl önce II. Dünya Savaşı'nda şehit düşen oğlu Sultan'ın savaştan önce öğretmenlik yaptığı köye gitmeye karar verir. Bu ani kararın ardında; yıllardır bastırılan derin evlat hasreti, yaşlılıkla birlikte gelen 'henüz gözlerim kapanmadan mutlaka gitmeliyim' duygusu ve oğlunun hatırasıyla fiziksel olarak yüzleşerek yas sürecini tamamlama ihtiyacı yatar.",
+      "answer": "Çordon, yaklaşık yirmi yıl önce savaşta ölen oğlu Sultan'ın savaştan önce öğretmenlik yaptığı yere gitmeye karar verir. Metin bu kararın ardında yıllardır süren evlat özlemini, oğlunun hatırasını canlı tutma isteğini ve yaşlanmadan önce onun yaşadığı yerleri görme arzusunu öne çıkarır.",
       "evidence_quotes": [
         "Henüz gözlerim kapanmadan mutlaka gitmeliyim oraya.",
         "Onun hayatta olduğuna, ölmediğine her zaman inandım, her zaman hissettim bunu."
       ],
       "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 1",
       "answer_sections": {
-        "Alınan Karar": "Yirmi yıldır hiç gitmediği ve oğlunun askere gitmeden önce öğretmenlik yaptığı dağ köyüne gidip onun ayak bastığı yerleri ve yaşadığı çevreyi görmek.",
-        "Psikolojik Gerekçeler": [
-          "Bastırılmış Acının Patlaması: Sefer Ali ile karşılaşmanın tetiklediği hatıraların içindeki yangını alevlendirmesi.",
-          "Zamanın Daraldığı Hissi: Yaşlılığın getirdiği ölüm sezgisi ve gözleri kapanmadan evladının ruhunu selamlama arzusu.",
-          "Tamamlanmamış Yas: Oğlunun ölümünü zihnen bilse de kalben onun yaşadığına inanma ihtiyacı."
-        ]
-      }
+        "Alınan Karar": "Oğlunun öğretmenlik yaptığı yere gidip onun yaşadığı çevreyi görmek.",
+        "Metinde Açıkça Görülen Gerekçeler": [
+          "“Henüz gözlerim kapanmadan mutlaka gitmeliyim oraya.” sözü, zamanın daraldığını hissettiğini gösterir.",
+          "“Onun hayatta olduğuna, ölmediğine her zaman inandım...” sözü, kaybı duygusal olarak kabullenmekte zorlandığını düşündürür.",
+          "Sefer Ali ile karşılaşmanın oğluna ilişkin hatıraları yeniden canlandırdığı anlatılır."
+        ],
+        "Yorum Sınırı": "“Bastırılmış travma”, “tamamlanmamış yas” gibi psikoloji terimleri ancak olası açıklama olarak kullanılabilir; metin bunları klinik tanı olarak vermez."
+      },
+      "guidance": "Önce metindeki söz ve davranışları buldurun; psikolojik kavram kullanılacaksa 'bunu düşündürebilir' diliyle ve metin kanıtından sonra kullanın."
     },
     {
       "question_id": "T2-P100-Q02",
@@ -52,9 +54,14 @@
       "printed_page": 100,
       "question_no": "4",
       "prompt_summary": "Ölmüş oğlunun yaşadığına inanmasının Çordon'un ruh hâliyle ilişkisi",
-      "answer": "Çordon mantığıyla oğlunun öldüğünü bilmekte ('Elbette her şeyi biliyorum ben'), ancak kalbiyle bu acı kaybı kabullenememektedir. Bu durum, ağır bir travma yaşayan insanın geliştirdiği bir savunma mekanizmasıdır; oğlunu hayalinde yaşatarak hayata tutunmakta, hatırayı canlı tutarak yalnızlığına ve derin özlemine teselli aramaktadır.",
-      "explanation": "Cevapta klinik bir tanı yerine metnin doğrudan sunduğu evlat hasreti, yas ve hatıra yoğunluğu temel alınmalıdır.",
-      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 4"
+      "answer": "Çordon'un bir yandan oğlunun öldüğünü bildiğini söylemesi, diğer yandan onun yaşadığına inandığını hissetmesi; ağır evlat kaybını duygusal olarak kabullenmekte zorlandığını, özleminin ve hatıralarının çok güçlü olduğunu düşündürür.",
+      "explanation": "Bu soru ruh hâli yorumudur; tıbbi/klinik tanı istemez. Metnin doğrudan sunduğu evlat hasreti, kayıp ve hatıra yoğunluğu temel alınmalıdır.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 4",
+      "answer_sections": {
+        "Metinde Açıkça Görülen": "Çordon “Elbette her şeyi biliyorum ben” diyerek gerçeğin farkında olduğunu; “Onun hayatta olduğuna, ölmediğine her zaman inandım” diyerek duygusal inancını dile getirir.",
+        "Makul Yorum": "Akıl ile duygu arasında gerilim yaşadığı; oğlunu zihninde ve hatıralarında canlı tuttuğu söylenebilir.",
+        "Kullanılabilecek Psikoloji Dili": "Yas, kaybı kabullenmekte zorlanma, özlem gibi kavramlar açıklayıcı olabilir; ancak savunma mekanizması veya klinik bozukluk gibi kesin tanılar çıkarılmamalıdır."
+      }
     },
     {
       "question_id": "T2-P100-Q05",
@@ -62,8 +69,14 @@
       "printed_page": 100,
       "question_no": "5",
       "prompt_summary": "İnsanların bazı acı olayları tamamen unutmak istemesini yorumlama",
-      "answer": "İnsanlar büyük keder, çaresizlik veya suçluluk barındıran travmatik olayları hatırladıklarında aynı ıstırabı tekrar yaşamamak için zihinsel bir savunma mekanizması olarak unutmayı ve yok saymayı seçerler. Ancak hikâyede görüldüğü gibi bastırılan anılar bütünüyle yok olmaz; en küçük bir çağrışımla yeniden gün yüzüne çıkar ve yüzleşilmeyi bekler.",
-      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 5"
+      "answer": "İnsanlar kendilerine büyük acı veren bazı olayları hatırlamaktan kaçınabilir; çünkü hatırlamak aynı üzüntü, suçluluk veya çaresizlik duygularını yeniden canlandırabilir. Oğulla Buluşma'da Çordon'un aklına getirmek istemediği olayın yıllar sonra yeniden zihninde canlanması, acı hatıraların bütünüyle silinmeyebileceğini düşündürür.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 5",
+      "answer_sections": {
+        "Metne Dayalı Yorum": "Çordon belirli bir olayı hatırlamak istemez; buna rağmen yolculuk sırasında o olay yeniden zihninde belirir.",
+        "Genel İnsanlık Durumu": "Acı veren bir olayı düşünmekten kaçınmak, kişinin kendisini yoğun duygudan koruma çabası olarak yorumlanabilir.",
+        "Sınır": "Bu davranış tek başına “travma”, “bastırma” veya başka bir klinik mekanizmanın kesin kanıtı değildir."
+      },
+      "guidance": "Öğrencinin günlük yaşamdan genel bir örnek vermesi kabul edilebilir; ancak Çordon'a tanı koydurmayın."
     },
     {
       "question_id": "T2-P100-Q06",
@@ -106,21 +119,21 @@
       "printed_page": 101,
       "question_no": "9",
       "prompt_summary": "Metindeki öznel ve nesnel ifade örneklerini ayırma",
-      "answer": "Metinde olayların tarihsel ve mekânsal çerçevesi nesnel ifadelerle kurulurken, kişilerin ruh dünyası ve acıları etkileyici öznel benzetmelerle aktarılmıştır:",
-      "guidance": "Öğrencinin metinden seçtiği cümlelerin nesnel doğrulanabilirlik ve öznel duygu/yorum niteliğini ayırt etmesi ve öznel ifadelerin hikâyenin duygusal etkisini nasıl artırdığını açıklaması beklenir.",
+      "answer": "Kurmaca bir hikâyede “öznel–nesnel” ayrımı yapılırken gerçek dünyada doğrulanabilirlikten çok, anlatıcının bir bilgiyi metin dünyasında olgu gibi mi sunduğuna yoksa duygu, değerlendirme ve benzetme mi kattığına bakmak daha uygundur.",
+      "guidance": "“Nesnel = gerçek dünyada kesin doğrulanabilir” şeklinde anlatmayın; bunlar kurmaca metindeki anlatım biçimleridir. Öğrenci, cümlenin anlatıcı yorumu/duygusu içerip içermediğini açıklamalıdır.",
       "source_locator": "basılı s.101 / PDF s.102 — Metni Anlayalım soru 9",
       "answer_sections": {
-        "Öznel İfadeler": [
-          "Kocaman ve yorgun elleri, dizlerinin üzerinde birer büyük balık gibi duruyordu adamın.",
-          "Buna rağmen oğlunu görmek için o köye gitmek arzusu önüne geçilmez bir yangın gibi büyüdü içinde.",
-          "Kocası pek tuhaf bir hayal kurmuştu."
+        "Duygu / Değerlendirme İçeren İfadeler": [
+          "“Kocaman ve yorgun elleri, dizlerinin üzerinde birer büyük balık gibi duruyordu adamın.”",
+          "“...o köye gitmek arzusu önüne geçilmez bir yangın gibi büyüdü içinde.”",
+          "“Kocası pek tuhaf bir hayal kurmuştu.”"
         ],
-        "Nesnel İfadeler": [
-          "İhtiyarın bir oğlu vardı ve yirmi yıl kadar önce savaşta ölmüştü.",
-          "Ekim 1941’de, iş yerinde demir döverken, biri koşarak gelmiş ve ona hemen eve gitmesini... söylemişti.",
-          "Birinci karısı on yıl önce ölmüştü ve onun ikinci karısıydı."
+        "Metin Dünyasında Olgu Gibi Sunulan İfadeler": [
+          "“İhtiyarın bir oğlu vardı ve yirmi yıl kadar önce savaşta ölmüştü.”",
+          "“Ekim 1941’de, iş yerinde demir döverken...”",
+          "“Birinci karısı on yıl önce ölmüştü ve onun ikinci karısıydı.”"
         ],
-        "Etkileyicilik Gerekçesi": "Öznel benzetmeler (balık gibi yorgun eller, yangın gibi arzu) soyut bir duygu olan kederi somutlaştırıp okuyucunun kalbine dokunduğu için anlatımı çok daha sarsıcı ve unutulmaz kılmaktadır."
+        "Etkileyicilik Gerekçesi": "Benzetme ve değerlendirmeler Çordon'un kederini ve özlemini somutlaştırarak anlatımın duygusal etkisini artırır."
       }
     },
     {
@@ -160,16 +173,17 @@
       "printed_page": 102,
       "question_no": "11",
       "prompt_summary": "Oğulla Buluşma'yı ana olay sırasını koruyarak özetleme",
-      "answer": "Oğulla Buluşma hikâyesinin sebep-sonuç ve kronolojik akışını koruyan özeti:",
+      "answer": "Oğulla Buluşma, şimdiki zamandaki yolculuk ile Çordon'un geçmişe dönüşleri arasında ilerler. Özet, kitapta verilen olay sırasını koruyarak şöyle kurulabilir:",
       "source_locator": "basılı s.102 / PDF s.103 — Metni Anlayalım soru 11",
       "answer_sections": {
-        "1. Karar ve Eşin Sessizliği": "Yaşlı demirci Çordon, yirmi yıl önce savaşta şehit düşen oğlu Sultan'ın öğretmenlik yaptığı köye gitmeye karar verir; eşi Nazifkan kocasının kararlılığına ve acısına hürmeten susar.",
-        "2. Şafak Vakti Yola Çıkış ve Hayaller": "Çordon sabah erkenden atını eyerleyip dağ yoluna koyulur; yol boyunca oğluyla yapacağı kavuşma konuşmasını hayal eder.",
-        "3. Geçmişe Dönüş (1941 Ekim Veda Haberi)": "Yolculuk sırasında Çordon, demirci örsü başındayken oğlunun gönüllü olarak cepheye gideceği haberini aldığı günü hatırlar.",
-        "4. İstasyondaki Çatışma ve Uğurlama": "Kızları Sultan'ı kurtarması için babalarına yalvarıp onu suçlarken Çordon oğlunun mertliğine saygı duyar ve onun seçimine engel olmaz.",
-        "5. Son Kucaklaşma ve Gözyaşları": "Tren hareket ederken baba-oğul son kez sarılır; tren uzaklaştığında Çordon köpükler içindeki atının boynuna sarılarak hüngür hüngür ağlar.",
-        "6. Hatırayla Bütünleşme": "Çordon, oğlunun kutsal hatırasına ve onun teneffüs ettiği topraklara doğru huzurla yoluna devam eder."
-      }
+        "1. Karar ve Eşin Sessizliği": "Çordon, yıllar önce savaşta ölen oğlunun öğretmenlik yaptığı yere gitmeye karar verir; eşi Nazifkan onun kararlılığını görür ve vazgeçirmeye çalışmaz.",
+        "2. Şafak Vakti Yola Çıkış": "Çordon atıyla yola çıkar; oğlunun yaşadığı yere varmayı ve onunla konuşuyormuş gibi buluşmayı hayal eder.",
+        "3. Geçmişe Dönüş": "Yolculuk sırasında Ekim 1941'de oğlunun cepheye gitmeden önce vedaya gelişini ve şehir istasyonundaki olayları hatırlar.",
+        "4. Baba–Kızlar Çatışması": "Kızları Sultan'ın gönüllü gidişine engel olması için Çordon'a baskı yapar; Çordon oğlunun kararına müdahale etmeyi reddeder.",
+        "5. Son Buluşma ve Uğurlama": "Çordon, tren hareket etmeden önce oğluna yetişir; baba-oğul sarılır, Sultan af diler, Çordon ona mert bir insan olması öğüdünü verir ve tren uzaklaşınca Çordon ağlar.",
+        "6. Şimdiki Zamana Dönüş": "Metin yeniden yolculuk zamanına döner; Çordon vadiye ulaştığında oğlunun o topraklarda yaşamış olduğunu düşünür."
+      },
+      "guidance": "Kitabın vermediği bir sonuç sahnesi eklemeyin. “Yasını tamamladı”, “huzura kavuştu”, “geçmişle yüzleşmesini bitirdi” gibi sonuçlar ancak yorum olarak ayrıca söylenebilir."
     },
     {
       "question_id": "T2-P102-GRAM01",
