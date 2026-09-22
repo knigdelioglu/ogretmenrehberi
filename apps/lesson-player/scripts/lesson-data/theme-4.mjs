@@ -589,7 +589,7 @@ for (const step of theme4Assessment.steps) {
 assert(!theme4IntroById.get("s239-q3")?.answer?.answer?.includes("farklı okurlar") &&
   theme4IntroById.get("s239-q3")?.answer?.guidance?.includes("metnin açıkça"),
   "s.239 sanatsal metin cevabı kaynak metni aşan alımlama kuramına genişlememeli.");
-assert(theme4IntroById.get("s239-q4")?.answer?.answer?.includes("gerçek yaşantı") &&
+assert(theme4IntroById.get("s239-q4")?.answer?.answer_sections?.gercek_yasanti === "[...]" &&
   !theme4IntroById.get("s239-q4")?.answer?.answer?.includes("ayrılık"),
   "s.239 kişisel yaşantı sorusunda öğrenci adına deneyim uydurulmamalı.");
 assert(theme4IntroById.get("s239-q5")?.answer?.answer_sections?.sectigim_tur === "[...]",
