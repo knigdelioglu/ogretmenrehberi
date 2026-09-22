@@ -43,8 +43,14 @@
       "question_no": "2",
       "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 2",
       "prompt_summary": "İnsan ilişkilerindeki değerlerin tiyatro ya da hikâyede daha etkili yansıtılmasına ilişkin gerekçeli görüş",
-      "answer": "Örnek görüş: Tiyatro, kişilerin sözlerini ve karşılıklı tepkilerini sahnede doğrudan gösterdiği için güven, saygı ve görev ilişkilerini izleyiciye daha görünür kılabilir. Ben, Mimar Sinan’da hükümdarın Sinan’a görev vermesi ve Sinan’ın bu sorumluluğu üstlenmesi buna örnektir. Bununla birlikte Merdiven, birkaç kısa karşılaşmayla nezaket ve kuşak farkı üzerine güçlü çağrışımlar kurar; tercih, okurun hangi anlatım yolundan daha çok etkilendiğine bağlıdır.",
-      "guidance": "Tiyatro ya da hikâye yönünde farklı cevaplar kabul edilir. Öğrenci iki metinden de kanıt gösterip seçiminin gerekçesini açıklamalıdır."
+      "answer": "Bu soruda tiyatro veya hikâye lehine tek bir doğru sonuç yoktur. Öğrenci iki metinden kanıt göstererek insan ilişkilerindeki değerlerin hangi türde kendisine göre daha etkili yansıtıldığını gerekçelendirmelidir.",
+      "guidance": "Öğrenci adına 'tiyatro daha iyi yansıtır' seçimini yapmayın. Her iki yönde de metin kanıtlı cevap kabul edilmelidir.",
+      "answer_sections": {
+        "tiyatrodan_kanitim": "Ben, Mimar Sinan'da seçtiğim söz/davranış/ilişki: [...].",
+        "hikayeden_kanitim": "Merdiven'de seçtiğim söz/davranış/ilişki: [...].",
+        "tercihim": "Tiyatro / hikâye / iki türün farklı üstünlükleri var.",
+        "gerekcem": "[...]"
+      }
     },
     {
       "question_id": "T4-P273-Q01",
@@ -68,8 +74,13 @@
       "question_no": "2",
       "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 2",
       "prompt_summary": "İki hikâyeden hangisinin daha etkileyici olduğunu metne dayalı gerekçeyle belirtme",
-      "answer": "Örnek cevap: Merdiven’den daha çok etkilendim; çünkü tekrar eden çıkma-inme ve yol verme hareketleri önce sıradan görünürken son karşılaşmadan sonra anlam değiştiriyor. Kısa ve açık uçlu anlatım, anlatıcının ne düşündüğünü benim tamamlamama imkân veriyor. Şair Tavafî’yi seçen bir öğrenci de ayrıntılı çevre tasvirini ve konukseverlik ilişkilerini gerekçe gösterebilir.",
-      "guidance": "Beğeni kişiseldir; gerekçenin iki hikâyeden bir ayrıntıyla ilişkilendirilmesi yeterlidir."
+      "answer": "Hangi hikâyenin daha etkileyici bulunduğu kişisel beğeni sorusudur. Öğrenci Şair Tavafî veya Merdiven'i seçebilir; tercihini ilgili metindeki somut bir dil, anlatıcı, içerik veya çağrışım özelliğiyle gerekçelendirmelidir.",
+      "guidance": "Öğrenci adına Merdiven'i veya Şair Tavafî'yi seçmeyin; tek bir beğeni cevabı yoktur.",
+      "answer_sections": {
+        "daha_cok_etkilendigim_hikaye": "[...]",
+        "metinden_ayrinti": "[...]",
+        "beni_etkileme_nedeni": "[...]"
+      }
     }
   ]
 }
