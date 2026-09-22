@@ -41,9 +41,11 @@ Hayalî/hayalbaz, tasvir yapımı, Küşterî geleneği gibi ayrıntılar yalnı
 
 Öğrenci önce kendisi çıkarım yapmalı. Ancak burada gerçek bir kavramsal boşluk var: kitap 'tip' sözcüğünü sık kullanıyor fakat tip–karakter ayrımını açıkça tanımlamıyor.
 
-Etkinlikten sonra verilebilecek kısa öğretmen notu:
+Etkinlikten sonra kısa bir **tip–karakter karşılaştırması** yapılmalıdır:
 
-> Geleneksel tiyatrodaki tip, ayrıntılı bireysel psikolojiden çok toplumda tekrar eden belirgin bir özelliği veya sosyal kesimi temsil eden oyun kişisidir. Karagöz oyunlarında dil, meslek, eğitim ve davranış farklılıkları tipleri hızlıca tanımamızı sağlar.
+> **Tip**, belirgin ve tekrarlanan özellikleriyle bir toplumsal kesimi, mesleği, yöresel kimliği veya davranış biçimini temsil eden kişidir; temsil işlevi bireysel psikolojik ayrıntının önündedir. **Karakter** ise bireysel yönleri, iç dünyası, çelişkileri, geçmişi ve seçimleri daha ayrıntılı işlenen kişidir. Ayrım mutlak değildir; bazı kurmaca kişiler iki uca farklı ölçülerde yaklaşabilir.
+
+Ardından öğrenciye Yazıcı'dan Karagöz veya Hacivat için en az iki söz/davranış kanıtı seçtirilmeli; bu kanıtlarla kişinin neden tip geleneğine yaklaştığı gerekçelendirilmelidir. Son aşamada, aynı kişinin karakter yönünü güçlendirmek için iç dünya, çelişki, geçmiş, seçim veya değişim bakımından hangi ayrıntıların eklenebileceği tartışılmalıdır. Bu çalışma kitapta bağımsız bir soru değildir; öğretmen rehberi zenginleştirmesidir.
 
 ## s.30–31 — Geleneksel Türk tiyatrosu türleri
 
@@ -113,7 +115,7 @@ Burada yeni öğretim yapılmamalı. Yeni görünen bilgi gerekiyorsa soru metni
 
 ## Tema 1 için gerçek ek bilgi listesi
 
-1. **Tip kavramı** — s.27–29 sonrasında.
+1. **Tip–karakter ayrımı ve metne dayalı mini uygulama** — s.27–29 sonrasında.
 2. **İşitmek–dinlemek ayrımı** — s.54 sonrasında.
 3. **Çok modlu metin tanımı** — s.53 veya en geç s.64.
 4. **Mektup türünü tanıma formülü** — s.42 sonrasında.
@@ -123,4 +125,4 @@ Bunların dışında Tema 1'de uzun ek ders anlatımı gerekli görünmüyor.
 
 ## Uygulama durumu
 
-Belirlenen beş tamamlayıcı bilgi answer-bank içine eklendi: tip kavramı, işitmek–dinlemek ayrımı, çok modlu metin tanımı, mektup türünü tanıma formülü ve e-posta gönderme öncesi kontrol listesi.
+Belirlenen beş tamamlayıcı bilgi rehber katmanına eklendi: tip–karakter ayrımı ve Yazıcı üzerinden mini uygulama, işitmek–dinlemek ayrımı, çok modlu metin tanımı, mektup türünü tanıma formülü ve e-posta gönderme öncesi kontrol listesi. Tip–karakter çalışması s.28 Soru 1 ekranında karşılaştırma kartları, uygulama adımları, yönlendirme ve açıklama katmanlarıyla görünür durumdadır.
