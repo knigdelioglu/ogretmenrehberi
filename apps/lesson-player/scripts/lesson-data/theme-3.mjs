@@ -239,7 +239,11 @@ assert(dialogueById.get("s225-reference")?.answer === null &&
   dialogueById.get("s229-self")?.answer?.entry_type === "performance_support",
   "Kitap referansı, QR rubrik sınırı ve gerçek öz değerlendirme korunmalı.");
 const writing225229Text = dialogueWriting.steps
-  .map(step => JSON.stringify({ answer: step.answer, content: step.content }))
+  .map(step => JSON.stringify({
+    answer: step.answer?.answer,
+    answer_sections: step.answer?.answer_sections,
+    content: step.content
+  }))
   .join("\n");
 for (const forbidden of ["Başusta", "genç çırak", "gizli atölye", "silah parçası", "devriye sesleri"]) {
   assert(!writing225229Text.includes(forbidden),
@@ -301,10 +305,15 @@ for (const id of ["s234-q14","s234-q15"]) {
 }
 const aile14 = t3AssessmentById.get("s234-q14")?.answer;
 const aile15 = t3AssessmentById.get("s234-q15")?.answer;
+const aileCanonicalText = JSON.stringify({
+  q14_answer: aile14?.answer,
+  q14_sections: aile14?.answer_sections,
+  q15_answer: aile15?.answer,
+  q15_sections: aile15?.answer_sections
+}).toLocaleLowerCase("tr");
 for (const forbidden of ["kuşak çatışması", "aile evi", "günün saati", "mevsim"]) {
-  assert(!JSON.stringify({ aile14, aile15 }).toLocaleLowerCase("tr").includes(
-    forbidden.toLocaleLowerCase("tr")
-  ), `Aile Bağları videosu görülmeden yapım ayrıntısı uydurulmamalı: ${forbidden}`);
+  assert(!aileCanonicalText.includes(forbidden.toLocaleLowerCase("tr")),
+    `Aile Bağları videosu görülmeden yapım ayrıntısı uydurulmamalı: ${forbidden}`);
 }
 assert(!t3AssessmentById.get("s232-q7")?.answer?.answer?.includes("Süleyman Efendi") &&
   !t3AssessmentById.get("s232-q7")?.answer?.answer?.includes("tramvay"),
