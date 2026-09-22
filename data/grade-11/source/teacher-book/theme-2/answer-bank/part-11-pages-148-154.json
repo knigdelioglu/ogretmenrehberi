@@ -10,15 +10,15 @@
       "printed_page": 149,
       "question_no": "1",
       "prompt_summary": "Çevrim içi gezilebilecek müzeleri araştırıp kısa tanıtım listesi hazırlama",
-      "answer": "Çevrim içi gezilebilecek müzeleri araştırma ve tanıtım listesi oluşturma görevi için 4 aşamalı yöntem ve örnek müze envanteri aşağıda sunulmuştur:",
-      "guidance": "İnternetten doğrulanmamış müze adı veya çalışmayan sanal tur bağlantıları eklenmemelidir. T.C. Kültür ve Turizm Bakanlığı'nın resmî sanal müze portalı (sanalmuze.gov.tr) veya dünyaca tanınmış resmî platformlar esas alınmalıdır.",
+      "answer": "Öğrenci gerçekten çevrim içi erişilebilen müze veya ören yerlerini araştırarak kısa, kaynaklı bir tanıtım listesi hazırlamalıdır. Müze adı, koleksiyon ve tur özelliği yalnız ilgili kurumun güncel sayfasından kontrol edildikten sonra yazılır.",
+      "guidance": "Örnek araştırma adayları olarak Anadolu Medeniyetleri Müzesi veya Türk ve İslam Eserleri Müzesi önerilebilir; erişim ve teknik özellikleri araştırılarak doğrulanır. Göbeklitepe bir ören yeridir, müze diye etiketlenmemelidir. Her kurumun 360°, 3D nesne veya sesli rehber sunduğunu varsaymayın.",
       "source_locator": "basılı s.149 / PDF s.150 — soru 1",
-      "answer_sections": [
-        "1. Resmî ve Güvenilir Kaynakları Belirleme: T.C. Kültür ve Turizm Bakanlığı sanal müze portalı (sanalmuze.gov.tr), Millî Saraylar veya tanınmış kurumların resmî web sitelerinden 360 derece sanal tur imkânı sunan müzeler tespit edilir.",
-        "2. Tanıtım Bilgilerini Yapılandırma: Seçilen her müze için adı, bulunduğu şehir, koleksiyonunun ana teması (arkeoloji, etnografya, edebiyat, saray yaşamı) ve sanal turun teknik özellikleri (sesli rehber, 3D modelleme, bilgi panoları) kaydedilir.",
-        "3. Kaynak ve Erişim Doğrulaması: Kullanılan web adresi, ziyaret tarihi ve erişim bağlantısı not edilir; sanal turun kesintisiz çalıştığı kontrol edilir.",
-        "4. Temsil ve Çeşitlilik İlkesi: Yalnızca tek bir türe sıkışmak yerine; Türk kültürünün farklı dönemlerini temsil eden (örneğin Anadolu Medeniyetleri Müzesi, Türk ve İslam Eserleri Müzesi, Efes Müzesi, Göbeklitepe Ören Yeri) zengin bir temsil listesi oluşturulur."
-      ]
+      "answer_sections": {
+        "1. Kaynağı bulma": "Resmî müze/kurum veya güvenilir kültür platformunda sanal tur olup olmadığını araştırın. Müze ile ören yerini ayrı türler olarak kaydedin.",
+        "2. Kısa tanıtım kaydı": "[Müze/ören yeri adı] — [şehir] — [kurumun belirttiği koleksiyon/alan] — [resmî sanal tur bağlantısı].",
+        "3. Erişimi ve özelliği denetleme": "[Kontrol tarihi] — [tur açıldı/açılmadı] — [gerçekten sunulan panorama, nesne yakınlaştırma, sesli rehber veya bilgi panosu; yalnız varsa].",
+        "4. Listeyi sunma": "İlgi alanınıza ve erişilebilirliğe göre seçtiğiniz kayıtları arkadaşlarınızla paylaşın; çalışmayan bağlantıyı erişilebilir örnek olarak göstermeyin."
+      }
     },
     {
       "question_id": "T2-P149-PERF02",
@@ -26,9 +26,14 @@
       "printed_page": 149,
       "question_no": "2",
       "prompt_summary": "İlgi alanına uygun bir sanal müze seçip gerekçelendirme",
-      "answer": "Öğrencinin kendi ilgi alanına göre seçebileceği örnek gerekçelendirme modelleri:\n\nModel 1 (Tarih ve Arkeoloji Odaklı): 'Ben T.C. Kültür ve Turizm Bakanlığı bünyesindeki Anadolu Medeniyetleri Müzesi'ni seçtim. Çünkü Türklerin Anadolu'ya gelişinden önceki ve sonraki kadim medeniyetlerin ortak mirasını, Hititlerden Osmanlı'ya uzanan kültürel sürekliliği merak ediyorum. Müzenin sanal turunda eserlerin 3 boyutlu incelenebilmesi ve ayrıntılı Türkçe bilgi kartlarının bulunması seçimimde belirleyici oldu.'\n\nModel 2 (Geleneksel Sanat ve Edebiyat Odaklı): 'Ben Türk ve İslam Eserleri Müzesi'ni seçtim. Çünkü 2. Temada işlediğimiz Orhun Abideleri, Dîvânu Lugâti't-Türk ve el yazması eserler ile geleneksel Türk halı sanatı doğrudan ilgimi çekmektedir. Müzenin İbrahim Paşa Sarayı gibi tarihî bir mekânda bulunması ve el yazmaları salonunu 360 derece gezdirmesi inceleme arzumu artırdı.'",
-      "guidance": "Müze adı ve gerekçesi öğrencinin yaptığı gerçek araştırmaya göre doldurulmalıdır. Seçim gerekçesi yalnızca 'güzel olduğu için' gibi genel bir ifadeyle geçiştirilmemeli; müzenin sergilediği kültürel dönem, eserin niteliği ve sanal turun sağladığı inceleme kolaylığı somut biçimde belirtilmelidir.",
-      "source_locator": "basılı s.149 / PDF s.150 — soru 2"
+      "answer": "Seçim öğrencinin gerçek araştırması ve ilgi alanından doğmalıdır. Aşağıdaki iki model gerekçelendirme biçimini gösterir; seçilmiş veya gezilmiş bir müzeye ait doğrulanmamış sanal tur özelliği içermez.",
+      "guidance": "Öğrencinin seçimi tek bir müzeye yönlendirilmemelidir. Anadolu Medeniyetleri Müzesi'nde 3D döndürme, Türk ve İslam Eserleri Müzesi'nde el yazması salonunu 360° gezme gibi özellikler yerinde doğrulanmadan seçimin gerekçesi yazılamaz.",
+      "source_locator": "basılı s.149 / PDF s.150 — soru 2",
+      "answer_sections": {
+        "Tarih/arkeoloji ilgisi": "“[Resmî bağlantısından erişebildiğim müzeyi/ören yerini] seçtim; çünkü [gerçek koleksiyon/alan] hakkında daha çok bilgi edinmek istiyorum. Erişimini [tarih] günü doğruladım. Gezi sırasında özellikle [gerçekten sunulan bölüm veya eser] üzerinde duracağım.”",
+        "Sanat/edebiyat ilgisi": "“[Seçtiğim kurum] ilgimi çekiyor; çünkü [koleksiyonla ilgili doğrulanmış bilgi] bu temada çalıştığımız kültürel miras konusuyla bağlantı kurmama yardımcı olabilir. Sanal turda [kurum sitesinde gerçekten bulunan özellik] incelememi kolaylaştırıyor.”",
+        "Seçim ölçütü": "İlgi alanı + doğrulanmış koleksiyon/alan + gerçekten erişilen tur + kişisel gerekçe."
+      }
     },
     {
       "question_id": "T2-P149-PERF03",
@@ -60,15 +65,20 @@
       "printed_page": 150,
       "question_no": "1",
       "prompt_summary": "Müzelerde bulunabilecek ve kültürümüzü yansıtabilecek unsurlar (fiziksel ve görünmeyen miras)",
-      "answer": "Levent Mercin'in 'Müzeler ve Toplum' metnindeki kavramsal çerçeve doğrultusunda müzelerde kültürümüzü yansıtan unsurlar iki ayrılmaz boyutta değerlendirilir:\n\n1. Fiziksel (Görünen / Maddi) Miras Unsurları: Müzelerde vitrinlerde sergilenen geleneksel el sanatları, halı, kilim ve kumaş dokumaları, eski giyim-kuşam parçaları, madeni eşyalar, bakır kazanlar, tarım ve zanaat aletleri (saban, orak, çıkrık), çiniler, seramikler, ahşap oymacılığı örnekleri, hat ve tezhip levhaları, el yazması kitaplar ve tarihî silahlar.\n2. Görünmeyen (Maddi Olmayan / Tinsel) Miras Unsurları: Bu fiziksel nesnelerin arkasında yatan insan hikâyeleri, üretim süreçleri, inançlar, ustalık sırları, gelenekler, adak ve düğün törenleri, komşuluk ve ikram hukuku, estetik anlayış ve nesneye yüklenen sembolik anlamlar.\n\nSonuç: Fiziksel nesneler, ancak arkalarındaki görünmeyen kültürel hikâye, yapılış amacı ve yaşama biçimi anlaşıldığında gerçek değerini bulur. Müzeler, bu iki mirası buluşturan kültürel hafıza merkezleridir.",
+      "answer": "Levent Mercin'in “Müzeler ve Toplum” metni, müzenin hem görülebilen kültür ürünlerini hem onların oluşum, kullanım ve etki hikâyesini koruyabildiğini açıklar. Aşağıdakiler öğrencinin müzelerde bulunabileceğini tahmin edebileceği örneklerdir; hepsinin seçilecek müzede bulunduğu ileri sürülmez.",
       "evidence_quotes": [
         "Fiziksel miras, bizim gördüğümüz kültür ürünleridir.",
         "Fiziksel olarak algılanan kültür ürünlerinin oluşumu, hikayeleri, yapılış süreci, yapılış amacı, etkilendikleri ve etkiledikleri ise görünmeyen miras olarak adlandırılabilir.",
         "Fiziksel olarak gözle görülemeyen miras, görülebilen miras kadar değer taşır."
       ],
-      "explanation": "Müzedeki bir ibrik veya kilim sadece pirinçten ya da yünden ibaret değildir; onun üzerindeki desen aile bağlarını, misafirperverlik töresini ve Türk insanının estetik dünyasını temsil eder.",
-      "guidance": "Öğretmen, sınıfta bir nesne göstererek (örneğin kahve cezvesi) 'Bunun fiziksel mirası nedir, görünmeyen mirası nedir?' sorusuyla kavramın somutlaşmasını sağlayabilir.",
-      "source_locator": "basılı s.150 / PDF s.151 — soru 1"
+      "explanation": "Metindeki ayrım, fiziksel nesne ile nesnenin yapılış amacı, oluşum hikâyesi ve ilişkili kültürel anlamlar arasındadır. Belirli bir kilim ya da ibriğin mutlaka aile bağını veya misafirperverliği temsil ettiği, nesnenin gerçek bağlamı bilinmeden söylenemez.",
+      "guidance": "Öğrenciye önce üç olası eser örneği düşündürün, ardından her biri için “görünmeyen hangi bilgiyi araştırmalıyız?” sorusunu sordurun. Tahminleri gerçek müze envanteri gibi sunmayın.",
+      "source_locator": "basılı s.150 / PDF s.151 — soru 1",
+      "answer_sections": {
+        "Fiziksel (görünen) miras için olası örnekler": "Dokuma, kıyafet, seramik, el yazması, araç-gereç, çalgı veya sanat eseri.",
+        "Görünmeyen miras hakkında sorulabilecekler": "Bu nesne hangi amaçla üretilmiş? Nasıl yapılmış ve kullanılmış? Onu üreten veya kullanan kişiler için ne ifade etmiş? Zaman içinde neleri etkilemiş?",
+        "Tahminin denetlenmesi": "Öğrenci seçtiği müzenin gerçek turunu gezdiğinde tahminlerinden hangilerinin karşılığını gördüğünü kaydeder."
+      }
     },
     {
       "question_id": "T2-P151-PERF01",
@@ -76,25 +86,20 @@
       "printed_page": 151,
       "question_no": "2",
       "prompt_summary": "Müzelerdeki kültürel unsurlar ile öğrencinin kendi hayatındaki kültürel unsurları karşılaştırma",
-      "answer": "Müzelerde sergilenen geçmişe ait kültür nesneleri ile günümüz gündelik yaşamındaki karşılıkları karşılaştırmalı olarak şu örnek tabloda yapılandırılmıştır:",
-      "guidance": "Öğrencilere geçmişteki nesne ile bugünkü nesnenin birebir aynı olması gerekmediği; önemli olanın o nesnenin temsil ettiği kültürel alışkanlığın (misafirperverlik, yemek düzeni, giyim zevki, müzik) bugünkü evinde ve çevresinde nasıl sürdüğünü veya dönüştüğünü fark etmesi olduğu açıklanmalıdır.",
+      "answer": "Bu karşılaştırmanın ikinci sütunu öğrencinin kendi gerçek hayatına bağlıdır; aşağıdaki tablo öğrenci adına ev, aile veya alışkanlık icat etmeden doldurulmalıdır. Bir unsurun sürmesi, değişmesi veya kaybolması eşit derecede tartışılabilir sonuçlardır.",
+      "guidance": "Yalnız örnek vermek gerekirse “müzedeki bakır cezve ↔ benim hayatımda kahve hazırlama/ikram etme biçimi” denebilir; öğrencinin evinde cezve, halı veya çeyiz bulunduğunu varsaymayın. Seçili nesnenin geçmişteki anlamını müze bilgisinden, bugünkü karşılığını öğrencinin gerçek gözleminden alın.",
       "source_locator": "basılı s.151 / PDF s.152 — soru 2",
       "answer_sections": {
-        "Müzelerde Yer Alabilecek Kültürel Unsurlar": [
-          "Geleneksel bakır cezve, fincan zarfları ve mangal takımları.",
-          "El tezgâhlarında kök boyayla dokunmuş motifli Yörük kilimleri.",
-          "Eski bağlama, kopuz, tambur ve ney gibi geleneksel çalgılar.",
-          "Toprak güveçler, sini, tahta kaşıklar ve yayık gibi mutfak gereçleri.",
-          "Geleneksel sandık, işlemeli havlular, dantel ve çeyiz örtüleri."
+        "Müzede Yer Alabileceğini Düşündüğüm Unsur": [
+          "[Gerçek turda gördüğüm veya önceden tahmin ettiğim kültürel nesne/uygulama 1]",
+          "[Nesne/uygulama 2]",
+          "[Nesne/uygulama 3]"
         ],
-        "Kendi Hayatımdaki Kültürel Unsurlar": [
-          "Evimizde misafire Türk kahvesi ikram etme geleneği ve sohbet kültürü.",
-          "Evimizin salonunda veya odasında serili olan geometrik desenli halılar.",
-          "Evde dinlenen türküler, okulda veya kursta çalınan bağlama ve enstrümanlar.",
-          "Bayramlarda veya aile buluşmalarında yer sofrası ya da ortak sofra adabı.",
-          "Annemin veya büyüklerimin sakladığı el emeği işlemeler ve hediyeleşme töresi."
-        ],
-        "Karşılaştırma ve Süreklilik Yorumu": "Geçmişin maddi nesneleri zamanla teknolojiye bağlı olarak değişip yerini modern araçlara bıraksa da, onların taşıdığı temel değerler (birliktelik, ikram, estetik zevk, vefa) biçim değiştirerek bugün de hayatımızda yaşamaya devam etmektedir."
+        "Kendi Hayatımdaki Karşılığı": [
+          "[Öğrencinin kendi yaşamından gerçek kullanım veya 'karşılığı yok' tespiti 1]",
+          "[Benzerlik/farklılık ve varsa değişim 2]",
+          "[Benzerlik/farklılık ve varsa kaybolma 3]"
+        ]
       }
     },
     {
@@ -103,17 +108,17 @@
       "printed_page": 151,
       "question_no": "3",
       "prompt_summary": "Kültürü taşıyan ve aktaran unsurları sınıflandırma",
-      "answer": "Kültürün kuşaktan kuşağa aktarılmasını sağlayan temel taşıyıcı unsurlar ve işlevleri tabloda şöyle sınıflandırılır:",
-      "guidance": "Öğretmen, sınıfta öğrencilere 'Bu taşıyıcılardan biri ortadan kalkarsa kültüre ne olur?' sorusunu yönelterek dilin ve ailenin kurucu önemini fark ettirmelidir.",
+      "answer": "Kitabın verdiği “Dil” örneğinden başlayarak kültürün taşınma yolları sınıflandırılabilir. Aşağıdaki kategoriler örnek sınıflandırmadır; öğrenci aynı işlevi başka başlıklarla açıklayabilir veya gerekçeli yeni kategori önerebilir.",
+      "guidance": "“Dil” kitapta hazır örnektir, diğerleri öğrencinin gerekçelendirebileceği örnek başlıklardır. “Kültürü en doğru yalnız aile/dil taşır” gibi sınırlayıcı tek sınıflandırma üretmeyin; seçilen unsurun *nasıl* aktardığını sordurun.",
       "source_locator": "basılı s.151 / PDF s.152 — soru 3",
       "answer_sections": {
-        "dil": "Kültürün hem kurucusu hem de en temel taşıyıcısıdır. Bütün soyut ve somut değerler, efsaneler, atasözleri ve bilimsel birikim dil vasıtasıyla zihne yerleşir ve nesilden nesle intikal eder.",
-        "aile": "Bireyin ilk sosyalleştiği kurumdur; terbiye, saygı, vefa, sofra adabı ve gündelik yaşam alışkanlıkları aile içinde yaşanarak doğal yolla kazanılır.",
-        "egitim": "Ortak millî tarihi, edebiyatı, değerleri, ortak dili ve vatandaşlık şuurunu sistemli, planlı ve kurumsal olarak yeni nesillere öğretir.",
-        "sanat_edebiyat": "Bir milletin ruh dünyasını, estetik zevkini, duygu derinliğini şiir, musiki, mimari ve resim yoluyla kalıcı hâle getirip geleceğe aktarır.",
-        "muzeler_arsivler": "Maddi ve maddi olmayan kültür mirasını belgeleyip koruyan, sergileyen ve topluma hatırlatan ortak bellek merkezleridir.",
-        "gelenek_torenler": "Kültürel uygulamaların bayram, düğün, anma ve törenlerle topluca yaşanmasını ve canlı tutulmasını sağlar.",
-        "dijital_medya": "Günümüzde kültür ürünlerinin hızla kaydedilmesini, küresel ölçekte paylaşılmasını, sanal müzelerle sınırların aşılmasını ve gençlerle buluşmasını sağlar."
+        "Dil": "Kelimeler, atasözleri ve anlatılar aracılığıyla kültürel bilgilerin aktarılmasını sağlar; kitap dilin kültürün hem parçası hem taşıyıcısı olduğunu açıkça belirtir.",
+        "Aile ve Yakın Çevre": "Gündelik davranış, alışkanlık ve anlatılar yüz yüze etkileşimle öğrenilebilir.",
+        "Eğitim": "Metinler, tarih ve kültür hakkında planlı öğrenme ortamı sağlayabilir.",
+        "Sanat ve Edebiyat": "Şiir, müzik, görsel sanatlar ve anlatılar kültürel deneyimleri ifade edip yeni kuşaklara ulaştırabilir.",
+        "Müzeler ve Arşivler": "Nesneleri ve ilgili bilgileri belgeleyip koruyarak geçmişle ilişki kurmaya imkân verebilir.",
+        "Gelenekler ve Toplumsal Etkinlikler": "Yaşatılan uygulamaların birlikte öğrenilmesini sağlayabilir.",
+        "Dijital Ortamlar": "Kayıt, paylaşım ve çevrim içi erişimle kültür ürünlerinin dolaşımına katkı sunabilir."
       }
     },
     {
@@ -122,9 +127,15 @@
       "printed_page": 151,
       "question_no": "4-6",
       "prompt_summary": "Müze-kültür çalışmasından yararlanarak yazının içeriğini zenginleştirme",
-      "answer": "Sanal müze izlenim yazısını içerik, estetik ve düşünsel yönden zenginleştirmek için 4 pedagojik ilke uygulanır:\n\n1. Karşılaştırma Sonuçlarını Yorumlama: Yapılan karşılaştırma kuru bir liste olarak bırakılmamalı; metnin içine 'Müzede cam fanusun arkasında gördüğüm o asırlık kilim motifi, aslında çocukluğumda babaannemin köy evindeki sedirde oturduğum günleri hatırlattı...' gibi duygu ve düşünce köprüleri kurularak yerleştirilmelidir.\n2. Görsellerin Anlam Katıcı Kullanımı: Yazıya eklenecek ekran görüntüleri veya eser fotoğrafları süs amacıyla değil; anlatılan düşünceyi somutlaştırmak için seçilmeli, görselin altına açıklayıcı kısa bir alt yazı (ör. 'Resim 1: Anadolu Medeniyetleri Müzesi Hitit Güneş Kursu') eklenmelidir.\n3. Metinlerarası Alıntı ve Kaynak Gösterme: Yazıda müzenin bilgi panosundan veya güvenilir bir kaynaktan kısa bir alıntı yapılıyorsa tırnak içinde belirtilmeli ve kaynağı gösterilmelidir. Alıntı, yazarın kendi izleniminin önüne geçmemeli; onu desteklemelidir.\n4. Özgün ve Samimi Dil Kullanımı: Resmî tanıtım broşürlerinin mekanik üslubu yerine; yazarın kendi şaşkınlığını, keşif sevincini ve kültürel bağlarını yansıtan özgün bir anlatım dili kurulmalıdır.",
-      "guidance": "Görseller süs olarak değil, belirli bir gözlem veya yorumu desteklemek için seçilmelidir; alıntılar öğrencinin kendi metin akışına organik biçimde bağlanmalıdır.",
-      "source_locator": "basılı s.151 / PDF s.152 — sorular 4-6"
+      "answer": "Sanal müze yazısında öğrencinin yaptığı gerçek gözlem ile kişisel izlenim arasında anlamlı bağ kurmasına yardımcı olacak dört adım:",
+      "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
+      "source_locator": "basılı s.151 / PDF s.152 — sorular 4-6",
+      "answer_sections": [
+        "1. Karşılaştırma: [Gerçekten gördüğüm eser] bana [kendi hayatımdaki gerçek benzerlik veya farklılığı] düşündürdü; çünkü [...].",
+        "2. Görsel: Gerçekte incelenen eser veya bölümün izinli ekran görüntüsü seçilir. Açıklaması “[müze adı, gerçek eser adı, kaynak]” biçiminde yazılır.",
+        "3. Alıntı: Müzenin bilgi panosu veya güvenilir kaynaktan kullanılan kısa ifade aynen ve kaynak belirtilerek verilir; öğrencinin yorumu bunun yerine geçmez.",
+        "4. Özgün izlenim: Gözlemlediğim ayrıntı [...]; bu ayrıntı bende [...] duygusu/düşüncesi uyandırdı. Bu cümleye yalnız öğrencinin gerçekten yaşadığı deneyim yazılır."
+      ]
     },
     {
       "question_id": "T2-P152-PERF01",
@@ -132,9 +143,18 @@
       "printed_page": 152,
       "question_no": "Kural Uygulayabilme",
       "prompt_summary": "Sanal müze izlenim yazısı için 13 kuralı uygulayan örnek model metin ve iskelet",
-      "answer": "Kitap s.152'de belirtilen 13 kuralın (a-j) tamamını karşılayan eksiksiz örnek sanal müze izlenim yazısı modeli ve yapı iskeleti aşağıdadır:\n\n---\n\n### EKRANDAN TAŞAN BİN YILLIK NEFES: ANADOLU MEDENİYETLERİ MÜZESİ’NDE BİR GEZİNTİ\n\n**Giriş:**\nBir tıkla binlerce yıllık bir zaman tüneline gireceğimi söyleselerdi belki inanmazdım; ancak T.C. Kültür ve Turizm Bakanlığının sanal müze portalında Anadolu Medeniyetleri Müzesi’nin ana kapısını araladığım an, odamın sessizliği bir anda kadim çağların uğultusuyla doldu. Bu müzeyi seçmemin asıl sebebi, üzerinde yaşadığımız Anadolu topraklarının yalnızca bir coğrafya değil, insanlığın ortak hafızasının ana rahmi olduğunu derinden hissetme arzusuydu. Ekranda beliren kubbeli tarihî han yapısı ve 360 derecelik panoramik görüntü, sanal bir turun ötesinde beni içine çeken büyülü bir atmosfer sundu.\n\n**Gelişme 1 (Gözlem ve Eser İncelemesi):**\nSanal koridorlarda ilerlerken özellikle Tunç Çağı ve Hitit salonunda uzun süre duraksadım. Ekranı yakınlaştırıp üç boyutlu olarak döndürebildiğim o meşhur 'Hitit Güneş Kursu'nun karşısında adeta büyülendim. Bronz diskin etrafındaki dairesel form ve boynuzlu geyik figürleri, atalarımızın gökyüzüne, güneşe ve doğanın bereketine duyduğu engin saygıyı somutlaştırıyordu. Bilgi panosundaki açıklamaları okurken bu kursun yalnızca bir hükümdarlık simgesi değil, aynı zamanda evrenin ahengini temsil eden bir inanç abidesi olduğunu öğrendim.\n\n**Gelişme 2 (Kültürel Bağ ve Karşılaştırma):**\nGezintimin devamında geleneksel dokumaların ve madeni kapların sergilendiği salona geçtim. Vitrinde sergilenen bin yıllık bir çömleğin üzerindeki geometrik bezemelerin, bugün Anadolu köylerinde dokunan kilimlerdeki 'koçboynuzu' ve 'eli belinde' motifleriyle neredeyse birebir örtüştüğünü fark etmek beni derinden sarstı. Levent Mercin’in belirttiği gibi, fiziksel olarak gözümüzün gördüğü bu kap kacak, arkasında asırlardır kopmayan görünmeyen bir kültürel mirasın ve zanaat ahlakının canlı şahidiydi. Bizler geçmişi müzelerde donmuş birer taş yığını sansak da, aslında o miras bugün çay içtiğimiz fincanda, serildiğimiz halıda nefes almayı sürdürüyordu.\n\n**Gelişme 3 (Sanal Deneyimin Değerlendirilmesi):**\nKuşkusuz sanal müze gezisinin en büyük avantajı, Ankara’ya gitmeden, günün herhangi bir saatinde eserleri kalabalıktan uzak, dilediğim açıyla inceleme imkânı sunmasıydı. Bununla birlikte, taşın soğuk dokusunu bizzat hissedememek ve tarihî binanın kendine has kokusunu duyamamak bu deneyimin eksik kalan yanıydı; yine de dijital çağın kültürel mirası ayağımıza getirmesi paha biçilmez bir kazanımdı.\n\n**Sonuç:**\nEkranı kapatıp odama döndüğümde, zihnimde asırların bıraktığı derin bir tefekkür vardı. Bu gezi bana müzelerin yalnızca geçmişin hatıralarını saklayan soğuk depolar değil; kim olduğumuzu, nereden gelip nereye gittiğimizi hatırlatan yaşayan birer kimlik aynası olduğunu öğretti. Dilimizin, töremizin ve sanatımızın bin yıllık köklerine sanal da olsa dokunabilmek, geleceğe daha sağlam adımlarla yürümem için bana tükenmez bir ilham verdi.",
-      "guidance": "Öğrencilere bu model metnin paragraf düzenini (Giriş: niyet ve ilk intiba; Gelişme: eser tahlili ve hayatla bağ; Sonuç: kültürel çıkarım ve özet) inceletiniz. Kendi yazılarında da benzer bir özgünlük, bağdaşıklık ve imla titizliği göstermelerini sağlayınız.",
-      "source_locator": "basılı s.152 / PDF s.153 — Kural Uygulayabilme"
+      "answer": "Kitabın yazma ölçütlerine göre hazırlanmış bir **izlenim yazısı modeli/iskeleti** aşağıdadır. Bu, yapılmış bir müze gezisinin raporu değildir. Öğrenci kendi gerçek gezi notlarıyla köşeli alanları doldurarak bütünlüklü bir metne dönüştürür.",
+      "guidance": "Bu örneği öğrenciye yaşanmış gezi gibi okutturmayın. Anadolu Medeniyetleri Müzesi'ndeki 3D eser döndürme, Güneş Kursu'nun özel sembolizmi, çömlek-kilim motifi özdeşliği veya 'atalarımız' üzerinden doğrudan kültürel süreklilik gibi doğrulanmamış ayrıntıları metne önceden yerleştirmeyin. Zengin ve özgün anlatım gerçek deneyimin *üzerine* kurulmalıdır.",
+      "source_locator": "basılı s.152 / PDF s.153 — Kural Uygulayabilme",
+      "answer_sections": {
+        "Örnek başlık": "[Gerçekten gezilen müze/ören yerinin adı] — [öğrencinin kişisel izlenimini yansıtan özgün başlık]",
+        "Giriş": "“[Seçtiğim müzeyi] çevrim içi gezmeye karar verdim; çünkü [kendi gerçek gerekçem]. Geziye başlamadan [beklentim] vardı. Turda ilk karşılaştığım [gerçek görüntü veya bölüm] bende [kişisel ilk izlenim] uyandırdı.”",
+        "Gelişme — Görünen miras": "“Özellikle [gerçekten gördüğüm eser/bölüm] dikkatimi çekti. Gözlemlediğim somut ayrıntılar şunlardı: [...]. Kurumun bilgi panosunda bu eser hakkında [gerçekten doğruladığım bilgi] yazıyordu; kaynağı [...].”",
+        "Gelişme — Görünmeyen miras ve karşılaştırma": "“Eserin yapılma amacı, kullanım alanı veya hikâyesi hakkında [kaynakta verilen bilgi] beni düşündürdü. Kendi yaşamımda [gerçek karşılık/benzerlik/farklılık/yokluk] gördüğüm için bu nesneyi [kişisel yorum] bakımından anlamlı buldum. Metindeki bilgiyle kendi yorumumu ayrı tutuyorum.”",
+        "Gelişme — Sanal deneyim": "“Sanal gezi sırasında gerçekten yararlandığım özellik [varsa yakınlaştırma/panorama/bilgi panosu/başka bir özellik]. Bu özellik incelememi [nasıl] etkiledi. Ekrandan gezmenin [kendi gözlediğim avantaj/sınır] yönünü de fark ettim.”",
+        "Sonuç": "“Geziden sonra [öğrendiğim bir şey] ve [değişen ya da pekişen düşüncem] benim için öne çıktı. Bu deneyim kültürel mirasa bakışımı [kendi gerekçemle] etkiledi.”",
+        "Teslim öncesi kaynak kontrolü": "Gerçek müze bağlantısı, ziyaret tarihi, eser adı, bilgi panosu ve kullanılan görseller doğrulanır. Her paragrafta gözlem, dış kaynak bilgisi ve kişisel yorum ayırt edilir."
+      }
     },
     {
       "question_id": "T2-P152-PERF02",
@@ -152,9 +172,21 @@
       "printed_page": 153,
       "question_no": "Süreci Değerlendirebilme",
       "prompt_summary": "10 ölçütlü öz değerlendirme ve akran değerlendirme sonuçlarını kullanarak yazıyı geliştirme",
-      "answer": "s.153'teki 10 ölçütlü Öz Değerlendirme Formu mekanik bir notlandırma değil, biçimlendirici bir yazma revizyonu aracıdır. 'Kısmen' veya 'Hayır' işaretlenen maddeler için somut geliştirme eylem adımları aşağıda modellenmiştir:\n\n1. Planlama Eksikliği (Ölçüt 1): 'Kime ve neyi anlatacağımı tam belirlememiştim' → Metnin hedef kitlesini belirleyip giriş-gelişme-sonuç taslağını yeniden kurdum.\n2. Giriş Zayıflığı (Ölçüt 2): 'Girişim dikkat çekici değildi' → Doğrudan müze adını vermek yerine, sanal kapıdan içeri adım atma hissiyle başlayarak merak uyandırdım.\n3. Geçiş İfadeleri (Ölçüt 3): 'Paragraflar arası kopukluk vardı' → 'Bunun yanı sıra', 'öte yandan', 'tam bu noktada' gibi bağlayıcı geçiş ifadeleri ekledim.\n4. Düşünceyi Geliştirme Yolları (Ölçüt 4): 'Anlatımım kuruydu' → Eseri tanıtırken karşılaştırma ve benzetme sanatlarından yararlandım.\n5. Bağdaşıklık (Ölçüt 5): 'Cümlelerimde mantık kopukluğu vardı' → Anlamca birbiriyle çelişen ifadeleri ayıkladım, bağdaşıklığı güçlendirdim.\n6. Söz Varlığı (Ölçüt 6): 'Tekrara düşmüştüm' → Eş anlamlı sözcükler ve sanat tarihi terimleri ekleyerek dili zenginleştirdim.\n7. Toplumsal Hassasiyet (Ölçüt 7): İncelendi; önyargılı veya incitici hiçbir ögeye yer verilmedi.\n8. Değerler Vurgusu (Ölçüt 8): Millî ve manevi mirasımızın sürekliliği vurgulandı.\n9. Başlık Uyumu (Ölçüt 9): 'Başlığım sıradandı' → 'Sanal Müze' yerine 'Ekrandan Taşan Bin Yıllık Nefes' gibi çağrışımı zengin bir başlık seçtim.\n10. Özgün Üslup (Ölçüt 10): İnternet tanıtım cümleleri çıkarılarak tamamen kendi hissettiğim duygularla yeniden yazıldı.",
-      "guidance": "QR'deki dereceli puanlama anahtarı ve akran değerlendirme formu görülmeden bunların ayrıntılı puanlama baremleri uydurulmamalıdır; öğrencilere formdaki ölçütleri somut yazı iyileştirmesine dönüştürme bilinci kazandırılmalıdır.",
-      "source_locator": "basılı s.153 / PDF s.154 — Öz/Akran Değerlendirme"
+      "answer": "s.153'te görünen on öz değerlendirme ölçütü, öğrencinin gerçekten “Kısmen” veya “Hayır” işaretlediği durumlarda uygulanacak **koşullu revizyon önerilerine** çevrilebilir. Bu öneriler öğrencinin metninde eksik bulunduğunu önceden varsaymaz.",
+      "guidance": "Öz değerlendirme öğrenci adına doldurulmaz. QR'deki akran formu ve puanlama anahtarının görünmeyen maddeleri de eklenmez. Her ‘Kısmen/Hayır’ işareti için yalnız öğrencinin kendi taslağında uygulanabilir bir değişiklik seçilsin.",
+      "source_locator": "basılı s.153 / PDF s.154 — Öz/Akran Değerlendirme",
+      "answer_sections": {
+        "1. Planlama": "Eğer hedef kitle/amaç belirsizse “Kime, neyi, nasıl ve hangi araçlarla anlatıyorum?” sorularıyla planı yeniden kur.",
+        "2. Giriş": "Eğer giriş ilgi çekmiyorsa gerçekten gözlenen bir ayrıntı veya kişisel soruyla başlama seçeneğini dene.",
+        "3. Başlatma–Sürdürme–Bitirme": "Eğer metin kopuksa anlam ilişkisine uygun geçiş ifadeleri seç; sırf süs olsun diye bağlaç ekleme.",
+        "4. Anlatım biçimi / düşünceyi geliştirme": "Eğer düşünce temelsizse gerçek gözlem, örnek veya karşılaştırmayla destekle.",
+        "5. Bağdaşıklık": "Eğer cümleler arasında anlam kopukluğu varsa gönderimleri, sıralamayı ve neden-sonuç bağlantılarını denetle.",
+        "6. Söz varlığı": "Eğer kelime seçimi hedef kitleye uygun değilse gereksiz tekrarları ve açıklanmayan terimleri düzelt.",
+        "7. Toplumsal hassasiyet": "Eğer incitici/genelleyici bir ifade tespit edersen somut ve saygılı bir anlatımla değiştir.",
+        "8. Değerler ve kültürel unsurlar": "Eğer konu gerektirdiği hâlde eksikse gerçek eser ve bilgilerle ilişki kur; kaynak dışı kültürel semboller ekleme.",
+        "9. Başlık": "Eğer başlık içerikle uyuşmuyorsa ana izlenimi daha iyi karşılayan bir başlık dene.",
+        "10. Özgün ve tutarlı üslup": "Eğer tanıtım metnini taklit ettiysen gerçek gözlemlerini ve kendi yorumunu öne çıkar; kaynağın cümlelerini sahiplenme."
+      }
     },
     {
       "question_id": "T2-P154-PERF01",
@@ -162,15 +194,15 @@
       "printed_page": 154,
       "question_no": "Öğrenme Günlüğü",
       "prompt_summary": "Tema sonu öğrenme günlüğünü 5 başlık altında anlamlı biçimde doldurma",
-      "answer": "2. Tema 'Kültür Yolculuğu' sonu Öğrenme Günlüğü, tema kazanımlarını bütüncül olarak kapsayan şu 5 analitik başlık altında doldurulur:",
-      "guidance": "Öğrenme günlüğü öğrencinin gerçek öğrenme durumunu ve eksiklerini yansıtmalıdır; bu metin öğretmene sınıfta yol gösterecek derinlik ve yapı modelidir.",
+      "answer": "Öğrenme Günlüğü öğrencinin tema boyunca gerçekten ne öğrendiğini, nerede zorlandığını ve hangi konuyu merak ettiğini anlamak içindir. Aşağıdaki beş başlık cevap değil, kişisel kayıt yazmayı kolaylaştıran cümle başlangıçlarıdır.",
+      "guidance": "Orhun Türkçesi ekleri, lehçe denklikleri, lebdeğmez veya aytışma gibi özel konular öğrencinin gerçek ihtiyacı/merakı olarak ortaya çıkmadıkça günlüğe onun adına yazılmamalıdır. Somut ders örneği istemek ile kişisel deneyim icat etmek farklıdır.",
       "source_locator": "basılı s.154 / PDF s.155 — Öğrenme Günlüğü",
       "answer_sections": {
-        "Bu süreçte öğrendiklerim": "Dil, tarih ve kültürün birbirini taşıyan ayrılmaz bir bütün olduğunu kavradım. Orhun Abideleri'nin devlet felsefesini, Dîvânu Lugâti’t-Türk'ün dil zenginliğini, Türk dünyası ortak kültürünü, âşık atışmalarındaki meşk ve nükte geleneğini ve sanal müzecilik yoluyla geçmişle bugün arasında kurulan hafıza köprüsünü öğrendim.",
-        "Pekiştirmem gereken konular": "Farklı Türk lehçeleri arasındaki ses ve sözcük denklikleri, Orhun Türkçesindeki bazı eklerin işlevleri ile halk şiirinde 'ayak açma ve lebdeğmez' kurallarının inceliklerini pekiştirmem gerekiyor.",
-        "Daha ayrıntılı incelemek istediğim konular": "Kaşgarlı Mahmud'un Dîvânu Lugâti't-Türk'teki haritasının coğrafi ayrıntıları, Göktürk yazıtlarının taşlara kazınma tekniği ve Kazakistan-Kırgızistan sahasındaki aytışma yarışmalarının canlı icralarını daha ayrıntılı incelemek istiyorum.",
-        "Kendimi geliştirmek için çaba harcadığım konular": "Metinlerarası karşılaştırma yapabilme, çok modlu görsel ve işitsel unsurları not alarak çözümleyebilme ve edindiğim izlenimleri özgün bir dille izlenim yazısına dönüştürme konusunda çaba gösterdim.",
-        "Gelecekte kullanabileceğim bilgiler": "Kültürel mirasa bakarken yalnızca vitrindeki fiziksel nesneyi değil, arkasındaki görünmeyen değerler dünyasını okuma becerisini ve dinleme sırasında sabırla sözün bitmesini bekleme adabını hayatım boyunca iletişimimde kullanacağım."
+        "Bu süreçte öğrendiklerim": "“Bu temada öğrendiğim ve daha önce bilmediğim [...] oldu. Bunu [...] etkinliğinde/örneğinde fark ettim.”",
+        "Pekiştirmem gereken konular": "“[...] konusunda henüz emin değilim; çünkü [...]. Bunu pekiştirmek için [...] yapacağım.”",
+        "Daha ayrıntılı incelemek istediğim konular": "“[...] hakkında daha çok şey öğrenmek istiyorum; merak ettiğim soru [...]. Başvurabileceğim kaynak [...].”",
+        "Kendimi geliştirmek için çaba harcadığım konular": "“[...] çalışmasında [...] yapmak için çaba gösterdim. Önceki denememe göre [...] değişti / hâlâ [...] zor geliyor.”",
+        "Öğrendiğim ve gelecekte kullanabileceğim bilgiler": "“[...] bilgisini veya becerisini [...] durumda kullanabilirim; bunu seçmemin nedeni [...].”"
       }
     }
   ]
