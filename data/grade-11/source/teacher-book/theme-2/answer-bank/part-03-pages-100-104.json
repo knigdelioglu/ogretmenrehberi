@@ -10,11 +10,20 @@
       "printed_page": 100,
       "question_no": "1",
       "prompt_summary": "Çordon'un ani kararı ve psikolojik nedeni",
-      "answer": "Çordon, yaklaşık yirmi yıl önce savaşta ölen oğlunun öğretmenlik yaptığı köye gidip onun izlerini görmek ister. Bu kararın arkasında yıllardır bastırdığı oğul özlemi, yaşlılığın getirdiği zamanın daraldığı duygusu ve kapanmamış yas vardır. Oğlunun hatırasına fiziksel olarak yaklaşmak, Çordon için kaybıyla yeniden bağ kurmanın bir yoluna dönüşür.",
+      "answer": "Çordon, yaklaşık yirmi yıl önce II. Dünya Savaşı'nda şehit düşen oğlu Sultan'ın savaştan önce öğretmenlik yaptığı köye gitmeye karar verir. Bu ani kararın ardında; yıllardır bastırılan derin evlat hasreti, yaşlılıkla birlikte gelen 'henüz gözlerim kapanmadan mutlaka gitmeliyim' duygusu ve oğlunun hatırasıyla fiziksel olarak yüzleşerek yas sürecini tamamlama ihtiyacı yatar.",
       "evidence_quotes": [
-        "Henüz gözlerim kapanmadan mutlaka gitmeliyim oraya."
+        "Henüz gözlerim kapanmadan mutlaka gitmeliyim oraya.",
+        "Onun hayatta olduğuna, ölmediğine her zaman inandım, her zaman hissettim bunu."
       ],
-      "source_locator": "basılı s.100 / PDF s.101 — soru 1"
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 1",
+      "answer_sections": {
+        "Alınan Karar": "Yirmi yıldır hiç gitmediği ve oğlunun askere gitmeden önce öğretmenlik yaptığı dağ köyüne gidip onun ayak bastığı yerleri ve yaşadığı çevreyi görmek.",
+        "Psikolojik Gerekçeler": [
+          "Bastırılmış Acının Patlaması: Sefer Ali ile karşılaşmanın tetiklediği hatıraların içindeki yangını alevlendirmesi.",
+          "Zamanın Daraldığı Hissi: Yaşlılığın getirdiği ölüm sezgisi ve gözleri kapanmadan evladının ruhunu selamlama arzusu.",
+          "Tamamlanmamış Yas: Oğlunun ölümünü zihnen bilse de kalben onun yaşadığına inanma ihtiyacı."
+        ]
+      }
     },
     {
       "question_id": "T2-P100-Q02",
@@ -22,8 +31,11 @@
       "printed_page": 100,
       "question_no": "2",
       "prompt_summary": "Eşinin Çordon'un kararına tepki göstermemesinin nedeni",
-      "answer": "Eşi, Çordon'u vazgeçirmenin işe yaramayacağını anlar. Ayrıca oğlunun öz annesi olmadığı için onu caydırmaya çalışırsa Çordon'un bunu 'Öz anası olsaydın...' biçiminde yorumlamasından çekinir. Bu yüzden kararı mantıksız bulsa da açıkça karşı çıkmaz ve onun acısına saygı göstermeyi seçer.",
-      "source_locator": "basılı s.100 / PDF s.101 — soru 2"
+      "answer": "Eşi Nazifkan, Çordon'un bu sözleri sakin, kararlı ve son derece içten söylediğini görerek onu vazgeçirmenin imkânsız olduğunu anlamıştır. Ayrıca Sultan'ın öz annesi olmadığı için engel olmaya kalkarsa kocasının 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebileceğinden çekinmiş; bu ağır sözü duymamak ve eşinin derin kederine saygı göstermek adına susmayı tercih etmiştir.",
+      "evidence_quotes": [
+        "Çünkü o zaman ihtiyar kocası ona 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebilirdi."
+      ],
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 2"
     },
     {
       "question_id": "T2-P100-Q03",
@@ -31,8 +43,8 @@
       "printed_page": 100,
       "question_no": "3",
       "prompt_summary": "Eşinin ani kararı yadırgaması ve insanların benzer kararlara tepkisi",
-      "answer": "Eşi, yirmi yıl önce ölmüş bir oğlun yaşadığı yere gidip onu bulacakmış gibi davranmayı gerçeklikle bağdaşmayan, yaşlılığın ve acının etkisiyle alınmış bir karar olarak görür. İnsanlar böyle ani ve alışılmadık kararlara genellikle şaşkınlık, endişe veya kuşkuyla yaklaşabilir; kişiyi vazgeçirmeye çalışabilirler. Ancak kararın ardındaki duygusal ihtiyaç anlaşılmadan yalnız dışarıdan yargılamak eksik kalabilir.",
-      "source_locator": "basılı s.100 / PDF s.101 — soru 3"
+      "answer": "Eşinin kararı yadırgama sebebi, yirmi yıl önce ölmüş ve bugüne kadar evde hiç bahsi edilmemiş bir oğlun peşinden birdenbire yola çıkmayı dışarıdan bakan biri için kocamışlık, bunaklık veya akıl tutulması gibi görmesidir. İnsanlar alışılmışın dışındaki bu tür ani ve duygusal kararlar karşısında genellikle şaşkınlık, endişe veya alaycı bir direnç gösterir; olayın arkasındaki psikolojik yası ve içsel zorunluluğu kavramakta zorlanırlar.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 3"
     },
     {
       "question_id": "T2-P100-Q04",
@@ -40,9 +52,9 @@
       "printed_page": 100,
       "question_no": "4",
       "prompt_summary": "Ölmüş oğlunun yaşadığına inanmasının Çordon'un ruh hâliyle ilişkisi",
-      "answer": "Bu durum Çordon'un oğlunun ölümünü zihinsel olarak bilse de duygusal olarak kaybı bütünüyle kabullenemediğini düşündürür. Uzun süren özlem, anılar ve pişmanlık duygusu oğlunu zihninde canlı tutmuştur; yol boyunca onunla buluşacağını hayal etmesi de hatıra ile gerçekliğin birbirine yaklaşmasını gösterir.",
-      "explanation": "Burada bir klinik tanı koymak yerine yalnız metnin gösterdiği yas, özlem ve hatıra yoğunluğu üzerinden yorum yapmak gerekir.",
-      "source_locator": "basılı s.100 / PDF s.101 — soru 4"
+      "answer": "Çordon mantığıyla oğlunun öldüğünü bilmekte ('Elbette her şeyi biliyorum ben'), ancak kalbiyle bu acı kaybı kabullenememektedir. Bu durum, ağır bir travma yaşayan insanın geliştirdiği bir savunma mekanizmasıdır; oğlunu hayalinde yaşatarak hayata tutunmakta, hatırayı canlı tutarak yalnızlığına ve derin özlemine teselli aramaktadır.",
+      "explanation": "Cevapta klinik bir tanı yerine metnin doğrudan sunduğu evlat hasreti, yas ve hatıra yoğunluğu temel alınmalıdır.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 4"
     },
     {
       "question_id": "T2-P100-Q05",
@@ -50,8 +62,8 @@
       "printed_page": 100,
       "question_no": "5",
       "prompt_summary": "İnsanların bazı acı olayları tamamen unutmak istemesini yorumlama",
-      "answer": "Çok acı veren olayları hatırlamak kişide kayıp, suçluluk veya çaresizlik duygularını yeniden canlandırabilir. Bu nedenle insan bazen kendini korumak için o olayı düşünmekten kaçınabilir. Fakat Oğulla Buluşma'da görüldüğü gibi bastırılan hatıralar bütünüyle yok olmayabilir; yıllar sonra bir karşılaşma veya çağrışım onları yeniden ortaya çıkarabilir.",
-      "source_locator": "basılı s.100 / PDF s.101 — soru 5"
+      "answer": "İnsanlar büyük keder, çaresizlik veya suçluluk barındıran travmatik olayları hatırladıklarında aynı ıstırabı tekrar yaşamamak için zihinsel bir savunma mekanizması olarak unutmayı ve yok saymayı seçerler. Ancak hikâyede görüldüğü gibi bastırılan anılar bütünüyle yok olmaz; en küçük bir çağrışımla yeniden gün yüzüne çıkar ve yüzleşilmeyi bekler.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 5"
     },
     {
       "question_id": "T2-P100-Q06",
@@ -59,9 +71,9 @@
       "printed_page": 100,
       "question_no": "6",
       "prompt_summary": "Kızlarının Çordon'u suçlamasını değerlendirme",
-      "answer": "Kızların tepkisi anlaşılabilir; çünkü kardeşlerinin çok genç olduğunu ve babalarının yetkili subaya başvurarak onu cepheye gitmekten kurtarabileceğini düşünürler. Buna karşılık Çordon, Sultan'ın gönüllü kararına müdahale etmeyi oğluna kötülük etmek ve onun iradesini yok saymak olarak görür. Bu nedenle iki tarafın çatışması sevgisizlikten değil, Sultan'ı koruma ve onun seçimine saygı duyma anlayışlarının farklılığından doğar.",
-      "guidance": "Katılma veya katılmama yönünde farklı cevaplar kabul edilebilir; gerekçenin metindeki olay ve değer çatışmasına dayanması gerekir.",
-      "source_locator": "basılı s.100 / PDF s.101 — soru 6"
+      "answer": "Kızların tepkisi kardeş sevgisi ve aileyi koruma güdüsü açısından anlaşılabilirdir; Sultan'ın çok genç olduğunu, annelerinin hasta yattığını ve babalarının demirci nüfuzuyla onu cepheden kurtarabileceğini düşünmüşlerdir. Ancak Çordon açısından bakıldığında, oğlunun gönüllü vatan savunması kararına müdahale etmek onun şahsiyetini ve erkeklik gururunu ezmek demektir. Bu nedenle çatışma sevgisizlikten değil, iki tarafın sevgi ve sorumluluk anlayışındaki derin değer farkından kaynaklanır.",
+      "guidance": "Öğrencinin kızlara veya babaya hak vermesi mümkündür; önemli olan cevabın metindeki iki meşru değer (ailenin can güvenliği vs. bireyin hür iradesi ve vatan görevi) üzerinden gerekçelendirilmesidir.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 6"
     },
     {
       "question_id": "T2-P100-Q07",
@@ -69,11 +81,11 @@
       "printed_page": 100,
       "question_no": "7",
       "prompt_summary": "Çordon'un kızlarının suçlamalarına rağmen pişmanlık duymamasının nedeni",
-      "answer": "Çordon, Sultan'ın cepheye kendi isteğiyle gitmesini onun kişiliğinin, cesaretinin ve sorumluluk anlayışının bir parçası olarak kabul eder. Yetkili subaya başvurup oğlunun kararını bozdurmayı ona iyilik değil, seçimine karşı çıkmak olarak görür. Bu nedenle kızlarının çok ağır sözlerine rağmen kendi davranışını yanlış saymaz.",
+      "answer": "Çordon, Sultan'ın cepheye gitme kararını kendi iradesiyle ve mertçe aldığını bilmektedir. Araya girip oğlunu askerlikten muaf tutturmayı ona iyilik değil, onun onuruna ve erkekliğine yapılmış bir kötülük ('Oğluma kötülük edemem!') saymıştır. Evladının vatan borcu karşısındaki kararlılığına duyduğu derin saygı, kızlarının suçlamaları karşısında vicdanen pişmanlık duymasını engellemiştir.",
       "evidence_quotes": [
         "Oğluma kötülük edemem!"
       ],
-      "source_locator": "basılı s.100 / PDF s.101 — soru 7"
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 7"
     },
     {
       "question_id": "T2-P100-Q08",
@@ -81,12 +93,12 @@
       "printed_page": 100,
       "question_no": "8",
       "prompt_summary": "Oğulla Buluşma'nın konusu ve yazılma amacı",
-      "answer": "Konu: Yaşlı Çordon'un savaşta kaybettiği oğlu Sultan'ın izlerini görmek için onun yaşadığı yere gitmesi ve yolculuk sırasında geçmişteki vedayı yeniden hatırlamasıdır. Yazılma amacı, metinden hareketle; savaşın ailelerde bıraktığı kaybı, baba-oğul sevgisini, özlemi, fedakârlığı ve insanın geçmişle kurduğu güçlü bağı görünür kılmak olarak değerlendirilebilir.",
+      "answer": "Hikâyenin konusu ve yazılma amacı metnin olay örgüsü ve iletileri doğrultusunda şu şekilde belirlenir:",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 8",
       "answer_sections": {
-        "konu": "Çordon'un ölen oğlunun izlerini ararken geçmişteki vedayı ve kaybını yeniden yaşaması.",
-        "yazilma_amaci": "Savaşın insani bedelini, baba-oğul sevgisini, özlem ve fedakârlığı anlatmak."
-      },
-      "source_locator": "basılı s.100 / PDF s.101 — soru 8"
+        "konu": "II. Dünya Savaşı'nda şehit olan oğlu Sultan'ın hatırasına doğru yola çıkan yaşlı Çordon'un iç dünyası, evlat hasreti ve geçmişteki veda anıyla yüzleşmesi.",
+        "yazilma_amaci": "Savaşın cephe gerisinde bıraktığı derin insani ve ailevi yıkımı göstermek; baba-oğul sevgisi, fedakârlık ve evladın hür seçimine saygı duyma erdemini evrensel bir duyarlıkla anlatmak."
+      }
     },
     {
       "question_id": "T2-P101-Q09",
@@ -94,9 +106,22 @@
       "printed_page": 101,
       "question_no": "9",
       "prompt_summary": "Metindeki öznel ve nesnel ifade örneklerini ayırma",
-      "answer": "Nesnel ifadeye 'İhtiyarın bir oğlu vardı ve yirmi yıl kadar önce savaşta ölmüştü.' cümlesi örnek verilebilir; doğrulanabilir bir olay bildirir. Öznel ifadeye ise Çordon'un kararının 'pek saçma' görülmesi veya oğlunu görme arzusunun 'önüne geçilmez bir yangın' gibi anlatılması örnek olabilir. Öznel ifadeler duyguyu ve bakış açısını güçlendirdiği için hikâyenin etkileyiciliğini artırır.",
-      "guidance": "Öğrenci metinden başka örnekler seçebilir; önemli olan nesnel bilgi ile değerlendirme/duygu içeren ifadeyi doğru ayırmasıdır.",
-      "source_locator": "basılı s.101 / PDF s.102 — soru 9"
+      "answer": "Metinde olayların tarihsel ve mekânsal çerçevesi nesnel ifadelerle kurulurken, kişilerin ruh dünyası ve acıları etkileyici öznel benzetmelerle aktarılmıştır:",
+      "guidance": "Öğrencinin metinden seçtiği cümlelerin nesnel doğrulanabilirlik ve öznel duygu/yorum niteliğini ayırt etmesi ve öznel ifadelerin hikâyenin duygusal etkisini nasıl artırdığını açıklaması beklenir.",
+      "source_locator": "basılı s.101 / PDF s.102 — Metni Anlayalım soru 9",
+      "answer_sections": {
+        "Öznel İfadeler": [
+          "Kocaman ve yorgun elleri, dizlerinin üzerinde birer büyük balık gibi duruyordu adamın.",
+          "Buna rağmen oğlunu görmek için o köye gitmek arzusu önüne geçilmez bir yangın gibi büyüdü içinde.",
+          "Kocası pek tuhaf bir hayal kurmuştu."
+        ],
+        "Nesnel İfadeler": [
+          "İhtiyarın bir oğlu vardı ve yirmi yıl kadar önce savaşta ölmüştü.",
+          "Ekim 1941’de, iş yerinde demir döverken, biri koşarak gelmiş ve ona hemen eve gitmesini... söylemişti.",
+          "Birinci karısı on yıl önce ölmüştü ve onun ikinci karısıydı."
+        ],
+        "Etkileyicilik Gerekçesi": "Öznel benzetmeler (balık gibi yorgun eller, yangın gibi arzu) soyut bir duygu olan kederi somutlaştırıp okuyucunun kalbine dokunduğu için anlatımı çok daha sarsıcı ve unutulmaz kılmaktadır."
+      }
     },
     {
       "question_id": "T2-P101-Q10",
@@ -104,29 +129,30 @@
       "printed_page": 101,
       "question_no": "10",
       "prompt_summary": "Metnin açık/örtük iletileri, zihniyeti, üslubu ve anlatım özellikleri",
-      "answer": "Metin savaşın aileler üzerinde bıraktığı acıyı, baba-oğul sevgisini ve geçmişin insan üzerindeki kalıcı etkisini işler. Açık iletiler olay ve konuşmalarla doğrudan görünürken; örtük iletiler insanın kayıpla yaşaması, seçimlere saygı ve fedakârlık gibi anlamlar üzerinden kurulur. Üslup duygulu, canlı ve yer yer betimleyicidir. Anlatma, betimleme ve diyalog birlikte kullanılır; geriye dönüş ve iç çözümleme anlatının psikolojik derinliğini artırır.",
+      "answer": "Oğulla Buluşma hikâyesinin yapı, üslup, zihniyet ve ileti boyutlarının kapsamlı tablosu:",
+      "source_locator": "basılı s.101 / PDF s.102 — Metni Anlayalım soru 10",
       "answer_sections": {
-        "acik_iletiler": [
-          "Sultan gönüllü olarak cepheye gider.",
-          "Çordon yıllar sonra oğlunun yaşadığı yere gitmek ister."
-        ],
-        "ortuk_iletiler": [
-          "Büyük kayıpların hatırası yıllar geçse de insanı etkileyebilir.",
-          "Sevgi bazen korumak kadar karşıdakinin seçimine saygı duymayı da içerir."
-        ],
-        "zihniyet": "II. Dünya Savaşı koşullarının, görev ve fedakârlık düşüncesinin güçlü olduğu bir toplumsal çevre.",
-        "uslup": "Duygulu, gerçekçi, canlı ve betimleyici.",
         "anlatim_bicimleri": [
-          "Öyküleme",
-          "Betimleme"
+          "Öyküleme: Çordon'un yolculuğu, istasyondaki asker sevki ve vedalaşma olay örgüsüyle aktarılır.",
+          "Betimleme: Yaşlı Çordon'un fiziki görünüşü, demirci atölyesi, tren istasyonu ve bozkır yolu görselleştirilir."
         ],
         "anlatim_teknikleri": [
-          "Diyalog",
-          "Geriye dönüş",
-          "İç çözümleme"
-        ]
-      },
-      "source_locator": "basılı s.101 / PDF s.102 — soru 10"
+          "Geriye Dönüş (Flashback): Çordon'un at sırtındayken 1941 Ekim ayındaki demirci dükkânına ve istasyona dönmesi.",
+          "İç Çözümleme / İç Konuşma: Çordon ve Nazifkan'ın sessiz kaldıkları anlarda zihinlerinden geçen duygu ve niyetlerin aktarılması.",
+          "Diyalog: Çordon ile Sultan, Çordon ile Nazifkan arasındaki doğrudan konuşmalar."
+        ],
+        "acik_iletiler": [
+          "Sultan vatan savunması için kendi isteğiyle gönüllü olarak cepheye gitmiştir.",
+          "Çordon yirmi yıl sonra oğlunun hatırasını aramak için yola çıkmıştır."
+        ],
+        "ortuk_iletiler": [
+          "Gerçek sevgi, muhatabın onurlu ve ahlaki seçimlerine saygı duymayı gerektirir.",
+          "Savaş yalnızca cephedeki askerleri değil, geride bekleyen anaları ve babaları da ömür boyu yaralar.",
+          "Samimi bir evlat yası aradan ne kadar zaman geçerse geçsin ilk günkü tazeliğini korur."
+        ],
+        "zihniyet": "II. Dünya Savaşı döneminde Sovyet-Kırgız toplumunun vatan savunması, görev ahlakı, bozkır kültürü ve geleneksel aile değerleri.",
+        "uslup": "Sade, içten, psikolojik derinliği olan lirik ve gerçekçi bir anlatım dili."
+      }
     },
     {
       "question_id": "T2-P102-Q11",
@@ -134,8 +160,16 @@
       "printed_page": 102,
       "question_no": "11",
       "prompt_summary": "Oğulla Buluşma'yı ana olay sırasını koruyarak özetleme",
-      "answer": "Yaşlı Çordon, savaşta yaklaşık yirmi yıl önce ölen oğlu Sultan'ın öğretmenlik yaptığı köye gitmeye karar verir. Eşi bu kararı anlamsız bulsa da onu engellemez. Yolda Çordon, Sultan'ın 1941'de gönüllü olarak cepheye gidişini hatırlar. Kızları babalarından Sultan'ı sevkten kurtarmasını istemiş, fakat Çordon oğlunun kararına müdahale etmemiştir. Trenin kısa süre durduğu yerde baba ile oğul son kez kucaklaşmış; Çordon oğlunu uğurladıktan sonra büyük bir acıyla ağlamıştır. Yıllar sonra çıktığı yolculuk, onun oğlunun hatırasıyla yeniden yüzleşmesini sağlar.",
-      "source_locator": "basılı s.102 / PDF s.103 — soru 11"
+      "answer": "Oğulla Buluşma hikâyesinin sebep-sonuç ve kronolojik akışını koruyan özeti:",
+      "source_locator": "basılı s.102 / PDF s.103 — Metni Anlayalım soru 11",
+      "answer_sections": {
+        "1. Karar ve Eşin Sessizliği": "Yaşlı demirci Çordon, yirmi yıl önce savaşta şehit düşen oğlu Sultan'ın öğretmenlik yaptığı köye gitmeye karar verir; eşi Nazifkan kocasının kararlılığına ve acısına hürmeten susar.",
+        "2. Şafak Vakti Yola Çıkış ve Hayaller": "Çordon sabah erkenden atını eyerleyip dağ yoluna koyulur; yol boyunca oğluyla yapacağı kavuşma konuşmasını hayal eder.",
+        "3. Geçmişe Dönüş (1941 Ekim Veda Haberi)": "Yolculuk sırasında Çordon, demirci örsü başındayken oğlunun gönüllü olarak cepheye gideceği haberini aldığı günü hatırlar.",
+        "4. İstasyondaki Çatışma ve Uğurlama": "Kızları Sultan'ı kurtarması için babalarına yalvarıp onu suçlarken Çordon oğlunun mertliğine saygı duyar ve onun seçimine engel olmaz.",
+        "5. Son Kucaklaşma ve Gözyaşları": "Tren hareket ederken baba-oğul son kez sarılır; tren uzaklaştığında Çordon köpükler içindeki atının boynuna sarılarak hüngür hüngür ağlar.",
+        "6. Hatırayla Bütünleşme": "Çordon, oğlunun kutsal hatırasına ve onun teneffüs ettiği topraklara doğru huzurla yoluna devam eder."
+      }
     },
     {
       "question_id": "T2-P102-GRAM01",
@@ -143,41 +177,41 @@
       "printed_page": 102,
       "question_no": "Dil Bilgisi 1",
       "prompt_summary": "Metinlerdeki çekimli fiilleri kip ve çekim yapısına göre sınıflandırma",
-      "answer": "Fiiller kip ve çekim özelliklerine göre aşağıdaki gruplarda sınıflandırılabilir:",
-      "explanation": "İsim-fiil ve zarf-fiil biçimleri ('sürüklemekten', 'verip', 'götürmeden' vb.) çekimli fiil listesine alınmamıştır.",
-      "source_locator": "basılı s.102-103 / PDF s.103-104 — dil bilgisi soru 1",
+      "answer": "Parçalardaki çekimli fiiller haber/dilek kipi ve basit/birleşik çekim özelliklerine göre şu şekilde sınıflandırılır:",
+      "explanation": "Metinlerde geçen 'sürüklemekten' (isim-fiil), 'verip' (zarf-fiil), 'götürmeden' (zarf-fiil), 'döşeliydi' (isim soylu ek-fiil) gibi fiilimsi veya isim yüklemleri çekimli fiil tablosuna dâhil edilmemiştir.",
+      "source_locator": "basılı s.102-103 / PDF s.103-104 — Sıra Sizde soru 1",
       "answer_sections": {
-        "Haber kipleriyle çekimlenenler": [
-          "kalkmış",
-          "diktirmişti",
-          "yükselmişti",
-          "ederdi",
-          "bıktım",
-          "usandım",
-          "bilemezdim",
-          "soğuyordu",
-          "dolduruyordu",
-          "düşündün",
-          "sustun",
-          "olurdu",
-          "düşündürmez",
-          "söyletirdi",
-          "düşündüm",
-          "verdi",
-          "karardı",
-          "oldu",
-          "koptu",
-          "başladı"
+        "Haber Kipleriyle Çekimlenmiş Fiiller": [
+          "kalkmış (öğrenilen geçmiş zaman)",
+          "diktirmişti (öğrenilen geçmiş zamanın hikâyesi)",
+          "yükselmişti (öğrenilen geçmiş zamanın hikâyesi)",
+          "ederdi (geniş zamanın hikâyesi)",
+          "bıktım (görülen geçmiş zaman)",
+          "usandım (görülen geçmiş zaman)",
+          "bilemezdim (geniş zamanın olumsuzunun hikâyesi)",
+          "soğuyordu (şimdiki zamanın hikâyesi)",
+          "dolduruyordu (şimdiki zamanın hikâyesi)",
+          "düşündün (görülen geçmiş zaman)",
+          "sustun (görülen geçmiş zaman)",
+          "olurdu (geniş zamanın hikâyesi)",
+          "düşündürmez (geniş zamanın olumsuzu)",
+          "söyletirdi (geniş zamanın hikâyesi)",
+          "düşündüm (görülen geçmiş zaman)",
+          "verdi (görülen geçmiş zaman)",
+          "karardı (görülen geçmiş zaman)",
+          "oldu (görülen geçmiş zaman)",
+          "koptu (görülen geçmiş zaman)",
+          "başladı (görülen geçmiş zaman)"
         ],
-        "Dilek / tasarlama kipleri": [
-          "yaşayalım",
-          "alsa",
-          "kalsa",
-          "sararsa",
-          "buyur",
-          "çal"
+        "Dilek / Tasarlama Kipleriyle Çekimlenmiş Fiiller": [
+          "yaşayalım (istek kipi)",
+          "alsa (şart kipi)",
+          "kalsa (şart kipi)",
+          "sararsa (şart kipi)",
+          "buyur (emir kipi)",
+          "çal (emir kipi)"
         ],
-        "Basit çekimli örnekler": [
+        "Basit Çekimli Fiiller (Tek Kip Eki Alanlar)": [
           "kalkmış",
           "bıktım",
           "usandım",
@@ -197,15 +231,15 @@
           "koptu",
           "başladı"
         ],
-        "Birleşik çekimli örnekler": [
-          "diktirmişti",
-          "yükselmişti",
-          "ederdi",
-          "bilemezdim",
-          "soğuyordu",
-          "dolduruyordu",
-          "olurdu",
-          "söyletirdi"
+        "Birleşik Çekimli Fiiller (İki Kip / Ek-fiil Alanlar)": [
+          "diktirmişti (öğrenilen geçmiş zamanın hikâyesi)",
+          "yükselmişti (öğrenilen geçmiş zamanın hikâyesi)",
+          "ederdi (geniş zamanın hikâyesi)",
+          "bilemezdim (geniş zamanın hikâyesi)",
+          "soğuyordu (şimdiki zamanın hikâyesi)",
+          "dolduruyordu (şimdiki zamanın hikâyesi)",
+          "olurdu (geniş zamanın hikâyesi)",
+          "söyletirdi (geniş zamanın hikâyesi)"
         ]
       }
     },
@@ -215,32 +249,32 @@
       "printed_page": 103,
       "question_no": "Dil Bilgisi 2",
       "prompt_summary": "Fiilleri öznesine göre çatı bakımından sınıflandırma",
-      "answer": "Fiiller çatı özelliklerine göre aşağıdaki biçimde sınıflandırılır.",
+      "answer": "Cümlelerdeki fiillerin öznesine göre çatı özellikleri (etken, edilgen, dönüşlü, işteş):",
+      "source_locator": "basılı s.103 / PDF s.104 — Sıra Sizde soru 2",
       "answer_sections": {
         "etken": [
-          "yalvarır",
-          "tükenmez",
-          "geldiler",
-          "aldılar",
-          "kodular",
-          "seviniyor"
+          "yalvarır (özne 'anam' gerçek ve etken)",
+          "tükenmez (özne 'Oğuz beyleri' gerçek)",
+          "geldiler (özne 'onlar' gerçek)",
+          "aldılar (özne 'onlar' gerçek)",
+          "kodular (özne 'onlar' gerçek)",
+          "seviniyor (özne 'ben' gerçek)"
         ],
         "edilgen": [
-          "döğüldü",
-          "çalındı",
-          "kurulmuştu",
-          "dizilmişti",
-          "beğenilen"
+          "döğüldü (eylemi yapan bilinmiyor, -l- çatı eki var, 'nakkareler' sözde özne)",
+          "çalındı (eylemi yapan bilinmiyor, -n- çatı eki var, 'borular' sözde özne)",
+          "kurulmuştu (eylemi yapan bilinmiyor, -l- eki var, 'badyalar' sözde özne)",
+          "dizilmişti (eylemi yapan bilinmiyor, -l- eki var, 'sürahiler' sözde özne)",
+          "beğenilen (fiilimside edilgenlik: başkası tarafından beğenilme)"
         ],
         "donuslu": [
-          "övünüyorum"
+          "övünüyorum (eylemi yapan da eylemden etkilenen de 'ben'dir; -n- dönüşlülük eki vardır)"
         ],
         "istes": [
-          "kapışırlar",
-          "sözleşmiştik"
+          "kapışırlar (eylem birden fazla özne tarafından birlikte yapılmaktadır, -ş- eki vardır)",
+          "sözleşmiştik (eylem karşılıklı olarak yapılmıştır, -ş- eki vardır)"
         ]
-      },
-      "source_locator": "basılı s.103 / PDF s.104 — dil bilgisi soru 2"
+      }
     },
     {
       "question_id": "T2-P104-GRAM03",
@@ -248,33 +282,33 @@
       "printed_page": 104,
       "question_no": "Dil Bilgisi 3",
       "prompt_summary": "Fiilleri nesnesine göre çatı bakımından sınıflandırma",
-      "answer": "Fiiller nesne alıp almama ve ettirgenlik/oldurganlık bakımından aşağıdaki gruplarda gösterilebilir.",
+      "answer": "Örneklerdeki fiillerin nesnesine göre çatı özellikleri (geçişli, geçişsiz, oldurgan, ettirgen):",
+      "source_locator": "basılı s.104 / PDF s.105 — Sıra Sizde soru 3",
       "answer_sections": {
         "gecisli": [
-          "bağladı",
-          "bıraktı",
-          "aldı",
-          "verdi",
-          "sunarak"
+          "bağladı ('kılıcını' nesnesini alır, onu bağladı)",
+          "bıraktı ('çomağı' nesnesini alır, onu bıraktı)",
+          "aldı ('bir avuç toprak' nesnesini alır, onu aldı)",
+          "verdi ('onu' verdi)",
+          "sunarak ('onu' sunarak)"
         ],
         "gecissiz": [
-          "ölmez",
-          "ölür",
-          "daldı",
-          "çıkıp",
-          "doğruldun",
-          "geldin",
-          "bindin"
+          "ölmez (nesne alamaz, *onu ölmez)",
+          "ölür (nesne alamaz, *onu ölür)",
+          "daldı (nesne alamaz, *onu daldı)",
+          "çıkıp (nesne alamaz, *onu çıkıp)",
+          "doğruldun (nesne alamaz, *onu doğruldun)",
+          "geldin (nesne alamaz, *onu geldin)",
+          "bindin (nesne alamaz, *onu bindin)"
         ],
         "oldurgan": [
-          "püskürttü"
+          "püskürttü ('püskürmek' geçişsizdir, -t- ekiyle nesne alabilir hâle getirilmiştir)"
         ],
         "ettirgen": [
-          "diktirmişti",
-          "sürdürdü"
+          "diktirmişti ('dikmek' geçişlidir, -tir- ekiyle geçişlilik derecesi artırılmış ve iş başkasına yaptırılmıştır)",
+          "sürdürdü ('sürmek' geçişlidir, -dür- ekiyle ettirgen yapılmıştır)"
         ]
-      },
-      "source_locator": "basılı s.104 / PDF s.105 — dil bilgisi soru 3"
+      }
     },
     {
       "question_id": "T2-P104-GRAM04",
@@ -282,8 +316,15 @@
       "printed_page": 104,
       "question_no": "Dil Bilgisi 4",
       "prompt_summary": "Parçadaki noktalama işaretlerinin kullanım amaçları",
-      "answer": "Nokta, tamamlanmış cümlelerin sonunda kullanılmıştır. Virgül, sıralı cümleleri ve birbirini izleyen yargıları ayırır. İki nokta, 'şu sonuca vardı' ifadesinden sonra gelecek doğrudan düşünceyi açıklar. Tırnak işaretleri Çordon'un eşinin zihninden geçen doğrudan ifadeyi gösterir. Üç nokta ise düşüncenin veya duygunun sürmekte olduğunu, cümlenin tamamlanmadan bırakıldığını hissettirir.",
-      "source_locator": "basılı s.104 / PDF s.105 — dil bilgisi soru 4"
+      "answer": "Metindeki noktalama işaretlerinin parçadaki kullanım amaçları:",
+      "source_locator": "basılı s.104 / PDF s.105 — Sıra Sizde soru 4",
+      "answer_sections": {
+        "Nokta (.)": "Yargısı ve anlamı tamamlanmış kurallı cümlelerin sonuna konmuştur ('...kadın da hiç üstelemezdi.', '...kararını kabul etmek zorunda kalmıştı.').",
+        "Virgül (,)": "Sıralı cümleleri birbirinden ayırmak ('Dönüşünde onlarla ilgili pek az şey anlatır, kadın da hiç üstelemezdi.') ve peş peşe gelen eş görevli kelime gruplarını bağlamak için kullanılmıştır.",
+        "İki Nokta (:)": "Kendisinden sonra doğrudan alıntı veya iç konuşma cümlesi geleceğini bildirmek için konmuştur ('...ve şu sonuca vardı:').",
+        "Tırnak İşareti (\" \")": "Kahramanın zihninden geçen iç konuşmayı ve doğrudan aktarılan sözü metin içinde belirtmek için kullanılmıştır ('\"Belki hasret hastasıdır...\"').",
+        "Üç Nokta (...)": "Cümlenin duygu ve anlam bakımından bitmediğini, hissiyatın devam ettiğini belirtmek için tırnak içindeki cümlenin sonuna konmuştur ('...üzüntüsünün hafiflediğini hisseder...\"')."
+      }
     }
   ]
 }
