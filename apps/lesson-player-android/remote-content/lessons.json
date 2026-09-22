@@ -29421,7 +29421,7 @@
           "question_no": "4",
           "source_locator": "basılı s.239 / PDF s.240 — soru 4",
           "prompt_summary": "Önceki yaşantıların edebî eseri anlamlandırmaya etkisini gerekçelendirme",
-          "answer": "Bu soru öğrencinin gerçek yaşantısına göre cevaplanmalıdır; rehber öğrenci adına bir ayrılık, bekleyiş, kayıp veya başka bir deneyim uydurmaz. Uygulanabilir cevap şablonu: Karşılaştığım gerçek olay/durum: [...] → Eserdeki benzer olay/durum: [...] → Bu benzerlik eseri benim için daha anlamlı kıldı/kılmadı çünkü: [...].",
+          "answer": "Bu soru öğrencinin gerçek yaşantısına göre cevaplanmalıdır; rehber öğrenci adına herhangi bir deneyim uydurmaz. Uygulanabilir cevap şablonu: Karşılaştığım gerçek olay/durum: [...] → Eserdeki benzer olay/durum: [...] → Bu benzerlik eseri benim için daha anlamlı kıldı/kılmadı çünkü: [...].",
           "guidance": "Kişisel deneyim alanı boş bırakılmalıdır. Öğrenci yaşantı benzerliğinin eseri daha anlamlı kıldığını da kılmadığını da savunabilir; gerekçesinin kendi gerçek deneyimi ile metin arasındaki ilişkiyi açıklaması yeterlidir.",
           "answer_sections": {
             "gercek_yasanti": "[...]",
@@ -32255,7 +32255,7 @@
           "question_no": "Konuya Başlarken 1-3",
           "source_locator": "basılı s.263 / PDF s.264 — Konuya Başlarken",
           "prompt_summary": "Yaşam evreleri görselleri ve yolculuk ifadelerinden hareketle duygu ve kısa hikâye üretme",
-          "answer": "Bu çalışma görsellerin çağrıştırdığı duygu ve düşünceler ile öğrencinin seçtiği yaşam dönemine dayanır. Rehber, öğrenci adına Nihat, torun, marangozluk gibi tamamlanmış bir hikâye üretmez; yalnız düşünme ve planlama desteği verir.",
+          "answer": "Bu çalışma görsellerin çağrıştırdığı duygu ve düşünceler ile öğrencinin seçtiği yaşam dönemine dayanır. Rehber öğrenci adına tamamlanmış bir hikâye üretmez; yalnız düşünme ve planlama desteği verir.",
           "answer_sections": {
             "gorsellerin_bende_uyandirdigi_duygu_ve_dusunceler": "[...]",
             "yolculuk_ifadelerinin_cagristirdiklari": "Yaşam yolculuğu, başlangıç, güçlük, gençlik, yaşlılık veya yeniden başlangıç gibi çağrışımlar gerekçeli biçimde yazılabilir.",
@@ -35373,7 +35373,7 @@
           "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
           "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
           "answer": "Olası tahmin: 'Fedakârlık' başlığı ile görselde ray/demir yolu hattı çevresinde fiziksel bir çalışma görülmesi, emek, sorumluluk veya bir güçlüğü giderme çevresinde bir içerik olabileceğini düşündürebilir. Bu yalnız başlık ve görselden yapılan ön tahmindir; kişi, olay, amaç ve sonuç video izlenmeden kesinleştirilmez.",
-          "guidance": "Görseli 'toprakla çalışan bir kişi' diye kesinleştirmeyin. Görülebilen unsuru betimleyin; fedakârlığın kim tarafından, kime karşı ve nasıl gerçekleştiğini videodan önce uydurmayın."
+          "guidance": "Görselde yalnız gözlenebilen ray/demir yolu hattı ve çalışma ayrıntılarını betimleyin; çalışma türünü, kişiyi, fedakârlığın kime karşı ve nasıl gerçekleştiğini video izlenmeden kesinleştirmeyin."
         },
         "content": {
           "lead": "Tahmini kesin olay bilgisi gibi yazmayın; hangi görsel veya başlık ipucundan yola çıktığınızı belirtin."
@@ -37961,7 +37961,7 @@
             "Görsel 3 — açık havada birlikte vakit geçiren yetişkin ve çocuklar": "Çocuk, oyun, sevgi, paylaşma veya birlikte yaşam düşünceleriyle ilişkilendirilebilir.",
             "Görsel 4 — orman yangınına müdahale görüntüsü": "Sorumluluk, dayanışma, doğayı koruma veya zorluğa karşı ortak çaba ile ilişkilendirilebilir; şiirle bağ öğrenci tarafından açıklanmalıdır."
           },
-          "guidance": "'Kiraz çiçeği' gibi görselden kesinleştirilemeyen tür adı kullanmayın. Öğrenci bir, birkaç veya tüm görselleri gerekçeli biçimde seçebilir."
+          "guidance": "Görselde kesin olarak görülebilen ögeleri adlandırın; botanik türü gibi görselden doğrulanamayan ayrıntıları eklemeyin. Öğrenci bir, birkaç veya tüm görselleri gerekçeli biçimde seçebilir."
         },
         "content": {
           "lead": "Her görsel için 'ne görüyorum → metindeki hangi düşünceyle bağlantılı → afiş mesajını nasıl güçlendiriyor?' zincirini kurun.",
