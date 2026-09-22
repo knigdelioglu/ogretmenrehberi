@@ -1,6 +1,7 @@
 {
   "schema_version": "2.0.0",
   "theme_id": "TEMA_03",
+  "theme_title": "YAŞAMIN İZİNDE",
   "part_id": "PART_07",
   "printed_page_range": "202-205",
   "entries": [
@@ -10,20 +11,28 @@
       "printed_page": 202,
       "question_no": "1",
       "prompt_summary": "Mehmet Akif Ersoy metninden öznel ve nesnel ifade örnekleri",
-      "answer": "Nesnel ifade örnekleri: Mehmet Akif'in doğum, eğitim, görev, eser ve ölüm tarihleri; 12 Mart 1921'de İstiklâl Marşı'nın kabul edilmesi; çeşitli kurumlarda görev yapması gibi doğrulanabilir bilgilerdir. Öznel ifade örnekleri ise 'Türk edebiyatında önemli bir boşluğu doldurmuştur', 'duyarlı ve vicdanlı bir aydındır', 'sanat ve estetikten ödün vermemiştir' gibi yazarın değerlendirme ve yorumunu içeren cümlelerdir.",
+      "answer": "Mehmet Âkif Ersoy biyografi metninde yazar, şairin hayatını doğrulanabilir nesnel verilere dayandırarak aktarırken; onun şahsiyetini, sanat gücünü ve edebiyatımızdaki yerini değerlendirirken öznel ifadelere başvurmuştur.\n\n1. Nesnel İfade Örnekleri (Kanıtlanabilir, belgelenebilir tarih, kurum, eser ve görev bilgileri):\n- '1873 yılında İstanbul’da Fatih’in Sarıgüzel semtinde doğdu.' (Doğum tarihi ve yeri)\n- '1889’da Mülkiye Baytar Mektebi’ne girdi ve 1893’te bu okulu birincilikle bitirdi.' (Eğitim ve mezuniyet bilgisi)\n- '12 Mart 1921’de İstiklâl Marşı, TBMM tarafından millî marş olarak kabul edildi.' (Tarihî belge ve meclis kararı)\n- 'İlk şiirlerini Servet-i Fünûn ve Resimli Gazete’de yayımladı.' (Yayın kayıtları)\n- '27 Aralık 1936’da Beyoğlu’ndaki Mısır Apartmanı’nda vefat etti.' (Vefat tarihi ve mekânı)\n\n2. Öznel İfade Örnekleri (Yazarın kişisel takdiri, yorumu ve değer yargısını içeren cümleler):\n- 'Türk edebiyatında önemli bir boşluğu doldurmuştur.' (Önem ve değer biçme)\n- 'Duyarlı ve vicdanlı bir aydındır.' (Kişilik ve ahlak değerlendirmesi)\n- 'Sanat ve estetikten hiçbir zaman ödün vermemiştir.' (Kişisel kanaat ve takdir)\n- 'Şiirlerinde samimiyet ve içtenlik hâkimdir.' (Edebî üslup yorumu)",
+      "evidence_quotes": [
+        "duyarlı ve vicdanlı bir aydındır",
+        "Türk edebiyatında önemli bir boşluğu doldurmuştur"
+      ],
+      "source_locator": "basılı s.195-202 / PDF s.196-203 — Sıra Sizde soru 1",
       "answer_sections": {
         "nesnel": [
-          "Doğum, eğitim, görev ve ölüm tarihleri",
-          "İstiklâl Marşı'nın 12 Mart 1921'de kabul edilmesi",
-          "Eser ve kurum adları"
+          "1873 yılında İstanbul'da Fatih'in Sarıgüzel semtinde doğdu.",
+          "1889'da Mülkiye Baytar Mektebi'ne girdi ve 1893'te bu okulu birincilikle bitirdi.",
+          "12 Mart 1921'de İstiklâl Marşı, TBMM tarafından millî marş olarak kabul edildi.",
+          "İlk şiirlerini Servet-i Fünûn ve Resimli Gazete'de yayımladı.",
+          "27 Aralık 1936'da Beyoğlu'ndaki Mısır Apartmanı'nda vefat etti."
         ],
         "oznel": [
           "Türk edebiyatında önemli bir boşluğu doldurmuştur.",
           "Duyarlı ve vicdanlı bir aydındır.",
-          "Sanat ve estetikten ödün vermemiştir."
+          "Sanat ve estetikten hiçbir zaman ödün vermemiştir.",
+          "Şiirlerinde samimiyet ve içtenlik hâkimdir."
         ]
       },
-      "source_locator": "basılı s.195-202 / PDF s.196-203 — Sıra Sizde soru 1"
+      "guidance": "Öğretmen, öğrencilerin bir biyografide nesnel bilgilerin temel iskeleti kurduğunu, yazarın tahlil ve değerlendirmelerinin ise metne derinlik katan öznel yargılar olduğunu fark etmelerini sağlamalıdır. Cümleler metinden doğrudan alıntılanarak gerekçelendirilmelidir."
     },
     {
       "question_id": "T3-P202-Q02",
@@ -31,9 +40,19 @@
       "printed_page": 202,
       "question_no": "2",
       "prompt_summary": "Biyografi türünde öznel ve nesnel anlatımdan hangisinin ön planda olduğu",
-      "answer": "Biyografide nesnel anlatım ön plandadır; çünkü kişinin hayatı doğum, eğitim, görev, eser, tarih ve belge gibi doğrulanabilir bilgiler üzerinden tanıtılır. Bununla birlikte biyografi yazarı kişinin sanat ve düşünce dünyasını değerlendirirken öznel yargılara da yer verebilir. Mehmet Akif Ersoy metninde temel omurgayı nesnel bilgiler oluştururken bazı sanatçı değerlendirmeleri öznel niteliktedir.",
+      "answer": "Biyografi türünde **nesnel anlatım** ön plandadır.\n\nGerekçeler:\n1. Bilgi Verme ve Belgelere Dayanma Amacı: Biyografi, tanınmış bir kişinin hayatını, yetiştiği çevreyi, eğitimini, eserlerini ve başarılarını gerçek belgelere, tanıklıklara ve arşiv kayıtlarına dayandırarak anlatan öğretici bir türdür. Okurun metne güven duyabilmesi ancak doğrulanabilir nesnel bilgilerle mümkündür.\n2. Kronolojik ve Somut Çerçeve: Doğum, ölüm, tahsil, resmî memuriyetler, seyahatler ve eserlerin basım tarihleri gibi biyografinin ana gövdesini oluşturan tüm unsurlar denetlenebilir ve nesneldir.\n3. Öznel Anlatımın Sınırı ve Rolü: Biyografi yazarı, kişinin sanat anlayışını, edebiyat tarihindeki yerini ve şahsiyetini değerlendirirken öznel yorumlara yer verebilir; ancak bu öznellik hiçbir zaman nesnel olgusal çerçevenin önüne geçemez veya onun yerine geçemez. Mehmet Âkif Ersoy biyografisinde de omurgayı nesnel olgular oluştururken, sanatçıya dair takdir ifadeleri bu nesnel zemin üzerine oturtulmuştur.",
       "source_locator": "basılı s.202 / PDF s.203 — soru 2",
-      "explanation": "Biyografi, bir kişinin yaşamının başka biri tarafından anlatılmasıdır. Otobiyografi ise kişinin kendi yaşamını kendisinin anlatmasıdır. Bir biyografi yazarı, anlattığı kişi hakkında bilgi toplarken o kişinin otobiyografisinden de kaynak olarak yararlanabilir; bu durum biyografi metnini otobiyografiye dönüştürmez."
+      "explanation": "Biyografi, bir kişinin yaşamının başka biri tarafından anlatılmasıdır. Otobiyografi ise kişinin kendi yaşamını kendisinin anlatmasıdır. Bir biyografi yazarı, anlattığı kişi hakkında bilgi toplarken o kişinin otobiyografisinden de kaynak olarak yararlanabilir; bu durum biyografi metnini otobiyografiye dönüştürmez.",
+      "answer_sections": {
+        "on_planda_olan_anlatim": "Nesnel anlatım",
+        "gerekceler": [
+          "Biyografinin temel amacının gerçeğe ve belgelere dayalı bilgi vermek olması.",
+          "Kişinin doğum, ölüm, eğitim, görev ve eser gibi somut verilerinin kanıtlanabilir nitelik taşıması.",
+          "Okurun metne duyacağı güvenin nesnel gerçekliğin korunmasına bağlı olması."
+        ],
+        "oznel_anlatimin_yeri": "Yazarın şahsiyet tahlili ve edebî değer yorumlarında yer alır ancak nesnel omurganın önüne geçemez."
+      },
+      "guidance": "Öğrencilerin biyografiyi kupkuru bir tarih cetveline indirgememeleri, aynı zamanda yazarın kişisel yorum serbestisini de kurmaca bir serbestlikle karıştırmamaları gerektiği vurgulanmalıdır."
     },
     {
       "question_id": "T3-P203-Q01",
@@ -41,8 +60,19 @@
       "printed_page": 203,
       "question_no": "1",
       "prompt_summary": "Mehmet Akif Ersoy biyografisinin verilen biyografi örneklerinden hangisine benzediği",
-      "answer": "Mehmet Akif Ersoy metni en çok M. Orhan Okay'ın Necip Fazıl maddesine benzer. Her iki metin de kişinin doğumundan başlayarak eğitim, meslek, sanat hayatı ve eserleri hakkında bilgi veren, kaynak ve belgeye dayalı, açıklayıcı bir biyografi niteliğindedir. Riza Fazıl metni ölüm üzerine yazılmış bir nekrolojiye, Mustafa İnan metni ise anlatı ve kurgu unsurları daha belirgin bir biyografik romana yakındır.",
-      "source_locator": "basılı s.202-203 / PDF s.203-204 — Fark Edelim soru 1"
+      "answer": "Mehmet Âkif Ersoy metni, sayfada verilen üç biyografi örneğinden en çok **M. Orhan Okay'ın yazdığı 'Kısakürek, Necip Fazıl'** metnine benzemektedir.\n\nGerekçeler ve Karşılaştırma:\n1. M. Orhan Okay Metni ile Benzerlik: Her iki metin de ele alınan şahsiyetin doğumundan başlayarak ailesini, okuduğu okulları, memuriyetlerini, yayın faaliyetlerini ve eserlerini kronolojik bir düzenle, bilgi ve belgeye dayalı olarak tanıtan bilimsel/öğretici bir biyografi (ansiklopedi maddesi/monografi) niteliğindedir. İki metinde de açıklayıcı, nesnel ve tarafsız bir anlatım tutumu hâkimdir.\n2. Riza Fazıl Metninden Farkı: Bülent Tanatar'ın 'Riza Fazıl' metni, edebiyatçının vefatının hemen ardından yazılmış, ölüm haberini ve duyulan hüznü dile getiren bir 'nekroloji'dir (anma/taziye yazısı). Mehmet Âkif metni ise yalnızca bir ölüm vesilesiyle yazılmamış; şairin bütün yaşamını ve sanatını kapsamlı biçimde tahlil etmiştir.\n3. Mustafa İnan Metninden Farkı: Oğuz Atay'ın 'Bir Bilim Adamının Romanı'ndan alınan parça, Mustafa İnan'ın yaşamını kurmaca anlatım teknikleriyle, çalışma odasındaki diyaloglarla ve roman kurgusuyla veren bir 'biyografik roman'dır. Mehmet Âkif metninde ise kurmaca bir olay örgüsü veya hayalî diyaloglar bulunmamaktadır.",
+      "source_locator": "basılı s.202-203 / PDF s.203-204 — Fark Edelim soru 1",
+      "answer_sections": {
+        "en_cok_benzeyen_metin": "M. Orhan Okay'ın 'Kısakürek, Necip Fazıl' biyografi maddesi.",
+        "ortak_yonler_ve_gerekceler": [
+          "Doğumdan itibaren eğitim, meslek ve edebî serüvenin kronolojik sıra izlemesi.",
+          "Ansiklopedik, tarafsız, nesnel ve bilgi vermeye odaklı anlatım tutumu.",
+          "Kişinin şahsiyetini belgeler ve somut veriler üzerinden yansıtması."
+        ],
+        "riza_fazil_metninden_farki": "Riza Fazıl metni vefat üzerine kaleme alınmış anma ağırlıklı bir nekrolojidir.",
+        "mustafa_inan_metninden_farki": "Oğuz Atay'ın metni kurgu, diyalog ve roman tekniğiyle örülmüş bir biyografik romandır."
+      },
+      "guidance": "Öğretmen, öğrencilerin sadece metin adı söylemekle yetinmeyip metinlerin yazılış amaçları, anlatıcı tavırları ve kurmaca ile olan ilişkileri üzerinden gerekçelendirme yapmalarını istemelidir."
     },
     {
       "question_id": "T3-P203-Q02",
@@ -50,8 +80,18 @@
       "printed_page": 203,
       "question_no": "2",
       "prompt_summary": "Mehmet Akif Ersoy metninin biyografi alt türünü belirleme",
-      "answer": "Metin, Bilgi Köşesi'ndeki sınıflandırmaya göre **bilimsel biyografi / monografi** kapsamına alınabilir. Çünkü Mehmet Akif'in hayatı doğumdan ölüme uzanan kronolojik ve bilgiye dayalı bir çerçevede ele alınır; eğitim, meslek, eserler, sanat anlayışı ve tarihî faaliyetler belgelenebilir ayrıntılarla açıklanır. Metinde biyografik roman gibi kurmaca bir olay örgüsü kurulmaz ve nekroloji gibi yalnız ölüm vesilesiyle yazılmış bir anma metni değildir.",
-      "source_locator": "basılı s.203 / PDF s.204 — soru 2"
+      "answer": "Mehmet Âkif Ersoy metni, Bilgi Köşesi'ndeki sınıflandırmaya göre **bilimsel biyografi / monografi** alt türüne dâhil edilir.\n\nSebepleri:\n1. Kapsamlı ve Belgesel Çerçeve: Metin, şairin doğumundan vefatına kadar olan hayat serüvenini tarihî belgelere, resmî kayıtlara ve doğrulanabilir verilere dayanarak ele alır; derinlemesine bir inceleme ve tanıtma sunar.\n2. Kronolojik ve Tematik Bütünlük: Çocukluk, tahsil hayatı, baytarlık mesleği, dergicilik faaliyetleri, Millî Mücadele dönemi, İstiklâl Marşı'nın kabulü, Mısır yılları ve Safahat'ın ciltleri akademik bir intizamla incelenmiştir.\n3. Diğer Türlerden Ayrılması: Metinde biyografik romandaki gibi muhayyileye dayalı olay örgüsü, karakter kurgusu ve şahıs diyalogları yer almaz. Aynı zamanda nekrolojideki gibi yalnızca bir ölüm vesilesiyle kaleme alınmış kısa bir taziye ve anma yazısı değildir.",
+      "source_locator": "basılı s.203 / PDF s.204 — soru 2",
+      "answer_sections": {
+        "biyografi_alt_turu": "Bilimsel biyografi / Monografi",
+        "sebepler": [
+          "Doğumdan ölüme kadar kişinin tüm hayatını, eserlerini ve edebî kişiliğini belgelere dayalı olarak ele alması.",
+          "Kronolojik gelişim çizgisine ve akademik nesnelliğe bağlı kalması.",
+          "Kurmaca olay örgüsü ve diyaloglar içermemesi (biyografik romandan ayrılır).",
+          "Yalnızca bir ölüm vesilesiyle yazılmış kısa bir anma yazısı olmaması (nekrolojiden ayrılır)."
+        ]
+      },
+      "guidance": "Öğrencilerin 'monografi' teriminin belirli bir kişi, konu veya eser üzerine derinlemesine ve bilimsel yöntemlerle yazılmış eser anlamına geldiğini kavramaları sağlanmalıdır."
     },
     {
       "question_id": "T3-P204-Q01",
@@ -59,38 +99,39 @@
       "printed_page": 204,
       "question_no": "1",
       "prompt_summary": "Huzur ile Mehmet Akif Ersoy metnini içerik, tür, yapı, dönem, yapı unsurları, dil-üslup ve ileti bakımından karşılaştırma",
-      "answer": "Huzur kurmaca bir romandır; Mümtaz, Nuran ve diğer kişiler çevresinde aşk, kimlik, İstanbul, musiki ve geçmiş-yeni hayat gerilimini işler. Mehmet Akif Ersoy ise gerçek bir kişinin hayatını ve sanatını bilgiye dayalı biçimde anlatan biyografidir. Huzur olay, kişi, mekân ve zaman örgüsüyle kurulur; Mehmet Akif Ersoy metni kronolojik hayat çizgisi, tarih, eser ve görev bilgileri üzerinden ilerler. Huzur'un dili şiirsel, betimleyici ve psikolojiktir; biyografi metni ağırlıklı olarak açıklayıcı ve nesneldir. İki metin de kişinin yaşadığı dönem ve kültürle ilişkisini gösterir; ancak biri kurmaca yoluyla, diğeri gerçek yaşam bilgileriyle bunu yapar.",
+      "answer": "Huzur romanı ile Mehmet Âkif Ersoy biyografisi, edebiyatın kurmaca ve öğretici dünyalarını temsil eden iki farklı başyapıttır:\n\n1. İçerik: Huzur; Mümtaz ile Nuran'ın aşkı çevresinde Doğu-Batı çatışmasını, geçmiş ile yeni hayat gerilimini, musiki ve İstanbul estetiğini işler. Mehmet Âkif Ersoy metni ise gerçek bir şahsiyetin doğumundan ölümüne kadar hayatını, eğitimini, Millî Mücadele hizmetlerini ve şiir dünyasını belgelerle anlatır.\n2. Tür: Huzur sanatsal/kurmaca bir roman; Mehmet Âkif Ersoy metni ise öğretici bir bilimsel biyografidir (monografi).\n3. Yapı: Huzur'da dramatik olay örgüsü, iç çatışmalar ve estetik bir kurgu bütünlüğü vardır; biyografide ise kronolojik ve tematik hayat düzeni esastır.\n4. Dönem: Huzur Cumhuriyet Dönemi'nde (1948) kaleme alınmış olup II. Dünya Savaşı arifesindeki modernleşme sancılarını yansıtır; Mehmet Âkif Ersoy metni ise geç Osmanlı ve erken Cumhuriyet döneminin tarihî ve millî atmosferini kapsar.\n5. Yapı Unsurları: Huzur'da kurmaca şahıs kadrosu (Mümtaz, Nuran, İhsan, Suat), kurmaca zaman ve mekân (İstanbul sokakları, Boğaziçi) vardır; biyografide merkez kişi gerçek Mehmet Âkif, zaman gerçek tarih aralıkları (1873-1936), mekânlar ise gerçek coğrafyalardır (İstanbul, Ankara, Mısır).\n6. Dil ve Üslup: Huzur'da şiirsel, çağrışımlı, psikolojik derinliği olan mecazlı bir sanat dili kullanılır; biyografide açıklayıcı, nesnel, terimsel ve akademik bir dil hâkimdir.\n7. İleti: Huzur bireyin iç huzursuzluğunu aşması ve medeniyet buhranında kendi kültürel kökleriyle bağ kurması iletisini verir; biyografi metni ise vatan sevgisi, ahlaki sorumluluk ve millet davasına adanmış onurlu bir hayat modelini aktarır.",
+      "source_locator": "basılı s.204 / PDF s.205 — Karşılaştıralım soru 1",
       "answer_sections": {
         "icerik": {
-          "Huzur": "Aşk, kimlik, İstanbul, musiki, geçmiş-yeni hayat gerilimi.",
-          "Mehmet_Akif_Ersoy": "Şairin hayatı, eğitimi, görevleri, Millî Mücadele faaliyetleri, eserleri ve sanat anlayışı."
+          "Huzur": "Aşk, kimlik, İstanbul, musiki, geçmiş-yeni hayat gerilimi ve Doğu-Batı çatışması.",
+          "Mehmet_Akif_Ersoy": "Şairin hayatı, eğitimi, görevleri, Millî Mücadele faaliyetleri, İstiklâl Marşı, eserleri ve sanat anlayışı."
         },
         "tur": {
-          "Huzur": "Roman.",
-          "Mehmet_Akif_Ersoy": "Bilimsel biyografi/monografi."
+          "Huzur": "Roman (sanatsal/kurmaca metin).",
+          "Mehmet_Akif_Ersoy": "Bilimsel biyografi / monografi (öğretici metin)."
         },
         "yapi": {
-          "Huzur": "Olay örgüsü ve kurmaca bütünlük.",
-          "Mehmet_Akif_Ersoy": "Kronolojik ve tematik biyografik düzen."
+          "Huzur": "Olay örgüsü, iç monologlar ve kurmaca estetik bütünlük.",
+          "Mehmet_Akif_Ersoy": "Kronolojik hayat çizgisi ve tematik biyografik düzen."
         },
         "donem": {
-          "Huzur": "Cumhuriyet Dönemi romanı; modernleşme ve gelenek-yeni hayat gerilimi.",
-          "Mehmet_Akif_Ersoy": "Biyografik metin, konusu itibarıyla geç Osmanlı ve erken Cumhuriyet dönemlerini kapsar."
+          "Huzur": "Cumhuriyet Dönemi romanı; modernleşme sancıları ve gelenek-yeni hayat gerilimi (1940'lar).",
+          "Mehmet_Akif_Ersoy": "Biyografik metin; konusu itibarıyla II. Meşrutiyet, Millî Mücadele ve erken Cumhuriyet dönemlerini kapsar."
         },
         "yapi_unsurlari": {
-          "Huzur": "Kişi, olay, mekân, zaman.",
-          "Mehmet_Akif_Ersoy": "Merkez kişi, hayat olayları, zaman, mekân, eser ve görev bilgileri."
+          "Huzur": "Kurmaca kişiler (Mümtaz, Nuran, İhsan, Suat), olay örgüsü, kurmaca mekân ve zaman.",
+          "Mehmet_Akif_Ersoy": "Gerçek merkez kişi (Mehmet Âkif), belgelenebilir hayat olayları, tarihsel zaman (1873-1936) ve gerçek mekânlar."
         },
         "dil_uslup": {
-          "Huzur": "Şiirsel, betimleyici, psikolojik, mecazlı.",
-          "Mehmet_Akif_Ersoy": "Açıklayıcı, bilgi verici, büyük ölçüde nesnel; yer yer değerlendirici."
+          "Huzur": "Şiirsel, betimleyici, psikolojik derinlikli, çağrışımlı ve mecazlı sanat dili.",
+          "Mehmet_Akif_Ersoy": "Açıklayıcı, bilgi verici, büyük ölçüde nesnel; yer yer edebî değerlendirmeler içeren açık üslup."
         },
         "ileti": {
-          "Huzur": "Kimlik, geçmiş ve yeni hayat arasında bağ kurma.",
-          "Mehmet_Akif_Ersoy": "Sanatçının hayatı ile millet, toplum, din ve edebiyat meselelerinin iç içeliği."
+          "Huzur": "Kültürel kimlik, geçmiş ile gelecek arasında bağ kurma ve insanın iç huzur arayışı.",
+          "Mehmet_Akif_Ersoy": "Sanatçının hayatı ile vatan, millet, din ve bağımsızlık ideallerinin iç içeliği; ahlaki sorumluluk."
         }
       },
-      "source_locator": "basılı s.204 / PDF s.205 — Karşılaştıralım soru 1"
+      "guidance": "Karşılaştırma yapılırken kurmaca edebi metin (roman) ile öğretici metin (biyografi) arasındaki ontolojik farkın (gerçeklik düzlemi, anlatıcı tipi, üslup ve amaç) görünür kılınması hedeflenmelidir. Yedi ölçütün tamamı tabloda eksiksiz doldurulmalıdır."
     },
     {
       "question_id": "T3-P204-Q02",
@@ -98,8 +139,18 @@
       "printed_page": 204,
       "question_no": "2",
       "prompt_summary": "Siber Zorbalık metninin kurgu-gerçeklik bakımından hangi metne benzediği",
-      "answer": "Siber Zorbalık metni kurgu-gerçeklik bakımından Mehmet Akif Ersoy metnine daha çok benzer. Her iki metin de gerçek dünyaya ait kişi, olgu ve durumları açıklayıcı bir dille ele alır ve bilgi vermeyi amaçlar. Huzur ise gerçek hayattan izler taşısa da kişiler ve olaylar kurmaca bir roman dünyası içinde yeniden oluşturulmuştur.",
-      "source_locator": "basılı s.204 / PDF s.205 — Karşılaştıralım soru 2"
+      "answer": "Siber Zorbalık metni kurgu ve gerçeklik açısından **Mehmet Âkif Ersoy** metnine benzemektedir.\n\nGerekçeler:\n1. Gerçeklik Düzlemi: Siber Zorbalık metni de Mehmet Âkif Ersoy biyografisi gibi gerçek dünyadaki somut olgulara, araştırmalara, bilimsel ve toplumsal gerçekliklere dayanır; hayalî bir dünya veya kurgusal olay inşa etmez.\n2. Amaç ve Anlatım Türü: Her iki metin de öğretici metinler grubuna girer. Okura somut bilgi vermek, toplumsal bir meseleyi açıklamak ve farkındalık kazandırmak amacını güder. Anlatım biçimi açıklayıcı ve bilgi vericidir.\n3. Huzur'dan Farkı: Huzur metninde anlatılan olaylar, kişiler ve mekânlar yazarın muhayyilesinde yaratılmış sanatsal bir kurmacadır. Gerçek hayattan izler taşısa da estetik bir kurmaca dünya söz konusudur. Oysa Siber Zorbalık ve Mehmet Âkif metinlerinde doğrudan olgusal gerçeklik esastır.",
+      "source_locator": "basılı s.204 / PDF s.205 — Karşılaştıralım soru 2",
+      "answer_sections": {
+        "benzeyen_metin": "Mehmet Âkif Ersoy metni",
+        "gerekceler": [
+          "Her iki metnin de nesnel, doğrulanabilir ve somut olgusal gerçekliğe dayanması.",
+          "Hayalî/kurmaca olay, mekân ve şahıslara yer vermemesi.",
+          "Okura bilgi verme, açıklama ve farkındalık kazandırma amacı gütmesi."
+        ],
+        "huzur_metninden_farki": "Huzur romanı gerçek dünyadan esinlenmiş olsa dahi yazarın hayal gücüyle yeniden biçimlendirilmiş kurmaca bir sanat metnidir."
+      },
+      "guidance": "Öğrencilerin sanatsal gerçeklik (kurmaca) ile olgusal gerçeklik (öğretici metinler) arasındaki temel ontolojik farkı ayırt etmeleri sağlanmalıdır."
     },
     {
       "question_id": "T3-P205-Q01",
@@ -107,27 +158,28 @@
       "printed_page": 205,
       "question_no": "Çözümleyebilme 1",
       "prompt_summary": "Mehmet Akif Ersoy metninin yapı unsurları ve bunların katkısı",
-      "answer": "Metnin merkez kişisi Mehmet Akif Ersoy'dur. Zaman, doğumundan ölümüne ve sanat hayatının çeşitli dönemlerine uzanan kronolojik bir çizgide ilerler. Mekânlar İstanbul, Ankara, Mısır ve görev/seyahat ettiği başka şehirlerdir. Hayat olayları; eğitim, meslek, yayın hayatı, Millî Mücadele, İstiklâl Marşı, Mısır yılları ve eserleri çevresinde düzenlenmiştir. Bu yapı, okurun kişinin yaşamındaki gelişmeleri neden-sonuç ve zaman ilişkisi içinde izlemesini sağlar.",
+      "answer": "Mehmet Âkif Ersoy metninin yapı unsurları; merkez kişi, zaman, mekân ve hayat olaylarıdır. Bu unsurların metne en büyük katkısı, biyografik verileri mantıksal ve kronolojik bir sebep-sonuç bütünlüğü içinde sunarak okurun şahsiyeti ve eserleri derinlemesine kavramasını sağlamasıdır.\n\n1. Merkez Kişi: Mehmet Âkif Ersoy'dur. Şair, veteriner hekim, öğretmen, mütefekkir, vaiz ve milletvekili kimlikleriyle metnin odak noktasındadır.\n2. Zaman: 1873 ile 1936 yılları arasıdır. Kronolojik bir akışla şairin çocukluğu, tahsili, Meşrutiyet, Millî Mücadele, Cumhuriyet yılları, Mısır dönemi ve son günleri sıralanır.\n3. Mekânlar: İstanbul (Fatih Sarıgüzel, Halkalı, Beyoğlu Mısır Apartmanı), Anadolu (Ankara Taceddin Dergâhı, Kastamonu, Balıkesir) ve Mısır (Hilvan). Mekânlar şairin görev ve mücadele haritasını çizer.\n4. Hayat Olayları: Mülkiye Baytar Mektebi tahsili, veterinerlik görevleri, Sırat-ı Müstakim/Sebilürreşad yayınları, Millî Mücadele vaazları, İstiklâl Marşı'nın yazılması, Darülfünun hocalığı, Mısır yılları ve Safahat'ın neşri.\n5. Yapı Unsurlarının Katkısı: Gerçek olay, zaman ve mekânların bu şekilde örülmesi, metni soyut bir övgüden kurtarıp inandırıcı, tarihî vesikalara dayalı ve takip edilmesi kolay bir monografiye dönüştürmüştür.",
+      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 1",
       "answer_sections": {
         "merkez_kisi": "Mehmet Akif Ersoy",
-        "zaman": "Doğumdan ölüme uzanan kronolojik hayat çizgisi.",
+        "zaman": "Doğumundan (1873) vefatına (1936) kadar uzanan kronolojik hayat çizgisi ve dönemin tarihî evreleri.",
         "mekan": [
-          "İstanbul",
-          "Ankara",
-          "Mısır",
-          "Görev ve Millî Mücadele kapsamında gidilen şehirler"
+          "İstanbul (Fatih Sarıgüzel, Halkalı, Beyoğlu Mısır Apartmanı)",
+          "Ankara (Taceddin Dergâhı ve TBMM)",
+          "Mısır (Hilvan kasabası)",
+          "Millî Mücadele için vaaz verdiği Kastamonu, Balıkesir gibi Anadolu şehirleri"
         ],
         "olaylar": [
-          "Eğitim ve meslek",
-          "Yayın hayatı",
-          "Millî Mücadele",
-          "İstiklâl Marşı",
-          "Mısır yılları",
-          "Eserler ve sanat anlayışı"
+          "Eğitim ve meslek (Mülkiye Baytar Mektebi ve veterinerlik görevleri)",
+          "Sırat-ı Müstakim ve Sebilürreşad yayın faaliyetleri",
+          "Millî Mücadele'ye katılım ve Anadolu vaazları",
+          "İstiklâl Marşı'nın yazılması ve TBMM'de kabulü",
+          "Mısır yılları ve Kur'an meali çalışmaları",
+          "Safahat'ın ciltleri, sanat anlayışı ve vefatı"
         ],
-        "katkisi": "Biyografik bilgilerin düzenli, izlenebilir ve neden-sonuç ilişkili sunulmasını sağlar."
+        "katkisi": "Biyografik bilgilerin düzenli, izlenebilir, sebep-sonuç ilişkili ve tarihsel arka planıyla birlikte somutlaşmasını sağlar."
       },
-      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 1"
+      "guidance": "Biyografideki yapı unsurlarının romandaki gibi muhayyile ürünü kurmaca ögeler değil, arşiv ve tarihe dayalı somut gerçeklikler olduğu açıklanmalıdır."
     },
     {
       "question_id": "T3-P205-Q02",
@@ -135,8 +187,14 @@
       "printed_page": 205,
       "question_no": "Çözümleyebilme 2",
       "prompt_summary": "Metindeki söz varlığı ile yazarın üslubu arasındaki ilişki",
-      "answer": "Metnin söz varlığı biyografi ve edebiyat araştırmasına uygun olarak tarih, kurum, eser, tür ve sanat kavramları bakımından zengindir. 'Meşrutiyet, Millî Mücadele, Safahat, tefsir, mevize, dinî-hikemî, toplumcu şair' gibi kelime ve kavramlar Mehmet Akif'in hayatını ve sanat anlayışını açıklamayı kolaylaştırır. Bu söz varlığı yazarın bilgi verici, akademik ve açıklayıcı üslubunu destekler.",
-      "source_locator": "basılı s.195-205 / PDF s.196-206 — Çözümleyebilme soru 2"
+      "answer": "Mehmet Âkif Ersoy metninde kullanılan söz varlığı, yazarın ciddi, akademik, nesnel ve öğretici üslubunun temel taşıdır.\n\nSöz Varlığı ve Üslup İlişkisi:\n1. Döneme Özgü Kavramlar ve Edebiyat Terimleri: Metinde geçen 'Meşrutiyet, mütareke, hilafet, dârülelhan, tefsir, mevize, vaaz, aruz vezni, didaktik, manzum hikâye, cemiyet' gibi kelimeler; Âkif'in yaşadığı dönemin zihniyetini ve sanat dünyasını yansıtır. Bu zengin terim hazinesi, yazarın üslubuna ilmî bir ciddiyet ve belgesel bir derinlik katar.\n2. Açıklayıcı ve Tanıtıcı Anlatım: Yazar gereksiz süs ve abartılı söz sanatlarından kaçınarak terimleri ait oldukları tarihî bağlamda kullanmış; böylece berrak, duru ve bilgi verici bir anlatım üslubu kurmuştur.\n3. Değerlendirici Nitelemeler: Şairin ahlakını anlatırken kullanılan 'duyarlı, vicdanlı, feragat sahibi, samimi, mütevazı' gibi sıfatlar, yazarın hürmetkâr fakat ölçülü üslubunu destekler.",
+      "source_locator": "basılı s.195-205 / PDF s.196-206 — Çözümleyebilme soru 2",
+      "answer_sections": {
+        "soz_varligi": "Tarihî, dinî ve edebî kavramlar ('Meşrutiyet', 'Millî Mücadele', 'tefsir', 'mevize', 'Sebilürreşad', 'Safahat', 'dârülelhan').",
+        "usluba_etkisi": "Metne akademik bir yetkinlik, nesnellik ve açıklayıcı duruluk kazandırır.",
+        "nitelemelerin_rolu": "Şairin ahlaki ve insani büyüklüğünü ölçülü bir saygıyla yansıtır."
+      },
+      "guidance": "Öğretmen, söz varlığının yalnızca bir kelime listesi olmadığını; metnin türünü, yazarın bakış açısını ve anlatım tonunu doğrudan belirleyen ana unsur olduğunu fark ettirmelidir."
     },
     {
       "question_id": "T3-P205-Q03",
@@ -144,8 +202,14 @@
       "printed_page": 205,
       "question_no": "Çözümleyebilme 3",
       "prompt_summary": "Yapı unsurları arasındaki etkileşimin üsluba etkisi",
-      "answer": "Kronolojik zaman düzeni, farklı şehirler, görevler, tarihî olaylar ve eserlerin birlikte verilmesi yazarın açıklayıcı ve düzenli bir anlatım kurmasını gerektirir. Hayat olayları eserlerle ilişkilendirildikçe metin yalnız tarih sıralayan bir liste olmaktan çıkar; kişinin sanat anlayışının hangi şartlarda geliştiği de gösterilir. Bu etkileşim üsluba hem bilgi yoğunluğu hem de neden-sonuç açıklığı kazandırır.",
-      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 3"
+      "answer": "Biyografideki yapı unsurlarının (merkez kişi, kronolojik zaman, tarihsel mekânlar ve hayat olayları) birbirini tamamlayacak şekilde dinamik bir etkileşim içinde olması, yazarın üslubuna akıcılık, tutarlılık ve sebep-sonuç derinliği kazandırmıştır.\n\nEtkileşimin Üsluba Yansımaları:\n1. Zaman ve Olay Bağı: Zaman çizelgesi kuru bir kronoloji olarak akmaz; her tarihî dönemeç (Balkan Harbi, Çanakkale, Millî Mücadele) Âkif'in bir eylemi ve bir eseriyle eşleşir. Bu durum üsluba anlatısal bir dinamizm katar.\n2. Mekân ve Kişi Bütünlüğü: Fatih'in mahalle sokaklarından Ankara'daki Taceddin Dergâhı'na ve Kahire'nin Hilvan'ına uzanan mekânlar, şairin iç dünyasındaki ve sanatındaki gelişimi görünür kılar. Mekân-kişi bağı yazarın tasvir ve açıklamalarını canlı tutar.\n3. Yaşam ve Eser Uyumu: Biyografi yazarı Âkif'in hayatını eserlerinden bağımsız anlatmamış; Safahat'ın her safhasını doğuran şartlarla birlikte vermiştir. Bu etkileşim, yazarın üslubunu sadece biyografik bir aktarım olmaktan çıkarıp tahlil edici bir edebî eleştiri düzeyine yükseltmiştir.",
+      "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 3",
+      "answer_sections": {
+        "zaman_olay_etkilesimi": "Kronolojinin tarihî olaylarla ve eserlerle birleşmesi üsluba akıcılık ve sebep-sonuç açıklığı verir.",
+        "mekan_kisi_etkilesimi": "İstanbul, Ankara ve Mısır mekânlarının şairin hayat evreleriyle uyumu anlatımı durağanlıktan kurtarır.",
+        "eser_yasam_etkilesimi": "Eserlerin hayat olaylarıyla paralel açıklanması yazarın diline tahlilci ve derinlikli bir ton kazandırır."
+      },
+      "guidance": "Yapı unsurlarının metin içinde birbirinden kopuk parçalar olmadığı, metnin ritmini ve üslup dengesini belirleyen organik bir bütün oluşturduğu vurgulanmalıdır."
     },
     {
       "question_id": "T3-P205-Q04",
@@ -153,30 +217,29 @@
       "printed_page": 205,
       "question_no": "Çözümleyebilme 4",
       "prompt_summary": "Mehmet Akif Ersoy metnindeki millî, manevi ve evrensel değerler",
-      "answer": "Metindeki değerler millî, manevi ve evrensel başlıklarda sınıflandırılabilir.",
+      "answer": "Mehmet Âkif Ersoy biyografisinde yer alan değerler millî, manevi ve evrensel başlıklar altında metne dayalı olarak şöyle sınıflandırılabilir:\n\n1. Millî Değerler: Vatan sevgisi, bağımsızlık tutkusu, bayrak ve millî marş bilinci, milletin birlik ve dirliği, Millî Mücadele'de canla başla fedakârlıkta bulunma, millî kültüre ve tarihe sahip çıkma.\n2. Manevi Değerler: Allah ve Peygamber inancı, dinî samimiyet, şehitlik ve gazilik mertebesi, ahlaki dürüstlük, ahde vefa ve sözünde durma, kanaatkârlık ve feragat (marş ödülü olan 500 lirayı yoksul kadın ve çocuklara meslek öğreten Darülmesai'ye bağışlaması).\n3. Evrensel Değerler: Zulme ve sömürüye karşı durma, insan onuruna saygı, merhamet ve vicdan (Küfe ve Hasta manzumelerinde yoksul, öksüz ve düşkünlere el uzatma), çalışkanlık, adalet arayışı, cehaletle mücadele ve ilim aşkı.",
+      "source_locator": "basılı s.195-205 / PDF s.196-206 — Çözümleyebilme soru 4",
       "answer_sections": {
         "milli": [
-          "Vatan sevgisi",
-          "Bağımsızlık",
-          "Millî Mücadele",
-          "Millet bilinci"
+          "Vatan sevgisi ve bağımsızlık aşkı",
+          "Bayrak, millet ve marş bilinci",
+          "Millî Mücadele ruhu ve fedakârlık",
+          "Millet birlik ve beraberliği"
         ],
         "manevi": [
-          "İnanç",
-          "Dinî duyarlılık",
-          "Ahlaki sorumluluk",
-          "Fedakârlık"
+          "Dinî inanç ve samimiyet",
+          "Ahlaki sorumluluk ve dürüstlük",
+          "Şehitlik ve gazilik şuuru",
+          "Ahde vefa ve feragat (maddiyata değer vermeme, ödülü bağışlama)"
         ],
         "evrensel": [
-          "Duyarlılık",
-          "Vicdan",
-          "Sorumluluk",
-          "Çalışkanlık",
-          "Yardımlaşma",
-          "Adalet arayışı"
+          "Duyarlılık, vicdan ve merhamet (yoksullara, yetimlere ve düşkünlere sahip çıkma)",
+          "Adalet ve haksızlığa karşı çıkma",
+          "Çalışkanlık ve cehaletle mücadele",
+          "İnsan onuruna ve emeğe saygı"
         ]
       },
-      "source_locator": "basılı s.195-205 / PDF s.196-206 — Çözümleyebilme soru 4"
+      "guidance": "Değerlerin soyut kavramlar olarak bırakılmaması; şairin hayatındaki somut eylemlerle (İstiklâl Marşı sürecindeki tavrı, vaazları, yoksul çocuklara şiirlerinde yer verişi) ilişkilendirilmesi istenmelidir."
     },
     {
       "question_id": "T3-P205-PERF01",
@@ -184,9 +247,14 @@
       "printed_page": 205,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Âsım'ın nesline duyulan güveni KAAN, TCG Anadolu, Göktürk-1 ve BİLSAT görsellerinden hareketle yorumlama",
-      "answer": "Örnek yorum: Sayfadaki KAAN, TCG Anadolu, Göktürk-1 ve BİLSAT görselleri; bilim, mühendislik, savunma ve uzay teknolojileri alanlarında günümüzde de yüksek bilgi ve emek gerektiren çalışmalar yürütüldüğünü göstermek amacıyla kullanılmıştır. Bu bağlamda Mehmet Akif'in gençliğe duyduğu güvenin; öğrenen, üreten, sorumluluk alan ve ülkesinin ihtiyaçlarına çözüm geliştiren gençler üzerinden sürdürülebileceği yorumu yapılabilir.",
+      "answer": "Mehmet Âkif Ersoy'un Safahat'ta sembolleştirdiği 'Âsım', Batı'nın müspet ilmini, fennini ve tekniğini alırken kendi millî ve manevi köklerine sımsıkı bağlı kalan ideal Türk gençliğini temsil eder. Şairin 'Âsım’ın nesli diyordum ya nesilmiş gerçek / İşte çiğnetmedi namusunu, çiğnetmeyecek' dizelerindeki sarsılmaz inanç, günümüzde de varlığını güçlenerek sürdürmektedir.\n\nÖrnek Yorum ve Görsellerin Düşündürdükleri:\nSayfada yer alan KAAN millî muharip uçağı, TCG Anadolu çok maksatlı amfibi hücum gemisi, Göktürk-1 keşif uydusu ve BİLSAT yer gözlem uydusu görselleri; Türk gençliğinin bilim, mühendislik, havacılık, denizcilik ve uzay teknolojilerinde ulaştığı yüksek seviyenin somut göstergeleridir. Dünün Âsım nesli vatan topraklarını cephede süngüsüyle ve canıyla savunmuştur; bugünün Âsım nesli ise vatan savunmasını göklerde, denizlerde, siber vatanda ve uzayda yüksek millî teknoloji üreterek gerçekleştirmektedir. Bu görseller, Mehmet Âkif'in gençliğe duyduğu güvenin boş bir temenni olmadığını, millî teknoloji hamlesiyle gerçeğe dönüştüğünü kanıtlar.",
       "guidance": "Görseller kaynak sayfadan doğrulandı. Değerlendirmede teknik ayrıntı uydurmak yerine görsellerin temsil ettiği üretim, bilim, teknoloji ve sorumluluk kavramlarıyla sınırlı kalınmalıdır.",
-      "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 1 / görseller doğrulandı"
+      "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 1 / görseller doğrulandı",
+      "answer_sections": {
+        "asimin_nesli_kavrami": "İlim ve fenni ahlak ve millî şuurla birleştiren ideal gençlik sembolü.",
+        "gorsellerin_temsil_ettigi_alanlar": "KAAN (havacılık/savunma), TCG Anadolu (deniz gücü), Göktürk-1 ve BİLSAT (uzay ve uydu teknolojisi).",
+        "guvenin_surdurulme_yorumu": "Dün cephede bağımsızlığı koruyan ruh, bugün hangarlarda ve laboratuvarlarda ileri teknoloji üreterek vatanı bağımsız kılmaktadır."
+      }
     },
     {
       "question_id": "T3-P205-PERF02",
@@ -194,9 +262,15 @@
       "printed_page": 205,
       "question_no": "Sıra Sizde 2",
       "prompt_summary": "Günümüz Âsım nesline düşen görevleri görsellerden hareketle tartışma",
-      "answer": "Örnek sonuç: Günümüz gençlerine nitelikli eğitim almak, bilimsel düşünmeyi geliştirmek, teknolojiyi yalnız tüketmek yerine üretmeye yönelmek, mesleki sorumluluk taşımak, toplumun ihtiyaçlarına çözüm aramak ve etik değerlere bağlı kalmak gibi görevler düşebilir. Sayfadaki uçak, gemi ve uydu görselleri özellikle uzun süreli eğitim, ekip çalışması, araştırma ve teknik üretimin önemini düşündürür.",
+      "answer": "Sayfadaki KAAN, TCG Anadolu, Göktürk-1 ve BİLSAT gibi ileri mühendislik ve savunma sanayii başarılarından hareketle günümüz Âsım nesline düşen görevler şöyle tartışılabilir:\n\n1. Bilim ve Teknolojide Üretici Olmak: Teknolojiyi sadece tüketen bir nesil olmak yerine, yazılım, yapay zekâ, robotik, havacılık ve uzay bilimlerinde yeni teknolojiler geliştiren, patent alan ve üreten öncüler olmak.\n2. Nitelikli ve Disiplinli Eğitim Almak: Dev projelerin hayata geçirilmesi on binlerce saatlik ortak emek, ekip çalışması ve disiplin gerektirir. Gençlerin çağın gerektirdiği teknik ve akademik donanımı kazanması esastır.\n3. Millî ve Manevi Değerlerle Bilimi Birlikte Yürütmek: Âkif'in idealinde bilgi tek başına yeterli değildir; bilginin memleket hayrına, adalete ve insanlığa hizmet etmesi için yüksek bir ahlak, vicdan ve vatan sevgisiyle harmanlanması gerekir.\n4. Bağımsızlık ve Sorumluluk Bilinci: Ülkenin tam bağımsızlığının teknolojik ve ekonomik bağımsızlıktan geçtiğini bilerek toplumsal ihtiyaçlara yenilikçi çözümler üretmek.",
       "guidance": "Bu görev tartışmaya açıktır; öğrencilerin farklı görevler önermesi mümkündür. Öneri ile sayfadaki görseller arasında anlamlı bağ kurulmalıdır.",
-      "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 2 / görseller doğrulandı"
+      "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 2 / görseller doğrulandı",
+      "answer_sections": {
+        "egitim_ve_bilim": "Nitelikli eğitim almak, mühendislik ve temel bilimlere yönelmek.",
+        "teknolojik_uretim": "Hazır tüketimden sıyrılıp yerli ve millî teknoloji tasarlamak.",
+        "ahlak_ve_vicdan": "Teknolojiyi vatanın ve insanlığın faydasına kullanacak meslek etiğine sahip olmak.",
+        "ekip_ruhu": "Büyük projelerin gerektirdiği sebat, disiplin ve iş birliğini hayat tarzı hâline getirmek."
+      }
     }
   ]
 }
