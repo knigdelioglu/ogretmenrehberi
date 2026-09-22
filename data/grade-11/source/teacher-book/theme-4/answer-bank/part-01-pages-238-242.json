@@ -33,10 +33,17 @@
       "question_no": "3",
       "source_locator": "basılı s.239 / PDF s.240 — soru 3",
       "prompt_summary": "Sanatsal metnin özelliklerini metindeki sanat anlayışından hareketle açıklama",
-      "answer": "Sanatsal metin, hayatı olduğu gibi kopyalamak yerine sanatçının seçtiği yaşantıları, duygu ve düşünceleri estetik bir biçimde yeniden kurar. Sözcüklerin, imgelerin ve anlatım düzeninin bilinçli seçimi okurda anlam ve duygu uyandırır. Metin aynı zamanda yazarın döneminden ve kültüründen izler taşıyabilir; farklı okurlar kendi deneyimleriyle metni farklı biçimlerde anlamlandırabilir.",
+      "answer": "Sanatsal metin, hayatı olduğu gibi aktaran bir kayıt değildir; sanatçının seçtiği insan hâllerini, duygu ve düşünceleri kendi dünyasında yeniden düzenleyip biçimlendirdiği bir anlatıdır. Bu nedenle sanatçının yaşadığı dönemin ruhundan, dünya görüşünden ve kültüründen izler taşıyabilir; aynı zamanda toplumun maddi ve manevi değerlerini sonraki kuşaklara aktarmaya katkı sağlar.",
       "evidence_quotes": [
         "hayatı yeniden kurar ve yeniden biçimlendirir"
-      ]
+      ],
+      "guidance": "Cevabı bu sayfadaki metnin açıkça kurduğu hayatı yeniden kurma, dönemi yansıtma ve kültür aktarımı ekseninde tutun. Metinde açıklanmayan alımlama kuramı, çok anlamlılık veya okur merkezli kuramsal sonuçları zorunlu cevap yapmayın.",
+      "answer_sections": {
+        "hayatla_iliskisi": "Hayattan ve insanın değişik hâllerinden hareket eder.",
+        "sanatsal_donusturme": "Hayatı yazarın dünyasında yeniden düzenler ve biçimlendirir; birebir kopyalamaz.",
+        "donem_ve_kultur": "Sanatçının döneminin ruhu, dünya görüşü ve kültürel değerleri esere yansıyabilir.",
+        "kultur_aktarimi": "Geçmiş ile gelecek arasında bağ kurmaya ve kültürel belleğin aktarılmasına katkı sağlar."
+      }
     },
     {
       "question_id": "T4-P239-PERF01",
@@ -45,8 +52,14 @@
       "question_no": "4",
       "source_locator": "basılı s.239 / PDF s.240 — soru 4",
       "prompt_summary": "Önceki yaşantıların edebî eseri anlamlandırmaya etkisini gerekçelendirme",
-      "answer": "Örnek cevap: Evet, daha önce yaşadığım bir ayrılık ya da bekleyişi bir eserde görmek onu benim için daha anlamlı kılabilir. Kişinin tanıdığı bir duyguyla karşılaşması, karakterin davranışlarını kendi yaşantısıyla ilişkilendirip metne daha yakından katılmasını sağlar. Bununla birlikte, farklı deneyimleri olan bir okur aynı eseri başka bir yönüyle anlamlı bulabilir.",
-      "guidance": "Bu kişisel bir yorum sorusudur. Öğrenci, yaşantıların eseri daha anlamlı kılmadığını savunabilir; gerekçesi metin-okur ilişkisini açıklıyorsa bu cevap da kabul edilmelidir."
+      "answer": "Bu soru öğrencinin gerçek yaşantısına göre cevaplanmalıdır; rehber öğrenci adına bir ayrılık, bekleyiş, kayıp veya başka bir deneyim uydurmaz. Uygulanabilir cevap şablonu: Karşılaştığım gerçek olay/durum: [...] → Eserdeki benzer olay/durum: [...] → Bu benzerlik eseri benim için daha anlamlı kıldı/kılmadı çünkü: [...].",
+      "guidance": "Kişisel deneyim alanı boş bırakılmalıdır. Öğrenci yaşantı benzerliğinin eseri daha anlamlı kıldığını da kılmadığını da savunabilir; gerekçesinin kendi gerçek deneyimi ile metin arasındaki ilişkiyi açıklaması yeterlidir.",
+      "answer_sections": {
+        "gercek_yasanti": "[...]",
+        "metindeki_benzerlik": "[...]",
+        "anlamlandirmaya_etkisi": "Daha anlamlı kıldı / kılmadı / kısmen etkiledi.",
+        "gerekce": "[...]"
+      }
     },
     {
       "question_id": "T4-P239-PERF02",
@@ -55,8 +68,14 @@
       "question_no": "5",
       "source_locator": "basılı s.239 / PDF s.240 — soru 5",
       "prompt_summary": "Seçilecek edebî türü ve yansıtılacak hayat yönünü gerekçelendirme",
-      "answer": "Örnek cevap: Kısa öykü yazmayı seçerdim. Farklı kuşaklardan iki kişinin aynı mahallede yaşadığı değişimi nasıl algıladığını anlatmak isterdim. Öykünün sınırlı kişi ve olayla yoğun bir yaşantıyı göstermeye elverişli olması, bu konuyu kısa ama etkili biçimde işlememi sağlayabilir.",
-      "guidance": "Tür, hayatın yönü ve gerekçe öğrencinin seçimine bağlıdır. Şiir, tiyatro, roman ya da başka bir tür için metinle tutarlı bir gerekçe sunan cevaplar da uygundur."
+      "answer": "Tek bir doğru tür veya hayat kesiti yoktur. Öğrenci kendi yazma tercihini belirlemeli ve türün imkânlarıyla anlatmak istediği hayat yönü arasında ilişki kurmalıdır.",
+      "guidance": "Öğrenci adına 'kısa öykü seçerdim' gibi bir tercih yazmayın. Şiir, hikâye, tiyatro, roman veya başka bir edebî tür seçilebilir; tür, konu ve gerekçe birbiriyle tutarlı olmalıdır.",
+      "answer_sections": {
+        "sectigim_tur": "[...]",
+        "yansitmak_istedigim_hayat_yonu": "[...]",
+        "neden_bu_tur": "[...]",
+        "turun_bu_konuyu_anlatmaya_sagladigi_imkan": "[...]"
+      }
     },
     {
       "question_id": "T4-P240-PERF01",
