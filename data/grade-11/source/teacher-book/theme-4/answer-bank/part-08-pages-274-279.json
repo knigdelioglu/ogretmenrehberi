@@ -124,8 +124,14 @@
       "question_no": "Sıra Sizde 2",
       "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 2",
       "prompt_summary": "Öğrencinin değer yargısıyla çelişen davranışa vereceği tepkiyi gerekçelendirme",
-      "answer": "Örnek cevap: Anlatıcının “yeni yetme” sözüyle genç memuru küçümsemesini uygun bulmam. Ben olsaydım önce kişinin ne söylediğini dinler, yaşına veya kıdemine bakmadan saygılı konuşurdum. Ancak genç memurun yaşlı memurun durumunu gülümseyerek aktarması da duyarsız görünebilir; metin bunun nedenini açıklamadığı için yargımı temkinli kurarım.",
-      "guidance": "Öğrenci başka bir davranışı seçebilir. Tepki, kişisel bir değer yargısı olarak açıkça belirtilip gerekçelendirilmelidir."
+      "answer": "Bu soru öğrencinin kendi değer yargısına dayanır. Önce metindeki rahatsız edici/uygun bulunmayan söz veya davranış seçilmeli, ardından öğrencinin aynı durumda nasıl davranacağı kendi gerçek değerleriyle açıklanmalıdır.",
+      "guidance": "Öğrenci adına anlatıcının 'yeni yetme' sözünü seçmeyin ve 'ben olsaydım...' cevabını hazır yazmayın. Genç memurun, anlatıcının veya başka bir davranışın gerekçeli biçimde seçilmesi mümkündür.",
+      "answer_sections": {
+        "sectigim_soz_veya_davranis": "[...]",
+        "neden_deger_yargimla_celisiyor": "[...]",
+        "benzer_durumda_benim_tepkim": "[...]",
+        "metinden_kanit": "[...]"
+      }
     },
     {
       "question_id": "T4-P278-TABLE01",
@@ -173,13 +179,21 @@
       "question_no": "Süreci Değerlendirebilme",
       "source_locator": "basılı s.279 / PDF s.280 — Süreci Değerlendirebilme",
       "prompt_summary": "Merdiven öyküsünü seçilen kişisel ölçütlerle öznel olarak değerlendirme",
-      "answer": "Örnek değerlendirme: “Konunun işlenişi” ölçütünde beğendim; çünkü sıradan bir iş yeri karşılaşması, anlatıcının acele ve yaşam önceliklerini sorgulamasına dönüşüyor. “Dil ve üslup” ölçütünde de yalın cümleler ve yinelemeler öykünün ritmini destekliyor. Başka bir öğrenci aynı ölçütü beğenmeyebilir; kendi yargısını metinden örnekle açıklaması beklenir.",
+      "answer": "Beğendim/Beğenmedim alanları öğrencinin gerçek değerlendirmesine göre doldurulmalıdır. Rehber yalnız ölçüt üretmeye ve gerekçeyi metin kanıtına bağlamaya yardım eder.",
       "answer_sections": {
-        "Konu/ana düşünce": "Gündelik karşılaşmaların insanın yaşam anlayışını değiştirebilmesi.",
-        "Dil/üslup": "Kısa, yalın ve tekrarlı anlatım; açık uçlu son.",
-        "Gerekçe": "Seçilen ölçütün okur üzerindeki etkisini belirli bir anlatım veya olay ayrıntısıyla açıklar."
+        "olasi_olcutler": [
+          "Konu/ana düşüncenin işlenişi",
+          "Dil ve üslup",
+          "Açık uçlu anlatım",
+          "Karakterlerin sunuluşu",
+          "Çağrışım gücü"
+        ],
+        "sectigim_olcut": "[...]",
+        "begendim_begenmedim": "[...]",
+        "metinden_kanit": "[...]",
+        "gerekcem": "[...]"
       },
-      "guidance": "Beğendim/beğenmedim işaretleri öğrencinin gerçek değerlendirmesine göre doldurulur; öğretmen adına tek seçim yapılmaz."
+      "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir."
     },
     {
       "question_id": "T4-P279-PERF02",
