@@ -1,6 +1,5 @@
 package io.github.knigdelioglu.lessonplayer.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
@@ -11,29 +10,42 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Purpose-built teacher/lesson palette, not the stock Material template.
-val Ink = Color(0xFF173B36)
-val Mint = Color(0xFFE9F3EC)
-val Paper = Color(0xFFF6F4EB)
-val Amber = Color(0xFFCF9953)
-val AmberText = Color(0xFF80551D)
-val SoftInk = Color(0xFF4A6158)
+// Low-saturation, paper-like light palette for long reading sessions.
+val Ink = Color(0xFF253443)
+val Mint = Color(0xFFE8F1F6)
+val Paper = Color(0xFFF7F9FB)
+val Amber = Color(0xFFAE8050)
+val AmberText = Color(0xFF795329)
+val SoftInk = Color(0xFF526477)
 val DeepSurface = Color(0xFF142521)
 
-private val Light = lightColorScheme(
-    primary = Ink,
+internal val Light = lightColorScheme(
+    primary = Color(0xFF415F73),
     onPrimary = Color.White,
     primaryContainer = Mint,
     onPrimaryContainer = Ink,
     secondary = SoftInk,
     onSecondary = Color.White,
+    secondaryContainer = Color(0xFFEDF3F7),
+    onSecondaryContainer = Ink,
+    tertiary = AmberText,
+    onTertiary = Color.White,
+    tertiaryContainer = Color(0xFFF7EFE4),
+    onTertiaryContainer = Color(0xFF634521),
     background = Paper,
     onBackground = Ink,
-    surface = Color(0xFFFEFDF8),
+    surface = Color.White,
     onSurface = Ink,
-    surfaceVariant = Color(0xFFE6EAE2),
+    surfaceVariant = Color(0xFFEEF2F5),
     onSurfaceVariant = SoftInk,
-    outline = Color(0xFFB2C5B9)
+    outline = Color(0xFFB5C3CC),
+    outlineVariant = Color(0xFFDCE5EB),
+    error = Color(0xFFB3261E),
+    onError = Color.White,
+    errorContainer = Color(0xFFFCECE8),
+    onErrorContainer = Color(0xFF5F1814),
+    inverseSurface = Ink,
+    inverseOnSurface = Paper
 )
 
 private val Dark = darkColorScheme(
@@ -81,7 +93,7 @@ internal fun contrastRatio(foreground: Color, background: Color): Double {
 
 @Composable
 fun LessonTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
+    darkTheme: Boolean = false,
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
