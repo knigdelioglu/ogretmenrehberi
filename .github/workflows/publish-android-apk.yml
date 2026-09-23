@@ -19,9 +19,9 @@ jobs:
       run:
         working-directory: apps/lesson-player-android
     env:
-      RELEASE_TAG: v0.1.0
-      APK_NAME: OgretmenRehberi-v0.1.0-android.apk
-      SHA_NAME: OgretmenRehberi-v0.1.0-android.apk.sha256
+      RELEASE_TAG: v0.1.1
+      APK_NAME: OgretmenRehberi-v0.1.1-android.apk
+      SHA_NAME: OgretmenRehberi-v0.1.1-android.apk.sha256
     steps:
       - uses: actions/checkout@v4
 
@@ -73,7 +73,7 @@ jobs:
         run: |
           set -euo pipefail
           if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            gh release create "$RELEASE_TAG"               --repo "$GITHUB_REPOSITORY"               --target "$GITHUB_SHA"               --title "Öğretmen Rehberi Android v0.1.0"               --notes "Android 16 Lesson Player önizleme sürümü. APK doğrulanmış debug build'dir; production signing henüz yapılandırılmadığı için sonraki build'ler yerinde güncelleme garantisi vermez."
+            gh release create "$RELEASE_TAG"               --repo "$GITHUB_REPOSITORY"               --target "$GITHUB_SHA"               --title "Öğretmen Rehberi Android v0.1.1"               --notes "Android 16 Lesson Player önizleme sürümü. APK doğrulanmış debug build'dir; production signing henüz yapılandırılmadığı için sonraki build'ler yerinde güncelleme garantisi vermez."
           fi
 
       - name: Upload APK and SHA-256 to Release
@@ -86,8 +86,8 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: ogretmenrehberi-v0.1.0-android
+          name: ogretmenrehberi-v0.1.1-android
           path: |
-            OgretmenRehberi-v0.1.0-android.apk
-            OgretmenRehberi-v0.1.0-android.apk.sha256
+            OgretmenRehberi-v0.1.1-android.apk
+            OgretmenRehberi-v0.1.1-android.apk.sha256
           if-no-files-found: error
