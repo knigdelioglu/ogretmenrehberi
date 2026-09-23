@@ -1,0 +1,93 @@
+name: Publish Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-android-apk.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: apps/lesson-player-android
+    env:
+      RELEASE_TAG: v0.1.0
+      APK_NAME: OgretmenRehberi-v0.1.0-android.apk
+      SHA_NAME: OgretmenRehberi-v0.1.0-android.apk.sha256
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Android 16 SDK
+        run: |
+          set -euo pipefail
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -path '*/bin/sdkmanager' -type f | sort -V | tail -1)"
+          test -x "$SDKMANAGER"
+          yes | "$SDKMANAGER" --licenses >/dev/null || test "${PIPESTATUS[1]}" -eq 0
+          "$SDKMANAGER" "platforms;android-36" "build-tools;35.0.0"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.13"
+
+      - name: Build and verify installable APK
+        run: |
+          set -euo pipefail
+          ./gradlew --version
+          ./gradlew --no-daemon :app:assembleDebug :app:testDebugUnitTest :app:lintDebug
+          APK="app/build/outputs/apk/debug/app-debug.apk"
+          test -s "$APK"
+          node ../lesson-player/scripts/package-android-data.mjs --check
+          node ../lesson-player/scripts/test-android-data.mjs
+          unzip -l "$APK" | grep -F 'assets/lesson-player/content-manifest.json'
+          unzip -l "$APK" | grep -F 'assets/lesson-player/lessons.json'
+          unzip -l "$APK" | grep -F 'assets/lesson-player/teacher-workflow.json'
+          AAPT="$(find "${ANDROID_HOME}/build-tools" -name aapt -type f | sort -V | tail -1)"
+          "$AAPT" dump badging "$APK" | grep -F "sdkVersion:'36'"
+          "$AAPT" dump badging "$APK" | grep -F "targetSdkVersion:'36'"
+          "$AAPT" dump badging "$APK" | grep -F "android.permission.INTERNET"
+          cp "$APK" "$GITHUB_WORKSPACE/$APK_NAME"
+          (cd "$GITHUB_WORKSPACE" && sha256sum "$APK_NAME" > "$SHA_NAME")
+          cat "$GITHUB_WORKSPACE/$SHA_NAME"
+
+      - name: Create GitHub Release if needed
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$RELEASE_TAG"               --repo "$GITHUB_REPOSITORY"               --target "$GITHUB_SHA"               --title "Öğretmen Rehberi Android v0.1.0"               --notes "Android 16 Lesson Player önizleme sürümü. APK doğrulanmış debug build'dir; production signing henüz yapılandırılmadığı için sonraki build'ler yerinde güncelleme garantisi vermez."
+          fi
+
+      - name: Upload APK and SHA-256 to Release
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release upload "$RELEASE_TAG"             "$GITHUB_WORKSPACE/$APK_NAME"             "$GITHUB_WORKSPACE/$SHA_NAME"             --clobber             --repo "$GITHUB_REPOSITORY"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ogretmenrehberi-v0.1.0-android
+          path: |
+            OgretmenRehberi-v0.1.0-android.apk
+            OgretmenRehberi-v0.1.0-android.apk.sha256
+          if-no-files-found: error
