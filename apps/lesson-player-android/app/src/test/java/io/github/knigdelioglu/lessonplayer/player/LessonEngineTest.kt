@@ -79,6 +79,8 @@ class LessonEngineTest {
             LessonCommand.ToggleReveal(RevealKey.ANSWER))
         assertEquals(state, LessonEngine.reduce(state, lesson,
             LessonCommand.ToggleTerm(vocab.id, "söz")))
+        state = LessonEngine.reduce(state, lesson, LessonCommand.GoToStep(second.id))
+        assertFalse(vocab.id in state.vocabularyTerms)
     }
 
     @Test fun customOrderResetAndProjectionNeverLeakTeacherNote() {
@@ -101,6 +103,42 @@ class LessonEngineTest {
         state = LessonEngine.reduce(state, lesson, LessonCommand.ResetLessonPresentation)
         assertEquals(listOf(first.id, second.id, vocab.id), state.order)
         assertTrue(state.overrides.isEmpty())
+    }
+
+    @Test fun directAnswerAndSequentialRevealShareStateAndModeChangesStartClean() {
+        var state = LessonEngine.reduce(
+            LessonEngine.initial(lesson, digest), lesson,
+            LessonCommand.GoToStep(second.id)
+        )
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.ToggleReveal(RevealKey.ANSWER))
+        assertEquals("Cevap metni", toStudentProjection(lesson, state).answerText)
+
+        state = LessonEngine.reduce(state, lesson, LessonCommand.RevealNext)
+        assertTrue(RevealKey.ANSWER in state.revealed)
+        assertTrue(RevealKey.GUIDANCE in state.revealed)
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.ToggleReveal(RevealKey.ANSWER))
+        assertFalse(RevealKey.ANSWER in state.revealed)
+
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.ToggleReveal(RevealKey.NOTE))
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.SetPresentationMode(true))
+        assertTrue(state.presentationMode)
+        assertTrue(state.revealed.isEmpty())
+        assertTrue(state.vocabularyTerms.isEmpty())
+        assertFalse(toStudentProjection(lesson, state).toString()
+            .contains("Gizli öğretmen notu"))
+        assertNull(toStudentProjection(lesson, state).answerText)
+
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.ToggleReveal(RevealKey.ANSWER))
+        assertEquals("Cevap metni", toStudentProjection(lesson, state).answerText)
+        state = LessonEngine.reduce(state, lesson,
+            LessonCommand.SetPresentationMode(false))
+        assertTrue(state.revealed.isEmpty())
+        assertFalse(state.presentationMode)
     }
 
     @Test fun partialPresentationEditsMergeRatherThanDiscardEarlierFields() {

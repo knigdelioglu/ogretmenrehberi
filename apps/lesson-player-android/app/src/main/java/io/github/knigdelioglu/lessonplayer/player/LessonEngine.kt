@@ -99,7 +99,11 @@ object LessonEngine {
         fun navigate(index: Int): LessonSession {
             val target = session.order[index.coerceIn(0, session.order.lastIndex)]
             return if (target == session.stepId) session
-                else session.copy(stepId = target, revealed = emptySet())
+                else session.copy(
+                    stepId = target,
+                    revealed = emptySet(),
+                    vocabularyTerms = session.vocabularyTerms - session.stepId
+                )
         }
         fun validateOverride(id: String, candidate: StepOverride) {
             val original = originalById.getValue(id)
@@ -161,7 +165,12 @@ object LessonEngine {
                 }
             }
             is LessonCommand.SetPresentationMode ->
-                session.copy(presentationMode = command.enabled)
+                if (command.enabled == session.presentationMode) session
+                else session.copy(
+                    presentationMode = command.enabled,
+                    revealed = emptySet(),
+                    vocabularyTerms = emptyMap()
+                )
             is LessonCommand.ApplyOverride -> {
                 require(command.stepId in originalById)
                 val previous = session.overrides[command.stepId]

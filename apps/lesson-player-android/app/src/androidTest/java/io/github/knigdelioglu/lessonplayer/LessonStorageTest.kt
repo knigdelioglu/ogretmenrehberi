@@ -17,6 +17,7 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.IOException
+import java.util.UUID
 
 class LessonStorageTest {
     private val context get() = InstrumentationRegistry.getInstrumentation().targetContext
@@ -71,7 +72,7 @@ class LessonStorageTest {
     }
 
     @Test
-    fun staleContentArchivesAllOldStateBeforeCanonicalFallback() = runBlocking {
+    fun contentUpdateArchivesOldSnapshotAndKeepsStableStepProgress() = runBlocking {
         val bundle = offlineRepository().load().bundle
         val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
         val database = Room.inMemoryDatabaseBuilder(context, LessonDatabase::class.java).build()
@@ -79,19 +80,87 @@ class LessonStorageTest {
             val store = LessonStore(database)
             val original = LessonEngine.initial(lesson, bundle.lessonDigest(lesson.lessonId))
             val second = lesson.steps[1]
-            store.save(LessonEngine.reduce(original, lesson,
-                LessonCommand.GoToStep(second.id)))
+            var saved = LessonEngine.reduce(original, lesson,
+                LessonCommand.GoToStep(second.id))
+            saved = LessonEngine.reduce(saved, lesson, LessonCommand.MoveStep(second.id, -1))
+            saved = LessonEngine.reduce(saved, lesson, LessonCommand.ApplyOverride(
+                second.id, StepOverride(displayPrompt = "Kaldığım sorunun öğretmen düzeni")
+            ))
+            store.save(saved)
             val revisedDigest = "new-content-digest"
-            val restored = store.restore(lesson, revisedDigest)
-            assertEquals(lesson.steps.first().id, restored.stepId)
+            val inserted = lesson.steps.first().copy(
+                id = "s15-new-step",
+                displayPrompt = "Yeni eklenen adım"
+            )
+            val revisedLesson = lesson.copy(
+                steps = lesson.steps.take(1) + inserted + lesson.steps.drop(1)
+            )
+            val restored = store.restore(revisedLesson, revisedDigest)
+            assertEquals(second.id, restored.stepId)
             assertEquals(revisedDigest, restored.contentDigest)
+            assertEquals(saved.order,
+                restored.order.filter { it in saved.order })
+            assertTrue(inserted.id in restored.order)
+            assertEquals("Kaldığım sorunun öğretmen düzeni",
+                restored.overrides[second.id]?.displayPrompt)
             val backup = store.archived(lesson.lessonId).single()
             assertEquals(bundle.lessonDigest(lesson.lessonId), backup.contentDigest)
             assertEquals(second.id, backup.stepId)
             assertEquals("CONTENT_DIGEST_MISMATCH", backup.reason)
-            // Re-opening without a new saved state must not create more backups.
-            store.restore(lesson, revisedDigest)
+            // Re-opening after migration must not create another archive.
+            assertEquals(second.id, store.restore(revisedLesson, revisedDigest).stepId)
             assertEquals(1, store.archived(lesson.lessonId).size)
+        } finally {
+            database.close()
+        }
+    }
+
+    @Test
+    fun eighteenthStepSurvivesApplicationRestart() = runBlocking {
+        val bundle = offlineRepository().load().bundle
+        val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
+        assertTrue("Test lesson must contain at least 18 steps", lesson.steps.size >= 18)
+        val target = lesson.steps[17]
+        val databaseName = "lesson-restart-${UUID.randomUUID()}.db"
+        var database = Room.databaseBuilder(
+            context, LessonDatabase::class.java, databaseName
+        ).build()
+        try {
+            val state = LessonEngine.reduce(
+                LessonEngine.initial(lesson, bundle.lessonDigest(lesson.lessonId)),
+                lesson,
+                LessonCommand.GoToStep(target.id)
+            )
+            LessonStore(database).save(state)
+            database.close()
+            database = Room.databaseBuilder(
+                context, LessonDatabase::class.java, databaseName
+            ).build()
+            assertEquals(target.id, LessonStore(database)
+                .restore(lesson, bundle.lessonDigest(lesson.lessonId)).stepId)
+        } finally {
+            database.close()
+            context.deleteDatabase(databaseName)
+        }
+    }
+
+    @Test
+    fun removedCurrentStepMovesToNextSurvivingStableStep() = runBlocking {
+        val bundle = offlineRepository().load().bundle
+        val lesson = bundle.byId.getValue("T11-T01-KARAGOZ")
+        val database = Room.inMemoryDatabaseBuilder(context, LessonDatabase::class.java).build()
+        try {
+            val store = LessonStore(database)
+            val current = lesson.steps[1]
+            store.save(LessonEngine.reduce(LessonEngine.initial(
+                lesson, bundle.lessonDigest(lesson.lessonId)
+            ), lesson, LessonCommand.GoToStep(current.id)))
+
+            val revised = lesson.copy(steps = lesson.steps.filterNot { it.id == current.id })
+            val restored = store.restore(revised, "step-removed-digest")
+            assertEquals(lesson.steps[2].id, restored.stepId)
+            assertFalse(current.id in restored.order)
+            assertEquals("step-removed-digest", restored.contentDigest)
         } finally {
             database.close()
         }

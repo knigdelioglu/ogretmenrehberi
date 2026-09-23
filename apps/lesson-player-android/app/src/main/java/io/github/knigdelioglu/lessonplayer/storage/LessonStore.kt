@@ -26,8 +26,10 @@ class LessonStore(private val database: LessonDatabase) {
         database.withTransaction {
             val original = LessonEngine.initial(lesson, contentDigest)
             val row = dao.readProgress(lesson.lessonId) ?: return@withTransaction original
+            if (row.contentDigest != contentDigest) {
+                return@withTransaction migrateContentUpdate(row, lesson, contentDigest, original)
+            }
             try {
-                require(row.contentDigest == contentDigest) { "Canonical content changed" }
                 val order = readOrder(row.stepOrderJson)
                 require(LessonEngine.validOrder(order, lesson)) { "Stale custom step order" }
                 val overrides = readOverrides(row.overridesJson)
@@ -48,24 +50,92 @@ class LessonStore(private val database: LessonDatabase) {
                     stepOrderJson = row.stepOrderJson,
                     overridesJson = row.overridesJson,
                     archivedAtMillis = System.currentTimeMillis(),
-                    reason = if (row.contentDigest != contentDigest)
-                        "CONTENT_DIGEST_MISMATCH" else "INVALID_SAVED_STATE"
+                    reason = "INVALID_SAVED_STATE"
                 ))
                 dao.deleteProgress(row.lessonId)
                 original
             }
         }
 
-    suspend fun save(state: LessonSession) {
-        dao.upsertProgress(ProgressRow(
-            lessonId = state.lessonId,
-            contentDigest = state.contentDigest,
-            stepId = state.stepId,
-            stepOrderJson = JSONArray(state.order).toString(),
-            overridesJson = writeOverrides(state.overrides),
-            updatedAtMillis = System.currentTimeMillis()
+    /**
+     * A lesson digest can change while stable step IDs still identify the teacher's
+     * place and edits. Archive the old snapshot, reconcile its order with the new
+     * canonical steps, and retain only edits that remain valid for the new content.
+     */
+    private suspend fun migrateContentUpdate(
+        row: ProgressRow,
+        lesson: LessonData,
+        contentDigest: String,
+        original: LessonSession
+    ): LessonSession {
+        dao.archiveProgress(ArchivedProgressRow(
+            lessonId = row.lessonId,
+            contentDigest = row.contentDigest,
+            stepId = row.stepId,
+            stepOrderJson = row.stepOrderJson,
+            overridesJson = row.overridesJson,
+            archivedAtMillis = System.currentTimeMillis(),
+            reason = "CONTENT_DIGEST_MISMATCH"
         ))
+        dao.deleteProgress(row.lessonId)
+
+        val migrated = runCatching {
+            val oldOrder = readOrder(row.stepOrderJson)
+            require(oldOrder.isNotEmpty() && oldOrder.none(String::isBlank)) {
+                "Invalid saved step order"
+            }
+            val canonicalOrder = lesson.steps.map { it.id }
+            val canonicalIds = canonicalOrder.toSet()
+            val reconciledOrder = oldOrder.filter { it in canonicalIds }.distinct().toMutableList()
+            canonicalOrder.forEachIndexed { index, id ->
+                if (id !in reconciledOrder) {
+                    val followingCanonicalStep = canonicalOrder.drop(index + 1)
+                        .firstOrNull { it in reconciledOrder }
+                    val insertAt = followingCanonicalStep?.let(reconciledOrder::indexOf)
+                        ?: reconciledOrder.size
+                    reconciledOrder.add(insertAt, id)
+                }
+            }
+            require(LessonEngine.validOrder(reconciledOrder, lesson))
+            val currentStep = if (row.stepId in reconciledOrder) {
+                row.stepId
+            } else {
+                val oldIndex = oldOrder.indexOf(row.stepId).coerceAtLeast(0)
+                oldOrder.drop(oldIndex + 1).firstOrNull { it in reconciledOrder }
+                    ?: oldOrder.take(oldIndex).asReversed()
+                        .firstOrNull { it in reconciledOrder }
+                    ?: LessonEngine.restoredStepId(
+                        reconciledOrder, null, null, oldIndex
+                    )
+            }
+            var state = original.copy(order = reconciledOrder, stepId = currentStep)
+            runCatching { readOverrides(row.overridesJson) }
+                .getOrDefault(emptyMap())
+                .filterKeys { it in canonicalIds }
+                .forEach { (id, override) ->
+                    state = runCatching {
+                        LessonEngine.reduce(state, lesson, LessonCommand.ApplyOverride(id, override))
+                    }.getOrDefault(state)
+                }
+            state
+        }.getOrDefault(original)
+
+        dao.upsertProgress(migrated.toProgressRow())
+        return migrated
     }
+
+    suspend fun save(state: LessonSession) {
+        dao.upsertProgress(state.toProgressRow())
+    }
+
+    private fun LessonSession.toProgressRow() = ProgressRow(
+        lessonId = lessonId,
+        contentDigest = contentDigest,
+        stepId = stepId,
+        stepOrderJson = JSONArray(order).toString(),
+        overridesJson = writeOverrides(overrides),
+        updatedAtMillis = System.currentTimeMillis()
+    )
 
     suspend fun archived(lessonId: String): List<ArchivedProgressRow> = dao.archived(lessonId)
 
