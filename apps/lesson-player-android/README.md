@@ -7,7 +7,7 @@ native Compose gezinmesi. Mevcut web Lesson Player bu klasörden bağımsızdır
 
 ## Durum
 
-- Açılan native `MainActivity`, tasarım sistemi, sistem açık/koyu teması.
+- Açılan native `MainActivity`, düşük doygunluklu açık okuma teması (sistem koyu modundan bağımsız); koyu palet yalnız açıkça `LessonTheme(darkTheme = true)` seçildiğinde kullanılır.
 - Kitaplık, örnek ders düzeni, üç öğretmen hattının kabuğu, görünüm ekranı
   ve dört Compose Preview. **Önizleme gerçek ders cevabı değildir.**
 - Android Back, API 36 edge-to-edge için Compose safe insets.
