@@ -14,6 +14,12 @@ class AppScreenTest {
     }
 
     @Test
+    fun libraryAndSettingsTitlesDescribeTheirContents() {
+        assertEquals("Ders kitaplığı", AppScreen.LIBRARY.title)
+        assertEquals("Veri ve yedekleme", AppScreen.SETTINGS.title)
+    }
+
+    @Test
     fun recursiveAnswerSectionsKeepReadableLabelsAndValues() {
         val value = JsonValue.Object(linkedMapOf(
             "başlık" to JsonValue.Text("Metin"),

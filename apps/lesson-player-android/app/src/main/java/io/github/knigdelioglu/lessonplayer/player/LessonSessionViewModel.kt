@@ -52,6 +52,7 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
     val backupState: StateFlow<BackupUiState> = mutableBackupState.asStateFlow()
     private val mutableActionState = MutableStateFlow(LessonActionUiState())
     val actionState: StateFlow<LessonActionUiState> = mutableActionState.asStateFlow()
+    val presentationTextSize = preferences.presentationTextSize
     private var lastFailedCommand: LessonCommand? = null
     private var lastFailedLessonId: String? = null
 
@@ -224,6 +225,12 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
     fun retryLastAction() {
         lastFailedCommand?.let(::dispatch)
             ?: lastFailedLessonId?.let(::openLesson)
+    }
+
+    fun setPresentationTextSize(value: PresentationTextSize) {
+        viewModelScope.launch {
+            preferences.setPresentationTextSize(value)
+        }
     }
 
     private fun clearAction() {

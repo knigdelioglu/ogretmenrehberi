@@ -17,19 +17,44 @@ data class LessonWindowLayout(
     val heightDp: Int
 ) {
     val usesRail: Boolean
-        get() = widthClass != LessonWindowWidthClass.COMPACT && !isShort
+        get() = isLandscape && widthClass != LessonWindowWidthClass.COMPACT && !isShort
 
     val usesLessonOutline: Boolean
-        get() = widthClass == LessonWindowWidthClass.EXPANDED && !isShort
+        get() = lessonOutlineFits(
+            usableContentWidthDp = widthDp.toFloat() -
+                if (usesRail) {
+                    (NAVIGATION_RAIL_WIDTH_DP + SAFE_HORIZONTAL_INSETS_DP).toFloat()
+                } else 0f,
+            usableContentHeightDp = heightDp.toFloat(),
+            isLandscape = isLandscape
+        )
 
     val isShort: Boolean
         get() = heightDp < 560
+
+    val isLandscape: Boolean
+        get() = widthDp > heightDp
 }
+
+private const val NAVIGATION_RAIL_WIDTH_DP = 80
+private const val SAFE_HORIZONTAL_INSETS_DP = 48
+private const val OUTLINE_MIN_WIDTH_DP = 240
+private const val LESSON_READER_MIN_WIDTH_DP = 640
+private const val OUTLINE_GAP_DP = 16
+
+internal fun lessonOutlineFits(
+    usableContentWidthDp: Float,
+    usableContentHeightDp: Float,
+    isLandscape: Boolean
+): Boolean = isLandscape &&
+    usableContentHeightDp >= 560f &&
+    usableContentWidthDp >= OUTLINE_MIN_WIDTH_DP + OUTLINE_GAP_DP +
+        LESSON_READER_MIN_WIDTH_DP
 
 internal fun lessonWindowLayout(widthDp: Int, heightDp: Int): LessonWindowLayout {
     val widthClass = when {
         widthDp < 600 -> LessonWindowWidthClass.COMPACT
-        widthDp < 1100 -> LessonWindowWidthClass.MEDIUM
+        widthDp < 900 -> LessonWindowWidthClass.MEDIUM
         else -> LessonWindowWidthClass.EXPANDED
     }
     return LessonWindowLayout(widthClass, widthDp, heightDp)

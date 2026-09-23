@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Icon
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -26,11 +27,13 @@ import androidx.compose.material3.NavigationRail
 import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -49,10 +52,12 @@ import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
+import io.github.knigdelioglu.lessonplayer.player.PresentationTextSize
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanUiState
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanViewModel
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
 import kotlin.math.roundToInt
 
@@ -63,10 +68,15 @@ fun LessonPlayerApp() {
         var bundle by remember { mutableStateOf<LessonBundle?>(null) }
         var contentStatus by remember { mutableStateOf<String?>(null) }
         var loadError by remember { mutableStateOf<String?>(null) }
+        var loadingContent by remember { mutableStateOf(true) }
+        var loadRequest by remember { mutableIntStateOf(0) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
         val sessionViewModel: LessonSessionViewModel = viewModel()
         val teacherPlanViewModel: TeacherPlanViewModel = viewModel()
         val sessionUi by sessionViewModel.state.collectAsState()
+        val presentationTextSize by sessionViewModel.presentationTextSize.collectAsState(
+            initial = PresentationTextSize.NORMAL
+        )
         val teacherPlanUi by teacherPlanViewModel.state.collectAsState()
         val readySession = sessionUi as? LessonSessionUiState.Ready
         val backupUi by sessionViewModel.backupState.collectAsState()
@@ -84,13 +94,18 @@ fun LessonPlayerApp() {
             uri?.let { sessionViewModel.importBackup(it, pendingImportPassphrase) }
         }
 
-        LaunchedEffect(appContext) {
+        val contentRepository = remember(appContext) { ContentRepository(appContext) }
+        LaunchedEffect(contentRepository, loadRequest) {
+            loadingContent = true
+            loadError = null
             try {
-                val loaded = ContentRepository(appContext).load()
+                val loaded = contentRepository.load()
                 bundle = loaded.bundle
                 contentStatus = loaded.statusMessage
             } catch (error: Exception) {
                 loadError = error.message ?: error::class.simpleName ?: "Bilinmeyen hata"
+            } finally {
+                loadingContent = false
             }
         }
         LaunchedEffect(bundle?.contentSha256) {
@@ -115,16 +130,36 @@ fun LessonPlayerApp() {
                 Modifier.fillMaxSize().padding(LessonSpacing.large),
                 contentAlignment = Alignment.Center
             ) {
-                Text(
-                    "Ders paketi doğrulanamadı: $loadError",
-                    color = MaterialTheme.colorScheme.error
-                )
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+                ) {
+                    Text(
+                        "Ders paketi doğrulanamadı: $loadError",
+                        color = MaterialTheme.colorScheme.error
+                    )
+                    androidx.compose.material3.Button(
+                        onClick = {
+                            if (!loadingContent) {
+                                loadingContent = true
+                                loadRequest += 1
+                            }
+                        },
+                        enabled = !loadingContent
+                    ) { Text("Yeniden dene") }
+                }
             }
             bundle == null -> Box(
                 Modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
-                Text("Dersler doğrulanıyor…")
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+                ) {
+                    CircularProgressIndicator()
+                    Text(if (loadingContent) "Dersler doğrulanıyor…" else "Ders paketi yüklenemedi.")
+                }
             }
             sessionUi is LessonSessionUiState.Error ->
                 Box(
@@ -150,6 +185,8 @@ fun LessonPlayerApp() {
                 bundle = bundle!!,
                 contentStatus = contentStatus.orEmpty(),
                 session = readySession.session,
+                presentationTextSize = presentationTextSize,
+                setPresentationTextSize = sessionViewModel::setPresentationTextSize,
                 navigate = { currentScreen = it },
                 selectLesson = {
                     sessionViewModel.openLesson(it)
@@ -186,6 +223,8 @@ internal fun LessonPlayerShell(
     bundle: LessonBundle,
     contentStatus: String,
     session: LessonSession,
+    presentationTextSize: PresentationTextSize,
+    setPresentationTextSize: (PresentationTextSize) -> Unit,
     navigate: (AppScreen) -> Unit,
     selectLesson: (String) -> Unit,
     dispatch: (LessonCommand) -> Unit,
@@ -203,11 +242,10 @@ internal fun LessonPlayerShell(
             heightDp = maxHeight.value.roundToInt()
         )
         val wide = windowLayout.usesRail
-        val twoPaneLesson = windowLayout.usesLessonOutline &&
-            currentScreen == AppScreen.LESSON
         val dispatchAction: (LessonCommand) -> Unit = { command ->
             if (!actionState.busy) dispatch(command)
         }
+        var showLessonOutline by rememberSaveable { mutableStateOf(false) }
 
         if (currentScreen == AppScreen.LESSON && session.presentationMode) {
             PresentationLessonScreen(
@@ -216,6 +254,8 @@ internal fun LessonPlayerShell(
                 dispatch = dispatchAction,
                 actionState = actionState,
                 retryLastAction = retryLastAction,
+                textSize = presentationTextSize,
+                onTextSizeChange = setPresentationTextSize,
                 exit = { dispatchAction(LessonCommand.SetPresentationMode(false)) }
             )
         } else {
@@ -254,15 +294,29 @@ internal fun LessonPlayerShell(
                 },
                 bottomBar = {
                     if (!wide) {
-                        NavigationBar {
-                            AppScreen.entries.forEach { destination ->
-                                NavigationBarItem(
-                                    selected = currentScreen == destination,
-                                    onClick = { navigate(destination) },
-                                    icon = { AppNavigationIcon(destination) },
-                                    label = { Text(destination.shortLabel) },
-                                    alwaysShowLabel = true
-                                )
+                        Column {
+                            if (currentScreen == AppScreen.LESSON) {
+                                TextButton(
+                                    onClick = { showLessonOutline = true },
+                                    modifier = Modifier.fillMaxWidth()
+                                        .heightIn(min = LessonTarget.minimum),
+                                    enabled = !actionState.busy
+                                ) {
+                                    Text(
+                                        "Ders akışı · Adım ${session.order.indexOf(session.stepId) + 1}/${session.order.size}"
+                                    )
+                                }
+                            }
+                            NavigationBar {
+                                AppScreen.entries.forEach { destination ->
+                                    NavigationBarItem(
+                                        selected = currentScreen == destination,
+                                        onClick = { navigate(destination) },
+                                        icon = { AppNavigationIcon(destination) },
+                                        label = { Text(destination.shortLabel) },
+                                        alwaysShowLabel = true
+                                    )
+                                }
                             }
                         }
                     }
@@ -285,16 +339,30 @@ internal fun LessonPlayerShell(
                             }
                         }
                     }
-                    Box(
+                    BoxWithConstraints(
                         modifier = Modifier.weight(1f).fillMaxSize(),
                         contentAlignment = Alignment.TopCenter
                     ) {
+                        val twoPaneLesson = currentScreen == AppScreen.LESSON &&
+                            lessonOutlineFits(
+                                usableContentWidthDp = maxWidth.value,
+                                usableContentHeightDp = maxHeight.value,
+                                isLandscape = windowLayout.isLandscape
+                            )
+                        LaunchedEffect(currentScreen, twoPaneLesson, session.presentationMode) {
+                            if (currentScreen != AppScreen.LESSON ||
+                                twoPaneLesson || session.presentationMode
+                            ) {
+                                showLessonOutline = false
+                            }
+                        }
                         if (twoPaneLesson) {
                             Row(modifier = Modifier.fillMaxSize()) {
                                 LessonOutlinePane(
                                     lesson = bundle.byId.getValue(session.lessonId),
                                     session = session,
-                                    dispatch = dispatchAction
+                                    dispatch = dispatchAction,
+                                    enabled = !actionState.busy
                                 )
                                 Box(
                                     modifier = Modifier.weight(1f).fillMaxSize()
@@ -310,8 +378,12 @@ internal fun LessonPlayerShell(
                             }
                         } else {
                             Box(
-                                modifier = Modifier.fillMaxWidth().fillMaxHeight()
-                                    .widthIn(max = 960.dp)
+                                modifier = if (currentScreen == AppScreen.LIBRARY) {
+                                    Modifier.fillMaxSize()
+                                } else {
+                                    Modifier.fillMaxWidth().fillMaxHeight()
+                                        .widthIn(max = 960.dp)
+                                }
                             ) {
                                 PhaseOneScreen(
                                     currentScreen,
@@ -327,9 +399,25 @@ internal fun LessonPlayerShell(
                                     toggleTeacherMark,
                                     backupState,
                                     beginExport,
-                                    beginImport
+                                    beginImport,
+                                    openLessonOutline = if (currentScreen == AppScreen.LESSON &&
+                                        !twoPaneLesson
+                                    ) {
+                                        { showLessonOutline = true }
+                                    } else null
                                 )
                             }
+                        }
+                        if (showLessonOutline && currentScreen == AppScreen.LESSON &&
+                            !twoPaneLesson && !session.presentationMode
+                        ) {
+                            LessonOutlineSheet(
+                                lesson = bundle.byId.getValue(session.lessonId),
+                                session = session,
+                                dispatch = dispatchAction,
+                                dismiss = { showLessonOutline = false },
+                                enabled = !actionState.busy
+                            )
                         }
                     }
                 }

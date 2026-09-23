@@ -19,6 +19,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.semantics
@@ -49,7 +50,8 @@ internal fun SessionLessonScreen(
     state: LessonSession,
     dispatch: (LessonCommand) -> Unit,
     actionState: LessonActionUiState = LessonActionUiState(),
-    retryLastAction: () -> Unit = {}
+    retryLastAction: () -> Unit = {},
+    openLessonOutline: (() -> Unit)? = null
 ) {
     val sourceStep = lesson.steps.first { it.id == state.stepId }
     val step = LessonEngine.effectiveStep(sourceStep, state.overrides[sourceStep.id])
@@ -76,9 +78,19 @@ internal fun SessionLessonScreen(
             ) {
         item {
             Text(lesson.title, style = MaterialTheme.typography.headlineMedium)
-            Text("Basılı s. ${step.source.printedPageRange} · ${ordinal + 1}/${state.order.size}",
-                color = MaterialTheme.colorScheme.secondary,
-                style = MaterialTheme.typography.bodyMedium)
+            val stepLabel = "Basılı s. ${step.source.printedPageRange} · ${ordinal + 1}/${state.order.size}"
+            if (openLessonOutline == null) {
+                Text(stepLabel, color = MaterialTheme.colorScheme.secondary,
+                    style = MaterialTheme.typography.bodyMedium)
+            } else {
+                TextButton(
+                    onClick = openLessonOutline,
+                    modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                        .testTag("lesson-step-counter")
+                ) {
+                    Text("$stepLabel · Ders akışını aç")
+                }
+            }
         }
         item {
             FilledTonalButton(

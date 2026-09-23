@@ -16,13 +16,22 @@ import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
@@ -32,6 +41,7 @@ import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.player.PresentationTextSize
 import io.github.knigdelioglu.lessonplayer.player.toStudentProjection
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -50,6 +60,8 @@ internal fun PresentationLessonScreen(
     state: LessonSession,
     dispatch: (LessonCommand) -> Unit,
     exit: () -> Unit,
+    textSize: PresentationTextSize,
+    onTextSizeChange: (PresentationTextSize) -> Unit,
     actionState: LessonActionUiState = LessonActionUiState(),
     retryLastAction: () -> Unit = {}
 ) {
@@ -67,8 +79,16 @@ internal fun PresentationLessonScreen(
     val send: (LessonCommand) -> Unit = { command ->
         if (!actionState.busy) dispatch(command)
     }
+    val baseDensity = LocalDensity.current
+    var textSizeMenuExpanded by rememberSaveable { mutableStateOf(false) }
 
-    Column(
+    CompositionLocalProvider(
+        LocalDensity provides Density(
+            density = baseDensity.density,
+            fontScale = baseDensity.fontScale * textSize.scale
+        )
+    ) {
+      Column(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
@@ -96,11 +116,34 @@ internal fun PresentationLessonScreen(
                         style = MaterialTheme.typography.titleMedium
                     )
                 }
-                TextButton(
-                    onClick = exit,
-                    modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                Row(
+                    verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                 ) {
-                    Text("Sunumdan çık")
+                    Box {
+                        TextButton(
+                            onClick = { textSizeMenuExpanded = true },
+                            modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                        ) { Text("Yazı: ${textSize.label}") }
+                        DropdownMenu(
+                            expanded = textSizeMenuExpanded,
+                            onDismissRequest = { textSizeMenuExpanded = false }
+                        ) {
+                            PresentationTextSize.entries.forEach { option ->
+                                DropdownMenuItem(
+                                    text = { Text(option.label) },
+                                    onClick = {
+                                        onTextSizeChange(option)
+                                        textSizeMenuExpanded = false
+                                    }
+                                )
+                            }
+                        }
+                    }
+                    TextButton(
+                        onClick = exit,
+                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                    ) { Text("Sunumdan çık") }
                 }
             }
         }
@@ -265,6 +308,7 @@ internal fun PresentationLessonScreen(
                 ) { Text("Sonraki") }
             }
         }
+      }
     }
 }
 

@@ -16,6 +16,7 @@ val Ink = Color(0xFF173B36)
 val Mint = Color(0xFFE9F3EC)
 val Paper = Color(0xFFF6F4EB)
 val Amber = Color(0xFFCF9953)
+val AmberText = Color(0xFF80551D)
 val SoftInk = Color(0xFF4A6158)
 val DeepSurface = Color(0xFF142521)
 
@@ -61,6 +62,22 @@ private val LessonTypography = Typography(
     labelLarge = TextStyle(fontSize = 14.sp, fontWeight = FontWeight.SemiBold),
     labelMedium = TextStyle(fontSize = 12.sp, fontWeight = FontWeight.Medium)
 )
+
+internal fun contrastRatio(foreground: Color, background: Color): Double {
+    fun luminance(color: Color): Double {
+        fun linear(channel: Float): Double {
+            val value = channel.toDouble()
+            return if (value <= 0.04045) value / 12.92
+            else Math.pow((value + 0.055) / 1.055, 2.4)
+        }
+        return 0.2126 * linear(color.red) +
+            0.7152 * linear(color.green) +
+            0.0722 * linear(color.blue)
+    }
+    val first = luminance(foreground)
+    val second = luminance(background)
+    return (maxOf(first, second) + 0.05) / (minOf(first, second) + 0.05)
+}
 
 @Composable
 fun LessonTheme(

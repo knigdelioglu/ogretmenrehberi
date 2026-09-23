@@ -1,12 +1,15 @@
 package io.github.knigdelioglu.lessonplayer
 
+import android.content.pm.ActivityInfo
 import androidx.compose.ui.test.assertHeightIsAtLeast
+import androidx.compose.ui.test.assertTextContains
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import org.junit.Assert.assertTrue
 import org.junit.Rule
@@ -44,6 +47,12 @@ class AndroidShellTest {
             ).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithText("Sunumdan çık").assertExists()
+        composeRule.onNodeWithText("Yazı:", substring = true).performClick()
+        composeRule.onNodeWithText("Çok büyük").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            composeRule.onAllNodesWithText("Yazı: Çok büyük")
+                .fetchSemanticsNodes().isNotEmpty()
+        }
         assertTrue(
             composeRule.onAllNodesWithText("Öğretmen notu")
                 .fetchSemanticsNodes().isEmpty()
@@ -58,6 +67,65 @@ class AndroidShellTest {
             ).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
+
+        composeRule.onAllNodesWithText("Sınıf sunumuna geç")[0].performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            composeRule.onAllNodesWithText("Yazı: Çok büyük")
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithText("Yazı:", substring = true).performClick()
+        composeRule.onNodeWithText("Normal").performClick()
+        composeRule.onNodeWithText("Sunumdan çık").performClick()
+    }
+
+    @Test
+    fun portraitFlowOpensAndSelectingAStepKeepsTheLessonScreen() {
+        composeRule.activityRule.scenario.onActivity {
+            it.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        }
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(hasText("Ders, elinin altında."))
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(hasText("Ders akışı", substring = true))
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithText("Ders akışı", substring = true).performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            composeRule.onAllNodesWithText("DERS AKIŞI")
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithTag("lesson-outline-step-2").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            composeRule.onAllNodes(hasText("· 2/", substring = true))
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithTag("lesson-step-counter").assertTextContains("· 2/")
+        composeRule.onNodeWithText("Sınıf sunumuna geç").assertExists()
+    }
+
+    @Test
+    fun backupPassphraseStartsMaskedAndCanBeShownOnDemand() {
+        composeRule.activityRule.scenario.onActivity {
+            it.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        }
+        composeRule.waitUntil(timeoutMillis = 30_000) {
+            composeRule.onAllNodes(hasText("Ders, elinin altında."))
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithText("Ayarlar").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            composeRule.onAllNodesWithText("Veri ve yedekleme")
+                .fetchSemanticsNodes().isNotEmpty()
+        }
+        composeRule.onNodeWithTag("settings-list")
+            .performScrollToNode(hasText("Yedek parolası"))
+        composeRule.onNodeWithText("Göster").assertExists()
+        composeRule.onNodeWithTag("backup-passphrase").performTextInput("a11-tablet-pass")
+        composeRule.onNodeWithText("Göster").performClick()
+        composeRule.onNodeWithText("Gizle").assertExists()
     }
     @Test
     fun teacherCanOpenNativeEditorWithoutPresentationMode() {

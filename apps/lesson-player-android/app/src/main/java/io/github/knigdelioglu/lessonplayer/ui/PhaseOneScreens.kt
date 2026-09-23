@@ -1,17 +1,21 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -19,6 +23,8 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
@@ -26,6 +32,7 @@ import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -34,6 +41,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.selected
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
@@ -64,7 +79,8 @@ internal fun PhaseOneScreen(
     toggleTeacherMark: (TeacherTrack, String) -> Unit,
     backupState: BackupUiState,
     beginExport: (String) -> Unit,
-    beginImport: (String) -> Unit
+    beginImport: (String) -> Unit,
+    openLessonOutline: (() -> Unit)? = null
 ) {
     when (screen) {
         AppScreen.LIBRARY -> LibraryScreen(
@@ -75,7 +91,8 @@ internal fun PhaseOneScreen(
             session,
             dispatch,
             actionState,
-            retryLastAction
+            retryLastAction,
+            openLessonOutline
         )
         AppScreen.GUIDE -> GuideScreen(bundle, teacherPlan, toggleTeacherMark)
         AppScreen.SETTINGS -> SettingsScreen(bundle, backupState, beginExport, beginImport)
@@ -90,8 +107,11 @@ internal fun PhaseOneScreen(
 internal fun LessonOutlinePane(
     lesson: LessonData,
     session: LessonSession,
-    dispatch: (LessonCommand) -> Unit
+    dispatch: (LessonCommand) -> Unit,
+    enabled: Boolean = true
 ) {
+    val listState = rememberLazyListState()
+    ScrollOutlineToCurrentStep(session, listState)
     Surface(
         modifier = Modifier.fillMaxHeight().widthIn(min = 240.dp, max = 300.dp),
         color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.45f)
@@ -113,58 +133,135 @@ internal fun LessonOutlinePane(
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
-            LazyColumn(
+            LessonOutlineRows(
+                lesson = lesson,
+                session = session,
+                dispatch = dispatch,
+                listState = listState,
                 modifier = Modifier.weight(1f).fillMaxWidth(),
-                verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                enabled = enabled
+            )
+        }
+    }
+}
+
+@Composable
+@OptIn(ExperimentalMaterial3Api::class)
+internal fun LessonOutlineSheet(
+    lesson: LessonData,
+    session: LessonSession,
+    dispatch: (LessonCommand) -> Unit,
+    dismiss: () -> Unit,
+    enabled: Boolean = true
+) {
+    val listState = rememberLazyListState()
+    ScrollOutlineToCurrentStep(session, listState)
+    ModalBottomSheet(
+        onDismissRequest = dismiss,
+        containerColor = MaterialTheme.colorScheme.surface
+    ) {
+        Column(
+            modifier = Modifier.fillMaxWidth().fillMaxHeight(0.86f)
+                .padding(horizontal = LessonSpacing.medium),
+            verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+        ) {
+            Text("DERS AKIŞI", style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.secondary)
+            Text(lesson.title, style = MaterialTheme.typography.titleLarge,
+                maxLines = 2, overflow = TextOverflow.Ellipsis)
+            Text(
+                "${session.order.size} adım · seçili ${session.order.indexOf(session.stepId) + 1} · basılı s. ${lesson.steps.first { it.id == session.stepId }.source.printedPageRange}",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            LessonOutlineRows(
+                lesson = lesson,
+                session = session,
+                dispatch = dispatch,
+                listState = listState,
+                modifier = Modifier.weight(1f).fillMaxWidth(),
+                enabled = enabled,
+                onStepSelected = dismiss
+            )
+        }
+    }
+}
+
+@Composable
+private fun ScrollOutlineToCurrentStep(session: LessonSession, listState: LazyListState) {
+    LaunchedEffect(session.stepId, session.order) {
+        val selectedIndex = session.order.indexOf(session.stepId)
+        if (selectedIndex >= 0) listState.animateScrollToItem(selectedIndex)
+    }
+}
+
+@Composable
+private fun LessonOutlineRows(
+    lesson: LessonData,
+    session: LessonSession,
+    dispatch: (LessonCommand) -> Unit,
+    listState: LazyListState,
+    modifier: Modifier = Modifier,
+    enabled: Boolean = true,
+    onStepSelected: () -> Unit = {}
+) {
+    LazyColumn(
+        modifier = modifier,
+        state = listState,
+        verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+    ) {
+        itemsIndexed(session.order, key = { _, stepId -> stepId }) { index, stepId ->
+            val step = lesson.steps.first { it.id == stepId }
+            val isSelected = stepId == session.stepId
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(16.dp),
+                color = if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                else MaterialTheme.colorScheme.surface.copy(alpha = 0.55f),
+                border = if (isSelected) BorderStroke(
+                    2.dp, MaterialTheme.colorScheme.primary
+                ) else null
             ) {
-                itemsIndexed(session.order, key = { _, stepId -> stepId }) { index, stepId ->
-                    val step = lesson.steps.first { it.id == stepId }
-                    val selected = stepId == session.stepId
-                    Surface(
+                TextButton(
+                    enabled = enabled,
+                    onClick = {
+                        dispatch(LessonCommand.GoToStep(stepId))
+                        onStepSelected()
+                    },
+                    modifier = Modifier.fillMaxWidth()
+                        .semantics {
+                            selected = isSelected
+                            stateDescription = if (isSelected) {
+                                "Seçili adım ${index + 1}"
+                            } else "Adım ${index + 1}"
+                        }
+                        .testTag("lesson-outline-step-${index + 1}")
+                        .heightIn(min = LessonTarget.minimum),
+                    contentPadding = PaddingValues(
+                        horizontal = LessonSpacing.small,
+                        vertical = LessonSpacing.tiny
+                    )
+                ) {
+                    Column(
                         modifier = Modifier.fillMaxWidth(),
-                        shape = RoundedCornerShape(16.dp),
-                        color = if (selected) {
-                            MaterialTheme.colorScheme.primaryContainer
-                        } else {
-                            MaterialTheme.colorScheme.surface.copy(alpha = 0.55f)
-                        }
+                        horizontalAlignment = Alignment.Start,
+                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                     ) {
-                        TextButton(
-                            onClick = { dispatch(LessonCommand.GoToStep(stepId)) },
-                            modifier = Modifier.fillMaxWidth()
-                                .heightIn(min = LessonTarget.minimum),
-                            contentPadding = PaddingValues(
-                                horizontal = LessonSpacing.small,
-                                vertical = LessonSpacing.tiny
-                            )
-                        ) {
-                            Column(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalAlignment = Alignment.Start,
-                                verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
-                            ) {
-                                Text(
-                                    "${index + 1}. ${step.displayPrompt}",
-                                    maxLines = 2,
-                                    overflow = TextOverflow.Ellipsis,
-                                    style = MaterialTheme.typography.bodyMedium,
-                                    color = if (selected) {
-                                        MaterialTheme.colorScheme.onPrimaryContainer
-                                    } else {
-                                        MaterialTheme.colorScheme.onSurface
-                                    }
-                                )
-                                Text(
-                                    "s. ${step.source.printedPageRange} · ${step.layout.wire}",
-                                    style = MaterialTheme.typography.labelMedium,
-                                    color = if (selected) {
-                                        MaterialTheme.colorScheme.onPrimaryContainer
-                                    } else {
-                                        MaterialTheme.colorScheme.onSurfaceVariant
-                                    }
-                                )
-                            }
-                        }
+                        Text(
+                            if (isSelected) "✓ SEÇİLİ · ${index + 1}. ${step.displayPrompt}"
+                            else "${index + 1}. ${step.displayPrompt}",
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                            else MaterialTheme.colorScheme.onSurface
+                        )
+                        Text(
+                            "Basılı kitap s. ${step.source.printedPageRange} · ${step.layout.wire}",
+                            style = MaterialTheme.typography.labelMedium,
+                            color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                            else MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
                 }
             }
@@ -229,6 +326,9 @@ internal fun LibraryScreen(
     navigateToCurrent: () -> Unit
 ) {
     var searchQuery by rememberSaveable { mutableStateOf("") }
+    var selectedLessonId by rememberSaveable(session.lessonId) {
+        mutableStateOf(session.lessonId)
+    }
     val query = searchQuery.trim()
     val visibleLessonsByTheme = bundle.workflow.themes.associate { theme ->
         theme.id to bundle.byTheme[theme.id].orEmpty().filter { lesson ->
@@ -243,92 +343,267 @@ internal fun LibraryScreen(
         }
     }
     val visibleLessonCount = visibleLessonsByTheme.values.sumOf { it.size }
-
-    LazyColumn(
-        modifier = Modifier.fillMaxWidth(),
-        contentPadding = PaddingValues(LessonSpacing.large),
-        verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
-    ) {
-        item {
-            Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-                StatusTag()
-                Text("Ders, elinin altında.", style = MaterialTheme.typography.headlineLarge)
-                Text(
-                    "${bundle.lessons.size} ders · ${bundle.lessons.sumOf { it.steps.size }} adım · çevrimdışı kullanılabilir",
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-                Text(
-                    contentStatus,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.secondary
-                )
-            }
-        }
-        item {
-            OutlinedTextField(
-                value = searchQuery,
-                onValueChange = { searchQuery = it },
-                modifier = Modifier.fillMaxWidth(),
-                label = { Text("Ders ara") },
-                supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
-                singleLine = true
-            )
-        }
-        item {
-            SectionCard(
-                eyebrow = "KALDIĞIN YER",
-                title = bundle.byId.getValue(session.lessonId).title,
-                description = "Adım ${session.order.indexOf(session.stepId) + 1} /${session.order.size}",
-                action = {
-                    Button(
-                        onClick = navigateToCurrent,
-                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
+    val selectedLesson = bundle.byId[selectedLessonId]
+        ?: bundle.byId.getValue(session.lessonId)
+    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+        if (usesTwoPaneLibrary(maxWidth.value, maxHeight.value)) {
+            Row(
+                modifier = Modifier.fillMaxSize().padding(LessonSpacing.large),
+                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.large)
+            ) {
+                Column(
+                    modifier = Modifier.weight(1.25f).fillMaxHeight(),
+                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                ) {
+                    LibraryHeader(bundle, contentStatus)
+                    OutlinedTextField(
+                        value = searchQuery,
+                        onValueChange = { searchQuery = it },
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text("Ders ara") },
+                        supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
+                        singleLine = true
+                    )
+                    LazyColumn(
+                        modifier = Modifier.weight(1f).fillMaxWidth(),
+                        contentPadding = PaddingValues(bottom = LessonSpacing.medium),
+                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                     ) {
-                        Text("Derse devam et")
+                        if (visibleLessonCount == 0) {
+                            item {
+                                Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                                    Text("Ders bulunamadı", style = MaterialTheme.typography.titleLarge)
+                                    Text("Arama metnini değiştirerek tekrar deneyin.",
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                    TextButton(onClick = { searchQuery = "" }) {
+                                        Text("Aramayı temizle")
+                                    }
+                                }
+                            }
+                        }
+                        bundle.workflow.themes.forEach { theme ->
+                            val lessons = visibleLessonsByTheme[theme.id].orEmpty()
+                            if (lessons.isNotEmpty()) {
+                                item(key = "theme:${theme.id}") {
+                                    Text(
+                                        theme.title,
+                                        style = MaterialTheme.typography.titleLarge,
+                                        modifier = Modifier.padding(
+                                            top = LessonSpacing.medium,
+                                            bottom = LessonSpacing.tiny
+                                        )
+                                    )
+                                }
+                                items(lessons, key = { it.lessonId }) { lesson ->
+                                    LibraryLessonRow(
+                                        lesson = lesson,
+                                        selected = selectedLesson.lessonId == lesson.lessonId,
+                                        onClick = { selectedLessonId = lesson.lessonId }
+                                    )
+                                }
+                            }
+                        }
                     }
                 }
-            )
-        }
-        if (visibleLessonCount == 0) {
-            item {
-                Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-                    Text("Ders bulunamadı", style = MaterialTheme.typography.titleLarge)
-                    Text(
-                        "Arama metnini değiştirerek tekrar deneyin.",
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    TextButton(onClick = { searchQuery = "" }) {
-                        Text("Aramayı temizle")
-                    }
-                }
+                LibraryLessonDetails(
+                    lesson = selectedLesson,
+                    themeTitle = bundle.workflow.themes.firstOrNull {
+                        it.id == selectedLesson.themeId
+                    }?.title.orEmpty(),
+                    isCurrentLesson = selectedLesson.lessonId == session.lessonId,
+                    session = session,
+                    modifier = Modifier.weight(1f).fillMaxHeight(),
+                    onOpen = { selectLesson(selectedLesson.lessonId) },
+                    onContinue = navigateToCurrent
+                )
             }
-        }
-        bundle.workflow.themes.forEach { theme ->
-            val lessons = visibleLessonsByTheme[theme.id].orEmpty()
-            if (lessons.isNotEmpty()) {
+        } else {
+            LazyColumn(
+                modifier = Modifier.fillMaxWidth(),
+                contentPadding = PaddingValues(LessonSpacing.large),
+                verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+            ) {
                 item {
-                    Text(
-                        theme.title,
-                        style = MaterialTheme.typography.headlineMedium,
-                        modifier = Modifier.padding(top = LessonSpacing.medium)
+                    LibraryHeader(bundle, contentStatus)
+                }
+                item {
+                    OutlinedTextField(
+                        value = searchQuery,
+                        onValueChange = { searchQuery = it },
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text("Ders ara") },
+                        supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
+                        singleLine = true
                     )
                 }
-                items(lessons, key = { it.lessonId }) { lesson ->
+                item {
                     SectionCard(
-                        eyebrow = "11. SINIF · ${theme.id} · BASILI s. ${lesson.printedPageRange}",
-                        title = lesson.title,
-                        description = "${lesson.steps.size} adım · ${lesson.subtitle}",
+                        eyebrow = "KALDIĞIN YER",
+                        title = bundle.byId.getValue(session.lessonId).title,
+                        description = "Adım ${session.order.indexOf(session.stepId) + 1} /${session.order.size}",
                         action = {
                             Button(
-                                onClick = { selectLesson(lesson.lessonId) },
+                                onClick = navigateToCurrent,
                                 modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                            ) {
-                                Text("Adımları incele")
-                            }
+                            ) { Text("Derse devam et") }
                         }
                     )
                 }
+                if (visibleLessonCount == 0) {
+                    item {
+                        Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                            Text("Ders bulunamadı", style = MaterialTheme.typography.titleLarge)
+                            Text("Arama metnini değiştirerek tekrar deneyin.",
+                                color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            TextButton(onClick = { searchQuery = "" }) {
+                                Text("Aramayı temizle")
+                            }
+                        }
+                    }
+                }
+                bundle.workflow.themes.forEach { theme ->
+                    val lessons = visibleLessonsByTheme[theme.id].orEmpty()
+                    if (lessons.isNotEmpty()) {
+                        item {
+                            Text(theme.title, style = MaterialTheme.typography.headlineMedium,
+                                modifier = Modifier.padding(top = LessonSpacing.medium))
+                        }
+                        items(lessons, key = { it.lessonId }) { lesson ->
+                            SectionCard(
+                                eyebrow = "11. SINIF · ${theme.id} · BASILI s. ${lesson.printedPageRange}",
+                                title = lesson.title,
+                                description = "${lesson.steps.size} adım · ${lesson.subtitle}",
+                                action = {
+                                    Button(
+                                        onClick = { selectLesson(lesson.lessonId) },
+                                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                                    ) { Text("Adımları incele") }
+                                }
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+internal fun usesTwoPaneLibrary(widthDp: Float, heightDp: Float): Boolean =
+    widthDp > heightDp && widthDp >= 900f
+
+internal fun backupPassphraseVisualTransformation(showPassphrase: Boolean): VisualTransformation =
+    if (showPassphrase) VisualTransformation.None else PasswordVisualTransformation()
+
+@Composable
+private fun LibraryHeader(bundle: LessonBundle, contentStatus: String) {
+    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+        StatusTag()
+        Text("Ders, elinin altında.", style = MaterialTheme.typography.headlineMedium)
+        Text(
+            "${bundle.lessons.size} ders · ${bundle.lessons.sumOf { it.steps.size }} adım · çevrimdışı kullanılabilir",
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        Text(
+            contentStatus,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.secondary
+        )
+    }
+}
+
+@Composable
+private fun LibraryLessonRow(lesson: LessonData, selected: Boolean, onClick: () -> Unit) {
+    Surface(
+        modifier = Modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(LessonShape.card),
+        color = if (selected) MaterialTheme.colorScheme.primaryContainer
+            else MaterialTheme.colorScheme.surface,
+        border = if (selected) BorderStroke(2.dp, MaterialTheme.colorScheme.primary) else null
+    ) {
+        TextButton(
+            onClick = onClick,
+            modifier = Modifier.fillMaxWidth().heightIn(min = 76.dp)
+                .semantics {
+                    this.selected = selected
+                    stateDescription = if (selected) "Seçili ders" else "Dersi seç"
+                },
+            contentPadding = PaddingValues(LessonSpacing.small)
+        ) {
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+            ) {
+                Text(
+                    "11. SINIF · BASILI s. ${lesson.printedPageRange}",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.secondary
+                )
+                Text(
+                    if (selected) "✓ ${lesson.title}" else lesson.title,
+                    style = MaterialTheme.typography.titleMedium,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
+                Text(lesson.subtitle, style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 2, overflow = TextOverflow.Ellipsis)
+            }
+        }
+    }
+}
+
+@Composable
+private fun LibraryLessonDetails(
+    lesson: LessonData,
+    themeTitle: String,
+    isCurrentLesson: Boolean,
+    session: LessonSession,
+    modifier: Modifier = Modifier,
+    onOpen: () -> Unit,
+    onContinue: () -> Unit
+) {
+    Surface(
+        modifier = modifier,
+        shape = RoundedCornerShape(LessonShape.card),
+        color = MaterialTheme.colorScheme.surface
+    ) {
+        Column(modifier = Modifier.padding(LessonSpacing.large)) {
+            LazyColumn(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+            ) {
+                item {
+                    Text(themeTitle.uppercase(), style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.secondary)
+                    Text(lesson.title, style = MaterialTheme.typography.headlineMedium)
+                    Text(lesson.subtitle, style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+                item {
+                    SectionCard(
+                        eyebrow = "DERS BİLGİSİ",
+                        title = "Basılı kitap s. ${lesson.printedPageRange}",
+                        description = "${lesson.steps.size} adım · ${lesson.coverageAnswerEntries} cevap kaydı"
+                    )
+                }
+                if (isCurrentLesson) {
+                    item {
+                        SectionCard(
+                            eyebrow = "DERS İLERLEMESİ",
+                            title = "Kaldığın adım",
+                            description = "${session.order.indexOf(session.stepId) + 1} / ${session.order.size} · basılı s. ${lesson.steps.first { it.id == session.stepId }.source.printedPageRange}"
+                        )
+                    }
+                }
+            }
+            Button(
+                onClick = if (isCurrentLesson) onContinue else onOpen,
+                modifier = Modifier.fillMaxWidth().padding(top = LessonSpacing.medium)
+                    .heightIn(min = LessonTarget.minimum)
+            ) {
+                Text(if (isCurrentLesson) "Derse devam et" else "Derse başla")
             }
         }
     }
@@ -550,6 +825,7 @@ internal fun SettingsScreen(
     beginImport: (String) -> Unit
 ) {
     LazyColumn(
+        modifier = Modifier.testTag("settings-list"),
         contentPadding = PaddingValues(LessonSpacing.large),
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
     ) {
@@ -591,6 +867,7 @@ private fun BackupSection(
     var passphrase by androidx.compose.runtime.saveable.rememberSaveable { 
         androidx.compose.runtime.mutableStateOf("")
     }
+    var showPassphrase by rememberSaveable { mutableStateOf(false) }
     SectionCard(
         eyebrow = "ŞİFRELİ YEDEK",
         title = "Öğretmen verisini taşı",
@@ -599,10 +876,17 @@ private fun BackupSection(
         androidx.compose.material3.OutlinedTextField(
             value = passphrase,
             onValueChange = { passphrase = it },
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth().testTag("backup-passphrase"),
             label = { Text("Yedek parolası") },
             supportingText = { Text("En az 8 karakter") },
-            singleLine = true
+            singleLine = true,
+            visualTransformation = backupPassphraseVisualTransformation(showPassphrase),
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
+            trailingIcon = {
+                TextButton(onClick = { showPassphrase = !showPassphrase }) {
+                    Text(if (showPassphrase) "Gizle" else "Göster")
+                }
+            }
         )
         Row(
             modifier = Modifier.fillMaxWidth(),
