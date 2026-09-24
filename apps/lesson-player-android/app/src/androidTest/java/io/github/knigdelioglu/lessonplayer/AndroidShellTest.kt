@@ -2,8 +2,11 @@ package io.github.knigdelioglu.lessonplayer
 
 import android.content.pm.ActivityInfo
 import androidx.compose.ui.test.assertHeightIsAtLeast
+import androidx.compose.ui.test.assertIsEnabled
 import androidx.compose.ui.test.assertTextContains
 import androidx.compose.ui.test.hasText
+import androidx.compose.ui.test.hasTestTag
+import androidx.compose.ui.test.isEnabled
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.onAllNodesWithText
@@ -32,14 +35,15 @@ class AndroidShellTest {
         composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(
-                hasText("Sınıf sunumuna geç")
+                hasTestTag("lesson-presentation-toggle").and(isEnabled())
             ).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithText("Önceki").assertHeightIsAtLeast(48.dp)
         composeRule.onAllNodes(hasText("Göster:", substring = true))[0]
             .assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithText("Sonraki").assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithText("Sınıf sunumuna geç").performClick()
+        composeRule.onNodeWithTag("lesson-presentation-toggle")
+            .assertIsEnabled().performClick()
 
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(
@@ -63,12 +67,13 @@ class AndroidShellTest {
         }
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(
-                hasText("Sınıf sunumuna geç")
+                hasTestTag("lesson-presentation-toggle").and(isEnabled())
             ).fetchSemanticsNodes().isNotEmpty()
         }
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
 
-        composeRule.onAllNodesWithText("Sınıf sunumuna geç")[0].performClick()
+        composeRule.onNodeWithTag("lesson-presentation-toggle")
+            .assertIsEnabled().performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
             composeRule.onAllNodesWithText("Yazı: Çok büyük")
                 .fetchSemanticsNodes().isNotEmpty()
@@ -89,10 +94,13 @@ class AndroidShellTest {
         }
         composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(hasText("Ders akışı", substring = true))
+            composeRule.onAllNodes(
+                hasTestTag("lesson-outline-open").and(isEnabled())
+            )
                 .fetchSemanticsNodes().isNotEmpty()
         }
-        composeRule.onNodeWithText("Ders akışı", substring = true).performClick()
+        composeRule.onNodeWithTag("lesson-outline-open")
+            .assertIsEnabled().performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
             composeRule.onAllNodesWithText("DERS AKIŞI")
                 .fetchSemanticsNodes().isNotEmpty()
@@ -102,7 +110,8 @@ class AndroidShellTest {
             composeRule.onAllNodes(hasText("· 2/", substring = true))
                 .fetchSemanticsNodes().isNotEmpty()
         }
-        composeRule.onNodeWithTag("lesson-step-counter").assertTextContains("· 2/")
+        composeRule.onNodeWithTag("lesson-step-counter")
+            .assertTextContains("· 2/", substring = true)
         composeRule.onNodeWithText("Sınıf sunumuna geç").assertExists()
     }
 
@@ -137,7 +146,7 @@ class AndroidShellTest {
         composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             composeRule.onAllNodes(
-                hasText("Sınıf sunumuna geç")
+                hasTestTag("lesson-presentation-toggle").and(isEnabled())
             ).fetchSemanticsNodes().isNotEmpty()
         }
         val lessonList = composeRule.onNodeWithTag("lesson-screen-list")

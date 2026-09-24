@@ -40,6 +40,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -299,7 +300,8 @@ internal fun LessonPlayerShell(
                                 TextButton(
                                     onClick = { showLessonOutline = true },
                                     modifier = Modifier.fillMaxWidth()
-                                        .heightIn(min = LessonTarget.minimum),
+                                        .heightIn(min = LessonTarget.minimum)
+                                        .testTag("lesson-outline-open"),
                                     enabled = !actionState.busy
                                 ) {
                                     Text(

@@ -99,6 +99,8 @@ internal fun SessionLessonScreen(
                 },
                 modifier = Modifier.fillMaxWidth()
                     .heightIn(min = LessonTarget.minimum)
+                    .testTag("lesson-presentation-toggle"),
+                enabled = !actionState.busy
             ) {
                 Text(if (state.presentationMode) "Öğretmen görünümüne dön"
                     else "Sınıf sunumuna geç")
