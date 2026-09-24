@@ -1325,6 +1325,7 @@
         "layout": "comparison",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Yazıcı ile Eskici Abdi metinlerini verilen ölçütlere göre karşılaştırınız.",
@@ -1345,19 +1346,24 @@
           "entry_type": "question_answer",
           "printed_page": 31,
           "prompt_summary": "Yazıcı ile Eskici Abdi'yi karşılaştırma",
-          "answer": "Örnek karşılaştırma tablosu:",
+          "answer": "Kitaptaki beş ölçüte göre örnek karşılaştırma:",
           "answer_sections": {
             "Yazıcı": {
-              "Ortak yönler": "Geçim sıkıntısı içindeki halk tipinin iş bulma çabası; karşılıklı konuşma, halk dili, söz oyunları ve yanlış anlamaya dayalı mizah.",
-              "İş / olay": "Karagöz yazıcılık yapmaya çalışır.",
-              "Oyun kişilerinin ikilisi": "Karagöz–Hacivat"
+              "İçerik": "İş arayan Karagöz, Hacivat'ın dükkânında yazıcılık yapmaya başlar; müşterilerin sözlerini yanlış anladığı için yazma işini gerektiği gibi yapamaz.",
+              "Dönem": "Metinde kesin bir olay tarihi verilmez. Karagöz oyunu, geleneksel Türk tiyatrosunun bir koludur; İstanbul yer adları, dükkân yaşamı ile kuruş ve dirhem gibi unsurlar geçmiş şehir hayatını düşündürür.",
+              "Zihniyet": "Geçim kaygısı ve iş bulma isteği öne çıkar. Karagöz'ün Hacivat'la dükkânı işletme ve kazancı paylaşma anlaşması, gündelik esnaf ilişkilerini yansıtır.",
+              "İleti": "Geçim ihtiyacının iş arayışını başlattığı; kişinin becerisine uygun olmayan işi üstlenmesinin ve iletişimde birbirini anlamamanın çatışma ile güldürü doğurabildiği çıkarılabilir.",
+              "Üslup": "Diyalog ağırlıklıdır. Hacivat'ın ağır ve eski sözleriyle Karagöz'ün gündelik söyleyişi karşı karşıya gelir; ses benzerliklerine dayalı yanlış anlamalar, söz oyunları ve sahne yönergeleri güldürüyü kurar."
             },
             "Eskici Abdi": {
-              "Ortak yönler": "Geçim sıkıntısı içindeki halk tipinin iş bulma çabası; karşılıklı konuşma, halk dili, söz oyunları ve yanlış anlamaya dayalı mizah.",
-              "İş / olay": "Kavuklu eskiciye yamak olmaya çalışır.",
-              "Oyun kişilerinin ikilisi": "Kavuklu–Pişekâr"
+              "İçerik": "İşsiz ve geçim sıkıntısı yaşayan Kavuklu, Pişekâr'ın aracılığıyla bir eskici dükkânında yamak olmayı kabul eder; eskicilik işinin eski ayakkabıları tamir etmek olduğunu önce yanlış anlar.",
+              "Dönem": "Verilen kesitte kesin bir olay tarihi belirtilmez. Ortaoyunu, geleneksel Türk tiyatrosunun bir koludur; yamaklık, eskicilik ve eski söyleyişler geçmiş şehir hayatını düşündürür.",
+              "Zihniyet": "İşsizlik ve geçim kaygısı belirgindir. Kavuklu, işin niteliğini tam bilmeden para kazanma umuduyla yamaklığı kabul eder; Pişekâr tanıdığı üzerinden ona iş bulmaya çalışır.",
+              "İleti": "Geçim zorluğunun kişileri iş aramaya yönelttiği; sözleri yanlış anlamanın yeni durumlara ve komik karışıklıklara yol açabildiği çıkarılabilir.",
+              "Üslup": "Diyalog ağırlıklıdır. Pişekâr'ın 'binaenaleyh' ve 'çâre-i hasen' gibi ağır sözleri, Kavuklu'nun gündelik söyleyişiyle karşıtlık kurar; 'çâre-i hasen' sözünü 'paçavracı Hasan' diye anlaması söz oyununa dayalı güldürü üretir."
             }
           },
+          "guidance": "Dönem başlığında kaynakta verilmeyen kesin bir tarih veya yüzyıl yazılmamalıdır; metin içi ipuçlarına dayalı, gerekçeli çıkarımlar kabul edilir. Eskici Abdi için karşılaştırma, kitapta verilen kesitin kanıtlarıyla sınırlı tutulmalıdır.",
           "source_locator": "basılı s.31 / PDF s.32 — Karşılaştıralım",
           "question_no": "7"
         },

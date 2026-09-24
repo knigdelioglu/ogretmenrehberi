@@ -129,9 +129,12 @@ assert(
 );
 assert(
   s31TextCompare?.layout === "comparison" &&
-    s31TextCompare.answer?.answer_sections?.Yazıcı &&
-    s31TextCompare.answer?.answer_sections?.["Eskici Abdi"],
-  "s31-q7 Yazıcı ve Eskici Abdi karşılaştırmasını iki yapılandırılmış sütunda göstermeli."
+    ["Yazıcı", "Eskici Abdi"].every((text) =>
+      ["İçerik", "Dönem", "Zihniyet", "İleti", "Üslup"].every((criterion) =>
+        s31TextCompare.answer?.answer_sections?.[text]?.[criterion]
+      )
+    ),
+  "s31-q7 iki metni kitapta verilen İçerik, Dönem, Zihniyet, İleti ve Üslup ölçütleriyle karşılaştırmalı."
 );
 
 const vocabulary = karagozById.get("s25-q1");
