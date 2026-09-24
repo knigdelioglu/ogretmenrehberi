@@ -98,13 +98,13 @@
       "printed_page": 66,
       "question_no": "1",
       "prompt_summary": "Araştırma sonuçları ile dinlenen/izlenen metin arasında bağlantı kurma",
-      "answer": "Bu sorunun kesin ve somut içeriği, öğrencinin sayfa 63'teki 'İletişim ve E-posta' araştırmasında kütüphaneden derlediği veriler ile karekoddaki videonun sunduğu argümanların karşılaştırılmasına dayanır. Kaynak videonun özgün kurgusu basılı kitapta yer almadığından videoya özgü unsurlar uydurulmamalıdır. Bununla birlikte kütüphane araştırmasında ulaşılan yazılı (mektup, telgraf), işitsel (telefon, radyo) ve görsel (televizyon, internet) araçların hız ve maliyet verileri; videodaki 'iletişimin medenileşme hareketi oluşu' teziyle doğrudan ilişkilendirilmelidir.",
+      "answer": "Bu soru, öğrencinin 63. sayfadaki araştırmasından seçtiği bir bulguyu QR videoda gerçekten gözlemlediği bir noktayla karşılaştırmasını ister. Araştırma bulgusu ve video tespiti öğrenciye göre değişebilir; PDF video içeriğini göstermediğinden burada videonun savı veya belirli bir örneği önceden verilemez. Karşılaştırmanın yönü ve ulaşılan sonuç iki dayanakla gerekçelendirilmelidir.",
       "answer_sections": {
-        "Yazılı İletişim Aşamasıyla Bağlantı": "Araştırmada elde edilen mektup ve telgrafın dağıtım süreleri; videoda vurgulanan coğrafi mesafelerin insan ilişkilerine etkisi ve bekleme süresiyle örtüştürülür.",
-        "İşitsel ve Görsel İletişim Aşamasıyla Bağlantı": "Telefon ve televizyonun dünyayı küçültmesi, bilginin eş zamanlı yayılması ve kitle iletişiminin doğuşuyla eşleştirilir.",
-        "Dijitalleşme ve Çok Modlu İletişim": "E-posta ve internetin bilgiyi metin, ses ve görüntüyle tek kanalda birleştirmesi, iletişimin araç merkezli olmaktan çıkıp etkileşimli ağ merkezli hâle gelişini doğrular."
+        "Araştırma bulgusu": "Öğrenci kendi araştırmasından ilgili bir bulgu seçer ve kaynağını belirtir.",
+        "Videoda gözlenen nokta": "Yalnız gerçekten izlenen/duyulan bir tespit kaydedilir; video erişilemiyorsa bu bölüm doldurulmuş gibi gösterilmez.",
+        "Karşılaştırma ve sonuç": "Öğrenci iki dayanağın nasıl ilişkilendiğini ve hangi sonucu desteklediğini açıklar; ilgisiz veya aşırı genellemelerden kaçınır."
       },
-      "guidance": "Öğrenciden araştırmasındaki en az bir tarihsel bilgi ile videoda gerçekten duyduğu/gördüğü bir tespiti açıkça eşleştirmesi istenmelidir.",
+      "guidance": "Önce araştırma notlarından bir bulgu seçtirin, sonra videodan gerçekten gördüğü/duyduğu bir noktayı sordurun. Öğrenci ikisinin ortak ya da ayrışan yönünü ve karşılaştırmadan çıkardığı sonucu gerekçelendirsin. Video görülmediyse video tarafına örnek eklemeyin.",
       "source_locator": "basılı s.66 / PDF s.67; QR video gerekli"
     },
     {
@@ -113,13 +113,13 @@
       "printed_page": 66,
       "question_no": "2",
       "prompt_summary": "E-postanın diğer iletişim araçlarına göre avantajları",
-      "answer": "E-posta; geleneksel mektuba kıyasla zaman ve maliyet bariyerini ortadan kaldıran anlık bir hıza, telefona kıyasla kalıcı ve resmî olarak belgelenebilir bir arşiv niteliğine, mesajlaşma uygulamalarına kıyasla ise kurumsal ciddiyet ve dosya eki zenginliğine sahip olmasıyla çok yönlü bir üstünlük sağlar.",
+      "answer": "E-posta, fiziksel mektuba göre çoğu durumda daha hızlı ve düşük gönderim maliyetli olabilir; alıcının aynı anda çevrim içi olmasını gerektirmeden gönderilip daha sonra yanıtlanabilir. Yazılı bir kayıt bırakması, iletinin bulunmasını ve konuşmada kolayca saklanamayacak bilgilerin tekrar gözden geçirilmesini sağlayabilir. Dosya ekleri gönderilebilir; ancak boyut, biçim ve güvenlik sınırları kullanılan hizmete bağlıdır. E-posta kurumsal yazışmaya elverişli olabilir, fakat mesajlaşma uygulamalarından her durumda daha resmî veya güvenilir değildir; tek başına resmî ya da hukuki delil niteliği de garanti etmez.",
       "answer_sections": {
-        "Geleneksel Mektuba Göre Avantajları": "Günler veya haftalar süren posta dağıtımı yerine saniyeler içinde hedefe ulaşır; posta pulu, kâğıt masrafı gerektirmez; kaybolma veya yıpranma riski yoktur.",
-        "Telefona Göre Avantajları": "Asenkrondur (alıcının o an müsait olması gerekmez, istediği zaman okuyup yanıtlar); konuşmada uçup gidebilecek şartların, anlaşmaların ve kararların yazılı birer resmî delil olarak arşivlenmesini sağlar.",
-        "Anlık Mesajlaşma Uygulamalarına Göre Avantajları": "Daha kurumsal, derli toplu ve hiyerarşik bir dil standardına sahiptir; çok büyük boyutlu belgelerin, raporların ve tabloların ek dosya (attachment) olarak düzenli sunulmasına elverişlidir."
+        "Genel avantajlar": "Fiziksel postaya göre hız ve çoğu durumda düşük gönderim maliyeti; eş zamanlı iletişim gerektirmeyen kullanım; yazılı içeriği sonradan arama ve gözden geçirme olanağı; dosya ekleyebilme.",
+        "Bağlama ve teknik koşullar": "Gönderim maliyeti, teslim/erişim, kayıtların saklanması ve dosya eklerinin boyut-biçim sınırları hizmete ve kullanıcının koşullarına bağlıdır. E-posta kaybolmaya karşı mutlak koruma veya kendiliğinden resmî delil sağlamaz; kurumsallık da alıcıya, amaca ve kullanılan kanala göre değişir.",
+        "Video ile karşılaştırma": "Videoda gerçekten görülen örnek ancak video incelendikten sonra kaydedilmelidir. Video erişilemiyorsa yukarıdaki genel avantajlar önceki bilgi ve kitap sorusundan hareketle tartışılır; bunlar videoda gösterilmiş örnek diye sunulmaz."
       },
-      "guidance": "Öğrencilerin avantajları yalnızca 'hızlıdır' diyerek geçiştirmemesi; yazılı delil niteliği, asenkronluk ve ek belge gönderme gibi teknik boyutları gerekçelendirmesi beklenir.",
+      "guidance": "Önce öğrencilerin önceki bilgi veya kitaptan desteklediği olası avantajı belirleyin; hız, maliyet, eş zamansız kullanım, aranabilir yazılı kayıt ya da koşullu dosya eki gibi bir gerekçe isteyin. Video erişilebiliyorsa yalnız izlenen bölümde gerçekten gösterilen örneği ayrıca kaydettirin ve genel bilgiyle karşılaştırın; video görülmediyse yapımda geçen örnek varmış gibi konuşmayın. Sonuçta hangi aracın hangi amaç ve koşulda avantajlı olabileceğini gerekçelendirsinler.",
       "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 2"
     },
     {
@@ -128,16 +128,16 @@
       "printed_page": 66,
       "question_no": "3",
       "prompt_summary": "İletişimin medenileşme hareketi olarak yorumlanması",
-      "answer": "Bu ifade, insanın biyolojik varlığını sürdürmenin ötesinde diğer insanlarla ortak anlam üretme, bir arada yaşama kuralları koyma, bilgi birikimini nesillere aktarma ve sorunları şiddet yerine uzlaşmayla çözme sürecinin ancak iletişimle mümkün olduğunu anlatır. İletişim araçları geliştikçe toplumlar kabuğunu kırmış; hukuk, bilim, sanat ve felsefe ortak bir insanlık mirasına dönüşmüştür.",
+      "answer": "“İletişim, bir medenileşme hareketidir.” sözü, iletişimin insanların ortak anlamlar ve bilgi paylaşması, birlikte yaşama biçimleri geliştirmesi ve kültürü kuşaklara aktarmasındaki rolünü vurguluyor diye yorumlanabilir. Bu yorumun kapsamı, metin veya videoda verilen örneklerin neyi gösterdiğiyle sınanmalıdır. İletişimin bütün anlaşmazlıkları çözdüğü ya da tek başına medeniyet oluşturduğu sonucu yalnız bu ifadeden çıkarılamaz.",
       "answer_sections": {
-        "Bireysel İhtiyaçtan Toplumsal Düzene": "İnsan tek başına yaşayamayan sosyal bir varlıktır; temel ihtiyaçlarını karşılamak, aidiyet hissetmek ve güvenliği sağlamak için iletişim kurmak zorundadır.",
-        "Bilgi ve Kültür Aktarımı": "Dil ve iletişim araçları olmasaydı her nesil hayatı sıfırdan kurmak zorunda kalırdı; medeniyet, bilginin dille biriktirilip kuşaktan kuşağa aktarılması sayesinde yükselmiştir.",
-        "Hukuk, Uzlaşma ve Barış": "Medeni olmanın en temel ölçütü, anlaşmazlıkları kaba kuvvetle değil; konuşarak, müzakere ederek ve ortak metinler (yasalar, sözleşmeler) üreterek çözmektir."
+        "İfadenin olası anlamı": "İletişim, ortak yaşam ve kültür aktarımına katkı sağlayan bir süreç olarak yorumlanabilir.",
+        "Kanıt ve çıkarım": "Öğrenci metinde veya izlenen videoda gerçekten sunulan bir dayanağı belirlemeli ve bu dayanağın yorumunu nasıl desteklediğini açıklamalıdır.",
+        "Yorumun sınırı": "İfadenin farklı biçimlerde yorumlanması mümkündür; iletişimin tek başına bütün toplumsal sorunları çözdüğü genellenmemelidir."
       },
       "evidence_quotes": [
         "İletişim, bir medenileşme hareketidir."
       ],
-      "guidance": "Öğrencilere 'İletişim olmasaydı medeniyet kurulabilir miydi?' sorusu yöneltilerek dil ile insanlaşma ve uygarlaşma arasındaki zorunlu bağ fark ettirilmelidir.",
+      "guidance": "Önce öğrenciden sözün kendisinde hangi iddianın bulunduğunu kendi cümlesiyle kurmasını isteyin. Ardından metinde veya video izlendi ise videoda gerçekten gördüğü bir dayanağı buldurup bunun hangi sonucu ve ne ölçüde desteklediğini sordurun. Evet/hayır yanıtıyla yetinmeyin; farklı ve sınırlı yorumları kanıt ile gerekçesine göre değerlendirin.",
       "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 3"
     },
     {

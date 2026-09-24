@@ -158,8 +158,8 @@ const s27q1 = karagozById.get("s27-q1");
 assert(s27q1, "s27-q1 bulunamadı.");
 assert(
   JSON.stringify(s27q1.reveal_order) ===
-    JSON.stringify(["answer", "evidence"]),
-  "s27-q1 cevap ve kanıt katmanlarını sırayla taşımalı."
+    JSON.stringify(["guidance", "answer", "evidence"]),
+  "s27-q1 önce çıkarım yolunu, sonra örnek cevabı ve kanıtı göstermeli."
 );
 
 const s26 = karagozById.get("s26-reference");
@@ -590,6 +590,83 @@ assert(dQ13, "s83 Olvido sorusu eksik.");
 assert(
   dQ13.answer?.entry_type === "source_limited",
   "Olvido dış video sorusu source_limited kalmalı."
+);
+
+const p66Email = dinlemeById.get("s66-q2");
+assert(
+  p66Email?.answer?.entry_type === "question_answer" &&
+    ["Genel avantajlar", "Bağlama ve teknik koşullar", "Video ile karşılaştırma"].every(
+      (section) => p66Email.answer.answer_sections?.[section]
+    ) &&
+    p66Email.answer.guidance,
+  "s66 e-posta sorusu genel bilgiyi, koşullu sınırları ve doğrulanmış video gözlemini ayırmalı."
+);
+
+const p66ResearchAndVideo = dinlemeById.get("s66-q1");
+assert(
+  p66ResearchAndVideo?.answer?.entry_type === "source_limited" &&
+    ["Araştırma bulgusu", "Videoda gözlenen nokta", "Karşılaştırma ve sonuç"].every(
+      (section) => p66ResearchAndVideo.answer.answer_sections?.[section]
+    ) &&
+    p66ResearchAndVideo.answer.guidance,
+  "s66 araştırma/video karşılaştırması gerçek araştırma bulgusuyla gerçekten izlenen noktayı eşleştirmeli."
+);
+
+const p66Civilization = dinlemeById.get("s66-q3");
+assert(
+  p66Civilization?.answer?.answer_sections?.["Kanıt ve çıkarım"] &&
+    p66Civilization.answer.answer_sections?.["Yorumun sınırı"] &&
+    p66Civilization.answer.guidance,
+  "s66 iletişim/medeniyet yorumu kanıt, çıkarım ve savunulabilir kapsamı birlikte göstermeli."
+);
+
+const p74Experience = yazmaById.get("s74-q2");
+assert(
+  p74Experience?.answer?.answer_sections?.["Değerlendirme sınırı"] &&
+    p74Experience.answer.guidance &&
+    p74Experience.answer.answer.includes("öğrencinin gözlemine"),
+  "s74 örneği öğrencinin kendi deneyim/gözlem değerlendirmesini onun adına doldurmamalı."
+);
+
+const p29Friendship = karagozById.get("s29-q2");
+assert(
+  p29Friendship?.answer?.answer.includes("tek tanım değildir") &&
+    p29Friendship.answer.guidance,
+  "s29 kişisel dostluk tanımı öğrenci adına doldurulmuş zorunlu görüşe dönüşmemeli."
+);
+
+const p43LetterKinds = mektupById.get("s43-q1");
+assert(
+  p43LetterKinds?.answer?.answer_sections?.["Özel haberleşme yönü"] &&
+    p43LetterKinds.answer.answer_sections?.["Edebî düşünce yönü"] &&
+    p43LetterKinds.answer.guidance,
+  "s43 mektup sınıflandırması iki metin niteliğini ve kanıta dayalı gerekçeyi korumalı."
+);
+
+const p63Speed = dinlemeById.get("s63-research");
+assert(
+  p63Speed?.answer?.answer_sections?.["Olası kolaylıklar"] &&
+    p63Speed.answer.answer_sections?.["Tartışılabilecek riskler"] &&
+    p63Speed.answer.guidance,
+  "s63 hız araştırması iki yönü tartışmalı, tek bir sentez dayatmamalı."
+);
+
+const p82Comparison = degerlendirmeById.get("s82-q9");
+assert(
+  p82Comparison?.answer?.answer_sections?.["Karşılaştırma ölçütleri"] &&
+    p82Comparison.answer.guidance,
+  "s82 karşılaştırması anlatıcı/okur ölçütleriyle verilen iki parçaya bağlı kalmalı."
+);
+
+const selfRevisionItems = y78Rubric.content?.items ?? [];
+assert(
+  selfRevisionItems.length === 5 &&
+    /Kısmen|Hayır/.test(selfRevisionItems[0]) &&
+    /taslağından/i.test(selfRevisionItems[1]) &&
+    /tek bir somut düzeltme hedefi/i.test(selfRevisionItems[2]) &&
+    /düzeltir/i.test(selfRevisionItems[3]) &&
+    /aynı ölçüte/i.test(selfRevisionItems[4]),
+  "s78 öz değerlendirme akışı işaretleme → taslak kanıtı → tek hedef → revizyon → aynı ölçütü yeniden değerlendirme döngüsünü korumalı."
 );
 
 }

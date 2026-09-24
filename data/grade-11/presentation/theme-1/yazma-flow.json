@@ -192,7 +192,14 @@
       "prompt": "Dereceli puanlama ve geliştirme",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğretmen değerlendirmesinde Türkçenin doğru kullanımı, üslup, özgünlük, başlık/hitap, yazım ve noktalama gibi ölçütleri dikkate alın. Öz değerlendirmede Kısmen veya Hayır işaretlenen beceriler için somut geliştirme adımı belirleyin."
+        "lead": "Öğretmen değerlendirmesinde kitapta belirtilen Türkçenin doğru kullanımı, üslup, özgünlük, gerekli durumlarda öznel ve nesnel ifadeler, başlık/hitap, yazım ve noktalama ölçütlerini dikkate alın. Karekodla ulaşılan dereceli puanlama anahtarının burada gösterilmeyen ölçüt veya puanlarını varsaymayın. Öğrencinin öz değerlendirme formundaki Kısmen/Hayır seçimini kendi taslağı üzerinde somut bir düzeltmeye dönüştürmesine rehberlik edin.",
+        "items": [
+          "Öğrenci, öz değerlendirme formunda Kısmen veya Hayır işaretlediği bir ölçütü seçer.",
+          "Taslağından bu ölçüte ilişkin belirli bir sözcük, cümle ya da bölüm gösterir.",
+          "Kanıta dayanarak tek bir somut düzeltme hedefi belirler; gerekirse eksik bilgiyi araştırır veya öğretmenden destek alır.",
+          "E-postasını bu hedef doğrultusunda düzeltir ve değişen bölümü yeniden okur.",
+          "Aynı ölçüte dönerek çalışmasını yeniden değerlendirir; ilerlemeyi ve gerekiyorsa sonraki adımı kaydeder."
+        ]
       }
     }
   ]

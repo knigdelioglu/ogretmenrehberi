@@ -223,6 +223,11 @@
       "source_record_id": "T01-S0010",
       "answer_id": "T1-P27-Q01",
       "layout": "comparison",
+      "reveal_order": [
+        "guidance",
+        "answer",
+        "evidence"
+      ],
       "prompt": "Karagöz ve Hacivat'ın kullandığı dilden hareketle kişilik özelliklerine ilişkin tahminlerinizi yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
