@@ -836,6 +836,7 @@
         "layout": "comparison",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence"
         ],
@@ -857,12 +858,13 @@
           "printed_page": 27,
           "question_no": "1",
           "prompt_summary": "Karagöz ve Hacivat'ın dilinden kişilik çıkarımı",
-          "answer": "Karagöz halk diliyle konuşan, doğrudan, içinden geldiği gibi davranan, ağır kelimeleri yanlış anlayan fakat hazırcevap bir tiptir. Hacivat ise daha eğitimli, görgülü ve ölçülü görünür; daha ağır bir dil kullanır ve Karagöz'ün yanlışlarını düzeltmeye çalışır. Dil farkı iki tipin eğitim ve dünya görüşü farkını belirginleştirir.",
+          "answer": "Metindeki sözlerden hareketle Karagöz için halk söyleyişine yakın, doğrudan ve kelimeleri farklı anlamlara çekebilen; Hacivat içinse daha süslü ya da eski kelimeler kullanan ve açıklayıcı bir konuşma tarzına sahip olduğu düşünülebilir. Bunlar söz ve tepkilerden çıkarılan izlenimlerdir; kişilerin eğitim geçmişi veya bütün kişilikleri hakkında kesin bilgi sayılmaz.",
           "evidence_quotes": [
             "Biz gelelim mâ-nahnü-fîhimize",
             "Biz gelelim mahallede evimize"
           ],
-          "source_locator": "basılı s.27 / PDF s.28; Yazıcı metni basılı s.18-24"
+          "source_locator": "basılı s.27 / PDF s.28; Yazıcı metni basılı s.18-24",
+          "guidance": "Öğrenciden Karagöz ve Hacivat için ayrı ayrı bir söz ya da tepki göstermesini isteyin. Önce metindeki dil özelliğini belirlesin, ardından bunun kişilik hakkında hangi sınırlı çıkarımı desteklediğini açıklasın; metnin göstermediği eğitim veya niyet bilgilerini kesinleştirmesin."
         },
         "content": null
       },
@@ -871,6 +873,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Karagöz ve Hacivat'ın kişilik özelliklerini belirlerken daha çok hangi özelliklerinden yararlandığınızı açıklayınız.",
@@ -891,8 +894,9 @@
           "printed_page": 27,
           "question_no": "2",
           "prompt_summary": "Kişilik çıkarımında kullanılan ipuçları",
-          "answer": "En çok kullandıkları kelimelerden, birbirlerinin sözlerine verdikleri tepkilerden, yanlış anlamalara nasıl karşılık verdiklerinden ve konuşma üsluplarından yararlanılabilir. Karagöz'ün sözleri başka anlamlara çekmesi onun halktan, hazırcevap ve dobra yönünü; Hacivat'ın açıklayıcı ve ağır dili ise daha eğitimli ve kurallı yönünü gösterir.",
-          "source_locator": "basılı s.27 / PDF s.28"
+          "answer": "Çıkarımda seçilen kelimeler, sözlerin birbirini izleme biçimi, yanlış anlamaya verilen tepki ve konuşma üslubu kullanılabilir. Örneğin “mâ-nahnü-fîhimize” sözü ile Karagöz’ün buna verdiği karşılık, iki kişinin dil kullanımını karşılaştırmaya imkân verir; bu ipuçları kişiliklerinin tamamını değil, metinde görünen yönlerini destekler.",
+          "source_locator": "basılı s.27 / PDF s.28",
+          "guidance": "Öğrenciden kullandığı ipucunu (kelime, söz sırası, tepki veya üslup) belirtmesini ve ilgili repliği göstermesini isteyin. Kanıtın hangi çıkarımı desteklediğini sordurun; aynı ipucundan farklı sonuçlar çıkarılıyorsa gerekçenin metinle uyumunu değerlendirin."
         },
         "content": null
       },
@@ -961,6 +965,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Edebî metinlerde kişilerin kullandığı söz varlığının metne katkısı başka bir yolla sağlanabilir mi? Açıklayınız.",
@@ -984,7 +989,8 @@
           "question_no": "2",
           "prompt_summary": "Söz varlığının işlevinin başka yollarla sağlanması",
           "answer": "Kişinin eğitim, sosyal çevre ve karakter özellikleri yalnız söz varlığıyla değil; davranışları, giyimi, mesleği, beden dili, sahnedeki hareketleri ve diğer kişilerle ilişkileri aracılığıyla da gösterilebilir. Ancak Yazıcı gibi söz oyunlarına dayalı bir metinde kelime seçimi özellikle önemlidir; mizahın büyük bölümü konuşma farklılıklarından doğar.",
-          "source_locator": "basılı s.28 / PDF s.29"
+          "source_locator": "basılı s.28 / PDF s.29",
+          "guidance": "Öğrenci önce söz varlığı dışındaki bir anlatım yolunu seçsin; seçtiği davranış, beden dili, görünüş ya da ilişki ipucunun ne gösterebileceğini açıklasın. Ardından Yazıcı’daki söz oyunlarının mizahı nasıl kurduğunu karşılaştırsın; diğer yolların söz varlığının işlevini hangi ölçüde karşılayabileceğine ilişkin gerekçeli farklılıkları kabul edin."
         },
         "content": null
       },
@@ -1027,6 +1033,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Hacivat ve Karagöz’ün kişilik özellikleri, eğitim durumları, kültür düzeyleri ve sosyal statüleri farklıdır. Bu farklılıklara rağmen aralarındaki dostluğu nasıl sürdürebildiklerini tartışınız. Ulaştığınız sonuçları tahtaya yazınız.",
@@ -1049,8 +1056,9 @@
           "printed_page": 29,
           "question_no": "1",
           "prompt_summary": "Karagöz ile Hacivat'ın farklılıklara rağmen dostluğu",
-          "answer": "Karagöz ile Hacivat çok farklı kişiliklere sahip olsalar da birbirlerini uzun zamandır tanımaları, aralarındaki iletişimi sürdürmeleri ve farklı yönlerinin birbirini tamamlaması dostluklarını devam ettirir. Hacivat çoğu zaman yol gösteren ve arabulucu olan taraftır; Karagöz ise açık sözlü ve doğal tavrıyla ilişkiye canlılık katar. Tartışmaları dostluğu sona erdirmez.",
-          "source_locator": "basılı s.29 / PDF s.30"
+          "answer": "Metin And’ın aktardığı ilişki ve konuşmalarda, Karagöz ile Hacivat’ın farklılıklarına rağmen ilişkiyi sürdürmelerine dair çeşitli ipuçları bulunabilir. Örneğin Hacivat’ın arabulucu tavrı veya iki kişinin birbirine alışkın görünmesi, dostluğun nasıl sürdüğüne ilişkin bir yorum için dayanak olabilir. Bunlar olası açıklamalardır; öğrenci metinden seçtiği kanıtla başka bir gerekçe de geliştirebilir.",
+          "source_locator": "basılı s.29 / PDF s.30",
+          "guidance": "Önce metin parçasında ilişkiyi gösteren bir söz, tepki ya da anlatım ayrıntısı buldurun; sonra bu kanıtın dostluğun sürmesine nasıl bağlandığını sordurun. Öğrencinin yorumunu metindeki gözlemden ayırın ve gerekçeli farklı açıklamalara alan açın."
         },
         "content": null
       },
@@ -1059,6 +1067,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence"
         ],
@@ -1082,11 +1091,12 @@
           "printed_page": 29,
           "question_no": "2",
           "prompt_summary": "Dostluk kavramının anlamı",
-          "answer": "Dostluk; güven, samimiyet, dayanışma, karşılıklı kabul ve özellikle zor zamanda birbirinin yanında olmayı ifade eder. Gerçek dost yalnız iyi günleri paylaşan değil, kişinin sıkıntısında destek olan ve onu olduğu gibi kabul eden kişidir.",
+          "answer": "Örnek bir yaklaşım olarak dostluk; güven, paylaşım, karşılıklı kabul veya zor zamanda destek olma üzerinden açıklanabilir. Dörtlükteki “Dost kara günde belli olur” sözü bu yorumlardan özellikle zor zamanda desteği öne çıkarır. Öğrencinin dostluk tanımı ve örneği kendisine aittir; bu model tek tanım değildir.",
           "evidence_quotes": [
             "Dost kara günde belli olur"
           ],
-          "source_locator": "basılı s.29 / PDF s.30"
+          "source_locator": "basılı s.29 / PDF s.30",
+          "guidance": "Bu kişisel görüş sorusunda öğrencinin kendi tanımını kurmasına zaman verin. İsterse dörtlükteki sözle veya kendi seçtiği bir gözlemle bağlantı kurmasını isteyin; belirli bir yaşantıyı paylaşmasını ya da “gerçek dost” için tek ölçütü benimsemesini zorunlu tutmayın."
         },
         "content": null
       },
@@ -1095,6 +1105,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Karagöz oyununun günümüzde varlığını sürdürmesinin sebepleri neler olabilir? Açıklayınız.",
@@ -1115,8 +1126,9 @@
           "entry_type": "question_answer",
           "printed_page": 30,
           "prompt_summary": "Karagöz oyununun günümüzde yaşamasının nedenleri",
-          "answer": "Karagöz'ün mizaha dayanması, farklı insan tiplerini canlı biçimde yansıtması ve iletişim çatışmalarının bugün de anlaşılabilir olması oyunun güncelliğini korumasını sağlar. Kültürel miras değeri taşıması, eğitim ve kültür etkinliklerinde kullanılabilmesi ve yeni konulara uyarlanabilmesi de varlığını sürdürmesini kolaylaştırır.",
+          "answer": "Oyunun günümüzdeki gösteri ve etkinliklerde sürdürülmesi, izleyicinin tanıdığı tipler, mizah, canlı icra veya kültürel aktarım gibi etkenlerle açıklanabilir. Bunlar olası gerekçelerdir; öğrenci bir gerekçeyi seçip oyunun özelliklerinden ya da soruda verilen güncel gösterim bağlamından örnekle destekleyebilir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
+          "guidance": "Başlangıçta oyunun günümüzde nerelerde ve hangi biçimde karşılarına çıktığını sordurun. Öğrenciler seçtikleri olası nedeni oyundaki bir özellik veya sorudaki gösterim örneğiyle ilişkilendirsin; farklı nedenleri kanıt ve gerekçe tutarlıysa kabul edin.",
           "question_no": "1"
         },
         "content": null
@@ -1126,6 +1138,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Kültürel bir miras olan Karagöz'ün Türk kültüründeki değeriyle ilgili görüşlerinizi belirtiniz.",
@@ -1146,8 +1159,9 @@
           "entry_type": "question_answer",
           "printed_page": 30,
           "prompt_summary": "Karagöz'ün Türk kültüründeki değeri",
-          "answer": "Karagöz; halk mizahını, farklı sosyal tipleri, konuşma biçimlerini ve günlük yaşamı sonraki kuşaklara taşıyan önemli bir kültürel mirastır. Toplumun dilini ve ilişkilerini mizah yoluyla yansıtan tarihsel bir bellektir.",
+          "answer": "Karagöz’ün kültürel değeri; dil ve mizah anlayışını, sahne geleneğini ya da toplumdaki farklı tiplerin temsillerini aktarması üzerinden yorumlanabilir. Hangi yönün daha değerli bulunduğu öğrencinin görüşüdür; yanıt, seçilen yönü oyundan veya tema içindeki bilgilerden bir örnekle gerekçelendirmelidir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
+          "guidance": "Öğrenciden önce Karagöz’ün kültüre taşıdığını düşündüğü bir yönü seçmesini, ardından bunu metindeki veya temada öğrendiği somut bir örnekle desteklemesini isteyin. Kişisel değer yargısını kaynakta doğrudan verilen bilgi gibi sunmamasına dikkat edin.",
           "question_no": "2"
         },
         "content": null
@@ -1157,6 +1171,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Metnin konu ve temasını belirleyiniz.",
@@ -1177,8 +1192,9 @@
           "entry_type": "question_answer",
           "printed_page": 30,
           "prompt_summary": "Yazıcı metninin konusu ve teması",
-          "answer": "Konu, Karagöz'ün yazıcılık yapmaya başlaması ve karşılaştığı kişilerle yaşadığı komik yanlış anlamalardır. Tema ise iletişim ve anlaşılma problemi ile eğitim ve sosyal farklılıkların iletişime etkisidir.",
+          "answer": "Konu, Yazıcı metninde gerçekleşen olay ve yanlış anlamalardır; örneğin Karagöz’ün yazıcılık girişimi ve bu sırada karşılaştığı kişilerle yaşadıkları. Tema, bu olayların düşündürdüğü daha genel anlamdır. İletişim ve anlaşılma, dil farklılıkları veya bilmediği bir işi üstlenmenin sonuçları metne dayalı tema önerileri olabilir; öğrenci seçimini olaylardan hareketle gerekçelendirmelidir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
+          "guidance": "Öğrenciye “Metinde somut olarak ne oluyor?” ve “Bu olay daha genel olarak hangi meseleyi düşündürüyor?” sorularını yöneltin. Konu için olay örgüsünden, tema için birden fazla olası yorumu destekleyebilen metin ayrıntısından kanıt istensin.",
           "question_no": "3"
         },
         "content": null
@@ -1188,6 +1204,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Metindeki açık ve örtük iletileri tespit ediniz.",
@@ -1208,8 +1225,9 @@
           "entry_type": "question_answer",
           "printed_page": 30,
           "prompt_summary": "Metindeki açık ve örtük iletiler",
-          "answer": "Açık iletiler arasında Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yapmaya çalışması, farklı kişilerin farklı konuşma biçimlerine sahip olması ve yanlış anlamaların sorun çıkarması sayılabilir. Örtük olarak etkili iletişim için anlaşılır bir dilin gerekli olduğu, eğitim ve sosyal çevrenin dili etkilediği ve bilmediği bir işi biliyormuş gibi yapmanın sorunlara yol açabileceği söylenebilir.",
+          "answer": "Açık ileti, metinde doğrudan söylenen veya olay akışında açıkça görülen düşüncedir; örtük ileti ise metin ayrıntılarından çıkarılan yorumdur. Karagöz’ün yazıcılık sırasında okuma-yazma bilgisiyle ilgili sözleri ve yanlış anlamalar, açık gözlemler için; dil farklılıklarının anlaşmayı nasıl etkilediği ya da bir işi bilmeden üstlenmenin sonucu gibi yorumlar örtük ileti önerileri için dayanak olabilir. Her çıkarım ilgili söz veya olayla doğrulanmalıdır.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
+          "guidance": "Her iletiyi “metinde doğrudan görülen/söylenen” ve “bu ayrıntıdan çıkarılan yorum” olarak ayırmasını isteyin. Örtük ileti için öğrenciden belirli bir replik ya da olay göstermesini, sonra çıkarımının bu kanıtı aşıp aşmadığını açıklamasını isteyin; genel bir ahlak dersi dayatmayın.",
           "question_no": "4"
         },
         "content": null
@@ -1219,6 +1237,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Açık ve örtük iletilerin toplum hayatındaki iletişime katkısını değerlendiriniz.",
@@ -1239,8 +1258,9 @@
           "entry_type": "question_answer",
           "printed_page": 30,
           "prompt_summary": "Metnin iletilerinin toplumsal iletişime katkısı",
-          "answer": "Bu iletiler, yalnız konuşmanın değil birbirini doğru anlamanın da önemli olduğunu gösterir. Açık konuşmak, karşıdakinin dil özelliklerini dikkate almak, dikkatle dinlemek ve anlaşılmayan noktaları açıklığa kavuşturmak iletişim kazalarını azaltır. Metin dil farklılıklarına karşı farkındalık da oluşturur.",
+          "answer": "Metinden çıkarılan ileti, toplum hayatındaki iletişime ilişkin farklı sonuçlar düşündürebilir: örneğin sözü dikkatle dinleme, belirsizliği açıklığa kavuşturma veya dil farklılıklarına karşı sabırlı olma. Bunlar olası uygulamalardır; öğrenci seçtiği iletinin hangi davranışa nasıl katkı sağlayabileceğini açıklamalı ve metindeki dayanağını göstermelidir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
+          "guidance": "Öğrenciden önce 30. sayfadaki açık ya da örtük iletilerden birini seçmesini, ardından bu iletinin günlük iletişimde hangi somut davranışa dönüşebileceğini açıklamasını isteyin. Metindeki iletiyle kendi toplumsal yorumunu ayırın; farklı sonuçlar kanıt ve gerekçeyle kabul edilebilir.",
           "question_no": "5"
         },
         "content": null
@@ -2588,14 +2608,14 @@
           "printed_page": 40,
           "question_no": "2",
           "prompt_summary": "Roman düşüncelerinin mektupta yer almasının mektup türünün işlevine yönelik düşündürdükleri",
-          "answer": "Mektubun yalnızca gündelik haberleşme ve hal hatır sorma aracı olmadığını; yazarların, sanatçıların ve düşünürlerin sanat anlayışlarını, eleştirilerini ve kuramsal yaklaşımlarını en özgür ve samimi biçimde kayda geçirdikleri entelektüel bir laboratuvar ve düşünce belgesi işlevi gördüğünü gösterir.",
+          "answer": "Mektupta roman kişileri ve roman tekniği üzerine düşüncelere yer verilmesi, mektubun kişisel haberleşmenin yanında edebî ve düşünsel alışverişe de alan açabileceğini düşündürür. Bu yazışma, yazarın edebiyat hakkındaki görüşlerini muhatabıyla paylaşırken aynı zamanda bu düşünceleri sonraki okurlara ve araştırmacılara taşıyabilir. Mektubun belge ya da düşünce kaynağı olarak değerinin ne olduğu, metindeki içerik ve hitap biçimi üzerinden gerekçelendirilmelidir.",
           "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
           "answer_sections": {
-            "Düşünce atölyesi işlevi": "Yazar resmî bir makale veya kitap yazmadan önce ham fikirlerini, roman tekniği arayışlarını ('mazi koridoru') güvendiği bir dostunun süzgecine sunar; mektup bir ön hazırlık ve düşünce geliştirme zeminidir.",
-            "Türün esnekliği ve samimiyeti": "Akademik yazıların ağır ve mesafeli dili yerine, edebî mektuplarda duygu ile kuram iç içe geçer; bu da edebiyatın yaşayan, insani yönünü ortaya koyar.",
-            "Döneme ışık tutan belge değeri": "Sanatçı mektupları, o dönemin edebiyat tartışmalarını, okuma zevkini ve perde arkasındaki poetik arayışları belgeleyen birinci elden tarihî ve edebî kaynaklardır."
+            "Kişisel haberleşme": "Mektubun belirli bir muhatabı vardır ve kişisel haberleşme bağlamı taşır.",
+            "Edebî ve düşünsel paylaşım": "Roman kişileri ve tekniğine ilişkin görüşler, haberleşmenin edebiyat üzerine düşünce paylaşımını da kapsadığını gösterir.",
+            "Olası belge değeri": "Bu görüşler dönemin edebiyat düşüncesine ilişkin bir kaynak olarak okunabilir; bu değerin kapsamı metindeki kanıtla açıklanmalıdır."
           },
-          "guidance": "Öğrencilerin 'özel mektup' ile 'edebî mektup' arasındaki kesişime dikkat etmeleri, mektubun düşünce tarihi ve edebiyat araştırmaları için neden vazgeçilmez bir belge olduğunu kavramaları sağlanmalıdır."
+          "guidance": "Öğrencilerden mektupta romanla ilgili hangi düşüncelerin yer aldığını belirlemelerini, bunların kişisel haberleşmenin işlevini nasıl genişlettiğini tartışmalarını isteyin. Mektubun edebî, düşünsel veya belge niteliğine ilişkin yargılarını metinden kanıtla gerekçelendirsinler; “vazgeçilmez” gibi sonucu baştan belirleyen bir hüküm beklemeyin."
         },
         "content": null
       },
@@ -2908,15 +2928,15 @@
           "printed_page": 43,
           "question_no": "Fark Edelim",
           "prompt_summary": "Mehmet Kaplan'ın mektubunun mektup türlerinden hangisini örneklediği ve gerekçelendirilmesi",
-          "answer": "Mehmet Kaplan'ın mektubu temelde 'edebî mektup' türünü örneklemektedir; bununla birlikte 'özel mektup'un samimi ve içten özelliklerini de bünyesinde barındıran melez bir nitelik taşır.",
+          "answer": "Bu mektup özel mektup ve edebî mektup özelliklerini birlikte taşır. Belirli bir muhataba hitap etmesi, kişisel/ailevi haberler ve selamlar içermesi özel haberleşme yönünü; roman, yazar ve edebiyat üzerine düşünceleri ise edebî yönünü destekler. Hangi niteliğin sınıflandırmada öne çıkarılacağı, iletişim amacı, içerik ve dil ölçütlerine göre gerekçelendirilmelidir.",
           "source_locator": "basılı s.43 / PDF s.44; ana metin s.37-38",
           "answer_sections": {
-            "Edebî mektup olma gerekçeleri (Asıl tür)": "Metin iki edebiyatçı arasında yazılmıştır. Kaplan mektubunda roman türünün teknik sorunlarını (Dostoyevski, Stendhal, Karamazof Kardeşler), kişi tahlili yöntemlerini ('mazi koridoru'), sanat anlayışını ve yazma disiplinini ele alır. Bu fikirler yalnızca iki kişi arasındaki günlük bir sohbeti aşarak dönemin edebiyat ve düşünce hayatına ışık tutan estetik ve kuramsal bir belge niteliği kazanır.",
-            "Özel mektup özellikleri (Biçimsel ve duygusal zemin)": "Mektup doğrudan samimi bir hitapla ('Âli,') başlar, günlük aile haberlerini (kardeşleri Behice, Münevver, Kemal), yalnızlık duygusunu, sağlık durumunu ve selamları içerir; yer, tarih ve adres bilgisiyle özel mektup kalıbını kullanır.",
-            "Sonuç": "Mektup, özel mektup samimiyetiyle yazılmış fakat içeriğindeki yoğun edebî tahliller ve yazarının sanatçı kimliği sebebiyle Türk edebiyatında klasikleşmiş bir 'edebî mektup' örneğidir."
+            "Özel haberleşme yönü": "Mektupta belirli bir muhatap, kişisel hitap ve aile/yaşamla ilgili haberler bulunur.",
+            "Edebî düşünce yönü": "Roman, yazarlar ve edebiyat üzerine değerlendirmeler mektubun edebî düşünce paylaşımı niteliğini gösterir.",
+            "Gerekçeli sınıflandırma": "İki özellik metinde birlikte bulunduğundan öğrenci, seçtiği sınıflandırmanın hangi yönü daha çok öne çıkardığını kanıtla açıklamalıdır."
           },
-          "explanation": "Mektubun türünü belirlerken şu dört ölçüt göz önünde tutulmalıdır: Kim yazıyor? (Edebiyat araştırmacısı), Kime yazıyor? (Edebiyatçı dostuna), Hangi amaçla yazıyor? (Haberleşmenin yanında edebiyat kuramı ve roman tahlili yapmak amacıyla), Nasıl bir dille yazıyor? (Samimi fakat edebî ve düşünsel derinliği olan bir dille).",
-          "guidance": "Öğrencilerin mektubu doğrudan özel mektup olarak nitelemesi durumunda, metindeki Dostoyevski tahlili ve roman görüşlerinin onu 'edebî mektup' seviyesine taşıdığı fark ettirilmelidir.",
+          "explanation": "Sınıflandırmada şu ölçütler kullanılabilir: kim yazıyor ve kime yazıyor; iletişimin amacı; kişisel haberleşme ile edebî düşüncenin içerikteki yeri; dil ve içerik. Bu ölçütler, tek bir etiketi otomatik kılmaz.",
+          "guidance": "Önce mektubun kimden kime yazıldığını ve amacını belirletin. Öğrenciler kişisel haberleşme ile edebî düşüncenin hangi bölümlerde ve ne ölçüde öne çıktığını karşılaştırsın; her sınıflandırmayı ilgili metin kanıtıyla gerekçelendirsin. Gerekçeli farklı birincil sınıflandırmaları kabul edin; kanıttan bağımsız olarak iki etiketi eşit derecede doğru saymayın.",
           "evidence_quotes": [
             "Karamazoflar romanı şimdiye kadar okuduklarıma hiç benzemiyor",
             "ben bu hâle mazi koridoru diyorum",
@@ -5274,23 +5294,21 @@
           "printed_page": 63,
           "question_no": "Değerlendirme",
           "prompt_summary": "İletişimin hızlanmasının olumlu ve olumsuz yönlerini değerlendirme",
-          "answer": "İletişimin hızlanması ve pratikleşmesi insan hayatına büyük bir zaman ve erişim kolaylığı kazandırmış olsa da hızın tek başına iletişimin derinliğini ve kalitesini güvence altına almadığı, aksine düşünmeden konuşma ve yüzeyselleşme gibi yeni riskler doğurduğu görülmektedir.",
+          "answer": "İletişimin hızlanması ve pratikleşmesi erişimi kolaylaştırabilir; bunun yanında hızlı yanıt beklentisi, kısa/acele iletiler veya sürekli ulaşılabilir olma gibi tartışılabilecek riskler de doğurabilir. Bu sonuçlar kullanılan araca, iletişim amacına, kişilere ve koşullara göre değişebilir. Öğrenci araştırma bulgularından hareketle olumlu ve olumsuz yönleri tartıp kendi gerekçeli sonucunu oluşturur.",
           "answer_sections": {
-            "Olumlu Boyutlar (Kolaylıklar ve Kazanımlar)": [
-              "Anlık Erişim ve Kriz Yönetimi: Acil sağlık, güvenlik ve ailevi durumlarda saniyeler içinde haberleşerek önlem alabilme.",
-              "Bilgiye ve Dünyaya Açılma: Farklı kültürlerle, eğitim kurumlarıyla ve uzmanlarla zahmetsizce iletişim kurarak küresel etkileşimi artırma.",
-              "Verimlilik ve Hızlı Karar Alma: Bürokrasi, iş dünyası ve eğitimde posta bekleme sürelerinin ortadan kalkmasıyla iş süreçlerinin hızlanması."
+            "Olası kolaylıklar": [
+              "Acil veya zamana duyarlı durumlarda hızlı haberleşme.",
+              "Uzak kişi ve kaynaklarla daha kolay iletişim.",
+              "Yazışma ve bilgi paylaşımında bekleme süresinin azalması."
             ],
-            "Olumsuz Boyutlar (Riskler ve Yozlaşmalar)": [
-              "Düşünme ve Süzgeçten Geçirme Süresinin Kaybı: Mektubun sağladığı 'yazıp bekletme, kelimeleri özenle seçme' imkânının kaybolması; aceleyle yazılan mesajların kırgınlıklara yol açması.",
-              "İlişkilerin Yüzeyselleşmesi ve Şablonlaşması: Uzun ve derinlikli duygu paylaşımları yerine kısa emojiler, kısaltmalar ve hazır şablonlarla iletişimin mekanikleşmesi.",
-              "Sürekli Ulaşılabilirlik Baskısı (Teknolojik Stres): Muhatabın anında cevap beklemesi, mesajın 'görüldü' olması durumunda oluşan psikolojik baskı ve mahremiyet alanının daralması."
+            "Tartışılabilecek riskler": [
+              "Acele iletinin yanlış anlaşılma veya kırgınlık yaratma olasılığı.",
+              "Anında yanıt beklentisinin baskı oluşturabilmesi.",
+              "Kısa ve sık mesajlaşmanın bazı durumlarda ayrıntılı konuşmanın yerini alabilmesi."
             ],
-            "Sentez ve Öğretmen Yönlendirmesi": [
-              "Öğrencilere vurgulanacak temel ilke şudur: İletişim araçlarının hızı bir imkândır; ancak iletişimin asıl değeri nezaket, düşünce derinliği, empati ve sorumluluk bilinciyle korunur."
-            ]
+            "Gerekçeli değerlendirme": "Öğrenci bulgularını ve somut koşulları değerlendirerek kendi sentezini kurar; hız, özen veya başka bir ölçüt arasında tek bir denge sonucuna ulaşması beklenmez."
           },
-          "guidance": "Öğrencilerin yalnızca tek bir tarafı övmesi veya yermesi engellenmeli; teknolojinin sunduğu hız ile insan ilişkilerinin ihtiyaç duyduğu özen ve sabır arasındaki dengeyi tartışmaları sağlanmalıdır.",
+          "guidance": "Olumlu ve olumsuz yönleri birlikte ele aldırın. Her sav için araştırma bulgusu veya somut örnek ve ilgili koşulu sordurun; öğrenciler farklı gerekçeli sonuçlara ulaşabilir, tek bir denge formülünü zorunlu kılmayın.",
           "source_locator": "basılı s.63 / PDF s.64 — Ders Dışı Etkinlik / Değerlendirme"
         },
         "content": {
@@ -5589,13 +5607,13 @@
           "printed_page": 66,
           "question_no": "1",
           "prompt_summary": "Araştırma sonuçları ile dinlenen/izlenen metin arasında bağlantı kurma",
-          "answer": "Bu sorunun kesin ve somut içeriği, öğrencinin sayfa 63'teki 'İletişim ve E-posta' araştırmasında kütüphaneden derlediği veriler ile karekoddaki videonun sunduğu argümanların karşılaştırılmasına dayanır. Kaynak videonun özgün kurgusu basılı kitapta yer almadığından videoya özgü unsurlar uydurulmamalıdır. Bununla birlikte kütüphane araştırmasında ulaşılan yazılı (mektup, telgraf), işitsel (telefon, radyo) ve görsel (televizyon, internet) araçların hız ve maliyet verileri; videodaki 'iletişimin medenileşme hareketi oluşu' teziyle doğrudan ilişkilendirilmelidir.",
+          "answer": "Bu soru, öğrencinin 63. sayfadaki araştırmasından seçtiği bir bulguyu QR videoda gerçekten gözlemlediği bir noktayla karşılaştırmasını ister. Araştırma bulgusu ve video tespiti öğrenciye göre değişebilir; PDF video içeriğini göstermediğinden burada videonun savı veya belirli bir örneği önceden verilemez. Karşılaştırmanın yönü ve ulaşılan sonuç iki dayanakla gerekçelendirilmelidir.",
           "answer_sections": {
-            "Yazılı İletişim Aşamasıyla Bağlantı": "Araştırmada elde edilen mektup ve telgrafın dağıtım süreleri; videoda vurgulanan coğrafi mesafelerin insan ilişkilerine etkisi ve bekleme süresiyle örtüştürülür.",
-            "İşitsel ve Görsel İletişim Aşamasıyla Bağlantı": "Telefon ve televizyonun dünyayı küçültmesi, bilginin eş zamanlı yayılması ve kitle iletişiminin doğuşuyla eşleştirilir.",
-            "Dijitalleşme ve Çok Modlu İletişim": "E-posta ve internetin bilgiyi metin, ses ve görüntüyle tek kanalda birleştirmesi, iletişimin araç merkezli olmaktan çıkıp etkileşimli ağ merkezli hâle gelişini doğrular."
+            "Araştırma bulgusu": "Öğrenci kendi araştırmasından ilgili bir bulgu seçer ve kaynağını belirtir.",
+            "Videoda gözlenen nokta": "Yalnız gerçekten izlenen/duyulan bir tespit kaydedilir; video erişilemiyorsa bu bölüm doldurulmuş gibi gösterilmez.",
+            "Karşılaştırma ve sonuç": "Öğrenci iki dayanağın nasıl ilişkilendiğini ve hangi sonucu desteklediğini açıklar; ilgisiz veya aşırı genellemelerden kaçınır."
           },
-          "guidance": "Öğrenciden araştırmasındaki en az bir tarihsel bilgi ile videoda gerçekten duyduğu/gördüğü bir tespiti açıkça eşleştirmesi istenmelidir.",
+          "guidance": "Önce araştırma notlarından bir bulgu seçtirin, sonra videodan gerçekten gördüğü/duyduğu bir noktayı sordurun. Öğrenci ikisinin ortak ya da ayrışan yönünü ve karşılaştırmadan çıkardığı sonucu gerekçelendirsin. Video görülmediyse video tarafına örnek eklemeyin.",
           "source_locator": "basılı s.66 / PDF s.67; QR video gerekli"
         },
         "content": null
@@ -5628,13 +5646,13 @@
           "printed_page": 66,
           "question_no": "2",
           "prompt_summary": "E-postanın diğer iletişim araçlarına göre avantajları",
-          "answer": "E-posta; geleneksel mektuba kıyasla zaman ve maliyet bariyerini ortadan kaldıran anlık bir hıza, telefona kıyasla kalıcı ve resmî olarak belgelenebilir bir arşiv niteliğine, mesajlaşma uygulamalarına kıyasla ise kurumsal ciddiyet ve dosya eki zenginliğine sahip olmasıyla çok yönlü bir üstünlük sağlar.",
+          "answer": "E-posta, fiziksel mektuba göre çoğu durumda daha hızlı ve düşük gönderim maliyetli olabilir; alıcının aynı anda çevrim içi olmasını gerektirmeden gönderilip daha sonra yanıtlanabilir. Yazılı bir kayıt bırakması, iletinin bulunmasını ve konuşmada kolayca saklanamayacak bilgilerin tekrar gözden geçirilmesini sağlayabilir. Dosya ekleri gönderilebilir; ancak boyut, biçim ve güvenlik sınırları kullanılan hizmete bağlıdır. E-posta kurumsal yazışmaya elverişli olabilir, fakat mesajlaşma uygulamalarından her durumda daha resmî veya güvenilir değildir; tek başına resmî ya da hukuki delil niteliği de garanti etmez.",
           "answer_sections": {
-            "Geleneksel Mektuba Göre Avantajları": "Günler veya haftalar süren posta dağıtımı yerine saniyeler içinde hedefe ulaşır; posta pulu, kâğıt masrafı gerektirmez; kaybolma veya yıpranma riski yoktur.",
-            "Telefona Göre Avantajları": "Asenkrondur (alıcının o an müsait olması gerekmez, istediği zaman okuyup yanıtlar); konuşmada uçup gidebilecek şartların, anlaşmaların ve kararların yazılı birer resmî delil olarak arşivlenmesini sağlar.",
-            "Anlık Mesajlaşma Uygulamalarına Göre Avantajları": "Daha kurumsal, derli toplu ve hiyerarşik bir dil standardına sahiptir; çok büyük boyutlu belgelerin, raporların ve tabloların ek dosya (attachment) olarak düzenli sunulmasına elverişlidir."
+            "Genel avantajlar": "Fiziksel postaya göre hız ve çoğu durumda düşük gönderim maliyeti; eş zamanlı iletişim gerektirmeyen kullanım; yazılı içeriği sonradan arama ve gözden geçirme olanağı; dosya ekleyebilme.",
+            "Bağlama ve teknik koşullar": "Gönderim maliyeti, teslim/erişim, kayıtların saklanması ve dosya eklerinin boyut-biçim sınırları hizmete ve kullanıcının koşullarına bağlıdır. E-posta kaybolmaya karşı mutlak koruma veya kendiliğinden resmî delil sağlamaz; kurumsallık da alıcıya, amaca ve kullanılan kanala göre değişir.",
+            "Video ile karşılaştırma": "Videoda gerçekten görülen örnek ancak video incelendikten sonra kaydedilmelidir. Video erişilemiyorsa yukarıdaki genel avantajlar önceki bilgi ve kitap sorusundan hareketle tartışılır; bunlar videoda gösterilmiş örnek diye sunulmaz."
           },
-          "guidance": "Öğrencilerin avantajları yalnızca 'hızlıdır' diyerek geçiştirmemesi; yazılı delil niteliği, asenkronluk ve ek belge gönderme gibi teknik boyutları gerekçelendirmesi beklenir.",
+          "guidance": "Önce öğrencilerin önceki bilgi veya kitaptan desteklediği olası avantajı belirleyin; hız, maliyet, eş zamansız kullanım, aranabilir yazılı kayıt ya da koşullu dosya eki gibi bir gerekçe isteyin. Video erişilebiliyorsa yalnız izlenen bölümde gerçekten gösterilen örneği ayrıca kaydettirin ve genel bilgiyle karşılaştırın; video görülmediyse yapımda geçen örnek varmış gibi konuşmayın. Sonuçta hangi aracın hangi amaç ve koşulda avantajlı olabileceğini gerekçelendirsinler.",
           "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 2"
         },
         "content": null
@@ -5668,16 +5686,16 @@
           "printed_page": 66,
           "question_no": "3",
           "prompt_summary": "İletişimin medenileşme hareketi olarak yorumlanması",
-          "answer": "Bu ifade, insanın biyolojik varlığını sürdürmenin ötesinde diğer insanlarla ortak anlam üretme, bir arada yaşama kuralları koyma, bilgi birikimini nesillere aktarma ve sorunları şiddet yerine uzlaşmayla çözme sürecinin ancak iletişimle mümkün olduğunu anlatır. İletişim araçları geliştikçe toplumlar kabuğunu kırmış; hukuk, bilim, sanat ve felsefe ortak bir insanlık mirasına dönüşmüştür.",
+          "answer": "“İletişim, bir medenileşme hareketidir.” sözü, iletişimin insanların ortak anlamlar ve bilgi paylaşması, birlikte yaşama biçimleri geliştirmesi ve kültürü kuşaklara aktarmasındaki rolünü vurguluyor diye yorumlanabilir. Bu yorumun kapsamı, metin veya videoda verilen örneklerin neyi gösterdiğiyle sınanmalıdır. İletişimin bütün anlaşmazlıkları çözdüğü ya da tek başına medeniyet oluşturduğu sonucu yalnız bu ifadeden çıkarılamaz.",
           "answer_sections": {
-            "Bireysel İhtiyaçtan Toplumsal Düzene": "İnsan tek başına yaşayamayan sosyal bir varlıktır; temel ihtiyaçlarını karşılamak, aidiyet hissetmek ve güvenliği sağlamak için iletişim kurmak zorundadır.",
-            "Bilgi ve Kültür Aktarımı": "Dil ve iletişim araçları olmasaydı her nesil hayatı sıfırdan kurmak zorunda kalırdı; medeniyet, bilginin dille biriktirilip kuşaktan kuşağa aktarılması sayesinde yükselmiştir.",
-            "Hukuk, Uzlaşma ve Barış": "Medeni olmanın en temel ölçütü, anlaşmazlıkları kaba kuvvetle değil; konuşarak, müzakere ederek ve ortak metinler (yasalar, sözleşmeler) üreterek çözmektir."
+            "İfadenin olası anlamı": "İletişim, ortak yaşam ve kültür aktarımına katkı sağlayan bir süreç olarak yorumlanabilir.",
+            "Kanıt ve çıkarım": "Öğrenci metinde veya izlenen videoda gerçekten sunulan bir dayanağı belirlemeli ve bu dayanağın yorumunu nasıl desteklediğini açıklamalıdır.",
+            "Yorumun sınırı": "İfadenin farklı biçimlerde yorumlanması mümkündür; iletişimin tek başına bütün toplumsal sorunları çözdüğü genellenmemelidir."
           },
           "evidence_quotes": [
             "İletişim, bir medenileşme hareketidir."
           ],
-          "guidance": "Öğrencilere 'İletişim olmasaydı medeniyet kurulabilir miydi?' sorusu yöneltilerek dil ile insanlaşma ve uygarlaşma arasındaki zorunlu bağ fark ettirilmelidir.",
+          "guidance": "Önce öğrenciden sözün kendisinde hangi iddianın bulunduğunu kendi cümlesiyle kurmasını isteyin. Ardından metinde veya video izlendi ise videoda gerçekten gördüğü bir dayanağı buldurup bunun hangi sonucu ve ne ölçüde desteklediğini sordurun. Evet/hayır yanıtıyla yetinmeyin; farklı ve sınırlı yorumları kanıt ile gerekçesine göre değerlendirin.",
           "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 3"
         },
         "content": null
@@ -6581,6 +6599,7 @@
         "layout": "question",
         "density": "comfortable",
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence"
         ],
@@ -6604,20 +6623,16 @@
           "printed_page": 74,
           "question_no": "2",
           "prompt_summary": "Zihinde cevap verip sonra unutmanın günümüz iletişimindeki benzerleri",
-          "answer": "Halikarnas Balıkçısı'nın mektuba zihninde boyuna cevap verip sonra unuttuğunu söylemesi, günümüz dijital iletişiminde mesajlaşma uygulamalarında ve e-postalarda çok sık yaşanan 'okundu/görüldü yapıp kafada yanıtlama' durumunun edebî bir örneğidir.",
+          "answer": "Örnek bir benzerlik, bir iletiyi okuyup yanıtı daha sonra yazmayı düşünürken unutmak olabilir. Böyle bir durumun yaşanıp yaşanmadığı veya ne sıklıkta görüldüğü öğrencinin gözlemine ve koşullara bağlıdır. Okundu/görüldü bilgisi tek başına muhatabın kendini dışlanmış ya da önemsenmemiş hissettiğini göstermez; olası etki, tarafların beklentileri ve iletişim bağlamıyla birlikte değerlendirilmelidir.",
           "answer_sections": {
-            "Günümüzdeki Benzer Durumlar": [
-              "Görüldü Yapıp Yanıtlamayı Unutma: Mesajlaşma uygulamasında bildirimi açıp zihnen 'Buna şöyle derim' diye düşünerek meşguliyet sebebiyle ekrana yazmayı unutmak.",
-              "Taslakta (Draft) Kalan İletiler: E-postaya veya mesaja başlayıp yarım bırakmak ve gönderildiği zannıyla günlerce beklemek.",
-              "Bildirimi Kapatıp Zihinsel Yanıta Güvenme: Bildirimi temizleyip o an meşgulken verilen zihinsel kararın yoğunluk içinde kaybolması."
-            ],
-            "Muhatapta Yarattığı İletişim Engeli": "Karşı taraf mesajın iletildiğini ve okunduğunu (çift mavi tık / görüldü) gördüğü hâlde cevap alamayınca önemsenmediğini, yok sayıldığını veya dışlandığını düşünerek alınganlık ve güvensizlik yaşar.",
-            "İletişim Nezaketi ve Çözüm Yolu": "O an kapsamlı cevap verilemiyorsa dahi 'Mesajını aldım, şu an meşgulüm; akşam detaylı döneceğim' şeklinde kısa bir teyit iletisi atmak veya hatırlatıcı kurmak bu iletişimsizliği önler."
+            "Olası benzer durum": "İleti okunur, yanıt verme daha sonraya bırakılır ve gündelik yoğunluk içinde unutulabilir.",
+            "Değerlendirme sınırı": "Yaygınlık ve muhatabın duygusu hakkında kanıt olmadan genelleme yapılmamalı; olası iletişim etkisi bağlama göre tartışılmalıdır."
           },
           "evidence_quotes": [
             "Yani zihnen boyuna cevap verdim. Yalnız bir gün verdiğim cevabı ertesi günü unutduğum için, cevapların hepsi gürültüye gitdi."
           ],
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 2"
+          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 2",
+          "guidance": "Öğrenciden benzer bir durumun kendi deneyim veya gözleminde yaşanıp yaşanmadığını değerlendirmesini isteyin; paylaşmak istemediği kişisel bir yaşantıyı açıklamasını zorunlu tutmayın. Yaşandıysa bir örnek ve olası iletişim etkisini açıklasın; yaygınlık iddiasını gözleminden ayırsın. “Görüldü” bilgisinden muhatabın duygusunu kesinleştirmesin."
         },
         "content": null
       },
@@ -7263,7 +7278,14 @@
         },
         "answer": null,
         "content": {
-          "lead": "Öğretmen değerlendirmesinde Türkçenin doğru kullanımı, üslup, özgünlük, başlık/hitap, yazım ve noktalama gibi ölçütleri dikkate alın. Öz değerlendirmede Kısmen veya Hayır işaretlenen beceriler için somut geliştirme adımı belirleyin."
+          "lead": "Öğretmen değerlendirmesinde kitapta belirtilen Türkçenin doğru kullanımı, üslup, özgünlük, gerekli durumlarda öznel ve nesnel ifadeler, başlık/hitap, yazım ve noktalama ölçütlerini dikkate alın. Karekodla ulaşılan dereceli puanlama anahtarının burada gösterilmeyen ölçüt veya puanlarını varsaymayın. Öğrencinin öz değerlendirme formundaki Kısmen/Hayır seçimini kendi taslağı üzerinde somut bir düzeltmeye dönüştürmesine rehberlik edin.",
+          "items": [
+            "Öğrenci, öz değerlendirme formunda Kısmen veya Hayır işaretlediği bir ölçütü seçer.",
+            "Taslağından bu ölçüte ilişkin belirli bir sözcük, cümle ya da bölüm gösterir.",
+            "Kanıta dayanarak tek bir somut düzeltme hedefi belirler; gerekirse eksik bilgiyi araştırır veya öğretmenden destek alır.",
+            "E-postasını bu hedef doğrultusunda düzeltir ve değişen bölümü yeniden okur.",
+            "Aynı ölçüte dönerek çalışmasını yeniden değerlendirir; ilerlemeyi ve gerekiyorsa sonraki adımı kaydeder."
+          ]
         }
       }
     ]
@@ -7620,6 +7642,7 @@
         "layout": "comparison",
         "density": "compact",
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Mektup ve Huzur örneğinden hareketle yazarın okuyucuya yaklaşımını ve metinle kurduğu iletişimi karşılaştırınız.",
@@ -7642,20 +7665,14 @@
           "printed_page": 82,
           "question_no": "9",
           "prompt_summary": "Mektup ile Huzur'da yazarın okuyucuyla kurduğu ilişkiyi karşılaştırma",
-          "answer": "Tanpınar, mektubunda okuyucuyla/muhatabıyla doğrudan, birinci tekil şahsın samimiyetiyle ve belgeli hatıralar üzerinden aracısız temas kurarken; Huzur romanında okuyucuyla kurmaca bir karakterin (Mümtaz) iç dünyası, mekân algısı ve estetik semboller aracılığıyla dolaylı ve sanatsal bir iletişim kurar.",
+          "answer": "Verilen mektup parçasında anlatıcı belirli bir muhataba seslenir ve kendi anılarını birinci kişi anlatımıyla paylaşır. Huzur’dan verilen parçada ise anlatım Mümtaz’ın iç dünyası ve mekânla kurduğu ilişki çevresinde ilerler; okurun bu bağları metin içinden izlemesi beklenir. Bu iki parçaya dayanarak mektuptaki muhatap ilişkisi ile romandaki kurmaca anlatımın okur katılımını farklı biçimlerde kurduğu söylenebilir. Karşılaştırma bu örneklerle sınırlıdır; bütün mektuplar ve romanlar için değişmez tür kuralı değildir.",
           "source_locator": "basılı s.82 / PDF s.83 — 1. Tema Ölçme ve Değerlendirme soru 9",
           "answer_sections": {
-            "Mektuptaki İletişim (Doğrudan ve Kişisel)": [
-              "Anlatıcı ve Muhatap: Tanpınar doğrudan kendisi ('ben') olarak konuşur, muhatap da yaşayan gerçek bir kişidir.",
-              "İçerik ve Atmosfer: Yazarın otobiyografik anıları, Antalya lise yılları ve şahsi duyguları aracısız aktarılır.",
-              "Okuyucuya Yaklaşım: Samimi, sohbet havasında, doğrudan seslenen ve paylaşıma açık bir dil benimsenir."
-            ],
-            "Huzur Romanındaki İletişim (Dolaylı ve Estetik Kurmaca)": [
-              "Anlatıcı ve Aracılar: Yazar okuyucunun karşısına doğrudan çıkmaz; duygu ve düşüncelerini roman kahramanı Mümtaz'ın bilincine, ruh hâline ve duyarlıklarına emanet eder.",
-              "Mekânın ve Hatıranın İşlevi: Antalya'daki kayalar veya deniz, mektuptaki gibi sade bir coğrafi anı değil; 'Mümtaz'ın iç hayatının âdeta örgüsünü yapan' sembolik ve psikolojik bir iç zemin unsuru olarak işlenir.",
-              "Okuyucuya Yaklaşım: 'Fakat dikkatli okumak, gizli bağları bulmak lâzımdır' ifadesiyle okuyucudan metindeki örtük anlamları ve sembolik bağları çözen aktif ve estetik bir ortak olması beklenir."
-            ]
-          }
+            "Mektup parçasında": "Belirli bir muhatap, birinci kişi anlatımı ve kişisel anılar öne çıkar.",
+            "Huzur parçasında": "Mümtaz’ın iç dünyası ile mekânın ilişkisi ve bu ilişkinin okur tarafından izlenmesi öne çıkar.",
+            "Karşılaştırma ölçütleri": "Anlatıcı, muhatap/okur, kurmaca, dil ve metnin okurdan beklediği katılım bakımından iki alıntı karşılaştırılabilir. Sonuç yalnız verilen parçalara dayanır."
+          },
+          "guidance": "Öğrencilerden her iki parçadan da bir kanıt seçmelerini; anlatıcı, muhatap/okur, kurmaca, dil veya okurun metne katılımı ölçütlerinden uygun olanlarla karşılaştırmalarını isteyin. Önce parçada görüleni, sonra bundan çıkardıkları sonucu ayırsınlar. Farklı karşılaştırmaları gerekçeli ve iki parçaya bağlıysa kabul edin; türlerin tümüne yönelik genellemeye çevirmeyin."
         },
         "content": null
       },
