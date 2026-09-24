@@ -233,3 +233,9 @@ Tema 2'de de temel ihtiyaç daha fazla ansiklopedik bilgi değil; öğrencinin k
 ## Uygulama durumu
 
 Belirlenen altı tamamlayıcı bilgi Tema 2 answer-bank içine eklendi: alfabe–yazı dili ayrımı, fonoloji/morfoloji/sentaks, anı–hikâye ayrımı, konargöçer yaşam, anlam daralması ve izlenim yazısı tanımı.
+
+## 24.09.2026 kaynak ve yönlendirme düzeltmesi
+
+18 Eylül sayfa-sayfa QA raporunda Tema 2 için 9 `source_limited` kayıt sayılmıştı. 22 Eylül tarihli `963e835` commit'i, s.88'deki altı soruyu topluca `source_limited` yaparak sayıyı 15'e çıkardı. Bu sınıflama, soruların video bağlamında verilmesini cevapların belirleyici içeriğinin videoya bağımlı olmasıyla eş tutuyordu. Basılı s.88 ve altı soru kökü yeniden incelenince soru kökünün, genel bilginin veya kişisel gerekçenin cevap için yeterli olduğu görüldü. Altı kayıt `question_answer` türüne alındı; medya yönergesi ve görülmeyen video ayrıntısını eklememe sınırı korundu. Böylece güncel `source_limited` sayısı yeniden 9 oldu. 18 Eylül raporundaki sayı tarihsel anlık görüntü olarak değişmeden bırakıldı.
+
+Güncel canonical banka 167 kayıttır: `question_answer` 119 (`guidance` bulunan 90), `performance_support` 39 (38), `source_limited` 9 (9); toplam 137 kayıtta `guidance` vardır. Kontrol, canonical part dosyalarından yeniden hesaplanmıştır.

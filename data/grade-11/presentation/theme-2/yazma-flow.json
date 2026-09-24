@@ -223,20 +223,27 @@
       }
     },
     {
-      "id": "s153-feedback",
-      "source_record_id": "T02-S0146",
-      "answer_id": "T2-P153-PERF01",
-      "layout": "process",
-      "density": "compact",
-      "prompt": "Öz ve akran geri bildirimlerini düzeltme hedefine dönüştürünüz.",
+      "id": "s153-rubric",
+      "source_record_id": "T02-S0148",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "Dereceli puanlama ve akran değerlendirme — QR kaynak sınırı",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kısmen / Hayır işaretlenen ölçütler gerçek metin üzerinde somut değişikliğe dönüşmeli.",
-        "items": [
-          "Öğretmenin genel değerlendirmesi ile öz/akran geri bildirimlerini karşılaştırın.",
-          "Eksik görülen ölçüt için somut metin düzeltmesi yapın.",
-          "Sonraki çalışmaya yönelik yeni hedef belirleyin.",
-          "Düzeltilmiş yazınızı uygun sınıf/okul ortamında paylaşın."
+        "lead": "Kitap ayrıntılı dereceli puanlama ve akran değerlendirme formlarına QR ile yönlendiriyor.",
+        "sections": [
+          {
+            "title": "Sayfada görünür ölçütler",
+            "body": "Dil ve üslup, özgünlük, öznel/nesnel ifadeler, görsel kullanımı, yazım ve noktalama."
+          },
+          {
+            "title": "Öğretmen uygulaması",
+            "body": "Öz değerlendirmede Kısmen / Hayır işaretlenen maddeleri sonraki düzeltmeye bağlayın."
+          },
+          {
+            "title": "Kaynak sınırı",
+            "body": "QR formlarına erişmeden puan aralığı veya ek ölçüt uydurmayın."
+          }
         ]
       }
     },
@@ -248,7 +255,7 @@
       "prompt": "Öz değerlendirme — 1/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her ölçüte kendi yazınıza bakarak Evet / Kısmen / Hayır kararı verin.",
+        "lead": "İlk taslağınızı ve yazma planınızı açık tutun. Her ölçüt için kendi metninizde kanıt bularak Evet / Kısmen / Hayır kararı verin.",
         "items": [
           "Kime, neyi, nasıl ve hangi araçlarla anlatacağımı planladım.",
           "Planıma uygun, dikkat çekici bir giriş yazdım.",
@@ -276,27 +283,20 @@
       }
     },
     {
-      "id": "s153-rubric",
-      "source_record_id": "T02-S0148",
-      "layout": "reference",
-      "density": "large",
-      "prompt": "Dereceli puanlama ve akran değerlendirme — QR kaynak sınırı",
+      "id": "s153-feedback",
+      "source_record_id": "T02-S0146",
+      "answer_id": "T2-P153-PERF01",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "Öz ve akran geri bildirimlerini düzeltme hedefine dönüştürünüz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitap ayrıntılı dereceli puanlama ve akran değerlendirme formlarına QR ile yönlendiriyor.",
-        "sections": [
-          {
-            "title": "Sayfada görünür ölçütler",
-            "body": "Dil ve üslup, özgünlük, öznel/nesnel ifadeler, görsel kullanımı, yazım ve noktalama."
-          },
-          {
-            "title": "Öğretmen uygulaması",
-            "body": "Öz değerlendirmede Kısmen / Hayır işaretlenen maddeleri sonraki düzeltmeye bağlayın."
-          },
-          {
-            "title": "Kaynak sınırı",
-            "body": "QR formlarına erişmeden puan aralığı veya ek ölçüt uydurmayın."
-          }
+        "lead": "Öz değerlendirmede Kısmen / Hayır seçilen ölçütleri ve öğretmen/akran geri bildirimlerini ilk taslağınızdaki somut kanıtla eşleştirin; tek bir düzeltme hedefi belirleyin.",
+        "items": [
+          "Öğretmen ve akran geri bildirimini gerçek taslakta görülen bir cümle, bölüm veya özellikle ilişkilendirin; kanıtsız genel yargıyı düzeltme gerekçesi yapmayın.",
+          "Bir Kısmen / Hayır ölçütü seçin ve ilk taslaktan kanıtını gösterin; bu ölçüte yönelik tek, uygulanabilir bir değişiklik belirleyin.",
+          "Yazıyı bu hedefe göre gözden geçirip düzeltin. Sonra Öz Değerlendirme ekranına geri dönerek aynı ölçütü yeni metinde yeniden kontrol edin; gerekirse döngüyü yineleyin.",
+          "Sonraki çalışma için yeni hedef belirleyin ve düzeltilmiş yazınızı sınıf/okul ortamında paylaşın."
         ]
       }
     },

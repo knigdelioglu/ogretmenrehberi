@@ -47,17 +47,25 @@ assert(
     theme2IntroById.get("s87-q2")?.answer?.evidence_quotes?.length === 1,
   "s.87 alfabe-yazı dili ayrımı ve metin kanıtı korunmalı."
 );
-for (const id of ["s88-q1", "s88-q2", "s88-q3", "s88-q4", "s88-q5", "s88-q6"]) {
-  assert(
-    theme2IntroById.get(id)?.answer?.entry_type === "source_limited" &&
-      theme2IntroById.get(id)?.answer?.guidance,
-    `s.88 çok modlu metin sorusu source_limited ve yönlendirmeli olmalı: ${id}`
-  );
-}
+const s88Questions = ["s88-q1", "s88-q2", "s88-q3", "s88-q4", "s88-q5", "s88-q6"]
+  .map((id) => theme2IntroById.get(id)?.answer);
 assert(
-  theme2IntroById.get("s88-q1")?.answer?.explanation &&
-    theme2IntroById.get("s88-q5")?.answer?.explanation,
-  "s.88 kitap soru kökünden doğrulanabilen çerçeve açıklamaları korunmalı."
+  s88Questions.every((answer) => answer?.entry_type === "question_answer") &&
+    s88Questions.every((answer) => answer?.source_locator?.includes("QR video")),
+  "s.88 soruları soru kökünden cevaplanabilir kalmalı; QR kaynak izi korunmalı."
+);
+assert(
+  /gördüğü|duyduğu/i.test(s88Questions[0]?.guidance ?? "") &&
+    !/videoda.*(kesin|gerçek).*(tören|imece|sahne)/i.test(
+      s88Questions.map((answer) => answer.answer).join(" ")
+    ) &&
+    !/ülke.*şehir.*bölge/i.test(s88Questions[2]?.answer_sections?.["Örnek Cevap Çerçevesi"] ?? ""),
+  "s.88 videoya ait ayrıntı uydurulmamalı; kişisel coğrafya çağrışımına liste dayatılmamalı."
+);
+assert(
+  theme2IntroById.get("s88-q1")?.answer?.guidance &&
+    theme2IntroById.get("s88-q5")?.answer?.guidance,
+  "s.88 video kanıtı yalnız gözlenmiş örneklerden kurulmalı."
 );
 for (const step of theme2Intro.steps) {
   assert(
@@ -99,6 +107,15 @@ assert(
   ogullaById.get("s96-q4a")?.layout === "structure" &&
     ogullaById.get("s98-q4c")?.layout === "comparison",
   "Türk şiveleri çalışması yapı ve karşılaştırma görünümlerini kullanmalı."
+);
+assert(
+  ogullaById.get("s100-q3")?.answer?.answer_sections?.["Eşinin metinde verdiği tepki"] &&
+    Object.keys(ogullaById.get("s100-q3")?.answer?.answer_sections ?? {}).length === 3 &&
+    !/insanlar.*genellikle/i.test(ogullaById.get("s100-q3")?.answer?.answer ?? "") &&
+    ogullaById.get("s100-q3")?.answer?.guidance &&
+    ogullaById.get("s101-q10")?.answer?.guidance &&
+    Object.keys(ogullaById.get("s101-q10")?.answer?.answer_sections ?? {}).includes("ortuk_iletiler"),
+  "s.100 tepki/yorum/öğrenci değerlendirmesi ayrılmalı; s.101 örtük ileti için kanıt ve alternatifler korunmalı."
 );
 assert(
   ogullaById.get("s102-103-gram1")?.source?.printed_page_range === "102-103" &&
@@ -215,7 +232,8 @@ assert(
 );
 assert(
   orhunById.get("s118-rhetoric")?.layout === "structure" &&
-    orhunById.get("s119-compare")?.layout === "comparison",
+    orhunById.get("s119-compare")?.layout === "comparison" &&
+    Object.keys(orhunById.get("s119-compare")?.answer?.answer_sections ?? {}).length === 6,
   "s.118 söz sanatları ve s.119 metin karşılaştırması yapılandırılmış görünüm kullanmalı."
 );
 assert(
@@ -230,6 +248,26 @@ assert(
     orhunById.get("s124-social-sciences")?.answer?.entry_type === "performance_support" &&
     orhunById.get("s124-social-sciences")?.source?.printed_page_range === "124-125",
   "s.124 değerler ve s.124-125 sosyal bilimler çalışmaları performance olarak korunmalı."
+);
+const p117Answer = orhunById.get("s117-q2")?.answer;
+const p119Reality = orhunById.get("s119-q1")?.answer;
+assert(
+  p117Answer?.answer &&
+    !/granit|şeffaflık|hesap verebilirlik|kutsal bir sözleşme/i.test(p117Answer.answer) &&
+    p117Answer.answer.includes("gelecek kuşak") &&
+    p119Reality?.answer.includes("tarihî tanıklık") &&
+    p119Reality.answer.includes("bakış açısı") &&
+    /kendiliğinden tarafsız|otomatik.*nesnel/i.test(p119Reality.answer),
+  "s.117 taşa ilişkin kanıtsız ayrıntı içermemeli; s.119 belge niteliği bakış açısından ayrılmalı."
+);
+const p117Advice = orhunById.get("s117-q3")?.answer?.answer_sections;
+assert(
+  Array.isArray(p117Advice?.["Metindeki öğüt ve dayanak"]) &&
+    p117Advice?.["Günümüzle gerekçeli bağlantı"] &&
+    !/refah devleti|jeopolitik çıkar|modern hukukun üstünlüğü/i.test(
+      JSON.stringify(p117Advice["Metindeki öğüt ve dayanak"])
+    ),
+  "s.117 öğütlerin metinsel dayanağı ile güncel benzetmeler ayrı tutulmalı."
 );
 
 const divan = byLessonId.get("T11-T02-DIVANU-LUGATIT-TURK");
@@ -428,6 +466,15 @@ assert(
       (section) => section.title === "Kaynak sınırı"
     ),
   "s.153 öz değerlendirme 10 ölçüt içermeli; QR formları kaynak görülmeden uydurulmamalı."
+);
+const s153Order = museumWriting.steps.map((step) => step.id);
+const s153Feedback = museumById.get("s153-feedback");
+assert(
+  s153Order.indexOf("s152-draft") < s153Order.indexOf("s153-self-1") &&
+    s153Order.indexOf("s153-self-2") < s153Order.indexOf("s153-feedback") &&
+    s153Feedback?.content?.items?.some((item) => /ilk taslak.*kanıt/i.test(item)) &&
+    s153Feedback?.content?.items?.some((item) => /geri dön.*aynı ölçüt/i.test(item)),
+  "s.153 taslak → öz değerlendirme → kanıta dayalı düzeltme → aynı ölçüte dönüş döngüsü erişilebilir olmalı."
 );
 assert(
   Object.keys(museumById.get("s154-journal")?.answer?.answer_sections ?? {}).length === 5 &&

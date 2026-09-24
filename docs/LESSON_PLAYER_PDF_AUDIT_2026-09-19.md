@@ -43,6 +43,12 @@ Eski Tema 1 raporundaki “diğer 150 soru kelimesi kelimesine PDF ile aynı” 
 - Basılı s.140 Âşık Atışması akışı zaten QR kaynağı açıkça belirtiyordu; eski rapordaki “uyarı yok” tespiti güncel repo için geçerli değildir.
 - Basılı s.148–149 sanal müze yazma bölümü görsel olarak kontrol edildi; bu iki sayfada karekod bulunmadığından eski rapordaki “karekod uyarısı eklenmeli” önerisi uygulanmadı.
 
+### 2026-09-24 kaynak bağımlılığı ve cevap semantiği düzeltmesi
+
+19 Eylül tarihli karar, altı s.88 sorusunu birlikte `source_limited` saymıştı. Soru kökleri ve gerçek basılı s.88 yeniden incelendiğinde altı sorunun da soru kökünden, genel bilgiden veya öğrencinin gerekçeli kişisel yorumundan cevaplanabildiği görüldü. Bu yüzden `T2-P88-Q01`–`Q06` `question_answer` olarak sınıflandırıldı. Kitabın video izleme yönergesi korunuyor; video kanıtı yalnız izlenmişse ve gerçekten gözlenmişse ekleniyor. 22 Eylül'de altı kaydı topluca `source_limited` yapan sınıflama bu düzeltmeyle geri alındı.
+
+Tema 2'nin güncel answer-bank sayısı 167'dir: `question_answer` 119, `performance_support` 39, `source_limited` 9. Değişiklik; s.88 sınıflandırmasının yanında s.100–101 ve s.117–120 cevaplarının kaynak/yorum sınırlarını ve s.153 yazma geri bildirim sırasını kapsar.
+
 ## Tema 3 — rapor düzeltmesi ve mevcut durum
 
 Eski Tema 3 raporunun açılış bölümü PDF ile uyuşmaz. Basılı s.161 Cahit Sıtkı Tarancı / *Otuz Beş Yaş* değildir; **Hoca Ahmed Yesevî / Dîvân-ı Hikmet** tema eşiğidir. Basılı s.162–163 de raporda anlatıldığı gibi Peyami Safa ağırlıklı bir açılış değildir; yaşam yolu görseli, radyo/mülakat görselleri ve Alev Alatlı–Sehî Beg karşılaştırması bulunur.

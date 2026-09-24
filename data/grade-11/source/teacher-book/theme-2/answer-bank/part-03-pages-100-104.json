@@ -45,8 +45,14 @@
       "printed_page": 100,
       "question_no": "3",
       "prompt_summary": "Eşinin ani kararı yadırgaması ve insanların benzer kararlara tepkisi",
-      "answer": "Eşinin kararı yadırgama sebebi, yirmi yıl önce ölmüş ve bugüne kadar evde hiç bahsi edilmemiş bir oğlun peşinden birdenbire yola çıkmayı dışarıdan bakan biri için kocamışlık, bunaklık veya akıl tutulması gibi görmesidir. İnsanlar alışılmışın dışındaki bu tür ani ve duygusal kararlar karşısında genellikle şaşkınlık, endişe veya alaycı bir direnç gösterir; olayın arkasındaki psikolojik yası ve içsel zorunluluğu kavramakta zorlanırlar.",
-      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 3"
+      "answer": "Sorunun üç yönü metindeki olay, olası yorum ve genel değerlendirme olarak ayrı düşünülebilir.",
+      "guidance": "Eşin metinde açıkça gösterilen tepkisini, bu tepkiye ilişkin olası açıklamayı ve öğrencinin gerçek hayata dair genel değerlendirmesini ayrı tutun. Öğrencinin kişisel deneyimi olduğunu varsaymayın; psikolojik nedeni kesin bilgi gibi sunmak yerine metindeki söz ve davranışlarla gerekçelendirin.",
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 3",
+      "answer_sections": {
+        "Eşinin metinde verdiği tepki": "Eşi, Çordon'un yirmi yıl önce ölmüş ve evde konuşulmamış oğlunun peşinden ansızın yola çıkma kararını yadırgar; bu davranışı yaşlılığa bağlı bunama ya da akıl tutulması gibi görür.",
+        "Metinden çıkarılabilecek olası neden": "Eşi, Çordon'un ilk evliliğinden olan oğlunu hiç görmemiştir; oğlun öldüğünü bilirken Çordon'un şimdi onun yaşadığına inandığını söyleyip yıllar önceki köye gitmek istemesi ona akıl dışı gelebilir. Bu, metindeki durumdan çıkarılabilecek bir açıklamadır; eşin iç dünyasına ilişkin kesin bilgi değildir.",
+        "Benzer kararlara olası tepkiler": "İnsanlar şaşırabilir, kaygılanabilir, destek olabilir veya önce gerekçeyi anlamaya çalışabilir. Hangi tepkinin verileceği kişiye ve duruma göre değişir; öğrenci başka olasılıklar da önerebilir."
+      }
     },
     {
       "question_id": "T2-P100-Q04",
@@ -143,7 +149,8 @@
       "printed_page": 101,
       "question_no": "10",
       "prompt_summary": "Metnin açık/örtük iletileri, zihniyeti, üslubu ve anlatım özellikleri",
-      "answer": "Oğulla Buluşma hikâyesinin yapı, üslup, zihniyet ve ileti boyutlarının kapsamlı tablosu:",
+      "answer": "Aşağıdaki tablo, metinden desteklenebilen tespitler ve örnek yorumlar sunar; özellikle örtük iletiler için kanıta dayalı başka yorumlara da yer verilebilir.",
+      "guidance": "Açık iletiyi metindeki doğrudan olay ve sözlerden ayırın. Örtük ileti önerildiğinde “Bu yorumu metindeki hangi olay, söz veya davranış destekliyor?” diye sorun; gerekçeli alternatif yorumları da kabul edin.",
       "source_locator": "basılı s.101 / PDF s.102 — Metni Anlayalım soru 10",
       "answer_sections": {
         "anlatim_bicimleri": [
@@ -160,9 +167,8 @@
           "Çordon yirmi yıl sonra oğlunun hatırasını aramak için yola çıkmıştır."
         ],
         "ortuk_iletiler": [
-          "Gerçek sevgi, muhatabın onurlu ve ahlaki seçimlerine saygı duymayı gerektirir.",
-          "Savaş yalnızca cephedeki askerleri değil, geride bekleyen anaları ve babaları da ömür boyu yaralar.",
-          "Samimi bir evlat yası aradan ne kadar zaman geçerse geçsin ilk günkü tazeliğini korur."
+          "Örnek yorum: Çordon'un yıllar sonra oğlunun yaşadığı yerlere gitmek istemesi, özlem ve hatıranın uzun süre etkisini koruyabileceğini düşündürür.",
+          "Örnek yorum: Savaşın ardından aile bireylerinin yaşamında süren izler, savaşın etkisinin cephedeki olaylarla sınırlı kalmadığı şeklinde okunabilir."
         ],
         "zihniyet": "II. Dünya Savaşı döneminde Sovyet-Kırgız toplumunun vatan savunması, görev ahlakı, bozkır kültürü ve geleneksel aile değerleri.",
         "uslup": "Sade, içten, psikolojik derinliği olan lirik ve gerçekçi bir anlatım dili."
