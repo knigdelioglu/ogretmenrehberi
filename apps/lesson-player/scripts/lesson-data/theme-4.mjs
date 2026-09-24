@@ -108,6 +108,22 @@ for (const [id, sourceId, answerId] of [
     mimarAnalysisById.get(id)?.answer?.question_id === answerId,
     `Mimar Sinan s.251–255 kanonik kaynak/cevap eşleşmesi: ${id}`);
 }
+const p252SuccessAnswer = mimarAnalysisById.get("s252-q3")?.answer;
+const p252SuccessAlternatives = p252SuccessAnswer?.answer_sections?.["Başka özellikler"];
+assert(
+  p252SuccessAnswer?.answer?.includes("örnek") &&
+    p252SuccessAnswer?.evidence_quotes?.some((quote) =>
+      /bilgim, azmim ve çalışkanlığımla talihimi yenmiştim/i.test(quote)
+    ) &&
+    /metinden hareketle|gerekçeyle/i.test(p252SuccessAlternatives ?? "") &&
+    /başka.*öner/i.test(p252SuccessAlternatives ?? "") &&
+    typeof p252SuccessAlternatives === "string" &&
+    p252SuccessAlternatives.length < 200 &&
+    !/merak|öz disiplin|sorumluluk|iş birliği|hatalardan öğrenme/i.test(
+      p252SuccessAlternatives
+    ),
+  "s.252 başarı özellikleri örnek ve açık uçlu kalmalı; Sinan kanıtı korunmalı, liste tekrarlanmamalı."
+);
 assert(mimarAnalysisById.get("s251-q2a")?.content?.items?.length === 4 &&
   mimarAnalysisById.get("s252-characters")?.content?.items?.length === 3 &&
   mimarAnalysisById.get("s252-characters")?.answer === null &&
