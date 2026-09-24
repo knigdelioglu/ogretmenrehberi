@@ -186,8 +186,9 @@ def main() -> int:
     if len(source_ids) != len(set(source_ids)):
         add(errors, "DUPLICATE_SOURCE_ID", len(source_ids) - len(set(source_ids)))
 
-    if len(answers) != 151:
-        add(errors, "ANSWER_COUNT", f"{len(answers)}!=151")
+    expected_answer_count = freeze_manifest.get("canonical", {}).get("answer_entries")
+    if len(answers) != expected_answer_count:
+        add(errors, "ANSWER_COUNT", f"{len(answers)}!={expected_answer_count}")
     if len(sources) != 129:
         add(errors, "SOURCE_COUNT", f"{len(sources)}!=129")
     if answer_index.get("status") != "COMPLETE_WITH_SOURCE_LIMITED":
@@ -224,8 +225,15 @@ def main() -> int:
             if not entry.get("guidance"):
                 add(errors, "SOURCE_LIMITED_WITHOUT_GUIDANCE", qid)
 
-    if len(source_limited) != 12:
-        add(errors, "SOURCE_LIMITED_COUNT", f"{len(source_limited)}!=12")
+    expected_source_limited_count = freeze_manifest.get("canonical", {}).get(
+        "source_limited_entries"
+    )
+    if len(source_limited) != expected_source_limited_count:
+        add(
+            errors,
+            "SOURCE_LIMITED_COUNT",
+            f"{len(source_limited)}!={expected_source_limited_count}",
+        )
 
     # Detect accidental exact answer reuse.
     answers_by_text: dict[str, list[str]] = defaultdict(list)
@@ -315,11 +323,11 @@ def main() -> int:
     # ÖğretmenOS projection parity and runtime-contract row shape.
     coverage = ogretmenos.get("coverage", {})
     expected_coverage = {
-        "lessons": 7,
-        "lesson_steps": 180,
-        "source_records": 129,
-        "answer_entries": 151,
-        "source_limited_entries": 12,
+        "lessons": freeze_manifest.get("lesson_player", {}).get("lessons"),
+        "lesson_steps": freeze_manifest.get("lesson_player", {}).get("steps"),
+        "source_records": freeze_manifest.get("lesson_player", {}).get("source_records"),
+        "answer_entries": expected_answer_count,
+        "source_limited_entries": expected_source_limited_count,
     }
     if coverage != expected_coverage:
         add(errors, "OGRETMENOS_COVERAGE", coverage)
@@ -329,14 +337,7 @@ def main() -> int:
     if snapshot.get("answers") != answers:
         add(errors, "OGRETMENOS_ANSWER_PAYLOAD_PARITY", "snapshot differs")
     row_counts = ogretmenos.get("row_counts", {})
-    expected_rows = {
-        "canonical_entities": 281,
-        "teacher_guides": 1,
-        "teacher_guide_sections": 7,
-        "teacher_guide_units": 129,
-        "teacher_guide_items": 180,
-        "teacher_guide_item_relations": 331,
-    }
+    expected_rows = (freeze_manifest.get("ogretmenos") or {}).get("row_counts", {})
     if row_counts != expected_rows:
         add(errors, "OGRETMENOS_ROW_COUNTS", row_counts)
 
@@ -389,13 +390,16 @@ def main() -> int:
 
     # EPUB parity: every canonical answer and every rendered teacher field must survive.
     epub_entries, epub_files = epub_sections(args.epub)
-    if set(epub_entries) != set(answer_ids) or len(epub_entries) != 151:
+    if set(epub_entries) != set(answer_ids) or len(epub_entries) != len(answers):
         add(errors, "EPUB_ENTRY_PARITY", {
             "rendered": len(epub_entries),
             "missing": sorted(set(answer_ids) - set(epub_entries)),
             "extra": sorted(set(epub_entries) - set(answer_ids)),
         })
-    if epub_report.get("entries") != 151 or epub_report.get("source_limited") != 12:
+    if (
+        epub_report.get("entries") != len(answers)
+        or epub_report.get("source_limited") != len(source_limited)
+    ):
         add(errors, "EPUB_BUILD_REPORT", epub_report)
 
     for entry in answers:

@@ -119,6 +119,21 @@ assert(
   "Tip–karakter zenginleştirmesi kitapta varmış gibi sunulmamalı."
 );
 
+const s31PredictionCompare = karagozById.get("s31-q6");
+const s31TextCompare = karagozById.get("s31-q7");
+assert(
+  s31PredictionCompare?.layout === "comparison" &&
+    s31PredictionCompare.answer?.answer_sections?.["Okuma öncesi tahmin"] &&
+    s31PredictionCompare.answer?.answer_sections?.["Metni okuduktan sonra"],
+  "s31-q6 tahmin ve okuma sonrası tespitleri karşılaştırmalı alanlarda göstermeli."
+);
+assert(
+  s31TextCompare?.layout === "comparison" &&
+    s31TextCompare.answer?.answer_sections?.Yazıcı &&
+    s31TextCompare.answer?.answer_sections?.["Eskici Abdi"],
+  "s31-q7 Yazıcı ve Eskici Abdi karşılaştırmasını iki yapılandırılmış sütunda göstermeli."
+);
+
 const vocabulary = karagozById.get("s25-q1");
 assert(vocabulary, "s25-q1 bulunamadı.");
 for (const term of ["Dadı", "Esbab", "Murat", "Bendeniz", "Silsile", "İspir"]) {

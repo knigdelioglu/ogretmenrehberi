@@ -398,9 +398,9 @@ Karagöz pilotu tamamlanmış sayılırsa:
 
 - basılı sayfa aralığı: s.12–83
 - ders sayısı: 7
-- ders adımı: 176
+- ders adımı: 180
 - source-index kaydı: 129 / 129
-- answer-bank kaydı: 151 / 151
+- answer-bank kaydı: 154 / 154
 - katalog sırası: basılı kitap sayfa sırası
 - Chrome görsel QA: temsilî ekranlar CI artifact'i olarak üretilir
 

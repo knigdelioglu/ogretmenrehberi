@@ -1285,7 +1285,7 @@
       },
       {
         "id": "s31-q6",
-        "layout": "question",
+        "layout": "comparison",
         "density": "comfortable",
         "reveal_order": [
           "guidance",
@@ -1309,7 +1309,11 @@
           "entry_type": "question_answer",
           "printed_page": 31,
           "prompt_summary": "Okuma öncesi tahminlerle sonrasındaki tespitleri karşılaştırma",
-          "answer": "Örnek olarak okumadan önce 'Yazıcı' başlığından bir yazı işi veya mektup yazma konusu beklenebilir. Metin okunduktan sonra ise Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yaptığı, müşterilerin sözlerini yanlış anlayarak komik durumlara düştüğü ve asıl çatışmanın dil ile iletişim farklılıklarından doğduğu görülür.",
+          "answer": "Örnek karşılaştırma:",
+          "answer_sections": {
+            "Okuma öncesi tahmin": "Başlıktan hareketle yazı işi veya mektup yazma çevresinde gelişen, Karagöz'ün komik durumlara düşeceği bir olay beklenebilir.",
+            "Metni okuduktan sonra": "Karagöz'ün okuma-yazma bilmediği hâlde yazıcılık yaptığı, müşterilerin sözlerini yanlış anlayarak komik durumlara düştüğü ve temel çatışmanın dil ile iletişim farklılıklarından doğduğu görülür."
+          },
           "guidance": "Öğrencinin okuma öncesi tahmini farklı olabilir; önemli olan tahmin ile son tespiti açıkça karşılaştırmasıdır.",
           "source_locator": "basılı s.31 / PDF s.32 — Metni Anlayalım",
           "question_no": "6"
@@ -1341,7 +1345,19 @@
           "entry_type": "question_answer",
           "printed_page": 31,
           "prompt_summary": "Yazıcı ile Eskici Abdi'yi karşılaştırma",
-          "answer": "İki metinde de geçim sıkıntısı yaşayan halk tiplerinin iş bulma çabası ve yanlış anlamalar vardır. Yazıcı'da Karagöz yazıcılık yaparken Eskici Abdi'de Kavuklu eskiciye yamak olacaktır. İki metin de karşılıklı konuşma, halk dili, söz oyunu ve yanlış anlamaya dayalı mizah kullanır. Karagöz-Hacivat ikilisinin orta oyunundaki karşılığı Kavuklu-Pişekâr'dır.",
+          "answer": "Örnek karşılaştırma tablosu:",
+          "answer_sections": {
+            "Yazıcı": {
+              "Ortak yönler": "Geçim sıkıntısı içindeki halk tipinin iş bulma çabası; karşılıklı konuşma, halk dili, söz oyunları ve yanlış anlamaya dayalı mizah.",
+              "İş / olay": "Karagöz yazıcılık yapmaya çalışır.",
+              "Oyun kişilerinin ikilisi": "Karagöz–Hacivat"
+            },
+            "Eskici Abdi": {
+              "Ortak yönler": "Geçim sıkıntısı içindeki halk tipinin iş bulma çabası; karşılıklı konuşma, halk dili, söz oyunları ve yanlış anlamaya dayalı mizah.",
+              "İş / olay": "Kavuklu eskiciye yamak olmaya çalışır.",
+              "Oyun kişilerinin ikilisi": "Kavuklu–Pişekâr"
+            }
+          },
           "source_locator": "basılı s.31 / PDF s.32 — Karşılaştıralım",
           "question_no": "7"
         },
