@@ -38,18 +38,18 @@
       "source_record_id": "T03-S0030",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Karşılaştıralım: s.177'deki Mescid-i Aksa görselini ve yönergeyi kontrol ediniz.",
+      "prompt": "Karşılaştıralım: s.177’deki “Mescid-i Aksa” şiirini ve s.178’deki yönergeyi inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitap 'Aşağıdaki metni okuyarak' diyor; görselde Mescid-i Aksa yer alıyor, ancak karşılaştırılacak ikinci yazılı metin görünmüyor.",
+        "lead": "Basılı s.177’de M. Akif İnan imzalı “Mescid-i Aksa” şiiri, fotoğrafın üzerine basılıdır ve altı dörtlükten oluşur.",
         "sections": [
           {
-            "title": "Görünen kaynak",
-            "body": "Mescid-i Aksa fotoğrafı ve s.178'de Huzur / Mescid-i Aksa karşılaştırma tablosu."
+            "title": "Metin kanıtı",
+            "body": "Şiirin dizelerini ve dörtlük düzenini doğrudan okuyun; tür ve şekil kararını fotoğraftan değil şiirin kendisinden çıkarın."
           },
           {
             "title": "Kaynak sınırı",
-            "body": "Fotoğraftan yazılı bir metnin şairi, türü, edebî dönemi veya üslubu çıkarılamaz."
+            "body": "Kitap şiirin yazılış tarihini veya edebî dönemini vermiyor. Tarih uydurmayın; bu sınırlama içerik, tür, şekil, zihniyet, üslup ve ileti incelemesini engellemez."
           }
         ]
       }
@@ -63,7 +63,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P177-COMP01",
       "content": {
-        "lead": "Önce Huzur sütununu doldurun. Mescid-i Aksa'nın yazılı metni kaynakta görünmediği için o sütunu varsayımla doldurmayın.",
+        "lead": "Her iki metinden birer söz, davranış veya anlatım tercihi seçip yedi ölçütte karşılaştırın; benzerlik ve farklılığı gerekçelendirin. Dönem bilgisi metin kanıtından ayrıdır.",
         "items": [
           "İçerik",
           "Tür",
@@ -95,7 +95,7 @@
           },
           {
             "title": "Şekil",
-            "body": "Düzyazı. Şiirle kıyas yapmadan önce karşı metni görmek gerekir."
+            "body": "Düzyazı; şiirdeki dize ve dörtlük düzeninden farklı olarak paragraf, betimleme ve diyaloglarla ilerler."
           }
         ]
       }
@@ -105,18 +105,22 @@
       "source_record_id": "T03-S0030",
       "layout": "comparison",
       "density": "compact",
-      "prompt": "Huzur sütunu: dönem ve zihniyet farkını belirleyiniz.",
+      "prompt": "Huzur ile Mescid-i Aksa: dönem bilgisini zihniyet çıkarımından ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dönem tarihsel konum, zihniyet ise metnin insan ve değerler dünyasına bakışıdır.",
+        "lead": "Dönem metnin tarihsel/edebî konumudur; zihniyet kişi ve toplulukların değer, inanç ve dünyaya bakışının söz ve davranışlara yansımasıdır. Zihniyet yargısını metinden kanıtla destekleyin.",
         "sections": [
           {
-            "title": "Dönem",
-            "body": "Cumhuriyet Dönemi Türk edebiyatı."
+            "title": "Huzur — dönem",
+            "body": "Karşılaştırma sayfası dönem bilgisi vermez. Dış bibliyografik bağlam kullanılacaksa ilk yayın yılı 1949 olarak ayrı belirtilebilir; bu, okunan kesitteki olaylarla karıştırılmaz."
           },
           {
-            "title": "Zihniyet",
-            "body": "Modernleşme sürecinde tarihî/kültürel mirasla yeni hayat arasında kimlik arayışı."
+            "title": "Huzur — zihniyet",
+            "body": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin; örneğin “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir-kimlik ilişkisiyle gerekçelendirin."
+          },
+          {
+            "title": "Mescid-i Aksa — zihniyet",
+            "body": "İlk kıble ve peygamberler hatırası ortak inanç hafızasına; konuşan mekânın yalnızlık anlatımı dayanışma beklentisine işaret eder. Şiirin yazılış tarihini kaynakta olmadığı için dönem etiketiyle doldurmayın."
           }
         ]
       }
@@ -126,18 +130,22 @@
       "source_record_id": "T03-S0030",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Huzur sütunu: üslup ve iletiyi ayrı yazınız.",
+      "prompt": "İki metnin üslup ve iletisini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Üslup 'nasıl anlatılmış', ileti ise 'okurda hangi düşünce uyandırılıyor' sorusuna cevap verir.",
+        "lead": "Üslup “nasıl anlatılmış?”, ileti ise “metnin hangi düşünceyi öne çıkardığı?” sorusuna cevap verir; her iki cevap için metinden dayanak gösterin.",
         "sections": [
           {
-            "title": "Üslup",
-            "body": "Betimleyici ve şiirsel; musiki/tarih söz varlığıyla düşünce ve ruh hâli iç içe."
+            "title": "Huzur — üslup ve ileti",
+            "body": "Betimleyici, düşünsel ve şiirsel düzyazıda şehir/musiki tasvirleri Mümtaz’ın iç dünyasıyla birleşir. Şehir ve kültür mirasıyla bağ kurmanın kimliği anlamaya katkısı öne çıkar."
           },
           {
-            "title": "İleti",
-            "body": "Yeni bir hayat kurarken geçmişle ve kültürel kimlikle ilişki sürdürülmelidir."
+            "title": "Mescid-i Aksa — üslup ve ileti",
+            "body": "Mekânın çocuk gibi konuşturulması, tekrar ve doğrudan sesleniş lirik bir yakarış kurar. Kutsal mekânı hatırlama ve onunla dayanışma çağrısı çıkarılabilir."
+          },
+          {
+            "title": "Karşılaştırma",
+            "body": "İkisinde de kültürel/dinî hafıza önemlidir; Huzur düşünsel anlatı ve şehir betimlemesiyle, şiir kişileştirme ve doğrudan çağrıyla farklılaşır."
           }
         ]
       }

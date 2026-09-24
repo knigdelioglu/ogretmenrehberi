@@ -161,6 +161,13 @@ for (const id of ["s218-q1","s219-q2","s219-q3","s219-q4","s219-q5","s220-q3"]) 
   assert(direnisinById.get(id)?.answer?.entry_type === "source_limited",
     `QR içeriği görülmeden kesin cevap verilmemeli: ${id}`);
 }
+assert(direnisinById.get("s216-plan")?.content?.items?.some(item => item.includes("İlk dinleme")) &&
+  direnisinById.get("s216-listen")?.content?.items?.some(item => item.includes("gözlem notu")) &&
+  direnisinById.get("s219-q2")?.content?.items?.includes("Makul alternatif yorum") &&
+  direnisinById.get("s219-q4")?.content?.items?.some(item => item.startsWith("Zihniyet —")) &&
+  direnisinById.get("s219-q4")?.answer?.entry_type === "source_limited" &&
+  direnisinById.get("s219-q4")?.answer?.answer_sections?.zihniyet?.includes("kayıttaki dayanak"),
+  "Dinleme akışı ilk/ikinci dinlemeyi, gözlem-çıkarım-dayanak ve alternatif yorumu ayırmalı.");
 for (const step of direnisin.steps) {
   assert(step.source.source_status === "VERIFIED",
     `s.215–220 ders kitabı kaynak doğrulaması: ${step.source.source_record_id}`);
@@ -174,6 +181,9 @@ assert(direnisinAnalysis && direnisinAnalysis.printed_page_range === "221-224" &
   "Direnişin Ustaları s.221–224 17 ekran / 12 kaynak / 12 cevap içermeli.");
 const analysisById = new Map(direnisinAnalysis.steps.map(step => [step.id, step]));
 assert(analysisById.size === 17, "Radyo tiyatrosu çözümleme ekran kimlikleri benzersiz olmalı.");
+assert(analysisById.get("s221-work-method")?.content?.lead?.includes("gözlem notu") &&
+  analysisById.get("s221-work-method")?.content?.sections?.some(section => section.body.includes("çıkarım")),
+  "s.221 gözlem notunu yapı çıkarımından ayırmalı ve doğrulamayı korumalı.");
 for (const [id, sourceId, answerId] of [
   ["s221-q1","T03-S0112","T3-P221-Q01"],
   ["s221-q2","T03-S0113","T3-P221-Q02"],
@@ -489,12 +499,25 @@ assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
   huzur177ById.get("s177-q14")?.answer?.answer_sections?.ortuk_iletiler?.length===3,
   "s.177 14. soruda açık/örtük iletiler ayrıştırılmalı.");
 assert(huzur177ById.get("s177-source-photo")?.answer === null &&
-  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("ikinci yazılı metin görünmüyor"),
-  "Mescid-i Aksa fotoğrafı yazılı metinmiş gibi sunulmamalı.");
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("altı dörtlük") &&
+  !huzur177ById.get("s177-source-photo")?.content?.lead?.includes("ikinci yazılı metin görünmüyor"),
+  "Basılı s.177 şiiri görsel üstündeki gerçek metin olarak tanınmalı.");
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
-  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
-  Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 8,
-  "Huzur yedi ölçütü çözülmeli, görünmeyen ikinci metin source_limited kalmalı.");
+  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "question_answer" &&
+  Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 7 &&
+  ["İçerik","Tür","Şekil","Dönem","Zihniyet","Üslup","İleti"].every(key => {
+    const section = huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.[key];
+    return section?.Huzur && section?.["Mescid-i Aksa"] && section?.["Benzerlik ve fark"];
+  }) &&
+  huzur177ById.get("s178-compare-task")?.answer?.evidence_quotes?.some(q => q.includes("İlk Kıblesi")) &&
+  huzur177ById.get("s178-compare-task")?.answer?.source_locator?.includes("altı dörtlük"),
+  "Huzur ve Mescid-i Aksa yedi ölçütte, iki metin ve kısa kanıtlarla karşılaştırılmalı.");
+assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("benzerlik") &&
+  huzur177ById.get("s178-huzur-context")?.content?.lead?.includes("Dönem metnin") &&
+  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa")),
+  "Dönem zihniyetten ayrılmalı; iki metnin zihniyet çıkarımı kanıta bağlanmalı.");
+assert(huzur177ById.get("s177-source-photo")?.content?.sections?.some(section => section.body.includes("tür ve şekil kararını fotoğraftan değil")),
+  "Şiirin türü ve şekli görselden değil şiir metninden belirlenmeli.");
 for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]){
   assert(huzur177ById.get(id)?.answer === null &&
     huzur177ById.get(id)?.source?.source_record_id === "T03-S0030",

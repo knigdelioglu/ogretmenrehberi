@@ -33,24 +33,56 @@
     },
     {
       "question_id": "T3-P177-COMP01",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Kitapta Huzur metni ve karşılaştırma tablosu bulunuyor; s.177'de Mescid-i Aksa görseli yer alsa da karşılaştırılacak ikinci yazılı metin görünmüyor. Huzur'a ait yedi ölçüt belirlenebilir, ikinci metnin içeriği, türü, dönemi, zihniyeti, üslubu ve iletisi kaynak görülmeden kesinleştirilemez.",
-      "guidance": "Görseli ikinci bir şiir veya yazı gibi değerlendirmeyin. Öğretmen ikinci yazılı metni ayrıca sağlarsa öğrenciler aynı yedi ölçütle karşılaştırmayı tamamlayabilir.",
-      "source_locator": "basılı s.177-178 / PDF s.178-179 — Mescid-i Aksa görseli, Huzur karşılaştırma tablosu; ikinci yazılı metin bulunamadı",
+      "answer": "Aşağıdaki örnek, iki metnin yedi ölçütteki benzerlik ve farklılıklarını gösterir. Huzur için ders kitabında okunan kesit, şiir için basılı s.177’deki dizeler temel alınmıştır; dönem hücresindeki bağlam ayrıca belirtilmiştir.",
+      "source_locator": "basılı s.177-178 / PDF s.178-179 — “Mescid-i Aksa” şiiri (altı dörtlük) ve Karşılaştıralım tablosu",
       "answer_sections": {
-        "Huzur — İçerik": "Mümtaz ve Nuran çevresinde İstanbul, musiki, geçmiş ve kimlik ilişkisi.",
-        "Huzur — Tür": "Roman.",
-        "Huzur — Şekil": "Düzyazı.",
-        "Huzur — Dönem": "Cumhuriyet Dönemi Türk edebiyatı.",
-        "Huzur — Zihniyet": "Modernleşme sürecinde geçmişle yeni hayat arasında kimlik arayışı.",
-        "Huzur — Üslup": "Betimleyici, şiirsel, düşünsel ve psikolojik.",
-        "Huzur — İleti": "Geçmişle bağ kurarak yeni bir hayat ve kimlik oluşturma gereği.",
-        "Mescid-i Aksa": "Karşılaştırma yapılabilmesi için ikinci metnin ayrıca görülmesi gerekir."
+        "İçerik": {
+          "Huzur": "Okunan kesitte Mümtaz ile Nuran’ın İstanbul ve Boğaz gezileri; eski musiki, tarihî çevre ve şehrin bugünkü hâli üzerine düşünceleri öne çıkar.",
+          "Mescid-i Aksa": "Konuşan şiir kişisi Mescid-i Aksa’yı ağlayan ve yalnız kalan bir çocuk gibi kişileştirir; ilk kıble oluşunu, geçmişteki müminleri ve yeniden kavuşma özlemini dile getirir.",
+          "Benzerlik ve fark": "İki metinde de kutsal/tarihî mekânlarla kültürel hafıza önemlidir. Huzur İstanbul’u ve kişilerin şehirle bağını anlatı içinde işler; şiir Mescid-i Aksa’yı konuşturup doğrudan özlem ve yardım çağrısı kurar."
+        },
+        "Tür": {
+          "Huzur": "Romanın ders kitabında okunan düzyazı kesiti.",
+          "Mescid-i Aksa": "Lirik söyleyişli şiir; anlatan kişi mekânı konuşturur.",
+          "Benzerlik ve fark": "İki metin de edebî metindir; biri roman anlatısının parçası, diğeri bağımsız şiirdir."
+        },
+        "Şekil": {
+          "Huzur": "Düzyazı; olay ve düşünceler paragraf, betimleme ve diyaloglarla ilerler.",
+          "Mescid-i Aksa": "24 dizeden oluşan altı dörtlük; düzenli hece kalıbına bağlanmayan dize uzunlukları, dörtlükler ve tekrar eden ses örgüsüyle kurulur.",
+          "Benzerlik ve fark": "Huzur paragraf ve anlatı akışıyla, şiir dize ve dörtlük düzeniyle kurulur."
+        },
+        "Dönem": {
+          "Huzur": "Kitabın karşılaştırma sayfasında dönem bilgisi verilmez. Kitap dışı bibliyografik bağlam: roman ilk kez 1949’da yayımlanmıştır; bu nedenle Cumhuriyet Dönemi Türk romanı içinde değerlendirilir (TDV İslâm Ansiklopedisi, “Huzur”: https://islamansiklopedisi.org.tr/huzur--tanpinar).",
+          "Mescid-i Aksa": "Kitap şairi M. Akif İnan olarak gösterir; şiirin yazılış tarihi veya edebî dönemini belirtmez. Bu kaynaklarla kesin dönem/tarih atamayın.",
+          "Benzerlik ve fark": "Dönem bilgisi metnin içeriğinden çıkarılmaz. Huzur için kitap dışı yayın bilgisi ayrılmıştır; şiirin tarihi ise doğrulanmadığından açık bırakılmıştır."
+        },
+        "Zihniyet": {
+          "Huzur": "İstanbul’un tarihî ve dinî mirası ile bugünkü toplumsal gerçekliği birlikte görülür; Mümtaz’ın “İstanbul’u tanımadıkça kendimizi bulamayız” sözü, şehir hafızasıyla kimlik arayışını bağlar.",
+          "Mescid-i Aksa": "İlk kıble ve peygamberler hatırası ortak inanç hafızasının değerini; konuşan mekânın yalnızlığı ise Müslüman topluluğun uzaklığı karşısındaki duyguyu yansıtır.",
+          "Benzerlik ve fark": "İki metin de geçmiş/kültür mirasını önemser. Huzur bunu İstanbul ve musiki çevresindeki farklı kişi görüşleriyle tartışırken şiir kutsal mekânın ağzından ümmet dayanışması ve kavuşma isteğini öne çıkarır."
+        },
+        "Üslup": {
+          "Huzur": "Betimleyici ve düşünsel düzyazı; şehir manzaraları, musiki ve Mümtaz’ın iç dünyası iç içe geçer.",
+          "Mescid-i Aksa": "Kişileştirme, benzetme, seslenme ve tekrar kullanılır. Mekânın ağlayan bir çocuk olarak sunulması şiirin lirik, yakarışlı tonunu kurar.",
+          "Benzerlik ve fark": "İki metinde de imge ve duygusal çağrışım vardır; Huzur bunu anlatıcı betimlemeleri ve düşünce akışıyla, şiir konuşan mekân ve doğrudan seslenişle sağlar."
+        },
+        "İleti": {
+          "Huzur": "Şehir ve kültür mirasıyla ilişki, kişinin kendini ve ortak kimliğini anlamasına katkı verir; bunu İstanbul’a dair açık yargı ve Mümtaz’ın geçmişle kurduğu bağ destekler.",
+          "Mescid-i Aksa": "Kutsal mekânın yalnızlığına kayıtsız kalmama, ortak inanç hafızasını hatırlama ve dayanışma çağrısı çıkarılabilir.",
+          "Benzerlik ve fark": "İki metin de okuru kültürel/dinî mirasla bağ kurmaya çağırır; Huzur’da ileti şehir ve kimlik üzerine düşünmeye, şiirde ise Mescid-i Aksa’yla dayanışmaya yönelir."
+        }
       },
-      "explanation": "Kitabın s.177'sinde 'Aşağıdaki metni okuyarak' denmesine rağmen bu başlığın altında yalnız Mescid-i Aksa fotoğrafı var; s.178'de iki metin için karşılaştırma tablosu yer alıyor. Fotoğraftan görsel gözlem yapılabilir, ancak fotoğraf bir şiirin türünü, üslubunu veya dönemini doğrulamaz. Rehber bunu ikinci metin varmış gibi tamamlamaz."
+      "explanation": "Karşılaştırma tablosu şiirin dizelerini temel alır; fotoğraf şiir için görsel bağlam sağlar, fakat tür ve şekil altı dörtlük ile dize yapısından belirlenir. Dönem ölçütü metin özelliklerinden değil bibliyografik bilgiden gelir: Huzur’un 1949 ilk yayım bilgisi kitap dışı bağlam olarak ayrılmıştır; şiirin yazılış tarihi/dönemi kitapta verilmediği için atanmamıştır. Yorumlanan Huzur içeriği de burada okunan kesitlerle sınırlıdır.",
+      "evidence_quotes": [
+        "İstanbul’u tanımadıkça kendimizi bulamayız.",
+        "Bir çocuk gibiydi",
+        "İlk Kıblesi benim",
+        "Kucaklasın beni İslâm"
+      ]
     },
     {
       "question_id": "T3-P178-PERF01",
@@ -174,11 +206,13 @@
       "printed_page": 182,
       "question_no": "Fark Edelim",
       "prompt_summary": "s.182 iki metinden yazar-eser ilişkisine çıkarım",
-      "answer": "Yazar, kendi hayatından ve çevresinden aldığı insanları, mekânları ve kültürel ilgileri doğrudan kopyalamak yerine kurmaca içinde dönüştürür. Tanpınar'ın İstanbul, musiki, tarih ve modernleşme meselelerine ilgisi Huzur'un konu ve düşünce dünyasına yansırken; gerçek kişiler yeni özellikler, ilişkiler ve olaylar kazanır. Bu nedenle eser yazarın hayatından izler taşır fakat biyografisinin birebir tekrarı değildir.",
+      "answer": "İlk parçada Mümtaz’ın çocukluğu ve İhsan–Macide’nin hayatındaki yeri anlatılır; Kaplan’ın değerlendirmesi ise Huzur’daki gerçek hayat izlerinin kurmacada değiştirildiğini açıklar. Bu iki dayanak, yazarın yaşantı ve çevresinden esinlenebildiğini fakat kişileri, ilişkileri ve koşulları romana aktarırken dönüştürdüğünü gösterir.",
       "evidence_quotes": [
+        "İhsan, onun hem babası, hem hocası idi.",
         "hayattan almış olduğu bütün şahısları az çok değiştirmiş"
       ],
-      "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, yazar–eser sorusu"
+      "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, yazar–eser sorusu",
+      "guidance": "Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun."
     },
     {
       "question_id": "T3-P183-Q02",

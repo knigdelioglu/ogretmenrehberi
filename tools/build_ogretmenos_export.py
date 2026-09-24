@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Build a lossless Theme 1 Teacher Guide projection bundle for ÖğretmenOS.
+"""Build a lossless theme-specific Teacher Guide projection bundle for ÖğretmenOS.
 
 The bundle mirrors the generic Teacher Guide runtime contract used by
 knigdelioglu/OgretmenOS (guide/section/unit/item/relation rows) without
 materializing a course_runtime.sqlite in this repository.
 
 Input:
-- canonical Theme 1 source-index + answer-bank
+- canonical source-index + answer-bank for the selected theme
 - generated Lesson Player catalog
 
 Output:
@@ -22,7 +22,6 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-THEME_ROOT = ROOT / "data/grade-11/source/teacher-book/theme-1"
 
 
 def compact(value: Any) -> str:
@@ -39,11 +38,11 @@ def sha256_json(value: Any) -> str:
     return hashlib.sha256(compact(value).encode("utf-8")).hexdigest()
 
 
-def load_answers() -> tuple[dict[str, Any], list[dict[str, Any]]]:
-    index = json.loads((THEME_ROOT / "answer-bank.json").read_text(encoding="utf-8"))
+def load_answers(theme_root: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    index = json.loads((theme_root / "answer-bank.json").read_text(encoding="utf-8"))
     entries: list[dict[str, Any]] = []
     for part in index["parts"]:
-        payload = json.loads((THEME_ROOT / part["path"]).read_text(encoding="utf-8"))
+        payload = json.loads((theme_root / part["path"]).read_text(encoding="utf-8"))
         entries.extend(payload.get("entries", []))
     if len(entries) != index["coverage"]["entry_count"]:
         raise SystemExit("ANSWER_COUNT_MISMATCH")
@@ -53,8 +52,8 @@ def load_answers() -> tuple[dict[str, Any], list[dict[str, Any]]]:
     return index, entries
 
 
-def load_sources() -> tuple[dict[str, Any], list[dict[str, Any]]]:
-    payload = json.loads((THEME_ROOT / "source-index.json").read_text(encoding="utf-8"))
+def load_sources(theme_root: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    payload = json.loads((theme_root / "source-index.json").read_text(encoding="utf-8"))
     records = payload.get("records", [])
     ids = [record["source_record_id"] for record in records]
     if len(ids) != len(set(ids)):
@@ -64,6 +63,7 @@ def load_sources() -> tuple[dict[str, Any], list[dict[str, Any]]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--theme", type=int, choices=[1, 2, 3, 4], default=1)
     parser.add_argument(
         "--lesson-catalog",
         type=Path,
@@ -72,31 +72,33 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "dist/ogretmenos/theme-1-guide-projection.json",
     )
     args = parser.parse_args()
 
-    answer_index, answers = load_answers()
-    source_index, sources = load_sources()
+    theme_id = f"TEMA_0{args.theme}"
+    output_path = args.output or ROOT / f"dist/ogretmenos/theme-{args.theme}-guide-projection.json"
+    theme_root = ROOT / f"data/grade-11/source/teacher-book/theme-{args.theme}"
+    answer_index, answers = load_answers(theme_root)
+    source_index, sources = load_sources(theme_root)
     all_lessons = json.loads(args.lesson_catalog.read_text(encoding="utf-8"))
     lessons = [
         lesson
         for lesson in all_lessons
-        if lesson.get("theme_id") == "TEMA_01"
+        if lesson.get("theme_id") == theme_id
         or (
             lesson.get("theme_id") is None
-            and str(lesson.get("lesson_id", "")).startswith("T11-T01-")
+            and str(lesson.get("lesson_id", "")).startswith(f"T11-T{args.theme:02d}-")
         )
     ]
 
     answer_by_id = {entry["question_id"]: entry for entry in answers}
     source_by_id = {record["source_record_id"]: record for record in sources}
 
-    if len(lessons) != 7:
-        raise SystemExit(f"LESSON_COUNT_MISMATCH:{len(lessons)}!=7")
+    if not lessons:
+        raise SystemExit(f"LESSON_COUNT_MISMATCH:{len(lessons)}")
 
     canonical_entities = [
-        {"entity_type": "theme", "entity_id": "TEMA_01"},
+        {"entity_type": "theme", "entity_id": theme_id},
         *[
             {"entity_type": "teacher_guide_source", "entity_id": source_id}
             for source_id in sorted(source_by_id)
@@ -107,13 +109,13 @@ def main() -> int:
         ],
     ]
 
-    guide_id = "TDE_11:TEMA_01:OGRETMEN_REHBERI"
+    guide_id = f"TDE_11:{theme_id}:OGRETMEN_REHBERI"
     guides = [
         {
             "guide_id": guide_id,
             "course_id": "TDE_11",
             "scope_type": "theme",
-            "scope_id": "TEMA_01",
+            "scope_id": theme_id,
             "title": answer_index["theme_title"],
             "content_status": "VERIFIED",
             "schema_version": "1.0.0",
@@ -324,7 +326,7 @@ def main() -> int:
         "document_type": "OGRETMENOS_TEACHER_GUIDE_PROJECTION_BUNDLE",
         "runtime_contract": "OgretmenOS/docs/TEACHER_GUIDE_RUNTIME_CONTRACT.md",
         "course_id": "TDE_11",
-        "theme_id": "TEMA_01",
+        "theme_id": theme_id,
         "validation_status": "PASS",
         "content_fingerprint": f"sha256:{fingerprint}",
         "coverage": {
@@ -356,8 +358,8 @@ def main() -> int:
         },
     }
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(
         json.dumps(bundle, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -365,7 +367,7 @@ def main() -> int:
         json.dumps(
             {
                 "status": "PASS",
-                "output": str(args.output),
+                "output": str(output_path),
                 "coverage": bundle["coverage"],
                 "row_counts": bundle["row_counts"],
                 "content_fingerprint": bundle["content_fingerprint"],

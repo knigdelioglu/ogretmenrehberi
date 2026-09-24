@@ -33,6 +33,28 @@ THEME_CONFIG = {
             (74, 78, "Edebiyat Atölyesi-2 · Yazma / E-posta", "yazma"),
             (79, 83, "Tema Sonu Ölçme ve Değerlendirme", "olcme-degerlendirme"),
         ],
+    },
+    3: {
+        "theme_id": "TEMA_03",
+        "theme_slug": "theme-3",
+        "title": "Yaşamın İzinde",
+        "subtitle": "11. Sınıf Türk Dili ve Edebiyatı · Öğretmen Rehberi",
+        "blocks": [
+            (162, 164, "Temaya Başlarken", "temaya-baslarken"),
+            (165, 174, "Huzur · Okuma", "huzur-okuma"),
+            (175, 178, "Huzur · Anlama ve Karşılaştırma", "huzur-karsilastirma"),
+            (179, 181, "Huzur · Okuma Çemberi", "huzur-okuma-cemberi"),
+            (182, 185, "Huzur · Hayat ve Kurmaca", "huzur-hayat-kurmaca"),
+            (186, 193, "Huzur · Yapı, Üslup ve Değerlendirme", "huzur-yapi-uslup"),
+            (194, 201, "Mehmet Âkif Ersoy · Biyografi", "akif-biyografi"),
+            (202, 205, "Biyografi · Çözümleme", "biyografi-cozumleme"),
+            (206, 209, "Usûlî · Tezkire", "usuli-tezkire"),
+            (210, 214, "Kemal Tahir · Mülakat", "kemal-tahir-mulakat"),
+            (215, 220, "Direnişin Ustaları · Dinleme ve Anlama", "direnisin-ustalari"),
+            (221, 224, "Direnişin Ustaları · Çözümleme", "direnisin-cozumleme"),
+            (225, 229, "Radyo Diyaloğu · Yazma", "radyo-diyalogu-yazma"),
+            (230, 235, "Tema Sonu Ölçme ve Değerlendirme", "olcme-degerlendirme"),
+        ],
     }
 }
 
@@ -295,7 +317,7 @@ def build(theme_no: int, out_path: Path):
 <main class="cover">
   <div class="kicker">ÖĞRETMEN REHBERİ</div>
   <h1>{e(cfg["title"])}</h1>
-  <div class="theme">1. Tema</div>
+  <div class="theme">{theme_no}. Tema</div>
   <div>{e(cfg["subtitle"])}</div>
   <div class="meta">{len(entries)} rehber kaydı · Basılı s. {e(index["coverage"]["printed_page_range"])}</div>
 </main>'''
@@ -304,7 +326,7 @@ def build(theme_no: int, out_path: Path):
     intro_body = f'''
 <h1 id="intro-top">Bu rehber nasıl kullanılır?</h1>
 <div class="notice">
-  <p>Bu EPUB, Tema 1 için oluşturulan kanonik öğretmen rehberi verisinden üretilmiştir.</p>
+  <p>Bu EPUB, {theme_no}. Tema için oluşturulan kanonik öğretmen rehberi verisinden üretilmiştir.</p>
   <p><strong>Soru / cevap</strong> kayıtlarında sınıfta doğrudan kullanılabilir cevap; <strong>Performans desteği</strong> kayıtlarında tek doğru iddiası taşımayan örnek plan veya ürün; <strong>Kaynak gerekli</strong> kayıtlarında ise QR/video gibi harici kaynak görülmeden kesinleştirilemeyen noktalar gösterilir.</p>
 </div>
 <p>Yönlendirme ve açıklamalar yalnız gerektiği yerde bulunur. Metinden alınması yararlı olan kısa ifadeler <strong>kalın</strong> gösterilir. Soru başlıkları ders kitabındaki soruların kısa özetidir; kitabın tam soru metninin yerine geçmez.</p>
@@ -388,11 +410,11 @@ def build(theme_no: int, out_path: Path):
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bookid" xml:lang="tr">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:identifier id="bookid">{e(uid)}</dc:identifier>
-    <dc:title>Öğretmen Rehberi · 1. Tema · {e(cfg["title"])}</dc:title>
+    <dc:title>Öğretmen Rehberi · {theme_no}. Tema · {e(cfg["title"])}</dc:title>
     <dc:language>tr</dc:language>
     <dc:creator>Öğretmen Rehberi</dc:creator>
     <dc:subject>Türk Dili ve Edebiyatı</dc:subject>
-    <dc:description>11. sınıf Tema 1 öğretmen rehberi. {len(entries)} rehber kaydı.</dc:description>
+    <dc:description>11. sınıf Tema {theme_no} öğretmen rehberi. {len(entries)} rehber kaydı.</dc:description>
     <meta property="dcterms:modified">{modified}</meta>
   </metadata>
   <manifest>{"".join(manifest_items)}</manifest>
@@ -415,7 +437,7 @@ def build(theme_no: int, out_path: Path):
     ncx = f'''<?xml version="1.0" encoding="UTF-8"?>
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
   <head><meta name="dtb:uid" content="{e(uid)}"/></head>
-  <docTitle><text>Öğretmen Rehberi · 1. Tema · {e(cfg["title"])}</text></docTitle>
+  <docTitle><text>Öğretmen Rehberi · {theme_no}. Tema · {e(cfg["title"])}</text></docTitle>
   <navMap>{"".join(ncx_points)}</navMap>
 </ncx>'''
     files["OEBPS/toc.ncx"] = ncx.encode("utf-8")
@@ -468,10 +490,11 @@ def validate(path: Path, expected_entries: int):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--theme", type=int, default=1, choices=sorted(THEME_CONFIG))
-    parser.add_argument("--output", type=Path, default=ROOT / "dist" / "Ogretmen-Rehberi-Tema-1-Kindle.epub")
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    report = build(args.theme, args.output)
-    report_path = args.output.with_suffix(".build.json")
+    output = args.output or ROOT / "dist" / f"Ogretmen-Rehberi-Tema-{args.theme}-Kindle.epub"
+    report = build(args.theme, output)
+    report_path = output.with_suffix(".build.json")
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

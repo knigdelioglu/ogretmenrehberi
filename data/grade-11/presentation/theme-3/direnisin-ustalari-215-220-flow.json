@@ -93,9 +93,10 @@
       "content": {
         "lead": "QR'deki asıl kayıt ders kitabından açılır. Oyunun sesini dinlemeden olay, karakter veya tarih ayrıntısı kesinleştirilmez.",
         "items": [
-          "İlk dinlemede olayın geçtiği bağlamı ve kişileri not edin.",
-          "İkinci dinlemede belirgin bir diyalog ile ses/müzik/efekt kullanımını kaydedin.",
-          "Dinleme öncesi tahmininizin hangi noktada doğrulandığını veya değiştiğini açıklayın."
+          "İlk dinlemede gerçekten duyduğunuz sözleri ve fark ettiğiniz ses/davranış ipuçlarını kısa gözlem notu olarak yazın.",
+          "İkinci dinlemede önemli bir repliği ve varsa ses, müzik veya efekt ipucunu doğrulayın.",
+          "Gözlem notundan olası duygu, amaç veya düşünce çıkarın; çıkarımınızı kayıttaki dayanakla açıklayın.",
+          "Aynı söz ya da davranışın başka bir makul yorumunu da düşünün; ilk tahmininizin nerede doğrulandığını/değiştiğini belirtin."
         ],
         "note": "Kitabın s.216 Gözlem Formu ölçütlerinin tam içeriği sayfada bulunmuyor; formun ayrıntıları uydurulmaz."
       }
@@ -211,12 +212,14 @@
       "prompt": "Metni Anlayalım 2 — Kahramanların davranışlarından duygu ve düşüncelerini çıkarınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce kayıtta duyulan söz ve davranışı belirleyin, sonra gerekçeli çıkarım yapın.",
+        "lead": "Önce kayıtta tam olarak ne duyduğunuzu belirtin; ardından bundan çıkardığınız duygu veya düşünceyi dayanaklandırın.",
         "items": [
-          "Kişi",
-          "Duyulan söz / davranış",
+          "Kişi (yalnız kayıtta doğrulanırsa)",
+          "Duyulan söz / gözlenen davranış",
+          "Gözlem notu",
           "Olası duygu / düşünce",
-          "Metindeki gerekçe"
+          "Kayıttaki dayanak",
+          "Makul alternatif yorum"
         ]
       }
     },
@@ -241,13 +244,14 @@
       "prompt": "Metni Anlayalım 4 — Metni dönem, zihniyet, üslup, ileti ve tür bakımından inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın beş sınıflandırma alanını birbirine karıştırmadan doldurun. Tür bilgisi verilmiştir; diğer alanlar dinlemeye dayanır.",
+        "lead": "Dönem metnin tarihsel/edebî konumudur; zihniyet kişilerin değer ve kabullerinin söz/davranışlara yansıması; ileti ise metinden çıkarılan düşüncedir. Önce duyulan kanıtı not edin, sonra sınıflandırın.",
         "items": [
-          "Dönem",
-          "Zihniyet",
-          "Üslup",
-          "İleti",
-          "Tür"
+          "Dönem — kayıttan tarih, kişi, yer veya olay ipucu",
+          "Zihniyet — duyulan söz/davranış + olası değer/kabul + kayıt dayanağı",
+          "Üslup — diyalog, söz varlığı, tonlama, ritim ve ses kullanımı",
+          "İleti — metinden çıkarılan düşünce + dayanak",
+          "Tür — kaynakta verilen bilgi: radyo tiyatrosu",
+          "Alternatif yorum — aynı kanıt başka nasıl okunabilir?"
         ]
       }
     },

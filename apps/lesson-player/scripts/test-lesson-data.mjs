@@ -52,6 +52,27 @@ for (const themeNo of [1, 2, 3, 4]) {
   manifestAnswerTotal += manifestTheme.answer_bank_entries;
   manifestSourceTotal += manifestTheme.source_records;
 }
+const theme3Index = JSON.parse(fs.readFileSync(
+  path.join(teacherBookRoot, "theme-3/answer-bank.json"), "utf8"
+));
+const theme3Entries = theme3Index.parts.flatMap((part) => {
+  const sourcePath = path.join(teacherBookRoot, "theme-3", part.path);
+  return JSON.parse(fs.readFileSync(sourcePath, "utf8")).entries;
+});
+const theme3Types = theme3Entries.reduce((counts, entry) => {
+  counts[entry.entry_type] = (counts[entry.entry_type] ?? 0) + 1;
+  return counts;
+}, {});
+assert(theme3Entries.length === 147 &&
+  theme3Types.question_answer === 83 &&
+  theme3Types.performance_support === 44 &&
+  theme3Types.source_limited === 20,
+  "Tema 3 parça kayıtları kanonik dağılımı ve düzeltilmiş source-limited sayısını vermeli.");
+const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
+assert(theme3Compare?.entry_type === "question_answer" &&
+  theme3Compare.source_locator.includes("altı dörtlük") &&
+  Object.keys(theme3Compare.answer_sections ?? {}).length === 7,
+  "T3-P177-COMP01 source-index üzerinden yedi ölçütlü normal cevap olarak korunmalı.");
 assert(
   teacherBookManifest.totals.answer_bank_entries === manifestAnswerTotal &&
     teacherBookManifest.totals.source_records === manifestSourceTotal,

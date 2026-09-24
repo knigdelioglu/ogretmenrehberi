@@ -39,19 +39,19 @@
       "prompt": "Çalışma kâğıdı — Yapı unsurları için dinleme kanıtı bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İlk dinlemede gözden kaçırdığınız unsurları ikinci dinlemede doğrulayın.",
+        "lead": "İlk dinlemede duyduğunuz söz ve sesleri gözlem notu olarak kaydedin; ikinci dinlemede ayrıntıları doğrulayın, sonra yapı çıkarımınızı kanıtla kurun.",
         "sections": [
           {
             "title": "Kim, nerede, ne zaman?",
-            "body": "Kişi, mekân ve zamanı diyalog veya ses ipuçlarıyla belirleyin."
+            "body": "Kişi, mekân ve zamanı yalnız duyulan diyalog veya ses ipuçlarından belirleyin; önce ipucunu yazın, sonra çıkarım yapın."
           },
           {
             "title": "Nasıl ilerliyor?",
-            "body": "Olayların başlangıcını, gelişimini ve sonuç ilişkisini sıralayın."
+            "body": "Başlangıç, gelişme ve sonuç ilişkisini duyulan olay/sözlerle sıralayın. Zaman ya da olay bilgisini kesin olmayan yerlerde açık bırakın."
           },
           {
             "title": "Çatışma nerede?",
-            "body": "Kişilerin veya koşulların karşı karşıya gelişini duyulan örnekle gösterin."
+            "body": "Kişi veya koşulların karşı karşıya gelişini gerçek bir söz ya da davranışla gösterin; bunun olası anlamını ayrı yazın ve alternatif yorumu değerlendirin."
           }
         ]
       }
