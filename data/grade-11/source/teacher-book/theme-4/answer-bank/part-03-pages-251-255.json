@@ -48,8 +48,19 @@
       "answer_sections": {
         "2b_etkilendigim_ozellik": "Seçtiğim özellik: [...]. Bu özelliği metinde gösteren söz/davranış: [...]. Beni etkileme nedeni: [...].",
         "2c_taninmak_istedigim_ozellik": "Mimar Sinan gibi başarılı biri olsaydım tanınmak istediğim özellik/özellikler: [...]. Neden: [...].",
-        "metinden_secilebilecek_kanitlar": "Örneğin Sinan'ın öğrenmeye açıklığı, gözlemciliği, çalışkanlığı, azmi, sorumluluğu veya başkasının emeğine saygısı metindeki söz ve davranışlarla tartışılabilir; öğrenci bunlardan birini seçmek zorunda değildir."
-      }
+        "metinden_secilebilecek_kanitlar": [
+          "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
+          "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
+          "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
+          "“tek başıma yenmedim” → başarıyı yalnız bireye bağlamama, ortak emeği tanıma."
+        ]
+      },
+      "evidence_quotes": [
+        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+        "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+        "Güzellik, büyüklükten daha güçlüdür.",
+        "tek başıma yenmedim"
+      ]
     },
     {
       "question_id": "T4-P252-Q03",
