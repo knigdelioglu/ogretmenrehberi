@@ -685,8 +685,11 @@ for(const id of ["s186-event","s186-place","s186-people","s186-time"]){
 assert(Object.keys(huzur186ById.get("s186-structure")?.answer?.answer_sections??{}).length===4 &&
  huzur186ById.get("s186-structure")?.answer?.explanation?.includes("tüm romanın"),
  "Yapı unsurları s.167–170 ve yardımcı parçalarla sınırlı kalmalı.");
-assert(Object.keys(huzur186ById.get("s187-four")?.answer?.answer_sections??{}).length===4 &&
- huzur186ById.get("s187-four")?.content?.items?.length===4,
+const s187Four = huzur186ById.get("s187-four");
+const s187FourSections = s187Four?.answer?.answer_sections ?? {};
+assert(["olay_dil_uslup", "mekan_dil_uslup", "kisi_dil_uslup", "zaman_dil_uslup"].
+ every(key => Object.prototype.hasOwnProperty.call(s187FourSections, key)) &&
+ s187Four?.content?.items?.length===4,
  "s.187 dört üslup/yapı başlığı ayrı olmalı.");
 for(const id of ["s187-event-style","s187-person-style","s187-place-style","s187-time-style"]){
  assert(huzur186ById.get(id)?.answer===null &&
@@ -801,10 +804,16 @@ for(const id of ["s192-style","s192-period","s192-society","s192-structure","s19
  assert(h192.get(id)?.answer===null && h192.get(id)?.source?.source_record_id==="T03-S0052",
  `Çalışma kâğıdının her başlığı aynı kaynakta: ${id}`);
 }
-assert(Object.keys(h192.get("s193-criteria")?.answer?.answer_sections??{}).length===6 &&
- h192.get("s193-criteria")?.answer?.answer_sections?.["Tutarlılık (kitabın örneği)"]?.
- includes("konu bütünlüğü") &&
- h192.get("s193-criteria")?.answer?.guidance?.includes("diğer beş ölçüt"),
+const s193Criteria = h192.get("s193-criteria");
+const s193CriteriaSections = s193Criteria?.answer?.answer_sections ?? {};
+const s193CriteriaKeys = [
+ "Tutarlılık (kitabın örneği)", "Dil ve söz varlığı (örnek)",
+ "Kişilerin bakış açıları (örnek)", "Mekânın işlevi (örnek)",
+ "Anlatımın açıklığı (örnek)", "Duygu ve çağrışım (örnek)"
+];
+assert(s193CriteriaKeys.every(key => Object.prototype.hasOwnProperty.call(s193CriteriaSections, key)) &&
+ s193CriteriaSections["Tutarlılık (kitabın örneği)"]?.includes("konu bütünlüğü") &&
+ s193Criteria?.answer?.guidance?.includes("diğer beş ölçüt"),
  "s.193 6 satırlı kişisel ölçüt tablosunun Tutarlılık örneği sabit ve geri kalanı öznel olmalı.");
 assert(h192.get("s193-voice")?.answer?.entry_type==="performance_support" &&
  h192.get("s193-voice")?.content?.lead?.includes("sözlü") &&
