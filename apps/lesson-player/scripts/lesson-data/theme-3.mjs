@@ -525,9 +525,15 @@ for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]
     huzur177ById.get(id)?.source?.source_record_id === "T03-S0030",
     `Huzur karşılaştırma ölçütleri yalnız kaynak destekli olmalı: ${id}`);
 }
-assert(huzur177ById.get("s178-circle-plan")?.answer?.question_id === "T3-P178-PERF01" &&
-  huzur177ById.get("s178-circle-plan")?.answer?.entry_type === "performance_support" &&
-  Object.keys(huzur177ById.get("s178-circle-plan")?.answer?.answer_sections ?? {}).length===9,
+const circlePlan = huzur177ById.get("s178-circle-plan");
+const circlePlanSections = circlePlan?.answer?.answer_sections ?? {};
+const circlePlanRoleKeys = [
+  "Bağ Kurucu", "Ressam", "Okuma Aydınlatıcısı", "Sorgulayıcı",
+  "Özetleyici", "Tahmin Edici", "Kelime Avcısı", "Hareket İzcisi", "Karakter Çözümleyici"
+];
+assert(circlePlan?.answer?.question_id === "T3-P178-PERF01" &&
+  circlePlan?.answer?.entry_type === "performance_support" &&
+  circlePlanRoleKeys.every(key => Object.prototype.hasOwnProperty.call(circlePlanSections, key)),
   "Okuma çemberi rol desteği tek doğru cevap olmadan mevcut olmalı.");
 for(const id of ["s178-role-link","s178-role-visual","s178-role-inquiry","s178-role-highlight"]){
   assert(huzur177ById.get(id)?.answer===null &&
