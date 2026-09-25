@@ -70,9 +70,21 @@
         "Tarih grubu": "Sinan’ın yaşam evrelerini, eserlerin yapıldığı dönemi ve oyun ile bilgi görseli arasındaki tarih ayrıntılarını karşılaştırma tablosuna yazın. Oyundaki sahne konuşmalarını tarih belgesi gibi göstermeyin.",
         "Psikoloji grubu": "Sinan’ın merak, azim, kaygı ve sorumluluk taşıdığı anları belirleyin; her çıkarımı bir davranış veya kısa sözle destekleyin.",
         "Sosyoloji grubu": "Hükümdar, mimarbaşı, usta ve toplum arasındaki görev ilişkilerini; büyük yapıların kamusal yaşamdaki yerini inceleyin.",
-        "Sunum ve değerlendirme": "Her bulgu için metin sayfası ve karşılaştırılan diğer oyunun künyesi belirtilir. Son değerlendirmede, farklı disiplinlerden veri kullanmanın yazarın tarih ve toplum ilgisini nasıl görünür kıldığı açıklanır."
+        "Sunum ve değerlendirme": "Her bulgu için metin sayfası ve karşılaştırılan diğer oyunun künyesi belirtilir. Son değerlendirmede, farklı disiplinlerden veri kullanmanın yazarın tarih ve toplum ilgisini nasıl görünür kıldığı açıklanır.",
+        "Metinden örnek kanıtlar": [
+          "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
+          "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
+          "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
+          "“tek başıma yenmedim” → başarıyı yalnız bireye bağlamama, ortak emeği tanıma."
+        ]
       },
-      "guidance": "Başka tiyatro metni üzerinde araştırma yapılmadan onunla ilgili sonuç uydurmayın; grup çalışmasında gerçek kaynak ve metin kanıtı kullanın."
+      "guidance": "Başka tiyatro metni üzerinde araştırma yapılmadan onunla ilgili sonuç uydurmayın; grup çalışmasında gerçek kaynak ve metin kanıtı kullanın.",
+      "evidence_quotes": [
+        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+        "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+        "Güzellik, büyüklükten daha güçlüdür.",
+        "tek başıma yenmedim"
+      ]
     },
     {
       "question_id": "T4-P261-Q01",
@@ -98,13 +110,24 @@
       "prompt_summary": "Oyundaki gündelik insan ilişkilerini tartışıp metni beğeni ölçütleriyle değerlendirme",
       "answer": "Bu değerlendirme sınıftaki beyin fırtınası ve öğrencinin kendi beğeni ölçütleriyle tamamlanmalıdır. Rehber günlük insan ilişkilerine ilişkin metin kanıtlarını gösterebilir; ancak hangi unsurun öğrenci için etkileyici olduğunu önceden belirlemez.",
       "answer_sections": {
-        "gunluk_insan_iliskileri_icin_olasi_kanitlar": "Görev verme ve güvenme, yeteneğin fark edilmesi, sözüne bağlı kalma, başkasının emeğine saygı gösterme gibi ilişkiler metinden kanıtlarla tartışılabilir.",
+        "gunluk_insan_iliskileri_icin_olasi_kanitlar": [
+          "Görev verme ve güvenme: “Güzel bir cami, mimarbaşı!” sözü, hükümdarın Sinan’a bir eser sorumluluğu vermesiyle birlikte ele alınabilir.",
+          "Sözüne bağlılık ve sorumluluk: “İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.”",
+          "Çalışkanlık ve azim: “bilgim, azmim ve çalışkanlığımla talihimi yenmiştim”.",
+          "Ortak emeği tanıma: “tek başıma yenmedim” sözü, başarıyı yalnız bireysel kahramanlıkla açıklamama yönünde tartışılabilir."
+        ],
         "benim_olcutum": "[...]",
         "metinden_ornegim": "[...]",
         "begendim_begenmedim": "[...]",
         "gerekcem": "[...]"
       },
-      "guidance": "Öğrenci adına 'benim için müzik ve ışık en etkileyici' gibi bir beğeni yazmayın. Kitapta verilen örnek ölçüt de öğrencinin kendi tablosunu doldurması için modeldir; tek doğru değerlendirme değildir."
+      "guidance": "Öğrenci adına 'benim için müzik ve ışık en etkileyici' gibi bir beğeni yazmayın. Kitapta verilen örnek ölçüt de öğrencinin kendi tablosunu doldurması için modeldir; tek doğru değerlendirme değildir.",
+      "evidence_quotes": [
+        "Güzel bir cami, mimarbaşı!",
+        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+        "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+        "tek başıma yenmedim"
+      ]
     },
     {
       "question_id": "T4-P262-PERF02",
@@ -127,8 +150,20 @@
       "answer_sections": {
         "canlandirmak_istedigim_karakter": "[...]",
         "metindeki_kanit": "[...]",
-        "secme_gerekcem": "[...]"
-      }
+        "secme_gerekcem": "[...]",
+        "secim_icin_ornek_kanit_havuzu": [
+          "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
+          "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
+          "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
+          "“tek başıma yenmedim” → başarıyı yalnız bireye bağlamama, ortak emeği tanıma."
+        ]
+      },
+      "evidence_quotes": [
+        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+        "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+        "Güzellik, büyüklükten daha güçlüdür.",
+        "tek başıma yenmedim"
+      ]
     },
     {
       "question_id": "T4-P262-PERFQ02",
