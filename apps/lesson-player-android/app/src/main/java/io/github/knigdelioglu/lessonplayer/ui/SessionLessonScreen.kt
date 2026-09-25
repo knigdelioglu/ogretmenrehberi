@@ -44,7 +44,10 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
 
-internal fun teacherAnswerVisibleInWorkspace(answerVisible: Boolean): Boolean = answerVisible
+internal fun teacherAnswerVisibleInWorkspace(step: LessonStep): Boolean {
+    val answer = step.answer ?: return false
+    return !answer.answer.isNullOrBlank() || answer.answerSections != null
+}
 
 @Composable
 internal fun TeacherWorkspaceAnswer(
@@ -116,11 +119,10 @@ internal fun SessionLessonScreen(
     val sourceStep = lesson.steps.first { it.id == state.stepId }
     val step = LessonEngine.effectiveStep(sourceStep, state.overrides[sourceStep.id])
     val answer = step.answer
-    val answerVisible = RevealKey.ANSWER in state.revealed
-    val workspaceAnswerVisible = teacherAnswerVisibleInWorkspace(answerVisible)
+    val workspaceAnswerVisible = teacherAnswerVisibleInWorkspace(step)
     val ordinal = state.order.indexOf(state.stepId)
     val density = lessonVisualDensity(step.density)
-    val advanceCommand = nextLessonCommand(step, state)
+    val advanceCommand = nextTeacherLessonCommand(step, state)
     val advanceEnabled = !actionState.busy && advanceCommand != null
     val send: (LessonCommand) -> Unit = { command ->
         if (!actionState.busy) dispatch(command)
@@ -235,24 +237,6 @@ internal fun SessionLessonScreen(
                                 fontWeight = FontWeight.SemiBold
                             )
 
-                            // Dar ekranda cevap göster butonu kart içi (yalnızca revealOrder'da varsa ve içerik doluysa)
-                            val hasAnswerContent = answer != null && (!answer.answer.isNullOrBlank() || answer.answerSections != null)
-                            val canToggleAnswer = RevealKey.ANSWER in step.revealOrder && hasAnswerContent
-                            if (!isThreeColumn && canToggleAnswer && step.layout != LayoutKind.VOCABULARY) {
-                                FilledTonalButton(
-                                    onClick = { send(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .heightIn(min = LessonTarget.minimum)
-                                        .padding(top = LessonSpacing.small)
-                                        .semantics {
-                                            stateDescription = if (answerVisible) "Cevap açık" else "Cevap kapalı"
-                                        }
-                                ) {
-                                    Text(if (answerVisible) "Cevabı gizle" else "Cevabı göster")
-                                }
-                            }
-
                             step.content?.lead?.takeIf { it != step.displayPrompt }?.let {
                                 Text(
                                     it,
@@ -264,7 +248,7 @@ internal fun SessionLessonScreen(
                             // Soru ve canonical etkinlik içeriği cevap açıldığında da yerinde kalır.
                             LessonContentLayout(step, answerVisible = false)
 
-                            // Bu uygulama öğretmen içindir: ana cevap geniş merkez alanda sorunun altında açılır.
+                            // Android uygulaması öğretmen içindir: mevcut cevap varsa her zaman açık gösterilir.
                             if (workspaceAnswerVisible && step.layout != LayoutKind.VOCABULARY) {
                                 TeacherWorkspaceAnswer(step = step)
                             }
@@ -318,7 +302,7 @@ internal fun SessionLessonScreen(
                                         )
                                         val revealedSummary = step.revealOrder.filter { it in state.revealed }
                                         val summaryText = if (revealedSummary.isEmpty()) {
-                                            "Yönlendirme, Cevap, Açıklama, Metinsel Kanıt ve Öğretmen Notunu açın"
+                                            "Yönlendirme, Açıklama, Metinsel Kanıt ve Öğretmen Notunu açın"
                                         } else {
                                             "Açık katmanlar: " + revealedSummary.joinToString(", ") { it.wire }
                                         }
@@ -474,7 +458,7 @@ internal fun SessionLessonScreen(
                             .heightIn(min = LessonTarget.minimum)
                             .testTag("lesson-next"),
                         enabled = advanceEnabled
-                    ) { Text(nextLessonActionLabel(step, state)) }
+                    ) { Text(nextTeacherLessonActionLabel(step, state)) }
 
                     OutlinedButton(
                         onClick = { send(LessonCommand.Next) },

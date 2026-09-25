@@ -358,11 +358,11 @@ class LessonShellV2Test {
         assertNull(visibleComparisonAnswerSections(step, answerVisible = false))
         assertTrue(visibleComparisonAnswerSections(step, answerVisible = true) != null)
 
-        // Öğretmen cevabı expanded/compact ayrımı olmadan merkez çalışma alanında açılır.
-        assertFalse(teacherAnswerVisibleInWorkspace(answerVisible = false))
-        assertTrue(teacherAnswerVisibleInWorkspace(answerVisible = true))
+        // Öğretmen cevabı reveal state'ten bağımsız olarak mevcutsa merkezde daima görünür.
+        assertTrue(teacherAnswerVisibleInWorkspace(step))
+        assertFalse(teacherAnswerVisibleInWorkspace(step.copy(answer = null)))
 
-        // Vocabulary cevapları da sağ panel yerine merkezde açılır.
+        // Vocabulary cevapları da sağ panel yerine merkezde açık gösterilebilir.
         assertTrue(vocabularyDefinitionVisible(
             answerVisibleInline = true,
             termRevealed = false
@@ -371,6 +371,23 @@ class LessonShellV2Test {
             answerVisibleInline = false,
             termRevealed = true
         ))
+    }
+
+    @Test
+    fun teacherAdvanceSkipsAlwaysVisibleAnswerButPresentationFlowStillCanRevealIt() {
+        val lesson = sampleLesson()
+        val step = lesson.steps.single()
+        var state = LessonEngine.initial(lesson, contentDigest = "teacher-answer-visible")
+
+        assertEquals(LessonCommand.ToggleReveal(RevealKey.GUIDANCE), nextTeacherLessonCommand(step, state))
+        state = LessonEngine.reduce(state, lesson, LessonCommand.ToggleReveal(RevealKey.GUIDANCE))
+
+        // ANSWER sırada olmasına rağmen öğretmen akışı onu atlar; cevap zaten merkezde görünür.
+        assertEquals(LessonCommand.ToggleReveal(RevealKey.EVIDENCE), nextTeacherLessonCommand(step, state))
+        assertEquals("Göster: Metinden kanıt", nextTeacherLessonActionLabel(step, state))
+
+        // Öğrenci sunumu için mevcut public reveal akışı değişmez ve ANSWER hâlâ reveal edilebilir.
+        assertEquals(LessonCommand.ToggleReveal(RevealKey.ANSWER), nextLessonCommand(step, state))
     }
 
     @Test

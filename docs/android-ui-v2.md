@@ -96,21 +96,21 @@ Geniş ders shell'inin kolon oranları, minimumları ve label eylem çubuğu gen
 3. **Merkez Çalışma Alanı (Workspace, `~%56`):**
    - Bağımsız kaydırılan ana alandır (`LazyColumn`).
    - Soru kökü, yönerge, kaynak metin ve canonical etkinlik/tablo içeriği burada kalır.
-   - `RevealKey.ANSWER` açıldığında soru kaybolmaz; cevap sorunun/etkinliğin altında yeşil `TeacherWorkspaceAnswer` bloğunda gösterilir. `answer.answer_sections` da aynı blokta render edilir; karşılaştırma cevapları gerçek matris olarak merkez genişliğini kullanır.
-   - Vocabulary cevapları da merkezde terim kartlarını açar; cevap sağ öğretmen paneline taşınmaz.
+   - Android uygulamasının öğretmen ekranında cevap reveal beklemez. Canonical cevap verisi mevcutsa soru/etkinliğin altında yeşil `TeacherWorkspaceAnswer` bloğunda **daima açık** gösterilir.
+   - `answer.answer_sections` aynı blokta render edilir; karşılaştırma cevapları gerçek matris olarak merkez genişliğini kullanır. Vocabulary tanımları da öğretmen ekranında doğrudan açık görünür.
+   - Bu değişiklik yalnız öğretmen çalışma ekranınadır. `PresentationLessonScreen` ve `StudentProjection` ANSWER reveal güvenliğini korur; öğrenciye gösterimde cevap kendiliğinden açılmaz.
 4. **Sağ Öğretmen Destek Paneli (Teacher Assist, `~%22`):**
    - Tam yüksekliğe sabitlenir ve kendi içeriği gerektiğinde bağımsız kayar.
    - Ana cevabı taşımaz. Yalnızca yardımcı öğretmen katmanları olan Yönlendirme, Açıklama, Metinsel Kanıt ve varsa Öğretmen Notu burada gösterilir.
-    - **Engine RevealOrder Güvenliği ve No-op / Crash Önleme:** `LessonEngine.reduce()` motoru `ToggleReveal` komutlarında anahtarın `effectiveStep.revealOrder` içinde bulunmasını `require` eder (`require(command.key in step().revealOrder)`); aksi takdirde `IllegalArgumentException` fırlatılır. Bu doğrultuda `LessonV2TeacherAssistPane`, `LessonV2ActionBar`, `SessionLessonScreen` (dar mod kart içi cevap butonu ve fallback) ve `LessonLayouts` (`VocabularyMatchLayout`):
-     - Yalnızca `effectiveStep.revealOrder` içinde yer alan **VE** ilgili veri içeriği (`guidance`, `answer`, `explanation`, `evidenceQuotes`, `content.note`) dolu olan katmanlar için kart ve eylem butonu üretir.
-      - İçeriği dolu olsa dahi `revealOrder`'da `RevealKey.ANSWER` yoksa cevap butonu asla oluşturulmaz; böylece runtime motor çökmesi ve sahte no-op eylemler kesin olarak engellenir.
+    - **Engine RevealOrder Güvenliği ve No-op / Crash Önleme:** `LessonEngine.reduce()` motoru `ToggleReveal` komutlarında anahtarın `effectiveStep.revealOrder` içinde bulunmasını `require` eder. Öğretmen ekranında ANSWER için artık `ToggleReveal` üretilmez; cevap doğrudan canonical answer verisinden render edilir.
+     - Yönlendirme, açıklama ve metinsel kanıt eylemleri yalnızca `effectiveStep.revealOrder` içinde yer alıyor ve ilgili içerik doluysa üretilir.
       - **Öğretmen Notu Ayrımı ve Güvenli İlerleme Sözleşmesi:** Öğretmen notu (`content.note`) öğrenci projeksiyonuna (`StudentProjection`) asla dahil edilmez.
-      - **RevealNext Güvenliği:** Shell (`LessonActionBar`), `SessionLessonScreen` ve `PresentationLessonScreen` ekranlarında sıradaki eylem (`nextLessonCommand`, `nextLessonActionLabel`) yalnızca public reveal anahtarlarını (`GUIDANCE`, `ANSWER`, `EXPLANATION`, `EVIDENCE`) işler. `RevealKey.NOTE` önde ya da tek başına tanımlı olsa dahi eylem tarafından tamamen atlanır; asla `ToggleReveal(NOTE)` dispatch üretilmez veya "Göster: Öğretmen notu" etiketi sunulmaz.
-      - `NOTE`'un ardından `GUIDANCE` veya `ANSWER` geliyorsa sıradaki public katman açılır; public reveal katmanları bittiğinde sonraki adıma geçilir. Son adımda ilerletme eylemi devre dışı kalır ve "Son adım" etiketi gösterilir; completion iddiası üretilmez. Sağ panelde (`TeacherNoteCard`) öğretmen notu açıkça "YALNIZCA ÖĞRETMEN" etiketiyle yerel aç/kapa kartıdır. Öğrenci durum rozeti veya `ToggleReveal(NOTE)` dispatch'i üretilmez.
+      - **İlerleme Güvenliği:** Öğretmen ekranı `nextTeacherLessonCommand` / `nextTeacherLessonActionLabel` kullanır ve `ANSWER` ile `NOTE` anahtarlarını atlar; böylece zaten görünür cevabı tekrar “göster” eylemi oluşmaz. `PresentationLessonScreen` ise mevcut `nextLessonCommand` akışını kullanır ve öğrenci sunumunda ANSWER reveal davranışını korur.
+      - Sağ panelde (`TeacherNoteCard`) öğretmen notu açıkça "YALNIZCA ÖĞRETMEN" etiketiyle yerel aç/kapa kartıdır. Öğrenci durum rozeti veya `ToggleReveal(NOTE)` dispatch'i üretilmez.
      - Hiçbir öğretmen içeriği bulunmayan adımlarda temiz ve dürüst bir bilgilendirme yüzeyi (`teacher-assist-empty-info`) sunulur; hayali buton veya no-op buton oluşturulmaz.
    - Kartların açık/kapalı durumu geçici UI state'idir; ancak reveal durumu (`RevealKey`) `LessonSession.revealed` içindeki tek gerçek kaynaktır (single source of truth).
 5. **Alt Sabit Eylem Çubuğu (`LessonV2ActionBar`):**
-   - Ekranın altında sabit durur. Merkez alan yeterliyse `Öğrenciye Göster`, `Yönlendirme`, `Cevap`, `Açıklama`, `Metinsel Kanıt`, `Önceki` ve `Sonraki` kısa etiketlerle görünür; daha dar modda reveal kontrolleri ikonlara döner.
+   - Ekranın altında sabit durur. Merkez alan yeterliyse `Öğrenciye Göster`, `Yönlendirme`, `Açıklama`, `Metinsel Kanıt`, `Önceki` ve `Sonraki` kısa etiketlerle görünür; daha dar modda yardımcı reveal kontrolleri ikonlara döner. Cevap daima açık olduğu için ayrı `Cevap` butonu yoktur.
    - Reveal butonları renk ve `stateDescription` ile açık/kapalı bilgisini verir; yüzeyde uzun “Göster/Gizle” metni yoktur. Merkez kolon `640 dp × fontScale` eylem alanını sağlayabildiğinde etiketler görünür; dar alanda ikon fallback kullanılır. UI katmanında generic `LessonCommand.RevealNext` kullanılmaz; sıradaki eylem yalnızca public reveal anahtarlarını ve sonra `Next` komutunu tetikler.
    - **No-op Engelleme:** Adımda ilgili alan veya `effectiveStep.revealOrder` anahtarı yoksa ilgili buton gösterilmez veya devre dışı bırakılır; hiçbir kontrol enabled no-op olamaz.
    - Tüm kontroller `LessonTarget.minimum` (`48.dp`) erişilebilirlik standardına uygundur.
@@ -143,8 +143,8 @@ Kanonik ders verisi (`remote-content/lessons.json`) doğrudan MEB ders kitabı v
    - Gerçek çoktan seçmeli alternatif alanı veri sözleşmesinde bulunmadığı için maddeler **numaralı değerlendirme ölçütü kartı** (`01`, `02`...) olarak sunulur.
 2. **COMPARISON Düzeni ve Tablo Eşleştirme Sınırlaması:**
    - `content.items` alanı çoğunlukla yönerge niteliğindedir; yapay bir ölçüt sütununa zorlanmaz.
-   - Canonical `content.sections` kaynak karşılaştırması olarak merkezde kalır. `answer.answer_sections` yalnızca cevap açılınca merkezdeki yeşil cevap bloğunda gerçek satır/sütun matrisi olur. Top-level varlıklar sütun, nested key birleşimi satır ölçütüdür. Düz nesne iki sütunlu tablo kullanır.
-   - Cevap kapalıyken `answer_sections` render modeline verilmez. Dar/portre öğretmen görünümünde mevcut inline cevap davranışı korunur.
+   - Canonical `content.sections` kaynak karşılaştırması olarak merkezde kalır. Öğretmen ekranında `answer.answer_sections` cevap verisi mevcutsa merkezdeki yeşil cevap bloğunda daima gerçek satır/sütun matrisi olarak gösterilir. Top-level varlıklar sütun, nested key birleşimi satır ölçütüdür. Düz nesne iki sütunlu tablo kullanır.
+   - Öğrenci sunumu ve `StudentProjection` tarafında answer_sections yine ANSWER reveal olmadan gösterilmez.
    - Kaynakta yapılandırılmış karşılaştırma yoksa başlık ve yönerge metni olarak dürüstçe gösterilir; sahte sütun veya örnek içerik uydurulmaz.
 3. **STRUCTURE Düzeni:**
    - Numaralı akış düğümleri, yön göstergeleri ve hiyerarşik yapı blokları şeması.
@@ -256,7 +256,7 @@ Fiziksel cihaz veya donanım bağlandığında aşağıdaki yöntemlerle kesin d
 ### 6.3 Katman 3: Emülatör ve Cihaz Manuel Duman (Smoke) Matrisi
 - **Build komutu:** `./gradlew assembleDebug`
 - **Doğrulama adımları:**
-  1. **Landscape Tablet (Geniş):** Uygulama açılır; sol koyu mor sidebar, üst stepper, merkez kayan alan, sağ yardımcı öğretmen paneli ve sabit alt barın 3-kolon düzeninde render edildiği gözlenir. Cevap açıldığında soru merkezde kalır ve cevap hemen altında yeşil blok olarak görünür.
+  1. **Landscape Tablet (Geniş):** Uygulama açılır; sol koyu mor sidebar, üst stepper, merkez kayan alan, sağ yardımcı öğretmen paneli ve sabit alt barın 3-kolon düzeninde render edildiği gözlenir. Cevap verisi varsa kullanıcı etkileşimi beklemeden soru altında yeşil blok olarak görünür ve alt çubukta `Cevap` toggle'ı bulunmaz.
   2. **Ekran Döndürme / Boyut Değişimi:**
      - Geniş ekrandan medium ekrana geçildiğinde sağ panelin kapandığı, topBar'daki veya merkez karttaki "Öğretmen Araçları" butonu ile sağ Drawer'ın açıldığı test edilir.
      - Cihaz dikey (portrait) konuma alındığında alt navigasyon çubuğu ve merkez içeriğin geldiği, "Öğretmen Araçları" butonunun alttan Bottom Sheet açtığı doğrulanır.

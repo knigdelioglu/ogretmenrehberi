@@ -55,12 +55,16 @@ class AndroidShellTest {
         }
         composeRule.onNodeWithTag("lesson-outline-step-3").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-answer-toggle")) &&
+            hasNodes(hasTestTag("lesson-workspace-answer")) &&
                 hasNodes(hasTestTag("lesson-evidence-toggle"))
         }
         composeRule.onNodeWithTag("lesson-previous").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-next").assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithTag("lesson-answer-toggle").assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithTag("lesson-workspace-answer").assertExists()
+        assertTrue(
+            "Teacher answer is always visible; answer toggle must not be rendered",
+            !hasNodes(hasTestTag("lesson-answer-toggle"))
+        )
         composeRule.onNodeWithTag("lesson-evidence-toggle").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-presentation-toggle")
             .assertIsEnabled().performClick()

@@ -80,3 +80,38 @@ internal fun nextLessonActionLabel(step: LessonStep, state: LessonSession): Stri
         else -> "Son adım"
     }
 }
+
+
+/**
+ * Öğretmen ekranındaki sıradaki yardımcı reveal katmanı.
+ * ANSWER öğretmen çalışma alanında zaten daima görünür olduğu için atlanır.
+ * NOTE daima öğretmene özel yerel karttır ve reveal komutu üretmez.
+ */
+internal fun nextTeacherRevealKey(step: LessonStep, state: LessonSession): RevealKey? {
+    return step.revealOrder.firstOrNull { key ->
+        key !in setOf(RevealKey.ANSWER, RevealKey.NOTE) &&
+            key !in state.revealed &&
+            isPublicRevealAllowed(step, key)
+    }
+}
+
+/**
+ * Öğretmen ekranındaki ilerletme komutu. Cevap için hiçbir zaman ToggleReveal(ANSWER) üretmez.
+ * PresentationLessonScreen mevcut nextLessonCommand() akışını kullanmaya devam eder.
+ */
+internal fun nextTeacherLessonCommand(step: LessonStep, state: LessonSession): LessonCommand? {
+    val nextKey = nextTeacherRevealKey(step, state)
+    if (nextKey != null) return LessonCommand.ToggleReveal(nextKey)
+    val ordinal = state.order.indexOf(state.stepId)
+    return if (ordinal < state.order.lastIndex) LessonCommand.Next else null
+}
+
+internal fun nextTeacherLessonActionLabel(step: LessonStep, state: LessonSession): String {
+    val nextReveal = nextTeacherRevealKey(step, state)
+    val ordinal = state.order.indexOf(state.stepId)
+    return when {
+        nextReveal != null -> "Göster: ${revealLayerLabel(nextReveal)}"
+        ordinal < state.order.lastIndex -> "Sonraki adıma geç"
+        else -> "Son adım"
+    }
+}

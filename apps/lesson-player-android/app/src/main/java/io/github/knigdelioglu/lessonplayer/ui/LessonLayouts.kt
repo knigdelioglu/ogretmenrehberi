@@ -18,7 +18,6 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
@@ -542,19 +541,6 @@ internal fun VocabularyMatchLayout(
             }
         }
 
-        if (RevealKey.ANSWER in step.revealOrder && terms.isNotEmpty()) {
-            FilledTonalButton(
-                onClick = { dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .heightIn(min = LessonTarget.minimum)
-                    .semantics {
-                        stateDescription = if (answerVisible) "Tüm anlamlar açık" else "Tüm anlamlar kapalı"
-                    }
-            ) {
-                Text(if (answerVisible) "Tüm anlamları gizle" else "Bütün anlamları göster")
-            }
-        }
     }
 }
 

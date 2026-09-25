@@ -45,8 +45,9 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 
 /**
  * Sabit Alt Eylem Çubuğu (Action Bar).
- * Öğrenci sunumu, mevcut reveal durumuna göre Göster/Gizle, Önceki ve Sonraki
- * kontrollerini sunar. Dar alanda eylemler erişilebilir simgelere dönüşür.
+ * Öğrenci sunumu, yardımcı öğretmen katmanları, Önceki ve Sonraki kontrollerini sunar.
+ * Ana cevap öğretmen çalışma alanında daima açık olduğu için burada Cevap toggle'ı bulunmaz.
+ * Dar alanda eylemler erişilebilir simgelere dönüşür.
  */
 @Composable
 fun LessonV2ActionBar(
@@ -67,10 +68,6 @@ fun LessonV2ActionBar(
     // Gerçek içerik ve anahtar kontrolleri (enabled no-op olmaması için)
     val hasGuidance = RevealKey.GUIDANCE in effectiveStep.revealOrder && !answer?.guidance.isNullOrBlank()
     val isGuidanceRevealed = RevealKey.GUIDANCE in session.revealed
-
-    val hasAnswer = RevealKey.ANSWER in effectiveStep.revealOrder && answer != null &&
-        (!answer.answer.isNullOrBlank() || answer.answerSections != null)
-    val isAnswerRevealed = RevealKey.ANSWER in session.revealed
 
     val hasExplanation = RevealKey.EXPLANATION in effectiveStep.revealOrder && !answer?.explanation.isNullOrBlank()
     val isExplanationRevealed = RevealKey.EXPLANATION in session.revealed
@@ -135,16 +132,6 @@ fun LessonV2ActionBar(
                         containerColor = LessonColors.GuidanceSurface,
                         testTag = "lesson-guidance-toggle",
                         onClick = { send(LessonCommand.ToggleReveal(RevealKey.GUIDANCE)) }
-                    )
-                    if (hasAnswer) RevealActionButton(
-                        label = if (isAnswerRevealed) "Cevabı Gizle" else "Cevabı Göster",
-                        shortLabel = "Cevap",
-                        isRevealed = isAnswerRevealed,
-                        showLabel = showLabels,
-                        color = LessonColors.AnswerText,
-                        containerColor = LessonColors.AnswerSurface,
-                        testTag = "lesson-answer-toggle",
-                        onClick = { send(LessonCommand.ToggleReveal(RevealKey.ANSWER)) }
                     )
                     if (hasExplanation) RevealActionButton(
                         label = if (isExplanationRevealed) "Açıklamayı Gizle" else "Açıklamayı Göster",
