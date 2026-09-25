@@ -466,8 +466,10 @@ for(let n=1;n<=13;n++) {
 assert(huzurQuestionMap.get("s175-q1")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s175-q1")?.answer?.guidance?.includes("gerçek tahmini"),
   "s.175 Q1 öğrencinin gerçek önceki tahminiyle çalışmalı.");
-assert(huzurQuestionMap.get("s175-q2")?.layout === "structure" &&
-  Object.keys(huzurQuestionMap.get("s175-q2")?.answer?.answer_sections??{}).length===3,
+const s175q2 = huzurQuestionMap.get("s175-q2");
+const s175q2Sections = s175q2?.answer?.answer_sections ?? {};
+assert(s175q2?.layout === "structure" &&
+  ["konu", "tema", "yazilis_amaci"].every(key => Object.prototype.hasOwnProperty.call(s175q2Sections, key)),
   "s.175 Q2 konu/tema/yazılış amacı üçlü tablosunu korumalı.");
 assert(huzurQuestionMap.get("s176-q6")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q6")?.content?.items?.length===3,
