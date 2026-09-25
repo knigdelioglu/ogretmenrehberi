@@ -357,17 +357,19 @@ class LessonShellV2Test {
 
         assertNull(visibleComparisonAnswerSections(step, answerVisible = false))
         assertTrue(visibleComparisonAnswerSections(step, answerVisible = true) != null)
-        assertFalse(inlineTeacherAnswerVisible(answerVisible = true, isThreeColumn = true))
-        assertTrue(inlineTeacherAnswerVisible(answerVisible = true, isThreeColumn = false))
-        assertFalse(vocabularyDefinitionVisible(
-            answerVisibleInline = false,
-            termRevealed = true,
-            answerVisibleInTeacherPanel = true
+
+        // Öğretmen cevabı expanded/compact ayrımı olmadan merkez çalışma alanında açılır.
+        assertFalse(teacherAnswerVisibleInWorkspace(answerVisible = false))
+        assertTrue(teacherAnswerVisibleInWorkspace(answerVisible = true))
+
+        // Vocabulary cevapları da sağ panel yerine merkezde açılır.
+        assertTrue(vocabularyDefinitionVisible(
+            answerVisibleInline = true,
+            termRevealed = false
         ))
         assertTrue(vocabularyDefinitionVisible(
             answerVisibleInline = false,
-            termRevealed = true,
-            answerVisibleInTeacherPanel = false
+            termRevealed = true
         ))
     }
 

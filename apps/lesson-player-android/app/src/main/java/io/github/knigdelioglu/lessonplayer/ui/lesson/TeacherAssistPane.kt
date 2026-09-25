@@ -45,15 +45,14 @@ import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
-import io.github.knigdelioglu.lessonplayer.ui.AnswerSections
-import io.github.knigdelioglu.lessonplayer.ui.ComparisonAnswerTable
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 
 /**
  * Sağ Öğretmen Destek Paneli (Geniş Landscape Tablette ~%21–22 genişlik).
- * Yönlendirme, Cevap, Açıklama, Metinsel Kanıt kartlarını bağımsız aç/kapa mantığıyla sunar.
+ * Ana cevap çalışma alanında sorunun altında gösterilir; bu panel yalnızca yardımcı öğretmen
+ * katmanlarını (Yönlendirme, Açıklama, Metinsel Kanıt ve Öğretmen Notu) taşır.
  * Yalnızca current effective step'in revealOrder'ında bulunan ve verisi mevcut katmanlar gösterilir;
  * desteklenmeyen/hayali buton veya unavailable placeholder'lı reveal callback üretilmez.
  */
@@ -67,7 +66,7 @@ fun LessonV2TeacherAssistPane(
     val effectiveStep = LessonEngine.effectiveStep(step, session.overrides[step.id])
     val answer = effectiveStep.answer
     var expandedPanels by rememberSaveable {
-        mutableStateOf(setOf(RevealKey.GUIDANCE, RevealKey.ANSWER, RevealKey.EXPLANATION, RevealKey.EVIDENCE))
+        mutableStateOf(setOf(RevealKey.GUIDANCE, RevealKey.EXPLANATION, RevealKey.EVIDENCE))
     }
     var isNoteExpanded by rememberSaveable {
         mutableStateOf(true)
@@ -78,12 +77,12 @@ fun LessonV2TeacherAssistPane(
     }
 
     val hasGuidance = RevealKey.GUIDANCE in effectiveStep.revealOrder && !answer?.guidance.isNullOrBlank()
-    val hasAnswer = RevealKey.ANSWER in effectiveStep.revealOrder && answer != null &&
+    val hasWorkspaceAnswer = RevealKey.ANSWER in effectiveStep.revealOrder && answer != null &&
         (!answer.answer.isNullOrBlank() || answer.answerSections != null)
     val hasExplanation = RevealKey.EXPLANATION in effectiveStep.revealOrder && !answer?.explanation.isNullOrBlank()
     val hasEvidence = RevealKey.EVIDENCE in effectiveStep.revealOrder && !answer?.evidenceQuotes.isNullOrEmpty()
     val hasNote = !effectiveStep.content?.note.isNullOrBlank()
-    val hasAnyAssist = hasGuidance || hasAnswer || hasExplanation || hasEvidence || hasNote
+    val hasAnyAssist = hasGuidance || hasExplanation || hasEvidence || hasNote
 
     Surface(
         modifier = modifier.fillMaxHeight().testTag("teacher-assist-pane"),
@@ -105,7 +104,11 @@ fun LessonV2TeacherAssistPane(
                         border = BorderStroke(1.dp, LessonColors.Border)
                     ) {
                         Text(
-                            text = "Bu adım için tanımlı öğretmen rehberliği veya reveal katmanı bulunmamaktadır.",
+                            text = if (hasWorkspaceAnswer) {
+                                "Bu adımın cevabı orta çalışma alanında gösterilir. Sağ panel için ek yönlendirme, açıklama, metinsel kanıt veya öğretmen notu tanımlı değildir."
+                            } else {
+                                "Bu adım için tanımlı ek öğretmen desteği bulunmamaktadır."
+                            },
                             style = MaterialTheme.typography.bodyMedium,
                             color = LessonColors.TextSecondary,
                             modifier = Modifier.padding(LessonSpacing.medium)
@@ -133,36 +136,7 @@ fun LessonV2TeacherAssistPane(
                 }
             }
 
-            // 2. Cevap (Answer) - Soft Yeşil
-            if (hasAnswer) {
-                item {
-                    val isRevealed = RevealKey.ANSWER in session.revealed
-                    val isExpanded = RevealKey.ANSWER in expandedPanels
-                    val answerText = answer?.answer.orEmpty()
-                    SemanticAssistCard(
-                        title = "CEVAP",
-                        surfaceColor = LessonColors.AnswerSurface,
-                        borderColor = LessonColors.AnswerBorder,
-                        textColor = LessonColors.AnswerText,
-                        isExpanded = isExpanded,
-                        onToggleExpand = { toggleExpanded(RevealKey.ANSWER) },
-                        isRevealed = isRevealed,
-                        enabled = enabled,
-                        content = answerText,
-                        extraContent = if (isRevealed && answer?.answerSections != null) {
-                            {
-                                if (effectiveStep.layout == io.github.knigdelioglu.lessonplayer.content.LayoutKind.COMPARISON) {
-                                    ComparisonAnswerTable(answer.answerSections, heading = null)
-                                } else {
-                                    AnswerSections(answer.answerSections)
-                                }
-                            }
-                        } else null
-                    )
-                }
-            }
-
-            // 3. Açıklama (Explanation) - Soft Şeftali
+            // 2. Açıklama (Explanation) - Soft Şeftali
             if (hasExplanation) {
                 item {
                     val isRevealed = RevealKey.EXPLANATION in session.revealed
@@ -181,7 +155,7 @@ fun LessonV2TeacherAssistPane(
                 }
             }
 
-            // 4. Metinsel Kanıt (Evidence) - Soft Lavanta
+            // 3. Metinsel Kanıt (Evidence) - Soft Lavanta
             if (hasEvidence) {
                 item {
                     val isRevealed = RevealKey.EVIDENCE in session.revealed
@@ -202,7 +176,7 @@ fun LessonV2TeacherAssistPane(
                 }
             }
 
-            // 5. Varsa Öğretmen Notu (Yalnızca yerel aç/kapa, asla öğrenciye reveal dispatch üretmez)
+            // 4. Varsa Öğretmen Notu (Yalnızca yerel aç/kapa, asla öğrenciye reveal dispatch üretmez)
             if (hasNote) {
                 item {
                     TeacherNoteCard(

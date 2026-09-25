@@ -236,9 +236,8 @@ internal fun comparisonAnswerMatrix(answerSections: JsonValue): ComparisonAnswer
 
 internal fun vocabularyDefinitionVisible(
     answerVisibleInline: Boolean,
-    termRevealed: Boolean,
-    answerVisibleInTeacherPanel: Boolean
-): Boolean = answerVisibleInline || (!answerVisibleInTeacherPanel && termRevealed)
+    termRevealed: Boolean
+): Boolean = answerVisibleInline || termRevealed
 
 private fun comparisonLabel(value: String): String =
     value.replace('_', ' ').replaceFirstChar { it.uppercase() }
@@ -463,8 +462,7 @@ internal fun VocabularyMatchLayout(
     state: LessonSession,
     dispatch: (LessonCommand) -> Unit,
     answerVisible: Boolean,
-    density: LessonVisualDensity,
-    answerHandledByTeacherPanel: Boolean = false
+    density: LessonVisualDensity
 ) {
     val answer = step.answer ?: return
     val terms = (answer.answerSections as? JsonValue.Object)?.values.orEmpty()
@@ -482,12 +480,9 @@ internal fun VocabularyMatchLayout(
         )
 
         terms.forEach { (term, definition) ->
-            val answerVisibleInTeacherPanel = answerHandledByTeacherPanel &&
-                RevealKey.ANSWER in state.revealed
             val visible = vocabularyDefinitionVisible(
                 answerVisibleInline = answerVisible,
-                termRevealed = term in state.vocabularyTerms[state.stepId].orEmpty(),
-                answerVisibleInTeacherPanel = answerVisibleInTeacherPanel
+                termRevealed = term in state.vocabularyTerms[state.stepId].orEmpty()
             )
             Surface(
                 modifier = Modifier.fillMaxWidth(),
@@ -512,7 +507,7 @@ internal fun VocabularyMatchLayout(
                             color = if (visible) LessonColors.AnswerText else LessonColors.TextPrimary,
                             fontWeight = FontWeight.Bold
                         )
-                        if (!answerVisible && !answerVisibleInTeacherPanel) {
+                        if (!answerVisible) {
                             OutlinedButton(
                                 onClick = { dispatch(LessonCommand.ToggleTerm(state.stepId, term)) },
                                 modifier = Modifier
@@ -547,7 +542,7 @@ internal fun VocabularyMatchLayout(
             }
         }
 
-        if (!answerHandledByTeacherPanel && RevealKey.ANSWER in step.revealOrder && terms.isNotEmpty()) {
+        if (RevealKey.ANSWER in step.revealOrder && terms.isNotEmpty()) {
             FilledTonalButton(
                 onClick = { dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
                 modifier = Modifier

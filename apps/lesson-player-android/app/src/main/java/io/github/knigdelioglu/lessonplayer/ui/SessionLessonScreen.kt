@@ -1,6 +1,5 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
-import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,6 +32,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
+import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
@@ -44,8 +44,58 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
 
-internal fun inlineTeacherAnswerVisible(answerVisible: Boolean, isThreeColumn: Boolean): Boolean =
-    answerVisible && !isThreeColumn
+internal fun teacherAnswerVisibleInWorkspace(answerVisible: Boolean): Boolean = answerVisible
+
+@Composable
+internal fun TeacherWorkspaceAnswer(
+    step: LessonStep,
+    modifier: Modifier = Modifier
+) {
+    val answer = step.answer ?: return
+    val hasAnswerText = !answer.answer.isNullOrBlank()
+    val hasAnswerSections = answer.answerSections != null
+    if (!hasAnswerText && !hasAnswerSections) return
+
+    Surface(
+        modifier = modifier
+            .fillMaxWidth()
+            .testTag("lesson-workspace-answer"),
+        shape = RoundedCornerShape(14.dp),
+        color = LessonColors.AnswerSurface,
+        border = BorderStroke(1.dp, LessonColors.AnswerBorder)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(LessonSpacing.medium),
+            verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+        ) {
+            Text(
+                text = "CEVAP",
+                style = MaterialTheme.typography.labelLarge,
+                color = LessonColors.AnswerText,
+                fontWeight = FontWeight.Bold
+            )
+            answer.answer?.takeIf { it.isNotBlank() }?.let { answerText ->
+                Text(
+                    text = answerText,
+                    style = MaterialTheme.typography.bodyLarge.copy(
+                        fontSize = 16.sp,
+                        lineHeight = 24.sp
+                    ),
+                    color = LessonColors.AnswerText
+                )
+            }
+            answer.answerSections?.let { sections ->
+                if (step.layout == LayoutKind.COMPARISON) {
+                    ComparisonAnswerTable(sections, heading = null)
+                } else {
+                    AnswerSections(sections)
+                }
+            }
+        }
+    }
+}
 
 /**
  * Adaptive teacher lesson player for the seven canonical layout kinds.
@@ -67,7 +117,7 @@ internal fun SessionLessonScreen(
     val step = LessonEngine.effectiveStep(sourceStep, state.overrides[sourceStep.id])
     val answer = step.answer
     val answerVisible = RevealKey.ANSWER in state.revealed
-    val inlineAnswerVisible = inlineTeacherAnswerVisible(answerVisible, isThreeColumn)
+    val workspaceAnswerVisible = teacherAnswerVisibleInWorkspace(answerVisible)
     val ordinal = state.order.indexOf(state.stepId)
     val density = lessonVisualDensity(step.density)
     val advanceCommand = nextLessonCommand(step, state)
@@ -175,24 +225,15 @@ internal fun SessionLessonScreen(
                                 )
                             }
 
-                            AnimatedContent(
-                                targetState = if (inlineAnswerVisible && step.layout != LayoutKind.VOCABULARY) {
-                                    answer?.answer.orEmpty()
-                                } else {
-                                    step.displayPrompt
-                                },
-                                label = "teacher-prompt-answer"
-                            ) { text ->
-                                Text(
-                                    text = text,
-                                    style = MaterialTheme.typography.bodyLarge.copy(
-                                        fontSize = 16.sp,
-                                        lineHeight = 23.sp
-                                    ),
-                                    color = LessonColors.TextPrimary,
-                                    fontWeight = FontWeight.SemiBold
-                                )
-                            }
+                            Text(
+                                text = step.displayPrompt,
+                                style = MaterialTheme.typography.bodyLarge.copy(
+                                    fontSize = 16.sp,
+                                    lineHeight = 23.sp
+                                ),
+                                color = LessonColors.TextPrimary,
+                                fontWeight = FontWeight.SemiBold
+                            )
 
                             // Dar ekranda cevap göster butonu kart içi (yalnızca revealOrder'da varsa ve içerik doluysa)
                             val hasAnswerContent = answer != null && (!answer.answer.isNullOrBlank() || answer.answerSections != null)
@@ -208,25 +249,24 @@ internal fun SessionLessonScreen(
                                             stateDescription = if (answerVisible) "Cevap açık" else "Cevap kapalı"
                                         }
                                 ) {
-                                    Text(if (answerVisible) "Soruyu göster" else "Cevabı göster")
+                                    Text(if (answerVisible) "Cevabı gizle" else "Cevabı göster")
                                 }
                             }
 
-                            if (!inlineAnswerVisible || step.layout in setOf(
-                                    LayoutKind.STRUCTURE, LayoutKind.COMPARISON,
-                                    LayoutKind.ASSESSMENT
+                            step.content?.lead?.takeIf { it != step.displayPrompt }?.let {
+                                Text(
+                                    it,
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    color = LessonColors.TextPrimary
                                 )
-                            ) {
-                                if (!inlineAnswerVisible) {
-                                    step.content?.lead?.takeIf { it != step.displayPrompt }?.let {
-                                        Text(it, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary)
-                                    }
-                                }
-                                LessonContentLayout(step, answerVisible = inlineAnswerVisible)
                             }
 
-                            if (inlineAnswerVisible && step.layout !in setOf(LayoutKind.VOCABULARY, LayoutKind.COMPARISON)) {
-                                AnswerSections(answer?.answerSections)
+                            // Soru ve canonical etkinlik içeriği cevap açıldığında da yerinde kalır.
+                            LessonContentLayout(step, answerVisible = false)
+
+                            // Bu uygulama öğretmen içindir: ana cevap geniş merkez alanda sorunun altında açılır.
+                            if (workspaceAnswerVisible && step.layout != LayoutKind.VOCABULARY) {
+                                TeacherWorkspaceAnswer(step = step)
                             }
 
                             if (step.layout == LayoutKind.VOCABULARY) {
@@ -234,9 +274,8 @@ internal fun SessionLessonScreen(
                                     step = step,
                                     state = state,
                                     dispatch = send,
-                                    answerVisible = inlineAnswerVisible,
-                                    density = density,
-                                    answerHandledByTeacherPanel = isThreeColumn
+                                    answerVisible = workspaceAnswerVisible,
+                                    density = density
                                 )
                             }
                         }
