@@ -1,33 +1,67 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
+import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.content.SupplementalSection
+import io.github.knigdelioglu.lessonplayer.player.LessonCommand
+import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonVisualDensity
 import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
 
 /** Canonical flow content, distinct from answer-bank answerSections. */
 @Composable
-internal fun LessonContentLayout(step: LessonStep) {
-    val content = step.content ?: return
+internal fun LessonContentLayout(step: LessonStep, answerVisible: Boolean = false) {
     if (step.layout == LayoutKind.VOCABULARY) return
     val density = lessonVisualDensity(step.density)
+
+    // COMPARISON can render answer_sections table even when step.content is null (e.g. s31-q7)
+    if (step.layout == LayoutKind.COMPARISON) {
+        ComparisonContentLayout(
+            step = step,
+            answerVisible = answerVisible,
+            density = density
+        )
+        return
+    }
+
+    val content = step.content ?: return
+
     Column(verticalArrangement = Arrangement.spacedBy(density.blockGap)) {
         when (step.layout) {
             LayoutKind.QUESTION, LayoutKind.REFERENCE -> {
@@ -42,21 +76,484 @@ internal fun LessonContentLayout(step: LessonStep) {
                 }
                 SectionCards(content.sections, density)
             }
-            LayoutKind.COMPARISON -> {
-                content.items.forEach { AccentRow("ÖLÇÜT", it, density.rowPadding) }
-                SectionCards(content.sections, density, paired = true)
-            }
             LayoutKind.STRUCTURE -> {
-                content.items.forEachIndexed { index, item ->
-                    AccentRow("YAPI " + (index + 1), item, density.rowPadding)
-                }
-                SectionCards(content.sections, density)
+                StructureSchemaLayout(
+                    items = content.items,
+                    sections = content.sections,
+                    density = density
+                )
             }
             LayoutKind.ASSESSMENT -> {
-                content.items.forEach { AccentRow("✓", it, density.rowPadding) }
-                SectionCards(content.sections, density)
+                AssessmentCriteriaLayout(
+                    items = content.items,
+                    sections = content.sections,
+                    density = density
+                )
             }
-            LayoutKind.VOCABULARY -> Unit
+            LayoutKind.COMPARISON, LayoutKind.VOCABULARY -> Unit
+        }
+    }
+}
+
+/**
+ * Honest comparison renderer for LayoutKind.COMPARISON.
+ * - content.items is an instructional guide / focus directive, NOT an invented criteria column.
+ * - Tabular comparison is constructed from real content.sections (when available) and revealed answer.answer_sections.
+ * - Answer visibility is strictly guarded by answerVisible (RevealKey.ANSWER); when closed, answer matrix is NEVER rendered.
+ * - When answer is revealed, answer table is rendered in a single place without duplicate presentation.
+ */
+@Composable
+internal fun ComparisonContentLayout(
+    step: LessonStep,
+    answerVisible: Boolean,
+    density: LessonVisualDensity
+) {
+    val content = step.content
+    val sections = content?.sections.orEmpty()
+    val items = content?.items.orEmpty()
+
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .testTag("comparison-content-layout"),
+        verticalArrangement = Arrangement.spacedBy(density.blockGap)
+    ) {
+        // Yönerge / Odak maddeleri varsa numaralı yönerge satırları olarak dürüstçe göster
+        if (items.isNotEmpty()) {
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+            ) {
+                Text(
+                    text = "KARŞILAŞTIRMA BOYUTLARI VE YÖNERGELER",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = LessonColors.Header,
+                    fontWeight = FontWeight.Bold
+                )
+                items.forEachIndexed { index, item ->
+                    AccentRow((index + 1).toString().padStart(2, '0'), item, density.rowPadding)
+                }
+            }
+        }
+
+        // Gerçek içerik bölümleri (sections) varsa iki veya çok sütunlu gerçek karşılaştırma tablosu
+        if (sections.isNotEmpty()) {
+            Surface(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .testTag("comparison-source-sections"),
+                shape = RoundedCornerShape(12.dp),
+                border = BorderStroke(1.dp, LessonColors.Border),
+                color = LessonColors.Surface
+            ) {
+                Column(modifier = Modifier.fillMaxWidth()) {
+                    // Tablo başlık satırı
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(LessonColors.SurfaceSoft)
+                            .padding(horizontal = LessonSpacing.medium, vertical = LessonSpacing.small),
+                        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+                    ) {
+                        sections.forEach { section ->
+                            Text(
+                                text = section.title.uppercase(),
+                                style = MaterialTheme.typography.labelLarge,
+                                color = LessonColors.Header,
+                                fontWeight = FontWeight.Bold,
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
+
+                    // Tablo gövde hücreleri
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(LessonSpacing.medium),
+                        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
+                    ) {
+                        sections.forEach { section ->
+                            Text(
+                                text = section.body,
+                                style = MaterialTheme.typography.bodyLarge,
+                                color = LessonColors.TextPrimary,
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        // Cevap AÇIKSA ve answer_sections mevcutsa: tek yerde yapılandırılmış karşılaştırma tablosu olarak render et
+        if (answerVisible && step.answer?.answerSections != null) {
+            ComparisonAnswerTable(step.answer.answerSections)
+        }
+    }
+}
+
+/**
+ * Yapılandırılmış karşılaştırmalı cevap tablosu.
+ * Hem iki seviyeli nesneleri (ör. s31-q7: Yazıcı vs Eskici Abdi -> Kriterler)
+ * hem de düz kriter-değer eşlemelerini tek bir tablo yüzeyinde sunar.
+ */
+@Composable
+internal fun ComparisonAnswerTable(answerSections: JsonValue) {
+    when (answerSections) {
+        is JsonValue.Object -> {
+            val entries = answerSections.values
+            if (entries.isEmpty()) return
+
+            Surface(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .testTag("comparison-answer-table"),
+                shape = RoundedCornerShape(12.dp),
+                border = BorderStroke(1.dp, LessonColors.AnswerBorder),
+                color = LessonColors.AnswerSurface
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(LessonSpacing.medium),
+                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                ) {
+                    Text(
+                        text = "KARŞILAŞTIRMALI DEĞERLENDİRME TABLOSU (CEVAP)",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = LessonColors.AnswerText,
+                        fontWeight = FontWeight.Bold
+                    )
+
+                    val firstVal = entries.values.firstOrNull()
+                    if (firstVal is JsonValue.Object) {
+                        entries.forEach { (entityKey, entityVal) ->
+                            Surface(
+                                modifier = Modifier.fillMaxWidth(),
+                                shape = RoundedCornerShape(10.dp),
+                                color = LessonColors.Surface,
+                                border = BorderStroke(1.dp, LessonColors.AnswerBorder)
+                            ) {
+                                Column(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(LessonSpacing.small),
+                                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                                ) {
+                                    Text(
+                                        text = entityKey.replace("_", " ").uppercase(),
+                                        style = MaterialTheme.typography.titleSmall,
+                                        color = LessonColors.Primary,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    if (entityVal is JsonValue.Object) {
+                                        entityVal.values.forEach { (subKey, subVal) ->
+                                            Row(
+                                                modifier = Modifier
+                                                    .fillMaxWidth()
+                                                    .padding(vertical = 2.dp),
+                                                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                            ) {
+                                                Text(
+                                                    text = subKey.replace("_", " "),
+                                                    style = MaterialTheme.typography.labelMedium,
+                                                    color = LessonColors.TextSecondary,
+                                                    fontWeight = FontWeight.SemiBold,
+                                                    modifier = Modifier.weight(0.35f)
+                                                )
+                                                Text(
+                                                    text = readableAnswerValue(subVal),
+                                                    style = MaterialTheme.typography.bodyMedium,
+                                                    color = LessonColors.TextPrimary,
+                                                    modifier = Modifier.weight(0.65f)
+                                                )
+                                            }
+                                        }
+                                    } else {
+                                        Text(
+                                            text = readableAnswerValue(entityVal),
+                                            style = MaterialTheme.typography.bodyMedium,
+                                            color = LessonColors.TextPrimary
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        entries.forEach { (key, value) ->
+                            Surface(
+                                modifier = Modifier.fillMaxWidth(),
+                                shape = RoundedCornerShape(8.dp),
+                                color = LessonColors.Surface,
+                                border = BorderStroke(1.dp, LessonColors.AnswerBorder)
+                            ) {
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(LessonSpacing.small),
+                                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                ) {
+                                    Text(
+                                        text = key.replace("_", " "),
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = LessonColors.Primary,
+                                        fontWeight = FontWeight.Bold,
+                                        modifier = Modifier.weight(0.35f)
+                                    )
+                                    Text(
+                                        text = readableAnswerValue(value),
+                                        style = MaterialTheme.typography.bodyMedium,
+                                        color = LessonColors.TextPrimary,
+                                        modifier = Modifier.weight(0.65f)
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else -> {
+            AnswerSections(answerSections)
+        }
+    }
+}
+
+/**
+ * Structured numbered schema renderer for LayoutKind.STRUCTURE.
+ * Renders numbered flow nodes and connected schema blocks.
+ */
+@Composable
+internal fun StructureSchemaLayout(
+    items: List<String>,
+    sections: List<SupplementalSection>,
+    density: LessonVisualDensity
+) {
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+    ) {
+        if (items.isNotEmpty()) {
+            items.forEachIndexed { index, item ->
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                ) {
+                    Surface(
+                        modifier = Modifier.size(36.dp),
+                        shape = CircleShape,
+                        color = LessonColors.Primary
+                    ) {
+                        Box(contentAlignment = Alignment.Center) {
+                            Text(
+                                text = (index + 1).toString().padStart(2, '0'),
+                                style = MaterialTheme.typography.labelMedium,
+                                color = Color.White,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                    Surface(
+                        modifier = Modifier.weight(1f),
+                        shape = RoundedCornerShape(12.dp),
+                        border = BorderStroke(1.dp, LessonColors.Border),
+                        color = LessonColors.SurfaceSoft
+                    ) {
+                        Text(
+                            text = item,
+                            style = MaterialTheme.typography.bodyLarge,
+                            modifier = Modifier.padding(LessonSpacing.small),
+                            color = LessonColors.TextPrimary
+                        )
+                    }
+                }
+                if (index < items.lastIndex) {
+                    Box(
+                        modifier = Modifier
+                            .padding(start = 17.dp)
+                            .width(2.dp)
+                            .height(14.dp)
+                            .background(LessonColors.Border)
+                    )
+                }
+            }
+        }
+        if (sections.isNotEmpty()) {
+            Spacer(modifier = Modifier.height(LessonSpacing.tiny))
+            SectionCards(sections, density)
+        }
+    }
+}
+
+/**
+ * Numbered assessment criteria layout for LayoutKind.ASSESSMENT.
+ * NOTE: In remote-content/lessons.json, content.items represents evaluation criteria and
+ * instructional focus dimensions (e.g. three dimensions of style contributing to meaning in s35-q1).
+ * It is NOT a multiple-choice alternative list; no A/B/C labels or selection state are applied.
+ */
+@Composable
+internal fun AssessmentCriteriaLayout(
+    items: List<String>,
+    sections: List<SupplementalSection>,
+    density: LessonVisualDensity
+) {
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+    ) {
+        if (items.isNotEmpty()) {
+            Text(
+                text = "DEĞERLENDİRME ÖLÇÜTLERİ VE ODAK BOYUTLARI",
+                style = MaterialTheme.typography.labelMedium,
+                color = LessonColors.Header,
+                fontWeight = FontWeight.Bold
+            )
+            items.forEachIndexed { index, item ->
+                Surface(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .heightIn(min = LessonTarget.minimum),
+                    shape = RoundedCornerShape(12.dp),
+                    border = BorderStroke(1.dp, LessonColors.Border),
+                    color = LessonColors.Surface
+                ) {
+                    Row(
+                        modifier = Modifier.padding(LessonSpacing.small),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                    ) {
+                        Surface(
+                            modifier = Modifier.size(32.dp),
+                            shape = CircleShape,
+                            color = LessonColors.SurfaceSoft,
+                            border = BorderStroke(1.dp, LessonColors.Border)
+                        ) {
+                            Box(contentAlignment = Alignment.Center) {
+                                Text(
+                                    text = (index + 1).toString().padStart(2, '0'),
+                                    style = MaterialTheme.typography.labelLarge,
+                                    color = LessonColors.Primary,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+                        }
+                        Text(
+                            text = item,
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = LessonColors.TextPrimary,
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
+                }
+            }
+        }
+        if (sections.isNotEmpty()) {
+            SectionCards(sections, density)
+        }
+    }
+}
+
+/**
+ * Vocabulary term matching and context prediction layout for LayoutKind.VOCABULARY.
+ * Driven directly by canonical data fields (step.answer.answerSections and state.vocabularyTerms).
+ */
+@Composable
+internal fun VocabularyMatchLayout(
+    step: LessonStep,
+    state: LessonSession,
+    dispatch: (LessonCommand) -> Unit,
+    answerVisible: Boolean,
+    density: LessonVisualDensity
+) {
+    val answer = step.answer ?: return
+    val terms = (answer.answerSections as? JsonValue.Object)?.values.orEmpty()
+    if (terms.isEmpty()) return
+
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(density.blockGap)
+    ) {
+        Text(
+            text = "KELİME / KAVRAM TAHMİN VE EŞLEŞTİRME",
+            style = MaterialTheme.typography.labelMedium,
+            color = LessonColors.Header,
+            fontWeight = FontWeight.Bold
+        )
+
+        terms.forEach { (term, definition) ->
+            val visible = answerVisible || term in state.vocabularyTerms[state.stepId].orEmpty()
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(12.dp),
+                border = BorderStroke(1.dp, if (visible) LessonColors.AnswerBorder else LessonColors.Border),
+                color = if (visible) LessonColors.AnswerSurface else LessonColors.Surface
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(LessonSpacing.medium),
+                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                ) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = term,
+                            style = MaterialTheme.typography.titleMedium,
+                            color = if (visible) LessonColors.AnswerText else LessonColors.TextPrimary,
+                            fontWeight = FontWeight.Bold
+                        )
+                        if (!answerVisible) {
+                            OutlinedButton(
+                                onClick = { dispatch(LessonCommand.ToggleTerm(state.stepId, term)) },
+                                modifier = Modifier
+                                    .heightIn(min = LessonTarget.minimum)
+                                    .semantics {
+                                        stateDescription = if (visible) "Anlam açık" else "Anlam kapalı"
+                                    }
+                            ) {
+                                Text(if (visible) "Anlamı gizle" else "Anlamı göster")
+                            }
+                        }
+                    }
+
+                    if (visible) {
+                        val defText = when (definition) {
+                            is JsonValue.Text -> definition.value
+                            else -> readableAnswerValue(definition)
+                        }
+                        Text(
+                            text = defText,
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = LessonColors.AnswerText
+                        )
+                    } else {
+                        Text(
+                            text = "Önce bağlamdan anlamını tahmin ettirin.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = LessonColors.TextSecondary
+                        )
+                    }
+                }
+            }
+        }
+
+        if (RevealKey.ANSWER in step.revealOrder && terms.isNotEmpty()) {
+            FilledTonalButton(
+                onClick = { dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = LessonTarget.minimum)
+                    .semantics {
+                        stateDescription = if (answerVisible) "Tüm anlamlar açık" else "Tüm anlamlar kapalı"
+                    }
+            ) {
+                Text(if (answerVisible) "Tüm anlamları gizle" else "Bütün anlamları göster")
+            }
         }
     }
 }
@@ -65,15 +562,34 @@ internal fun LessonContentLayout(step: LessonStep) {
 private fun AccentRow(marker: String, value: String, rowPadding: Dp) {
     Surface(
         modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(16.dp),
-        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.65f)
+        shape = RoundedCornerShape(12.dp),
+        color = LessonColors.SurfaceSoft,
+        border = BorderStroke(1.dp, LessonColors.Border)
     ) {
-        Row(modifier = Modifier.padding(rowPadding),
-            horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-            Text(marker, style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary)
-            Text(value, style = MaterialTheme.typography.bodyLarge,
-                modifier = Modifier.weight(1f))
+        Row(
+            modifier = Modifier.padding(rowPadding),
+            horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Surface(
+                shape = RoundedCornerShape(6.dp),
+                color = LessonColors.Primary,
+                modifier = Modifier.padding(end = 4.dp)
+            ) {
+                Text(
+                    text = marker,
+                    style = MaterialTheme.typography.labelMedium,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
+                )
+            }
+            Text(
+                text = value,
+                style = MaterialTheme.typography.bodyLarge,
+                color = LessonColors.TextPrimary,
+                modifier = Modifier.weight(1f)
+            )
         }
     }
 }
@@ -104,14 +620,27 @@ private fun SectionCard(
     density: LessonVisualDensity,
     modifier: Modifier = Modifier
 ) {
-    Surface(modifier = modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.70f),
-        shape = RoundedCornerShape(16.dp)) {
-        Column(modifier = Modifier.padding(density.cardPadding),
-            verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
-            Text(section.title, style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.primary)
-            Text(section.body, style = MaterialTheme.typography.bodyLarge)
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        color = LessonColors.Surface,
+        border = BorderStroke(1.dp, LessonColors.Border),
+        shape = RoundedCornerShape(12.dp)
+    ) {
+        Column(
+            modifier = Modifier.padding(density.cardPadding),
+            verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+        ) {
+            Text(
+                section.title,
+                style = MaterialTheme.typography.titleMedium,
+                color = LessonColors.Primary,
+                fontWeight = FontWeight.SemiBold
+            )
+            Text(
+                section.body,
+                style = MaterialTheme.typography.bodyLarge,
+                color = LessonColors.TextPrimary
+            )
         }
     }
 }
@@ -121,29 +650,44 @@ private fun SectionCard(
 internal fun AnswerSections(value: JsonValue?) {
     when (value) {
         null, JsonValue.Null -> Unit
-        is JsonValue.Text -> Text(value.value, style = MaterialTheme.typography.bodyLarge)
-        is JsonValue.Number -> Text(value.value, style = MaterialTheme.typography.bodyLarge)
-        is JsonValue.Bool -> Text(if (value.value) "Evet" else "Hayır",
-            style = MaterialTheme.typography.bodyLarge)
+        is JsonValue.Text -> Text(value.value, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary)
+        is JsonValue.Number -> Text(value.value, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary)
+        is JsonValue.Bool -> Text(
+            if (value.value) "Evet" else "Hayır",
+            style = MaterialTheme.typography.bodyLarge,
+            color = LessonColors.TextPrimary
+        )
         is JsonValue.Array -> Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
             value.items.forEachIndexed { index, item ->
                 Row(horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-                    Text((index + 1).toString() + ".",
+                    Text(
+                        (index + 1).toString() + ".",
                         style = MaterialTheme.typography.labelLarge,
-                        color = MaterialTheme.colorScheme.primary)
+                        color = LessonColors.Primary,
+                        fontWeight = FontWeight.Bold
+                    )
                     Column(Modifier.weight(1f)) { AnswerSections(item) }
                 }
             }
         }
         is JsonValue.Object -> Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
             value.values.forEach { (key, item) ->
-                Surface(modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(16.dp),
-                    color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.70f)) {
-                    Column(modifier = Modifier.padding(LessonSpacing.medium),
-                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
-                        Text(key.replace("_", " "), style = MaterialTheme.typography.titleMedium,
-                            color = MaterialTheme.colorScheme.primary)
+                Surface(
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(12.dp),
+                    color = LessonColors.SurfaceSoft,
+                    border = BorderStroke(1.dp, LessonColors.Border)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(LessonSpacing.medium),
+                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                    ) {
+                        Text(
+                            key.replace("_", " "),
+                            style = MaterialTheme.typography.titleMedium,
+                            color = LessonColors.Header,
+                            fontWeight = FontWeight.SemiBold
+                        )
                         AnswerSections(item)
                     }
                 }

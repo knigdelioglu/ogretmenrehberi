@@ -11,6 +11,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
@@ -39,7 +42,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.selected
 import androidx.compose.ui.semantics.semantics
@@ -47,8 +53,6 @@ import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
@@ -68,7 +72,6 @@ import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 internal fun PhaseOneScreen(
     screen: AppScreen,
     bundle: LessonBundle,
-    contentStatus: String,
     session: LessonSession,
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit,
@@ -80,19 +83,19 @@ internal fun PhaseOneScreen(
     backupState: BackupUiState,
     beginExport: (String) -> Unit,
     beginImport: (String) -> Unit,
-    openLessonOutline: (() -> Unit)? = null
+    openLessonOutline: (() -> Unit)? = null,
+    openTeacherAssist: (() -> Unit)? = null
 ) {
     when (screen) {
-        AppScreen.LIBRARY -> LibraryScreen(
-            bundle, contentStatus, session, selectLesson, navigateToCurrent
-        )
+        AppScreen.LIBRARY -> LibraryScreen(bundle, session, selectLesson, navigateToCurrent)
         AppScreen.LESSON -> SessionLessonScreen(
-            bundle.byId.getValue(session.lessonId),
-            session,
-            dispatch,
-            actionState,
-            retryLastAction,
-            openLessonOutline
+            lesson = bundle.byId.getValue(session.lessonId),
+            state = session,
+            dispatch = dispatch,
+            actionState = actionState,
+            retryLastAction = retryLastAction,
+            openLessonOutline = openLessonOutline,
+            openTeacherAssist = openTeacherAssist
         )
         AppScreen.GUIDE -> GuideScreen(bundle, teacherPlan, toggleTeacherMark)
         AppScreen.SETTINGS -> SettingsScreen(bundle, backupState, beginExport, beginImport)
@@ -320,7 +323,6 @@ private fun SectionCard(
 @Composable
 internal fun LibraryScreen(
     bundle: LessonBundle,
-    contentStatus: String,
     session: LessonSession,
     selectLesson: (String) -> Unit,
     navigateToCurrent: () -> Unit
@@ -345,7 +347,16 @@ internal fun LibraryScreen(
     val visibleLessonCount = visibleLessonsByTheme.values.sumOf { it.size }
     val selectedLesson = bundle.byId[selectedLessonId]
         ?: bundle.byId.getValue(session.lessonId)
-    BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+    val focusManager = LocalFocusManager.current
+    val keyboardController = LocalSoftwareKeyboardController.current
+    BoxWithConstraints(
+        modifier = Modifier.fillMaxSize().pointerInput(focusManager, keyboardController) {
+            detectTapGestures {
+                focusManager.clearFocus(force = true)
+                keyboardController?.hide()
+            }
+        }
+    ) {
         if (usesTwoPaneLibrary(maxWidth.value, maxHeight.value)) {
             Row(
                 modifier = Modifier.fillMaxSize().padding(LessonSpacing.large),
@@ -355,11 +366,10 @@ internal fun LibraryScreen(
                     modifier = Modifier.weight(1.25f).fillMaxHeight(),
                     verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                 ) {
-                    LibraryHeader(bundle, contentStatus)
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = { searchQuery = it },
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier.fillMaxWidth().testTag("library-search-field"),
                         label = { Text("Ders ara") },
                         supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
                         singleLine = true
@@ -424,13 +434,10 @@ internal fun LibraryScreen(
                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
             ) {
                 item {
-                    LibraryHeader(bundle, contentStatus)
-                }
-                item {
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = { searchQuery = it },
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier.fillMaxWidth().testTag("library-search-field"),
                         label = { Text("Ders ara") },
                         supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
                         singleLine = true
@@ -493,24 +500,6 @@ internal fun usesTwoPaneLibrary(widthDp: Float, heightDp: Float): Boolean =
 
 internal fun backupPassphraseVisualTransformation(showPassphrase: Boolean): VisualTransformation =
     if (showPassphrase) VisualTransformation.None else PasswordVisualTransformation()
-
-@Composable
-private fun LibraryHeader(bundle: LessonBundle, contentStatus: String) {
-    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-        StatusTag()
-        Text("Ders, elinin altında.", style = MaterialTheme.typography.headlineMedium)
-        Text(
-            "${bundle.lessons.size} ders · ${bundle.lessons.sumOf { it.steps.size }} adım · çevrimdışı kullanılabilir",
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-        Text(
-            contentStatus,
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.secondary
-        )
-    }
-}
 
 @Composable
 private fun LibraryLessonRow(lesson: LessonData, selected: Boolean, onClick: () -> Unit) {

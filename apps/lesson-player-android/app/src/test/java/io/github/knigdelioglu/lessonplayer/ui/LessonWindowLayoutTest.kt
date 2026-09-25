@@ -51,4 +51,28 @@ class LessonWindowLayoutTest {
         assertFalse(lessonOutlineFits(1200f, 559f, isLandscape = true))
         assertFalse(lessonOutlineFits(1200f, 700f, isLandscape = false))
     }
+
+    @Test
+    fun threeColumnLayoutContractForLargeLandscapeTablet() {
+        val largeLandscape = lessonWindowLayout(widthDp = 1200, heightDp = 800)
+        val mediumLandscape = lessonWindowLayout(widthDp = 950, heightDp = 600)
+        val shortLandscape = lessonWindowLayout(widthDp = 1200, heightDp = 500)
+        val portraitTablet = lessonWindowLayout(widthDp = 800, heightDp = 1200)
+
+        assertTrue(largeLandscape.usesThreeColumn)
+        assertFalse(largeLandscape.usesTeacherAssistDrawer)
+        assertFalse(largeLandscape.usesTeacherAssistBottomSheet)
+
+        assertFalse(mediumLandscape.usesThreeColumn)
+        assertTrue(mediumLandscape.usesTeacherAssistDrawer)
+        assertFalse(mediumLandscape.usesTeacherAssistBottomSheet)
+
+        assertFalse(shortLandscape.usesThreeColumn)
+        assertFalse(shortLandscape.usesTeacherAssistDrawer)
+        assertTrue(shortLandscape.usesTeacherAssistBottomSheet)
+
+        assertFalse(portraitTablet.usesThreeColumn)
+        assertFalse(portraitTablet.usesTeacherAssistDrawer)
+        assertTrue(portraitTablet.usesTeacherAssistBottomSheet)
+    }
 }

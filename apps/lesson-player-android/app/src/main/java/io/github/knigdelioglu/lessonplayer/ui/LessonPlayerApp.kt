@@ -11,15 +11,22 @@ import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.WindowInsetsSides
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.widthIn
-import androidx.compose.material3.Icon
+import androidx.compose.foundation.layout.windowInsetsPadding
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -29,11 +36,11 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -48,8 +55,9 @@ import io.github.knigdelioglu.lessonplayer.R
 import io.github.knigdelioglu.lessonplayer.content.ContentRepository
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
 import io.github.knigdelioglu.lessonplayer.player.BackupUiState
-import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
+import io.github.knigdelioglu.lessonplayer.player.LessonCommand
+import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
@@ -57,6 +65,13 @@ import io.github.knigdelioglu.lessonplayer.player.PresentationTextSize
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanUiState
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanViewModel
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
+import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistDrawer
+import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistSheet
+import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonV2TeacherAssistPane
+import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2ActionBar
+import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Header
+import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Sidebar
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTheme
@@ -67,7 +82,6 @@ fun LessonPlayerApp() {
     LessonTheme {
         val appContext = LocalContext.current.applicationContext
         var bundle by remember { mutableStateOf<LessonBundle?>(null) }
-        var contentStatus by remember { mutableStateOf<String?>(null) }
         var loadError by remember { mutableStateOf<String?>(null) }
         var loadingContent by remember { mutableStateOf(true) }
         var loadRequest by remember { mutableIntStateOf(0) }
@@ -102,7 +116,6 @@ fun LessonPlayerApp() {
             try {
                 val loaded = contentRepository.load()
                 bundle = loaded.bundle
-                contentStatus = loaded.statusMessage
             } catch (error: Exception) {
                 loadError = error.message ?: error::class.simpleName ?: "Bilinmeyen hata"
             } finally {
@@ -184,7 +197,6 @@ fun LessonPlayerApp() {
             readySession != null -> LessonPlayerShell(
                 currentScreen = currentScreen,
                 bundle = bundle!!,
-                contentStatus = contentStatus.orEmpty(),
                 session = readySession.session,
                 presentationTextSize = presentationTextSize,
                 setPresentationTextSize = sessionViewModel::setPresentationTextSize,
@@ -222,7 +234,6 @@ fun LessonPlayerApp() {
 internal fun LessonPlayerShell(
     currentScreen: AppScreen,
     bundle: LessonBundle,
-    contentStatus: String,
     session: LessonSession,
     presentationTextSize: PresentationTextSize,
     setPresentationTextSize: (PresentationTextSize) -> Unit,
@@ -243,14 +254,28 @@ internal fun LessonPlayerShell(
             heightDp = maxHeight.value.roundToInt()
         )
         val wide = windowLayout.usesRail
+        val isThreeColumn = windowLayout.usesThreeColumn
         val dispatchAction: (LessonCommand) -> Unit = { command ->
             if (!actionState.busy) dispatch(command)
         }
         var showLessonOutline by rememberSaveable { mutableStateOf(false) }
+        var showTeacherAssist by rememberSaveable { mutableStateOf(false) }
+
+        val rawLesson = bundle.byId[session.lessonId]
+        val effectiveLesson = remember(rawLesson, session.overrides) {
+            rawLesson?.let { lesson ->
+                lesson.copy(
+                    steps = lesson.steps.map { step ->
+                        LessonEngine.effectiveStep(step, session.overrides[step.id])
+                    }
+                )
+            }
+        }
+        val currentStep = effectiveLesson?.steps?.firstOrNull { it.id == session.stepId }
 
         if (currentScreen == AppScreen.LESSON && session.presentationMode) {
             PresentationLessonScreen(
-                lesson = bundle.byId.getValue(session.lessonId),
+                lesson = effectiveLesson ?: bundle.byId.getValue(session.lessonId),
                 state = session,
                 dispatch = dispatchAction,
                 actionState = actionState,
@@ -259,14 +284,127 @@ internal fun LessonPlayerShell(
                 onTextSizeChange = setPresentationTextSize,
                 exit = { dispatchAction(LessonCommand.SetPresentationMode(false)) }
             )
+        } else if (isThreeColumn) {
+            // UI Shell V2: Büyük Landscape Tablet 3-Kolon Shell
+            val currentLesson = effectiveLesson
+
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(LessonColors.AppBg)
+                    .windowInsetsPadding(WindowInsets.safeDrawing)
+            ) {
+                // 1. Sol Koyu Mor Sidebar (%22)
+                LessonV2Sidebar(
+                    currentScreen = currentScreen,
+                    onNavigate = navigate,
+                    session = session,
+                    lesson = currentLesson,
+                    onSelectStep = { stepId -> dispatchAction(LessonCommand.GoToStep(stepId)) },
+                    enabled = !actionState.busy,
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .weight(0.22f)
+                )
+
+                if (currentScreen == AppScreen.LESSON && currentLesson != null && currentStep != null) {
+                    // Orta kolon (%45): sağ destek sütununa %50 daha fazla genişlik ayrılır.
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .weight(0.45f)
+                    ) {
+                        LessonV2Header(
+                            currentScreen = currentScreen,
+                            lesson = currentLesson,
+                            session = session
+                        )
+
+                        Box(
+                            modifier = Modifier
+                                .weight(1f)
+                                .fillMaxWidth()
+                        ) {
+                            SessionLessonScreen(
+                                lesson = currentLesson,
+                                state = session,
+                                dispatch = dispatchAction,
+                                actionState = actionState,
+                                retryLastAction = retryLastAction,
+                                isThreeColumn = true
+                            )
+                        }
+
+                        LessonV2ActionBar(
+                            step = currentStep,
+                            session = session,
+                            dispatch = dispatchAction,
+                            actionBusy = actionState.busy
+                        )
+                    }
+
+                    // En sağ kolon (%33), önceki %22 genişliğine göre %50 büyütülür.
+                    LessonV2TeacherAssistPane(
+                        step = currentStep,
+                        session = session,
+                        enabled = !actionState.busy,
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .weight(0.33f)
+                    )
+                } else {
+                    // Library, Guide ve Settings geniş içerik alanını kullanmaya devam eder.
+                    Column(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .weight(0.78f)
+                    ) {
+                        LessonV2Header(
+                            currentScreen = currentScreen,
+                            lesson = currentLesson,
+                            session = session
+                        )
+
+                        Box(
+                            modifier = Modifier
+                                .weight(1f)
+                                .fillMaxWidth()
+                                .padding(horizontal = LessonSpacing.large)
+                        ) {
+                            PhaseOneScreen(
+                                screen = currentScreen,
+                                bundle = bundle,
+                                session = session,
+                                selectLesson = selectLesson,
+                                navigateToCurrent = { navigate(AppScreen.LESSON) },
+                                dispatch = dispatchAction,
+                                actionState = actionState,
+                                retryLastAction = retryLastAction,
+                                teacherPlan = teacherPlan,
+                                toggleTeacherMark = toggleTeacherMark,
+                                backupState = backupState,
+                                beginExport = beginExport,
+                                beginImport = beginImport
+                            )
+                        }
+                    }
+                }
+            }
         } else {
+            // Standart / Medium / Compact Shell
             Scaffold(
                 contentWindowInsets = WindowInsets.safeDrawing,
                 containerColor = MaterialTheme.colorScheme.background,
                 topBar = {
                     Row(
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
                             .background(MaterialTheme.colorScheme.surface)
+                            .windowInsetsPadding(
+                                WindowInsets.safeDrawing.only(
+                                    WindowInsetsSides.Top + WindowInsetsSides.Horizontal
+                                )
+                            )
                             .heightIn(min = 76.dp)
                             .padding(
                                 horizontal = LessonSpacing.large,
@@ -286,11 +424,32 @@ internal fun LessonPlayerShell(
                                 style = MaterialTheme.typography.titleLarge
                             )
                         }
-                        Text(
-                            "11. SINIF",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.secondary
-                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                        ) {
+                            Text(
+                                "11. SINIF",
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.secondary
+                            )
+                            if (currentScreen == AppScreen.LESSON && !session.presentationMode) {
+                                FilledTonalButton(
+                                    onClick = { showTeacherAssist = true },
+                                    modifier = Modifier
+                                        .heightIn(min = LessonTarget.minimum)
+                                        .testTag("teacher-assist-open")
+                                ) {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_guide),
+                                        contentDescription = null,
+                                        modifier = Modifier.size(18.dp)
+                                    )
+                                    Spacer(Modifier.width(LessonSpacing.tiny))
+                                    Text("Öğretmen Araçları")
+                                }
+                            }
+                        }
                     }
                 },
                 bottomBar = {
@@ -357,11 +516,14 @@ internal fun LessonPlayerShell(
                             ) {
                                 showLessonOutline = false
                             }
+                            if (currentScreen != AppScreen.LESSON || session.presentationMode) {
+                                showTeacherAssist = false
+                            }
                         }
                         if (twoPaneLesson) {
                             Row(modifier = Modifier.fillMaxSize()) {
                                 LessonOutlinePane(
-                                    lesson = bundle.byId.getValue(session.lessonId),
+                                    lesson = effectiveLesson ?: bundle.byId.getValue(session.lessonId),
                                     session = session,
                                     dispatch = dispatchAction,
                                     enabled = !actionState.busy
@@ -370,11 +532,13 @@ internal fun LessonPlayerShell(
                                     modifier = Modifier.weight(1f).fillMaxSize()
                                 ) {
                                     SessionLessonScreen(
-                                        lesson = bundle.byId.getValue(session.lessonId),
+                                        lesson = effectiveLesson ?: bundle.byId.getValue(session.lessonId),
                                         state = session,
                                         dispatch = dispatchAction,
                                         actionState = actionState,
-                                        retryLastAction = retryLastAction
+                                        retryLastAction = retryLastAction,
+                                        openTeacherAssist = { showTeacherAssist = true },
+                                        isThreeColumn = false
                                     )
                                 }
                             }
@@ -390,7 +554,6 @@ internal fun LessonPlayerShell(
                                 PhaseOneScreen(
                                     currentScreen,
                                     bundle,
-                                    contentStatus,
                                     session,
                                     selectLesson,
                                     { navigate(AppScreen.LESSON) },
@@ -406,6 +569,9 @@ internal fun LessonPlayerShell(
                                         !twoPaneLesson
                                     ) {
                                         { showLessonOutline = true }
+                                    } else null,
+                                    openTeacherAssist = if (currentScreen == AppScreen.LESSON) {
+                                        { showTeacherAssist = true }
                                     } else null
                                 )
                             }
@@ -414,12 +580,34 @@ internal fun LessonPlayerShell(
                             !twoPaneLesson && !session.presentationMode
                         ) {
                             LessonOutlineSheet(
-                                lesson = bundle.byId.getValue(session.lessonId),
+                                lesson = effectiveLesson ?: bundle.byId.getValue(session.lessonId),
                                 session = session,
                                 dispatch = dispatchAction,
                                 dismiss = { showLessonOutline = false },
                                 enabled = !actionState.busy
                             )
+                        }
+                        if (showTeacherAssist && currentScreen == AppScreen.LESSON &&
+                            !session.presentationMode
+                        ) {
+                            val fallbackStep = currentStep
+                            if (fallbackStep != null) {
+                                if (windowLayout.usesTeacherAssistDrawer) {
+                                    LessonTeacherAssistDrawer(
+                                        step = fallbackStep,
+                                        session = session,
+                                        dismiss = { showTeacherAssist = false },
+                                        enabled = !actionState.busy
+                                    )
+                                } else if (windowLayout.usesTeacherAssistBottomSheet) {
+                                    LessonTeacherAssistSheet(
+                                        step = fallbackStep,
+                                        session = session,
+                                        dismiss = { showTeacherAssist = false },
+                                        enabled = !actionState.busy
+                                    )
+                                }
+                            }
                         }
                     }
                 }

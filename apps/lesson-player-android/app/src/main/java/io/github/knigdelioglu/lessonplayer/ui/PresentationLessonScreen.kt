@@ -1,6 +1,7 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
 import androidx.compose.animation.AnimatedContent
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -13,24 +14,29 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
@@ -43,6 +49,8 @@ import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.PresentationTextSize
 import io.github.knigdelioglu.lessonplayer.player.toStudentProjection
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
@@ -74,8 +82,8 @@ internal fun PresentationLessonScreen(
     val answerDetails = projection.answerSections?.takeIf {
         readableAnswerValue(it) != projection.answerText
     }
-    val advanceEnabled = step.revealOrder.any { it !in state.revealed } ||
-        ordinal < state.order.lastIndex
+    val advanceCommand = nextLessonCommand(step, state)
+    val advanceEnabled = !actionState.busy && advanceCommand != null
     val send: (LessonCommand) -> Unit = { command ->
         if (!actionState.busy) dispatch(command)
     }
@@ -88,244 +96,317 @@ internal fun PresentationLessonScreen(
             fontScale = baseDensity.fontScale * textSize.scale
         )
     ) {
-      Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .windowInsetsPadding(WindowInsets.safeDrawing)
-    ) {
-        Surface(
-            color = MaterialTheme.colorScheme.surface,
-            shadowElevation = 4.dp
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(LessonColors.AppBg)
+                .windowInsetsPadding(WindowInsets.safeDrawing)
         ) {
-            Row(
-                modifier = Modifier.fillMaxWidth().padding(
-                    horizontal = LessonSpacing.medium,
-                    vertical = LessonSpacing.tiny
-                ),
-                horizontalArrangement = Arrangement.SpaceBetween
+            Surface(
+                color = LessonColors.Surface,
+                border = BorderStroke(1.dp, LessonColors.Border)
             ) {
-                Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
-                    Text(
-                        "SINIF SUNUMU",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.secondary
-                    )
-                    Text(
-                        "${ordinal + 1} / ${state.order.size}",
-                        style = MaterialTheme.typography.titleMedium
-                    )
-                }
                 Row(
-                    verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = LessonSpacing.medium, vertical = LessonSpacing.tiny),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Box {
-                        TextButton(
-                            onClick = { textSizeMenuExpanded = true },
-                            modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                        ) { Text("Yazı: ${textSize.label}") }
-                        DropdownMenu(
-                            expanded = textSizeMenuExpanded,
-                            onDismissRequest = { textSizeMenuExpanded = false }
-                        ) {
-                            PresentationTextSize.entries.forEach { option ->
-                                DropdownMenuItem(
-                                    text = { Text(option.label) },
-                                    onClick = {
-                                        onTextSizeChange(option)
-                                        textSizeMenuExpanded = false
-                                    }
-                                )
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
+                        Text(
+                            text = "SINIF SUNUMU",
+                            style = MaterialTheme.typography.labelMedium,
+                            color = LessonColors.Header,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            text = "${ordinal + 1} / ${state.order.size}",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = LessonColors.TextPrimary,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                    ) {
+                        Box {
+                            TextButton(
+                                onClick = { textSizeMenuExpanded = true },
+                                modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                            ) { Text("Yazı: ${textSize.label}") }
+                            DropdownMenu(
+                                expanded = textSizeMenuExpanded,
+                                onDismissRequest = { textSizeMenuExpanded = false }
+                            ) {
+                                PresentationTextSize.entries.forEach { option ->
+                                    DropdownMenuItem(
+                                        text = { Text(option.label) },
+                                        onClick = {
+                                            onTextSizeChange(option)
+                                            textSizeMenuExpanded = false
+                                        }
+                                    )
+                                }
                             }
                         }
+                        TextButton(
+                            onClick = exit,
+                            modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                        ) { Text("Sunumdan çık") }
                     }
-                    TextButton(
-                        onClick = exit,
-                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                    ) { Text("Sunumdan çık") }
                 }
             }
-        }
-        LessonActionStatus(actionState, retryLastAction)
-        Box(
-            modifier = Modifier.weight(1f).fillMaxWidth(),
-            contentAlignment = androidx.compose.ui.Alignment.TopCenter
-        ) {
-            LazyColumn(
-                modifier = Modifier.fillMaxWidth().widthIn(max = 960.dp),
-                contentPadding = PaddingValues(
-                    horizontal = density.screenPadding,
-                    vertical = density.blockGap
-                ),
-                verticalArrangement = Arrangement.spacedBy(density.blockGap)
+            LessonActionStatus(actionState, retryLastAction)
+
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(),
+                contentAlignment = Alignment.TopCenter
             ) {
-            item {
-                Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
-                    Text(lesson.title, style = MaterialTheme.typography.headlineLarge)
-                    Text(
-                        "Basılı s. ${projection.printedPageRange}",
-                        style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-            item {
-                Surface(
-                    modifier = Modifier.fillMaxWidth(),
-                    color = MaterialTheme.colorScheme.surface,
-                    tonalElevation = 3.dp,
-                    shape = MaterialTheme.shapes.extraLarge
+                LazyColumn(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .widthIn(max = 1000.dp),
+                    contentPadding = PaddingValues(
+                        horizontal = density.screenPadding,
+                        vertical = density.blockGap
+                    ),
+                    verticalArrangement = Arrangement.spacedBy(density.blockGap)
                 ) {
-                    Column(
-                        modifier = Modifier.padding(density.cardPadding),
-                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
-                    ) {
-                        Text(
-                            if (step.answer?.entryType == "source_limited")
-                                "KAYNAK SINIRI"
-                            else step.source.taskType.uppercase(),
-                            style = MaterialTheme.typography.labelLarge,
-                            color = MaterialTheme.colorScheme.secondary
-                        )
-                        AnimatedContent(
-                            targetState = projection.answerText ?: projection.prompt
-                                ?: step.displayPrompt,
-                            label = "presentation-prompt-answer"
-                        ) { text ->
-                            Text(text, style = MaterialTheme.typography.headlineLarge)
+                    item {
+                        Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
+                            Text(
+                                text = lesson.title,
+                                style = MaterialTheme.typography.headlineLarge,
+                                color = LessonColors.TextPrimary,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Text(
+                                text = "Basılı s. ${projection.printedPageRange}",
+                                style = MaterialTheme.typography.bodyLarge,
+                                color = LessonColors.TextSecondary
+                            )
                         }
                     }
-                }
-            }
-            if (!answerVisible || step.layout in setOf(
-                    LayoutKind.STRUCTURE,
-                    LayoutKind.COMPARISON,
-                    LayoutKind.ASSESSMENT
-                )
-            ) {
-                item { LessonContentLayout(step) }
-            }
-            if (step.layout == LayoutKind.VOCABULARY) {
-                val definitions = (step.answer?.answerSections as? JsonValue.Object)
-                    ?.values.orEmpty()
-                if (definitions.isNotEmpty()) {
+
                     item {
                         Surface(
                             modifier = Modifier.fillMaxWidth(),
-                            color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.70f),
-                            shape = MaterialTheme.shapes.extraLarge
+                            color = LessonColors.Surface,
+                            border = BorderStroke(1.dp, LessonColors.Border),
+                            shape = RoundedCornerShape(LessonShape.card)
                         ) {
                             Column(
                                 modifier = Modifier.padding(density.cardPadding),
-                                verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
                             ) {
-                                projection.visibleVocabulary.forEach { (term, value) ->
+                                Text(
+                                    text = if (step.answer?.entryType == "source_limited")
+                                        "KAYNAK SINIRI"
+                                    else step.source.taskType.uppercase(),
+                                    style = MaterialTheme.typography.labelLarge,
+                                    color = LessonColors.Primary,
+                                    fontWeight = FontWeight.Bold
+                                )
+                                AnimatedContent(
+                                    targetState = projection.answerText ?: projection.prompt
+                                        ?: step.displayPrompt,
+                                    label = "presentation-prompt-answer"
+                                ) { text ->
                                     Text(
-                                        term,
-                                        style = MaterialTheme.typography.titleMedium,
-                                        color = MaterialTheme.colorScheme.primary
-                                    )
-                                    Text(
-                                        readableAnswerValue(value),
-                                        style = MaterialTheme.typography.bodyLarge
-                                    )
-                                }
-                                if (projection.visibleVocabulary.isEmpty()) {
-                                    Text(
-                                        "Önce kelimenin anlamını tahmin edin.",
-                                        style = MaterialTheme.typography.bodyLarge
+                                        text = text,
+                                        style = MaterialTheme.typography.headlineLarge,
+                                        color = LessonColors.TextPrimary,
+                                        fontWeight = FontWeight.SemiBold
                                     )
                                 }
                             }
                         }
                     }
-                }
-            }
-            if (answerVisible && step.layout != LayoutKind.VOCABULARY && answerDetails != null) {
-                item {
-                    Surface(
-                        modifier = Modifier.fillMaxWidth(),
-                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f),
-                        shape = MaterialTheme.shapes.extraLarge
+
+                    if (!answerVisible || step.layout in setOf(
+                            LayoutKind.STRUCTURE,
+                            LayoutKind.COMPARISON,
+                            LayoutKind.ASSESSMENT
+                        )
                     ) {
-                        Column(
-                            modifier = Modifier.padding(density.cardPadding),
-                            verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-                        ) {
-                            Text("CEVAP AYRINTILARI", style = MaterialTheme.typography.labelLarge)
-                            AnswerSections(answerDetails)
+                        item { LessonContentLayout(step, answerVisible = answerVisible) }
+                    }
+
+                    if (step.layout == LayoutKind.VOCABULARY) {
+                        val definitions = (step.answer?.answerSections as? JsonValue.Object)
+                            ?.values.orEmpty()
+                        if (definitions.isNotEmpty()) {
+                            item {
+                                Surface(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    color = LessonColors.Surface,
+                                    border = BorderStroke(1.dp, LessonColors.Border),
+                                    shape = RoundedCornerShape(LessonShape.card)
+                                ) {
+                                    Column(
+                                        modifier = Modifier.padding(density.cardPadding),
+                                        verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                    ) {
+                                        projection.visibleVocabulary.forEach { (term, value) ->
+                                            Text(
+                                                text = term,
+                                                style = MaterialTheme.typography.titleMedium,
+                                                color = LessonColors.Primary,
+                                                fontWeight = FontWeight.Bold
+                                            )
+                                            Text(
+                                                text = readableAnswerValue(value),
+                                                style = MaterialTheme.typography.bodyLarge,
+                                                color = LessonColors.TextPrimary
+                                            )
+                                        }
+                                        if (projection.visibleVocabulary.isEmpty()) {
+                                            Text(
+                                                text = "Önce kelimenin anlamını tahmin edin.",
+                                                style = MaterialTheme.typography.bodyLarge,
+                                                color = LessonColors.TextSecondary
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if (answerVisible && step.layout !in setOf(LayoutKind.VOCABULARY, LayoutKind.COMPARISON) && answerDetails != null) {
+                        item {
+                            Surface(
+                                modifier = Modifier.fillMaxWidth(),
+                                color = LessonColors.AnswerSurface,
+                                border = BorderStroke(1.dp, LessonColors.AnswerBorder),
+                                shape = RoundedCornerShape(LessonShape.card)
+                            ) {
+                                Column(
+                                    modifier = Modifier.padding(density.cardPadding),
+                                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                ) {
+                                    Text(
+                                        text = "CEVAP AYRINTILARI",
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = LessonColors.AnswerText,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    AnswerSections(answerDetails)
+                                }
+                            }
+                        }
+                    }
+
+                    projection.guidance?.let { value ->
+                        item {
+                            PresentationRevealCard(
+                                label = "YÖNLENDİRME",
+                                text = value,
+                                surfaceColor = LessonColors.GuidanceSurface,
+                                borderColor = LessonColors.GuidanceBorder,
+                                textColor = LessonColors.GuidanceText
+                            )
+                        }
+                    }
+
+                    if (projection.evidenceQuotes.isNotEmpty()) {
+                        item {
+                            PresentationRevealCard(
+                                label = "METİNDEN KANIT",
+                                text = projection.evidenceQuotes.joinToString("\n\n"),
+                                surfaceColor = LessonColors.EvidenceSurface,
+                                borderColor = LessonColors.EvidenceBorder,
+                                textColor = LessonColors.EvidenceText
+                            )
+                        }
+                    }
+
+                    projection.explanation?.let { value ->
+                        item {
+                            PresentationRevealCard(
+                                label = "AÇIKLAMA",
+                                text = value,
+                                surfaceColor = LessonColors.ExplanationSurface,
+                                borderColor = LessonColors.ExplanationBorder,
+                                textColor = LessonColors.ExplanationText
+                            )
                         }
                     }
                 }
             }
-            projection.guidance?.let { value ->
-                item { PresentationRevealCard("YÖNLENDİRME", value) }
-            }
-            if (projection.evidenceQuotes.isNotEmpty()) {
-                item {
-                    PresentationRevealCard(
-                        "METİNDEN KANIT",
-                        projection.evidenceQuotes.joinToString("\n")
-                    )
+
+            Surface(
+                color = LessonColors.Surface,
+                border = BorderStroke(1.dp, LessonColors.Border)
+            ) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = LessonSpacing.small, vertical = LessonSpacing.tiny),
+                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                ) {
+                    FilledTonalButton(
+                        onClick = { send(LessonCommand.Previous) },
+                        modifier = Modifier
+                            .weight(1f)
+                            .heightIn(min = LessonTarget.minimum),
+                        enabled = !actionState.busy && ordinal > 0
+                    ) { Text("Önceki") }
+
+                    FilledTonalButton(
+                        onClick = { advanceCommand?.let(send) },
+                        modifier = Modifier
+                            .weight(1f)
+                            .heightIn(min = LessonTarget.minimum),
+                        enabled = advanceEnabled
+                    ) { Text(nextLessonActionLabel(step, state)) }
+
+                    FilledTonalButton(
+                        onClick = { send(LessonCommand.Next) },
+                        modifier = Modifier
+                            .weight(1f)
+                            .heightIn(min = LessonTarget.minimum),
+                        enabled = !actionState.busy && ordinal < state.order.lastIndex
+                    ) { Text("Sonraki") }
                 }
             }
-            projection.explanation?.let { value ->
-                item { PresentationRevealCard("AÇIKLAMA", value) }
-            }
-            }
         }
-        Surface(
-            color = MaterialTheme.colorScheme.surface,
-            shadowElevation = 8.dp
-        ) {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(
-                        horizontal = LessonSpacing.small,
-                        vertical = LessonSpacing.tiny
-                    ),
-                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
-            ) {
-                FilledTonalButton(
-                    onClick = { send(LessonCommand.Previous) },
-                    modifier = Modifier.weight(1f)
-                        .heightIn(min = LessonTarget.minimum),
-                    enabled = !actionState.busy && ordinal > 0
-                ) { Text("Önceki") }
-                FilledTonalButton(
-                    onClick = { send(LessonCommand.RevealNext) },
-                    modifier = Modifier.weight(1f)
-                        .heightIn(min = LessonTarget.minimum),
-                    enabled = !actionState.busy && advanceEnabled
-                ) { Text(nextLessonActionLabel(step, state)) }
-                FilledTonalButton(
-                    onClick = { send(LessonCommand.Next) },
-                    modifier = Modifier.weight(1f)
-                        .heightIn(min = LessonTarget.minimum),
-                    enabled = !actionState.busy && ordinal < state.order.lastIndex
-                ) { Text("Sonraki") }
-            }
-        }
-      }
     }
 }
 
 @Composable
-private fun PresentationRevealCard(label: String, text: String) {
+private fun PresentationRevealCard(
+    label: String,
+    text: String,
+    surfaceColor: Color,
+    borderColor: Color,
+    textColor: Color
+) {
     Surface(
         modifier = Modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.70f),
-        shape = MaterialTheme.shapes.extraLarge
+        color = surfaceColor,
+        border = BorderStroke(1.dp, borderColor),
+        shape = RoundedCornerShape(LessonShape.card)
     ) {
         Column(
             modifier = Modifier.padding(LessonSpacing.large),
             verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
         ) {
-            Text(label, style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.primary)
-            Text(text, style = MaterialTheme.typography.bodyLarge)
+            Text(
+                text = label,
+                style = MaterialTheme.typography.labelLarge,
+                color = textColor,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = text,
+                style = MaterialTheme.typography.bodyLarge,
+                color = textColor
+            )
         }
     }
 }

@@ -10,67 +10,67 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Low-saturation, paper-like light palette for long reading sessions.
-val Ink = Color(0xFF253443)
-val Mint = Color(0xFFE8F1F6)
-val Paper = Color(0xFFF7F9FB)
+// Backward compatibility & central references
+val Ink = LessonColors.TextPrimary
+val Mint = Color(0xFFECEAFE)
+val Paper = LessonColors.AppBg
 val Amber = Color(0xFFAE8050)
-val AmberText = Color(0xFF795329)
-val SoftInk = Color(0xFF526477)
-val DeepSurface = Color(0xFF142521)
+val AmberText = LessonColors.NoteText
+val SoftInk = LessonColors.TextSecondary
+val DeepSurface = Color(0xFF19162C)
 
 internal val Light = lightColorScheme(
-    primary = Color(0xFF415F73),
+    primary = LessonColors.Primary,
     onPrimary = Color.White,
     primaryContainer = Mint,
-    onPrimaryContainer = Ink,
-    secondary = SoftInk,
+    onPrimaryContainer = Color(0xFF160064),
+    secondary = LessonColors.Header,
     onSecondary = Color.White,
-    secondaryContainer = Color(0xFFEDF3F7),
-    onSecondaryContainer = Ink,
-    tertiary = AmberText,
+    secondaryContainer = LessonColors.SurfaceSoft,
+    onSecondaryContainer = LessonColors.TextPrimary,
+    tertiary = LessonColors.ExplanationText,
     onTertiary = Color.White,
-    tertiaryContainer = Color(0xFFF7EFE4),
-    onTertiaryContainer = Color(0xFF634521),
-    background = Paper,
-    onBackground = Ink,
-    surface = Color.White,
-    onSurface = Ink,
-    surfaceVariant = Color(0xFFEEF2F5),
-    onSurfaceVariant = SoftInk,
-    outline = Color(0xFFB5C3CC),
-    outlineVariant = Color(0xFFDCE5EB),
-    error = Color(0xFFB3261E),
-    onError = Color.White,
-    errorContainer = Color(0xFFFCECE8),
-    onErrorContainer = Color(0xFF5F1814),
-    inverseSurface = Ink,
-    inverseOnSurface = Paper
+    tertiaryContainer = LessonColors.ExplanationSurface,
+    onTertiaryContainer = LessonColors.ExplanationText,
+    background = LessonColors.AppBg,
+    onBackground = LessonColors.TextPrimary,
+    surface = LessonColors.Surface,
+    onSurface = LessonColors.TextPrimary,
+    surfaceVariant = LessonColors.SurfaceSoft,
+    onSurfaceVariant = LessonColors.TextSecondary,
+    outline = LessonColors.Border,
+    outlineVariant = Color(0xFFE8ECF4),
+    error = LessonColors.Error,
+    onError = LessonColors.OnError,
+    errorContainer = LessonColors.ErrorContainer,
+    onErrorContainer = LessonColors.OnErrorContainer,
+    inverseSurface = LessonColors.TextPrimary,
+    inverseOnSurface = LessonColors.AppBg
 )
 
 private val Dark = darkColorScheme(
-    primary = Color(0xFFA9D5C3),
-    onPrimary = DeepSurface,
-    primaryContainer = Color(0xFF29493F),
-    onPrimaryContainer = Color(0xFFE3F5EB),
-    secondary = Color(0xFFDDBB83),
-    onSecondary = DeepSurface,
-    background = Color(0xFF101B18),
-    onBackground = Color(0xFFE6F2EA),
+    primary = Color(0xFFC7BFFF),
+    onPrimary = Color(0xFF260099),
+    primaryContainer = Color(0xFF3D1CB7),
+    onPrimaryContainer = Color(0xFFE5DEFF),
+    secondary = Color(0xFFC9BEFF),
+    onSecondary = Color(0xFF251080),
+    background = Color(0xFF13111C),
+    onBackground = Color(0xFFE5E1EC),
     surface = DeepSurface,
-    onSurface = Color(0xFFE6F2EA),
-    surfaceVariant = Color(0xFF2B3D36),
-    onSurfaceVariant = Color(0xFFC4D6CA),
-    outline = Color(0xFF5B786A)
+    onSurface = Color(0xFFE5E1EC),
+    surfaceVariant = Color(0xFF282438),
+    onSurfaceVariant = Color(0xFFC8C3D4),
+    outline = Color(0xFF736E85)
 )
 
 private val LessonTypography = Typography(
-    headlineLarge = TextStyle(fontSize = 32.sp, lineHeight = 38.sp, fontWeight = FontWeight.SemiBold),
-    headlineMedium = TextStyle(fontSize = 26.sp, lineHeight = 32.sp, fontWeight = FontWeight.SemiBold),
-    titleLarge = TextStyle(fontSize = 22.sp, lineHeight = 29.sp, fontWeight = FontWeight.SemiBold),
-    titleMedium = TextStyle(fontSize = 17.sp, lineHeight = 24.sp, fontWeight = FontWeight.Medium),
-    bodyLarge = TextStyle(fontSize = 17.sp, lineHeight = 27.sp),
-    bodyMedium = TextStyle(fontSize = 15.sp, lineHeight = 23.sp),
+    headlineLarge = TextStyle(fontSize = 30.sp, lineHeight = 36.sp, fontWeight = FontWeight.SemiBold),
+    headlineMedium = TextStyle(fontSize = 24.sp, lineHeight = 30.sp, fontWeight = FontWeight.SemiBold),
+    titleLarge = TextStyle(fontSize = 20.sp, lineHeight = 26.sp, fontWeight = FontWeight.SemiBold),
+    titleMedium = TextStyle(fontSize = 16.sp, lineHeight = 22.sp, fontWeight = FontWeight.Medium),
+    bodyLarge = TextStyle(fontSize = 16.sp, lineHeight = 24.sp),
+    bodyMedium = TextStyle(fontSize = 14.sp, lineHeight = 20.sp),
     labelLarge = TextStyle(fontSize = 14.sp, fontWeight = FontWeight.SemiBold),
     labelMedium = TextStyle(fontSize = 12.sp, fontWeight = FontWeight.Medium)
 )

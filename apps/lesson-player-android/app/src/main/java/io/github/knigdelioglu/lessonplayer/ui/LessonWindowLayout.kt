@@ -19,6 +19,15 @@ data class LessonWindowLayout(
     val usesRail: Boolean
         get() = isLandscape && widthClass != LessonWindowWidthClass.COMPACT && !isShort
 
+    val usesThreeColumn: Boolean
+        get() = isLandscape && widthDp >= 1000 && !isShort
+
+    val usesTeacherAssistDrawer: Boolean
+        get() = !usesThreeColumn && isLandscape && !isShort
+
+    val usesTeacherAssistBottomSheet: Boolean
+        get() = !usesThreeColumn && !usesTeacherAssistDrawer
+
     val usesLessonOutline: Boolean
         get() = lessonOutlineFits(
             usableContentWidthDp = widthDp.toFloat() -

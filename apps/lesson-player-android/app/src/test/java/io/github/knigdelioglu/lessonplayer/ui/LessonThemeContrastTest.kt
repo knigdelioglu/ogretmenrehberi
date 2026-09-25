@@ -3,6 +3,7 @@ package io.github.knigdelioglu.lessonplayer.ui
 import androidx.compose.ui.graphics.Color
 import io.github.knigdelioglu.lessonplayer.ui.theme.AmberText
 import io.github.knigdelioglu.lessonplayer.ui.theme.Ink
+import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.Light
 import io.github.knigdelioglu.lessonplayer.ui.theme.Mint
 import io.github.knigdelioglu.lessonplayer.ui.theme.Paper
@@ -20,6 +21,9 @@ class LessonThemeContrastTest {
         assertTrue(contrastRatio(SoftInk, Light.surfaceVariant) >= 4.5)
         assertTrue(contrastRatio(Light.onPrimaryContainer, Mint) >= 4.5)
         assertTrue(contrastRatio(Light.onSecondaryContainer, Light.secondaryContainer) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.TextPrimary, LessonColors.AppBg) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.TextPrimary, LessonColors.Surface) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.TextSecondary, LessonColors.SurfaceSoft) >= 4.5)
     }
 
     @Test
@@ -30,5 +34,15 @@ class LessonThemeContrastTest {
         assertTrue(contrastRatio(Light.onTertiaryContainer, Light.tertiaryContainer) >= 4.5)
         assertTrue(contrastRatio(AmberText, Paper) >= 4.5)
         assertTrue(contrastRatio(AmberText, Color.White) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.SidebarText, LessonColors.SidebarBg) >= 4.5)
+    }
+
+    @Test
+    fun semanticTeacherAssistPanelsMeetAccessibleContrast() {
+        assertTrue(contrastRatio(LessonColors.GuidanceText, LessonColors.GuidanceSurface) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.AnswerText, LessonColors.AnswerSurface) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.ExplanationText, LessonColors.ExplanationSurface) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.EvidenceText, LessonColors.EvidenceSurface) >= 4.5)
+        assertTrue(contrastRatio(LessonColors.NoteText, LessonColors.NoteSurface) >= 4.5)
     }
 }
