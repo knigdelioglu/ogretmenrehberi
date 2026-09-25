@@ -73,7 +73,7 @@ jobs:
         run: |
           set -euo pipefail
           if ! gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            gh release create "$RELEASE_TAG"               --repo "$GITHUB_REPOSITORY"               --target "$GITHUB_SHA"               --title "Öğretmen Rehberi Android v0.1.3"               --notes "Android 16 Lesson Player: main dalındaki güncel ders içeriği ve arayüz düzeltmelerini içeren doğrulanmış debug build. Production signing henüz yapılandırılmadığı için önceki sürümün üzerine yükleme garantisi yoktur."
+            gh release create "$RELEASE_TAG"               --repo "$GITHUB_REPOSITORY"               --target "$GITHUB_SHA"               --title "Öğretmen Rehberi Android v0.1.3"               --notes "Android 16 Lesson Player: main dalındaki güncel ders içeriği, metinsel kanıt gösterimleri ve arayüz düzeltmelerini içeren doğrulanmış debug build. Production signing henüz yapılandırılmadığı için önceki sürümün üzerine yükleme garantisi yoktur."
           fi
 
       - name: Upload APK and SHA-256 to Release
