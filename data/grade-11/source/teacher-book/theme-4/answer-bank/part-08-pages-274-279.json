@@ -202,9 +202,28 @@
         "sectigim_olcut": "[...]",
         "begendim_begenmedim": "[...]",
         "metinden_kanit": "[...]",
-        "gerekcem": "[...]"
+        "gerekcem": "[...]",
+        "olcutlere_gore_ornek_metin_kanitlari": {
+          "Dil ve üslup": [
+            "“Çabuk çabuk” tekrarının ritim oluşturması.",
+            "“Bahtiyar ol” gibi kısa ve doğal diyalogların gündelik konuşma etkisi yaratması."
+          ],
+          "Açık uçlu anlatım": [
+            "Anlatıcının sonunda yukarı çıkmak yerine aşağı inmeyi seçmesi ve kararın anlamının okura bırakılması."
+          ],
+          "Karakterlerin sunuluşu": [
+            "Kişilerin özel ad yerine “ihtiyar memur”, “delikanlı/genç memur” gibi genel tanımlarla verilmesi."
+          ],
+          "Çağrışım gücü": [
+            "Merdiven, çıkmak–inmek ve yol vermek eylemlerinin iş yaşamı, yaşlanma, yükselme ve öncelikler hakkında çağrışım üretmesi."
+          ]
+        }
       },
-      "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir."
+      "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir.",
+      "evidence_quotes": [
+        "Çabuk çabuk",
+        "Bahtiyar ol"
+      ]
     },
     {
       "question_id": "T4-P279-PERF02",
