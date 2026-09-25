@@ -11,7 +11,15 @@
       "prompt_summary": "Karagöz oyununun günümüzde yaşamasının nedenleri",
       "answer": "Oyunun günümüzdeki gösteri ve etkinliklerde sürdürülmesi, izleyicinin tanıdığı tipler, mizah, canlı icra veya kültürel aktarım gibi etkenlerle açıklanabilir. Bunlar olası gerekçelerdir; öğrenci bir gerekçeyi seçip oyunun özelliklerinden ya da soruda verilen güncel gösterim bağlamından örnekle destekleyebilir.",
       "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
-      "guidance": "Başlangıçta oyunun günümüzde nerelerde ve hangi biçimde karşılarına çıktığını sordurun. Öğrenciler seçtikleri olası nedeni oyundaki bir özellik veya sorudaki gösterim örneğiyle ilişkilendirsin; farklı nedenleri kanıt ve gerekçe tutarlıysa kabul edin."
+      "guidance": "Başlangıçta oyunun günümüzde nerelerde ve hangi biçimde karşılarına çıktığını sordurun. Öğrenciler seçtikleri olası nedeni oyundaki bir özellik veya sorudaki gösterim örneğiyle ilişkilendirsin; farklı nedenleri kanıt ve gerekçe tutarlıysa kabul edin.",
+      "answer_sections": {
+        "Metinden gösterilebilecek örnekler": [
+          "Dil mizahı: Hacivat’ın “hutûr etti” sözünün Karagöz tarafından “tarçın mı gitti” biçiminde anlaşılması.",
+          "Söz oyunu ve yanlış anlama: “Gonce-dehânım” hitabının “Pencerede hanım” biçimine çekilmesi.",
+          "Tanıdık tip ve konuşma karşıtlığı: Hacivat’ın daha ağır söz varlığı ile Karagöz’ün gündelik söyleyişinin sürekli karşı karşıya gelmesi."
+        ],
+        "Bu örneklerin günümüzde yaşamasına katkısı": "Tanıdık tipler, söz oyunları ve canlı diyalog yapısı farklı dönemlerde yeniden sahnelenmeye elverişli bir mizah üretir; öğrenci başka bir nedeni de metin veya güncel gösterim bağlamıyla gerekçelendirebilir."
+      }
     },
     {
       "question_id": "T1-P30-Q02",
@@ -20,7 +28,12 @@
       "prompt_summary": "Karagöz'ün Türk kültüründeki değeri",
       "answer": "Karagöz’ün kültürel değeri; dil ve mizah anlayışını, sahne geleneğini ya da toplumdaki farklı tiplerin temsillerini aktarması üzerinden yorumlanabilir. Hangi yönün daha değerli bulunduğu öğrencinin görüşüdür; yanıt, seçilen yönü oyundan veya tema içindeki bilgilerden bir örnekle gerekçelendirmelidir.",
       "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
-      "guidance": "Öğrenciden önce Karagöz’ün kültüre taşıdığını düşündüğü bir yönü seçmesini, ardından bunu metindeki veya temada öğrendiği somut bir örnekle desteklemesini isteyin. Kişisel değer yargısını kaynakta doğrudan verilen bilgi gibi sunmamasına dikkat edin."
+      "guidance": "Öğrenciden önce Karagöz’ün kültüre taşıdığını düşündüğü bir yönü seçmesini, ardından bunu metindeki veya temada öğrendiği somut bir örnekle desteklemesini isteyin. Kişisel değer yargısını kaynakta doğrudan verilen bilgi gibi sunmamasına dikkat edin.",
+      "answer_sections": {
+        "Dil ve mizah": "“hutûr etti / tarçın mı gitti”, “Gonce-dehânım / Pencerede hanım” gibi yanlış anlamalar geleneksel söz oyununu ve dil mizahını somutlaştırır.",
+        "Gündelik kültür": "Yazıcılık, dükkân, hokka-kalem-kâğıt, kuruş ve dirhem gibi unsurlar geçmiş şehir hayatına ilişkin ayrıntılar taşır.",
+        "Toplumsal çeşitlilik": "Lâz tipinin bölgesel söyleyişi, Çelebi’nin ağır ve şiirli dili ve farklı kişilerin farklı söz varlıkları toplumdaki çeşitli çevreleri sahne üzerinde yan yana getirir."
+      }
     },
     {
       "question_id": "T1-P30-Q03",
@@ -29,7 +42,19 @@
       "prompt_summary": "Yazıcı metninin konusu ve teması",
       "answer": "Konu, Yazıcı metninde gerçekleşen olay ve yanlış anlamalardır; örneğin Karagöz’ün yazıcılık girişimi ve bu sırada karşılaştığı kişilerle yaşadıkları. Tema, bu olayların düşündürdüğü daha genel anlamdır. İletişim ve anlaşılma, dil farklılıkları veya bilmediği bir işi üstlenmenin sonuçları metne dayalı tema önerileri olabilir; öğrenci seçimini olaylardan hareketle gerekçelendirmelidir.",
       "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
-      "guidance": "Öğrenciye “Metinde somut olarak ne oluyor?” ve “Bu olay daha genel olarak hangi meseleyi düşündürüyor?” sorularını yöneltin. Konu için olay örgüsünden, tema için birden fazla olası yorumu destekleyebilen metin ayrıntısından kanıt istensin."
+      "guidance": "Öğrenciye “Metinde somut olarak ne oluyor?” ve “Bu olay daha genel olarak hangi meseleyi düşündürüyor?” sorularını yöneltin. Konu için olay örgüsünden, tema için birden fazla olası yorumu destekleyebilen metin ayrıntısından kanıt istensin.",
+      "answer_sections": {
+        "Konu için metin kanıtları": [
+          "Karagöz’ün okuma-yazma bilmediği hâlde yazıcılık yapması.",
+          "Müşterilerin sözlerini ses benzerliğiyle başka anlamlara çekmesi ve bunun art arda yanlış anlamalara yol açması.",
+          "Farklı konuşma biçimlerine sahip kişilerin aynı yazıcı dükkânında karşılaşması."
+        ],
+        "Tema için metin kanıtları": [
+          "“hutûr etti / tarçın mı gitti” örneği iletişimde ortak anlam kurulamamasını görünür kılar.",
+          "“Gonce-dehânım / Pencerede hanım” örneği dil farklılığının yanlış anlamayı nasıl üretebildiğini gösterir.",
+          "Okuma-yazma bilmeden yazıcılık yapma durumu, bilmediği bir işi üstlenmenin sonuçları temasını destekleyebilir."
+        ]
+      }
     }
   ]
 }
