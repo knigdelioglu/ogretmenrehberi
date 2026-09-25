@@ -11,7 +11,18 @@
       "prompt_summary": "Metindeki açık ve örtük iletiler",
       "answer": "Açık ileti, metinde doğrudan söylenen veya olay akışında açıkça görülen düşüncedir; örtük ileti ise metin ayrıntılarından çıkarılan yorumdur. Karagöz’ün yazıcılık sırasında okuma-yazma bilgisiyle ilgili sözleri ve yanlış anlamalar, açık gözlemler için; dil farklılıklarının anlaşmayı nasıl etkilediği ya da bir işi bilmeden üstlenmenin sonucu gibi yorumlar örtük ileti önerileri için dayanak olabilir. Her çıkarım ilgili söz veya olayla doğrulanmalıdır.",
       "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
-      "guidance": "Her iletiyi “metinde doğrudan görülen/söylenen” ve “bu ayrıntıdan çıkarılan yorum” olarak ayırmasını isteyin. Örtük ileti için öğrenciden belirli bir replik ya da olay göstermesini, sonra çıkarımının bu kanıtı aşıp aşmadığını açıklamasını isteyin; genel bir ahlak dersi dayatmayın."
+      "guidance": "Her iletiyi “metinde doğrudan görülen/söylenen” ve “bu ayrıntıdan çıkarılan yorum” olarak ayırmasını isteyin. Örtük ileti için öğrenciden belirli bir replik ya da olay göstermesini, sonra çıkarımının bu kanıtı aşıp aşmadığını açıklamasını isteyin; genel bir ahlak dersi dayatmayın.",
+      "answer_sections": {
+        "Metinde doğrudan görülen örnekler": [
+          "Hacivat’ın “hutûr etti” sözünün Karagöz tarafından “tarçın mı gitti” biçiminde anlaşılması.",
+          "“mâ-nahnü-fîhimize” sözünün “mahallede evimize” biçiminde yanlış anlaşılması.",
+          "II. Hanım’ın “Gonce-dehânım” hitabının “Pencerede hanım” biçimine çekilmesi."
+        ],
+        "Bu örneklerden çıkarılabilecek örtük iletiler": [
+          "Aynı söz varlığına ve bağlama sahip olmamak iletişimde yanlış anlamayı artırabilir.",
+          "Anlaşılmayan bir ifadeyi açıklığa kavuşturmadan tepki vermek iletişim çatışmasına yol açabilir."
+        ]
+      }
     },
     {
       "question_id": "T1-P30-Q05",
@@ -20,7 +31,14 @@
       "prompt_summary": "Metnin iletilerinin toplumsal iletişime katkısı",
       "answer": "Metinden çıkarılan ileti, toplum hayatındaki iletişime ilişkin farklı sonuçlar düşündürebilir: örneğin sözü dikkatle dinleme, belirsizliği açıklığa kavuşturma veya dil farklılıklarına karşı sabırlı olma. Bunlar olası uygulamalardır; öğrenci seçtiği iletinin hangi davranışa nasıl katkı sağlayabileceğini açıklamalı ve metindeki dayanağını göstermelidir.",
       "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
-      "guidance": "Öğrenciden önce 30. sayfadaki açık ya da örtük iletilerden birini seçmesini, ardından bu iletinin günlük iletişimde hangi somut davranışa dönüşebileceğini açıklamasını isteyin. Metindeki iletiyle kendi toplumsal yorumunu ayırın; farklı sonuçlar kanıt ve gerekçeyle kabul edilebilir."
+      "guidance": "Öğrenciden önce 30. sayfadaki açık ya da örtük iletilerden birini seçmesini, ardından bu iletinin günlük iletişimde hangi somut davranışa dönüşebileceğini açıklamasını isteyin. Metindeki iletiyle kendi toplumsal yorumunu ayırın; farklı sonuçlar kanıt ve gerekçeyle kabul edilebilir.",
+      "answer_sections": {
+        "İleti → metinden dayanak → toplumsal katkı örnekleri": [
+          "Sözü dikkatle dinleme → “hutûr etti / tarçın mı gitti” yanlış anlaması → anlamadığımız sözü hemen başka anlama çekmek yerine açıklama istemenin iletişimi kolaylaştırması.",
+          "Belirsizliği açıklığa kavuşturma → “mâ-nahnü-fîhimize / mahallede evimize” yanlış anlaması → ortak anlam kurulmadan konuşmayı sürdürmenin çatışmayı büyütebilmesi.",
+          "Dil farklılıklarına sabır → “Gonce-dehânım / Pencerede hanım” dönüşümü → farklı söz varlıklarıyla karşılaşıldığında küçümsemeden açıklama ve teyit istemenin anlaşmayı güçlendirmesi."
+        ]
+      }
     },
     {
       "question_id": "T1-P30-Q06",
