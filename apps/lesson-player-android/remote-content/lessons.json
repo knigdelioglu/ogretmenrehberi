@@ -1058,7 +1058,15 @@
           "prompt_summary": "Karagöz ile Hacivat'ın farklılıklara rağmen dostluğu",
           "answer": "Metin And’ın aktardığı ilişki ve konuşmalarda, Karagöz ile Hacivat’ın farklılıklarına rağmen ilişkiyi sürdürmelerine dair çeşitli ipuçları bulunabilir. Örneğin Hacivat’ın arabulucu tavrı veya iki kişinin birbirine alışkın görünmesi, dostluğun nasıl sürdüğüne ilişkin bir yorum için dayanak olabilir. Bunlar olası açıklamalardır; öğrenci metinden seçtiği kanıtla başka bir gerekçe de geliştirebilir.",
           "source_locator": "basılı s.29 / PDF s.30",
-          "guidance": "Önce metin parçasında ilişkiyi gösteren bir söz, tepki ya da anlatım ayrıntısı buldurun; sonra bu kanıtın dostluğun sürmesine nasıl bağlandığını sordurun. Öğrencinin yorumunu metindeki gözlemden ayırın ve gerekçeli farklı açıklamalara alan açın."
+          "guidance": "Önce metin parçasında ilişkiyi gösteren bir söz, tepki ya da anlatım ayrıntısı buldurun; sonra bu kanıtın dostluğun sürmesine nasıl bağlandığını sordurun. Öğrencinin yorumunu metindeki gözlemden ayırın ve gerekçeli farklı açıklamalara alan açın.",
+          "answer_sections": {
+            "Metinden gösterilebilecek davranış dayanakları": [
+              "Karagöz ile Hacivat yazıcılık işi, dükkânın kullanımı ve para paylaşımı gibi konularda karşı karşıya gelseler de birbirleriyle konuşmayı ve ilişkiyi sürdürür.",
+              "Konuşma biçimleri ve kavrayışları farklı olduğu hâlde aynı olay örgüsü içinde yeniden karşılaşmaları ve iletişimlerinin kopmaması, birbirlerine alışkın ve süreklilik taşıyan bir ilişki içinde olduklarını düşündürür.",
+              "Hacivat’ın açıklayıcı/arabulucu tavrı ile Karagöz’ün hazırcevap tepkileri sık sık çatışma üretse de bu çatışma ilişkinin sona ermesine değil yeni diyaloglara dönüşür."
+            ],
+            "Yorum sınırı": "Bunlar dostluğun sürmesine ilişkin olası metin dayanaklarıdır; öğrenci başka bir söz veya davranışı seçip gerekçelendirebilir."
+          }
         },
         "content": null
       },
@@ -1129,6 +1137,14 @@
           "answer": "Oyunun günümüzdeki gösteri ve etkinliklerde sürdürülmesi, izleyicinin tanıdığı tipler, mizah, canlı icra veya kültürel aktarım gibi etkenlerle açıklanabilir. Bunlar olası gerekçelerdir; öğrenci bir gerekçeyi seçip oyunun özelliklerinden ya da soruda verilen güncel gösterim bağlamından örnekle destekleyebilir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
           "guidance": "Başlangıçta oyunun günümüzde nerelerde ve hangi biçimde karşılarına çıktığını sordurun. Öğrenciler seçtikleri olası nedeni oyundaki bir özellik veya sorudaki gösterim örneğiyle ilişkilendirsin; farklı nedenleri kanıt ve gerekçe tutarlıysa kabul edin.",
+          "answer_sections": {
+            "Metinden gösterilebilecek örnekler": [
+              "Dil mizahı: Hacivat’ın “hutûr etti” sözünün Karagöz tarafından “tarçın mı gitti” biçiminde anlaşılması.",
+              "Söz oyunu ve yanlış anlama: “Gonce-dehânım” hitabının “Pencerede hanım” biçimine çekilmesi.",
+              "Tanıdık tip ve konuşma karşıtlığı: Hacivat’ın daha ağır söz varlığı ile Karagöz’ün gündelik söyleyişinin sürekli karşı karşıya gelmesi."
+            ],
+            "Bu örneklerin günümüzde yaşamasına katkısı": "Tanıdık tipler, söz oyunları ve canlı diyalog yapısı farklı dönemlerde yeniden sahnelenmeye elverişli bir mizah üretir; öğrenci başka bir nedeni de metin veya güncel gösterim bağlamıyla gerekçelendirebilir."
+          },
           "question_no": "1"
         },
         "content": null
@@ -1162,6 +1178,11 @@
           "answer": "Karagöz’ün kültürel değeri; dil ve mizah anlayışını, sahne geleneğini ya da toplumdaki farklı tiplerin temsillerini aktarması üzerinden yorumlanabilir. Hangi yönün daha değerli bulunduğu öğrencinin görüşüdür; yanıt, seçilen yönü oyundan veya tema içindeki bilgilerden bir örnekle gerekçelendirmelidir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
           "guidance": "Öğrenciden önce Karagöz’ün kültüre taşıdığını düşündüğü bir yönü seçmesini, ardından bunu metindeki veya temada öğrendiği somut bir örnekle desteklemesini isteyin. Kişisel değer yargısını kaynakta doğrudan verilen bilgi gibi sunmamasına dikkat edin.",
+          "answer_sections": {
+            "Dil ve mizah": "“hutûr etti / tarçın mı gitti”, “Gonce-dehânım / Pencerede hanım” gibi yanlış anlamalar geleneksel söz oyununu ve dil mizahını somutlaştırır.",
+            "Gündelik kültür": "Yazıcılık, dükkân, hokka-kalem-kâğıt, kuruş ve dirhem gibi unsurlar geçmiş şehir hayatına ilişkin ayrıntılar taşır.",
+            "Toplumsal çeşitlilik": "Lâz tipinin bölgesel söyleyişi, Çelebi’nin ağır ve şiirli dili ve farklı kişilerin farklı söz varlıkları toplumdaki çeşitli çevreleri sahne üzerinde yan yana getirir."
+          },
           "question_no": "2"
         },
         "content": null
@@ -1195,6 +1216,18 @@
           "answer": "Konu, Yazıcı metninde gerçekleşen olay ve yanlış anlamalardır; örneğin Karagöz’ün yazıcılık girişimi ve bu sırada karşılaştığı kişilerle yaşadıkları. Tema, bu olayların düşündürdüğü daha genel anlamdır. İletişim ve anlaşılma, dil farklılıkları veya bilmediği bir işi üstlenmenin sonuçları metne dayalı tema önerileri olabilir; öğrenci seçimini olaylardan hareketle gerekçelendirmelidir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
           "guidance": "Öğrenciye “Metinde somut olarak ne oluyor?” ve “Bu olay daha genel olarak hangi meseleyi düşündürüyor?” sorularını yöneltin. Konu için olay örgüsünden, tema için birden fazla olası yorumu destekleyebilen metin ayrıntısından kanıt istensin.",
+          "answer_sections": {
+            "Konu için metin kanıtları": [
+              "Karagöz’ün okuma-yazma bilmediği hâlde yazıcılık yapması.",
+              "Müşterilerin sözlerini ses benzerliğiyle başka anlamlara çekmesi ve bunun art arda yanlış anlamalara yol açması.",
+              "Farklı konuşma biçimlerine sahip kişilerin aynı yazıcı dükkânında karşılaşması."
+            ],
+            "Tema için metin kanıtları": [
+              "“hutûr etti / tarçın mı gitti” örneği iletişimde ortak anlam kurulamamasını görünür kılar.",
+              "“Gonce-dehânım / Pencerede hanım” örneği dil farklılığının yanlış anlamayı nasıl üretebildiğini gösterir.",
+              "Okuma-yazma bilmeden yazıcılık yapma durumu, bilmediği bir işi üstlenmenin sonuçları temasını destekleyebilir."
+            ]
+          },
           "question_no": "3"
         },
         "content": null
@@ -1228,6 +1261,17 @@
           "answer": "Açık ileti, metinde doğrudan söylenen veya olay akışında açıkça görülen düşüncedir; örtük ileti ise metin ayrıntılarından çıkarılan yorumdur. Karagöz’ün yazıcılık sırasında okuma-yazma bilgisiyle ilgili sözleri ve yanlış anlamalar, açık gözlemler için; dil farklılıklarının anlaşmayı nasıl etkilediği ya da bir işi bilmeden üstlenmenin sonucu gibi yorumlar örtük ileti önerileri için dayanak olabilir. Her çıkarım ilgili söz veya olayla doğrulanmalıdır.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
           "guidance": "Her iletiyi “metinde doğrudan görülen/söylenen” ve “bu ayrıntıdan çıkarılan yorum” olarak ayırmasını isteyin. Örtük ileti için öğrenciden belirli bir replik ya da olay göstermesini, sonra çıkarımının bu kanıtı aşıp aşmadığını açıklamasını isteyin; genel bir ahlak dersi dayatmayın.",
+          "answer_sections": {
+            "Metinde doğrudan görülen örnekler": [
+              "Hacivat’ın “hutûr etti” sözünün Karagöz tarafından “tarçın mı gitti” biçiminde anlaşılması.",
+              "“mâ-nahnü-fîhimize” sözünün “mahallede evimize” biçiminde yanlış anlaşılması.",
+              "II. Hanım’ın “Gonce-dehânım” hitabının “Pencerede hanım” biçimine çekilmesi."
+            ],
+            "Bu örneklerden çıkarılabilecek örtük iletiler": [
+              "Aynı söz varlığına ve bağlama sahip olmamak iletişimde yanlış anlamayı artırabilir.",
+              "Anlaşılmayan bir ifadeyi açıklığa kavuşturmadan tepki vermek iletişim çatışmasına yol açabilir."
+            ]
+          },
           "question_no": "4"
         },
         "content": null
@@ -1261,6 +1305,13 @@
           "answer": "Metinden çıkarılan ileti, toplum hayatındaki iletişime ilişkin farklı sonuçlar düşündürebilir: örneğin sözü dikkatle dinleme, belirsizliği açıklığa kavuşturma veya dil farklılıklarına karşı sabırlı olma. Bunlar olası uygulamalardır; öğrenci seçtiği iletinin hangi davranışa nasıl katkı sağlayabileceğini açıklamalı ve metindeki dayanağını göstermelidir.",
           "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
           "guidance": "Öğrenciden önce 30. sayfadaki açık ya da örtük iletilerden birini seçmesini, ardından bu iletinin günlük iletişimde hangi somut davranışa dönüşebileceğini açıklamasını isteyin. Metindeki iletiyle kendi toplumsal yorumunu ayırın; farklı sonuçlar kanıt ve gerekçeyle kabul edilebilir.",
+          "answer_sections": {
+            "İleti → metinden dayanak → toplumsal katkı örnekleri": [
+              "Sözü dikkatle dinleme → “hutûr etti / tarçın mı gitti” yanlış anlaması → anlamadığımız sözü hemen başka anlama çekmek yerine açıklama istemenin iletişimi kolaylaştırması.",
+              "Belirsizliği açıklığa kavuşturma → “mâ-nahnü-fîhimize / mahallede evimize” yanlış anlaması → ortak anlam kurulmadan konuşmayı sürdürmenin çatışmayı büyütebilmesi.",
+              "Dil farklılıklarına sabır → “Gonce-dehânım / Pencerede hanım” dönüşümü → farklı söz varlıklarıyla karşılaşıldığında küçümsemeden açıklama ve teyit istemenin anlaşmayı güçlendirmesi."
+            ]
+          },
           "question_no": "5"
         },
         "content": null
@@ -2586,7 +2637,8 @@
         "density": "comfortable",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Roman hakkındaki düşüncelerin bir mektupta yer alması ne gösterir?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -2613,9 +2665,21 @@
           "answer_sections": {
             "Kişisel haberleşme": "Mektubun belirli bir muhatabı vardır ve kişisel haberleşme bağlamı taşır.",
             "Edebî ve düşünsel paylaşım": "Roman kişileri ve tekniğine ilişkin görüşler, haberleşmenin edebiyat üzerine düşünce paylaşımını da kapsadığını gösterir.",
-            "Olası belge değeri": "Bu görüşler dönemin edebiyat düşüncesine ilişkin bir kaynak olarak okunabilir; bu değerin kapsamı metindeki kanıtla açıklanmalıdır."
+            "Olası belge değeri": "Bu görüşler dönemin edebiyat düşüncesine ilişkin bir kaynak olarak okunabilir; bu değerin kapsamı metindeki kanıtla açıklanmalıdır.",
+            "Metinden gösterilebilecek kanıtlar": [
+              "Kişisel haberleşme: “Zaten seninle konuşmaya da ihtiyacım var.”",
+              "Edebî düşünce paylaşımı: “Bu roman bende yine roman yazmak arzusunu canlandırdı.”",
+              "Roman tekniği üzerine kavramlaştırma: “ben bu hâle mazi koridoru diyorum.”",
+              "Edebî değerlendirme: “Bana Rus usulü daha derin ve psikolojik geliyor.”"
+            ]
           },
-          "guidance": "Öğrencilerden mektupta romanla ilgili hangi düşüncelerin yer aldığını belirlemelerini, bunların kişisel haberleşmenin işlevini nasıl genişlettiğini tartışmalarını isteyin. Mektubun edebî, düşünsel veya belge niteliğine ilişkin yargılarını metinden kanıtla gerekçelendirsinler; “vazgeçilmez” gibi sonucu baştan belirleyen bir hüküm beklemeyin."
+          "guidance": "Öğrencilerden mektupta romanla ilgili hangi düşüncelerin yer aldığını belirlemelerini, bunların kişisel haberleşmenin işlevini nasıl genişlettiğini tartışmalarını isteyin. Mektubun edebî, düşünsel veya belge niteliğine ilişkin yargılarını metinden kanıtla gerekçelendirsinler; “vazgeçilmez” gibi sonucu baştan belirleyen bir hüküm beklemeyin.",
+          "evidence_quotes": [
+            "Zaten seninle konuşmaya da ihtiyacım var",
+            "Bu roman bende yine roman yazmak arzusunu canlandırdı",
+            "ben bu hâle mazi koridoru diyorum",
+            "Bana Rus usulü daha derin ve psikolojik geliyor"
+          ]
         },
         "content": null
       },
@@ -17614,7 +17678,8 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Huzur'un konusunu, temasını ve yazılış amacını ayrı ayrı belirleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -17640,10 +17705,18 @@
           "answer_sections": {
             "konu": "Mümtaz ile Nuran'ın İstanbul'daki gezileri ve ilişkileri çevresinde; şehir, musiki, geçmiş, kültür ve yeni hayat üzerine düşünceler.",
             "tema": "Huzur ve kimlik arayışı; geçmişle bağ kurma ile yeni hayat ihtiyacı arasındaki gerilim.",
-            "yazilis_amaci": "Metinden hareketle, bireyin iç dünyası ile kültürel aidiyetin şehir, sanat ve tarih üzerinden nasıl şekillendiği üzerine düşündürmek olarak yorumlanabilir."
+            "yazilis_amaci": "Metinden hareketle, bireyin iç dünyası ile kültürel aidiyetin şehir, sanat ve tarih üzerinden nasıl şekillendiği üzerine düşündürmek olarak yorumlanabilir.",
+            "Metinden dayanaklar": [
+              "“İstanbul’u tanımadıkça kendimizi bulamayız.” — şehir, kültür ve kimlik ilişkisinin doğrudan kurulmasına dayanak olur.",
+              "“Bir hüviyet lâzım.” — kimlik arayışı ve geçmişle bağ kurma temasını destekler."
+            ]
           },
           "guidance": "‘Yazarın kesin amacı budur’ biçiminde konuşmayın. Öğrenci başka bir yazılış amacı öneriyorsa metinden somut dayanak göstermesini isteyin.",
-          "source_locator": "basılı s.175 / PDF s.176 — soru 2"
+          "source_locator": "basılı s.175 / PDF s.176 — soru 2",
+          "evidence_quotes": [
+            "İstanbul’u tanımadıkça kendimizi bulamayız.",
+            "Bir hüviyet lâzım."
+          ]
         },
         "content": {
           "lead": "Kitabın s.175'teki üç kutusunu ayrı düşünün: Anlatılanlar ne? Hangi temel duygu/düşünce öne çıkıyor? Metin okura neyi düşündürmek istiyor?",
@@ -17660,7 +17733,8 @@
         "density": "comfortable",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Huzur'u temasına ve edebî akımına göre hangi roman türlerinde değerlendirirsiniz?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -17687,9 +17761,18 @@
           "answer_sections": {
             "Temasına göre": "Psikolojik (tahlil) roman: kişilerinin iç dünyası, ruh hâlleri ve iç çatışmaları önemli yer tutar.",
             "Edebî anlayışına göre": "Modernist roman: kitap biyografisi, Tanpınar'ın çağdaşlaşma sürecindeki bireyin geleneksel ve modern kültür arasındaki çatışmalarını modernist bir yaklaşımla eserlerine yansıttığını belirtir.",
-            "Biyografideki ek bilgi": "Kitap ayrıca Tanpınar'ın zaman, rüya, hayal, müzik ve sonsuzluk gibi temaları sembolizmin etkisiyle işlediğini söyler; bu bilgi Huzur'u ayrıca ‘sembolist roman’ diye sınıflandırmak zorunda değildir."
+            "Biyografideki ek bilgi": "Kitap ayrıca Tanpınar'ın zaman, rüya, hayal, müzik ve sonsuzluk gibi temaları sembolizmin etkisiyle işlediğini söyler; bu bilgi Huzur'u ayrıca ‘sembolist roman’ diye sınıflandırmak zorunda değildir.",
+            "Metinden gösterilebilecek dayanaklar": [
+              "Psikolojik/tahlil yönü için Mümtaz’ın kimlik arayışı ve iç dünyasını açan “Bir hüviyet lâzım.” sözü.",
+              "Gelenek–modern hayat gerilimi için “İstanbul’u tanımadıkça kendimizi bulamayız.” sözü ve Nuran’ın eskiye bağlılığı sorgulayan yaklaşımı.",
+              "Metnin şehir, musiki, geçmiş ve yeni hayatı kişilerin iç dünyasıyla birlikte işlemesi, modernist sınıflandırmayı kitap biyografisindeki bilgiyle birlikte destekler."
+            ]
           },
-          "guidance": "‘Empresyonizm’, ‘felsefi/tezli roman’ veya ‘sosyal roman’ etiketlerini bu sorunun zorunlu cevabı yapmayın. Öğrenci ikinci bir tür önerirse Bilgi Köşesi tanımı ile metinden somut kanıt istemek gerekir."
+          "guidance": "‘Empresyonizm’, ‘felsefi/tezli roman’ veya ‘sosyal roman’ etiketlerini bu sorunun zorunlu cevabı yapmayın. Öğrenci ikinci bir tür önerirse Bilgi Köşesi tanımı ile metinden somut kanıt istemek gerekir.",
+          "evidence_quotes": [
+            "Bir hüviyet lâzım.",
+            "İstanbul’u tanımadıkça kendimizi bulamayız."
+          ]
         },
         "content": {
           "lead": "s.173'teki konusuna göre ve s.174'teki edebî akıma göre sınıflandırmaları birbirinden ayırın."
@@ -18461,7 +18544,8 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Dörder kişilik okuma çemberleri kurup ilk toplantı için temel bir rol seçiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -18493,8 +18577,18 @@
             "Tahmin Edici": "Okunan parçadan hareketle bir karakterin daha sonra ne yapabileceğine ilişkin gerekçeli tahmin kurar; bunu romanda gerçekleşmiş bir olay olarak sunmaz.",
             "Kelime Avcısı": "Mazi, musiki, yeis gibi kelimeleri bağlamıyla açıklar.",
             "Hareket İzcisi": "Boğaz, Üsküdar ve İstanbul semtlerinin olay ve duygu üzerindeki etkisini izler.",
-            "Karakter Çözümleyici": "Kişilerin söz ve davranışlarından temel özelliklerini çıkarır."
-          }
+            "Karakter Çözümleyici": "Kişilerin söz ve davranışlarından temel özelliklerini çıkarır.",
+            "Somut başlangıç dayanakları": [
+              "Bağ kurucu / sorgulayıcı: “İstanbul’u tanımadıkça kendimizi bulamayız.”",
+              "Okuma aydınlatıcısı / karakter çözümleyici: “Bir hüviyet lâzım.”",
+              "Karakter ve ilişki çözümlemesi: “İhsan, onun hem babası, hem hocası idi.”"
+            ]
+          },
+          "evidence_quotes": [
+            "İstanbul’u tanımadıkça kendimizi bulamayız.",
+            "Bir hüviyet lâzım.",
+            "İhsan, onun hem babası, hem hocası idi."
+          ]
         },
         "content": {
           "lead": "s.178'de dört temel rol var; s.179'daki seçimlik rolleri ve sonraki toplantıyı sonraki blokta işleyeceksiniz.",
@@ -20276,7 +20370,8 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Çözümleyebilme 2 — Dil ve üslupla dört yapı unsuru arasındaki ilişkiyi ayrı ayrı yazınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -20303,10 +20398,20 @@
             "olay_dil_uslup": "Diyalog ve anlatıcı değerlendirmeleri, gezileri yalnız eylem dizisi olmaktan çıkarıp geçmiş, musiki ve yeni hayat tartışmasına bağlar.",
             "mekan_dil_uslup": "Boğaz, Üsküdar ve semtler ışık, ses, mimari ve insan ayrıntılarıyla betimlenir; mekân kültürel hafıza ve duygu taşıyan bir unsura dönüşür.",
             "kisi_dil_uslup": "Mümtaz'ın soyut/kültürel kavramlara dayanan konuşmaları ile Nuran'ın kısa ve sorgulayıcı soruları, bakış açıları arasındaki farkı görünür kılar.",
-            "zaman_dil_uslup": "Vapur sesi ve benzeri çağrışımlar şimdiki olaydan çocukluk hatırasına geçiş sağlar; uzun cümleler bu hatıra ve düşünce akışını birlikte taşır."
+            "zaman_dil_uslup": "Vapur sesi ve benzeri çağrışımlar şimdiki olaydan çocukluk hatırasına geçiş sağlar; uzun cümleler bu hatıra ve düşünce akışını birlikte taşır.",
+            "Metinden kısa dayanaklar": [
+              "“Bir hüviyet lâzım.” — kişi/kimlik tartışmasının soyut ve kültürel kavramlarla kurulmasına örnek.",
+              "“İstanbul’u tanımadıkça kendimizi bulamayız.” — mekânın yalnız fon değil, kültürel aidiyet ve kimlik taşıyıcısı hâline gelmesine örnek.",
+              "Nuran’ın “Niçin eskiye bu kadar bağlıyız?” sorusu — kişiler arasındaki bakış açısı farkının kısa ve sorgulayıcı diyalogla görünürleşmesine örnek."
+            ]
           },
           "source_locator": "basılı s.167–170 ve soru s.187 / PDF s.168–171 ve s.188",
-          "guidance": "‘Pitoresk’, ‘iç monolog’ veya başka teknik terimleri, metinde gerçekten gösterilebildiği ölçüde kullanın; etiketi kanıtın yerine koymayın."
+          "guidance": "‘Pitoresk’, ‘iç monolog’ veya başka teknik terimleri, metinde gerçekten gösterilebildiği ölçüde kullanın; etiketi kanıtın yerine koymayın.",
+          "evidence_quotes": [
+            "Bir hüviyet lâzım.",
+            "İstanbul’u tanımadıkça kendimizi bulamayız.",
+            "Niçin eskiye bu kadar bağlıyız?"
+          ]
         },
         "content": {
           "lead": "s.187'de dört ayrı not alanı vardır. Her birinde 'hangi anlatım seçimi, o unsurun hangi yönünü görünür kılıyor?' sorusunu yanıtlayın.",
@@ -21097,7 +21202,12 @@
               "Düzeltme işaretli veya döneme özgü yazım biçimleri görülür: lâzım, plâj, ilân, telâş vb.",
               "Tanpınar'ın uzun ve çağrışımlı betimleme cümleleri metnin edebî üslubunu belirginleştirir."
             ],
-            "teknik_not": "Listelenen eski/seyrek kelimelerin çoğu tek sözcüktür; hepsini ‘Arapça-Farsça tamlama’ diye adlandırmak doğru değildir."
+            "teknik_not": "Listelenen eski/seyrek kelimelerin çoğu tek sözcüktür; hepsini ‘Arapça-Farsça tamlama’ diye adlandırmak doğru değildir.",
+            "Metinden gösterilebilecek söz varlığı örnekleri": [
+              "Bugün daha seyrek kullanılan sözler: hendesi, mazi, hülya, daüssıla, bilhassa, müsvedde.",
+              "Döneme özgü/düzeltme işaretli yazım örnekleri: lâzım, plâj, ilân, telâş.",
+              "Bugün de canlı olan temel söz varlığına örnekler: gün, ev, güneş, yer, sevmek."
+            ]
           },
           "source_locator": "basılı s.190 / PDF s.191 — Fark Edelim",
           "guidance": "Karşılaştırmayı s.190'daki gerçek kelime/cümlelerle gerekçelendirin. Türkçenin söz dizimini ‘her zaman özne-nesne-yüklem ve bütünüyle aynı’ diye mutlaklaştırmayın."
@@ -21882,7 +21992,8 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Süreci Değerlendirebilme 2 — Kendi metin değerlendirme ölçütlerinizi ve gerekçeli sonuçlarınızı tabloya yazınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -21913,8 +22024,18 @@
             "Kişilerin bakış açıları (örnek)": "Mümtaz geçmişin devamını vurgularken Nuran bugünün insanlarını ve yoksul semtleri hatırlatır.",
             "Mekânın işlevi (örnek)": "Üsküdar ve Boğaz betimlemeleri yalnız yer bildirimi değil, geçmiş ve aidiyet duygusu taşır.",
             "Anlatımın açıklığı (örnek)": "Uzun cümleler ve seyrek kelimeler ilk okumada açıklama gerektirebilir; buna rağmen düşünceler olay ve diyalogla ilişkilendirilir.",
-            "Duygu ve çağrışım (örnek)": "Vapur sesinin çocukluk hüznünü anımsatması, dış çevrenin iç dünyayı açığa çıkarmasını sağlar."
-          }
+            "Duygu ve çağrışım (örnek)": "Vapur sesinin çocukluk hüznünü anımsatması, dış çevrenin iç dünyayı açığa çıkarmasını sağlar.",
+            "Ölçütleri metne bağlamak için örnek dayanaklar": [
+              "Kimlik ve kültür ilişkisi için: “Bir hüviyet lâzım.”",
+              "Şehir ve aidiyet ilişkisi için: “İstanbul’u tanımadıkça kendimizi bulamayız.”",
+              "Kişiler arası ilişki için: “İhsan, onun hem babası, hem hocası idi.”"
+            ]
+          },
+          "evidence_quotes": [
+            "Bir hüviyet lâzım.",
+            "İstanbul’u tanımadıkça kendimizi bulamayız.",
+            "İhsan, onun hem babası, hem hocası idi."
+          ]
         },
         "content": {
           "lead": "Kitap bir örnek satır verir: Tutarlılık. Ardındaki beş satır öğrencinin kendisinin belirleyeceği ölçüt ve değerlendirmeler için boştur.",
@@ -24803,7 +24924,15 @@
               "Gerekçem: [...]"
             ],
             "örnek_yalınlık": "“Yalınlık ölçütüne göre metni genel olarak anlaşılır buldum; ancak bazı dönem ve kurum adları okumayı yavaşlatabilir.”",
-            "örnek_düzen": "“Kronolojik düzen ölçütüne göre yaşam olaylarının çoğu takip edilebilir sırada sunuluyor; eser bilgileri ise yer yer tematik açıklamalarla veriliyor.”"
+            "örnek_düzen": "“Kronolojik düzen ölçütüne göre yaşam olaylarının çoğu takip edilebilir sırada sunuluyor; eser bilgileri ise yer yer tematik açıklamalarla veriliyor.”",
+            "metinden_somut_kanit_havuzu": [
+              "Yaşam çizgisi 1873’te doğumdan 1936’daki vefata kadar tarih sırasıyla izlenir.",
+              "Çocukluk ve eğitim yılları ile baytarlık eğitimi ayrı yaşam evreleri olarak verilir.",
+              "Yayın, öğretim ve dergicilik çalışmaları biyografik çizgi içinde anlatılır.",
+              "Millî Mücadele dönemi ve İstiklâl Marşı’nın kabulü yaşam öyküsünün önemli aşamaları olarak yer alır.",
+              "Mısır yılları ve İstanbul’a dönüş sonraki yaşam evreleri olarak işlenir.",
+              "Safahat ve diğer eser bilgileri, yaşam olaylarıyla birlikte edebî kişiliği tanıtmak için kullanılır."
+            ]
           }
         },
         "content": {
@@ -24851,7 +24980,15 @@
             "örnek_beğeni_gerekçesi": "Doğum, eğitim, Millî Mücadele, Mısır yılları ve son dönem belirli bir sıra içinde anlatılıyor.",
             "örnek_eleştiri": "“Bazı paragraflarda çok sayıda kurum, eser ve tarih adı art arda geldiği için metni izlemek zorlaşabilir.”",
             "örnek_eleştiri_gerekçesi": "Öğrenci, zorlandığı gerçek bölümü metinden göstermelidir.",
-            "alternatif": "Öğrenci bu özellikleri eleştiri olarak görmeyebilir; farklı beğeni/eleştirisini kanıtla savunabilir."
+            "alternatif": "Öğrenci bu özellikleri eleştiri olarak görmeyebilir; farklı beğeni/eleştirisini kanıtla savunabilir.",
+            "metinden_somut_kanit_havuzu": [
+              "Yaşam çizgisi 1873’te doğumdan 1936’daki vefata kadar tarih sırasıyla izlenir.",
+              "Çocukluk ve eğitim yılları ile baytarlık eğitimi ayrı yaşam evreleri olarak verilir.",
+              "Yayın, öğretim ve dergicilik çalışmaları biyografik çizgi içinde anlatılır.",
+              "Millî Mücadele dönemi ve İstiklâl Marşı’nın kabulü yaşam öyküsünün önemli aşamaları olarak yer alır.",
+              "Mısır yılları ve İstanbul’a dönüş sonraki yaşam evreleri olarak işlenir.",
+              "Safahat ve diğer eser bilgileri, yaşam olaylarıyla birlikte edebî kişiliği tanıtmak için kullanılır."
+            ]
           }
         },
         "content": {
@@ -24892,7 +25029,15 @@
             "yazilma_amaci": "Mehmet Âkif'in yaşamını, önemli çalışmalarını, eserlerini ve edebî kişiliğini tanıtmak.",
             "olasi_yargi_1": "“Ulaştığını düşünüyorum; çünkü yaşam çizgisi, eserler ve edebî değerlendirmeler birlikte verilmiş.”",
             "olasi_yargi_2": "“Büyük ölçüde ulaştığını düşünüyorum; ancak [...] yönünün daha ayrıntılı verilmesi amacı daha güçlü destekleyebilirdi.”",
-            "degerlendirme_olcutu": "Sonucun ‘ulaştı/ulaşmadı/kısmen ulaştı’ olması değil, yargının metinden kanıtla gerekçelendirilmesidir."
+            "degerlendirme_olcutu": "Sonucun ‘ulaştı/ulaşmadı/kısmen ulaştı’ olması değil, yargının metinden kanıtla gerekçelendirilmesidir.",
+            "metinden_somut_kanit_havuzu": [
+              "Yaşam çizgisi 1873’te doğumdan 1936’daki vefata kadar tarih sırasıyla izlenir.",
+              "Çocukluk ve eğitim yılları ile baytarlık eğitimi ayrı yaşam evreleri olarak verilir.",
+              "Yayın, öğretim ve dergicilik çalışmaları biyografik çizgi içinde anlatılır.",
+              "Millî Mücadele dönemi ve İstiklâl Marşı’nın kabulü yaşam öyküsünün önemli aşamaları olarak yer alır.",
+              "Mısır yılları ve İstanbul’a dönüş sonraki yaşam evreleri olarak işlenir.",
+              "Safahat ve diğer eser bilgileri, yaşam olaylarıyla birlikte edebî kişiliği tanıtmak için kullanılır."
+            ]
           },
           "guidance": "Metnin yazılma amacı ile ders kitabının pedagojik amacı birbirine karıştırılmamalıdır. ‘11. sınıf öğrencisine biyografi türünü öğretmek’ biyografi parçasının kendi yazılma amacı değildir. ‘Tam ve yetkin biçimde ulaşmıştır’ diye tek cevap dayatmayın."
         },
@@ -30552,6 +30697,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "note"
         ],
         "display_prompt": "Metni Anlayalım 2/b–c — Sizi etkileyen özellik ve tanınmak istediğiniz yönler.",
@@ -30580,8 +30726,19 @@
           "answer_sections": {
             "2b_etkilendigim_ozellik": "Seçtiğim özellik: [...]. Bu özelliği metinde gösteren söz/davranış: [...]. Beni etkileme nedeni: [...].",
             "2c_taninmak_istedigim_ozellik": "Mimar Sinan gibi başarılı biri olsaydım tanınmak istediğim özellik/özellikler: [...]. Neden: [...].",
-            "metinden_secilebilecek_kanitlar": "Örneğin Sinan'ın öğrenmeye açıklığı, gözlemciliği, çalışkanlığı, azmi, sorumluluğu veya başkasının emeğine saygısı metindeki söz ve davranışlarla tartışılabilir; öğrenci bunlardan birini seçmek zorunda değildir."
-          }
+            "metinden_secilebilecek_kanitlar": [
+              "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
+              "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
+              "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
+              "“tek başıma yenmedim” → başarıyı yalnız bireye bağlamama, ortak emeği tanıma."
+            ]
+          },
+          "evidence_quotes": [
+            "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+            "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+            "Güzellik, büyüklükten daha güçlüdür.",
+            "tek başıma yenmedim"
+          ]
         },
         "content": {
           "lead": "Önce oyunda sizi etkileyen bir özelliği söz veya davranışla gerekçelendirin; ardından kişisel tercihinizi ayrı ifade edin.",
@@ -31810,6 +31967,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "note"
         ],
         "display_prompt": "Ders Dışı Etkinlik — Tiyatro ve sosyal bilimler için üç araştırma grubu oluşturunuz.",
@@ -31836,9 +31994,21 @@
             "Tarih grubu": "Sinan’ın yaşam evrelerini, eserlerin yapıldığı dönemi ve oyun ile bilgi görseli arasındaki tarih ayrıntılarını karşılaştırma tablosuna yazın. Oyundaki sahne konuşmalarını tarih belgesi gibi göstermeyin.",
             "Psikoloji grubu": "Sinan’ın merak, azim, kaygı ve sorumluluk taşıdığı anları belirleyin; her çıkarımı bir davranış veya kısa sözle destekleyin.",
             "Sosyoloji grubu": "Hükümdar, mimarbaşı, usta ve toplum arasındaki görev ilişkilerini; büyük yapıların kamusal yaşamdaki yerini inceleyin.",
-            "Sunum ve değerlendirme": "Her bulgu için metin sayfası ve karşılaştırılan diğer oyunun künyesi belirtilir. Son değerlendirmede, farklı disiplinlerden veri kullanmanın yazarın tarih ve toplum ilgisini nasıl görünür kıldığı açıklanır."
+            "Sunum ve değerlendirme": "Her bulgu için metin sayfası ve karşılaştırılan diğer oyunun künyesi belirtilir. Son değerlendirmede, farklı disiplinlerden veri kullanmanın yazarın tarih ve toplum ilgisini nasıl görünür kıldığı açıklanır.",
+            "Metinden örnek kanıtlar": [
+              "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
+              "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
+              "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
+              "“tek başıma yenmedim” → başarıyı yalnız bireye bağlamama, ortak emeği tanıma."
+            ]
           },
-          "guidance": "Başka tiyatro metni üzerinde araştırma yapılmadan onunla ilgili sonuç uydurmayın; grup çalışmasında gerçek kaynak ve metin kanıtı kullanın."
+          "guidance": "Başka tiyatro metni üzerinde araştırma yapılmadan onunla ilgili sonuç uydurmayın; grup çalışmasında gerçek kaynak ve metin kanıtı kullanın.",
+          "evidence_quotes": [
+            "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+            "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+            "Güzellik, büyüklükten daha güçlüdür.",
+            "tek başıma yenmedim"
+          ]
         },
         "content": {
           "lead": "Kitaptaki bir haftalık araştırma sürecinde her grup farklı bir disiplinin sorusuna cevap arar.",
@@ -32057,7 +32227,8 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Beğeni ölçütleri tablosu — Metni örneklerle değerlendiriniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -32080,13 +32251,24 @@
           "prompt_summary": "Oyundaki gündelik insan ilişkilerini tartışıp metni beğeni ölçütleriyle değerlendirme",
           "answer": "Bu değerlendirme sınıftaki beyin fırtınası ve öğrencinin kendi beğeni ölçütleriyle tamamlanmalıdır. Rehber günlük insan ilişkilerine ilişkin metin kanıtlarını gösterebilir; ancak hangi unsurun öğrenci için etkileyici olduğunu önceden belirlemez.",
           "answer_sections": {
-            "gunluk_insan_iliskileri_icin_olasi_kanitlar": "Görev verme ve güvenme, yeteneğin fark edilmesi, sözüne bağlı kalma, başkasının emeğine saygı gösterme gibi ilişkiler metinden kanıtlarla tartışılabilir.",
+            "gunluk_insan_iliskileri_icin_olasi_kanitlar": [
+              "Görev verme ve güvenme: “Güzel bir cami, mimarbaşı!” sözü, hükümdarın Sinan’a bir eser sorumluluğu vermesiyle birlikte ele alınabilir.",
+              "Sözüne bağlılık ve sorumluluk: “İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.”",
+              "Çalışkanlık ve azim: “bilgim, azmim ve çalışkanlığımla talihimi yenmiştim”.",
+              "Ortak emeği tanıma: “tek başıma yenmedim” sözü, başarıyı yalnız bireysel kahramanlıkla açıklamama yönünde tartışılabilir."
+            ],
             "benim_olcutum": "[...]",
             "metinden_ornegim": "[...]",
             "begendim_begenmedim": "[...]",
             "gerekcem": "[...]"
           },
-          "guidance": "Öğrenci adına 'benim için müzik ve ışık en etkileyici' gibi bir beğeni yazmayın. Kitapta verilen örnek ölçüt de öğrencinin kendi tablosunu doldurması için modeldir; tek doğru değerlendirme değildir."
+          "guidance": "Öğrenci adına 'benim için müzik ve ışık en etkileyici' gibi bir beğeni yazmayın. Kitapta verilen örnek ölçüt de öğrencinin kendi tablosunu doldurması için modeldir; tek doğru değerlendirme değildir.",
+          "evidence_quotes": [
+            "Güzel bir cami, mimarbaşı!",
+            "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+            "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+            "tek başıma yenmedim"
+          ]
         },
         "content": {
           "lead": "Kitabın etkileyicilik örneğini inceleyin; başka ölçütleri öğrenciler belirlesin. Her biri için oyun içinden kanıt isteyin.",
@@ -32167,7 +32349,8 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
         "display_prompt": "Sıra Sizde 1 — Hangi karakteri canlandırmak istersiniz? Neden?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -32195,8 +32378,20 @@
           "answer_sections": {
             "canlandirmak_istedigim_karakter": "[...]",
             "metindeki_kanit": "[...]",
-            "secme_gerekcem": "[...]"
-          }
+            "secme_gerekcem": "[...]",
+            "secim_icin_ornek_kanit_havuzu": [
+              "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
+              "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
+              "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
+              "“tek başıma yenmedim” → başarıyı yalnız bireye bağlamama, ortak emeği tanıma."
+            ]
+          },
+          "evidence_quotes": [
+            "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+            "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
+            "Güzellik, büyüklükten daha güçlüdür.",
+            "tek başıma yenmedim"
+          ]
         },
         "content": {
           "lead": "Seçilen karakteri bir replik, davranış veya hedefle ilişkilendirin; tek doğru karakter aranmaz."
@@ -33510,6 +33705,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "note"
         ],
         "display_prompt": "Karşılaştıralım 2 — İnsan ilişkilerindeki değerleri tiyatro mu hikâye mi daha etkili yansıtıyor?",
@@ -33539,8 +33735,26 @@
             "tiyatrodan_kanitim": "Ben, Mimar Sinan'da seçtiğim söz/davranış/ilişki: [...].",
             "hikayeden_kanitim": "Merdiven'de seçtiğim söz/davranış/ilişki: [...].",
             "tercihim": "Tiyatro / hikâye / iki türün farklı üstünlükleri var.",
-            "gerekcem": "[...]"
-          }
+            "gerekcem": "[...]",
+            "ornek_kanit_havuzu": {
+              "Ben, Mimar Sinan": [
+                "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” — sorumluluk ve sözüne bağlılık.",
+                "“tek başıma yenmedim” — başarıda başkalarının payını kabul etme.",
+                "“Güzellik, büyüklükten daha güçlüdür.” — estetik değeri öne çıkarma."
+              ],
+              "Merdiven": [
+                "“Bahtiyar ol” — yaşlı memurun iyi dileği; nezaket ve kuşaklar arası sıcaklık.",
+                "Anlatıcının kendisinden genç bir memura yol vermesi — başkasına alan açma ve tutum değişikliği.",
+                "Anlatıcının ihtiyar memuru merak edip genç memura sorması — ilgi ve insana değer verme."
+              ]
+            }
+          },
+          "evidence_quotes": [
+            "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+            "tek başıma yenmedim",
+            "Güzellik, büyüklükten daha güçlüdür.",
+            "Bahtiyar ol"
+          ]
         },
         "content": {
           "lead": "Bir türü seçebilirsiniz fakat diğer türün güçlü yönünü de görünür kılın. Gerekçenizi iki metinden somut örnekle destekleyin.",
@@ -34269,6 +34483,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "note"
         ],
         "display_prompt": "Sıra Sizde 2 — Değer yargınızla çelişen bir davranış var mı? Siz nasıl tepki verirdiniz?",
@@ -34298,8 +34513,19 @@
             "sectigim_soz_veya_davranis": "[...]",
             "neden_deger_yargimla_celisiyor": "[...]",
             "benzer_durumda_benim_tepkim": "[...]",
-            "metinden_kanit": "[...]"
-          }
+            "metinden_kanit": "[...]",
+            "secim_icin_ornek_metin_kanitlari": [
+              "“yeni yetme” nitelemesi — anlatıcının genç memura bakışını tartışmak için kullanılabilir; bunun değer yargısıyla çelişip çelişmediğine öğrenci karar verir.",
+              "“Çabuk çabuk” ifadesi — anlatıcının aceleci davranışını tartışmak için kullanılabilir.",
+              "Anlatıcının kendisinden genç bir memura yol vermesi — davranış değişimini ve başkasına alan açmayı değerlendirmek için kullanılabilir.",
+              "“Bahtiyar ol” sözü — yaşlı memurun iyi niyet ve nezaket içeren davranışına dayanak olabilir."
+            ]
+          },
+          "evidence_quotes": [
+            "yeni yetme",
+            "Çabuk çabuk",
+            "Bahtiyar ol"
+          ]
         },
         "content": {
           "lead": "Önce davranışı metinden belirleyin, sonra kendi değerinizle neden çeliştiğini ve alternatif tepkinizi açıklayın.",
@@ -34453,6 +34679,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "note"
         ],
         "display_prompt": "Süreci Değerlendirebilme — Merdiven'i kendi beğeni ölçütlerinizle değerlendiriniz.",
@@ -34486,9 +34713,28 @@
             "sectigim_olcut": "[...]",
             "begendim_begenmedim": "[...]",
             "metinden_kanit": "[...]",
-            "gerekcem": "[...]"
+            "gerekcem": "[...]",
+            "olcutlere_gore_ornek_metin_kanitlari": {
+              "Dil ve üslup": [
+                "“Çabuk çabuk” tekrarının ritim oluşturması.",
+                "“Bahtiyar ol” gibi kısa ve doğal diyalogların gündelik konuşma etkisi yaratması."
+              ],
+              "Açık uçlu anlatım": [
+                "Anlatıcının sonunda yukarı çıkmak yerine aşağı inmeyi seçmesi ve kararın anlamının okura bırakılması."
+              ],
+              "Karakterlerin sunuluşu": [
+                "Kişilerin özel ad yerine “ihtiyar memur”, “delikanlı/genç memur” gibi genel tanımlarla verilmesi."
+              ],
+              "Çağrışım gücü": [
+                "Merdiven, çıkmak–inmek ve yol vermek eylemlerinin iş yaşamı, yaşlanma, yükselme ve öncelikler hakkında çağrışım üretmesi."
+              ]
+            }
           },
-          "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir."
+          "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir.",
+          "evidence_quotes": [
+            "Çabuk çabuk",
+            "Bahtiyar ol"
+          ]
         },
         "content": {
           "lead": "Kitaptaki örnek ölçütü model alın; Beğendim/Beğenmedim kararı kadar gerekçe de önemlidir.",
