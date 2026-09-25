@@ -14,6 +14,8 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.FilledTonalButton
@@ -187,135 +189,131 @@ internal fun ComparisonContentLayout(
         }
 
         // Cevap AÇIKSA ve answer_sections mevcutsa: tek yerde yapılandırılmış karşılaştırma tablosu olarak render et
-        if (answerVisible && step.answer?.answerSections != null) {
-            ComparisonAnswerTable(step.answer.answerSections)
+        visibleComparisonAnswerSections(step, answerVisible)?.let { answerSections ->
+            ComparisonAnswerTable(answerSections)
         }
     }
 }
 
-/**
- * Yapılandırılmış karşılaştırmalı cevap tablosu.
- * Hem iki seviyeli nesneleri (ör. s31-q7: Yazıcı vs Eskici Abdi -> Kriterler)
- * hem de düz kriter-değer eşlemelerini tek bir tablo yüzeyinde sunar.
- */
+internal data class ComparisonAnswerMatrix(
+    val headers: List<String>,
+    val rows: List<List<String>>
+)
+
+/** Teacher answer data is exposed to the renderer only after its reveal state opens. */
+internal fun visibleComparisonAnswerSections(
+    step: LessonStep,
+    answerVisible: Boolean
+): JsonValue? = step.answer?.answerSections?.takeIf { answerVisible }
+
+/** Top-level entities become columns; nested keys become comparison criteria. */
+internal fun comparisonAnswerMatrix(answerSections: JsonValue): ComparisonAnswerMatrix? {
+    val entries = (answerSections as? JsonValue.Object)?.values.orEmpty()
+    if (entries.isEmpty()) return null
+
+    val nestedColumns = entries.values.mapNotNull { it as? JsonValue.Object }
+    if (nestedColumns.size == entries.size) {
+        val criteria = linkedSetOf<String>()
+        nestedColumns.forEach { column -> criteria.addAll(column.values.keys) }
+        if (criteria.isEmpty()) return null
+        return ComparisonAnswerMatrix(
+            headers = listOf("Özellik") + entries.keys.map(::comparisonLabel),
+            rows = criteria.map { criterion ->
+                listOf(comparisonLabel(criterion)) + nestedColumns.map { column ->
+                    column.values[criterion]?.let(::readableAnswerValue).orEmpty()
+                }
+            }
+        )
+    }
+
+    return ComparisonAnswerMatrix(
+        headers = listOf("Özellik", "Değer"),
+        rows = entries.map { (key, value) ->
+            listOf(comparisonLabel(key), readableAnswerValue(value))
+        }
+    )
+}
+
+internal fun vocabularyDefinitionVisible(
+    answerVisibleInline: Boolean,
+    termRevealed: Boolean,
+    answerVisibleInTeacherPanel: Boolean
+): Boolean = answerVisibleInline || (!answerVisibleInTeacherPanel && termRevealed)
+
+private fun comparisonLabel(value: String): String =
+    value.replace('_', ' ').replaceFirstChar { it.uppercase() }
+
+/** A scrollable row/column matrix, including a two-column form for flat key/value data. */
 @Composable
-internal fun ComparisonAnswerTable(answerSections: JsonValue) {
-    when (answerSections) {
-        is JsonValue.Object -> {
-            val entries = answerSections.values
-            if (entries.isEmpty()) return
+internal fun ComparisonAnswerTable(answerSections: JsonValue, heading: String? = "KARŞILAŞTIRMALI CEVAP") {
+    val matrix = comparisonAnswerMatrix(answerSections) ?: return
+    val criterionWidth = 112.dp
+    val entityWidth = 148.dp
+    val tableWidth = criterionWidth + entityWidth * (matrix.headers.size - 1)
 
-            Surface(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .testTag("comparison-answer-table"),
-                shape = RoundedCornerShape(12.dp),
-                border = BorderStroke(1.dp, LessonColors.AnswerBorder),
-                color = LessonColors.AnswerSurface
-            ) {
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(LessonSpacing.medium),
-                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-                ) {
-                    Text(
-                        text = "KARŞILAŞTIRMALI DEĞERLENDİRME TABLOSU (CEVAP)",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = LessonColors.AnswerText,
-                        fontWeight = FontWeight.Bold
-                    )
-
-                    val firstVal = entries.values.firstOrNull()
-                    if (firstVal is JsonValue.Object) {
-                        entries.forEach { (entityKey, entityVal) ->
-                            Surface(
-                                modifier = Modifier.fillMaxWidth(),
-                                shape = RoundedCornerShape(10.dp),
-                                color = LessonColors.Surface,
-                                border = BorderStroke(1.dp, LessonColors.AnswerBorder)
-                            ) {
-                                Column(
+    Column(
+        modifier = Modifier.fillMaxWidth().testTag("comparison-answer-table"),
+        verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+    ) {
+        heading?.let {
+            Text(
+                text = it,
+                style = MaterialTheme.typography.labelMedium,
+                color = LessonColors.AnswerText,
+                fontWeight = FontWeight.Bold
+            )
+        }
+        Surface(
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(10.dp),
+            border = BorderStroke(1.dp, LessonColors.AnswerBorder),
+            color = LessonColors.AnswerSurface
+        ) {
+            Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
+                Column(modifier = Modifier.width(tableWidth)) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth().background(LessonColors.SurfaceSoft),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        matrix.headers.forEachIndexed { index, header ->
+                            Text(
+                                text = header,
+                                modifier = Modifier
+                                    .width(if (index == 0) criterionWidth else entityWidth)
+                                    .padding(horizontal = 8.dp, vertical = 10.dp),
+                                style = MaterialTheme.typography.labelMedium,
+                                color = LessonColors.AnswerText,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                    Box(Modifier.fillMaxWidth().height(1.dp).background(LessonColors.AnswerBorder))
+                    matrix.rows.forEachIndexed { rowIndex, row ->
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .background(if (rowIndex % 2 == 0) LessonColors.Surface else LessonColors.AnswerSurface),
+                            verticalAlignment = Alignment.Top
+                        ) {
+                            row.forEachIndexed { columnIndex, cell ->
+                                Text(
+                                    text = cell,
                                     modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(LessonSpacing.small),
-                                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
-                                ) {
-                                    Text(
-                                        text = entityKey.replace("_", " ").uppercase(),
-                                        style = MaterialTheme.typography.titleSmall,
-                                        color = LessonColors.Primary,
-                                        fontWeight = FontWeight.Bold
-                                    )
-                                    if (entityVal is JsonValue.Object) {
-                                        entityVal.values.forEach { (subKey, subVal) ->
-                                            Row(
-                                                modifier = Modifier
-                                                    .fillMaxWidth()
-                                                    .padding(vertical = 2.dp),
-                                                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-                                            ) {
-                                                Text(
-                                                    text = subKey.replace("_", " "),
-                                                    style = MaterialTheme.typography.labelMedium,
-                                                    color = LessonColors.TextSecondary,
-                                                    fontWeight = FontWeight.SemiBold,
-                                                    modifier = Modifier.weight(0.35f)
-                                                )
-                                                Text(
-                                                    text = readableAnswerValue(subVal),
-                                                    style = MaterialTheme.typography.bodyMedium,
-                                                    color = LessonColors.TextPrimary,
-                                                    modifier = Modifier.weight(0.65f)
-                                                )
-                                            }
-                                        }
-                                    } else {
-                                        Text(
-                                            text = readableAnswerValue(entityVal),
-                                            style = MaterialTheme.typography.bodyMedium,
-                                            color = LessonColors.TextPrimary
-                                        )
-                                    }
-                                }
+                                        .width(if (columnIndex == 0) criterionWidth else entityWidth)
+                                        .padding(horizontal = 8.dp, vertical = 8.dp),
+                                    style = if (columnIndex == 0) MaterialTheme.typography.labelMedium
+                                        else MaterialTheme.typography.bodyMedium,
+                                    color = if (columnIndex == 0) LessonColors.AnswerText
+                                        else LessonColors.TextPrimary,
+                                    fontWeight = if (columnIndex == 0) FontWeight.SemiBold
+                                        else FontWeight.Normal
+                                )
                             }
                         }
-                    } else {
-                        entries.forEach { (key, value) ->
-                            Surface(
-                                modifier = Modifier.fillMaxWidth(),
-                                shape = RoundedCornerShape(8.dp),
-                                color = LessonColors.Surface,
-                                border = BorderStroke(1.dp, LessonColors.AnswerBorder)
-                            ) {
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(LessonSpacing.small),
-                                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-                                ) {
-                                    Text(
-                                        text = key.replace("_", " "),
-                                        style = MaterialTheme.typography.labelLarge,
-                                        color = LessonColors.Primary,
-                                        fontWeight = FontWeight.Bold,
-                                        modifier = Modifier.weight(0.35f)
-                                    )
-                                    Text(
-                                        text = readableAnswerValue(value),
-                                        style = MaterialTheme.typography.bodyMedium,
-                                        color = LessonColors.TextPrimary,
-                                        modifier = Modifier.weight(0.65f)
-                                    )
-                                }
-                            }
-                        }
+                        Box(Modifier.fillMaxWidth().height(1.dp).background(LessonColors.AnswerBorder))
                     }
                 }
             }
-        }
-        else -> {
-            AnswerSections(answerSections)
         }
     }
 }
@@ -465,7 +463,8 @@ internal fun VocabularyMatchLayout(
     state: LessonSession,
     dispatch: (LessonCommand) -> Unit,
     answerVisible: Boolean,
-    density: LessonVisualDensity
+    density: LessonVisualDensity,
+    answerHandledByTeacherPanel: Boolean = false
 ) {
     val answer = step.answer ?: return
     val terms = (answer.answerSections as? JsonValue.Object)?.values.orEmpty()
@@ -483,7 +482,13 @@ internal fun VocabularyMatchLayout(
         )
 
         terms.forEach { (term, definition) ->
-            val visible = answerVisible || term in state.vocabularyTerms[state.stepId].orEmpty()
+            val answerVisibleInTeacherPanel = answerHandledByTeacherPanel &&
+                RevealKey.ANSWER in state.revealed
+            val visible = vocabularyDefinitionVisible(
+                answerVisibleInline = answerVisible,
+                termRevealed = term in state.vocabularyTerms[state.stepId].orEmpty(),
+                answerVisibleInTeacherPanel = answerVisibleInTeacherPanel
+            )
             Surface(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(12.dp),
@@ -507,7 +512,7 @@ internal fun VocabularyMatchLayout(
                             color = if (visible) LessonColors.AnswerText else LessonColors.TextPrimary,
                             fontWeight = FontWeight.Bold
                         )
-                        if (!answerVisible) {
+                        if (!answerVisible && !answerVisibleInTeacherPanel) {
                             OutlinedButton(
                                 onClick = { dispatch(LessonCommand.ToggleTerm(state.stepId, term)) },
                                 modifier = Modifier
@@ -542,7 +547,7 @@ internal fun VocabularyMatchLayout(
             }
         }
 
-        if (RevealKey.ANSWER in step.revealOrder && terms.isNotEmpty()) {
+        if (!answerHandledByTeacherPanel && RevealKey.ANSWER in step.revealOrder && terms.isNotEmpty()) {
             FilledTonalButton(
                 onClick = { dispatch(LessonCommand.ToggleReveal(RevealKey.ANSWER)) },
                 modifier = Modifier

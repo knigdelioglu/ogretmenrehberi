@@ -29,6 +29,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
@@ -42,6 +43,9 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 import io.github.knigdelioglu.lessonplayer.ui.theme.lessonVisualDensity
+
+internal fun inlineTeacherAnswerVisible(answerVisible: Boolean, isThreeColumn: Boolean): Boolean =
+    answerVisible && !isThreeColumn
 
 /**
  * Adaptive teacher lesson player for the seven canonical layout kinds.
@@ -63,6 +67,7 @@ internal fun SessionLessonScreen(
     val step = LessonEngine.effectiveStep(sourceStep, state.overrides[sourceStep.id])
     val answer = step.answer
     val answerVisible = RevealKey.ANSWER in state.revealed
+    val inlineAnswerVisible = inlineTeacherAnswerVisible(answerVisible, isThreeColumn)
     val ordinal = state.order.indexOf(state.stepId)
     val density = lessonVisualDensity(step.density)
     val advanceCommand = nextLessonCommand(step, state)
@@ -171,7 +176,7 @@ internal fun SessionLessonScreen(
                             }
 
                             AnimatedContent(
-                                targetState = if (answerVisible && step.layout != LayoutKind.VOCABULARY) {
+                                targetState = if (inlineAnswerVisible && step.layout != LayoutKind.VOCABULARY) {
                                     answer?.answer.orEmpty()
                                 } else {
                                     step.displayPrompt
@@ -180,7 +185,10 @@ internal fun SessionLessonScreen(
                             ) { text ->
                                 Text(
                                     text = text,
-                                    style = MaterialTheme.typography.headlineMedium,
+                                    style = MaterialTheme.typography.bodyLarge.copy(
+                                        fontSize = 16.sp,
+                                        lineHeight = 23.sp
+                                    ),
                                     color = LessonColors.TextPrimary,
                                     fontWeight = FontWeight.SemiBold
                                 )
@@ -204,20 +212,20 @@ internal fun SessionLessonScreen(
                                 }
                             }
 
-                            if (!answerVisible || step.layout in setOf(
+                            if (!inlineAnswerVisible || step.layout in setOf(
                                     LayoutKind.STRUCTURE, LayoutKind.COMPARISON,
                                     LayoutKind.ASSESSMENT
                                 )
                             ) {
-                                if (!answerVisible) {
+                                if (!inlineAnswerVisible) {
                                     step.content?.lead?.takeIf { it != step.displayPrompt }?.let {
                                         Text(it, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary)
                                     }
                                 }
-                                LessonContentLayout(step, answerVisible = answerVisible)
+                                LessonContentLayout(step, answerVisible = inlineAnswerVisible)
                             }
 
-                            if (answerVisible && step.layout !in setOf(LayoutKind.VOCABULARY, LayoutKind.COMPARISON)) {
+                            if (inlineAnswerVisible && step.layout !in setOf(LayoutKind.VOCABULARY, LayoutKind.COMPARISON)) {
                                 AnswerSections(answer?.answerSections)
                             }
 
@@ -226,8 +234,9 @@ internal fun SessionLessonScreen(
                                     step = step,
                                     state = state,
                                     dispatch = send,
-                                    answerVisible = answerVisible,
-                                    density = density
+                                    answerVisible = inlineAnswerVisible,
+                                    density = density,
+                                    answerHandledByTeacherPanel = isThreeColumn
                                 )
                             }
                         }
@@ -414,7 +423,8 @@ internal fun SessionLessonScreen(
                         onClick = { send(LessonCommand.Previous) },
                         modifier = Modifier
                             .weight(1f)
-                            .heightIn(min = LessonTarget.minimum),
+                            .heightIn(min = LessonTarget.minimum)
+                            .testTag("lesson-previous"),
                         enabled = !actionState.busy && ordinal > 0
                     ) { Text("Önceki") }
 
@@ -422,7 +432,8 @@ internal fun SessionLessonScreen(
                         onClick = { advanceCommand?.let(send) },
                         modifier = Modifier
                             .weight(1f)
-                            .heightIn(min = LessonTarget.minimum),
+                            .heightIn(min = LessonTarget.minimum)
+                            .testTag("lesson-next"),
                         enabled = advanceEnabled
                     ) { Text(nextLessonActionLabel(step, state)) }
 

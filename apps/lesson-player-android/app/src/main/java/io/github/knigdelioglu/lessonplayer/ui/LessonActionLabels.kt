@@ -44,7 +44,7 @@ internal fun nextPublicRevealKey(step: LessonStep, state: LessonSession): Reveal
  * Sıradaki güvenli ders ilerletme komutunu üretir:
  * 1. Sıradaki public reveal anahtarı varsa: LessonCommand.ToggleReveal(key)
  * 2. Public reveal'lar bittiyse ve sonraki adım varsa: LessonCommand.Next
- * 3. Son adımsa ve reveal kalmadıysa: null (eylem tamamlandı / disabled)
+ * 3. Son adımsa ve reveal kalmadıysa: null (ilerletme butonu devre dışı)
  * NOTE için asla ToggleReveal(NOTE) dispatch üretmez.
  */
 internal fun nextLessonCommand(step: LessonStep, state: LessonSession): LessonCommand? {
@@ -69,7 +69,7 @@ internal fun isAdvanceActionEnabled(step: LessonStep, state: LessonSession): Boo
 
 /**
  * Sıradaki eylem butonunun etiketini üretir.
- * NOTE hariç sıradaki public key'i gösterir; kalmadıysa "Sonraki adıma geç"; son adımsa "Ders tamamlandı".
+ * NOTE hariç sıradaki public key'i gösterir; son adımda completion iddiası yerine "Son adım" der.
  */
 internal fun nextLessonActionLabel(step: LessonStep, state: LessonSession): String {
     val nextReveal = nextPublicRevealKey(step, state)
@@ -77,6 +77,6 @@ internal fun nextLessonActionLabel(step: LessonStep, state: LessonSession): Stri
     return when {
         nextReveal != null -> "Göster: ${revealLayerLabel(nextReveal)}"
         ordinal < state.order.lastIndex -> "Sonraki adıma geç"
-        else -> "Ders tamamlandı"
+        else -> "Son adım"
     }
 }

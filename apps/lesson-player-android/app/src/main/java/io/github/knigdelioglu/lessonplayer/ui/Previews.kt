@@ -8,12 +8,9 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -63,12 +60,6 @@ private fun DarkPreview() {
 @Composable
 private fun MediumTabletPreview() {
     LessonTheme { WindowLayoutPreview(840, 900) }
-}
-
-@Preview(name = "04 · Expanded tablet", widthDp = 1280, heightDp = 800, showBackground = true)
-@Composable
-private fun ExpandedTabletPreview() {
-    LessonTheme { WindowLayoutPreview(1280, 800) }
 }
 
 private fun createPreviewSampleLesson(): LessonData {
@@ -200,24 +191,21 @@ private fun ShellV2ThreeColumnPreview() {
     val currentStep = lesson.steps.first { it.id == session.stepId }
 
     LessonTheme {
-        Row(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(LessonColors.AppBg)
-                .windowInsetsPadding(WindowInsets.safeDrawing)
-        ) {
-            // 1. Sol Koyu Mor Sidebar (~%22)
-            LessonV2Sidebar(
-                currentScreen = AppScreen.LESSON,
-                onNavigate = {},
-                session = session,
-                lesson = lesson,
-                onSelectStep = {},
-                modifier = Modifier.fillMaxHeight().weight(0.22f)
-            )
-
-            // 2. Orta kolon (%56), header ve eylemler yalnızca bu alanda kalır.
-            Column(modifier = Modifier.fillMaxHeight().weight(0.56f)) {
+        ExpandedLessonLayout(
+            sidebar = { sidebarModifier ->
+                LessonV2Sidebar(
+                    currentScreen = AppScreen.LESSON,
+                    onNavigate = {},
+                    onSearch = {},
+                    onReturnToCurrent = {},
+                    session = session,
+                    lesson = lesson,
+                    onSelectStep = {},
+                    modifier = sidebarModifier
+                )
+            },
+            workspace = { workspaceModifier ->
+                Column(modifier = workspaceModifier) {
                 LessonV2Header(
                     currentScreen = AppScreen.LESSON,
                     lesson = lesson,
@@ -239,15 +227,16 @@ private fun ShellV2ThreeColumnPreview() {
                     dispatch = {},
                     actionBusy = false
                 )
+                }
+            },
+            teacherAssist = { teacherModifier ->
+                LessonV2TeacherAssistPane(
+                    step = currentStep,
+                    session = session,
+                    modifier = teacherModifier
+                )
             }
-
-            // En sağ kolon (%22), header ve action bar'dan bağımsız tam yüksekliğe sahiptir.
-            LessonV2TeacherAssistPane(
-                step = currentStep,
-                session = session,
-                modifier = Modifier.fillMaxHeight().weight(0.22f)
-            )
-        }
+        )
     }
 }
 

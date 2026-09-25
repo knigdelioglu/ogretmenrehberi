@@ -39,6 +39,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.R
 import io.github.knigdelioglu.lessonplayer.content.LessonData
+import io.github.knigdelioglu.lessonplayer.content.LessonStep
+import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.AppScreen
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
@@ -53,6 +55,8 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 fun LessonV2Sidebar(
     currentScreen: AppScreen,
     onNavigate: (AppScreen) -> Unit,
+    onSearch: () -> Unit,
+    onReturnToCurrent: () -> Unit,
     session: LessonSession?,
     lesson: LessonData?,
     onSelectStep: (String) -> Unit,
@@ -112,7 +116,8 @@ fun LessonV2Sidebar(
                     Surface(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .heightIn(min = LessonTarget.minimum),
+                            .heightIn(min = LessonTarget.minimum)
+                            .testTag("app-navigation-${screen.name.lowercase()}"),
                         shape = RoundedCornerShape(12.dp),
                         color = if (isSelected) LessonColors.SidebarActive else Color.Transparent,
                         border = if (isSelected) BorderStroke(1.dp, LessonColors.SidebarActive) else null
@@ -146,6 +151,21 @@ fun LessonV2Sidebar(
                         }
                     }
                 }
+            }
+
+            Spacer(modifier = Modifier.height(LessonSpacing.small))
+            SidebarQuickAction(
+                label = "Arama",
+                tag = "quick-access-search",
+                onClick = onSearch
+            )
+            if (session != null && currentScreen != AppScreen.LESSON) {
+                Spacer(modifier = Modifier.height(LessonSpacing.tiny))
+                SidebarQuickAction(
+                    label = "Kaldığım Yer",
+                    tag = "quick-access-current-lesson",
+                    onClick = onReturnToCurrent
+                )
             }
 
             // Aktif Ders Adımları (Eğer aktif ders varsa)
@@ -190,7 +210,7 @@ fun LessonV2Sidebar(
                                 .fillMaxWidth()
                                 .heightIn(min = LessonTarget.minimum),
                             shape = RoundedCornerShape(10.dp),
-                            color = if (isSelected) LessonColors.SidebarSurface else Color.Transparent,
+                            color = if (isSelected) LessonColors.SidebarActive else Color.Transparent,
                             border = if (isSelected) BorderStroke(1.5.dp, LessonColors.SidebarActive) else null
                         ) {
                             Row(
@@ -223,19 +243,24 @@ fun LessonV2Sidebar(
 
                                 Column(modifier = Modifier.weight(1f)) {
                                     Text(
-                                        text = step?.displayPrompt.orEmpty(),
+                                        text = step?.let(::lessonSidebarStepTitle).orEmpty(),
                                         style = MaterialTheme.typography.bodyMedium,
-                                        color = LessonColors.SidebarText,
+                                        color = if (isSelected) LessonColors.SidebarBg else LessonColors.SidebarText,
                                         fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal,
                                         maxLines = 2,
                                         overflow = TextOverflow.Ellipsis
                                     )
-                                    step?.source?.taskType?.let {
+                                    step?.let { currentStep ->
                                         Text(
-                                            text = it.uppercase(),
+                                            text = listOf(
+                                                lessonSidebarStepType(currentStep),
+                                                "Basılı s. ${currentStep.source.printedPageRange}"
+                                            ).joinToString(" · "),
                                             style = MaterialTheme.typography.labelMedium,
-                                            color = LessonColors.SidebarSubtext,
-                                            maxLines = 1
+                                            color = if (isSelected) LessonColors.SidebarBg.copy(alpha = 0.78f)
+                                                else LessonColors.SidebarSubtext,
+                                            maxLines = 2,
+                                            overflow = TextOverflow.Ellipsis
                                         )
                                     }
                                 }
@@ -246,6 +271,68 @@ fun LessonV2Sidebar(
             } else {
                 Spacer(modifier = Modifier.weight(1f))
             }
+        }
+    }
+}
+
+@Composable
+private fun SidebarQuickAction(label: String, tag: String, onClick: () -> Unit) {
+    Surface(
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = LessonTarget.minimum)
+            .testTag(tag),
+        shape = RoundedCornerShape(10.dp),
+        color = LessonColors.SidebarSurface
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable(onClick = onClick)
+                .padding(horizontal = LessonSpacing.small, vertical = LessonSpacing.tiny),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = label,
+                style = MaterialTheme.typography.bodyMedium,
+                color = LessonColors.SidebarText,
+                fontWeight = FontWeight.SemiBold
+            )
+        }
+    }
+}
+
+internal fun lessonSidebarStepTitle(step: LessonStep): String {
+    val title = sequenceOf(
+        step.answer?.promptSummary,
+        step.content?.sections?.firstOrNull()?.title,
+        step.source.bookHeading,
+        step.content?.items?.firstOrNull(),
+        step.displayPrompt
+    ).first { !it.isNullOrBlank() }
+        .orEmpty()
+        .replace(Regex("\\s+"), " ")
+        .trim()
+        .substringBefore(". ")
+    if (title.length <= 58) return title
+    val clipped = title.take(55).substringBeforeLast(' ').ifBlank { title.take(55) }
+    return "$clipped…"
+}
+
+internal fun lessonSidebarStepType(step: LessonStep): String {
+    val taskType = step.source.taskType.uppercase()
+    return when {
+        taskType.contains("TEXT") || taskType.contains("METIN") || taskType.contains("READING") -> "Metin"
+        taskType.contains("TOPIC") || taskType.contains("KONU") || taskType == "PROCESS" -> "Konu"
+        taskType.contains("QUESTION") || taskType.contains("SORU") -> "Soru"
+        taskType.contains("ACTIVITY") || taskType.contains("ASSESS") ||
+            taskType.contains("COMPARISON") || taskType == "TABLE" -> "Etkinlik"
+        else -> when (step.layout) {
+            LayoutKind.REFERENCE -> "Metin"
+            LayoutKind.PROCESS -> "Konu"
+            LayoutKind.QUESTION -> "Soru"
+            LayoutKind.VOCABULARY -> "Söz varlığı"
+            LayoutKind.COMPARISON, LayoutKind.STRUCTURE, LayoutKind.ASSESSMENT -> "Etkinlik"
         }
     }
 }

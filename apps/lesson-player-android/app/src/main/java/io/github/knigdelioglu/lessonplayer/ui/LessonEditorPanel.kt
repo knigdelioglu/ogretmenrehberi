@@ -15,6 +15,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -25,6 +26,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.unit.sp
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
@@ -51,11 +53,13 @@ internal fun LessonEditorPanel(
     var expanded by rememberSaveable(step.id) { mutableStateOf(false) }
 
     if (!expanded) {
-        OutlinedButton(
+        TextButton(
             onClick = { expanded = true },
-            modifier = Modifier.fillMaxWidth().heightIn(min = LessonTarget.minimum)
+            modifier = Modifier.fillMaxWidth()
+                .heightIn(min = LessonTarget.minimum)
+                .testTag("lesson-editor-open")
         ) {
-            Text("Adımı düzenle")
+            Text("Gelişmiş öğretmen aracı · Adımı düzenle", fontSize = 13.sp)
         }
         return
     }
@@ -80,6 +84,11 @@ internal fun LessonEditorPanel(
         ) {
             Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
                 Text("Yerel adım düzenleme", style = MaterialTheme.typography.titleMedium)
+                Text(
+                    "YALNIZCA ÖĞRETMEN · GELİŞMİŞ ARAÇ",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.secondary
+                )
                 Text(
                     "Bu ayarlar yalnızca bu Android cihazdaki öğretmen görünümünü değiştirir.",
                     style = MaterialTheme.typography.bodyMedium,

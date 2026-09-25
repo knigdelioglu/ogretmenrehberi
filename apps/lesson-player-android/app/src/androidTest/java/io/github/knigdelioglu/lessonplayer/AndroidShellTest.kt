@@ -3,10 +3,13 @@ package io.github.knigdelioglu.lessonplayer
 import android.content.pm.ActivityInfo
 import androidx.compose.ui.test.assertHeightIsAtLeast
 import androidx.compose.ui.test.assertIsEnabled
+import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.assertTextContains
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.hasTestTag
+import androidx.compose.ui.test.SemanticsMatcher
 import androidx.compose.ui.test.isEnabled
+import androidx.compose.ui.test.isSelected
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.onAllNodesWithText
@@ -22,40 +25,54 @@ import org.junit.Test
 class AndroidShellTest {
     @get:Rule val composeRule = createAndroidComposeRule<MainActivity>()
 
+    private fun hasNodes(matcher: SemanticsMatcher): Boolean = try {
+        composeRule.onAllNodes(matcher).fetchSemanticsNodes().isNotEmpty()
+    } catch (_: IllegalStateException) {
+        // The Activity can be resumed before its first Compose semantics tree is attached.
+        false
+    }
+
     @Test
     fun nativeLibraryUsesValidatedOfflineCatalogAndPresentationSurface() {
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("Ders, elinin altında.")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("library-screen-surface"))
         }
-        composeRule.onNodeWithText("Ders, elinin altında.").assertExists()
-        composeRule.onNode(hasText("ders ·", substring = true)).assertExists()
+        composeRule.onNodeWithTag("library-search-field").assertExists()
+        assertTrue(
+            "Validated offline catalog should contain lessons",
+            hasNodes(hasTestTag("library-lesson-open"))
+        )
 
-        composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasTestTag("lesson-presentation-toggle").and(isEnabled())
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
-        composeRule.onNodeWithText("Önceki").assertHeightIsAtLeast(48.dp)
-        composeRule.onAllNodes(hasText("Göster:", substring = true))[0]
-            .assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithText("Sonraki").assertHeightIsAtLeast(48.dp)
+        if (hasNodes(hasTestTag("lesson-outline-open"))) {
+            composeRule.onNodeWithTag("lesson-outline-open").performClick()
+        }
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasTestTag("lesson-outline-step-3"))
+        }
+        composeRule.onNodeWithTag("lesson-outline-step-3").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasTestTag("lesson-answer-toggle")) &&
+                hasNodes(hasTestTag("lesson-evidence-toggle"))
+        }
+        composeRule.onNodeWithTag("lesson-previous").assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithTag("lesson-next").assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithTag("lesson-answer-toggle").assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithTag("lesson-evidence-toggle").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-presentation-toggle")
             .assertIsEnabled().performClick()
 
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("Sunumdan çık")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasText("Sunumdan çık"))
         }
         composeRule.onNodeWithText("Sunumdan çık").assertExists()
         composeRule.onNodeWithText("Yazı:", substring = true).performClick()
         composeRule.onNodeWithText("Çok büyük").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            composeRule.onAllNodesWithText("Yazı: Çok büyük")
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasText("Yazı: Çok büyük"))
         }
         assertTrue(
             composeRule.onAllNodesWithText("Öğretmen notu")
@@ -66,17 +83,14 @@ class AndroidShellTest {
             activity.onBackPressedDispatcher.onBackPressed()
         }
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasTestTag("lesson-presentation-toggle").and(isEnabled())
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
         composeRule.onNodeWithText("Sunumdan çık").assertDoesNotExist()
 
         composeRule.onNodeWithTag("lesson-presentation-toggle")
             .assertIsEnabled().performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            composeRule.onAllNodesWithText("Yazı: Çok büyük")
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasText("Yazı: Çok büyük"))
         }
         composeRule.onNodeWithText("Yazı:", substring = true).performClick()
         composeRule.onNodeWithText("Normal").performClick()
@@ -89,30 +103,32 @@ class AndroidShellTest {
             it.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(hasText("Ders, elinin altında."))
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("library-screen-surface"))
         }
-        composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasTestTag("lesson-outline-open").and(isEnabled())
-            )
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("lesson-outline-open").and(isEnabled())) ||
+                hasNodes(hasTestTag("lesson-outline-step-2"))
         }
-        composeRule.onNodeWithTag("lesson-outline-open")
-            .assertIsEnabled().performClick()
+        if (hasNodes(hasTestTag("lesson-outline-open"))) {
+            composeRule.onNodeWithTag("lesson-outline-open")
+                .assertIsEnabled().performClick()
+        }
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            composeRule.onAllNodesWithText("DERS AKIŞI")
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("lesson-outline-step-2"))
         }
         composeRule.onNodeWithTag("lesson-outline-step-2").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            composeRule.onAllNodes(hasText("· 2/", substring = true))
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("lesson-step-counter").and(hasText("· 2/", substring = true))) ||
+                hasNodes(hasTestTag("lesson-outline-step-2").and(isSelected()))
         }
-        composeRule.onNodeWithTag("lesson-step-counter")
-            .assertTextContains("· 2/", substring = true)
-        composeRule.onNodeWithText("Sınıf sunumuna geç").assertExists()
+        composeRule.onNodeWithTag("lesson-screen-list").assertExists()
+        if (hasNodes(hasTestTag("lesson-step-counter"))) {
+            composeRule.onNodeWithTag("lesson-step-counter")
+                .assertTextContains("· 2/", substring = true)
+        } else {
+            composeRule.onNodeWithTag("lesson-outline-step-2").assertIsSelected()
+        }
     }
 
     @Test
@@ -121,69 +137,70 @@ class AndroidShellTest {
             it.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(hasText("Ders, elinin altında."))
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("library-screen-surface"))
         }
-        composeRule.onNodeWithText("Ayarlar").performClick()
+        composeRule.onNodeWithTag("app-navigation-settings").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            composeRule.onAllNodesWithText("Veri ve yedekleme")
-                .fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("settings-list"))
         }
         composeRule.onNodeWithTag("settings-list")
             .performScrollToNode(hasText("Yedek parolası"))
-        composeRule.onNodeWithText("Göster").assertExists()
+        composeRule.onNodeWithTag("backup-passphrase-visibility-toggle")
+            .assertTextContains("Göster")
         composeRule.onNodeWithTag("backup-passphrase").performTextInput("a11-tablet-pass")
-        composeRule.onNodeWithText("Göster").performClick()
-        composeRule.onNodeWithText("Gizle").assertExists()
+        composeRule.onNodeWithTag("backup-passphrase-visibility-toggle").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasTestTag("backup-passphrase-visibility-toggle").and(hasText("Gizle")))
+        }
     }
     @Test
     fun teacherCanOpenNativeEditorWithoutPresentationMode() {
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("Ders, elinin altında.")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("library-screen-surface"))
         }
-        composeRule.onAllNodesWithText("Adımları incele")[0].performClick()
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasTestTag("lesson-presentation-toggle").and(isEnabled())
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
+        }
+        if (hasNodes(hasTestTag("lesson-outline-open"))) {
+            composeRule.onNodeWithTag("lesson-outline-open").performClick()
+        }
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasTestTag("lesson-outline-step-1"))
+        }
+        composeRule.onNodeWithTag("lesson-outline-step-1").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasTestTag("lesson-editor-open"))
         }
         val lessonList = composeRule.onNodeWithTag("lesson-screen-list")
-        lessonList.performScrollToNode(hasText("Adımı düzenle"))
-        composeRule.onNodeWithText("Adımı düzenle").performClick()
+        lessonList.performScrollToNode(hasTestTag("lesson-editor-open"))
+        composeRule.onNodeWithTag("lesson-editor-open").performClick()
         composeRule.onNodeWithText("Yerel adım düzenleme").assertExists()
         composeRule.onNodeWithText("Soru / başlık").assertExists()
+        lessonList.performScrollToNode(hasText("Süreç maddeleri ve bilgi kartları"))
         composeRule.onNodeWithText("Süreç maddeleri ve bilgi kartları").assertExists()
+        lessonList.performScrollToNode(hasText("Düzenlemeyi kapat"))
         composeRule.onNodeWithText("Düzenlemeyi kapat").performClick()
     }
 
     @Test
     fun teacherGuideShowsThreePersistentTrackingLanes() {
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("Ders, elinin altında.")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("library-screen-surface"))
         }
-        composeRule.onNodeWithText("Rehber").performClick()
+        composeRule.onNodeWithTag("app-navigation-guide").performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("Üç ayrı takip hattı")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasTestTag("teacher-guide-list"))
         }
         composeRule.onNodeWithText("1 · EDEBİYAT ATÖLYESİ").assertExists()
         composeRule.onNodeWithText("Yıllık plan").performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("2 · DÖRT ESER + BİR FİLM")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasText("2 · DÖRT ESER + BİR FİLM"))
         }
         composeRule.onNodeWithText("2 · DÖRT ESER + BİR FİLM").assertExists()
         composeRule.onNodeWithText("Portfolyo").performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
-            composeRule.onAllNodes(
-                hasText("3 · PORTFOLYO VE DEĞERLENDİRME")
-            ).fetchSemanticsNodes().isNotEmpty()
+            hasNodes(hasText("3 · PORTFOLYO VE DEĞERLENDİRME"))
         }
         composeRule.onNodeWithText("3 · PORTFOLYO VE DEĞERLENDİRME").assertExists()
         composeRule.onNodeWithText("Tema sonu yansıtma · Tema sonu 3-2-1 çıkış kartı")

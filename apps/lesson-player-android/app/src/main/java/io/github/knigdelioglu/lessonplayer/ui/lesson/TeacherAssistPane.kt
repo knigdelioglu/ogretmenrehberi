@@ -46,6 +46,7 @@ import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.AnswerSections
+import io.github.knigdelioglu.lessonplayer.ui.ComparisonAnswerTable
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -85,7 +86,7 @@ fun LessonV2TeacherAssistPane(
     val hasAnyAssist = hasGuidance || hasAnswer || hasExplanation || hasEvidence || hasNote
 
     Surface(
-        modifier = modifier.fillMaxHeight(),
+        modifier = modifier.fillMaxHeight().testTag("teacher-assist-pane"),
         color = LessonColors.AppBg,
         border = BorderStroke(1.dp, LessonColors.Border)
     ) {
@@ -149,7 +150,13 @@ fun LessonV2TeacherAssistPane(
                         enabled = enabled,
                         content = answerText,
                         extraContent = if (isRevealed && answer?.answerSections != null) {
-                            { AnswerSections(answer.answerSections) }
+                            {
+                                if (effectiveStep.layout == io.github.knigdelioglu.lessonplayer.content.LayoutKind.COMPARISON) {
+                                    ComparisonAnswerTable(answer.answerSections, heading = null)
+                                } else {
+                                    AnswerSections(answer.answerSections)
+                                }
+                            }
                         } else null
                     )
                 }

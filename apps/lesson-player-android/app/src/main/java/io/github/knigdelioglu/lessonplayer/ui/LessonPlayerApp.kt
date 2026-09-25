@@ -45,6 +45,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
@@ -86,6 +88,7 @@ fun LessonPlayerApp() {
         var loadingContent by remember { mutableStateOf(true) }
         var loadRequest by remember { mutableIntStateOf(0) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
+        var librarySearchFocusRequest by rememberSaveable { mutableIntStateOf(0) }
         val sessionViewModel: LessonSessionViewModel = viewModel()
         val teacherPlanViewModel: TeacherPlanViewModel = viewModel()
         val sessionUi by sessionViewModel.state.collectAsState()
@@ -201,6 +204,11 @@ fun LessonPlayerApp() {
                 presentationTextSize = presentationTextSize,
                 setPresentationTextSize = sessionViewModel::setPresentationTextSize,
                 navigate = { currentScreen = it },
+                requestLibrarySearch = {
+                    librarySearchFocusRequest += 1
+                    currentScreen = AppScreen.LIBRARY
+                },
+                librarySearchFocusRequest = librarySearchFocusRequest,
                 selectLesson = {
                     sessionViewModel.openLesson(it)
                     currentScreen = AppScreen.LESSON
@@ -238,6 +246,8 @@ internal fun LessonPlayerShell(
     presentationTextSize: PresentationTextSize,
     setPresentationTextSize: (PresentationTextSize) -> Unit,
     navigate: (AppScreen) -> Unit,
+    requestLibrarySearch: () -> Unit,
+    librarySearchFocusRequest: Int,
     selectLesson: (String) -> Unit,
     dispatch: (LessonCommand) -> Unit,
     actionState: LessonActionUiState,
@@ -249,9 +259,20 @@ internal fun LessonPlayerShell(
     beginImport: (String) -> Unit
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
+        val safeDrawing = WindowInsets.safeDrawing
+        val layoutDirection = LocalLayoutDirection.current
+        val safeDrawingInsets = with(LocalDensity.current) {
+            LessonWindowInsetsDp(
+                start = safeDrawing.getLeft(this, layoutDirection).toDp().value,
+                top = safeDrawing.getTop(this).toDp().value,
+                end = safeDrawing.getRight(this, layoutDirection).toDp().value,
+                bottom = safeDrawing.getBottom(this).toDp().value
+            )
+        }
         val windowLayout = lessonWindowLayout(
             widthDp = maxWidth.value.roundToInt(),
-            heightDp = maxHeight.value.roundToInt()
+            heightDp = maxHeight.value.roundToInt(),
+            safeDrawingInsets = safeDrawingInsets
         )
         val wide = windowLayout.usesRail
         val isThreeColumn = windowLayout.usesThreeColumn
@@ -285,86 +306,93 @@ internal fun LessonPlayerShell(
                 exit = { dispatchAction(LessonCommand.SetPresentationMode(false)) }
             )
         } else if (isThreeColumn) {
-            // UI Shell V2: Büyük Landscape Tablet 3-Kolon Shell
             val currentLesson = effectiveLesson
-
-            Row(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(LessonColors.AppBg)
-                    .windowInsetsPadding(WindowInsets.safeDrawing)
-            ) {
-                // 1. Sol Koyu Mor Sidebar (%22)
-                LessonV2Sidebar(
-                    currentScreen = currentScreen,
-                    onNavigate = navigate,
-                    session = session,
-                    lesson = currentLesson,
-                    onSelectStep = { stepId -> dispatchAction(LessonCommand.GoToStep(stepId)) },
-                    enabled = !actionState.busy,
-                    modifier = Modifier
-                        .fillMaxHeight()
-                        .weight(0.22f)
-                )
-
-                if (currentScreen == AppScreen.LESSON && currentLesson != null && currentStep != null) {
-                    // Orta kolon (%45): sağ destek sütununa %50 daha fazla genişlik ayrılır.
-                    Column(
-                        modifier = Modifier
-                            .fillMaxHeight()
-                            .weight(0.45f)
-                    ) {
-                        LessonV2Header(
+            if (currentScreen == AppScreen.LESSON && currentLesson != null && currentStep != null) {
+                ExpandedLessonLayout(
+                    sidebar = { sidebarModifier ->
+                        LessonV2Sidebar(
                             currentScreen = currentScreen,
+                            onNavigate = navigate,
+                            onSearch = requestLibrarySearch,
+                            onReturnToCurrent = { navigate(AppScreen.LESSON) },
+                            session = session,
                             lesson = currentLesson,
-                            session = session
+                            onSelectStep = { stepId ->
+                                dispatchAction(LessonCommand.GoToStep(stepId))
+                            },
+                            enabled = !actionState.busy,
+                            modifier = sidebarModifier
                         )
-
-                        Box(
-                            modifier = Modifier
-                                .weight(1f)
-                                .fillMaxWidth()
-                        ) {
-                            SessionLessonScreen(
+                    },
+                    workspace = { workspaceModifier ->
+                        Column(modifier = workspaceModifier) {
+                            LessonV2Header(
+                                currentScreen = currentScreen,
                                 lesson = currentLesson,
-                                state = session,
+                                session = session
+                            )
+                            Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
+                                SessionLessonScreen(
+                                    lesson = currentLesson,
+                                    state = session,
+                                    dispatch = dispatchAction,
+                                    actionState = actionState,
+                                    retryLastAction = retryLastAction,
+                                    isThreeColumn = true
+                                )
+                            }
+                            LessonV2ActionBar(
+                                step = currentStep,
+                                session = session,
                                 dispatch = dispatchAction,
-                                actionState = actionState,
-                                retryLastAction = retryLastAction,
-                                isThreeColumn = true
+                                actionBusy = actionState.busy
                             )
                         }
-
-                        LessonV2ActionBar(
+                    },
+                    teacherAssist = { teacherModifier ->
+                        LessonV2TeacherAssistPane(
                             step = currentStep,
                             session = session,
-                            dispatch = dispatchAction,
-                            actionBusy = actionState.busy
+                            enabled = !actionState.busy,
+                            modifier = teacherModifier
                         )
                     }
-
-                    // En sağ kolon (%33), önceki %22 genişliğine göre %50 büyütülür.
-                    LessonV2TeacherAssistPane(
-                        step = currentStep,
+                )
+            } else {
+                Row(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(LessonColors.AppBg)
+                        .windowInsetsPadding(WindowInsets.safeDrawing)
+                ) {
+                    LessonV2Sidebar(
+                        currentScreen = currentScreen,
+                        onNavigate = navigate,
+                        onSearch = requestLibrarySearch,
+                        onReturnToCurrent = { navigate(AppScreen.LESSON) },
                         session = session,
+                        lesson = currentLesson,
+                        onSelectStep = { stepId ->
+                            dispatchAction(LessonCommand.GoToStep(stepId))
+                        },
                         enabled = !actionState.busy,
                         modifier = Modifier
                             .fillMaxHeight()
-                            .weight(0.33f)
+                            .weight(LessonShellLayoutContract.SIDEBAR_WEIGHT)
                     )
-                } else {
-                    // Library, Guide ve Settings geniş içerik alanını kullanmaya devam eder.
                     Column(
                         modifier = Modifier
                             .fillMaxHeight()
-                            .weight(0.78f)
+                            .weight(
+                                LessonShellLayoutContract.WORKSPACE_WEIGHT +
+                                    LessonShellLayoutContract.TEACHER_ASSIST_WEIGHT
+                            )
                     ) {
                         LessonV2Header(
                             currentScreen = currentScreen,
                             lesson = currentLesson,
                             session = session
                         )
-
                         Box(
                             modifier = Modifier
                                 .weight(1f)
@@ -384,7 +412,8 @@ internal fun LessonPlayerShell(
                                 toggleTeacherMark = toggleTeacherMark,
                                 backupState = backupState,
                                 beginExport = beginExport,
-                                beginImport = beginImport
+                                beginImport = beginImport,
+                                librarySearchFocusRequest = librarySearchFocusRequest
                             )
                         }
                     }
@@ -473,6 +502,9 @@ internal fun LessonPlayerShell(
                                     NavigationBarItem(
                                         selected = currentScreen == destination,
                                         onClick = { navigate(destination) },
+                                        modifier = Modifier.testTag(
+                                            "app-navigation-${destination.name.lowercase()}"
+                                        ),
                                         icon = { AppNavigationIcon(destination) },
                                         label = { Text(destination.shortLabel) },
                                         alwaysShowLabel = true
@@ -572,7 +604,8 @@ internal fun LessonPlayerShell(
                                     } else null,
                                     openTeacherAssist = if (currentScreen == AppScreen.LESSON) {
                                         { showTeacherAssist = true }
-                                    } else null
+                                    } else null,
+                                    librarySearchFocusRequest = librarySearchFocusRequest
                                 )
                             }
                         }

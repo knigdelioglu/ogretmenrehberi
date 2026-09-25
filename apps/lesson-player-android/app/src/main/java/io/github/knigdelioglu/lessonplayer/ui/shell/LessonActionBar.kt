@@ -3,6 +3,7 @@ package io.github.knigdelioglu.lessonplayer.ui.shell
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -31,11 +32,13 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.ui.LessonShellLayoutContract
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -82,27 +85,33 @@ fun LessonV2ActionBar(
         color = LessonColors.Surface,
         border = BorderStroke(1.dp, LessonColors.Border)
     ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = LessonSpacing.medium, vertical = LessonSpacing.tiny),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-        ) {
-            BoxWithConstraints(modifier = Modifier.weight(1f)) {
-                val showLabels = maxWidth >= 840.dp * LocalDensity.current.fontScale
+        BoxWithConstraints(modifier = Modifier.fillMaxWidth()) {
+            val showLabels = LessonShellLayoutContract.actionBarUsesLabels(
+                centerWidthDp = maxWidth.value,
+                fontScale = LocalDensity.current.fontScale
+            )
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = LessonSpacing.tiny, vertical = LessonSpacing.tiny),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+            ) {
                 Row(
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier.weight(1f),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                 ) {
                     if (showLabels) {
                         FilledTonalButton(
                             onClick = { send(LessonCommand.SetPresentationMode(true)) },
                             enabled = !actionBusy,
                             modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                                .testTag("lesson-presentation-toggle")
-                        ) { Text("Öğrenciye Göster") }
+                                .testTag("lesson-presentation-toggle"),
+                            contentPadding = PaddingValues(horizontal = 6.dp, vertical = 0.dp)
+                        ) {
+                            Text("Öğrenciye Göster", fontSize = 12.sp, maxLines = 1, softWrap = false)
+                        }
                     } else {
                         IconButton(
                             onClick = { send(LessonCommand.SetPresentationMode(true)) },
@@ -149,7 +158,7 @@ fun LessonV2ActionBar(
                     )
                     if (hasEvidence) RevealActionButton(
                         label = if (isEvidenceRevealed) "Kanıtı Gizle" else "Kanıtı Göster",
-                        shortLabel = "Metinsel kanıt",
+                        shortLabel = "Metinsel Kanıt",
                         isRevealed = isEvidenceRevealed,
                         showLabel = showLabels,
                         color = LessonColors.EvidenceText,
@@ -158,24 +167,28 @@ fun LessonV2ActionBar(
                         onClick = { send(LessonCommand.ToggleReveal(RevealKey.EVIDENCE)) }
                     )
                 }
-            }
 
-            // Adım gezinmesi merkez araç çubuğunun sağında sabit kalır.
-            Row(horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
-                OutlinedButton(
-                    onClick = { send(LessonCommand.Previous) },
-                    enabled = !actionBusy && ordinal > 0,
-                    modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                ) {
-                    Text("Önceki")
-                }
+                // Adım gezinmesi merkez araç çubuğunun sağında sabit kalır.
+                Row(horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)) {
+                    OutlinedButton(
+                        onClick = { send(LessonCommand.Previous) },
+                        enabled = !actionBusy && ordinal > 0,
+                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                            .testTag("lesson-previous"),
+                        contentPadding = PaddingValues(horizontal = 6.dp, vertical = 0.dp)
+                    ) {
+                        Text("Önceki", fontSize = 13.sp, maxLines = 1)
+                    }
 
-                OutlinedButton(
-                    onClick = { send(LessonCommand.Next) },
-                    enabled = !actionBusy && ordinal < session.order.lastIndex,
-                    modifier = Modifier.heightIn(min = LessonTarget.minimum)
-                ) {
-                    Text("Sonraki")
+                    OutlinedButton(
+                        onClick = { send(LessonCommand.Next) },
+                        enabled = !actionBusy && ordinal < session.order.lastIndex,
+                        modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                            .testTag("lesson-next"),
+                        contentPadding = PaddingValues(horizontal = 6.dp, vertical = 0.dp)
+                    ) {
+                        Text("Sonraki", fontSize = 13.sp, maxLines = 1)
+                    }
                 }
             }
         }
@@ -202,9 +215,10 @@ private fun RevealActionButton(
             ),
             modifier = Modifier.heightIn(min = LessonTarget.minimum)
                 .testTag(testTag)
-                .semantics { stateDescription = if (isRevealed) "$shortLabel açık" else "$shortLabel kapalı" }
+                .semantics { stateDescription = if (isRevealed) "$shortLabel açık" else "$shortLabel kapalı" },
+            contentPadding = PaddingValues(horizontal = 5.dp, vertical = 0.dp)
         ) {
-            Text(label)
+            Text(shortLabel, fontSize = 12.sp, maxLines = 1, softWrap = false)
         }
     } else {
         IconButton(

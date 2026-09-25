@@ -1,32 +1,32 @@
 package io.github.knigdelioglu.lessonplayer.ui.shell
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
@@ -36,15 +36,13 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 
 enum class PhaseState {
-    COMPLETED,
+    PAST,
     ACTIVE,
     UPCOMING
 }
 
 /**
- * Derived UI lesson presentation phase.
- * Not stored in database or canonical JSON contract; derived monotonically from
- * step order, LayoutKind, and taskType to present 4–6 stable pedagogical phases.
+ * Derived UI lesson presentation phase, not stored in canonical lesson data.
  */
 data class LessonUiPhase(
     val id: String,
@@ -56,13 +54,14 @@ data class LessonUiPhase(
 )
 
 /**
- * Derives at most 5–6 stable pedagogical UI phases from lesson steps.
+ * Derives contiguous category segments in the current lesson order.
  */
 fun deriveLessonPhases(lesson: LessonData, session: LessonSession): List<LessonUiPhase> {
-    val steps = lesson.steps
+    val stepsById = lesson.steps.associateBy { it.id }
+    val steps = session.order.mapNotNull(stepsById::get)
     if (steps.isEmpty()) return emptyList()
 
-    val currentStepIndexInOrder = session.order.indexOf(session.stepId)
+    val currentStepIndexInOrder = steps.indexOfFirst { it.id == session.stepId }.coerceAtLeast(0)
 
     // Map each step to a pedagogical category based on LayoutKind and taskType
     fun stepCategory(step: LessonStep): String {
@@ -71,46 +70,37 @@ fun deriveLessonPhases(lesson: LessonData, session: LessonSession): List<LessonU
         return when {
             layout == LayoutKind.ASSESSMENT || tt == "ASSESSMENT" -> "Değerlendirme"
             layout == LayoutKind.VOCABULARY || tt == "VOCABULARY" -> "Söz Varlığı"
-            layout in setOf(LayoutKind.STRUCTURE, LayoutKind.COMPARISON) || tt in setOf("TABLE", "COMPARISON") -> "Çözümleme & Tahlil"
-            tt == "PROCESS" || layout == LayoutKind.PROCESS -> "Süreç & Hazırlık"
-            else -> "Anlama & İnceleme"
+            layout in setOf(LayoutKind.STRUCTURE, LayoutKind.COMPARISON) || tt in setOf("TABLE", "COMPARISON") -> "Çözümleme"
+            tt == "PROCESS" || layout == LayoutKind.PROCESS -> "Hazırlık"
+            else -> "Anlama"
         }
     }
 
-    // Group steps in lesson order into stable phase clusters (max 5 distinct categories)
     val orderedCategories = mutableListOf<String>()
-    val categoryStepIds = mutableMapOf<String, MutableList<String>>()
-
+    val categoryStepIds = mutableListOf<MutableList<String>>()
     for (step in steps) {
         val cat = stepCategory(step)
-        if (cat !in categoryStepIds) {
+        if (orderedCategories.lastOrNull() != cat) {
             orderedCategories.add(cat)
-            categoryStepIds[cat] = mutableListOf()
+            categoryStepIds.add(mutableListOf())
         }
-        categoryStepIds.getValue(cat).add(step.id)
+        categoryStepIds.last().add(step.id)
     }
 
-    return orderedCategories.mapIndexed { index, catName ->
-        val stepIds = categoryStepIds.getValue(catName)
-        val stepIndicesInOrder = stepIds.map { session.order.indexOf(it) }.filter { it >= 0 }
-
+    return orderedCategories.mapIndexed { index, category ->
+        val stepIds = categoryStepIds[index]
+        val groupIndices = stepIds.map { id -> steps.indexOfFirst { it.id == id } }
         val phaseState = when {
             session.stepId in stepIds -> PhaseState.ACTIVE
-            stepIndicesInOrder.isNotEmpty() && stepIndicesInOrder.all { it < currentStepIndexInOrder } -> PhaseState.COMPLETED
+            groupIndices.maxOrNull()?.let { it < currentStepIndexInOrder } == true -> PhaseState.PAST
             else -> PhaseState.UPCOMING
         }
 
-        val activeIndex = if (session.stepId in stepIds) {
-            stepIds.indexOf(session.stepId) + 1
-        } else if (phaseState == PhaseState.COMPLETED) {
-            stepIds.size
-        } else {
-            0
-        }
+        val activeIndex = if (phaseState == PhaseState.ACTIVE) stepIds.indexOf(session.stepId) + 1 else 0
 
         LessonUiPhase(
-            id = "phase-$index-$catName",
-            title = "${index + 1}. $catName",
+            id = "phase-$index-$category",
+            title = category,
             stepIds = stepIds,
             state = phaseState,
             activeStepIndexInPhase = activeIndex,
@@ -147,7 +137,10 @@ fun LessonV2Header(
             Column(modifier = Modifier.fillMaxWidth()) {
                 Text(
                     text = if (currentScreen == AppScreen.LESSON && lesson != null) lesson.title else currentScreen.title,
-                    style = MaterialTheme.typography.titleMedium,
+                    style = MaterialTheme.typography.titleMedium.copy(
+                        fontSize = 21.sp,
+                        lineHeight = 26.sp
+                    ),
                     color = LessonColors.TextPrimary,
                     fontWeight = FontWeight.Bold,
                     maxLines = 1,
@@ -155,7 +148,7 @@ fun LessonV2Header(
                 )
             }
 
-            // Gerçek Ders Fazları Stepperı (En fazla 5–6 kararlı faz)
+            // Fazlar ders sırasındaki ardışık içerik bölümlerini izler.
             if (currentScreen == AppScreen.LESSON && lesson != null && session != null) {
                 val phases = deriveLessonPhases(lesson, session)
                 LessonV2Stepper(phases = phases, modifier = Modifier.fillMaxWidth())
@@ -164,104 +157,79 @@ fun LessonV2Header(
     }
 }
 
-/**
- * Kararlı Ders Fazları Stepperı (30 adım yerine 4–5 pedagojik faz gösterir).
- */
+/** Thin connector, circular step markers, and short labels for ordered phase segments. */
 @Composable
 fun LessonV2Stepper(
     phases: List<LessonUiPhase>,
     modifier: Modifier = Modifier
 ) {
+    if (phases.isEmpty()) return
     val scrollState = rememberScrollState()
-
-    Row(
-        modifier = modifier.horizontalScroll(scrollState),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-    ) {
-        phases.forEachIndexed { index, phase ->
-            val isCompleted = phase.state == PhaseState.COMPLETED
-            val isActive = phase.state == PhaseState.ACTIVE
-
-            Surface(
-                shape = RoundedCornerShape(8.dp),
-                color = when {
-                    isActive -> LessonColors.Primary
-                    isCompleted -> LessonColors.AnswerSurface
-                    else -> LessonColors.SurfaceSoft
-                },
-                border = BorderStroke(
-                    1.dp,
-                    when {
-                        isActive -> LessonColors.Primary
-                        isCompleted -> LessonColors.AnswerBorder
-                        else -> LessonColors.Border
-                    }
-                ),
-                modifier = Modifier.semantics {
-                    stateDescription = when (phase.state) {
-                        PhaseState.COMPLETED -> "${phase.title} tamamlandı"
-                        PhaseState.ACTIVE -> "${phase.title} aktif (${phase.activeStepIndexInPhase}/${phase.totalStepsInPhase})"
-                        PhaseState.UPCOMING -> "${phase.title} sırada"
+    BoxWithConstraints(modifier = modifier) {
+        val stepWidth = maxOf(112.dp, maxWidth / phases.size)
+        val contentWidth = stepWidth * phases.size
+        Row(modifier = Modifier.horizontalScroll(scrollState)) {
+            Box(modifier = Modifier.width(contentWidth)) {
+                Canvas(modifier = Modifier.fillMaxWidth().heightIn(min = 22.dp)) {
+                    if (phases.size > 1) {
+                        val centerY = 9.dp.toPx()
+                        val firstCenter = size.width / (2f * phases.size)
+                        drawLine(
+                            color = LessonColors.Border,
+                            start = androidx.compose.ui.geometry.Offset(firstCenter, centerY),
+                            end = androidx.compose.ui.geometry.Offset(size.width - firstCenter, centerY),
+                            strokeWidth = 1.dp.toPx()
+                        )
                     }
                 }
-            ) {
-                Row(
-                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(6.dp)
-                ) {
-                    if (isCompleted) {
-                        Surface(
-                            modifier = Modifier.size(16.dp),
-                            shape = CircleShape,
-                            color = LessonColors.AnswerText
+                Row(modifier = Modifier.fillMaxWidth()) {
+                    phases.forEach { phase ->
+                        val active = phase.state == PhaseState.ACTIVE
+                        Column(
+                            modifier = Modifier
+                                .weight(1f)
+                                .semantics {
+                                    stateDescription = when (phase.state) {
+                                        PhaseState.PAST -> "${phase.title}, önceki adım"
+                                        PhaseState.ACTIVE -> "${phase.title}, etkin adım ${phase.activeStepIndexInPhase}/${phase.totalStepsInPhase}"
+                                        PhaseState.UPCOMING -> "${phase.title}, sıradaki adım"
+                                    }
+                                },
+                            horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            Box(contentAlignment = Alignment.Center) {
-                                Text(
-                                    text = "✓",
-                                    style = MaterialTheme.typography.labelMedium,
-                                    color = Color.White,
-                                    fontWeight = FontWeight.Bold
-                                )
+                            Box(
+                                modifier = Modifier.fillMaxWidth().heightIn(min = 22.dp),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Surface(
+                                    modifier = Modifier.size(18.dp),
+                                    shape = CircleShape,
+                                    color = when (phase.state) {
+                                        PhaseState.ACTIVE -> LessonColors.Primary
+                                        PhaseState.PAST -> LessonColors.SidebarActive
+                                        PhaseState.UPCOMING -> LessonColors.SurfaceSoft
+                                    },
+                                    border = BorderStroke(
+                                        1.dp,
+                                        if (phase.state == PhaseState.UPCOMING) LessonColors.Border
+                                        else LessonColors.Primary
+                                    )
+                                ) {}
                             }
-                        }
-                    }
-
-                    Text(
-                        text = phase.title,
-                        style = MaterialTheme.typography.labelMedium,
-                        color = when {
-                            isActive -> Color.White
-                            isCompleted -> LessonColors.AnswerText
-                            else -> LessonColors.TextSecondary
-                        },
-                        fontWeight = if (isActive) FontWeight.Bold else FontWeight.Medium
-                    )
-
-                    if (isActive) {
-                        Surface(
-                            shape = RoundedCornerShape(4.dp),
-                            color = Color.White.copy(alpha = 0.25f)
-                        ) {
                             Text(
-                                text = "${phase.activeStepIndexInPhase}/${phase.totalStepsInPhase}",
-                                style = MaterialTheme.typography.labelMedium,
-                                color = Color.White,
-                                fontWeight = FontWeight.Bold,
-                                modifier = Modifier.padding(horizontal = 4.dp, vertical = 1.dp)
+                                text = phase.title,
+                                style = MaterialTheme.typography.labelMedium.copy(
+                                    fontSize = 12.sp,
+                                    lineHeight = 14.sp
+                                ),
+                                color = if (active) LessonColors.Primary else LessonColors.TextSecondary,
+                                fontWeight = if (active) FontWeight.SemiBold else FontWeight.Normal,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis
                             )
                         }
                     }
                 }
-            }
-
-            if (index < phases.lastIndex) {
-                Text(
-                    text = "→",
-                    style = MaterialTheme.typography.labelMedium,
-                    color = LessonColors.TextSecondary
-                )
             }
         }
     }

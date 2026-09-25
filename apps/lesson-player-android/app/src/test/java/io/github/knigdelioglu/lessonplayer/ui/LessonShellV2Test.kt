@@ -210,7 +210,7 @@ class LessonShellV2Test {
     }
 
     @Test
-    fun deriveLessonPhasesProducesAtMostFiveToSixStablePhasesForLargeLessons() {
+    fun deriveLessonPhasesPreservesContiguousSegmentsForLargeLessons() {
         // 30 adımlı ders oluştur
         val thirtySteps = (1..30).map { i ->
             val layout = when (i % 5) {
@@ -257,14 +257,14 @@ class LessonShellV2Test {
 
         val phases = deriveLessonPhases(lesson30, session)
 
-        // 30 adımlı derste faz sayısı 30 değil, en fazla 5 kararlı gruptur
-        assertTrue(phases.size in 1..5)
-        assertTrue(phases.size <= 6)
+        // Kategoriler dönüşümlü olduğundan her ardışık bölüm ayrı bir duraktır.
+        assertEquals(30, phases.size)
         assertEquals(30, phases.sumOf { it.totalStepsInPhase })
+        assertTrue(phases.zipWithNext().all { (first, next) -> first.title != next.title })
     }
 
     @Test
-    fun deriveLessonPhasesTracksActiveCompletedAndUpcomingStatesAccurately() {
+    fun deriveLessonPhasesUsesPastActiveAndUpcomingWithoutClaimingCompletion() {
         val s1 = LessonStep("s1", LayoutKind.PROCESS, "regular", emptyList(), "P", "full", SourceRecord("1", "1", "", "PROCESS", "p1", "active", null), null, null)
         val s2 = LessonStep("s2", LayoutKind.PROCESS, "regular", emptyList(), "P", "full", SourceRecord("2", "1", "", "PROCESS", "p1", "active", null), null, null)
         val s3 = LessonStep("s3", LayoutKind.VOCABULARY, "regular", emptyList(), "V", "full", SourceRecord("3", "1", "", "VOCABULARY", "p1", "active", null), null, null)
@@ -274,7 +274,7 @@ class LessonShellV2Test {
         val lesson = LessonData("2.0", "t1", "l1", "l1", "Test", "Alt Başlık", "1", "p1", "p1", 5, 0, listOf(s1, s2, s3, s4, s5))
         var session = LessonEngine.initial(lesson, contentDigest = "d")
 
-        // Başlangıçta s1 aktif -> Süreç & Hazırlık aktif
+        // Başlangıçta ilk faz aktif, sonraki fazlar sırada.
         var phases = deriveLessonPhases(lesson, session)
         assertEquals(3, phases.size)
         assertEquals(PhaseState.ACTIVE, phases[0].state)
@@ -282,22 +282,109 @@ class LessonShellV2Test {
         assertEquals(PhaseState.UPCOMING, phases[1].state)
         assertEquals(PhaseState.UPCOMING, phases[2].state)
 
-        // s3'e git -> Süreç tamamlandı, Söz Varlığı aktif, Değerlendirme gelecek
+        // İleri adıma atlanınca önceki faz yalnızca geçmiş olarak gösterilir.
         session = LessonEngine.reduce(session, lesson, LessonCommand.GoToStep("s3"))
         phases = deriveLessonPhases(lesson, session)
-        assertEquals(PhaseState.COMPLETED, phases[0].state)
-        assertEquals(2, phases[0].activeStepIndexInPhase)
+        assertEquals(PhaseState.PAST, phases[0].state)
+        assertEquals(0, phases[0].activeStepIndexInPhase)
         assertEquals(PhaseState.ACTIVE, phases[1].state)
         assertEquals(1, phases[1].activeStepIndexInPhase)
         assertEquals(PhaseState.UPCOMING, phases[2].state)
 
-        // s5'e git -> İlk iki faz tamamlandı, Değerlendirme aktif
+        // Son faza doğrudan gidildiğinde önceki gruplar tamamlandı sayılmaz.
         session = LessonEngine.reduce(session, lesson, LessonCommand.GoToStep("s5"))
         phases = deriveLessonPhases(lesson, session)
-        assertEquals(PhaseState.COMPLETED, phases[0].state)
-        assertEquals(PhaseState.COMPLETED, phases[1].state)
+        assertEquals(PhaseState.PAST, phases[0].state)
+        assertEquals(PhaseState.PAST, phases[1].state)
         assertEquals(PhaseState.ACTIVE, phases[2].state)
         assertEquals(1, phases[2].activeStepIndexInPhase)
+    }
+
+    @Test
+    fun deriveLessonPhasesKeepsSeparatedMatchingCategoriesAsSeparateSegments() {
+        val base = sampleLesson()
+        val template = base.steps.single()
+        fun makeStep(id: String, layout: LayoutKind, taskType: String) = template.copy(
+            id = id,
+            layout = layout,
+            source = template.source.copy(id = id, taskType = taskType)
+        )
+        val steps = listOf(
+            makeStep("a1", LayoutKind.QUESTION, "QUESTION"),
+            makeStep("a2", LayoutKind.QUESTION, "QUESTION"),
+            makeStep("b1", LayoutKind.ASSESSMENT, "ASSESSMENT"),
+            makeStep("b2", LayoutKind.ASSESSMENT, "ASSESSMENT"),
+            makeStep("a3", LayoutKind.QUESTION, "QUESTION")
+        )
+        val lesson = base.copy(lessonId = "lesson-phases", steps = steps)
+        val initial = LessonEngine.initial(lesson, contentDigest = "phase-digest")
+        val jumped = LessonEngine.reduce(initial, lesson, LessonCommand.GoToStep("a3"))
+        val phases = deriveLessonPhases(lesson, jumped)
+
+        assertEquals(listOf("Anlama", "Değerlendirme", "Anlama"), phases.map { it.title })
+        assertEquals(listOf(2, 2, 1), phases.map { it.totalStepsInPhase })
+        assertEquals(listOf(PhaseState.PAST, PhaseState.PAST, PhaseState.ACTIVE), phases.map { it.state })
+        assertEquals("a3", jumped.stepId)
+        assertTrue(jumped.revealed.isEmpty())
+    }
+
+    @Test
+    fun comparisonAnswerSectionsBecomeARealMatrixAndStayHiddenUntilRevealed() {
+        val step = sampleLesson().steps.single()
+        val nested = JsonValue.Object(linkedMapOf(
+            "Metin 1" to JsonValue.Object(linkedMapOf(
+                "Sanatın amacı" to JsonValue.Text("Bireysel"),
+                "Toplum-birey ilişkisi" to JsonValue.Text("Toplumcu")
+            )),
+            "Metin 2" to JsonValue.Object(linkedMapOf(
+                "Sanatın amacı" to JsonValue.Text("Estetik"),
+                "Toplum-birey ilişkisi" to JsonValue.Text("Bireyci")
+            ))
+        ))
+        val matrix = comparisonAnswerMatrix(nested)!!
+
+        assertEquals(listOf("Özellik", "Metin 1", "Metin 2"), matrix.headers)
+        assertEquals(
+            listOf(
+                listOf("Sanatın amacı", "Bireysel", "Estetik"),
+                listOf("Toplum-birey ilişkisi", "Toplumcu", "Bireyci")
+            ),
+            matrix.rows
+        )
+        assertEquals(listOf("Özellik", "Değer"), comparisonAnswerMatrix(
+            JsonValue.Object(mapOf("dönem" to JsonValue.Text("Tanzimat")))
+        )!!.headers)
+
+        assertNull(visibleComparisonAnswerSections(step, answerVisible = false))
+        assertTrue(visibleComparisonAnswerSections(step, answerVisible = true) != null)
+        assertFalse(inlineTeacherAnswerVisible(answerVisible = true, isThreeColumn = true))
+        assertTrue(inlineTeacherAnswerVisible(answerVisible = true, isThreeColumn = false))
+        assertFalse(vocabularyDefinitionVisible(
+            answerVisibleInline = false,
+            termRevealed = true,
+            answerVisibleInTeacherPanel = true
+        ))
+        assertTrue(vocabularyDefinitionVisible(
+            answerVisibleInline = false,
+            termRevealed = true,
+            answerVisibleInTeacherPanel = false
+        ))
+    }
+
+    @Test
+    fun teacherNoteNeverAppearsInStudentProjectionEvenIfItsTeacherStateIsOpen() {
+        val source = sampleLesson()
+        val teacherOnlyMarker = "ONLY_TEACHER_NOTE_MARKER"
+        val lesson = source.copy(steps = source.steps.map { step ->
+            step.copy(content = step.content?.copy(note = teacherOnlyMarker))
+        })
+        val step = lesson.steps.single()
+        val state = LessonEngine.initial(lesson, contentDigest = "projection-digest")
+            .copy(revealed = setOf(RevealKey.NOTE, RevealKey.ANSWER))
+
+        val projection = toStudentProjection(lesson, state)
+
+        assertFalse(projection.toString().contains(teacherOnlyMarker))
     }
 
     @Test
@@ -927,9 +1014,9 @@ class LessonShellV2Test {
         // --- Adım 2 (revealOrder = [NOTE], son adım) ---
         // 4. NOTE tek başına iken:
         // Public reveal anahtarı yoktur, sonraki adım da yoktur (son adımdır).
-        // Eylem tamamlandı gösterilmeli ve disabled olmalı; asla NOTE reveal edilmemeli!
+        // Son adım olduğu belirtilmeli ve ilerletme butonu disabled olmalı; NOTE açılmamalı.
         val label4 = nextLessonActionLabel(step2, session)
-        assertEquals("Ders tamamlandı", label4)
+        assertEquals("Son adım", label4)
         val cmd4 = nextLessonCommand(step2, session)
         assertNull("Son adımda public reveal kalmadığında komut null olmalıdır", cmd4)
         assertFalse("Son adımda public reveal kalmadığında eylem disabled olmalıdır", isAdvanceActionEnabled(step2, session))

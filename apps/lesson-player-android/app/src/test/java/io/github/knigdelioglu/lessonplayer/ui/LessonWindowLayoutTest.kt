@@ -54,7 +54,7 @@ class LessonWindowLayoutTest {
 
     @Test
     fun threeColumnLayoutContractForLargeLandscapeTablet() {
-        val largeLandscape = lessonWindowLayout(widthDp = 1200, heightDp = 800)
+        val largeLandscape = lessonWindowLayout(widthDp = 1280, heightDp = 800)
         val mediumLandscape = lessonWindowLayout(widthDp = 950, heightDp = 600)
         val shortLandscape = lessonWindowLayout(widthDp = 1200, heightDp = 500)
         val portraitTablet = lessonWindowLayout(widthDp = 800, heightDp = 1200)
@@ -74,5 +74,40 @@ class LessonWindowLayoutTest {
         assertFalse(portraitTablet.usesThreeColumn)
         assertFalse(portraitTablet.usesTeacherAssistDrawer)
         assertTrue(portraitTablet.usesTeacherAssistBottomSheet)
+    }
+
+    @Test
+    fun expandedDecisionUsesSafeWidthAndAllColumnMinimums() {
+        val targetPreview = lessonWindowLayout(widthDp = 1280, heightDp = 800)
+        val workspaceTooNarrow = lessonWindowLayout(widthDp = 1100, heightDp = 800)
+        val teacherAssistTooNarrow = lessonWindowLayout(widthDp = 1240, heightDp = 800)
+        val safeAreaTooNarrow = lessonWindowLayout(
+            widthDp = 1280,
+            heightDp = 800,
+            safeDrawingInsets = LessonWindowInsetsDp(start = 24f, end = 24f)
+        )
+
+        assertTrue(targetPreview.usesThreeColumn)
+        assertFalse(workspaceTooNarrow.usesThreeColumn)
+        assertTrue(workspaceTooNarrow.usesTeacherAssistDrawer)
+        assertFalse(teacherAssistTooNarrow.usesThreeColumn)
+        assertTrue(teacherAssistTooNarrow.usesTeacherAssistDrawer)
+        assertEquals(1232, safeAreaTooNarrow.widthDp)
+        assertFalse(safeAreaTooNarrow.usesThreeColumn)
+
+        val targetColumns = LessonShellLayoutContract.columnWidths(1280f)
+        assertEquals(281.6f, targetColumns.sidebarDp, 0.1f)
+        assertEquals(716.8f, targetColumns.workspaceDp, 0.1f)
+        assertEquals(281.6f, targetColumns.teacherAssistDp, 0.1f)
+        assertTrue(targetColumns.workspaceDp >= LessonShellLayoutContract.MIN_WORKSPACE_WIDTH_DP)
+    }
+
+    @Test
+    fun actionBarUsesTextLabelsAtThe1280By800ExpandedWorkspaceWidth() {
+        val workspaceWidth = LessonShellLayoutContract.columnWidths(1280f).workspaceDp
+
+        assertTrue(LessonShellLayoutContract.actionBarUsesLabels(workspaceWidth, fontScale = 1f))
+        assertFalse(LessonShellLayoutContract.actionBarUsesLabels(599f, fontScale = 1f))
+        assertFalse(LessonShellLayoutContract.actionBarUsesLabels(workspaceWidth, fontScale = 1.2f))
     }
 }

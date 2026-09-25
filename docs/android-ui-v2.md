@@ -82,30 +82,34 @@ UI Shell V2 bileşenleri büyük tek dosya yerine modüler paketlerde toplanmı�
 - `io.github.knigdelioglu.lessonplayer.ui.shell.LessonActionBar`: Alt sabit eylem çubuğu doğrudan kontrolleri.
 - `io.github.knigdelioglu.lessonplayer.ui.lesson.TeacherAssistPane`: Sağ panel bağımsız semantik öğretmen kartları.
 
+Geniş ders shell'inin kolon oranları, minimumları ve label eylem çubuğu genişliği `LessonShellLayoutContract` içinde tek kaynaktan yönetilir. `ExpandedLessonLayout`, gerçek shell ile 1280×800 önizlemenin kullandığı ortak composable'dır.
+
 1. **Sol Koyu Mor Sidebar (`~%22`):**
-   - Üst bölümde native uygulama sekmeleri yer alır (`Ders kitaplığı`, `Ders ekranı`, `Öğretmen rehberi`, `Veri ve yedekleme`). Arama veya Notlarım gibi sahte/no-op menü eklenmez; sadece gerçek `AppScreen` rotaları bulunur.
-   - Aktif ders oturumunda dersin tüm adımları tek bir akışta listelenir (`lesson-outline-step-*`). Aktif adım `#CCC8FC` vurgusu ve kenarlıkla işaretlenir.
+   - Üst bölümde native uygulama sekmeleri yer alır (`Ders kitaplığı`, `Ders ekranı`, `Öğretmen rehberi`, `Veri ve yedekleme`). `Arama`, kitaplık ekranını açıp ders arama alanına odaklanır. `Kaldığım Yer`, başka ekrandayken mevcut `LessonSession` içindeki ders ve adıma döner.
+   - Aktif ders oturumunda adımlar kısa canonical bağlam, içerik türü ve basılı sayfa ile listelenir (`lesson-outline-step-*`). Aktif adım açık lavanta yüzeyle vurgulanır. Gerçek completion kaydı olmadığı için yeşil tamamlandı işareti gösterilmez.
 2. **Üst Bağlam Çubuğu & Kararlı Ders Fazları Stepperı (`LessonV2Header` & `deriveLessonPhases`):**
    - Sınıf düzeyi (`11. SINIF`), ders başlığı ve gerçek ders fazlarını gösteren `Stepper`.
-   - **30 JSON adımını 30 durak olarak sunmaz.** Bunun yerine `LessonStep`, `LayoutKind` ve `taskType` sırasından deterministik olarak türetilen **en fazla 5–6 kararlı pedagojik faz grubu** (`Süreç & Hazırlık`, `Söz Varlığı`, `Çözümleme & Tahlil`, `Anlama & İnceleme`, `Değerlendirme`) oluşturulur.
-   - Her faz grubu aktif adımın konumuna göre `COMPLETED`, `ACTIVE` veya `UPCOMING` durumu alır; `activeStepIndexInPhase` ve `totalStepsInPhase` meta verileriyle ilerleme dürüstçe gösterilir.
+   - Fazlar `session.order` içindeki ardışık kategori segmentlerinden oluşur. Kategori daha sonra yeniden gelirse yeni bir durak açılır; 30 adım için sabit bir faz üst sınırı yoktur.
+   - Görsel durum yalnızca konumdan türetilen `PAST`, `ACTIVE` veya `UPCOMING` değeridir. Kaydedilmiş completion state olmadığı için `COMPLETED` veya ✓ kullanılmaz.
+   - Stepper ince bağlantı çizgisi, dairesel noktalar ve noktaların altındaki kısa isimleri kullanır; aktif nokta mordur.
    - Şema veya database engine değiştirilmez; fazlar gerçek bir veri alanıymış gibi tanıtılmaz.
 3. **Merkez Çalışma Alanı (Workspace, `~%56`):**
    - Bağımsız kaydırılan tek alandır (`LazyColumn`).
-   - Soru kökü, kaynak metin veya etkinlik içeriği burada yer alır.
+   - Soru kökü, yönerge, kaynak metin ve canonical etkinlik/tablo içeriği burada kalır. Üç kolon modunda cevap açmak merkez soruyu değiştirmez; `answer.answer` ve `answer_sections` merkezde tekrarlanmaz.
 4. **Sağ Öğretmen Destek Paneli (Teacher Assist, `~%22`):**
-   - Yönlendirme, Cevap, Açıklama, Metinsel Kanıt ve Varsa Öğretmen Notu kartları bağımsız aç/kapa (expand/collapse) durumuna sahiptir.
+   - Tam yüksekliğe sabitlenir ve kendi içeriği gerektiğinde bağımsız kayar. Yönlendirme, Cevap, Açıklama, Metinsel Kanıt ve varsa öğretmen notu ayrı kartlardır.
+   - Üç kolon modunda açılan cevap ve karşılaştırma matrisi burada gösterilir. Merkez workspace bağımsız kayar.
     - **Engine RevealOrder Güvenliği ve No-op / Crash Önleme:** `LessonEngine.reduce()` motoru `ToggleReveal` komutlarında anahtarın `effectiveStep.revealOrder` içinde bulunmasını `require` eder (`require(command.key in step().revealOrder)`); aksi takdirde `IllegalArgumentException` fırlatılır. Bu doğrultuda `LessonV2TeacherAssistPane`, `LessonV2ActionBar`, `SessionLessonScreen` (dar mod kart içi cevap butonu ve fallback) ve `LessonLayouts` (`VocabularyMatchLayout`):
      - Yalnızca `effectiveStep.revealOrder` içinde yer alan **VE** ilgili veri içeriği (`guidance`, `answer`, `explanation`, `evidenceQuotes`, `content.note`) dolu olan katmanlar için kart ve eylem butonu üretir.
       - İçeriği dolu olsa dahi `revealOrder`'da `RevealKey.ANSWER` yoksa cevap butonu asla oluşturulmaz; böylece runtime motor çökmesi ve sahte no-op eylemler kesin olarak engellenir.
       - **Öğretmen Notu Ayrımı ve Güvenli İlerleme Sözleşmesi:** Öğretmen notu (`content.note`) öğrenci projeksiyonuna (`StudentProjection`) asla dahil edilmez.
       - **RevealNext Güvenliği:** Shell (`LessonActionBar`), `SessionLessonScreen` ve `PresentationLessonScreen` ekranlarında sıradaki eylem (`nextLessonCommand`, `nextLessonActionLabel`) yalnızca public reveal anahtarlarını (`GUIDANCE`, `ANSWER`, `EXPLANATION`, `EVIDENCE`) işler. `RevealKey.NOTE` önde ya da tek başına tanımlı olsa dahi eylem tarafından tamamen atlanır; asla `ToggleReveal(NOTE)` dispatch üretilmez veya "Göster: Öğretmen notu" etiketi sunulmaz.
-      - `NOTE`'un ardından `GUIDANCE` veya `ANSWER` geliyorsa sıradaki public katman açılır; public reveal katmanları bittiğinde sonraki adıma geçilir; son adımda ise eylem devre dışı kalır ve "Ders tamamlandı" durumu gösterilir. Bu doğrultuda sağ panelde (`TeacherNoteCard`) ve fallback ekranlarında öğretmen notu paylaşılabilir bir reveal eylemi olarak sunulmaz; açıkça "YALNIZCA ÖĞRETMEN" etiketiyle yerel aç/kapa (expand/collapse) kartı olarak gösterilir. Öğrenci durum rozeti veya `ToggleReveal(NOTE)` dispatch'i üretilmez.
+      - `NOTE`'un ardından `GUIDANCE` veya `ANSWER` geliyorsa sıradaki public katman açılır; public reveal katmanları bittiğinde sonraki adıma geçilir. Son adımda ilerletme eylemi devre dışı kalır ve "Son adım" etiketi gösterilir; completion iddiası üretilmez. Sağ panelde (`TeacherNoteCard`) öğretmen notu açıkça "YALNIZCA ÖĞRETMEN" etiketiyle yerel aç/kapa kartıdır. Öğrenci durum rozeti veya `ToggleReveal(NOTE)` dispatch'i üretilmez.
      - Hiçbir öğretmen içeriği bulunmayan adımlarda temiz ve dürüst bir bilgilendirme yüzeyi (`teacher-assist-empty-info`) sunulur; hayali buton veya no-op buton oluşturulmaz.
    - Kartların açık/kapalı durumu geçici UI state'idir; ancak reveal durumu (`RevealKey`) `LessonSession.revealed` içindeki tek gerçek kaynaktır (single source of truth).
 5. **Alt Sabit Eylem Çubuğu (`LessonV2ActionBar`):**
-   - Ekranın altında her zaman görünür, `horizontalScroll` ile dar genişliklerde taşma önlenir.
-   - **Doğrudan Eylem Kontrolleri:** `Öğrenciye Göster` (`lesson-presentation-toggle`), `Yönlendirme`, `Cevap`, `Açıklama`, `Metinsel Kanıt`, `Önceki` ve `Sonraki` butonları doğrudan ilgili `LessonCommand` ve `RevealKey` komutlarını tek dokunuşta tetikler. UI katmanında generic `LessonCommand.RevealNext` kullanılmaz; sıradaki eylem `nextLessonCommand` ile yalnızca public reveal anahtarlarını (`ToggleReveal`), public katman kalmadıysa `Next` komutunu tetikler.
+   - Ekranın altında sabit durur. Merkez alan yeterliyse `Öğrenciye Göster`, `Yönlendirme`, `Cevap`, `Açıklama`, `Metinsel Kanıt`, `Önceki` ve `Sonraki` kısa etiketlerle görünür; daha dar modda reveal kontrolleri ikonlara döner.
+   - Reveal butonları renk ve `stateDescription` ile açık/kapalı bilgisini verir; yüzeyde uzun “Göster/Gizle” metni yoktur. Merkez kolon `640 dp × fontScale` eylem alanını sağlayabildiğinde etiketler görünür; dar alanda ikon fallback kullanılır. UI katmanında generic `LessonCommand.RevealNext` kullanılmaz; sıradaki eylem yalnızca public reveal anahtarlarını ve sonra `Next` komutunu tetikler.
    - **No-op Engelleme:** Adımda ilgili alan veya `effectiveStep.revealOrder` anahtarı yoksa ilgili buton gösterilmez veya devre dışı bırakılır; hiçbir kontrol enabled no-op olamaz.
    - Tüm kontroller `LessonTarget.minimum` (`48.dp`) erişilebilirlik standardına uygundur.
 
@@ -137,8 +141,8 @@ Kanonik ders verisi (`remote-content/lessons.json`) doğrudan MEB ders kitabı v
    - Gerçek çoktan seçmeli alternatif alanı veri sözleşmesinde bulunmadığı için maddeler **numaralı değerlendirme ölçütü kartı** (`01`, `02`...) olarak sunulur.
 2. **COMPARISON Düzeni ve Tablo Eşleştirme Sınırlaması:**
    - `content.items` alanı çoğunlukla yönerge niteliğindedir; yapay bir ölçüt sütununa zorlanmaz.
-   - Tablo görünümünde **yalnızca gerçek `content.sections`** (örneğin 2 veya daha fazla karşılaştırılan metin/unsur) veya öğretmen cevabı açtığında (`RevealKey.ANSWER in session.revealed`) izinli `answer.answer_sections` nesne alanları satır/sütun olarak eşleştirilir.
-   - Cevap ve yönlendirme görünürlüğü daima mevcut `RevealKey` sözleşmesine bağlıdır; cevap açılmadan önce yanıt veya eşleşme matrisi öğrenciye/arayüze sızdırılmaz.
+   - Canonical `content.sections` kaynak karşılaştırması olarak merkezde kalır. `answer.answer_sections` yalnızca cevap açılınca görünür; üç kolon modunda sağ öğretmen panelinde gerçek satır/sütun matrisi olur. Top-level varlıklar sütun, nested key birleşimi satır ölçütüdür. Düz nesne iki sütunlu tablo kullanır.
+   - Cevap kapalıyken `answer_sections` render modeline verilmez. Dar/portre öğretmen görünümünde mevcut inline cevap davranışı korunur.
    - Kaynakta yapılandırılmış karşılaştırma yoksa başlık ve yönerge metni olarak dürüstçe gösterilir; sahte sütun veya örnek içerik uydurulmaz.
 3. **STRUCTURE Düzeni:**
    - Numaralı akış düğümleri, yön göstergeleri ve hiyerarşik yapı blokları şeması.
@@ -149,21 +153,27 @@ Kanonik ders verisi (`remote-content/lessons.json`) doğrudan MEB ders kitabı v
 
 ## 3. Ekran Breakpoint Sözleşmesi
 
-Cihaz genişliğine ve yönelimine göre adaptif geçiş kuralları:
+Karar `WindowInsets.safeDrawing` çıkarıldıktan sonra kalan gerçek içerik alanıyla verilir. Yalnızca landscape/uzunluk şartı değil, üç kolonun ağırlıklardan hesaplanan minimumları da sağlanmalıdır:
+
+- Kolon oranları: sidebar `22`, workspace `56`, teacher assist `22`.
+- Minimum usable kolon genişlikleri: sidebar `240 dp`, workspace `680 dp`, teacher assist `280 dp`.
+- Minimum usable landscape yüksekliği: `560 dp`.
+- Bu alanlar sağlanmıyorsa teacher-assist drawer kullanılır; dikey veya kısa pencerede bottom sheet kullanılır.
+- Bu nedenle `1280×800` sıfır-inset Preview üç kolon gösterir. Runtime, safe drawing inset'leri çıktıktan sonra minimumlar sağlanmıyorsa drawer'a düşebilir.
+
+Adaptif geçiş kuralları:
 
 | Breakpoint / Mod | Ekran Genişliği ve Yönelim | Shell Düzeni ve Öğretmen Araçları Erişimi |
 |---|---|---|
-| **Geniş Landscape Tablet (Expanded 3-Column)** | `widthDp >= 1000` ve `isLandscape` ve `heightDp >= 560` (`usesThreeColumn`) | Sabit sol koyu mor sidebar (%22) + orta kolon (%56; header, ders alanı ve sabit eylem barı) + **tam ekran yüksekliğinde sağ öğretmen paneli (%22)** (`LessonV2TeacherAssistPane`). Öğretmen paneli üst stepper ve alt eylem barıyla paylaşılmaz. |
-| **Medium / Dar Landscape Tablet** | `widthDp < 1000` ve `isLandscape` ve `heightDp >= 560` (`usesTeacherAssistDrawer`) | Kompakt navigasyon + Merkez çalışma alanı. Sağ panel sabit yer kaplamaz; TopBar ve merkez karttaki erişilebilir butonla sağdan açılan **Öğretmen Çekmecesi** (`LessonTeacherAssistDrawer`) ile açılır. |
-| **Compact / Dikey (Portrait)** | `!isLandscape` veya `heightDp < 560` (`usesTeacherAssistBottomSheet`) | Standart mobil alt navigasyon barı (`NavigationBar`) + merkez tam genişlik içerik. Öğretmen araçları TopBar ve merkez karttaki butonla alttan açılan **Bottom Sheet** (`LessonTeacherAssistSheet`) ile açılır. |
+| **Expanded 3-column** | `LessonShellLayoutContract.fitsThreeColumns(usableWidthDp, usableHeightDp, isLandscape)` | Sabit koyu mor sidebar (`22%`), orta workspace (`56%`) ve tam yüksekliğe sabit sağ öğretmen paneli (`22%`). Header ve alt eylem çubuğu orta kolonda kalır. |
+| **Landscape drawer** | Landscape ve en az `560 dp` usable yükseklik; üç kolon minimumlarından biri sağlanmıyor | Navigasyon rayı + merkez çalışma alanı; öğretmen paneli TopBar/merkez erişimiyle sağdan açılan drawer olur. |
+| **Compact / Dikey (Portrait)** | Dikey yönelim veya usable yükseklik `< 560 dp` | Standart mobil alt navigasyon barı (`NavigationBar`) + merkez tam genişlik içerik. Öğretmen araçları TopBar/merkez erişimiyle bottom sheet açar. |
 
 ---
 
 ## 4. Fiziksel Cihaz Ölçümü ve Beklenen Metrikler
 
-> [!IMPORTANT]
-> Kullanıcı planındaki hedef tabletin `maxWidth`, `maxHeight`, `density` ve `fontScale` gerçek ölçümleri geliştirme ortamında henüz bağlı fiziksel bir donanım bulunmadığı için uydurulmamıştır (`adb devices` listesi boştur).
-> Testler ve layout motoru WindowMetrics ve Compose LocalDensity / LocalConfiguration sözleşmeleri üzerinden parametrik olarak doğrulanır.
+Hedef tabletin `maxWidth`, `maxHeight`, `density` ve `fontScale` değerleri cihazdan ölçülmelidir; Preview boyutları fiziksel cihaz ölçümü yerine geçmez. Layout kararları usable pencere ölçülerini kullanır ve cihazdan bağımsız test edilir.
 
 ### Fiziksel Cihaz Ölçümü Nasıl Alınır?
 
@@ -225,17 +235,19 @@ Fiziksel cihaz veya donanım bağlandığında aşağıdaki yöntemlerle kesin d
   - `LessonWindowLayoutTest`: Breakpoint, 3-kolon, drawer ve bottom sheet yönlendirme kararlarının pencere boyutlarına göre doğrulanması.
   - `LessonThemeContrastTest`: WCAG 2.1 AA (4.5:1 ve 3.0:1) kontrast oranlarının otomatik matematiksel doğrulaması.
   - `LessonShellV2Test`:
-    - `deriveLessonPhases`: 30 adımlı derste bile en fazla 5–6 kararlı pedagojik faz türetimi, aktif/tamamlanan/gelecek durumları.
+    - `deriveLessonPhases`: ardışık kategori segmentleri; `A A B B A → A / B / A`; konumdan türeyen geçmiş/aktif/sıradaki durumlar ve ileri adıma atlamada sahte completion olmaması.
     - `fallbackTeacherAssistResponsiveRoutingContract`: Farklı form faktörlerinde doğru bileşene (Drawer vs. Bottom Sheet vs. Sabit Panel) yönlendirme sözleşmesi.
     - `fallbackDrawerAndSheetMutateSharedSessionRevealedWithoutStateDivergence`: Drawer veya Sheet kapatılsa dahi reveal durumunun tek gerçek kaynağı (`LessonSession.revealed`) üzerinden yönetilmesi ve durum ayrışması olmaması.
     - No-op engelleme kuralları ve doğrudan reveal komutları.
     - Sınıf projeksiyonu (`toStudentProjection`) öğretmen notu ve cevap sızdırmazlık doğrulaması.
-    - `ASSESSMENT` ölçüt kartları ve `COMPARISON` tablo eşleme veri bütünlüğü.
+    - `ASSESSMENT` ölçüt kartları, nested comparison nesnesinden gerçek matrix modeli, kapalı cevap sızıntısı olmaması ve üç kolonda cevap tekrarının engellenmesi.
+    - Öğretmen notunun açık olsa bile `StudentProjection` içine girmemesi.
+    - `1280×800` çalışma alanı genişliğinde action-bar metinlerinin sığma kararı.
 
 ### 6.2 Katman 2: Jetpack Compose Önizleme (Preview) Matrisi
 - **Dosya:** `apps/lesson-player-android/app/src/main/java/io/github/knigdelioglu/lessonplayer/ui/Previews.kt`
-- **Kapsam:** Renk blokları veya sahte placeholder'lar yerine; gerçek `LessonData`, `LessonSession` ve zengin Türkçe içerik kullanılarak oluşturulan önizlemeler:
-  1. `05 · UI Shell V2 3-Column Tablet (Expanded)` (1280x800): Gerçek `LessonV2Sidebar`, `LessonV2Header`, `SessionLessonScreen`, `LessonV2TeacherAssistPane` ve `LessonV2ActionBar`.
+- **Kapsam:** Expanded shell'de sahte kolon önizlemesi kullanılmaz; gerçek `LessonData`, `LessonSession` ve zengin Türkçe içerikle oluşturulan senaryolar:
+  1. `05 · UI Shell V2 3-Column Tablet (Expanded)` (1280×800): Runtime ile aynı `ExpandedLessonLayout` ve gerçek `LessonV2Sidebar`, `LessonV2Header`, `SessionLessonScreen`, `LessonV2TeacherAssistPane` ve `LessonV2ActionBar`; yazılı reveal kontrolleri görünür.
   2. `06 · UI Shell V2 Medium Tablet with Assist Drawer` (900x600): Gerçek sağdan açılan `LessonTeacherAssistDrawer` ve fallback ekranı.
   3. `07 · UI Shell V2 Portrait Compact with Assist Sheet` (412x915): Gerçek dikey mod ve alttan açılan `LessonTeacherAssistSheet`.
 
