@@ -76,7 +76,8 @@ data class LessonStep(
     val displayPromptMode: String,
     val source: SourceRecord,
     val answer: AnswerEntry?,
-    val content: StepContent?
+    val content: StepContent?,
+    val outlineTitle: String? = null
 )
 
 data class LessonData(

@@ -14,10 +14,7 @@ import javax.crypto.spec.PBEKeySpec
 import javax.crypto.spec.SecretKeySpec
 
 /**
- * Versioned, encrypted user-state backup. Canonical lesson content never enters this payload.
- *
- * The authenticated envelope is deliberately independent of Room so it can be validated
- * completely before any database mutation. Algorithms are standard JCA primitives.
+ * Backward-compatible model for legacy v1 backup progress records.
  */
 data class BackupProgress(
     val lessonId: String,
@@ -25,6 +22,32 @@ data class BackupProgress(
     val stepId: String,
     val stepOrderJson: String,
     val overridesJson: String
+)
+
+data class BackupClassGroup(
+    val id: String,
+    val academicYear: String,
+    val grade: Int,
+    val section: String,
+    val displayName: String,
+    val archived: Boolean = false,
+    val sortOrder: Int = 0
+)
+
+data class BackupClassProgress(
+    val classGroupId: String,
+    val lessonId: String,
+    val contentDigest: String,
+    val stepId: String,
+    val updatedAtMillis: Long
+)
+
+data class BackupLessonCustomization(
+    val lessonId: String,
+    val contentDigest: String,
+    val stepOrderJson: String,
+    val overridesJson: String,
+    val updatedAtMillis: Long
 )
 
 data class BackupMark(
@@ -35,13 +58,17 @@ data class BackupMark(
 )
 
 data class LessonBackupSnapshot(
-    val progress: List<BackupProgress>,
-    val marks: List<BackupMark>
+    val schemaVersion: Int = 2,
+    val classGroups: List<BackupClassGroup> = emptyList(),
+    val classProgress: List<BackupClassProgress> = emptyList(),
+    val lessonCustomizations: List<BackupLessonCustomization> = emptyList(),
+    val marks: List<BackupMark> = emptyList(),
+    val legacyProgress: List<BackupProgress> = emptyList()
 )
 
 object LessonBackupCodec {
     const val FORMAT = "ogretmenrehberi.lesson-player.backup"
-    const val SCHEMA_VERSION = 1
+    const val SCHEMA_VERSION = 2
     private const val KDF = "PBKDF2WithHmacSHA256"
     private const val ENCRYPTION = "AES-256-GCM"
     private const val SIGNATURE = "HMAC-SHA256"
@@ -72,7 +99,7 @@ object LessonBackupCodec {
         val ciphertext = cipher.doFinal(payload)
         val encodedCiphertext = b64(ciphertext)
         val signature = hmac(derived.copyOfRange(32, DERIVED_BYTES), signatureInput(
-            contentSignature, workflowSignature, salt, nonce, encodedCiphertext
+            SCHEMA_VERSION, contentSignature, workflowSignature, salt, nonce, encodedCiphertext
         ))
         val envelope = JSONObject()
             .put("format", FORMAT)
@@ -104,8 +131,9 @@ object LessonBackupCodec {
         validatePassphrase(passphrase)
         val envelope = JSONObject(raw)
         require(envelope.getString("format") == FORMAT) { "Geçersiz yedek formatı" }
-        require(envelope.getInt("schemaVersion") == SCHEMA_VERSION) {
-            "Desteklenmeyen yedek şeması"
+        val envelopeVersion = envelope.getInt("schemaVersion")
+        require(envelopeVersion in 1..2) {
+            "Desteklenmeyen yedek şeması: $envelopeVersion"
         }
         val project = envelope.getJSONObject("project")
         require(project.getString("application") == "lesson-player-android")
@@ -127,7 +155,7 @@ object LessonBackupCodec {
         require(ciphertext.isNotBlank())
         val derived = derive(passphrase, salt, iterations)
         val expectedSignature = hmac(derived.copyOfRange(32, DERIVED_BYTES), signatureInput(
-            expectedContentSignature, expectedWorkflowSignature, salt, nonce, ciphertext
+            envelopeVersion, expectedContentSignature, expectedWorkflowSignature, salt, nonce, ciphertext
         ))
         val signature = envelope.getJSONObject("signature")
         require(signature.getString("algorithm") == SIGNATURE)
@@ -148,14 +176,36 @@ object LessonBackupCodec {
 
     private fun payloadJson(snapshot: LessonBackupSnapshot): JSONObject = JSONObject().apply {
         put("schemaVersion", SCHEMA_VERSION)
-        put("progress", JSONArray().apply {
-            snapshot.progress.forEach {
+        put("classGroups", JSONArray().apply {
+            snapshot.classGroups.forEach {
                 put(JSONObject()
+                    .put("id", it.id)
+                    .put("academicYear", it.academicYear)
+                    .put("grade", it.grade)
+                    .put("section", it.section)
+                    .put("displayName", it.displayName)
+                    .put("archived", it.archived)
+                    .put("sortOrder", it.sortOrder))
+            }
+        })
+        put("classProgress", JSONArray().apply {
+            snapshot.classProgress.forEach {
+                put(JSONObject()
+                    .put("classGroupId", it.classGroupId)
                     .put("lessonId", it.lessonId)
                     .put("contentDigest", it.contentDigest)
                     .put("stepId", it.stepId)
+                    .put("updatedAtMillis", it.updatedAtMillis))
+            }
+        })
+        put("lessonCustomizations", JSONArray().apply {
+            snapshot.lessonCustomizations.forEach {
+                put(JSONObject()
+                    .put("lessonId", it.lessonId)
+                    .put("contentDigest", it.contentDigest)
                     .put("stepOrderJson", it.stepOrderJson)
-                    .put("overridesJson", it.overridesJson))
+                    .put("overridesJson", it.overridesJson)
+                    .put("updatedAtMillis", it.updatedAtMillis))
             }
         })
         put("marks", JSONArray().apply {
@@ -171,50 +221,100 @@ object LessonBackupCodec {
 
     private fun readPayload(raw: String): LessonBackupSnapshot {
         val payload = JSONObject(raw)
-        require(payload.getInt("schemaVersion") == SCHEMA_VERSION)
-        val progress = payload.getJSONArray("progress").let { array ->
-            (0 until array.length()).map { index ->
-                val item = array.getJSONObject(index)
-                BackupProgress(
-                    lessonId = item.getString("lessonId"),
-                    contentDigest = item.getString("contentDigest"),
-                    stepId = item.getString("stepId"),
-                    stepOrderJson = item.getString("stepOrderJson"),
-                    overridesJson = item.getString("overridesJson")
-                )
+        val version = payload.optInt("schemaVersion", 1)
+        return if (version == 1) {
+            val legacy = payload.getJSONArray("progress").let { array ->
+                (0 until array.length()).map { index ->
+                    val item = array.getJSONObject(index)
+                    BackupProgress(
+                        lessonId = item.getString("lessonId"),
+                        contentDigest = item.getString("contentDigest"),
+                        stepId = item.getString("stepId"),
+                        stepOrderJson = item.getString("stepOrderJson"),
+                        overridesJson = item.getString("overridesJson")
+                    )
+                }
             }
+            val marks = readMarks(payload.getJSONArray("marks"))
+            LessonBackupSnapshot(
+                schemaVersion = 1,
+                legacyProgress = legacy,
+                marks = marks
+            )
+        } else {
+            val groups = payload.optJSONArray("classGroups")?.let { array ->
+                (0 until array.length()).map { index ->
+                    val item = array.getJSONObject(index)
+                    BackupClassGroup(
+                        id = item.getString("id"),
+                        academicYear = item.getString("academicYear"),
+                        grade = item.getInt("grade"),
+                        section = item.getString("section"),
+                        displayName = item.getString("displayName"),
+                        archived = item.optBoolean("archived", false),
+                        sortOrder = item.optInt("sortOrder", 0)
+                    )
+                }
+            }.orEmpty()
+            val classProgress = payload.optJSONArray("classProgress")?.let { array ->
+                (0 until array.length()).map { index ->
+                    val item = array.getJSONObject(index)
+                    BackupClassProgress(
+                        classGroupId = item.getString("classGroupId"),
+                        lessonId = item.getString("lessonId"),
+                        contentDigest = item.getString("contentDigest"),
+                        stepId = item.getString("stepId"),
+                        updatedAtMillis = item.optLong("updatedAtMillis", System.currentTimeMillis())
+                    )
+                }
+            }.orEmpty()
+            val customizations = payload.optJSONArray("lessonCustomizations")?.let { array ->
+                (0 until array.length()).map { index ->
+                    val item = array.getJSONObject(index)
+                    BackupLessonCustomization(
+                        lessonId = item.getString("lessonId"),
+                        contentDigest = item.getString("contentDigest"),
+                        stepOrderJson = item.getString("stepOrderJson"),
+                        overridesJson = item.getString("overridesJson"),
+                        updatedAtMillis = item.optLong("updatedAtMillis", System.currentTimeMillis())
+                    )
+                }
+            }.orEmpty()
+            val marks = readMarks(payload.getJSONArray("marks"))
+            LessonBackupSnapshot(
+                schemaVersion = 2,
+                classGroups = groups,
+                classProgress = classProgress,
+                lessonCustomizations = customizations,
+                marks = marks
+            )
         }
-        val marks = payload.getJSONArray("marks").let { array ->
-            (0 until array.length()).map { index ->
-                val item = array.getJSONObject(index)
-                BackupMark(
-                    academicYear = item.getString("academicYear"),
-                    track = item.getString("track"),
-                    itemId = item.getString("itemId"),
-                    checked = item.getBoolean("checked")
-                )
-            }
-        }
-        require(progress.map { it.lessonId }.distinct().size == progress.size) {
-            "Yedekte yinelenen ders kaydı"
-        }
-        require(marks.map { "${it.academicYear}:${it.track}:${it.itemId}" }
-            .distinct().size == marks.size) { "Yedekte yinelenen öğretmen işareti" }
-        return LessonBackupSnapshot(progress, marks)
     }
 
-    private fun signatureInput(
+    private fun readMarks(array: JSONArray): List<BackupMark> =
+        (0 until array.length()).map { index ->
+            val item = array.getJSONObject(index)
+            BackupMark(
+                academicYear = item.getString("academicYear"),
+                track = item.getString("track"),
+                itemId = item.getString("itemId"),
+                checked = item.getBoolean("checked")
+            )
+        }
+
+    internal fun signatureInput(
+        schemaVersion: Int,
         contentSignature: String,
         workflowSignature: String,
         salt: ByteArray,
         nonce: ByteArray,
         ciphertext: String
     ): ByteArray = listOf(
-        FORMAT, SCHEMA_VERSION.toString(), contentSignature, workflowSignature,
+        FORMAT, schemaVersion.toString(), contentSignature, workflowSignature,
         b64(salt), b64(nonce), ciphertext
     ).joinToString("|").toByteArray(StandardCharsets.UTF_8)
 
-    private fun derive(passphrase: CharArray, salt: ByteArray, iterations: Int): ByteArray {
+    internal fun derive(passphrase: CharArray, salt: ByteArray, iterations: Int): ByteArray {
         val spec = PBEKeySpec(passphrase, salt, iterations, DERIVED_BYTES * 8)
         return try {
             SecretKeyFactory.getInstance(KDF).generateSecret(spec).encoded
@@ -223,7 +323,7 @@ object LessonBackupCodec {
         }
     }
 
-    private fun hmac(key: ByteArray, value: ByteArray): ByteArray =
+    internal fun hmac(key: ByteArray, value: ByteArray): ByteArray =
         Mac.getInstance("HmacSHA256").run {
             init(SecretKeySpec(key, "HmacSHA256"))
             doFinal(value)
@@ -235,7 +335,7 @@ object LessonBackupCodec {
         }
     }
 
-    private fun b64(value: ByteArray): String = Base64.getEncoder().encodeToString(value)
+    internal fun b64(value: ByteArray): String = Base64.getEncoder().encodeToString(value)
 
     private fun decodeB64(value: String, expectedBytes: Int? = null): ByteArray =
         try {

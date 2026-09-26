@@ -20,12 +20,19 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -38,10 +45,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.R
+import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
-import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.storage.ClassGroup
 import io.github.knigdelioglu.lessonplayer.ui.AppScreen
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
@@ -49,7 +57,7 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 
 /**
  * Sol Koyu Mor Sidebar (Geniş Landscape Tablette ~%22 genişlik).
- * Uygulama navigasyonu (gerçek AppScreen sekmeleri) ve aktif ders adımlarını tek, sabit kolon içinde barındırır.
+ * Uygulama navigasyonu (gerçek AppScreen sekmeleri), aktif şube seçici ve aktif ders adımlarını barındırır.
  */
 @Composable
 fun LessonV2Sidebar(
@@ -60,7 +68,12 @@ fun LessonV2Sidebar(
     lesson: LessonData?,
     onSelectStep: (String) -> Unit,
     modifier: Modifier = Modifier,
-    enabled: Boolean = true
+    enabled: Boolean = true,
+    activeClassGroup: ClassGroup? = null,
+    classGroups: List<ClassGroup> = emptyList(),
+    groupProgressSummaries: Map<String, String> = emptyMap(),
+    onSelectClassGroup: (String) -> Unit = {},
+    onAddNewClassGroup: () -> Unit = {}
 ) {
     val listState = rememberLazyListState()
 
@@ -82,23 +95,37 @@ fun LessonV2Sidebar(
                 .fillMaxSize()
                 .padding(LessonSpacing.medium)
         ) {
-            // Logo / Başlık
-            Column(modifier = Modifier.padding(bottom = LessonSpacing.medium)) {
+            // Logo / Başlık ve Şube Seçici
+            Column(
+                modifier = Modifier.padding(bottom = LessonSpacing.medium),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
                 Text(
                     text = "ÖĞRETMEN REHBERİ",
                     style = MaterialTheme.typography.labelMedium,
                     color = LessonColors.SidebarSubtext,
                     fontWeight = FontWeight.Bold
                 )
-                Text(
-                    text = "11. SINIF",
-                    style = MaterialTheme.typography.titleMedium,
-                    color = LessonColors.SidebarText,
-                    fontWeight = FontWeight.Bold
-                )
+                if (activeClassGroup != null) {
+                    ClassGroupDropdownSelector(
+                        activeGroup = activeClassGroup,
+                        classGroups = classGroups,
+                        progressSummaries = groupProgressSummaries,
+                        onSelectGroup = onSelectClassGroup,
+                        onAddNewGroup = onAddNewClassGroup,
+                        enabled = enabled
+                    )
+                } else {
+                    Text(
+                        text = "11. SINIF",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = LessonColors.SidebarText,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
             }
 
-            // Uygulama Navigasyonu (Sadece gerçek AppScreen değerleri - no-op menü yok!)
+            // Uygulama Navigasyonu
             Column(
                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny),
                 modifier = Modifier.fillMaxWidth()
@@ -155,13 +182,13 @@ fun LessonV2Sidebar(
             if (session != null && currentScreen != AppScreen.LESSON) {
                 Spacer(modifier = Modifier.height(LessonSpacing.tiny))
                 SidebarQuickAction(
-                    label = "Kaldığım Yer",
+                    label = if (activeClassGroup != null) "Kaldığım Yer (${activeClassGroup.displayName})" else "Kaldığım Yer",
                     tag = "quick-access-current-lesson",
                     onClick = onReturnToCurrent
                 )
             }
 
-            // Aktif Ders Adımları (Eğer aktif ders varsa)
+            // Aktif Ders Adımları
             if (lesson != null && session != null) {
                 Spacer(modifier = Modifier.height(LessonSpacing.medium))
                 Box(
@@ -269,6 +296,103 @@ fun LessonV2Sidebar(
 }
 
 @Composable
+internal fun ClassGroupDropdownSelector(
+    activeGroup: ClassGroup,
+    classGroups: List<ClassGroup>,
+    progressSummaries: Map<String, String>,
+    onSelectGroup: (String) -> Unit,
+    onAddNewGroup: () -> Unit,
+    enabled: Boolean = true,
+    modifier: Modifier = Modifier
+) {
+    var expanded by remember { mutableStateOf(false) }
+
+    Box(modifier = modifier) {
+        Surface(
+            shape = RoundedCornerShape(8.dp),
+            color = LessonColors.SidebarSurface,
+            modifier = Modifier
+                .clickable(enabled = enabled) { expanded = true }
+                .testTag("sidebar-class-group-selector")
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp)
+            ) {
+                Text(
+                    text = "${activeGroup.displayName} ▾",
+                    style = MaterialTheme.typography.titleMedium,
+                    color = LessonColors.SidebarText,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
+
+        DropdownMenu(
+            expanded = expanded,
+            onDismissRequest = { expanded = false },
+            modifier = Modifier.background(LessonColors.SidebarBg)
+        ) {
+            classGroups.forEach { group ->
+                val isSelected = group.id == activeGroup.id
+                DropdownMenuItem(
+                    text = {
+                        Column {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                            ) {
+                                if (isSelected) {
+                                    Text(
+                                        text = "✓",
+                                        color = LessonColors.SidebarActive,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                }
+                                Text(
+                                    text = group.displayName,
+                                    fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                    color = if (isSelected) LessonColors.SidebarActive else LessonColors.SidebarText
+                                )
+                            }
+                            val summary = progressSummaries[group.id] ?: "Henüz başlanmadı"
+                            Text(
+                                text = summary,
+                                style = MaterialTheme.typography.labelSmall,
+                                color = LessonColors.SidebarSubtext,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                        }
+                    },
+                    onClick = {
+                        expanded = false
+                        onSelectGroup(group.id)
+                    },
+                    modifier = Modifier.testTag("class-group-option-${group.id}")
+                )
+            }
+            HorizontalDivider(color = LessonColors.SidebarSurface)
+            DropdownMenuItem(
+                text = {
+                    Text(
+                        text = "+ Yeni Şube Ekle",
+                        color = LessonColors.SidebarActive,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                },
+                onClick = {
+                    expanded = false
+                    onAddNewGroup()
+                },
+                modifier = Modifier.testTag("add-class-group-button")
+            )
+        }
+    }
+}
+
+@Composable
 private fun SidebarQuickAction(label: String, tag: String, onClick: () -> Unit) {
     Surface(
         modifier = Modifier
@@ -296,7 +420,8 @@ private fun SidebarQuickAction(label: String, tag: String, onClick: () -> Unit) 
 }
 
 internal fun lessonSidebarStepTitle(step: LessonStep): String {
-    val title = sequenceOf(
+    return sequenceOf(
+        step.outlineTitle,
         step.answer?.promptSummary,
         step.content?.sections?.firstOrNull()?.title,
         step.source.bookHeading,
@@ -306,10 +431,7 @@ internal fun lessonSidebarStepTitle(step: LessonStep): String {
         .orEmpty()
         .replace(Regex("\\s+"), " ")
         .trim()
-        .substringBefore(". ")
-    if (title.length <= 58) return title
-    val clipped = title.take(55).substringBeforeLast(' ').ifBlank { title.take(55) }
-    return "$clipped…"
+        .replace(Regex("^\\d+\\.\\s+Tema\\b\\s*(?:[—–-]\\s*)?"), "")
 }
 
 internal fun lessonSidebarStepType(step: LessonStep): String {

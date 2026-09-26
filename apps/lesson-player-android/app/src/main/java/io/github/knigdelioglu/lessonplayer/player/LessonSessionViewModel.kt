@@ -5,19 +5,21 @@ import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import io.github.knigdelioglu.lessonplayer.content.LessonBundle
+import io.github.knigdelioglu.lessonplayer.storage.ClassGroup
+import io.github.knigdelioglu.lessonplayer.storage.ClassLessonProgressRow
 import io.github.knigdelioglu.lessonplayer.storage.LessonBackupCodec
 import io.github.knigdelioglu.lessonplayer.storage.LessonDatabase
 import io.github.knigdelioglu.lessonplayer.storage.LessonPreferences
 import io.github.knigdelioglu.lessonplayer.storage.LessonStore
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
+import kotlinx.coroutines.withContext
 
 data class BackupUiState(
     val busy: Boolean = false,
@@ -33,13 +35,17 @@ data class LessonActionUiState(
 
 sealed interface LessonSessionUiState {
     data object Loading : LessonSessionUiState
-    data class Ready(val session: LessonSession) : LessonSessionUiState
+    data class Ready(
+        val classGroup: ClassGroup,
+        val session: LessonSession
+    ) : LessonSessionUiState
     data class Error(val message: String) : LessonSessionUiState
 }
 
 /**
  * Single writer: IO completes before presenting a state change. If persistence fails
  * the previous state stays visible and the teacher receives an explicit error.
+ * Class group changes and commands are protected by mutex to prevent cross-group state races.
  */
 class LessonSessionViewModel(application: Application) : AndroidViewModel(application) {
     private val store = LessonStore(LessonDatabase.get(application))
@@ -53,6 +59,18 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
     private val mutableActionState = MutableStateFlow(LessonActionUiState())
     val actionState: StateFlow<LessonActionUiState> = mutableActionState.asStateFlow()
     val presentationTextSize = preferences.presentationTextSize
+
+    private val mutableClassGroups = MutableStateFlow<List<ClassGroup>>(emptyList())
+    val classGroups: StateFlow<List<ClassGroup>> = mutableClassGroups.asStateFlow()
+
+    private val mutableLegacyMigrationPending = MutableStateFlow(false)
+    val legacyMigrationPending: StateFlow<Boolean> = mutableLegacyMigrationPending.asStateFlow()
+
+    // Map: classGroupId -> (lessonId -> ClassLessonProgressRow)
+    private val mutableAllGroupsProgress = MutableStateFlow<Map<String, Map<String, ClassLessonProgressRow>>>(emptyMap())
+    val allGroupsProgress: StateFlow<Map<String, Map<String, ClassLessonProgressRow>>> =
+        mutableAllGroupsProgress.asStateFlow()
+
     private var lastFailedCommand: LessonCommand? = null
     private var lastFailedLessonId: String? = null
 
@@ -63,16 +81,71 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
                     mutableState.value is LessonSessionUiState.Ready) return@withLock
                 mutableState.value = LessonSessionUiState.Loading
                 try {
-                    val preferred = preferences.lastLessonId.first()
-                    val chosen = bundle.byId[preferred] ?: bundle.lessons.first()
-                    val saved = store.restore(chosen, bundle.lessonDigest(chosen.lessonId))
+                    val groups = store.activeClassGroups()
+                    mutableClassGroups.value = groups
+
+                    val hasLegacy = store.legacyProgress().isNotEmpty()
+                    mutableLegacyMigrationPending.value = hasLegacy
+
+                    val preferredGroupId = preferences.activeClassGroupId.first()
+                    val activeGroup = groups.firstOrNull { it.id == preferredGroupId } ?: groups.first()
+                    preferences.setActiveClassGroupId(activeGroup.id)
+
+                    val preferredLesson = preferences.lastLessonForGroup(activeGroup.id).first()
+                    val chosen = bundle.byId[preferredLesson] ?: bundle.lessons.first()
+                    val saved = store.restore(activeGroup.id, chosen, bundle.lessonDigest(chosen.lessonId))
                     val mode = preferences.presentationMode.first()
                     currentBundle = bundle
                     mutableState.value = LessonSessionUiState.Ready(
-                        saved.copy(presentationMode = mode))
+                        classGroup = activeGroup,
+                        session = saved.copy(presentationMode = mode)
+                    )
+                    refreshProgressSummary()
                 } catch (error: Exception) {
                     mutableState.value = LessonSessionUiState.Error(
                         "Kaydedilmiş ders durumu yüklenemedi: ${error.message}")
+                }
+            }
+        }
+    }
+
+    fun selectClassGroup(groupId: String) {
+        if (mutableActionState.value.busy) return
+        mutableActionState.value = LessonActionUiState(busy = true)
+        viewModelScope.launch {
+            mutex.withLock {
+                val bundle = currentBundle ?: run {
+                    failAction("Ders paketi henüz hazır değil.")
+                    return@withLock
+                }
+                val groups = store.activeClassGroups()
+                mutableClassGroups.value = groups
+                val targetGroup = groups.firstOrNull { it.id == groupId } ?: run {
+                    failAction("Ders grubu bulunamadı.")
+                    return@withLock
+                }
+                val currentReady = mutableState.value as? LessonSessionUiState.Ready
+                if (currentReady?.classGroup?.id == groupId) {
+                    clearAction()
+                    return@withLock
+                }
+
+                try {
+                    preferences.setActiveClassGroupId(groupId)
+                    val preferredLesson = preferences.lastLessonForGroup(groupId).first()
+                    val chosen = bundle.byId[preferredLesson]
+                        ?: currentReady?.session?.lessonId?.let { bundle.byId[it] }
+                        ?: bundle.lessons.first()
+                    val restored = store.restore(groupId, chosen, bundle.lessonDigest(chosen.lessonId))
+                    val mode = preferences.presentationMode.first()
+                    mutableState.value = LessonSessionUiState.Ready(
+                        classGroup = targetGroup,
+                        session = restored.copy(presentationMode = mode)
+                    )
+                    refreshProgressSummary()
+                    clearAction()
+                } catch (error: Exception) {
+                    failAction("Şube oturumu açılamadı: ${error.message}")
                 }
             }
         }
@@ -85,6 +158,10 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
         mutableActionState.value = LessonActionUiState(busy = true)
         viewModelScope.launch {
             mutex.withLock {
+                val ready = mutableState.value as? LessonSessionUiState.Ready ?: run {
+                    failAction("Oturum hazır değil.")
+                    return@withLock
+                }
                 val bundle = currentBundle ?: run {
                     failAction("Ders paketi henüz hazır değil.")
                     return@withLock
@@ -94,15 +171,125 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
                     return@withLock
                 }
                 try {
-                    val session = store.restore(lesson, bundle.lessonDigest(lesson.lessonId))
+                    val session = store.restore(ready.classGroup.id, lesson, bundle.lessonDigest(lesson.lessonId))
                         .copy(presentationMode = preferences.presentationMode.first())
-                    // Prefer persisted selection only after a successful restore.
-                    preferences.rememberLesson(id)
-                    mutableState.value = LessonSessionUiState.Ready(session)
+                    preferences.rememberLesson(ready.classGroup.id, id)
+                    mutableState.value = ready.copy(session = session)
+                    refreshProgressSummary()
                     clearAction()
                 } catch (error: Exception) {
                     lastFailedLessonId = id
                     failAction("Ders açılamadı. Önceki ders korunuyor.")
+                }
+            }
+        }
+    }
+
+    fun dispatch(command: LessonCommand) {
+        if (mutableActionState.value.busy ||
+            mutableState.value !is LessonSessionUiState.Ready ||
+            currentBundle == null
+        ) return
+        mutableActionState.value = LessonActionUiState(busy = true)
+        viewModelScope.launch {
+            mutex.withLock {
+                val ready = mutableState.value as? LessonSessionUiState.Ready
+                    ?: run {
+                        clearAction()
+                        return@withLock
+                    }
+                val bundle = currentBundle ?: run {
+                    failAction("Ders paketi henüz hazır değil.")
+                    return@withLock
+                }
+                val lesson = bundle.byId[ready.session.lessonId] ?: run {
+                    failAction("Ders bulunamadı. Önceki durum korundu.")
+                    return@withLock
+                }
+                try {
+                    val next = LessonEngine.reduce(ready.session, lesson, command)
+                    if (next == ready.session) {
+                        clearAction()
+                        return@withLock
+                    }
+                    store.save(ready.classGroup.id, next)
+                    if (command is LessonCommand.SetPresentationMode) {
+                        preferences.setPresentationMode(command.enabled)
+                    }
+                    mutableState.value = ready.copy(session = next)
+                    refreshProgressSummary()
+                    lastFailedCommand = null
+                    lastFailedLessonId = null
+                    clearAction()
+                } catch (error: Exception) {
+                    lastFailedCommand = command
+                    lastFailedLessonId = null
+                    failAction("İşlem kaydedilemedi. Önceki durum korundu.")
+                }
+            }
+        }
+    }
+
+    fun resolveLegacyMigration(targetGroupId: String?) {
+        viewModelScope.launch {
+            mutex.withLock {
+                try {
+                    store.assignLegacyProgress(targetGroupId)
+                    mutableLegacyMigrationPending.value = false
+                    val ready = mutableState.value as? LessonSessionUiState.Ready
+                    val bundle = currentBundle
+                    if (ready != null && bundle != null) {
+                        val activeGroup = ready.classGroup
+                        val preferredLesson = preferences.lastLessonForGroup(activeGroup.id).first()
+                        val chosen = bundle.byId[preferredLesson] ?: bundle.byId[ready.session.lessonId] ?: bundle.lessons.first()
+                        val restored = store.restore(activeGroup.id, chosen, bundle.lessonDigest(chosen.lessonId))
+                        mutableState.value = ready.copy(session = restored.copy(presentationMode = preferences.presentationMode.first()))
+                    }
+                    refreshProgressSummary()
+                } catch (error: Exception) {
+                    failAction("Eski kayıt aktarılamadı: ${error.message}")
+                }
+            }
+        }
+    }
+
+    fun addClassGroup(grade: Int, section: String, displayName: String) {
+        viewModelScope.launch {
+            mutex.withLock {
+                try {
+                    val sec = section.trim().uppercase()
+                    val cleanGrade = grade.coerceIn(1, 12)
+                    val id = "$cleanGrade$sec"
+                    val all = store.allClassGroups()
+                    val maxSort = (all.maxOfOrNull { it.sortOrder } ?: 0) + 1
+                    val name = displayName.trim().ifBlank { id }
+                    val newGroup = ClassGroup(
+                        id = id,
+                        academicYear = "2026-2027",
+                        grade = cleanGrade,
+                        section = sec,
+                        displayName = name,
+                        archived = false,
+                        sortOrder = maxSort
+                    )
+                    store.saveClassGroup(newGroup)
+                    val updated = store.activeClassGroups()
+                    mutableClassGroups.value = updated
+
+                    // Switch to the newly created class group
+                    preferences.setActiveClassGroupId(newGroup.id)
+                    val bundle = currentBundle
+                    if (bundle != null) {
+                        val chosen = bundle.lessons.first()
+                        val restored = store.restore(newGroup.id, chosen, bundle.lessonDigest(chosen.lessonId))
+                        mutableState.value = LessonSessionUiState.Ready(
+                            classGroup = newGroup,
+                            session = restored.copy(presentationMode = preferences.presentationMode.first())
+                        )
+                    }
+                    refreshProgressSummary()
+                } catch (error: Exception) {
+                    failAction("Şube eklenemedi: ${error.message}")
                 }
             }
         }
@@ -160,12 +347,18 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
                 }
                 mutex.withLock {
                     store.importBackupSnapshot(snapshot, bundle)
-                    val preferred = preferences.lastLessonId.first()
-                    val chosen = bundle.byId[preferred] ?: bundle.lessons.first()
-                    val restored = store.restore(chosen, bundle.lessonDigest(chosen.lessonId))
+                    val groups = store.activeClassGroups()
+                    mutableClassGroups.value = groups
+                    val preferredGroup = groups.first()
+                    preferences.setActiveClassGroupId(preferredGroup.id)
+                    val preferredLesson = preferences.lastLessonForGroup(preferredGroup.id).first()
+                    val chosen = bundle.byId[preferredLesson] ?: bundle.lessons.first()
+                    val restored = store.restore(preferredGroup.id, chosen, bundle.lessonDigest(chosen.lessonId))
                     mutableState.value = LessonSessionUiState.Ready(
-                        restored.copy(presentationMode = preferences.presentationMode.first())
+                        classGroup = preferredGroup,
+                        session = restored.copy(presentationMode = preferences.presentationMode.first())
                     )
+                    refreshProgressSummary()
                 }
                 mutableBackupState.value = BackupUiState(message = "Yedek geri yüklendi")
             } catch (error: Exception) {
@@ -177,49 +370,11 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
         }
     }
 
-    fun dispatch(command: LessonCommand) {
-        if (mutableActionState.value.busy ||
-            mutableState.value !is LessonSessionUiState.Ready ||
-            currentBundle == null
-        ) return
-        mutableActionState.value = LessonActionUiState(busy = true)
-        viewModelScope.launch {
-            mutex.withLock {
-                val ready = mutableState.value as? LessonSessionUiState.Ready
-                    ?: run {
-                        clearAction()
-                        return@withLock
-                    }
-                val bundle = currentBundle ?: run {
-                    failAction("Ders paketi henüz hazır değil.")
-                    return@withLock
-                }
-                val lesson = bundle.byId[ready.session.lessonId] ?: run {
-                    failAction("Ders bulunamadı. Önceki durum korundu.")
-                    return@withLock
-                }
-                try {
-                    val next = LessonEngine.reduce(ready.session, lesson, command)
-                    if (next == ready.session) {
-                        clearAction()
-                        return@withLock
-                    }
-                    // Persist progress/customization first, never reset on bootstrap.
-                    store.save(next)
-                    if (command is LessonCommand.SetPresentationMode) {
-                        preferences.setPresentationMode(command.enabled)
-                    }
-                    mutableState.value = LessonSessionUiState.Ready(next)
-                    lastFailedCommand = null
-                    lastFailedLessonId = null
-                    clearAction()
-                } catch (error: Exception) {
-                    lastFailedCommand = command
-                    lastFailedLessonId = null
-                    failAction("İşlem kaydedilemedi. Önceki durum korundu.")
-                }
-            }
-        }
+    private suspend fun refreshProgressSummary() {
+        val allProgress = store.allClassProgress()
+        mutableAllGroupsProgress.value = allProgress
+            .groupBy { it.classGroupId }
+            .mapValues { (_, list) -> list.associateBy { it.lessonId } }
     }
 
     fun retryLastAction() {

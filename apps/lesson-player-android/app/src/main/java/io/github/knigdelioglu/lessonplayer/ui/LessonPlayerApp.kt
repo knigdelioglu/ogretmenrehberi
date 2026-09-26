@@ -12,9 +12,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.WindowInsetsSides
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.only
 import androidx.compose.foundation.layout.padding
@@ -24,6 +26,8 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
@@ -32,6 +36,8 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationRail
 import androidx.compose.material3.NavigationRailItem
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -64,12 +70,15 @@ import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSessionViewModel
 import io.github.knigdelioglu.lessonplayer.player.PresentationTextSize
+import io.github.knigdelioglu.lessonplayer.storage.ClassGroup
+import io.github.knigdelioglu.lessonplayer.storage.ClassLessonProgressRow
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanUiState
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanViewModel
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistDrawer
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistSheet
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonV2TeacherAssistPane
+import io.github.knigdelioglu.lessonplayer.ui.shell.ClassGroupDropdownSelector
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Header
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Sidebar
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
@@ -110,6 +119,31 @@ fun LessonPlayerApp() {
             uri?.let { sessionViewModel.importBackup(it, pendingImportPassphrase) }
         }
 
+        val classGroups by sessionViewModel.classGroups.collectAsState()
+        val legacyMigrationPending by sessionViewModel.legacyMigrationPending.collectAsState()
+        val allGroupsProgress by sessionViewModel.allGroupsProgress.collectAsState()
+        var showAddClassGroupDialog by rememberSaveable { mutableStateOf(false) }
+
+        val groupProgressSummaries = remember(classGroups, allGroupsProgress, bundle) {
+            classGroups.associate { group ->
+                val lessonProgressMap = allGroupsProgress[group.id]
+                val latestRow = lessonProgressMap?.values?.maxByOrNull { it.updatedAtMillis }
+                val summary = if (latestRow != null) {
+                    val lesson = bundle?.byId?.get(latestRow.lessonId)
+                    if (lesson != null) {
+                        val stepIdx = lesson.steps.indexOfFirst { it.id == latestRow.stepId }
+                        val stepNum = if (stepIdx >= 0) "Adım ${stepIdx + 1}" else ""
+                        "${lesson.title} · $stepNum".trimEnd(' ', '·')
+                    } else {
+                        latestRow.lessonId
+                    }
+                } else {
+                    "Henüz başlanmadı"
+                }
+                group.id to summary
+            }
+        }
+
         val contentRepository = remember(appContext) { ContentRepository(appContext) }
         LaunchedEffect(contentRepository, loadRequest) {
             loadingContent = true
@@ -138,6 +172,116 @@ fun LessonPlayerApp() {
             } else {
                 currentScreen = backDestination(currentScreen)
             }
+        }
+
+        if (showAddClassGroupDialog) {
+            var gradeText by rememberSaveable { mutableStateOf("11") }
+            var sectionText by rememberSaveable { mutableStateOf("") }
+            AlertDialog(
+                onDismissRequest = { showAddClassGroupDialog = false },
+                title = { Text("Yeni Şube Ekle") },
+                text = {
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)) {
+                        OutlinedTextField(
+                            value = gradeText,
+                            onValueChange = { gradeText = it.filter { char -> char.isDigit() } },
+                            label = { Text("Kademe (Sınıf)") },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth().testTag("add-class-group-grade-input")
+                        )
+                        OutlinedTextField(
+                            value = sectionText,
+                            onValueChange = { sectionText = it.uppercase().filter { char -> char.isLetter() } },
+                            label = { Text("Şube (örn. D)") },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth().testTag("add-class-group-section-input")
+                        )
+                    }
+                },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            val grade = gradeText.toIntOrNull() ?: 11
+                            val sec = sectionText.trim().uppercase()
+                            if (sec.isNotEmpty()) {
+                                sessionViewModel.addClassGroup(grade, sec, "$grade$sec")
+                                showAddClassGroupDialog = false
+                            }
+                        },
+                        enabled = sectionText.isNotBlank(),
+                        modifier = Modifier.testTag("add-class-group-confirm-button")
+                    ) {
+                        Text("Ekle")
+                    }
+                },
+                dismissButton = {
+                    TextButton(
+                        onClick = { showAddClassGroupDialog = false },
+                        modifier = Modifier.testTag("add-class-group-cancel-button")
+                    ) {
+                        Text("İptal")
+                    }
+                }
+            )
+        }
+
+        if (legacyMigrationPending && classGroups.isNotEmpty()) {
+            var selectedGroupForMigration by remember(classGroups) {
+                mutableStateOf<String?>(classGroups.firstOrNull()?.id)
+            }
+            AlertDialog(
+                onDismissRequest = { /* force explicit choice */ },
+                title = { Text("Önceki Ders İlerlemesi Bulundu") },
+                text = {
+                    Column(verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)) {
+                        Text(
+                            "Daha önceden kaydedilmiş ders ilerlemeniz tespit edildi. Bu ilerlemeyi hangi şubenize aktarmak istersiniz?",
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                        Spacer(Modifier.height(LessonSpacing.small))
+                        classGroups.forEach { group ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { selectedGroupForMigration = group.id }
+                                    .padding(vertical = LessonSpacing.tiny),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                RadioButton(
+                                    selected = selectedGroupForMigration == group.id,
+                                    onClick = { selectedGroupForMigration = group.id }
+                                )
+                                Spacer(Modifier.width(LessonSpacing.tiny))
+                                Text("${group.displayName} şubesine aktar")
+                            }
+                        }
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { selectedGroupForMigration = null }
+                                .padding(vertical = LessonSpacing.tiny),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = selectedGroupForMigration == null,
+                                onClick = { selectedGroupForMigration = null }
+                            )
+                            Spacer(Modifier.width(LessonSpacing.tiny))
+                            Text("Hiçbiri (Sıfırdan başla)")
+                        }
+                    }
+                },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            sessionViewModel.resolveLegacyMigration(selectedGroupForMigration)
+                        },
+                        modifier = Modifier.testTag("legacy-migration-confirm-button")
+                    ) {
+                        Text("Onayla")
+                    }
+                }
+            )
         }
 
         when {
@@ -199,6 +343,12 @@ fun LessonPlayerApp() {
                 currentScreen = currentScreen,
                 bundle = bundle!!,
                 session = readySession.session,
+                classGroup = readySession.classGroup,
+                classGroups = classGroups,
+                allGroupsProgress = allGroupsProgress,
+                groupProgressSummaries = groupProgressSummaries,
+                onSelectClassGroup = sessionViewModel::selectClassGroup,
+                onAddNewClassGroup = { showAddClassGroupDialog = true },
                 presentationTextSize = presentationTextSize,
                 setPresentationTextSize = sessionViewModel::setPresentationTextSize,
                 navigate = { currentScreen = it },
@@ -236,6 +386,12 @@ internal fun LessonPlayerShell(
     currentScreen: AppScreen,
     bundle: LessonBundle,
     session: LessonSession,
+    classGroup: ClassGroup,
+    classGroups: List<ClassGroup>,
+    allGroupsProgress: Map<String, Map<String, ClassLessonProgressRow>>,
+    groupProgressSummaries: Map<String, String>,
+    onSelectClassGroup: (String) -> Unit,
+    onAddNewClassGroup: () -> Unit,
     presentationTextSize: PresentationTextSize,
     setPresentationTextSize: (PresentationTextSize) -> Unit,
     navigate: (AppScreen) -> Unit,
@@ -311,6 +467,11 @@ internal fun LessonPlayerShell(
                                 dispatchAction(LessonCommand.GoToStep(stepId))
                             },
                             enabled = !actionState.busy,
+                            activeClassGroup = classGroup,
+                            classGroups = classGroups,
+                            groupProgressSummaries = groupProgressSummaries,
+                            onSelectClassGroup = onSelectClassGroup,
+                            onAddNewClassGroup = onAddNewClassGroup,
                             modifier = sidebarModifier
                         )
                     },
@@ -360,6 +521,11 @@ internal fun LessonPlayerShell(
                             dispatchAction(LessonCommand.GoToStep(stepId))
                         },
                         enabled = !actionState.busy,
+                        activeClassGroup = classGroup,
+                        classGroups = classGroups,
+                        groupProgressSummaries = groupProgressSummaries,
+                        onSelectClassGroup = onSelectClassGroup,
+                        onAddNewClassGroup = onAddNewClassGroup,
                         modifier = Modifier
                             .fillMaxHeight()
                             .weight(LessonShellLayoutContract.SIDEBAR_WEIGHT)
@@ -396,7 +562,11 @@ internal fun LessonPlayerShell(
                                 toggleTeacherMark = toggleTeacherMark,
                                 backupState = backupState,
                                 beginExport = beginExport,
-                                beginImport = beginImport
+                                beginImport = beginImport,
+                                classGroup = classGroup,
+                                classGroups = classGroups,
+                                allGroupsProgress = allGroupsProgress,
+                                onSelectClassGroup = onSelectClassGroup
                             )
                         }
                     }
@@ -440,10 +610,12 @@ internal fun LessonPlayerShell(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                         ) {
-                            Text(
-                                "11. SINIF",
-                                style = MaterialTheme.typography.labelMedium,
-                                color = MaterialTheme.colorScheme.secondary
+                            ClassGroupDropdownSelector(
+                                activeGroup = classGroup,
+                                classGroups = classGroups,
+                                progressSummaries = groupProgressSummaries,
+                                onSelectGroup = onSelectClassGroup,
+                                onAddNewGroup = onAddNewClassGroup
                             )
                             if (currentScreen == AppScreen.LESSON && !session.presentationMode) {
                                 FilledTonalButton(
@@ -567,19 +739,19 @@ internal fun LessonPlayerShell(
                                 }
                             ) {
                                 PhaseOneScreen(
-                                    currentScreen,
-                                    bundle,
-                                    session,
-                                    selectLesson,
-                                    { navigate(AppScreen.LESSON) },
-                                    dispatchAction,
-                                    actionState,
-                                    retryLastAction,
-                                    teacherPlan,
-                                    toggleTeacherMark,
-                                    backupState,
-                                    beginExport,
-                                    beginImport,
+                                    screen = currentScreen,
+                                    bundle = bundle,
+                                    session = session,
+                                    selectLesson = selectLesson,
+                                    navigateToCurrent = { navigate(AppScreen.LESSON) },
+                                    dispatch = dispatchAction,
+                                    actionState = actionState,
+                                    retryLastAction = retryLastAction,
+                                    teacherPlan = teacherPlan,
+                                    toggleTeacherMark = toggleTeacherMark,
+                                    backupState = backupState,
+                                    beginExport = beginExport,
+                                    beginImport = beginImport,
                                     openLessonOutline = if (currentScreen == AppScreen.LESSON &&
                                         !twoPaneLesson
                                     ) {
@@ -587,7 +759,11 @@ internal fun LessonPlayerShell(
                                     } else null,
                                     openTeacherAssist = if (currentScreen == AppScreen.LESSON) {
                                         { showTeacherAssist = true }
-                                    } else null
+                                    } else null,
+                                    classGroup = classGroup,
+                                    classGroups = classGroups,
+                                    allGroupsProgress = allGroupsProgress,
+                                    onSelectClassGroup = onSelectClassGroup
                                 )
                             }
                         }

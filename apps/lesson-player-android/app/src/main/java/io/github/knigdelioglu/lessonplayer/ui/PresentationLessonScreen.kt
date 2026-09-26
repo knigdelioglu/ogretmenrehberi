@@ -206,7 +206,7 @@ internal fun PresentationLessonScreen(
                                 Text(
                                     text = if (step.answer?.entryType == "source_limited")
                                         "KAYNAK SINIRI"
-                                    else step.source.taskType.uppercase(),
+                                    else lessonTaskTypeLabel(step.source.taskType),
                                     style = MaterialTheme.typography.labelLarge,
                                     color = LessonColors.Primary,
                                     fontWeight = FontWeight.Bold

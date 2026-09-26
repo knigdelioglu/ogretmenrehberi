@@ -219,8 +219,8 @@ internal fun SessionLessonScreen(
                             ) {
                                 Text(
                                     text = if (answer?.entryType == "source_limited")
-                                        "KAYNAK SINIRI · ${step.source.taskType}"
-                                    else step.source.taskType.uppercase(),
+                                        "KAYNAK SINIRI · ${lessonTaskTypeLabel(step.source.taskType)}"
+                                    else lessonTaskTypeLabel(step.source.taskType),
                                     style = MaterialTheme.typography.labelMedium,
                                     color = LessonColors.Primary,
                                     fontWeight = FontWeight.Bold

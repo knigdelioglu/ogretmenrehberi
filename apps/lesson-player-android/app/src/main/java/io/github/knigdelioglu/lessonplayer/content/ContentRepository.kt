@@ -390,7 +390,9 @@ class ContentRepository(
                     answer.answerSections.values.isNotEmpty()) { "Vocabulary needs keyed definitions" }
             }
             return LessonStep(
-                id = value.getString("id"), layout = layout,
+                id = value.getString("id"),
+                outlineTitle = value.optionalString("outline_title"),
+                layout = layout,
                 density = value.getString("density").also {
                     require(it in setOf("large", "comfortable", "compact"))
                 },

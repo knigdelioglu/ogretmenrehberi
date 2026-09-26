@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -14,6 +15,7 @@ import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
@@ -62,9 +64,12 @@ import io.github.knigdelioglu.lessonplayer.player.BackupUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.ui.shell.lessonSidebarStepTitle
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonShape
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
+import io.github.knigdelioglu.lessonplayer.storage.ClassGroup
+import io.github.knigdelioglu.lessonplayer.storage.ClassLessonProgressRow
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanMarks
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherPlanUiState
 import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
@@ -85,14 +90,22 @@ internal fun PhaseOneScreen(
     beginExport: (String) -> Unit,
     beginImport: (String) -> Unit,
     openLessonOutline: (() -> Unit)? = null,
-    openTeacherAssist: (() -> Unit)? = null
+    openTeacherAssist: (() -> Unit)? = null,
+    classGroup: ClassGroup? = null,
+    classGroups: List<ClassGroup> = emptyList(),
+    allGroupsProgress: Map<String, Map<String, ClassLessonProgressRow>> = emptyMap(),
+    onSelectClassGroup: ((String) -> Unit)? = null
 ) {
     when (screen) {
         AppScreen.LIBRARY -> LibraryScreen(
             bundle,
             session,
             selectLesson,
-            navigateToCurrent
+            navigateToCurrent,
+            classGroup,
+            classGroups,
+            allGroupsProgress,
+            onSelectClassGroup
         )
         AppScreen.LESSON -> SessionLessonScreen(
             lesson = bundle.byId.getValue(session.lessonId),
@@ -222,6 +235,11 @@ private fun LessonOutlineRows(
         itemsIndexed(session.order, key = { _, stepId -> stepId }) { index, stepId ->
             val step = lesson.steps.first { it.id == stepId }
             val isSelected = stepId == session.stepId
+            val stepTitle = if (lesson.themeId == "TEMA_01" && step.answer != null) {
+                lessonSidebarStepTitle(step)
+            } else {
+                step.displayPrompt
+            }
             Surface(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(16.dp),
@@ -257,8 +275,8 @@ private fun LessonOutlineRows(
                         verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                     ) {
                         Text(
-                            if (isSelected) "✓ SEÇİLİ · ${index + 1}. ${step.displayPrompt}"
-                            else "${index + 1}. ${step.displayPrompt}",
+                            if (isSelected) "✓ SEÇİLİ · ${index + 1}. $stepTitle"
+                            else "${index + 1}. $stepTitle",
                             maxLines = 2,
                             overflow = TextOverflow.Ellipsis,
                             style = MaterialTheme.typography.bodyMedium,
@@ -327,11 +345,97 @@ private fun SectionCard(
 }
 
 @Composable
+private fun ClassGroupSummariesRow(
+    classGroups: List<ClassGroup>,
+    activeClassGroup: ClassGroup?,
+    allGroupsProgress: Map<String, Map<String, ClassLessonProgressRow>>,
+    bundle: LessonBundle,
+    onSelectClassGroup: ((String) -> Unit)?,
+    modifier: Modifier = Modifier
+) {
+    if (classGroups.isEmpty()) return
+    Row(
+        modifier = modifier.fillMaxWidth().testTag("all-class-groups-summaries"),
+        horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+    ) {
+        classGroups.forEach { group ->
+            val isActive = group.id == activeClassGroup?.id
+            val groupProgressMap = allGroupsProgress[group.id].orEmpty()
+            val lastProg = groupProgressMap.values.maxByOrNull { it.updatedAtMillis }
+            val groupLesson = lastProg?.let { bundle.byId[it.lessonId] }
+            val groupStepIndex = if (lastProg != null && groupLesson != null) {
+                val idx = groupLesson.steps.indexOfFirst { it.id == lastProg.stepId }
+                if (idx >= 0) idx + 1 else 1
+            } else null
+            val page = if (lastProg != null && groupLesson != null) {
+                groupLesson.steps.firstOrNull { it.id == lastProg.stepId }?.source?.printedPageRange
+            } else null
+
+            Surface(
+                modifier = Modifier
+                    .weight(1f)
+                    .clickable { onSelectClassGroup?.invoke(group.id) }
+                    .testTag("class-summary-card-${group.id}"),
+                shape = RoundedCornerShape(LessonShape.card),
+                color = if (isActive) MaterialTheme.colorScheme.primaryContainer
+                    else MaterialTheme.colorScheme.surface,
+                border = if (isActive) BorderStroke(2.dp, MaterialTheme.colorScheme.primary)
+                    else BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant)
+            ) {
+                Column(modifier = Modifier.padding(LessonSpacing.small)) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            group.displayName,
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold,
+                            color = if (isActive) MaterialTheme.colorScheme.onPrimaryContainer
+                                else MaterialTheme.colorScheme.onSurface
+                        )
+                        if (isActive) {
+                            Text(
+                                "Aktif",
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.primary,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                    Text(
+                        groupLesson?.title ?: "Henüz başlanmadı",
+                        style = MaterialTheme.typography.bodySmall,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        color = if (isActive) MaterialTheme.colorScheme.onPrimaryContainer
+                            else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    if (groupLesson != null && groupStepIndex != null) {
+                        Text(
+                            "s. ${page ?: "-"} · $groupStepIndex/${groupLesson.steps.size}",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = if (isActive) MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
+                                else MaterialTheme.colorScheme.secondary
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
 internal fun LibraryScreen(
     bundle: LessonBundle,
     session: LessonSession,
     selectLesson: (String) -> Unit,
-    navigateToCurrent: () -> Unit
+    navigateToCurrent: () -> Unit,
+    classGroup: ClassGroup? = null,
+    classGroups: List<ClassGroup> = emptyList(),
+    allGroupsProgress: Map<String, Map<String, ClassLessonProgressRow>> = emptyMap(),
+    onSelectClassGroup: ((String) -> Unit)? = null
 ) {
     var searchQuery by rememberSaveable { mutableStateOf("") }
     var selectedLessonId by rememberSaveable(session.lessonId) {
@@ -373,6 +477,15 @@ internal fun LibraryScreen(
                     modifier = Modifier.weight(1.25f).fillMaxHeight(),
                     verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                 ) {
+                    if (classGroups.isNotEmpty()) {
+                        ClassGroupSummariesRow(
+                            classGroups = classGroups,
+                            activeClassGroup = classGroup,
+                            allGroupsProgress = allGroupsProgress,
+                            bundle = bundle,
+                            onSelectClassGroup = onSelectClassGroup
+                        )
+                    }
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = { searchQuery = it },
@@ -429,6 +542,7 @@ internal fun LibraryScreen(
                     }?.title.orEmpty(),
                     isCurrentLesson = selectedLesson.lessonId == session.lessonId,
                     session = session,
+                    classGroup = classGroup,
                     modifier = Modifier.weight(1f).fillMaxHeight(),
                     onOpen = { selectLesson(selectedLesson.lessonId) },
                     onContinue = navigateToCurrent
@@ -440,6 +554,17 @@ internal fun LibraryScreen(
                 contentPadding = PaddingValues(LessonSpacing.large),
                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
             ) {
+                if (classGroups.isNotEmpty()) {
+                    item {
+                        ClassGroupSummariesRow(
+                            classGroups = classGroups,
+                            activeClassGroup = classGroup,
+                            allGroupsProgress = allGroupsProgress,
+                            bundle = bundle,
+                            onSelectClassGroup = onSelectClassGroup
+                        )
+                    }
+                }
                 item {
                     OutlinedTextField(
                         value = searchQuery,
@@ -451,14 +576,20 @@ internal fun LibraryScreen(
                     )
                 }
                 item {
+                    val currentLesson = bundle.byId.getValue(session.lessonId)
+                    val currentStep = currentLesson.steps.firstOrNull { it.id == session.stepId }
+                    val stepIndex = session.order.indexOf(session.stepId) + 1
+                    val eyebrow = if (classGroup != null) "${classGroup.displayName} · KALDIĞIN YER" else "KALDIĞIN YER"
+                    val pageInfo = currentStep?.source?.printedPageRange?.let { "Basılı s. $it · " }.orEmpty()
                     SectionCard(
-                        eyebrow = "KALDIĞIN YER",
-                        title = bundle.byId.getValue(session.lessonId).title,
-                        description = "Adım ${session.order.indexOf(session.stepId) + 1} /${session.order.size}",
+                        eyebrow = eyebrow,
+                        title = currentLesson.title,
+                        description = "${pageInfo}Adım $stepIndex / ${session.order.size}",
                         action = {
                             Button(
                                 onClick = navigateToCurrent,
                                 modifier = Modifier.heightIn(min = LessonTarget.minimum)
+                                    .testTag("library-continue-lesson")
                             ) { Text("Derse devam et") }
                         }
                     )
@@ -557,6 +688,7 @@ private fun LibraryLessonDetails(
     themeTitle: String,
     isCurrentLesson: Boolean,
     session: LessonSession,
+    classGroup: ClassGroup? = null,
     modifier: Modifier = Modifier,
     onOpen: () -> Unit,
     onContinue: () -> Unit
@@ -587,8 +719,9 @@ private fun LibraryLessonDetails(
                 }
                 if (isCurrentLesson) {
                     item {
+                        val eyebrow = if (classGroup != null) "DERS İLERLEMESİ (${classGroup.displayName})" else "DERS İLERLEMESİ"
                         SectionCard(
-                            eyebrow = "DERS İLERLEMESİ",
+                            eyebrow = eyebrow,
                             title = "Kaldığın adım",
                             description = "${session.order.indexOf(session.stepId) + 1} / ${session.order.size} · basılı s. ${lesson.steps.first { it.id == session.stepId }.source.printedPageRange}"
                         )
