@@ -155,6 +155,18 @@ Vocabulary görünümünde:
 - her kelimenin anlamı ayrı ayrı açılabilir,
 - `C` ile bütün anlamlar tek seferde gösterilebilir.
 
+Answer-bank kaydında isteğe bağlı `dictionary_terms` alanı bulunursa, o adıma ait anlamlar soru kartının sağındaki **Sözlük** kartında doğrudan görünür. Kaynak belirtilmişse her anlamın altında gösterilir. Bu kart yalnız anlam kaydı olan adımlarda oluşur; dar pencerede soru kartının altına geçer ve öğrenci ekranında da görünür. Mevcut vocabulary görünümündeki tek tek anlam açma akışı bundan bağımsızdır.
+
+Kanonik kayıt biçimi:
+
+```json
+"dictionary_terms": [
+  { "term": "kelime", "meaning": "bu bağlamdaki kısa anlam", "source": "TDK Güncel Türkçe Sözlük" }
+]
+```
+
+`source` isteğe bağlıdır. Veri üreticisi alanın dizi ve öğelerin dolu metinlerden oluştuğunu doğrular; alan answer-bank'ten üretilen `AnswerEntry` içine taşınır.
+
 ## Klavye
 
 - ← / →: önceki / sonraki

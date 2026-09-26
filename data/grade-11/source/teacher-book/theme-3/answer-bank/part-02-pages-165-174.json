@@ -141,7 +141,7 @@
       "question_no": "Söz Varlığımız 3",
       "prompt_summary": "Metindeki diğer bilinmeyen kelimeleri belirleyip sözlükten doğrulama",
       "answer": "Bu görevde sabit bir 'bilinmeyen kelimeler' listesi yoktur. Öğrenci kendi bilmediği kelimeleri seçer, bağlamdan tahmin eder ve TDK Güncel Türkçe Sözlük'ten doğrular. Öğretmen yalnızca işlemi modellemelidir.",
-      "guidance": "Mefhum, istihsal, masuniyet, istiğna, taaccüp, istihare, hüviyet gibi sözler yalnız **örnek tarama adaylarıdır**; öğrencinin bunları bilmediği varsayılmaz ve sözlük sonucu önceden verilmez. Gerekiyorsa öğretmen bir kelime üzerinde işlemi sınıfta örnekler.",
+      "guidance": "Mefhum, istihsal, masuniyet, istiğna, taaccüp, istihare, hüviyet gibi sözler yalnız **örnek tarama adaylarıdır**; öğrencinin bunları bilmediği varsayılmaz ve sözlük sonucu önceden verilmez. Aşağıdaki anlamlar, bu örnekleri öğretmenle çalışmak için bağlamda seçilmiş kısa sözlük karşılıklarıdır; öğrencinin kendi kelime seçiminin yerini tutmaz.",
       "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız 3",
       "answer_sections": [
         "1. Metinde anlamını bilmediğin kelime/kelime grubunu seç.",
@@ -149,6 +149,43 @@
         "3. TDK Güncel Türkçe Sözlük'te kelimeyi araştır; birden çok anlam varsa bağlama uyanı seç.",
         "4. Tahminin ile sözlük sonucunu karşılaştır.",
         "5. Kelimeyi metindeki anlamıyla kısa bir cümlede kullan."
+      ],
+      "dictionary_terms": [
+        {
+          "term": "mefhum",
+          "meaning": "Kavram; metindeki kullanımda soyut düşünce/kavramlar.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/mefhum"
+        },
+        {
+          "term": "istihsal",
+          "meaning": "Üretim; metindeki kullanımda ülkenin kendi üretimi.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/istihsal"
+        },
+        {
+          "term": "masuniyet",
+          "meaning": "Korunmuş olma, güven içinde bulunma; metindeki kullanımda kuşun güvenli/korunaklı oluşu.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/masuniyet"
+        },
+        {
+          "term": "istiğna",
+          "meaning": "Tok gözlülük, bir şeye ihtiyaç duymama; metindeki kullanımda Mümtaz'ın davetine karşı uzak/kayıtsız duruş.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/isti%C4%9Fna"
+        },
+        {
+          "term": "taaccüp",
+          "meaning": "Şaşma, şaşkınlık.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/taacc%C3%BCp"
+        },
+        {
+          "term": "istihare",
+          "meaning": "Bir işin hayırlı olup olmadığını rüyada anlamak amacıyla uyumadan önce dua etme.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/istihare"
+        },
+        {
+          "term": "hüviyet",
+          "meaning": "Kimlik; metindeki kullanımda bir milletin kendine özgü kimliği.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/h%C3%BCviyet"
+        }
       ]
     },
     {

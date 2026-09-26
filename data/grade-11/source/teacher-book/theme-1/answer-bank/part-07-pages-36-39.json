@@ -149,7 +149,7 @@
       "printed_page": 39,
       "question_no": "3",
       "prompt_summary": "Metindeki diğer dönemsel ve yabancı kökenli söz varlığını belirleme ve açıklama",
-      "answer": "Basılı mektupta görülen ve öğrenci tarafından anlamı araştırılabilecek örnek kelime/kelime grupları “tahfif etmek”, “mütemadî”, “müsamahakâr”, “takbih”, “inkişaf”, “sathî”, “hâlet-i ruhiye” ve “kani”dir. Soru, öğrencinin bilmediği sözcükleri seçip QR ile açılan TDK Güncel Türkçe Sözlük’ten öğrenmesini ister. QR hedefindeki sonuç burada incelenemediğinden bu kelimelerin sözlük karşılıkları doğrulanmış cevap olarak verilemez.",
+      "answer": "Basılı mektupta görülen örnek adaylar “tahfif etmek”, “mütemadî”, “müsamahakâr”, “takbih”, “inkişaf”, “sathî”, “hâlet-i ruhiye” ve “kani”dir. Aşağıdaki kısa açıklamalar TDK Güncel Türkçe Sözlükte doğrulanan maddeler ile mektubun s.39’daki kullanım bağlamını temel alan öğretmen sözlük notlarını ayırır. Kitap QR kodunun açtığı sonuç incelenmemiştir.",
       "source_locator": "basılı s.39 / PDF s.40",
       "answer_sections": {
         "Basılı metinde görülen adaylar": [
@@ -164,6 +164,48 @@
         ],
         "Öğrenci çalışma adımı": "Önce anlamı bilinmeyen kelimeyi seçin; ardından QR ile açılan sözlükte arayın, bulduğunuz anlamı cümle bağlamıyla karşılaştırın ve gerekirse bulunamadı durumunu not edin."
       },
+      "dictionary_terms": [
+        {
+          "term": "tahfif etmek",
+          "meaning": "Hafifletmek; burada vicdan azabını azaltmak.",
+          "source": "TDK Güncel Türkçe Sözlük, “hafifletmek” maddesi (tahfif etmek eş anlamlısı): https://sozluk.gov.tr/gts?ara=hafifletmek"
+        },
+        {
+          "term": "müsamahakâr",
+          "meaning": "Hoşgörülü, anlayışlı davranan.",
+          "source": "TDK Güncel Türkçe Sözlük, “hoşgörülü” maddesi (müsamahakâr eş anlamlısı): https://sozluk.gov.tr/gts?ara=ho%C5%9Fg%C3%B6r%C3%BCl%C3%BC"
+        },
+        {
+          "term": "mütemadî",
+          "meaning": "Kesintisiz, sürekli; burada yalnızlığın sürmesi.",
+          "source": "Ders kitabı, basılı s.39 mektup metni bağlamı; öğretmen sözlük açıklaması (QR sonucu incelenmedi)."
+        },
+        {
+          "term": "takbih",
+          "meaning": "Kınama, ayıplama; burada “takdir”in karşıtı.",
+          "source": "Ders kitabı, basılı s.39 mektup metni bağlamı; öğretmen sözlük açıklaması (QR sonucu incelenmedi)."
+        },
+        {
+          "term": "inkişaf",
+          "meaning": "Gelişme, gelişim.",
+          "source": "Ders kitabı, basılı s.39 mektup metni bağlamı; öğretmen sözlük açıklaması (QR sonucu incelenmedi)."
+        },
+        {
+          "term": "sathî",
+          "meaning": "Yüzeysel; burada samimiyetin derin ve içten olmaması.",
+          "source": "Ders kitabı, basılı s.39 mektup metni bağlamı; öğretmen sözlük açıklaması (QR sonucu incelenmedi)."
+        },
+        {
+          "term": "hâlet-i ruhiye",
+          "meaning": "Ruh hâli.",
+          "source": "Ders kitabı, basılı s.39 mektup metni bağlamı; öğretmen sözlük açıklaması (QR sonucu incelenmedi)."
+        },
+        {
+          "term": "kani olmak",
+          "meaning": "İnanmış, gönülden emin olmak.",
+          "source": "Ders kitabı, basılı s.39 mektup metni bağlamı; öğretmen sözlük açıklaması (QR sonucu incelenmedi)."
+        }
+      ],
       "guidance": "Mektuptan gerçekten seçilen kelimeler ve TDK aramasında bulunan sonuçlar öğrencinin çalışmasına göre değişebilir. QR sonucu görülmeden belirli bir sözlük tanımı TDK’ye atfedilmemelidir."
     }
   ]

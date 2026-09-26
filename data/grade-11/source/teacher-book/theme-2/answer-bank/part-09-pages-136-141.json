@@ -173,7 +173,7 @@
           "alternatif": "[Bağlama uygun öneri]"
         },
         "kahır": {
-          "temel_sozluk_alani": "keder, acı, sıkıntı; bağlama göre baskı/ezme anlam alanı",
+          "temel_sozluk_alani": "derin üzüntü veya acı, sıkıntı",
           "videodaki_dize": "[Kelimenin geçtiği gerçek dize]",
           "baglam_tahmini": "[Öğrencinin dizeden çıkardığı anlam]",
           "tdk_kontrolu": "[TDK ile doğrulanan anlam]",
@@ -187,7 +187,34 @@
           "alternatif": "[Bağlama uygun öneri]"
         }
       },
-      "explanation": "source_limited: PDF kelimeleri ve TDK ile kontrol görevini gösterir; kelimelerin videodaki kesin bağlamları QR içerik görülmeden doğrulanamaz."
+      "explanation": "source_limited: PDF kelimeleri ve TDK ile kontrol görevini gösterir; kelimelerin videodaki kesin bağlamları QR içerik görülmeden doğrulanamaz.",
+      "dictionary_terms": [
+        {
+          "term": "çağ",
+          "meaning": "Zaman dilimlerinden her biri; devir.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/gts?ara=%C3%A7a%C4%9F"
+        },
+        {
+          "term": "canan",
+          "meaning": "Gönülden sevilen, gönül verilmiş olan kadın.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/transfer?arama=kelime&kategori=verilst&kelime=Canan&option=com_bts"
+        },
+        {
+          "term": "sine",
+          "meaning": "Göğüs.",
+          "source": "TDK Güncel Türkçe Sözlük, göğüs maddesi (eş anlamlılar): https://sozluk.gov.tr/gts?ara=g%C3%B6%C4%9F%C3%BCs"
+        },
+        {
+          "term": "saban",
+          "meaning": "Toprağı sürmeye yarayan çiftçilik aracı.",
+          "source": "TDK Belleten, “Kazakça Ağızlar Sözlüğü’nde Kayıtlı Bazı Eskicil Sözcükler Üzerine”: https://www.tdkbelleten.gov.tr/eng/full-text/1065/tur"
+        },
+        {
+          "term": "kahır",
+          "meaning": "Derin üzüntü veya acı, sıkıntı.",
+          "source": "TDK, Türkçe Sözlük (MEB kurum kopyası): https://ibbyavuzsultanselimanadoluihl.meb.k12.tr/meb_iys_dosyalar/34/36/762257/dosyalar/2021_03/29021127_16230146_TDK___Buyuk_Turkce_Sozluk.pdf?CHK=f01aa9258e90ecb81df25b973cd6e5f9"
+        }
+      ]
     },
     {
       "question_id": "T2-P141-Q01",

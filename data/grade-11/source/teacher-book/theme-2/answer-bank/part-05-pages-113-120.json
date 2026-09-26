@@ -128,7 +128,7 @@
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Altı çizili ecdat, yağız, kılmak, il, şad ve töre sözcüklerinden sayfada tanımı verilenleri eşleştirme",
       "answer": "Ders kitabının 116. sayfasındaki 'Söz Varlığımız' etkinliğinde yer alan altı sözcüğe karşılık kitapta yalnızca beş adet tanım kutusu bulunmaktadır. Eşleştirmeler metin bağlamına göre aşağıda verilmiş; kitapta tanımı yer almayan 'şad' sözcüğünün durumu açıklanmıştır:",
-      "explanation": "Ders kitabı sayfasında altı sözcük kutusuna karşılık beş tanım kutusu mevcuttur. 'Şad' kelimesinin karşılığı kitapta açıkta bırakılmıştır; bu durum öğrenciye dürüstçe açıklanmalı, kaynak dışı tanım kitaba aitmiş gibi gösterilmemelidir.",
+      "explanation": "Ders kitabı s.116'da altı sözcük verilmiş; beş tanım kutusu ecdat, yağız, kılmak, il ve töre içindir. 'Şad' için kitapta tanım yoktur. dictionary_terms alanındaki şad açıklaması ayrı bir dış akademik kaynaktan gelir ve kitap eşleştirmesi değildir.",
       "source_locator": "basılı s.116 / PDF s.117 — Söz Varlığımız / 6 sözcük, 5 tanım kutusu",
       "answer_sections": {
         "ecdat": "Geçmişteki büyükler, atalar. (Metinde: '...ecdadım Bumin Kağan, İstemi Kağan oturmuş.')",
@@ -138,7 +138,39 @@
         "töre": "Bir toplumda yerleşmiş davranış ve yaşama biçimi. (Metinde: '...ilini töresini tutu vermiş, düzenleyi vermiş.')",
         "şad": "Bu sayfada 'şad' için eşleştirilecek bir tanım kutusu bulunmuyor; kitap içindeki malzemeden bu kelimeye ayrıca tanım verilemiyor."
       },
-      "guidance": "Kitapta yer alan beş eşleştirme değerlendirmede esas alınır. 'Şad' için QR/sözlük içeriği görülmeden dış kaynak tanımı eklenmemelidir."
+      "guidance": "Kitapta yer alan beş eşleştirme değerlendirmede esas alınır. 'Şad' için kitapta tanım verilmediği not edilmeli; dış kaynaktaki sözlük açıklaması kitap tanımı gibi sunulmamalıdır.",
+      "dictionary_terms": [
+        {
+          "term": "ecdat",
+          "meaning": "Geçmişteki büyükler, atalar.",
+          "source": "MEB, Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı, basılı s.116 (PDF s.117), Söz Varlığımız etkinliği: https://drive.google.com/file/d/1R9HjHIdHPpJv-ExcImtulSXLdC-c4LAb/view?usp=drivesdk"
+        },
+        {
+          "term": "yağız",
+          "meaning": "Esmer, kara.",
+          "source": "MEB, Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı, basılı s.116 (PDF s.117), Söz Varlığımız etkinliği: https://drive.google.com/file/d/1R9HjHIdHPpJv-ExcImtulSXLdC-c4LAb/view?usp=drivesdk"
+        },
+        {
+          "term": "kılmak",
+          "meaning": "Etmek, yapmak.",
+          "source": "MEB, Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı, basılı s.116 (PDF s.117), Söz Varlığımız etkinliği: https://drive.google.com/file/d/1R9HjHIdHPpJv-ExcImtulSXLdC-c4LAb/view?usp=drivesdk"
+        },
+        {
+          "term": "il",
+          "meaning": "Yurt.",
+          "source": "MEB, Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı, basılı s.116 (PDF s.117), Söz Varlığımız etkinliği: https://drive.google.com/file/d/1R9HjHIdHPpJv-ExcImtulSXLdC-c4LAb/view?usp=drivesdk"
+        },
+        {
+          "term": "töre",
+          "meaning": "Bir toplumda yerleşmiş davranış ve yaşama biçimi.",
+          "source": "MEB, Ortaöğretim Türk Dili ve Edebiyatı 11. Sınıf Ders Kitabı, basılı s.116 (PDF s.117), Söz Varlığımız etkinliği: https://drive.google.com/file/d/1R9HjHIdHPpJv-ExcImtulSXLdC-c4LAb/view?usp=drivesdk"
+        },
+        {
+          "term": "şad",
+          "meaning": "Köktürk yazıtlarında görülen yüksek rütbeli askerî-idarî unvan; kapsamı kaynaklarda tartışmalıdır.",
+          "source": "Türk Dili ve Edebiyatı Dergisi, 58(1) (2018), makale PDF: https://dergipark.org.tr/tr/download/issue-full-file/37563"
+        }
+      ]
     },
     {
       "question_id": "T2-P117-Q01",

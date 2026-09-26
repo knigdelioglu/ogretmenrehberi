@@ -242,6 +242,76 @@ button:focus-visible {
   box-shadow: var(--shadow);
 }
 
+.stage-layout {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.stage-layout--dictionary {
+  max-width: 1380px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 270px);
+  align-items: start;
+  gap: 20px;
+}
+
+.stage-layout--dictionary .stage-card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.dictionary-card {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  border: 1px solid rgb(49 94 84 / 0.18);
+  border-left: 4px solid var(--accent);
+  border-radius: 16px;
+  background: #f8f5ed;
+}
+
+.dictionary-card h2 {
+  margin: 0 0 16px;
+  color: var(--accent);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.dictionary-card__list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.dictionary-card__entry dt {
+  color: var(--ink);
+  font-weight: 780;
+}
+
+.dictionary-card__entry dd {
+  margin: 4px 0 0;
+  color: #48514d;
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.dictionary-card__entry .dictionary-card__source {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+@media (max-width: 1080px) {
+  .stage-layout--dictionary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dictionary-card {
+    position: static;
+  }
+}
+
 .stage-card__eyebrow {
   margin-bottom: 12px;
   color: var(--warm);
@@ -772,6 +842,11 @@ button:focus-visible {
 .presentation-mode .stage-meta {
   max-width: 1180px;
   font-size: 0.96rem;
+}
+
+.presentation-mode .stage-layout,
+.external-display .stage-layout {
+  max-width: 1180px;
 }
 
 .presentation-mode .lead,

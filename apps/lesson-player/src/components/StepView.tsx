@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { RevealPanel } from "./RevealPanel";
 import { StructuredSections } from "./StructuredSections";
 import { StepContentLayout } from "./StepContentLayout";
-import type { LessonStep, RevealKey } from "../types";
+import type { DictionaryTerm, LessonStep, RevealKey } from "../types";
 
 interface StepViewProps {
   step: LessonStep;
@@ -142,6 +142,51 @@ function VocabularyBody({
   );
 }
 
+function dictionaryTermsForStep(step: LessonStep): DictionaryTerm[] {
+  const answer = step.answer;
+  if (!answer) return [];
+
+  if (answer.dictionary_terms !== undefined) {
+    return answer.dictionary_terms;
+  }
+
+  if (step.layout !== "vocabulary" && step.source.task_type !== "VOCABULARY") {
+    return [];
+  }
+
+  const sections = answer.answer_sections;
+  if (!sections || Array.isArray(sections)) return [];
+
+  const terms: DictionaryTerm[] = [];
+  for (const [term, meaning] of Object.entries(sections)) {
+    if (!term.trim() || typeof meaning !== "string" || !meaning.trim()) {
+      return [];
+    }
+    terms.push({ term, meaning });
+  }
+
+  return terms;
+}
+
+function DictionaryCard({ terms }: { terms: DictionaryTerm[] }) {
+  if (!terms.length) return null;
+
+  return (
+    <aside className="dictionary-card" aria-labelledby="dictionary-card-title">
+      <h2 id="dictionary-card-title">Sözlük</h2>
+      <dl className="dictionary-card__list">
+        {terms.map(({ term, meaning, source }, index) => (
+          <div className="dictionary-card__entry" key={`${term}-${meaning}-${index}`}>
+            <dt>{term}</dt>
+            <dd>{meaning}</dd>
+            {source ? <dd className="dictionary-card__source">Kaynak: {source}</dd> : null}
+          </div>
+        ))}
+      </dl>
+    </aside>
+  );
+}
+
 export function StepView({
   step,
   revealed,
@@ -153,6 +198,7 @@ export function StepView({
   toggleVocabularyTerm
 }: StepViewProps) {
   const { answer, content, source } = step;
+  const dictionaryTerms = dictionaryTermsForStep(step);
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
   const answerVisible = Boolean(answer && revealed.has("answer") && !isVocabulary);
@@ -193,7 +239,14 @@ export function StepView({
         <span>{source.book_heading}</span>
       </div>
 
-      <section
+      <div
+        className={
+          dictionaryTerms.length
+            ? "stage-layout stage-layout--dictionary"
+            : "stage-layout"
+        }
+      >
+        <section
         className={[
           "stage-card",
           `density-${step.density}`,
@@ -201,7 +254,7 @@ export function StepView({
         ]
           .filter(Boolean)
           .join(" ")}
-      >
+        >
         {answer ? (
           <>
             <div className="stage-card__eyebrow">
@@ -366,7 +419,9 @@ export function StepView({
             </RevealPanel>
           </div>
         ) : null}
-      </section>
+        </section>
+        <DictionaryCard terms={dictionaryTerms} />
+      </div>
     </main>
   );
 }

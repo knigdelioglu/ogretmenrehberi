@@ -260,6 +260,27 @@ function buildLesson(flowPath) {
         fail(`Unknown answer_id in ${flow.lesson_id}: ${step.answer_id}`);
       }
 
+      if (answer.dictionary_terms !== undefined) {
+        if (!Array.isArray(answer.dictionary_terms)) {
+          fail(`dictionary_terms must be an array for ${answer.question_id}`);
+        }
+        for (const [index, item] of answer.dictionary_terms.entries()) {
+          if (
+            !item ||
+            typeof item.term !== "string" ||
+            !item.term.trim() ||
+            typeof item.meaning !== "string" ||
+            !item.meaning.trim() ||
+            (item.source !== undefined &&
+              (typeof item.source !== "string" || !item.source.trim()))
+          ) {
+            fail(
+              `Malformed dictionary_terms[${index}] for ${answer.question_id}`
+            );
+          }
+        }
+      }
+
       const questionNoMatch = /-Q(\d+)$/i.exec(answer.question_id);
       if (!answer.question_no && questionNoMatch) {
         answer = {

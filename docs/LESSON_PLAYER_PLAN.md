@@ -133,6 +133,16 @@ src/generated/lessons.json
 React Lesson Player
 ```
 
+Answer-bank kaydı isteğe bağlı bağlamsal sözlük terimleri taşıyabilir:
+
+```json
+"dictionary_terms": [
+  { "term": "kelime", "meaning": "bu bağlamdaki kısa anlam", "source": "TDK Güncel Türkçe Sözlük" }
+]
+```
+
+`source` isteğe bağlıdır. Üretici bu alanı doğrulayarak `AnswerEntry` modeline taşır. Terim varsa Ders Modu aynı adımda, içerik kartının en sağındaki **Sözlük** kartında terim ve anlamı görünür tutar; boş sözlük kartı oluşturmaz. Dar görünümde sözlük içerik kartının altına akar. Kart öğrenci/projeksiyon çıktısında da yer alır. Bu sunum, mevcut `vocabulary` layout'undaki aşamalı anlam açma akışını değiştirmez.
+
 ---
 
 ## 5. Lesson-flow sözleşmesi v0.1

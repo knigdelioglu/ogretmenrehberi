@@ -14,6 +14,12 @@ export type AnswerSections =
   | string[]
   | null;
 
+export interface DictionaryTerm {
+  term: string;
+  meaning: string;
+  source?: string;
+}
+
 export interface AnswerEntry {
   question_id: string;
   entry_type: "question_answer" | "performance_support" | "source_limited";
@@ -25,6 +31,7 @@ export interface AnswerEntry {
   explanation?: string;
   evidence_quotes?: string[];
   answer_sections?: AnswerSections;
+  dictionary_terms?: DictionaryTerm[];
   source_locator: string;
 }
 

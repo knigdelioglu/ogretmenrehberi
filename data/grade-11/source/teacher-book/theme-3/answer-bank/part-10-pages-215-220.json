@@ -87,9 +87,9 @@
       "entry_type": "source_limited",
       "printed_page": 217,
       "question_no": "Söz Varlığımız 1-2",
-      "prompt_summary": "Direniş, ihbar, torna, kafa yormak ve haber uçurmak ifadelerini bağlam içinde anlamlandırma",
-      "answer": "Bu etkinlikte beş kelime/ifade için önce ses kaydındaki bağlamdan tahmin, sonra karekodla TDK Güncel Türkçe Sözlük'ten doğrulama yapılmalıdır. Rehber, TDK sonucu görülmeden ‘TDK anlamı’ diye kesin tanım vermemelidir.",
-      "guidance": "‘Torna mutlaka silah/malzeme üretiminde kullanılıyor’, ‘ihbar düşmana bildiriliyor’ gibi bağlamı QR medya görülmeden doldurmayın. Öğrencinin gerçek cümleyi not etmesi anlam seçimini belirlemelidir.",
+      "prompt_summary": "Basılı kelime duvarındaki direniş, ihbar ve torna kelimelerinin anlamını tahmin etme ve karşılık önerme",
+      "answer": "Basılı s.217'deki üç kelime için genel sözlük anlamları aşağıdadır. Bunlar ses kaydındaki kullanımı tek başına belirlemez: öğrenci önce duyduğu cümleden bağlam anlamını tahmin etmeli, ardından sözlükle karşılaştırmalıdır. QR ses kaydı bu denetimde erişilemedi.",
+      "guidance": "Aşağıdaki anlamlar yalnızca kelimelerin sözlük anlamıdır. ‘Direnişin Ustaları’ kaydı dinlenmeden bunların metindeki anlamı veya ‘torna’nın hangi işlem/nesneyle ilgili kullanıldığı kesinleştirilmemelidir. Basılı kelime duvarında bulunmayan ‘kafa yormak’ ve ‘haber uçurmak’ bu kayda eklenmemiştir.",
       "source_locator": "basılı s.217-218 / PDF s.218-219 — Söz Varlığımız / QR medya gerekli",
       "answer_sections": {
         "direniş": {
@@ -106,18 +106,25 @@
           "baglam_tahmini": "[...]",
           "sozluk_dogrulamasi": "[...]",
           "alternatif": "[...]"
-        },
-        "kafa_yormak": {
-          "baglam_tahmini": "[...]",
-          "sozluk_dogrulamasi": "[...]",
-          "alternatif": "[...]"
-        },
-        "haber_uçurmak": {
-          "baglam_tahmini": "[...]",
-          "sozluk_dogrulamasi": "[...]",
-          "alternatif": "[...]"
         }
-      }
+      },
+      "dictionary_terms": [
+        {
+          "term": "direniş",
+          "meaning": "Karşı koyma, direnme.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/direni%C5%9F"
+        },
+        {
+          "term": "ihbar",
+          "meaning": "Bildirme, haber verme.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/ihbar"
+        },
+        {
+          "term": "torna",
+          "meaning": "İşlenecek parçayı döndürürken kesici bir araçla biçim vermeye yarayan makine.",
+          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/torna"
+        }
+      ]
     },
     {
       "question_id": "T3-P218-QH01",
