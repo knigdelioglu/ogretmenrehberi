@@ -216,7 +216,7 @@ internal fun PresentationLessonScreen(
                                         ?: step.displayPrompt,
                                     label = "presentation-prompt-answer"
                                 ) { text ->
-                                    Text(
+                                    GlossaryText(
                                         text = text,
                                         style = MaterialTheme.typography.headlineLarge,
                                         color = LessonColors.TextPrimary,
@@ -252,13 +252,13 @@ internal fun PresentationLessonScreen(
                                         verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                                     ) {
                                         projection.visibleVocabulary.forEach { (term, value) ->
-                                            Text(
+                                            GlossaryText(
                                                 text = term,
                                                 style = MaterialTheme.typography.titleMedium,
                                                 color = LessonColors.Primary,
                                                 fontWeight = FontWeight.Bold
                                             )
-                                            Text(
+                                            GlossaryText(
                                                 text = readableAnswerValue(value),
                                                 style = MaterialTheme.typography.bodyLarge,
                                                 color = LessonColors.TextPrimary
@@ -402,7 +402,7 @@ private fun PresentationRevealCard(
                 color = textColor,
                 fontWeight = FontWeight.Bold
             )
-            Text(
+            GlossaryText(
                 text = text,
                 style = MaterialTheme.typography.bodyLarge,
                 color = textColor
