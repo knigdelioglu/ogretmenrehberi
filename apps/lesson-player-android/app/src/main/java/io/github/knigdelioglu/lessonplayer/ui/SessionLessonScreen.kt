@@ -80,7 +80,7 @@ internal fun TeacherWorkspaceAnswer(
                 fontWeight = FontWeight.Bold
             )
             answer.answer?.takeIf { it.isNotBlank() }?.let { answerText ->
-                Text(
+                GlossaryText(
                     text = answerText,
                     style = MaterialTheme.typography.bodyLarge.copy(
                         fontSize = 16.sp,
@@ -242,7 +242,7 @@ internal fun SessionLessonScreen(
                                 )
                             }
 
-                            Text(
+                            GlossaryText(
                                 text = step.displayPrompt,
                                 style = MaterialTheme.typography.bodyLarge.copy(
                                     fontSize = 16.sp,
@@ -253,8 +253,8 @@ internal fun SessionLessonScreen(
                             )
 
                             step.content?.lead?.takeIf { it != step.displayPrompt }?.let {
-                                Text(
-                                    it,
+                                GlossaryText(
+                                    text = it,
                                     style = MaterialTheme.typography.bodyLarge,
                                     color = LessonColors.TextPrimary
                                 )
@@ -377,7 +377,13 @@ internal fun SessionLessonScreen(
                                                     RevealKey.EXPLANATION -> answer?.explanation
                                                     else -> null
                                                 }
-                                                text?.let { Text(it, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary) }
+                                                text?.let {
+                                                    GlossaryText(
+                                                        text = it,
+                                                        style = MaterialTheme.typography.bodyLarge,
+                                                        color = LessonColors.TextPrimary
+                                                    )
+                                                }
                                             }
                                         }
                                     }
@@ -418,7 +424,7 @@ internal fun SessionLessonScreen(
                                                     )
                                                 }
                                             }
-                                            Text(
+                                            GlossaryText(
                                                 text = teacherNote,
                                                 style = MaterialTheme.typography.bodyMedium,
                                                 color = LessonColors.NoteText
