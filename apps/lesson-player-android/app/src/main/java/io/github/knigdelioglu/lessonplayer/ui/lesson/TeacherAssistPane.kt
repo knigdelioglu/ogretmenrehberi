@@ -47,6 +47,7 @@ import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
+import io.github.knigdelioglu.lessonplayer.ui.GlossaryText
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -312,7 +313,7 @@ internal fun TeacherNoteCard(
                         .fillMaxWidth()
                         .padding(top = LessonSpacing.tiny)
                 ) {
-                    Text(
+                    GlossaryText(
                         text = note,
                         style = MaterialTheme.typography.bodyMedium,
                         color = LessonColors.NoteText
@@ -406,7 +407,7 @@ private fun SemanticAssistCard(
                     verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                 ) {
                     if (content != null) {
-                        Text(
+                        GlossaryText(
                             text = content,
                             style = MaterialTheme.typography.bodyMedium,
                             color = textColor
