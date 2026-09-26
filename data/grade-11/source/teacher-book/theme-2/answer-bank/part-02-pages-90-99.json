@@ -63,7 +63,7 @@
         "Yular": "At, eşek gibi binek hayvanlarını bir yere bağlamak ya da çekerek yönlendirmek için başlarına takılan ipli veya kayışlı başlık.",
         "Üzengi": "Eyerin iki yanında asılı duran, ata binerken basılan ve biniş sırasında ayakların dengede durmasını sağlayan demir basamak.",
         "Katar": "Metindeki bağlamında demiryolu üzerinde birbirine bağlanmış vagonlardan oluşan tren dizisi.",
-        "Kampana": "İstasyonlarda trenin hareket vaktini, gelişini veya tehlikeyi bildirmek amacıyla tokmakla çalınan pirinç/bronz çan.",
+        "Kampana": "İstasyonun çaldığı çan; bu metin bağlamında ayrılma zamanının geldiğini haber verir.",
         "Hat": "Metindeki 'onda, bütün hatlarıyla kendini gördü' cümlesinde; bir kimsenin yüzünü, simasını ve fiziki yapısını belirleyen karakteristik çizgiler.",
         "Toynak": "At, katır gibi tek tırnaklı memeli hayvanların ayak parmaklarını saran sert, boynuzsu tırnak tabakası."
       }
@@ -213,12 +213,12 @@
       "guidance": "Görseller çok katmanlı çağrışımlara açıktır. Öğrencilerin görseldeki nesne ve eylemleri Türk kültürünün ortak yaşam ve sanat unsurlarıyla tutarlı biçimde gerekçelendirmeleri yeterlidir.",
       "source_locator": "basılı s.99 / PDF s.100 — soru 2",
       "answer_sections": {
-        "1": "Atlı Bozkır Kültürü: Geleneksel giyim kuşam, alp-eren tipi, atlı yaşam ve bozkır coğrafyası.",
-        "2": "Dokuma ve Motif Sanatı: Geleneksel halı-kilim dokumacılığı, kök boya, geometrik motifler ve kültürel semboller.",
-        "3": "Mimari ve Çini/Taş Süsleme: Türk-İslam mimarisindeki tezyinat, geometrik selçuklu yıldızları, çini ve taş işçiliği.",
+        "1": "Atlı yaşam: Görselde geleneksel giysili atlılar görülür; atlı yaşam ve bozkır kültürüyle ilişki kurulabilir. Görsel tek başına kişileri 'alp-eren' gibi belirli bir tarihî kimlikle tanımlamaya yetmez.",
+        "2": "Dokuma ve motif: Görselde desenli bir dokuma/halı görülür. Motifin adı, kullanılan boya veya belirli bir kültürel sembol olduğu yalnız görüntüden kesinleştirilemez.",
+        "3": "Nakış ve bitkisel bezeme: Görselde çiçeksi/bitkisel bezemeli bir tekstil yüzeyi görülür. Bu görsel mimari, çini, taş işçiliği ya da Selçuklu yıldızı örneği olarak tanımlanamaz.",
         "4": "Konukseverlik ve Kahve Kültürü: İkram geleneği, dostluk, muhabbet, sofra adabı ve Türk kahvesi mirası.",
-        "5": "Yurt / Otağ Yaşamı: Keçe çadır, konargöçer Türk hayat tarzı, aile ve kabile dayanışması.",
-        "6": "Geleneksel Türk Okçuluğu: Kemankeşlik, ata sporu, mertlik, avcılık ve askerî disiplin kültürü."
+        "5": "Yurt/çadır yaşamı: Görselde yurtlar/çadırlar görülür; konargöçer yaşamla ilişki kurulabilir. Aile veya kabile dayanışması görüntüden tek başına çıkarılamaz.",
+        "6": "Okçuluk: Yay ve hedef okçuluk çağrışımı yapar; Türk dünyasının geleneksel okçuluk kültürüyle ilişki kurulabilir. Görsel tek başına avcılık, askerî disiplin ya da belirli bir ahlaki niteliği kanıtlamaz."
       }
     },
     {

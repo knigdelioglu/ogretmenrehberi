@@ -127,7 +127,7 @@
       "question_no": "9",
       "prompt_summary": "Metindeki öznel ve nesnel ifade örneklerini ayırma",
       "answer": "Kurmaca bir hikâyede “öznel–nesnel” ayrımı yapılırken gerçek dünyada doğrulanabilirlikten çok, anlatıcının bir bilgiyi metin dünyasında olgu gibi mi sunduğuna yoksa duygu, değerlendirme ve benzetme mi kattığına bakmak daha uygundur.",
-      "guidance": "“Nesnel = gerçek dünyada kesin doğrulanabilir” şeklinde anlatmayın; bunlar kurmaca metindeki anlatım biçimleridir. Öğrenci, cümlenin anlatıcı yorumu/duygusu içerip içermediğini açıklamalıdır.",
+      "guidance": "“Nesnel = gerçek dünyada kesin doğrulanabilir” şeklinde anlatmayın; bunlar kurmaca metindeki anlatım biçimleridir. Öğrenci, cümlenin anlatıcı yorumu/duygusu içerip içermediğini açıklamalıdır. Hangi ifadenin kendisini daha çok etkilediğine ilişkin seçimi öğrencinin kendisine bırakın; verilen örnek yalnızca modeldir.",
       "source_locator": "basılı s.101 / PDF s.102 — Metni Anlayalım soru 9",
       "answer_sections": {
         "Duygu / Değerlendirme İçeren İfadeler": [
@@ -140,7 +140,8 @@
           "“Ekim 1941’de, iş yerinde demir döverken...”",
           "“Birinci karısı on yıl önce ölmüştü ve onun ikinci karısıydı.”"
         ],
-        "Etkileyicilik Gerekçesi": "Benzetme ve değerlendirmeler Çordon'un kederini ve özlemini somutlaştırarak anlatımın duygusal etkisini artırır."
+        "Etkileyicilik Gerekçesi": "Benzetme ve değerlendirmeler Çordon'un kederini ve özlemini somutlaştırarak anlatımın duygusal etkisini artırır.",
+        "Örnek kişisel tepki (tek doğru değildir)": "Örneğin, “o köye gitmek arzusu önüne geçilmez bir yangın gibi büyüdü içinde” sözü daha etkileyici bulunabilir; çünkü özlemin giderek güçlenmesini somutlaştırır. Öğrencinin seçimi ve gerekçesi kendisine aittir."
       }
     },
     {
@@ -270,12 +271,14 @@
       "printed_page": 103,
       "question_no": "Dil Bilgisi 2",
       "prompt_summary": "Fiilleri öznesine göre çatı bakımından sınıflandırma",
-      "answer": "Cümlelerdeki fiillerin öznesine göre çatı özellikleri (etken, edilgen, dönüşlü, işteş):",
+      "answer": "Örneklerdeki çekimli fiiller ve çatı özelliği taşıyan fiilimsiler öznesine göre sınıflandırılmıştır:",
       "source_locator": "basılı s.103 / PDF s.104 — Sıra Sizde soru 2",
       "answer_sections": {
         "etken": [
+          "beğenmediğini (beğen- fiilinden türemiş, etkin çatılı sıfat-fiil)",
+          "açıp (etken çatılı zarf-fiil)",
           "yalvarır (özne 'anam' gerçek ve etken)",
-          "tükenmez (özne 'Oğuz beyleri' gerçek)",
+          "tükenmez (özne 'Oğuz beyleri' cümlede işi/oluşu yüklenen öznedir; -n- ile bitmesi tek başına edilgenlik göstermez)",
           "geldiler (özne 'onlar' gerçek)",
           "aldılar (özne 'onlar' gerçek)",
           "kodular (özne 'onlar' gerçek)",
@@ -284,15 +287,17 @@
         "edilgen": [
           "döğüldü (eylemi yapan bilinmiyor, -l- çatı eki var, 'nakkareler' sözde özne)",
           "çalındı (eylemi yapan bilinmiyor, -n- çatı eki var, 'borular' sözde özne)",
+          "sayılmakla (edilgen çatılı isim-fiil; sayma işini yapan belirtilmemiş)",
           "kurulmuştu (eylemi yapan bilinmiyor, -l- eki var, 'badyalar' sözde özne)",
           "dizilmişti (eylemi yapan bilinmiyor, -l- eki var, 'sürahiler' sözde özne)",
-          "beğenilen (fiilimside edilgenlik: başkası tarafından beğenilme)"
+          "beğenilen (edilgen çatılı sıfat-fiil: başkası tarafından beğenilme)"
         ],
         "donuslu": [
           "övünüyorum (eylemi yapan da eylemden etkilenen de 'ben'dir; -n- dönüşlülük eki vardır)"
         ],
         "istes": [
           "kapışırlar (eylem birden fazla özne tarafından birlikte yapılmaktadır, -ş- eki vardır)",
+          "buluşmak (karşılıklı gerçekleşen işteş çatılı isim-fiil)",
           "sözleşmiştik (eylem karşılıklı olarak yapılmıştır, -ş- eki vardır)"
         ]
       }
@@ -341,7 +346,7 @@
       "source_locator": "basılı s.104 / PDF s.105 — Sıra Sizde soru 4",
       "answer_sections": {
         "Nokta (.)": "Yargısı ve anlamı tamamlanmış kurallı cümlelerin sonuna konmuştur ('...kadın da hiç üstelemezdi.', '...kararını kabul etmek zorunda kalmıştı.').",
-        "Virgül (,)": "Sıralı cümleleri birbirinden ayırmak ('Dönüşünde onlarla ilgili pek az şey anlatır, kadın da hiç üstelemezdi.') ve peş peşe gelen eş görevli kelime gruplarını bağlamak için kullanılmıştır.",
+        "Virgül (,)": "Sıralı cümleleri ayırır ('Dönüşünde onlarla ilgili pek az şey anlatır, kadın da hiç üstelemezdi.'; 'Varsın gitsin, yüreğini biraz rahatlatır, üzüntüsünün hafiflediğini hisseder...'). Ayrıca birbirini açıklayan/yeniden adlandıran yargıları ayırır ('Belki hasret hastasıdır, bir özlem acısıdır bu.').",
         "İki Nokta (:)": "Kendisinden sonra doğrudan alıntı veya iç konuşma cümlesi geleceğini bildirmek için konmuştur ('...ve şu sonuca vardı:').",
         "Tırnak İşareti (\" \")": "Kahramanın zihninden geçen iç konuşmayı ve doğrudan aktarılan sözü metin içinde belirtmek için kullanılmıştır ('\"Belki hasret hastasıdır...\"').",
         "Üç Nokta (...)": "Cümlenin duygu ve anlam bakımından bitmediğini, hissiyatın devam ettiğini belirtmek için tırnak içindeki cümlenin sonuna konmuştur ('...üzüntüsünün hafiflediğini hisseder...\"')."

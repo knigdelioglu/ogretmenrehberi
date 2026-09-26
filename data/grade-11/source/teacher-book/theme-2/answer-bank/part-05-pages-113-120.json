@@ -136,9 +136,9 @@
         "yağız": "Esmer, kara. (Metinde: 'Üstte mavi gök, altta yağız yer kılındıkta...' — kara toprak/yeryüzü anlamında).",
         "kılmak": "Etmek, yapmak. (Metinde: '...ikisi arasında insan oğlu kılınmış.' — yaratılmak, var edilmek).",
         "töre": "Bir toplumda yerleşmiş davranış ve yaşama biçimi. (Metinde: '...ilini töresini tutu vermiş, düzenleyi vermiş.')",
-        "şad": "Ders kitabı sayfasında karşılık gelen tanım kutusu bulunmuyor. (Tarihî bir unvan olarak Göktürklerde hanedan mensubu yüksek rütbeli askerî valilere ve ordu komutanlarına verilen unvandır)."
+        "şad": "Bu sayfada 'şad' için eşleştirilecek bir tanım kutusu bulunmuyor; kitap içindeki malzemeden bu kelimeye ayrıca tanım verilemiyor."
       },
-      "guidance": "Kitapta yer alan beş eşleştirme değerlendirmede esas alınır. 'Şad' teriminin tarihî anlamı öğretilmek istenirse bunun ders kitabındaki bir kutudan değil, genel tarihî sözlük bilgisinden geldiği belirtilmelidir."
+      "guidance": "Kitapta yer alan beş eşleştirme değerlendirmede esas alınır. 'Şad' için QR/sözlük içeriği görülmeden dış kaynak tanımı eklenmemelidir."
     },
     {
       "question_id": "T2-P117-Q01",
@@ -146,12 +146,20 @@
       "printed_page": 117,
       "question_no": "1",
       "prompt_summary": "Bilge Kağan'ın abide aracılığıyla ulaşmak istediği amaç",
-      "answer": "Bilge Kağan, Kül Tigin Âbidesi aracılığıyla milletine seslenirken çok yönlü bir devlet ve toplum gayesi gütmüştür:\n1. Millî Şuuru ve Birlik Bilincini Güçlendirmek: Türk boylarının kendi iç çekişmelerine ve Çin'in bölücü propagandalarına kapılmasını önlemek, milleti tek bir bayrak ve kağan etrafında kenetlemek.\n2. Hesap Vermek ve Meşruiyeti Pekiştirmek: Kendisinin ve kardeşi Kül Tigin'in gece uyumadan, gündüz oturmadan millet için çalıştığını; açları doyurup çıplakları giydirdiğini belirterek halkına karşı kağanlık sorumluluğunu yerine getirdiğini ilan etmek.\n3. Tarihî Tecrübeyi Ebedî Ders Hâline Getirmek: Geçmişte yapılan hataları, esaretin acılarını ve bağımsızlığın kıymetini taş üzerine kazıyarak gelecek kuşakların aynı felaketlere uğramasını engellemek.\n4. Kül Tigin'in Kahramanlığını Yaşatmak: Canını devlete siper eden kardeşinin aziz hatırasını ölümsüzleştirmek.",
+      "answer": "Metindeki sesleniş ve anlatılanlar temel alınarak Bilge Kağan'ın olası amaçları şöyle açıklanabilir:",
       "evidence_quotes": [
         "Bu sözümü iyice işit, adamakıllı dinle",
-        "Ona bakarak bilin."
+        "Her ne sözüm varsa ebedî taşa vurdum."
       ],
-      "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 1"
+      "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 1",
+      "answer_sections": {
+        "Muhataba seslenme": "Bilge Kağan Türk milleti ve beylerine doğrudan seslenir; sözlerinin dinlenmesini ve üzerinde düşünülmesini ister.",
+        "Tarih ve yönetim deneyimini aktarma": "Geçmişte yaşananları, devletin durumunu, seferleri ve kendisiyle Kül Tigin'in millete hizmetini anlatarak tarihî deneyimi kayda geçirir.",
+        "Öğüt verme": "Geçmiş anlatısından ve Ötüken, il ve töre hakkındaki sözlerinden hareketle milleti ve beyleri düşünmeye ve düzeni korumaya yöneltir.",
+        "Sözü kalıcılaştırma": "“Her ne sözüm varsa ebedî taşa vurdum.” ifadesi, söylediklerini kalıcı bir yazıtla gelecek kuşaklara ulaştırma amacını açıkça belirtir.",
+        "Kül Tigin'i anma": "Metin Kül Tigin'in yaptıklarını, ölümünü ve yasını anlatarak onun hatırasını yaşatır."
+      },
+      "guidance": "Bunlar metindeki söz ve olaylardan çıkarılan olası amaçlardır; “hesap verme”, propaganda veya modern siyasi hedefler gibi etiketleri metin açıkça kurmadıkça kesin bilgi olarak eklemeyin."
     },
     {
       "question_id": "T2-P117-Q02",
@@ -176,11 +184,11 @@
       "source_locator": "basılı s.114-117 / PDF s.115-118 — Anlam Oluşturabilme soru 3",
       "answer_sections": {
         "Metindeki öğüt ve dayanak": [
-          "Yazıt, Türk milleti ve beylerine seslenerek sözlerini dinlemelerini ister; geçmişte Çin'in tatlı sözüne ve yumuşak ipeğine aldanıp uzaklaşmalarını bir uyarı örneği olarak anlatır.",
-          "Boyların ve beylerin çekişmesinin ardından düzenin bozulduğunu aktarır; birlik ve düzen ihtiyacını bu tarih anlatısı üzerinden vurgular.",
-          "Ötüken'in il tutmaya elverişli olduğunu söyler ve yöneticinin milleti doyurup giydirmesinden, töreyi düzenlemesinden söz eder."
+          "Yazıt, Türk milleti ve beylerine doğrudan seslenip sözlerini dikkatle dinlemelerini ister.",
+          "Geçmiş kağanları, il ve töre düzenini, Ötüken'i ve Bilge Kağan ile Kül Tigin'in millete yönelik çalışmalarını anlatır.",
+          "Sözü taşa kazıyarak kalıcı kılmayı ve Kül Tigin'in yaptıklarını anmayı da metnin amaçları arasında gösterir."
         ],
-        "Günümüzle gerekçeli bağlantı": "Öğrenci bu öğütlerden hareketle bugün için farklı örnekler seçebilir: yanıltıcı vaatleri sorgulama, toplumsal iş birliği, yöneticilerin sorumlulukları veya yaşanılan çevrenin önemi gibi. Her bağlantı benzetme/yorum olarak sunulmalı; tarihî metnin doğrudan modern hukuk, refah devleti ya da jeopolitik çıkar kavramlarından söz ettiği ileri sürülmemelidir. Öğüdün tarihî bağlamı ile bugünkü koşulların aynı olmadığı da gözetilmelidir."
+        "Günümüzle gerekçeli bağlantı": "Öğrenci bu sözlerden hareketle bugün için kendi örneğini seçebilir; örneğin geçmiş deneyimden öğrenme, toplumsal sorumluluk veya ortak düzen üzerine düşünebilir. Bu, öğrencinin gerekçeli güncel yorumudur; tarihî metnin doğrudan modern hukuk, refah devleti ya da jeopolitik kavramlardan söz ettiği ileri sürülmemelidir. Öğüdün tarihî bağlamı ile bugünkü koşulların aynı olmadığı gözetilmelidir."
       }
     },
     {
