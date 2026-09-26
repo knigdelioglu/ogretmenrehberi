@@ -20,7 +20,14 @@
       "question_no": "2",
       "source_locator": "basılı s.304 / PDF s.305 — Soru 2 / doğru seçenek A",
       "prompt_summary": "Küçürek öykü parçasındaki sentezleyici cümlenin tiyatro metninde nasıl karşılık bulduğunu açıklama",
-      "answer": "Cevap A’dır. I. metin, modern Türk tiyatrosunun geleneksel biçimlerle Batı tiyatrosunun yaklaşımını buluşturduğunu genel olarak açıklar. II. metin, özellikle 1960’larda açık biçim ve episodik yapı üzerinden bu birleşmenin tiyatrodaki görünüşlerini örneklendirir; açıklamayla çelişmez veya onu çürütmez.",
+      "answer": "Doğru seçenek: A.",
+      "answer_sections": {
+        "Gerekçe": [
+          "I. metin, modern Türk tiyatrosunun geleneksel biçimlerle Batı tiyatrosunu buluşturduğunu genel olarak açıklar.",
+          "II. metin, özellikle 1960’larda açık biçim ve episodik yapıyla bu buluşmanın tiyatrodaki görünüşlerini örneklendirir.",
+          "Bu nedenle II. metin, I. metinle çelişmez; onu somut örneklerle destekler."
+        ]
+      },
       "evidence_quotes": [
         "episodik bir yapı"
       ]
@@ -32,7 +39,15 @@
       "question_no": "3",
       "source_locator": "basılı s.304 / PDF s.305 — Soru 3",
       "prompt_summary": "Küçürek hikâyenin modern yaşamdan beslendiğine ilişkin çıkarılamayan yargıyı seçme",
-      "answer": "Cevap A’dır. Parçada küçürek hikâyenin modern insanın parçalanmışlığı, yalnızlığı, zaman ve mekân darlığı gibi durumlardan beslendiği ve anlatımın kısalıp özleştiği belirtilir. Yazarların bu durumları “büyük bir titizlikle” işlediği ise parçada söylenmez. Diğer seçenekler metindeki belirtilen neden ve özellikleri yeniden ifade eder."
+      "answer": "Doğru seçenek: A.",
+      "answer_sections": {
+        "Gerekçe": [
+          "Parça, küçürek hikâyenin modern insanın parçalanmışlığı ve yalnızlığı ile zaman ve mekân darlığından beslendiğini belirtir.",
+          "Anlatımın kısalıp özleşmesi metinde verilen özelliklerdendir.",
+          "Yazarların bu durumları “büyük bir titizlikle” işlediği söylenmez; bu nedenle A seçeneği parçadan çıkarılamaz.",
+          "Diğer seçenekler metindeki neden ve özellikleri yeniden ifade eder."
+        ]
+      }
     },
     {
       "question_id": "T4-P304-Q04",
@@ -91,7 +106,18 @@
       "question_no": "8",
       "source_locator": "basılı s.306 / PDF s.307 — Soru 8",
       "prompt_summary": "İki oyun parçasından kesin çıkarılamayan tiyatro terimlerini seçme",
-      "answer": "Cevap B’dir (II ve III: diyalog ve monolog). Verilen parçalarda dekor açıkça betimlenir; parantez içindeki hareket ve yüz ifadelerinden jest-mimik çıkarılabilir, karakterler arasındaki huzursuzluk da çatışma hakkında ipucu verir. Ancak parçalarda konuşma replikleri veya tek kişinin kendi kendine konuşması yer almadığından diyalog ve monolog örneği gösterilemez."
+      "answer": "Doğru seçenek: B (II ve III).",
+      "answer_sections": {
+        "Kesitlerden çıkarılabilenler": [
+          "Dekor açıkça betimlenir.",
+          "Parantez içindeki hareket ve yüz ifadelerinden jest-mimik çıkarılabilir.",
+          "Karakterler arasındaki huzursuzluk çatışmaya ilişkin ipucu verir."
+        ],
+        "Kesitlerden çıkarılamayanlar": [
+          "II. Diyalog: Parçalarda konuşma replikleri yoktur.",
+          "III. Monolog: Bir kişinin kendi kendine konuşması yer almaz."
+        ]
+      }
     },
     {
       "question_id": "T4-P306-Q09",
@@ -100,7 +126,16 @@
       "question_no": "9",
       "source_locator": "basılı s.306-307 / PDF s.307-308 — Soru 9",
       "prompt_summary": "Belgesel film yapımının zaman içindeki değişiminde belirtilmeyen etkeni bulma",
-      "answer": "Cevap A’dır. Metin; izleyiciye ulaşma araçlarının, kamera ve ses teknolojisinin, kurgu yöntemlerinin ve teknolojiyle sinema sanatının etkileşiminin değişim yarattığını söyler. Estetik anlayışın “tamamen” değiştiği yönünde bir bilgi vermez."
+      "answer": "Doğru seçenek: A.",
+      "answer_sections": {
+        "Metinde değiştiği belirtilen etkenler": [
+          "İzleyiciye ulaşma araçları",
+          "Kamera ve ses teknolojisi",
+          "Kurgu yöntemleri",
+          "Teknoloji ile sinema sanatının etkileşimi"
+        ],
+        "A seçeneği": "Estetik anlayışın “tamamen” değiştiği metinde söylenmez."
+      }
     },
     {
       "question_id": "T4-P307-Q10",
@@ -109,7 +144,11 @@
       "question_no": "10",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 10",
       "prompt_summary": "Belgesel filmin toplumsal bellek üzerindeki etkisine uygun benzetmeyi seçme",
-      "answer": "Cevap B’dir. Metin belgeselin kültür taşıyıcısı ve toplumsal belleğe katkı sunan bir anlatım türü olduğunu belirtir. Geçmişe ilişkin belgeleri koruyan arşiv benzetmesi, bu saklama ve hatırlatma işlevine en yakındır."
+      "answer": "Doğru seçenek: B.",
+      "answer_sections": {
+        "Metindeki dayanak": "Belgesel, kültür taşıyıcısı ve toplumsal belleğe katkı sunan bir anlatım türü olarak tanımlanır.",
+        "B seçeneği": "Arşiv, geçmişe ilişkin belgeleri saklayıp hatırlamaya yardım eder; bu işlev metindeki düşünceyle örtüşür."
+      }
     },
     {
       "question_id": "T4-P307-Q11",
@@ -118,7 +157,16 @@
       "question_no": "11",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 11",
       "prompt_summary": "Belgesel izleme mecralarının sayısal değişiminden çıkarım yapma",
-      "answer": "Cevap B’dir. Verilerde televizyondan izleme oranı 2005’ten 2025’e azalırken internet platformlarının oranı artar; bilgisayar kullanım oranı da yıllara göre değişir. Bu nedenle tablonun desteklediği çıkarım, teknolojinin belgesel izleme biçimlerinin dağılımını değiştirdiğidir. Veriler, yaş grupları veya izleme kalitesi hakkında sonuç vermez."
+      "answer": "Doğru seçenek: B.",
+      "answer_sections": {
+        "Tablodaki değişim": [
+          "2005’ten 2025’e televizyondan izleme oranı azalır.",
+          "Aynı dönemde internet platformlarından izleme oranı artar.",
+          "Bilgisayar üzerinden izleme oranı da yıllara göre değişir."
+        ],
+        "Desteklenen sonuç": "Teknolojik gelişmeler belgesel izleme mecralarının dağılımını değiştirir.",
+        "Tablonun göstermediği": "Yaş grupları veya izleme kalitesi hakkında sonuç çıkarılamaz."
+      }
     },
     {
       "question_id": "T4-P307-Q12",

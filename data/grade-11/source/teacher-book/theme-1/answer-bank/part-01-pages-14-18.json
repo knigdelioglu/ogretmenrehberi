@@ -22,7 +22,14 @@
       "printed_page": 14,
       "question_no": "2",
       "prompt_summary": "Edebî dil ve sosyal bilimlerin iletişime katkısı",
-      "answer": "Edebî eserler dili etkili kullanma, duygu ve düşünceleri farklı biçimlerde ifade etme, söz varlığını geliştirme ve başkasının bakış açısını anlama becerisini güçlendirir. Tarih, sosyoloji ve psikoloji gibi alanlar da insanı ve toplumu farklı yönleriyle tanımaya yardım eder; bu da daha bilinçli iletişim kurmayı sağlar.",
+      "answer": "Edebî dil ve sosyal bilimler, insanı ve toplumu daha iyi anlamayı sağlayarak iletişim becerisini geliştirir.",
+      "answer_sections": {
+        "Edebiyatın katkısı": [
+          "Dili etkili kullanmayı ve duygu-düşünceleri farklı biçimlerde ifade etmeyi destekler.",
+          "Söz varlığını geliştirir ve başkasının bakış açısını anlamaya yardımcı olur."
+        ],
+        "Sosyal bilimlerin katkısı": "Tarih, sosyoloji ve psikoloji insanı ve toplumu farklı yönleriyle tanımaya yardım eder; bu da daha bilinçli iletişim kurmayı sağlar."
+      },
       "guidance": "Öğrenci zorlanırsa edebiyatın insanı, toplumu ve dili hangi yönlerden daha iyi tanıttığı sorulabilir.",
       "source_locator": "basılı s.14 / PDF s.15"
     },
@@ -32,7 +39,13 @@
       "printed_page": 15,
       "question_no": "1",
       "prompt_summary": "Seyirlik halk oyunlarında dikkat çeken unsurlar",
-      "answer": "Metinde bu oyunların gösteri niteliği taşıması, taklide dayanması ve doğaçlamaya geniş yer vermesi dikkat çekmektedir. Özellikle farklı tiplerin konuşma biçimlerinin, şivelerinin ve karakter özelliklerinin canlandırılması geleneksel seyirlik oyunların belirgin özelliklerindendir.",
+      "answer": "Metin ve görsellerde öne çıkan seyirlik unsurlar şunlardır:",
+      "answer_sections": [
+        "Oyunlar gösteri niteliği taşır.",
+        "Taklide dayanır.",
+        "Doğaçlamaya geniş yer verilir.",
+        "Farklı tipler konuşma biçimleri, şiveleri ve karakter özellikleriyle canlandırılır."
+      ],
       "evidence_quotes": [
         "taklit, bu oyunların en önemli ögelerinden biridir"
       ],
@@ -44,7 +57,15 @@
       "printed_page": 15,
       "question_no": "2",
       "prompt_summary": "Günlük hayatın tiyatroya yansıması",
-      "answer": "Günlük hayat tiyatroya insanların davranışları, konuşma biçimleri, sosyal ilişkileri, meslekleri ve yaşadıkları çatışmalar aracılığıyla yansır. Geleneksel Türk tiyatrosunda farklı toplum kesimlerinden tiplerin şiveleri ve karakter özellikleriyle sahneye taşınması bunun açık bir örneğidir.",
+      "answer": "Günlük hayat tiyatroya farklı insan ve ilişki özellikleriyle yansır.",
+      "answer_sections": {
+        "Tiyatroya yansıyanlar": [
+          "İnsanların davranışları ve konuşma biçimleri",
+          "Sosyal ilişkiler ve meslekler",
+          "Yaşanan çatışmalar"
+        ],
+        "Geleneksel Türk tiyatrosundan örnek": "Farklı toplum kesimlerinden tiplerin şiveleri ve karakter özellikleriyle sahneye taşınması."
+      },
       "guidance": "Günlük hayattaki insan tipleri, konuşma biçimleri ve yanlış anlamalar üzerinden düşündürülebilir.",
       "source_locator": "basılı s.15 / PDF s.16"
     },
@@ -67,7 +88,21 @@
       "printed_page": 15,
       "question_no": "4",
       "prompt_summary": "Günümüzde benzer işlevleri üstlenen sanatlar",
-      "answer": "Günümüzde geleneksel seyirlik oyunların eğlendirme, toplumsal gözlem ve mizah işlevlerinin bir bölümü tiyatro, sinema, televizyon komedileri, stand-up ve doğaçlama tiyatro gösterileri tarafından sürdürülmektedir. Bununla birlikte Karagöz, meddahlık ve orta oyunu kültürel etkinliklerde yaşamaya devam etmektedir.",
+      "answer": "Geleneksel seyirlik oyunların bazı işlevleri güncel sanatlarda sürerken geleneksel türler de kültürel etkinliklerde yaşamaktadır.",
+      "answer_sections": {
+        "Benzer işlevleri sürdüren güncel sanatlar": [
+          "Tiyatro",
+          "Sinema",
+          "Televizyon komedileri",
+          "Stand-up",
+          "Doğaçlama tiyatro gösterileri"
+        ],
+        "Kültürel etkinliklerde yaşamayı sürdüren geleneksel türler": [
+          "Karagöz",
+          "Meddahlık",
+          "Orta oyunu"
+        ]
+      },
       "guidance": "Öğrenci yalnızca sinema veya televizyon diyorsa canlı gösteri, mizah ve doğaçlama özellikleri de düşündürülebilir.",
       "explanation": "Soruyu geleneksel türlerin bütünüyle ortadan kalktığı şeklinde yorumlamamak gerekir.",
       "source_locator": "basılı s.15 / PDF s.16"
@@ -87,7 +122,12 @@
       "printed_page": 16,
       "question_no": "2",
       "prompt_summary": "Fiziksel özelliklerden kişilik tahmini",
-      "answer": "Beberuhi'nin abartılı görünüşü hareketli ve komik bir tip olabileceğini; Çelebi'nin özenli giyimi şehirli, varlıklı ve görgülü bir kişi olabileceğini; Zenne'nin süslü kıyafetleri ise görünüşüne önem veren bir kadın tipini temsil ettiğini düşündürebilir. Bunlar görsele dayalı ilk tahminlerdir.",
+      "answer": "Görsel ipuçlarına dayalı kişilik tahminleri tiplere göre şöyle ayrılabilir:",
+      "answer_sections": {
+        "Beberuhi": "Abartılı görünüşü, hareketli ve komik bir tip olabileceğini düşündürür.",
+        "Çelebi": "Özenli giyimi, şehirli, varlıklı ve görgülü bir kişi olabileceğini düşündürür.",
+        "Zenne": "Süslü kıyafetleri, görünüşüne önem veren bir kadın tipini çağrıştırır."
+      },
       "guidance": "Gerekçeli farklı tahminler de kabul edilebilir.",
       "source_locator": "basılı s.16 / PDF s.17"
     },
@@ -97,7 +137,18 @@
       "printed_page": 16,
       "question_no": "3",
       "prompt_summary": "Tiplerin dili farklı kullanma nedenleri",
-      "answer": "Eğitim düzeyi, sosyal statü, meslek, yetişilen çevre, bölge ve kültürel birikim konuşma biçimini farklılaştırabilir. Karagöz oyununda bu farklılıklar tipleri ayırmak, toplumdaki çeşitliliği göstermek ve yanlış anlamalar üzerinden mizah oluşturmak için belirginleştirilir.",
+      "answer": "Tiplerin konuşma biçimlerini farklılaştırabilecek etkenler ve bunların oyundaki işlevi şöyledir:",
+      "answer_sections": {
+        "Konuşma biçimini etkileyebilecek etkenler": [
+          "Eğitim düzeyi",
+          "Sosyal statü",
+          "Meslek",
+          "Yetişilen çevre",
+          "Bölge",
+          "Kültürel birikim"
+        ],
+        "Karagöz oyunundaki işlevi": "Bu farklılıklar tipleri ayırır, toplumdaki çeşitliliği gösterir ve yanlış anlamalar üzerinden mizah oluşturur."
+      },
       "guidance": "Eğitim, bölge, meslek ve sosyal çevrenin konuşmayı nasıl etkilediği sorulabilir.",
       "source_locator": "basılı s.16 / PDF s.17"
     },
@@ -116,7 +167,18 @@
       "printed_page": 17,
       "question_no": "2",
       "prompt_summary": "Dönemin dilini yansıtan kelime ve ifadeler",
-      "answer": "Metinde 'cânân', 'meh-i tâbân', 'esbâb-ı mûcibe', 'mâ-nahnü-fîh', 'gonce-dehân' ve 'iskân-ı beyt' gibi bugün günlük dilde az kullanılan kelime ve tamlamalar dönemin dil özelliklerini yansıtır. Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark da sosyal dil çeşitliliğini gösterir.",
+      "answer": "Metindeki eski kelime ve tamlamalar dönemin dilini; tiplerin farklı söyleyişleri ise sosyal dil çeşitliliğini gösterir.",
+      "answer_sections": {
+        "Dönemin dilini yansıtan kelime ve tamlamalar": [
+          "cânân",
+          "meh-i tâbân",
+          "esbâb-ı mûcibe",
+          "mâ-nahnü-fîh",
+          "gonce-dehân",
+          "iskân-ı beyt"
+        ],
+        "Sosyal dil çeşitliliği": "Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark."
+      },
       "evidence_quotes": [
         "cânân",
         "meh-i tâbân",

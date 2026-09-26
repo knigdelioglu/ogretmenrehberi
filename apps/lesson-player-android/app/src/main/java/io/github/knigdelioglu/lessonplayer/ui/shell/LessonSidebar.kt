@@ -55,7 +55,6 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 fun LessonV2Sidebar(
     currentScreen: AppScreen,
     onNavigate: (AppScreen) -> Unit,
-    onSearch: () -> Unit,
     onReturnToCurrent: () -> Unit,
     session: LessonSession?,
     lesson: LessonData?,
@@ -153,12 +152,6 @@ fun LessonV2Sidebar(
                 }
             }
 
-            Spacer(modifier = Modifier.height(LessonSpacing.small))
-            SidebarQuickAction(
-                label = "Arama",
-                tag = "quick-access-search",
-                onClick = onSearch
-            )
             if (session != null && currentScreen != AppScreen.LESSON) {
                 Spacer(modifier = Modifier.height(LessonSpacing.tiny))
                 SidebarQuickAction(

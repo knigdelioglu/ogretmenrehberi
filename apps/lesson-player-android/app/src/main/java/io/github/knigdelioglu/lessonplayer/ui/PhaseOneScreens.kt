@@ -42,8 +42,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.focus.FocusRequester
-import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
@@ -87,16 +85,14 @@ internal fun PhaseOneScreen(
     beginExport: (String) -> Unit,
     beginImport: (String) -> Unit,
     openLessonOutline: (() -> Unit)? = null,
-    openTeacherAssist: (() -> Unit)? = null,
-    librarySearchFocusRequest: Int = 0
+    openTeacherAssist: (() -> Unit)? = null
 ) {
     when (screen) {
         AppScreen.LIBRARY -> LibraryScreen(
             bundle,
             session,
             selectLesson,
-            navigateToCurrent,
-            librarySearchFocusRequest
+            navigateToCurrent
         )
         AppScreen.LESSON -> SessionLessonScreen(
             lesson = bundle.byId.getValue(session.lessonId),
@@ -335,11 +331,9 @@ internal fun LibraryScreen(
     bundle: LessonBundle,
     session: LessonSession,
     selectLesson: (String) -> Unit,
-    navigateToCurrent: () -> Unit,
-    searchFocusRequest: Int = 0
+    navigateToCurrent: () -> Unit
 ) {
     var searchQuery by rememberSaveable { mutableStateOf("") }
-    val searchFieldFocusRequester = remember { FocusRequester() }
     var selectedLessonId by rememberSaveable(session.lessonId) {
         mutableStateOf(session.lessonId)
     }
@@ -361,12 +355,6 @@ internal fun LibraryScreen(
         ?: bundle.byId.getValue(session.lessonId)
     val focusManager = LocalFocusManager.current
     val keyboardController = LocalSoftwareKeyboardController.current
-    LaunchedEffect(searchFocusRequest) {
-        if (searchFocusRequest > 0) {
-            searchFieldFocusRequester.requestFocus()
-            keyboardController?.show()
-        }
-    }
     BoxWithConstraints(
         modifier = Modifier.fillMaxSize().testTag("library-screen-surface")
             .pointerInput(focusManager, keyboardController) {
@@ -388,9 +376,7 @@ internal fun LibraryScreen(
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = { searchQuery = it },
-                        modifier = Modifier.fillMaxWidth()
-                            .focusRequester(searchFieldFocusRequester)
-                            .testTag("library-search-field"),
+                        modifier = Modifier.fillMaxWidth().testTag("library-search-field"),
                         label = { Text("Ders ara") },
                         supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
                         singleLine = true
@@ -458,9 +444,7 @@ internal fun LibraryScreen(
                     OutlinedTextField(
                         value = searchQuery,
                         onValueChange = { searchQuery = it },
-                        modifier = Modifier.fillMaxWidth()
-                            .focusRequester(searchFieldFocusRequester)
-                            .testTag("library-search-field"),
+                        modifier = Modifier.fillMaxWidth().testTag("library-search-field"),
                         label = { Text("Ders ara") },
                         supportingText = { Text("Başlık, tema, sayfa veya ders kodu") },
                         singleLine = true

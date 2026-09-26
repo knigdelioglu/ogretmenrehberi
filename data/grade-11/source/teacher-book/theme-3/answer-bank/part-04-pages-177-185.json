@@ -37,7 +37,7 @@
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Karşılaştırma, eldeki doğrulanmış PDF’de basılı s.177/PDF s.178’de Mescid-i Aksa görseli yer alıp şiir metni bulunmadığı, basılı s.178/PDF s.179’da ise karşılaştırma tablosunun boş olduğu için tamamlanamıyor. Huzur sütununda önceki sayfalarda gerçekten okunan kesitten kanıt kullanılabilir. Mescid-i Aksa metninin içeriği, türü, şekli, dönemi, zihniyeti, üslubu ve iletisi şiirin kendisi görülmeden doğrulanamaz.",
+      "answer": "Mescid-i Aksa şiirinin metni kaynakta bulunmadığından karşılaştırmanın bu bölümü doğrulanamaz; tablo Huzur kesitiyle sınırlı doldurulabilir.",
       "source_locator": "basılı s.177-178 / PDF s.178-179 — “Mescid-i Aksa” şiiri (altı dörtlük) ve Karşılaştıralım tablosu",
       "answer_sections": {
         "Huzur": "Okunmuş kesitten İstanbul, Boğaz, tarihî çevre ve musikiyle ilgili doğrudan ifadeler seçilebilir; çıkarımlar bu kesitle sınırlandırılmalıdır.",
@@ -63,7 +63,7 @@
       "printed_page": 178,
       "question_no": "Okuma Çemberi 1-2",
       "prompt_summary": "Huzur için okuma çemberi rollerinin uygulanması",
-      "answer": "Ders kitabının 178. sayfasında dört temel rol (Bağ Kurucu, Ressam, Okuma Aydınlatıcısı, Sorgulayıcı) ve 179. sayfasında beş seçimlik rol (Özetleyici, Tahmin Edici, Kelime Avcısı, Hareket İzcisi, Karakter Çözümleyici) olmak üzere toplam 9 okuma çemberi rolü tanımlanmıştır. Her öğrenci seçtiği rolün sorumluluğunu Huzur metninden somut bir metin dayanağıyla yerine getirir.",
+      "answer": "Öğrenci, Huzur okuması için dokuz okuma çemberi rolünden birini seçer.",
       "guidance": "Roller tek doğru ürün üretmez; öğrenci seçtiği rolü metinden somut bir örnekle yürütmelidir. Okuma çemberinde her döngüde öğrencilerin rol değiştirmesi sağlanarak metne farklı bilişsel pencerelerden bakma alışkanlığı kazandırılmalıdır.",
       "source_locator": "basılı s.178-179 / PDF s.179-180 — dört temel ve beş seçimlik okuma çemberi rolü",
       "answer_sections": {
@@ -94,7 +94,7 @@
       "printed_page": 180,
       "question_no": "3",
       "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
-      "answer": "Tablo yalnız **bu aşamaya kadar okunan Huzur parçasındaki** söz ve davranışlardan doldurulmalıdır. Mümtaz ve Nuran için doğrudan kanıt vardır; İhsan hakkında Mümtaz'ın anlatımı kullanılabilir. Macide, Suat ve Fâhir için bu noktada yeterli söz/davranış bulunmadığında boşluğu varsayımla doldurmayın.",
+      "answer": "Tabloyu yalnız o ana kadar okunan Huzur parçasındaki kanıta göre doldurun; bilinmeyen özellikleri varsayımla tamamlamayın.",
       "answer_sections": {
         "Mümtaz": {
           "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur.",
@@ -130,7 +130,7 @@
       "printed_page": 181,
       "question_no": "4",
       "prompt_summary": "Huzur kahramanlarını kişilik özellikleri ve dil kullanımları bakımından karşılaştırma",
-      "answer": "Kişilik özelliği ve dil kullanımı, **s.181'e kadar görülen metin kanıtıyla** ayrı ayrı belirlenmelidir. Doğrudan konuşması bulunmayan kişilere dil özelliği yakıştırmayın.",
+      "answer": "Kişilik ve dil özellikleri ayrı ayrı, s.181’e kadarki metin kanıtıyla belirlenmelidir.",
       "answer_sections": {
         "Mümtaz": {
           "kisilik": "Kitabın örneğinde hayata sanatçı duyarlılığıyla bakan, tabiatı ve sanatı birlikte düşünen hassas bir karakter olarak verilir.",
@@ -166,7 +166,7 @@
       "printed_page": 182,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur'da gerçek hayattan alınan unsurlar ile kurgusal dönüşümleri ayırma",
-      "answer": "Balık kılçığında, Mehmet Kaplan'ın verdiği **gerçek hayattaki esin kaynakları** ile Tanpınar'ın romanda yaptığı **kurmaca değişiklikler** karşılaştırılır.",
+      "answer": "Balık kılçığında gerçek hayattan alınan esin kaynakları ile romandaki kurmaca dönüşümler ayrı gösterilir.",
       "answer_sections": {
         "gercek_hayattan_alinanlar": [
           "Kaplan, Mümtaz'ı Tanpınar'ın ‘bir projeksiyonu’ olarak niteler.",
@@ -189,13 +189,18 @@
       "printed_page": 182,
       "question_no": "Fark Edelim",
       "prompt_summary": "s.182 iki metinden yazar-eser ilişkisine çıkarım",
-      "answer": "İlk parçada Mümtaz’ın çocukluğu ve İhsan–Macide’nin hayatındaki yeri anlatılır; Kaplan’ın değerlendirmesi ise Huzur’daki gerçek hayat izlerinin kurmacada değiştirildiğini açıklar. Bu iki dayanak, yazarın yaşantı ve çevresinden esinlenebildiğini fakat kişileri, ilişkileri ve koşulları romana aktarırken dönüştürdüğünü gösterir.",
+      "answer": "İki parça birlikte, yazarın yaşamından esinlenirken bu malzemeyi kurmacada dönüştürdüğünü gösterir.",
       "evidence_quotes": [
         "İhsan, onun hem babası, hem hocası idi.",
         "hayattan almış olduğu bütün şahısları az çok değiştirmiş"
       ],
       "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, yazar–eser sorusu",
-      "guidance": "Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun."
+      "guidance": "Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun.",
+      "answer_sections": {
+        "Huzur parçası": "Mümtaz’ın çocukluğu ve İhsan–Macide’nin hayatındaki yeri anlatılır.",
+        "Kaplan’ın değerlendirmesi": "Huzur’daki gerçek hayat izlerinin kurmacada değiştirildiğini açıklar.",
+        "Çıkarım": "Yazar, yaşantı ve çevresinden esinlenebilir; kişi, ilişki ve koşulları romana aktarırken dönüştürebilir."
+      }
     },
     {
       "question_id": "T3-P183-Q02",
@@ -218,7 +223,7 @@
       "printed_page": 183,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur parçalarında öznel ve nesnel anlatım örnekleri ve katkıları",
-      "answer": "İlk parçada Mümtaz'ın Nuran'la kurduğu oyunlar ve geçmiş anılar; ikinci parçada kendisini sorgulaması, uykusuzluğu ve sıkıntısı anlatılır. Gözlenebilir davranışın aktarılması ile kişinin duygusal yorumu aynı değildir: dış olay betimlemesi okura durumu izletirken öznel anlatım Mümtaz'ın özlem, suçluluk ve bunalmışlığını hissettirir.",
+      "answer": "Gözlenebilir olaylar, öznel duygular ve bunların anlatıma katkısı aşağıda ayrı başlıklarda verilmiştir.",
       "guidance": "Soru yalnız s.183'teki iki parçaya dayanır; s.185'teki İhsan hastalığı parçasını buradaki doğrudan örnekler yerine koymayın. ‘Nesnel’ sözü burada gerçek dünyada doğrulanmış olgu değil, parçada dışarıdan betimlenebilen durum anlamındadır.",
       "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde 1, Mümtaz'ın Nuran anıları ve iç sorgulaması",
       "answer_sections": {
@@ -239,7 +244,7 @@
       "printed_page": 184,
       "question_no": "Sıra Sizde 2",
       "prompt_summary": "Duyarlılık değerinden hareketle kişilerin insani çelişki, ahlaki çatışma ve toplumsal güçlükleri",
-      "answer": "Ders kitabının 184–185. sayfalarındaki dört renkli metin parçasında 'duyarlılık' değeri; insanın kendi nefsi, toplumu, çevresindeki canlılar ve hasta yakınlarıyla kurduğu ahlaki ilişkiler üzerinden çözümlenir:",
+      "answer": "Duyarlılık değeri, dört metin parçasındaki insani, ahlaki ve toplumsal gerilimler üzerinden incelenir.",
       "answer_sections": {
         "1 · Halkı sevmek ve insanı kavramlaştırmak": {
           "insani_celiski": "Halkı sevdiğini söylemek ile insanı yalnız bir kavram veya manzara gibi ele alma ihtimali.",

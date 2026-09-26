@@ -162,9 +162,26 @@
       "printed_page": 152,
       "question_no": "Kural Uygulayabilme (destek)",
       "prompt_summary": "Sanal müze izlenim yazısı için kitaptaki 13 yazma aşamasına dayalı öz denetim",
-      "answer": "Kitapta ayrı bir teslim öncesi kontrol listesi yoktur. Aşağıdaki öğretmen destekli öz denetim, basılı s.152'deki 13 yazma aşamasını kontrol sorularına dönüştürür:\n\n1. Planımda kime, neyi, nasıl ve hangi araçlarla anlatacağım açık mı?\n2. Yazıma planıma uygun, ilgi çekici bir girişle başladım mı?\n3. Başlığım içeriğe uygun mu?\n4. Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım mı?\n5. Söz varlığını hedef kitleye ve bağlama uygun kullandım mı?\n6. Konuyu desteklemek için uygun anlatım biçimi ve düşünceyi geliştirme yollarından yararlandım mı?\n7. Duygu ve düşüncelerimi özgün, tutarlı bir üslupla aktardım mı?\n8. Vermek istediğim iletileri açık veya örtük biçimde yeterince ayrıntılandırdım mı?\n9. Millî/manevi değerleri ve kültürel unsurları konuya uygun biçimde ele aldım mı?\n10. Toplumsal hassasiyetlere dikkat edip olumlu tutum ve değerleri vurguladım mı?\n11. Dil bilgisi kurallarını işlevine uygun uygulayıp farklı cümle yapıları kullandım mı?\n12. Türkçeyi bilinçli ve özenli kullandım mı?\n13. Yazım ve noktalama kurallarını gözden geçirdim mi?",
+      "answer": "Bu öğretmen destekli öz denetim listesi, basılı s.152'deki 13 yazma aşamasını kontrol sorularına dönüştürür; kitapta ayrı bir teslim öncesi kontrol listesi yoktur.",
       "guidance": "Bu, öğretmen tarafından sunulan yardımcı bir öz denetim aracıdır; kitaptaki ayrı bir form değildir ve s.153'teki öz/akran değerlendirme formunun ya da görünmeyen QR içeriğinin yerine geçmez. Öğrencinin gerçek müze seçimi ve gözlemleri esas alınmalıdır.",
-      "source_locator": "basılı s.152 / PDF s.153 — yazma aşamaları"
+      "source_locator": "basılı s.152 / PDF s.153 — yazma aşamaları",
+      "answer_sections": {
+        "Öz denetim soruları": [
+          "Planımda kime, neyi, nasıl ve hangi araçlarla anlatacağım açık mı?",
+          "Yazıma planıma uygun, ilgi çekici bir girişle başladım mı?",
+          "Başlığım içeriğe uygun mu?",
+          "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım mı?",
+          "Söz varlığını hedef kitleye ve bağlama uygun kullandım mı?",
+          "Konuyu desteklemek için uygun anlatım biçimi ve düşünceyi geliştirme yollarından yararlandım mı?",
+          "Duygu ve düşüncelerimi özgün, tutarlı bir üslupla aktardım mı?",
+          "Vermek istediğim iletileri açık veya örtük biçimde yeterince ayrıntılandırdım mı?",
+          "Millî/manevi değerleri ve kültürel unsurları konuya uygun biçimde ele aldım mı?",
+          "Toplumsal hassasiyetlere dikkat edip olumlu tutum ve değerleri vurguladım mı?",
+          "Dil bilgisi kurallarını işlevine uygun uygulayıp farklı cümle yapıları kullandım mı?",
+          "Türkçeyi bilinçli ve özenli kullandım mı?",
+          "Yazım ve noktalama kurallarını gözden geçirdim mi?"
+        ]
+      }
     },
     {
       "question_id": "T2-P153-PERF01",

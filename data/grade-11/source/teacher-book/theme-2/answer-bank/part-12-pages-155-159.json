@@ -36,8 +36,16 @@
       "printed_page": 155,
       "question_no": "2",
       "prompt_summary": "Orhun Abidelerindeki atasözü ve deyimlerin genel amacını belirleme",
-      "answer": "Doğru cevap: **C — Devletin temel değerlerini aktarmak.** Tablodaki il, töre, devlet sahibi olmak, birlik, mücadele ve yoğun çalışma ifadeleri ortak olarak devletin kurulması, korunması ve toplumun düzenine ilişkin değerleri öne çıkarır. Diğer seçenekler tablonun bütününü aynı ölçüde açıklamaz.",
-      "source_locator": "basılı s.155 / PDF s.156 — soru 2"
+      "answer": "Doğru cevap: C — Devletin temel değerlerini aktarmak.",
+      "source_locator": "basılı s.155 / PDF s.156 — soru 2",
+      "answer_sections": {
+        "Tablodaki dayanaklar": [
+          "İl ve töre düzenine ilişkin ifadeler.",
+          "Devlet sahibi olma düşüncesi.",
+          "Birlik, mücadele ve yoğun çalışma vurguları."
+        ],
+        "Ortak amaç": "Bu ifadeler devletin kurulması, korunması ve toplum düzenine ilişkin değerleri öne çıkarır."
+      }
     },
     {
       "question_id": "T2-P157-Q03",
@@ -45,8 +53,16 @@
       "printed_page": 157,
       "question_no": "3",
       "prompt_summary": "Kutadgu Bilig, Dede Korkut Hikâyeleri ve Kamus-ı Türkî tablosundan ulaşılamayan çıkarım",
-      "answer": "Doğru cevap: A. Üç eserin tamamının Türk toplumunun sözlü kültürden yazılı kültüre geçiş sürecinde ortaya çıktığı çıkarılamaz. Dede Korkut Hikâyeleri destan geleneğinden halk hikâyeciliğine geçişle ilişkilendirilir; Kutadgu Bilig doğrudan yazılı bir mesnevidir, Kamus-ı Türkî ise 19. yüzyılda hazırlanmış bir sözlüktür. B, C, D ve E'deki çıkarımlar verilen eser notları ve tabloda belirtilen özelliklerle uyumludur.",
-      "source_locator": "basılı s.156-157 / PDF s.157-158 — soru 3"
+      "answer": "Doğru cevap: A.",
+      "source_locator": "basılı s.156-157 / PDF s.157-158 — soru 3",
+      "answer_sections": {
+        "A seçeneği neden ulaşılamaz?": {
+          "Dede Korkut Hikâyeleri": "Destan geleneğinden halk hikâyeciliğine geçişle ilişkilendirilir.",
+          "Kutadgu Bilig": "Doğrudan yazılı bir mesnevidir.",
+          "Kamus-ı Türkî": "19. yüzyılda hazırlanmış bir sözlüktür."
+        },
+        "Diğer seçenekler": "B, C, D ve E'deki çıkarımlar verilen eser notları ve tabloda belirtilen özelliklerle uyumludur."
+      }
     },
     {
       "question_id": "T2-P157-Q04",
@@ -69,8 +85,17 @@
       "printed_page": 157,
       "question_no": "5",
       "prompt_summary": "Üç eserle ilgili notlarda ortak olan bilgiyi belirleme",
-      "answer": "Doğru cevap: B — Yalnız II. Sema'nın notları incelendiğinde her üç eser için de bir 'ilk olma' özelliği ortak olarak belirtilmiştir:\n- Kutadgu Bilig: 'Siyasetname türünün ilk örneğidir' ve 'İslami Devir Türk Edebiyatı'nda verilen ilk Türkçe eserdir.'\n- Dede Korkut Hikâyeleri: 'Destan geleneğinden halk hikâyeciliğine geçişin ilk ürünüdür.'\n- Kamus-ı Türkî: 'Türkçe adına hazırlanan tek dilli sözlükler arasında \"Türkçe\" adının ilk kez kullanıldığı sözlüktür.'\n\nBuna karşılık; I. öncül (Yazar bilgisi) Dede Korkut için verilmemiştir çünkü anonimdir; III. öncül (Yüzyıl bilgisi) Kutadgu Bilig (11. yy) ve Kamus-ı Türkî (19. yy) için verilmiş fakat Dede Korkut için belirtilmemiştir. Dolayısıyla yalnızca II. öncül ortaktır.",
-      "source_locator": "basılı s.157 / PDF s.158 — soru 5"
+      "answer": "Doğru cevap: B — Yalnız II.",
+      "source_locator": "basılı s.157 / PDF s.158 — soru 5",
+      "answer_sections": {
+        "II. İlk olma özelliği": [
+          "Kutadgu Bilig: Siyasetname türünün ilk örneğidir; İslami Devir Türk Edebiyatı'nda verilen ilk Türkçe eserdir.",
+          "Dede Korkut Hikâyeleri: Destan geleneğinden halk hikâyeciliğine geçişin ilk ürünüdür.",
+          "Kamus-ı Türkî: Türkçe adına hazırlanan tek dilli sözlükler arasında “Türkçe” adının ilk kez kullanıldığı sözlüktür."
+        ],
+        "I. Yazar bilgisi": "Bilgi üç eser için ortak değildir; Dede Korkut Hikâyeleri anonimdir.",
+        "III. Yüzyıl bilgisi": "Kutadgu Bilig için 11. yüzyıl, Kamus-ı Türkî için 19. yüzyıl belirtilir; Dede Korkut Hikâyeleri için yüzyıl bilgisi verilmez."
+      }
     },
     {
       "question_id": "T2-P158-Q06",
@@ -78,9 +103,18 @@
       "printed_page": 158,
       "question_no": "6",
       "prompt_summary": "Âşık atışmasında açılan ayağa uygun dörtlüğü belirleme",
-      "answer": "Doğru cevap: D. Atışmada sıra, son dörtlüğü söyleyen Şeref Taşlıova'dan sonra Murat Çobanoğlu'na gelir. C ve D seçeneklerinin ikisi de “Ne arıyan olur (vallah) ne soran olur.” dizesiyle biter; bu nedenle yalnız bu dizeyi tekrar etmek ayırt edici değildir. D, “Çobanoğlu der ki...” diyerek sıra gelen âşığın mahlasıyla kurulmuş ve açılan ayağa uygun bağlama dizesini sürdürmüştür. C'de ise “Şeref...” adı geçer. A, B ve E bağlama dizesini sürdürmez. Burada “olur” redif, “-an/-en” zengin/tam kafiye gibi verilen kalıba uymayan teknik etiketler kullanılmamalıdır.",
+      "answer": "Doğru cevap: D.",
       "source_locator": "basılı s.158 / PDF s.159 — soru 6",
-      "guidance": "Önce son dizeyi sağlayan C ve D'yi birlikte işaretletin; sonra “Son dörtlüğü kim söyledi? Şimdi sıra kimde? Seçenek hangi mahlasla başlıyor?” sorularıyla D'ye ulaştırın."
+      "guidance": "Önce son dizeyi sağlayan C ve D'yi birlikte işaretletin; sonra “Son dörtlüğü kim söyledi? Şimdi sıra kimde? Seçenek hangi mahlasla başlıyor?” sorularıyla D'ye ulaştırın.",
+      "answer_sections": {
+        "Ayırt edici noktalar": [
+          "Sıra, son dörtlüğü söyleyen Şeref Taşlıova'dan sonra Murat Çobanoğlu'na gelir.",
+          "C ve D seçenekleri aynı “Ne arıyan olur (vallah) ne soran olur.” dizesiyle biter; bu dize tek başına ayırt edici değildir.",
+          "D, “Çobanoğlu der ki...” diyerek sıradaki âşığın mahlasıyla başlar ve açılan ayağı sürdürür; C'de “Şeref...” adı geçer.",
+          "A, B ve E seçenekleri bağlama dizesini sürdürmez."
+        ],
+        "Terim kullanımı": "“Olur” redif, “-an/-en” zengin/tam kafiye gibi verilen kalıba uymayan teknik etiketler kullanılmamalıdır."
+      }
     },
     {
       "question_id": "T2-P159-Q07",
@@ -88,9 +122,17 @@
       "printed_page": 159,
       "question_no": "7",
       "prompt_summary": "Âşık atışmasıyla ilgili öğrenci değerlendirmelerinden yanlış olanı belirleme ve kendi değerlendirmesini ekleme",
-      "answer": "**a)** Ahmet, Taşlıova'nın dörtlüklerini Çobanoğlu'nunkilerden “daha sanatlı” buluyor. Bu, metinden zorunlu olarak çıkan nesnel bir sonuç değil, ölçüt gerektiren öznel bir estetik yargıdır. Soru tek bir yanlış değerlendirme bekliyorsa amaçlanan yanıt Ahmet olabilir; ancak verilen şiir bu karşılaştırmayı tek başına ne doğrular ne de çürütür. Esin'in hangi dörtlükte didaktik söyleyişin daha belirgin olduğuna ilişkin karşılaştırması da kanıtla gerekçelendirilmelidir.\n\n**b) Örnek katılım cümlesi:** “Her iki âşığın dizelerinde de yerel söyleyişler ve tekrar edilen ‘Ne arıyan olur (vallah) ne soran olur.’ dizesi dikkatimi çekti; bu ortak yapı karşılıklı icranın bütünlüğünü güçlendiriyor.”",
+      "answer": "a) Amaçlanan yanıt: Ahmet. b) Örnek katılım cümlesi aşağıdadır.",
       "guidance": "Bu açık uçlu değerlendirmede Ahmet, ölçütsüz estetik karşılaştırma nedeniyle amaçlanan yanıt olabilir; metin tek başına onun yargısının yanlışlığını kanıtlamaz. Gerekçeli alternatif eleştirileri kabul edin; âşıkların denk ustalıkta olduğu varsayımını üretmeyin.",
-      "source_locator": "basılı s.159 / PDF s.160 — soru 7"
+      "source_locator": "basılı s.159 / PDF s.160 — soru 7",
+      "answer_sections": {
+        "a) Değerlendirme": [
+          "Ahmet, Taşlıova'nın dörtlüklerini Çobanoğlu'nunkilerden “daha sanatlı” buluyor. Bu, metinden zorunlu olarak çıkan nesnel bir sonuç değil, ölçüt gerektiren öznel bir estetik yargıdır.",
+          "Soru tek bir yanlış değerlendirme bekliyorsa amaçlanan yanıt Ahmet olabilir; verilen şiir bu karşılaştırmayı tek başına ne doğrular ne de çürütür.",
+          "Esin'in hangi dörtlükte didaktik söyleyişin daha belirgin olduğuna ilişkin karşılaştırması da kanıtla gerekçelendirilmelidir."
+        ],
+        "b) Örnek katılım cümlesi": "Her iki âşığın dizelerinde de yerel söyleyişler ve tekrar edilen “Ne arıyan olur (vallah) ne soran olur.” dizesi dikkatimi çekti; bu ortak yapı karşılıklı icranın bütünlüğünü güçlendiriyor."
+      }
     },
     {
       "question_id": "T2-P159-Q08",

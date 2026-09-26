@@ -87,7 +87,6 @@ fun LessonPlayerApp() {
         var loadingContent by remember { mutableStateOf(true) }
         var loadRequest by remember { mutableIntStateOf(0) }
         var currentScreen by rememberSaveable { mutableStateOf(AppScreen.LIBRARY) }
-        var librarySearchFocusRequest by rememberSaveable { mutableIntStateOf(0) }
         val sessionViewModel: LessonSessionViewModel = viewModel()
         val teacherPlanViewModel: TeacherPlanViewModel = viewModel()
         val sessionUi by sessionViewModel.state.collectAsState()
@@ -203,11 +202,6 @@ fun LessonPlayerApp() {
                 presentationTextSize = presentationTextSize,
                 setPresentationTextSize = sessionViewModel::setPresentationTextSize,
                 navigate = { currentScreen = it },
-                requestLibrarySearch = {
-                    librarySearchFocusRequest += 1
-                    currentScreen = AppScreen.LIBRARY
-                },
-                librarySearchFocusRequest = librarySearchFocusRequest,
                 selectLesson = {
                     sessionViewModel.openLesson(it)
                     currentScreen = AppScreen.LESSON
@@ -245,8 +239,6 @@ internal fun LessonPlayerShell(
     presentationTextSize: PresentationTextSize,
     setPresentationTextSize: (PresentationTextSize) -> Unit,
     navigate: (AppScreen) -> Unit,
-    requestLibrarySearch: () -> Unit,
-    librarySearchFocusRequest: Int,
     selectLesson: (String) -> Unit,
     dispatch: (LessonCommand) -> Unit,
     actionState: LessonActionUiState,
@@ -312,7 +304,6 @@ internal fun LessonPlayerShell(
                         LessonV2Sidebar(
                             currentScreen = currentScreen,
                             onNavigate = navigate,
-                            onSearch = requestLibrarySearch,
                             onReturnToCurrent = { navigate(AppScreen.LESSON) },
                             session = session,
                             lesson = currentLesson,
@@ -362,7 +353,6 @@ internal fun LessonPlayerShell(
                     LessonV2Sidebar(
                         currentScreen = currentScreen,
                         onNavigate = navigate,
-                        onSearch = requestLibrarySearch,
                         onReturnToCurrent = { navigate(AppScreen.LESSON) },
                         session = session,
                         lesson = currentLesson,
@@ -406,8 +396,7 @@ internal fun LessonPlayerShell(
                                 toggleTeacherMark = toggleTeacherMark,
                                 backupState = backupState,
                                 beginExport = beginExport,
-                                beginImport = beginImport,
-                                librarySearchFocusRequest = librarySearchFocusRequest
+                                beginImport = beginImport
                             )
                         }
                     }
@@ -598,8 +587,7 @@ internal fun LessonPlayerShell(
                                     } else null,
                                     openTeacherAssist = if (currentScreen == AppScreen.LESSON) {
                                         { showTeacherAssist = true }
-                                    } else null,
-                                    librarySearchFocusRequest = librarySearchFocusRequest
+                                    } else null
                                 )
                             }
                         }

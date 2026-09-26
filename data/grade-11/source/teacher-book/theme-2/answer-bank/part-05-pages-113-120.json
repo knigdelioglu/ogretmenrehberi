@@ -167,12 +167,17 @@
       "printed_page": 117,
       "question_no": "2",
       "prompt_summary": "'Her ne sözüm varsa ebedî taşa vurdum.' ifadesini yorumlama",
-      "answer": "“Her ne sözüm varsa ebedî taşa vurdum.” sözü, Bilge Kağan'ın söylediklerini kalıcı kılma ve kendisinden sonrakilere ulaştırma isteğini anlatır. Sözün taşa yazılması, geçici bir konuşmanın ötesinde gelecek kuşakların okuyabileceği bir tanıklık bırakır. Yazıtın “Ona bakarak bilin” diye devam etmesi, bu sözlerin sonraki kuşaklara seslendiğini metin içinde açıkça gösterir. Bu yönüyle ifade, tarihî ve kültürel hafızanın korunması olarak yorumlanabilir. Taşın türü, çağdaş siyasal ilkeler veya millet-devlet arasında sözleşme bulunduğu bu cümleden çıkarılamaz.",
+      "answer": "Bu söz, Bilge Kağan'ın anlattıklarını kalıcılaştırıp gelecek kuşaklara ulaştırma isteğini gösterir.",
       "guidance": "Öğrenciden yorumunu “ebedî”, “taşa vurdum” ve devamındaki “Ona bakarak bilin” ifadelerinden biriyle temellendirmesini isteyin. Kalıcılık ve kuşaklara seslenme metin dayanaklı yorumlardır; belirli taş malzemesi ya da modern yönetim kavramları metnin doğrudan söylediği bilgi gibi sunulmamalıdır.",
       "evidence_quotes": [
         "Her ne sözüm varsa ebedî taşa vurdum."
       ],
-      "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 2"
+      "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 2",
+      "answer_sections": {
+        "Sözü kalıcılaştırma": "Sözün taşa yazılması, geçici bir konuşmanın ötesinde gelecek kuşakların okuyabileceği bir tanıklık bırakır.",
+        "Sonraki kuşaklara sesleniş": "Yazıtın “Ona bakarak bilin” diye devam etmesi, bu sözlerin sonraki kuşaklara yöneldiğini metin içinde açıkça gösterir.",
+        "Yorum sınırı": "Taşın türü, çağdaş siyasal ilkeler veya millet-devlet arasında sözleşme bulunduğu bu cümleden çıkarılamaz."
+      }
     },
     {
       "question_id": "T2-P117-Q03",
@@ -287,9 +292,19 @@
       "printed_page": 119,
       "question_no": "1",
       "prompt_summary": "Oğulla Buluşma ile Kül Tigin Âbidesi'ndeki gerçeklik anlayışını karşılaştırma",
-      "answer": "Oğulla Buluşma'da kişiler ve olay örgüsü hikâyenin kurmaca dünyasında sunulur; ancak savaş dönemi ve toplumsal koşullarla ilişki kurar. Kurmaca olması metni tarihî/toplumsal gerçeklikten koparmaz. Kül Tigin Âbidesi ise geçmişe ilişkin kişi, olay ve düşünceleri aktaran tarihî tanıklık ve belge niteliğindedir. Bununla birlikte yazıt Bilge Kağan'ın dilinden kurulmuş; neyin anlatılacağını seçen, muhataba seslenen ve öğüt veren bir bakış açısı taşır. Bu nedenle tarihî belge olması, anlatımının kendiliğinden tarafsız/nesnel olduğu anlamına gelmez.",
+      "answer": "Oğulla Buluşma'da kurmaca anlatım, Kül Tigin Âbidesi'nde tarihî tanıklık ağır basar; yazıtta Bilge Kağan'ın bakış açısı belirgindir, bu nedenle tarihî belge olması onu kendiliğinden tarafsız yapmaz.",
       "guidance": "Öğrenciden karşılaştırmasını kurmaca anlatının olay/kişi kuruluşundan ve yazıttaki birinci kişi hitabı ya da seçilmiş tarih anlatısından kanıtlamasını isteyin. “Kurmaca–tarihî tanıklık–anlatıcının bakış açısı” ekseninde gerekçeli farklı cevaplar kabul edilebilir.",
-      "source_locator": "basılı s.119 / PDF s.120 — Yorumlayalım soru 1"
+      "source_locator": "basılı s.119 / PDF s.120 — Yorumlayalım soru 1",
+      "answer_sections": {
+        "Oğulla Buluşma": {
+          "Gerçeklik": "Kişiler ve olay örgüsü kurmaca dünyada sunulur; ancak metin savaş dönemi ve toplumsal koşullarla da ilişki kurar.",
+          "Anlatım": "Olaylar hikâyenin anlatıcısı ve kurduğu olay örgüsü aracılığıyla verilir."
+        },
+        "Kül Tigin Âbidesi": {
+          "Gerçeklik": "Geçmişe ilişkin kişi, olay ve düşünceleri aktaran tarihî tanıklık ve belge niteliğindedir.",
+          "Anlatım": "Bilge Kağan'ın dilinden kurulmuş; neyin anlatılacağını seçen, muhataba seslenen ve öğüt veren bir bakış taşır. Tarihî belge olması anlatımını kendiliğinden tarafsız/nesnel yapmaz."
+        }
+      }
     },
     {
       "question_id": "T2-P120-Q02",
@@ -311,12 +326,17 @@
       "printed_page": 120,
       "question_no": "Düşünelim Paylaşalım",
       "prompt_summary": "Dil, kültür ve tarih birliğinin millet hayatındaki önemini Orhun örneğiyle açıklama",
-      "answer": "Metindeki açıklama, dil ve kültür birlikteliğini bir topluma millet olma vasfı kazandıran önemli unsurlardan biri olarak görür; Orhun Yazıtlarını ortak dil, kültür ve tarih hafızasına ilişkin tarihî belge örneği sayar. Buradan, ortak anlatıların bir topluluğun geçmişini paylaşmasına ve kültürel bağ kurmasına katkı sağlayabileceği çıkarımı yapılabilir. Öğrenci bu görüşü bugünle ilişkilendirirken dilin veya tarih bilgisinin tek başına ortak hedefi ya da belirli bir siyasi sonucu garanti ettiğini ileri sürmek zorunda değildir; farklı örnek ve değerlendirmeler gerekçeleriyle ele alınabilir.",
+      "answer": "Kitaba göre dil, kültür ve tarih ortaklığı millet hayatını destekleyen unsurlardandır; Orhun Yazıtları bu ortak hafızaya örnek oluşturur.",
       "guidance": "Üç düzeyi ayırın: kaynak metnin dil/kültür birlikteliğine ilişkin görüşü; Orhun örneğinden çıkarılabilecek olası sonuç; öğrencinin güncel değerlendirmesi. Tarihî öğüdü bütün toplumlar ve çağlar için değişmez kural gibi sunmayın.",
       "evidence_quotes": [
         "Dil ve kültür birlikteliği... bir topluma millet olma vasfını kazandıran en önemli yapı taşıdır."
       ],
-      "source_locator": "basılı s.120 / PDF s.121 — Düşünelim Paylaşalım"
+      "source_locator": "basılı s.120 / PDF s.121 — Düşünelim Paylaşalım",
+      "answer_sections": {
+        "Metindeki görüş": "Dil ve kültür birlikteliği, bir topluma millet olma vasfı kazandıran önemli unsurlardan biri olarak açıklanır.",
+        "Orhun örneği": "Orhun Yazıtları ortak dil, kültür ve tarih hafızasına ilişkin tarihî belge örneği sayılır; ortak anlatıların geçmişi paylaşmaya ve kültürel bağ kurmaya katkısı buradan çıkarılabilir.",
+        "Günümüzle ilişki": "Dil veya tarih bilgisi tek başına ortak hedefi ya da belirli bir siyasi sonucu garanti etmez; farklı örnek ve değerlendirmeler gerekçeleriyle ele alınabilir."
+      }
     }
   ]
 }

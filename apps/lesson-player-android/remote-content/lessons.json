@@ -149,7 +149,14 @@
           "printed_page": 14,
           "question_no": "2",
           "prompt_summary": "Edebî dil ve sosyal bilimlerin iletişime katkısı",
-          "answer": "Edebî eserler dili etkili kullanma, duygu ve düşünceleri farklı biçimlerde ifade etme, söz varlığını geliştirme ve başkasının bakış açısını anlama becerisini güçlendirir. Tarih, sosyoloji ve psikoloji gibi alanlar da insanı ve toplumu farklı yönleriyle tanımaya yardım eder; bu da daha bilinçli iletişim kurmayı sağlar.",
+          "answer": "Edebî dil ve sosyal bilimler, insanı ve toplumu daha iyi anlamayı sağlayarak iletişim becerisini geliştirir.",
+          "answer_sections": {
+            "Edebiyatın katkısı": [
+              "Dili etkili kullanmayı ve duygu-düşünceleri farklı biçimlerde ifade etmeyi destekler.",
+              "Söz varlığını geliştirir ve başkasının bakış açısını anlamaya yardımcı olur."
+            ],
+            "Sosyal bilimlerin katkısı": "Tarih, sosyoloji ve psikoloji insanı ve toplumu farklı yönleriyle tanımaya yardım eder; bu da daha bilinçli iletişim kurmayı sağlar."
+          },
           "guidance": "Öğrenci zorlanırsa edebiyatın insanı, toplumu ve dili hangi yönlerden daha iyi tanıttığı sorulabilir.",
           "source_locator": "basılı s.14 / PDF s.15"
         },
@@ -232,7 +239,13 @@
           "printed_page": 15,
           "question_no": "1",
           "prompt_summary": "Seyirlik halk oyunlarında dikkat çeken unsurlar",
-          "answer": "Metinde bu oyunların gösteri niteliği taşıması, taklide dayanması ve doğaçlamaya geniş yer vermesi dikkat çekmektedir. Özellikle farklı tiplerin konuşma biçimlerinin, şivelerinin ve karakter özelliklerinin canlandırılması geleneksel seyirlik oyunların belirgin özelliklerindendir.",
+          "answer": "Metin ve görsellerde öne çıkan seyirlik unsurlar şunlardır:",
+          "answer_sections": [
+            "Oyunlar gösteri niteliği taşır.",
+            "Taklide dayanır.",
+            "Doğaçlamaya geniş yer verilir.",
+            "Farklı tipler konuşma biçimleri, şiveleri ve karakter özellikleriyle canlandırılır."
+          ],
           "evidence_quotes": [
             "taklit, bu oyunların en önemli ögelerinden biridir"
           ],
@@ -268,7 +281,15 @@
           "printed_page": 15,
           "question_no": "2",
           "prompt_summary": "Günlük hayatın tiyatroya yansıması",
-          "answer": "Günlük hayat tiyatroya insanların davranışları, konuşma biçimleri, sosyal ilişkileri, meslekleri ve yaşadıkları çatışmalar aracılığıyla yansır. Geleneksel Türk tiyatrosunda farklı toplum kesimlerinden tiplerin şiveleri ve karakter özellikleriyle sahneye taşınması bunun açık bir örneğidir.",
+          "answer": "Günlük hayat tiyatroya farklı insan ve ilişki özellikleriyle yansır.",
+          "answer_sections": {
+            "Tiyatroya yansıyanlar": [
+              "İnsanların davranışları ve konuşma biçimleri",
+              "Sosyal ilişkiler ve meslekler",
+              "Yaşanan çatışmalar"
+            ],
+            "Geleneksel Türk tiyatrosundan örnek": "Farklı toplum kesimlerinden tiplerin şiveleri ve karakter özellikleriyle sahneye taşınması."
+          },
           "guidance": "Günlük hayattaki insan tipleri, konuşma biçimleri ve yanlış anlamalar üzerinden düşündürülebilir.",
           "source_locator": "basılı s.15 / PDF s.16"
         },
@@ -340,7 +361,21 @@
           "printed_page": 15,
           "question_no": "4",
           "prompt_summary": "Günümüzde benzer işlevleri üstlenen sanatlar",
-          "answer": "Günümüzde geleneksel seyirlik oyunların eğlendirme, toplumsal gözlem ve mizah işlevlerinin bir bölümü tiyatro, sinema, televizyon komedileri, stand-up ve doğaçlama tiyatro gösterileri tarafından sürdürülmektedir. Bununla birlikte Karagöz, meddahlık ve orta oyunu kültürel etkinliklerde yaşamaya devam etmektedir.",
+          "answer": "Geleneksel seyirlik oyunların bazı işlevleri güncel sanatlarda sürerken geleneksel türler de kültürel etkinliklerde yaşamaktadır.",
+          "answer_sections": {
+            "Benzer işlevleri sürdüren güncel sanatlar": [
+              "Tiyatro",
+              "Sinema",
+              "Televizyon komedileri",
+              "Stand-up",
+              "Doğaçlama tiyatro gösterileri"
+            ],
+            "Kültürel etkinliklerde yaşamayı sürdüren geleneksel türler": [
+              "Karagöz",
+              "Meddahlık",
+              "Orta oyunu"
+            ]
+          },
           "guidance": "Öğrenci yalnızca sinema veya televizyon diyorsa canlı gösteri, mizah ve doğaçlama özellikleri de düşündürülebilir.",
           "explanation": "Soruyu geleneksel türlerin bütünüyle ortadan kalktığı şeklinde yorumlamamak gerekir.",
           "source_locator": "basılı s.15 / PDF s.16"
@@ -434,7 +469,12 @@
           "printed_page": 16,
           "question_no": "2",
           "prompt_summary": "Fiziksel özelliklerden kişilik tahmini",
-          "answer": "Beberuhi'nin abartılı görünüşü hareketli ve komik bir tip olabileceğini; Çelebi'nin özenli giyimi şehirli, varlıklı ve görgülü bir kişi olabileceğini; Zenne'nin süslü kıyafetleri ise görünüşüne önem veren bir kadın tipini temsil ettiğini düşündürebilir. Bunlar görsele dayalı ilk tahminlerdir.",
+          "answer": "Görsel ipuçlarına dayalı kişilik tahminleri tiplere göre şöyle ayrılabilir:",
+          "answer_sections": {
+            "Beberuhi": "Abartılı görünüşü, hareketli ve komik bir tip olabileceğini düşündürür.",
+            "Çelebi": "Özenli giyimi, şehirli, varlıklı ve görgülü bir kişi olabileceğini düşündürür.",
+            "Zenne": "Süslü kıyafetleri, görünüşüne önem veren bir kadın tipini çağrıştırır."
+          },
           "guidance": "Gerekçeli farklı tahminler de kabul edilebilir.",
           "source_locator": "basılı s.16 / PDF s.17"
         },
@@ -467,7 +507,18 @@
           "printed_page": 16,
           "question_no": "3",
           "prompt_summary": "Tiplerin dili farklı kullanma nedenleri",
-          "answer": "Eğitim düzeyi, sosyal statü, meslek, yetişilen çevre, bölge ve kültürel birikim konuşma biçimini farklılaştırabilir. Karagöz oyununda bu farklılıklar tipleri ayırmak, toplumdaki çeşitliliği göstermek ve yanlış anlamalar üzerinden mizah oluşturmak için belirginleştirilir.",
+          "answer": "Tiplerin konuşma biçimlerini farklılaştırabilecek etkenler ve bunların oyundaki işlevi şöyledir:",
+          "answer_sections": {
+            "Konuşma biçimini etkileyebilecek etkenler": [
+              "Eğitim düzeyi",
+              "Sosyal statü",
+              "Meslek",
+              "Yetişilen çevre",
+              "Bölge",
+              "Kültürel birikim"
+            ],
+            "Karagöz oyunundaki işlevi": "Bu farklılıklar tipleri ayırır, toplumdaki çeşitliliği gösterir ve yanlış anlamalar üzerinden mizah oluşturur."
+          },
           "guidance": "Eğitim, bölge, meslek ve sosyal çevrenin konuşmayı nasıl etkilediği sorulabilir.",
           "source_locator": "basılı s.16 / PDF s.17"
         },
@@ -559,7 +610,18 @@
           "printed_page": 17,
           "question_no": "2",
           "prompt_summary": "Dönemin dilini yansıtan kelime ve ifadeler",
-          "answer": "Metinde 'cânân', 'meh-i tâbân', 'esbâb-ı mûcibe', 'mâ-nahnü-fîh', 'gonce-dehân' ve 'iskân-ı beyt' gibi bugün günlük dilde az kullanılan kelime ve tamlamalar dönemin dil özelliklerini yansıtır. Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark da sosyal dil çeşitliliğini gösterir.",
+          "answer": "Metindeki eski kelime ve tamlamalar dönemin dilini; tiplerin farklı söyleyişleri ise sosyal dil çeşitliliğini gösterir.",
+          "answer_sections": {
+            "Dönemin dilini yansıtan kelime ve tamlamalar": [
+              "cânân",
+              "meh-i tâbân",
+              "esbâb-ı mûcibe",
+              "mâ-nahnü-fîh",
+              "gonce-dehân",
+              "iskân-ı beyt"
+            ],
+            "Sosyal dil çeşitliliği": "Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark."
+          },
           "evidence_quotes": [
             "cânân",
             "meh-i tâbân",
@@ -728,7 +790,16 @@
           "printed_page": 25,
           "question_no": "2",
           "prompt_summary": "Eski kelimelere güncel karşılık önerme",
-          "answer": "Dadı yerine 'çocuk bakıcısı', esbab yerine 'sebepler', murat yerine 'amaç', bendeniz yerine 'ben', silsile yerine 'zincir/sıra', ispir yerine 'seyis/at bakıcısı' kullanılabilir. Ancak bu sözcüklerin modern karşılıklarla değiştirilmesi Karagöz'ün yanlış anlamalarına dayalı mizahı ve dönemin dil havasını zayıflatabilir.",
+          "answer": "Önerilebilecek güncel karşılıklar ve kelime değişiminin metne etkisi şöyledir:",
+          "answer_sections": {
+            "Dadı": "çocuk bakıcısı",
+            "Esbab": "sebepler",
+            "Murat": "amaç",
+            "Bendeniz": "ben",
+            "Silsile": "zincir / sıra",
+            "İspir": "seyis / at bakıcısı",
+            "Metnin üslubuna etkisi": "Bu sözcükleri modern karşılıklarla değiştirmek Karagöz'ün yanlış anlamalarına dayalı mizahı ve dönemin dil havasını zayıflatabilir."
+          },
           "explanation": "Etkinlikte yalnız anlam değil, kelime değişiminin üsluba etkisi de görülebilir.",
           "source_locator": "basılı s.25 / PDF s.26"
         },
@@ -760,7 +831,13 @@
           "printed_page": 25,
           "question_no": "3",
           "prompt_summary": "Metindeki başka eski veya bilinmeyen kelimeler",
-          "answer": "Örnek olarak 'meh-i tâbân' parlak ay, 'zıll-i câzib' çekici gölge, 'sürc-i lisân' dil sürçmesi, 'gonce-dehân' ağzı gonca gibi küçük ve güzel olan anlamındadır. Öğrencinin seçtiği kelimeler farklı olabilir; önemli olan anlamı metnin bağlamıyla ilişkilendirmesidir.",
+          "answer": "Metin bağlamından çıkarılabilecek örnek kelime-anlam eşleştirmeleri:",
+          "answer_sections": {
+            "meh-i tâbân": "parlak ay",
+            "zıll-i câzib": "çekici gölge",
+            "sürc-i lisân": "dil sürçmesi",
+            "gonce-dehân": "ağzı gonca gibi küçük ve güzel olan"
+          },
           "guidance": "Tek bir zorunlu kelime listesi yoktur; öğrencinin gerçekten bilmediği kelimeler seçilebilir.",
           "source_locator": "basılı s.25 / PDF s.26; sözlük basılı s.24"
         },
@@ -858,7 +935,12 @@
           "printed_page": 27,
           "question_no": "1",
           "prompt_summary": "Karagöz ve Hacivat'ın dilinden kişilik çıkarımı",
-          "answer": "Metindeki sözlerden hareketle Karagöz için halk söyleyişine yakın, doğrudan ve kelimeleri farklı anlamlara çekebilen; Hacivat içinse daha süslü ya da eski kelimeler kullanan ve açıklayıcı bir konuşma tarzına sahip olduğu düşünülebilir. Bunlar söz ve tepkilerden çıkarılan izlenimlerdir; kişilerin eğitim geçmişi veya bütün kişilikleri hakkında kesin bilgi sayılmaz.",
+          "answer": "Metindeki söz ve tepkiler, iki tipin konuşma tarzları hakkında şu sınırlı çıkarımları destekler:",
+          "answer_sections": {
+            "Karagöz": "Halk söyleyişine yakın ve doğrudan konuşur; kelimeleri farklı anlamlara çekebilir.",
+            "Hacivat": "Daha süslü ya da eski kelimeler kullanır ve açıklayıcı bir konuşma tarzı sergiler.",
+            "Çıkarım sınırı": "Bunlar metindeki söz ve tepkilerden çıkarılan izlenimlerdir; kişilerin eğitim geçmişi veya bütün kişilikleri hakkında kesin bilgi sayılmaz."
+          },
           "evidence_quotes": [
             "Biz gelelim mâ-nahnü-fîhimize",
             "Biz gelelim mahallede evimize"
@@ -894,7 +976,17 @@
           "printed_page": 27,
           "question_no": "2",
           "prompt_summary": "Kişilik çıkarımında kullanılan ipuçları",
-          "answer": "Çıkarımda seçilen kelimeler, sözlerin birbirini izleme biçimi, yanlış anlamaya verilen tepki ve konuşma üslubu kullanılabilir. Örneğin “mâ-nahnü-fîhimize” sözü ile Karagöz’ün buna verdiği karşılık, iki kişinin dil kullanımını karşılaştırmaya imkân verir; bu ipuçları kişiliklerinin tamamını değil, metinde görünen yönlerini destekler.",
+          "answer": "Kişilik çıkarımı için metinden şu ipuçları seçilebilir:",
+          "answer_sections": {
+            "Kullanılabilecek ipuçları": [
+              "Seçilen kelimeler",
+              "Sözlerin birbirini izleme biçimi",
+              "Yanlış anlamaya verilen tepki",
+              "Konuşma üslubu"
+            ],
+            "Örnek": "“Mâ-nahnü-fîhimize” sözü ile Karagöz’ün buna verdiği karşılık, iki kişinin dil kullanımını karşılaştırmaya imkân verir.",
+            "Çıkarım sınırı": "Bu ipuçları kişiliklerin tamamını değil, metinde görünen yönlerini destekler."
+          },
           "source_locator": "basılı s.27 / PDF s.28",
           "guidance": "Öğrenciden kullandığı ipucunu (kelime, söz sırası, tepki veya üslup) belirtmesini ve ilgili repliği göstermesini isteyin. Kanıtın hangi çıkarımı desteklediğini sordurun; aynı ipucundan farklı sonuçlar çıkarılıyorsa gerekçenin metinle uyumunu değerlendirin."
         },
@@ -931,7 +1023,15 @@
           "printed_page": 28,
           "question_no": "1",
           "prompt_summary": "Söz varlığı ile eğitim ve sosyal statü ilişkisi",
-          "answer": "Tiplerin söz varlığı eğitim ve sosyal durumlarıyla uyumludur. Çelebi ve Hacivat daha eğitimli kişileri çağrıştıran ağır ve eski kelimeler kullanırken Karagöz bunları halk dili içinden benzer sesli sözlere dönüştürür. Örneğin 'iskân-ı beyt' sözünü 'iskelede bitleniyorum', 'hane-ber-dûşsunuz' sözünü de 'Muş değilim ben' diye anlaması bu karşıtlığı açıkça gösterir.",
+          "answer": "Söz varlığı, tiplerin eğitim ve sosyal çevrelerine ilişkin sınırlı çıkarımlar yapılmasını sağlar.",
+          "answer_sections": {
+            "Çelebi ve Hacivat": "Daha eğitimli kişileri çağrıştıran ağır ve eski kelimeler kullanırlar.",
+            "Karagöz": "Bu sözleri halk dili içinden benzer sesli ifadelere dönüştürür.",
+            "Metinden örnekler": [
+              "'İskân-ı beyt' → 'iskelede bitleniyorum'",
+              "'Hane-ber-dûşsunuz' → 'Muş değilim ben'"
+            ]
+          },
           "evidence_quotes": [
             "iskân-ı beyt",
             "hane-ber-dûşsunuz"
@@ -988,7 +1088,18 @@
           "printed_page": 28,
           "question_no": "2",
           "prompt_summary": "Söz varlığının işlevinin başka yollarla sağlanması",
-          "answer": "Kişinin eğitim, sosyal çevre ve karakter özellikleri yalnız söz varlığıyla değil; davranışları, giyimi, mesleği, beden dili, sahnedeki hareketleri ve diğer kişilerle ilişkileri aracılığıyla da gösterilebilir. Ancak Yazıcı gibi söz oyunlarına dayalı bir metinde kelime seçimi özellikle önemlidir; mizahın büyük bölümü konuşma farklılıklarından doğar.",
+          "answer": "Söz varlığı dışındaki göstergeler de kişinin özelliklerini ortaya koyabilir.",
+          "answer_sections": {
+            "Diğer anlatım yolları": [
+              "Davranışlar",
+              "Giyim",
+              "Meslek",
+              "Beden dili",
+              "Sahnedeki hareketler",
+              "Diğer kişilerle ilişkiler"
+            ],
+            "Yazıcı metnindeki önem": "Söz oyunlarına dayalı bu metinde kelime seçimi önemlidir; mizahın büyük bölümü konuşma farklılıklarından doğar."
+          },
           "source_locator": "basılı s.28 / PDF s.29",
           "guidance": "Öğrenci önce söz varlığı dışındaki bir anlatım yolunu seçsin; seçtiği davranış, beden dili, görünüş ya da ilişki ipucunun ne gösterebileceğini açıklasın. Ardından Yazıcı’daki söz oyunlarının mizahı nasıl kurduğunu karşılaştırsın; diğer yolların söz varlığının işlevini hangi ölçüde karşılayabileceğine ilişkin gerekçeli farklılıkları kabul edin."
         },
@@ -1022,7 +1133,16 @@
           "printed_page": 28,
           "question_no": "3",
           "prompt_summary": "Benzer konuşma ve davranışların günlük hayatta değerlendirilmesi",
-          "answer": "Böyle durumlar bazen eğlenceli, bazen de iletişimi zorlaştırıcı olabilir. Bir kişinin sözü sürekli yanlış anlaması komik bir durum oluşturabilir; ancak gerçek hayatta farklı eğitim veya konuşma biçimlerine sahip insanları küçümsememek gerekir. Sağlıklı iletişim için karşı tarafı dikkatle dinlemek, anlaşılmayan noktayı sormak ve açık bir dil kullanmak daha doğrudur.",
+          "answer": "Yanlış anlamalar günlük yaşamda hem mizahi hem de iletişimi zorlaştırıcı olabilir.",
+          "answer_sections": {
+            "Olası etkisi": "Bir kişinin sözü sürekli yanlış anlaması komik bir durum oluşturabilir.",
+            "Saygılı iletişim": "Farklı eğitim veya konuşma biçimlerine sahip insanlar küçümsenmemelidir.",
+            "Sağlıklı iletişim için": [
+              "Karşı tarafı dikkatle dinlemek",
+              "Anlaşılmayan noktayı sormak",
+              "Açık bir dil kullanmak"
+            ]
+          },
           "guidance": "Bu soru kişisel değerlendirme içerir; öğrencinin duygusu farklı olabilir. Gerekçeli ve saygılı bir açıklama yeterlidir.",
           "source_locator": "basılı s.28 / PDF s.29"
         },
@@ -7416,7 +7536,13 @@
           "printed_page": 79,
           "question_no": "1",
           "prompt_summary": "Kasiyer-müşteri diyaloğunun Karagöz oyununu çağrıştırma nedeni",
-          "answer": "Doğru cevap D seçeneğidir. Müşteri, kasiyerin “ibraz etmek” sözünü ses benzerliğinden dolayı “itiraz etmek” biçiminde yanlış anlamıştır. Bu, kitapta Karagöz için verilen “yabancı sözcükleri Türkçe sözcüklere benzeterek farklı anlamlar yükleme” özelliğiyle doğrudan örtüşür.",
+          "answer": "Doğru seçenek: D.",
+          "answer_sections": {
+            "Gerekçe": [
+              "Müşteri, kasiyerin “ibraz etmek” sözünü ses benzerliğiyle “itiraz etmek” biçiminde yanlış anlar.",
+              "Bu yanlış anlama, kitapta Karagöz için verilen yabancı sözcükleri Türkçe sözcüklere benzeterek farklı anlamlar yükleme özelliğiyle örtüşür."
+            ]
+          },
           "evidence_quotes": [
             "Lütfen ürünün faturasını ibraz edebilir misiniz?",
             "Bir şeye itiraz ettiğim yok hanımefendi!"
@@ -7454,7 +7580,7 @@
           "printed_page": 80,
           "question_no": "2",
           "prompt_summary": "Diyalogdaki boşluklara Karagöz ve Hacivat adlarını yerleştirme",
-          "answer": "Diyalogda boş bırakılan yerlere sırasıyla Hacivat, Karagöz, Hacivat ve Karagöz adları yazılmalıdır.",
+          "answer": "Boşluklara yerleştirilecek adlar ve konuşma ipuçları şöyledir:",
           "source_locator": "basılı s.80 / PDF s.81 — 1. Tema Ölçme ve Değerlendirme soru 2",
           "answer_sections": {
             "1. Boşluk (Hacivat)": "Sonra efendim, alışveriş yapmak için sokağa çıktım... Beni de kavgacılardan sanıp karakola götürdüler. Oradan da doğru hapishaneye... (Başına gelen talihsizliği ayrıntısıyla ve 'efendim' hitabıyla anlatan kişi Hacivat'tır.)",
@@ -7535,7 +7661,13 @@
           "printed_page": 81,
           "question_no": "4",
           "prompt_summary": "Çelebi'nin Hacivat'ın yanına geliş amacı",
-          "answer": "Doğru cevap C seçeneğidir. Çelebi mahalleye bir muamma asarak (ta'lîk ederek) bölgedeki âşıkların ve şairlerin katıldığı bir şiir ve bilmece yarışması düzenlemek istemektedir; bunun için Hacivat'tan şair ahbaplarını haberdar etmesini ve gerekli masrafı belirlemesini talep eder.",
+          "answer": "Doğru seçenek: C — mahallede şiir ve bilmece yarışması düzenlemek.",
+          "answer_sections": {
+            "Gerekçe": [
+              "Çelebi, mahalleye bir muamma asıp âşıklarla şairlerin katılacağı bir şiir ve bilmece yarışması düzenlemek ister.",
+              "Hacivat'tan şair ahbaplarını haberdar etmesini ve gerekli masrafı belirlemesini ister."
+            ]
+          },
           "evidence_quotes": [
             "Buraya bir muammâ ta’lîkıyle bu mahalde âşıkların imtihan olmasını arzu ediyorum.",
             "Bir muammâ asmak için ne kadar para lâzım?",
@@ -7662,7 +7794,13 @@
           "printed_page": 81,
           "question_no": "7",
           "prompt_summary": "Tanpınar'ın Antalyalı genç kıza mektup yazma amacı",
-          "answer": "Doğru cevap E seçeneğidir. Ahmet Hamdi Tanpınar, mektubunun ana eksenini kendi gençlik ve lise yıllarını geçirdiği Antalya hatıralarına bağlamıştır. Antalya'da okuyan liseli genç kızın mektubu yazara vaktiyle olduğu genç adamın heyecanını hatırlatmış; yazar bu mektubu adeta çocukluğuna ve o günlerin atmosferine seslenerek hatıralarını paylaşmak amacıyla yazmıştır.",
+          "answer": "Doğru seçenek: E.",
+          "answer_sections": {
+            "Gerekçe": [
+              "Antalya'da okuyan liseli genç kızın mektubu Tanpınar'a kendi gençlik ve lise yıllarını hatırlatır.",
+              "Yazar, bu hatıraları ve o dönemin atmosferini paylaşmak amacıyla cevap verir."
+            ]
+          },
           "evidence_quotes": [
             "Bu mektubu biraz da çocukluğuma göndermiş gibiyim.",
             "Bana vaktiyle olduğum genç adamı hatırlattınız. Onun heyecan ve şaşkınlığını yaşadım."
@@ -7701,7 +7839,7 @@
           "printed_page": 82,
           "question_no": "8",
           "prompt_summary": "Mektubun kapanışında gençlerle kurulmak istenen iletişim ve değerler",
-          "answer": "“Mesut ve çalışkan olun, aziz yavrum.” ifadesi, Tanpınar'ın genç muhatabına iyi dilek, çalışkanlık, yakınlık ve şefkat değerleri üzerinden sıcak bir iletişim kurduğunu gösterir.",
+          "answer": "Mektubun kapanışı, genç muhataba sıcak bir sesleniş ve iyi dilek içerir.",
           "evidence_quotes": [
             "Mesut ve çalışkan olun, aziz yavrum."
           ],
@@ -7744,11 +7882,12 @@
           "printed_page": 82,
           "question_no": "9",
           "prompt_summary": "Mektup ile Huzur'da yazarın okuyucuyla kurduğu ilişkiyi karşılaştırma",
-          "answer": "Verilen mektup parçasında anlatıcı belirli bir muhataba seslenir ve kendi anılarını birinci kişi anlatımıyla paylaşır. Huzur’dan verilen parçada ise anlatım Mümtaz’ın iç dünyası ve mekânla kurduğu ilişki çevresinde ilerler; okurun bu bağları metin içinden izlemesi beklenir. Bu iki parçaya dayanarak mektuptaki muhatap ilişkisi ile romandaki kurmaca anlatımın okur katılımını farklı biçimlerde kurduğu söylenebilir. Karşılaştırma bu örneklerle sınırlıdır; bütün mektuplar ve romanlar için değişmez tür kuralı değildir.",
+          "answer": "Verilen iki parçadaki yazar-okur ilişkisi ve anlatım özellikleri şu yönlerden karşılaştırılabilir; sonuç yalnız bu örneklerle sınırlıdır.",
           "source_locator": "basılı s.82 / PDF s.83 — 1. Tema Ölçme ve Değerlendirme soru 9",
           "answer_sections": {
             "Mektup parçasında": "Belirli bir muhatap, birinci kişi anlatımı ve kişisel anılar öne çıkar.",
             "Huzur parçasında": "Mümtaz’ın iç dünyası ile mekânın ilişkisi ve bu ilişkinin okur tarafından izlenmesi öne çıkar.",
+            "Sonuç": "Mektuptaki doğrudan muhatap ilişkisi ile romandaki kurmaca anlatım okur katılımını farklı biçimlerde kurar.",
             "Karşılaştırma ölçütleri": "Anlatıcı, muhatap/okur, kurmaca, dil ve metnin okurdan beklediği katılım bakımından iki alıntı karşılaştırılabilir. Sonuç yalnız verilen parçalara dayanır."
           },
           "guidance": "Öğrencilerden her iki parçadan da bir kanıt seçmelerini; anlatıcı, muhatap/okur, kurmaca, dil veya okurun metne katılımı ölçütlerinden uygun olanlarla karşılaştırmalarını isteyin. Önce parçada görüleni, sonra bundan çıkardıkları sonucu ayırsınlar. Farklı karşılaştırmaları gerekçeli ve iki parçaya bağlıysa kabul edin; türlerin tümüne yönelik genellemeye çevirmeyin."
@@ -7784,7 +7923,14 @@
           "printed_page": 82,
           "question_no": "10",
           "prompt_summary": "Dijitalleşmenin iletişime etkileriyle ilgili metinden ulaşılamayan yargı",
-          "answer": "Doğru cevap C seçeneğidir. Metne göre internetin 1980 ve 1990'larda yaygınlaşması anlık mesajlaşma, e-posta ve forumlar gibi araçlarla etkileşim kurmayı sağlamış; bireylerin kendi içeriklerini üretip bilgi üreten konuma gelmesi ise 2000'lerin başında ortaya çıkan 'sosyal medya platformları' ile gerçekleşmiştir. Dolayısıyla metinde içerik üretimindeki artış internetin yaygınlaşmasına değil, sonraki aşama olan sosyal medya araçlarına bağlanmıştır.",
+          "answer": "Doğru seçenek: C (metinden çıkarılamayan yargı).",
+          "answer_sections": {
+            "Gerekçe": [
+              "Metin, 1980 ve 1990'larda internetin yaygınlaşmasını e-posta, anlık mesajlaşma ve forumlarla etkileşimin artmasına bağlar.",
+              "Bireylerin içerik üretip bilgi üreten konuma gelmesi ise 2000'lerin başındaki sosyal medya platformlarıyla ilişkilendirilir.",
+              "Bu nedenle içerik üretimindeki artışın internetin yaygınlaşmasıyla başladığı yargısı metinden çıkarılamaz."
+            ]
+          },
           "evidence_quotes": [
             "2000’lerin başında sosyal medya platformlarının ortaya çıkmasıyla, bireylerin kendi içeriklerini üretme ve paylaşma yeteneği artmıştır."
           ],
@@ -7820,7 +7966,7 @@
           "printed_page": 83,
           "question_no": "11",
           "prompt_summary": "Toplumun iletişim alışkanlıklarının değişmesinde etkili olan unsurlar",
-          "answer": "Metne göre toplumun iletişim alışkanlıklarının tarihsel süreçte köklü bir biçimde değişmesinde etkili olan temel unsurlar; teknolojik icatlar, kitle iletişim araçlarının doğuşu, dijital ağlar ve kullanıcı merkezli sosyal platformlardır.",
+          "answer": "Metin, iletişim alışkanlıklarındaki değişimi matbaadan sosyal medya platformlarına uzanan gelişmelerle açıklar.",
           "source_locator": "basılı s.82-83 / PDF s.83-84 — 1. Tema Ölçme ve Değerlendirme soru 11",
           "answer_sections": {
             "1. Matbaanın İcadı ve Yazılı Bilginin Yaygınlaşması": "Yazılı bilginin kitlelere hızla ve geniş ölçekte ulaşmasını sağlayarak iletişimi dar bir çevreye mahsus olmaktan çıkarmıştır.",
@@ -9236,11 +9382,16 @@
           "printed_page": 100,
           "question_no": "2",
           "prompt_summary": "Eşinin Çordon'un kararına tepki göstermemesinin nedeni",
-          "answer": "Eşi Nazifkan, Çordon'un bu sözleri sakin, kararlı ve son derece içten söylediğini görerek onu vazgeçirmenin imkânsız olduğunu anlamıştır. Ayrıca Sultan'ın öz annesi olmadığı için engel olmaya kalkarsa kocasının 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebileceğinden çekinmiş; bu ağır sözü duymamak ve eşinin derin kederine saygı göstermek adına susmayı tercih etmiştir.",
+          "answer": "Nazifkan, hem Çordon'un kararından dönmeyeceğini anlar hem de derin kederine saygı göstererek susar.",
           "evidence_quotes": [
             "Çünkü o zaman ihtiyar kocası ona 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebilirdi."
           ],
-          "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 2"
+          "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 2",
+          "answer_sections": {
+            "Çordon'un kararlılığı": "Sözlerini sakin, kararlı ve içten söyleyişinden onu vazgeçirmenin imkânsız olduğunu anlar.",
+            "Öz annesi olmama durumu": "Sultan'ın öz annesi olmadığı için müdahale ederse Çordon'un “Öz anası olsaydın beni caydırmaya çalışmazdın!” diyeceğinden çekinir.",
+            "Susma nedeni": "Bu ağır sözü duymamak ve eşinin kederine saygı göstermek için tepki vermez."
+          }
         },
         "content": null
       },
@@ -9389,9 +9540,14 @@
           "printed_page": 100,
           "question_no": "6",
           "prompt_summary": "Kızlarının Çordon'u suçlamasını değerlendirme",
-          "answer": "Kızların tepkisi kardeş sevgisi ve aileyi koruma güdüsü açısından anlaşılabilirdir; Sultan'ın çok genç olduğunu, annelerinin hasta yattığını ve babalarının demirci nüfuzuyla onu cepheden kurtarabileceğini düşünmüşlerdir. Ancak Çordon açısından bakıldığında, oğlunun gönüllü vatan savunması kararına müdahale etmek onun şahsiyetini ve erkeklik gururunu ezmek demektir. Bu nedenle çatışma sevgisizlikten değil, iki tarafın sevgi ve sorumluluk anlayışındaki derin değer farkından kaynaklanır.",
+          "answer": "Kızların tepkisi anlaşılabilir; ancak Çordon'un tutumu da Sultan'ın gönüllü kararına saygı duyma düşüncesine dayanır.",
           "guidance": "Öğrencinin kızlara veya babaya hak vermesi mümkündür; önemli olan cevabın metindeki iki meşru değer (ailenin can güvenliği vs. bireyin hür iradesi ve vatan görevi) üzerinden gerekçelendirilmesidir.",
-          "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 6"
+          "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 6",
+          "answer_sections": {
+            "Kızların bakışı": "Sultan'ın gençliğini, annelerinin hastalığını ve babalarının demirci nüfuzuyla onu cepheden kurtarabileceğini düşünürler.",
+            "Çordon'un bakışı": "Oğlunun gönüllü vatan savunması kararına müdahale etmeyi onun şahsiyetine ve erkeklik gururuna zarar vermek sayar.",
+            "Çatışmanın kaynağı": "İki taraf da aile bağını önemser; ayrılık, sevgi ve sorumluluğun ne gerektirdiği konusundaki farklılıktan doğar."
+          }
         },
         "content": null
       },
@@ -10025,9 +10181,14 @@
           "printed_page": 106,
           "question_no": "1a",
           "prompt_summary": "Çordon ile kızları arasındaki etkileşimi çatışan değer ve beklentiler üzerinden açıklama",
-          "answer": "Çordon ile kızları arasındaki etkileşim, Sultan'ın cepheye gitmesi konusunda farklı önceliklere sahip olmalarından doğar. Kızlar Sultan'ın gençliğini ve annelerinin hastalığını öne sürerek babalarından gidişe engel olmasını ister. Çordon ise Sultan'ın kendi isteğiyle gönüllü olduğunu öğrenince onun kararına müdahale etmeyi doğru bulmaz ve bunu “Oğluma kötülük edemem!” sözüyle ifade eder. Böylece her iki taraf da aile bağını önemser; fakat Sultan'ı korumanın ne anlama geldiği konusunda ayrılır.",
+          "answer": "Etkileşim, Sultan'ın cepheye gitmesi konusunda kızların ve Çordon'un farklı koruma anlayışlarından doğar.",
           "source_locator": "basılı s.106 / PDF s.107 — Sıra Sizde soru 1a",
-          "guidance": "“Çordon kesinlikle vatanperverlik nedeniyle böyle yaptı” gibi tek nedenli açıklamalar yerine metindeki söz, davranış ve değer çatışmasını birlikte kullandırın."
+          "guidance": "“Çordon kesinlikle vatanperverlik nedeniyle böyle yaptı” gibi tek nedenli açıklamalar yerine metindeki söz, davranış ve değer çatışmasını birlikte kullandırın.",
+          "answer_sections": {
+            "Kızların beklentisi": "Sultan'ın gençliğini ve annelerinin hastalığını öne sürerek babalarından gidişe engel olmasını isterler.",
+            "Çordon'un tutumu": "Sultan'ın kendi isteğiyle gönüllü olduğunu öğrenince kararına müdahale etmeyi doğru bulmaz ve “Oğluma kötülük edemem!” der.",
+            "Ortak değer ve ayrılık": "Her iki taraf da aile bağını önemser; Sultan'ı korumanın ne anlama geldiği konusunda ayrılır."
+          }
         },
         "content": null
       },
@@ -11401,12 +11562,17 @@
           "printed_page": 117,
           "question_no": "2",
           "prompt_summary": "'Her ne sözüm varsa ebedî taşa vurdum.' ifadesini yorumlama",
-          "answer": "“Her ne sözüm varsa ebedî taşa vurdum.” sözü, Bilge Kağan'ın söylediklerini kalıcı kılma ve kendisinden sonrakilere ulaştırma isteğini anlatır. Sözün taşa yazılması, geçici bir konuşmanın ötesinde gelecek kuşakların okuyabileceği bir tanıklık bırakır. Yazıtın “Ona bakarak bilin” diye devam etmesi, bu sözlerin sonraki kuşaklara seslendiğini metin içinde açıkça gösterir. Bu yönüyle ifade, tarihî ve kültürel hafızanın korunması olarak yorumlanabilir. Taşın türü, çağdaş siyasal ilkeler veya millet-devlet arasında sözleşme bulunduğu bu cümleden çıkarılamaz.",
+          "answer": "Bu söz, Bilge Kağan'ın anlattıklarını kalıcılaştırıp gelecek kuşaklara ulaştırma isteğini gösterir.",
           "guidance": "Öğrenciden yorumunu “ebedî”, “taşa vurdum” ve devamındaki “Ona bakarak bilin” ifadelerinden biriyle temellendirmesini isteyin. Kalıcılık ve kuşaklara seslenme metin dayanaklı yorumlardır; belirli taş malzemesi ya da modern yönetim kavramları metnin doğrudan söylediği bilgi gibi sunulmamalıdır.",
           "evidence_quotes": [
             "Her ne sözüm varsa ebedî taşa vurdum."
           ],
-          "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 2"
+          "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 2",
+          "answer_sections": {
+            "Sözü kalıcılaştırma": "Sözün taşa yazılması, geçici bir konuşmanın ötesinde gelecek kuşakların okuyabileceği bir tanıklık bırakır.",
+            "Sonraki kuşaklara sesleniş": "Yazıtın “Ona bakarak bilin” diye devam etmesi, bu sözlerin sonraki kuşaklara yöneldiğini metin içinde açıkça gösterir.",
+            "Yorum sınırı": "Taşın türü, çağdaş siyasal ilkeler veya millet-devlet arasında sözleşme bulunduğu bu cümleden çıkarılamaz."
+          }
         },
         "content": null
       },
@@ -11638,9 +11804,19 @@
           "printed_page": 119,
           "question_no": "1",
           "prompt_summary": "Oğulla Buluşma ile Kül Tigin Âbidesi'ndeki gerçeklik anlayışını karşılaştırma",
-          "answer": "Oğulla Buluşma'da kişiler ve olay örgüsü hikâyenin kurmaca dünyasında sunulur; ancak savaş dönemi ve toplumsal koşullarla ilişki kurar. Kurmaca olması metni tarihî/toplumsal gerçeklikten koparmaz. Kül Tigin Âbidesi ise geçmişe ilişkin kişi, olay ve düşünceleri aktaran tarihî tanıklık ve belge niteliğindedir. Bununla birlikte yazıt Bilge Kağan'ın dilinden kurulmuş; neyin anlatılacağını seçen, muhataba seslenen ve öğüt veren bir bakış açısı taşır. Bu nedenle tarihî belge olması, anlatımının kendiliğinden tarafsız/nesnel olduğu anlamına gelmez.",
+          "answer": "Oğulla Buluşma'da kurmaca anlatım, Kül Tigin Âbidesi'nde tarihî tanıklık ağır basar; yazıtta Bilge Kağan'ın bakış açısı belirgindir, bu nedenle tarihî belge olması onu kendiliğinden tarafsız yapmaz.",
           "guidance": "Öğrenciden karşılaştırmasını kurmaca anlatının olay/kişi kuruluşundan ve yazıttaki birinci kişi hitabı ya da seçilmiş tarih anlatısından kanıtlamasını isteyin. “Kurmaca–tarihî tanıklık–anlatıcının bakış açısı” ekseninde gerekçeli farklı cevaplar kabul edilebilir.",
-          "source_locator": "basılı s.119 / PDF s.120 — Yorumlayalım soru 1"
+          "source_locator": "basılı s.119 / PDF s.120 — Yorumlayalım soru 1",
+          "answer_sections": {
+            "Oğulla Buluşma": {
+              "Gerçeklik": "Kişiler ve olay örgüsü kurmaca dünyada sunulur; ancak metin savaş dönemi ve toplumsal koşullarla da ilişki kurar.",
+              "Anlatım": "Olaylar hikâyenin anlatıcısı ve kurduğu olay örgüsü aracılığıyla verilir."
+            },
+            "Kül Tigin Âbidesi": {
+              "Gerçeklik": "Geçmişe ilişkin kişi, olay ve düşünceleri aktaran tarihî tanıklık ve belge niteliğindedir.",
+              "Anlatım": "Bilge Kağan'ın dilinden kurulmuş; neyin anlatılacağını seçen, muhataba seslenen ve öğüt veren bir bakış taşır. Tarihî belge olması anlatımını kendiliğinden tarafsız/nesnel yapmaz."
+            }
+          }
         },
         "content": null
       },
@@ -11711,12 +11887,17 @@
           "printed_page": 120,
           "question_no": "Düşünelim Paylaşalım",
           "prompt_summary": "Dil, kültür ve tarih birliğinin millet hayatındaki önemini Orhun örneğiyle açıklama",
-          "answer": "Metindeki açıklama, dil ve kültür birlikteliğini bir topluma millet olma vasfı kazandıran önemli unsurlardan biri olarak görür; Orhun Yazıtlarını ortak dil, kültür ve tarih hafızasına ilişkin tarihî belge örneği sayar. Buradan, ortak anlatıların bir topluluğun geçmişini paylaşmasına ve kültürel bağ kurmasına katkı sağlayabileceği çıkarımı yapılabilir. Öğrenci bu görüşü bugünle ilişkilendirirken dilin veya tarih bilgisinin tek başına ortak hedefi ya da belirli bir siyasi sonucu garanti ettiğini ileri sürmek zorunda değildir; farklı örnek ve değerlendirmeler gerekçeleriyle ele alınabilir.",
+          "answer": "Kitaba göre dil, kültür ve tarih ortaklığı millet hayatını destekleyen unsurlardandır; Orhun Yazıtları bu ortak hafızaya örnek oluşturur.",
           "guidance": "Üç düzeyi ayırın: kaynak metnin dil/kültür birlikteliğine ilişkin görüşü; Orhun örneğinden çıkarılabilecek olası sonuç; öğrencinin güncel değerlendirmesi. Tarihî öğüdü bütün toplumlar ve çağlar için değişmez kural gibi sunmayın.",
           "evidence_quotes": [
             "Dil ve kültür birlikteliği... bir topluma millet olma vasfını kazandıran en önemli yapı taşıdır."
           ],
-          "source_locator": "basılı s.120 / PDF s.121 — Düşünelim Paylaşalım"
+          "source_locator": "basılı s.120 / PDF s.121 — Düşünelim Paylaşalım",
+          "answer_sections": {
+            "Metindeki görüş": "Dil ve kültür birlikteliği, bir topluma millet olma vasfı kazandıran önemli unsurlardan biri olarak açıklanır.",
+            "Orhun örneği": "Orhun Yazıtları ortak dil, kültür ve tarih hafızasına ilişkin tarihî belge örneği sayılır; ortak anlatıların geçmişi paylaşmaya ve kültürel bağ kurmaya katkısı buradan çıkarılabilir.",
+            "Günümüzle ilişki": "Dil veya tarih bilgisi tek başına ortak hedefi ya da belirli bir siyasi sonucu garanti etmez; farklı örnek ve değerlendirmeler gerekçeleriyle ele alınabilir."
+          }
         },
         "content": null
       },
@@ -12043,8 +12224,13 @@
           "printed_page": 123,
           "question_no": "Yorumlayalım 1",
           "prompt_summary": "Metnin önceki öğretici metin türleriyle benzerlikleri",
-          "answer": "Örnek karşılaştırma: Metin söylev özellikleri taşır; çünkü Bilge Kağan millete ve beylere doğrudan seslenir (“işitin”, “dinle”) ve onları düşünmeye/yönelmeye çağırır. Anı özellikleri de görülür; anlatıcı kendi yaşadıklarını ve Kül Tigin'in ölümü karşısındaki duygularını birinci kişiyle aktarır. Bu benzerlikler metni bütünüyle yalnızca söylev veya anı türü yapmaz; öğrenci başka bir öğretici türle metinden kanıt göstererek ilişki kurabilir.",
-          "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 1"
+          "answer": "Metin hem söylev hem anı özellikleri taşır; bu özellikler metni bütünüyle tek bir türe indirgemez.",
+          "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 1",
+          "answer_sections": {
+            "Söylev yönü": "Bilge Kağan millete ve beylere doğrudan seslenir (“işitin”, “dinle”) ve onları düşünmeye/yönelmeye çağırır.",
+            "Anı yönü": "Anlatıcı kendi yaşadıklarını ve Kül Tigin'in ölümü karşısındaki duygularını birinci kişiyle aktarır.",
+            "Yorum sınırı": "Öğrenci başka bir öğretici türle de metinden kanıt göstererek ilişki kurabilir."
+          }
         },
         "content": null
       },
@@ -12075,8 +12261,13 @@
           "printed_page": 123,
           "question_no": "Yorumlayalım 2",
           "prompt_summary": "Söz varlığı ve üslup seçimlerinin nedenleri ve metne etkisi",
-          "answer": "Metin, doğrudan hitap ve öğüt niteliğine uygun olarak “işitin”, “dinle” gibi çağrılar ve retorik sorular kullanır. “Gece uyumadım, gündüz oturmadım” yinelemesi ile “çıplak milleti elbiseli, fakir milleti zengin kıldım” karşıtlığı anlatılanları vurgular. Bu seçimlerin okurda uyandırdığı etki yorumlanabilir; taşın malzemesi, sesli okunma amacı veya yazarın bunları seçme niyeti metinde ayrıca açıklanmamıştır.",
-          "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 2"
+          "answer": "Metnin doğrudan hitap ve öğüt yönü, söz varlığı ve üslup seçimlerinde belirgindir.",
+          "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 2",
+          "answer_sections": {
+            "Doğrudan hitap": "“İşitin”, “dinle” gibi çağrılar ve retorik sorular, muhataba seslenişi destekler.",
+            "Yineleme ve karşıtlık": "“Gece uyumadım, gündüz oturmadım” yinelemesi ile “çıplak milleti elbiseli, fakir milleti zengin kıldım” karşıtlığı anlatılanları vurgular.",
+            "Yorum sınırı": "Bu seçimlerin okurda uyandırdığı etki yorumlanabilir. Taşın malzemesi, sesli okunma amacı veya yazarın bunları seçme niyeti metinde ayrıca açıklanmamıştır."
+          }
         },
         "content": null
       },
@@ -12107,8 +12298,13 @@
           "printed_page": 123,
           "question_no": "Yorumlayalım 3",
           "prompt_summary": "İçerik, yapı, dil ve üslup arasındaki uyumu değerlendirme",
-          "answer": "Örnek değerlendirme: İçerik, yapı, dil ve üslubun uyumlu olduğu savunulabilir. Metin önce geçmiş olayları ve yönetim deneyimini aktarır, sonra muhataplara seslenir; Kül Tigin'in ölümü ve yas anlatısı da metne kişisel/duygusal bir boyut ekler. Doğrudan hitap ve yinelemeler bu amaçlarla uyumlu görülebilir. Bu estetik değerlendirme tek doğru değildir; öğrenci başka bir yargıyı metinden örneklerle gerekçelendirebilir.",
-          "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 3"
+          "answer": "İçerik, yapı, dil ve üslubun uyumlu olduğu savunulabilir; bu estetik değerlendirme tek doğru değildir.",
+          "source_locator": "basılı s.123 / PDF s.124 — Yorumlayalım soru 3",
+          "answer_sections": {
+            "İçerik ve yapı": "Metin önce geçmiş olayları ve yönetim deneyimini aktarır, sonra muhataplara seslenir. Kül Tigin'in ölümü ve yas anlatısı metne kişisel/duygusal bir boyut ekler.",
+            "Dil ve üslup": "Doğrudan hitap ve yinelemeler, anlatımın amaçlarıyla uyumlu görülebilir.",
+            "Değerlendirme": "Öğrenci başka bir yargıyı da metinden örneklerle gerekçelendirebilir."
+          }
         },
         "content": null
       },
@@ -12139,8 +12335,14 @@
           "printed_page": 124,
           "question_no": "Yorumlayalım 4",
           "prompt_summary": "Söylev, anı ve tarihî belge özelliklerinin üsluba etkisi",
-          "answer": "Söylev özellikleri doğrudan seslenme ve çağrılarla; anı özellikleri Bilge Kağan'ın geçmiş olayları, kardeşinin ölümünü ve kendi yasını birinci kişiyle anlatmasıyla üslubu etkiler. Metindeki kişi, yer ve zaman kayıtları tarihî bilgi değeri taşır; ancak anlatımı tarafsız ya da bütünüyle nesnel yapmaz. Yas töreni anlatılır, fakat alıntılanan parçada cenazede gözyaşı döküldüğü söylenmez.",
-          "source_locator": "basılı s.124 / PDF s.125 — Yorumlayalım soru 4"
+          "answer": "Söylev ve anı özellikleri üslubu şekillendirir; tarihî kayıtlar bilgi değeri sağlar, ancak anlatımın tarafsızlığını garanti etmez.",
+          "source_locator": "basılı s.124 / PDF s.125 — Yorumlayalım soru 4",
+          "answer_sections": {
+            "Söylev": "Doğrudan seslenme ve çağrılar söylev yönünü oluşturur.",
+            "Anı": "Bilge Kağan'ın geçmiş olayları, kardeşinin ölümünü ve kendi yasını birinci kişiyle anlatması anı yönünü gösterir.",
+            "Tarihî belge": "Metindeki kişi, yer ve zaman kayıtları tarihî bilgi değeri taşır.",
+            "Metin sınırı": "Yas töreni anlatılır; ancak alıntılanan parçada cenazede gözyaşı döküldüğü söylenmez."
+          }
         },
         "content": null
       },
@@ -12354,8 +12556,12 @@
           "printed_page": 125,
           "question_no": "Değerlendirme",
           "prompt_summary": "Orhun Abidelerinin Türk dili ve tarihi açısından değerini değerlendirme",
-          "answer": "Kitaptaki Bilgi Köşesi'ne göre Orhun Abideleri Türkçenin günümüze ulaşan ilk yazılı örnekleri kabul edilir; 38 harfli Göktürk alfabesiyle yazılmıştır. Bilgi Köşesi dili sade ve anlatımı güçlü diye niteler. Yazıtlar Türklerin tarihî olayları, devlet anlayışı, toplum yapısı ve sosyal yaşamı hakkında bilgi verir; VIII. yüzyılda Tonyukuk, Kül Tigin ve Bilge Kağan adına dikilmiş taşlardır. Bu özellikler, Türk dili ve tarihini incelemek için önemlerini açıklar.",
-          "source_locator": "basılı s.125 / PDF s.126 — Değerlendirme"
+          "answer": "Orhun Abideleri, Türkçenin günümüze ulaşan ilk yazılı örnekleri arasında kabul edilir ve Türk tarihini incelemeye yarayan belgelerdir.",
+          "source_locator": "basılı s.125 / PDF s.126 — Değerlendirme",
+          "answer_sections": {
+            "Türk dili açısından": "Kitabın Bilgi Köşesi'ne göre yazıtlar Türkçenin günümüze ulaşan ilk yazılı örnekleri arasında kabul edilir; 38 harfli Göktürk alfabesiyle yazılmıştır. Dil sade, anlatım güçlü olarak nitelenir.",
+            "Türk tarihi ve toplumu açısından": "Yazıtlar tarihî olaylar, devlet anlayışı, toplum yapısı ve sosyal yaşam hakkında bilgi verir. VIII. yüzyılda Tonyukuk, Kül Tigin ve Bilge Kağan adına dikilmiş taşlardır."
+          }
         },
         "content": null
       },
@@ -12547,9 +12753,13 @@
           "printed_page": 127,
           "question_no": "4",
           "prompt_summary": "Erük/erik kelimesindeki anlam değişmesi",
-          "answer": "Dîvânu Lugâti’t-Türk'teki tanımı ile günümüz Türkçesindeki kullanımı karşılaştırıldığında 'erük / erik' kelimesinde belirgin bir anlam daralması (anlam özelleşmesi) meydana gelmiştir:\n\n• 11. Yüzyıldaki Geniş Anlamı: Eserde 'erük', çekirdekli ve etli yaz meyvelerinin genel üst kategorisi olarak kullanılır. Nitekim Kâşgarlı Mahmud vasıflarına göre şeftaliye 'tǖlüg erük (tüylü erik)', kayısıya 'sārıg erük (sarı erik)', siyah eriğe ise 'kara erük' denildiğini açıklar.\n• Günümüzdeki Daralan Anlamı: Türkiye Türkçesinde şeftali ve kayısı bağımsız meyve adları hâline gelmiş; 'erik' kelimesi ise yalnız 'Prunus domestica' türüne ait belirli bir meyveyi ifade edecek şekilde daralmıştır.",
+          "answer": "Dîvânu Lugâti’t-Türk'teki “erük” ile günümüz Türkçesindeki “erik” karşılaştırıldığında anlam daralması (anlam özelleşmesi) görülür.",
           "source_locator": "basılı s.126-127 / PDF s.127-128 — soru 4",
-          "explanation": "Anlam daralması; bir kelimenin tarihsel süreçte kapsadığı geniş varlık ve kavram alanından sıyrılarak yalnızca bu varlıklardan tek bir türü veya daha dar bir alanı karşılar hâle gelmesidir."
+          "explanation": "Anlam daralması; bir kelimenin tarihsel süreçte kapsadığı geniş varlık ve kavram alanından sıyrılarak yalnızca bu varlıklardan tek bir türü veya daha dar bir alanı karşılar hâle gelmesidir.",
+          "answer_sections": {
+            "11. yüzyıldaki geniş anlamı": "Eserde “erük”, çekirdekli ve etli yaz meyvelerinin genel üst kategorisi olarak kullanılır. Kâşgarlı Mahmud; şeftaliyi “tǖlüg erük” (tüylü erik), kayısıyı “sārıg erük” (sarı erik), siyah eriği ise “kara erük” olarak açıklar.",
+            "Günümüzdeki daralan anlamı": "Türkiye Türkçesinde şeftali ve kayısı bağımsız meyve adları hâline gelmiş; “erik” kelimesi ise yalnızca “Prunus domestica” türüne ait belirli bir meyveyi ifade edecek şekilde daralmıştır."
+          }
         },
         "content": null
       },
@@ -15637,9 +15847,26 @@
           "printed_page": 152,
           "question_no": "Kural Uygulayabilme (destek)",
           "prompt_summary": "Sanal müze izlenim yazısı için kitaptaki 13 yazma aşamasına dayalı öz denetim",
-          "answer": "Kitapta ayrı bir teslim öncesi kontrol listesi yoktur. Aşağıdaki öğretmen destekli öz denetim, basılı s.152'deki 13 yazma aşamasını kontrol sorularına dönüştürür:\n\n1. Planımda kime, neyi, nasıl ve hangi araçlarla anlatacağım açık mı?\n2. Yazıma planıma uygun, ilgi çekici bir girişle başladım mı?\n3. Başlığım içeriğe uygun mu?\n4. Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım mı?\n5. Söz varlığını hedef kitleye ve bağlama uygun kullandım mı?\n6. Konuyu desteklemek için uygun anlatım biçimi ve düşünceyi geliştirme yollarından yararlandım mı?\n7. Duygu ve düşüncelerimi özgün, tutarlı bir üslupla aktardım mı?\n8. Vermek istediğim iletileri açık veya örtük biçimde yeterince ayrıntılandırdım mı?\n9. Millî/manevi değerleri ve kültürel unsurları konuya uygun biçimde ele aldım mı?\n10. Toplumsal hassasiyetlere dikkat edip olumlu tutum ve değerleri vurguladım mı?\n11. Dil bilgisi kurallarını işlevine uygun uygulayıp farklı cümle yapıları kullandım mı?\n12. Türkçeyi bilinçli ve özenli kullandım mı?\n13. Yazım ve noktalama kurallarını gözden geçirdim mi?",
+          "answer": "Bu öğretmen destekli öz denetim listesi, basılı s.152'deki 13 yazma aşamasını kontrol sorularına dönüştürür; kitapta ayrı bir teslim öncesi kontrol listesi yoktur.",
           "guidance": "Bu, öğretmen tarafından sunulan yardımcı bir öz denetim aracıdır; kitaptaki ayrı bir form değildir ve s.153'teki öz/akran değerlendirme formunun ya da görünmeyen QR içeriğinin yerine geçmez. Öğrencinin gerçek müze seçimi ve gözlemleri esas alınmalıdır.",
-          "source_locator": "basılı s.152 / PDF s.153 — yazma aşamaları"
+          "source_locator": "basılı s.152 / PDF s.153 — yazma aşamaları",
+          "answer_sections": {
+            "Öz denetim soruları": [
+              "Planımda kime, neyi, nasıl ve hangi araçlarla anlatacağım açık mı?",
+              "Yazıma planıma uygun, ilgi çekici bir girişle başladım mı?",
+              "Başlığım içeriğe uygun mu?",
+              "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım mı?",
+              "Söz varlığını hedef kitleye ve bağlama uygun kullandım mı?",
+              "Konuyu desteklemek için uygun anlatım biçimi ve düşünceyi geliştirme yollarından yararlandım mı?",
+              "Duygu ve düşüncelerimi özgün, tutarlı bir üslupla aktardım mı?",
+              "Vermek istediğim iletileri açık veya örtük biçimde yeterince ayrıntılandırdım mı?",
+              "Millî/manevi değerleri ve kültürel unsurları konuya uygun biçimde ele aldım mı?",
+              "Toplumsal hassasiyetlere dikkat edip olumlu tutum ve değerleri vurguladım mı?",
+              "Dil bilgisi kurallarını işlevine uygun uygulayıp farklı cümle yapıları kullandım mı?",
+              "Türkçeyi bilinçli ve özenli kullandım mı?",
+              "Yazım ve noktalama kurallarını gözden geçirdim mi?"
+            ]
+          }
         },
         "content": {
           "items": [
@@ -15953,8 +16180,16 @@
           "printed_page": 155,
           "question_no": "2",
           "prompt_summary": "Orhun Abidelerindeki atasözü ve deyimlerin genel amacını belirleme",
-          "answer": "Doğru cevap: **C — Devletin temel değerlerini aktarmak.** Tablodaki il, töre, devlet sahibi olmak, birlik, mücadele ve yoğun çalışma ifadeleri ortak olarak devletin kurulması, korunması ve toplumun düzenine ilişkin değerleri öne çıkarır. Diğer seçenekler tablonun bütününü aynı ölçüde açıklamaz.",
-          "source_locator": "basılı s.155 / PDF s.156 — soru 2"
+          "answer": "Doğru cevap: C — Devletin temel değerlerini aktarmak.",
+          "source_locator": "basılı s.155 / PDF s.156 — soru 2",
+          "answer_sections": {
+            "Tablodaki dayanaklar": [
+              "İl ve töre düzenine ilişkin ifadeler.",
+              "Devlet sahibi olma düşüncesi.",
+              "Birlik, mücadele ve yoğun çalışma vurguları."
+            ],
+            "Ortak amaç": "Bu ifadeler devletin kurulması, korunması ve toplum düzenine ilişkin değerleri öne çıkarır."
+          }
         },
         "content": {
           "lead": "Tablonun ortak iletisine odaklanın; tek sözün anlamıyla genel amacı ayırın.",
@@ -16032,8 +16267,16 @@
           "printed_page": 157,
           "question_no": "3",
           "prompt_summary": "Kutadgu Bilig, Dede Korkut Hikâyeleri ve Kamus-ı Türkî tablosundan ulaşılamayan çıkarım",
-          "answer": "Doğru cevap: A. Üç eserin tamamının Türk toplumunun sözlü kültürden yazılı kültüre geçiş sürecinde ortaya çıktığı çıkarılamaz. Dede Korkut Hikâyeleri destan geleneğinden halk hikâyeciliğine geçişle ilişkilendirilir; Kutadgu Bilig doğrudan yazılı bir mesnevidir, Kamus-ı Türkî ise 19. yüzyılda hazırlanmış bir sözlüktür. B, C, D ve E'deki çıkarımlar verilen eser notları ve tabloda belirtilen özelliklerle uyumludur.",
-          "source_locator": "basılı s.156-157 / PDF s.157-158 — soru 3"
+          "answer": "Doğru cevap: A.",
+          "source_locator": "basılı s.156-157 / PDF s.157-158 — soru 3",
+          "answer_sections": {
+            "A seçeneği neden ulaşılamaz?": {
+              "Dede Korkut Hikâyeleri": "Destan geleneğinden halk hikâyeciliğine geçişle ilişkilendirilir.",
+              "Kutadgu Bilig": "Doğrudan yazılı bir mesnevidir.",
+              "Kamus-ı Türkî": "19. yüzyılda hazırlanmış bir sözlüktür."
+            },
+            "Diğer seçenekler": "B, C, D ve E'deki çıkarımlar verilen eser notları ve tabloda belirtilen özelliklerle uyumludur."
+          }
         },
         "content": {
           "lead": "Sözlü kültürden yazılı kültüre geçiş iddiasını her eserin tarihiyle ayrı ayrı sınayın.",
@@ -16114,8 +16357,17 @@
           "printed_page": 157,
           "question_no": "5",
           "prompt_summary": "Üç eserle ilgili notlarda ortak olan bilgiyi belirleme",
-          "answer": "Doğru cevap: B — Yalnız II. Sema'nın notları incelendiğinde her üç eser için de bir 'ilk olma' özelliği ortak olarak belirtilmiştir:\n- Kutadgu Bilig: 'Siyasetname türünün ilk örneğidir' ve 'İslami Devir Türk Edebiyatı'nda verilen ilk Türkçe eserdir.'\n- Dede Korkut Hikâyeleri: 'Destan geleneğinden halk hikâyeciliğine geçişin ilk ürünüdür.'\n- Kamus-ı Türkî: 'Türkçe adına hazırlanan tek dilli sözlükler arasında \"Türkçe\" adının ilk kez kullanıldığı sözlüktür.'\n\nBuna karşılık; I. öncül (Yazar bilgisi) Dede Korkut için verilmemiştir çünkü anonimdir; III. öncül (Yüzyıl bilgisi) Kutadgu Bilig (11. yy) ve Kamus-ı Türkî (19. yy) için verilmiş fakat Dede Korkut için belirtilmemiştir. Dolayısıyla yalnızca II. öncül ortaktır.",
-          "source_locator": "basılı s.157 / PDF s.158 — soru 5"
+          "answer": "Doğru cevap: B — Yalnız II.",
+          "source_locator": "basılı s.157 / PDF s.158 — soru 5",
+          "answer_sections": {
+            "II. İlk olma özelliği": [
+              "Kutadgu Bilig: Siyasetname türünün ilk örneğidir; İslami Devir Türk Edebiyatı'nda verilen ilk Türkçe eserdir.",
+              "Dede Korkut Hikâyeleri: Destan geleneğinden halk hikâyeciliğine geçişin ilk ürünüdür.",
+              "Kamus-ı Türkî: Türkçe adına hazırlanan tek dilli sözlükler arasında “Türkçe” adının ilk kez kullanıldığı sözlüktür."
+            ],
+            "I. Yazar bilgisi": "Bilgi üç eser için ortak değildir; Dede Korkut Hikâyeleri anonimdir.",
+            "III. Yüzyıl bilgisi": "Kutadgu Bilig için 11. yüzyıl, Kamus-ı Türkî için 19. yüzyıl belirtilir; Dede Korkut Hikâyeleri için yüzyıl bilgisi verilmez."
+          }
         },
         "content": {
           "sections": [
@@ -16158,9 +16410,18 @@
           "printed_page": 158,
           "question_no": "6",
           "prompt_summary": "Âşık atışmasında açılan ayağa uygun dörtlüğü belirleme",
-          "answer": "Doğru cevap: D. Atışmada sıra, son dörtlüğü söyleyen Şeref Taşlıova'dan sonra Murat Çobanoğlu'na gelir. C ve D seçeneklerinin ikisi de “Ne arıyan olur (vallah) ne soran olur.” dizesiyle biter; bu nedenle yalnız bu dizeyi tekrar etmek ayırt edici değildir. D, “Çobanoğlu der ki...” diyerek sıra gelen âşığın mahlasıyla kurulmuş ve açılan ayağa uygun bağlama dizesini sürdürmüştür. C'de ise “Şeref...” adı geçer. A, B ve E bağlama dizesini sürdürmez. Burada “olur” redif, “-an/-en” zengin/tam kafiye gibi verilen kalıba uymayan teknik etiketler kullanılmamalıdır.",
+          "answer": "Doğru cevap: D.",
           "source_locator": "basılı s.158 / PDF s.159 — soru 6",
-          "guidance": "Önce son dizeyi sağlayan C ve D'yi birlikte işaretletin; sonra “Son dörtlüğü kim söyledi? Şimdi sıra kimde? Seçenek hangi mahlasla başlıyor?” sorularıyla D'ye ulaştırın."
+          "guidance": "Önce son dizeyi sağlayan C ve D'yi birlikte işaretletin; sonra “Son dörtlüğü kim söyledi? Şimdi sıra kimde? Seçenek hangi mahlasla başlıyor?” sorularıyla D'ye ulaştırın.",
+          "answer_sections": {
+            "Ayırt edici noktalar": [
+              "Sıra, son dörtlüğü söyleyen Şeref Taşlıova'dan sonra Murat Çobanoğlu'na gelir.",
+              "C ve D seçenekleri aynı “Ne arıyan olur (vallah) ne soran olur.” dizesiyle biter; bu dize tek başına ayırt edici değildir.",
+              "D, “Çobanoğlu der ki...” diyerek sıradaki âşığın mahlasıyla başlar ve açılan ayağı sürdürür; C'de “Şeref...” adı geçer.",
+              "A, B ve E seçenekleri bağlama dizesini sürdürmez."
+            ],
+            "Terim kullanımı": "“Olur” redif, “-an/-en” zengin/tam kafiye gibi verilen kalıba uymayan teknik etiketler kullanılmamalıdır."
+          }
         },
         "content": {
           "lead": "Kitaptaki atışmayı ve A–E seçeneklerini okuyun. Son dizeyi, önceki dizelerin uyak düzenini ve söyleyiş sırasını karşılaştırın."
@@ -16194,9 +16455,17 @@
           "printed_page": 159,
           "question_no": "7",
           "prompt_summary": "Âşık atışmasıyla ilgili öğrenci değerlendirmelerinden yanlış olanı belirleme ve kendi değerlendirmesini ekleme",
-          "answer": "**a)** Ahmet, Taşlıova'nın dörtlüklerini Çobanoğlu'nunkilerden “daha sanatlı” buluyor. Bu, metinden zorunlu olarak çıkan nesnel bir sonuç değil, ölçüt gerektiren öznel bir estetik yargıdır. Soru tek bir yanlış değerlendirme bekliyorsa amaçlanan yanıt Ahmet olabilir; ancak verilen şiir bu karşılaştırmayı tek başına ne doğrular ne de çürütür. Esin'in hangi dörtlükte didaktik söyleyişin daha belirgin olduğuna ilişkin karşılaştırması da kanıtla gerekçelendirilmelidir.\n\n**b) Örnek katılım cümlesi:** “Her iki âşığın dizelerinde de yerel söyleyişler ve tekrar edilen ‘Ne arıyan olur (vallah) ne soran olur.’ dizesi dikkatimi çekti; bu ortak yapı karşılıklı icranın bütünlüğünü güçlendiriyor.”",
+          "answer": "a) Amaçlanan yanıt: Ahmet. b) Örnek katılım cümlesi aşağıdadır.",
           "guidance": "Bu açık uçlu değerlendirmede Ahmet, ölçütsüz estetik karşılaştırma nedeniyle amaçlanan yanıt olabilir; metin tek başına onun yargısının yanlışlığını kanıtlamaz. Gerekçeli alternatif eleştirileri kabul edin; âşıkların denk ustalıkta olduğu varsayımını üretmeyin.",
-          "source_locator": "basılı s.159 / PDF s.160 — soru 7"
+          "source_locator": "basılı s.159 / PDF s.160 — soru 7",
+          "answer_sections": {
+            "a) Değerlendirme": [
+              "Ahmet, Taşlıova'nın dörtlüklerini Çobanoğlu'nunkilerden “daha sanatlı” buluyor. Bu, metinden zorunlu olarak çıkan nesnel bir sonuç değil, ölçüt gerektiren öznel bir estetik yargıdır.",
+              "Soru tek bir yanlış değerlendirme bekliyorsa amaçlanan yanıt Ahmet olabilir; verilen şiir bu karşılaştırmayı tek başına ne doğrular ne de çürütür.",
+              "Esin'in hangi dörtlükte didaktik söyleyişin daha belirgin olduğuna ilişkin karşılaştırması da kanıtla gerekçelendirilmelidir."
+            ],
+            "b) Örnek katılım cümlesi": "Her iki âşığın dizelerinde de yerel söyleyişler ve tekrar edilen “Ne arıyan olur (vallah) ne soran olur.” dizesi dikkatimi çekti; bu ortak yapı karşılıklı icranın bütünlüğünü güçlendiriyor."
+          }
         },
         "content": {
           "lead": "Kitaptaki dört yargıyı dörtlüklerle karşılaştırın. Kendi görüşünüzü en az bir somut metin özelliğiyle gerekçelendirin.",
@@ -16433,7 +16702,7 @@
           "printed_page": 162,
           "question_no": "1",
           "prompt_summary": "Yol üzerinde yürüyen insan ayrıntısının temsil ettiği anlam",
-          "answer": "Bu görsel tek bir zorunlu anlama indirgenmemelidir. **Örnek bir yorum olarak** yol üzerinde yürüyen insan, yaşam yolculuğunu; arka plandaki saat, zamanın geçişini; yeşil ve daha kurak görünen alanların karşıtlığı ise yaşamın farklı dönemlerini veya imkân–güçlük karşıtlığını çağrıştırabilir. Aynı ayrıntılar farklı öğrencilerde başka gerekçeli anlamlar da uyandırabilir.",
+          "answer": "Görsel tek bir zorunlu anlama indirgenmemelidir; örnek yorumlar ve değerlendirme ölçütü aşağıda ayrılmıştır.",
           "guidance": "“Yol kesinlikle doğumdan ölüme ömür çizgisidir” veya “saat acımasız zamanı simgeler” gibi tek anlam dayatmayın. Öğrencinin yol, insan, saat ve çevre ayrıntılarından hareketle kurduğu farklı ama gerekçeli yorumları kabul edin.",
           "source_locator": "basılı s.162 / PDF s.163 — soru 1 / görsel doğrulandı",
           "answer_sections": {
@@ -16514,7 +16783,7 @@
           "printed_page": 162,
           "question_no": "3",
           "prompt_summary": "Görselden hareketle yaşama dair çıkarımlar",
-          "answer": "Görselden yaşama ilişkin farklı çıkarımlar yapılabilir. Örneğin zamanın geçmesi, insanın bir yol üzerinde ilerlemesi, seçim ve belirsizlik, umut ve güçlüklerin bir arada bulunması, yaşamın değişim içermesi gibi düşünceler görsel ayrıntılarıyla ilişkilendirilebilir. Bunların hiçbiri tek zorunlu yorum değildir.",
+          "answer": "Görselden zaman, değişim, seçim, belirsizlik ve yaşam deneyimi üzerine farklı çıkarımlar yapılabilir; örnekler aşağıda.",
           "source_locator": "basılı s.162 / PDF s.163 — soru 3 / görsel doğrulandı",
           "answer_sections": {
             "Olası çıkarım alanları": [
@@ -16566,9 +16835,14 @@
           "printed_page": 162,
           "question_no": "4",
           "prompt_summary": "Görsele uygun roman adı önerme ve gerekçelendirme",
-          "answer": "Bu soru yaratıcı ve açık uçludur. Aşağıdaki başlıklar yalnız **örnek modeldir**:\n\n- **“Zamanın Gölgesinde”** — saat ve yol ayrıntıları, zaman içinde ilerleyen bir kahramanı çağrıştırabilir.\n- **“İki Yol Arasında”** — çevredeki karşıtlıklar, farklı yaşam seçenekleri veya dönemleri üzerine bir roman fikri doğurabilir.\n- **“Adımlar”** — yürüyen insan figürü, ilerleme ve yaşam yolculuğu çağrışımı yaratabilir.\n\nÖğrencinin önerdiği başka bir ad, görseldeki gerçek bir ayrıntıyla gerekçelendirildiğinde geçerlidir.",
+          "answer": "Bu soru yaratıcı ve açık uçludur. Aşağıdaki başlıklar örnek modeldir; öğrencinin görseldeki bir ayrıntıyla gerekçelendirdiği başka bir başlık da kabul edilir.",
           "guidance": "Başlığın mutlaka psikolojik roman, varoluşsal yalnızlık, gelenek–modernlik veya kader teması taşıması gerekmez. Başlık–görsel bağına odaklanın.",
-          "source_locator": "basılı s.162 / PDF s.163 — soru 4 / görsel doğrulandı"
+          "source_locator": "basılı s.162 / PDF s.163 — soru 4 / görsel doğrulandı",
+          "answer_sections": {
+            "Zamanın Gölgesinde": "Saat ve yol ayrıntıları, zaman içinde ilerleyen bir kahramanı çağrıştırabilir.",
+            "İki Yol Arasında": "Çevredeki karşıtlıklar, farklı yaşam seçenekleri veya dönemleri üzerine bir roman fikri doğurabilir.",
+            "Adımlar": "Yürüyen insan figürü, ilerleme ve yaşam yolculuğu çağrışımı yaratabilir."
+          }
         },
         "content": null
       },
@@ -16600,7 +16874,7 @@
           "printed_page": 163,
           "question_no": "5",
           "prompt_summary": "Radyo ve kayıt altına alınan mülakat görsellerinin çağrıştırdıkları",
-          "answer": "Görseller farklı iletişim ve kayıt biçimlerini çağrıştırabilir. **Radyo görseli** ses, yayın, dinleyici, haber, müzik veya radyo tiyatrosunu; **kayıt yapılan söyleşi görseli** ise soru-cevap, görüşme, bir kişinin düşünce ve deneyimlerinin ses/görüntüyle kaydedilmesini çağrıştırabilir. Öğrencinin görsel ayrıntılardan hareketle kurduğu başka bağlantılar da kabul edilmelidir.",
+          "answer": "İki görsel, sesli yayın ve söyleşi kayıtlarına ilişkin farklı çağrışımlar uyandırabilir.",
           "source_locator": "basılı s.163 / PDF s.164 — soru 5 / görseller doğrulandı",
           "answer_sections": {
             "Radyo görselinden olası çağrışımlar": "Sesli yayın, dinleme, haber, müzik, radyo tiyatrosu, geniş bir dinleyici kitlesine ulaşma.",
@@ -16733,7 +17007,7 @@
           "printed_page": 164,
           "question_no": "1",
           "prompt_summary": "Edebiyat sanatçısı ile ortaya koyduğu eser arasındaki ilişki",
-          "answer": "Peyami Safa'nın mülakatından hareketle sanatçı ile eseri arasında doğrudan özdeşlik değil, **seçme ve dönüştürme ilişkisi** olduğu söylenebilir. Yazar kendi hayatından parçalar ve başka insanların deneyimlerinden yararlanabilir; fakat bunları kurmaca içinde değiştirerek, birleştirerek veya yaşanmamış parçalar ekleyerek yeni bir eser oluşturur. Bu nedenle edebî eser, yazarın hayatının birebir kaydı değildir.",
+          "answer": "Sanatçı ile eseri arasında doğrudan özdeşlik değil, seçme ve dönüştürme ilişkisi vardır.",
           "explanation": "Mülakatta Safa'nın çocukluk dönemindeki **sağ kolunda ciddi bir rahatsızlıktan** söz edilir. Kaynak bunu “kemik rahatsızlığı” diye adlandırmaz.",
           "guidance": "“Aşkları, çocukluğu, toplumsal buhranları her eserin zorunlu ham maddesidir” gibi genel liste vermek yerine, bu metindeki Safa örneği üzerinden yaşanmışlık–kurmaca ayrımını kurdurun.",
           "source_locator": "basılı s.164 / PDF s.165 — soru 1",
@@ -16775,10 +17049,10 @@
           "printed_page": 164,
           "question_no": "2",
           "prompt_summary": "'Hayatımı yazsam roman olurdu.' sözünün hayat ile roman arasında kurduğu ilişki",
-          "answer": "“Hayatımı yazsam roman olurdu.” sözü, kişinin kendi yaşamında anlatılmaya değer, sıra dışı, beklenmedik, yoğun veya kendisi için anlamlı olaylar bulunduğunu düşündüğünü ifade edebilir. Bu ifade yalnız acı ve büyük dramlarla sınırlı değildir. Bir yaşamın romana dönüşmesi ise olayların seçilip düzenlenmesini, kişilerin ve çatışmaların kurmaca bütünlük içinde işlenmesini ve dil-anlatım yoluyla yeniden kurulmasını gerektirir.",
+          "answer": "Söz, yaşanmış yaşamın anlatılmaya değer yanları olabileceğini düşündürür; romanlaşma ise seçme ve kurmaca düzenleme gerektirir.",
           "source_locator": "basılı s.164 / PDF s.165 — soru 2",
           "answer_sections": {
-            "Sözün olası anlamı": "Kişi hayatını olaylı, ilginç, beklenmedik veya anlatılmaya değer buluyor olabilir.",
+            "Sözün olası anlamı": "Kişi hayatını olaylı, ilginç, beklenmedik veya anlatılmaya değer buluyor olabilir. Bu yorum yalnız acı ve büyük dramlarla sınırlı değildir.",
             "Romanla farkı": "Gerçek hayatta yaşanmış olmak, bir anlatıyı kendiliğinden roman yapmaz.",
             "Kurmaca boyutu": "Romancı olayları seçer, sıralar, dönüştürür ve anlatım yoluyla estetik bir bütün kurar."
           },
@@ -16818,7 +17092,7 @@
           "printed_page": 164,
           "question_no": "3",
           "prompt_summary": "Yazarın kişisel deneyimlerini romana yansıtmasının inandırıcılığa etkisi",
-          "answer": "Kişisel deneyim, yazara ayrıntı, gözlem ve duygu malzemesi sağlayabilir; ancak **tek başına inandırıcılık garantisi değildir**. Peyami Safa'nın mülakatındaki asıl vurgu, otobiyografik malzemenin yaratma özgürlüğünü sınırlayabileceği ve romanda yaşanmamış parçaların da çok güçlü bir gerçeklik etkisi yaratabileceğidir. Bu nedenle romanın inandırıcılığı, olayların gerçekten yaşanmasından çok kurmaca dünyanın kendi içinde tutarlı ve ikna edici kurulmasına bağlıdır.",
+          "answer": "Kişisel deneyim yazara ayrıntı ve duygu malzemesi sağlar; tek başına inandırıcılığı garanti etmez.",
           "evidence_quotes": [
             "romanda yaşanmamış kısımlar, yaşanmışlardan daha gerçektirler",
             "roman olağanı olmuş göstermek sanatıdır"
@@ -16891,7 +17165,7 @@
           "printed_page": 165,
           "question_no": "Okumayı Yönetebilme 1-5",
           "prompt_summary": "Huzur için okuma öncesi tahmin, Tanpınar araştırması ve yazar-eser çalışma kâğıdı",
-          "answer": "Bu çalışma üç bilgi katmanını birbirine karıştırmadan yürütülmelidir: **(1) başlık ve görsellerden okuma öncesi tahmin, (2) Tanpınar hakkında dış araştırma, (3) Huzur metnini okurken/okuduktan sonra metinden doğrulanan tespit.** İlk tahminler sonraki bilgiyle geriye dönük biçimde “düzeltilmemelidir”.",
+          "answer": "Okuma öncesi tahmin, yazar araştırması ve metin kanıtı ayrı aşamalarda tutulmalı; ilk tahmin geriye dönük değiştirilmemelidir.",
           "answer_sections": {
             "1. Okuma öncesi tahmin — yalnız başlık ve görseller": {
               "İçerik için örnek tahmin": "“Huzur” adı dinginlik, huzur arayışı veya bunun karşıtı bir huzursuzluğu çağrıştırabilir. Görseller İstanbul/Boğaz, şehir hayatı, geçmiş ve mekânla ilişkili bir roman olabileceğini düşündürebilir.",
@@ -17120,7 +17394,7 @@
           "printed_page": 166,
           "question_no": "Sıra Sizde 1-3",
           "prompt_summary": "Rastgele seçilen kelimelerden Huzur'un konusu ile dil ve anlatımına ilişkin tahmin geliştirme",
-          "answer": "Bu görevde hazır bir kelime listesi veya tek doğru tahmin verilmemelidir; çünkü kitap öğrenciden Huzur parçasına **göz gezdirip rastgele kendi kelime/kelime gruplarını seçmesini** ister. Öğretmen aşağıdaki işlem şablonuyla düşünmeyi destekleyebilir.",
+          "answer": "Öğrenci kelimeleri kendisi seçip aşağıdaki adımlarla tahminini oluşturur; hazır liste veya tek doğru tahmin verilmez.",
           "guidance": "Ada, Boğaz, Mümtaz, sedef rüyası, geçmiş medeniyet veya yalnızlık gibi kelime ve sonuçları öğrencinin seçimiymiş gibi önceden vermeyin. Öğrenci gerçekten göz gezdirdiğinde aynı kelimeleri seçerse elbette kullanabilir. Bakış açısı, tema ve üslup da bu aşamada kesin sonuç değil tahmindir.",
           "source_locator": "basılı s.166 / PDF s.167 — Sıra Sizde",
           "answer_sections": {
@@ -17616,7 +17890,7 @@
           "printed_page": 174,
           "question_no": "Hatırlayalım",
           "prompt_summary": "Huzur'un üslup özelliklerini kavram haritasına yerleştirme",
-          "answer": "Huzur parçasında gözlenebilen üslup özellikleri kavram haritasına metin kanıtlarıyla yerleştirilebilir. Aşağıdaki başlıklar örnek bir haritadır; her özellik metinden kısa bir dayanakla eşleştirilmelidir.",
+          "answer": "Üslup özellikleri Huzur parçasından alınan kısa kanıtlarla kavram haritasında gösterilmelidir.",
           "answer_sections": {
             "betimleyici": "İstanbul, Boğaz, yapılar, insanlar, ışık ve ses ayrıntılı biçimde canlandırılır.",
             "siirsel_mecazli": "“fecir kızları”, “sedef rüyası”, “ışık akisti, ses akisti” gibi imge, benzetme ve çağrışımlar kullanılır.",
@@ -17688,7 +17962,7 @@
           "printed_page": 175,
           "question_no": "1",
           "prompt_summary": "Okuma öncesi Huzur tahminlerini metinden öğrenilenlerle karşılaştırma",
-          "answer": "Bu soru öğrencinin s.165'te gerçekten yazdığı tahmini geri çağırmasını ister. Hazır bir başlangıç tahmini verilmemelidir. Karşılaştırma şu şablonla yapılabilir:",
+          "answer": "Öğrenci, s.165’te yazdığı gerçek tahmini okuma sonrası metinden edindiği bilgilerle karşılaştırmalıdır.",
           "guidance": "Öğrencinin s.165'teki gerçek tahmini esas alınmalıdır; öğrenci adına ‘sakin/dingin aşk romanı tahmin etmişti’ demeyin. Sonradan öğrenilen kimlik, modernleşme veya Doğu–Batı yorumlarını geriye dönük biçimde ilk tahmine eklemeyin.",
           "source_locator": "basılı s.175 / PDF s.176 — soru 1",
           "answer_sections": {
@@ -17836,7 +18110,7 @@
           "printed_page": 176,
           "question_no": "4",
           "prompt_summary": "Boğaz mekânına yüklenen işlev ve bunun dayandığı özellik",
-          "answer": "Boğaz yalnız olayların geçtiği bir yer değil, Mümtaz'ın kendisi ve ait olduğu kültür üzerine düşünmesini sağlayan bir **hafıza ve aidiyet mekânı** olarak işlev görür. Bu işlev, metinde Boğaz'ın manzarası ve mimarisinin ‘bizimle beraber kurulmuş’ olması ve ‘insanı kendisine çağırması’ ile açıklanır.",
+          "answer": "Boğaz, Mümtaz için hafıza ve aidiyet mekânı işlevi görür.",
           "evidence_quotes": [
             "her şey insanı kendisine çağırır, kendi derinliğine indirirdi",
             "hepsi bizimdi"
@@ -17883,7 +18157,7 @@
           "printed_page": 176,
           "question_no": "5",
           "prompt_summary": "'Bizler, kökü mazide olan atiyiz.' sözünü açıklama",
-          "answer": "“Bizler, kökü mazide olan atiyiz.” sözü, geleceğin geçmişten bütünüyle kopuk kurulamayacağını; insanın ve toplumun geleceğe yönelirken tarihî ve kültürel birikiminden beslendiğini anlatır. Huzur parçasında Mümtaz'ın “Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” sözü bu düşünceyle ilişkilendirilebilir.",
+          "answer": "Söz, geleceğin geçmişten ve kültürel birikimden beslenerek kurulabileceğini anlatır.",
           "evidence_quotes": [
             "Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor."
           ],
@@ -17928,7 +18202,7 @@
           "printed_page": 176,
           "question_no": "6",
           "prompt_summary": "'Kendi hayatımızın kaynakları' ifadesini açıklama ve yaşanan şehirden örnekleme",
-          "answer": "“Kendi hayatımızın kaynakları”, İhsan'ın ve Mümtaz'ın kendi toplumlarının tarih, kültür, sanat ve yaşama biçimi içinde beslendikleri kaynakları anlatır. Öğrenci ikinci bölümde yaşadığı şehirden **gerçek ve somut** bir örnek seçip neden böyle bir kaynak saydığını açıklamalıdır.",
+          "answer": "“Kendi hayatımızın kaynakları”, kişinin ve toplumun kültürel birikimini anlatır; öğrenci bunu yaşadığı şehirden gerçek bir örnekle somutlaştırır.",
           "guidance": "Öğrencinin şehrinde mutlaka Selçuklu ulu camisi, ahilik çarşısı, bozlak veya belirli bir zanaat bulunduğunu varsaymayın. ‘Batı taklitçiliğinden kurtulmak’ ifadesini sorunun zorunlu cevabı hâline getirmeyin.",
           "source_locator": "basılı s.176 / PDF s.177 — soru 6",
           "answer_sections": {
@@ -18057,7 +18331,7 @@
           "printed_page": 176,
           "question_no": "9",
           "prompt_summary": "Nuran ve Mümtaz'ın buluştukları mekânlardan sosyal ilişkileri ve yaşam tarzlarına ilişkin çıkarım",
-          "answer": "Nuran ve Mümtaz'ın Boğaz, Üsküdar, Kanlıca, Çamlıca ve Emirgân çevresindeki gezileri; birlikte şehir, mimari, musiki ve geçmiş üzerine konuşmayı önemsediklerini düşündürür. Bu mekânları birlikte adlandırmaları ve hatıralarla ilişkilendirmeleri, ilişkilerinde ortak estetik/kültürel ilgilerin önemli olduğunu gösterir. Nuran'ın yoksul semtlere dikkat çekmesi ise aynı geçmiş ilgisine farklı bir güncel bakış ekler.",
+          "answer": "Geziler, Nuran ile Mümtaz’ın ortak kültürel ilgilerini ve hayata bakışlarındaki farkları düşündürür.",
           "source_locator": "basılı s.168-170 / PDF s.169-171 — soru 9",
           "answer_sections": {
             "sosyal_iliski": "Birlikte gezen, konuşan, tartışan ve ortak hatıralar oluşturan iki kişi.",
@@ -18101,7 +18375,7 @@
           "printed_page": 176,
           "question_no": "10",
           "prompt_summary": "Mümtaz'ın Üsküdar için 'hakikî kadın saltanatı' demesinin nedeni",
-          "answer": "Üsküdar’daki dört büyük cami metinde aşk, güzellik veya annelik duygusuna ithaf edilmiş olarak anlatılır; “hakikî kadın saltanatı” sözü bu tematik bağı öne çıkarır. Parça camilerin banileri hakkında bilgi vermediğinden sözü kadın banilerle ilişkilendirmek desteklenmez.",
+          "answer": "“Hakikî kadın saltanatı” sözü, camilere atfedilen aşk, güzellik ve annelik temalarıyla ilişkilidir.",
           "evidence_quotes": [
             "Üsküdar’ın bu dört büyük camii aşka, güzelliğe, yahut hiç olmazsa annelik duygusuna ithaf edilmişti."
           ],
@@ -18147,7 +18421,7 @@
           "printed_page": 176,
           "question_no": "11",
           "prompt_summary": "Mümtaz'ın tarihî dönem romanına Şeyh Gâlip'in adını vermesinden kişiliği ve sanat anlayışına ilişkin çıkarım",
-          "answer": "Mümtaz'ın III. Selim dönemini anlatan romanına Şeyh Gâlip'in adını vermesi; onun klasik edebiyata, geçmişin sanat ve kültür hayatına ilgi duyduğunu düşündürür. Tarihî dönemi yalnız siyasi olaylarla değil, bir şair ve sanat çevresi üzerinden kurgulamak istemesi de sanat merkezli bir tarih ilgisine işaret eder. Nuran'ı düşünerek Hatice ve Beyhan Sultan portreleri çizmesi ise kişisel yaşantının kurmaca tasarıma karışabildiğini gösterir.",
+          "answer": "Mümtaz’ın tasarısı, geçmişin klasik edebiyat ve sanat çevresine ilgisini gösterir.",
           "source_locator": "basılı s.169 / PDF s.170 — soru 11",
           "answer_sections": {
             "kisilik": "Geçmişe, klasik edebiyata ve İstanbul kültürüne meraklı; araştıran ve estetik ayrıntılara önem veren.",
@@ -18236,7 +18510,7 @@
           "printed_page": 176,
           "question_no": "13",
           "prompt_summary": "Mekânlara müzikle ilgili adlar verilmesinden sanatın kahramanların hayatındaki etkisine ilişkin çıkarım",
-          "answer": "Nuran ve Mümtaz'ın gezdikleri bazı yerlere musikiyle ilgili adlar vermeleri, sanatın onların çevreyi algılama ve ortak hatıra oluşturma biçimine güçlü biçimde katıldığını düşündürür. Mekân, musiki ve kişisel deneyim onların zihninde birbirine bağlanır.",
+          "answer": "Musiki, Nuran ile Mümtaz’ın çevreyi algılama biçimini ve ortak hatıralarını şekillendirir.",
           "evidence_quotes": [
             "İstanbul manzaralarıyla eski musıkîmiz birleşiyor, sesten, hayalden bir harita gittikçe büyüyordu."
           ],
@@ -18396,7 +18670,7 @@
           "printed_page": 177,
           "question_no": "Karşılaştıralım",
           "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-          "answer": "Karşılaştırma, eldeki doğrulanmış PDF’de basılı s.177/PDF s.178’de Mescid-i Aksa görseli yer alıp şiir metni bulunmadığı, basılı s.178/PDF s.179’da ise karşılaştırma tablosunun boş olduğu için tamamlanamıyor. Huzur sütununda önceki sayfalarda gerçekten okunan kesitten kanıt kullanılabilir. Mescid-i Aksa metninin içeriği, türü, şekli, dönemi, zihniyeti, üslubu ve iletisi şiirin kendisi görülmeden doğrulanamaz.",
+          "answer": "Mescid-i Aksa şiirinin metni kaynakta bulunmadığından karşılaştırmanın bu bölümü doğrulanamaz; tablo Huzur kesitiyle sınırlı doldurulabilir.",
           "source_locator": "basılı s.177-178 / PDF s.178-179 — “Mescid-i Aksa” şiiri (altı dörtlük) ve Karşılaştıralım tablosu",
           "answer_sections": {
             "Huzur": "Okunmuş kesitten İstanbul, Boğaz, tarihî çevre ve musikiyle ilgili doğrudan ifadeler seçilebilir; çıkarımlar bu kesitle sınırlandırılmalıdır.",
@@ -18567,7 +18841,7 @@
           "printed_page": 178,
           "question_no": "Okuma Çemberi 1-2",
           "prompt_summary": "Huzur için okuma çemberi rollerinin uygulanması",
-          "answer": "Ders kitabının 178. sayfasında dört temel rol (Bağ Kurucu, Ressam, Okuma Aydınlatıcısı, Sorgulayıcı) ve 179. sayfasında beş seçimlik rol (Özetleyici, Tahmin Edici, Kelime Avcısı, Hareket İzcisi, Karakter Çözümleyici) olmak üzere toplam 9 okuma çemberi rolü tanımlanmıştır. Her öğrenci seçtiği rolün sorumluluğunu Huzur metninden somut bir metin dayanağıyla yerine getirir.",
+          "answer": "Öğrenci, Huzur okuması için dokuz okuma çemberi rolünden birini seçer.",
           "guidance": "Roller tek doğru ürün üretmez; öğrenci seçtiği rolü metinden somut bir örnekle yürütmelidir. Okuma çemberinde her döngüde öğrencilerin rol değiştirmesi sağlanarak metne farklı bilişsel pencerelerden bakma alışkanlığı kazandırılmalıdır.",
           "source_locator": "basılı s.178-179 / PDF s.179-180 — dört temel ve beş seçimlik okuma çemberi rolü",
           "answer_sections": {
@@ -18992,7 +19266,7 @@
           "printed_page": 180,
           "question_no": "3",
           "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
-          "answer": "Tablo yalnız **bu aşamaya kadar okunan Huzur parçasındaki** söz ve davranışlardan doldurulmalıdır. Mümtaz ve Nuran için doğrudan kanıt vardır; İhsan hakkında Mümtaz'ın anlatımı kullanılabilir. Macide, Suat ve Fâhir için bu noktada yeterli söz/davranış bulunmadığında boşluğu varsayımla doldurmayın.",
+          "answer": "Tabloyu yalnız o ana kadar okunan Huzur parçasındaki kanıta göre doldurun; bilinmeyen özellikleri varsayımla tamamlamayın.",
           "answer_sections": {
             "Mümtaz": {
               "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur.",
@@ -19156,7 +19430,7 @@
           "printed_page": 181,
           "question_no": "4",
           "prompt_summary": "Huzur kahramanlarını kişilik özellikleri ve dil kullanımları bakımından karşılaştırma",
-          "answer": "Kişilik özelliği ve dil kullanımı, **s.181'e kadar görülen metin kanıtıyla** ayrı ayrı belirlenmelidir. Doğrudan konuşması bulunmayan kişilere dil özelliği yakıştırmayın.",
+          "answer": "Kişilik ve dil özellikleri ayrı ayrı, s.181’e kadarki metin kanıtıyla belirlenmelidir.",
           "answer_sections": {
             "Mümtaz": {
               "kisilik": "Kitabın örneğinde hayata sanatçı duyarlılığıyla bakan, tabiatı ve sanatı birlikte düşünen hassas bir karakter olarak verilir.",
@@ -19429,7 +19703,7 @@
           "printed_page": 182,
           "question_no": "Sıra Sizde 1",
           "prompt_summary": "Huzur'da gerçek hayattan alınan unsurlar ile kurgusal dönüşümleri ayırma",
-          "answer": "Balık kılçığında, Mehmet Kaplan'ın verdiği **gerçek hayattaki esin kaynakları** ile Tanpınar'ın romanda yaptığı **kurmaca değişiklikler** karşılaştırılır.",
+          "answer": "Balık kılçığında gerçek hayattan alınan esin kaynakları ile romandaki kurmaca dönüşümler ayrı gösterilir.",
           "answer_sections": {
             "gercek_hayattan_alinanlar": [
               "Kaplan, Mümtaz'ı Tanpınar'ın ‘bir projeksiyonu’ olarak niteler.",
@@ -19565,13 +19839,18 @@
           "printed_page": 182,
           "question_no": "Fark Edelim",
           "prompt_summary": "s.182 iki metinden yazar-eser ilişkisine çıkarım",
-          "answer": "İlk parçada Mümtaz’ın çocukluğu ve İhsan–Macide’nin hayatındaki yeri anlatılır; Kaplan’ın değerlendirmesi ise Huzur’daki gerçek hayat izlerinin kurmacada değiştirildiğini açıklar. Bu iki dayanak, yazarın yaşantı ve çevresinden esinlenebildiğini fakat kişileri, ilişkileri ve koşulları romana aktarırken dönüştürdüğünü gösterir.",
+          "answer": "İki parça birlikte, yazarın yaşamından esinlenirken bu malzemeyi kurmacada dönüştürdüğünü gösterir.",
           "evidence_quotes": [
             "İhsan, onun hem babası, hem hocası idi.",
             "hayattan almış olduğu bütün şahısları az çok değiştirmiş"
           ],
           "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, yazar–eser sorusu",
-          "guidance": "Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun."
+          "guidance": "Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun.",
+          "answer_sections": {
+            "Huzur parçası": "Mümtaz’ın çocukluğu ve İhsan–Macide’nin hayatındaki yeri anlatılır.",
+            "Kaplan’ın değerlendirmesi": "Huzur’daki gerçek hayat izlerinin kurmacada değiştirildiğini açıklar.",
+            "Çıkarım": "Yazar, yaşantı ve çevresinden esinlenebilir; kişi, ilişki ve koşulları romana aktarırken dönüştürebilir."
+          }
         },
         "content": {
           "lead": "Huzur kesitinden bir yaşam/ilişki izi, Mehmet Kaplan’ın metninden ise bu izin kurmacada nasıl değiştirildiğini gösteren bir dayanak seçin; çıkarımınızı ikisini ilişkilendirerek kurun."
@@ -19752,7 +20031,7 @@
           "printed_page": 183,
           "question_no": "Sıra Sizde 1",
           "prompt_summary": "Huzur parçalarında öznel ve nesnel anlatım örnekleri ve katkıları",
-          "answer": "İlk parçada Mümtaz'ın Nuran'la kurduğu oyunlar ve geçmiş anılar; ikinci parçada kendisini sorgulaması, uykusuzluğu ve sıkıntısı anlatılır. Gözlenebilir davranışın aktarılması ile kişinin duygusal yorumu aynı değildir: dış olay betimlemesi okura durumu izletirken öznel anlatım Mümtaz'ın özlem, suçluluk ve bunalmışlığını hissettirir.",
+          "answer": "Gözlenebilir olaylar, öznel duygular ve bunların anlatıma katkısı aşağıda ayrı başlıklarda verilmiştir.",
           "guidance": "Soru yalnız s.183'teki iki parçaya dayanır; s.185'teki İhsan hastalığı parçasını buradaki doğrudan örnekler yerine koymayın. ‘Nesnel’ sözü burada gerçek dünyada doğrulanmış olgu değil, parçada dışarıdan betimlenebilen durum anlamındadır.",
           "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde 1, Mümtaz'ın Nuran anıları ve iç sorgulaması",
           "answer_sections": {
@@ -19880,7 +20159,7 @@
           "printed_page": 184,
           "question_no": "Sıra Sizde 2",
           "prompt_summary": "Duyarlılık değerinden hareketle kişilerin insani çelişki, ahlaki çatışma ve toplumsal güçlükleri",
-          "answer": "Ders kitabının 184–185. sayfalarındaki dört renkli metin parçasında 'duyarlılık' değeri; insanın kendi nefsi, toplumu, çevresindeki canlılar ve hasta yakınlarıyla kurduğu ahlaki ilişkiler üzerinden çözümlenir:",
+          "answer": "Duyarlılık değeri, dört metin parçasındaki insani, ahlaki ve toplumsal gerilimler üzerinden incelenir.",
           "answer_sections": {
             "1 · Halkı sevmek ve insanı kavramlaştırmak": {
               "insani_celiski": "Halkı sevdiğini söylemek ile insanı yalnız bir kavram veya manzara gibi ele alma ihtimali.",
@@ -20133,7 +20412,7 @@
           "printed_page": 186,
           "question_no": "Sıra Sizde 3",
           "prompt_summary": "Kendine yakın bulunan Huzur kişisinin konuşma biçimini günlük dille karşılaştırma",
-          "answer": "Örnek seçim Mümtaz üzerinden modellenebilir: Ders kitabının 169. sayfasındaki parçada Mümtaz; eski Türk musikisi, mimari ve mazi mirası üzerine konuşurken 'mazi', 'hüviyet', 'terkip' gibi felsefi ve kültürel kavramlara başvurur; düşüncesini birbirine bağlı yan cümleciklerle ayrıntılandırır. Günlük konuşma dilinde ise benzer duygu ve düşünceler daha yalın, kısa ve dolaysız ifadelerle dile getirilir. Cevap, öğrencinin yakın bulduğu kahramanın metinde duyulan sahici sözü üzerinden kurulmalıdır.",
+          "answer": "Aşağıdaki model, Mümtaz’ın romandaki konuşma biçimini günlük dille karşılaştırır.",
           "guidance": "Öğrenci Mümtaz yerine Nuran'ı da seçebilir; ancak metinde doğrudan konuşması bulunmayan kişilere (İhsan, Suat vb.) yapay bir üslup atfedilmemelidir. Öğrencinin gündelik dilini onun yerine dikte etmeyin; aradaki söz varlığı ve cümle yapısı farkını keşfetmesini sağlayın.",
           "source_locator": "basılı s.186 / PDF s.187 — Sıra Sizde soru 3",
           "answer_sections": {
@@ -20743,7 +21022,7 @@
           "printed_page": 188,
           "question_no": "4",
           "prompt_summary": "Mümtaz, Nuran, İhsan ve Suat'ın özellikleri ve amaçları",
-          "answer": "Dört kişi için özellik ve amaç sütunları birlikte açıklanabilir; Suat'ın adı tabloda bulunduğu hâlde okunan Huzur parçası onun davranış ve amacını saptamaya yetmez. Nuran ve İhsan'ın amaçları da doğrudan ilan edilmiş hedefler değil, görülen söz ve davranışlarından çıkarımlardır.",
+          "answer": "Dört kişinin özellik ve amaçları aşağıda ayrı verilmiştir; Suat için bu kesitte yeterli kanıt yoktur.",
           "answer_sections": {
             "Mümtaz": {
               "ozellikler": "Sanata, geçmişe ve şehrin kültürüne duyarlı; zaman zaman içe dönük ve sorgulayıcı.",
@@ -20972,7 +21251,7 @@
           "printed_page": 189,
           "question_no": "Düşünelim Paylaşalım",
           "prompt_summary": "Verilen Huzur parçalarındaki çatışmaları ve anlatım unsurlarının katkısını tartışma",
-          "answer": "Kitabın 189. sayfasındaki üç parçada yer alan çatışmalar ve bunları görünür kılan anlatım unsurları DÜŞÜN–EŞLEŞ–PAYLAŞ yöntemiyle çözümlenir:\n\n1. Parça: Mümtaz'ın iç dünyasındaki derin ve şifasız hüzün gerilimi (birey-kendi içi çatışması).\n2. Parça: Boğaziçi'nin kış güzelliği karşısında duyulan yalnızlığa tahammül edememe çatışması (birey-mekân ve yalnızlık gerilimi).\n3. Parça: Nuran'ın İhsan ve Macide ile tanışma isteğine karşılık bu yaşta nişanlı olarak takdim edilmekten duyduğu tereddüt çatışması (birey-toplumsal roller gerilimi).",
+          "answer": "Üç parçadaki çatışma ve anlatım unsurları aşağıda ayrı başlıklarda çözümlenmiştir.",
           "guidance": "Bu soru DÜŞÜN–EŞLEŞ–PAYLAŞ sürecidir: çatışmayı tek başına adlandırmak yeterli değil, onu belirginleştiren anlatım aracını da gösterin. Üçüncü sahnede Nuran'ın İhsan'la tanışmaktan tümüyle vazgeçtiğini söylemeyin; 'Nasıl olsa görürüz' der.",
           "source_locator": "basılı s.189 / PDF s.190 — üç Huzur parçası ve Düşün/Eşleş/Paylaş yönergeleri",
           "answer_sections": {
@@ -21289,7 +21568,7 @@
           "printed_page": 190,
           "question_no": "Sıra Sizde 1",
           "prompt_summary": "Huzur'dan verilen a-f cümlelerinin ögelerini belirleme",
-          "answer": "Kitapta **a, b, c, ç, d, e, f olmak üzere yedi cümle/alt madde** vardır. b iki yüklemli olduğu için iki yargı halinde; d ise uzun fiilimsi grupları korunarak çözümlenebilir.",
+          "answer": "Yedi alt maddenin öge çözümlemeleri aşağıda ayrı verilmiştir; b iki yargıdan oluşur.",
           "answer_sections": {
             "a": {
               "cumle": "İster istemez onların bir parçasıyız.",
@@ -21571,7 +21850,7 @@
           "printed_page": 191,
           "question_no": "Sıra Sizde 2",
           "prompt_summary": "Cümle kuruluşlarının Huzur'un anlatımına katkısı",
-          "answer": "Kısa cümleler düşünceyi ve duygu değişimini vurgularken uzun fiilimsi grupları yer, zaman ve ruh hâlini tek bir akışta birleştirir. s.190 b'deki iki yüklem musikiyi hem sevme hem anlama eylemini art arda gösterir; s.190 d'deki uzun zaman ve nesne grupları çocukluk hatırasının hüzne bağlanmasını gecikmeli, çağrışımlı biçimde kurar. Sıralama ve ritim romanın şiirsel anlatımına hizmet eder.",
+          "answer": "Kısa ve uzun cümleler anlatımda vurgu ve çağrışım akışını farklı biçimlerde etkiler; birlikte şiirsel ritmi destekler.",
           "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 2",
           "answer_sections": {
             "b · İki yargı": "Sevmek ve anlamak yüklemleri 'eski musıkî' çevresinde peş peşe gelir; vurgu artar.",
@@ -21611,7 +21890,7 @@
           "printed_page": 191,
           "question_no": "Sıra Sizde 3",
           "prompt_summary": "Parçadaki eski yazımları günümüz yazımına çevirme",
-          "answer": "Parçadaki günümüz yazımından farklı beş biçim şunlardır: **fevkalâdelik → fevkaladelik**, **ilân → ilan**, **telâştan → telaştan**, **eksilmiyen → eksilmeyen** ve **zatürree → zatürre**. Şikâyet ve hâlini gibi düzeltme işaretli biçimler bu soru için otomatik olarak yanlış sayılmaz.",
+          "answer": "Günümüz yazımına göre düzeltilmesi gereken biçimler aşağıda ayrı verilmiştir.",
           "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 3",
           "answer_sections": {
             "fevkalâdelik": "fevkaladelik",
@@ -21688,7 +21967,7 @@
           "printed_page": 191,
           "question_no": "Ders Dışı Etkinlik",
           "prompt_summary": "Huzur'u tarih, sosyoloji ve psikolojiyle ilişkilendiren grup araştırması",
-          "answer": "Ders dışı etkinlik 1 haftalık, üç grup ve üç sözcüyle yürütülen bir araştırmadır. Her grup Huzur'dan bir sahne/ifade seçer; tarih, sosyoloji veya psikoloji açısından neden anlamlı olduğunu kendi bulgularıyla açıklar. Sonuçlar sınıfta grup sözcülerince paylaşılır.",
+          "answer": "Araştırma üç disiplin grubuyla yürütülür; metin kanıtı dış kaynak bilgisinden ayrı tutulur.",
           "guidance": "Araştırmanın amacı romana dışarıdan bilgi yığmak değil, sosyal bilim bilgisinin metindeki olay ve kişileri nasıl daha iyi açıkladığını göstermektir.",
           "source_locator": "basılı s.191 / PDF s.192 — Ders Dışı Etkinlik; 1 hafta, 3 grup, araştırma ve paylaşım",
           "answer_sections": {
@@ -21976,7 +22255,7 @@
           "printed_page": 192,
           "question_no": "Süreci Değerlendirebilme 1",
           "prompt_summary": "Huzur'un dil ve anlatımını değerlendirip çözümleme çalışma kâğıdını tamamlama",
-          "answer": "Örnek gerekçeli görüş: İstanbul'u, musiki ile hatırayı aynı anlatımda birleştiren şiirsel betimlemeleri etkileyici buluyorum. Mümtaz'ın kültürel kimlik üzerine düşüncelerini şehir gezisi içinde okumak, konuyu soyut bir tartışma olmaktan çıkarıyor. Buna karşılık uzun cümleler ve bugün seyrek kullanılan bazı kelimeler, özellikle ilk okumada anlamayı yavaşlatabiliyor. Beğeni veya eleştiri metindeki belirli bir söyleyişe dayandırıldığında anlamlıdır.",
+          "answer": "Örnek değerlendirme; beğeni, eleştiri ve gerekçeyi Huzur’dan metin kanıtlarıyla ilişkilendirir.",
           "answer_sections": {
             "begenim": "Boğaz ve Üsküdar betimlemelerinin eski musikiyle bağ kurması, şehrin kişisel ve kültürel hafızadaki yerini hissettiriyor.",
             "elestirim": "Uzun ve çağrışımlı cümleler ile ‘mazi’, ‘hüviyet’ gibi kelimeler okumayı bazı bölümlerde yavaşlatabiliyor.",
@@ -22162,7 +22441,7 @@
           "printed_page": 193,
           "question_no": "Çıkış Kartı",
           "prompt_summary": "Huzur'da çağrışım zenginliğini Üç Yaz - İki Sor - Bir Paylaş ile değerlendirme",
-          "answer": "Çıkış Kartı öğrencinin kendi seçtiği ve beğendiği ifadelerle doldurulur. Aşağıdaki modelde kısa ve kitapta görülen iki sözün tarih, şehir ve kimlik çağrışımları üzerinden üç yazı, iki soru ve bir paylaşım örneklenir.",
+          "answer": "Çıkış kartında öğrenci kendi seçtiği ifadelerle üç düşünce, iki soru ve bir paylaşım yazar.",
           "guidance": "Kitaptaki çıkış kartı tam olarak Üç Yaz (3), İki Sor (2), Bir Paylaş (1) alanlarından oluşur. Burada örnek ifadeler öğrencinin seçimi yerine geçmez; yazmadan önce kendi beğendiği gerçek metin sözlerini işaretlemesine izin verin.",
           "source_locator": "basılı s.193 / PDF s.194 — Çıkış Kartı: üç ayrı yazı, iki soru ve bir paylaşım",
           "answer_sections": {
@@ -22348,7 +22627,7 @@
           "printed_page": 194,
           "question_no": "1",
           "prompt_summary": "Biyografilerde kişinin hayatına ilişkin yer verilebilecek ayrıntılar",
-          "answer": "Biyografilerde kişinin hayatını anlamaya yardımcı olan **somut yaşam ayrıntılarına ve dönüm noktalarına** yer verilebilir. Verilen Tarık Buğra ve Âşık Veysel parçaları, yalnız doğum-ölüm tarihi değil; çevre, karşılaşma, ilk başarı, çalışma ve sanat hayatını etkileyen olayların da biyografik değer taşıdığını gösterir.",
+          "answer": "Biyografide doğum-ölüm tarihleri yanında çevre, çalışma, eser ve dönüm noktaları da yaşamı anlamaya yardımcı olur.",
           "source_locator": "basılı s.194 / PDF s.195 — soru 1",
           "answer_sections": {
             "Tarık Buğra örneği": "Aile/çevre, radyo ortamı, Arayan Bulur adlı radyofonik oyunu yazması ve ilk telif ücretini alması.",
@@ -22494,7 +22773,7 @@
           "printed_page": 195,
           "question_no": "Okumayı Yönetebilme",
           "prompt_summary": "Mehmet Akif Ersoy biyografisi için okuma amacı, tahmin ve strateji belirleme",
-          "answer": "Okuma süreci üç aşamada yönetilebilir: **okuma amacı belirleme, yalnız başlık/görsellerden ön tahmin yapma ve uygun strateji seçme**. Sonraki sayfalarda öğrenilecek olaylar, ilk tahminmiş gibi geriye taşınmamalıdır.",
+          "answer": "Okuma amacı, başlık/görsellerden ön tahmin ve uygun okuma stratejisi ayrı aşamalarda belirlenir.",
           "guidance": "İstiklâl Marşı yarışması, Millî Mücadele faaliyetleri, baytarlık-vaizlik-milletvekilliği sıralaması veya Safahat bilgisi ön tahminin hazır cevabı yapılmamalıdır.",
           "source_locator": "basılı s.195 / PDF s.196 — Okumayı Yönetebilme 1–2, Metni Okuyalım 1–2",
           "answer_sections": {
@@ -22826,7 +23105,7 @@
           "printed_page": 198,
           "question_no": "Söz Varlığımız",
           "prompt_summary": "Hakkın Sesleri parçasındaki kelimeleri verilen anlamlarla eşleştirme",
-          "answer": "Ders kitabının 198. sayfasındaki 'Söz Varlığımız' etkinliğinde verilen 6 tanım kutusu ile 7 kelime seçeneği eşleştirilir. Etkinlikte yedi seçenek bulunmasına karşılık altı tanım yer aldığı için 'f) vesile' seçeneği eşleşme dışı kalarak artmaktadır.",
+          "answer": "Kelime eşleştirmeleri ve eşleşmeden artan seçenek aşağıda gösterilmiştir.",
           "explanation": "Sayfanın görseli kontrol edildi; etkinlikte yedi kelime seçeneğine karşılık altı anlam verildiği için bir seçenek artmaktadır.",
           "source_locator": "basılı s.198 / PDF s.199 — Söz Varlığımız / sayfa görseli doğrulandı",
           "answer_sections": {
@@ -22921,7 +23200,7 @@
           "printed_page": 199,
           "question_no": "1",
           "prompt_summary": "Mehmet Akif'in zayıf ve yardıma muhtaç kesimlere yer vermesinin kişiliği hakkında uyandırdığı izlenim",
-          "answer": "Bu soru öğrencinin kişisel izlenimini ister. Metin, Mehmet Âkif'in şiirlerinde çocuklar, yaşlılar, kadınlar ve toplumun güçlük yaşayan kesimlerine yer verdiğini; onu da **“duyarlı ve vicdanlı bir aydın”** olarak değerlendirdiğini belirtir. Bu bilgiler öğrencide saygı, empati, hüzün veya toplumsal sorumluluk gibi farklı duygular uyandırabilir.",
+          "answer": "Mehmet Âkif’in toplumsal duyarlılığı öğrencide saygı, empati veya başka gerekçeli duygular uyandırabilir.",
           "evidence_quotes": [
             "duyarlı ve vicdanlı bir aydındır"
           ],
@@ -23083,7 +23362,7 @@
           "printed_page": 199,
           "question_no": "3",
           "prompt_summary": "Mehmet Akif'in millî marş yarışması ve para ödülüne mesafeli tutumunu değerlendirme",
-          "answer": "Kitapta anlatılan üç olgu şunlardır: yarışmada 500 lira para ödülü vardır; Mehmet Âkif özellikle para ödülüne sıcak bakmadığı için başlangıçta katılmaz; Hamdullah Suphi'nin rica ve ısrarı üzerine **ödülü almamak şartıyla** şiiri yazmayı kabul eder. Bu tavır farklı biçimlerde değerlendirilebilir.",
+          "answer": "Âkif, para ödülüne mesafeli durduğu için yarışmaya önce katılmamış; sonradan ödülü almama şartıyla şiiri yazmayı kabul etmiştir.",
           "source_locator": "basılı s.195–196 ana metin ve soru s.199 / PDF s.196–197, 200",
           "answer_sections": {
             "Kitapta anlatılan olay": "Ödüle mesafeli durma → yarışmaya katılmama → rica/ısrar sonrasında ödülü almamak şartıyla şiiri yazma.",
@@ -23309,7 +23588,7 @@
           "printed_page": 201,
           "question_no": "Çalışma Kâğıdı",
           "prompt_summary": "Mehmet Akif Ersoy biyografi metninin konu, amaç, ana düşünce ve anlatım özellikleri",
-          "answer": "Mehmet Âkif Ersoy biyografi metnine yönelik ders kitabının 201. sayfasındaki dokuz satırlı Çalışma Kâğıdı aşağıdaki biçimde metne dayalı olarak tamamlanır:",
+          "answer": "Çalışma kâğıdının dokuz başlığı metne dayalı biçimde ayrı ayrı tamamlanmıştır.",
           "answer_sections": {
             "konu": "Mehmet Akif'in yaşamı, eğitimi, edebî gelişimi, eserleri ve Millî Mücadele'deki görevleri.",
             "ana_dusunce": "Akif'in sanatı, yaşadığı dönemin toplum, din ve millet meseleleriyle hayatı boyunca ilişki içinde gelişmiştir.",
@@ -23663,7 +23942,7 @@
           "printed_page": 202,
           "question_no": "2",
           "prompt_summary": "Biyografi türünde öznel ve nesnel anlatımdan hangisinin ön planda olduğu",
-          "answer": "Biyografi türünde **nesnel anlatım** ön plandadır. Mehmet Âkif metninde doğum yeri, eğitim, görev, yayın ve tarihlenmiş yaşam olayları somut bilgi olarak verilir; yazar ayrıca kişiliği ve edebî değeri hakkında yorumlar yapar. Bu nedenle metin değerlendirme içerse de yaşam bilgilerini doğru ve tarafsız sunma yönü belirleyicidir.",
+          "answer": "Biyografide nesnel anlatım ön plandadır; öznel değerlendirmeler de metinde yer alabilir.",
           "source_locator": "basılı s.202 / PDF s.203 — soru 2",
           "explanation": "Biyografi, bir kişinin yaşamının başka biri tarafından anlatılmasıdır. Otobiyografi ise kişinin kendi yaşamını kendisinin anlatmasıdır. Bir biyografi yazarı, anlattığı kişi hakkında bilgi toplarken o kişinin otobiyografisinden de kaynak olarak yararlanabilir; bu durum biyografi metnini otobiyografiye dönüştürmez.",
           "answer_sections": {
@@ -23709,7 +23988,7 @@
           "printed_page": 203,
           "question_no": "1",
           "prompt_summary": "Mehmet Akif Ersoy biyografisinin verilen biyografi örneklerinden hangisine benzediği",
-          "answer": "Mehmet Âkif Ersoy metni, sayfada verilen örnekler içinde en çok **M. Orhan Okay’ın “Kısakürek, Necip Fazıl”** biyografi parçasına benzer. İkisinde de gerçek bir kişinin ailesi, öğrenimi ve yaşamına ilişkin bilgiler açıklayıcı ve ağırlıkla nesnel bir dille aktarılır. Rıza Fazıl parçası ölüm haberi ve anmayı öne çıkarırken Oğuz Atay parçasında anlatıcı ve diyaloglu sahne belirgindir. Bu karşılaştırma, sayfada görünen parça özellikleriyle sınırlı kurulmalıdır.",
+          "answer": "Metin, sayfadaki örnekler içinde en çok Orhan Okay’ın Necip Fazıl biyografisine benzer; karşılaştırma görünen parçalarla sınırlıdır.",
           "source_locator": "basılı s.202-203 / PDF s.203-204 — Fark Edelim soru 1",
           "answer_sections": {
             "en_cok_benzeyen_metin": "M. Orhan Okay’ın “Kısakürek, Necip Fazıl” biyografi parçası.",
@@ -23798,7 +24077,7 @@
           "printed_page": 203,
           "question_no": "2",
           "prompt_summary": "Mehmet Akif Ersoy metninin biyografi alt türünü belirleme",
-          "answer": "Mehmet Âkif Ersoy metni, kitapta tanıtılan üç alt türden **bilimsel biyografi/monografi**ye en yakın örnektir. Gerçek bir kişinin doğum çevresi, eğitimi, görevleri, yayınları, eserleri ve edebî yönü hakkında bilgi verir. Tarihlenmiş yaşam bilgileri açıklayıcı anlatımla sunulur; metin yer yer değerlendirme de içerir.",
+          "answer": "Mehmet Âkif metni, bilimsel biyografi/monografi alt türüne en yakın örnektir.",
           "source_locator": "basılı s.203 / PDF s.204 — soru 2",
           "answer_sections": {
             "biyografi_alt_turu": "Bilimsel biyografi / monografi",
@@ -24037,7 +24316,7 @@
           "printed_page": 205,
           "question_no": "Çözümleyebilme 1",
           "prompt_summary": "Mehmet Akif Ersoy metninin yapı unsurları ve bunların katkısı",
-          "answer": "Mehmet Âkif Ersoy biyografisinin temel yapı unsurları **merkez kişi, yaşam olayları, zaman ve mekândır**. Bunların düzenli biçimde verilmesi, okurun sanatçının yaşam çizgisini ve çalışmalarını takip etmesini kolaylaştırır.",
+          "answer": "Biyografi; merkez kişiyi, yaşam olaylarını, zamanı ve mekânı izlenebilir bir çizgide birleştirir.",
           "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 1",
           "answer_sections": {
             "merkez_kisi": "Mehmet Âkif Ersoy.",
@@ -24172,7 +24451,7 @@
           "printed_page": 205,
           "question_no": "Çözümleyebilme 3",
           "prompt_summary": "Yapı unsurları arasındaki etkileşimin üsluba etkisi",
-          "answer": "Zaman, mekân, yaşam olayları ve eser bilgileri birlikte kullanıldığında biyografi yalnız tarih listesinden ibaret kalmaz; yaşam evreleri ile sanat/çalışma alanları arasındaki ilişkiler daha anlaşılır hâle gelir.",
+          "answer": "Yapı unsurlarının ilişkisi, biyografide yaşam ve eser bilgilerini daha anlaşılır kılar.",
           "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 3",
           "answer_sections": {
             "zaman_olay": "Tarihler, eğitim, görev, yayın ve Millî Mücadele gibi yaşam olaylarını sıralamaya yardım eder.",
@@ -24316,7 +24595,7 @@
           "printed_page": 205,
           "question_no": "Sıra Sizde 2",
           "prompt_summary": "Günümüz Âsım nesline düşen görevleri görsellerden hareketle tartışma",
-          "answer": "Görsellerden hareketle günümüz gençlerinin üstlenebileceği görevler tartışılabilir; **tek bir doğru görev listesi yoktur**. Öğrenci önerisini görsellerden biriyle ilişkilendirip gerekli bilgi, emek veya iş birliğini açıklamalıdır.",
+          "answer": "Öğrenci, görsellerden birine dayalı gerekçeli bir görev önerir; tek doğru görev listesi yoktur.",
           "guidance": "Yapay zekâ, robotik, patent, ‘siber vatan’, ekonomik bağımsızlık vb. kavramları kitapta verilmiş zorunlu görevler gibi sunmayın. Öğrencinin farklı gerekçeli önerisini kabul edin.",
           "source_locator": "basılı s.205 / PDF s.206 — Sıra Sizde soru 2 / görseller doğrulandı",
           "answer_sections": {
@@ -24453,7 +24732,7 @@
           "printed_page": 208,
           "question_no": "1/a-c",
           "prompt_summary": "Usûlî tezkire metnindeki günümüzde kullanılmayan kelimeleri anlamlandırma ve cümlede kullanma",
-          "answer": "Bu etkinlikte öğrenci özgün metinden kendi seçtiği eski kelimeleri **bağlamdan tahmin eder**, s.207'deki sadeleştirilmiş metin ve öğretmen geri bildirimiyle doğrular, ardından sınıfça seçilen on kelimeyi yeni cümlelerde kullanır. Aşağıdaki liste yalnız örnek çalışma desteğidir.",
+          "answer": "Öğrenci eski kelimeleri önce bağlamdan tahmin edip sözlükle doğrular; aşağıdaki kelimeler yalnız örnek desteğidir.",
           "guidance": "Örnek cümleler kelimenin anlamını göstermeli; Usûlî'nin hayatına kaynakta bulunmayan ‘ilim merkezlerini dolaştı’, ‘seyrüsülûkünü tamamladı’, ‘yıllar süren gurbet’ gibi yeni olaylar eklememelidir. Öğrencinin farklı kelime seçimi geçerlidir.",
           "source_locator": "basılı s.206-208 / PDF s.207-209 — Usûlî ve soru 1/a-c",
           "answer_sections": {
@@ -24625,7 +24904,7 @@
           "printed_page": 208,
           "question_no": "3",
           "prompt_summary": "Tezkirenin içerik, yapı, dil ve anlatım özelliklerini dönem ve toplumla ilişkilendirme",
-          "answer": "Metnin içerik, yapı, dil ve anlatım özellikleri; dönemin **öğrenim, tasavvuf çevresi, kadı/şair ilişkisi ve sanatlı Osmanlı Türkçesi** hakkında ipuçları verir. Bu ipuçlarından daha geniş toplumsal sonuçlara giderken temkinli olunmalıdır.",
+          "answer": "Tezkire, içerik ve anlatım özellikleriyle dönemin kültür hayatına ilişkin sınırlı ipuçları sunar.",
           "source_locator": "basılı s.206-208 / PDF s.207-209 — soru 3",
           "answer_sections": {
             "icerik": "Usûlî'nin memleketi, öğrenimi, Mısır'da Şeyh İbrahim'in hizmetinde bulunması, dönüşü, kadıyla konuşması ve şiirlerinden örnekler.",
@@ -24755,7 +25034,7 @@
           "printed_page": 208,
           "question_no": "5",
           "prompt_summary": "Tezkire metnindeki öğretici metin özellikleri",
-          "answer": "Usûlî metninde öğretici metinlerin başlıca özelliği, **gerçek bir şair hakkında bilgi verme ve onu tanıtma amacı** taşımasıdır. Bunun yanında sanatlı bir dil ve öznel değerlendirmeler de bulunur.",
+          "answer": "Metin, gerçek bir şairi tanıtıp yaşamı ve edebî yönü hakkında bilgi verdiği için öğretici özellik taşır.",
           "source_locator": "basılı s.206-208 / PDF s.207-209 — soru 5",
           "answer_sections": {
             "bilgi_verme": "Usûlî'nin memleketi, öğrenimi, Mısır'daki çevresi ve dönüşü hakkında bilgi verilir.",
@@ -24797,7 +25076,7 @@
           "printed_page": 208,
           "question_no": "6",
           "prompt_summary": "Kişisel hayatı konu alan metinlerin edebî açıdan önemi",
-          "answer": "Kişisel hayatı konu alan metinler, sanatçının yaşamı, dönemi ve eserleri arasında ilişki kurmaya **yardımcı olabilir**; ayrıca kültürel ve edebî çevre hakkında bilgi sağlayabilir. Ancak bu metinlerin her biri aynı ölçüde nesnel veya birinci el kaynak değildir.",
+          "answer": "Biyografi ve tezkire, sanatçının yaşamı ile eserleri arasında bağ kurmaya yardımcı olabilir.",
           "source_locator": "basılı s.208 / PDF s.209 — soru 6",
           "answer_sections": {
             "sanatciyi_tanima": "Yetişme çevresi, öğrenim, önemli olaylar ve kişilik hakkında bilgi verebilir.",
@@ -25026,7 +25305,7 @@
           "printed_page": 209,
           "question_no": "4",
           "prompt_summary": "Mehmet Akif Ersoy metninin yazılma amacına ulaşıp ulaşmadığını değerlendirme",
-          "answer": "Metnin yazılma amacına ulaşıp ulaşmadığı **gerekçeli bir değerlendirme sorusudur**. Metnin amacı, Mehmet Âkif Ersoy'un hayatı, çalışmaları, eserleri ve edebî yönü hakkında okura bilgi vermek ve onu tanıtmaktır. Öğrenci bu amaçla metnin sunduğu içeriği karşılaştırarak kendi sonucunu yazmalıdır.",
+          "answer": "Metindeki yaşam ve eser bilgileri, tanıtma amacına ulaşıp ulaşmadığını değerlendirmek için dayanak sağlar.",
           "source_locator": "basılı s.209 / PDF s.210 — soru 4",
           "answer_sections": {
             "yazilma_amaci": "Mehmet Âkif'in yaşamını, önemli çalışmalarını, eserlerini ve edebî kişiliğini tanıtmak.",
@@ -25326,7 +25605,7 @@
           "printed_page": 211,
           "question_no": "Performans Görevi 1-3",
           "prompt_summary": "Huzur'daki bir kişiyle hayalî mülakat için plan ve kişi seçimi",
-          "answer": "Hayalî mülakat için öğrenci, Huzur'da okunan parçalarda yeterli kanıt bulunan bir kişiyi seçmeli ve gerekçesini o kişinin söz/davranışlarına dayandırmalıdır. Aşağıdaki tablo seçim desteğidir; bütün romanın karakter ansiklopedisi değildir.",
+          "answer": "Kişi seçimi, okunan parçalardaki söz ve davranış kanıtına dayanmalıdır; aşağıdaki tablo seçim desteğidir.",
           "answer_sections": {
             "Mümtaz": "İstanbul, geçmiş, kimlik, musiki ve ‘yeni hayat’ üzerine düşünceleri ayrıntılı biçimde görülür; mülakat için yeterli metin kanıtı vardır.",
             "Nuran": "Mümtaz'la şehir ve musiki üzerine konuşur; geçmişe bağlılığı sorgular ve bakımsız semtlerde insanların güncel ihtiyaçlarına dikkat çeker.",
@@ -25439,7 +25718,7 @@
           "printed_page": 212,
           "question_no": "İçerik Oluşturabilme 1-6",
           "prompt_summary": "Hayalî mülakat sorularını üretme, eleme ve hedef kitleye göre düzenleme",
-          "answer": "Kitap bu aşamada öğrenciden yalnız metinde zaten bulunan özellikleri tekrar etmesini değil, seçtiği roman kişisini gerçek hayatta hayal ederek yaratıcı sorular üretmesini ister. “Nasıl konuşurdu, nasıl davranırdı, ne işle uğraşırdı?” gibi sorular kurulabilir; ancak bunlara verilen cevaplar romanda gerçekleşmiş bilgi gibi sunulmamalı, karakterin okunan parçalardaki söz, davranış ve değerleriyle çelişmeyen hayalî tahminler olarak kalmalıdır.",
+          "answer": "Mülakat soruları yaratıcı varsayımlar üretmeli; yanıtlar metinde yaşanmış bilgi gibi sunulmamalıdır.",
           "guidance": "Yaratıcılığı fazla daraltmayın: kitap açıkça gerçek hayatta nasıl konuşacağı, davranacağı ve ne işle uğraşacağı üzerine tahmin istiyor. Buna karşılık Itrî'nin belirli bir eseri, bütün romanın aşk örgüsü, Suat'ın rolü, II. Dünya Savaşı veya tam roman sonu gibi seçili parçalarda bulunmayan ayrıntıları ‘romanda böyledir’ diye hazır bilgi olarak eklemeyin.",
           "source_locator": "basılı s.212 / PDF s.213 — İçerik Oluşturabilme 1-6",
           "answer_sections": {
@@ -25670,7 +25949,7 @@
           "printed_page": 213,
           "question_no": "Kural Uygulayabilme",
           "prompt_summary": "Hayalî mülakatın sunumunda uygulanacak konuşma kuralları",
-          "answer": "s.213'teki Kural Uygulayabilme bölümü mülakat sırasında uygulanacak kuralları a-j maddeleri hâlinde verir. Rehber bu maddeleri kısaltırken görgü kuralları, millî-manevi/kültürel unsurlar, hayalî kişiye özgü üslup, düşünceyi geliştirme yolları ve açık/örtük ileti gibi kitapta açıkça bulunan ölçütleri düşürmemelidir.",
+          "answer": "Mülakat sunumu, s.213’teki konuşma kuralları çerçevesinde değerlendirilmelidir.",
           "guidance": "Kitabın a-j maddelerini ‘genel sunum becerileri’ diye eritmeyin. Özellikle e (görgü), ç (değer/kültür), g (hayalî kişiye özgü üslup), ğ (düşünceyi geliştirme) ve i (açık/örtük ileti) kitapta açıkça vardır. ‘8 ders saati’ performans görevinin toplam çalışma süresidir; tek grubun sunum süresi değildir.",
           "source_locator": "basılı s.213 / PDF s.214 — Kural Uygulayabilme",
           "answer_sections": {
@@ -25988,7 +26267,7 @@
           "printed_page": 215,
           "question_no": "1",
           "prompt_summary": "Radyo tiyatrosuna dinleyici ilgisinin azalmasını değerlendirme",
-          "answer": "Metinde radyo tiyatrosuna ilginin azalması; televizyonun yaygınlaşması, popüler kültürün etkisi, 1980'lerden sonra ticari radyo ve televizyonların yaygınlaşması, reklam alma yarışı ve ticari kaygılarla ilişkilendirilir. Özden Cankaya ayrıca kapitalizmin daha çok tüketmek üzerine kurulu sistemini, dinleyiciye edebiyat zevki aşılayan radyo tiyatrosu formatını tüketen başlıca etkenlerden biri olarak değerlendirir. Öğrenci bu açıklamaları kendi görüşüyle gerekçeli biçimde değerlendirebilir.",
+          "answer": "Metin, radyo tiyatrosuna ilginin azalmasını televizyonun yaygınlaşması, popüler kültür ve ticari kaygılarla ilişkilendirir.",
           "evidence_quotes": [
             "Televizyonun Türkiye’de yaygınlaşması ve popüler kültürün topluma egemen olması sonucunda, radyo tiyatrosunun yazılması, üretimi ve dinlenme oranları çok belirgin bir biçimde düştü.",
             "1980’lerden sonra Türkiye’de ticari radyo ve televizyonların yayına başlamasından sonra, reklam alma yarışı ve ticari kaygılar eğlence ağırlıklı yayınların yaygınlık kazanmasına neden olmuştur.",
@@ -26082,7 +26361,7 @@
           "printed_page": 215,
           "question_no": "3",
           "prompt_summary": "Radyo tiyatrosu ile televizyonu hayal gücünü besleme bakımından karşılaştırma",
-          "answer": "Radyo tiyatrosu ve televizyon hayal gücünü farklı yollarla kullanabilir. Radyo tiyatrosunda görsel ayrıntıların önemli bölümü dinleyicinin zihninde tamamlanır; televizyon ise mekânı, oyuncuyu ve birçok görsel ayrıntıyı hazır gösterir. Bununla birlikte televizyonun hayal gücünü hiç kullanmadığı söylenemez; anlatının niteliğine göre izleyici de çıkarım ve hayal kurabilir.",
+          "answer": "Radyo tiyatrosu ve televizyon hayal gücünü farklı biçimlerde harekete geçirir.",
           "source_locator": "basılı s.215 ve s.218 / PDF s.216 ve s.219 — soru 3 / Radyo Tiyatrosu Eğitimi",
           "guidance": "Televizyon izleyicisini otomatik olarak ‘pasif tüketici’ diye nitelemeyin; karşılaştırmayı görselin hazır verilmesi ve ses üzerinden zihinsel tamamlama farkına dayandırın.",
           "answer_sections": {
@@ -26341,7 +26620,7 @@
           "printed_page": 218,
           "question_no": "Hatırlayalım 1",
           "prompt_summary": "Radyo tiyatrosunu oluşturan temel unsurlar",
-          "answer": "Soru, tiyatroya ilişkin ön bilgilerden hareketle radyo tiyatrosunu oluşturan unsurları belirlemeyi ister. s.218'deki Radyo Tiyatrosu Eğitimi metni bu tartışmayı somutlaştırır: görüntü boşluğunu ses, söz, efekt ve müziğin doldurduğunu; yazar, yönetmen, oyuncu, efektçi ve prodüktörün bu işitsel anlatımın kurulmasında görev aldığını belirtir. Bunlara tiyatronun kişi, olay/dramatik örgü, çatışma, zaman ve mekân gibi temel yapı unsurları da eklenebilir.",
+          "answer": "Radyo tiyatrosu dramatik yapı, işitsel anlatım ve yapım ekibini bir araya getirir.",
           "source_locator": "basılı s.218 / PDF s.219 — Hatırlayalım soru 1",
           "guidance": "Kitabın açıkça saydığı ses, söz, efekt, müzik ve yapım rollerini koruyun. Bunun yanında öğrencilerin tiyatro ön bilgilerinden getirdiği kişi, olay, çatışma, zaman ve mekân gibi gerekçeli unsurları da kabul edin; tek ve değişmez bir ‘zorunlu liste’ dayatmayın.",
           "answer_sections": {
@@ -26385,7 +26664,7 @@
           "printed_page": 218,
           "question_no": "Hatırlayalım 2",
           "prompt_summary": "Radyo tiyatrosunda müzik, ses efekti, seslendirme ve tonlamanın önemi",
-          "answer": "Bu soru bir tahmin sorusudur. s.218'deki açıklamalardan hareketle müzik, efekt, seslendirme ve tonlamanın görsel bilgi bulunmadığında dinleyicinin kişi, eylem, mekân ve duyguya ilişkin ipuçları kurmasına yardım edebileceği söylenebilir; ancak her ögenin her oyunda aynı işlevi üstleneceği varsayılmamalıdır.",
+          "answer": "Ses efekti, seslendirme, tonlama ve müzik dinleyicide anlatıma ilişkin farklı ipuçları oluşturabilir; somut işlevleri kayıttan çıkarılır.",
           "evidence_quotes": [
             "görüntüden yoksun olduğundan ister istemez bu boşluğu ses, söz, efekt ve müzik dolduracaktır",
             "İki aynı renkteki sese bir radyo oyununda rol verilmez.",
@@ -26910,7 +27189,7 @@
           "printed_page": 221,
           "question_no": "Çözümleyebilme 1",
           "prompt_summary": "Direnişin Ustaları'nın kişi, mekân, zaman, dramatik örgü ve çatışma unsurlarını belirleme",
-          "answer": "Bu kayıt `source_limited`dır. Direnişin Ustaları'nın kişi, mekân, zaman, dramatik örgü ve çatışma unsurları QR medya dinlenmeden doldurulamaz. Öğrenci aşağıdaki çözümleme şablonunu gerçek dinleme notlarıyla tamamlamalıdır.",
+          "answer": "QR kaydı dinlenmeden kişi, mekân, zaman, olay örgüsü ve çatışma belirlenemez; aşağıdaki şablon gerçek dinleme notlarıyla tamamlanır.",
           "answer_sections": {
             "kisi": "[Ses kaydında geçen kişi/kişiler] → onları ayırt ettiren söz, ses veya davranış.",
             "mekan": "[Diyalog, efekt veya anlatımın düşündürdüğü yer] → kanıt.",
@@ -27170,7 +27449,7 @@
           "printed_page": 222,
           "question_no": "Sıra Sizde 1-5",
           "prompt_summary": "Millî ve manevi değerlerin metnin iletilerine etkisini görüş geliştirme tekniğiyle tartışma",
-          "answer": "Görüş Geliştirme etkinliğinde amaç, öğrencinin önermeye kendi dinleme kanıtlarıyla katılma/katılmama derecesini gerekçelendirmesidir. Kitaptaki kavram haritası başlıkları tartışma için kullanılabilir; her birinin oyunda nasıl işlendiği dinlemeden doğrulanmalıdır.",
+          "answer": "Tartışma, öğrencinin seçtiği görüşü gerçek dinleme kanıtıyla gerekçelendirmesine dayanır.",
           "guidance": "Değer adları kitapta verilebilir; fakat ‘usta-çırak saygısı’, ‘aile toplumsal dayanışmanın çekirdeğidir’ gibi metne özgü açıklamaları QR kaydı dinlenmeden doldurmayın. Fikir değiştirmek etkinliğin doğal parçasıdır.",
           "source_locator": "basılı s.222 / PDF s.223 — Sıra Sizde 1-5",
           "answer_sections": {
@@ -27266,7 +27545,7 @@
           "printed_page": 223,
           "question_no": "Ders Dışı Etkinlik",
           "prompt_summary": "Direnişin Ustaları'nı tarih, sosyoloji ve psikolojiyle ilişkilendiren grup araştırması",
-          "answer": "Ders dışı etkinlik üç araştırma grubuyla yürütülür: Metin-Tarih, Metin-Sosyoloji ve Metin-Psikoloji. Önce Direnişin Ustaları'ndan gerçek bulgular çıkarılır; sonra araştırma yapılırken kitapta istendiği gibi farklı radyo tiyatrosu örneklerinden de yararlanılır. Dış araştırma bilgisi ile incelenen kurmaca metindeki kanıt birbirine karıştırılmamalıdır.",
+          "answer": "Tarih, sosyoloji ve psikoloji grupları metni kendi alanlarıyla araştırır; metin kanıtı dış kaynak bilgisinden ayrı tutulur.",
           "guidance": "İmalat-ı Harbiye, Karakol Cemiyeti, gizli imalathaneler, belirli psikolojik ‘direnç’ veya sosyal tabakalaşma sonuçlarını QR medya ve güvenilir dış kaynakla doğrulamadan hazır araştırma sonucu yapmayın. Kitabın açıkça istediği ‘farklı radyo tiyatrosu örneklerinden yararlanma’ adımını da atlamayın.",
           "source_locator": "basılı s.223 / PDF s.224 — Ders Dışı Etkinlik",
           "answer_sections": {
@@ -27354,7 +27633,7 @@
           "printed_page": 223,
           "question_no": "Süreci Değerlendirebilme 1",
           "prompt_summary": "Direnişin Ustaları'nı değerlendirmek için ölçütler belirleme",
-          "answer": "Kitap 'Dil kullanımı — yalın, doğal ve etkileyici bir dil kullanılmıştır.' ifadesini örnek ölçüt olarak verir. Öğrenci başka ölçütler belirlemeli ve her ölçüt için gerçek dinleme kanıtına dayalı gerekçeli değerlendirme yapmalıdır; rehber değerlendirme sonucunu öğrenci adına önceden doldurmamalıdır.",
+          "answer": "Öğrenci belirlediği ölçütleri gerçek dinleme kanıtıyla değerlendirir.",
           "guidance": "Ölçüt belirlemekle yetinmeyin; kitap gerekçeli değerlendirme de ister. Ancak 'ses tonu mükemmel örtüşmüştür', 'efektler kusursuzdur' veya 'müzik başarıyla yönetmiştir' gibi sonuçları gerçek kayıt kanıtı olmadan öğrenci adına vermeyin.",
           "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 1",
           "answer_sections": {
@@ -27737,7 +28016,7 @@
           "printed_page": 225,
           "question_no": "Yazmayı Yönetebilme 1-2",
           "prompt_summary": "Direnişin Ustaları'ndan dönüştürülecek diyaloğu seçme ve uygun yazma stratejisi belirleme",
-          "answer": "Bu etkinliğin tek bir hazır cevabı yoktur. Öğrenci, Direnişin Ustaları'nda gerçekten duyduğu bir diyaloğu seçer; bu seçimi hangi ölçütlerle yaptığını yazar; akran görüşü alır ve seçtiği diyaloğu metnin bağlamını koruyarak başka bir türe dönüştürmek için uygun yazma yöntem ve stratejisini belirler. Basılı s.225'teki açıklama, radyo oyununda diyalogların önemli olduğunu; müzik ve efektin konuyu pekiştirdiğini, zaman ve mekân geçişlerine yardım edebildiğini belirtir.",
+          "answer": "Diyalog seçimi ve başka türe dönüştürme süreci, gerçek dinleme kanıtına ve metnin bağlamına dayalı olarak planlanır.",
           "guidance": "Gerçek diyalog ve kişilere ilişkin ayrıntılar QR dinleme kaydından gelmelidir. 'Başusta', 'çırak', gizli atölye, silah üretimi, devriye, torna sesi gibi ayrıntıları kayıt görülmeden hazır cevap olarak kullanmayın. Seçim ölçütleri öğrencinin gerekçelendirmesine açıktır.",
           "source_locator": "basılı s.225 / PDF s.226 — Yazmayı Yönetebilme 1-2",
           "answer_sections": {
@@ -27753,7 +28032,8 @@
               "Seçilecek yeni türde yeniden kurulmaya elverişli olması.",
               "Metnin bağlamını korumaya imkân vermesi."
             ],
-            "kaynak_siniri": "Bu ölçütler öğretmen desteği için olası ölçütlerdir; seçilecek gerçek diyalog ve içerik QR kaydından doğrulanmalıdır."
+            "kaynak_siniri": "Bu ölçütler öğretmen desteği için olası ölçütlerdir; seçilecek gerçek diyalog ve içerik QR kaydından doğrulanmalıdır.",
+            "Basılı sayfa notu": "Kitap, diyalogların radyo oyununda önemli olduğunu; müzik ve efektin konuyu pekiştirip zaman/mekân geçişlerine yardım edebildiğini belirtir."
           }
         },
         "content": {
@@ -27829,7 +28109,7 @@
           "printed_page": 226,
           "question_no": "Performans Görevi a-ç",
           "prompt_summary": "Diyaloğu başka türe dönüştürmek için amaç, tür, yöntem ve yazma engellerini planlama",
-          "answer": "Kitabın s.226'daki Performans Görevi, yazmaya başlamadan önce dört karar verilmesini ister. Bu alanların cevabı öğrencinin seçtiği diyalog ve dönüştüreceği türe göre değişir; kitap belirli bir olay, karakter veya türü zorunlu tutmaz.",
+          "answer": "Yazma öncesi amaç, metin özellikleri, tür/strateji ve olası engeller seçilen diyalog ve türe göre planlanır.",
           "source_locator": "basılı s.226 / PDF s.227 — Performans Görevi a-ç",
           "answer_sections": {
             "a_yazma_amaci": "Yazma amacı: [...] (ör. ikna etme, bilgilendirme vb.).",
@@ -28043,7 +28323,7 @@
           "printed_page": 227,
           "question_no": "Kural Uygulayabilme a-ı",
           "prompt_summary": "Diyaloğu başka türe dönüştürürken uygulanacak yazma kuralları",
-          "answer": "Kural Uygulayabilme bölümünde s.227-228 boyunca verilen kurallar, seçilen diyaloğun başka türe dönüştürülmesi sırasında uygulanmalıdır. Kitap, belirli bir karakter üslubu veya olay örneği vermez; kurallar genel yazma ölçütleridir.",
+          "answer": "Dönüştürülen metin, s.227–228’deki yazma kurallarıyla gözden geçirilmelidir; kitap hazır karakter veya olay örneği vermez.",
           "guidance": "Kuralları 'usta olgun konuşur, çırak telaşlıdır', 'vatan sevgisi örtük verilir' gibi QR kaydı görülmeden üretilmiş içeriklerle örneklendirmeyin. Seçilen gerçek diyaloğun bağlamını koruyun.",
           "source_locator": "basılı s.227-228 / PDF s.228-229 — Kural Uygulayabilme",
           "answer_sections": {
@@ -28584,16 +28864,16 @@
           "printed_page": 231,
           "question_no": "3",
           "prompt_summary": "Kurmaca, gerçeklik izlenimi, okur yorumu, nesnellik ve çok anlamlılık kavramlarını açıklama",
-          "answer": "Metne göre kavramlar şöyle ilişkilendirilebilir: Kurmaca, dış dünyadaki insan, mekân, olay, duygu ve zamanın benzerlerini yaratıcı biçimde yeniden kuran anlatı dünyasıdır. Gerçeklik izlenimi, düşsel kişi ve olayların gerçeğe benzer biçimde sunulmasıdır. Okur yorumu, okurun kültürel birikimi, inancı, ilgisi, dikkati ve merakına göre kurmaca gerçekliği farklı algılayıp yorumlamasıdır. Nesnellik, metinde dış dünya göndergelerinin yaşanmış, bilinir ve nesnel yönünü ifade eder. Çok anlamlılık ise kurmaca dünyanın farklı okurlar tarafından farklı biçimlerde anlamlandırılabilmesidir.",
+          "answer": "Kavramlar metindeki anlamlarıyla şöyle açıklanabilir:",
           "explanation": "Bu açıklamalar s.231'deki metnin kurduğu karşıtlığa dayanır: dış dünya yaşanmış ve bilinir bir gerçeklik alanı iken kurmaca dünya yaratıcılık ve çok anlamlılıkla kurulur; okur da bu dünyayı kendi birikimine göre yorumlar.",
           "guidance": "Metinde olmayan 'metaforik doku', 'alımlama estetiği' gibi kuramsal terimleri zorunlu cevap hâline getirmeyin.",
           "source_locator": "basılı s.231 / PDF s.232 — soru 3",
           "answer_sections": {
-            "kurmaca": "Dış dünyanın benzerlerinden yararlanıp onları yaratıcı biçimde yeniden kuran anlatı dünyası.",
-            "gerceklik_izlenimi": "Düşsel kişi, olay, zaman ve mekânın gerçeğe benzer/inandırıcı biçimde sunulması.",
-            "okur_yorumu": "Okurun birikim, inanç, ilgi, dikkat ve merakına göre metni farklı anlamlandırması.",
-            "nesnellik": "Dış dünya göndergelerinin yaşanmış, bilinir ve nesnel yönü.",
-            "cok_anlamlilik": "Kurmaca gerçekliğin farklı yorumlara açık olması."
+            "Kurmaca": "Dış dünyanın benzerlerinden yararlanıp onları yaratıcı biçimde yeniden kuran anlatı dünyası.",
+            "Gerçeklik izlenimi": "Düşsel kişi, olay, zaman ve mekânın gerçeğe benzer/inandırıcı biçimde sunulması.",
+            "Okur yorumu": "Okurun birikim, inanç, ilgi, dikkat ve merakına göre metni farklı anlamlandırması.",
+            "Nesnellik": "Dış dünya göndergelerinin yaşanmış, bilinir ve nesnel yönü.",
+            "Çok anlamlılık": "Kurmaca gerçekliğin farklı yorumlara açık olması."
           }
         },
         "content": {
@@ -28651,8 +28931,7 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer",
-          "explanation"
+          "answer"
         ],
         "display_prompt": "Ölçme ve Değerlendirme 5 — Okur yorumu anlayışına uygun seçeneği belirleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -28674,10 +28953,13 @@
           "printed_page": 231,
           "question_no": "5",
           "prompt_summary": "Metindeki okur yorumu anlayışıyla örtüşen seçeneği belirleme",
-          "answer": "Doğru cevap: **E**. Metin, okurların kurmaca gerçekliği kültürel birikimleri, ideolojik veya dinî anlayışları, kişisel ilgi, dikkat ve meraklarına göre farklı biçimlerde algılayıp yorumladıklarını açıkça söyler.",
-          "explanation": "E seçeneği bu ifadeyi doğrudan karşılar. Diğer seçenekler okur yorumunu ya tek bir kaynağa indirger ya da anlamı sabit ve zorunlu kabul eder.",
+          "answer": "Doğru cevap: **E**.",
           "source_locator": "basılı s.231 / PDF s.232 — soru 5 / doğru seçenek E",
-          "guidance": "Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir."
+          "guidance": "Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir.",
+          "answer_sections": {
+            "Gerekçe": "Metin, okurların kurmaca gerçekliği kültürel birikimleri, ideolojik veya dinî anlayışları, kişisel ilgi, dikkat ve meraklarına göre farklı biçimlerde algılayıp yorumladıklarını açıkça söyler.",
+            "Diğer seçenekler": "Diğer seçenekler okur yorumunu ya tek bir kaynağa indirger ya da anlamı sabit ve zorunlu kabul eder."
+          }
         },
         "content": {
           "lead": "Seçenekleri basılı s.231'den okuyun; metnin farklı okurların birikim, ilgi ve değerlerine ilişkin açıklamasıyla karşılaştırın."
@@ -28689,8 +28971,7 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer",
-          "explanation"
+          "answer"
         ],
         "display_prompt": "Ölçme ve Değerlendirme 6 — Kurmaca ile dış dünya gerçekliği arasındaki temel farkı belirleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -28712,10 +28993,13 @@
           "printed_page": 231,
           "question_no": "6",
           "prompt_summary": "Kurmaca metni dış dünya gerçekliğinden ayıran temel farkı belirleme",
-          "answer": "Doğru cevap: **C**. Metin, dış dünyanın nesnel/yaşanmış gerçekliği ile kurmaca dünyanın yaratıcılıkla kurulmuş gerçeklik izlenimini birbirinden ayırır.",
-          "explanation": "C seçeneği bu temel ayrımı en doğrudan biçimde ifade eder. E seçeneği metinde geçen farklı okur yorumlarına ilişkindir; doğru bir düşünce olsa da sorunun istediği 'kurmaca ile dış dünya gerçekliği arasındaki fark'ı C kadar doğrudan açıklamaz.",
+          "answer": "Doğru cevap: **C**.",
           "source_locator": "basılı s.231 / PDF s.232 — soru 6 / doğru seçenek C",
-          "guidance": "Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir."
+          "guidance": "Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir.",
+          "answer_sections": {
+            "Gerekçe": "Metin, dış dünyanın nesnel/yaşanmış gerçekliği ile kurmaca dünyanın yaratıcılıkla kurulmuş gerçeklik izlenimini birbirinden ayırır.",
+            "E seçeneği": "E seçeneği metindeki farklı okur yorumlarına ilişkindir; doğru bir düşünceyi yansıtsa da sorunun istediği temel farkı C kadar doğrudan açıklamaz."
+          }
         },
         "content": {
           "lead": "Kurmaca dünyanın ne tamamen gerçekliğin kopyası ne de inandırıcılıktan yoksun bir evren olduğunu düşünün."
@@ -28834,10 +29118,24 @@
           "printed_page": 233,
           "question_no": "8",
           "prompt_summary": "Orhan Veli'nin metinde tanıtılan yönleri",
-          "answer": "Metin Orhan Veli'yi şu yönleriyle tanıtır: Türk edebiyatında şair kimliğiyle öne çıkan bir sanatçı olması; Garip akımıyla Türk şiirine yeni bir soluk getirmesi ve bu sanat anlayışıyla başka şairleri etkilemesi; biri serbest çeviri olmak üzere toplam yedi öykü kaleme alması; Garip anlayışının etkisini öykülerinde de göstermesi; şiir ve öykülerinde deniz tutkusu, sıradan insanların gündelik hayatı, tabiat, aşk, yaşama sevinci, toplumsal eleştiri ve İstanbul gibi ortak konulara yer vermesi; öykülerinde yaşamdan anlık kesitleri sade ve akıcı bir üslupla işlemesi ve Çehov tarzı, hayattan esinlenen öyküler yazması.",
+          "answer": "Metin, Orhan Veli’yi şu yönleriyle tanıtır:",
           "explanation": "Bu maddelerin tamamı s.232-233'teki Orhan Veli parçasında açıkça verilen bilgilere dayanır.",
           "source_locator": "basılı s.232-233 / PDF s.233-234 — soru 8",
-          "guidance": "'Garip'in kurucusu/teorisyeni', 'hece ve aruzu yıktı', 'balıkçıları ve memurları şiire soktu', 'halkın günlük konuşma dilini kullandı' gibi bu parçada açıkça söylenmeyen ayrıntıları zorunlu cevap yapmayın."
+          "guidance": "'Garip'in kurucusu/teorisyeni', 'hece ve aruzu yıktı', 'balıkçıları ve memurları şiire soktu', 'halkın günlük konuşma dilini kullandı' gibi bu parçada açıkça söylenmeyen ayrıntıları zorunlu cevap yapmayın.",
+          "answer_sections": {
+            "Şairliği ve Garip akımı": "Türk edebiyatında şair kimliğiyle öne çıkar; Garip akımıyla Türk şiirine yeni bir soluk getirir ve bu anlayışla başka şairleri etkiler.",
+            "Öykücülüğü": "Biri serbest çeviri olmak üzere toplam yedi öykü kaleme almış, öykülerinde de Garip anlayışının etkisini göstermiştir.",
+            "İşlediği konular": [
+              "Deniz tutkusu",
+              "Sıradan insanların gündelik hayatı",
+              "Tabiat",
+              "Aşk",
+              "Yaşama sevinci",
+              "Toplumsal eleştiri",
+              "İstanbul"
+            ],
+            "Öykü anlayışı ve üslubu": "Yaşamdan anlık kesitleri sade ve akıcı bir üslupla işler; hayattan esinlenen, Çehov tarzı öyküler yazar."
+          }
         },
         "content": {
           "lead": "s.232–233'teki parçada şairlik, Garip akımı, öykücülük, tema ve üslup bilgilerini birlikte değerlendirin."
@@ -28849,8 +29147,7 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer",
-          "explanation"
+          "answer"
         ],
         "display_prompt": "Ölçme ve Değerlendirme 9 — Orhan Veli metni hakkında söylenemeyecek seçeneği bulunuz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -28872,10 +29169,14 @@
           "printed_page": 233,
           "question_no": "9",
           "prompt_summary": "Orhan Veli'yi tanıtan metinle ilgili söylenemeyecek seçeneği belirleme",
-          "answer": "Doğru cevap: **C — Yazarın yaşamı kronolojik olarak verilmiştir.** Metin Orhan Veli'nin doğumdan ölüme yaşam öyküsünü kronolojik biçimde anlatmaz; şairliği, Garip akımıyla ilişkisi, öykücülüğü, işlediği konular ve üslubu üzerinde durur.",
-          "explanation": "A, B, D ve E seçeneklerinin karşılığı metinde bulunur: edebî kişilik, Garip ilişkisi, şiir/öykü temaları ve bilgilendirici anlatım verilir.",
+          "answer": "Doğru cevap: **C**.",
           "source_locator": "basılı s.233 / PDF s.234 — soru 9 / doğru seçenek C",
-          "guidance": "Metni 'edebî portre' gibi kitaptaki sorunun gerektirmediği bir türe kesin olarak etiketlemeye gerek yoktur."
+          "guidance": "Metni 'edebî portre' gibi kitaptaki sorunun gerektirmediği bir türe kesin olarak etiketlemeye gerek yoktur.",
+          "answer_sections": {
+            "C seçeneğinin ifadesi": "Yazarın yaşamı kronolojik olarak verilmiştir.",
+            "Neden söylenemez?": "Metin, Orhan Veli’nin doğumdan ölüme yaşam öyküsünü kronolojik biçimde anlatmaz; şairliği, Garip akımıyla ilişkisi, öykücülüğü, işlediği konular ve üslubu üzerinde durur.",
+            "Diğer seçenekler": "A, B, D ve E seçeneklerinin karşılığı metinde bulunur: edebî kişilik, Garip ilişkisi, şiir/öykü temaları ve bilgilendirici anlatım verilir."
+          }
         },
         "content": {
           "lead": "Metin sanatçının yaşamını kronolojik sırayla mı anlatıyor, yoksa edebî kişiliğine mi odaklanıyor? Bu ayrım üzerinden seçin."
@@ -28948,19 +29249,19 @@
           "printed_page": 233,
           "question_no": "10",
           "prompt_summary": "Biyografi yarışmasında 13 puan alan II. grubun tablosunu belirleme",
-          "answer": "II. gruba ait tablo **Tablo A**'dır ve toplam **13 puan** alır. Amaç, Dil ve İçerik açıklamaları doğru kabul edilir: 3 × 5 = 15 puan. 'Biyografide kişinin yaşam tarzı toplumsal normlara göre değerlendirilmelidir.' biçimindeki Tutum açıklaması yanlıştır: −2 puan. Toplam 15 − 2 = **13**.",
+          "answer": "II. gruba ait tablo **Tablo A**’dır; toplam puanı **13**’tür.",
           "explanation": "Tablodaki yanlış Tutum cümlesini başka bir cümleyle değiştirmeden değerlendirmek gerekir. Biyografi, kişinin yaşamını toplumsal normlara göre hükme bağlamayı zorunlu bir tür özelliği olarak koymaz.",
           "source_locator": "basılı s.233 / PDF s.234 — soru 10",
           "answer_sections": {
-            "dogru": [
+            "Doğru puanlar": [
               "Amaç: +5",
               "Dil: +5",
               "İçerik: +5"
             ],
-            "yanlis": [
+            "Yanlış puan": [
               "Tutum: -2"
             ],
-            "toplam": "13 puan"
+            "Toplam puan": "13 puan"
           },
           "guidance": "Tablo A'daki Tutum cümlesini 'aşırı övücü/yerici olmalıdır' gibi kitapta yazmayan başka bir ifadeye dönüştürmeyin."
         },
@@ -28981,8 +29282,7 @@
         "density": "compact",
         "reveal_order": [
           "guidance",
-          "answer",
-          "explanation"
+          "answer"
         ],
         "display_prompt": "Ölçme ve Değerlendirme 11 — I. grup hangi kavram açıklamalarını düzeltmelidir?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -29004,13 +29304,12 @@
           "printed_page": 233,
           "question_no": "11",
           "prompt_summary": "I. grubun tam puan için düzeltmesi gereken biyografi kavramları",
-          "answer": "II. grup Tablo A olduğuna göre I. grup **Tablo B**'dir. Tam puan için Tablo B'deki **Tarafsızlık** ve **Kronoloji** açıklamalarını düzeltmelidir. 'Biyografilerde kişinin hayatı anlatılırken tarafsızlık ilkesi göz ardı edilebilir.' ifadesi yanlıştır; tarafsızlık/nesnellik gözetilmelidir. 'Biyografide kişinin doğumundan itibaren kronolojik sırayı takip etme zorunluluğu vardır.' ifadesindeki mutlak zorunluluk da yanlıştır; kronolojik düzen kullanılabilen bir yöntemdir fakat bütün biyografiler için değişmez bir zorunluluk değildir.",
-          "explanation": "Tablo B'deki Tür ve Belge açıklamaları korunur; düzeltme gereken iki kavram Tarafsızlık ve Kronoloji'dir.",
+          "answer": "Düzeltilmesi gereken iki açıklama Tablo B’deki **Tarafsızlık** ve **Kronoloji** kavramlarıdır.",
           "source_locator": "basılı s.233 / PDF s.234 — soru 11",
           "answer_sections": {
-            "Tarafsizlik": "Tarafsızlık ilkesi göz ardı edilmez; kişi hakkında bilgi verirken nesnel/tarafsız bir tutum gözetilir.",
+            "Tarafsızlık": "Tarafsızlık ilkesi göz ardı edilmez; kişi hakkında bilgi verirken nesnel/tarafsız bir tutum gözetilir.",
             "Kronoloji": "Kronolojik anlatım kullanılabilir; fakat doğumdan itibaren kronolojik sırayı izlemek mutlak bir zorunluluk değildir.",
-            "dogru_olanlar": [
+            "Diğer doğru kavramlar": [
               "Tür",
               "Belge"
             ]
@@ -29127,18 +29426,18 @@
           "printed_page": 234,
           "question_no": "13",
           "prompt_summary": "Bir Bilim Adamının Romanı parçasındaki sekiz yargıyı Evet/Hayır/Bilgi yok olarak değerlendirme",
-          "answer": "Parçaya göre işaretleme: 1 **Evet** — bilgi verme amacı vardır. 2 **Evet** — parça Bir Bilim Adamının Romanı adlı biyografik romandan alınmıştır. 3 **Evet** — dil açık ve anlaşılırdır. 4 **Evet** — Mustafa İnan'ın yaşantısından bir kesit ve çevresiyle ilişkisi anlatılır. 5 **Hayır** — anlatıcı Mustafa İnan'ın kendisi olan bir kahraman anlatıcı değildir. 6 **Evet** — devrik/konuşma diline yaklaşan cümleler anlatıma canlılık katar. 7 **Hayır** — anlatım yalnız nesnel bilgi aktarımıyla sınırlı değildir; Mustafa'nın yalnızlığına ilişkin yorum da vardır. 8 **Hayır** — bu parça yaşamı baştan sona kronolojik sırayla anlatmaz.",
+          "answer": "Sekiz yargının değerlendirmesi aşağıda madde madde verilmiştir.",
           "explanation": "Sekiz satırın değerlendirmesi yalnız verilen parça ve kitabın daha önce Bir Bilim Adamının Romanı'nı biyografik roman örneği olarak tanıtmasına dayanır.",
           "source_locator": "basılı s.234 / PDF s.235 — soru 13",
           "answer_sections": {
-            "1": "Evet",
-            "2": "Evet",
-            "3": "Evet",
-            "4": "Evet",
-            "5": "Hayır",
-            "6": "Evet",
-            "7": "Hayır",
-            "8": "Hayır"
+            "1": "Evet — Bilgi verme amacı vardır.",
+            "2": "Evet — Parça, Bir Bilim Adamının Romanı adlı biyografik romandan alınmıştır.",
+            "3": "Evet — Dil açık ve anlaşılırdır.",
+            "4": "Evet — Mustafa İnan’ın yaşantısından bir kesit ve çevresiyle ilişkisi anlatılır.",
+            "5": "Hayır — Anlatıcı, Mustafa İnan’ın kendisi olan bir kahraman anlatıcı değildir.",
+            "6": "Evet — Devrik/konuşma diline yaklaşan cümleler anlatıma canlılık katar.",
+            "7": "Hayır — Anlatım yalnız nesnel bilgi aktarımıyla sınırlı değildir; Mustafa’nın yalnızlığına ilişkin yorum da vardır.",
+            "8": "Hayır — Bu parça yaşamı baştan sona kronolojik sırayla anlatmaz."
           },
           "guidance": "'Hâkim anlatıcı' gibi bu kısa parça üzerinden kesinleştirilmesi gerekmeyen anlatıcı alt türlerini eklemeyin. 'Bilgi yok' seçeneği ancak parçada karar vermeye yeterli veri bulunmadığında kullanılmalıdır."
         },
@@ -29217,7 +29516,7 @@
           "printed_page": 234,
           "question_no": "14",
           "prompt_summary": "Aile Bağları'ndaki diyalog tekniğinin anlatıma ve kişilerin yansıtılmasına katkısı",
-          "answer": "Bu soru Aile Bağları QR videosuna bağlıdır. Video görülmeden yapıma özgü kişi, ilişki, çatışma veya replikler hakkında hazır cevap verilemez. Öğrenci, videoda gerçekten duyduğu bir diyaloğu seçip bu konuşmanın kişilerin duygu ve düşüncelerini, birbirleriyle ilişkilerini veya olayın ilerleyişini nasıl görünür kıldığını açıklamalıdır.",
+          "answer": "Bu soru QR videosundaki gerçek bir diyalog üzerinden cevaplanmalıdır.",
           "guidance": "Yalnız genel çözümleme şablonu verin. 'Kuşak çatışması', 'aile içi güç dengesi', belirli alt metin veya psikolojik özellikleri videodan kanıt olmadan bu yapımın özelliği gibi yazmayın.",
           "source_locator": "basılı s.234 / PDF s.235 — soru 14 / Aile Bağları QR videosu gerekli",
           "answer_sections": [
@@ -29260,7 +29559,7 @@
           "printed_page": 234,
           "question_no": "15",
           "prompt_summary": "Aile Bağları videosunda kişi, mekân ve zamanın dramatik olay örgüsüne katkısı",
-          "answer": "Bu soru da Aile Bağları QR videosuna bağlıdır. Kişi, mekân ve zamanın bu yapıttaki dramatik olay örgüsüne katkısı, yalnız videodaki somut kişi, sahne ve zaman ipuçlarından hareketle açıklanabilir; kitap sayfası bu ayrıntıları yazılı olarak vermez.",
+          "answer": "Kişi, mekân ve zamanın olay örgüsüne katkısı videodaki somut ipuçlarıyla açıklanmalıdır.",
           "guidance": "'Aile evi', belirli kuşaklar, günün saati, mevsim, dekor, ışık veya geçmiş-şimdi geçişi gibi videoda doğrulanmamış ayrıntıları hazır cevap olarak kullanmayın.",
           "source_locator": "basılı s.234 / PDF s.235 — soru 15 / Aile Bağları QR videosu gerekli",
           "answer_sections": {
@@ -29341,10 +29640,17 @@
           "printed_page": 235,
           "question_no": "16",
           "prompt_summary": "Yazarın hayatından bilgiler vererek olay yazmaya uygun parçaları belirleme",
-          "answer": "Doğru cevap: **C — I, IV ve V**. I numaralı parça Şem'î'nin mahlasının ve fiziksel görünüşünün anlatıldığı tezkire/şair hayatı bilgisidir. IV numaralı parçada anlatıcı kendi Ankara hayatından ve oradaki sanatçı dostlarından söz eder; doğrudan yaşam/anı bilgisi taşır. V numaralı parça Çakerî'nin mahlasını ve sakalını boyamasıyla ilgili rivayet edilen olayı anlatan tezkire/şair hayatı bilgisidir. II ve III ise kurmaca kişilerin yaşantı ve iç dünyalarını anlatan roman parçalarıdır; yazarın kendi hayatına dair bilgi olarak kullanılamaz.",
-          "explanation": "Etkinliğin ölçütü, 'bir olayı yazarın hayatına dair bilgiler de vererek' yazmaya uygun malzeme seçmektir. I ve V biyografik/tezkire niteliğinde şair hayatı bilgisi, IV ise anlatıcının kendi yaşam çevresine ilişkin anı bilgisi verir.",
+          "answer": "Doğru cevap: **C — I, IV ve V**.",
+          "explanation": "Ölçüt, seçilen parçanın yazarın veya anlatıcının gerçek yaşamına ilişkin bilgi taşımasıdır.",
           "source_locator": "basılı s.235 / PDF s.236 — soru 16 / doğru seçenek C (I, IV, V)",
-          "guidance": "I. parçada 'tahsil', V. parçada 'şiir hevesi/yetiştiği çevre' gibi bu sayfadaki parçalarda bulunmayan ayrıntıları gerekçeye eklemeyin."
+          "guidance": "I. parçada 'tahsil', V. parçada 'şiir hevesi/yetiştiği çevre' gibi bu sayfadaki parçalarda bulunmayan ayrıntıları gerekçeye eklemeyin.",
+          "answer_sections": {
+            "I": "Uygun. Şem’î’nin mahlası ve fiziksel görünüşüyle ilgili tezkire/şair yaşamı bilgisi sunar.",
+            "II": "Uygun değil. Kurmaca bir roman kişisinin yaşantısı, yazarın hayatına ilişkin bilgi değildir.",
+            "III": "Uygun değil. Kurmaca bir roman kişisinin iç dünyasını anlatır; yazarın hayatına ilişkin bilgi vermez.",
+            "IV": "Uygun. Anlatıcı kendi Ankara hayatından ve sanatçı dostlarından söz ederek yaşam/anı bilgisi verir.",
+            "V": "Uygun. Çakerî’nin mahlası ve sakalını boyamasıyla ilgili rivayet, tezkire/şair yaşamı bilgisidir."
+          }
         },
         "content": {
           "lead": "Her parçada anlatılan kişinin yazar mı, bir tezkirede tanıtılan şair mi, yoksa kurmaca karakter mi olduğunu denetleyin."
@@ -38169,7 +38475,14 @@
           "question_no": "2",
           "source_locator": "basılı s.304 / PDF s.305 — Soru 2 / doğru seçenek A",
           "prompt_summary": "Küçürek öykü parçasındaki sentezleyici cümlenin tiyatro metninde nasıl karşılık bulduğunu açıklama",
-          "answer": "Cevap A’dır. I. metin, modern Türk tiyatrosunun geleneksel biçimlerle Batı tiyatrosunun yaklaşımını buluşturduğunu genel olarak açıklar. II. metin, özellikle 1960’larda açık biçim ve episodik yapı üzerinden bu birleşmenin tiyatrodaki görünüşlerini örneklendirir; açıklamayla çelişmez veya onu çürütmez.",
+          "answer": "Doğru seçenek: A.",
+          "answer_sections": {
+            "Gerekçe": [
+              "I. metin, modern Türk tiyatrosunun geleneksel biçimlerle Batı tiyatrosunu buluşturduğunu genel olarak açıklar.",
+              "II. metin, özellikle 1960’larda açık biçim ve episodik yapıyla bu buluşmanın tiyatrodaki görünüşlerini örneklendirir.",
+              "Bu nedenle II. metin, I. metinle çelişmez; onu somut örneklerle destekler."
+            ]
+          },
           "evidence_quotes": [
             "episodik bir yapı"
           ]
@@ -38206,7 +38519,15 @@
           "question_no": "3",
           "source_locator": "basılı s.304 / PDF s.305 — Soru 3",
           "prompt_summary": "Küçürek hikâyenin modern yaşamdan beslendiğine ilişkin çıkarılamayan yargıyı seçme",
-          "answer": "Cevap A’dır. Parçada küçürek hikâyenin modern insanın parçalanmışlığı, yalnızlığı, zaman ve mekân darlığı gibi durumlardan beslendiği ve anlatımın kısalıp özleştiği belirtilir. Yazarların bu durumları “büyük bir titizlikle” işlediği ise parçada söylenmez. Diğer seçenekler metindeki belirtilen neden ve özellikleri yeniden ifade eder."
+          "answer": "Doğru seçenek: A.",
+          "answer_sections": {
+            "Gerekçe": [
+              "Parça, küçürek hikâyenin modern insanın parçalanmışlığı ve yalnızlığı ile zaman ve mekân darlığından beslendiğini belirtir.",
+              "Anlatımın kısalıp özleşmesi metinde verilen özelliklerdendir.",
+              "Yazarların bu durumları “büyük bir titizlikle” işlediği söylenmez; bu nedenle A seçeneği parçadan çıkarılamaz.",
+              "Diğer seçenekler metindeki neden ve özellikleri yeniden ifade eder."
+            ]
+          }
         },
         "content": {
           "lead": "Metinde açıkça verilen modern yaşam, yalnızlaşma, dikkat aralığı ve kısalıp özleşme bilgileriyle seçenekleri karşılaştırın."
@@ -38442,7 +38763,18 @@
           "question_no": "8",
           "source_locator": "basılı s.306 / PDF s.307 — Soru 8",
           "prompt_summary": "İki oyun parçasından kesin çıkarılamayan tiyatro terimlerini seçme",
-          "answer": "Cevap B’dir (II ve III: diyalog ve monolog). Verilen parçalarda dekor açıkça betimlenir; parantez içindeki hareket ve yüz ifadelerinden jest-mimik çıkarılabilir, karakterler arasındaki huzursuzluk da çatışma hakkında ipucu verir. Ancak parçalarda konuşma replikleri veya tek kişinin kendi kendine konuşması yer almadığından diyalog ve monolog örneği gösterilemez."
+          "answer": "Doğru seçenek: B (II ve III).",
+          "answer_sections": {
+            "Kesitlerden çıkarılabilenler": [
+              "Dekor açıkça betimlenir.",
+              "Parantez içindeki hareket ve yüz ifadelerinden jest-mimik çıkarılabilir.",
+              "Karakterler arasındaki huzursuzluk çatışmaya ilişkin ipucu verir."
+            ],
+            "Kesitlerden çıkarılamayanlar": [
+              "II. Diyalog: Parçalarda konuşma replikleri yoktur.",
+              "III. Monolog: Bir kişinin kendi kendine konuşması yer almaz."
+            ]
+          }
         },
         "content": {
           "lead": "Dekor ve sözsüz hareketlerin görünür olduğunu; diyalog/monolog için ise gerçek konuşma cümlesi gerekip gerekmediğini kontrol edin."
@@ -38500,7 +38832,16 @@
           "question_no": "9",
           "source_locator": "basılı s.306-307 / PDF s.307-308 — Soru 9",
           "prompt_summary": "Belgesel film yapımının zaman içindeki değişiminde belirtilmeyen etkeni bulma",
-          "answer": "Cevap A’dır. Metin; izleyiciye ulaşma araçlarının, kamera ve ses teknolojisinin, kurgu yöntemlerinin ve teknolojiyle sinema sanatının etkileşiminin değişim yarattığını söyler. Estetik anlayışın “tamamen” değiştiği yönünde bir bilgi vermez."
+          "answer": "Doğru seçenek: A.",
+          "answer_sections": {
+            "Metinde değiştiği belirtilen etkenler": [
+              "İzleyiciye ulaşma araçları",
+              "Kamera ve ses teknolojisi",
+              "Kurgu yöntemleri",
+              "Teknoloji ile sinema sanatının etkileşimi"
+            ],
+            "A seçeneği": "Estetik anlayışın “tamamen” değiştiği metinde söylenmez."
+          }
         },
         "content": {
           "lead": "Metindeki teknolojik değişmeleri açıkça verilen ifadelerle karşılaştırın; 'tamamen' gibi aşırı genellemelere dikkat edin."
@@ -38534,7 +38875,11 @@
           "question_no": "10",
           "source_locator": "basılı s.307 / PDF s.308 — Soru 10",
           "prompt_summary": "Belgesel filmin toplumsal bellek üzerindeki etkisine uygun benzetmeyi seçme",
-          "answer": "Cevap B’dir. Metin belgeselin kültür taşıyıcısı ve toplumsal belleğe katkı sunan bir anlatım türü olduğunu belirtir. Geçmişe ilişkin belgeleri koruyan arşiv benzetmesi, bu saklama ve hatırlatma işlevine en yakındır."
+          "answer": "Doğru seçenek: B.",
+          "answer_sections": {
+            "Metindeki dayanak": "Belgesel, kültür taşıyıcısı ve toplumsal belleğe katkı sunan bir anlatım türü olarak tanımlanır.",
+            "B seçeneği": "Arşiv, geçmişe ilişkin belgeleri saklayıp hatırlamaya yardım eder; bu işlev metindeki düşünceyle örtüşür."
+          }
         },
         "content": {
           "lead": "Geçmişe ilişkin bilgi ve deneyimin korunup sonraki kuşaklara aktarılması ortak noktasını arayın."
@@ -38568,7 +38913,16 @@
           "question_no": "11",
           "source_locator": "basılı s.307 / PDF s.308 — Soru 11",
           "prompt_summary": "Belgesel izleme mecralarının sayısal değişiminden çıkarım yapma",
-          "answer": "Cevap B’dir. Verilerde televizyondan izleme oranı 2005’ten 2025’e azalırken internet platformlarının oranı artar; bilgisayar kullanım oranı da yıllara göre değişir. Bu nedenle tablonun desteklediği çıkarım, teknolojinin belgesel izleme biçimlerinin dağılımını değiştirdiğidir. Veriler, yaş grupları veya izleme kalitesi hakkında sonuç vermez."
+          "answer": "Doğru seçenek: B.",
+          "answer_sections": {
+            "Tablodaki değişim": [
+              "2005’ten 2025’e televizyondan izleme oranı azalır.",
+              "Aynı dönemde internet platformlarından izleme oranı artar.",
+              "Bilgisayar üzerinden izleme oranı da yıllara göre değişir."
+            ],
+            "Desteklenen sonuç": "Teknolojik gelişmeler belgesel izleme mecralarının dağılımını değiştirir.",
+            "Tablonun göstermediği": "Yaş grupları veya izleme kalitesi hakkında sonuç çıkarılamaz."
+          }
         },
         "content": {
           "lead": "Televizyon, bilgisayar ve internet platformlarındaki oran değişimini doğrudan tablodan okuyun.",

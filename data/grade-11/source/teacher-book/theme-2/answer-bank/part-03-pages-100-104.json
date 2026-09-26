@@ -33,11 +33,16 @@
       "printed_page": 100,
       "question_no": "2",
       "prompt_summary": "Eşinin Çordon'un kararına tepki göstermemesinin nedeni",
-      "answer": "Eşi Nazifkan, Çordon'un bu sözleri sakin, kararlı ve son derece içten söylediğini görerek onu vazgeçirmenin imkânsız olduğunu anlamıştır. Ayrıca Sultan'ın öz annesi olmadığı için engel olmaya kalkarsa kocasının 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebileceğinden çekinmiş; bu ağır sözü duymamak ve eşinin derin kederine saygı göstermek adına susmayı tercih etmiştir.",
+      "answer": "Nazifkan, hem Çordon'un kararından dönmeyeceğini anlar hem de derin kederine saygı göstererek susar.",
       "evidence_quotes": [
         "Çünkü o zaman ihtiyar kocası ona 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebilirdi."
       ],
-      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 2"
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 2",
+      "answer_sections": {
+        "Çordon'un kararlılığı": "Sözlerini sakin, kararlı ve içten söyleyişinden onu vazgeçirmenin imkânsız olduğunu anlar.",
+        "Öz annesi olmama durumu": "Sultan'ın öz annesi olmadığı için müdahale ederse Çordon'un “Öz anası olsaydın beni caydırmaya çalışmazdın!” diyeceğinden çekinir.",
+        "Susma nedeni": "Bu ağır sözü duymamak ve eşinin kederine saygı göstermek için tepki vermez."
+      }
     },
     {
       "question_id": "T2-P100-Q03",
@@ -90,9 +95,14 @@
       "printed_page": 100,
       "question_no": "6",
       "prompt_summary": "Kızlarının Çordon'u suçlamasını değerlendirme",
-      "answer": "Kızların tepkisi kardeş sevgisi ve aileyi koruma güdüsü açısından anlaşılabilirdir; Sultan'ın çok genç olduğunu, annelerinin hasta yattığını ve babalarının demirci nüfuzuyla onu cepheden kurtarabileceğini düşünmüşlerdir. Ancak Çordon açısından bakıldığında, oğlunun gönüllü vatan savunması kararına müdahale etmek onun şahsiyetini ve erkeklik gururunu ezmek demektir. Bu nedenle çatışma sevgisizlikten değil, iki tarafın sevgi ve sorumluluk anlayışındaki derin değer farkından kaynaklanır.",
+      "answer": "Kızların tepkisi anlaşılabilir; ancak Çordon'un tutumu da Sultan'ın gönüllü kararına saygı duyma düşüncesine dayanır.",
       "guidance": "Öğrencinin kızlara veya babaya hak vermesi mümkündür; önemli olan cevabın metindeki iki meşru değer (ailenin can güvenliği vs. bireyin hür iradesi ve vatan görevi) üzerinden gerekçelendirilmesidir.",
-      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 6"
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 6",
+      "answer_sections": {
+        "Kızların bakışı": "Sultan'ın gençliğini, annelerinin hastalığını ve babalarının demirci nüfuzuyla onu cepheden kurtarabileceğini düşünürler.",
+        "Çordon'un bakışı": "Oğlunun gönüllü vatan savunması kararına müdahale etmeyi onun şahsiyetine ve erkeklik gururuna zarar vermek sayar.",
+        "Çatışmanın kaynağı": "İki taraf da aile bağını önemser; ayrılık, sevgi ve sorumluluğun ne gerektirdiği konusundaki farklılıktan doğar."
+      }
     },
     {
       "question_id": "T2-P100-Q07",

@@ -27,7 +27,16 @@
       "printed_page": 25,
       "question_no": "2",
       "prompt_summary": "Eski kelimelere güncel karşılık önerme",
-      "answer": "Dadı yerine 'çocuk bakıcısı', esbab yerine 'sebepler', murat yerine 'amaç', bendeniz yerine 'ben', silsile yerine 'zincir/sıra', ispir yerine 'seyis/at bakıcısı' kullanılabilir. Ancak bu sözcüklerin modern karşılıklarla değiştirilmesi Karagöz'ün yanlış anlamalarına dayalı mizahı ve dönemin dil havasını zayıflatabilir.",
+      "answer": "Önerilebilecek güncel karşılıklar ve kelime değişiminin metne etkisi şöyledir:",
+      "answer_sections": {
+        "Dadı": "çocuk bakıcısı",
+        "Esbab": "sebepler",
+        "Murat": "amaç",
+        "Bendeniz": "ben",
+        "Silsile": "zincir / sıra",
+        "İspir": "seyis / at bakıcısı",
+        "Metnin üslubuna etkisi": "Bu sözcükleri modern karşılıklarla değiştirmek Karagöz'ün yanlış anlamalarına dayalı mizahı ve dönemin dil havasını zayıflatabilir."
+      },
       "explanation": "Etkinlikte yalnız anlam değil, kelime değişiminin üsluba etkisi de görülebilir.",
       "source_locator": "basılı s.25 / PDF s.26"
     },
@@ -37,7 +46,13 @@
       "printed_page": 25,
       "question_no": "3",
       "prompt_summary": "Metindeki başka eski veya bilinmeyen kelimeler",
-      "answer": "Örnek olarak 'meh-i tâbân' parlak ay, 'zıll-i câzib' çekici gölge, 'sürc-i lisân' dil sürçmesi, 'gonce-dehân' ağzı gonca gibi küçük ve güzel olan anlamındadır. Öğrencinin seçtiği kelimeler farklı olabilir; önemli olan anlamı metnin bağlamıyla ilişkilendirmesidir.",
+      "answer": "Metin bağlamından çıkarılabilecek örnek kelime-anlam eşleştirmeleri:",
+      "answer_sections": {
+        "meh-i tâbân": "parlak ay",
+        "zıll-i câzib": "çekici gölge",
+        "sürc-i lisân": "dil sürçmesi",
+        "gonce-dehân": "ağzı gonca gibi küçük ve güzel olan"
+      },
       "guidance": "Tek bir zorunlu kelime listesi yoktur; öğrencinin gerçekten bilmediği kelimeler seçilebilir.",
       "source_locator": "basılı s.25 / PDF s.26; sözlük basılı s.24"
     },
@@ -47,7 +62,12 @@
       "printed_page": 27,
       "question_no": "1",
       "prompt_summary": "Karagöz ve Hacivat'ın dilinden kişilik çıkarımı",
-      "answer": "Metindeki sözlerden hareketle Karagöz için halk söyleyişine yakın, doğrudan ve kelimeleri farklı anlamlara çekebilen; Hacivat içinse daha süslü ya da eski kelimeler kullanan ve açıklayıcı bir konuşma tarzına sahip olduğu düşünülebilir. Bunlar söz ve tepkilerden çıkarılan izlenimlerdir; kişilerin eğitim geçmişi veya bütün kişilikleri hakkında kesin bilgi sayılmaz.",
+      "answer": "Metindeki söz ve tepkiler, iki tipin konuşma tarzları hakkında şu sınırlı çıkarımları destekler:",
+      "answer_sections": {
+        "Karagöz": "Halk söyleyişine yakın ve doğrudan konuşur; kelimeleri farklı anlamlara çekebilir.",
+        "Hacivat": "Daha süslü ya da eski kelimeler kullanır ve açıklayıcı bir konuşma tarzı sergiler.",
+        "Çıkarım sınırı": "Bunlar metindeki söz ve tepkilerden çıkarılan izlenimlerdir; kişilerin eğitim geçmişi veya bütün kişilikleri hakkında kesin bilgi sayılmaz."
+      },
       "evidence_quotes": [
         "Biz gelelim mâ-nahnü-fîhimize",
         "Biz gelelim mahallede evimize"
@@ -61,7 +81,17 @@
       "printed_page": 27,
       "question_no": "2",
       "prompt_summary": "Kişilik çıkarımında kullanılan ipuçları",
-      "answer": "Çıkarımda seçilen kelimeler, sözlerin birbirini izleme biçimi, yanlış anlamaya verilen tepki ve konuşma üslubu kullanılabilir. Örneğin “mâ-nahnü-fîhimize” sözü ile Karagöz’ün buna verdiği karşılık, iki kişinin dil kullanımını karşılaştırmaya imkân verir; bu ipuçları kişiliklerinin tamamını değil, metinde görünen yönlerini destekler.",
+      "answer": "Kişilik çıkarımı için metinden şu ipuçları seçilebilir:",
+      "answer_sections": {
+        "Kullanılabilecek ipuçları": [
+          "Seçilen kelimeler",
+          "Sözlerin birbirini izleme biçimi",
+          "Yanlış anlamaya verilen tepki",
+          "Konuşma üslubu"
+        ],
+        "Örnek": "“Mâ-nahnü-fîhimize” sözü ile Karagöz’ün buna verdiği karşılık, iki kişinin dil kullanımını karşılaştırmaya imkân verir.",
+        "Çıkarım sınırı": "Bu ipuçları kişiliklerin tamamını değil, metinde görünen yönlerini destekler."
+      },
       "source_locator": "basılı s.27 / PDF s.28",
       "guidance": "Öğrenciden kullandığı ipucunu (kelime, söz sırası, tepki veya üslup) belirtmesini ve ilgili repliği göstermesini isteyin. Kanıtın hangi çıkarımı desteklediğini sordurun; aynı ipucundan farklı sonuçlar çıkarılıyorsa gerekçenin metinle uyumunu değerlendirin."
     },
@@ -71,7 +101,15 @@
       "printed_page": 28,
       "question_no": "1",
       "prompt_summary": "Söz varlığı ile eğitim ve sosyal statü ilişkisi",
-      "answer": "Tiplerin söz varlığı eğitim ve sosyal durumlarıyla uyumludur. Çelebi ve Hacivat daha eğitimli kişileri çağrıştıran ağır ve eski kelimeler kullanırken Karagöz bunları halk dili içinden benzer sesli sözlere dönüştürür. Örneğin 'iskân-ı beyt' sözünü 'iskelede bitleniyorum', 'hane-ber-dûşsunuz' sözünü de 'Muş değilim ben' diye anlaması bu karşıtlığı açıkça gösterir.",
+      "answer": "Söz varlığı, tiplerin eğitim ve sosyal çevrelerine ilişkin sınırlı çıkarımlar yapılmasını sağlar.",
+      "answer_sections": {
+        "Çelebi ve Hacivat": "Daha eğitimli kişileri çağrıştıran ağır ve eski kelimeler kullanırlar.",
+        "Karagöz": "Bu sözleri halk dili içinden benzer sesli ifadelere dönüştürür.",
+        "Metinden örnekler": [
+          "'İskân-ı beyt' → 'iskelede bitleniyorum'",
+          "'Hane-ber-dûşsunuz' → 'Muş değilim ben'"
+        ]
+      },
       "evidence_quotes": [
         "iskân-ı beyt",
         "hane-ber-dûşsunuz"
@@ -86,7 +124,18 @@
       "printed_page": 28,
       "question_no": "2",
       "prompt_summary": "Söz varlığının işlevinin başka yollarla sağlanması",
-      "answer": "Kişinin eğitim, sosyal çevre ve karakter özellikleri yalnız söz varlığıyla değil; davranışları, giyimi, mesleği, beden dili, sahnedeki hareketleri ve diğer kişilerle ilişkileri aracılığıyla da gösterilebilir. Ancak Yazıcı gibi söz oyunlarına dayalı bir metinde kelime seçimi özellikle önemlidir; mizahın büyük bölümü konuşma farklılıklarından doğar.",
+      "answer": "Söz varlığı dışındaki göstergeler de kişinin özelliklerini ortaya koyabilir.",
+      "answer_sections": {
+        "Diğer anlatım yolları": [
+          "Davranışlar",
+          "Giyim",
+          "Meslek",
+          "Beden dili",
+          "Sahnedeki hareketler",
+          "Diğer kişilerle ilişkiler"
+        ],
+        "Yazıcı metnindeki önem": "Söz oyunlarına dayalı bu metinde kelime seçimi önemlidir; mizahın büyük bölümü konuşma farklılıklarından doğar."
+      },
       "source_locator": "basılı s.28 / PDF s.29",
       "guidance": "Öğrenci önce söz varlığı dışındaki bir anlatım yolunu seçsin; seçtiği davranış, beden dili, görünüş ya da ilişki ipucunun ne gösterebileceğini açıklasın. Ardından Yazıcı’daki söz oyunlarının mizahı nasıl kurduğunu karşılaştırsın; diğer yolların söz varlığının işlevini hangi ölçüde karşılayabileceğine ilişkin gerekçeli farklılıkları kabul edin."
     },
@@ -96,7 +145,16 @@
       "printed_page": 28,
       "question_no": "3",
       "prompt_summary": "Benzer konuşma ve davranışların günlük hayatta değerlendirilmesi",
-      "answer": "Böyle durumlar bazen eğlenceli, bazen de iletişimi zorlaştırıcı olabilir. Bir kişinin sözü sürekli yanlış anlaması komik bir durum oluşturabilir; ancak gerçek hayatta farklı eğitim veya konuşma biçimlerine sahip insanları küçümsememek gerekir. Sağlıklı iletişim için karşı tarafı dikkatle dinlemek, anlaşılmayan noktayı sormak ve açık bir dil kullanmak daha doğrudur.",
+      "answer": "Yanlış anlamalar günlük yaşamda hem mizahi hem de iletişimi zorlaştırıcı olabilir.",
+      "answer_sections": {
+        "Olası etkisi": "Bir kişinin sözü sürekli yanlış anlaması komik bir durum oluşturabilir.",
+        "Saygılı iletişim": "Farklı eğitim veya konuşma biçimlerine sahip insanlar küçümsenmemelidir.",
+        "Sağlıklı iletişim için": [
+          "Karşı tarafı dikkatle dinlemek",
+          "Anlaşılmayan noktayı sormak",
+          "Açık bir dil kullanmak"
+        ]
+      },
       "guidance": "Bu soru kişisel değerlendirme içerir; öğrencinin duygusu farklı olabilir. Gerekçeli ve saygılı bir açıklama yeterlidir.",
       "source_locator": "basılı s.28 / PDF s.29"
     },

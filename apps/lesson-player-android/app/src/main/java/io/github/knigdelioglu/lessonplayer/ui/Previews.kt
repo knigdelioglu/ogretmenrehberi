@@ -195,7 +195,6 @@ private fun ShellV2ThreeColumnPreview() {
                 LessonV2Sidebar(
                     currentScreen = AppScreen.LESSON,
                     onNavigate = {},
-                    onSearch = {},
                     onReturnToCurrent = {},
                     session = session,
                     lesson = lesson,
