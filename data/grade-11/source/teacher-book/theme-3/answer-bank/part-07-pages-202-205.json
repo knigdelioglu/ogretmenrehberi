@@ -11,7 +11,7 @@
       "printed_page": 202,
       "question_no": "1",
       "prompt_summary": "Mehmet Akif Ersoy metninden öznel ve nesnel ifade örnekleri",
-      "answer": "Metindeki **nesnel ifadeler**, tarih, yer, eğitim, görev ve eser gibi doğrulanabilir bilgileri; **öznel ifadeler** ise yazarın Mehmet Âkif'in kişiliği ve edebî değeri hakkındaki değerlendirmelerini içerir.",
+      "answer": "Metindeki **nesnel ifadeler**, eğitim, görev, yayın ve tarihli yaşam olayları gibi doğrulanabilir bilgileri; **öznel ifadeler** ise yazarın Mehmet Âkif’in kişiliği ve edebî değeri hakkındaki değerlendirmelerini içerir.",
       "evidence_quotes": [
         "duyarlı ve vicdanlı bir aydındır",
         "Türk edebiyatında önemli bir boşluğu doldurmuştur",
@@ -20,11 +20,12 @@
       "source_locator": "basılı s.195-202 / PDF s.196-203 — Sıra Sizde soru 1",
       "answer_sections": {
         "nesnel": [
-          "1873 yılında İstanbul'da Fatih'in Sarıgüzel semtinde doğdu.",
-          "1889'da Mülkiye Baytar Mektebi'ne girdi ve 1893'te bu okulu birincilikle bitirdi.",
-          "12 Mart 1921'de İstiklâl Marşı TBMM tarafından millî marş olarak kabul edildi.",
-          "İlk şiirlerini Servet-i Fünûn ve Resimli Gazete'de yayımladı.",
-          "27 Aralık 1936'da İstanbul'da vefat etti."
+          "1878 yılında Emir Buharî mahalle mektebine bir süre devam etti.",
+          "1882 yılında Fatih Merkez Rüştiyesi’ne girdi.",
+          "1885’te Mülkiye’nin idadi kısmına girdi.",
+          "1893 yılında Baytar ve Ziraat Mektebi’ni birincilikle bitirdi.",
+          "İstiklâl Marşı 12 Mart 1921’de millî marş olarak kabul edildi.",
+          "27 Aralık 1936’da İstanbul’da vefat etti."
         ],
         "oznel": [
           "Türk edebiyatında önemli bir boşluğu doldurmuştur.",
@@ -32,7 +33,7 @@
           "sanat ve estetikten ödün vermemiştir"
         ]
       },
-      "guidance": "Öznel örnekleri metinde gerçekten geçen değerlendirmelerden seçin. ‘Şiirlerinde samimiyet ve içtenlik hâkimdir’ ifadesini doğrudan alıntı gibi kullanmayın; bu cümle ders kitabı parçasında yoktur."
+      "guidance": "Öznel örnekleri metinde gerçekten geçen değerlendirmelerden seçin. “Şiirlerinde samimiyet ve içtenlik hâkimdir” ifadesini doğrudan alıntı gibi kullanmayın; bu cümle ders kitabı parçasında yoktur."
     },
     {
       "question_id": "T3-P202-Q02",
@@ -40,17 +41,17 @@
       "printed_page": 202,
       "question_no": "2",
       "prompt_summary": "Biyografi türünde öznel ve nesnel anlatımdan hangisinin ön planda olduğu",
-      "answer": "Biyografi türünde **nesnel anlatım** ön plandadır.\n\nGerekçeler:\n1. Bilgi Verme ve Belgelere Dayanma Amacı: Biyografi, tanınmış bir kişinin hayatını, yetiştiği çevreyi, eğitimini, eserlerini ve başarılarını gerçek belgelere, tanıklıklara ve arşiv kayıtlarına dayandırarak anlatan öğretici bir türdür. Okurun metne güven duyabilmesi ancak doğrulanabilir nesnel bilgilerle mümkündür.\n2. Kronolojik ve Somut Çerçeve: Doğum, ölüm, tahsil, resmî memuriyetler, seyahatler ve eserlerin basım tarihleri gibi biyografinin ana gövdesini oluşturan tüm unsurlar denetlenebilir ve nesneldir.\n3. Öznel Anlatımın Sınırı ve Rolü: Biyografi yazarı, kişinin sanat anlayışını, edebiyat tarihindeki yerini ve şahsiyetini değerlendirirken öznel yorumlara yer verebilir; ancak bu öznellik hiçbir zaman nesnel olgusal çerçevenin önüne geçemez veya onun yerine geçemez. Mehmet Âkif Ersoy biyografisinde de omurgayı nesnel olgular oluştururken, sanatçıya dair takdir ifadeleri bu nesnel zemin üzerine oturtulmuştur.",
+      "answer": "Biyografi türünde **nesnel anlatım** ön plandadır. Mehmet Âkif metninde doğum yeri, eğitim, görev, yayın ve tarihlenmiş yaşam olayları somut bilgi olarak verilir; yazar ayrıca kişiliği ve edebî değeri hakkında yorumlar yapar. Bu nedenle metin değerlendirme içerse de yaşam bilgilerini doğru ve tarafsız sunma yönü belirleyicidir.",
       "source_locator": "basılı s.202 / PDF s.203 — soru 2",
       "explanation": "Biyografi, bir kişinin yaşamının başka biri tarafından anlatılmasıdır. Otobiyografi ise kişinin kendi yaşamını kendisinin anlatmasıdır. Bir biyografi yazarı, anlattığı kişi hakkında bilgi toplarken o kişinin otobiyografisinden de kaynak olarak yararlanabilir; bu durum biyografi metnini otobiyografiye dönüştürmez.",
       "answer_sections": {
         "on_planda_olan_anlatim": "Nesnel anlatım",
         "gerekceler": [
-          "Biyografinin temel amacının gerçeğe ve belgelere dayalı bilgi vermek olması.",
-          "Kişinin doğum, ölüm, eğitim, görev ve eser gibi somut verilerinin kanıtlanabilir nitelik taşıması.",
-          "Okurun metne duyacağı güvenin nesnel gerçekliğin korunmasına bağlı olması."
+          "Metin eğitim, görev, yayın ve ölüm gibi belirli yaşam bilgileri verir.",
+          "Tarihlenmiş olaylar ve eser adları anlatının bilgi veren yönünü oluşturur.",
+          "Kişinin edebî ve şahsi yönüne dair değerlendirmeler nesnel bilgilerin yanında yer alır."
         ],
-        "oznel_anlatimin_yeri": "Yazarın şahsiyet tahlili ve edebî değer yorumlarında yer alır ancak nesnel omurganın önüne geçemez."
+        "oznel_anlatimin_yeri": "Yazarın kişilik ve edebî değer hakkındaki değerlendirmelerinde görülür; somut yaşam bilgileriyle birlikte sunulur."
       },
       "guidance": "Öğrencilerin biyografiyi kupkuru bir tarih cetveline indirgememeleri, aynı zamanda yazarın kişisel yorum serbestisini de kurmaca bir serbestlikle karıştırmamaları gerektiği vurgulanmalıdır."
     },
@@ -60,19 +61,19 @@
       "printed_page": 203,
       "question_no": "1",
       "prompt_summary": "Mehmet Akif Ersoy biyografisinin verilen biyografi örneklerinden hangisine benzediği",
-      "answer": "Mehmet Âkif Ersoy metni, sayfada verilen üç biyografi örneğinden en çok **M. Orhan Okay'ın yazdığı 'Kısakürek, Necip Fazıl'** metnine benzemektedir.\n\nGerekçeler ve Karşılaştırma:\n1. M. Orhan Okay Metni ile Benzerlik: Her iki metin de ele alınan şahsiyetin doğumundan başlayarak ailesini, okuduğu okulları, memuriyetlerini, yayın faaliyetlerini ve eserlerini kronolojik bir düzenle, bilgi ve belgeye dayalı olarak tanıtan bilimsel/öğretici bir biyografi (ansiklopedi maddesi/monografi) niteliğindedir. İki metinde de açıklayıcı, nesnel ve tarafsız bir anlatım tutumu hâkimdir.\n2. Riza Fazıl Metninden Farkı: Bülent Tanatar'ın 'Riza Fazıl' metni, edebiyatçının vefatının hemen ardından yazılmış, ölüm haberini ve duyulan hüznü dile getiren bir 'nekroloji'dir (anma/taziye yazısı). Mehmet Âkif metni ise yalnızca bir ölüm vesilesiyle yazılmamış; şairin bütün yaşamını ve sanatını kapsamlı biçimde tahlil etmiştir.\n3. Mustafa İnan Metninden Farkı: Oğuz Atay'ın 'Bir Bilim Adamının Romanı'ndan alınan parça, Mustafa İnan'ın yaşamını kurmaca anlatım teknikleriyle, çalışma odasındaki diyaloglarla ve roman kurgusuyla veren bir 'biyografik roman'dır. Mehmet Âkif metninde ise kurmaca bir olay örgüsü veya hayalî diyaloglar bulunmamaktadır.",
+      "answer": "Mehmet Âkif Ersoy metni, sayfada verilen örnekler içinde en çok **M. Orhan Okay’ın “Kısakürek, Necip Fazıl”** biyografi parçasına benzer. İkisinde de gerçek bir kişinin ailesi, öğrenimi ve yaşamına ilişkin bilgiler açıklayıcı ve ağırlıkla nesnel bir dille aktarılır. Rıza Fazıl parçası ölüm haberi ve anmayı öne çıkarırken Oğuz Atay parçasında anlatıcı ve diyaloglu sahne belirgindir. Bu karşılaştırma, sayfada görünen parça özellikleriyle sınırlı kurulmalıdır.",
       "source_locator": "basılı s.202-203 / PDF s.203-204 — Fark Edelim soru 1",
       "answer_sections": {
-        "en_cok_benzeyen_metin": "M. Orhan Okay'ın 'Kısakürek, Necip Fazıl' biyografi maddesi.",
+        "en_cok_benzeyen_metin": "M. Orhan Okay’ın “Kısakürek, Necip Fazıl” biyografi parçası.",
         "ortak_yonler_ve_gerekceler": [
-          "Doğumdan itibaren eğitim, meslek ve edebî serüvenin kronolojik sıra izlemesi.",
-          "Ansiklopedik, tarafsız, nesnel ve bilgi vermeye odaklı anlatım tutumu.",
-          "Kişinin şahsiyetini belgeler ve somut veriler üzerinden yansıtması."
+          "Gerçek kişinin ailesi, öğrenimi ve yaşam olaylarına ilişkin bilgiler verilir.",
+          "Açıklayıcı ve bilgi aktarmaya dönük anlatım kullanılır.",
+          "Mehmet Âkif metninde de yaşam olayları ve edebî faaliyetler tanıtılır."
         ],
-        "riza_fazil_metninden_farki": "Riza Fazıl metni vefat üzerine kaleme alınmış anma ağırlıklı bir nekrolojidir.",
-        "mustafa_inan_metninden_farki": "Oğuz Atay'ın metni kurgu, diyalog ve roman tekniğiyle örülmüş bir biyografik romandır."
+        "riza_fazil_metninden_farki": "Verilen Rıza Fazıl parçası ölüm haberini ve anmayı öne çıkarır; Mehmet Âkif metni yaşamı ve edebî faaliyetleri daha geniş biçimde tanıtır.",
+        "mustafa_inan_metninden_farki": "Oğuz Atay parçasında anlatıcı ve diyaloglu sahne belirgindir; Mehmet Âkif metninde öğretici biyografik bilgi aktarımı öne çıkar."
       },
-      "guidance": "Öğretmen, öğrencilerin sadece metin adı söylemekle yetinmeyip metinlerin yazılış amaçları, anlatıcı tavırları ve kurmaca ile olan ilişkileri üzerinden gerekçelendirme yapmalarını istemelidir."
+      "guidance": "Yalnızca kitap sayfasında görünen metin özellikleriyle karşılaştırma yapın; görünmeyen kaynak, arşiv veya belgelere ilişkin yöntem iddiası eklemeyin."
     },
     {
       "question_id": "T3-P203-Q02",
@@ -80,18 +81,17 @@
       "printed_page": 203,
       "question_no": "2",
       "prompt_summary": "Mehmet Akif Ersoy metninin biyografi alt türünü belirleme",
-      "answer": "Mehmet Âkif Ersoy metni, Bilgi Köşesi'ndeki sınıflandırmaya göre **bilimsel biyografi / monografi** alt türüne dâhil edilir.\n\nSebepleri:\n1. Kapsamlı ve Belgesel Çerçeve: Metin, şairin doğumundan vefatına kadar olan hayat serüvenini tarihî belgelere, resmî kayıtlara ve doğrulanabilir verilere dayanarak ele alır; derinlemesine bir inceleme ve tanıtma sunar.\n2. Kronolojik ve Tematik Bütünlük: Çocukluk, tahsil hayatı, baytarlık mesleği, dergicilik faaliyetleri, Millî Mücadele dönemi, İstiklâl Marşı'nın kabulü, Mısır yılları ve Safahat'ın ciltleri akademik bir intizamla incelenmiştir.\n3. Diğer Türlerden Ayrılması: Metinde biyografik romandaki gibi muhayyileye dayalı olay örgüsü, karakter kurgusu ve şahıs diyalogları yer almaz. Aynı zamanda nekrolojideki gibi yalnızca bir ölüm vesilesiyle kaleme alınmış kısa bir taziye ve anma yazısı değildir.",
+      "answer": "Mehmet Âkif Ersoy metni, kitapta tanıtılan üç alt türden **bilimsel biyografi/monografi**ye en yakın örnektir. Gerçek bir kişinin doğum çevresi, eğitimi, görevleri, yayınları, eserleri ve edebî yönü hakkında bilgi verir. Tarihlenmiş yaşam bilgileri açıklayıcı anlatımla sunulur; metin yer yer değerlendirme de içerir.",
       "source_locator": "basılı s.203 / PDF s.204 — soru 2",
       "answer_sections": {
-        "biyografi_alt_turu": "Bilimsel biyografi / Monografi",
+        "biyografi_alt_turu": "Bilimsel biyografi / monografi",
         "sebepler": [
-          "Doğumdan ölüme kadar kişinin tüm hayatını, eserlerini ve edebî kişiliğini belgelere dayalı olarak ele alması.",
-          "Kronolojik gelişim çizgisine ve akademik nesnelliğe bağlı kalması.",
-          "Kurmaca olay örgüsü ve diyaloglar içermemesi (biyografik romandan ayrılır).",
-          "Yalnızca bir ölüm vesilesiyle yazılmış kısa bir anma yazısı olmaması (nekrolojiden ayrılır)."
+          "Mehmet Âkif’in eğitim, görev, yayın, eser ve edebî yönü tanıtılır.",
+          "Tarihlenmiş yaşam olayları açıklayıcı anlatımla verilir.",
+          "Parçada kurmaca olay örgüsü yerine yaşam bilgileri ve değerlendirmeler bulunur."
         ]
       },
-      "guidance": "Öğrencilerin 'monografi' teriminin belirli bir kişi, konu veya eser üzerine derinlemesine ve bilimsel yöntemlerle yazılmış eser anlamına geldiğini kavramaları sağlanmalıdır."
+      "guidance": "“Bilimsel biyografi/monografi” sınıflandırmasını kitabın Bilgi Köşesi’ndeki alt tür açıklamasına ve metinde verilen yaşam bilgilerine dayandırın; metinde belirtilmeyen resmî kayıt veya arşiv kullanımı iddiası eklemeyin."
     },
     {
       "question_id": "T3-P204-Q01",
@@ -115,7 +115,7 @@
           "Mehmet_Akif_Ersoy": "Gerçek yaşam olaylarının ağırlıkla kronolojik, yer yer tematik biçimde düzenlenmesi."
         },
         "donem": {
-          "Huzur": "Cumhuriyet Dönemi'nde yazılmış bir roman; metinde geçmiş-kültür ile yeni hayat arasındaki tartışmalar öne çıkar.",
+          "Huzur": "Kitap bu romanda yazılış/yayım tarihini belirtmez. Kitap dışı bibliyografik bilgi: TDV İslâm Ansiklopedisi “Huzur” maddesi ilk yayımı İstanbul, 1949 olarak kaydeder; bu yayın yılı Cumhuriyet Dönemi içindedir (https://islamansiklopedisi.org.tr/huzur--tanpinar).",
           "Mehmet_Akif_Ersoy": "Biyografide Âkif'in Osmanlı'nın son dönemi, Millî Mücadele ve Cumhuriyet'in ilk yıllarına uzanan yaşamı anlatılır."
         },
         "yapi_unsurlari": {
@@ -162,7 +162,7 @@
       "source_locator": "basılı s.205 / PDF s.206 — Çözümleyebilme soru 1",
       "answer_sections": {
         "merkez_kisi": "Mehmet Âkif Ersoy.",
-        "zaman": "1873'te doğumundan 1936'da vefatına uzanan yaşam çizgisi; önemli olaylar tarih sırasıyla verilir.",
+        "zaman": "Metinde doğum yılı verilmez; ilk tarihli eğitim olayı 1878, vefat tarihi 27 Aralık 1936’dır. Önemli yaşam olayları tarih sırasıyla verilir.",
         "mekan": [
           "İstanbul ve eğitim/çalışma çevresi",
           "Ankara ve Millî Mücadele dönemi",

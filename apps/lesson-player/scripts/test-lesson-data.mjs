@@ -64,15 +64,16 @@ const theme3Types = theme3Entries.reduce((counts, entry) => {
   return counts;
 }, {});
 assert(theme3Entries.length === 147 &&
-  theme3Types.question_answer === 83 &&
+  theme3Types.question_answer === 85 &&
   theme3Types.performance_support === 44 &&
-  theme3Types.source_limited === 20,
+  theme3Types.source_limited === 18,
   "Tema 3 parça kayıtları kanonik dağılımı ve düzeltilmiş source-limited sayısını vermeli.");
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
-assert(theme3Compare?.entry_type === "question_answer" &&
+assert(theme3Compare?.entry_type === "source_limited" &&
   theme3Compare.source_locator.includes("altı dörtlük") &&
-  Object.keys(theme3Compare.answer_sections ?? {}).length === 7,
-  "T3-P177-COMP01 source-index üzerinden yedi ölçütlü normal cevap olarak korunmalı.");
+  theme3Compare.answer.includes("şiir metni bulunmadığı") &&
+  Object.keys(theme3Compare.answer_sections ?? {}).length === 3,
+  "T3-P177-COMP01, şiir metni doğrulanamadığı için kaynakla sınırlı tutulmalı.");
 assert(
   teacherBookManifest.totals.answer_bank_entries === manifestAnswerTotal &&
     teacherBookManifest.totals.source_records === manifestSourceTotal,

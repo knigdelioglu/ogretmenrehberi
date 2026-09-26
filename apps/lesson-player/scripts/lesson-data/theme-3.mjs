@@ -501,25 +501,22 @@ assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
   huzur177ById.get("s177-q14")?.answer?.answer_sections?.ortuk_iletiler?.length===3,
   "s.177 14. soruda açık/örtük iletiler ayrıştırılmalı.");
 assert(huzur177ById.get("s177-source-photo")?.answer === null &&
-  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("altı dörtlük") &&
-  !huzur177ById.get("s177-source-photo")?.content?.lead?.includes("ikinci yazılı metin görünmüyor"),
-  "Basılı s.177 şiiri görsel üstündeki gerçek metin olarak tanınmalı.");
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("şiir dizeleri doğrulanmış PDF’de görünmüyor") &&
+  huzur177ById.get("s177-source-photo")?.content?.sections?.some(section => section.body.includes("Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz")),
+  "Basılı s.177 görselinden şiirin metin veya biçim özellikleri çıkarılmamalı.");
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
-  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "question_answer" &&
-  Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 7 &&
-  ["İçerik","Tür","Şekil","Dönem","Zihniyet","Üslup","İleti"].every(key => {
-    const section = huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.[key];
-    return section?.Huzur && section?.["Mescid-i Aksa"] && section?.["Benzerlik ve fark"];
-  }) &&
-  huzur177ById.get("s178-compare-task")?.answer?.evidence_quotes?.some(q => q.includes("İlk Kıblesi")) &&
+  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
+  Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 3 &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer.includes("şiir metni bulunmadığı") &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("doğrulanmış PDF’de yoktur") &&
+  !huzur177ById.get("s178-compare-task")?.answer?.evidence_quotes?.some(q => q.includes("İlk Kıblesi")) &&
   huzur177ById.get("s178-compare-task")?.answer?.source_locator?.includes("altı dörtlük"),
-  "Huzur ve Mescid-i Aksa yedi ölçütte, iki metin ve kısa kanıtlarla karşılaştırılmalı.");
-assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("benzerlik") &&
-  huzur177ById.get("s178-huzur-context")?.content?.lead?.includes("Dönem metnin") &&
-  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa")),
-  "Dönem zihniyetten ayrılmalı; iki metnin zihniyet çıkarımı kanıta bağlanmalı.");
-assert(huzur177ById.get("s177-source-photo")?.content?.sections?.some(section => section.body.includes("tür ve şekil kararını fotoğraftan değil")),
-  "Şiirin türü ve şekli görselden değil şiir metninden belirlenmeli.");
+  "Huzur–Mescid-i Aksa karşılaştırması şiir metni eksikliği nedeniyle kaynakla sınırlı tutulmalı.");
+assert(huzur177ById.get("s178-huzur-context")?.content?.lead?.includes("Dönem metnin") &&
+  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa") && section.body.includes("Şiir metni doğrulanmış PDF’de bulunmadığından")),
+  "Dönem zihniyetten ayrılmalı; kaynakta bulunmayan şiire ilişkin yargı eklenmemeli.");
+assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("şiir sütunundaki iddiaları yalnız şiir metni doğrulanmış bir kaynakta"),
+  "Karşılaştırma akışı eksik şiir metni için kaynak sınırı belirtmeli.");
 for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]){
   assert(huzur177ById.get(id)?.answer === null &&
     huzur177ById.get(id)?.source?.source_record_id === "T03-S0030",
@@ -568,14 +565,14 @@ assert(huzur179ById.get("s179-roles-change")?.answer === null &&
   "Rol değişimi tek doğru cevap gerektirmeyen süreç olarak kalmalı.");
 const t180 = huzur179ById.get("s180-table-q3");
 assert(t180?.answer?.question_id === "T3-P180-TABLE01" &&
-  t180?.answer?.entry_type === "source_limited" &&
+  t180?.answer?.entry_type === "question_answer" &&
   Object.keys(t180?.answer?.answer_sections??{}).length === 6 &&
   Object.keys(t180?.answer?.answer_sections?.Mümtaz??{}).length === 2 &&
   t180?.answer?.answer_sections?.Suat?.cikarim?.includes("uydurulmaz"),
   "s.180 altı kişide söz/davranış ve çıkarım ayrılmalı, eksik kaynak uydurulmamalı.");
 const t181 = huzur179ById.get("s181-table-q4");
 assert(t181?.answer?.question_id === "T3-P181-TABLE02" &&
-  t181?.answer?.entry_type === "source_limited" &&
+  t181?.answer?.entry_type === "question_answer" &&
   Object.keys(t181?.answer?.answer_sections??{}).length === 6 &&
   t181?.answer?.answer_sections?.İhsan?.dil?.includes("doğrudan konuşması") &&
   t181?.answer?.answer_sections?.Macide?.dil?.includes("konuşma örneği"),
@@ -700,7 +697,7 @@ assert(huzur186ById.get("s188-3c")?.answer?.answer?.includes("s.171") &&
  huzur186ById.get("s188-3cc")?.answer?.answer?.includes("Mazi"),
  "Dönem ve söz varlığı soruları ayrı, kitaba dayalı olmalı.");
 const character4 = huzur186ById.get("s188-q4");
-assert(character4?.answer?.entry_type==="source_limited" &&
+assert(character4?.answer?.entry_type==="question_answer" &&
  character4.content.items.length===4 &&
  Object.keys(character4.answer.answer_sections??{}).length===4 &&
  character4.answer.answer_sections.Suat.amac.includes("belirlenemez") &&
@@ -762,12 +759,13 @@ for(const id of ["s190-gram-a","s190-gram-b","s190-gram-c","s190-gram-cc",
  huzur189ById.get(id)?.source?.source_record_id==="T03-S0048",
  `s.190–191 cümle alt ekranı doğru kaynağa bağlanmalı: ${id}`);
 }
-assert(Object.keys(huzur189ById.get("s191-spell")?.answer?.answer_sections??{}).length===4 &&
- huzur189ById.get("s191-spell")?.answer?.explanation?.includes("şikâyet") &&
+assert(Object.keys(huzur189ById.get("s191-spell")?.answer?.answer_sections??{}).length===5 &&
+ huzur189ById.get("s191-spell")?.answer?.answer_sections?.zatürree === "zatürre" &&
+ huzur189ById.get("s191-spell")?.answer?.explanation?.includes("Şikâyet") &&
  huzur189ById.get("s191-research")?.answer?.entry_type==="performance_support" &&
  huzur189ById.get("s191-research")?.content?.items?.length===3 &&
  huzur189ById.get("s191-research")?.answer?.answer?.includes("1 haftalık"),
- "s.191 dört yazım, şapka sınırı ve üç disiplinli 1 haftalık araştırma korunmalı.");
+ "s.191 beş yazım, şapka sınırı ve üç disiplinli 1 haftalık araştırma korunmalı.");
 assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===310 &&
  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===147 &&
  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===147,

@@ -33,55 +33,28 @@
     },
     {
       "question_id": "T3-P177-COMP01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Aşağıdaki örnek, iki metnin yedi ölçütteki benzerlik ve farklılıklarını gösterir. Huzur için ders kitabında okunan kesit, şiir için basılı s.177’deki dizeler temel alınmıştır; dönem hücresindeki bağlam ayrıca belirtilmiştir.",
+      "answer": "Karşılaştırma, eldeki doğrulanmış PDF’de basılı s.177/PDF s.178’de Mescid-i Aksa görseli yer alıp şiir metni bulunmadığı, basılı s.178/PDF s.179’da ise karşılaştırma tablosunun boş olduğu için tamamlanamıyor. Huzur sütununda önceki sayfalarda gerçekten okunan kesitten kanıt kullanılabilir. Mescid-i Aksa metninin içeriği, türü, şekli, dönemi, zihniyeti, üslubu ve iletisi şiirin kendisi görülmeden doğrulanamaz.",
       "source_locator": "basılı s.177-178 / PDF s.178-179 — “Mescid-i Aksa” şiiri (altı dörtlük) ve Karşılaştıralım tablosu",
       "answer_sections": {
-        "İçerik": {
-          "Huzur": "Okunan kesitte Mümtaz ile Nuran’ın İstanbul ve Boğaz gezileri; eski musiki, tarihî çevre ve şehrin bugünkü hâli üzerine düşünceleri öne çıkar.",
-          "Mescid-i Aksa": "Konuşan şiir kişisi Mescid-i Aksa’yı ağlayan ve yalnız kalan bir çocuk gibi kişileştirir; ilk kıble oluşunu, geçmişteki müminleri ve yeniden kavuşma özlemini dile getirir.",
-          "Benzerlik ve fark": "İki metinde de kutsal/tarihî mekânlarla kültürel hafıza önemlidir. Huzur İstanbul’u ve kişilerin şehirle bağını anlatı içinde işler; şiir Mescid-i Aksa’yı konuşturup doğrudan özlem ve yardım çağrısı kurar."
-        },
-        "Tür": {
-          "Huzur": "Romanın ders kitabında okunan düzyazı kesiti.",
-          "Mescid-i Aksa": "Lirik söyleyişli şiir; anlatan kişi mekânı konuşturur.",
-          "Benzerlik ve fark": "İki metin de edebî metindir; biri roman anlatısının parçası, diğeri bağımsız şiirdir."
-        },
-        "Şekil": {
-          "Huzur": "Düzyazı; olay ve düşünceler paragraf, betimleme ve diyaloglarla ilerler.",
-          "Mescid-i Aksa": "24 dizeden oluşan altı dörtlük; düzenli hece kalıbına bağlanmayan dize uzunlukları, dörtlükler ve tekrar eden ses örgüsüyle kurulur.",
-          "Benzerlik ve fark": "Huzur paragraf ve anlatı akışıyla, şiir dize ve dörtlük düzeniyle kurulur."
-        },
-        "Dönem": {
-          "Huzur": "Kitabın karşılaştırma sayfasında dönem bilgisi verilmez. Kitap dışı bibliyografik bağlam: roman ilk kez 1949’da yayımlanmıştır; bu nedenle Cumhuriyet Dönemi Türk romanı içinde değerlendirilir (TDV İslâm Ansiklopedisi, “Huzur”: https://islamansiklopedisi.org.tr/huzur--tanpinar).",
-          "Mescid-i Aksa": "Kitap şairi M. Akif İnan olarak gösterir; şiirin yazılış tarihi veya edebî dönemini belirtmez. Bu kaynaklarla kesin dönem/tarih atamayın.",
-          "Benzerlik ve fark": "Dönem bilgisi metnin içeriğinden çıkarılmaz. Huzur için kitap dışı yayın bilgisi ayrılmıştır; şiirin tarihi ise doğrulanmadığından açık bırakılmıştır."
-        },
-        "Zihniyet": {
-          "Huzur": "İstanbul’un tarihî ve dinî mirası ile bugünkü toplumsal gerçekliği birlikte görülür; Mümtaz’ın “İstanbul’u tanımadıkça kendimizi bulamayız” sözü, şehir hafızasıyla kimlik arayışını bağlar.",
-          "Mescid-i Aksa": "İlk kıble ve peygamberler hatırası ortak inanç hafızasının değerini; konuşan mekânın yalnızlığı ise Müslüman topluluğun uzaklığı karşısındaki duyguyu yansıtır.",
-          "Benzerlik ve fark": "İki metin de geçmiş/kültür mirasını önemser. Huzur bunu İstanbul ve musiki çevresindeki farklı kişi görüşleriyle tartışırken şiir kutsal mekânın ağzından ümmet dayanışması ve kavuşma isteğini öne çıkarır."
-        },
-        "Üslup": {
-          "Huzur": "Betimleyici ve düşünsel düzyazı; şehir manzaraları, musiki ve Mümtaz’ın iç dünyası iç içe geçer.",
-          "Mescid-i Aksa": "Kişileştirme, benzetme, seslenme ve tekrar kullanılır. Mekânın ağlayan bir çocuk olarak sunulması şiirin lirik, yakarışlı tonunu kurar.",
-          "Benzerlik ve fark": "İki metinde de imge ve duygusal çağrışım vardır; Huzur bunu anlatıcı betimlemeleri ve düşünce akışıyla, şiir konuşan mekân ve doğrudan seslenişle sağlar."
-        },
-        "İleti": {
-          "Huzur": "Şehir ve kültür mirasıyla ilişki, kişinin kendini ve ortak kimliğini anlamasına katkı verir; bunu İstanbul’a dair açık yargı ve Mümtaz’ın geçmişle kurduğu bağ destekler.",
-          "Mescid-i Aksa": "Kutsal mekânın yalnızlığına kayıtsız kalmama, ortak inanç hafızasını hatırlama ve dayanışma çağrısı çıkarılabilir.",
-          "Benzerlik ve fark": "İki metin de okuru kültürel/dinî mirasla bağ kurmaya çağırır; Huzur’da ileti şehir ve kimlik üzerine düşünmeye, şiirde ise Mescid-i Aksa’yla dayanışmaya yönelir."
-        }
+        "Huzur": "Okunmuş kesitten İstanbul, Boğaz, tarihî çevre ve musikiyle ilgili doğrudan ifadeler seçilebilir; çıkarımlar bu kesitle sınırlandırılmalıdır.",
+        "Mescid-i Aksa": "Şiir metni doğrulanmış PDF’de yoktur. Dize, nazım biçimi, tema, dönem, zihniyet, üslup veya ileti hakkında hazır iddia yazılamaz.",
+        "doldurulacak_olcutler": [
+          "İçerik",
+          "Tür",
+          "Şekil",
+          "Dönem",
+          "Zihniyet",
+          "Üslup",
+          "İleti"
+        ]
       },
-      "explanation": "Karşılaştırma tablosu şiirin dizelerini temel alır; fotoğraf şiir için görsel bağlam sağlar, fakat tür ve şekil altı dörtlük ile dize yapısından belirlenir. Dönem ölçütü metin özelliklerinden değil bibliyografik bilgiden gelir: Huzur’un 1949 ilk yayım bilgisi kitap dışı bağlam olarak ayrılmıştır; şiirin yazılış tarihi/dönemi kitapta verilmediği için atanmamıştır. Yorumlanan Huzur içeriği de burada okunan kesitlerle sınırlıdır.",
+      "explanation": "Fotoğraf şiirin metnini veya biçim özelliklerini doğrulamaz. Bu nedenle şiire ait alıntılar ve biçim/yorum iddiaları çıkarılmış; kaynak sınırı açıkça gösterilmiştir.",
       "evidence_quotes": [
-        "İstanbul’u tanımadıkça kendimizi bulamayız.",
-        "Bir çocuk gibiydi",
-        "İlk Kıblesi benim",
-        "Kucaklasın beni İslâm"
+        "İstanbul’u tanımadıkça kendimizi bulamayız."
       ]
     },
     {
@@ -117,7 +90,7 @@
     },
     {
       "question_id": "T3-P180-TABLE01",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 180,
       "question_no": "3",
       "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
@@ -153,7 +126,7 @@
     },
     {
       "question_id": "T3-P181-TABLE02",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 181,
       "question_no": "4",
       "prompt_summary": "Huzur kahramanlarını kişilik özellikleri ve dil kullanımları bakımından karşılaştırma",

@@ -141,7 +141,7 @@
     },
     {
       "question_id": "T3-P188-Q04",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 188,
       "question_no": "4",
       "prompt_summary": "Mümtaz, Nuran, İhsan ve Suat'ın özellikleri ve amaçları",
@@ -301,15 +301,16 @@
       "printed_page": 191,
       "question_no": "Sıra Sizde 3",
       "prompt_summary": "Parçadaki eski yazımları günümüz yazımına çevirme",
-      "answer": "Parçadaki gerçekten farklı yazılmış dört biçim fevkalâdelik, ilân, telâştan ve eksilmiyen kelimeleridir. Şikâyet ve hâlini gibi anlamı/söyleyişi ayıran şapkalı biçimler bu soru için otomatik yanlış sayılmaz.",
+      "answer": "Parçadaki günümüz yazımından farklı beş biçim şunlardır: **fevkalâdelik → fevkaladelik**, **ilân → ilan**, **telâştan → telaştan**, **eksilmiyen → eksilmeyen** ve **zatürree → zatürre**. Şikâyet ve hâlini gibi düzeltme işaretli biçimler bu soru için otomatik olarak yanlış sayılmaz.",
       "source_locator": "basılı s.191 / PDF s.192 — Sıra Sizde soru 3",
       "answer_sections": {
         "fevkalâdelik": "fevkaladelik",
         "ilân": "ilan",
         "telâştan": "telaştan",
-        "eksilmiyen": "eksilmeyen"
+        "eksilmiyen": "eksilmeyen",
+        "zatürree": "zatürre"
       },
-      "explanation": "Kaynakta dört değişiklik gerekçelendirilebilir. 'şikâyet' ve 'hâlini' kelimelerini düzeltilecek yanlışlar listesine eklemeyin; düzeltme işareti, her kelimede aynı şekilde kaldırılmaz."
+      "explanation": "Kaynakta beş değişiklik gerekçelendirilebilir. “Şikâyet” ve “hâlini” kelimelerini düzeltilecek yanlışlar listesine eklemeyin; düzeltme işareti her kelimede aynı şekilde kaldırılmaz."
     },
     {
       "question_id": "T3-P191-PERF01",

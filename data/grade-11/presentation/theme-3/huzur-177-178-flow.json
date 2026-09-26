@@ -38,18 +38,18 @@
       "source_record_id": "T03-S0030",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Karşılaştıralım: s.177’deki “Mescid-i Aksa” şiirini ve s.178’deki yönergeyi inceleyiniz.",
+      "prompt": "Basılı s.177’deki görseli ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.177’de M. Akif İnan imzalı “Mescid-i Aksa” şiiri, fotoğrafın üzerine basılıdır ve altı dörtlükten oluşur.",
+        "lead": "Basılı s.177’de Mescid-i Aksa görseli bulunuyor; şiir dizeleri doğrulanmış PDF’de görünmüyor.",
         "sections": [
           {
             "title": "Metin kanıtı",
-            "body": "Şiirin dizelerini ve dörtlük düzenini doğrudan okuyun; tür ve şekil kararını fotoğraftan değil şiirin kendisinden çıkarın."
+            "body": "Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz. Şiir metni doğrulanmış kaynakta bulunmadığından bu özellikler burada belirlenemez."
           },
           {
             "title": "Kaynak sınırı",
-            "body": "Kitap şiirin yazılış tarihini veya edebî dönemini vermiyor. Tarih uydurmayın; bu sınırlama içerik, tür, şekil, zihniyet, üslup ve ileti incelemesini engellemez."
+            "body": "Şiir metni doğrulanmış PDF’de yer almadığından içerik, tür, şekil, dönem, zihniyet, üslup ve ileti özellikleri bu kaynakla doğrulanamaz. Başka bir kaynak da görülmediyse bu alanları boş bırakın."
           }
         ]
       }
@@ -63,7 +63,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P177-COMP01",
       "content": {
-        "lead": "Her iki metinden birer söz, davranış veya anlatım tercihi seçip yedi ölçütte karşılaştırın; benzerlik ve farklılığı gerekçelendirin. Dönem bilgisi metin kanıtından ayrıdır.",
+        "lead": "Bu PDF’de Mescid-i Aksa şiirinin dizeleri bulunmuyor. Huzur sütununu okunan kesitle doldurun; şiir sütunundaki iddiaları yalnız şiir metni doğrulanmış bir kaynakta görüldüğünde yazın.",
         "items": [
           "İçerik",
           "Tür",
@@ -120,7 +120,7 @@
           },
           {
             "title": "Mescid-i Aksa — zihniyet",
-            "body": "İlk kıble ve peygamberler hatırası ortak inanç hafızasına; konuşan mekânın yalnızlık anlatımı dayanışma beklentisine işaret eder. Şiirin yazılış tarihini kaynakta olmadığı için dönem etiketiyle doldurmayın."
+            "body": "Şiir metni doğrulanmış PDF’de bulunmadığından zihniyet yorumu ve dönem bilgisi bu kaynakla doğrulanamaz; şiir metni görülünce kanıtla doldurun."
           }
         ]
       }
@@ -141,11 +141,11 @@
           },
           {
             "title": "Mescid-i Aksa — üslup ve ileti",
-            "body": "Mekânın çocuk gibi konuşturulması, tekrar ve doğrudan sesleniş lirik bir yakarış kurar. Kutsal mekânı hatırlama ve onunla dayanışma çağrısı çıkarılabilir."
+            "body": "Şiir metni PDF’de bulunmadığından üslup ve ileti karşılaştırması tamamlanamaz; kişileştirme, sesleniş veya çağrı gibi özellikleri metin kanıtı olmadan atamayın."
           },
           {
             "title": "Karşılaştırma",
-            "body": "İkisinde de kültürel/dinî hafıza önemlidir; Huzur düşünsel anlatı ve şehir betimlemesiyle, şiir kişileştirme ve doğrudan çağrıyla farklılaşır."
+            "body": "İki metin arasında benzerlik veya fark kurmak için şiir metni gerekir; mevcut PDF’de bulunmayan metne ilişkin sonuç yazmayın."
           }
         ]
       }
