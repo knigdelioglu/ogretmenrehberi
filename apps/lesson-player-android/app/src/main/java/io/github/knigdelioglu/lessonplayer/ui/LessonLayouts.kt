@@ -157,7 +157,7 @@ internal fun ComparisonContentLayout(
                         horizontalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
                     ) {
                         sections.forEach { section ->
-                            Text(
+                            GlossaryText(
                                 text = section.title.uppercase(),
                                 style = MaterialTheme.typography.labelLarge,
                                 color = LessonColors.Header,
@@ -175,7 +175,7 @@ internal fun ComparisonContentLayout(
                         horizontalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
                     ) {
                         sections.forEach { section ->
-                            Text(
+                            GlossaryText(
                                 text = section.body,
                                 style = MaterialTheme.typography.bodyLarge,
                                 color = LessonColors.TextPrimary,
@@ -344,7 +344,7 @@ internal fun ComparisonAnswerTable(answerSections: JsonValue, heading: String? =
                                 verticalAlignment = Alignment.Top
                             ) {
                                 row.forEachIndexed { columnIndex, cell ->
-                                    Text(
+                                    GlossaryText(
                                         text = cell,
                                         modifier = Modifier
                                             .width(if (columnIndex == 0) criterionWidth else entityWidth)
@@ -408,7 +408,7 @@ internal fun StructureSchemaLayout(
                         border = BorderStroke(1.dp, LessonColors.Border),
                         color = LessonColors.SurfaceSoft
                     ) {
-                        Text(
+                        GlossaryText(
                             text = item,
                             style = MaterialTheme.typography.bodyLarge,
                             modifier = Modifier.padding(LessonSpacing.small),
@@ -486,7 +486,7 @@ internal fun AssessmentCriteriaLayout(
                                 )
                             }
                         }
-                        Text(
+                        GlossaryText(
                             text = item,
                             style = MaterialTheme.typography.bodyLarge,
                             color = LessonColors.TextPrimary,
@@ -551,7 +551,7 @@ internal fun VocabularyMatchLayout(
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text(
+                        GlossaryText(
                             text = term,
                             style = MaterialTheme.typography.titleMedium,
                             color = if (visible) LessonColors.AnswerText else LessonColors.TextPrimary,
@@ -576,7 +576,7 @@ internal fun VocabularyMatchLayout(
                             is JsonValue.Text -> definition.value
                             else -> readableAnswerValue(definition)
                         }
-                        Text(
+                        GlossaryText(
                             text = defText,
                             style = MaterialTheme.typography.bodyLarge,
                             color = LessonColors.AnswerText
@@ -621,7 +621,7 @@ private fun AccentRow(marker: String, value: String, rowPadding: Dp) {
                     modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
                 )
             }
-            Text(
+            GlossaryText(
                 text = value,
                 style = MaterialTheme.typography.bodyLarge,
                 color = LessonColors.TextPrimary,
@@ -667,14 +667,14 @@ private fun SectionCard(
             modifier = Modifier.padding(density.cardPadding),
             verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
         ) {
-            Text(
-                section.title,
+            GlossaryText(
+                text = section.title,
                 style = MaterialTheme.typography.titleMedium,
                 color = LessonColors.Primary,
                 fontWeight = FontWeight.SemiBold
             )
-            Text(
-                section.body,
+            GlossaryText(
+                text = section.body,
                 style = MaterialTheme.typography.bodyLarge,
                 color = LessonColors.TextPrimary
             )
@@ -687,7 +687,11 @@ private fun SectionCard(
 internal fun AnswerSections(value: JsonValue?) {
     when (value) {
         null, JsonValue.Null -> Unit
-        is JsonValue.Text -> Text(value.value, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary)
+        is JsonValue.Text -> GlossaryText(
+            text = value.value,
+            style = MaterialTheme.typography.bodyLarge,
+            color = LessonColors.TextPrimary
+        )
         is JsonValue.Number -> Text(value.value, style = MaterialTheme.typography.bodyLarge, color = LessonColors.TextPrimary)
         is JsonValue.Bool -> Text(
             if (value.value) "Evet" else "Hayır",
@@ -719,8 +723,8 @@ internal fun AnswerSections(value: JsonValue?) {
                         modifier = Modifier.padding(LessonSpacing.medium),
                         verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                     ) {
-                        Text(
-                            key.replace("_", " "),
+                        GlossaryText(
+                            text = key.replace("_", " "),
                             style = MaterialTheme.typography.titleMedium,
                             color = LessonColors.Header,
                             fontWeight = FontWeight.SemiBold
