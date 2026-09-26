@@ -114,6 +114,7 @@ internal fun SessionLessonScreen(
     retryLastAction: () -> Unit = {},
     openLessonOutline: (() -> Unit)? = null,
     openTeacherAssist: (() -> Unit)? = null,
+    headerContent: (@Composable () -> Unit)? = null,
     isThreeColumn: Boolean = false
 ) {
     val sourceStep = lesson.steps.first { it.id == state.stepId }
@@ -145,6 +146,10 @@ internal fun SessionLessonScreen(
                 contentPadding = PaddingValues(density.screenPadding),
                 verticalArrangement = Arrangement.spacedBy(density.blockGap)
             ) {
+                headerContent?.let { header ->
+                    item { header() }
+                }
+
                 // Sadece dar ekranda veya başlık üstte olmadığında adım sayacı gösterilir
                 if (!isThreeColumn) {
                     item {
@@ -430,7 +435,7 @@ internal fun SessionLessonScreen(
             }
         }
 
-        // Dar / kompakt ekranda alt çubuk burada çizilir (3-kolon modunda ise LessonV2ActionBar ekranın en altında sabit kalır)
+        // Dar / kompakt ekranda gezinme burada çizilir; 3-kolon modunda sağ panelin altındadır.
         if (!isThreeColumn) {
             Surface(
                 color = LessonColors.Surface,

@@ -70,7 +70,6 @@ import io.github.knigdelioglu.lessonplayer.teacher.TeacherTrack
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistDrawer
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistSheet
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonV2TeacherAssistPane
-import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2ActionBar
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Header
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Sidebar
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
@@ -325,27 +324,21 @@ internal fun LessonPlayerShell(
                         )
                     },
                     workspace = { workspaceModifier ->
-                        Column(modifier = workspaceModifier) {
-                            LessonV2Header(
-                                currentScreen = currentScreen,
+                        Box(modifier = workspaceModifier) {
+                            SessionLessonScreen(
                                 lesson = currentLesson,
-                                session = session
-                            )
-                            Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
-                                SessionLessonScreen(
-                                    lesson = currentLesson,
-                                    state = session,
-                                    dispatch = dispatchAction,
-                                    actionState = actionState,
-                                    retryLastAction = retryLastAction,
-                                    isThreeColumn = true
-                                )
-                            }
-                            LessonV2ActionBar(
-                                step = currentStep,
-                                session = session,
+                                state = session,
                                 dispatch = dispatchAction,
-                                actionBusy = actionState.busy
+                                actionState = actionState,
+                                retryLastAction = retryLastAction,
+                                headerContent = {
+                                    LessonV2Header(
+                                        currentScreen = currentScreen,
+                                        lesson = currentLesson,
+                                        session = session
+                                    )
+                                },
+                                isThreeColumn = true
                             )
                         }
                     },
@@ -353,6 +346,7 @@ internal fun LessonPlayerShell(
                         LessonV2TeacherAssistPane(
                             step = currentStep,
                             session = session,
+                            dispatch = dispatchAction,
                             enabled = !actionState.busy,
                             modifier = teacherModifier
                         )

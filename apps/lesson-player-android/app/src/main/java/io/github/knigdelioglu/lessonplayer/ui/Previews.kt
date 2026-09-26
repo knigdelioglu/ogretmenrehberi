@@ -34,7 +34,6 @@ import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistDrawer
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistSheet
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonV2TeacherAssistPane
-import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2ActionBar
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Header
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Sidebar
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
@@ -205,34 +204,27 @@ private fun ShellV2ThreeColumnPreview() {
                 )
             },
             workspace = { workspaceModifier ->
-                Column(modifier = workspaceModifier) {
-                LessonV2Header(
-                    currentScreen = AppScreen.LESSON,
-                    lesson = lesson,
-                    session = session
-                )
-
-                Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
+                Box(modifier = workspaceModifier) {
                     SessionLessonScreen(
                         lesson = lesson,
                         state = session,
                         dispatch = {},
+                        headerContent = {
+                            LessonV2Header(
+                                currentScreen = AppScreen.LESSON,
+                                lesson = lesson,
+                                session = session
+                            )
+                        },
                         isThreeColumn = true
                     )
-                }
-
-                LessonV2ActionBar(
-                    step = currentStep,
-                    session = session,
-                    dispatch = {},
-                    actionBusy = false
-                )
                 }
             },
             teacherAssist = { teacherModifier ->
                 LessonV2TeacherAssistPane(
                     step = currentStep,
                     session = session,
+                    dispatch = {},
                     modifier = teacherModifier
                 )
             }

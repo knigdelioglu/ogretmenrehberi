@@ -25,6 +25,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -43,6 +44,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
+import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
@@ -60,6 +62,7 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 fun LessonV2TeacherAssistPane(
     step: LessonStep,
     session: LessonSession,
+    dispatch: ((LessonCommand) -> Unit)? = null,
     modifier: Modifier = Modifier,
     enabled: Boolean = true
 ) {
@@ -83,108 +86,142 @@ fun LessonV2TeacherAssistPane(
     val hasEvidence = RevealKey.EVIDENCE in effectiveStep.revealOrder && !answer?.evidenceQuotes.isNullOrEmpty()
     val hasNote = !effectiveStep.content?.note.isNullOrBlank()
     val hasAnyAssist = hasGuidance || hasExplanation || hasEvidence || hasNote
+    val ordinal = session.order.indexOf(session.stepId)
 
     Surface(
         modifier = modifier.fillMaxHeight().testTag("teacher-assist-pane"),
         color = LessonColors.AppBg,
         border = BorderStroke(1.dp, LessonColors.Border)
     ) {
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(LessonSpacing.medium),
-            verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
-        ) {
-            if (!hasAnyAssist) {
-                item {
-                    Surface(
-                        modifier = Modifier.fillMaxWidth().testTag("teacher-assist-empty-info"),
-                        shape = RoundedCornerShape(12.dp),
-                        color = LessonColors.SurfaceSoft,
-                        border = BorderStroke(1.dp, LessonColors.Border)
-                    ) {
-                        Text(
-                            text = if (hasWorkspaceAnswer) {
-                                "Bu adımın cevabı orta çalışma alanında gösterilir. Sağ panel için ek yönlendirme, açıklama, metinsel kanıt veya öğretmen notu tanımlı değildir."
-                            } else {
-                                "Bu adım için tanımlı ek öğretmen desteği bulunmamaktadır."
-                            },
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = LessonColors.TextSecondary,
-                            modifier = Modifier.padding(LessonSpacing.medium)
+        Column(modifier = Modifier.fillMaxSize()) {
+            LazyColumn(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(LessonSpacing.medium),
+                verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+            ) {
+                if (!hasAnyAssist) {
+                    item {
+                        Surface(
+                            modifier = Modifier.fillMaxWidth().testTag("teacher-assist-empty-info"),
+                            shape = RoundedCornerShape(12.dp),
+                            color = LessonColors.SurfaceSoft,
+                            border = BorderStroke(1.dp, LessonColors.Border)
+                        ) {
+                            Text(
+                                text = if (hasWorkspaceAnswer) {
+                                    "Bu adımın cevabı orta çalışma alanında gösterilir. Sağ panel için ek yönlendirme, açıklama, metinsel kanıt veya öğretmen notu tanımlı değildir."
+                                } else {
+                                    "Bu adım için tanımlı ek öğretmen desteği bulunmamaktadır."
+                                },
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = LessonColors.TextSecondary,
+                                modifier = Modifier.padding(LessonSpacing.medium)
+                            )
+                        }
+                    }
+                }
+
+                // 1. Yönlendirme (Guidance) - Soft Mavi
+                if (hasGuidance) {
+                    item {
+                        val isRevealed = RevealKey.GUIDANCE in session.revealed
+                        val isExpanded = RevealKey.GUIDANCE in expandedPanels
+                        SemanticAssistCard(
+                            title = "YÖNLENDİRME",
+                            surfaceColor = LessonColors.GuidanceSurface,
+                            borderColor = LessonColors.GuidanceBorder,
+                            textColor = LessonColors.GuidanceText,
+                            isExpanded = isExpanded,
+                            onToggleExpand = { toggleExpanded(RevealKey.GUIDANCE) },
+                            isRevealed = isRevealed,
+                            enabled = enabled,
+                            content = answer?.guidance.orEmpty()
+                        )
+                    }
+                }
+
+                // 2. Açıklama (Explanation) - Soft Şeftali
+                if (hasExplanation) {
+                    item {
+                        val isRevealed = RevealKey.EXPLANATION in session.revealed
+                        val isExpanded = RevealKey.EXPLANATION in expandedPanels
+                        SemanticAssistCard(
+                            title = "AÇIKLAMA",
+                            surfaceColor = LessonColors.ExplanationSurface,
+                            borderColor = LessonColors.ExplanationBorder,
+                            textColor = LessonColors.ExplanationText,
+                            isExpanded = isExpanded,
+                            onToggleExpand = { toggleExpanded(RevealKey.EXPLANATION) },
+                            isRevealed = isRevealed,
+                            enabled = enabled,
+                            content = answer?.explanation.orEmpty()
+                        )
+                    }
+                }
+
+                // 3. Metinsel Kanıt (Evidence) - Soft Lavanta
+                if (hasEvidence) {
+                    item {
+                        val isRevealed = RevealKey.EVIDENCE in session.revealed
+                        val isExpanded = RevealKey.EVIDENCE in expandedPanels
+                        val evidenceText = answer?.evidenceQuotes?.joinToString("\n\n").orEmpty()
+
+                        SemanticAssistCard(
+                            title = "METİNSEL KANIT",
+                            surfaceColor = LessonColors.EvidenceSurface,
+                            borderColor = LessonColors.EvidenceBorder,
+                            textColor = LessonColors.EvidenceText,
+                            isExpanded = isExpanded,
+                            onToggleExpand = { toggleExpanded(RevealKey.EVIDENCE) },
+                            isRevealed = isRevealed,
+                            enabled = enabled,
+                            content = evidenceText
+                        )
+                    }
+                }
+
+                // 4. Varsa Öğretmen Notu (Yalnızca yerel aç/kapa, asla öğrenciye reveal dispatch üretmez)
+                if (hasNote) {
+                    item {
+                        TeacherNoteCard(
+                            note = effectiveStep.content?.note.orEmpty(),
+                            isExpanded = isNoteExpanded,
+                            onToggleExpand = { isNoteExpanded = !isNoteExpanded },
+                            enabled = enabled
                         )
                     }
                 }
             }
 
-            // 1. Yönlendirme (Guidance) - Soft Mavi
-            if (hasGuidance) {
-                item {
-                    val isRevealed = RevealKey.GUIDANCE in session.revealed
-                    val isExpanded = RevealKey.GUIDANCE in expandedPanels
-                    SemanticAssistCard(
-                        title = "YÖNLENDİRME",
-                        surfaceColor = LessonColors.GuidanceSurface,
-                        borderColor = LessonColors.GuidanceBorder,
-                        textColor = LessonColors.GuidanceText,
-                        isExpanded = isExpanded,
-                        onToggleExpand = { toggleExpanded(RevealKey.GUIDANCE) },
-                        isRevealed = isRevealed,
-                        enabled = enabled,
-                        content = answer?.guidance.orEmpty()
-                    )
-                }
-            }
-
-            // 2. Açıklama (Explanation) - Soft Şeftali
-            if (hasExplanation) {
-                item {
-                    val isRevealed = RevealKey.EXPLANATION in session.revealed
-                    val isExpanded = RevealKey.EXPLANATION in expandedPanels
-                    SemanticAssistCard(
-                        title = "AÇIKLAMA",
-                        surfaceColor = LessonColors.ExplanationSurface,
-                        borderColor = LessonColors.ExplanationBorder,
-                        textColor = LessonColors.ExplanationText,
-                        isExpanded = isExpanded,
-                        onToggleExpand = { toggleExpanded(RevealKey.EXPLANATION) },
-                        isRevealed = isRevealed,
-                        enabled = enabled,
-                        content = answer?.explanation.orEmpty()
-                    )
-                }
-            }
-
-            // 3. Metinsel Kanıt (Evidence) - Soft Lavanta
-            if (hasEvidence) {
-                item {
-                    val isRevealed = RevealKey.EVIDENCE in session.revealed
-                    val isExpanded = RevealKey.EVIDENCE in expandedPanels
-                    val evidenceText = answer?.evidenceQuotes?.joinToString("\n\n").orEmpty()
-
-                    SemanticAssistCard(
-                        title = "METİNSEL KANIT",
-                        surfaceColor = LessonColors.EvidenceSurface,
-                        borderColor = LessonColors.EvidenceBorder,
-                        textColor = LessonColors.EvidenceText,
-                        isExpanded = isExpanded,
-                        onToggleExpand = { toggleExpanded(RevealKey.EVIDENCE) },
-                        isRevealed = isRevealed,
-                        enabled = enabled,
-                        content = evidenceText
-                    )
-                }
-            }
-
-            // 4. Varsa Öğretmen Notu (Yalnızca yerel aç/kapa, asla öğrenciye reveal dispatch üretmez)
-            if (hasNote) {
-                item {
-                    TeacherNoteCard(
-                        note = effectiveStep.content?.note.orEmpty(),
-                        isExpanded = isNoteExpanded,
-                        onToggleExpand = { isNoteExpanded = !isNoteExpanded },
-                        enabled = enabled
-                    )
+            dispatch?.let { send ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = LessonSpacing.small, vertical = LessonSpacing.tiny),
+                    horizontalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
+                ) {
+                    OutlinedButton(
+                        onClick = { send(LessonCommand.Previous) },
+                        enabled = enabled && ordinal > 0,
+                        modifier = Modifier
+                            .weight(1f)
+                            .heightIn(min = LessonTarget.minimum)
+                            .testTag("lesson-previous")
+                    ) {
+                        Text("Önceki", maxLines = 1)
+                    }
+                    OutlinedButton(
+                        onClick = { send(LessonCommand.Next) },
+                        enabled = enabled && ordinal < session.order.lastIndex,
+                        modifier = Modifier
+                            .weight(1f)
+                            .heightIn(min = LessonTarget.minimum)
+                            .testTag("lesson-next")
+                    ) {
+                        Text("Sonraki", maxLines = 1)
+                    }
                 }
             }
         }
@@ -288,7 +325,7 @@ internal fun TeacherNoteCard(
 
 /**
  * Semantik Öğretmen Destek Kartı.
- * Reveal durumu gösterilir; öğrenciye göster/gizle eylemleri sabit araç çubuğundadır.
+ * Başlık kart içeriğini açıp kapatır; reveal durumu ayrı bir bilgi etiketiyle gösterilir.
  */
 @Composable
 private fun SemanticAssistCard(
