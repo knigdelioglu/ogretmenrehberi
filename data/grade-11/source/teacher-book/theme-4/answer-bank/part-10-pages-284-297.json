@@ -45,8 +45,8 @@
       "question_no": "2",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
       "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
-      "answer": "Olası tahmin: 'Fedakârlık' başlığı ile görselde ray/demir yolu hattı çevresinde fiziksel bir çalışma görülmesi, emek, sorumluluk veya bir güçlüğü giderme çevresinde bir içerik olabileceğini düşündürebilir. Bu yalnız başlık ve görselden yapılan ön tahmindir; kişi, olay, amaç ve sonuç video izlenmeden kesinleştirilmez.",
-      "guidance": "Görselde yalnız gözlenebilen ray/demir yolu hattı ve çalışma ayrıntılarını betimleyin; çalışma türünü, kişiyi, fedakârlığın kime karşı ve nasıl gerçekleştiğini video izlenmeden kesinleştirmeyin."
+      "answer": "Olası tahmin: ‘Fedakârlık’ başlığı ile görsellerde rayların yanında bir kaplumbağayı tutan ellerin ve yeşil alanda elinde kap benzeri bir nesne taşıyan kişinin görülmesi; canlılara yardım, emek veya sorumluluk çevresinde bir içerik olabileceğini düşündürebilir. Bu yalnızca başlık ve görsellerden yapılan ön tahmindir; kişi, olay, amaç ve sonuç video izlenmeden kesinleştirilmez.",
+      "guidance": "Sayfadaki görsellerde açıkça görülen ayrıntıları betimleyin (rayların yanındaki kaplumbağayı tutan eller ve yeşil alandaki kişi ile elindeki nesne). Görsellerin hangi olayı anlattığını video izlenmeden kesinleştirmeyin."
     },
     {
       "question_id": "T4-P285-Q03",
@@ -106,8 +106,9 @@
       "answer_sections": {
         "Dikkat ve anlama": "Öğrenci dikkatini verip içeriği anlamaya çalıştı mı?",
         "Saygı ve ön yargı": "Videoyu sabırla, saygıyla ve ön yargıdan uzak izledi mi?",
-        "Ortam": "Diğer dinleyicileri rahatsız edecek ses veya hareketlerden kaçındı mı?",
-        "Söz alma": "Yorum ve sorular için videonun bitmesini bekledi mi?"
+        "Diğer dinleyiciler": "Öğrenci diğer dinleyicileri rahatsız etmedi mi?",
+        "Söz alma": "Yorum ve sorular için videonun bitmesini bekledi mi?",
+        "Dikkat dağıtıcı davranışlar": "Dikkat dağıtacak sesler çıkarmaktan ve uygun olmayan hareketlerden kaçındı mı?"
       }
     },
     {
