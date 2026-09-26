@@ -144,6 +144,7 @@ Kanonik ders verisi (`remote-content/lessons.json`) doğrudan MEB ders kitabı v
 2. **COMPARISON Düzeni ve Tablo Eşleştirme Sınırlaması:**
    - `content.items` alanı çoğunlukla yönerge niteliğindedir; yapay bir ölçüt sütununa zorlanmaz.
    - Canonical `content.sections` kaynak karşılaştırması olarak merkezde kalır. Öğretmen ekranında `answer.answer_sections` cevap verisi mevcutsa merkezdeki yeşil cevap bloğunda daima gerçek satır/sütun matrisi olarak gösterilir. Top-level varlıklar sütun, nested key birleşimi satır ölçütüdür. Düz nesne iki sütunlu tablo kullanır.
+   - Tablo kolonları sabit piksel/dp genişliğinde değildir. İki ve üç sütunlu tablolar mevcut merkez çalışma alanını yatayda doldurur; kriter sütunu yaklaşık %24–30 aralığında tutulur, değer sütunları kalan alanı paylaşır. Sütun sayısı okunabilir minimumları aşarsa ancak o zaman yatay kaydırma kullanılır.
    - Öğrenci sunumu ve `StudentProjection` tarafında answer_sections yine ANSWER reveal olmadan gösterilmez.
    - Kaynakta yapılandırılmış karşılaştırma yoksa başlık ve yönerge metni olarak dürüstçe gösterilir; sahte sütun veya örnek içerik uydurulmaz.
 3. **STRUCTURE Düzeni:**

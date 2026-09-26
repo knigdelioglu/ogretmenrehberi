@@ -391,6 +391,36 @@ class LessonShellV2Test {
     }
 
     @Test
+    fun comparisonTableUsesAvailableWorkspaceBeforeHorizontalScrolling() {
+        val twoColumns = comparisonTableColumnLayout(
+            availableWidthDp = 700f,
+            columnCount = 2
+        )
+        assertEquals(210f, twoColumns.criterionWidthDp, 0.1f)
+        assertEquals(490f, twoColumns.entityWidthDp, 0.1f)
+        assertEquals(700f, twoColumns.tableWidthDp, 0.1f)
+        assertFalse(twoColumns.scrollsHorizontally)
+
+        val threeColumns = comparisonTableColumnLayout(
+            availableWidthDp = 700f,
+            columnCount = 3
+        )
+        assertEquals(168f, threeColumns.criterionWidthDp, 0.1f)
+        assertEquals(266f, threeColumns.entityWidthDp, 0.1f)
+        assertEquals(700f, threeColumns.tableWidthDp, 0.1f)
+        assertFalse(threeColumns.scrollsHorizontally)
+
+        val fiveColumns = comparisonTableColumnLayout(
+            availableWidthDp = 700f,
+            columnCount = 5
+        )
+        assertEquals(168f, fiveColumns.criterionWidthDp, 0.1f)
+        assertEquals(168f, fiveColumns.entityWidthDp, 0.1f)
+        assertEquals(840f, fiveColumns.tableWidthDp, 0.1f)
+        assertTrue(fiveColumns.scrollsHorizontally)
+    }
+
+    @Test
     fun teacherNoteNeverAppearsInStudentProjectionEvenIfItsTeacherStateIsOpen() {
         val source = sampleLesson()
         val teacherOnlyMarker = "ONLY_TEACHER_NOTE_MARKER"

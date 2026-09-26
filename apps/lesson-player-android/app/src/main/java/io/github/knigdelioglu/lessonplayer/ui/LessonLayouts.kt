@@ -199,6 +199,41 @@ internal data class ComparisonAnswerMatrix(
     val rows: List<List<String>>
 )
 
+internal data class ComparisonTableColumnLayout(
+    val criterionWidthDp: Float,
+    val entityWidthDp: Float,
+    val tableWidthDp: Float,
+    val scrollsHorizontally: Boolean
+)
+
+/**
+ * Tablet çalışma alanını mümkün olduğunca doldurur.
+ * Az sütunlu tablolarda mevcut genişlik bütünüyle kullanılır; çok sütunda okunabilir
+ * minimum hücre genişlikleri korunur ve ancak o zaman yatay kaydırma devreye girer.
+ */
+internal fun comparisonTableColumnLayout(
+    availableWidthDp: Float,
+    columnCount: Int
+): ComparisonTableColumnLayout {
+    require(columnCount >= 2)
+    val entityCount = columnCount - 1
+    val criterionRatio = if (columnCount == 2) 0.30f else 0.24f
+    val criterionWidth = (availableWidthDp * criterionRatio).coerceIn(128f, 220f)
+    val minEntityWidth = if (columnCount == 2) 240f else 168f
+    val remainingWidth = (availableWidthDp - criterionWidth).coerceAtLeast(0f)
+    val entityWidth = maxOf(remainingWidth / entityCount, minEntityWidth)
+    val tableWidth = maxOf(
+        availableWidthDp,
+        criterionWidth + entityWidth * entityCount
+    )
+    return ComparisonTableColumnLayout(
+        criterionWidthDp = criterionWidth,
+        entityWidthDp = entityWidth,
+        tableWidthDp = tableWidth,
+        scrollsHorizontally = tableWidth > availableWidthDp + 0.5f
+    )
+}
+
 /** Teacher answer data is exposed to the renderer only after its reveal state opens. */
 internal fun visibleComparisonAnswerSections(
     step: LessonStep,
@@ -241,13 +276,10 @@ internal fun vocabularyDefinitionVisible(
 private fun comparisonLabel(value: String): String =
     value.replace('_', ' ').replaceFirstChar { it.uppercase() }
 
-/** A scrollable row/column matrix, including a two-column form for flat key/value data. */
+/** Responsive row/column matrix that fills the workspace before falling back to horizontal scroll. */
 @Composable
 internal fun ComparisonAnswerTable(answerSections: JsonValue, heading: String? = "KARŞILAŞTIRMALI CEVAP") {
     val matrix = comparisonAnswerMatrix(answerSections) ?: return
-    val criterionWidth = 112.dp
-    val entityWidth = 148.dp
-    val tableWidth = criterionWidth + entityWidth * (matrix.headers.size - 1)
 
     Column(
         modifier = Modifier.fillMaxWidth().testTag("comparison-answer-table"),
@@ -267,48 +299,67 @@ internal fun ComparisonAnswerTable(answerSections: JsonValue, heading: String? =
             border = BorderStroke(1.dp, LessonColors.AnswerBorder),
             color = LessonColors.AnswerSurface
         ) {
-            Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
-                Column(modifier = Modifier.width(tableWidth)) {
-                    Row(
-                        modifier = Modifier.fillMaxWidth().background(LessonColors.SurfaceSoft),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        matrix.headers.forEachIndexed { index, header ->
-                            Text(
-                                text = header,
-                                modifier = Modifier
-                                    .width(if (index == 0) criterionWidth else entityWidth)
-                                    .padding(horizontal = 8.dp, vertical = 10.dp),
-                                style = MaterialTheme.typography.labelMedium,
-                                color = LessonColors.AnswerText,
-                                fontWeight = FontWeight.Bold
-                            )
-                        }
-                    }
-                    Box(Modifier.fillMaxWidth().height(1.dp).background(LessonColors.AnswerBorder))
-                    matrix.rows.forEachIndexed { rowIndex, row ->
+            BoxWithConstraints(modifier = Modifier.fillMaxWidth()) {
+                val columnLayout = comparisonTableColumnLayout(
+                    availableWidthDp = maxWidth.value,
+                    columnCount = matrix.headers.size
+                )
+                val criterionWidth = columnLayout.criterionWidthDp.dp
+                val entityWidth = columnLayout.entityWidthDp.dp
+                val tableWidth = columnLayout.tableWidthDp.dp
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .horizontalScroll(rememberScrollState())
+                ) {
+                    Column(modifier = Modifier.width(tableWidth)) {
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .background(if (rowIndex % 2 == 0) LessonColors.Surface else LessonColors.AnswerSurface),
-                            verticalAlignment = Alignment.Top
+                                .background(LessonColors.SurfaceSoft),
+                            verticalAlignment = Alignment.CenterVertically
                         ) {
-                            row.forEachIndexed { columnIndex, cell ->
+                            matrix.headers.forEachIndexed { index, header ->
                                 Text(
-                                    text = cell,
+                                    text = header,
                                     modifier = Modifier
-                                        .width(if (columnIndex == 0) criterionWidth else entityWidth)
-                                        .padding(horizontal = 8.dp, vertical = 8.dp),
-                                    style = if (columnIndex == 0) MaterialTheme.typography.labelMedium
-                                        else MaterialTheme.typography.bodyMedium,
-                                    color = if (columnIndex == 0) LessonColors.AnswerText
-                                        else LessonColors.TextPrimary,
-                                    fontWeight = if (columnIndex == 0) FontWeight.SemiBold
-                                        else FontWeight.Normal
+                                        .width(if (index == 0) criterionWidth else entityWidth)
+                                        .padding(horizontal = 12.dp, vertical = 10.dp),
+                                    style = MaterialTheme.typography.labelMedium,
+                                    color = LessonColors.AnswerText,
+                                    fontWeight = FontWeight.Bold
                                 )
                             }
                         }
                         Box(Modifier.fillMaxWidth().height(1.dp).background(LessonColors.AnswerBorder))
+                        matrix.rows.forEachIndexed { rowIndex, row ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .background(
+                                        if (rowIndex % 2 == 0) LessonColors.Surface
+                                        else LessonColors.AnswerSurface
+                                    ),
+                                verticalAlignment = Alignment.Top
+                            ) {
+                                row.forEachIndexed { columnIndex, cell ->
+                                    Text(
+                                        text = cell,
+                                        modifier = Modifier
+                                            .width(if (columnIndex == 0) criterionWidth else entityWidth)
+                                            .padding(horizontal = 12.dp, vertical = 10.dp),
+                                        style = if (columnIndex == 0) MaterialTheme.typography.labelMedium
+                                            else MaterialTheme.typography.bodyMedium,
+                                        color = if (columnIndex == 0) LessonColors.AnswerText
+                                            else LessonColors.TextPrimary,
+                                        fontWeight = if (columnIndex == 0) FontWeight.SemiBold
+                                            else FontWeight.Normal
+                                    )
+                                }
+                            }
+                            Box(Modifier.fillMaxWidth().height(1.dp).background(LessonColors.AnswerBorder))
+                        }
                     }
                 }
             }
