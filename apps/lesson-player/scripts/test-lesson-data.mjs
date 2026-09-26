@@ -71,7 +71,7 @@ assert(theme3Entries.length === 147 &&
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
 assert(theme3Compare?.entry_type === "source_limited" &&
   theme3Compare.source_locator.includes("altı dörtlük") &&
-  theme3Compare.answer.includes("şiir metni bulunmadığı") &&
+  theme3Compare.answer.includes("karşılaştırmanın bu bölümü doğrulanamaz") &&
   Object.keys(theme3Compare.answer_sections ?? {}).length === 3,
   "T3-P177-COMP01, şiir metni doğrulanamadığı için kaynakla sınırlı tutulmalı.");
 assert(

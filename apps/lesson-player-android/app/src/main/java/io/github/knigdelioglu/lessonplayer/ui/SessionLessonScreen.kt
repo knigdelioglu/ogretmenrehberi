@@ -130,7 +130,9 @@ internal fun SessionLessonScreen(
     }
 
     Column(modifier = Modifier.fillMaxSize()) {
-        LessonActionStatus(actionState, retryLastAction)
+        if (!isThreeColumn) {
+            LessonActionStatus(actionState, retryLastAction)
+        }
 
         Box(
             modifier = Modifier
@@ -143,7 +145,12 @@ internal fun SessionLessonScreen(
                     .fillMaxWidth()
                     .widthIn(max = if (isThreeColumn) 1200.dp else 960.dp)
                     .testTag("lesson-screen-list"),
-                contentPadding = PaddingValues(density.screenPadding),
+                contentPadding = PaddingValues(
+                    start = density.screenPadding,
+                    top = if (isThreeColumn && headerContent != null) 0.dp else density.screenPadding,
+                    end = density.screenPadding,
+                    bottom = if (isThreeColumn) 80.dp else density.screenPadding
+                ),
                 verticalArrangement = Arrangement.spacedBy(density.blockGap)
             ) {
                 headerContent?.let { header ->
@@ -200,6 +207,9 @@ internal fun SessionLessonScreen(
                 // Soru ve Ana Çalışma Kartı
                 item {
                     Card(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .testTag("lesson-main-question-card"),
                         shape = RoundedCornerShape(LessonShape.card),
                         colors = CardDefaults.cardColors(
                             containerColor = LessonColors.Surface
@@ -432,6 +442,16 @@ internal fun SessionLessonScreen(
                         )
                     }
                 }
+            }
+
+            if (isThreeColumn) {
+                LessonActionStatus(
+                    state = actionState,
+                    retry = retryLastAction,
+                    modifier = Modifier
+                        .align(Alignment.BottomCenter)
+                        .padding(bottom = LessonSpacing.small)
+                )
             }
         }
 

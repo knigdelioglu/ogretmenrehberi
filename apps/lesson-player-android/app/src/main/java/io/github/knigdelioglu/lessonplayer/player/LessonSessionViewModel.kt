@@ -132,8 +132,11 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
 
                 try {
                     preferences.setActiveClassGroupId(groupId)
-                    val preferredLesson = preferences.lastLessonForGroup(groupId).first()
-                    val chosen = bundle.byId[preferredLesson]
+                    val groupProgress = store.allClassProgressForGroup(groupId)
+                    val latest = groupProgress.maxByOrNull { it.updatedAtMillis }
+                    val preferredLesson = latest?.lessonId
+                        ?: preferences.lastLessonForGroup(groupId).first()
+                    val chosen = (preferredLesson?.let { bundle.byId[it] })
                         ?: currentReady?.session?.lessonId?.let { bundle.byId[it] }
                         ?: bundle.lessons.first()
                     val restored = store.restore(groupId, chosen, bundle.lessonDigest(chosen.lessonId))
@@ -146,6 +149,56 @@ class LessonSessionViewModel(application: Application) : AndroidViewModel(applic
                     clearAction()
                 } catch (error: Exception) {
                     failAction("Şube oturumu açılamadı: ${error.message}")
+                }
+            }
+        }
+    }
+
+    fun resumeClassGroup(groupId: String) {
+        if (mutableActionState.value.busy) return
+        lastFailedCommand = null
+        lastFailedLessonId = null
+        mutableActionState.value = LessonActionUiState(busy = true)
+        viewModelScope.launch {
+            mutex.withLock {
+                val bundle = currentBundle ?: run {
+                    failAction("Ders paketi henüz hazır değil.")
+                    return@withLock
+                }
+                val groups = store.activeClassGroups()
+                val targetGroup = groups.firstOrNull { it.id == groupId } ?: run {
+                    failAction("Ders grubu bulunamadı.")
+                    return@withLock
+                }
+                val groupProgress = store.allClassProgressForGroup(groupId)
+                val latest = groupProgress.maxByOrNull { it.updatedAtMillis }
+                if (latest == null) {
+                    failAction("${targetGroup.displayName} için kayıtlı ilerleme bulunamadı.")
+                    return@withLock
+                }
+                val lesson = bundle.byId[latest.lessonId] ?: run {
+                    failAction("Kayıtlı ders pakette bulunamadı.")
+                    return@withLock
+                }
+
+                try {
+                    preferences.setActiveClassGroupId(groupId)
+                    preferences.rememberLesson(groupId, lesson.lessonId)
+                    val restored = store.restore(groupId, lesson, bundle.lessonDigest(lesson.lessonId))
+                    val effectiveStepId = if (latest.stepId in restored.order) latest.stepId else restored.stepId
+                    val sessionWithStep = restored.copy(
+                        stepId = effectiveStepId,
+                        presentationMode = preferences.presentationMode.first()
+                    )
+                    mutableClassGroups.value = groups
+                    mutableState.value = LessonSessionUiState.Ready(
+                        classGroup = targetGroup,
+                        session = sessionWithStep
+                    )
+                    refreshProgressSummary()
+                    clearAction()
+                } catch (error: Exception) {
+                    failAction("Ders açılamadı: ${error.message}")
                 }
             }
         }

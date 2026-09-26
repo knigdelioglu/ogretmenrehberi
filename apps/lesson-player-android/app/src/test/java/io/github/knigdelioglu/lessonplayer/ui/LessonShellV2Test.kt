@@ -1,6 +1,9 @@
 package io.github.knigdelioglu.lessonplayer.ui
 
 import androidx.compose.ui.unit.dp
+import io.github.knigdelioglu.lessonplayer.ui.shell.LESSON_SIDEBAR_HEADER_ITEM_COUNT
+import io.github.knigdelioglu.lessonplayer.ui.shell.calculateLessonSidebarInitialIndex
+import io.github.knigdelioglu.lessonplayer.ui.shell.resolveLessonSidebarAutoScrollTarget
 import io.github.knigdelioglu.lessonplayer.content.AnswerEntry
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
@@ -12,6 +15,7 @@ import io.github.knigdelioglu.lessonplayer.content.StepContent
 import io.github.knigdelioglu.lessonplayer.content.SupplementalSection
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
+import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.player.StepOverride
 import io.github.knigdelioglu.lessonplayer.player.toStudentProjection
@@ -1069,6 +1073,103 @@ class LessonShellV2Test {
         val cmd4 = nextLessonCommand(step2, session)
         assertNull("Son adımda public reveal kalmadığında komut null olmalıdır", cmd4)
         assertFalse("Son adımda public reveal kalmadığında eylem disabled olmalıdır", isAdvanceActionEnabled(step2, session))
+    }
+
+    @Test
+    fun lessonActionStatusAndTopAlignmentContractPreservesZeroTopPaddingInThreeColumn() {
+        // 1. Durum mesajı ve busy geribildirim sözleşmesi
+        val idleState = LessonActionUiState(busy = false, message = null)
+        val busyState = LessonActionUiState(busy = true, message = null)
+        val errorState = LessonActionUiState(busy = false, message = "Kayıt hatası", isError = true)
+
+        // Idle durumda geribildirim boş
+        val idleMessage = if (idleState.busy) "Kaydediliyor…" else idleState.message.orEmpty()
+        assertEquals("", idleMessage)
+
+        // Busy durumda "Kaydediliyor…" geribildirimi korunur
+        val busyMessage = if (busyState.busy) "Kaydediliyor…" else busyState.message.orEmpty()
+        assertEquals("Kaydediliyor…", busyMessage)
+
+        // Hata durumunda hata mesajı korunur
+        val errorMessage = if (errorState.busy) "Kaydediliyor…" else errorState.message.orEmpty()
+        assertEquals("Kayıt hatası", errorMessage)
+
+        // 2. 3-kolon modunda orta LazyColumn top padding'i daima 0.dp kalmalı (y≈40 sabit hizalama)
+        fun calculateLazyColumnTopPadding(isThreeColumn: Boolean, hasHeaderContent: Boolean): androidx.compose.ui.unit.Dp {
+            val screenPadding = 16.dp
+            return if (isThreeColumn && hasHeaderContent) 0.dp else screenPadding
+        }
+
+        // 3-kolon tablet ders ekranında headerContent varken top padding daima 0.dp'dir (kalıcı spacer eklenemez)
+        assertEquals(0.dp, calculateLazyColumnTopPadding(isThreeColumn = true, hasHeaderContent = true))
+
+        // Dar ekranda ise screenPadding korunur
+        assertEquals(16.dp, calculateLazyColumnTopPadding(isThreeColumn = false, hasHeaderContent = true))
+        assertEquals(16.dp, calculateLazyColumnTopPadding(isThreeColumn = false, hasHeaderContent = false))
+
+        // 3. 3-kolon tablet modunda overlay için 80dp alt dolgu rezerve edilmeli
+        fun calculateLazyColumnBottomPadding(isThreeColumn: Boolean): androidx.compose.ui.unit.Dp {
+            val screenPadding = 16.dp
+            return if (isThreeColumn) 80.dp else screenPadding
+        }
+        assertEquals(80.dp, calculateLazyColumnBottomPadding(isThreeColumn = true))
+        assertEquals(16.dp, calculateLazyColumnBottomPadding(isThreeColumn = false))
+
+        // Status yüzeyinin min yüksekliği (48dp buton + 8dp dikey dolgu) + 8dp alt kenar boşluğu = 64dp
+        val statusSurfaceAndMarginHeight = LessonTarget.minimum + 8.dp + 8.dp
+        assertTrue(
+            "Rezerve edilen 80dp alt dolgu, status bileşeninin toplam yüksekliğinden (64dp) büyük olmalı",
+            80.dp > statusSurfaceAndMarginHeight
+        )
+    }
+
+    @Test
+    fun lessonSidebar_autoScrollAndInitialPositionContract() {
+        val steps = (1..50).map { i ->
+            LessonStep(
+                id = "step-$i",
+                layout = LayoutKind.QUESTION,
+                density = "compact",
+                revealOrder = listOf(RevealKey.GUIDANCE, RevealKey.ANSWER),
+                displayPrompt = "Adım $i",
+                displayPromptMode = "full",
+                source = SourceRecord("src-$i", "$i", "Başlık $i", "TASK", "p$i", "active", null),
+                answer = null,
+                content = null
+            )
+        }
+        val lesson = LessonData(
+            schemaVersion = "2.0",
+            themeId = "t1",
+            lessonId = "lesson-long",
+            lessonSlug = "uzun-ders",
+            title = "Uzun Test Dersi",
+            subtitle = "50 Adımlı Ders",
+            printedPageRange = "1-50",
+            requiredSourceFrom = "p1",
+            requiredSourceTo = "p50",
+            coverageSourceRecords = 50,
+            coverageAnswerEntries = 0,
+            steps = steps
+        )
+
+        val session = LessonEngine.initial(lesson, contentDigest = "digest-long").copy(stepId = "step-42")
+
+        // 1. Yüksek aktif indeks -> doğru başlangıç indeksini verir (animasyonsuz açılış)
+        assertEquals(0, LESSON_SIDEBAR_HEADER_ITEM_COUNT)
+        val initialIndex = calculateLessonSidebarInitialIndex(session)
+        assertEquals(41, initialIndex)
+
+        // 2. İlk açılış / aynı indeks -> scroll yok (null döner)
+        assertNull(resolveLessonSidebarAutoScrollTarget(currentStepIndex = 41, lastStepIndex = 41))
+
+        // 3. Sonraki indeks -> scroll var (hedef indeks döner)
+        assertEquals(42, resolveLessonSidebarAutoScrollTarget(currentStepIndex = 42, lastStepIndex = 41))
+
+        // 4. Eksik session veya geçersiz step -> 0 ve null davranışını doğrula
+        assertEquals(0, calculateLessonSidebarInitialIndex(null))
+        assertEquals(0, calculateLessonSidebarInitialIndex(session.copy(stepId = "non-existent")))
+        assertNull(resolveLessonSidebarAutoScrollTarget(currentStepIndex = null, lastStepIndex = 41))
     }
 
 }

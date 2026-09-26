@@ -306,8 +306,9 @@ assert(t3AssessmentById.get("s232-veli-chart")?.content?.sections?.length === 5 
   t3AssessmentById.get("s234-q13")?.content?.items?.length === 8 &&
   Object.keys(t3AssessmentById.get("s234-q13")?.answer?.answer_sections ?? {}).length === 8,
   "Orhan Veli tablosu beş tema, Mustafa İnan tablosu sekiz satır içermeli.");
-assert(t3AssessmentById.get("s233-q10")?.answer?.answer_sections?.toplam === "13 puan" &&
-  t3AssessmentById.get("s233-q11")?.answer?.answer_sections?.dogru_olanlar?.length === 2,
+assert(t3AssessmentById.get("s233-q10")?.answer?.answer_sections?.["Toplam puan"] === "13 puan" &&
+  t3AssessmentById.get("s233-q11")?.answer?.answer_sections?.Tarafsızlık &&
+  t3AssessmentById.get("s233-q11")?.answer?.answer_sections?.Kronoloji,
   "Biyografi yarışması puanı ve düzeltilecek kavramlar korunmalı.");
 for (const id of ["s234-q14","s234-q15"]) {
   assert(t3AssessmentById.get(id)?.answer?.entry_type === "source_limited",
@@ -507,7 +508,7 @@ assert(huzur177ById.get("s177-source-photo")?.answer === null &&
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
   huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
   Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 3 &&
-  huzur177ById.get("s178-compare-task")?.answer?.answer.includes("şiir metni bulunmadığı") &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer.includes("karşılaştırmanın bu bölümü doğrulanamaz") &&
   huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("doğrulanmış PDF’de yoktur") &&
   !huzur177ById.get("s178-compare-task")?.answer?.evidence_quotes?.some(q => q.includes("İlk Kıblesi")) &&
   huzur177ById.get("s178-compare-task")?.answer?.source_locator?.includes("altı dörtlük"),
@@ -764,7 +765,7 @@ assert(Object.keys(huzur189ById.get("s191-spell")?.answer?.answer_sections??{}).
  huzur189ById.get("s191-spell")?.answer?.explanation?.includes("Şikâyet") &&
  huzur189ById.get("s191-research")?.answer?.entry_type==="performance_support" &&
  huzur189ById.get("s191-research")?.content?.items?.length===3 &&
- huzur189ById.get("s191-research")?.answer?.answer?.includes("1 haftalık"),
+ huzur189ById.get("s191-research")?.content?.lead?.includes("süre 1 hafta"),
  "s.191 beş yazım, şapka sınırı ve üç disiplinli 1 haftalık araştırma korunmalı.");
 assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===310 &&
  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===147 &&

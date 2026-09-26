@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import io.github.knigdelioglu.lessonplayer.player.LessonActionUiState
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -18,12 +19,15 @@ import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
 @Composable
 internal fun LessonActionStatus(
     state: LessonActionUiState,
-    retry: () -> Unit
+    retry: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     if (!state.busy && state.message == null) return
 
     Surface(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier
+            .fillMaxWidth()
+            .testTag("lesson-action-status"),
         color = if (state.isError) {
             MaterialTheme.colorScheme.errorContainer
         } else {

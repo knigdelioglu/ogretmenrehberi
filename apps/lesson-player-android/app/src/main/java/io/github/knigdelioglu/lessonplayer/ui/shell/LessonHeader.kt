@@ -15,12 +15,17 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.painterResource
+import io.github.knigdelioglu.lessonplayer.R
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
@@ -118,12 +123,15 @@ fun LessonV2Header(
     currentScreen: AppScreen,
     lesson: LessonData?,
     session: LessonSession?,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onToggleSidebar: (() -> Unit)? = null,
+    isSidebarOpen: Boolean = false
 ) {
     Surface(
         modifier = modifier
             .fillMaxWidth()
-            .heightIn(min = 68.dp),
+            .heightIn(min = 68.dp)
+            .testTag("lesson-v2-header"),
         color = LessonColors.Surface,
         border = BorderStroke(1.dp, LessonColors.Border)
     ) {
@@ -134,7 +142,26 @@ fun LessonV2Header(
             verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
         ) {
             // Ders başlığı; sınıf bağlamı sol menüde gösterilir.
-            Column(modifier = Modifier.fillMaxWidth()) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+            ) {
+                if (onToggleSidebar != null) {
+                    IconButton(
+                        onClick = onToggleSidebar,
+                        modifier = Modifier
+                            .size(36.dp)
+                            .testTag("lesson-outline-open")
+                    ) {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_lesson),
+                            contentDescription = if (isSidebarOpen) "Menüyü kapat" else "Menüyü aç",
+                            tint = LessonColors.TextPrimary,
+                            modifier = Modifier.size(20.dp)
+                        )
+                    }
+                }
                 Text(
                     text = if (currentScreen == AppScreen.LESSON && lesson != null) lesson.title else currentScreen.title,
                     style = MaterialTheme.typography.titleMedium.copy(
@@ -144,7 +171,8 @@ fun LessonV2Header(
                     color = LessonColors.TextPrimary,
                     fontWeight = FontWeight.Bold,
                     maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.weight(1f)
                 )
             }
 

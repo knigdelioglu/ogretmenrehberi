@@ -110,4 +110,22 @@ class LessonWindowLayoutTest {
         assertFalse(LessonShellLayoutContract.actionBarUsesLabels(599f, fontScale = 1f))
         assertFalse(LessonShellLayoutContract.actionBarUsesLabels(workspaceWidth, fontScale = 1.2f))
     }
+
+    @Test
+    fun hiddenSidebarTransfersVacatedWidthExclusivelyToWorkspace() {
+        val usableWidth = 1280f
+        val threeColumns = LessonShellLayoutContract.columnWidths(usableWidth)
+        val hiddenSidebar = LessonShellLayoutContract.hiddenSidebarColumnWidths(usableWidth)
+
+        // Teacher assist retains exact width and right-side allocation
+        assertEquals(threeColumns.teacherAssistDp, hiddenSidebar.teacherAssistDp, 0.001f)
+        assertEquals(281.6f, hiddenSidebar.teacherAssistDp, 0.1f)
+
+        // Workspace receives its original width plus sidebar's vacated width
+        assertEquals(threeColumns.workspaceDp + threeColumns.sidebarDp, hiddenSidebar.workspaceDp, 0.001f)
+        assertEquals(998.4f, hiddenSidebar.workspaceDp, 0.1f)
+
+        // Total width remains preserved
+        assertEquals(usableWidth, hiddenSidebar.workspaceDp + hiddenSidebar.teacherAssistDp, 0.001f)
+    }
 }

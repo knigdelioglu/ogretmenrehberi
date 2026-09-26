@@ -72,11 +72,24 @@ internal object LessonShellLayoutContract {
         val teacherAssistDp: Float
     )
 
+    data class HiddenSidebarColumnWidths(
+        val workspaceDp: Float,
+        val teacherAssistDp: Float
+    )
+
     fun columnWidths(usableWidthDp: Float): ColumnWidths {
         val totalWeight = SIDEBAR_WEIGHT + WORKSPACE_WEIGHT + TEACHER_ASSIST_WEIGHT
         return ColumnWidths(
             sidebarDp = usableWidthDp * SIDEBAR_WEIGHT / totalWeight,
             workspaceDp = usableWidthDp * WORKSPACE_WEIGHT / totalWeight,
+            teacherAssistDp = usableWidthDp * TEACHER_ASSIST_WEIGHT / totalWeight
+        )
+    }
+
+    fun hiddenSidebarColumnWidths(usableWidthDp: Float): HiddenSidebarColumnWidths {
+        val totalWeight = SIDEBAR_WEIGHT + WORKSPACE_WEIGHT + TEACHER_ASSIST_WEIGHT
+        return HiddenSidebarColumnWidths(
+            workspaceDp = usableWidthDp * (WORKSPACE_WEIGHT + SIDEBAR_WEIGHT) / totalWeight,
             teacherAssistDp = usableWidthDp * TEACHER_ASSIST_WEIGHT / totalWeight
         )
     }

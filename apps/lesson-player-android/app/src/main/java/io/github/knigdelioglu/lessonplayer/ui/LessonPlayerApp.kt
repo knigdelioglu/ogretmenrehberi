@@ -79,6 +79,7 @@ import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistDrawer
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonTeacherAssistSheet
 import io.github.knigdelioglu.lessonplayer.ui.lesson.LessonV2TeacherAssistPane
 import io.github.knigdelioglu.lessonplayer.ui.shell.ClassGroupDropdownSelector
+import io.github.knigdelioglu.lessonplayer.ui.shell.LessonSidebarColors
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Header
 import io.github.knigdelioglu.lessonplayer.ui.shell.LessonV2Sidebar
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
@@ -349,6 +350,7 @@ fun LessonPlayerApp() {
                 groupProgressSummaries = groupProgressSummaries,
                 onSelectClassGroup = sessionViewModel::selectClassGroup,
                 onAddNewClassGroup = { showAddClassGroupDialog = true },
+                onResumeClassGroup = sessionViewModel::resumeClassGroup,
                 presentationTextSize = presentationTextSize,
                 setPresentationTextSize = sessionViewModel::setPresentationTextSize,
                 navigate = { currentScreen = it },
@@ -392,6 +394,7 @@ internal fun LessonPlayerShell(
     groupProgressSummaries: Map<String, String>,
     onSelectClassGroup: (String) -> Unit,
     onAddNewClassGroup: () -> Unit,
+    onResumeClassGroup: (String) -> Unit = {},
     presentationTextSize: PresentationTextSize,
     setPresentationTextSize: (PresentationTextSize) -> Unit,
     navigate: (AppScreen) -> Unit,
@@ -405,6 +408,10 @@ internal fun LessonPlayerShell(
     beginExport: (String) -> Unit,
     beginImport: (String) -> Unit
 ) {
+    val activeGroupHasSavedProgress = remember(allGroupsProgress, classGroup.id) {
+        !allGroupsProgress[classGroup.id].isNullOrEmpty()
+    }
+
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val safeDrawing = WindowInsets.safeDrawing
         val layoutDirection = LocalLayoutDirection.current
@@ -455,16 +462,27 @@ internal fun LessonPlayerShell(
         } else if (isThreeColumn) {
             val currentLesson = effectiveLesson
             if (currentScreen == AppScreen.LESSON && currentLesson != null && currentStep != null) {
+                var isTabletLessonSidebarOpen by remember(currentScreen) { mutableStateOf(false) }
+
+                BackHandler(enabled = isTabletLessonSidebarOpen) {
+                    isTabletLessonSidebarOpen = false
+                }
+
                 ExpandedLessonLayout(
+                    isSidebarOpen = isTabletLessonSidebarOpen,
+                    onSidebarOpenChange = { isTabletLessonSidebarOpen = it },
                     sidebar = { sidebarModifier ->
                         LessonV2Sidebar(
                             currentScreen = currentScreen,
-                            onNavigate = navigate,
-                            onReturnToCurrent = { navigate(AppScreen.LESSON) },
+                            onNavigate = { dest ->
+                                isTabletLessonSidebarOpen = false
+                                navigate(dest)
+                            },
                             session = session,
                             lesson = currentLesson,
                             onSelectStep = { stepId ->
                                 dispatchAction(LessonCommand.GoToStep(stepId))
+                                isTabletLessonSidebarOpen = false
                             },
                             enabled = !actionState.busy,
                             activeClassGroup = classGroup,
@@ -472,6 +490,13 @@ internal fun LessonPlayerShell(
                             groupProgressSummaries = groupProgressSummaries,
                             onSelectClassGroup = onSelectClassGroup,
                             onAddNewClassGroup = onAddNewClassGroup,
+                            hasSavedProgress = activeGroupHasSavedProgress,
+                            onResumeClassGroup = { targetGroupId ->
+                                isTabletLessonSidebarOpen = false
+                                onResumeClassGroup(targetGroupId)
+                                navigate(AppScreen.LESSON)
+                            },
+                            colors = LessonSidebarColors.light(),
                             modifier = sidebarModifier
                         )
                     },
@@ -487,7 +512,11 @@ internal fun LessonPlayerShell(
                                     LessonV2Header(
                                         currentScreen = currentScreen,
                                         lesson = currentLesson,
-                                        session = session
+                                        session = session,
+                                        onToggleSidebar = {
+                                            isTabletLessonSidebarOpen = !isTabletLessonSidebarOpen
+                                        },
+                                        isSidebarOpen = isTabletLessonSidebarOpen
                                     )
                                 },
                                 isThreeColumn = true
@@ -514,7 +543,6 @@ internal fun LessonPlayerShell(
                     LessonV2Sidebar(
                         currentScreen = currentScreen,
                         onNavigate = navigate,
-                        onReturnToCurrent = { navigate(AppScreen.LESSON) },
                         session = session,
                         lesson = currentLesson,
                         onSelectStep = { stepId ->
@@ -526,9 +554,21 @@ internal fun LessonPlayerShell(
                         groupProgressSummaries = groupProgressSummaries,
                         onSelectClassGroup = onSelectClassGroup,
                         onAddNewClassGroup = onAddNewClassGroup,
+                        hasSavedProgress = activeGroupHasSavedProgress,
+                        onResumeClassGroup = { targetGroupId ->
+                            onResumeClassGroup(targetGroupId)
+                            navigate(AppScreen.LESSON)
+                        },
+                        colors = LessonSidebarColors.light(),
                         modifier = Modifier
                             .fillMaxHeight()
                             .weight(LessonShellLayoutContract.SIDEBAR_WEIGHT)
+                    )
+                    Box(
+                        modifier = Modifier
+                            .fillMaxHeight()
+                            .width(1.dp)
+                            .background(LessonColors.Border)
                     )
                     Column(
                         modifier = Modifier
