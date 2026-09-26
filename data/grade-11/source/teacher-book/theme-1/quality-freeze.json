@@ -5,7 +5,7 @@
   "grade": 11,
   "theme_id": "TEMA_01",
   "theme_title": "BİR DİYECEĞİM VAR!",
-  "freeze_date": "2026-09-24",
+  "freeze_date": "2026-09-26",
   "status": "FROZEN_REPO_QA",
   "scope": {
     "printed_page_range": "12-83",
@@ -15,7 +15,7 @@
     "source_records": 129,
     "verified_sources": 129,
     "answer_entries": 154,
-    "source_limited_entries": 14
+    "source_limited_entries": 15
   },
   "lesson_player": {
     "lessons": 7,
@@ -25,7 +25,7 @@
   },
   "ogretmenos": {
     "projection_contract": "OgretmenOS Generic Teacher Guide Runtime Contract v1",
-    "content_fingerprint": "sha256:8eed38e94eefab0fcf880dbd348e1f41edaa45aeca99e74edf24e6c57fb0e33b",
+    "content_fingerprint": "sha256:89e2b4bbd5ff20955a36bd8012cdebd6a7d331554f600daec1cc1665fe832a1f",
     "deterministic_build": true,
     "row_counts": {
       "canonical_entities": 284,
@@ -39,7 +39,7 @@
   "epub": {
     "answer_entries": 154,
     "semantic_parity_entries": 154,
-    "source_limited_entries": 14,
+    "source_limited_entries": 15,
     "block_ranges": [
       {
         "title": "Temaya Başlarken",

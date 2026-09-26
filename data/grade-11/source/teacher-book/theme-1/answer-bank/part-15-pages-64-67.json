@@ -146,13 +146,13 @@
       "printed_page": 66,
       "question_no": "4",
       "prompt_summary": "Çok modlu metnin konu ve temasını belirleme",
-      "answer": "Konu ve tema videonun gerçek içeriğine göre belirlenmelidir. Başlık ve etkinlik akışı yalnızca bir başlangıç çerçevesi verir; aşağıdaki ifadeler izleme sonrasında doğrulanabilecek örnek adaylardır.",
+      "answer": "Basılı sayfa soru ve QR yönlendirmesini verir, ancak çok modlu videonun içeriği PDF’de yer almaz. Bu nedenle videonun konu ve teması burada belirlenemez. İzleme sonrasında öğrenci konuyu videonun ele aldığı içerikten, temayı ise içerik boyunca desteklenen ana düşünceden çıkarmalıdır.",
       "answer_sections": {
-        "Aday Konu": "İletişim araçlarının değişimi ve bu değişimin insan hayatı ile iletişim alışkanlıklarına etkileri.",
-        "Aday Tema": "İletişim teknolojileri değişse de sağlıklı iletişimin insani ve etik boyutlarının önemini koruması.",
-        "Doğrulama Sorusu": "Video gerçekten hangi düşünceyi tekrar ediyor veya sonuç bölümünde öne çıkarıyor? Tema bu vurguya göre yeniden kurulmalıdır."
+        "Konu": "Videoda gerçekten ele alınan kişi, olay, kavram veya durum: [izleme kanıtına göre doldurun].",
+        "Tema": "Videonun bütününden çıkarılan temel düşünce: [en az iki gerçek içerik kanıtıyla gerekçelendirin].",
+        "Kanıt kontrolü": "Seçilen konu ve tema gerçekten görülen/duyulan video ayrıntılarına dayanıyor mu?"
       },
-      "guidance": "Konu ve temayı kitaptaki başlıktan tahmin edip bırakmayın. Öğrenciden videodan en az iki içerik kanıtı göstermesini ve temayı bu kanıtların ortak düşüncesi olarak kurmasını isteyin.",
+      "guidance": "Başlıktan hareketle videonun konusunu ya da temasını tahmin etmeyin. Öğrenciden izleme sonrası iki somut içerik kanıtı istemek, ardından temayı bu kanıtlarla ilişkilendirmek yeterlidir.",
       "source_locator": "basılı s.66 / PDF s.67; QR video gerekli"
     },
     {
@@ -256,7 +256,7 @@
           "Kendi cümleleriyle kısa ve tutarlı bir bütün oluşturma."
         ]
       },
-      "guidance": "Öğrencinin özetindeki her temel düşüncenin videodaki notlarına dayanmasını isteyin. Duman, güvercin, ulak gibi videoda doğrulanmamış örnekler rehber tarafından eklenmemelidir.",
+      "guidance": "Öğrencinin özetindeki her temel düşüncenin videodaki gerçek notlarına dayanmasını isteyin. Görseller, semboller veya ifadeler ancak videoda gerçekten görülüp duyulmuşsa özete alınmalıdır.",
       "source_locator": "basılı s.67 / PDF s.68; QR video gerekli"
     }
   ]

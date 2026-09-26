@@ -104,7 +104,7 @@
       "entry_type": "question_answer",
       "printed_page": 40,
       "question_no": "Çalışma Kâğıdı",
-      "prompt_summary": "Âli'ye Mektuplar metninin konu, ana düşünce, yardımcı düşünceler ve anlatım özelliklerini içeren çalışma kâğıdını tamamlama",
+      "prompt_summary": "Çalışma kâğıdında konu, ana düşünce, düşünceyi geliştirme yolları, yardımcı düşünceler, açık ve örtük iletiler, anlatım biçimleri sınıflandırmalarını tamamlama",
       "answer": "Mehmet Kaplan'ın mektubu; günlük yaşamını, edebiyat ve roman üzerine düşüncelerini, dostluk ve yalnızlık duygularını aktarırken özellikle çalışmanın ve cesaretin yeteneği geliştirdiği düşüncesini öne çıkarır. Metinde açıklayıcı, tartışmacı ve yer yer öyküleyici anlatım kullanılır; mektubun üslubu ise samimi ve sohbet havasındadır.",
       "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
       "answer_sections": {
@@ -173,7 +173,7 @@
       "printed_page": 41,
       "question_no": "Sıra Sizde",
       "prompt_summary": "Mehmet Kaplan'ın mektubundaki öznel ve nesnel ifadeleri belirleme ve türü belirlemedeki etkilerini değerlendirme",
-      "answer": "Mektuptaki ifadeler kişisel duygu ve edebî yorumları yansıtan öznel yargılar ile olgusal durumları bildiren nesnel yargılar olarak ayrılır. Mektubun türünü (özel/edebî mektup) belirlemede öznel ifadeler belirleyicidir; çünkü mektup yazarın iç dünyasını, şahsi izlenimlerini ve poetik tercihlerini muhatabına açtığı kişisel hayatı konu alan bir türdür.",
+      "answer": "Mektuptaki ifadeler kişisel duygu ve edebî yorumları yansıtan öznel yargılar ile doğrulanabilir durum ve bilgileri bildiren nesnel yargılar olarak ayrılabilir. Öznel ifadeler mektubun kişisel ve edebî yönünü, nesnel ifadeler ise tarih ve yaşam bağlamını görünür kılar. Bu ayrım tek başına türü belirlemez: özel/edebî mektup değerlendirmesinde muhatap ilişkisi, amaç, içerik ve edebî değer birlikte dikkate alınmalıdır.",
       "source_locator": "basılı s.41 / PDF s.42; ana metin s.37-38",
       "answer_sections": {
         "Öznel İfadeler": [
@@ -184,13 +184,13 @@
         ],
         "Nesnel İfadeler": [
           "“24 Haziran 940 İstanbul” (Somut tarih ve yer bilgisi)",
-          "“Fakülte’de imtihanlar başladı.” (Doğrulanabilir olgusal durum)",
-          "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim...” (Yapılan somut akademik faaliyet)",
-          "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.” (Planlanan doğrulanabilir seyahat)"
+          "“Fakülte’de imtihanlar başladı.” (Metinde bildirilen, dış kaynakla sınanabilir durum)",
+          "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim...” (Yazarın gerçekleştirdiğini bildirdiği akademik faaliyet)",
+          "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.” (Gerçekleştiği henüz doğrulanmayan seyahat planı/niyeti)"
         ],
-        "Türü belirlemedeki etki değerlendirmesi": "Nesnel ifadeler mektubun yazıldığı zamanı, mekânı ve somut hayat şartlarını belgelemesi açısından tarihî bir değer taşır. Ancak metni mektup türü kılan asıl ruh; yazarın içten duygularını, yalnızlığını, edebî zevkini ve dostuna duyduğu sevgiyi yansıtan öznel ifadelerdir. Bu nedenle türün mahiyetini öznel ifadeler tayin eder."
+        "Türü belirlemedeki etki değerlendirmesi": "Öznel ifadeler kişisel yaşantı ve edebî değerlendirme yönünü göstermede daha etkili olabilir; nesnel ifadeler tarihsel ve gündelik bağlamı destekler. Ancak ikisinden biri tek başına mektubun türünü tayin etmez. Tür değerlendirmesi muhatap, amaç, içerik ve edebî değer gibi ölçütlerle gerekçelendirilmelidir."
       },
-      "guidance": "Öğrencilerin öznel-nesnel ayrımını yaptıktan sonra 'öğretici / kişisel hayatı konu alan metin' bağlamında öznel anlatımın türsel işlevini gerekçelendirmeleri istenmelidir.",
+      "guidance": "Öğrencilerin öznel-nesnel ayrımını örneklerle yapmalarını, ardından bu ayrımın mektubun kişisel/edebî yönünü nasıl gösterdiğini tartışmalarını isteyin. “Öznel = edebî mektup” gibi tek başına sınıflandıran bir eşitleme kurmayın; başka gerekçeli değerlendirmeleri kabul edin.",
       "evidence_quotes": [
         "Karamazoflar romanı şimdiye kadar okuduklarıma hiç benzemiyor",
         "Bana Rus usulü daha derin ve psikolojik geliyor",

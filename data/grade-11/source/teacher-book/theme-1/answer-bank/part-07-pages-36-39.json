@@ -10,13 +10,13 @@
       "printed_page": 36,
       "question_no": "1",
       "prompt_summary": "Mektup kavramının çağrıştırdıkları ve günlük hayatla ilişkisi",
-      "answer": "Mektup; aradaki mesafeye rağmen duygu, düşünce, özlem ve haberleri muhatabına samimiyetle ulaştıran, zamana direnen kalıcı ve kişisel bir iletişim aracıdır. Günümüzde dijital mesajlar anlık ve hızlı olsa da mektup; el yazısı, harcanan zaman, özenli dil ve bıraktığı somut hatıra değeriyle çok daha derin ve düşünülmüş bir anlam taşır.",
+      "answer": "Mektup, aradaki mesafeye rağmen duygu, düşünce, özlem ve haberleri muhatabına ulaştırabilir. El yazısı, yazmaya ayrılan zaman ve saklanabilir fiziksel biçimi bazı kişiler için özel bir hatıra değeri taşıyabilir; dijital mesajlar ise hızlı ve pratik iletişim sağlar. Bu iki araçtan hangisinin daha anlamlı bulunduğu kişinin deneyimine ve kullanım amacına göre değişebilir.",
       "source_locator": "basılı s.36 / PDF s.37",
       "answer_sections": {
-        "Kavramsal anlam": "Uzaktaki bir kişiyle doğrudan, içten ve aracısız bir bağ kurma; iç dünyayı, sevinç ve hüzünleri söze dökme yolu.",
-        "Günlük hayatla ilişki ve kişisel örnek": "Günümüzde bayram tebriği, asker veya gurbet mektubu, sevilen bir dosta yazılan doğum günü mektubu ya da dedelerimizin sandıkta sakladığı sararmış zarflar gibi somut örnekler verilebilir. Anlık iletilerin aksine mektup, saklanan ve yıllar sonra yeniden okunabilen bir duygu arşividir."
+        "Kavramsal anlam": "Mektup, uzaktaki bir kişiyle duygu ve düşünce paylaşmanın yollarından biridir; değeri ve çağrışımları kişiye göre değişir.",
+        "Günlük hayatla ilişki ve kişisel örnek": "Bayram tebriği, asker veya gurbet mektubu, dosta yazılan doğum günü mektubu ya da ailede saklanan eski zarflar örnek verilebilir. Saklanan mektuplar yıllar sonra yeniden okunabilir; dijital iletiler de uygun biçimde arşivlenebilir."
       },
-      "guidance": "Soru öğrencinin kişisel deneyim ve gözlemlerine dayanmaktadır. Öğrencilerin hızlı dijital iletişim (SMS, e-posta, anlık mesaj) ile mektubun özenli, kalıcı ve duygusal yapısı arasındaki farkı vurgulamaları teşvik edilmelidir."
+      "guidance": "Soru öğrencinin kişisel deneyim ve gözlemlerine dayanır. Mektubun somut/hatıra değerini öne çıkaran yanıtlar kadar dijital iletişimin hızını, erişilebilirliğini veya kendi kullanım deneyimini öne çıkaran yanıtlar da gerekçeliyse kabul edilmelidir; paylaşılmayan kişisel deneyim zorunlu tutulmamalıdır."
     },
     {
       "question_id": "T1-P36-Q02",
@@ -105,7 +105,7 @@
       "printed_page": 39,
       "question_no": "1",
       "prompt_summary": "Bağlamdan hareketle seçili altı kelimenin anlam tahminleri ve TDK karşılıkları",
-      "answer": "Metindeki altı çizili kelimeler bağlam özellikleri ve TDK Güncel Türkçe Sözlük anlamlarıyla şöyle açıklanır:",
+      "answer": "Altı çizili kelimeler için metnin bağlamından yapılabilecek örnek anlam tahminleri şöyledir. Bunlar ilk tahminlerdir; QR ile açılan TDK sözlüğündeki karşılıklar öğrenci tarafından ayrıca kontrol edilmelidir:",
       "source_locator": "basılı s.39 / PDF s.40",
       "answer_sections": {
         "Umumiyetle": "Genellikle, çoğunlukla, genel olarak.",
@@ -145,23 +145,26 @@
     },
     {
       "question_id": "T1-P39-Q03",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 39,
       "question_no": "3",
       "prompt_summary": "Metindeki diğer dönemsel ve yabancı kökenli söz varlığını belirleme ve açıklama",
-      "answer": "Mektup metninde geçen diğer eski ve dönemsel sözcükler bağlam içindeki anlamlarıyla şöyle açıklanabilir:",
+      "answer": "Basılı mektupta görülen ve öğrenci tarafından anlamı araştırılabilecek örnek kelime/kelime grupları “tahfif etmek”, “mütemadî”, “müsamahakâr”, “takbih”, “inkişaf”, “sathî”, “hâlet-i ruhiye” ve “kani”dir. Soru, öğrencinin bilmediği sözcükleri seçip QR ile açılan TDK Güncel Türkçe Sözlük’ten öğrenmesini ister. QR hedefindeki sonuç burada incelenemediğinden bu kelimelerin sözlük karşılıkları doğrulanmış cevap olarak verilemez.",
       "source_locator": "basılı s.39 / PDF s.40",
       "answer_sections": {
-        "Tahfif etmek": "Hafifletmek, yükünü veya azabını azaltmak (bağlamda: 'vicdan azabımı tahfif edişini').",
-        "Mütemadî": "Sürekli, aralıksız, kesintisiz (bağlamda: 'Yalnızlığım mütemadî bir boşluk hâlinde').",
-        "Müsamahakâr": "Hoşgörülü, anlayışlı, toleranslı.",
-        "Takbih": "Kınama, ayıplama, beğenmeme.",
-        "İnkişaf": "Gelişme, açılma, serpilme (bağlamda: kabiliyetlerin inkişaf etmesi).",
-        "Sathî": "Yüzeysel, derine inmeyen (bağlamda: 'sathî bir samimiyet', 'vaka sathı').",
-        "Hâlet-i ruhiye": "Ruh hâli, psikolojik durum.",
-        "Kani": "İnanmış, kanaat getirmiş ('güzel şeyler verebileceğine kaniim')."
+        "Basılı metinde görülen adaylar": [
+          "tahfif etmek",
+          "mütemadî",
+          "müsamahakâr",
+          "takbih",
+          "inkişaf",
+          "sathî",
+          "hâlet-i ruhiye",
+          "kani"
+        ],
+        "Öğrenci çalışma adımı": "Önce anlamı bilinmeyen kelimeyi seçin; ardından QR ile açılan sözlükte arayın, bulduğunuz anlamı cümle bağlamıyla karşılaştırın ve gerekirse bulunamadı durumunu not edin."
       },
-      "guidance": "Öğrencilerin bu sözcükleri metnin cümle bağlamı içindeki kullanımından hareketle yorumlamaları ve sözlükten teyit etmeleri sağlanmalıdır."
+      "guidance": "Mektuptan gerçekten seçilen kelimeler ve TDK aramasında bulunan sonuçlar öğrencinin çalışmasına göre değişebilir. QR sonucu görülmeden belirli bir sözlük tanımı TDK’ye atfedilmemelidir."
     }
   ]
 }

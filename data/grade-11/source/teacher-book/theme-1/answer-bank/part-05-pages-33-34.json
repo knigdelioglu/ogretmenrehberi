@@ -50,7 +50,7 @@
       "printed_page": 34,
       "question_no": "8",
       "prompt_summary": "Yazıcı metninden alınan cümlelerdeki fiilimsilerin türleri ve kullanım işlevleri",
-      "answer": "Cümlelerdeki fiilimsiler türleri ve cümledeki işlevleriyle şöyle belirlenir: “yazılmış” sıfat-fiil olup niteleme sıfatı işlevindedir; “derken” zaman bildiren zarf-fiil, “çıkarak” durum bildiren zarf-fiil işlevindedir; “beklemek” amaç anlamı kuran isim-fiil (edat grubu) işlevindedir; “oturanlar” adlaşmış sıfat-fiil olup özne görevindedir; “sallandukça” eylemin yinelenerek sürdüğünü belirten zarf-fiil işlevindedir; “geçerken” ise zaman bildiren zarf-fiil işlevindedir.",
+      "answer": "Cümlelerdeki fiilimsiler türleri ve cümledeki işlevleriyle şöyle belirlenir: “yazılmış” sıfat-fiil olup niteleme işlevindedir; “derken” zaman bildiren, “çıkarak” durum bildiren zarf-fiildir; “beklemek” isim-fiil olup “için” edatıyla amaç anlamı kurar; “oturanlar” adlaşmış sıfat-fiil olarak özne görevindedir; beşinci cümlede “sallandukça” zarf-fiili iki kez kullanılmıştır; “geçerken” ise zaman bildiren zarf-fiildir.",
       "source_locator": "basılı s.34 / PDF s.35 — fiilimsiler soru 8",
       "answer_sections": {
         "1. Cümle (“yazılmış”)": {
@@ -71,12 +71,12 @@
         "4. Cümle (“oturanlar”)": {
           "Fiilimsi": "oturanlar (otur-an-lar)",
           "Türü": "Sıfat-fiil (-an / -en)",
-          "İşlevi": "Nitelediği “kişiler / kiracılar” ismi düştüğü için adlaşmış sıfat-fiil olmuştur; çoğul eki alarak cümlenin öznesi görevinde kullanılmıştır."
+          "İşlevi": "Nitelediği isim söylenmediği için adlaşmış sıfat-fiil olarak kullanılmış; çoğul eki alarak cümlenin öznesi görevini üstlenmiştir."
         },
         "5. Cümle (“sallandukça”)": {
-          "Fiilimsi": "sallandukça (sallan-dukça)",
-          "Türü": "Zarf-fiil (-dıkça / -dukça)",
-          "İşlevi": "Yüklemin bildirdiği sallanma eyleminin art arda tekrarlandığını ve devam ettiğini belirterek durum ve süreklilik bildirme işlevindedir."
+          "Fiilimsi": "sallandukça (sallan-dukça) — iki kullanım",
+          "Türü": "Her iki kullanım da zarf-fiildir (-dıkça / -dukça).",
+          "İşlevi": "“Gemi sallandukça sallandu, sallandukça sallandu.” cümlesinde sallanma eyleminin yinelendiğini ve sürdüğünü bildirir."
         },
         "6. Cümle (“geçerken”)": {
           "Fiilimsi": "geçerken (geç-er-ken)",
@@ -84,7 +84,7 @@
           "İşlevi": "Dövme eyleminin hangi zaman diliminde yapıldığını belirterek zaman bildirme işlevindedir."
         }
       },
-      "guidance": "İkinci cümlede iki ayrı fiilimsi ('derken' ve 'çıkarak') bulunmaktadır; her ikisinin de tür ve işlev yönünden belirtilmesi gerekir. 'Oturanlar' sözcüğünün adlaşmış sıfat-fiil olduğu ve cümlenin öznesi görevini üstlendiği mutlaka vurgulanmalıdır.",
+      "guidance": "İkinci cümlede iki ayrı fiilimsi (“derken” ve “çıkarak”) vardır. Beşinci cümlede “sallandukça” iki kez geçtiğinden iki kullanımı da işaretleyip aynı tür ve işlevde olduklarını belirtmek gerekir. “Oturanlar”ın adlaşmış sıfat-fiil olarak özne görevinde kullanıldığı da vurgulanmalıdır.",
       "evidence_quotes": [
         "Beyâz üzre yazılmış elde bir fermânımız vardır.",
         "Derken, bilâder can sıkıntısıyle evden çıkarak ver elini Zeyrek!",
