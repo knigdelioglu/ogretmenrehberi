@@ -30,8 +30,8 @@
       "entry_type": "question_answer",
       "printed_page": 40,
       "question_no": "2",
-      "prompt_summary": "Roman düşüncelerinin mektupta yer almasının mektup türünün işlevine yönelik düşündürdükleri",
-      "answer": "Mektupta roman ve roman tekniği üzerine düşüncelerin yer alması, mektubun kişisel haberleşmenin yanı sıra edebî düşünce paylaşımına da alan açabildiğini gösterir. Bu mektup, Kaplan’ın kendi görüşlerini ve yazışma bağlamını anlamak için kaynak olabilir; tek başına dönemin bütün edebiyat anlayışını temsil etmez.",
+      "prompt_summary": "Roman düşüncelerinin mektupta yer almasının mektubun işlevi ve edebî niteliğine yönelik düşündürdükleri",
+      "answer": "Mektupta roman ve roman tekniği üzerine düşüncelerin yer alması, mektubun yalnızca kişisel haberleşme aracı olmadığını; edebiyat, sanat ve düşünceyle ilgili görüşlerin de paylaşılabildiğini gösterir. Bu özellik metne edebî mektup niteliği kazandırır.",
       "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
       "answer_sections": {
         "Kişisel haberleşme": {
@@ -39,15 +39,21 @@
           "Metin kanıtı": "“Zaten seninle konuşmaya da ihtiyacım var.”"
         },
         "Edebî ve düşünsel paylaşım": {
-          "Açıklama": "Kaplan, roman okumasını yazma isteğiyle ve roman tekniğine ilişkin yorumlarıyla ilişkilendirir.",
-          "Metin kanıtı": "“Bu roman bende yine roman yazmak arzusunu canlandırdı.” “Bana Rus usulü daha derin ve psikolojik geliyor.”"
+          "Açıklama": "Kaplan yalnız gündelik hayatından söz etmez; okuduğu romanları, roman tekniğini ve kendi edebiyat görüşlerini de muhatabıyla paylaşır.",
+          "Metin kanıtı": "“Bu roman bende yine roman yazmak arzusunu canlandırdı.” “ben bu hâle mazi koridoru diyorum.” “Bana Rus usulü daha derin ve psikolojik geliyor.”"
         },
-        "Mektubun kaynak değeri ve sınırları": {
-          "Açıklama": "Mektup, Kaplan’ın edebiyat görüşlerini ve yazışma bağlamını gösteren birincil kaynaktır. Tek bir kişinin görüşü dönemin bütün edebiyat anlayışını temsil etmez; çıkarımlar metindeki ifadelerle sınırlı tutulmalıdır.",
-          "Metin kanıtı": "“ben bu hâle mazi koridoru diyorum.”"
+        "Edebî mektup niteliği": {
+          "Açıklama": "Kişisel yazışmanın içinde edebiyat ve sanat üzerine ayrıntılı düşüncelerin paylaşılması, metnin yalnız haberleşme işlevi taşımadığını ve edebî mektup özelliği gösterdiğini ortaya koyar.",
+          "Metin kanıtı": "Kaplan’ın Dostoyevski ve Stendhal’i karşılaştırması, “mazi koridoru” kavramını kullanması ve roman yazma isteğini açıklaması."
         }
       },
-      "guidance": "Öğrencilerden kişisel haberleşme ve edebî düşünce paylaşımına ilişkin çıkarımlarını ayrı ayrı yazmalarını ve her birini metinden kısa bir alıntıyla desteklemelerini isteyin. Mektubun kaynak olarak neleri gösterebileceğini ve tek başına neleri kanıtlayamayacağını tartıştırın."
+      "guidance": "Öğrencilerden önce mektubun kişisel haberleşme yönünü, ardından roman ve roman tekniği üzerine görüşlerin mektuba kattığı edebî niteliği metinden kanıtlarla açıklamalarını isteyin. Cevabın odağını kaynak eleştirisine kaydırmayın; kişisel yazışma → edebî düşünce paylaşımı → edebî mektup niteliği bağlantısını kurdurun.",
+      "evidence_quotes": [
+        "Zaten seninle konuşmaya da ihtiyacım var",
+        "Bu roman bende yine roman yazmak arzusunu canlandırdı",
+        "ben bu hâle mazi koridoru diyorum",
+        "Bana Rus usulü daha derin ve psikolojik geliyor"
+      ]
     },
     {
       "question_id": "T1-P40-Q03",
