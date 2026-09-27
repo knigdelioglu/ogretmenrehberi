@@ -810,6 +810,13 @@ button:focus-visible {
   color: #fff;
 }
 
+.presentation-mode,
+.external-display {
+  /* Presentation/PPTX runs on a 16:9 canvas. Keep a small safe margin, but
+     do not inherit the narrow reading-column width used by the editor. */
+  --presentation-content-max: 1680px;
+}
+
 .presentation-mode {
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 1fr;
@@ -867,7 +874,8 @@ button:focus-visible {
 }
 
 .presentation-mode .stage-card {
-  max-width: 1180px;
+  width: 100%;
+  max-width: var(--presentation-content-max);
   padding: clamp(34px, 5vw, 68px);
 }
 
@@ -877,13 +885,15 @@ button:focus-visible {
 }
 
 .presentation-mode .stage-meta {
-  max-width: 1180px;
+  width: 100%;
+  max-width: var(--presentation-content-max);
   font-size: 0.96rem;
 }
 
 .presentation-mode .stage-layout,
 .external-display .stage-layout {
-  max-width: 1180px;
+  width: 100%;
+  max-width: var(--presentation-content-max);
 }
 
 .presentation-mode .lead,
@@ -1247,7 +1257,7 @@ button:focus-visible {
 .external-display .stage-card,
 .external-display .stage-meta {
   width: 100%;
-  max-width: 1180px;
+  max-width: var(--presentation-content-max);
 }
 
 .external-display .stage-card {
@@ -2320,6 +2330,20 @@ button:focus-visible {
   }
 }
 
+/* Wide 16:9 mode should spend horizontal space before reducing type.
+   These overrides also feed the isolated 1920x1080 PPTX renderer. */
+.presentation-mode .question-swap__content h1,
+.external-display .question-swap__content h1,
+.presentation-mode .stage-card > h1,
+.external-display .stage-card > h1 {
+  max-width: 36ch;
+}
+
+.presentation-mode .inline-answer__text,
+.external-display .inline-answer__text {
+  max-width: 56ch;
+}
+
 /* Export fit steps after the shared compact StepView preset still overflows. */
 .export-fit-tight .presentation-mode .lesson-stage {
   padding: 30px 44px;
@@ -2327,7 +2351,7 @@ button:focus-visible {
 
 .export-fit-tight .presentation-mode .stage-layout,
 .export-fit-tight .presentation-mode .stage-card {
-  max-width: 1600px;
+  max-width: 1760px;
 }
 
 .export-fit-tight .stage-card.density-compact {
