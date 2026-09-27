@@ -699,6 +699,17 @@ export default function App() {
         onExportPptx={() => setPptxExportOpen(true)}
       />
 
+      {presentationMode && !displayOnly ? (
+        <button
+          id="presentation-pptx-export-trigger"
+          className="presentation-pptx-export-trigger"
+          type="button"
+          onClick={() => setPptxExportOpen(true)}
+        >
+          Dışa aktar · PPTX
+        </button>
+      ) : null}
+
       {teacherGuideOpen && !presentationMode && !displayOnly ? (
         <div id="teacher-guide-panel">
           <TeacherGuidePanel

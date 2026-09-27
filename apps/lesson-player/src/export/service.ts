@@ -1,6 +1,7 @@
 import { createPresentationAssembler } from "./assembler";
 import { downloadBlob, pptxFileName } from "./download";
 import type {
+  CapturedSlide,
   ExportConfiguration,
   ExportProgress,
   PlannedSlide
@@ -13,7 +14,7 @@ export async function createAndDownloadPresentation(
     slide: PlannedSlide,
     pixelRatio: number,
     signal: AbortSignal
-  ) => Promise<string>,
+  ) => Promise<CapturedSlide>,
   onProgress: (progress: ExportProgress) => void,
   signal: AbortSignal
 ): Promise<string> {
@@ -29,7 +30,7 @@ export async function createAndDownloadPresentation(
     if (signal.aborted) {
       throw new DOMException("Dışa aktarma iptal edildi.", "AbortError");
     }
-    assembler.add(slide, image);
+    assembler.add(slide, image.dataUrl, image.fitAdjustment);
     onProgress({ completed: slide.slideNumber, total: slides.length, slide });
   }
 

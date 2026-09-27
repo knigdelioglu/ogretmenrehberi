@@ -1,5 +1,5 @@
 import PptxGenJS from "pptxgenjs";
-import type { PlannedSlide } from "./types";
+import type { ExportFitAdjustment, PlannedSlide } from "./types";
 
 const slideWidth = 13.333;
 const slideHeight = 7.5;
@@ -18,7 +18,7 @@ export function createPresentationAssembler() {
   presentation.company = "Öğretmen Rehberi";
 
   return {
-    add(slide: PlannedSlide, dataUrl: string) {
+    add(slide: PlannedSlide, dataUrl: string, fitAdjustment: ExportFitAdjustment) {
       const pptSlide = presentation.addSlide();
       pptSlide.background = { color: "F3EFE5" };
       pptSlide.addImage({
@@ -36,6 +36,8 @@ export function createPresentationAssembler() {
         `reveal_stage: ${slide.revealLabel}`,
         `reveal_keys: ${slide.revealStage.join(" → ") || "başlangıç"}`,
         `view: ${slide.view}`,
+        `source_density: ${slide.step.density}`,
+        `fit_adjustment: ${fitAdjustment}`,
         `slide_number: ${slide.slideNumber}`
       ].join("\n"));
     },

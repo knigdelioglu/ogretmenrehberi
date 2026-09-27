@@ -1,4 +1,4 @@
-import type { PlannedSlide } from "./types";
+import type { CapturedSlide, PlannedSlide } from "./types";
 
 const renderTimeoutMs = 120_000;
 
@@ -41,7 +41,7 @@ export async function capturePlannedSlide(
   slide: PlannedSlide,
   pixelRatio: number,
   signal: AbortSignal
-): Promise<string> {
+): Promise<CapturedSlide> {
   await waitForRenderSurface(frame, signal);
 
   const requestId = crypto.randomUUID();
@@ -76,11 +76,17 @@ export async function capturePlannedSlide(
 
       if (event.data.type === "lesson-player-export-rendered") {
         cleanup();
-        resolve(event.data.dataUrl as string);
+        resolve({
+          dataUrl: event.data.dataUrl as string,
+          fitAdjustment: event.data.fitAdjustment === "compact" ? "compact" : "none"
+        });
       } else if (event.data.type === "lesson-player-export-render-error") {
         cleanup();
+        const fitSuffix = event.data.fitAdjustment === "compact"
+          ? " Kompakt yoğunlukta yeniden denendi."
+          : "";
         const issue = event.data.overflow
-          ? `Taşma algılandı: ${slide.lessonId} / ${slide.stepId} / ${slide.revealLabel} (${event.data.overflow.vertical}px dikey, ${event.data.overflow.horizontal}px yatay). İçerik slayta sığmıyor.`
+          ? `Taşma algılandı: ${slide.lessonId} / ${slide.stepId} / ${slide.revealLabel} (${event.data.overflow.vertical}px dikey, ${event.data.overflow.horizontal}px yatay). İçerik slayta sığmıyor.${fitSuffix}`
           : `Slayt ${slide.slideNumber} görsele dönüştürülemedi: ${event.data.error}`;
         reject(new Error(issue));
       }

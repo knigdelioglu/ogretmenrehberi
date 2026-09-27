@@ -6,12 +6,14 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { setTimeout as sleep } from "node:timers/promises";
+import { planExportSlides } from "../src/export/plan.js";
 
 const packageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const chrome = process.env.CHROME ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const port = Number(process.env.PPTX_TEST_PORT ?? 4179);
 const appUrl = process.env.LESSON_PLAYER_TEST_URL ?? `http://127.0.0.1:${port}`;
 const snapshotPath = path.join(packageRoot, "scripts/fixtures/pptx-export-comparison-visual.json");
+const lessons = JSON.parse(fs.readFileSync(path.join(packageRoot, "src/generated/lessons.json"), "utf8"));
 const profilePath = fs.mkdtempSync(path.join(os.tmpdir(), "lesson-player-pptx-cdp-"));
 const downloadPath = fs.mkdtempSync(path.join(os.tmpdir(), "lesson-player-pptx-download-"));
 const vite = spawn(process.execPath, [
@@ -305,8 +307,35 @@ try {
   assert.deepEqual([signature.width, signature.height], [1920, 1080], "standard screenshot has fixed 16:9 dimensions");
   const highResolutionImage = await renderInPage(page, studentSlide, 2);
   assert.equal(highResolutionImage.type, "lesson-player-export-rendered", "high-resolution screenshot succeeds");
+  assert.equal(highResolutionImage.fitAdjustment, "none", "normal comparison fixture keeps its source density");
   const highResolutionSignature = await imageSignature(page, highResolutionImage.dataUrl);
   assert.deepEqual([highResolutionSignature.width, highResolutionSignature.height], [3840, 2160], "high-quality screenshot is 4K 16:9");
+
+  const mektup = lessons.find((item) => item.lesson_id === "T11-T01-MEKTUP");
+  const longPromptSlides = planExportSlides([mektup], {
+    scope: "selected-steps",
+    currentLessonId: mektup.lesson_id,
+    currentStepId: "s36-q3",
+    selectedStepIds: ["s36-q3"],
+    view: "student",
+    revealMode: "stages",
+    quality: "high"
+  });
+  const longPromptRender = await renderInPage(page, longPromptSlides[0], 2);
+  assert.equal(longPromptRender.type, "lesson-player-export-rendered", "real long-prompt slide fits the export viewport");
+  assert.equal(longPromptRender.fitAdjustment, "compact", "only an overflowing slide retries at the renderer's compact density");
+  const compactLayout = await page.evaluate(`(() => {
+    const stage = document.querySelector(".lesson-stage");
+    const card = document.querySelector(".stage-card");
+    return {
+      verticalOverflow: stage ? stage.scrollHeight - stage.clientHeight : -1,
+      horizontalOverflow: stage ? stage.scrollWidth - stage.clientWidth : -1,
+      density: [...(card?.classList ?? [])].find((value) => value.startsWith("density-"))
+    };
+  })()`);
+  assert.equal(compactLayout.density, "density-compact", "fallback uses StepView's existing compact density preset");
+  assert.ok(compactLayout.verticalOverflow <= 1 && compactLayout.horizontalOverflow <= 1, "compact retry has no clipped content");
+
   const expectedSnapshot = JSON.parse(fs.readFileSync(snapshotPath, "utf8"));
   if (process.env.UPDATE_PPTX_VISUAL_SNAPSHOT === "1") {
     fs.writeFileSync(snapshotPath, `${JSON.stringify({
@@ -375,6 +404,37 @@ try {
   assert.equal(overflowResult.type, "lesson-player-export-render-error", "overflow is a visible export error");
   assert.ok(overflowResult.overflow?.vertical > 0, "overflow error reports measured vertical overflow");
 
+  await page.evaluate(`localStorage.setItem("ogretmenrehberi.lesson.T11-T01-KARAGOZ.projection", "true")`);
+  await page.send("Page.navigate", {
+    url: `${appUrl}/?lesson=T11-T01-KARAGOZ&step=s28-q1`
+  });
+  await until(
+    () => page.evaluate("document.getElementById('presentation-pptx-export-trigger')?.textContent?.includes('Dışa aktar')"),
+    "PowerPoint action in the direct presentation view"
+  );
+  assert.equal(
+    await page.evaluate("getComputedStyle(document.querySelector('.topbar')).display"),
+    "none",
+    "presentation-mode keeps the normal toolbar hidden"
+  );
+  await page.evaluate("document.getElementById('presentation-pptx-export-trigger').click()");
+  await until(() => page.evaluate("document.querySelector('.pptx-export-dialog')?.open"), "presentation-view PowerPoint options");
+  await page.evaluate("document.querySelector('.pptx-export-dialog__close').click()");
+
+  await page.send("Page.navigate", {
+    url: `${appUrl}/?display=1&lesson=T11-T01-KARAGOZ&step=s28-q1`
+  });
+  await until(
+    () => page.evaluate("Boolean(document.querySelector('.app-shell.external-display'))"),
+    "isolated student projection view"
+  );
+  assert.equal(
+    await page.evaluate("Boolean(document.getElementById('presentation-pptx-export-trigger'))"),
+    false,
+    "the synchronized external student projection does not show an export control"
+  );
+
+  await page.evaluate(`localStorage.removeItem("ogretmenrehberi.lesson.T11-T01-KARAGOZ.projection")`);
   await page.send("Page.navigate", {
     url: `${appUrl}/?lesson=T11-T01-KARAGOZ&step=s28-q1`
   });
@@ -462,6 +522,65 @@ try {
   assert.ok(size, "PowerPoint declares a custom 16:9 slide size");
   const ratio = Number(size[1]) / Number(size[2]);
   assert.ok(Math.abs(ratio - 16 / 9) < 0.001, "PowerPoint page size is 16:9");
+
+  if (process.env.PPTX_TEST_FULL_LESSON === "1") {
+    const previousFiles = new Set(fs.readdirSync(downloadPath).filter((name) => name.endsWith(".pptx")));
+    await page.send("Page.navigate", {
+      url: `${appUrl}/?lesson=T11-T01-MEKTUP&step=s36-q3`
+    });
+    await until(
+      () => page.evaluate("document.getElementById('pptx-export-trigger')?.textContent?.includes('Dışa aktar')"),
+      "full Mektup lesson toolbar"
+    );
+    await page.evaluate("document.getElementById('pptx-export-trigger').click()");
+    await until(() => page.evaluate("document.querySelector('.pptx-export-dialog')?.open"), "full Mektup export options");
+    await page.evaluate("document.querySelector('input[name=\"pptx-reveal\"][value=\"stages\"]').click()");
+    assert.ok(
+      await page.evaluate("document.querySelector('.pptx-export-estimate')?.textContent?.includes('103 slayt')"),
+      "Mektup lesson reveal plan matches the user's 103-slide export"
+    );
+    await page.evaluate("document.querySelector('.pptx-export-primary').click()");
+
+    const fullLessonDownload = await until(async () => {
+      const file = fs.readdirSync(downloadPath)
+        .find((name) => name.endsWith(".pptx") && !previousFiles.has(name));
+      if (file) {
+        const target = path.join(downloadPath, file);
+        if (fs.existsSync(target) && fs.statSync(target).size > 0) return { file: target };
+      }
+      const exportError = await page.evaluate("document.querySelector('.pptx-export-error')?.textContent ?? ''");
+      return exportError ? { error: exportError } : null;
+    }, "full 103-slide Mektup export", 300_000);
+    if (fullLessonDownload.error) throw new Error(`Full Mektup export failed: ${fullLessonDownload.error}`);
+    await until(
+      () => page.evaluate("document.querySelector('.pptx-export-status')?.textContent?.includes('indirme listesine eklendi')"),
+      "full Mektup export success state",
+      300_000
+    );
+
+    const fullLessonEntries = runUnzip(["-Z1", fullLessonDownload.file]).split(/\r?\n/).filter(Boolean);
+    const fullLessonSlides = fullLessonEntries.filter((name) => /^ppt\/slides\/slide\d+\.xml$/.test(name));
+    assert.equal(fullLessonSlides.length, 103, "full Mektup PPTX contains all planned reveal states");
+    let compactFitNotes = 0;
+    for (let index = 1; index <= fullLessonSlides.length; index += 1) {
+      const slideXml = runUnzip(["-p", fullLessonDownload.file, `ppt/slides/slide${index}.xml`]);
+      assert.ok(!slideXml.includes("<p:timing"), `Mektup slide ${index} has no PowerPoint animation`);
+      const notePath = `ppt/notesSlides/notesSlide${index}.xml`;
+      if (fullLessonEntries.includes(notePath)) {
+        const notesXml = runUnzip(["-p", fullLessonDownload.file, notePath]);
+        if (notesXml.includes("step_id: s36-q3") && notesXml.includes("fit_adjustment: compact")) {
+          compactFitNotes += 1;
+        }
+      }
+    }
+    assert.ok(compactFitNotes > 0, "speaker notes identify the compact retry for the overflowing source step");
+    if (process.env.PPTX_FULL_LESSON_OUTPUT) {
+      const requestedOutput = path.resolve(process.env.PPTX_FULL_LESSON_OUTPUT);
+      fs.mkdirSync(path.dirname(requestedOutput), { recursive: true });
+      fs.copyFileSync(fullLessonDownload.file, requestedOutput);
+    }
+    console.log(`Full Mektup export passed: ${fullLessonSlides.length} reveal slides; compact-fit trace on ${compactFitNotes} s36-q3 slide(s).`);
+  }
 
   console.log(`PPTX export browser checks passed: ${slidePaths.length} real slides, reveal order and metadata verified; download: ${path.basename(downloadedPath)}${process.env.PPTX_TEST_OUTPUT ? `; sample: ${path.resolve(process.env.PPTX_TEST_OUTPUT)}` : ""}`);
 } finally {

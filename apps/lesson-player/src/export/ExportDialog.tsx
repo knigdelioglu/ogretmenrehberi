@@ -101,6 +101,7 @@ export function ExportDialog({
       if (exportError.name === "AbortError") {
         setMessage("Dışa aktarma iptal edildi.");
       } else {
+        setProgress(null);
         setError(exportError.message);
         setMessage(null);
       }

@@ -4,6 +4,12 @@ export type ExportScope = "current-lesson" | "selected-steps" | "theme";
 export type ExportView = "student" | "teacher";
 export type ExportRevealMode = "final" | "stages";
 export type ExportQuality = "high" | "standard";
+export type ExportFitAdjustment = "none" | "compact";
+
+export interface CapturedSlide {
+  dataUrl: string;
+  fitAdjustment: ExportFitAdjustment;
+}
 
 export type ExportLesson = Omit<LessonData, "steps"> & {
   steps: LessonStep[];

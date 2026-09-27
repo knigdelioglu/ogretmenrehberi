@@ -15,6 +15,7 @@ const noOp = () => undefined;
 
 export function ExportRenderPage() {
   const [request, setRequest] = useState<RenderRequest | null>(null);
+  const [compactFitRequestId, setCompactFitRequestId] = useState<string | null>(null);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -28,6 +29,7 @@ export function ExportRenderPage() {
       if (!next.requestId || !next.slide?.step || ![1, 2].includes(next.pixelRatio)) {
         return;
       }
+      setCompactFitRequestId(null);
       setRequest(next);
     };
 
@@ -39,6 +41,7 @@ export function ExportRenderPage() {
   useLayoutEffect(() => {
     if (!request) return;
     let cancelled = false;
+    const compactFit = compactFitRequestId === request.requestId;
 
     const render = async () => {
       try {
@@ -56,11 +59,17 @@ export function ExportRenderPage() {
         const vertical = Math.max(0, stage.scrollHeight - stage.clientHeight);
         const horizontal = Math.max(0, stage.scrollWidth - stage.clientWidth);
         if (vertical > 1 || horizontal > 1) {
+          if (!compactFit && request.slide.step.density !== "compact") {
+            setCompactFitRequestId(request.requestId);
+            return;
+          }
+
           window.parent.postMessage(
             {
               type: "lesson-player-export-render-error",
               requestId: request.requestId,
-              overflow: { vertical, horizontal }
+              overflow: { vertical, horizontal },
+              fitAdjustment: compactFit ? "compact" : "none"
             },
             window.location.origin
           );
@@ -81,7 +90,8 @@ export function ExportRenderPage() {
           {
             type: "lesson-player-export-rendered",
             requestId: request.requestId,
-            dataUrl
+            dataUrl,
+            fitAdjustment: compactFit ? "compact" : "none"
           },
           window.location.origin
         );
@@ -102,9 +112,15 @@ export function ExportRenderPage() {
     return () => {
       cancelled = true;
     };
-  }, [request]);
+  }, [compactFitRequestId, request]);
 
   const slide = request?.slide;
+  const fitAdjustment =
+    request && compactFitRequestId === request.requestId ? "compact" : "none";
+  const renderedStep =
+    slide && fitAdjustment === "compact"
+      ? { ...slide.step, density: "compact" as const }
+      : slide?.step;
 
   return (
     <div
@@ -117,12 +133,13 @@ export function ExportRenderPage() {
       data-printed-page={slide?.printedPage}
       data-reveal-stage={slide?.revealStage.join(",")}
       data-view={slide?.view}
+      data-fit-adjustment={fitAdjustment}
     >
       {slide ? (
         <div className="app-shell presentation-mode external-display export-render-app">
           <div className="content-column">
             <StepView
-              step={slide.step}
+              step={renderedStep!}
               themeId={slide.themeId}
               revealed={new Set(slide.revealStage)}
               toggle={noOp}
