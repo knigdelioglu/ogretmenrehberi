@@ -129,7 +129,7 @@ Ayrı **Öğrenci ekranı** penceresinde kalem/ampul kontrol ikonları gösteril
 - Her slaydın konuşmacı notlarında `lesson_id`, `step_id`, basılı sayfa, görünüm ve reveal aşaması bulunur.
 - Render alanı 16:9 yüksekliğine sığmayan içeriği kırpmadan dışa aktarma hatası olarak bildirir; hata ilgili ders adımını ve taşma ölçüsünü içerir.
 
-Tarayıcı testi için `npm run test:pptx-export` kullanılır. Test yerel Vite preview ve Chromium/Chrome başlatır; farklı kurulumlarda `CHROME` değişkeni yürütülebilir dosya yolunu belirler. Test; öğrenci/öğretmen görünürlüğünü, comparison/tablo benzeri answer section ve sözlük yerleşiminin görsel baseline'ını, taşma hatasını ve gerçek bir ders üzerinden PPTX slayt sırası/metaverisini doğrular.
+Tarayıcı testi için `npm run test:pptx-export` kullanılır. Test yerel Vite preview ve Chromium/Chrome başlatır; farklı kurulumlarda `CHROME` değişkeni yürütülebilir dosya yolunu belirler. Test; öğrenci/öğretmen görünürlüğünü, comparison/tablo benzeri answer section ve sözlük yerleşiminin 16:9 genişlik geometrisini, taşma/fit davranışını ve gerçek bir ders üzerinden PPTX slayt sırası/metaverisini doğrular.
 
 ## Düzenleme modu
 
