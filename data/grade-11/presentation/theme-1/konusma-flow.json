@@ -201,18 +201,18 @@
       "source_record_id": "T01-S0063",
       "layout": "reference",
       "density": "large",
-      "prompt": "Akran ve öğretmen geri bildirimini tamamlayın.",
+      "prompt": "Sınıf arkadaşlarınızın çalışmasına geri bildirim verin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir grup arkadaşınızın çalışmasını kitapta verilen Akran Değerlendirme Formu ile değerlendirin.",
+        "lead": "Bir grubun çalışmasını kitapta verilen Akran Değerlendirme Formu'nu kullanarak değerlendirin.",
         "sections": [
           {
-            "title": "Öğretmen değerlendirmesi",
-            "body": "Çalışma; konu seçimi, içerik uygunluğu, özgünlük, dil ve üslup, plan ve canlandırma becerisi gibi ölçütlerle dereceli puanlama anahtarı üzerinden değerlendirilir."
+            "title": "Çalışmayı değerlendirirken",
+            "body": "Konu seçimi, içerik uygunluğu, özgünlük, dil ve üslup, plan ve canlandırma becerisi gibi ölçütleri göz önünde bulundurun. Ayrıntılı puanlama ve akran değerlendirme formlarına karekod bağlantısından erişin."
           },
           {
             "title": "Sonraki adım",
-            "body": "Öz, akran ve öğretmen geri bildirimlerinde belirlenen eksikleri tamamlayın; sonraki çalışmalarda aynı hataları tekrar etmemek için hedef belirleyin."
+            "body": "Öz, akran ve öğretmen geri bildirimlerinde belirlediğiniz eksikleri tamamlayın; sonraki çalışmanız için somut bir hedef belirleyin."
           }
         ],
         "note": "Akran Değerlendirme Formu ve Dereceli Puanlama Anahtarı kitabın QR bağlantılarındadır; içerikleri kaynakta görünmediği için uygulama burada bu formları yeniden üretmez."

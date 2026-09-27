@@ -368,7 +368,7 @@ assert(
   speaking2ById.get("s135-reference")?.answer === null &&
     speaking2ById.get("s135-reference")?.source?.source_record_id === "T02-S0115" &&
     speaking2ById.get("s135-reference")?.content?.sections?.some(
-      (section) => section.title === "Kaynak sınırı"
+      (section) => section.title === "Karekod formları"
     ),
   "s.135 QR dereceli/akran formları görünmeyen ayrıntılar uydurulmadan referans ekranında kalmalı."
 );
@@ -463,7 +463,7 @@ assert(
     (museumById.get("s153-self-2")?.content?.items?.length ?? 0) === 10 &&
     museumById.get("s153-rubric")?.answer === null &&
     museumById.get("s153-rubric")?.content?.sections?.some(
-      (section) => section.title === "Kaynak sınırı"
+      (section) => section.title === "Karekod formları"
     ),
   "s.153 öz değerlendirme 10 ölçüt içermeli; QR formları kaynak görülmeden uydurulmamalı."
 );

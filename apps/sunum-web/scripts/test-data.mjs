@@ -27,6 +27,8 @@ const catalog = JSON.parse(zlib.gunzipSync(Buffer.concat([decipher.update(body),
 
 const canonical = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
 assert.equal(catalog.lessons.length, canonical.length, "ders sayısı");
+let themeOneSteps = 0;
+let otherThemeSupportLayers = 0;
 for (const [i, lesson] of canonical.entries()) {
   const out = catalog.lessons[i];
   assert.equal(out.slug, lesson.lesson_slug);
@@ -37,7 +39,18 @@ for (const [i, lesson] of canonical.entries()) {
     assert.equal(s.prompt, step.display_prompt);
     assert.ok(!s.reveals.includes("note"), "öğretmen notu sunuma sızmamalı");
     if (step.answer?.answer) assert.equal(s.answer.answer, step.answer.answer, `${s.id} cevap`);
+    if (lesson.theme_id === "TEMA_01") {
+      themeOneSteps += 1;
+      assert.ok(!s.reveals.includes("guidance"), `${s.id} öğretmen yönlendirmesi sunuma sızmamalı`);
+      assert.ok(!s.reveals.includes("explanation"), `${s.id} öğretmen açıklaması sunuma sızmamalı`);
+      assert.equal(s.answer?.guidance, undefined, `${s.id} öğretmen yönlendirmesi veriden çıkarılmalı`);
+      assert.equal(s.answer?.explanation, undefined, `${s.id} öğretmen açıklaması veriden çıkarılmalı`);
+    } else if (s.answer?.guidance || s.answer?.explanation) {
+      otherThemeSupportLayers += 1;
+    }
   }
 }
+assert.ok(themeOneSteps > 0, "TEMA_01 adımları kapsanmalı");
+assert.ok(otherThemeSupportLayers > 0, "Diğer temaların mevcut destek katmanları korunmalı");
 assert.ok(!JSON.stringify(catalog).includes('"note"'), "note alanı sunum verisinde olmamalı");
 console.log(`[sunum-web] Veri testi geçti: ${catalog.lessons.length} ders.`);

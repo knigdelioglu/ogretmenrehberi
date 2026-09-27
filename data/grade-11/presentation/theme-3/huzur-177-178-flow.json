@@ -30,7 +30,8 @@
             "title": "Örtük ileti",
             "body": "Şehir, musiki ve yoksul semtlerin birlikte düşündürdüğü sonucu gerekçelendirin."
           }
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Bir cümlenin kendisi doğrudan alıntılanabiliyorsa, alıntının ötesindeki geniş yorumu ‘açık ileti’ diye sunmayın. ‘Millî şuurun en temel anahtarı’, ‘varoluşsal yalnızlığa şifa’ gibi sonuçlar metinde açıkça söylenmediği için zorunlu ileti değildir."
       }
     },
     {
@@ -41,15 +42,15 @@
       "prompt": "Basılı s.177’deki görseli ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.177’de Mescid-i Aksa görseli bulunuyor; şiir dizeleri doğrulanmış PDF’de görünmüyor.",
+        "lead": "Basılı s.177’de Mescid-i Aksa görseli yer alır; görselde şiir dizeleri görünmez.",
         "sections": [
           {
             "title": "Metin kanıtı",
-            "body": "Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz. Şiir metni doğrulanmış kaynakta bulunmadığından bu özellikler burada belirlenemez."
+            "body": "Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz. Bu özellikleri şiir metninden inceleyin."
           },
           {
-            "title": "Kaynak sınırı",
-            "body": "Şiir metni doğrulanmış PDF’de yer almadığından içerik, tür, şekil, dönem, zihniyet, üslup ve ileti özellikleri bu kaynakla doğrulanamaz. Başka bir kaynak da görülmediyse bu alanları boş bırakın."
+            "title": "Karşılaştırma sınırı",
+            "body": "Şiirin metnine erişemiyorsanız içerik, tür, şekil, dönem, zihniyet, üslup ve ileti alanlarını boş bırakın. Huzur sütununu okuduğunuz kesitteki kanıtlarla doldurun."
           }
         ]
       }
@@ -63,7 +64,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P177-COMP01",
       "content": {
-        "lead": "Bu PDF’de Mescid-i Aksa şiirinin dizeleri bulunmuyor. Huzur sütununu okunan kesitle doldurun; şiir sütunundaki iddiaları yalnız şiir metni doğrulanmış bir kaynakta görüldüğünde yazın.",
+        "lead": "Huzur sütununu okuduğunuz kesitten doldurun. Mescid-i Aksa sütununa yalnız şiir metninde gördüğünüz özellikleri yazın.",
         "items": [
           "İçerik",
           "Tür",
@@ -83,7 +84,7 @@
       "prompt": "Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu üç ölçütü Huzur'un kitabınızda okuduğunuz bölümüne dayanarak doldurun.",
+        "lead": "Üç ölçütü Huzur’dan okuduğunuz bölüme dayanarak doldurun.",
         "sections": [
           {
             "title": "İçerik",
@@ -112,15 +113,15 @@
         "sections": [
           {
             "title": "Huzur — dönem",
-            "body": "Karşılaştırma sayfası dönem bilgisi vermez. Dış bibliyografik bağlam kullanılacaksa ilk yayın yılı 1949 olarak ayrı belirtilebilir; bu, okunan kesitteki olaylarla karıştırılmaz."
+            "body": "Karşılaştırma sayfasında dönem bilgisi verilmez. Dış bibliyografik bilgiyi kullanırsanız kaynağını ve 1949’daki ilk yayım yılını ayrıca belirtin; bunu okunan kesitteki olaylarla karıştırmayın."
           },
           {
             "title": "Huzur — zihniyet",
-            "body": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin; örneğin “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir-kimlik ilişkisiyle gerekçelendirin."
+            "body": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin. “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir ve kimlik ilişkisiyle açıklayın."
           },
           {
             "title": "Mescid-i Aksa — zihniyet",
-            "body": "Şiir metni doğrulanmış PDF’de bulunmadığından zihniyet yorumu ve dönem bilgisi bu kaynakla doğrulanamaz; şiir metni görülünce kanıtla doldurun."
+            "body": "Şiirin metni olmadan dönem ve zihniyet yorumu yapmayın; metni edindiğinizde bu alanı şiirden kanıtlarla doldurun."
           }
         ]
       }
@@ -137,15 +138,15 @@
         "sections": [
           {
             "title": "Huzur — üslup ve ileti",
-            "body": "Betimleyici, düşünsel ve şiirsel düzyazıda şehir/musiki tasvirleri Mümtaz’ın iç dünyasıyla birleşir. Şehir ve kültür mirasıyla bağ kurmanın kimliği anlamaya katkısı öne çıkar."
+            "body": "Betimleyici, düşünsel ve şiirsel düzyazıda şehir ve musiki tasvirlerinin Mümtaz’ın iç dünyasıyla nasıl birleştiğini inceleyin. Şehir ve kültür mirasıyla bağın kimliği anlamaya katkısını metinden örneklerle açıklayın."
           },
           {
             "title": "Mescid-i Aksa — üslup ve ileti",
-            "body": "Şiir metni PDF’de bulunmadığından üslup ve ileti karşılaştırması tamamlanamaz; kişileştirme, sesleniş veya çağrı gibi özellikleri metin kanıtı olmadan atamayın."
+            "body": "Şiirin metni elinizde değilse üslup ve ileti karşılaştırmasını tamamlamayın; kişileştirme, sesleniş veya çağrı gibi özellikleri metin kanıtı olmadan yazmayın."
           },
           {
             "title": "Karşılaştırma",
-            "body": "İki metin arasında benzerlik veya fark kurmak için şiir metni gerekir; mevcut PDF’de bulunmayan metne ilişkin sonuç yazmayın."
+            "body": "İki metin arasında benzerlik veya fark kurmak için her iki metinden de kanıt kullanın."
           }
         ]
       }
@@ -165,7 +166,8 @@
           "Herkes farklı bir temel rol seçsin.",
           "Huzur'dan kendi rolüne uygun metin dayanağı belirlesin.",
           "Bir sonraki toplantıda rol değiştirmeyi planlayın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Roller tek doğru ürün üretmez; öğrenci seçtiği rolü metinden somut bir örnekle yürütmelidir. Okuma çemberinde her döngüde öğrencilerin rol değiştirmesi sağlanarak metne farklı bilişsel pencerelerden bakma alışkanlığı kazandırılmalıdır."
       }
     },
     {
@@ -180,10 +182,10 @@
         "sections": [
           {
             "title": "Görev",
-            "body": "Huzur'daki İstanbul ve kültür ilgisini kendi şehrinizden bir mekân ya da başka bir yaşantıyla ilişkilendirin."
+            "body": "Huzur’daki İstanbul ve kültür ilgisini kendi şehrinizden bir mekân ya da başka bir yaşantıyla ilişkilendirin."
           },
           {
-            "title": "Öğrenciye soru",
+            "title": "Soru",
             "body": "Sizin çevrenizde hangi yer, şehrin geçmişini bugünle buluşturuyor?"
           }
         ]

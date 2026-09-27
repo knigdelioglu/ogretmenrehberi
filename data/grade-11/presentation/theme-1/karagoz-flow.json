@@ -145,13 +145,13 @@
       "source_record_id": "T01-S0007",
       "layout": "process",
       "content": {
-        "lead": "“Yazıcı” metnini paylaşarak okuyun. Amaç yalnız metni bitirmek değil, dil ve yanlış anlamaların oyundaki işlevini fark ettirmektir.",
+        "lead": "“Yazıcı” metnini paylaşarak okuyun. Okurken dilin ve yanlış anlamaların oyundaki işlevine dikkat edin.",
         "items": [
-          "Metne önce göz gezdirin; öğrencilerden dili ve içeriği hakkında tahminde bulunmalarını isteyin.",
-          "Rolleri öğrenciler arasında paylaştırın.",
-          "Öğrenciler kendi bölümlerini karakterin diline ve oyunun doğasına uygun sesle okusun.",
-          "Okuma sırasında yanlış anlamaları, farklı konuşma biçimlerini ve kişilerin tepkilerini işaretleyin.",
-          "Eski kelimelerin tamamını önceden açıklamayın; okuma bütünüyle aksarsa yalnız gerekli telaffuz desteğini verin."
+          "Metne önce göz gezdirin; dili ve içeriği hakkında bir tahminde bulunun.",
+          "Rolleri aranızda paylaşın.",
+          "Bölümünüzü karakterin diline ve oyunun doğasına uygun bir sesle okuyun.",
+          "Okurken yanlış anlamaları, farklı konuşma biçimlerini ve kişilerin tepkilerini işaretleyin.",
+          "Eski kelimelerin anlamlarını önce bağlamdan çıkarmayı deneyin; gerektiğinde telaffuz desteği alın."
         ]
       }
     },
@@ -188,7 +188,7 @@
       "prompt": "Kelime duvarı",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Söz varlığı çalışmasının sonunda öğretmeninizin rehberliğinde sınıfta bir kelime duvarı oluşturun."
+        "lead": "Söz varlığı çalışmasının sonunda sınıfça bir kelime duvarı oluşturun."
       }
     },
     {
@@ -246,7 +246,7 @@
       "layout": "comparison",
       "density": "compact",
       "content": {
-        "lead": "Kitaptaki soruyu cevapladıktan sonra kısa pekiştirme: Tip ile karakter arasındaki farkı Yazıcı üzerinden uygulayın.",
+        "lead": "Tip–karakter ayrımını “Yazıcı” metninden seçtiğiniz kanıtlarla uygulayın.",
         "items": [
           "Karagöz veya Hacivat için metinden en az iki söz ya da davranış kanıtı seçin.",
           "Seçtiğiniz kanıtların kişiyi temsilî/kalıplaşmış bir tipe mi, yoksa bireysel ve çok yönlü bir karaktere mi yaklaştırdığını tartışın.",
@@ -469,7 +469,7 @@
       "prompt": "Süreci değerlendirme — grup çalışması",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğretmeninizin rehberliğinde üç gruba ayrılarak Yazıcı metninin dil ve üslubunu değerlendirin."
+        "lead": "Üç gruba ayrılın ve Yazıcı metninin dil ile üslubunu değerlendirin."
       }
     },
     {

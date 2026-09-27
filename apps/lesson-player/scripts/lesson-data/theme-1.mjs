@@ -624,13 +624,15 @@ const p74Experience = yazmaById.get("s74-q2");
 assert(
   p74Experience?.answer?.answer_sections?.["Değerlendirme sınırı"] &&
     p74Experience.answer.guidance &&
-    p74Experience.answer.answer.includes("öğrencinin gözlemine"),
+    p74Experience.answer.answer.includes("kendi deneyiminizden") &&
+    !p74Experience.answer.answer.includes("öğrencinin"),
   "s74 örneği öğrencinin kendi deneyim/gözlem değerlendirmesini onun adına doldurmamalı."
 );
 
 const p29Friendship = karagozById.get("s29-q2");
 assert(
-  p29Friendship?.answer?.answer.includes("tek tanım değildir") &&
+  p29Friendship?.answer?.answer.includes("güven, paylaşım, karşılıklı kabul ya da destek") &&
+    p29Friendship.answer.answer.includes("kendi deneyiminizden") &&
     p29Friendship.answer.guidance,
   "s29 kişisel dostluk tanımı öğrenci adına doldurulmuş zorunlu görüşe dönüşmemeli."
 );
@@ -662,9 +664,9 @@ const selfRevisionItems = y78Rubric.content?.items ?? [];
 assert(
   selfRevisionItems.length === 5 &&
     /Kısmen|Hayır/.test(selfRevisionItems[0]) &&
-    /taslağından/i.test(selfRevisionItems[1]) &&
+    /taslağınızdan/i.test(selfRevisionItems[1]) &&
     /tek bir somut düzeltme hedefi/i.test(selfRevisionItems[2]) &&
-    /düzeltir/i.test(selfRevisionItems[3]) &&
+    /düzeltin/i.test(selfRevisionItems[3]) &&
     /aynı ölçüte/i.test(selfRevisionItems[4]),
   "s78 öz değerlendirme akışı işaretleme → taslak kanıtı → tek hedef → revizyon → aynı ölçütü yeniden değerlendirme döngüsünü korumalı."
 );

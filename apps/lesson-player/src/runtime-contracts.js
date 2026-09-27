@@ -1,5 +1,9 @@
-export function studentVisibleRevealKeys(keys) {
-  return [...keys].filter((key) => key !== "note");
+export function studentVisibleRevealKeys(keys, themeId) {
+  return [...keys].filter(
+    (key) =>
+      key !== "note" &&
+      !(themeId === "TEMA_01" && (key === "guidance" || key === "explanation"))
+  );
 }
 
 export function buildExportedStep(original, effective, override) {
@@ -168,12 +172,12 @@ export function restoredStepIndex(orderedIds, requestedStepId, savedStepId, lega
     : 0;
 }
 
-export function studentVisibleOverrides(overrides) {
+export function studentVisibleOverrides(overrides, themeId) {
   return Object.fromEntries(
     Object.entries(overrides).map(([id, override]) => {
       const visible = { ...override };
       if (visible.reveal_order) {
-        visible.reveal_order = studentVisibleRevealKeys(visible.reveal_order);
+        visible.reveal_order = studentVisibleRevealKeys(visible.reveal_order, themeId);
       }
       if (visible.content?.note !== undefined) {
         const { note: _teacherOnly, ...content } = visible.content;

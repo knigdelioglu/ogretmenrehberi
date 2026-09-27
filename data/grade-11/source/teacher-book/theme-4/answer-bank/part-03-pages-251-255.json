@@ -25,9 +25,9 @@
       "question_no": "2/a",
       "source_locator": "basılı s.251-252 / PDF s.252-253 — Metni Anlayalım soru 2/a",
       "prompt_summary": "Oyundaki karakterlerin verilen söz ve davranışlarından kişilik özelliği çıkarma",
-      "answer": "Tablodaki her kişilik çıkarımı, ilgili kişinin söz veya davranışına dayanır. Kitabın örnek olarak verdiği Mimar Sinan’ın ilk satırında gözlem, öğrenmeye açıklık ve saygı vurgulanır; diğer satırlarda da aynı kanıt temelli yaklaşım izlenebilir. Öğrenci, bu nitelendirmelere metinden uygun kanıt gösteren başka ifadeler de önerebilir.",
+      "answer": "Tablodaki her kişilik çıkarımını ilgili kişinin söz veya davranışıyla destekleyin. Kitabın ilk satırındaki Mimar Sinan örneği gözlem, öğrenmeye açıklık ve saygı özelliklerini gösterir. Diğer satırlarda da metin kanıtlarından yararlanın; uygun kanıtlarla farklı özellikler önerebilirsiniz.",
       "answer_sections": {
-        "Mimar Sinan (yapıları inceleme)": "Kubbe ve yapıları öğrenirken mimarların emeğini inceler ve onlara saygı duyduğunu söyler. Kitap bu örneği gözlem yeteneği, öğrenmeye açıklık ve saygı olarak tamamlar.",
+        "Mimar Sinan (yapıları inceleme)": "Kubbe ve yapıları inceler; mimarların emeğine saygı duyar. Bu davranışları gözlem, öğrenmeye açıklık ve saygıyla ilişkilendirin.",
         "15. Ses": "Geride zaferin ve bilgece bir eserin kalmamasından kaygılanır; adını geleceğe taşıyacak eşsiz bir yapı ister. Kalıcı eser ve hatırlanma arzusunu öne çıkaran, iddialı bir tutum sergiler.",
         "9. Ses": "Camileri karşılaştırır, Süleymaniye’nin biçim ve yapı unsurlarını ayrıntılarıyla anlatır. Dikkatli gözlem yapan, mimari biçime duyarlı ve karşılaştırıcı bir kişidir.",
         "Mimar Sinan (yapabilme ve sözünü tutma)": "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” sözü ölçülü güveni, sorumluluğu ve verilen söze bağlılığı gösterir.",
@@ -43,12 +43,12 @@
       "question_no": "2/b-c",
       "source_locator": "basılı s.252 / PDF s.253 — Metni Anlayalım soru 2/b-c",
       "prompt_summary": "Öğrencinin etkileyici bulduğu kişilik özelliğini ve kendi başarı anlayışını gerekçelendirme",
-      "answer": "2/b ve 2/c kişisel değerlendirme sorularıdır. Rehber, öğrencinin neyin kendisini etkilediğini veya hangi özellikleriyle tanınmak istediğini onun adına belirlememelidir. Metindeki karakter özellikleri yalnız seçim yapmayı destekleyen kanıt havuzu olarak kullanılabilir.",
-      "guidance": "Öğrenci adına 'beni en çok ... etkiledi' veya '... ile tanınmak isterdim' biçiminde kişisel cevap yazmayın. Değerlendirme, öğrencinin gerçek seçimi ve gerekçesine dayanmalıdır.",
+      "answer": "2/b ve 2/c kişisel değerlendirmelerinize dayanır. Metindeki karakter özelliklerinden yararlanarak sizi etkileyen özelliği ve hangi özelliğinizle tanınmak istediğinizi seçin; her iki seçiminizi de gerekçelendirin.",
+      "guidance": "Sizi etkileyen özelliği ve tanınmak istediğiniz niteliği kendiniz seçin. Seçimlerinizi metindeki söz veya davranışlarla destekleyin.",
       "answer_sections": {
-        "2b_etkilendigim_ozellik": "Seçtiğim özellik: [...]. Bu özelliği metinde gösteren söz/davranış: [...]. Beni etkileme nedeni: [...].",
-        "2c_taninmak_istedigim_ozellik": "Mimar Sinan gibi başarılı biri olsaydım tanınmak istediğim özellik/özellikler: [...]. Neden: [...].",
-        "metinden_secilebilecek_kanitlar": [
+        "2b. Beni etkileyen özellik": "Seçtiğim özellik: [...]. Bu özelliği metinde gösteren söz/davranış: [...]. Beni etkileme nedeni: [...].",
+        "2c. Tanınmak istediğim özellik": "Mimar Sinan gibi başarılı biri olsaydım tanınmak istediğim özellik/özellikler: [...]. Neden: [...].",
+        "Metinden seçilebilecek kanıtlar": [
           "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” → sorumluluk, ölçülü güven ve sözüne bağlılık.",
           "“bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” → azim ve çalışkanlık.",
           "“Güzellik, büyüklükten daha güçlüdür.” → estetik duyarlık ve güzelliği ölçüt alma.",
@@ -72,7 +72,7 @@
       "answer": "Sinan’ın sözü, talihin tek başına belirleyici olmadığını; bilgiyle donanmanın, fırsat geldiğinde cesaretle harekete geçmenin ve düzenli çalışmanın kişinin imkânlarını genişletebildiğini anlatır. Sinan’ın farklı yapılara ve harabelere dikkatle bakması bilgiyi, gemi yapımındaki zorlukları sabırla aşması da azim ve çalışkanlığı somutlaştırır. Başarıyı destekleyebilecek başka özelliklere merak, öz disiplin, sorumluluk, iş birliği ve hatalardan öğrenme örnek verilebilir.",
       "answer_sections": {
         "İletinin yorumu": "Hazırlık ve emek, güç koşullarda fırsatı değerlendirmeyi mümkün kılar; kişi sonucu yalnız talihin belirlemesine bırakmaz.",
-        "Başka özellikler": "Bu örnekler sınırlı bir liste değildir; öğrenci metinden hareketle veya makul gerekçeyle başka özellikler de önerebilir."
+        "Başka özellikler": "Metindeki başka kanıtlardan farklı özellikler de çıkarabilirsiniz."
       },
       "evidence_quotes": [
         "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim"
@@ -123,7 +123,7 @@
       "answer_sections": {
         "Amaç ve üslup": "Tarihî kişiyi ve çağını tanıtmak; birinci kişi anlatımı, sesler, müzik, görüntü ve hareket yönergeleriyle izleyicide ilgi uyandırmak.",
         "Tarihî gerçeklikle ilişki": "Sinan’ın görevleri ve eserleri tarihî çerçeve oluşturur; oyun bunları dramatik bir anlatıya dönüştürür. Kurmaca sahne konuşmaları doğrudan belge sayılmaz.",
-        "Kaynak sınırı": "Bilgi görseli kesin doğum tarihinin bilinmediğini belirtir, oyun ise gün ve yıl verir. Bu fark açıklanmalı; oyundaki tarih doğrulanmış kesin bilgi gibi öğretilmemelidir."
+        "Tarih bilgilerini karşılaştırma": "Bilgi görseli kesin doğum tarihinin bilinmediğini, oyun ise “29 Mayıs 1490” tarihini verir. Bu iki bilgiyi ayırın; oyundaki tarihi kesin tarihsel bilgi olarak kabul etmeyin."
       }
     },
     {
@@ -134,7 +134,7 @@
       "source_locator": "basılı s.255 / PDF s.256 — Sıra Sizde soru 3",
       "prompt_summary": "Ben, Mimar Sinan oyunu için tarihî ve işlevsel sahne dekoru tasarlama",
       "answer": "Örnek dekor tasarımı: Ortada Sinan’ın çizim tezgâhı ve pergelinin bulunduğu sade bir çalışma alanı kurulur. Arkadaki değiştirilebilir panolara Ağırnas, Ayasofya, şantiye ve üç caminin görselleri yansıtılır; ışık ve kısa ses geçişleriyle sefer, saray görüşmesi ve yapıların açılış sahneleri ayrılır. Taş, ahşap ve ölçü araçlarını çağrıştıran birkaç nesne tarihî atmosferi destekler; sahneyi gereksiz eşyayla doldurmamak yapıların görsellerini öne çıkarır.",
-      "guidance": "Bu, uygulanabilir bir örnektir. Öğrenci başka bir dekor anlayışı seçebilir; öneri tarihî bağlamı ve sahne değişimlerini desteklemelidir."
+      "guidance": "Bu dekor örneğinden yararlanabilir veya farklı bir tasarım seçebilirsiniz. Tasarımınızı tarihî bağlam ve sahne geçişleriyle ilişkilendirin."
     }
   ]
 }

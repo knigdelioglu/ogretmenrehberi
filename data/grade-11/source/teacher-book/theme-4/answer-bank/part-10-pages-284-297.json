@@ -11,13 +11,13 @@
       "question_no": "1",
       "source_locator": "basılı s.284 / PDF s.285 — Konuya Başlarken soru 1",
       "prompt_summary": "Kişisel yaşantıdan hareketle edebiyat-toplum ilişkisini açıklama",
-      "answer": "Bu soru öğrencinin kendi yaşamından hareketle edebiyat-toplum ilişkisini açıklamasını ister. Rehber öğrenci adına teknoloji, kuşak ilişkisi veya başka bir yaşanmış durum seçmez.",
-      "guidance": "Öğrenci adına kişisel deneyim uydurmayın. Farklı yaşam örnekleri kabul edilir; sonuç, seçilen örnekle edebiyat-toplum bağını açıklamalıdır.",
+      "answer": "Kendi yaşamınızdan bir durum seçin. Bu durumun toplumsal yönünü ve edebiyatın onu nasıl işleyebileceğini açıklayarak edebiyat-toplum ilişkisine dair sonucunuzu yazın.",
+      "guidance": "Farklı yaşam örnekleri seçebilirsiniz. Sonucunuzu seçtiğiniz örnekle ilişkilendirin ve edebiyatın toplumsal durumu nasıl yansıtabileceğini açıklayın.",
       "answer_sections": {
-        "kendi_yasamimdan_gozlem_veya_durum": "[...]",
-        "bu_durumun_toplumsal_yonu": "[...]",
-        "edebiyatta_nasil_islenebilir": "[...]",
-        "edebiyat_toplum_iliskisine_dair_sonucum": "[...]"
+        "Kendi yaşamımdan gözlem veya durum": "[...]",
+        "Bu durumun toplumsal yönü": "[...]",
+        "Edebiyatta nasıl işlenebilir?": "[...]",
+        "Edebiyat-toplum ilişkisine dair sonucum": "[...]"
       }
     },
     {
@@ -36,7 +36,7 @@
       "question_no": "1",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 1",
       "prompt_summary": "Fedakârlık belgeselini izleme amacını belirleme",
-      "answer": "Örnek izleme amacı: Belgeselde fedakârlık değerinin hangi davranışlarla görünür kılındığını ve görüntü, ses ile anlatımın bu davranışlara nasıl anlam kattığını belirlemek. İzleme amacı öğrencinin kendi merakına göre başka biçimde de kurulabilir."
+      "answer": "Örnek izleme amacı: Belgeselde fedakârlık değerinin hangi davranışlarla görünür kılındığını ve görüntü, ses ile anlatımın bu davranışlara nasıl anlam kattığını belirlemek. Bu amacı kendi merakınıza göre yeniden kurabilirsiniz."
     },
     {
       "question_id": "T4-P285-Q02",
@@ -45,8 +45,8 @@
       "question_no": "2",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
       "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
-      "answer": "Olası tahmin: ‘Fedakârlık’ başlığı ile görsellerde rayların yanında bir kaplumbağayı tutan ellerin ve yeşil alanda elinde kap benzeri bir nesne taşıyan kişinin görülmesi; canlılara yardım, emek veya sorumluluk çevresinde bir içerik olabileceğini düşündürebilir. Bu yalnızca başlık ve görsellerden yapılan ön tahmindir; kişi, olay, amaç ve sonuç video izlenmeden kesinleştirilmez.",
-      "guidance": "Sayfadaki görsellerde açıkça görülen ayrıntıları betimleyin (rayların yanındaki kaplumbağayı tutan eller ve yeşil alandaki kişi ile elindeki nesne). Görsellerin hangi olayı anlattığını video izlenmeden kesinleştirmeyin."
+      "answer": "Olası tahmin: “Fedakârlık” başlığı ile görsellerde rayların yanında bir kaplumbağayı tutan ellerin ve yeşil alanda elinde kap benzeri bir nesne taşıyan kişinin görülmesi; canlılara yardım, emek veya sorumluluk çevresinde bir içerik olabileceğini düşündürebilir. Bunlar yalnızca başlık ve görsellerden hareketle kurulmuş ön tahminlerdir. Kişiyi, olayı, amacı ve sonucu izleme sonrasında doğrulayın.",
+      "guidance": "Görsellerde açıkça görülen ayrıntıları betimleyin: rayların yanındaki kaplumbağayı tutan eller ile yeşil alandaki kişi ve elindeki nesne. Olayı ve kişilerin amacını videodan kanıt bulduktan sonra açıklayın."
     },
     {
       "question_id": "T4-P285-Q03",
@@ -55,7 +55,7 @@
       "question_no": "3",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 3",
       "prompt_summary": "Belgeseli etkili izlemek için ortam ve iletişim engellerini giderme",
-      "answer": "İzleme öncesinde ekran ve sesin anlaşılır olduğunu kontrol edin; bildirimleri kapatıp dikkat dağıtan konuşma ve hareketleri azaltın. Her öğrencinin görüntüyü görebileceği ve sesi duyabileceği bir düzen kurun. İçerik sırasında konuşmak yerine notları izleme sonunda paylaşın."
+      "answer": "Ekranı rahat görebildiğiniz ve sesi duyabildiğiniz bir yere oturun. Bildirimleri kapatın; dikkatinizi dağıtan konuşma ve hareketleri azaltın. Video sırasında not alın, notlarınızı izleme sonunda paylaşın."
     },
     {
       "question_id": "T4-P285-Q04",
@@ -73,7 +73,7 @@
       "question_no": "Metni Dinleyelim/İzleyelim 1",
       "source_locator": "basılı s.285 / PDF s.286 — Metni Dinleyelim/İzleyelim görev 1",
       "prompt_summary": "Fedakârlık çok modlu metnini belirlenen yöntemle izleme",
-      "answer": "Bu adım video kaydının gerçekten izlenmesini gerektirir. Öğretmen videoyu açar; öğrenciler önceden belirledikleri izleme amacı ve stratejisiyle izleyip kanıt niteliğindeki söz, davranış ve görsel ayrıntıları not eder."
+      "answer": "Videoyu izleme amacınız ve seçtiğiniz strateji doğrultusunda izleyin. Kanıt niteliğindeki sözleri, davranışları ve görsel ayrıntıları not edin."
     },
     {
       "question_id": "T4-P286-Q02",
@@ -82,8 +82,8 @@
       "question_no": "2",
       "source_locator": "basılı s.286 / PDF s.287 — Metni Dinleyelim/İzleyelim soru 2 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Videoda Hayatın Aynası temasını yansıtan sözcük ve ifadeleri not etme",
-      "answer": "EBA karekodundaki Fedakârlık videosunun içeriği bu incelemede açılamadığı için videoda geçen sözcük veya ifadeler kesin cevap olarak verilemez. Öğrenci, izleme sırasında tema ile ilişkilendirdiği gerçek sözcükleri kısa not etmeli ve notunu sahne ya da konuşmayla eşleştirmelidir.",
-      "guidance": "Video izlenmeden alıntı veya söz uydurmayın; bağlantı açılmazsa soruyu kayıt erişildiğinde tamamlayın."
+      "answer": "Videoda tema ile ilişkilendirdiğiniz sözcük ve ifadeleri not edin. Her birini geçtiği sahne ya da konuşmayla eşleştirin.",
+      "guidance": "Alıntılarınızı videoda duyduğunuz gerçek sözlerden seçin ve ilgili sahneyle eşleştirin."
     },
     {
       "question_id": "T4-P286-Q03",
@@ -92,8 +92,8 @@
       "question_no": "3",
       "source_locator": "basılı s.286 / PDF s.287 — Metni Dinleyelim/İzleyelim soru 3 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Video notlarından hareketle belgeselin iletilerini belirleme",
-      "answer": "Belgeselin iletisi video içeriğine bağlıdır; EBA karekod kaydı açılamadığı için ana veya yardımcı ileti burada belirlenemez. İzlerken tekrar eden davranışları ve anlatıcının vurgularını not edin; her iletiyi bu gözlemlerden biriyle gerekçelendirin.",
-      "guidance": "Öğrenciye yalnız “fedakârlık önemlidir” gibi başlıktan türetilmiş, sahne kanıtı olmayan hazır bir ileti vermeyin."
+      "answer": "Belgeseldeki ana ve yardımcı iletileri, tekrar eden davranışlar ve anlatıcının vurgularından hareketle belirleyin. Her iletiyi videodan bir gözlemle gerekçelendirin.",
+      "guidance": "İletiyi yalnızca başlıktan çıkarmayın; videoda gördüğünüz bir sahne veya duyduğunuz bir ifadeyle destekleyin."
     },
     {
       "question_id": "T4-P286-PERF01",
@@ -104,11 +104,11 @@
       "prompt_summary": "Dinleme-izleme sürecine ilişkin kontrol listesini gerçek öğrenci davranışına göre doldurma",
       "answer": "Kontrol listesi ancak izleme sırasında gözlenen davranışlara göre doldurulabilir; tüm maddelere önceden “Evet” ya da “Hayır” cevabı verilmez.",
       "answer_sections": {
-        "Dikkat ve anlama": "Öğrenci dikkatini verip içeriği anlamaya çalıştı mı?",
-        "Saygı ve ön yargı": "Videoyu sabırla, saygıyla ve ön yargıdan uzak izledi mi?",
-        "Diğer dinleyiciler": "Öğrenci diğer dinleyicileri rahatsız etmedi mi?",
-        "Söz alma": "Yorum ve sorular için videonun bitmesini bekledi mi?",
-        "Dikkat dağıtıcı davranışlar": "Dikkat dağıtacak sesler çıkarmaktan ve uygun olmayan hareketlerden kaçındı mı?"
+        "Dikkat ve anlama": "Dikkatimi vererek içeriği anlamaya çalıştım.",
+        "Saygı ve ön yargı": "Videoyu sabırla, saygıyla ve ön yargıdan uzak izledim.",
+        "Diğer dinleyiciler": "Diğer dinleyicileri rahatsız etmedim.",
+        "Söz alma": "Yorum ve sorularım için videonun bitmesini bekledim.",
+        "Dikkat dağıtıcı davranışlar": "Dikkat dağıtacak sesler çıkarmadım ve uygun olmayan hareketlerden kaçındım."
       }
     },
     {
@@ -135,13 +135,13 @@
       "question_no": "1",
       "source_locator": "basılı s.287 / PDF s.288 — Metni Anlayalım soru 1 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Anadolu insanının özelliklerini Fedakârlık videosundaki örneklerle eşleştirme",
-      "answer": "Bu soru doğrudan Fedakârlık videosunda gözlenen davranışlara dayanır. Kayıt görülmeden Anadolu insanına veya videodaki kişilere belirli özellikler atanamaz.",
-      "guidance": "Çalışkanlık, dayanışma, sabır veya başka bir özelliği önceden hazır seçenek gibi yönlendirmeyin; özellik önce videodaki gerçek davranıştan çıkarılmalıdır.",
+      "answer": "Videoda gözlemlediğiniz bir davranışı seçin. Bu davranıştan çıkardığınız kişilik özelliğini ön bilginizle karşılaştırın; gerekçenizi görüntü, söz veya eylem kanıtıyla destekleyin.",
+      "guidance": "Bir özelliği videodaki gerçek davranışla ilişkilendirin. Kanıt olmadan hazır bir nitelendirme kullanmayın.",
       "answer_sections": {
-        "videoda_gozledigim_davranis": "[...]",
-        "bu_davranistan_cikardigim_ozellik": "[...]",
+        "Videoda gözlediğim davranış": "[...]",
+        "Bu davranıştan çıkardığım özellik": "[...]",
         "gerekcem": "[...]",
-        "on_bilgimle_karsilastirma": "Beklentimle örtüştü / farklılaştı çünkü: [...]"
+        "Ön bilgimle karşılaştırma": "Beklentimle örtüştü / farklılaştı çünkü: [...]"
       }
     },
     {
@@ -151,7 +151,7 @@
       "question_no": "2",
       "source_locator": "basılı s.288 / PDF s.289 — Metni Anlayalım soru 2 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinin tema, konu, ana-yardımcı düşünceler ve sunuş biçimini belirleme",
-      "answer": "Zihin haritasındaki içerik video izlenmeden doldurulamaz; bağlantı bu incelemede açılmadığı için tema, konu veya ana düşünceye dair kesin cevap verilmemiştir. İzleme notlarından (1) tekrar eden meseleyle temayı, (2) anlatılan kişi ve olayla konuyu, (3) vurgulanan temel yargıyla ana düşünceyi, (4) bu yargıyı destekleyen ayrıntılarla yardımcı düşünceleri belirleyin. Sunuluş biçiminde görüntü, ses, yazı ve anlatıcı kullanımını kaydedin."
+      "answer": "İzleme notlarınızdan tekrar eden meseleyi bularak temayı; anlatılan kişi ve olaylardan konuyu; vurgulanan temel yargıdan ana düşünceyi çıkarın. Ana düşünceyi destekleyen ayrıntıları yardımcı düşünce olarak ekleyin. Görüntü, ses, yazı ve anlatıcı kullanımını sunuluş biçimi başlığında gösterin."
     },
     {
       "question_id": "T4-P289-Q03",
@@ -160,7 +160,7 @@
       "question_no": "3",
       "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 3 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselde konu edilen kişinin davranışlarından duygu ve düşünce çıkarma",
-      "answer": "Kişinin duygusu ve amacı yalnız gözlenen davranış, söz ve durumdan çıkarılabilir. EBA videosu burada açılamadığı için kişiye belirli bir duygu veya niyet atfedilemez. İzleyen öğrenci her çıkarımı videodaki somut davranışla eşleştirmeli ve emin olmadığı yerde olasılık bildiren bir ifade kullanmalıdır."
+      "answer": "Kişilerin duygularını ve amaçlarını gözlediğiniz söz, davranış ve durumlardan çıkarın. Her çıkarımı videodaki somut bir davranışla eşleştirin; emin olmadığınız yorumları olasılık bildiren ifadelerle yazın."
     },
     {
       "question_id": "T4-P289-Q04",
@@ -170,7 +170,7 @@
       "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 4",
       "prompt_summary": "İzleme öncesi tahmini izleme sonrası gözlemle karşılaştırma",
       "answer": "Örnek kayıt düzeni: Önce başlık ve küçük görselden doğan tahmini yazın; sonra videoda gerçekten gözlenen kişi, davranış ve ortam ayrıntılarını kaydedin. Son bölümde tahminin hangi yönünün doğrulandığını, hangisinin değiştiğini kanıtla belirtin.",
-      "guidance": "Video görülmeden “sonraki tespitler” doldurulmaz. Öğrencinin gerçek izleme deneyimi ve notları esas alınır."
+      "guidance": "Ön tahmininizi izleme öncesinde kaydedin. İzleme sonrasında gözlediğiniz kişi, davranış ve ortam ayrıntılarını yazıp hangi tahminlerinizin doğrulandığını veya değiştiğini kanıtlarla belirtin."
     },
     {
       "question_id": "T4-P289-Q05",
@@ -179,7 +179,7 @@
       "question_no": "5",
       "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 5 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık videosunu belgesel türünün kurgu özelliği bakımından değerlendirme",
-      "answer": "Videonun sahne ve düzenlemesi incelenmeden bu belgeselin kurgu tercihi hakkında hüküm verilemez. İzlerken görüntülerin hangi sırayla seçildiğini, ses/anlatıcı eklenip eklenmediğini ve bu düzenin gerçek kişi, olay veya mekânı nasıl sunduğunu not edin. Belgeselde “kurgu”, gerçek malzemenin seçilip düzenlenmesine işaret eder; belgesel olup olmadığı tek başına görüntülerin sıralanmasından çıkarılmaz."
+      "answer": "Belgeselde “kurgu”, gerçek malzemenin seçilip düzenlenme biçimini anlatır. İzlerken görüntülerin hangi sırayla kullanıldığına, ses veya anlatıcı eklenip eklenmediğine ve bu düzenlemenin gerçek kişi, olay ya da mekânı nasıl sunduğuna dikkat edin. Yorumunuzu örneklerle destekleyin; yalnızca görüntülerin sıralanmasını belgesel türünün kanıtı saymayın."
     },
     {
       "question_id": "T4-P290-Q06",
@@ -188,8 +188,8 @@
       "question_no": "6",
       "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 6 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeseldeki öznel ve nesnel ifadeleri balık kılçığı diyagramında sınıflandırma",
-      "answer": "İfadeler videonun konuşma veya yazı içeriğine bağlıdır; video kaydı açılamadığı için örnek cümleler verilemez. Öğrenci doğrulanabilir bilgi bildiren ifadeleri “nesnel”, kişisel duygu, değerlendirme veya beğeni içerenleri “öznel” başlığına yazmalı; her ifadeyi kaydın gerçek sözlerinden seçmelidir.",
-      "guidance": "Sınıflandırmayı yalnız seslendirme değil, varsa ekrandaki yazı ve kişilerin ifadeleri için de yapın."
+      "answer": "Videodaki konuşma ve yazılardan doğrulanabilir bilgi veren ifadeleri “nesnel”, kişisel duygu, değerlendirme veya beğeni içeren ifadeleri “öznel” başlığına yazın. Her örneği kayıttaki gerçek sözlerden seçin.",
+      "guidance": "Sınıflandırmayı yalnızca seslendirmede değil, varsa ekrandaki yazılarda ve kişilerin ifadelerinde de yapın."
     },
     {
       "question_id": "T4-P290-Q07",
@@ -198,7 +198,7 @@
       "question_no": "7",
       "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 7 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Öznel ve nesnel unsurların belgeselin inandırıcılık ve güvenilirliğine etkisini değerlendirme",
-      "answer": "Genel olarak doğrulanabilir bilgi ve açık kanıt belgeselin güvenilirliğini destekler; kişisel yorum ise bakış açısını ve duygusal etkiyi görünür kılar. Yorumun olgu gibi sunulması veya karşıt bilgilerin dışarıda bırakılması inandırıcılığı zayıflatabilir. Bu videoda hangi unsurun ağır bastığı ve etkisinin ne olduğu, kayıt izlenip örnekler belirlendikten sonra söylenmelidir."
+      "answer": "Doğrulanabilir bilgi ve açık kanıt belgeselin güvenilirliğini destekler; kişisel yorum ise bakış açısını ve duygusal etkiyi görünür kılar. Videoda olgu ile yorumu ayırın. Seçtiğiniz örneklerin belgeselin inandırıcılığına nasıl etki ettiğini ve karşıt bilgilerin nasıl sunulduğunu açıklayın."
     },
     {
       "question_id": "T4-P290-Q08",
@@ -207,7 +207,7 @@
       "question_no": "8",
       "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 8 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselindeki açık ve örtük iletileri belirleme",
-      "answer": "Açık ve örtük iletiler videonun söz, görüntü ve ses düzenine bağlıdır; video kaydı açılamadığı için belirli bir ileti yazılamaz. Açık iletiyi doğrudan söylenen yargıdan; örtük iletiyi tekrar eden görüntü, karşıtlık veya davranışlardan çıkarın ve her birini kısa bir sahne notuyla destekleyin."
+      "answer": "Açık iletiyi videoda doğrudan söylenen yargıdan, örtük iletiyi tekrar eden görüntü, karşıtlık veya davranışlardan çıkarın. Her iki iletiyi de kısa bir sahne notuyla destekleyin."
     },
     {
       "question_id": "T4-P290-Q09",
@@ -216,7 +216,7 @@
       "question_no": "9",
       "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 9 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselde çıkarılan iletilerin güvenilirliğini sorgulama",
-      "answer": "Önce iletiyi videodan doğru biçimde belirleyin; ardından iletinin hangi görüntü, söz veya bilgiyle desteklendiğini, kaynağın açık olup olmadığını ve başka yorumların mümkün olup olmadığını sorgulayın. Video incelenmediğinden bu kayda özgü iletilerin güvenilirliği hakkında karar verilemez."
+      "answer": "Önce videodaki açık veya örtük iletiyi belirleyin. Ardından iletinin hangi görüntü, söz ya da bilgiyle desteklendiğini, kaynağın açık olup olmadığını ve başka yorumların mümkün olup olmadığını inceleyerek güvenilirliğini değerlendirin."
     },
     {
       "question_id": "T4-P291-Q10",
@@ -225,7 +225,7 @@
       "question_no": "10",
       "source_locator": "basılı s.291 / PDF s.292 — Metni Anlayalım soru 10 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselindeki karakterlerin duygu ve düşüncelerini davranışlarından çıkarma",
-      "answer": "Bu çıkarım karakterlerin videodaki gerçek söz ve davranışlarını gerektirir. EBA kaydı açılamadığı için duygu veya amaç atfetmek doğru olmaz. Öğrenci, her çıkarımı yüz ifadesi, hareket, karar veya konuşma gibi gözlenebilir bir kanıta bağlamalı; yorumunu kesin bilgi olarak sunmamalıdır."
+      "answer": "Karakterlerin duygu ve amaçlarını yüz ifadeleri, hareketleri, kararları veya konuşmaları gibi gözlenebilir kanıtlardan çıkarın. Her yorumu somut bir kanıtla destekleyin ve olasılıkları kesin bilgi gibi sunmayın."
     },
     {
       "question_id": "T4-P291-Q11",
@@ -234,7 +234,7 @@
       "question_no": "11",
       "source_locator": "basılı s.291 / PDF s.292 — Metni Anlayalım soru 11 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselini çalışkanlığın öğrenme ve kavramadaki rolünü gösterecek biçimde özetleme",
-      "answer": "Belgeselin olayları ve kişileri izlenmeden özetlenemez; kayıt burada açılamadığı için hazır bir özet verilmemiştir. Öğrenci izlerken başlıca kişi ve amacı, karşılaştığı güçlüğü, gösterdiği çalışma davranışını ve sonucu not etmeli; özetinde bu davranışın öğrenme veya kavrayışla bağlantısını açıklamalıdır."
+      "answer": "Videoda başlıca kişinin amacını, karşılaştığı güçlüğü, gösterdiği çalışma davranışını ve sonucu not edin. Bu davranışın öğrenme veya kavrayışla bağlantısını kurarak kısa bir özet yazın."
     },
     {
       "question_id": "T4-P292-Q01",
@@ -262,7 +262,7 @@
       "question_no": "2",
       "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 2 / Çalışkanlık QR videosu gerekli",
       "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-      "answer": "Ana düşünce doğrudan Çalışkanlık videosunun içeriğine bağlıdır. EBA kaydı açılamadığı için video izlenmiş gibi bir yargı verilmemiştir. Öğrenci videoda tekrar edilen davranış ve sonuçlardan hareketle temel yargıyı bir cümleyle kurmalı, en az bir gözlemle desteklemelidir."
+      "answer": "Videoda tekrar eden davranış ve sonuçlardan hareketle ana düşünceyi bir cümleyle kurun. Yargınızı en az bir gözlemle destekleyin."
     },
     {
       "question_id": "T4-P293-Q03",
@@ -271,7 +271,7 @@
       "question_no": "3",
       "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 3 / Fedakârlık ve Çalışkanlık QR videoları gerekli",
       "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-      "answer": "İki video da incelenmeden dil/üslup, ileti ve içerik bakımından karşılaştırma yapılamaz. İzleme sonrasında her belgesel için kullanılan anlatım biçimi ve ses, öne çıkan ileti, belgesel türüne özgü gerçek malzeme kullanımı ve ele alınan davranışlar ayrı ayrı not edilmelidir; ardından benzerlik ve farklılıklar bu kanıtlara göre yazılmalıdır."
+      "answer": "İki videoyu izledikten sonra her biri için anlatım biçimi, ses, ileti, gerçek malzeme kullanımı ve ele alınan davranışlara ilişkin kanıtları ayrı ayrı not edin. Sonra benzerlik ve farklılıkları bu kanıtlara göre açıklayın."
     },
     {
       "question_id": "T4-P294-Q01",
@@ -280,7 +280,7 @@
       "question_no": "1",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 1 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık videosundaki ses, görsel, ışık, mekân ve zamanı belirleme",
-      "answer": "Bu yapı unsurları videoda gözlenmelidir; kayıt açılamadığı için belirli ses, ışık veya mekân ayrıntısı verilemez. Öğrenci her başlık altında gördüğü/duyduğu ayrıntıyı yazmalı; zaman için olayın geçtiği dönem veya sahnelerin sıralanışını belirtmelidir."
+      "answer": "Görüntü, ses, ışık, mekân ve zamanı videodan gözlediğiniz ayrıntılarla açıklayın. Zaman için olayın geçtiği dönemi veya sahnelerin sıralanışını belirtin."
     },
     {
       "question_id": "T4-P294-Q02",
@@ -289,7 +289,7 @@
       "question_no": "2",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 2 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselin yapı unsurları ile içeriği arasındaki ilişkiyi değerlendirme",
-      "answer": "Değerlendirme için her unsurun içeriğe ne kattığına bakılır: görüntü kişiyi ve eylemi somutlaştırabilir, ses bilgi veya duygu taşıyabilir, ışık ve mekân sahnenin anlamını destekleyebilir. Ancak bu videoda hangi unsurun nasıl kullanıldığı kaydı izleyip örnek göstermeden söylenemez."
+      "answer": "Görüntü kişiyi ve eylemi somutlaştırabilir; ses bilgi veya duygu taşıyabilir; ışık ve mekân sahnenin anlamını destekleyebilir. Her unsurun belgeselde ne kattığını gerçek bir örnekle açıklayın."
     },
     {
       "question_id": "T4-P294-Q03",
@@ -298,7 +298,7 @@
       "question_no": "3",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 3 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Ses, görüntü, ışık, mekân ve zaman unsurlarının videoya katkısını açıklama",
-      "answer": "Unsurlar izleyicinin olayı anlamasına, gerçeklik duygusu kurmasına ve önemli ayrıntıları fark etmesine katkıda bulunabilir. Bu genel işlevler, belirli videoda hangi katkının gerçekleştiğini kanıtlamaz; öğrenci her değerlendirmeyi gözlediği bir ses, görüntü veya sahneyle eşleştirmelidir."
+      "answer": "Görüntü, ses, ışık ve mekânın olayın anlaşılmasına, gerçeklik duygusuna ve önemli ayrıntıların fark edilmesine nasıl katkı sağladığını gözlediğiniz bir sahneyle açıklayın."
     },
     {
       "question_id": "T4-P294-Q04",
@@ -307,7 +307,7 @@
       "question_no": "4",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 4/a-d / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselde görsel-ses, görsel-nesne, görsel-mekân, ses-mekân ve ses-kişi ilişkilerini çözümleme",
-      "answer": "İlişkiler videodaki gerçek eşzamanlılık ve bağlam üzerinden kurulmalıdır; kayıt burada açılamadığı için tablo örnekleri doldurulamaz. Öğrenci için izleme notu başlıkları: görsel-ses uyumu; görüntüdeki nesnenin işlevi; mekânın eylemi nasıl çevrelediği; sesin mekânı nasıl duyurduğu; sesin kişiye veya konuşana nasıl bağlandığı."
+      "answer": "Tabloyu videoda gözlediğiniz eşzamanlılık ve bağlama göre doldurun: görüntü ile sesin uyumu; nesnenin işlevi; mekânın eyleme katkısı; sesin mekânı nasıl duyurduğu; sesin kişi veya konuşanla nasıl ilişkilendiği."
     },
     {
       "question_id": "T4-P294-Q05",
@@ -316,7 +316,7 @@
       "question_no": "5",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 5 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselin dil ve anlatımını içeriği ve günlük dille ilişkisi yönünden değerlendirme",
-      "answer": "Videonun dilini duymadan kullanılan sözcük, anlatıcı tutumu veya günlük dille benzerlik hakkında kesin değerlendirme yapılamaz. İzlerken anlatımın açık/örtük, yalın/yoğun ve bilgilendirici/duygusal özelliklerini belirleyin; günlük konuşmayla benzer veya farklı yönleri gerçek bir ifade üzerinden açıklayın."
+      "answer": "Videodaki sözcükleri ve anlatıcı tutumunu inceleyin. Anlatımın açık veya örtük, yalın veya yoğun, bilgilendirici veya duygusal yönlerini belirleyin; günlük konuşmaya benzeyen ya da ondan ayrılan özellikleri gerçek bir ifadeyle açıklayın."
     },
     {
       "question_id": "T4-P294-Q06",
@@ -325,7 +325,7 @@
       "question_no": "6",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 6 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgesel dilinin anlam ve iletiyi aktarma yeterliğini değerlendirme",
-      "answer": "Dil, belgeselin iletisini açıklaştırabilir; seçilen sözcük ve anlatıcı tutumu izleyicinin yorumu üzerinde etkili olabilir. Bu kayıtta iletinin ne olduğu ve dilin onu ne ölçüde aktardığı video incelenmeden belirlenemez. Öğrenci söylenenleri görüntü ve sesle karşılaştırarak yargısını kanıtlamalıdır."
+      "answer": "Dil belgeselin iletisini açıklaştırabilir; sözcük seçimi ve anlatıcı tutumu izleyicinin yorumunu etkileyebilir. Belgeseldeki iletiyi belirleyin, söylenenleri görüntü ve sesle karşılaştırın ve dilin iletiyi ne ölçüde aktardığını kanıtlarla değerlendirin."
     },
     {
       "question_id": "T4-P295-Q07",
@@ -334,7 +334,7 @@
       "question_no": "7",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 7 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinde kullanılan dil işlevlerini belirleme",
-      "answer": "Dil işlevleri konuşma ve yazı içeriğine göre sınıflandırılmalıdır. Video açılamadığı için bilgilendirme, duygu aktarma, yönlendirme veya ilişki kurma gibi işlevlerden hangisinin baskın olduğu söylenemez. Öğrenci her işlev için videoda duyduğu gerçek bir ifade veya ekrandaki yazıyı kanıt göstermelidir."
+      "answer": "Konuşma ve yazıdaki ifadelerin dil işlevlerini belirleyin (bilgi verme, duygu aktarma, yönlendirme, ilişki kurma vb.). Her işlev için videoda duyduğunuz bir ifadeyi veya ekrandaki yazıyı örnek gösterin."
     },
     {
       "question_id": "T4-P295-Q08",
@@ -343,7 +343,7 @@
       "question_no": "8",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 8 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeseldeki karakterlerin özellik ve amaçlarını belirleme",
-      "answer": "Karakterlerin amaçları eylem ve sözlerinden çıkarılmalıdır; EBA kaydı burada açılamadığı için belirli özellikler veya hedefler atfedilemez. Öğrenci karakterin ne yaptığına, ne söylediğine ve bu davranışın sonucuna ilişkin kısa notları birlikte değerlendirmelidir."
+      "answer": "Karakterlerin amaçlarını sözlerinden, eylemlerinden ve bu eylemlerin sonuçlarından çıkarın. Her özellik veya hedefi kısa bir gözlem notuyla destekleyin."
     },
     {
       "question_id": "T4-P295-Q09",
@@ -352,7 +352,7 @@
       "question_no": "9",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 9 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Görsel, ses, nesne ve mekânın iletileri aktarmadaki işlevini değerlendirme",
-      "answer": "Bu unsurlar bir iletiyi somutlaştırabilir, dikkat odağını kurabilir veya duygusal etki oluşturabilir; ancak işlevleri videodaki kullanıma göre belirlenir. Kayıt görülmeden tabloya belirli anlamlar yazmayın; her unsur için gözlenen bir örnek ve izleyiciye etkisini belirtin."
+      "answer": "Belgeseldeki bu unsurların iletiyi nasıl somutlaştırdığını, dikkati nasıl yönlendirdiğini veya nasıl bir duygusal etki oluşturduğunu gözlediğiniz örneklerle açıklayın. Her unsur için izleyicide oluşturduğu etkiyi belirtin."
     },
     {
       "question_id": "T4-P295-Q10",
@@ -361,7 +361,7 @@
       "question_no": "10",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 10 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselde anlatılan dönemin sosyal, ekonomik ve kültürel özelliklerini çıkarma",
-      "answer": "Bu çıkarım videoda yer alan kişi, mekân, nesne ve uygulama kanıtlarına bağlıdır. EBA kaydı açılmadığından döneme ilişkin sosyal veya ekonomik özellikler kesinleştirilemez. Öğrenci gözlediği bir ayrıntıdan sınırlı çıkarım yapmalı; tek sahneyi bütün bir dönem ya da Anadolu toplumu hakkında genellememelidir."
+      "answer": "Kişi, mekân, nesne ve uygulamalara ilişkin gözlemlerinize dayanarak dönemin sosyal veya ekonomik özellikleri hakkında sınırlı çıkarımlar yapın. Her çıkarımı videodan bir kanıtla destekleyin; tek sahneyi bütün bir döneme ya da Anadolu toplumuna genellemeyin."
     },
     {
       "question_id": "T4-P295-Q11",
@@ -370,7 +370,7 @@
       "question_no": "11",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 11 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselin içeriği, biçimi ve anlatımını dönem ve toplumla ilişkilendirme",
-      "answer": "Bu çıkarımı kurmak için belgeselin hangi yaşantıyı, dönemi ve toplumsal çevreyi gösterdiğini; ses, görüntü ve dilin bunu nasıl kurduğunu incelemek gerekir. Video burada açılamadığı için belirli bir toplumsal yorum verilemez. Sınıf sunumunda her çıkarım somut sahne veya ifadeye bağlanmalıdır."
+      "answer": "Belgeseldeki yaşantı, dönem ve toplumsal çevrenin nasıl sunulduğunu ses, görüntü ve dil örnekleriyle inceleyin. Toplumsal yorumunuzu somut bir sahne ya da ifadeyle destekleyin."
     },
     {
       "question_id": "T4-P295-Q12",
@@ -379,7 +379,7 @@
       "question_no": "12",
       "source_locator": "basılı s.295-296 / PDF s.296-297 — Çözümleyebilme soru 12 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Ses ve görüntü desteğinin Fedakârlık belgeselinin anlamına katkısını karşılaştırma",
-      "answer": "Belgeseli önce normal biçimde, sonra yönergede belirtilen ses veya görüntü desteğini kaldırarak karşılaştırın; hangi bilginin ya da duygunun değiştiğini not edin. Ses kuşağı ve görüntü birlikte farklı anlamlar kurabilir; sayfadaki kaynak metin de sesin görüntülerin ötesine geçebileceğini belirtir. Ancak bu belgeseldeki gerçek katkıyı video incelenmeden değerlendirmek mümkün değildir."
+      "answer": "Belgeseli önce normal biçimde, sonra yönergede belirtilen ses veya görüntü desteğini kaldırarak karşılaştırın. Hangi bilginin ya da duygunun değiştiğini not edin; görüntü ile sesin birlikte kurduğu anlamı ve sesin görüntüye kattıklarını örneklerle açıklayın."
     },
     {
       "question_id": "T4-P296-Q13",
@@ -388,7 +388,7 @@
       "question_no": "13",
       "source_locator": "basılı s.296 / PDF s.297 — Çözümleyebilme soru 13 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinde millî, manevi ve evrensel değerleri ve aktarım yollarını belirleme",
-      "answer": "Belgeselde hangi değerlerin işlendiği ve bunların nasıl aktarıldığı videoda gözlenmelidir. Kayıt burada açılamadığı için değer listesi kesin cevap olarak verilemez. Öğrenci bir değer seçtiğinde onu gösteren davranışı, sözü, nesneyi veya görüntüyü işaretlemeli; millî, manevi ya da evrensel sınıflandırmasını gerekçelendirmelidir."
+      "answer": "Belgeselde gördüğünüz değerleri belirleyin; her birini gösteren davranış, söz, nesne veya görüntüyü not edin. Değerin millî, manevi ya da evrensel yönünü gerekçelendirin."
     },
     {
       "question_id": "T4-P296-Q14",
@@ -397,7 +397,7 @@
       "question_no": "14",
       "source_locator": "basılı s.296 / PDF s.297 — Çözümleyebilme soru 14 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselini sosyoloji, psikoloji ve coğrafya açısından değerlendirme",
-      "answer": "Çalışma kâğıdı video izlendikten sonra doldurulmalıdır. Sosyoloji için kişiler ve toplumsal ilişkiler; psikoloji için duygu, amaç ve davranış; coğrafya için mekân, çevre ve yaşam koşulları incelenebilir. Belgesel içeriği görülmediğinden bu başlıklara özgü bulgu veya sonuç uydurulmamıştır."
+      "answer": "Çalışma kâğıdını izleme sonrasında doldurun. Sosyoloji için kişiler ve toplumsal ilişkileri; psikoloji için duygu, amaç ve davranışları; coğrafya için mekân, çevre ve yaşam koşullarını inceleyin. Her bulgunuzu videodan kanıtla destekleyin."
     },
     {
       "question_id": "T4-P297-Q01",
@@ -406,8 +406,8 @@
       "question_no": "1",
       "source_locator": "basılı s.297 / PDF s.298 — Süreci Değerlendirebilme soru 1",
       "prompt_summary": "Belgeselin değer katan unsurlarını kişisel beğeni ve günlük yaşantı açısından değerlendirme",
-      "answer": "Örnek değerlendirme düzeni: Beğendiğim unsuru seçer, belgeselde nerede gördüğümü belirtir, bunun hangi günlük yaşam deneyimiyle ilişkili olduğunu açıklarım. Görüntü, ses, anlatım veya konuya ilişkin yargı ancak öğrenci videoyu izledikten sonra kendi beğenisine göre yazılmalıdır.",
-      "guidance": "Kişisel beğeni ve yaşam deneyimi öğrenci adına doldurulmaz."
+      "answer": "Beğendiğiniz bir unsuru seçin, belgeselde nerede gördüğünüzü belirtin ve bunun günlük yaşam deneyiminizle ilişkisini açıklayın. Görüntü, ses, anlatım veya konuya ilişkin yargınızı videoyu izledikten sonra kendi beğeninize göre yazın.",
+      "guidance": "Kendi beğeninizi belirtin ve yaşam deneyiminizden gerçek bir örnekle gerekçelendirin."
     },
     {
       "question_id": "T4-P297-PERF02",
@@ -416,8 +416,8 @@
       "question_no": "2 / Öğrenme Günlüğü",
       "source_locator": "basılı s.297 / PDF s.298 — Süreci Değerlendirebilme / Öğrenme Günlüğü",
       "prompt_summary": "Fedakârlık videosu üzerine öğrenme günlüğü ve etkin izleyici hedefi doldurma",
-      "answer": "Öğrenme günlüğü izleme sonrasında öğrencinin kendi gözlem ve değerlendirmeleriyle tamamlanmalıdır. Öğretmen her başlığa şu yönlendirmeyi verebilir: “Belgeselin bana kattığı değerler” için fark edilen değeri; “uygulayabileceğim davranışlar” için uygulanabilir bir örneği; “hayatımı yansıtan yaşantılar” için gerçek kişisel bağı; “daha etkin izleyici” için geliştireceği dinleme/izleme davranışını yazın.",
-      "guidance": "Öğrenci adına yaşanmış deneyim, beğeni veya öğrenme sonucu oluşturmayın."
+      "answer": "Öğrenme günlüğünüzü izleme sonrasında kendi gözlem ve değerlendirmenizle tamamlayın. “Belgeselin bana kattığı değerler” başlığında fark ettiğiniz bir değeri; “uygulayabileceğim davranışlar” başlığında uygulanabilir bir örneği; “hayatımı yansıtan yaşantılar” başlığında gerçek bir kişisel bağı; “daha etkin izleyici” başlığında geliştireceğiniz dinleme veya izleme davranışını yazın.",
+      "guidance": "Günlüğünüze izleme sırasında edindiğiniz gerçek gözlem, beğeni ve öğrenme sonuçlarını yazın."
     }
   ]
 }

@@ -30,7 +30,7 @@
         "Bu_Okul_Görevi_İçin_Önerilen_Ek_Bilgiler": [
           "Sınıf, şube ve okul numarası gibi okul içi bilgilerin eklenmesi işlemi kolaylaştırabilir; bunlar kanuni asgari şartlarla karıştırılmamalıdır.",
           "Telefon veya e-posta gibi iletişim bilgilerinin eklenmesi okulun başvuru sahibine daha kolay ulaşmasını sağlayabilir.",
-          "Kişisel veriler örnek metinde gerçek bilgilerle değil yer tutucularla gösterilmelidir."
+          "Örnek metinde gerçek kişisel bilgiler yerine yer tutucular kullanın."
         ],
         "Model_Dilekçe_1_Kütüphane_Çalışma_Saatlerinin_Uzatılması": [
           "Makam: [OKUL ADI] MÜDÜRLÜĞÜNE / [İL-İLÇE]",
@@ -45,13 +45,6 @@
           "Talep Cümlesi: Topluluğun oluşturulması ve uygun bir salonun tahsis edilmesi hususunda gereğini arz ederim.",
           "Tarih / İmza / Ad-Soyad: [GG/AA/YYYY] | [İmza] | [Ad Soyad]",
           "İletişim / Ekler: [Adres] | [Telefon/E-posta] | [Sınıf/Şube] | [Okul No] | [Varsa ekler]"
-        ],
-        "Önerilen_Öğretmen_Değerlendirme_Rubriği": [
-          "Makam Başlığının Doğruluğu (15 Puan): Makamın açık ve uygun biçimde yazılması.",
-          "Metin Açıklığı ve Gerekçelendirme (30 Puan): İsteğin somut, anlaşılır ve gerekli ölçüde gerekçelendirilmiş olması.",
-          "Resmî Dil ve Nezaket (20 Puan): Resmî üslup ve uygun arz/rica kullanımına dikkat edilmesi.",
-          "Biçim ve Yerleşim (25 Puan): Ders kitabında verilen tarih, imza, ad-soyad, adres/iletişim ve varsa ekler düzenine uyulması.",
-          "İmla ve Noktalama (10 Puan): Yazım ve noktalama kurallarına uyulması."
         ]
       },
       "guidance": "Önce öğrenciye “Kanunen bulunması gerekenler neler?”, ardından “Ders kitabı bize hangi biçim kurallarını ekliyor?” sorularını sordurun. T.C. kimlik numarası, okul numarası, sayfa yerleşimi gibi unsurları kanunun asgari geçerlilik şartlarıymış gibi sunmayın. Örnek dilekçelerde gerçek adres, telefon veya kimlik bilgisi kullanmayın.",

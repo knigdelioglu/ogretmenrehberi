@@ -37,7 +37,8 @@
       "prompt": "Konuya Başlarken 1 — Radyo tiyatrosuna ilginin azalmasını nasıl değerlendiriyorsunuz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce metnin sunduğu nedenleri söyleyin; ardından kendi görüşünüzü neden–sonuç ilişkisiyle açıklayın."
+        "lead": "Önce metnin sunduğu nedenleri söyleyin; ardından kendi görüşünüzü neden–sonuç ilişkisiyle açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metnin söylediklerini öğrenci görüşünden ayırın. Özellikle kapitalizm/tüketim açıklamasını genel ve tartışmasız bir olgu gibi değil, Özden Cankaya'nın metindeki değerlendirmesi olarak aktarın; ‘toplumun sanatla derin bağı çöktü’ gibi kaynakta olmayan daha geniş sonuçları zorunlu cevap yapmayın."
       }
     },
     {
@@ -49,7 +50,8 @@
       "prompt": "Konuya Başlarken 2 — Edebî ve estetik kaygıların ortadan kalkmasının olası sonuçları nelerdir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Eğlence amacı ile edebî niteliği peşinen zıt saymadan dil, anlatım ve üretim koşulları açısından düşünün."
+        "lead": "Eğlence amacı ile edebî niteliği peşinen zıt saymadan dil, anlatım ve üretim koşulları açısından düşünün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Dilin yozlaşması’, ‘zihinsel tembellik’, ‘vasatlığın hegemonyası’ gibi kesin ve yüklü ifadeleri hazır cevap yapmayın."
       }
     },
     {
@@ -61,7 +63,8 @@
       "prompt": "Konuya Başlarken 3 — Radyo tiyatrosu ile televizyonu hayal gücü bakımından karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Birinde görüntüyü dinleyicinin kendisinin kurması, diğerinde ses ve görüntünün birlikte verilmesi üzerine örnek geliştirin."
+        "lead": "Birinde görüntüyü dinleyicinin kendisinin kurması, diğerinde ses ve görüntünün birlikte verilmesi üzerine örnek geliştirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Televizyon izleyicisini otomatik olarak ‘pasif tüketici’ diye nitelemeyin; karşılaştırmayı görselin hazır verilmesi ve ses üzerinden zihinsel tamamlama farkına dayandırın."
       }
     },
     {
@@ -80,7 +83,7 @@
           "İkinci dinlemede çatışma, ses, müzik, tonlama ve iletiye dikkat edin.",
           "Yalnız başlıktan hareketle bir ilk tahmin yazın."
         ],
-        "note": "Başlığa dayalı tahmini olayın kesin konusu gibi önceden göstermeyin."
+        "note": "Başlığa dayalı tahmini olayın kesin konusu gibi önceden göstermeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Başlıktan doğrudan Millî Mücadele, fabrika/atölye, zanaatkâr direnişi veya vatan savunması sonucu çıkarmayın. Kitap hem içeriğe hem yazılış amacına yönelik tahmin ister; iki tahmini de başlığın izin verdiği genel düzeyde tutun ve QR medya dinlendikten sonra doğrulayın."
       }
     },
     {
@@ -91,7 +94,7 @@
       "prompt": "Direnişin Ustaları — Kaydı dinleyip ilk tahmininizi metinle karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "QR'deki asıl kayıt ders kitabından açılır. Oyunun sesini dinlemeden olay, karakter veya tarih ayrıntısı kesinleştirilmez.",
+        "lead": "Karekodla asıl ses kaydını açıp dinleyin. Olay, karakter veya tarih hakkındaki tahminlerinizi kaydı dinledikten sonra metin kanıtıyla kontrol edin.",
         "items": [
           "İlk dinlemede gerçekten duyduğunuz sözleri ve fark ettiğiniz ses/davranış ipuçlarını kısa gözlem notu olarak yazın.",
           "İkinci dinlemede önemli bir repliği ve varsa ses, müzik veya efekt ipucunu doğrulayın.",
@@ -118,7 +121,7 @@
           "kafa yormak",
           "haber uçurmak"
         ],
-        "note": "Bu ifadelerin hangi anlamda kullanıldığını QR kaydı dinlemeden belirlemeyin."
+        "note": "Bu ifadelerin hangi anlamda kullanıldığını QR kaydı dinlemeden belirlemeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Aşağıdaki anlamlar yalnızca kelimelerin sözlük anlamıdır. ‘Direnişin Ustaları’ kaydı dinlenmeden bunların metindeki anlamı veya ‘torna’nın hangi işlem/nesneyle ilgili kullanıldığı kesinleştirilmemelidir. Basılı kelime duvarında bulunmayan ‘kafa yormak’ ve ‘haber uçurmak’ bu kayda eklenmemiştir."
       }
     },
     {
@@ -129,7 +132,7 @@
       "prompt": "Söz varlığı — Tahmin / doğrulama / alternatif ifade.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrenci her kelime için üç ayrı alan doldurur; önerdiği eş anlamın metin bağlamıyla uyuşup uyuşmadığını kontrol eder.",
+        "lead": "Her kelime için üç alanı doldurun; önerdiğiniz eş anlamın metindeki kullanımla uyuşup uyuşmadığını kontrol edin.",
         "sections": [
           {
             "title": "Tahmin",
@@ -171,7 +174,8 @@
       "prompt": "Hatırlayalım 1 — Radyo tiyatrosunu oluşturan temel unsurları belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tiyatroya ilişkin ön bilgilerinizi seslendirme, müzik ve efektle birlikte düşünün."
+        "lead": "Tiyatroya ilişkin ön bilgilerinizi seslendirme, müzik ve efektle birlikte düşünün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kitabın açıkça saydığı ses, söz, efekt, müzik ve yapım rollerini koruyun. Bunun yanında öğrencilerin tiyatro ön bilgilerinden getirdiği kişi, olay, çatışma, zaman ve mekân gibi gerekçeli unsurları da kabul edin; tek ve değişmez bir ‘zorunlu liste’ dayatmayın."
       }
     },
     {
@@ -183,7 +187,8 @@
       "prompt": "Hatırlayalım 2 — Müzik, ses efekti, seslendirme ve tonlama neden önemlidir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki küçük ses ayrıntısı örneğinden hareketle sesin dinleyicide nasıl bir sahne kurduğunu açıklayın."
+        "lead": "Kitaptaki küçük ses ayrıntısı örneğinden hareketle sesin dinleyicide nasıl bir sahne kurduğunu açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tahmini, 'müzik mutlaka perde görevi görür' veya 'tonlama karakterin ruh hâlini kesin olarak verir' gibi evrensel kurala dönüştürmeyin; gerçek işlev dinlenen yapımdaki kullanımla doğrulanır."
       }
     },
     {
@@ -200,7 +205,8 @@
           "Konu: Hangi somut olay veya durum anlatılıyor?",
           "Tema: Olayın arkasındaki genel düşünce ya da duygu nedir?",
           "Amaç: Dinleyicide hangi düşünce veya etki oluşturuluyor?"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Atölye, cephane, Millî Mücadele, ustaların vatan savunması veya ‘millî-manevi değerleri pekiştirme’ gibi sonuçları ses kaydı görülmeden hazır cevap yapmayın."
       }
     },
     {
@@ -220,7 +226,8 @@
           "Olası duygu / düşünce",
           "Kayıttaki dayanak",
           "Makul alternatif yorum"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Usta cesur’, ‘çırak korkuyor’, ‘vatan sevgisi taşıyor’ gibi sonuçları gerçek replik ve davranış görülmeden vermeyin."
       }
     },
     {
@@ -232,7 +239,8 @@
       "prompt": "Metni Anlayalım 3 — Hangi kahramanı seslendirmek isterdiniz? Seçiminizi gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kişiyi kayıttaki konuşma biçimi, olay içindeki rolü veya duygu değişiminden en az biriyle gerekçelendirin."
+        "lead": "Kişiyi kayıttaki konuşma biçimi, olay içindeki rolü veya duygu değişiminden en az biriyle gerekçelendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Başusta’, ‘genç çırak’, belirli korku/cesaret geçişleri gibi QR kaydı görülmeden doğrulanmamış karakterleri örnek cevap olarak vermeyin."
       }
     },
     {
@@ -252,7 +260,8 @@
           "İleti — metinden çıkarılan düşünce + dayanak",
           "Tür — kaynakta verilen bilgi: radyo tiyatrosu",
           "Alternatif yorum — aynı kanıt başka nasıl okunabilir?"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Dönem için tarih/yer/kişi ipucunu; zihniyet için söz ve davranışlarda görülen değer veya kabulü; ileti için metnin öne çıkardığı düşünceyi ayrı ayrı ele alın. Her çıkarımın yanına kayıttaki dayanağı ve mümkünse başka bir makul yorumu yazdırın; kaydı dinlemeden sınıflandırma sonucu vermeyin."
       }
     },
     {
@@ -264,7 +273,8 @@
       "prompt": "Metni Anlayalım 5 — İçerik, dil ve üsluptan yazarın sanat anlayışına ilişkin çıkarım yapınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "En az iki gerekçe kullanın: biri içerikten, biri dil veya sesli anlatımdan. Duyulmamış sahne ayrıntısı eklemeyin."
+        "lead": "En az iki gerekçe kullanın: biri içerikten, biri dil veya sesli anlatımdan. Duyulmamış sahne ayrıntısı eklemeyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Toplumcu ve millî sanat anlayışı’, ‘radyo estetiğine son derece hâkim’, ‘halkın doğal dilini tercih etmiş’ gibi hükümleri ses kaydı kanıtı olmadan hazır cevap yapmayın."
       }
     },
     {
@@ -309,7 +319,7 @@
           "Maliyet",
           "Duygu değişimleri"
         ],
-        "note": "Üretim maliyeti hakkında kesin bir tutar verilmediği için yalnız gözlenebilir sahne/dekor/teknik gereksinimler çerçevesinde çıkarım yapın."
+        "note": "Üretim maliyeti hakkında kesin bir tutar verilmediği için yalnız gözlenebilir sahne/dekor/teknik gereksinimler çerçevesinde çıkarım yapın.\n\nÖğretmen için kaynak ve değerlendirme notu: Osmancık'ın ‘destansı dili’, Direnişin Ustaları'nın torna/çekiç sesleri, kesin maliyet farkı, belirli iletileri veya oyunculuk biçimleri medyalar incelenmeden hazır cevap yapılmamalıdır."
       }
     },
     {
@@ -339,7 +349,8 @@
       "prompt": "Sıra Sizde 2 — Radyo tiyatrosu dinlemek dil becerilerinize nasıl katkı sağlayabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dinleme, konuşma, söz varlığı ve çıkarım yapma bakımından kendi deneyiminize de dayanan örnek verin."
+        "lead": "Dinleme, konuşma, söz varlığı ve çıkarım yapma bakımından kendi deneyiminize de dayanan örnek verin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Dört temel dil becerisini doğrudan geliştirir’, ‘en etkili işitsel laboratuvardır’ gibi mutlak üstünlük ifadelerinden kaçının."
       }
     },
     {
@@ -351,7 +362,8 @@
       "prompt": "Sıra Sizde 3 — Sözcük, cümle ve üslup kişilerin iç dünyasını yansıtmakta işlevsel mi?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir karakterin duyulan kelimesini, cümle kuruluşunu veya tonlamasını seçin; hangi duygu ve düşünceyi nasıl desteklediğini açıklayın."
+        "lead": "Bir karakterin duyulan kelimesini, cümle kuruluşunu veya tonlamasını seçin; hangi duygu ve düşünceyi nasıl desteklediğini açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Telaşta mutlaka kısa-devrik cümle, bilge kişide uzun-kurallı cümle, ‘derin keder’ veya belirli karakter psikolojisi gibi kalıpları kayda bakmadan dayatmayın."
       }
     }
   ]

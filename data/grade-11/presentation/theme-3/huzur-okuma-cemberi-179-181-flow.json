@@ -142,7 +142,7 @@
       "prompt": "Temel ve seçimlik rollerden sonraki toplantı için seçim yapınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dörder kişilik grubunuzda her öğrenci farklı bir rol denesin. Ürünler tek doğru cevaba indirgenmez.",
+        "lead": "Dörder kişilik grubunuzda herkes farklı bir rol denesin; her rol için metinden bir dayanak seçin.",
         "items": [
           "İlk oturumun metin kanıtlarını paylaşın.",
           "Yeni rolünüzü seçin.",
@@ -167,7 +167,8 @@
           "Macide",
           "Suat",
           "Fâhir"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: s.182'de daha sonra verilen Macide–İhsan aile bilgilerini s.180 tablosuna geriye taşımayın. Etkinliğin amacı öğrencinin o ana kadar gördüğü söz/davranıştan çıkarım yapmasıdır."
       }
     },
     {
@@ -227,8 +228,8 @@
         "lead": "Tabloda isimleri var ama verilen Huzur kesitinde yeterli doğrudan söz ve davranış bulunmuyor.",
         "sections": [
           {
-            "title": "Öğretmen notu",
-            "body": "Bu satırlar metinden kanıt yokken uydurularak doldurulmaz; tam roman ya da öğretmenin sağlayacağı ek parçalar gerekir."
+            "title": "Kanıt sınırı",
+            "body": "Okuduğunuz kesitte Suat ve Fâhir’in doğrudan söz veya davranışına ilişkin yeterli kanıt yok. Bu nedenle kişilik ve duygu yorumu yapmayın; başka bir metin parçası okuduysanız o kanıtı kullanın."
           }
         ]
       }
@@ -247,7 +248,8 @@
           "Kişilik: söz, davranış, anlatıcının tanıtımı",
           "Dil: gerçekten söylenen sözün anlatım özelliği",
           "Kaynağı yetersiz kişi: ‘bu kesitte belirlenemiyor’"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Macide'nin s.182'deki ‘şefkat’ bilgisi bu tabloya önceden taşınmamalıdır. Kaynak yetersizliği de geçerli bir öğretmen notudur."
       }
     },
     {
@@ -283,11 +285,11 @@
         "sections": [
           {
             "title": "İhsan / Macide",
-            "body": "İhsan'ın etkisi ve Macide'nin şefkati dolaylı anlatılır; bu kesitte doğrudan konuşma örneği yoktur."
+            "body": "İhsan’ın etkisi ve Macide’nin şefkati dolaylı anlatılır; bu kesitte doğrudan konuşma örneği yoktur."
           },
           {
             "title": "Suat / Fâhir",
-            "body": "Kitabın bu roman kesiti dil ve kişilikleri için yeterli doğrudan kanıt sağlamaz."
+            "body": "Okuduğunuz Huzur kesitinde Suat ve Fâhir’in dil ve kişilik özelliklerini belirleyecek yeterli doğrudan kanıt yoktur."
           }
         ]
       }
@@ -300,7 +302,7 @@
       "prompt": "Bilgi Köşesi — Türk Romanında İlkler: ilk altı kayıt (s.181)",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki tür, eser ve yazar eşleşmesini koruyun; bu ekran dış kaynak doğrulaması değil ders kitabı başvurusudur.",
+        "lead": "Tür, eser ve yazar eşleşmesini verilen bilgilerle karşılaştırın.",
         "items": [
           "İlk çeviri roman — Tercüme-i Telemak · Yusuf Kâmil Paşa",
           "İlk yerli roman — Taaşşuk-ı Talat ve Fitnat · Şemsettin Sami",
@@ -338,11 +340,11 @@
       "prompt": "Yazar–Eser–Kahraman oyunu: s.181 karekod notu",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bilgi Köşesi yanında oyuna yönlendiren bir karekod bulunur. Oyunun içeriği sayfada yazılı değildir; öğretmen erişirse sınıfta açar.",
+        "lead": "Bilgi Köşesi’nin yanındaki karekod oyuna yönlendirir. Erişebiliyorsanız karekodu açıp oyunun kendi yönergelerini izleyin.",
         "sections": [
           {
-            "title": "Sınıfta kullanım",
-            "body": "Oyuna erişmeden oyun sorularını, kurallarını veya sonuçlarını rehbere eklemeyin."
+            "title": "Oyunu oynarken",
+            "body": "Bilgi Köşesi’nin yanındaki karekodu açıp oyunun yönergelerini izleyin. Oyuna erişmeden içeriği, kuralları veya sonuçları hakkında tahminde bulunmayın."
           }
         ]
       }

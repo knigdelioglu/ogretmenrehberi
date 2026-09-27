@@ -71,9 +71,10 @@ assert(theme3Entries.length === 147 &&
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
 assert(theme3Compare?.entry_type === "source_limited" &&
   theme3Compare.source_locator.includes("altı dörtlük") &&
-  theme3Compare.answer.includes("karşılaştırmanın bu bölümü doğrulanamaz") &&
+  theme3Compare.answer.includes("şiir bölümünü metne eriştikten sonra tamamlayın") &&
+  theme3Compare.answer_sections?.["Mescid-i Aksa"]?.includes("Şiirin metnine erişmeden") &&
   Object.keys(theme3Compare.answer_sections ?? {}).length === 3,
-  "T3-P177-COMP01, şiir metni doğrulanamadığı için kaynakla sınırlı tutulmalı.");
+  "T3-P177-COMP01, şiir metni olmadan yorum üretmeyen öğrenci yönergesi sunmalı.");
 assert(
   teacherBookManifest.totals.answer_bank_entries === manifestAnswerTotal &&
     teacherBookManifest.totals.source_records === manifestSourceTotal,

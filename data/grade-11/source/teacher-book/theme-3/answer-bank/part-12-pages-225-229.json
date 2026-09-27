@@ -12,23 +12,22 @@
       "question_no": "Yazmayı Yönetebilme 1-2",
       "prompt_summary": "Direnişin Ustaları'ndan dönüştürülecek diyaloğu seçme ve uygun yazma stratejisi belirleme",
       "answer": "Diyalog seçimi ve başka türe dönüştürme süreci, gerçek dinleme kanıtına ve metnin bağlamına dayalı olarak planlanır.",
-      "guidance": "Gerçek diyalog ve kişilere ilişkin ayrıntılar QR dinleme kaydından gelmelidir. 'Başusta', 'çırak', gizli atölye, silah üretimi, devriye, torna sesi gibi ayrıntıları kayıt görülmeden hazır cevap olarak kullanmayın. Seçim ölçütleri öğrencinin gerekçelendirmesine açıktır.",
       "source_locator": "basılı s.225 / PDF s.226 — Yazmayı Yönetebilme 1-2",
       "answer_sections": {
-        "kitabin_istedigi_surec": [
-          "Direnişin Ustaları'ndan bir diyalog seçmek.",
-          "Diyaloğu seçerken kullanılan ölçütleri yazmak.",
-          "Ölçütleri/tercihi akranlarla paylaşarak görüş almak.",
-          "Diyaloğu bağlama uygun biçimde başka türe dönüştürmek için yazma yöntem ve stratejisi belirlemek."
+        "Çalışma adımları": [
+          "Direnişin Ustaları’ndan bir diyalog seçin.",
+          "Seçim ölçütlerinizi yazın.",
+          "Tercihinizi akranlarınızla paylaşarak görüş alın.",
+          "Diyaloğu bağlama uygun biçimde başka bir türe dönüştürmek için yöntem ve strateji belirleyin."
         ],
-        "olasi_secim_olcutleri": [
-          "Diyaloğun anlamlı ve bütünlüklü bir kesit oluşturması.",
-          "Kişiler arasındaki ilişkiyi, çatışmayı veya iletiyi görünür kılması.",
-          "Seçilecek yeni türde yeniden kurulmaya elverişli olması.",
-          "Metnin bağlamını korumaya imkân vermesi."
+        "Olası seçim ölçütleri": [
+          "Diyalog anlamlı ve bütünlüklü bir kesit oluşturuyor.",
+          "Diyalog kişiler arasındaki ilişkiyi, çatışmayı veya iletiyi görünür kılıyor.",
+          "Diyalog seçtiğiniz yeni türde yeniden kurulmaya elverişli.",
+          "Seçiminiz metnin bağlamını korumanıza imkân veriyor."
         ],
-        "kaynak_siniri": "Bu ölçütler öğretmen desteği için olası ölçütlerdir; seçilecek gerçek diyalog ve içerik QR kaydından doğrulanmalıdır.",
-        "Basılı sayfa notu": "Kitap, diyalogların radyo oyununda önemli olduğunu; müzik ve efektin konuyu pekiştirip zaman/mekân geçişlerine yardım edebildiğini belirtir."
+        "Kaynak sınırı": "Gerçek diyalog ve içerik için kaydı dinleyin; seçim ölçütlerinizi kendi gerekçenizle belirleyin.",
+        "Dinleme bilgisi": "Radyo oyununda diyaloglar önemlidir; müzik ve efekt konuyu pekiştirebilir, zaman ve mekân geçişlerine yardım edebilir."
       }
     },
     {
@@ -44,8 +43,7 @@
         "b_metin_ozellikleri": "Dönüştürülecek yeni metnin temel özellikleri: [...].",
         "c_tur_yontem_strateji": "Seçilen tür: [...]. Bu türe uygun yöntem ve strateji: [...].",
         "c_engeller": "Yazma sürecinde karşılaşılabilecek engeller: [...]. Bunları azaltmak için: [...]."
-      },
-      "guidance": "Amaç, tür ve yazma stratejisini öğrenci adına 'millî bilinç', 'fedakârlık', 'hikâye' veya 'anı' diye sabitlemeyin. Kitap yalnız örnek olarak yazma amacı için 'ikna etme, bilgilendirme vb.' ifadesini verir."
+      }
     },
     {
       "question_id": "T3-P226-PERF02",
@@ -53,8 +51,7 @@
       "printed_page": 226,
       "question_no": "İçerik Oluşturabilme a-k",
       "prompt_summary": "Dönüştürülecek metnin kişi, ileti, yapı, söz varlığı ve taslak planını oluşturma",
-      "answer": "İçerik Oluşturabilme aşaması s.226-227'de adım adım verilmiştir. Öğrenci planını gerçek dinleme notlarına göre doldurmalıdır; rehber, QR kaydında doğrulanmamış kişi, olay, mekân veya tarih ayrıntısı üretmemelidir.",
-      "guidance": "Özellikle hazır 'usta-çırak', atölye, işgal, silah parçası, devriye, kış gecesi, belirli çatışma ve sonuç senaryoları vermeyin. Plan şablonu boş bırakılarak öğrencinin seçtiği gerçek diyaloğa uygulanmalıdır.",
+      "answer": "İçerik oluşturma aşamalarını izleyin ve planınızı kendi dinleme notlarınıza göre doldurun. Kayıtta doğrulayamadığınız kişi, olay, mekân veya tarih ayrıntılarını eklemeyin.",
       "source_locator": "basılı s.226-227 / PDF s.227-228 — İçerik Oluşturabilme",
       "answer_sections": {
         "kitaptaki_adimlar": [
@@ -94,7 +91,6 @@
       "question_no": "Kural Uygulayabilme a-ı",
       "prompt_summary": "Diyaloğu başka türe dönüştürürken uygulanacak yazma kuralları",
       "answer": "Dönüştürülen metin, s.227–228’deki yazma kurallarıyla gözden geçirilmelidir; kitap hazır karakter veya olay örneği vermez.",
-      "guidance": "Kuralları 'usta olgun konuşur, çırak telaşlıdır', 'vatan sevgisi örtük verilir' gibi QR kaydı görülmeden üretilmiş içeriklerle örneklendirmeyin. Seçilen gerçek diyaloğun bağlamını koruyun.",
       "source_locator": "basılı s.227-228 / PDF s.228-229 — Kural Uygulayabilme",
       "answer_sections": {
         "kitaptaki_kurallar": [
@@ -118,12 +114,11 @@
       "printed_page": 228,
       "question_no": "Süreci Değerlendirebilme 1-5",
       "prompt_summary": "Yazma performansını öz değerlendirme, öğretmen geri bildirimi ve revizyonla geliştirme",
-      "answer": "Süreci Değerlendirebilme bölümü, öğrencinin kendi yazma sürecini değerlendirmesi ve geri bildirimle metnini geliştirmesi içindir. Sonuçlar öğrenci adına önceden doldurulmaz.",
-      "guidance": "QR Dereceli Puanlama Anahtarı'nın görünmeyen puan aralıklarını veya ölçütlerini uydurmayın. Basılı sayfada görünen değerlendirme ölçütleri kullanılabilir.",
+      "answer": "Yazma sürecinizi öz değerlendirme ve geri bildirimle gözden geçirin; sonuçları kendiniz için belirleyin.",
       "source_locator": "basılı s.228 / PDF s.229 — Süreci Değerlendirebilme 1-5 / QR rubrik",
       "answer_sections": {
-        "1_oz_degerlendirme": "Yazma sürecindeki duygu, düşünce ve davranışlarını gözden geçirerek kendini değerlendir: [...].",
-        "2_gorunen_ogretmen_olcutleri": [
+        "1_oz_degerlendirme": "Yazma sürecindeki duygu, düşünce ve davranışlarınızı gözden geçirerek kendinizi değerlendirin: ...",
+        "2_gorunen_olcutler": [
           "Dil ve üslup kullanımı",
           "Özgünlük",
           "Konuya uygunluk",
@@ -131,9 +126,9 @@
           "Başlık kullanımı",
           "Yazım ve noktalama uygunluğu"
         ],
-        "3_duzeltme_ve_hedef": "Geri bildirimler doğrultusunda yaptığım düzeltmeler: [...]. Yeni çalışma hedefim: [...].",
-        "4_yazar_kimligi": "Özgün yazar kimliğimi geliştirmek için: [...].",
-        "5_paylasim": "Kitabın önerdiği paylaşım ortamları: sınıf panosu, okul gazetesi veya genel ağdaki güvenilir ortamlar."
+        "3_duzeltme_ve_hedef": "Geri bildirimler doğrultusunda yaptığım düzeltmeler: ... Yeni çalışma hedefim: ...",
+        "4_yazar_kimligi": "Özgün yazar kimliğimi geliştirmek için: ...",
+        "5_paylasim": "Çalışmanızı sınıf panosunda, okul gazetesinde veya güvenilir bir genel ağ ortamında paylaşabilirsiniz."
       }
     },
     {
@@ -142,22 +137,21 @@
       "printed_page": 229,
       "question_no": "Öz Değerlendirme Formu + Çıkış Kartı",
       "prompt_summary": "Yazma öz değerlendirmesini ve tema sonu çıkış kartını gerçek performansa göre kullanma",
-      "answer": "Bu sayfadaki Öz Değerlendirme Formu ve 3-2-1 Çıkış Kartı öğrencinin kendi gerçek performansına göre doldurulmalıdır. Rehber, Evet/Kısmen/Hayır seçeneklerini veya kişisel çıkış kartı cevaplarını öğrenci adına işaretlemez.",
-      "guidance": "Hazır 'Evet/Kısmen' işaretleri, kişisel öğrenme örnekleri, iki merak sorusu veya 'beni en çok etkileyen...' cevabı vermeyin. Yalnız kitaptaki ölçütleri ve doldurma şablonunu gösterin.",
+      "answer": "Öz Değerlendirme Formu’nu ve 3-2-1 Çıkış Kartı’nı kendi gerçek performansınıza göre doldurun.",
       "source_locator": "basılı s.229 / PDF s.230 — Öz Değerlendirme Formu ve Çıkış Kartı",
       "answer_sections": {
         "oz_degerlendirme_olcutleri": [
           "1 — Yazımın içeriğine uygun bir başlık belirledim.",
           "2 — Yazımda dönüştürdüğüm diyaloğun içeriğini yansıttım.",
-          "3 — Bağlama ve hedef kitleye uygun bir söz varlığı (deyim, atasözü, mecaz ve terim vb.) belirlemeye özen gösterdim.",
-          "4 — Yazımı desteklemek amacıyla farklı anlatım biçimlerinden ve düşünceyi geliştirme yollarından yararlandım.",
+          "3 — Bağlama ve hedef kitleye uygun söz varlığı (deyim, atasözü, mecaz ve terim vb.) belirlemeye özen gösterdim.",
+          "4 — Yazımı desteklemek için farklı anlatım biçimlerinden ve düşünceyi geliştirme yollarından yararlandım.",
           "5 — Yazdığım metinde dil yapılarına, bağdaşıklık ögelerine, yazım ve noktalama kurallarına dikkat ettim.",
-          "6 — Türkçeyi bilinçli ve özenli kullanmaya dikkat ettim."
+          "6 — Türkçeyi bilinçli ve özenli kullandım."
         ],
-        "uc_yaz": "Temada öğrendiğin konu ve kavramlarla ilgili üç bilgiyi yaz: 1) [...] 2) [...] 3) [...].",
-        "iki_sor": "Temayla ilgili eksiklerin veya kavram yanılgıların hakkında iki soru yaz: 1) [...] 2) [...].",
-        "bir_paylas": "Temada öğrendiklerin arasında seni en çok etkileyen konuyu paylaş: [...].",
-        "sonraki_adim": "Kısmen veya Hayır işaretlenen becerileri araştırma ya da öğretmen desteğiyle tamamla."
+        "uc_yaz": "Temada öğrendiğiniz konu ve kavramlarla ilgili üç bilgi yazın: 1) ... 2) ... 3) ...",
+        "iki_sor": "Temayla ilgili eksikleriniz veya kavram yanılgılarınız hakkında iki soru yazın: 1) ... 2) ...",
+        "bir_paylas": "Temada öğrendikleriniz arasında sizi en çok etkileyen konuyu paylaşın: ...",
+        "sonraki_adim": "Kısmen veya Hayır işaretlediğiniz beceriler için araştırma yapın ya da öğretmeninizden destek alın."
       }
     }
   ]

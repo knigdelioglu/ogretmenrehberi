@@ -83,7 +83,8 @@
       "id": "s39-q3",
       "source_record_id": "T01-S0025",
       "answer_id": "T1-P39-Q03",
-      "layout": "question"
+      "layout": "vocabulary",
+      "density": "compact"
     },
     {
       "id": "s40-q1",
@@ -95,7 +96,8 @@
       "id": "s40-q2",
       "source_record_id": "T01-S0027",
       "answer_id": "T1-P40-Q02",
-      "layout": "question"
+      "layout": "question",
+      "sections_layout": "stacked"
     },
     {
       "id": "s40-q3",
@@ -114,7 +116,20 @@
       "source_record_id": "T01-S0030",
       "answer_id": "T1-P40-Q05",
       "layout": "structure",
-      "density": "compact"
+      "density": "large",
+      "sections_layout": "two-column",
+      "prompt": "Çalışma kâğıdı 1/2 — Konu, ana düşünce ve iletiler",
+      "prompt_mode": "FLOW_OVERRIDE"
+    },
+    {
+      "id": "s40-q5b",
+      "source_record_id": "T01-S0030",
+      "answer_id": "T1-P40-Q05B",
+      "layout": "structure",
+      "density": "large",
+      "sections_layout": "two-column",
+      "prompt": "Çalışma kâğıdı 2/2 — Anlatım ve düşünceyi geliştirme",
+      "prompt_mode": "FLOW_OVERRIDE"
     },
     {
       "id": "s41-q1",
@@ -137,10 +152,68 @@
       }
     },
     {
+      "id": "s43-private-letter",
+      "source_record_id": "T01-S0034",
+      "layout": "comparison",
+      "density": "large",
+      "prompt": "Özel mektup: kişisel haberleşme",
+      "prompt_mode": "FLOW_OVERRIDE",
+      "content": {
+        "lead": "Özel mektuplar, yakın kişiler arasında duygu, düşünce ve günlük haberleri paylaşmak için yazılır. Samimi ve kişisel bir dil öne çıkar.",
+        "sections": [
+          {
+            "title": "Kitaptaki ölçüt",
+            "body": "Mektubun belirli bir muhatabı vardır; hitap, kişisel ilişkiyi ve yazışma amacını yansıtır."
+          },
+          {
+            "title": "Kaplan'ın mektubunda",
+            "body": "Kaplan, dostu Âli'ye günlük yaşamından ve yalnızlığından söz eder; onunla konuşmaya duyduğu ihtiyacı dile getirir. Bu özellikler özel mektup yönünü gösterir."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s43-literary-letter",
+      "source_record_id": "T01-S0034",
+      "layout": "comparison",
+      "density": "large",
+      "prompt": "Edebî mektup: edebiyat üzerine düşünce paylaşımı",
+      "prompt_mode": "FLOW_OVERRIDE",
+      "content": {
+        "lead": "Edebî mektuplar, kişisel yazışma içinde sanat ve edebiyat görüşlerinin de paylaşıldığı metinlerdir.",
+        "sections": [
+          {
+            "title": "Kitaptaki ölçüt",
+            "body": "Yazar ve düşünürlerin edebî konular üzerine görüş, duygu ve düşüncelerini aktarması mektuba edebî bir işlev kazandırabilir."
+          },
+          {
+            "title": "Kaplan'ın mektubunda",
+            "body": "Kaplan roman kişileri ve anlatım tekniklerini değerlendirir; Dostoyevski ile Stendhal'in roman anlayışlarını karşılaştırır ve okuduklarının yazma isteğine etkisini anlatır."
+          }
+        ]
+      }
+    },
+    {
       "id": "s43-q1",
       "source_record_id": "T01-S0034",
       "answer_id": "T1-P43-Q01",
-      "layout": "question"
+      "layout": "question",
+      "density": "large",
+      "prompt": "Kaplan'ın mektubu hangi tür özelliklerini birlikte taşır?",
+      "prompt_mode": "FLOW_OVERRIDE",
+      "content": {
+        "lead": "Resmî ve iş mektupları belirli bir kurum veya işlem amacıyla yazılır; Kaplan'ın mektubundaki kişisel ve edebî paylaşım bu amaçlardan ayrılır.",
+        "sections": [
+          {
+            "title": "Resmî mektup",
+            "body": "Kurumlar ya da kişiler ile kurumlar arasındaki yazışmalardır. Açık, ciddi ve konuya dönük bir dil kullanılır."
+          },
+          {
+            "title": "İş mektubu",
+            "body": "Ticari kişi ve kuruluşların iş ilişkileri için yazdığı mektuplardır. Gereksiz ayrıntılardan kaçınılır; amaç ve istek açıkça belirtilir."
+          }
+        ]
+      }
     },
     {
       "id": "s43-q2",
@@ -292,7 +365,10 @@
       "id": "s52-q1",
       "source_record_id": "T01-S0056",
       "answer_id": "T1-P52-Q01",
-      "layout": "structure"
+      "layout": "structure",
+      "content": {
+        "note": "Dilekçe çalışması için önerilen öğretmen değerlendirme rubriği:\n• Makam Başlığının Doğruluğu (15 Puan): Makamın açık ve uygun biçimde yazılması.\n• Metin Açıklığı ve Gerekçelendirme (30 Puan): İsteğin somut, anlaşılır ve gerekli ölçüde gerekçelendirilmiş olması.\n• Resmî Dil ve Nezaket (20 Puan): Resmî üslup ve uygun arz/rica kullanımına dikkat edilmesi.\n• Biçim ve Yerleşim (25 Puan): Ders kitabında verilen tarih, imza, ad-soyad, adres/iletişim ve varsa ekler düzenine uyulması.\n• İmla ve Noktalama (10 Puan): Yazım ve noktalama kurallarına uyulması."
+      }
     }
   ]
 }

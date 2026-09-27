@@ -12,7 +12,6 @@
       "question_no": "Sıra Sizde 3",
       "prompt_summary": "Kendine yakın bulunan Huzur kişisinin konuşma biçimini günlük dille karşılaştırma",
       "answer": "Aşağıdaki model, Mümtaz’ın romandaki konuşma biçimini günlük dille karşılaştırır.",
-      "guidance": "Öğrenci Mümtaz yerine Nuran'ı da seçebilir; ancak metinde doğrudan konuşması bulunmayan kişilere (İhsan, Suat vb.) yapay bir üslup atfedilmemelidir. Öğrencinin gündelik dilini onun yerine dikte etmeyin; aradaki söz varlığı ve cümle yapısı farkını keşfetmesini sağlayın.",
       "source_locator": "basılı s.186 / PDF s.187 — Sıra Sizde soru 3",
       "answer_sections": {
         "kahraman_ve_yakinlik": "Örnek Kahraman: Mümtaz. Gerekçe: Sanata, musikiye ve İstanbul'un kültürel derinliğine duyduğu estetik hayranlık ve geçmişle bugün arasında kurmaya çalıştığı samimi köprü bana yakın geliyor.",
@@ -27,7 +26,7 @@
       "printed_page": 186,
       "question_no": "Çözümleyebilme 1",
       "prompt_summary": "Huzur'un olay, mekân, kişi kadrosu ve zaman unsurları",
-      "answer": "Ders kitabında okunan Huzur kesiti ve yardımcı parçalar üzerinden olay, mekân, kişi kadrosu ve zaman belirlenebilir; bu çalışma bütün romanın eksiksiz yapı çözümlemesi değildir.",
+      "answer": "Okuduğunuz Huzur kesitlerinde Mümtaz ile Nuran’ın İstanbul ve Boğaziçi gezileri, musiki, geçmiş ve yeni hayat üzerine konuşmaları; yardımcı parçalarda Mümtaz’ın anıları ve İhsan’ın hastalığı çevresindeki olaylar yer alır.",
       "answer_sections": {
         "olay": "Mümtaz ile Nuran'ın İstanbul ve Boğaziçi'ndeki gezileri; bu gezilerde musiki, geçmiş, kültür ve yeni hayat üzerine konuşmaları; yardımcı parçalarda Mümtaz'ın Nuran'la ilgili hatıraları ve İhsan'ın hastalığı çevresinde yaşadığı sıkıntılar.",
         "mekan": [
@@ -41,11 +40,11 @@
           "Nuran: Mümtaz'la şehir, musiki ve geçmiş üzerine konuşan temel kişi.",
           "İhsan: Mümtaz'ın hocası/rehberi olarak anlatılan ve hastalık parçasında yer alan kişi.",
           "Macide: s.182'de Mümtaz'ın aile çevresindeki şefkat ve bakım ilişkisi içinde anlatılır.",
-          "Suat ve Fâhir: etkinlik tablolarında adları geçer; bu okuma parçalarında ayrıntılı söz ve davranışları verilmediği için rolleri kesinleştirilmez."
+          "Suat ve Fâhir: Okuduğunuz kesitlerde ayrıntılı söz ve davranışları görünmediği için rolleri kesinleştirilemez."
         ],
         "zaman": "Şimdiki olaylar akşam, gece ve ağustos günleri gibi belirli zamanlarda ilerler; anlatı Mümtaz'ın çocukluk hatıraları ve geçmişe ilişkin çağrışımlarıyla zaman zaman geriye açılır."
       },
-      "explanation": "Yapı unsurları kitabın verdiği metin parçalarıyla sınırlı olarak çözümlenmiştir; tüm romanın eksiksiz olay örgüsü bu kesitte yer almaz. ‘Bergsoncu zaman’ dış eleştiri bilgisidir ve ders kitabında verilmez. ‘Suat ve Fâhir Mümtaz'la çatışma hâlindedir’ bilgisi de bu kesitlerin doğrudan kanıtı değildir.",
+      "explanation": "Yapı çözümlemenizi okuduğunuz kesitlerle sınırlayın. “Bergsoncu zaman” dış eleştiri bilgisidir; Suat ve Fâhir’in Mümtaz’la çatışması da bu parçalarda doğrudan gösterilmez.",
       "source_locator": "basılı s.167–170, s.182, s.185 ve yapı tablosu s.186 / PDF s.168–171, s.183, s.186–187"
     },
     {
@@ -67,7 +66,6 @@
         ]
       },
       "source_locator": "basılı s.167–170 ve soru s.187 / PDF s.168–171 ve s.188",
-      "guidance": "‘Pitoresk’, ‘iç monolog’ veya başka teknik terimleri, metinde gerçekten gösterilebildiği ölçüde kullanın; etiketi kanıtın yerine koymayın.",
       "evidence_quotes": [
         "Bir hüviyet lâzım.",
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
@@ -86,8 +84,7 @@
         "duygu_ve_ic_dunya": "Mümtaz'ın hüzün, kaygı ve hatıraları anlatımda iç değerlendirmeleri öne çıkarır.",
         "sehir_ve_betimleme": "İstanbul ve Boğaz, tema ile ilişkili biçimde ayrıntılı betimlenir.",
         "musiki_ve_cagrisim": "Eski musiki, geçmiş ve kimlik düşüncesini çağrıştıran bir unsur olarak söz varlığına ve anlatı akışına katılır."
-      },
-      "guidance": "‘Tema doğrudan şu üslubu doğurmuştur’ gibi tek nedene dayalı kesinlikten kaçının; soru yorum ister."
+      }
     },
     {
       "question_id": "T3-P188-Q03B",
@@ -101,8 +98,7 @@
         "mekan_kisi": "Mümtaz ve Nuran'ın Boğaz/Üsküdar gezileri, kişilerin konuşmaları ve duygularıyla birlikte anlatılır.",
         "mekan_zaman": "Tarihî yapılar ve musiki, şimdiki geziyi geçmişe ilişkin hatıra ve düşüncelerle ilişkilendirir.",
         "olay_uslup": "Gezi ve konuşma gibi basit olaylar; betimleme, diyalog ve anlatıcı değerlendirmesiyle düşünsel ve duygusal bir katman kazanır."
-      },
-      "guidance": "‘Birdenbire iç monoloğa geçer’, ‘ölüm felsefesi’ gibi metinde bu soruya doğrudan dayanmayan teknik sonuçlar yerine somut yapı ilişkilerini gösterin."
+      }
     },
     {
       "question_id": "T3-P188-Q03C",
@@ -110,14 +106,13 @@
       "printed_page": 188,
       "question_no": "3/c",
       "prompt_summary": "Romanın yazıldığı dönemin özelliklerinin üsluba etkisi",
-      "answer": "Ders kitabının s.171'deki Tanpınar biyografisinde belirtildiği üzere, çağdaşlaşma sürecindeki bireyin geleneksel kültürle modern kültür arasında yaşadığı çatışmalar onun eserlerine yansımıştır. Okunan Huzur parçasında da eski musiki, tarihî İstanbul, ‘yeni hayat’ ihtiyacı ve bugünün toplumsal sorunları yan yana gelir.",
+      "answer": "Tanpınar, çağdaşlaşma sürecindeki bireyin geleneksel kültürle modern kültür arasında yaşadığı çatışmaların eserlerine yansıdığını belirtir. Huzur kesitinde de eski musiki, tarihî İstanbul, yeni hayat ihtiyacı ve bugünün toplumsal sorunları yan yana gelir.",
       "source_locator": "basılı s.169–171 ve s.188 / PDF s.170–172 ve s.189 — soru 3/c",
       "answer_sections": {
         "soz_varligi": "‘mazi’, ‘hüviyet’, ‘terkip’, musiki ve tarihî mimariye ilişkin kelimeler geçmiş-kültür ilgisini görünür kılar.",
         "karsitliklar": "Ada ile Boğaz, eski kültür ile yeni hayat ihtiyacı, tarihî güzellik ile bakımsız semtler gibi karşılaştırmalar dönemin gerilimlerini düşündürür.",
         "sonuc": "Üslup, geçmişe ait kültürel söz varlığı ile güncel hayat meselelerini aynı anlatıda buluşturur."
-      },
-      "guidance": "‘Ada züppeliği’, ‘medeniyet buhranının sesi’ gibi metindeki ifadeyi aşan yüklü etiketler kullanmayın."
+      }
     },
     {
       "question_id": "T3-P188-Q03CC",
@@ -136,8 +131,7 @@
         "musiki": "Dede Efendi, makam ve beste adları mekân ile musiki arasında çağrışım kurar.",
         "mimari_ve_sehir": "Cami, çeşme, türbe, medrese ve semt adları İstanbul'u tarihî-kültürel ayrıntılarıyla görünür kılar.",
         "usluba_katki": "Bu kelimeler uzun betimleme ve düşünce cümlelerinde şiirsel ve kültürel çağrışımı güçlendirir."
-      },
-      "guidance": "‘Metafizik ağırlık’, ‘benzersiz musiki ritmi’ gibi değerlendirici üstünlük yargılarını zorunlu cevap yapmayın."
+      }
     },
     {
       "question_id": "T3-P188-Q04",
@@ -156,16 +150,15 @@
           "amac": "Gezilerle İstanbul'u tanımak; eskiye bağlılıkla bugünün hayatı arasındaki dengeyi sorgulamak (metinden çıkarım)."
         },
         "İhsan": {
-          "ozellikler": "Mümtaz'ın anlattığına göre öğretici, kültüre dönük, düşünsel rehber.",
+          "ozellikler": "Mümtaz’ın anlattığına göre kültüre dönük, düşünsel bir rehber.",
           "amac": "Kendi hayatlarının tarihî-kültürel kaynaklarını tanımak ve yaşamak (Mümtaz'ın aktardıklarından çıkarım)."
         },
         "Suat": {
-          "ozellikler": "Kitapta okunan parçada yeterli doğrudan özellik kanıtı yok.",
-          "amac": "Bu parçada belirlenemez; tam roman veya ek metin gerekir."
+          "ozellikler": "Okuduğunuz parçada Suat hakkında yeterli doğrudan özellik kanıtı yok.",
+          "amac": "Bu parçada belirlenemez; başka bir metin parçasına ihtiyaç vardır."
         }
       },
-      "source_locator": "basılı s.167–170, s.182 ve soru s.188 / PDF s.168–171, s.183, s.189",
-      "guidance": "Tablo ‘özellikleri’ ile ‘amaçları’nı farklı sütunlar olarak ister. Metnin vermediği Suat özelliklerini dışarıdan eklemeyin; Nuran ve İhsan için amaçları çıkarım olduğunu belirterek sunun."
+      "source_locator": "basılı s.167–170, s.182 ve soru s.188 / PDF s.168–171, s.183, s.189"
     },
     {
       "question_id": "T3-P189-PERF01",
@@ -174,7 +167,6 @@
       "question_no": "Düşünelim Paylaşalım",
       "prompt_summary": "Verilen Huzur parçalarındaki çatışmaları ve anlatım unsurlarının katkısını tartışma",
       "answer": "Üç parçadaki çatışma ve anlatım unsurları aşağıda ayrı başlıklarda çözümlenmiştir.",
-      "guidance": "Bu soru DÜŞÜN–EŞLEŞ–PAYLAŞ sürecidir: çatışmayı tek başına adlandırmak yeterli değil, onu belirginleştiren anlatım aracını da gösterin. Üçüncü sahnede Nuran'ın İhsan'la tanışmaktan tümüyle vazgeçtiğini söylemeyin; 'Nasıl olsa görürüz' der.",
       "source_locator": "basılı s.189 / PDF s.190 — üç Huzur parçası ve Düşün/Eşleş/Paylaş yönergeleri",
       "answer_sections": {
         "1 · Vapur düdükleri ve çocukluk hatırası": {
@@ -221,8 +213,7 @@
           "Bugün de canlı olan temel söz varlığına örnekler: gün, ev, güneş, yer, sevmek."
         ]
       },
-      "source_locator": "basılı s.190 / PDF s.191 — Fark Edelim",
-      "guidance": "Karşılaştırmayı s.190'daki gerçek kelime/cümlelerle gerekçelendirin. Türkçenin söz dizimini ‘her zaman özne-nesne-yüklem ve bütünüyle aynı’ diye mutlaklaştırmayın."
+      "source_locator": "basılı s.190 / PDF s.191 — Fark Edelim"
     },
     {
       "question_id": "T3-P190-GRAM01",
@@ -230,7 +221,7 @@
       "printed_page": 190,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur'dan verilen a-f cümlelerinin ögelerini belirleme",
-      "answer": "Yedi alt maddenin öge çözümlemeleri aşağıda ayrı verilmiştir; b iki yargıdan oluşur.",
+      "answer": "b cümlesi iki yargı içerir; e cümlesindeki gizli özne, önceki bağlamdan Nuran olarak anlaşılır.",
       "answer_sections": {
         "a": {
           "cumle": "İster istemez onların bir parçasıyız.",
@@ -279,7 +270,7 @@
         }
       },
       "source_locator": "basılı s.190–191 / PDF s.191–192 — Sıra Sizde soru 1, a/b/c/ç/d/e/f cümleleri",
-      "explanation": "Önceki metindeki ‘yedi harfli altı cümle’ ifadesi hatalıydı. Burada yedi alt madde vardır. d'de fiilimsi içeren uzun ögeleri sözcük sözcük parçalamamak; e'de gizli özneyi bağlamdan belirlemek gerekir."
+      "explanation": "d’deki fiilimsi içeren uzun ögeleri bir bütün olarak değerlendirin; e’de gizli özneyi önceki cümlelerden belirleyin."
     },
     {
       "question_id": "T3-P191-GRAM02",
@@ -310,7 +301,7 @@
         "eksilmiyen": "eksilmeyen",
         "zatürree": "zatürre"
       },
-      "explanation": "Kaynakta beş değişiklik gerekçelendirilebilir. “Şikâyet” ve “hâlini” kelimelerini düzeltilecek yanlışlar listesine eklemeyin; düzeltme işareti her kelimede aynı şekilde kaldırılmaz."
+      "explanation": "Düzeltme işareti her kelimede aynı biçimde kaldırılmaz. “Şikâyet” ve “hâlini” yazımlarını listedeki yanlışlarla karıştırmayın."
     },
     {
       "question_id": "T3-P191-PERF01",
@@ -319,7 +310,6 @@
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Huzur'u tarih, sosyoloji ve psikolojiyle ilişkilendiren grup araştırması",
       "answer": "Araştırma üç disiplin grubuyla yürütülür; metin kanıtı dış kaynak bilgisinden ayrı tutulur.",
-      "guidance": "Araştırmanın amacı romana dışarıdan bilgi yığmak değil, sosyal bilim bilgisinin metindeki olay ve kişileri nasıl daha iyi açıkladığını göstermektir.",
       "source_locator": "basılı s.191 / PDF s.192 — Ders Dışı Etkinlik; 1 hafta, 3 grup, araştırma ve paylaşım",
       "answer_sections": {
         "1 · Hazırlık": "Üç grup oluşturulur; her grup bir sözcü belirler. Süre: 1 hafta.",
@@ -335,7 +325,7 @@
       "printed_page": 192,
       "question_no": "Çalışma Kâğıdı",
       "prompt_summary": "Huzur çözümlemesi için çalışma kâğıdındaki beş konu başlığını doldurma",
-      "answer": "Çalışma kâğıdındaki beş başlık, önceki çözümlemelerden yararlanılarak doldurulabilir. Aşağıdakiler **örnek cevaplar**dır; özellikle değer sınıflandırması tek doğru değildir.",
+      "answer": "Çalışma kâğıdındaki beş başlık, önceki çözümlemelerden yararlanılarak doldurulabilir. Aşağıdakiler örnek cevaplardır; özellikle değer sınıflandırması tek doğru değildir.",
       "answer_sections": {
         "1 · Yazarın üslup seçiminin nedenleri ve sonuçları": "Şehir, musiki, geçmiş ve kişilerin iç dünyasını birlikte işlemek; betimleme, diyalog, çağrışım ve iç değerlendirmelerin öne çıkmasına yol açar.",
         "2 · Metnin yazıldığı dönemin özellikleri": "Tanpınar biyografisinin belirttiği geleneksel-modern kültür gerilimi, metindeki ‘yeni hayat’ ihtiyacı ile geçmişe/kültüre bağlılık tartışmasında görülebilir.",
@@ -347,7 +337,6 @@
           "ornek_evrensel": "Sevgi, başkasının güçlüğüne ve canlılara duyarlılık."
         }
       },
-      "guidance": "Millî, manevi ve evrensel kategoriler yer yer kesişebilir. Öğrencinin farklı sınıflandırmasını, metinden gerekçelendirdiğinde kabul edin; tabloyu tek doğru değer listesine kapatmayın.",
       "source_locator": "basılı s.192 / PDF s.193 — üstteki beş satırlı Çalışma Kâğıdı"
     },
     {
@@ -362,8 +351,7 @@
         "elestirim": "Uzun ve çağrışımlı cümleler ile ‘mazi’, ‘hüviyet’ gibi kelimeler okumayı bazı bölümlerde yavaşlatabiliyor.",
         "gerekcem": "Mümtaz'ın geçmişe dayanma düşüncesi ve Nuran'ın bugünün koşullarını soran konuşması; anlatımın hem düşünsel hem duygusal etkisini gösteriyor."
       },
-      "source_locator": "basılı s.192 / PDF s.193 — çalışma kâğıdının altındaki Süreci Değerlendirebilme soru 1",
-      "guidance": "Bu soru öğrencinin kişisel beğeni ve eleştirisini ister. Örnek yargıyı zorunlu cevap saymayın; gerekçenin eserdeki bir anlatım özelliğine veya kısa ifadeye bağlanmasını bekleyin."
+      "source_locator": "basılı s.192 / PDF s.193 — çalışma kâğıdının altındaki Süreci Değerlendirebilme soru 1"
     },
     {
       "question_id": "T3-P193-PERF01",
@@ -371,11 +359,9 @@
       "printed_page": 193,
       "question_no": "2",
       "prompt_summary": "Huzur'u kişisel metin değerlendirme ölçütlerine göre değerlendirme",
-      "answer": "Kitap ilk satırı ‘Tutarlılık’ örneğiyle doldurur; kalan boş satırlarda öğrenci kendi metin değerlendirme ölçütlerini ve her ölçüte bağlı gerekçeli değerlendirmesini yazabilir.",
-      "guidance": "Tutarlılık satırı kitapta verilmiştir; diğer beş ölçüt öneridir ve öğrenci kendi ölçütlerini seçebilir. Her ölçütün karşısına aynı genel övgüyü değil, metinden bir kanıt ve gerekçe yazılmalıdır.",
+      "answer": "Tutarlılık örnek ölçüttür; kalan satırlara kendi metin değerlendirme ölçütlerinizi ve her ölçüte bağlı gerekçeli değerlendirmenizi yazın.",
       "source_locator": "basılı s.193 / PDF s.194 — Süreci Değerlendirebilme 2, iki sütunlu altı satırlık tablo",
       "answer_sections": {
-        "Tutarlılık (kitabın örneği)": "Cümle ve ifadeler konu bütünlüğü çerçevesinde tutarlılık göstermektedir.",
         "Dil ve söz varlığı (örnek)": "‘Mazi’, ‘hüviyet’, musiki ve tarihî mimari adları anlatımı kültürel çağrışımlarla zenginleştirir.",
         "Kişilerin bakış açıları (örnek)": "Mümtaz geçmişin devamını vurgularken Nuran bugünün insanlarını ve yoksul semtleri hatırlatır.",
         "Mekânın işlevi (örnek)": "Üsküdar ve Boğaz betimlemeleri yalnız yer bildirimi değil, geçmiş ve aidiyet duygusu taşır.",
@@ -385,7 +371,8 @@
           "Kimlik ve kültür ilişkisi için: “Bir hüviyet lâzım.”",
           "Şehir ve aidiyet ilişkisi için: “İstanbul’u tanımadıkça kendimizi bulamayız.”",
           "Kişiler arası ilişki için: “İhsan, onun hem babası, hem hocası idi.”"
-        ]
+        ],
+        "Tutarlılık (örnek)": "Cümle ve ifadeler konu bütünlüğü çerçevesinde tutarlılık göstermektedir."
       },
       "evidence_quotes": [
         "Bir hüviyet lâzım.",
@@ -400,7 +387,6 @@
       "question_no": "3",
       "prompt_summary": "Kendini bir Huzur kişisinin yerine koyarak düşünce ve davranış geliştirme",
       "answer": "Örnek sözlü yanıt (Nuran): ‘Onun yerinde olsaydım tarihî İstanbul'a ve musikiye duyduğum ilgiyi korurdum. Fakat semtlerin bakımsızlığını ve insanların gündelik güçlüklerini görmezden gelmezdim. Mümtaz'a geçmişi korumakla bugün yaşayan insanlara duyarlı olmanın birlikte mümkün olduğunu söylerdim.’ Bu, Nuran'ın okunan parçada geçmiş ve bugünü birlikte düşünmesine dayanan bir örnektir.",
-      "guidance": "Sözlü görev olduğu için öğretmene örnek ürün verilir; öğrenci Mümtaz, Nuran ya da doğrudan kanıt bulunan başka kişiyi seçebilir. Okunan bölümde yeterli konuşma/davranış gösterilmeyen kişiye hayalî olay atfetmeyin.",
       "source_locator": "basılı s.193 / PDF s.194 — soru 3",
       "answer_sections": {
         "kisiyi_sec": "Nuran — kültürü severken güncel ihtiyaçları da gören bakışına yakınlık duyuyorum.",
@@ -415,8 +401,7 @@
       "printed_page": 193,
       "question_no": "Çıkış Kartı",
       "prompt_summary": "Huzur'da çağrışım zenginliğini Üç Yaz - İki Sor - Bir Paylaş ile değerlendirme",
-      "answer": "Çıkış kartında öğrenci kendi seçtiği ifadelerle üç düşünce, iki soru ve bir paylaşım yazar.",
-      "guidance": "Kitaptaki çıkış kartı tam olarak Üç Yaz (3), İki Sor (2), Bir Paylaş (1) alanlarından oluşur. Burada örnek ifadeler öğrencinin seçimi yerine geçmez; yazmadan önce kendi beğendiği gerçek metin sözlerini işaretlemesine izin verin.",
+      "answer": "Çıkış kartına kendi seçtiğiniz ifadelerle üç düşünce, iki soru ve bir paylaşım yazın.",
       "source_locator": "basılı s.193 / PDF s.194 — Çıkış Kartı: üç ayrı yazı, iki soru ve bir paylaşım",
       "answer_sections": {
         "Üç Yaz": [

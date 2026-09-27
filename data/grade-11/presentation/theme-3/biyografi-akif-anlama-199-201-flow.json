@@ -20,7 +20,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P199-Q01",
       "content": {
-        "lead": "Kendi duygunuzu söyleyin; biyografinin andığı en az bir eser veya insan grubuyla gerekçelendirin. Örneğin ‘Küfe’ ve ‘Hasta'daki çocuklar."
+        "lead": "Kendi duygunuzu söyleyin; biyografinin andığı en az bir eser veya insan grubuyla gerekçelendirin. Örneğin ‘Küfe’ ve ‘Hasta'daki çocuklar.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Köşklerde yapay aşk şiirleri yazmak yerine’, ‘toplumun yaralarını sarma aracı’ gibi kaynak dışı karşıtlık ve yorumlar eklemeyin."
       }
     },
     {
@@ -57,7 +58,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P199-Q02",
       "content": {
-        "lead": "s.196–197'deki gençlik şiirlerinin dinî konuları ve olgunluk dönemindeki toplum sorunlarının dinî duyarlılıkla anlatılışını birlikte değerlendirin."
+        "lead": "s.196–197'deki gençlik şiirlerinin dinî konuları ve olgunluk dönemindeki toplum sorunlarının dinî duyarlılıkla anlatılışını birlikte değerlendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kaynakta ‘hadisleri tefsir etmesi’, bütün İslâm coğrafyasına bir ‘diriliş reçetesi’ sunması gibi ifadeler yoktur; eklemeyin."
       }
     },
     {
@@ -94,7 +96,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P199-Q03",
       "content": {
-        "lead": "Önce metnin açıkça anlattığı olay dizisini bulun, ardından bu davranışın sizde düşündürdüğünü ayrı söyleyin."
+        "lead": "Önce metnin açıkça anlattığı olay dizisini bulun, ardından bu davranışın sizde düşündürdüğünü ayrı söyleyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Darülmesai'ye bağış, palto hikâyesi veya zihnindeki kesin gerekçeler bu metnin kanıtı değildir; hazır cevap olarak kullanmayın."
       }
     },
     {
@@ -105,7 +108,7 @@
       "prompt": "Soru 3 — Olayla yorumu birbirinden ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın verdiği sırayla ilerleyin. Kişinin iç niyetine ilişkin bilmediğiniz ayrıntıları kesin olay diye yazmayın.",
+        "lead": "Metinde verilen sırayı izleyin. Kişinin iç niyeti hakkında metinde bulunmayan ayrıntıları kesin olay gibi yazmayın.",
         "items": [
           "Yarışmaya ve para ödülüne mesafeli duruş",
           "İlk aşamada katılmama",
@@ -126,11 +129,11 @@
         "sections": [
           {
             "title": "Kaynak ayrımı",
-            "body": "Kişilere ilişkin olgular kısa kitap notlarından; anıta ilişkin gözlem görsel ve altyazısından gelir."
+            "body": "Kişilere ilişkin olgular kısa yaşam notlarından; anıta ilişkin gözlemler görsel ve altyazısından gelir."
           },
           {
             "title": "Duygu ve düşünce",
-            "body": "Öğrencinin kişisel yorumu bu bilgiler ve verilen dizelerden hareketle kurulur."
+            "body": "Kişisel yorumunuzu bu bilgiler ve verilen dizelerden hareketle oluşturun."
           }
         ]
       }
@@ -144,13 +147,14 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P200-PERF01",
       "content": {
-        "lead": "Duyguyu öğrenci seçer; kısa yaşam bilgilerini varsayımla genişletmeyin.",
+        "lead": "Dört kişinin kısa yaşam bilgilerini, Çanakkale’deki Vatan ve Millî Mücadele Anıtı’nı ve Mehmet Âkif’in verilen dizelerini birlikte değerlendirin; duygu ve düşüncenizi siz belirleyin.",
         "items": [
           "Şenay Aybüke Yalçın ve Necmettin Yılmaz",
           "Ferhat Gedik ve Gülşah Güler",
           "Vatan ve Millî Mücadele Anıtı",
           "Metnin çağrıştırdığı kişisel düşünce"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Bu kişileri ‘Âsım neslinin günümüzdeki yaşayan abideleri’ gibi tek bir yoruma bağlamayın. Öğrencinin saygı, hüzün, sorumluluk, vefa veya başka bir duyguyu kendi gerekçesiyle ifade etmesine alan açın."
       }
     },
     {
@@ -161,15 +165,15 @@
       "prompt": "Fark Edelim — İki öğretmenin sayfada verilen bilgilerini ayırt ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki öğretmenin adı, atanma yılı ve ölümüne ilişkin kısa metin dışında ayrıntı eklemeyin.",
+        "lead": "Şenay Aybüke Yalçın ve Necmettin Yılmaz’ın yaşamlarına ilişkin verilen tarih ve olay bilgilerini inceleyin; metinde yer almayan ayrıntıları eklemeyin.",
         "sections": [
           {
             "title": "Şenay Aybüke Yalçın",
-            "body": "2016'da müzik öğretmeni olarak atanmış; kitap 9 Haziran 2017 olayını verir."
+            "body": "Atama: 2016. Metinde aktarılan olay tarihi: 9 Haziran 2017."
           },
           {
             "title": "Necmettin Yılmaz",
-            "body": "2016'da sınıf öğretmeni olarak atanmış; kitap 16 Haziran 2017 olayını verir."
+            "body": "Atama: 2016. Metinde aktarılan olay tarihi: 16 Haziran 2017."
           }
         ]
       }
@@ -208,7 +212,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P201-WORK01",
       "content": {
-        "lead": "Kitabın s.201 tablosu dokuz ayrı yanıt alanı içerir. Tür, konu, ana düşünce ve örtük iletiyi birbirinin yerine yazmayın.",
+        "lead": "Çalışma kâğıdındaki dokuz başlığı ayrı ayrı doldurun; tür, konu, ana düşünce ve örtük iletiyi birbirinden ayırın.",
         "items": [
           "Konu",
           "Ana Düşünce",
@@ -219,7 +223,8 @@
           "Açık İletiler",
           "Örtük İletiler",
           "Bilgilerin Sunuluş Şekli"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Dokuz başlık tek bir uzun paragrafta eritilmez; her cevap satırına metinden ayrı örnek yerleştirilir. Tarih ve kişi adı açıklamada kanıttır; ‘ana düşünce’ salt kronoloji listesi değildir."
       }
     },
     {

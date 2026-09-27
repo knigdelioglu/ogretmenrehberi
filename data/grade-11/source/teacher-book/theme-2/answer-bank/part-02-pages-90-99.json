@@ -11,12 +11,12 @@
       "question_no": "1",
       "prompt_summary": "Oğulla Buluşma'nın adı, görseli ve yazarından söz varlığına ilişkin çıkarım",
       "answer": "Metin okunmadan önce başlık, görsel ve yazar adı yalnızca olası söz varlığı alanları hakkında tahmin kurmaya imkân verir. “Oğulla Buluşma” başlığı aile, baba-oğul ilişkisi, kavuşma/özlem gibi alanları; görseldeki atlı yaşlı kişi ise yolculuk, tabiat ve kırsal yaşamla ilgili sözleri çağrıştırabilir.",
-      "guidance": "Bu bir okuma öncesi tahminidir. Sultan, Nazifkan, 1941, tren istasyonu, katar, cephe, yular gibi metin okunduktan sonra öğrenilecek ayrıntıları cevapta spoiler olarak kullanmayın.",
+      "guidance": "Bu bir okuma öncesi tahminidir. Metni okumadan önce Sultan, Nazifkan, 1941, tren istasyonu, katar, cephe veya yular gibi sonradan öğreneceğiniz ayrıntıları tahmininizde kullanmayın.",
       "source_locator": "basılı s.90 / PDF s.91 — Sıra Sizde soru 1",
       "answer_sections": {
         "Başlıktan Çıkarılabilecekler": "oğul, baba, aile, buluşma, özlem, kavuşma gibi ilişki ve duygu alanları.",
         "Görselden Çıkarılabilecekler": "at, yol, dağ/bozkır, yolculuk, yaşlılık gibi görselde gerçekten seçilebilen unsurlar.",
-        "Yazardan Hareketle": "Öğrenci Cengiz Aytmatov hakkında önceden bilgi sahibiyse bunu tahmine gerekçe yapabilir; ancak henüz okunmayan metindeki savaş, kişi, mekân ve olay ayrıntıları önceden verilmemelidir."
+        "Yazardan Hareketle": "Cengiz Aytmatov hakkında önceden bildikleriniz varsa tahmininizi gerekçelendirmek için kullanabilirsiniz; henüz okumadığınız metindeki savaş, kişi, mekân ve olay ayrıntılarını önceden eklemeyin."
       }
     },
     {
@@ -26,7 +26,7 @@
       "question_no": "2",
       "prompt_summary": "Başlık ve görselden metnin konusu ve türüne ilişkin tahmin",
       "answer": "Başlık ve görsel, bir baba-oğul ilişkisi veya kavuşma etrafında gelişen anlatmaya bağlı bir metin olabileceğini düşündürebilir. Görseldeki atlı yaşlı kişi de yolculuk, arayış veya geçmişle bağlantılı bir olay ihtimalini çağrıştırabilir. Bunlar yalnız tahmindir; metin okununca doğrulanmalı veya değiştirilmelidir.",
-      "guidance": "Farklı gerekçeli tahminleri kabul edin. Tahmini, metni okuduktan sonraki bilgiyle geriye dönük olarak 'doğru cevap' hâline getirmeyin.",
+      "guidance": "Tahmininizi, metni okuduktan sonra öğrendiğiniz bilgilerle geriye dönük olarak değiştirmeden gerekçelendirin.",
       "source_locator": "basılı s.90 / PDF s.91 — Sıra Sizde soru 2",
       "answer_sections": {
         "Konu Tahmini": "Bir babanın oğluyla buluşması, onu araması ya da oğluyla ilgili bir yolculuk/hatıra yaşaması.",
@@ -40,8 +40,8 @@
       "printed_page": 90,
       "question_no": "Okuma Stratejisi",
       "prompt_summary": "Oğulla Buluşma için uygun okuma stratejisi belirleme",
-      "answer": "Oğulla Buluşma için okuma stratejisi metin okunmadan önce genel ve uygulanabilir biçimde seçilmelidir. Aşağıdaki model, henüz öğrenilmemiş olay ve kişi ayrıntılarını açıklamadan okuma sürecini yönetir.",
-      "guidance": "Strateji seçimi metnin sonradan öğrenilecek olay örgüsünü önceden açıklamamalıdır. Öğrenci farklı bir stratejiyi gerekçeli biçimde seçebilir.",
+      "answer": "Okuma stratejinizi metni okumadan önce seçin. Başlık ve sayfa düzenini gözden geçirme, önemli kişi ve olayları işaretleme, duygu ve çatışma ipuçlarını not etme gibi adımlarla okumanızı yönetebilirsiniz.",
+      "guidance": "Seçtiğiniz strateji, henüz okumadığınız olay örgüsünü önceden açıklamasın. Başka bir strateji öneriyorsanız nedenini belirtin.",
       "source_locator": "basılı s.90 / PDF s.91 — Metni Okuyalım basamak 1",
       "answer_sections": {
         "1. Göz Gezdirme": "Başlık, görsel, sayfa düzeni ve paragraflara bakarak metnin uzunluğu ve genel yapısı hakkında ilk fikir edinme.",
@@ -75,7 +75,7 @@
       "question_no": "2",
       "prompt_summary": "Seçili kelimeleri bağlama uygun cümlelerde kullanma",
       "answer": "Kelimelerin metnin ruhuna, kırsal ve tarihî atmosferine uygun biçimde kullanıldığı örnek cümleler:",
-      "guidance": "Öğrencilerin kurdukları cümlelerin kelimelerin doğru sözlük ve bağlam anlamını yansıtması yeterlidir; özgün cümleler kabul edilmelidir.",
+      "guidance": "Kelimelerin sözlük ve bağlam anlamını yansıtan özgün cümleler kurun.",
       "source_locator": "basılı s.95-96 / PDF s.96-97 — Söz Varlığımız soru 2",
       "answer_sections": {
         "Yular": "Yolculuk öncesinde atın yularını çözüp yelesini okşadı, sonra dağ yoluna doğru sürdü.",
@@ -108,7 +108,7 @@
       "question_no": "4a",
       "prompt_summary": "Türk şivelerindeki altı çizili kelimelerde yapı ve anlam değişikliklerini belirleme",
       "answer": "Kitapta Türkçenin farklı şivelerinden verilen metinler Türkiye Türkçesi karşılıklarıyla yan yana sunulmuştur. Güvenli çözüm, bu iki biçim arasında doğrudan görülen yazılış, ek ve kelime tercihi farklarını belirlemektir; tek örnekten tarihî bir ses yasası çıkarmak gerekmez.",
-      "guidance": "Öğrencinin 'şurada şu harf değişmiş / şu ek farklı / aynı anlam başka kelimeyle verilmiş' demesi yeterlidir. Düzenli tarihî ses denklikleri ileri sürülecekse ayrıca güvenilir dilbilim kaynağı gerekir.",
+      "guidance": "Karşılaştırmanızda yazılış, ek veya aynı anlamı veren farklı kelime örneklerini gösterin. Tarihî ses denklikleri ileri sürüyorsanız bunu güvenilir bir dilbilim kaynağıyla destekleyin.",
       "source_locator": "basılı s.96-97 / PDF s.97-98 — soru 4a",
       "answer_sections": {
         "Kazak Türkçesi": [
@@ -157,7 +157,7 @@
         ],
         "Kaynak Sınırı": "Belirli bir kelimenin neden tam olarak o biçime dönüştüğü, yalnız bu ders kitabındaki örneklerden kesinleştirilemez; ayrıntılı etimolojik açıklama için dilbilim kaynağı gerekir."
       },
-      "guidance": "Beyin fırtınası sonucunu tarihî gerçek gibi sunmayın. 'Rusça etkisi nedeniyle bu kelime değişti' gibi tekil nedensellikler kanıt olmadan kurulmasın."
+      "guidance": "Beyin fırtınasında öne sürdüğünüz nedenleri kesin tarihî bilgi gibi sunmayın. Örneğin, bir kelimenin Rusçadan etkilendiğini söylüyorsanız bu iddiayı kanıtla destekleyin."
     },
     {
       "question_id": "T2-P98-Q04C",
@@ -210,7 +210,7 @@
       "question_no": "2",
       "prompt_summary": "Sayfadaki görsellerin çağrıştırdığı kültür kavramları",
       "answer": "Kitabın 99. sayfasında yer alan altı görselin çağrıştırdığı ortak kültür kavramları:",
-      "guidance": "Görseller çok katmanlı çağrışımlara açıktır. Öğrencilerin görseldeki nesne ve eylemleri Türk kültürünün ortak yaşam ve sanat unsurlarıyla tutarlı biçimde gerekçelendirmeleri yeterlidir.",
+      "guidance": "Görseldeki nesne ve eylemleri Türk kültürünün ortak yaşam veya sanat unsurlarıyla ilişkilendirirken gerekçenizi açıklayın.",
       "source_locator": "basılı s.99 / PDF s.100 — soru 2",
       "answer_sections": {
         "1": "Atlı yaşam: Görselde geleneksel giysili atlılar görülür; atlı yaşam ve bozkır kültürüyle ilişki kurulabilir. Görsel tek başına kişileri 'alp-eren' gibi belirli bir tarihî kimlikle tanımlamaya yetmez.",
@@ -228,7 +228,7 @@
       "question_no": "3",
       "prompt_summary": "Türk dünyasının ortak kültürünü yansıtabilecek başka görsellere örnek verme",
       "answer": "Türk dünyasının ortak kültürel mirasını yansıtmak üzere seçilebilecek diğer zengin görsel temalar:",
-      "guidance": "Öğrenciler müzik, spor, gastronomi, bayram veya mimari alanlarından farklı görseller önerebilir; önemli olan görselin ortak kültürel bir kökü temsil etmesidir.",
+      "guidance": "Müzik, spor, gastronomi, bayram veya mimari alanlarından bir görsel seçebilirsiniz. Seçtiğiniz görselin ortak kültürel bir kökü nasıl temsil ettiğini gerekçelendirin.",
       "source_locator": "basılı s.99 / PDF s.100 — soru 3",
       "answer_sections": {
         "Dede Korkut ve Kopuz": "Sözlü edebiyat geleneğinin, ozanlık mirasının ve boyların ortak bilgelik simgesinin temsili.",

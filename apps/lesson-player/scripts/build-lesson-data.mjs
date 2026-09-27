@@ -156,6 +156,14 @@ function resolveDensity(step) {
   return density;
 }
 
+function resolveSectionsLayout(step) {
+  const layout = step.sections_layout ?? "grid";
+  if (layout !== "grid" && layout !== "two-column" && layout !== "stacked") {
+    fail(`Unsupported sections_layout "${layout}" for ${step.id}`);
+  }
+  return layout;
+}
+
 function resolveDisplayPrompt(step, source, answer, answerStepCountBySource) {
   if (step.prompt?.trim()) {
     return {
@@ -319,7 +327,15 @@ function buildLesson(flowPath) {
         fail(`Empty prompt_summary: ${step.answer_id}`);
       }
 
-      if (!answer.answer?.trim()) {
+      const sections = answer.answer_sections;
+      const hasStructuredAnswer = Array.isArray(sections)
+        ? sections.length > 0
+        : Boolean(
+            sections &&
+              typeof sections === "object" &&
+              Object.keys(sections).length > 0
+          );
+      if (!answer.answer?.trim() && !hasStructuredAnswer) {
         fail(`Empty answer: ${step.answer_id}`);
       }
     } else if (!step.content) {
@@ -334,11 +350,13 @@ function buildLesson(flowPath) {
     );
     const revealOrder = resolveRevealOrder(step, answer);
     const density = resolveDensity(step);
+    const sectionsLayout = resolveSectionsLayout(step);
 
     return {
       id: step.id,
       layout: step.layout,
       density,
+      sections_layout: sectionsLayout,
       reveal_order: revealOrder,
       display_prompt: displayPrompt.text,
       display_prompt_mode: displayPrompt.mode,

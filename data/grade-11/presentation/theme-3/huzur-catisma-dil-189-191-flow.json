@@ -41,7 +41,8 @@
           "1. Hatıra ve şifasız hüzün",
           "2. Güzel Boğaz ve yalnızlığa tahammül",
           "3. Tanışmak istemek ve nişanlı olarak tanıtılmaktan çekinmek"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Bu soru DÜŞÜN–EŞLEŞ–PAYLAŞ sürecidir: çatışmayı tek başına adlandırmak yeterli değil, onu belirginleştiren anlatım aracını da gösterin. Üçüncü sahnede Nuran'ın İhsan'la tanışmaktan tümüyle vazgeçtiğini söylemeyin; 'Nasıl olsa görürüz' der."
       }
     },
     {
@@ -153,7 +154,8 @@
           "Ortak kelimeler / ekler / cümle işleyişi",
           "Seyrek tarihî kelimeler ve kültürel göndermeler",
           "Uzun ve şiirsel betimlemenin etkisi"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Karşılaştırmayı s.190'daki gerçek kelime/cümlelerle gerekçelendirin. Türkçenin söz dizimini ‘her zaman özne-nesne-yüklem ve bütünüyle aynı’ diye mutlaklaştırmayın."
       }
     },
     {
@@ -190,7 +192,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P190-GRAM01",
       "content": {
-        "lead": "Kitapta yedi alt madde vardır. İki yüklemli b ile uzun fiilimsi gruplu d'yi sözcük sözcük parçalamadan çözümleyin.",
+      "lead": "a–f cümlelerinin ögelerini belirleyin. b'deki iki yüklemi ayrı değerlendirin; d'deki uzun fiilimsi gruplarını sözcük sözcük parçalamayın.",
         "items": [
           "a — İster istemez...",
           "b — Eski musıkîmizi...",
@@ -363,7 +365,8 @@
           "Roman–Tarih",
           "Roman–Sosyoloji",
           "Roman–Psikoloji"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Araştırmanın amacı romana dışarıdan bilgi yığmak değil, sosyal bilim bilgisinin metindeki olay ve kişileri nasıl daha iyi açıkladığını göstermektir."
       }
     },
     {
@@ -374,7 +377,7 @@
       "prompt": "Bir haftalık çalışmanın sonuçlarını grup sözcüleri aracılığıyla paylaşınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrenci araştırmasını yapılmış gibi yazmayın. Her grup gerçekten kullandığı kaynağı ve Huzur'daki sahneyi ayrı göstersin.",
+        "lead": "Sunumda kullandığınız araştırma kaynağını ve Huzur’daki sahne kanıtını ayrı ayrı gösterin.",
         "items": [
           "Hangi sahne veya ifade?",
           "Hangi sosyal bilim konusu?",

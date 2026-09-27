@@ -20,7 +20,8 @@
       "prompt": "Okuma öncesindeki Huzur tahminlerinizle metinden öğrendiklerinizi karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.165'te kendi yazdığınız ilk tahminlere geri dönün. Ardından s.167–171'den bu tahmini doğrulayan veya değiştiren ayrıntıları gösterin."
+        "lead": "s.165'te kendi yazdığınız ilk tahminlere geri dönün. Ardından s.167–171'den bu tahmini doğrulayan veya değiştiren ayrıntıları gösterin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin s.165'teki gerçek tahmini esas alınmalıdır; öğrenci adına ‘sakin/dingin aşk romanı tahmin etmişti’ demeyin. Sonradan öğrenilen kimlik, modernleşme veya Doğu–Batı yorumlarını geriye dönük biçimde ilk tahmine eklemeyin."
       }
     },
     {
@@ -32,12 +33,13 @@
       "prompt": "Huzur'un konusunu, temasını ve yazılış amacını ayrı ayrı belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.175'teki üç kutusunu ayrı düşünün: Anlatılanlar ne? Hangi temel duygu/düşünce öne çıkıyor? Metin okura neyi düşündürmek istiyor?",
+        "lead": "Üç soruyu ayrı düşünün: Anlatılanlar ne? Hangi temel duygu veya düşünce öne çıkıyor? Metin okura neyi düşündürmek istiyor?",
         "items": [
           "Konu",
           "Tema",
           "Yazılış amacı"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Yazarın kesin amacı budur’ biçiminde konuşmayın. Öğrenci başka bir yazılış amacı öneriyorsa metinden somut dayanak göstermesini isteyin."
       }
     },
     {
@@ -49,7 +51,8 @@
       "prompt": "Huzur'u temasına ve edebî akımına göre hangi roman türlerinde değerlendirirsiniz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.173'teki konusuna göre ve s.174'teki edebî akıma göre sınıflandırmaları birbirinden ayırın."
+        "lead": "s.173'teki konusuna göre ve s.174'teki edebî akıma göre sınıflandırmaları birbirinden ayırın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Empresyonizm’, ‘felsefi/tezli roman’ veya ‘sosyal roman’ etiketlerini bu sorunun zorunlu cevabı yapmayın. Öğrenci ikinci bir tür önerirse Bilgi Köşesi tanımı ile metinden somut kanıt istemek gerekir."
       }
     },
     {
@@ -61,7 +64,8 @@
       "prompt": "Boğaz, Mümtaz için yalnız bir mekân mıdır? Yüklenen işlev hangi özelliğine dayanır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.167'deki Ada–Boğaz karşıtlığını; manzara, mimari ve “hepsi bizimdi” ifadesiyle birlikte okuyun."
+        "lead": "s.167'deki Ada–Boğaz karşıtlığını; manzara, mimari ve “hepsi bizimdi” ifadesiyle birlikte okuyun.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Türk-İslam medeniyetinin ruhuyla yoğrulmuş sahici varoluş alanı’ gibi metnin üstüne çıkan soyut etiketler yerine, sorudaki işlevi doğrudan alıntılarla açıklatın."
       }
     },
     {
@@ -73,7 +77,8 @@
       "prompt": "“Bizler, kökü mazide olan atiyiz.” ifadesi geçmiş ile gelecek arasında nasıl bir ilişki kurar?",
       "prompt_mode": "VERBATIM_SHORT",
       "content": {
-        "lead": "Mümtaz'ın yeni hayat için bir dayanak ve kimlik gerektiğini söylediği bölüme (s.169) dönün."
+        "lead": "Mümtaz'ın yeni hayat için bir dayanak ve kimlik gerektiğini söylediği bölüme (s.169) dönün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kaynakta olmayan ‘çınar ilk fırtınada devrilir’, ‘başkalarını körü körüne taklit etmek zorunda kalır’ gibi ek alegori ve sonuçlar üretmeyin."
       }
     },
     {
@@ -90,7 +95,8 @@
           "İfadenin metindeki anlamı",
           "Şehrinizden tarihî/kültürel bir değer",
           "Bu değerin bugünle kurduğu bağ"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin şehrinde mutlaka Selçuklu ulu camisi, ahilik çarşısı, bozlak veya belirli bir zanaat bulunduğunu varsaymayın. ‘Batı taklitçiliğinden kurtulmak’ ifadesini sorunun zorunlu cevabı hâline getirmeyin."
       }
     },
     {
@@ -102,7 +108,8 @@
       "prompt": "Huzur'da dönemin sosyal hayatını yansıtan ayrıntılara metinden örnekler veriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.167'deki vapur yolcuları, iskele kahveleri ve güreşler ile s.169–170'teki semt gezileri ve sosyal farkları inceleyin."
+        "lead": "s.167'deki vapur yolcuları, iskele kahveleri ve güreşler ile s.169–170'teki semt gezileri ve sosyal farkları inceleyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metnin vermediği kesin tarih aralığını veya ‘Batılı tarzda eğlenen zümre’ gibi dış sosyolojik etiketi zorunlu cevap yapmayın."
       }
     },
     {
@@ -114,7 +121,8 @@
       "prompt": "Şehir hayatı kişilerin ruh hâlini ve sosyal ilişkilerini metinde nasıl etkiliyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Boğaz manzarasının uyandırdığı duyguları, yoksul semtlerin yarattığı etki ve ortak buluşma yerleriyle karşılaştırın."
+        "lead": "Boğaz manzarasının uyandırdığı duyguları, yoksul semtlerin yarattığı etki ve ortak buluşma yerleriyle karşılaştırın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Boğaz herkese melankolik ruh zenginliği kazandırır’ gibi metindeki herkese genellenemeyecek psikolojik sonuçlar vermeyin."
       }
     },
     {
@@ -126,7 +134,8 @@
       "prompt": "Nuran ve Mümtaz'ın buluştukları mekânlar ilişkileri ve yaşam tarzları hakkında ne düşündürüyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kanlıca, Çamlıca, Üsküdar ve Boğaz'daki gezileri yalnız yer adı olarak değil, beraber gerçekleştirdikleri etkinliklerle ilişkilendirin."
+        "lead": "Kanlıca, Çamlıca, Üsküdar ve Boğaz'daki gezileri yalnız yer adı olarak değil, beraber gerçekleştirdikleri etkinliklerle ilişkilendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Tüketim kültürünü reddederler’, ‘maddi zevklerin üstünde manevi değerleri tutarlar’ veya ‘entelektüel ruh akrabalığı’ gibi daha geniş yorumları metnin kesin sonucu yapmayın."
       }
     },
     {
@@ -139,7 +148,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "s.168'deki dört büyük cami ve bunların aşk, güzellik ya da annelikle ilişkisine odaklanın.",
-        "note": "Kitabın sorusu sözü Mümtaz'a atfediyor; metindeki “— Mümtaz, ...” seslenişi ise konuşanın başka biri olabileceğini düşündürüyor."
+        "note": "Kitabın sorusu sözü Mümtaz'a atfediyor; metindeki “— Mümtaz, ...” seslenişi ise konuşanın başka biri olabileceğini düşündürüyor.\n\nÖğretmen için kaynak ve değerlendirme notu: ‘Kadınlar Saltanatı’ döneminin siyasi anlamıyla karşılaştırma, ‘asil kadın medeniyeti’ gibi dış tarih yorumu bu sorunun kaynağında yoktur; eklemeyin."
       }
     },
     {
@@ -151,7 +160,8 @@
       "prompt": "Mümtaz'ın tarihî dönem romanına Şeyh Gâlip'in adını vermesi kişiliğini ve sanatını nasıl gösterir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.169'da tarihî roman taslağı ile Nuran'ın Mümtaz'a etkisinin birlikte anlatıldığı bölümü düşünün."
+        "lead": "s.169'da tarihî roman taslağı ile Nuran'ın Mümtaz'a etkisinin birlikte anlatıldığı bölümü düşünün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Şeyh Gâlip'in Hüsn ü Aşk'ı, tasavvufi sembolleri veya dış biyografik ayrıntıları öğrencinin bu metinden çıkarması beklenmez. Kullanılacaksa ayrı dış kaynak bilgisi olarak belirtilmelidir."
       }
     },
     {
@@ -168,7 +178,8 @@
           "Eserin adı ve türü",
           "İlişkili tarihî olay veya dönem",
           "Eserde vurgulanan duygu ve toplumsal hafıza"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Eserlerin ortaya çıkış tarihi, hangi savaşı tam olarak anlattığı veya ‘gaza ruhu’ gibi tarihsel yorumları kaynak göstermeden hazır bilgi olarak vermeyin. Öğrencinin farklı doğrulanmış örneği kabul edilir."
       }
     },
     {
@@ -180,7 +191,8 @@
       "prompt": "Nuran ve Mümtaz'ın mekânlara müzikle ilgili adlar vermesi sanatın hayatlarındaki yerini nasıl gösterir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.168'deki Derûnidil ve Nühüft beste adlarından hareketle müzik, mekân ve ortak hatıra bağını kurun."
+        "lead": "s.168'deki Derûnidil ve Nühüft beste adlarından hareketle müzik, mekân ve ortak hatıra bağını kurun.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Vatanla en asil ve kopmaz manevi köprü’, ‘metafizik derinlik’ gibi metnin söylemediği üstünlük ve felsefe yargıları eklemeyin."
       }
     }
   ]

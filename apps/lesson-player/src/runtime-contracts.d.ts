@@ -1,7 +1,8 @@
 import type { LessonData, LessonStep, RevealKey, StepContent } from "./types";
 
 export function studentVisibleRevealKeys(
-  keys: Iterable<RevealKey>
+  keys: Iterable<RevealKey>,
+  themeId?: string
 ): RevealKey[];
 
 export function buildExportedStep(
@@ -49,7 +50,7 @@ export function restoredStepIndex(
 export function studentVisibleOverrides<T extends Record<string, {
   content?: StepContent | null;
   reveal_order?: RevealKey[];
-}>>(overrides: T): T;
+}>>(overrides: T, themeId?: string): T;
 
 export function projectionLessonUrl(
   href: string,

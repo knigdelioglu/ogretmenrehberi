@@ -45,7 +45,7 @@
       "prompt": "Usûlî — Tezkire metnini özgün ve sadeleştirilmiş biçimleriyle karşılaştırarak okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Ana metni ders kitabından okuyun; Lesson Player metni tekrar yayımlamak yerine okuma sürecini yönetir.",
+        "lead": "Usûlî hakkındaki metni okuyun; kişi, yaşamı, eserleri ve söyleyişine ilişkin dikkat çeken ayrıntıları not edin.",
         "items": [
           "Özgün metinde tanıtılan kişinin hayatına ilişkin bilgileri işaretleyin.",
           "Şairin kişiliğine ve şiirine yönelik yargıları bulun.",
@@ -63,13 +63,14 @@
       "prompt": "Sıra Sizde 1/a–c — Günümüzde kullanılmayan kelimeleri tahmin edip doğrulayınız ve cümlede kullanınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrencinin bulduğu kelimeler farklı olabilir. Önce bağlam tahmini, sonra sadeleştirilmiş metinle karşılaştırma yaptırın.",
+        "lead": "Metinde bilmediğiniz kelimeleri seçin. Önce bağlamdan anlam tahmini yapın, ardından sadeleştirilmiş metin ve sözlükle karşılaştırın.",
         "items": [
           "Özgün metinden sözcük seçin.",
           "Bağlama göre anlamını tahmin edin.",
           "Sadeleştirilmiş metinle karşılaştırıp anlamı doğrulayın.",
           "Sınıfça seçilen on kelimeyle yeni cümleler kurun."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Örnek cümleler kelimenin anlamını göstermeli; Usûlî'nin hayatına kaynakta bulunmayan ‘ilim merkezlerini dolaştı’, ‘seyrüsülûkünü tamamladı’, ‘yıllar süren gurbet’ gibi yeni olaylar eklememelidir. Öğrencinin farklı kelime seçimi geçerlidir."
       }
     },
     {
@@ -80,7 +81,7 @@
       "prompt": "Söz varlığı — Bir kelimenin anlamını nasıl doğrularız?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tek tek kelime anlamlarını göstermek yerine çözüm yolunu öğrenciyle uygulayın.",
+        "lead": "Kelimenin anlamını bağlamdan çözmek için şu adımları uygulayın.",
         "sections": [
           {
             "title": "1. Özgün bağlam",
@@ -96,7 +97,7 @@
           },
           {
             "title": "4. Yeni kullanım",
-            "body": "Öğrencinin cümlesi kelimenin bağlamdaki anlamını korusun."
+            "body": "Kelimeyi, bağlamdaki anlamını koruyan yeni bir cümlede kullanın."
           }
         ]
       }
@@ -110,7 +111,8 @@
       "prompt": "Sıra Sizde 2 — Usûlî tezkiresi sizde hangi izlenimleri uyandırdı? Metinden gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kişisel izleniminizi belirledikten sonra yaşam bilgisi, nükteli söyleyiş veya dil özelliklerinden somut dayanak seçin."
+        "lead": "Kişisel izleniminizi belirledikten sonra yaşam bilgisi, nükteli söyleyiş veya dil özelliklerinden somut dayanak seçin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Dünyevi makamlara boyun eğmeyen bağımsız ruh’, ‘derin felsefi izlenim’, ‘tezkire geleneğinin kudreti’ gibi sonuçları tek doğru yapmayın. Öğrencinin izlenimi olumlu, mesafeli veya başka türlü olabilir; metinden dayanak göstermesi yeterlidir."
       }
     },
     {
@@ -129,7 +131,8 @@
           "Dil: Özgün metinde hangi dil özellikleri belirgin?",
           "Anlatım: Bilgi ve sanat değerlendirmesi nasıl birleşiyor?",
           "Dönem bağlantısı: Edebiyat ve tasavvuf çevresini hangi ayrıntılar yansıtıyor?"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Medrese-tekke-edebiyat meclisleri üçgeni’, ‘tasavvufun toplumdaki yüksek itibarı’, ‘ulema ile ariflerin ilişkisi’, ‘mükemmel çağ aynası’ gibi metnin birkaç ayrıntısından kesin biçimde çıkarılamayacak genellemeler yapmayın."
       }
     },
     {
@@ -140,7 +143,7 @@
       "prompt": "Tezkireyi beş ölçütte inceleyiniz; kanıt ile yorumu ayrı tutunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın özgün ve sadeleştirilmiş metinlerine dönerek her başlık için bir örnek hazırlayın.",
+        "lead": "Özgün ve sadeleştirilmiş metinlere dönerek her başlık için bir örnek hazırlayın.",
         "sections": [
           {
             "title": "İçerik ve yapı",
@@ -166,7 +169,8 @@
       "prompt": "Sıra Sizde 4 — Tezkire ile biyografinin ortak yönlerini Usûlî metninden gösteriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mehmet Âkif biyografisiyle bağlantı kurun: hayat, eğitim, kişilik, eser ve edebî çevre bilgilerinden hangileri iki türde de var?"
+        "lead": "Mehmet Âkif biyografisiyle bağlantı kurun: hayat, eğitim, kişilik, eser ve edebî çevre bilgilerinden hangileri iki türde de var?",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Sorunun istediği ortak yönlerdir. ‘Tezkire modern biyografinin tarihsel öncüsüdür’ gibi edebiyat tarihi hükmünü zorunlu cevap yapmayın; aile, meslek, görev gibi her metinde bulunmayan ayrıntıları da ortak özellik diye genellemeyin."
       }
     },
     {
@@ -178,7 +182,8 @@
       "prompt": "Sıra Sizde 5 — Usûlî tezkiresindeki öğretici metin özelliklerini açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metnin gerçek bir şairi tanıtan hangi bilgileri ve örnekleri verdiğini gösterin; sanatlı dilin öğretici işlevi ortadan kaldırıp kaldırmadığını tartışın."
+        "lead": "Metnin gerçek bir şairi tanıtan hangi bilgileri ve örnekleri verdiğini gösterin; sanatlı dilin öğretici işlevi ortadan kaldırıp kaldırmadığını tartışın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Bütün kişi, yer ve olaylar tarihsel olarak doğrulanmıştır’ anlamına gelen ‘tarihsel gerçekliğe sadakat’ gibi bağımsız araştırma gerektiren hükümlere girmeyin. Öğretici işlevi metnin bilgi verme amacından gösterin."
       }
     },
     {
@@ -190,7 +195,8 @@
       "prompt": "Sıra Sizde 6 — Kişisel hayatı konu alan metinler edebiyat açısından neden önemlidir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yalnız sanatçıyı tanıma demeyin; eser, dönem ve kültür ilişkisini Usûlî veya Mehmet Âkif örneğiyle açıklayın."
+        "lead": "Yalnız sanatçıyı tanıma demeyin; eser, dönem ve kültür ilişkisini Usûlî veya Mehmet Âkif örneğiyle açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Vazgeçilmezdir’, ‘birinci elden aktarır’, ‘bu bilgi olmadan eser anlaşılamaz’ gibi mutlak yargılardan kaçının."
       }
     },
     {
@@ -219,7 +225,8 @@
       "prompt": "Süreci Değerlendirebilme 1 — Mehmet Âkif Ersoy biyografisi için kendi beğeni ölçütlerinizi belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Hazır ölçüt listesini hemen açmayın; önce öğrencilerin ölçüt önermesini ve neden seçtiğini söylemesini isteyin."
+        "lead": "Önce beğeni ölçütlerinizi kendiniz belirleyin ve neden seçtiğinizi açıklayın; sonra örnek ölçütlerle karşılaştırın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Hazır listeyi tek doğru ölçüt seti gibi vermeyin. Öğrenci farklı bir ölçüt belirleyebilir; ölçütün metinde gözlenebilir olması ve neden seçildiğinin açıklanması yeterlidir."
       }
     },
     {
@@ -236,7 +243,8 @@
           "Seçtiğiniz ölçütü yazın.",
           "Metindeki karşılığını bulun.",
           "Ölçüte göre yargınızı gerekçelendirin."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Kusursuz’, ‘mükemmel’, ‘pürüzsüz’, ‘yetkin’ gibi sonuçları öğrenci adına vermeyin. Sonuç, öğrencinin seçtiği ölçüt ve kanıta göre değişebilir."
       }
     },
     {
@@ -248,7 +256,8 @@
       "prompt": "Süreci Değerlendirebilme 3 — Metinle ilgili beğeni ve eleştirilerinizi gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir beğeni ve bir eleştiri söyleyin; her biri için metinde gözlenebilir bir özellik gösterin."
+        "lead": "Bir beğeni ve bir eleştiri söyleyin; her biri için metinde gözlenebilir bir özellik gösterin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Ara başlık ihtiyacı veya bilgi yoğunluğu yalnız örnek eleştiridir. Öğrencinin kendi görüşünü hazır metinle değiştirmeyin."
       }
     },
     {
@@ -260,7 +269,8 @@
       "prompt": "Süreci Değerlendirebilme 4 — Metnin yazılma amacına ulaşıp ulaşmadığını açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Biyografinin okura kişiyi, eserleri ve edebî kişiliğini tanıtma amacıyla somut içeriği ilişkilendirerek değerlendirin."
+        "lead": "Biyografinin okura kişiyi, eserleri ve edebî kişiliğini tanıtma amacıyla somut içeriği ilişkilendirerek değerlendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metnin yazılma amacı ile ders kitabının pedagojik amacı birbirine karıştırılmamalıdır. ‘11. sınıf öğrencisine biyografi türünü öğretmek’ biyografi parçasının kendi yazılma amacı değildir. ‘Tam ve yetkin biçimde ulaşmıştır’ diye tek cevap dayatmayın."
       }
     }
   ]

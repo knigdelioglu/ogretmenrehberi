@@ -12,7 +12,7 @@
       "prompt_summary": "Metnin başlık ve görselinden hareketle “atışma”nın âşıklık geleneğindeki yerini tahmin etme",
       "answer": "Başlıkta iki âşığın adı geçmesi ve görselde sazlarıyla karşılıklı bir icra ortamının görülmesi, “atışma”nın iki halk şairinin karşılıklı söz ve müzik üretimine dayanan bir âşıklık geleneği uygulaması olabileceğini düşündürür. Bunun geleneğin hangi kurallarına dayandığı, nasıl ilerlediği ve hangi ustalık özelliklerini gerektirdiği video izlendikten sonra doğrulanmalıdır.",
       "explanation": "Soru doğrudan tahmin istemektedir; geleneğin bütün teknik kurallarını önceden doğru cevap olarak vermek etkinliğin işlevini bozar.",
-      "guidance": "Öğrencinin yalnız başlık ve görselden gerekçelendirebildiği tahminleri kabul edin. Genel âşıklık bilgisi daha sonra doğrulama/karşılaştırma için kullanılabilir.",
+      "guidance": "Başlık ve görselden gerekçelendirebildiğiniz tahminleri yazın. Genel âşıklık bilgilerini daha sonra doğrulama veya karşılaştırma için kullanabilirsiniz.",
       "source_locator": "basılı s.142 / PDF s.143 — Metni Anlayalım soru 1",
       "answer_sections": {
         "Başlıktan Çıkan Tahmin": "İki âşığın karşılıklı olarak şiir/söz söyleyeceği bir icra.",
@@ -26,8 +26,8 @@
       "printed_page": 142,
       "question_no": "2",
       "prompt_summary": "Atışmadaki benzetmeleri ve bunların âşık atışmasına katkısını belirleme",
-      "answer": "Atışmadaki benzetmelerin kesin tespiti QR video kaydına bağlıdır. Video izlenmeden belirli benzetmeler, benzetme yönleri veya temalar uydurulmamalıdır. Öğrenci, gerçek videoda duyduğu ifadeleri aşağıdaki şablonla çözümleyebilir.",
-      "guidance": "s.158'deki başka bir atışma örneğini bu QR videosunda geçen benzetme gibi kullanmayın. Her çözümleme doğrudan videodaki gerçek dizeye bağlanmalıdır.",
+      "answer": "QR videosundaki gerçek dizeleri dinleyip atışmada geçen benzetmeleri bulun. Videoyu izlemeden belirli benzetmeler, benzetme yönleri veya temalar eklemeyin; duyduğunuz ifadeleri aşağıdaki şablonla çözümleyin.",
+      "guidance": "S.158'deki başka bir atışma örneğini bu videoda duyulmuş gibi kullanmayın. Her çözümlemeyi videodaki gerçek bir dizeyle ilişkilendirin.",
       "source_locator": "basılı s.142 / PDF s.143 — soru 2 / Âşık Atışması QR medyası gerekli",
       "answer_sections": {
         "Benzetmeli İfade": "[Videoda gerçekten duyulan dize/ifade]",
@@ -35,7 +35,7 @@
         "Benzetme Yönü": "[Ortak özellik]",
         "Atışmaya Katkısı": "[Mizahı, somutluğu, estetik etkiyi, eleştiriyi veya anlamı nasıl güçlendirdiği]"
       },
-      "explanation": "source_limited: soru QR videodaki gerçek benzetmeleri ister; PDF bunların tam metnini vermez."
+      "explanation": "Benzetmeleri videoda duyduğunuz sözlerden belirleyin; çözümlemenizi gerçek dizeye dayandırın."
     },
     {
       "question_id": "T2-P142-PERF01",
@@ -43,12 +43,12 @@
       "printed_page": 142,
       "question_no": "Karşılaştıralım 1",
       "prompt_summary": "Âşık atışmalarında kullanılan mizah unsurları ile günlük hayattaki mizah unsurlarını karşılaştırma",
-      "answer": "Bu etkinlikte öğrenciler önce günlük hayatta mizahın nasıl kurulduğuna ilişkin örnekler üretir, ardından videoda gerçekten gözledikleri mizah unsurlarıyla karşılaştırır. Atışma mizahı hakkında genel folklor bilgisini, videoda görülmüş somut özellik gibi kullanmamak gerekir.",
-      "guidance": "“Atışmada mutlaka hece, redif, cinas, edep sınırı vardır” gibi genel bilgileri videodan kanıtlanmadan bu özel performansın gözlemi olarak yazmayın.",
+      "answer": "Önce günlük hayatta mizahın nasıl kurulduğuna ilişkin örnekler paylaşın. Ardından videoda gerçekten gözlediğiniz mizah unsurlarıyla karşılaştırın; genel folklor bilgisini videoda görülmüş bir özellik gibi sunmayın.",
+      "guidance": "Hece, redif, cinas veya edep sınırı gibi genel bilgileri bu özel videonun özelliği olarak ancak kayıtta kanıtını gördüğünüzde yazın.",
       "source_locator": "basılı s.142 / PDF s.143 — Karşılaştıralım",
       "answer_sections": {
         "Âşık Atışmasında Gözlenen Mizah": "[Videoda gerçekten duyulan söz oyunu, nükte, karşılık, abartı, benzetme vb. + örnek dize]",
-        "Günlük Hayattaki Mizah": "Durum komiği, kelime oyunu, taklit, ironi, beklenmedik karşılık, internet mizahı vb. öğrencinin gerçek örnekleri.",
+        "Günlük Hayattaki Mizah": "Durum komiği, kelime oyunu, taklit, ironi, beklenmedik karşılık veya internet mizahına ilişkin gerçek örnekleriniz.",
         "Benzerlik": "Her iki alanda da beklenmedik bağlantı, kelime oyunu, abartı veya karşılık verme güldürü oluşturabilir.",
         "Farklılık": "Atışmadaki mizahın biçimsel/sanatsal özellikleri ancak videoda gerçekten gözleniyorsa belirtilir; günlük mizahın biçimi ise bağlama göre daha serbest olabilir."
       }
@@ -59,7 +59,7 @@
       "printed_page": 143,
       "question_no": "2",
       "prompt_summary": "Günlük dil ile atışmadaki dil arasındaki benzerlik ve farklılıkları T diyagramında belirleme",
-      "answer": "Günlük dil ile dinlenen/izlenen atışmanın dili arasındaki benzerlik ve farklılıklar, video kaydındaki gerçek söz kullanımına göre doldurulmalıdır. PDF tek başına belirli ağız, söz sanatı veya gelenek kuralının bu performansta kullanıldığını doğrulamaz.",
+      "answer": "Karşılaştırmanızı dinlediğiniz ve izlediğiniz kayıttaki gerçek söz kullanımına dayandırın. Videoda görmediğiniz bir ağız, söz sanatı veya gelenek kuralını kanıtlanmış özellik gibi eklemeyin.",
       "guidance": "Ayak açma, tapşırma, lebdeğmez, cinas, belirli ağız özelliği veya hece kalıbını videoda gerçekten görülmeden bu atışmanın özelliği olarak işaretlemeyin.",
       "source_locator": "basılı s.143 / PDF s.144 — Karşılaştıralım 2 / QR video gerekli",
       "answer_sections": {
@@ -74,7 +74,7 @@
           "[Mecaz, benzetme, söz oyunu veya farklı söz varlığı kullanımı + gerçek örnek]"
         ]
       },
-      "explanation": "source_limited: karşılaştırma bu özel videodaki gerçek dil kullanımına dayanmalıdır."
+      "explanation": "Karşılaştırmanızı bu özel videoda duyduğunuz ve gördüğünüz gerçek dil kullanımına dayandırın."
     },
     {
       "question_id": "T2-P143-Q03",
@@ -83,7 +83,7 @@
       "question_no": "3",
       "prompt_summary": "Âşıkların dili kullanma biçimi hakkında çıkarımlar",
       "answer": "Videoda ve T diyagramında yapılan gerçek tespitlerden hareketle âşıkların dili; dinleyiciye hitap eden, söz ile ezgiyi ilişkilendiren ve gerektiğinde mizah, benzetme ya da söz oyunlarından yararlanan bir sanat dili olarak değerlendirilebilir. Hangi özelliklerin öne çıktığı doğrudan videodaki örneklerle gösterilmelidir.",
-      "explanation": "Çıkarım, öğrencinin önceki T diyagramındaki somut gözlemlerden doğmalıdır.",
+      "explanation": "Çıkarımınızı önceki T diyagramınızdaki somut gözlemlerden hareketle yapın.",
       "guidance": "“Türkçenin en berrak hâli”, “saliseler içinde eş anlamlı tarama”, “kadim belleği eksiksiz taşır” gibi ölçülemeyen övgü ve zihinsel süreç iddialarını kesin sonuç yapmayın.",
       "source_locator": "basılı s.143 / PDF s.144 — Karşılaştıralım 3",
       "answer_sections": {
@@ -125,8 +125,8 @@
       "printed_page": 143,
       "question_no": "Sıra Sizde",
       "prompt_summary": "Âşık atışması için beğeni ölçütleri oluşturma, gerekçelendirme ve beğenilen bölümü belirleme",
-      "answer": "Beğeni ölçütleri öğrenci tarafından oluşturulmalıdır. Kitap söz varlığı, tema, mizah ve söyleyici gibi alanları örnek verir; öğrenci bunlardan veya başka gerekçeli ölçütlerden seçim yapabilir.",
-      "guidance": "Yedi sabit ölçütü tek doğru liste gibi vermeyin; öğrencinin kendi beğeni kriterini oluşturması etkinliğin temel amacıdır.",
+      "answer": "Kendi beğeni ölçütlerinizi oluşturun. Kitaptaki söz varlığı, tema, mizah ve söyleyici örneklerinden yararlanabilir veya gerekçeli başka ölçütler seçebilirsiniz.",
+      "guidance": "Yedi ölçütü tek doğru liste gibi kabul etmeyin; beğeni ölçütünüzü kendiniz belirleyip gerekçelendirin.",
       "source_locator": "basılı s.143 / PDF s.144 — Sıra Sizde / Kontrol Listesi",
       "answer_sections": {
         "Ölçüt Havuzu": [
@@ -136,9 +136,9 @@
           "Söyleyicinin ses ve beden dili",
           "Saz-söz ilişkisi",
           "Karşılıklı cevapların etkileyiciliği",
-          "Öğrencinin kendisinin belirlediği başka bir ölçüt"
+          "Kendi belirlediğiniz başka bir ölçüt"
         ],
-        "Ölçüt Seçme Gerekçesi": "“Bu ölçüt benim için önemli çünkü...” biçiminde öğrencinin kendi estetik ölçütünü açıklaması.",
+        "Ölçüt Seçme Gerekçesi": "“Bu ölçüt benim için önemli çünkü...” sözünü kendi estetik ölçütünüzü açıklayarak tamamlayın.",
         "Beğenilen Bölüm": "[Videoda gerçekten seçilen bölüm/dize]",
         "Gerekçe": "“... ölçütüne göre bu bölümü beğendim; çünkü videoda ... gördüm/duydum.”"
       }
@@ -211,8 +211,8 @@
       "printed_page": 144,
       "question_no": "Çözümleyebilme",
       "prompt_summary": "Âşık atışmasının çok modlu unsurlarını (mekân, beden dili, söyleyiş tarzı, estetik) belirleme",
-      "answer": "Zihin haritası QR videoda gerçekten gözlenen çok modlu unsurlarla doldurulmalıdır. Aşağıdaki maddeler cevap değil, izleme sırasında sorulacak gözlem sorularıdır.",
-      "guidance": "Sandalye/sedir, mikrofon, tebessüm, başla tasdik, belirli tempo veya “kusursuz saz-söz uyumu” gibi ayrıntıları videoda gerçekten görülmeden yazmayın.",
+      "answer": "Haritanızı doldururken aşağıdaki soruları kullanın ve her yanıtınızı QR videosunda gerçekten gözlemlediğiniz görsel ya da işitsel ayrıntıya dayandırın.",
+      "guidance": "Sandalye veya sedir, mikrofon, tebessüm, başla tasdik, belirli tempo ya da kusursuz saz-söz uyumu gibi ayrıntıları videoda gerçekten görmeden yazmayın.",
       "source_locator": "basılı s.144 / PDF s.145 — Çözümleyebilme zihin haritası / QR video gerekli",
       "answer_sections": {
         "Mekân": [
@@ -236,7 +236,7 @@
           "Bu etkiyi hangi gerçek video ayrıntısı destekliyor?"
         ]
       },
-      "explanation": "source_limited: haritanın içeriği doğrudan QR videodaki gerçek görsel ve işitsel unsurlara bağlıdır."
+      "explanation": "Haritanızı QR videosunda gerçekten gözlemlediğiniz görsel ve işitsel unsurlarla doldurun."
     },
     {
       "question_id": "T2-P145-PERF01",
@@ -244,18 +244,18 @@
       "printed_page": 145,
       "question_no": "Altı Şapka",
       "prompt_summary": "Âşık atışmasını altı şapka tekniğiyle çok boyutlu değerlendirme",
-      "answer": "Altı Şapka etkinliğinde her grup, kitapta kendi şapkasına verilen soruyu QR videonun gerçek içeriğine göre cevaplamalıdır. Aşağıdaki yapı cevapları önceden belirlemez; düşünme yönünü ve kanıt beklentisini gösterir.",
+      "answer": "Size verilen şapka sorusunu QR videosundan seçtiğiniz bir kanıtla yanıtlayın; kendi değerlendirmenizi gerekçelendirin.",
       "guidance": "Dünya malının geçiciliği, feleğin sillesi, vefasızlık, kültürel gurur veya belirli genel sonuçları video izlenmeden hazır cevap yapmayın. Her grup gerçek kanıt veya kişisel gerekçe sunmalıdır.",
       "source_locator": "basılı s.145 / PDF s.146 — Altı Şapka tekniği / QR video gerekli",
       "answer_sections": {
         "Beyaz Şapka": "Atışmada aktarılmak istenen ileti nedir? → Yalnız videodaki sözlerden çıkarılan ileti + gerçek dize/örnek.",
-        "Kırmızı Şapka": "Atışmayı dinlerken/izlerken ne hissettiniz, neden? → Öğrencinin kişisel duygusu + bunu tetikleyen gerçek an.",
+        "Kırmızı Şapka": "Atışmayı dinlerken veya izlerken ne hissettiniz, neden? → Kişisel duygunuz ve bu duyguyu uyandıran gerçek an.",
         "Siyah Şapka": "Atışmadaki olumsuz iletiler nelerdir? → Varsa videodan gerçek söz/tema; yoksa “belirgin olumsuz ileti tespit etmedim” denebilir.",
         "Sarı Şapka": "Atışmadaki iyimser iletiler nelerdir? → Varsa gerçek söz/tema ile gerekçe.",
-        "Yeşil Şapka": "Atışmayı siz nasıl devam ettirirdiniz? → Öğrencinin yaratıcı devam önerisi; videonun son temasına/biçimine uyum gerekçesi.",
+        "Yeşil Şapka": "Atışmayı siz nasıl devam ettirirdiniz? → Yaratıcı devam öneriniz ve videonun sonundaki tema veya biçimle kurduğunuz bağ.",
         "Mavi Şapka": "Atışmayla ilgili genel düşünceniz nedir? → Diğer grupların bulgularını da dikkate alan gerekçeli sentez."
       },
-      "explanation": "source_limited: Altı Şapka cevaplarının içeriği QR videoya ve öğrencinin değerlendirmesine bağlıdır."
+      "explanation": "Altı Şapka yanıtınızı videoda duyduğunuz veya gördüğünüz ayrıntılara ve kendi değerlendirmenize dayandırın."
     },
     {
       "question_id": "T2-P146-PERF01",
@@ -263,8 +263,8 @@
       "printed_page": 146,
       "question_no": "Görüş Geliştirme",
       "prompt_summary": "Atışmaların şiir şeklinde söylenme nedenleriyle ilgili 4 yargıyı görüş geliştirme tekniğiyle değerlendirme",
-      "answer": "Görüş Geliştirme etkinliğinin amacı dört yargının hepsini doğrulamak değil, öğrencinin her yargıya ilişkin konumunu gerekçelendirmesi ve başkalarını dinledikten sonra gerekirse görüşünü değiştirmesidir.",
-      "guidance": "Her yargı için hem destekleyen hem sorgulayan gerekçe üretin. Sonunda “dört yargı da doğrudur” şeklinde ortak zorunlu sonuç vermeyin.",
+      "answer": "Dört yargının her biri için kendi görüşünüzü gerekçelendirin. Arkadaşlarınızı dinledikten sonra görüşünüzü koruyabilir veya değiştirebilirsiniz.",
+      "guidance": "Her yargı için destekleyen ve sorgulayan gerekçeler üretin. Dört yargının tamamını doğru kabul etmeniz gerekmez.",
       "source_locator": "basılı s.146 / PDF s.147 — görüş geliştirme / Çalışma Kâğıdı",
       "answer_sections": {
         "Yargı 1 — Halk ozanları duygu ve düşüncelerini en iyi biçimde şiirle ifade edebildikleri için": {
@@ -287,7 +287,7 @@
           "Karşı Gerekçe Örneği": "Mecazlı veya yoğun şiir dili bazen anlamayı kolaylaştırmak yerine zorlaştırabilir.",
           "Öğrenci Kararı": "[...] + gerekçe"
         },
-        "Sonuç": "Öğrenci, arkadaşlarını dinledikten sonra ilk konumunu koruyabilir veya değiştirebilir; doğru cevap tek bir ortak görüş değildir."
+        "Sonuç": "Arkadaşlarınızı dinledikten sonra ilk görüşünüzü koruyabilir veya değiştirebilirsiniz; tek bir ortak görüşe ulaşmanız gerekmez."
       }
     },
     {
@@ -296,7 +296,7 @@
       "printed_page": 147,
       "question_no": "1",
       "prompt_summary": "Atışmaya değer katan unsurlar ile söyleyicinin metne katkısını değerlendirme",
-      "answer": "Bu değerlendirme QR videodaki gerçek performansa dayanmalıdır. Öğrenci iki sütunu somut gözlemlerle doldurur; video görülmeden belirli bir nezaket, vurgu, jest, diksiyon veya hazırcevaplık niteliği kesinleştirilmez.",
+      "answer": "QR videosunda gerçekten gözlemlediğiniz ayrıntılarla iki sütunu doldurun. Nezaket, vurgu, jest, diksiyon veya hazırcevaplık gibi özellikleri videoda kanıtını görmeden kesinleştirmeyin.",
       "guidance": "“Tane tane söyleme”, “yüksek nezaket”, “hiç duraksamadan cevap verme”, “karizma” gibi özellikleri videoda gerçekten gözlemlenmeden hazır cevap olarak yazmayın.",
       "source_locator": "basılı s.147 / PDF s.148 — Süreci Değerlendirebilme soru 1 / QR video gerekli",
       "answer_sections": {
@@ -312,7 +312,7 @@
           "[Bu performans özelliğinin metnin etkisini nasıl değiştirdiği]"
         ]
       },
-      "explanation": "source_limited: soru hem metne değer katan unsurları hem söyleyicinin katkısını öğrencinin kendi duygu ve düşünceleri doğrultusunda değerlendirmesini ister."
+      "explanation": "Metne değer katan unsurları ve söyleyicinin katkısını kendi duygu ve düşünceleriniz doğrultusunda değerlendirin; her yorumunuzu somut gözleme dayandırın."
     },
     {
       "question_id": "T2-P147-PERF01",
@@ -320,8 +320,8 @@
       "printed_page": 147,
       "question_no": "2",
       "prompt_summary": "Âşık atışması ve tema öğrenmeleri üzerine 5 soruluk yansıtıcı yazı",
-      "answer": "Yansıtıcı yazı, öğrencinin kendi gerçek dinleme/öğrenme deneyimini değerlendirmelidir. Aşağıdaki yapı hazır öğrenci cevabı değil, beş soruya cevap vermeyi kolaylaştıran cümle başlangıçlarıdır.",
-      "guidance": "Öğrenci adına “her dizeyi yazmaya çalıştım”, “mimikleri kaçırdım” gibi yaşanmamış deneyimler üretmeyin. Lebdeğmez veya Türk dünyasındaki aytış gelenekleri de ancak öğrencinin kendi merak alanıysa ek öğrenme hedefi olabilir.",
+      "answer": "Dinleme ve öğrenme deneyiminizi değerlendirmek için aşağıdaki beş soruyu yanıtlayın. Cümle başlangıçlarını kendi gerçek deneyiminizle tamamlayın.",
+      "guidance": "Kendi deneyiminizde yaşamadığınız ayrıntıları yazmayın. Lebdeğmez veya Türk dünyasındaki aytış gelenekleri gibi konuları ancak gerçekten merak ediyorsanız ek öğrenme hedefi olarak seçin.",
       "source_locator": "basılı s.147 / PDF s.148 — Süreci Değerlendirebilme soru 2",
       "answer_sections": {
         "1. Atışmadan ne anladım?": "“Bu atışmayı izledikten sonra ... olduğunu anladım. Bunu videodaki ... örneği düşündürdü.”",
@@ -330,7 +330,7 @@
         "4. Neyi farklı yapabilirdim?": "“Dinleme/izleme sürecinde ... konusunda daha iyi davranabilirdim. Bir sonraki çalışmada ... yapacağım.”",
         "5. Ek öğrenmeye ihtiyacım var mı?": "“... konusunda daha fazla bilgiye ihtiyacım olduğunu düşünüyorum / düşünmüyorum; çünkü ...”"
       },
-      "explanation": "Yansıtıcı yazının değeri, öğrencinin kendi deneyimini ve gelişim ihtiyacını dürüstçe ifade etmesidir; tek bir model içerik yoktur."
+      "explanation": "Yansıtıcı yazınızda kendi deneyiminizi ve gelişim ihtiyacınızı dürüstçe ifade edin; tek bir model içeriği izlemeniz gerekmez."
     }
   ]
 }

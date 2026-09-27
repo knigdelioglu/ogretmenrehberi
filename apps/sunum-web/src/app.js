@@ -310,16 +310,20 @@ const TASK_LABELS = {
   COMPARISON: "Karşılaştırma"
 };
 
-function taskLabel(step) {
+function taskLabel(step, themeId) {
   const base = TASK_LABELS[step.task] ?? step.task.replaceAll("_", " ").toLocaleLowerCase("tr");
   if (step.answer?.entry_type === "performance_support") return "Uygulama";
-  if (step.answer?.entry_type === "source_limited") return `${base} · kaynak sınırlı`;
+  if (step.answer?.entry_type === "source_limited" && themeId !== "TEMA_04" && themeId !== "TEMA_02") return `${base} · kaynak sınırlı`;
   return base;
 }
 
-function answerLabel(step) {
+function answerLabel(step, themeId) {
   if (step.answer?.entry_type === "performance_support") return "Uygulama desteği";
-  if (step.answer?.entry_type === "source_limited") return "Doğrulanabilen çerçeve";
+  if (step.answer?.entry_type === "source_limited") {
+    if (themeId === "TEMA_04") return "Yönerge";
+    if (themeId === "TEMA_02") return "Cevap";
+    return "Doğrulanabilen çerçeve";
+  }
   return "Cevap";
 }
 
@@ -348,7 +352,7 @@ function renderValue(value) {
   return h("p", {}, String(value ?? ""));
 }
 
-function renderSections(sections) {
+function renderSections(sections, sectionsLayout = "grid") {
   if (!sections) return null;
   if (Array.isArray(sections)) {
     return h("div", { class: "sections", style: "--cols:1" }, h("div", { class: "sec" }, renderValue(sections)));
@@ -357,7 +361,10 @@ function renderSections(sections) {
   if (!entries.length) return null;
   return h(
     "div",
-    { class: "sections", style: `--cols:${columnsFor(entries.length)}` },
+    {
+      class: `sections${sectionsLayout === "stacked" ? " sections--stacked" : ""}`,
+      style: `--cols:${sectionsLayout === "stacked" ? 1 : sectionsLayout === "two-column" ? 2 : columnsFor(entries.length)}`
+    },
     entries.map(([k, v]) => h("article", { class: "sec" }, h("h3", {}, humanKey(k)), renderValue(v)))
   );
 }
@@ -480,7 +487,7 @@ function stepSlide(lesson, step) {
   const top = h(
     "header",
     { class: "slide__top" },
-    h("span", { class: "tag" }, taskLabel(step), no ? h("span", { class: "tag__no" }, no) : null),
+    h("span", { class: "tag" }, taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
     h("span", { class: "where" }, h("b", {}, `s. ${String(step.page).replace("-", "–")}`), step.heading ? `  ·  ${step.heading}` : "")
   );
 
@@ -527,8 +534,8 @@ function stepSlide(lesson, step) {
       main.append(
         panel(
           "answer",
-          answerLabel(step),
-          [a.answer ? h("p", {}, a.answer) : null, renderSections(a.answer_sections)],
+          answerLabel(step, lesson.theme),
+          [a.answer ? h("p", {}, a.answer) : null, renderSections(a.answer_sections, step.sections_layout)],
           fresh(key)
         )
       );
@@ -607,7 +614,7 @@ function render({ newSlide }) {
 
   canvas.replaceChildren(slide, progress);
   const body = slide.querySelector(".slide__body");
-  fitBody(body);
+  fitBody(body, step?.density);
   revealIntoView(body);
 
   $("#dock-counter").textContent =
@@ -618,7 +625,7 @@ function render({ newSlide }) {
 }
 
 // Gövde yazı ölçeğini, içerik taşmayacak en büyük değere ayarla
-function fitBody(body) {
+function fitBody(body, density = "comfortable") {
   if (!body) return;
   body.classList.remove("is-overflowing");
   body.scrollTop = 0;
@@ -626,7 +633,7 @@ function fitBody(body) {
     body.style.setProperty("--k", k);
     return body.scrollHeight <= body.clientHeight + 1 && body.scrollWidth <= body.clientWidth + 1;
   };
-  const MAX = 1;
+  const MAX = density === "large" ? 1.15 : 1;
   const MIN = 0.55;
   if (fits(MAX)) return;
   let lo = MIN;
@@ -743,7 +750,7 @@ function renderMenu() {
           },
           h("span", { class: "n" }, String(i + 1)),
           h("span", { class: "t" }, s.prompt),
-          h("span", { class: "s" }, `s. ${s.page} · ${taskLabel(s)}`)
+          h("span", { class: "s" }, `s. ${s.page} · ${taskLabel(s, lesson.theme)}`)
         )
       )
     )

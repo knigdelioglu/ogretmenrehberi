@@ -20,13 +20,14 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P186-PERF01",
       "content": {
-        "lead": "Seçtiğiniz kişinin metinde gerçekten söylediği bir sözü bulun; önce yakınlık gerekçesini, sonra kelime/cümle ve söyleyiş farkını açıklayın.",
+        "lead": "Mümtaz veya Nuran’ı seçin. Doğrudan konuşması gösterilmeyen kişilere üslup uydurmayın; kendi günlük söyleyişinizle romandaki söz varlığı ve cümle yapısı arasındaki farkı belirleyin.",
         "items": [
           "Kahraman ve neden yakın bulduğunuz",
           "Metindeki konuşma biçimi ve örnek",
           "Günlük hayatta aynı düşünceyi nasıl söylersiniz?",
           "Farkın gerekçesi"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrenci Mümtaz yerine Nuran'ı da seçebilir; ancak metinde doğrudan konuşması bulunmayan kişilere (İhsan, Suat vb.) yapay bir üslup atfedilmemelidir. Öğrencinin gündelik dilini onun yerine dikte etmeyin; aradaki söz varlığı ve cümle yapısı farkını keşfetmesini sağlayın."
       }
     },
     {
@@ -37,7 +38,7 @@
       "prompt": "Günlük dile karşılaştırma örneği: Mümtaz",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu örnek öğrencinin kendi seçiminin yerine geçmez.",
+        "lead": "Aşağıdaki örneği model olarak inceleyin; ardından kendi seçiminizi ve günlük söyleyişinizi oluşturun.",
         "sections": [
           {
             "title": "Metindeki söyleyiş",
@@ -59,7 +60,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P186-Q01",
       "content": {
-        "lead": "Ders kitabının s.186'daki dört boş kutusunu metinde görülen ayrıntılarla doldurun; tüm romanı okumuş gibi bütün olayları eklemeyin.",
+        "lead": "Dört alanı okuduğunuz Huzur kesitlerinde görülen ayrıntılarla doldurun; okuduğunuz bölümün dışındaki olayları eklemeyin.",
         "items": [
           "Olay",
           "Kişi kadrosu",
@@ -151,7 +152,8 @@
           "Kişi kadrosu–dil ve üslup",
           "Mekân–dil ve üslup",
           "Zaman–dil ve üslup"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Pitoresk’, ‘iç monolog’ veya başka teknik terimleri, metinde gerçekten gösterilebildiği ölçüde kullanın; etiketi kanıtın yerine koymayın."
       }
     },
     {
@@ -231,7 +233,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P187-Q03A",
       "content": {
-        "lead": "Huzur ve kimlik arayışının neden düz olay anlatımından çok çağrışım, iç dünya, musiki ve şehir betimlemesi gerektirdiğini açıklayın."
+        "lead": "Huzur ve kimlik arayışının neden düz olay anlatımından çok çağrışım, iç dünya, musiki ve şehir betimlemesi gerektirdiğini açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Tema doğrudan şu üslubu doğurmuştur’ gibi tek nedene dayalı kesinlikten kaçının; soru yorum ister."
       }
     },
     {
@@ -243,7 +246,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P188-Q03B",
       "content": {
-        "lead": "Nuran ve Mümtaz'ın bir İstanbul gezisinin musikiye, tarihî hafızaya ve kişisel duyguya dönüşmesini takip edin."
+        "lead": "Nuran ve Mümtaz'ın bir İstanbul gezisinin musikiye, tarihî hafızaya ve kişisel duyguya dönüşmesini takip edin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Birdenbire iç monoloğa geçer’, ‘ölüm felsefesi’ gibi metinde bu soruya doğrudan dayanmayan teknik sonuçlar yerine somut yapı ilişkilerini gösterin."
       }
     },
     {
@@ -255,7 +259,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P188-Q03C",
       "content": {
-        "lead": "s.171 Tanpınar biyografisindeki geleneksel/modern kültür gerilimini, metindeki 'yeni hayat' ve eski musiki konuşmasıyla ilişkilendirin."
+        "lead": "s.171 Tanpınar biyografisindeki geleneksel/modern kültür gerilimini, metindeki 'yeni hayat' ve eski musiki konuşmasıyla ilişkilendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Ada züppeliği’, ‘medeniyet buhranının sesi’ gibi metindeki ifadeyi aşan yüklü etiketler kullanmayın."
       }
     },
     {
@@ -267,7 +272,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P188-Q03CC",
       "content": {
-        "lead": "‘Mazi’, ‘hüviyet’, musiki ve tarihî mimari adlarının metne kattığı çağrışımı açıklayın."
+        "lead": "‘Mazi’, ‘hüviyet’, musiki ve tarihî mimari adlarının metne kattığı çağrışımı açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Metafizik ağırlık’, ‘benzersiz musiki ritmi’ gibi değerlendirici üstünlük yargılarını zorunlu cevap yapmayın."
       }
     },
     {
@@ -285,7 +291,8 @@
           "Nuran",
           "İhsan",
           "Suat"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tablo ‘özellikleri’ ile ‘amaçları’nı farklı sütunlar olarak ister. Metnin vermediği Suat özelliklerini dışarıdan eklemeyin; Nuran ve İhsan için amaçları çıkarım olduğunu belirterek sunun."
       }
     },
     {
@@ -330,7 +337,7 @@
       "prompt": "Kişi tablosu — İhsan",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mümtaz'ın anlattığına göre öğretici bir rehberdir; kendi kültürlerinin kaynaklarını yaşamaya önem verir.",
+        "lead": "Mümtaz’ın anlatımında İhsan, onun düşünce dünyasını etkileyen bir rehberdir; kendi kültürlerinin kaynaklarını yaşamaya önem verir.",
         "sections": [
           {
             "title": "Kaynak sınırı",
@@ -350,8 +357,8 @@
         "lead": "Kitap bu kişinin adını tabloya koyar fakat okunan Huzur parçasında özellikleri ve amacı hakkında yeterli doğrudan veri sağlamaz.",
         "sections": [
           {
-            "title": "Öğretmen notu",
-            "body": "Eğer sınıfta romanın tamamı veya ek bir parça okunmuşsa o metnin kanıtıyla tamamlayın; burada kesin bilgi icat etmeyin."
+            "title": "Kanıt sınırı",
+            "body": "Okuduğunuz kesitte Suat hakkında doğrudan kanıt yoksa kişilik özelliği uydurmayın. Romanın tamamını veya başka bir parçayı okuduysanız o metindeki kanıtı kullanın."
           }
         ]
       }

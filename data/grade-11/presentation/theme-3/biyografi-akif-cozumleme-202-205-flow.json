@@ -20,12 +20,13 @@
       "prompt": "Sıra Sizde 1 — Mehmet Âkif Ersoy biyografisinden öznel ve nesnel ifadelere örnekler bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrenciden önce biyografi metninde gördüğü cümleyi göstermesini, sonra yargısını gerekçelendirmesini isteyin.",
+        "lead": "Önce biyografi metninde gördüğünüz cümleyi seçin, ardından bu cümlenin nesnel ya da öznel oluşunu gerekçelendirin.",
         "items": [
           "Doğrulanabilir tarih, kurum, eser veya görev bilgisi bulun.",
           "Yazarın beğeni, önem ya da kişilik değerlendirmesi içeren bir cümlesini bulun.",
           "İki örneğin neden aynı tür anlatım olmadığını açıklayın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öznel örnekleri metinde gerçekten geçen değerlendirmelerden seçin. “Şiirlerinde samimiyet ve içtenlik hâkimdir” ifadesini doğrudan alıntı gibi kullanmayın; bu cümle ders kitabı parçasında yoktur."
       }
     },
     {
@@ -59,7 +60,8 @@
       "prompt": "Sıra Sizde 2 — Biyografide hangi anlatım ön plandadır? Metinden hareketle gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Birinci soruda belirlenen iki cümle türünü kullanıp biyografinin bilgi verme amacıyla ilişki kurun."
+        "lead": "Birinci soruda belirlenen iki cümle türünü kullanıp biyografinin bilgi verme amacıyla ilişki kurun.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Biyografideki tarihli yaşam bilgileri ile yazarın kişilik ve edebî değer hakkındaki yorumlarını ayırın. Yorum serbestinizi kurmaca olay üretmekle karıştırmayın."
       }
     },
     {
@@ -76,7 +78,8 @@
           "Necip Fazıl biyografisindeki kronoloji, eser ve sanat hayatı bilgilerini inceleyin.",
           "Riza Fazıl metninin ölüm üzerine yazılmış olmasını ayırt edin.",
           "Mustafa İnan metnindeki romanlaştırılmış anlatımın işlevini düşünün."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Yalnızca kitap sayfasında görünen metin özellikleriyle karşılaştırma yapın; görünmeyen kaynak, arşiv veya belgelere ilişkin yöntem iddiası eklemeyin."
       }
     },
     {
@@ -113,7 +116,8 @@
       "prompt": "Fark Edelim 2 — Mehmet Âkif Ersoy metnini hangi biyografi alt türüne dâhil edersiniz? Gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tür adını söylemekle yetinmeyin: kronoloji, kaynak ve anlatım bakımından metinden dayanak gösterin."
+        "lead": "Tür adını söylemekle yetinmeyin: kronoloji, kaynak ve anlatım bakımından metinden dayanak gösterin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: “Bilimsel biyografi/monografi” sınıflandırmasını kitabın Bilgi Köşesi’ndeki alt tür açıklamasına ve metinde verilen yaşam bilgilerine dayandırın; metinde belirtilmeyen resmî kayıt veya arşiv kullanımı iddiası eklemeyin."
       }
     },
     {
@@ -122,7 +126,7 @@
       "answer_id": "T3-P204-Q01",
       "layout": "comparison",
       "density": "compact",
-      "prompt": "Karşılaştıralım 1 — Huzur ile Mehmet Âkif Ersoy metnini kitabın yedi ölçütüne göre karşılaştırınız.",
+      "prompt": "Karşılaştıralım 1 — Huzur ile Mehmet Âkif Ersoy metnini yedi ölçüte göre karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Her ölçütte iki metni de ele alın; yalnız bir metnin özelliklerini sıralamayın. Cevap bölümünde yedi ölçütün karşılıkları ayrılmıştır.",
@@ -134,7 +138,8 @@
           "Yapı unsurları",
           "Dil ve üslup",
           "İleti"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Huzur için kitapta doğrudan verilmeyen ‘medeniyet buhranı’, ‘II. Dünya Savaşı arifesi’ gibi geniş tarihsel etiketleri zorunlu cevap yapmayın. İstanbul/Boğaz gerçek mekânlardır; romanda kurmaca bütünün parçası olarak işlev kazanırlar."
       }
     },
     {
@@ -193,7 +198,8 @@
       "prompt": "Karşılaştıralım 2 — Siber Zorbalık, kurgu–gerçeklik bakımından hangi metne daha yakındır? Neden?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce öğretici metin ile kurmaca metnin amacını ayırt edin; ardından Siber Zorbalık'ın olguya dayalı anlatımını gerekçe gösterin."
+        "lead": "Önce öğretici metin ile kurmaca metnin amacını ayırt edin; ardından Siber Zorbalık'ın olguya dayalı anlatımını gerekçe gösterin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Huzur'daki mekânlar hayalîdir’ demeyin; İstanbul ve Boğaz gerçek mekânlardır. Kurmacalık, bu unsurların romandaki kişi/olay örgüsüyle yeniden düzenlenmesindedir."
       }
     },
     {
@@ -211,7 +217,8 @@
           "Zaman ve kronolojik düzen",
           "Mekân ve görev/seyahat bilgileri",
           "Bu düzenin okurun anlamasına katkısı"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Biyografiyi ‘tarihî vesika’, ‘arşiv belgesi’ gibi kitapta gösterilmeyen metodolojik nitelemelerle tanımlamayın. Gerçek kişi ve tarihli yaşam bilgilerine dayanması yeterli kanıttır."
       }
     },
     {
@@ -241,7 +248,8 @@
       "prompt": "Çözümleyebilme 2 — Metnin söz varlığı, yazarın üslubunu nasıl destekler?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metindeki tarih, kurum, eser ve edebiyat terimlerini gösterip bunların açıklayıcı anlatıma katkısını söyleyin."
+        "lead": "Metindeki tarih, kurum, eser ve edebiyat terimlerini gösterip bunların açıklayıcı anlatıma katkısını söyleyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Akademik yetkinlik’, ‘ilmî ciddiyet’, ‘belgesel derinlik’ gibi ölçülmemiş üstünlük yargılarını söz varlığının zorunlu sonucu yapmayın."
       }
     },
     {
@@ -253,7 +261,8 @@
       "prompt": "Çözümleyebilme 3 — Yapı unsurlarının birlikte kullanılması biyografinin üslubunu nasıl etkiler?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Zaman, mekân, görev ve eser bilgilerinin birbirine bağlandığı bir bölümden hareketle cevaplayın."
+        "lead": "Zaman, mekân, görev ve eser bilgilerinin birbirine bağlandığı bir bölümden hareketle cevaplayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Her tarihî dönemin mutlaka bir eseri ‘doğurduğunu’ veya metnin edebî eleştiri seviyesine ‘yükseldiğini’ söylemeyin; metnin gerçekten gösterdiği ilişkilerle yetinin."
       }
     },
     {
@@ -270,7 +279,8 @@
           "Millî değerler",
           "Manevi değerler",
           "Evrensel değerler"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Darülmesai'ye bağış, şehitlik-gazilik veya kitapta anlatılmayan başka olayları değer kanıtı yapmayın. Millî/manevi/evrensel sınıflar kesişebilir; gerekçeli farklı sınıflandırmalar kabul edilmelidir."
       }
     },
     {
@@ -287,7 +297,8 @@
           "KAAN ve TCG Anadolu",
           "Göktürk-1 ve BİLSAT",
           "Görsellerin ortak düşündürdüğü çalışma ve sorumluluk"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Güven güçlenerek sürüyor’, ‘teknoloji hamlesi bunu kanıtlar’, ‘bugünün Âsım nesli şudur’ gibi tek sonucu öğrenci adına vermeyin; görsellerin teknik özelliklerini de kaynak olmadan eklemeyin."
       }
     },
     {
@@ -299,12 +310,13 @@
       "prompt": "Sıra Sizde 2 — Bugünün Âsım neslinin üstlenebileceği görevleri görsellerle ilişkilendirerek tartışınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrenci kendi önerisini gerekçelendirir; tek bir doğru görev listesi aranmaz.",
+        "lead": "Önerinizi bir görsel ve metindeki düşünceyle ilişkilendirerek gerekçelendirin; birden fazla yanıt mümkündür.",
         "items": [
           "Bir görev önerin.",
           "Görsellerden biriyle bağ kurun.",
           "Bu görevi gerçekleştirmek için gereken bilgi, emek veya iş birliğini açıklayın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Yapay zekâ, robotik, patent, ‘siber vatan’, ekonomik bağımsızlık vb. kavramları kitapta verilmiş zorunlu görevler gibi sunmayın. Öğrencinin farklı gerekçeli önerisini kabul edin."
       }
     }
   ]

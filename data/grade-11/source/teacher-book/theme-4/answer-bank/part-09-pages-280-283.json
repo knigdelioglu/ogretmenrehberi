@@ -21,7 +21,7 @@
       "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 2",
       "prompt_summary": "Bir rolde canlandırma yaparken dikkat edilecek karakter ve sahne unsurlarını gerekçelendirme",
       "answer": "Örnek cevap: Önce karakterin hangi dönemde, şehirde ve toplumsal çevrede yaşadığını; sahnedeki amacını ve duygusunu anlamaya çalışırdım. Söylenen sözlerin altındaki niyeti de düşünürdüm: metindeki “alt metin” sözü burada karakterin açıkça söylemediği amaç ve duygulara işaret eder, ancak kitap bunu ayrı bir tanım olarak açmaz. Sonra bu yorumu tutarlı jest, mimik, ses tonu, diksiyon ve mekân kullanımıyla canlandırırdım.",
-      "guidance": "Öğrenci farklı unsurları öne çıkarabilir; seçtiği noktayı rolün yaşamı ve canlandırma amacıyla ilişkilendirmelidir."
+      "guidance": "Canlandırma rolünüzle ilgili farklı unsurları öne çıkarabilirsiniz. Seçtiğiniz noktayı karakterin yaşamı ve sahnedeki amacıyla ilişkilendirin."
     },
     {
       "question_id": "T4-P281-Q03",
@@ -56,7 +56,7 @@
         "İletişim engellerini giderme": "Rol ve söz sırasını önceden paylaşın; anlaşmazlıkta metindeki amacı ölçüt alın; herkesin fikrini dinleyin; prova sırasında anlaşılmayan replikleri ve sahne geçişlerini yeniden düzenleyin.",
         "Hazırlık basamakları": "Amaç ve bölüm seçimi → rol dağılımı → hedef kitleye göre yöntem → prova ve geri bildirim → canlandırma."
       },
-      "guidance": "Kitapta verilen 8 ders saati çalışma süresidir; öğrenciye tek bir sahne veya yorum zorunlu kılınmaz."
+      "guidance": "Çalışma sekiz ders saati sürer. Bu süre içinde farklı sahne veya yorumlar üretebilir, seçiminizi metindeki kanıtlarla destekleyebilirsiniz."
     },
     {
       "question_id": "T4-P281-PERF02",
@@ -65,15 +65,15 @@
       "question_no": "Kontrol Listesi",
       "source_locator": "basılı s.281 / PDF s.282 — Kontrol Listesi",
       "prompt_summary": "Canlandırma kontrol listesindeki ölçütleri performans sırasında gözlemleme",
-      "answer": "Kontrol listesi, öğrencinin gerçek hazırlık ve canlandırma sürecine bakılarak öğretmen tarafından doldurulmalıdır; önceden “Evet” veya “Hayır” cevabı verilemez.",
+      "answer": "Canlandırma hazırlık ve uygulama sürecinizi kontrol listesiyle gözden geçirin. Her maddeyi gerçek katılımınıza ve grup çalışmanızdan hatırladığınız örneklere göre değerlendirin.",
       "answer_sections": {
-        "Amaç": "Öğrenci canlandırma amacını grup çalışmasına başlamadan belirledi mi?",
-        "Bölüm seçimi": "Seçilen kısım tahlil edilen Ben, Mimar Sinan oyunundan mı?",
-        "Rol alma": "Öğrenci canlandırmada kendisine düşen rolü aldı ve hazırlığa katıldı mı?",
-        "Yöntem ve strateji": "Grup hedef kitle, süre ve amaçla uyumlu bir canlandırma yolu belirledi mi?",
-        "İletişim engelleri": "Grup, prova sırasında karşılaşılan anlaşmazlık veya iletişim güçlüklerini gidermeye çalıştı mı?"
+        "Amaç": "Canlandırma amacımızı grup çalışmasına başlamadan belirledik.",
+        "Bölüm seçimi": "Tahlil ettiğimiz Ben, Mimar Sinan oyunundan bir bölüm seçtik.",
+        "Rol alma": "Canlandırmada bana düşen rolü aldım ve hazırlığa katıldım.",
+        "Yöntem ve strateji": "Hedef kitle, süre ve amaçla uyumlu bir canlandırma yolu belirledik.",
+        "İletişim engelleri": "Prova sırasında karşılaştığımız anlaşmazlık veya iletişim güçlüklerini gidermeye çalıştık."
       },
-      "guidance": "Ölçütleri gerçek süreç gözlemine göre işaretleyin; rol paylaşımının eşitliği ve katılım kanıtları göz önünde bulundurulabilir."
+      "guidance": "Her maddeyi canlandırma hazırlığı ve performansınızdan bir örnekle değerlendirin. Rol paylaşımını, katılımı ve geri bildirimi göz önünde bulundurun."
     },
     {
       "question_id": "T4-P282-PERF01",
@@ -125,14 +125,14 @@
       "question_no": "Sıra Sizde 1",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 1",
       "prompt_summary": "Canlandırılan rolün oluşturduğu duygu ve düşünceleri yansıtma yazısıyla değerlendirme",
-      "answer": "Yansıtma yazısı, öğrencinin gerçekten yaptığı canlandırmanın kendisinde oluşturduğu duygu ve düşüncelere dayanmalıdır; rehber bu deneyimi öğrenci adına üretmez.",
-      "guidance": "Yaşanmamış prova, duygu veya farkındalık uydurmayın. Öğrenci gerçek performansını yansıtmalıdır.",
+      "answer": "Canlandırma sırasında ve sonrasında hissettiklerinizi, düşündüklerinizi ve fark ettiğiniz değişimi kendi deneyiminizden örneklerle anlatın.",
+      "guidance": "Canlandırma ve prova sürecinde gerçekten yaşadıklarınızı yazın. Duygu, farkındalık veya gelişim için kendi deneyiminizden örnek verin.",
       "answer_sections": {
-        "rol_hazirliginda_hissettiklerim": "[...]",
-        "canlandirma_sirasinda_fark_ettigim": "[...]",
-        "iyi_yaptigimi_dusundugum_nokta": "[...]",
-        "gelistirmek_istedigim_nokta": "[...]",
-        "sonraki_calismada_yapacagim": "[...]"
+        "Rol hazırlığında hissettiklerim": "[...]",
+        "Canlandırma sırasında fark ettiğim": "[...]",
+        "İyi yaptığımı düşündüğüm nokta": "[...]",
+        "Geliştirmek istediğim nokta": "[...]",
+        "Sonraki çalışmada yapacağım": "[...]"
       }
     },
     {
@@ -142,13 +142,13 @@
       "question_no": "Sıra Sizde 2",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2",
       "prompt_summary": "Rol arkadaşlarından alınan görüşleri performans açısından değerlendirme",
-      "answer": "Bu değerlendirme gerçekten alınmış akran görüşüne dayanmalıdır. Rehber yalnız geri bildirimi kaydetme ve eyleme dönüştürme şablonu sağlar.",
-      "guidance": "Öğrenci adına 'arkadaşım ses tonumu beğendi' gibi alınmamış geri bildirim yazmayın.",
+      "answer": "Rol arkadaşınızdan gerçekten aldığınız geri bildirimi yazın. Bu görüşe nasıl yanıt verdiğinizi ve sonraki provada neyi değiştireceğinizi açıklayın.",
+      "guidance": "Geri bildirim olarak gerçekten duyduğunuz sözleri ve bunlara verdiğiniz yanıtı yazın.",
       "answer_sections": {
-        "rol_arkadasimin_soyledigi_guclu_yon": "[...]",
-        "rol_arkadasimin_onerisi": "[...]",
-        "bu_goruse_katiliyorum_katilmiyorum": "[...]",
-        "sonraki_provada_uygulayacagim_degisim": "[...]"
+        "Rol arkadaşımın söylediği güçlü yön": "[...]",
+        "Rol arkadaşımın önerisi": "[...]",
+        "Bu görüşe katılıyorum / katılmıyorum": "[...]",
+        "Sonraki provada uygulayacağım değişim": "[...]"
       }
     },
     {
@@ -158,14 +158,14 @@
       "question_no": "Sıra Sizde 3",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3",
       "prompt_summary": "Eleştiri ve deneyimlerden hareketle özgün konuşmacı kimliğini geliştirme planı",
-      "answer": "Özgün konuşmacı kimliği, öğrencinin aldığı gerçek eleştiriler ve kendi deneyimi üzerinden oluşturulmalıdır. Öğrenci güçlü yönünü ve geliştirmek istediği bir konuşma becerisini belirleyerek somut bir sonraki adım seçmelidir.",
+      "answer": "Aldığınız gerçek geri bildirimlerden ve kendi deneyiminizden yararlanarak güçlü yönünüzü, geliştirmek istediğiniz konuşma becerisini ve bunun için atacağınız somut adımı belirleyin.",
       "answer_sections": {
-        "korumak_istedigim_guclu_yon": "[...]",
-        "aldigim_gercek_elestiri_veya_fark_ettigim_ihtiyac": "[...]",
-        "gelistirecegim_beceri": "[...]",
-        "bir_sonraki_konusmada_uygulayacagim_somut_adim": "[...]"
+        "Korumak istediğim güçlü yön": "[...]",
+        "Aldığım gerçek eleştiri veya fark ettiğim ihtiyaç": "[...]",
+        "Geliştireceğim beceri": "[...]",
+        "Bir sonraki konuşmada uygulayacağım somut adım": "[...]"
       },
-      "guidance": "Öğrenci adına güçlü yön, göz teması, tempo veya vurgu sorunu seçmeyin; bunlar ancak gerçek performansta gözlenmişse yazılmalıdır."
+      "guidance": "Performansınızda gerçekten gözlemlediğiniz bir güçlü yönü ve geliştirmek istediğiniz beceriyi seçin. Sonraki çalışmanız için somut bir adım belirleyin."
     }
   ]
 }

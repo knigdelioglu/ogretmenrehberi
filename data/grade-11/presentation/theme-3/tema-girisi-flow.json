@@ -75,7 +75,8 @@
       "prompt": "Görselde yol üzerinde yürüyen insan neyi temsil ediyor olabilir? Açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yol, yürüyen insan, saat ve çevredeki karşıtlıkları inceleyin; bunların tek bir zorunlu anlamı olmadığını unutmayın."
+        "lead": "Görseldeki yol, yürüyen insan, saat ve karşıtlıkları inceleyip yorumunuzu somut ayrıntılarla gerekçelendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: “Yol kesinlikle doğumdan ölüme ömür çizgisidir” veya “saat acımasız zamanı simgeler” gibi tek anlam dayatmayın. Öğrencinin yol, insan, saat ve çevre ayrıntılarından hareketle kurduğu farklı ama gerekçeli yorumları kabul edin."
       }
     },
     {
@@ -84,7 +85,10 @@
       "answer_id": "T3-P162-Q02",
       "layout": "question",
       "prompt": "Görselin kendi hayatınızla ilgili çağrıştırdıklarını gerekçeleriyle açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Üniversite, meslek veya belirli bir aile/yaşam deneyimini öğrenci adına varsaymayın. Öğrencinin kendi gerçek deneyimiyle görsel arasında kurduğu bağ esastır."
+      }
     },
     {
       "id": "s162-q3",
@@ -94,12 +98,13 @@
       "prompt": "Görselden hareketle yaşama dair hangi çıkarımlarda bulunabilirsiniz? Açıklayınız.",
       "prompt_mode": "VERBATIM_SHORT",
       "content": {
-        "lead": "Görsel ayrıntısından çıkarıma gidin; farklı gerekçeli yaşam yorumları mümkündür.",
+        "lead": "Görseldeki ayrıntılardan yaşama ilişkin çıkarımlar geliştirin; her çıkarımı bir görsel öğeyle ilişkilendirin.",
         "items": [
           "Görselde hangi ayrıntıya dayanıyorum?",
           "Bu ayrıntı bana yaşamla ilgili ne düşündürüyor?",
           "Başka biri aynı ayrıntıyı farklı yorumlayabilir mi?"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: “İnsan kendi yolunun mimarıdır”, “yolda olmak hedefe varmaktan değerlidir” gibi belirli felsefi yargıları görselin zorunlu mesajı olarak vermeyin."
       }
     },
     {
@@ -108,7 +113,10 @@
       "answer_id": "T3-P162-Q04",
       "layout": "question",
       "prompt": "Görsel bir roman kapağına ait olsaydı romana hangi adı verirdiniz? Gerekçelendiriniz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Başlığın mutlaka psikolojik roman, varoluşsal yalnızlık, gelenek–modernlik veya kader teması taşıması gerekmez. Başlık–görsel bağına odaklanın."
+      }
     },
     {
       "id": "s163-q5",
@@ -119,7 +127,7 @@
       "prompt": "Radyo ve kayıt yapılan mülakat görselleri size neleri çağrıştırıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki görsel için olası çağrışımları ayrı ayrı üretin; ilerideki tema görevlerini bu sorunun hazır cevabı hâline getirmeyin.",
+        "lead": "Radyo görselindeki ses ve yayın çağrışımlarını, mülakat görselindeki soru-cevap ve kayıt çağrışımlarından ayrı düşünün.",
         "sections": [
           {
             "title": "İlk görsel — Radyo",
@@ -129,7 +137,8 @@
             "title": "İkinci görsel — Mülakat",
             "body": "Sorular, yanıtlar, kişisel deneyim ve görüntülü kayıt."
           }
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Bu görselleri ilerideki “Direnişin Ustaları” veya “Hayalî Mülakat” görevlerinin kesin ön hazırlığı diye öğrenci cevabına eklemeyin. Soru yalnız görsellerin çağrışımını ister."
       }
     },
     {
@@ -141,7 +150,7 @@
       "prompt": "Alev Alatlı hakkında verilen metin ile Sehî Beg'in Yahyâ maddesinin ortak ve farklı yönlerini belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki metni verdikleri bilgi türü, ayrıntı düzeyi ve üslup bakımından karşılaştırın; Alev Alatlı parçasının bir yaşam öyküsü olmadığını dikkate alın.",
+        "lead": "İki metni bilgi türü, ayrıntı düzeyi ve üslup bakımından karşılaştırın. Alev Alatlı parçasının bir yaşam öyküsü değil, romanlarının özelliklerini inceleyen bir metin olduğunu göz önünde bulundurun.",
         "sections": [
           {
             "title": "Ortak yön",

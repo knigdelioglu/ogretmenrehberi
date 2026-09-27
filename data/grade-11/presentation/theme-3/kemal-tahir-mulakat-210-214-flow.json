@@ -37,7 +37,8 @@
       "prompt": "Konuşmayı Yönetebilme 1 — Kemal Tahir ile yapılan mülakatın amacı nedir? Açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metindeki iki soru başlığını birlikte düşünün; yalnız 'yazarı tanımak' cevabıyla yetinmeyin."
+        "lead": "Metindeki iki soru başlığını birlikte düşünün; yalnız 'yazarı tanımak' cevabıyla yetinmeyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Usta romancı’, ‘sanat atölyesine açılan kapı’ gibi övgü yüklü kalıplar yerine, metindeki gerçek soru-cevap içeriğine odaklanın."
       }
     },
     {
@@ -49,7 +50,8 @@
       "prompt": "Konuşmayı Yönetebilme 2 — Soru, süre ve hedef kitlenin önceden belirlenmesi mülakatı nasıl etkiler?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Soruların niteliği, zaman yönetimi ve dinleyiciye uygun anlatımı ayrı ayrı ele alın."
+        "lead": "Soruların niteliği, zaman yönetimi ve dinleyiciye uygun anlatımı ayrı ayrı ele alın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Bunları ‘başarıyı doğrudan belirleyen zorunlu koşullar’ diye mutlaklaştırmayın; planlamanın olası katkılarını açıklayın."
       }
     },
     {
@@ -60,19 +62,19 @@
       "prompt": "Performans görevi — Huzur'dan bir kişiyle hayalî mülakat hazırlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Altı grup oluşturun; her grup Huzur'un ders kitabında okunan parçalarından hareketle bir roman kişisi seçsin.",
+        "lead": "Altı grup oluşturun; her grup Huzur’da okuduğunuz parçalardan hareketle bir roman kişisi seçsin.",
         "sections": [
           {
             "title": "Ürün",
-            "body": "Seçilen kişinin düşüncelerini ve söyleyişini temel alan, soru–cevap düzeninde hayalî bir mülakat."
+            "body": "Seçtiğiniz kişinin düşüncelerini ve söyleyişini temel alan soru–cevap düzeninde hayalî bir mülakat."
           },
           {
             "title": "Çalışma süreci",
-            "body": "Planlama, soru hazırlama, taslak, geri bildirim, sunum ve öz değerlendirme."
+            "body": "Planlama, soru hazırlama, taslak oluşturma, geri bildirim alma, sunma ve öz değerlendirme."
           },
           {
-            "title": "Kaynak sınırı",
-            "body": "Öğrencilerin okumadığı roman bölümleri karakterin yaşanmış deneyimiymiş gibi sunulmaz."
+            "title": "Kanıt sınırı",
+            "body": "Okumadığınız roman bölümlerini karakterin yaşanmış deneyimiymiş gibi sunmayın."
           }
         ],
         "note": "Kitabın süre bilgisi 8 ders saatidir. Sunum sırası ve süre dağılımı sınıfa göre uyarlanabilir."
@@ -86,7 +88,7 @@
       "prompt": "Çalışma kâğıdı — Altı roman kişisini metinde görülen özelliklerine göre inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.211 tablosundaki altı kişiyi ayrı tutun; okunan metinde doğrudan sözü/davranışı olmayanlara özellik uydurmayın.",
+        "lead": "Tablodaki altı kişiyi ayrı ayrı ele alın; okuduğunuz metinde doğrudan sözü veya davranışı olmayan kişilere özellik uydurmayın.",
         "items": [
           "Mümtaz",
           "Nuran",
@@ -138,7 +140,8 @@
           "Sınıf arkadaşları gibi hedef kitleyi tanımlayın.",
           "Kişiye uygun, açık uçlu ve metin dayanaklı sorular için yöntem belirleyin.",
           "Önceki konuşma deneyimlerinden yararlanıp hazırlık, sunum ve değerlendirmeyi planlayın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin başka bir karakter seçmesi mümkündür. Özellikle Suat ve Fâhir için tam roman bilgisi dışarıdan getirilmeden, yalnız ders kitabında görülen kanıt kullanılmalıdır."
       }
     },
     {
@@ -184,7 +187,7 @@
       "prompt": "Soruları ölçütlerle eleyip mülakatın amacına uygun sıraya koyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Grubun hazırladığı soruları kitabın özellikle istediği romanın yapısı, içeriği, dil ve anlatım özellikleri üzerinden derecelendirin; sonra hedef kitleye ve mülakat amacına uygun olanları seçin.",
+        "lead": "Hazırladığınız soruları romanın yapısı, içeriği, dil ve anlatım özellikleri açısından değerlendirin; hedef kitleye ve mülakat amacına uygun olanları seçin.",
         "sections": [
           {
             "title": "Yapı",
@@ -202,7 +205,8 @@
             "title": "Anlatım",
             "body": "Açık uçlu, anlaşılır, tekrar etmeyen ve hedef kitleye uygun bir soru mu?"
           }
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Yaratıcılığı fazla daraltmayın: kitap açıkça gerçek hayatta nasıl konuşacağı, davranacağı ve ne işle uğraşacağı üzerine tahmin istiyor. Buna karşılık Itrî'nin belirli bir eseri, bütün romanın aşk örgüsü, Suat'ın rolü, II. Dünya Savaşı veya tam roman sonu gibi seçili parçalarda bulunmayan ayrıntıları ‘romanda böyledir’ diye hazır bilgi olarak eklemeyin."
       }
     },
     {
@@ -245,7 +249,8 @@
           "Yorumla romanda görülen bilgiyi ayırt edin.",
           "Soru–cevapların birbiriyle tutarlılığını denetleyin.",
           "Gereksiz uzun cevapları ve dayanağı bulunmayan iddiaları düzeltin."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: II. Dünya Savaşı, ‘medeniyet krizi’, Nuran'la ilgili dedikodu, karaktere ait kesin psikolojik tanımlar veya romanda seçili parçalarda görülmeyen biyografik ayrıntıları Mümtaz'ın ağzından söylemeyin."
       }
     },
     {
@@ -256,7 +261,7 @@
       "prompt": "Taslağı geliştirin — Söyleyiş, geri bildirim ve sunum desteği.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Diğer grupların ve öğretmenin görüşlerini değerlendirip sunumdan önce bir revizyon yapın.",
+        "lead": "Diğer grupların ve öğretmeninizin görüşlerini değerlendirin; sunumdan önce taslağınızda en az bir geliştirme yapın.",
         "items": [
           "Kişiye uygun olmayan soru ve cevapları yeniden yazın.",
           "Bağlama uygun sözcük, vurgu ve tonlamayı kontrol edin.",
@@ -274,7 +279,7 @@
       "prompt": "Kural Uygulayabilme — Hayalî mülakatı prova ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.213'teki a-j kurallarını prova sırasında kontrol edin; yalnız metni okumak yerine konuşmayı, karakter üslubunu ve dinleyiciyle ilişkiyi birlikte yönetin.",
+        "lead": "a–j kurallarına göre prova yapın. Mülakat metnini okumakla yetinmeyin; konuşmayı, karakterin üslubunu ve dinleyiciyle ilişkinizi birlikte yönetin.",
         "items": [
           "Dikkat çekici giriş; konuşmayı başlatma, sürdürme ve bitirme.",
           "Toplumsal hassasiyetler, görgü kuralları ve millî-manevi/kültürel unsurlara dikkat.",
@@ -294,7 +299,7 @@
       "prompt": "Hayalî mülakatı sınıfta gerçekleştirin; konuşma kurallarını kontrol edin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Grup arkadaşınız hayalî kişiyi canlandırırken kitabın s.213'te verdiği kuralları somut gözlemlerle kontrol edin.",
+        "lead": "Grup arkadaşınız hayalî kişiyi canlandırırken a–j kurallarını somut gözlemlerle değerlendirin.",
         "sections": [
           {
             "title": "Konuşmayı yönetme",
@@ -320,7 +325,8 @@
             "title": "Sunum",
             "body": "Beden dili, diksiyon, zaman ve mekânı etkili kullanma; duygu ve düşünceleri özgün ve tutarlı ifade etme."
           }
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kitabın a-j maddelerini ‘genel sunum becerileri’ diye eritmeyin. Özellikle e (görgü), ç (değer/kültür), g (hayalî kişiye özgü üslup), ğ (düşünceyi geliştirme) ve i (açık/örtük ileti) kitapta açıkça vardır. ‘8 ders saati’ performans görevinin toplam çalışma süresidir; tek grubun sunum süresi değildir."
       }
     },
     {
@@ -332,12 +338,13 @@
       "prompt": "Değerlendirme 1 — Mülakattaki açık ve örtük iletileri belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrencinin gerçekten hazırladığı hayalî cevapları ele alın; örnek Mümtaz cevabı yalnız modeldir.",
+        "lead": "Kendi hazırladığınız hayalî cevapları inceleyin; örnek Mümtaz cevabını yalnızca model olarak kullanın.",
         "items": [
           "Doğrudan söylenen düşünceleri açık ileti olarak ayırın.",
           "Cevaplardan gerekçeyle çıkarılan düşünceleri örtük ileti olarak ayırın.",
           "Bu iki ileti türünü karakterin okunan metindeki sözleriyle karşılaştırın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Musiki millî zevkin en yüksek anlatımıdır’, ‘medeniyet krizi bireyin huzursuzluğunu doğurur’ gibi model mülakattan üretilmiş geniş sonuçları romanın zorunlu iletisi saymayın."
       }
     },
     {
@@ -349,7 +356,8 @@
       "prompt": "Değerlendirme 2 — Roman kişileri hakkındaki yargılarınızı hangi söz, davranış veya olayla desteklersiniz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir yargı seçin; hangi metin ayrıntısına dayandığını gösterin. Hayalî mülakatta türettiğiniz cevabı özgün romandan alıntı gibi göstermeyin."
+        "lead": "Bir yargı seçin; hangi metin ayrıntısına dayandığını gösterin. Hayalî mülakatta türettiğiniz cevabı özgün romandan alıntı gibi göstermeyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tam roman bilgisini ders kitabı kesitlerinin kanıtıymış gibi kullanmayın. Yargının doğruluğu, karaktere yakıştırılan sıfata değil gösterilen metin dayanağına bağlıdır."
       }
     },
     {
@@ -361,7 +369,7 @@
       "prompt": "Öz değerlendirme — Performansınıza göre her ölçütü işaretleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.214 formunu kullanın: Her ölçüt için Evet / Kısmen / Hayır seçeneklerinden birini gerçek sunumunuza göre belirleyin.",
+        "lead": "Her ölçüt için Evet / Kısmen / Hayır seçeneklerinden birini gerçek sunumunuza göre işaretleyin.",
         "items": [
           "Duygu ve düşüncelerimi özgün, tutarlı biçimde ifade ettim.",
           "Dil kullanım alanına uygun konuştum.",
@@ -370,7 +378,7 @@
           "Akıcılık, duruluk ve yalınlığı korudum.",
           "Ek ve kelimeleri anlam ve bağlama uygun seçtim."
         ],
-        "note": "Bu altı ölçüt sınıf içi öz değerlendirme içindir. Kitap ayrıca öğretmenin değerlendirmesinde anlatım ilkelerine uygunluk ile beden dili, diksiyon, zaman ve mekânı etkili kullanma gibi görünen örnek ölçütleri belirtir; QR'deki Dereceli Puanlama Anahtarı'nın görünmeyen diğer maddelerini veya puanlarını eklemeyin."
+        "note": "Bu altı ölçüt sınıf içi öz değerlendirme içindir. Kitap ayrıca öğretmenin değerlendirmesinde anlatım ilkelerine uygunluk ile beden dili, diksiyon, zaman ve mekânı etkili kullanma gibi görünen örnek ölçütleri belirtir; QR'deki Dereceli Puanlama Anahtarı'nın görünmeyen diğer maddelerini veya puanlarını eklemeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Öğrenci adına ‘göz temasını kaçırdım’, ‘heyecandan hızlı konuştum’ veya bütün maddelerde ‘Evet’ sonucu yazmayın. QR formlar görülmeden puan/seviye eklemeyin."
       }
     },
     {
@@ -385,19 +393,19 @@
         "sections": [
           {
             "title": "Eksikleri giderme",
-            "body": "Kısmen veya Hayır işaretlenen beceriyi araştırarak ya da öğretmen desteğiyle geliştirmek için somut adım belirleyin."
+            "body": "Kısmen veya Hayır işaretlediğiniz beceri için araştırma ya da öğretmen desteğiyle geliştireceğiniz somut bir adım belirleyin."
           },
           {
             "title": "Pekiştirme",
-            "body": "Olumlu davranışları sonraki konuşmalarda bilinçli biçimde sürdürün."
+            "body": "Olumlu davranışlarınızı sonraki konuşmalarda bilinçli biçimde sürdürün."
           },
           {
             "title": "Özgün konuşmacı kimliği",
-            "body": "Bir sonraki konuşmada özellikle geliştirmek istediğiniz özgün anlatım özelliğini belirleyin."
+            "body": "Bir sonraki konuşmada geliştirmek istediğiniz özgün anlatım özelliğini belirleyin."
           },
           {
             "title": "Akran geri bildirimi",
-            "body": "Kitaptaki QR Akran Değerlendirme Formuna erişilmişse onu kullanın; görülmeyen form maddelerini burada varsaymayın."
+            "body": "Akran Değerlendirme Formu karekodla açılıyorsa kullanın; görmediğiniz form maddelerini varsaymayın."
           }
         ]
       }

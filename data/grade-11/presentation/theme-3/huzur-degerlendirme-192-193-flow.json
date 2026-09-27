@@ -20,14 +20,15 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P192-WORKSHEET",
       "content": {
-        "lead": "Üstteki çalışma kâğıdı beş ayrı başlık içerir; alttaki kişisel beğeni sorusuyla aynı yanıt değildir.",
+        "lead": "Çalışma kâğıdındaki beş başlık ayrı yanıt gerektirir; her başlığı kendi sorusuna göre doldurun.",
         "items": [
           "1. Yazarın üslup seçiminin nedenleri ve sonuçları",
           "2. Metnin yazıldığı dönemin özellikleri",
           "3. İçerik, yapı, dil, dönem ve toplum ilişkisi",
           "4. Yapı unsurlarının metne katkısı",
           "5. Millî, manevi ve evrensel değerler"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Millî, manevi ve evrensel kategoriler yer yer kesişebilir. Öğrencinin farklı sınıflandırmasını, metinden gerekçelendirdiğinde kabul edin; tabloyu tek doğru değer listesine kapatmayın."
       }
     },
     {
@@ -112,7 +113,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P192-Q01",
       "content": {
-        "lead": "Öğrencinin beğenisi ve eleştirisi aynı olmak zorunda değildir; her görüşünü metindeki belirli bir anlatım tercihiyle ilişkilendirsin."
+        "lead": "Beğeni ve eleştiriniz farklı olabilir; her görüşünüzü eserdeki belirli bir anlatım tercihiyle ilişkilendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Bu soru öğrencinin kişisel beğeni ve eleştirisini ister. Örnek yargıyı zorunlu cevap saymayın; gerekçenin eserdeki bir anlatım özelliğine veya kısa ifadeye bağlanmasını bekleyin."
       }
     },
     {
@@ -124,12 +126,13 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P193-PERF01",
       "content": {
-        "lead": "Kitap bir örnek satır verir: Tutarlılık. Ardındaki beş satır öğrencinin kendisinin belirleyeceği ölçüt ve değerlendirmeler için boştur.",
+        "lead": "Tutarlılık örnek ölçüttür; kalan satırlara kendi ölçütlerinizi ve her ölçüte dayalı değerlendirmenizi yazın.",
         "items": [
           "Ölçüt: Ne hakkında karar veriyorum?",
           "Değerlendirme: Metinde bunu hangi söz veya sahne gösteriyor?",
-          "Kitabın Tutarlılık örneğini koruyun; diğer ölçütleri kendiniz belirleyin."
-        ]
+          "Tutarlılık örneği dışında kalan ölçütleri kendiniz belirleyin."
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tutarlılık satırı kitapta verilmiştir; diğer beş ölçüt öneridir ve öğrenci kendi ölçütlerini seçebilir. Her ölçütün karşısına aynı genel övgüyü değil, metinden bir kanıt ve gerekçe yazılmalıdır."
       }
     },
     {
@@ -166,13 +169,14 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P193-PERF02",
       "content": {
-        "lead": "Kitap bu cevabı yazılı değil sözlü ister. Öğrenci gerçek metin davranışından hareketle kendi düşünce ve davranışını gerekçelendirmeli.",
+        "lead": "Yanıtınızı sözlü olarak paylaşın. Huzur’da gördüğünüz söz veya davranışlardan hareketle kendi düşünce ve davranışınızı gerekçelendirin.",
         "items": [
           "Kişiyi ve neden seçtiğinizi belirtin.",
           "Metindeki söz veya davranışı hatırlatın.",
           "O kişinin yerinde nasıl düşüneceğinizi söyleyin.",
           "Neyi neden farklı veya benzer yapacağınızı açıklayın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Sözlü görev olduğu için öğretmene örnek ürün verilir; öğrenci Mümtaz, Nuran ya da doğrudan kanıt bulunan başka kişiyi seçebilir. Okunan bölümde yeterli konuşma/davranış gösterilmeyen kişiye hayalî olay atfetmeyin."
       }
     },
     {
@@ -189,7 +193,8 @@
           "Üç Yaz (3)",
           "İki Sor (2)",
           "Bir Paylaş (1)"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kitaptaki çıkış kartı tam olarak Üç Yaz (3), İki Sor (2), Bir Paylaş (1) alanlarından oluşur. Burada örnek ifadeler öğrencinin seçimi yerine geçmez; yazmadan önce kendi beğendiği gerçek metin sözlerini işaretlemesine izin verin."
       }
     },
     {

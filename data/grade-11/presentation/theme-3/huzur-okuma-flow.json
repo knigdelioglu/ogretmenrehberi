@@ -19,7 +19,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P164-Q01",
       "content": {
-        "lead": "Peyami Safa'nın mülakatından hareketle yaşanmış olayla edebî kurmacayı ayırın."
+        "lead": "Peyami Safa'nın mülakatından hareketle yaşanmış olayla edebî kurmacayı ayırın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: “Aşkları, çocukluğu, toplumsal buhranları her eserin zorunlu ham maddesidir” gibi genel liste vermek yerine, bu metindeki Safa örneği üzerinden yaşanmışlık–kurmaca ayrımını kurdurun."
       }
     },
     {
@@ -30,7 +31,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P164-Q02",
       "content": {
-        "lead": "Bir hayat hikâyesinin olay örgüsüne dönüştürülmesinin ne gerektirdiğini düşünün."
+        "lead": "Bir hayat hikâyesinin olay örgüsüne dönüştürülmesinin ne gerektirdiğini düşünün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: “Derin acılar, kader anları ve büyük kırılmalar olmak zorundadır” gibi tek dramatik açıklama vermeyin. Öğrencinin gerekçeli farklı yorumlarını kabul edin."
       }
     },
     {
@@ -41,7 +43,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P164-Q03",
       "content": {
-        "lead": "Mülakattaki yaşanmış bölümler ile kurmacanın gerçeklik etkisi arasındaki ayrımı kullanın."
+        "lead": "Mülakattaki yaşanmış bölümler ile kurmacanın gerçeklik etkisi arasındaki ayrımı kullanın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrenciden “Gerçekten olmuş bir olay kötü kurgulanırsa inandırıcı olabilir mi?” ve “Hiç yaşanmamış bir olay iyi kurulursa inandırıcı olabilir mi?” sorularıyla iki yönlü değerlendirme isteyin."
       }
     },
     {
@@ -68,21 +71,22 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P165-PERF01",
       "content": {
-        "lead": "Üç katmanı ayırın: okuma öncesi tahmin, dış araştırma bulgusu ve Huzur metninde doğrulanan kanıt.",
+        "lead": "Okuma öncesi tahmininizi, Tanpınar hakkında araştırdığınız bilgileri ve Huzur metninden bulduğunuz kanıtları ayrı kaydedin.",
         "sections": [
           {
             "title": "Tanpınar araştırması",
-            "body": "Kaynak → araştırmada bulduğum bilgi → Huzur'da sınayacağım ilişki. Dış bilgiyi ders kitabının hazır cevabı gibi sunmayın."
+            "body": "Kaynak → araştırmada bulduğum bilgi → Huzur’da sınayacağım ilişki. Araştırma bilgisini kaynağıyla birlikte belirtin."
           },
           {
             "title": "Roman ve yazar",
-            "body": "Araştırma bulgusunu ancak Huzur'da gerçek bir unsur ve metin dayanağıyla ilişkilendirin."
+            "body": "Araştırma bulgusunu Huzur’da fark ettiğiniz bir unsur ve metin dayanağıyla ilişkilendirin."
           },
           {
             "title": "Dil ve üslup",
-            "body": "Metinde gerçekten gözlenen betimleme, mecaz, söz varlığı ve cümle yapısını somut örnekle kaydedin."
+            "body": "Metinde gözlemlediğiniz betimleme, mecaz, söz varlığı veya cümle yapısını somut bir örnekle kaydedin."
           }
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tanpınar araştırmasını zengin tutun; ancak araştırma sonucunu kitabın verdiği cevap gibi göstermeyin. Özellikle s.182'de daha sonra işlenecek Mümtaz–Tanpınar ilişkisini s.165'te hazır sonuç olarak vermeyin. Öğrencinin araştırma bulgusunun kaynağını ve Huzur'daki karşılığını ayrı göstermesini isteyin."
       },
       "density": "compact"
     },
@@ -110,7 +114,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P165-PERF02",
       "content": {
-        "lead": "Öğrencinin kendi cümlesi esastır; öğretmen örnekleri gerektiğinde açılır.",
+        "lead": "Altı kelimeyi farklı bağlamlarda kendi cümlelerinizde kullanın; her cümlede anlamı bağlamıyla gösterin.",
         "items": [
           "huzur",
           "rüya",
@@ -118,7 +122,8 @@
           "boğaz",
           "tarih",
           "garp"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin köy evi, münazara ödülü, Boğaz gezisi, Çanakkale ziyareti gibi yaşantılara sahip olduğunu varsaymayın. Arkadaşının cümlesinden kişisel bir yaşantı çıkardığınızda bunu “kesin keşif” saymayın; gerekçeyi sorun ve öğrencinin açıklamasını dinleyin."
       },
       "density": "compact"
     },
@@ -167,14 +172,15 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P166-PERF01",
       "content": {
-        "lead": "Öğrencinin seçtiği rastgele kelimeler esastır; hazır kelime listesi veya hazır konu sonucu verilmez.",
+        "lead": "Metne göz gezdirirken dikkatinizi çeken kelime ve kelime gruplarını seçin; bunlardan hareketle konu ve dil tahmini yapın.",
         "items": [
           "Göz gezdirerek kendi kelime ve kelime gruplarınızı seçin.",
           "Seçtiklerinizi kendi anlam alanlarınıza ayırın.",
           "Kelime kanıtından konu tahmini kurun.",
           "Ayrı bir dil–anlatım tahmini yazın.",
           "Tam okumadan sonra tahmininizi kontrol edin."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Ada, Boğaz, Mümtaz, sedef rüyası, geçmiş medeniyet veya yalnızlık gibi kelime ve sonuçları öğrencinin seçimiymiş gibi önceden vermeyin. Öğrenci gerçekten göz gezdirdiğinde aynı kelimeleri seçerse elbette kullanabilir. Bakış açısı, tema ve üslup da bu aşamada kesin sonuç değil tahmindir."
       },
       "density": "compact"
     },
@@ -186,14 +192,15 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P166-PERF02",
       "content": {
-        "lead": "Metne göz gezdirmede fark ettiğiniz gerçek özelliğe göre strateji seçin; romanın sonraki çözümlemelerini önceden cevap olarak vermeyin.",
+        "lead": "Metne göz gezdirirken fark ettiğiniz özelliklere uygun bir okuma stratejisi seçin; okuma sırasında stratejinizi gerektiğinde gözden geçirin.",
         "items": [
           "Uzun/yoğun cümleleri gerekirse anlam öbeklerine ayırın.",
           "Bilinmeyen veya dikkat çeken kelimeleri işaretleyin.",
           "Kişi, mekân ve düşünceler için kısa notlar alın.",
           "Diyaloglarda konuşmacı değişimini takip edin.",
           "Anlamı öne çıkaran doğal vurgu, hız ve duraklama kullanın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: “Dokuz satırlık devasa cümle”, Mümtaz–Nuran görüş karşıtlığı, metnin “ana tezi”, “melankolik iç ses” veya “iç musiki” gibi okuma sonucunda tartışılabilecek tespitleri strateji aşamasında zorunlu bilgi yapmayın. Öğrencinin seçtiği stratejiyi göz gezdirmede fark ettiği gerçek özellikle gerekçelendirmesini isteyin."
       },
       "density": "compact"
     },
@@ -204,7 +211,7 @@
       "prompt": "Huzur — Boğaz ve İstanbul'un Mümtaz için anlamını s.167'den okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Ana metin kitapta okunur; bu ekran romanın telifli bölümlerini yeniden yayımlamaz.",
+        "lead": "Huzur’un s.167–171’deki kesitini okurken kişi, mekân, ses ve düşünce ayrıntılarını not edin.",
         "sections": [
           {
             "title": "Ada ve Boğaz",
@@ -318,7 +325,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P172-VOC01",
       "content": {
-        "lead": "TDK ile doğrulamadan önce metinde geçtiği cümleyi inceleyin."
+        "lead": "TDK ile doğrulamadan önce metinde geçtiği cümleyi inceleyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrenci önce kendi tahminini yazmalı, sonra karekodla TDK sözlüğünden uygun anlamı doğrulamalıdır. Rehberdeki bağlam açıklamasını TDK'nin birebir tanımı gibi okutmayın. Özellikle ‘mahzen = bilinçaltı’, ‘cevher = varoluşsal ruhsal maya’ gibi metnin ötesine geçen psikolojik/felsefi karşılıklar vermeyin."
       },
       "density": "compact"
     },
@@ -330,13 +338,14 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P172-PERF01",
       "content": {
-        "lead": "Bilinmeyen kelime her öğrenci için farklı olabilir.",
+        "lead": "Sana yabancı gelen kelimeleri kendin seç; her okuyucunun bilmediği kelimeler farklı olabilir.",
         "items": [
           "Kelimeyi metindeki bağlamıyla seçin.",
           "Tahminde bulunun.",
           "Sözlük anlamını kontrol edin.",
           "Bağlamdaki anlamla karşılaştırın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Mefhum, istihsal, masuniyet, istiğna, taaccüp, istihare, hüviyet gibi sözler yalnız örnek tarama adaylarıdır; öğrencinin bunları bilmediği varsayılmaz ve sözlük sonucu önceden verilmez. Aşağıdaki anlamlar, bu örnekleri öğretmenle çalışmak için bağlamda seçilmiş kısa sözlük karşılıklarıdır; öğrencinin kendi kelime seçiminin yerini tutmaz."
       },
       "density": "compact"
     },
@@ -448,7 +457,8 @@
           "Geçmiş ve yeni hayat üzerine düşünce",
           "Kişilerin iç dünyası",
           "Uzun ve ritmik cümleler"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kavram haritasına yalnız okunan Huzur parçasında gerçekten gözlenebilen özellikleri yazdırın. “Empresyonist”, “Bergsoncu”, “varoluşsal” gibi dış eleştiri terimlerini bu etkinliğin hazır cevabı yapmayın."
       },
       "density": "compact"
     }

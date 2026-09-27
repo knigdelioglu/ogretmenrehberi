@@ -31,26 +31,23 @@
       "printed_page": 40,
       "question_no": "2",
       "prompt_summary": "Roman düşüncelerinin mektupta yer almasının mektup türünün işlevine yönelik düşündürdükleri",
-      "answer": "Mektupta roman kişileri ve roman tekniği üzerine düşüncelere yer verilmesi, mektubun kişisel haberleşmenin yanında edebî ve düşünsel alışverişe de alan açabileceğini düşündürür. Bu yazışma, yazarın edebiyat hakkındaki görüşlerini muhatabıyla paylaşırken aynı zamanda bu düşünceleri sonraki okurlara ve araştırmacılara taşıyabilir. Mektubun belge ya da düşünce kaynağı olarak değerinin ne olduğu, metindeki içerik ve hitap biçimi üzerinden gerekçelendirilmelidir.",
+      "answer": "Mektupta roman ve roman tekniği üzerine düşüncelerin yer alması, mektubun kişisel haberleşmenin yanı sıra edebî düşünce paylaşımına da alan açabildiğini gösterir. Bu mektup, Kaplan’ın kendi görüşlerini ve yazışma bağlamını anlamak için kaynak olabilir; tek başına dönemin bütün edebiyat anlayışını temsil etmez.",
       "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
       "answer_sections": {
-        "Kişisel haberleşme": "Mektubun belirli bir muhatabı vardır ve kişisel haberleşme bağlamı taşır.",
-        "Edebî ve düşünsel paylaşım": "Roman kişileri ve tekniğine ilişkin görüşler, haberleşmenin edebiyat üzerine düşünce paylaşımını da kapsadığını gösterir.",
-        "Olası belge değeri": "Bu görüşler dönemin edebiyat düşüncesine ilişkin bir kaynak olarak okunabilir; bu değerin kapsamı metindeki kanıtla açıklanmalıdır.",
-        "Metinden gösterilebilecek kanıtlar": [
-          "Kişisel haberleşme: “Zaten seninle konuşmaya da ihtiyacım var.”",
-          "Edebî düşünce paylaşımı: “Bu roman bende yine roman yazmak arzusunu canlandırdı.”",
-          "Roman tekniği üzerine kavramlaştırma: “ben bu hâle mazi koridoru diyorum.”",
-          "Edebî değerlendirme: “Bana Rus usulü daha derin ve psikolojik geliyor.”"
-        ]
+        "Kişisel haberleşme": {
+          "Açıklama": "Mektup, belirli bir muhataba yönelir; yazarın onunla iletişim kurma ve içini paylaşma isteğini gösterir.",
+          "Metin kanıtı": "“Zaten seninle konuşmaya da ihtiyacım var.”"
+        },
+        "Edebî ve düşünsel paylaşım": {
+          "Açıklama": "Kaplan, roman okumasını yazma isteğiyle ve roman tekniğine ilişkin yorumlarıyla ilişkilendirir.",
+          "Metin kanıtı": "“Bu roman bende yine roman yazmak arzusunu canlandırdı.” “Bana Rus usulü daha derin ve psikolojik geliyor.”"
+        },
+        "Mektubun kaynak değeri ve sınırları": {
+          "Açıklama": "Mektup, Kaplan’ın edebiyat görüşlerini ve yazışma bağlamını gösteren birincil kaynaktır. Tek bir kişinin görüşü dönemin bütün edebiyat anlayışını temsil etmez; çıkarımlar metindeki ifadelerle sınırlı tutulmalıdır.",
+          "Metin kanıtı": "“ben bu hâle mazi koridoru diyorum.”"
+        }
       },
-      "guidance": "Öğrencilerden mektupta romanla ilgili hangi düşüncelerin yer aldığını belirlemelerini, bunların kişisel haberleşmenin işlevini nasıl genişlettiğini tartışmalarını isteyin. Mektubun edebî, düşünsel veya belge niteliğine ilişkin yargılarını metinden kanıtla gerekçelendirsinler; “vazgeçilmez” gibi sonucu baştan belirleyen bir hüküm beklemeyin.",
-      "evidence_quotes": [
-        "Zaten seninle konuşmaya da ihtiyacım var",
-        "Bu roman bende yine roman yazmak arzusunu canlandırdı",
-        "ben bu hâle mazi koridoru diyorum",
-        "Bana Rus usulü daha derin ve psikolojik geliyor"
-      ]
+      "guidance": "Öğrencilerden kişisel haberleşme ve edebî düşünce paylaşımına ilişkin çıkarımlarını ayrı ayrı yazmalarını ve her birini metinden kısa bir alıntıyla desteklemelerini isteyin. Mektubun kaynak olarak neleri gösterebileceğini ve tek başına neleri kanıtlayamayacağını tartıştırın."
     },
     {
       "question_id": "T1-P40-Q03",
@@ -103,9 +100,9 @@
       "question_id": "T1-P40-Q05",
       "entry_type": "question_answer",
       "printed_page": 40,
-      "question_no": "Çalışma Kâğıdı",
-      "prompt_summary": "Çalışma kâğıdında konu, ana düşünce, düşünceyi geliştirme yolları, yardımcı düşünceler, açık ve örtük iletiler, anlatım biçimleri sınıflandırmalarını tamamlama",
-      "answer": "Mehmet Kaplan'ın mektubu; günlük yaşamını, edebiyat ve roman üzerine düşüncelerini, dostluk ve yalnızlık duygularını aktarırken özellikle çalışmanın ve cesaretin yeteneği geliştirdiği düşüncesini öne çıkarır. Metinde açıklayıcı, tartışmacı ve yer yer öyküleyici anlatım kullanılır; mektubun üslubu ise samimi ve sohbet havasındadır.",
+      "question_no": "Çalışma Kâğıdı 1/2",
+      "prompt_summary": "Çalışma kâğıdının konu, ana düşünce, yardımcı düşünceler ve açık-örtük ileti bölümlerini tamamlama",
+      "answer": "Mektup, Kaplan’ın günlük yaşamını ve dostluk ilişkilerini anlatırken çalışmanın yeteneği geliştirdiği düşüncesini öne çıkarır.",
       "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
       "answer_sections": {
         "Konu": "Mehmet Kaplan'ın gurbetteki dostu Âli'ye günlük hayatını, yalnızlığını, edebiyat ve roman hakkındaki düşüncelerini anlatması ve onu yazmaya, çalışmaya teşvik etmesi.",
@@ -113,10 +110,30 @@
         "Yardımcı Düşünceler": [
           "Dostluk ve anlayış, insanın iç sıkıntılarını hafifletir.",
           "Yalnızlık hissi ev hayatı, kitaplar ve sevdikleriyle geçirilen zamanla hafifletilebilir.",
-          "Kaplan'a göre Dostoyevski'nin romanlarında kişiler konuşmaları, davranışları ve geçmişleriyle canlı biçimde ortaya konur; Rus romanındaki bu yöntem daha derin ve psikolojik bir anlatım sağlar.",
           "İnsan çalışmadan kendisini kabiliyetsiz saymamalıdır; çalışma yeteneği ortaya çıkarır ve geliştirir.",
           "Yazmak ve düşünmek, insanın kendisini tanımasına ve zihnini geliştirmesine yardımcı olan bir irade ve emek sürecidir."
         ],
+        "Açık ve Örtük İletiler": {
+          "Açık ileti": "Çalışma, yeteneği ortaya çıkarıp geliştirebilir; düşünmek ve yazmak cesaret, sabır, irade ve emek gerektirir.",
+          "Örtük ileti": "İnsanın kendisini anlayan ve destekleyen bir dostunun olması, yalnızlık ve iç sıkıntılarıyla baş etmesini kolaylaştırır."
+        }
+      },
+      "guidance": "Konu, ana düşünce ve yardımcı düşünceleri birbirinden ayırt ettirin. Açık iletide doğrudan söylenenleri, örtük iletide çıkarım yoluyla ulaşılan anlamı metinden hareketle belirletin.",
+      "evidence_quotes": [
+        "Çalışmanın kabiliyeti keşfettiğini, hatta yarattığını iddia edeceğim.",
+        "Bunu yapmadan nasıl kabiliyetsizliğe hükmedebilirsin.",
+        "senin vicdan azabımı tahfif edişini görerek daha sıkıntısız olacağım"
+      ]
+    },
+    {
+      "question_id": "T1-P40-Q05B",
+      "entry_type": "question_answer",
+      "printed_page": 40,
+      "question_no": "Çalışma Kâğıdı 2/2",
+      "prompt_summary": "Çalışma kâğıdının anlatım biçimleri, anlatım özellikleri ve düşünceyi geliştirme yolları bölümlerini tamamlama",
+      "answer": "Mektupta açıklayıcı ve tartışmacı anlatım öne çıkar; karşılaştırma, benzetme ve tanımlama düşünceleri geliştirir. Üslup, mektubun kişisel ve sohbet havasını korur.",
+      "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
+      "answer_sections": {
         "Anlatım Biçimleri": [
           "Açıklayıcı Anlatım (Dostoyevski'nin roman tekniğini ve Rus-Fransız romanı arasındaki farkları açıklarken)",
           "Tartışmacı Anlatım (Âli'nin kendisini kabiliyetsiz görmesine karşı çıkarak çalışmanın yeteneği geliştirdiğini savunurken)",
@@ -130,19 +147,12 @@
           "Karşılaştırma (Dostoyevski ile Stendhal, Rus romanı ile Fransız romanı, 'mazi koridoru' ile 'vaka sathı')",
           "Benzetme ve Somutlaştırma (Yazma becerisini yıllarca keman çalmaya benzetme; kişilerin geçmişini ayrıntılı biçimde verme yöntemini 'mazi koridoru' sözüyle somutlaştırma)",
           "Tanımlama (\"Roman ve yazı, bir insanın görüşü, duyuşu ve ifade edişidir.\" ifadesiyle roman ve yazının niteliğini açıklama)"
-        ],
-        "Açık ve Örtük İletiler": {
-          "Açık ileti": "Çalışma, yeteneği ortaya çıkarıp geliştirebilir; düşünmek ve yazmak cesaret, sabır, irade ve emek gerektirir.",
-          "Örtük ileti": "İnsanın kendisini anlayan ve destekleyen bir dostunun olması, yalnızlık ve iç sıkıntılarıyla baş etmesini kolaylaştırır."
-        }
+        ]
       },
-      "guidance": "Ana düşünceyi metnin bütününü kuşatan tek bir yargıyla ifade ettirin. 'Konu' ile 'ana düşünceyi', 'anlatım biçimi' ile 'anlatım özelliğini' birbirinden ayırın. Özellikle açıklayıcı ve tartışmacı anlatımı metinden cümlelerle kanıtlatın; açık ve örtük iletilerde doğrudan söylenenlerle çıkarım yoluyla ulaşılanları ayırt ettirin.",
+      "guidance": "Anlatım biçimlerini metindeki işlevleriyle ilişkilendirin; açıklayıcı anlatımla tartışmacı anlatımı ayırt ettirin. Anlatım özelliğini anlatım biçimiyle karıştırmadan ve düşünceyi geliştirme yollarını örnekleriyle belirletin.",
       "evidence_quotes": [
-        "Çalışmanın kabiliyeti keşfettiğini, hatta yarattığını iddia edeceğim.",
         "Düşünmek ve yazmak da bir nevi kendimizle mücadeledir. İrade eseridir.",
-        "Bunu yapmadan nasıl kabiliyetsizliğe hükmedebilirsin.",
-        "Bana Rus usulü daha derin ve psikolojik geliyor.",
-        "senin vicdan azabımı tahfif edişini görerek daha sıkıntısız olacağım"
+        "Bana Rus usulü daha derin ve psikolojik geliyor."
       ]
     },
     {

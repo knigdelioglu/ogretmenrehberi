@@ -56,13 +56,13 @@
       "question_no": "4",
       "source_locator": "basılı s.304-305 / PDF s.305-306 — Soru 4",
       "prompt_summary": "Şiirdeki çadırın içine eklenecek duyguyu seçip gerekçelendirme",
-      "answer": "Bu soru kişisel ve açık uçludur. Öğrenci çadıra eklemek istediği duyguyu kendisi seçmeli; seçimini şiirdeki somut bir söz, değer veya yaşam tasarısıyla ilişkilendirmelidir.",
-      "guidance": "Öğrenci adına 'güven eklerdim' gibi tek bir tercih yapmayın. Metinle gerekçelendirilen başka duygular da kabul edilmelidir.",
+      "answer": "Çadıra eklemek istediğiniz duyguyu seçin ve bu duyguyu şiirdeki somut bir söz, değer ya da yaşam tasarısıyla ilişkilendirerek gerekçelendirin.",
+      "guidance": "Başka duygular da seçebilirsiniz. Her seçimi şiirdeki bir söz, değer veya yaşam tasarısıyla gerekçelendirin.",
       "answer_sections": {
-        "sectigim_duygu": "[...]",
-        "siirden_dayandigim_ayrinti": "[...]",
-        "bu_duygunun_cadira_katkisi": "[...]",
-        "olasi_ama_zorunlu_olmayan_secimler": "Umut, güven, huzur, merhamet, dayanışma vb. yalnız örnek olasılıklardır."
+        "Seçtiğim duygu": "[...]",
+        "Şiirden dayandığım ayrıntı": "[...]",
+        "Bu duygunun çadıra katkısı": "[...]",
+        "Olası ama zorunlu olmayan seçimler": "Umut, güven, huzur, merhamet, dayanışma vb. yalnız örnek olasılıklardır."
       }
     },
     {
@@ -72,14 +72,14 @@
       "question_no": "5",
       "source_locator": "basılı s.305 / PDF s.306 — Soru 5 / dört görsel gerçek PDF sayfasından doğrulandı",
       "prompt_summary": "Şiire uygun afiş için görsel seçip gerekçelendirme",
-      "answer": "Bu soru görsel seçimine ve gerekçeye açıktır; tek bir zorunlu afiş görseli yoktur. Öğrenci seçtiği görselin şiirdeki hangi düşünceyi desteklediğini açıklamalıdır.",
+      "answer": "Afişiniz için bir, birkaç veya tüm görselleri seçebilirsiniz. Seçtiğiniz görselin şiirdeki hangi düşünceyi desteklediğini açıklayın.",
       "answer_sections": {
         "Görsel 1 — çiçekli dal": "Doğa, güzellik, büyüme veya şiirdeki ağaç imgesiyle ilişkilendirilebilir; botanik türü görselden kesinleştirilmez.",
         "Görsel 2 — apartmanlar": "Barınma ve birlikte yaşam çağrışımı kurulabilir; şiirdeki çadır fikriyle bağ gerekçelendirilmelidir.",
         "Görsel 3 — açık havada birlikte vakit geçiren yetişkin ve çocuklar": "Çocuk, oyun, sevgi, paylaşma veya birlikte yaşam düşünceleriyle ilişkilendirilebilir.",
-        "Görsel 4 — orman yangınına müdahale görüntüsü": "Sorumluluk, dayanışma, doğayı koruma veya zorluğa karşı ortak çaba ile ilişkilendirilebilir; şiirle bağ öğrenci tarafından açıklanmalıdır."
+        "Görsel 4 — orman yangınına müdahale görüntüsü": "Sorumluluk, dayanışma, doğayı koruma veya zorluğa karşı ortak çaba ile ilişkilendirebilirsiniz; şiirle kurduğunuz bağı gerekçelendirin."
       },
-      "guidance": "Görselde kesin olarak görülebilen ögeleri adlandırın; botanik türü gibi görselden doğrulanamayan ayrıntıları eklemeyin. Öğrenci bir, birkaç veya tüm görselleri gerekçeli biçimde seçebilir."
+      "guidance": "Görselde kesin olarak seçilebilen ögeleri adlandırın; görüntüden doğrulanamayan ayrıntılar eklemeyin. Seçiminizi şiirle ilişkilendirin."
     },
     {
       "question_id": "T4-P305-Q06",
@@ -185,13 +185,13 @@
       "question_no": "13",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 13 / Anadolu İnsanı-Aidiyet QR videosu",
       "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-      "answer": "Bu soru Anadolu İnsanı / Aidiyet QR videosundaki gerçek kişi ve davranışlara dayanır. Video görülmeden insanların belirgin özellikleri listelenemez.",
+      "answer": "Videoda gözlemlediğiniz bir kişiyi veya davranışı seçin. Bu örnekten çıkardığınız özelliği yazıp görüntü, söz ya da eylem kanıtıyla gerekçelendirin.",
       "answer_sections": {
-        "videoda_gozledigim_kisi_veya_davranis": "[...]",
-        "cikardigim_ozellik": "[...]",
-        "video_kanitim": "[...]"
+        "Videoda gözlediğim kişi veya davranış": "[...]",
+        "Çıkardığım özellik": "[...]",
+        "Video kanıtı": "[...]"
       },
-      "guidance": "Uyum, dayanışma, emek, yerel bilgi veya başka bir özelliği video öncesinde hazır sonuç olarak önermeyin. Özellik videodaki gerçek kanıttan çıkarılmalıdır."
+      "guidance": "Özelliği video öncesinde hazır sonuç olarak seçmeyin; videoda gözlemlediğiniz kişi, davranış veya mekân kanıtından çıkarın."
     },
     {
       "question_id": "T4-P307-SL14",
@@ -200,13 +200,13 @@
       "question_no": "14",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 14 / Anadolu İnsanı-Aidiyet QR videosu",
       "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-      "answer": "Sorunun video-temelli bölümü kayıt izlenmeden kesinleştirilemez. Genel kavramsal çerçeve olarak aidiyet; kişinin bir yerde kurduğu ilişkiler, anılar, katılım ve kendini oraya bağlı hissetmesiyle ilişkili olabilir; ancak bu genel bilgi, videonun cevabı değildir.",
+      "answer": "Aidiyet; kişinin bir yerde kurduğu ilişkiler, anılar, katılımı ve kendini oraya bağlı hissetmesiyle ilişkili olabilir. İzlediğiniz videodan bir kişi, söz veya davranış örneği seçerek aidiyet kavramıyla bağını açıklayın.",
       "answer_sections": {
-        "genel_kavramsal_cerceve": "Aidiyetin ilişkiler, ortak deneyimler, kültürel katılım ve emek gibi unsurlarla bağlantısı tartışılabilir.",
-        "videodan_gercek_ornek": "[...]",
-        "bu_ornegin_aidiyetle_iliskisi": "[...]"
+        "Genel kavramsal çerçeve": "Aidiyet; ilişkiler, ortak deneyimler, kültürel katılım ve emekle bağlantılı olabilir.",
+        "Videodan gerçek örnek": "[...]",
+        "Bu örneğin aidiyetle ilişkisi": "[...]"
       },
-      "guidance": "Genel kavramsal bilgiyi video kanıtı gibi sunmayın. Soruya tam cevap için öğrencinin QR kaydından gerçek kişi, davranış veya mekân örneği göstermesi gerekir."
+      "guidance": "Aidiyet için seçtiğiniz örneği videodaki gerçek kişi, davranış veya mekâna dayandırın. Genel kavramsal açıklamayı video kanıtının yerine kullanmayın."
     }
   ]
 }

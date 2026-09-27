@@ -28,7 +28,7 @@
           "Dramatik örgü",
           "Çatışma"
         ],
-        "note": "Kitapta transkript bulunmadığı için kişi adı, mekân veya tarih önceden doldurulamaz."
+        "note": "Kitapta transkript bulunmadığı için kişi adı, mekân veya tarih önceden doldurulamaz.\n\nÖğretmen için kaynak ve değerlendirme notu: Torna, çekiç, atölye, fabrika, baskın, Millî Mücadele veya belirli kişi adlarını ses kaydı görülmeden yapı unsuru diye yazmayın."
       }
     },
     {
@@ -72,7 +72,8 @@
           "Çıkarılan özellik",
           "Amacı",
           "Kanıt"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Başusta tecrübeli/vatansever’, ‘çırak sadık’, ‘muhbir çıkarcı’ gibi karakter ve kişilikleri QR medya dinlenmeden üretmeyin."
       }
     },
     {
@@ -84,7 +85,8 @@
       "prompt": "Çözümleyebilme 3 — Yapı unsurları radyo tiyatrosuna nasıl katkı sağlıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce hangi unsurun metinde nasıl kullanıldığını belirtin, sonra etkisini açıklayın; genel tür bilgisini metne özgü sonuç gibi yazmayın."
+        "lead": "Önce hangi unsurun metinde nasıl kullanıldığını belirtin, sonra etkisini açıklayın; genel tür bilgisini metne özgü sonuç gibi yazmayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Zamanla yarışma’, ‘baskın korkusu’, ‘vatan sevgisi ve emek birliği’ gibi sonuçları ses kaydından kanıt olmadan hazır katkı olarak vermeyin."
       }
     },
     {
@@ -96,7 +98,8 @@
       "prompt": "Çözümleyebilme 4 — Millî ve manevi değerleri gösteren dil veya kültür unsurları nelerdir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yalnız bir değer adı söylemeyin; duyduğunuz ifade veya davranışı ve bunun metnin iletisine katkısını birlikte açıklayın."
+        "lead": "Yalnız bir değer adı söylemeyin; duyduğunuz ifade veya davranışı ve bunun metnin iletisine katkısını birlikte açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Ustam’, ‘Evladım’, ‘Allah utandırmasın’, ‘Vatan sağ olsun’, helallik, ahilik veya belirli dua ifadelerini ses kaydı görülmeden metinde varmış gibi yazmayın."
       }
     },
     {
@@ -107,7 +110,7 @@
       "prompt": "Görüş geliştirme — Değerlerin metnin iletilerini oluşturmadaki işlevini tartışınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın görüşüne katılma derecenizi seçmeden önce metinden bir dil, davranış veya kültür örneği düşünün.",
+        "lead": "Bir görüş seçmeden önce metinden bir dil, davranış veya kültür örneği düşünün.",
         "items": [
           "Kesinlikle katılıyorum",
           "Katılıyorum",
@@ -133,7 +136,8 @@
           "Başka görüşün dayanağını özetleyin.",
           "Görüşünüz değiştiyse nedenini açıklayın.",
           "Sonucu bir kavram haritasında görünür kılın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Değer adları kitapta verilebilir; fakat ‘usta-çırak saygısı’, ‘aile toplumsal dayanışmanın çekirdeğidir’ gibi metne özgü açıklamaları QR kaydı dinlenmeden doldurmayın. Fikir değiştirmek etkinliğin doğal parçasıdır."
       }
     },
     {
@@ -144,7 +148,7 @@
       "prompt": "Değerler ve iletiler — Kitaptaki beş başlığı kavram haritasında kullanınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu başlıklar kitabın verdiği değer örnekleridir; her birinin radyo tiyatrosunda işlendiği, kayıt dinlenmeden ileri sürülmez.",
+        "lead": "Bu başlıklar değer örnekleridir; belirli bir değerin radyo tiyatrosunda işlendiğini dinleme kanıtı olmadan yazmayın.",
         "items": [
           "Saygı",
           "Vatanseverlik",
@@ -179,7 +183,7 @@
             "body": "Kişilerin duygu, karar ve çatışmalarını gerçek söz ve davranışla ilişkilendirin."
           }
         ],
-        "note": "Kitaptaki araştırma süresi 1 haftadır; kaynakta bulunmayan tarih ve kişi bilgisi üretmeyin."
+        "note": "Kitaptaki araştırma süresi 1 haftadır; kaynakta bulunmayan tarih ve kişi bilgisi üretmeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: İmalat-ı Harbiye, Karakol Cemiyeti, gizli imalathaneler, belirli psikolojik ‘direnç’ veya sosyal tabakalaşma sonuçlarını QR medya ve güvenilir dış kaynakla doğrulamadan hazır araştırma sonucu yapmayın. Kitabın açıkça istediği ‘farklı radyo tiyatrosu örneklerinden yararlanma’ adımını da atlamayın."
       }
     },
     {
@@ -208,12 +212,13 @@
       "prompt": "Süreci Değerlendirebilme 1 — Radyo tiyatrosu için ölçüt belirleyin ve değerlendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın dil kullanımı örneğini inceleyin; diğer ölçütleri dinlediğiniz metne göre kendiniz belirleyin.",
+        "lead": "Dil kullanımı örneğini inceleyin; diğer ölçütleri dinlediğiniz metne göre kendiniz belirleyin.",
         "items": [
           "Ölçütü adlandırın.",
           "Metindeki gözlenebilir örneği gösterin.",
           "Bu ölçüte göre gerekçeli değerlendirme yapın."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Ölçüt belirlemekle yetinmeyin; kitap gerekçeli değerlendirme de ister. Ancak 'ses tonu mükemmel örtüşmüştür', 'efektler kusursuzdur' veya 'müzik başarıyla yönetmiştir' gibi sonuçları gerçek kayıt kanıtı olmadan öğrenci adına vermeyin."
       }
     },
     {
@@ -231,7 +236,8 @@
           "Tarih kaynağındaki karşılık",
           "Örtüşen yön",
           "Dramatik veya kurmaca dönüşüm"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: İmalat-ı Harbiye, Karakol Cemiyeti, Tophane-Zeytinburnu atölyeleri veya ‘tarihsel vesikalarla birebir örtüşme’ gibi sonuçlar bu çalışma gerçekten yapılmadan hazır cevap olarak verilmemelidir."
       }
     },
     {
@@ -243,7 +249,8 @@
       "prompt": "Süreci Değerlendirebilme 3 — Bir kişiyle empati kurup davranışlarını gerekçeli değerlendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kişinin gerçek olay içindeki koşulunu ve duyulan davranışını gösterin; onun söylemediği sözü ona yüklemeyin."
+        "lead": "Kişinin gerçek olay içindeki koşulunu ve duyulan davranışını gösterin; onun söylemediği sözü ona yüklemeyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Başusta’, ‘çırakların can güvenliği’, ‘tezgâhı terk etmeme’, ‘esaret altında hayat anlamsızdır’ gibi ses kaydı görülmeden üretilmiş olay ve iç düşünceleri örnek empati diye vermeyin."
       }
     },
     {
@@ -255,7 +262,8 @@
       "prompt": "Süreci Değerlendirebilme 4 — Beğendiğiniz yönleri somut dinleme kanıtıyla açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yalnız 'çok güzeldi' demek yerine bir ses, diyalog, atmosfer veya kurgu örneğinin üzerinizdeki etkisini açıklayın."
+        "lead": "Yalnız 'çok güzeldi' demek yerine bir ses, diyalog, atmosfer veya kurgu örneğinin üzerinizdeki etkisini açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Torna sesi, fısıltılı konuşma, hızlanan müzik, ‘doğal oyunculuk’ veya ‘yetkin estetik deneyim’ gibi gözlemleri QR kaydı görülmeden öğrenci adına yazmayın."
       }
     },
     {
@@ -267,7 +275,8 @@
       "prompt": "Süreci Değerlendirebilme 5 — Konu ve ana düşünceyi kendi yaşamınızla ilişkilendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce metnin gerçek konusunu ve ana düşüncesini ayırt edin. Ardından yalnız kendi deneyimlerinize dayanan bağlantı kurun."
+        "lead": "Önce metnin gerçek konusunu ve ana düşüncesini ayırt edin. Ardından yalnız kendi deneyimlerinize dayanan bağlantı kurun.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Ustalar vatan için kenetleniyor’, ‘modern vatan görevi’, deprem/sel dayanışması gibi belirli sonuç ve örnekleri ses kaydı/öğrenci deneyimi yerine hazır cevap yapmayın."
       }
     },
     {
@@ -279,14 +288,15 @@
       "prompt": "Öğrenme Günlüğü — Dinleme sürecinizi beş başlıkta değerlendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.224 günlüğünü kendi dinleme ve öğrenme deneyiminize göre doldurun; örnek metni hazır kişisel deneyim gibi kopyalamayın.",
+        "lead": "Öğrenme günlüğünü kendi dinleme ve öğrenme deneyiminize göre doldurun; örnek metni kişisel deneyiminizmiş gibi kopyalamayın.",
         "items": [
           "Bu süreçte öğrendiklerim",
           "Pekiştirmem gereken konular",
           "Daha ayrıntılı incelemek istediğim konular",
           "Kendimi geliştirmek için çaba harcadığım konular",
           "Öğrendiğim ve gelecekte kullanabileceğim bilgiler"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrenci adına ‘efektleri ayırt etmekte zorlandım’, ‘1950–1980 TRT altın çağını merak ediyorum’, ‘gizli niyet çıkarmayı öğrendim’ veya akademik/mesleki hayat planı yazmayın. Günlük gerçek deneyime dayanmalıdır."
       }
     },
     {

@@ -17,7 +17,7 @@
         "İhtiyar memur": "Anlatıcı yol verdiğinde iyi dilekte bulunur; ikinci karşılaşmada onun koşuşturmasını görünce bunun değmeyeceğini söyler. Sözleri deneyim, nezaket ve yaşamın sınırlılığına ilişkin bir uyarı olarak yorumlanabilir. Yaşlılık ve zamanın geçişini çağrıştırsa da metindeki kişi aynı zamanda sıradan bir memurdur.",
         "Genç memur": "Anlatıcıya yol verir ve yaşlı memurun durumunu doğrudan, gülümseyerek aktarır. Bu tutum kayıtsız, ironik veya yalnızca pratik bir yaklaşım olarak okunabilir; metin kesin bir duygu belirtmez. “Buyrun, buyrun siz de çıkın” sözü hem yol verme hem anlatıcıyı ölüm gerçeğiyle karşı karşıya bırakma işlevi taşır."
       },
-      "explanation": "Anlatıcının telaşı ve merdivenleri hızla kullanması işini bitirme, yetişme ve ilerleme alışkanlığını düşündürür. İhtiyarın ilk sözü, yol verilmesine karşı bir iyi dilektir; ikinci sözü, anlatıcının aynı telaşla yeniden karşılaşmasından sonra gelen deneyim uyarısı olarak okunabilir. Genç memur yaşlı çalışanın öldüğünü doğrudan aktarır. “Buyrun, buyrun siz de çıkın” sözü hem gerçek bir yol verme hem de anlatıcının yaş, kıdem ve kendi hedefi hakkındaki düşüncelerini değiştiren bir karşılaşma işlevi taşır. Anlatıcının geri dönme kararı bir sorgulamayı gösterir; bunu tümüyle değiştiğinin kesin kanıtı saymak gerekmez. İhtiyar yaşlılığı ve deneyimi çağrıştırabilir, genç memur da yeni kuşağa benzetilebilir; ancak bu simgesel okumalar olasılık olarak sunulmalı, tek tek karakterlerin metindeki söz ve davranışlarıyla temellendirilmelidir.\n\nAnlatıcının telaşı iş yaşamına ve ilerleme alışkanlığına bağlıdır. İhtiyarın iki sözü farklı anlara karşılık gelir: ilkinde nezaketle karşılık verir, ikincisinde aceleye dair öğüt sunar. Genç memurla karşılaşma, anlatıcının kendinden genç birine ilk kez yol vermesini sağlar; bu, yaş ve kıdem üzerinden kurduğu önceliğin değişmeye başladığını gösterir. Yeni kuşak yorumu bütün gençlere genellenmemeli, yalnız karakterin metindeki tutumuna dayanmalıdır."
+      "explanation": "Anlatıcı işini bitirmek ve merdivenleri hızla kullanmak ister. İhtiyar memurun ilk sözü nezaket, ikinci sözü ise bu telaşa yönelik bir yaşam öğüdü olarak okunabilir. Genç memur, ihtiyarın ölüm haberini doğrudan aktarır; ona yol vermesi anlatıcının yaş ve kıdem hakkındaki önceliklerini sorgulamasını sağlar. Anlatıcının geri dönme kararı bir değişim işaretidir, ancak öykü bu değişimin tamamlandığını kesinleştirmez. İhtiyar memur yaşlılık ve deneyimi, genç memur yeni kuşağı çağrıştırabilir. Bu yorumları kişilerin söz ve davranışlarıyla destekleyin; tek bir karakterin tutumunu bütün kuşaklara genellemeyin."
     },
     {
       "question_id": "T4-P275-WORK01",
@@ -94,8 +94,8 @@
       "question_no": "Birlikte Çalışalım b",
       "source_locator": "basılı s.277 / PDF s.278 — Birlikte Çalışalım varsayımsal durumlar",
       "prompt_summary": "Öyküdeki çatışma ve kişi karşılaşmalarına ilişkin gerçekleşmeyen durumlar için alternatif olay akışı kurma",
-      "answer": "Aşağıdaki alternatifler olası kurgu önerileridir. Öğrenci farklı bir akış kurabilir; değişikliğin anlatıcının kararı ve öykünün sonu üzerindeki etkisini tutarlı biçimde açıklamalıdır.",
-      "guidance": "Tek bir doğru alternatif yoktur. Olay örgüsünde neden-sonuç bağı korunmalı; metinde bulunmayan yeni bir olay kesinleşmiş gibi değil, öğrencinin kurduğu olasılık olarak sunulmalıdır.",
+      "answer": "Aşağıdaki alternatifler olası kurgu önerileridir. Farklı bir olay akışı kurabilir; değişikliğin anlatıcının kararı ve öykünün sonu üzerindeki etkisini neden–sonuç ilişkisiyle açıklayabilirsiniz.",
+      "guidance": "Tek bir doğru alternatif yoktur. Olay örgüsünde neden–sonuç bağını koruyun; metinde bulunmayan yeni bir olayı öyküde gerçekleşmiş gibi değil, kendi kurduğunuz olasılık olarak sunun.",
       "answer_sections": {
         "Anlatıcı ihtiyar memurla karşılaşmasaydı": "Yaşlı adamın iyi dileğini ve aceleye ilişkin uyarısını duymazdı. Genç memurdan ölüm haberini alsa bile, yaşlı kişiyle yaşadığı karşılaşmaların kurduğu düşünsel bağ bulunmayacağından son kararı farklı gerekçelerle gelişebilirdi.",
         "Anlatıcı genç memurla karşılaşmasaydı": "İhtiyar memurun ölüm haberini o anda öğrenmez; merdivenleri çıkıp işine devam edebilirdi. Eski çalışma düzenini sürdürmesi ve son bölümde yukarı çıkma amacını sorgulamaması olası bir akıştır.",
@@ -124,18 +124,15 @@
       "question_no": "Sıra Sizde 2",
       "source_locator": "basılı s.277 / PDF s.278 — Sıra Sizde soru 2",
       "prompt_summary": "Öğrencinin değer yargısıyla çelişen davranışa vereceği tepkiyi gerekçelendirme",
-      "answer": "Bu soru öğrencinin kendi değer yargısına dayanır. Önce metindeki rahatsız edici/uygun bulunmayan söz veya davranış seçilmeli, ardından öğrencinin aynı durumda nasıl davranacağı kendi gerçek değerleriyle açıklanmalıdır.",
-      "guidance": "Öğrenci adına anlatıcının 'yeni yetme' sözünü seçmeyin ve 'ben olsaydım...' cevabını hazır yazmayın. Genç memurun, anlatıcının veya başka bir davranışın gerekçeli biçimde seçilmesi mümkündür.",
+      "answer": "Metinde değer yargınızla uyuşmayan bir söz veya davranış seçin. Benzer bir durumda nasıl davranacağınızı kendi değerlerinizle açıklayın.",
+      "guidance": "Seçiminizi metinden bir kanıtla destekleyin; anlatıcının, genç memurun veya başka bir davranışın gerekçeli biçimde seçilmesi mümkündür.",
       "answer_sections": {
-        "sectigim_soz_veya_davranis": "[...]",
-        "neden_deger_yargimla_celisiyor": "[...]",
-        "benzer_durumda_benim_tepkim": "[...]",
-        "metinden_kanit": "[...]",
-        "secim_icin_ornek_metin_kanitlari": [
-          "“yeni yetme” nitelemesi — anlatıcının genç memura bakışını tartışmak için kullanılabilir; bunun değer yargısıyla çelişip çelişmediğine öğrenci karar verir.",
-          "“Çabuk çabuk” ifadesi — anlatıcının aceleci davranışını tartışmak için kullanılabilir.",
-          "Anlatıcının kendisinden genç bir memura yol vermesi — davranış değişimini ve başkasına alan açmayı değerlendirmek için kullanılabilir.",
-          "“Bahtiyar ol” sözü — yaşlı memurun iyi niyet ve nezaket içeren davranışına dayanak olabilir."
+        "Seçtiğim söz veya davranış": "[...]",
+        "Değer yargımla neden çelişiyor?": "[...]",
+        "Benzer durumda benim tepkim": "[...]",
+        "Metinden kanıt": "[...]",
+        "Seçim için örnek metin kanıtları": [
+          "“Yeni yetme” nitelemesi, anlatıcının genç memura bakışını tartışmak için kullanılabilir. Bu sözün kendi değer yargınızla çelişip çelişmediğini siz gerekçelendirin."
         ]
       },
       "evidence_quotes": [
@@ -161,7 +158,7 @@
         "İhtiyar memurun modern yaşamın koşuşturmasını eleştirmesi": "Sosyoloji, felsefe.",
         "Ölüm karşısında yaşamı sorgulama": "Felsefe ve psikoloji."
       },
-      "guidance": "Bu eşleştirmeler tek doğru disiplin listesi değildir. Öğrencinin ayrıntı ile disiplin arasındaki bağı açıklaması beklenir."
+      "guidance": "Bu eşleştirmeler tek doğru disiplin listesi oluşturmaz. Seçtiğiniz ayrıntıyla disiplin arasındaki bağı açıklayın."
     },
     {
       "question_id": "T4-P279-Q01",
@@ -181,7 +178,7 @@
         "Diyalog": "Yaşlı memurun iki farklı sözü ve genç memurun ölüm haberini iletmesi, kişilerin tutumlarını ve anlatıcının kararındaki değişimi kendi söylemleriyle açığa çıkarır.",
         "Açık yapıt": "Anlatıcının neden vazgeçtiği ve yukarı çıkmanın onun için neyi temsil ettiği kesin olarak açıklanmaz; metin birden fazla tutarlı yoruma alan bırakır."
       },
-      "explanation": "Simgeler için tek ve kesin karşılık dayatılmamalıdır. Öğrencinin yorumu, öyküdeki bir söz, davranış veya yapı unsuruyla temellendirilmelidir."
+      "explanation": "Simgeler için tek ve kesin bir karşılık aramak yerine yorumunuzu öyküdeki bir söz, davranış veya yapı unsuruyla temellendirin."
     },
     {
       "question_id": "T4-P279-PERF01",
@@ -190,20 +187,20 @@
       "question_no": "Süreci Değerlendirebilme",
       "source_locator": "basılı s.279 / PDF s.280 — Süreci Değerlendirebilme",
       "prompt_summary": "Merdiven öyküsünü seçilen kişisel ölçütlerle öznel olarak değerlendirme",
-      "answer": "Beğendim/Beğenmedim alanları öğrencinin gerçek değerlendirmesine göre doldurulmalıdır. Rehber yalnız ölçüt üretmeye ve gerekçeyi metin kanıtına bağlamaya yardım eder.",
+      "answer": "Ölçütleri kullanarak Merdiven’i değerlendirin. Beğeni kararınızı kendiniz belirleyin ve metinden bir ayrıntıyla gerekçelendirin.",
       "answer_sections": {
-        "olasi_olcutler": [
+        "Olası ölçütler": [
           "Konu/ana düşüncenin işlenişi",
           "Dil ve üslup",
           "Açık uçlu anlatım",
           "Karakterlerin sunuluşu",
           "Çağrışım gücü"
         ],
-        "sectigim_olcut": "[...]",
-        "begendim_begenmedim": "[...]",
-        "metinden_kanit": "[...]",
+        "Seçtiğim ölçüt": "[...]",
+        "Beğendim / beğenmedim": "[...]",
+        "Metinden kanıt": "[...]",
         "gerekcem": "[...]",
-        "olcutlere_gore_ornek_metin_kanitlari": {
+        "Ölçütlere göre örnek metin kanıtları": {
           "Dil ve üslup": [
             "“Çabuk çabuk” tekrarının ritim oluşturması.",
             "“Bahtiyar ol” gibi kısa ve doğal diyalogların gündelik konuşma etkisi yaratması."
@@ -219,7 +216,7 @@
           ]
         }
       },
-      "guidance": "Öğrenci adına 'beğendim' işareti veya hazır kişisel gerekçe vermeyin. Kitaptaki örnek satır modeldir; öğrencinin kendi ölçütlerini ve yargısını üretmesi beklenir.",
+      "guidance": "Kendi ölçütünüzü seçin; beğeni kararınızı metinden kanıtla destekleyin. Farklı değerlendirmeler gerekçelendirildiğinde mümkündür.",
       "evidence_quotes": [
         "Çabuk çabuk",
         "Bahtiyar ol"

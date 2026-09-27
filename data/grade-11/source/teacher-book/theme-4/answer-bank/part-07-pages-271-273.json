@@ -16,7 +16,7 @@
         "Az sözle duygu": "Rotterdam’da anlatıcının art arda sorduğu iç sorular, yaşantının içine katılma ile gözlemci kalma arasındaki gerilimi yoğunlaştırır. Yorumsuz’da göl, merdiven, sinek ve çocukluk görüntüleri hızlı geçişlerle büyüme ve belleği düşündürür. Merdiven’de kısa karşılaşma, yinelenen yol verme ve son yön değişikliği acele, yaşlılık ve yaşam üzerine anlam üretir.",
         "Okurun katılımı": "Metinler kişilerin geçmişini, duygularının tamamını ve bazı geçişlerin nedenini açıklamaz. Okur, simgeleri ve boşlukları kendi deneyimiyle ilişkilendirerek anlamı kurar; aynı ayrıntı için gerekçeli farklı yorumlar geliştirebilir."
       },
-      "guidance": "Metinlerden uzun alıntı yerine kısa, metne özgü ayrıntı kullanın. Öğrencinin kendi yorumunu ilgili bir ipucuyla desteklemesi beklenir."
+      "guidance": "Uzun alıntılar yerine metne özgü kısa ayrıntılar kullanın; kendi yorumunuzu seçtiğiniz ipucuyla destekleyin."
     },
     {
       "question_id": "T4-P272-Q01",
@@ -43,14 +43,14 @@
       "question_no": "2",
       "source_locator": "basılı s.272 / PDF s.273 — Karşılaştıralım soru 2",
       "prompt_summary": "İnsan ilişkilerindeki değerlerin tiyatro ya da hikâyede daha etkili yansıtılmasına ilişkin gerekçeli görüş",
-      "answer": "Bu soruda tiyatro veya hikâye lehine tek bir doğru sonuç yoktur. Öğrenci iki metinden kanıt göstererek insan ilişkilerindeki değerlerin hangi türde kendisine göre daha etkili yansıtıldığını gerekçelendirmelidir.",
-      "guidance": "Öğrenci adına 'tiyatro daha iyi yansıtır' seçimini yapmayın. Her iki yönde de metin kanıtlı cevap kabul edilmelidir.",
+      "answer": "İki türün de güçlü yönleri vardır. İnsan ilişkilerindeki değerlerin tiyatroda mı hikâyede mi size göre daha etkili yansıtıldığını seçin ve iki metinden kanıtlarla gerekçelendirin.",
+      "guidance": "Tercihinizi siz belirleyin. Tiyatro veya hikâye yönündeki görüşünüzü her iki metinden kanıtlarla destekleyin.",
       "answer_sections": {
-        "tiyatrodan_kanitim": "Ben, Mimar Sinan'da seçtiğim söz/davranış/ilişki: [...].",
-        "hikayeden_kanitim": "Merdiven'de seçtiğim söz/davranış/ilişki: [...].",
+        "Tiyatrodan kanıtım": "Ben, Mimar Sinan'da seçtiğim söz/davranış/ilişki: [...].",
+        "Hikâyeden kanıtım": "Merdiven'de seçtiğim söz/davranış/ilişki: [...].",
         "tercihim": "Tiyatro / hikâye / iki türün farklı üstünlükleri var.",
         "gerekcem": "[...]",
-        "ornek_kanit_havuzu": {
+        "Örnek kanıt havuzu": {
           "Ben, Mimar Sinan": [
             "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” — sorumluluk ve sözüne bağlılık.",
             "“tek başıma yenmedim” — başarıda başkalarının payını kabul etme.",
@@ -92,12 +92,12 @@
       "question_no": "2",
       "source_locator": "basılı s.273 / PDF s.274 — Sıra Sizde soru 2",
       "prompt_summary": "İki hikâyeden hangisinin daha etkileyici olduğunu metne dayalı gerekçeyle belirtme",
-      "answer": "Hangi hikâyenin daha etkileyici bulunduğu kişisel beğeni sorusudur. Öğrenci Şair Tavafî veya Merdiven'i seçebilir; tercihini ilgili metindeki somut bir dil, anlatıcı, içerik veya çağrışım özelliğiyle gerekçelendirmelidir.",
-      "guidance": "Öğrenci adına Merdiven'i veya Şair Tavafî'yi seçmeyin; tek bir beğeni cevabı yoktur.",
+      "answer": "Şair Tavafî veya Merdiven’den hangisinin sizi daha çok etkilediğini seçin. Tercihinizi metindeki dil, anlatıcı, içerik ya da çağrışım özelliklerinden somut bir ayrıntıyla gerekçelendirin.",
+      "guidance": "İki hikâyeden hangisini seçtiğinizi belirtin ve bu seçimi metinden bir ayrıntıyla açıklayın. Her iki tercih de kanıtla desteklenebilir.",
       "answer_sections": {
-        "daha_cok_etkilendigim_hikaye": "[...]",
-        "metinden_ayrinti": "[...]",
-        "beni_etkileme_nedeni": "[...]"
+        "Daha çok etkilendiğim hikâye": "[...]",
+        "Metinden ayrıntı": "[...]",
+        "Beni etkileme nedeni": "[...]"
       }
     }
   ]

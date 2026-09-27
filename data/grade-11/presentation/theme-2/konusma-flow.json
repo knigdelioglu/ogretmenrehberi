@@ -203,7 +203,8 @@
           "Düşünceyi geliştirme yollarından yararlanın.",
           "Söz varlığını hedef kitleye ve bağlama uygun kullanın.",
           "Toplumsal hassasiyetlere aykırı ögelerden kaçının."
-        ]
+        ],
+        "lead": "Konuşma sırasında bu ölçütleri uygulayın."
       }
     },
     {
@@ -222,7 +223,8 @@
           "Ekleri, kelime seçimini ve cümle bağlarını doğru kullanın.",
           "Göz teması kurun; mekânı, süreyi ve görgü kurallarını yönetin.",
           "Akıcılık, duruluk ve yalınlığı koruyup beden dili ile sesi anlamı güçlendirecek biçimde kullanın."
-        ]
+        ],
+        "lead": "Konuşmanızı sürdürürken ve bitirirken bu ölçütleri uygulayın."
       }
     },
     {
@@ -265,22 +267,22 @@
       "source_record_id": "T02-S0115",
       "layout": "reference",
       "density": "large",
-      "prompt": "Dereceli puanlama ve akran değerlendirme",
+      "prompt": "Konuşmanızı gözden geçirmek için değerlendirme ölçütlerini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitap, ayrıntılı dereceli puanlama anahtarı ile akran değerlendirme formuna QR kod üzerinden yönlendirir.",
+        "lead": "Sayfada görünen ölçütleri kullanın. Ayrıntılı dereceli puanlama ve akran değerlendirme formları karekod bağlantısındadır.",
         "sections": [
           {
-            "title": "Öğretmen değerlendirmesi",
-            "body": "Konuya hâkim olma, söz varlığı, beden dili ve ses, zaman-mekân yönetimi ve dinleyici ilgisi gibi sayfada açıkça belirtilen genel ölçütleri izleyin."
+            "title": "Konuşma ölçütleri",
+            "body": "Konuya hâkimiyet, söz varlığını kullanma, beden dili ve ses, zaman ve mekânı yönetme, dinleyici ilgisini sürdürme."
           },
           {
-            "title": "Akran değerlendirmesi",
-            "body": "Kişiye değil gözlenebilir performansa ve adil ölçütlere odaklanın."
+            "title": "Akran geri bildirimi",
+            "body": "Geri bildiriminizi kişiliğe değil, konuşmada gözlediğiniz davranış ve örneklere dayandırın."
           },
           {
-            "title": "Kaynak sınırı",
-            "body": "QR formlarının ayrıntılı puanları ve görünmeyen ölçütleri kaynak görülmeden yeniden üretilmemelidir."
+            "title": "Karekod formları",
+            "body": "Ayrıntılı dereceli puanlama anahtarı ve akran değerlendirme formu karekod bağlantısındadır. Formlarda görmediğiniz ölçüt veya puan aralıklarını varsaymayın."
           }
         ],
         "note": "Öz ve akran değerlendirmede belirlenen eksikleri sonraki konuşma için somut hedeflere dönüştürün."

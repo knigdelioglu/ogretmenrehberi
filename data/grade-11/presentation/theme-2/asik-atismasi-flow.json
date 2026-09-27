@@ -103,20 +103,21 @@
       "source_record_id": "T02-S0121",
       "layout": "reference",
       "density": "large",
-      "prompt": "Öğretmen gözlemi",
+      "prompt": "Dinleme sürecinizi gözden geçirip bir gelişim hedefi belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğretmen, dinleme / izleme sürecini kitapta verilen Gözlem Formu doğrultusunda değerlendirir.",
+        "lead": "Dinleme / izleme sırasında belirlediğiniz amacı ve gösterdiğiniz davranışları değerlendirin.",
         "sections": [
           {
-            "title": "Gözlenebilir davranış",
-            "body": "Amaç belirleme, dikkat, sabır, saygı, sözün bitmesini bekleme ve sınıf dinleme ortamına uyum gibi davranışları süreç içinde gözleyin."
+            "title": "Kendi sürecim",
+            "body": "Amacımı belirleme, dikkatimi sürdürme, sabır ve saygı gösterme, konuşanın sözünü tamamlamasını bekleme ve ortak dinleme ortamını koruma davranışlarımı gözden geçirin."
           },
           {
-            "title": "Geri bildirim",
-            "body": "Öğrencinin kişiliğini değil, gözlenen dinleme davranışını ve bir sonraki çalışmada geliştirebileceği somut hedefi ifade edin."
+            "title": "Bir sonraki dinleme",
+            "body": "Geliştirmek istediğiniz bir davranışı seçin ve sonraki dinlemede uygulayabileceğiniz somut bir hedef yazın."
           }
-        ]
+        ],
+        "note": "Öğretmen, dinleme / izleme sürecini kitapta verilen Gözlem Formu doğrultusunda değerlendirir. Gözlenebilir davranışlar: amaç belirleme, dikkat, sabır, saygı, sözün bitmesini bekleme ve sınıf dinleme ortamına uyum. Geri bildirim öğrencinin kişiliğine değil, gözlenen davranışına ve bir sonraki çalışmada geliştirebileceği somut hedefe odaklanır."
       }
     },
     {

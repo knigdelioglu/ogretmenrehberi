@@ -17,8 +17,7 @@
         "Tarık Buğra örneği": "Aile/çevre, radyo ortamı, Arayan Bulur adlı radyofonik oyunu yazması ve ilk telif ücretini alması.",
         "Âşık Veysel örneği": "Ahmet Kutsi Tecer'le karşılaşması, Âşıklar Bayramı'na katılması ve şiirlerini daha geniş çevrelerle buluşturan gelişmeler.",
         "Genellenebilir ayrıntılar": "Aile ve yetişme çevresi, öğrenim, önemli karşılaşmalar, ilk eser/başarılar, çalışma hayatı, sanat yaşamını etkileyen olaylar ve eserler."
-      },
-      "guidance": "Metindeki somut ayrıntıları kullanın; ‘yerelden ulusal değere dönüşme’, ‘tesadüfî başlangıç’ gibi değerlendirmeleri zorunlu sonuç yapmayın."
+      }
     },
     {
       "question_id": "T3-P194-Q02",
@@ -32,8 +31,7 @@
         "Tarık Buğra": "Bir eserin ortaya çıkışındaki çevreyi ve ilk yazarlık deneyimini görmeye yardımcı olur.",
         "Âşık Veysel": "Bir karşılaşmanın ve sanat ortamının şairin tanınma sürecindeki yerini göstermeye yardımcı olur.",
         "Okur için önemi": "Sanatçının yaşam koşulları, karşılaşmaları ve üretimi arasında bağ kurma; kişi ve dönem hakkında bilgi edinme."
-      },
-      "guidance": "‘İlham verir’, ‘azim aşılar’ gibi sonuçlar öğrencinin kişisel değerlendirmesi olabilir; biyografinin herkes üzerindeki zorunlu etkisi gibi sunmayın."
+      }
     },
     {
       "question_id": "T3-P195-PERF01",
@@ -42,7 +40,6 @@
       "question_no": "Okumayı Yönetebilme",
       "prompt_summary": "Mehmet Akif Ersoy biyografisi için okuma amacı, tahmin ve strateji belirleme",
       "answer": "Okuma amacı, başlık/görsellerden ön tahmin ve uygun okuma stratejisi ayrı aşamalarda belirlenir.",
-      "guidance": "İstiklâl Marşı yarışması, Millî Mücadele faaliyetleri, baytarlık-vaizlik-milletvekilliği sıralaması veya Safahat bilgisi ön tahminin hazır cevabı yapılmamalıdır.",
       "source_locator": "basılı s.195 / PDF s.196 — Okumayı Yönetebilme 1–2, Metni Okuyalım 1–2",
       "answer_sections": {
         "Okuma amacı": "Mehmet Âkif Ersoy'un yaşamı, eğitimi, çalışmaları, eserleri ve önemli yaşam olayları arasındaki ilişkileri belirlemek.",
@@ -57,8 +54,8 @@
       "printed_page": 198,
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Hakkın Sesleri parçasındaki kelimeleri verilen anlamlarla eşleştirme",
-      "answer": "Kelime eşleştirmeleri ve eşleşmeden artan seçenek aşağıda gösterilmiştir.",
-      "explanation": "Sayfanın görseli kontrol edildi; etkinlikte yedi kelime seçeneğine karşılık altı anlam verildiği için bir seçenek artmaktadır.",
+      "answer": "Kelimeleri anlamlarıyla eşleştirin; listede eşleşmeden kalan bir seçenek vardır.",
+      "explanation": "Sayfada yedi kelime seçeneği ve altı tanım vardır; bu nedenle bir seçenek eşleşmeden kalır.",
       "source_locator": "basılı s.198 / PDF s.199 — Söz Varlığımız / sayfa görseli doğrulandı",
       "answer_sections": {
         "hor görülme": "e) zillet",
@@ -68,8 +65,7 @@
         "esin": "b) ilham",
         "umursamayan": "ç) vurdumduymaz",
         "kullanılmayan seçenek": "f) vesile"
-      },
-      "guidance": "Kitapta seçenek sayısı (7), tanım sayısından (6) fazladır. Etkinlikte kullanılmayan vesile seçeneğine zorla tanım eşleştirmeyin. TDK QR'si kontrol aracı olarak verilmiştir; haricî sözlük sayfasının içeriği okunmuş varsayılmaz."
+      }
     },
     {
       "question_id": "T3-P199-Q01",
@@ -77,17 +73,16 @@
       "printed_page": 199,
       "question_no": "1",
       "prompt_summary": "Mehmet Akif'in zayıf ve yardıma muhtaç kesimlere yer vermesinin kişiliği hakkında uyandırdığı izlenim",
-      "answer": "Mehmet Âkif’in toplumsal duyarlılığı öğrencide saygı, empati veya başka gerekçeli duygular uyandırabilir.",
+      "answer": "Mehmet Âkif’in toplumsal duyarlılığı sizde saygı, empati ya da başka bir duygu uyandırabilir.",
       "evidence_quotes": [
         "duyarlı ve vicdanlı bir aydındır"
       ],
       "source_locator": "basılı s.196–197 ana metin ve soru s.199 / PDF s.197–198, 200",
       "answer_sections": {
-        "Metindeki kanıt": "‘Küfe’ ve ‘Hasta’da çocuklar; ‘Seyfi Baba’ ve ‘Yemişçi İhtiyar’da yaşlılar; başka şiirlerde toplumun farklı kesimleri işlenir.",
+        "Metindeki kanıt": "“Küfe” ve “Hasta”da çocuklar; “Seyfi Baba” ve “Yemişçi İhtiyar”da yaşlılar; başka şiirlerde toplumun farklı kesimleri işlenir.",
         "Örnek kişisel yanıt": "“Bu örnekler, şairin çevresindeki insanların güçlüklerine duyarlı olduğunu düşündürdüğü için bende saygı ve empati uyandırıyor.”",
-        "Açık uçluluk": "Öğrenci başka bir duygu belirleyebilir; gerekçesini metindeki eser veya değerlendirmeyle ilişkilendirmelidir."
-      },
-      "guidance": "‘Köşklerde yapay aşk şiirleri yazmak yerine’, ‘toplumun yaralarını sarma aracı’ gibi kaynak dışı karşıtlık ve yorumlar eklemeyin."
+        "Kendi yorumunuz": "Başka bir duygu da belirtebilirsiniz; gerekçenizi metindeki eser veya değerlendirmelerle ilişkilendirin."
+      }
     },
     {
       "question_id": "T3-P199-Q02",
@@ -95,15 +90,14 @@
       "printed_page": 199,
       "question_no": "2",
       "prompt_summary": "Mehmet Akif'e 'İslâm şairi' denilmesinin nedeni",
-      "answer": "Metne göre Mehmet Âkif'e “İslâm şairi” denmesinin başlıca nedeni, şiirlerinde dinî-hikemî konulara yer vermesi ve toplum meselelerini **İslâmî bir duyarlılıkla** ele almasıdır.",
+      "answer": "Metne göre Mehmet Âkif'e “İslâm şairi” denmesinin başlıca nedeni, şiirlerinde dinî-hikemî konulara yer vermesi ve toplum meselelerini İslâmî bir duyarlılıkla ele almasıdır.",
       "source_locator": "basılı s.196–198 ana metin ve soru s.199 / PDF s.197–199, 200",
       "answer_sections": {
         "Gençlik şiirleri": "Allah ve Peygamber sevgisi ile değer verdiği İslâm büyüklerine duyduğu hayranlığı dile getiren manzumeler bulunduğu belirtilir.",
         "Olgunluk şiirleri": "Birinci Safahat'ta toplumsal meselelerin yanında dinî-hikemî şiirlerin önemli yer tuttuğu belirtilir.",
         "Hakkın Sesleri": "Bazı Kur'an ayetlerini şiirin imkânlarıyla serbest biçimde yorumlayarak dönemin toplumsal-siyasal meseleleriyle ilişkilendirir.",
         "Sonuç": "‘İslâm şairi’ nitelemesi, biyografi yazarının bu dinî ve toplumsal duyarlılıkları birlikte değerlendirmesine dayanır."
-      },
-      "guidance": "Kaynakta ‘hadisleri tefsir etmesi’, bütün İslâm coğrafyasına bir ‘diriliş reçetesi’ sunması gibi ifadeler yoktur; eklemeyin."
+      }
     },
     {
       "question_id": "T3-P199-Q03",
@@ -114,12 +108,11 @@
       "answer": "Âkif, para ödülüne mesafeli durduğu için yarışmaya önce katılmamış; sonradan ödülü almama şartıyla şiiri yazmayı kabul etmiştir.",
       "source_locator": "basılı s.195–196 ana metin ve soru s.199 / PDF s.196–197, 200",
       "answer_sections": {
-        "Kitapta anlatılan olay": "Ödüle mesafeli durma → yarışmaya katılmama → rica/ısrar sonrasında ödülü almamak şartıyla şiiri yazma.",
+        "Kitapta anlatılan olay": "Ödüle mesafeli durma → yarışmaya katılmama → rica ve ısrar sonrasında ödülü almamak şartıyla şiiri yazma.",
         "Örnek yorum": "“Millî marş yazımını kişisel maddi kazançtan ayrı tutmayı önemsediği düşünülebilir.”",
-        "Açık uçluluk": "Öğrenci, aynı olgulardan hareketle fedakârlık, görev anlayışı veya maddi karşılığa mesafe gibi başka gerekçeli değerlendirmeler yapabilir.",
-        "Kaynak sınırı": "Ödülün daha sonra ne yapıldığı veya Âkif'in o sıradaki maddi durumu bu ders kitabı parçasında verilmez."
-      },
-      "guidance": "Darülmesai'ye bağış, palto hikâyesi veya zihnindeki kesin gerekçeler bu metnin kanıtı değildir; hazır cevap olarak kullanmayın."
+        "Başka bir yorum": "Aynı olgulardan hareketle fedakârlık, görev anlayışı veya maddi karşılığa mesafe gibi başka gerekçeli değerlendirmeler yapabilirsiniz.",
+        "Kaynak sınırı": "Ödülün daha sonra ne yapıldığı veya Âkif’in o sıradaki maddi durumu bu parçada belirtilmez."
+      }
     },
     {
       "question_id": "T3-P200-PERF01",
@@ -127,15 +120,14 @@
       "printed_page": 200,
       "question_no": "Fark Edelim",
       "prompt_summary": "Mehmet Akif'in vatan dizeleri ile sayfadaki şehitler ve Millî Mücadele Anıtı üzerine duygu ve düşünce geliştirme",
-      "answer": "Bu etkinlikte sayfadaki dört kişinin kısa yaşam bilgileri, Çanakkale'deki Vatan ve Millî Mücadele Anıtı ile Mehmet Âkif'in verilen dizeleri birlikte düşünülerek **kişisel duygu ve düşünce** geliştirilir. Tek bir zorunlu duygu yoktur.",
-      "guidance": "Bu kişileri ‘Âsım neslinin günümüzdeki yaşayan abideleri’ gibi tek bir yoruma bağlamayın. Öğrencinin saygı, hüzün, sorumluluk, vefa veya başka bir duyguyu kendi gerekçesiyle ifade etmesine alan açın.",
+      "answer": "Sayfadaki dört kişinin kısa yaşam bilgilerini, Çanakkale’deki Vatan ve Millî Mücadele Anıtı’nı ve Mehmet Âkif’in verilen dizelerini birlikte düşünerek kendi duygu ve düşüncenizi oluşturun. Tek bir zorunlu duygu yoktur.",
       "source_locator": "basılı s.200 / PDF s.201 — Fark Edelim, dört kişi fotoğrafı, anıt ve metindeki iki dize",
       "answer_sections": {
-        "Şenay Aybüke Yalçın": "Sayfada verilen öğretmenlik ve 9 Haziran 2017 tarihli kayıp bilgisi.",
-        "Necmettin Yılmaz": "Sayfada verilen öğretmenlik ve 16 Haziran 2017 tarihli kayıp bilgisi.",
-        "Ferhat Gedik": "Sayfada verilen 11 Ağustos 2017'de Eren Bülbül'ü korurken hayatını kaybettiği bilgisi.",
-        "Gülşah Güler": "Sayfada verilen 15 Temmuz 2016 Gölbaşı Özel Harekât Daire Başkanlığı saldırısında hayatını kaybettiği bilgisi.",
-        "Anıt ve dizeler": "Hatırlama, kayıp, sorumluluk, vatan savunması ve fedakârlık üzerine düşünme zemini sağlar.",
+        "Şenay Aybüke Yalçın": "Verilen bilgiye göre 2016’da müzik öğretmeni olarak atanmış; 9 Haziran 2017’de hayatını kaybetmiştir.",
+        "Necmettin Yılmaz": "Verilen bilgiye göre 2016’da sınıf öğretmeni olarak atanmış; 16 Haziran 2017’de hayatını kaybetmiştir.",
+        "Ferhat Gedik": "Verilen bilgiye göre 11 Ağustos 2017’de Eren Bülbül’ü korurken hayatını kaybetmiştir.",
+        "Gülşah Güler": "Verilen bilgiye göre 15 Temmuz 2016’da Gölbaşı Özel Harekât Daire Başkanlığı saldırısında hayatını kaybetmiştir.",
+        "Anıt ve dizeler": "Hatırlama, kayıp, sorumluluk, vatan savunması ve fedakârlık üzerine düşünmenize zemin sağlayabilir.",
         "Örnek kişisel yanıt": "“Bu görseller ve dizeler bende kayıpları anma, sorumluluk ve toplumsal dayanışma üzerine düşünme isteği uyandırıyor.”"
       }
     },
@@ -145,37 +137,36 @@
       "printed_page": 201,
       "question_no": "Çalışma Kâğıdı",
       "prompt_summary": "Mehmet Akif Ersoy biyografi metninin konu, amaç, ana düşünce ve anlatım özellikleri",
-      "answer": "Çalışma kâğıdının dokuz başlığı metne dayalı biçimde ayrı ayrı tamamlanmıştır.",
+      "answer": "Çalışma kâğıdının dokuz başlığını Mehmet Âkif Ersoy biyografisindeki bilgilerle ayrı ayrı tamamlayın.",
       "answer_sections": {
-        "konu": "Mehmet Akif'in yaşamı, eğitimi, edebî gelişimi, eserleri ve Millî Mücadele'deki görevleri.",
-        "ana_dusunce": "Akif'in sanatı, yaşadığı dönemin toplum, din ve millet meseleleriyle hayatı boyunca ilişki içinde gelişmiştir.",
-        "yardimci_dusunceler": [
-          "Fatih'teki öğrenimi ve baytarlık eğitimi, yayın/öğretim çalışmaları.",
-          "Millî Mücadele'de vaazları ve İstiklâl Marşı'nın yazılma süreci.",
-          "Safahat'ı oluşturan şiir kitapları; çocuklar, yaşlılar ve toplumun farklı kesimleri."
+        "Konu": "Mehmet Âkif’in yaşamı, eğitimi, edebî gelişimi, eserleri ve Millî Mücadele’deki görevleri.",
+        "Ana düşünce": "Âkif’in sanatı, yaşadığı dönemin toplum, din ve millet meseleleriyle hayatı boyunca ilişki içinde gelişmiştir.",
+        "Yardımcı düşünceler": [
+          "Fatih’teki öğrenimi ve baytarlık eğitimi; yayın ve öğretim çalışmaları.",
+          "Millî Mücadele’de vaazları ve İstiklâl Marşı’nın yazılma süreci.",
+          "Safahat’ı oluşturan şiir kitapları; çocuklar, yaşlılar ve toplumun farklı kesimleri."
         ],
-        "yazilma_amaci": "Akif'in yaşam dönüm noktalarını, eserlerini ve edebiyatımızdaki yerini tanıtmak.",
-        "anlatim_bicimleri": [
+        "Yazılma amacı": "Âkif’in yaşam dönüm noktalarını, eserlerini ve edebiyatımızdaki yerini tanıtmak.",
+        "Anlatım biçimleri": [
           "Açıklama: eğitim, meslek, eser ve şiir anlayışı hakkında bilgi verme.",
-          "Öyküleme: marş yarışması ve Ankara'ya gidişin zaman sırasıyla aktarılması."
+          "Öyküleme: marş yarışması ve Ankara’ya gidişin zaman sırasıyla aktarılması."
         ],
-        "dusunceyi_gelistirme": [
-          "Örnekleme: ‘Küfe’, ‘Hasta’, ‘Seyfi Baba’ gibi eserlerin anılması.",
+        "Düşünceyi geliştirme": [
+          "Örnekleme: “Küfe”, “Hasta”, “Seyfi Baba” gibi eserlerin anılması.",
           "Karşılaştırma: gençlik ve olgunluk şiirlerinin ayrılması.",
           "Tarih ve özel adlarla somutlaştırma: 1893, 1908, 1911, 1921 gibi dönüm noktaları."
         ],
-        "acik_iletiler": [
-          "1893'te Baytar ve Ziraat Mektebini bitirmesi, 1911'de Safahat'ı yayımlaması.",
-          "İstiklâl Marşı'nın 12 Mart 1921'de kabul edilmesi."
+        "Açık iletiler": [
+          "1893’te Baytar ve Ziraat Mektebini bitirmesi, 1911’de Safahat’ı yayımlaması.",
+          "İstiklâl Marşı’nın 12 Mart 1921’de kabul edilmesi."
         ],
-        "ortuk_iletiler": [
+        "Örtük iletiler": [
           "Bir sanatçının eserleri eğitiminden, çevresinden ve yaşadığı tarihî süreçten beslenebilir.",
           "Şiir, toplumun güçlüklerini görünür kılarken estetik işçilik de taşıyabilir."
         ],
-        "bilgilerin_sunulus_sekli": "Ağırlıkla kronolojik: çocukluk/eğitim → yayın ve eserler → Millî Mücadele → Mısır yılları; yer yer şiir anlayışı ve eser türlerine göre tematik açıklama."
+        "Bilgilerin sunuluşu": "Ağırlıkla kronolojik: çocukluk ve eğitim → yayın ve eserler → Millî Mücadele → Mısır yılları; yer yer şiir anlayışı ve eser türlerine göre tematik açıklama."
       },
-      "source_locator": "basılı s.195–198 biyografi, s.201 dokuz satırlı Çalışma Kâğıdı / PDF s.196–199, 202",
-      "guidance": "Dokuz başlık tek bir uzun paragrafta eritilmez; her cevap satırına metinden ayrı örnek yerleştirilir. Tarih ve kişi adı açıklamada kanıttır; ‘ana düşünce’ salt kronoloji listesi değildir."
+      "source_locator": "basılı s.195–198 biyografi, s.201 dokuz satırlı Çalışma Kâğıdı / PDF s.196–199, 202"
     }
   ]
 }

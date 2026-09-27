@@ -39,10 +39,10 @@
       ],
       "guidance": "Cevabı bu sayfadaki metnin açıkça kurduğu hayatı yeniden kurma, dönemi yansıtma ve kültür aktarımı ekseninde tutun. Metinde açıklanmayan alımlama kuramı, çok anlamlılık veya okur merkezli kuramsal sonuçları zorunlu cevap yapmayın.",
       "answer_sections": {
-        "hayatla_iliskisi": "Hayattan ve insanın değişik hâllerinden hareket eder.",
-        "sanatsal_donusturme": "Hayatı yazarın dünyasında yeniden düzenler ve biçimlendirir; birebir kopyalamaz.",
-        "donem_ve_kultur": "Sanatçının döneminin ruhu, dünya görüşü ve kültürel değerleri esere yansıyabilir.",
-        "kultur_aktarimi": "Geçmiş ile gelecek arasında bağ kurmaya ve kültürel belleğin aktarılmasına katkı sağlar."
+        "Hayatla ilişkisi": "Hayattan ve insanın değişik hâllerinden hareket eder.",
+        "Sanatsal dönüştürme": "Hayatı yazarın dünyasında yeniden düzenler ve biçimlendirir; birebir kopyalamaz.",
+        "Dönem ve kültür": "Sanatçının döneminin ruhu, dünya görüşü ve kültürel değerleri esere yansıyabilir.",
+        "Kültür aktarımı": "Geçmiş ile gelecek arasında bağ kurmaya ve kültürel belleğin aktarılmasına katkı sağlar."
       }
     },
     {
@@ -52,12 +52,12 @@
       "question_no": "4",
       "source_locator": "basılı s.239 / PDF s.240 — soru 4",
       "prompt_summary": "Önceki yaşantıların edebî eseri anlamlandırmaya etkisini gerekçelendirme",
-      "answer": "Bu soru öğrencinin gerçek yaşantısına göre cevaplanmalıdır; rehber öğrenci adına herhangi bir deneyim uydurmaz. Uygulanabilir cevap şablonu: Karşılaştığım gerçek olay/durum: [...] → Eserdeki benzer olay/durum: [...] → Bu benzerlik eseri benim için daha anlamlı kıldı/kılmadı çünkü: [...].",
-      "guidance": "Kişisel deneyim alanı boş bırakılmalıdır. Öğrenci yaşantı benzerliğinin eseri daha anlamlı kıldığını da kılmadığını da savunabilir; gerekçesinin kendi gerçek deneyimi ile metin arasındaki ilişkiyi açıklaması yeterlidir.",
+      "answer": "Gerçek bir yaşantınızı hatırlayın. Eserdeki benzer durumla karşılaştırın; bu benzerliğin eseri sizin için daha anlamlı kılıp kılmadığını gerekçelendirin.",
+      "guidance": "Kendi yaşantınızı gerçek bir olayla sınırlandırın. Bu benzerliğin eseri daha anlamlı kıldığı ya da kılmadığı yönündeki görüşünüzü metinle ilişkilendirin.",
       "answer_sections": {
-        "gercek_yasanti": "[...]",
-        "metindeki_benzerlik": "[...]",
-        "anlamlandirmaya_etkisi": "Daha anlamlı kıldı / kılmadı / kısmen etkiledi.",
+        "Gerçek yaşantım": "[...]",
+        "Metindeki benzerlik": "[...]",
+        "Anlamlandırmama etkisi": "Daha anlamlı kıldı / kılmadı / kısmen etkiledi.",
         "gerekce": "[...]"
       }
     },
@@ -68,13 +68,13 @@
       "question_no": "5",
       "source_locator": "basılı s.239 / PDF s.240 — soru 5",
       "prompt_summary": "Seçilecek edebî türü ve yansıtılacak hayat yönünü gerekçelendirme",
-      "answer": "Tek bir doğru tür veya hayat kesiti yoktur. Öğrenci kendi yazma tercihini belirlemeli ve türün imkânlarıyla anlatmak istediği hayat yönü arasında ilişki kurmalıdır.",
-      "guidance": "Öğrenci adına 'kısa öykü seçerdim' gibi bir tercih yazmayın. Şiir, hikâye, tiyatro, roman veya başka bir edebî tür seçilebilir; tür, konu ve gerekçe birbiriyle tutarlı olmalıdır.",
+      "answer": "Şiir, hikâye, tiyatro, roman veya başka bir edebî tür seçebilirsiniz. Türün olanaklarıyla anlatmak istediğiniz hayat kesiti arasında ilişki kurun.",
+      "guidance": "Seçtiğiniz türü ve anlatmak istediğiniz hayat yönünü belirleyin. Tür, konu ve gerekçenizin birbiriyle tutarlı olmasına dikkat edin.",
       "answer_sections": {
-        "sectigim_tur": "[...]",
-        "yansitmak_istedigim_hayat_yonu": "[...]",
-        "neden_bu_tur": "[...]",
-        "turun_bu_konuyu_anlatmaya_sagladigi_imkan": "[...]"
+        "Seçtiğim tür": "[...]",
+        "Yansıtmak istediğim hayat yönü": "[...]",
+        "Bu türü seçme nedenim": "[...]",
+        "Türün bu konuyu anlatmaya sağladığı imkân": "[...]"
       }
     },
     {
@@ -84,13 +84,13 @@
       "question_no": "Konuya Başlarken 1-4",
       "source_locator": "basılı s.240 / PDF s.241 — Konuya Başlarken",
       "prompt_summary": "Mimar Sinan bilgilerini tiyatro diyaloğu ve monoloğuna dönüştürme",
-      "answer": "Aşağıdaki kısa taslak, bilgi görselindeki verileri sahne konuşmasına dönüştürmeye örnektir. Replikler öğrencilerin ürettiği kurmaca örnektir; Mimar Sinan’dan alınmış tarihî alıntı değildir.",
+      "answer": "Aşağıdaki kurmaca replikler, bilgi görselindeki olgulardan hareketle hazırlanmıştır; Mimar Sinan’dan alınmış tarihî alıntılar değildir.",
       "answer_sections": {
         "Diyalog örneği": "Genç: Farklı şehirlerde gördüğünüz yapılar size ne öğretti?\nSinan: Her yapıdan bir şey öğrendim; çizgisine, taşıyıcısına ve ustasının çözümüne dikkat ettim.\nGenç: Peki Şehzade, Süleymaniye ve Selimiye sizin için ne ifade eder?\nSinan: Onlar, mesleğimde ilerleyişimin üç durağıdır.",
         "Monolog örneği": "Ağırnas’ta başlayan yolculuğum beni İstanbul’a, oradan da nice şehre götürdü. Gördüğüm yapıları inceledim; öğrendiklerimi sabırla çalışarak kendi eserlerime dönüştürdüm.",
         "Sahneleme": "Bilgi görselindeki doğum yeri, görevler ve eserlerden birkaçını seçip kısa repliklere taşıyın. Her bilgiye aynı ağırlığı vermek yerine, seçilen olayın karakteri veya mesleki gelişimi nasıl gösterdiğini belirginleştirin."
       },
-      "guidance": "Öğrenciler bilgi görselindeki olguları kullanmalı; hayalî replikleri tarihî kişilerin gerçek sözleri gibi sunmamalıdır."
+      "guidance": "Repliklerinizi bilgi görselindeki doğrulanmış olgulardan hareketle kurun. Kurmaca sözleri tarihî kişilerin gerçek sözleri gibi göstermeyin."
     },
     {
       "question_id": "T4-P241-PERF01",
@@ -99,8 +99,8 @@
       "question_no": "Okumayı Yönetebilme",
       "source_locator": "basılı s.241-242 / PDF s.242-243 — Okumayı Yönetebilme",
       "prompt_summary": "Okuma öncesi tahmin ve okuma çemberi stratejisi oluşturma",
-      "answer": "Örnek okuma planı: Başlık ve yapı görsellerinden hareketle metnin Mimar Sinan’ın yaşamı ve mimarlık yolculuğu çevresinde gelişen bir tiyatro oyunu olabileceği tahmin edilir. Okuma çemberinde bağ kurucu, ressam, sorgulayıcı ve okuma aydınlatıcısı temel rollerinden; özetleyici, kelime avcısı, tahmin edici, hareket izcisi ve karakter çözümleyici seçimlik rollerinden grup ihtiyacına göre dağıtılır. Okurken herkes rolüne uygun not alır; grup sonunda tahminler metindeki kanıtlarla karşılaştırılır.",
-      "guidance": "Bu çalışma okuma öncesi tahmin kurmayı amaçlar. Öğrencinin tahminini, metni okuduktan sonra öğrendiği ayrıntılarla geriye dönük biçimde “doğru” göstermeyin."
+      "answer": "Başlık ve yapı görsellerinden hareketle oyunun Mimar Sinan’ın yaşamı ve mimarlık yolculuğu çevresinde gelişebileceğini tahmin edin. Okuma çemberinde bağ kurucu, ressam, sorgulayıcı ve okuma aydınlatıcısı rollerini paylaşın; grubunuz isterse özetleyici, kelime avcısı, tahmin edici, hareket izcisi veya karakter çözümleyici rollerini de eklesin. Okurken rolünüze uygun kısa notlar alın. Okuma sonunda tahminlerinizi metin kanıtlarıyla karşılaştırın.",
+      "guidance": "Tahmininizi, metni okuduktan sonra öğrendiğiniz ayrıntılarla geriye dönük biçimde doğrulanmış gibi göstermeyin. İlk tahmininizi okuma sonrası bulgularla karşılaştırın."
     }
   ]
 }

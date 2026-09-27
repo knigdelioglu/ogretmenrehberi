@@ -72,34 +72,37 @@ function pick(obj, keys) {
   return out;
 }
 
-function slimStep(step) {
+function slimStep(step, themeId) {
+  const includeTeacherSupport = themeId !== "TEMA_01";
+  const answerFields = [
+    "entry_type",
+    "question_no",
+    "answer",
+    "answer_sections",
+    ...(includeTeacherSupport ? ["guidance", "explanation"] : []),
+    "evidence_quotes",
+    "dictionary_terms"
+  ];
   const answer = step.answer
-    ? pick(step.answer, [
-        "entry_type",
-        "question_no",
-        "answer",
-        "answer_sections",
-        "guidance",
-        "explanation",
-        "evidence_quotes",
-        "dictionary_terms"
-      ])
+    ? pick(step.answer, answerFields)
     : null;
   const content = step.content ? pick(step.content, ["lead", "items", "sections"]) : null;
 
   // Kumandayla açılacak katmanlar: kanonik reveal_order sırası, öğretmen notu hariç,
   // yalnız gerçekten içeriği olan katmanlar.
   const has = {
-    guidance: Boolean(answer?.guidance),
+    guidance: includeTeacherSupport && Boolean(answer?.guidance),
     answer: Boolean(answer?.answer || answer?.answer_sections),
     evidence: Boolean(answer?.evidence_quotes?.length),
-    explanation: Boolean(answer?.explanation)
+    explanation: includeTeacherSupport && Boolean(answer?.explanation)
   };
   const reveals = (step.reveal_order || []).filter((k) => has[k]);
 
   return {
     id: step.id,
     layout: step.layout,
+    density: step.density,
+    sections_layout: step.sections_layout,
     prompt: step.display_prompt,
     page: step.source?.printed_page_range ?? "",
     heading: step.source?.book_heading ?? "",
@@ -120,7 +123,7 @@ const catalog = {
     title: lesson.title,
     subtitle: lesson.subtitle,
     pages: lesson.printed_page_range,
-    steps: lesson.steps.map(slimStep)
+    steps: lesson.steps.map((step) => slimStep(step, lesson.theme_id))
   }))
 };
 

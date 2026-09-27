@@ -19,7 +19,7 @@
       "prompt": "Konuya Başlarken — Tarık Buğra ve Âşık Veysel'e ilişkin iki parçayı okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın ilk metni Tarık Buğra'nın radyo oyunu ve ilk telifini; ikinci metni Âşık Veysel'in tanışmaları ile gezilerini anlatır.",
+        "lead": "İlk metinde Tarık Buğra’nın radyo oyunu ve ilk telifi; ikinci metinde Âşık Veysel’in tanışmaları ve gezileri anlatılır. Bu ayrıntıları karşılaştırın.",
         "sections": [
           {
             "title": "Tarık Buğra — Askerde / İlk Telif Ücreti",
@@ -47,7 +47,8 @@
           "Meslek, sanat ve eserleri",
           "Yol açıcı tanışmalar ve dönüm noktaları",
           "Çalışmaların sonuçları"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metindeki somut ayrıntıları kullanın; ‘yerelden ulusal değere dönüşme’, ‘tesadüfî başlangıç’ gibi değerlendirmeleri zorunlu sonuç yapmayın."
       }
     },
     {
@@ -93,7 +94,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P194-Q02",
       "content": {
-        "lead": "İki sanatçının yalnız başarılarını değil o başarılara zemin oluşturan kişi, olay ve koşulları karşılaştırın."
+        "lead": "İki sanatçının yalnız başarılarını değil o başarılara zemin oluşturan kişi, olay ve koşulları karşılaştırın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: ‘İlham verir’, ‘azim aşılar’ gibi sonuçlar öğrencinin kişisel değerlendirmesi olabilir; biyografinin herkes üzerindeki zorunlu etkisi gibi sunmayın."
       }
     },
     {
@@ -110,7 +112,8 @@
           "Öğrenmek istediğim yaşam dönemi",
           "İzleyeceğim bilgi türü",
           "Okuma sonunda cevaplayacağım soru"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: İstiklâl Marşı yarışması, Millî Mücadele faaliyetleri, baytarlık-vaizlik-milletvekilliği sıralaması veya Safahat bilgisi ön tahminin hazır cevabı yapılmamalıdır."
       }
     },
     {
@@ -153,7 +156,7 @@
       "prompt": "Metni Okuyalım — Mehmet Akif Ersoy (s.195): aile, öğrenim ve edebiyata giriş",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metni kitaptan okuyun; 1878–1893 öğrenim zincirini ve 1908–1912 dergi/kitap sürecini ayrı izleyin. Yalnız başlık ve not çerçevesi burada verilir; tam metin tekrar yayımlanmaz.",
+        "lead": "Mehmet Âkif Ersoy biyografisini okurken yaşamındaki önemli olayları, eserlerini ve dönemin koşullarını not edin.",
         "sections": [
           {
             "title": "Yaşam dönemi",
@@ -178,7 +181,7 @@
       "prompt": "s.195 — Millî Mücadele'ye katılışın metindeki kronolojisini izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın verdiği 10 Nisan ve 24 Nisan 1920 tarihleriyle Ankara'ya gidişi ve sonraki görevleri ayırın.",
+        "lead": "10 Nisan ve 24 Nisan 1920 tarihlerini Ankara’ya gidiş ve sonraki görevleriyle ilişkilendirin.",
         "sections": [
           {
             "title": "Kaynak sınırı",
@@ -198,8 +201,8 @@
         "lead": "Yarışma ilanı → para ödülüne mesafeli duruş → ödülü almama şartıyla yazma → 1 Mart 1921 okuma → 12 Mart 1921 kabul.",
         "sections": [
           {
-            "title": "Öğretmene not",
-            "body": "Bu bilgiler s.196 metninin içeriğidir; s.195'teki okuma öncesi tahmin yerine geçmez."
+            "title": "Olay sırası",
+            "body": "Mehmet Âkif’in İstiklâl Marşı’nı yazma sürecini ve bu sürecin koşullarını metindeki bilgilere göre inceleyin."
           }
         ]
       }
@@ -263,7 +266,7 @@
       "prompt": "s.197 — Akif'in toplum ve edebiyat anlayışına ilişkin değerlendirmeleri okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Çocuklar ve toplumun farklı kesimleri, millet/memleket meseleleri ve şiirde estetik işçilikle ilgili kitabın değerlendirmesini ayrıştırın.",
+        "lead": "Çocuklar ve toplumun farklı kesimleri, millet ve memleket meseleleri, şiirde estetik işçilik hakkındaki değerlendirmeleri ayrı ayrı belirleyin.",
         "sections": [
           {
             "title": "Olgu / değerlendirme ayrımı",
@@ -298,7 +301,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P198-VOC01",
       "content": {
-        "lead": "Kitap yedi kelime seçeneği verir; altı tanım eşleştirilir ve ‘vesile’ kullanılmadan kalır. Sözlük karekodu doğrulama adımıdır."
+        "lead": "Kitap yedi kelime seçeneği verir; altı tanım eşleştirilir ve ‘vesile’ kullanılmadan kalır. Sözlük karekodu doğrulama adımıdır.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kitapta seçenek sayısı (7), tanım sayısından (6) fazladır. Etkinlikte kullanılmayan vesile seçeneğine zorla tanım eşleştirmeyin. TDK QR'si kontrol aracı olarak verilmiştir; haricî sözlük sayfasının içeriği okunmuş varsayılmaz."
       }
     },
     {

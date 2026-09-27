@@ -11,13 +11,13 @@
       "question_no": "1",
       "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 1",
       "prompt_summary": "Afişte dikkati çeken tasarım unsurunu açıklama",
-      "answer": "Bu soru kişisel algıya açıktır; afişte ilk dikkat çeken unsur öğrenciye ve incelenen afişe göre değişebilir. Öğrenci gerçekten dikkatini çeken ögeyi adlandırıp bunun neden öne çıktığını açıklamalıdır.",
+      "answer": "Afişte gerçekten ilk dikkatinizi çeken ögeyi adlandırın ve neden öne çıktığını açıklayın.",
       "answer_sections": {
-        "ilk_dikkatimi_ceken_unsur": "[...]",
+        "İlk dikkatimi çeken unsur": "[...]",
         "neden": "[...]",
-        "tasarimla_iliskisi": "Boyut, konum, renk karşıtlığı, başlık, görsel veya başka bir özellik: [...]"
+        "Tasarımla ilişkisi": "Boyut, konum, renk karşıtlığı, başlık, görsel veya başka bir özellik: [...]"
       },
-      "guidance": "Öğrenci adına 'önce büyük görsel dikkatimi çeker' gibi sabit bir kişisel algı cevabı vermeyin."
+      "guidance": "İlk dikkatinizi çeken ögeyi seçin; nedenini afişteki yer, boyut, renk veya başka bir tasarım özelliğiyle açıklayın."
     },
     {
       "question_id": "T4-P299-Q02",
@@ -55,7 +55,7 @@
         "Afişin özellikleri": "Tek ana ileti; mesajla uyumlu bir veya az sayıda görsel; kısa başlık/slogan; başlık, alt başlık ve slogan arasında belirgin hiyerarşi; uzaktan okunabilen yazı ve karşıt renk.",
         "Yazma stratejisi": "İzleme notlarından iletiyi seç → hedef kitleyi belirle → görsel ve slogan seçeneklerini tasarla → taslak hazırla → arkadaş geri bildirimiyle düzelt."
       },
-      "guidance": "Afişin mesajı, öğrenci Fedakârlık videosunu gerçekten izledikten sonra seçilmelidir; video içeriği tahminle doldurulmaz."
+      "guidance": "Afişinizin iletisini Fedakârlık videosunda gözlemlediğiniz söz, davranış veya görüntülere dayandırın."
     },
     {
       "question_id": "T4-P300-PERF01",
@@ -81,8 +81,8 @@
       "question_no": "İçerik Oluşturabilme c-ç",
       "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme c-ç / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinden seçilen iletiyi ve etkileyicilik unsurlarını belirleme",
-      "answer": "Bu tablo belgeseldeki gerçek iletilere ve görüntü/ses kullanımına bağlıdır; EBA videosu burada açılamadığı için ileti veya etkileyicilik unsuru doldurulamaz. Öğrenci izlediği kayıttan iletiyi kendi sözleriyle yazmalı; bunu destekleyen bir davranış, söz, görüntü veya ses ayrıntısını belirtmelidir. Afiş planında yalnız doğrulanan ileti kullanılmalıdır.",
-      "guidance": "Başlıktan hareketle bir mesaj uydurup belgeselde verilmiş gibi sunmayın."
+      "answer": "İzlediğiniz belgeselde öne çıkan iletiyi kendi sözlerinizle yazın. Bunu destekleyen davranış, söz, görüntü ya da ses ayrıntısını belirtin; afiş planında yalnız videoyla doğruladığınız bilgileri kullanın.",
+      "guidance": "İletinizi başlıktan tahmin etmek yerine videodaki bir sahne veya ifadeyle destekleyin."
     },
     {
       "question_id": "T4-P301-PERF01",
@@ -108,7 +108,7 @@
       "question_no": "Örnek afiş iskeleti",
       "source_locator": "basılı s.298-301 / PDF s.299-302 — Afiş kriterleri + Performans Görevi",
       "prompt_summary": "Kitap ölçütlerine uygun, video iletisi sonradan yerleştirilecek afiş taslağı oluşturma",
-      "answer": "Video içeriği izlenmeden doldurulmayacak alanlarla örnek afiş iskeleti:",
+      "answer": "Videoda doğruladığınız iletiden hareketle aşağıdaki afiş iskeletini tamamlayın.",
       "answer_sections": {
         "Başlık/slogan": "[Videoda kanıtlanan ana iletiyi kısa biçimde ifade eden 3–5 sözcük.]",
         "Ana görsel": "[Videoda gerçekten görülen davranış veya izinli/özgün bir çizim; tek ve büyük imge.]",
@@ -116,7 +116,7 @@
         "Düzen": "Başlık en belirgin; ana görsel mesajı destekler; yazı okunaklı ve renk karşıtlığı yeterli.",
         "Kaynak notu": "Dışarıdan alınan görsel veya alıntı varsa kaynağını ve kullanım koşulunu belirtin."
       },
-      "guidance": "Köşeli alanlar öğrenci videoyu izledikten ve iletiyi doğruladıktan sonra doldurulur."
+      "guidance": "Köşeli alanları videoyu izledikten ve iletiyi doğruladıktan sonra doldurun."
     },
     {
       "question_id": "T4-P302-PERFQ01",
@@ -125,13 +125,13 @@
       "question_no": "1",
       "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 1",
       "prompt_summary": "Afiş hazırlama sürecindeki duygu, düşünce ve davranış değişimini öz değerlendirmeyle açıklama",
-      "answer": "Bu öz değerlendirme öğrencinin gerçekten yaşadığı afiş hazırlama sürecine dayanmalıdır. Rehber duygu, düşünce veya davranış değişimini öğrenci adına uydurmaz.",
-      "guidance": "Başlığı kısalttım, görseli büyüttüm gibi yapılmamış düzenlemeleri örnek öğrenci geçmişi olarak yazmayın.",
+      "answer": "Afişinizi hazırlarken hissettiklerinizi, düşüncelerinizde veya davranışlarınızda fark ettiğiniz değişimleri somut örneklerle yazın.",
+      "guidance": "Hazırlık sürecinde gerçekten yaptığınız değişiklikleri belirtin. Başlığı kısaltma veya görseli büyütme gibi bir düzenlemeyi yalnızca yaptıysanız örnek verin.",
       "answer_sections": {
-        "baslangictaki_duygu_dusunce_davranisim": "[...]",
-        "surecte_degisen_nokta": "[...]",
-        "degisime_yol_acan_gercek_deneyim_veya_geri_bildirim": "[...]",
-        "sonraki_calismada_yapacagim": "[...]"
+        "Başlangıçtaki duygu, düşünce ve davranışım": "[...]",
+        "Süreçte değişen nokta": "[...]",
+        "Değişime yol açan gerçek deneyim veya geri bildirim": "[...]",
+        "Sonraki çalışmada yapacağım": "[...]"
       }
     },
     {
@@ -150,13 +150,13 @@
       "question_no": "3",
       "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 3",
       "prompt_summary": "Afişte kullanılan görsel ve alıntıları telif, hakkaniyet ve dürüstlük açısından değerlendirme",
-      "answer": "Afişte gerçekten kullanılan her görsel ve alıntı ayrı ayrı değerlendirilmelidir. Öğrenci, kaynağını ve kullanım koşulunu bildiği materyalleri belirtmeli; başkasının emeğini kendi üretimi gibi göstermemelidir.",
-      "guidance": "Öğrenci adına hangi görseli kullandığını veya izin/lisans kontrolü yaptığını varsaymayın. Genel telif ilkelerini uygulama şablonu olarak verin; hukuki görüş üretmeyin.",
+      "answer": "Afişte kullandığınız görsel ve alıntıları ayrı ayrı değerlendirin. Kaynağını ve kullanım koşulunu belirtin; başkasının emeğini kendi üretiminiz gibi göstermeyin.",
+      "guidance": "Kullandığınız görsel veya alıntının kaynağını yazın; izin, lisans ya da kaynak gösterimi gerekliliklerini kontrol edin. Emin olmadığınız konularda materyalin kullanım koşullarını inceleyin.",
       "answer_sections": {
-        "kullandigim_gorsel_veya_alinti": "[...]",
-        "kaynak_sahibi": "[...]",
-        "kullanim_izni_lisans_veya_kaynak_gosterimi": "[...]",
-        "hakkaniyet_ve_durustluk_degerlendirmem": "[...]"
+        "Kullandığım görsel veya alıntı": "[...]",
+        "Kaynak sahibi": "[...]",
+        "Kullanım izni, lisans veya kaynak gösterimi": "[...]",
+        "Hakkaniyet ve dürüstlük değerlendirmem": "[...]"
       }
     },
     {
@@ -175,7 +175,8 @@
       "question_no": "Değerlendirme",
       "source_locator": "basılı s.302 / PDF s.303 — Değerlendirme / QR Dereceli Puanlama Anahtarı",
       "prompt_summary": "Afişi öğretmenin QR dereceli puanlama anahtarına göre değerlendirip eksikleri giderme",
-      "answer": "Sayfada görünen değerlendirme ölçütleri konuya uygunluk, yaratıcılık, özgünlük, etkileyicilik ve görsel/işitsel ögelerin seçimi gibi başlıklardır. QR dereceli puanlama anahtarının ayrıntısı bu incelemede açılmadı; düzey adları, puan aralıkları veya ek ölçütler uydurulmamalıdır. Anahtara erişildiğinde öğretmen ve öğrenci tespit edilen eksikleri ona göre düzeltir."
+      "answer": "Afişinizi konuya uygunluk, yaratıcılık, özgünlük, etkileyicilik ve görsel-işitsel öge seçimi ölçütleriyle gözden geçirin. Her ölçüt için afişinizden örnek gösterin ve geliştireceğiniz noktaları not edin.",
+      "guidance": "Görünen ölçütleri afişinize uygulayın. Ayrıntılı puanlama anahtarı elinizdeyse düzey ve puanları o anahtara göre belirleyin."
     },
     {
       "question_id": "T4-P302-PERF06",
@@ -184,8 +185,8 @@
       "question_no": "Tema Sonu Değerlendirme / Öğrenme Günlüğü",
       "source_locator": "basılı s.302 / PDF s.303 — Tema Sonu Değerlendirme / Öğrenme Günlüğü",
       "prompt_summary": "Tema sonu öğrenme günlüğünü öğrencinin kendi öğrenme ve yazar kimliği üzerine tamamlaması",
-      "answer": "Öğrenme günlüğü öğrencinin tema öncesi ve sonrası bilgisini, hayat deneyimiyle ilgili farkındalığını ve konuşmacı/yazar kimliğindeki değişimi kendi örnekleriyle yazdığı kişisel bir çalışmadır. Öğretmen, “Bu temada öğrendiğim bir şey…”, “Hayatın gerçeklerinin duygu ve davranışlara yansıdığını şu metinde fark ettim…”, “Bir sonraki yazma/konuşma çalışmamda…” gibi başlangıçlar sunabilir.",
-      "guidance": "Öğrenci adına öğrenme sonucu, kişisel farkındalık veya öz değerlendirme doldurmayın."
+      "answer": "Öğrenme günlüğünüzde tema öncesi ve sonrası bilginizi, hayat deneyiminize ilişkin farkındalığınızı ve konuşmacı veya yazar kimliğinizdeki değişimi kendi örneklerinizle yazın. Şu başlangıçlardan yararlanabilirsiniz: “Bu temada öğrendiğim bir şey…”; “Hayatın gerçeklerinin duygu ve davranışlara yansıdığını şu metinde fark ettim…”; “Bir sonraki yazma veya konuşma çalışmamda…”.",
+      "guidance": "Kendi öğrenme sonucunuzu, farkındalığınızı ve öz değerlendirmenizi kişisel örneklerle yazın."
     }
   ]
 }

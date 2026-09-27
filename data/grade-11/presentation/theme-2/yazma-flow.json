@@ -19,7 +19,7 @@
       "prompt": "Sanal Müzecilikte Yeni Yaklaşımlar — okuma ve tartışma",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kaynak metni kitaptan okuyup sanal müzeciliğin imkânlarını yazma göreviyle ilişkilendirin.",
+        "lead": "Sanal müzelerin erişim, güncellenebilirlik ve ziyaretçi katılımı olanaklarını metinden çıkarın; bu bilgileri izlenim yazısı görevinizle ilişkilendirin.",
         "sections": [
           {
             "title": "Zaman ve erişim",
@@ -46,7 +46,7 @@
       "prompt": "Çevrim içi gezilebilen müzeleri araştırıp kısa tanıtım listesi hazırlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Öğrenci gerçek erişimi doğrulayarak kısa ve farklı koleksiyonları temsil eden bir liste oluştursun.",
+        "lead": "Erişimini doğruladığınız sanal müzeleri farklı koleksiyonlarıyla tanıtan kısa bir liste hazırlayın.",
         "items": [
           "Resmî müze veya kurum sitesinden çevrim içi erişimi doğrulayın.",
           "Müzenin adı, konumu ve koleksiyonunu kısaca kaydedin.",
@@ -72,7 +72,7 @@
       "prompt": "İzlenim yazısının yöntemini, amacını, hedef kitlesini ve yapısını planlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki 3–7. adımları uygulayın: metnin amacı, hedef kitlesi, düzeni, engelleri ve stratejisi birbiriyle uyumlu olsun.",
+        "lead": "Yazma amacı, hedef kitle, yapı, karşılaşabileceğiniz engeller ve kullanacağınız stratejiyi birbiriyle uyumlu planlayın.",
         "items": [
           "Gezi notlarınızı gözlem / duygu / kişisel yorum olarak ayırın.",
           "Kime, neyi, neden yazacağınızı belirleyin.",
@@ -156,7 +156,7 @@
       "prompt": "İzlenim yazısını oluşturma ölçütleri — 1/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın yazma ölçütleri, ilk bölüm.",
+        "lead": "İzlenim yazınızı oluştururken aşağıdaki ölçütlerden yararlanın.",
         "items": [
           "Kime, neyi, nasıl ve hangi araçlarla anlatacağınızı planlayın.",
           "Planla uyumlu, dikkat çekici bir giriş yazın.",
@@ -176,7 +176,7 @@
       "prompt": "İzlenim yazısını oluşturma ölçütleri — 2/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın kalan yazma ölçütleri.",
+        "lead": "İzlenim yazınızı oluşturup son kez gözden geçirirken aşağıdaki ölçütlerden yararlanın.",
         "items": [
           "Vermek istediğiniz açık ve örtük iletileri ayrıntılandırın.",
           "Millî-manevi değerleri ve kültürel unsurları gözetin.",
@@ -227,24 +227,25 @@
       "source_record_id": "T02-S0148",
       "layout": "reference",
       "density": "large",
-      "prompt": "Dereceli puanlama ve akran değerlendirme — QR kaynak sınırı",
+      "prompt": "İzlenim yazınızı değerlendirme ölçütleriyle gözden geçiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitap ayrıntılı dereceli puanlama ve akran değerlendirme formlarına QR ile yönlendiriyor.",
+        "lead": "Sayfada görünen ölçütleri kullanın. Ayrıntılı puanlama ve akran değerlendirme formları karekod bağlantısındadır.",
         "sections": [
           {
-            "title": "Sayfada görünür ölçütler",
-            "body": "Dil ve üslup, özgünlük, öznel/nesnel ifadeler, görsel kullanımı, yazım ve noktalama."
+            "title": "Yazı ölçütleri",
+            "body": "Dil ve üslup, özgünlük, öznel ve nesnel ifadeler, görsel kullanımı, yazım ve noktalama."
           },
           {
-            "title": "Öğretmen uygulaması",
-            "body": "Öz değerlendirmede Kısmen / Hayır işaretlenen maddeleri sonraki düzeltmeye bağlayın."
+            "title": "Akran geri bildirimi",
+            "body": "Geri bildiriminizi kişiliğe değil, yazıda gözlediğiniz özellik ve örneklere dayandırın."
           },
           {
-            "title": "Kaynak sınırı",
-            "body": "QR formlarına erişmeden puan aralığı veya ek ölçüt uydurmayın."
+            "title": "Karekod formları",
+            "body": "Ayrıntılı puanlama ve akran değerlendirme formları karekod bağlantısındadır. Görmediğiniz ölçüt veya puan aralığı eklemeyin."
           }
-        ]
+        ],
+        "note": "Öğretmen uygulaması: Öz değerlendirmede Kısmen / Hayır işaretlenen maddeleri sonraki düzeltmeye bağlayın."
       }
     },
     {
@@ -309,7 +310,7 @@
       "prompt": "Öğrenme Günlüğü — tema boyunca öğrendiklerim ve geliştireceklerim",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Günlüğü öğrenci kendi öğrenmesine dayanarak doldurur; aşağıdaki cevap yalnız örnek ayrıntı düzeyidir."
+        "lead": "Tema boyunca ne öğrendiğinizi, hangi konuları pekiştirmek istediğinizi ve neleri merak ettiğinizi kendi deneyiminizden hareketle yazın."
       }
     }
   ]

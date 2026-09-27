@@ -6,11 +6,13 @@ import type { DictionaryTerm, LessonStep, RevealKey } from "../types";
 
 interface StepViewProps {
   step: LessonStep;
+  themeId: string;
   revealed: Set<RevealKey>;
   toggle: (key: RevealKey) => void;
   presentationMode: boolean;
   showInlineControls: boolean;
   showTeacherNotes: boolean;
+  showTeacherSupport: boolean;
   visibleVocabularyTerms: ReadonlySet<string>;
   toggleVocabularyTerm: (term: string) => void;
 }
@@ -48,9 +50,12 @@ function revealButtonLabel(_step: LessonStep, key: RevealKey) {
   return buttonLabels[key];
 }
 
-function answerLabel(step: LessonStep) {
+function answerLabel(step: LessonStep, themeId: string) {
   if (step.answer?.entry_type === "performance_support") return "Uygulama desteği";
   if (step.answer?.entry_type === "source_limited") {
+    if (themeId === "TEMA_01") return "Yanıt çerçevesi";
+    if (themeId === "TEMA_02") return "Cevap";
+    if (themeId === "TEMA_04") return "Yönerge";
     return "Kaynak sınırı / doğrulanabilen çerçeve";
   }
   return "Cevap";
@@ -189,11 +194,13 @@ function DictionaryCard({ terms }: { terms: DictionaryTerm[] }) {
 
 export function StepView({
   step,
+  themeId,
   revealed,
   toggle,
   presentationMode,
   showInlineControls,
   showTeacherNotes,
+  showTeacherSupport,
   visibleVocabularyTerms,
   toggleVocabularyTerm
 }: StepViewProps) {
@@ -202,7 +209,9 @@ export function StepView({
   const controls = answerControls(step);
   const isVocabulary = step.layout === "vocabulary";
   const answerVisible = Boolean(answer && revealed.has("answer") && !isVocabulary);
-  const guidanceVisible = Boolean(answer?.guidance && revealed.has("guidance"));
+  const guidanceVisible = Boolean(
+    showTeacherSupport && answer?.guidance && revealed.has("guidance")
+  );
   const preserveStructuredContentWithAnswer =
     answerVisible &&
     (step.layout === "structure" ||
@@ -261,7 +270,9 @@ export function StepView({
               {answer.entry_type === "performance_support"
                 ? "Uygulama / performans"
                 : answer.entry_type === "source_limited"
-                  ? "Kaynak sınırlı · " + taskTypeLabel(source.task_type)
+                  ? themeId === "TEMA_01" || themeId === "TEMA_02" || themeId === "TEMA_04"
+                    ? taskTypeLabel(source.task_type)
+                    : "Kaynak sınırlı · " + taskTypeLabel(source.task_type)
                   : taskTypeLabel(source.task_type)}
             </div>
 
@@ -271,9 +282,9 @@ export function StepView({
                   <div
                     className="inline-answer"
                     data-reveal-key="answer"
-                    aria-label={answerLabel(step)}
+                    aria-label={answerLabel(step, themeId)}
                   >
-                    <div className="inline-answer__label">{answerLabel(step)}</div>
+                    <div className="inline-answer__label">{answerLabel(step, themeId)}</div>
                     <p className="inline-answer__text">{answer.answer}</p>
                     {answer.answer_sections ? (
                       <StructuredSections sections={answer.answer_sections} layout={step.layout} />
@@ -315,7 +326,7 @@ export function StepView({
                     <AnswerToggleIcon active={answerVisible} />
                   </button>
 
-                  {answer.guidance ? (
+                  {showTeacherSupport && answer.guidance ? (
                     <button
                       className={
                         guidanceVisible
@@ -384,7 +395,7 @@ export function StepView({
           </div>
         ) : null}
 
-        {answer?.guidance && revealed.has("guidance") ? (
+        {showTeacherSupport && answer?.guidance && revealed.has("guidance") ? (
           <div data-reveal-key="guidance">
             <RevealPanel label="Yönlendirme" tone="guidance">
               <p>{answer.guidance}</p>
@@ -404,7 +415,7 @@ export function StepView({
           </div>
         ) : null}
 
-        {answer?.explanation && revealed.has("explanation") ? (
+        {showTeacherSupport && answer?.explanation && revealed.has("explanation") ? (
           <div data-reveal-key="explanation">
             <RevealPanel label="Açıklama" tone="explanation">
               <p>{answer.explanation}</p>

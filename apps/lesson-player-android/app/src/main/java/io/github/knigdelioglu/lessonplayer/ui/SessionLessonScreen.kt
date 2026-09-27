@@ -228,7 +228,8 @@ internal fun SessionLessonScreen(
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
                                 Text(
-                                    text = if (answer?.entryType == "source_limited")
+                                    text = if (answer?.entryType == "source_limited" &&
+                                        lesson.themeId != "TEMA_02" && lesson.themeId != "TEMA_04")
                                         "KAYNAK SINIRI · ${lessonTaskTypeLabel(step.source.taskType)}"
                                     else lessonTaskTypeLabel(step.source.taskType),
                                     style = MaterialTheme.typography.labelMedium,

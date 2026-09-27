@@ -36,6 +36,20 @@ assert(
     JSON.stringify(["guidance", "answer", "evidence", "explanation"]),
   "Student projection must strip the teacher-only note reveal."
 );
+assert(
+  JSON.stringify(studentVisibleRevealKeys(
+    ["guidance", "answer", "evidence", "explanation", "note"],
+    "TEMA_01"
+  )) === JSON.stringify(["answer", "evidence"]),
+  "Theme 1 projections must keep teacher guidance and explanations private."
+);
+assert(
+  JSON.stringify(studentVisibleRevealKeys(
+    ["guidance", "answer", "evidence", "explanation", "note"],
+    "TEMA_02"
+  )) === JSON.stringify(["guidance", "answer", "evidence", "explanation"]),
+  "Projection behavior for other themes must remain unchanged."
+);
 
 let stepCount = 0;
 let teacherNoteCount = 0;
@@ -97,18 +111,19 @@ const stepViewSource = fs.readFileSync(
 );
 
 assert(
-  appSource.includes("revealed: studentVisibleRevealKeys(revealed)"),
+  appSource.includes("revealed: studentVisibleRevealKeys(revealed, lesson.theme_id)"),
   "Projection state must be sanitized before publishing."
 );
 assert(
   appSource.includes(
-    "setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [])))"
+    "setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [], lesson.theme_id)))"
   ),
   "Student projection must sanitize incoming reveal state defensively."
 );
 assert(
-  appSource.includes("showTeacherNotes={!displayOnly}"),
-  "Student display must disable teacher-note rendering."
+  appSource.includes('showTeacherNotes={!displayOnly && (lesson.theme_id !== "TEMA_01" || !presentationMode)}') &&
+    appSource.includes('showTeacherSupport={lesson.theme_id !== "TEMA_01" || (!displayOnly && !presentationMode)}'),
+  "Theme 1 class displays must hide teacher notes and support text."
 );
 assert(
   stepViewSource.includes(
@@ -215,6 +230,17 @@ assert(
   !JSON.stringify(studentOverrides).includes("Teacher-only") &&
     !studentOverrides["step-one"].reveal_order.includes("note"),
   "Projection overrides must never carry teacher-only notes or reveal layers."
+);
+const themeOneOverrides = studentVisibleOverrides({
+  "step-one": {
+    reveal_order: ["guidance", "answer", "evidence", "explanation", "note"],
+    content: { lead: "Visible", note: "Teacher-only" }
+  }
+}, "TEMA_01");
+assert(
+  JSON.stringify(themeOneOverrides["step-one"].reveal_order) ===
+    JSON.stringify(["answer", "evidence"]),
+  "Theme 1 projection overrides must also filter teacher support layers."
 );
 assert(
   teacherOverrides["step-one"].content.note === "Teacher-only",

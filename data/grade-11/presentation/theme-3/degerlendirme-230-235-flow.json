@@ -42,7 +42,8 @@
           "Tez alanı",
           "Antitez alanı",
           "Kesişim alanı"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metinlerin kaynağına veya yazarların biyografilerine kitaptaki parçaların dışında ayrıntı eklemeyin. Gerekçeyi yalnız parçadaki anlatıcı, yaşam bilgisi, gözlem ve edebî dönüştürme göstergeleriyle kurun."
       }
     },
     {
@@ -75,7 +76,8 @@
       "prompt": "Ölçme ve Değerlendirme 2 — Tez ve antitezi birleştiren sentez cümlesi yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kesişimdeki metinden hareketle 'iz taşıyabilir; fakat birebir kopya değildir' düşüncesini kendi cümlenizle gerekçelendirin."
+        "lead": "Kesişimdeki metinden hareketle 'iz taşıyabilir; fakat birebir kopya değildir' düşüncesini kendi cümlenizle gerekçelendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin cümlesini tek bir kalıba zorlamayın; hem 'hayattan iz taşıma' hem de 'edebî dönüştürme/bağımsızlık' yönünü birlikte ifade etmesi yeterlidir."
       }
     },
     {
@@ -110,7 +112,8 @@
           "Okur yorumu",
           "Nesnellik",
           "Çok anlamlılık"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metinde olmayan 'metaforik doku', 'alımlama estetiği' gibi kuramsal terimleri zorunlu cevap hâline getirmeyin."
       }
     },
     {
@@ -122,7 +125,8 @@
       "prompt": "Ölçme ve Değerlendirme 4 — Dış dünya gerçekliğini yansıtmak edebî değeri nasıl etkiler?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir görüş geliştirin; gerçekliğe benzerlik yanında dil, kurgu ve anlatımın rolünü de değerlendirin. Gerekçeli farklı görüşler mümkün."
+        "lead": "Bir görüş geliştirin; gerçekliğe benzerlik yanında dil, kurgu ve anlatımın rolünü de değerlendirin. Gerekçeli farklı görüşler mümkün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Klasik realizm, modernizm, postmodernizm gibi dış kuramları zorunlu gerekçe olarak eklemeyin."
       }
     },
     {
@@ -134,7 +138,8 @@
       "prompt": "Ölçme ve Değerlendirme 5 — Okur yorumu anlayışına uygun seçeneği belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Seçenekleri basılı s.231'den okuyun; metnin farklı okurların birikim, ilgi ve değerlerine ilişkin açıklamasıyla karşılaştırın."
+        "lead": "Seçenekleri basılı s.231'den okuyun; metnin farklı okurların birikim, ilgi ve değerlerine ilişkin açıklamasıyla karşılaştırın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir."
       }
     },
     {
@@ -146,7 +151,8 @@
       "prompt": "Ölçme ve Değerlendirme 6 — Kurmaca ile dış dünya gerçekliği arasındaki temel farkı belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kurmaca dünyanın ne tamamen gerçekliğin kopyası ne de inandırıcılıktan yoksun bir evren olduğunu düşünün."
+        "lead": "Kurmaca dünyanın ne tamamen gerçekliğin kopyası ne de inandırıcılıktan yoksun bir evren olduğunu düşünün.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir."
       }
     },
     {
@@ -191,7 +197,8 @@
       "prompt": "Ölçme ve Değerlendirme 7 — En yüksek oranlı temanın Garip anlayışıyla bağlantısı nedir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce tablodan oranı söyleyin. Ardından sıradan insanın ve gündelik hayatın şiire taşınmasıyla ilişkilendirin."
+        "lead": "Önce tablodan oranı söyleyin. Ardından sıradan insanın ve gündelik hayatın şiire taşınmasıyla ilişkilendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kitabe-i Seng-i Mezar, Süleyman Efendi, aruz/heceyi yıkma, kahvehane, tramvay gibi bu sayfalarda verilmeyen örnekleri hazır cevaba eklemeyin."
       }
     },
     {
@@ -203,7 +210,8 @@
       "prompt": "Ölçme ve Değerlendirme 8 — Metin Orhan Veli'yi hangi edebî yönleriyle tanıtıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.232–233'teki parçada şairlik, Garip akımı, öykücülük, tema ve üslup bilgilerini birlikte değerlendirin."
+        "lead": "s.232–233'teki parçada şairlik, Garip akımı, öykücülük, tema ve üslup bilgilerini birlikte değerlendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: 'Garip'in kurucusu/teorisyeni', 'hece ve aruzu yıktı', 'balıkçıları ve memurları şiire soktu', 'halkın günlük konuşma dilini kullandı' gibi bu parçada açıkça söylenmeyen ayrıntıları zorunlu cevap yapmayın."
       }
     },
     {
@@ -215,7 +223,8 @@
       "prompt": "Ölçme ve Değerlendirme 9 — Orhan Veli metni hakkında söylenemeyecek seçeneği bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metin sanatçının yaşamını kronolojik sırayla mı anlatıyor, yoksa edebî kişiliğine mi odaklanıyor? Bu ayrım üzerinden seçin."
+        "lead": "Metin sanatçının yaşamını kronolojik sırayla mı anlatıyor, yoksa edebî kişiliğine mi odaklanıyor? Bu ayrım üzerinden seçin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metni 'edebî portre' gibi kitaptaki sorunun gerektirmediği bir türe kesin olarak etiketlemeye gerek yoktur."
       }
     },
     {
@@ -226,7 +235,7 @@
       "prompt": "Biyografi yarışması — Puanlama kuralını önce uygulayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın iki tablosundaki her açıklamayı biyografi türünün özelliklerine göre ayrı ayrı değerlendirin.",
+        "lead": "İki tabloda yer alan her açıklamayı biyografi türünün özelliklerine göre ayrı ayrı değerlendirin.",
         "sections": [
           {
             "title": "Doğru açıklama",
@@ -259,7 +268,8 @@
           "İçerik",
           "Tutum",
           "Toplam puan"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tutum cümlesini tabloda verildiği biçimde kullanın; yorumunuzu metindeki ölçütlere dayandırın."
       }
     },
     {
@@ -277,7 +287,8 @@
           "Tarafsızlık",
           "Kronoloji",
           "Belge"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tablodaki hatalı cümleleri olduğu gibi aktarın ve bu iki kavramın tanımlarıyla düzeltin."
       }
     },
     {
@@ -288,7 +299,7 @@
       "prompt": "Bir Bilim Adamının Romanı — Mustafa İnan parçasını okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.234'ündeki parçada Mustafa İnan'ın öğretme isteğiyle çevresindekilerin onu ne kadar tanıdığı arasındaki farkı işaretleyin.",
+        "lead": "Mustafa İnan’ın öğretme isteği ile çevresindekilerin onu ne ölçüde tanıdığını karşılaştırın.",
         "items": [
           "Mühendis arkadaşlarına yaptığı açıklama",
           "Onu dinleyenlerin tepkisi",
@@ -306,7 +317,8 @@
       "prompt": "Ölçme ve Değerlendirme 12 — Fuzûlî'ye yapılan gönderme Mustafa İnan'ı nasıl yansıtır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kalabalık içinde bulunmak ile anlaşılmış olmak arasındaki farkı, arkadaşlarının hatırladığı şeylerle birlikte yorumlayın."
+        "lead": "Kalabalık içinde bulunmak ile anlaşılmış olmak arasındaki farkı, arkadaşlarının hatırladığı şeylerle birlikte yorumlayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Mustafa İnan'ın Divan şiiri, felsefe veya halk irfanı bilgisine ilişkin bu parçada verilmeyen sonuçları beyitten hareketle 'kanıtlandı' diye eklemeyin."
       }
     },
     {
@@ -318,7 +330,7 @@
       "prompt": "Ölçme ve Değerlendirme 13 — Sekiz yargıyı Evet / Hayır / Bilgi yok olarak değerlendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.234 tablosundaki sekiz cümleyi sırayla okuyun. Kararı yalnız parçada bulunan bilgi veya anlatım özelliğine dayandırın.",
+        "lead": "Sekiz cümleyi sırayla okuyun; her kararınızı parçada bulunan bilgi veya anlatım özelliğine dayandırın.",
         "items": [
           "1. Bilgi verme amacı",
           "2. Biyografik roman türü",
@@ -329,7 +341,7 @@
           "7. Nesnel anlatım",
           "8. Kronolojik sıra"
         ],
-        "note": "Yanıtı açmadan önce sekiz satırın tamamını işaretleyin; yalnız 'Bilgi yok' seçeneğini dışlamak için tahminde bulunmayın."
+        "note": "Yanıtı açmadan önce sekiz satırın tamamını işaretleyin; yalnız 'Bilgi yok' seçeneğini dışlamak için tahminde bulunmayın.\n\nÖğretmen için kaynak ve değerlendirme notu: 'Hâkim anlatıcı' gibi bu kısa parça üzerinden kesinleştirilmesi gerekmeyen anlatıcı alt türlerini eklemeyin. 'Bilgi yok' seçeneği ancak parçada karar vermeye yeterli veri bulunmadığında kullanılmalıdır."
       }
     },
     {
@@ -358,7 +370,8 @@
       "prompt": "Ölçme ve Değerlendirme 14 — Diyalog tekniği Aile Bağları'nın anlatımına nasıl katkı sağlar?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Videoda gerçekten duyulan bir konuşmayı seçin; kişinin duygu, düşünce veya ilişkisini hangi yönden görünür kıldığını açıklayın."
+        "lead": "Videoda gerçekten duyulan bir konuşmayı seçin; kişinin duygu, düşünce veya ilişkisini hangi yönden görünür kıldığını açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Yalnız genel çözümleme şablonu verin. 'Kuşak çatışması', 'aile içi güç dengesi', belirli alt metin veya psikolojik özellikleri videodan kanıt olmadan bu yapımın özelliği gibi yazmayın."
       }
     },
     {
@@ -375,7 +388,8 @@
           "Kişi: Çatışma ve değişimi kim taşıyor?",
           "Mekân: Sahnenin ilişkiler veya atmosfer üzerindeki etkisi ne?",
           "Zaman: Olayın sırası ve süresi gerilimi nasıl kuruyor?"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: 'Aile evi', belirli kuşaklar, günün saati, mevsim, dekor, ışık veya geçmiş-şimdi geçişi gibi videoda doğrulanmamış ayrıntıları hazır cevap olarak kullanmayın."
       }
     },
     {
@@ -408,7 +422,8 @@
       "prompt": "Ölçme ve Değerlendirme 16 — Hangi parçalar yazarın hayatından bilgi vererek olay yazmaya uygundur?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her parçada anlatılan kişinin yazar mı, bir tezkirede tanıtılan şair mi, yoksa kurmaca karakter mi olduğunu denetleyin."
+        "lead": "Her parçada anlatılan kişinin yazar mı, bir tezkirede tanıtılan şair mi, yoksa kurmaca karakter mi olduğunu denetleyin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: I. parçada 'tahsil', V. parçada 'şiir hevesi/yetiştiği çevre' gibi bu sayfadaki parçalarda bulunmayan ayrıntıları gerekçeye eklemeyin."
       }
     }
   ]

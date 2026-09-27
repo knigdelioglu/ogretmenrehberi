@@ -19,8 +19,7 @@
         "Türkçemiz, bugünkü haliyle, sanat yapmakta, düşüncelerimizi anlatmakta güçsüz sayılmaz."
       ],
       "source_locator": "basılı s.210 / PDF s.211 — soru 1",
-      "explanation": "Mülakat, kişinin kendi görüş ve çalışma yöntemlerini doğrudan öğrenmeye imkân verir. Bu parça Kemal Tahir'in kendi romancılık anlayışı bakımından birincil sözlü/yazılı tanıklık niteliğindedir; ancak bundan yazarın bütün kişiliği veya bütün poetikası hakkında sınırsız sonuç çıkarılmamalıdır.",
-      "guidance": "‘Usta romancı’, ‘sanat atölyesine açılan kapı’ gibi övgü yüklü kalıplar yerine, metindeki gerçek soru-cevap içeriğine odaklanın.",
+      "explanation": "Mülakat, kişinin kendi görüş ve çalışma yöntemlerini doğrudan öğrenmeye imkân verir. Bu parça Kemal Tahir’in romancılık anlayışı hakkında doğrudan bilgi sunar; ancak buradan yazarın bütün kişiliği veya poetikası hakkında sınırsız sonuç çıkarılamaz.",
       "answer_sections": {
         "Romanın hazırlanışı": "Konuların ve kişilerin zamanla olgunlaşması; yazarın buna “romanın maddî temeli” demesi.",
         "Roman kişisinin canlanması": "Kişinin bir noktadan sonra yazarın önceden bütünüyle belirleyemeyeceği ayrıntılar kazanması.",
@@ -40,8 +39,7 @@
         "sorularin_onceden_hazirlanmasi": "Temel konuların unutulmasını ve gereksiz tekrarları azaltır; sorular arasında anlamlı sıra kurmayı kolaylaştırır.",
         "surenin_belirlenmesi": "Her başlığa ayrılacak zamanı dengelemeye ve görüşmenin gereksiz uzamasını önlemeye yardımcı olur.",
         "hedef_kitlenin_belirlenmesi": "Dil, kavram düzeyi ve açıklama ayrıntısının dinleyici/okura göre ayarlanmasını sağlar."
-      },
-      "guidance": "Bunları ‘başarıyı doğrudan belirleyen zorunlu koşullar’ diye mutlaklaştırmayın; planlamanın olası katkılarını açıklayın."
+      }
     },
     {
       "question_id": "T3-P211-PERF01",
@@ -49,25 +47,24 @@
       "printed_page": 211,
       "question_no": "Performans Görevi 1-3",
       "prompt_summary": "Huzur'daki bir kişiyle hayalî mülakat için plan ve kişi seçimi",
-      "answer": "Kişi seçimi, okunan parçalardaki söz ve davranış kanıtına dayanmalıdır; aşağıdaki tablo seçim desteğidir.",
+      "answer": "Mülakat için seçtiğiniz karakterin söz ve davranışlarını okuduğunuz parçalardaki kanıtlara dayandırın. Aşağıdaki tablo seçim yapmanıza yardımcı olabilir.",
       "answer_sections": {
-        "Mümtaz": "İstanbul, geçmiş, kimlik, musiki ve ‘yeni hayat’ üzerine düşünceleri ayrıntılı biçimde görülür; mülakat için yeterli metin kanıtı vardır.",
-        "Nuran": "Mümtaz'la şehir ve musiki üzerine konuşur; geçmişe bağlılığı sorgular ve bakımsız semtlerde insanların güncel ihtiyaçlarına dikkat çeker.",
-        "İhsan": "Mümtaz'ın ‘asıl hocam’ dediği, düşünce dünyasında etkili bir rehber olarak anlatılır; s.182'deki yardımcı metin gerçek hayattaki esin kaynağı hakkında bilgi verir.",
-        "Macide": "s.182'de Mümtaz'ın aile çevresi ve korunup kollanması bağlamında görünür; ayrıntılı kişilik çıkarımı için kaynak daha sınırlıdır.",
-        "Suat": "Ders kitabında okunan Huzur kesitlerinde yeterli doğrudan söz/davranış kanıtı yoktur; ayrıntılı karakter özelliği uydurulmamalıdır.",
-        "Fâhir": "Ders kitabında okunan kesitlerde yeterli doğrudan söz/davranış kanıtı yoktur; ayrıntılı karakter özelliği uydurulmamalıdır.",
-        "ornek_secim": "Mümtaz seçilebilir; gerekçe: İstanbul, geçmiş, kimlik ve yeni hayat üzerine düşüncelerinin okunan parçalarda açıkça görünmesi.",
-        "amac": "Seçilen kişinin metinde görülen düşünce, duygu ve davranışlarını hayalî soru-cevap biçiminde yeniden kurmak.",
-        "hedef_kitle": "Sınıf arkadaşları.",
-        "strateji": [
-          "Soruyu açık uçlu kurmak.",
-          "Her cevabın dayanağını daha önce okunan Huzur parçasında bulmak.",
-          "Kaynakta bulunmayan yaşam olayı, psikolojik tanı veya karakter özelliği eklememek.",
-          "Hayalî cevap ile romandaki doğrudan sözün aynı şey olmadığını belirtmek."
+        "Mümtaz": "İstanbul, geçmiş, kimlik, musiki ve “yeni hayat” üzerine düşünceleri ayrıntılı biçimde görülür; mülakat için yeterli metin kanıtı vardır.",
+        "Nuran": "Mümtaz’la şehir ve musiki üzerine konuşur; geçmişe bağlılığı sorgular ve bakımsız semtlerde insanların güncel ihtiyaçlarına dikkat çeker.",
+        "İhsan": "Mümtaz’ın “asıl hocam” dediği, düşünce dünyasında etkili bir rehber olarak anlatılır; s.182’deki ek bilgi esin kaynağı hakkında bilgi verir.",
+        "Macide": "s.182’de Mümtaz’ın aile çevresi ve korunup kollanması bağlamında görünür; ayrıntılı kişilik çıkarımı için kanıt sınırlıdır.",
+        "Suat": "Okuduğunuz Huzur kesitlerinde Suat’ın doğrudan sözü veya davranışına ilişkin yeterli kanıt yoktur.",
+        "Fâhir": "Okuduğunuz kesitlerde Fâhir’in doğrudan sözü veya davranışına ilişkin yeterli kanıt yoktur.",
+        "Örnek seçim": "Mümtaz seçilebilir; İstanbul, geçmiş, kimlik ve yeni hayat üzerine düşünceleri okunan parçalarda açıkça görünür.",
+        "Amaç": "Seçtiğiniz kişinin metinde görülen düşünce, duygu ve davranışlarını hayalî soru-cevap biçiminde yeniden kurun.",
+        "Hedef kitle": "Sınıf arkadaşları.",
+        "Strateji": [
+          "Soruları açık uçlu kurun.",
+          "Her cevabı daha önce okuduğunuz Huzur parçasında bir dayanakla ilişkilendirin.",
+          "Kaynakta bulunmayan yaşam olayı, psikolojik tanı veya karakter özelliği eklemeyin.",
+          "Hayalî cevapla romandaki doğrudan sözü birbirinden ayırın."
         ]
       },
-      "guidance": "Öğrencinin başka bir karakter seçmesi mümkündür. Özellikle Suat ve Fâhir için tam roman bilgisi dışarıdan getirilmeden, yalnız ders kitabında görülen kanıt kullanılmalıdır.",
       "source_locator": "basılı s.211 / PDF s.212 — Performans Görevi"
     },
     {
@@ -76,31 +73,30 @@
       "printed_page": 212,
       "question_no": "İçerik Oluşturabilme 1-6",
       "prompt_summary": "Hayalî mülakat sorularını üretme, eleme ve hedef kitleye göre düzenleme",
-      "answer": "Mülakat soruları yaratıcı varsayımlar üretmeli; yanıtlar metinde yaşanmış bilgi gibi sunulmamalıdır.",
-      "guidance": "Yaratıcılığı fazla daraltmayın: kitap açıkça gerçek hayatta nasıl konuşacağı, davranacağı ve ne işle uğraşacağı üzerine tahmin istiyor. Buna karşılık Itrî'nin belirli bir eseri, bütün romanın aşk örgüsü, Suat'ın rolü, II. Dünya Savaşı veya tam roman sonu gibi seçili parçalarda bulunmayan ayrıntıları ‘romanda böyledir’ diye hazır bilgi olarak eklemeyin.",
+      "answer": "Mülakat sorularınız yaratıcı varsayımlar içerebilir; yanıtları romanda yaşanmış bilgi gibi sunmayın.",
       "source_locator": "basılı s.212 / PDF s.213 — İçerik Oluşturabilme 1-6",
       "answer_sections": {
-        "yaratici_soru_ornekleri": [
+        "Yaratıcı soru örnekleri": [
           "Gerçek hayatta olsaydınız nasıl konuşur, insanlarla nasıl iletişim kurardınız?",
           "Günümüzde yaşasaydınız hangi davranışlarınız değişir, hangileri aynı kalırdı?",
           "Bugün bir meslek seçmeniz gerekse hangi işle uğraşmayı tercih ederdiniz? Neden?",
-          "İstanbul'u tanımanın kendimizi bulmakla ilişkisini nasıl açıklarsınız?",
-          "Geçmişe değer verirken neden ‘yeni bir hayat’ gerektiğini düşünüyorsunuz?"
+          "İstanbul’u tanımanın kendimizi bulmakla ilişkisini nasıl açıklarsınız?",
+          "Geçmişe değer verirken neden “yeni bir hayat” gerektiğini düşünüyorsunuz?"
         ],
-        "kaynak_siniri": "İlk üç soru yaratıcı varsayımdır; cevapları romandaki kesin biyografik gerçekler değildir. Hayalî cevap, karakterin okunan parçalardaki düşünce ve davranışlarıyla çelişmemelidir.",
-        "kitaptaki_derecelendirme_eksenleri": [
+        "Varsayım sınırı": "İlk üç soru yaratıcı varsayımdır; yanıtları romandaki kesin biyografik gerçekler değildir. Hayalî yanıt, karakterin okunan parçalardaki düşünce ve davranışlarıyla çelişmemelidir.",
+        "Değerlendirme ölçütleri": [
           "Romanın yapısına uygunluk",
           "Romanın içeriğine uygunluk",
           "Dil özelliklerine uygunluk",
           "Anlatım özelliklerine uygunluk"
         ],
-        "ek_eleme_olcutleri": [
+        "Soru seçme ölçütleri": [
           "Açık uçlu olması.",
           "Aynı düşünceyi tekrar etmemesi.",
           "Hedef kitle için anlaşılır olması.",
           "Hayalî tahmin ile romanda verilen bilgiyi birbirine karıştırmaması."
         ],
-        "hedef_kitle_ve_zenginlestirme": "Sorular seçildikten sonra hedef kitlenin beklentileri tahmin edilir; konuşmayı daha etkili ve ilgi çekici kılacak yöntemler grupça belirlenir."
+        "Hedef kitle ve sunum": "Soruları seçtikten sonra hedef kitlenin beklentilerini düşünün; konuşmayı daha etkili ve ilgi çekici kılacak yöntemleri grubunuzla belirleyin."
       }
     },
     {
@@ -109,28 +105,27 @@
       "printed_page": 212,
       "question_no": "Mülakat Taslağı a-h",
       "prompt_summary": "Mümtaz için roman bağlamına uygun örnek hayalî mülakat taslağı",
-      "answer": "Mülakat taslağı hazırlanırken kitabın a-h basamakları izlenmeli; hayalî cevaplarla romanda doğrudan verilen bilgiler açıkça ayrılmalıdır. Aşağıdaki kısa model, bu sürecin yalnız bir örneğidir; tek doğru mülakat değildir.",
-      "explanation": "Bu örnek cevaplar romanda birebir geçmez; öğretim amaçlı hayalî modellerdir. Hayalî mülakat, karakterin romanda söylemediği yeni cümleler üretir; bu nedenle yeni cümlenin kaynakta görülen düşünceyi aşmaması gerekir.",
+      "answer": "Mülakat taslağınızı kitaptaki a–h basamaklarına göre hazırlayın; hayalî cevaplarla romanda doğrudan verilen bilgileri ayırın. Aşağıdaki kısa model tek olası mülakat değildir.",
+      "explanation": "Bu örnek cevaplar romanda birebir geçmez; hayalî mülakatta yeni cümleler kurulabilir, ancak bu cümlelerin dayanağı karakterin romanda görülen düşünceleri olmalıdır.",
       "source_locator": "basılı s.212-213 / PDF s.213-214 — mülakat taslağı",
-      "guidance": "II. Dünya Savaşı, ‘medeniyet krizi’, Nuran'la ilgili dedikodu, karaktere ait kesin psikolojik tanımlar veya romanda seçili parçalarda görülmeyen biyografik ayrıntıları Mümtaz'ın ağzından söylemeyin.",
       "answer_sections": {
-        "kitaptaki_taslak_basamaklari": [
-          "a — Hedef kitlenin özelliklerini tahmin ederek giriş, gelişme ve sonuç bölümlerini tasarlama.",
-          "b — Roman kişisinin kullanabileceği dil, beden dili, vurgu ve tonlamayı; varsa metinle desteklenen ağız özelliklerini dikkate alma.",
-          "c — Hazırlanan sorulara verilen cevapların konuşma amacına uygunluğunu karşılaştırarak çıkarım yapma.",
-          "ç — Uygun olmayan soru ve cevapları düzeltme.",
-          "d — Roman kişilerinin kullandıkları dil yapılarına ilişkin görüşleri dikkate alarak mülakatı planlama.",
-          "e — Dilin kullanım alanına göre konuşmanın içeriğini belirleme.",
-          "f — Doğru sıralama ve doğru kelime seçimiyle anlaşılır bir söz varlığı kullanma.",
-          "g — Beden dili, diksiyon ve telaffuzu doğru kullanmaya özen gösterme.",
-          "ğ — Konuşmayı destekleyecek görsel ve işitsel ögeleri belirleyip kullanım biçimine karar verme.",
-          "h — Taslağı grup ve öğretmen geri bildirimiyle son hâline getirme."
+        "Taslak basamakları": [
+          "a — Hedef kitlenin özelliklerini tahmin ederek giriş, gelişme ve sonuç bölümlerini tasarlayın.",
+          "b — Roman kişisinin dilini, beden dilini, vurgu ve tonlamasını; varsa metinle desteklenen ağız özelliklerini dikkate alın.",
+          "c — Cevapların konuşma amacına uygunluğunu karşılaştırarak çıkarım yapın.",
+          "ç — Uygun olmayan soru ve cevapları düzeltin.",
+          "d — Roman kişilerinin kullandıkları dil yapılarına ilişkin görüşleri dikkate alarak mülakatı planlayın.",
+          "e — Dilin kullanım alanına göre konuşmanın içeriğini belirleyin.",
+          "f — Doğru sıralama ve kelime seçimiyle anlaşılır bir söz varlığı kullanın.",
+          "g — Beden dili, diksiyon ve telaffuza özen gösterin.",
+          "ğ — Konuşmayı destekleyecek görsel ve işitsel ögeleri belirleyin.",
+          "h — Taslağı grup arkadaşlarınızdan ve öğretmeninizden aldığınız geri bildirimle son hâline getirin."
         ],
-        "giris": "“Bugün Huzur'da okuduğumuz parçalardan tanıdığımız Mümtaz'la İstanbul, geçmiş ve yeni hayat üzerine hayalî bir mülakat yapacağız.”",
-        "ornek_soru": "“İstanbul'u tanımadıkça kendimizi bulamayız.” düşüncenizi açar mısınız?",
-        "ornek_kurgusal_cevap": "“İstanbul'un semtleri, mimarisi, musikisi ve hatıraları bana kim olduğumuzu düşündürüyor. Bu yüzden şehri tanımayı kendimizi tanımanın yollarından biri sayıyorum.”",
-        "dayanak": "Cevap, metindeki “İstanbul'u tanımadıkça kendimizi bulamayız.” ve “Bir hüviyet lâzım.” düşüncelerinden türetilmiştir; romanda bu biçimde birebir geçmez.",
-        "uyari": "‘Varsa ağız özellikleri’ ifadesi, karaktere metinde gösterilmeyen yapay veya stereotip bir ağız uydurmak anlamına gelmez."
+        "Giriş": "“Bugün Huzur’da okuduğumuz parçalardan tanıdığımız Mümtaz’la İstanbul, geçmiş ve yeni hayat üzerine hayalî bir mülakat yapacağız.”",
+        "Örnek soru": "“İstanbul’u tanımadıkça kendimizi bulamayız.” düşüncenizi açar mısınız?",
+        "Örnek hayalî cevap": "“İstanbul’un semtleri, mimarisi, musikisi ve hatıraları bana kim olduğumuzu düşündürüyor. Bu yüzden şehri tanımayı kendimizi tanımanın yollarından biri sayıyorum.”",
+        "Dayanak": "Bu cevap, metindeki “İstanbul’u tanımadıkça kendimizi bulamayız.” ve “Bir hüviyet lâzım.” düşüncelerinden türetilmiştir; romanda bu biçimde birebir geçmez.",
+        "Üslup notu": "Karaktere metinde gösterilmeyen yapay veya stereotip bir ağız özelliği uydurmayın."
       }
     },
     {
@@ -140,26 +135,9 @@
       "question_no": "Kural Uygulayabilme",
       "prompt_summary": "Hayalî mülakatın sunumunda uygulanacak konuşma kuralları",
       "answer": "Mülakat sunumu, s.213’teki konuşma kuralları çerçevesinde değerlendirilmelidir.",
-      "guidance": "Kitabın a-j maddelerini ‘genel sunum becerileri’ diye eritmeyin. Özellikle e (görgü), ç (değer/kültür), g (hayalî kişiye özgü üslup), ğ (düşünceyi geliştirme) ve i (açık/örtük ileti) kitapta açıkça vardır. ‘8 ders saati’ performans görevinin toplam çalışma süresidir; tek grubun sunum süresi değildir.",
       "source_locator": "basılı s.213 / PDF s.214 — Kural Uygulayabilme",
       "answer_sections": {
-        "kitaptaki_kurallar": [
-          "a — Mülakata dikkat çekici bir girişle başlama.",
-          "b — Konuşmayı başlatma, sürdürme ve bitirme ifadelerini etkili kullanma.",
-          "c — Toplumsal hassasiyetlere aykırı ögelerden kaçınma.",
-          "ç — Millî ve manevi değerleri, kültürel unsurları, olumlu tutum ve değerleri vurgulamaya dikkat etme.",
-          "d — Ekleri doğru kullanma, bağlama uygun kelime seçme ve farklı cümle yapıları arasında bağdaşıklık sağlama.",
-          "e — Görgü kurallarına uygun hareket etme.",
-          "f — Dili bağlama ve amaca uygun kullanma.",
-          "g — Mülakat sorularına cevap veren hayalî kişiye özgü bir üslup kullanma.",
-          "ğ — Cevapların anlaşılır ve etkileyici olması için düşünceyi geliştirme yollarından yararlanma.",
-          "h — Akıcılık, duruluk, yalınlık vb. anlatım ilkelerine bağlı kalma.",
-          "ı — Beden dili, diksiyon, zaman ve mekânı etkili kullanma.",
-          "i — Dinleyiciye verilmek istenen iletileri açık veya örtük biçimde ifade etme.",
-          "j — Duygu, düşünce ve hayalleri özgün ve tutarlı bir üslupla ifade etme."
-        ],
-        "kaynak_siniri": "Hayalî kişiye özgü üslup oluşturulabilir; ancak romanda bulunmayan olay, kesin kişilik özelliği veya yapay ağız özelliği karaktere gerçek bilgi gibi yüklenmemelidir.",
-        "uygulama": "Öğretmen, prova veya sunum sırasında bu maddeleri kontrol listesi olarak kullanabilir; eksik görülen madde için somut geri bildirim verir."
+        "uygulama": "Bu maddeleri prova sırasında gözlemleyin; geliştirilmesi gereken bir nokta için somut geri bildirim verin."
       }
     },
     {
@@ -168,14 +146,13 @@
       "printed_page": 214,
       "question_no": "Değerlendirme 1",
       "prompt_summary": "Hayalî mülakat cevaplarından açık ve örtük iletileri değerlendirme",
-      "answer": "Bu değerlendirme, öğrencinin kendi hazırladığı hayalî mülakat üzerinden yapılmalıdır. Önceden belirlenmiş tek bir açık/örtük ileti listesi yoktur.",
-      "guidance": "‘Musiki millî zevkin en yüksek anlatımıdır’, ‘medeniyet krizi bireyin huzursuzluğunu doğurur’ gibi model mülakattan üretilmiş geniş sonuçları romanın zorunlu iletisi saymayın.",
+      "answer": "Açık ve örtük iletileri kendi hazırladığınız hayalî mülakattan belirleyin. Tek bir hazır ileti listesi yoktur.",
       "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme soru 1",
       "answer_sections": {
-        "acik_ileti_sablonu": "Mülakat cevabında doğrudan söylenen düşünce: “[...]”. Bu açık iletidir; çünkü cevapta açıkça ifade edilmiştir.",
-        "ortuk_ileti_sablonu": "Cevapta doğrudan söylenmeyip söz, örnek veya tutumdan çıkarılan düşünce: “[...]”. Dayanağım: [...].",
-        "romanla_kontrol": "Bu ileti Huzur'daki hangi söz/davranışa dayanıyor? [...].",
-        "duzeltme": "Hayalî mülakattaki ileti romanda dayanak bulmuyorsa cevap yeniden yazılır veya ‘öğrenci yorumu’ olarak sınırlandırılır."
+        "acik_ileti_sablonu": "Mülakat cevabında doğrudan söylenen düşünce: “...”. Bu açık iletidir; çünkü cevapta açıkça ifade edilmiştir.",
+        "ortuk_ileti_sablonu": "Cevapta doğrudan söylenmeyip söz, örnek veya tutumdan çıkardığınız düşünce: “...”. Dayanağım: ... .",
+        "romanla_kontrol": "Bu ileti Huzur’daki hangi söz veya davranışa dayanıyor? ...",
+        "duzeltme": "Hayalî mülakattaki ileti romanda dayanak bulmuyorsa cevabınızı yeniden yazın ya da kendi yorumunuz olduğunu belirtin."
       }
     },
     {
@@ -184,15 +161,14 @@
       "printed_page": 214,
       "question_no": "Değerlendirme 2",
       "prompt_summary": "Roman kişisi hakkındaki yargıların dayanaklarını gerekçelendirme",
-      "answer": "Roman kişisi hakkında kurulan her yargı, ders kitabında okunan parçalardaki söz, davranış veya güvenilir yardımcı metin bilgisiyle gerekçelendirilmelidir.",
+      "answer": "Roman kişisi hakkındaki yargınızı okuduğunuz parçalardaki söz, davranış veya güvenilir yardımcı metin bilgisiyle gerekçelendirin.",
       "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme soru 2",
-      "guidance": "Tam roman bilgisini ders kitabı kesitlerinin kanıtıymış gibi kullanmayın. Yargının doğruluğu, karaktere yakıştırılan sıfata değil gösterilen metin dayanağına bağlıdır.",
       "answer_sections": {
-        "Mümtaz": "Yargı: geçmiş, İstanbul, musiki ve kimlik ilişkisine önem verir. Dayanak: “İstanbul'u tanımadıkça kendimizi bulamayız.”, “Bir hüviyet lâzım.” ve musiki–İstanbul ilişkisinden söz etmesi.",
+        "Mümtaz": "Yargı: geçmiş, İstanbul, musiki ve kimlik ilişkisine önem verir. Dayanak: “İstanbul’u tanımadıkça kendimizi bulamayız.”, “Bir hüviyet lâzım.” ve musiki–İstanbul ilişkisinden söz etmesi.",
         "Nuran": "Yargı: geçmişe ilgi duysa da güncel toplumsal sorunları sorgular. Dayanak: “Niçin eskiye bu kadar bağlıyız?” sorusu ve bakımsız semtlerde insanların ihtiyaçlarını düşünmesi.",
-        "İhsan": "Yargı: Mümtaz'ın düşünce dünyasında etkili bir rehberdir. Dayanak: Mümtaz'ın onu “asıl hocam” diye anması; s.182'deki yardımcı metindeki esin kaynağı bilgisi.",
-        "Macide": "Yargı ancak s.182'de verilen aile/himaye bilgisi kadar kurulabilir; daha ayrıntılı kişilik özelliği için ek kanıt gerekir.",
-        "Suat_ve_Fahir": "Okunan seçili parçalarda yeterli doğrudan kanıt yoksa ‘nihilist’, ‘kıskanç’, ‘bencil’ vb. ayrıntılı yargılar yazılmamalıdır."
+        "İhsan": "Yargı: Mümtaz’ın düşünce dünyasında etkili bir rehberdir. Dayanak: Mümtaz’ın onu “asıl hocam” diye anması; s.182’deki yardımcı metindeki esin kaynağı bilgisi.",
+        "Macide": "s.182’de verilen aile ve himaye bilgisine dayanarak sınırlı bir yargı kurun; daha ayrıntılı özellikler için ek kanıt gerekir.",
+        "Suat ve Fâhir": "Okuduğunuz parçalarda yeterli doğrudan kanıt yoksa “nihilist”, “kıskanç” veya “bencil” gibi ayrıntılı yargılar yazmayın."
       }
     },
     {
@@ -201,20 +177,18 @@
       "printed_page": 214,
       "question_no": "Değerlendirme 3-7",
       "prompt_summary": "Hayalî mülakat için öz değerlendirme, geri bildirim ve sonraki konuşma hedefleri",
-      "answer": "Öz değerlendirme formu öğrencinin gerçek konuşma performansına göre doldurulmalıdır. Aşağıdaki yapı, sonuçları öğrenci adına önceden işaretlemeden gelişim planı kurar.",
-      "guidance": "Öğrenci adına ‘göz temasını kaçırdım’, ‘heyecandan hızlı konuştum’ veya bütün maddelerde ‘Evet’ sonucu yazmayın. QR formlar görülmeden puan/seviye eklemeyin.",
+      "answer": "Öz değerlendirme formunu kendi gerçek konuşma performansınıza göre doldurun; yanıtlarınızı kanıt ve sonraki adımınızla ilişkilendirin.",
       "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme 3-7 / QR formlar",
       "answer_sections": {
-        "1": "Özgün ve tutarlı üslup → Evet/Kısmen/Hayır → Kanıtım: [...] → Gerekirse düzeltmem: [...].",
-        "2": "Dili kullanım alanı ve amaca uygun kullanma → Evet/Kısmen/Hayır → Kanıtım: [...].",
-        "3": "Beden dili, diksiyon ve telaffuz → Evet/Kısmen/Hayır → Geliştirmek istediğim nokta: [...].",
-        "4": "Türkçenin dil yapısı, işlevi ve bağdaşıklık ögeleri → Evet/Kısmen/Hayır → Örnek cümlem/düzeltmem: [...].",
-        "5": "Akıcılık, duruluk, yalınlık → Evet/Kısmen/Hayır → Gereksiz tekrar veya belirsizlik varsa: [...].",
-        "6": "Eklerin doğruluğu ve bağlama uygun kelime seçimi → Evet/Kısmen/Hayır → Düzeltmem: [...].",
-        "geri_bildirim": "Arkadaş/öğretmen geri bildiriminden bir somut hedef seç: [...].",
-        "sonraki_konusma": "Bir sonraki konuşmada özellikle şu beceriyi geliştireceğim: [...].",
-        "ogretmen_degerlendirmesi": "Kitap, öğretmen değerlendirmesinde görünen örnek ölçütler olarak anlatım ilkelerine (akıcılık, duruluk, yalınlık vb.) uygunluğu ve beden dili, diksiyon, zaman ile mekânı etkili kullanmayı belirtir. QR'deki Dereceli Puanlama Anahtarı'nın görünmeyen diğer maddeleri uydurulmaz.",
-        "akran_degerlendirmesi": "Akran Değerlendirme Formu karekodla dış kaynaktadır; form görülmeden madde veya puan eklenmez."
+        "1": "Özgün ve tutarlı üslup → Evet / Kısmen / Hayır → Kanıtım: ... → Gerekirse düzeltmem: ...",
+        "2": "Dili kullanım alanı ve amaca uygun kullanma → Evet / Kısmen / Hayır → Kanıtım: ...",
+        "3": "Beden dili, diksiyon ve telaffuz → Evet / Kısmen / Hayır → Geliştirmek istediğim nokta: ...",
+        "4": "Türkçenin dil yapısı, işlevi ve bağdaşıklık ögeleri → Evet / Kısmen / Hayır → Örnek cümlem veya düzeltmem: ...",
+        "5": "Akıcılık, duruluk, yalınlık → Evet / Kısmen / Hayır → Gereksiz tekrar veya belirsizlik varsa: ...",
+        "6": "Eklerin doğruluğu ve bağlama uygun kelime seçimi → Evet / Kısmen / Hayır → Düzeltmem: ...",
+        "geri_bildirim": "Arkadaşınızın ya da öğretmeninizin geri bildiriminden bir somut hedef seçin: ...",
+        "sonraki_konusma": "Bir sonraki konuşmada özellikle şu beceriyi geliştireceğim: ...",
+        "akran_degerlendirmesi": "Akran Değerlendirme Formu karekodla açılıyorsa kullanın; erişemediğiniz form maddelerini veya puanlarını varsaymayın."
       }
     }
   ]

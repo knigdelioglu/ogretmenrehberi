@@ -19,7 +19,6 @@
         "dramatik_orgu": "Başlangıç durumu → gelişen sorun/olay → dönüm noktası → sonuç.",
         "catisma": "Kim/neyin karşı karşıya geldiği → bunu gösteren replik veya olay."
       },
-      "guidance": "Torna, çekiç, atölye, fabrika, baskın, Millî Mücadele veya belirli kişi adlarını ses kaydı görülmeden yapı unsuru diye yazmayın.",
       "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 1 / QR medya gerekli"
     },
     {
@@ -39,8 +38,7 @@
           "Kanıtım: [...]",
           "Başka yorum mümkün mü? [...]"
         ]
-      },
-      "guidance": "‘Başusta tecrübeli/vatansever’, ‘çırak sadık’, ‘muhbir çıkarcı’ gibi karakter ve kişilikleri QR medya dinlenmeden üretmeyin."
+      }
     },
     {
       "question_id": "T3-P221-Q03",
@@ -50,7 +48,6 @@
       "prompt_summary": "Yapı unsurlarının Direnişin Ustaları'na katkısı",
       "answer": "Yapı unsurlarının katkısı, önce s.221/1'de belirlenen gerçek kişi, mekân, zaman, çatışma ve olay akışı üzerinden açıklanmalıdır.",
       "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 3 / QR medya gerekli",
-      "guidance": "‘Zamanla yarışma’, ‘baskın korkusu’, ‘vatan sevgisi ve emek birliği’ gibi sonuçları ses kaydından kanıt olmadan hazır katkı olarak vermeyin.",
       "answer_sections": {
         "kisi_katkisi": "[Belirlenen kişinin seçimleri/ilişkileri] anlatıya ne katıyor? → [...].",
         "mekan_katkisi": "[Gerçek ses/mekân ipucu] atmosferi veya olayı nasıl etkiliyor? → [...].",
@@ -67,7 +64,6 @@
       "prompt_summary": "Millî ve manevi değerleri yansıtan dil/kültür unsurları ve bunların katkısı",
       "answer": "Millî ve manevi değerleri yansıtan dil/kültür unsurları dinlemede gerçekten duyulan ifadelerden belirlenmelidir.",
       "source_locator": "basılı s.221 / PDF s.222 — Çözümleyebilme soru 4 / QR medya gerekli",
-      "guidance": "‘Ustam’, ‘Evladım’, ‘Allah utandırmasın’, ‘Vatan sağ olsun’, helallik, ahilik veya belirli dua ifadelerini ses kaydı görülmeden metinde varmış gibi yazmayın.",
       "answer_sections": {
         "calisma_sablonu": [
           "Gerçek söz / hitap / davranış / kültürel gönderme: [...]",
@@ -84,8 +80,7 @@
       "printed_page": 222,
       "question_no": "Sıra Sizde 1-5",
       "prompt_summary": "Millî ve manevi değerlerin metnin iletilerine etkisini görüş geliştirme tekniğiyle tartışma",
-      "answer": "Tartışma, öğrencinin seçtiği görüşü gerçek dinleme kanıtıyla gerekçelendirmesine dayanır.",
-      "guidance": "Değer adları kitapta verilebilir; fakat ‘usta-çırak saygısı’, ‘aile toplumsal dayanışmanın çekirdeğidir’ gibi metne özgü açıklamaları QR kaydı dinlenmeden doldurmayın. Fikir değiştirmek etkinliğin doğal parçasıdır.",
+      "answer": "Tartışmada seçtiğiniz görüşü gerçek dinleme kanıtıyla gerekçelendirin.",
       "source_locator": "basılı s.222 / PDF s.223 — Sıra Sizde 1-5",
       "answer_sections": {
         "tutum_kartlari": [
@@ -118,16 +113,15 @@
       "question_no": "Ders Dışı Etkinlik",
       "prompt_summary": "Direnişin Ustaları'nı tarih, sosyoloji ve psikolojiyle ilişkilendiren grup araştırması",
       "answer": "Tarih, sosyoloji ve psikoloji grupları metni kendi alanlarıyla araştırır; metin kanıtı dış kaynak bilgisinden ayrı tutulur.",
-      "guidance": "İmalat-ı Harbiye, Karakol Cemiyeti, gizli imalathaneler, belirli psikolojik ‘direnç’ veya sosyal tabakalaşma sonuçlarını QR medya ve güvenilir dış kaynakla doğrulamadan hazır araştırma sonucu yapmayın. Kitabın açıkça istediği ‘farklı radyo tiyatrosu örneklerinden yararlanma’ adımını da atlamayın.",
       "source_locator": "basılı s.223 / PDF s.224 — Ders Dışı Etkinlik",
       "answer_sections": {
-        "Metin_Tarih": "Radyo tiyatrosunda geçen kişi, kurum, yer, olay veya dönem ipuçlarını belirle → bunları güvenilir tarih kaynaklarında araştır → örtüşen ve ayrışan noktaları yaz.",
-        "Metin_Sosyoloji": "Metindeki grup ilişkileri, meslekler, toplumsal roller, dayanışma/çatışma biçimleri ve değerleri belirle → sosyoloji kaynağıyla kavramsal karşılaştırma yap.",
-        "Metin_Psikoloji": "Kişilerin gerçek söz/davranışlarından görülen korku, kararlılık, ikilem, dayanışma veya karar anlarını seç → psikoloji kavramlarını yalnız açıklayıcı dış kaynak olarak kullan.",
-        "rapor_sablonu": "Metin kanıtı → araştırma sorusu → dış kaynak bulgusu → benzerlik/fark → sonuç.",
-        "kaynak_kurali": "Dış kaynakta bulunan bilgi, radyo tiyatrosunda gerçekten geçiyormuş gibi yazılmaz.",
-        "farkli_radyo_tiyatrosu_ornekleri": "Her grup, ulaştığı sonucu yalnız Direnişin Ustaları üzerinden genellemek yerine en az bir farklı radyo tiyatrosu örneğiyle karşılaştırabilir; örneğin benzer tema, toplumsal ilişki, psikolojik çatışma veya tarihî bağlamın nasıl işlendiğine bakılabilir.",
-        "paylasim_ve_degerlendirme": "Araştırma sonuçları ve kullanılan radyo tiyatrosu örnekleri sınıfta paylaşılır; son olarak çalışmanın öğrencinin radyo tiyatrosuna bakış açısını nasıl etkilediği kişisel olarak değerlendirilir."
+        "Metin_Tarih": "Radyo tiyatrosunda geçen kişi, kurum, yer, olay veya dönem ipuçlarını belirleyin → bunları güvenilir tarih kaynaklarında araştırın → örtüşen ve ayrışan noktaları yazın.",
+        "Metin_Sosyoloji": "Metindeki grup ilişkileri, meslekler, toplumsal roller, dayanışma/çatışma biçimleri ve değerleri belirleyin → sosyoloji kaynağıyla kavramsal karşılaştırma yapın.",
+        "Metin_Psikoloji": "Kişilerin gerçek söz ve davranışlarından görülen korku, kararlılık, ikilem, dayanışma veya karar anlarını seçin → psikoloji kavramlarını açıklayıcı dış kaynak olarak kullanın.",
+        "Rapor biçimi": "Metin kanıtı → araştırma sorusu → dış kaynak bulgusu → benzerlik/fark → sonuç.",
+        "Kaynak kuralı": "Dış kaynakta bulduğunuz bilgiyi radyo tiyatrosunda gerçekten geçiyormuş gibi yazmayın.",
+        "Farklı radyo tiyatrosu örnekleri": "Sonucunuzu yalnız Direnişin Ustaları’na dayandırmak yerine en az bir başka radyo tiyatrosuyla karşılaştırın; tema, toplumsal ilişki, psikolojik çatışma veya tarihî bağlamın işlenişine bakın.",
+        "Paylaşım ve değerlendirme": "Araştırma sonuçlarınızı ve kullandığınız radyo tiyatrosu örneklerini sınıfta paylaşın; çalışmanın radyo tiyatrosuna bakışınızı nasıl etkilediğini kişisel olarak değerlendirin."
       }
     },
     {
@@ -136,8 +130,7 @@
       "printed_page": 223,
       "question_no": "Süreci Değerlendirebilme 1",
       "prompt_summary": "Direnişin Ustaları'nı değerlendirmek için ölçütler belirleme",
-      "answer": "Öğrenci belirlediği ölçütleri gerçek dinleme kanıtıyla değerlendirir.",
-      "guidance": "Ölçüt belirlemekle yetinmeyin; kitap gerekçeli değerlendirme de ister. Ancak 'ses tonu mükemmel örtüşmüştür', 'efektler kusursuzdur' veya 'müzik başarıyla yönetmiştir' gibi sonuçları gerçek kayıt kanıtı olmadan öğrenci adına vermeyin.",
+      "answer": "Belirlediğiniz ölçütleri dinleme kaydından gerçek kanıtlarla değerlendirin.",
       "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 1",
       "answer_sections": {
         "kitap_ornegi": "Dil kullanımı — yalınlık, doğallık ve etkileyicilik.",
@@ -175,8 +168,7 @@
           "Örtüşen yön: [...]",
           "Farklı / dramatikleştirilmiş yön: [...]"
         ]
-      },
-      "guidance": "İmalat-ı Harbiye, Karakol Cemiyeti, Tophane-Zeytinburnu atölyeleri veya ‘tarihsel vesikalarla birebir örtüşme’ gibi sonuçlar bu çalışma gerçekten yapılmadan hazır cevap olarak verilmemelidir."
+      }
     },
     {
       "question_id": "T3-P223-Q03",
@@ -184,8 +176,7 @@
       "printed_page": 223,
       "question_no": "Süreci Değerlendirebilme 3",
       "prompt_summary": "Bir radyo tiyatrosu kişisiyle empati kurarak davranışlarını değerlendirme",
-      "answer": "Empati, ses kaydında gerçekten görülen bir kişi ve durum üzerinden yapılmalıdır. Öğrenci karakterin zihnini ‘okumak’ yerine, gözlenen koşul ve davranıştan kendi olası tepkisini gerekçelendirir.",
-      "guidance": "‘Başusta’, ‘çırakların can güvenliği’, ‘tezgâhı terk etmeme’, ‘esaret altında hayat anlamsızdır’ gibi ses kaydı görülmeden üretilmiş olay ve iç düşünceleri örnek empati diye vermeyin.",
+      "answer": "Empati kurarken ses kaydında gerçekten yer alan bir kişi ve durumdan yola çıkın. Karakterin zihnini bildiğinizi varsaymak yerine, gözlenen koşul ve davranışlardan hareketle olası tepkinizi gerekçelendirin.",
       "source_locator": "basılı s.223 / PDF s.224 — Süreci Değerlendirebilme soru 3 / QR medya gerekli",
       "answer_sections": {
         "empati_sablonu": [
@@ -204,18 +195,17 @@
       "printed_page": 224,
       "question_no": "Süreci Değerlendirebilme 4",
       "prompt_summary": "Dinlenen radyo tiyatrosuna yönelik beğeniyi gerekçelendirme",
-      "answer": "Beğeni sorusu, öğrencinin gerçek dinleme deneyimine dayanmalıdır. Hazır ‘çok etkileyici/mükemmel’ değerlendirme yerine gerekçelendirme iskeleti kullanılmalıdır.",
-      "guidance": "Torna sesi, fısıltılı konuşma, hızlanan müzik, ‘doğal oyunculuk’ veya ‘yetkin estetik deneyim’ gibi gözlemleri QR kaydı görülmeden öğrenci adına yazmayın.",
+      "answer": "Beğeni değerlendirmenizi gerçek dinleme deneyiminize dayandırın. Beğendiğiniz ya da beğenmediğiniz yönü somut bir ses, sahne veya replikle gerekçelendirin.",
       "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 4",
       "answer_sections": {
         "degerlendirme_sablonu": [
-          "En çok beğendiğim / beğenmediğim yön: [...]",
-          "Bunu fark ettiğim gerçek sahne/ses/replik: [...]",
-          "Bu unsur bende şu etkiyi oluşturdu: [...]",
-          "Neden: [...]",
-          "Müzik / efekt / seslendirme / dil / kurgu bakımından ek değerlendirmem: [...]"
+          "En çok beğendiğim / beğenmediğim yön: ...",
+          "Bunu fark ettiğim gerçek sahne / ses / replik: ...",
+          "Bu unsur bende şu etkiyi oluşturdu: ...",
+          "Neden: ...",
+          "Müzik / efekt / seslendirme / dil / kurgu bakımından ek değerlendirmem: ..."
         ],
-        "alternatif": "Öğrenci eserin bir yönünü zayıf da bulabilir; önemli olan somut dinleme kanıtıyla gerekçelendirmesidir."
+        "alternatif": "Eserin bir yönünü zayıf bulabilirsiniz; değerlendirmenizi somut dinleme kanıtıyla gerekçelendirin."
       }
     },
     {
@@ -224,14 +214,13 @@
       "printed_page": 224,
       "question_no": "Süreci Değerlendirebilme 5",
       "prompt_summary": "Metnin konusu ve ana düşüncesini günlük yaşamla ilişkilendirme",
-      "answer": "Bu soru, öğrencinin önce dinlediği metnin gerçek konusu ve ana düşüncesini belirlemesini; sonra bunları kendi yaşamıyla ilişkilendirmesini ister. Konu ve ana düşünce QR medya görülmeden hazır verilmez.",
+      "answer": "Önce dinlediğiniz metnin konusunu ve ana düşüncesini belirleyin; ardından bunları kendi yaşamınızla ilişkilendirin.",
       "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 5 / QR medya gerekli",
-      "guidance": "‘Ustalar vatan için kenetleniyor’, ‘modern vatan görevi’, deprem/sel dayanışması gibi belirli sonuç ve örnekleri ses kaydı/öğrenci deneyimi yerine hazır cevap yapmayın.",
       "answer_sections": {
-        "1_metinden": "Konu: [...]. Ana düşünce: [...]. Kanıt: [...].",
-        "2_gunluk_hayat": "Buna benzeyen bir sorumluluk, dayanışma, seçim, meslek veya ilişki durumu: [...].",
-        "3_bag": "“Metindeki [...] ile günlük hayattaki [...] arasında şu benzerlik/farkı görüyorum: [...].”",
-        "4_kisisel_sinir": "Öğrenci kendi hayatından örnek vermek istemiyorsa gözlemlediği toplumsal bir durumu kullanabilir."
+        "1_metinden": "Konu: ... Ana düşünce: ... Kanıt: ...",
+        "2_gunluk_hayat": "Benzer bir sorumluluk, dayanışma, seçim, meslek veya ilişki durumu: ...",
+        "3_bag": "“Metindeki ... ile günlük hayattaki ... arasında şu benzerlik veya farkı görüyorum: ...”",
+        "4_kisisel_sinir": "Kendi yaşamınızdan örnek vermek istemiyorsanız gözlemlediğiniz toplumsal bir durumu kullanabilirsiniz."
       }
     },
     {
@@ -240,8 +229,7 @@
       "printed_page": 224,
       "question_no": "Öğrenme Günlüğü",
       "prompt_summary": "Direnişin Ustaları dinleme sürecini öğrenme günlüğüyle değerlendirme",
-      "answer": "Öğrenme Günlüğü, öğrencinin gerçek öğrenme ve eksiklerini kaydetmesi içindir. Aşağıdaki cümle başlangıçları cevap yerine kullanılmalıdır.",
-      "guidance": "Öğrenci adına ‘efektleri ayırt etmekte zorlandım’, ‘1950–1980 TRT altın çağını merak ediyorum’, ‘gizli niyet çıkarmayı öğrendim’ veya akademik/mesleki hayat planı yazmayın. Günlük gerçek deneyime dayanmalıdır.",
+      "answer": "Öğrenme günlüğünü gerçek öğrenme ve zorlandığınız noktalar üzerinden doldurun. Aşağıdaki cümle başlangıçlarından yararlanabilirsiniz.",
       "source_locator": "basılı s.224 / PDF s.225 — Öğrenme Günlüğü",
       "answer_sections": {
         "Bu süreçte öğrendiklerim": "“Bu çalışmada [...] öğrendim. Bunu [...] etkinliğinde fark ettim.”",

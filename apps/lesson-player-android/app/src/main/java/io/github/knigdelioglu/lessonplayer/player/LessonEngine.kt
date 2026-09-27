@@ -245,12 +245,14 @@ fun toStudentProjection(lesson: LessonData, state: LessonSession): StudentProjec
         answerSections = answer?.answerSections?.takeIf {
             showAnswer && effective.layout != LayoutKind.VOCABULARY
         },
-        guidance = answer?.guidance?.takeIf { RevealKey.GUIDANCE in state.revealed },
+        guidance = answer?.guidance?.takeIf {
+            lesson.themeId != "TEMA_01" && RevealKey.GUIDANCE in state.revealed
+        },
         evidenceQuotes = answer?.evidenceQuotes?.takeIf {
             RevealKey.EVIDENCE in state.revealed
         }.orEmpty(),
         explanation = answer?.explanation?.takeIf {
-            RevealKey.EXPLANATION in state.revealed
+            lesson.themeId != "TEMA_01" && RevealKey.EXPLANATION in state.revealed
         },
         visibleVocabulary = visible
     )

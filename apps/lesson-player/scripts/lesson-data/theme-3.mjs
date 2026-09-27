@@ -110,7 +110,7 @@ assert(kemalById.get("s211-six-people")?.content?.items?.length === 6 &&
   kemalById.get("s214-eval")?.content?.items?.length === 6,
   "s.211 altı kişi ve s.214 altı öz değerlendirme ölçütü eksiksiz olmalı.");
 assert(kemalById.get("s212-sample")?.answer?.explanation?.includes("birebir") &&
-  kemalById.get("s214-eval")?.answer?.guidance?.includes("QR"),
+  kemalById.get("s214-eval")?.content?.note?.includes("QR"),
   "Hayalî mülakatın kaynak sınırı ve QR rubrik uyarısı korunmalı.");
 assert(kemalById.get("s211-six-people")?.answer === null &&
   kemalById.get("s214-feedback")?.answer === null,
@@ -245,19 +245,23 @@ assert(dialogueById.get("s229-self")?.content?.items?.length === 6 &&
   dialogueById.get("s229-exit")?.answer === null,
   "Altı öz değerlendirme ölçütü ve 3-2-1 çıkış kartı ayrı tutulmalı.");
 assert(dialogueById.get("s225-reference")?.answer === null &&
-  dialogueById.get("s228-reflection")?.answer?.guidance?.includes("QR") &&
+  dialogueById.get("s228-reflection")?.content?.note?.includes("QR") &&
   dialogueById.get("s229-self")?.answer?.entry_type === "performance_support",
   "Kitap referansı, QR rubrik sınırı ve gerçek öz değerlendirme korunmalı.");
 const writing225229Text = dialogueWriting.steps
   .map(step => JSON.stringify({
     answer: step.answer?.answer,
     answer_sections: step.answer?.answer_sections,
-    content: step.content
+    content: {
+      lead: step.content?.lead,
+      items: step.content?.items,
+      sections: step.content?.sections
+    }
   }))
   .join("\n");
 for (const forbidden of ["Başusta", "genç çırak", "gizli atölye", "silah parçası", "devriye sesleri"]) {
   assert(!writing225229Text.includes(forbidden),
-    `s.225–229 QR kaydında doğrulanmayan hazır ayrıntı bulunmamalı: ${forbidden}`);
+    `s.225–229 öğrenci ekranında QR kaydından doğrulanmayan ayrıntı görünmemeli: ${forbidden}`);
 }
 assert(!dialogueById.get("s229-self")?.answer?.answer?.includes("(Evet)") &&
   !dialogueById.get("s229-self")?.answer?.answer?.includes("(Kısmen)"),
@@ -465,7 +469,7 @@ for(let n=1;n<=13;n++) {
     `Huzur s.175–176 source VERIFIED olmalı: ${id}`);
 }
 assert(huzurQuestionMap.get("s175-q1")?.answer?.entry_type === "performance_support" &&
-  huzurQuestionMap.get("s175-q1")?.answer?.guidance?.includes("gerçek tahmini"),
+  huzurQuestionMap.get("s175-q1")?.content?.note?.includes("gerçek tahmini"),
   "s.175 Q1 öğrencinin gerçek önceki tahminiyle çalışmalı.");
 const s175q2 = huzurQuestionMap.get("s175-q2");
 const s175q2Sections = s175q2?.answer?.answer_sections ?? {};
@@ -475,7 +479,8 @@ assert(s175q2?.layout === "structure" &&
 assert(huzurQuestionMap.get("s176-q6")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q6")?.content?.items?.length===3,
   "s.176 Q6 şehir örneği kişisel performans olarak kalmalı.");
-assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("sözü Mümtaz'a atfeder"),
+assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("konuşanın Mümtaz’a seslendiğini düşündürür") &&
+  huzurQuestionMap.get("s176-q10")?.content?.note?.includes("konuşanın başka biri olabileceğini düşündürüyor"),
   "s.176 Q10 ders kitabı soru/metin konuşmacı atıf farkı gizlenmemeli.");
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
@@ -502,21 +507,22 @@ assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
   huzur177ById.get("s177-q14")?.answer?.answer_sections?.ortuk_iletiler?.length===3,
   "s.177 14. soruda açık/örtük iletiler ayrıştırılmalı.");
 assert(huzur177ById.get("s177-source-photo")?.answer === null &&
-  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("şiir dizeleri doğrulanmış PDF’de görünmüyor") &&
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("Basılı s.177’de Mescid-i Aksa görseli") &&
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("şiir dizeleri görünmez") &&
   huzur177ById.get("s177-source-photo")?.content?.sections?.some(section => section.body.includes("Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz")),
   "Basılı s.177 görselinden şiirin metin veya biçim özellikleri çıkarılmamalı.");
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
   huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
   Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 3 &&
-  huzur177ById.get("s178-compare-task")?.answer?.answer.includes("karşılaştırmanın bu bölümü doğrulanamaz") &&
-  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("doğrulanmış PDF’de yoktur") &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer.includes("şiir bölümünü metne eriştikten sonra tamamlayın") &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("Şiirin metnine erişmeden") &&
   !huzur177ById.get("s178-compare-task")?.answer?.evidence_quotes?.some(q => q.includes("İlk Kıblesi")) &&
   huzur177ById.get("s178-compare-task")?.answer?.source_locator?.includes("altı dörtlük"),
   "Huzur–Mescid-i Aksa karşılaştırması şiir metni eksikliği nedeniyle kaynakla sınırlı tutulmalı.");
 assert(huzur177ById.get("s178-huzur-context")?.content?.lead?.includes("Dönem metnin") &&
-  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa") && section.body.includes("Şiir metni doğrulanmış PDF’de bulunmadığından")),
+  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa") && section.body.includes("Şiirin metni olmadan dönem ve zihniyet yorumu yapmayın")),
   "Dönem zihniyetten ayrılmalı; kaynakta bulunmayan şiire ilişkin yargı eklenmemeli.");
-assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("şiir sütunundaki iddiaları yalnız şiir metni doğrulanmış bir kaynakta"),
+assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("Mescid-i Aksa sütununa yalnız şiir metninde gördüğünüz özellikleri yazın"),
   "Karşılaştırma akışı eksik şiir metni için kaynak sınırı belirtmeli.");
 for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]){
   assert(huzur177ById.get(id)?.answer === null &&
@@ -569,7 +575,7 @@ assert(t180?.answer?.question_id === "T3-P180-TABLE01" &&
   t180?.answer?.entry_type === "question_answer" &&
   Object.keys(t180?.answer?.answer_sections??{}).length === 6 &&
   Object.keys(t180?.answer?.answer_sections?.Mümtaz??{}).length === 2 &&
-  t180?.answer?.answer_sections?.Suat?.cikarim?.includes("uydurulmaz"),
+  t180?.answer?.answer_sections?.Suat?.cikarim?.includes("belirlenemez"),
   "s.180 altı kişide söz/davranış ve çıkarım ayrılmalı, eksik kaynak uydurulmamalı.");
 const t181 = huzur179ById.get("s181-table-q4");
 assert(t181?.answer?.question_id === "T3-P181-TABLE02" &&
@@ -591,7 +597,9 @@ assert(firsts.every(s=>s?.source?.source_record_id==="T03-S0032" && s.answer===n
   firsts[1].content.items.some(x=>x.includes("Yeniçeriler")&&x.includes("denemesi")),
   "s.181 Bilgi Köşesi 12 ilk ve ayrı deneme etiketlerini korumalı.");
 assert(huzur179ById.get("s181-game-qr")?.answer === null &&
-  huzur179ById.get("s181-game-qr")?.content?.lead?.includes("Oyunun içeriği sayfada yazılı değildir"),
+  huzur179ById.get("s181-game-qr")?.content?.lead?.includes("karekod oyuna yönlendirir") &&
+  huzur179ById.get("s181-game-qr")?.content?.sections?.some(section =>
+    section.body.includes("Oyuna erişmeden içeriği, kuralları veya sonuçları hakkında tahminde bulunmayın")),
   "s.181 QR oyunun görülmeyen içeriği icat edilmemeli.");
 for(const step of huzur179.steps){
   assert(step.source.source_status === "VERIFIED",
@@ -630,7 +638,7 @@ assert(huzur182ById.get("s182-fish")?.answer?.answer_sections?.gercek_hayattan_a
  "Gerçek yaşam ve kurmaca diyagramında iki ayrı cevap grubu olmalı.");
 assert(huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.gozlenebilir_olay_ve_davranis?.length===2 &&
  huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.oznel_duygu_ve_degerlendirme?.length===2 &&
- huzur182ById.get("s183-subject-object")?.answer?.guidance?.includes("s.185"),
+ huzur182ById.get("s183-subject-object")?.content?.note?.includes("s.185"),
  "s.183 öznel-nesnel örnekleri yanlışlıkla s.185'ten alınmamalı.");
 const value=huzur182ById.get("s184-185-value-q2");
 assert(Object.keys(value?.answer?.answer_sections??{}).length===4 &&
@@ -681,7 +689,8 @@ for(const id of ["s186-event","s186-place","s186-people","s186-time"]){
   `Dört yapı unsuru bağımsız kaynak adımı olmalı: ${id}`);
 }
 assert(Object.keys(huzur186ById.get("s186-structure")?.answer?.answer_sections??{}).length===4 &&
- huzur186ById.get("s186-structure")?.answer?.explanation?.includes("tüm romanın"),
+ huzur186ById.get("s186-structure")?.answer?.explanation?.includes("okuduğunuz kesitlerle sınırlayın") &&
+ huzur186ById.get("s186-structure")?.answer?.explanation?.includes("Suat ve Fâhir’in Mümtaz’la çatışması"),
  "Yapı unsurları s.167–170 ve yardımcı parçalarla sınırlı kalmalı.");
 const s187Four = huzur186ById.get("s187-four");
 const s187FourSections = s187Four?.answer?.answer_sections ?? {};
@@ -694,8 +703,8 @@ for(const id of ["s187-event-style","s187-person-style","s187-place-style","s187
  huzur186ById.get(id)?.source?.source_record_id==="T03-S0040",
  `s.187 ilişki ekranı kaynaklı olmalı: ${id}`);
 }
-assert(huzur186ById.get("s188-3c")?.answer?.answer?.includes("s.171") &&
- huzur186ById.get("s188-3cc")?.answer?.answer?.includes("Mazi"),
+assert(huzur186ById.get("s188-3c")?.answer?.answer?.includes("geleneksel kültürle modern kültür") &&
+  huzur186ById.get("s188-3cc")?.answer?.answer?.includes("Mazi"),
  "Dönem ve söz varlığı soruları ayrı, kitaba dayalı olmalı.");
 const character4 = huzur186ById.get("s188-q4");
 assert(character4?.answer?.entry_type==="question_answer" &&
@@ -806,13 +815,13 @@ for(const id of ["s192-style","s192-period","s192-society","s192-structure","s19
 const s193Criteria = h192.get("s193-criteria");
 const s193CriteriaSections = s193Criteria?.answer?.answer_sections ?? {};
 const s193CriteriaKeys = [
- "Tutarlılık (kitabın örneği)", "Dil ve söz varlığı (örnek)",
+ "Tutarlılık (örnek)", "Dil ve söz varlığı (örnek)",
  "Kişilerin bakış açıları (örnek)", "Mekânın işlevi (örnek)",
  "Anlatımın açıklığı (örnek)", "Duygu ve çağrışım (örnek)"
 ];
 assert(s193CriteriaKeys.every(key => Object.prototype.hasOwnProperty.call(s193CriteriaSections, key)) &&
- s193CriteriaSections["Tutarlılık (kitabın örneği)"]?.includes("konu bütünlüğü") &&
- s193Criteria?.answer?.guidance?.includes("diğer beş ölçüt"),
+ s193CriteriaSections["Tutarlılık (örnek)"]?.includes("konu bütünlüğü") &&
+ s193Criteria?.content?.note?.includes("diğer beş ölçüt"),
  "s.193 6 satırlı kişisel ölçüt tablosunun Tutarlılık örneği sabit ve geri kalanı öznel olmalı.");
 assert(h192.get("s193-voice")?.answer?.entry_type==="performance_support" &&
  h192.get("s193-voice")?.content?.lead?.includes("sözlü") &&
@@ -864,7 +873,7 @@ assert(bioById.get("s194-q1")?.answer?.answer_sections?.["Tarık Buğra örneği
  "s.194 iki biyografi örneği ve okur için anlamı metin dayanaklı olmalı.");
 assert(bioById.get("s195-goal")?.answer?.entry_type==="performance_support" &&
  (bioById.get("s195-goal")?.answer?.answer_sections?.["Tahmin (okumadan önce)"]?.includes("sonradan") ||
-  bioById.get("s195-goal")?.answer?.guidance?.includes("ön tahminin hazır cevabı")) &&
+  bioById.get("s195-goal")?.content?.note?.includes("ön tahminin hazır cevabı")) &&
  bioById.get("s195-prediction")?.answer===null &&
  bioById.get("s195-prediction")?.content?.lead?.includes("ilk tahmin"),
  "s.195 öğrenci ön-tahmini sonradan öğrenilen olaylarla geriye dönük doldurulmamalı.");
@@ -878,7 +887,7 @@ const vocab=bioById.get("s198-vocab");
 assert(vocab?.layout==="vocabulary" &&
  Object.keys(vocab?.answer?.answer_sections??{}).length===7 &&
  vocab.answer.answer_sections["kullanılmayan seçenek"]?.includes("vesile") &&
- vocab.answer.guidance?.includes("(7)") &&
+ vocab.content?.note?.includes("(7)") &&
  bioById.get("s198-words-extra")?.answer===null,
  "s.198 altı tanım, yedi seçenek, vesile artan seçenek olmalı.");
 assert(theme3Lessons.reduce((s,l)=>s+l.coverage.steps,0)===310 &&
@@ -906,15 +915,14 @@ for(const [id,s,a] of [
  item?.answer?.question_id===a && item?.source?.source_status==="VERIFIED",
  `s.199–201 kaynak–cevap eşleşmesi: ${id}`);
 }
-assert((bio199ById.get("s199-q1")?.answer?.guidance?.includes("tek bir zorunlu duygu") ||
-  bio199ById.get("s199-q1")?.answer?.answer?.includes("farklı duygular") ||
-  bio199ById.get("s199-q1")?.answer?.answer_sections?.["Açık uçluluk"]?.includes("başka bir duygu")) &&
+assert((bio199ById.get("s199-q1")?.answer?.answer?.includes("başka bir duygu") ||
+  bio199ById.get("s199-q1")?.answer?.answer_sections?.["Kendi yorumunuz"]?.includes("Başka bir duygu")) &&
  bio199ById.get("s199-q1")?.answer?.answer_sections?.["Metindeki kanıt"]?.includes("Küfe"),
  "s.199 Q1 kişisel duygu + kitapta gerçekten verilen şiir örnekleri olmalı.");
 assert((bio199ById.get("s199-q2")?.answer?.answer_sections?.["Nitelemenin kaynağı"] ||
   bio199ById.get("s199-q2")?.answer?.answer_sections?.["Sonuç"])?.includes("biyografi yazarının") &&
  (bio199ById.get("s199-q3")?.answer?.answer_sections?.["Kaynak sınırı"]?.includes("ek olay uydurmayın") ||
-  bio199ById.get("s199-q3")?.answer?.guidance?.includes("hazır cevap olarak kullanmayın")),
+  bio199ById.get("s199-q3")?.answer?.answer_sections?.["Kaynak sınırı"]?.includes("bu parçada belirtilmez")),
  "s.199 Q2 yazara atıf; Q3 metindeki olay ile yorum ayrılmalı.");
 const visual=bio199ById.get("s200-task");
 assert(visual?.answer?.entry_type==="performance_support" &&
@@ -930,10 +938,10 @@ assert(visual?.answer?.entry_type==="performance_support" &&
 const worksheet=bio199ById.get("s201-work");
 assert(Object.keys(worksheet?.answer?.answer_sections??{}).length===9 &&
  worksheet.content.items.length===9 &&
- worksheet.answer.answer_sections?.dusunceyi_gelistirme?.some(x=>x.includes("Örnekleme")) &&
- worksheet.answer.answer_sections?.anlatim_bicimleri?.some(x=>x.includes("Öyküleme")) &&
- worksheet.answer.answer_sections?.acik_iletiler?.length===2 &&
- worksheet.answer.answer_sections?.ortuk_iletiler?.length===2,
+ worksheet.answer.answer_sections?.["Düşünceyi geliştirme"]?.some(x=>x.includes("Örnekleme")) &&
+ worksheet.answer.answer_sections?.["Anlatım biçimleri"]?.some(x=>x.includes("Öyküleme")) &&
+ worksheet.answer.answer_sections?.["Açık iletiler"]?.length===2 &&
+ worksheet.answer.answer_sections?.["Örtük iletiler"]?.length===2,
  "s.201 dokuz kitap başlığı tamamı, açıklama/öyküleme ve örnekleme ayrı olmalı.");
 for(const id of ["s201-content","s201-support","s201-method","s201-message","s201-order"]){
  assert(bio199ById.get(id)?.answer===null &&

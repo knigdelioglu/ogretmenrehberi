@@ -204,7 +204,8 @@ internal fun PresentationLessonScreen(
                                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
                             ) {
                                 Text(
-                                    text = if (step.answer?.entryType == "source_limited")
+                                    text = if (step.answer?.entryType == "source_limited" &&
+                                        lesson.themeId != "TEMA_02" && lesson.themeId != "TEMA_04")
                                         "KAYNAK SINIRI"
                                     else lessonTaskTypeLabel(step.source.taskType),
                                     style = MaterialTheme.typography.labelLarge,

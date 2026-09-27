@@ -25,7 +25,7 @@
       "printed_page": 64,
       "question_no": "2",
       "prompt_summary": "Başlık ve görselden içerik ve tür tahmini",
-      "answer": "Başlık, iletişim araçlarının değişimi ve bu değişimin insan yaşamındaki yeri üzerine bir içerik beklenebileceğini düşündürür. Karekodla erişilen bir içerik olması bunun çok modlu bir video/metin olduğunu gösterir; görselde görülebilen unsurlar varsa bunlar da tahmine gerekçe yapılabilir.",
+      "answer": "Başlık ve varsa karekod görselleri, iletişim araçlarının değişimi ve bunun insan yaşamındaki yeri hakkında tahmin yürütmeye yardım edebilir. Videoyu izleyene kadar içerikteki araçları, grafikleri, tarihî görselleri veya görüşleri kesin bilgi gibi yazmayın.",
       "answer_sections": {
         "İçerik Tahmini": "İletişim araçlarının zaman içinde değişmesi ve bu değişimin günlük yaşama etkileri ele alınabilir.",
         "Tür / Sunum Tahmini": "Karekodla erişilen görsel-işitsel bir içerik olduğu için bilgilendirici, söyleşi, program veya belgesel benzeri bir çok modlu metin olabilir.",
@@ -40,17 +40,16 @@
       "printed_page": 64,
       "question_no": "3",
       "prompt_summary": "Metni etkili dinleyebilmek/izleyebilmek için metin ve ortam kaynaklı iletişim engellerini azaltma",
-      "answer": "Çok modlu bir metni izlemeden önce hem fiziksel ortamdan kaynaklanan dış engellerin hem de zihinsel/metin kaynaklı iç engellerin bertaraf edilmesi dinleme ve anlama kalitesini doğrudan artırır.",
+      "answer": "İzlemeye başlamadan önce rahatça görebileceğiniz ve duyabileceğiniz bir yer seçin, dikkatinizi dağıtacak eşyaları kaldırın, not almak için hazırlanın ve dinleme amacınızı belirleyin. Gürültü veya görüntü engeli varsa öğretmene bildirin.",
       "answer_sections": {
         "Fiziksel ve Çevresel Engelleri Giderme Adımları": [
-          "Gürültü ve Işık Kontrolü: Sınıf kapısı ve pencerelerin kapatılarak dış ortam gürültüsünün engellenmesi; akıllı tahta ekranının yansıma yapmayacak şekilde perdenin ayarlanması.",
-          "Ses ve Görüntü Açısı: Hoparlör ses seviyesinin arkadaki öğrencilerin rahatça duyabileceği ancak yankı yapmayacak düzeye getirilmesi; her öğrencinin ekranı net görebileceği oturma düzeninin sağlanması.",
-          "Dikkat Dağıtıcıları Uzaklaştırma: Sıra üzerindeki ilgisiz kitap, telefon ve eşyaların kaldırılması."
+          "Rahatça görebileceğiniz ve duyabileceğiniz bir yer seçin. Gürültü veya görüntü engeli varsa öğretmene bildirin.",
+          "İzleme sırasında dikkatinizi dağıtacak telefon ve ilgisiz eşyaları kaldırın."
         ],
         "Metin ve Zihinsel Kaynaklı Engelleri Giderme Adımları": [
-          "Ön Bilgileri Harekete Geçirme: Konuyla ilgili temel kavramlara (iletişim, çok modlu metin, iletici vb.) zihnen hazır olma.",
-          "Seçici Odaklanma ve Not Alma Düzeni: Metnin her kelimesini değil, anahtar kavram ve dönüm noktalarını yazmak üzere defter ve kalemin hazır edilmesi.",
-          "Ön Yargısız Yaklaşım: 'Bunu zaten biliyorum' veya 'sıkıcıdır' gibi peşin hükümlerden sıyrılarak dinleme amacına odaklanma."
+          "Konuyla ilgili ön bilgilerinizi hatırlayın.",
+          "Anahtar kavramları ve önemli bağlantıları not etmek için defter ve kaleminizi hazırlayın.",
+          "“Bunu zaten biliyorum” veya “sıkıcıdır” gibi peşin yargılar yerine izleme amacınıza odaklanın."
         ]
       },
       "guidance": "Gözlem Formu'ndaki 'Dinleme/izlemeyi olumsuz etkileyen iletişim engellerini ortadan kaldırdı' ölçütü bu hazırlıkların yapılıp yapılmadığına göre değerlendirilebilir.",
@@ -98,11 +97,11 @@
       "printed_page": 66,
       "question_no": "1",
       "prompt_summary": "Araştırma sonuçları ile dinlenen/izlenen metin arasında bağlantı kurma",
-      "answer": "Bu soru, öğrencinin 63. sayfadaki araştırmasından seçtiği bir bulguyu QR videoda gerçekten gözlemlediği bir noktayla karşılaştırmasını ister. Araştırma bulgusu ve video tespiti öğrenciye göre değişebilir; PDF video içeriğini göstermediğinden burada videonun savı veya belirli bir örneği önceden verilemez. Karşılaştırmanın yönü ve ulaşılan sonuç iki dayanakla gerekçelendirilmelidir.",
+      "answer": "63. sayfadaki araştırmanızdan bir bulgu seçin ve videoda gerçekten gözlemlediğiniz bir noktayla karşılaştırın. Araştırma kaynağınızı belirtin; videoya erişemediyseniz video içeriği hakkında gözlem yapmış gibi yazmayın. Sonucunuzu iki dayanakla gerekçelendirin.",
       "answer_sections": {
-        "Araştırma bulgusu": "Öğrenci kendi araştırmasından ilgili bir bulgu seçer ve kaynağını belirtir.",
-        "Videoda gözlenen nokta": "Yalnız gerçekten izlenen/duyulan bir tespit kaydedilir; video erişilemiyorsa bu bölüm doldurulmuş gibi gösterilmez.",
-        "Karşılaştırma ve sonuç": "Öğrenci iki dayanağın nasıl ilişkilendiğini ve hangi sonucu desteklediğini açıklar; ilgisiz veya aşırı genellemelerden kaçınır."
+        "Araştırma bulgusu": "Araştırmanızdan ilgili bir bulgu seçin ve kaynağını belirtin.",
+        "Videoda gözlenen nokta": "Yalnız gerçekten izlediğiniz/duyduğunuz bir tespiti kaydedin; videoya erişemediyseniz bu bölümü doldurulmuş gibi göstermeyin.",
+        "Karşılaştırma ve sonuç": "İki dayanağın nasıl ilişkilendiğini ve hangi sonucu desteklediğini açıklayın; ilgisiz veya aşırı genellemelerden kaçının."
       },
       "guidance": "Önce araştırma notlarından bir bulgu seçtirin, sonra videodan gerçekten gördüğü/duyduğu bir noktayı sordurun. Öğrenci ikisinin ortak ya da ayrışan yönünü ve karşılaştırmadan çıkardığı sonucu gerekçelendirsin. Video görülmediyse video tarafına örnek eklemeyin.",
       "source_locator": "basılı s.66 / PDF s.67; QR video gerekli"
@@ -131,7 +130,7 @@
       "answer": "“İletişim, bir medenileşme hareketidir.” sözü, iletişimin insanların ortak anlamlar ve bilgi paylaşması, birlikte yaşama biçimleri geliştirmesi ve kültürü kuşaklara aktarmasındaki rolünü vurguluyor diye yorumlanabilir. Bu yorumun kapsamı, metin veya videoda verilen örneklerin neyi gösterdiğiyle sınanmalıdır. İletişimin bütün anlaşmazlıkları çözdüğü ya da tek başına medeniyet oluşturduğu sonucu yalnız bu ifadeden çıkarılamaz.",
       "answer_sections": {
         "İfadenin olası anlamı": "İletişim, ortak yaşam ve kültür aktarımına katkı sağlayan bir süreç olarak yorumlanabilir.",
-        "Kanıt ve çıkarım": "Öğrenci metinde veya izlenen videoda gerçekten sunulan bir dayanağı belirlemeli ve bu dayanağın yorumunu nasıl desteklediğini açıklamalıdır.",
+        "Kanıt ve çıkarım": "Metinde veya izlediğiniz videoda gerçekten sunulan bir dayanak belirleyin ve bunun yorumunuzu nasıl desteklediğini açıklayın.",
         "Yorumun sınırı": "İfadenin farklı biçimlerde yorumlanması mümkündür; iletişimin tek başına bütün toplumsal sorunları çözdüğü genellenmemelidir."
       },
       "evidence_quotes": [
@@ -146,11 +145,11 @@
       "printed_page": 66,
       "question_no": "4",
       "prompt_summary": "Çok modlu metnin konu ve temasını belirleme",
-      "answer": "Basılı sayfa soru ve QR yönlendirmesini verir, ancak çok modlu videonun içeriği PDF’de yer almaz. Bu nedenle videonun konu ve teması burada belirlenemez. İzleme sonrasında öğrenci konuyu videonun ele aldığı içerikten, temayı ise içerik boyunca desteklenen ana düşünceden çıkarmalıdır.",
+      "answer": "Videoyu izleyebildiğinizde konuyu ele alınan kişi, olay, kavram veya durumdan; temayı ise içerik boyunca desteklenen ana düşünceden çıkarın. Videoya erişemiyorsanız konu ve temayı belirlemiş gibi yazmayın.",
       "answer_sections": {
         "Konu": "Videoda gerçekten ele alınan kişi, olay, kavram veya durum: [izleme kanıtına göre doldurun].",
         "Tema": "Videonun bütününden çıkarılan temel düşünce: [en az iki gerçek içerik kanıtıyla gerekçelendirin].",
-        "Kanıt kontrolü": "Seçilen konu ve tema gerçekten görülen/duyulan video ayrıntılarına dayanıyor mu?"
+        "Kanıt kontrolü": "Seçtiğiniz konu ve tema gerçekten gördüğünüz veya duyduğunuz video ayrıntılarına dayanıyor mu?"
       },
       "guidance": "Başlıktan hareketle videonun konusunu ya da temasını tahmin etmeyin. Öğrenciden izleme sonrası iki somut içerik kanıtı istemek, ardından temayı bu kanıtlarla ilişkilendirmek yeterlidir.",
       "source_locator": "basılı s.66 / PDF s.67; QR video gerekli"
@@ -161,7 +160,7 @@
       "printed_page": 66,
       "question_no": "5",
       "prompt_summary": "Çok modlu metnin ana ve yardımcı düşüncelerini belirleme",
-      "answer": "Ana düşünce ve yardımcı düşünceler videonun gerçek anlatımından çıkarılmalıdır. Video metni PDF'de bulunmadığı için öğretmen rehberi hazır bir ana düşünceyi doğru cevap diye vermek yerine öğrencinin kanıt toplayacağı bir yapı sunmalıdır.",
+      "answer": "Ana düşünceyi ve yardımcı düşünceleri videonun anlatımından çıkarın. Videoda bulunmayan bilgileri eklemeyin; her yardımcı düşünceyi gerçek bir örnek veya açıklamayla destekleyin.",
       "answer_sections": {
         "Ana Düşünceyi Bulma": "Videoda tekrar edilen, sonuçta vurgulanan veya bütün bölümleri birleştiren temel yargıyı tek cümleyle yazın.",
         "Yardımcı Düşünceleri Bulma": [
@@ -169,10 +168,10 @@
           "Her yardımcı düşünce için videodan bir örnek, kavram, olay veya açıklama not edin.",
           "Bir ayrıntı ana düşünceyle bağlantılı değilse yardımcı düşünce olarak yazmayın."
         ],
-        "Öğretmen İçin Kontrol Soruları": [
-          "Bu yargı videonun tamamını kapsıyor mu?",
+        "Kontrol Soruları": [
+          "Seçtiğiniz ana düşünce videonun tamamını kapsıyor mu?",
           "Yardımcı düşünceler ana düşünceyi gerçekten destekliyor mu?",
-          "Öğrenci videodan somut kanıt gösterebiliyor mu?"
+          "Her düşünce için videodan somut kanıt gösterebiliyor musunuz?"
         ]
       },
       "guidance": "Hazır ana düşünceyi ezberletmek yerine kanıt → ortak fikir → ana düşünce sırasını kullandırın. QR video görülmeden belirli içeriklerin videoda geçtiğini varsaymayın.",
@@ -184,10 +183,10 @@
       "printed_page": 67,
       "question_no": "6",
       "prompt_summary": "Dinleme öncesi tahminlerle sonrasındaki tespitleri karşılaştırma",
-      "answer": "Bu soru öğrencinin kendi dinleme öncesi tahminleri ile izleme sonrasında elde ettiği gerçek tespitleri karşılaştırmasını ister. Bu nedenle cevap öğrenciye göre değişir; öğretmen rehberi karşılaştırma şablonu sağlamalıdır.",
+      "answer": "Dinleme/izleme öncesi tahmininizi videodan edindiğiniz tespitlerle karşılaştırın. Tahmininizin hangi yönden doğrulandığını, değiştiğini ya da genişlediğini bir video kanıtıyla açıklayın.",
       "answer_sections": {
         "Dinlemeden / İzlemeden Önce": "“Başlık ve görselden hareketle ... olacağını tahmin etmiştim.”",
-        "Dinledikten / İzledikten Sonra": "“Videoda aslında ... üzerinde durulduğunu gördüm; bunu ... ifadesi/sahnesi destekliyor.”",
+        "Dinledikten / İzledikten Sonra": "“Videoda ... üzerinde durulduğunu gördüm; bunu ... ifadesi/sahnesi destekliyor.”",
         "Karşılaştırma": "“Tahminim ... yönüyle doğrulandı / değişti / genişledi; çünkü ...”"
       },
       "guidance": "Öğrencinin tahmininin yanlış çıkması hata değildir. Değerlendirme ölçütü, önceki tahmini dürüstçe hatırlaması ve sonraki tespitini videodan somut kanıtla açıklamasıdır.",
@@ -199,12 +198,12 @@
       "printed_page": 67,
       "question_no": "7",
       "prompt_summary": "İletişime dair genel sonuç çıkarma",
-      "answer": "Bu sonuç, öğrencinin kendi dinleme öncesi tahminleri ile videodan elde ettiği gerçek tespitlere dayanmalıdır. PDF'de video içeriği bulunmadığı için rehber tek bir iletişim sonucu dayatmamalı; öğrencinin kanıttan genellemeye nasıl ulaşacağını göstermelidir.",
+      "answer": "Dinleme öncesi tahmininizi videodan elde ettiğiniz iki gerçek tespitle karşılaştırın. Bu kanıtlardan iletişim hakkında çıkardığınız sonucu ve bunu günlük yaşamınızda nasıl kullanabileceğinizi açıklayın.",
       "answer_sections": {
         "Kanıtlarım": [
           "Dinleme/izleme öncesi tahminim: [...]",
-          "Videodan dikkatimi çeken gerçek tespit 1: [...]",
-          "Videodan dikkatimi çeken gerçek tespit 2: [...]"
+          "Videoda gözlediğim gerçek tespit 1: [...]",
+          "Videoda gözlediğim gerçek tespit 2: [...]"
         ],
         "Bu Kanıtlardan Çıkardığım Sonuç": "“Bu örneklerden hareketle iletişim hakkında ... sonucuna ulaştım; çünkü ...”",
         "Günlük Yaşamla Bağlantı": "“Bu sonucu kendi iletişimimde ... durumunda kullanabilirim / gözlemleyebilirim.”"
@@ -219,17 +218,17 @@
       "printed_page": 67,
       "question_no": "8",
       "prompt_summary": "Videodaki öznel ve nesnel ifadeleri bulma ve katkılarını değerlendirme",
-      "answer": "Öznel ve nesnel ifadeler doğrudan videodan seçilmelidir. PDF'de video metni bulunmadığı için burada videoda söylenmiş gibi yeni cümleler üretilmemelidir; öğretmen yalnız ayırt etme ölçütünü ve doldurma şablonunu sunmalıdır.",
+      "answer": "Öznel ve nesnel ifadeleri videodan seçin; videoda söylenmiş gibi yeni cümleler üretmeyin. Nesnel ifade doğrulanabilir bir olguya, öznel ifade ise kişisel yorum veya değerlendirmeye dayanır.",
       "answer_sections": {
         "Nesnel İfade Nasıl Tanınır?": {
           "Ölçüt": "Doğruluğu dış kaynaklarla sınanabilen tarih, sayı, tanım veya olgu bildirir.",
-          "Öğrencinin Videodan Örneği": "[Videodan birebir ya da anlamı korunmuş kısa ifade]",
-          "Metne Katkısı": "Bilgi verme, açıklama yapma ve anlatının doğrulanabilir zeminini güçlendirme."
+          "Metne Katkısı": "Bilgi verme, açıklama yapma ve anlatının doğrulanabilir zeminini güçlendirme.",
+          "Videodan örneğim": "[Videodan birebir ya da anlamı korunmuş kısa ifade]"
         },
         "Öznel İfade Nasıl Tanınır?": {
           "Ölçüt": "Kişisel değerlendirme, yorum, beğeni, eleştiri veya değer yargısı içerir.",
-          "Öğrencinin Videodan Örneği": "[Videodan birebir ya da anlamı korunmuş kısa ifade]",
-          "Metne Katkısı": "Yorum, bakış açısı ve tartışma alanı oluşturma."
+          "Metne Katkısı": "Yorum, bakış açısı ve tartışma alanı oluşturma.",
+          "Videodan örneğim": "[Videodan birebir ya da anlamı korunmuş kısa ifade]"
         }
       },
       "guidance": "Her örnek için “Bu ifadeyi nesnel/öznel yapan nedir?” sorusunu sorun. Kitaptaki “İletişim, bir medenileşme hareketidir.” cümlesi ancak videoda gerçekten yer aldığı doğrulanırsa video örneği olarak kullanılmalıdır.",
@@ -241,19 +240,19 @@
       "printed_page": 67,
       "question_no": "9",
       "prompt_summary": "Çok modlu metni özetleme",
-      "answer": "Özet doğrudan izlenen videodan çıkarılmalıdır. Video metni PDF'de bulunmadığı için öğretmen rehberi hazır bir video özeti üretmemeli; öğrencinin notlarını kısa, tarafsız ve bütünlüklü bir özete dönüştürmesine yardım etmelidir.",
+      "answer": "Videonun özetini kendi notlarınızdan oluşturun. Temel konuyu ve ana düşünceyi belirleyin; bunları destekleyen iki veya üç önemli düşünceyi seçip kısa, tarafsız ve bütünlüklü bir metin yazın.",
       "answer_sections": {
         "Özetleme Şablonu": [
-          "1. Videonun temel konusu: [öğrencinin videodan belirlediği konu]",
-          "2. Ana düşünce: [öğrencinin videodan çıkardığı temel yargı]",
-          "3. İki veya üç önemli yardımcı düşünce / örnek: [videodan]",
-          "4. Sonuç: Bu düşüncelerin ortak olarak ne anlattığını bir cümlede toparla."
+          "1. Videonun temel konusu: [belirlediğim konu]",
+          "2. Ana düşünce: [videodan çıkardığım temel yargı]",
+          "3. İki veya üç önemli yardımcı düşünce/örnek: [videodan]",
+          "4. Sonuç: Bu düşüncelerin ortak olarak ne anlattığını bir cümlede toparlayın."
         ],
         "Özetleme Kriterleri": [
-          "Videoda bulunmayan bilgi eklememe.",
-          "Ayrıntı ve örnekleri ana düşünceyi desteklediği ölçüde kullanma.",
-          "Kendi yorumunu özetin içine katmadan metnin düşünce akışını koruma.",
-          "Kendi cümleleriyle kısa ve tutarlı bir bütün oluşturma."
+          "Videoda bulunmayan bilgi eklemeyin.",
+          "Ayrıntı ve örnekleri ana düşünceyi desteklediği ölçüde kullanın.",
+          "Kendi yorumunuzu özetin içine katmadan düşünce akışını koruyun.",
+          "Kendi cümlelerinizle kısa ve tutarlı bir bütün oluşturun."
         ]
       },
       "guidance": "Öğrencinin özetindeki her temel düşüncenin videodaki gerçek notlarına dayanmasını isteyin. Görseller, semboller veya ifadeler ancak videoda gerçekten görülüp duyulmuşsa özete alınmalıdır.",

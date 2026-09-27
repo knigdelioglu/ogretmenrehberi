@@ -452,6 +452,10 @@ button {
   margin-top: 0.6em;
 }
 
+.sections--stacked {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .sec {
   background: var(--card);
   border-radius: 0.35em;

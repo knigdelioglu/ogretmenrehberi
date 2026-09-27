@@ -51,7 +51,8 @@
           "Konuşan kişileri ve bağlamı ayırt edin.",
           "Seçiminizi anlam, karakter ve dönüştürülebilirlik bakımından gerekçelendirin.",
           "Sınıf panosunda akran görüşü alıp seçimi gözden geçirin."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Gerçek diyalog ve kişilere ilişkin ayrıntılar QR dinleme kaydından gelmelidir. 'Başusta', 'çırak', gizli atölye, silah üretimi, devriye, torna sesi gibi ayrıntıları kayıt görülmeden hazır cevap olarak kullanmayın. Seçim ölçütleri öğrencinin gerekçelendirmesine açıktır."
       }
     },
     {
@@ -70,7 +71,7 @@
           },
           {
             "title": "Yeni tür",
-            "body": "Öğrencinin seçtiği tür ve bu türe uygun yöntem/strateji."
+            "body": "Seçtiğiniz tür ve bu türe uygun yöntem veya strateji."
           },
           {
             "title": "Korunacak",
@@ -88,14 +89,14 @@
       "prompt": "Performans görevi — Diyaloğu başka türe dönüştürme planınızı hazırlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.226'daki amaç, tür, yöntem ve olası engeller başlıklarını yazmaya başlamadan önce doldurun.",
+        "lead": "Yazmaya başlamadan önce amacınızı, türünüzü, yönteminizi ve karşılaşabileceğiniz engelleri belirleyin.",
         "items": [
           "Yazma amacınızı belirleyin.",
           "Dönüştüreceğiniz türü seçin.",
           "Seçilen türün gerekli anlatım yollarını belirleyin.",
           "Bağlamdan kopma veya karakteri değiştirme riskini önceden düşünün."
         ],
-        "note": "Kitaptaki görev süresi 8 ders saatidir."
+        "note": "Kitaptaki görev süresi 8 ders saatidir.\n\nÖğretmen için kaynak ve değerlendirme notu: Amaç, tür ve yazma stratejisini öğrenci adına 'millî bilinç', 'fedakârlık', 'hikâye' veya 'anı' diye sabitlemeyin. Kitap yalnız örnek olarak yazma amacı için 'ikna etme, bilgilendirme vb.' ifadesini verir."
       }
     },
     {
@@ -107,7 +108,7 @@
       "prompt": "İçerik Oluşturabilme — Seçtiğiniz diyaloğun planını oluşturunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Hazır olay örneği açmadan önce kendi dinleme notlarınızla planı doldurun. Kitabın s.226-227 adımlarını gerçek seçiminize uygulayın.",
+        "lead": "Hazır olay örneğine bakmadan önce planınızı kendi dinleme notlarınızla doldurun ve taslağınızı gerçek seçiminize uygulayın.",
         "items": [
           "Seçtiğiniz gerçek diyalog ve konuşan kişiler",
           "Diyaloğun bağlamı ve aktarılmak istenen ileti",
@@ -117,7 +118,8 @@
           "Yazının bölüm/taslak planı",
           "Kullanılacak dil işlevleri ve karşılaştırmalar",
           "Akran geri bildiriminden sonra yapılacak düzeltmeler"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Özellikle hazır 'usta-çırak', atölye, işgal, silah parçası, devriye, kış gecesi, belirli çatışma ve sonuç senaryoları vermeyin. Plan şablonu boş bırakılarak öğrencinin seçtiği gerçek diyaloğa uygulanmalıdır."
       }
     },
     {
@@ -128,7 +130,7 @@
       "prompt": "Tür değişiyor; kaynak diyalogdan ne korunuyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitap belirli bir dönüşüm türünü zorunlu tutmaz. Öğrencinin seçtiği yeni türün gereklerini uygularken kaynak diyaloğun bağlamını koruyun.",
+        "lead": "Diyaloğu başka bir türe dönüştürürken seçtiğiniz türün gereklerini uygulayın ve kaynak diyaloğun bağlamını koruyun.",
         "sections": [
           {
             "title": "Seçilen tür",
@@ -189,7 +191,7 @@
       "prompt": "Kural Uygulayabilme — Diyaloğu başka türe dönüştürürken nelere dikkat edersiniz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın s.227-228'de verdiği kuralları seçtiğiniz gerçek diyaloğa uygulayın; kayıtta olmayan karakter özelliği veya olay üretmeyin.",
+        "lead": "a–ı kurallarını seçtiğiniz gerçek diyaloğa uygulayın; kayıtta olmayan karakter özelliği veya olay üretmeyin.",
         "items": [
           "Dikkat çekici giriş.",
           "Anlatım biçimleri ve düşünceyi geliştirme yolları.",
@@ -202,7 +204,8 @@
           "Dil yapıları, bağdaşıklık, yazım ve noktalama; bilinçli Türkçe kullanımı.",
           "Özgün ve tutarlı üslup.",
           "İçeriğe uygun başlık."
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kuralları 'usta olgun konuşur, çırak telaşlıdır', 'vatan sevgisi örtük verilir' gibi QR kaydı görülmeden üretilmiş içeriklerle örneklendirmeyin. Seçilen gerçek diyaloğun bağlamını koruyun."
       }
     },
     {
@@ -256,14 +259,14 @@
       "prompt": "Süreci Değerlendirebilme — Yazma sürecinizi ve ürününüzü gözden geçiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce kendi kararlarınıza dönün; öğretmen geri bildiriminden sonra anlam, karakter, anlatım ve biçim düzeltmelerini ayırın.",
+        "lead": "Önce kendi kararlarınızı gözden geçirin; geri bildirimden sonra anlam, karakter, anlatım ve biçim düzeltmelerinizi ayrı ayrı değerlendirin.",
         "items": [
           "Hangi kararınız metnin bağlamını korudu?",
           "Hangi bölümde yeniden yazmaya ihtiyaç duydunuz?",
           "Geri bildirimden sonra hangi değişikliği yaptınız?",
           "Sonraki yazma göreviniz için hangi somut hedefi koydunuz?"
         ],
-        "note": "QR dereceli puanlama anahtarı görülmeden puan aralığı veya ek rubrik ölçütü üretilmez."
+        "note": "QR dereceli puanlama anahtarı görülmeden puan aralığı veya ek rubrik ölçütü üretilmez.\n\nÖğretmen için kaynak ve değerlendirme notu: QR Dereceli Puanlama Anahtarı'nın görünmeyen puan aralıklarını veya ölçütlerini uydurmayın. Basılı sayfada görünen değerlendirme ölçütleri kullanılabilir."
       }
     },
     {
@@ -300,7 +303,8 @@
           "Farklı anlatım biçimleri ve düşünceyi geliştirme yolları",
           "Bağdaşıklık, yazım ve noktalama",
           "Türkçeyi bilinçli ve özenli kullanma"
-        ]
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Hazır 'Evet/Kısmen' işaretleri, kişisel öğrenme örnekleri, iki merak sorusu veya 'beni en çok etkileyen...' cevabı vermeyin. Yalnız kitaptaki ölçütleri ve doldurma şablonunu gösterin."
       }
     },
     {
@@ -315,11 +319,11 @@
         "sections": [
           {
             "title": "Birinci hedef",
-            "body": "Gözlediğiniz eksikliği ve hangi uygulamayla geliştireceğinizi belirtin."
+            "body": "Gözlemlediğiniz eksikliği ve geliştirmek için uygulayacağınız yöntemi belirtin."
           },
           {
             "title": "İkinci hedef",
-            "body": "Metni başka bir öğrenciye okuyup geri bildirim almak gibi somut bir yöntem seçin."
+            "body": "Örneğin metninizi bir arkadaşınıza okuyup geri bildirim alabilirsiniz."
           }
         ]
       }
@@ -332,7 +336,7 @@
       "prompt": "Tema Sonu Değerlendirme — Üç Yaz / İki Sor / Bir Paylaş çıkış kartı.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Temayı tamamlayan öğrenciler kendi öğrenmelerinden üç bilgi, iki soru ve bir paylaşım oluşturur.",
+        "lead": "Temayı tamamladıktan sonra öğrendiklerinizden üç bilgi, iki soru ve bir paylaşım yazın.",
         "sections": [
           {
             "title": "Üç Yaz",

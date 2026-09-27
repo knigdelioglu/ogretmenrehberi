@@ -246,8 +246,8 @@ export default function App() {
     stepId: step.id,
     index,
     stepOrder,
-    overrides: studentVisibleOverrides(overrides),
-    revealed: studentVisibleRevealKeys(revealed),
+    overrides: studentVisibleOverrides(overrides, lesson.theme_id),
+    revealed: studentVisibleRevealKeys(revealed, lesson.theme_id),
     vocabularyTerms
   };
 
@@ -539,9 +539,9 @@ export default function App() {
             ? state.stepOrder
             : canonical;
         setStepOrder(orderedIds);
-        setOverrides(studentVisibleOverrides(state.overrides ?? {}));
+        setOverrides(studentVisibleOverrides(state.overrides ?? {}, lesson.theme_id));
         setIndex(restoredStepIndex(orderedIds, state.stepId, null, state.index));
-        setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [])));
+        setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [], lesson.theme_id)));
         setVocabularyTerms(state.vocabularyTerms ?? {});
       }
     };
@@ -671,11 +671,13 @@ export default function App() {
       <div className="content-column">
         <StepView
           step={step}
+          themeId={lesson.theme_id}
           revealed={revealed}
           toggle={toggle}
           presentationMode={presentationMode || displayOnly}
           showInlineControls={!displayOnly}
-          showTeacherNotes={!displayOnly}
+          showTeacherNotes={!displayOnly && (lesson.theme_id !== "TEMA_01" || !presentationMode)}
+          showTeacherSupport={lesson.theme_id !== "TEMA_01" || (!displayOnly && !presentationMode)}
           visibleVocabularyTerms={
             new Set(vocabularyTerms[step.id] ?? [])
           }

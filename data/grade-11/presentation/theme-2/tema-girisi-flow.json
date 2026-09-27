@@ -120,13 +120,13 @@
       "source_record_id": "T02-S0009",
       "layout": "process",
       "density": "compact",
-      "prompt": "Türklerde Toylar, Merasimler, Festivaller ve Şenlikler — Sorulara geçmeden önce kitaptaki çok modlu metni karekoddan izleyiniz.",
+      "prompt": "Türklerde Toylar, Merasimler, Festivaller ve Şenlikler — Sorulardan önce videoyu karekoddan izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-      "lead": "Kitap, sorulara geçmeden önce karekod videosunun izlenmesini ister. Altı sorunun cevap çekirdeği ise soru kökleri ve öğrencinin gerekçeli düşüncesinden de kurulabilir; video izlenmişse videoya özgü kanıt yalnız gerçekten görülen/duyulan ayrıntılardan eklenir.",
+        "lead": "Videoda gördüğünüz ve duyduğunuz ayrıntıları not edin. Videoya erişemediyseniz soruları soru köklerindeki bilgiler ve gerekçelerinizle yanıtlayın; videoda varmış gibi örnek eklemeyin.",
         "items": [
-        "Kitaptaki altı soruyu yanıtlarken soru kökünde verilen kavram ve davranışlardan hareket edin; kişisel/güncel yorumları gerekçelendirin.",
-        "Video izlendiyse uygun sorularda gerçekten görülen veya duyulan ayrıntıyı kanıt olarak ilişkilendirin. Video görülmediyse olay, söz, tören, imece örneği ya da görüntü uydurmayın."
+          "Soruları yanıtlarken verilen kavram ve davranışlardan hareket edin; kişisel ve güncel yorumlarınızı gerekçelendirin.",
+          "Videoyu izlediyseniz gerçekten gördüğünüz veya duyduğunuz ayrıntıları kanıt olarak kullanın. Görmediğiniz olay, söz, tören, imece örneği ya da görüntüyü eklemeyin."
         ]
       }
     },

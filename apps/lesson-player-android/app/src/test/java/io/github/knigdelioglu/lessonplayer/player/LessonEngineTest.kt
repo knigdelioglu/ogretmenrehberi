@@ -56,6 +56,29 @@ class LessonEngineTest {
             null, null, 100))
     }
 
+    @Test fun themeOneStudentProjectionHidesTeacherSupportOnly() {
+        var state = LessonEngine.reduce(LessonEngine.initial(lesson, digest), lesson,
+            LessonCommand.GoToStep(second.id))
+        for (key in listOf(
+            RevealKey.GUIDANCE,
+            RevealKey.ANSWER,
+            RevealKey.EVIDENCE,
+            RevealKey.EXPLANATION
+        )) {
+            state = LessonEngine.reduce(state, lesson, LessonCommand.ToggleReveal(key))
+        }
+
+        val themeOneProjection = toStudentProjection(lesson, state)
+        assertNull(themeOneProjection.guidance)
+        assertNull(themeOneProjection.explanation)
+        assertEquals("Cevap metni", themeOneProjection.answerText)
+        assertEquals(listOf("Kanıt"), themeOneProjection.evidenceQuotes)
+
+        val otherThemeProjection = toStudentProjection(lesson.copy(themeId = "TEMA_02"), state)
+        assertEquals("Yönlendirme", otherThemeProjection.guidance)
+        assertEquals("Açıklama", otherThemeProjection.explanation)
+    }
+
     @Test fun revealNextFollowsConfiguredSequenceThenAdvances() {
         var state = LessonEngine.reduce(LessonEngine.initial(lesson, digest), lesson,
             LessonCommand.GoToStep(second.id))
