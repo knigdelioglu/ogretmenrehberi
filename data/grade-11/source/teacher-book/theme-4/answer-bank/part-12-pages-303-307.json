@@ -11,7 +11,14 @@
       "question_no": "1",
       "source_locator": "basılı s.303 / PDF s.304 — Soru 1",
       "prompt_summary": "Tiyatro parçasını Doğu ve Batı özelliklerini buluşturan modern tiyatro ile ilişkilendirme",
-      "answer": "Parçada modern tiyatroya özgü sahne yönergesi, belirli kişiler arasındaki çatışma ve karşılıklı diyalog bulunur. Buna karşılık “Ağalar” hitabı, dinî söyleyişler ve atasözü niteliğindeki kısa sözler yerel/geleneksel söz varlığını taşır. Karakterlerin kuşatma karşısında dayanışma ve yurt savunmasına ilişkin sözleri de Doğulu kültürel bağlamı destekler. Böylece modern sahne anlatımı, geleneksel söyleyiş ve toplumsal değerlerle birlikte kullanılmıştır."
+      "answer": "Parçada modern tiyatroya özgü parantez içi sahne yönergeleri (“Hiç kimseyle ilgilenmeyerek”, “Sözünü keserek”), belirli kişiler arasındaki gerilim ve karşılıklı diyalog bulunur. Buna karşılık “Ağalar” hitabı, “Allah korusun”, “Suphanallah” gibi dinî söyleyişler, “azdan az olur, çoktan çok” gibi atasözü niteliğindeki sözler ve gönüllünün “Şehitliği göze aldım.” sözündeki şehitlik kavramı yerel/geleneksel söz varlığını ve kültürel-dinî değerleri taşır. Yurt savunması tek başına Doğu’ya özgü bir özellik değildir; parçanın Doğulu niteliği asıl olarak bu hitap, söyleyiş ve kavramlarda görülür. Böylece Batılı sahne anlatımı, yerli söyleyiş ve kültürel değerlerle birlikte kullanılmıştır.",
+      "evidence_quotes": [
+        "Ağalar!",
+        "Allah korusun!",
+        "Suphanallah!",
+        "azdan az olur, çoktan çok",
+        "Şehitliği göze aldım."
+      ]
     },
     {
       "question_id": "T4-P304-Q02",
@@ -19,13 +26,14 @@
       "printed_page": 304,
       "question_no": "2",
       "source_locator": "basılı s.304 / PDF s.305 — Soru 2 / doğru seçenek A",
-      "prompt_summary": "Küçürek öykü parçasındaki sentezleyici cümlenin tiyatro metninde nasıl karşılık bulduğunu açıklama",
+      "prompt_summary": "I ve II. metin arasındaki anlam ilişkisini belirleme",
       "answer": "Doğru seçenek: A.",
       "answer_sections": {
         "Gerekçe": [
-          "I. metin, modern Türk tiyatrosunun geleneksel biçimlerle Batı tiyatrosunu buluşturduğunu genel olarak açıklar.",
-          "II. metin, özellikle 1960’larda açık biçim ve episodik yapıyla bu buluşmanın tiyatrodaki görünüşlerini örneklendirir.",
-          "Bu nedenle II. metin, I. metinle çelişmez; onu somut örneklerle destekler."
+          "I. metin, modern Türk tiyatrosunun geleneksel biçimlerle Batı tiyatrosunu buluşturma eylemine dayandığını genel olarak açıklar.",
+          "II. metin, bu buluşturmanın 1960’larda ortaya çıkan somut sonucunu anlatır: Meddah, Karagöz ve Ortaoyunu biçimlerini modern yazarlık teknikleriyle birleştiren açık biçim, episodik oyunlar ve Keşanlı Ali Destanı.",
+          "Bu nedenle II. metin, I. metinde belirtilen durumun sonucuna değinir.",
+          "II. metin I. metni çürütmez, onunla çelişmez, düşüncenin bilimsel kanıtını sunmaz ve bir olumsuzluktan söz etmez; B, C, D ve E bu yüzden elenir."
         ]
       },
       "evidence_quotes": [
@@ -88,7 +96,7 @@
       "question_no": "6",
       "source_locator": "basılı s.305-306 / PDF s.306-307 — Soru 6",
       "prompt_summary": "Paydos ve Bir Çift Yün Çorap Böyle Aşk Duydunuz mu? kişilerine uygun kostüm önerme",
-      "answer": "Paydos parçasındaki Murtaza ve Hatice için sade, gündelik ev giysileri düşünülebilir; sahne yönergeleri onların sıradan bir ev ortamındaki hareketlerini öne çıkarır. Bir Çift Yün Çorap Böyle Aşk Duydunuz mu? parçasında televizyonlu bir odada bulunan kadın ve erkek için de güncel gündelik giysiler uygundur. Metinlerde kesin kostüm veya yıl belirtilmediğinden kıyafetler karakterin hareketini ve mekânı desteklemeli, kanıtlanmayan dönem ayrıntısı eklememelidir."
+      "answer": "Paydos parçasındaki Murtaza ve Hatice için sade, gündelik ev giysileri düşünülebilir; sahne yönergeleri onların sıradan bir ev ortamındaki hareketlerini öne çıkarır. Bir Çift Yün Çorap Böyle Aşk Duydunuz mu? parçasında lüks bir dairenin basit döşenmiş, televizyonlu odasında bulunan kadın ve erkek için de sade, gündelik ev giysileri uygundur. Metinlerde kesin kostüm veya yıl belirtilmediğinden kıyafetler karakterin hareketini ve mekânı desteklemeli, kanıtlanmayan dönem ayrıntısı eklememelidir."
     },
     {
       "question_id": "T4-P306-Q07",

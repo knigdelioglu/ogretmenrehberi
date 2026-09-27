@@ -64,17 +64,16 @@ const theme3Types = theme3Entries.reduce((counts, entry) => {
   return counts;
 }, {});
 assert(theme3Entries.length === 147 &&
-  theme3Types.question_answer === 85 &&
+  theme3Types.question_answer === 86 &&
   theme3Types.performance_support === 44 &&
-  theme3Types.source_limited === 18,
+  theme3Types.source_limited === 17,
   "Tema 3 parça kayıtları kanonik dağılımı ve düzeltilmiş source-limited sayısını vermeli.");
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
-assert(theme3Compare?.entry_type === "source_limited" &&
+assert(theme3Compare?.entry_type === "question_answer" &&
   theme3Compare.source_locator.includes("altı dörtlük") &&
-  theme3Compare.answer.includes("şiir bölümünü metne eriştikten sonra tamamlayın") &&
-  theme3Compare.answer_sections?.["Mescid-i Aksa"]?.includes("Şiirin metnine erişmeden") &&
-  Object.keys(theme3Compare.answer_sections ?? {}).length === 3,
-  "T3-P177-COMP01, şiir metni olmadan yorum üretmeyen öğrenci yönergesi sunmalı.");
+  ["İçerik","Tür","Şekil","Dönem","Zihniyet","Üslup","İleti"].every((key) =>
+    theme3Compare.answer_sections?.[key]?.["Huzur"] && theme3Compare.answer_sections?.[key]?.["Mescid-i Aksa"]),
+  "T3-P177-COMP01, s.177'de tam olarak basılı şiire dayanarak yedi ölçütte iki sütunlu cevap vermeli.");
 assert(
   teacherBookManifest.totals.answer_bank_entries === manifestAnswerTotal &&
     teacherBookManifest.totals.source_records === manifestSourceTotal,

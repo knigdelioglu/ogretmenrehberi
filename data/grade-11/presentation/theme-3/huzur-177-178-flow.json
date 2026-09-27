@@ -39,18 +39,18 @@
       "source_record_id": "T03-S0030",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Basılı s.177’deki görseli ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
+      "prompt": "Basılı s.177’deki Mescid-i Aksa şiirini ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.177’de Mescid-i Aksa görseli yer alır; görselde şiir dizeleri görünmez.",
+        "lead": "Basılı s.177’de M. Akif İnan’ın “Mescid-i Aksa” şiiri, caminin fotoğrafı üzerinde altı dörtlük hâlinde tam olarak yer alır.",
         "sections": [
           {
             "title": "Metin kanıtı",
-            "body": "Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz. Bu özellikleri şiir metninden inceleyin."
+            "body": "Şiirin içerik, şekil ve üslup özelliklerini dizelerden belirleyin: altı dörtlük, 11’li hece ölçüsü, konuşan ve ağlayan mescit."
           },
           {
-            "title": "Karşılaştırma sınırı",
-            "body": "Şiirin metnine erişemiyorsanız içerik, tür, şekil, dönem, zihniyet, üslup ve ileti alanlarını boş bırakın. Huzur sütununu okuduğunuz kesitteki kanıtlarla doldurun."
+            "title": "Karşılaştırma yolu",
+            "body": "Huzur sütununu okuduğunuz kesitten, Mescid-i Aksa sütununu şiirin dizelerinden doldurun; her hücreyi metinden bir kanıtla destekleyin."
           }
         ]
       }
@@ -64,7 +64,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P177-COMP01",
       "content": {
-        "lead": "Huzur sütununu okuduğunuz kesitten doldurun. Mescid-i Aksa sütununa yalnız şiir metninde gördüğünüz özellikleri yazın.",
+        "lead": "Huzur sütununu okuduğunuz kesitten, Mescid-i Aksa sütununu s.177’deki dizelerden doldurun; her ölçütte iki metni birlikte ele alın.",
         "items": [
           "İçerik",
           "Tür",
@@ -113,15 +113,15 @@
         "sections": [
           {
             "title": "Huzur — dönem",
-            "body": "Karşılaştırma sayfasında dönem bilgisi verilmez. Dış bibliyografik bilgiyi kullanırsanız kaynağını ve 1949’daki ilk yayım yılını ayrıca belirtin; bunu okunan kesitteki olaylarla karıştırmayın."
+            "body": "Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması romanı Cumhuriyet Dönemi’ne yerleştirir. 1949 ilk yayım yılı kitap dışı bilgidir; kullanırsanız kaynağıyla belirtin."
           },
           {
             "title": "Huzur — zihniyet",
             "body": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin. “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir ve kimlik ilişkisiyle açıklayın."
           },
           {
-            "title": "Mescid-i Aksa — zihniyet",
-            "body": "Şiirin metni olmadan dönem ve zihniyet yorumu yapmayın; metni edindiğinizde bu alanı şiirden kanıtlarla doldurun."
+            "title": "Mescid-i Aksa — dönem ve zihniyet",
+            "body": "Kitap yalnız şairin adını verir; sade dil ve 11’li hece ölçüsü Cumhuriyet Dönemi şiirine uygundur. İlk kıble, Nebi, Burak ve Miraç göndermeleri ile “Kucaklasın beni İslâm” çağrısı, kutsal mekânı ortak inanç hafızasının parçası sayan İslâmî duyarlılığı gösterir."
           }
         ]
       }
@@ -142,11 +142,11 @@
           },
           {
             "title": "Mescid-i Aksa — üslup ve ileti",
-            "body": "Şiirin metni elinizde değilse üslup ve ileti karşılaştırmasını tamamlamayın; kişileştirme, sesleniş veya çağrı gibi özellikleri metin kanıtı olmadan yazmayın."
+            "body": "Kişileştirme (ağlayan, konuşan mescit), benzetme (“bir çocuk gibi”, “yetim vâha”), sitemli soru ve dinî söz varlığı. İleti: Mescid-i Aksa unutulmamalı; Müslümanlar ona ve birbirlerine sahip çıkmalıdır."
           },
           {
             "title": "Karşılaştırma",
-            "body": "İki metin arasında benzerlik veya fark kurmak için her iki metinden de kanıt kullanın."
+            "body": "İki metin de mekânı hafıza ve kimlikle ilişkilendirir; Huzur bunu düzyazı ve düşünce tartışmasıyla, şiir konuşan mekân ve doğrudan çağrıyla yapar."
           }
         ]
       }

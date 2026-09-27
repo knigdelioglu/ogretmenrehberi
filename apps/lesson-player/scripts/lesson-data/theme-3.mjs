@@ -479,9 +479,10 @@ assert(s175q2?.layout === "structure" &&
 assert(huzurQuestionMap.get("s176-q6")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q6")?.content?.items?.length===3,
   "s.176 Q6 şehir örneği kişisel performans olarak kalmalı.");
-assert(huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("konuşanın Mümtaz’a seslendiğini düşündürür") &&
-  huzurQuestionMap.get("s176-q10")?.content?.note?.includes("konuşanın başka biri olabileceğini düşündürüyor"),
-  "s.176 Q10 ders kitabı soru/metin konuşmacı atıf farkı gizlenmemeli.");
+assert(huzurQuestionMap.get("s176-q10")?.answer?.answer?.startsWith("Sözü söyleyen Nuran’dır") &&
+  huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("Ders kitabı hatası") &&
+  huzurQuestionMap.get("s176-q10")?.content?.note?.includes("sözü söyleyen Nuran’dır"),
+  "s.176 Q10 ders kitabının konuşmacı atıf hatası ana cevapta görünür olmalı.");
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
@@ -507,23 +508,22 @@ assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
   huzur177ById.get("s177-q14")?.answer?.answer_sections?.ortuk_iletiler?.length===3,
   "s.177 14. soruda açık/örtük iletiler ayrıştırılmalı.");
 assert(huzur177ById.get("s177-source-photo")?.answer === null &&
-  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("Basılı s.177’de Mescid-i Aksa görseli") &&
-  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("şiir dizeleri görünmez") &&
-  huzur177ById.get("s177-source-photo")?.content?.sections?.some(section => section.body.includes("Fotoğraftan şiir dizeleri, tür veya nazım biçimi çıkarılamaz")),
-  "Basılı s.177 görselinden şiirin metin veya biçim özellikleri çıkarılmamalı.");
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("altı dörtlük hâlinde tam olarak yer alır"),
+  "Basılı s.177'deki Mescid-i Aksa şiiri kitapta tam olarak bulunduğu için kaynak olarak tanıtılmalı.");
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
-  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
-  Object.keys(huzur177ById.get("s178-compare-task")?.answer?.answer_sections ?? {}).length === 3 &&
-  huzur177ById.get("s178-compare-task")?.answer?.answer.includes("şiir bölümünü metne eriştikten sonra tamamlayın") &&
-  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("Şiirin metnine erişmeden") &&
-  !huzur177ById.get("s178-compare-task")?.answer?.evidence_quotes?.some(q => q.includes("İlk Kıblesi")) &&
+  huzur177ById.get("s178-compare-task")?.answer?.entry_type === "question_answer" &&
+  ["İçerik","Tür","Şekil","Dönem","Zihniyet","Üslup","İleti"].every(key =>
+    huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.[key]?.["Huzur"] &&
+    huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.[key]?.["Mescid-i Aksa"]) &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Şekil"]?.["Mescid-i Aksa"]?.includes("11’li hece") &&
+  huzur177ById.get("s178-compare-task")?.answer?.explanation?.includes("kitap dışı") &&
   huzur177ById.get("s178-compare-task")?.answer?.source_locator?.includes("altı dörtlük"),
-  "Huzur–Mescid-i Aksa karşılaştırması şiir metni eksikliği nedeniyle kaynakla sınırlı tutulmalı.");
+  "Huzur–Mescid-i Aksa karşılaştırması s.177'deki şiir dizelerine dayanarak yedi ölçütte tamamlanmalı.");
 assert(huzur177ById.get("s178-huzur-context")?.content?.lead?.includes("Dönem metnin") &&
-  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa") && section.body.includes("Şiirin metni olmadan dönem ve zihniyet yorumu yapmayın")),
-  "Dönem zihniyetten ayrılmalı; kaynakta bulunmayan şiire ilişkin yargı eklenmemeli.");
-assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("Mescid-i Aksa sütununa yalnız şiir metninde gördüğünüz özellikleri yazın"),
-  "Karşılaştırma akışı eksik şiir metni için kaynak sınırı belirtmeli.");
+  huzur177ById.get("s178-huzur-context")?.content?.sections?.some(section => section.title.includes("Mescid-i Aksa") && section.body.includes("İslâmî duyarlılığı")),
+  "Dönem zihniyetten ayrılmalı; şiirin zihniyeti dizelerden kanıtlanmalı.");
+assert(huzur177ById.get("s178-compare-task")?.content?.lead?.includes("Mescid-i Aksa sütununu s.177’deki dizelerden doldurun"),
+  "Karşılaştırma akışı şiir sütununu s.177 dizelerine bağlamalı.");
 for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]){
   assert(huzur177ById.get(id)?.answer === null &&
     huzur177ById.get(id)?.source?.source_record_id === "T03-S0030",

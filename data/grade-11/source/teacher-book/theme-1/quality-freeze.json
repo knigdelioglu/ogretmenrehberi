@@ -14,32 +14,32 @@
   "canonical": {
     "source_records": 129,
     "verified_sources": 129,
-    "answer_entries": 154,
-    "source_limited_entries": 15
+    "answer_entries": 155,
+    "source_limited_entries": 14
   },
   "lesson_player": {
     "lessons": 7,
-    "steps": 180,
+    "steps": 183,
     "source_records": 129,
-    "answer_entries": 154
+    "answer_entries": 155
   },
   "ogretmenos": {
     "projection_contract": "OgretmenOS Generic Teacher Guide Runtime Contract v1",
-    "content_fingerprint": "sha256:366a92bf881a7ace6636ad2eaf7bf2133b7ab7f8b3f3499de4c1cbdd731ef629",
+    "content_fingerprint": "sha256:b6069bc257f73ab1bfea88ba4d890a99ca0a189a9bb6bed5994a2d16697e86fe",
     "deterministic_build": true,
     "row_counts": {
-      "canonical_entities": 284,
+      "canonical_entities": 285,
       "teacher_guides": 1,
       "teacher_guide_sections": 7,
       "teacher_guide_units": 129,
-      "teacher_guide_items": 180,
-      "teacher_guide_item_relations": 334
+      "teacher_guide_items": 183,
+      "teacher_guide_item_relations": 338
     }
   },
   "epub": {
-    "answer_entries": 154,
-    "semantic_parity_entries": 154,
-    "source_limited_entries": 15,
+    "answer_entries": 155,
+    "semantic_parity_entries": 155,
+    "source_limited_entries": 14,
     "block_ranges": [
       {
         "title": "Temaya Başlarken",
@@ -54,7 +54,7 @@
       {
         "title": "Metin Tahlili-2 · Mektup / Âli’ye Mektuplar / Dilekçe",
         "pages": "36-52",
-        "entries": 40
+        "entries": 41
       },
       {
         "title": "Edebiyat Atölyesi-1 · Konuşma",

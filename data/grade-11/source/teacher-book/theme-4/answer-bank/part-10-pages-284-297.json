@@ -198,7 +198,8 @@
       "question_no": "7",
       "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 7 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Öznel ve nesnel unsurların belgeselin inandırıcılık ve güvenilirliğine etkisini değerlendirme",
-      "answer": "Doğrulanabilir bilgi ve açık kanıt belgeselin güvenilirliğini destekler; kişisel yorum ise bakış açısını ve duygusal etkiyi görünür kılar. Videoda olgu ile yorumu ayırın. Seçtiğiniz örneklerin belgeselin inandırıcılığına nasıl etki ettiğini ve karşıt bilgilerin nasıl sunulduğunu açıklayın."
+      "answer": "Balık kılçığı diyagramına yazdığınız nesnel ifadelerin (doğrulanabilir bilgi, yer, zaman, sayı vb.) belgeselin güvenilirliğini; öznel ifadelerin (duygu, değerlendirme, beğeni) ise bakış açısını ve duygusal etkiyi nasıl biçimlendirdiğini değerlendirin. Görüşünüzü diyagramdan seçtiğiniz en az bir nesnel ve bir öznel örnekle destekleyin.",
+      "guidance": "Video izlenmeden hangi ifadelerin nesnel ya da öznel olduğu kesinleştirilemez. İsteyen öğrenci, belgeselde farklı bakış açılarına yer verilip verilmediğini ek bir ölçüt olarak tartışabilir; bu, sorunun zorunlu parçası değildir."
     },
     {
       "question_id": "T4-P290-Q08",
@@ -243,7 +244,13 @@
       "question_no": "Fark Edelim",
       "source_locator": "basılı s.292 / PDF s.293 — Fark Edelim",
       "prompt_summary": "İklim değişikliğinin zararlarını azaltmak için bireysel sorumlulukları açıklama",
-      "answer": "Bireyler enerji ve suyu gereksiz tüketmemek, kısa mesafelerde yürümek veya toplu taşımayı tercih etmek, yeniden kullanılabilir ürün kullanmak ve atığı azaltmak gibi günlük seçimlerle çevresel baskıyı düşürmeye katkı sağlayabilir. Yerel yeşil alanları korumak, gıda israfını azaltmak ve iklim kaynaklı kuraklık ya da taşkınlara karşı topluluk çalışmalarına katılmak da önemlidir. Bu adımlar tek başına sorunu çözmez; toplumsal ve kurumsal önlemlerle birlikte etkili olur."
+      "answer": "Metne göre insan faaliyetlerinden doğan kirletici salınımlar (emisyon) atmosferin alt tabakasındaki dengeyi bozduğunda kuraklık, taşkın ve su kalitesinde değişme gibi zararlar ortaya çıkabilir. Buna göre bireylere düşen temel görevler, günlük yaşamda salınımı artıran tüketimi azaltmak ve su kaynaklarını korumaktır: enerjiyi gereksiz kullanmamak, kısa mesafelerde yürümek veya toplu taşımayı tercih etmek, suyu tasarruflu kullanmak ve israfı azaltmak bu görevlere örnektir. Bireysel adımlar tek başına yeterli değildir; toplumsal ve kurumsal önlemlerle birlikte etkili olur.",
+      "explanation": "Metin bireysel görevleri tek tek sıralamaz; emisyonun atmosfer dengesine ve su kaynaklarına etkisini açıklar. Cevaptaki davranışlar bu bilgiden hareketle verilen genel örneklerdir; öğrencilerin gerekçeli farklı önerileri de kabul edilebilir.",
+      "evidence_quotes": [
+        "kirletici salınımları (emisyon)",
+        "kuraklık",
+        "taşkın"
+      ]
     },
     {
       "question_id": "T4-P293-Q01",
@@ -334,7 +341,7 @@
       "question_no": "7",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 7 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinde kullanılan dil işlevlerini belirleme",
-      "answer": "Konuşma ve yazıdaki ifadelerin dil işlevlerini belirleyin (bilgi verme, duygu aktarma, yönlendirme, ilişki kurma vb.). Her işlev için videoda duyduğunuz bir ifadeyi veya ekrandaki yazıyı örnek gösterin."
+      "answer": "Konuşmalarda ve ekrandaki yazılarda kullanılan dilin işlevlerini ders terimleriyle belirleyin: bilgi verme (göndergesel işlev), duygu aktarma (heyecana bağlı işlev), yönlendirme (alıcıyı harekete geçirme işlevi), iletişimi başlatma veya sürdürme (kanalı kontrol işlevi), dil hakkında açıklama (dil ötesi işlev) ve sözün kendisini öne çıkaran sanatlı söyleyiş (şiirsel işlev). Her işlev için videoda duyduğunuz bir ifadeyi veya ekrandaki yazıyı örnek gösterin; videoda karşılığı bulunmayan işlevi zorla eklemeyin."
     },
     {
       "question_id": "T4-P295-Q08",

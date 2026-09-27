@@ -38,16 +38,16 @@ assert(
 );
 
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 180,
-  "1. Tema toplam 180 ders adımı içermeli."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 183,
+  "1. Tema toplam 183 ders adımı içermeli."
 );
 assert(
   theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
   "1. Tema 129 source-index kaydının tamamını kapsamalı."
 );
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 154,
-  "1. Tema 154 answer-bank kaydının tamamını kapsamalı."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 155,
+  "1. Tema 155 answer-bank kaydının tamamını kapsamalı."
 );
 
 
@@ -225,14 +225,14 @@ assert(
 const mektup = byLessonId.get("T11-T01-MEKTUP");
 assert(mektup, "Mektup dersi catalog içinde bulunamadı.");
 assert(mektup.lesson_slug === "mektup", "Mektup lesson_slug doğru olmalı.");
-assert(mektup.coverage.steps === 43, "Mektup dersi 43 adım olmalı.");
+assert(mektup.coverage.steps === 46, "Mektup dersi 46 adım olmalı.");
 assert(
   mektup.coverage.source_records === 36,
   "Mektup dersi 36 source-index kaydını kapsamalı."
 );
 assert(
-  mektup.coverage.answer_entries === 40,
-  "Mektup dersi 40 answer-bank kaydını kapsamalı."
+  mektup.coverage.answer_entries === 41,
+  "Mektup dersi 41 answer-bank kaydını kapsamalı."
 );
 
 const mektupById = new Map(mektup.steps.map((step) => [step.id, step]));
@@ -639,8 +639,8 @@ assert(
 
 const p43LetterKinds = mektupById.get("s43-q1");
 assert(
-  p43LetterKinds?.answer?.answer_sections?.["Özel haberleşme yönü"] &&
-    p43LetterKinds.answer.answer_sections?.["Edebî düşünce yönü"] &&
+  p43LetterKinds?.answer?.answer_sections?.["Özel mektup biçimi"] &&
+    p43LetterKinds.answer.answer_sections?.["Edebî mektup yönü (belirleyici)"] &&
     p43LetterKinds.answer.guidance,
   "s43 mektup sınıflandırması iki metin niteliğini ve kanıta dayalı gerekçeyi korumalı."
 );

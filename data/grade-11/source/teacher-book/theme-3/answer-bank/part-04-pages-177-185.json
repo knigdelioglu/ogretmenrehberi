@@ -32,28 +32,50 @@
     },
     {
       "question_id": "T3-P177-COMP01",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Basılı sayfada Mescid-i Aksa şiirinin dizeleri görünmediği için şiiri yalnız bu görselle karşılaştırmak mümkün değildir. Huzur bölümünü okuduğunuz kesitten doldurun; şiir bölümünü metne eriştikten sonra tamamlayın.",
-      "source_locator": "basılı s.177-178 / PDF s.178-179 — “Mescid-i Aksa” şiiri (altı dörtlük) ve Karşılaştıralım tablosu",
+      "answer": "Huzur, okunan kesitte İstanbul üzerinden kültürel kimlik arayışını düzyazıyla işler; Mescid-i Aksa ise kişileştirilen kutsal mekânın ağzından özlem ve dayanışma çağrısını 11’li hece ölçüsüyle yazılmış altı dörtlükte dile getirir. İki metin de mekânı hafıza ve kimlikle ilişkilendirir.",
+      "source_locator": "basılı s.177 “Mescid-i Aksa” şiiri (altı dörtlük, fotoğrafın üzerinde) ve s.178 Karşılaştıralım tablosu / PDF s.178-179",
       "answer_sections": {
-        "Huzur": "Okuduğunuz kesitten İstanbul, Boğaz, tarihî çevre ve musikiyle ilgili doğrudan ifadeler seçin; çıkarımlarınızı bu kesitle sınırlayın.",
-        "Mescid-i Aksa": "Şiirin metnine erişmeden dize, nazım biçimi, tema, dönem, zihniyet, üslup veya ileti hakkında sonuç yazmayın.",
-        "Karşılaştırma ölçütleri": [
-          "İçerik",
-          "Tür",
-          "Şekil",
-          "Dönem",
-          "Zihniyet",
-          "Üslup",
-          "İleti"
-        ]
+        "İçerik": {
+          "Huzur": "Mümtaz ile Nuran’ın İstanbul ve Boğaz gezileri; eski musiki, tarihî mekânlar, yoksul semtler ve geçmiş–yeni hayat tartışması.",
+          "Mescid-i Aksa": "Şiir kişisi rüyasında Mescid-i Aksa’yı ağlayan bir çocuk gibi görür; mescit ilk kıble oluşunu, Burak ve Miraç hatırasını, müminlerle dolu geçmişini ve bugünkü yalnızlığını anlatarak Müslümanlara selam ve kavuşma çağrısı gönderir."
+        },
+        "Tür": {
+          "Huzur": "Roman; kurmaca düzyazı. Kitapta romandan kesitler okunur.",
+          "Mescid-i Aksa": "Şiir; lirik söyleyişli, dinî duyarlılık taşıyan bir şiir."
+        },
+        "Şekil": {
+          "Huzur": "Düzyazı; paragraflar, betimlemeler ve diyaloglarla ilerler.",
+          "Mescid-i Aksa": "Altı dörtlük (24 dize); 11’li hece ölçüsü (6+5: “Mescid-i Aksa’yı / gördüm düşümde”); dörtlüklerde 2. ve 4. dizeler uyaklıdır (ağlıyordu / çağlıyordu, üssü idim / kürsü idim)."
+        },
+        "Dönem": {
+          "Huzur": "Cumhuriyet Dönemi. Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması da bu döneme işaret eder.",
+          "Mescid-i Aksa": "Kitap yalnız şairin adını (M. Akif İnan) verir. Sade Türkçe ve hece ölçüsü Cumhuriyet Dönemi şiirine uygundur; şairin yaşam tarihleri için açıklamaya bakınız."
+        },
+        "Zihniyet": {
+          "Huzur": "Modernleşme sürecinde geçmişle bağını kaybetmeden yeni bir hayat kurma arayışı; kimliğin tarih, şehir ve musikiden beslendiği anlayışı.",
+          "Mescid-i Aksa": "İslâmî duyarlılık ve ümmet bilinci; kutsal mekânı ortak inanç hafızasının parçası sayma, ona sahip çıkılmamasını sitemle karşılama."
+        },
+        "Üslup": {
+          "Huzur": "Betimleyici, çağrışımlı, düşünsel ve şiirsel düzyazı; uzun cümlelerde mekân, musiki ve iç dünya iç içe geçer.",
+          "Mescid-i Aksa": "Kişileştirme (ağlayan, konuşan mescit), benzetme (“bir çocuk gibi”, “yetim vâha”), sitemli soru (“Unuttu mu bunu acaba herkes”) ve dinî söz varlığı (kıble, Nebi, Burak, Miraç); sade, içten, yakarış tonlu söyleyiş."
+        },
+        "İleti": {
+          "Huzur": "Geleceği kurmak için geçmişle ve kültürel mirasla bağ kurmak gerekir; şehri tanımak insanın kendini tanımasıdır.",
+          "Mescid-i Aksa": "Mescid-i Aksa Müslümanların ortak değeridir; unutulmamalı, ona sahip çıkılmalı ve Müslümanlar birlik olmalıdır."
+        },
+        "Karşılaştırma sonucu": "İki metinde de mekân, geçmişin hatırasını taşıyan ve kimliği besleyen bir değerdir; ikisinde de geçmişin görkemi ile bugünkü ihmal arasında karşıtlık vardır (Üsküdar’ın yoksul semtleri — tenha kalan mescit). Huzur bunu kişilerin düşünce ve tartışmaları üzerinden düzyazıyla, şiir ise mekânı konuşturarak ölçülü-uyaklı biçimde ve dinî dayanışma ekseninde işler."
       },
-      "explanation": "Görsel şiirin dizelerini veya biçim özelliklerini göstermez. Şiire ilişkin yorumunuzu metni gördükten sonra dize ve biçim kanıtlarıyla yapın.",
+      "explanation": "Şiir, basılı s.177’de Mescid-i Aksa fotoğrafının üzerinde altı dörtlük hâlinde tam olarak yer alır; karşılaştırma bu dizelere dayanır. Dönem ölçütü için kitap dışı bilgi (öğretmen için): M. Akif İnan (1940-2000) Cumhuriyet Dönemi şairidir; Huzur ilk kez 1949’da yayımlanmıştır. Bu bilgiler sınıfta kullanılırsa kitap dışı olduğu belirtilmelidir.",
       "evidence_quotes": [
-        "İstanbul’u tanımadıkça kendimizi bulamayız."
+        "Bir çocuk gibiydi ve ağlıyordu",
+        "İlk Kıblesi benim ulu Nebi’nin",
+        "Unuttu mu bunu acaba herkes",
+        "Kucaklasın beni İslâm diyordu",
+        "Bir hüviyet lâzım."
       ]
     },
     {
@@ -92,7 +114,7 @@
       "printed_page": 180,
       "question_no": "3",
       "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
-      "answer": "Tabloyu yalnız o ana kadar okunan Huzur parçasındaki kanıta göre doldurun; bilinmeyen özellikleri varsayımla tamamlamayın.",
+      "answer": "Okunan kesitte Mümtaz, Nuran ve İhsan için söz ve davranış kanıtı vardır; Macide, Suat ve Fâhir için yeterli kanıt yoktur.",
       "answer_sections": {
         "Mümtaz": {
           "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur.",
@@ -119,7 +141,8 @@
           "cikarim": "Bu kesitte kişiliği ve duyguları belirlenemez."
         }
       },
-      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3"
+      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3",
+      "guidance": "Tabloyu yalnız o ana kadar okunan Huzur parçasındaki kanıta göre doldurun; bilinmeyen özellikleri varsayımla tamamlamayın."
     },
     {
       "question_id": "T3-P181-TABLE02",
@@ -240,26 +263,33 @@
       "answer_sections": {
         "1 · Halkı sevmek ve insanı kavramlaştırmak": {
           "insani_celiski": "Halkı sevdiğini söylemek ile insanı yalnız bir kavram veya manzara gibi ele alma ihtimali.",
-          "ahlaki_catisma": "İnsana gerçekten kulak vermek ile onu kendi düşüncesinin nesnesi yapmak arasındaki gerilim.",
+          "ahlaki_catisma": "Olası yorum: İnsana gerçekten kulak vermek ile onu kendi düşüncesinin nesnesi (“mefhum”) yapmak arasındaki gerilim.",
           "toplumsal_gucluk": "Halkın sesine ve yaşantısına söz hakkı tanıma ihtiyacı; belirli bir yoksulluk olayı bu parçada anlatılmıyor."
         },
         "2 · Yeni hayat ve tarihî kökler": {
           "insani_celiski": "Yeni bir toplum kurmak istemek ile tarihsel birikimden kopmamak.",
-          "ahlaki_catisma": "Değişimin sorumluluğunu üstlenirken insanı ve geçmişi ihmal etmeme gereği.",
+          "ahlaki_catisma": "Olası yorum: Değişimin sorumluluğunu üstlenirken insanı ve geçmişi ihmal etmeme gereği (“Bunları yaparken insanı da yapmış olacağız.”).",
           "toplumsal_gucluk": "Aile, ev, şehir ve köyü yeniden kurma; üretim ve toplumsal şartları düzenleme güçlüğü."
         },
         "3 · Nuran, serçeler ve köpek": {
-          "insani_celiski": "Nuran'ın kuşları beslemesi ile köpeğin onlara iştahla bakması, aynı mekândaki canlıların farklı ihtiyaçlarını gösterir.",
-          "ahlaki_catisma": "Canlıları korurken öteki canlının ihtiyacını da gözetme sorusu; metin açık bir kötülük veya cezalandırma anlatmaz.",
-          "toplumsal_gucluk": "Bu parçada somut toplumsal güçlük verilmez; canlılara duyarlılık vurgulanır."
+          "insani_celiski": "Nuran serçeleri beslemeyi vazife edinir; soğuktan içeri alınan köpek ise aynı kuşlara “iştahlı bakışlar” fırlatır. Aynı evde korunan iki canlının ihtiyaçları birbiriyle çatışır.",
+          "ahlaki_catisma": "Metindeki davranış: Mümtaz köpeği soğuktan içeri alır, ekmek ufaklarını pencerenin kenarına koyup camı kapatır; böylece iki canlı da gözetilir. Olası yorum: Bir canlıya şefkat gösterirken ötekini de koruma sorumluluğu. Metin açık bir kötülük veya cezalandırma anlatmaz.",
+          "toplumsal_gucluk": "Bu parçada somut toplumsal güçlük verilmez; kar ve buz, canlıların barınma ve beslenme ihtiyacını görünür kılar."
         },
         "4 · İhsan'ın hastalığı": {
-          "insani_celiski": "Mümtaz'ın kendi hayatı ve düşünceleri ile hasta yakınına ayırdığı zaman arasındaki sıkışma.",
-          "ahlaki_catisma": "Kişisel ihtiyaçlara karşın hastayı ve evdekileri gözetme sorumluluğu.",
-          "toplumsal_gucluk": "Zatürree, ilaç ve doktor işleri, ev halkının korku ve kaygısı."
+          "insani_celiski": "Mümtaz bir hafta boyunca doğru dürüst sokağa çıkmaz; zamanı hastanın başı ucu ile kendi odasında okuyup düşünmek arasında bölünür. Kişisel dünyası ile bakım sorumluluğu arasındaki gerilim bu ayrıntıdan çıkarılan bir yorumdur.",
+          "ahlaki_catisma": "Hasta yakınına ve ev halkına karşı sorumluluk: doktor çağırmak, reçeteyi eczaneye götürmek, yeğenlerini avutmak.",
+          "toplumsal_gucluk": "Zatürree, doktor ve ilaç işleri; telefonun komşunun evinden edilmesi; evde korku, telaş ve üzüntü."
         }
       },
-      "source_locator": "basılı s.184–185 / PDF s.185–186 — Sıra Sizde soru 2 ve renkli dört metin parçası"
+      "source_locator": "basılı s.184–185 / PDF s.185–186 — Sıra Sizde soru 2 ve renkli dört metin parçası",
+      "evidence_quotes": [
+        "Hayatı mı, halkı mı? . . Bana öyle geliyor ki, hayatı daha çok seversiniz yahut mefhumları?",
+        "Tarihimize bütünlüğünü iade etmek zarureti.",
+        "Mümtaz, ekmek ufaklarını pencerenin kenarına koydu, camı kapattı.",
+        "komşunun evinden telefon etmek"
+      ],
+      "explanation": "Kitap her parça için üç başlık istese de dört parça üç başlığa eşit kanıt vermez. Metindeki söz/davranış kanıtı ile “olası yorum” ayrı tutulmalı; kanıtı zayıf hücrede öğrencinin “bu parçada belirgin değil” demesi kabul edilebilir."
     }
   ]
 }

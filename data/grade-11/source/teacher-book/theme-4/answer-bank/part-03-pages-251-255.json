@@ -101,7 +101,15 @@
       "question_no": "Karşılaştıralım 2",
       "source_locator": "basılı s.254 / PDF s.255 — Karşılaştıralım soru 2",
       "prompt_summary": "İki tiyatro parçasının dram, komedi veya trajedi türüne yakınlığını gerekçelendirme",
-      "answer": "Ben, Mimar Sinan ciddî tarihî olayları ve bir sanatçının emek yolculuğunu sahnelediği için dram özelliklerine yakındır; metinde trajedideki gibi yıkımla sonuçlanan bir çatışma kurulmaz. Cimri ise Harpagon’un aşırı para düşkünlüğünü, çocuklarıyla evlilik konusunda yaşadığı gerilimi ve kendini ele veren sözlerini gülünç durumlar üzerinden verdiği için komedidir. Bu parçada trajedinin acıklı ve ders verme amacı taşıyan yapısı baskın değildir."
+      "answer": "Kitabın Bilgi Köşesi’ndeki tanımlara göre Cimri açıkça komediye, Ben, Mimar Sinan ise verilen üç tür içinde drama en yakındır. Ancak dramın “acıklı ve gülünç yönleri bir arada yansıtma” özelliği Ben, Mimar Sinan kesitinde belirgin değildir; bu nedenle “kesin dram” yerine “verilen türler içinde drama en yakın” demek daha doğrudur.",
+      "answer_sections": {
+        "Cimri → komedi": "Konusunu günlük yaşamdan alır; Harpagon’un aşırı para düşkünlüğü, kendini ele veren sözleri ve çocuklarıyla evlilik konusundaki gerilimi izleyiciyi güldürürken düşündürür. Kahramanı soylu ya da olağanüstü biri değil, sıradan bir aile babasıdır.",
+        "Ben, Mimar Sinan → drama en yakın": "Konusunu tarihten alır ve düzyazıyla yazılmıştır. İzleyiciyi güldürme amacı taşımadığı için komediye; manzum olmadığı ve korku-heyecan uyandırarak acıklı bir sonla ders verme yapısı kurmadığı için trajediye uymaz.",
+        "Sınır": "Şehzade Mehmet’in ölüm haberi gibi acıklı anlar bulunsa da kesitte gülünç yön zayıftır. Sınıflandırma, dramın bütün özelliklerinin görüldüğü için değil, diğer iki türün ayırt edici özelliklerini taşımadığı için yapılır."
+      },
+      "evidence_quotes": [
+        "Hayatın acıklı ve gülünç yönlerini bir arada yansıtan tiyatro türüdür"
+      ]
     },
     {
       "question_id": "T4-P255-Q01",

@@ -25,7 +25,7 @@
       "printed_page": 175,
       "question_no": "2",
       "prompt_summary": "Huzur'un konusu, teması ve yazılış amacı",
-      "answer": "Konu, tema ve yazılış amacı farklı kavramlardır. Yazılış amacına ilişkin yorumunuzu metindeki somut dayanaklarla açıklayın; bunu yazarın kesin beyanı gibi sunmayın.",
+      "answer": "Konu, Mümtaz ile Nuran’ın İstanbul gezileri çevresinde şehir, musiki ve geçmiş üzerine düşüncelerdir; tema kimlik arayışı ve geçmiş–yeni hayat gerilimidir; yazılış amacı ise kültürel aidiyet üzerine düşündürmek olarak yorumlanabilir.",
       "answer_sections": {
         "konu": "Mümtaz ile Nuran'ın İstanbul'daki gezileri ve ilişkileri çevresinde; şehir, musiki, geçmiş, kültür ve yeni hayat üzerine düşünceler.",
         "tema": "Huzur ve kimlik arayışı; geçmişle bağ kurma ile yeni hayat ihtiyacı arasındaki gerilim.",
@@ -39,7 +39,8 @@
       "evidence_quotes": [
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
         "Bir hüviyet lâzım."
-      ]
+      ],
+      "guidance": "Yazılış amacı yazarın kesin beyanı gibi değil, metindeki dayanaklarla gerekçelendirilen bir yorum olarak sunulmalıdır."
     },
     {
       "question_id": "T3-P176-Q03",
@@ -121,7 +122,7 @@
       "printed_page": 176,
       "question_no": "7",
       "prompt_summary": "Metinde dönemin sosyal hayatını yansıtan ifadeler",
-      "answer": "Metinde dönemin İstanbul sosyal hayatına ilişkin doğrudan ayrıntılar vardır. Bunlar yorumdan önce metinde görülen ifadeler olarak toplanmalıdır.",
+      "answer": "Metin; vapur kalabalığından semt hayatına, gündelik eğlencelerden yoksulluk–zenginlik karşıtlığına kadar dönemin İstanbul sosyal hayatına dair doğrudan ayrıntılar verir.",
       "source_locator": "basılı s.167-170 / PDF s.168-171 — soru 7",
       "answer_sections": {
         "Ulaşım ve kalabalık": "Akşam vapurunda küçük memurlar, gezmeden/plajdan dönenler, mektepliler, zabitler ve yaşlı hanımların bir arada bulunması.",
@@ -164,16 +165,17 @@
       "printed_page": 176,
       "question_no": "10",
       "prompt_summary": "Mümtaz'ın Üsküdar için 'hakikî kadın saltanatı' demesinin nedeni",
-      "answer": "“Hakikî kadın saltanatı” sözü, camilere atfedilen aşk, güzellik ve annelik temalarıyla ilişkilidir.",
+      "answer": "Sözü söyleyen Nuran’dır: replik “— Mümtaz, …” diye Mümtaz’a seslenir ve sahnede Mümtaz’la birlikte olan kişi Nuran’dır. Nuran bu yargıya, Üsküdar’da gezdikleri dört büyük caminin aşka, güzelliğe ya da annelik duygusuna ithaf edilmiş olmasından varır.",
       "evidence_quotes": [
-        "Üsküdar’ın bu dört büyük camii aşka, güzelliğe, yahut hiç olmazsa annelik duygusuna ithaf edilmişti."
+        "Üsküdar’ın bu dört büyük camii aşka, güzelliğe, yahut hiç olmazsa annelik duygusuna ithaf edilmişti.",
+        "— Mümtaz, Üsküdar’da hakikî kadın saltanatı var..."
       ],
       "source_locator": "basılı s.168 / PDF s.169 — soru 10",
-      "explanation": "Romandaki replik “— Mümtaz, Üsküdar’da...” diye başlar; bu hitap, konuşanın Mümtaz’a seslendiğini düşündürür. Dört caminin aşk, güzellik ve annelik duygularıyla ilişkilendirilmesine odaklanın.",
+      "explanation": "Ders kitabı hatası: Soru sözü Mümtaz’a atfeder; romanda söz Nuran’ındır. Sınıfta önce konuşanı metinden buldurup soruyu “Üsküdar için söylenen bu sözün sebebi nedir?” biçiminde ele almak yanlış atfı düzeltir. ‘Kadınlar Saltanatı’ döneminin siyasi anlamı bu sorunun kaynağında yoktur; eklenmemelidir.",
       "answer_sections": {
-        "metindeki_neden": "Dört caminin aşk, güzellik veya annelik duygusuna ithaf edilmiş olarak anlatılması.",
-        "mimari_baglam": "Metin bu camilerin kimler tarafından yaptırıldığını belirtmez.",
-        "metin_atfi_notu": "Kitap sorusu sözü Mümtaz’a atfeder; ancak romandaki “— Mümtaz, Üsküdar’da...” seslenişi konuşanın Mümtaz’a hitap ettiğini düşündürür."
+        "konusan_kisi": "Nuran. Ders kitabının sorusu sözü Mümtaz’a atfeder; s.168’deki replik ise Mümtaz’a yapılan bir seslenişle başlar.",
+        "metindeki_neden": "Gezdikleri Mihrimah Camii, III. Ahmed’in annesinin camii, Atik Valde ve Orta Valde’nin “aşka, güzelliğe, yahut hiç olmazsa annelik duygusuna ithaf edilmiş” olarak anlatılması.",
+        "adlardaki_ipucu": "Metin camilerden birini “Üçüncü Ahmed’in annesinin camii” diye anar; “Valde” adları da anneyi çağrıştırır. Bu adlandırmalar “kadın saltanatı” benzetmesini destekler."
       }
     },
     {

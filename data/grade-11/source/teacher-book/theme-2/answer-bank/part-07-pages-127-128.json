@@ -10,17 +10,25 @@
       "printed_page": 127,
       "question_no": "1",
       "prompt_summary": "Dîvânu Lugâti’t-Türk örneklerinde görülen ortak kültürel değerler",
-      "answer": "Dîvânu Lugâti’t-Türk'teki örnek maddeler, yalnız kelime anlamlarını değil dönemin öğüt, iyilik, borç-alacak ilişkisi, yeme-içme, sağlık/tedbir, zaman ve inanç gibi kültürel alanlarını da yansıtır.",
+      "answer": "Sözlük örneklerinde öğüt alma ve bilgelik, terbiye, iyilik, yakınları ağırlama, hediyeye karşılık verme, tedbirli olma, dünyanın geçiciliği bilinci ve inanç gibi değerlere yer verilir. Borç-alacak ilişkisi, aç-tok atasözü, meyve adları ve andız otuyla at tedavisi ise değerden çok dönemin gündelik hayatına ilişkin kültürel bilgilerdir.",
       "source_locator": "basılı s.125-127 / PDF s.126-128 — soru 1",
       "answer_sections": {
-        "Öğüt ve Bilgelik — ögüt": "“Benden öğüt al...” örneği, bilgi ve terbiyenin kuşaktan kuşağa aktarılmasına verilen önemi gösterir.",
-        "İyilik ve Ağırlama — eḍgü": "Yakınlara iyilik etme, onları ağırlama ve alınan hediyeye karşılık verme öğütlenir.",
-        "Borç–Alacak — alım": "Alacaklı ve borçlu arasındaki ilişki bir atasözüyle somutlaştırılır; ekonomik ilişkilerin dilde atasözlerine yansıdığı görülür.",
-        "Açlık ve Tokluk — āç": "Aç ve tok kişinin davranışını karşılaştıran atasözü, gündelik hayat deneyiminin kalıplaşmış söze dönüşmesine örnektir.",
-        "Sağlık ve Tedbir — aŋduz": "Andız otunun at tedavisinde kullanılması ve yolculuğa çıkana tedbirli olma öğüdü, dönemin pratik bilgisini gösterir.",
-        "Zaman ve İnanç — öḍ / uçma.k": "Zamanın geçişi, insanın faniliği ve “uçmak” kelimesinin cennet anlamı, dönemin düşünce ve inanç dünyasına ilişkin ipuçları taşır."
+        "Metinden çıkan ortak değerler": [
+          "Öğüt alma, bilgelik ve terbiye — ögüt: “Ey oğlum, benden öğüt al ve terbiyeye talip ol...”",
+          "İyilik, yakınları ağırlama ve karşılık verme — eḍgü: “Yakınlarına iyilik et ve onları ağırla. Hediye kabul ettiğin zaman güzel bir şeyle karşılığını hazırla.”",
+          "Tedbirli olma — aŋduz: Atasözünün “Seyahate çıkana, tedbirli olsun diye” söylendiği belirtilir.",
+          "Dünyanın geçiciliği bilinci — öḍ: “Zaman geçer, insan onu hissetmez ve insan oğlu ebedî olarak yaşamaz.”",
+          "İnanç — uçma.k “cennet”; ajun “dünya”, ol ajun “ahiret” karşılıkları."
+        ],
+        "Gündelik hayata ilişkin kültürel bilgiler": [
+          "alım: Alacaklı ile borçlu arasındaki ilişkiyi anlatan atasözü.",
+          "āç: Aç ve tok insanın tutumunu karşılaştıran atasözü.",
+          "erük: Şeftali, kayısı ve siyah eriğin adlandırılışı.",
+          "aŋduz: Andız otunun karnı ağrıyan atın tedavisinde kullanılması."
+        ]
       },
-      "guidance": "Her sözlük maddesinden geniş bir ahlak sistemi çıkarmayın. Önce maddede açıkça verilen anlam, atasözü veya açıklamayı gösterin; kültürel yorumu bununla sınırlı tutun."
+      "guidance": "Her sözlük maddesinden geniş bir ahlak sistemi çıkarmayın. Önce maddede açıkça verilen anlam, atasözü veya açıklamayı gösterin; kültürel yorumu bununla sınırlı tutun.",
+      "explanation": "Soru “kültürel değerler” der. Değer (iyilik, misafirperverlik, tedbir vb.) ile kültürel hayat alanı (beslenme, ekonomik ilişki, halk hekimliği) ayrımı gösterilmelidir. “Kültür unsuru” geniş anlamıyla cevap veren öğrencinin cevabı yanlış sayılmaz; bu ayrım üzerine konuşulur."
     },
     {
       "question_id": "T2-P127-Q02",

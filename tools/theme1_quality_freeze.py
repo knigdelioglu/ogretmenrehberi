@@ -306,7 +306,7 @@ def main() -> int:
     ]
     if lesson_order != expected_order:
         add(errors, "LESSON_ORDER", lesson_order)
-    if len(lessons) != 7 or lp_steps != 180:
+    if len(lessons) != 7 or lp_steps != 183:
         add(errors, "LESSON_PLAYER_TOTALS", {"lessons": len(lessons), "steps": lp_steps})
     if set(lp_source_ids) != set(source_ids):
         add(errors, "LESSON_PLAYER_SOURCE_PARITY", {

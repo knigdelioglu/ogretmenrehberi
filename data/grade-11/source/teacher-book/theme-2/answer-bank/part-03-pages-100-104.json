@@ -33,16 +33,18 @@
       "printed_page": 100,
       "question_no": "2",
       "prompt_summary": "Eşinin Çordon'un kararına tepki göstermemesinin nedeni",
-      "answer": "Nazifkan, hem Çordon'un kararından dönmeyeceğini anlar hem de derin kederine saygı göstererek susar.",
+      "answer": "Nazifkan, Çordon'u kararından caydırmaya çalışmanın yararsız olduğunu düşünür. Ayrıca Sultan'ın öz annesi olmadığı için itiraz ederse kocasının kendisine “Öz anası olsaydın beni caydırmaya çalışmazdın!” diyebileceğinden çekinir; böyle bir söz duymak istemediği için susar.",
       "evidence_quotes": [
-        "Çünkü o zaman ihtiyar kocası ona 'Öz anası olsaydın beni caydırmaya çalışmazdın!' diyebilirdi."
+        "Onu kararından caydırmaya çalışmanın yararı yoktu.",
+        "Çünkü o zaman ihtiyar kocası ona “Öz anası olsaydın beni caydırmaya çalışmazdın!” diyebilirdi."
       ],
       "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 2",
       "answer_sections": {
-        "Çordon'un kararlılığı": "Sözlerini sakin, kararlı ve içten söyleyişinden onu vazgeçirmenin imkânsız olduğunu anlar.",
-        "Öz annesi olmama durumu": "Sultan'ın öz annesi olmadığı için müdahale ederse Çordon'un “Öz anası olsaydın beni caydırmaya çalışmazdın!” diyeceğinden çekinir.",
-        "Susma nedeni": "Bu ağır sözü duymamak ve eşinin kederine saygı göstermek için tepki vermez."
-      }
+        "Kararın değişmeyeceğini görmesi": "Çordon sözlerini “sakin, kararlı, inançlı bir sesle” söylediği için Nazifkan onu caydırmaya çalışmanın yararsız olduğunu anlar.",
+        "Öz annesi olmaması": "Sultan'ın öz annesi olmadığından itirazının “Öz anası olsaydın beni caydırmaya çalışmazdın!” sözüyle karşılanmasından çekinir.",
+        "Sonuç": "Söylemek istediklerini içinde tutar; bu durum s.107'deki soru 1b'de iç çatışma olarak ayrıca incelenir."
+      },
+      "guidance": "Metnin açıkça verdiği iki nedeni ayırın: caydırmanın yararsızlığı ve öz anne olmama çekincesi. “Kederine saygı gösterdiği için sustu” gibi açıklamalar metinde geçmez; önerilirse metinsel neden değil, kişisel yorum olarak değerlendirin."
     },
     {
       "question_id": "T2-P100-Q03",
@@ -95,13 +97,13 @@
       "printed_page": 100,
       "question_no": "6",
       "prompt_summary": "Kızlarının Çordon'u suçlamasını değerlendirme",
-      "answer": "Kızların tepkisi anlaşılabilir; ancak Çordon'un tutumu da Sultan'ın gönüllü kararına saygı duyma düşüncesine dayanır.",
-      "guidance": "Kızlara veya babaya katılabilirsiniz. Görüşünüzü ailenin can güvenliği ile bireyin özgür iradesi ve görev anlayışı arasındaki değerleri dikkate alarak gerekçelendirin.",
+      "answer": "Kızların tepkisi, çok genç kardeşlerini ölüm tehlikesinden koruma isteğinden doğduğu için anlaşılabilir. Çordon ise Sultan'ın gönüllü verdiği karara müdahale etmeyi doğru bulmaz. Öğrenci iki taraftan birine gerekçesiyle katılabilir.",
+      "guidance": "Kızlara veya babaya katılabilirsiniz. Görüşünüzü, kardeşi koruma isteği ile kişinin kendi kararına saygı arasındaki gerilimi dikkate alarak metinden gerekçelendirin.",
       "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 6",
       "answer_sections": {
-        "Kızların bakışı": "Sultan'ın gençliğini, annelerinin hastalığını ve babalarının demirci nüfuzuyla onu cepheden kurtarabileceğini düşünürler.",
-        "Çordon'un bakışı": "Oğlunun gönüllü vatan savunması kararına müdahale etmeyi onun şahsiyetine ve erkeklik gururuna zarar vermek sayar.",
-        "Çatışmanın kaynağı": "İki taraf da aile bağını önemser; ayrılık, sevgi ve sorumluluğun ne gerektirdiği konusundaki farklılıktan doğar."
+        "Kızların bakışı": "Sultan'ın çok genç olduğunu, askerlik yaşının gelmediğini ve annelerinin hasta olduğunu öne sürerek babalarının yetkili subaya durumu anlatıp onu konvoydan ayırtmasını isterler.",
+        "Çordon'un bakışı": "Sultan'ın gönüllü yazıldığını öğrendikten sonra onun kararına müdahale etmeyi “huyuna suyuna” aykırı ve oğluna “kötülük” sayar.",
+        "Çatışmanın kaynağı": "İki taraf da Sultan'ı sever; ayrılık, onu korumanın ne anlama geldiği konusundadır."
       }
     },
     {
@@ -110,11 +112,16 @@
       "printed_page": 100,
       "question_no": "7",
       "prompt_summary": "Çordon'un kızlarının suçlamalarına rağmen pişmanlık duymamasının nedeni",
-      "answer": "Çordon, Sultan'ın cepheye gitme kararını kendi iradesiyle ve mertçe aldığını bilmektedir. Araya girip oğlunu askerlikten muaf tutturmayı ona iyilik değil, onun onuruna ve erkekliğine yapılmış bir kötülük ('Oğluma kötülük edemem!') saymıştır. Evladının vatan borcu karşısındaki kararlılığına duyduğu derin saygı, kızlarının suçlamaları karşısında vicdanen pişmanlık duymasını engellemiştir.",
+      "answer": "Çordon, Sultan'ın cepheye kendi isteğiyle gönüllü gittiğini öğrenince araya girip onu konvoydan ayırtmayı kendi karakterine aykırı ve oğluna yapılmış bir “kötülük” olarak görür. Bu yüzden kızlarının ağır suçlamalarına rağmen verdiği kararı doğru bulur ve pişmanlık duymaz.",
       "evidence_quotes": [
-        "Oğluma kötülük edemem!"
+        "Hayır, dedi, ben böyle bir şey yapamam, böyle davranmak benim huyuma suyuma uymaz! Oğluma kötülük edemem!"
       ],
-      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 7"
+      "source_locator": "basılı s.100 / PDF s.101 — Metni Anlayalım soru 7",
+      "guidance": "Soru yorum istediği için “oğlunun kararına saygı” veya “mertlik anlayışı” gibi açıklamalar kabul edilebilir; ancak bunları metnin açık gerekçesinden (“huyuma suyuma uymaz”, “Oğluma kötülük edemem!”) sonra ve yorum olarak kurun. Metinde “vatan borcu” ifadesi geçmez; Çordon kararını onur veya erkeklik gerekçesiyle de açıklamaz.",
+      "answer_sections": {
+        "Metindeki açık gerekçe": "Oğlunun kararına müdahale etmek “huyuna suyuna uymaz”; bunu oğluna iyilik değil, kötülük sayar.",
+        "Metinden desteklenebilecek yorum": "Vedada Sultan'ın “Baba, beni bağışla gönüllü olarak gidiyorum...” demesine Çordon'un “Biliyorum oğlum, biliyorum.” diye karşılık vermesi, oğlunun kararını anlayıp kabul ettiğini düşündürür. “Mert bir erkek olarak kal!” öğüdü de mertliği önemseyen bir değer anlayışına işaret eder."
+      }
     },
     {
       "question_id": "T2-P100-Q08",
@@ -160,29 +167,31 @@
       "printed_page": 101,
       "question_no": "10",
       "prompt_summary": "Metnin açık/örtük iletileri, zihniyeti, üslubu ve anlatım özellikleri",
-      "answer": "Aşağıdaki tablo, metinden desteklenebilen tespitler ve örnek yorumlar sunar; özellikle örtük iletiler için kanıta dayalı başka yorumlara da yer verilebilir.",
-      "guidance": "Açık iletiyi metindeki doğrudan olay ve sözlerden ayırın. Örtük bir ileti öneriyorsanız yorumunuzu destekleyen olay, söz veya davranışı gösterin; gerekçeli farklı yorumlara da yer verin.",
+      "answer": "Aşağıdaki tablo metinden gösterilebilen tespitleri sunar; özellikle örtük iletilerde kanıta dayalı başka yorumlar da kabul edilebilir.",
+      "guidance": "Açık ileti, metinde doğrudan dile getirilen düşünce, öğüt veya yargıdır; “Sultan gönüllü gitti”, “Çordon yola çıktı” gibi olay bilgileri ileti değildir. Örtük iletiyi olaylardan çıkarın ve dayandığınız söz ya da davranışı gösterin. Zihniyet için “Sovyet toplumu”, “bozkır kültürü” gibi metinde geçmeyen etiketleri kanıtsız kullanmayın.",
       "source_locator": "basılı s.101 / PDF s.102 — Metni Anlayalım soru 10",
       "answer_sections": {
         "anlatim_bicimleri": [
-          "Öyküleme: Çordon'un yolculuğu, istasyondaki asker sevki ve vedalaşma olay örgüsüyle aktarılır.",
-          "Betimleme: Yaşlı Çordon'un fiziki görünüşü, demirci atölyesi, tren istasyonu ve bozkır yolu görselleştirilir."
+          "Öyküleme: Çordon'un yolculuğa çıkışı, istasyondaki olaylar ve baba-oğulun vedalaşması olay akışı içinde anlatılır.",
+          "Betimleme: Çordon'un “tatlı bakışlı, yanık ve buruşuk yüzlü, ak sakallı” görünüşü, istasyon önündeki kalabalık ve Sultan'ın henüz çocuksu görünüşü göz önünde canlandırılır."
         ],
         "anlatim_teknikleri": [
-          "Geriye Dönüş (Flashback): Çordon'un at sırtındayken 1941 Ekim ayındaki demirci dükkânına ve istasyona dönmesi.",
-          "İç Çözümleme / İç Konuşma: Çordon ve Nazifkan'ın sessiz kaldıkları anlarda zihinlerinden geçen duygu ve niyetlerin aktarılması.",
-          "Diyalog: Çordon ile Sultan, Çordon ile Nazifkan arasındaki doğrudan konuşmalar."
+          "Geriye dönüş: Yolculuk sırasında Çordon'un Ekim 1941'deki veda gününü hatırlamasıyla anlatı geçmişe döner, sonunda yeniden yolculuk anına gelinir.",
+          "Diyalog: Çordon–Nazifkan, Çordon–kızları ve Çordon–Sultan arasındaki konuşmalar doğrudan aktarılır.",
+          "İç çözümleme: Anlatıcı, Nazifkan'ın söyleyemediklerini ve çekincesini, Çordon'un özlemini ve içindeki “yangın”ı kişilerin iç dünyasına girerek aktarır.",
+          "Hayalî konuşma: Çordon'un yolda oğluyla buluşup konuşacağını hayal ettiği bölümde zihnindeki konuşma tırnak içinde verilir. Bu bölüm iç konuşmaya (iç monolog) yakın bir kullanım olarak tartışılabilir; iç çözümlemeyle aynı teknik değildir."
         ],
         "acik_iletiler": [
-          "Sultan vatan savunması için kendi isteğiyle gönüllü olarak cepheye gitmiştir.",
-          "Çordon yirmi yıl sonra oğlunun hatırasını aramak için yola çıkmıştır."
+          "“Nerede olursan ol, erkek ol, mert bir erkek olarak kal!” — Her koşulda mert ve dürüst durmak öğütlenir.",
+          "“Onlara kızma, onları unutma, yaz, anlıyor musun? Anneni de unutma...” — Kırgınlığı bırakmak ve aile bağlarını koparmamak öğütlenir."
         ],
         "ortuk_iletiler": [
           "Örnek yorum: Çordon'un yıllar sonra oğlunun yaşadığı yerlere gitmek istemesi, özlem ve hatıranın uzun süre etkisini koruyabileceğini düşündürür.",
-          "Örnek yorum: Savaşın ardından aile bireylerinin yaşamında süren izler, savaşın etkisinin cephedeki olaylarla sınırlı kalmadığı şeklinde okunabilir."
+          "Örnek yorum: Savaşın ardından aile bireylerinin yaşamında süren izler, savaşın etkisinin cephedeki olaylarla sınırlı kalmadığı şeklinde okunabilir.",
+          "Örnek yorum: Kızlarla babanın aynı olaya farklı tepki vermesi, sevginin farklı biçimlerde ifade edilebileceğini düşündürür."
         ],
-        "zihniyet": "II. Dünya Savaşı döneminde Sovyet-Kırgız toplumunun vatan savunması, görev ahlakı, bozkır kültürü ve geleneksel aile değerleri.",
-        "uslup": "Sade, içten, psikolojik derinliği olan lirik ve gerçekçi bir anlatım dili."
+        "zihniyet": "Savaş yıllarının (Ekim 1941, cepheye asker sevki) yaşandığı kırsal bir çevrede aile bağları, baba sevgisi, fedakârlık, mertlik ve verilen karara bağlılık gibi değerlerin öne çıktığı bir dünya görüşü yansıtılır. Kitaptaki biyografi, Aytmatov'un Kırgızistan'da doğduğunu ve eserlerinde Kırgız kültürü ile savaş döneminin acılarını işlediğini belirtir; bu bilgi zihniyetle ilişkilendirilebilir.",
+        "uslup": "Sade ve akıcı; duygusal yoğunluğu yüksek, betimlemelerle kişilerin iç dünyasına yönelen bir anlatım. “birer büyük balık gibi”, “önüne geçilmez bir yangın gibi” benzetmeleri duyguyu somutlaştırır."
       }
     },
     {

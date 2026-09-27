@@ -276,7 +276,7 @@
       "prompt": "Çalışma Kâğıdı — Anlatım biçimleri ve düşünceyi geliştirme yollarını ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Açıklama/öyküleme metnin nasıl anlatıldığına; örnekleme/karşılaştırma düşüncenin nasıl desteklendiğine ilişkindir.",
+        "lead": "Açıklama/öyküleme metnin nasıl anlatıldığına; örnekleme, karşılaştırma ve sayısal veriler düşüncenin nasıl desteklendiğine ilişkindir.",
         "sections": [
           {
             "title": "Anlatım biçimleri",
@@ -284,7 +284,7 @@
           },
           {
             "title": "Düşünceyi geliştirme",
-            "body": "‘Küfe’/‘Hasta’ eser örnekleri; gençlik ve olgunluk şiirlerinin karşılaştırılması."
+            "body": "‘Küfe’/‘Hasta’ eser örnekleri; gençlik ve olgunluk şiirlerinin karşılaştırılması; tarihler, 500’er lira ödül gibi sayısal veriler."
           }
         ]
       }
@@ -297,15 +297,15 @@
       "prompt": "Çalışma Kâğıdı — Açık ve örtük iletiye ayrı örnekler veriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Açık ileti biyografide söylenen bilgi; örtük ileti bilgiden gerekçeli çıkarılan düşüncedir.",
+        "lead": "Açık ileti metinde doğrudan söylenen yargıdır; tarih ve olgular ileti değil bilgidir. Örtük ileti, bilgilerden gerekçeyle çıkarılan düşüncedir.",
         "sections": [
           {
             "title": "Açık",
-            "body": "Akif'in 1893'te okulunu bitirdiği, İstiklâl Marşı'nın 1921'de kabul edildiği."
+            "body": "“Toplum meselelerini İslâmî bir duyarlıkla ele aldığı şiirleri dolayısıyla Türk şiirinde yeni bir ses” olduğu; kalemini millet ve memleket meselelerine adadığı ve sanattan ödün vermediği."
           },
           {
             "title": "Örtük",
-            "body": "Eğitim, yayın çevresi ve dönem olayları, bir sanatçının üretimini biçimlendirebilir."
+            "body": "Eğitim, yayın çevresi ve dönem olayları bir sanatçının üretimini biçimlendirir; ödülü reddetmesi sanatı millete hizmet olarak gördüğünü düşündürür."
           }
         ]
       }

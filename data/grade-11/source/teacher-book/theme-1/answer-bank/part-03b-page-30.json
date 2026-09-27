@@ -9,20 +9,25 @@
       "entry_type": "question_answer",
       "printed_page": 30,
       "prompt_summary": "Metindeki açık ve örtük iletiler",
-      "answer": "Açık ileti, metinde doğrudan söylenen veya olay akışında açıkça görülen düşüncedir; örtük ileti ise metin ayrıntılarından çıkarılan yorumdur. Karagöz’ün yazıcılık sırasında okuma-yazma bilgisiyle ilgili sözleri ve yanlış anlamalar, açık gözlemler için; dil farklılıklarının anlaşmayı nasıl etkilediği ya da bir işi bilmeden üstlenmenin sonucu gibi yorumlar örtük ileti önerileri için dayanak olabilir. Her çıkarım ilgili söz veya olayla doğrulanmalıdır.",
+      "answer": "Açık iletiler metinde doğrudan söylenen ya da olay akışında açıkça görülen düşüncelerdir; örtük iletiler ise bu ayrıntılardan çıkarılan yorumlardır. Metinde Karagöz'ün bilmediği bir işe girişmesi ve dil farkından doğan yanlış anlamalar açıkça görülür; bunlardan iletişim ve yeterlilikle ilgili örtük iletiler çıkarılabilir.",
       "source_locator": "basılı s.30 / PDF s.31 — Metni Anlayalım",
       "guidance": "Her iletiyi “metinde doğrudan görülen/söylenen” ve “bu ayrıntıdan çıkarılan yorum” olarak ayırmasını isteyin. Örtük ileti için öğrenciden belirli bir replik ya da olay göstermesini, sonra çıkarımının bu kanıtı aşıp aşmadığını açıklamasını isteyin; genel bir ahlak dersi dayatmayın.",
       "answer_sections": {
-        "Metinde doğrudan görülen örnekler": [
-          "Hacivat’ın “hutûr etti” sözünün Karagöz tarafından “tarçın mı gitti” biçiminde anlaşılması.",
-          "“mâ-nahnü-fîhimize” sözünün “mahallede evimize” biçiminde yanlış anlaşılması.",
-          "II. Hanım’ın “Gonce-dehânım” hitabının “Pencerede hanım” biçimine çekilmesi."
+        "Açık İletiler": [
+          "Karagöz, “Ben rakam bilmem, okumam yazmam yok.” diyerek yazıcılık için gereken bilgiye sahip olmadığını açıkça söyler; buna rağmen yazıcılık işine girer.",
+          "Hacivat'ın ve müşterilerin ağır sözleri Karagöz tarafından ses benzerliğiyle yanlış anlaşılır (“hutûr etti” → “tarçın mı gitti”, “Gonce-dehânım” → “Pencerede hanım”); bu yanlış anlamalar konuşmaları çıkmaza sokar.",
+          "Yazıcılık denemesi sonunda Karagöz dükkândan vazgeçer."
         ],
-        "Bu örneklerden çıkarılabilecek örtük iletiler": [
-          "Aynı söz varlığına ve bağlama sahip olmamak iletişimde yanlış anlamayı artırabilir.",
+        "Örtük İletiler": [
+          "Bilgi ve beceri gerektiren bir işi o bilgiye sahip olmadan üstlenmek sorun yaratır.",
+          "Aynı söz varlığına ve dil düzeyine sahip olmamak iletişimde yanlış anlamayı artırabilir.",
           "Anlaşılmayan bir ifadeyi açıklığa kavuşturmadan tepki vermek iletişim çatışmasına yol açabilir."
         ]
-      }
+      },
+      "evidence_quotes": [
+        "Ben rakam bilmem, okumam yazmam yok.",
+        "Hacivat, ben dükkândan vazgeçtim."
+      ]
     },
     {
       "question_id": "T1-P30-Q05",
