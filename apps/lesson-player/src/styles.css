@@ -1529,6 +1529,330 @@ button:focus-visible {
   line-height: 1.35;
 }
 
+/* Isolated, fixed-size viewport used only to capture the shared StepView. */
+.pptx-export-render-frame {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: -10000px;
+  width: 1920px;
+  height: 1080px;
+  border: 0;
+  pointer-events: none;
+}
+
+.export-slide-capture {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: #f3efe5;
+}
+
+.export-render-app {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+#export-slide-capture,
+#export-slide-capture * {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+.pptx-export-dialog {
+  width: min(760px, calc(100vw - 32px));
+  max-width: 760px;
+  max-height: min(92vh, 900px);
+  padding: 0;
+  border: 1px solid #c8c5ba;
+  border-radius: 14px;
+  color: var(--ink);
+  background: #fffdf8;
+  box-shadow: 0 24px 72px rgb(20 28 24 / 0.34);
+  overflow: hidden;
+}
+
+.pptx-export-dialog::backdrop {
+  background: rgb(14 22 18 / 0.56);
+}
+
+.pptx-export-dialog[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+.pptx-export-dialog__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 24px 16px;
+  color: #fff;
+  background: #24332e;
+}
+
+.pptx-export-dialog__header h2 {
+  margin: 2px 0 5px;
+  font-size: 1.35rem;
+}
+
+.pptx-export-dialog__header p:last-child {
+  margin: 0;
+  color: rgb(255 255 255 / 0.76);
+  font-size: 0.88rem;
+}
+
+.pptx-export-dialog__eyebrow {
+  margin: 0;
+  color: #d7b993;
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.pptx-export-dialog__close {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgb(255 255 255 / 0.25);
+  border-radius: 8px;
+  color: #fff;
+  background: rgb(255 255 255 / 0.08);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.pptx-export-dialog__body {
+  min-height: 0;
+  padding: 18px 24px;
+  overflow: auto;
+  display: grid;
+  align-content: start;
+  gap: 15px;
+}
+
+.pptx-export-fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.pptx-export-fieldset legend,
+.pptx-export-selected legend,
+.pptx-export-quality > span {
+  margin-bottom: 7px;
+  color: #38453f;
+  font-size: 0.88rem;
+  font-weight: 780;
+}
+
+.pptx-export-choice {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+  padding: 9px 10px;
+  border: 1px solid #e0ddd3;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pptx-export-choice:has(input:checked) {
+  border-color: #7da193;
+  background: #f1f6f3;
+}
+
+.pptx-export-choice input,
+.pptx-export-step input {
+  margin: 2px 0 0;
+  accent-color: var(--accent);
+}
+
+.pptx-export-choice span {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.pptx-export-choice strong {
+  color: #29332e;
+  font-size: 0.87rem;
+}
+
+.pptx-export-choice small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.35;
+}
+
+.pptx-export-selected {
+  min-width: 0;
+  margin: -5px 0 0 28px;
+  padding: 10px 0 0;
+  border: 0;
+  border-top: 1px solid #e4e1d7;
+}
+
+.pptx-export-selected__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 2px 0 8px;
+}
+
+.pptx-export-selected__actions button {
+  padding: 5px 8px;
+  border: 1px solid #cbd3ce;
+  border-radius: 6px;
+  color: #315e54;
+  background: #f6f8f6;
+  font-size: 0.77rem;
+  cursor: pointer;
+}
+
+.pptx-export-selected__list {
+  max-height: 205px;
+  overflow: auto;
+  border: 1px solid #e1ded5;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.pptx-export-step {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 16px minmax(54px, auto) minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+  padding: 7px 9px;
+  border-bottom: 1px solid #efede7;
+  cursor: pointer;
+}
+
+.pptx-export-step:last-child {
+  border-bottom: 0;
+}
+
+.pptx-export-step__page {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 760;
+  white-space: nowrap;
+}
+
+.pptx-export-step__label {
+  overflow: hidden;
+  color: #454d48;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+}
+
+.pptx-export-quality {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 290px);
+  align-items: center;
+  gap: 14px;
+}
+
+.pptx-export-quality select {
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid #c9cfc9;
+  border-radius: 7px;
+  color: #29332e;
+  background: #fff;
+  font: inherit;
+}
+
+.pptx-export-estimate,
+.pptx-export-error,
+.pptx-export-status {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.pptx-export-estimate {
+  padding: 9px 11px;
+  border-radius: 7px;
+  color: #315e54;
+  background: #e8f0eb;
+  font-weight: 740;
+}
+
+.pptx-export-error {
+  padding: 10px 11px;
+  border-left: 3px solid #a54232;
+  color: #772c22;
+  background: #fbefed;
+  overflow-wrap: anywhere;
+}
+
+.pptx-export-status {
+  color: #4e5e55;
+}
+
+.pptx-export-dialog__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  padding: 14px 24px 18px;
+  border-top: 1px solid #e6e3da;
+  background: #faf8f2;
+}
+
+.pptx-export-dialog__footer button {
+  min-height: 38px;
+  padding: 8px 13px;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 720;
+  cursor: pointer;
+}
+
+.pptx-export-secondary {
+  border: 1px solid #c9cfc9;
+  color: #39443e;
+  background: #fff;
+}
+
+.pptx-export-primary {
+  border: 1px solid #315e54;
+  color: #fff;
+  background: #315e54;
+}
+
+.pptx-export-primary:disabled {
+  border-color: #aab9b1;
+  background: #aab9b1;
+  cursor: not-allowed;
+}
+
+@media (max-width: 620px) {
+  .pptx-export-dialog__header,
+  .pptx-export-dialog__body,
+  .pptx-export-dialog__footer {
+    padding-inline: 15px;
+  }
+
+  .pptx-export-quality {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .pptx-export-selected {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .stage-card.vocabulary-stage.density-compact .vocabulary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

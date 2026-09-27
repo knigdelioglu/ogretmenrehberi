@@ -118,6 +118,19 @@ Ayrı **Öğrenci ekranı** penceresinde kalem/ampul kontrol ikonları gösteril
 
 Üst menüde **Öğrenci ekranını aç** seçeneği ayrıca ikinci bir tarayıcı penceresi açar. Öğretmen görünümündeki adım, reveal ve kelime-anlam değişiklikleri bu pencereye anlık olarak senkronize edilir. İkinci ekran öğretmen kontrollerini göstermez. Öğrenci penceresi ders değişiminde kapanmadan yeni dersi takip eder; öğretmene özel notlar bu pencerede gösterilmez.
 
+## PowerPoint dışa aktarma
+
+Üst menüde **Dışa aktar** akışı PowerPoint sunumu üretir. Her adım, bu uygulamanın aynı `StepView` bileşeniyle görünmeyen 1920×1080 render yüzeyinde çizilir ve yüksek kalite varsayılanında 3840×2160 JPEG olarak yakalanıp 13.333×7.5 inç slayta tam sayfa yerleştirilir. Sunum metin kutularından değil web görünümünün görsellerinden oluşur.
+
+- Kapsam: mevcut ders, sayfa numarasıyla birlikte seçilen adımlar veya temanın tüm dersleri.
+- Görünüm: öğrenci ya da öğretmen. Öğrenci dışa aktarımının planı öğretmen yönlendirmesi, açıklaması ve notunu kaldırır; öğretmen görünümü bunları içerir.
+- Reveal: yalnız son görünüm ya da başlangıçtan itibaren her açılma aşamasını ayrı slayt yapma. PowerPoint animasyonu eklenmez.
+- Kalite: yüksek 3840×2160 (varsayılan) ya da standart 1920×1080.
+- Her slaydın konuşmacı notlarında `lesson_id`, `step_id`, basılı sayfa, görünüm ve reveal aşaması bulunur.
+- Render alanı 16:9 yüksekliğine sığmayan içeriği kırpmadan dışa aktarma hatası olarak bildirir; hata ilgili ders adımını ve taşma ölçüsünü içerir.
+
+Tarayıcı testi için `npm run test:pptx-export` kullanılır. Test yerel Vite preview ve Chromium/Chrome başlatır; farklı kurulumlarda `CHROME` değişkeni yürütülebilir dosya yolunu belirler. Test; öğrenci/öğretmen görünürlüğünü, comparison/tablo benzeri answer section ve sözlük yerleşiminin görsel baseline'ını, taşma hatasını ve gerçek bir ders üzerinden PPTX slayt sırası/metaverisini doğrular.
+
 ## Düzenleme modu
 
 `D` veya üst menüde **Düzenle** ile açılır.

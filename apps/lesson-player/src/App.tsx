@@ -12,6 +12,15 @@ import { TeacherGuidePanel } from "./components/TeacherGuidePanel";
 import { LessonOutline } from "./components/LessonOutline";
 import { LessonFooter } from "./components/LessonFooter";
 import { LessonToolbar } from "./components/LessonToolbar";
+import { ExportDialog } from "./export/ExportDialog";
+import { capturePlannedSlide } from "./export/capture";
+import { planExportSlides } from "./export/plan.js";
+import type {
+  ExportConfiguration,
+  ExportLesson,
+  ExportProgress,
+  PlannedSlide
+} from "./export/types";
 import {
   buildExportedStep,
   canonicalLessonSignature,
@@ -213,6 +222,7 @@ export default function App() {
   );
   const [editorOpen, setEditorOpen] = useState(false);
   const [teacherGuideOpen, setTeacherGuideOpen] = useState(false);
+  const [pptxExportOpen, setPptxExportOpen] = useState(false);
   const [overrides, setOverrides] = useState<StepOverrides>(overrideRestore.overrides);
   const [stepOrder, setStepOrder] = useState<string[]>(
     () => displayOnly ? lesson.steps.map((item) => item.id) : orderRestore.order
@@ -240,6 +250,13 @@ export default function App() {
     [overrides, stepOrder]
   );
   const step = effectiveSteps[index];
+  const exportLessons = useMemo<ExportLesson[]>(
+    () => lessonCatalog.map((item) =>
+      item.lesson_id === lesson.lesson_id ? { ...item, steps: effectiveSteps } : item
+    ),
+    [effectiveSteps]
+  );
+  const exportFrameRef = useRef<HTMLIFrameElement>(null);
 
   projectionStateRef.current = {
     lessonId: lesson.lesson_id,
@@ -463,6 +480,29 @@ export default function App() {
     URL.revokeObjectURL(href);
   }, [effectiveSteps, overrides]);
 
+  const exportPowerPoint = useCallback(
+    async (
+      configuration: ExportConfiguration,
+      onProgress: (progress: ExportProgress) => void,
+      signal: AbortSignal
+    ) => {
+      const slides = planExportSlides(exportLessons, configuration);
+      const { createAndDownloadPresentation } = await import("./export/service");
+      return createAndDownloadPresentation(
+        slides,
+        configuration,
+        (plannedSlide: PlannedSlide, pixelRatio: number, renderSignal: AbortSignal) => {
+          const frame = exportFrameRef.current;
+          if (!frame) throw new Error("İzole dışa aktarma yüzeyi oluşturulamadı.");
+          return capturePlannedSlide(frame, plannedSlide, pixelRatio, renderSignal);
+        },
+        onProgress,
+        signal
+      );
+    },
+    [exportLessons]
+  );
+
   useEffect(() => {
     if (displayOnly) return;
     window.localStorage.setItem(progressKey, String(index));
@@ -569,6 +609,13 @@ export default function App() {
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (
+        event.target instanceof HTMLElement &&
+        event.target.closest("dialog[open]")
+      ) {
+        return;
+      }
+
+      if (
         event.target instanceof HTMLInputElement ||
         event.target instanceof HTMLTextAreaElement ||
         event.target instanceof HTMLSelectElement
@@ -649,6 +696,7 @@ export default function App() {
         onOpenStudentDisplay={openProjectionWindow}
         onPresentationToggle={togglePresentationMode}
         onFullscreen={() => void toggleFullscreen()}
+        onExportPptx={() => setPptxExportOpen(true)}
       />
 
       {teacherGuideOpen && !presentationMode && !displayOnly ? (
@@ -732,6 +780,29 @@ export default function App() {
           onExport={exportLessonFlow}
           onClose={() => setEditorOpen(false)}
         />
+      ) : null}
+
+      {!displayOnly ? (
+        <>
+          <ExportDialog
+            open={pptxExportOpen}
+            lesson={exportLessons.find((item) => item.lesson_id === lesson.lesson_id)!}
+            lessons={exportLessons}
+            currentStep={step}
+            onClose={() => setPptxExportOpen(false)}
+            onExport={exportPowerPoint}
+          />
+          {pptxExportOpen ? (
+            <iframe
+              ref={exportFrameRef}
+              className="pptx-export-render-frame"
+              title="PowerPoint dışa aktarma render yüzeyi"
+              src={`${import.meta.env.BASE_URL}?export-render=1`}
+              aria-hidden="true"
+              tabIndex={-1}
+            />
+          ) : null}
+        </>
       ) : null}
     </div>
   );

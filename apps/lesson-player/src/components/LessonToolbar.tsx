@@ -17,6 +17,7 @@ interface LessonToolbarProps {
   onOpenStudentDisplay: () => void;
   onPresentationToggle: () => void;
   onFullscreen: () => void;
+  onExportPptx: () => void;
 }
 
 export function LessonToolbar({
@@ -35,7 +36,8 @@ export function LessonToolbar({
   onTeacherGuideToggle,
   onOpenStudentDisplay,
   onPresentationToggle,
-  onFullscreen
+  onFullscreen,
+  onExportPptx
 }: LessonToolbarProps) {
   const lessonCatalog = lessons;
   return (
@@ -96,6 +98,11 @@ export function LessonToolbar({
           <button type="button" onClick={onEditorToggle}>
             {editorOpen ? "Düzenlemeyi kapat" : "Düzenle"}
           </button>
+          {!displayOnly ? (
+            <button id="pptx-export-trigger" type="button" onClick={onExportPptx}>
+              Dışa aktar
+            </button>
+          ) : null}
           <button type="button" onClick={onOpenStudentDisplay}>
             Öğrenci ekranı
           </button>
