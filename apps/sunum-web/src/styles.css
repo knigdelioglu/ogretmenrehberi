@@ -1,5 +1,6 @@
 /* ============ Renkler ============ */
 :root {
+  --canvas-scale: 1;
   --bg: #1a1d21;
   --paper: #f5f2ea;
   --paper-2: #ebe6d9;
@@ -254,7 +255,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  font-size: 26px;
+  font-size: calc(26px / var(--canvas-scale));
   color: var(--ink-3);
   flex: none;
   padding-bottom: 22px;
@@ -269,7 +270,7 @@ button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
-  font-size: 24px;
+  font-size: calc(24px / var(--canvas-scale));
 }
 
 .tag__no {
@@ -279,13 +280,12 @@ button {
   background: var(--accent);
   border-radius: 999px;
   padding: 4px 18px;
-  font-size: 24px;
+  font-size: calc(24px / var(--canvas-scale));
 }
 
 .where {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: anywhere;
   max-width: 60%;
 }
 
@@ -309,12 +309,19 @@ button {
 
 .slide__body.is-overflowing {
   overflow-y: auto;
-  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 40px), transparent);
-  mask-image: linear-gradient(to bottom, #000 calc(100% - 40px), transparent);
+  scrollbar-color: var(--ink-3) transparent;
+  scrollbar-width: thin;
 }
 
 .slide__body::-webkit-scrollbar {
-  display: none;
+  width: 10px;
+}
+
+.slide__body::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: var(--ink-3);
+  background-clip: content-box;
 }
 
 .body-grid {
@@ -358,7 +365,7 @@ button {
 .lead {
   margin: 0;
   color: var(--ink-2);
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 /* Katman panelleri */
@@ -374,7 +381,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.45em;
-  font-size: 0.6em;
+  font-size: 1em;
   font-weight: 750;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -460,14 +467,14 @@ button {
   background: var(--card);
   border-radius: 0.35em;
   padding: 0.55em 0.7em 0.6em;
-  font-size: 0.86em;
+  font-size: 1em;
   box-shadow: var(--shadow);
   min-width: 0;
 }
 
 .sec h3 {
   margin: 0 0 0.25em;
-  font-size: 0.78em;
+  font-size: 1em;
   font-weight: 750;
   color: var(--accent);
   letter-spacing: 0.02em;
@@ -513,7 +520,7 @@ button {
 
 .kv dt {
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 1em;
   color: var(--ink-2);
 }
 
@@ -543,7 +550,7 @@ button {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 0.72em;
+  font-size: 1em;
   font-weight: 750;
   background: var(--accent-soft);
   color: var(--accent);
@@ -564,14 +571,14 @@ button {
   padding: 0.5em 0.7em;
   border: 2px dashed var(--rule);
   border-radius: 0.35em;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .field .n {
   font-weight: 750;
   color: var(--accent);
   font-variant-numeric: tabular-nums;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .criteria {
@@ -608,7 +615,7 @@ button {
   border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent);
-  font-size: 0.78em;
+  font-size: 1em;
   font-weight: 650;
 }
 
@@ -634,7 +641,7 @@ button {
 }
 
 .vocab__meaning {
-  font-size: 0.85em;
+  font-size: 1em;
   margin-top: 0.2em;
 }
 
@@ -649,13 +656,13 @@ button {
   box-shadow: var(--shadow);
   border-radius: 0.45em;
   padding: 0.7em 0.9em;
-  font-size: 0.8em;
+  font-size: 1em;
   border-top: 0.2em solid var(--accent);
 }
 
 .dict h2 {
   margin: 0 0 0.4em;
-  font-size: 0.72em;
+  font-size: 1em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
@@ -678,7 +685,7 @@ button {
 }
 
 .dict .src {
-  font-size: 0.72em;
+  font-size: 1em;
   color: var(--ink-3);
 }
 
@@ -689,7 +696,7 @@ button {
   display: flex;
   align-items: center;
   gap: 28px;
-  font-size: 22px;
+  font-size: calc(24px / var(--canvas-scale));
   color: var(--ink-3);
   border-top: 2px solid var(--rule);
 }
@@ -744,7 +751,7 @@ button {
 }
 
 .cover__theme {
-  font-size: 34px;
+  font-size: max(34px, calc(24px / var(--canvas-scale)));
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -763,7 +770,7 @@ button {
 
 .cover__subtitle {
   margin: 34px 0 0;
-  font-size: 40px;
+  font-size: max(40px, calc(24px / var(--canvas-scale)));
   color: var(--ink-2);
   max-width: 1400px;
   text-wrap: balance;
@@ -773,7 +780,7 @@ button {
   margin-top: 70px;
   display: flex;
   gap: 18px;
-  font-size: 30px;
+  font-size: max(30px, calc(24px / var(--canvas-scale)));
   color: var(--ink-2);
 }
 
@@ -788,7 +795,7 @@ button {
   position: absolute;
   bottom: 56px;
   right: 160px;
-  font-size: 24px;
+  font-size: max(24px, calc(24px / var(--canvas-scale)));
   color: var(--ink-3);
 }
 

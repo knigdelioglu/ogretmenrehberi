@@ -10,8 +10,8 @@ Sınıfta öğrencilere gösterilen, **yalnız öğretmenin kullandığı** ders
 
 | Tuş | Ne yapar |
 |---|---|
-| İleri · → · ↓ · PageDown · Boşluk · Enter | Sıradaki katmanı açar (**cevap**, sonra varsa **metinden kanıt**). Uzun içerikte önce aşağı kaydırır. Hepsi açıksa sonraki slayt. Ders sonundan sonra sıradaki derse geçer. |
-| Geri · ← · ↑ · PageUp | Son açılan katmanı kapatır; yoksa önceki slayta (tam açık hâliyle) döner. |
+| İleri · → · ↓ · PageDown · Boşluk · Enter | Aynı görevin sonraki sunum parçasına, sonra **cevap** ve **metinden kanıt** ekranlarına geçer. Katmanlar ayrı görünür; uzun bir parça taşarsa önce aşağı kaydırır. Hepsi tamamlanınca sonraki slayt; ders sonundan sonra sıradaki ders. |
+| Geri · ← · ↑ · PageUp | Aynı görevin önceki sunum parçasına veya katmanına döner; yoksa önceki slayta geçer. |
 | Shift + → / ← | Katmanları atlayıp doğrudan slayt değiştirir. |
 | Y · A | Öğretmen **yönlendirmesini** · **açıklamayı** göster / gizle (kumanda sırasına varsayılan olarak girmez). |
 | B veya . · W veya , | Siyah ekran · beyaz ekran (kumandaların "karart" tuşu). |
@@ -23,7 +23,9 @@ Sınıfta öğrencilere gösterilen, **yalnız öğretmenin kullandığı** ders
 
 Akıllı tahtada ekranın sağ/sol kenarına dokunmak veya yana kaydırmak da ileri/geri yapar. Menüdeki **"Kumanda yönlendirme ve açıklamayı da açsın"** seçeneği işaretlenirse kumanda sırası kanonik `reveal_order` (yönlendirme → cevap → kanıt → açıklama) olur.
 
-Son konum hem tarayıcıda hem adres çubuğunda (`#/karagoz/23/1` = ders / slayt / açık katman) tutulur; bu bağlantı yer imi olarak kullanılabilir.
+Yoğun içerikler bilgileri değiştirmeden birkaç sunum parçasına ayrılır. Metin, yansıtılan ekranda en az 24 CSS piksel (yaklaşık 18 punto) olacak ölçekte tutulur; tek başına sığmayan uzun bir parça kaydırılabilir.
+
+Son konum hem tarayıcıda hem adres çubuğunda (`#/karagoz/23/1` = ders / slayt / açık katman; son `/2` varsa parçayı belirtir) tutulur; bu bağlantı yer imi olarak kullanılabilir.
 
 ## Şifre
 

@@ -103,11 +103,13 @@ const state = {
   lesson: 0, // ders indeksi
   slide: 0, // 0 = kapak, 1..n = adımlar, n+1 = bitiş
   reveal: 0, // açılmış katman sayısı
+  part: 0, // geçerli içerik/cevap parçası
   direction: 1,
   fresh: null, // son açılan katman (animasyon için)
   blank: null, // null | "black" | "white"
   menuTheme: null,
   extras: new Set(), // kumanda sırası dışında elle açılan katmanlar (yönlendirme / açıklama)
+  extraReturn: null,
   guideOnRemote: false // true: kumanda yönlendirme ve açıklamayı da sırayla açar
 };
 
@@ -133,6 +135,14 @@ function clampPosition() {
   state.slide = Math.min(Math.max(0, state.slide), stepCount() + 1);
   const step = currentStep();
   state.reveal = step ? Math.min(Math.max(0, state.reveal), activeReveals(step).length) : 0;
+  const key = state.extras.size
+    ? [...state.extras].at(-1)
+    : state.reveal > 0
+      ? activeReveals(step)[state.reveal - 1]
+      : "content";
+  state.part = step
+    ? Math.min(Math.max(0, state.part), Math.max(0, layerPages(step, key).length - 1))
+    : 0;
 }
 
 // ============================================================
@@ -159,11 +169,26 @@ function next({ skipReveals = false } = {}) {
   const step = currentStep();
   const reveals = activeReveals(step);
   if (!skipReveals && scrollBody(1)) return;
-  if (step && !skipReveals && state.reveal < reveals.length) {
-    state.reveal += 1;
-    state.fresh = reveals[state.reveal - 1];
-    render({ newSlide: false });
-    return;
+  if (step && !skipReveals) {
+    if (state.extras.size) {
+      state.extras.clear();
+      state.part = state.extraReturn ?? 0;
+      state.extraReturn = null;
+    }
+    const key = state.reveal > 0 ? reveals[state.reveal - 1] : "content";
+    if (state.part < layerPages(step, key).length - 1) {
+      state.part += 1;
+      state.fresh = null;
+      render({ newSlide: false });
+      return;
+    }
+    if (state.reveal < reveals.length) {
+      state.reveal += 1;
+      state.part = 0;
+      state.fresh = reveals[state.reveal - 1];
+      render({ newSlide: false });
+      return;
+    }
   }
   if (state.slide <= stepCount()) {
     goto(state.lesson, state.slide + 1, 0, 1);
@@ -177,17 +202,37 @@ function next({ skipReveals = false } = {}) {
 function prev({ skipReveals = false } = {}) {
   const step = currentStep();
   if (!skipReveals && scrollBody(-1)) return;
-  if (step && !skipReveals && state.reveal > 0) {
-    state.reveal -= 1;
-    state.fresh = null;
-    render({ newSlide: false });
-    return;
+  if (step && !skipReveals) {
+    if (state.extras.size) {
+      state.extras.clear();
+      state.part = state.extraReturn ?? 0;
+      state.extraReturn = null;
+      render({ newSlide: false });
+      return;
+    }
+    if (state.part > 0) {
+      state.part -= 1;
+      state.fresh = null;
+      render({ newSlide: false });
+      return;
+    }
+    if (state.reveal > 0) {
+      state.reveal -= 1;
+      const previousKey = state.reveal > 0 ? activeReveals(step)[state.reveal - 1] : "content";
+      state.part = layerPages(step, previousKey).length - 1;
+      state.fresh = null;
+      render({ newSlide: false });
+      return;
+    }
   }
   if (state.slide > 0) {
     const target = state.slide - 1;
     const lesson = currentLesson();
-    const reveals = target >= 1 ? activeReveals(lesson.steps[target - 1]).length : 0;
-    goto(state.lesson, target, skipReveals ? 0 : reveals, -1);
+    const previousStep = target >= 1 ? lesson.steps[target - 1] : null;
+    const reveals = !skipReveals && previousStep ? activeReveals(previousStep).length : 0;
+    const previousKey = reveals > 0 ? activeReveals(previousStep)[reveals - 1] : "content";
+    const part = previousStep ? layerPages(previousStep, previousKey).length - 1 : 0;
+    goto(state.lesson, target, reveals, -1, part);
   } else if (state.lesson > 0) {
     const prevLesson = lessons()[state.lesson - 1];
     goto(state.lesson - 1, prevLesson.steps.length + 1, 0, -1);
@@ -196,13 +241,15 @@ function prev({ skipReveals = false } = {}) {
   }
 }
 
-function goto(lesson, slide, reveal = 0, direction = 1) {
+function goto(lesson, slide, reveal = 0, direction = 1, part = 0) {
   state.lesson = lesson;
   state.slide = slide;
   state.reveal = reveal;
+  state.part = part;
   state.direction = direction;
   state.fresh = null;
   state.extras = new Set();
+  state.extraReturn = null;
   clampPosition();
   render({ newSlide: true });
 }
@@ -214,12 +261,17 @@ function toggleExtra(key) {
     return;
   }
   if (state.extras.has(key)) {
-    state.extras.delete(key);
+    state.extras.clear();
+    state.part = state.extraReturn ?? 0;
+    state.extraReturn = null;
     state.fresh = null;
   } else {
-    state.extras.add(key);
+    state.extraReturn = state.extras.size ? state.extraReturn : state.part;
+    state.extras = new Set([key]);
+    state.part = 0;
     state.fresh = key;
   }
+  clampPosition();
   render({ newSlide: false });
 }
 
@@ -237,19 +289,26 @@ function bump() {
 
 function savePosition() {
   const lesson = currentLesson();
-  const hash = `#/${lesson.slug}/${state.slide}${state.reveal ? "/" + state.reveal : ""}`;
+  const savedPart = state.extras.size ? (state.extraReturn ?? 0) : state.part;
+  const position = `${state.slide}${state.reveal || savedPart ? `/${state.reveal}` : ""}${savedPart ? `/${savedPart}` : ""}`;
+  const hash = `#/${lesson.slug}/${position}`;
   if (location.hash !== hash) history.replaceState(null, "", hash);
   storage.set(
     LS.position,
-    JSON.stringify({ slug: lesson.slug, slide: state.slide, reveal: state.reveal })
+    JSON.stringify({ slug: lesson.slug, slide: state.slide, reveal: state.reveal, part: savedPart })
   );
 }
 
 function restorePosition() {
-  const fromHash = /^#\/([^/]+)\/?(\d+)?\/?(\d+)?/.exec(location.hash);
+  const fromHash = /^#\/([^/]+)(?:\/(\d+))?(?:\/(\d+))?(?:\/(\d+))?/.exec(location.hash);
   let saved = null;
   if (fromHash) {
-    saved = { slug: decodeURIComponent(fromHash[1]), slide: Number(fromHash[2] || 0), reveal: Number(fromHash[3] || 0) };
+    saved = {
+      slug: decodeURIComponent(fromHash[1]),
+      slide: Number(fromHash[2] || 0),
+      reveal: Number(fromHash[3] || 0),
+      part: Number(fromHash[4] || 0)
+    };
   } else {
     try {
       saved = JSON.parse(storage.get(LS.position) || "null");
@@ -263,6 +322,7 @@ function restorePosition() {
       state.lesson = idx;
       state.slide = saved.slide || 0;
       state.reveal = saved.reveal || 0;
+      state.part = saved.part || 0;
     }
   }
   clampPosition();
@@ -369,8 +429,171 @@ function renderSections(sections, sectionsLayout = "grid") {
   );
 }
 
-function renderContent(step) {
-  const content = step.content;
+function textWeight(value) {
+  if (typeof value === "string") return value.length;
+  if (Array.isArray(value)) return value.reduce((total, item) => total + textWeight(item), 0);
+  if (value && typeof value === "object") {
+    return Object.entries(value).reduce((total, [key, item]) => total + key.length + textWeight(item), 0);
+  }
+  return String(value ?? "").length;
+}
+
+function chunkByBudget(values, { maxItems = 3, maxChars = 950 } = {}) {
+  const pages = [];
+  let current = [];
+  let currentChars = 0;
+  let start = 0;
+  values.forEach((value, index) => {
+    const weight = textWeight(value);
+    if (current.length && (current.length >= maxItems || currentChars + weight > maxChars)) {
+      pages.push({ values: current, start });
+      current = [];
+      currentChars = 0;
+      start = index;
+    }
+    current.push(value);
+    currentChars += weight;
+  });
+  if (current.length) pages.push({ values: current, start });
+  return pages;
+}
+
+function splitAtSentences(text, maxChars = 760) {
+  if (text.length <= maxChars || typeof Intl.Segmenter !== "function") return [text];
+  const sentences = [...new Intl.Segmenter("tr", { granularity: "sentence" }).segment(text)].map(
+    (part) => part.segment
+  );
+  const pages = [];
+  let current = "";
+  for (const sentence of sentences) {
+    if (current && current.length + sentence.length > maxChars) {
+      pages.push(current);
+      current = "";
+    }
+    current += sentence;
+  }
+  if (current) pages.push(current);
+  return pages.length ? pages : [text];
+}
+
+function sectionPages(sections, step) {
+  if (!sections) return [];
+  if (Array.isArray(sections)) {
+    return chunkByBudget(sections, { maxItems: 5, maxChars: 900 }).map((group) => ({
+      sections: group.values
+    }));
+  }
+  const entries = Object.entries(sections);
+  const groups = chunkByBudget(entries, {
+    maxItems: step.sections_layout === "stacked" ? 1 : 2,
+    maxChars: 1050
+  });
+  return groups.map((group) => ({ sections: Object.fromEntries(group.values) }));
+}
+
+function vocabularyPages(step) {
+  const sections = step.answer?.answer_sections;
+  if (!sections || Array.isArray(sections)) return [{ terms: [] }];
+  return chunkByBudget(Object.entries(sections), { maxItems: 3, maxChars: 850 }).map((group) => ({
+    terms: group.values,
+    title: "Söz varlığı"
+  }));
+}
+
+function contentLayerPages(step) {
+  const content = step.content || {};
+  const lead = content.lead && content.lead !== step.prompt ? content.lead : "";
+  if (step.layout === "vocabulary") {
+    return vocabularyPages(step).map((page) => ({ ...page, lead }));
+  }
+  const pages = [];
+  const maxChars = step.density === "compact" ? 850 : 1050;
+  if (content.items?.length) {
+    for (const group of chunkByBudget(content.items, { maxItems: 4, maxChars })) {
+      pages.push({ content: { items: group.values }, itemOffset: group.start });
+    }
+  }
+  if (content.sections?.length) {
+    for (const group of chunkByBudget(content.sections, { maxItems: 2, maxChars })) {
+      pages.push({ content: { sections: group.values }, title: "Görev" });
+    }
+  }
+  if (step.task !== "VOCABULARY") pages.push(...dictionaryPages(step));
+  if (!pages.length) pages.push({ content: {} });
+  for (const page of pages) {
+    page.lead = lead;
+  }
+  return pages;
+}
+
+function answerLayerPages(step) {
+  const answer = step.answer || {};
+  if (step.layout === "vocabulary") {
+    const answerTextPages = answer.answer
+      ? splitAtSentences(String(answer.answer), 760).map((answerText) => ({ answerText, title: "Cevap" }))
+      : [];
+    return [
+      ...answerTextPages,
+      ...vocabularyPages(step),
+      ...dictionaryPages(step)
+    ];
+  }
+  const sections = sectionPages(answer.answer_sections, step);
+  const answerText = String(answer.answer || "");
+  const separateText = sections.length > 0 && answerText.length > 600;
+  const textPages = answerText
+    ? splitAtSentences(answerText, 760).map((text) => ({ answerText: text, sections: null, title: "Cevap" }))
+    : [];
+  let pages;
+  if (separateText) pages = [...textPages, ...sections.map((page) => ({ answerText: "", title: "Cevap", ...page }))];
+  if (sections.length) {
+    if (!separateText) {
+      pages = sections.map((page, index) => ({
+        answerText: index === 0 ? answerText : "",
+        title: "Cevap",
+        ...page
+      }));
+    }
+  } else if (!separateText) {
+    pages = textPages.length ? textPages.map((page) => ({ ...page, title: "Cevap" })) : [{ answerText: "", sections: null, title: "Cevap" }];
+  }
+  if (step.task === "VOCABULARY") pages.push(...dictionaryPages(step));
+  return pages;
+}
+
+function layerPages(step, key) {
+  if (!step) return [];
+  if (!key || key === "content") return contentLayerPages(step);
+  if (key === "answer") return answerLayerPages(step);
+  if (key === "evidence") {
+    const quotes = step.answer?.evidence_quotes || [];
+    return chunkByBudget(quotes, { maxItems: 2, maxChars: 650 }).map((group) => ({
+      quotes: group.values,
+      title: "Metinden kanıt"
+    }));
+  }
+  if (key === "guidance" || key === "explanation") {
+    const value = String(step.answer?.[key] || "");
+    return splitAtSentences(value, 900).map((text) => ({
+      text,
+      title: key === "guidance" ? "Yönlendirme" : "Açıklama"
+    }));
+  }
+  return [{}];
+}
+
+function currentView(step) {
+  const active = activeReveals(step);
+  const key = state.extras.size
+    ? [...state.extras].at(-1)
+    : state.reveal > 0
+      ? active[state.reveal - 1]
+      : "content";
+  const pages = layerPages(step, key);
+  return { key, pages, page: pages[state.part] || pages[0] || {}, index: state.part };
+}
+
+function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
   const items = content.items || [];
   const sections = content.sections || [];
@@ -388,7 +611,9 @@ function renderContent(step) {
       itemsEl = h(
         "div",
         { class: "fields", style: `--cols:${items.length > 6 ? 3 : 2}` },
-        items.map((it, i) => h("div", { class: "field" }, h("span", { class: "n" }, String(i + 1).padStart(2, "0")), h("span", {}, it)))
+        items.map((it, i) =>
+          h("div", { class: "field" }, h("span", { class: "n" }, String(itemOffset + i + 1).padStart(2, "0")), h("span", {}, it))
+        )
       );
     } else if (step.layout === "assessment") {
       itemsEl = h("ul", { class: "criteria" }, items.map((it) => h("li", {}, h("span", {}, it))));
@@ -398,7 +623,9 @@ function renderContent(step) {
       itemsEl = h(
         "ol",
         { class: "steps-list" },
-        items.map((it, i) => h("li", {}, h("span", { class: "n" }, String(i + 1)), h("span", {}, it)))
+        items.map((it, i) =>
+          h("li", {}, h("span", { class: "n" }, String(itemOffset + i + 1)), h("span", {}, it))
+        )
       );
     }
   }
@@ -413,12 +640,28 @@ function dictionaryTerms(step) {
   return [];
 }
 
-function shortSource(source) {
-  if (!source) return "";
-  return String(source)
-    .replace(/https?:\/\/\S+/g, "")
-    .replace(/[\s:;,(]+$/g, "")
-    .trim();
+function dictionaryPages(step) {
+  return chunkByBudget(dictionaryTerms(step), { maxItems: 4, maxChars: 850 }).map((group) => ({
+    dictionary: group.values,
+    title: "Sözlük"
+  }));
+}
+
+function dictionaryCard(terms) {
+  return h(
+    "aside",
+    { class: "dict" },
+    h("h2", {}, "Sözlük"),
+    h(
+      "dl",
+      {},
+      terms.map((term) => [
+        h("dt", {}, term.term),
+        h("dd", {}, term.meaning),
+        term.source ? h("dd", { class: "src" }, term.source) : null
+      ])
+    )
+  );
 }
 
 function columnsFor(count) {
@@ -474,13 +717,20 @@ function endSlide(lesson) {
 
 function stepSlide(lesson, step) {
   const active = activeReveals(step);
-  const shown = new Set([...active.slice(0, state.reveal), ...state.extras]);
+  const view = currentView(step);
+  const viewKey = view.key;
+  const page = view.page;
   const a = step.answer;
   const isVocab = step.layout === "vocabulary";
-  const answerShown = Boolean(a && shown.has("answer"));
-  const keepContent =
-    !answerShown || ["structure", "comparison", "assessment"].includes(step.layout);
   const fresh = (k) => state.fresh === k;
+  const viewNames = {
+    content: isVocab ? "Söz varlığı" : "Görev",
+    answer: answerLabel(step, lesson.theme),
+    evidence: "Metinden kanıt",
+    guidance: "Yönlendirme",
+    explanation: "Açıklama"
+  };
+  const pageMarker = view.pages.length > 1 ? ` · ${state.part + 1}/${view.pages.length}` : "";
 
   // Üst şerit
   const no = questionNo(a?.question_no);
@@ -488,90 +738,89 @@ function stepSlide(lesson, step) {
     "header",
     { class: "slide__top" },
     h("span", { class: "tag" }, taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
-    h("span", { class: "where" }, h("b", {}, `s. ${String(step.page).replace("-", "–")}`), step.heading ? `  ·  ${step.heading}` : "")
+    h(
+      "span",
+      { class: "where" },
+      h("b", {}, `s. ${String(step.page).replace("-", "–")}`),
+      step.heading ? `  ·  ${step.heading}` : "",
+      viewKey !== "content" || view.pages.length > 1 ? `  ·  ${page.title || viewNames[viewKey]}${pageMarker}` : ""
+    )
   );
 
   // Ana sütun
   const main = h("div", { class: "stack" });
-  main.append(h("h1", { class: `prompt${answerShown && !isVocab ? " is-small" : ""}` }, step.prompt));
+  main.append(h("h1", { class: `prompt${viewKey !== "content" && !isVocab ? " is-small" : ""}` }, step.prompt));
 
-  if (!answerShown && step.content?.lead && step.content.lead !== step.prompt) {
-    main.append(h("p", { class: "lead" }, step.content.lead));
+  if (viewKey === "content") {
+    if (page.lead) main.append(h("p", { class: "lead" }, page.lead));
+    if (isVocab) {
+      main.append(
+        h(
+          "div",
+          { class: "vocab" },
+          (page.terms || []).map(([term, meaning]) =>
+            h(
+              "div",
+              { class: "vocab__item" },
+              h("div", { class: "vocab__term" }, term),
+              h("div", { class: "vocab__meaning is-hidden" }, "• • •")
+            )
+          )
+        )
+      );
+    } else {
+      const content = renderContent(step, page.content || {}, page.itemOffset || 0);
+      if (content) main.append(content);
+    }
+    if (page.dictionary?.length) main.append(dictionaryCard(page.dictionary));
   }
 
-  if (keepContent) {
-    const c = renderContent(step);
-    if (c) main.append(c);
-  }
-
-  if (isVocab && a?.answer_sections && !Array.isArray(a.answer_sections)) {
+  if (viewKey === "answer" && isVocab && page.terms?.length) {
     main.append(
       h(
         "div",
         { class: `vocab${fresh("answer") ? " fresh" : ""}` },
-        Object.entries(a.answer_sections).map(([term, meaning]) =>
+        (page.terms || []).map(([term, meaning]) =>
           h(
             "div",
             { class: "vocab__item" },
             h("div", { class: "vocab__term" }, term),
-            h(
-              "div",
-              { class: `vocab__meaning${answerShown ? "" : " is-hidden"}` },
-              answerShown ? String(typeof meaning === "string" ? meaning : JSON.stringify(meaning)) : "• • •"
-            )
+            h("div", { class: "vocab__meaning" }, String(typeof meaning === "string" ? meaning : JSON.stringify(meaning)))
           )
         )
       )
     );
   }
+  if (viewKey === "answer" && isVocab && page.answerText) {
+    main.append(panel("answer", answerLabel(step, lesson.theme), h("p", {}, page.answerText), fresh("answer")));
+  }
+  if (viewKey === "answer" && isVocab && page.dictionary?.length) {
+    main.append(dictionaryCard(page.dictionary));
+  }
 
-  // Katmanlar kanonik sırayla
-  for (const key of step.reveals) {
-    if (!shown.has(key)) continue;
-    if (key === "guidance") {
-      main.append(panel("guidance", "Yönlendirme", h("p", {}, a.guidance), fresh(key)));
-    } else if (key === "answer" && !isVocab) {
+  if (viewKey === "answer" && !isVocab) {
+    if (page.answerText || page.sections) {
       main.append(
         panel(
           "answer",
           answerLabel(step, lesson.theme),
-          [a.answer ? h("p", {}, a.answer) : null, renderSections(a.answer_sections, step.sections_layout)],
-          fresh(key)
+          [page.answerText ? h("p", {}, page.answerText) : null, renderSections(page.sections, step.sections_layout)],
+          fresh("answer")
         )
       );
-    } else if (key === "evidence") {
-      main.append(
-        panel("evidence", "Metinden kanıt", h("div", { class: "quotes" }, a.evidence_quotes.map((q) => h("p", {}, q))), fresh(key))
-      );
-    } else if (key === "explanation") {
-      main.append(panel("explanation", "Açıklama", h("p", {}, a.explanation), fresh(key)));
     }
+    if (page.dictionary?.length) main.append(dictionaryCard(page.dictionary));
+  } else if (viewKey === "evidence") {
+    main.append(
+      panel("evidence", "Metinden kanıt", h("div", { class: "quotes" }, (page.quotes || []).map((q) => h("p", {}, q))), fresh(viewKey))
+    );
+  } else if (viewKey === "guidance") {
+    main.append(panel("guidance", "Yönlendirme", h("p", {}, page.text || a.guidance), fresh(viewKey)));
+  } else if (viewKey === "explanation") {
+    main.append(panel("explanation", "Açıklama", h("p", {}, page.text || a.explanation), fresh(viewKey)));
   }
 
-  // Sözlük kartı
-  // Söz varlığı görevlerinde sözlük cevabı önceden vermesin
-  const vocabTask = isVocab || step.task === "VOCABULARY";
-  const terms = vocabTask && !answerShown ? [] : dictionaryTerms(step);
-  let bodyInner;
-  if (terms.length) {
-    const dict = h(
-      "aside",
-      { class: "dict" },
-      h("h2", {}, "Sözlük"),
-      h(
-        "dl",
-        {},
-        terms.map((t) => [
-          h("dt", {}, t.term),
-          h("dd", {}, t.meaning),
-          shortSource(t.source) ? h("dd", { class: "src" }, shortSource(t.source)) : null
-        ])
-      )
-    );
-    bodyInner = h("div", { class: "body-grid body-grid--aside" }, main, dict);
-  } else {
-    bodyInner = h("div", { class: "body-grid" }, main);
-  }
+  const bodyInner = h("div", { class: "body-grid" }, main);
 
   // Alt şerit
   const dots = active.length
@@ -595,6 +844,7 @@ function stepSlide(lesson, step) {
 function render({ newSlide }) {
   const lesson = currentLesson();
   const step = currentStep();
+  const view = step ? currentView(step) : null;
   const canvas = $("#canvas");
 
   let slide;
@@ -618,7 +868,11 @@ function render({ newSlide }) {
   revealIntoView(body);
 
   $("#dock-counter").textContent =
-    state.slide === 0 ? "Kapak" : step ? `${state.slide} / ${lesson.steps.length}` : "Son";
+    state.slide === 0
+      ? "Kapak"
+      : step
+        ? `${state.slide} / ${lesson.steps.length}${view.pages.length > 1 ? ` · ${state.part + 1}/${view.pages.length}` : ""}`
+        : "Son";
   document.title = `${lesson.title} · Ders Sunumu`;
   savePosition();
   if (!$("#menu").hidden) renderMenu();
@@ -633,8 +887,9 @@ function fitBody(body, density = "comfortable") {
     body.style.setProperty("--k", k);
     return body.scrollHeight <= body.clientHeight + 1 && body.scrollWidth <= body.clientWidth + 1;
   };
-  const MAX = density === "large" ? 1.15 : 1;
-  const MIN = 0.55;
+  const scale = canvasScaleFactor();
+  const MIN = Math.max(0.6, 24 / (40 * scale));
+  const MAX = Math.max(density === "large" ? 1.15 : 1, MIN);
   if (fits(MAX)) return;
   let lo = MIN;
   let hi = MAX;
@@ -663,10 +918,13 @@ function revealIntoView(body) {
 
 function scaleCanvas() {
   const canvas = $("#canvas");
-  const vw = window.innerWidth;
-  const vh = window.innerHeight;
-  const s = Math.min(vw / 1920, vh / 1080);
+  const s = canvasScaleFactor();
+  document.documentElement.style.setProperty("--canvas-scale", String(s));
   canvas.style.transform = `scale(${s}) translate(-50%, -50%)`;
+}
+
+function canvasScaleFactor() {
+  return Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
 }
 
 // ============================================================
