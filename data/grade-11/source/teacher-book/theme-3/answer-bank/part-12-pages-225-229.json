@@ -135,10 +135,10 @@
       "question_id": "T3-P229-PERF01",
       "entry_type": "performance_support",
       "printed_page": 229,
-      "question_no": "Öz Değerlendirme Formu + Çıkış Kartı",
-      "prompt_summary": "Yazma öz değerlendirmesini ve tema sonu çıkış kartını gerçek performansa göre kullanma",
-      "answer": "Öz Değerlendirme Formu’nu ve 3-2-1 Çıkış Kartı’nı kendi gerçek performansınıza göre doldurun.",
-      "source_locator": "basılı s.229 / PDF s.230 — Öz Değerlendirme Formu ve Çıkış Kartı",
+      "question_no": "6 / Öz Değerlendirme Formu",
+      "prompt_summary": "Yazma performansını altı ölçüte göre öz değerlendirme",
+      "answer": "Yazınızı kitaptaki altı ölçüte göre kendi gerçek performansınıza dayanarak Evet, Kısmen veya Hayır biçiminde değerlendirin.",
+      "source_locator": "basılı s.229 / PDF s.230 — soru 6, Öz Değerlendirme Formu 1–6",
       "answer_sections": {
         "oz_degerlendirme_olcutleri": [
           "1 — Yazımın içeriğine uygun bir başlık belirledim.",
@@ -147,7 +147,18 @@
           "4 — Yazımı desteklemek için farklı anlatım biçimlerinden ve düşünceyi geliştirme yollarından yararlandım.",
           "5 — Yazdığım metinde dil yapılarına, bağdaşıklık ögelerine, yazım ve noktalama kurallarına dikkat ettim.",
           "6 — Türkçeyi bilinçli ve özenli kullandım."
-        ],
+        ]
+      }
+    },
+    {
+      "question_id": "T3-P229-PERF02",
+      "entry_type": "performance_support",
+      "printed_page": 229,
+      "question_no": "Tema Sonu Değerlendirme / Çıkış Kartı",
+      "prompt_summary": "Üç Yaz / İki Sor / Bir Paylaş çıkış kartını kendi öğrenmelerine göre doldurma",
+      "answer": "Temada öğrendiklerinizi ve hâlâ merak ettiklerinizi çıkış kartının üç bölümünde kendiniz ifade edin.",
+      "source_locator": "basılı s.229 / PDF s.230 — Tema Sonu Değerlendirme / 3-2-1 Çıkış Kartı",
+      "answer_sections": {
         "uc_yaz": "Temada öğrendiğiniz konu ve kavramlarla ilgili üç bilgi yazın: 1) ... 2) ... 3) ...",
         "iki_sor": "Temayla ilgili eksikleriniz veya kavram yanılgılarınız hakkında iki soru yazın: 1) ... 2) ...",
         "bir_paylas": "Temada öğrendikleriniz arasında sizi en çok etkileyen konuyu paylaşın: ...",

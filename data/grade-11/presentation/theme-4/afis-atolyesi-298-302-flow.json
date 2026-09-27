@@ -123,17 +123,13 @@
       "answer_id": "T4-P300-PERF01",
       "layout": "process",
       "density": "compact",
-      "prompt": "İçerik Oluşturabilme — Görsel, renk, yazı ve bilgi kararlarını yapılandırınız.",
+      "prompt": "İçerik Oluşturabilme a–b — Afiş örneklerinden yararlanıp görsel ve renk kararları alınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Çevredeki afişleri inceleyip hızlı anlaşılan tasarımların ortak özelliklerini belirleyin.",
+        "lead": "Reklam, tiyatro ve film afişlerini inceleyin; başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik üzerine fikir alışverişi yapın.",
         "items": [
-          "Bir ana görsel seçin.",
-          "İki veya üç temel renk belirleyin.",
-          "Uzaktan okunabilen yazı karakteri kullanın.",
-          "Bilgileri ana iletiyi destekleyenlerle sınırlandırın.",
-          "Görsel–slogan ilişkisini kontrol edin.",
-          "Taslağı kısa süre gösterip geri bildirim alın."
+          "Tek bir ana görsel seçin.",
+          "Yazıyı okunur kılan, görsel ve iletiyle uyumlu renkleri belirleyin."
         ]
       }
     },
@@ -162,6 +158,23 @@
           }
         ],
         "note": "Fedakârlık videosunun gerçek içeriği görülmeden hazır mesaj/slogan verilmez."
+      }
+    },
+    {
+      "id": "s301-content",
+      "source_record_id": "T04-S0122",
+      "answer_id": "T4-P301-PERF03",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "İçerik Oluşturabilme d–f — Doğrulanmış iletiyi taslağa aktarın ve geri bildirimle geliştirin.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "c–ç adımında videoyla doğruladığınız iletiyi hedef kitleye uygun söz ve malzemeyle taslağa aktarın.",
+        "sections": [
+          { "title": "Bilgi ve söz varlığı", "body": "Yalnızca videoda doğrulanan bilgi ve ifadeleri kullanın." },
+          { "title": "Dil ve malzeme", "body": "Kendi çiziminizi, izinli görseli veya kaynağı belirtilmiş materyali seçin." },
+          { "title": "Geri bildirim", "body": "İletinin anlaşılması, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneri alıp taslağı düzeltin." }
+        ]
       }
     },
     {

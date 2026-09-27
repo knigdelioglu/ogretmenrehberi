@@ -148,44 +148,57 @@
       }
     },
     {
-      "id": "s133-production-1",
-      "source_record_id": "T02-S0112",
-      "layout": "process",
-      "density": "compact",
-      "prompt": "Konuşma taslağını geliştirin — görsel, söz varlığı ve plan",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "content": {
-        "items": [
-          "Her ana başlık için işlevi açık bir görsel seçin ve kaynağını not edin.",
-          "Görselin hangi düşünceyi desteklediğini tek cümlede açıklayın.",
-          "Hedef kitleye uygun, gereksiz teknik kelimelerden arındırılmış söz varlığı oluşturun.",
-          "Girişte dikkat çekici bir soru veya kısa karşılaştırma kullanın."
-        ]
-      }
-    },
-    {
-      "id": "s133-production-2",
+      "id": "s133-step-5",
       "source_record_id": "T02-S0112",
       "answer_id": "T2-P133-PERF01",
       "layout": "process",
       "density": "compact",
-      "prompt": "Konuşma taslağını geliştirin — gelişme, sonuç ve geri bildirim",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "content": {
-        "items": [
-          "Görselleri yalnız süs olarak değil düşünceyi destekleyen kanıtlar olarak kullanın.",
-          "Sonuçta ortak kültür ile bölgesel farklılıkları tek ana düşüncede birleştirin.",
-          "Taslağı bir arkadaşınıza sunup anlaşılmayan yerler ve gereksiz ayrıntılar için geri bildirim alın."
-        ]
-      }
+      "prompt": "5. adım — Amaca uygun görsel seçimi",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s133-step-6",
+      "source_record_id": "T02-S0112",
+      "answer_id": "T2-P133-PERF02",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "6. adım — Görsel-düşünce bağlantısı",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s133-step-7",
+      "source_record_id": "T02-S0112",
+      "answer_id": "T2-P133-PERF03",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "7. adım — Söz varlığını hedef kitleye uyarlama",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s133-step-8",
+      "source_record_id": "T02-S0112",
+      "answer_id": "T2-P133-PERF04",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "8. adım — Konuşma planı",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s133-step-9",
+      "source_record_id": "T02-S0112",
+      "answer_id": "T2-P133-PERF05",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "9. adım — Akran geri bildirimi",
+      "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
       "id": "s133-speech",
       "source_record_id": "T02-S0112",
-      "answer_id": "T2-P133-PERF02",
+      "answer_id": "T2-P133-PERF06",
       "layout": "question",
       "density": "compact",
-      "prompt": "Belirlediğiniz amaca ve konuya uygun etkileşimli konuşmanızı yapınız.",
+      "prompt": "10. adım — Belirlediğiniz amaca ve konuya uygun etkileşimli konuşmanızı yapınız.",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {

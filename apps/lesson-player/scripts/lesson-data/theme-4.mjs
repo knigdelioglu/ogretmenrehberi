@@ -81,10 +81,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 234 &&
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 235 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 157,
-  "Tema 4 tamamı 14 ders / 234 ekran / 143 kaynak / 157 cevap olmalı.");
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 158,
+  "Tema 4 tamamı 14 ders / 235 ekran / 143 kaynak / 158 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -514,11 +514,11 @@ for (const step of anadoluAnalysis.steps) {
 
 const posterWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-AFIS-ATOLYESI-298-302");
 assert(posterWorkshop && posterWorkshop.printed_page_range === "298-302" &&
-  posterWorkshop.coverage.steps === 18 && posterWorkshop.coverage.source_records === 13 &&
-  posterWorkshop.coverage.answer_entries === 14,
-  "Afiş atölyesi s.298–302 18 ekran / 13 kaynak / 14 cevap içermeli.");
+  posterWorkshop.coverage.steps === 19 && posterWorkshop.coverage.source_records === 13 &&
+  posterWorkshop.coverage.answer_entries === 15,
+  "Afiş atölyesi s.298–302 19 ekran / 13 kaynak / 15 cevap içermeli.");
 const posterById = new Map(posterWorkshop.steps.map(step => [step.id, step]));
-assert(posterById.size === 18, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
+assert(posterById.size === 19, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s299-q1","T04-S0118","T4-P299-Q01"],
   ["s299-q2","T04-S0119","T4-P299-Q02"],
@@ -526,6 +526,7 @@ for (const [id, sourceId, answerId] of [
   ["s299-task","T04-S0121","T4-P299-PERF01"],
   ["s300-content","T04-S0122","T4-P300-PERF01"],
   ["s300-message","T04-S0122","T4-P300-SL01"],
+  ["s301-content","T04-S0122","T4-P301-PERF03"],
   ["s301-rules","T04-S0123","T4-P301-PERF01"],
   ["s301-model","T04-S0123","T4-P301-PERF02"],
   ["s302-q1","T04-S0124","T4-P302-PERFQ01"],
@@ -545,6 +546,13 @@ assert(posterById.get("s298-reference")?.content?.items?.length === 4 &&
 assert(posterById.get("s300-content")?.answer?.printed_page === 300 &&
   posterById.get("s300-message")?.answer?.printed_page === 300,
   "s.300–301 cevaplarının printed_page alanı sayısal başlangıç sayfası olmalı.");
+const posterStepOrder = posterWorkshop.steps.map((step) => step.id);
+assert(posterStepOrder.indexOf("s300-content") < posterStepOrder.indexOf("s300-message") &&
+  posterStepOrder.indexOf("s300-message") < posterStepOrder.indexOf("s301-content"),
+  "Afiş içerik adımları a-b → c-ç → d-f kitap sırasını korumalı.");
+assert(posterById.get("s301-model")?.answer?.entry_type === "performance_support" &&
+  posterById.get("s301-model")?.answer?.in_textbook_sequence === false,
+  "Örnek afiş iskeleti kitap sırasından ayrı öğretmen desteği olarak işaretlenmeli.");
 assert(posterById.get("s302-rubric")?.content?.items?.length === 5 &&
   (posterById.get("s302-rubric")?.content?.lead?.includes("QR") ||
     posterById.get("s302-rubric")?.content?.note?.includes("QR")),

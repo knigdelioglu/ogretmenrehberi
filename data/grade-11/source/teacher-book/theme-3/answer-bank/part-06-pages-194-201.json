@@ -37,15 +37,26 @@
       "question_id": "T3-P195-PERF01",
       "entry_type": "performance_support",
       "printed_page": 195,
-      "question_no": "Okumayı Yönetebilme",
-      "prompt_summary": "Mehmet Akif Ersoy biyografisi için okuma amacı, tahmin ve strateji belirleme",
-      "answer": "Okuma amacı, başlık/görsellerden ön tahmin ve uygun okuma stratejisi ayrı aşamalarda belirlenir.",
-      "source_locator": "basılı s.195 / PDF s.196 — Okumayı Yönetebilme 1–2, Metni Okuyalım 1–2",
+      "question_no": "Okumayı Yönetebilme 1–2",
+      "prompt_summary": "Mehmet Akif Ersoy biyografisini okumak için amaç ve ön tahmin belirleme",
+      "answer": "Okuma amacı ve ön tahmin, metni okumadan önce başlık ve görsellerden hareketle belirlenir; metindeki bilgiler tahmine hazır cevap olarak eklenmez.",
+      "source_locator": "basılı s.195 / PDF s.196 — Okumayı Yönetebilme 1–2",
       "answer_sections": {
-        "Okuma amacı": "Mehmet Âkif Ersoy'un yaşamı, eğitimi, çalışmaları, eserleri ve önemli yaşam olayları arasındaki ilişkileri belirlemek.",
-        "Okuma öncesi tahmin": "Başlık ve görsellerden, tanınmış bir şairin yaşamı ve çalışmaları hakkında tarihli/gerçek bilgilere yer veren bir biyografiyle karşılaşılabileceği tahmin edilebilir.",
-        "Strateji": "Yaşam çizgisini izlemek için tarih/dönem → olay → çalışma/eser ilişkisini not alma; bilinmeyen terimleri işaretleme.",
-        "Okuma sonrası kontrol": "İlk tahminin hangi kısmının doğrulandığı veya değiştiği metindeki gerçek bilgiyle karşılaştırılır."
+        "Okuma amacı": "Mehmet Âkif Ersoy’un yaşamı, eğitimi, çalışmaları, eserleri ve önemli yaşam olayları arasındaki ilişkileri belirlemek.",
+        "Okuma öncesi tahmin": "Başlık ve görsellerden hareketle tanınmış bir şairin yaşamı ve çalışmaları hakkında biyografik bilgilerle karşılaşılacağı tahmin edilebilir."
+      }
+    },
+    {
+      "question_id": "T3-P195-PERF02",
+      "entry_type": "performance_support",
+      "printed_page": 195,
+      "question_no": "Metni Okuyalım 1–2",
+      "prompt_summary": "Mehmet Akif Ersoy biyografisini uygun stratejiyle okuma ve seslendirme",
+      "answer": "Biyografiyi tarih, olay ve etki ilişkilerini izleyerek okuyun; vurgu ve tonlamayla seslendirirken anlam gruplarını gözetin.",
+      "source_locator": "basılı s.195 / PDF s.196 — Metni Okuyalım 1–2",
+      "answer_sections": {
+        "Strateji": "Yaşam çizgisini izlemek için tarih/dönem → olay → çalışma/eser ilişkisini not edin; bilinmeyen terimleri işaretleyin.",
+        "Okuma": "Uzun cümleleri anlam gruplarına ayırarak; özel adları, dönemleri ve alıntıları uygun vurgu ve tonlamayla seslendirin."
       }
     },
     {

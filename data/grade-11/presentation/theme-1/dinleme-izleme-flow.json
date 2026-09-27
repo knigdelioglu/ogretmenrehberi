@@ -117,7 +117,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Karekoddaki çok modlu metni izlerken her cümleyi yazmaya çalışmayın; anahtar kavramları ve önemli bağlantıları kısa notlarla kaydedin."
-      }
+      },
+      "answer_id": "T1-P64-PERF03"
     },
     {
       "id": "s64-observation",
@@ -218,6 +219,17 @@
           "Oluşturabileceği yeni iletişim sorununu veya riski belirleyin.",
           "Grup sonucunu sözcü aracılığıyla sınıfla paylaşın."
         ]
+      }
+    },
+    {
+      "id": "s68-69-paydos-q1",
+      "source_record_id": "T01-S0091",
+      "answer_id": "T1-P68-PERF02",
+      "layout": "process",
+      "prompt": "Paydos parçasını okuyun",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Parçayı okuyup dilin yanlış kullanımından kaynaklanan iletişim aksaklıklarını belirlemeye hazırlanın."
       }
     },
     {

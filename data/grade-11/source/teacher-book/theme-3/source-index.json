@@ -7,7 +7,7 @@
   "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
   "counts": {
     "records": 146,
-    "linked_answers": 147
+    "linked_answers": 149
   },
   "records": [
     {
@@ -378,6 +378,18 @@
       "source_status": "VERIFIED"
     },
     {
+      "source_record_id": "T03-S0034",
+      "theme_id": "TEMA_03",
+      "printed_page_range": "182",
+      "book_heading": "Fark Edelim — Metinlerden yazar ile eser ilişkisini açıklama",
+      "task_type": "QUESTION",
+      "prompt": "Verilen metinlerden hareketle yazar ile eser arasındaki ilişkiye yönelik çıkarım yapınız.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "rights_mode": "DERIVED_ACTIVITY",
+      "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, metinlerden hareketle soru",
+      "source_status": "VERIFIED"
+    },
+    {
       "source_record_id": "T03-S0033",
       "theme_id": "TEMA_03",
       "printed_page_range": "182",
@@ -387,18 +399,6 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
       "source_locator": "basılı s.182 / PDF s.183 — iki kaynak metnin altındaki Sıra Sizde, soru 1",
-      "source_status": "VERIFIED"
-    },
-    {
-      "source_record_id": "T03-S0034",
-      "theme_id": "TEMA_03",
-      "printed_page_range": "182",
-      "book_heading": "Fark Edelim — Metinlerden yazar ile eser ilişkisini açıklama",
-      "task_type": "QUESTION",
-      "prompt": "Sıra Sizde — Verilen metinlerden hareketle yazar ile eser arasındaki ilişkiye yönelik çıkarım yapınız.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "rights_mode": "DERIVED_ACTIVITY",
-      "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, metinlerden hareketle soru",
       "source_status": "VERIFIED"
     },
     {

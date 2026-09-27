@@ -187,10 +187,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 190 &&
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 199 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 158 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 167,
-  "Tema 2 tam kapsam 190 adım / 158 source / 167 answer olmalı."
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 177,
+  "Tema 2 tam kapsam 199 adım / 158 source / 177 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -317,10 +317,10 @@ assert(
   "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
 );
 assert(
-  speaking2.coverage.steps === 19 &&
+  speaking2.coverage.steps === 22 &&
     speaking2.coverage.source_records === 13 &&
-    speaking2.coverage.answer_entries === 14,
-  "2. Tema Konuşma 19 adım / 13 source / 14 answer olmalı."
+    speaking2.coverage.answer_entries === 18,
+  "2. Tema Konuşma 22 adım / 13 source / 18 answer olmalı."
 );
 
 const speaking2ById = new Map(speaking2.steps.map((step) => [step.id, step]));
@@ -347,10 +347,10 @@ assert(
   "s.132–133 ülke kültürü araştırması hazır kalıplara zorlanmadan comparison olmalı."
 );
 assert(
-  speaking2ById.get("s133-production-1")?.answer === null &&
-    speaking2ById.get("s133-production-2")?.answer?.question_id === "T2-P133-PERF01" &&
-    speaking2ById.get("s133-speech")?.answer?.question_id === "T2-P133-PERF02",
-  "s.133 üretim zinciri yoğunluğu iki süreç ekranına bölünmeli ve örnek konuşma ayrı kalmalı."
+  ["s133-step-5", "s133-step-6", "s133-step-7", "s133-step-8", "s133-step-9"].every((id, index) =>
+    speaking2ById.get(id)?.answer?.question_no === String(index + 5)
+  ) && speaking2ById.get("s133-speech")?.answer?.question_id === "T2-P133-PERF06",
+  "s.133 konuşma hazırlığının 5–9 adımları ayrı sıralı kayıtlar, 10. adım ayrı konuşma olmalı."
 );
 assert(
   (speaking2ById.get("s134-rules-1")?.content?.items?.length ?? 0) +
@@ -426,10 +426,10 @@ const museumWriting = byLessonId.get("T11-T02-YAZMA");
 assert(museumWriting, "2. Tema çevrim içi müze yazma dersi bulunamadı.");
 assert(
   museumWriting.printed_page_range === "148-154" &&
-    museumWriting.coverage.steps === 18 &&
+    museumWriting.coverage.steps === 24 &&
     museumWriting.coverage.source_records === 12 &&
-    museumWriting.coverage.answer_entries === 11,
-  "Tema 2 Yazma s.148–154, 18 adım / 12 source / 11 answer olmalı."
+    museumWriting.coverage.answer_entries === 17,
+  "Tema 2 Yazma s.148–154, 24 adım / 12 source / 17 answer olmalı."
 );
 const museumById = new Map(museumWriting.steps.map((step) => [step.id, step]));
 assert(
@@ -448,15 +448,20 @@ assert(
 assert(
   museumById.get("s151-compare")?.layout === "comparison" &&
     museumById.get("s151-carriers")?.layout === "structure" &&
-    museumById.get("s151-enrich")?.answer?.entry_type === "performance_support",
-  "s.151 karşılaştırma, kültür taşıyıcıları ve yazı zenginleştirme ayrı adımlar olmalı."
+    ["s151-step-4", "s151-step-5", "s151-step-6"].every((id, index) =>
+      museumById.get(id)?.answer?.question_no === String(index + 4)
+    ),
+  "s.151 karşılaştırma, kültür taşıyıcıları ve yazı zenginleştirme 4–6 ayrı sıralı adım olmalı."
 );
 assert(
   (museumById.get("s152-rules-1")?.content?.items?.length ?? 0) +
     (museumById.get("s152-rules-2")?.content?.items?.length ?? 0) === 13 &&
     museumById.get("s152-draft")?.answer?.entry_type === "performance_support" &&
-    museumById.get("s152-check")?.content?.items?.length === 10,
-  "s.152 on üç yazma ölçütü, kişisel izlenim iskeleti ve on maddelik kontrol ayrı korunmalı."
+    museumById.get("s152-check")?.content?.items?.length === 10 &&
+    museumById.get("s152-check")?.answer?.source_order_item === false &&
+    museumById.get("s152-check")?.answer?.teacher_support === true &&
+    museumById.get("s152-check")?.answer?.derived_from === "T2-P152-PERF01",
+  "s.152 on üç yazma ölçütü ve taslak korunmalı; öz denetim desteği kitap sırası dışı işaretlenmeli."
 );
 assert(
   (museumById.get("s153-self-1")?.content?.items?.length ?? 0) +

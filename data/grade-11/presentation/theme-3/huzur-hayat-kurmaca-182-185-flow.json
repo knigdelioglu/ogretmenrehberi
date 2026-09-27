@@ -33,26 +33,16 @@
       }
     },
     {
-      "id": "s182-fish",
-      "source_record_id": "T03-S0033",
-      "layout": "structure",
+      "id": "s182-author",
+      "source_record_id": "T03-S0034",
+      "layout": "question",
       "density": "compact",
-      "prompt": "Sıra Sizde 1 — Gerçek hayattan alınanlarla kurgusal unsurları balık kılçığının iki tarafına ayırınız.",
+      "prompt": "Fark Edelim — Bu iki parçadan hareketle yazar ile eser arasındaki ilişki hakkında ne çıkarırsınız?",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "answer_id": "T3-P182-Q01",
+      "answer_id": "T3-P182-Q02",
       "content": {
-        "lead": "Edebî kişinin esin kaynağı ile roman içinde sonradan kurulmuş özellik ve ilişkilerini ayırın.",
-        "sections": [
-          {
-            "title": "Gerçek hayattan alınan",
-            "body": "Kaplan'ın verdiği yazar, Yahya Kemal, Nuran'a esin veren kişi ve İstanbul/kültür izlerini belirleyin."
-          },
-          {
-            "title": "Kurgusal dönüşüm",
-            "body": "Kişilerin akrabalığının, aile durumunun veya kişilik özelliklerinin romanda nasıl değiştirildiğini belirleyin."
-          }
-        ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Kaplan metninde Nuran'ın gerçek hayattaki örneği için ‘derin hayranlık duyduğu kadın’ denmiyor; yalnız genç ve güzel kadın örneğinden söz ediliyor. Kaynakta olmayan duygu ve ilişki eklemeyin."
+        "lead": "Huzur kesitinden bir yaşam/ilişki izi, Mehmet Kaplan’ın metninden ise bu izin kurmacada nasıl değiştirildiğini gösteren bir dayanak seçin; çıkarımınızı ikisini ilişkilendirerek kurun.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun."
       }
     },
     {
@@ -106,16 +96,26 @@
       }
     },
     {
-      "id": "s182-author",
-      "source_record_id": "T03-S0034",
-      "layout": "question",
+      "id": "s182-fish",
+      "source_record_id": "T03-S0033",
+      "layout": "structure",
       "density": "compact",
-      "prompt": "Fark Edelim — Bu iki parçadan hareketle yazar ile eser arasındaki ilişki hakkında ne çıkarırsınız?",
+      "prompt": "Sıra Sizde 1 — Gerçek hayattan alınanlarla kurgusal unsurları balık kılçığının iki tarafına ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "answer_id": "T3-P182-Q02",
+      "answer_id": "T3-P182-Q01",
       "content": {
-        "lead": "Huzur kesitinden bir yaşam/ilişki izi, Mehmet Kaplan’ın metninden ise bu izin kurmacada nasıl değiştirildiğini gösteren bir dayanak seçin; çıkarımınızı ikisini ilişkilendirerek kurun.",
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Her iki parçadan da birer kısa dayanak seçtirin: Huzur kesitinde bir ilişki/yaşam izi, Kaplan metninde bu izin kurmacada nasıl değiştirildiğini gösteren bir ifade. Sonucu bu iki dayanağı ilişkilendirerek kurdurun."
+        "lead": "Edebî kişinin esin kaynağı ile roman içinde sonradan kurulmuş özellik ve ilişkilerini ayırın.",
+        "sections": [
+          {
+            "title": "Gerçek hayattan alınan",
+            "body": "Kaplan'ın verdiği yazar, Yahya Kemal, Nuran'a esin veren kişi ve İstanbul/kültür izlerini belirleyin."
+          },
+          {
+            "title": "Kurgusal dönüşüm",
+            "body": "Kişilerin akrabalığının, aile durumunun veya kişilik özelliklerinin romanda nasıl değiştirildiğini belirleyin."
+          }
+        ],
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kaplan metninde Nuran'ın gerçek hayattaki örneği için ‘derin hayranlık duyduğu kadın’ denmiyor; yalnız genç ve güzel kadın örneğinden söz ediliyor. Kaynakta olmayan duygu ve ilişki eklemeyin."
       }
     },
     {

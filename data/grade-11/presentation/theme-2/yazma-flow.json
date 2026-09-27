@@ -64,22 +64,49 @@
       "prompt_mode": "VERBATIM_SHORT"
     },
     {
-      "id": "s149-plan",
+      "id": "s149-step-3",
       "source_record_id": "T02-S0139",
       "answer_id": "T2-P149-PERF03",
       "layout": "structure",
       "density": "compact",
-      "prompt": "İzlenim yazısının yöntemini, amacını, hedef kitlesini ve yapısını planlayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "content": {
-        "lead": "Yazma amacı, hedef kitle, yapı, karşılaşabileceğiniz engeller ve kullanacağınız stratejiyi birbiriyle uyumlu planlayın.",
-        "items": [
-          "Gezi notlarınızı gözlem / duygu / kişisel yorum olarak ayırın.",
-          "Kime, neyi, neden yazacağınızı belirleyin.",
-          "Giriş-gelişme-sonuç için ana düşünce ve örnek seçin.",
-          "Kaynak, erişim ve zaman gibi yazma engellerini giderin."
-        ]
-      }
+      "prompt": "3. adım — Yazma yöntemi",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s149-step-4",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF04",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "4. adım — Yazma amacı",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s149-step-5",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF05",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "5. adım — Hedef kitle",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s149-step-6",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF06",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "6. adım — Yazma stratejisi",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s149-step-7",
+      "source_record_id": "T02-S0139",
+      "answer_id": "T2-P149-PERF07",
+      "layout": "structure",
+      "density": "compact",
+      "prompt": "7. adım — Yazı türü",
+      "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
       "id": "s150-task",
@@ -132,21 +159,31 @@
       }
     },
     {
-      "id": "s151-enrich",
+      "id": "s151-step-4",
       "source_record_id": "T02-S0144",
       "answer_id": "T2-P151-PERF02",
       "layout": "process",
       "density": "compact",
-      "prompt": "Karşılaştırma ve sınıflandırmayı yazıya dönüştürüp içeriği zenginleştiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "content": {
-        "items": [
-          "Müze-kültür çalışmasını arkadaşlarınızla paylaşın.",
-          "Listelemekle kalmayın; gözlemden kişisel çıkarım üretin.",
-          "Görsel/işitsel ögeyi yalnız ilgili düşünceyi destekliyorsa ekleyin.",
-          "Kısa alıntıda kaynak belirtin; başkasının metnini kendi yorumunuzun yerine koymayın."
-        ]
-      }
+      "prompt": "4. adım — Gözlem ve karşılaştırma",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s151-step-5",
+      "source_record_id": "T02-S0144",
+      "answer_id": "T2-P151-PERF03",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "5. adım — Görsel destek",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
+      "id": "s151-step-6",
+      "source_record_id": "T02-S0144",
+      "answer_id": "T2-P151-PERF04",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "6. adım — Kaynak ve kişisel izlenim",
+      "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
       "id": "s152-rules-1",

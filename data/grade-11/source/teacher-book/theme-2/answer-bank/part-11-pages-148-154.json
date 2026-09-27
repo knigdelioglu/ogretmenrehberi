@@ -36,27 +36,80 @@
       }
     },
     {
-      "question_id": "T2-P149-PERF03",
       "entry_type": "performance_support",
       "printed_page": 149,
-      "question_no": "3-7",
-      "prompt_summary": "Sanal müze izlenim yazısı için yöntem, amaç, hedef kitle, strateji ve tür tanımı",
-      "answer": "Sanal müze gezi ve izlenim yazınızı beş başlıkta planlayın:\n\n1. Yazma amacı: Müze ve eserleri tanıtmanın yanı sıra sanal deneyiminizde uyandırdığı duygu, düşünce ve kültürel farkındalığı aktarın.\n2. Hedef kitle: Sınıf arkadaşlarınız, öğretmeniniz ve okul topluluğu için açık, akıcı, edebî ve samimi bir dil kullanın.\n3. Giriş: Müzenin adını, seçme gerekçenizi ve sanal tura başladığınızda oluşan ilk izlenimi yazın.\n4. Gelişme: Dikkatinizi çeken iki veya üç somut eseri betimleyin; gözlemlerinizi kişisel yorumlarınızla ilişkilendirin.\n5. Sonuç: Sanal gezi deneyiminizi, fiziksel müzeyle arasındaki farkları ve kendi kazanımlarınızı özetleyin.",
-      "explanation": "İzlenim yazısı, görülen veya yaşanan bir yeri yalnız bilgi vererek anlatmaz; yazarın dikkatini çeken ayrıntıları, duygu ve düşüncelerini, kişisel değerlendirmelerini de içerir. Bu nedenle gezi raporundan farklı olarak kişisel gözlem ve yorum daha belirgindir.",
       "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
-      "source_locator": "basılı s.149 / PDF s.150 — sorular 3-7",
+      "question_id": "T2-P149-PERF03",
+      "question_no": "3",
+      "activity_name": "Yazma yöntemi",
+      "prompt_summary": "Sanal müze izlenim yazısı için uygulanacak yazma yöntemini belirleme.",
+      "answer": "İzlenim yazısı için önce gerçek gözlem ve kişisel izlenimlerinizi toplayın; sonra bunları amaca, hedef kitleye ve yazı türüne uygun biçimde planlayın.",
+      "source_locator": "basılı s.149 / PDF s.150 — adım 3",
       "answer_sections": {
-        "amac": "Bilgilendirme + kişisel izlenim ve kültürel farkındalık aktarımı",
-        "hedef_kitle": "Sınıf arkadaşlarınız, öğretmeniniz ve okul topluluğu",
-        "giris": "Müzenin adı, seçim gerekçesi ve sanal tura başlama anındaki ilk intiba",
-        "gelisme": "Odaklanılan 2-3 eserin analizi, gözlem-yorum dengesi ve kültürel süreklilik bağı",
-        "sonuc": "Gezinin genel değerlendirmesi, sanal gezinin avantaj/sınırları ve kişisel kazanım",
-        "strateji": [
+        "Yöntem": [
           "Her paragrafta tek ana düşünce etrafında toplanma",
           "Gözlem ile kişisel duygu ve yorumu ayırt ederek kaynaştırma",
           "Kültürel unsurlar arasında karşılaştırma ve örnekleme yapma",
           "Kaynakları ve müze bilgilerini doğru not etme"
         ]
+      }
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 149,
+      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "question_id": "T2-P149-PERF04",
+      "question_no": "4",
+      "activity_name": "Yazma amacı",
+      "prompt_summary": "Müzeyi tanıtırken sanal deneyimin uyandırdığı duygu, düşünce ve kültürel farkındalığı aktarma.",
+      "answer": "Müzeyi tanıtırken sanal deneyimin uyandırdığı duygu, düşünce ve kültürel farkındalığı aktarma.",
+      "source_locator": "basılı s.149 / PDF s.150 — adım 4",
+      "answer_sections": {
+        "Amaç": "Bilgilendirme + kişisel izlenim ve kültürel farkındalık aktarımı"
+      }
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 149,
+      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "question_id": "T2-P149-PERF05",
+      "question_no": "5",
+      "activity_name": "Hedef kitle",
+      "prompt_summary": "Yazıyı sınıf arkadaşları, öğretmen ve okul topluluğuna göre düzenleme.",
+      "answer": "Yazıyı sınıf arkadaşları, öğretmen ve okul topluluğuna göre düzenleme.",
+      "source_locator": "basılı s.149 / PDF s.150 — adım 5",
+      "answer_sections": {
+        "Hedef kitle": "Sınıf arkadaşlarınız, öğretmeniniz ve okul topluluğu"
+      }
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 149,
+      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "question_id": "T2-P149-PERF06",
+      "question_no": "6",
+      "activity_name": "Yazma stratejisi",
+      "prompt_summary": "Giriş, gelişme ve sonuç bölümlerini gözlem ve yorumlarla planlama.",
+      "answer": "Müzenin adını ve seçme gerekçenizi girişte verin; gelişmede gözlemlediğiniz eserleri kişisel yorumunuzla ilişkilendirin; sonuçta sanal gezi deneyiminizi ve kazanımlarınızı değerlendirin.",
+      "source_locator": "basılı s.149 / PDF s.150 — adım 6",
+      "answer_sections": {
+        "Giriş": "Müzenin adı, seçme gerekçesi ve sanal tura başlama anındaki ilk izlenim.",
+        "Gelişme": "Dikkat çeken iki veya üç somut eser; gözlem ve kişisel yorumun ilişkisi.",
+        "Sonuç": "Gezinin genel değerlendirmesi, sanal gezinin avantajları veya sınırları ve kişisel kazanım."
+      }
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 149,
+      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "question_id": "T2-P149-PERF07",
+      "question_no": "7",
+      "activity_name": "Yazı türü",
+      "prompt_summary": "İzlenim yazısında kişisel gözlem, duygu ve değerlendirmeyi bilgiyle birlikte kullanma.",
+      "answer": "İzlenim yazısında kişisel gözlem, duygu ve değerlendirmeyi bilgiyle birlikte kullanma.",
+      "source_locator": "basılı s.149 / PDF s.150 — adım 7",
+      "answer_sections": {
+        "Türün özelliği": "İzlenim yazısı, görülen veya yaşanan bir yeri yalnız bilgi vererek anlatmaz; yazarın dikkatini çeken ayrıntıları, duygu ve düşüncelerini, kişisel değerlendirmelerini de içerir. Bu nedenle gezi raporundan farklı olarak kişisel gözlem ve yorum daha belirgindir."
       }
     },
     {
@@ -122,20 +175,37 @@
       }
     },
     {
-      "question_id": "T2-P151-PERF02",
       "entry_type": "performance_support",
       "printed_page": 151,
-      "question_no": "4-6",
-      "prompt_summary": "Müze-kültür çalışmasından yararlanarak yazının içeriğini zenginleştirme",
-      "answer": "Sanal müze yazınızda kendi gerçek gözleminizle kişisel izleniminiz arasında anlamlı bağ kurmak için şu dört adımı izleyin.",
       "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
-      "source_locator": "basılı s.151 / PDF s.152 — sorular 4-6",
-      "answer_sections": [
-        "1. Karşılaştırma: [Gerçekten gördüğüm eser] bana [kendi hayatımdaki gerçek benzerlik veya farklılığı] düşündürdü; çünkü [...].",
-        "Gerçekte incelediğiniz eser veya bölümün izin verilen bir ekran görüntüsünü seçin. Açıklamasını “[müze adı, gerçek eser adı, kaynak]” biçiminde yazın.",
-        "Müze bilgi panosundan veya güvenilir bir kaynaktan aldığınız kısa ifadeyi aynen aktarın ve kaynağını belirtin; kendi yorumunuzu alıntının yerine kullanmayın.",
-        "“Gözlemlediğim ayrıntı [...]; bu ayrıntı bende [...] duygusu/düşüncesi uyandırdı.” cümlesini yalnız gerçekten yaşadığınız deneyimle tamamlayın."
-      ]
+      "question_id": "T2-P151-PERF02",
+      "question_no": "4",
+      "activity_name": "Gözlem ve karşılaştırma",
+      "prompt_summary": "Müze çalışmasındaki kültürel unsuru kendi hayatınızdaki gerçek bir örnekle karşılaştırın.",
+      "answer": "1. Karşılaştırma: [Gerçekten gördüğüm eser] bana [kendi hayatımdaki gerçek benzerlik veya farklılığı] düşündürdü; çünkü [...].",
+      "source_locator": "basılı s.151 / PDF s.152 — adım 4"
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 151,
+      "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
+      "question_id": "T2-P151-PERF03",
+      "question_no": "5",
+      "activity_name": "Görsel destek",
+      "prompt_summary": "Gerçekte incelediğiniz eser veya bölümün izin verilen ekran görüntüsünü seçip kaynağını belirtin.",
+      "answer": "Gerçekte incelediğiniz eser veya bölümün izin verilen bir ekran görüntüsünü seçin. Açıklamasını “[müze adı, gerçek eser adı, kaynak]” biçiminde yazın.",
+      "source_locator": "basılı s.151 / PDF s.152 — adım 5"
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 151,
+      "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
+      "question_id": "T2-P151-PERF04",
+      "question_no": "6",
+      "activity_name": "Kaynak ve kişisel izlenim",
+      "prompt_summary": "Müze bilgi panosundan veya güvenilir bir kaynaktan kısa bir ifadeyi kaynağıyla aktarın; gerçek gözleminizin sizde uyandırdığı duygu veya düşünceyi ekleyin.",
+      "answer": "Müze bilgi panosundan veya güvenilir bir kaynaktan aldığınız kısa ifadeyi aynen aktarın ve kaynağını belirtin; kendi yorumunuzu alıntının yerine kullanmayın. “Gözlemlediğim ayrıntı [...]; bu ayrıntı bende [...] duygusu/düşüncesi uyandırdı.” cümlesini yalnız gerçekten yaşadığınız deneyimle tamamlayın.",
+      "source_locator": "basılı s.151 / PDF s.152 — adım 6"
     },
     {
       "question_id": "T2-P152-PERF01",
@@ -181,7 +251,10 @@
           "Türkçeyi bilinçli ve özenli kullandım mı?",
           "Yazım ve noktalama kurallarını gözden geçirdim mi?"
         ]
-      }
+      },
+      "source_order_item": false,
+      "teacher_support": true,
+      "derived_from": "T2-P152-PERF01"
     },
     {
       "question_id": "T2-P153-PERF01",

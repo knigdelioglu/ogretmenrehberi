@@ -61,18 +61,15 @@
       "question_id": "T4-P300-PERF01",
       "entry_type": "performance_support",
       "printed_page": 300,
-      "question_no": "İçerik Oluşturabilme a-b, d-f",
-      "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme a-b, d-f",
-      "prompt_summary": "Afiş için görsel, renk, yazı, bilgi ve geri bildirim sürecini planlama",
-      "answer": "Afişin ana iletisi izlenmiş videodan seçildikten sonra şu plan uygulanabilir.",
+      "question_no": "İçerik Oluşturabilme a-b",
+      "source_locator": "basılı s.300 / PDF s.301 — İçerik Oluşturabilme a-b",
+      "prompt_summary": "Afiş örneklerini inceleyip fikir alışverişi yapma; renk ve görsel kararlarını belirleme",
+      "answer": "Afiş örneklerini başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik bakımından inceleyin. Belgeselde doğrulayacağınız iletiye uygun tek bir ana görsel ve okunaklı yazıyı destekleyen renkler seçin.",
       "answer_sections": {
         "Fikir alışverişi": "Reklam, tiyatro ve film afişlerinden başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik örnekleri inceleyin.",
-        "Renk ve görsel": "Tek ana görsel seçin; renkleri belgeselde gözlenen iletiyi destekleyecek ve yazıyı okunur kılacak biçimde kullanın.",
-        "Bilgi ve söz varlığı": "Yalnızca videoda doğrulanan bilgi ve ifadeleri alın; hedef kitleye uygun, kısa sözcüklerle taslağı kurun.",
-        "Dil ve malzeme": "Kendi çiziminiz, izinli görsel veya kaynağı belirtilmiş materyal seçin; görseli afiş amacına ve bağlama uygun kullanın.",
-        "Geri bildirim": "Taslağı arkadaşlara sunun; mesajın ilk bakışta anlaşılıp anlaşılmadığı, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneriler alıp düzeltin."
+        "Renk ve görsel": "Tek ana görsel seçin; renkleri belgeselde gözlenen iletiyi destekleyecek ve yazıyı okunur kılacak biçimde kullanın."
       },
-      "guidance": "Belgeselin hangi iletisini seçtiğiniz, ayrı video-temelli kayıtta doğrulanmalıdır."
+      "guidance": "Belgesel içeriğine dayanan iletiyi seçme ve doğrulama adımını c-ç kaydında tamamlayın."
     },
     {
       "question_id": "T4-P300-SL01",
@@ -83,6 +80,21 @@
       "prompt_summary": "Fedakârlık belgeselinden seçilen iletiyi ve etkileyicilik unsurlarını belirleme",
       "answer": "İzlediğiniz belgeselde öne çıkan iletiyi kendi sözlerinizle yazın. Bunu destekleyen davranış, söz, görüntü ya da ses ayrıntısını belirtin; afiş planında yalnız videoyla doğruladığınız bilgileri kullanın.",
       "guidance": "İletinizi başlıktan tahmin etmek yerine videodaki bir sahne veya ifadeyle destekleyin."
+    },
+    {
+      "question_id": "T4-P301-PERF03",
+      "entry_type": "performance_support",
+      "printed_page": 301,
+      "question_no": "İçerik Oluşturabilme d-f",
+      "source_locator": "basılı s.301 / PDF s.302 — İçerik Oluşturabilme d-f",
+      "prompt_summary": "Doğrulanmış iletiye uygun bilgi, söz varlığı ve malzemeyle taslağı hazırlayıp geri bildirimle geliştirme",
+      "answer": "İzleme notlarınızla doğruladığınız iletiyi hedef kitleye uygun kısa sözlerle ve uygun malzemeyle taslağa aktarın; taslağı geri bildirimle gözden geçirin.",
+      "answer_sections": {
+        "Bilgi ve söz varlığı": "Yalnızca videoda doğrulanan bilgi ve ifadeleri alın; hedef kitleye uygun, kısa sözcüklerle taslağı kurun.",
+        "Dil ve malzeme": "Kendi çiziminiz, izinli görsel veya kaynağı belirtilmiş materyal seçin; görseli afiş amacına ve bağlama uygun kullanın.",
+        "Geri bildirim": "Taslağı arkadaşlara sunun; mesajın ilk bakışta anlaşılıp anlaşılmadığı, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneriler alıp düzeltin."
+      },
+      "guidance": "İleti ve taslağı, yalnızca izlediğiniz videodan doğruladığınız bilgi ve görüntülere dayandırın."
     },
     {
       "question_id": "T4-P301-PERF01",
@@ -104,6 +116,7 @@
     {
       "question_id": "T4-P301-PERF02",
       "entry_type": "performance_support",
+      "in_textbook_sequence": false,
       "printed_page": 301,
       "question_no": "Örnek afiş iskeleti",
       "source_locator": "basılı s.298-301 / PDF s.299-302 — Afiş kriterleri + Performans Görevi",

@@ -290,6 +290,14 @@
       "layout": "question"
     },
     {
+      "id": "s30-sira-sizde",
+      "source_record_id": "T01-S0016",
+      "answer_id": "T1-P30-ACT01",
+      "layout": "structure",
+      "prompt": "Geleneksel Türk tiyatrosu türlerini verilen açıklamalarla eşleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY"
+    },
+    {
       "id": "s30-q1",
       "source_record_id": "T01-S0016",
       "answer_id": "T1-P30-Q01",
@@ -327,14 +335,6 @@
       "answer_id": "T1-P30-Q05",
       "layout": "question",
       "prompt": "Açık ve örtük iletilerin toplum hayatındaki iletişime katkısını değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
-    },
-    {
-      "id": "s30-q6",
-      "source_record_id": "T01-S0016",
-      "answer_id": "T1-P30-Q06",
-      "layout": "structure",
-      "prompt": "Geleneksel Türk tiyatrosu türlerini verilen açıklamalarla eşleştiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {

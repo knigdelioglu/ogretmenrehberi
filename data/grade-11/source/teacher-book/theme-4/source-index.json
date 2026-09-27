@@ -7,7 +7,7 @@
   "policy": "Textbook-facing source facts only. Legacy pedagogical notes, legacy identifiers and legacy authoring structures are intentionally excluded.",
   "counts": {
     "records": 143,
-    "linked_answers": 157
+    "linked_answers": 158
   },
   "records": [
     {
@@ -283,13 +283,13 @@
     {
       "source_record_id": "T04-S0025",
       "theme_id": "TEMA_04",
-      "printed_page_range": "257",
+      "printed_page_range": "257-258",
       "book_heading": "Fark Edelim — monolog ve diyalog",
       "task_type": "QUESTION",
       "prompt": "Soru 1 — Metinden bir monolog ve bir diyalog örneği belirleyiniz.",
       "prompt_mode": "VERBATIM_SHORT",
       "rights_mode": "LIMITED_QUOTATION",
-      "source_locator": "basılı s.257 / PDF s.258 — Fark Edelim soru 1",
+      "source_locator": "basılı s.257-258 / PDF s.258-259 — metin s.257, Fark Edelim soru 1 s.258",
       "source_status": "VERIFIED"
     },
     {
@@ -1521,13 +1521,13 @@
     {
       "source_record_id": "T04-S0133",
       "theme_id": "TEMA_04",
-      "printed_page_range": "304",
+      "printed_page_range": "304-305",
       "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 4",
       "task_type": "QUESTION",
       "prompt": "Soru 4 — Metnin sizde uyandırdığı duyguyu metin ayrıntılarıyla gerekçelendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "rights_mode": "DERIVED_ACTIVITY",
-      "source_locator": "basılı s.304 / PDF s.305 — Soru 4",
+      "source_locator": "basılı s.304-305 / PDF s.305-306 — şiir s.304, Soru 4 s.305",
       "source_status": "VERIFIED"
     },
     {
@@ -1545,7 +1545,7 @@
     {
       "source_record_id": "T04-S0135",
       "theme_id": "TEMA_04",
-      "printed_page_range": "305",
+      "printed_page_range": "305-306",
       "book_heading": "4. Tema Ölçme ve Değerlendirme — Soru 6",
       "task_type": "QUESTION",
       "prompt": "Soru 6 — Tiyatro kişisine uygun kostüm seçiminde hangi özelliklerin dikkate alınması gerektiğini açıklayınız.",

@@ -242,7 +242,7 @@
       "question_id": "T2-P145-PERF01",
       "entry_type": "source_limited",
       "printed_page": 145,
-      "question_no": "Altı Şapka",
+      "question_no": "1",
       "prompt_summary": "Âşık atışmasını altı şapka tekniğiyle çok boyutlu değerlendirme",
       "answer": "Size verilen şapka sorusunu QR videosundan seçtiğiniz bir kanıtla yanıtlayın; kendi değerlendirmenizi gerekçelendirin.",
       "guidance": "Dünya malının geçiciliği, feleğin sillesi, vefasızlık, kültürel gurur veya belirli genel sonuçları video izlenmeden hazır cevap yapmayın. Her grup gerçek kanıt veya kişisel gerekçe sunmalıdır.",
@@ -255,13 +255,14 @@
         "Yeşil Şapka": "Atışmayı siz nasıl devam ettirirdiniz? → Yaratıcı devam öneriniz ve videonun sonundaki tema veya biçimle kurduğunuz bağ.",
         "Mavi Şapka": "Atışmayla ilgili genel düşünceniz nedir? → Diğer grupların bulgularını da dikkate alan gerekçeli sentez."
       },
-      "explanation": "Altı Şapka yanıtınızı videoda duyduğunuz veya gördüğünüz ayrıntılara ve kendi değerlendirmenize dayandırın."
+      "explanation": "Altı Şapka yanıtınızı videoda duyduğunuz veya gördüğünüz ayrıntılara ve kendi değerlendirmenize dayandırın.",
+      "activity_name": "Altı Şapka"
     },
     {
       "question_id": "T2-P146-PERF01",
       "entry_type": "performance_support",
       "printed_page": 146,
-      "question_no": "Görüş Geliştirme",
+      "question_no": "2",
       "prompt_summary": "Atışmaların şiir şeklinde söylenme nedenleriyle ilgili 4 yargıyı görüş geliştirme tekniğiyle değerlendirme",
       "answer": "Dört yargının her biri için kendi görüşünüzü gerekçelendirin. Arkadaşlarınızı dinledikten sonra görüşünüzü koruyabilir veya değiştirebilirsiniz.",
       "guidance": "Her yargı için destekleyen ve sorgulayan gerekçeler üretin. Dört yargının tamamını doğru kabul etmeniz gerekmez.",
@@ -288,7 +289,8 @@
           "Öğrenci Kararı": "[...] + gerekçe"
         },
         "Sonuç": "Arkadaşlarınızı dinledikten sonra ilk görüşünüzü koruyabilir veya değiştirebilirsiniz; tek bir ortak görüşe ulaşmanız gerekmez."
-      }
+      },
+      "activity_name": "Görüş Geliştirme"
     },
     {
       "question_id": "T2-P147-Q01",

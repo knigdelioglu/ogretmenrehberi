@@ -221,24 +221,58 @@
       }
     },
     {
-      "question_id": "T2-P133-PERF01",
       "entry_type": "performance_support",
       "printed_page": 133,
-      "question_no": "5-9",
-      "prompt_summary": "Görsel seçimi, söz varlığı, konuşma planı, konuşma metni ve geri bildirim süreci",
-      "answer": "Görsel destekli etkileşimli konuşmanın tasarlanması ve geri bildirim süreci şu basamaklarla yürütülebilir:",
-      "guidance": "Hedef kitlenize ve konuşma bağlamınıza uygun kelimeler seçin. “Yabancı özentisi kelimelerden arındırma” gibi etkinlikte istenmeyen ek ölçütler kullanmayın.",
-      "source_locator": "basılı s.133 / PDF s.134 — sorular 5-9",
-      "answer_sections": [
-        "1. Amaca Uygun Görsel Seçimi: Araştırmada doğrulanan her ana düşünce için içeriği gerçekten temsil eden ve kaynağı belli bir görsel seçin.",
-        "2. Görsel–Düşünce Bağlantısı: Görselin konuşmadaki hangi bilgiyi desteklediğini açıkça anlatın; görseli yalnız süs olarak kullanmayın.",
-        "3. Söz Varlığını Hedef Kitleye Uyarlama: Kelimeleri 11. sınıf dinleyicisinin anlayabileceği açıklıkta, bağlama ve amaca uygun seçin; bilinmeyen terimleri açıklayın.",
-        "4. Giriş–Gelişme–Sonuç Planı: Girişte konu/amaç, gelişmede doğrulanmış karşılaştırmalar, sonuçta ana düşünce ve kısa değerlendirme yer alsın.",
-        "5. Akran Geri Bildirimi: Taslağı bir arkadaşınıza sunun; anlaşılmayan kavramlar, gereksiz tekrarlar, görsel–söz uyumu ve konuşma akışı hakkındaki geri bildirimle düzenleyin."
-      ]
+      "question_id": "T2-P133-PERF01",
+      "question_no": "5",
+      "activity_name": "Amaca uygun görsel seçimi",
+      "prompt_summary": "Araştırmada doğrulanan ana düşünceleri temsil eden, kaynağı belli görseller seçme.",
+      "answer": "1. Amaca Uygun Görsel Seçimi: Araştırmada doğrulanan her ana düşünce için içeriği gerçekten temsil eden ve kaynağı belli bir görsel seçin.",
+      "source_locator": "basılı s.133 / PDF s.134 — adım 5"
     },
     {
+      "entry_type": "performance_support",
+      "printed_page": 133,
       "question_id": "T2-P133-PERF02",
+      "question_no": "6",
+      "activity_name": "Görsel-düşünce bağlantısı",
+      "prompt_summary": "Seçilen görselin konuşmada desteklediği bilgiyi açıklama.",
+      "answer": "2. Görsel–Düşünce Bağlantısı: Görselin konuşmadaki hangi bilgiyi desteklediğini açıkça anlatın; görseli yalnız süs olarak kullanmayın.",
+      "source_locator": "basılı s.133 / PDF s.134 — adım 6"
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 133,
+      "guidance": "Hedef kitlenize ve konuşma bağlamınıza uygun kelimeler seçin. “Yabancı özentisi kelimelerden arındırma” gibi etkinlikte istenmeyen ek ölçütler kullanmayın.",
+      "question_id": "T2-P133-PERF03",
+      "question_no": "7",
+      "activity_name": "Söz varlığını hedef kitleye uyarlama",
+      "prompt_summary": "Kelimeleri hedef kitlenin düzeyine, bağlama ve amaca göre seçme.",
+      "answer": "3. Söz Varlığını Hedef Kitleye Uyarlama: Kelimeleri 11. sınıf dinleyicisinin anlayabileceği açıklıkta, bağlama ve amaca uygun seçin; bilinmeyen terimleri açıklayın.",
+      "source_locator": "basılı s.133 / PDF s.134 — adım 7"
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 133,
+      "question_id": "T2-P133-PERF04",
+      "question_no": "8",
+      "activity_name": "Konuşma planı",
+      "prompt_summary": "Konuşmayı giriş, gelişme ve sonuç bölümlerinde planlama.",
+      "answer": "4. Giriş–Gelişme–Sonuç Planı: Girişte konu/amaç, gelişmede doğrulanmış karşılaştırmalar, sonuçta ana düşünce ve kısa değerlendirme yer alsın.",
+      "source_locator": "basılı s.133 / PDF s.134 — adım 8"
+    },
+    {
+      "entry_type": "performance_support",
+      "printed_page": 133,
+      "question_id": "T2-P133-PERF05",
+      "question_no": "9",
+      "activity_name": "Akran geri bildirimi",
+      "prompt_summary": "Taslağı akran geri bildirimiyle gözden geçirip düzenleme.",
+      "answer": "5. Akran Geri Bildirimi: Taslağı bir arkadaşınıza sunun; anlaşılmayan kavramlar, gereksiz tekrarlar, görsel–söz uyumu ve konuşma akışı hakkındaki geri bildirimle düzenleyin.",
+      "source_locator": "basılı s.133 / PDF s.134 — adım 9"
+    },
+    {
+      "question_id": "T2-P133-PERF06",
       "entry_type": "performance_support",
       "printed_page": 133,
       "question_no": "10",
