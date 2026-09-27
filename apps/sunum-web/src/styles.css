@@ -488,6 +488,30 @@ button {
   margin-top: 0.3em;
 }
 
+.sec--letter {
+  padding: 0.9em 1.1em;
+}
+
+.letter {
+  display: grid;
+  gap: 0.65em;
+  line-height: 1.45;
+}
+
+.letter p {
+  margin: 0;
+}
+
+.letter__date,
+.letter__closing,
+.letter__signature {
+  text-align: right;
+}
+
+.letter__salutation {
+  margin-top: 0.2em !important;
+}
+
 .list {
   margin: 0;
   padding: 0;

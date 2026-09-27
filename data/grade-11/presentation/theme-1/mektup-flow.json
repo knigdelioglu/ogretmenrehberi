@@ -256,8 +256,10 @@
       "id": "s45-process",
       "source_record_id": "T01-S0040",
       "layout": "process",
+      "prompt": "Mektubun farklı disiplinlerle ilişkisini keşfedelim",
+      "prompt_mode": "FLOW_OVERRIDE",
       "content": {
-        "lead": "Mektup türünü sosyal bilimlerle ilişkilendirerek farklı bakış açıları geliştirin."
+        "lead": "Mektuptaki ipuçlarından hareketle tarih, sosyoloji ve psikoloji alanlarında araştırma soruları oluşturun."
       },
       "answer_id": "T1-P45-PERF01"
     },
@@ -289,7 +291,8 @@
       "id": "s46-q4",
       "source_record_id": "T01-S0044",
       "answer_id": "T1-P46-Q04",
-      "layout": "structure"
+      "layout": "structure",
+      "sections_layout": "letter"
     },
     {
       "id": "s47-q1",

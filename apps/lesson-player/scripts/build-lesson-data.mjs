@@ -158,7 +158,7 @@ function resolveDensity(step) {
 
 function resolveSectionsLayout(step) {
   const layout = step.sections_layout ?? "grid";
-  if (layout !== "grid" && layout !== "two-column" && layout !== "stacked") {
+  if (layout !== "grid" && layout !== "two-column" && layout !== "stacked" && layout !== "letter") {
     fail(`Unsupported sections_layout "${layout}" for ${step.id}`);
   }
   return layout;

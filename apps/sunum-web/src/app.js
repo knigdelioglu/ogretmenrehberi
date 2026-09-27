@@ -419,13 +419,30 @@ function renderSections(sections, sectionsLayout = "grid") {
   }
   const entries = Object.entries(sections);
   if (!entries.length) return null;
+  const isLetter = sectionsLayout === "letter";
+  const renderLetter = (value) => {
+    const paragraphs = String(value ?? "").split(/\n\s*\n/).filter(Boolean);
+    return h("div", { class: "letter" }, paragraphs.map((paragraph, index) => {
+      let kind = "letter__body";
+      if (index === 0) kind = "letter__date";
+      else if (index === 1) kind = "letter__salutation";
+      else if (index === paragraphs.length - 2) kind = "letter__closing";
+      else if (index === paragraphs.length - 1) kind = "letter__signature";
+      return h("p", { class: kind }, paragraph);
+    }));
+  };
   return h(
     "div",
     {
-      class: `sections${sectionsLayout === "stacked" ? " sections--stacked" : ""}`,
-      style: `--cols:${sectionsLayout === "stacked" ? 1 : sectionsLayout === "two-column" ? 2 : columnsFor(entries.length)}`
+      class: `sections${sectionsLayout === "stacked" || isLetter ? " sections--stacked" : ""}`,
+      style: `--cols:${sectionsLayout === "stacked" || isLetter ? 1 : sectionsLayout === "two-column" ? 2 : columnsFor(entries.length)}`
     },
-    entries.map(([k, v]) => h("article", { class: "sec" }, h("h3", {}, humanKey(k)), renderValue(v)))
+    entries.map(([k, v]) => h(
+      "article",
+      { class: `sec${isLetter && k === "Örnek Mektup" ? " sec--letter" : ""}` },
+      h("h3", {}, humanKey(k)),
+      isLetter && k === "Örnek Mektup" ? renderLetter(v) : renderValue(v)
+    ))
   );
 }
 
@@ -485,7 +502,7 @@ function sectionPages(sections, step) {
   }
   const entries = Object.entries(sections);
   const groups = chunkByBudget(entries, {
-    maxItems: step.sections_layout === "stacked" ? 1 : 2,
+    maxItems: step.sections_layout === "stacked" || step.sections_layout === "letter" ? 1 : 2,
     maxChars: 1050
   });
   return groups.map((group) => ({ sections: Object.fromEntries(group.values) }));
