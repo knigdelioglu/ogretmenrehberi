@@ -153,27 +153,31 @@
       "entry_type": "question_answer",
       "printed_page": 47,
       "question_no": "2",
-      "prompt_summary": "Metinden ve gerçek hayattan örneklerle gerçeklik değerlendirmesini destekleme",
-      "answer": "Önce mektuptaki somut bilgiler belirlenir. Ardından bunların gerçek yaşamla bağlantısı güvenilir kaynaklardan kontrol edilir.",
-      "source_locator": "basılı s.47 / PDF s.48; biyografi s.38",
+      "prompt_summary": "1. sorudaki görüşü (metin–nesnel gerçeklik ilişkisi) metinden ve gerçek hayattan örneklerle destekleme",
+      "answer": "Mektuptaki tarih, yer, kişi ve olayların büyük kısmı Mehmet Kaplan'ın gerçek hayatıyla ve 1940 Türkiye'siyle örtüşür. Bu örnekler, metindeki gerçekliğin nesnel gerçekliğe dayandığını gösterir.",
+      "source_locator": "basılı s.47 / PDF s.48; ana metin ve biyografi s.37-38",
       "answer_sections": {
         "Metinden Örnekler": [
-          "“24 Haziran 940 İstanbul” ve “Fakülte’de imtihanlar başladı.”",
-          "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim...”",
+          "“24 Haziran 940 İstanbul” / “Fakülte’de imtihanlar başladı.”",
+          "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim; gelecek sene muhitini ve hayatını araştıracağım.”",
+          "“Hamdi Bey’le yine sathî bir samimiyetimiz var.”",
           "“Ara sıra Küllük kahvesine gidiyorum.”",
           "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.”",
-          "“Hamdi Bey’le yine sathî bir samimiyetimiz var.”"
+          "“Behice eve geliyor ve iyi saatler geçiriyoruz.”",
+          "“senin kıtanın başka yere nakledildiğini” / “Fakat yarın ne olacağımız belli değil.”"
         ],
-        "Kaynaklarda kontrol edilebilecekler": [
-          "Mektuptaki tarih, İstanbul ve fakülte sınavları bilgisi.",
-          "Namık Kemal’in eserlerinin okunup incelendiği bilgisi.",
-          "Küllük Kahvesi’nin yeri ve dönemin edebiyat çevrelerindeki yeri.",
-          "Eskişehir’e gitme planı ve yolculuğun gerçekleşip gerçekleşmediği.",
-          "Hamdi Bey’in kimliği; güvenilir bilgi bulunamazsa bu konu belirsiz bırakılmalı."
+        "Gerçek Hayattan Örnekler": [
+          "Kaplan 1935’te İstanbul Üniversitesi Edebiyat Fakültesine girmiş, 1939’da mezun olup aynı fakültede asistan olmuştur. 1940’ta gerçekten fakültenin içindedir.",
+          "Kaplan 1942’de doktorasını tamamlamış, Namık Kemal: Hayatı ve Eserleri adlı kitabını 1948’de yayımlamıştır. Mektuptaki çalışma planı gerçekleşmiştir.",
+          "Biyografiye göre Kaplan, Yeni Türk Edebiyatı kürsüsünde Ahmet Hamdi Tanpınar’la çalışmıştır. “Hamdi Bey” Tanpınar’dır.",
+          "Küllük Kahvesi, Beyazıt’ta üniversitenin yanında, dönemin yazar, şair ve aydınlarının buluştuğu gerçek bir mekândır.",
+          "Kaplan, Eskişehir’in Sivrihisar ilçesinde doğmuştur. Yaz tatilinde memleketine gitmesi bununla örtüşür.",
+          "Kaplan 1942’de Behice Moyuncur ile evlenmiştir. Mektuptaki Behice, onun ileride eşi olacak kişidir.",
+          "1940’ta İkinci Dünya Savaşı sürmektedir; Türkiye savaşa girmese de askerî hazırlık içindedir. Mektubun yazıldığı arkadaşı Âli Ölmezoğlu’nun “kıta”sının yer değiştirmesi ve belirsizlik duygusu bu ortamla örtüşür."
         ],
-        "Sunumda": "Mektupta yazanlarla dış kaynaklardan doğrulanan bilgileri ayrı belirtin."
+        "Dikkat": "Yalnızlık, vicdan azabı, Dostoyevski ve Fransız romanı hakkındaki yargılar yazarın öznel dünyasına aittir; gerçek hayattan doğrulanamaz. Bunlar “Gerçek Hayattan Örnekler” sütununa yazılmaz."
       },
-      "guidance": "Öğrenciden her satır için iki sütun kullanmasını isteyin: “Mektuptaki kanıt” ve “Dış kaynakta bulduğum karşılık”. Kaynak göstermeden biyografik eşleştirme yaptırmayın."
+      "guidance": "Öğrenciler “Metinden Örnekler” sütununa mektuptan alıntıyı, “Gerçek Hayattan Örnekler” sütununa bu alıntının araştırmayla bulunan karşılığını yazar. Biyografi (s.38) bu eşleştirmelerin çoğu için yeterli kaynaktır; diğerleri için kaynak göstermelerini isteyin."
     },
     {
       "question_id": "T1-P47-Q03",
