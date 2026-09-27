@@ -12,10 +12,11 @@ interface RenderRequest {
 const captureWidth = 1920;
 const captureHeight = 1080;
 const noOp = () => undefined;
+type FitAttempt = { requestId: string; level: 1 | 2 | 3 };
 
 export function ExportRenderPage() {
   const [request, setRequest] = useState<RenderRequest | null>(null);
-  const [compactFitRequestId, setCompactFitRequestId] = useState<string | null>(null);
+  const [fitAttempt, setFitAttempt] = useState<FitAttempt | null>(null);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -29,7 +30,7 @@ export function ExportRenderPage() {
       if (!next.requestId || !next.slide?.step || ![1, 2].includes(next.pixelRatio)) {
         return;
       }
-      setCompactFitRequestId(null);
+      setFitAttempt(null);
       setRequest(next);
     };
 
@@ -41,7 +42,7 @@ export function ExportRenderPage() {
   useLayoutEffect(() => {
     if (!request) return;
     let cancelled = false;
-    const compactFit = compactFitRequestId === request.requestId;
+    const fitLevel = fitAttempt?.requestId === request.requestId ? fitAttempt.level : 0;
 
     const render = async () => {
       try {
@@ -59,8 +60,11 @@ export function ExportRenderPage() {
         const vertical = Math.max(0, stage.scrollHeight - stage.clientHeight);
         const horizontal = Math.max(0, stage.scrollWidth - stage.clientWidth);
         if (vertical > 1 || horizontal > 1) {
-          if (!compactFit && request.slide.step.density !== "compact") {
-            setCompactFitRequestId(request.requestId);
+          if (fitLevel < 3) {
+            const nextLevel = fitLevel === 0
+              ? request.slide.step.density === "compact" ? 2 : 1
+              : (fitLevel + 1) as 1 | 2 | 3;
+            setFitAttempt({ requestId: request.requestId, level: nextLevel });
             return;
           }
 
@@ -69,7 +73,9 @@ export function ExportRenderPage() {
               type: "lesson-player-export-render-error",
               requestId: request.requestId,
               overflow: { vertical, horizontal },
-              fitAdjustment: compactFit ? "compact" : "none"
+              fitAdjustment: fitLevel === 3
+                ? "compact-ultra"
+                : fitLevel === 2 ? "compact-tight" : fitLevel === 1 ? "compact" : "none"
             },
             window.location.origin
           );
@@ -91,7 +97,9 @@ export function ExportRenderPage() {
             type: "lesson-player-export-rendered",
             requestId: request.requestId,
             dataUrl,
-            fitAdjustment: compactFit ? "compact" : "none"
+            fitAdjustment: fitLevel === 3
+              ? "compact-ultra"
+              : fitLevel === 2 ? "compact-tight" : fitLevel === 1 ? "compact" : "none"
           },
           window.location.origin
         );
@@ -112,20 +120,22 @@ export function ExportRenderPage() {
     return () => {
       cancelled = true;
     };
-  }, [compactFitRequestId, request]);
+  }, [fitAttempt, request]);
 
   const slide = request?.slide;
-  const fitAdjustment =
-    request && compactFitRequestId === request.requestId ? "compact" : "none";
+  const fitLevel = request && fitAttempt?.requestId === request.requestId ? fitAttempt.level : 0;
+  const fitAdjustment = fitLevel === 3
+    ? "compact-ultra"
+    : fitLevel === 2 ? "compact-tight" : fitLevel === 1 ? "compact" : "none";
   const renderedStep =
-    slide && fitAdjustment === "compact"
+    slide && fitLevel > 0
       ? { ...slide.step, density: "compact" as const }
       : slide?.step;
 
   return (
     <div
       id="export-slide-capture"
-      className="export-slide-capture"
+      className={`export-slide-capture${fitLevel >= 2 ? " export-fit-tight" : ""}${fitLevel === 3 ? " export-fit-ultra" : ""}`}
       data-export-render-ready={ready ? "true" : "false"}
       data-export-slide-id={slide ? `${slide.lessonId}:${slide.stepId}:${slide.slideNumber}` : undefined}
       data-lesson-id={slide?.lessonId}

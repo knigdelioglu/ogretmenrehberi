@@ -336,6 +336,54 @@ try {
   assert.equal(compactLayout.density, "density-compact", "fallback uses StepView's existing compact density preset");
   assert.ok(compactLayout.verticalOverflow <= 1 && compactLayout.horizontalOverflow <= 1, "compact retry has no clipped content");
 
+  const nestedAnswerSlides = planExportSlides([mektup], {
+    scope: "selected-steps",
+    currentLessonId: mektup.lesson_id,
+    currentStepId: "s40-q4",
+    selectedStepIds: ["s40-q4"],
+    view: "student",
+    revealMode: "stages",
+    quality: "high"
+  });
+  const nestedAnswerEvidenceRender = await renderInPage(page, nestedAnswerSlides.at(-1), 2);
+  assert.equal(nestedAnswerEvidenceRender.type, "lesson-player-export-rendered", "dense answer plus evidence slide fits the export viewport");
+  assert.equal(nestedAnswerEvidenceRender.fitAdjustment, "compact-tight", "a second explicit fit pass is used only when compact density still overflows");
+  const tightLayout = await page.evaluate(`(() => {
+    const stage = document.querySelector(".lesson-stage");
+    return {
+      verticalOverflow: stage ? stage.scrollHeight - stage.clientHeight : -1,
+      horizontalOverflow: stage ? stage.scrollWidth - stage.clientWidth : -1,
+      tight: document.getElementById("export-slide-capture")?.classList.contains("export-fit-tight")
+    };
+  })()`);
+  assert.equal(tightLayout.tight, true, "tight fit remains an export-only style on the same web renderer");
+  assert.ok(tightLayout.verticalOverflow <= 1 && tightLayout.horizontalOverflow <= 1, "tight retry has no clipped content");
+
+  const denseComparisonSlides = planExportSlides([mektup], {
+    scope: "selected-steps",
+    currentLessonId: mektup.lesson_id,
+    currentStepId: "s47-q2",
+    selectedStepIds: ["s47-q2"],
+    view: "student",
+    revealMode: "stages",
+    quality: "high"
+  });
+  const denseComparisonRender = await renderInPage(page, denseComparisonSlides[1], 2);
+  assert.equal(denseComparisonRender.type, "lesson-player-export-rendered", "long comparison answer fits after explicit dense fallback");
+  assert.equal(denseComparisonRender.fitAdjustment, "compact-ultra", "dense answer reports its final fit adjustment");
+  const ultraLayout = await page.evaluate(`(() => {
+    const stage = document.querySelector(".lesson-stage");
+    return {
+      verticalOverflow: stage ? stage.scrollHeight - stage.clientHeight : -1,
+      horizontalOverflow: stage ? stage.scrollWidth - stage.clientWidth : -1,
+      tight: document.getElementById("export-slide-capture")?.classList.contains("export-fit-tight"),
+      ultra: document.getElementById("export-slide-capture")?.classList.contains("export-fit-ultra")
+    };
+  })()`);
+  assert.equal(ultraLayout.tight, true, "final fallback includes the tight spacing pass");
+  assert.equal(ultraLayout.ultra, true, "final fallback uses export-only dense spacing");
+  assert.ok(ultraLayout.verticalOverflow <= 1 && ultraLayout.horizontalOverflow <= 1, "dense retry has no clipped content");
+
   const expectedSnapshot = JSON.parse(fs.readFileSync(snapshotPath, "utf8"));
   if (process.env.UPDATE_PPTX_VISUAL_SNAPSHOT === "1") {
     fs.writeFileSync(snapshotPath, `${JSON.stringify({

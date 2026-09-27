@@ -78,13 +78,19 @@ export async function capturePlannedSlide(
         cleanup();
         resolve({
           dataUrl: event.data.dataUrl as string,
-          fitAdjustment: event.data.fitAdjustment === "compact" ? "compact" : "none"
+          fitAdjustment: ["compact", "compact-tight", "compact-ultra"].includes(event.data.fitAdjustment)
+            ? event.data.fitAdjustment
+            : "none"
         });
       } else if (event.data.type === "lesson-player-export-render-error") {
         cleanup();
-        const fitSuffix = event.data.fitAdjustment === "compact"
-          ? " Kompakt yoğunlukta yeniden denendi."
-          : "";
+        const fitSuffix = event.data.fitAdjustment === "compact-ultra"
+          ? " Kompakt ve daraltılmış aralıklarla iki kez yeniden denendi."
+          : event.data.fitAdjustment === "compact-tight"
+            ? " Kompakt ve daraltılmış aralıklarla yeniden denendi."
+            : event.data.fitAdjustment === "compact"
+              ? " Kompakt yoğunlukta yeniden denendi."
+              : "";
         const issue = event.data.overflow
           ? `Taşma algılandı: ${slide.lessonId} / ${slide.stepId} / ${slide.revealLabel} (${event.data.overflow.vertical}px dikey, ${event.data.overflow.horizontal}px yatay). İçerik slayta sığmıyor.${fitSuffix}`
           : `Slayt ${slide.slideNumber} görsele dönüştürülemedi: ${event.data.error}`;
