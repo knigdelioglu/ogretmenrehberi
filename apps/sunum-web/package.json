@@ -1,0 +1,16 @@
+{
+  "name": "@ogretmenrehberi/sunum-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Netlify'da yayımlanan, kumandayla yönetilen şifreli ders sunumu.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "test": "node scripts/build.mjs && node scripts/test-data.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

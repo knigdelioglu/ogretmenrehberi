@@ -427,7 +427,15 @@ class ContentRepository(
                 explanation = value.optionalString("explanation"),
                 evidenceQuotes = value.optArray("evidence_quotes")?.strings() ?: emptyList(),
                 answerSections = value.optionalJson("answer_sections"),
-                sourceLocator = value.getString("source_locator")
+                sourceLocator = value.getString("source_locator"),
+                dictionaryTerms = value.optArray("dictionary_terms")?.objects { item ->
+                    val term = item.getString("term").trim()
+                    val meaning = item.getString("meaning").trim()
+                    require(term.isNotEmpty() && meaning.isNotEmpty()) {
+                        "Dictionary terms need a term and meaning"
+                    }
+                    DictionaryTerm(term, meaning, item.optionalString("source"))
+                } ?: emptyList()
             )
         }
 

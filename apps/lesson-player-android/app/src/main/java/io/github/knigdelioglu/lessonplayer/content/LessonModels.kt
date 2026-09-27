@@ -44,6 +44,12 @@ data class SourceRecord(
     val prompt: String?
 )
 
+data class DictionaryTerm(
+    val term: String,
+    val meaning: String,
+    val source: String? = null
+)
+
 data class AnswerEntry(
     val questionId: String,
     val entryType: String,
@@ -55,7 +61,8 @@ data class AnswerEntry(
     val explanation: String?,
     val evidenceQuotes: List<String>,
     val answerSections: JsonValue?,
-    val sourceLocator: String
+    val sourceLocator: String,
+    val dictionaryTerms: List<DictionaryTerm> = emptyList()
 )
 
 data class SupplementalSection(val title: String, val body: String)

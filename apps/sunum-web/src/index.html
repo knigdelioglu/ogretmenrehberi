@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="theme-color" content="#f5f2ea" />
+    <title>Ders Sunumu</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css?v=__BUILD_VERSION__" />
+  </head>
+  <body>
+    <!-- Şifre ekranı -->
+    <section id="gate" class="gate" hidden>
+      <form id="gate-form" class="gate__card" autocomplete="on">
+        <div class="gate__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z" /><path d="M9 20h6M12 16v4" /></svg>
+        </div>
+        <h1>Ders Sunumu</h1>
+        <p>11. Sınıf Türk Dili ve Edebiyatı</p>
+        <label class="gate__field">
+          <span>Şifre</span>
+          <input id="gate-password" type="password" name="password" autocomplete="current-password" required />
+        </label>
+        <label class="gate__remember">
+          <input id="gate-remember" type="checkbox" checked />
+          <span>Bu cihazda hatırla</span>
+        </label>
+        <button id="gate-submit" type="submit">Aç</button>
+        <p id="gate-error" class="gate__error" role="alert"></p>
+      </form>
+    </section>
+
+    <!-- Sunum sahnesi -->
+    <main id="viewport" class="viewport" hidden>
+      <div id="canvas" class="canvas" aria-live="polite"></div>
+
+      <button class="edge edge--prev" type="button" data-action="prev" aria-label="Geri"></button>
+      <button class="edge edge--next" type="button" data-action="next" aria-label="İleri"></button>
+
+      <nav id="dock" class="dock" aria-label="Sunum kontrolleri">
+        <button type="button" data-action="prev" title="Geri (←)" aria-label="Geri">
+          <svg viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" /></svg>
+        </button>
+        <span id="dock-counter" class="dock__counter"></span>
+        <button type="button" data-action="next" title="İleri (→)" aria-label="İleri">
+          <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" /></svg>
+        </button>
+        <span class="dock__sep"></span>
+        <button type="button" data-action="menu" title="Dersler (M)" aria-label="Dersler">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" /></svg>
+        </button>
+        <button type="button" data-action="theme" title="Açık / koyu (T)" aria-label="Tema">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" /></svg>
+        </button>
+        <button type="button" data-action="fullscreen" title="Tam ekran (F)" aria-label="Tam ekran">
+          <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /></svg>
+        </button>
+        <button type="button" data-action="help" title="Kısayollar (?)" aria-label="Kısayollar">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17.5v.01" /></svg>
+        </button>
+      </nav>
+
+      <div id="jump" class="jump" hidden></div>
+      <div id="blank" class="blank" hidden></div>
+    </main>
+
+    <!-- Ders menüsü -->
+    <aside id="menu" class="menu" hidden>
+      <div class="menu__panel" role="dialog" aria-modal="true" aria-label="Dersler">
+        <header class="menu__head">
+          <div id="menu-tabs" class="menu__tabs" role="tablist"></div>
+          <button type="button" class="menu__close" data-action="close-menu" aria-label="Kapat">
+            <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" /></svg>
+          </button>
+        </header>
+        <div class="menu__body">
+          <ol id="menu-lessons" class="menu__lessons"></ol>
+          <ol id="menu-steps" class="menu__steps"></ol>
+        </div>
+        <footer class="menu__foot">
+          <span id="menu-build"></span>
+          <div class="menu__foot-actions">
+            <label class="menu__setting">
+              <input id="menu-guide" type="checkbox" data-action="toggle-guide-remote" />
+              <span>Kumanda yönlendirme ve açıklamayı da açsın</span>
+            </label>
+            <button type="button" data-action="logout">Bu cihazda şifreyi unut</button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <!-- Kısayollar -->
+    <aside id="help" class="help" hidden>
+      <div class="help__panel" role="dialog" aria-modal="true" aria-label="Kısayollar">
+        <h2>Kumanda ve klavye</h2>
+        <dl>
+          <dt>İleri · → · ↓ · PageDown · Boşluk · Enter</dt>
+          <dd>Sıradaki katmanı aç (cevap, metinden kanıt); uzun içerikte önce aşağı kaydırır; hepsi bittiyse sonraki slayt</dd>
+          <dt>Geri · ← · ↑ · PageUp</dt>
+          <dd>Son açılan katmanı kapat; yoksa önceki slayt</dd>
+          <dt>Shift + → / ←</dt>
+          <dd>Katmanları atlayıp doğrudan slayt değiştir</dd>
+          <dt>Y · A</dt>
+          <dd>Öğretmen yönlendirmesini · açıklamayı göster / gizle</dd>
+          <dt>B veya . &nbsp;·&nbsp; W veya ,</dt>
+          <dd>Siyah ekran · beyaz ekran</dd>
+          <dt>F · F5</dt>
+          <dd>Tam ekran aç / kapat</dd>
+          <dt>M</dt>
+          <dd>Ders ve slayt menüsü</dd>
+          <dt>Rakam + Enter</dt>
+          <dd>O numaralı slayta git (0 = ders kapağı)</dd>
+          <dt>Home · End</dt>
+          <dd>Dersin başı · sonu</dd>
+          <dt>T</dt>
+          <dd>Açık / koyu görünüm</dd>
+        </dl>
+        <p>Akıllı tahtada ekranın sağ ve sol kenarına dokunmak veya kaydırmak da ileri / geri yapar.</p>
+      </div>
+    </aside>
+
+    <script type="module" src="app.js?v=__BUILD_VERSION__"></script>
+  </body>
+</html>

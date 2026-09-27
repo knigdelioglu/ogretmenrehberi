@@ -1,0 +1,9 @@
+{
+  "name": "Ders Sunumu",
+  "short_name": "Sunum",
+  "start_url": "./",
+  "display": "fullscreen",
+  "background_color": "#1a1d21",
+  "theme_color": "#f5f2ea",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

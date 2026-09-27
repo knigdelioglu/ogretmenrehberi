@@ -41,13 +41,18 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import io.github.knigdelioglu.lessonplayer.content.DictionaryTerm
+import io.github.knigdelioglu.lessonplayer.content.JsonValue
+import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonStep
 import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import io.github.knigdelioglu.lessonplayer.player.LessonCommand
 import io.github.knigdelioglu.lessonplayer.player.LessonEngine
 import io.github.knigdelioglu.lessonplayer.player.LessonSession
 import io.github.knigdelioglu.lessonplayer.ui.GlossaryText
+import io.github.knigdelioglu.lessonplayer.ui.readableAnswerValue
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonColors
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonSpacing
 import io.github.knigdelioglu.lessonplayer.ui.theme.LessonTarget
@@ -69,6 +74,7 @@ fun LessonV2TeacherAssistPane(
 ) {
     val effectiveStep = LessonEngine.effectiveStep(step, session.overrides[step.id])
     val answer = effectiveStep.answer
+    val dictionaryTerms = teacherDictionaryTerms(effectiveStep)
     var expandedPanels by rememberSaveable {
         mutableStateOf(setOf(RevealKey.GUIDANCE, RevealKey.EXPLANATION, RevealKey.EVIDENCE))
     }
@@ -86,7 +92,7 @@ fun LessonV2TeacherAssistPane(
     val hasExplanation = RevealKey.EXPLANATION in effectiveStep.revealOrder && !answer?.explanation.isNullOrBlank()
     val hasEvidence = RevealKey.EVIDENCE in effectiveStep.revealOrder && !answer?.evidenceQuotes.isNullOrEmpty()
     val hasNote = !effectiveStep.content?.note.isNullOrBlank()
-    val hasAnyAssist = hasGuidance || hasExplanation || hasEvidence || hasNote
+    val hasAnyAssist = dictionaryTerms.isNotEmpty() || hasGuidance || hasExplanation || hasEvidence || hasNote
     val ordinal = session.order.indexOf(session.stepId)
 
     Surface(
@@ -122,6 +128,10 @@ fun LessonV2TeacherAssistPane(
                             )
                         }
                     }
+                }
+
+                if (dictionaryTerms.isNotEmpty()) {
+                    item { DictionaryCard(dictionaryTerms) }
                 }
 
                 // 1. Yönlendirme (Guidance) - Soft Mavi
@@ -222,6 +232,63 @@ fun LessonV2TeacherAssistPane(
                             .testTag("lesson-next")
                     ) {
                         Text("Sonraki", maxLines = 1)
+                    }
+                }
+            }
+        }
+    }
+}
+
+private fun teacherDictionaryTerms(step: LessonStep): List<DictionaryTerm> {
+    val answer = step.answer ?: return emptyList()
+    if (answer.dictionaryTerms.isNotEmpty()) return answer.dictionaryTerms
+    if (step.layout != LayoutKind.VOCABULARY) return emptyList()
+
+    return (answer.answerSections as? JsonValue.Object)?.values.orEmpty().mapNotNull { (term, value) ->
+        val meaning = readableAnswerValue(value).trim()
+        if (term.isBlank() || meaning.isBlank()) null else DictionaryTerm(term, meaning)
+    }
+}
+
+@Composable
+private fun DictionaryCard(terms: List<DictionaryTerm>) {
+    Surface(
+        modifier = Modifier.fillMaxWidth().testTag("teacher-dictionary-card"),
+        shape = RoundedCornerShape(12.dp),
+        color = LessonColors.Surface,
+        border = BorderStroke(1.dp, LessonColors.Border)
+    ) {
+        Column(
+            modifier = Modifier.padding(12.dp),
+            verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+        ) {
+            Text(
+                text = "SÖZLÜK",
+                style = MaterialTheme.typography.labelLarge,
+                color = LessonColors.Primary,
+                fontWeight = FontWeight.Bold
+            )
+            terms.forEach { term ->
+                Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    Text(
+                        text = term.term,
+                        style = MaterialTheme.typography.titleSmall,
+                        color = LessonColors.TextPrimary,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Text(
+                        text = term.meaning,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = LessonColors.TextPrimary
+                    )
+                    term.source?.takeIf { it.isNotBlank() }?.let { source ->
+                        Text(
+                            text = source,
+                            style = MaterialTheme.typography.labelSmall,
+                            color = LessonColors.TextSecondary,
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis
+                        )
                     }
                 }
             }
