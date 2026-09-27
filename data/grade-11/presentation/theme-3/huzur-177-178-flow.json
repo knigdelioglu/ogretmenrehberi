@@ -39,18 +39,22 @@
       "source_record_id": "T03-S0030",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Basılı s.177’deki Mescid-i Aksa şiirini ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
+      "prompt": "Basılı s.177’de görünen görseli ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.177’de M. Akif İnan’ın “Mescid-i Aksa” şiiri, caminin fotoğrafı üzerinde altı dörtlük hâlinde tam olarak yer alır.",
+        "lead": "Verilen ders kitabı PDF’sinin basılı s.177 / PDF s.178 görüntüsünde Mescid-i Aksa fotoğrafı görünür; şiir dizeleri görüntüde yer almıyor.",
         "sections": [
           {
-            "title": "Metin kanıtı",
-            "body": "Şiirin içerik, şekil ve üslup özelliklerini dizelerden belirleyin: altı dörtlük, 11’li hece ölçüsü, konuşan ve ağlayan mescit."
+            "title": "Görsel",
+            "body": "Sayfada Mescid-i Aksa fotoğrafı bulunur."
           },
           {
-            "title": "Karşılaştırma yolu",
-            "body": "Huzur sütununu okuduğunuz kesitten, Mescid-i Aksa sütununu şiirin dizelerinden doldurun; her hücreyi metinden bir kanıtla destekleyin."
+            "title": "Kaynak sınırı",
+            "body": "Fotoğraftan şiirin içeriği, biçimi veya üslubu çıkarılamaz. Başka baskı ya da dijital sürümde metnin bulunduğu eldeki PDF’den doğrulanamaz."
+          },
+          {
+            "title": "Karşılaştırma yönergesi",
+            "body": "Kitap s.178’de Huzur ile Mescid-i Aksa’yı karşılaştırmayı ister; şiir metni doğrulanmış biçimde sağlanıncaya kadar yalnız Huzur tarafını doldurun."
           }
         ]
       }
@@ -64,7 +68,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P177-COMP01",
       "content": {
-        "lead": "Huzur sütununu okuduğunuz kesitten, Mescid-i Aksa sütununu s.177’deki dizelerden doldurun; her ölçütte iki metni birlikte ele alın.",
+        "lead": "Huzur sütununu okuduğunuz kesitten doldurun. Mescid-i Aksa sütununu, şiirin doğrulanmış tam metni sağlanıncaya kadar tamamlamayın.",
         "items": [
           "İçerik",
           "Tür",
@@ -120,8 +124,8 @@
             "body": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin. “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir ve kimlik ilişkisiyle açıklayın."
           },
           {
-            "title": "Mescid-i Aksa — dönem ve zihniyet",
-            "body": "Kitap yalnız şairin adını verir; sade dil ve 11’li hece ölçüsü Cumhuriyet Dönemi şiirine uygundur. İlk kıble, Nebi, Burak ve Miraç göndermeleri ile “Kucaklasın beni İslâm” çağrısı, kutsal mekânı ortak inanç hafızasının parçası sayan İslâmî duyarlılığı gösterir."
+            "title": "Mescid-i Aksa — kaynak sınırı",
+            "body": "Şiir dizeleri verilen PDF’de görünmediğinden dönem ve zihniyet çıkarımı bu kaynağa dayanarak yapılamaz. Başka sürüm veya harici kaynak doğrulanmış sayılmamalıdır."
           }
         ]
       }
@@ -134,19 +138,15 @@
       "prompt": "İki metnin üslup ve iletisini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Üslup “nasıl anlatılmış?”, ileti ise “metnin hangi düşünceyi öne çıkardığı?” sorusuna cevap verir; her iki cevap için metinden dayanak gösterin.",
+        "lead": "Üslup ve ileti yorumunu her metnin doğrulanmış içeriğine dayandırın. Bu PDF’de yalnız Huzur tarafı metin kanıtıyla ele alınabiliyor.",
         "sections": [
           {
             "title": "Huzur — üslup ve ileti",
             "body": "Betimleyici, düşünsel ve şiirsel düzyazıda şehir ve musiki tasvirlerinin Mümtaz’ın iç dünyasıyla nasıl birleştiğini inceleyin. Şehir ve kültür mirasıyla bağın kimliği anlamaya katkısını metinden örneklerle açıklayın."
           },
           {
-            "title": "Mescid-i Aksa — üslup ve ileti",
-            "body": "Kişileştirme (ağlayan, konuşan mescit), benzetme (“bir çocuk gibi”, “yetim vâha”), sitemli soru ve dinî söz varlığı. İleti: Mescid-i Aksa unutulmamalı; Müslümanlar ona ve birbirlerine sahip çıkmalıdır."
-          },
-          {
-            "title": "Karşılaştırma",
-            "body": "İki metin de mekânı hafıza ve kimlikle ilişkilendirir; Huzur bunu düzyazı ve düşünce tartışmasıyla, şiir konuşan mekân ve doğrudan çağrıyla yapar."
+            "title": "Mescid-i Aksa — kaynak sınırı",
+            "body": "Şiirin dizeleri bu PDF görüntüsünde yer almadığı için üslup ve ileti ölçütleri tamamlanamaz; şiir metni doğrulanmış bir kaynakla sağlandığında yeniden ele alınmalıdır."
           }
         ]
       }

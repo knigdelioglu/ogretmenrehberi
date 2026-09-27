@@ -32,51 +32,24 @@
     },
     {
       "question_id": "T3-P177-COMP01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Huzur, okunan kesitte İstanbul üzerinden kültürel kimlik arayışını düzyazıyla işler; Mescid-i Aksa ise kişileştirilen kutsal mekânın ağzından özlem ve dayanışma çağrısını 11’li hece ölçüsüyle yazılmış altı dörtlükte dile getirir. İki metin de mekânı hafıza ve kimlikle ilişkilendirir.",
-      "source_locator": "basılı s.177 “Mescid-i Aksa” şiiri (altı dörtlük, fotoğrafın üzerinde) ve s.178 Karşılaştıralım tablosu / PDF s.178-179",
+      "answer": "Huzur sütunu, temada okunan roman kesitine göre doldurulabilir. Verilen kanonik ders kitabı PDF’sinin basılı s.177 / PDF s.178 görüntüsünde Mescid-i Aksa fotoğrafı görünür; şiirin dizeleri görünmediğinden o metne bağlı karşılaştırma ölçütleri kesin yanıtlanamaz. Doğrulanmış tam şiir metni sağlandığında Mescid-i Aksa sütunu tamamlanmalıdır.",
+      "source_locator": "basılı s.177 / PDF s.178 — Mescid-i Aksa fotoğrafı; şiir metni verilen PDF görüntüsünde görünmüyor; basılı s.178 / PDF s.179 — Karşılaştıralım yönergesi",
       "answer_sections": {
-        "İçerik": {
-          "Huzur": "Mümtaz ile Nuran’ın İstanbul ve Boğaz gezileri; eski musiki, tarihî mekânlar, yoksul semtler ve geçmiş–yeni hayat tartışması.",
-          "Mescid-i Aksa": "Şiir kişisi rüyasında Mescid-i Aksa’yı ağlayan bir çocuk gibi görür; mescit ilk kıble oluşunu, Burak ve Miraç hatırasını, müminlerle dolu geçmişini ve bugünkü yalnızlığını anlatarak Müslümanlara selam ve kavuşma çağrısı gönderir."
+        "Huzur": {
+          "İçerik": "Mümtaz ile Nuran’ın İstanbul ve Boğaz gezileri; eski musiki, tarihî mekânlar, yoksul semtler ve geçmiş–yeni hayat tartışması.",
+          "Tür": "Roman; kurmaca düzyazı. Kitapta romandan kesitler okunur.",
+          "Şekil": "Düzyazı; paragraflar, betimlemeler ve diyaloglarla ilerler.",
+          "Dönem": "Cumhuriyet Dönemi. Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması da bu döneme işaret eder.",
+          "Zihniyet": "Modernleşme sürecinde geçmişle bağını kaybetmeden yeni bir hayat kurma arayışı; kimliğin tarih, şehir ve musikiden beslendiği anlayışı.",
+          "Üslup": "Betimleyici, çağrışımlı, düşünsel ve şiirsel düzyazı; uzun cümlelerde mekân, musiki ve iç dünya iç içe geçer.",
+          "İleti": "Geleceği kurmak için geçmişle ve kültürel mirasla bağ kurmak gerekir; şehri tanımak insanın kendini tanımasıdır."
         },
-        "Tür": {
-          "Huzur": "Roman; kurmaca düzyazı. Kitapta romandan kesitler okunur.",
-          "Mescid-i Aksa": "Şiir; lirik söyleyişli, dinî duyarlılık taşıyan bir şiir."
-        },
-        "Şekil": {
-          "Huzur": "Düzyazı; paragraflar, betimlemeler ve diyaloglarla ilerler.",
-          "Mescid-i Aksa": "Altı dörtlük (24 dize); 11’li hece ölçüsü (6+5: “Mescid-i Aksa’yı / gördüm düşümde”); dörtlüklerde 2. ve 4. dizeler uyaklıdır (ağlıyordu / çağlıyordu, üssü idim / kürsü idim)."
-        },
-        "Dönem": {
-          "Huzur": "Cumhuriyet Dönemi. Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması da bu döneme işaret eder.",
-          "Mescid-i Aksa": "Kitap yalnız şairin adını (M. Akif İnan) verir. Sade Türkçe ve hece ölçüsü Cumhuriyet Dönemi şiirine uygundur; şairin yaşam tarihleri için açıklamaya bakınız."
-        },
-        "Zihniyet": {
-          "Huzur": "Modernleşme sürecinde geçmişle bağını kaybetmeden yeni bir hayat kurma arayışı; kimliğin tarih, şehir ve musikiden beslendiği anlayışı.",
-          "Mescid-i Aksa": "İslâmî duyarlılık ve ümmet bilinci; kutsal mekânı ortak inanç hafızasının parçası sayma, ona sahip çıkılmamasını sitemle karşılama."
-        },
-        "Üslup": {
-          "Huzur": "Betimleyici, çağrışımlı, düşünsel ve şiirsel düzyazı; uzun cümlelerde mekân, musiki ve iç dünya iç içe geçer.",
-          "Mescid-i Aksa": "Kişileştirme (ağlayan, konuşan mescit), benzetme (“bir çocuk gibi”, “yetim vâha”), sitemli soru (“Unuttu mu bunu acaba herkes”) ve dinî söz varlığı (kıble, Nebi, Burak, Miraç); sade, içten, yakarış tonlu söyleyiş."
-        },
-        "İleti": {
-          "Huzur": "Geleceği kurmak için geçmişle ve kültürel mirasla bağ kurmak gerekir; şehri tanımak insanın kendini tanımasıdır.",
-          "Mescid-i Aksa": "Mescid-i Aksa Müslümanların ortak değeridir; unutulmamalı, ona sahip çıkılmalı ve Müslümanlar birlik olmalıdır."
-        },
-        "Karşılaştırma sonucu": "İki metinde de mekân, geçmişin hatırasını taşıyan ve kimliği besleyen bir değerdir; ikisinde de geçmişin görkemi ile bugünkü ihmal arasında karşıtlık vardır (Üsküdar’ın yoksul semtleri — tenha kalan mescit). Huzur bunu kişilerin düşünce ve tartışmaları üzerinden düzyazıyla, şiir ise mekânı konuşturarak ölçülü-uyaklı biçimde ve dinî dayanışma ekseninde işler."
-      },
-      "explanation": "Şiir, basılı s.177’de Mescid-i Aksa fotoğrafının üzerinde altı dörtlük hâlinde tam olarak yer alır; karşılaştırma bu dizelere dayanır. Dönem ölçütü için kitap dışı bilgi (öğretmen için): M. Akif İnan (1940-2000) Cumhuriyet Dönemi şairidir; Huzur ilk kez 1949’da yayımlanmıştır. Bu bilgiler sınıfta kullanılırsa kitap dışı olduğu belirtilmelidir.",
-      "evidence_quotes": [
-        "Bir çocuk gibiydi ve ağlıyordu",
-        "İlk Kıblesi benim ulu Nebi’nin",
-        "Unuttu mu bunu acaba herkes",
-        "Kucaklasın beni İslâm diyordu",
-        "Bir hüviyet lâzım."
-      ]
+        "Mescid-i Aksa": "Şiirin doğrulanmış tam metni verilen PDF’de görünmediğinden içerik, tür, şekil, dönem, zihniyet, üslup ve ileti ölçütleri bu kaynağa dayanarak tamamlanamaz."
+      }
     },
     {
       "question_id": "T3-P178-PERF01",
