@@ -73,7 +73,7 @@ function pick(obj, keys) {
 }
 
 function slimStep(step, themeId) {
-  const includeTeacherSupport = themeId !== "TEMA_01";
+  const includeTeacherSupport = themeId !== "TEMA_01" && themeId !== "TEMA_02";
   const answerFields = [
     "entry_type",
     "question_no",
