@@ -44,35 +44,35 @@
       "printed_page": 165,
       "question_no": "Fark Edelim 1-4",
       "prompt_summary": "Huzur, rüya, saz, boğaz, tarih ve garp kelimelerini farklı yaşam bağlamlarında kullanma ve cümle duvarı oluşturma",
-      "answer": "Altı kelimenin farklı anlam ve çağrışımlarını gösteren örnekler aşağıdadır. Her kelimeyi siz de kendi cümlenizde, farklı bir bağlamda kullanın.",
+      "answer": "Altı kelimenin kişinin kendi yaşamıyla ilişkilendirilebilecek farklı anlam ve çağrışımlarına örnekler aşağıdadır.",
       "source_locator": "basılı s.165-166 / PDF s.166-167 — Fark Edelim",
       "answer_sections": {
         "huzur": [
-          "“Sessiz ortam ona huzur verdi.” — iç rahatlığı, dinginlik.",
-          "“Heyet, yetkilinin huzuruna çıktı.” — ön, kat, makam anlamına gelen kalıplaşmış kullanım."
+          "“Yoğun bir günün ardından odamda sessizce oturmak bana huzur veriyor.” — iç rahatlığı, dinginlik.",
+          "“Tören sırasında müdürün huzuruna çıktım.” — bir kişinin önü, yanı veya makamı."
         ],
         "rüya": [
-          "“Gece gördüğü rüyayı sabah hatırladı.” — uykuda görülen düş.",
-          "“Bir gün kendi kitabını yayımlamak onun rüyasıydı.” — çok istenen hayal/hedef."
+          "“Gece gördüğüm rüyayı sabah hâlâ hatırlıyordum.” — uykuda görülen düş.",
+          "“Bir gün kendi kitabımı yayımlamak benim rüyalarımdan biri.” — çok istenen hayal veya hedef."
         ],
         "saz": [
-          "“Sazın tellerini akort etti.” — telli çalgı/bağlama.",
-          "“Göl kıyısındaki sazlar rüzgârda sallanıyordu.” — sulak alan bitkisi."
+          "“Bir arkadaşımın çaldığı sazı dinlemekten hoşlanıyorum.” — telli çalgı, bağlama.",
+          "“Geçen yaz göl kıyısındaki sazların arasında yürüdüm.” — sulak alan bitkisi."
         ],
         "boğaz": [
-          "“Soğuk içecekten sonra boğazı ağrıdı.” — anatomik bölge.",
-          "“Gemi dar boğazdan geçti.” — iki su kütlesini bağlayan dar su yolu."
+          "“Soğuk içecekten sonra boğazım ağrıdı.” — anatomik bölge.",
+          "“İstanbul Boğazı’nı vapurla geçmek beni her zaman etkiler.” — iki denizi birbirine bağlayan dar su yolu."
         ],
         "tarih": [
-          "“Formun üstüne bugünün tarihini yazdı.” — gün/ay/yıl belirten zaman.",
-          "“Tarih, geçmiş toplumları ve olayları inceleyen bir alandır.” — geçmişi inceleyen bilim/alan."
+          "“Defterimin ilk sayfasına bugünün tarihini yazdım.” — gün, ay ve yılı belirten zaman.",
+          "“Tarih derslerinde geçmiş toplumların yaşantısını öğrenmeyi seviyorum.” — geçmiş olayları inceleyen bilim alanı."
         ],
         "garp": [
-          "“Eski metinde güneşin garptan battığı söyleniyordu.” — batı yönü.",
-          "“Metinde Garp sözü Batı dünyasını anlatmak için kullanılmıştı.” — Batı dünyası/kültür çevresi."
+          "“Eski bir metinde güneşin garptan battığını okudum.” — batı yönü.",
+          "“Okuduğum romanda Garp, Batı dünyası ve kültürü anlamında kullanılıyordu.” — Batı dünyası veya kültür çevresi."
         ]
       },
-      "explanation": "Bir kelime farklı bağlamlarda farklı anlamlar ve çağrışımlar kazanabilir. Kendi cümlelerinizle bu farkları gösterin."
+      "explanation": "Aynı kelime, kullanıldığı bağlama göre farklı anlamlar ve çağrışımlar kazanabilir."
     },
     {
       "question_id": "T3-P166-PERF01",
@@ -80,16 +80,23 @@
       "printed_page": 166,
       "question_no": "Sıra Sizde 1-3",
       "prompt_summary": "Rastgele seçilen kelimelerden Huzur'un konusu ile dil ve anlatımına ilişkin tahmin geliştirme",
-      "answer": "Metne göz gezdirirken seçtiğiniz kelimeleri gruplandırın; ardından bu kelimelerden hareketle konu ve dil tahmininizi oluşturun.",
+      "answer": "Örnek seçim: “Boğaz, İstanbul, vapur, hüzün, musiki, cami, mezarlık, akşam”. Bu kelimeler metnin İstanbul ve Boğaz çevresinde geçmiş, kültür, musiki ve insanın iç dünyasını ele alabileceğini düşündürür; dilin ise betimleyici, çağrışımlı ve yer yer mecazlı olabileceğini gösterir.",
       "source_locator": "basılı s.166 / PDF s.167 — Sıra Sizde",
       "answer_sections": {
-        "1. Seçtiğim kelimeler": "Metne göz gezdirirken dikkatimi çeken 5–8 kelime veya kelime grubu.",
-        "2. Anlam alanları": "Seçtiklerimi benzer çağrışımlara göre grupladım: mekân / insan / duygu / zaman / ses / kendi kategorim.",
-        "3. Konu tahminim": "“Bu kelimeler bana metnin ... hakkında olabileceğini düşündürüyor; çünkü ...”",
-        "4. Dil ve anlatım tahminim": "“Seçtiğim ... ifadelerinden hareketle dilin ... olabileceğini tahmin ediyorum.”",
-        "5. Okuma sonrası kontrol": "Tahminim doğrulandı / kısmen doğrulandı / değişti. Metindeki dayanağım: ..."
+        "Seçilen kelime ve kelime grupları": [
+          "Boğaz",
+          "İstanbul",
+          "vapur",
+          "hüzün",
+          "musiki",
+          "cami",
+          "mezarlık",
+          "akşam"
+        ],
+        "Konu tahmini": "İstanbul ve Boğaz çevresinde geçmiş, kültür, musiki ve insanın iç dünyasının işleneceği tahmin edilebilir.",
+        "Dil ve anlatım tahmini": "Mekân, duygu ve sanatla ilgili kelimelerin yoğunluğu; betimleyici, çağrışımlı ve yer yer mecazlı bir anlatımı düşündürür."
       },
-      "explanation": "Metne göz gezdirirken seçtiğiniz kelimelerden bir tahmin kurun; tamamını okuduktan sonra tahmininizi metin kanıtıyla sınayın."
+      "explanation": "Tahmin, metne göz gezdirildiğinde görülen kelime ve kelime gruplarına dayanır."
     },
     {
       "question_id": "T3-P166-PERF02",
@@ -97,17 +104,15 @@
       "printed_page": 166,
       "question_no": "Metni Okuyalım 1-2",
       "prompt_summary": "Huzur için uygun okuma yöntemi, vurgu ve tonlama seçme",
-      "answer": "Metne göz gezdirdikten sonra fark ettiğiniz özelliklere uygun bir okuma stratejisi seçin. Aşağıdaki seçeneklerden yararlanabilir veya kendi stratejinizi belirleyebilirsiniz:",
+      "answer": "Huzur kesiti için işaretleyerek ve not alarak okuma; uzun cümlelerde anlam öbeklerini izleme ve diyaloglarda konuşmacı değişimine uygun vurgu-tonlama kullanma elverişlidir.",
       "source_locator": "basılı s.166-170 / PDF s.167-171 — Metni Okuyalım",
       "answer_sections": {
-        "Anlam öbeklerine ayırma": "Uzun veya yoğun bir cümleyle karşılaşıldığında noktalama ve anlam ilişkilerine göre küçük bölümlere ayırıp ana yargıyı bulma.",
-        "İşaretleyerek okuma": "Bilinmeyen kelime, dikkat çeken mekân/duygu/sanat ifadeleri ve önemli görülen düşünceleri farklı işaretlerle belirleme.",
-        "Not alarak okuma": "Kişi, mekân ve düşünceler hakkında kısa kenar notları yazma; aynı unsur tekrarlandığında önceki notla ilişkilendirme.",
-        "Diyalog takibi": "Konuşma bölümlerinde konuşmacıyı ve görüş değişimini takip etme; kişilerin düşüncelerini birbirine karıştırmama.",
-        "Vurgu ve tonlama": "Betimleme ve düşünce bölümlerinde anlamı açık kılacak doğal hız ve duraklamayı kullanma; diyaloglarda konuşmacı değişimini belli etme; abartılı tiyatro tonuna kaçmama.",
-        "Kişisel seçim gerekçesi": "“Bu stratejiyi seçiyorum; çünkü metne göz gezdirdiğimde [...] özelliğini fark ettim.”"
+        "İşaretleyerek okuma": "Mekân, duygu, musiki, geçmiş ve kültürle ilgili ifadelerin belirlenmesi metnin ana düşünce alanlarını izlemeyi kolaylaştırır.",
+        "Not alarak okuma": "Mümtaz, Nuran, İstanbul, Boğaz, musiki ve geçmiş-yeni hayat ilişkisine dair kısa notlar metindeki bağlantıları görünür kılar.",
+        "Anlam öbeklerine ayırma": "Uzun ve yoğun cümleler, noktalama ve anlam ilişkilerine göre bölümlere ayrılarak daha açık okunabilir.",
+        "Vurgu ve tonlama": "Betimleme ve düşünce bölümlerinde doğal duraklama; diyaloglarda ise konuşmacı değişimini belli eden tonlama metnin anlamını destekler."
       },
-      "explanation": "Metne göz gezdirdikten sonra kendinize uygun bir strateji seçin; okurken gerekli vurgu ve tonlamayı metnin anlamına göre kullanın."
+      "explanation": "Metnin uzun betimlemeleri, düşünce bölümleri ve diyalogları bu stratejileri uygun hâle getirir."
     },
     {
       "question_id": "T3-P172-VOC01",
@@ -115,7 +120,7 @@
       "printed_page": 172,
       "question_no": "Söz Varlığımız 1-2",
       "prompt_summary": "Huzur'daki dokuz kelimenin bağlamsal anlamları ve yerine kullanılabilecek sözcükler",
-      "answer": "Önce kelimenin Huzur’daki bağlamından anlamını tahmin edin. Ardından karekodla açılan TDK Güncel Türkçe Sözlük’ten kontrol edin. Aşağıdaki açıklamalar metindeki kullanımı anlamaya yardımcı olur; sözlük maddesi değildir.",
+      "answer": "Huzur kesitindeki dokuz kelimenin bağlamsal anlamları ve metindeki kullanıma uygun karşılıkları aşağıdadır.",
       "answer_sections": {
         "mustarip (muzdarip)": "Bağlamdaki olası anlam: acı/sıkıntı çeken. Öneri: acı çeken, dertli.",
         "mahzen": "Temel anlamı kapalı/depo niteliğindeki yer; “iç mahzeniniz” sözünde kişinin iç dünyasının kuytu/derin tarafı için mecazlı kullanılmıştır. Öneri: iç derinlik, içteki kuytu yer.",
@@ -135,50 +140,52 @@
       "printed_page": 172,
       "question_no": "Söz Varlığımız 3",
       "prompt_summary": "Metindeki diğer bilinmeyen kelimeleri belirleyip sözlükten doğrulama",
-      "answer": "Metinde bilmediğiniz kelimeleri siz seçin; her okuyucunun kelime dağarcığı farklıdır. Önce bağlamdan anlam tahmini yapın, sonra TDK Güncel Türkçe Sözlük’ten doğrulayın.",
+      "answer": "Ana Huzur kesitinde anlamı araştırılabilecek başka kelimelere örnekler: terkip, aksisada, uhrevilik, uzlet, daüssıla, hüviyet ve tasallut.",
       "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız 3",
       "answer_sections": [
-        "1. Metinde anlamını bilmediğin kelime/kelime grubunu seç.",
-        "2. Geçtiği cümleyi okuyup bağlamdan bir anlam tahmini yaz.",
-        "3. TDK Güncel Türkçe Sözlük'te kelimeyi araştır; birden çok anlam varsa bağlama uyanı seç.",
-        "4. Tahminin ile sözlük sonucunu karşılaştır.",
-        "5. Kelimeyi metindeki anlamıyla kısa bir cümlede kullan."
+        "terkip — birleşim, bütün oluşturan unsurların bir araya gelişi.",
+        "aksisada — yankı.",
+        "uhrevilik — manevi veya öte dünya ile ilgili olma durumu; metinde İstanbul ramazanlarının manevi havasını anlatır.",
+        "uzlet — yalnızlık, insanlardan uzak kalma durumu.",
+        "daüssıla — özlem; metindeki “mazi daüssılası” kullanımında geçmişe duyulan güçlü özlem.",
+        "hüviyet — kimlik.",
+        "tasallut — musallat olma, baskı altında tutma; metinde ölüm düşüncesinin Mümtaz’ın zihnini kuşatmasını anlatır."
       ],
       "dictionary_terms": [
         {
-          "term": "mefhum",
-          "meaning": "Kavram; metindeki kullanımda soyut düşünce/kavramlar.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/mefhum"
+          "term": "terkip",
+          "meaning": "Birleşim; metinde bir bütünü meydana getiren unsurların bir araya gelişi.",
+          "source": "TDK Güncel Türkçe Sözlük"
         },
         {
-          "term": "istihsal",
-          "meaning": "Üretim; metindeki kullanımda ülkenin kendi üretimi.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/istihsal"
+          "term": "aksisada",
+          "meaning": "Yankı.",
+          "source": "TDK Güncel Türkçe Sözlük"
         },
         {
-          "term": "masuniyet",
-          "meaning": "Korunmuş olma, güven içinde bulunma; metindeki kullanımda kuşun güvenli/korunaklı oluşu.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/masuniyet"
+          "term": "uhrevilik",
+          "meaning": "Manevi veya öte dünya ile ilgili olma durumu; metinde İstanbul ramazanlarının manevi havası.",
+          "source": "TDK Güncel Türkçe Sözlük"
         },
         {
-          "term": "istiğna",
-          "meaning": "Tok gözlülük, bir şeye ihtiyaç duymama; metindeki kullanımda Mümtaz'ın davetine karşı uzak/kayıtsız duruş.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/isti%C4%9Fna"
+          "term": "uzlet",
+          "meaning": "Yalnızlık, insanlardan uzak kalma durumu.",
+          "source": "TDK Güncel Türkçe Sözlük"
         },
         {
-          "term": "taaccüp",
-          "meaning": "Şaşma, şaşkınlık.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/taacc%C3%BCp"
-        },
-        {
-          "term": "istihare",
-          "meaning": "Bir işin hayırlı olup olmadığını rüyada anlamak amacıyla uyumadan önce dua etme.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/istihare"
+          "term": "daüssıla",
+          "meaning": "Özlem; metindeki kullanımda geçmişe duyulan güçlü özlem.",
+          "source": "TDK Güncel Türkçe Sözlük"
         },
         {
           "term": "hüviyet",
-          "meaning": "Kimlik; metindeki kullanımda bir milletin kendine özgü kimliği.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/h%C3%BCviyet"
+          "meaning": "Kimlik.",
+          "source": "TDK Güncel Türkçe Sözlük"
+        },
+        {
+          "term": "tasallut",
+          "meaning": "Musallat olma, baskı altında tutma; metinde ölüm düşüncesinin zihni kuşatması.",
+          "source": "TDK Güncel Türkçe Sözlük"
         }
       ]
     },
@@ -188,14 +195,14 @@
       "printed_page": 174,
       "question_no": "Hatırlayalım",
       "prompt_summary": "Huzur'un üslup özelliklerini kavram haritasına yerleştirme",
-      "answer": "Üslup özellikleri Huzur parçasından alınan kısa kanıtlarla kavram haritasında gösterilmelidir.",
+      "answer": "Huzur kesitinde betimleyici, şiirsel-mecazlı, zengin söz varlıklı, düşünsel ve psikolojik bir üslup; ayrıca uzun ve çağrışımlı cümleler öne çıkar.",
       "answer_sections": {
-        "betimleyici": "İstanbul, Boğaz, yapılar, insanlar, ışık ve ses ayrıntılı biçimde canlandırılır.",
-        "siirsel_mecazli": "“fecir kızları”, “sedef rüyası”, “ışık akisti, ses akisti” gibi imge, benzetme ve çağrışımlar kullanılır.",
-        "zengin_soz_varligi": "Tarih, mimari ve klasik Türk musikisine ait ad ve terimler metnin söz varlığını zenginleştirir.",
-        "dusunsel": "Geçmiş, kültür, kimlik, şehir, sanat ve yeni hayat üzerine düşünceler diyalog ve anlatıcı değerlendirmeleriyle işlenir.",
-        "psikolojik": "Kişilerin ruh hâlleri, hatıraları ve iç gerilimleri anlatılır.",
-        "uzun_cagrisimli_cumleler": "Betimleme ve düşünce akışı yer yer uzun, yan cümleciklerle genişleyen ve çağrışımları bir arada taşıyan cümlelerle kurulur."
+        "betimleyici": "İstanbul ve Boğaz; mescit, mezarlık, çeşme, yalı, tekke, ışık ve ses ayrıntılarıyla canlandırılır.",
+        "siirsel_mecazli": "“sedef rüyası”, “sükût ağacı” ve ışık-ses akisleri gibi imgelerle şiirsel ve çağrışımlı bir anlatım kurulur.",
+        "zengin_soz_varligi": "Mimari, tarih ve klasik Türk musikisine ait ad ve terimler söz varlığını zenginleştirir.",
+        "dusunsel": "Geçmiş, kültür, kimlik, sanat ve yeni hayat üzerine düşünceler anlatıcı değerlendirmeleri ve diyaloglarla işlenir.",
+        "psikolojik": "Mümtaz’ın hüzün, yalnızlık, aidiyet ve ölüm düşüncesi gibi iç yaşantıları anlatılır.",
+        "uzun_cagrisimli_cumleler": "Özellikle betimlemelerde çok sayıda ayrıntı ve çağrışım uzun cümleler içinde birbirine bağlanır."
       },
       "source_locator": "basılı s.174-175 / PDF s.175-176 — Huzur Romanının Üslup Özellikleri"
     }
