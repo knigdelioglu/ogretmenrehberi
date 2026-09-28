@@ -148,21 +148,14 @@
     },
     {
       "question_id": "T3-P224-PERF01",
-      "entry_type": "performance_support",
+      "entry_type": "source_limited",
       "printed_page": 224,
       "question_no": "Süreci Değerlendirebilme 4",
       "prompt_summary": "Dinlenen radyo tiyatrosuna yönelik beğeniyi gerekçelendirme",
-      "answer": "Beğeni değerlendirmenizi gerçek dinleme deneyiminize dayandırın. Beğendiğiniz ya da beğenmediğiniz yönü somut bir ses, sahne veya replikle gerekçelendirin.",
-      "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 4",
+      "answer": "Dinlenen radyo tiyatrosuna yönelik beğeni, eserdeki somut ses, sahne, replik, müzik, efekt, seslendirme, dil veya kurgu özellikleriyle gerekçelendirilmelidir. PDF’de Direnişin Ustaları kaydı bulunmadığından yalnız PDF’ye dayanarak gerekçeli bir beğeni örneği verilemez.",
+      "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 4 / QR medya gerekli",
       "answer_sections": {
-        "degerlendirme_sablonu": [
-          "En çok beğendiğim / beğenmediğim yön: ...",
-          "Bunu fark ettiğim gerçek sahne / ses / replik: ...",
-          "Bu unsur bende şu etkiyi oluşturdu: ...",
-          "Neden: ...",
-          "Müzik / efekt / seslendirme / dil / kurgu bakımından ek değerlendirmem: ..."
-        ],
-        "alternatif": "Eserin bir yönünü zayıf bulabilirsiniz; değerlendirmenizi somut dinleme kanıtıyla gerekçelendirin."
+        "kaynak_durumu": "Beğeniyi gerekçelendirecek somut dinleme kanıtı için Direnişin Ustaları QR medyası gereklidir."
       }
     },
     {
@@ -171,13 +164,10 @@
       "printed_page": 224,
       "question_no": "Süreci Değerlendirebilme 5",
       "prompt_summary": "Metnin konusu ve ana düşüncesini günlük yaşamla ilişkilendirme",
-      "answer": "Önce dinlediğiniz metnin konusunu ve ana düşüncesini belirleyin; ardından bunları kendi yaşamınızla ilişkilendirin.",
+      "answer": "Direnişin Ustaları'nın konusu ve ana düşüncesi gerçek dinleme/izleme kaydından belirlenmelidir. PDF’de eser yer almadığından konu ve ana düşünce yalnız PDF’ye dayanarak belirlenemez; bu nedenle bunları günlük yaşam ve deneyimlerle ilişkilendiren güvenilir bir örnek cevap da verilemez.",
       "source_locator": "basılı s.224 / PDF s.225 — Süreci Değerlendirebilme soru 5 / QR medya gerekli",
       "answer_sections": {
-        "1_metinden": "Konu: ... Ana düşünce: ... Kanıt: ...",
-        "2_gunluk_hayat": "Benzer bir sorumluluk, dayanışma, seçim, meslek veya ilişki durumu: ...",
-        "3_bag": "“Metindeki ... ile günlük hayattaki ... arasında şu benzerlik veya farkı görüyorum: ...”",
-        "4_kisisel_sinir": "Kendi yaşamınızdan örnek vermek istemiyorsanız gözlemlediğiniz toplumsal bir durumu kullanabilirsiniz."
+        "kaynak_durumu": "Konu ve ana düşünceyi belirlemek ve günlük yaşamla ilişkilendirmek için Direnişin Ustaları QR medyası gereklidir."
       }
     },
     {
@@ -186,14 +176,16 @@
       "printed_page": 224,
       "question_no": "6 / Öğrenme Günlüğü",
       "prompt_summary": "Direnişin Ustaları dinleme sürecini öğrenme günlüğüyle değerlendirme",
-      "answer": "Öğrenme günlüğünü gerçek öğrenme ve zorlandığınız noktalar üzerinden doldurun. Aşağıdaki cümle başlangıçlarından yararlanabilirsiniz.",
+      "answer": "Öğrenme günlüğü kişisel dinleme/izleme sürecinin değerlendirilmesine dayanır; sabit bir hazır cevap yoktur. Ders kitabı değerlendirmeyi aşağıdaki beş başlık altında ister.",
       "source_locator": "basılı s.224 / PDF s.225 — Öğrenme Günlüğü",
       "answer_sections": {
-        "Bu süreçte öğrendiklerim": "“Bu çalışmada [...] öğrendim. Bunu [...] etkinliğinde fark ettim.”",
-        "Pekiştirmem gereken konular": "“[...] konusunda hâlâ zorlanıyorum / emin değilim; bunu geliştirmek için [...].”",
-        "Daha ayrıntılı incelemek istediğim konular": "“[...] hakkında daha çok bilgi edinmek istiyorum; merak ettiğim soru [...].”",
-        "Kendimi geliştirmek için çaba harcadığım konular": "“[...] yaparken özellikle [...] konusunda çaba gösterdim; sonucunda [...].”",
-        "Gelecekte kullanabileceğim bilgiler": "“[...] becerisini gelecekte [...] durumda kullanabilirim; çünkü [...].”"
+        "ogrenme_gunlugu_basliklari": [
+          "Bu süreçte öğrendiklerim",
+          "Pekiştirmem gereken konular",
+          "Daha ayrıntılı incelemek istediğim konular",
+          "Kendimi geliştirmek için çaba harcadığım konular",
+          "Öğrendiğim ve gelecekte kullanabileceğim bilgiler"
+        ]
       }
     }
   ]
