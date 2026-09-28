@@ -45,8 +45,8 @@
       "question_no": "2",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
       "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
-      "answer": "Olası tahmin: “Fedakârlık” başlığı ile görsellerde rayların yanında bir kaplumbağayı tutan ellerin ve yeşil alanda elinde kap benzeri bir nesne taşıyan kişinin görülmesi; canlılara yardım, emek veya sorumluluk çevresinde bir içerik olabileceğini düşündürebilir. Bunlar yalnızca başlık ve görsellerden hareketle kurulmuş ön tahminlerdir. Kişiyi, olayı, amacı ve sonucu izleme sonrasında doğrulayın.",
-      "guidance": "Görsellerde açıkça görülen ayrıntıları betimleyin: rayların yanındaki kaplumbağayı tutan eller ile yeşil alandaki kişi ve elindeki nesne. Olayı ve kişilerin amacını videodan kanıt bulduktan sonra açıklayın."
+      "answer": "Olası tahmin: “Fedakârlık” başlığı ile demir yolu üzerindeki/yanındaki kaplumbağaya yardım edildiğini gösteren görsel, belgeselin bir canlının korunması için gösterilen çaba ve özveriyle ilgili olabileceğini düşündürür. Bunlar yalnızca başlık ve görselden hareketle kurulmuş ön tahminlerdir. Jenerik içeriği görülmeden kişi, olay, amaç ve sonuç hakkında daha ayrıntılı hüküm verilmemelidir.",
+      "guidance": "Başlık ve soruya ait görselde açıkça görülen ayrıntılardan hareketle tahmin kurun. Jenerik içeriğine gerçekten erişmeden kişi, olay, amaç veya sonuç hakkında özel bilgi üretmeyin."
     },
     {
       "question_id": "T4-P285-Q03",
@@ -55,7 +55,7 @@
       "question_no": "3",
       "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 3",
       "prompt_summary": "Belgeseli etkili izlemek için ortam ve iletişim engellerini giderme",
-      "answer": "Ekranı rahat görebildiğiniz ve sesi duyabildiğiniz bir yere oturun. Bildirimleri kapatın; dikkatinizi dağıtan konuşma ve hareketleri azaltın. Video sırasında not alın, notlarınızı izleme sonunda paylaşın."
+      "answer": "Ekranı rahat görebildiğiniz ve sesi duyabildiğiniz bir yere oturun. Bildirimleri kapatın; dikkatinizi dağıtan konuşma, ses ve hareketleri azaltın. Ortamı, metni kesintisiz ve dikkatle dinleyip izlemeye uygun hâle getirin."
     },
     {
       "question_id": "T4-P285-Q04",
@@ -104,11 +104,11 @@
       "prompt_summary": "Dinleme-izleme sürecine ilişkin kontrol listesini gerçek öğrenci davranışına göre doldurma",
       "answer": "Kontrol listesi ancak izleme sırasında gözlenen davranışlara göre doldurulabilir; tüm maddelere önceden “Evet” ya da “Hayır” cevabı verilmez.",
       "answer_sections": {
-        "Dikkat ve anlama": "Dikkatimi vererek içeriği anlamaya çalıştım.",
-        "Saygı ve ön yargı": "Videoyu sabırla, saygıyla ve ön yargıdan uzak izledim.",
-        "Diğer dinleyiciler": "Diğer dinleyicileri rahatsız etmedim.",
-        "Söz alma": "Yorum ve sorularım için videonun bitmesini bekledim.",
-        "Dikkat dağıtıcı davranışlar": "Dikkat dağıtacak sesler çıkarmadım ve uygun olmayan hareketlerden kaçındım."
+        "Dikkat ve anlama": "Dikkatlice ve anlayarak dinlemeye / izlemeye özen gösterdi.",
+        "Saygı ve ön yargı": "Sabır ve saygıyla, ön yargılardan uzak bir tutumla dinledi / izledi.",
+        "Diğer dinleyiciler": "Diğer dinleyicileri rahatsız etmedi.",
+        "Söz alma": "Konuşmaya başlamak, yorum yapmak veya soru sormak için belgeselin bitmesini bekledi.",
+        "Dikkat dağıtıcı davranışlar": "Dikkat dağıtacak sesler çıkarmaktan ve uygun olmayan hareketlerden kaçındı."
       }
     },
     {
@@ -151,7 +151,15 @@
       "question_no": "2",
       "source_locator": "basılı s.288 / PDF s.289 — Metni Anlayalım soru 2 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinin tema, konu, ana-yardımcı düşünceler ve sunuş biçimini belirleme",
-      "answer": "İzleme notlarınızdan tekrar eden meseleyi bularak temayı; anlatılan kişi ve olaylardan konuyu; vurgulanan temel yargıdan ana düşünceyi çıkarın. Ana düşünceyi destekleyen ayrıntıları yardımcı düşünce olarak ekleyin. Görüntü, ses, yazı ve anlatıcı kullanımını sunuluş biçimi başlığında gösterin."
+      "answer": "Tema, konu, ana düşünce ve yardımcı düşünceler videonun gerçek içeriği izlenerek belirlenmelidir. Kitapta “Bilgilerin Sunuluş Şekli” alanı hazır verilmiştir: “Bilgiler, içeriği yansıtacak şekilde sunulmuştur.”",
+      "answer_sections": {
+        "Tema": "[Fedakârlık videosu izlenerek belirlenir.]",
+        "Konu": "[Fedakârlık videosu izlenerek belirlenir.]",
+        "Ana düşünce": "[Fedakârlık videosu izlenerek belirlenir.]",
+        "Yardımcı düşünceler": "[Fedakârlık videosu izlenerek belirlenir.]",
+        "Bilgilerin Sunuluş Şekli": "Bilgiler, içeriği yansıtacak şekilde sunulmuştur."
+      },
+      "guidance": "Tema, konu, ana düşünce ve yardımcı düşünceleri yalnız videodaki gerçek içerik ve notlardan çıkarın. “Bilgilerin Sunuluş Şekli” alanında ders kitabında verilen ifadeyi koruyun."
     },
     {
       "question_id": "T4-P289-Q03",
