@@ -118,11 +118,11 @@
     },
     {
       "question_id": "T3-P181-TABLE02",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 181,
       "question_no": "4",
       "prompt_summary": "Huzur kahramanlarını kişilik özellikleri ve dil kullanımları bakımından karşılaştırma",
-      "answer": "Kişilik ve dil özellikleri ayrı ayrı, s.181’e kadarki metin kanıtıyla belirlenmelidir.",
+      "answer": "Ders kitabında bu etkinliğe kadar Mümtaz ve Nuran için kişilik ve dil kullanımını karşılaştırmaya yetecek doğrudan kanıt vardır; İhsan için kişilik yönünden dolaylı kanıt bulunur, Macide, Suat ve Fâhir’in dil kullanımını belirleyecek yeterli doğrudan konuşma verilmez.",
       "answer_sections": {
         "Mümtaz": {
           "kisilik": "Örnek söz ve anlatımında hayata sanatçı duyarlılığıyla bakar; tabiatı ve sanatı birlikte düşünür.",
@@ -134,19 +134,19 @@
         },
         "İhsan": {
           "kisilik": "Mümtaz’ın anlatımından onun hocası ve kültürel rehberi olduğu anlaşılır.",
-          "dil": "Okuduğunuz kesitte doğrudan konuşması verilmediği için dil özelliği belirlenemez."
+          "dil": "Bu etkinliğe kadar verilen Huzur kesitinde İhsan’ın doğrudan konuşması yer almadığı için dil özelliği belirlenemez."
         },
         "Macide": {
-          "kisilik": "s.181’e kadar okunan kesitte kişiliğini belirleyecek yeterli doğrudan kanıt yok.",
-          "dil": "Doğrudan konuşma örneği yok; belirlenemez."
+          "kisilik": "Bu etkinliğe kadar verilen Huzur kesitinde Macide’nin kişiliğini belirlemeye yetecek doğrudan kanıt yoktur.",
+          "dil": "Doğrudan konuşma örneği yoktur; belirlenemez."
         },
         "Suat": {
-          "kisilik": "Bu kesitte yeterli kanıt yok.",
-          "dil": "Doğrudan söz örneği yok; belirlenemez."
+          "kisilik": "Bu etkinliğe kadar verilen kesitte yeterli kanıt yoktur.",
+          "dil": "Doğrudan söz örneği yoktur; belirlenemez."
         },
         "Fâhir": {
-          "kisilik": "Bu kesitte yeterli kanıt yok.",
-          "dil": "Doğrudan söz örneği yok; belirlenemez."
+          "kisilik": "Bu etkinliğe kadar verilen kesitte yeterli kanıt yoktur.",
+          "dil": "Doğrudan söz örneği yoktur; belirlenemez."
         }
       },
       "source_locator": "basılı s.168–171 ve 181 / PDF s.169–172 ve 182 — Okuma Çemberi soru 4"
@@ -157,16 +157,16 @@
       "printed_page": 182,
       "question_no": "Fark Edelim",
       "prompt_summary": "s.182 iki metinden yazar-eser ilişkisine çıkarım",
-      "answer": "İki parça birlikte, yazarın yaşamından esinlenirken bu malzemeyi kurmacada dönüştürdüğünü gösterir.",
+      "answer": "İki metin birlikte, yazarın kendi yaşamından ve çevresindeki kişilerden esinlenebileceğini; ancak bu gerçeklik malzemesini kurmacada değiştirip yeniden düzenlediğini gösterir.",
       "evidence_quotes": [
-        "İhsan, onun hem babası, hem hocası idi.",
+        "Tanpınar, kendisinin bir projeksiyonu olan Mümtaz",
         "hayattan almış olduğu bütün şahısları az çok değiştirmiş"
       ],
       "source_locator": "basılı s.182 / PDF s.183 — Fark Edelim, yazar–eser sorusu",
       "answer_sections": {
-        "Huzur parçası": "Mümtaz’ın çocukluğu ve İhsan–Macide’nin hayatındaki yeri anlatılır.",
-        "Kaplan’ın değerlendirmesi": "Huzur’daki gerçek hayat izlerinin kurmacada değiştirildiğini açıklar.",
-        "Çıkarım": "Yazar, yaşantı ve çevresinden esinlenebilir; kişi, ilişki ve koşulları romana aktarırken dönüştürebilir."
+        "Gerçek hayatla bağ": "Mehmet Kaplan, Mümtaz’ı Tanpınar’ın bir projeksiyonu olarak değerlendirir; İhsan’ın Yahya Kemal’den, Nuran’ın da gerçek hayattaki bir kişiden esinlendiğini belirtir.",
+        "Kurmaca dönüşüm": "Tanpınar’ın hayattan aldığı kişileri değiştirdiği, onlara yeni özellikler verdiği ve farklı şartlar içinde gösterdiği açıklanır.",
+        "Çıkarım": "Yazar, kendi yaşamından ve çevresinden yararlanabilir; ancak roman kişileri gerçek hayattaki karşılıklarının bire bir kopyası değildir."
       }
     },
     {
@@ -180,8 +180,7 @@
         "gercek_hayattan_alinanlar": [
           "Kaplan, Mümtaz'ı Tanpınar'ın ‘bir projeksiyonu’ olarak niteler.",
           "İhsan'ın dünya görüşü, mizacı ve bazı yönleriyle Yahya Kemal'den esinlendiğini belirtir.",
-          "Nuran'ın hayatta bir örneği olan genç ve güzel bir kadın bulunduğunu söyler.",
-          "İstanbul'un gerçek semt ve yapıları romanda mekân olarak kullanılır."
+          "Nuran'ın hayatta bir örneği olan genç ve güzel bir kadın bulunduğunu söyler."
         ],
         "kurgusal_unsurlar": [
           "Tanpınar gerçek kişilerden esinlense de onları ‘az çok değiştirmiş’, yeni özellikler ve şartlar vermiştir.",
@@ -200,7 +199,7 @@
       "answer": "Gerçek hayattan alınan unsurlar ile kurmaca değişikliklerin birlikte kullanılması, romana tanıdık ve somut bir zemin sağlarken yazara kişileri, ilişkileri ve olayları metnin ihtiyacına göre yeniden kurma imkânı verir.",
       "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde soru 2, balık kılçığına dönüş",
       "answer_sections": {
-        "gerceklik_zemini": "Gerçek İstanbul mekânları ve gerçek kişilerden gelen bazı özellikler okurun anlatılan çevreyi somutlaştırmasına yardımcı olabilir.",
+        "gerceklik_zemini": "Gerçek kişilerden ve yaşam çevresinden gelen özellikler, roman kişilerinin ve ilişkilerinin somut bir gerçeklik zeminine dayanmasına yardımcı olur.",
         "kurmaca_ozgurlugu": "Yazar, esin aldığı kişileri birebir kopyalamak zorunda değildir; özelliklerini, aile durumlarını ve ilişkilerini değiştirebilir.",
         "metne_katkisi": "Bu dönüşüm, gerçek yaşam malzemesinin romanın kişi, çatışma ve tema düzenine uyarlanmasını sağlar."
       }
@@ -211,18 +210,18 @@
       "printed_page": 183,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur parçalarında öznel ve nesnel anlatım örnekleri ve katkıları",
-      "answer": "Gözlenebilir olaylar, öznel duygular ve bunların anlatıma katkısı aşağıda ayrı başlıklarda verilmiştir.",
+      "answer": "Parçalarda nesnel anlatım dışarıdan gözlenebilen olay ve durumları; öznel anlatım ise Mümtaz’ın duygu, düşünce ve iç sorgulamalarını öne çıkarır.",
       "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde 1, Mümtaz'ın Nuran anıları ve iç sorgulaması",
       "answer_sections": {
-        "gozlenebilir_olay_ve_davranis": [
-          "Mümtaz'ın Nuran'a ilginç hikâyeler anlattığı ve Nuran'ın bazen şakaya katıldığı belirtilir.",
-          "Mümtaz'ın dükkânda oturduğu ve son günlerde uykularının bozulduğu anlatılır."
+        "nesnel_anlatim": [
+          "“Bilhassa son günlerde uykuları adamakıllı bozulmuştu.” — Mümtaz’ın yaşadığı durum doğrudan aktarılır.",
+          "Nuran’ın Mümtaz’ın anlattığı hikâyelere kimi zaman gülümsemesi, kimi zaman oyuna katılması davranış olarak anlatılır."
         ],
-        "oznel_duygu_ve_degerlendirme": [
-          "Anıları hatırlamanın şimdi hüzün vermesi, Mümtaz'ın özlemini açığa çıkarır.",
-          "Kendisini de başkaları gibi kaçmakla suçlaması ve düşüncelerinin ‘azaplı bir rüya’ hâline gelmesi iç sıkıntısını duyurur."
+        "oznel_anlatim": [
+          "“Bütün bunları şimdi hatırlamak, hazin oluyordu.” — Mümtaz’ın hatıraları karşısındaki duygusu verilir.",
+          "“Sanki benim azaplarım onların bir yığın kaçış imkânlarıyla dolu hayatlarından daha mı iyi?” — kişinin kendisini sorgulayan iç düşüncesi yansıtılır."
         ],
-        "metne_katki": "Dış olaylar ilişkinin ve sıkıntının koşullarını kurar; iç yorumlar Mümtaz'ın Nuran'a özlemini, kendisiyle çatışmasını ve kaygısını derinleştirir."
+        "metne_ve_kisilere_katkisi": "Nesnel anlatım olay ve davranışların zeminini kurarken öznel anlatım Mümtaz’ın özlemini, huzursuzluğunu ve kendi içindeki çatışmayı derinleştirir."
       }
     },
     {
@@ -231,27 +230,27 @@
       "printed_page": 184,
       "question_no": "Sıra Sizde 2",
       "prompt_summary": "Duyarlılık değerinden hareketle kişilerin insani çelişki, ahlaki çatışma ve toplumsal güçlükleri",
-      "answer": "Duyarlılık değeri, dört metin parçasındaki insani, ahlaki ve toplumsal gerilimler üzerinden incelenir.",
+      "answer": "Parçalarda duyarlılık; insanı yalnız bir kavram olarak görmeme, değişimi insanı ve tarihî kökleri gözeterek gerçekleştirme, canlılara karşı sorumluluk duyma ve hastalık karşısında yakınlarına destek olma üzerinden görünür.",
       "answer_sections": {
         "1 · Halkı sevmek ve insanı kavramlaştırmak": {
-          "insani_celiski": "Halkı sevdiğini söylemek ile insanı yalnız bir kavram veya manzara gibi ele alma ihtimali.",
-          "ahlaki_catisma": "Olası yorum: İnsana gerçekten kulak vermek ile onu kendi düşüncesinin nesnesi (“mefhum”) yapmak arasındaki gerilim.",
-          "toplumsal_gucluk": "Halkın sesine ve yaşantısına söz hakkı tanıma ihtiyacı; belirli bir yoksulluk olayı bu parçada anlatılmıyor."
+          "insani_celiski": "Halkı sevdiğini söylemek ile insanı yalnız bir fikir, kavram veya manzara gibi görme ihtimali arasındaki gerilim.",
+          "ahlaki_catisma": "İnsanı kendi düşüncesinin nesnesine dönüştürmek yerine onun gerçek yaşantısına ve sesine değer verme sorumluluğu.",
+          "toplumsal_gucluk": "Halkın gerçek yaşantısıyla onu açıklamak için kullanılan soyut düşünceler arasında mesafe oluşabilmesi."
         },
         "2 · Yeni hayat ve tarihî kökler": {
-          "insani_celiski": "Yeni bir toplum kurmak istemek ile tarihsel birikimden kopmamak.",
-          "ahlaki_catisma": "Olası yorum: Değişimin sorumluluğunu üstlenirken insanı ve geçmişi ihmal etmeme gereği (“Bunları yaparken insanı da yapmış olacağız.”).",
-          "toplumsal_gucluk": "Aile, ev, şehir ve köyü yeniden kurma; üretim ve toplumsal şartları düzenleme güçlüğü."
+          "insani_celiski": "Yeni bir toplum ve hayat kurmak isterken tarihsel-kültürel köklerden kopmama gereği.",
+          "ahlaki_catisma": "Değişimi gerçekleştirirken insanı ve geçmişten gelen birikimi ihmal etmeme sorumluluğu.",
+          "toplumsal_gucluk": "Aileyi, evi, şehri ve köyü yeniden kurma; üretimi ve toplumsal şartları düzenleme güçlüğü."
         },
         "3 · Nuran, serçeler ve köpek": {
-          "insani_celiski": "Nuran serçeleri beslemeyi vazife edinir; soğuktan içeri alınan köpek ise aynı kuşlara “iştahlı bakışlar” fırlatır. Aynı evde korunan iki canlının ihtiyaçları birbiriyle çatışır.",
-          "ahlaki_catisma": "Metindeki davranış: Mümtaz köpeği soğuktan içeri alır, ekmek ufaklarını pencerenin kenarına koyup camı kapatır; böylece iki canlı da gözetilir. Olası yorum: Bir canlıya şefkat gösterirken ötekini de koruma sorumluluğu. Metin açık bir kötülük veya cezalandırma anlatmaz.",
-          "toplumsal_gucluk": "Bu parçada somut toplumsal güçlük verilmez; kar ve buz, canlıların barınma ve beslenme ihtiyacını görünür kılar."
+          "insani_celiski": "Soğuktan korunması gereken köpek ile aynı ortamda korunmaya çalışılan serçelerin ihtiyaçlarının çatışması.",
+          "ahlaki_catisma": "Bir canlıya şefkat gösterirken diğer canlıların güvenliğini de gözetme sorumluluğu.",
+          "toplumsal_gucluk": "Parçada belirgin bir toplumsal güçlükten çok soğuk hava karşısında barınma ve beslenme ihtiyacı öne çıkar."
         },
         "4 · İhsan'ın hastalığı": {
-          "insani_celiski": "Mümtaz bir hafta boyunca doğru dürüst sokağa çıkmaz; zamanı hastanın başı ucu ile kendi odasında okuyup düşünmek arasında bölünür. Kişisel dünyası ile bakım sorumluluğu arasındaki gerilim bu ayrıntıdan çıkarılan bir yorumdur.",
-          "ahlaki_catisma": "Hasta yakınına ve ev halkına karşı sorumluluk: doktor çağırmak, reçeteyi eczaneye götürmek, yeğenlerini avutmak.",
-          "toplumsal_gucluk": "Zatürree, doktor ve ilaç işleri; telefonun komşunun evinden edilmesi; evde korku, telaş ve üzüntü."
+          "insani_celiski": "Mümtaz’ın kişisel hayatı ile hasta yakınına ve ev halkına karşı sorumlulukları arasında kalması.",
+          "ahlaki_catisma": "Hastalık döneminde İhsan’a ve aileye destek olma sorumluluğu.",
+          "toplumsal_gucluk": "Doktor çağırma, ilaç temin etme ve telefon için komşunun evine başvurma gibi gündelik sağlık ve iletişim güçlükleri."
         }
       },
       "source_locator": "basılı s.184–185 / PDF s.185–186 — Sıra Sizde soru 2 ve renkli dört metin parçası",
@@ -260,8 +259,7 @@
         "Tarihimize bütünlüğünü iade etmek zarureti.",
         "Mümtaz, ekmek ufaklarını pencerenin kenarına koydu, camı kapattı.",
         "komşunun evinden telefon etmek"
-      ],
-      "explanation": "Kitap her parça için üç başlık istese de dört parça üç başlığa eşit kanıt vermez. Metindeki söz/davranış kanıtı ile “olası yorum” ayrı tutulmalı; kanıtı zayıf hücrede öğrencinin “bu parçada belirgin değil” demesi kabul edilebilir."
+      ]
     }
   ]
 }
