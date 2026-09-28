@@ -21,7 +21,7 @@
       "question_no": "2",
       "source_locator": "basılı s.238 / PDF s.239 — soru 2",
       "prompt_summary": "Kitabın şiirde neden ebedî dost sayıldığını açıklama",
-      "answer": "Kitap, insan yanında olmasa da her zaman yeniden açılıp okunabildiği; bilgi, düşünce ve duygularıyla okura eşlik ettiği için kalıcı bir dost gibi görülür. Okur kitabı farklı zamanlarda yeniden okuyarak yeni anlamlar bulabilir. Şiirdeki “yâr-ı bî-halel” sözü, kitabın vefalı ve güvenilir bir arkadaş oluşunu vurgular.",
+      "answer": "Kitap, bilgi, düşünce ve duygularıyla okura sürekli eşlik ettiği için kalıcı bir dost gibi görülür. Şiirdeki “yâr-ı bî-halel” sözü, kitabın vefalı ve güvenilir bir arkadaş oluşunu vurgular.",
       "evidence_quotes": [
         "yâr-ı bî-halel"
       ]
@@ -86,11 +86,11 @@
       "prompt_summary": "Mimar Sinan bilgilerini tiyatro diyaloğu ve monoloğuna dönüştürme",
       "answer": "Aşağıdaki kurmaca replikler, bilgi görselindeki olgulardan hareketle hazırlanmıştır; Mimar Sinan’dan alınmış tarihî alıntılar değildir.",
       "answer_sections": {
-        "Diyalog örneği": "Genç: Farklı şehirlerde gördüğünüz yapılar size ne öğretti?\nSinan: Her yapıdan bir şey öğrendim; çizgisine, taşıyıcısına ve ustasının çözümüne dikkat ettim.\nGenç: Peki Şehzade, Süleymaniye ve Selimiye sizin için ne ifade eder?\nSinan: Onlar, mesleğimde ilerleyişimin üç durağıdır.",
-        "Monolog örneği": "Ağırnas’ta başlayan yolculuğum beni İstanbul’a, oradan da nice şehre götürdü. Gördüğüm yapıları inceledim; öğrendiklerimi sabırla çalışarak kendi eserlerime dönüştürdüm.",
-        "Sahneleme": "Bilgi görselindeki doğum yeri, görevler ve eserlerden birkaçını seçip kısa repliklere taşıyın. Her bilgiye aynı ağırlığı vermek yerine, seçilen olayın karakteri veya mesleki gelişimi nasıl gösterdiğini belirginleştirin."
+        "Diyalog örneği": "Genç: Ağırnas’ta doğduğunuzu ve çeşitli seferlere katıldığınızı biliyoruz. Mimarlıkta nasıl bir yol izlediniz?\nSinan: Mimarbaşı olarak cami, medrese, imarethane, hastane, su yolu, köprü ve kervansaray gibi pek çok eser inşa ettim.\nGenç: Şehzade, Süleymaniye ve Selimiye sizin için ne ifade eder?\nSinan: Onlar, mesleğimdeki çıraklık, kalfalık ve ustalık aşamalarımı temsil eder.",
+        "Monolog örneği": "Kayseri’nin Ağırnas köyünde doğdum. Kanuni Sultan Süleyman’la çeşitli seferlere katıldım. Mimarbaşılık görevini üstlendikten sonra farklı türlerde pek çok eser inşa ettim; Şehzade, Süleymaniye ve Selimiye camileri mesleğimdeki ilerleyişimin önemli durakları oldu.",
+        "Sahneleme": "Bilgi görselindeki doğum yeri, görevler, yapı türleri ve Şehzade–Süleymaniye–Selimiye çizgisinden birkaçını seçip kısa repliklere taşıyın."
       },
-      "guidance": "Repliklerinizi bilgi görselindeki doğrulanmış olgulardan hareketle kurun. Kurmaca sözleri tarihî kişilerin gerçek sözleri gibi göstermeyin."
+      "guidance": "Yalnız s.240’taki bilgi görselinde verilen olgulardan hareket edin; sonraki ana metinden ayrıntı taşımayın. Kurmaca sözleri tarihî kişilerin gerçek sözleri gibi göstermeyin."
     },
     {
       "question_id": "T4-P241-PERF01",
