@@ -30,12 +30,13 @@
       "answer": "Örnek çalışma, görsellerdeki somut ögeleri olası simgesel anlamlarından ayırır. “Merdiven” metnini okumadan önceki tahmin ayrı tutulmalıdır.",
       "answer_sections": {
         "Günlük yaşamdan sanat konusu": "Yaşlanma, kuşaklar arası ilişki, acele ve zaman baskısı, çalışmak, başkasına yol vermek ve gündelik karşılaşmalar sanat metinlerine konu olabilir.",
-        "Görsellerin çağrışımı": "Gün batımına çıkan basamaklar ilerleme ve yaşam yolunu; saat zamanın geçişini; duvardaki askıda görülen giysi ve şapka gündelik yaşamı ya da hazırlanma hâlini; el değirmeni ise emek ve geleneksel üretimi çağrıştırabilir. Bunlar yorumdur; görüntülerin tek bir anlamı yoktur.",
-        "Sanat türlerine kaynak": "Basamak ve saat imgelerinden kısa öykü, şiir ya da tiyatro sahnesi üretilebilir; askıdaki giysi ve şapka gündelik yaşam veya hazırlanma üzerine bir öyküye ya da görsel sanat çalışmasına, el değirmeni ise emek, zanaat veya kuşak aktarımı üzerine bir öyküye ya da görsel sanat çalışmasına kaynak olabilir. Tür seçimi, görselden çıkarılan düşünceyle gerekçelendirilmelidir.",
+        "Görsellerin çağrışımı": "Basamakları çıkan kişi ilerleme ve yaşam yolunu; saat zamanın geçişini; askıdaki giysi ve şapka gündelik yaşamı ve hazırlanma hâlini; el değirmeni ise emek ve geleneksel üretimi çağrıştırabilir. Saat, giysi ve değirmen doğrudan günlük yaşamla ilişkilidir; basamak görseli de gündelik bir hareketi gösterirken yaşam yoluna ilişkin simgesel çağrışımlar oluşturabilir.",
+        "Sanat türlerine kaynak": "Basamak ve saat imgeleri şiir, hikâye veya tiyatro metnine; askıdaki giysi ve şapka gündelik yaşamı konu alan bir hikâye ya da tiyatro metnine; el değirmeni ise emek, geleneksel yaşam veya kuşaklar arası aktarım üzerine bir hikâye, şiir ya da tiyatro metnine kaynak olabilir. Tür seçimi, görselden çıkarılan düşünceyle gerekçelendirilmelidir.",
         "Yaşam ve merdiven": "İkisi de basamak basamak ilerlemeyi, yön değiştirmeyi, yükseliş ve inişi düşündürür. Yaşam dönemeçler ve engeller içerirken merdiven bu hareketin somut bir benzetmesi olabilir.",
-        "Okuma amacı ve tahmin": "Örnek okuma amacı: Küçürek hikâyede günlük bir karşılaşmanın kısa anlatımla nasıl anlam kazandığını incelemek. Başlık ve görsellerden hareketle merdivende bir karşılaşma veya ilerleyiş üzerine bir öykü olabileceğini tahmin edin."
+        "Okuma amacı ve tahmin": "Örnek okuma amacı: Küçürek hikâyede günlük bir karşılaşmanın kısa anlatımla nasıl anlam kazandığını incelemek. Başlıktan hareketle merdivende bir karşılaşma, ilerleyiş veya yaşamın aşamalarıyla ilgili bir öykü olabileceği tahmin edilebilir.",
+        "Okuma yöntem ve stratejisi": "Metin kısa ve yoğun olduğundan dikkatli/yoğun okuma tercih edilebilir; tekrar eden sözlere, karşıtlıklara, merdiven ve iniş-çıkış ifadelerine dikkat edilerek vurgu ve tonlamayla okunabilir."
       },
-      "guidance": "Metni okumadan önce başlık ve görsellere dayanarak kendi tahmininizi kurun. Okuma sonrasında tahmininizi metindeki bilgilerle karşılaştırın."
+      "guidance": "Metni okumadan önce başlık ve görsellere dayanarak kendi tahmininizi kurun. Okuma amacınızı ve metne uygun okuma yöntemini belirleyin; okuma sonrasında tahmininizi metindeki bilgilerle karşılaştırın."
     },
     {
       "question_id": "T4-P266-VOC01",
@@ -64,9 +65,9 @@
       "prompt_summary": "Altı çizili sözcük ve söz öbeklerini farklı anlamlarda yeni cümlelerde kullanma",
       "answer": "Her örnek, altı çizili sözcük ya da söz öbeğini metindeki kullanımdan farklı bir anlamda kullanır. Bunlar olası örneklerdir; aynı anlam ayrımını gösteren başka cümleler de kabul edilir.",
       "answer_sections": {
-        "Farklı anlamda kullanım örnekleri": "1. çıkıyorum — “Derginin yeni sayısı cuma günü çıkıyor.” (yayımlanıyor)\n2. yol veriliyor — “Kuralları sürekli çiğneyen çalışana sonunda yol verildi.” (işine son verildi)\n3. işimi bitirmiş — “Rakibinin işini bitirmiş, onu yarış dışı bırakmıştı.” (birinin şansını/etkinliğini sona erdirmek)\n4. yerinde — “Bütün araç gereci yerinde bıraktı.” (bulunduğu konumda)\n5. Ne işim var — “İşim gereği gün boyu hastalarla ilgileniyorum.” (meslek, çalışma alanı)"
+        "Farklı anlamda kullanım örnekleri": "1. merdivenlerden — “Meslek merdivenlerini hızla tırmandı.” (aşamalı yükselme/ilerleme)\n2. yol veriliyor — “Kuralları sürekli çiğneyen çalışana sonunda yol verildi.” (işine son verildi)\n3. işimi bitirmiş — “Rakibinin işini bitirmiş, onu yarış dışı bırakmıştı.” (birinin etkinliğini sona erdirmek)\n4. yerinde — “Bütün araç gereci yerinde bıraktı.” (bulunduğu konumda)\n5. Ne işim var — “Bugün ne işim var, ajandama bakayım.” (yapılacak iş/görev)"
       },
-      "guidance": "Başka cümleler de yazabilirsiniz. Sözcüğün metindeki anlamından farklı bir kullanımı kendi cümlenizde gösterin."
+      "guidance": "Altı çizili sözcük veya söz öbeğini metindeki anlamından farklı bir anlamda kendi cümlenizde kullanın."
     },
     {
       "question_id": "T4-P268-VOC03",
@@ -75,7 +76,7 @@
       "question_no": "Söz Varlığımız 5/a-b",
       "source_locator": "basılı s.268 / PDF s.269 — Söz Varlığımız soru 5/a-b",
       "prompt_summary": "Merdiven kavramının metindeki çağrışımlarını ve bu çağrışımlarla kurulan ilişkiyi açıklama",
-      "answer": "Örnek cevap: Merdiven önce anlatıcının iş yerine çıkıp inmesini sağlayan gerçek bir mekândır. Aynı zamanda yaşamın aşamalarını, ilerleme isteğini ve kişinin yönünü yeniden düşünmesini çağrıştırır. Öyküde yol verme hareketinin merdivende birkaç kez yinelenmesi, güç ve yaş farkına dayalı ilişkileri de görünür kılar.",
+      "answer": "Örnek cevap: Merdiven önce anlatıcının iş yerine çıkıp inmesini sağlayan gerçek bir mekândır. Aynı zamanda yaşamın aşamalarını, ilerleme isteğini ve kişinin yönünü yeniden düşünmesini çağrıştırır. Öyküde yol verme hareketinin merdivende birkaç kez yinelenmesi, yaş ve kuşak farkına dayalı ilişkileri de görünür kılar.",
       "answer_sections": {
         "Çağrışımlar": "Basamak basamak ilerleme, yükselme ve iniş, yaşam dönemleri, iş yaşamındaki ilerleme, karşılaşma ve başkasına alan açma.",
         "İlişki": "Anlatıcı önce merdiveni yalnız işine ulaşmak için kullanır; yaşlı memurun ölümü ve genç memurla karşılaşma, çıkma hedefini sorgulamasına yol açar. Böylece fiziksel yön değişikliği, düşüncesindeki değişimle birleşir."
@@ -89,7 +90,7 @@
       "question_no": "1",
       "source_locator": "basılı s.268 / PDF s.269 — Düşünelim Paylaşalım soru 1",
       "prompt_summary": "Bahtiyar ol sözünün öyküdeki bağlamsal anlamını açıklama",
-      "answer": "“Bahtiyar ol”, “mutlu ve talihli ol” anlamında iyi dilek bildiren kalıplaşmış bir sözdür. Öyküde yaşlı kişi, kendisine yol veren ve kendisinden genç olan anlatıcıya nezaket ve hayır duası niteliğinde söyler; söz, karşılaşmaya kuşaklar arası bir sıcaklık katar."
+      "answer": "“Bahtiyar ol”, “mutlu ol” anlamında iyi dilek ve dua bildiren kalıplaşmış bir sözdür. Öyküde yaşlı kişi, kendisine yol veren ve kendisinden genç olan anlatıcıya nezaketle söyler; söz, karşılaşmaya kuşaklar arası bir sıcaklık katar."
     },
     {
       "question_id": "T4-P268-Q02",
@@ -125,7 +126,7 @@
       "question_no": "2",
       "source_locator": "basılı s.269 / PDF s.270 — Metni Anlayalım soru 2",
       "prompt_summary": "Yaşlı kişinin acele etmeye değmeyeceği sözünü anlatıcının bakışından yorumlama",
-      "answer": "Örnek yorum: O sırada işine yetişmeye çalışan anlatıcı, yaşlı kişinin sözünü önemsemez. Ancak yaşlı memurun ölüm haberini duyup genç bir memura ilk kez yol verdikten sonra, sürekli yükselme ve yetişme çabasının hayatın kendisinden daha değerli olup olmadığını düşünmeye başlar. Söz, kariyer ve gündelik telaşın insan ömrü karşısında sınırlı olduğunu hatırlatıyor olabilir."
+      "answer": "Örnek yorum: O sırada işine yetişmeye çalışan anlatıcı, yaşlı kişinin sözünü önemsemez. Ancak yaşlı memurun ölüm haberini duyup genç bir memura ilk kez yol verdikten sonra, sürekli koşuşturmanın hayatın kendisinden daha değerli olup olmadığını düşünmeye başlar. Söz, iş ve gündelik yaşam telaşının insan ömrü karşısında sınırlı olduğunu; ayrıca mesleki yükselme isteğinin de bu çerçevede sorgulanabileceğini düşündürebilir."
     },
     {
       "question_id": "T4-P269-Q03",
