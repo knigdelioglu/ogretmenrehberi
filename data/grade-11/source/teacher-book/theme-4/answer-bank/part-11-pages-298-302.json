@@ -159,7 +159,7 @@
       "question_no": "2",
       "source_locator": "basılı s.302 / PDF s.303 — Süreci Değerlendirebilme soru 2",
       "prompt_summary": "Hazırlanan afişi içerik, dil ve anlatım yönünden değerlendirme",
-      "answer": "Öz değerlendirmede üç noktayı kontrol edin: İçerik videodaki kanıtlı iletiyi doğru yansıtıyor mu; dil kısa, anlaşılır ve hedef kitleye uygun mu; yazı ile görsel birbirini tamamlıyor mu? Güçlü yönün yanına düzeltilecek somut bir nokta da yazılmalıdır."
+      "answer": "Afişinizi üç açıdan değerlendirin: İçerik videodaki kanıtlı iletiyi doğru yansıtıyor mu; dil kısa, anlaşılır ve hedef kitleye uygun mu; anlatımda yazı ile görsel birbirini tamamlıyor mu? Güçlü veya geliştirilmesi gereken yönleri, kendi afişinizde gerçekten gözlediğiniz özelliklere göre belirtin."
     },
     {
       "question_id": "T4-P302-PERFQ03",
@@ -203,8 +203,15 @@
       "question_no": "Tema Sonu Değerlendirme / Öğrenme Günlüğü",
       "source_locator": "basılı s.302 / PDF s.303 — Tema Sonu Değerlendirme / Öğrenme Günlüğü",
       "prompt_summary": "Tema sonu öğrenme günlüğünü öğrencinin kendi öğrenme ve yazar kimliği üzerine tamamlaması",
-      "answer": "Öğrenme günlüğünüzde tema öncesi ve sonrası bilginizi, hayat deneyiminize ilişkin farkındalığınızı ve konuşmacı veya yazar kimliğinizdeki değişimi kendi örneklerinizle yazın. Şu başlangıçlardan yararlanabilirsiniz: “Bu temada öğrendiğim bir şey…”; “Hayatın gerçeklerinin duygu ve davranışlara yansıdığını şu metinde fark ettim…”; “Bir sonraki yazma veya konuşma çalışmamda…”.",
-      "guidance": "Kendi öğrenme sonucunuzu, farkındalığınızı ve öz değerlendirmenizi kişisel örneklerle yazın."
+      "answer": "Öğrenme günlüğünü ders kitabındaki beş başlığa göre kendi öğrenme sürecinizden hareketle tamamlayın.",
+      "guidance": "Beş başlığın her birini kendi öğrenme deneyiminize göre doldurun; kitapta olmayan ek hedef veya gelecek planı eklemek zorunlu değildir.",
+      "answer_sections": {
+        "Tema öncesi bildiklerim": "[...]",
+        "Tema sonrasında öğrendiklerim": "[...]",
+        "Hayatın gerçeklerinin bireylerin duygu, düşünce ve davranışlarına nasıl yansıdığına ilişkin fark ettiklerim": "[...]",
+        "Bu temada karşılaştığım metinlerin kelime dağarcığım, anlatım becerim ve dil kullanımıma yönelik farkındalığıma etkisi": "[...]",
+        "Bu temada öğrendiklerimin kendi konuşmacı ve yazar kimliğime etkisi": "[...]"
+      }
     }
   ]
 }
