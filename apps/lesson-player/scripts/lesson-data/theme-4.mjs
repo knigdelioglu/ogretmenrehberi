@@ -115,13 +115,13 @@ for (const [id, sourceId, answerId] of [
 const p252SuccessAnswer = mimarAnalysisById.get("s252-q3")?.answer;
 const p252SuccessAlternatives = p252SuccessAnswer?.answer_sections?.["Başka özellikler"];
 assert(
-  p252SuccessAnswer?.answer?.includes("örnek") &&
+  p252SuccessAnswer?.answer?.includes("örnek verilebilir") &&
     p252SuccessAnswer?.evidence_quotes?.some((quote) =>
       /bilgim, azmim ve çalışkanlığımla talihimi yenmiştim/i.test(quote)
     ) &&
-    /metinden hareketle|gerekçeyle/i.test(p252SuccessAlternatives ?? "") &&
-    /başka.*öner/i.test(p252SuccessAlternatives ?? "") &&
     typeof p252SuccessAlternatives === "string" &&
+    /metindeki başka kanıtlardan/i.test(p252SuccessAlternatives) &&
+    /farklı özellikler/i.test(p252SuccessAlternatives) &&
     p252SuccessAlternatives.length < 200 &&
     !/merak|öz disiplin|sorumluluk|iş birliği|hatalardan öğrenme/i.test(
       p252SuccessAlternatives
