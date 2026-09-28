@@ -267,13 +267,17 @@
       "id": "s45-q1",
       "source_record_id": "T01-S0040",
       "answer_id": "T1-P45-Q01",
-      "layout": "assessment"
+      "layout": "assessment",
+      "prompt": "Araştırma sonrası yansıtma — Mektuba bakışınız araştırma sonrasında değişti mi? Somut bir bulguyla açıklayınız.",
+      "prompt_mode": "FLOW_OVERRIDE"
     },
     {
       "id": "s46-q1",
       "source_record_id": "T01-S0041",
       "answer_id": "T1-P46-Q01",
-      "layout": "question"
+      "layout": "reference",
+      "prompt": "Örnek beğeni ölçütleri — Önce kendi ölçütlerinizi belirleyin; ardından aşağıdaki örneklerle karşılaştırın.",
+      "prompt_mode": "FLOW_OVERRIDE"
     },
     {
       "id": "s46-q2",
