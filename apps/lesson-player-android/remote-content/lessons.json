@@ -3977,16 +3977,16 @@
           "entry_type": "question_answer",
           "printed_page": 47,
           "question_no": "1",
-          "prompt_summary": "Mektuptaki gerçeklik ile nesnel gerçekliğin örtüşme düzeyini değerlendirme",
-          "answer": "Mektup gerçek kişi, tarih, yer ve gündelik olaylara dayanan kişisel bir tanıklıktır; bu nedenle nesnel gerçeklikle ilişkilendirilebilecek çok sayıda unsur taşır. Ancak metindeki her ayrıntının doğruluğu dış kaynakla sınanmadan “tam örtüşme” sonucuna gidilmemeli; yazarın duygu, beğeni ve yorumlarının öznel olduğu ayrıca belirtilmelidir.",
+          "prompt_summary": "Mektuptaki metinsel gerçeklik ile dış dünyadaki gerçeklik arasındaki ilişkiyi değerlendirme",
+          "answer": "Mektuptaki metinsel gerçeklik; gerçek kişi, yer, tarih, kurum ve yaşantılara gönderme yaptığı için dış dünyadaki gerçeklikle ilişkilendirilebilir. Ancak yazar bu gerçeklik unsurlarını kendi deneyimi, seçimi ve bakış açısı içinden aktarır. Bu nedenle gerçek yaşama dayanmak, metnin her ayrıntısının nesnel veya tamamen tarafsız olduğu anlamına gelmez.",
           "source_locator": "basılı s.47 / PDF s.48; ana metin s.37-38",
           "answer_sections": {
-            "Metinde doğrulanabilir nitelikteki unsurlar": "24 Haziran 1940 tarihi, İstanbul/Fakülte, kişi ve yer adları, sınavlar, Namık Kemal okumaları, Eskişehir yolculuğu gibi ayrıntılar dış kaynaklarla karşılaştırılabilecek somut verilerdir.",
-            "Öznel gerçeklik": "Yalnızlık duygusu, vicdan azabı, Dostoyevski ve Fransız romanına ilişkin beğeni/yargılar, Âli'ye yönelik tavsiyeler yazarın kişisel bakışını yansıtır.",
-            "Sonuç": "Mektup tarihsel araştırma için değerli bir birincil tanıklık olabilir; fakat kişisel bakış açısı taşıdığı için tek başına bütünüyle tarafsız veya eksiksiz bir tarih belgesi sayılmaz."
+            "Dış dünyayla ilişkilendirilebilecek unsurlar": "“24 Haziran 940 İstanbul”, fakülte ve sınavlar, kişi ve yer adları, Namık Kemal okumaları ve Eskişehir'e gitme planı gibi ayrıntılar dış kaynaklarla karşılaştırılabilecek somut verilerdir.",
+            "Yazarın bakış açısını gösteren unsurlar": "Yalnızlık, vicdan azabı, romanlara ilişkin beğeni ve değerlendirmeler ile Âli'ye verilen tavsiyeler yazarın kişisel duygu ve düşüncelerini yansıtır.",
+            "Sonuç": "Metinsel gerçeklik dış dünyaya dayanabilir; fakat yazarın seçimi ve yorumu bu gerçekliğin metindeki sunuluş biçimini etkiler."
           },
-          "explanation": "Bu soruda 'gerçek olaylara dayanma' (nesnellik) ile 'yazarın kişisel bakış açısı ve duyguları' (öznellik) arasındaki dengeyi doğru kurmak esastır.",
-          "guidance": "“Metinde hangi bilgi dışarıdan doğrulanabilir?”, “Hangisi yazarın yorumu veya duygusu?” sorularıyla iki katmanı ayırın. Dış araştırma yapılmadan kişi eşleştirmelerini veya tarihsel ayrıntıları kesinleştirmeyin."
+          "explanation": "Gerçek yaşama dayanma ile nesnellik aynı şey değildir. Soruda dış dünyayla ilişkilendirilebilen unsurlar ile yazarın kişisel bakışını taşıyan unsurlar birlikte değerlendirilmelidir.",
+          "guidance": "“Metindeki hangi unsur dış dünyayla karşılaştırılabilir?” ve “Bu unsur yazarın hangi bakış açısıyla aktarılmıştır?” sorularını birlikte kullanın. Geleceğe ilişkin bir planı gerçekleşmiş olay gibi sunmayın; dış araştırma yapılmadan kişi eşleştirmelerini veya tarihsel ayrıntıları kesinleştirmeyin."
         },
         "content": null
       },
@@ -4019,31 +4019,24 @@
           "printed_page": 47,
           "question_no": "2",
           "prompt_summary": "1. sorudaki görüşü (metin–nesnel gerçeklik ilişkisi) metinden ve gerçek hayattan örneklerle destekleme",
-          "answer": "Mektuptaki tarih, yer, kişi ve olayların önemli bir kısmı kitaptaki biyografi ve güvenilir dış kaynaklarla örtüşür. Bazı eşleştirmeler ise doğrudan kanıta değil, çıkarıma dayanır. Bu örnekler, metindeki gerçekliğin yazarın yaşadığı nesnel gerçekliğe dayandığını gösterir.",
+          "answer": "Görüşü desteklemek için metindeki somut ayrıntılar, kitaptaki biyografi ve gerektiğinde güvenilir dış kaynaklarla karşılaştırılabilir. Örneğin fakülte hayatı, Namık Kemal üzerine çalışma ve Eskişehir bağlantısı metindeki gerçeklik ile Kaplan'ın yaşamı arasında bağ kurmaya yardımcı olur. Çıkarıma dayanan kişi eşleştirmeleri ise kesin bilgi gibi kullanılmamalıdır.",
           "source_locator": "basılı s.47 / PDF s.48; ana metin ve biyografi s.37-38; dış kaynaklar: TDV İslâm Ansiklopedisi “Kaplan, Mehmet” maddesi, Türk Edebiyatı İsimler Sözlüğü (TEİS) “Kaplan, Mehmet” maddesi",
           "answer_sections": {
-            "Metinden Örnekler": [
-              "“24 Haziran 940 İstanbul” / “Fakülte’de imtihanlar başladı.”",
-              "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim; gelecek sene muhitini ve hayatını araştıracağım.”",
-              "“Hamdi Bey’le yine sathî bir samimiyetimiz var.”",
-              "“Ara sıra Küllük kahvesine gidiyorum.”",
-              "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.”",
-              "“Behice eve geliyor ve iyi saatler geçiriyoruz.”",
-              "“senin kıtanın başka yere nakledildiğini” / “Fakat yarın ne olacağımız belli değil.”"
-            ],
-            "Gerçek Hayattan Örnekler": [
-              "Fakülte — Kitaptaki biyografi (s.38): Kaplan 1935'te İstanbul Üniversitesi Edebiyat Fakültesi Türk Dili ve Edebiyatı Bölümüne kaydolmuş, Yeni Türk Edebiyatı kürsüsünde asistan olmuştur. Dış kaynak (TDV, TEİS): 1939'da mezun olup aynı yıl asistanlığa başlamıştır. Mektuptaki fakülte ve sınav ayrıntıları bununla örtüşür.",
-              "Namık Kemal çalışması — Dış kaynak (TDV): Kaplan 1942'de doktorasını tamamlamış, Namık Kemal: Hayatı ve Eserleri adlı kitabını 1948'de yayımlamıştır. Mektupta sözü edilen çalışma planı gerçekleşmiştir.",
-              "“Hamdi Bey” — Kitaptaki biyografi (s.38): Kaplan, kürsünün başına getirilen Ahmet Hamdi Tanpınar'la çalışmıştır. Çıkarım: Mektuptaki “Hamdi Bey”in Tanpınar olması güçlü bir olasılıktır; ancak mektup parçası bunu tek başına kanıtlamaz.",
-              "Küllük Kahvesi — Dış kaynak araştırması: Beyazıt'ta, üniversitenin yakınında, dönemin yazar, şair ve aydınlarının buluştuğu bilinen bir kahvedir. Öğrenciden bu bilginin kaynağını göstermesi istenir.",
-              "Eskişehir — Kitaptaki biyografi (s.38): Kaplan Eskişehir'de doğmuştur (dış kaynaklar doğum yerini Eskişehir'in Sivrihisar ilçesi olarak verir). Mektuptaki Eskişehir'e gitme planı ve aile selamları bununla örtüşür.",
-              "Behice — Dış kaynak (TEİS): Kaplan 1942'de Behice Moyuncur ile evlenmiştir. Çıkarım: Mektuptaki yakınlık ifadeleri, sözü edilen Behice'nin ileride eşi olacak kişi olduğunu düşündürür.",
-              "Âli — Dış kaynak (TDV): Âli'ye Mektuplar, Kaplan'ın asistanlık yıllarında meslektaşı Âli Ölmezoğlu'na yazdığı mektuplardır. Mektuptaki “kıta” sözü ve Diyarbakır anışı, Âli'nin o sırada askerlikte olduğunu düşündürür (çıkarım).",
-              "Dönem — Genel tarih bilgisi: 1940'ta İkinci Dünya Savaşı sürmektedir; Türkiye savaşa girmemiş olsa da askerî hazırlık içindedir. “Fakat yarın ne olacağımız belli değil.” cümlesindeki belirsizlik bu ortamla ilişkilendirilebilir (yorum)."
-            ],
-            "Dikkat": "Yalnızlık, vicdan azabı, Dostoyevski ve Fransız romanı hakkındaki yargılar yazarın öznel dünyasına aittir; gerçek hayattan doğrulanamaz. Bunlar “Gerçek Hayattan Örnekler” sütununa yazılmaz."
+            "Örnek 1 — Fakülte": {
+              "Metinden": "“Fakülte’de imtihanlar başladı.”",
+              "Gerçek hayatla bağlantı": "Kitaptaki biyografi Kaplan'ın İstanbul Üniversitesi Edebiyat Fakültesinde öğrenim gördüğünü ve daha sonra aynı akademik çevrede çalıştığını belirtir. Bu, mektuptaki fakülte ayrıntısıyla uyumludur."
+            },
+            "Örnek 2 — Namık Kemal çalışması": {
+              "Metinden": "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim; gelecek sene muhitini ve hayatını araştıracağım.”",
+              "Gerçek hayatla bağlantı": "Kaplan'ın sonraki akademik çalışmalarında Namık Kemal'e yönelmiş olması, mektuptaki çalışma planıyla ilişkilendirilebilir. Dış kaynak kullanılıyorsa kaynak açıkça belirtilmelidir."
+            },
+            "Örnek 3 — Eskişehir bağlantısı": {
+              "Metinden": "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.”",
+              "Gerçek hayatla bağlantı": "Kitaptaki biyografi Kaplan'ın Eskişehir doğumlu olduğunu belirtir. Mektuptaki ifade bir gelecek planıdır; yolculuğun gerçekten gerçekleştiğini yalnız bu cümleden çıkaramayız."
+            },
+            "Sınır": "“Hamdi Bey”, “Behice” veya başka kişilerin kimliği gibi eşleştirmeler ayrıca doğrulanmadıkça ana cevabın kesin kanıtı yapılmamalıdır."
           },
-          "guidance": "Öğrenciler “Metinden Örnekler” sütununa mektuptan alıntıyı, “Gerçek Hayattan Örnekler” sütununa bu alıntının karşılığını yazar. Her karşılıkta bilginin nereden geldiğini (kitaptaki biyografi / dış kaynak / çıkarım) belirtmelerini isteyin. Biyografi (s.38) yalnız fakülte, kürsü, Tanpınar ve Eskişehir bağlantılarını doğrular; diğer bilgiler için güvenilir kaynak göstermeleri gerekir. “Hamdi Bey” ve “Behice” gibi eşleştirmeleri kesin bilgi değil, gerekçeli çıkarım olarak kabul edin."
+          "guidance": "İki ya da üç güvenli örnek yeterlidir. Her örnekte önce mektuptaki ifadeyi, sonra biyografi veya güvenilir dış kaynakla kurulabilen bağlantıyı gösterin. Olası kişi eşleştirmelerini ve tarihsel yorumları ana cevaba yığmayın; doğrulanmayan çıkarımları kesin bilgi olarak kullanmayın."
         },
         "content": null
       },
@@ -4075,14 +4068,15 @@
           "entry_type": "question_answer",
           "printed_page": 47,
           "question_no": "3",
-          "prompt_summary": "Arkadaş görüşlerini değerlendirip katılma veya katılmama gerekçesi oluşturma",
-          "answer": "Mektubun gerçek kişilere ve olaylara dayanması tarihsel araştırmaya kaynak olmasını sağlayabilir; ancak bu, onun bütünüyle tarafsız olduğu anlamına gelmez. Tarih, kurum, eğitim, gündelik hayat ve haberleşme ayrıntıları araştırmaya ipucu verir; tek bir kişinin deneyimi bütün toplumu temsil etmez.",
+          "prompt_summary": "Mektubun gerçek yaşama dayanmasının onu tamamen tarafsız bir belge yapıp yapmadığını değerlendirme",
+          "answer": "Hayır. Mektup gerçek kişi, yer ve olaylara dayanabilir; ancak yazar hangi ayrıntıları anlatacağını seçer ve bunları kendi duygu, düşünce, beğeni ve değerlendirmeleriyle aktarır. Bu nedenle mektup gerçek yaşamla ilgili bilgi verebilir fakat bütünüyle tarafsız bir belge sayılmaz.",
           "source_locator": "basılı s.47 / PDF s.48",
           "answer_sections": {
-            "Örnek görüş 1": "“Mektup gerçek kişilere ve olaylara dayandığı için tarihsel araştırmada kullanılabilir.” → Katılınabilir; ancak kişisel duygu ve değerlendirmeler içerdiği için tamamen tarafsız bir belge olduğu sonucuna gidilmemelidir.",
-            "Örnek görüş 2": "“Kişisel bir mektup dönem hakkında hiçbir bilgi vermez.” → Katılmayabilirsiniz; çünkü tarih, kurum, eğitim, gündelik hayat ve haberleşme gibi somut ayrıntılar dönemi araştırmak için ipucu sağlar. Bununla birlikte tek bir kişinin deneyiminin bütün toplumu temsil etmediği belirtilmelidir."
+            "Gerçek yaşama dayanan yön": "Tarih, yer, kurum, gündelik hayat ve haberleşmeye ilişkin ayrıntılar dış dünyayla ilişkilendirilebilir.",
+            "Öznel yön": "Yalnızlık, vicdan azabı, romanlara ilişkin değerlendirmeler ve Âli'ye yönelik tavsiyeler yazarın kişisel bakış açısını taşır.",
+            "Sonuç": "Bir mektup tarihsel veya biyografik araştırmada kaynak olarak kullanılabilir; fakat içerdiği bilgilerin kapsamı, amacı ve yazarın bakış açısı dikkate alınmalıdır."
           },
-          "guidance": "Gerçek sınıf tartışmasında öğrencilerin görüşlerini aynen kaydedin; hazır örnekleri yalnızca tartışmayı başlatmak için kullanın. “Katılıyorum/katılmıyorum çünkü...” ifadesini mutlaka metin veya dış araştırma kanıtıyla tamamlatın."
+          "guidance": "Soruyu doğrudan cevaplatın: gerçek yaşama dayanma ≠ tam tarafsızlık. Öğrenciden biri dış dünyayla ilişkilendirilebilen, biri de yazarın öznel bakışını gösteren en az iki metin örneği istemek yeterlidir."
         },
         "content": null
       },
@@ -4114,14 +4108,19 @@
           "entry_type": "question_answer",
           "printed_page": 48,
           "question_no": "1",
-          "prompt_summary": "Rodos'tan denize atılan şişe mektubunun iletişim amacı",
-          "answer": "İlk metin, iki arkadaşın Rodos’ta yazdıkları mektubu cam bir şişeye koyup denize bırakmasını ve mektubun daha sonra Gazze’de bulunmasını anlatır. Metin, şişeyi denize bırakmalarının kesin amacını açıklamaz. Olası bir yorum, alışılmış posta yolu dışında bir ileti gönderip bunun bir kıyıya ulaşıp ulaşmayacağını merak etmiş olmalarıdır; sonraki tanışma ve arkadaşlık ilk niyetin kanıtı değil, olayın sonucudur.",
+          "prompt_summary": "Şişeye bırakılan bir iletinin olası gönderilme amaçları",
+          "answer": "Şişeye bırakılan bir ileti; bilinmeyen bir kişiye ulaşmak, bir mesaj veya hatıra bırakmak, iletinin nereye ulaşacağını merak etmek ya da alışılmış iletişim yolları dışında deneysel/eğlenceli bir iletişim kurmak gibi amaçlarla gönderilebilir. Kitaptaki Beth ve Zac örneğinde göndericilerin kesin ilk amacı açıkça belirtilmediği için bunlar olası yorumlardır.",
           "source_locator": "basılı s.48 / PDF s.49",
           "answer_sections": {
-            "Metinde doğrudan verilen": "Beth ve Zac adlı iki arkadaş tatilde yazdıkları mektubu 4 Temmuz’da Rodos’tan bir şişe içinde denize bırakmıştır. Mektup Gazze kıyısında bulunmuş, üzerindeki e-posta adresinden iletişim kurulmuş ve arkadaşlık sosyal medyada sürmüştür.",
-            "Olası yorum (kesin niyet değil)": "Göndericiler alışılmış posta kanalı dışında bir ileti bırakıp denizin onu bir alıcıya ulaştırıp ulaştırmayacağını merak etmiş olabilir. Bu, metindeki eylemden çıkarılan bir olasılıktır; göndericilerin açıklanmış niyeti değildir."
+            "Olası amaçlar": [
+              "Bilinmeyen bir alıcıya mesaj ulaştırmak.",
+              "Bir hatıra veya iz bırakmak.",
+              "İletinin nereye ve kime ulaşacağını merak etmek.",
+              "Alışılmış posta yolu dışında deneysel veya eğlenceli bir iletişim kurmak."
+            ],
+            "Kitaptaki örneğin sınırı": "Beth ve Zac'ın mektubu daha sonra bulunmuş ve yeni bir iletişim kurulmuştur; ancak bu sonuç, şişeyi denize bırakırken kesin amaçlarının yeni bir arkadaş edinmek olduğunu kanıtlamaz."
           },
-          "guidance": "Metin göndericilerin ilk amacını açıkça belirtmez. Öğrenciden bir olası amaç yorumu ve bu yorumu destekleyen metin ayrıntısını isteyin; sonradan gerçekleşen arkadaşlığı başlangıçtaki niyetin kanıtı olarak sunmayın."
+          "guidance": "Soru olası amaçları soruyor. Birden fazla gerekçeli cevabı kabul edin. Kitaptaki olayın sonradan nasıl sonuçlandığını göndericilerin başlangıçtaki kesin niyeti gibi sunmayın."
         },
         "content": null
       },
@@ -4194,14 +4193,14 @@
           "printed_page": 48,
           "question_no": "3",
           "prompt_summary": "Tarih öncesi mağara resimleri ile günümüz emojileri (resimce) arasındaki iletişimsel benzerlik",
-          "answer": "Mağara resimleri ile emojiler, sözcüklerin yanında veya yerine görsel işaretlerle duygu, nesne, eylem ya da durum aktarmaları bakımından benzer düşünülebilir. Ancak her iki görsel sistemin anlamı da kültür ve bağlama göre değişebilir.",
+          "answer": "Mağara resimleri ile emojiler, anlamı görsel işaretler üzerinden aktarma bakımından benzer düşünülebilir. Her ikisinde de çizgi, figür veya sembol bir duygu, nesne, eylem ya da durumu çağrıştırabilir; ancak bu işaretlerin anlamı dönem, kültür ve bağlama göre değişebilir.",
           "source_locator": "basılı s.48 / PDF s.49",
           "answer_sections": {
-            "Görsel sembolle anlatım": "Her ikisinde de çizgi, figür veya işaret anlam taşır; yazılı sözcük kullanılmadan da ileti kurulabilir.",
-            "Hız ve ekonomi": "Bir görsel işaret, bazı durumlarda uzun bir açıklamanın yerine kısa ve yoğun bir anlam aktarabilir.",
-            "Bağlam ve kültür": "Bir mağara resminin veya emojinin anlamı her zaman kendiliğinden ve evrensel değildir; aynı işaret farklı dönem ve topluluklarda farklı yorumlanabilir."
+            "Görsel işaretlerle anlam aktarma": "Her iki örnekte de çizgi, figür veya semboller anlam taşıyabilir; sözcük kullanılmadan ya da sözcüklere ek olarak bir ileti kurulabilir.",
+            "Sözcüksüz anlatım olanağı": "Bazı duygu, nesne veya durumlar görsel bir işaret aracılığıyla ifade edilebilir; bu benzerlik iki örneğin aynı iletişim sistemi olduğu anlamına gelmez.",
+            "Bağlam ve kültür": "Bir mağara resminin veya emojinin anlamı kendiliğinden ve evrensel kabul edilemez; aynı işaret farklı dönem ve topluluklarda farklı biçimlerde yorumlanabilir."
           },
-          "guidance": "Benzerliği “herkes aynı şeyi anlar” biçiminde değil, “görsel işaretlerle anlam aktarma” düzeyinde kurdurun. Ardından aynı sembolün bağlama göre farklı anlaşılabileceğine örnek isteyin."
+          "guidance": "Benzerliği görsel işaretlerle anlam aktarma düzeyinde kurdurun. Mağara resimlerinin yapılma amacını “hızlı iletişim” gibi doğrulanmamış bir işleve bağlamayın; iki sistem arasındaki dönem ve bağlam farkını koruyun."
         },
         "content": null
       },
@@ -4234,16 +4233,16 @@
           "printed_page": 50,
           "question_no": "1",
           "prompt_summary": "Verilen beş farklı mektup metninin yazılış amaçlarını belirleme",
-          "answer": "Beş metin; hâl-hatır sorma, moral ve umut verme, sağlık/tedavi hakkında bilgi paylaşma, özlem ve kavuşma isteğini iletme gibi farklı haberleşme amaçları taşır.",
+          "answer": "Beş örnekte hâl-hatır sorma, moral ve umut verme, sağlık ve tedavi hakkında bilgi paylaşma, özlem bildirme ve kavuşma isteğini iletme gibi farklı iletişim amaçları görülür.",
           "source_locator": "basılı s.49-50 / PDF s.50-51",
           "answer_sections": {
             "1. Metin (Kutadgu Bilig)": "Muhataba esenlik ve sağlık dilemek, hâlini ve devranın yükünü nasıl taşıdığını sormak.",
             "2. Metin (Necip Fazıl Kısakürek)": "Muhataba moral, sabır, direnme gücü ve gelecek umudu vermek.",
             "3. Metin (Mustafa Kemal Atatürk - Dr. Rasim Ferit Bey'e Mektup)": "Tedavi süreci ve sağlık durumunu bildirmek, hekim dosttan daha açık bir cevap/görüş beklediğini iletmek.",
             "4. Metin (Roman İçi Mektup)": "Ayrılıktan doğan özlemi, bağlılığı ve kavuşma isteğini ifade etmek.",
-            "5. Metin (Bekir Sıtkı Erdoğan - Bir Yağmur Başladı)": "Sevilen kişiye kavuşma sözünü ve özlemi şiirsel bir dille iletmek."
+            "5. Metin (Bekir Sıtkı Erdoğan - Bir Yağmur Başladı)": "Özlem ve kavuşma isteğini şiirsel bir dille ifade etmek."
           },
-          "guidance": "Yazılış amacını belirlerken yalnız metnin açıkça yaptığı iletişim işlevine odaklanın; metin dışında bilinmesi gereken biyografik veya mekânsal ayrıntıları cevabın zorunlu parçası yapmayın."
+          "guidance": "Her örnekte metnin açıkça gerçekleştirdiği iletişim işlevini belirleyin. Örneklerin biçimlerinin farklı olabileceğini göz önünde bulundurun; metin dışında bilinmesi gereken biyografik veya mekânsal ayrıntıları cevabın zorunlu parçası yapmayın."
         },
         "content": null
       },
@@ -4276,16 +4275,16 @@
           "entry_type": "question_answer",
           "printed_page": 50,
           "question_no": "2",
-          "prompt_summary": "Yazılış şekilleri farklı olsa da her mektubun bir haberleşme aracı olduğu yargısının değerlendirilmesi",
-          "answer": "Yargıya genel olarak katılınabilir; çünkü metinlerin ortak yönü bir duygu, haber, dilek veya düşünceyi bir muhataba ulaştırmalarıdır. Bununla birlikte örneklerin hepsi biçim bakımından klasik düzyazı mektup değildir; bazıları şiir veya kurmaca içinde mektup/hitap söyleyişinden yararlanır.",
+          "prompt_summary": "Biçimleri farklı metinlerin neden haberleşme kapsamında düşünülebileceğini açıklama",
+          "answer": "Biçimleri farklı olsa da bu metinler bir muhataba duygu, düşünce, haber, dilek veya isteği iletme işlevi taşıdıkları için haberleşme kapsamında düşünülebilir. Bununla birlikte haberleşme işlevi taşımak, bütün örneklerin biçim ve tür bakımından klasik mektup olduğu anlamına gelmez.",
           "source_locator": "basılı s.49-50 / PDF s.50-51",
           "answer_sections": {
-            "Ortak işlev": "Metinler bir muhataba yönelir ve selam, haber, sağlık bilgisi, özlem, moral veya kavuşma isteği gibi bir ileti taşır.",
-            "Biçim farkı": "Klasik mektup biçimi, manzum söyleyiş ve roman içindeki mektup aynı şey değildir. Bir metnin bir kişiye seslenmesi tek başına onu biçimsel olarak mektup yapmaz.",
-            "Sonuç": "Bu nedenle “haberleşme işlevi” ile “mektup biçimi/türü” birbirinden ayrılarak değerlendirilmelidir."
+            "Ortak işlev": "Metinlerin ortak yönü, bir muhataba yönelerek selam, haber, sağlık bilgisi, moral, özlem veya kavuşma isteği gibi bir ileti aktarmalarıdır.",
+            "Biçim ve tür farkı": "Klasik düzyazı mektup, şiirsel/manzum söyleyiş ve kurmaca içindeki mektup aynı biçim değildir. Ortak haberleşme işlevi bu türsel farklılıkları ortadan kaldırmaz.",
+            "Sonuç": "Haberleşme işlevi ile mektup biçimi/türü ayrı ölçütler olarak değerlendirilmelidir."
           },
-          "explanation": "Soruya katılma veya katılmama mümkündür. Güçlü bir cevap, metinlerin ortak iletişim yönünü kabul ederken biçimsel/türsel farklılıkları da korur.",
-          "guidance": "Öğrenciye “Bu metin kime sesleniyor ve ne iletiyor?” ile “Biçim olarak gerçekten mektup mu, yoksa mektup söyleyişinden yararlanan başka bir tür mü?” sorularını ayrı ayrı sordurun."
+          "explanation": "Sorunun odağı metinlerin ortak haberleşme işlevidir. Türsel fark, bu ortaklığı açıklarken korunması gereken ikinci düzey bir ayrımdır.",
+          "guidance": "Önce “Kime yöneliyor ve ne iletiyor?” sorusuyla ortak iletişim işlevini buldurun. Ardından biçimlerinin aynı olmadığını fark ettirin; katılma/katılmama tartışmasına dönüştürmeyin."
         },
         "content": null
       },
@@ -4321,13 +4320,13 @@
           "answer": "Metinler gerçekliği yansıtma biçimleri bakımından farklılaşır: bazıları tarihsel ve kişisel yaşama doğrudan bağlanırken bazıları gerçekliği şiirsel, öğretici veya kurmaca bir yapı içinde dönüştürür.",
           "source_locator": "basılı s.49-50 / PDF s.50-51",
           "answer_sections": {
-            "1. Metin (Kutadgu Bilig)": "Öğretici ve şiirsel gerçeklik: hükümdarın selam ve hâl-hatır sorma sözleri üzerinden insan hayatı ve yönetimle ilgili düşünceler şiirsel bir söyleyişle aktarılır.",
+            "1. Metin (Kutadgu Bilig)": "Öğretici ve şiirsel gerçeklik: selam, esenlik ve hâl-hatır ifadeleri üzerinden insan hayatına ilişkin düşünceler şiirsel ve öğretici bir söyleyiş içinde aktarılır.",
             "2. Metin (Necip Fazıl Kısakürek)": "Lirik gerçeklik: yaşanan durum ve duygular şiirin imge, ritim ve sesleniş imkânlarıyla yoğunlaştırılır.",
             "3. Metin (Mustafa Kemal Atatürk)": "Tarihî ve biyografik gerçekliğe doğrudan bağlı kişisel belge: tarih, sağlık durumu, hekim ve tedavi bilgileri dış dünyayla karşılaştırılabilecek somut veriler içerir.",
             "4. Metin (Roman Metni)": "Kurmaca gerçeklik: roman kişisinin duygu ve yaşantısı kurmaca dünyanın gerçekliği içinde verilir.",
             "5. Metin (Bekir Sıtkı Erdoğan)": "Lirik/şiirsel gerçeklik: ayrılık ve kavuşma duygusu doğa imgeleri ve ritmik söyleyişle dönüştürülür."
           },
-          "guidance": "“Somut kişi/tarih/olay bilgisi mi veriliyor, yoksa gerçeklik şiirsel veya kurmaca olarak mı dönüştürülüyor?” sorusuyla ilerleyin. Birincil belgede geçen her ayrıntıyı bağımsız olarak doğrulanmış gerçek kabul etmeyin."
+          "guidance": "“Somut kişi/tarih/olay bilgisi mi veriliyor, yoksa gerçeklik şiirsel, öğretici veya kurmaca olarak mı dönüştürülüyor?” sorusuyla ilerleyin. Metinde açıkça verilmeyen konuşucu kimliğini eklemeyin; birincil belgede geçen her ayrıntıyı da bağımsız olarak doğrulanmış gerçek kabul etmeyin."
         },
         "content": null
       },
@@ -4360,13 +4359,13 @@
           "printed_page": 50,
           "question_no": "4",
           "prompt_summary": "Sevdiklerine yazılacak bir mektup için metinlerden birini seçme ve gerekçelendirme",
-          "answer": "Örnek iki tercih:",
+          "answer": "Bu soru kişisel tercihe açıktır. Seçtiğiniz örneği, benimsediğiniz anlatım özelliğini açıklayarak gerekçelendirin. Örneğin:",
           "source_locator": "basılı s.49-50 / PDF s.50-51",
           "answer_sections": {
-            "1. Tercih Modeli (Bekir Sıtkı Erdoğan tarzı manzum mektup)": "Sevdiklerime 5. metne benzer manzum bir mektup yazmak isterdim; çünkü Anadolu'nun saf doğa imgeleriyle ('ibibiklerin ötüşü, sütün kaymak tutması') örülü bu üslup, hasreti ve kavuşma sevincini sıradan kelimelerden çok daha naif, samimi ve kalıcı bir musikiyle hissettirmektedir.",
-            "2. Tercih Modeli (Mustafa Kemal Atatürk tarzı doğrudan mektup)": "3. metne benzer bir mektup yazmak isterdim; çünkü içten bir dostluk hitabıyla başlayıp yaşananları, sağlığı ve gerçek durumu lafı dolandırmadan, net, dürüst ve saygılı bir üslupla paylaşmak en güven verici iletişim yoludur."
+            "Örnek tercih 1": "“5. metindeki şiirsel anlatıma yakın bir anlatım seçerdim; çünkü özlem ve kavuşma isteğini imgelerle daha yoğun biçimde ifade etmeyi tercih ederim.”",
+            "Örnek tercih 2": "“3. metindeki doğrudan anlatıma yakın bir anlatım seçerdim; çünkü duygu, düşünce ve yaşananları açık ve anlaşılır biçimde iletmeyi tercih ederim.”"
           },
-          "guidance": "Öğrencinin seçiminde tek bir doğru cevap aranmamalı; seçtiği metnin hangi anlatım özelliğini (lirik duygu, samimi dürüstlük, moral gücü vb.) benimsediğini gerekçelendirmesi yeterli görülmelidir."
+          "guidance": "Tek bir doğru tercih yoktur. Öğrencinin seçtiği örneğin belirli bir anlatım özelliğini göstermesi ve bu özelliğin kendi tercihine neden uyduğunu açıklaması yeterlidir. Öğrencinin yerine “en samimi”, “en güven verici” veya “en etkili” gibi üstünlük hükümleri kurmayın."
         },
         "content": null
       },
