@@ -21,7 +21,8 @@
         "Ortak Değerlerin Görünür Hâle Gelmesi": "Vatan yahut Silistre örneğinde vatan sevgisi, fedakârlık ve görev bilinci gibi değerler kişiler ve olaylar üzerinden somutlaştırılır.",
         "Kişiler Üzerinden Değer Aktarımı": "İslâm Bey, Zekiye ve Sıdkı Bey gibi kişiler farklı değerleri temsil ederek okuyucunun bu değerleri tartışmasına ve anlamlandırmasına imkân verir.",
         "Kuşaklar Arası Kültür Aktarımı": "Edebî eserlerin okunması, sahnelenmesi ve yeniden yorumlanması ortak kültürel hafızanın sonraki kuşaklara taşınmasına katkı sağlar."
-      }
+      },
+      "guidance": "Cevabı s.86'daki metne dayandırın: eser vatan sevgisi, fedakârlık, görev, namus, arkadaşlık, sabır ve irade gibi değerleri kişiler üzerinden görünür hâle getirir ve eserin sonraki kuşaklar üzerindeki etkisi özellikle vurgulanır. İslâm Bey, Zekiye ve Sıdkı Bey'e ilişkin örnekler metinde açıkça vardır; bunları metin kanıtı olarak kullanabilirsiniz. Farklı, gerekçeli çıkarımları da metne dayanıyorsa kabul edin."
     },
     {
       "question_id": "T2-P86-Q02",
@@ -61,12 +62,13 @@
       "printed_page": 87,
       "question_no": "1",
       "prompt_summary": "Ortak yazı dilinin dile etkileri",
-      "answer": "Aynı dili konuşan toplulukların ortak bir yazı dili ve ortak yazım ölçütleri kullanması, yazılı iletişimde anlaşılabilirliği ve ortaklaşmayı artırabilir; yayınların daha geniş bir çevrede okunmasını kolaylaştırabilir. Bununla birlikte bu soru, sayfadaki ortak alfabe metninden farklı bir kavramı sorar: ortak alfabe ile ortak yazı dili aynı şey değildir.",
+      "answer": "Aynı dili konuşan toplulukların ortak bir yazı dili ve ortak yazım ölçütleri kullanması, yazılı iletişimde anlaşılabilirliği ve ortaklaşmayı artırabilir; yayınların daha geniş bir çevrede okunmasını kolaylaştırabilir. Bununla birlikte ortak yazı dili, konuşma dilindeki bölgesel çeşitliliği veya ağızları kendiliğinden ortadan kaldırmaz. Ayrıca ortak alfabe ile ortak yazı dili aynı şey değildir.",
       "source_locator": "basılı s.87 / PDF s.88 — Metin Tahlili-1 soru 1",
-      "explanation": "Kitaptaki metin 34 harfli Ortak Türk Alfabesi önerisini anlatmaktadır. Sorunun 'ortak yazı dili' ifadesi daha geniş bir kavramdır; bu nedenle cevap ortak alfabenin bütün Türk dillerini tek yazı diline dönüştüreceği varsayımına dayandırılmamalıdır.",
+      "explanation": "Kitaptaki metin 34 harfli Ortak Türk Alfabesi önerisini anlatmaktadır. Sorunun “ortak yazı dili” ifadesi daha geniş bir kavramdır; bu nedenle cevap ortak alfabenin bütün Türk dillerini tek yazı diline dönüştüreceği ya da konuşma çeşitliliğini ortadan kaldıracağı varsayımına dayandırılmamalıdır.",
       "answer_sections": {
         "Yazılı İletişimde Ortaklaşma": "Ortak yazım ve söz varlığı tercihleri, farklı bölgelerde üretilen metinlerin daha kolay okunup anlaşılmasına katkı sağlayabilir.",
         "Yayın ve Eğitimde Kolaylık": "Ortak standartlar ders kitabı, sözlük, basın ve dijital yayınların daha geniş kullanıcı çevresine ulaşmasını kolaylaştırabilir.",
+        "Dil Çeşitliliği Açısından Sınır": "Ortak bir yazı dili kullanılması, konuşma dilindeki ağızları, bölgesel söyleyişleri ve yerel söz varlığını otomatik olarak ortadan kaldırmaz; yazılı standart ile konuşma çeşitliliği birlikte var olabilir.",
         "Kavram Ayrımı": "Ortak alfabe aynı harf sistemine yaklaşmayı; ortak yazı dili ise dilin kelime, biçim, söz dizimi ve yazım bakımından standartlaşmasını ifade eder. Biri diğerini otomatik olarak oluşturmaz."
       }
     },
