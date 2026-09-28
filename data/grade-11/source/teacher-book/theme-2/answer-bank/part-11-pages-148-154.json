@@ -38,78 +38,102 @@
     {
       "entry_type": "performance_support",
       "printed_page": 149,
-      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "guidance": "Seçilen yöntem ve strateji, yazının cümle, paragraf ve metin düzeyindeki bütünlüğünü desteklemelidir. Tek bir zorunlu yöntem yoktur; seçim yazma amacı ve hedef kitleyle uyumlu olmalıdır.",
       "question_id": "T2-P149-PERF03",
       "question_no": "3",
-      "activity_name": "Yazma yöntemi",
-      "prompt_summary": "Sanal müze izlenim yazısı için uygulanacak yazma yöntemini belirleme.",
-      "answer": "İzlenim yazısı için önce gerçek gözlem ve kişisel izlenimlerinizi toplayın; sonra bunları amaca, hedef kitleye ve yazı türüne uygun biçimde planlayın.",
+      "activity_name": "Yazma yöntemi ve stratejisi",
+      "prompt_summary": "Çevrim içi müze izlenimlerini yazarken cümle, paragraf ve metin düzeni için uygun yöntem ve strateji belirleme.",
+      "answer": "Cümle, paragraf ve metin düzenini birlikte planlayın; gözlemleriniz ile kişisel izlenimlerinizi açık, bağlantılı ve bütünlüklü bir metne dönüştürecek yöntem ve stratejileri seçin.",
       "source_locator": "basılı s.149 / PDF s.150 — adım 3",
       "answer_sections": {
-        "Yöntem": [
-          "Her paragrafta tek ana düşünce etrafında toplanma",
-          "Gözlem ile kişisel duygu ve yorumu ayırt ederek kaynaştırma",
-          "Kültürel unsurlar arasında karşılaştırma ve örnekleme yapma",
-          "Kaynakları ve müze bilgilerini doğru not etme"
+        "Cümle Düzeni": [
+          "Açık ve anlaşılır cümleler kurma",
+          "Tekdüzeliği önlemek için amaca uygun farklı cümle yapılarından yararlanma",
+          "Cümleler arasında anlam ve bağdaşıklık ilişkisini koruma"
+        ],
+        "Paragraf Düzeni": [
+          "Her paragrafı tek bir ana düşünce veya izlenim etrafında kurma",
+          "Gözlem, örnek ve kişisel yorumu aynı paragraf içinde anlamlı biçimde ilişkilendirme",
+          "Paragraflar arasında uygun geçişler kullanma"
+        ],
+        "Metin Düzeni": [
+          "Girişte müzeyi ve gezi bağlamını tanıtma",
+          "Gelişmede dikkat çeken eser, bölüm ve izlenimleri düzenli bir sırayla aktarma",
+          "Sonuçta genel değerlendirme ve geziyle ilgili kişisel kazanımı belirtme"
         ]
       }
     },
     {
       "entry_type": "performance_support",
       "printed_page": 149,
-      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "guidance": "Kitap tek bir yazma amacı dayatmıyor; amaç seçimi gerekçelendirilmelidir. İzlenim yazısının kişisel gözlem ve değerlendirmeye dayalı yapısı seçilen amaçla uyumlu olmalıdır.",
       "question_id": "T2-P149-PERF04",
       "question_no": "4",
       "activity_name": "Yazma amacı",
-      "prompt_summary": "Müzeyi tanıtırken sanal deneyimin uyandırdığı duygu, düşünce ve kültürel farkındalığı aktarma.",
-      "answer": "Müzeyi tanıtırken sanal deneyimin uyandırdığı duygu, düşünce ve kültürel farkındalığı aktarma.",
+      "prompt_summary": "Çevrim içi müze izlenim yazısının amacına karar verme.",
+      "answer": "Yazma amacınızı, metinde neyi öne çıkarmak istediğinize göre belirleyin. Bilgilendirme, kişisel izlenimleri aktarma, kültürel farkındalık oluşturma veya bunları birlikte kullanma seçeneklerinden amacınıza uygun olanı seçebilirsiniz.",
       "source_locator": "basılı s.149 / PDF s.150 — adım 4",
       "answer_sections": {
-        "Amaç": "Bilgilendirme + kişisel izlenim ve kültürel farkındalık aktarımı"
+        "Örnek Amaçlar": [
+          "Gezilen müze ve dikkat çeken eserler hakkında bilgi vermek",
+          "Sanal gezi sırasında oluşan duygu ve düşünceleri aktarmak",
+          "Kültürel mirasa ilişkin farkındalık oluşturmak"
+        ],
+        "Amaç Cümlesi": "Bu yazıda amacım ... çünkü ..."
       }
     },
     {
       "entry_type": "performance_support",
       "printed_page": 149,
-      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "guidance": "Hedef kitleyi veya süreyi hazır kabul etmeyin; gerçek görev koşullarına göre belirleyin. Kitabın bu adımı yalnız hedef kitleyi değil, metnin diğer özelliklerini de kapsar.",
       "question_id": "T2-P149-PERF05",
       "question_no": "5",
-      "activity_name": "Hedef kitle",
-      "prompt_summary": "Yazıyı sınıf arkadaşları, öğretmen ve okul topluluğuna göre düzenleme.",
-      "answer": "Yazıyı sınıf arkadaşları, öğretmen ve okul topluluğuna göre düzenleme.",
+      "activity_name": "Metnin özellikleri",
+      "prompt_summary": "Yazılacak metnin süre, hedef kitle ve benzeri özelliklerini belirleme.",
+      "answer": "Metnin temel özelliklerini yazmaya başlamadan önce belirleyin; süre, hedef kitle, uzunluk, paylaşım ortamı ve kullanacağınız destekleyici ögeler yazının nasıl kurulacağını etkiler.",
       "source_locator": "basılı s.149 / PDF s.150 — adım 5",
       "answer_sections": {
-        "Hedef kitle": "Sınıf arkadaşlarınız, öğretmeniniz ve okul topluluğu"
+        "Süre": "Çalışma için ayrılan zamanı ve teslim zamanını belirleyin.",
+        "Hedef Kitle": "Metnin kimler tarafından okunacağını belirleyin.",
+        "Uzunluk ve Kapsam": "Kaç paragraf veya yaklaşık ne kadar uzunlukta yazacağınızı ve hangi izlenimlere yer vereceğinizi planlayın.",
+        "Paylaşım Ortamı": "Metnin basılı, dijital veya sınıf içi paylaşım için hazırlanıp hazırlanmayacağını belirleyin.",
+        "Destekleyici Ögeler": "Gerekliyse görsel, alıntı veya kaynak bilgisini nasıl kullanacağınızı planlayın."
       }
     },
     {
       "entry_type": "performance_support",
       "printed_page": 149,
-      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "guidance": "Engeller kişiye ve çalışma koşullarına göre değişebilir. Yalnız gerçekten karşılaşılan veya öngörülen engelleri seçin ve çözümünü somutlaştırın.",
       "question_id": "T2-P149-PERF06",
       "question_no": "6",
-      "activity_name": "Yazma stratejisi",
-      "prompt_summary": "Giriş, gelişme ve sonuç bölümlerini gözlem ve yorumlarla planlama.",
-      "answer": "Müzenin adını ve seçme gerekçenizi girişte verin; gelişmede gözlemlediğiniz eserleri kişisel yorumunuzla ilişkilendirin; sonuçta sanal gezi deneyiminizi ve kazanımlarınızı değerlendirin.",
+      "activity_name": "Yazma engellerini giderme",
+      "prompt_summary": "Yazma süreciyle ilgili engelleri belirleyip ortadan kaldırma.",
+      "answer": "Yazmaya başlamadan önce süreci aksatabilecek engelleri belirleyin ve her biri için uygulanabilir bir çözüm oluşturun.",
       "source_locator": "basılı s.149 / PDF s.150 — adım 6",
       "answer_sections": {
-        "Giriş": "Müzenin adı, seçme gerekçesi ve sanal tura başlama anındaki ilk izlenim.",
-        "Gelişme": "Dikkat çeken iki veya üç somut eser; gözlem ve kişisel yorumun ilişkisi.",
-        "Sonuç": "Gezinin genel değerlendirmesi, sanal gezinin avantajları veya sınırları ve kişisel kazanım."
+        "Bilgi Eksikliği": "Müze, eser veya bölüm hakkında eksik kalan bilgileri güvenilir kaynaklardan tamamlayın.",
+        "Notların Dağınıklığı": "Gezi notlarını konu veya izlenim başlıklarına göre gruplandırın.",
+        "Planlama Güçlüğü": "Yazının giriş, gelişme ve sonuç akışını kısa bir taslakla belirleyin.",
+        "Zaman Yönetimi": "Araştırma, taslak, gözden geçirme ve son düzenleme için ayrı süreler ayırın.",
+        "Teknik Sorunlar": "Sanal tur, bağlantı, görsel veya dosya erişimiyle ilgili sorunları yazmaya başlamadan önce kontrol edin."
       }
     },
     {
       "entry_type": "performance_support",
       "printed_page": 149,
-      "guidance": "Her paragrafta tek ana düşünceye odaklanın. Gözlemlediğiniz nesnel ayrıntıyla kişisel yorumunuzu birbirinden ayırıp anlamlı biçimde ilişkilendirin.",
+      "guidance": "Bu adım yeni bir yazı türü seçme değildir; önceki adımlarda seçilen yazma stratejisini somut bir uygulama planına dönüştürür.",
       "question_id": "T2-P149-PERF07",
       "question_no": "7",
-      "activity_name": "Yazı türü",
-      "prompt_summary": "İzlenim yazısında kişisel gözlem, duygu ve değerlendirmeyi bilgiyle birlikte kullanma.",
-      "answer": "İzlenim yazısında kişisel gözlem, duygu ve değerlendirmeyi bilgiyle birlikte kullanma.",
+      "activity_name": "Yazma stratejisini yapılandırma",
+      "prompt_summary": "Yazma amacına uygun olarak seçilen stratejiyi adımlara dönüştürme.",
+      "answer": "Seçtiğiniz yazma stratejisini uygulanabilir bir sıraya dönüştürün; hangi bilgiyi nerede kullanacağınızı, gözlem ile kişisel yorumu nasıl ilişkilendireceğinizi ve metni nasıl tamamlayacağınızı planlayın.",
       "source_locator": "basılı s.149 / PDF s.150 — adım 7",
       "answer_sections": {
-        "Türün özelliği": "İzlenim yazısı, görülen veya yaşanan bir yeri yalnız bilgi vererek anlatmaz; yazarın dikkatini çeken ayrıntıları, duygu ve düşüncelerini, kişisel değerlendirmelerini de içerir. Bu nedenle gezi raporundan farklı olarak kişisel gözlem ve yorum daha belirgindir."
+        "1. Hazırlık": "Amaç, hedef kitle ve kullanılacak gezi notlarını netleştirin.",
+        "2. Sıralama": "Gözlem ve izlenimleri mantıklı bir sıraya koyun.",
+        "3. Taslak": "Giriş, gelişme ve sonuç bölümlerinin ana noktalarını belirleyin.",
+        "4. Yazma": "Somut gözlemlerle kişisel duygu ve değerlendirmeleri ilişkilendirerek metni oluşturun.",
+        "5. Gözden Geçirme": "Amaç, bütünlük, dil, yazım ve noktalama bakımından metni yeniden okuyup düzeltin."
       }
     },
     {
@@ -161,17 +185,16 @@
       "printed_page": 151,
       "question_no": "3",
       "prompt_summary": "Kültürü taşıyan ve aktaran unsurları sınıflandırma",
-      "answer": "Kitaptaki “Dil” örneğinden başlayarak kültürün taşınma yollarını sınıflandırın. Aşağıdaki başlıklar örnektir; aynı işlevi başka başlıklarla açıklayabilir veya gerekçeli yeni bir kategori önerebilirsiniz.",
-      "guidance": "“Dil” kitaptaki hazır örnektir; diğer başlıkları gerekçelendirerek kullanın. Kültürü yalnız aile veya dil taşır diye sınırlamayın; açıklayın, seçtiğiniz unsur kültürü nasıl aktarıyor.",
+      "answer": "Kitapta hazır verilen “Dil” örneğine ek olarak kültürü taşıyan ve yeni kuşaklara aktaran beş unsur aşağıdaki gibi sınıflandırılabilir. Başka gerekçeli sınıflandırmalar da yapılabilir.",
+      "guidance": "“Dil” kitaptaki hazır örnektir. Tablonun kalan alanları için beş gerekçeli kültür taşıyıcısı seçin; başka uygun sınıflandırmalar da kullanılabilir.",
       "source_locator": "basılı s.151 / PDF s.152 — soru 3",
       "answer_sections": {
-        "Dil": "Kelimeler, atasözleri ve anlatılar aracılığıyla kültürel bilgilerin aktarılmasını sağlar; kitap dilin kültürün hem parçası hem taşıyıcısı olduğunu açıkça belirtir.",
-        "Aile ve Yakın Çevre": "Gündelik davranış, alışkanlık ve anlatılar yüz yüze etkileşimle öğrenilebilir.",
-        "Eğitim": "Metinler, tarih ve kültür hakkında planlı öğrenme ortamı sağlayabilir.",
-        "Sanat ve Edebiyat": "Şiir, müzik, görsel sanatlar ve anlatılar kültürel deneyimleri ifade edip yeni kuşaklara ulaştırabilir.",
-        "Müzeler ve Arşivler": "Nesneleri ve ilgili bilgileri belgeleyip koruyarak geçmişle ilişki kurmaya imkân verebilir.",
-        "Gelenekler ve Toplumsal Etkinlikler": "Yaşatılan uygulamaların birlikte öğrenilmesini sağlayabilir.",
-        "Dijital Ortamlar": "Kayıt, paylaşım ve çevrim içi erişimle kültür ürünlerinin dolaşımına katkı sunabilir."
+        "Dil": "Kelimeler, atasözleri, deyimler ve anlatılar aracılığıyla kültürel birikimi taşır ve aktarır.",
+        "Aile ve Yakın Çevre": "Gündelik davranışlar, alışkanlıklar, değerler ve anlatılar yüz yüze etkileşimle aktarılabilir.",
+        "Eğitim": "Dil, tarih, sanat ve kültürle ilgili bilgilerin planlı biçimde yeni kuşaklara ulaşmasını sağlar.",
+        "Sanat ve Edebiyat": "Şiir, müzik, hikâye, görsel sanatlar ve diğer sanat ürünleri kültürel deneyimleri yaşatır ve aktarır.",
+        "Müzeler ve Kültürel Kurumlar": "Nesneleri, belgeleri ve bunlarla ilgili bilgileri koruyup sergileyerek kültürel belleğin sürmesine katkı sağlar.",
+        "Gelenekler ve Toplumsal Etkinlikler": "Bayramlar, törenler, geleneksel uygulamalar ve ortak etkinlikler kültürel davranışların yaşayarak öğrenilmesine imkân verir."
       }
     },
     {
