@@ -42,7 +42,6 @@
       "prompt_summary": "Biyografi türünde öznel ve nesnel anlatımdan hangisinin ön planda olduğu",
       "answer": "Biyografide nesnel anlatım ön plandadır; öznel değerlendirmeler de metinde yer alabilir.",
       "source_locator": "basılı s.202 / PDF s.203 — soru 2",
-      "explanation": "Biyografi, bir kişinin yaşamının başka biri tarafından anlatılmasıdır. Otobiyografi ise kişinin kendi yaşamını kendisinin anlatmasıdır. Bir biyografi yazarı, anlattığı kişi hakkında bilgi toplarken o kişinin otobiyografisinden de kaynak olarak yararlanabilir; bu durum biyografi metnini otobiyografiye dönüştürmez.",
       "answer_sections": {
         "on_planda_olan_anlatim": "Nesnel anlatım",
         "gerekceler": [
@@ -59,7 +58,7 @@
       "printed_page": 203,
       "question_no": "1",
       "prompt_summary": "Mehmet Akif Ersoy biyografisinin verilen biyografi örneklerinden hangisine benzediği",
-      "answer": "Metin, sayfadaki örnekler içinde en çok Orhan Okay’ın Necip Fazıl biyografisine benzer; karşılaştırma görünen parçalarla sınırlıdır.",
+      "answer": "Mehmet Âkif Ersoy metni, sayfadaki örnekler içinde en çok M. Orhan Okay’ın “Kısakürek, Necip Fazıl” biyografi parçasına benzer.",
       "source_locator": "basılı s.202-203 / PDF s.203-204 — Fark Edelim soru 1",
       "answer_sections": {
         "en_cok_benzeyen_metin": "M. Orhan Okay’ın “Kısakürek, Necip Fazıl” biyografi parçası.",
@@ -83,9 +82,9 @@
       "answer_sections": {
         "biyografi_alt_turu": "Bilimsel biyografi / monografi",
         "sebepler": [
-          "Mehmet Âkif’in eğitim, görev, yayın, eser ve edebî yönü tanıtılır.",
-          "Tarihlenmiş yaşam olayları açıklayıcı anlatımla verilir.",
-          "Parçada kurmaca olay örgüsü yerine yaşam bilgileri ve değerlendirmeler bulunur."
+          "Bilgi Köşesi’nde bilimsel biyografi/monografinin kişiyi doğumdan ölüme kadar ele aldığı belirtilir; Mehmet Âkif metni de yaşamını çocukluk ve eğitim yıllarından 1936’daki ölümüne kadar izler.",
+          "Eğitim, görev, yayın, eser ve edebî yönü tarihlenmiş yaşam olaylarıyla tanıtılır.",
+          "Kurmaca olay örgüsü yerine yaşam bilgileri ve açıklayıcı değerlendirmeler öne çıkar."
         ]
       }
     },
@@ -124,10 +123,9 @@
         },
         "ileti": {
           "Huzur": "Geçmiş, kültür, kimlik ve yeni hayat ilişkisi üzerine düşündüren iletiler.",
-          "Mehmet_Akif_Ersoy": "Sanatçının yaşamı, eserleri, toplumsal duyarlılığı ve Millî Mücadele'deki faaliyetleri hakkında bilgi ve değerlendirmeler."
+          "Mehmet_Akif_Ersoy": "Sanatçının millet ve toplum meselelerine duyarlı olması, sorumluluk üstlenmesi ve bu meseleleri işlerken sanat ve estetikten ödün vermemesi gerektiği düşüncesi öne çıkar."
         }
-      },
-      "explanation": "Kitap dışı bibliyografik bilgi (öğretmen için): Huzur ilk kez 1949’da İstanbul’da yayımlanmıştır (TDV İslâm Ansiklopedisi, “Huzur” maddesi). Bu bilgi sınıfta kullanılırsa kitap dışı kaynak olduğu belirtilmelidir."
+      }
     },
     {
       "question_id": "T3-P204-Q02",
