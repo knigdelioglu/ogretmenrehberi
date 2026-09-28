@@ -57,7 +57,7 @@
       "printed_page": 95,
       "question_no": "1",
       "prompt_summary": "Metindeki yular, üzengi, katar, kampana, hat ve toynak kelimelerinin bağlamsal anlamları",
-      "answer": "Metindeki bağlamı göz önünde bulundurularak altı çizili kelimelerin sözlük ve metin anlamları:",
+      "answer": "Metindeki bağlam göz önünde bulundurulduğunda altı çizili kelimelerin anlamları şöyledir:",
       "source_locator": "basılı s.95-96 / PDF s.96-97 — Söz Varlığımız soru 1",
       "answer_sections": {
         "Yular": "At, eşek gibi binek hayvanlarını bir yere bağlamak ya da çekerek yönlendirmek için başlarına takılan ipli veya kayışlı başlık.",
@@ -74,16 +74,16 @@
       "printed_page": 95,
       "question_no": "2",
       "prompt_summary": "Seçili kelimeleri bağlama uygun cümlelerde kullanma",
-      "answer": "Kelimelerin metnin ruhuna, kırsal ve tarihî atmosferine uygun biçimde kullanıldığı örnek cümleler:",
+      "answer": "Kelimelerin metindeki anlamlarını koruyan örnek cümleler:",
       "guidance": "Kelimelerin sözlük ve bağlam anlamını yansıtan özgün cümleler kurun.",
       "source_locator": "basılı s.95-96 / PDF s.96-97 — Söz Varlığımız soru 2",
       "answer_sections": {
-        "Yular": "Yolculuk öncesinde atın yularını çözüp yelesini okşadı, sonra dağ yoluna doğru sürdü.",
-        "Üzengi": "Ayağını gümüş işlemeli üzengiye basarak çevik bir hareketle atın sırtına sıçradı.",
-        "Katar": "İstasyondan kalkan uzun katar, ardında yoğun bir duman ve kederli gözler bırakarak gözden kayboldu.",
-        "Kampana": "İstasyon binasından yükselen tiz kampana sesi, ayrılık saatinin dolduğunu haber veriyordu.",
-        "Hat": "Yılların yorgunluğunu taşıyan yüz hatlarında, tıpkı babasınınki gibi derin ve hüzünlü çizgiler vardı.",
-        "Toynak": "Taşlı patikada yankılanan sert toynak sesleri, sessiz dağ yamacında yankılandı."
+        "Yular": "Atın yularını çözüp onu ahırdan çıkardı.",
+        "Üzengi": "Ayağını üzengiye basıp ata bindi.",
+        "Katar": "Katar istasyondan yavaşça ayrıldı.",
+        "Kampana": "Kampananın çalmasıyla trenin hareket zamanı geldi.",
+        "Hat": "Çocuğun yüz hatları babasına çok benziyordu.",
+        "Toynak": "Atın toynak sesleri taşlı yolda duyuluyordu."
       }
     },
     {
@@ -107,35 +107,34 @@
       "printed_page": 96,
       "question_no": "4a",
       "prompt_summary": "Türk şivelerindeki altı çizili kelimelerde yapı ve anlam değişikliklerini belirleme",
-      "answer": "Kitapta Türkçenin farklı şivelerinden verilen metinler Türkiye Türkçesi karşılıklarıyla yan yana sunulmuştur. Güvenli çözüm, bu iki biçim arasında doğrudan görülen yazılış, ek ve kelime tercihi farklarını belirlemektir; tek örnekten tarihî bir ses yasası çıkarmak gerekmez.",
+      "answer": "Metinlerde aynı veya benzer anlamların farklı yazılış, ses, ek ve kelime tercihleriyle karşılandığı görülmektedir.",
       "guidance": "Karşılaştırmanızda yazılış, ek veya aynı anlamı veren farklı kelime örneklerini gösterin. Tarihî ses denklikleri ileri sürüyorsanız bunu güvenilir bir dilbilim kaynağıyla destekleyin.",
       "source_locator": "basılı s.96-97 / PDF s.97-98 — soru 4a",
       "answer_sections": {
         "Kazak Türkçesi": [
-          "Dostıq ↔ dostluk: biçim ve ek farklıdır; anlam karşılıkları aynıdır.",
-          "isi ↔ işi: yazılış/ses karşılığı farklı görünür.",
-          "aqı ↔ akıl: Türkiye Türkçesi karşılığında 'akıl' kullanılmıştır; bu tek örnekten tarihî ses kuralı çıkarılmamalıdır.",
-          "künnin ↔ günün: kelime ve ek biçimi farklı görünür."
+          "Dostıq ↔ dostluk: aynı anlam korunurken biçim ve ek farklılaşmıştır.",
+          "isi ↔ işi: yazılış ve ses karşılığı farklıdır.",
+          "aqı ↔ akıl: aynı anlam farklı ses/yazım biçimiyle karşılanmıştır.",
+          "künnin ↔ günün: kök ve ek biçimlerinde farklılık görülür."
         ],
         "Türkmen Türkçesi": [
-          "Men ↔ ben: baş ses farklılığı görülür.",
-          "Giice ↔ gece; Saansız ↔ sayısız: yazılış/ses yapısında farklılık görülür.",
-          "bes etdi ↔ kesti; Binaaçılar ↔ bina ustaları: aynı anlam alanı farklı kelime veya yapı tercihleriyle karşılanmıştır.",
-          "sııldı ↔ sildi: yazılış ve ses yapısı farklıdır."
+          "Men ↔ ben: baş seste farklılık görülür.",
+          "Giice ↔ gece; Saansız ↔ sayısız: ses ve yazılış farklılıkları vardır.",
+          "bes etdi ↔ kesti; Binaaçılar ↔ bina ustaları: aynı anlam farklı kelime veya yapılarla karşılanmıştır.",
+          "sııldı ↔ sildi: ses ve yazılış farklılığı görülür."
         ],
         "Uygur Türkçesi": [
-          "Sadaliriñ ↔ sedaları: çoğul/iyelik görünümü ve yazılış farklıdır.",
-          "Mukam ↔ makam: ünlü tercihi farklıdır.",
-          "ölginimde ↔ öldüğümde: aynı zaman/bağlam ilişkisi farklı biçimbirimlerle kurulmuştur; okul düzeyinde tek örnekten ayrıntılı tarihî kural türetilmemelidir."
+          "Sadaliriñ ↔ sedaları: yazılış ile çoğul/iyelik biçiminde farklılık görülür.",
+          "Mukam ↔ makam: ünlü farklılığı vardır.",
+          "ölginimde ↔ öldüğümde: aynı zaman ilişkisi farklı ek ve biçimlerle kurulmuştur."
         ],
         "Azerbaycan Türkçesi": [
-          "ses salma ↔ ses yapma: farklı fiil tercihi.",
-          "ayılar ↔ uyanır; oyatsın ↔ uyandırsın: aynı anlam alanı farklı biçimlerle karşılanır.",
+          "ses salma ↔ ses yapma: farklı fiil tercihi vardır.",
+          "ayılar ↔ uyanır; oyatsın ↔ uyandırsın: aynı anlam farklı biçimlerle karşılanmıştır.",
           "yatmışları ↔ yatanları: sıfat-fiil biçimi farklıdır."
         ],
         "Kırgız Türkçesi": [
-          "ketpegen ↔ gitmeyen; Kölü ↔ gölü; Türlüü egin ↔ türlü ekin; bütkön ↔ biten: yazılış, ses ve ek biçimlerinde farklılıklar görülür.",
-          "Bu örneklerin amacı benzer kök ve yapıların farklı şivelerde nasıl farklı biçimlenebildiğini fark ettirmektir."
+          "ketpegen ↔ gitmeyen; Kölü ↔ gölü; Türlüü egin ↔ türlü ekin; bütkön ↔ biten: ses, yazılış ve ek biçimlerinde farklılıklar görülür."
         ]
       }
     },
@@ -145,19 +144,18 @@
       "printed_page": 97,
       "question_no": "4b",
       "prompt_summary": "Türk şivelerindeki değişikliklerin nedenleri",
-      "answer": "Bu soru beyin fırtınası niteliğindedir. Farklılıkların nedenleri üzerine coğrafi uzaklık, zaman içinde doğal dil değişimi, farklı topluluklarla dil teması ve her yazı dilinin kendi standartlaşma süreci gibi olası açıklamalar üretilebilir; bunlar araştırmayla doğrulanmalıdır.",
+      "answer": "Türkçenin farklı kollarındaki biçim ve kullanım farklılıklarında coğrafi ayrışma, zaman içinde doğal dil değişimi, başka diller ve kültürlerle temas, farklı alfabe ve yazım gelenekleri ile ayrı standartlaşma süreçleri etkili olmuş olabilir.",
       "source_locator": "basılı s.97 / PDF s.98 — soru 4b",
       "answer_sections": {
         "Olası Nedenler": [
-          "Türk topluluklarının uzun zaman boyunca farklı coğrafyalarda yaşamaları.",
-          "Her dil/şivenin kendi içindeki doğal ses ve biçim değişmeleri.",
+          "Türk topluluklarının uzun süre farklı coğrafyalarda yaşamaları.",
+          "Dillerin zaman içinde doğal olarak ses, biçim ve söz varlığı bakımından değişmesi.",
           "Farklı komşu diller ve kültürlerle temas.",
-          "Farklı alfabe ve yazım standartlarının kullanılması.",
-          "Kelime türetme ve ifade tercihlerinin zamanla farklılaşması."
-        ],
-        "Kaynak Sınırı": "Belirli bir kelimenin neden tam olarak o biçime dönüştüğü, yalnız bu ders kitabındaki örneklerden kesinleştirilemez; ayrıntılı etimolojik açıklama için dilbilim kaynağı gerekir."
+          "Farklı alfabe ve yazım geleneklerinin kullanılması.",
+          "Yazı dillerinin ayrı standartlaşma süreçleri geçirmesi."
+        ]
       },
-      "guidance": "Beyin fırtınasında öne sürdüğünüz nedenleri kesin tarihî bilgi gibi sunmayın. Örneğin, bir kelimenin Rusçadan etkilendiğini söylüyorsanız bu iddiayı kanıtla destekleyin."
+      "guidance": "Bu nedenler genel açıklamalardır. Belirli bir kelimenin neden tam olarak o biçime dönüştüğünü açıklamak için etimolojik ve tarihî dilbilim kaynaklarına başvurun; kanıtlanmamış temas veya köken iddialarını kesin bilgi gibi sunmayın."
     },
     {
       "question_id": "T2-P98-Q04C",
@@ -165,19 +163,18 @@
       "printed_page": 98,
       "question_no": "4c",
       "prompt_summary": "Türk dünyasından kısa metinlerin dili ile Türkiye Türkçesini karşılaştırma",
-      "answer": "Verilen metinler ile Türkiye Türkçesi arasında önemli ortaklıklar olduğu gibi ses, ek, kelime tercihi ve yazım bakımından farklılıklar da vardır. Karşılaştırma yalnız örneklerde gerçekten görülen özelliklere dayanmalıdır.",
+      "answer": "Verilen metinlerle Türkiye Türkçesi arasında tanınabilir ortak kökler ve benzer anlatım yapıları bulunurken ses, yazım, ek biçimi ve kelime tercihlerinde farklılıklar görülür.",
       "source_locator": "basılı s.98 / PDF s.99 — soru 4c (T Diyagramı)",
       "answer_sections": {
         "benzerlikler": [
-          "Birçok temel kelimede ortak veya tanınabilir kökler görülür.",
-          "Türkçeye özgü eklemeli yapı ve fiil/isim ekleme mantığı örneklerde büyük ölçüde fark edilebilir.",
-          "Kitaptaki açıklamaya göre söz diziminde tarih boyunca büyük değişmeler olmamıştır."
+          "Birçok kelimede ortak veya kolayca tanınabilen kökler vardır.",
+          "Cümlelerde benzer anlam ilişkileri ve kelime dizilişleri görülebilir.",
+          "İsim ve fiillere ek getirilerek yeni biçimler oluşturulması ortak bir yapısal özelliktir."
         ],
         "farkliliklar": [
-          "Aynı veya benzer köklerde farklı ses/yazım biçimleri görülebilir.",
-          "Aynı görevde kullanılan eklerin biçimleri farklılaşabilir.",
-          "Aynı anlam farklı kelime veya deyimlerle karşılanabilir.",
-          "Farklı yazı dilleri tarih içinde farklı alfabe ve imla gelenekleri kullanmış olabilir; bu, ayrıca tarihî kaynaklarla incelenebilir."
+          "Aynı veya benzer köklerde farklı ses ve yazım biçimleri görülebilir.",
+          "Aynı görevdeki eklerin biçimleri farklılaşabilir.",
+          "Aynı anlam farklı kelime, birleşik yapı veya deyimlerle karşılanabilir."
         ]
       },
       "guidance": "“Türkiye Türkçesi bilen herkes bütün örnekleri sezgisel olarak anlar” veya bütün lehçeler için tek bir ses kuralı geçerlidir gibi genellemelerden kaçının."
@@ -188,18 +185,18 @@
       "printed_page": 98,
       "question_no": "Hatırlayalım 1",
       "prompt_summary": "Anlatmaya bağlı edebî metinlerin ayırt edici özellikleri",
-      "answer": "Anlatmaya bağlı edebî metinler; bir olay örgüsü etrafında insan gerçeğini kurmaca bir dünyada estetik bir dille yeniden üreten sanat metinleridir.",
+      "answer": "Anlatmaya bağlı edebî metinler, kurmaca bir dünya içinde olayları kişiler, zaman, mekân ve bir anlatıcı aracılığıyla sunan; dil ve üslup özellikleriyle estetik bir yapı oluşturan metinlerdir.",
       "source_locator": "basılı s.98 / PDF s.99 — Hatırlayalım",
       "answer_sections": {
         "ozellikler": [
-          "Kurmaca Yapı: Gerçek hayatı birebir kopyalamaz; yazarın muhayyilesinde dönüştürülen estetik bir gerçeklik sunar.",
-          "Olay ve Olay Örgüsü: Birbirine sebep-sonuç bağıyla kenetlenen çekirdek olaylar zincirinden meydana gelir.",
-          "Şahıs Kadrosu (Kişiler): Olayları yaşayan, çatışmaları sürdüren ve temsil ettikleri değerlerle 'tip' veya 'karakter' özelliği gösteren kişiler bulunur.",
-          "Zaman ve Mekân: Olayların gerçekleştiği takvimsel/psikolojik zaman dilimi ile eylemin geçtiği coğrafi ve sosyal çevre mevcuttur.",
-          "Anlatıcı ve Bakış Açısı: Olaylar belirli bir anlatıcının (hâkim/ilahi, kahraman veya müşahit/gözlemci) penceresinden aktarılır.",
-          "Çatışma ve Dramatik Gerilim: Karşıt güçlerin, değerlerin veya iç dünyadaki çelişkilerin çarpışmasıyla metne dinamizm kazandırılır.",
-          "Tema ve İleti: Metnin bütününe hâkim olan temel duygu/düşünce (tema) ile okuyucuya sezdirilen açık ve örtük iletiler yer alır.",
-          "Edebî ve Estetik Dil: Kelimelerin yan ve mecaz anlamlarından, imgesel anlatımdan ve üslup özelliklerinden yararlanılır."
+          "Kurmaca Yapı: Gerçeklik, yazarın seçme ve dönüştürmesiyle kurmaca bir dünya içinde yeniden düzenlenir.",
+          "Olay ve Olay Örgüsü: Olaylar belirli ilişkiler içinde düzenlenerek bir anlatı bütünlüğü oluşturur.",
+          "Kişiler: Olayları yaşayan veya olaylarla ilişkili kişiler bulunur; bazı kişiler tip veya karakter özelliği gösterebilir.",
+          "Zaman: Olayların gerçekleştiği ve anlatıldığı zaman düzeni bulunur.",
+          "Mekân: Olayların geçtiği fiziksel, toplumsal veya kurmaca çevre yer alır.",
+          "Anlatıcı ve Bakış Açısı: Olaylar bir anlatıcı aracılığıyla aktarılır; hâkim, kahraman ve gözlemci bakış açıları kullanılabilir.",
+          "Tema ve İleti: Metnin temel duygu, düşünce veya izleği ile açık ya da örtük iletileri bulunabilir.",
+          "Dil ve Üslup: Sözcük seçimi, cümle yapısı, betimleme, diyalog, imge ve diğer anlatım olanakları metnin üslubunu oluşturur."
         ]
       }
     },
@@ -227,7 +224,7 @@
       "printed_page": 99,
       "question_no": "3",
       "prompt_summary": "Türk dünyasının ortak kültürünü yansıtabilecek başka görsellere örnek verme",
-      "answer": "Sayfada zaten yer alan at/atlılar, halı, bitkisel motif, çay takımı, yurt ve okçuluk görsellerinin dışında; Türk dünyasının pek çok bölgesinde farklı yerel biçimleriyle yaşayan şu unsurlar görsel olarak seçilebilir:",
+      "answer": "Sayfada zaten yer alan at/atlılar, halı, bitkisel motif, kahve takımı, yurt ve okçuluk görsellerinin dışında; Türk dünyasının ortak kültür ve tarih hafızasıyla ilişkilendirilebilecek şu unsurlar görsel olarak seçilebilir:",
       "guidance": "Sayfadaki altı görseli tekrar etmeyin. Seçtiğiniz unsurun Türk dünyasının birden fazla bölgesinde nasıl yaşadığını gerekçelendirin. Kırgız kalpağı, Semerkant–Buhara medreseleri gibi belirli bir halk veya bölgeyle özdeşleşmiş unsurlar değerlidir; ancak bunları “ortak kültür” değil, Türk dünyasındaki kültürel çeşitliliğin örneği olarak sunun. Akraba çalgıları (kopuz, dombra, komuz, bağlama) aynı çalgı gibi göstermeyin.",
       "source_locator": "basılı s.99 / PDF s.100 — soru 3",
       "answer_sections": {
