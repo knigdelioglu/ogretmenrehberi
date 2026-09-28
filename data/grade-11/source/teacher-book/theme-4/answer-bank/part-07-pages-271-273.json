@@ -30,7 +30,7 @@
         "İçerik": "Ben, Mimar Sinan Sinan’ın mesleki yaşamını, yapılarını ve yaşadığı çağın kültürünü işler. Merdiven, iş yerindeki kısa bir karşılaşmadan yola çıkarak acele, yaşlılık ve mesleki yükselme isteğini sorgular.",
         "Tür": "Ben, Mimar Sinan tiyatro metnidir; Merdiven küçürek hikâyedir.",
         "Şekil": "Tiyatro parçası karakter replikleri, farklı sesler ve parantez içi sahne yönergeleriyle kurulur. Merdiven, birinci kişili düzyazı anlatıdır; kısa cümle ve konuşmalarla ilerler.",
-        "Dönem": "Sinan’ın olayları 16. yüzyılda geçer; oyun çağdaş yazarın tarihî kişiyi sahneye taşımasıdır. Merdiven’in kesin yazılma tarihi bu sayfalarda verilmez; anlatı güncel bir büro ortamını düşündürür.",
+        "Dönem": "Ben, Mimar Sinan Cumhuriyet Dönemi modern Türk tiyatrosuna ait bir eserdir; olay dünyası 16. yüzyıl Osmanlısında geçer. Merdiven ise Cumhuriyet Dönemi'nde, 1950 kuşağının önemli temsilcilerinden Ferit Edgü tarafından yazılmış bir küçürek hikâyedir ve çağdaş büro yaşamından bir kesit sunar.",
         "Yapı unsurları": "Ben, Mimar Sinan’da kişiler ve görevler boyunca ilerleyen çok aşamalı bir yaşam çizgisi vardır; teknik ve kişisel güçlükler eserlerle çözülür. Merdiven tek bir merdiven karşılaşmasına yoğunlaşır; anlatıcının kararındaki değişim ve açık uçlu son yapıyı tamamlar.",
         "Dil ve üslup": "Tiyatroda tarihî anlatım, doğrudan konuşma, sahne ve ses yönergeleri ile vurgulu sözler kullanılır. Merdiven’in dili yalın, kısa ve gündelik; tekrarları ve yön karşıtlığı çağrışım kurar.",
         "İleti": "İlk metin emek, öğrenme, sorumluluk ve kültürel mirası; ikinci metin ise koşuşturmayı sorgulamayı ve yaşamın sınırlılığını düşündürür."
@@ -52,9 +52,9 @@
         "gerekcem": "[...]",
         "Örnek kanıt havuzu": {
           "Ben, Mimar Sinan": [
-            "“İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.” — sorumluluk ve sözüne bağlılık.",
-            "“tek başıma yenmedim” — başarıda başkalarının payını kabul etme.",
-            "“Güzellik, büyüklükten daha güçlüdür.” — estetik değeri öne çıkarma."
+            "“Sana güveniyorum Koca Sinan!” — güven.",
+            "“Mimarlarına da saygı duyuyordum.” — başkasının emeğine ve meslektaşa saygı.",
+            "“tek başıma yenmedim” — başarıda başkalarının payını kabul etme."
           ],
           "Merdiven": [
             "“Bahtiyar ol” — yaşlı memurun iyi dileği; nezaket ve kuşaklar arası sıcaklık.",
@@ -64,9 +64,9 @@
         }
       },
       "evidence_quotes": [
-        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+        "Sana güveniyorum Koca Sinan!",
+        "Mimarlarına da saygı duyuyordum.",
         "tek başıma yenmedim",
-        "Güzellik, büyüklükten daha güçlüdür.",
         "Bahtiyar ol"
       ]
     },
@@ -79,8 +79,8 @@
       "prompt_summary": "Şair Tavafî ve Merdiven metinlerini şiirsel dil, çağrışım, içerik ve anlatıcı bakımından karşılaştırma",
       "answer": "İki öykü de birinci kişili anlatımla gündelik bir karşılaşmayı aktarır; ancak ayrıntı miktarı ve çağrışım biçimi farklıdır.",
       "answer_sections": {
-        "Şiirsel dil kullanımı": "Şair Tavafî’de uzun betimlemeler, yolculuk ve han ayrıntıları, anlatıcının iç konuşmaları öne çıkar. Merdiven’de kısa cümleler, tekrarlar ve çıkma-inme karşıtlığı şiirsel bir yoğunluk sağlar.",
-        "Sözcüklerin çağrışım gücü": "Şair Tavafî’de han, yolculuk, kahve ve konuk ağırlama ayrıntıları Anadolu’daki konukseverliği ve sosyal çevreyi çağrıştırır. Merdiven sözcüğü hem gerçek mekânı hem yaşam basamaklarını ve yön değiştirmeyi düşündürür.",
+        "Şiirsel dil kullanımı": "Şair Tavafî’de daha ayrıntılı, anlatıcı ve betimleyici düzyazı ile günlük konuşmalar ve ironik iç düşünceler öne çıkar; şiirsel yoğunluk Merdiven kadar belirgin değildir. Merdiven’de kısa cümleler, tekrarlar ve çıkma-inme karşıtlığı şiirsel bir yoğunluk oluşturur.",
+        "Sözcüklerin çağrışım gücü": "Şair Tavafî’de han, yolculuk, kahve ve konuk ağırlama ayrıntıları kasaba yaşamını ve yerel sosyal çevreyi çağrıştırır. Merdiven sözcüğü hem gerçek mekânı hem yaşam basamaklarını ve yön değiştirmeyi düşündürür.",
         "İçerik": "Şair Tavafî’de yorgun bir yolcunun kasabadaki kişilerce karşılanması ve anlatıcının dinlenme isteği anlatılır. Merdiven’de memurların karşılaşması, yaşlılık ve acele üzerine düşünceye dönüşür.",
         "Anlatıcı": "İki metinde de olayları yaşayan birinci kişi anlatıcı vardır. Şair Tavafî anlatıcısı dış çevreyi ve kendi çekingenliğini daha ayrıntılı aktarır; Merdiven anlatıcısı kısa karşılaşmalar ve son kararı üzerinden iç değişimini gösterir."
       }
