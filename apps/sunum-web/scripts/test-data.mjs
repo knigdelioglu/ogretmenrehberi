@@ -26,6 +26,33 @@ decipher.setAuthTag(tag);
 const catalog = JSON.parse(zlib.gunzipSync(Buffer.concat([decipher.update(body), decipher.final()])).toString("utf8"));
 
 const canonical = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
+
+function collectPresentationText(value, out = []) {
+  if (typeof value === "string") {
+    out.push(value);
+    return out;
+  }
+  if (Array.isArray(value)) {
+    for (const item of value) collectPresentationText(item, out);
+    return out;
+  }
+  if (value && typeof value === "object") {
+    for (const [key, item] of Object.entries(value)) {
+      out.push(key);
+      collectPresentationText(item, out);
+    }
+  }
+  return out;
+}
+
+const forbiddenPresentationMeta = [
+  /öğrencinin[^\n]*(?:cevap|yanıt|görüş|kabul|tamamlam)/i,
+  /öğrenci(?:ler)?[^\n]*(?:kabul edilir|kabul edilebilir|beklenir|tamamlamalıdır)/i,
+  /öğretmen rehberi/i,
+  /öğretmen değerlendirme rubriği/i,
+  /kabul edilebilir alternatifler/i,
+  /bu soru kişisel tercihe açıktır/i,
+];
 assert.equal(catalog.lessons.length, canonical.length, "ders sayısı");
 let themeOneSteps = 0;
 let otherThemeSupportLayers = 0;
@@ -45,6 +72,17 @@ for (const [i, lesson] of canonical.entries()) {
       assert.ok(!s.reveals.includes("explanation"), `${s.id} öğretmen açıklaması sunuma sızmamalı`);
       assert.equal(s.answer?.guidance, undefined, `${s.id} öğretmen yönlendirmesi veriden çıkarılmalı`);
       assert.equal(s.answer?.explanation, undefined, `${s.id} öğretmen açıklaması veriden çıkarılmalı`);
+
+      const presentationAnswerText = collectPresentationText({
+        answer: s.answer?.answer,
+        answer_sections: s.answer?.answer_sections,
+      }).join("\n");
+      for (const pattern of forbiddenPresentationMeta) {
+        assert.ok(
+          !pattern.test(presentationAnswerText),
+          `${s.id} cevap alanında sunuma uygun olmayan öğretmen/değerlendirme dili var: ${pattern}`
+        );
+      }
     } else if (s.answer?.guidance || s.answer?.explanation) {
       otherThemeSupportLayers += 1;
     }
