@@ -164,13 +164,14 @@
       "printed_page": 66,
       "question_no": "4",
       "prompt_summary": "Çok modlu metnin konu ve temasını belirleme",
-      "answer": "Videoyu izleyebildiğinizde konuyu ele alınan kişi, olay, kavram veya durumdan; temayı ise içerik boyunca desteklenen ana düşünceden çıkarın. Videoya erişemiyorsanız konu ve temayı belirlemiş gibi yazmayın.",
+      "answer": "Videoyu izleyebildiğinizde önce konuyu, sonra temayı belirleyin. Konu, metinde ele alınan kişi, olay, durum veya kavramdır; tema ise bu içeriğin etrafında oluşan genel izlek ya da kavram alanıdır. Ana düşünce ise bir sonraki soruda ayrıca belirlenecek temel yargıdır. Videoya erişemiyorsanız konu ve temayı belirlemiş gibi yazmayın.",
       "answer_sections": {
-        "Konu": "Videoda gerçekten ele alınan kişi, olay, kavram veya durum: [izleme kanıtına göre doldurun].",
-        "Tema": "Videonun bütününden çıkarılan temel düşünce: [en az iki gerçek içerik kanıtıyla gerekçelendirin].",
+        "Konu": "Metinde ne anlatılıyor? Videoda gerçekten ele alınan kişi, olay, durum veya kavramı kısa biçimde yazın: [izleme kanıtına göre doldurun].",
+        "Tema": "Metin hangi genel izlek veya kavram etrafında kuruluyor? Örneğin iletişim, değişim, teknoloji, insan ilişkileri gibi bir kavram alanı ancak video içeriği bunu destekliyorsa yazılmalıdır.",
+        "Ana düşünceden farkı": "Tema bir kavram/izlek alanıdır; ana düşünce ise metnin bu konu ve tema hakkında ileri sürdüğü temel yargıdır. Ana düşünceyi 5. soruda ayrıca belirleyin.",
         "Kanıt kontrolü": "Seçtiğiniz konu ve tema gerçekten gördüğünüz veya duyduğunuz video ayrıntılarına dayanıyor mu?"
       },
-      "guidance": "Başlıktan hareketle videonun konusunu ya da temasını tahmin etmeyin. Öğrenciden izleme sonrası iki somut içerik kanıtı istemek, ardından temayı bu kanıtlarla ilişkilendirmek yeterlidir.",
+      "guidance": "Konu–tema–ana düşünce ayrımını açık tutun: konu = ne anlatılıyor, tema = hangi genel izlek/kavram etrafında kuruluyor, ana düşünce = bu konuda savunulan temel yargı. Başlıktan hareketle videonun gerçek içeriğini kesinleştirmeyin; öğrenciden izleme sonrasında somut içerik kanıtı isteyin.",
       "source_locator": "basılı s.66 / PDF s.67; QR video gerekli"
     },
     {
@@ -217,17 +218,13 @@
       "printed_page": 67,
       "question_no": "7",
       "prompt_summary": "İletişime dair genel sonuç çıkarma",
-      "answer": "Dinleme öncesi tahmininizi videodan elde ettiğiniz iki gerçek tespitle karşılaştırın. Bu kanıtlardan iletişim hakkında çıkardığınız sonucu ve bunu günlük yaşamınızda nasıl kullanabileceğinizi açıklayın.",
+      "answer": "Dinleme/izleme öncesi tahmininiz ile sonrasındaki tespitlerinizi karşılaştırın ve bu karşılaştırmadan iletişim hakkında ulaştığınız sonucu gerekçelendirin. Sonucunuzu videoda gerçekten gözlediğiniz bir veya daha fazla uygun tespitle destekleyin.",
       "answer_sections": {
-        "Kanıtlarım": [
-          "Dinleme/izleme öncesi tahminim: [...]",
-          "Videoda gözlediğim gerçek tespit 1: [...]",
-          "Videoda gözlediğim gerçek tespit 2: [...]"
-        ],
-        "Bu Kanıtlardan Çıkardığım Sonuç": "“Bu örneklerden hareketle iletişim hakkında ... sonucuna ulaştım; çünkü ...”",
-        "Günlük Yaşamla Bağlantı": "“Bu sonucu kendi iletişimimde ... durumunda kullanabilirim / gözlemleyebilirim.”"
+        "Önceki tahminim": "Dinleme/izleme öncesinde iletişimle ilgili ... olacağını düşünmüştüm.",
+        "Sonraki tespitim": "Videoda ... olduğunu gördüm/duydum.",
+        "Ulaştığım sonuç": "Bu karşılaştırmadan hareketle iletişim hakkında ... sonucuna ulaştım; çünkü ..."
       },
-      "guidance": "Sonucun videodaki tespitlerden gerçekten çıkıp çıkmadığını sorgulayın. “Teknoloji kötüdür/iyidir”, “iletişimin tek şartı şudur” gibi aşırı genellemeler yerine öğrencinin kanıtıyla sınırlı ve gerekçeli sonuçları kabul edin.",
+      "guidance": "Öğrencinin sonucunun kendi tahmin ve tespitlerinden gerçekten çıkıp çıkmadığını sorgulayın. Belirli sayıda kanıt veya günlük yaşam bağlantısını zorunlu tutmayın; bir veya daha fazla yeterli video tespitiyle gerekçelendirilmiş, aşırı genellemeye kaçmayan farklı sonuçları kabul edin. Günlük yaşamla bağlantı kurmak istenirse ek geliştirme sorusu olarak kullanılabilir.",
       "source_locator": "basılı s.67 / PDF s.68 — Metni Anlayalım soru 7",
       "explanation": "source_limited: bu sorunun içeriği öğrencinin QR videodan yaptığı gerçek tespitlere bağlıdır; rehber yalnız çıkarım yapısını verir."
     },
