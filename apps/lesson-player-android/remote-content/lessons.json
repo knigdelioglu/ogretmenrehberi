@@ -6703,7 +6703,7 @@
           "printed_page": 70,
           "question_no": "4",
           "prompt_summary": "Paydos parçasındaki iletişim engellerini ortadan kaldırma yolları",
-          "answer": "Paydos parçasındaki iletişim engellerini aşmak için taraflar birbirini dikkatle dinlemeli, söz kesmemeli, farklı anlaşılabilecek sözcükleri açıklamalı, kırıcı ve küçümseyici ifadelerden kaçınmalı; bilgi farkını üstünlük göstermek için değil, konuşmaya katkı sunmak için kullanmalıdır.",
+          "answer": "Paydos parçasındaki iletişim engellerini aşmak için taraflar birbirini dikkatle dinlemeli, söz kesmemeli, farklı anlaşılabilecek sözcükleri açıklamalı, kırıcı ve küçümseyici ifadelerden kaçınmalı; bilgi veya düzeltmeleri konuşmayı kesmeden, küçümseyici olmayan ve konuya katkı sağlayan bir biçimde paylaşmalıdır.",
           "answer_sections": {
             "Etkin dinleme": "Hasan, Hatice'nin anlattıklarına ezbere “Çok iyi” demek yerine dinlediğini gösteren bir karşılık verebilir: “Banka borcu sizi çok zorlamış, anlıyorum; şimdi define meselesine geçelim mi?”",
             "Söz kesmeme": "Rıdvan, konuşanın sözünü bitirmesini beklemeli; düzeltmek istediği bir bilgi varsa bunu anlatım bittikten sonra, kibar bir dille dile getirmelidir.",
@@ -6744,15 +6744,15 @@
           "prompt_summary": "İletişim sorunlarına yönelik çözüm yollarını tartışıp karşılaştırma",
           "answer": "Altı kişilik grubunuzda iletişim engellerine karşı farklı çözüm yolları üretip karşılaştırın. Aşağıdaki önerilerden yararlanabilir veya yeni öneriler ekleyebilirsiniz; hangi çözümün daha etkili olduğunu gerekçelendirin.",
           "answer_sections": {
-            "1. Tartışmacı — Aktif Dinleme": "Konuşmacıya dikkat vermek, sözünü tamamlamasını beklemek ve uygun geri bildirim vermek.",
-            "2. Tartışmacı — Söz Kesmeme ve Sabır": "İtiraz veya düzeltmeyi konuşmanın tamamlanmasının ardından nezaketle iletmek.",
-            "3. Tartışmacı — Anlam Netliği": "Çok anlamlı veya teknik bir sözcük karışıklık yaratıyorsa anlamı açıklığa kavuşturmak.",
-            "4. Tartışmacı — Saygılı ve Konu Odaklı Tutum": "Kişiliğe, aileye veya sosyal konuma saldırmak yerine konuya odaklanmak.",
-            "5. Tartışmacı — Duygusal Farkındalık": "Muhatabın içinde bulunduğu güç durumu fark ederek ses tonu ve yaklaşımı buna göre ayarlamak.",
-            "6. Tartışmacı — Ortak Amaç / Moderasyon": "Tali tartışmaları sınırlayıp konuşmayı ana meseleye döndürmek.",
-            "Örnek Karşılaştırma": "Paydos sahnesinde birçok sorunun dinlememeden doğduğunu gerekçe göstererek aktif dinlemeyi öncelikli bulabilirsiniz. Söz kesmeme, anlamı netleştirme veya saygılı dil kullanımını daha belirleyici görmeniz de mümkündür. Seçiminizi karşılaştırarak açıklayın."
+            "Örnek çözüm 1 — Etkin Dinleme": "Konuşmacıya dikkat vermek, sözünü tamamlamasını beklemek ve uygun geri bildirim vermek.",
+            "Örnek çözüm 2 — Söz Kesmeme ve Sabır": "İtiraz veya düzeltmeyi konuşmanın tamamlanmasının ardından nezaketle iletmek.",
+            "Örnek çözüm 3 — Anlam Netliği": "Çok anlamlı veya teknik bir sözcük karışıklık yaratıyorsa anlamı açıklığa kavuşturmak.",
+            "Örnek çözüm 4 — Saygılı ve Konu Odaklı Tutum": "Kişiliğe, aileye veya sosyal konuma saldırmak yerine konuya odaklanmak.",
+            "Örnek çözüm 5 — Duygusal Farkındalık": "Muhatabın içinde bulunduğu zor durumu fark ederek ses tonu ve yaklaşımı buna göre ayarlamak.",
+            "Örnek çözüm 6 — Ortak Amaç / Moderasyon": "Tali tartışmaları sınırlayıp konuşmayı ana meseleye döndürmek.",
+            "Örnek Karşılaştırma": "Paydos sahnesinde birçok sorunun dinlememeden doğduğunu gerekçe göstererek etkin dinlemeyi öncelikli bulabilirsiniz. Söz kesmeme, anlamı netleştirme veya saygılı dil kullanımını daha belirleyici görmeniz de mümkündür. Seçiminizi karşılaştırarak açıklayın."
           },
-          "guidance": "Öğrenciden “Bu çözüm hangi somut iletişim sorununu ortadan kaldırıyor?” ve “Neden diğer çözümden daha öncelikli olabilir?” sorularına gerekçe vermesini isteyin. Öğretmen tek bir kazanan çözüm dayatmamalıdır.",
+          "guidance": "Örnekleri kişilere zorunlu roller gibi dağıtmayın. Öğrenciden “Bu çözüm hangi somut iletişim sorununu azaltıyor veya ortadan kaldırıyor?” ve “Neden diğer çözümden daha öncelikli olabilir?” sorularına gerekçe vermesini isteyin. Öğretmen tek bir kazanan çözüm dayatmamalıdır.",
           "source_locator": "basılı s.71 / PDF s.72 — Sıra Sizde soru 5-6"
         },
         "content": null
@@ -6879,23 +6879,24 @@
           "printed_page": 72,
           "question_no": "1",
           "prompt_summary": "Videoda güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleme",
-          "answer": "Tabloyu izlediğiniz videodaki söz ve davranışlara dayanarak doldurun. Basılı sayfada verilen “Aklıselim programına hoş geldiniz.” ifadesi nezaket örneğidir; güven, saygı ve yapıcılığa ilişkin örnekleri videodan seçin.",
+          "answer": "Tabloyu öncelikle izlediğiniz videoda gerçekten geçen söz ve ifadelere dayanarak doldurun. Basılı sayfada verilen “Aklıselim programına hoş geldiniz.” sözü nezaket örneğidir; güven, saygı ve yapıcılığa ilişkin ifadeleri videodan seçin. Jest, tavır veya konuşma davranışları ancak seçtiğiniz ifadenin bağlamını açıklayan destekleyici kanıt olarak kullanılabilir.",
           "answer_sections": {
             "Nezaket": {
               "Kitapta Görünen Örnek": "“Aklıselim programına hoş geldiniz.”",
-              "Videoda Aranacak Göstergeler": "Selamlama, teşekkür, rica, izin isteme, nazik hitap veya farklı görüşü kırmadan ifade etme."
+              "Videoda Aranacak İfadeler": "Selamlama, teşekkür, rica, izin isteme, nazik hitap veya farklı görüşü kırmadan dile getiren sözler."
             },
             "Güven": {
-              "Videoda Aranacak Göstergeler": "Kaynağı açık bilgi verme, tutarlı açıklama, belirsizliği dürüstçe belirtme, güven veren ve ölçülü söyleyiş."
+              "Videoda Aranacak İfadeler": "Bilginin kaynağını açıkça belirten, belirsizliği dürüstçe ifade eden veya ölçülü ve tutarlı açıklama içeren sözler."
             },
             "Saygı": {
-              "Videoda Aranacak Göstergeler": "Söz kesmeme, farklı görüşü küçümsememe, uygun hitap kullanma, muhatabın düşüncesini dikkate alma."
+              "Videoda Aranacak İfadeler": "Muhataba uygun hitap eden, farklı görüşü küçümsemeden karşılayan veya karşı tarafın düşüncesini dikkate aldığını gösteren sözler."
             },
             "Yapıcılık": {
-              "Videoda Aranacak Göstergeler": "Sorunla birlikte çözüm önerme, eleştiriyi geliştirmeye yöneltme, ortak bir noktada buluşmaya çalışma."
-            }
+              "Videoda Aranacak İfadeler": "Sorunla birlikte çözüm öneren, eleştiriyi geliştirmeye yönelten veya ortak bir noktaya ulaşmaya çalışan sözler."
+            },
+            "Davranışların Kullanımı": "Söz kesmeme, dinleme, ses tonu veya beden dili gibi davranışlar yardımcı bağlam kanıtı olabilir; fakat soru özellikle ifade istediği için ana örnek olarak videodaki sözleri yazın."
           },
-          "guidance": "Kitapta görünmeyen cümleleri video repliği gibi yazmayın. Her kategori için öğrenciden videodan gerçek bir söz veya davranış kanıtı istemek yeterlidir.",
+          "guidance": "Önce öğrenciden videoda gerçekten duyduğu ifadeyi yazmasını, ardından bu ifadenin neden güven, saygı, yapıcılık veya nezaket gösterdiğini açıklamasını isteyin. Kitapta görünmeyen cümleleri video repliği gibi yazmayın. Davranışları yalnız ifadenin bağlamını desteklemek için kullanın.",
           "source_locator": "basılı s.72 / PDF s.73; QR video gerekli",
           "explanation": "source_limited: “Aklıselim programına hoş geldiniz.” basılı sayfada görünür; diğer örnekler QR videodan doğrulanmalıdır."
         },
@@ -6930,14 +6931,14 @@
           "printed_page": 72,
           "question_no": "2",
           "prompt_summary": "Güven, saygı, yapıcılık ve nezaket arasındaki ilişkiyi kavram haritasında gösterme",
-          "answer": "Güven, saygı, yapıcılık ve nezaket iletişimde birbirini destekleyebilir. Kavram haritasında kitaptaki model ilişkileri gösterin; farklı bağlantılar kurarsanız bunları örnekle gerekçelendirin.",
+          "answer": "Güven, saygı, yapıcılık ve nezaket iletişimde birbirini farklı biçimlerde destekleyebilir. Aşağıdaki bağlantılar yalnız örnektir; öğrenci kavramlar arasında farklı bir ilişki kurabilir ve bunu mantıklı bir açıklama veya örnekle gerekçelendirebilir.",
           "answer_sections": {
-            "Saygı → Nezaket": "Saygı, nezaketli davranışı destekler; muhatabın varlığına ve kişiliğine değer vermek nazik söz ve tavırlarla gösterilebilir (kitaptaki model ilişki).",
-            "Nezaket → Güven": "Nezaketli bir yaklaşım karşı tarafta güven duygusunu destekleyebilir; içten ve ölçülü söyleyiş iletişimi kolaylaştırır.",
-            "Güven → Yapıcılık": "Güven duyulan bir ortamda taraflar hata yapmaktan daha az çekinebilir; sorunlar yapıcı ve çözüm odaklı bir dille ele alınabilir.",
-            "Yapıcılık → Saygı": "Suçlamak yerine çözüm üretmeye yönelen bir tutum karşılıklı saygıyı güçlendirebilir."
+            "Örnek ilişki 1 — Saygı ve Nezaket": "Muhataba değer vermek, nazik söz ve davranışlarla görünür hâle gelebilir; bu nedenle saygı ile nezaket arasında ilişki kurulabilir.",
+            "Örnek ilişki 2 — Nezaket ve Güven": "Nazik ve ölçülü bir yaklaşım bazı durumlarda iletişimde güven duygusunun oluşmasını destekleyebilir.",
+            "Örnek ilişki 3 — Güven ve Yapıcılık": "Kişilerin kendilerini daha güvende hissettiği bir iletişim ortamı, sorunların daha açık ve çözüm odaklı konuşulmasını kolaylaştırabilir.",
+            "Örnek ilişki 4 — Yapıcılık ve Saygı": "Suçlama yerine çözüm üretmeye yönelen bir tutum, karşılıklı saygıyı destekleyebilir."
           },
-          "guidance": "Tek bir zorunlu ok yönü yoktur; öğrencilerin kavramlar arasındaki neden-sonuç bağını mantıklı bir argümanla açıklaması yeterlidir.",
+          "guidance": "Bu okları kitabın tek doğru kavram haritası veya zorunlu neden-sonuç zinciri gibi sunmayın. Öğrencinin güven, saygı, yapıcılık ve nezaket arasında kurduğu farklı yönlü bağlantılar; açıklaması tutarlı ve örnekle gerekçelendirilmişse kabul edilmelidir.",
           "source_locator": "basılı s.72 / PDF s.73 — Çözümleyebilme soru 2"
         },
         "content": null
