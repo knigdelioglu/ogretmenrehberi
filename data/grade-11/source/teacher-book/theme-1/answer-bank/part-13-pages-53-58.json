@@ -369,12 +369,12 @@
         "Formlara erişim": "Karekod bağlantısı açılıyorsa form ve rubriği kullanın. Erişilemiyorsa basılı sayfada görünen genel ölçütlerle nitel geri bildirim verin; bunları karekod formunun birebir içeriği gibi sunmayın.",
         "Değerlendirme ölçütleri": [
           "Çalışmanızı Öz Değerlendirme ve Akran Değerlendirme Formlarıyla gözden geçirin.",
-          "Dereceli puanlama anahtarında konu seçimi, içerik uygunluğu, özgünlük, dil ve üslup, plan oluşturma ve canlandırma becerisi gibi ölçütler yer alır.",
+          "Basılı sayfada görünen genel değerlendirme başlıklarından yararlanarak konu, içerik, özgünlük, dil-üslup, planlama ve canlandırma gibi yönler hakkında nitel geri bildirim verilebilir.",
           "Öz, akran ve öğretmen geri bildirimlerinde belirlenen eksikleri tamamlayın."
         ]
       },
-      "guidance": "Öğrenciye önce öz değerlendirme yaptırın, sonra akran ve öğretmen geri bildirimini ekleyin. Kaynağı görünmeyen rubrik maddelerini veya puanları kitapta varmış gibi göstermeyin.",
-      "explanation": "Bu kayıt source_limited'dır; çünkü s.58'de QR bağlantılarının varlığı ve genel değerlendirme ölçütleri görünür, ancak QR içindeki akran formu ile dereceli puanlama anahtarının tam içeriği PDF kaynakta yer almaz.",
+      "guidance": "Öğrenciye önce öz değerlendirme yaptırın, sonra akran ve öğretmen geri bildirimini ekleyin. Basılı sayfada görünen genel başlıkları kullanabilirsiniz; ancak QR içindeki formun birebir maddelerini veya puan ağırlıklarını görmeden kitapta varmış gibi göstermeyin.",
+      "explanation": "Bu kayıt source_limited'dır: s.58'de QR bağlantılarının varlığı ve basılı sayfada genel değerlendirme yönleri görünür; ancak QR içindeki akran formu ile dereceli puanlama anahtarının tam maddeleri ve puan ağırlıkları PDF kaynakta yer almaz.",
       "source_locator": "basılı s.58 / PDF s.59 — dış QR rubrik/form sınırı"
     }
   ]
