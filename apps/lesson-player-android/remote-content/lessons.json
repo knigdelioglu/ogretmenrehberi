@@ -5258,12 +5258,12 @@
             "Formlara erişim": "Karekod bağlantısı açılıyorsa form ve rubriği kullanın. Erişilemiyorsa basılı sayfada görünen genel ölçütlerle nitel geri bildirim verin; bunları karekod formunun birebir içeriği gibi sunmayın.",
             "Değerlendirme ölçütleri": [
               "Çalışmanızı Öz Değerlendirme ve Akran Değerlendirme Formlarıyla gözden geçirin.",
-              "Dereceli puanlama anahtarında konu seçimi, içerik uygunluğu, özgünlük, dil ve üslup, plan oluşturma ve canlandırma becerisi gibi ölçütler yer alır.",
+              "Basılı sayfada görünen genel değerlendirme başlıklarından yararlanarak konu, içerik, özgünlük, dil-üslup, planlama ve canlandırma gibi yönler hakkında nitel geri bildirim verilebilir.",
               "Öz, akran ve öğretmen geri bildirimlerinde belirlenen eksikleri tamamlayın."
             ]
           },
-          "guidance": "Öğrenciye önce öz değerlendirme yaptırın, sonra akran ve öğretmen geri bildirimini ekleyin. Kaynağı görünmeyen rubrik maddelerini veya puanları kitapta varmış gibi göstermeyin.",
-          "explanation": "Bu kayıt source_limited'dır; çünkü s.58'de QR bağlantılarının varlığı ve genel değerlendirme ölçütleri görünür, ancak QR içindeki akran formu ile dereceli puanlama anahtarının tam içeriği PDF kaynakta yer almaz.",
+          "guidance": "Öğrenciye önce öz değerlendirme yaptırın, sonra akran ve öğretmen geri bildirimini ekleyin. Basılı sayfada görünen genel başlıkları kullanabilirsiniz; ancak QR içindeki formun birebir maddelerini veya puan ağırlıklarını görmeden kitapta varmış gibi göstermeyin.",
+          "explanation": "Bu kayıt source_limited'dır: s.58'de QR bağlantılarının varlığı ve basılı sayfada genel değerlendirme yönleri görünür; ancak QR içindeki akran formu ile dereceli puanlama anahtarının tam maddeleri ve puan ağırlıkları PDF kaynakta yer almaz.",
           "source_locator": "basılı s.58 / PDF s.59 — dış QR rubrik/form sınırı"
         },
         "content": {
@@ -5331,13 +5331,13 @@
           "printed_page": 59,
           "question_no": "1",
           "prompt_summary": "Dilin etkili ve güzel kullanımının iletişimdeki önemi",
-          "answer": "Dilin etkili ve güzel kullanımı; düşüncelerin muhataba eksiksiz ve berrak aktarılmasını sağlar, yanlış anlaşılmaları azaltır ve taraflar arasında güven oluşmasına yardımcı olur. Uygun sözcük seçimi, ses tonunun kontrolü ve nezaket dili, iletişimi yalnızca mekanik bir bilgi aktarımı olmaktan çıkarıp duygu ve düşüncelerin ortaklaşa paylaşıldığı yapıcı bir sürece dönüştürür.",
+          "answer": "Dilin açık, amaca uygun ve özenli kullanılması iletinin anlaşılmasını kolaylaştırır, yanlış anlaşılma ihtimalini azaltır ve muhataba uygun bir iletişim kurulmasına yardımcı olur. Sözcük seçimi, üslup, ses tonu ve nezaket düzeyi, iletinin nasıl algılandığını etkileyebilir.",
           "answer_sections": {
-            "Anlamsal ve Bilişsel Boyut": "Doğru, duru ve amaca uygun sözcük seçimi anlatılmak istenen iletinin çarpıtılmadan doğrudan kavranmasını sağlar; anlam bulanıklığını ve yanlış anlamaları azaltır.",
-            "Duygusal ve Estetik Boyut": "Dilin inceliklerine, ahengine ve nezaket kurallarına dikkat edilerek kurulmuş bir anlatım, dinleyicide sempati, saygı ve dinleme isteği uyandırarak iletişimin duygusal zeminini güçlendirir.",
-            "İlişkisel ve Sosyal Boyut": "Güzel ve yapıcı bir üslup çatışma olasılığını azaltır, empatiyi besler ve ortak bir anlayış zemini oluşturarak insan ilişkilerini güçlendirir."
+            "Anlamın açıklığı": "Amaca ve bağlama uygun sözcük seçimi, anlatılmak istenenin daha kolay anlaşılmasına ve anlam bulanıklığının azalmasına yardımcı olur.",
+            "Üslup ve etki": "Özenli, saygılı ve bağlama uygun bir söyleyiş muhatabın iletişimi sürdürmesini kolaylaştırabilir; sert veya uygunsuz bir söyleyiş ise iletişimi zorlaştırabilir.",
+            "Duygu ve düşüncenin aktarımı": "Dilin anlatım imkânlarından yararlanmak, duygu ve düşüncelerin yalnız bilgi olarak değil, ton ve çağrışımlarıyla da aktarılmasına yardımcı olabilir."
           },
-          "guidance": "Öğrencilerin yalnızca 'düşüncelerimizi aktarırız' gibi yüzeysel bir cevapla yetinmemesi; kelime seçimi, ses tonu, üslup ve karşı tarafta bırakılan etki gibi boyutları dikkate alması sağlanmalıdır.",
+          "guidance": "Öğrencilerin yalnız “düşüncelerimizi aktarırız” demekle yetinmemesini sağlayın; sözcük seçimi, açıklık, üslup ve ses tonunun ileti üzerindeki olası etkisini örneklerle açıklatın. “Güven oluşturur” veya “empati sağlar” gibi sonuçları her durumda gerçekleşen kesin sonuçlar olarak sunmayın.",
           "evidence_quotes": [
             "Biz hep açık konuştuk.",
             "Biz iyiye iyi, güzele güzel dedik,"
@@ -5381,13 +5381,14 @@
             "Yıldızlara çoban olmak": "Enginliği, hayal gücünü ve gökyüzüyle kurulan yakınlığı çağrıştırır. Yıldızları güden bir çoban üzerinden gözetme ya da yol gösterme anlamında da yorumlanabilir.",
             "Değirmenlere su olmak": "Değirmeni döndüren su gibi üretimin, canlılığın ve bereketin kaynağı olmayı çağrıştırır.",
             "Bozkırlara bulut gölgesi olmak": "Kurak ve sıcak bozkırda gölgenin verdiği ferahlık ve rahatlığı düşündürür.",
-            "Ortak anlam": "İmgelerin ortak noktası doğayla iç içe olmak ve yaşama katkı sunmaktır. Şiirin başındaki “açık konuşma” vurgusuyla birlikte düşünüldüğünde, sözün de insana ferahlık ve canlılık verebileceği biçiminde yorumlanabilir."
+            "Ortak anlam": "İmgelerin ortak noktası doğayla iç içe olma, canlılık ve çevreye yarar sağlama çağrışımıdır.",
+            "İleri yorum": "Şiirin başındaki “açık konuşma” vurgusuyla birlikte düşünüldüğünde, sözün de insana ferahlık veya canlılık verebileceği ileri bir yorum olarak kurulabilir; bu, dizelerin tek zorunlu anlamı değildir."
           },
           "evidence_quotes": [
             "Yıldızlara çobandık, değirmenlere su,",
             "Bozkırlara bulut gölgesiydik."
           ],
-          "guidance": "Öğrencilerin her imgeyi ayrı yorumlaması ve ortak bir anlam bulması beklenir. Dizelerde doğrudan görülen anlamı (doğayla bütünleşme, yarar sağlama) yol göstericilik veya toplumsal sorumluluk gibi daha ileri yorumlardan ayırt ettirin; gerekçeli farklı yorumları kabul edin.",
+          "guidance": "Öğrencilerin her imgeyi ayrı yorumlaması ve ortak bir anlam kurması beklenir. Doğayla bütünleşme ve yarar sağlama gibi dizeye yakın anlamlarla yol göstericilik, toplumsal sorumluluk veya sözün iyileştirici etkisi gibi ileri yorumları birbirinden ayırın; gerekçeli farklı yorumları kabul edin.",
           "source_locator": "basılı s.59 / PDF s.60 — Açık Şiiri"
         },
         "content": null
@@ -5421,20 +5422,20 @@
           "printed_page": 59,
           "question_no": "3",
           "prompt_summary": "Sağlıklı iletişim kurmanın yolları",
-          "answer": "Sağlıklı iletişim; fiziksel olarak işitmenin ötesine geçen 'etkin dinleme', muhatabın duygu ve bakış açısını anlamaya çalışan 'empati', suçlayıcı dilden uzak duran 'ben dili' ve sözcüklerle uyumlu bir 'beden dili' ile kurulur. Tarafların peşin hüküm vermeden birbirini dinlemesi ve mesajı doğrulamak için geri bildirimde bulunması iletişim aksaklıklarını azaltır, yanlış anlamaları önlemeye yardımcı olur.",
+          "answer": "Sağlıklı iletişim için etkin dinleme, açık ve saygılı anlatım, karşı tarafın bakış açısını anlamaya çalışma, suçlayıcı olmayan bir dil kullanma, uygun geri bildirim verme ve sözle uyumlu beden dili kullanma gibi yollar tercih edilebilir. Bunlar tek ve eksiksiz bir formül değil, iletişimi kolaylaştırabilecek örnek davranışlardır.",
           "answer_sections": {
-            "Temel İlkeler ve Yollar": [
-              "Etkin Dinleme: Konuşmacının sözünü kesmeden, zihnen odaklanarak ve duygu-düşüncesini anlamaya çalışarak dinlemek.",
-              "Empati ve Hoşgörü: Olaylara muhatabın duygu durumu ve bakış açısından yaklaşabilmek; farklılıklara saygı duymak.",
-              "Ben Dili Kullanımı: Karşı tarafı suçlamak ('Sen hep gecikirsin') yerine kendi duygusunu ifade etmek ('Gecikince endişeleniyorum').",
-              "Açıklık ve Dürüstlük: İletileri net, anlaşılır ve yapıcı bir üslupla aktarmak; imalardan ve belirsizlikten kaçınmak."
+            "Örnek İlkeler ve Yollar": [
+              "Etkin dinleme: Konuşmacının sözünü kesmeden, dikkatini vererek ve ne söylediğini anlamaya çalışarak dinlemek.",
+              "Bakış açısını anlamaya çalışma: Karşı tarafın duygu ve düşüncesini anlamaya çalışmak; farklılıklara saygı göstermek.",
+              "Suçlayıcı olmayan anlatım: “Sen hep…” türü genellemeler yerine kendi duygu, düşünce ve ihtiyacını açıkça ifade etmek.",
+              "Açıklık: İletiyi anlaşılır ve doğrudan biçimde aktarmak; gerektiğinde açıklama istemek veya vermek."
             ],
             "Somut Günlük Yaşam Uygulamaları": [
-              "Geri Bildirim Verme: Bir tartışmada karşı tarafın görüşünü özetleyerek 'Doğru anladıysam şunu demek istedin, değil mi?' şeklinde teyit almak.",
-              "Beden Dilini Eşleme: Göz teması kurmak, kolları kavuşturup geri çekilmek yerine muhataba hafifçe yönelerek dinlediğini jest ve mimiklerle hissettirmek."
+              "Geri bildirim verme: “Doğru anladıysam şunu demek istedin, değil mi?” gibi bir soruyla anlaşılanı kontrol etmek.",
+              "Sözle uyumlu beden dili: Konuşana yönelmek, uygun göz teması kurmak ve dinlediğini gösteren jest-mimikler kullanmak."
             ]
           },
-          "guidance": "Öğrencilere yalnızca kuralları ezberletmek yerine, günlük hayatta karşılaştıkları bir anlaşmazlık anını bu ilkelerle nasıl çözebileceklerine dair somut bir örnek kurdurulmalıdır.",
+          "guidance": "Bu maddeleri ezberlenecek zorunlu bir liste gibi sunmayın. Öğrenciden günlük hayattan bir iletişim durumunu seçip hangi davranışların iletişimi kolaylaştırabileceğini somut olarak açıklamasını isteyin.",
           "source_locator": "basılı s.59 / PDF s.60 — Konuya Başlarken"
         },
         "content": null
@@ -5469,34 +5470,34 @@
           "printed_page": 61,
           "question_no": "1",
           "prompt_summary": "Hitaplardan hareketle mektupların kime yazılmış olabileceği ve içerikleri hakkında tahmin",
-          "answer": "Bu soru tahmine dayalıdır. Muhatap ve içerik hakkında yalnız sayfada görülen hitap, tarih-yer bilgisi ve ilk cümlelerden hareketle olasılıklar kurulmalıdır; mektupların devamında yer alan veya dış kaynaklardan bilinen içerikler tahminin içine taşınmamalıdır.",
+          "answer": "Bu soru tahmine dayalıdır. Muhatap ve içerik hakkında yalnız sayfada görülen hitap, varsa başlık bilgisi, tarih-yer bilgisi ve ilk cümlelerden hareketle olasılıklar kurulmalıdır. Hitabın vermediği biyografik bilgiler tahminin yerine geçirilmemelidir.",
           "answer_sections": {
             "1. İbrahim Alâettin Gövsa — “Vefakâr dost ve faziletli kardeş”": {
-              "Muhatap tahmini": "Çok yakın ve saygı duyulan bir dost ya da fikir/meslek arkadaşı olabilir.",
-              "İçerik tahmini": "İlk cümlede alınan mektubun içtenliğinden söz edildiği için dostluk, teşekkür ve kişisel düşünce paylaşımı içerebilir."
+              "Muhatap tahmini": "Yakın, değer verilen ve saygı duyulan bir dost ya da kardeş gibi görülen bir kişi olabilir.",
+              "İçerik tahmini": "Dostluk, teşekkür, hâl-hatır veya kişisel düşünce paylaşımı içerebilir."
             },
             "2. Vincent Van Gogh — “Sevgili Kardeşim”": {
-              "Muhatap tahmini": "Başlık bilgisinden kardeşi Theo olduğu anlaşılır.",
-              "İçerik tahmini": "“Sana bir kez daha yazmak istiyorum” cümlesinden hareketle kişisel haberler, günlük yaşam ve kardeşler arası duygu/düşünce paylaşımı içerebilir."
+              "Muhatap tahmini": "Bir kardeşe veya kardeş kadar yakın bir aile üyesine yazılmış olabilir. Yalnız hitaptan kişinin adını belirleyemeyiz.",
+              "İçerik tahmini": "Kişisel haberler, günlük yaşam ve aile içi duygu/düşünce paylaşımı içerebilir."
             },
             "3. Tezer Özlü — “Canım Leylâcığım”": {
-              "Muhatap tahmini": "Başlık bilgisinden Leylâ Erbil'e, yakın ve samimi bir ilişki içinde yazıldığı anlaşılır.",
-              "İçerik tahmini": "Fatoş'la yaptığı kısa konuşmadan söz ettiği için ortak çevre, günlük yaşam ve kişisel haberler içerebilir."
+              "Muhatap tahmini": "Leylâ adlı, yazarın samimi ve yakın olduğu bir kişiye yazılmış olabilir.",
+              "İçerik tahmini": "Ortak çevre, günlük yaşam ve kişisel haberler içerebilir."
             },
             "4. Atatürk'ün Özel Mektupları — “Muhterem Hanımefendi”": {
-              "Muhatap tahmini": "Saygılı ve mesafeli bir hitapla seslenilen bir hanımefendi.",
-              "İçerik tahmini": "“Kıymetli hediyenizi aldım” cümlesinden hareketle teşekkür ve nezaket içeren bir cevap mektubu olabilir."
+              "Muhatap tahmini": "Saygılı ve daha mesafeli bir ilişki içinde olunan bir hanımefendi olabilir.",
+              "İçerik tahmini": "İlk cümledeki hediye bilgisine göre teşekkür ve nezaket içeren bir cevap olabilir."
             },
             "5. Yakup Kadri Karaosmanoğlu — “Pek Aziz ve Muhterem Halide Hanımefendi”": {
-              "Muhatap tahmini": "Başlık ve hitaptan Halide Edib Adıvar olduğu anlaşılır.",
-              "İçerik tahmini": "İlk cümlede “Sonsuz Panayır”ı okuduğunu ve düşüncelerini söylemek istediğini belirttiği için eser hakkında edebî değerlendirme ve tebrik içerebilir."
+              "Muhatap tahmini": "Halide adlı, hem değer verilen hem de saygı gösterilen bir hanımefendiye yazılmış olabilir.",
+              "İçerik tahmini": "İlk cümlede anılan eser üzerinden edebî değerlendirme, görüş paylaşımı veya tebrik içerebilir."
             },
             "6. Orhan Seyfi Orhon — “Sayın Hasan Âli Yücel”": {
-              "Muhatap tahmini": "Başlıktan Maarif Vekili Hasan Âli Yücel olduğu anlaşılır.",
-              "İçerik tahmini": "İlk cümlede Vekâlet emrine alınma olayına değinildiği için resmî bir işlemle ilgili açıklama, itiraz veya değerlendirme içerebilir."
+              "Muhatap tahmini": "Hasan Âli Yücel adlı kişiye saygılı ve görece resmî bir ilişki içinde yazılmış olabilir.",
+              "İçerik tahmini": "İlk cümledeki işlem/karar bilgisinden hareketle açıklama, değerlendirme veya itiraz içerebilir."
             }
           },
-          "guidance": "Öğrenciye her tahmin için “Bunu hangi hitap, tarih-yer bilgisi veya ilk cümle düşündürdü?” sorusunu yöneltin. Verilen kısa parçanın ötesindeki biyografik veya mektup içeriği bilgilerini tahmin cevabına eklemeyin.",
+          "guidance": "Her tahmin için “Bunu hangi hitap veya ilk cümle düşündürdü?” sorusunu yöneltin. Sayfada açıkça yazmayan Theo, Leylâ Erbil, Halide Edib Adıvar veya muhatabın makamı gibi dış bilgileri tahmin cevabına taşımayın; varsa sayfadaki başlık bilgisini de hitaptan yapılan çıkarımla karıştırmayın.",
           "evidence_quotes": [
             "Vefakâr dost ve faziletli kardeş,",
             "Sevgili Kardeşim,",
@@ -5538,14 +5539,14 @@
           "printed_page": 61,
           "question_no": "2",
           "prompt_summary": "Hitap ifadelerinde saygı, sevgi ve dostluk değerleri",
-          "answer": "Mektuplardaki hitap ifadeleri, iletişimin ilk anında taraflar arasındaki mesafeyi, hiyerarşiyi, duygu bağını ve kültürel nezaketi inşa eder. 'Sevgili' ve 'canım' sözcükleri içten bir sevgi ve yakınlığı; 'vefakâr dost' ve 'faziletli kardeş' sözleri derin ahlaki dostluk ve bağlılığı; 'muhterem', 'aziz' ve 'sayın' sözcükleri ise nezaket, hürmet ve mesafeli bir saygıyı yansıtır.",
+          "answer": "Hitaplar, taraflar arasındaki yakınlık ve saygı düzeyine ilişkin ipuçları verir. “Sevgili” ve “canım” sevgi ve yakınlığı; “vefakâr dost” ve “faziletli kardeş” dostluk, vefa ve takdiri; “muhterem” ve “sayın” ise saygı ve daha resmî bir tonu yansıtabilir.",
           "answer_sections": {
-            "Sevgi ve Yakınlık Değerleri": "'Sevgili Kardeşim' ve 'Canım Leylâcığım' hitapları, aradaki resmiyet duvarlarını kaldırarak iletişimi güvenli, koruyucu ve içten bir sevgi bağına yerleştirir; duyguların serbestçe dökülmesine kapı açar.",
-            "Dostluk, Vefa ve Fazilet Değerleri": "'Vefakâr dost ve faziletli kardeş' ifadesi, dostluğu yalnızca bir tanıdıklık olarak değil; vefa, ahlak ve erdem (fazilet) üzerine kurulmuş köklü bir dayanışma olarak somutlaştırır.",
-            "Saygı, Nezaket ve Resmiyet Değerleri": "'Muhterem Hanımefendi', 'Pek Aziz ve Muhterem...' ve 'Sayın...' hitapları; muhatabın şahsına, yaşına, edebî konumuna veya makamına duyulan derin saygıyı ve toplumun nezaket ölçülerini görünür kılar.",
-            "İletişim İklimine Etkisi": "Hitap, mektubun sonraki paragraflarında kullanılacak üslubun sınırlarını çizer; muhatabın metni hangi psikolojik kabullenişle okumaya başlayacağını belirler."
+            "Sevgi ve yakınlık": "'Sevgili Kardeşim' ve 'Canım Leylâcığım' ifadeleri samimiyet ve yakınlık bildirir.",
+            "Dostluk, vefa ve takdir": "'Vefakâr dost ve faziletli kardeş' ifadesi muhataba duyulan bağlılık, vefa ve olumlu değerlendirmeyi gösterir.",
+            "Saygı ve resmiyet": "'Muhterem Hanımefendi', 'Pek Aziz ve Muhterem...' ve 'Sayın...' ifadeleri saygılı bir hitap tonunu gösterir; bağlama göre resmiyet derecesi değişebilir.",
+            "Metnin tonuna etkisi": "Hitap, mektubun başlangıç tonunu ve taraflar arasındaki ilişkiye dair ilk izlenimi oluşturur; metnin geri kalanındaki üslupla birlikte değerlendirilmelidir."
           },
-          "guidance": "Öğrencilere 'Hitap değişirse mektubun dili ve içeriği nasıl değişir?' sorusu yöneltilerek hitabın metnin bütününe yön veren bir değer taşıyıcısı olduğu fark ettirilmelidir.",
+          "guidance": "Hitaplardan hareketle sevgi, dostluk, vefa ve saygı gibi değerleri belirletin; hitabın tek başına muhatabın yaşı, makamı veya psikolojik tepkisi hakkında kesin bilgi vermediğini hatırlatın.",
           "source_locator": "basılı s.60-61 / PDF s.61-62 — Sıra Sizde"
         },
         "content": null
@@ -5588,8 +5589,8 @@
             ],
             "Farklı Yönler": [
               "Geleneksel mektuplarda döneme ve kişisel ilişkiye bağlı olarak daha uzun, edebî veya kalıplaşmış hitaplara rastlanabilir.",
-              "E-postalarda özellikle kurumsal yazışmalarda daha kısa ve işlevsel hitaplar sık görülebilir; ancak kişisel e-postalar samimi ve uzun hitaplar da içerebilir.",
-              "E-posta birden fazla kişiye kolayca gönderilebildiği için “Değerli Katılımcılar” gibi toplu hitaplar daha sık kullanılabilir; mektup da birden fazla muhataba yazılabilir, bu nedenle mutlak bir ayrım yapılmamalıdır."
+              "E-postalarda özellikle kurumsal yazışmalarda kısa ve işlevsel hitaplar yaygın olabilir; kişisel e-postalar ise samimi ve uzun hitaplar da içerebilir.",
+              "E-postada çoklu gönderim kolay olduğu için toplu hitaplarla karşılaşılabilir; ancak mektuplar da birden fazla muhataba yazılabildiğinden bu mutlak bir ayrım değildir."
             ]
           },
           "guidance": "“Mektup her zaman duygusal, e-posta her zaman kısa ve resmîdir” gibi genellemelerden kaçının. Hitabın biçimini asıl olarak amaç, muhatap ve bağlamın belirlediğini vurgulayın.",
@@ -5632,10 +5633,9 @@
             "Mekândan Bağımsızlık": "İnternet erişimi bulunan farklı yerlerden gönderilip alınabilir.",
             "Ek Dosya ve Bağlantı Paylaşımı": "Belge, görsel, tablo, ses dosyası veya bağlantı eklenebilir.",
             "Arşivleme ve Arama Kolaylığı": "Yazışmalar klasörlenebilir, anahtar sözcükle aranabilir ve yedeklenebilir; ancak silinme, hesap kaybı veya güvenlik sorunları nedeniyle kalıcılık otomatik değildir.",
-            "Çoklu Gönderim ve İş Birliği": "Aynı ileti birden fazla kişiye gönderilebilir; kurumsal duyuru ve ortak çalışma süreçlerini kolaylaştırabilir.",
-            "Sınırlar ve Riskler": "Spam, kimlik avı, yanlış alıcıya gönderim, veri güvenliği ve internet bağımlılığı gibi riskler de vardır."
+            "Çoklu Gönderim ve İş Birliği": "Aynı ileti birden fazla kişiye gönderilebilir; kurumsal duyuru ve ortak çalışma süreçlerini kolaylaştırabilir."
           },
-          "guidance": "Avantajları mutlaklaştırmayın. “Arşivlenebilir” ile “asla kaybolmaz”, “hızlıdır” ile “her durumda anlıktır”, “dijitaldir” ile “otomatik olarak güvenlidir” arasındaki farkı öğrencilerin görmesini sağlayın.",
+          "guidance": "Sorunun odağı yararlardır: hız, erişim, ek paylaşımı, arama/arşivleme ve çoklu gönderim üzerinde durun. Bu yararları mutlaklaştırmayın; “arşivlenebilir” ile “asla kaybolmaz”, “hızlıdır” ile “her durumda anlıktır” arasındaki farkı belirtin. Güvenlik ve yanlış alıcı gibi riskler gerekirse ek öğretmen notu olarak ele alınabilir.",
           "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım"
         },
         "content": null
@@ -5670,16 +5670,17 @@
           "printed_page": 63,
           "question_no": "3",
           "prompt_summary": "Kardeş mektubunda en etkileyici ifadeyi seçip gerekçelendirme",
-          "answer": "Sabahattin Eyuboğlu'nun Bedri Rahmi'ye yazdığı mektupta yer alan 'Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.' ifadesi seçilebilir. Bu ifade, kardeşlik ve sevgi gibi soyut ve ölçülemez bir değeri posta ile gönderilen somut bir nesne gibi hayal ederek kardeşe duyulan hasret ve bağlılığı olağanüstü sıcak ve lirik bir biçimde somutlaştırmaktadır.",
+          "answer": "Bu soru kişisel tercihe açıktır. Örneğin “Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.” ifadesi seçilebilir; çünkü soyut bir duygu olan kardeşlik, gönderilebilen somut bir şey gibi düşünülerek sevgi ve özlem daha belirgin hâle getirilmiştir. Öğrencinin başka bir ifadeyi metne dayalı gerekçeyle seçmesi de geçerlidir.",
           "answer_sections": {
-            "Seçilen İfade": "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
-            "Gerekçe ve Edebî İnceleme": "Soyut bir duygu olan kardeşlik sevgisi, somut bir meta gibi 'yığın yığın gönderilmek' istenmiştir. Gurbette (Dijon) olan yazarın memleketteki kardeşine sarılamayışının yarattığı çaresizlik ve derin muhabbet bu tezatla çarpıcı bir güce kavuşmuştur.",
-            "Kabul Edilebilir Alternatif Güçlü İfadeler": [
-              "'Uzat gözlerini kardeşim. Sana sevgiler, sevgiler, sevgiler gönderirim.': Göz temasını fiziksel bir uzanma gibi betimleyerek mesafeleri yok sayan duygu yoğunluğu.",
-              "'İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.': Kendi dar bütçesinden kardeşine destek olma arzusunu samimiyetle dile getirmesi."
+            "Örnek seçilen ifade": "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
+            "Örnek gerekçe": "Kardeşlik gibi soyut bir duygu, “yığın yığın gönderilebilen” somut bir şey gibi anlatılarak somutlaştırılmıştır; bu söyleyiş kardeşe duyulan sevgi ve özlemi güçlü biçimde hissettirebilir.",
+            "Kabul edilebilir alternatifler": [
+              "“Uzat gözlerini kardeşim. Sana sevgiler, sevgiler, sevgiler gönderirim.” — Mesafeye rağmen yakınlık kurma isteği ve sevgi tekrar yoluyla yoğunlaştırılabilir.",
+              "“İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.” — Paylaşma ve destek olma isteği açısından etkileyici bulunabilir.",
+              "Metindeki başka bir ifade de duygu, dil veya düşünce açısından gerekçelendirilirse kabul edilir."
             ]
           },
-          "guidance": "Soru açık uçludur. Öğrencinin metinden seçtiği herhangi bir cümleyi (örneğin pencereden seyredilen Dijon kışı, konfeti gibi yağacak mektuplar vb.) duygu, dil veya düşünce gerekçesiyle temellendirmesi durumunda cevap geçerli sayılmalıdır.",
+          "guidance": "Tek bir “en etkileyici” cevap vermeyin. Öğrencinin seçtiği ifadeyi neden etkileyici bulduğunu metindeki söz, imge veya düşünce üzerinden açıklaması yeterlidir. Somutlaştırma gibi edebî bir özellik kullanılabilir; metinde açık dayanağı olmayan “tezat”, “çaresizlik” gibi yorumları zorunlu kılmayın.",
           "evidence_quotes": [
             "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
             "Uzat gözlerini kardeşim.",
@@ -5719,14 +5720,14 @@
           "printed_page": 63,
           "question_no": "4",
           "prompt_summary": "Kardeş mektubunda görülen değerler",
-          "answer": "Sabahattin Eyuboğlu'nun mektubunda kardeşlik bağı, aile sevgisi, fedakârlık ve paylaşma, vefa ve dürüstlük değerleri metnin dokusuna içtenlikle sinmiştir.",
+          "answer": "Mektupta kardeşlik ve aile sevgisi, paylaşma-yardımlaşma, özlem ve bağlılık, samimiyet gibi değerlere ulaşılabilir. Bunlar örnek değerlerdir; her değer metindeki somut bir söz veya davranışla gerekçelendirilmelidir.",
           "answer_sections": {
-            "Kardeşlik ve Aile Sevgisi": "Metnin her satırında kardeşi merak etme ('Bedir, Sevgili Bedir, nasılsın?'), aile fertlerinin durumunu sorma (Cemal ağabeyi, Niyazi) ve resmini isteme üzerinden aile kurumuna duyulan sarsılmaz sevgi belirgindir.",
-            "Paylaşma, Cömertlik ve Fedakârlık": "Yazarın kendi kısıtlı bütçesinden artırdığı parayı 'İşte sana helalinden yüz frank... İktisadım bundan ibaret' diyerek kardeşine göndermesi, elde olanı kardeşle bölüşme erdemini somutlar.",
-            "Özlem ve Vefa": "Trabzon'dan ve kardeşlerinden aylarca mektup alamamasına rağmen sitemini tatlı bir dille ifade etmesi ('bütün mektuplar başıma konfeti gibi dökülecekler'), hizmetçinin mektup şakasını anlatması vefayı ve hasreti gösterir.",
-            "Açık Yüreklilik ve Samimiyet": "Mektupta resmiyet ve yapmacıklıktan uzak, gecikmelerini içtenlikle itiraf eden ('Ben gene geç kaldım. Olur şey değil...') doğal ve dürüst bir insan tutumu vardır."
+            "Kardeşlik ve aile sevgisi": "“Bedir, Sevgili Bedir, nasılsın?” diye seslenmesi, aile bireylerini sorması ve kardeşinin resmini istemesi yakınlık ve aile sevgisini gösterir.",
+            "Paylaşma ve yardımlaşma": "“İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.” sözü, elindeki imkânı kardeşiyle paylaşma isteğini gösterir.",
+            "Özlem ve bağlılık": "“O kadar göresledim ki seni. Bana bir resmini gönder emi.” sözü kardeşine duyduğu özlemi ve yakınlığı doğrudan gösterir.",
+            "Samimiyet": "“Ben gene geç kaldım. Olur şey değil...” gibi ifadeler resmî olmayan, içten ve doğal bir anlatım oluşturur."
           },
-          "guidance": "Değerler listelenirken her bir değerin metindeki somut bir cümle veya eylemle gerekçelendirilmesi istenmelidir.",
+          "guidance": "Bunları tek ve değişmez bir değer listesi olarak sunmayın. Öğrenciden seçtiği her değeri metindeki doğrudan bir söz veya davranışla gerekçelendirmesini isteyin. Hizmetçinin mektup şakası gibi dolaylı ayrıntıları tek başına “vefa” kanıtı olarak kullanmayın.",
           "evidence_quotes": [
             "İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.",
             "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
