@@ -12,6 +12,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.getUnclippedBoundsInRoot
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -117,9 +118,10 @@ class TabletLessonColumnTest {
 
         // 4. Sol kolonun dışına (scrim üzerine) dokunulunca sol kolon yeniden gizlenir
         composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performClick()
-        composeRule.waitForIdle()
-        composeRule.mainClock.advanceTimeBy(350)
-        composeRule.waitForIdle()
+        composeRule.waitUntil(timeoutMillis = 3_000) {
+            composeRule.onAllNodesWithTag("tablet-lesson-sidebar-overlay")
+                .fetchSemanticsNodes().isEmpty()
+        }
 
         composeRule.onNodeWithTag("tablet-lesson-sidebar-overlay").assertDoesNotExist()
         composeRule.onNodeWithText("Sidebar Kolonu").assertDoesNotExist()
