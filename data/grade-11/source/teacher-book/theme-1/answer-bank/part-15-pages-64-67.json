@@ -10,13 +10,13 @@
       "printed_page": 64,
       "question_no": "1",
       "prompt_summary": "Değişen İletişim Araçlarının Hayatımızdaki Yeri için dinleme/izleme amacı belirleme",
-      "answer": "Dinleme/izleme amacı, başlık ve bölüm bağlamından hareketle iletişim araçlarının hayatımızdaki yerini anlamak, metnin temel düşüncelerini belirlemek ve kullanılan dil ile iletişim biçimlerini değerlendirmek olarak kurulabilir. Video izlendikçe bu amaç daha özel alt sorularla geliştirilebilir.",
+      "answer": "Dinleme/izleme amacı başlık ve bölüm bağlamından hareketle belirlenebilir. Örneğin iletişim araçlarının hayatımızdaki yerini anlamak, metnin temel düşüncelerini belirlemek ya da metindeki durumları kendi iletişim alışkanlıklarımızla karşılaştırmak amaçlarından biri veya birkaçı seçilebilir. Video izlendikçe amaç daha özel alt sorularla geliştirilebilir.",
       "answer_sections": {
-        "Genel Anlama Amacı": "İletişim araçlarıyla ilgili hangi konuların ele alındığını ve metnin temel mesajını belirlemek.",
-        "Eleştirel Dinleme Amacı": "Sunulan görüşleri, örnekleri ve gerekçeleri ayırt etmek; katılınan veya sorgulanan noktaları not etmek.",
-        "Kişisel Bağ Kurma Amacı": "Metindeki iletişim durumlarını kendi günlük yaşamındaki iletişim alışkanlıklarıyla karşılaştırmak."
+        "Örnek amaç 1 — Genel anlamayı geliştirme": "İletişim araçlarıyla ilgili hangi konuların ele alındığını ve metnin temel iletisini belirlemek.",
+        "Örnek amaç 2 — Görüş ve gerekçeleri ayırt etme": "Sunulan düşünceleri, örnekleri ve gerekçeleri fark etmek; dikkat çeken noktaları not etmek.",
+        "Örnek amaç 3 — Kişisel bağ kurma": "Metindeki iletişim durumlarını kendi günlük yaşamındaki iletişim alışkanlıklarıyla karşılaştırmak."
       },
-      "guidance": "Bu adım video öncesidir. Video içinde hangi tarihsel araçların, olumlu/olumsuz etkilerin veya belirli kavramların geçeceğini önceden kesinleştirmeyin; amaç öğrencinin izlemesini yönlendirecek kadar genel olmalıdır.",
+      "guidance": "Bunları tek doğru amaç listesi olarak sunmayın. Öğrenci, izleme öncesinde başlık ve bağlama uygun bir amaç seçsin ve bunu bir cümleyle gerekçelendirsin. Video içinde hangi tarihsel araçların, görüşlerin veya kavramların geçeceğini önceden kesinleştirmeyin.",
       "source_locator": "basılı s.64 / PDF s.65 — Dinleme / İzlemeyi Yönetebilme"
     },
     {
@@ -40,19 +40,26 @@
       "printed_page": 64,
       "question_no": "3",
       "prompt_summary": "Metni etkili dinleyebilmek/izleyebilmek için metin ve ortam kaynaklı iletişim engellerini azaltma",
-      "answer": "İzlemeye başlamadan önce rahatça görebileceğiniz ve duyabileceğiniz bir yer seçin, dikkatinizi dağıtacak eşyaları kaldırın, not almak için hazırlanın ve dinleme amacınızı belirleyin. Gürültü veya görüntü engeli varsa öğretmene bildirin.",
+      "answer": "Etkili dinleme/izleme için engelleri kaynağına göre ayırmak yararlıdır. Ortam kaynaklı engelleri mümkün olduğunca azaltın; kendi dikkatinizi ve ön yargılarınızı yönetin; metin veya izleme materyalinden kaynaklanan sorunlar varsa bunları fark edip uygun çözüm isteyin. Aşağıdaki maddeler olası örneklerdir.",
       "answer_sections": {
-        "Fiziksel ve Çevresel Engelleri Giderme Adımları": [
-          "Rahatça görebileceğiniz ve duyabileceğiniz bir yer seçin. Gürültü veya görüntü engeli varsa öğretmene bildirin.",
-          "İzleme sırasında dikkatinizi dağıtacak telefon ve ilgisiz eşyaları kaldırın."
+        "Ortam_Kaynaklı_Engeller": [
+          "Gürültü, uğultu veya dış sesler.",
+          "Ekranı görmeyi ya da sesi duymayı zorlaştıran oturma düzeni.",
+          "Dikkati dağıtan telefon, bildirim veya ilgisiz araçlar."
         ],
-        "Metin ve Zihinsel Kaynaklı Engelleri Giderme Adımları": [
-          "Konuyla ilgili ön bilgilerinizi hatırlayın.",
-          "Anahtar kavramları ve önemli bağlantıları not etmek için defter ve kaleminizi hazırlayın.",
-          "“Bunu zaten biliyorum” veya “sıkıcıdır” gibi peşin yargılar yerine izleme amacınıza odaklanın."
-        ]
+        "Dinleyici_İzleyici_Kaynaklı_Engeller": [
+          "Dikkatin başka bir konuya kayması.",
+          "“Bunu zaten biliyorum” veya “sıkıcıdır” gibi peşin yargılar.",
+          "Her cümleyi yazmaya çalışırken asıl düşünceyi veya görsel göstergeleri kaçırmak."
+        ],
+        "Metin_Materyal_Kaynaklı_Olası_Engeller": [
+          "Sesin anlaşılmayacak kadar düşük veya bozuk olması.",
+          "Anlatımın bazı bölümlerde izlemeyi zorlaştıracak kadar hızlı olması.",
+          "Görüntü, yazı veya altyazının okunmasını zorlaştıran teknik sorunlar."
+        ],
+        "Çözüm": "Ortamı düzenleyin, dikkatinizi izleme amacına yöneltin ve teknik/metinsel bir sorun varsa öğretmene bildirerek yeniden dinleme, açıklama veya görüntü-ses ayarı isteyin."
       },
-      "guidance": "Gözlem Formu'ndaki 'Dinleme/izlemeyi olumsuz etkileyen iletişim engellerini ortadan kaldırdı' ölçütü bu hazırlıkların yapılıp yapılmadığına göre değerlendirilebilir.",
+      "guidance": "Öğrenciden önce engelin kaynağını belirlemesini isteyin: ortam mı, dinleyici/izleyici mi, metin-materyal mi? QR içeriği izlenmeden videoda belirli bir teknik sorun varmış gibi konuşmayın; materyal kaynaklı maddeleri yalnız olası örnek olarak kullanın. Gözlem Formu'ndaki ölçütü, öğrencinin kendi koşullarında gerçekten yaptığı hazırlıklara göre değerlendirin.",
       "source_locator": "basılı s.64 / PDF s.65 — Metni Dinleyelim / İzleyelim adım 3 ve Gözlem Formu"
     },
     {
@@ -61,16 +68,17 @@
       "printed_page": 64,
       "question_no": "4",
       "prompt_summary": "Çok modlu metni etkili dinlemek/izlemek için örnek strateji",
-      "answer": "Çok modlu metni izlerken 'Amaç Odaklı ve Not Alarak İzleme Stratejisi' uygulanır. Bu strateji; izleme öncesi soru çerçevesi oluşturmayı, izleme esnasında iki sütunlu not tutmayı ve izleme sonrasında kişisel yaşantıyla köprü kurmayı kapsar.",
+      "answer": "Çok modlu metni izlerken amaç odaklı ve not alarak izleme stratejisi uygulanabilir. Bu strateji, izleme öncesinde günlük dil kullanımıyla ilgili bir odak sorusu belirlemeyi, izleme sırasında metindeki örneklerle kişisel gözlemleri ayrı sütunlarda not etmeyi ve izleme sonunda benzerlik-farklılıkları değerlendirmeyi içerir.",
       "answer_sections": {
-        "1. İzleme Öncesi (Soru Çerçevesi Kurma)": "'İletişim araçları hızlandıkça ilişkilerimiz derinleşti mi yoksa yüzeyselleşti mi?' sorusunu odak soru olarak belirleme.",
-        "2. İzleme Sırası (İki Sütunlu Not Alma Modeli)": [
-          "Sol Sütun (Metindeki Bilgi ve Kanıtlar): Videoda geçen iletişim araçları, tarihsel dönüm noktaları, öne çıkan terimler ve tanımlar.",
-          "Sağ Sütun (Kişisel Yaşantı ve Yorum): 'Ben bu aracı günlük hayatımda nasıl kullanıyorum?', 'Bizim ailede veya okulda bu durum nasıl yaşanıyor?' şeklindeki kişisel bağlantılar."
+        "1. İzleme Öncesi — Odak Sorusu": "“Videoda günlük dil kullanımına ilişkin hangi örnekler var; bunların hangilerini kendi çevremde de görüyorum, hangileri farklı?” sorusunu odak sorusu olarak belirleyin.",
+        "2. İzleme Sırası — İki Sütunlu Not Alma": [
+          "Sol sütun — Metinden gözlenenler: Videoda gerçekten duyulan/görülen günlük dil kullanımları, iletişim örnekleri, önemli kavramlar ve açıklamalar.",
+          "Sağ sütun — Kendi yaşamımla bağlantı: “Benzer bir kullanımı nerede görüyorum?”, “Bizim sınıfta/ailede/çevrede nasıl söyleniyor?”, “Buradaki kullanım benden nasıl farklı?” gibi kısa notlar."
         ],
-        "3. İzleme Sonrası (Sentez ve Öz Değerlendirme)": "Alınan notları gözden geçirerek Gözlem Formu'ndaki ölçütler ışığında kendi dinleme performansını ve ulaştığı yeni kavrayışları değerlendirme."
+        "3. İzleme Sonrası — Karşılaştırma": "Notlardan iki veya üç örnek seçip video ile kendi günlük yaşamındaki dil kullanımı arasındaki benzerlik ve farklılıkları gerekçeli biçimde açıklayın.",
+        "4. Öz Değerlendirme": "Seçtiğiniz stratejinin izleme amacınıza yardımcı olup olmadığını ve bir sonraki izleyişte neyi değiştirebileceğinizi kısaca değerlendirin."
       },
-      "guidance": "Not tutarken videodaki her cümleyi yazmaya çalışmak görsel ve işitsel göstergeleri kaçırmaya yol açar; öğrencilere anahtar kelimeler ve oklarla kavram haritası şeklinde not tutmaları hatırlatılmalıdır.",
+      "guidance": "Ayrıntılı iskeleyi koruyun; özellikle yönlendirmeye ihtiyaç duyan öğrenciler için iki sütunlu not modeli faydalıdır. Ancak odak sorusunu “ilişkiler derinleşti mi/yüzeyselleşti mi?” gibi sonucu iki seçeneğe sıkıştıran bir tartışmaya çevirmeyin. Kitabın istediği günlük dil kullanımıyla ilişki kurma hedefini merkeze alın.",
       "source_locator": "basılı s.64 / PDF s.65 — Metni Dinleyelim / İzleyelim adım 4"
     },
     {
@@ -89,16 +97,16 @@
       "printed_page": 65,
       "question_no": "Kelime Ağacı",
       "prompt_summary": "Kelime ağacındaki kavramları verilen anlamlarla eşleştirme",
-      "answer": "Kelime ağacında yer alan sözcükler ve tanımları doğru olarak şöyle eşleşir: Tasavvur (zihinde canlandırma), Nörolojik (sinir bilimsel), Güdü (davranışı doğuran güç), Medeni (uygar), Sosyal (toplumsal). 'Muhabbet' sözcüğü ise ağaçta verilen anlam kutularından hiçbirine uymayan çeldiricidir.",
+      "answer": "Kelime ağacındaki sözcükler verilen anlamlarla şöyle eşleşir: Tasavvur (zihinde canlandırma), Nörolojik (sinir sistemi ve sinir bilimiyle ilgili), Güdü (davranışı doğuran ve yönlendiren güç), Medeni (uygar), Sosyal (toplumsal). “Muhabbet” ise ağaçta verilen anlam kutularından hiçbirine uymayan sözcüktür.",
       "answer_sections": {
         "Tasavvur": "Göz önüne getirme, hayal etme, zihinde canlandırma.",
-        "Nörolojik": "Sinir bilimsel.",
+        "Nörolojik": "Sinir sistemi ve sinir bilimiyle ilgili.",
         "Güdü": "Bilinçli veya bilinçsiz olarak davranışı doğuran, sürekliliğini sağlayan ve ona yön veren herhangi bir güç; saik.",
         "Medeni": "Uygar.",
         "Sosyal": "Toplumsal.",
         "Muhabbet": "Verilen anlam kutularıyla eşleşmeyen çeldirici sözcük; sevgi, dostluk ve samimi sohbet anlamlarına gelir."
       },
-      "guidance": "Sözcüklerin yalnızca sözlük anlamlarıyla ezberlenmesi yerine, metnin bağlamında hangi işlevde (örneğin insanın biyolojik/nörolojik yapısı, toplumsal ilişkileri ve medenileşme adımları) kullanıldığı üzerinde durulmalıdır.",
+      "guidance": "Sözcükleri yalnız sözlük karşılığı olarak ezberletmeyin; metindeki bağlamda hangi anlam ilişkisini kurduklarını da sordurun. “Muhabbet”in eşleşmeyen sözcük olduğu sayfadaki kelime ağacı yapısına göre değerlendirilmelidir.",
       "source_locator": "basılı s.65 / PDF s.66 — Anlam Oluşturabilme / Söz Varlığımız"
     },
     {
