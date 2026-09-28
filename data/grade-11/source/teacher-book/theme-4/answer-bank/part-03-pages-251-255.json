@@ -85,14 +85,13 @@
       "question_no": "Karşılaştıralım 1",
       "source_locator": "basılı s.253-254 / PDF s.254-255 — Karşılaştıralım soru 1",
       "prompt_summary": "Ben, Mimar Sinan ile Cimri oyunlarını içerik, dönem, zihniyet ve üslup bakımından karşılaştırma",
-      "answer": "İki parça da tiyatro metnidir; ancak biri tarihî bir mimarın yaşamını ve üretimini ciddî bir anlatımla, diğeri para düşkünlüğünü aile içi çatışma ve komik diyaloglarla işler.",
+      "answer": "İki parça da tiyatro metnidir; ancak biri tarihî bir mimarın yaşamını ve üretimini ciddi bir anlatımla, diğeri para düşkünlüğünü aile içi çatışma ve komik diyaloglarla işler.",
       "answer_sections": {
         "İçerik": "Ben, Mimar Sinan Sinan’ın yetişmesini, mimarlık görevini ve önemli eserlerini anlatır. Cimri bölümünde Harpagon’un parasını saklama çabası ve çocuklarıyla evlilik üzerine çatışması öne çıkar.",
-        "Dönem": "Ben, Mimar Sinan’ın olay zamanı 16. yüzyıl Osmanlı dünyasıdır; oyun Turgut Özakman’ın 20. yüzyılda yazdığı tarihî bir tiyatro metnidir. Cimri, Molière’in 17. yüzyıl Fransız tiyatrosuna ait eseridir; kitaptaki parça Sabahattin Eyüboğlu çevirisidir.",
-        "Zihniyet": "Sinan metninde kamusal hizmet, ustalık, çalışma ve kültürel miras değerleri öne çıkar. Cimri’de servetini koruma saplantısı, otoriter baba tutumu ve paranın aile ilişkilerini bozması eleştirel ve mizahî biçimde gösterilir.",
-        "Üslup": "Ben, Mimar Sinan’da birinci kişili anlatım; sahne yönergeleri, tarihî anlatım ve etkileyici söyleyiş kullanılır. Cimri’de hızlı karşılıklı konuşmalar, tekrarlar, yanlış anlaşılmaya açık durumlar ve ironi komedi etkisi yaratır."
-      },
-      "explanation": "Cimri’nin 17. yüzyıl Fransız tiyatrosuna ait olduğu bilgisi metnin bu sayfasında verilmez; Molière’in yazarlık dönemine ilişkin ön bilgidir. Kitap içindeki kanıtlar Harpagon’un para konuşmaları ve çeviri künyesidir."
+        "Dönem": "Ben, Mimar Sinan’ın olay dünyası 16. yüzyıl Osmanlı toplumudur. Cimri parçasında ise aile, para ve evlilik ilişkileri üzerinden farklı bir toplumsal yaşam ve değer dünyası yansıtılır; kitapta eserin tarihsel dönemi ayrıca açıklanmaz.",
+        "Zihniyet": "Sinan metninde kamusal hizmet, ustalık, çalışma ve kültürel miras değerleri öne çıkar. Cimri’de servetini koruma saplantısı, otoriter baba tutumu ve paranın aile ilişkilerini bozması eleştirel ve mizahi biçimde gösterilir.",
+        "Üslup": "Ben, Mimar Sinan’da birinci kişili anlatım; sahne yönergeleri, tarihî anlatım ve etkileyici söyleyiş kullanılır. Cimri’de hızlı karşılıklı konuşmalar, tekrarlar ve ironi komedi etkisi yaratır."
+      }
     },
     {
       "question_id": "T4-P254-Q02",
@@ -101,11 +100,10 @@
       "question_no": "Karşılaştıralım 2",
       "source_locator": "basılı s.254 / PDF s.255 — Karşılaştıralım soru 2",
       "prompt_summary": "İki tiyatro parçasının dram, komedi veya trajedi türüne yakınlığını gerekçelendirme",
-      "answer": "Kitabın Bilgi Köşesi’ndeki tanımlara göre Cimri açıkça komediye, Ben, Mimar Sinan ise verilen üç tür içinde drama en yakındır. Ancak dramın “acıklı ve gülünç yönleri bir arada yansıtma” özelliği Ben, Mimar Sinan kesitinde belirgin değildir; bu nedenle “kesin dram” yerine “verilen türler içinde drama en yakın” demek daha doğrudur.",
+      "answer": "Cimri komedi, Ben, Mimar Sinan ise dram türüne daha yakındır.",
       "answer_sections": {
-        "Cimri → komedi": "Konusunu günlük yaşamdan alır; Harpagon’un aşırı para düşkünlüğü, kendini ele veren sözleri ve çocuklarıyla evlilik konusundaki gerilimi izleyiciyi güldürürken düşündürür. Kahramanı soylu ya da olağanüstü biri değil, sıradan bir aile babasıdır.",
-        "Ben, Mimar Sinan → drama en yakın": "Konusunu tarihten alır ve düzyazıyla yazılmıştır. İzleyiciyi güldürme amacı taşımadığı için komediye; manzum olmadığı ve korku-heyecan uyandırarak acıklı bir sonla ders verme yapısı kurmadığı için trajediye uymaz.",
-        "Sınır": "Şehzade Mehmet’in ölüm haberi gibi acıklı anlar bulunsa da kesitte gülünç yön zayıftır. Sınıflandırma, dramın bütün özelliklerinin görüldüğü için değil, diğer iki türün ayırt edici özelliklerini taşımadığı için yapılır."
+        "Cimri → komedi": "Günlük yaşamdan bir aile ve para çatışmasını işler; Harpagon’un aşırı para düşkünlüğü, sözleri ve davranışları güldürürken düşündürür.",
+        "Ben, Mimar Sinan → dram": "Tarihî bir kişiyi ve olayları düzyazıyla ele alır; güldürme amacı taşımaz ve trajedinin manzum, acıklı sonla ders verme yapısına uymaz. İncelenen kesitte dramın gülünç yönü belirgin değildir."
       },
       "evidence_quotes": [
         "Hayatın acıklı ve gülünç yönlerini bir arada yansıtan tiyatro türüdür"
