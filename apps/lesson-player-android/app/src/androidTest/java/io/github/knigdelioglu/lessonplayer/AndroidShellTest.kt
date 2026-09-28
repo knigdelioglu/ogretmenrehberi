@@ -43,9 +43,13 @@ class AndroidShellTest {
             hasNodes(hasTestTag("library-lesson-open"))
         )
 
-        // Theme intro is the first catalog item; use Karagöz explicitly because this
-        // scenario needs a canonical answer with a metin-kanıt reveal.
-        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[1].performClick()
+        // Filter to the canonical Karagöz lesson instead of relying on lazy-list
+        // composition order; the Pixel 6 test viewport does not compose every card.
+        composeRule.onNodeWithTag("library-search-field").performTextInput("Karagöz")
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasText("Karagöz — Yazıcı", substring = true))
+        }
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
@@ -164,9 +168,13 @@ class AndroidShellTest {
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("library-screen-surface"))
         }
-        // Target the Karagöz lesson rather than depending on whichever catalog
-        // item happens to be first.
-        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[1].performClick()
+        // Filter to Karagöz so the test is independent of catalog ordering and
+        // which lazy-list cards happen to be composed.
+        composeRule.onNodeWithTag("library-search-field").performTextInput("Karagöz")
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasText("Karagöz — Yazıcı", substring = true))
+        }
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
