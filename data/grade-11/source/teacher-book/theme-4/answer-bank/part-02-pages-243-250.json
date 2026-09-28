@@ -60,10 +60,11 @@
       "printed_page": 249,
       "question_no": "Karşılaştıralım 1",
       "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 1",
-      "prompt_summary": "Gerçek hayat ile tiyatro atmosferini dört ölçütte karşılaştırma",
-      "answer": "Gerçek hayat yaşanırken tiyatro onu seçer, düzenler ve sahnede yeniden kurar. Bu nedenle iki atmosfer arasında benzerlikler bulunsa da tiyatrodaki olaylar ve kişiler sanatsal bir düzen içinde sunulur.",
+      "prompt_summary": "Gerçek hayat ile tiyatro atmosferini olay, durum, mekân, kişiler ve söz varlığı bakımından karşılaştırma",
+      "answer": "Gerçek hayat yaşanırken tiyatro onu seçer, düzenler ve sahnede yeniden kurar. Bu nedenle iki atmosfer arasında benzerlikler bulunsa da tiyatrodaki olaylar, durumlar, kişiler ve mekânlar sanatsal bir düzen içinde sunulur.",
       "answer_sections": {
-        "Olay/durum": "Gerçek hayattaki olaylar kesintisiz ve her zaman öngörülemez biçimde gelişir. Tiyatro, seçilmiş olayları çatışma ve sahne düzeni çevresinde yoğunlaştırır.",
+        "Olay": "Gerçek hayattaki olaylar kendiliğinden ve her zaman öngörülemez biçimde gelişebilir. Tiyatroda olaylar seçilir ve dramatik örgü içinde düzenlenir.",
+        "Durum": "Gerçek hayattaki durumlar doğal yaşam koşulları içinde ortaya çıkar. Tiyatroda durumlar belirli bir çatışmayı, düşünceyi veya duyguyu görünür kılacak biçimde sahnede yeniden kurulur.",
         "Mekân": "Gerçek mekân gündelik işlevleriyle vardır; sahne mekânı dekor ve ışıkla temsil edilir, değiştirilebilir ve anlam kazanır.",
         "Kişiler": "Gerçek kişiler kendi yaşamlarını sürdürür. Oyundaki kişiler oyuncularca canlandırılan karakterlerdir; davranışları oyunun yapısı içinde düzenlenmiştir.",
         "Söz varlığı": "Gerçek hayatta konuşma doğal ve dağınık akabilir. Tiyatroda sözler karaktere, döneme ve sahne etkisine göre seçilip düzenlenir."
@@ -76,7 +77,7 @@
       "question_no": "Karşılaştıralım 2",
       "source_locator": "basılı s.249 / PDF s.250 — Karşılaştıralım soru 2",
       "prompt_summary": "Sanat metinlerinin gerçek hayattan farklı oluşunun katkılarını çıkarma",
-      "answer": "Sanat metni gerçekliğin tamamını kopyalamak yerine belirli bir yönünü seçip yoğunlaştırdığı için okur ya da izleyici yaşantıya dışarıdan bakabilir. Bu mesafe, olayların nedenlerini ve sonuçlarını düşünmeyi, başka kişilerin deneyimlerini anlamayı ve gündelik hayatta fark edilmeyen değerleri görmeyi kolaylaştırır. Tiyatronun sahne düzeni ayrıca dağınık yaşantıları ortak bir odakta toplar."
+      "answer": "Sanat metinleri gerçek hayatı birebir kopyalamak yerine seçip düzenlediği için izleyici yaşananlara belirli bir mesafeden bakabilir. Bu özellik, tiyatronun gerçekleri tanıtmasına, olayların neden ve sonuçları üzerinde düşündürmesine, eleştirme ve yargılama gücünü geliştirmesine ve insanın çevresiyle ilişkilerini değerlendirmesine yardımcı olur."
     },
     {
       "question_id": "T4-P250-TABLE01",
