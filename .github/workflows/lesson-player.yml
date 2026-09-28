@@ -64,8 +64,8 @@ jobs:
 
           "$CHROME"             --headless=new             --no-sandbox             --disable-gpu             --window-size=1440,900             --dump-dom             http://127.0.0.1:4173/ > /tmp/lesson-player-dom.html
 
-          grep -q "Karagöz" /tmp/lesson-player-dom.html
-          grep -q "ÖĞRETMEN REHBERİ" /tmp/lesson-player-dom.html
+          grep -q "1. Tema — Giriş" /tmp/lesson-player-dom.html
+          grep -q 'id="pptx-export-trigger"' /tmp/lesson-player-dom.html
 
           "$CHROME" \
             --headless=new \
