@@ -73,7 +73,7 @@
         "Yöntem ve strateji": "Hedef kitle, süre ve amaçla uyumlu bir canlandırma yolu belirledik.",
         "İletişim engelleri": "Prova sırasında karşılaştığımız anlaşmazlık veya iletişim güçlüklerini gidermeye çalıştık."
       },
-      "guidance": "Her maddeyi canlandırma hazırlığı ve performansınızdan bir örnekle değerlendirin. Rol paylaşımını, katılımı ve geri bildirimi göz önünde bulundurun."
+      "guidance": "Kontrol listesindeki her maddeyi canlandırma hazırlığı ve uygulamadaki gerçek durumunuza göre Evet/Hayır olarak değerlendirin."
     },
     {
       "question_id": "T4-P282-PERF01",
@@ -85,10 +85,11 @@
       "answer": "Uygulanabilir hazırlık taslağı aşağıdadır.",
       "answer_sections": {
         "Bölüm ve amaç": "Seçilen sahnenin neyi göstereceğini ve izleyicinin neyi anlamasının beklendiğini yazın.",
-        "Rol ve ilişki": "Karakterlerin doğrudan ve dolaylı ilişkilerini, sahnedeki amaçlarını ve duygularını belirleyin.",
-        "Hareket ve söz": "Jest, mimik, beden yönü ve ses tonunu karakterin amacıyla eşleştirin. Doğaçlama söz eklenecekse dil ve dönem bağlamını koruyun.",
+        "Rol ve ilişki": "Karakterlerin doğrudan ve dolaylı ilişkilerini sınıflandırın; bu ilişkilerden hareketle sahnedeki amaçlarını ve duygularını belirleyin.",
+        "Hareket ve söz": "Beyin fırtınasında belirlenen jest, mimik, beden yönü ve ses kullanımını karakterin amacıyla eşleştirin. Doğaçlama söz eklenecekse dil ve dönem bağlamını koruyun.",
         "Görsel-işitsel düzen": "Mekân ve sahne geçişi için gerekli görsel, ışık ve sesleri seçin; her ögeyi anlamlı bir işleve bağlayın.",
-        "Geri bildirim ve son taslak": "Planı arkadaşlara sunun; anlaşılırlık, rol tutarlılığı, diksiyon ve sahne geçişi üzerine alınan önerilerle taslağı düzeltin."
+        "Geri bildirim ve son taslak": "Planı arkadaşlara sunun; anlaşılırlık, rol tutarlılığı, diksiyon ve sahne geçişi üzerine alınan önerilerle taslağı düzeltin.",
+        "Rolü içselleştirme": "Rolü içselleştirmek ve canlandırmada kullanılacak jest, mimik ve beden hareketlerini belirlemek için grup içinde beyin fırtınası yapın."
       }
     },
     {
@@ -142,13 +143,13 @@
       "question_no": "Sıra Sizde 2",
       "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 2",
       "prompt_summary": "Rol arkadaşlarından alınan görüşleri performans açısından değerlendirme",
-      "answer": "Rol arkadaşınızdan gerçekten aldığınız geri bildirimi yazın. Bu görüşe nasıl yanıt verdiğinizi ve sonraki provada neyi değiştireceğinizi açıklayın.",
-      "guidance": "Geri bildirim olarak gerçekten duyduğunuz sözleri ve bunlara verdiğiniz yanıtı yazın.",
+      "answer": "Rol arkadaşınızdan gerçekten aldığınız geri bildirimi yazın ve bu görüşü kendi performansınız açısından değerlendirin.",
+      "guidance": "Geri bildirim olarak gerçekten duyduğunuz sözleri yazın; bu görüşe katılıp katılmadığınızı ve nedenini açıklayın.",
       "answer_sections": {
         "Rol arkadaşımın söylediği güçlü yön": "[...]",
         "Rol arkadaşımın önerisi": "[...]",
         "Bu görüşe katılıyorum / katılmıyorum": "[...]",
-        "Sonraki provada uygulayacağım değişim": "[...]"
+        "Değerlendirmem": "[...]"
       }
     },
     {
