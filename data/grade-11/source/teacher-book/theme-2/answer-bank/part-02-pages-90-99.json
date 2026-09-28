@@ -107,34 +107,35 @@
       "printed_page": 96,
       "question_no": "4a",
       "prompt_summary": "Türk şivelerindeki altı çizili kelimelerde yapı ve anlam değişikliklerini belirleme",
-      "answer": "Metinlerde aynı veya benzer anlamların farklı yazılış, ses, ek ve kelime tercihleriyle karşılandığı görülmektedir.",
-      "guidance": "Karşılaştırmanızda yazılış, ek veya aynı anlamı veren farklı kelime örneklerini gösterin. Tarihî ses denklikleri ileri sürüyorsanız bunu güvenilir bir dilbilim kaynağıyla destekleyin.",
+      "answer": "Metinlerde altı çizili kelimelerin büyük bölümünde anlam korunurken ses, yazım, ek veya kelime tercihi bakımından farklılıklar görülmektedir.",
+      "guidance": "Karşılaştırmayı ders kitabında altı çizili verilen biçimlerle Türkiye Türkçesi karşılıkları arasında yapın. Yazılış, ses, ek veya aynı anlamı veren farklı kelime/yapı örneklerini gösterin; tarihî ses denklikleri ileri sürülecekse ayrıca güvenilir dilbilim kaynağı kullanın.",
       "source_locator": "basılı s.96-97 / PDF s.97-98 — soru 4a",
       "answer_sections": {
         "Kazak Türkçesi": [
-          "Dostıq ↔ dostluk: aynı anlam korunurken biçim ve ek farklılaşmıştır.",
-          "isi ↔ işi: yazılış ve ses karşılığı farklıdır.",
-          "aqı ↔ akıl: aynı anlam farklı ses/yazım biçimiyle karşılanmıştır.",
+          "Dostıq ↔ dostluk: anlam korunurken yazım ve ek biçimi farklılaşmıştır.",
+          "jüreq isi ↔ yürek işi: aynı anlam farklı ses/yazım karşılıklarıyla verilmiştir.",
+          "aql ↔ akıl: aynı anlam ses ve yazım farkıyla karşılanmıştır.",
           "künnin ↔ günün: kök ve ek biçimlerinde farklılık görülür."
         ],
         "Türkmen Türkçesi": [
-          "Men ↔ ben: baş seste farklılık görülür.",
-          "Giice ↔ gece; Saansız ↔ sayısız: ses ve yazılış farklılıkları vardır.",
+          "Men ↔ ben; Giice ↔ gece; gara ↔ kara: aynı anlamlarda ses ve yazım farklılıkları görülür.",
+          "Saansız ↔ sayısız; haraabaanı ↔ harabeyi: ses, yazım ve ek biçimlerinde farklılık vardır.",
           "bes etdi ↔ kesti; Binaaçılar ↔ bina ustaları: aynı anlam farklı kelime veya yapılarla karşılanmıştır.",
-          "sııldı ↔ sildi: ses ve yazılış farklılığı görülür."
+          "sııldı ↔ sildi: ses ve yazım farklılığı görülür."
         ],
         "Uygur Türkçesi": [
-          "Sadaliriñ ↔ sedaları: yazılış ile çoğul/iyelik biçiminde farklılık görülür.",
-          "Mukam ↔ makam: ünlü farklılığı vardır.",
+          "Sadaliriñ ↔ sedaları: yazım ile çoğul/iyelik biçiminde farklılık görülür.",
+          "kaldi ↔ kaldı; Mukam ↔ makam: ünlü ve yazım farklılıkları vardır.",
           "ölginimde ↔ öldüğümde: aynı zaman ilişkisi farklı ek ve biçimlerle kurulmuştur."
         ],
         "Azerbaycan Türkçesi": [
-          "ses salma ↔ ses yapma: farklı fiil tercihi vardır.",
-          "ayılar ↔ uyanır; oyatsın ↔ uyandırsın: aynı anlam farklı biçimlerle karşılanmıştır.",
-          "yatmışları ↔ yatanları: sıfat-fiil biçimi farklıdır."
+          "salma ↔ yapma: aynı işlev farklı fiil tercihiyle karşılanmıştır.",
+          "ayılar ↔ uyanır; oyatsın ↔ uyandırsın: aynı anlam farklı biçimlerle verilmiştir.",
+          "Yatmışları ↔ yatanları: sıfat-fiil biçimi farklıdır."
         ],
         "Kırgız Türkçesi": [
-          "ketpegen ↔ gitmeyen; Kölü ↔ gölü; Türlüü egin ↔ türlü ekin; bütkön ↔ biten: ses, yazılış ve ek biçimlerinde farklılıklar görülür."
+          "ketpegen ↔ gitmeyen; Kölü ↔ gölü: ses, yazım ve ek biçimlerinde farklılıklar görülür.",
+          "Türlüü egin ↔ türlü ekin; tan ↔ tam; bütkön ↔ biten: ses ve yazım farklılıkları vardır."
         ]
       }
     },
@@ -163,21 +164,23 @@
       "printed_page": 98,
       "question_no": "4c",
       "prompt_summary": "Türk dünyasından kısa metinlerin dili ile Türkiye Türkçesini karşılaştırma",
-      "answer": "Verilen metinlerle Türkiye Türkçesi arasında tanınabilir ortak kökler ve benzer anlatım yapıları bulunurken ses, yazım, ek biçimi ve kelime tercihlerinde farklılıklar görülür.",
+      "answer": "Verilen metinlerle Türkiye Türkçesi arasında ortak kökler, benzer söz dizimi ve şiirsel anlatım bakımından belirgin yakınlıklar vardır; ses, yazım, ek biçimi ve bazı kelime tercihlerinde ise farklılıklar görülür.",
       "source_locator": "basılı s.98 / PDF s.99 — soru 4c (T Diyagramı)",
       "answer_sections": {
-        "benzerlikler": [
-          "Birçok kelimede ortak veya kolayca tanınabilen kökler vardır.",
-          "Cümlelerde benzer anlam ilişkileri ve kelime dizilişleri görülebilir.",
+        "Benzerlikler": [
+          "Birçok kelime ortak veya kolayca tanınabilen köklere dayanır: dostıq/dostluk, kün/gün, köl/göl gibi.",
+          "Cümle ve dize kuruluşlarında benzer anlam ilişkileri ve söz dizimi görülebilir.",
+          "Verilen örneklerin tümü şiir dizeleri biçimindedir; kısa ve yoğun anlatım ile ritmik söyleyiş iki tarafta da görülür.",
           "İsim ve fiillere ek getirilerek yeni biçimler oluşturulması ortak bir yapısal özelliktir."
         ],
-        "farkliliklar": [
-          "Aynı veya benzer köklerde farklı ses ve yazım biçimleri görülebilir.",
-          "Aynı görevdeki eklerin biçimleri farklılaşabilir.",
-          "Aynı anlam farklı kelime, birleşik yapı veya deyimlerle karşılanabilir."
+        "Farklılıklar": [
+          "Aynı veya benzer köklerde ses ve yazım farklılıkları vardır: men/ben, gara/kara, mukam/makam gibi.",
+          "Aynı görevdeki eklerin biçimleri farklılaşabilir: ketpegen/gitmeyen, ölginimde/öldüğümde gibi.",
+          "Aynı anlam farklı kelime veya birleşik yapılarla karşılanabilir: bes etdi/kesti, Binaaçılar/bina ustaları gibi.",
+          "Şiirsel söyleyiş korunmakla birlikte kelime seçimi ve bazı ifade kalıpları Türkiye Türkçesi karşılığında değişebilir."
         ]
       },
-      "guidance": "“Türkiye Türkçesi bilen herkes bütün örnekleri sezgisel olarak anlar” veya bütün lehçeler için tek bir ses kuralı geçerlidir gibi genellemelerden kaçının."
+      "guidance": "Karşılaştırmada hem dil özelliklerini hem de anlatım biçimini gösterin; yalnızca ses değişikliklerini sıralamakla yetinmeyin. Örnekleri ders kitabındaki metinlerden seçin."
     },
     {
       "question_id": "T2-P98-Q01",
@@ -185,19 +188,15 @@
       "printed_page": 98,
       "question_no": "Hatırlayalım 1",
       "prompt_summary": "Anlatmaya bağlı edebî metinlerin ayırt edici özellikleri",
-      "answer": "Anlatmaya bağlı edebî metinler, kurmaca bir dünya içinde olayları kişiler, zaman, mekân ve bir anlatıcı aracılığıyla sunan; dil ve üslup özellikleriyle estetik bir yapı oluşturan metinlerdir.",
+      "answer": "Kavram haritasında zaten verilen “Kurmaca metinlerdir.” özelliğine ek olarak anlatmaya bağlı edebî metinlerin temel özellikleri şu başlıklarda tamamlanabilir:",
       "source_locator": "basılı s.98 / PDF s.99 — Hatırlayalım",
       "answer_sections": {
-        "ozellikler": [
-          "Kurmaca Yapı: Gerçeklik, yazarın seçme ve dönüştürmesiyle kurmaca bir dünya içinde yeniden düzenlenir.",
-          "Olay ve Olay Örgüsü: Olaylar belirli ilişkiler içinde düzenlenerek bir anlatı bütünlüğü oluşturur.",
-          "Kişiler: Olayları yaşayan veya olaylarla ilişkili kişiler bulunur; bazı kişiler tip veya karakter özelliği gösterebilir.",
-          "Zaman: Olayların gerçekleştiği ve anlatıldığı zaman düzeni bulunur.",
-          "Mekân: Olayların geçtiği fiziksel, toplumsal veya kurmaca çevre yer alır.",
-          "Anlatıcı ve Bakış Açısı: Olaylar bir anlatıcı aracılığıyla aktarılır; hâkim, kahraman ve gözlemci bakış açıları kullanılabilir.",
-          "Tema ve İleti: Metnin temel duygu, düşünce veya izleği ile açık ya da örtük iletileri bulunabilir.",
-          "Dil ve Üslup: Sözcük seçimi, cümle yapısı, betimleme, diyalog, imge ve diğer anlatım olanakları metnin üslubunu oluşturur."
-        ]
+        "Olay ve Olay Örgüsü": "Olaylar belirli bir düzen ve ilişki içinde anlatılır.",
+        "Kişiler": "Olayları yaşayan veya olaylarla ilişkili kişiler bulunur.",
+        "Zaman ve Mekân": "Olayların gerçekleştiği zaman ve geçtiği çevre belirtilir ya da sezdirilir.",
+        "Anlatıcı ve Bakış Açısı": "Olaylar bir anlatıcı aracılığıyla ve belirli bir bakış açısından aktarılır.",
+        "Tema ve İleti": "Metnin temel duygu/düşünce ekseni ile açık veya örtük iletileri bulunabilir.",
+        "Dil ve Üslup": "Sözcük seçimi, cümle yapısı, betimleme, diyalog ve diğer anlatım olanakları metnin üslubunu oluşturur."
       }
     },
     {
@@ -206,16 +205,16 @@
       "printed_page": 99,
       "question_no": "2",
       "prompt_summary": "Sayfadaki görsellerin çağrıştırdığı kültür kavramları",
-      "answer": "Kitabın 99. sayfasında yer alan altı görselin çağrıştırdığı ortak kültür kavramları:",
-      "guidance": "Görseldeki nesne ve eylemleri Türk kültürünün ortak yaşam veya sanat unsurlarıyla ilişkilendirirken gerekçenizi açıklayın.",
+      "answer": "Görsellerin çağrıştırdığı ortak kültür kavramları:",
+      "guidance": "Görsellerde seçilebilen nesne ve eylemlerden hareketle kavramları adlandırın; görüntünün tek başına göstermediği tarihî kimlik veya özel anlamları kesin bilgi gibi eklemeyin.",
       "source_locator": "basılı s.99 / PDF s.100 — soru 2",
       "answer_sections": {
-        "1": "Atlı yaşam: Görselde geleneksel giysili atlılar görülür; atlı yaşam ve bozkır kültürüyle ilişki kurulabilir. Görsel tek başına kişileri 'alp-eren' gibi belirli bir tarihî kimlikle tanımlamaya yetmez.",
-        "2": "Dokuma ve motif: Görselde desenli bir dokuma/halı görülür. Motifin adı, kullanılan boya veya belirli bir kültürel sembol olduğu yalnız görüntüden kesinleştirilemez.",
-        "3": "Nakış ve bitkisel bezeme: Görselde çiçeksi/bitkisel bezemeli bir tekstil yüzeyi görülür. Bu görsel mimari, çini, taş işçiliği ya da Selçuklu yıldızı örneği olarak tanımlanamaz.",
-        "4": "Konukseverlik ve Kahve Kültürü: İkram geleneği, dostluk, muhabbet, sofra adabı ve Türk kahvesi mirası.",
-        "5": "Yurt/çadır yaşamı: Görselde yurtlar/çadırlar görülür; konargöçer yaşamla ilişki kurulabilir. Aile veya kabile dayanışması görüntüden tek başına çıkarılamaz.",
-        "6": "Okçuluk: Yay ve hedef okçuluk çağrışımı yapar; Türk dünyasının geleneksel okçuluk kültürüyle ilişki kurulabilir. Görsel tek başına avcılık, askerî disiplin ya da belirli bir ahlaki niteliği kanıtlamaz."
+        "1": "Atlı yaşam ve bozkır kültürü",
+        "2": "Dokuma, halı ve geleneksel motifler",
+        "3": "Nakış ve bitkisel bezeme",
+        "4": "Konukseverlik, ikram ve kahve kültürü",
+        "5": "Yurt/çadır ve konargöçer yaşam",
+        "6": "Geleneksel okçuluk"
       }
     },
     {
@@ -224,16 +223,15 @@
       "printed_page": 99,
       "question_no": "3",
       "prompt_summary": "Türk dünyasının ortak kültürünü yansıtabilecek başka görsellere örnek verme",
-      "answer": "Sayfada zaten yer alan at/atlılar, halı, bitkisel motif, kahve takımı, yurt ve okçuluk görsellerinin dışında; Türk dünyasının ortak kültür ve tarih hafızasıyla ilişkilendirilebilecek şu unsurlar görsel olarak seçilebilir:",
-      "guidance": "Sayfadaki altı görseli tekrar etmeyin. Seçtiğiniz unsurun Türk dünyasının birden fazla bölgesinde nasıl yaşadığını gerekçelendirin. Kırgız kalpağı, Semerkant–Buhara medreseleri gibi belirli bir halk veya bölgeyle özdeşleşmiş unsurlar değerlidir; ancak bunları “ortak kültür” değil, Türk dünyasındaki kültürel çeşitliliğin örneği olarak sunun. Akraba çalgıları (kopuz, dombra, komuz, bağlama) aynı çalgı gibi göstermeyin.",
+      "answer": "Sayfadaki görsellerin dışında Türk dünyasının ortak kültür ve tarih hafızasını yansıtabilecek görsellere şu örnekler verilebilir:",
+      "guidance": "Sayfadaki altı görseli tekrar etmeyin. Seçtiğiniz unsurun Türk dünyasının birden fazla bölgesinde nasıl yaşadığını kısa bir gerekçeyle açıklayın; belirli bir halka veya bölgeye özgü unsurları bütün Türk dünyasının ortak unsuru gibi genellemeyin.",
       "source_locator": "basılı s.99 / PDF s.100 — soru 3",
       "answer_sections": {
-        "Nevruz kutlamaları": "Baharın gelişini kutlayan bayram; Türk dünyasının birçok bölgesinde kutlanır. Ateş üzerinden atlama, yumurta boyama, semeni/sümelek hazırlama gibi uygulamalar bölgeden bölgeye değişir.",
-        "Dede Korkut / Korkut Ata anlatıları": "Farklı Türk boylarının sözlü geleneğinde yaşayan bilge ozan figürü; sözlü edebiyat mirasını temsil eder.",
-        "Sözü sazla söyleyen halk şairi geleneği": "Ozan, âşık, akın, bahşı gibi farklı adlarla anılan ve sözü çalgıyla birlikte icra eden sanatçı tipi. Kopuz, dombra, komuz, dutar, bağlama akraba ama birbirinden farklı çalgılardır.",
-        "Karşılıklı doğaçlama söz geleneği": "Anadolu'daki âşık atışması ile Kazak ve Kırgızlardaki aytıs/aytış gibi karşılıklı söz yarışları; temanın s.136–147 bölümüyle bağlantı kurulabilir.",
-        "Orhun Yazıtları ve Göktürk harfleri": "Türk dilinin bilinen ilk yazılı örnekleri; ortak dil ve tarih hafızasının görseli olarak kullanılabilir (s.113–125).",
-        "Ortak halk kahramanları ve fıkra tipleri": "Köroğlu destanı ya da Nasreddin Hoca fıkraları gibi Türk dünyasının geniş bir bölgesinde farklı anlatılarla bilinen kahraman ve tipler."
+        "Nevruz": "Türk dünyasının birçok bölgesinde baharın gelişini simgeleyen kutlamalar.",
+        "Dede Korkut / Korkut Ata": "Ortak sözlü edebiyat ve anlatı geleneğini temsil eden bilge ozan figürü.",
+        "Ozan-âşık / akın-bahşı geleneği": "Sözün çalgı eşliğinde icra edildiği ortak halk şiiri ve sözlü kültür geleneği.",
+        "Orhun Yazıtları": "Türkçenin en eski ve en önemli yazılı belgeleri arasında yer alan, ortak dil ve tarih hafızasını yansıtan eserler.",
+        "Köroğlu ve Nasreddin Hoca": "Türk dünyasının farklı bölgelerinde farklı anlatımlarla yaşayan ortak kahraman ve tipler."
       }
     }
   ]
