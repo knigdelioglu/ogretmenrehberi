@@ -177,8 +177,8 @@
       "question_no": "4",
       "source_locator": "basılı s.289 / PDF s.290 — Metni Anlayalım soru 4",
       "prompt_summary": "İzleme öncesi tahmini izleme sonrası gözlemle karşılaştırma",
-      "answer": "Örnek kayıt düzeni: Önce başlık ve küçük görselden doğan tahmini yazın; sonra videoda gerçekten gözlenen kişi, davranış ve ortam ayrıntılarını kaydedin. Son bölümde tahminin hangi yönünün doğrulandığını, hangisinin değiştiğini kanıtla belirtin.",
-      "guidance": "Ön tahmininizi izleme öncesinde kaydedin. İzleme sonrasında gözlediğiniz kişi, davranış ve ortam ayrıntılarını yazıp hangi tahminlerinizin doğrulandığını veya değiştiğini kanıtlarla belirtin."
+      "answer": "Örnek kayıt düzeni: İzleme öncesinde kaydettiğiniz tahminleri yazın; ardından videoda gerçekten gözlediğiniz kişi, davranış, ortam ve olay ayrıntılarını kaydedin. Son bölümde tahminlerinizin hangi yönlerinin doğrulandığını, hangilerinin değiştiğini somut gözlemlerle belirtin.",
+      "guidance": "İzleme öncesinde oluşturduğunuz tahminlerin tamamını dikkate alın. İzleme sonrasında gerçek gözlemlerinizi yazıp hangi tahminlerin doğrulandığını veya değiştiğini kanıtlarla belirtin."
     },
     {
       "question_id": "T4-P289-Q05",
@@ -206,8 +206,8 @@
       "question_no": "7",
       "source_locator": "basılı s.290 / PDF s.291 — Metni Anlayalım soru 7 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Öznel ve nesnel unsurların belgeselin inandırıcılık ve güvenilirliğine etkisini değerlendirme",
-      "answer": "Balık kılçığı diyagramına yazdığınız nesnel ifadelerin (doğrulanabilir bilgi, yer, zaman, sayı vb.) belgeselin güvenilirliğini; öznel ifadelerin (duygu, değerlendirme, beğeni) ise bakış açısını ve duygusal etkiyi nasıl biçimlendirdiğini değerlendirin. Görüşünüzü diyagramdan seçtiğiniz en az bir nesnel ve bir öznel örnekle destekleyin.",
-      "guidance": "Video izlenmeden hangi ifadelerin nesnel ya da öznel olduğu kesinleştirilemez. İsteyen öğrenci, belgeselde farklı bakış açılarına yer verilip verilmediğini ek bir ölçüt olarak tartışabilir; bu, sorunun zorunlu parçası değildir."
+      "answer": "Balık kılçığı diyagramına yazdığınız ifadeleri değerlendirirken nesnelliği güvenilirlikle otomatik olarak eşitlemeyin. Doğrulanabilir ve kaynakla desteklenen nesnel bilgiler belgeselin güvenilirliğini güçlendirebilir; öznel ifadeler ise kişisel bakış açısını ve duygusal etkiyi görünür kılar. Bir ifadenin öznel olması onu kendiliğinden değersiz veya güvenilmez yapmaz. Görüşünüzü diyagramdan seçtiğiniz en az bir nesnel ve bir öznel örnekle destekleyin.",
+      "guidance": "Video izlenmeden hangi ifadelerin nesnel ya da öznel olduğu kesinleştirilemez. Güvenilirliği değerlendirirken ifadenin doğrulanabilirliğini, kaynağını ve kanıtla desteklenip desteklenmediğini ayrıca göz önünde bulundurun."
     },
     {
       "question_id": "T4-P290-Q08",
@@ -243,7 +243,7 @@
       "question_no": "11",
       "source_locator": "basılı s.291 / PDF s.292 — Metni Anlayalım soru 11 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselini çalışkanlığın öğrenme ve kavramadaki rolünü gösterecek biçimde özetleme",
-      "answer": "Videoda başlıca kişinin amacını, karşılaştığı güçlüğü, gösterdiği çalışma davranışını ve sonucu not edin. Bu davranışın öğrenme veya kavrayışla bağlantısını kurarak kısa bir özet yazın."
+      "answer": "Videoda çalışkanlığın öğrenme veya kavramayla ilişkisini gösteren söz, davranış ve olayları seçin. Belgeselin temel olay akışını ve önemli ayrıntılarını koruyarak, bu unsurların çalışkanlığın öğrenme ve kavrama sürecindeki önemini nasıl gösterdiğini öne çıkaran kısa bir özet yazın."
     },
     {
       "question_id": "T4-P292-Q01",
@@ -252,13 +252,18 @@
       "question_no": "Fark Edelim",
       "source_locator": "basılı s.292 / PDF s.293 — Fark Edelim",
       "prompt_summary": "İklim değişikliğinin zararlarını azaltmak için bireysel sorumlulukları açıklama",
-      "answer": "Metne göre insan faaliyetlerinden doğan kirletici salınımlar (emisyon) atmosferin alt tabakasındaki dengeyi bozduğunda kuraklık, taşkın ve su kalitesinde değişme gibi zararlar ortaya çıkabilir. Buna göre bireylere düşen temel görevler, günlük yaşamda salınımı artıran tüketimi azaltmak ve su kaynaklarını korumaktır: enerjiyi gereksiz kullanmamak, kısa mesafelerde yürümek veya toplu taşımayı tercih etmek, suyu tasarruflu kullanmak ve israfı azaltmak bu görevlere örnektir. Bireysel adımlar tek başına yeterli değildir; toplumsal ve kurumsal önlemlerle birlikte etkili olur.",
-      "explanation": "Metin bireysel görevleri tek tek sıralamaz; emisyonun atmosfer dengesine ve su kaynaklarına etkisini açıklar. Cevaptaki davranışlar bu bilgiden hareketle verilen genel örneklerdir; öğrencilerin gerekçeli farklı önerileri de kabul edilebilir.",
+      "answer": "Metin ve görseller, insan faaliyetlerinden kaynaklanan kirletici salınımların atmosfer dengesini bozabileceğini; bunun kuraklık, taşkın ve su kalitesinde değişme gibi sonuçlara yol açabileceğini gösterir. Buradan bireylerin emisyonları azaltmaya ve su kaynaklarını korumaya yönelik davranışlar geliştirmesi gerektiği sonucu çıkarılabilir. Günlük yaşamda enerji tasarrufu yapmak, kısa mesafelerde yürümek veya toplu taşımayı tercih etmek, suyu dikkatli kullanmak ve israfı azaltmak bu genel ilkelere örnek verilebilir.",
+      "explanation": "Kaynağın doğrudan desteklediği çıkarım, emisyonları azaltmaya ve su kaynaklarını korumaya yönelik sorumluluklardır. Enerji tasarrufu, toplu taşıma ve su tasarrufu gibi davranışlar kaynakta tek tek sıralanmaz; bunlar bu çıkarımdan hareketle verilen genel günlük yaşam örnekleridir.",
       "evidence_quotes": [
         "kirletici salınımları (emisyon)",
         "kuraklık",
         "taşkın"
-      ]
+      ],
+      "answer_sections": {
+        "Kaynağın desteklediği çıkarım": "İnsan kaynaklı kirletici salınımları azaltmak ve su kaynaklarını korumak.",
+        "Kaynakta belirtilen sonuçlar": "Kuraklık, taşkın ve su kalitesinde değişme.",
+        "Günlük yaşamdan genel örnekler": "Enerji tasarrufu yapmak, kısa mesafelerde yürümek veya toplu taşıma kullanmak, suyu dikkatli kullanmak ve israfı azaltmak."
+      }
     },
     {
       "question_id": "T4-P293-Q01",
