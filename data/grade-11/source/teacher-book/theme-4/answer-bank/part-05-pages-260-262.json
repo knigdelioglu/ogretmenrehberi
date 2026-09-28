@@ -33,7 +33,7 @@
         "Estetik anlayışı": "Ayasofya’yı yalnız boyutla aşmayı değil, daha güzel bir mimari eser yaratmayı hedefler.",
         "Saygı ve hoşgörü": "Artemios ve İsodoros’u küçümsemez; onları meslektaşı ve aynı toprağın insanları olarak anar.",
         "Millî aidiyet ve ortak miras": "Sinan, kendi başarısını yaşadığı toplumun üretim ve kültür birikimiyle birlikte açıklar.",
-        "İnanç ve tevazu": "Selimiye’nin açılışında zafer iddiasıyla övünmek yerine secdeye kapanmayı anlatır."
+        "İnanç ve tevazu": "II. Selim, Selimiye’nin açılışında Justinyanos gibi bir zafer sözü söylemek yerine secdeye kapanır; bu davranış inanç ve tevazuyla ilişkilendirilebilir."
       }
     },
     {
@@ -44,7 +44,7 @@
       "source_locator": "basılı s.260 / PDF s.261 — Sıra Sizde soru 3",
       "prompt_summary": "Seçilen değerlerin günlük hayattaki önemini somut davranışlarla açıklama",
       "answer": "Örnek cevap: Sorumluluk, verilen işi zamanında ve özenle tamamlayarak; saygı, başkasının emeğini küçümsemeden dinleyerek; çalışkanlık ise zorlanan bir konuda düzenli biçimde çalışıp yardım isteyerek günlük hayatta gösterilebilir. Bu değerler grup çalışmalarında güven oluşturur ve ortak işin niteliğini yükseltir.",
-      "guidance": "Kendi çevrenizden gerçek veya olası bir durum seçin. Değerin bu durumda hangi davranışla ortaya çıkacağını açıklayın; yaşamadığınız bir olayı gerçek deneyim gibi anlatmayın."
+      "guidance": "Bir değerin günlük hayatta hangi davranışlarla görünür hâle gelebileceğini somut bir örnekle açıklayın."
     },
     {
       "question_id": "T4-P260-Q04",
@@ -117,10 +117,10 @@
       "answer": "Metindeki günlük insan ilişkilerinden hareketle etkileyicilik ölçütleri geliştirin. Sizi etkileyen unsuru kendi ölçütlerinize göre seçin ve metinden kanıtla açıklayın.",
       "answer_sections": {
         "Günlük insan ilişkileri için olası kanıtlar": [
-          "Görev verme ve güvenme: “Güzel bir cami, mimarbaşı!” sözü, hükümdarın Sinan’a bir eser sorumluluğu vermesiyle birlikte ele alınabilir.",
-          "Sözüne bağlılık ve sorumluluk: “İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.”",
-          "Çalışkanlık ve azim: “bilgim, azmim ve çalışkanlığımla talihimi yenmiştim”.",
-          "Ortak emeği tanıma: “tek başıma yenmedim” sözü, başarıyı yalnız bireysel kahramanlıkla açıklamama yönünde tartışılabilir."
+          "Lütfü Paşa → Sinan: Sinan’ın yetkinliğini fark edip onu mimarbaşılığa önermesi, güven ve liyakat ilişkisini gösterir.",
+          "Kanuni → Sinan: “Sana güveniyorum Koca Sinan!” sözü, yönetici ile uzman arasındaki güven ilişkisini gösterir.",
+          "Sinan → Ayasofya mimarları: Onların emeğine ve ustalığına saygı duyması, meslektaşlık ve saygı ilişkisini gösterir.",
+          "II. Selim → Sinan: Kendisinden adına kalıcı bir eser yapmasını istemesi, hükümdar ile mimar arasındaki görev ve güven ilişkisini gösterir."
         ],
         "Benim ölçütüm": "[...]",
         "Metinden örneğim": "[...]",
@@ -129,10 +129,10 @@
       },
       "guidance": "Kitaptaki örnek ölçütü inceleyin; başka ölçütler de belirleyebilirsiniz. Beğeni kararınızı kendi ölçütünüz ve oyundan bir kanıtla gerekçelendirin.",
       "evidence_quotes": [
-        "Güzel bir cami, mimarbaşı!",
-        "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
-        "bilgim, azmim ve çalışkanlığımla talihimi yenmiştim",
-        "tek başıma yenmedim"
+        "Sana güveniyorum Koca Sinan!",
+        "Mimarbaşılık, çok önemli bir görev! Bu göreve Sinan getirilmeli. Bu işi ancak o yürütebilir.",
+        "Mimarlarına da saygı duyuyordum.",
+        "Benim adıma öyle bir bina yap ki bir eşi daha bulunmaya!"
       ]
     },
     {
@@ -142,7 +142,7 @@
       "question_no": "Ben Kimim?",
       "source_locator": "basılı s.262 / PDF s.263 — Birlikte Çalışalım / Ben Kimim?",
       "prompt_summary": "Ben Kimim? oyunu için seçilen karakteri açıklamadan tanıtma",
-      "answer": "Örnek tanıtım: “Çocukluğumdan başlayarak yeni şeyler öğrendim. Gördüğüm yapıları dikkatle inceledim. Bana verilen zor görevlerde hemen işe koyuldum; yıllar sonra önemli eserler tasarladım.” Tahminler alındıktan sonra karakterin Mimar Sinan olduğu açıklanabilir."
+      "answer": "Örnek tanıtım: “Acemi Ocağı’nda eğitim gördüm. Gördüğüm yapıları dikkatle inceledim. Bana verilen zor görevlerde hemen işe koyuldum; yıllar sonra önemli eserler tasarladım.” Tahminler alındıktan sonra karakterin Mimar Sinan olduğu açıklanabilir."
     },
     {
       "question_id": "T4-P262-PERFQ01",
@@ -180,7 +180,7 @@
       "prompt_summary": "Seçilen tiyatro kişisinin günlük yaşamda karşılaşabileceği duruma uygun kısa senaryo yazma",
       "answer": "Metinde gördüğünüz bir özelliği seçin. Bu özelliği günlük hayatta karşılaşılabilecek yeni bir duruma taşıyan kısa bir senaryo kurun; senaryonuzun karakterin metindeki tutumuyla nasıl örtüştüğünü açıklayın.",
       "guidance": "Senaryonuz kurmaca olabilir. Olay akışını neden–sonuç ilişkisiyle kurun ve karakterin yeni davranışını metinde görülen niteliğe uygun biçimde gösterin.",
-      "explanation": "Bu, tarihî Sinan’ın yaşadığı bir olay değildir; onun oyunda görülen gözlem, sabır ve sorumluluk özelliklerini güncel bir duruma taşıyan hayalî bir senaryodur.",
+      "explanation": "Bu senaryo tarihî bir olay değildir; seçilen kişinin oyunda görülen bir özelliğini günlük hayata taşıyan kurmaca bir durumdur.",
       "answer_sections": {
         "Seçtiğim kişi": "[...]",
         "Metinde görülen özellik": "[...]",
