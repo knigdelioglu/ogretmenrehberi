@@ -38,16 +38,16 @@ assert(
 );
 
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 183,
-  "1. Tema toplam 183 ders adımı içermeli."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 184,
+  "1. Tema toplam 184 ders adımı içermeli."
 );
 assert(
   theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
   "1. Tema 129 source-index kaydının tamamını kapsamalı."
 );
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 155,
-  "1. Tema 155 answer-bank kaydının tamamını kapsamalı."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 157,
+  "1. Tema 157 answer-bank kaydının tamamını kapsamalı."
 );
 
 
@@ -394,14 +394,14 @@ assert(
   dinleme.lesson_slug === "dinleme-izleme",
   "Dinleme/İzleme lesson_slug doğru olmalı."
 );
-assert(dinleme.coverage.steps === 38, "Dinleme/İzleme dersi 38 adım olmalı.");
+assert(dinleme.coverage.steps === 39, "Dinleme/İzleme dersi 39 adım olmalı.");
 assert(
   dinleme.coverage.source_records === 38,
   "Dinleme/İzleme dersi 38 source-index kaydını kapsamalı."
 );
 assert(
-  dinleme.coverage.answer_entries === 36,
-  "Dinleme/İzleme dersi 36 answer-bank kaydını kapsamalı."
+  dinleme.coverage.answer_entries === 38,
+  "Dinleme/İzleme dersi 38 answer-bank kaydını kapsamalı."
 );
 
 const dinlemeById = new Map(dinleme.steps.map((step) => [step.id, step]));
