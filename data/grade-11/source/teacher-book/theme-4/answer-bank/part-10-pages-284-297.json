@@ -400,7 +400,13 @@
       "question_no": "10",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 10 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Belgeselde anlatılan dönemin sosyal, ekonomik ve kültürel özelliklerini çıkarma",
-      "answer": "Kişi, mekân, nesne ve uygulamalara ilişkin gözlemlerinize dayanarak dönemin sosyal veya ekonomik özellikleri hakkında sınırlı çıkarımlar yapın. Her çıkarımı videodan bir kanıtla destekleyin; tek sahneyi bütün bir döneme ya da Anadolu toplumuna genellemeyin."
+      "answer": "Belgeseldeki kişi, mekân, nesne, uygulama ve yaşam biçimlerine ilişkin gözlemlerinize dayanarak dönemin sosyal, ekonomik ve kültürel özellikleri hakkında sınırlı çıkarımlar yapın. Her çıkarımı videodan somut bir kanıtla destekleyin; tek bir sahneyi bütün bir döneme veya Anadolu toplumuna genellemeyin.",
+      "answer_sections": {
+        "Sosyal özellikler": "[Videodan kanıtla belirlenir.]",
+        "Ekonomik özellikler": "[Videodan kanıtla belirlenir.]",
+        "Kültürel özellikler": "[Videodan kanıtla belirlenir.]",
+        "Diğer dönem özellikleri": "[Varsa videodan kanıtla belirlenir.]"
+      }
     },
     {
       "question_id": "T4-P295-Q11",
@@ -418,7 +424,8 @@
       "question_no": "12",
       "source_locator": "basılı s.295-296 / PDF s.296-297 — Çözümleyebilme soru 12 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Ses ve görüntü desteğinin Fedakârlık belgeselinin anlamına katkısını karşılaştırma",
-      "answer": "Belgeseli önce normal biçimde, sonra yönergede belirtilen ses veya görüntü desteğini kaldırarak karşılaştırın. Hangi bilginin ya da duygunun değiştiğini not edin; görüntü ile sesin birlikte kurduğu anlamı ve sesin görüntüye kattıklarını örneklerle açıklayın."
+      "answer": "Belgeseli önce normal biçimde, ardından yönergede belirtildiği gibi ses ve/veya görüntü desteğini kaldırarak karşılaştırın. Hangi bilgi, duygu veya anlamın azaldığını ya da değiştiğini somut örneklerle belirleyin. Değerlendirmenizi Mustafa Sözen’in metnindeki görüşlerle ilişkilendirin: ses, görüntünün gösterdiğinin ötesinde daha geniş ve derin anlamlar üretebilir; ses ile görüntünün birleşmesi yeni anlam dinamikleri oluşturabilir; ses ve müzik belgeselin anlamını ve etkisini yapılandırabilir. Sonuçta ses ve görüntünün içerikle ne ölçüde uyumlu olduğunu ve çok modlu metne katkısını açıklayın.",
+      "guidance": "Karşılaştırmayı hem kendi izleme gözlemlerinize hem de sayfada verilen Kültürel Coğrafya Perspektifinden Belgesel Filmlerde Ses Kuşağı Tasarımı metnindeki görüşlere dayandırın. Video izlenmeden somut etki sonucu uydurmayın."
     },
     {
       "question_id": "T4-P296-Q13",
@@ -427,7 +434,13 @@
       "question_no": "13",
       "source_locator": "basılı s.296 / PDF s.297 — Çözümleyebilme soru 13 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinde millî, manevi ve evrensel değerleri ve aktarım yollarını belirleme",
-      "answer": "Belgeselde gördüğünüz değerleri belirleyin; her birini gösteren davranış, söz, nesne veya görüntüyü not edin. Değerin millî, manevi ya da evrensel yönünü gerekçelendirin."
+      "answer": "Belgeselde gördüğünüz değerleri millî, manevi ve evrensel başlıkları altında ayrı ayrı belirleyin. Her değeri gösteren davranış, söz, nesne veya görüntüyü not edin ve değerin hangi yolla aktarıldığını açıklayın.",
+      "answer_sections": {
+        "Millî değerler": "[Videodan kanıtla belirlenir.]",
+        "Manevi değerler": "[Videodan kanıtla belirlenir.]",
+        "Evrensel değerler": "[Videodan kanıtla belirlenir.]",
+        "Aktarım yolları": "Davranış, söz, nesne, görüntü veya diğer video unsurlarıyla ilişkilendirilir."
+      }
     },
     {
       "question_id": "T4-P296-Q14",
@@ -445,8 +458,8 @@
       "question_no": "1",
       "source_locator": "basılı s.297 / PDF s.298 — Süreci Değerlendirebilme soru 1",
       "prompt_summary": "Belgeselin değer katan unsurlarını kişisel beğeni ve günlük yaşantı açısından değerlendirme",
-      "answer": "Beğendiğiniz bir unsuru seçin, belgeselde nerede gördüğünüzü belirtin ve bunun günlük yaşam deneyiminizle ilişkisini açıklayın. Görüntü, ses, anlatım veya konuya ilişkin yargınızı videoyu izledikten sonra kendi beğeninize göre yazın.",
-      "guidance": "Kendi beğeninizi belirtin ve yaşam deneyiminizden gerçek bir örnekle gerekçelendirin."
+      "answer": "Beğendiğiniz bir veya daha fazla unsuru seçin, belgeselde nerede gördüğünüzü belirtin ve bunların metne ne kattığını günlük yaşamınızın gerçekleriyle ilişkilendirerek değerlendirin. Görüntü, ses, anlatım, konu veya başka bir unsur hakkındaki yargınızı videoyu izledikten sonra kendi beğeninize göre gerekçelendirin.",
+      "guidance": "Bir veya daha fazla unsur seçebilirsiniz. Beğeninizi videodaki gerçek bir ayrıntı ve günlük yaşam deneyiminizle gerekçelendirin."
     },
     {
       "question_id": "T4-P297-PERF02",
