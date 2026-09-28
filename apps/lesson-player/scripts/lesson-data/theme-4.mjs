@@ -632,9 +632,11 @@ assert(mimarReadingById.get("s248-prediction")?.answer?.answer_sections?.["Okuma
 assert(!mimarAnalysisById.get("s252-q2bc")?.answer?.answer?.includes("Beni en çok") &&
   mimarAnalysisById.get("s252-q2bc")?.answer?.guidance?.includes("metindeki söz veya davranışla"),
   "s.252 kişisel özellik ve başarı tercihi öğrenci adına yazılmamalı.");
-assert(!mimarStructureById.get("s257-q1")?.answer?.answer_sections?.["Monolog örneği"]?.includes("Güzellik, büyüklükten daha güçlüdür") &&
-  mimarStructureById.get("s257-q1")?.answer?.guidance?.includes("karşılıklı konuşmanın devamındadır"),
-  "s.257 karşılıklı konuşma cümlesi monolog diye sınıflandırılmamalı.");
+assert(
+  !mimarStructureById.get("s257-q1")?.answer?.answer_sections?.["Monolog örneği"]?.includes("Güzellik, büyüklükten daha güçlüdür") &&
+    mimarStructureById.get("s257-q1")?.answer?.guidance?.includes("karşılıklı konuşmanın devamında"),
+  "s.257 karşılıklı konuşma cümlesi monolog diye sınıflandırılmamalı."
+);
 
 assert(mimarValuesById.get("s262-assessment")?.answer?.answer_sections?.["Beğendim / beğenmedim"] === "[...]" &&
   mimarValuesById.get("s262-q1")?.answer?.answer_sections?.["Canlandırmak istediğim karakter"] === "[...]",
