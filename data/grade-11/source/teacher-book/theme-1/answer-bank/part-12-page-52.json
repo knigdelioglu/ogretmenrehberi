@@ -10,38 +10,34 @@
       "printed_page": 52,
       "question_no": "Dilekçe",
       "prompt_summary": "Okul müdürlüğüne uygun bir konuda dilekçe yazma",
-      "answer": "Dilekçe, kitabın s.51'de verdiği kurallara göre yazılır: makam adı büyük harflerle ve il/ilçe belirtilerek yazılır; konu açık, yalın ve resmî bir dille anlatılır; üst makama “arz ederim”, alt makama “rica ederim” ile bitirilir. Sağ altta tarih, imza ve ad-soyad; sol altta adres, T.C. kimlik numarası ve diğer iletişim bilgileri yer alır. Aşağıda okul müdürlüğüne yazılabilecek iki model dilekçe verilmiştir.",
+      "answer": "Okul müdürlüğüne yazılacak dilekçede kitabın s.51'de verdiği biçim kuralları esas alınır. Makam adı açıkça yazılır; istek kısa, anlaşılır ve resmî bir dille gerekçelendirilir; öğrenci okul müdürlüğü gibi üst makama başvurduğu için metin “gereğini arz ederim” ifadesiyle tamamlanır. Ardından tarih, imza, ad-soyad ve kitapta istenen iletişim alanları yer alır. Aşağıdaki şablon ve kısa örnek, öğrencinin kendi dilekçesini oluşturması için rehberdir.",
       "answer_sections": {
-        "Ders_Kitabındaki_Biçim_ve_Yazım_Kuralları": [
+        "Ders_Kitabındaki_Genel_Kurallar": [
           "Düz, beyaz ve çizgisiz kâğıda; el yazısı, daktilo veya bilgisayarla yazılabilir.",
           "Açık, yalın ve resmî bir anlatım kullanılır; konu kısa ve anlaşılır biçimde ifade edilir.",
           "Makam adı il veya ilçe belirtilerek büyük harflerle yazılır.",
-          "Üst makama yazılan dilekçe 'arz ederim', alt makama yazılan dilekçe 'rica ederim' ifadesiyle tamamlanır.",
+          "Kitabın genel kuralına göre üst makama yazılan dilekçe “arz ederim”, alt makama yazılan dilekçe “rica ederim” ifadesiyle tamamlanır.",
           "Sağ altta tarih, imza ve ad-soyad; sol altta adres, T.C. kimlik numarası ve diğer iletişim bilgileri yer alır.",
           "Varsa ek belgeler adres/iletişim bilgilerinin altında belirtilir."
         ],
-        "Bu_Okul_Görevi_İçin_Önerilen_Ek_Bilgiler": [
-          "Sınıf, şube ve okul numarası gibi okul içi bilgilerin eklenmesi işlemi kolaylaştırabilir; bunlar kanuni asgari şartlarla karıştırılmamalıdır.",
-          "Telefon veya e-posta gibi iletişim bilgilerinin eklenmesi okulun başvuru sahibine daha kolay ulaşmasını sağlayabilir.",
-          "Örnek metinde gerçek kişisel bilgiler yerine yer tutucular kullanın."
-        ],
-        "Model_Dilekçe_1_Kütüphane_Çalışma_Saatlerinin_Uzatılması": [
+        "Bu_Görevde_Dikkat_Edilecek_Nokta": "Öğrenci okul müdürlüğüne başvurduğu için kapanışta “rica ederim” değil, “gereğini arz ederim” kullanılır.",
+        "Dilekçe_Şablonu": [
           "Makam: [OKUL ADI] MÜDÜRLÜĞÜNE / [İL-İLÇE]",
-          "Gövde Metni: Okulunuz [sınıf/şube] sınıfı [okul numarası] numaralı öğrencisiyim. Ders çıkışından sonra araştırma ve okuma çalışmalarımı okul ortamında sürdürebilmek amacıyla okul kütüphanesinin uygun görülen günlerde ders bitiminden sonra bir süre daha açık tutulmasını talep ediyorum.",
-          "Talep Cümlesi: Kütüphanenin uygun görülen saatlerde hizmete açık tutulması hususunda gereğini arz ederim.",
+          "Giriş: Başvuru sahibini ve başvuru konusunu gerekli olduğu ölçüde belirtin.",
+          "Gerekçe: Talebin nedenini kısa, somut ve resmî bir dille açıklayın.",
+          "Talep: Ne istediğinizi açıkça yazın ve “... hususunda gereğini arz ederim.” biçiminde tamamlayın.",
           "Tarih / İmza / Ad-Soyad: [GG/AA/YYYY] | [İmza] | [Ad Soyad]",
-          "İletişim / Öğrenci Bilgisi: [Adres] | [Telefon/E-posta] | [Sınıf/Şube] | [Okul No]"
+          "Kitapta istenen iletişim alanları: [Adres] | [T.C. Kimlik No] | [Diğer iletişim bilgileri] | [Varsa ekler]"
         ],
-        "Model_Dilekçe_2_Okul_Münazara_Topluluğu_ve_Salon_Tahsisi": [
+        "Kısa_Örnek_Kütüphane_Çalışma_Saatleri": [
           "Makam: [OKUL ADI] MÜDÜRLÜĞÜNE / [İL-İLÇE]",
-          "Gövde Metni: Okulunuz [sınıf/şube] sınıfı [okul numarası] numaralı öğrencisiyim. Öğrencilerin eleştirel düşünme, hitabet ve argümantasyon becerilerini geliştirmek amacıyla öğretmen rehberliğinde bir münazara topluluğu oluşturulması ve uygun günlerde okulun belirleyeceği bir salonun kullanımına izin verilmesi talebinde bulunuyorum.",
-          "Talep Cümlesi: Topluluğun oluşturulması ve uygun bir salonun tahsis edilmesi hususunda gereğini arz ederim.",
-          "Tarih / İmza / Ad-Soyad: [GG/AA/YYYY] | [İmza] | [Ad Soyad]",
-          "İletişim / Ekler: [Adres] | [Telefon/E-posta] | [Sınıf/Şube] | [Okul No] | [Varsa ekler]"
-        ]
+          "Metin: Okul kütüphanesinden ders çıkışından sonra araştırma ve okuma amacıyla yararlanabilmek için kütüphanenin uygun görülen günlerde bir süre daha açık tutulmasını talep ediyorum. Kütüphanenin uygun görülen saatlerde hizmete açık tutulması hususunda gereğini arz ederim.",
+          "Alt bölüm: [Tarih] | [İmza] | [Ad Soyad] | [Kitapta istenen iletişim alanları]"
+        ],
+        "Kişisel_Bilgi_Güvenliği": "Ders içi örneklerde gerçek adres, telefon, T.C. kimlik numarası veya başka kişisel bilgiler yazmayın; yer tutucular kullanın."
       },
-      "guidance": "Öğrencilerden önce kitaptaki dilekçe kurallarını kontrol listesine dönüştürmelerini, sonra okul müdürlüğüne uygun gerçek bir konu seçmelerini isteyin. Örnek dilekçelerde gerçek adres, telefon veya kimlik bilgisi kullanmayın; yer tutucular kullanın.",
-      "explanation": "Kanuni zorunluluklar ile ders kitabındaki öğretim amaçlı biçim kuralları aynı şey değildir. 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun'a göre dilekçede dilekçe sahibinin adı, soyadı ve imzası ile iş veya ikametgâh adresinin bulunması gerekir; başvuru sahibine kanunda öngörülen süre içinde bilgi verilir. Ders kitabının verdiği makam yerleşimi, T.C. kimlik numarası, sınıf/okul numarası gibi ayrıntılar dilekçeyi düzenli ve işlenebilir kılar; ancak bunların tamamı kanunun asgari geçerlilik şartı değildir. Bu ayrım öğrenci sunumunda değil, gerektiğinde öğretmen açıklaması olarak kullanılmalıdır. Rubrik ise kitapta verilen zorunlu bir puanlama anahtarı değil, öğretmenin kullanabileceği öneri niteliğindedir.",
+      "guidance": "Önce öğrencilerle kitabın s.51'deki dilekçe kurallarını kısa bir kontrol listesine dönüştürün. Ardından her öğrencinin okul müdürlüğüne uygun kendi konusunu seçmesini ve şablondan yararlanarak özgün bir dilekçe yazmasını isteyin. Hazır modeli aynen kopyalatmayın. Bu görevde muhatap okul müdürlüğü olduğu için kapanışın “gereğini arz ederim” olması gerektiğini özellikle belirtin. Ders içi örneklerde gerçek kişisel veri kullanmayın.",
+      "explanation": "Kanuni zorunluluklar ile ders kitabındaki öğretim amaçlı biçim kuralları aynı şey değildir. 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun bakımından temel geçerlilik unsurları ile ders kitabının yerleşim ve kimlik/iletişim alanları ayrı değerlendirilmelidir. Bu ayrım gerektiğinde öğretmen açıklaması olarak kullanılmalıdır. Buradaki şablon ve rubrik de kitapta verilmiş zorunlu tek model değil, öğrencinin kendi metnini oluşturmasını destekleyen öğretmen desteğidir.",
       "evidence_quotes": [
         "Dilekçe, vatandaşların kendileri ya da kamu ile ilgili bir dilek veya şikâyetini resmî makamlara bildirmek için sunduğu imzalı ve adresli yazıdır. (basılı s.51)",
         "Dilekçede tarih, dilekçeyi yazanın adı, soyadı, imzası ve adresi bulunmak zorundadır. Yazılan dilekçeye en geç otuz gün içinde ilgili kurum tarafından cevap verilmelidir. (basılı s.51)",
