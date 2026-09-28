@@ -411,8 +411,10 @@ const d64Listen = dinlemeById.get("s64-listen");
 const d64Observation = dinlemeById.get("s64-observation");
 assert(d64Listen && d64Observation, "s64 süreç/gözlem adımları eksik.");
 assert(
-  d64Listen.answer === null && d64Observation.answer === null,
-  "s64 not alma ve Gözlem Formu answer-bank cevabına bağlı olmamalı."
+  d64Listen.answer?.question_id === "T1-P64-PERF03" &&
+    d64Listen.answer?.entry_type === "performance_support" &&
+    d64Observation.answer === null,
+  "s64 not alma performans desteğine bağlı, Gözlem Formu ise cevapsız öz değerlendirme olmalı."
 );
 assert(
   dinlemeOrderedIds.indexOf("s64-strategy") <
