@@ -39,9 +39,13 @@ assert(
 assert(theme4IntroById.get("s241-core-roles")?.content?.sections?.length === 4 &&
   theme4IntroById.get("s242-optional-roles")?.content?.sections?.length === 5,
   "Okuma çemberi dört temel ve beş seçimlik rolü korumalı.");
-assert(theme4IntroById.get("s240-infographic")?.content?.note?.includes("kesin doğum tarihi belirtilmez") &&
-  theme4IntroById.get("s240-performance")?.answer?.guidance?.includes("hayalî"),
-  "Mimar Sinan bilgi görseli ve hayalî konuşma arasında kaynak ayrımı korunmalı.");
+assert(
+  theme4IntroById.get("s240-infographic")?.content?.note?.includes("kesin doğum tarihi belirtilmez") &&
+    theme4IntroById.get("s240-performance")?.content?.note?.includes("hayalî") &&
+    theme4IntroById.get("s240-performance")?.answer?.guidance?.includes("Kurmaca") &&
+    theme4IntroById.get("s240-performance")?.answer?.guidance?.includes("tarihî"),
+  "Mimar Sinan bilgi görseli ve kurmaca konuşma arasında kaynak ayrımı korunmalı."
+);
 for (const step of theme4Intro.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 4 açılışında doğrulanmış kaynak: ${step.source.source_record_id}`);
