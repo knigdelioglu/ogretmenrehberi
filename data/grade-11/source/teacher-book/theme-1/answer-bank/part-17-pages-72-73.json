@@ -10,23 +10,24 @@
       "printed_page": 72,
       "question_no": "1",
       "prompt_summary": "Videoda güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleme",
-      "answer": "Tabloyu izlediğiniz videodaki söz ve davranışlara dayanarak doldurun. Basılı sayfada verilen “Aklıselim programına hoş geldiniz.” ifadesi nezaket örneğidir; güven, saygı ve yapıcılığa ilişkin örnekleri videodan seçin.",
+      "answer": "Tabloyu öncelikle izlediğiniz videoda gerçekten geçen söz ve ifadelere dayanarak doldurun. Basılı sayfada verilen “Aklıselim programına hoş geldiniz.” sözü nezaket örneğidir; güven, saygı ve yapıcılığa ilişkin ifadeleri videodan seçin. Jest, tavır veya konuşma davranışları ancak seçtiğiniz ifadenin bağlamını açıklayan destekleyici kanıt olarak kullanılabilir.",
       "answer_sections": {
         "Nezaket": {
           "Kitapta Görünen Örnek": "“Aklıselim programına hoş geldiniz.”",
-          "Videoda Aranacak Göstergeler": "Selamlama, teşekkür, rica, izin isteme, nazik hitap veya farklı görüşü kırmadan ifade etme."
+          "Videoda Aranacak İfadeler": "Selamlama, teşekkür, rica, izin isteme, nazik hitap veya farklı görüşü kırmadan dile getiren sözler."
         },
         "Güven": {
-          "Videoda Aranacak Göstergeler": "Kaynağı açık bilgi verme, tutarlı açıklama, belirsizliği dürüstçe belirtme, güven veren ve ölçülü söyleyiş."
+          "Videoda Aranacak İfadeler": "Bilginin kaynağını açıkça belirten, belirsizliği dürüstçe ifade eden veya ölçülü ve tutarlı açıklama içeren sözler."
         },
         "Saygı": {
-          "Videoda Aranacak Göstergeler": "Söz kesmeme, farklı görüşü küçümsememe, uygun hitap kullanma, muhatabın düşüncesini dikkate alma."
+          "Videoda Aranacak İfadeler": "Muhataba uygun hitap eden, farklı görüşü küçümsemeden karşılayan veya karşı tarafın düşüncesini dikkate aldığını gösteren sözler."
         },
         "Yapıcılık": {
-          "Videoda Aranacak Göstergeler": "Sorunla birlikte çözüm önerme, eleştiriyi geliştirmeye yöneltme, ortak bir noktada buluşmaya çalışma."
-        }
+          "Videoda Aranacak İfadeler": "Sorunla birlikte çözüm öneren, eleştiriyi geliştirmeye yönelten veya ortak bir noktaya ulaşmaya çalışan sözler."
+        },
+        "Davranışların Kullanımı": "Söz kesmeme, dinleme, ses tonu veya beden dili gibi davranışlar yardımcı bağlam kanıtı olabilir; fakat soru özellikle ifade istediği için ana örnek olarak videodaki sözleri yazın."
       },
-      "guidance": "Kitapta görünmeyen cümleleri video repliği gibi yazmayın. Her kategori için öğrenciden videodan gerçek bir söz veya davranış kanıtı istemek yeterlidir.",
+      "guidance": "Önce öğrenciden videoda gerçekten duyduğu ifadeyi yazmasını, ardından bu ifadenin neden güven, saygı, yapıcılık veya nezaket gösterdiğini açıklamasını isteyin. Kitapta görünmeyen cümleleri video repliği gibi yazmayın. Davranışları yalnız ifadenin bağlamını desteklemek için kullanın.",
       "source_locator": "basılı s.72 / PDF s.73; QR video gerekli",
       "explanation": "source_limited: “Aklıselim programına hoş geldiniz.” basılı sayfada görünür; diğer örnekler QR videodan doğrulanmalıdır."
     },
@@ -36,14 +37,14 @@
       "printed_page": 72,
       "question_no": "2",
       "prompt_summary": "Güven, saygı, yapıcılık ve nezaket arasındaki ilişkiyi kavram haritasında gösterme",
-      "answer": "Güven, saygı, yapıcılık ve nezaket iletişimde birbirini destekleyebilir. Kavram haritasında kitaptaki model ilişkileri gösterin; farklı bağlantılar kurarsanız bunları örnekle gerekçelendirin.",
+      "answer": "Güven, saygı, yapıcılık ve nezaket iletişimde birbirini farklı biçimlerde destekleyebilir. Aşağıdaki bağlantılar yalnız örnektir; öğrenci kavramlar arasında farklı bir ilişki kurabilir ve bunu mantıklı bir açıklama veya örnekle gerekçelendirebilir.",
       "answer_sections": {
-        "Saygı → Nezaket": "Saygı, nezaketli davranışı destekler; muhatabın varlığına ve kişiliğine değer vermek nazik söz ve tavırlarla gösterilebilir (kitaptaki model ilişki).",
-        "Nezaket → Güven": "Nezaketli bir yaklaşım karşı tarafta güven duygusunu destekleyebilir; içten ve ölçülü söyleyiş iletişimi kolaylaştırır.",
-        "Güven → Yapıcılık": "Güven duyulan bir ortamda taraflar hata yapmaktan daha az çekinebilir; sorunlar yapıcı ve çözüm odaklı bir dille ele alınabilir.",
-        "Yapıcılık → Saygı": "Suçlamak yerine çözüm üretmeye yönelen bir tutum karşılıklı saygıyı güçlendirebilir."
+        "Örnek ilişki 1 — Saygı ve Nezaket": "Muhataba değer vermek, nazik söz ve davranışlarla görünür hâle gelebilir; bu nedenle saygı ile nezaket arasında ilişki kurulabilir.",
+        "Örnek ilişki 2 — Nezaket ve Güven": "Nazik ve ölçülü bir yaklaşım bazı durumlarda iletişimde güven duygusunun oluşmasını destekleyebilir.",
+        "Örnek ilişki 3 — Güven ve Yapıcılık": "Kişilerin kendilerini daha güvende hissettiği bir iletişim ortamı, sorunların daha açık ve çözüm odaklı konuşulmasını kolaylaştırabilir.",
+        "Örnek ilişki 4 — Yapıcılık ve Saygı": "Suçlama yerine çözüm üretmeye yönelen bir tutum, karşılıklı saygıyı destekleyebilir."
       },
-      "guidance": "Tek bir zorunlu ok yönü yoktur; öğrencilerin kavramlar arasındaki neden-sonuç bağını mantıklı bir argümanla açıklaması yeterlidir.",
+      "guidance": "Bu okları kitabın tek doğru kavram haritası veya zorunlu neden-sonuç zinciri gibi sunmayın. Öğrencinin güven, saygı, yapıcılık ve nezaket arasında kurduğu farklı yönlü bağlantılar; açıklaması tutarlı ve örnekle gerekçelendirilmişse kabul edilmelidir.",
       "source_locator": "basılı s.72 / PDF s.73 — Çözümleyebilme soru 2"
     },
     {
