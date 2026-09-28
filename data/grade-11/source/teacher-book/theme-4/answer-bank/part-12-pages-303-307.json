@@ -183,8 +183,8 @@
       "question_no": "12",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 12",
       "prompt_summary": "Teknolojik gelişmelerin belgeselin etkisini güçlendirip zayıflatmasını gerekçeli değerlendirme",
-      "answer": "Örnek görüş: Teknoloji belgeselin etkisini çoğu durumda güçlendirebilir; kamera ve ses olanakları anlatımı zenginleştirir, dijital kurgu farklı görüntü ve sesleri anlamlı bir sıraya koyar, yeni mecralar izleyiciye ulaşmayı kolaylaştırır. Ancak teknik olanaklar tek başına güvenilirlik veya nitelik sağlamaz; seçilen görüntü ve sesler gerçeği tek yanlı sunabilir. Bu yüzden etkiyi hem anlatımın niteliği hem de etik kullanım belirler.",
-      "guidance": "Güçlendirdiği veya zayıflattığı yönündeki gerekçeli farklı görüşler kabul edilir; iki tarafta da metindeki teknolojik örnekler kullanılmalıdır."
+      "answer": "Örnek görüş: Teknolojik gelişmeler belgeselin etkisini güçlendirmiştir. Metinde kamera ve ses teknolojisinin dijitalleşmesinin yapımı, bilgisayar teknolojisinin kurgu sürecini ve televizyon, bilgisayar, internet ile dijital platformların izleyiciye ulaşma biçimlerini dönüştürdüğü belirtilmektedir. Bu gelişmeler belgeselin üretim olanaklarını genişletmiş ve farklı mecralardan daha çok izleyiciye ulaşmasını kolaylaştırmıştır.",
+      "guidance": "Cevabınızı metindeki kamera-ses teknolojisinin dijitalleşmesi, bilgisayarlı kurgu ve yeni izleme mecraları gibi somut dayanaklarla gerekçelendirin. Farklı bir görüş ileri sürerseniz bunun metnin doğrudan söylediği bilgi değil, gerekçelendirilmiş kişisel değerlendirme olduğunu açıkça ayırın."
     },
     {
       "question_id": "T4-P307-SL13",
@@ -193,13 +193,13 @@
       "question_no": "13",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 13 / Anadolu İnsanı-Aidiyet QR videosu",
       "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-      "answer": "Videoda gözlemlediğiniz bir kişiyi veya davranışı seçin. Bu örnekten çıkardığınız özelliği yazıp görüntü, söz ya da eylem kanıtıyla gerekçelendirin.",
+      "answer": "Videoda Anadolu’nun farklı yörelerine uyum sağlama ile ilişkilendirilebilecek kişi, davranış ve tutumları belirleyin. Bu örneklerden çıkardığınız bir veya birden fazla özelliği yazın ve her özelliği görüntü, söz ya da eylem kanıtıyla gerekçelendirin.",
       "answer_sections": {
-        "Videoda gözlediğim kişi veya davranış": "[...]",
-        "Çıkardığım özellik": "[...]",
-        "Video kanıtı": "[...]"
+        "Videoda gözlediğim kişi, davranış veya tutum": "[...]",
+        "Çıkardığım özellik veya özellikler": "[...]",
+        "Her özellik için video kanıtı": "[...]"
       },
-      "guidance": "Özelliği video öncesinde hazır sonuç olarak seçmeyin; videoda gözlemlediğiniz kişi, davranış veya mekân kanıtından çıkarın."
+      "guidance": "Özellikleri video öncesinde hazır sonuç olarak seçmeyin; videoda gözlemlediğiniz kişi, davranış, tutum veya mekân bağlamından çıkarın."
     },
     {
       "question_id": "T4-P307-SL14",
@@ -208,13 +208,13 @@
       "question_no": "14",
       "source_locator": "basılı s.307 / PDF s.308 — Soru 14 / Anadolu İnsanı-Aidiyet QR videosu",
       "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-      "answer": "Aidiyet; kişinin bir yerde kurduğu ilişkiler, anılar, katılımı ve kendini oraya bağlı hissetmesiyle ilişkili olabilir. İzlediğiniz videodan bir kişi, söz veya davranış örneği seçerek aidiyet kavramıyla bağını açıklayın.",
+      "answer": "Videoda bir kişinin yaşadığı yere aidiyet geliştirmesini açıklayan söz, davranış, ilişki veya mekân örneklerini belirleyin. Bu örneklerden hareketle aidiyet duygusunun hangi etkenlerle bağlantılı olduğunu açıklayın; her sonucu videodaki somut bir kanıtla destekleyin.",
       "answer_sections": {
-        "Genel kavramsal çerçeve": "Aidiyet; ilişkiler, ortak deneyimler, kültürel katılım ve emekle bağlantılı olabilir.",
-        "Videodan gerçek örnek": "[...]",
-        "Bu örneğin aidiyetle ilişkisi": "[...]"
+        "Videoda aidiyetle ilişkilendirdiğim etken": "[...]",
+        "Video kanıtı": "[...]",
+        "Bu kanıtın aidiyetle ilişkisi": "[...]"
       },
-      "guidance": "Aidiyet için seçtiğiniz örneği videodaki gerçek kişi, davranış veya mekâna dayandırın. Genel kavramsal açıklamayı video kanıtının yerine kullanmayın."
+      "guidance": "Aidiyetin nedenlerini video izlenmeden hazır bir liste hâlinde vermeyin. Çıkarımınızı videodaki gerçek kişi, söz, davranış, ilişki veya mekân kanıtına dayandırın."
     }
   ]
 }
