@@ -35,11 +35,11 @@
       "question_no": "3",
       "source_locator": "basılı s.299 / PDF s.300 — Yazmayı Yönetebilme soru 3; ölçütler basılı s.298 / PDF s.299",
       "prompt_summary": "Afişte kullanılabilecek içerik ve tasarım ögelerini belirleme",
-      "answer": "Afişte açık bir ana mesaj, kısa başlık veya slogan, mesajı destekleyen tek ve belirgin bir fotoğraf/illüstrasyon, okunaklı yazı, uygun renk ve güçlü karşıtlık kullanılabilir. Ögeler birbirini tekrar etmek yerine tamamlamalıdır; görsel veya alıntı kullanılacaksa kaynağı ve kullanım hakkı gözetilmelidir.",
+      "answer": "Afişte açık bir ana mesaj, kısa başlık veya slogan, mesajı destekleyen bir veya az sayıda belirgin fotoğraf/illüstrasyon, okunaklı yazı, uygun renk ve güçlü karşıtlık kullanılabilir. Ögeler birbirini tekrar etmek yerine tamamlamalı; mesaj-imge bütünlüğü ve sözel hiyerarşi korunmalıdır.",
       "answer_sections": {
         "Söz": "Başlık ve slogan kısa, hiyerarşisi belirgin ve hedef kitleye uygun olmalı.",
-        "Görsel": "Bir ana imgeyi büyük kullanın; mesajla uyumunu kontrol edin.",
-        "Düzen": "Okunaklı yazı karakteri, sınırlı sözcük ve yeterli renk karşıtlığı seçin."
+        "Görsel": "Bir veya az sayıda güçlü imge kullanın; mesajla uyumunu ve fark edilirliğini kontrol edin.",
+        "Düzen": "Okunaklı yazı karakteri, sınırlı sözcük kullanımı ve güçlü renk karşıtlığı seçin."
       }
     },
     {
@@ -64,10 +64,10 @@
       "question_no": "İçerik Oluşturabilme a-b",
       "source_locator": "basılı s.300 / PDF s.301 — İçerik Oluşturabilme a-b",
       "prompt_summary": "Afiş örneklerini inceleyip fikir alışverişi yapma; renk ve görsel kararlarını belirleme",
-      "answer": "Afiş örneklerini başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik bakımından inceleyin. Belgeselde doğrulayacağınız iletiye uygun tek bir ana görsel ve okunaklı yazıyı destekleyen renkler seçin.",
+      "answer": "Afiş örneklerini başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik bakımından inceleyin. Belgeselde doğrulayacağınız iletiye uygun bir veya az sayıda güçlü görsel ile okunaklı yazıyı destekleyen renkler seçin.",
       "answer_sections": {
         "Fikir alışverişi": "Reklam, tiyatro ve film afişlerinden başlık-görsel ilişkisi, sözel hiyerarşi ve fark edilirlik örnekleri inceleyin.",
-        "Renk ve görsel": "Tek ana görsel seçin; renkleri belgeselde gözlenen iletiyi destekleyecek ve yazıyı okunur kılacak biçimde kullanın."
+        "Renk ve görsel": "Bir veya az sayıda güçlü görsel seçin; renkleri belgeselde gözlenen iletiyi destekleyecek, görsel hiyerarşiyi koruyacak ve yazıyı okunur kılacak biçimde kullanın."
       },
       "guidance": "Belgesel içeriğine dayanan iletiyi seçme ve doğrulama adımını c-ç kaydında tamamlayın."
     },
@@ -78,8 +78,14 @@
       "question_no": "İçerik Oluşturabilme c-ç",
       "source_locator": "basılı s.300-301 / PDF s.301-302 — İçerik Oluşturabilme c-ç / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinden seçilen iletiyi ve etkileyicilik unsurlarını belirleme",
-      "answer": "İzlediğiniz belgeselde öne çıkan iletiyi kendi sözlerinizle yazın. Bunu destekleyen davranış, söz, görüntü ya da ses ayrıntısını belirtin; afiş planında yalnız videoyla doğruladığınız bilgileri kullanın.",
-      "guidance": "İletinizi başlıktan tahmin etmek yerine videodaki bir sahne veya ifadeyle destekleyin."
+      "answer": "Önce belgeselde tespit ettiğiniz iletileri videodaki gerçek söz, davranış, görüntü veya ses kanıtlarıyla listeleyin. Ardından afişte öne çıkaracağınız iletiyi seçin, seçme nedeninizi açıklayın ve belgeselin etkileyiciliğini sağlayan unsurları videodan gözlediğiniz örneklerle değerlendirin.",
+      "guidance": "İletileri yalnız başlıktan çıkarmayın; her birini videodaki gerçek bir sahne, söz, davranış, görüntü veya sesle destekleyin. Etkileyicilik unsurlarını ileti kanıtından ayrı olarak değerlendirin.",
+      "answer_sections": {
+        "Belgeselde tespit ettiğim iletiler": "[Videodan kanıtla birden fazla ileti yazılır.]",
+        "Afişte ön plana çıkaracağım ileti": "[...]",
+        "Bu iletiyi seçme nedenim": "[...]",
+        "Belgeselin etkileyiciliğini sağlayan unsurlar": "Görüntü, ses, anlatım, kişi, mekân veya diğer unsurlardan videoda gerçekten gözlenenler: [...]"
+      }
     },
     {
       "question_id": "T4-P301-PERF03",
@@ -88,13 +94,13 @@
       "question_no": "İçerik Oluşturabilme d-f",
       "source_locator": "basılı s.301 / PDF s.302 — İçerik Oluşturabilme d-f",
       "prompt_summary": "Doğrulanmış iletiye uygun bilgi, söz varlığı ve malzemeyle taslağı hazırlayıp geri bildirimle geliştirme",
-      "answer": "İzleme notlarınızla doğruladığınız iletiyi hedef kitleye uygun kısa sözlerle ve uygun malzemeyle taslağa aktarın; taslağı geri bildirimle gözden geçirin.",
+      "answer": "Belgeselde doğruladığınız ana iletiyi temel alın; afiş için gerekli ek bilgileri güvenilir kaynaklardan toplayabilir ve öğrendiğiniz söz varlığından bağlama uygun olanları kullanabilirsiniz. İçeriği hedef kitleye uygun kısa ve açık ifadelerle düzenleyip taslağı geri bildirimle geliştirin.",
       "answer_sections": {
-        "Bilgi ve söz varlığı": "Yalnızca videoda doğrulanan bilgi ve ifadeleri alın; hedef kitleye uygun, kısa sözcüklerle taslağı kurun.",
-        "Dil ve malzeme": "Kendi çiziminiz, izinli görsel veya kaynağı belirtilmiş materyal seçin; görseli afiş amacına ve bağlama uygun kullanın.",
+        "Bilgi ve söz varlığı": "Belgeselin ana iletisi ve belgeselle ilgili iddialar video kanıtına dayanmalı; gerekli ek bilgiler güvenilir kaynaklardan toplanabilir. Öğrenilen söz varlığından bağlama uygun olanları kullanın.",
+        "Dil ve malzeme": "Kendi çiziminiz, izinli görsel veya kaynağı belirtilmiş materyal seçin; dili ve görsel malzemeyi afiş amacına, hedef kitleye ve bağlama uygun kullanın.",
         "Geri bildirim": "Taslağı arkadaşlara sunun; mesajın ilk bakışta anlaşılıp anlaşılmadığı, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneriler alıp düzeltin."
       },
-      "guidance": "İleti ve taslağı, yalnızca izlediğiniz videodan doğruladığınız bilgi ve görüntülere dayandırın."
+      "guidance": "Afişin ana iletisini ve belgeselle ilgili içerik iddialarını videoda doğrulayın; ek bilgi gerekiyorsa güvenilir kaynaklarla destekleyin."
     },
     {
       "question_id": "T4-P301-PERF01",
@@ -143,8 +149,7 @@
       "answer_sections": {
         "Başlangıçtaki duygu, düşünce ve davranışım": "[...]",
         "Süreçte değişen nokta": "[...]",
-        "Değişime yol açan gerçek deneyim veya geri bildirim": "[...]",
-        "Sonraki çalışmada yapacağım": "[...]"
+        "Değişime yol açan gerçek deneyim veya geri bildirim": "[...]"
       }
     },
     {
