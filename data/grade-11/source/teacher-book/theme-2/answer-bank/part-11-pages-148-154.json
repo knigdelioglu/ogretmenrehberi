@@ -200,35 +200,55 @@
     {
       "entry_type": "performance_support",
       "printed_page": 151,
-      "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
+      "guidance": "Bu adım yeni bir karşılaştırma yaptırmaz; önceki araştırma, karşılaştırma ve sınıflandırma çalışmalarının paylaşılmasına yöneliktir.",
       "question_id": "T2-P151-PERF02",
       "question_no": "4",
-      "activity_name": "Gözlem ve karşılaştırma",
-      "prompt_summary": "Müze çalışmasındaki kültürel unsuru kendi hayatınızdaki gerçek bir örnekle karşılaştırın.",
-      "answer": "1. Karşılaştırma: [Gerçekten gördüğüm eser] bana [kendi hayatımdaki gerçek benzerlik veya farklılığı] düşündürdü; çünkü [...].",
-      "source_locator": "basılı s.151 / PDF s.152 — adım 4"
+      "activity_name": "Çalışmayı paylaşma",
+      "prompt_summary": "Müzelerle ilgili hazırlanan çalışmayı arkadaşlarla paylaşma.",
+      "answer": "Müzelerle ilgili yaptığınız araştırma, karşılaştırma ve sınıflandırma çalışmalarından öne çıkan sonuçları düzenleyerek arkadaşlarınızla paylaşın.",
+      "source_locator": "basılı s.151 / PDF s.152 — adım 4",
+      "answer_sections": {
+        "Paylaşılacak İçerik": [
+          "Seçtiğiniz müze ve onu seçme gerekçeniz",
+          "Dikkatinizi çeken kültürel unsur veya unsurlar",
+          "Müzedeki kültürel unsurla kendi hayatınızdaki karşılık arasında kurduğunuz benzerlik ya da farklılık",
+          "Kültürün aktarılma yollarına ilişkin yaptığınız sınıflandırmadan öne çıkan bir sonuç"
+        ],
+        "Paylaşım İlkesi": "Gerçek gözlem ve araştırma sonuçlarını aktarın; görmediğiniz bir eser veya özelliği varmış gibi sunmayın."
+      }
     },
     {
       "entry_type": "performance_support",
       "printed_page": 151,
-      "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
+      "guidance": "Bu adım görsel seçme görevi değildir. Önceki karşılaştırma ve sınıflandırmaları yazının içeriğine özgün biçimde dönüştürmeye odaklanır.",
       "question_id": "T2-P151-PERF03",
       "question_no": "5",
-      "activity_name": "Görsel destek",
-      "prompt_summary": "Gerçekte incelediğiniz eser veya bölümün izin verilen ekran görüntüsünü seçip kaynağını belirtin.",
-      "answer": "Gerçekte incelediğiniz eser veya bölümün izin verilen bir ekran görüntüsünü seçin. Açıklamasını “[müze adı, gerçek eser adı, kaynak]” biçiminde yazın.",
-      "source_locator": "basılı s.151 / PDF s.152 — adım 5"
+      "activity_name": "Özgün ifadeler kullanma",
+      "prompt_summary": "Önceki karşılaştırma ve sınıflandırmalardan yararlanarak yazı sürecinde özgün ifadeler oluşturma.",
+      "answer": "Metni yazarken önceki karşılaştırma ve sınıflandırmalarınızdan yararlanın; gözlem ve düşüncelerinizi hazır kalıpları tekrarlamak yerine kendi ifadelerinizle anlatın.",
+      "source_locator": "basılı s.151 / PDF s.152 — adım 5",
+      "answer_sections": {
+        "Karşılaştırmadan Yararlanma": "Müzedeki kültürel unsurla kendi hayatınızdaki benzerlik veya farklılığı metninize anlamlı bir cümleyle taşıyın.",
+        "Sınıflandırmadan Yararlanma": "İncelediğiniz unsurun kültürü hangi yolla taşıdığı veya aktardığına ilişkin sınıflandırmanızı yazınızdaki yorumla ilişkilendirin.",
+        "Özgünlük": "Kaynak bilgisini olduğu gibi aktarmanız gerektiğinde alıntı olduğunu belirtin; kişisel gözlem ve yorumunuzu kendi sözlerinizle ifade edin."
+      }
     },
     {
       "entry_type": "performance_support",
       "printed_page": 151,
-      "guidance": "Örnek çocukluk hatırası veya belirli müze nesnesi gerçek yaşanmışlık gibi sunulmaz. Gezi henüz yapılmadıysa görsel altyazıları ve duygu ifadeleri açıkça doldurulacak örnek alanlar olarak kalır.",
+      "guidance": "Kitap bu adımda görsel ve işitsel ögelerle başka metinlerden alıntılara yer verilebileceğini söyler. Bunların hepsi zorunlu değildir; kullanılan öge gerçek ve kaynaklandırılabilir olmalıdır.",
       "question_id": "T2-P151-PERF04",
       "question_no": "6",
-      "activity_name": "Kaynak ve kişisel izlenim",
-      "prompt_summary": "Müze bilgi panosundan veya güvenilir bir kaynaktan kısa bir ifadeyi kaynağıyla aktarın; gerçek gözleminizin sizde uyandırdığı duygu veya düşünceyi ekleyin.",
-      "answer": "Müze bilgi panosundan veya güvenilir bir kaynaktan aldığınız kısa ifadeyi aynen aktarın ve kaynağını belirtin; kendi yorumunuzu alıntının yerine kullanmayın. “Gözlemlediğim ayrıntı [...]; bu ayrıntı bende [...] duygusu/düşüncesi uyandırdı.” cümlesini yalnız gerçekten yaşadığınız deneyimle tamamlayın.",
-      "source_locator": "basılı s.151 / PDF s.152 — adım 6"
+      "activity_name": "İçeriği zenginleştirme",
+      "prompt_summary": "Yazı içeriğini uygun görsel, işitsel ögeler ve başka metinlerden alıntılarla zenginleştirme.",
+      "answer": "Yazınızın içeriğini desteklemek amacıyla uygun görsel ve işitsel ögelerden, ayrıca başka metinlerden kısa alıntılardan yararlanabilirsiniz. Kullandığınız her ögenin yazıyla ilişkili olmasına ve kaynağının belirtilmesine dikkat edin.",
+      "source_locator": "basılı s.151 / PDF s.152 — adım 6",
+      "answer_sections": {
+        "Görsel Öge": "Gerçekten incelediğiniz eser, bölüm veya kültürel unsuru destekleyen ve kullanımına izin verilen bir görsel seçin; kaynağını belirtin.",
+        "İşitsel Öge": "Varsa müze veya güvenilir kurum tarafından sunulan ses kaydı, anlatım ya da benzeri işitsel içeriği yalnız gerçekten erişebildiyseniz kullanın.",
+        "Alıntı": "Müze bilgi panosu veya güvenilir bir metinden kısa bir ifadeyi aynen aktarıyorsanız alıntı olduğunu gösterin ve kaynağını belirtin.",
+        "İşlev": "Eklediğiniz öge, yazının ana izlenimini veya kültürel değerlendirmesini desteklemeli; yalnız süs amacıyla kullanılmamalıdır."
+      }
     },
     {
       "question_id": "T2-P152-PERF01",
@@ -254,9 +274,9 @@
       "entry_type": "performance_support",
       "printed_page": 152,
       "question_no": "Kural Uygulayabilme (destek)",
-      "prompt_summary": "Sanal müze izlenim yazısı için kitaptaki 13 yazma aşamasına dayalı öz denetim",
-      "answer": "S.152'deki yazma aşamalarını aşağıdaki kontrol sorularıyla gözden geçirin. Her soruyu kendi taslağınıza göre yanıtlayın.",
-      "guidance": "Kontrol listenizi taslağınızı geliştirmek için kullanın. Gerçek müze seçiminizi ve gözlemlerinizi esas alın; yaşanmamış bir deneyimi varsaymayın.",
+      "prompt_summary": "S.152'deki 13 yazma aşamasından türetilmiş ek teslim öncesi öz denetim.",
+      "answer": "Aşağıdaki liste, s.152'deki 13 yazma aşamasından türetilmiş ek bir teslim öncesi kontroldür. Kitaptaki aşamaların yerine geçmez; taslağınızı son kez gözden geçirmenize yardımcı olur.",
+      "guidance": "Bu kayıt kaynak sırasındaki ayrı bir etkinlik değildir; T2-P152-PERF01'deki 13 aşamadan türetilmiş destek kaydıdır.",
       "source_locator": "basılı s.152 / PDF s.153 — yazma aşamaları",
       "answer_sections": {
         "Öz denetim soruları": [
