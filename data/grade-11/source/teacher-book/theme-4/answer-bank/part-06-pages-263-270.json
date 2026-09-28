@@ -11,15 +11,14 @@
       "question_no": "Konuya Başlarken 1-3",
       "source_locator": "basılı s.263 / PDF s.264 — Konuya Başlarken",
       "prompt_summary": "Yaşam evreleri görselleri ve yolculuk ifadelerinden hareketle duygu ve kısa hikâye üretme",
-      "answer": "Görselleri ve yolculuğu anlatan ifadeleri inceleyin. Sizde uyandırdıkları duygu ve düşünceleri not edin; bir yaşam dönemi seçerek bu dönemi neden anlatmak istediğinizi açıklayın. Seçtiğiniz kişi, mekân ve olası durumu belirleyip hikâye planı oluşturun.",
+      "answer": "Görselleri ve yolculuğu anlatan ifadeleri inceleyin. Sizde uyandırdıkları duygu ve düşünceleri not edin; ardından hikâye yazmak istediğiniz yaşam dönemini ve bu dönemi neden seçtiğinizi açıklayın.",
       "answer_sections": {
         "Görsellerin bende uyandırdığı duygu ve düşünceler": "[...]",
         "Yolculuk ifadelerinin çağrıştırdıkları": "Yaşam yolculuğu, başlangıç, güçlük, gençlik, yaşlılık veya yeniden başlangıç gibi çağrışımlar gerekçeli biçimde yazılabilir.",
         "Hikâye yazmak istediğim yaşam dönemi": "[...]",
-        "Bu dönemi seçme nedenim": "[...]",
-        "Olası kişi, mekân ve durum": "Kişi: [...] / Mekân: [...] / Temel durum: [...]"
+        "Bu dönemi seçme nedenim": "[...]"
       },
-      "guidance": "Duygu ve çağrışımlarınızı görsel ayrıntılarla ilişkilendirin. Seçtiğiniz yaşam dönemini ve hikâye fikrinizi gerekçelendirin; yazım planınızı kendi düşüncelerinizle oluşturun."
+      "guidance": "Duygu ve çağrışımlarınızı görsel ayrıntılarla ilişkilendirin. Seçtiğiniz yaşam dönemini ve nedenini kendi düşüncelerinizle açıklayın."
     },
     {
       "question_id": "T4-P264-PERF01",
