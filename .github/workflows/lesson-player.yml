@@ -62,7 +62,7 @@ jobs:
 
           CHROME="$CHROME" npm run test:browser
 
-          "$CHROME"             --headless=new             --no-sandbox             --disable-gpu             --window-size=1440,900             --dump-dom             http://127.0.0.1:4173/ > /tmp/lesson-player-dom.html
+          "$CHROME"             --headless=new             --no-sandbox             --disable-gpu             --window-size=1440,900             --virtual-time-budget=3000             --dump-dom             http://127.0.0.1:4173/ > /tmp/lesson-player-dom.html
 
           grep -q "1. Tema — Giriş" /tmp/lesson-player-dom.html
           grep -q 'id="pptx-export-trigger"' /tmp/lesson-player-dom.html
@@ -72,6 +72,7 @@ jobs:
             --no-sandbox \
             --disable-gpu \
             --window-size=1366,768 \
+            --virtual-time-budget=3000 \
             --dump-dom \
             "http://127.0.0.1:4173/?lesson=T11-T01-KARAGOZ&step=s15-q1" > /tmp/lesson-player-question-dom.html
 
@@ -86,6 +87,7 @@ jobs:
             --no-sandbox \
             --disable-gpu \
             --window-size=1366,768 \
+            --virtual-time-budget=3000 \
             --dump-dom \
             "http://127.0.0.1:4173/?lesson=T11-T01-KARAGOZ&step=s15-q2" > /tmp/lesson-player-guidance-dom.html
 
