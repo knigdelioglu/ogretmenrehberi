@@ -2937,16 +2937,15 @@
           "entry_type": "question_answer",
           "printed_page": 40,
           "question_no": "3",
-          "prompt_summary": "Metinden hareketle Mehmet Kaplan'ın roman türüne ve tekniğine bakış açısı",
-          "answer": "Mehmet Kaplan; romanda soyut duygu tahlilleri ve klişe aşk konuları yerine, yaşayan canlı kişilerin diyalog ve eylemleriyle görünmesini savunur. Rus romanındaki (Dostoyevski) karakterlerin geçmişini, terbiyesini ve ilişkilerini derinlemesine işleyen 'mazi koridoru' yöntemini, Fransız romanının (Stendhal) yalnızca anlık olay yüzeyinde kalan tekniğine göre çok daha derin ve psikolojik bulur.",
+          "prompt_summary": "Mehmet Kaplan'ın roman anlayışında öne çıkan özellikler",
+          "answer": "Kaplan, roman kişilerinin konuşma ve davranışlarıyla canlı biçimde ortaya çıkmasını, geçmişleri ve çevreleriyle derinleştirilmesini önemser. Dostoyevski’de gördüğü “mazi koridoru” yöntemini psikolojik derinlik bakımından etkili bulur; kendi değerlendirmesine göre Rus romanını Fransız romanından daha derin ve psikolojik görür.",
           "source_locator": "basılı s.40 / PDF s.41; ana metin s.37",
           "answer_sections": {
-            "Karakterlerin canlılığı ve diyalog tekniği": "Kaplan'a göre romanda şahıslar yazar tarafından dışarıdan anlatılmamalı, bizzat konuşmaları ve hareketleriyle görünmelidir ('Bütün roman konuşmalardan ibaret gibi bir şey. Stendhal’de bu yoktu').",
-            "'Mazi koridoru' kavramı": "Rus romanında kahramanların geçmişi, terbiyesi ve çevresi uzun tahlillerle verildikten sonra asıl olaya geçilir; Kaplan bu yöntemi insan psikolojisini derinlemesine aydınlattığı için üstün tutar.",
-            "Fransız romanına eleştiri": "Fransız romanlarında mazi koridorunun bulunmadığını, yalnızca 'vaka sathı' (olay yüzeyi) ile yetinildiğini belirterek Rus tarzı psikolojik derinliği tercih eder.",
-            "Roman yazma ideali": "Kaplan romanda idealizm ile hayatın somut kusurlarının harmanlanması gerektiğini düşünür ve bu okumanın kendisinde de roman yazma arzusunu alevlendirdiğini açıklar."
+            "Karakterlerin canlılığı": "Kaplan, kişilerin yalnız dışarıdan açıklanması yerine konuşma ve davranışlarıyla görünür hâle gelmesini önemser. “Konuşmalarda şahıslar daha çok beliriyor” sözü bu yaklaşımı gösterir.",
+            "Geçmiş ve psikolojik derinlik": "“Mazi koridoru” dediği yaklaşımla kişinin geçmişi, yetişme biçimi ve ilişkilerinin verilmesini psikolojik derinliğin bir yolu olarak değerlendirir.",
+            "Rus-Fransız romanı karşılaştırması": "Kaplan bunu genel ve nesnel bir üstünlük hükmü olarak değil, kendi estetik değerlendirmesi olarak dile getirir: “Bana Rus usulü daha derin ve psikolojik geliyor.”"
           },
-          "guidance": "Kaplan'ın geliştirdiği özgün 'mazi koridoru' kavramı ile 'vaka sathı' terimlerinin karşıtlığı üzerinde durulmalıdır.",
+          "guidance": "Kaplan'ın roman kişisinin canlılığı, geçmişle derinleştirilmesi ve psikolojik boyutu üzerinde durun. Rus ve Fransız romanı karşılaştırmasını Kaplan'ın kişisel estetik değerlendirmesi olarak sunun; bunu bütün Rus ve Fransız romanları için nesnel bir üstünlük hükmüne dönüştürmeyin.",
           "evidence_quotes": [
             "Bütün roman konuşmalardan ibaret gibi bir şey",
             "Konuşmalarda şahıslar daha çok beliriyor",
@@ -2986,19 +2985,15 @@
           "entry_type": "question_answer",
           "printed_page": 40,
           "question_no": "4",
-          "prompt_summary": "Karamazoflar romanındaki kişi tahlili tekniğinin değerlendirilmesi ve kullanılabileceği diğer türler",
-          "answer": "Kaplan, Dostoyevski'nin kişi tahlilini Fransız romanlarına göre daha derin ve psikolojik bulur; çünkü kişiler geçmişleri, eğitimleri, ilgileri ve konuşmalarıyla okurun zihninde canlı birer insan olarak yaşar. Kişiyi geçmişi, iç dünyası ve çevresiyle çok yönlü çözümleme yaklaşımı roman ve hikâyenin yanı sıra biyografi, otobiyografi, anı, tiyatro, portre ve eleştiri yazılarında da görülebilir. Bu, roman tekniğinin aynen taşınması değil, kişiyi derinlemesine anlatma yaklaşımının bu türlere uyarlanmasıdır.",
+          "prompt_summary": "Bir kişinin konuşma, davranış, geçmiş ve tepkilerinden hareketle çözümlenmesini açıklama",
+          "answer": "Bir kişiyi çözümlemek; onu yalnız birkaç sıfatla tanımlamak yerine geçmişi, yetişme biçimi, çevresi, konuşmaları, davranışları ve tepkileriyle birlikte ele almaktır. Böylece kişinin karakteri ve davranışlarının nedenleri daha canlı ve çok yönlü biçimde anlaşılabilir.",
           "source_locator": "basılı s.40 / PDF s.41; ana metin s.37",
           "answer_sections": {
-            "Tekniğin değerlendirilmesi": "Kişinin zihinsel olarak 'yaşatılması', dışarıdan sıfatlarla etiketlenmesiyle değil; geçmişinin ('mazi koridoru') serilmesi, konuşma biçimi ve iç çelişkilerinin görünür kılınmasıyla mümkündür. Kaplan'ın “On tane adamın hayatı kafamda ayrı ayrı yaşıyor” tespiti bu tekniğin başarısını özetler.",
-            "Kullanılabileceği diğer türler": {
-              "Biyografi ve Otobiyografi": "Gerçek kişilerin hayatını kronolojik bir döküm olmaktan çıkarıp onların karakter zaaflarını, dönüm noktalarını ve psikolojilerini derinlemesine anlatmak için.",
-              "Tiyatro (Dram/Trajedi)": "Karakterlerin iç çatışmalarını ve motivasyonlarını replikler üzerinden izleyiciye sezdirmek için.",
-              "Anı (Hatıra) ve Edebî Portre": "Hatırlanan şahsiyetlerin belirgin huylarını ve unutulmaz anlarını canlı tablolar hâlinde çizmek için.",
-              "Edebî Tenkit (Eleştiri)": "Bir eserdeki kahramanların tutarlılığını ve inandırıcılığını çözümlemek için."
-            }
+            "Geçmiş ve çevre": "Kişinin geçmişi, yetişme şartları ve ilişkileri onun bugünkü davranışlarını anlamlandırmaya yardımcı olur. Kaplan'ın “mazi koridoru” dediği yaklaşım bu boyutu öne çıkarır.",
+            "Konuşma ve davranış": "Kişinin ne söylediği ve nasıl davrandığı, karakter özelliklerini doğrudan açıklamak yerine okura gösterme imkânı verir.",
+            "Sonuç": "Kişi, tek bir özellik veya etiket üzerinden değil; geçmişi, çevresi, konuşmaları, davranışları ve tepkilerinin bütünü üzerinden çözümlenir."
           },
-          "guidance": "Öğrencilerin kişi tahlilinin yalnız kurmaca türlerde (roman, öykü) değil, öğretici ve kişisel hayatı konu alan türlerde (biyografi, portre, anı) de nasıl işlev gördüğünü ayırt etmeleri sağlanmalıdır.",
+          "guidance": "Cevabı kişi çözümlemesinin nasıl yapıldığına odaklayın. Metinde görülen geçmiş, çevre, konuşma ve davranış unsurlarını ilişkilendirin; sorunun istemediği geniş tür listeleriyle cevabı dağıtmayın.",
           "evidence_quotes": [
             "Burada canlı insanlar kaynaşıyor. On tane adamın hayatı kafamda ayrı ayrı yaşıyor.",
             "Kahramanların tahlilleri, hikâyeleri geniş yer alıyor.",
@@ -3035,27 +3030,29 @@
           "printed_page": 40,
           "question_no": "Çalışma Kâğıdı 1/2",
           "prompt_summary": "Çalışma kâğıdının konu, ana düşünce, yardımcı düşünceler ve açık-örtük ileti bölümlerini tamamlama",
-          "answer": "Mektup, Kaplan’ın günlük yaşamını ve dostluk ilişkilerini anlatırken çalışmanın yeteneği geliştirdiği düşüncesini öne çıkarır.",
+          "answer": "Çalışma kâğıdı için örnek bir çözümlemede metnin konusu Kaplan'ın günlük hayatını, yalnızlığını, edebiyat görüşlerini ve Âli'ye tavsiyelerini paylaşmasıdır. Ana düşünce, insanın emek ve iradeyle kendini geliştirebileceği biçiminde kurulabilir; metne dayalı farklı ve gerekçeli ana düşünceler de kabul edilmelidir.",
           "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
           "answer_sections": {
-            "Konu": "Mehmet Kaplan'ın gurbetteki dostu Âli'ye günlük hayatını, yalnızlığını, edebiyat ve roman hakkındaki düşüncelerini anlatması ve onu yazmaya, çalışmaya teşvik etmesi.",
-            "Ana Düşünce": "İnsan, yeteneklerini sabırlı ve sürekli çalışmayla geliştirir; düşünmek ve yazmak da cesaret, irade ve emek isteyen bir kendini geliştirme sürecidir.",
+            "Konu": "Mehmet Kaplan'ın Âli'ye günlük hayatını, yalnızlığını, edebiyat ve roman hakkındaki düşüncelerini anlatması ve onu çalışmaya, düşünmeye ve yazmaya teşvik etmesi.",
+            "Örnek Ana Düşünce": "İnsan, emek ve iradeyle kendini geliştirebilir; düşünmek ve yazmak da çalışma ve kararlılık isteyen bir süreçtir.",
             "Yardımcı Düşünceler": [
-              "Dostluk ve anlayış, insanın iç sıkıntılarını hafifletir.",
-              "Yalnızlık hissi ev hayatı, kitaplar ve sevdikleriyle geçirilen zamanla hafifletilebilir.",
-              "İnsan çalışmadan kendisini kabiliyetsiz saymamalıdır; çalışma yeteneği ortaya çıkarır ve geliştirir.",
-              "Yazmak ve düşünmek, insanın kendisini tanımasına ve zihnini geliştirmesine yardımcı olan bir irade ve emek sürecidir."
+              "Dostluk ve anlayış, insanın iç sıkıntısını hafifletebilir.",
+              "Okunan eserler kişiyi düşünmeye ve yazmaya yöneltebilir.",
+              "İnsan çalışmadan kendisini kabiliyetsiz saymamalıdır; çalışma yeteneği ortaya çıkarabilir ve geliştirebilir.",
+              "Düşünmek ve yazmak irade ve emek gerektirir."
             ],
             "Açık ve Örtük İletiler": {
-              "Açık ileti": "Çalışma, yeteneği ortaya çıkarıp geliştirebilir; düşünmek ve yazmak cesaret, sabır, irade ve emek gerektirir.",
-              "Örtük ileti": "İnsanın kendisini anlayan ve destekleyen bir dostunun olması, yalnızlık ve iç sıkıntılarıyla baş etmesini kolaylaştırır."
+              "Açık ileti": "Çalışma yeteneğin ortaya çıkmasına ve gelişmesine katkı sağlayabilir; düşünmek ve yazmak irade ve emek ister.",
+              "Örtük ileti": "Anlayışlı ve destekleyici bir dostun varlığı, kişinin iç sıkıntısını hafifletmesine yardımcı olabilir."
             }
           },
-          "guidance": "Konu, ana düşünce ve yardımcı düşünceleri birbirinden ayırt ettirin. Açık iletide doğrudan söylenenleri, örtük iletide çıkarım yoluyla ulaşılan anlamı metinden hareketle belirletin. Metin birden çok düşünceyi işlediği için gerekçeli alternatif ana düşünceleri de kabul edin: insanın emek ve iradeyle kendini geliştirmesi; dostluk ve düşünce paylaşımının insanı desteklemesi; okuma, düşünme ve yazmanın kişiyi geliştirmesi.",
+          "guidance": "Konu, ana düşünce, yardımcı düşünce ve iletileri birbirinden ayırt ettirin. Verilen ana düşünce örnektir; öğrencinin metne dayalı farklı ve gerekçeli bir ana düşüncesini de kabul edin. Açık iletileri doğrudan söylenenlerden, örtük iletileri ise metinden yapılabilen çıkarımlardan oluşturun.",
           "evidence_quotes": [
             "Çalışmanın kabiliyeti keşfettiğini, hatta yarattığını iddia edeceğim.",
             "Bunu yapmadan nasıl kabiliyetsizliğe hükmedebilirsin.",
-            "senin vicdan azabımı tahfif edişini görerek daha sıkıntısız olacağım"
+            "Düşünmek ve yazmak da bir nevi kendimizle mücadeledir. İrade eseridir.",
+            "senin vicdan azabımı tahfif edişini görerek daha sıkıntısız olacağım",
+            "Bu roman bende yine roman yazmak arzusunu canlandırdı"
           ]
         },
         "content": null
@@ -3088,28 +3085,29 @@
           "printed_page": 40,
           "question_no": "Çalışma Kâğıdı 2/2",
           "prompt_summary": "Çalışma kâğıdının anlatım biçimleri, anlatım özellikleri ve düşünceyi geliştirme yolları bölümlerini tamamlama",
-          "answer": "Mektupta açıklayıcı ve tartışmacı anlatım öne çıkar; karşılaştırma, benzetme ve tanımlama düşünceleri geliştirir. Üslup, mektubun kişisel ve sohbet havasını korur.",
+          "answer": "Mektupta açıklayıcı ve tartışmacı anlatım belirgindir; günlük olayların aktarıldığı yerlerde öyküleyici anlatım da ikincil olarak görülür. Düşünceler özellikle karşılaştırma, benzetme ve tanımlamayla geliştirilir.",
           "source_locator": "basılı s.40 / PDF s.41; ana metin s.37-38",
           "answer_sections": {
             "Anlatım Biçimleri": [
-              "Açıklayıcı Anlatım (Dostoyevski'nin roman tekniğini ve Rus-Fransız romanı arasındaki farkları açıklarken)",
-              "Tartışmacı Anlatım (Âli'nin kendisini kabiliyetsiz görmesine karşı çıkarak çalışmanın yeteneği geliştirdiğini savunurken)",
-              "Öyküleyici Anlatım (Fakültedeki sınavlardan, Küllük kahvesine gidişinden ve günlük hayatındaki olaylardan söz ederken; metinde ikincil düzeydedir)"
+              "Açıklayıcı anlatım: Dostoyevski'nin roman tekniğini ve Rus-Fransız romanı arasındaki farkları açıklarken.",
+              "Tartışmacı anlatım: Âli'nin kendisini kabiliyetsiz görmesine karşı çıkıp çalışmanın yeteneği geliştirebileceğini savunurken.",
+              "Yer yer öyküleyici anlatım: Fakültedeki sınav, Küllük kahvesine gidiş ve gündelik hayatla ilgili olayları aktarırken; metinde ikincil düzeydedir."
             ],
             "Anlatım Özellikleri": [
-              "Mektup türüne uygun olarak samimi, içten, kişisel ve sohbet havasında bir üslup kullanılmıştır.",
-              "Doğrudan hitaplar ve sorular, yazar ile muhatabı arasındaki yakınlığı ve konuşma havasını güçlendirir."
+              "Yakın bir dosta yazıldığı için samimi, içten ve konuşma doğallığına yaklaşan bir üslup görülür.",
+              "Roman ve edebiyat konularında anlatım daha kavramsal ve çözümleyici hâle gelir."
             ],
             "Düşünceyi Geliştirme Yolları": [
-              "Karşılaştırma (Dostoyevski ile Stendhal, Rus romanı ile Fransız romanı, 'mazi koridoru' ile 'vaka sathı')",
-              "Benzetme ve Somutlaştırma (Yazma becerisini yıllarca keman çalmaya benzetme; kişilerin geçmişini ayrıntılı biçimde verme yöntemini 'mazi koridoru' sözüyle somutlaştırma)",
-              "Tanımlama (\"Roman ve yazı, bir insanın görüşü, duyuşu ve ifade edişidir.\" ifadesiyle roman ve yazının niteliğini açıklama)"
+              "Karşılaştırma: Dostoyevski ile Stendhal, Rus romanı ile Fransız romanı karşılaştırılır.",
+              "Benzetme: Yazma ve çalışma süreci, iyi keman çalabilmek için uzun süre çalışmaya benzetilir.",
+              "Tanımlama: “Roman ve yazı, bir insanın görüşü, duyuşu ve ifade edişidir.” cümlesiyle roman ve yazının niteliği açıklanır."
             ]
           },
-          "guidance": "Anlatım biçimlerini metindeki işlevleriyle ilişkilendirin; açıklayıcı anlatımla tartışmacı anlatımı ayırt ettirin. Anlatım özelliğini anlatım biçimiyle karıştırmadan ve düşünceyi geliştirme yollarını örnekleriyle belirletin.",
+          "guidance": "Açıklayıcı ve tartışmacı anlatımı temel biçimler olarak ayırt ettirin; öyküleyici anlatımı yalnız günlük olayların aktarıldığı sınırlı bölümler için kullanın. Düşünceyi geliştirme yollarında karşılaştırma, benzetme ve tanımlamayı doğrudan metin örnekleriyle gösterin; “mazi koridoru” adlandırmasını tek başına bir düşünceyi geliştirme yolu saymayın.",
           "evidence_quotes": [
-            "Düşünmek ve yazmak da bir nevi kendimizle mücadeledir. İrade eseridir.",
-            "Bana Rus usulü daha derin ve psikolojik geliyor."
+            "Bana Rus usulü daha derin ve psikolojik geliyor.",
+            "İyi keman çalabilmek için yıllarca çalışmak lâzım.",
+            "Roman ve yazı, bir insanın görüşü, duyuşu ve ifade edişidir."
           ]
         },
         "content": null
@@ -3124,7 +3122,7 @@
           "answer",
           "evidence"
         ],
-        "display_prompt": "Mektup ve biyografi birlikte okunduğunda Mehmet Kaplan'ın yaşamı ve düşünce dünyasına ilişkin neler belirlenebilir?",
+        "display_prompt": "Mektup, biyografi ve M. Orhan Okay'ın değerlendirmesi birlikte okunduğunda Mehmet Kaplan'ın yaşamı ve düşünce dünyasına ilişkin neler belirlenebilir?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T01-S0031",
@@ -3132,7 +3130,7 @@
           "printed_page_range": "41",
           "book_heading": "Fark Edelim",
           "task_type": "QUESTION",
-          "prompt": "Mektup ve biyografi birlikte okunduğunda Mehmet Kaplan'ın yaşamı ve düşünce dünyasına ilişkin neler belirlenebilir?",
+          "prompt": "Mektup, biyografi ve M. Orhan Okay'ın değerlendirmesi birlikte okunduğunda Mehmet Kaplan'ın yaşamı ve düşünce dünyasına ilişkin neler belirlenebilir?",
           "prompt_mode": "VERIFIED_SUMMARY",
           "rights_mode": "DERIVED_ACTIVITY",
           "source_locator": "basılı s.41 / PDF s.42 — Fark Edelim",
@@ -3143,16 +3141,16 @@
           "entry_type": "question_answer",
           "printed_page": 41,
           "question_no": "Fark Edelim",
-          "prompt_summary": "Mektuptan, biyografiden ve Orhan Okay'ın metninden hareketle Mehmet Kaplan'ın hayatı ve düşünce dünyasına ilişkin tespitler",
-          "answer": "Mektup, biyografi ve Orhan Okay'ın tanıklık metni birlikte okunduğunda Mehmet Kaplan'ın günlük ve akademik hayatına, çalışma anlayışına, insan ilişkilerine ve edebiyata bakışına ilişkin birbirini tamamlayan ayrıntılar görülür.",
+          "prompt_summary": "Mektup, biyografi ve M. Orhan Okay'ın değerlendirmesinden hareketle Mehmet Kaplan'ın hayatı ve düşünce dünyasına ilişkin tespitler",
+          "answer": "Mektup, biyografi ve M. Orhan Okay'ın değerlendirmesi birlikte okunduğunda Kaplan'ın günlük ve akademik hayatı, çalışma anlayışı, insan ilişkileri ve edebiyata bakışı hakkında birbirini tamamlayan bilgiler elde edilir. Her tespitin hangi kaynağa dayandığı ayrı gösterilmelidir.",
           "source_locator": "basılı s.41 / PDF s.42; ana metin ve biyografi s.37-38",
           "answer_sections": {
             "Mektuptan doğrudan görülenler": "Fakültede sınavların başlaması, Küllük kahvesine gitmesi, yalnızlık duygusu, ailesiyle ilişkileri, Eskişehir'e gitme planı, Namık Kemal'in eserlerini okuyup tahlil etmesi ve gelecek yıl onun çevresiyle hayatını araştırmayı planlaması; Dostoyevski ve roman tekniği üzerine düşünmesi; Âli'yi çalışmaya ve yazmaya teşvik etmesi.",
             "Biyografiden öğrenilenler": "1935'te İstanbul Üniversitesi Edebiyat Fakültesi Türk Dili ve Edebiyatı Bölümüne kaydolduğu; Tanzimat'ın 100. yılı dolayısıyla kurulan Yeni Türk Edebiyatı kürsüsünde asistan olduğu ve kürsünün başına getirilen Ahmet Hamdi Tanpınar'la çalıştığı; sonraki yıllarda edebiyat, kültür ve dil alanlarında araştırma, inceleme ve denemeler verdiği.",
             "M. Orhan Okay'ın tanıklığından öğrenilenler": "Kaplan'ın karşısındaki insanın sorunlarıyla yakından ilgilenen diğerkâm bir hoca olduğu; mektuplarının öğrencileri ve genç araştırmacıları yetiştiren birer ders niteliği taşıdığı; Türk üniversitelerinde Yeni Türk Edebiyatı disiplininin kurucusu ve yol göstericilerinden biri sayıldığı; kendi yöntemini tek ve değişmez doğru olarak dayatmayıp alternatif metotlara açık olduğu.",
-            "Birlikte değerlendirildiğinde": "Mektuptaki çalışma disiplini, edebî merakı ve yönlendirici tavır; biyografi ve Orhan Okay'ın tanıklığındaki akademisyen, araştırmacı ve rehber hoca kimliğiyle örtüşür. Böylece kişisel mektupta görülen özelliklerin sonraki akademik kişiliğinin önemli çizgileriyle uyumlu olduğu söylenebilir."
+            "Kaynakların birbirini desteklediği yönler": "Mektuptaki çalışma disiplini, edebî merakı ve yönlendirici tavır; biyografi ve Orhan Okay'ın tanıklığındaki akademisyen, araştırmacı ve rehber hoca kimliğiyle örtüşür. Böylece kişisel mektupta görülen özelliklerin sonraki akademik kişiliğinin önemli çizgileriyle uyumlu olduğu söylenebilir."
           },
-          "guidance": "Öğrenciden her bilgiyi hangi kaynaktan çıkardığını belirtmesini isteyin: “Bunu mektupta mı görüyoruz, biyografide mi öğreniyoruz, yoksa Orhan Okay mı söylüyor?” Ardından bu üç kaynağın Kaplan'ın hangi ortak yönünü desteklediğini sordurun.",
+          "guidance": "Her tespiti kaynağıyla birlikte gösterin: mektupta doğrudan görülenler, biyografiden öğrenilenler ve M. Orhan Okay'ın değerlendirmesinde belirtilenler birbirine karıştırılmamalıdır. Son aşamada bu kaynakların Kaplan'ın hangi yönleri konusunda birbirini desteklediğini tartıştırın; bir kaynaktaki bilgiyi diğer kaynağın doğrudan kanıtı gibi sunmayın.",
           "evidence_quotes": [
             "Fakülte’de imtihanlar başladı",
             "Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim",
@@ -3192,7 +3190,7 @@
           "printed_page": 41,
           "question_no": "Sıra Sizde",
           "prompt_summary": "Mehmet Kaplan'ın mektubundaki öznel ve nesnel ifadeleri belirleme ve türü belirlemedeki etkilerini değerlendirme",
-          "answer": "Mektuptaki ifadeler kişisel duygu ve edebî yorumları yansıtan öznel yargılar ile doğrulanabilir durum ve bilgileri bildiren nesnel yargılar olarak ayrılabilir. Öznel ifadeler mektubun kişisel ve edebî yönünü, nesnel ifadeler ise tarih ve yaşam bağlamını görünür kılar. Bu ayrım tek başına türü belirlemez: özel/edebî mektup değerlendirmesinde muhatap ilişkisi, amaç, içerik ve edebî değer birlikte dikkate alınmalıdır.",
+          "answer": "Mektupta kişisel duygu ve estetik değerlendirmeleri bildiren öznel ifadeler ile dış dünyada doğrulanabilir bilgi veya durum bildiren nesnel nitelikli ifadeler birlikte yer alır. Bu ayrım mektubun kişisel ve düşünsel yönlerini görmeye yardımcı olur; ancak tek başına mektubun türünü belirlemez. Tür değerlendirmesinde muhatap, amaç, içerik ve edebî nitelik birlikte dikkate alınmalıdır.",
           "source_locator": "basılı s.41 / PDF s.42; ana metin s.37-38",
           "answer_sections": {
             "Öznel İfadeler": [
@@ -3202,14 +3200,13 @@
               "“Çalışmanın kabiliyeti keşfettiğini, hatta yarattığını iddia edeceğim.” (Kişisel düşünce ve tez)"
             ],
             "Nesnel İfadeler": [
-              "“24 Haziran 940 İstanbul” (Somut tarih ve yer bilgisi)",
-              "“Fakülte’de imtihanlar başladı.” (Metinde bildirilen, dış kaynakla sınanabilir durum)",
-              "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim...” (Yazarın gerçekleştirdiğini bildirdiği akademik faaliyet)",
-              "“Ben bu ay sonunda Eskişehir’e gidiyorum. Bir ay kalacağım.” (Gerçekleştiği henüz doğrulanmayan seyahat planı/niyeti)"
+              "“24 Haziran 940 İstanbul” (Doğrulanabilir tarih ve yer bilgisi)",
+              "“Fakülte’de imtihanlar başladı.” (Dış dünyada doğrulanabilir bir durum bildirimi)",
+              "“Bu sene Namık Kemal’in eserlerini okudum ve tahlil ettim...” (Yazarın doğrulanabilir bir faaliyet bildirimidir.)"
             ],
-            "Türü belirlemedeki etki değerlendirmesi": "Öznel ifadeler kişisel yaşantı ve edebî değerlendirme yönünü göstermede daha etkili olabilir; nesnel ifadeler tarihsel ve gündelik bağlamı destekler. Ancak ikisinden biri tek başına mektubun türünü tayin etmez. Tür değerlendirmesi muhatap, amaç, içerik ve edebî değer gibi ölçütlerle gerekçelendirilmelidir."
+            "Türü belirlemedeki etki değerlendirmesi": "Öznel ifadeler kişisel duygu ve edebî değerlendirme yönünü, nesnel nitelikli ifadeler ise tarihsel ve gündelik bağlamı görünür kılar. Ancak öznel–nesnel ayrımı tek başına türü tayin etmez; muhatap, amaç, içerik ve edebî nitelik birlikte değerlendirilmelidir."
           },
-          "guidance": "Öğrencilerin öznel-nesnel ayrımını örneklerle yapmalarını, ardından bu ayrımın mektubun kişisel/edebî yönünü nasıl gösterdiğini tartışmalarını isteyin. “Öznel = edebî mektup” gibi tek başına sınıflandıran bir eşitleme kurmayın; başka gerekçeli değerlendirmeleri kabul edin.",
+          "guidance": "Önce öznel ve nesnel nitelikli ifadeleri metinden ayırt ettirin. Geleceğe ilişkin niyet veya planları doğrudan gerçekleşmiş nesnel olgu gibi sınıflandırmayın. Ardından bu ayrımın türü tek başına belirlemeye yetmediğini; muhatap, amaç ve içerikle birlikte değerlendirilmesi gerektiğini vurgulayın.",
           "evidence_quotes": [
             "Karamazoflar romanı şimdiye kadar okuduklarıma hiç benzemiyor",
             "Bana Rus usulü daha derin ve psikolojik geliyor",
@@ -3341,15 +3338,15 @@
           "printed_page": 43,
           "question_no": "Fark Edelim",
           "prompt_summary": "Mehmet Kaplan'ın mektubunun mektup türlerinden hangisini örneklediği ve gerekçelendirilmesi",
-          "answer": "Mehmet Kaplan'ın mektubu, özel mektup biçiminde yazılmış bir edebî mektup örneğidir. Kaplan, Âli'ye doğrudan hitap eder ve günlük hayatını paylaşır; ancak mektubun önemli bir bölümünde roman tekniği, okuma, yazma ve çalışma üzerine düşüncelerini aktarır. Bu yönüyle mektup, dönemin edebiyat ve düşünce ortamına ışık tutar. Kitaptaki biyografi de Kaplan'ın “edebî mektuplarıyla” mektup türünün önde gelen yazarları arasında kabul edildiğini belirtir. Kurumsal veya ticari bir amaç taşımadığı için resmî ya da iş mektubu değildir.",
+          "answer": "Mehmet Kaplan'ın metni, özel mektubun samimi ve kişisel özelliklerini taşırken edebiyat ve roman üzerine düşünceler içermesi nedeniyle edebî mektup niteliği de gösterir. Kitabın kendi sınıflandırması içinde en uygun cevap edebî mektuptur; bunu özel mektup biçimiyle birlikte gerekçelendirmek gerekir.",
           "source_locator": "basılı s.43 / PDF s.44; ana metin s.37-38",
           "answer_sections": {
-            "Edebî mektup yönü (belirleyici)": "Mektup, edebiyatla ilgilenen iki dost arasında yazılmıştır. Kaplan, Dostoyevski ile Stendhal'in roman anlayışlarını karşılaştırır, “mazi koridoru” kavramını kullanır ve yazmanın irade ve emek istediğini savunur. Bu değerlendirmeler mektuba edebî değer ve dönemin düşünce hayatı için belge niteliği kazandırır.",
-            "Özel mektup biçimi": "“Âli,” hitabı, tarih ve yer kaydı; yalnızlık, aile ve arkadaş haberleri ile samimi kapanış, mektubun özel mektup biçiminde ve üslubunda yazıldığını gösterir.",
-            "Sonuç": "Mektup edebî mektup olarak sınıflandırılır; sınıflandırma yapılırken özel mektup biçiminde yazıldığı da belirtilmelidir."
+            "Edebî mektup yönü (belirleyici)": "Kaplan, Dostoyevski ve Stendhal üzerinden roman tekniğini tartışır, “mazi koridoru” kavramını kullanır ve yazma ile çalışma üzerine düşüncelerini paylaşır. Bu içerik mektubun edebî ve düşünsel niteliğini belirginleştirir.",
+            "Özel mektup biçimi": "“Âli,” hitabı, tarih ve yer kaydı; yalnızlık, aile, arkadaşlık ve gündelik hayatla ilgili paylaşımlar ile samimi kapanış, özel mektup özelliklerini gösterir.",
+            "Sonuç": "Metin özel mektup biçiminin özelliklerini taşırken içerdiği edebî düşünceler nedeniyle edebî mektup olarak sınıflandırılabilir."
           },
-          "explanation": "Kitabın s.42'deki tanımına göre edebî mektupta yazar birine seslense de “asıl amaç bu duygu, düşünce ve görüşleri herkese anlatmaktır.” Kaplan'ın mektubu yazıldığı anda belirli bir dosta yöneliktir; mektuplar sonradan yayımlanmıştır (haz.: Zeynep Kerman, İnci Enginün). Bu nedenle “edebî değer taşıyan özel mektup” diyen ve bunu hitap ile iletişim amacından kanıtla gerekçelendiren öğrenci cevabı da kabul edilebilir. Kitabın s.38'deki biyografisi Kaplan'ı “edebî mektuplarıyla” andığı için kitabın kendi çerçevesine en uygun birincil cevap edebî mektuptur.",
-          "guidance": "Önce mektubun kimden kime yazıldığını ve amacını belirletin. Ardından kişisel haberleşme ile edebî düşüncenin metinde hangi bölümlerde ve ne ölçüde yer aldığını karşılaştırtın. “Edebî değer taşıyan özel mektup” gibi gerekçeli farklı bir sınıflandırmayı da kabul edin; kanıt göstermeden iki türü yan yana yazmayı yeterli saymayın.",
+          "explanation": "Kitabın s.38'deki biyografisi Kaplan'ı “edebî mektuplarıyla” anar; metinde ise belirli bir dosta yönelik kişisel haberleşme özellikleri açıkça görülür. Bu nedenle birincil sınıflandırma edebî mektuptur. “Edebî değer taşıyan özel mektup” gibi gerekçeli bir cevap da metindeki muhatap ve içerik özellikleriyle temellendirildiğinde kabul edilebilir.",
+          "guidance": "Önce mektubun muhatabını, amacını ve içeriğini belirletin; ardından s.42'deki mektup türleriyle karşılaştırın. Öğrenciye sonucu baştan vermeyin. Edebî mektup ile özel mektup özelliklerinin metinde birlikte bulunabileceğini kanıtlarla tartıştırın.",
           "evidence_quotes": [
             "Karamazoflar romanı şimdiye kadar okuduklarıma hiç benzemiyor",
             "ben bu hâle mazi koridoru diyorum",
@@ -3358,7 +3355,7 @@
           ]
         },
         "content": {
-          "lead": "Resmî ve iş mektupları belirli bir kurum veya işlem amacıyla yazılır; Kaplan'ın mektubundaki kişisel ve edebî paylaşım bu amaçlardan ayrılır.",
+          "lead": "S.42'deki mektup türlerini amaç, muhatap ve içerik bakımından karşılaştırarak bu metnin hangi türe daha yakın olduğunu gerekçelendirin.",
           "sections": [
             {
               "title": "Resmî mektup",
@@ -3416,7 +3413,7 @@
             },
             "Yapı Unsurları": {
               "Yazıcı": "Mukaddime (giriş), muhavere (söyleşme), fasıl (asıl oyun) ve bitiş bölümleri; kişiler (tipler), dramatik mekân (yazıcı dükkânı), sahneleme ortamı (hayal perdesi), dramatik çatışma ve olay örgüsü.",
-              "Mektup (Âli'ye Mektuplar)": "Tarih ve yer kaydı, hitap bölümü, giriş, gelişme (edebî tahliller ve günlük haberler), sonuç (selam ve dilekler), imza ve adres bölümü."
+              "Mektup (Âli'ye Mektuplar)": "Tarih ve yer kaydı, hitap bölümü, giriş, gelişme (edebî tahliller ve günlük haberler), sonuç (selam ve dilekler), yazar adı ve ulaştırma/adres bilgisi."
             },
             "Dil ve Üslup": {
               "Yazıcı": "Karşılıklı konuşmaya (diyalog) dayalı, ses benzerlikleri ve söz oyunlarıyla örülü, yöresel ağızları ve zümre dillerini yansıtan mizahî halk dili.",
@@ -3424,10 +3421,10 @@
             },
             "İleti": {
               "Yazıcı": "Kişinin yetkin olmadığı işe kalkışmasının doğuracağı uyuşmazlıklar; dil ve kültür farklılıklarının iletişimdeki rolü (açık ve örtük mizah).",
-              "Mektup (Âli'ye Mektuplar)": "Dostluğun ve paylaşmanın iyileştirici gücü; kabiliyetin sabır, çalışma ve iradeyle gelişeceği; edebiyatın hayatı derinleştiren bir mücadele olduğu."
+              "Mektup (Âli'ye Mektuplar)": "Dostluk ve paylaşmanın kişiyi destekleyebilmesi; çalışmanın yeteneğin gelişmesine katkı sağlayabilmesi; düşünmek ve yazmanın irade ve emek istemesi."
             }
           },
-          "guidance": "Tabloda yer alan 6 ölçütün tamamının karşılaştırmalı olarak doldurulması sağlanmalı. Dönem ölçütünde Yazıcı için kesin bir tarih verilmediği özellikle belirtilmeli; tarihsel çevre metindeki dil, meslek, araç, yer ve gündelik hayat unsurlarından hareketle yorumlanmalıdır."
+          "guidance": "Tabloda yer alan 6 ölçütün tamamını iki metni karşılaştırarak doldurun. Dönem ölçütünde Yazıcı için kesin tarih verilmediğini belirtin. Âli'ye Mektuplar'ın yapı unsurlarında yalnız metinde doğrulanabilen unsurları kullanın; yazar adını fiziksel imza varmış gibi sunmayın. İleti bölümündeki çıkarımları metindeki açık söz ve davranışlarla ilişkilendirin."
         },
         "content": null
       },
