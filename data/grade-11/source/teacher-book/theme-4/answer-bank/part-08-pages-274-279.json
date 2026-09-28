@@ -29,7 +29,7 @@
       "answer": "Örnek yapı çözümlemesi aşağıdadır.",
       "answer_sections": {
         "Kişiler": "Adı verilmeyen anlatıcı memur, yaşlı memur ve genç memur.",
-        "Yer/mekân": "Bir dairedeki merdivenler, üst kat ve yaşlı memurun bulunduğu kanepe çevresi. Mekân dar tutulduğu için karşılaşmalar ve yol verme hareketi öne çıkar.",
+        "Yer/mekân": "Bir kurum/iş yeri binasının merdivenleri ve üst katı. Mekân dar tutulduğu için karşılaşmalar ve yol verme hareketi öne çıkar.",
         "Zaman": "Kısa aralıklarla art arda gelen birkaç karşılaşma. “Biraz sonra”, “İşimi bitirince” ve “Az önce” ifadeleri olayların aynı iş günü içinde geçtiğini düşündürür; ancak belirli gün, tarih ve saat verilmez.",
         "Olay örgüsü": "Anlatıcı işini görmek için merdivenleri hızla çıkar ve yaşlı memura yol verir. Bir süre sonra inerken yukarı çıkan yaşlı adama yeniden yol verir; onun aceleyi sorgulayan sözünü önemsemez. Daha sonra genç memurla karşılaşır, yaşlı adamın öldüğünü öğrenir ve ilk kez genç birine yol verir. Yukarı çıkma amacını sorgulayıp aşağı inmeyi seçer."
       }
@@ -41,7 +41,7 @@
       "question_no": "Düşünelim Paylaşalım 1",
       "source_locator": "basılı s.266 ve s.275 / PDF s.267 ve s.276 — Düşünelim Paylaşalım soru 1",
       "prompt_summary": "Merdiven’in türü, içeriği ve dilinden yazıldığı döneme ilişkin çıkarım yapma",
-      "answer": "Daire, memur, işini bitirme ve cankurtaran çağırma gibi ayrıntılar metnin modern büro yaşamında geçtiğini düşündürür. Kısa anlatım ve gündelik diyaloglar da bu çevreyi destekler. Ancak bu sayfalarda öykünün yazıldığı kesin yıl verilmez; Ferit Edgü’nün biyografisindeki kuşak bilgisi, tek başına metnin yazım tarihini belirlemez."
+      "answer": "Merdiven, Cumhuriyet Dönemi Türk edebiyatının modern hikâye anlayışı içinde değerlendirilebilir. Ferit Edgü’nün 1950 kuşağı sanatçılarından olması; küçürek hikâye biçimi, gündelik konuşma dili, memuriyet/büro yaşamı ve bireyin iç sorgulamasının öne çıkması bu çıkarımı destekler. Ancak bu bilgilerden eserin kesin yazım yılı belirlenemez."
     },
     {
       "question_id": "T4-P275-Q02A",
@@ -79,9 +79,9 @@
       "prompt_summary": "Merdiven’de iç ve kişiler arası çatışmaları, bunların sonuçlarını ve varsayımsal gelişmeleri açıklama",
       "answer": "Öykünün çatışmaları kısa karşılaşmalarla anlatıcının kararını değiştirir; bazı gelişmeler gerçekleşmemiş olsaydı son da farklılaşabilirdi.",
       "answer_sections": {
-        "İnsanın kendisiyle çatışması": "Anlatıcı işine yetişme ve sürekli hareket etme alışkanlığı ile yaşlı memurun uyarısını düşünme arasında kalır. Kıdem ve yükselme anlayışıyla yaşamın sınırlılığı karşı karşıya gelir.",
-        "İnsan-insan çatışması": "Anlatıcının yaşlı memura önce yol vermesi, sonra sözünü önemsememesi; genç memurla yaş ve kıdem konusundaki ilk tepkisi ve sonunda ona yol vermesi. Bu çatışma açık bir kavga değil, tutum ve bakış açılarındaki gerilimdir.",
-        "Genç memura yol verme": "Başlangıçta “yeni yetme” diye küçümsediği birine yol vermesi, yaş ve kıdemin her durumda öncelik sağlamadığını fark ettiğini; kendisinin de başkasına yer açabileceğini gösterir.",
+        "İnsanın kendisiyle çatışması": "Anlatıcının iş telaşı, yaş ve kıdem algısı ile yaşlı memurun ölümünden sonra gelişen yaşam sorgulaması arasında bir gerilim oluşur. Başlangıçta sürekli hareket etmeye ve yukarı çıkmaya odaklanan anlatıcı, sonunda kendi yönünü ve önceliklerini sorgular.",
+        "İnsan-insan çatışması": "Metinde belirgin ve açık bir kişi–kişi çatışması yoktur. Anlatıcı ile ihtiyar ve genç memur arasında yaş, kuşak ve bakış farklarından doğan örtük gerilimler görülür; ancak bunlar açık bir kavgaya veya karşılıklı mücadeleye dönüşmez.",
+        "Genç memura yol verme": "Başlangıçta “yeni yetme” diye küçümsediği genç memura yol vermesi, anlatıcının kendi yaşını ve kuşaklar arasındaki konumunun değiştiğini fark etmeye başladığını; önceliklerini yeniden değerlendirdiğini düşündürür.",
         "Anlatıcı ihtiyarla karşılaşmasaydı": "Aceleye ilişkin uyarı ve yaşlılıkla ilgili ilk karşılaşma yaşanmazdı; anlatıcının iş telaşını sorgulaması için önemli bir neden eksilirdi.",
         "Anlatıcı genç memurla karşılaşmasaydı": "Yaşlı memurun ölümünü ve yukarıdaki durumu öğrenmeyebilirdi. Bu nedenle son kararı ve genç birine yol verme anı muhtemelen oluşmazdı.",
         "İhtiyar memur ölmemiş olsaydı": "Anlatıcı onun sözlerini sorup deneyimini öğrenebilirdi; ölümün yarattığı sarsıntı yerine iki kişi arasında daha doğrudan bir konuşma gelişebilirdi. Öykünün sonundaki sorgulama yine mümkün olsa da etkisi değişirdi."
@@ -111,10 +111,10 @@
       "prompt_summary": "Öyküdeki davranışları uygun değerlerle ilişkilendirme",
       "answer": "Tablodaki örnek satıra ek olarak davranışlar şu değerlerle ilişkilendirilebilir.",
       "answer_sections": {
-        "Anlatıcının görevini yapmak için merdivenleri hızla çıkması": "Sorumluluk ve çalışkanlık; aynı zamanda aşırı acele olarak da değerlendirilebilir.",
-        "Anlatıcının kendisinden genç birine yol vermesi": "Saygı, nezaket, tevazu ve başkasına alan açma.",
-        "İhtiyar memurun “Bahtiyar ol oğlum” demesi": "İyi niyet, şefkat, dua ve nezaket.",
-        "Anlatıcının ihtiyar memuru merak edip gence sorması": "Duyarlılık, ilgi ve insana değer verme."
+        "Anlatıcının görevini yapmak için merdivenleri hızla çıkması": "Sorumluluk, çalışkanlık.",
+        "Anlatıcının kendisinden genç birine yol vermesi": "Saygı, nezaket, duyarlılık.",
+        "İhtiyar memurun “Bahtiyar ol oğlum” demesi": "İyi niyet, nezaket.",
+        "Anlatıcının ihtiyar memuru merak edip gence sorması": "Duyarlılık, ilgi, insana değer verme."
       }
     },
     {
