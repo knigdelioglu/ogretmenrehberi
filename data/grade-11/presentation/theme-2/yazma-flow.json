@@ -164,7 +164,7 @@
       "answer_id": "T2-P151-PERF02",
       "layout": "process",
       "density": "compact",
-      "prompt": "4. adım — Gözlem ve karşılaştırma",
+      "prompt": "4. adım — Müze çalışmasını paylaşma",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
@@ -173,7 +173,7 @@
       "answer_id": "T2-P151-PERF03",
       "layout": "process",
       "density": "compact",
-      "prompt": "5. adım — Görsel destek",
+      "prompt": "5. adım — Karşılaştırma ve sınıflandırmalardan özgün ifadeler üretme",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
@@ -182,7 +182,7 @@
       "answer_id": "T2-P151-PERF04",
       "layout": "process",
       "density": "compact",
-      "prompt": "6. adım — Kaynak ve kişisel izlenim",
+      "prompt": "6. adım — Görsel, işitsel öge ve alıntılarla içeriği zenginleştirme",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
@@ -242,7 +242,7 @@
       "answer_id": "T2-P152-PERF02",
       "layout": "assessment",
       "density": "compact",
-      "prompt": "İzlenim yazısı — teslim öncesi 10 maddelik kontrol",
+      "prompt": "Ek destek — s.152 yazma aşamalarından teslim öncesi kontrol",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "items": [
@@ -256,7 +256,8 @@
           "Gereksiz tekrar / anlatım bozukluğu var mı?",
           "Yazım ve noktalama kontrol edildi mi?",
           "Sonuç kişisel kazanımı belirtiyor mu?"
-        ]
+        ],
+        "lead": "Bu kontrol, kitaptaki 13 yazma aşamasından türetilmiş ek destektir; ayrı bir kitap etkinliği değildir."
       }
     },
     {
@@ -281,8 +282,7 @@
             "title": "Karekod formları",
             "body": "Ayrıntılı puanlama ve akran değerlendirme formları karekod bağlantısındadır. Görmediğiniz ölçüt veya puan aralığı eklemeyin."
           }
-        ],
-        "note": "Öğretmen uygulaması: Öz değerlendirmede Kısmen / Hayır işaretlenen maddeleri sonraki düzeltmeye bağlayın."
+        ]
       }
     },
     {
