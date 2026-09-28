@@ -77,43 +77,16 @@
       "entry_type": "source_limited",
       "printed_page": 217,
       "question_no": "Söz Varlığımız 1-2",
-      "prompt_summary": "Basılı kelime duvarındaki direniş, ihbar ve torna kelimelerinin anlamını tahmin etme ve karşılık önerme",
-      "answer": "Basılı s.217’deki üç kelimenin genel sözlük anlamları aşağıdadır. Bunlar ses kaydındaki kullanımı tek başına belirlemez: önce duyduğunuz cümleden bağlam anlamını tahmin edin, ardından sözlükle karşılaştırın.",
+      "prompt_summary": "Direnişin Ustaları'ndaki direniş, ihbar, torna, kafa yormak ve haber uçurmak sözlerinin bağlam anlamını tahmin etme ve karşılık önerme",
+      "answer": "Ders kitabındaki Söz Varlığımız etkinliğinde beş unsur yer alır: “direniş”, “ihbar”, “torna”, “kafa yormak” ve “haber uçurmak”. Bunların bağlama uygun anlamları ve yerine kullanılabilecek sözler, Direnişin Ustaları kaydı dinlenmeden kesin olarak belirlenemez; kitap anlam tahmininin bağlamdan yapılmasını ve ardından TDK Güncel Türkçe Sözlük ile kontrol edilmesini ister.",
       "source_locator": "basılı s.217-218 / PDF s.218-219 — Söz Varlığımız / QR medya gerekli",
       "answer_sections": {
-        "direniş": {
-          "baglam_tahmini": "[Dinlenen cümleden çıkarılan anlam]",
-          "sozluk_dogrulamasi": "[TDK'den seçilen bağlama uygun anlam]",
-          "alternatif": "[Bağlamı bozmayan öneri]"
-        },
-        "ihbar": {
-          "baglam_tahmini": "[...]",
-          "sozluk_dogrulamasi": "[...]",
-          "alternatif": "[...]"
-        },
-        "torna": {
-          "baglam_tahmini": "[...]",
-          "sozluk_dogrulamasi": "[...]",
-          "alternatif": "[...]"
-        }
-      },
-      "dictionary_terms": [
-        {
-          "term": "direniş",
-          "meaning": "Karşı koyma, direnme.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/direni%C5%9F"
-        },
-        {
-          "term": "ihbar",
-          "meaning": "Bildirme, haber verme.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/ihbar"
-        },
-        {
-          "term": "torna",
-          "meaning": "İşlenecek parçayı döndürürken kesici bir araçla biçim vermeye yarayan makine.",
-          "source": "TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/kelime/torna"
-        }
-      ]
+        "direniş": "Bağlam anlamı ve yerine kullanılabilecek söz: QR medya gerekli.",
+        "ihbar": "Bağlam anlamı ve yerine kullanılabilecek söz: QR medya gerekli.",
+        "torna": "Bağlam anlamı ve yerine kullanılabilecek söz: QR medya gerekli.",
+        "kafa yormak": "Bağlam anlamı ve yerine kullanılabilecek söz: QR medya gerekli.",
+        "haber uçurmak": "Bağlam anlamı ve yerine kullanılabilecek söz: QR medya gerekli."
+      }
     },
     {
       "question_id": "T3-P218-QH01",
@@ -137,7 +110,7 @@
       "printed_page": 218,
       "question_no": "Hatırlayalım 2",
       "prompt_summary": "Radyo tiyatrosunda müzik, ses efekti, seslendirme ve tonlamanın önemi",
-      "answer": "Ses efekti, seslendirme, tonlama ve müzik dinleyicide anlatıma ilişkin farklı ipuçları oluşturabilir; somut işlevleri kayıttan çıkarılır.",
+      "answer": "Radyo tiyatrosunda görüntünün yerini büyük ölçüde ses, söz, efekt ve müzik doldurur. Ses efektleri mekânı ve eylemi canlandırmaya, farklı ses renkleri kişileri ayırt etmeye, tonlama duygu ve tutumu yansıtmaya, müzik ise atmosferi ve duyguyu desteklemeye yardımcı olur.",
       "evidence_quotes": [
         "görüntüden yoksun olduğundan ister istemez bu boşluğu ses, söz, efekt ve müzik dolduracaktır",
         "İki aynı renkteki sese bir radyo oyununda rol verilmez.",
@@ -145,11 +118,10 @@
       ],
       "source_locator": "basılı s.218 / PDF s.219 — Hatırlayalım soru 2",
       "answer_sections": {
-        "ses_efekti": "Kapı gıcırtısı örneğinde olduğu gibi bir ses; nesnenin, eylemin, zamanın, mekânın veya duygunun nasıl tasarlandığına ilişkin ipuçları verebilir.",
-        "seslendirme": "Farklı ses renkleri kişilerin birbirinden ayırt edilmesine ve karakterlerin sözlerinin anlaşılmasına yardım edebilir.",
-        "tonlama": "Aynı sözün nasıl söylendiği duygu, tutum veya niyete ilişkin olası bir yorum oluşturabilir. Bu yorumu gerçek ses kullanımına dayandırın.",
-        "muzik": "Atmosfer, duygu veya geçiş hissi müzikle desteklenebilir; işlevini dinlediğiniz oyundaki somut kullanımdan çıkarın.",
-        "sonuc": "Bunlar örnek tahminlerdir. Metindeki açıklamalara dayanarak başka gerekçeli tahminler de yapabilirsiniz."
+        "müzik": "Atmosferi, duyguyu ve sahneler arasındaki geçiş hissini destekler.",
+        "ses_efekti": "Kapı gıcırtısı örneğinde olduğu gibi mekân, nesne, eylem ve duruma ilişkin işitsel ayrıntılar oluşturur.",
+        "seslendirme": "Farklı ses renkleri kişilerin birbirinden ayırt edilmesine ve karakterlerin belirginleşmesine yardım eder.",
+        "tonlama": "Sözün hangi duygu ve tutumla söylendiğini dinleyiciye aktararak anlamı güçlendirir."
       }
     },
     {
@@ -158,13 +130,12 @@
       "printed_page": 218,
       "question_no": "Metni Anlayalım 1",
       "prompt_summary": "Direnişin Ustaları'nın konusu, teması ve yazılma amacı",
-      "answer": "Kaydı dinledikten sonra konu, tema ve yazılma amacı için aşağıdaki üç alanı doldurun.",
+      "answer": "Ders kitabı bu sorunun Direnişin Ustaları adlı çok modlu metin dinlenerek/izlenerek cevaplanmasını ister. PDF’de eserin metni veya transkripti bulunmadığından konu, tema ve yazılma amacı yalnız PDF’ye dayanarak belirlenemez.",
       "source_locator": "basılı s.218 / PDF s.219 — Metni Anlayalım soru 1 / QR medya gerekli",
       "answer_sections": {
-        "konu": "Metinde somut olarak kimlerin başından ne geçiyor? → [...].",
-        "tema": "Bu olayların arkasındaki daha genel duygu/düşünce nedir? → [...].",
-        "yazilma_amaci": "Dinleyicide hangi düşünceyi, farkındalığı veya duyguyu oluşturmayı amaçlıyor olabilir? → [...].",
-        "kanit": "Her sonucun yanına en az bir replik, davranış veya ses/olay ayrıntısı eklenir."
+        "konu": "QR medya olmadan belirlenemez.",
+        "tema": "QR medya olmadan belirlenemez.",
+        "yazilma_amaci": "QR medya olmadan belirlenemez."
       }
     },
     {
@@ -173,16 +144,10 @@
       "printed_page": 219,
       "question_no": "2",
       "prompt_summary": "Kahramanların davranışlarından duygu ve düşüncelerine çıkarım",
-      "answer": "Kahramanların duygu ve düşünceleri, ses kaydındaki somut söz ve davranışlardan çıkarılmalıdır; karakter adı ve duygu önceden doldurulmaz.",
+      "answer": "Kahramanların davranışlarından duygu ve düşüncelerine yönelik çıkarım yapabilmek için Direnişin Ustaları kaydındaki gerçek kişi, söz ve davranışların bilinmesi gerekir. PDF bunları vermediğinden yalnız PDF’ye dayanarak bu soru cevaplanamaz.",
       "source_locator": "basılı s.219 / PDF s.220 — soru 2 / QR medya gerekli",
       "answer_sections": {
-        "sablon": [
-          "Kişi: [...]",
-          "Söylediği / yaptığı: [...]",
-          "Olası duygu veya düşünce: [...]",
-          "Bunu düşündüren kelime, ses tonu veya davranış: [...]",
-          "Başka bir yorum mümkün mü? [...]"
-        ]
+        "kaynak_durumu": "Kahramanların adları, davranışları ve replikleri PDF’de yer almıyor; QR medya gerekli."
       }
     },
     {
@@ -191,10 +156,10 @@
       "printed_page": 219,
       "question_no": "3",
       "prompt_summary": "Seslendirilmek istenecek kahramanı seçip gerekçelendirme",
-      "answer": "Bu soruda kendi tercihinizi belirtin. Ses kaydında gerçekten bulunan bir kişiyi seçin ve seçiminizi o kişinin konuşma biçimi, duygu değişimi veya rolüyle gerekçelendirin.",
+      "answer": "Seslendirilmek istenecek kahramanın seçilebilmesi ve gerekçelendirilmesi için Direnişin Ustaları kaydındaki kahramanların ve konuşma biçimlerinin bilinmesi gerekir. PDF’de bu bilgiler bulunmadığından yalnız PDF’ye dayanarak gerçek bir kahraman adıyla örnek tercih verilemez.",
       "source_locator": "basılı s.219 / PDF s.220 — soru 3 / QR medya gerekli",
       "answer_sections": {
-        "cevap_sablonu": "“[...] kişisini seslendirmek isterdim; çünkü onun [...] özelliğini/ses geçişini canlandırmak ilgimi çekiyor. Bunu [...] repliği veya sahnesinde fark ettim.”"
+        "kaynak_durumu": "Kahraman adı ve seslendirme tercihini gerekçelendirecek replik/ses özellikleri için QR medya gerekli."
       }
     },
     {
@@ -203,13 +168,13 @@
       "printed_page": 219,
       "question_no": "4",
       "prompt_summary": "Direnişin Ustaları'nı dönem, zihniyet, üslup, ileti ve tür bakımından sınıflandırma",
-      "answer": "Tür kesin olarak radyo tiyatrosudur; dönem, zihniyet, üslup ve ileti ise ses kaydındaki kanıtlara göre doldurulmalıdır.",
+      "answer": "PDF’den kesin olarak belirlenebilen özellik türün radyo tiyatrosu olduğudur. Dönem, zihniyet, üslup ve ileti ise Direnişin Ustaları kaydındaki içerik ve işitsel özelliklere bağlıdır; QR medya olmadan belirlenemez.",
       "answer_sections": {
-        "tur": "Radyo tiyatrosu — ses, söz, efekt ve müzikle kurulan dramatik anlatı.",
-        "donem": "[Metindeki tarih, kişi, yer, kurum, eşya veya olay ipuçlarından çıkarım].",
-        "zihniyet": "[Duyulan söz/davranış → olası değer, inanç veya kabul → kayıttaki dayanak; yorumu kayıttan çıkarın.]",
-        "uslup": "[Diyalog, söz varlığı, tonlama, ritim ve ses kullanımından çıkarım].",
-        "ileti": "[Metindeki olay/sözlerden çıkarılan ana düşünce + kanıt]."
+        "tur": "Radyo tiyatrosu.",
+        "donem": "QR medya olmadan belirlenemez.",
+        "zihniyet": "QR medya olmadan belirlenemez.",
+        "uslup": "QR medya olmadan belirlenemez.",
+        "ileti": "QR medya olmadan belirlenemez."
       },
       "source_locator": "basılı s.219 / PDF s.220 — soru 4 / QR medya gerekli"
     },
@@ -219,12 +184,10 @@
       "printed_page": 219,
       "question_no": "5",
       "prompt_summary": "İçerik, dil ve üsluptan yazarın sanat anlayışına çıkarım",
-      "answer": "Yazarın sanat anlayışına ilişkin çıkarım, biri içerikten, biri dil/üsluptan en az iki gerçek kanıta dayanmalıdır. QR medya görülmeden belirli bir sanat anlayışı etiketi konmamalıdır.",
+      "answer": "Yazarın sanat anlayışına ilişkin çıkarım, Direnişin Ustaları'nın içeriği, dili ve üslubundaki somut özelliklere dayanmalıdır. PDF’de radyo tiyatrosunun metni veya transkripti yer almadığından yalnız PDF’ye dayanarak belirli bir sanat anlayışı çıkarımı yapılamaz.",
       "source_locator": "basılı s.219 / PDF s.220 — soru 5 / QR medya gerekli",
       "answer_sections": {
-        "icerik_kaniti": "Metnin seçtiği olay/kişi/çatışma: [...]. Bunun düşündürdüğü yaklaşım: [...].",
-        "dil_uslup_kaniti": "Diyalog, söz varlığı, ton, efekt veya anlatım tercihi: [...]. Bunun düşündürdüğü yaklaşım: [...].",
-        "sonuc": "“Bu iki kanıttan hareketle yazarın [...] yönünü önemsediği düşünülebilir.”"
+        "kaynak_durumu": "İçerik, dil ve üslup kanıtları için QR medya gerekli."
       }
     },
     {
@@ -233,10 +196,10 @@
       "printed_page": 220,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Osmancık sahne tiyatrosu ile Direnişin Ustaları radyo tiyatrosunu dokuz ölçütte karşılaştırma",
-      "answer": "Karşılaştırma tablosunu iki kayıttan gözlemlediğiniz kanıtlarla doldurun. Dokuz ölçütü kullanın; her ölçütte benzerlik ve farkları belirleyin.",
+      "answer": "Bu karşılaştırma, Osmancık sahne kaydı ile Direnişin Ustaları radyo tiyatrosu kaydının birlikte izlenip/dinlenmesine dayanır. PDF’de iki kaydın içeriği bulunmadığından dokuz ölçütte gerçek bir karşılaştırma yalnız PDF’ye dayanarak tamamlanamaz.",
       "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 1 / iki QR medya gerekli",
       "answer_sections": {
-        "Ölçütler": [
+        "karşılaştırma_ölçütleri": [
           "Müzik",
           "Dil kullanımı",
           "İleti",
@@ -247,14 +210,7 @@
           "Atmosfer",
           "Empati"
         ],
-        "Her ölçüt için": [
-          "Osmancık’ta gözlemim: ...",
-          "Direnişin Ustaları’nda gözlemim: ...",
-          "Benzerlik: ...",
-          "Farklılık: ...",
-          "Kanıt: sahne / replik / ses / görsel ayrıntısı ..."
-        ],
-        "Genel tür farkı": "Sahne tiyatrosu dekor, beden ve mekânı doğrudan kullanabilir; radyo tiyatrosu bu işlevlerin önemli bölümünü ses, söz, efekt ve müzikle kurar. Diğer sonuçlarınızı izlediğiniz ve dinlediğiniz iki kaynaktan çıkarın."
+        "kaynak_durumu": "Her ölçütte benzerlik ve farklılık belirlemek için Osmancık ve Direnişin Ustaları QR medyalarının ikisi de gereklidir."
       }
     },
     {
