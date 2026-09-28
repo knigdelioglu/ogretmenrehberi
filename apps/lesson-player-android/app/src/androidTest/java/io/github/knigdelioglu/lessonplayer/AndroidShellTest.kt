@@ -43,7 +43,9 @@ class AndroidShellTest {
             hasNodes(hasTestTag("library-lesson-open"))
         )
 
-        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
+        // Theme intro is the first catalog item; use Karagöz explicitly because this
+        // scenario needs a canonical answer with a metin-kanıt reveal.
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[1].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
@@ -51,9 +53,9 @@ class AndroidShellTest {
             composeRule.onNodeWithTag("lesson-outline-open").performClick()
         }
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-outline-step-3"))
+            hasNodes(hasTestTag("lesson-outline-step-2"))
         }
-        composeRule.onNodeWithTag("lesson-outline-step-3").performClick()
+        composeRule.onNodeWithTag("lesson-outline-step-2").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
             hasNodes(hasTestTag("lesson-workspace-answer")) &&
                 hasNodes(hasTestTag("lesson-evidence-toggle"))
@@ -162,7 +164,9 @@ class AndroidShellTest {
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("library-screen-surface"))
         }
-        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
+        // Target the Karagöz lesson rather than depending on whichever catalog
+        // item happens to be first.
+        composeRule.onAllNodes(hasTestTag("library-lesson-open"))[1].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
@@ -173,10 +177,9 @@ class AndroidShellTest {
             hasNodes(hasTestTag("lesson-outline-step-1"))
         }
         composeRule.onNodeWithTag("lesson-outline-step-1").performClick()
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-editor-open"))
-        }
         val lessonList = composeRule.onNodeWithTag("lesson-screen-list")
+        // The editor is a lazy-list item below the initial viewport, so scroll it
+        // into composition before asserting/interacting with its test tag.
         lessonList.performScrollToNode(hasTestTag("lesson-editor-open"))
         composeRule.onNodeWithTag("lesson-editor-open").performClick()
         composeRule.onNodeWithText("Yerel adım düzenleme").assertExists()
