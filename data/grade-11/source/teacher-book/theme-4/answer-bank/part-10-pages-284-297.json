@@ -272,8 +272,8 @@
       "question_no": "1",
       "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 1 / Çalışkanlık QR videosu",
       "prompt_summary": "Çalışkanlık videosunu izleme kurallarına uyarak izleme ve not alma",
-      "answer": "Video izlenirken önce genel konuyu, ardından çalışkanlıkla ilişkilendirilen davranış ve sonuçları not edin. Kişilerin sözleri, görüntüler ve ses kullanımına ilişkin gözlemleri yorumlardan ayrı tutun; ana düşünceyi belirleyecek kanıtları işaretleyin.",
-      "guidance": "Bu adımın tamamlanması Anadolu İnsanı / Çalışkanlık videosunun izlenmesine bağlıdır."
+      "answer": "Anadolu İnsanı / Çalışkanlık videosunu dinleme / izleme kurallarına uyarak dikkatlice izleyin. İzleme sırasında diğer dinleyicileri rahatsız etmeyin, dikkat dağıtıcı davranışlardan kaçının ve yorum ya da sorular için videonun bitmesini bekleyin.",
+      "guidance": "Bu adımın tamamlanması Anadolu İnsanı / Çalışkanlık videosunun izlenmesine bağlıdır; değerlendirme gerçek izleme davranışına göre yapılmalıdır."
     },
     {
       "question_id": "T4-P293-Q02",
@@ -291,7 +291,26 @@
       "question_no": "3",
       "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 3 / Fedakârlık ve Çalışkanlık QR videoları gerekli",
       "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-      "answer": "İki videoyu izledikten sonra her biri için anlatım biçimi, ses, ileti, gerçek malzeme kullanımı ve ele alınan davranışlara ilişkin kanıtları ayrı ayrı not edin. Sonra benzerlik ve farklılıkları bu kanıtlara göre açıklayın."
+      "answer": "İki belgeseli ders kitabında verilen dört ölçüte göre karşılaştırın. Her hücreyi yalnız videolarda gerçekten gözlediğiniz dil, ileti, tür ve içerik özellikleriyle doldurun.",
+      "answer_sections": {
+        "Dil ve Üslup": {
+          "Anadolu İnsanı / Fedakârlık": "[Video izlenerek belirlenir.]",
+          "Anadolu İnsanı / Çalışkanlık": "[Video izlenerek belirlenir.]"
+        },
+        "İleti": {
+          "Anadolu İnsanı / Fedakârlık": "[Video izlenerek belirlenir.]",
+          "Anadolu İnsanı / Çalışkanlık": "[Video izlenerek belirlenir.]"
+        },
+        "Tür": {
+          "Anadolu İnsanı / Fedakârlık": "Belgesel / çok modlu metin.",
+          "Anadolu İnsanı / Çalışkanlık": "Belgesel / çok modlu metin."
+        },
+        "İçerik": {
+          "Anadolu İnsanı / Fedakârlık": "[Video izlenerek belirlenir.]",
+          "Anadolu İnsanı / Çalışkanlık": "[Video izlenerek belirlenir.]"
+        }
+      },
+      "guidance": "Karşılaştırmayı yalnız kitapta verilen Dil ve Üslup, İleti, Tür ve İçerik ölçütleri üzerinden yapın. Video izlenmeden dil, ileti veya içerik hakkında özel hüküm üretmeyin."
     },
     {
       "question_id": "T4-P294-Q01",
@@ -300,7 +319,7 @@
       "question_no": "1",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 1 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık videosundaki ses, görsel, ışık, mekân ve zamanı belirleme",
-      "answer": "Görüntü, ses, ışık, mekân ve zamanı videodan gözlediğiniz ayrıntılarla açıklayın. Zaman için olayın geçtiği dönemi veya sahnelerin sıralanışını belirtin."
+      "answer": "Videoda gözlediğiniz yapı unsurlarını ayrı ayrı belirleyin: ses, görsel, ışık, mekân ve zaman. Zaman için videonun açıkça verdiği tarih, dönem, gün/saat ya da zaman geçişi ipuçlarını kullanın; videoda bulunmayan bir zaman bilgisi eklemeyin."
     },
     {
       "question_id": "T4-P294-Q02",
@@ -318,7 +337,7 @@
       "question_no": "3",
       "source_locator": "basılı s.294 / PDF s.295 — Çözümleyebilme soru 3 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Ses, görüntü, ışık, mekân ve zaman unsurlarının videoya katkısını açıklama",
-      "answer": "Görüntü, ses, ışık ve mekânın olayın anlaşılmasına, gerçeklik duygusuna ve önemli ayrıntıların fark edilmesine nasıl katkı sağladığını gözlediğiniz bir sahneyle açıklayın."
+      "answer": "Belirlediğiniz ses, görsel, ışık, mekân ve zaman unsurlarının olayın anlaşılmasına, gerçeklik duygusuna, vurguya ve anlamın kurulmasına nasıl katkı sağladığını videodan seçtiğiniz somut örneklerle değerlendirin. Her unsur için videoda gerçekten gözlediğiniz kanıta dayanarak açıklama yapın."
     },
     {
       "question_id": "T4-P294-Q04",
