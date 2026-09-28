@@ -14,9 +14,9 @@
       "answer": "Açık ileti, metinde doğrudan söylenen düşüncedir; örtük ileti ise birden çok ayrıntıdan çıkarım yapmayı gerektirir. Huzur parçasında bu iki düzey birbirinden ayrılmalıdır.",
       "answer_sections": {
         "acik_iletiler": [
-          "“İstanbul’u tanımadıkça kendimizi bulamayız.” → İstanbul'u/kültürel çevreyi tanıma ile kendini tanıma arasında doğrudan bağ kurulur.",
-          "“Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” → yeni hayat kurarken geçmişten gelen bir kimlik/dayanak gerektiği doğrudan savunulur.",
-          "Nuran'ın bakımsız semtler için “Bir şeyler yapmak, bu hasta insanları tedavi etmek, bu işsizlere iş bulmak...” diye düşünmesi → bugünün insanlarının somut ihtiyaçlarına yönelme gereği açıkça dile getirilir."
+          "“İstanbul’u tanımadıkça kendimizi bulamayız.” → İstanbul'u ve kültürel çevreyi tanıma ile kendini tanıma arasında doğrudan bağ kurulur.",
+          "“Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” → yeni hayat kurarken geçmişten gelen bir kimlik ve dayanak gerektiği doğrudan savunulur.",
+          "“Yeni bir hayat lâzım.” → mevcut hayatın değişmesi ve yenilenmesi gerektiği açıkça ifade edilir."
         ],
         "ortuk_iletiler": [
           "Boğaz'ın mimari, ses ve hatıralarla birlikte anlatılması; mekânın kişisel ve kültürel hafızayı harekete geçirebildiğini düşündürür.",
@@ -72,22 +72,22 @@
         "Metinden başlangıç örnekleri": [
           "Bağ kurucu / sorgulayıcı: “İstanbul’u tanımadıkça kendimizi bulamayız.”",
           "Okuma aydınlatıcısı / karakter çözümleyici: “Bir hüviyet lâzım.”",
-          "Karakter ve ilişki çözümlemesi: “İhsan, onun hem babası, hem hocası idi.”"
+          "Karakter ve ilişki çözümlemesi: “Bende İhsan’ın tesiri büyüktür. Asıl hocam odur.”"
         ]
       },
       "evidence_quotes": [
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
         "Bir hüviyet lâzım.",
-        "İhsan, onun hem babası, hem hocası idi."
+        "Bende İhsan’ın tesiri büyüktür. Asıl hocam odur."
       ]
     },
     {
       "question_id": "T3-P180-TABLE01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 180,
       "question_no": "3",
       "prompt_summary": "Roman kişilerinin söz ve davranışlarından duygu ve düşünce çıkarımı",
-      "answer": "Okunan kesitte Mümtaz, Nuran ve İhsan için söz ve davranış kanıtı vardır; Macide, Suat ve Fâhir için yeterli kanıt yoktur.",
+      "answer": "Ders kitabında bu etkinliğe kadar verilen Huzur kesitinde Mümtaz, Nuran ve İhsan için çıkarım yapmaya yetecek söz ve davranış kanıtı vardır; Macide için yalnız sınırlı dolaylı bilgi bulunur, Suat ve Fâhir için ise yeterli kanıt verilmez.",
       "answer_sections": {
         "Mümtaz": {
           "soz_davranis": "Yeni bir hayat kurabilmek için geçmişe ve kimliğe dayanmak gerektiğini savunur.",
@@ -102,20 +102,19 @@
           "cikarim": "Mümtaz’ın düşünce ve kültür dünyasında etkili bir rehber olduğunu Mümtaz’ın anlatımından çıkarabiliriz."
         },
         "Macide": {
-          "soz_davranis": "s.180’e kadar okunan kesitte Macide’nin doğrudan sözü veya davranışı için yeterli örnek yok.",
-          "cikarim": "Bu kesitte kişiliği ve duyguları belirlenemez."
+          "soz_davranis": "Bu etkinliğe kadar verilen Huzur kesitinde Macide’nin doğrudan sözü veya kişiliğini açıklamaya yetecek davranışı verilmez; yalnız adı ve İhsan’la birlikte anılması görülür.",
+          "cikarim": "Bu kesite dayanarak duygu ve düşünceleri hakkında güvenilir bir çıkarım yapılamaz."
         },
         "Suat": {
-          "soz_davranis": "Okunan kesitte Suat’ın doğrudan sözü veya davranışı için yeterli örnek yok.",
-          "cikarim": "Bu kesitte kişiliği ve duyguları belirlenemez."
+          "soz_davranis": "Bu etkinliğe kadar verilen Huzur kesitinde Suat’ın doğrudan sözü veya davranışı yer almaz.",
+          "cikarim": "Bu kesite dayanarak duygu ve düşünceleri belirlenemez."
         },
         "Fâhir": {
-          "soz_davranis": "Okunan kesitte Fâhir’in doğrudan sözü veya davranışı için yeterli örnek yok.",
-          "cikarim": "Bu kesitte kişiliği ve duyguları belirlenemez."
+          "soz_davranis": "Bu etkinliğe kadar verilen Huzur kesitinde Fâhir’in doğrudan sözü veya davranışı yer almaz.",
+          "cikarim": "Bu kesite dayanarak duygu ve düşünceleri belirlenemez."
         }
       },
-      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3",
-      "guidance": "Tabloyu yalnız o ana kadar okunan Huzur parçasındaki kanıta göre doldurun; bilinmeyen özellikleri varsayımla tamamlamayın."
+      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3"
     },
     {
       "question_id": "T3-P181-TABLE02",
