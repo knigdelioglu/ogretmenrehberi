@@ -5,7 +5,7 @@
   "grade": 11,
   "theme_id": "TEMA_01",
   "theme_title": "BİR DİYECEĞİM VAR!",
-  "freeze_date": "2026-09-27",
+  "freeze_date": "2026-09-28",
   "status": "FROZEN_REPO_QA",
   "scope": {
     "printed_page_range": "12-83",
@@ -14,31 +14,31 @@
   "canonical": {
     "source_records": 129,
     "verified_sources": 129,
-    "answer_entries": 155,
+    "answer_entries": 157,
     "source_limited_entries": 14
   },
   "lesson_player": {
     "lessons": 7,
-    "steps": 183,
+    "steps": 184,
     "source_records": 129,
-    "answer_entries": 155
+    "answer_entries": 157
   },
   "ogretmenos": {
     "projection_contract": "OgretmenOS Generic Teacher Guide Runtime Contract v1",
-    "content_fingerprint": "sha256:b6069bc257f73ab1bfea88ba4d890a99ca0a189a9bb6bed5994a2d16697e86fe",
+    "content_fingerprint": "sha256:640986c84184bd08077d9df9626bd361447713339f7ae0956b1560040f107844",
     "deterministic_build": true,
     "row_counts": {
-      "canonical_entities": 285,
+      "canonical_entities": 287,
       "teacher_guides": 1,
       "teacher_guide_sections": 7,
       "teacher_guide_units": 129,
-      "teacher_guide_items": 183,
-      "teacher_guide_item_relations": 338
+      "teacher_guide_items": 184,
+      "teacher_guide_item_relations": 341
     }
   },
   "epub": {
-    "answer_entries": 155,
-    "semantic_parity_entries": 155,
+    "answer_entries": 157,
+    "semantic_parity_entries": 157,
     "source_limited_entries": 14,
     "block_ranges": [
       {
@@ -64,7 +64,7 @@
       {
         "title": "Metin Tahlili-3 · Dinleme / İzleme",
         "pages": "59-73",
-        "entries": 36
+        "entries": 38
       },
       {
         "title": "Edebiyat Atölyesi-2 · Yazma / E-posta",
