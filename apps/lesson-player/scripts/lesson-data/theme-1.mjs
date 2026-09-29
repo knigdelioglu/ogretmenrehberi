@@ -286,6 +286,23 @@ for (const term of [
   );
 }
 
+const s40q4 = mektupById.get("s40-q4");
+assert(s40q4, "Mektup s40-q4 bulunamadı.");
+assert(
+  s40q4.display_prompt ===
+    "Yazarın Karamazoflar romanında kişi tahlili tekniğini ele alışını değerlendiriniz. Sizce bu tekniği hangi tür yazılarda görmek mümkündür? Açıklayınız.",
+  "Mektup s40-q4 kitabın gerçek 4. soru kökünü kullanmalı."
+);
+assert(
+  s40q4.display_prompt_mode === "VERBATIM_SHORT",
+  "Mektup s40-q4 kitap soru metni olarak işaretlenmeli."
+);
+assert(
+  s40q4.answer?.question_id === "T1-P40-Q04" &&
+    Array.isArray(s40q4.answer?.answer_sections?.["Görülebileceği yazı türleri"]),
+  "Mektup s40-q4 cevap bankası hem kişi tahlili değerlendirmesini hem yazı türleri bölümünü korumalı."
+);
+
 const s42Reference = mektupById.get("s42-reference");
 assert(s42Reference, "s42 mektup türleri referans adımı eksik.");
 assert(
