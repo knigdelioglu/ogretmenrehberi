@@ -109,7 +109,7 @@ for (const [id, sourceId, answerId] of [
 assert(kemalById.get("s211-six-people")?.content?.items?.length === 6 &&
   kemalById.get("s214-eval")?.content?.items?.length === 6,
   "s.211 altı kişi ve s.214 altı öz değerlendirme ölçütü eksiksiz olmalı.");
-assert(kemalById.get("s212-sample")?.answer?.explanation?.includes("birebir") &&
+assert(kemalById.get("s212-sample")?.content?.lead?.includes("birebir") &&
   kemalById.get("s214-eval")?.content?.note?.includes("QR"),
   "Hayalî mülakatın kaynak sınırı ve QR rubrik uyarısı korunmalı.");
 assert(kemalById.get("s211-six-people")?.answer === null &&
