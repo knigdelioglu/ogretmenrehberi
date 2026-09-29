@@ -166,7 +166,8 @@ assert(direnisinById.get("s216-plan")?.content?.items?.some(item => item.include
   direnisinById.get("s219-q2")?.content?.items?.includes("Makul alternatif yorum") &&
   direnisinById.get("s219-q4")?.content?.items?.some(item => item.startsWith("Zihniyet —")) &&
   direnisinById.get("s219-q4")?.answer?.entry_type === "source_limited" &&
-  direnisinById.get("s219-q4")?.answer?.answer_sections?.zihniyet?.includes("kayıttaki dayanak"),
+  direnisinById.get("s219-q4")?.content?.items?.some(item => item.includes("kayıt dayanağı")) &&
+  direnisinById.get("s219-q4")?.content?.note?.includes("kayıttaki dayanağı"),
   "Dinleme akışı ilk/ikinci dinlemeyi, gözlem-çıkarım-dayanak ve alternatif yorumu ayırmalı.");
 for (const step of direnisin.steps) {
   assert(step.source.source_status === "VERIFIED",
