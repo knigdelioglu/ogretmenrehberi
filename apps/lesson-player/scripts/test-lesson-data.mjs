@@ -64,10 +64,10 @@ const theme3Types = theme3Entries.reduce((counts, entry) => {
   return counts;
 }, {});
 assert(theme3Entries.length === 149 &&
-  theme3Types.question_answer === 85 &&
-  theme3Types.performance_support === 46 &&
-  theme3Types.source_limited === 18,
-  "Tema 3 parça kayıtları kanonik dağılımı ve düzeltilmiş source-limited sayısını vermeli.");
+  theme3Types.question_answer === 81 &&
+  theme3Types.performance_support === 43 &&
+  theme3Types.source_limited === 25,
+  "Tema 3 parça kayıtları güncel kanonik dağılımı ve source-limited sayısını vermeli.");
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
 assert(theme3Compare?.entry_type === "source_limited" &&
   theme3Compare.source_locator.includes("şiir metni verilen PDF görüntüsünde görünmüyor") &&
