@@ -674,9 +674,11 @@ assert(
 
 const p82Comparison = degerlendirmeById.get("s82-q9");
 assert(
-  p82Comparison?.answer?.answer_sections?.["Karşılaştırma ölçütleri"] &&
-    p82Comparison.answer.guidance,
-  "s82 karşılaştırması anlatıcı/okur ölçütleriyle verilen iki parçaya bağlı kalmalı."
+  p82Comparison?.answer?.answer_sections?.["Mektup parçasında"] &&
+    p82Comparison.answer.answer_sections?.["Huzur parçasında"] &&
+    p82Comparison.answer.answer_sections?.["Yazar–anlatıcı ayrımı"] &&
+    p82Comparison.answer.guidance?.includes("verilen iki parçadan"),
+  "s82 karşılaştırması verilen iki parçaya, anlatıcı/muhatap ayrımına ve metin kanıtına bağlı kalmalı."
 );
 
 const selfRevisionItems = y78Rubric.content?.items ?? [];
