@@ -109,7 +109,8 @@ assert(
   "Türk şiveleri çalışması yapı ve karşılaştırma görünümlerini kullanmalı."
 );
 assert(
-  ogullaById.get("s100-q3")?.answer?.answer_sections?.["Eşinin metinde verdiği tepki"] &&
+  ogullaById.get("s100-q3")?.answer?.answer_sections?.["Nazifkan'ın Tepkisi"] &&
+    ogullaById.get("s100-q3")?.answer?.answer_sections?.["Yadırgamasının Nedeni"] &&
     Object.keys(ogullaById.get("s100-q3")?.answer?.answer_sections ?? {}).length === 3 &&
     !/insanlar.*genellikle/i.test(ogullaById.get("s100-q3")?.answer?.answer ?? "") &&
     ogullaById.get("s100-q3")?.answer?.guidance &&
