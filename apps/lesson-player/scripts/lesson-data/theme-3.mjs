@@ -841,9 +841,10 @@ assert(exit193?.answer?.entry_type==="performance_support" &&
  exit193?.answer?.answer_sections?.["Üç Yaz"]?.length===3 &&
  exit193?.answer?.answer_sections?.["İki Sor"]?.length===2 &&
  typeof exit193?.answer?.answer_sections?.["Bir Paylaş"]==="string" &&
- exit193?.answer?.evidence_quotes?.length===2 &&
+ exit193?.answer?.evidence_quotes?.length===3 &&
+ exit193?.answer?.evidence_quotes?.includes("hüznün şifasızlığı") &&
  !JSON.stringify(exit193.answer.answer_sections).includes("insanı kendi derinliğine"),
- "Çıkış kartı 3–2–1 ve yalnız kitapta görülen alıntılarla olmalı.");
+ "Çıkış kartı 3–2–1 ve yalnız doğrulanmış Huzur alıntılarıyla olmalı.");
 for(const id of ["s193-three","s193-two","s193-one"]){
  assert(h192.get(id)?.answer===null &&
  h192.get(id)?.source?.source_record_id==="T03-S0055",
