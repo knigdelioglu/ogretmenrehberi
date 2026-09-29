@@ -29,5 +29,5 @@ Akış dosyaları: `huzur-177-178`, `huzur-metni-anlayalim-175-176`, `huzur-cati
 
 ## Açık kalan
 
-- 18 `source_limited` kaydın 17’si Direnişin Ustaları, Osmancık ve Aile Bağları QR/EBA medyasına bağlıdır; T3-P177-COMP01 ise verilen PDF görüntüsünde şiir metni görünmediği için sınırlıdır.
+- Güncel bankada 25 `source_limited` kayıt vardır. 27 Eylül denetiminden sonra yapılan sayfa-sayfa Tema 3 doğrulamasında, yalnız PDF ile güvenilir biçimde tamamlanamayan ek kayıtlar da `source_limited` olarak yeniden sınıflandırılmıştır; bu nedenle bu rapordaki önceki 18 sayısı artık tarihsel durumdur.
 - Tema 3 doğrulaması ayrı çalıştırıldığında geçiyor ve `apps/lesson-player/src/generated/lessons.json` yeniden üretildi. Genel `test-lesson-data.mjs`, Tema 1 için beklenen toplam adım sayısı (183) ile üretilen sayı uyuşmadığından orada duruyor. Android paket çıktıları, EPUB ve ÖğretmenOS projection bu düzeltmeyle yeniden üretilmedi.
