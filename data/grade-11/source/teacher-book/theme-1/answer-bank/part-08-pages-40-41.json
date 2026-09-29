@@ -82,19 +82,23 @@
       "entry_type": "question_answer",
       "printed_page": 40,
       "question_no": "4",
-      "prompt_summary": "Bir kişinin konuşma, davranış, geçmiş ve tepkilerinden hareketle çözümlenmesini açıklama",
-      "answer": "Bir kişiyi çözümlemek; onu yalnız birkaç sıfatla tanımlamak yerine geçmişi, yetişme biçimi, çevresi, konuşmaları, davranışları ve tepkileriyle birlikte ele almaktır. Böylece kişinin karakteri ve davranışlarının nedenleri daha canlı ve çok yönlü biçimde anlaşılabilir.",
+      "prompt_summary": "Karamazoflar romanındaki kişi tahlili tekniğini değerlendirme ve bu tekniğin görülebileceği yazı türlerini belirleme",
+      "answer": "Kaplan, Karamazoflar’da kişilerin yalnızca dışarıdan tanıtılmadığını; konuşmaları, davranışları, geçmişleri, terbiyeleri ve ilişkileriyle canlı ve çok yönlü biçimde ortaya konduğunu belirtir. Bu yaklaşımı psikolojik derinlik bakımından etkili bulur. Benzer kişi çözümlemeleri roman ve hikâyede; gerçek kişilerin işlendiği biyografi, otobiyografi, anı ve edebî portre türlerinde de görülebilir.",
       "source_locator": "basılı s.40 / PDF s.41; ana metin s.37",
       "answer_sections": {
-        "Geçmiş ve çevre": "Kişinin geçmişi, yetişme şartları ve ilişkileri onun bugünkü davranışlarını anlamlandırmaya yardımcı olur. Kaplan'ın “mazi koridoru” dediği yaklaşım bu boyutu öne çıkarır.",
-        "Konuşma ve davranış": "Kişinin ne söylediği ve nasıl davrandığı, karakter özelliklerini doğrudan açıklamak yerine okura gösterme imkânı verir.",
-        "Sonuç": "Kişi, tek bir özellik veya etiket üzerinden değil; geçmişi, çevresi, konuşmaları, davranışları ve tepkilerinin bütünü üzerinden çözümlenir."
+        "Tekniğin değerlendirilmesi": "Kaplan’ın dikkat çektiği teknikte kişiler, yalnız dışarıdan tanıtılmak yerine konuşma ve hareketleriyle görünür hâle gelir; geçmişleri, terbiyeleri ve ilişkileri de ayrıntılandırılır. Böylece kişi daha canlı ve psikolojik bakımdan daha derin biçimde kurulabilir.",
+        "Görülebileceği yazı türleri": [
+          "Roman ve hikâye: Kurmaca kişilerin geçmişi, davranışları, konuşmaları ve iç dünyası çözümlenebilir.",
+          "Biyografi ve otobiyografi: Gerçek kişilerin hayatı, karakteri ve gelişimi yaşantılarıyla ilişkilendirilerek ele alınabilir.",
+          "Anı ve edebî portre: Anlatılan kişinin belirgin özellikleri, davranışları ve yaşantıları üzerinden ayrıntılı kişi çözümlemesi yapılabilir."
+        ]
       },
-      "guidance": "Cevabı kişi çözümlemesinin nasıl yapıldığına odaklayın. Metinde görülen geçmiş, çevre, konuşma ve davranış unsurlarını ilişkilendirin; sorunun istemediği geniş tür listeleriyle cevabı dağıtmayın.",
+      "guidance": "Cevabın iki bölümünü de görünür tutun: önce Kaplan’ın Karamazoflar’daki kişi tahlili tekniğine ilişkin değerlendirmesini metinden dayanaklarla açıklayın; ardından bu tekniğin görülebileceği yazı türlerini örnekleyin. Türleri yalnız sıralamakla yetinmeyin; kişi çözümlemesinin o türde nasıl kullanılabileceğini kısaca belirtin.",
       "evidence_quotes": [
         "Burada canlı insanlar kaynaşıyor. On tane adamın hayatı kafamda ayrı ayrı yaşıyor.",
         "Kahramanların tahlilleri, hikâyeleri geniş yer alıyor.",
-        "bizzat şahısların görünmesi, söylemesi, hareket etmesidir"
+        "bizzat şahısların görünmesi, söylemesi, hareket etmesidir",
+        "Her şahsın mazisi, terbiyesi, alâkaları uzun yer tutuyor"
       ]
     },
     {
