@@ -780,11 +780,11 @@ for(const id of ["s190-gram-a","s190-gram-b","s190-gram-c","s190-gram-cc",
 }
 assert(Object.keys(huzur189ById.get("s191-spell")?.answer?.answer_sections??{}).length===5 &&
  huzur189ById.get("s191-spell")?.answer?.answer_sections?.zatürree === "zatürre" &&
- huzur189ById.get("s191-spell")?.answer?.explanation?.includes("Şikâyet") &&
+ huzur189ById.get("s191-spell")?.answer?.answer_sections?.["ilân"] === "ilan" &&
  huzur189ById.get("s191-research")?.answer?.entry_type==="performance_support" &&
  huzur189ById.get("s191-research")?.content?.items?.length===3 &&
  huzur189ById.get("s191-research")?.content?.lead?.includes("süre 1 hafta"),
- "s.191 beş yazım, şapka sınırı ve üç disiplinli 1 haftalık araştırma korunmalı.");
+ "s.191 beş güncel yazım karşılığı ve üç disiplinli 1 haftalık araştırma korunmalı.");
 assert(theme3Lessons.reduce((sum,l)=>sum+l.coverage.steps,0)===310 &&
  theme3Lessons.reduce((sum,l)=>sum+l.coverage.source_records,0)===147 &&
  theme3Lessons.reduce((sum,l)=>sum+l.coverage.answer_entries,0)===149,
