@@ -483,9 +483,10 @@ assert(huzurQuestionMap.get("s176-q6")?.answer?.entry_type === "performance_supp
   huzurQuestionMap.get("s176-q6")?.content?.items?.length===3,
   "s.176 Q6 şehir örneği kişisel performans olarak kalmalı.");
 assert(huzurQuestionMap.get("s176-q10")?.answer?.answer?.startsWith("Sözü söyleyen Nuran’dır") &&
-  huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("Ders kitabı hatası") &&
+  huzurQuestionMap.get("s176-q10")?.answer?.explanation?.includes("soru sözü Mümtaz’a atfeder") &&
+  huzurQuestionMap.get("s176-q10")?.content?.note?.includes("Ders kitabı hatası") &&
   huzurQuestionMap.get("s176-q10")?.content?.note?.includes("sözü söyleyen Nuran’dır"),
-  "s.176 Q10 ders kitabının konuşmacı atıf hatası ana cevapta görünür olmalı.");
+  "s.176 Q10 ders kitabının konuşmacı atıf hatası ana cevapta ve akış notunda görünür olmalı.");
 assert(huzurQuestionMap.get("s176-q12")?.answer?.entry_type === "performance_support" &&
   huzurQuestionMap.get("s176-q12")?.content?.lead?.includes("Kitapta özel eser adları"),
   "s.176 Q12 kitapta verilmeyen tarihî müzik adlarını kanonik metin gibi sunmamalı.");
