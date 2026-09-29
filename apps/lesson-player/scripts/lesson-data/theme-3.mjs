@@ -639,18 +639,18 @@ assert(huzur182.steps.findIndex(step=>step.id==="s182-author") < huzur182.steps.
  huzur182ById.get("s182-fish")?.answer?.question_no==="Sıra Sizde 1" &&
  huzur182ById.get("s182-author")?.answer?.question_no==="Fark Edelim",
  "s.182 Fark Edelim, kitap sırasına göre Sıra Sizde 1'den önce gelmeli.");
-assert(huzur182ById.get("s182-fish")?.answer?.answer_sections?.gercek_hayattan_alinanlar?.length===4 &&
+assert(huzur182ById.get("s182-fish")?.answer?.answer_sections?.gercek_hayattan_alinanlar?.length===3 &&
  huzur182ById.get("s182-fish")?.answer?.answer_sections?.kurgusal_unsurlar?.length===3,
- "Gerçek yaşam ve kurmaca diyagramında iki ayrı cevap grubu olmalı.");
-assert(huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.gozlenebilir_olay_ve_davranis?.length===2 &&
- huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.oznel_duygu_ve_degerlendirme?.length===2 &&
+ "Gerçek yaşam ve kurmaca diyagramında kaynakta doğrulanan üçer unsur ayrı gruplarda korunmalı.");
+assert(huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.nesnel_anlatim?.length===2 &&
+ huzur182ById.get("s183-subject-object")?.answer?.answer_sections?.oznel_anlatim?.length===2 &&
  huzur182ById.get("s183-subject-object")?.content?.note?.includes("s.185"),
- "s.183 öznel-nesnel örnekleri yanlışlıkla s.185'ten alınmamalı.");
+ "s.183 öznel-nesnel örnekleri iki ayrı grupta kalmalı ve yanlışlıkla s.185'ten alınmamalı.");
 const value=huzur182ById.get("s184-185-value-q2");
 assert(Object.keys(value?.answer?.answer_sections??{}).length===4 &&
- value.answer.answer_sections["3 · Nuran, serçeler ve köpek"]?.toplumsal_gucluk?.includes("verilmez") &&
+ value.answer.answer_sections["3 · Nuran, serçeler ve köpek"]?.toplumsal_gucluk?.includes("belirgin bir toplumsal güçlükten çok") &&
  value.content.items.length===4,
- "s.184–185 dört renkli kaynak parçasının ayrı yanıtı olmalı; olmayan güçlük icat edilmemeli.");
+ "s.184–185 dört renkli kaynak parçasının ayrı yanıtı olmalı; belirgin olmayan toplumsal güçlük zorla üretilmemeli.");
 for(const id of ["s184-halk","s184-new-life","s185-animals","s185-illness"]){
  assert(huzur182ById.get(id)?.answer===null &&
   huzur182ById.get(id)?.source?.source_record_id==="T03-S0037",
