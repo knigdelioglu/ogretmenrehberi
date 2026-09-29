@@ -213,9 +213,10 @@ for (const id of ["s221-q1","s221-q2","s221-q3","s221-q4","s223-q2","s223-q3","s
     `Radyo tiyatrosu kaydı görülmeden kesin cevap verilmemeli: ${id}`);
 }
 assert(analysisById.get("s223-research")?.answer?.entry_type === "performance_support" &&
-  analysisById.get("s223-criteria")?.answer?.entry_type === "performance_support" &&
+  analysisById.get("s223-criteria")?.answer?.entry_type === "source_limited" &&
+  analysisById.get("s224-q4")?.answer?.entry_type === "source_limited" &&
   analysisById.get("s224-journal")?.answer?.entry_type === "performance_support",
-  "Araştırma, değerlendirme ve öğrenme günlüğü hazır cevap gibi sunulmamalı.");
+  "Araştırma ve öğrenme günlüğü performans desteği; QR'a bağlı değerlendirmeler source_limited kalmalı.");
 for (const step of direnisinAnalysis.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Radyo tiyatrosu s.221–224 kaynak doğrulaması: ${step.source.source_record_id}`);
