@@ -676,9 +676,11 @@ assert(posterById.get("s299-q1")?.answer?.answer_sections?.["İlk dikkatimi çek
   posterById.get("s302-q3")?.answer?.answer_sections?.["Kullandığım görsel veya alıntı"] === "[...]",
   "s.299 ve s.302 kişisel afiş deneyimi öğrenci adına doldurulmamalı.");
 
-assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Seçtiğim duygu"] === "[...]" &&
-  !JSON.stringify(theme4AssessmentById.get("s305-q5")?.answer).includes("Kiraz"),
-  "s.304–305 kişisel duygu tercihi ve görsel türü gereksiz biçimde kesinleştirilmemeli.");
+assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Örnek duygu"] === "Umut" &&
+  theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.Alternatifler?.includes("farklı") &&
+  !JSON.stringify(theme4AssessmentById.get("s305-q5")?.answer).includes("Kiraz") &&
+  theme4AssessmentById.get("s305-q5")?.answer?.answer_sections?.["Görsel 1 — çiçekli dal"]?.includes("kesinleştirilmez"),
+  "s.304 örnek duygu tek doğruya çevrilmemeli; s.305 görsel türü doğrulanamayacak biçimde kesinleştirilmemeli.");
 assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
   theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Videoda gözlediğim kişi veya davranış"] === "[...]" &&
   theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Videodan gerçek örnek"] === "[...]",
