@@ -932,9 +932,9 @@ assert(bio199ById.get("s199-q1")?.content?.lead?.includes("Kendi duygunuzu") &&
  "s.199 Q1 kişisel duygu öğrenciye bırakılmalı ve kitapta gerçekten verilen şiir örnekleriyle gerekçelendirilmeli.");
 assert((bio199ById.get("s199-q2")?.answer?.answer_sections?.["Nitelemenin kaynağı"] ||
   bio199ById.get("s199-q2")?.answer?.answer_sections?.["Sonuç"])?.includes("biyografi yazarının") &&
- (bio199ById.get("s199-q3")?.answer?.answer_sections?.["Kaynak sınırı"]?.includes("ek olay uydurmayın") ||
-  bio199ById.get("s199-q3")?.answer?.answer_sections?.["Kaynak sınırı"]?.includes("bu parçada belirtilmez")),
- "s.199 Q2 yazara atıf; Q3 metindeki olay ile yorum ayrılmalı.");
+ bio199ById.get("s199-q3")?.answer?.answer_sections?.["Kitapta anlatılan olay"]?.includes("ödülü almamak şartıyla") &&
+ bio199ById.get("s199-q3")?.answer?.answer_sections?.["Değerlendirme"]?.includes("yorumlanabilir"),
+ "s.199 Q2 yazara atıf; Q3 kitapta anlatılan olay ile yorumu ayrı tutmalı.");
 const visual=bio199ById.get("s200-task");
 assert(visual?.answer?.entry_type==="performance_support" &&
  Object.keys(visual.answer.answer_sections??{}).length===6 &&
