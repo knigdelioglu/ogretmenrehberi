@@ -677,7 +677,7 @@ assert(
   p82Comparison?.answer?.answer_sections?.["Mektup parçasında"] &&
     p82Comparison.answer.answer_sections?.["Huzur parçasında"] &&
     p82Comparison.answer.answer_sections?.["Yazar–anlatıcı ayrımı"] &&
-    p82Comparison.answer.guidance?.includes("verilen iki parçadan"),
+    p82Comparison.answer.guidance?.includes("her iki parçadan"),
   "s82 karşılaştırması verilen iki parçaya, anlatıcı/muhatap ayrımına ve metin kanıtına bağlı kalmalı."
 );
 
