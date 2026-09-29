@@ -695,9 +695,10 @@ for(const id of ["s186-event","s186-place","s186-people","s186-time"]){
   `Dört yapı unsuru bağımsız kaynak adımı olmalı: ${id}`);
 }
 assert(Object.keys(huzur186ById.get("s186-structure")?.answer?.answer_sections??{}).length===4 &&
- huzur186ById.get("s186-structure")?.answer?.explanation?.includes("okuduğunuz kesitlerle sınırlayın") &&
- huzur186ById.get("s186-structure")?.answer?.explanation?.includes("Suat ve Fâhir’in Mümtaz’la çatışması"),
- "Yapı unsurları s.167–170 ve yardımcı parçalarla sınırlı kalmalı.");
+ huzur186ById.get("s186-structure")?.answer?.answer?.includes("Okuduğunuz Huzur kesitlerinde") &&
+ huzur186ById.get("s186-structure")?.answer?.answer_sections?.kisi_kadrosu?.some(item => item.includes("Suat ve Fâhir") && item.includes("kesinleştirilemez")) &&
+ huzur186ById.get("s186-structure")?.answer?.source_locator?.includes("s.167–170"),
+ "Yapı unsurları okunan Huzur kesitleri ve yardımcı parçalarla sınırlı kalmalı; Suat ve Fâhir hakkında ayrıntı uydurulmamalı.");
 const s187Four = huzur186ById.get("s187-four");
 const s187FourSections = s187Four?.answer?.answer_sections ?? {};
 assert(["olay_dil_uslup", "mekan_dil_uslup", "kisi_dil_uslup", "zaman_dil_uslup"].
