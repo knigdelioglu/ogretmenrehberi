@@ -217,7 +217,9 @@ assert(mimarValuesById.get("s261-conflicts")?.content?.items?.length === 5 &&
   mimarValuesById.get("s262-who")?.answer?.entry_type === "performance_support",
   "Beş çatışma ve açık uçlu değerlendirme/kimlik oyunu korunmalı.");
 assert(mimarValuesById.get("s262-q1")?.answer?.entry_type === "performance_support" &&
-  mimarValuesById.get("s262-q2")?.answer?.explanation?.includes("hayalî"),
+  mimarValuesById.get("s262-q2")?.answer?.entry_type === "performance_support" &&
+  mimarValuesById.get("s262-q2")?.answer?.explanation?.includes("tarihî bir olay değildir") &&
+  mimarValuesById.get("s262-q2")?.answer?.explanation?.includes("kurmaca bir durumdur"),
   "Seçilen rol ve gündelik hayat senaryosu kanonik tarihî olay gibi sunulmamalı.");
 for (const step of mimarValues.steps) {
   assert(step.source.source_status === "VERIFIED",
