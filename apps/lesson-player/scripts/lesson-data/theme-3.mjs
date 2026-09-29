@@ -714,12 +714,12 @@ assert(huzur186ById.get("s188-3c")?.answer?.answer?.includes("geleneksel kültü
   huzur186ById.get("s188-3cc")?.answer?.answer?.includes("Mazi"),
  "Dönem ve söz varlığı soruları ayrı, kitaba dayalı olmalı.");
 const character4 = huzur186ById.get("s188-q4");
-assert(character4?.answer?.entry_type==="question_answer" &&
+assert(character4?.answer?.entry_type==="source_limited" &&
  character4.content.items.length===4 &&
  Object.keys(character4.answer.answer_sections??{}).length===4 &&
  character4.answer.answer_sections.Suat.amac.includes("belirlenemez") &&
- character4.answer.answer_sections.Nuran.amac.includes("çıkarım"),
- "s.188 dört kişi/özellik/amaç cevaplarında Suat sınırı ve çıkarım statüsü açık olmalı.");
+ character4.answer.answer_sections.Nuran.amac.includes("Metinden çıkarım"),
+ "s.188 dört kişi/özellik/amaç cevaplarında Suat için kaynak sınırı ve diğer kişilerde çıkarım statüsü açık olmalı.");
 for(const id of ["s188-mumtaz","s188-nuran","s188-ihsan","s188-suat"]){
  assert(huzur186ById.get(id)?.answer===null &&
   huzur186ById.get(id)?.source?.source_record_id==="T03-S0045",
