@@ -577,18 +577,18 @@ assert(huzur179ById.get("s179-roles-change")?.answer === null &&
   "Rol değişimi tek doğru cevap gerektirmeyen süreç olarak kalmalı.");
 const t180 = huzur179ById.get("s180-table-q3");
 assert(t180?.answer?.question_id === "T3-P180-TABLE01" &&
-  t180?.answer?.entry_type === "question_answer" &&
+  t180?.answer?.entry_type === "source_limited" &&
   Object.keys(t180?.answer?.answer_sections??{}).length === 6 &&
   Object.keys(t180?.answer?.answer_sections?.Mümtaz??{}).length === 2 &&
   t180?.answer?.answer_sections?.Suat?.cikarim?.includes("belirlenemez"),
-  "s.180 altı kişide söz/davranış ve çıkarım ayrılmalı, eksik kaynak uydurulmamalı.");
+  "s.180 altı kişide söz/davranış ve çıkarım ayrılmalı; yetersiz kanıt source_limited olarak korunmalı.");
 const t181 = huzur179ById.get("s181-table-q4");
 assert(t181?.answer?.question_id === "T3-P181-TABLE02" &&
-  t181?.answer?.entry_type === "question_answer" &&
+  t181?.answer?.entry_type === "source_limited" &&
   Object.keys(t181?.answer?.answer_sections??{}).length === 6 &&
   t181?.answer?.answer_sections?.İhsan?.dil?.includes("doğrudan konuşması") &&
   t181?.answer?.answer_sections?.Macide?.dil?.includes("konuşma örneği"),
-  "s.181 altı kişide kişilik/dil ayrı; konuşması olmayanlara üslup uydurulmamalı.");
+  "s.181 altı kişide kişilik/dil ayrı; yetersiz konuşma kanıtı source_limited olarak korunmalı.");
 for(const id of ["s180-mumtaz-nuran","s180-ihsan-macide","s180-suat-fahir",
   "s181-mumtaz-nuran","s181-other-people"]){
   assert(huzur179ById.get(id)?.answer === null &&
