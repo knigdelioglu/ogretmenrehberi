@@ -926,10 +926,10 @@ for(const [id,s,a] of [
  item?.answer?.question_id===a && item?.source?.source_status==="VERIFIED",
  `s.199–201 kaynak–cevap eşleşmesi: ${id}`);
 }
-assert((bio199ById.get("s199-q1")?.answer?.answer?.includes("başka bir duygu") ||
-  bio199ById.get("s199-q1")?.answer?.answer_sections?.["Kendi yorumunuz"]?.includes("Başka bir duygu")) &&
- bio199ById.get("s199-q1")?.answer?.answer_sections?.["Metindeki kanıt"]?.includes("Küfe"),
- "s.199 Q1 kişisel duygu + kitapta gerçekten verilen şiir örnekleri olmalı.");
+assert(bio199ById.get("s199-q1")?.content?.lead?.includes("Kendi duygunuzu") &&
+ bio199ById.get("s199-q1")?.answer?.answer_sections?.["Metindeki kanıt"]?.includes("Küfe") &&
+ typeof bio199ById.get("s199-q1")?.answer?.answer_sections?.["Uyandırdığı duygu"] === "string",
+ "s.199 Q1 kişisel duygu öğrenciye bırakılmalı ve kitapta gerçekten verilen şiir örnekleriyle gerekçelendirilmeli.");
 assert((bio199ById.get("s199-q2")?.answer?.answer_sections?.["Nitelemenin kaynağı"] ||
   bio199ById.get("s199-q2")?.answer?.answer_sections?.["Sonuç"])?.includes("biyografi yazarının") &&
  (bio199ById.get("s199-q3")?.answer?.answer_sections?.["Kaynak sınırı"]?.includes("ek olay uydurmayın") ||
