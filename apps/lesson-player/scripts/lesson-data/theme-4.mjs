@@ -74,8 +74,10 @@ assert(mimarReadingById.get("s247-vocab")?.content?.items?.length === 6 &&
   Object.keys(mimarReadingById.get("s247-vocab")?.answer?.answer_sections ?? {}).length === 6,
   "Mimar Sinan kelime duvarı altı sözcüğü korumalı.");
 assert(mimarReadingById.get("s249-comp-q1")?.content?.items?.length === 4 &&
-  Object.keys(mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections ?? {}).length === 4,
-  "Gerçek hayat / tiyatro karşılaştırması dört ölçütü korumalı.");
+  Object.keys(mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections ?? {}).length === 5 &&
+  mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections?.Olay &&
+  mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections?.Durum,
+  "Gerçek hayat / tiyatro karşılaştırmasında akış olay-durumu tek görsel ölçütte birleştirirken kanonik cevap beş başlığı korumalı.");
 assert(mimarReadingById.get("s250-social-table")?.content?.items?.length === 7 &&
   mimarReadingById.get("s250-social-table-rest")?.content?.items?.length === 6 &&
   mimarReadingById.get("s250-social-table-rest")?.answer === null &&
