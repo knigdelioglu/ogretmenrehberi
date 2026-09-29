@@ -682,8 +682,10 @@ assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Örnek du
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections?.["Görsel 1 — çiçekli dal"]?.includes("kesinleştirilmez"),
   "s.304 örnek duygu tek doğruya çevrilmemeli; s.305 görsel türü doğrulanamayacak biçimde kesinleştirilmemeli.");
 assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Videoda gözlediğim kişi veya davranış"] === "[...]" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Videodan gerçek örnek"] === "[...]",
+  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Videoda gözlediğim kişi, davranış veya tutum"] === "[...]" &&
+  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Her özellik için video kanıtı"] === "[...]" &&
+  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "source_limited" &&
+  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Video kanıtı"] === "[...]",
   "s.307 Aidiyet cevapları video kanıtı olmadan doldurulmamalı.");
 
 }
