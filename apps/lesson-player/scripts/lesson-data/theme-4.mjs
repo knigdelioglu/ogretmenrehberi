@@ -677,7 +677,7 @@ assert(posterById.get("s299-q1")?.answer?.answer_sections?.["İlk dikkatimi çek
   "s.299 ve s.302 kişisel afiş deneyimi öğrenci adına doldurulmamalı.");
 
 assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Örnek duygu"] === "Umut" &&
-  theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.Alternatifler?.includes("farklı") &&
+  theme4AssessmentById.get("s304-q4")?.answer?.guidance?.includes("farklı gerekçeli cevaplar") &&
   !JSON.stringify(theme4AssessmentById.get("s305-q5")?.answer).includes("Kiraz") &&
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections?.["Görsel 1 — çiçekli dal"]?.includes("kesinleştirilmez"),
   "s.304 örnek duygu tek doğruya çevrilmemeli; s.305 görsel türü doğrulanamayacak biçimde kesinleştirilmemeli.");
