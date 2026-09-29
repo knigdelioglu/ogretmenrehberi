@@ -257,7 +257,7 @@ try {
   )()`);
   if (teacherGuideLeaked) throw new Error("Teacher guidance leaked into student display.");
   await teacher.evaluate("window.dispatchEvent(new KeyboardEvent('keydown', { key: ' ', bubbles: true }))");
-  const secret = "Bu şemayı öğrenciler kitap örneklerini";
+  const secret = "Kitap örnekleri incelendikten sonra bu şemayı kısa hafıza desteği";
   await until(
     () => teacher.evaluate(`document.body.innerText.includes(${JSON.stringify(secret)})`),
     "Teacher note reveal"
