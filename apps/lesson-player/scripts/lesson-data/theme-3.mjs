@@ -884,7 +884,7 @@ assert(bioById.get("s194-q1")?.answer?.answer_sections?.["Tarık Buğra örneği
  "s.194 iki biyografi örneği ve okur için anlamı metin dayanaklı olmalı.");
 assert(bioById.get("s195-goal")?.answer?.entry_type==="performance_support" &&
  bioById.get("s195-goal")?.answer?.answer_sections?.["Okuma öncesi tahmin"] &&
- bioById.get("s195-strategy")?.answer?.answer_sections?.Strateji &&
+ bioById.get("s195-strategy")?.answer?.answer_sections?.["Okuma stratejisi"] &&
  bioById.get("s195-prediction")?.answer===null &&
  bioById.get("s195-prediction")?.content?.lead?.includes("ilk tahmin"),
  "s.195 öğrenci ön-tahmini sonradan öğrenilen olaylarla geriye dönük doldurulmamalı.");
@@ -897,7 +897,7 @@ for(const id of ["s195-reading","s195-struggle","s196-anthem","s196-egypt","s196
 const vocab=bioById.get("s198-vocab");
 assert(vocab?.layout==="vocabulary" &&
  Object.keys(vocab?.answer?.answer_sections??{}).length===7 &&
- vocab.answer.answer_sections["kullanılmayan seçenek"]?.includes("vesile") &&
+ vocab.answer.answer_sections["kaynakta karşılığı verilmeyen seçenek"]?.includes("vesile") &&
  vocab.content?.note?.includes("(7)") &&
  bioById.get("s198-words-extra")?.answer===null,
  "s.198 altı tanım, yedi seçenek, vesile artan seçenek olmalı.");
