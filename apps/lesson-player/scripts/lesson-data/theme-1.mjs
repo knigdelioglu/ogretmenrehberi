@@ -115,8 +115,8 @@ assert(
   "s28-q1 kavram açıklaması ve metne dayalı uygulama rehberliğini birlikte taşımalı."
 );
 assert(
-  s28q1.content?.note?.includes("ders kitabında bağımsız bir soru değildir"),
-  "Tip–karakter zenginleştirmesi kitapta varmış gibi sunulmamalı."
+  s28q1.content?.note?.includes("pekiştirmek için eklenmiştir"),
+  "Tip–karakter zenginleştirmesinin akışa eklenen pekiştirme olduğu açık kalmalı."
 );
 
 const s31PredictionCompare = karagozById.get("s31-q6");
