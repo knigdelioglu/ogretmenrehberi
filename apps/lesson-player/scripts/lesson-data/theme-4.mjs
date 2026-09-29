@@ -664,8 +664,9 @@ assert(theatreWorkshopById.get("s283-q1")?.answer?.answer_sections?.["Rol hazır
   "s.283 öz/akran değerlendirmesinde yaşanmamış performans geçmişi uydurulmamalı.");
 
 assert(!anadoluById.get("s285-q2")?.answer?.answer?.includes("toprakla çalışan") &&
-  anadoluById.get("s285-q2")?.answer?.guidance?.includes("ray"),
-  "s.285 görseli toprakta çalışan kişi diye yanlış kesinleştirilmemeli.");
+  anadoluById.get("s285-q2")?.answer?.answer?.includes("demir yolu") &&
+  anadoluById.get("s285-q2")?.answer?.guidance?.includes("görselde açıkça görülen ayrıntılardan"),
+  "s.285 görseli toprakta çalışan kişi diye yanlış kesinleştirilmemeli; yalnız görselde doğrulanan demir yolu/kaplumbağa ayrıntıları kullanılmalı.");
 assert(anadoluById.get("s287-q1")?.answer?.entry_type === "source_limited" &&
   anadoluById.get("s287-q1")?.answer?.answer_sections?.["Videoda gözlediğim davranış"] === "[...]",
   "s.287 karakter özelliği video görülmeden hazır sonuç olarak verilmemeli.");
