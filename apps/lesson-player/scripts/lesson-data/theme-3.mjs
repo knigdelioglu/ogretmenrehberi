@@ -757,8 +757,10 @@ const conflict189=huzur189ById.get("s189-think");
 assert(conflict189?.answer?.entry_type==="performance_support" &&
  Object.keys(conflict189.answer.answer_sections??{}).length===4 &&
  conflict189.answer.answer_sections["3 · İhsan ve Macide ile tanışma"]?.catisma?.includes("nişanlı") &&
- conflict189.answer.answer_sections["Üç aşamalı sınıf çalışması"]?.esles?.includes("anlatıcı"),
- "s.189 üç parça ve DÜŞÜN–EŞLEŞ–PAYLAŞ yapısı korunmalı.");
+ conflict189.answer.answer_sections["Çatışmaları görünür kılan anlatım unsurları"]?.includes("anlatıcı") &&
+ huzur189ById.get("s189-pair")?.content?.items?.length===3 &&
+ huzur189ById.get("s189-share")?.content?.items?.length===3,
+ "s.189 üç parça ve DÜŞÜN–EŞLEŞ–PAYLAŞ yapısı cevap ile akış arasında korunmalı.");
 for(const id of ["s189-one","s189-two","s189-three","s189-pair","s189-share"]){
  assert(huzur189ById.get(id)?.answer===null &&
   huzur189ById.get(id)?.source?.source_record_id==="T03-S0046",
