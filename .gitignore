@@ -74,6 +74,10 @@ scratch/
 notes.local.*
 *.local.json
 
+# Per-machine Netlify site binding and manual deploy command
+/.netlify/
+/local-only/
+
 # Local databases / indexes
 *.db
 *.sqlite

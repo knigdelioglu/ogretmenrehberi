@@ -5,8 +5,8 @@
   base = "apps/sunum-web"
   command = "npm run build"
   publish = "dist"
-  # Sunumu etkilemeyen değişikliklerde (Android, EPUB, belgeler) yeniden build yapma
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ../../data/grade-11 ../lesson-player/scripts ../../netlify.toml"
+  # Git push'larını atla; elle yayın local-only/Netlify Deploy.command üzerinden yapılır.
+  ignore = "exit 0"
 
 [build.environment]
   NODE_VERSION = "22"

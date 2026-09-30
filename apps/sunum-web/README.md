@@ -48,9 +48,11 @@ npm run dev        # build + http://127.0.0.1:5180
 
 1. Netlify → **Add new site → Import an existing project** → GitHub → `ogretmenrehberi` deposu.
 2. Ayarlar kök dizindeki `netlify.toml`'dan otomatik gelir (base `apps/sunum-web`, publish `dist`).
-3. **Site configuration → Environment variables** → `SUNUM_SIFRE` ekleyin, sonra **Deploys → Trigger deploy**.
-4. İsterseniz site adını değiştirin (ör. `xyz-sunum.netlify.app`).
+3. **Site configuration → Environment variables** → `SUNUM_SIFRE` ekleyin.
+4. Yerel bilgisayarda `apps/sunum-web/.env.local` içindeki `SUNUM_SIFRE` değerini Netlify'daki değerle aynı ayarlayın ve depo kökünde bir kez `netlify link` çalıştırın.
+5. Güncel `main` GitHub'a gönderilip çalışma ağacı temizlendikten sonra `local-only/Netlify Deploy.command` dosyasına tıklayarak production deploy yapın.
+6. İsterseniz site adını değiştirin (ör. `xyz-sunum.netlify.app`).
 
-Sonraki her `main` push'unda, yalnız sunumu etkileyen dosyalar (`data/grade-11`, `apps/sunum-web`, Lesson Player veri scriptleri) değiştiyse yeniden build alınır.
+Git push'ları otomatik build başlatmaz. Yerel deploy komutu önce `apps/sunum-web` için `npm run build` çalıştırır, ardından hazır `dist` çıktısını Netlify CLI ile production'a yükler. Komut dosyası ve Netlify site bağlantısı makineye özeldir; `.gitignore` nedeniyle repoya eklenmez.
 
 Site `noindex` başlığı ve `robots.txt` ile arama motorlarına kapalıdır. Service worker son açılan sürümü önbellekte tutar; okul ağı kesilirse sayfa yine açılır.
