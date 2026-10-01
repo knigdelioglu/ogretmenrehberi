@@ -208,7 +208,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "s.15'teki dört soruyu Pertev Naili Boratav'ın metninden hareketle cevaplayın. Geleneksel Türk Tiyatrosu karekod çalışması erişilebiliyorsa destekleyici kaynak olarak açın.",
+          "lead": "s.15'teki dört soruyu Pertev Naili Boratav'ın metninden hareketle cevaplayınız. Geleneksel Türk tiyatrosu hakkında daha fazla bilgi için kitaptaki karekoddan yararlanabilirsiniz.",
           "items": [
             "Gösteri/seyirlik olma özelliğini işaretleyin.",
             "Taklit ve doğaçlamayla ilgili ifadeleri bulun.",
@@ -451,7 +451,9 @@
           "answer": "Görseller soldan sağa Beberuhi, Çelebi ve Zenne tiplerini göstermektedir.",
           "source_locator": "basılı s.16 / PDF s.17"
         },
-        "content": null
+        "content": {
+          "lead": "Kitabınızın 16. sayfasındaki üç Karagöz tipinin görsellerini soldan sağa inceleyiniz."
+        }
       },
       {
         "id": "s16-q2",
@@ -490,7 +492,9 @@
           "guidance": "Gerekçeli farklı tahminler de kabul edilebilir.",
           "source_locator": "basılı s.16 / PDF s.17"
         },
-        "content": null
+        "content": {
+          "lead": "Kitabınızın 16. sayfasındaki görsellerde tiplerin yüz, giyim ve aksesuar gibi ayırt edici özelliklerine bakınız."
+        }
       },
       {
         "id": "s16-q3",
@@ -604,6 +608,7 @@
         "density": "comfortable",
         "sections_layout": "grid",
         "reveal_order": [
+          "dictionary",
           "answer",
           "evidence"
         ],
@@ -626,7 +631,7 @@
           "printed_page": 17,
           "question_no": "2",
           "prompt_summary": "Dönemin dilini yansıtan kelime ve ifadeler",
-          "answer": "Metindeki eski kelime ve tamlamalar dönemin dilini; tiplerin farklı söyleyişleri ise sosyal dil çeşitliliğini gösterir.",
+          "answer": "Metindeki eski kelime ve tamlamalar ile bunların geçtiği ağır söyleyişli cümleler dönemin dilini; tiplerin farklı söyleyişleri ise sosyal dil çeşitliliğini gösterir.",
           "answer_sections": {
             "Dönemin dilini yansıtan kelime ve tamlamalar": [
               "cânân",
@@ -636,13 +641,21 @@
               "gonce-dehân",
               "iskân-ı beyt"
             ],
+            "Dönemin dilini yansıtan cümleler": [
+              "“Bendenize vurmadan mûrâdınız?”",
+              "“Bendenize vurmanın esbâb-ı mûcibesi?”",
+              "“Biz gelelim mâ-nahnü-fîhimize!”",
+              "“Nerede iskân-ı beyt edersiniz?”"
+            ],
             "Sosyal dil çeşitliliği": "Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark."
           },
           "evidence_quotes": [
             "cânân",
             "meh-i tâbân",
             "esbâb-ı mûcibe",
-            "mâ-nahnü-fîh"
+            "mâ-nahnü-fîh",
+            "Bendenize vurmadan mûrâdınız?",
+            "Bendenize vurmanın esbâb-ı mûcibesi?"
           ],
           "dictionary_terms": [
             {
@@ -808,7 +821,7 @@
           "answer_sections": {
             "Dadı": "Çocuğun bakımını üstlenen kadın.",
             "Esbab": "Sebepler.",
-            "Murat": "İstek veya amaç.",
+            "Murad": "İstek veya amaç.",
             "Bendeniz": "Alçakgönüllülük bildiren “ben” sözü.",
             "Silsile": "Soy, sülale; ayrıca zincir, birbirine bağlı sıra. Karagöz'ün “Sinsileni sansar boğsun!” bedduasında “soyun sopun” anlamında kullanılır.",
             "İspir": "Seyis, at bakıcısı."
@@ -1288,14 +1301,27 @@
           "printed_page": 29,
           "question_no": "2",
           "prompt_summary": "Dostluk kavramının anlamı",
-          "answer": "“Dost kara günde belli olur” sözü, zor zamanda destek olmayı dostluğun ölçütlerinden biri olarak öne çıkarır. Dostluğu güven, paylaşım, karşılıklı kabul ya da destek üzerinden tanımlayabilir; seçtiğiniz özelliği kendi deneyiminizden bir örnekle açıklayabilirsiniz.",
+          "answer": "Dörtlükte dost yüzünü görmenin insanın kalbini dolduran bir sevinç ve gönül ferahlığı verdiği anlatılır; “Dost kara günde belli olur” sözü ise zor zamanda destek olmayı dostluğun ölçütlerinden biri olarak öne çıkarır. Bu iki yönden hareketle dostluğu güven, paylaşım, karşılıklı kabul ya da destek üzerinden tanımlayabilir; seçtiğiniz özelliği kendi deneyiminizden bir örnekle açıklayabilirsiniz.",
           "evidence_quotes": [
+            "Allahım, ne güzel şey bu dost yüzü!",
+            "Ey çorak ruhlara veren bu süsü",
             "Dost kara günde belli olur"
           ],
           "source_locator": "basılı s.29 / PDF s.30",
           "guidance": "Bu kişisel görüş sorusunda öğrencinin kendi tanımını kurmasına zaman verin. İsterse dörtlükteki sözle veya kendi seçtiği bir gözlemle bağlantı kurmasını isteyin; belirli bir yaşantıyı paylaşmasını ya da “gerçek dost” için tek ölçütü benimsemesini zorunlu tutmayın."
         },
-        "content": null
+        "content": {
+          "sections": [
+            {
+              "title": "Ahmet Kutsi Tecer",
+              "body": "Allahım, ne güzel şey bu dost yüzü! / İnsanın kalbine dolan bu bakış! / Ey çorak ruhlara veren bu süsü, / Ey gönül, sana alkış, alkış, alkış!"
+            },
+            {
+              "title": "Atasözü",
+              "body": "Dost kara günde belli olur."
+            }
+          ]
+        }
       },
       {
         "id": "s30-sira-sizde",
@@ -1675,6 +1701,9 @@
         "layout": "structure",
         "density": "comfortable",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer",
@@ -1743,6 +1772,9 @@
         "layout": "question",
         "density": "comfortable",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer",
@@ -1970,6 +2002,9 @@
         "layout": "structure",
         "density": "comfortable",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer",
@@ -2195,6 +2230,9 @@
         "layout": "assessment",
         "density": "compact",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer",
@@ -2266,6 +2304,9 @@
         "layout": "assessment",
         "density": "comfortable",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer"
@@ -2304,6 +2345,9 @@
         "layout": "assessment",
         "density": "comfortable",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer",
@@ -2362,11 +2406,11 @@
       },
       {
         "id": "s35-self-peer-review",
-        "layout": "process",
+        "layout": "assessment",
         "density": "comfortable",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Öz ve akran değerlendirme",
+        "display_prompt": "Öz Değerlendirme Formu",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T01-S0020",
@@ -2380,11 +2424,25 @@
         },
         "answer": null,
         "content": {
-          "lead": "Çalışma sonunda öz değerlendirme ve akran değerlendirmesi yapın.",
+          "lead": "Yaptığınız çalışmayı her ölçüt için Evet / Kısmen / Hayır seçeneklerinden birini işaretleyerek değerlendiriniz.",
           "items": [
-            "Öz Değerlendirme Formu'nda Kısmen veya Hayır işaretlediğiniz becerileri gözden geçirin.",
-            "Eksiklerinizi araştırarak veya gerektiğinde ek destek alarak tamamlayın.",
-            "Bir grup arkadaşınızın çalışmasını Akran Değerlendirme Formu ile değerlendirin."
+            "Grup arkadaşlarımın düşüncelerine saygı duyarak onlarla etkili iletişim kurdum.",
+            "Grupta üzerime düşen görevi zamanında tamamladım.",
+            "Grup arkadaşlarımla uyum içinde çalıştım.",
+            "Karşılaşılan sorunların çözümüne katkıda bulundum.",
+            "Çalışmamı hazırlarken arkadaşlarımın görüş ve önerilerini dikkate aldım.",
+            "Çalışmamı belirlenen süre içinde tamamladım."
+          ],
+          "scale": [
+            "Evet",
+            "Kısmen",
+            "Hayır"
+          ],
+          "sections": [
+            {
+              "title": "Değerlendirmeden sonra",
+              "body": "“Kısmen” veya “Hayır” işaretlediğiniz becerileri gözden geçiriniz; araştırarak veya öğretmeninizden destek alarak eksiklerinizi tamamlayınız. Bir grup arkadaşınızın çalışmasını kitaptaki karekodda verilen Akran Değerlendirme Formu ile değerlendiriniz."
+            }
           ]
         }
       }
@@ -2684,6 +2742,10 @@
         "layout": "vocabulary",
         "density": "compact",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end",
+          "interleave": true
+        },
         "reveal_order": [
           "guidance",
           "answer"
@@ -2766,6 +2828,10 @@
         "layout": "vocabulary",
         "density": "compact",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end",
+          "interleave": true
+        },
         "reveal_order": [
           "guidance",
           "answer"
@@ -3535,10 +3601,11 @@
         "sections_layout": "grid",
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence"
         ],
-        "display_prompt": "Mektubun yazıldığı dönem ile günümüz iletişimi nasıl karşılaştırılabilir?",
-        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "display_prompt": "Mektup metninden hareketle metnin yazıldığı dönemdeki insan ilişkileriyle ilgili çıkarımlarda bulununuz ve bu çıkarımlarınızı günümüzün insan ilişkileriyle karşılaştırınız.",
+        "display_prompt_mode": "VERBATIM_SHORT",
         "source": {
           "source_record_id": "T01-S0037",
           "theme_id": "TEMA_01",
@@ -3556,15 +3623,27 @@
           "entry_type": "question_answer",
           "printed_page": 44,
           "question_no": "3",
-          "prompt_summary": "Mektubun yazıldığı dönemin iletişim koşulları ile günümüz iletişimini karşılaştırma",
-          "answer": "Bu mektupta posta yoluyla haberleşmenin gecikebildiği, Kaplan'ın mektubunun ulaşıp ulaşmadığını merak ettiği ve Âli'den daha ayrıntılı haber istediği görülür. Günümüzde mesajlaşma, e-posta ve görüntülü görüşme gibi araçlar iletişimi çok daha hızlı hâle getirebilir. Ancak tek bir mektuptan hareketle geçmişte bütün yazışmaların daha ayrıntılı veya insan ilişkilerinin daha derin olduğu sonucuna varılamaz.",
+          "prompt_summary": "Mektuptan dönemin insan ilişkilerine ilişkin çıkarım yapma ve günümüz insan ilişkileriyle karşılaştırma",
+          "answer": "Mektupta Kaplan ile Âli arasında güvene, yakınlığa ve karşılıklı desteğe dayanan bir dostluk görülür: Kaplan yalnızlığını, vicdan azabını ve gündelik hayatını açıkça paylaşır, Âli'nin yargılarını önemser, onu cesaretlendirir ve onunla bir arada olmayı ister. Bu ilişki uzaklık nedeniyle gecikebilen mektuplarla sürdürülür. Günümüzde de yakın ilişkiler güven, paylaşım ve destek üzerine kurulur; dijital araçlar ise bu bağı daha hızlı ve sık iletişimle sürdürmeyi kolaylaştırır. Tek bir mektuptan dönemin bütün insan ilişkileri hakkında genelleme yapılamaz.",
           "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
           "answer_sections": {
-            "Metinde görülen iletişim koşulları": "Kaplan mektubun gecikmesinden söz eder, Âli'den daha geniş haber ister ve kendi hayatıyla düşüncelerini ayrıntılı biçimde aktarır. Bunlar bu yazışmada posta ve mektubun uzaktaki kişiler arasındaki temel iletişim araçlarından biri olduğunu gösterir.",
-            "Günümüzle karşılaştırma": "Mesajlaşma, e-posta ve görüntülü görüşme gibi dijital araçlar iletinin daha hızlı ve daha sık gönderilmesini mümkün kılabilir.",
-            "Yorum sınırı": "Bu mektubun ayrıntılı oluşu, dönemin bütün mektuplarının aynı biçimde yazıldığını veya geçmişte insan ilişkilerinin günümüzden daha derin olduğunu kanıtlamaz."
+            "Metinden çıkarılabilecek ilişki özellikleri": [
+              "Güven ve açıklık: Kaplan yalnızlığını, vicdan azabını ve geleceğe dair planlarını dostuyla paylaşır.",
+              "Karşılıklı önem: Başkalarının yargılarına pek aldırmadığını söylerken Âli'nin hükümlerinden çekindiğini belirtir.",
+              "Destek ve cesaretlendirme: Âli'nin ümitsizliğine karşı çalışmanın, sabrın ve iradenin önemini anlatır.",
+              "Aile ve çevre bağları: Behice'nin, babasının ve kardeşlerinin selamını iletir; ortak arkadaşlardan haber verir.",
+              "Özlem ve birlikte olma isteği: Daha iyi yaşayabilmek için dostuyla beraber bulunmak ister."
+            ],
+            "Günümüzle karşılaştırma": "Güven, paylaşım ve destek bugün de yakın ilişkilerin temelidir. Değişen, iletişimin hızı ve sıklığıdır: mesajlaşma ve görüntülü görüşme uzaktaki biriyle bağı anında sürdürmeyi sağlar; mektuplaşmadaki bekleyiş ve uzun, ayrıntılı anlatım ise daha seyrek görülür. Bu farkın ilişkilerin niteliğine etkisi kişiden kişiye değişebilir.",
+            "Yorum sınırı": "Bu mektup Kaplan ile Âli'nin kişisel ilişkisini gösterir; dönemin bütün insan ilişkilerinin aynı biçimde olduğunu veya geçmişte ilişkilerin günümüzden daha derin olduğunu kanıtlamaz."
           },
-          "guidance": "Karşılaştırmayı iletişim aracının hızı, sıklığı ve biçimi üzerinden kurdurun. Metindeki tekil örneği bütün döneme genellemeyin; “eskiden ilişkiler daha derindi / bugün yüzeyseldir” gibi değer yargılarını kanıtlanmış sonuç olarak sunmayın."
+          "guidance": "Karşılaştırmayı insan ilişkilerinin niteliği (güven, paylaşım, destek, özlem) üzerinden kurdurun; iletişim araçlarının hızı bu karşılaştırmayı destekleyen ikinci bir boyut olarak kullanılabilir. Metindeki tekil örneği bütün döneme genellemeyin; “eskiden ilişkiler daha derindi / bugün yüzeyseldir” gibi değer yargılarını kanıtlanmış sonuç olarak sunmayın.",
+          "evidence_quotes": [
+            "Zaten seninle konuşmaya da ihtiyacım var",
+            "yalnız senin hükümlerinden korkuyorum",
+            "Daha neşeli ve daha iyi yaşayabilmem için seninle beraber bulunmayı istiyorum",
+            "Bana hayatından daha geniş malumat ver"
+          ]
         },
         "content": null
       },
@@ -3734,7 +3813,13 @@
           "guidance": "Her grubun sunumunda “metnin söylediği”, “dış kaynaktan öğrendiğimiz” ve “bizim yorumumuz” ayrı başlıklarla gösterilmelidir. Öğrenciyi doğrudan sonuca götürmek yerine kanıt → soru → araştırma → yorum sırasını kullanın."
         },
         "content": {
-          "lead": "Mektuptaki ipuçlarından hareketle tarih, sosyoloji ve psikoloji alanlarında araştırma soruları oluşturun."
+          "lead": "Mektuptaki ipuçlarından hareketle tarih, sosyoloji ve psikoloji alanlarında araştırma soruları oluşturun. Çalışmanın süresi 1 haftadır.",
+          "items": [
+            "Öğretmeninizin rehberliğinde üç gruba ayrılın ve her grup için bir sözcü seçin.",
+            "Birinci grup Mektup-Tarih, ikinci grup Mektup-Sosyoloji, üçüncü grup Mektup-Psikoloji ilişkisini araştırsın.",
+            "Araştırmanızda Mehmet Kaplan'ın mektubunun yanında farklı mektup örneklerinden de yararlanın.",
+            "Ulaştığınız sonuçları ve seçtiğiniz mektup örneklerini arkadaşlarınızla paylaşın."
+          ]
         }
       },
       {
@@ -3950,7 +4035,9 @@
           "guidance": "Öğrencinin önce şiirde gerçekten gördüğü duygu ve imgeleri belirlemesini sağlayın. Hazır bir tam mektup vermeyin ve şiirde doğrulanmamış olay, süre veya ayrıntılar eklemeyin. Şiirin sözlerini kopyalamak yerine imgeleri kendi cümleleriyle dönüştürmesini; mektubun temel yapı unsurlarını korumasını isteyin. Tek bir doğru metin yoktur.",
           "explanation": "Tam model mektup yerine plan ve kısa başlangıç örneği verilir; böylece öğrenci şiiri kendi yorumuyla dönüştürür ve kaynakta doğrulanmamış ayrıntılar cevaba eklenmez."
         },
-        "content": null
+        "content": {
+          "lead": "Önce kitabınızın 46. sayfasındaki Hüseyin Nihâl Atsız'ın “Geri Gelen Mektup” şiirini okuyunuz. Belirlediğiniz beğeni ölçütlerine göre bu şiirle aynı içerikte bir mektup yazıp sınıfta paylaşınız."
+        }
       },
       {
         "id": "s47-q1",
@@ -4053,8 +4140,8 @@
           "guidance",
           "answer"
         ],
-        "display_prompt": "Mektubun gerçek yaşama dayanması onun tamamen tarafsız bir belge olduğu anlamına gelir mi?",
-        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "display_prompt": "Arkadaşlarınızın bu konuyla ilgili görüşlerini alınız ve bu görüşlere katılıp katılmadığınızı gerekçeleriyle açıklayınız.",
+        "display_prompt_mode": "VERBATIM_SHORT",
         "source": {
           "source_record_id": "T01-S0047",
           "theme_id": "TEMA_01",
@@ -4072,15 +4159,19 @@
           "entry_type": "question_answer",
           "printed_page": 47,
           "question_no": "3",
-          "prompt_summary": "Mektubun gerçek yaşama dayanmasının onu tamamen tarafsız bir belge yapıp yapmadığını değerlendirme",
-          "answer": "Hayır. Mektup gerçek kişi, yer ve olaylara dayanabilir; ancak yazar hangi ayrıntıları anlatacağını seçer ve bunları kendi duygu, düşünce, beğeni ve değerlendirmeleriyle aktarır. Bu nedenle mektup gerçek yaşamla ilgili bilgi verebilir fakat bütünüyle tarafsız bir belge sayılmaz.",
+          "prompt_summary": "Arkadaşların gerçeklik konusundaki görüşlerini alma ve bu görüşlere gerekçeli katılma/katılmama",
+          "answer": "Önce arkadaşlarınızın, metindeki gerçeklik ile nesnel gerçekliğin örtüşüp örtüşmediğine ilişkin görüşlerini dinleyin; ardından her görüşe katılıp katılmadığınızı metinden ve araştırmanızdan bir kanıtla gerekçelendirin.",
           "source_locator": "basılı s.47 / PDF s.48",
           "answer_sections": {
-            "Gerçek yaşama dayanan yön": "Tarih, yer, kurum, gündelik hayat ve haberleşmeye ilişkin ayrıntılar dış dünyayla ilişkilendirilebilir.",
-            "Öznel yön": "Yalnızlık, vicdan azabı, romanlara ilişkin değerlendirmeler ve Âli'ye yönelik tavsiyeler yazarın kişisel bakış açısını taşır.",
-            "Sonuç": "Bir mektup tarihsel veya biyografik araştırmada kaynak olarak kullanılabilir; fakat içerdiği bilgilerin kapsamı, amacı ve yazarın bakış açısı dikkate alınmalıdır."
+            "Görüş alışverişi için adımlar": [
+              "Arkadaşınızın görüşünü kendi cümlelerinizle kısaca özetleyin.",
+              "Katılıyorsanız görüşü destekleyen ek bir kanıt gösterin; katılmıyorsanız karşı kanıtınızı ortaya koyun.",
+              "Gerekçenizi “Katılıyorum / Katılmıyorum, çünkü metinde …” biçiminde kurun."
+            ],
+            "Tartışılabilecek örnek görüş": "“Mektup gerçek kişi ve olaylara dayandığı için tamamen nesnel bir belgedir.”",
+            "Örnek gerekçeli cevap": "Bu görüşe kısmen katılırım. Tarih, yer, kurum ve gündelik hayata ilişkin ayrıntılar dış dünyayla ilişkilendirilebilir; ancak yalnızlık, vicdan azabı ve romanlara ilişkin değerlendirmeler yazarın öznel bakışını taşır. Bu nedenle mektup gerçek yaşamdan bilgi verir ama bütünüyle tarafsız bir belge sayılmaz."
           },
-          "guidance": "Soruyu doğrudan cevaplatın: gerçek yaşama dayanma ≠ tam tarafsızlık. Öğrenciden biri dış dünyayla ilişkilendirilebilen, biri de yazarın öznel bakışını gösteren en az iki metin örneği istemek yeterlidir."
+          "guidance": "Öğrencilerin önce birbirlerini dinlemesini sağlayın; katılma ya da katılmama kararını tek başına yeterli saymayın, her gerekçenin metinden veya araştırmadan bir kanıta dayanmasını isteyin. Örnek görüş tartışmayı başlatmak içindir; sınıftaki gerçek görüşlerin yerine geçmez."
         },
         "content": null
       },
@@ -4126,7 +4217,9 @@
           },
           "guidance": "Soru olası amaçları soruyor. Birden fazla gerekçeli cevabı kabul edin. Kitaptaki olayın sonradan nasıl sonuçlandığını göndericilerin başlangıçtaki kesin niyeti gibi sunmayın."
         },
-        "content": null
+        "content": {
+          "lead": "Önce kitabınızın 48. sayfasındaki iki haber metnini okuyunuz: “‘Rodos’tan Gazze’ye yüzen’ şişeyle başlayan kıtalar arası arkadaşlık” ve “Asırlık mektuplar sahibine ulaşıyor”. Bu soru ilk metinle ilgilidir."
+        }
       },
       {
         "id": "s48-q2",
@@ -4166,7 +4259,9 @@
           },
           "guidance": "Metinde doğrulanmayan “şehitlik”, “fedakârlık” veya benzeri sonuçları mektubun kanıtladığı biçiminde sunmayın. Öğrenciye “Mektup zamanında ulaşsaydı ne işe yarayacaktı; yıllar sonra ulaşınca işlevi nasıl değişti?” sorusunu yöneltin."
         },
-        "content": null
+        "content": {
+          "lead": "İkinci metindeki, 1918'de yazılıp 103 yıl sonra torunlara ulaştırılan mektubu düşününüz."
+        }
       },
       {
         "id": "s48-q3",
@@ -4213,6 +4308,9 @@
         "layout": "structure",
         "density": "compact",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end"
+        },
         "reveal_order": [
           "guidance",
           "answer"
@@ -4248,7 +4346,9 @@
           },
           "guidance": "Her örnekte metnin açıkça gerçekleştirdiği iletişim işlevini belirleyin. Örneklerin biçimlerinin farklı olabileceğini göz önünde bulundurun; metin dışında bilinmesi gereken biyografik veya mekânsal ayrıntıları cevabın zorunlu parçası yapmayın."
         },
-        "content": null
+        "content": {
+          "lead": "Önce kitabınızın 49-50. sayfalarındaki beş metni okuyunuz: Kutadgu Bilig'den bir bölüm, Necip Fazıl Kısakürek'in Çile'sinden dizeler, Mustafa Kemal'in Doktor Rasim Ferit Bey'e mektubu, Taaşşuk-ı Talat ve Fitnat'tan Saliha'nın mektubu ve Bekir Sıtkı Erdoğan'ın Bir Yağmur Başladı'sından dizeler."
+        }
       },
       {
         "id": "s50-q2",
@@ -5139,11 +5239,51 @@
         "layout": "assessment",
         "density": "compact",
         "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "Öz değerlendirme — 1/2",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T01-S0062",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "58",
+          "book_heading": "Süreci Değerlendirebilme",
+          "task_type": "ASSESSMENT",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.58 / PDF s.59 — görünür öz değerlendirme formu",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Her ölçüt için Evet / Kısmen / Hayır kararı verin.",
+          "items": [
+            "Sözlü iletişim engelleriyle ilgili araştırma yaparak bilgi topladım.",
+            "Konuşma içeriğini kullanım alanına göre belirledim.",
+            "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
+            "Düşünceyi geliştirme yollarından yararlandım.",
+            "Türkçenin yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim."
+          ],
+          "scale": [
+            "Evet",
+            "Kısmen",
+            "Hayır"
+          ]
+        }
+      },
+      {
+        "id": "s58-self-assessment-2",
+        "layout": "assessment",
+        "density": "compact",
+        "sections_layout": "grid",
+        "presentation": {
+          "omit_sections": [
+            "Görünür_10_Öz_Değerlendirme_Ölçütü"
+          ]
+        },
         "reveal_order": [
           "guidance",
           "answer"
         ],
-        "display_prompt": "Öz değerlendirme — 1/2",
+        "display_prompt": "Öz değerlendirme — 2/2",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T01-S0062",
@@ -5185,43 +5325,19 @@
           "source_locator": "basılı s.58 / PDF s.59 — görünür Öz Değerlendirme Formu"
         },
         "content": {
-          "lead": "Her ölçüt için Evet / Kısmen / Hayır kararı verin.",
-          "items": [
-            "Sözlü iletişim engelleriyle ilgili araştırma yaparak bilgi topladım.",
-            "Konuşma içeriğini kullanım alanına göre belirledim.",
-            "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
-            "Düşünceyi geliştirme yollarından yararlandım.",
-            "Türkçenin yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim."
-          ]
-        }
-      },
-      {
-        "id": "s58-self-assessment-2",
-        "layout": "assessment",
-        "density": "compact",
-        "sections_layout": "grid",
-        "reveal_order": [],
-        "display_prompt": "Öz değerlendirme — 2/2",
-        "display_prompt_mode": "VERIFIED_SUMMARY",
-        "source": {
-          "source_record_id": "T01-S0062",
-          "theme_id": "TEMA_01",
-          "printed_page_range": "58",
-          "book_heading": "Süreci Değerlendirebilme",
-          "task_type": "ASSESSMENT",
-          "rights_mode": "DERIVED_ACTIVITY",
-          "source_locator": "basılı s.58 / PDF s.59 — görünür öz değerlendirme formu",
-          "source_status": "VERIFIED"
-        },
-        "answer": null,
-        "content": {
-          "lead": "Kalan ölçütleri değerlendirerek öz değerlendirmenizi tamamlayın.",
+          "lead": "Kalan ölçütler için de Evet / Kısmen / Hayır kararı verin.",
           "items": [
             "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
             "Toplumsal hassasiyetlere aykırı ögelerden kaçındım.",
             "Millî, manevi ve kültürel değerleri gözetmeye dikkat ettim.",
             "Beden dili, diksiyon ve telaffuzu etkili kullandım.",
             "Dinleyiciyle etkileşimi sürdürdüm."
+          ],
+          "item_offset": 5,
+          "scale": [
+            "Evet",
+            "Kısmen",
+            "Hayır"
           ]
         }
       },
@@ -6013,7 +6129,7 @@
         "density": "compact",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Dinleme / izleme öz değerlendirmesi",
+        "display_prompt": "Gözlem Formu",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T01-S0079",
@@ -6027,14 +6143,21 @@
         },
         "answer": null,
         "content": {
-          "lead": "Dinleme/izleme sürecinizi gözden geçirin.",
+          "lead": "Çok modlu metni dinleme / izleme sürecinde yaptıklarınız öğretmeniniz tarafından bu ölçütlere göre değerlendirilecektir.",
           "items": [
-            "Amacımı belirledim ve izlemeye hazırlandım.",
-            "İçerikle ilgili bir ön tahminde bulundum.",
-            "Ortamdan ve metinden kaynaklanan iletişim engellerini azalttım.",
-            "Uygun dinleme/izleme yöntemini seçtim.",
-            "Dikkatimi yoğunlaştırdım ve başkalarını rahatsız etmeden izledim.",
-            "Önemli gördüğüm yerleri kısa notlarla kaydettim."
+            "Metni dinleme / izlemeye hazırlık yaptı.",
+            "Dinleme / izleme amacını belirledi.",
+            "Metnin içeriğiyle ilgili tahminde bulundu.",
+            "Dinleme / izlemeyi olumsuz etkileyen iletişim engellerini ortadan kaldırdı.",
+            "Metni dinleme / izleme yöntemine karar verdi.",
+            "Metni dikkatini yoğunlaştırarak dinledi / izledi.",
+            "Metni başkalarını rahatsız etmeden dinledi / izledi.",
+            "Önemli gördüğü yerler hakkında notlar aldı."
+          ],
+          "scale": [
+            "Evet",
+            "Kısmen",
+            "Hayır"
           ]
         }
       },
@@ -6043,6 +6166,10 @@
         "layout": "vocabulary",
         "density": "compact",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end",
+          "interleave": true
+        },
         "reveal_order": [
           "guidance",
           "answer"
@@ -7085,7 +7212,14 @@
           "guidance": "Öğrencinin kendi üç bilgisi, iki sorusu ve bir görüşü esas alınmalıdır. Model cevap beklenen yapıyı göstermek içindir; aynen kopyalanması hedef değildir.",
           "source_locator": "basılı s.73 / PDF s.74 — Süreci Değerlendirebilme / Çıkış Kartı"
         },
-        "content": null
+        "content": {
+          "lead": "Çıkış Kartı'nı dinleme / izleme bölümünde yaptığınız çalışmalara göre tamamlayınız.",
+          "items": [
+            "Üç Yaz: İletişime dair öğrendiğiniz veya önemli bulduğunuz üç bilgiyi yazınız.",
+            "İki Sor: İlginizi çeken ve daha fazla bilgi sahibi olmak istediğiniz konularla ilgili iki soru sorunuz.",
+            "Bir Paylaş: Öğrendiklerinizle ilgili bir görüşünüzü arkadaşlarınızla paylaşınız."
+          ]
+        }
       }
     ]
   },
@@ -7779,6 +7913,11 @@
             "Düşünceyi geliştirme yollarından yararlandım.",
             "İçeriğe uygun bir başlık belirledim.",
             "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim."
+          ],
+          "scale": [
+            "Evet",
+            "Kısmen",
+            "Hayır"
           ]
         }
       },
@@ -7825,7 +7964,14 @@
             "Bir Paylaş": "Mektup ve e-postada muhataba göre resmiyet düzeyini belirlerken hangi ifadelerin fazla samimi, hangilerinin gereğinden ağır kaldığını ayırt etmekte zorlandım."
           }
         },
-        "content": null
+        "content": {
+          "lead": "Çıkış Kartı'nı Bir Diyeceğim Var! temasında yaptığınız çalışmalara göre doldurunuz.",
+          "items": [
+            "Üç Yaz: Temayla ilgili öğrendiğiniz üç bilgiyi yazınız.",
+            "İki Sor: Temada ilginizi çeken ve hakkında daha fazla bilgi sahibi olmak istediğiniz konularla ilgili iki soru sorunuz.",
+            "Bir Paylaş: Temada öğrenmekte zorluk çektiğiniz bir konuyu paylaşınız."
+          ]
+        }
       },
       {
         "id": "s78-rubric",
@@ -8372,6 +8518,10 @@
         "layout": "structure",
         "density": "compact",
         "sections_layout": "grid",
+        "presentation": {
+          "answer_text": "end",
+          "interleave": true
+        },
         "reveal_order": [
           "guidance",
           "answer",
