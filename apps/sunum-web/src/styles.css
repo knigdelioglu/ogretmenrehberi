@@ -628,6 +628,71 @@ button {
   margin-top: 0.3em;
 }
 
+/* Ölçekli değerlendirme formu (Evet / Kısmen / Hayır) */
+.scale-form {
+  --scale: 3;
+  display: grid;
+  border: 2px solid var(--rule);
+  border-radius: 0.35em;
+  overflow: hidden;
+}
+
+.scale-form__head,
+.scale-form__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) repeat(var(--scale), 4.8em);
+  align-items: center;
+}
+
+.scale-form__head {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.scale-form__head span {
+  padding: 0.35em 0.15em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.scale-form__head span:first-child {
+  padding-left: 0.75em;
+  text-align: left;
+}
+
+.scale-form__row + .scale-form__row,
+.scale-form__head + .scale-form__row {
+  border-top: 1px solid var(--rule);
+}
+
+.scale-form__text {
+  display: grid;
+  grid-template-columns: 1.4em 1fr;
+  gap: 0.4em;
+  padding: 0.35em 0.6em;
+}
+
+.scale-form__text .n {
+  font-weight: 750;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.scale-form__box {
+  justify-self: center;
+  width: 0.85em;
+  height: 0.85em;
+  border: 0.12em solid var(--accent);
+  border-radius: 0.16em;
+}
+
+.is-hidden-value {
+  color: var(--ink-3);
+  letter-spacing: 0.3em;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;

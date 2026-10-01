@@ -113,15 +113,27 @@
       "entry_type": "question_answer",
       "printed_page": 44,
       "question_no": "3",
-      "prompt_summary": "Mektubun yazıldığı dönemin iletişim koşulları ile günümüz iletişimini karşılaştırma",
-      "answer": "Bu mektupta posta yoluyla haberleşmenin gecikebildiği, Kaplan'ın mektubunun ulaşıp ulaşmadığını merak ettiği ve Âli'den daha ayrıntılı haber istediği görülür. Günümüzde mesajlaşma, e-posta ve görüntülü görüşme gibi araçlar iletişimi çok daha hızlı hâle getirebilir. Ancak tek bir mektuptan hareketle geçmişte bütün yazışmaların daha ayrıntılı veya insan ilişkilerinin daha derin olduğu sonucuna varılamaz.",
+      "prompt_summary": "Mektuptan dönemin insan ilişkilerine ilişkin çıkarım yapma ve günümüz insan ilişkileriyle karşılaştırma",
+      "answer": "Mektupta Kaplan ile Âli arasında güvene, yakınlığa ve karşılıklı desteğe dayanan bir dostluk görülür: Kaplan yalnızlığını, vicdan azabını ve gündelik hayatını açıkça paylaşır, Âli'nin yargılarını önemser, onu cesaretlendirir ve onunla bir arada olmayı ister. Bu ilişki uzaklık nedeniyle gecikebilen mektuplarla sürdürülür. Günümüzde de yakın ilişkiler güven, paylaşım ve destek üzerine kurulur; dijital araçlar ise bu bağı daha hızlı ve sık iletişimle sürdürmeyi kolaylaştırır. Tek bir mektuptan dönemin bütün insan ilişkileri hakkında genelleme yapılamaz.",
       "source_locator": "basılı s.44 / PDF s.45; ana metin s.37-38",
       "answer_sections": {
-        "Metinde görülen iletişim koşulları": "Kaplan mektubun gecikmesinden söz eder, Âli'den daha geniş haber ister ve kendi hayatıyla düşüncelerini ayrıntılı biçimde aktarır. Bunlar bu yazışmada posta ve mektubun uzaktaki kişiler arasındaki temel iletişim araçlarından biri olduğunu gösterir.",
-        "Günümüzle karşılaştırma": "Mesajlaşma, e-posta ve görüntülü görüşme gibi dijital araçlar iletinin daha hızlı ve daha sık gönderilmesini mümkün kılabilir.",
-        "Yorum sınırı": "Bu mektubun ayrıntılı oluşu, dönemin bütün mektuplarının aynı biçimde yazıldığını veya geçmişte insan ilişkilerinin günümüzden daha derin olduğunu kanıtlamaz."
+        "Metinden çıkarılabilecek ilişki özellikleri": [
+          "Güven ve açıklık: Kaplan yalnızlığını, vicdan azabını ve geleceğe dair planlarını dostuyla paylaşır.",
+          "Karşılıklı önem: Başkalarının yargılarına pek aldırmadığını söylerken Âli'nin hükümlerinden çekindiğini belirtir.",
+          "Destek ve cesaretlendirme: Âli'nin ümitsizliğine karşı çalışmanın, sabrın ve iradenin önemini anlatır.",
+          "Aile ve çevre bağları: Behice'nin, babasının ve kardeşlerinin selamını iletir; ortak arkadaşlardan haber verir.",
+          "Özlem ve birlikte olma isteği: Daha iyi yaşayabilmek için dostuyla beraber bulunmak ister."
+        ],
+        "Günümüzle karşılaştırma": "Güven, paylaşım ve destek bugün de yakın ilişkilerin temelidir. Değişen, iletişimin hızı ve sıklığıdır: mesajlaşma ve görüntülü görüşme uzaktaki biriyle bağı anında sürdürmeyi sağlar; mektuplaşmadaki bekleyiş ve uzun, ayrıntılı anlatım ise daha seyrek görülür. Bu farkın ilişkilerin niteliğine etkisi kişiden kişiye değişebilir.",
+        "Yorum sınırı": "Bu mektup Kaplan ile Âli'nin kişisel ilişkisini gösterir; dönemin bütün insan ilişkilerinin aynı biçimde olduğunu veya geçmişte ilişkilerin günümüzden daha derin olduğunu kanıtlamaz."
       },
-      "guidance": "Karşılaştırmayı iletişim aracının hızı, sıklığı ve biçimi üzerinden kurdurun. Metindeki tekil örneği bütün döneme genellemeyin; “eskiden ilişkiler daha derindi / bugün yüzeyseldir” gibi değer yargılarını kanıtlanmış sonuç olarak sunmayın."
+      "guidance": "Karşılaştırmayı insan ilişkilerinin niteliği (güven, paylaşım, destek, özlem) üzerinden kurdurun; iletişim araçlarının hızı bu karşılaştırmayı destekleyen ikinci bir boyut olarak kullanılabilir. Metindeki tekil örneği bütün döneme genellemeyin; “eskiden ilişkiler daha derindi / bugün yüzeyseldir” gibi değer yargılarını kanıtlanmış sonuç olarak sunmayın.",
+      "evidence_quotes": [
+        "Zaten seninle konuşmaya da ihtiyacım var",
+        "yalnız senin hükümlerinden korkuyorum",
+        "Daha neşeli ve daha iyi yaşayabilmem için seninle beraber bulunmayı istiyorum",
+        "Bana hayatından daha geniş malumat ver"
+      ]
     },
     {
       "question_id": "T1-P44-Q04",

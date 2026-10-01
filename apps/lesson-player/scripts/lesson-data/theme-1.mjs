@@ -139,7 +139,7 @@ assert(
 
 const vocabulary = karagozById.get("s25-q1");
 assert(vocabulary, "s25-q1 bulunamadı.");
-for (const term of ["Dadı", "Esbab", "Murat", "Bendeniz", "Silsile", "İspir"]) {
+for (const term of ["Dadı", "Esbab", "Murad", "Bendeniz", "Silsile", "İspir"]) {
   assert(
     vocabulary.answer.answer_sections?.[term],
     `Karagöz söz varlığı tanımı eksik: ${term}`

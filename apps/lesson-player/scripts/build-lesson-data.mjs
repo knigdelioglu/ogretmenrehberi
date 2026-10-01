@@ -165,6 +165,32 @@ function resolveSectionsLayout(step) {
   return layout;
 }
 
+// Yalnız sınıf sunumunu etkileyen isteğe bağlı açılma ayarları.
+// answer_text: "start" | "end" — cevap özet metninin ayrıntılı bölümlerden önce mi sonra mı açılacağı.
+// interleave: true — madde/kelime grupları önce cevapsız, sonra cevaplı gösterilir.
+// omit_sections: sunumda görev ekranında zaten görünen answer_sections başlıkları.
+function resolvePresentation(step, answer) {
+  const presentation = step.presentation;
+  if (presentation === undefined) return undefined;
+  const allowed = new Set(["answer_text", "interleave", "omit_sections"]);
+  for (const key of Object.keys(presentation)) {
+    if (!allowed.has(key)) fail(`Unsupported presentation key "${key}" for ${step.id}`);
+  }
+  if (presentation.answer_text !== undefined && !["start", "end"].includes(presentation.answer_text)) {
+    fail(`Unsupported presentation.answer_text for ${step.id}`);
+  }
+  const sections = answer?.answer_sections;
+  if (presentation.interleave && (!sections || Array.isArray(sections))) {
+    fail(`presentation.interleave needs keyed answer_sections: ${step.id}`);
+  }
+  for (const key of presentation.omit_sections ?? []) {
+    if (!sections || Array.isArray(sections) || !(key in sections)) {
+      fail(`presentation.omit_sections key not found for ${step.id}: ${key}`);
+    }
+  }
+  return { ...presentation };
+}
+
 function resolveDisplayPrompt(step, source, answer, answerStepCountBySource) {
   if (step.prompt?.trim()) {
     return {
@@ -358,6 +384,7 @@ function buildLesson(flowPath) {
       layout: step.layout,
       density,
       sections_layout: sectionsLayout,
+      presentation: resolvePresentation(step, answer),
       reveal_order: revealOrder,
       display_prompt: displayPrompt.text,
       display_prompt_mode: displayPrompt.mode,

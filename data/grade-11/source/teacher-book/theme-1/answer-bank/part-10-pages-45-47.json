@@ -186,15 +186,19 @@
       "entry_type": "question_answer",
       "printed_page": 47,
       "question_no": "3",
-      "prompt_summary": "Mektubun gerçek yaşama dayanmasının onu tamamen tarafsız bir belge yapıp yapmadığını değerlendirme",
-      "answer": "Hayır. Mektup gerçek kişi, yer ve olaylara dayanabilir; ancak yazar hangi ayrıntıları anlatacağını seçer ve bunları kendi duygu, düşünce, beğeni ve değerlendirmeleriyle aktarır. Bu nedenle mektup gerçek yaşamla ilgili bilgi verebilir fakat bütünüyle tarafsız bir belge sayılmaz.",
+      "prompt_summary": "Arkadaşların gerçeklik konusundaki görüşlerini alma ve bu görüşlere gerekçeli katılma/katılmama",
+      "answer": "Önce arkadaşlarınızın, metindeki gerçeklik ile nesnel gerçekliğin örtüşüp örtüşmediğine ilişkin görüşlerini dinleyin; ardından her görüşe katılıp katılmadığınızı metinden ve araştırmanızdan bir kanıtla gerekçelendirin.",
       "source_locator": "basılı s.47 / PDF s.48",
       "answer_sections": {
-        "Gerçek yaşama dayanan yön": "Tarih, yer, kurum, gündelik hayat ve haberleşmeye ilişkin ayrıntılar dış dünyayla ilişkilendirilebilir.",
-        "Öznel yön": "Yalnızlık, vicdan azabı, romanlara ilişkin değerlendirmeler ve Âli'ye yönelik tavsiyeler yazarın kişisel bakış açısını taşır.",
-        "Sonuç": "Bir mektup tarihsel veya biyografik araştırmada kaynak olarak kullanılabilir; fakat içerdiği bilgilerin kapsamı, amacı ve yazarın bakış açısı dikkate alınmalıdır."
+        "Görüş alışverişi için adımlar": [
+          "Arkadaşınızın görüşünü kendi cümlelerinizle kısaca özetleyin.",
+          "Katılıyorsanız görüşü destekleyen ek bir kanıt gösterin; katılmıyorsanız karşı kanıtınızı ortaya koyun.",
+          "Gerekçenizi “Katılıyorum / Katılmıyorum, çünkü metinde …” biçiminde kurun."
+        ],
+        "Tartışılabilecek örnek görüş": "“Mektup gerçek kişi ve olaylara dayandığı için tamamen nesnel bir belgedir.”",
+        "Örnek gerekçeli cevap": "Bu görüşe kısmen katılırım. Tarih, yer, kurum ve gündelik hayata ilişkin ayrıntılar dış dünyayla ilişkilendirilebilir; ancak yalnızlık, vicdan azabı ve romanlara ilişkin değerlendirmeler yazarın öznel bakışını taşır. Bu nedenle mektup gerçek yaşamdan bilgi verir ama bütünüyle tarafsız bir belge sayılmaz."
       },
-      "guidance": "Soruyu doğrudan cevaplatın: gerçek yaşama dayanma ≠ tam tarafsızlık. Öğrenciden biri dış dünyayla ilişkilendirilebilen, biri de yazarın öznel bakışını gösteren en az iki metin örneği istemek yeterlidir."
+      "guidance": "Öğrencilerin önce birbirlerini dinlemesini sağlayın; katılma ya da katılmama kararını tek başına yeterli saymayın, her gerekçenin metinden veya araştırmadan bir kanıta dayanmasını isteyin. Örnek görüş tartışmayı başlatmak içindir; sınıftaki gerçek görüşlerin yerine geçmez."
     }
   ]
 }

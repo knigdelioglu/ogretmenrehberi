@@ -85,7 +85,11 @@
       "source_record_id": "T01-S0128",
       "answer_id": "T1-P83-Q12",
       "layout": "structure",
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "answer_text": "end",
+        "interleave": true
+      }
     },
     {
       "id": "s83-olvido-media-reminder",

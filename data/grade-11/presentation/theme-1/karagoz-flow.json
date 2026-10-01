@@ -17,7 +17,7 @@
       "prompt": "Konuya Başlarken — Önce kitaptaki “Seyirlik Halk Oyunları” metnini okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.15'teki dört soruyu Pertev Naili Boratav'ın metninden hareketle cevaplayın. Geleneksel Türk Tiyatrosu karekod çalışması erişilebiliyorsa destekleyici kaynak olarak açın.",
+        "lead": "s.15'teki dört soruyu Pertev Naili Boratav'ın metninden hareketle cevaplayınız. Geleneksel Türk tiyatrosu hakkında daha fazla bilgi için kitaptaki karekoddan yararlanabilirsiniz.",
         "items": [
           "Gösteri/seyirlik olma özelliğini işaretleyin.",
           "Taklit ve doğaçlamayla ilgili ifadeleri bulun.",
@@ -77,7 +77,10 @@
       "answer_id": "T1-P16-Q01",
       "layout": "question",
       "prompt": "Bu tiplerin adlarını tahmin ediniz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Kitabınızın 16. sayfasındaki üç Karagöz tipinin görsellerini soldan sağa inceleyiniz."
+      }
     },
     {
       "id": "s16-q2",
@@ -85,7 +88,10 @@
       "answer_id": "T1-P16-Q02",
       "layout": "question",
       "prompt": "Oyun kişilerinin fiziksel özelliklerinden hareketle kişilik özellikleriyle ilgili tahminde bulununuz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "content": {
+        "lead": "Kitabınızın 16. sayfasındaki görsellerde tiplerin yüz, giyim ve aksesuar gibi ayırt edici özelliklerine bakınız."
+      }
     },
     {
       "id": "s16-q3",
@@ -292,7 +298,19 @@
       "id": "s29-q2",
       "source_record_id": "T01-S0015",
       "answer_id": "T1-P29-Q02",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "sections": [
+          {
+            "title": "Ahmet Kutsi Tecer",
+            "body": "Allahım, ne güzel şey bu dost yüzü! / İnsanın kalbine dolan bu bakış! / Ey çorak ruhlara veren bu süsü, / Ey gönül, sana alkış, alkış, alkış!"
+          },
+          {
+            "title": "Atasözü",
+            "body": "Dost kara günde belli olur."
+          }
+        ]
+      }
     },
     {
       "id": "s30-sira-sizde",
@@ -378,7 +396,10 @@
       "answer_id": "T1-P32-Q03",
       "layout": "structure",
       "prompt": "Yazıcı metninin yapı unsurlarını belirleyerek çalışma kâğıdına yazınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s32-q4",
@@ -386,7 +407,10 @@
       "answer_id": "T1-P32-Q04",
       "layout": "question",
       "prompt": "Çatışmaların kaynağını ve taraflarını; mekân, zaman ve kişilerin etkisini belirleyiniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s32-q5",
@@ -439,7 +463,10 @@
       "answer_id": "T1-P34-Q08",
       "layout": "structure",
       "prompt": "Cümlelerdeki fiilimsileri belirleyip türlerini ve işlevlerini yazınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s34-perf",
@@ -492,7 +519,10 @@
           "Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi"
         ]
       },
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s35-q2",
@@ -500,7 +530,10 @@
       "answer_id": "T1-P35-Q02",
       "layout": "assessment",
       "prompt": "Metindeki çatışmalar hangi dramatik öge (mekân, zaman, kişiler) üzerinden daha etkili verilebilirdi? Açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s35-q3",
@@ -508,20 +541,37 @@
       "answer_id": "T1-P35-Q03",
       "layout": "assessment",
       "prompt": "Metindeki çatışmalar, yanlış anlamalar ve söz oyunlarıyla verilmiştir. Çatışmalar, başka hangi dil unsurlarıyla daha etkili verilebilir? Açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s35-self-peer-review",
       "source_record_id": "T01-S0020",
-      "layout": "process",
-      "prompt": "Öz ve akran değerlendirme",
+      "layout": "assessment",
+      "prompt": "Öz Değerlendirme Formu",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Çalışma sonunda öz değerlendirme ve akran değerlendirmesi yapın.",
+        "lead": "Yaptığınız çalışmayı her ölçüt için Evet / Kısmen / Hayır seçeneklerinden birini işaretleyerek değerlendiriniz.",
         "items": [
-          "Öz Değerlendirme Formu'nda Kısmen veya Hayır işaretlediğiniz becerileri gözden geçirin.",
-          "Eksiklerinizi araştırarak veya gerektiğinde ek destek alarak tamamlayın.",
-          "Bir grup arkadaşınızın çalışmasını Akran Değerlendirme Formu ile değerlendirin."
+          "Grup arkadaşlarımın düşüncelerine saygı duyarak onlarla etkili iletişim kurdum.",
+          "Grupta üzerime düşen görevi zamanında tamamladım.",
+          "Grup arkadaşlarımla uyum içinde çalıştım.",
+          "Karşılaşılan sorunların çözümüne katkıda bulundum.",
+          "Çalışmamı hazırlarken arkadaşlarımın görüş ve önerilerini dikkate aldım.",
+          "Çalışmamı belirlenen süre içinde tamamladım."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "sections": [
+          {
+            "title": "Değerlendirmeden sonra",
+            "body": "“Kısmen” veya “Hayır” işaretlediğiniz becerileri gözden geçiriniz; araştırarak veya öğretmeninizden destek alarak eksiklerinizi tamamlayınız. Bir grup arkadaşınızın çalışmasını kitaptaki karekodda verilen Akran Değerlendirme Formu ile değerlendiriniz."
+          }
         ]
       }
     }

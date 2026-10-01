@@ -172,6 +172,11 @@
           "Düşünceyi geliştirme yollarından yararlandım.",
           "İçeriğe uygun bir başlık belirledim.",
           "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
         ]
       }
     },
@@ -182,7 +187,15 @@
       "layout": "assessment",
       "density": "compact",
       "prompt": "Tema Çıkış Kartı — Üç Yaz · İki Sor · Bir Paylaş",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Çıkış Kartı'nı Bir Diyeceğim Var! temasında yaptığınız çalışmalara göre doldurunuz.",
+        "items": [
+          "Üç Yaz: Temayla ilgili öğrendiğiniz üç bilgiyi yazınız.",
+          "İki Sor: Temada ilginizi çeken ve hakkında daha fazla bilgi sahibi olmak istediğiniz konularla ilgili iki soru sorunuz.",
+          "Bir Paylaş: Temada öğrenmekte zorluk çektiğiniz bir konuyu paylaşınız."
+        ]
+      }
     },
     {
       "id": "s78-rubric",

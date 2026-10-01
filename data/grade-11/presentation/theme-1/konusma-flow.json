@@ -174,9 +174,13 @@
           "Başlatma, sürdürme ve bitirme ifadelerini etkili kullandım.",
           "Düşünceyi geliştirme yollarından yararlandım.",
           "Türkçenin yapısına, işlevine ve bağdaşıklık ögelerine dikkat ettim."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
         ]
-      },
-      "answer_id": "T1-P58-PERF01"
+      }
     },
     {
       "id": "s58-self-assessment-2",
@@ -186,13 +190,25 @@
       "prompt": "Öz değerlendirme — 2/2",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kalan ölçütleri değerlendirerek öz değerlendirmenizi tamamlayın.",
+        "lead": "Kalan ölçütler için de Evet / Kısmen / Hayır kararı verin.",
         "items": [
           "Söz varlığını hedef kitleye ve bağlama uygun kullandım.",
           "Toplumsal hassasiyetlere aykırı ögelerden kaçındım.",
           "Millî, manevi ve kültürel değerleri gözetmeye dikkat ettim.",
           "Beden dili, diksiyon ve telaffuzu etkili kullandım.",
           "Dinleyiciyle etkileşimi sürdürdüm."
+        ],
+        "item_offset": 5,
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ]
+      },
+      "answer_id": "T1-P58-PERF01",
+      "presentation": {
+        "omit_sections": [
+          "Görünür_10_Öz_Değerlendirme_Ölçütü"
         ]
       }
     },

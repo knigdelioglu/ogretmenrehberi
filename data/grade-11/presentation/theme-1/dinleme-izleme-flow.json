@@ -125,17 +125,24 @@
       "source_record_id": "T01-S0079",
       "layout": "assessment",
       "density": "compact",
-      "prompt": "Dinleme / izleme öz değerlendirmesi",
+      "prompt": "Gözlem Formu",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dinleme/izleme sürecinizi gözden geçirin.",
+        "lead": "Çok modlu metni dinleme / izleme sürecinde yaptıklarınız öğretmeniniz tarafından bu ölçütlere göre değerlendirilecektir.",
         "items": [
-          "Amacımı belirledim ve izlemeye hazırlandım.",
-          "İçerikle ilgili bir ön tahminde bulundum.",
-          "Ortamdan ve metinden kaynaklanan iletişim engellerini azalttım.",
-          "Uygun dinleme/izleme yöntemini seçtim.",
-          "Dikkatimi yoğunlaştırdım ve başkalarını rahatsız etmeden izledim.",
-          "Önemli gördüğüm yerleri kısa notlarla kaydettim."
+          "Metni dinleme / izlemeye hazırlık yaptı.",
+          "Dinleme / izleme amacını belirledi.",
+          "Metnin içeriğiyle ilgili tahminde bulundu.",
+          "Dinleme / izlemeyi olumsuz etkileyen iletişim engellerini ortadan kaldırdı.",
+          "Metni dinleme / izleme yöntemine karar verdi.",
+          "Metni dikkatini yoğunlaştırarak dinledi / izledi.",
+          "Metni başkalarını rahatsız etmeden dinledi / izledi.",
+          "Önemli gördüğü yerler hakkında notlar aldı."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
         ]
       }
     },
@@ -144,7 +151,11 @@
       "source_record_id": "T01-S0080",
       "answer_id": "T1-P65-Q01",
       "layout": "vocabulary",
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "answer_text": "end",
+        "interleave": true
+      }
     },
     {
       "id": "s66-q1",
@@ -307,7 +318,15 @@
       "layout": "assessment",
       "density": "compact",
       "prompt": "Çıkış Kartı — Üç Yaz · İki Sor · Bir Paylaş",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Çıkış Kartı'nı dinleme / izleme bölümünde yaptığınız çalışmalara göre tamamlayınız.",
+        "items": [
+          "Üç Yaz: İletişime dair öğrendiğiniz veya önemli bulduğunuz üç bilgiyi yazınız.",
+          "İki Sor: İlginizi çeken ve daha fazla bilgi sahibi olmak istediğiniz konularla ilgili iki soru sorunuz.",
+          "Bir Paylaş: Öğrendiklerinizle ilgili bir görüşünüzü arkadaşlarınızla paylaşınız."
+        ]
+      }
     }
   ]
 }

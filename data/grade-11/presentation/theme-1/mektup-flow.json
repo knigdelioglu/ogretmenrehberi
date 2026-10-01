@@ -71,7 +71,11 @@
       "source_record_id": "T01-S0025",
       "answer_id": "T1-P39-Q01",
       "layout": "vocabulary",
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "answer_text": "end",
+        "interleave": true
+      }
     },
     {
       "id": "s39-q2",
@@ -84,7 +88,11 @@
       "source_record_id": "T01-S0025",
       "answer_id": "T1-P39-Q03",
       "layout": "vocabulary",
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "answer_text": "end",
+        "interleave": true
+      }
     },
     {
       "id": "s40-q1",
@@ -238,7 +246,9 @@
       "id": "s44-q3",
       "source_record_id": "T01-S0037",
       "answer_id": "T1-P44-Q03",
-      "layout": "question"
+      "layout": "question",
+      "prompt": "Mektup metninden hareketle metnin yazıldığı dönemdeki insan ilişkileriyle ilgili çıkarımlarda bulununuz ve bu çıkarımlarınızı günümüzün insan ilişkileriyle karşılaştırınız.",
+      "prompt_mode": "VERBATIM_SHORT"
     },
     {
       "id": "s44-q4",
@@ -259,7 +269,13 @@
       "prompt": "Mektubun farklı disiplinlerle ilişkisini keşfedelim",
       "prompt_mode": "FLOW_OVERRIDE",
       "content": {
-        "lead": "Mektuptaki ipuçlarından hareketle tarih, sosyoloji ve psikoloji alanlarında araştırma soruları oluşturun."
+        "lead": "Mektuptaki ipuçlarından hareketle tarih, sosyoloji ve psikoloji alanlarında araştırma soruları oluşturun. Çalışmanın süresi 1 haftadır.",
+        "items": [
+          "Öğretmeninizin rehberliğinde üç gruba ayrılın ve her grup için bir sözcü seçin.",
+          "Birinci grup Mektup-Tarih, ikinci grup Mektup-Sosyoloji, üçüncü grup Mektup-Psikoloji ilişkisini araştırsın.",
+          "Araştırmanızda Mehmet Kaplan'ın mektubunun yanında farklı mektup örneklerinden de yararlanın.",
+          "Ulaştığınız sonuçları ve seçtiğiniz mektup örneklerini arkadaşlarınızla paylaşın."
+        ]
       },
       "answer_id": "T1-P45-PERF01"
     },
@@ -296,7 +312,10 @@
       "source_record_id": "T01-S0044",
       "answer_id": "T1-P46-Q04",
       "layout": "structure",
-      "sections_layout": "letter"
+      "sections_layout": "letter",
+      "content": {
+        "lead": "Önce kitabınızın 46. sayfasındaki Hüseyin Nihâl Atsız'ın “Geri Gelen Mektup” şiirini okuyunuz. Belirlediğiniz beğeni ölçütlerine göre bu şiirle aynı içerikte bir mektup yazıp sınıfta paylaşınız."
+      }
     },
     {
       "id": "s47-q1",
@@ -314,19 +333,27 @@
       "id": "s47-q3",
       "source_record_id": "T01-S0047",
       "answer_id": "T1-P47-Q03",
-      "layout": "question"
+      "layout": "question",
+      "prompt": "Arkadaşlarınızın bu konuyla ilgili görüşlerini alınız ve bu görüşlere katılıp katılmadığınızı gerekçeleriyle açıklayınız.",
+      "prompt_mode": "VERBATIM_SHORT"
     },
     {
       "id": "s48-q1",
       "source_record_id": "T01-S0048",
       "answer_id": "T1-P48-Q01",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "lead": "Önce kitabınızın 48. sayfasındaki iki haber metnini okuyunuz: “‘Rodos’tan Gazze’ye yüzen’ şişeyle başlayan kıtalar arası arkadaşlık” ve “Asırlık mektuplar sahibine ulaşıyor”. Bu soru ilk metinle ilgilidir."
+      }
     },
     {
       "id": "s48-q2",
       "source_record_id": "T01-S0049",
       "answer_id": "T1-P48-Q02",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "lead": "İkinci metindeki, 1918'de yazılıp 103 yıl sonra torunlara ulaştırılan mektubu düşününüz."
+      }
     },
     {
       "id": "s48-q3",
@@ -339,7 +366,13 @@
       "source_record_id": "T01-S0051",
       "answer_id": "T1-P50-Q01",
       "layout": "structure",
-      "density": "compact"
+      "density": "compact",
+      "content": {
+        "lead": "Önce kitabınızın 49-50. sayfalarındaki beş metni okuyunuz: Kutadgu Bilig'den bir bölüm, Necip Fazıl Kısakürek'in Çile'sinden dizeler, Mustafa Kemal'in Doktor Rasim Ferit Bey'e mektubu, Taaşşuk-ı Talat ve Fitnat'tan Saliha'nın mektubu ve Bekir Sıtkı Erdoğan'ın Bir Yağmur Başladı'sından dizeler."
+      },
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s50-q2",

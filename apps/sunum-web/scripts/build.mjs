@@ -86,7 +86,7 @@ function slimStep(step, themeId) {
   const answer = step.answer
     ? pick(step.answer, answerFields)
     : null;
-  const content = step.content ? pick(step.content, ["lead", "items", "sections"]) : null;
+  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "scale"]) : null;
 
   // Kumandayla açılacak katmanlar: kanonik reveal_order sırası, öğretmen notu hariç,
   // yalnız gerçekten içeriği olan katmanlar.
@@ -109,6 +109,7 @@ function slimStep(step, themeId) {
     heading: step.source?.book_heading ?? "",
     task: step.source?.task_type ?? "",
     reveals,
+    presentation: step.presentation ?? undefined,
     answer: answer && Object.keys(answer).length ? answer : null,
     content: content && Object.keys(content).length ? content : null
   };

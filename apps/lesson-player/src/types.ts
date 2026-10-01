@@ -53,6 +53,8 @@ export interface SupplementalSection {
 export interface StepContent {
   lead?: string;
   items?: string[];
+  scale?: string[];
+  item_offset?: number;
   sections?: SupplementalSection[];
   note?: string;
 }
@@ -62,6 +64,11 @@ export interface LessonStep {
   id: string;
   layout: LayoutKind;
   density: DensityKind;
+  presentation?: {
+    answer_text?: "start" | "end";
+    interleave?: boolean;
+    omit_sections?: string[];
+  };
   reveal_order: RevealKey[];
   display_prompt: string;
   display_prompt_mode:
