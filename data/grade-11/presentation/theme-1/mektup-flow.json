@@ -314,7 +314,19 @@
       "layout": "structure",
       "sections_layout": "letter",
       "content": {
-        "lead": "Önce kitabınızın 46. sayfasındaki Hüseyin Nihâl Atsız'ın “Geri Gelen Mektup” şiirini okuyunuz. Belirlediğiniz beğeni ölçütlerine göre bu şiirle aynı içerikte bir mektup yazıp sınıfta paylaşınız."
+        "lead": "Önce şiirin bu kısa bölümünü okuyun; tam şiir ve yazma yönergesi ders kitabının aynı sayfasında.",
+        "sections": [
+          {
+            "title": "Geri Gelen Mektup — Hüseyin Nihâl Atsız",
+            "body": "“Hasret sana ey yirmi yılın tâze bahârı, / Vaslınla da dinmez yine bağrımdaki ağrı.”"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.46 — şiirin tamamını ve yönergeyi aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=47"
+          }
+        ]
       }
     },
     {
@@ -343,7 +355,23 @@
       "answer_id": "T1-P48-Q01",
       "layout": "question",
       "content": {
-        "lead": "Önce kitabınızın 48. sayfasındaki iki haber metnini okuyunuz: “‘Rodos’tan Gazze’ye yüzen’ şişeyle başlayan kıtalar arası arkadaşlık” ve “Asırlık mektuplar sahibine ulaşıyor”. Bu soru ilk metinle ilgilidir."
+        "lead": "Önce kitabınızın 48. sayfasındaki iki haber metnini okuyunuz: “‘Rodos’tan Gazze’ye yüzen’ şişeyle başlayan kıtalar arası arkadaşlık” ve “Asırlık mektuplar sahibine ulaşıyor”. Bu soru ilk metinle ilgilidir.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.48 — iki haber metninin tam sayfasını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=49"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Rodos’tan Gazze’ye ulaşan şişe mektubu",
+            "body": "Rodos’tan denize bırakılan mektubu Gazze’de bir balıkçı bulur. Mektuptaki e-posta adresi üzerinden göndericilerle iletişim kurulur ve sosyal medyada arkadaşlık başlar."
+          },
+          {
+            "title": "103 yıl sonra ulaşan asker mektubu",
+            "body": "1918’de bir askerin babasına yazdığı mektup ilk alıcısına ulaşmaz; Türk Kızılay arşivinde kaldıktan 103 yıl sonra torunlarına teslim edilir."
+          }
+        ]
       }
     },
     {
@@ -352,14 +380,28 @@
       "answer_id": "T1-P48-Q02",
       "layout": "question",
       "content": {
-        "lead": "İkinci metindeki, 1918'de yazılıp 103 yıl sonra torunlara ulaştırılan mektubu düşününüz."
+        "lead": "1918’de yazılan asker mektubunun 103 yıl sonra torunlara ulaştırıldığı haberi üzerinden değerlendirin.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.48 — iki haber metninin tam sayfasını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=49"
+          }
+        ]
       }
     },
     {
       "id": "s48-q3",
       "source_record_id": "T01-S0050",
       "answer_id": "T1-P48-Q03",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.48 — iki haber metninin tam sayfasını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=49"
+          }
+        ]
+      }
     },
     {
       "id": "s50-q1",
@@ -368,7 +410,35 @@
       "layout": "structure",
       "density": "compact",
       "content": {
-        "lead": "Önce kitabınızın 49-50. sayfalarındaki beş metni okuyunuz: Kutadgu Bilig'den bir bölüm, Necip Fazıl Kısakürek'in Çile'sinden dizeler, Mustafa Kemal'in Doktor Rasim Ferit Bey'e mektubu, Taaşşuk-ı Talat ve Fitnat'tan Saliha'nın mektubu ve Bekir Sıtkı Erdoğan'ın Bir Yağmur Başladı'sından dizeler."
+        "lead": "Soruları cevaplamadan önce beş kısa kaynak tanıtımını inceleyin; metinlerin tamamı ders kitabının s.49–50’sinde.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.49–50 — beş kaynak metnin tam sayfalarını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=50"
+          }
+        ],
+        "sections": [
+          {
+            "title": "1. Kutadgu Bilig — Yusuf Has Hacib",
+            "body": "Hükümdar, muhatabına selam ve esenlik diler; sağlığını ve hayatın yükünü nasıl taşıdığını sorar."
+          },
+          {
+            "title": "2. Çile — Necip Fazıl Kısakürek",
+            "body": "Şiirsel sesleniş, muhataba moral ve yarına dair umut verir."
+          },
+          {
+            "title": "3. Mustafa Kemal’in Dr. Rasim Ferit Bey’e mektubu",
+            "body": "5 Haziran 1918 tarihli mektup sağlık durumu ve tedavi süreciyle ilgili haber verir; doktordan daha açık yanıt beklediğini bildirir."
+          },
+          {
+            "title": "4. Saliha’nın mektubu — Taaşşuk-ı Talat ve Fitnat",
+            "body": "Saliha, Rıfat’tan gelen mektuba sevindiğini, ayrı kalmanın verdiği özlemi ve yeniden kavuşma isteğini anlatır."
+          },
+          {
+            "title": "5. Bir Yağmur Başladı — Bekir Sıtkı Erdoğan",
+            "body": "Şiirsel söyleyiş, mektup üzerinden iletilen özlem ve kavuşma isteğini taşır."
+          }
+        ]
       },
       "presentation": {
         "answer_text": "end"
@@ -378,20 +448,44 @@
       "id": "s50-q2",
       "source_record_id": "T01-S0052",
       "answer_id": "T1-P50-Q02",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.49–50 — beş kaynak metnin tam sayfalarını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=50"
+          }
+        ]
+      }
     },
     {
       "id": "s50-q3",
       "source_record_id": "T01-S0053",
       "answer_id": "T1-P50-Q03",
       "layout": "comparison",
-      "density": "compact"
+      "density": "compact",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.49–50 — beş kaynak metnin tam sayfalarını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=50"
+          }
+        ]
+      }
     },
     {
       "id": "s50-q4",
       "source_record_id": "T01-S0054",
       "answer_id": "T1-P50-Q04",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.49–50 — beş kaynak metnin tam sayfalarını aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=50"
+          }
+        ]
+      }
     },
     {
       "id": "s51-reference",

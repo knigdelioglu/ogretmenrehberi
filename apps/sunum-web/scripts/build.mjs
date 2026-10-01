@@ -86,7 +86,7 @@ function slimStep(step, themeId) {
   const answer = step.answer
     ? pick(step.answer, answerFields)
     : null;
-  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "scale"]) : null;
+  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "scale", "images", "sources"]) : null;
 
   // Kumandayla açılacak katmanlar: kanonik reveal_order sırası, öğretmen notu hariç,
   // yalnız gerçekten içeriği olan katmanlar.
@@ -154,10 +154,12 @@ const dataFile = `data.${version}.bin`;
 fs.writeFileSync(path.join(distDir, dataFile), payload);
 
 for (const name of fs.readdirSync(srcDir)) {
+  if (fs.statSync(path.join(srcDir, name)).isDirectory()) continue;
   let text = fs.readFileSync(path.join(srcDir, name), "utf8");
   text = text.replaceAll("__DATA_FILE__", dataFile).replaceAll("__BUILD_VERSION__", version);
   fs.writeFileSync(path.join(distDir, name), text);
 }
+fs.cpSync(path.join(srcDir, "assets"), path.join(distDir, "assets"), { recursive: true });
 
 fs.writeFileSync(path.join(distDir, "robots.txt"), "User-agent: *\nDisallow: /\n");
 

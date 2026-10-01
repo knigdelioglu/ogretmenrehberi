@@ -1,6 +1,6 @@
 // Çevrimdışı yedek: okul ağı koparsa son indirilen sürüm açılır.
 const CACHE = "sunum-__BUILD_VERSION__";
-const CORE = ["./", "index.html", "styles.css?v=__BUILD_VERSION__", "app.js?v=__BUILD_VERSION__", "__DATA_FILE__", "icon.svg", "manifest.webmanifest"];
+const CORE = ["./", "index.html", "styles.css?v=__BUILD_VERSION__", "app.js?v=__BUILD_VERSION__", "reveal-sequence.js", "__DATA_FILE__", "icon.svg", "manifest.webmanifest", "assets/karagoz-types.png", "assets/ogulla-bulusma-tren.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));

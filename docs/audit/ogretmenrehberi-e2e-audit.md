@@ -1,8 +1,8 @@
-# ÖğretmenRehberi E2E denetimi — 1. Tema
+# ÖğretmenRehberi E2E denetimi — 1. ve 2. Tema
 
-**Kapsam:** Yalnızca 1. Tema, basılı s. 12–83.  
+**Kapsam:** 1. Tema, basılı s. 12–83; 2. Tema, basılı s. 84–159 (denetim tamamlandı).  
 **Ana kaynak:** Kullanıcının eklediği `Edebiyat 11 ders kitabı.pdf`; sayfa eşleştirmesinde basılı ve PDF sayfa numaraları ayrı tutulur.  
-**Denetim yöntemi:** PDF görseli ve metni → bağımsız değerlendirme → gerçek Sunum Web akışı ve açılma katmanları. Bu rapor yalnızca tespit içerir; uygulama/veri değişikliği yapılmadı.
+**Denetim yöntemi:** PDF görseli ve metni → bağımsız değerlendirme → gerçek Sunum Web arayüzü ve açılma katmanları. Tema 2, Computer Use ile yerel Sunum Web'de denetleniyor. Bu rapor yalnızca tespit içerir; uygulama/veri değişikliği yapılmadı.
 
 | PDF aralığı (basılı s.) | Durum | İncelenen sunum kartı/etkinlik | Bulunan sorun |
 |---|---|---:|---:|
@@ -13,6 +13,15 @@
 | 59–73 | DONE | 39 | 3 |
 | 74–78 | DONE | 17 kart | 3 |
 | 79–83 | DONE | 14 kart (13 soru) | 1 |
+| 84–88 | DONE | 15 slayt/kart | 1 |
+| 89–107 | DONE | 37 kart | 3 |
+| 108–112 | DONE | 15 kart | 2 |
+| 113–124 | DONE | 34 kart | 1 |
+| 125–128 | DONE | 15 kart | 1 |
+| 129–135 | DONE | 22 kart | 0 |
+| 136–147 | DONE | 27 kart | 1 |
+| 148–154 | DONE | 24 kart | 0 |
+| 155–159 | DONE | 10 slayt/kart | 1 |
 
 ## Bulgular
 
@@ -776,6 +785,308 @@ Her cümle grubu ilk kez görünür olduğunda cevapları da görünür; öğren
 
 ---
 
-## Erişim sınırı
+## ISSUE-027 — “Yaş” sorusunun temel anlamı sunumdan çıkarılmış
+
+**Durum:** OPEN  
+**Tür:** INCOMPLETE_CONTENT  
+**PDF sayfası:** Basılı s. 88  
+**Bölüm:** Konuya Başlarken — Türklerde Toylar, Merasimler, Festivaller ve Şenlikler  
+**İlgili kayıt/etkinlik:** 2. Tema — Giriş, 13/15 (4. soru)
+
+### PDF / beklenen durum
+Soru, “yaş” sözcüğünün “doğuştan beri geçen ve yıl birimiyle ölçülen zaman” anlamını; sözcüğün taze bitki anlamını ve “yeşil (yaşıl)” ile kökteşliğini birlikte verir. Ardından bu anlam ilişkilerinin tabiatla bağa dair ne düşündürdüğünü sorar.
+
+### Bağımsız değerlendirme
+İnsan ömrünü ölçen “yaş” ile taze bitki anlamı ve “yaşıl” arasındaki bağ, dilde yaşama, tazelik ve tabiat çağrışımlarının birlikte düşünülebileceğini destekler. Tek başına bütün Türk topluluklarının tabiatla ilişkisi hakkında kesin bir tarihsel sonuç çıkarmaz.
+
+### Sunumda gözlenen durum
+İlk açılışta soru “Yaş” kelimesinin taze bitki anlamına gelmesi ve “yeşil (yaşıl)” ile kökteşliği biçiminde gösteriliyor; sözcüğün insan ömrü/yıl cinsinden zaman anlamı yer almıyor. Cevapta ise bu eksik bağlam “insan ömrü” diye yeniden ekleniyor.
+
+### Neden sorun
+Öğrenci soruyu ekranda gördüğünde, cevabın dayandığı iki anlamdan biri açıkça verilmemiş oluyor; yanıtın değerlendireceği karşılaştırma eksik kalıyor.
+
+### Beklenen davranış
+PDF’deki iki anlam ve kökteşlik bilgisi soru ekranında korunmalı; cevap bu ilişkiden hareketle ölçülü bir yorum sunmalı.
+
+### Yeniden üretme
+1. Sunum menüsünden “2. Tema — Giriş” dersini açın.
+2. Basılı s. 88’deki 4. soruya (13/15) ilerleyin.
+3. İlk açılış metnini PDF’deki tam soru köküyle karşılaştırın; ardından cevabı açın.
+
+## Erişim sınırı — 1. Tema
 
 Basılı s. 12–83 arasındaki PDF sayfaları görsel olarak incelendi; incelenemeyen basılı sayfa yok. Dış EBA içeriklerinde giriş ekranı görüldüğü için basılı s. 53 ve 64'teki video içerikleri ile s. 78'deki dereceli puanlama anahtarı açılamadı. Basılı s. 83'teki “Olvido” çok modlu içerik sunumda “kaynak sınırlı” olarak işaretleniyor; içeriğin işitsel/görsel ayrıntıları bağımsız olarak doğrulanamadı.
+
+## ISSUE-028 — Tren görseli atlı yaşlı kişi diye yorumlanıyor
+
+**Durum:** OPEN  
+**Tür:** UNSUPPORTED_CLAIM  
+**PDF sayfası:** Basılı s. 90, 93  
+**Bölüm:** Oğulla Buluşma — okuma öncesi tahmin soruları  
+**İlgili kayıt/etkinlik:** Oğulla Buluşma, 2/37 ve 3/37 (1. ve 2. sorular)
+
+### PDF / beklenen durum
+Basılı s. 90'daki okuma öncesi sorular, metin başlığı/görsel/yazardan söz varlığı tahmini ve başlık/görselden konu-tür tahmini istiyor. Sayfa 90'da görsel yok; basılı s. 93'te öyküyle birlikte görünen tek belirgin görsel trenin dağlık/ormanlık alandaki manzarasını gösteriyor, atlı yaşlı kişi göstermiyor.
+
+### Bağımsız değerlendirme
+“Oğulla Buluşma” başlığı ve metnin başlangıcından hareketle baba-oğul ilişkisi, özlem/kavuşma ve öykü türü tahmin edilebilir. Basılı s. 93'teki tren/manzara görselinden yolculuk ve tren çağrışımı yapılabilir; yaşlı bir atlı kişi çıkarımı desteklenmez.
+
+### Sunumda gözlenen durum
+2. sorunun cevabı “Görseldeki atlı yaşlı kişi”nin yolculuk/arayış çağrıştırdığını söylüyor. Sunum ekranında bu yanıtı destekleyen bir görsel de görünmüyor. Bir sonraki cevap aşaması, oğlun ölümü, savaş, veda, köy, tren ve kişi adlarının başlık/görselden çıkarılamayacağını belirtiyor.
+
+### Neden sorun
+Yanıt, PDF'de ve ilgili sunum ekranında bulunmayan bir görsel ayrıntıyı gözlem gibi sunuyor; ayrıca okuma öncesi tahmin sorusunun kanıtını doğrulamayı zorlaştırıyor.
+
+### Beklenen davranış
+Tahmin yalnızca gerçekten gösterilen başlık ve görsel unsurlara bağlanmalı. Görsel yoksa cevap bu sınırlamayı belirtmeli; olmayan atlı kişi görsel kanıt olarak kullanılmamalı.
+
+### Yeniden üretme
+1. PDF'de basılı s. 89–90'ı açıp tabloyu ve okuma öncesi soruların bulunduğu alanı inceleyin.
+2. Sunum menüsünden “Oğulla Buluşma” dersini açıp 2/37 ve 3/37 kartlarındaki ilk iki soruyu görüntüleyin.
+3. Cevapları açın; “görseldeki atlı yaşlı kişi” ifadesini basılı s. 93'teki tren/manzara görseliyle karşılaştırın.
+
+## ISSUE-029 — Okuma stratejisi görevinde yanıt ilk açılışta hazır
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 90  
+**Bölüm:** Oğulla Buluşma — metni okuma yönergesi  
+**İlgili kayıt/etkinlik:** Oğulla Buluşma, 4/37
+
+### PDF / beklenen durum
+PDF, öğrenciden tahminleri doğrultusunda uygun okuma stratejisi belirlemesini, sonra seçtiği yöntem ve stratejiyle vurgu-tonlamaya dikkat ederek metni okumasını ister. Önce görev görünmeli, öneri/destek öğretmen tıklayınca açılmalıdır.
+
+### Bağımsız değerlendirme
+Bu metin için olay çizgisini, kişi ilişkilerini, zaman geçişlerini, duygu/tutum değişimlerini ve diyalog tonlamasını izlemek uygun bir okuma planıdır.
+
+### Sunumda gözlenen durum
+4/37 kartı ilk açıldığında “okuma amacınıza uygun bir okuma stratejisi belirleyiniz” görevinin hemen altında dört maddelik izleme planı da görünür. Bu içerik için ek bir cevap açma tıklaması yoktur.
+
+### Neden sorun
+Öğrenciler kendi okuma stratejilerini belirlemeden önce sunum onlara hazır bir strateji verir; görev cevabı ilk görünümde açılmış durumdadır.
+
+### Beklenen davranış
+İlk görünümde yalnızca PDF'deki strateji belirleme ve metni okuma görevleri gösterilmeli; dört maddelik örnek plan öğretmen tıklamasından sonra açılmalıdır.
+
+### Yeniden üretme
+1. “Oğulla Buluşma” sunumunda 4/37 kartını açın.
+2. İlk açılışta görevle birlikte dört maddelik strateji planının da göründüğünü doğrulayın.
+
+## ISSUE-030 — Altı kelimelik söz varlığı etkinliğinde iki grup yanıtlarından önce açılıyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 95–96  
+**Bölüm:** Oğulla Buluşma — Söz Varlığımız  
+**İlgili kayıt/etkinlik:** Oğulla Buluşma, 6/37 (1. soru)
+
+### PDF / beklenen durum
+PDF, bağlamdan hareketle altı çizili “yular, üzengi, katar, kampana, hat, toynak” kelimelerinin anlamını tahmin etmeyi ve ardından sözlükle kontrol etmeyi ister. Altı kelimelik etkinlikte ilk küçük grup, anlamları açılmadan gösterilmeli; ilk grubun anlamları açıldıktan sonra sonraki gruba geçilmelidir.
+
+### Bağımsız değerlendirme
+Metindeki bağlamda “yular” binek hayvanını yönlendiren başlık/ip, “üzengi” ata binerken ayak basılan basamak, “katar” birbirine bağlı tren vagonları, “kampana” istasyon çanı, “hat” yüz/beden çizgileri, “toynak” tek tırnaklı hayvanların ayaklarını saran sert tırnak yapısıdır.
+
+### Sunumda gözlenen durum
+İlk görünümde “yular, üzengi, katar” cevapları olmadan gösteriliyor. Bir tıklamada bu grubun anlamları açılmadan “kampana, hat, toynak” gösteriliyor. Sonra ayrı bir genel açıklama kartı geliyor; sonraki tıklamada ilk üç anlam, son tıklamada ikinci üç anlam açılıyor.
+
+### Mevcut akış
+Yular / üzengi / katar → kampana / hat / toynak → genel cevap açıklaması → ilk üç anlam → sonraki üç anlam.
+
+### Beklenen akış
+Yular / üzengi / katar → ilk üç anlam → kampana / hat / toynak → sonraki üç anlam.
+
+### Neden sorun
+Öğrenciler ilk kelime grubunun anlamlarını tahmin edip kontrol etmeden ikinci kelime grubuna geçiyor; ayrıca iki grup da cevaplarından önce birlikte gösterilmiş oluyor.
+
+### Beklenen davranış
+İlk üç kelimenin anlamları, ikinci kelime grubu gösterilmeden açılmalı; ikinci grubun anlamları da yalnızca grup göründükten sonra verilmelidir.
+
+### Yeniden üretme
+1. “Oğulla Buluşma” sunumunda 6/37 kartını açın.
+2. İlk üç kelimeyi gözlemleyip bir kez ilerleyin; ekranda ikinci üç kelimenin, ilk grup anlamları açılmadan belirdiğini doğrulayın.
+3. Sonraki aşamalarda genel açıklama kartı ile iki cevap grubunun sırasını izleyin.
+
+## ISSUE-031 — Eski İstanbul söz varlığında kelime ve anlam birlikte açılıyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 111  
+**Bölüm:** Eski İstanbul’dan Çizgiler — tahminlerle metindeki kültür unsurlarını karşılaştırma  
+**İlgili kayıt/etkinlik:** Eski İstanbul’dan Çizgiler, 6/15
+
+### PDF / beklenen durum
+Basılı s. 111’de öğrenciler tahminlerini metindeki kültür unsurlarıyla karşılaştırır. Sunumun söz varlığı desteğinde önce kelime(ler) gösterilip öğrencinin anlamı düşünmesi, sonraki tıklamada anlam(lar)ın açılması; ancak bundan sonra sıradaki kelime grubuna geçilmesi beklenir.
+
+### Sunumda gözlenen durum
+Kartın yanıt aşamasına ilk geçişte “hilye” ve “rahle” ile açıklamaları birlikte görünür. Sonraki aşamalarda da yeni kelime veya kelime grupları kendi açıklamalarıyla aynı anda açılır.
+
+### Mevcut akış
+Hilye ve rahle + anlamları birlikte → sonraki kelime(ler) + anlamları birlikte → diğer kelime(ler) + anlamları birlikte.
+
+### Beklenen akış
+İlk kelime grubu → bu grubun anlamları → sonraki kelime grubu → sonraki grubun anlamları.
+
+### Neden sorun
+Öğrenci, her kelimenin anlamını önce kendi tahmin edip sonra kontrol edeceği ayrı bir aşama bulamıyor.
+
+### Yeniden üretme
+1. “Eski İstanbul’dan Çizgiler” sunumunda 6/15 kartını açın.
+2. İlk açılışta yalnızca karşılaştırma görevini gözlemleyin.
+3. Yanıtı açın; “hilye” ve “rahle” kelimelerinin anlamlarıyla birlikte göründüğünü doğrulayın.
+4. Sonraki aşamalarda her yeni kelime(ler) ile anlamlarının aynı anda açıldığını izleyin.
+
+## ISSUE-032 — Dil çıkarımı etkinliğinin sözlüğü cevaplarıyla birlikte açılıyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 111  
+**Bölüm:** Eski İstanbul’dan Çizgiler — sınıflandırmadan dil çıkarımı  
+**İlgili kayıt/etkinlik:** Eski İstanbul’dan Çizgiler, 8/15
+
+### PDF / beklenen durum
+Basılı s. 111, sınıflandırmadan hareketle metnin dili hakkında çıkarım yapmayı ister. Sunumdaki kelime desteğinde terim önce tek başına görünmeli; anlamı öğretmen tıklayınca açılmalı ve sonraki terim bundan sonra gelmelidir.
+
+### Sunumda gözlenen durum
+Görevden ilk ilerleyişte “sebilci” kelimesi tanımıyla birlikte gösterilir. Sonraki tıklamalarda da “saka”, “lîka”, “rîh / ebruculuk”, “maktâcılık” ve “maktâ” anlamları kendi terimleriyle aynı aşamada açılır. Sözlük aşaması tamamlanınca dil çıkarımı yanıtı ayrıca aşamalı gösterilir.
+
+### Mevcut akış
+Sebilci + anlamı birlikte → sonraki terim(ler) + anlamları birlikte → dil çıkarımı yanıtı.
+
+### Beklenen akış
+Sebilci → sebilci anlamı → sonraki terim → onun anlamı → sıradaki terim(ler) aynı sırayla; ardından dil çıkarımı yanıtı.
+
+### Neden sorun
+Sözlük terimi ilk göründüğü anda anlamı da açık olduğundan öğrencinin anlamı bağlamdan ya da sınıflandırmadan çıkarıp kontrol etmesi için bir tıklama aşaması yok.
+
+### Yeniden üretme
+1. “Eski İstanbul’dan Çizgiler” sunumunda 8/15 kartını açın.
+2. İlk açılışta dil çıkarımı görevini gözlemleyin.
+3. İlerleyin; “sebilci” ile tanımının birlikte açıldığını doğrulayın.
+4. Sonraki sözlük aşamalarında her terim ve açıklamasının aynı anda açıldığını kontrol edin.
+
+## ISSUE-033 — Orhun söz varlığında ikinci kelime grubu ilk grubun cevaplarından önce geliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 116  
+**Bölüm:** Orhun Abideleri — Söz Varlığımız  
+**İlgili kayıt/etkinlik:** Orhun Abideleri, 11/34
+
+### PDF / beklenen durum
+PDF, “ecdat, yağız, kılmak, il, şad, töre” kelimelerini verilen tanımlarla bağlam içinde eşleştirmeyi ister. İlk küçük kelime grubu gösterilmeli, öğrencinin eşleştirmesi için zaman verilmeli ve bu grubun cevapları açıldıktan sonra ikinci gruba geçilmelidir.
+
+### Bağımsız değerlendirme
+PDF’deki tanımlar “ecdat” (atalar), “il” (yurt), “yağız” (esmer/kara), “kılmak” (etmek/yapmak) ve “töre” (yerleşmiş davranış ve yaşama biçimi) karşılıklarını verir. “Şad” altı kelime arasında yer alsa da sayfada ona karşılık gelen bir tanım kutusu yoktur.
+
+### Sunumda gözlenen durum
+İlk görünümde “ecdat, il, yağız” kelimeleri cevapsız gösteriliyor. Bir sonraki tıklamada ilk grubun cevapları açılmadan “kılmak, töre, şad” grubu geliyor. Yanıt aşamasına geçince önce şad için tanım bulunmadığını belirten not, ardından ilk eşleştirmeler gösteriliyor.
+
+### Mevcut akış
+İlk üç kelime → sonraki üç kelime → tanım kutularına ilişkin not → ilk eşleştirmeler → kalan eşleştirmeler.
+
+### Beklenen akış
+İlk üç kelime → bu grubun eşleştirmeleri → sonraki üç kelime → bu grubun eşleştirmeleri; “şad” için PDF’de tanım bulunmadığı ayrıca belirtilmeli.
+
+### Neden sorun
+Öğrenci, ilk gruptaki kelimeleri tanımlarla eşleştirip kontrol etmeden ikinci gruba geçiyor; ilk grup cevapları ancak bütün kelimeler gösterildikten sonra açılıyor.
+
+### Yeniden üretme
+1. “Orhun Abideleri” sunumunda basılı s. 116 / 11/34 kartını açın.
+2. İlk açılışta “ecdat, il, yağız” grubunu gözlemleyin.
+3. Bir kez ilerleyin; “kılmak, töre, şad” grubunun ilk eşleştirmeler açılmadan geldiğini doğrulayın.
+4. Yanıt aşamasına geçip eşleştirmelerin daha sonra açıldığını izleyin.
+
+## ISSUE-034 — Sözlük hazırlama uygulamasının yanıtı ilk görünümde hazır
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 127  
+**Bölüm:** Dîvânu Lugâti’t-Türk — sözlük hazırlama uygulaması  
+**İlgili kayıt/etkinlik:** Dîvânu Lugâti’t-Türk, 9/15 (7. soru)
+
+### PDF / beklenen durum
+PDF, “Bir Türk dilleri sözlüğü hazırlamak isteseydiniz hangi çalışmaları yapmanız gerekirdi?” diye açık uçlu bir uygulama sorar. Önce yalnızca görev görünmeli, örnek araştırma adımları öğretmen tıklayınca açılmalıdır.
+
+### Bağımsız değerlendirme
+Uygun bir yanıt; Türk dilleri ve lehçelerini belirlemeyi, sözlü ve yazılı kaynaklardan doğrulanabilir örnek toplamayı, kelimeleri biçim ve anlam yönünden karşılaştırmayı ve telaffuz, kullanım, örnek cümle ile kaynak bilgisini kaydetmeyi içerebilir.
+
+### Sunumda gözlenen durum
+Kart ilk açıldığında sorunun hemen altında dört maddelik hazır plan görünür: kapsamı belirleme, kaynaklardan örnek toplama, kelimeleri karşılaştırma ve sözlük bilgilerini kaydetme.
+
+### Neden sorun
+Öğrenciler kendi araştırma adımlarını oluşturmadan örnek yanıtı görür.
+
+### Beklenen davranış
+İlk görünümde yalnızca PDF’deki uygulama sorusu yer almalı; dört maddelik örnek plan tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. “Dîvânu Lugâti’t-Türk” sunumunu açın.
+2. Basılı s. 127’deki 9/15 uygulama kartını seçin.
+3. İlk açılışta dört maddelik planın soru ile birlikte göründüğünü doğrulayın.
+
+## ISSUE-035 — Âşıklık söz varlığında tüm kelimeler anlamlardan önce gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 140  
+**Bölüm:** Âşık Atışması — Söz Varlığımız  
+**İlgili kayıt/etkinlik:** Âşık Atışması, 10/27
+
+### PDF / beklenen durum
+PDF, “çağ, canan, sine, kahır, saban” kelimelerinin videodaki bağlamlarından hareketle anlamlandırılmasını ister. Beş kelimelik etkinlikte küçük gruplar sırayla sunulmalı; her grubun anlamları sonraki grup gösterilmeden açılmalıdır.
+
+### Bağımsız değerlendirme
+Bağlam/sözlük anlamları sırasıyla çağ (zaman dilimi/devir), canan (gönülden sevilen), sine (göğüs), kahır (üzüntü/sıkıntı) ve saban (toprağı sürme aracı) olarak anlaşılır. Video içindeki özel kullanımı QR kaynağından doğrulanmadı.
+
+### Sunumda gözlenen durum
+İlk üç tıklamada “çağ, kahır” → “canan, saban” → “sine” kelimeleri gösteriliyor. Sonraki beş tıklamada önce çağ, sonra canan, sine, saban ve kahır anlamları açılıyor.
+
+### Mevcut akış
+Çağ / kahır → canan / saban → sine → çağın anlamı → cananın anlamı → sinenin anlamı → sabanın anlamı → kahrın anlamı.
+
+### Beklenen akış
+İlk küçük kelime grubu → o grubun anlamları → sonraki küçük kelime grubu → o grubun anlamları → varsa son kelime → onun anlamı.
+
+### Neden sorun
+Öğrenci, ilk kelimelerin anlamlarını tahmin edip kontrol etmeden diğer kelime gruplarını da görüyor; beş kelimenin tamamı ancak bundan sonra sözlük karşılığıyla eşleşiyor.
+
+### Beklenen davranış
+Her küçük kelime grubu kendi anlamları açılmadan önce tek başına görünmeli; tamamlanan grubun ardından sıradaki grup gelmelidir.
+
+### Yeniden üretme
+1. “Âşık Atışması” sunumunda s. 140 / 10/27 kartını açın.
+2. İlk açılışta “çağ, kahır” kelimelerini görün.
+3. Bir kez ilerleyin; ikinci grubun ilk grubun anlamları açılmadan geldiğini doğrulayın.
+4. Sonraki aşamalarda üç kelime grubunun ardından sözlük anlamlarının sırayla açıldığını izleyin.
+
+## ISSUE-036 — Orhun sözleriyle ilgili yorumlar soru açılır açılmaz gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 155  
+**Bölüm:** 2. Tema — Ölçme ve Değerlendirme  
+**İlgili kayıt/etkinlik:** 2. Tema — Ölçme ve Değerlendirme, 1/10 (1. soru)
+
+### PDF / beklenen durum
+PDF, Orhun Abideleri’ndeki sözlerin yansıttığı toplumsal özellikler ile bunların bugün neden önemli olduğunu sorgular. Öğrenci önce sözleri ve soruyu görüp kendi değerlendirmesini yapabilmeli; örnek yorumlar öğretmen tıklayınca açılmalıdır.
+
+### Bağımsız değerlendirme
+Sözler; birlik ve töreyi koruma, mücadele, emek ve siyasi düzen gibi değerlerle ilişkilendirilebilir. Bu değerlendirme metindeki ifadelerden hareketle kurulmalı, örnek yorumlar öğrencinin yanıtından önce verilmemelidir.
+
+### Sunumda gözlenen durum
+Kartın ilk açılışında sorunun altında dört yorum/yanıt ipucu da görünür: yufka-kalın ve ince-yoğun ifadelerinden dayanıklılık/güç; kan ve terden emek; baş eğdirmek/diz çöktürmekten mücadele/güç; birleşik milletten birlik/dayanışma çıkarımı. Bir sonraki tıklamada il ve töre, devlet sahibi olma, gece-gündüz çalışma ve ölesiye çalışma hakkında dört ipucu daha açılır.
+
+### Neden sorun
+Öğrenci, soruya kendi yanıtını kurmadan önce sekiz yorum ipucunun ilk grubunu görür; sonraki grup da cevap aşaması başlamadan gösterilir.
+
+### Beklenen davranış
+İlk görünümde yalnızca PDF’deki soru ve kaynak sözler yer almalı; yorumlar tıklama sonrasında, gerekiyorsa küçük gruplar hâlinde ve her grubun düşünme aşaması tamamlandıktan sonra açılmalıdır.
+
+### Yeniden üretme
+1. “2. Tema — Ölçme ve Değerlendirme” sunumunu açın.
+2. Basılı s. 155 / 1/10 kartının ilk görev aşamasını görüntüleyin.
+3. Tıklamadan önce dört yorum ipucunun göründüğünü; bir kez ilerleyince kalan dört ipucunun açıldığını doğrulayın.
+
+## Erişim sınırı — 2. Tema
+
+Basılı s. 84–159 arasındaki tüm PDF sayfaları görsel olarak incelendi; erişilemeyen basılı sayfa yok. Sunumdaki ilgili kartlar ve açılma aşamaları gerçek web arayüzünde kontrol edildi. QR ile açılan dış video içerikleri (özellikle basılı s. 113, 142 ve 159’daki görevler) bu denetimde izlenmedi; bu sayfalara bağlı video içeriği gerektiren yanıtlar kaynak videoya göre bağımsız olarak doğrulanmış sayılmaz. QR kodların çalışıp çalışmadığı bu raporun kapsamı dışındadır.

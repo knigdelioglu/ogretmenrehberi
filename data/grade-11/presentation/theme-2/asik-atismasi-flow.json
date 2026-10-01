@@ -143,17 +143,30 @@
       "answer_id": "T2-P140-VOC01",
       "layout": "process",
       "density": "compact",
-      "prompt": "Çağ, kahır, canan, saban ve sine kelimelerini videodaki bağlamlarından hareketle anlamlandırınız.",
+      "prompt": "Dinlediğiniz / izlediğiniz çok modlu metnin bağlamını göz önünde bulundurarak kelimelerin anlamlarını tahmin ediniz; tahminlerinizi sözlükle kontrol ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce geçtiği dizeyi not edin, sonra bağlamdan tahmin yapın; en son sözlükle kontrol edin.",
-        "items": [
-          "çağ",
-          "kahır",
-          "canan",
-          "saban",
-          "sine"
-        ]
+        "lead": "Önce kelimelerin anlamını tahmin edin; her küçük gruptan sonra sözlük karşılıklarını kontrol edin."
+      },
+      "reveal": [
+        "dictionary",
+        "answer",
+        "guidance",
+        "explanation"
+      ],
+      "presentation": {
+        "interleave": {
+          "source": "dictionary_terms",
+          "group_size": 2,
+          "order": [
+            "çağ",
+            "kahır",
+            "canan",
+            "saban",
+            "sine"
+          ]
+        },
+        "answer_text": "end"
       }
     },
     {

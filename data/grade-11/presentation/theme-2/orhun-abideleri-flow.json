@@ -119,8 +119,12 @@
       "answer_id": "T2-P116-VOC01",
       "layout": "vocabulary",
       "density": "compact",
-      "prompt": "Ecdat, yağız, kılmak, il, şad ve töre kelimelerini metindeki bağlamlarıyla eşleştiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt": "Şemadaki kelimeleri, verilen anlamlarla metindeki bağlamlarından hareketle eşleştiriniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "presentation": {
+        "interleave": true,
+        "answer_text": "end"
+      }
     },
     {
       "id": "s117-q1",

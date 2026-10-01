@@ -79,7 +79,20 @@
       "prompt": "Bu tiplerin adlarını tahmin ediniz.",
       "prompt_mode": "VERBATIM_SHORT",
       "content": {
-        "lead": "Kitabınızın 16. sayfasındaki üç Karagöz tipinin görsellerini soldan sağa inceleyiniz."
+        "lead": "Görselde soldan sağa üç Karagöz tipi yer alıyor. Yüz, giyim ve aksesuar ayrıntılarını inceleyin.",
+        "images": [
+          {
+            "src": "assets/karagoz-types.png",
+            "alt": "Ders kitabı s.16’daki üç Karagöz tipi; soldan sağa Beberuhi, Çelebi ve Zenne.",
+            "caption": "Ders kitabı, basılı s.16. Soldan sağa: Beberuhi, Çelebi, Zenne."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.16 — kaynak sayfayı aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=17"
+          }
+        ]
       }
     },
     {
@@ -90,7 +103,20 @@
       "prompt": "Oyun kişilerinin fiziksel özelliklerinden hareketle kişilik özellikleriyle ilgili tahminde bulununuz.",
       "prompt_mode": "VERBATIM_SHORT",
       "content": {
-        "lead": "Kitabınızın 16. sayfasındaki görsellerde tiplerin yüz, giyim ve aksesuar gibi ayırt edici özelliklerine bakınız."
+        "lead": "Görselde soldan sağa üç Karagöz tipi yer alıyor. Yüz, giyim ve aksesuar ayrıntılarını inceleyin.",
+        "images": [
+          {
+            "src": "assets/karagoz-types.png",
+            "alt": "Ders kitabı s.16’daki üç Karagöz tipi; soldan sağa Beberuhi, Çelebi ve Zenne.",
+            "caption": "Ders kitabı, basılı s.16. Soldan sağa: Beberuhi, Çelebi, Zenne."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.16 — kaynak sayfayı aç",
+            "url": "https://kitap.eba.gov.tr/panel/dosyalar/upload/4103/0/R_0_02_12_2025_14_03_58_787.pdf#page=17"
+          }
+        ]
       }
     },
     {

@@ -1,5 +1,6 @@
 // Ders Sunumu — bağımlılıksız sunum oynatıcı
 // Veri: şifreli ders kataloğu (__DATA_FILE__), build sırasında kanonik veriden üretilir.
+import { groupItems, interleaveStages } from "./reveal-sequence.js";
 
 const DATA_FILE = "__DATA_FILE__";
 const BUILD = "__BUILD_VERSION__";
@@ -583,15 +584,43 @@ function vocabularyPages(step, b = 1) {
 }
 
 const presentationOf = (step) => step.presentation || {};
-const interleaves = (step) => Boolean(presentationOf(step).interleave) && Boolean(step.answer?.answer_sections);
+const interleaveConfig = (step) => {
+  const value = presentationOf(step).interleave;
+  if (value === true) return { source: "answer_sections", group_size: step.layout === "vocabulary" ? 3 : 2 };
+  return value && typeof value === "object" ? value : null;
+};
+const interleaves = (step) => interleaveConfig(step)?.source === "answer_sections" && Boolean(step.answer?.answer_sections);
+
+function interleavedDictionaryGroups(step, b = 1) {
+  const config = interleaveConfig(step);
+  let terms = dictionaryTerms(step);
+  if (config?.source !== "dictionary_terms") return dictionaryPages(step, b);
+  if (config.order) {
+    const byTerm = new Map(terms.map((entry) => [entry.term, entry]));
+    terms = config.order.map((term) => byTerm.get(term)).filter(Boolean);
+  }
+  return groupItems(terms, scaledItems(config.group_size, b))
+    .map((group) => ({ dictionary: group, title: "Sözlük" }));
+}
+
+function contentSources(content) {
+  return content.sources?.length ? h("nav", { class: "source-links", "aria-label": "Kaynaklar" },
+    content.sources.map((source) => h("a", { href: source.url, target: "_blank", rel: "noopener noreferrer" }, source.label))
+  ) : null;
+}
 
 function contentLayerPages(step, b = 1) {
   const content = step.content || {};
   const lead = content.lead && content.lead !== step.prompt ? content.lead : "";
+  const meta = (page) => ({ ...page, lead, images: content.images, sources: content.sources });
+  if (interleaveConfig(step)?.source === "dictionary_terms") {
+    const first = interleavedDictionaryGroups(step, b)[0];
+    return [meta(first ? { ...first, hideMeanings: true } : { content: {} })];
+  }
   if (step.layout === "vocabulary") {
     const groups = vocabularyPages(step, b);
     // Aşamalı açılmada yalnız ilk kelime grubu görev ekranında görünür.
-    return (interleaves(step) ? groups.slice(0, 1) : groups).map((page) => ({ ...page, lead }));
+    return (interleaves(step) ? groups.slice(0, 1) : groups).map(meta);
   }
   const pages = [];
   const maxChars = (step.density === "compact" ? 850 : 1050) * b;
@@ -612,10 +641,7 @@ function contentLayerPages(step, b = 1) {
   }
   if (!step.reveals.includes("dictionary")) pages.push(...dictionaryPages(step, b));
   if (!pages.length) pages.push({ content: {} });
-  for (const page of pages) {
-    page.lead = lead;
-  }
-  return pages;
+  return pages.map(meta);
 }
 
 function answerLayerPages(step, b = 1) {
@@ -629,7 +655,7 @@ function answerLayerPages(step, b = 1) {
   if (step.layout === "vocabulary") {
     const groups = vocabularyPages(step, b);
     const termPages = interleaves(step)
-      ? groups.flatMap((page, index) => (index === 0 ? [page] : [{ ...page, hidden: true }, page]))
+      ? interleaveStages(groups).map(({ group, stage }) => ({ ...group, hidden: stage === "prompt" }))
       : groups;
     return [
       ...(textAtEnd ? [] : textPages),
@@ -641,11 +667,14 @@ function answerLayerPages(step, b = 1) {
   const sections = sectionPages(answer.answer_sections, step, b);
   let pages;
   if (interleaves(step) || (textAtEnd && sections.length)) {
-    const sectionViews = sections.flatMap((page, index) =>
-      interleaves(step) && index > 0
-        ? [{ answerText: "", title: "Görev", hideValues: true, ...page }, { answerText: "", title: "Cevap", ...page }]
-        : [{ answerText: "", title: "Cevap", ...page }]
-    );
+    const sectionViews = interleaves(step)
+      ? interleaveStages(sections).map(({ group, stage }) => ({
+          answerText: "",
+          title: stage === "prompt" ? "Görev" : "Cevap",
+          hideValues: stage === "prompt",
+          ...group
+        }))
+      : sections.map((group) => ({ answerText: "", title: "Cevap", ...group }));
     pages = textAtEnd ? [...sectionViews, ...textPages] : [...textPages, ...sectionViews];
   } else {
     // Küçük bütçede (dar ekran) özet metin ilk bölümle aynı parçaya sıkıştırılmaz.
@@ -670,7 +699,16 @@ function answerLayerPages(step, b = 1) {
 function buildLayerPages(step, key, b) {
   if (!key || key === "content") return contentLayerPages(step, b);
   if (key === "answer") return answerLayerPages(step, b);
-  if (key === "dictionary") return dictionaryPages(step, b);
+  if (key === "dictionary") {
+    const groups = interleavedDictionaryGroups(step, b);
+    if (interleaveConfig(step)?.source === "dictionary_terms") {
+      return interleaveStages(groups).map(({ group, stage }) => ({
+        ...group,
+        hideMeanings: stage === "prompt"
+      }));
+    }
+    return dictionaryPages(step, b);
+  }
   if (key === "evidence") {
     const quotes = step.answer?.evidence_quotes || [];
     return chunkByBudget(quotes, { maxItems: scaledItems(2, b), maxChars: 650 * b }).map((group) => ({
@@ -822,7 +860,7 @@ function dictionaryPages(step, b = 1) {
   }));
 }
 
-function dictionaryCard(terms) {
+function dictionaryCard(terms, { hideMeanings = false } = {}) {
   return h(
     "aside",
     { class: "dict" },
@@ -832,8 +870,8 @@ function dictionaryCard(terms) {
       {},
       terms.map((term) => [
         h("dt", {}, term.term),
-        h("dd", {}, term.meaning),
-        term.source ? h("dd", { class: "src" }, term.source) : null
+        h("dd", {}, hideMeanings ? "• • •" : term.meaning),
+        term.source && !hideMeanings ? h("dd", { class: "src" }, term.source) : null
       ])
     )
   );
@@ -970,7 +1008,13 @@ function stepSlide(lesson, step) {
       if (content) main.append(content);
       if (page.preview) main.append(renderSections(page.preview, step.sections_layout, { hideValues: true }));
     }
-    if (page.dictionary?.length) main.append(dictionaryCard(page.dictionary));
+    if (page.images?.length) main.append(h("div", { class: "content-images" }, page.images.map((image) => h("figure", {},
+      h("img", { src: image.src, alt: image.alt, loading: "eager" }),
+      image.caption ? h("figcaption", {}, image.caption) : null
+    ))));
+    if (page.dictionary?.length) main.append(dictionaryCard(page.dictionary, { hideMeanings: page.hideMeanings }));
+    const sources = contentSources(step.content || {});
+    if (sources) main.append(sources);
   }
 
   if (viewKey === "answer" && isVocab && page.terms?.length) {
@@ -995,11 +1039,11 @@ function stepSlide(lesson, step) {
     main.append(panel("answer", answerLabel(step, lesson.theme), h("p", {}, page.answerText), fresh("answer")));
   }
   if (viewKey === "answer" && isVocab && page.dictionary?.length) {
-    main.append(dictionaryCard(page.dictionary));
+    main.append(dictionaryCard(page.dictionary, { hideMeanings: page.hideMeanings }));
   }
 
   if (viewKey === "dictionary" && page.dictionary?.length) {
-    main.append(dictionaryCard(page.dictionary));
+    main.append(dictionaryCard(page.dictionary, { hideMeanings: page.hideMeanings }));
   }
 
   if (viewKey === "answer" && !isVocab) {

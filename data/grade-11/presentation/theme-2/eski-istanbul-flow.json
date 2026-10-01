@@ -77,7 +77,31 @@
       "layout": "comparison",
       "density": "compact",
       "prompt": "Okuma öncesi tahminlerinizle metinde gerçekten karşılaştığınız millî kültür unsurlarını karşılaştırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "reveal": [
+        "dictionary",
+        "answer",
+        "guidance"
+      ],
+      "presentation": {
+        "interleave": {
+          "source": "dictionary_terms",
+          "group_size": 2,
+          "order": [
+            "hilye",
+            "rahle",
+            "cüz kesesi",
+            "sebilci",
+            "saka",
+            "lîka",
+            "rîh",
+            "ebruculuk",
+            "maktâcılık",
+            "âmin alayı",
+            "semâî kahvesi"
+          ]
+        }
+      }
     },
     {
       "id": "s111-card-technique",
@@ -103,7 +127,27 @@
       "answer_id": "T2-P111-Q03",
       "layout": "question",
       "prompt": "Yaptığınız sınıflandırmadan hareketle metinde kullanılan dille ilgili çıkarımlarda bulununuz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "reveal": [
+        "dictionary",
+        "answer",
+        "guidance"
+      ],
+      "presentation": {
+        "interleave": {
+          "source": "dictionary_terms",
+          "group_size": 2,
+          "order": [
+            "sebilci",
+            "saka",
+            "lîka",
+            "rîh",
+            "ebruculuk",
+            "maktâcılık",
+            "maktâ"
+          ]
+        }
+      }
     },
     {
       "id": "s111-social-sciences",

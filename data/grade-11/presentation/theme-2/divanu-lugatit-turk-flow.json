@@ -92,16 +92,7 @@
       "layout": "process",
       "density": "compact",
       "prompt": "Bir Türk dilleri sözlüğü hazırlamak isteseydiniz hangi çalışmaları yapmanız gerekirdi?",
-      "prompt_mode": "VERBATIM_SHORT",
-      "content": {
-        "lead": "Kaşgarlı Mahmud'un saha çalışması yaklaşımını çağdaş bir sözlük projesine uyarlayın.",
-        "items": [
-          "Kapsanacak Türk dilleri ve lehçelerini belirleyin.",
-          "Yazılı ve sözlü kaynaklardan doğrulanabilir kullanım örnekleri toplayın.",
-          "Aynı kökten gelen kelimeleri ses, biçim ve anlam yönünden karşılaştırın.",
-          "Anlam, telaffuz, örnek cümle, bölgesel kullanım ve kaynak bilgisini düzenli biçimde kaydedin."
-        ]
-      }
+      "prompt_mode": "VERBATIM_SHORT"
     },
     {
       "id": "s127-fark1",

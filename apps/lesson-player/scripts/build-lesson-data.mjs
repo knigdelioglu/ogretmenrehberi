@@ -167,7 +167,7 @@ function resolveSectionsLayout(step) {
 
 // Yalnız sınıf sunumunu etkileyen isteğe bağlı açılma ayarları.
 // answer_text: "start" | "end" — cevap özet metninin ayrıntılı bölümlerden önce mi sonra mı açılacağı.
-// interleave: true — madde/kelime grupları önce cevapsız, sonra cevaplı gösterilir.
+// interleave: true veya { source, group_size, order } — küçük grupları sırayla açar.
 // omit_sections: sunumda görev ekranında zaten görünen answer_sections başlıkları.
 function resolvePresentation(step, answer) {
   const presentation = step.presentation;
@@ -180,7 +180,28 @@ function resolvePresentation(step, answer) {
     fail(`Unsupported presentation.answer_text for ${step.id}`);
   }
   const sections = answer?.answer_sections;
-  if (presentation.interleave && (!sections || Array.isArray(sections))) {
+  if (presentation.interleave && typeof presentation.interleave === "object") {
+    const config = presentation.interleave;
+    const configKeys = new Set(["source", "group_size", "order"]);
+    for (const key of Object.keys(config)) {
+      if (!configKeys.has(key)) fail(`Unsupported presentation.interleave key "${key}" for ${step.id}`);
+    }
+    if (!["answer_sections", "dictionary_terms"].includes(config.source)) {
+      fail(`Unsupported presentation.interleave.source for ${step.id}`);
+    }
+    if (!Number.isInteger(config.group_size) || config.group_size < 1 || config.group_size > 5) {
+      fail(`presentation.interleave.group_size must be an integer from 1 to 5: ${step.id}`);
+    }
+    const keys = config.source === "answer_sections"
+      ? sections && !Array.isArray(sections) ? Object.keys(sections) : []
+      : (answer?.dictionary_terms ?? []).map((entry) => entry.term);
+    if (!keys.length) fail(`presentation.interleave has no ${config.source} for ${step.id}`);
+    if (config.order !== undefined && (!Array.isArray(config.order) ||
+      !config.order.length || new Set(config.order).size !== config.order.length ||
+      config.order.some((key) => !keys.includes(key)))) {
+      fail(`presentation.interleave.order must contain unique ${config.source} keys: ${step.id}`);
+    }
+  } else if (presentation.interleave && (!sections || Array.isArray(sections))) {
     fail(`presentation.interleave needs keyed answer_sections: ${step.id}`);
   }
   for (const key of presentation.omit_sections ?? []) {
@@ -277,6 +298,16 @@ function buildLesson(flowPath) {
   }
 
   const steps = (flow.steps ?? []).map((step) => {
+    for (const image of step.content?.images ?? []) {
+      if (!/^assets\/[A-Za-z0-9._-]+$/.test(image.src ?? "") || !image.alt?.trim()) {
+        fail(`Malformed presentation image in ${flowName}/${step.id}`);
+      }
+    }
+    for (const source of step.content?.sources ?? []) {
+      if (!source.label?.trim() || !/^https:\/\//i.test(source.url ?? "")) {
+        fail(`Malformed presentation source link in ${flowName}/${step.id}`);
+      }
+    }
     if (seenStepIds.has(step.id)) {
       fail(`Duplicate lesson step id in ${flow.lesson_id}: ${step.id}`);
     }

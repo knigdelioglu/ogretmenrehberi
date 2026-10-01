@@ -397,8 +397,11 @@ assert(
 assert(
   asikById.get("s140-listen")?.answer === null &&
     asikById.get("s140-vocabulary")?.answer?.entry_type === "source_limited" &&
-    asikById.get("s140-vocabulary")?.content?.items?.length === 5,
-  "Gerçek video dinleme adımı ile bağlama bağımlı beş sözcük ayrılmalı."
+    asikById.get("s140-vocabulary")?.content?.items === undefined &&
+    asikById.get("s140-vocabulary")?.answer?.dictionary_terms?.length === 5 &&
+    asikById.get("s140-vocabulary")?.presentation?.interleave?.source === "dictionary_terms" &&
+    asikById.get("s140-vocabulary")?.presentation?.interleave?.group_size === 2,
+  "Gerçek video dinleme adımı ile beş sözcüklük kaynaklı aşamalı sözlük akışı ayrılmalı."
 );
 assert(
   asikById.get("s142-q2")?.answer?.entry_type === "source_limited" &&
