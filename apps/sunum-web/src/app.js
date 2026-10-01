@@ -110,15 +110,21 @@ const state = {
   menuTheme: null,
   extras: new Set(), // kumanda sırası dışında elle açılan katmanlar (yönlendirme / açıklama)
   extraReturn: null,
+  revealedVocabularyTerms: new Set(),
   guideOnRemote: false // true: kumanda yönlendirme ve açıklamayı da sırayla açar
 };
 
 // Yönlendirme ve açıklama öğretmene dönük olduğundan varsayılan olarak kumanda sırasına girmez;
 // Y / A tuşlarıyla elle açılır. Menüdeki ayarla kumanda sırasına eklenebilir.
-const STUDENT_LAYERS = new Set(["answer", "evidence"]);
+const STUDENT_LAYERS = new Set(["answer", "evidence", "dictionary"]);
 function activeReveals(step) {
   if (!step) return [];
+  if (isWordWallStep(step)) return [];
   return state.guideOnRemote ? step.reveals : step.reveals.filter((k) => STUDENT_LAYERS.has(k));
+}
+
+function isWordWallStep(step) {
+  return currentLesson().slug === "karagoz" && step?.id === "s25-q1";
 }
 
 const lessons = () => state.catalog.lessons;
@@ -250,6 +256,7 @@ function goto(lesson, slide, reveal = 0, direction = 1, part = 0) {
   state.fresh = null;
   state.extras = new Set();
   state.extraReturn = null;
+  state.revealedVocabularyTerms = new Set();
   clampPosition();
   render({ newSlide: true });
 }
@@ -300,6 +307,7 @@ function savePosition() {
 }
 
 function restorePosition() {
+  state.revealedVocabularyTerms = new Set();
   const fromHash = /^#\/([^/]+)(?:\/(\d+))?(?:\/(\d+))?(?:\/(\d+))?/.exec(location.hash);
   let saved = null;
   if (fromHash) {
@@ -321,8 +329,8 @@ function restorePosition() {
     if (idx >= 0) {
       state.lesson = idx;
       state.slide = saved.slide || 0;
-      state.reveal = saved.reveal || 0;
-      state.part = saved.part || 0;
+      state.reveal = 0;
+      state.part = 0;
     }
   }
   clampPosition();
@@ -535,7 +543,7 @@ function contentLayerPages(step) {
       pages.push({ content: { sections: group.values }, title: "Görev" });
     }
   }
-  if (step.task !== "VOCABULARY") pages.push(...dictionaryPages(step));
+  if (!step.reveals.includes("dictionary")) pages.push(...dictionaryPages(step));
   if (!pages.length) pages.push({ content: {} });
   for (const page of pages) {
     page.lead = lead;
@@ -582,6 +590,7 @@ function layerPages(step, key) {
   if (!step) return [];
   if (!key || key === "content") return contentLayerPages(step);
   if (key === "answer") return answerLayerPages(step);
+  if (key === "dictionary") return dictionaryPages(step);
   if (key === "evidence") {
     const quotes = step.answer?.evidence_quotes || [];
     return chunkByBudget(quotes, { maxItems: 2, maxChars: 650 }).map((group) => ({
@@ -775,14 +784,36 @@ function stepSlide(lesson, step) {
         h(
           "div",
           { class: "vocab" },
-          (page.terms || []).map(([term, meaning]) =>
-            h(
+          (page.terms || []).map(([term, meaning]) => {
+            if (isWordWallStep(step)) {
+              const isRevealed = state.revealedVocabularyTerms.has(term);
+              return h(
+                "button",
+                {
+                  type: "button",
+                  class: "vocab__item vocab__item--interactive",
+                  "aria-expanded": String(isRevealed),
+                  onclick: () => {
+                    if (isRevealed) state.revealedVocabularyTerms.delete(term);
+                    else state.revealedVocabularyTerms.add(term);
+                    render({ newSlide: false });
+                  }
+                },
+                h("span", { class: "vocab__term" }, term),
+                h(
+                  "span",
+                  { class: `vocab__meaning${isRevealed ? "" : " is-hidden"}` },
+                  isRevealed ? String(meaning) : "• • •"
+                )
+              );
+            }
+            return h(
               "div",
               { class: "vocab__item" },
               h("div", { class: "vocab__term" }, term),
               h("div", { class: "vocab__meaning is-hidden" }, "• • •")
-            )
-          )
+            );
+          })
         )
       );
     } else {
@@ -812,6 +843,10 @@ function stepSlide(lesson, step) {
     main.append(panel("answer", answerLabel(step, lesson.theme), h("p", {}, page.answerText), fresh("answer")));
   }
   if (viewKey === "answer" && isVocab && page.dictionary?.length) {
+    main.append(dictionaryCard(page.dictionary));
+  }
+
+  if (viewKey === "dictionary" && page.dictionary?.length) {
     main.append(dictionaryCard(page.dictionary));
   }
 

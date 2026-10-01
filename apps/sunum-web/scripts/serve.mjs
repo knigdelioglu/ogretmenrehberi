@@ -30,7 +30,9 @@ http
     const urlPath = decodeURIComponent(new URL(req.url, "http://x").pathname);
     let file = path.join(distDir, urlPath === "/" ? "index.html" : urlPath);
     if (!file.startsWith(distDir) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
-      file = path.join(distDir, "index.html");
+      res.writeHead(404, { "Cache-Control": "no-cache" });
+      res.end("Dosya bulunamadı.");
+      return;
     }
     res.writeHead(200, {
       "Content-Type": types[path.extname(file)] || "application/octet-stream",

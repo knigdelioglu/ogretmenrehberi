@@ -28,6 +28,13 @@ self.addEventListener("fetch", (event) => {
         }
         return res;
       })
-      .catch(() => caches.match(req, { ignoreSearch: req.mode === "navigate" }).then((r) => r || caches.match("index.html")))
+      .catch(() =>
+        caches.match(req, { ignoreSearch: req.mode === "navigate" }).then((cached) => {
+          if (cached) return cached;
+          return req.mode === "navigate"
+            ? caches.match("index.html")
+            : new Response("İstenen sunum dosyası önbellekte bulunamadı.", { status: 503 });
+        })
+      )
   );
 });

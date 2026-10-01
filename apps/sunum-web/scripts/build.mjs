@@ -94,7 +94,8 @@ function slimStep(step, themeId) {
     guidance: includeTeacherSupport && Boolean(answer?.guidance),
     answer: Boolean(answer?.answer || answer?.answer_sections),
     evidence: Boolean(answer?.evidence_quotes?.length),
-    explanation: includeTeacherSupport && Boolean(answer?.explanation)
+    explanation: includeTeacherSupport && Boolean(answer?.explanation),
+    dictionary: Boolean(answer?.dictionary_terms?.length)
   };
   const reveals = (step.reveal_order || []).filter((k) => has[k]);
 

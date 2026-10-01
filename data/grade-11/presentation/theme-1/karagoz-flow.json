@@ -121,6 +121,11 @@
       "source_record_id": "T01-S0006",
       "answer_id": "T1-P17-Q02",
       "layout": "question",
+      "reveal": [
+        "dictionary",
+        "answer",
+        "evidence"
+      ],
       "prompt": "Dönemin dil özelliklerini yansıttığını düşündüğünüz kelime ve cümleleri tespit ediniz.",
       "prompt_mode": "VERBATIM_SHORT"
     },

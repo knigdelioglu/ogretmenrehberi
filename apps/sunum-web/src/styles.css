@@ -657,6 +657,20 @@ button {
   padding: 0.6em 0.8em;
 }
 
+.vocab__item--interactive {
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.vocab__item--interactive:focus-visible {
+  outline: 0.15em solid var(--accent);
+  outline-offset: 0.12em;
+}
+
 .vocab__term {
   font-family: var(--serif);
   font-weight: 700;

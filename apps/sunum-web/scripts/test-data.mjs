@@ -65,6 +65,14 @@ for (const [i, lesson] of canonical.entries()) {
     assert.equal(s.id, step.id);
     assert.equal(s.prompt, step.display_prompt);
     assert.ok(!s.reveals.includes("note"), "öğretmen notu sunuma sızmamalı");
+    if (step.id === "s17-q2" && lesson.lesson_slug === "karagoz") {
+      assert.deepEqual(s.reveals, ["dictionary", "answer", "evidence"]);
+      assert.ok(s.answer.dictionary_terms.length > 0, "s.17/2 sözlük desteği bulunmalı");
+    }
+    if (step.id === "s25-q1" && lesson.lesson_slug === "karagoz") {
+      assert.deepEqual(Object.keys(s.answer.answer_sections), ["Dadı", "Esbab", "Murad", "Bendeniz", "Silsile", "İspir"]);
+      assert.equal(s.prompt, "Bağlamdan hareketle altı çizili kelimelerin anlamlarını tahmin ediniz; ardından sözlükten kontrol ediniz.");
+    }
     if (step.answer?.answer) assert.equal(s.answer.answer, step.answer.answer, `${s.id} cevap`);
     if (lesson.theme_id === "TEMA_01" || lesson.theme_id === "TEMA_02") {
       studentFacingThemeSteps += 1;

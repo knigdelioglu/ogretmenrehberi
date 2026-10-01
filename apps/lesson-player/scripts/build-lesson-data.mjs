@@ -111,18 +111,19 @@ function loadThemeData(themeCode) {
 
 const allowedDensities = new Set(["large", "comfortable", "compact"]);
 
-function availableRevealKeys(answer, content) {
+function availableRevealKeys(answer, content, step) {
   const keys = [];
   if (answer?.guidance) keys.push("guidance");
   if (answer) keys.push("answer");
   if (answer?.evidence_quotes?.length) keys.push("evidence");
   if (answer?.explanation) keys.push("explanation");
+  if (step.reveal?.includes("dictionary") && answer?.dictionary_terms?.length) keys.push("dictionary");
   if (content?.note) keys.push("note");
   return keys;
 }
 
 function resolveRevealOrder(step, answer) {
-  const available = availableRevealKeys(answer, step.content);
+  const available = availableRevealKeys(answer, step.content, step);
   if (!step.reveal) return available;
 
   if (!Array.isArray(step.reveal)) {
