@@ -17,7 +17,8 @@ const sources = (step) => step.content?.sources ?? [];
 
 const karagozQ1 = getStep("karagoz", "s16-q1");
 assert.equal(karagozQ1.content.images?.length, 1, "ISSUE-002: source illustration is part of the first view data");
-assert.match(karagozQ1.content.images[0].alt, /Beberuhi.*Çelebi.*Zenne/);
+assert.doesNotMatch(JSON.stringify(karagozQ1.content.images[0]), /Beberuhi|Çelebi|Zenne/, "ISSUE-002: type names do not leak on the question slide");
+assert.match(karagozQ1.answer.answer, /Beberuhi.*Çelebi.*Zenne/, "ISSUE-002: type names remain in the answer reveal");
 assert.ok(fs.existsSync(path.join(appRoot, "dist", karagozQ1.content.images[0].src)), "source image is copied into the built presentation");
 assert.equal(getStep("karagoz", "s16-q2").content.images?.length, 1, "source illustration remains visible for the follow-up question");
 
