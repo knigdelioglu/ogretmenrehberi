@@ -141,6 +141,9 @@ try {
   assert.ok(screen.text.includes("tiplerin adlarını"));
   assert.equal(await page.evaluate("document.querySelector('#canvas .content-images img')?.naturalWidth > 100"), true, "ISSUE-002 source illustration renders in Chrome");
   assert.ok(screen.text.includes("Ders kitabı, basılı s.16"));
+  assert.ok(!screen.text.includes("Beberuhi") && !screen.text.includes("Çelebi") && !screen.text.includes("Zenne"), "ISSUE-002 type names are hidden on the question slide");
+  const karagozAnswer = await next();
+  assert.ok(["Beberuhi", "Çelebi", "Zenne"].every((name) => karagozAnswer.includes(name)), "ISSUE-002 type names appear on the next answer slide");
 
   screen = await openStep("mektup", "s46-q4");
   assert.ok(screen.text.includes("Hasret sana ey yirmi yılın"), "ISSUE-013 poem excerpt is visible");
