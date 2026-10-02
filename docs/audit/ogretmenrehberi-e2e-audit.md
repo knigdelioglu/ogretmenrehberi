@@ -329,7 +329,7 @@ Görünen anlam eşleşmeleri metin bağlamına uygundur: “umumiyetle” genel
 
 ## ISSUE-010 — İnsan ilişkileri çıkarımı iletişim araçlarıyla sınırlanmış
 
-**Durum:** OPEN  
+**Durum:** RESOLVED  
 **Tür:** INCOMPLETE_CONTENT  
 **PDF sayfası:** Basılı s. 44  
 **Bölüm:** “Çözümleyebilme” / metnin yazıldığı dönem ve günümüz  
@@ -349,6 +349,11 @@ Sunum sorusu PDF'deki “insan ilişkileri” odağını “iletişim”e indiri
 
 ### Beklenen davranış
 Soru PDF'deki insan ilişkileri odağını korumalı. Yanıt, metindeki yakınlık/güven/paylaşımı günümüz ilişkileriyle ihtiyatlı biçimde karşılaştırmalı; iletişim araçlarının değişimini destekleyici bir boyut olarak kullanabilir.
+
+### Çözüm
+- `T01-S0037` kaynak kaydı, kitabın insan ilişkileri odağındaki gerçek 3. sorusuyla güncellendi ve `VERBATIM_SHORT` olarak işaretlendi.
+- `T1-P44-Q03` cevabı güven, yakınlık, paylaşım ve destek eksenini koruyacak; günümüz ilişkileri hakkında aşırı genelleme yapmayacak biçimde inceltildi.
+- Sunum akışındaki `s44-q3` zaten kitabın gerçek soru metnini kullanıyordu; bu kayıt değiştirilmedi.
 
 ### Yeniden üretme
 1. “Mektup — Âli’ye Mektuplar” sunumunda s. 44 / 26/46 kartını açın ve ilk açılışta soruyu inceleyin.
