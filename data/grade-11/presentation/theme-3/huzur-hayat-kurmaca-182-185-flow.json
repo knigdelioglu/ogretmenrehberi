@@ -276,13 +276,14 @@
       "answer_id": "T3-P184-Q02",
       "content": {
         "lead": "s.184'te iki, s.185'te iki renkli parça ve her parçanın altında ayrı yanıt alanı var. Her birini ayrı kanıtla değerlendirin.",
-        "items": [
-          "Halkı sevme söylemi ve insanı kavramlaştırma",
-          "Yeni toplum kurma ve tarihî kökler",
-          "Nuran'ın serçelere ve köpeğe duyarlılığı",
-          "Mümtaz'ın hasta İhsan'a karşı sorumluluğu"
-        ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: s.184–185'te renkli dört metin parçasının altında ayrı dört boş yanıt alanı var. Her parçayı aynı genel 'duyarlılık' cümlesiyle geçiştirmeyin; parçanın göstermediği yoksulluk veya kişisel geçmiş uydurulmasın."
+      },
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 1
+        },
+        "answer_text": "end"
       }
     },
     {

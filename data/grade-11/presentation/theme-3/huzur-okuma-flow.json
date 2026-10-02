@@ -117,15 +117,18 @@
         "lead": "Altı kelimeyi farklı bağlamlarda kendi cümlelerinizde kullanın; her cümlede anlamı bağlamıyla gösterin.",
         "items": [
           "huzur",
-          "rüya",
-          "saz",
-          "boğaz",
-          "tarih",
-          "garp"
+          "rüya"
         ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin köy evi, münazara ödülü, Boğaz gezisi, Çanakkale ziyareti gibi yaşantılara sahip olduğunu varsaymayın. Arkadaşının cümlesinden kişisel bir yaşantı çıkardığınızda bunu “kesin keşif” saymayın; gerekçeyi sorun ve öğrencinin açıklamasını dinleyin."
       },
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 2
+        },
+        "answer_text": "end"
+      }
     },
     {
       "id": "s166-meaning",
@@ -257,21 +260,7 @@
       "prompt": "Huzur — Mümtaz ve Nuran'ın geçmiş ile yeni hayat üzerine görüşlerini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki bakışı birbirine karıştırmadan metin kanıtı gösterin.",
-        "sections": [
-          {
-            "title": "Mümtaz",
-            "body": "Musiki, tarih ve şehir mirasını kimliğin kaynakları olarak görür."
-          },
-          {
-            "title": "Nuran",
-            "body": "Geçmişi sevse de yoksulluk, bakımsızlık ve bugünün ihtiyaçlarını hatırlatır."
-          },
-          {
-            "title": "Tartışma",
-            "body": "Yeni bir hayata yönelirken geçmişe dayanmak ne anlam taşır?"
-          }
-        ]
+        "lead": "Metindeki Mümtaz ve Nuran bölümlerini okuyup geçmiş ve yeni hayat hakkındaki görüşlerini karşılaştırın; her çıkarımınız için metinden kanıt seçin."
       },
       "density": "compact"
     },
@@ -282,17 +271,7 @@
       "prompt": "Huzur — İhsan'ın etkisini ve İstanbul'un sosyal görünümünü s.170'ten okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Şehir güzelliği ile yorgun insanlar, bakımsız evler ve eski konaklar arasındaki karşıtlığı izleyin.",
-        "sections": [
-          {
-            "title": "İhsan",
-            "body": "Mümtaz'ın geçmiş ve kültürle bağında İhsan'ın etkisini belirleyin."
-          },
-          {
-            "title": "Şehir ve insan",
-            "body": "Tarihî yapılarla toplumsal yoksulluk tasvirini ayırın."
-          }
-        ]
+        "lead": "İhsan’ın Mümtaz üzerindeki etkisini ve İstanbul tasvirindeki sosyal görünümü metinden kanıtlarla inceleyin."
       },
       "density": "compact"
     },
@@ -303,17 +282,7 @@
       "prompt": "Tanpınar'ın kitapta verilen biyografisini Huzur ile ilişkilendiriniz (s.171).",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sanatçı hayatını kurmacayla özdeşleştirmeden somut ortak temaları buldurun.",
-        "sections": [
-          {
-            "title": "Kitaptaki biyografi",
-            "body": "Yahya Kemal–Ahmet Haşim etkisi; tarih, sanat ve musiki ilgisi."
-          },
-          {
-            "title": "Huzur'daki izler",
-            "body": "İstanbul, eski musiki, bireyin iç dünyası ve kültür gerilimi."
-          }
-        ]
+        "lead": "Tanpınar’ın kitapta verilen biyografisini okuyup Huzur’la ilişkilendirebileceğiniz noktaları metin kanıtıyla belirleyin."
       },
       "density": "compact"
     },
@@ -328,7 +297,14 @@
         "lead": "TDK ile doğrulamadan önce metinde geçtiği cümleyi inceleyin.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrenci önce kendi tahminini yazmalı, sonra karekodla TDK sözlüğünden uygun anlamı doğrulamalıdır. Rehberdeki bağlam açıklamasını TDK'nin birebir tanımı gibi okutmayın. Özellikle ‘mahzen = bilinçaltı’, ‘cevher = varoluşsal ruhsal maya’ gibi metnin ötesine geçen psikolojik/felsefi karşılıklar vermeyin."
       },
-      "density": "compact"
+      "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 3
+        },
+        "answer_text": "end"
+      }
     },
     {
       "id": "s172-other",
@@ -356,21 +332,7 @@
       "prompt": "Konusuna göre romanlar: biyografik, otobiyografik, sosyal, psikolojik, tarihî türleri ayırt ediniz (s.173).",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki tanımları ve eser örneklerini karşılaştırın.",
-        "sections": [
-          {
-            "title": "Biyografik / Otobiyografik",
-            "body": "Başkasının yaşamı ile yazarın kendi yaşantısının kurgulanması farkı."
-          },
-          {
-            "title": "Sosyal / Psikolojik",
-            "body": "Toplumsal sorunlarla bireyin iç dünyası arasındaki odak farkı."
-          },
-          {
-            "title": "Tarihî",
-            "body": "Tarihî kişi ve olayların kurmaca içindeki yeri."
-          }
-        ]
+        "lead": "Kitaptaki beş türün tanım ve örneklerini okuyup aralarındaki ayrımları kendiniz çıkarın."
       },
       "density": "compact"
     },
@@ -381,17 +343,7 @@
       "prompt": "Konusuna göre romanlar: macera, bilim kurgu, tezli ve fantastik türleri ayırt ediniz (s.173).",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitapta verilen kalan dört başlığı kendi örnekleriyle inceleyin.",
-        "sections": [
-          {
-            "title": "Macera / Bilim kurgu",
-            "body": "Hareket ve merak ile bilim–teknoloji kurmacasını ayırın."
-          },
-          {
-            "title": "Tezli / Fantastik",
-            "body": "Bir görüşü savunma ile gerçeküstü evrenin kurulması arasındaki farkı gösterin."
-          }
-        ]
+        "lead": "Kitaptaki dört türün tanım ve örneklerini okuyup aralarındaki ayrımları kendiniz çıkarın."
       },
       "density": "compact"
     },
@@ -402,17 +354,7 @@
       "prompt": "Edebî akımına göre romanlar: klasik, romantik, realist ve natüralist (s.174).",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki başlık, tanım ve eser örneklerini birlikte okuyun.",
-        "sections": [
-          {
-            "title": "Klasik / Romantik",
-            "body": "Dönemini yansıtan yerleşik örneklik ile duygusal tepkileri öne çıkaran anlatım."
-          },
-          {
-            "title": "Realist / Natüralist",
-            "body": "Gerçekçi yansıtma ile bilimsel yönteme dayandırılmaya çalışılan anlatım."
-          }
-        ]
+        "lead": "Kitaptaki dört edebî akımın tanım ve örneklerini okuyup ayrımları kendiniz belirleyin."
       },
       "density": "compact"
     },
@@ -423,21 +365,7 @@
       "prompt": "Edebî akımına göre romanlar: modernist, varoluşçu ve postmodern (s.174).",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Son üç başlığı kitaptaki eser örnekleriyle birlikte karşılaştırın.",
-        "sections": [
-          {
-            "title": "Modernist",
-            "body": "Bireyin iç dünyası, yabancılaşma ve geleneksel yapıdan uzaklaşma."
-          },
-          {
-            "title": "Varoluşçu",
-            "body": "Varoluş, özgürlük, sorumluluk ve bunalım."
-          },
-          {
-            "title": "Postmodern",
-            "body": "Kurmaca gerçeklik ve anlam çoğulluğu."
-          }
-        ]
+        "lead": "Kitaptaki üç edebî akımın tanım ve örneklerini okuyup ayrımları kendiniz belirleyin."
       },
       "density": "compact"
     },
@@ -450,14 +378,6 @@
       "answer_id": "T3-P174-PERF01",
       "content": {
         "lead": "s.174'te üslubun anlatım yolu olarak tanımını ve metinde gözlenen özellikleri birlikte kullanın.",
-        "items": [
-          "Ayrıntılı mekân/insan betimlemesi",
-          "Şiirsel-mecazlı anlatım",
-          "Tarih ve musiki söz varlığı",
-          "Geçmiş ve yeni hayat üzerine düşünce",
-          "Kişilerin iç dünyası",
-          "Uzun ve ritmik cümleler"
-        ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: Kavram haritasına yalnız okunan Huzur parçasında gerçekten gözlenebilen özellikleri yazdırın. “Empresyonist”, “Bergsoncu”, “varoluşsal” gibi dış eleştiri terimlerini bu etkinliğin hazır cevabı yapmayın."
       },
       "density": "compact"

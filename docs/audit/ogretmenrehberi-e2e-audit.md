@@ -1,8 +1,8 @@
-# ÖğretmenRehberi E2E denetimi — 1. ve 2. Tema
+# ÖğretmenRehberi E2E denetimi — 1., 2. ve 3. Tema
 
-**Kapsam:** 1. Tema, basılı s. 12–83; 2. Tema, basılı s. 84–159 (denetim tamamlandı).  
+**Kapsam:** 1. Tema, basılı s. 12–83; 2. Tema, basılı s. 84–159 (denetim tamamlandı); 3. Tema, basılı s. 160–235 (sayfalar ve sunumlar incelendi; bazı QR medya içerikleri erişilemedi).  
 **Ana kaynak:** Kullanıcının eklediği `Edebiyat 11 ders kitabı.pdf`; sayfa eşleştirmesinde basılı ve PDF sayfa numaraları ayrı tutulur.  
-**Denetim yöntemi:** PDF görseli ve metni → bağımsız değerlendirme → gerçek Sunum Web arayüzü ve açılma katmanları. Tema 2, Computer Use ile yerel Sunum Web'de denetleniyor. Bu rapor yalnızca tespit içerir; uygulama/veri değişikliği yapılmadı.
+**Denetim yöntemi:** PDF görseli ve metni → bağımsız değerlendirme → gerçek Sunum Web arayüzü ve açılma katmanları. Tema 2 ve 3, Computer Use ile yerel Sunum Web'de denetleniyor. Bu rapor yalnızca tespit içerir; uygulama/veri değişikliği yapılmadı.
 
 | PDF aralığı (basılı s.) | Durum | İncelenen sunum kartı/etkinlik | Bulunan sorun |
 |---|---|---:|---:|
@@ -22,6 +22,25 @@
 | 136–147 | DONE | 27 kart | 1 |
 | 148–154 | DONE | 24 kart | 0 |
 | 155–159 | DONE | 10 slayt/kart | 1 |
+| 160–163 | DONE | 8 sunum adımı | 4 |
+| 164–167 | DONE | 13 sunum adımı | 2 |
+| 168–174 | DONE | 10 sunum kartı; açılma aşamaları da denetlendi | 9 |
+| 175–176 | DONE | 13 sunum adımı | 0 |
+| 177–178 | DONE | 11 sunum adımı | 1 |
+| 179–181 | DONE | 17 sunum adımı | 1 |
+| 182–185 | DONE | 18 sunum kartı | 3 |
+| 186–188 | DONE | 21 sunum kartı | 0 |
+| 189–191 | DONE | 22 sunum kartı | 3 |
+| 192–193 | DONE | 14 sunum kartı | 1 |
+| 194–198 | DONE | 18 sunum adımı | 2 |
+| 199–201 | DONE | 16 sunum kartı | 1 |
+| 202–205 | DONE | 17 sunum kartı | 2 |
+| 206–209 | DONE | 15 sunum kartı | 0 |
+| 210–214 | DONE | 19 sunum kartı | 3 |
+| 215–220 | IN_PROGRESS | 21 kart; EBA/TDK QR medyası doğrulanamadı | 1 |
+| 221–224 | DONE | 17 sunum kartı | 0 |
+| 225–229 | IN_PROGRESS | 16 sunum kartı; kaynak QR medyası doğrulanmadı | 1 |
+| 230–235 | IN_PROGRESS | 24 sunum slaytı; Aile Bağları videosu giriş gerektiriyor | 3 |
 
 ## Bulgular
 
@@ -1090,3 +1109,964 @@ Kartın ilk açılışında sorunun altında dört yorum/yanıt ipucu da görün
 ## Erişim sınırı — 2. Tema
 
 Basılı s. 84–159 arasındaki tüm PDF sayfaları görsel olarak incelendi; erişilemeyen basılı sayfa yok. Sunumdaki ilgili kartlar ve açılma aşamaları gerçek web arayüzünde kontrol edildi. QR ile açılan dış video içerikleri (özellikle basılı s. 113, 142 ve 159’daki görevler) bu denetimde izlenmedi; bu sayfalara bağlı video içeriği gerektiren yanıtlar kaynak videoya göre bağımsız olarak doğrulanmış sayılmaz. QR kodların çalışıp çalışmadığı bu raporun kapsamı dışındadır.
+
+## ISSUE-037 — Karekod yönergesi öğrenciye yansıtılıyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_LANGUAGE  
+**PDF sayfası:** Basılı s. 161  
+**Bölüm:** 3. Tema — Temaya Başlarken / Hoca Ahmed Yesevî  
+**İlgili kayıt/etkinlik:** 3. Tema — Giriş, Yesevî dizeleri ve tema sunusu karekodu
+
+### PDF / beklenen durum
+Basılı s. 161'de Hoca Ahmed Yesevî'nin iki dizesi ve tema sunusuna yönlendiren karekod bulunur. Dizeler gönlü kırık olana merhem olma ve yolda kalana yoldaş olma çağrısı taşır.
+
+### Sunumda gözlenen durum
+İlk açılışta öğrenciye görünen metin: “Kitaptaki Tema Sunusu karekodunu bu aşamada açın. Sunu erişilemiyorsa Yesevî dizeleri ve tema sorusu üzerinden devam edin.”
+
+### Neden sorun
+“Karekodunu ... açın” ve “... üzerinden devam edin” uygulayıcıya dönük ders yürütme talimatlarıdır; projeksiyondaki öğrenci materyalinde meta yönerge olarak görünür.
+
+### Beklenen davranış
+Slayt öğrenciye doğrudan dizeleri ve bunlara ilişkin tematik içeriği göstermeli; karekod açma ve sunuyu yürütme adımları öğrenciye yansıtılan metinde yer almamalıdır.
+
+### Yeniden üretme
+1. Sunum Web'de “3. Tema — Giriş” bölümünü açın.
+2. Hoca Ahmed Yesevî dizeleri ve karekodla ilgili ilk açılış kartına ilerleyin.
+3. Tıklamadan önce yönergenin slaytta göründüğünü doğrulayın.
+
+## ISSUE-038 — Görsele dayalı ilk beş soruda kaynak görseller yok
+
+**Durum:** OPEN  
+**Tür:** MISSING_CONTENT  
+**PDF sayfası:** Basılı s. 162–163  
+**Bölüm:** 3. Tema — Temaya Başlarken / Yaşamın İzinde  
+**İlgili kayıt/etkinlik:** 3. Tema — Giriş, 1.–5. sorular
+
+### PDF / beklenen durum
+Basılı s. 162'de yol üzerinde yürüyen kişiyi; yolun bir yanında yeşil, diğer yanında kurak ve turuncu bir alanı gösteren görselin çevresinde dört soru vardır. Basılı s. 163'te radyo fotoğrafı ile kamerayla kaydedilen mülakat fotoğrafı için beşinci soru yer alır.
+
+### Bağımsız değerlendirme
+İlk görsel; yaşam yolculuğu, yön, zaman ve farklı yaşam koşulları hakkında savunulabilir çağrışımlar sağlar. İkinci sayfadaki radyo sesli yayın ve dinleyici iletişimini; mülakat görseli soru-cevap, kişisel deneyim ve kayıt sürecini düşündürür. Başlık ve kişisel yorum sorularında gerekçeli alternatif yanıtlar kabul edilir.
+
+### Sunumda gözlenen durum
+1.–4. soru kartları s. 162'deki görseli göstermiyor. S. 163'teki radyo ve mülakat görselleri de beşinci soru kartında bulunmuyor. Görsel öğeye ilişkin soru ve yönlendirmeler metin olarak gösteriliyor; en azından dördüncü sorunun cevap aşamasında da kaynak görsel görünmüyor.
+
+### Neden sorun
+Soruların dayanağı olan resimler yansıtılmadığında öğrenci, ekrandaki görevde incelenmesi istenen görsel ayrıntıları göremiyor; görselin okunması gereken soru ile kaynak kanıtı birbirinden kopuyor.
+
+### Beklenen davranış
+Basılı s. 162 ve 163'teki ilgili görseller, kendilerine dayanan soru ve cevap aşamalarında sunumda görünmelidir.
+
+### Yeniden üretme
+1. “3. Tema — Giriş” sunumunda s. 162'nin 1.–4. soru kartlarını sırayla açın.
+2. Her kartın ilk görünümünde görsel alanını kontrol edin; dördüncü sorunun cevap aşamasına da ilerleyin.
+3. S. 163'teki radyo ve mülakat çağrışımı kartını açıp iki görselin bulunmadığını doğrulayın.
+
+## ISSUE-039 — Radyo ve mülakat sorusunun örnek cevapları ilk açılışta görünüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 163  
+**Bölüm:** Temaya Başlarken — görsellerin çağrışımı  
+**İlgili kayıt/etkinlik:** 3. Tema — Giriş, 7/8 (5. soru)
+
+### PDF / beklenen durum
+PDF öğrenciden iki görselin çağrışımlarını ifade etmesini ister. Bağımsız değerlendirmede radyo; ses, yayın ve dinleyici iletişimini, mülakat fotoğrafı ise soru-cevap ve kayıtlı söyleşiyi çağrıştırır. Öğrenci önce görselleri ve soruyu görüp kendi yanıtını oluşturmalı; örnekler tıklamayla açılmalıdır.
+
+### Sunumda gözlenen durum
+Kartın ilk açılışında soruyla birlikte “İlk görsel — Radyo: Ses, anlatı, dinleyici ve kitle iletişimi” ve “İkinci görsel — Mülakat: Sorular, yanıtlar, kişisel deneyim ve görüntülü kayıt” cevapları görünür. Sonraki tıklamalar ek cevapları ve ortak yönü açıyor.
+
+### Neden sorun
+Öğrenci, soruya kendi çağrışımını kurmadan önce iki örnek yanıtı görür.
+
+### Beklenen davranış
+İlk görünümde yalnızca soru/görev gösterilmeli; cevap kartları öğretmen tıklayınca açılmalıdır.
+
+### Yeniden üretme
+1. “3. Tema — Giriş” sunumunda basılı s. 163 / 5. soru kartına ilerleyin.
+2. İlk açılış ekranını, herhangi bir tıklama yapmadan inceleyin.
+
+## ISSUE-040 — Tezkire karşılaştırmasının yanıtları görevle birlikte açılıyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 163  
+**Bölüm:** Temaya Başlarken — Alev Alatlı ve Sehî Beg  
+**İlgili kayıt/etkinlik:** 3. Tema — Giriş, 8/8 (6. soru)
+
+### PDF / beklenen durum
+PDF, Alev Alatlı'nın romanlarına ilişkin eleştirel çözümleme parçası ile Sehî Beg'in Yahyâ maddesinin ortak ve farklı yönlerini buldurur. Bağımsız değerlendirmede ilk metin çağdaş romanların konu, söz varlığı, terim ve üslup özelliklerini inceleyen kapsamlı bir çözümlemedir; Yahyâ maddesi ise köken, meslek, üslup ve eser hakkında kısa, övgülü bir tezkire kaydıdır. Öğrenci önce bu iki metni karşılaştırmalıdır.
+
+### Sunumda gözlenen durum
+Görev ilk açıldığında cevap kartları “Ortak yön” ve “Alev Alatlı metni” başlıklarıyla soru altında görünür. Bir sonraki tıklamada özet cevap, ardından ortak özellikler ve farklar aşamaları açılır.
+
+### Neden sorun
+Karşılaştırma görevine başlamadan önce ilk iki değerlendirme öğrenciye verilmiş olur.
+
+### Beklenen davranış
+Görevin ilk görünümünde yalnızca karşılaştırma yönergesi yer almalı; ortaklık ve fark cevapları tıklama sonrasında açılmalıdır.
+
+### Yeniden üretme
+1. “3. Tema — Giriş” sunumunda s. 163 / 6. soru kartını açın.
+2. İlk görev ekranında “Ortak yön” ve “Alev Alatlı metni” cevap kartlarının zaten görünür olduğunu doğrulayın.
+
+## ISSUE-041 — Altı kelimelik etkinlikte ikinci grup ilk grubun örneklerinden önce gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 165–166  
+**Bölüm:** Fark Edelim — kelimeleri farklı bağlamlarda kullanma  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 7/23
+
+### PDF / beklenen durum
+Basılı s. 165–166'da sırasıyla huzur, rüya, saz, boğaz, tarih ve garp kelimeleri verilir; öğrenciden bunları farklı bağlamlarda kendi cümlelerinde kullanması istenir. Bu üretim etkinliğinde örnek cümleler model olabilir; öğrencinin kendi cümleleri açık uçludur.
+
+### Sunumda gözlenen durum
+Kartın ilk aşamasında huzur, rüya ve saz; bir sonraki tıklamada boğaz, tarih ve garp görünür. Ancak bu ikinci tıklama ilk gruba ait örnekler açılmadan önce gelir. Sonraki üç cevap aşaması sırasıyla huzur+rüya, saz+boğaz ve tarih+garp için ikişer farklı bağlam cümlesi ve anlam açıklaması gösterir. İlk görev başlığı altı kelimenin tümünü en baştan adlarıyla sayar.
+
+### Mevcut akış
+İlk 3 kelime → sonraki 3 kelime → huzur/rüya örnekleri → saz/boğaz örnekleri → tarih/garp örnekleri.
+
+### Beklenen akış
+İlk 3 kelime → ilk grubun örnekleri/anlamları → sonraki 3 kelime → ikinci grubun örnekleri/anlamları.
+
+### Neden sorun
+Öğrenciler ilk üç kelime için kendi cümlelerini kurup örneklerle karşılaştıramadan ikinci kelime grubunu görür. Ayrıca örnek cevaplar, başlangıçta gösterilen iki kelime grubuna göre daha küçük ve birbiriyle örtüşen gruplarda açılır.
+
+### Yeniden üretme
+1. “Huzur — Okuma ve Söz Varlığı” sunumunda s. 165–166 / 7/23 kartını açın.
+2. İlk aşamada 01–03 kelimelerini görün.
+3. Bir kez ilerleyip 04–06 kelimelerinin, ilk grubun örnekleri açılmadan önce gösterildiğini doğrulayın.
+4. Cevap aşamalarında örneklerin ikişer kelimeyle açıldığını izleyin.
+
+## ISSUE-042 — Kelime anlamı örneği görevle birlikte görünür
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 165–166  
+**Bölüm:** Fark Edelim — kelimelerin bağlama göre anlamı  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 8/23
+
+### PDF / beklenen durum
+Basılı s. 166'da öğrenciler kendi cümlelerindeki kelimelerin bağlama göre anlam değişikliklerini bulur; ardından arkadaş cümlelerini yorumlayıp yaşam izleri taşıyıp taşımadığını değerlendirir ve seçilen cümlelerle duvar çalışması yapar. Bağımsız örnek olarak *boğaz* sözcüğü vücuttaki bölgeyi ya da İstanbul Boğazı'nı karşılayabilir.
+
+### Sunumda gözlenen durum
+İlk açılış ekranında görevle birlikte “Anlam” kartında “Örneğin boğaz sözü bedendeki bölgeyi veya İstanbul Boğazı'nı karşılayabilir.” cevabı görünür. Aynı ekrandaki “Yaşamdan iz” kartı arkadaşın deneyimini cümlesinden varsaymamak ve kendisine sormak gerektiğini belirtir.
+
+### Neden sorun
+İlk kart, öğrencinin kendi cümlelerini bağlamlarına göre karşılaştırması istenen anlam ayrımının cevabını etkileşim yapılmadan verir.
+
+### Beklenen davranış
+İlk görünümde çalışma yönergesi bulunmalı; *boğaz* örneği öğrencilere düşünme fırsatı verildikten sonra tıklamayla açılmalıdır. Akran deneyimi konusunda yargılamadan dinleme yönergesi görev desteği olarak kalabilir.
+
+### Yeniden üretme
+1. “Huzur — Okuma ve Söz Varlığı” sunumunda 8/23 kartına ilerleyin.
+2. İlk açılışta “Anlam” kartındaki *boğaz* örneğinin görünür olduğunu doğrulayın.
+
+## ISSUE-043 — Karşılaştırma örnekleri görevlerin ilk açılışında görünüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 177–178  
+**Bölüm:** Huzur — açık/örtük ileti ve metin karşılaştırmaları  
+**İlgili kayıt/etkinlik:** Huzur — İletiler ve Karşılaştırma, 1/11 ve 4–6/11
+
+### PDF / beklenen durum
+Basılı s. 177'deki soru fotoğraf ve metin bağlamından açık ve örtük iletileri çıkarmayı; s. 177–178'deki karşılaştırmalar ise Huzur ile şiir örneğini inceleyip ortaklık ve ayrımları bulmayı ister. Öğrenci önce kaynak ve görevi görmeli; örnek çıkarımlar tıklama sonrasında açılmalıdır.
+
+### Sunumda gözlenen durum
+1/11'in ilk görünümünde açık/örtük ileti sorusuyla birlikte örnek çıkarım ipuçları yer alıyor. 4–6/11 karşılaştırma slaytlarında görev metniyle birlikte cevap/karşılaştırma desteği ilk açılışta görünür.
+
+### Neden sorun
+Örnek çıkarımlar, öğrenci kendi değerlendirmesini yapmadan önce görünür hâle geliyor.
+
+### Beklenen davranış
+İlk görünümde PDF'deki kaynak ve soru/görev yer almalı; örnek çıkarımlar tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. “Huzur — İletiler ve Karşılaştırma” sunumunu açın.
+2. 1/11 ve 4–6/11 slaytlarını ilk açılışlarında inceleyin.
+3. Herhangi bir ilerletme tıklaması yapmadan cevap ipuçlarının göründüğünü doğrulayın.
+
+## ISSUE-044 — Kişi karşılaştırma yanıtları ilk açılışta gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 180–181  
+**Bölüm:** Huzur — Okuma Çemberi, 3–4. adımlar  
+**İlgili kayıt/etkinlik:** Huzur — Okuma Çemberi, 9–14/17
+
+### PDF / beklenen durum
+Basılı s. 180, roman kişilerinin söz ve davranışlarından kanıt bulup çıkarım yapmayı; s. 181 ise kahramanları kişilik özellikleri ve dil kullanımları bakımından karşılaştırmayı ister. Tabloda yalnız Mümtaz için örnek doldurulmuştur. Öğrenciler kalan karşılaştırmayı yapmadan önce soru ve kaynak gösterilmeli; örnek değerlendirmeler tıklamayla açılmalıdır.
+
+### Sunumda gözlenen durum
+9–11/17 ve 13–14/17 slaytlarında sorularla birlikte kişi karşılaştırmalarına ilişkin cevaplar ilk açılışta görünür. 12/17'de de Soru 4'ün ilk görünümünde, cevap aşamasından önce, altı kişi için hangi kanıtların bulunduğunu özetleyen “Doğrulanabilen Çerçeve” gösterilir; sonraki tıklamalar ayrıntıları açar.
+
+### Neden sorun
+Soru ve örnek cevap aynı anda sunulduğundan öğrencinin bağımsız karşılaştırma ve kanıt seçimi aşaması atlanıyor.
+
+### Beklenen davranış
+9–14/17 arasındaki soru kartlarında ilk açılışta görev (ve gerektiğinde PDF kaynak örneği) görünmeli; cevap çerçevesi ve kişi değerlendirmeleri öğretmen tıklayınca, kendi sıralarında açılmalıdır.
+
+### Yeniden üretme
+1. “Huzur — Okuma Çemberi” sunumunda 9/17'den 14/17'ye ilerleyin.
+2. Her soru kartının ilk açılışını inceleyin.
+3. Cevap içeriğinin tıklama öncesinde göründüğü kartları doğrulayın.
+
+## ISSUE-045 — Huzur çözümleme sorularında yanıtlar ilk açılışta görünüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 182–185  
+**Bölüm:** Huzur — Gerçek Yaşam ve Kurmaca  
+**İlgili kayıt/etkinlik:** 3, 4, 7–9, 11–12 ve 14–17/18
+
+### PDF / beklenen durum
+Basılı s. 182–185'te gerçek yaşam-kurmaca ilişkisi, anlatım, duyarlılık ve sorumluluk hakkında sorular ve görevler yer alır. Öğrenci her soruda önce soruyu ve dayandığı metin parçasını görmeli; örnek yanıt öğretmen tıklayınca açılmalıdır.
+
+### Sunumda gözlenen durum
+Belirtilen kartların ilk açılışında cevaplar, çıkarım veya örnek değerlendirmeler soru/görev metniyle birlikte görünür. Örneğin 3/18'de Mümtaz ve İhsan'ın gerçek kişilerden esinlenmesine ilişkin yanıt, 8–9/18'de anlatım çözümlemesi, 14–17/18'de her parçaya ait davranış/çıkarım yanıtları tıklama yapılmadan görünür.
+
+### Neden sorun
+Öğrencinin kendi yanıtını oluşturması için ayrılan düşünme aşaması atlanır; sunum öğretmen tıklamasını beklemeden örnek cevabı verir.
+
+### Beklenen davranış
+Kart ilk açıldığında soru/görev ve gerekiyorsa kaynak metin görünmeli; cevap ve örnek çıkarımlar tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. “Huzur — Gerçek Yaşam ve Kurmaca” sunumunu açın.
+2. 3, 4, 7–9, 11–12 ve 14–17/18 kartlarını ilk açılışlarında inceleyin.
+3. İlerletme tıklaması yapmadan cevapların görünür olduğunu doğrulayın.
+
+## ISSUE-046 — Dört parçalı görevde ilk cevap aşaması tüm parçaları özetliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 184–185  
+**Bölüm:** Huzur — Sıra Sizde 2  
+**İlgili kayıt/etkinlik:** Huzur — Gerçek Yaşam ve Kurmaca, 13/18
+
+### PDF / beklenen durum
+Görev dört ayrı metin parçasındaki duyarlılığı; insani çelişki, ahlaki çatışma ve toplumsal güçlükler bakımından belirlemeyi ister. Her parça için ayrı yanıt alanı bulunduğundan öğrenci bir parçayı değerlendirip yanıtını gördükten sonra sıradaki parçaya geçebilmelidir.
+
+### Sunumda gözlenen durum
+İlk açılışta yalnız görev ve dört parça başlığı görünür. İlk cevap tıklaması, dört parçanın tümünü kapsayan tek bir genel yanıtı aynı anda açar: insanı kavramlaştırmama, değişimi insan ve tarihî kökleri gözeterek yapma, canlılara sorumluluk ve hasta yakınına destek. Ardından 2–9/9 aşamalarında her parçaya ilişkin ayrıntılar gelir.
+
+### Neden sorun
+İlk cevap aşaması dört yanıt alanının tamamını birden verir; öğrenci ilk parçayı düşünürken sonraki üç parçanın çıkarımlarını da görür.
+
+### Beklenen davranış
+Yanıtlar parça parça açılmalıdır: ilk parçanın kanıtı ve değerlendirmesi → ikinci parçanınki → üçüncü → dördüncü. Bir parçanın yanıtı açılmadan sonraki parçaların çıkarımları gösterilmemelidir.
+
+### Yeniden üretme
+1. “Huzur — Gerçek Yaşam ve Kurmaca” sunumunda 13/18'e gelin.
+2. İlk açılışta dört parça başlıklarının ve görev yönergesinin göründüğünü doğrulayın.
+3. Bir kez ilerleyin; tek tıklamada dört parçayı kapsayan genel yanıtın açıldığını görün.
+4. Sonraki tıklamalarda parça ayrıntılarının açıldığını doğrulayın.
+
+## ISSUE-047 — Basılı s. 185'teki dil karşılaştırma görevi s. 186 olarak eşleştirilmiş
+
+**Durum:** OPEN  
+**Tür:** PAGE_MAPPING  
+**PDF sayfası:** Basılı s. 185 (sunum etiketi s. 186)  
+**Bölüm:** Huzur — karakter ve dil karşılaştırması  
+**İlgili kayıt/etkinlik:** Huzur — Yapı ve Üslup, 1/21
+
+### PDF / beklenen durum
+Basılı s. 185, 3. soruda öğrenciden Huzur'dan kendine yakın bulduğu bir kişiyi seçmesini; kişinin konuşma biçimini kendi günlük diliyle karşılaştırıp farkları gerekçeleriyle açıklamasını ister.
+
+### Sunumda gözlenen durum
+182–185 sayfalarına karşılık gelen 18 kartta görev yok. Ancak sonraki “Huzur — Yapı ve Üslup” sunumunun 1/21 kartında aynı görev “s. 186” etiketiyle gösteriliyor. Bu kart, s. 185'teki “kendinize yakın bulduğunuz bir kahramanı belirleyin” sorusuyla eşleşiyor; 186–188 aralığındaki yeni etkinliklerden önce sunuluyor.
+
+### Neden sorun
+Öğrenci ve öğretmen, s. 185'teki etkinliği uygulamada s. 186 içeriği olarak görür. Bu, kitap-sunum sayfa eşleştirmesini ve sınıf akışında etkinliğin bulunacağı yeri yanlış gösterir.
+
+### Beklenen davranış
+Görev basılı s. 185 ile eşleştirilmelidir. Öğrenci bir karakter seçebilmeli, romandaki konuşmasından örnek gösterebilmeli ve bunu kendi günlük diliyle gerekçeli biçimde karşılaştırabilmelidir. Yanıt seçilen karaktere göre değişir; örneğin Mümtaz'ın anlatıdaki düşünsel/edebî dili ile öğrencinin gündelik ve daha konuşma diline yakın anlatımı karşılaştırılabilir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 185'in altındaki 3. soruyu açın.
+2. Sunum listesinden “Huzur — Yapı ve Üslup”u açın.
+3. 1/21 kartın “s. 186” etiketine rağmen s. 185'teki karakter ve günlük dil karşılaştırma görevini içerdiğini doğrulayın.
+
+### Bağımsız değerlendirme
+Bu açık uçlu soruda tek doğru karakter veya tek doğru karşılaştırma yoktur. Yanıt; seçilen karakterden kaynakta bulunan bir konuşma örneğini belirlemeli, günlük dille anlamlı bir fark kurmalı ve farkı gerekçelendirmelidir.
+
+## ISSUE-048 — Çatışma çözümleme cevapları ilk açılışta görünüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 189  
+**Bölüm:** Düşünelim Paylaşalım — çatışma ögeleri ve anlatım teknikleri  
+**İlgili kayıt/etkinlik:** Huzur — Çatışma ve Dil, 1–5/22
+
+### PDF / beklenen durum
+Basılı s. 189'da üç Huzur parçası verilir; öğrenciler bu parçalardaki çatışma ögelerini ve türlerini belirler, ardından anlatıcı ve anlatım yollarının çatışmaya etkisini tartışıp paylaşır. Bağımsız değerlendirmede ilk parçada hatıraların Mümtaz'da uyandırdığı hüzün, ikinci parçada Boğaz'ın güzelliğine rağmen yalnızlığa katlanamama, üçüncü parçada Nuran'ın tanışma isteğiyle nişanlı olarak tanıtılmaya çekinmesi öne çıkar.
+
+### Sunumda gözlenen durum
+1/22 ilk açılışında üç parçanın içerdiği çatışmalar özetleniyor. 2/22 ilk açılışında çatışma türlerini bulma göreviyle birlikte üç durum yeniden, cevap olacak biçimde sıralanıyor. 3–5/22 kartlarında ise her bir parçaya yönelik soru ile çatışma ve anlatım değerlendirmesi aynı anda görünüyor; cevap açmak için tıklama gerekmiyor.
+
+### Neden sorun
+Öğrenci çatışmayı metinden bağımsız belirlemeden önce hem genel cevap iskeletini hem de her parçanın çözümünü görüyor.
+
+### Beklenen davranış
+İlk görünümde üç parça ve çatışma türlerini bulma görevi yer almalı; önce genel cevap, sonra her parçanın değerlendirmesi öğretmen tıklamalarıyla açılmalı.
+
+### Yeniden üretme
+1. “Huzur — Çatışma ve Dil” sunumunu açın.
+2. 1–5/22 kartlarını ilk açılışlarında inceleyin.
+3. Herhangi bir cevap tıklaması yapmadan çatışma özetlerinin ve parça çözümlerinin göründüğünü doğrulayın.
+
+## ISSUE-049 — Dil karşılaştırmasında cevap başlıkları ve kanıtları ilk açılışta veriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 190  
+**Bölüm:** Fark Edelim — dönem dili ve günümüz dili  
+**İlgili kayıt/etkinlik:** Huzur — Çatışma ve Dil, 8–9/22
+
+### PDF / beklenen durum
+Basılı s. 190, öğrencilere Huzur parçasını inceleyip dönem diliyle günümüz dili arasındaki ortak ve farklı yönleri gerekçeleriyle yazdırır. Bağımsız karşılaştırmada ortak Türkçe söz dizimi ve güncel kelimeler; seyrek/eski söz varlığı ve yazım biçimleri; uzun, çağrışımlı betimlemeler ayrı ayrı bulunabilir.
+
+### Sunumda gözlenen durum
+8/22'nin ilk açılışında karşılaştırmanın üç cevap başlığı (ortak kelimeler ve cümle işleyişi, tarihî/seyrek söz varlığı, şiirsel betimleme) gösteriliyor. 9/22 ilk açılışında metinden kanıt seçme göreviyle birlikte hem ortak hem farklı kelime örnekleri ve üslup açıklaması da görünür.
+
+### Neden sorun
+Öğrenciler metindeki örnekleri kendileri seçmeden önce hangi yönleri karşılaştıracaklarını ve kullanılacak kanıtları görür.
+
+### Beklenen davranış
+İlk görünümde yalnız karşılaştırma görevi ve kaynak parça olmalı; cevap başlıkları ve metin örnekleri öğretmen tıklayınca açılmalı.
+
+### Yeniden üretme
+1. “Huzur — Çatışma ve Dil” sunumunda 8/22 ve 9/22'ye ilerleyin.
+2. Kartları ilk açılışlarında inceleyin.
+3. Tıklama öncesinde cevap başlıklarının ve kanıt kelimelerinin göründüğünü doğrulayın.
+
+## ISSUE-050 — Cümle ögeleri kartları cevapları ilk görünümde gösteriyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 190–191  
+**Bölüm:** Sıra Sizde 1 — cümle ögeleri  
+**İlgili kayıt/etkinlik:** Huzur — Çatışma ve Dil, 11–17/22
+
+### PDF / beklenen durum
+Basılı s. 190–191'deki etkinlikte öğrenciler a–f cümlelerinin ögelerini belirler. Ana etkinlik kartı 10/22'de a–f görevleri ve ardından cevap aşamaları gösterilir. Her cümleye ayrılmış 11–17/22 kartları da soru içerdiğinden ilk görünümde yalnız cümleyi ve görevi göstermeli, çözüm tıklamayla açılmalıdır.
+
+### Sunumda gözlenen durum
+11–17/22 kartları a, b, c, ç, d, e ve f cümleleri için soru başlığıyla beraber doğru öge çözümlemesini veya açıklamasını doğrudan gösteriyor. Örneğin 11/22'de a cümlesiyle birlikte gizli özne, isim soylu yüklem ve zarf tümleci; 15/22'de d cümlesinin özne, zaman grubu ve nesne çözümlemesi ilk açılışta görünür.
+
+### Neden sorun
+Bu ayrıntı kartlarında öğrencinin cümleyi çözmesi için cevap öncesi düşünme/tahmin aşaması yoktur.
+
+### Beklenen davranış
+Her kart ilk açıldığında yalnız ilgili cümle ve öge bulma sorusu görünmeli; çözüm ve gerekçe bir tıklama sonra açılmalıdır.
+
+### Yeniden üretme
+1. “Huzur — Çatışma ve Dil” sunumunda 11–17/22 kartlarına ilerleyin.
+2. a–f kartlarının ilk açılışını inceleyin.
+3. Çözümün cevap aşamasına geçmeden görünür olduğunu doğrulayın.
+
+## ISSUE-051 — Çalışma kâğıdı soru kartlarında örnek cevap ipuçları ilk açılışta veriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 192  
+**Bölüm:** Huzur çözümleme çalışma kâğıdı  
+**İlgili kayıt/etkinlik:** Huzur — Değerlendirme ve Çıkış Kartı, 2–6/14
+
+### PDF / beklenen durum
+Basılı s. 192'deki çalışma kâğıdı beş başlığı boş yanıt alanlarıyla verir: üslup seçiminin nedenleri ve sonuçları; dönem özellikleri; içerik/yapı/dil ile dönem ve toplum ilişkisi; yapı unsurlarının katkısı; millî, manevi ve evrensel değerler. Öğrenci her başlığı önce kendi çözümlemesiyle doldurmalıdır.
+
+### Sunumda gözlenen durum
+1/14'te görev ve beş başlık gösterilip cevaplar tıklamayla açılır. Ancak 2–6/14 kartlarının ilk açılışında, ilgili soru başlığıyla beraber cevap yönünü doğrudan veren içerik de görünür: örneğin 2/14'te Mümtaz'ın kimlik arayışının şiirsel betimleme ve iç çözümlemeye etkisi, 4/14'te Mümtaz-Nuran görüş farkının içerik/dönem/toplum ilişkisi olarak açıklanması, 5/14'te kişi/mekân/zaman katkısına ilişkin hazır değerlendirme.
+
+### Neden sorun
+Beş boş tablo başlığının her biri ayrı soru kartında yanıta dönük örnekle birlikte açılır; öğrenciler çalışma kâğıdını kendi çıkarımlarıyla dolduramadan sunum cevabı görür.
+
+### Beklenen davranış
+2–6/14 kartlarında ilk görünümde yalnız ilgili başlık/soru bulunmalı; örnek cevap ve dayanaklar tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. “Huzur — Değerlendirme ve Çıkış Kartı” sunumunu açın.
+2. 2–6/14 kartlarının ilk açılışını inceleyin.
+3. Örnek cevap ipuçlarının cevap tıklamasından önce göründüğünü doğrulayın.
+
+## ISSUE-052 — Tarık Buğra dönüm noktası sorusunun yanıtı ilk açılışta görünüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 194  
+**Bölüm:** Konuya Başlarken — biyografide yaşam ayrıntıları  
+**İlgili kayıt/etkinlik:** Biyografi — Mehmet Akif Ersoy'a Hazırlık, 3/18
+
+### PDF / beklenen durum
+Basılı s. 194'te Tarık Buğra ve Âşık Veysel'e ait iki parça okunur; sonraki iki soruda biyografilerin hangi yaşam ayrıntılarına yer verdiği ve okur için önemi değerlendirilir. Tarık Buğra parçasında radyo programındaki türkü isteği üzerine söylediği iddia, bunun Arayan Bulur adlı radyofonik oyuna dönüşmesi ve ilk telifini alması bir dönüm noktası oluşturur.
+
+### Sunumda gözlenen durum
+3/18 ilk açılışında “Tarık Buğra'nın biyografisinde hangi dönüm noktasına yer verilmiş?” sorusunun altında olay zinciri ile “Neden seçilmiş?” açıklaması birlikte görünür. Cevap için tıklama yapılmaz.
+
+### Neden sorun
+Öğrenciler dönüm noktasını metinden kendileri çıkarmadan cevap ve gerekçeyi görür.
+
+### Beklenen davranış
+Kart ilk açıldığında yalnız soru görünmeli; olay zinciri ve gerekçe öğretmen tıklayınca açılmalıdır.
+
+### Yeniden üretme
+1. “Biyografi — Mehmet Akif Ersoy'a Hazırlık” sunumunu açın.
+2. 3/18 kartına ilerleyin.
+3. İlk açılışta cevap ve gerekçenin zaten görünür olduğunu doğrulayın.
+
+## ISSUE-053 — Millî marş kronolojisi sorusunun cevabı ilk açılışta gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 196  
+**Bölüm:** Metni Okuyalım — Millî marşın yazılma süreci  
+**İlgili kayıt/etkinlik:** Biyografi — Mehmet Akif Ersoy'a Hazırlık, 11/18
+
+### PDF / beklenen durum
+Basılı s. 195–196'daki biyografide Maarif Vekâletinin yarışma ilanı, Mehmet Âkif'in para ödülünü kabul etmeme şartı, şiirin 1 Mart 1921'de Meclis kürsüsünden okunması ve 12 Mart'ta millî marş olarak kabul edilmesi sıralanır. Bağımsız kronoloji bu beş olayı bu sırayla verir.
+
+### Sunumda gözlenen durum
+11/18 ilk açılışında olay sırasını bulma sorusunun hemen altında yarışma ilanından kabul tarihine uzanan tam kronoloji gösterilir.
+
+### Neden sorun
+Soru ve doğru sıra cevap için tıklama olmadan birlikte görünür.
+
+### Beklenen davranış
+İlk görünümde yalnız kronolojiyi belirleme görevi yer almalı; sıralı olaylar bir öğretmen tıklamasıyla açılmalıdır.
+
+### Yeniden üretme
+1. “Biyografi — Mehmet Akif Ersoy'a Hazırlık” sunumunu açın.
+2. 11/18 kartına ilerleyin.
+3. Kart ilk açıldığında olay sırasının da görünür olduğunu doğrulayın.
+
+## ISSUE-054 — Mehmet Âkif çalışma kâğıdında cevap öğeleri ilk açılışta görünüyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 199–201  
+**Bölüm:** Mehmet Âkif metnini anlama  
+**İlgili kayıt/etkinlik:** Mehmet Akif Ersoy — Anlama ve Çalışma Kâğıdı, 2/16, 4/16, 6/16, 9/16, 10/16 ve 12–16/16
+
+### PDF / beklenen durum
+Basılı s. 199'daki üç açık uçlu soru sırasıyla şairin toplumun yardıma muhtaç kesimlerini işlemesinin uyandırdığı duyguyu, “toplumcu/millî/İslâm şairi” nitelemelerinin gerekçesini ve yarışma ödülüne mesafeli tutumun değerlendirilmesini ister. Öğrenci bu soruları önce kendi yanıtlamalıdır.
+
+### Sunumda gözlenen durum
+2/16 ilk açılışında “Çocuklar” ve “Yaşlılar” başlıklarının altında eser örnekleri; 4/16 ilk açılışında “Toplumcu şair” ve “Millî şair” kategorileriyle açıklamaları; 6/16 ilk açılışında ise olay sırasını veren dört maddelik liste görünür. s. 200’de 9/16 ve 10/16 ilk açılışlarında biyografi karşılaştırması ve eser/kişi özelliklerine ait cevap içerikleri; s. 201’de 12/16 ve 13–16/16 kartlarında konu ve ana düşünce, yardımcı düşünceler, anlatım biçimleri ve düşünceyi geliştirme yolları, açık/örtük ileti ve bilgilerin sıralanışına ilişkin cevaplar tıklama yapılmadan görünür.
+
+### Neden sorun
+Öğrenciye önce düşünme fırsatı verilmeden cevap eşleştirmeleri ve sıralı çözüm gösterilir.
+
+### Beklenen davranış
+Bu kartlar ilk açıldığında yalnız soru/görev ve gerekiyorsa cevap olmayan yönlendirme görünmeli; eser eşleştirmeleri ve olay sırası tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. “Mehmet Akif Ersoy — Anlama ve Çalışma Kâğıdı” sunumunu açın.
+2. 2/16, 4/16, 6/16, 9/16, 10/16 ve 12–16/16 kartlarının ilk açılışını inceleyin.
+3. Cevap öğelerinin tıklama öncesinde görünür olduğunu doğrulayın.
+
+## ISSUE-055 — Biyografi analizinde sonraki cevap grupları görev açılışında veriliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 203–205  
+**Bölüm:** Mehmet Âkif Ersoy — Biyografi Çözümlemesi  
+**İlgili kayıt/etkinlik:** Mehmet Âkif Ersoy — Biyografi Çözümlemesi, 5/17, 9/17 ve 12/17
+
+### PDF / beklenen durum
+Basılı s. 203, üç biyografi örneğinin anlatım ve tür bakımından karşılaştırılmasını; s. 204, Huzur ile Mehmet Âkif biyografisinin yapı unsurlarının karşılaştırılmasını; s. 205 ise biyografideki olayları oluş sırasına yerleştirmeyi ister. Öğrenci her görevde önce kendi sınıflandırmasını veya sıralamasını yapmalıdır.
+
+### Sunumda gözlenen durum
+5/17 ilk açılışında örneklerden ikisine ilişkin tür/biçim tanımları cevap tıklamasından önce görünür. 9/17'de “Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz” görevi açılır açılmaz roman ve biyografinin yapılarına ilişkin karşılaştırma ifadeleri gösterilir. 12/17'de olayları sıralama sorusunun altında dört olay grubu doğru kronolojik sırada hazır görünür.
+
+### Bağımsız değerlendirme
+Basılı s. 205’teki yaşam çizgisi eğitim ve meslek hayatından yayın ve eserlere, Millî Mücadele ve İstiklâl Marşı sürecine, ardından Mısır yılları ve son döneme ilerler. Bu sıra görev çözümüdür; soru ilk açıldığında gösterilmemelidir.
+
+### Neden sorun
+Öğrenci tür karşılaştırmasını, yapı karşılaştırmasını veya kronolojik sıralamayı oluşturmadan cevap niteliğindeki sınıflandırma ve sıralamayı görür. Özellikle s. 205 kartı, öğrencinin sıralaması gereken dört kümeyi zaten çözülmüş sırada sunar.
+
+### Beklenen davranış
+Her kart ilk açıldığında görev ve cevabı içermeyen gerekli kaynak/yönerge bulunmalı; sınıflandırma ve yapı karşılaştırması tıklamayla açılmalı, sıralama görevi de doğru sıra ilk açılışta gösterilmeden çözülebilmelidir.
+
+### Yeniden üretme
+1. “Mehmet Âkif Ersoy — Biyografi Çözümlemesi” sunumunda 5/17, 9/17 ve 12/17 kartlarını açın.
+2. Cevap tıklaması yapmadan görünen içeriği inceleyin.
+3. s. 205 kartındaki dört olay kümesinin zaten kronolojik sırada verildiğini doğrulayın.
+
+## ISSUE-056 — Görsel temelli Âsım nesli görevlerinde PDF görselleri yok
+
+**Durum:** OPEN  
+**Tür:** MISSING_CONTENT  
+**PDF sayfası:** Basılı s. 205  
+**Bölüm:** Sıra Sizde — Âsım’ın nesline duyulan güven ve görevler  
+**İlgili kayıt/etkinlik:** Mehmet Âkif Ersoy — Biyografi Çözümlemesi, 16/17–17/17
+
+### PDF / beklenen durum
+Basılı s. 205’te ilk tartışma KAAN, TCG Anadolu, GÖKTÜRK-1 ve BİLSAT görsellerinden hareketle Âkif’in gençliğe duyduğu güvenin günümüzde sürüp sürmediğini yorumlatır. İkinci tartışma günümüz Âsım neslinin görevlerini aynı görsellerle ilişkilendirmeyi ister.
+
+### Sunumda gözlenen durum
+16/17 ve 17/17 kartlarında görsellerin kendisi görünmüyor. Kartlarda görsel adları ve tartışma yönergeleri/cevap ipuçları yer alsa da araç, gemi ve uydu görselleri sunulmuyor.
+
+### Neden sorun
+İki görev de açıkça sayfadaki görsellerden yararlanmayı ister; yalnız görsel adları, öğrencinin görsel ayrıntılara dayanarak yorum yapmasına olanak vermez.
+
+### Beklenen davranış
+Dört PDF görseli her iki etkinlikte de görevle birlikte gösterilmelidir.
+
+### Yeniden üretme
+1. PDF’de basılı s. 205’i açıp dört görseli inceleyin.
+2. “Mehmet Âkif Ersoy — Biyografi Çözümlemesi” sunumunda 16/17 ve 17/17’yi açın.
+3. İlk açılışı ve cevap aşamasını kontrol edin; görsellerin hiçbirinde yer almadığını doğrulayın.
+
+## ISSUE-057 — Açık ve örtük ileti cevabı ilk cevap aşamasında birlikte gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 214  
+**Bölüm:** Süreci Değerlendirebilme — açık ve örtük iletiler  
+**İlgili kayıt/etkinlik:** Kemal Tahir — Hayalî Mülakat, Değerlendirme 1, 16. kart
+
+### PDF / beklenen durum
+Basılı s. 214'teki ilk değerlendirme görevi metnin açık ve örtük iletilerini ayrı ayrı belirlemeyi ister. Öğrencinin her iletiyi düşünmesinden sonra ilgili yanıt aşaması açılmalıdır.
+
+### Sunumda gözlenen durum
+Kartın ilk görünümü görevdir. İlk tıklamada 1/2 cevap aşamasındaki geniş özet hem açık hem örtük iletiyi birlikte açıklar; ikinci tıklama örtük iletiyi ayrıca gösterir.
+
+### Bağımsız değerlendirme
+Açık ileti şehir/kültürel geçmiş ile kimlik bağını; örtük ileti ise geçmişi reddetmeden yeni bir yaşam kurabilme düşüncesini verir. Bunlar PDF'deki metin ve bağlamla ayrı ayrı gerekçelendirilebilir.
+
+### Neden sorun
+İlk yanıt tıklaması, henüz sonraki aşama açılmadan örtük ileti cevabını da görünür kılar; 1/2 ve 2/2 aşamaları ayrımını işlevsizleştirir.
+
+### Beklenen davranış
+1/2 aşamasında yalnız açık ileti ve dayanağı; sonraki tıklamada örtük ileti ve dayanağı görünmelidir.
+
+### Yeniden üretme
+1. “Kemal Tahir — Hayalî Mülakat” sunumunda Değerlendirme 1 kartını açın.
+2. Bir kez ilerleyip 1/2 cevap aşamasını inceleyin.
+3. Örtük ileti açıklamasının ikinci tıklamadan önce göründüğünü doğrulayın.
+
+## ISSUE-058 — Öz değerlendirme tablosundaki üç seçenek tek onay kutusuna dönüşüyor
+
+**Durum:** OPEN  
+**Tür:** TABLE_RENDERING  
+**PDF sayfası:** Basılı s. 214  
+**Bölüm:** Öz değerlendirme  
+**İlgili kayıt/etkinlik:** Kemal Tahir — Hayalî Mülakat, Öz Değerlendirme, 18. kart
+
+### PDF / beklenen durum
+Basılı s. 214'teki öz değerlendirme çizelgesinde her ölçüt için üç yanıt seçeneği bulunur: “Evet”, “Kısmen” ve “Hayır”. Öğrenci her ölçütte bu üç seçenekten birini işaretleyebilmelidir.
+
+### Sunumda gözlenen durum
+Sunum kartı her ölçüt için tek boş onay kutusu gösteriyor; Evet/Kısmen/Hayır sütunları ve bu seçeneklere karşılık gelen ayrı işaretleme alanları görünmüyor. Yönerge ise öğrenciden bu üç seçenekten birini belirlemesini istiyor.
+
+### Neden sorun
+Gösterilen tek kutu üçlü öz değerlendirme yanıtını ayırt etmiyor ve PDF'deki tabloyu işlevsel olarak sunmuyor.
+
+### Beklenen davranış
+Her ölçüt satırında Evet, Kısmen ve Hayır seçenekleri ayrı ayrı ve okunabilir biçimde yer almalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 214 öz değerlendirme tablosunu açın.
+2. Aynı sunumun Öz Değerlendirme, 18. kartını açın.
+3. PDF'deki üç yanıt seçeneği ile sunumdaki tek kutuyu karşılaştırın.
+
+## ISSUE-059 — Değerlendirme bölümündeki üç görev sunumda karşılanmıyor
+
+**Durum:** OPEN  
+**Tür:** MISSING_CONTENT  
+**PDF sayfası:** Basılı s. 214  
+**Bölüm:** Değerlendirme — öğretmen, konuşmacı kimliği ve akran değerlendirmesi  
+**İlgili kayıt/etkinlik:** Kemal Tahir — Hayalî Mülakat, değerlendirme kartları 16–19
+
+### PDF / beklenen durum
+Basılı s. 214, açık/örtük ileti ve karakter kanıtı değerlendirmelerinin yanında öğretmenin gözlem formu/rubrikle değerlendirmesini ve düzeltme vermesini, öğrencinin özgün konuşma kimliği geliştirmeye çalışmasını ve arkadaşını karekodlu form üzerinden değerlendirmesini ister.
+
+### Sunumda gözlenen durum
+Sunum kartları açık/örtük ileti, karakter değerlendirmesi ve öz değerlendirmeyi içeriyor; devam kartında olumlu davranışı ve sonraki hedefi planlama ele alınıyor. Öğretmen rubriğiyle değerlendirme/düzeltme, özgün konuşma kimliği geliştirme ve akran değerlendirme formu için karşılık gelen görev veya form sunulmuyor.
+
+### Neden sorun
+PDF'deki üç ayrı değerlendirme amacı öğrencinin kullanabileceği sunum içeriğinde yer almadığından etkinlik akışı eksik kalıyor.
+
+### Beklenen davranış
+Öğretmen değerlendirme/düzeltme adımı, özgün konuşma kimliği geliştirme hedefi ve akran değerlendirme formu ayrı, kaynakla eşleşen görevler olarak sunulmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 214'teki değerlendirme basamaklarını okuyun.
+2. “Kemal Tahir — Hayalî Mülakat” sunumunun 16–19. kartlarını sırayla açın.
+3. Öğretmen rubriği/düzeltmesi, konuşmacı kimliği ve akran değerlendirme formunun bulunmadığını doğrulayın.
+
+## ISSUE-060 — Kelime cevapları açılmadan sonraki kelime grubu gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 217–218  
+**Bölüm:** Söz varlığı — Direnişin Ustaları  
+**İlgili kayıt/etkinlik:** Direnişin Ustaları — Dinleme ve Anlama, 7/21
+
+### PDF / beklenen durum
+Basılı s. 217–218'de beş kelime/deyim için bağlamdan anlam tahmini, TDK'den doğrulama ve bağlama uygun öneri üretme çalışması vardır. Öğrenci önce küçük bir kelime grubunu görmeli, o grubun anlamlarını kontrol etmeli, sonra sonraki gruba geçmelidir.
+
+### Sunumda gözlenen durum
+### Mevcut akış
+İlk üç kelime (direniş, ihbar, torna)  
+→ bir tıklamada sonraki iki kelime (kafa yormak, haber uçurmak)  
+→ daha sonraki cevap aşamalarında gruplara ait açıklamalar
+
+### Neden sorun
+İlk üç kelimenin anlamı/cevabı açılmadan sonraki kelime grubu gösteriliyor; öğrencinin her grubu önce tahmin edip ardından cevabını kontrol etmesi beklenen sırası korunmuyor.
+
+### Beklenen akış
+İlk üç kelime  
+→ ilk üç kelimenin anlamları/cevapları  
+→ sonraki iki kelime  
+→ sonraki iki kelimenin anlamları/cevapları
+
+### Yeniden üretme
+1. PDF'de basılı s. 217–218'deki söz varlığı etkinliğini inceleyin.
+2. “Direnişin Ustaları — Dinleme ve Anlama” sunumunda 7/21 kartını açın.
+3. İlk görünümdeki ilk üç kelimeden bir tık ilerleyin; cevaplardan önce sonraki iki kelimenin açıldığını doğrulayın.
+
+## ISSUE-061 — Radyo oyununun özellikleri ilk açılışta cevapla birlikte görünüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 225  
+**Bölüm:** Performans Görevi — Radyo Tiyatrosu  
+**İlgili kayıt/etkinlik:** Radyo Tiyatrosu — Diyaloğu Başka Türe Dönüştürme, 1/16
+
+### PDF / beklenen durum
+Basılı s. 225, öğrenciden radyo oyununun tür özelliklerini kitap metninden belirlemesini ister. İlk görünümde özellikleri bulma görevi sorulmalı; öğretmen tıkladıktan sonra beklenen özellikler açılmalıdır.
+
+### Sunumda gözlenen durum
+1/16 kartının ilk açılışında görev yönergesiyle birlikte “Diyalog” ve “Ses dünyası” cevap kartları zaten görünür. Sonraki tıklama, yazma görevine ilişkin ek açıklamayı açar.
+
+### Bağımsız değerlendirme
+PDF'deki görev, radyo tiyatrosunda konuşma, müzik ve efektin işlevini saptamayı ister. Sunumun verdiği diyalog/çatışma ve ses/yer-zaman ipuçları metne uygundur; sorun cevabın ilk açılışta gösterilmesidir.
+
+### Neden sorun
+Öğrenci, öğretmen cevabı açmadan tür özelliklerini düşünme olanağı bulamıyor.
+
+### Beklenen davranış
+İlk görünümde yalnız görev yönergesi bulunmalı; diyalog ve ses özellikleri bir sonraki tıklamada açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 225'teki “Radyo Oyununun Özellikleri” bölümünü inceleyin.
+2. Sunum menüsünden “Radyo Tiyatrosu — Diyaloğu Başka Türe Dönüştürme” dersini açın.
+3. İlk karta gelin; cevap kartlarının ilk görünümde açık olduğunu doğrulayın.
+
+## ISSUE-062 — Biyografi puanlama sorusunun ilk görünümü cevabı söylüyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 233  
+**Bölüm:** 10 ve 11. sorular — biyografi yarışması  
+**İlgili kayıt/etkinlik:** 3. Tema — Ölçme ve Değerlendirme, 16/24
+
+### PDF / beklenen durum
+Basılı s. 233'teki 11. soru, I. grubun tam puan alabilmesi için hangi kavram açıklamalarını doğru vermesi gerektiğini sordurur. Bağımsız değerlendirmede Tablo B'deki “Tür” ve “Belge” açıklamaları doğru; “Tarafsızlık” ve “Kronoloji” açıklamaları yanlıştır. Bu nedenle öğrenci önce Tablo B'yi değerlendirmeli ve hangi maddelerin hatalı olduğunu kendisi belirlemelidir.
+
+### Sunumda gözlenen durum
+16/24 kartının ilk açılışında yönerge, “özellikle Tarafsızlık ve Kronoloji açıklamalarındaki hataları ... düzeltin” diyerek iki doğru maddeyi cevabı açmadan veriyor. Bir sonraki cevap aşaması da bu iki kavramı doğru biçimde tekrar ediyor.
+
+### Neden sorun
+İlk görünüm, sorunun çözümünü doğrudan açıklayarak cevap öncesi düşünme aşamasını ortadan kaldırıyor.
+
+### Beklenen davranış
+İlk görünüm, öğrenciden Tablo B'deki dört açıklamayı değerlendirmesini istemeli; Tarafsızlık ve Kronoloji ancak tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 233'teki Tablo B ve 11. soruyu inceleyin.
+2. “3. Tema — Ölçme ve Değerlendirme” sunumunda 16/24 kartını açın.
+3. Henüz tıklamadan önce Tarafsızlık ve Kronoloji maddelerinin hata olarak belirtildiğini doğrulayın.
+
+## ISSUE-063 — Devrik cümle değerlendirmesinde bir kaynak örneği yanlış kullanılıyor
+
+**Durum:** OPEN  
+**Tür:** EVIDENCE_ERROR  
+**PDF sayfası:** Basılı s. 234  
+**Bölüm:** 13. soru — anlatım özelliklerini değerlendirme  
+**İlgili kayıt/etkinlik:** 3. Tema — Ölçme ve Değerlendirme, 19/24
+
+### PDF / beklenen durum
+PDF, “Devrik cümleler kullanılarak anlatım güçlendirilmiştir.” yargısının parçaya göre Evet/Hayır/Bilgi yok olarak değerlendirilmesini ister. Bağımsız değerlendirmede yanıt “Evet” olabilir; örneğin “diye sözlerine devam etti profesör” ve “dedi genç adam” ifadelerinde yüklem özneden önce gelir.
+
+### Sunumda gözlenen durum
+4/4 cevap aşamasında yargı “Evet” olarak işaretleniyor; kanıt olarak “Mustafa’nın da böyle teklifler hoşuna giderdi doğrusu.” ile “diye sözlerine devam etti profesör” örnekleri birlikte veriliyor.
+
+### Bağımsız değerlendirme
+İlk alıntıda yüklem “giderdi” cümle sonunda yer alır; cümle devrik değildir. İkinci örnekte öznenin yüklemden sonra gelmesi devrik kuruluşu destekler. Dolayısıyla yanıtın “Evet” sonucu savunulabilir, ancak sunulan kanıtlardan biri bu yargıya kanıt oluşturmaz.
+
+### Neden sorun
+Yanlış örnek, devrik cümle kavramını öğrencinin hatalı öğrenmesine yol açabilir ve cevabın metinsel dayanağını zayıflatır.
+
+### Beklenen davranış
+“Evet” yanıtı yalnız devrik kuruluşu gerçekten gösteren kaynak cümlelerle gerekçelendirilmelidir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 234'teki 13. soru ve Mustafa İnan parçasını açın.
+2. Sunumda 19/24 sorusunun 4/4 cevap aşamasına ilerleyin.
+3. “Mustafa’nın da böyle teklifler hoşuna giderdi doğrusu.” cümlesinin yükleminin sonunda olduğunu karşılaştırın.
+
+## ISSUE-064 — Son çoktan seçmeli sorunun seçenekleri ve cevap aşaması yok
+
+**Durum:** OPEN  
+**Tür:** MISSING_CONTENT  
+**PDF sayfası:** Basılı s. 235  
+**Bölüm:** 16. soru — yazar hayatından hareketle olay yazısı  
+**İlgili kayıt/etkinlik:** 3. Tema — Ölçme ve Değerlendirme, 24/24
+
+### PDF / beklenen durum
+PDF'de I–V numaralı beş parça ve A–E seçenekleri bulunur. Bağımsız değerlendirmede doğru seçenek C (I, IV, V): I ve V gerçek kişilerin yaşamı/mahlası hakkında biyografik bilgi verir; IV birinci kişi anlatımıyla yazarın Ankara'daki yaşam çevresini anlatır. II ve III ise kurmaca kişilerin iç yaşantısıdır. Sunumda önce soru, ardından tıklamayla seçenek ve cevap gösterilmelidir.
+
+### Sunumda gözlenen durum
+Sunumun 24/24 son slaytı yalnız “Hangi parçalar yazarın hayatından bilgi vererek olay yazmaya uygundur?” sorusunu ve genel yönergeyi gösteriyor. I–V parçaları, A–E seçenekleri ve cevap için sonraki açılım bulunmuyor; kartta bir tıklama daha da slayt akışını ilerletmiyor.
+
+### Neden sorun
+Öğrenci, soru kökündeki parçaları ve seçenekleri sunumdan göremiyor; öğretmen de cevap aşamasını tıklamayla açamıyor. PDF'de bulunan çoktan seçmeli etkinlik sunumda tamamlanmamış kalıyor.
+
+### Beklenen davranış
+Soru slaydında PDF'deki beş parça ve seçenekler yer almalı; ilk görünümde cevap saklanıp tıklamayla doğru seçenek ve kısa gerekçe açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 235'teki 16. soruyu açın.
+2. “3. Tema — Ölçme ve Değerlendirme” sunumunda 24/24 son slayta ilerleyin.
+3. PDF'deki I–V parçaları ve A–E seçeneklerinin sunumda bulunmadığını; sonraki cevap açılımı olmadığını doğrulayın.
+
+## ISSUE-065 — Mümtaz ve Nuran karşılaştırmasının yanıtı ilk görünümde açık
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 168  
+**Bölüm:** Huzur — Mümtaz ve Nuran'ın geçmiş ve yeni hayatla ilişkisi  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 14/23
+
+### PDF / beklenen durum
+PDF'deki Huzur kesiti Mümtaz ile Nuran'ın şehir, tarih ve gündelik hayatı algılayışlarını karşılaştırmaya malzeme verir. Öğrenci önce metinden bu karşıtlığı bulmalıdır.
+
+### Sunumda gözlenen durum
+Kartın ilk açılışında karşılaştırma göreviyle beraber iki doğrudan özet görünür: Mümtaz'ın musiki, tarih ve şehir mirasını kimliğin kaynağı gördüğü; Nuran'ın geçmişi sevmesine karşın yoksulluk, bakımsızlık ve bugünün ihtiyaçlarını hatırlattığı yazılıdır. Kartın sonraki aşaması ayrı bir genel tartışma sorusuna geçer.
+
+### Neden sorun
+Karşılaştırma cevabının iki tarafı da öğretmen tıklamadan gösterildiği için metinden bulma aşaması atlanır.
+
+### Beklenen davranış
+İlk görünümde karşılaştırma sorusu yer almalı; iki karaktere ilişkin özetler tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 168'deki Huzur kesitini inceleyin.
+2. “Huzur — Okuma ve Söz Varlığı” sunumunun 14. kartını açın.
+3. İlk görünümde iki karaktere ait özetlerin görevle beraber yer aldığını doğrulayın.
+
+## ISSUE-066 — İhsan ve şehir tasvirine ilişkin cevaplar ilk görünümde açık
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 170  
+**Bölüm:** Huzur — İhsan'ın Mümtaz üzerindeki etkisi ve İstanbul'un sosyal görünümü  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 15/23
+
+### PDF / beklenen durum
+Metin, İhsan'ın Mümtaz'ın geçmiş ve kültürle bağındaki rolünü ve İstanbul'daki tarihî yapıların yanında görülen toplumsal yoksulluğu değerlendirmek için kaynak sağlar.
+
+### Sunumda gözlenen durum
+Kart ilk açıldığında görevin yanında “Mümtaz'ın geçmiş/kültür bağında İhsan'ın etkisi” ve “tarihî yapılarla toplumsal yoksulluk tasviri” için doğrudan cevap özetleri görünür.
+
+### Neden sorun
+Öğrenciden istenen iki metin çıkarımı tıklama öncesinde sunulur.
+
+### Beklenen davranış
+Önce iki çıkarım sorulmalı; cevap özetleri öğretmen tıklayınca görünmelidir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 170'teki Huzur parçasını inceleyin.
+2. Sunumun 15. kartını açın.
+3. İlk görünümde görevle iki cevabın birlikte yer aldığını doğrulayın.
+
+## ISSUE-067 — Tanpınar biyografisi görevi cevabı ilk görünümde veriyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 171  
+**Bölüm:** Ahmet Hamdi Tanpınar'ın hayatı ve eserleri  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 16/23
+
+### PDF / beklenen durum
+PDF'deki biyografi kartı Tanpınar'ın hayatı, eserleri, etkilendiği isimler ve temaları verir. Öğrenci bu bilgilerden hareketle görevde istenen bağlantıları önce kendisi belirlemelidir.
+
+### Sunumda gözlenen durum
+İlk görünümde görev metniyle birlikte “Yahya Kemal–Ahmet Haşim etkisi; tarih, sanat ve musiki ilgisi” ve “İstanbul, eski musiki, bireyin iç dünyası ve kültür gerilimi” özetleri görünür.
+
+### Neden sorun
+Görevin beklediği biyografik ve tematik bağlantılar cevap tıklanmadan açığa çıkar.
+
+### Beklenen davranış
+İlk aşamada görev gösterilmeli; biyografi ve tema özetleri sonraki tıklamada açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 171'deki Tanpınar biyografi kartını inceleyin.
+2. Sunumun 16. kartını açın.
+3. İki özetin soru/görevle aynı anda göründüğünü doğrulayın.
+
+## ISSUE-068 — Dokuz sözcüğün anlamları grup sırasına göre açılmıyor
+
+**Durum:** OPEN  
+**Tür:** PROGRESSIVE_REVEAL  
+**PDF sayfası:** Basılı s. 172  
+**Bölüm:** Huzur kesitindeki söz varlığı  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 17/23
+
+### PDF / beklenen durum
+PDF'de bağlamdan anlamı bulunacak dokuz sözcük yer alır. Bağımsız anlam değerlendirmesi: *mustarip* — acı/sıkıntı çeken; *mahzen* — kiler/depo veya iç derinlik; *cevher* — öz; *yeis* — umutsuzluk; *zarafet* — incelik; *neşretmek* — yayımlamak; *hulâsa* — özetle; *muazzam* — çok büyük/görkemli; *cins* — tür/çeşit. Sunumda gösterilen anlamlar bu bağlamsal karşılıklarla uyumludur.
+
+### Sunumda gözlenen durum
+İlk üç aşamada sırayla ilk, ikinci ve üçüncü üç sözcüklük gruplar gösterilir; önceki grup yenisiyle değiştirilir. Üç grup da anlamlar açılmadan gösterildikten sonra genel bir açıklama kartı gelir. Sonraki dört cevap aşamasında ilk grubun anlamları, sonra ikinci ve üçüncü grupların anlamları açılır.
+
+### Mevcut akış
+İlk 3 sözcük → sonraki 3 sözcük → son 3 sözcük → genel açıklama → ilk 3 anlam → sonraki 3 anlam → son 3 anlam.
+
+### Beklenen akış
+İlk 3 sözcük → ilk 3 anlam → sonraki 3 sözcük → sonraki 3 anlam → son 3 sözcük → son 3 anlam.
+
+### Neden sorun
+Öğrenci ilk grubun anlamlarını düşünmeden önce diğer iki gruba ve araya giren genel açıklamaya geçilir; her küçük grubun tahminini hemen kontrol etme fırsatı kaybolur.
+
+### Beklenen davranış
+Her üç sözcüklük grup kendi anlamlarıyla tamamlandıktan sonra sonraki gruba geçilmelidir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 172'deki söz varlığı görevini inceleyin.
+2. Sunumun 17. kartında üç sözcük grubu aşamalarını ileri tıklayarak izleyin.
+3. Anlamların ancak üç grup ve genel açıklama sonrasında açıldığını doğrulayın.
+
+## ISSUE-069 — Roman türleri karşılaştırmasında cevap özetleri görevle birlikte açılıyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 173  
+**Bölüm:** Konusuna göre roman türleri  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 19/23
+
+### PDF / beklenen durum
+PDF tablosunda biyografik, otobiyografik, sosyal, psikolojik ve tarihî roman türleri tanım ve örnekleriyle verilir. Bağımsız değerlendirmede biyografik roman başka bir kişinin; otobiyografik roman yazarın kendi yaşamından yararlanır. Sosyal roman toplumsal ilişki ve sorunlara, psikolojik roman kişinin iç dünyasına odaklanır; tarihî roman geçmişteki kişi ve olayları kurmaca içinde işler. Öğrenci önce kitaptaki tanım ve örnekleri karşılaştırmalıdır.
+
+### Sunumda gözlenen durum
+İlk görünümde görevle beraber “Biyografik / Otobiyografik” için yaşam kaynağı farkı ve “Sosyal / Psikolojik” için toplumsal sorun–bireyin iç dünyası farkı yazılıdır. İkinci aşamada yalnız tarihî romanın tanım özeti açılır.
+
+### Neden sorun
+Türleri ayırt etme görevinin iki temel karşılaştırması ilk görünümde yanıtlanmıştır.
+
+### Beklenen davranış
+Önce türleri tanım ve örneklerden ayırt etme görevi gösterilmeli; karşılaştırma özetleri tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 173'teki roman türleri tablosunu inceleyin.
+2. Sunumun 19. kartını açın.
+3. İlk görünümde ilk iki karşılaştırmanın özetlerinin görevle beraber bulunduğunu doğrulayın.
+
+## ISSUE-070 — Macera, bilim kurgu, tezli ve fantastik türlerin ayrımı ilk görünümde açık
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 173  
+**Bölüm:** Konusuna göre roman türleri  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 20/23
+
+### PDF / beklenen durum
+PDF'nin türler tablosu macera, bilim kurgu, tezli ve fantastik romanların tanımlarını ve örneklerini karşılaştırmaya imkân verir. Öğrenci önce bu başlıkları ayırt etmelidir.
+
+### Sunumda gözlenen durum
+Kartın ilk görünümünde “hareket ve merak” ile “bilim–teknoloji kurmacası” ayrımı; ayrıca “bir görüşü savunma” ile “gerçeküstü evren kurma” ayrımı başlıkların altında birlikte görünür. Kartta sonraki cevap açılımı yoktur.
+
+### Neden sorun
+Türleri ayırt etme görevi, karşılaştırma ölçütlerini zaten gösteren kartla aynı anda açılır.
+
+### Beklenen davranış
+İlk görünümde görev ve tür adları yer almalı; ayırt edici tanımlar cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 173'teki roman türleri tablosunu inceleyin.
+2. Sunumun 20. kartını açın.
+3. Dört tür için ayırt edici tanımların görevle birlikte gösterildiğini doğrulayın.
+
+## ISSUE-071 — Edebî akım ayrımlarının tamamı ilk görünümde cevap olarak gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 174  
+**Bölüm:** Edebî akımlarına göre roman türleri  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 21/23
+
+### PDF / beklenen durum
+PDF tablosunda klasik, romantik, realist ve natüralist romanların özellik ve örnekleri bulunur. Öğrenci başlıkları ve tanımları karşılaştırarak ayrımları kendisi kurmalıdır.
+
+### Sunumda gözlenen durum
+İlk görünümde “yerleşik örneklik / duygusal tepkileri öne çıkaran anlatım” ve “gerçekçi yansıtma / bilimsel yönteme dayandırılmaya çalışılan anlatım” karşıtlıkları görev metniyle beraber görünür.
+
+### Neden sorun
+Karşılaştırma görevi cevap ölçütlerini tıklama öncesinde verir.
+
+### Beklenen davranış
+İlk aşamada başlıklar ve görev gösterilmeli; ayrım açıklamaları tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 174'teki edebî akım tablosunu inceleyin.
+2. Sunumun 21. kartını açın.
+3. İki karşılaştırma özetinin ilk görünümde açık olduğunu doğrulayın.
+
+## ISSUE-072 — Modernist ve varoluşçu tanımları görevden önce gösteriliyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 174  
+**Bölüm:** Edebî akımlarına göre roman türleri  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 22/23
+
+### PDF / beklenen durum
+PDF tablosu modernist, varoluşçu ve postmodern roman türlerinin tanım ve örneklerini karşılaştırmaya kaynak olur. Öğrenci önce üç başlık arasındaki ayrımı kurmalıdır.
+
+### Sunumda gözlenen durum
+İlk görünümde görevle birlikte modernist roman için bireyin iç dünyası, yabancılaşma ve geleneksel yapıdan uzaklaşma; varoluşçu roman için varoluş, özgürlük, sorumluluk ve bunalım özetleri görünür. Yalnız postmodern romanın özeti ikinci aşamada açılır.
+
+### Neden sorun
+Karşılaştırmanın ilk iki maddesi cevap tıklanmadan verilir; üçüncü madde daha sonraki aşamaya bırakılır.
+
+### Beklenen davranış
+Önce üç akımı karşılaştırma görevi gösterilmeli; akım tanımları öğrenci düşündükten sonra aşamalı açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 174'teki edebî akım tablosunu inceleyin.
+2. Sunumun 22. kartını açın.
+3. İlk iki akımın tanımlarının görevle beraber açık olduğunu, postmodern tanımın ise ikinci aşamada geldiğini doğrulayın.
+
+## ISSUE-073 — Huzur'un üslup kavram haritası için maddeler görevle birlikte açılıyor
+
+**Durum:** OPEN  
+**Tür:** PRESENTATION_FLOW  
+**PDF sayfası:** Basılı s. 174  
+**Bölüm:** “Hatırlayalım” — Huzur romanının üslup özellikleri  
+**İlgili kayıt/etkinlik:** Huzur — Okuma ve Söz Varlığı, 23/23
+
+### PDF / beklenen durum
+PDF, üslubu anlatım yolu olarak tanımlar ve metin çözümlemesinde kullanılacak önceki bilgi ile kaynak metin bağlamını sunar. Öğrenciden Huzur'un üslup özelliklerini kavram haritasında göstermesi istenir.
+
+### Sunumda gözlenen durum
+İlk görünümde görevle beraber “ayrıntılı mekân/insan betimlemesi”, “şiirsel-mecazlı anlatım” ve “tarih ve musiki söz varlığı” gösterilir. Bir tıklama sonra aynı görev altında “geçmiş ve yeni hayat üzerine düşünce”, “kişilerin iç dünyası” ve “uzun ve ritmik cümleler” eklenir.
+
+### Neden sorun
+Kavram haritasında bulunması istenen altı özellik, öğrenci yanıt oluşturmadan örnek cevap maddeleri olarak sunulur.
+
+### Beklenen davranış
+İlk görünümde kavram haritası görevi yer almalı; özellik maddeleri öğretmen tıklamalarıyla cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 174'teki “Hatırlayalım” görevi ile üslup açıklamasını inceleyin.
+2. Sunumun 23. kartını açın.
+3. İlk üç maddenin görevle birlikte göründüğünü ve sonraki üç maddenin yalnız ikinci aşamada eklendiğini doğrulayın.
+
+## Erişim sınırı — 3. Tema (kısmen tamamlandı)
+
+Basılı s. 160–235'teki PDF sayfaları görsel olarak açılıp sırayla incelendi; ilgili sunum kartları da PDF sayfa, başlık ve görev bağlamıyla karşılaştırıldı. Tema 3 ilerleme tablosundaki aralıklar toplam 294 sunum kartı/adımını kapsar. Huzur — Okuma ve Söz Varlığı sunumunun son 10 kartı da tamamlandı. Basılı s. 215–220'deki QR medya ile s. 225–226'daki kaynak ses/video içeriği doğrulanamadı. Basılı s. 234'teki “Aile Bağları” QR bağlantısı Safari'de EBA hesap giriş ekranına yönlendi; hesap bilgisi girilmediğinden video ve buna bağlı 14–15. soruların somut içerik dayanağı doğrulanamadı. Bu medya içerikleri denetlenemediği için Tema 3'ün genel denetim durumu `IN_PROGRESS` kalır.

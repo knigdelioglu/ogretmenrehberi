@@ -122,6 +122,13 @@
           "haber uçurmak"
         ],
         "note": "Bu ifadelerin hangi anlamda kullanıldığını QR kaydı dinlemeden belirlemeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Aşağıdaki anlamlar yalnızca kelimelerin sözlük anlamıdır. ‘Direnişin Ustaları’ kaydı dinlenmeden bunların metindeki anlamı veya ‘torna’nın hangi işlem/nesneyle ilgili kullanıldığı kesinleştirilmemelidir. Basılı kelime duvarında bulunmayan ‘kafa yormak’ ve ‘haber uçurmak’ bu kayda eklenmemiştir."
+      },
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 3
+        },
+        "answer_text": "end"
       }
     },
     {

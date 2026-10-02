@@ -345,6 +345,13 @@
           "Bu iki ileti türünü karakterin okunan metindeki sözleriyle karşılaştırın."
         ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Musiki millî zevkin en yüksek anlatımıdır’, ‘medeniyet krizi bireyin huzursuzluğunu doğurur’ gibi model mülakattan üretilmiş geniş sonuçları romanın zorunlu iletisi saymayın."
+      },
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 1
+        },
+        "answer_text": "end"
       }
     },
     {
@@ -378,7 +385,12 @@
           "Akıcılık, duruluk ve yalınlığı korudum.",
           "Ek ve kelimeleri anlam ve bağlama uygun seçtim."
         ],
-        "note": "Bu altı ölçüt sınıf içi öz değerlendirme içindir. Kitap ayrıca öğretmenin değerlendirmesinde anlatım ilkelerine uygunluk ile beden dili, diksiyon, zaman ve mekânı etkili kullanma gibi görünen örnek ölçütleri belirtir; QR'deki Dereceli Puanlama Anahtarı'nın görünmeyen diğer maddelerini veya puanlarını eklemeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Öğrenci adına ‘göz temasını kaçırdım’, ‘heyecandan hızlı konuştum’ veya bütün maddelerde ‘Evet’ sonucu yazmayın. QR formlar görülmeden puan/seviye eklemeyin."
+        "note": "Bu altı ölçüt sınıf içi öz değerlendirme içindir. Kitap ayrıca öğretmenin değerlendirmesinde anlatım ilkelerine uygunluk ile beden dili, diksiyon, zaman ve mekânı etkili kullanma gibi görünen örnek ölçütleri belirtir; QR'deki Dereceli Puanlama Anahtarı'nın görünmeyen diğer maddelerini veya puanlarını eklemeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Öğrenci adına ‘göz temasını kaçırdım’, ‘heyecandan hızlı konuştum’ veya bütün maddelerde ‘Evet’ sonucu yazmayın. QR formlar görülmeden puan/seviye eklemeyin.",
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ]
       }
     },
     {
