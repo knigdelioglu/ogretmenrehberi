@@ -1,8 +1,8 @@
-# ÖğretmenRehberi E2E denetimi — 1., 2. ve 3. Tema
+# ÖğretmenRehberi E2E denetimi — 1., 2., 3. ve 4. Tema
 
-**Kapsam:** 1. Tema, basılı s. 12–83; 2. Tema, basılı s. 84–159 (denetim tamamlandı); 3. Tema, basılı s. 160–235 (sayfalar ve sunumlar incelendi; bazı QR medya içerikleri erişilemedi).  
+**Kapsam:** 1. Tema, basılı s. 12–83; 2. Tema, basılı s. 84–159 (denetim tamamlandı); 3. Tema, basılı s. 160–235 (sayfalar ve sunumlar incelendi; bazı QR medya içerikleri erişilemedi); 4. Tema, basılı s. 236–307 (PDF sayfaları ve sunum kartları görsel olarak incelendi; QR video kaynakları doğrulanamadı).\
 **Ana kaynak:** Kullanıcının eklediği `Edebiyat 11 ders kitabı.pdf`; sayfa eşleştirmesinde basılı ve PDF sayfa numaraları ayrı tutulur.  
-**Denetim yöntemi:** PDF görseli ve metni → bağımsız değerlendirme → gerçek Sunum Web arayüzü ve açılma katmanları. Tema 2 ve 3, Computer Use ile yerel Sunum Web'de denetleniyor. Bu rapor yalnızca tespit içerir; uygulama/veri değişikliği yapılmadı.
+**Denetim yöntemi:** PDF görseli ve metni → bağımsız değerlendirme → gerçek Sunum Web arayüzü ve açılma katmanları. Tema 2, 3 ve 4, Computer Use ile yerel Sunum Web'de denetleniyor. Bu rapor yalnızca tespit içerir; uygulama/veri değişikliği yapılmadı.
 
 | PDF aralığı (basılı s.) | Durum | İncelenen sunum kartı/etkinlik | Bulunan sorun |
 |---|---|---:|---:|
@@ -41,6 +41,20 @@
 | 221–224 | DONE | 17 sunum kartı | 0 |
 | 225–229 | IN_PROGRESS | 16 sunum kartı; kaynak QR medyası doğrulanmadı | 1 |
 | 230–235 | IN_PROGRESS | 24 sunum slaytı; Aile Bağları videosu giriş gerektiriyor | 3 |
+| 236–242 | DONE | 17 sunum kartı | 3 |
+| 243–250 | DONE | 14 sunum kartı | 2 |
+| 251–255 | DONE | 13 sunum kartı | 0 |
+| 256–259 | DONE | 16 sunum kartı | 3 |
+| 260–262 | DONE | 18 sunum kartı | 0 |
+| 263–265 | DONE | 9 sunum kartı | 0 |
+| 266–270 | DONE | 17 sunum kartı | 1 |
+| 271–273 | DONE | 10 sunum kartı | 0 |
+| 274–279 | DONE | 21 sunum kartı | 5 |
+| 280–283 | DONE | 16 sunum kartı | 3 |
+| 284–290 | IN_PROGRESS | 22 sunum kartı; Anadolu İnsanı/Çalışkanlık QR videoları doğrulanamadı | 2 |
+| 291–297 | IN_PROGRESS | 24 sunum kartı; video temelli soruların dayanağı doğrulanamadı | 2 |
+| 298–302 | IN_PROGRESS | 19 sunum kartı; Afiş Hazırlama Basamakları QR videosu doğrulanamadı | 2 |
+| 303–307 | IN_PROGRESS | 19 sunum kartı; Aidiyet QR videosu doğrulanamadı | 6 |
 
 ## Bulgular
 
@@ -2075,3 +2089,739 @@ Kavram haritasında bulunması istenen altı özellik, öğrenci yanıt oluştur
 ## Erişim sınırı — 3. Tema (kısmen tamamlandı)
 
 Basılı s. 160–235'teki PDF sayfaları görsel olarak açılıp sırayla incelendi; ilgili sunum kartları da PDF sayfa, başlık ve görev bağlamıyla karşılaştırıldı. Tema 3 ilerleme tablosundaki aralıklar toplam 294 sunum kartı/adımını kapsar. Huzur — Okuma ve Söz Varlığı sunumunun son 10 kartı da tamamlandı. Basılı s. 215–220'deki QR medya ile s. 225–226'daki kaynak ses/video içeriği doğrulanamadı. Basılı s. 234'teki “Aile Bağları” QR bağlantısı Safari'de EBA hesap giriş ekranına yönlendi; hesap bilgisi girilmediğinden video ve buna bağlı 14–15. soruların somut içerik dayanağı doğrulanamadı. Bu medya içerikleri denetlenemediği için Tema 3'ün genel denetim durumu `IN_PROGRESS` kalır.
+
+# 4. Tema — Hayatın Aynası (basılı s. 236–307)
+
+PDF'nin basılı s. 236–307 aralığı görsel olarak sırayla incelendi ve 14 gerçek sunum destesindeki 235 içerik kartı PDF bağlamıyla karşılaştırıldı. 284–302 ve 307. sayfalardaki QR videoları açılamadığından videoya dayalı doğruluk kontrolleri tamamlanamadı; aşağıdaki kart ve sayfa eşleştirmeleri incelendi.
+
+## ISSUE-074 — Tema girişinde beceri cevapları ilk görünümde açık
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 236\
+**Bölüm:** Tema başlangıcı / kullandığımız beceriler\
+**İlgili kayıt/etkinlik:** Hayatın Aynası — Temaya Giriş, ilk içerik kartı
+
+### PDF / beklenen durum
+Tema açılışı farklı dil becerilerini hatırlatır. Öğrenci önce hangi becerileri kullandığını düşünmeli; cevap tıklamayla açılmalıdır.
+
+### Sunumda gözlenen durum
+Kart ilk açıldığında Okuma ile Dinleme/İzleme becerileri zaten görünür; sonraki tıklamada Konuşma ve Yazma eklenir.
+
+### Neden sorun
+Soru, en azından ilk iki cevabı soru sorulmadan önce gösteriyor.
+
+### Beklenen davranış
+İlk görünümde yalnızca hatırlama görevi bulunmalı; beceri örnekleri cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 236'daki tema başlangıcını inceleyin.
+2. Sunumda Hayatın Aynası — Temaya Giriş destesinin ilk kartını açın.
+3. İlk görünümde Okuma ve Dinleme/İzleme ifadelerinin açık olduğunu gözlemleyin.
+
+## ISSUE-075 — QR kod yönergesi öğrenci sunumunda öğretmene sesleniyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_LANGUAGE\
+**PDF sayfası:** Basılı s. 237\
+**Bölüm:** Tema sunusu karekodu\
+**İlgili kayıt/etkinlik:** Hayatın Aynası — Temaya Giriş
+
+### PDF / beklenen durum
+Kitaptaki karekod, dijital tema sunusuna erişim sağlar; sınıfa yansıtılan materyal doğrudan öğrenciye dönük olmalıdır.
+
+### Sunumda gözlenen durum
+Öğrenciye görünen metin “Kitaptaki Tema Sunusu karekodunu bu aşamada açın…” biçiminde uygulayıcıya işlem yaptırıyor.
+
+### Neden sorun
+“Açın” yönergesi öğretmen/uygulayıcıya yönelik meta talimattır ve öğrenciye gösterilen slaytta ders materyalinin parçası gibi görünür.
+
+### Beklenen davranış
+Öğrenciye dönük görev veya içerik gösterilmeli; öğretmenin uygulama adımı öğrenci ekranında yer almamalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 237'deki karekod alanını inceleyin.
+2. Temaya Giriş destesindeki karekod yönergesi kartını açın.
+
+## ISSUE-076 — Bilgi ve kurmaca metin sınıflamaları soru öncesinde gösteriliyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 240\
+**Bölüm:** Bilgi grafiği ve tiyatro metni\
+**İlgili kayıt/etkinlik:** Hayatın Aynası — Temaya Giriş
+
+### PDF / beklenen durum
+Öğrenci, bilgi grafiği ile kurmaca tiyatro diyaloğunu amaç ve içerik bakımından ayırt etmelidir.
+
+### Sunumda gözlenen durum
+Sınıflandırma görevi ilk açıldığında metinler “bilgi” ve “kurmaca” olarak etiketlenmiş durumdadır.
+
+### Neden sorun
+Etiketler öğrencinin yapması beklenen sınıflandırmayı önceden verir.
+
+### Beklenen davranış
+İlk görünümde örnekler ve sınıflandırma görevi gösterilmeli; etiketler cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 240'taki iki metni inceleyin.
+2. Temaya Giriş destesindeki iki metni ayırt etme kartını açın.
+
+## ISSUE-077 — Altı kelimenin anlamlarından önce ikinci grup gösteriliyor
+
+**Durum:** OPEN\
+**Tür:** PROGRESSIVE_REVEAL\
+**PDF sayfası:** Basılı s. 247\
+**Bölüm:** Söz varlığı / kelime çalışması\
+**İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Okuma ve Sanatın İşlevi
+
+### PDF / beklenen durum
+PDF'deki altı kelime bağlam içinde anlamlandırılır. Öğrenci ilk küçük grubu tahmin ettikten sonra o grubun anlamını kontrol etmeli, ancak bundan sonra sonraki gruba geçmelidir.
+
+### Sunumda gözlenen durum
+İlk üç kelime gösteriliyor; bir tıklamada ikinci üçlü, ilk grubun anlamları açılmadan gösteriliyor. Anlamlar daha sonraki aşamalarda veriliyor.
+
+### Mevcut akış
+İlk 3 kelime → sonraki 3 kelime → ara açıklama → ilk 3 anlam → sonraki 3 anlam
+
+### Beklenen akış
+İlk 3 kelime → ilk 3 anlam → sonraki 3 kelime → sonraki 3 anlam
+
+### Neden sorun
+Öğrenci ilk grubu düşünmeden ikinci gruba geçiliyor; kelime tahmini ile anlam kontrolü eşlenik aşamalarda sunulmuyor.
+
+### Yeniden üretme
+1. PDF'de basılı s. 247'deki kelime çalışmasını inceleyin.
+2. İlgili sunum kartını ilk kez açın.
+3. Tıklamalarla görünen iki kelime grubunu ve anlam aşamalarını sırayla izleyin.
+
+## ISSUE-078 — Atasözlerinin kalan bölümü ilk bölümün cevaplarından sonra soruluyor
+
+**Durum:** OPEN\
+**Tür:** ORDERING\
+**PDF sayfası:** Basılı s. 250\
+**Bölüm:** Atasözleri ve anlamları\
+**İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Okuma ve Sanatın İşlevi
+
+### PDF / beklenen durum
+Kitaptaki çalışma atasözlerini bütün olarak değerlendirmeye açar; her grup için önce düşünme alanı, sonra cevap aşaması beklenir.
+
+### Sunumda gözlenen durum
+Bir kartta ilk yedi atasözünün cevapları gösteriliyor; ardından gelen kart kalan altı atasözünü öğrenciye soru olarak yöneltiyor.
+
+### Neden sorun
+Etkinliğin kalan kısmı, önceki cevaplar açıldıktan sonra geliyor; düşünme sırası ve soru-cevap düzeni bölünüyor.
+
+### Beklenen davranış
+Atasözleri küçük gruplar hâlinde sorulmalı ve her grubun cevabı sonraki tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 250'deki atasözü çalışmasını inceleyin.
+2. İlgili destede ilk yedi atasözünün cevap kartını ve hemen arkasından gelen kalan altı atasözü kartını açın.
+
+## ISSUE-079 — Yapı tablosunda sonraki aşama önceki cevapları ekrandan kaldırıyor
+
+**Durum:** OPEN\
+**Tür:** PROGRESSIVE_REVEAL\
+**PDF sayfası:** Basılı s. 256\
+**Bölüm:** Olay örgüsünün yapı unsurları\
+**İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Yapı, Anlatım ve Kültür
+
+### PDF / beklenen durum
+PDF, kişi, yer, zaman, çatışma ve dramatik akışın birlikte değerlendirilmesini gerektirir. Aşamalı doldurulan tabloda önceki cevapların görünür kalması beklenir.
+
+### Sunumda gözlenen durum
+İlk aşamada kişiler ve yer görünür; tıklayınca bu bilgiler kaybolup zaman gösteriliyor. Sonraki tıklamalar çatışma ve dramatik akışa geçiyor.
+
+### Neden sorun
+Öğretmen sonraki unsura geçerken önceki cevapları aynı ekranda tutamıyor; birikimli yapı incelemesi parçalanıyor.
+
+### Beklenen davranış
+Her aşamada önceki unsurlar ve cevaplar korunmalı, yeni unsur tıklamayla eklenmelidir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 256'daki yapı unsurları etkinliğini inceleyin.
+2. Sunum kartını açıp kişi/yer aşamasından zaman, çatışma ve dramatik akış aşamalarına ilerleyin.
+
+## ISSUE-080 — “Fark Edelim 2” kartı cevap ipuçlarıyla açılıyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 257–258\
+**Bölüm:** Monolog ve oyun kişisinin iç dünyası\
+**İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Yapı, Anlatım ve Kültür
+
+### PDF / beklenen durum
+Öğrenci, monoloğun ve karakterin iç dünyasının işlevini metin kanıtlarıyla açıklamalıdır.
+
+### Sunumda gözlenen durum
+“Fark Edelim 2” kartı açıldığında iki yanıt önerisi zaten görünür; tıklama daha uzun bir cevap açıklaması ekler.
+
+### Neden sorun
+Öğrenci görevi yanıtlamadan önce yorum yönleri verilmiştir.
+
+### Beklenen davranış
+İlk görünümde soru ve metin kanıtı görevi bulunmalı; yorum örnekleri tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 257–258'deki monolog etkinliğini inceleyin.
+2. Sunum destesindeki Fark Edelim 2 kartını ilk kez açın.
+
+## ISSUE-081 — Sınıflandırma cevapları açıldıktan sonra aynı altı cümle yeniden soruluyor
+
+**Durum:** OPEN\
+**Tür:** ORDERING\
+**PDF sayfası:** Basılı s. 258\
+**Bölüm:** Anlatım ve cümleleri sınıflandırma\
+**İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Yapı, Anlatım ve Kültür
+
+### PDF / beklenen durum
+PDF'deki 2/a etkinliğinde öğrenci altı cümlenin sınıflandırmasını yapar; her cümle cevabı kendi sorusunu izlemelidir.
+
+### Sunumda gözlenen durum
+İlk kartlarda altı cümlenin sınıflandırmaları üç aşamada açılıyor. Sonraki kartta aynı altı cümlenin sınıflandırılması yeniden öğrenciye soruluyor.
+
+### Neden sorun
+Sorular, yanıtları daha önce gösterildikten sonra tekrarlanıyor ve çalışma sırası tersine dönüyor.
+
+### Beklenen davranış
+Altı cümle soru aşamalarında sunulmalı, karşılık gelen sınıflandırmalar daha sonra açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 258'deki 2/a etkinliğini inceleyin.
+2. Sunumda sınıflandırma cevaplarını açın.
+3. Arkasından gelen kartta aynı altı cümlenin yeniden sorulduğunu doğrulayın.
+
+## ISSUE-082 — Altı kelimelik çalışmada ikinci grup ilk grubun anlamlarından önce açılıyor
+
+**Durum:** OPEN\
+**Tür:** PROGRESSIVE_REVEAL\
+**PDF sayfası:** Basılı s. 266–268\
+**Bölüm:** Merdiven metni / söz varlığı\
+**İlgili kayıt/etkinlik:** Merdiven — Söz Varlığı ve Metni Anlama
+
+### PDF / beklenen durum
+Öğrenci kelimeleri bağlamda tahmin eder, önce ilk grubun anlamlarını kontrol eder, sonra ikinci gruba geçer.
+
+### Sunumda gözlenen durum
+İlk üç kelimeden sonra tıklamayla ikinci üç kelime gösteriliyor; ilk grubun anlamları daha sonra geliyor.
+
+### Mevcut akış
+İlk 3 kelime → sonraki 3 kelime → ilk 3 anlam → sonraki 3 anlam
+
+### Beklenen akış
+İlk 3 kelime → ilk 3 anlam → sonraki 3 kelime → sonraki 3 anlam
+
+### Neden sorun
+İlk kelime grubunun cevap kontrolü yapılmadan sonraki grup gösteriliyor.
+
+### Yeniden üretme
+1. PDF'de basılı s. 266–268'deki söz varlığı çalışmalarını inceleyin.
+2. Sunumdaki altı kelimelik kartı açıp tüm aşamaları sırayla ilerletin.
+
+## ISSUE-083 — Karşılaştırma görevindeki iki alanın örnek cevapları ilk görünümde açık
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 275\
+**Bölüm:** Düşünelim, Paylaşalım 2/a\
+**İlgili kayıt/etkinlik:** Merdiven — Karakter, Çatışma ve Değerlendirme
+
+### PDF / beklenen durum
+Öğrenci iki alan için kendi karşılaştırma önerilerini metin ve oyun bağlamından üretmelidir.
+
+### Sunumda gözlenen durum
+Kart ilk açıldığında iki alan için yanıt önerileri görünür; tıklama daha kapsamlı açıklama ekler.
+
+### Neden sorun
+Görev, cevap fikirleri önceden gösterilerek başlatılıyor.
+
+### Beklenen davranış
+İlk görünümde karşılaştırma görevi kalmalı; örnek yanıt önerileri tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 275'teki Düşünelim, Paylaşalım 2/a görevini inceleyin.
+2. Sunum kartını ilk kez açın.
+
+## ISSUE-084 — Çatışma etkinliğinde iki cevap satırı soru aşamasında görünüyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 276–277\
+**Bölüm:** Çatışmalar ve alternatif kararlar\
+**İlgili kayıt/etkinlik:** Merdiven — Karakter, Çatışma ve Değerlendirme
+
+### PDF / beklenen durum
+Öğrenci çatışmaları ve karakterlerin farklı kararlarını karşılaştırmalı olarak belirlemelidir.
+
+### Sunumda gözlenen durum
+Çatışmalar kartı açıldığında iki cevap satırı zaten görünür. Tıklamalar karşı olgusal seçenekleri ekler.
+
+### Neden sorun
+İlk iki yanıt, öğrenci düşünmeden gösterilmektedir.
+
+### Beklenen davranış
+İlk görünümde çatışma sorusu ve doldurulacak alanlar yer almalı; cevap satırları öğretmen tıklamasıyla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 276–277'deki çatışma etkinliğini inceleyin.
+2. Çatışmalar kartını açın ve tıklama öncesindeki iki satırı gözlemleyin.
+
+## ISSUE-085 — Çatışma için karşı olgusal yanıtlar sonraki kartta yineleniyor
+
+**Durum:** OPEN\
+**Tür:** DUPLICATE_CONTENT\
+**PDF sayfası:** Basılı s. 276–277\
+**Bölüm:** Karakterin başka seçimler yapması\
+**İlgili kayıt/etkinlik:** Merdiven — Karakter, Çatışma ve Değerlendirme
+
+### PDF / beklenen durum
+Çatışma kartı ile takip sorusu farklı düşünme adımları sunmalıdır; aynı karşı olgusal seçenekler tek kez yer almalıdır.
+
+### Sunumda gözlenen durum
+Çatışmalar kartında tıklamayla açılan iki alternatif karar, hemen sonraki kartta yeniden gösterilir.
+
+### Neden sorun
+Aynı iki yanıt ardışık sunum kartlarında yineleniyor ve yeni bir değerlendirme adımı eklemiyor.
+
+### Beklenen davranış
+Karşı olgusal seçenekler bir kez gösterilmeli; takip kartı varsa farklı bir gerekçelendirme veya değerlendirme istemelidir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 276–277'deki çatışma etkinliğini inceleyin.
+2. Sunumda Çatışmalar kartındaki cevapları açın.
+3. Bir sonraki kartta aynı karşı olgusal seçeneklerin tekrarlandığını doğrulayın.
+
+## ISSUE-086 — Yedi maddelik çalışma cevap açılmadan iki gruba bölünüyor
+
+**Durum:** OPEN\
+**Tür:** PROGRESSIVE_REVEAL\
+**PDF sayfası:** Basılı s. 278\
+**Bölüm:** Disiplin ve insan ilişkileri tablosu\
+**İlgili kayıt/etkinlik:** Merdiven — Karakter, Çatışma ve Değerlendirme
+
+### PDF / beklenen durum
+Öğrenci tablo maddelerini küçük gruplar hâlinde değerlendirip ilk grubun yanıtlarını kontrol ettikten sonra sonraki gruba geçmelidir.
+
+### Sunumda gözlenen durum
+İlk dört madde gösteriliyor; bir tıklamada kalan üç madde, ilk dördünün cevapları açılmadan ekleniyor.
+
+### Mevcut akış
+İlk 4 madde → sonraki 3 madde → cevap aşamaları
+
+### Beklenen akış
+İlk 4 madde → ilk 4 cevabı aç → sonraki 3 madde → sonraki 3 cevabı aç
+
+### Yeniden üretme
+1. PDF'de basılı s. 278'deki tablo etkinliğini inceleyin.
+2. Sunum kartını açın ve ilk tıklamanın kalan üç maddeyi cevaptan önce gösterdiğini doğrulayın.
+
+## ISSUE-087 — Sekiz karakter özelliği sorusu cevaplardan önce iki grup olarak veriliyor
+
+**Durum:** OPEN\
+**Tür:** PROGRESSIVE_REVEAL\
+**PDF sayfası:** Basılı s. 278–279\
+**Bölüm:** Karakter özelliklerini metin örnekleriyle eşleştirme\
+**İlgili kayıt/etkinlik:** Merdiven — Karakter, Çatışma ve Değerlendirme
+
+### PDF / beklenen durum
+Öğrenci karakter özelliklerini ve metin örneklerini küçük gruplar hâlinde eşleştirip her grubun cevabını kontrol etmelidir.
+
+### Sunumda gözlenen durum
+İlk dört istem açılır, sonraki tıklamalarda ikinci dört istem cevaplar açılmadan gösterilir; cevaplar daha sonraki aşamalardadır.
+
+### Mevcut akış
+İlk 4 istem → sonraki 4 istem → cevap aşamaları
+
+### Beklenen akış
+İlk 4 istem → ilk 4 cevabı aç → sonraki 4 istem → sonraki 4 cevabı aç
+
+### Yeniden üretme
+1. PDF'de basılı s. 278–279'daki karakter özellikleri etkinliğini inceleyin.
+2. Sunum kartını ilk açılıştan tüm cevap aşamalarına kadar ilerletin.
+
+## ISSUE-088 — Uzamın rolünü sorgulayan kart cevap ölçütleriyle açılıyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 280\
+**Bölüm:** Rol yaratmada uzamın işlevi\
+**İlgili kayıt/etkinlik:** Tiyatro Metnini Canlandırma — Konuşma Atölyesi
+
+### PDF / beklenen durum
+Öğrenci uzamın rol yaratmaya etkisini kendi açıklamasıyla değerlendirmelidir.
+
+### Sunumda gözlenen durum
+Kart ilk açıldığında yanıt ölçütü olarak kullanılabilecek dört madde listelenir.
+
+### Neden sorun
+Değerlendirme ölçütleri öğrenci düşünmeden önce cevap yönünü verir.
+
+### Beklenen davranış
+İlk görünümde görev gösterilmeli; dört ölçüt cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 280'deki rol ve uzam etkinliğini inceleyin.
+2. Sunumdaki Rol Yaratmada Uzamın İşlevi kartını açın.
+
+## ISSUE-089 — Konuşmayı yönetme sorusu dört cevap ipucuyla açılıyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 280\
+**Bölüm:** Konuşmayı Yönetebilme 2\
+**İlgili kayıt/etkinlik:** Tiyatro Metnini Canlandırma — Konuşma Atölyesi
+
+### PDF / beklenen durum
+Öğrenci konuşmayı etkili kılacak yolları belirleyip gerekçelendirmelidir.
+
+### Sunumda gözlenen durum
+İlk görünümde görevle beraber dört yanıt ipucu bulunur; tıklama daha uzun bir cevap açar.
+
+### Neden sorun
+Yanıtın ana başlıkları tıklamadan önce sunulmaktadır.
+
+### Beklenen davranış
+İlk aşamada yalnızca soru bulunmalı; yanıt ipuçları öğretmen tıklamasıyla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 280'deki Konuşmayı Yönetebilme görevini inceleyin.
+2. Sunumdaki 2. konuşma kartını açın.
+
+## ISSUE-090 — Söz, alt metin ve uzam tanımları cevap öncesinde açık
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 280\
+**Bölüm:** Alt metin ve uzam\
+**İlgili kayıt/etkinlik:** Tiyatro Metnini Canlandırma — Konuşma Atölyesi
+
+### PDF / beklenen durum
+Öğrenci söz, alt metin ve uzam kavramlarını sahne örneğinde ayırt etmelidir.
+
+### Sunumda gözlenen durum
+Kart açıldığında söz, alt metin ve uzam için tanımlar görevle birlikte görünür.
+
+### Neden sorun
+Kavramları ayırt etme görevi, kavramsal cevaplar açılmadan önce sunulmuyor.
+
+### Beklenen davranış
+İlk görünümde sahne/görev yer almalı; tanımlar cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 280'deki kavram çalışmasını inceleyin.
+2. Sunum kartını açıp tanımların ilk görünümde bulunduğunu doğrulayın.
+
+## ISSUE-091 — Dinleme sorularının ilk iki kartında cevap ipuçları önceden görünüyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 284–290\
+**Bölüm:** Anadolu İnsanı / Fedakârlık — dinleme ve anlama\
+**İlgili kayıt/etkinlik:** Soru 1 ve Soru 2
+
+### PDF / beklenen durum
+Öğrenci videoya dayalı soruları izleme ve metin kanıtları üzerinden yanıtlamalıdır. Video doğrulanamadığı için içerik cevabı değerlendirmesi sınırlıdır; soru kartlarında cevap gösterilmeden önce düşünme alanı kalmalıdır.
+
+### Sunumda gözlenen durum
+Soru 1 ve Soru 2 kartlarının ilk görünümünde cevap yönünü veren öğretmen yanıtları yer alır.
+
+### Neden sorun
+Öğrenci video kanıtı oluşturmadan önce yorum iskeletini görmektedir.
+
+### Beklenen davranış
+İlk görünümde soru ve kanıt toplama görevi gösterilmeli; yorum örnekleri cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 284–290'daki dinleme sorularını ve QR yönlendirmelerini inceleyin.
+2. Anadolu İnsanı / Fedakârlık destesindeki Soru 1 ve Soru 2 kartlarını ilk kez açın.
+
+### Not
+Anadolu İnsanı ve Çalışkanlık QR videoları açılmadığından video içeriğine ilişkin bağımsız cevap doğrulaması yapılmadı.
+
+## ISSUE-092 — Dil işlevlerini belirleme sorusu kategorileri önceden gösteriyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 295\
+**Bölüm:** Dilin işlevleri\
+**İlgili kayıt/etkinlik:** Anadolu İnsanı / Fedakârlık — Çözümleme ve Değerlendirme, Soru 7
+
+### PDF / beklenen durum
+Öğrenci örneklerden hareketle dilin hangi işlevlerde kullanıldığını belirlemelidir.
+
+### Sunumda gözlenen durum
+İlk görünümde “bilgi verme/açıklama”, “duygu/tutum bildirme”, “düşündürme/yönlendirme” ve “kişiler arası iletişim” kategorileri görünür. Tıklama aşamasında altı dil işlevinin adları açılır.
+
+### Neden sorun
+Öğrenci sınıflandırma yapmadan önce dört yanıt kategorisi verilmiştir.
+
+### Beklenen davranış
+İlk aşamada metin örnekleri ve görev gösterilmeli; dil işlevleri cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 295'teki dil işlevleri sorusunu inceleyin.
+2. Sunumdaki Soru 7 kartını açıp tıklama öncesi kategorileri kontrol edin.
+
+## ISSUE-093 — Öz değerlendirme kartında örnek hedef ilk görünümde veriliyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 297\
+**Bölüm:** Tema çalışmasını değerlendirme\
+**İlgili kayıt/etkinlik:** Anadolu İnsanı / Fedakârlık — Çözümleme ve Değerlendirme, son kart
+
+### PDF / beklenen durum
+Öğrenci çalışmasını değerlendirmeli ve kendi sonraki adımını belirlemelidir.
+
+### Sunumda gözlenen durum
+Kartın ilk görünümünde örnek hedef olarak “olgu ile yorumu ayrı not etmek” ve akran geri bildirimi kontrolü görünür.
+
+### Neden sorun
+Öz değerlendirmede üretilecek hedef ve ölçüt, öğrencinin kendi değerlendirmesinden önce örnek cevap biçiminde sunulur.
+
+### Beklenen davranış
+İlk görünümde öz değerlendirme görevi kalmalı; örnek hedef tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 297'deki değerlendirme görevini inceleyin.
+2. Sunum destesinin son kartını açın.
+
+## ISSUE-094 — Afiş çalışmasının kişisel hedef kartında örnek hedef baştan açık
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 299–302\
+**Bölüm:** Afiş yazma ve akran geri bildirimi\
+**İlgili kayıt/etkinlik:** Fedakârlık Belgeseli — Afiş Yazma Atölyesi, son kart
+
+### PDF / beklenen durum
+Öğrenci kendi afiş çalışmasını değerlendirmeli ve geliştirme hedefini kendisi belirlemelidir.
+
+### Sunumda gözlenen durum
+İlk görünümde örnek kişisel hedef (“ana iletiyi tasarımdan önce tek cümlede netleştirmek”) ve akran geri bildirimi kontrolü görünür.
+
+### Neden sorun
+Öz değerlendirme cevabı öğrencinin üretmesi beklenmeden örnek olarak gösterilir.
+
+### Beklenen davranış
+İlk aşamada kişisel hedef görevi gösterilmeli; örnek hedef cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 299–302'deki afiş yazma ve değerlendirme çalışmalarını inceleyin.
+2. Afiş Yazma Atölyesi destesinin son kartını açın.
+
+## ISSUE-095 — Afiş sloganı için kelime sayısı kaynakla çelişiyor
+
+**Durum:** OPEN\
+**Tür:** SOURCE_MISMATCH\
+**PDF sayfası:** Basılı s. 298\
+**Bölüm:** Afiş sloganı\
+**İlgili kayıt/etkinlik:** Fedakârlık Belgeseli — Afiş Yazma Atölyesi, 6. kart ve rubrik kartı
+
+### PDF / beklenen durum
+PDF sloganın üç, dört ya da beş sözcükten oluşmasını ister. Bağımsız değerlendirmede kaynak ölçütü 3–5 sözcüktür.
+
+### Sunumda gözlenen durum
+6. kartta slogan için 3–6 sözcük aralığı yazıyor; ilerideki rubrik kartı 3–5 sözcük diyor.
+
+### Neden sorun
+Aynı sunum destesindeki yönerge ve değerlendirme ölçütü birbirini tutmuyor; 6 sözcüklü slogan yönergeye göre kabul edilirken rubriğe göre kapsam dışıdır.
+
+### Beklenen davranış
+Sunumun tüm aşamalarında PDF'deki 3–5 sözcük ölçütü aynı biçimde kullanılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 298'deki slogan yönergesini okuyun.
+2. Afiş destesinin 6. kartındaki kelime sınırını ve rubrik kartındaki sınırı karşılaştırın.
+
+## ISSUE-096 — Soru 1'den önceki okuma kartı cevap iskeletini veriyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 303\
+**Bölüm:** Doğu–Batı sentezi ve kültürel özellikler\
+**İlgili kayıt/etkinlik:** 4. Tema — Ölçme ve Değerlendirme, ilk okuma kartı ve Soru 1
+
+### PDF / beklenen durum
+Öğrenci önce metinleri okumalı, ardından Batılı tiyatro biçimi ile Doğulu/Türk kültürel özelliklerinin nasıl birleştiğini Soru 1'de açıklamalıdır.
+
+### Sunumda gözlenen durum
+Soru 1'den önceki okuma/yönerge kartının ilk görünümünde “ağalar, dinî söyleyiş, atasözü ve şehitlik” gibi doğrudan cevapta kullanılabilecek örnekler yer alır.
+
+### Neden sorun
+Soru henüz açılmadan cevapta kullanılacak yerel kültür göstergeleri listelenmiştir.
+
+### Bağımsız değerlendirme
+PDF metninde Batılı tiyatro biçiminin yerel kültür ve söyleyiş unsurlarıyla birleşmesi beklenir; örnek göstergeler metnin kendi söz ve olaylarından seçilmelidir.
+
+### Beklenen davranış
+Okuma kartı metne yönlendirmeli; cevap örnekleri Soru 1'in cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 303'teki metni inceleyin.
+2. Soru 1 kartından önce gelen okuma kartını ilk kez açın.
+
+## ISSUE-097 — Çadır sorusu duygusal cevap örneklerini ilk görünümde gösteriyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 304–305\
+**Bölüm:** Çadır ve metnin iletisi\
+**İlgili kayıt/etkinlik:** 4. Tema — Ölçme ve Değerlendirme, Soru 4
+
+### PDF / beklenen durum
+Öğrenci çadırın içine hangi duyguyu katacağını seçmeli ve seçimini metin ayrıntılarıyla gerekçelendirmelidir.
+
+### Sunumda gözlenen durum
+Soru ilk açıldığında “umut, sevgi, güven, merhamet” gibi olası yanıtlar ipucu olarak görünür.
+
+### Neden sorun
+Öğrencinin üretmesi beklenen duygu seçenekleri cevap tıklanmadan veriliyor.
+
+### Bağımsız değerlendirme
+Metindeki ortak gelecek, kardeşlik ve okul/oyun/ders ayrıntıları olumlu bir duygu yorumunu destekler; farklı ve metne dayalı seçimler de kabul edilebilir.
+
+### Beklenen davranış
+İlk görünümde soru ve gerekçelendirme koşulu gösterilmeli; örnek duygu seçenekleri tıklamayla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 304–305'teki çadır sorusunu ve dayanak metni inceleyin.
+2. Sunumda Soru 4 kartını ilk kez açın.
+
+## ISSUE-098 — Afiş görsellerini seçme sorusunda görsel seçenekler sunumda yok
+
+**Durum:** OPEN\
+**Tür:** MISSING_CONTENT\
+**PDF sayfası:** Basılı s. 305\
+**Bölüm:** Çadır metninin iletisini yansıtan afiş\
+**İlgili kayıt/etkinlik:** 4. Tema — Ölçme ve Değerlendirme, Soru 5
+
+### PDF / beklenen durum
+PDF sorusu, basılı s. 305'teki dört görsel arasından metnin iletisini yansıtanları seçtirir: çiçekli dal, apartman, ebeveyn/çocuk sahnesi ve yangınla mücadele görseli.
+
+### Sunumda gözlenen durum
+İlk görünümde yalnızca hangi görsellerin seçileceği soruluyor. Cevap aşaması görsel 1–4'ü sözel olarak tarif ediyor; sunum kartında dört görselin kendisi bulunmuyor.
+
+### Neden sorun
+Yansıtılan sunumda öğrencinin karşılaştırıp seçmesi gereken görsel seçenekler görülemiyor; yalnız numara ve açıklamalara dayanarak kaynak etkinliği yapmak mümkün değil.
+
+### Beklenen davranış
+PDF'deki dört görsel sunumda seçenek olarak gösterilmeli ve cevap aşamasında seçim gerekçesi açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 305'teki dört afiş görselini inceleyin.
+2. Sunumda Soru 5'i açıp görsel seçeneklerin ilk ve cevap aşamalarında bulunmadığını doğrulayın.
+
+## ISSUE-099 — Çoktan seçmeli Soru 11'in kökü ve seçenekleri sunumda eksik
+
+**Durum:** OPEN\
+**Tür:** INCOMPLETE_CONTENT\
+**PDF sayfası:** Basılı s. 307\
+**Bölüm:** 2005–2025 belgesel izleme mecraları\
+**İlgili kayıt/etkinlik:** 4. Tema — Ölçme ve Değerlendirme, Soru 11
+
+### PDF / beklenen durum
+PDF'de Elif'in tabloya dayalı çıkarımını soran çoktan seçmeli kök ve A–E seçenekleri bulunur; öğrenci bu seçeneklerden birini belirlemelidir.
+
+### Sunumda gözlenen durum
+Kart yalnızca tabloyu yorumlama yönergesini ve sayısal tabloyu gösteriyor. Cevap açılınca “Doğru seçenek: B” deniyor; çoktan seçmeli soru kökü ve seçenekler sunumda yok.
+
+### Neden sorun
+Öğrenci sunum ekranında hangi önermeyi seçeceğini göremiyor; yalnızca harf cevabı veriliyor.
+
+### Bağımsız değerlendirme
+Tablo, izleme mecralarının 2005–2025 arasında değiştiğini ve dijital mecraların ağırlık kazandığını destekler; PDF'deki doğru seçenek B'dir.
+
+### Beklenen davranış
+PDF'deki tam soru kökü ve seçenekler cevap öncesi gösterilmeli; doğru seçenek öğretmen tıklamasıyla açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 307'deki Soru 11'i ve tabloyu inceleyin.
+2. Sunumdaki Soru 11 kartını açıp ilk görünümü ve cevap aşamasını karşılaştırın.
+
+## ISSUE-100 — Teknoloji sorusunun beklenen yönü ipucu olarak veriliyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 307\
+**Bölüm:** Teknolojik gelişmelerin belgesel etkisi\
+**İlgili kayıt/etkinlik:** 4. Tema — Ölçme ve Değerlendirme, Soru 12
+
+### PDF / beklenen durum
+Öğrenci teknolojinin belgeselin etkisini güçlendirip güçlendirmediğini metne göre tartışmalı ve gerekçelendirmelidir.
+
+### Sunumda gözlenen durum
+İlk görünümde şu yönlendirme verilir: “Dijital üretim, kurgu ve erişim imkânlarını metinle gerekçelendirin; teknolojinin tek başına nitelikli/güvenilir içerik garantisi olmadığını da tartışabilirsiniz.”
+
+### Neden sorun
+Yönerge, iki temel argüman yönünü ve karşı sınırlamayı cevap açılmadan sunuyor.
+
+### Beklenen davranış
+İlk aşamada yalnızca tartışma sorusu ve kanıt gereği bulunmalı; argüman örnekleri cevap aşamasında açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 307'deki Soru 12'yi inceleyin.
+2. Sunum kartını ilk kez açın ve yönlendirmenin tıklama öncesinde göründüğünü doğrulayın.
+
+## ISSUE-101 — Aidiyet sorusunun ilk görünümü cevap etkenlerini sıralıyor
+
+**Durum:** OPEN\
+**Tür:** PRESENTATION_FLOW\
+**PDF sayfası:** Basılı s. 307\
+**Bölüm:** Aidiyet videosu / yaşanılan yere aidiyet\
+**İlgili kayıt/etkinlik:** 4. Tema — Ölçme ve Değerlendirme, Soru 14
+
+### PDF / beklenen durum
+Öğrenci aidiyet duygusunun nedenlerini videodan örneklerle çıkarmalı ve somut kanıtla gerekçelendirmelidir.
+
+### Sunumda gözlenen durum
+İlk görünümde “Yer, ilişki, kültür, emek, anı ve kabul görme gibi kavramları açıklayabilirsiniz” ipucu veriliyor. Cevap aşaması ise video etkeni ve video kanıtı için boş çalışma alanları sunuyor.
+
+### Neden sorun
+Soruya yanıt verirken kullanılacak ana etken kategorileri, öğrenci video kanıtını incelemeden önce listelenmiş.
+
+### Beklenen davranış
+İlk görünümde soru ve videodan kanıt bulma görevi yer almalı; olası etkenler cevap tıklamasından sonra açılmalıdır.
+
+### Yeniden üretme
+1. PDF'de basılı s. 307'deki Aidiyet QR yönlendirmesini ve 13–14. soruları inceleyin.
+2. Sunumda Soru 14'ü ilk kez açın.
+3. Tıklamayla cevap aşamasına geçip alanların video kanıtı için boş bırakıldığını gözlemleyin.
+
+### Not
+Aidiyet videosu açılmadığından videoda geçen somut örnekler doğrulanamadı; burada raporlanan sorun, ilk görünümdeki cevap ipucudur.
+
+## ISSUE-102 — Beş kelimenin cevap aşamaları önceki görev gruplarıyla eşleşmiyor
+
+**Durum:** OPEN\
+**Tür:** PROGRESSIVE_REVEAL\
+**PDF sayfası:** Basılı s. 287\
+**Bölüm:** Anadolu İnsanı / Fedakârlık söz varlığı\
+**İlgili kayıt/etkinlik:** Anadolu İnsanı / Fedakârlık — Dinleme ve Anlama, Söz Varlığımız
+
+### PDF / beklenen durum
+PDF'de beş kelime bağlam içinde anlamlandırılır. Öğrenci ilk üç kelimeyi tahmin edip anlamlarını kontrol etmeli, sonra kalan iki kelimeye geçmelidir.
+
+### Sunumda gözlenen durum
+İlk görev aşaması 1–3. kelimeleri (fedakârlık, hemzemin geçit, mesai), ikinci görev aşaması 4–5. kelimeleri (aksaklık, tahammül) gösteriyor. Cevap aşaması 1/3'te fedakârlık ve aksaklık; 2/3'te tahammül ve hemzemin geçit; 3/3'te mesai açıklanıyor.
+
+### Mevcut akış
+İlk 3 kelime → sonraki 2 kelime → fedakârlık ve aksaklık anlamları → tahammül ve hemzemin geçit anlamları → mesai anlamı
+
+### Beklenen akış
+İlk 3 kelime → bu 3 kelimenin anlamları → sonraki 2 kelime → bu 2 kelimenin anlamları
+
+### Neden sorun
+İkinci grup ilk grubun anlamları açılmadan gösteriliyor; cevap aşamalarındaki kelimeler de görev gruplarıyla aynı sırada değil. İlk gruptaki hemzemin geçit ve mesai cevapları, sonraki gruplara dağıtılmış.
+
+### Beklenen davranış
+Küçük kelime grubu ve onun anlamları birlikte bir aşama çifti oluşturmalı; sonraki gruba bu cevaplar açıldıktan sonra geçilmelidir.
+
+### Yeniden üretme
+1. PDF'de basılı s. 287'deki beş kelimelik çalışmayı inceleyin.
+2. Sunumda Söz Varlığımız kartını açın; ilk iki görev ve üç cevap aşamasını sırayla izleyin.
+3. Görev gruplarıyla her cevap aşamasında listelenen kelimeleri karşılaştırın.
+
+### Not
+Kelime açıklamalarının genel anlamları tutarlıdır; Anadolu İnsanı QR videosu doğrulanamadığından video bağlamındaki kullanımları ayrıca teyit edilemedi.
