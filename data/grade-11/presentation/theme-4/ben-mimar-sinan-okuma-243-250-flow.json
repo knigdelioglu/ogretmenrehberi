@@ -111,8 +111,15 @@
       "id": "s247-vocab",
       "source_record_id": "T04-S0011",
       "answer_id": "T4-P247-VOC01",
-      "layout": "structure",
+      "layout": "vocabulary",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 3
+        },
+        "answer_text": "end"
+      },
       "prompt": "Söz Varlığımız — Altı kelime ve kelime grubunun anlamını bağlamdan bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
@@ -245,12 +252,12 @@
         "lead": "Kitabın s.250 tablosunda her ifade için Evet/Hayır kararı verip somut gerekçe yazın.",
         "items": [
           "Acemi Ocağı",
-          "harabe",
-          "mimarbaşı",
-          "kervansaray",
-          "meşale",
-          "cami",
-          "fırsat gözlemek"
+          "sekiz bin kandil",
+          "Ağalar; şahit olun",
+          "fırsat gözlemek",
+          "medrese, han, kervansaray",
+          "meyvesini toplamak",
+          "bir ders gibi"
         ],
         "note": "Kelimenin eski görünmesi, tek başına dönemin toplumsal kurumunu veya yaşayışını yansıttığı anlamına gelmez."
       }
@@ -258,6 +265,7 @@
     {
       "id": "s250-social-table-rest",
       "source_record_id": "T04-S0015",
+      "answer_id": "T4-P250-TABLE01-REST",
       "layout": "structure",
       "density": "compact",
       "prompt": "Sosyal hayat tablosu — Kalan altı ifadeyi gerekçelendiriniz.",
@@ -265,12 +273,12 @@
       "content": {
         "lead": "Önceki ekrandaki aynı Evet/Hayır ölçütünü kullanarak tabloyu tamamlayın.",
         "items": [
-          "maddi ve manevi zenginlik",
-          "Tanrı evi",
-          "sabrımın meyvesini toplamak",
-          "padişah",
+          "meşale ışıkları",
           "tahta çıkmak",
-          "gemi"
+          "maddi ve manevi zenginlik",
+          "padişah",
+          "Tanrı evi",
+          "gemilere binmek; gölün doğu kıyısı"
         ],
         "note": "Deyim/mecaz ile dönemle ilişkili kurum, yönetim veya gündelik yaşam unsurlarını ayırın."
       }

@@ -210,10 +210,8 @@
       "content": {
         "lead": "İşlev adını videodan gerçek bir söz veya konuşma örneğiyle eşleştirin.",
         "items": [
-          "Bilgi verme / açıklama",
-          "Duygu ve tutum bildirme",
-          "Düşündürme / yönlendirme",
-          "Kişiler arası iletişim"
+          "Videodan gerçek bir söz veya yazı örneği seçiniz.",
+          "Seçtiğiniz örneğin hangi dil işlevini taşıdığını gerekçelendiriniz."
         ]
       }
     },
@@ -371,6 +369,7 @@
     {
       "id": "s297-next",
       "source_record_id": "T04-S0116",
+      "answer_id": "T4-P297-PERF03",
       "layout": "process",
       "density": "compact",
       "prompt": "Dinleme/izleme bloğunu kişisel bir hedefle kapatınız.",
@@ -380,15 +379,15 @@
         "sections": [
           {
             "title": "Hedef",
-            "body": "Örneğin olgu ile yorumu ayrı not etmek."
+            "body": "Kendi uygulanabilir hedefinizi yazınız."
           },
           {
             "title": "Uygulama",
-            "body": "İlk izleyiş bütünlük, ikinci izleyiş kanıt notu."
+            "body": "Hedefinizi bir sonraki izleme görevi için nasıl uygulayacağınızı belirtiniz."
           },
           {
             "title": "Kontrol",
-            "body": "Sonraki çalışmada hedefin gerçekleşip gerçekleşmediğini değerlendirmek."
+            "body": "Hedefinizi hangi gözlenebilir ölçütle kontrol edeceğinizi yazınız."
           }
         ]
       }

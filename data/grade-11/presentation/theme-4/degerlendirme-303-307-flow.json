@@ -19,11 +19,10 @@
       "prompt": "4. Tema Ölçme ve Değerlendirme — Modern Türk tiyatrosunda Doğu–Batı sentezi metinlerini okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "I. metindeki genel açıklama ile tiyatro parçasındaki biçim ve kültür unsurlarını ayrı ayrı belirleyin.",
+        "lead": "I. ve II. metinleri okuyup biçimsel ve kültürel unsurları metinden işaretleyin.",
         "items": [
-          "Batılı/modern tiyatro biçimi ve sahne düzeni",
-          "Geleneksel veya yerli kültürel unsurlar",
-          "Hitap, dinî söyleyiş, atasözü ve şehitlik gibi kültürel kavramlar"
+          "Metinden biçimsel bir tiyatro özelliği seçiniz.",
+          "Metinden yerli veya kültürel bir unsur seçiniz."
         ]
       }
     },
@@ -83,7 +82,7 @@
       "prompt": "Soru 4 — Çadırın içine hangi duyguyu katardınız? Metin ayrıntılarıyla gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Umut, sevgi, güven, merhamet veya başka bir duygu seçebilirsiniz; seçiminizi metindeki somut ayrıntılarla ilişkilendirin."
+        "lead": "Metindeki somut bir ayrıntıdan hareketle bir duygu seçin ve seçiminizi gerekçelendirin."
       }
     },
     {
@@ -96,7 +95,29 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Her görsel için 'ne görüyorum → metindeki hangi düşünceyle bağlantılı → afiş mesajını nasıl güçlendiriyor?' zincirini kurun.",
-        "note": "Tek zorunlu görsel seçimi yoktur; karşıtlık amacıyla seçilen görsel de açıkça gerekçelendirilmelidir."
+        "note": "Tek zorunlu görsel seçimi yoktur; karşıtlık amacıyla seçilen görsel de açıkça gerekçelendirilmelidir.",
+        "images": [
+          {
+            "src": "assets/theme4-p305-option-1.png",
+            "alt": "Görsel 1 — pembe çiçekli dal ve mavi gökyüzü",
+            "caption": "Görsel 1"
+          },
+          {
+            "src": "assets/theme4-p305-option-2.png",
+            "alt": "Görsel 2 — apartman binaları",
+            "caption": "Görsel 2"
+          },
+          {
+            "src": "assets/theme4-p305-option-3.png",
+            "alt": "Görsel 3 — açık havada birlikte vakit geçiren yetişkinler ve çocuklar",
+            "caption": "Görsel 3"
+          },
+          {
+            "src": "assets/theme4-p305-option-4.png",
+            "alt": "Görsel 4 — orman yangınına müdahale eden kişi",
+            "caption": "Görsel 4"
+          }
+        ]
       }
     },
     {
@@ -187,14 +208,15 @@
       "answer_id": "T4-P307-Q11",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Soru 11 — 2005–2025 belgesel izleme mecraları tablosunu yorumlayınız.",
+      "prompt": "Soru 11 — Elif, yaptığı araştırmalar sonucunda belgesel film izleme mecralarının yıllara göre kullanım oranlarıyla ilgili aşağıdaki istatistiksel sonuçlara ulaşmıştır. Elif, bu tablodaki verilerden hareketle aşağıdaki çıkarımlardan hangisini yapabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Televizyon, bilgisayar ve internet platformlarındaki oran değişimini doğrudan tablodan okuyun.",
         "items": [
           "2005: TV %70 / bilgisayar %20 / internet %10",
           "2015: TV %40 / bilgisayar %30 / internet %30",
-          "2025: TV %15 / bilgisayar %20 / internet %65"
+          "2025: TV %15 / bilgisayar %20 / internet %65",
+          "A) Televizyon, belgesel izlemek için hâlâ en etkili araçtır.\nB) Teknoloji, belgesel izleme biçimlerinin oranlarını değiştirmiştir.\nC) Belgesel filmler sadece genç kuşaklara hitap etmektedir.\nD) Belgesel film izleyicileri geleneksel yayın araçlarına bağlı kalmıştır.\nE) İnternet platformlarının etkisi 2005 yılından beri aynı kalmıştır."
         ]
       }
     },
@@ -207,7 +229,7 @@
       "prompt": "Soru 12 — Teknolojik gelişmeler belgeselin etkisini güçlendirmiş midir, zayıflatmış mıdır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dijital üretim, kurgu ve erişim imkânlarını metinle gerekçelendirin; teknolojinin tek başına nitelikli/güvenilir içerik garantisi olmadığını da tartışabilirsiniz."
+        "lead": "Görüşünüzü metindeki üretim, anlatım veya erişim ayrıntılarından somut dayanaklarla gerekçelendirin."
       }
     },
     {
@@ -243,7 +265,7 @@
       "prompt": "Soru 14 — Bir kişinin yaşadığı yere aidiyet duygusu geliştirmesi nelere bağlıdır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yer, ilişki, kültür, emek, anı ve kabul görme gibi kavramları açıklayabilirsiniz; videoya dayalı örneği gerçek Aidiyet görüntüsünden seçin.",
+        "lead": "Video örneklerinden hareketle aidiyet duygusunun hangi koşullarla ilişkili olduğunu açıklayın; her iddianızı gerçek bir kanıtla destekleyin.",
         "note": "Kavramsal açıklama yapılabilir; video örneği uydurulmaz."
       }
     }

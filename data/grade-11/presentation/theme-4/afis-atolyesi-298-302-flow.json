@@ -104,7 +104,7 @@
         "sections": [
           {
             "title": "Slogan",
-            "body": "3–6 sözcük, kısa ve akılda kalıcı."
+            "body": "3–5 sözcük, kısa ve akılda kalıcı."
           },
           {
             "title": "Görsel",
@@ -329,6 +329,7 @@
     {
       "id": "s302-next",
       "source_record_id": "T04-S0129",
+      "answer_id": "T4-P302-PERF07",
       "layout": "process",
       "density": "compact",
       "prompt": "Tema sonu günlüğünden sonraki kişisel hedefinizi belirleyiniz.",
@@ -338,15 +339,15 @@
         "sections": [
           {
             "title": "Hedef",
-            "body": "Örneğin ana iletiyi tasarımdan önce tek cümlede netleştirmek."
+            "body": "Bir sonraki yazma veya konuşma göreviniz için tek bir gözlenebilir hedef yazınız."
           },
           {
             "title": "Uygulama",
-            "body": "İlk taslağa başlamadan 3 kısa mesaj seçeneği üretmek."
+            "body": "Hedefinizi görevin hangi aşamasında uygulayacağınızı belirtiniz."
           },
           {
             "title": "Kontrol",
-            "body": "Akran geri bildiriminde mesajın ilk bakışta anlaşılması."
+            "body": "Hedefinizin gerçekleştiğini hangi ölçütle kontrol edeceğinizi yazınız."
           }
         ]
       }

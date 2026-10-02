@@ -5,31 +5,12 @@
   "lesson_slug": "huzur-yapi-uslup-186-188",
   "title": "Huzur — Yapı ve Üslup",
   "subtitle": "Yaşamın İzinde · Kahramanın dili / Çözümleyebilme",
-  "printed_page_range": "185-188",
+  "printed_page_range": "186-188",
   "required_source_range": {
-    "from": "T03-S0038",
+    "from": "T03-S0039",
     "to": "T03-S0045"
   },
   "steps": [
-    {
-      "id": "s185-voice-choice",
-      "source_record_id": "T03-S0038",
-      "layout": "structure",
-      "density": "compact",
-      "prompt": "Sıra Sizde 3 (basılı s.185) — Yakın bulduğunuz kahramanın konuşmasını kendi günlük dilinizle karşılaştırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "answer_id": "T3-P185-PERF01",
-      "content": {
-        "lead": "Mümtaz veya Nuran’ı seçin. Doğrudan konuşması gösterilmeyen kişilere üslup uydurmayın; kendi günlük söyleyişinizle romandaki söz varlığı ve cümle yapısı arasındaki farkı belirleyin.",
-        "items": [
-          "Kahraman ve neden yakın bulduğunuz",
-          "Metindeki konuşma biçimi ve örnek",
-          "Günlük hayatta aynı düşünceyi nasıl söylersiniz?",
-          "Farkın gerekçesi"
-        ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrenci Mümtaz yerine Nuran'ı da seçebilir; ancak metinde doğrudan konuşması bulunmayan kişilere (İhsan, Suat vb.) yapay bir üslup atfedilmemelidir. Öğrencinin gündelik dilini onun yerine dikte etmeyin; aradaki söz varlığı ve cümle yapısı farkını keşfetmesini sağlayın."
-      }
-    },
     {
       "id": "s186-voice-model",
       "source_record_id": "T03-S0038",

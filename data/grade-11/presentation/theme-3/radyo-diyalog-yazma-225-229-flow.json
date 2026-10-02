@@ -19,21 +19,11 @@
       "prompt": "Yazmayı Yönetebilme — Radyo oyununun tür özelliklerini kitap metninden belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.225'teki Radyo Oyununun Özellikleri metnini okuyun; görüntü yerine ses, söz, müzik ve efektin hangi görevi üstlendiğini düşünün.",
-        "sections": [
-          {
-            "title": "Diyalog",
-            "body": "Kişiler ve çatışma konuşmalar üzerinden izlenir."
-          },
-          {
-            "title": "Ses dünyası",
-            "body": "Müzik ve efekt mekân veya zaman geçişine işaret edebilir."
-          },
-          {
-            "title": "Yazma görevi",
-            "body": "Kaydı dinlerken seçtiğiniz diyaloğu başka bir türe dönüştürün; kaynakta olmayan diyaloğu icat etmeyin."
-          }
-        ]
+        "lead": "Basılı s.225'teki Radyo Oyununun Özellikleri metnini okuyun; görüntü yerine ses, söz, müzik ve efektin hangi görevi üstlendiğini düşünün."
+      },
+      "answer_id": "T3-P225-REF01",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {

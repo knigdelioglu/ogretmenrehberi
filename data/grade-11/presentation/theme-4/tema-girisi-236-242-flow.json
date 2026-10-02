@@ -14,26 +14,13 @@
     {
       "id": "s236-map",
       "source_record_id": "T04-S0001",
+      "answer_id": "T4-P236-MAP01",
       "layout": "reference",
       "density": "compact",
       "prompt": "4. Tema — Hayatın Aynası: Bu temada hangi metinleri ve becerileri işleyeceğiz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Temanın basılı s.236 çerçevesine bakın. Okuma, dinleme/izleme, konuşma ve yazma görevlerini ayırın.",
-        "sections": [
-          {
-            "title": "Okuma",
-            "body": "Ben, Mimar Sinan tiyatrosu ve Merdiven küçürek hikâyesi."
-          },
-          {
-            "title": "Dinleme / İzleme",
-            "body": "Anadolu İnsanı / Fedakârlık belgeseli."
-          },
-          {
-            "title": "Konuşma ve yazma",
-            "body": "Tiyatro canlandırması ve belgesel için özgün afiş."
-          }
-        ]
+        "lead": "Temanın basılı s.236 çerçevesine bakın. Bu temada hangi metinleri ve becerileri işleyeceğinizi kendiniz belirleyin."
       }
     },
     {
@@ -69,10 +56,10 @@
           },
           {
             "title": "Tema Sunusu",
-            "body": "Kitaptaki Tema Sunusu karekodunu bu aşamada açın. Sunu erişilemiyorsa beyit ve tema eşiği sorusu üzerinden devam edin."
+            "body": "Tema sunusundan temanın genel çerçevesini ve kazanımlarını inceleyiniz."
           }
         ],
-        "note": "PDF s.238 / basılı s.237'de hem Tema karekodu hem Tema Sunusu karekodu bulunur. Bu sayfada bağımsız kitap sorusu yoktur; kanonik cevap oluşturulmaz."
+        "note": "Öğretmen notu: Kitaptaki Tema Sunusu karekodunu bu aşamada açın. Sunu erişilemiyorsa beyit ve tema eşiği sorusu üzerinden devam edin. PDF s.238 / basılı s.237'de hem Tema karekodu hem Tema Sunusu karekodu bulunur."
       }
     },
     {
@@ -210,22 +197,13 @@
     {
       "id": "s240-fact-fiction",
       "source_record_id": "T04-S0008",
+      "answer_id": "T4-P240-FACT01",
       "layout": "comparison",
       "density": "compact",
       "prompt": "Bilgi görseli ile hayalî tiyatro konuşmasını ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metnin etkileyici olması için eklediğiniz sözler, kitapta doğrulanan olayları ve kişileri değiştirmesin.",
-        "sections": [
-          {
-            "title": "Bilgi görseli",
-            "body": "Kaynağın verdiği tarihî ve biyografik bilgiler."
-          },
-          {
-            "title": "Kurduğunuz hayalî metin",
-            "body": "Görseldeki verilerden hareketle kurulan yeni diyalog ve monolog."
-          }
-        ]
+        "lead": "Metnin etkileyici olması için eklediğiniz sözlerin kaynak bilgisi mi yoksa hayalî üretim mi olduğunu gerekçelendirerek sınıflandırınız."
       }
     },
     {

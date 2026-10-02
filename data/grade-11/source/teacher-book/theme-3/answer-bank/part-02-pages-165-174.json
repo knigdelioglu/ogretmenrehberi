@@ -115,24 +115,41 @@
       "explanation": "Metnin uzun betimlemeleri, düşünce bölümleri ve diyalogları bu stratejileri uygun hâle getirir."
     },
     {
-      "question_id": "T3-P172-VOC01",
-      "entry_type": "question_answer",
-      "printed_page": 172,
-      "question_no": "Söz Varlığımız 1-2",
-      "prompt_summary": "Huzur'daki dokuz kelimenin bağlamsal anlamları ve yerine kullanılabilecek sözcükler",
-      "answer": "Huzur kesitindeki dokuz kelimenin bağlamsal anlamları ve metindeki kullanıma uygun karşılıkları aşağıdadır.",
+      "question_id": "T3-P169-REF01",
+      "entry_type": "performance_support",
+      "printed_page": 169,
+      "question_no": "Mümtaz ve Nuran",
+      "prompt_summary": "Huzur — Mümtaz ve Nuran'ın geçmiş ile yeni hayat üzerine görüşlerini karşılaştırınız.",
       "answer_sections": {
-        "mustarip (muzdarip)": "Bağlamdaki olası anlam: acı/sıkıntı çeken. Öneri: acı çeken, dertli.",
-        "mahzen": "Temel anlamı kapalı/depo niteliğindeki yer; “iç mahzeniniz” sözünde kişinin iç dünyasının kuytu/derin tarafı için mecazlı kullanılmıştır. Öneri: iç derinlik, içteki kuytu yer.",
-        "cevher": "Bağlamda kişinin özü/asıl niteliği. Öneri: öz, maya.",
-        "yeis": "Bağlamda umutsuzluk ve karamsarlık. Öneri: umutsuzluk.",
-        "zarafet": "Bağlamda incelik ve hoşluk. Öneri: incelik, nezaket.",
-        "neşretmek": "Notaları yayımlamak/basılı olarak dolaşıma sokmak anlamında kullanılmıştır. Öneri: yayımlamak.",
-        "hulâsa (hülasa)": "Bağlamda “kısacası, özetle”. Öneri: kısacası, özetle.",
-        "muazzam": "Bağlamda çok büyük/değerli eserler için kullanılan güçlü bir niteleme. Öneri: çok büyük, görkemli.",
-        "cins": "“Bu cinsten insanlar” sözünde tür/çeşit anlamındadır. Öneri: bu türden, bu çeşit."
+        "Mümtaz": "Musiki, tarih ve şehir mirasını kimliğin kaynakları olarak görür.",
+        "Nuran": "Geçmişi sevse de yoksulluk, bakımsızlık ve bugünün ihtiyaçlarını hatırlatır.",
+        "Tartışma": "Yeni bir hayata yönelirken geçmişe dayanmak ne anlam taşır?"
       },
-      "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız"
+      "source_locator": "basılı s.169 — Mümtaz ve Nuran / örnek çözüm"
+    },
+    {
+      "question_id": "T3-P170-REF01",
+      "entry_type": "performance_support",
+      "printed_page": 170,
+      "question_no": "İhsan ve İstanbul",
+      "prompt_summary": "Huzur — İhsan'ın etkisini ve İstanbul'un sosyal görünümünü s.170'ten okuyunuz.",
+      "answer_sections": {
+        "İhsan": "Mümtaz’ın geçmiş ve kültür bağında İhsan’ın etkisini belirleyin.",
+        "Şehir ve insan": "Tarihî yapılarla toplumsal yoksulluk tasvirini ayırın."
+      },
+      "source_locator": "basılı s.170 — İhsan ve İstanbul / örnek çözüm"
+    },
+    {
+      "question_id": "T3-P171-REF01",
+      "entry_type": "performance_support",
+      "printed_page": 171,
+      "question_no": "Tanpınar ve Huzur",
+      "prompt_summary": "Tanpınar'ın kitapta verilen biyografisini Huzur ile ilişkilendiriniz (s.171).",
+      "answer_sections": {
+        "Kitaptaki biyografi": "Yahya Kemal–Ahmet Haşim etkisi; tarih, sanat ve musiki ilgisi.",
+        "Huzur’daki izler": "İstanbul, eski musiki, bireyin iç dünyası ve kültür gerilimi."
+      },
+      "source_locator": "basılı s.171 — Tanpınar ve Huzur / örnek çözüm"
     },
     {
       "question_id": "T3-P172-PERF01",
@@ -190,6 +207,51 @@
       ]
     },
     {
+      "question_id": "T3-P172-VOC01",
+      "entry_type": "question_answer",
+      "printed_page": 172,
+      "question_no": "Söz Varlığımız 1-2",
+      "prompt_summary": "Huzur'daki dokuz kelimenin bağlamsal anlamları ve yerine kullanılabilecek sözcükler",
+      "answer": "Huzur kesitindeki dokuz kelimenin bağlamsal anlamları ve metindeki kullanıma uygun karşılıkları aşağıdadır.",
+      "answer_sections": {
+        "mustarip (muzdarip)": "Bağlamdaki olası anlam: acı/sıkıntı çeken. Öneri: acı çeken, dertli.",
+        "mahzen": "Temel anlamı kapalı/depo niteliğindeki yer; “iç mahzeniniz” sözünde kişinin iç dünyasının kuytu/derin tarafı için mecazlı kullanılmıştır. Öneri: iç derinlik, içteki kuytu yer.",
+        "cevher": "Bağlamda kişinin özü/asıl niteliği. Öneri: öz, maya.",
+        "yeis": "Bağlamda umutsuzluk ve karamsarlık. Öneri: umutsuzluk.",
+        "zarafet": "Bağlamda incelik ve hoşluk. Öneri: incelik, nezaket.",
+        "neşretmek": "Notaları yayımlamak/basılı olarak dolaşıma sokmak anlamında kullanılmıştır. Öneri: yayımlamak.",
+        "hulâsa (hülasa)": "Bağlamda “kısacası, özetle”. Öneri: kısacası, özetle.",
+        "muazzam": "Bağlamda çok büyük/değerli eserler için kullanılan güçlü bir niteleme. Öneri: çok büyük, görkemli.",
+        "cins": "“Bu cinsten insanlar” sözünde tür/çeşit anlamındadır. Öneri: bu türden, bu çeşit."
+      },
+      "source_locator": "basılı s.172 / PDF s.173 — Söz Varlığımız"
+    },
+    {
+      "question_id": "T3-P173-REF01",
+      "entry_type": "performance_support",
+      "printed_page": 173,
+      "question_no": "Konusuna göre roman türleri I",
+      "prompt_summary": "Konusuna göre romanlar: biyografik, otobiyografik, sosyal, psikolojik, tarihî türleri ayırt ediniz (s.173).",
+      "answer_sections": {
+        "Biyografik / Otobiyografik": "Başkasının yaşamı ile yazarın kendi yaşantısının kurgulanması farkı.",
+        "Sosyal / Psikolojik": "Toplumsal sorunlarla bireyin iç dünyası arasındaki odak farkı.",
+        "Tarihî": "Tarihî kişi ve olayların kurmaca içindeki yeri."
+      },
+      "source_locator": "basılı s.173 — Konusuna göre roman türleri I / örnek çözüm"
+    },
+    {
+      "question_id": "T3-P173-REF02",
+      "entry_type": "performance_support",
+      "printed_page": 173,
+      "question_no": "Konusuna göre roman türleri II",
+      "prompt_summary": "Konusuna göre romanlar: macera, bilim kurgu, tezli ve fantastik türleri ayırt ediniz (s.173).",
+      "answer_sections": {
+        "Macera / Bilim kurgu": "Hareket ve merak ile bilim–teknoloji kurmacasını ayırın.",
+        "Tezli / Fantastik": "Bir görüşü savunma ile gerçeküstü evrenin kurulması arasındaki farkı gösterin."
+      },
+      "source_locator": "basılı s.173 — Konusuna göre roman türleri II / örnek çözüm"
+    },
+    {
       "question_id": "T3-P174-PERF01",
       "entry_type": "performance_support",
       "printed_page": 174,
@@ -205,6 +267,46 @@
         "uzun_cagrisimli_cumleler": "Özellikle betimlemelerde çok sayıda ayrıntı ve çağrışım uzun cümleler içinde birbirine bağlanır."
       },
       "source_locator": "basılı s.174-175 / PDF s.175-176 — Huzur Romanının Üslup Özellikleri"
+    },
+    {
+      "question_id": "T3-P174-REF01",
+      "entry_type": "performance_support",
+      "printed_page": 174,
+      "question_no": "Edebî akımlar I",
+      "prompt_summary": "Edebî akımına göre romanlar: klasik, romantik, realist ve natüralist (s.174).",
+      "answer_sections": {
+        "Klasik / Romantik": "Dönemini yansıtan yerleşik örneklik ile duygusal tepkileri öne çıkaran anlatım.",
+        "Realist / Natüralist": "Gerçekçi yansıtma ile bilimsel yönteme dayandırılmaya çalışılan anlatım."
+      },
+      "source_locator": "basılı s.174 — Edebî akımlar I / örnek çözüm"
+    },
+    {
+      "question_id": "T3-P174-REF02",
+      "entry_type": "performance_support",
+      "printed_page": 174,
+      "question_no": "Edebî akımlar II",
+      "prompt_summary": "Edebî akımına göre romanlar: modernist, varoluşçu ve postmodern (s.174).",
+      "answer_sections": {
+        "Modernist": "Bireyin iç dünyası, yabancılaşma ve geleneksel yapıdan uzaklaşma.",
+        "Varoluşçu": "Varoluş, özgürlük, sorumluluk ve bunalım.",
+        "Postmodern": "Kurmaca gerçeklik ve anlam çoğulluğu."
+      },
+      "source_locator": "basılı s.174 — Edebî akımlar II / örnek çözüm"
+    },
+    {
+      "question_id": "T3-P166-FLOW-S166_MEANING",
+      "entry_type": "performance_support",
+      "printed_page": 166,
+      "question_no": "Kelimelerin farklı cümlelerdeki anlam ve çağrışımlarını karşılaştırınız.",
+      "prompt_summary": "Kelimelerin farklı cümlelerdeki anlam ve çağrışımlarını karşılaştırınız.",
+      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Örnek çalışma": {
+          "Anlam": "Örneğin boğaz sözü bedendeki bölgeyi veya İstanbul Boğazı'nı karşılayabilir.",
+          "Yaşamdan iz": "Arkadaşınızın deneyimini cümlesinden kesin varsaymayın; kendisine sorarak açıklamasını dinleyin."
+        }
+      },
+      "source_locator": "basılı s.166 — Kelimelerin farklı cümlelerdeki anlam ve çağrışımlarını karşılaştırınız."
     }
   ]
 }

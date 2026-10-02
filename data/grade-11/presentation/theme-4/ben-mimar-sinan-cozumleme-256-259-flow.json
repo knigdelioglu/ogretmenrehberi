@@ -33,6 +33,13 @@
       "answer_id": "T4-P256-TABLE01",
       "layout": "structure",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 5
+        },
+        "answer_text": "end"
+      },
       "prompt": "Yapı unsurları — Kişi, mekân, zaman, çatışma ve dramatik örgüyü doldurunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
@@ -148,17 +155,7 @@
       "prompt": "Fark Edelim 2 — Monolog ve diyalog karakteri nasıl farklı yollarla tanıtır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yalnız konuşmacı sayısını söylemeyin; karakterin iç dünyası ile kişiler arası ilişkiyi karşılaştırın.",
-        "sections": [
-          {
-            "title": "Monoloğun işlevi",
-            "body": "Sinan'ın düşünce, heyecan ve öz değerlendirmesini doğrudan gösterir."
-          },
-          {
-            "title": "Diyaloğun işlevi",
-            "body": "Görev, beklenti, güven ve görüş ayrılıklarını karşılıklı sözler üzerinden görünür kılar."
-          }
-        ]
+        "lead": "Yalnız konuşmacı sayısını söylemeyin; karakterin iç dünyası ile kişiler arası ilişkiyi karşılaştırın."
       }
     },
     {
@@ -192,7 +189,6 @@
     {
       "id": "s258-grammar",
       "source_record_id": "T04-S0028",
-      "answer_id": "T4-P258-GRAM01",
       "layout": "structure",
       "density": "compact",
       "prompt": "Sıra Sizde 2/a — Verilen cümleleri dört yönden sınıflandırınız.",
@@ -211,6 +207,7 @@
     {
       "id": "s258-grammar-apply",
       "source_record_id": "T04-S0028",
+      "answer_id": "T4-P258-GRAM01",
       "layout": "process",
       "density": "compact",
       "prompt": "Dil bilgisi — Altı cümlede aynı sınıflandırma sırasını uygulayınız.",

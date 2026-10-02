@@ -90,21 +90,11 @@
       "prompt": "Üç örneğin ayrımını hangi özellik belirler?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki Bilgi Köşesi ve üç örneği esas alın.",
-        "sections": [
-          {
-            "title": "Bilgiye dayalı biyografi",
-            "body": "Yaşam çizgisi, görevler, eserler ve doğrulanabilir bilgiler öne çıkar."
-          },
-          {
-            "title": "Nekroloji",
-            "body": "Ölüm vesilesiyle kişiyi anma ve değerlendirme yönü belirgindir."
-          },
-          {
-            "title": "Biyografik roman",
-            "body": "Gerçek bir yaşamdan hareket eder; romanın anlatı ve kurgu imkânlarını kullanır."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P203-FLOW-S203_TYPES",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -150,18 +140,11 @@
       "prompt": "Karşılaştırma 1/2 — İçerik, tür, yapı ve dönem ölçütlerini doldurunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki karşılaştırma tablosunu iki sütun hâlinde ele alın.",
-        "sections": [
-          {
-            "title": "Huzur",
-            "body": "Kurmaca romanın kişiler, olaylar ve kültürel bağlamla kurduğu dünyadan kanıt gösterin."
-          },
-          {
-            "title": "Mehmet Âkif Ersoy",
-            "body": "Gerçek yaşam çizgisi, eser ve tarih bilgilerini kaynak olarak kullanın."
-          }
-        ],
-        "note": "Metnin yazıldığı dönem ile biyografide anlatılan kişinin yaşadığı dönemi aynı başlık gibi sunmayın."
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P204-FLOW-S204_Q1_FIRST",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -172,21 +155,11 @@
       "prompt": "Karşılaştırma 2/2 — Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki metnin benzer bir yaşam–kültür ilişkisini farklı anlatma yollarıyla kurabildiğini tartışın.",
-        "sections": [
-          {
-            "title": "Romanın yapısı",
-            "body": "Kişi, olay, mekân ve zaman kurmaca bir bütün oluşturur."
-          },
-          {
-            "title": "Biyografinin yapısı",
-            "body": "Merkez kişi, hayat olayları, tarih, eser ve görev bilgileri düzenlenir."
-          },
-          {
-            "title": "Ortak tartışma",
-            "body": "Kişi ve yaşadığı toplum arasındaki bağ iki metinde hangi farklı anlatımlarla görünür?"
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P204-FLOW-S204_Q1_SECOND",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -229,14 +202,11 @@
       "prompt": "Biyografide yaşam çizgisi: Olayları oluş sırasına yerleştiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metindeki olayları kaynak sayfadan doğrulayarak sıralayın; tarih verilmediyse tahmin etmeyin.",
-        "items": [
-          "Eğitim ve mesleğe başlangıç",
-          "Yayın hayatı ve eserler",
-          "Millî Mücadele ve İstiklâl Marşı",
-          "Mısır yılları ve son dönem"
-        ],
-        "note": "Hayat olayları ile eserler arasındaki ilişkiyi bir tarih ezberine indirgemeyin."
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P205-FLOW-S205_Q1_CHRONOLOGY",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -292,11 +262,10 @@
       "prompt": "Sıra Sizde 1 — Âsım'ın nesline duyulan güveni sayfadaki görsellerden hareketle yorumlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Görsellerin temsil ettiği emek, bilim ve üretim alanlarını söyleyin; bilmediğiniz teknik özellikler hakkında iddiada bulunmayın.",
+        "lead": "Görselleri basılı s.205’teki Âsım dizeleriyle ilişkilendirip her çıkarımınıza metin ve görsel dayanağı gösterin.",
         "items": [
           "KAAN ve TCG Anadolu",
-          "Göktürk-1 ve BİLSAT",
-          "Görsellerin ortak düşündürdüğü çalışma ve sorumluluk"
+          "Göktürk-1 ve BİLSAT"
         ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Güven güçlenerek sürüyor’, ‘teknoloji hamlesi bunu kanıtlar’, ‘bugünün Âsım nesli şudur’ gibi tek sonucu öğrenci adına vermeyin; görsellerin teknik özelliklerini de kaynak olmadan eklemeyin."
       }

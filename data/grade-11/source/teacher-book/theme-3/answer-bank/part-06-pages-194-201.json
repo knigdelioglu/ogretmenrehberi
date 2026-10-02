@@ -181,6 +181,218 @@
         "O kalemini millet ve memleket meselelerine hasretmiş bir sanatkârdır.",
         "sanat ve estetikten ödün vermemiştir"
       ]
+    },
+    {
+      "question_id": "T3-P194-FLOW-S194_TARIK",
+      "entry_type": "performance_support",
+      "printed_page": 194,
+      "question_no": "Tarık Buğra'nın biyografisinde hangi dönüm noktasına yer verilmiş?",
+      "prompt_summary": "Tarık Buğra'nın biyografisinde hangi dönüm noktasına yer verilmiş?",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Bir radyo programı üzerine aile ortamında başlayan iddianın ‘Arayan Bulur’ piyesine ve ilk telife dönüşmesi.",
+        "Çözüm": {
+          "Neden seçilmiş?": "Küçük bir olayın yazarın meslek yaşamında somut sonuç doğurduğunu gösterir."
+        }
+      },
+      "source_locator": "basılı s.194 — Tarık Buğra'nın biyografisinde hangi dönüm noktasına yer verilmiş?"
+    },
+    {
+      "question_id": "T3-P194-FLOW-S194_VEYSEL",
+      "entry_type": "performance_support",
+      "printed_page": 194,
+      "question_no": "Âşık Veysel'in yaşamında hangi kişi ve olay değişim yaratmış?",
+      "prompt_summary": "Âşık Veysel'in yaşamında hangi kişi ve olay değişim yaratmış?",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "1930'da Ahmet Kutsi Tecer'le tanışır; 1931'de Sivas Âşıklar Bayramı'na katılır ve ‘Halk Şairi’ belgesi sonrası farklı illerde şiir söyler.",
+        "Çözüm": {
+          "Neden seçilmiş?": "Sanatçının çevresiyle kurduğu bağ ve yeni imkânların biyografideki rolünü gösterir."
+        }
+      },
+      "source_locator": "basılı s.194 — Âşık Veysel'in yaşamında hangi kişi ve olay değişim yaratmış?"
+    },
+    {
+      "question_id": "T3-P196-FLOW-S196_ANTHEM",
+      "entry_type": "performance_support",
+      "printed_page": 196,
+      "question_no": "s.196 — Millî marş yarışmasına ilişkin anlatılan olay sırasını belirleyiniz.",
+      "prompt_summary": "s.196 — Millî marş yarışmasına ilişkin anlatılan olay sırasını belirleyiniz.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Yarışma ilanı → para ödülüne mesafeli duruş → ödülü almama şartıyla yazma → 1 Mart 1921 okuma → 12 Mart 1921 kabul.",
+        "Çözüm": {
+          "Olay sırası": "Mehmet Âkif’in İstiklâl Marşı’nı yazma sürecini ve bu sürecin koşullarını metindeki bilgilere göre inceleyin."
+        }
+      },
+      "source_locator": "basılı s.196 — s.196 — Millî marş yarışmasına ilişkin anlatılan olay sırasını belirleyiniz."
+    },
+    {
+      "question_id": "T3-P199-FLOW-S199_Q1_EVIDENCE",
+      "entry_type": "performance_support",
+      "printed_page": 199,
+      "question_no": "Soru 1 — Biyografinin verdiği eser–insan grubu örneklerini ayırınız.",
+      "prompt_summary": "Soru 1 — Biyografinin verdiği eser–insan grubu örneklerini ayırınız.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Çocuklar, yaşlılar ve toplumun diğer kesimleri için biyografide anılan eserleri inceleyin.",
+        "Çözüm": {
+          "Çocuklar": "‘Küfe’ ve ‘Hasta’. ",
+          "Yaşlılar": "‘Seyfi Baba’ ve ‘Yemişçi İhtiyar’. ",
+          "Duygunuz": "Yalnız eser adını tekrarlamayın; hangi insani durumu düşündürdüğünü söyleyin."
+        }
+      },
+      "source_locator": "basılı s.199 — Soru 1 — Biyografinin verdiği eser–insan grubu örneklerini ayırınız."
+    },
+    {
+      "question_id": "T3-P199-FLOW-S199_Q2_CONTEXT",
+      "entry_type": "performance_support",
+      "printed_page": 199,
+      "question_no": "Soru 2 — Şair için kullanılan nitelemeleri hangi metin bilgileri destekliyor?",
+      "prompt_summary": "Soru 2 — Şair için kullanılan nitelemeleri hangi metin bilgileri destekliyor?",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Yazarın nitelemesini tek bir bütün şiirler özeti gibi düşünmeyin.",
+        "Çözüm": {
+          "Toplumcu şair": "Çocuklar, yaşlılar ve toplumun sıkıntıları şiirlerde görünür.",
+          "Millî şair": "Millî Mücadele ve İstiklâl Marşı anlatısı.",
+          "İslâm şairi": "Biyografi yazarı dinî-hikemî şiirler ve İslâmî duyarlılıktan söz eder."
+        }
+      },
+      "source_locator": "basılı s.199 — Soru 2 — Şair için kullanılan nitelemeleri hangi metin bilgileri destekliyor?"
+    },
+    {
+      "question_id": "T3-P199-FLOW-S199_Q3_CHAIN",
+      "entry_type": "performance_support",
+      "printed_page": 199,
+      "question_no": "Soru 3 — Olayla yorumu birbirinden ayırınız.",
+      "prompt_summary": "Soru 3 — Olayla yorumu birbirinden ayırınız.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Metinde verilen sırayı izleyin. Kişinin iç niyeti hakkında metinde bulunmayan ayrıntıları kesin olay gibi yazmayın.",
+        "Örnekler": [
+          "Yarışmaya ve para ödülüne mesafeli duruş",
+          "İlk aşamada katılmama",
+          "Ödülü almama şartıyla şiiri yazmayı kabul etme",
+          "Şiirin Mecliste okunup kabul edilmesi"
+        ]
+      },
+      "source_locator": "basılı s.199 — Soru 3 — Olayla yorumu birbirinden ayırınız."
+    },
+    {
+      "question_id": "T3-P200-FLOW-S200_EDUCATORS",
+      "entry_type": "performance_support",
+      "printed_page": 200,
+      "question_no": "Fark Edelim — İki öğretmenin sayfada verilen bilgilerini ayırt ediniz.",
+      "prompt_summary": "Fark Edelim — İki öğretmenin sayfada verilen bilgilerini ayırt ediniz.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Şenay Aybüke Yalçın ve Necmettin Yılmaz’ın yaşamlarına ilişkin verilen tarih ve olay bilgilerini inceleyin; metinde yer almayan ayrıntıları eklemeyin.",
+        "Çözüm": {
+          "Şenay Aybüke Yalçın": "Atama: 2016. Metinde aktarılan olay tarihi: 9 Haziran 2017.",
+          "Necmettin Yılmaz": "Atama: 2016. Metinde aktarılan olay tarihi: 16 Haziran 2017."
+        }
+      },
+      "source_locator": "basılı s.200 — Fark Edelim — İki öğretmenin sayfada verilen bilgilerini ayırt ediniz."
+    },
+    {
+      "question_id": "T3-P200-FLOW-S200_OTHERS",
+      "entry_type": "performance_support",
+      "printed_page": 200,
+      "question_no": "Fark Edelim — Ferhat Gedik, Gülşah Güler ve anıtla ilgili gözlemleri ayırınız.",
+      "prompt_summary": "Fark Edelim — Ferhat Gedik, Gülşah Güler ve anıtla ilgili gözlemleri ayırınız.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Metindeki kısa biyografik bilgi ile anıt fotoğrafının temsil ettiği ortak anmayı birbirine karıştırmayın.",
+        "Çözüm": {
+          "Ferhat Gedik": "Kitap 11 Ağustos 2017'de Eren Bülbül'ü korurken hayatını kaybettiğini bildirir.",
+          "Gülşah Güler": "Kitap 15 Temmuz 2016 saldırısına ilişkin kısa bilgi verir.",
+          "Anıt": "Fotoğrafın altında ‘Vatan ve Millî Mücadele Anıtı — Azmi Sekban (Çanakkale)’ bilgisi bulunur."
+        }
+      },
+      "source_locator": "basılı s.200 — Fark Edelim — Ferhat Gedik, Gülşah Güler ve anıtla ilgili gözlemleri ayırınız."
+    },
+    {
+      "question_id": "T3-P201-FLOW-S201_CONTENT",
+      "entry_type": "performance_support",
+      "printed_page": 201,
+      "question_no": "Çalışma Kâğıdı — Konu, ana düşünce ve yazılma amacını ayırınız.",
+      "prompt_summary": "Çalışma Kâğıdı — Konu, ana düşünce ve yazılma amacını ayırınız.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Bu üç alan aynı cevabın üç farklı söylenişi değildir.",
+        "Çözüm": {
+          "Konu": "Akif'in yaşamı, eserleri ve toplumsal/edebî çalışmaları.",
+          "Ana düşünce": "Sanatçının hayatı ve eserleri yaşadığı toplum ve tarihî dönemle bağlantılıdır.",
+          "Amaç": "Okuru kişi, eserler ve edebî kişilik hakkında bilgilendirmek."
+        }
+      },
+      "source_locator": "basılı s.201 — Çalışma Kâğıdı — Konu, ana düşünce ve yazılma amacını ayırınız."
+    },
+    {
+      "question_id": "T3-P201-FLOW-S201_SUPPORT",
+      "entry_type": "performance_support",
+      "printed_page": 201,
+      "question_no": "Çalışma Kâğıdı — Yardımcı düşünceleri metnin hangi bölümleri destekliyor?",
+      "prompt_summary": "Çalışma Kâğıdı — Yardımcı düşünceleri metnin hangi bölümleri destekliyor?",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Eğitim/yayın, Millî Mücadele ve şiir anlayışı üç ayrı dayanak kümesidir.",
+        "Örnekler": [
+          "1893 öğrenim ve mesleğe başlangıç; 1908 yayın hayatı",
+          "1920 Millî Mücadele ve 1921 İstiklâl Marşı",
+          "Safahat kitapları ve toplumun farklı kesimleri"
+        ]
+      },
+      "source_locator": "basılı s.201 — Çalışma Kâğıdı — Yardımcı düşünceleri metnin hangi bölümleri destekliyor?"
+    },
+    {
+      "question_id": "T3-P201-FLOW-S201_METHOD",
+      "entry_type": "performance_support",
+      "printed_page": 201,
+      "question_no": "Çalışma Kâğıdı — Anlatım biçimleri ve düşünceyi geliştirme yollarını ayırınız.",
+      "prompt_summary": "Çalışma Kâğıdı — Anlatım biçimleri ve düşünceyi geliştirme yollarını ayırınız.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Açıklama/öyküleme metnin nasıl anlatıldığına; örnekleme, karşılaştırma ve sayısal veriler düşüncenin nasıl desteklendiğine ilişkindir.",
+        "Çözüm": {
+          "Anlatım biçimleri": "Öğrenim ve eserleri açıklama; Millî Mücadele olaylarını zamanla ilerleyerek öyküleme.",
+          "Düşünceyi geliştirme": "‘Küfe’/‘Hasta’ eser örnekleri; gençlik ve olgunluk şiirlerinin karşılaştırılması; tarihler, 500’er lira ödül gibi sayısal veriler."
+        }
+      },
+      "source_locator": "basılı s.201 — Çalışma Kâğıdı — Anlatım biçimleri ve düşünceyi geliştirme yollarını ayırınız."
+    },
+    {
+      "question_id": "T3-P201-FLOW-S201_MESSAGE",
+      "entry_type": "performance_support",
+      "printed_page": 201,
+      "question_no": "Çalışma Kâğıdı — Açık ve örtük iletiye ayrı örnekler veriniz.",
+      "prompt_summary": "Çalışma Kâğıdı — Açık ve örtük iletiye ayrı örnekler veriniz.",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Açık ileti metinde doğrudan söylenen yargıdır; tarih ve olgular ileti değil bilgidir. Örtük ileti, bilgilerden gerekçeyle çıkarılan düşüncedir.",
+        "Çözüm": {
+          "Açık": "“Toplum meselelerini İslâmî bir duyarlıkla ele aldığı şiirleri dolayısıyla Türk şiirinde yeni bir ses” olduğu; kalemini millet ve memleket meselelerine adadığı ve sanattan ödün vermediği.",
+          "Örtük": "Eğitim, yayın çevresi ve dönem olayları bir sanatçının üretimini biçimlendirir; ödülü reddetmesi sanatı millete hizmet olarak gördüğünü düşündürür."
+        }
+      },
+      "source_locator": "basılı s.201 — Çalışma Kâğıdı — Açık ve örtük iletiye ayrı örnekler veriniz."
+    },
+    {
+      "question_id": "T3-P201-FLOW-S201_ORDER",
+      "entry_type": "performance_support",
+      "printed_page": 201,
+      "question_no": "Çalışma Kâğıdı — Biyografik bilgiler hangi sırayla sunuluyor?",
+      "prompt_summary": "Çalışma Kâğıdı — Biyografik bilgiler hangi sırayla sunuluyor?",
+      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer_sections": {
+        "Yönerge": "Çocukluk ve eğitimden Millî Mücadele ve Mısır yıllarına kronolojik ilerleme vardır; şiir kitapları ayrıca tematik gruplarla ele alınır.",
+        "Çözüm": {
+          "Kronoloji": "Öğrenim → çalışma ve yayın → Millî Mücadele → Mısır/son yıllar.",
+          "Tematik açıklama": "Şiirlerinin gençlik/olgunluk dönemlerine ve toplum/dinî konulara göre sınıflandırılması."
+        }
+      },
+      "source_locator": "basılı s.201 — Çalışma Kâğıdı — Biyografik bilgiler hangi sırayla sunuluyor?"
     }
   ]
 }

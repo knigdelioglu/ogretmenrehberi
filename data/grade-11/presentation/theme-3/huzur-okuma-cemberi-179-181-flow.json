@@ -37,17 +37,11 @@
       "prompt": "Seçimlik rol: Özetleyici",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metnin önemli bölümlerini ve düşünce değişimini kısa, kendi sözlerinizle özetleyin.",
-        "sections": [
-          {
-            "title": "Huzur'dan izlek",
-            "body": "Mümtaz ve Nuran'ın İstanbul gezilerinin kültür ve yeni hayat tartışmasına nasıl uzandığını metin sırasını bozmayarak anlatın."
-          },
-          {
-            "title": "Sınır",
-            "body": "Kitapta yalnız bir roman kesiti var; tüm romanın sonunu yazmış gibi özetlemeyin."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P179-FLOW-S179_SUMMARY",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -75,21 +69,11 @@
       "prompt": "Seçimlik rol: Tahmin Edici",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sadece okuduklarınızdan hareketle devamında ne olabileceğine yönelik gerekçeli bir tahmin kurun.",
-        "sections": [
-          {
-            "title": "Tahmin konusu",
-            "body": "Bir kişinin sonraki davranışı, olayın gelişimi veya mekân değişimi."
-          },
-          {
-            "title": "Dayanak",
-            "body": "Tahmininize neden olan söz, davranış ya da olay."
-          },
-          {
-            "title": "Uyarı",
-            "body": "Tahmin gerçekleşmiş olay değildir. Romanın okunmayan bölümlerini biliyormuş gibi anlatmayın."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P179-FLOW-S179_PREDICT",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -100,17 +84,11 @@
       "prompt": "Seçimlik rol: Hareket İzcisi",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mekânı ve metin içinde nasıl değiştiğini izleyin.",
-        "sections": [
-          {
-            "title": "İzlenecek hat",
-            "body": "Boğaz, Üsküdar, semt gezileri ve sosyal çevre."
-          },
-          {
-            "title": "Gerekçe",
-            "body": "Yalnız yer adı sıralamayın; mekânın duygu, kişi ve olayla ilişkisini söyleyin."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P179-FLOW-S179_PLACE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -121,17 +99,11 @@
       "prompt": "Seçimlik rol: Karakter Çözümleyici",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metindeki kişilerin özelliklerini kendi söz ve davranışlarına dayandırın.",
-        "sections": [
-          {
-            "title": "Örnek",
-            "body": "Mümtaz'ın geçmişe dayanmadan yeni hayata geçilemeyeceğini düşünmesi, kültürle ilişkisini gösterir."
-          },
-          {
-            "title": "Kaynak sınırı",
-            "body": "Adı geçen fakat doğrudan davranışı görülmeyen kişiyi kesin özelliklerle tanıtmayın."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P179-FLOW-S179_CHARACTER",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -179,17 +151,11 @@
       "prompt": "Soru 3 — Mümtaz ve Nuran için metin dayanağını karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki kişinin görüşleri farklıdır; yalnız ‘geçmişi seviyorlar’ demekle yetinmeyin.",
-        "sections": [
-          {
-            "title": "Mümtaz",
-            "body": "Yeni hayatı kültür ve kimlik bilincine dayandırır (s.169; kitap s.180 örneği)."
-          },
-          {
-            "title": "Nuran",
-            "body": "Geçmişi sevse de yoksul insanların bugünkü koşullarını görür; 'Niçin eskiye bu kadar bağlıyız?' diye sorar (s.169)."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P180-FLOW-S180_MUMTAZ_NURAN",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -200,21 +166,11 @@
       "prompt": "Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İhsan'ın Mümtaz üzerindeki etkisi s.169–170'te Mümtaz tarafından anlatılır. Macide'nin koruyucu yönü ise s.182'deki yardımcı parçada görülür.",
-        "sections": [
-          {
-            "title": "İhsan",
-            "body": "Öğretici ve düşünsel rehber; bu çıkarım Mümtaz'ın anlatımından gelir."
-          },
-          {
-            "title": "Macide",
-            "body": "Şefkat ve aile desteği; s.182'de anlatıcının verdiği bilgiye dayanır."
-          },
-          {
-            "title": "Sınır",
-            "body": "İki kişiye bu kesitte söylemedikleri sözleri atfetmeyin."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P180-FLOW-S180_IHSAN_MACIDE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -225,13 +181,11 @@
       "prompt": "Soru 3 — Suat ve Fâhir için kaynak sınırını belirtiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tabloda isimleri var ama verilen Huzur kesitinde yeterli doğrudan söz ve davranış bulunmuyor.",
-        "sections": [
-          {
-            "title": "Kanıt sınırı",
-            "body": "Okuduğunuz kesitte Suat ve Fâhir’in doğrudan söz veya davranışına ilişkin yeterli kanıt yok. Bu nedenle kişilik ve duygu yorumu yapmayın; başka bir metin parçası okuduysanız o kanıtı kullanın."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P180-FLOW-S180_SUAT_FAHIR",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -260,17 +214,11 @@
       "prompt": "Soru 4 — Mümtaz ile Nuran'ın kişilik ve dil özelliklerini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki Mümtaz örneğini, Nuran'ın s.169'daki kısa ve sorgulayıcı sorusuyla karşılaştırın.",
-        "sections": [
-          {
-            "title": "Mümtaz",
-            "body": "Sanatçı duyarlığı; s.181 örnek cümlesinde çağrışımlı, şiirsel ve seslenmeli dil."
-          },
-          {
-            "title": "Nuran",
-            "body": "Sanata açık fakat yaşamın güçlüklerine duyarlı; s.169'da daha kısa ve doğrudan soru kurar."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P181-FLOW-S181_MUMTAZ_NURAN",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -281,17 +229,11 @@
       "prompt": "Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Birinin kişiliğinin anlatılması onun kendi konuşma üslubunu göstermez.",
-        "sections": [
-          {
-            "title": "İhsan / Macide",
-            "body": "İhsan’ın etkisi ve Macide’nin şefkati dolaylı anlatılır; bu kesitte doğrudan konuşma örneği yoktur."
-          },
-          {
-            "title": "Suat / Fâhir",
-            "body": "Okuduğunuz Huzur kesitinde Suat ve Fâhir’in dil ve kişilik özelliklerini belirleyecek yeterli doğrudan kanıt yoktur."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P181-FLOW-S181_OTHER_PEOPLE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {

@@ -566,6 +566,11 @@ function sectionPages(sections, step, b = 1) {
   const entries = Object.entries(sections)
     .filter(([key]) => !omit.has(key))
     .flatMap((entry) => splitEntry(entry, maxChars));
+  return sectionPagesFromEntries(entries, step, b);
+}
+
+function sectionPagesFromEntries(entries, step, b = 1) {
+  const maxChars = 1050 * b;
   const single = step.sections_layout === "stacked" || step.sections_layout === "letter";
   const groups = chunkByBudget(entries, {
     maxItems: single ? 1 : scaledItems(2, b),
@@ -575,9 +580,12 @@ function sectionPages(sections, step, b = 1) {
 }
 
 function vocabularyPages(step, b = 1) {
-  const sections = step.answer?.answer_sections;
-  if (!sections || Array.isArray(sections)) return [{ terms: [] }];
-  return chunkByBudget(Object.entries(sections), { maxItems: scaledItems(3, b), maxChars: 850 * b }).map((group) => ({
+  const entries = orderedAnswerEntries(step);
+  if (!entries.length) return [{ terms: [] }];
+  const groupSize = interleaveConfig(step)?.source === "answer_sections"
+    ? scaledItems(interleaveConfig(step).group_size, b)
+    : scaledItems(3, b);
+  return chunkByBudget(entries, { maxItems: groupSize, maxChars: 850 * b }).map((group) => ({
     terms: group.values,
     title: "Söz varlığı"
   }));
@@ -590,6 +598,43 @@ const interleaveConfig = (step) => {
   return value && typeof value === "object" ? value : null;
 };
 const interleaves = (step) => interleaveConfig(step)?.source === "answer_sections" && Boolean(step.answer?.answer_sections);
+
+function orderedAnswerEntries(step) {
+  const sections = step.answer?.answer_sections;
+  if (!sections || Array.isArray(sections)) return [];
+  const omit = new Set(step.presentation?.omit_sections || []);
+  const entries = Object.entries(sections).filter(([key]) => !omit.has(key));
+  const order = interleaveConfig(step)?.order;
+  if (!Array.isArray(order) || !order.length) return entries;
+  const byKey = new Map(entries);
+  const selected = order.filter((key) => byKey.has(key)).map((key) => [key, byKey.get(key)]);
+  const selectedKeys = new Set(selected.map(([key]) => key));
+  return [...selected, ...entries.filter(([key]) => !selectedKeys.has(key))];
+}
+
+function answerSectionGroups(step, b = 1) {
+  const config = interleaveConfig(step);
+  if (config?.source !== "answer_sections") return [];
+  // Tema 1–3'te group_size:1, eski answer sayfa bütçesinin (iki bölüm/sayfa)
+  // semantiğini temsil eder. Bu uyumluluk yolu, mevcut sunumların tıklama
+  // sırasını korurken Tema 4'ün açıkça istenen 2/3/4/5'li gruplarını exact tutar.
+  if (config.group_size === 1) {
+    const entries = orderedAnswerEntries(step).flatMap((entry) => splitEntry(entry, 1050 * b));
+    return sectionPagesFromEntries(entries, step, b).map((page) => Object.entries(page.sections));
+  }
+  return groupItems(orderedAnswerEntries(step), scaledItems(config.group_size, b));
+}
+
+function interleavedAnswerSectionPages(step, b = 1) {
+  return interleaveStages(answerSectionGroups(step, b)).flatMap(({ group, stage }) =>
+    sectionPagesFromEntries(group, step, b).map((page) => ({
+      answerText: "",
+      title: stage === "prompt" ? "Görev" : "Cevap",
+      hideValues: stage === "prompt",
+      ...page
+    }))
+  );
+}
 
 function interleavedDictionaryGroups(step, b = 1) {
   const config = interleaveConfig(step);
@@ -624,20 +669,31 @@ function contentLayerPages(step, b = 1) {
   }
   const pages = [];
   const maxChars = (step.density === "compact" ? 850 : 1050) * b;
+  const interleaveGroupSize = interleaveConfig(step)?.source === "answer_sections"
+    ? scaledItems(interleaveConfig(step).group_size, b)
+    : null;
   if (content.items?.length) {
-    for (const group of balancedChunks(content.items, { maxItems: scaledItems(content.scale ? 6 : 4, b), maxChars })) {
+    const items = interleaveGroupSize ? content.items.slice(0, interleaveGroupSize) : content.items;
+    for (const group of balancedChunks(items, {
+      maxItems: interleaveGroupSize ?? scaledItems(content.scale ? 6 : 4, b),
+      maxChars
+    })) {
       pages.push({ content: { items: group.values, scale: content.scale }, itemOffset: (content.item_offset || 0) + group.start });
     }
   }
   if (content.sections?.length) {
-    for (const group of chunkByBudget(content.sections, { maxItems: scaledItems(2, b), maxChars })) {
+    const sections = interleaveGroupSize ? content.sections.slice(0, interleaveGroupSize) : content.sections;
+    for (const group of chunkByBudget(sections, {
+      maxItems: interleaveGroupSize ?? scaledItems(2, b),
+      maxChars
+    })) {
       pages.push({ content: { sections: group.values }, title: "Görev" });
     }
   }
-  if (interleaves(step)) {
+  if (interleaves(step) && !content.items?.length && !content.sections?.length) {
     // Değerlendirilecek ilk madde grubu cevapsız olarak görev ekranında gösterilir.
-    const first = sectionPages(step.answer.answer_sections, step, b)[0];
-    if (first) pages.push({ content: {}, preview: first.sections });
+    const first = answerSectionGroups(step, b)[0];
+    if (first?.length) pages.push({ content: {}, preview: Object.fromEntries(first) });
   }
   if (!step.reveals.includes("dictionary")) pages.push(...dictionaryPages(step, b));
   if (!pages.length) pages.push({ content: {} });
@@ -664,16 +720,11 @@ function answerLayerPages(step, b = 1) {
       ...dictionaryPages(step, b)
     ];
   }
-  const sections = sectionPages(answer.answer_sections, step, b);
+  const sections = sectionPagesFromEntries(orderedAnswerEntries(step), step, b);
   let pages;
   if (interleaves(step) || (textAtEnd && sections.length)) {
     const sectionViews = interleaves(step)
-      ? interleaveStages(sections).map(({ group, stage }) => ({
-          answerText: "",
-          title: stage === "prompt" ? "Görev" : "Cevap",
-          hideValues: stage === "prompt",
-          ...group
-        }))
+      ? interleavedAnswerSectionPages(step, b)
       : sections.map((group) => ({ answerText: "", title: "Cevap", ...group }));
     pages = textAtEnd ? [...sectionViews, ...textPages] : [...textPages, ...sectionViews];
   } else {

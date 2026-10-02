@@ -15,8 +15,15 @@
       "id": "s266-vocabulary",
       "source_record_id": "T04-S0043",
       "answer_id": "T4-P266-VOC01",
-      "layout": "structure",
+      "layout": "vocabulary",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 3
+        },
+        "answer_text": "end"
+      },
       "prompt": "Söz Varlığımız 1–3 — Altı sözcüğün anlamını bağlam içinde tahmin ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
@@ -24,7 +31,7 @@
         "items": [
           "daire",
           "yeni yetme",
-          "kanımca",
+          "kanı(mca)",
           "yol vermek",
           "gereksinme",
           "duralamak"

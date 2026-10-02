@@ -6,6 +6,33 @@
   "printed_page_range": "238-242",
   "entries": [
     {
+      "question_id": "T4-P236-MAP01",
+      "entry_type": "reference_answer",
+      "printed_page": 236,
+      "question_no": "Tema çerçevesi",
+      "source_locator": "basılı s.236 / PDF s.237 — tema çerçevesi",
+      "prompt_summary": "Tema çerçevesindeki metin ve beceri alanlarını öğrencinin soru üzerinden belirlemesi",
+      "answer": "Tema çerçevesinde dört beceri alanı ve bunlarla ilişkili metin/görevler bulunur.",
+      "answer_sections": {
+        "Okuma": "Ben, Mimar Sinan tiyatrosu ve Merdiven küçürek hikâyesi.",
+        "Dinleme / İzleme": "Anadolu İnsanı / Fedakârlık belgeseli.",
+        "Konuşma ve yazma": "Tiyatro canlandırması ve belgesel için özgün afiş."
+      }
+    },
+    {
+      "question_id": "T4-P240-FACT01",
+      "entry_type": "reference_answer",
+      "printed_page": 240,
+      "question_no": "Bilgi görseli / hayalî metin",
+      "source_locator": "basılı s.240 / PDF s.241 — bilgi görseli ve hayalî tiyatro konuşması",
+      "prompt_summary": "Bilgi görselindeki doğrulanabilir içerik ile öğrencinin hayalî tiyatro üretimini ayırma",
+      "answer": "Bilgi görseli kaynakta doğrulanabilen yaşam, görev ve eser bilgilerini verir; hayalî metin ise bu bilgilerden hareketle öğrencinin kurduğu diyalog veya monologdur.",
+      "answer_sections": {
+        "Bilgi görseli": "Kaynağın verdiği tarihî ve biyografik bilgiler.",
+        "Kurduğunuz hayalî metin": "Görseldeki verilerden hareketle kurulan yeni diyalog ve monolog."
+      }
+    },
+    {
       "question_id": "T4-P238-Q01",
       "entry_type": "question_answer",
       "printed_page": 238,

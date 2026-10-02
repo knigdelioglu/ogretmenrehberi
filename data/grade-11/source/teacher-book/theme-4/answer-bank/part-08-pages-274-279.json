@@ -50,7 +50,12 @@
       "question_no": "2/a",
       "source_locator": "basılı s.275 / PDF s.276 — Düşünelim Paylaşalım soru 2/a",
       "prompt_summary": "Günümüz mimari ve teknoloji koşullarının Merdiven’in olay akışını nasıl değiştirebileceğini yorumlama",
-      "answer": "Örnek cevap: Binada asansör varsa kişiler merdivende karşılaşmayabilir; bu durumda yol verme hareketi ve anlatıcının yukarı-aşağı yön değişimi başka bir yerde kurulmak zorunda kalır. Asansörde beklemek, kat düğmelerine basmak veya telefondan haber almak yeni karşılaşma biçimleri yaratabilir. Buna rağmen yaşlılık, acele ve ölüm üzerine düşünme temaları güncel koşullarda da korunabilir."
+      "answer": "Örnek cevap: Binada asansör varsa kişiler merdivende karşılaşmayabilir; bu durumda yol verme hareketi ve anlatıcının yukarı-aşağı yön değişimi başka bir yerde kurulmak zorunda kalır. Asansörde beklemek, kat düğmelerine basmak veya telefondan haber almak yeni karşılaşma biçimleri yaratabilir. Buna rağmen yaşlılık, acele ve ölüm üzerine düşünme temaları güncel koşullarda da korunabilir.",
+      "answer_sections": {
+        "Mimari": "Merdivenin yerini başka bir hareket/ulaşım düzeni alabilir.",
+        "Teknoloji": "Acil haber ve kişiler arası iletişim daha hızlı gerçekleşebilir.",
+        "Korunabilecek tema": "Yaşlanma, kuşak değişimi ve meslek hırsı farklı ayrıntılarla sürebilir."
+      }
     },
     {
       "question_id": "T4-P275-Q02B",
@@ -76,15 +81,12 @@
       "printed_page": 276,
       "question_no": "Birlikte Çalışalım / çatışmalar",
       "source_locator": "basılı s.276-277 / PDF s.277-278 — Birlikte Çalışalım / çatışmalar",
-      "prompt_summary": "Merdiven’de iç ve kişiler arası çatışmaları, bunların sonuçlarını ve varsayımsal gelişmeleri açıklama",
+      "prompt_summary": "Merdiven’de iç ve kişiler arası çatışmaları ve anlatıcının değişimini açıklama",
       "answer": "Öykünün çatışmaları kısa karşılaşmalarla anlatıcının kararını değiştirir; bazı gelişmeler gerçekleşmemiş olsaydı son da farklılaşabilirdi.",
       "answer_sections": {
         "İnsanın kendisiyle çatışması": "Anlatıcının iş telaşı, yaş ve kıdem algısı ile yaşlı memurun ölümünden sonra gelişen yaşam sorgulaması arasında bir gerilim oluşur. Başlangıçta sürekli hareket etmeye ve yukarı çıkmaya odaklanan anlatıcı, sonunda kendi yönünü ve önceliklerini sorgular.",
         "İnsan-insan çatışması": "Metinde belirgin ve açık bir kişi–kişi çatışması yoktur. Anlatıcı ile ihtiyar ve genç memur arasında yaş, kuşak ve bakış farklarından doğan örtük gerilimler görülür; ancak bunlar açık bir kavgaya veya karşılıklı mücadeleye dönüşmez.",
-        "Genç memura yol verme": "Başlangıçta “yeni yetme” diye küçümsediği genç memura yol vermesi, anlatıcının kendi yaşını ve kuşaklar arasındaki konumunun değiştiğini fark etmeye başladığını; önceliklerini yeniden değerlendirdiğini düşündürür.",
-        "Anlatıcı ihtiyarla karşılaşmasaydı": "Aceleye ilişkin uyarı ve yaşlılıkla ilgili ilk karşılaşma yaşanmazdı; anlatıcının iş telaşını sorgulaması için önemli bir neden eksilirdi.",
-        "Anlatıcı genç memurla karşılaşmasaydı": "Yaşlı memurun ölümünü ve yukarıdaki durumu öğrenmeyebilirdi. Bu nedenle son kararı ve genç birine yol verme anı muhtemelen oluşmazdı.",
-        "İhtiyar memur ölmemiş olsaydı": "Anlatıcı onun sözlerini sorup deneyimini öğrenebilirdi; ölümün yarattığı sarsıntı yerine iki kişi arasında daha doğrudan bir konuşma gelişebilirdi. Öykünün sonundaki sorgulama yine mümkün olsa da etkisi değişirdi."
+        "Genç memura yol verme": "Başlangıçta “yeni yetme” diye küçümsediği genç memura yol vermesi, anlatıcının kendi yaşını ve kuşaklar arasındaki konumunun değiştiğini fark etmeye başladığını; önceliklerini yeniden değerlendirdiğini düşündürür."
       }
     },
     {
@@ -98,8 +100,8 @@
       "guidance": "Tek bir doğru alternatif yoktur. Olay örgüsünde neden–sonuç bağını koruyun; metinde bulunmayan yeni bir olayı öyküde gerçekleşmiş gibi değil, kendi kurduğunuz olasılık olarak sunun.",
       "answer_sections": {
         "Anlatıcı ihtiyar memurla karşılaşmasaydı": "Yaşlı adamın iyi dileğini ve aceleye ilişkin uyarısını duymazdı. Genç memurdan ölüm haberini alsa bile, yaşlı kişiyle yaşadığı karşılaşmaların kurduğu düşünsel bağ bulunmayacağından son kararı farklı gerekçelerle gelişebilirdi.",
-        "Anlatıcı genç memurla karşılaşmasaydı": "İhtiyar memurun ölüm haberini o anda öğrenmez; merdivenleri çıkıp işine devam edebilirdi. Eski çalışma düzenini sürdürmesi ve son bölümde yukarı çıkma amacını sorgulamaması olası bir akıştır.",
-        "İhtiyar memur ölmemiş olsaydı": "Genç memur ölüm haberini vermezdi. Anlatıcı yaşlı adamı yeniden görebilir ve önceki uyarısı üzerine konuşabilirdi; böylece değişim ölüm haberiyle değil, yüz yüze bir konuşma ya da başka bir deneyimle kurulabilirdi."
+        "İhtiyar memur ölmemiş olsaydı": "Genç memur ölüm haberini vermezdi. Anlatıcı yaşlı adamı yeniden görebilir ve önceki uyarısı üzerine konuşabilirdi; böylece değişim ölüm haberiyle değil, yüz yüze bir konuşma ya da başka bir deneyimle kurulabilirdi.",
+        "Anlatıcı genç memurla karşılaşmasaydı": "İhtiyar memurun ölüm haberini o anda öğrenmez; merdivenleri çıkıp işine devam edebilirdi. Eski çalışma düzenini sürdürmesi ve son bölümde yukarı çıkma amacını sorgulamaması olası bir akıştır."
       }
     },
     {

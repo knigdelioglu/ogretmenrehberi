@@ -9,7 +9,7 @@
     "preview": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "test": "node scripts/build.mjs && node scripts/test-data.mjs && node scripts/test-presentation-flow.mjs",
-    "test:browser": "node scripts/test-presentation-browser.mjs"
+    "test:browser": "npm run build && node scripts/test-presentation-browser.mjs"
   },
   "engines": {
     "node": ">=20"

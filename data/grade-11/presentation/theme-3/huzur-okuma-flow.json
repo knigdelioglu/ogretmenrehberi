@@ -110,15 +110,11 @@
       "id": "s165-166-fark",
       "source_record_id": "T03-S0012",
       "layout": "structure",
-      "prompt": "Huzur, rüya, saz, boğaz, tarih ve garp kelimelerini iki farklı yaşam bağlamında cümlelerle kullanınız.",
+      "prompt": "Fark Edelim — Kelimeleri iki farklı yaşam bağlamında cümlelerle kullanınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P165-PERF02",
       "content": {
         "lead": "Altı kelimeyi farklı bağlamlarda kendi cümlelerinizde kullanın; her cümlede anlamı bağlamıyla gösterin.",
-        "items": [
-          "huzur",
-          "rüya"
-        ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin köy evi, münazara ödülü, Boğaz gezisi, Çanakkale ziyareti gibi yaşantılara sahip olduğunu varsaymayın. Arkadaşının cümlesinden kişisel bir yaşantı çıkardığınızda bunu “kesin keşif” saymayın; gerekçeyi sorun ve öğrencinin açıklamasını dinleyin."
       },
       "density": "compact",
@@ -137,19 +133,13 @@
       "prompt": "Kelimelerin farklı cümlelerdeki anlam ve çağrışımlarını karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Aynı kelime farklı anlam veya kişisel çağrışım taşıyabilir.",
-        "sections": [
-          {
-            "title": "Anlam",
-            "body": "Örneğin boğaz sözü bedendeki bölgeyi veya İstanbul Boğazı'nı karşılayabilir."
-          },
-          {
-            "title": "Yaşamdan iz",
-            "body": "Arkadaşınızın deneyimini cümlesinden kesin varsaymayın; kendisine sorarak açıklamasını dinleyin."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P166-FLOW-S166_MEANING",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s166-wall",
@@ -262,7 +252,11 @@
       "content": {
         "lead": "Metindeki Mümtaz ve Nuran bölümlerini okuyup geçmiş ve yeni hayat hakkındaki görüşlerini karşılaştırın; her çıkarımınız için metinden kanıt seçin."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P169-REF01",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s170-reading",
@@ -273,7 +267,11 @@
       "content": {
         "lead": "İhsan’ın Mümtaz üzerindeki etkisini ve İstanbul tasvirindeki sosyal görünümü metinden kanıtlarla inceleyin."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P170-REF01",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s171-author",
@@ -284,7 +282,11 @@
       "content": {
         "lead": "Tanpınar’ın kitapta verilen biyografisini okuyup Huzur’la ilişkilendirebileceğiniz noktaları metin kanıtıyla belirleyin."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P171-REF01",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s172-vocabulary",
@@ -334,7 +336,11 @@
       "content": {
         "lead": "Kitaptaki beş türün tanım ve örneklerini okuyup aralarındaki ayrımları kendiniz çıkarın."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P173-REF01",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s173-types-2",
@@ -345,7 +351,11 @@
       "content": {
         "lead": "Kitaptaki dört türün tanım ve örneklerini okuyup aralarındaki ayrımları kendiniz çıkarın."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P173-REF02",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s174-types-1",
@@ -356,7 +366,11 @@
       "content": {
         "lead": "Kitaptaki dört edebî akımın tanım ve örneklerini okuyup ayrımları kendiniz belirleyin."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P174-REF01",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s174-types-2",
@@ -367,7 +381,11 @@
       "content": {
         "lead": "Kitaptaki üç edebî akımın tanım ve örneklerini okuyup ayrımları kendiniz belirleyin."
       },
-      "density": "compact"
+      "density": "compact",
+      "answer_id": "T3-P174-REF02",
+      "presentation": {
+        "answer_text": "end"
+      }
     },
     {
       "id": "s174-style",

@@ -108,19 +108,12 @@
       "id": "s217-vocabulary",
       "source_record_id": "T03-S0101",
       "answer_id": "T3-P217-VOC01",
-      "layout": "structure",
+      "layout": "vocabulary",
       "density": "compact",
       "prompt": "Söz Varlığımız — Beş sözcük ve kelime grubunu geçtiği bağlamdan anlamlandırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Ses kaydında sözcüğün geçtiği yeri dinleyip anlamı tahmin edin; sonra sözlükle doğrulayın ve bağlamı bozmayan başka bir ifade önerin.",
-        "items": [
-          "direniş",
-          "ihbar",
-          "torna",
-          "kafa yormak",
-          "haber uçurmak"
-        ],
         "note": "Bu ifadelerin hangi anlamda kullanıldığını QR kaydı dinlemeden belirlemeyin.\n\nÖğretmen için kaynak ve değerlendirme notu: Aşağıdaki anlamlar yalnızca kelimelerin sözlük anlamıdır. ‘Direnişin Ustaları’ kaydı dinlenmeden bunların metindeki anlamı veya ‘torna’nın hangi işlem/nesneyle ilgili kullanıldığı kesinleştirilmemelidir. Basılı kelime duvarında bulunmayan ‘kafa yormak’ ve ‘haber uçurmak’ bu kayda eklenmemiştir."
       },
       "presentation": {

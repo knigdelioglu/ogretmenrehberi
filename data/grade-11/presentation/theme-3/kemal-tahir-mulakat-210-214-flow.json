@@ -339,11 +339,6 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Kendi hazırladığınız hayalî cevapları inceleyin; örnek Mümtaz cevabını yalnızca model olarak kullanın.",
-        "items": [
-          "Doğrudan söylenen düşünceleri açık ileti olarak ayırın.",
-          "Cevaplardan gerekçeyle çıkarılan düşünceleri örtük ileti olarak ayırın.",
-          "Bu iki ileti türünü karakterin okunan metindeki sözleriyle karşılaştırın."
-        ],
         "note": "Öğretmen için kaynak ve değerlendirme notu: ‘Musiki millî zevkin en yüksek anlatımıdır’, ‘medeniyet krizi bireyin huzursuzluğunu doğurur’ gibi model mülakattan üretilmiş geniş sonuçları romanın zorunlu iletisi saymayın."
       },
       "presentation": {

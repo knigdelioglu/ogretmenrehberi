@@ -20,17 +20,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P177-Q14",
       "content": {
-        "lead": "s.167–171'de doğrudan söylenenleri, kişi ve mekân ayrıntılarından çıkardıklarınızdan ayırın.",
-        "sections": [
-          {
-            "title": "Açık ileti",
-            "body": "Metinde söylenmiş bir görüşü bulun: İstanbul'u tanımak, yeni hayat ve geçmişle bağ."
-          },
-          {
-            "title": "Örtük ileti",
-            "body": "Şehir, musiki ve yoksul semtlerin birlikte düşündürdüğü sonucu gerekçelendirin."
-          }
-        ],
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Bir cümlenin kendisi doğrudan alıntılanabiliyorsa, alıntının ötesindeki geniş yorumu ‘açık ileti’ diye sunmayın. ‘Millî şuurun en temel anahtarı’, ‘varoluşsal yalnızlığa şifa’ gibi sonuçlar metinde açıkça söylenmediği için zorunlu ileti değildir."
       }
     },
@@ -88,21 +78,11 @@
       "prompt": "Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Üç ölçütü Huzur’dan okuduğunuz bölüme dayanarak doldurun.",
-        "sections": [
-          {
-            "title": "İçerik",
-            "body": "Mümtaz ve Nuran üzerinden İstanbul, musiki, geçmiş ve kimlikle kurulan bağ."
-          },
-          {
-            "title": "Tür",
-            "body": "Roman; burada romanın bir bölümü okunur."
-          },
-          {
-            "title": "Şekil",
-            "body": "Düzyazı; şiirdeki dize ve dörtlük düzeninden farklı olarak paragraf, betimleme ve diyaloglarla ilerler."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_HUZUR_CONTENT",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -113,21 +93,11 @@
       "prompt": "Huzur ile Mescid-i Aksa: dönem bilgisini zihniyet çıkarımından ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dönem metnin tarihsel/edebî konumudur; zihniyet kişi ve toplulukların değer, inanç ve dünyaya bakışının söz ve davranışlara yansımasıdır. Zihniyet yargısını metinden kanıtla destekleyin.",
-        "sections": [
-          {
-            "title": "Huzur — dönem",
-            "body": "Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması romanı Cumhuriyet Dönemi’ne yerleştirir. 1949 ilk yayım yılı kitap dışı bilgidir; kullanırsanız kaynağıyla belirtin."
-          },
-          {
-            "title": "Huzur — zihniyet",
-            "body": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin. “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir ve kimlik ilişkisiyle açıklayın."
-          },
-          {
-            "title": "Mescid-i Aksa — kaynak sınırı",
-            "body": "Şiir dizeleri verilen PDF’de görünmediğinden dönem ve zihniyet çıkarımı bu kaynağa dayanarak yapılamaz. Başka sürüm veya harici kaynak doğrulanmış sayılmamalıdır."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_HUZUR_CONTEXT",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -138,17 +108,11 @@
       "prompt": "İki metnin üslup ve iletisini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Üslup ve ileti yorumunu her metnin doğrulanmış içeriğine dayandırın. Bu PDF’de yalnız Huzur tarafı metin kanıtıyla ele alınabiliyor.",
-        "sections": [
-          {
-            "title": "Huzur — üslup ve ileti",
-            "body": "Betimleyici, düşünsel ve şiirsel düzyazıda şehir ve musiki tasvirlerinin Mümtaz’ın iç dünyasıyla nasıl birleştiğini inceleyin. Şehir ve kültür mirasıyla bağın kimliği anlamaya katkısını metinden örneklerle açıklayın."
-          },
-          {
-            "title": "Mescid-i Aksa — kaynak sınırı",
-            "body": "Şiirin dizeleri bu PDF görüntüsünde yer almadığı için üslup ve ileti ölçütleri tamamlanamaz; şiir metni doğrulanmış bir kaynakla sağlandığında yeniden ele alınmalıdır."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_HUZUR_MESSAGE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -178,17 +142,11 @@
       "prompt": "Temel rol: Bağ Kurucu",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metin ile dış dünya arasındaki bağlantıyı kurun.",
-        "sections": [
-          {
-            "title": "Görev",
-            "body": "Huzur’daki İstanbul ve kültür ilgisini kendi şehrinizden bir mekân ya da başka bir yaşantıyla ilişkilendirin."
-          },
-          {
-            "title": "Soru",
-            "body": "Sizin çevrenizde hangi yer, şehrin geçmişini bugünle buluşturuyor?"
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_ROLE_LINK",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -199,17 +157,11 @@
       "prompt": "Temel rol: Ressam",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Okuduğunuz metnin önemli bir yönünü kroki, diyagram veya çizimle görselleştirin.",
-        "sections": [
-          {
-            "title": "Görev",
-            "body": "Boğaz–Üsküdar gezi hattı veya Mümtaz'ın geçmiş–yeni hayat düşüncesi için görsel hazırlayın."
-          },
-          {
-            "title": "Sınır",
-            "body": "Çizimi gerçek olay örgüsüne dayandırın; kitaptaki mekânı göstermediği hâlde varmış gibi çizmeyin."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_ROLE_VISUAL",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -220,17 +172,11 @@
       "prompt": "Temel rol: Sorgulayıcı",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Grup arkadaşlarınızın düşüncelerini ortaya çıkaracak bir soru hazırlayın.",
-        "sections": [
-          {
-            "title": "Görev",
-            "body": "Mümtaz, Nuran, musiki veya İstanbul mekânlarıyla ilgili tartışmaya açık bir soru kurun."
-          },
-          {
-            "title": "Örnek soru",
-            "body": "Mümtaz'ın geçmişi önemsemesiyle Nuran'ın bugünün sorunlarını hatırlatması birbiriyle nasıl ilişkilidir?"
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_ROLE_INQUIRY",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -241,17 +187,11 @@
       "prompt": "Temel rol: Okuma Aydınlatıcısı",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Grubun tartışmaya değer bulacağı kısa bir ifadeyi metinden seçin.",
-        "sections": [
-          {
-            "title": "Görev",
-            "body": "Sözün yerini belirleyin; neden şaşırtıcı, önemli veya düşünmeye değer olduğunu kendi gerekçenizle anlatın."
-          },
-          {
-            "title": "Sınır",
-            "body": "Metinden uzun paragraf kopyalamayın. Sözü ve yorumunu birbirinden ayırın."
-          }
-        ]
+        "lead": "Görevi basılı kaynakta yer alan kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P178-FLOW-S178_ROLE_HIGHLIGHT",
+      "presentation": {
+        "answer_text": "end"
       }
     }
   ]

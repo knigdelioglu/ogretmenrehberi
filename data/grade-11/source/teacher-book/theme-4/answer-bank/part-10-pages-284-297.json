@@ -121,10 +121,10 @@
       "answer": "Aşağıdaki anlamlar sözcüklerin genel kullanımına göredir; videodaki kesin bağlamı kontrol etmek için karekod içeriği ve sözlük adımı birlikte kullanılmalıdır.",
       "answer_sections": {
         "fedakârlık": "Bir amaç veya başkaları uğruna kendi çıkarından ya da rahatından vazgeçme. Öneri: özveri.",
-        "aksaklık": "Bir işin olağan biçimde ilerlemesini bozan pürüz veya kesinti. Öneri: aksama, pürüz.",
-        "tahammül": "Zorluğa katlanma, dayanma. Öneri: sabır, dayanma.",
         "hemzemin geçit": "Demir yolu ile kara yolunun aynı seviyede kesiştiği geçit. Yakın açıklama: tren geçidi.",
-        "mesai": "Çalışma süresi veya iş için ayrılan zaman. Öneri: çalışma saati."
+        "mesai": "Çalışma süresi veya iş için ayrılan zaman. Öneri: çalışma saati.",
+        "aksaklık": "Bir işin olağan biçimde ilerlemesini bozan pürüz veya kesinti. Öneri: aksama, pürüz.",
+        "tahammül": "Zorluğa katlanma, dayanma. Öneri: sabır, dayanma."
       },
       "guidance": "“Hemzemin geçit” gibi terimlerin tam anlamını tek sözcüklü eş anlamlıyla değiştirmek güçtür; açıklayıcı karşılık da kabul edilebilir."
     },
@@ -373,7 +373,15 @@
       "question_no": "7",
       "source_locator": "basılı s.295 / PDF s.296 — Çözümleyebilme soru 7 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Fedakârlık belgeselinde kullanılan dil işlevlerini belirleme",
-      "answer": "Konuşmalarda ve ekrandaki yazılarda kullanılan dilin işlevlerini ders terimleriyle belirleyin: bilgi verme (göndergesel işlev), duygu aktarma (heyecana bağlı işlev), yönlendirme (alıcıyı harekete geçirme işlevi), iletişimi başlatma veya sürdürme (kanalı kontrol işlevi), dil hakkında açıklama (dil ötesi işlev) ve sözün kendisini öne çıkaran sanatlı söyleyiş (şiirsel işlev). Her işlev için videoda duyduğunuz bir ifadeyi veya ekrandaki yazıyı örnek gösterin; videoda karşılığı bulunmayan işlevi zorla eklemeyin."
+      "answer": "Konuşmalarda ve ekrandaki yazılarda kullanılan dilin işlevlerini ders terimleriyle belirleyin. Her işlev için videoda duyduğunuz bir ifadeyi veya ekrandaki yazıyı örnek gösterin; videoda karşılığı bulunmayan işlevi zorla eklemeyin.",
+      "answer_sections": {
+        "Göndergesel": "Bilgi verme / açıklama işlevini videodaki gerçek bir söz veya yazı örneğiyle gösterin; karşılığı yoksa zorla eklemeyin.",
+        "Heyecana bağlı": "Duygu ve tutum bildiren gerçek bir video örneği bulun; karşılığı yoksa zorla eklemeyin.",
+        "Alıcıyı harekete geçirme": "Düşündürme veya yönlendirme işlevini taşıyan gerçek bir örnek bulun; karşılığı yoksa zorla eklemeyin.",
+        "Kanalı kontrol": "İletişimi başlatan ya da sürdüren gerçek bir örnek bulun; karşılığı yoksa zorla eklemeyin.",
+        "Dil ötesi": "Dil hakkında açıklama yapan gerçek bir örnek bulun; karşılığı yoksa zorla eklemeyin.",
+        "Şiirsel": "Sözün kendisini öne çıkaran sanatlı söyleyişe gerçek bir örnek bulun; karşılığı yoksa zorla eklemeyin."
+      }
     },
     {
       "question_id": "T4-P295-Q08",
@@ -470,6 +478,21 @@
       "prompt_summary": "Fedakârlık videosu üzerine öğrenme günlüğü ve etkin izleyici hedefi doldurma",
       "answer": "Öğrenme günlüğünüzü izleme sonrasında kendi gözlem ve değerlendirmenizle tamamlayın. “Belgeselin bana kattığı değerler” başlığında fark ettiğiniz bir değeri; “uygulayabileceğim davranışlar” başlığında uygulanabilir bir örneği; “hayatımı yansıtan yaşantılar” başlığında gerçek bir kişisel bağı; “daha etkin izleyici” başlığında geliştireceğiniz dinleme veya izleme davranışını yazın.",
       "guidance": "Günlüğünüze izleme sırasında edindiğiniz gerçek gözlem, beğeni ve öğrenme sonuçlarını yazın."
+    },
+    {
+      "question_id": "T4-P297-PERF03",
+      "entry_type": "performance_support",
+      "printed_page": 297,
+      "question_no": "Öğrenme Günlüğü / sonraki hedef",
+      "source_locator": "basılı s.297 / PDF s.298 — Öğrenme Günlüğü",
+      "prompt_summary": "Bir sonraki dinleme/izleme görevi için kişisel ve gözlenebilir hedef oluşturma",
+      "answer": "Bir sonraki izleme göreviniz için kendi hedefinizi belirleyin; hedefi uygulama ve kontrol adımlarıyla somutlaştırın.",
+      "answer_sections": {
+        "Hedef": "Öğrencinin kendi uygulanabilir hedefi: [...]",
+        "Uygulama": "Hedefin bir sonraki izleme görevinde nasıl uygulanacağı: [...]",
+        "Kontrol": "Hedefin gerçekleştiğini gösterecek gözlenebilir ölçüt: [...]"
+      },
+      "guidance": "Hazır bir hedefi kopyalamak yerine kendi izleme ihtiyacınızı ve bunu kontrol etme yolunuzu yazın."
     }
   ]
 }

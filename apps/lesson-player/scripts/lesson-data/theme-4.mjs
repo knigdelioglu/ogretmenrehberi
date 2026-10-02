@@ -5,17 +5,19 @@ assert(theme4Lessons.length === 14,
 const theme4Intro = lessons.find(lesson => lesson.lesson_id === "T11-T04-GIRIS-236-242");
 assert(theme4Intro && theme4Intro.printed_page_range === "236-242" &&
   theme4Intro.coverage.steps === 17 && theme4Intro.coverage.source_records === 9 &&
-  theme4Intro.coverage.answer_entries === 7,
-  "Tema 4 açılışı s.236–242, 17 ekran / 9 kaynak / 7 cevap içermeli.");
+  theme4Intro.coverage.answer_entries === 9,
+  "Tema 4 açılışı s.236–242, 17 ekran / 9 kaynak / 9 cevap içermeli.");
 const theme4IntroById = new Map(theme4Intro.steps.map(step => [step.id, step]));
 assert(theme4IntroById.size === 17, "Tema 4 giriş ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
+  ["s236-map","T04-S0001","T4-P236-MAP01"],
   ["s238-q1","T04-S0003","T4-P238-Q01"],
   ["s238-q2","T04-S0004","T4-P238-Q02"],
   ["s239-q3","T04-S0005","T4-P239-Q03"],
   ["s239-q4","T04-S0006","T4-P239-PERF01"],
   ["s239-q5","T04-S0007","T4-P239-PERF02"],
   ["s240-performance","T04-S0008","T4-P240-PERF01"],
+  ["s240-fact-fiction","T04-S0008","T4-P240-FACT01"],
   ["s241-preview","T04-S0009","T4-P241-PERF01"]
 ]) {
   assert(theme4IntroById.get(id)?.source?.source_record_id === sourceId &&
@@ -23,18 +25,20 @@ for (const [id, sourceId, answerId] of [
     `Tema 4 giriş kanonik kaynak / cevap eşleşmesi: ${id}`);
 }
 assert(theme4IntroById.get("s236-map")?.source?.source_record_id === "T04-S0001" &&
+  theme4IntroById.get("s236-map")?.answer?.question_id === "T4-P236-MAP01" &&
   theme4IntroById.get("s237-threshold")?.source?.source_record_id === "T04-S0002" &&
   theme4IntroById.get("s237-threshold")?.answer === null,
   "Tema çerçevesi ve Yunus Emre eşiğinde uydurma soru/cevap olmamalı.");
 assert(
   theme4IntroById.get("s237-threshold")?.display_prompt.includes("Tema Sunusu") &&
     theme4IntroById.get("s237-threshold")?.content?.sections?.some(section =>
-      section.body.includes("İlim ilim bilmekdir")
+    section.body.includes("İlim ilim bilmekdir")
     ) &&
-    theme4IntroById.get("s237-threshold")?.content?.sections?.some(section =>
-      section.body.includes("karekod")
-    ),
-  "s.237 Tema Sunusu karekod geçişi ve Yunus Emre beyti görünür olmalı."
+    theme4IntroById.get("s237-threshold")?.content?.sections?.every(section =>
+      !section.body.includes("bu aşamada açın")
+    ) &&
+    theme4IntroById.get("s237-threshold")?.content?.note?.includes("karekodunu"),
+  "s.237 Tema Sunusu işlemi öğrenci ekranından çıkarılmalı, öğretmen notunda korunmalı."
 );
 assert(theme4IntroById.get("s241-core-roles")?.content?.sections?.length === 4 &&
   theme4IntroById.get("s242-optional-roles")?.content?.sections?.length === 5,
@@ -54,8 +58,8 @@ for (const step of theme4Intro.steps) {
 const mimarReading = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250");
 assert(mimarReading && mimarReading.printed_page_range === "243-250" &&
   mimarReading.coverage.steps === 14 && mimarReading.coverage.source_records === 6 &&
-  mimarReading.coverage.answer_entries === 6,
-  "Mimar Sinan okuma s.243–250 14 ekran / 6 kaynak / 6 cevap içermeli.");
+  mimarReading.coverage.answer_entries === 7,
+  "Mimar Sinan okuma s.243–250 14 ekran / 6 kaynak / 7 cevap içermeli.");
 const mimarReadingById = new Map(mimarReading.steps.map(step => [step.id, step]));
 assert(mimarReadingById.size === 14, "Mimar Sinan okuma ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
@@ -64,7 +68,8 @@ for (const [id, sourceId, answerId] of [
   ["s249-buzz","T04-S0012","T4-P249-PERF01"],
   ["s249-comp-q1","T04-S0013","T4-P249-Q01"],
   ["s249-comp-q2","T04-S0014","T4-P249-Q02"],
-  ["s250-social-table","T04-S0015","T4-P250-TABLE01"]
+  ["s250-social-table","T04-S0015","T4-P250-TABLE01"],
+  ["s250-social-table-rest","T04-S0015","T4-P250-TABLE01-REST"]
 ]) {
   assert(mimarReadingById.get(id)?.source?.source_record_id === sourceId &&
     mimarReadingById.get(id)?.answer?.question_id === answerId,
@@ -80,17 +85,17 @@ assert(mimarReadingById.get("s249-comp-q1")?.content?.items?.length === 4 &&
   "Gerçek hayat / tiyatro karşılaştırmasında akış olay-durumu tek görsel ölçütte birleştirirken kanonik cevap beş başlığı korumalı.");
 assert(mimarReadingById.get("s250-social-table")?.content?.items?.length === 7 &&
   mimarReadingById.get("s250-social-table-rest")?.content?.items?.length === 6 &&
-  mimarReadingById.get("s250-social-table-rest")?.answer === null &&
-  Object.keys(mimarReadingById.get("s250-social-table")?.answer?.answer_sections ?? {}).length === 13,
-  "Sosyal hayat tablosunun on üç ifadesi tek kanonik cevaba bağlı olmalı.");
+  Object.keys(mimarReadingById.get("s250-social-table")?.answer?.answer_sections ?? {}).length === 7 &&
+  Object.keys(mimarReadingById.get("s250-social-table-rest")?.answer?.answer_sections ?? {}).length === 6,
+  "Sosyal hayatı yansıtan ifadeler tablosu yedi ve altı maddelik iki kanonik cevaba ayrılmalı.");
 for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
 assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 235 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
-  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 158,
-  "Tema 4 tamamı 14 ders / 235 ekran / 143 kaynak / 158 cevap olmalı.");
+  theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 164,
+  "Tema 4 tamamı 14 ders / 235 ekran / 143 kaynak / 164 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -160,7 +165,7 @@ for (const [id, sourceId, answerId] of [
   ["s257-q1","T04-S0025","T4-P257-Q01"],
   ["s258-q2","T04-S0026","T4-P258-Q02"],
   ["s258-q1","T04-S0027","T4-P258-Q01"],
-  ["s258-grammar","T04-S0028","T4-P258-GRAM01"],
+  ["s258-grammar-apply","T04-S0028","T4-P258-GRAM01"],
   ["s259-q1","T04-S0029","T4-P259-Q01"],
   ["s259-q2","T04-S0030","T4-P259-Q02"]
 ]) {
@@ -173,12 +178,13 @@ assert(mimarStructureById.get("s256-elements")?.content?.items?.length === 5 &&
   mimarStructureById.get("s256-relations")?.answer === null,
   "Yapı unsurları beş alan, ilişkiler dört alan ve tek kanonik cevap olmalı.");
 assert(mimarStructureById.get("s257-q1")?.content?.sections?.length === 2 &&
-  mimarStructureById.get("s258-q2")?.content?.sections?.length === 2,
-  "Monolog ve diyalog örneği ve işlevi ayrı sorularda korunmalı.");
+  !mimarStructureById.get("s258-q2")?.content?.sections &&
+  Object.keys(mimarStructureById.get("s258-q2")?.answer?.answer_sections ?? {}).length === 2,
+  "Monolog ve diyalog örneği ile işlevi ayrı sorularda, cevap sızıntısı olmadan korunmalı.");
 assert(mimarStructureById.get("s258-grammar")?.content?.items?.length === 4 &&
   mimarStructureById.get("s258-grammar-apply")?.content?.items?.length === 6 &&
-  mimarStructureById.get("s258-grammar-apply")?.answer === null &&
-  Object.keys(mimarStructureById.get("s258-grammar")?.answer?.answer_sections ?? {}).length === 6,
+  mimarStructureById.get("s258-grammar")?.answer === null &&
+  Object.keys(mimarStructureById.get("s258-grammar-apply")?.answer?.answer_sections ?? {}).length === 6,
   "Dil bilgisi tablosunda altı cümle ve dört sınıflandırma sütunu korunmalı.");
 for (const step of mimarStructure.steps) {
   assert(step.source.source_status === "VERIFIED",
@@ -381,13 +387,14 @@ for (const step of merdivenDeep.steps) {
 const theatreWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-TIYATRO-CANLANDIRMA-280-283");
 assert(theatreWorkshop && theatreWorkshop.printed_page_range === "280-283" &&
   theatreWorkshop.coverage.steps === 16 && theatreWorkshop.coverage.source_records === 10 &&
-  theatreWorkshop.coverage.answer_entries === 12,
-  "Tiyatro canlandırma s.280–283 16 ekran / 10 kaynak / 12 cevap içermeli.");
+  theatreWorkshop.coverage.answer_entries === 13,
+  "Tiyatro canlandırma s.280–283 16 ekran / 10 kaynak / 13 cevap içermeli.");
 const theatreWorkshopById = new Map(theatreWorkshop.steps.map(step => [step.id, step]));
 assert(theatreWorkshopById.size === 16, "Tiyatro canlandırma ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s280-q1","T04-S0074","T4-P280-Q01"],
   ["s280-q2","T04-S0075","T4-P280-PERF02"],
+  ["s280-subtext","T04-S0075","T4-P280-SUBTEXT01"],
   ["s281-q3","T04-S0076","T4-P281-Q03"],
   ["s281-q4","T04-S0077","T4-P281-Q04"],
   ["s281-plan","T04-S0078","T4-P281-PERF01"],
@@ -473,8 +480,8 @@ for (const step of anadoluListening.steps) {
 const anadoluAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297");
 assert(anadoluAnalysis && anadoluAnalysis.printed_page_range === "291-297" &&
   anadoluAnalysis.coverage.steps === 24 && anadoluAnalysis.coverage.source_records === 21 &&
-  anadoluAnalysis.coverage.answer_entries === 22,
-  "Anadolu İnsanı çözümleme s.291–297 24 ekran / 21 kaynak / 22 cevap içermeli.");
+  anadoluAnalysis.coverage.answer_entries === 23,
+  "Anadolu İnsanı çözümleme s.291–297 24 ekran / 21 kaynak / 23 cevap içermeli.");
 const anadoluAnalysisById = new Map(anadoluAnalysis.steps.map(step => [step.id, step]));
 assert(anadoluAnalysisById.size === 24, "Anadolu İnsanı çözümleme ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
@@ -499,7 +506,8 @@ for (const [id, sourceId, answerId] of [
   ["s296-q13","T04-S0113","T4-P296-Q13"],
   ["s296-q14","T04-S0114","T4-P296-Q14"],
   ["s297-q1","T04-S0115","T4-P297-Q01"],
-  ["s297-q2","T04-S0116","T4-P297-PERF02"]
+  ["s297-q2","T04-S0116","T4-P297-PERF02"],
+  ["s297-next","T04-S0116","T4-P297-PERF03"]
 ]) {
   assert(anadoluAnalysisById.get(id)?.source?.source_record_id === sourceId &&
     anadoluAnalysisById.get(id)?.answer?.question_id === answerId,
@@ -523,8 +531,8 @@ for (const step of anadoluAnalysis.steps) {
 const posterWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-AFIS-ATOLYESI-298-302");
 assert(posterWorkshop && posterWorkshop.printed_page_range === "298-302" &&
   posterWorkshop.coverage.steps === 19 && posterWorkshop.coverage.source_records === 13 &&
-  posterWorkshop.coverage.answer_entries === 15,
-  "Afiş atölyesi s.298–302 19 ekran / 13 kaynak / 15 cevap içermeli.");
+  posterWorkshop.coverage.answer_entries === 16,
+  "Afiş atölyesi s.298–302 19 ekran / 13 kaynak / 16 cevap içermeli.");
 const posterById = new Map(posterWorkshop.steps.map(step => [step.id, step]));
 assert(posterById.size === 19, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
@@ -542,7 +550,8 @@ for (const [id, sourceId, answerId] of [
   ["s302-q3","T04-S0126","T4-P302-PERFQ03"],
   ["s302-q4","T04-S0127","T4-P302-PERF04"],
   ["s302-rubric","T04-S0128","T4-P302-PERF05"],
-  ["s302-journal","T04-S0129","T4-P302-PERF06"]
+  ["s302-journal","T04-S0129","T4-P302-PERF06"],
+  ["s302-next","T04-S0129","T4-P302-PERF07"]
 ]) {
   assert(posterById.get(id)?.source?.source_record_id === sourceId &&
     posterById.get(id)?.answer?.question_id === answerId,
@@ -604,7 +613,7 @@ for (const [id, sourceId, answerId] of [
     theme4AssessmentById.get(id)?.answer?.question_id === answerId,
     `Tema 4 değerlendirme kanonik bağlantı: ${id}`);
 }
-assert(theme4AssessmentById.get("s307-q11")?.content?.items?.length === 3 &&
+assert(theme4AssessmentById.get("s307-q11")?.content?.items?.length === 4 &&
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections &&
   Object.keys(theme4AssessmentById.get("s305-q5")?.answer?.answer_sections ?? {}).length === 4,
   "İzleme mecraları tablosu ve afiş görsel değerlendirmesi yapılandırılmış kalmalı.");

@@ -19,17 +19,7 @@
       "prompt": "Konuya Başlarken — Tarık Buğra ve Âşık Veysel'e ilişkin iki parçayı okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İlk metinde Tarık Buğra’nın radyo oyunu ve ilk telifi; ikinci metinde Âşık Veysel’in tanışmaları ve gezileri anlatılır. Bu ayrıntıları karşılaştırın.",
-        "sections": [
-          {
-            "title": "Tarık Buğra — Askerde / İlk Telif Ücreti",
-            "body": "Aile içindeki iddia → radyofonik oyunun yazılması → kabul edilmesi → ilk telif."
-          },
-          {
-            "title": "Âşık Veysel — Gençlik Yılları",
-            "body": "Ahmet Kutsi Tecer'le tanışma → Âşıklar Bayramı → belge → başka illere açılma."
-          }
-        ]
+        "lead": "Basılı s.194’teki Tarık Buğra ve Âşık Veysel parçalarını okuyup yaşamlarındaki önemli olayları not edin."
       }
     },
     {
@@ -41,14 +31,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P194-Q01",
       "content": {
-        "lead": "Doğum–eğitim gibi genel bilgilerin yanı sıra hayatı etkileyen belirli olaylar ve kişiler de önemlidir.",
-        "items": [
-          "Aile, öğrenim ve yaşadığı dönem",
-          "Meslek, sanat ve eserleri",
-          "Yol açıcı tanışmalar ve dönüm noktaları",
-          "Çalışmaların sonuçları"
-        ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Metindeki somut ayrıntıları kullanın; ‘yerelden ulusal değere dönüşme’, ‘tesadüfî başlangıç’ gibi değerlendirmeleri zorunlu sonuç yapmayın."
+        "lead": "Metinlerdeki somut olaylardan hareketle biyografilerde hangi tür yaşam ayrıntılarının işlendiğini açıklayın."
       }
     },
     {
@@ -59,13 +42,11 @@
       "prompt": "Tarık Buğra'nın biyografisinde hangi dönüm noktasına yer verilmiş?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir radyo programı üzerine aile ortamında başlayan iddianın ‘Arayan Bulur’ piyesine ve ilk telife dönüşmesi.",
-        "sections": [
-          {
-            "title": "Neden seçilmiş?",
-            "body": "Küçük bir olayın yazarın meslek yaşamında somut sonuç doğurduğunu gösterir."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P194-FLOW-S194_TARIK",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -76,13 +57,11 @@
       "prompt": "Âşık Veysel'in yaşamında hangi kişi ve olay değişim yaratmış?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "1930'da Ahmet Kutsi Tecer'le tanışır; 1931'de Sivas Âşıklar Bayramı'na katılır ve ‘Halk Şairi’ belgesi sonrası farklı illerde şiir söyler.",
-        "sections": [
-          {
-            "title": "Neden seçilmiş?",
-            "body": "Sanatçının çevresiyle kurduğu bağ ve yeni imkânların biyografideki rolünü gösterir."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P194-FLOW-S194_VEYSEL",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -107,7 +86,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P195-PERF01",
       "content": {
-        "lead": "Amaç örneği: Sanatçının eğitimi, meslek ve yayın hayatındaki dönüm noktalarını izlemek. Kendi okuma amacınızı derse başlamadan belirleyin.",
+        "lead": "Kendi okuma amacınızı belirleyin; hangi bilgi türünü izleyeceğinizi ve sonunda yanıtlayacağınız soruyu yazın.",
         "items": [
           "Öğrenmek istediğim yaşam dönemi",
           "İzleyeceğim bilgi türü",
@@ -199,13 +178,11 @@
       "prompt": "s.196 — Millî marş yarışmasına ilişkin anlatılan olay sırasını belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yarışma ilanı → para ödülüne mesafeli duruş → ödülü almama şartıyla yazma → 1 Mart 1921 okuma → 12 Mart 1921 kabul.",
-        "sections": [
-          {
-            "title": "Olay sırası",
-            "body": "Mehmet Âkif’in İstiklâl Marşı’nı yazma sürecini ve bu sürecin koşullarını metindeki bilgilere göre inceleyin."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P196-FLOW-S196_ANTHEM",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {

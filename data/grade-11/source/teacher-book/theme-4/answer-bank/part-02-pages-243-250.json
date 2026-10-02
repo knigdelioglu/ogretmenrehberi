@@ -13,12 +13,12 @@
       "prompt_summary": "Metindeki altı sözcük ve söz öbeğinin bağlamsal anlamını ve alternatiflerini bulma",
       "answer": "Aşağıdaki karşılıklar metindeki kullanıma göre verilmiştir. Karekodla sözlükten doğrulama yapılırken sözcüğün bu bağlamdaki anlamı esas alınabilir.",
       "answer_sections": {
-        "sadr-ı âzam": "Bağlamdaki anlamı sadrazamdır; Osmanlı devlet teşkilatındaki tarihî görev adı korunmalıdır. Öneri: sadrazam / başvezir.",
+        "çağdaş": "Aynı dönemde yaşayan veya aynı çağa ait olan. Öneri: dönemdaşı.",
+        "özge": "Başka, gayrı. Öneri: başka, gayrı.",
         "görkemli": "İhtişamlı, etkileyici, büyük ve gösterişli. Öneri: ihtişamlı / gösterişli.",
         "şevk": "Bir işi yapma isteği, coşku ve heves. Öneri: istek, heyecan.",
-        "çağdaş": "Aynı dönemde yaşayan veya aynı çağa ait olan. Öneri: dönemdaşı.",
         "avaze": "Ses, ün veya sesin yayılışı; Baki dizesinde adın/sesin dünyaya duyurulması anlamı öne çıkar. Öneri: ses, ün.",
-        "özge": "Başka, gayrı. Öneri: başka, gayrı."
+        "sadr-ı âzam": "Bağlamdaki anlamı sadrazamdır; Osmanlı devlet teşkilatındaki tarihî görev adı korunmalıdır. Öneri: sadrazam / başvezir."
       },
       "guidance": "Tarihî terimlerde modern makam adlarını eş anlamlıymış gibi kullanmayın. 'Sadr-ı âzam' için sadrazam/başvezir; şiirsel 'avaze' için sözlük anlamı ile dizedeki işlev birlikte ele alınmalıdır."
     },
@@ -94,7 +94,18 @@
         "fırsat gözlemek": "Hayır. Bu kullanım öncelikle kişinin mesleki ilerleme isteğini anlatan genel bir deyimdir; belirli bir toplumsal kurumu veya yaşam biçimini göstermez.",
         "medrese, han, kervansaray": "Evet. Eğitim, konaklama ve ticaret/yolculukla ilgili toplumsal kurum ve mekânları adlandırır.",
         "meyvesini toplamak": "Hayır. Çalışmanın sonucunu anlatan mecazlı bir söyleyiştir; kendi başına belirli bir sosyal uygulamayı göstermez.",
-        "bir ders gibi": "Hayır. İncelemenin değerini anlatan benzetmedir; toplumsal yaşamdan çok anlatıcının yaklaşımını belirtir.",
+        "bir ders gibi": "Hayır. İncelemenin değerini anlatan benzetmedir; toplumsal yaşamdan çok anlatıcının yaklaşımını belirtir."
+      }
+    },
+    {
+      "question_id": "T4-P250-TABLE01-REST",
+      "entry_type": "question_answer",
+      "printed_page": 250,
+      "question_no": "Sıra Sizde / kalan ifadeler",
+      "source_locator": "basılı s.250 / PDF s.251 — sosyal hayat tablosunun kalan ifadeleri",
+      "prompt_summary": "Sosyal hayatı yansıtan ifadeler tablosundaki kalan altı ifadeyi gerekçelendirme",
+      "answer": "Kalan ifadeler için örnek sınıflandırma aşağıdadır; mecazlı söyleyişlerle dönem kurum ve yaşayışını bildiren ifadeleri ayırırken gerekçenizi metin bağlamıyla destekleyin.",
+      "answer_sections": {
         "meşale ışıkları": "Evet. Dönemin aydınlatma koşullarını ve çalışma ortamını görünür kılar.",
         "tahta çıkmak": "Evet. Hükümdarlık ve yönetimin el değiştirmesiyle ilgili tarihsel-siyasal yaşamı yansıtır.",
         "maddi ve manevi zenginlik": "Evet. Toplumun üretimini, kültürel birikimini ve değer anlayışını anlatır.",

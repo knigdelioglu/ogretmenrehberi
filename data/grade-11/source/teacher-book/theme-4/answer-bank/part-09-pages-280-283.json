@@ -21,7 +21,27 @@
       "source_locator": "basılı s.280 / PDF s.281 — Konuşmayı Yönetebilme soru 2",
       "prompt_summary": "Bir rolde canlandırma yaparken dikkat edilecek karakter ve sahne unsurlarını gerekçelendirme",
       "answer": "Örnek cevap: Önce karakterin ait olduğu toplumsal sınıfı, milliyeti ve tarihsel ortamı; onu eyleme götüren duygu ve amaçları; fiziksel özelliklerini ve yaşadığı zamanı, şehri, yaşam çevresini anlamaya çalışırdım. Ardından “Karakterin yerinde olsaydım ne yapardım?” sorusuyla empati kurup rolün iç yaşamını oluştururdum. Rolü inceleme → rolün yaşamını kurma → canlandırma aşamalarını izleyerek bu yorumu jest, mimik, ses, hareket ve beden kullanımıyla sahnede fiziksel biçime dönüştürürdüm.",
-      "guidance": "Canlandırmada karakterin sosyolojik, psikolojik ve biyolojik/fiziksel boyutlarını birlikte düşünün; rolü inceleme, rolün yaşamını kurma ve canlandırma aşamalarını gerekçelendirin."
+      "guidance": "Canlandırmada karakterin sosyolojik, psikolojik ve biyolojik/fiziksel boyutlarını birlikte düşünün; rolü inceleme, rolün yaşamını kurma ve canlandırma aşamalarını gerekçelendirin.",
+      "answer_sections": {
+        "Karakterin amacı ve ilişkileri": "Karakterin amacı, ilişkileri ve eyleme götüren duyguları belirlenir.",
+        "Ses tonu, vurgu ve tempo": "Sözlerin anlamına ve karakterin durumuna uygun ses tonu, vurgu ve tempo seçilir.",
+        "Jest, mimik ve beden dili": "Karakterin iç yaşamı jest, mimik ve beden kullanımıyla sahnede görünür kılınır.",
+        "Sahne konumu ve diğer oyuncularla etkileşim": "Sahne konumu ve diğer oyuncularla etkileşim karakterin amacı ve ilişkileriyle uyumlu kurulur."
+      }
+    },
+    {
+      "question_id": "T4-P280-SUBTEXT01",
+      "entry_type": "reference_answer",
+      "printed_page": 280,
+      "question_no": "Alt metin ve uzam",
+      "source_locator": "basılı s.280 / PDF s.281 — Alt metin ve uzam",
+      "prompt_summary": "Söz, alt metin ve uzam kavramlarını tiyatro canlandırması bağlamında ayırma",
+      "answer": "Söz, karakterin doğrudan söylediği cümledir; alt metin, bu sözün ardındaki niyet ve duygudur; uzam ise karakterin içinde bulunduğu tarihsel, toplumsal, psikolojik ve fiziksel çevredir.",
+      "answer_sections": {
+        "Söz": "Metinde doğrudan duyulan cümle.",
+        "Alt metin": "Karakterin niyeti, duygusu veya gizlediği düşünce.",
+        "Uzam": "Karakterin tarihsel, toplumsal, psikolojik ve fiziksel çevresi."
+      }
     },
     {
       "question_id": "T4-P281-Q03",

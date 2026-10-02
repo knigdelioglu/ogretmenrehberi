@@ -49,18 +49,13 @@
       "prompt": "Konuşmayı Yönetebilme 2 — Size verilen bir rolü canlandırırken en çok nelere dikkat ederdiniz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Rolün sözlerini ezberlemekle yetinmeyin; karakterin amacı, ilişkileri, alt metni, ses ve beden kullanımını birlikte düşünün.",
-        "items": [
-          "Karakterin amacı ve ilişkileri",
-          "Ses tonu, vurgu ve tempo",
-          "Jest, mimik ve beden dili",
-          "Sahne konumu ve diğer oyuncularla etkileşim"
-        ]
+        "lead": "Rolü canlandırırken karakteri, sesi, bedeni ve sahne ilişkilerini birlikte düşünerek kendi planınızı oluşturun."
       }
     },
     {
       "id": "s280-subtext",
       "source_record_id": "T04-S0075",
+      "answer_id": "T4-P280-SUBTEXT01",
       "layout": "reference",
       "density": "compact",
       "prompt": "Alt metin ve uzam — Oyuncu söylenmeyeni nasıl görünür kılar?",
@@ -70,15 +65,15 @@
         "sections": [
           {
             "title": "Söz",
-            "body": "Metinde doğrudan duyulan cümle."
+            "body": "Bir replikte doğrudan söylenen ile söylenmeyen anlamı ayırınız."
           },
           {
             "title": "Alt metin",
-            "body": "Karakterin niyeti, duygusu veya gizlediği düşünce."
+            "body": "Karakterin niyetini ve duygusunu metinden çıkarınız."
           },
           {
             "title": "Uzam",
-            "body": "Karakterin tarihsel, toplumsal, psikolojik ve fiziksel çevresi."
+            "body": "Sahne uzamının karakter davranışına etkisini kendi örneğinizle açıklayınız."
           }
         ]
       }

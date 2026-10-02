@@ -63,9 +63,9 @@ const theme3Types = theme3Entries.reduce((counts, entry) => {
   counts[entry.entry_type] = (counts[entry.entry_type] ?? 0) + 1;
   return counts;
 }, {});
-assert(theme3Entries.length === 149 &&
+assert(theme3Entries.length === 220 &&
   theme3Types.question_answer === 81 &&
-  theme3Types.performance_support === 43 &&
+  theme3Types.performance_support === 114 &&
   theme3Types.source_limited === 25,
   "Tema 3 parça kayıtları güncel kanonik dağılımı ve source-limited sayısını vermeli.");
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");

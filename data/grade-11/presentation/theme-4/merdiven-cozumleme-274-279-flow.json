@@ -141,21 +141,7 @@
       "prompt": "Düşünelim Paylaşalım 2/a — Hikâye bugün yazılsaydı kurgu nasıl değişebilirdi?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Asansör, yürüyen merdiven veya dijital iletişim gibi yeni imkânların karşılaşma sıklığını ve merdiven simgesini nasıl etkileyebileceğini düşünün.",
-        "sections": [
-          {
-            "title": "Mimari",
-            "body": "Merdivenin yerini başka bir hareket/ulaşım düzeni alabilir."
-          },
-          {
-            "title": "Teknoloji",
-            "body": "Acil haber ve kişiler arası iletişim daha hızlı gerçekleşebilir."
-          },
-          {
-            "title": "Korunabilecek tema",
-            "body": "Yaşlanma, kuşak değişimi ve meslek hırsı farklı ayrıntılarla sürebilir."
-          }
-        ]
+        "lead": "Asansör, yürüyen merdiven veya dijital iletişim gibi yeni imkânların karşılaşma sıklığını ve merdiven simgesini nasıl etkileyebileceğini düşünün."
       }
     },
     {
@@ -211,13 +197,21 @@
         "sections": [
           {
             "title": "İç çatışmalar",
-            "body": "Yükselme/acele ↔ hayatın geçiciliği; gençlik algısı ↔ yaşlanmayı kabul etme."
+            "body": "Anlatıcının iç gerilimlerini metindeki davranış ve sözlerden çıkarınız."
           },
           {
             "title": "İnsan–insan",
-            "body": "İhtiyarın deneyimi ↔ anlatıcının aceleciliği; anlatıcının gence önyargısı ↔ gencin nazik tavrı."
+            "body": "Kişiler arasındaki gerilimleri metindeki karşılaşmalardan çıkarınız."
           }
-        ]
+        ],
+        "note": "İlk iki çatışma grubunu belirledikten sonra karşılaşmaların anlatıcıdaki değişime etkisini tartışınız."
+      },
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 2
+        },
+        "answer_text": "end"
       }
     },
     {
@@ -235,6 +229,13 @@
           "İhtiyar ölmemiş olsaydı",
           "Anlatıcı genç memurla karşılaşmasaydı"
         ]
+      },
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 3
+        },
+        "answer_text": "end"
       }
     },
     {
@@ -243,6 +244,13 @@
       "answer_id": "T4-P277-Q01",
       "layout": "structure",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 4
+        },
+        "answer_text": "end"
+      },
       "prompt": "Sıra Sizde 1 — Davranışları yansıttıkları değerlerle eşleştiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
@@ -275,6 +283,13 @@
       "answer_id": "T4-P278-TABLE01",
       "layout": "structure",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 4
+        },
+        "answer_text": "end"
+      },
       "prompt": "Fark Edelim — Yedi ayrıntıyı ilgili disiplinlerle eşleştiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
@@ -315,6 +330,13 @@
       "answer_id": "T4-P279-Q01",
       "layout": "structure",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 4
+        },
+        "answer_text": "end"
+      },
       "prompt": "Fark Edelim — Edgü'nün küçürek hikâye anlayışı Merdiven'e nasıl yansıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {

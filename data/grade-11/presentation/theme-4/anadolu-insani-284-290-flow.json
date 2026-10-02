@@ -48,7 +48,7 @@
       "prompt": "Konuya Başlarken 2 — 'Kırık ayna' benzetmesi edebî eserin hayatı yansıtma biçimini nasıl anlatır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Edebî eserin hayatın tamamını kopyalamadığını; belirli bir parçasını sanatçının bakışıyla seçip yeniden kurduğunu vurgulayın."
+        "lead": "‘Kırık ayna’ benzetmesinin edebî eserin hayatla ilişkisini nasıl açıkladığını kendi gerekçenizle yorumlayın."
       }
     },
     {
@@ -195,8 +195,15 @@
       "id": "s287-vocab",
       "source_record_id": "T04-S0086",
       "answer_id": "T4-P287-VOC01",
-      "layout": "structure",
+      "layout": "vocabulary",
       "density": "compact",
+      "presentation": {
+        "interleave": {
+          "source": "answer_sections",
+          "group_size": 3
+        },
+        "answer_text": "end"
+      },
       "prompt": "Söz Varlığımız — Beş kelime ve kelime grubunu bağlam içinde anlamlandırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {

@@ -39,11 +39,11 @@
       "prompt": "Çalışma Kâğıdı 1 — Üslup seçiminin nedenlerini ve sonuçlarını ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mümtaz'ın huzur/kimlik arayışının şiirsel betimlemeyi, musikiyi ve iç çözümlemeyi nasıl öne çıkardığını düşünün.",
-        "items": [
-          "Neden: metnin hangi sorusu veya duygusu?",
-          "Sonuç: hangi anlatım yolu ve okur üzerindeki etkisi?"
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P192-FLOW-S192_STYLE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -54,11 +54,11 @@
       "prompt": "Çalışma Kâğıdı 2 — Yazıldığı dönemin metne yansıyan özelliklerini belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki Tanpınar biyografisiyle Huzur kesitinin ‘yeni hayat’ ve eski kültür üzerine sözlerini birlikte okuyun.",
-        "items": [
-          "Geleneksel kültür / musiki",
-          "Modernleşme ve yeni hayat ihtiyacı"
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P192-FLOW-S192_PERIOD",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -69,12 +69,11 @@
       "prompt": "Çalışma Kâğıdı 3 — İçerik, yapı, dil ve toplum arasındaki ilişkiyi gerekçelendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mümtaz'ın kültür sevgisiyle Nuran'ın Üsküdar'ın gündelik güçlüklerini hatırlatması aynı şehir anlatısında yer alır.",
-        "items": [
-          "İçerik ve kişi görüşleri",
-          "Mekân, zaman ve kültürel hafıza",
-          "Söz varlığı ve sosyal hayat"
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P192-FLOW-S192_SOCIETY",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -85,7 +84,11 @@
       "prompt": "Çalışma Kâğıdı 4 — Olay, kişi, mekân ve zamanın metne katkısını söyleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kişiler farklı görüşleri, tarihî semtler hafızayı, hatıralar da geçmişle şimdiki yaşantı arasındaki bağı taşır."
+        "lead": "Çalışma Kâğıdı 4 — Olay, kişi, mekân ve zamanın metne katkısını basılı parçadan hareketle açıklayınız."
+      },
+      "answer_id": "T3-P192-FLOW-S192_STRUCTURE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -96,12 +99,11 @@
       "prompt": "Çalışma Kâğıdı 5 — Millî, manevi ve evrensel değerleri birbirine karıştırmadan yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her başlık için metinden somut kişi, söz veya davranış bulun.",
-        "items": [
-          "Millî: tarihî şehir ve musiki mirası",
-          "Manevi: aile bağı, şefkat, saygı",
-          "Evrensel: sevgi ve başkasına/canlılara duyarlılık"
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P192-FLOW-S192_VALUES",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {

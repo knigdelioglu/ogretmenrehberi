@@ -53,17 +53,11 @@
       "prompt": "Birinci parçada çocukluk hatırası nasıl bir iç gerilim doğuruyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mümtaz'ın vapur düdükleriyle hatıralara gitmesi ve hüznü 'şifasız' bulması üzerinde durun.",
-        "sections": [
-          {
-            "title": "Çatışma",
-            "body": "Gündelik yaşamı zenginleştiren hatıranın aynı anda iyileşmeyen hüzne dönüşmesi."
-          },
-          {
-            "title": "Anlatım",
-            "body": "Anlatıcının Mümtaz'ın duygusuna yaklaşması ve ses–hatıra çağrışımı."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P189-FLOW-S189_ONE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -74,17 +68,11 @@
       "prompt": "İkinci parçada Boğaz'ın güzelliği neden huzur vermeye yetmiyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Güzellik beğenisiyle yalnızlığa katlanamama düşüncesini ayrı söyleyin.",
-        "sections": [
-          {
-            "title": "Çatışma",
-            "body": "Mümtaz'ın içinde yaşadığı yalnızlık; mekânın güzelliğiyle ruh hâli karşı karşıya gelir."
-          },
-          {
-            "title": "Anlatım",
-            "body": "Gece/kış betimlemesinin ardından gelen kısa diyalog Mümtaz'ın gerilimini görünür kılar."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P189-FLOW-S189_TWO",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -95,17 +83,11 @@
       "prompt": "Üçüncü parçada Nuran'ın kararını nasıl yorumlarsınız?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Nuran hem İhsan ile Macide'yi seveceğini söyler hem nişanlı sıfatıyla takdim edilmeye çekinir.",
-        "sections": [
-          {
-            "title": "Çatışma",
-            "body": "Tanışma arzusu ile tanıtılma biçimine yönelik tereddüt."
-          },
-          {
-            "title": "Sınır",
-            "body": "'Nasıl olsa görürüz' dediği için tanışmayı tümden reddetmiş saymayın."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P189-FLOW-S189_THREE",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -116,12 +98,11 @@
       "prompt": "EŞLEŞ — Anlatıcı, betimleme, diyalog ve psikolojik çözümlemenin çatışmaya katkısını tartışınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sıra arkadaşınızla her parça için bir anlatım aracı ve onu görünür kıldığı duygu/gerilim arasında bağ kurun.",
-        "items": [
-          "Birinci: üçüncü kişi anlatıcı, ses/hatıra çağrışımı",
-          "İkinci: kış/Boğaz betimlemesi ve diyalog",
-          "Üçüncü: Nuran'ın düşünmesi ve diyalogla tereddüdünü söylemesi"
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P189-FLOW-S189_PAIR",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -166,21 +147,11 @@
       "prompt": "s.190'daki dil karşılaştırmasına metinden kanıt seçiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "'Hendesi', 'mazi', 'hülya', 'daüssıla', 'bilhassa' gibi kelimeleri güncel kelimelerden ayırın.",
-        "sections": [
-          {
-            "title": "Ortak yan",
-            "body": "'Gün', 'ev', 'seviyordu' gibi bugün de kullanılan dil ögeleri."
-          },
-          {
-            "title": "Farklı yan",
-            "body": "Tarihî/mimari adlar ve bugün daha seyrek duyulan sözler."
-          },
-          {
-            "title": "Üslup",
-            "body": "İstanbul akşamlarının 'ziyafet sofraları'na benzetilmesi duygu ve çağrışımı artırır."
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P190-FLOW-S190_WORDS",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -192,7 +163,7 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "answer_id": "T3-P190-GRAM01",
       "content": {
-      "lead": "a–f cümlelerinin ögelerini belirleyin. b'deki iki yüklemi ayrı değerlendirin; d'deki uzun fiilimsi gruplarını sözcük sözcük parçalamayın.",
+        "lead": "a–f cümlelerinin ögelerini belirleyin. b'deki iki yüklemi ayrı değerlendirin; d'deki uzun fiilimsi gruplarını sözcük sözcük parçalamayın.",
         "items": [
           "a — İster istemez...",
           "b — Eski musıkîmizi...",
@@ -212,13 +183,11 @@
       "prompt": "a) ‘İster istemez onların bir parçasıyız.’ cümlesinin ögelerini ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yüklem isim soyludur; özne 'biz' ekinden anlaşılır.",
-        "sections": [
-          {
-            "title": "Düşünme yolu",
-            "body": "Kim? (biz) / Ne durumdayız? (onların bir parçasıyız) / Nasıl? (ister istemez)"
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P190-FLOW-S190_GRAM_A",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -229,17 +198,11 @@
       "prompt": "b) ‘Eski musıkîmizi seviyoruz, iyi kötü anlıyoruz.’ cümlesinde iki yargıyı çözünüz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Nesne ilk yargıda açıkça söylenir, ikinci yargıda bağlamca ortaktır; ‘iyi kötü’ ikinci yüklemi niteler.",
-        "sections": [
-          {
-            "title": "İki yüklem",
-            "body": "seviyoruz / anlıyoruz"
-          },
-          {
-            "title": "Ortak nesne",
-            "body": "eski musıkîmizi"
-          }
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P190-FLOW-S190_GRAM_B",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -250,7 +213,11 @@
       "prompt": "c) ‘İstanbul'un bu semtleri ... bitaptı.’ cümlesinde zaman ve neden bildiren grupları ayırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "'Bu ağustos gününde' zaman, 'pislikten, tozdan, sıcaktan' neden bildirir."
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P190-FLOW-S190_GRAM_C",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -261,7 +228,11 @@
       "prompt": "ç) ‘Biraz ötede ... bir türbe ... kendisini gösteriyor.’ cümlesinin ögelerini bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "'Kubbesi yıkılmış' öznenin içindedir; ‘düzgün ve vakur cephesiyle’ bütün olarak zarf görevindedir."
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P190-FLOW-S190_GRAM_CC",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -272,13 +243,11 @@
       "prompt": "d) Mümtaz'ın vapur düdüklerini dinlediği uzun cümleyi ana yüklemden geriye doğru çözünüz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Ana yüklem ‘anlardı’. Uzun zaman ve nesne grupları fiilimsi içerir; bunların içindeki sözcükleri ana cümlenin bağımsız ögeleri sanmayın.",
-        "items": [
-          "Özne: Mümtaz",
-          "Yüklem: anlardı",
-          "Zaman grubu: ... akislerini dinlediği zaman",
-          "Nesne: ara sıra içinde kabaran ... hüznün şifasızlığının hangi pınarlardan toplanıp geldiğini (“ara sıra” nesne grubunun içindedir)"
-        ]
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P190-FLOW-S190_GRAM_D",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -289,7 +258,11 @@
       "prompt": "e) ‘Bu gezintilerden dönüşlerinde Mümtaz'ı ... sıkıştırıyordu.’ cümlesinde gizli özneyi bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Söz konusu kişi, s.190'da Mümtaz'ı Şeyh Gâlip çalışması için sıkıştırdığı anlatılan Nuran'dır."
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P191-FLOW-S191_GRAM_E",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {
@@ -300,7 +273,11 @@
       "prompt": "f) ‘Nuran ... medreselere ... Tabhane'ye ... biçimine hayran oldu.’ cümlesindeki ortak yüklemi bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Birden çok yer tamlayıcısı aynı ‘hayran oldu’ yüklemine bağlanır."
+        "lead": "Görevi basılı kaynaktaki kanıtlara dayanarak yanıtlayınız."
+      },
+      "answer_id": "T3-P191-FLOW-S191_GRAM_F",
+      "presentation": {
+        "answer_text": "end"
       }
     },
     {

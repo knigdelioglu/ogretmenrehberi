@@ -2096,7 +2096,7 @@ PDF'nin basılı s. 236–307 aralığı görsel olarak sırayla incelendi ve 14
 
 ## ISSUE-074 — Tema girişinde beceri cevapları ilk görünümde açık
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 236\
 **Bölüm:** Tema başlangıcı / kullandığımız beceriler\
@@ -2121,7 +2121,7 @@ Soru, en azından ilk iki cevabı soru sorulmadan önce gösteriyor.
 
 ## ISSUE-075 — QR kod yönergesi öğrenci sunumunda öğretmene sesleniyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_LANGUAGE\
 **PDF sayfası:** Basılı s. 237\
 **Bölüm:** Tema sunusu karekodu\
@@ -2145,7 +2145,7 @@ Kitaptaki karekod, dijital tema sunusuna erişim sağlar; sınıfa yansıtılan 
 
 ## ISSUE-076 — Bilgi ve kurmaca metin sınıflamaları soru öncesinde gösteriliyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 240\
 **Bölüm:** Bilgi grafiği ve tiyatro metni\
@@ -2169,7 +2169,7 @@ Etiketler öğrencinin yapması beklenen sınıflandırmayı önceden verir.
 
 ## ISSUE-077 — Altı kelimenin anlamlarından önce ikinci grup gösteriliyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 247\
 **Bölüm:** Söz varlığı / kelime çalışması\
@@ -2195,33 +2195,33 @@ PDF'deki altı kelime bağlam içinde anlamlandırılır. Öğrenci ilk küçük
 2. İlgili sunum kartını ilk kez açın.
 3. Tıklamalarla görünen iki kelime grubunu ve anlam aşamalarını sırayla izleyin.
 
-## ISSUE-078 — Atasözlerinin kalan bölümü ilk bölümün cevaplarından sonra soruluyor
+## ISSUE-078 — Sosyal hayatı yansıtan ifadelerin kalan bölümü ilk bölümün cevaplarından sonra soruluyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** ORDERING\
 **PDF sayfası:** Basılı s. 250\
-**Bölüm:** Atasözleri ve anlamları\
+**Bölüm:** Sosyal hayatı yansıtan ifadeler\
 **İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Okuma ve Sanatın İşlevi
 
 ### PDF / beklenen durum
-Kitaptaki çalışma atasözlerini bütün olarak değerlendirmeye açar; her grup için önce düşünme alanı, sonra cevap aşaması beklenir.
+Kitaptaki çalışma sosyal hayatı yansıtan ifadeleri bütün olarak değerlendirmeye açar; her grup için önce düşünme alanı, sonra cevap aşaması beklenir.
 
 ### Sunumda gözlenen durum
-Bir kartta ilk yedi atasözünün cevapları gösteriliyor; ardından gelen kart kalan altı atasözünü öğrenciye soru olarak yöneltiyor.
+Bir kartta ilk yedi ifadenin cevapları gösteriliyor; ardından gelen kart kalan altı ifadeyi öğrenciye soru olarak yöneltiyor.
 
 ### Neden sorun
 Etkinliğin kalan kısmı, önceki cevaplar açıldıktan sonra geliyor; düşünme sırası ve soru-cevap düzeni bölünüyor.
 
 ### Beklenen davranış
-Atasözleri küçük gruplar hâlinde sorulmalı ve her grubun cevabı sonraki tıklamayla açılmalıdır.
+İfadeler küçük gruplar hâlinde sorulmalı ve her grubun cevabı sonraki tıklamayla açılmalıdır.
 
 ### Yeniden üretme
 1. PDF'de basılı s. 250'deki atasözü çalışmasını inceleyin.
-2. İlgili destede ilk yedi atasözünün cevap kartını ve hemen arkasından gelen kalan altı atasözü kartını açın.
+2. İlgili destede ilk yedi ifadenin cevap kartını ve hemen arkasından gelen kalan altı ifade kartını açın.
 
 ## ISSUE-079 — Yapı tablosunda sonraki aşama önceki cevapları ekrandan kaldırıyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 256\
 **Bölüm:** Olay örgüsünün yapı unsurları\
@@ -2245,7 +2245,7 @@ Her aşamada önceki unsurlar ve cevaplar korunmalı, yeni unsur tıklamayla ekl
 
 ## ISSUE-080 — “Fark Edelim 2” kartı cevap ipuçlarıyla açılıyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 257–258\
 **Bölüm:** Monolog ve oyun kişisinin iç dünyası\
@@ -2269,7 +2269,7 @@ Her aşamada önceki unsurlar ve cevaplar korunmalı, yeni unsur tıklamayla ekl
 
 ## ISSUE-081 — Sınıflandırma cevapları açıldıktan sonra aynı altı cümle yeniden soruluyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** ORDERING\
 **PDF sayfası:** Basılı s. 258\
 **Bölüm:** Anlatım ve cümleleri sınıflandırma\
@@ -2294,7 +2294,7 @@ Altı cümle soru aşamalarında sunulmalı, karşılık gelen sınıflandırmal
 
 ## ISSUE-082 — Altı kelimelik çalışmada ikinci grup ilk grubun anlamlarından önce açılıyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 266–268\
 **Bölüm:** Merdiven metni / söz varlığı\
@@ -2319,19 +2319,19 @@ Altı cümle soru aşamalarında sunulmalı, karşılık gelen sınıflandırmal
 1. PDF'de basılı s. 266–268'deki söz varlığı çalışmalarını inceleyin.
 2. Sunumdaki altı kelimelik kartı açıp tüm aşamaları sırayla ilerletin.
 
-## ISSUE-083 — Karşılaştırma görevindeki iki alanın örnek cevapları ilk görünümde açık
+## ISSUE-083 — Karşılaştırma görevindeki üç alanın örnek cevapları ilk görünümde açık
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 275\
 **Bölüm:** Düşünelim, Paylaşalım 2/a\
 **İlgili kayıt/etkinlik:** Merdiven — Karakter, Çatışma ve Değerlendirme
 
 ### PDF / beklenen durum
-Öğrenci iki alan için kendi karşılaştırma önerilerini metin ve oyun bağlamından üretmelidir.
+Öğrenci üç alan — Mimari, Teknoloji ve Korunabilecek tema — için kendi karşılaştırma önerilerini metin ve oyun bağlamından üretmelidir.
 
 ### Sunumda gözlenen durum
-Kart ilk açıldığında iki alan için yanıt önerileri görünür; tıklama daha kapsamlı açıklama ekler.
+Kart ilk açıldığında üç alan için yanıt önerileri görünür; tıklama daha kapsamlı açıklama ekler.
 
 ### Neden sorun
 Görev, cevap fikirleri önceden gösterilerek başlatılıyor.
@@ -2345,7 +2345,7 @@ Görev, cevap fikirleri önceden gösterilerek başlatılıyor.
 
 ## ISSUE-084 — Çatışma etkinliğinde iki cevap satırı soru aşamasında görünüyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 276–277\
 **Bölüm:** Çatışmalar ve alternatif kararlar\
@@ -2369,7 +2369,7 @@ Görev, cevap fikirleri önceden gösterilerek başlatılıyor.
 
 ## ISSUE-085 — Çatışma için karşı olgusal yanıtlar sonraki kartta yineleniyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** DUPLICATE_CONTENT\
 **PDF sayfası:** Basılı s. 276–277\
 **Bölüm:** Karakterin başka seçimler yapması\
@@ -2394,7 +2394,7 @@ Karşı olgusal seçenekler bir kez gösterilmeli; takip kartı varsa farklı bi
 
 ## ISSUE-086 — Yedi maddelik çalışma cevap açılmadan iki gruba bölünüyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 278\
 **Bölüm:** Disiplin ve insan ilişkileri tablosu\
@@ -2418,7 +2418,7 @@ Karşı olgusal seçenekler bir kez gösterilmeli; takip kartı varsa farklı bi
 
 ## ISSUE-087 — Sekiz karakter özelliği sorusu cevaplardan önce iki grup olarak veriliyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 278–279\
 **Bölüm:** Karakter özelliklerini metin örnekleriyle eşleştirme\
@@ -2442,7 +2442,7 @@ Karşı olgusal seçenekler bir kez gösterilmeli; takip kartı varsa farklı bi
 
 ## ISSUE-088 — Uzamın rolünü sorgulayan kart cevap ölçütleriyle açılıyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 280\
 **Bölüm:** Rol yaratmada uzamın işlevi\
@@ -2466,7 +2466,7 @@ Değerlendirme ölçütleri öğrenci düşünmeden önce cevap yönünü verir.
 
 ## ISSUE-089 — Konuşmayı yönetme sorusu dört cevap ipucuyla açılıyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 280\
 **Bölüm:** Konuşmayı Yönetebilme 2\
@@ -2490,7 +2490,7 @@ Yanıtın ana başlıkları tıklamadan önce sunulmaktadır.
 
 ## ISSUE-090 — Söz, alt metin ve uzam tanımları cevap öncesinde açık
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 280\
 **Bölüm:** Alt metin ve uzam\
@@ -2514,7 +2514,7 @@ Kavramları ayırt etme görevi, kavramsal cevaplar açılmadan önce sunulmuyor
 
 ## ISSUE-091 — Dinleme sorularının ilk iki kartında cevap ipuçları önceden görünüyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 284–290\
 **Bölüm:** Anadolu İnsanı / Fedakârlık — dinleme ve anlama\
@@ -2541,7 +2541,7 @@ Anadolu İnsanı ve Çalışkanlık QR videoları açılmadığından video içe
 
 ## ISSUE-092 — Dil işlevlerini belirleme sorusu kategorileri önceden gösteriyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 295\
 **Bölüm:** Dilin işlevleri\
@@ -2565,7 +2565,7 @@ Anadolu İnsanı ve Çalışkanlık QR videoları açılmadığından video içe
 
 ## ISSUE-093 — Öz değerlendirme kartında örnek hedef ilk görünümde veriliyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 297\
 **Bölüm:** Tema çalışmasını değerlendirme\
@@ -2589,7 +2589,7 @@ Kartın ilk görünümünde örnek hedef olarak “olgu ile yorumu ayrı not etm
 
 ## ISSUE-094 — Afiş çalışmasının kişisel hedef kartında örnek hedef baştan açık
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 299–302\
 **Bölüm:** Afiş yazma ve akran geri bildirimi\
@@ -2613,17 +2613,17 @@ Kartın ilk görünümünde örnek hedef olarak “olgu ile yorumu ayrı not etm
 
 ## ISSUE-095 — Afiş sloganı için kelime sayısı kaynakla çelişiyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** SOURCE_MISMATCH\
 **PDF sayfası:** Basılı s. 298\
 **Bölüm:** Afiş sloganı\
-**İlgili kayıt/etkinlik:** Fedakârlık Belgeseli — Afiş Yazma Atölyesi, 6. kart ve rubrik kartı
+**İlgili kayıt/etkinlik:** Fedakârlık Belgeseli — Afiş Yazma Atölyesi, s301-model / T4-P301-PERF02
 
 ### PDF / beklenen durum
 PDF sloganın üç, dört ya da beş sözcükten oluşmasını ister. Bağımsız değerlendirmede kaynak ölçütü 3–5 sözcüktür.
 
 ### Sunumda gözlenen durum
-6. kartta slogan için 3–6 sözcük aralığı yazıyor; ilerideki rubrik kartı 3–5 sözcük diyor.
+6. kartta slogan için 3–6 sözcük aralığı yazıyor; T4-P301-PERF02 / s301-model kaydı 3–5 sözcük diyor.
 
 ### Neden sorun
 Aynı sunum destesindeki yönerge ve değerlendirme ölçütü birbirini tutmuyor; 6 sözcüklü slogan yönergeye göre kabul edilirken rubriğe göre kapsam dışıdır.
@@ -2633,11 +2633,11 @@ Sunumun tüm aşamalarında PDF'deki 3–5 sözcük ölçütü aynı biçimde ku
 
 ### Yeniden üretme
 1. PDF'de basılı s. 298'deki slogan yönergesini okuyun.
-2. Afiş destesinin 6. kartındaki kelime sınırını ve rubrik kartındaki sınırı karşılaştırın.
+2. Afiş destesinin s299-strategy kaydındaki kelime sınırını ve T4-P301-PERF02 / s301-model kaydındaki sınırı karşılaştırın.
 
 ## ISSUE-096 — Soru 1'den önceki okuma kartı cevap iskeletini veriyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 303\
 **Bölüm:** Doğu–Batı sentezi ve kültürel özellikler\
@@ -2664,7 +2664,7 @@ Okuma kartı metne yönlendirmeli; cevap örnekleri Soru 1'in cevap aşamasında
 
 ## ISSUE-097 — Çadır sorusu duygusal cevap örneklerini ilk görünümde gösteriyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 304–305\
 **Bölüm:** Çadır ve metnin iletisi\
@@ -2691,7 +2691,7 @@ Metindeki ortak gelecek, kardeşlik ve okul/oyun/ders ayrıntıları olumlu bir 
 
 ## ISSUE-098 — Afiş görsellerini seçme sorusunda görsel seçenekler sunumda yok
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** MISSING_CONTENT\
 **PDF sayfası:** Basılı s. 305\
 **Bölüm:** Çadır metninin iletisini yansıtan afiş\
@@ -2715,7 +2715,7 @@ PDF'deki dört görsel sunumda seçenek olarak gösterilmeli ve cevap aşamasın
 
 ## ISSUE-099 — Çoktan seçmeli Soru 11'in kökü ve seçenekleri sunumda eksik
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** INCOMPLETE_CONTENT\
 **PDF sayfası:** Basılı s. 307\
 **Bölüm:** 2005–2025 belgesel izleme mecraları\
@@ -2742,7 +2742,7 @@ PDF'deki tam soru kökü ve seçenekler cevap öncesi gösterilmeli; doğru seç
 
 ## ISSUE-100 — Teknoloji sorusunun beklenen yönü ipucu olarak veriliyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 307\
 **Bölüm:** Teknolojik gelişmelerin belgesel etkisi\
@@ -2766,7 +2766,7 @@ Yönerge, iki temel argüman yönünü ve karşı sınırlamayı cevap açılmad
 
 ## ISSUE-101 — Aidiyet sorusunun ilk görünümü cevap etkenlerini sıralıyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PRESENTATION_FLOW\
 **PDF sayfası:** Basılı s. 307\
 **Bölüm:** Aidiyet videosu / yaşanılan yere aidiyet\
@@ -2794,7 +2794,7 @@ Aidiyet videosu açılmadığından videoda geçen somut örnekler doğrulanamad
 
 ## ISSUE-102 — Beş kelimenin cevap aşamaları önceki görev gruplarıyla eşleşmiyor
 
-**Durum:** OPEN\
+**Durum:** VERIFIED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 287\
 **Bölüm:** Anadolu İnsanı / Fedakârlık söz varlığı\
