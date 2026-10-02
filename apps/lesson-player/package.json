@@ -9,7 +9,7 @@
     "dev": "npm run data && vite",
     "build": "npm run data && npm run test:data && npm run test:runtime && npm run test:pptx-plan && tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test:runtime": "node scripts/test-runtime-contract.mjs",
+    "test:runtime": "node scripts/test-runtime-contract.mjs && node scripts/test-annotation-runtime.mjs",
     "test:browser": "node scripts/test-browser-runtime.mjs",
     "test:pptx-plan": "node scripts/test-pptx-export-plan.mjs",
     "test:pptx-export": "npm run test:pptx-plan && node scripts/test-pptx-export-browser.mjs"

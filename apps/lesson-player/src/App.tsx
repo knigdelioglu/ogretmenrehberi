@@ -12,6 +12,10 @@ import { TeacherGuidePanel } from "./components/TeacherGuidePanel";
 import { LessonOutline } from "./components/LessonOutline";
 import { LessonFooter } from "./components/LessonFooter";
 import { LessonToolbar } from "./components/LessonToolbar";
+import { AnnotationOverlay } from "./components/AnnotationOverlay";
+import { AnnotationToolbar } from "./components/AnnotationToolbar";
+import type { AnnotationState, AnnotationStroke, AnnotationTool } from "./annotation/types";
+import { appendAnnotation, clearAnnotations as clearStepAnnotations, removeAnnotation as removeStepAnnotation, undoAnnotation as undoStepAnnotation } from "./annotation/state.js";
 import { ExportDialog } from "./export/ExportDialog";
 import { capturePlannedSlide } from "./export/capture";
 import { planExportSlides } from "./export/plan.js";
@@ -95,6 +99,7 @@ type ProjectionSyncState = {
   revealed: RevealKey[];
   vocabularyTerms: Record<string, string[]>;
   assessmentSelections: Record<string, Record<number, string>>;
+  annotations: AnnotationState;
 };
 
 function restoredIndex() {
@@ -258,6 +263,9 @@ export default function App() {
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
   const [vocabularyTerms, setVocabularyTerms] = useState<Record<string, string[]>>({});
   const [assessmentSelections, setAssessmentSelections] = useState(restoredAssessmentSelections);
+  const [annotations, setAnnotations] = useState<AnnotationState>({});
+  const [annotationMode, setAnnotationMode] = useState(false);
+  const [annotationTool, setAnnotationTool] = useState<AnnotationTool>("pen");
   const projectionChannelRef = useRef<BroadcastChannel | null>(null);
   const projectionStateRef = useRef<ProjectionSyncState>({
     lessonId: lesson.lesson_id,
@@ -267,7 +275,8 @@ export default function App() {
     overrides: {},
     revealed: [],
     vocabularyTerms: {},
-    assessmentSelections: {}
+    assessmentSelections: {},
+    annotations: {}
   });
 
   const effectiveSteps = useMemo(
@@ -296,7 +305,8 @@ export default function App() {
     overrides: studentVisibleOverrides(overrides, lesson.theme_id),
     revealed: studentVisibleRevealKeys(revealed, lesson.theme_id),
     vocabularyTerms,
-    assessmentSelections
+    assessmentSelections,
+    annotations
   };
 
   const goTo = useCallback((next: number) => {
@@ -395,6 +405,7 @@ export default function App() {
   const togglePresentationMode = useCallback(() => {
     setPresentationMode((current) => {
       const next = !current;
+      if (!next) setAnnotationMode(false);
       if (next) {
         setOutlineOpen(false);
         setEditorOpen(false);
@@ -410,6 +421,22 @@ export default function App() {
       await document.documentElement.requestFullscreen();
     }
   }, []);
+
+  const addAnnotation = useCallback((stroke: AnnotationStroke) => {
+    setAnnotations((current) => appendAnnotation(current, step.id, stroke));
+  }, [step.id]);
+
+  const removeAnnotation = useCallback((strokeId: string) => {
+    setAnnotations((current) => removeStepAnnotation(current, step.id, strokeId));
+  }, [step.id]);
+
+  const undoAnnotation = useCallback(() => {
+    setAnnotations((current) => undoStepAnnotation(current, step.id));
+  }, [step.id]);
+
+  const clearAnnotations = useCallback(() => {
+    setAnnotations((current) => clearStepAnnotations(current, step.id));
+  }, [step.id]);
 
   const openProjectionWindow = useCallback(() => {
     const displayWindow = window.open(
@@ -647,6 +674,7 @@ export default function App() {
         setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [], lesson.theme_id)));
         setVocabularyTerms(state.vocabularyTerms ?? {});
         setAssessmentSelections(state.assessmentSelections ?? {});
+        setAnnotations(state.annotations ?? {});
         return;
       }
 
@@ -687,7 +715,7 @@ export default function App() {
       type: "lesson-state",
       state: projectionStateRef.current
     });
-  }, [index, overrides, revealed, stepOrder, vocabularyTerms, assessmentSelections]);
+  }, [index, overrides, revealed, stepOrder, vocabularyTerms, assessmentSelections, annotations]);
 
   useEffect(() => {
     try {
@@ -721,6 +749,12 @@ export default function App() {
         return;
       }
 
+      if (annotationMode) {
+        event.preventDefault();
+        if (event.key === "Escape") setAnnotationMode(false);
+        return;
+      }
+
       if (event.key === "ArrowRight") goTo(index + 1);
       else if (event.key === "ArrowLeft") goTo(index - 1);
       else if (event.key === " ") {
@@ -750,6 +784,7 @@ export default function App() {
   }, [
     goTo,
     index,
+    annotationMode,
     presentationMode,
     revealNext,
     step,
@@ -801,6 +836,19 @@ export default function App() {
         </button>
       ) : null}
 
+      {presentationMode && !displayOnly ? (
+        <AnnotationToolbar
+          active={annotationMode}
+          tool={annotationTool}
+          canUndo={Boolean(annotations[step.id]?.length)}
+          onToggle={() => setAnnotationMode(true)}
+          onToolChange={setAnnotationTool}
+          onUndo={undoAnnotation}
+          onClear={clearAnnotations}
+          onClose={() => setAnnotationMode(false)}
+        />
+      ) : null}
+
       {teacherGuideOpen && !presentationMode && !displayOnly ? (
         <div id="teacher-guide-panel">
           <TeacherGuidePanel
@@ -844,6 +892,17 @@ export default function App() {
           goTo={goTo}
         />
       </div>
+
+      {(displayOnly || presentationMode) && (annotationMode || Boolean(annotations[step.id]?.length)) ? (
+        <AnnotationOverlay
+          stepId={step.id}
+          strokes={annotations[step.id] ?? []}
+          enabled={annotationMode && !displayOnly}
+          tool={annotationTool}
+          onStroke={addAnnotation}
+          onErase={removeAnnotation}
+        />
+      ) : null}
 
       {editorOpen && !presentationMode && !displayOnly ? (
         <EditorPanel
