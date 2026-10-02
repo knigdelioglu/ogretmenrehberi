@@ -2219,29 +2219,31 @@ Etkinliğin kalan kısmı, önceki cevaplar açıldıktan sonra geliyor; düşü
 1. PDF'de basılı s. 250'deki atasözü çalışmasını inceleyin.
 2. İlgili destede ilk yedi ifadenin cevap kartını ve hemen arkasından gelen kalan altı ifade kartını açın.
 
-## ISSUE-079 — Yapı tablosunda sonraki aşama önceki cevapları ekrandan kaldırıyor
+## ISSUE-079 — Yapı tablosunda aşamalı inceleme bağlamı koparıyordu
 
-**Durum:** VERIFIED\
+**Durum:** RESOLVED\
 **Tür:** PROGRESSIVE_REVEAL\
 **PDF sayfası:** Basılı s. 256\
 **Bölüm:** Olay örgüsünün yapı unsurları\
 **İlgili kayıt/etkinlik:** Ben, Mimar Sinan — Yapı, Anlatım ve Kültür
 
 ### PDF / beklenen durum
-PDF, kişi, yer, zaman, çatışma ve dramatik akışın birlikte değerlendirilmesini gerektirir. Aşamalı doldurulan tabloda önceki cevapların görünür kalması beklenir.
+PDF; kişi, yer, zaman, çatışma ve dramatik örgüyü birlikte çözümlemeyi, ardından bu unsurlar arasındaki ilişkileri değerlendirmeyi ister.
 
-### Sunumda gözlenen durum
-İlk aşamada kişiler ve yer görünür; tıklayınca bu bilgiler kaybolup zaman gösteriliyor. Sonraki tıklamalar çatışma ve dramatik akışa geçiyor.
+### Sunumda doğrulanan güncel durum
+`s256-elements` artık beş temel yapı unsurunu tek görev grubu olarak gösterir. Öğrenci önce bu beş unsuru görür; bir sonraki aşamada bu grubun cevapları açılır. Ardından kişiler–mekân, mekân–zaman, kişiler–çatışmalar ve çatışmalar–dramatik örgü ilişkileri ikinci görev grubu olarak gelir.
 
-### Neden sorun
-Öğretmen sonraki unsura geçerken önceki cevapları aynı ekranda tutamıyor; birikimli yapı incelemesi parçalanıyor.
+### Çözüm
+Eski akıştaki kişi/yer → zaman → çatışma → dramatik örgü biçimindeki parçalanma kaldırıldı. Güncel akış:
 
-### Beklenen davranış
-Her aşamada önceki unsurlar ve cevaplar korunmalı, yeni unsur tıklamayla eklenmelidir.
+**beş temel unsur → bu grubun cevapları → ilişkiler grubu → ilişkilerin cevapları**
 
-### Yeniden üretme
-1. PDF'de basılı s. 256'daki yapı unsurları etkinliğini inceleyin.
-2. Sunum kartını açıp kişi/yer aşamasından zaman, çatışma ve dramatik akış aşamalarına ilerleyin.
+şeklindedir.
+
+Uzun cevapların tamamını sonraki aşamalarda aynı ekranda biriktirmek okunabilirliği ve ekran kapasitesini bozduğu için kabul kriteri olarak tutulmamıştır. Pedagojik bağlam, grup sırası ve başlıklar üzerinden korunur.
+
+### Doğrulama
+Browser regresyon testi, ilk görev grubunda cevapların gizli olduğunu; ilk grup cevaplarının ilişkiler grubundan önce açıldığını ve ilişkiler grubunun daha sonra geldiğini doğrular.
 
 ## ISSUE-080 — “Fark Edelim 2” kartı cevap ipuçlarıyla açılıyor
 
@@ -2440,29 +2442,26 @@ Karşı olgusal seçenekler bir kez gösterilmeli; takip kartı varsa farklı bi
 1. PDF'de basılı s. 278–279'daki karakter özellikleri etkinliğini inceleyin.
 2. Sunum kartını ilk açılıştan tüm cevap aşamalarına kadar ilerletin.
 
-## ISSUE-088 — Uzamın rolünü sorgulayan kart cevap ölçütleriyle açılıyor
+## ISSUE-088 — Rol yaratmanın dört boyutunun ilk kartta görünmesi
 
-**Durum:** VERIFIED\
+**Durum:** RESOLVED\
 **Tür:** PRESENTATION_FLOW\
+**Sonuç:** NOT_AN_ISSUE\
 **PDF sayfası:** Basılı s. 280\
-**Bölüm:** Rol yaratmada uzamın işlevi\
+**Bölüm:** Rol Yaratmada Uzamın İşlevi\
 **İlgili kayıt/etkinlik:** Tiyatro Metnini Canlandırma — Konuşma Atölyesi
 
-### PDF / beklenen durum
-Öğrenci uzamın rol yaratmaya etkisini kendi açıklamasıyla değerlendirmelidir.
+### PDF / kaynak durumu
+Basılı s.280'deki **“Rol Yaratmada Uzamın İşlevi”** kaynak metni, sorulardan önce rolün sosyolojik/dışsal, psikolojik, biyolojik/fiziksel boyutlarını; alt metni ve oyuncunun deneyimini açıkça anlatır. Bunlar öğrencinin henüz üretmediği bir cevabın sızması değil, soruları cevaplamak için okuması gereken kaynak metnin kavramlarıdır.
 
-### Sunumda gözlenen durum
-Kart ilk açıldığında yanıt ölçütü olarak kullanılabilecek dört madde listelenir.
+### Sunumda doğrulanan güncel durum
+`s280-source` kartı bu kaynak metindeki temel boyutları özetler. Asıl **Konuşmayı Yönetebilme 2** sorusunun cevap içeriği ise `s280-q2` içinde ayrı cevap katmanında tutulur ve ilk görünümde açılmaz.
 
-### Neden sorun
-Değerlendirme ölçütleri öğrenci düşünmeden önce cevap yönünü verir.
+### Neden hata değil
+İlk denetimde kaynak metindeki kavramlar, sorunun cevap ölçütleri sanılarak cevap sızıntısı olarak sınıflandırılmıştır. PDF bağlamı yeniden kontrol edildiğinde bu dört boyutun soru öncesi okuma parçasının doğrudan içeriği olduğu görülmüştür.
 
 ### Beklenen davranış
-İlk görünümde görev gösterilmeli; dört ölçüt cevap aşamasında açılmalıdır.
-
-### Yeniden üretme
-1. PDF'de basılı s. 280'deki rol ve uzam etkinliğini inceleyin.
-2. Sunumdaki Rol Yaratmada Uzamın İşlevi kartını açın.
+Kaynak kartı dört boyutu gösterebilir. Öğrencinin kendi rol canlandırma planı ve örnek cevap ise soru aşamasından sonra açılmalıdır. Güncel akış bu ayrımı korur.
 
 ## ISSUE-089 — Konuşmayı yönetme sorusu dört cevap ipucuyla açılıyor
 
