@@ -157,7 +157,7 @@ try {
 
   screen = await openStep("mektup", "s46-q4");
   assert.ok(screen.text.includes("Hasret sana ey yirmi yılın"), "ISSUE-013 poem excerpt is visible");
-  assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=47'))"), true);
+  assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=46'))"), true);
 
   for (const id of ["s48-q1", "s48-q2", "s48-q3"]) {
     screen = await openStep("mektup", id);

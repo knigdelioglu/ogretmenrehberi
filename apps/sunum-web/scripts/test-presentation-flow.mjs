@@ -25,12 +25,12 @@ assert.equal(getStep("karagoz", "s16-q2").content.images?.length, 1, "source ill
 const mektup = lessons.find((lesson) => lesson.lesson_slug === "mektup");
 const poem = mektup.steps.find((step) => step.id === "s46-q4");
 assert.match(JSON.stringify(poem.content), /Hasret sana ey yirmi yılın/);
-assert.ok(sources(poem).some((source) => source.url.includes("#page=47")), "ISSUE-013: full poem source can be opened");
+assert.ok(sources(poem).some((source) => source.url.includes("#page=46")), "ISSUE-013: full poem source can be opened");
 const newsSteps = ["s48-q1", "s48-q2", "s48-q3"].map((id) => mektup.steps.find((step) => step.id === id));
-assert.ok(newsSteps.every((step) => sources(step).some((source) => source.url.includes("#page=49"))), "ISSUE-015: source article page remains accessible through every related question");
+assert.ok(newsSteps.every((step) => sources(step).some((source) => source.url.includes("#page=48"))), "ISSUE-015: source article page remains accessible through every related question");
 assert.match(JSON.stringify(newsSteps[0].content.sections), /103 yıl sonra/);
 const letterSteps = ["s50-q1", "s50-q2", "s50-q3", "s50-q4"].map((id) => mektup.steps.find((step) => step.id === id));
-assert.ok(letterSteps.every((step) => sources(step).some((source) => source.url.includes("#page=50"))), "ISSUE-017: all five texts remain accessible from every related question");
+assert.ok(letterSteps.every((step) => sources(step).some((source) => source.url.includes("#page=49"))), "ISSUE-017: all five texts remain accessible from every related question");
 assert.equal(letterSteps[0].content.sections.length, 5, "five source texts have readable context on the question screen");
 
 const age = getStep("tema-2-girisi", "s88-q4");
@@ -41,7 +41,7 @@ for (const step of [q90a, q90b]) {
   const answerText = JSON.stringify({ answer: step.answer.answer, sections: step.answer.answer_sections });
   assert.doesNotMatch(answerText, /görseldeki atlı yaşlı kişi|at, yol, dağ\/bozkır/);
   assert.equal(step.content.images?.[0]?.src, "assets/ogulla-bulusma-tren.png", "ISSUE-028: first view includes the verified source image");
-  assert.ok(sources(step).some((source) => source.url.includes("#page=94")));
+  assert.ok(sources(step).some((source) => source.url.includes("#page=93")));
 }
 
 for (const [slug, id, requiredAnswer] of [
