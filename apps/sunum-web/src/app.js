@@ -115,6 +115,8 @@ const state = {
   revealedVocabularyTerms: new Set(),
   guideOnRemote: false // true: kumanda yönlendirme ve açıklamayı da sırayla açar
 };
+let exportingPptx = false;
+let exportStatusTimer = 0;
 
 // Yönlendirme ve açıklama öğretmene dönük olduğundan varsayılan olarak kumanda sırasına girmez;
 // Y / A tuşlarıyla elle açılır. Menüdeki ayarla kumanda sırasına eklenebilir.
@@ -1233,6 +1235,7 @@ function scaleCanvas() {
 }
 
 function canvasScaleFactor() {
+  if (exportingPptx) return 1;
   return Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
 }
 
@@ -1258,6 +1261,7 @@ function renderMenu() {
           role: "tab",
           "aria-selected": String(t === state.menuTheme),
           onclick: () => {
+            if (exportingPptx) return;
             state.menuTheme = t;
             renderMenu();
           }
@@ -1281,6 +1285,7 @@ function renderMenu() {
               type: "button",
               class: i === state.lesson ? "is-current" : "",
               onclick: () => {
+                if (exportingPptx) return;
                 closeMenu();
                 goto(i, 0, 0, 1);
               }
@@ -1299,7 +1304,7 @@ function renderMenu() {
       {},
       h(
         "button",
-        { type: "button", class: state.slide === 0 ? "is-current" : "", onclick: () => (closeMenu(), goto(state.lesson, 0, 0, 1)) },
+        { type: "button", class: state.slide === 0 ? "is-current" : "", onclick: () => { if (exportingPptx) return; closeMenu(); goto(state.lesson, 0, 0, 1); } },
         h("span", { class: "n" }, "0"),
         h("span", { class: "t" }, `Kapak — ${lesson.title}`)
       )
@@ -1313,7 +1318,7 @@ function renderMenu() {
           {
             type: "button",
             class: state.slide === i + 1 ? "is-current" : "",
-            onclick: () => (closeMenu(), goto(state.lesson, i + 1, 0, 1))
+            onclick: () => { if (exportingPptx) return; closeMenu(); goto(state.lesson, i + 1, 0, 1); }
           },
           h("span", { class: "n" }, String(i + 1)),
           h("span", { class: "t" }, s.prompt),
@@ -1344,11 +1349,86 @@ function closeMenu() {
 async function exportCurrentLesson() {
   const button = $("#menu-export-pptx");
   const lesson = currentLesson();
+  const status = $("#menu-export-status");
+  const saved = {
+    state: { ...state, extras: new Set(state.extras), revealedVocabularyTerms: new Set(state.revealedVocabularyTerms) },
+    hash: location.href,
+    position: storage.get(LS.position),
+    title: document.title,
+    canvasScale: document.documentElement.style.getPropertyValue("--canvas-scale"),
+    bodyScroll: $("#canvas .slide__body")?.scrollTop || 0,
+    canvasScroll: $("#canvas").scrollTop
+  };
+  window.clearTimeout(exportStatusTimer);
   button.disabled = true;
   button.setAttribute("aria-busy", "true");
   button.title = "PowerPoint hazırlanıyor…";
+  exportingPptx = true;
+  $("#menu").setAttribute("aria-busy", "true");
+  status.classList.remove("visually-hidden");
+  status.textContent = "PowerPoint slaytları hazırlanıyor…";
+  document.documentElement.style.setProperty("--canvas-scale", "1");
   try {
-    const blob = createLessonPptx(lesson);
+    const slideImages = [];
+    state.lesson = saved.state.lesson;
+    state.guideOnRemote = true;
+    state.extras = new Set();
+    state.fresh = null;
+    state.direction = 1;
+
+    const captureState = async () => {
+      render({ newSlide: false });
+      await new Promise(requestAnimationFrame);
+      await new Promise(requestAnimationFrame);
+      const body = $("#canvas .slide__body");
+      const pageHeight = body?.clientHeight || 1;
+      const maxScroll = Math.max(0, (body?.scrollHeight || 0) - pageHeight);
+      const scrollPositions = [0];
+      for (let top = pageHeight; top < maxScroll; top += pageHeight) scrollPositions.push(top);
+      if (maxScroll > 0) scrollPositions.push(maxScroll);
+      for (const top of scrollPositions) {
+        if (body) body.scrollTop = top;
+        await new Promise(requestAnimationFrame);
+        slideImages.push(await captureSlideImage());
+        if (slideImages.length % 5 === 0) status.textContent = `${slideImages.length} slayt hazırlanıyor…`;
+      }
+    };
+
+    state.slide = 0;
+    state.reveal = 0;
+    state.part = 0;
+    state.revealedVocabularyTerms.clear();
+    await captureState();
+
+    for (let index = 0; index < lesson.steps.length; index += 1) {
+      const step = lesson.steps[index];
+      state.slide = index + 1;
+      state.extras = new Set();
+      state.revealedVocabularyTerms.clear();
+      const layerCount = isWordWallStep(step) ? 0 : activeReveals(step).length;
+      for (let reveal = 0; reveal <= layerCount; reveal += 1) {
+        state.reveal = reveal;
+        const view = currentView(step);
+        const parts = Math.max(1, view.pages.length);
+        for (let part = 0; part < parts; part += 1) {
+          state.part = part;
+          await captureState();
+        }
+      }
+      if (isWordWallStep(step)) {
+        const hiddenTerms = [...$("#canvas .vocab__item--interactive .vocab__term")].map((term) => term.textContent);
+        state.revealedVocabularyTerms = new Set(hiddenTerms);
+        await captureState();
+      }
+    }
+
+    state.slide = lesson.steps.length + 1;
+    state.reveal = 0;
+    state.part = 0;
+    state.revealedVocabularyTerms.clear();
+    await captureState();
+
+    const blob = createLessonPptx(slideImages);
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
@@ -1357,14 +1437,101 @@ async function exportCurrentLesson() {
     link.click();
     link.remove();
     window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+    status.textContent = `${slideImages.length} slaytlı PowerPoint indirildi.`;
+    exportStatusTimer = window.setTimeout(() => {
+      status.textContent = "";
+      status.classList.add("visually-hidden");
+    }, 6000);
   } catch (error) {
     console.error("PowerPoint dışa aktarılamadı", error);
+    status.textContent = "PowerPoint oluşturulamadı. Yeniden deneyin.";
     window.alert("PowerPoint dosyası oluşturulamadı. Lütfen yeniden deneyin.");
   } finally {
+    Object.assign(state, saved.state);
+    exportingPptx = false;
+    render({ newSlide: false });
+    document.documentElement.style.setProperty("--canvas-scale", saved.canvasScale || "");
+    $("#menu").removeAttribute("aria-busy");
+    history.replaceState(null, "", saved.hash);
+    if (saved.position !== null) storage.set(LS.position, saved.position);
+    else storage.remove(LS.position);
+    document.title = saved.title;
+    $("#canvas").scrollTop = saved.canvasScroll;
+    const restoredBody = $("#canvas .slide__body");
+    if (restoredBody) restoredBody.scrollTop = saved.bodyScroll;
     button.disabled = false;
     button.removeAttribute("aria-busy");
     button.title = "Seçili dersi PowerPoint (.pptx) olarak indir";
+    if (!$("#menu").hidden) button.focus();
   }
+}
+
+function copyComputedStyles(source, target) {
+  const computed = getComputedStyle(source);
+  for (let index = 0; index < computed.length; index += 1) {
+    const name = computed.item(index);
+    target.style.setProperty(name, computed.getPropertyValue(name), computed.getPropertyPriority(name));
+  }
+  target.style.setProperty("animation", "none", "important");
+  target.style.setProperty("transition", "none", "important");
+  for (let index = 0; index < source.children.length; index += 1) {
+    copyComputedStyles(source.children[index], target.children[index]);
+  }
+  for (const [pseudo, place] of [["::before", "before"], ["::after", "after"]]) {
+    const pseudoStyle = getComputedStyle(source, pseudo);
+    if (pseudoStyle.content === "none" || pseudoStyle.content === "normal") continue;
+    const marker = document.createElement("span");
+    for (let index = 0; index < pseudoStyle.length; index += 1) {
+      const name = pseudoStyle.item(index);
+      if (name !== "content") marker.style.setProperty(name, pseudoStyle.getPropertyValue(name), pseudoStyle.getPropertyPriority(name));
+    }
+    const content = pseudoStyle.content;
+    if (content !== '""' && content !== "''") marker.textContent = content.replace(/^(?:\"|')|(?:\"|')$/g, "");
+    if (place === "before") target.prepend(marker);
+    else target.append(marker);
+  }
+}
+
+async function captureSlideImage() {
+  await document.fonts?.ready;
+  const source = $("#canvas .slide");
+  if (!source) throw new Error("Sunum slaytı bulunamadı.");
+  await Promise.all([...source.querySelectorAll("img")].map((image) => image.decode().catch(() => {})));
+
+  const clone = source.cloneNode(true);
+  copyComputedStyles(source, clone);
+  clone.style.setProperty("position", "relative", "important");
+  clone.style.setProperty("inset", "auto", "important");
+  clone.style.setProperty("width", "1920px", "important");
+  clone.style.setProperty("height", "1080px", "important");
+  clone.style.setProperty("transform", "none", "important");
+  clone.style.setProperty("overflow", "hidden", "important");
+  const originalImages = [...source.querySelectorAll("img")];
+  [...clone.querySelectorAll("img")].forEach((image, index) => {
+    if (originalImages[index]?.currentSrc) image.src = originalImages[index].currentSrc;
+  });
+
+  const background = getComputedStyle($("#canvas")).backgroundColor;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" width="1920" height="1080" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="${background}"/><foreignObject x="0" y="0" width="1920" height="1080">${new XMLSerializer().serializeToString(clone)}</foreignObject></svg>`;
+  const imageData = await new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(new Error("Slayt görüntüsü hazırlanamadı."));
+    reader.readAsDataURL(new Blob([svg], { type: "image/svg+xml;charset=utf-8" }));
+  });
+  const image = new Image();
+  image.src = imageData;
+  await image.decode();
+  const canvas = document.createElement("canvas");
+  canvas.width = 1920;
+  canvas.height = 1080;
+  const context = canvas.getContext("2d");
+  if (!context) throw new Error("Sunum görüntüsü çizilemedi.");
+  context.drawImage(image, 0, 0, canvas.width, canvas.height);
+  const png = await new Promise((resolve, reject) => {
+    canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Slayt PNG görüntüsüne dönüştürülemedi.")), "image/png");
+  });
+  return new Uint8Array(await png.arrayBuffer());
 }
 
 // ============================================================
@@ -1423,6 +1590,10 @@ const NEXT_KEYS = new Set(["ArrowRight", "ArrowDown", "PageDown", " ", "Spacebar
 const PREV_KEYS = new Set(["ArrowLeft", "ArrowUp", "PageUp", "Backspace", "p", "P", "MediaTrackPrevious"]);
 
 function onKeyDown(event) {
+  if (exportingPptx) {
+    event.preventDefault();
+    return;
+  }
   if (!state.catalog) return;
   const target = event.target;
   if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return;
@@ -1516,6 +1687,7 @@ function onKeyDown(event) {
 }
 
 function onAction(action) {
+  if (exportingPptx) return;
   switch (action) {
     case "next":
       next();
@@ -1564,12 +1736,12 @@ function setupInput() {
     if (btn) {
       event.preventDefault();
       onAction(btn.dataset.action);
-      btn.blur();
+      if (btn.dataset.action !== "export-pptx") btn.blur();
     }
   });
 
   $("#menu").addEventListener("click", (event) => {
-    if (event.target === $("#menu")) closeMenu();
+    if (!exportingPptx && event.target === $("#menu")) closeMenu();
   });
   $("#help").addEventListener("click", () => ($("#help").hidden = true));
   $("#blank").addEventListener("click", () => setBlank(state.blank));
@@ -1587,6 +1759,10 @@ function setupInput() {
   viewport.addEventListener(
     "touchend",
     (e) => {
+      if (exportingPptx) {
+        touch = null;
+        return;
+      }
       if (!touch) return;
       const dx = e.changedTouches[0].clientX - touch.x;
       const dy = e.changedTouches[0].clientY - touch.y;

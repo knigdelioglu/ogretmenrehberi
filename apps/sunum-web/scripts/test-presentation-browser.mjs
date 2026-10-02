@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { spawn } from "node:child_process";
+import { execFileSync, spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -425,7 +425,22 @@ try {
   assert.ok(!screen.text.includes("Yer, ilişki, kültür, emek, anı"), "ISSUE-101 answer categories are hidden initially");
   assert.ok((await next()).includes("Video kanıtı"), "ISSUE-101 source-limited answer guidance opens after the task");
 
-  console.log("[sunum-web] Headless Chrome verified Theme 3 regressions and Theme 4 initial/reveal views.");
+  await page.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: profile });
+  await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+  await until(() => page.evaluate("!document.querySelector('#menu').hidden && Boolean(document.querySelector('#menu-export-pptx'))"), "PPTX export control in lesson menu");
+  await page.evaluate("document.querySelector('#menu-export-pptx').click()");
+  const downloadedPptx = await until(() => {
+    const file = fs.readdirSync(profile).find((name) => name.endsWith(".pptx"));
+    return file ? path.join(profile, file) : null;
+  }, "visual PPTX download", 60000);
+  const pptxBytes = fs.readFileSync(downloadedPptx);
+  assert.deepEqual([...pptxBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "download is a PPTX ZIP package");
+  assert.ok(pptxBytes.length > 50000, "download contains rendered slide images, not plain text only");
+  const pptxEntries = execFileSync("unzip", ["-Z1", downloadedPptx], { encoding: "utf8" });
+  assert.ok((pptxEntries.match(/ppt\/media\/slide\d+\.png/g) || []).length > 10, "PPTX embeds the lesson slide renderings");
+  if (process.env.PPTX_TEST_OUTPUT) fs.copyFileSync(downloadedPptx, process.env.PPTX_TEST_OUTPUT);
+
+  console.log("[sunum-web] Headless Chrome verified presentation flow and visual PPTX export.");
 } finally {
   for (const client of clients) client.close();
   if (browser.exitCode === null) {

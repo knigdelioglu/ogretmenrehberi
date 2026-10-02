@@ -1121,6 +1121,25 @@ button {
   cursor: progress;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.menu__export-status:not(.visually-hidden) {
+  max-width: min(300px, 22vw);
+  color: var(--ink-2);
+  font-size: 12px;
+  line-height: 1.25;
+}
+
 .menu__body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);

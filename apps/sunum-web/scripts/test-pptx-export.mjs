@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { deflateSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { createLessonPptx, pptxFilename } from "../src/pptx-export.js";
 
@@ -11,31 +12,36 @@ assert.match(builtIndex, /menu-export-pptx/);
 assert.match(builtWorker, /pptx-export\.js/, "offline shell precaches the exporter module");
 assert.ok(fs.existsSync(path.join(appRoot, "dist/pptx-export.js")), "build ships the PPTX module");
 
-const lesson = {
-  slug: "dinleme-izleme",
-  title: "Metin Tahlili-3 — Dinleme / İzleme",
-  subtitle: "1. Tema · 11. Sınıf",
-  pages: "59-73",
-  steps: [
-    {
-      prompt: "Başlık ve görselden hareketle tahminde bulunun.",
-      page: "64",
-      heading: "Dinleme öncesi",
-      content: { lead: "Düşüncelerinizi paylaşın.", items: ["İlk soru", "İkinci soru & kanıt"] },
-      reveals: ["answer", "evidence"],
-      answer: {
-        answer: "İletişim araçlarının gelişimi.",
-        evidence_quotes: ["‘İletişim, bir medenileşme hareketidir.’"]
-      }
-    }
-  ]
-};
-
-const blob = createLessonPptx(lesson);
+function pngCrc32(bytes) {
+  let crc = 0xffffffff;
+  for (const byte of bytes) {
+    crc ^= byte;
+    for (let bit = 0; bit < 8; bit += 1) crc = (crc >>> 1) ^ (crc & 1 ? 0xedb88320 : 0);
+  }
+  return (crc ^ 0xffffffff) >>> 0;
+}
+function pngChunk(type, data) {
+  const name = Buffer.from(type);
+  const chunk = Buffer.alloc(12 + data.length);
+  chunk.writeUInt32BE(data.length, 0);
+  name.copy(chunk, 4);
+  data.copy(chunk, 8);
+  chunk.writeUInt32BE(pngCrc32(chunk.subarray(4, 8 + data.length)), 8 + data.length);
+  return chunk;
+}
+const ihdr = Buffer.alloc(13);
+ihdr.writeUInt32BE(1, 0); ihdr.writeUInt32BE(1, 4); ihdr[8] = 8; ihdr[9] = 6;
+const transparentPixel = Uint8Array.from(Buffer.concat([
+  Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]),
+  pngChunk("IHDR", ihdr),
+  pngChunk("IDAT", deflateSync(Buffer.from([0, 255, 255, 255, 255]))),
+  pngChunk("IEND", Buffer.alloc(0))
+]));
+const blob = createLessonPptx([transparentPixel, transparentPixel, transparentPixel]);
 const bytes = new Uint8Array(await blob.arrayBuffer());
 assert.equal(blob.type, "application/vnd.openxmlformats-officedocument.presentationml.presentation");
 assert.deepEqual([...bytes.slice(0, 4)], [0x50, 0x4b, 0x03, 0x04], "PPTX is a ZIP package");
-assert.equal(pptxFilename(lesson), "dinleme-izleme.pptx");
+assert.equal(pptxFilename({ slug: "dinleme-izleme" }), "dinleme-izleme.pptx");
 
 const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
 const decoder = new TextDecoder();
@@ -48,17 +54,15 @@ while (offset + 30 <= bytes.length && view.getUint32(offset, true) === 0x04034b5
   const nameStart = offset + 30;
   const dataStart = nameStart + nameLength + extraLength;
   const name = decoder.decode(bytes.slice(nameStart, nameStart + nameLength));
-  files.set(name, decoder.decode(bytes.slice(dataStart, dataStart + size)));
+  files.set(name, bytes.slice(dataStart, dataStart + size));
   offset = dataStart + size;
 }
 
 assert.ok(files.has("[Content_Types].xml"));
 assert.ok(files.has("ppt/presentation.xml"));
-assert.equal([...files.keys()].filter((name) => /^ppt\/slides\/slide\d+\.xml$/.test(name)).length, 4);
-const slides = [...files.entries()].filter(([name]) => /^ppt\/slides\/slide\d+\.xml$/.test(name)).map(([, xml]) => xml).join("\n");
-assert.match(slides, /Metin Tahlili-3/);
-assert.match(slides, /Başlık ve görselden hareketle tahminde bulunun/);
-assert.match(slides, /İletişim araçlarının gelişimi/);
-assert.match(slides, /İletişim, bir medenileşme hareketidir/);
-assert.match(slides, /&amp;/, "XML special characters are escaped");
-console.log("PPTX export package checks passed.");
+assert.equal([...files.keys()].filter((name) => /^ppt\/slides\/slide\d+\.xml$/.test(name)).length, 3);
+assert.equal([...files.keys()].filter((name) => /^ppt\/media\/slide\d+\.png$/.test(name)).length, 3);
+assert.match(decoder.decode(files.get("ppt/slides/slide1.xml")), /<p:pic>/, "each exported slide uses the rendered slide image");
+assert.match(decoder.decode(files.get("ppt/slides/_rels/slide1.xml.rels")), /Target="\.\.\/media\/slide1\.png"/);
+assert.deepEqual(files.get("ppt/media/slide1.png"), transparentPixel);
+console.log("PPTX image export package checks passed.");
