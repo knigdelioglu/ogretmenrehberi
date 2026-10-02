@@ -1,0 +1,50 @@
+name: Sunum Web
+
+on:
+  push:
+    branches:
+      - main
+      - "feat/**"
+      - "fix/**"
+    paths:
+      - "apps/sunum-web/**"
+      - "apps/lesson-player/scripts/build-lesson-data.mjs"
+      - "data/grade-11/presentation/**"
+      - "data/grade-11/source/teacher-book/**"
+      - ".github/workflows/sunum-web.yml"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SUNUM_SIFRE: sunum-ci
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Install
+        working-directory: apps/sunum-web
+        run: npm install --no-audit --no-fund
+
+      - name: Data and presentation flow tests
+        working-directory: apps/sunum-web
+        run: npm test
+
+      - name: Real-browser presentation tests
+        working-directory: apps/sunum-web
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          if [ -z "$CHROME" ]; then
+            echo "No Chrome/Chromium executable found on runner."
+            exit 1
+          fi
+          CHROME="$CHROME" npm run test:browser
