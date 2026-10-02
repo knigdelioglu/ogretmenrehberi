@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import type { RefObject } from "react";
 import { RevealPanel } from "./RevealPanel";
 import { StructuredSections } from "./StructuredSections";
 import { StepContentLayout } from "./StepContentLayout";
@@ -18,6 +19,7 @@ interface StepViewProps {
   assessmentSelections: Record<number, string>;
   onAssessmentSelect: (stepId: string, itemIndex: number, value: string) => void;
   assessmentReadOnly?: boolean;
+  annotationSurfaceRef?: RefObject<HTMLDivElement | null>;
 }
 
 const taskTypeLabels: Record<string, string> = {
@@ -208,7 +210,8 @@ export function StepView({
   toggleVocabularyTerm,
   assessmentSelections,
   onAssessmentSelect,
-  assessmentReadOnly = false
+  assessmentReadOnly = false,
+  annotationSurfaceRef
 }: StepViewProps) {
   const { answer, content, source } = step;
   const dictionaryTerms = dictionaryTermsForStep(step);
@@ -255,6 +258,7 @@ export function StepView({
       </div>
 
       <div
+        ref={annotationSurfaceRef}
         className={
           dictionaryTerms.length
             ? "stage-layout stage-layout--dictionary"

@@ -266,6 +266,7 @@ export default function App() {
   const [annotations, setAnnotations] = useState<AnnotationState>({});
   const [annotationMode, setAnnotationMode] = useState(false);
   const [annotationTool, setAnnotationTool] = useState<AnnotationTool>("pen");
+  const annotationSurfaceRef = useRef<HTMLDivElement>(null);
   const projectionChannelRef = useRef<BroadcastChannel | null>(null);
   const projectionStateRef = useRef<ProjectionSyncState>({
     lessonId: lesson.lesson_id,
@@ -882,6 +883,7 @@ export default function App() {
           toggleVocabularyTerm={(term) => toggleVocabularyTerm(step.id, term)}
           assessmentSelections={assessmentSelections[step.id] ?? {}}
           onAssessmentSelect={selectAssessment}
+          annotationSurfaceRef={annotationSurfaceRef}
         />
 
         <LessonFooter
@@ -896,6 +898,7 @@ export default function App() {
       {(displayOnly || presentationMode) && (annotationMode || Boolean(annotations[step.id]?.length)) ? (
         <AnnotationOverlay
           stepId={step.id}
+          surfaceRef={annotationSurfaceRef}
           strokes={annotations[step.id] ?? []}
           enabled={annotationMode && !displayOnly}
           tool={annotationTool}

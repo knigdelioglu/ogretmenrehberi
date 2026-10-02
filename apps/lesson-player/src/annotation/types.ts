@@ -5,6 +5,13 @@ export interface AnnotationPoint {
   y: number;
 }
 
+export interface AnnotationRect {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
 export interface AnnotationStroke {
   id: string;
   tool: Exclude<AnnotationTool, "eraser">;

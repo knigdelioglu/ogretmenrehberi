@@ -856,17 +856,18 @@ button:focus-visible {
 
 .annotation-overlay {
   position: fixed;
-  inset: 0;
   z-index: 39;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
   pointer-events: none;
 }
 
-.annotation-overlay.is-enabled {
+.annotation-input-shield {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
   pointer-events: auto;
   touch-action: none;
+  overscroll-behavior: none;
   cursor: crosshair;
 }
 
