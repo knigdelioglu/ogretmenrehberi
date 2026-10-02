@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "grade": 11,
-  "contentSha256": "d637b1d593220a0190365c593575bb85fdf7da40311ebfc0f01a06a650415977",
+  "contentSha256": "6f5c65288eef5876d0cfd55a2b2b4a1c0f7f0022178f604ab734b365bb614a5f",
   "workflowSha256": "6632280a3f0ecc3b40987c158c8bbb88333ae1f640d8ca8f1875bc9ecfd64a57",
   "counts": {
     "themes": 4,
     "lessons": 48,
-    "steps": 928,
+    "steps": 936,
     "teacherWorkshops": 8,
     "annualItems": 5
   },
@@ -27,19 +27,19 @@
       "lessonId": "T11-T01-KARAGOZ",
       "themeId": "TEMA_01",
       "steps": 50,
-      "sha256": "f4857d9ceb35a61f4e613ae48561db263b8f628785d714eec0316c6ee5ab9793"
+      "sha256": "c7e9fced135227330baa8068fa75cacf05d7fce90f14ef193ebd9d7112b72739"
     },
     {
       "lessonId": "T11-T01-MEKTUP",
       "themeId": "TEMA_01",
       "steps": 46,
-      "sha256": "1551f718002b2f453b9967a98949633dec41476c1e615ec7fb5808dd50639b15"
+      "sha256": "7d4487235a60c94315cc4506d9db393984a446b6e98612c659731fd562a65fbf"
     },
     {
       "lessonId": "T11-T01-KONUSMA",
       "themeId": "TEMA_01",
-      "steps": 14,
-      "sha256": "553f263e19ac27eadf08d0e2641088681d9894d482acd68797de8e4bc1af008b"
+      "steps": 15,
+      "sha256": "743286805559acbd281417c79ffce6a43edf9bc3ec57b12c9fa3cf0d6603586d"
     },
     {
       "lessonId": "T11-T01-DINLEME-IZLEME",
@@ -50,8 +50,8 @@
     {
       "lessonId": "T11-T01-YAZMA",
       "themeId": "TEMA_01",
-      "steps": 17,
-      "sha256": "5d37a769ce0a2623a54b6621c8ad95bbd13ed755f635760873b35212faa66668"
+      "steps": 18,
+      "sha256": "92622684709dc419c7b02efdc9ce85b93987dddece16e1627d070e6f19809298"
     },
     {
       "lessonId": "T11-T01-DEGERLENDIRME",
@@ -69,7 +69,7 @@
       "lessonId": "T11-T02-OGULLA-BULUSMA",
       "themeId": "TEMA_02",
       "steps": 37,
-      "sha256": "97683cdaafdbf482f7118f7f0dde02c4313b1b656518d31046115d855d2d2248"
+      "sha256": "7c0e1c273cc1b2719eea238c63aaf97df35c400886e7c5aa690e5cda82648816"
     },
     {
       "lessonId": "T11-T02-ESKI-ISTANBUL",
@@ -92,8 +92,8 @@
     {
       "lessonId": "T11-T02-KONUSMA",
       "themeId": "TEMA_02",
-      "steps": 22,
-      "sha256": "f1e7b8940f436fcaf15cf61568c4820b59243ee52cfd355c3ed459796d6c907e"
+      "steps": 23,
+      "sha256": "3449dfe54f36ca4600d3afc7423642cb3141bd1b5f3e7e8b7495de93a30f5197"
     },
     {
       "lessonId": "T11-T02-ASIK-ATISMASI",
@@ -104,8 +104,8 @@
     {
       "lessonId": "T11-T02-YAZMA",
       "themeId": "TEMA_02",
-      "steps": 24,
-      "sha256": "ebf76b5a1f1f89a05bb222334699b46712da3f52d287ce722f64383364d39b82"
+      "steps": 25,
+      "sha256": "cee1a29a051d1eec82682c769b0d37de2a1b7a54d289028f9d42b60fc8aaa530"
     },
     {
       "lessonId": "T11-T02-DEGERLENDIRME",
@@ -194,8 +194,8 @@
     {
       "lessonId": "T11-T03-KEMAL-TAHIR-MULAKAT-210-214",
       "themeId": "TEMA_03",
-      "steps": 19,
-      "sha256": "66fe9d8c21913cf8fab69000be9ce39914f324cb3bd9fffcd2a2ea0b6f57f9bb"
+      "steps": 20,
+      "sha256": "b441fb09eac90354115e95713fbfa1ce5bb7eeb79363acfa1c9c44dc34031583"
     },
     {
       "lessonId": "T11-T03-DIRENISIN-USTALARI-215-220",
@@ -212,8 +212,8 @@
     {
       "lessonId": "T11-T03-RADYO-DIYALOG-YAZMA-225-229",
       "themeId": "TEMA_03",
-      "steps": 16,
-      "sha256": "e4c7304bff2876c1ded6e556228dca2dbf36709e56f04621368ccba018f15858"
+      "steps": 17,
+      "sha256": "77433486d46ea5d89aa6cc8f8d1b96474f47cb2a41376ec2b8d2c6add1954918"
     },
     {
       "lessonId": "T11-T03-DEGERLENDIRME-230-235",
@@ -278,8 +278,8 @@
     {
       "lessonId": "T11-T04-TIYATRO-CANLANDIRMA-280-283",
       "themeId": "TEMA_04",
-      "steps": 16,
-      "sha256": "cf80ece5685d7895e31f20cd52890d98e7cccc3834570fbda2ad0bda47dd2bfe"
+      "steps": 17,
+      "sha256": "7ef21593bc506ccef377f07766ed5eb15731927934ee74a3eb48c9507f4a246c"
     },
     {
       "lessonId": "T11-T04-ANADOLU-INSANI-284-290",
@@ -296,8 +296,8 @@
     {
       "lessonId": "T11-T04-AFIS-ATOLYESI-298-302",
       "themeId": "TEMA_04",
-      "steps": 19,
-      "sha256": "a32f0a8fb731014ad656615e7d6b43924b513abc1f0dc0bc0bde03dd732e65b1"
+      "steps": 20,
+      "sha256": "9a968eefffa82073ff8765a7b62fd6d087c384faf5bbf5c9614377d66aa5550e"
     },
     {
       "lessonId": "T11-T04-DEGERLENDIRME-303-307",

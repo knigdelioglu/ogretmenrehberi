@@ -4249,8 +4249,7 @@
               "Zor durumda olan insanlara destek ve dayanışma mesajı ulaştırmak, umut vermek veya yaşananlara dikkat çekmek.",
               "Bilinmeyen bir alıcıya mesaj ulaştırmak.",
               "Bir mesaj, hatıra veya iz bırakmak.",
-              "İletinin nereye ve kime ulaşacağını merak etmek.",
-              "Bir çağrı veya mesajı alışılmış iletişim yolları dışında ulaştırmak."
+              "İletinin nereye ve kime ulaşacağını merak etmek."
             ],
             "Kitaptaki örneğin bağlamı": "Beth ve Zac mektuplarında şişenin nereye ulaşacağını merak ettiklerini belirtir; başlangıçta Gazze’ye destek verme amacı taşıdıkları söylenemez. Şişenin Gazze’de bulunması ve Gazzeli balıkçıyla sonradan iletişim kurulması, olayın ulaştığı kişi ve yerin koşulları gözetilerek değerlendirilmesini sağlar."
           },
@@ -4701,7 +4700,7 @@
     "coverage": {
       "source_records": 7,
       "answer_entries": 11,
-      "steps": 14
+      "steps": 15
     },
     "steps": [
       {
@@ -5516,6 +5515,29 @@
             }
           ],
           "note": "Akran Değerlendirme Formu ve Dereceli Puanlama Anahtarı kitabın QR bağlantılarındadır; içerikleri kaynakta görünmediği için uygulama burada bu formları yeniden üretmez."
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T01-S0063",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "58",
+          "book_heading": "Süreci Değerlendirebilme — akran/öğretmen değerlendirmesi",
+          "task_type": "REFERENCE",
+          "rights_mode": "PAGE_REFERENCE",
+          "source_locator": "basılı s.58 / PDF s.59 — dış QR rubrik sınırı",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -7355,7 +7377,7 @@
     "coverage": {
       "source_records": 15,
       "answer_entries": 13,
-      "steps": 17
+      "steps": 18
     },
     "steps": [
       {
@@ -8118,6 +8140,29 @@
             "E-postanızı bu hedef doğrultusunda düzeltin ve değişen bölümü yeniden okuyun.",
             "Aynı ölçüte dönüp çalışmanızı yeniden değerlendirin; ilerlemenizi ve sonraki adımınızı kaydedin."
           ]
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T01-S0116",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "78",
+          "book_heading": "Süreci Değerlendirebilme — Dereceli Puanlama Anahtarı",
+          "task_type": "ASSESSMENT",
+          "rights_mode": "PAGE_REFERENCE",
+          "source_locator": "basılı s.78 / PDF s.79 — Dereceli Puanlama Anahtarı QR",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -14207,7 +14252,7 @@
     "coverage": {
       "source_records": 13,
       "answer_entries": 18,
-      "steps": 22
+      "steps": 23
     },
     "steps": [
       {
@@ -15129,6 +15174,29 @@
             }
           ],
           "note": "Öz ve akran değerlendirmede belirlenen eksikleri sonraki konuşma için somut hedeflere dönüştürün."
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T02-S0115",
+          "theme_id": "TEMA_02",
+          "printed_page_range": "135",
+          "book_heading": "Süreci Değerlendirebilme — Dereceli Puanlama Anahtarı / Akran Değerlendirme",
+          "task_type": "REFERENCE",
+          "rights_mode": "PAGE_REFERENCE",
+          "source_locator": "basılı s.135 / PDF s.136 — Dereceli Puanlama Anahtarı ve Akran Değerlendirme Formu QR",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -16529,7 +16597,7 @@
     "coverage": {
       "source_records": 12,
       "answer_entries": 17,
-      "steps": 24
+      "steps": 25
     },
     "steps": [
       {
@@ -17532,6 +17600,29 @@
         },
         "content": {
           "lead": "Tema boyunca ne öğrendiğinizi, hangi konuları pekiştirmek istediğinizi ve neleri merak ettiğinizi kendi deneyiminizden hareketle yazın."
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T02-S0149",
+          "theme_id": "TEMA_02",
+          "printed_page_range": "154",
+          "book_heading": "Tema Sonu — Öğrenme Günlüğü",
+          "task_type": "ASSESSMENT",
+          "rights_mode": "PAGE_REFERENCE",
+          "source_locator": "basılı s.154 / PDF s.155 — Öğrenme Günlüğü",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -27651,7 +27742,7 @@
     "coverage": {
       "source_records": 8,
       "answer_entries": 9,
-      "steps": 19
+      "steps": 20
     },
     "steps": [
       {
@@ -28492,6 +28583,29 @@
               "body": "Akran Değerlendirme Formu karekodla açılıyorsa kullanın; görmediğiniz form maddelerini varsaymayın."
             }
           ]
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T03-S0096",
+          "theme_id": "TEMA_03",
+          "printed_page_range": "214",
+          "book_heading": "Süreci Değerlendirebilme — rubrik, öz değerlendirme, gelişim ve akran geri bildirimi",
+          "task_type": "ASSESSMENT",
+          "rights_mode": "PAGE_REFERENCE",
+          "source_locator": "basılı s.214 / PDF s.215 — Değerlendirme 3-7, Öz Değerlendirme Formu ve QR yönlendirmeleri",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -30185,7 +30299,7 @@
     "coverage": {
       "source_records": 7,
       "answer_entries": 8,
-      "steps": 16
+      "steps": 17
     },
     "steps": [
       {
@@ -30866,6 +30980,29 @@
             }
           ],
           "note": "Çıkış kartına öğrenci adına hazır kişisel yanıt yazılmaz."
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T03-S0130",
+          "theme_id": "TEMA_03",
+          "printed_page_range": "229",
+          "book_heading": "Tema Sonu Değerlendirme — 3-2-1 Çıkış Kartı",
+          "task_type": "ASSESSMENT",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.229 / PDF s.230 — Tema Sonu Değerlendirme / Çıkış Kartı",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -37582,7 +37719,7 @@
     "coverage": {
       "source_records": 10,
       "answer_entries": 13,
-      "steps": 16
+      "steps": 17
     },
     "steps": [
       {
@@ -38291,6 +38428,31 @@
               "body": "Akranlarınızdan ve öğretmeninizden aldığınız geri bildirimleri dikkate alarak yeniden değerlendirin."
             }
           ]
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T04-S0083",
+          "theme_id": "TEMA_04",
+          "printed_page_range": "283",
+          "book_heading": "Sıra Sizde — özgün konuşmacı kimliği",
+          "task_type": "QUESTION",
+          "prompt": "Soru 3 — Eleştirileriniz ve deneyimlerinizden hareketle özgün konuşmacı kimliğinizi nasıl geliştireceğinizi açıklayınız.",
+          "prompt_mode": "VERBATIM_SHORT",
+          "rights_mode": "LIMITED_QUOTATION",
+          "source_locator": "basılı s.283 / PDF s.284 — Sıra Sizde soru 3",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
@@ -40231,7 +40393,7 @@
     "coverage": {
       "source_records": 13,
       "answer_entries": 16,
-      "steps": 19
+      "steps": 20
     },
     "steps": [
       {
@@ -41063,6 +41225,29 @@
               "body": "Hedefinizin gerçekleştiğini hangi ölçütle kontrol edeceğinizi yazınız."
             }
           ]
+        }
+      },
+      {
+        "id": "teacher-assessment-reminder",
+        "layout": "process",
+        "density": "compact",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "📝 Öğretmen değerlendirmesi",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T04-S0129",
+          "theme_id": "TEMA_04",
+          "printed_page_range": "302",
+          "book_heading": "Tema Sonu Değerlendirme — Öğrenme Günlüğü",
+          "task_type": "ASSESSMENT",
+          "rights_mode": "PAGE_REFERENCE",
+          "source_locator": "basılı s.302 / PDF s.303 — Tema Sonu Değerlendirme / Öğrenme Günlüğü",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
         }
       }
     ]
