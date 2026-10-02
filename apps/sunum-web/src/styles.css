@@ -1088,6 +1088,39 @@ button {
   background: var(--paper-2);
 }
 
+.menu__export {
+  flex: 0 0 auto;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.menu__export svg {
+  width: 21px;
+  height: 21px;
+}
+
+.menu__export:hover {
+  filter: brightness(0.9);
+}
+
+.menu__export:focus-visible,
+.menu__close:focus-visible {
+  outline: 3px solid #eabf62;
+  outline-offset: 2px;
+}
+
+.menu__export:disabled {
+  opacity: 0.55;
+  cursor: progress;
+}
+
 .menu__body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);

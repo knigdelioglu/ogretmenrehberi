@@ -149,14 +149,25 @@ const payload = Buffer.concat([header, salt, iv, encrypted]);
 fs.rmSync(distDir, { recursive: true, force: true });
 fs.mkdirSync(distDir, { recursive: true });
 
-const version = crypto.createHash("sha256").update(payload).digest("hex").slice(0, 10);
-const dataFile = `data.${version}.bin`;
+const dataVersion = crypto.createHash("sha256").update(payload).digest("hex").slice(0, 10);
+const sourceHash = crypto.createHash("sha256").update(payload);
+function addSourceFiles(directory, prefix = "") {
+  for (const name of fs.readdirSync(directory).sort()) {
+    const fullPath = path.join(directory, name);
+    const relativePath = path.posix.join(prefix, name);
+    if (fs.statSync(fullPath).isDirectory()) addSourceFiles(fullPath, relativePath);
+    else sourceHash.update(relativePath).update("\0").update(fs.readFileSync(fullPath));
+  }
+}
+addSourceFiles(srcDir);
+const appVersion = sourceHash.digest("hex").slice(0, 10);
+const dataFile = `data.${dataVersion}.bin`;
 fs.writeFileSync(path.join(distDir, dataFile), payload);
 
 for (const name of fs.readdirSync(srcDir)) {
   if (fs.statSync(path.join(srcDir, name)).isDirectory()) continue;
   let text = fs.readFileSync(path.join(srcDir, name), "utf8");
-  text = text.replaceAll("__DATA_FILE__", dataFile).replaceAll("__BUILD_VERSION__", version);
+  text = text.replaceAll("__DATA_FILE__", dataFile).replaceAll("__BUILD_VERSION__", appVersion);
   fs.writeFileSync(path.join(distDir, name), text);
 }
 fs.cpSync(path.join(srcDir, "assets"), path.join(distDir, "assets"), { recursive: true });

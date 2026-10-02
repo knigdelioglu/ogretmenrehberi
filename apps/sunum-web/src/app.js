@@ -1,6 +1,7 @@
 // Ders Sunumu — bağımlılıksız sunum oynatıcı
 // Veri: şifreli ders kataloğu (__DATA_FILE__), build sırasında kanonik veriden üretilir.
 import { groupItems, interleaveStages } from "./reveal-sequence.js";
+import { createLessonPptx, pptxFilename } from "./pptx-export.js";
 
 const DATA_FILE = "__DATA_FILE__";
 const BUILD = "__BUILD_VERSION__";
@@ -1340,6 +1341,32 @@ function closeMenu() {
   $("#menu").hidden = true;
 }
 
+async function exportCurrentLesson() {
+  const button = $("#menu-export-pptx");
+  const lesson = currentLesson();
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  button.title = "PowerPoint hazırlanıyor…";
+  try {
+    const blob = createLessonPptx(lesson);
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = pptxFilename(lesson);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } catch (error) {
+    console.error("PowerPoint dışa aktarılamadı", error);
+    window.alert("PowerPoint dosyası oluşturulamadı. Lütfen yeniden deneyin.");
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+    button.title = "Seçili dersi PowerPoint (.pptx) olarak indir";
+  }
+}
+
 // ============================================================
 // Tam ekran, tema, boş ekran
 // ============================================================
@@ -1501,6 +1528,9 @@ function onAction(action) {
       break;
     case "close-menu":
       closeMenu();
+      break;
+    case "export-pptx":
+      void exportCurrentLesson();
       break;
     case "fullscreen":
       toggleFullscreen();
