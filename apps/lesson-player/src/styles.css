@@ -832,17 +832,28 @@ button:focus-visible {
   inset-block-start: 16px;
   inset-inline-end: 20px;
   z-index: 30;
-  min-height: 42px;
-  padding: 0 16px;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  place-items: center;
   border: 1px solid rgb(255 255 255 / 0.24);
-  border-radius: 999px;
+  border-radius: 50%;
   background: #24574f;
   color: #fff;
   box-shadow: 0 8px 24px rgb(17 35 32 / 0.2);
   font: inherit;
-  font-size: 0.9rem;
-  font-weight: 720;
   cursor: pointer;
+}
+
+.presentation-pptx-export-trigger svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .presentation-pptx-export-trigger:hover {
@@ -952,9 +963,8 @@ button:focus-visible {
   .presentation-pptx-export-trigger {
     inset-block-start: 10px;
     inset-inline-end: 10px;
-    min-height: 38px;
-    padding-inline: 12px;
-    font-size: 0.82rem;
+    width: 42px;
+    height: 42px;
   }
 }
 

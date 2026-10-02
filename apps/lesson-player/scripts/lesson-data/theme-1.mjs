@@ -38,8 +38,8 @@ assert(
 );
 
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 184,
-  "1. Tema toplam 184 ders adımı içermeli."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 186,
+  "1. Tema toplam 186 ders adımı içermeli."
 );
 assert(
   theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
@@ -327,7 +327,7 @@ assert(
 const speaking = byLessonId.get("T11-T01-KONUSMA");
 assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
 assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
-assert(speaking.coverage.steps === 14, "Konuşma dersi 14 adım olmalı.");
+assert(speaking.coverage.steps === 15, "Konuşma dersi 15 adım olmalı.");
 assert(
   speaking.coverage.source_records === 7,
   "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
@@ -487,7 +487,7 @@ assert(
 const yazma = byLessonId.get("T11-T01-YAZMA");
 assert(yazma, "Yazma dersi catalog içinde bulunamadı.");
 assert(yazma.lesson_slug === "yazma", "Yazma lesson_slug doğru olmalı.");
-assert(yazma.coverage.steps === 17, "Yazma dersi 17 adım olmalı.");
+assert(yazma.coverage.steps === 18, "Yazma dersi 18 adım olmalı.");
 assert(
   yazma.coverage.source_records === 15,
   "Yazma dersi 15 source-index kaydını kapsamalı."

@@ -188,10 +188,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 199 &&
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 201 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 158 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 177,
-  "Tema 2 tam kapsam 199 adım / 158 source / 177 answer olmalı."
+  "Tema 2 tam kapsam 201 adım / 158 source / 177 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -318,10 +318,10 @@ assert(
   "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
 );
 assert(
-  speaking2.coverage.steps === 22 &&
+  speaking2.coverage.steps === 23 &&
     speaking2.coverage.source_records === 13 &&
     speaking2.coverage.answer_entries === 18,
-  "2. Tema Konuşma 22 adım / 13 source / 18 answer olmalı."
+  "2. Tema Konuşma 23 adım / 13 source / 18 answer olmalı."
 );
 
 const speaking2ById = new Map(speaking2.steps.map((step) => [step.id, step]));
@@ -430,10 +430,10 @@ const museumWriting = byLessonId.get("T11-T02-YAZMA");
 assert(museumWriting, "2. Tema çevrim içi müze yazma dersi bulunamadı.");
 assert(
   museumWriting.printed_page_range === "148-154" &&
-    museumWriting.coverage.steps === 24 &&
+    museumWriting.coverage.steps === 25 &&
     museumWriting.coverage.source_records === 12 &&
     museumWriting.coverage.answer_entries === 17,
-  "Tema 2 Yazma s.148–154, 24 adım / 12 source / 17 answer olmalı."
+  "Tema 2 Yazma s.148–154, 25 adım / 12 source / 17 answer olmalı."
 );
 const museumById = new Map(museumWriting.steps.map((step) => [step.id, step]));
 assert(

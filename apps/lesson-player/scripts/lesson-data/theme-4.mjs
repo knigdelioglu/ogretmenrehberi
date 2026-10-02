@@ -92,10 +92,10 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 235 &&
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 237 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 164,
-  "Tema 4 tamamı 14 ders / 235 ekran / 143 kaynak / 164 cevap olmalı.");
+  "Tema 4 tamamı 14 ders / 237 ekran / 143 kaynak / 164 cevap olmalı.");
 
 const mimarAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255");
 assert(mimarAnalysis && mimarAnalysis.printed_page_range === "251-255" &&
@@ -386,11 +386,11 @@ for (const step of merdivenDeep.steps) {
 
 const theatreWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-TIYATRO-CANLANDIRMA-280-283");
 assert(theatreWorkshop && theatreWorkshop.printed_page_range === "280-283" &&
-  theatreWorkshop.coverage.steps === 16 && theatreWorkshop.coverage.source_records === 10 &&
+  theatreWorkshop.coverage.steps === 17 && theatreWorkshop.coverage.source_records === 10 &&
   theatreWorkshop.coverage.answer_entries === 13,
-  "Tiyatro canlandırma s.280–283 16 ekran / 10 kaynak / 13 cevap içermeli.");
+  "Tiyatro canlandırma s.280–283 17 ekran / 10 kaynak / 13 cevap içermeli.");
 const theatreWorkshopById = new Map(theatreWorkshop.steps.map(step => [step.id, step]));
-assert(theatreWorkshopById.size === 16, "Tiyatro canlandırma ekran kimlikleri benzersiz olmalı.");
+assert(theatreWorkshopById.size === 17, "Tiyatro canlandırma ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s280-q1","T04-S0074","T4-P280-Q01"],
   ["s280-q2","T04-S0075","T4-P280-PERF02"],
@@ -530,11 +530,11 @@ for (const step of anadoluAnalysis.steps) {
 
 const posterWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-AFIS-ATOLYESI-298-302");
 assert(posterWorkshop && posterWorkshop.printed_page_range === "298-302" &&
-  posterWorkshop.coverage.steps === 19 && posterWorkshop.coverage.source_records === 13 &&
+  posterWorkshop.coverage.steps === 20 && posterWorkshop.coverage.source_records === 13 &&
   posterWorkshop.coverage.answer_entries === 16,
-  "Afiş atölyesi s.298–302 19 ekran / 13 kaynak / 16 cevap içermeli.");
+  "Afiş atölyesi s.298–302 20 ekran / 13 kaynak / 16 cevap içermeli.");
 const posterById = new Map(posterWorkshop.steps.map(step => [step.id, step]));
-assert(posterById.size === 19, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
+assert(posterById.size === 20, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s299-q1","T04-S0118","T4-P299-Q01"],
   ["s299-q2","T04-S0119","T4-P299-Q02"],
