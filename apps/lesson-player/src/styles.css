@@ -2067,12 +2067,96 @@ button:focus-visible {
   background: #fcf8ef;
   line-height: 1.48;
 }
-.assessment-criterion__marker {
+.assessment-criterion input[type="checkbox"] {
   flex: 0 0 14px;
   height: 14px;
   margin-top: 4px;
   border: 2px solid #ac8758;
   border-radius: 3px;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.assessment-criterion input[type="checkbox"]:checked {
+  background: #16766d;
+  box-shadow: inset 0 0 0 2px #fcf8ef;
+  border-color: #16766d;
+}
+.assessment-criterion input[type="checkbox"]:focus-visible {
+  outline: 3px solid #7fa99c;
+  outline-offset: 3px;
+}
+.assessment-table-wrap {
+  max-width: 100%;
+  margin-top: 25px;
+  overflow-x: auto;
+  border: 1px solid #e1d3bb;
+  border-radius: 11px;
+}
+.assessment-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fcf8ef;
+}
+.assessment-table th,
+.assessment-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e1daca;
+}
+.assessment-table thead th {
+  background: #dceee9;
+  color: #17675f;
+  font-weight: 760;
+  text-align: center;
+}
+.assessment-table thead th:first-child {
+  width: 70%;
+  text-align: left;
+}
+.assessment-table tbody th {
+  color: var(--ink);
+  font-weight: 480;
+  line-height: 1.45;
+  text-align: left;
+}
+.assessment-table tbody tr:last-child th,
+.assessment-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.assessment-table td {
+  width: 10%;
+  text-align: center;
+}
+.assessment-table__number {
+  display: inline-block;
+  min-width: 1.5em;
+  margin-right: 10px;
+  color: #16766d;
+  font-weight: 760;
+}
+.assessment-table input[type="radio"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border: 2px solid #16766d;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.assessment-table input[type="radio"]:checked {
+  background: #16766d;
+  box-shadow: inset 0 0 0 4px #fcf8ef;
+}
+.assessment-table input[type="radio"]:focus-visible {
+  outline: 3px solid #7fa99c;
+  outline-offset: 3px;
+}
+.assessment-table tbody tr:has(input:checked) {
+  background: #f4f2e9;
 }
 .assessment-sections .reference-card {
   background: #fcf8ef;

@@ -234,6 +234,17 @@
         "note": "Akran Değerlendirme Formu ve Dereceli Puanlama Anahtarı kitabın QR bağlantılarındadır; içerikleri kaynakta görünmediği için uygulama burada bu formları yeniden üretmez."
       },
       "answer_id": "T1-P58-SRC01"
+    },
+    {
+      "id": "teacher-assessment-reminder",
+      "source_record_id": "T01-S0063",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "📝 Öğretmen değerlendirmesi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
+      }
     }
   ]
 }

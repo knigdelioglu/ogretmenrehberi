@@ -70,6 +70,7 @@ const progressStepKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.step-id`;
 const modeKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.projection`;
 const overridesKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.overrides`;
 const orderKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.order`;
+const assessmentKey = `ogretmenrehberi.lesson.${lesson.lesson_id}.assessments`;
 const originalStepById = new Map(lesson.steps.map((step) => [step.id, step]));
 const overrideSignature = canonicalLessonSignature(lesson);
 const projectionChannelName = "ogretmenrehberi.lesson-player.projection-channel";
@@ -93,6 +94,7 @@ type ProjectionSyncState = {
   overrides: StepOverrides;
   revealed: RevealKey[];
   vocabularyTerms: Record<string, string[]>;
+  assessmentSelections: Record<string, Record<number, string>>;
 };
 
 function restoredIndex() {
@@ -206,6 +208,32 @@ function applyOverride(step: LessonStep, override?: StepOverride): LessonStep {
   };
 }
 
+function restoredAssessmentSelections(): Record<string, Record<number, string>> {
+  try {
+    const parsed: unknown = JSON.parse(window.localStorage.getItem(assessmentKey) ?? "{}");
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+    const restored: Record<string, Record<number, string>> = {};
+    for (const step of lesson.steps) {
+      const raw = (parsed as Record<string, unknown>)[step.id];
+      const scale = step.content?.scale ?? [];
+      if (!raw || typeof raw !== "object" || Array.isArray(raw) || !step.content?.items?.length) continue;
+      const valid: Record<number, string> = {};
+      for (const [index, value] of Object.entries(raw as Record<string, unknown>)) {
+        const itemIndex = Number(index);
+        if (
+          Number.isInteger(itemIndex) && itemIndex >= 0 &&
+          itemIndex < (step.content?.items?.length ?? 0) &&
+          typeof value === "string" && (scale.length ? scale.includes(value) : value === "checked")
+        ) valid[itemIndex] = value;
+      }
+      if (Object.keys(valid).length) restored[step.id] = valid;
+    }
+    return restored;
+  } catch {
+    return {};
+  }
+}
+
 export default function App() {
   const [index, setIndex] = useState(restoredIndex);
   const [overrideRestore] = useState(restoredOverrides);
@@ -229,6 +257,7 @@ export default function App() {
   );
   const [revealed, setRevealed] = useState<Set<RevealKey>>(new Set());
   const [vocabularyTerms, setVocabularyTerms] = useState<Record<string, string[]>>({});
+  const [assessmentSelections, setAssessmentSelections] = useState(restoredAssessmentSelections);
   const projectionChannelRef = useRef<BroadcastChannel | null>(null);
   const projectionStateRef = useRef<ProjectionSyncState>({
     lessonId: lesson.lesson_id,
@@ -237,7 +266,8 @@ export default function App() {
     stepOrder,
     overrides: {},
     revealed: [],
-    vocabularyTerms: {}
+    vocabularyTerms: {},
+    assessmentSelections: {}
   });
 
   const effectiveSteps = useMemo(
@@ -265,7 +295,8 @@ export default function App() {
     stepOrder,
     overrides: studentVisibleOverrides(overrides, lesson.theme_id),
     revealed: studentVisibleRevealKeys(revealed, lesson.theme_id),
-    vocabularyTerms
+    vocabularyTerms,
+    assessmentSelections
   };
 
   const goTo = useCallback((next: number) => {
@@ -305,6 +336,37 @@ export default function App() {
         [stepId]: [...existing]
       };
     });
+  }, []);
+
+  const selectAssessment = useCallback((stepId: string, itemIndex: number, value: string) => {
+    const assessmentStep = originalStepById.get(stepId);
+    if (
+      !assessmentStep?.content?.items?.length ||
+      !Number.isInteger(itemIndex) || itemIndex < 0 ||
+      itemIndex >= assessmentStep.content.items.length ||
+      (assessmentStep.content.scale?.length
+        ? !assessmentStep.content.scale.includes(value)
+        : value !== "checked" && value !== "")
+    ) return;
+
+    setAssessmentSelections((current) => {
+      const stepSelections = { ...current[stepId] };
+      if (value) stepSelections[itemIndex] = value;
+      else delete stepSelections[itemIndex];
+      const next = { ...current };
+      if (Object.keys(stepSelections).length) next[stepId] = stepSelections;
+      else delete next[stepId];
+      return next;
+    });
+    if (displayOnly) {
+      projectionChannelRef.current?.postMessage({
+        type: "assessment-update",
+        lessonId: lesson.lesson_id,
+        stepId,
+        itemIndex,
+        value
+      });
+    }
   }, []);
 
   const revealNext = useCallback(() => {
@@ -549,6 +611,7 @@ export default function App() {
         | { type: "request-state" }
         | { type: "lesson-switch"; lessonId: string }
         | { type: "lesson-state"; state: ProjectionSyncState }
+        | { type: "assessment-update"; lessonId: string; stepId: string; itemIndex: number; value: string }
         | undefined;
       if (!message) return;
 
@@ -583,6 +646,26 @@ export default function App() {
         setIndex(restoredStepIndex(orderedIds, state.stepId, null, state.index));
         setRevealed(new Set(studentVisibleRevealKeys(state.revealed ?? [], lesson.theme_id)));
         setVocabularyTerms(state.vocabularyTerms ?? {});
+        setAssessmentSelections(state.assessmentSelections ?? {});
+        return;
+      }
+
+      if (message.type === "assessment-update" && !displayOnly && message.lessonId === lesson.lesson_id) {
+        const assessmentStep = originalStepById.get(message.stepId);
+        if (
+          !assessmentStep?.content?.items?.length ||
+          !Number.isInteger(message.itemIndex) || message.itemIndex < 0 ||
+          message.itemIndex >= assessmentStep.content.items.length ||
+          (assessmentStep.content.scale?.length
+            ? !assessmentStep.content.scale.includes(message.value)
+            : message.value !== "checked" && message.value !== "")
+        ) return;
+        setAssessmentSelections((current) => ({
+          ...current,
+          [message.stepId]: message.value
+            ? { ...current[message.stepId], [message.itemIndex]: message.value }
+            : Object.fromEntries(Object.entries(current[message.stepId] ?? {}).filter(([index]) => Number(index) !== message.itemIndex))
+        }));
       }
     };
 
@@ -604,7 +687,15 @@ export default function App() {
       type: "lesson-state",
       state: projectionStateRef.current
     });
-  }, [index, overrides, revealed, stepOrder, vocabularyTerms]);
+  }, [index, overrides, revealed, stepOrder, vocabularyTerms, assessmentSelections]);
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(assessmentKey, JSON.stringify(assessmentSelections));
+    } catch {
+      // Keep the current page usable when browser storage is unavailable.
+    }
+  }, [assessmentSelections]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -741,6 +832,8 @@ export default function App() {
             new Set(vocabularyTerms[step.id] ?? [])
           }
           toggleVocabularyTerm={(term) => toggleVocabularyTerm(step.id, term)}
+          assessmentSelections={assessmentSelections[step.id] ?? {}}
+          onAssessmentSelect={selectAssessment}
         />
 
         <LessonFooter

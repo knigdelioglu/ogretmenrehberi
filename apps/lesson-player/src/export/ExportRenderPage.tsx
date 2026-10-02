@@ -159,6 +159,9 @@ export function ExportRenderPage() {
               showTeacherSupport={slide.view === "teacher"}
               visibleVocabularyTerms={new Set()}
               toggleVocabularyTerm={noOp}
+              assessmentSelections={{}}
+              onAssessmentSelect={noOp}
+              assessmentReadOnly
             />
           </div>
         </div>

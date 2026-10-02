@@ -300,6 +300,17 @@
         ],
         "note": "Öz ve akran değerlendirmede belirlenen eksikleri sonraki konuşma için somut hedeflere dönüştürün."
       }
+    },
+    {
+      "id": "teacher-assessment-reminder",
+      "source_record_id": "T02-S0115",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "📝 Öğretmen değerlendirmesi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
+      }
     }
   ]
 }

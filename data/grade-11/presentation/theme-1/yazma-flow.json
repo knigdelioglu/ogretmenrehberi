@@ -214,6 +214,17 @@
           "Aynı ölçüte dönüp çalışmanızı yeniden değerlendirin; ilerlemenizi ve sonraki adımınızı kaydedin."
         ]
       }
+    },
+    {
+      "id": "teacher-assessment-reminder",
+      "source_record_id": "T01-S0116",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "📝 Öğretmen değerlendirmesi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
+      }
     }
   ]
 }

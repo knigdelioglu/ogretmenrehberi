@@ -15,6 +15,9 @@ interface StepViewProps {
   showTeacherSupport: boolean;
   visibleVocabularyTerms: ReadonlySet<string>;
   toggleVocabularyTerm: (term: string) => void;
+  assessmentSelections: Record<number, string>;
+  onAssessmentSelect: (stepId: string, itemIndex: number, value: string) => void;
+  assessmentReadOnly?: boolean;
 }
 
 const taskTypeLabels: Record<string, string> = {
@@ -202,7 +205,10 @@ export function StepView({
   showTeacherNotes,
   showTeacherSupport,
   visibleVocabularyTerms,
-  toggleVocabularyTerm
+  toggleVocabularyTerm,
+  assessmentSelections,
+  onAssessmentSelect,
+  assessmentReadOnly = false
 }: StepViewProps) {
   const { answer, content, source } = step;
   const dictionaryTerms = dictionaryTermsForStep(step);
@@ -366,7 +372,14 @@ export function StepView({
         ) : null}
 
         {!answerVisible || preserveStructuredContentWithAnswer ? (
-          <StepContentLayout layout={step.layout} content={content} />
+          <StepContentLayout
+            layout={step.layout}
+            content={content}
+            stepId={step.id}
+            assessmentSelections={assessmentSelections}
+            onAssessmentSelect={onAssessmentSelect}
+            assessmentReadOnly={assessmentReadOnly}
+          />
         ) : null}
 
         {isVocabulary && answer ? (

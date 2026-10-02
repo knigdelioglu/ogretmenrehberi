@@ -101,6 +101,59 @@ try {
     "Karagöz initial step"
   );
 
+  await teacher.send("Page.navigate", {
+    url: `${root}/?lesson=T11-T01-KONUSMA&step=s58-self-assessment-1`
+  });
+  await until(
+    () => teacher.evaluate('document.querySelectorAll(".assessment-table tbody tr").length === 5'),
+    "Interactive self-assessment table"
+  );
+  await teacher.evaluate(
+    'document.querySelector(".assessment-table input[name=\\"s58-self-assessment-1-assessment-0\\"][value=\\"Evet\\"]")?.click()'
+  );
+  await until(() => teacher.evaluate(`(() => {
+    const input = document.querySelector('.assessment-table input[name="s58-self-assessment-1-assessment-0"][value="Evet"]');
+    const saved = JSON.parse(localStorage.getItem('ogretmenrehberi.lesson.T11-T01-KONUSMA.assessments') ?? '{}');
+    return input?.checked && saved['s58-self-assessment-1']?.[0] === 'Evet';
+  })()`), "Assessment choice persistence");
+  await teacher.send("Page.navigate", {
+    url: `${root}/?lesson=T11-T01-KONUSMA&step=s58-self-assessment-2`
+  });
+  await until(
+    () => teacher.evaluate('document.querySelectorAll(".assessment-table tbody tr").length === 5'),
+    "Second self-assessment page"
+  );
+  await teacher.send("Page.navigate", {
+    url: `${root}/?lesson=T11-T01-KONUSMA&step=s58-self-assessment-1`
+  });
+  await until(
+    () => teacher.evaluate('document.querySelector(".assessment-table input[name=\\"s58-self-assessment-1-assessment-0\\"][value=\\"Evet\\"]")?.checked'),
+    "Assessment selection restored between pages"
+  );
+  await teacher.send("Page.reload");
+  await until(
+    () => teacher.evaluate('document.querySelector(".assessment-table input[name=\\"s58-self-assessment-1-assessment-0\\"][value=\\"Evet\\"]")?.checked'),
+    "Assessment selection restored after reload"
+  );
+  await teacher.send("Page.navigate", {
+    url: `${root}/?lesson=T11-T04-TIYATRO-CANLANDIRMA-280-283&step=s281-checklist`
+  });
+  await until(
+    () => teacher.evaluate('document.querySelectorAll(".assessment-criterion input[type=checkbox]").length === 5'),
+    "Interactive checklist without a rating scale"
+  );
+  await teacher.evaluate('document.querySelector(".assessment-criterion input[type=checkbox]")?.click()');
+  await until(() => teacher.evaluate(`(() => {
+    const input = document.querySelector('.assessment-criterion input[type="checkbox"]');
+    const saved = JSON.parse(localStorage.getItem('ogretmenrehberi.lesson.T11-T04-TIYATRO-CANLANDIRMA-280-283.assessments') ?? '{}');
+    return input?.checked && saved['s281-checklist']?.[0] === 'checked';
+  })()`), "Checklist selection persistence");
+  await teacher.send("Page.navigate", { url: karagoz });
+  await until(
+    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
+    "Karagöz initial step after assessment check"
+  );
+
   // The guidance is teacher-only and must never leak into the student display.
   await teacher.evaluate(
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğretmen rehberi').click()"
@@ -394,6 +447,12 @@ try {
       step: "s283-performance",
       selector: '[data-content-layout="assessment"] .assessment-criterion',
       count: 5
+    },
+    {
+      lesson: "T11-T01-KONUSMA",
+      step: "s58-self-assessment-1",
+      selector: '[data-content-layout="assessment"] .assessment-table tbody tr',
+      count: 5
     }
   ]) {
     await teacher.send("Page.navigate", {
@@ -427,7 +486,7 @@ try {
     }
   }
 
-  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, six dedicated layout views, teacher workflow visibility and student isolation.");
+  console.log("Browser runtime assertions passed: reordered reload/reset, student note isolation, cross-lesson projection, stale edit backup, dedicated layout views, scaled and checklist assessment persistence, teacher workflow visibility and student isolation.");
 } finally {
   for (const client of clients) client.close();
   browser.kill();

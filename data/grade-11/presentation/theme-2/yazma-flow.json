@@ -349,6 +349,17 @@
       "content": {
         "lead": "Tema boyunca ne öğrendiğinizi, hangi konuları pekiştirmek istediğinizi ve neleri merak ettiğinizi kendi deneyiminizden hareketle yazın."
       }
+    },
+    {
+      "id": "teacher-assessment-reminder",
+      "source_record_id": "T02-S0149",
+      "layout": "process",
+      "density": "compact",
+      "prompt": "📝 Öğretmen değerlendirmesi",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Atölye çalışmalarını görev ölçütlerine göre değerlendirip öğrencilere kısa, geliştirici geri bildirim verin."
+      }
     }
   ]
 }
