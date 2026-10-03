@@ -1,0 +1,162 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 56,
+  "pdf_page": 57,
+  "section": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — İletişim Engelleri",
+  "source": {
+    "printed_page": 56,
+    "pdf_page": 57,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Sıra Sizde\n\n\n1. Yapacağınız canlandırmadan hareketle belirlediğiniz iletişim hatalarını ve çözüm önerilerinizi aşağıdaki\ntabloya yazınız.\n\nİletişim Hataları Çözüm Önerileri\n\n\n\n\n2. Tespit ettiğiniz iletişim hatalarını aşağıdaki tabloda verilen başlıklara göre sınıflandırarak ilgili yerlere\nyazınız.\n\nOrtam Dil Kullanımı Vurgu\n\n\n\n\nTonlama Beden Dili\n\n\n\n\n3. Bu hataların iletişimi nasıl etkilediği ve hangi durumlarda iletişim kazalarına yol açtığıyla ilgili tahmin-\nlerde bulununuz.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P56-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "order": 1
+    },
+    {
+      "text": "1. Yapacağınız canlandırmadan hareketle belirlediğiniz iletişim hatalarını ve çözüm önerilerinizi aşağıdaki\ntabloya yazınız.\n\nİletişim Hataları Çözüm Önerileri",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P53-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P56-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "table_ids": [
+        "G11-T1-P56-TABLE01",
+        "G11-T1-P56-TABLE02"
+      ],
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P56-ACT01",
+      "type": "activity",
+      "title": "İletişim hataları",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P56-Q02",
+        "G11-T1-P56-Q03"
+      ],
+      "table_ids": [
+        "G11-T1-P56-TABLE01",
+        "G11-T1-P56-TABLE02"
+      ],
+      "related_text_ids": [
+        "G11-T1-P53-TEXT01"
+      ],
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "order": 3
+    },
+    {
+      "title": "İletişim hataları ve çözüm önerileri",
+      "columns": [
+        "İletişim Hataları",
+        "Çözüm Önerileri"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P56-Q01",
+        "G11-T1-P56-Q02"
+      ],
+      "id": "G11-T1-P56-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "order": 4
+    },
+    {
+      "title": "Hata sınıflandırma alanları",
+      "columns": [
+        "Ortam",
+        "Dil Kullanımı",
+        "Vurgu",
+        "Tonlama",
+        "Beden Dili"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P56-Q01",
+        "G11-T1-P56-Q02"
+      ],
+      "id": "G11-T1-P56-TABLE02",
+      "type": "table",
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "order": 5
+    },
+    {
+      "text": "2. Tespit ettiğiniz iletişim hatalarını aşağıdaki tabloda verilen başlıklara göre sınıflandırarak ilgili yerlere\nyazınız.\n\nOrtam Dil Kullanımı Vurgu\n\n\n\n\nTonlama Beden Dili",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P53-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P56-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "table_ids": [
+        "G11-T1-P56-TABLE01",
+        "G11-T1-P56-TABLE02"
+      ],
+      "order": 6,
+      "activity_id": "G11-T1-P56-ACT01"
+    },
+    {
+      "text": "3. Bu hataların iletişimi nasıl etkilediği ve hangi durumlarda iletişim kazalarına yol açtığıyla ilgili tahmin-\nlerde bulununuz.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P53-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P56-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 56,
+        "pdf_page": 57
+      },
+      "order": 7,
+      "activity_id": "G11-T1-P56-ACT01"
+    }
+  ]
+}

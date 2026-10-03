@@ -1,0 +1,102 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 70,
+  "pdf_page": 71,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 70,
+    "pdf_page": 71,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "3. Metinde hangi iletişim engellerinin yer aldığını belirleyiniz ve bunları aşağıdaki kavram haritasında ilgili\nyerlere yazınız.\n\nİletişim Engelleri\n\n\n\nÖn yargılar\nSosyokültürel İletişim Engelleri ça-\n................................................. Engeller lışmasına karekoddan\nulaşabilirsiniz.\n.................................................\n\n\n\nGürültü\nFiziksel ve Çevresel .................................................\nEngeller\n.................................................\n\n\n\n\n.................................................\nDil ve Anlatımdan\n.................................................\nKaynaklı Engeller\n.................................................\n\n\n\nDavranışsal .................................................\nve\n.................................................\nDüşünsel\nEngeller .................................................\n\n\n\n\n.................................................\nPsikolojik\n.................................................\nEngeller\n.................................................\n\n\n\n\n4. Kavram haritasına yazdığınız iletişim engellerini nasıl ortadan kaldırabileceğinize dair çıkarımlarınızı\nnot ediniz.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "3. Metinde hangi iletişim engellerinin yer aldığını belirleyiniz ve bunları aşağıdaki kavram haritasında ilgili yerlere yazınız.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "response_area": {
+        "kind": "lined_or_dotted",
+        "visible": true
+      },
+      "id": "G11-T1-P70-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 70,
+        "pdf_page": 71
+      },
+      "order": 1,
+      "visual_ids": [
+        "G11-T1-P70-VIS01"
+      ],
+      "activity_id": "G11-T1-P70-ACT01"
+    },
+    {
+      "caption": null,
+      "alt_description": "İletişim engelleri başlıklarını ve boş doldurma alanlarını bir araya getiren ağaç biçimli kavram haritası yer alır.",
+      "id": "G11-T1-P70-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 70,
+        "pdf_page": 71
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P70-ACT01",
+      "type": "activity",
+      "title": "Tartışma ve iletişim kanalları",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P70-Q03",
+        "G11-T1-P70-Q04"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "source": {
+        "printed_page": 70,
+        "pdf_page": 71
+      },
+      "order": 3
+    },
+    {
+      "text": "4. Kavram haritasına yazdığınız iletişim engellerini nasıl ortadan kaldırabileceğinize dair çıkarımlarınızı\nnot ediniz.",
+      "question_number": "4",
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P70-Q04",
+      "type": "question",
+      "source": {
+        "printed_page": 70,
+        "pdf_page": 71
+      },
+      "order": 4,
+      "activity_id": "G11-T1-P70-ACT01"
+    },
+    {
+      "caption": "Sosyokültürel İletişim Engelleri çalışmasına karekoddan ulaşabilirsiniz.",
+      "alt_description": "Sayfanın sağ üst tarafındaki kavram haritası yanında QR kodu bulunur.",
+      "pedagogical_role": "Karekodla ek iletişim engelleri çalışmasına erişim sağlanır.",
+      "source_note": "Karekod hedefindeki içerik bu PDF sayfasından bağımsızdır; hedef içerik çözümlenmemiştir.",
+      "id": "G11-T1-P70-VIS02",
+      "type": "visual",
+      "source": {
+        "printed_page": 70,
+        "pdf_page": 71
+      },
+      "order": 5
+    }
+  ]
+}

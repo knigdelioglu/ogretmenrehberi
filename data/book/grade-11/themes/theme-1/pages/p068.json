@@ -1,0 +1,221 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 68,
+  "pdf_page": 69,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 68,
+    "pdf_page": 69,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Birlikte Çalışalım\n\n\nAşağıdaki basamakları izleyiniz ve teknoloji kullanımının iletişimi bugün nasıl etkilediğinden yola çıkarak uzak gelecekte iletişim\nalanında hangi araçların kullanılabileceğini ve bunların iletişimi nasıl etkileyebileceğini tartışınız.\n1. Fikir taraması gerçekleştirmek amacıyla öğretmeninizin rehberliğinde sınıf içinde dörder kişilik gruplar\noluşturunuz.\n2. Grup sözcülerini seçiniz.\n3. Grup arkadaşlarınızla yukarıda verilen konuyu on dakika tartışınız.\n4. Tartışma sonucunda ulaştığınız fikirleri not ediniz.\n5. Ulaştığınız fikirleri grup sözcüleri aracılığıyla sınıfta arkadaşlarınızla paylaşınız.\n\n\n\n\nSıra Sizde\n\n\nSınıfta altışar kişilik vızıltı grupları oluşturarak aşağıdaki adımları uygulayınız.\n\n1. Paydos adlı tiyatro eserinden alınan parçayı okuyunuz.\n2. Metinde dilin yanlış kullanımından kaynaklı iletişim aksaklıklarını belirleyiniz.\n\n\nPaydos\n(...)\nHATİCE\nEvet konaktan bahsediyorduk. Efendim kaynanamın kocasından kalan bir maaşı vardı. Az bir şey... Onun on\nseneliğini birden verdiler. Bankadan da borç aldı. Bu konağın tapusunu eline geçirdi. Geçirdi amma aradan\nçok geçmeden sizlere ömür vefat edince tapu ile beraber o kocaman banka borcu da bize kaldı.\nHASAN\nÇok güzel, çok güzel...\nHATİCE\nSizin anlayacağınız koca konağın böyle bir odasına tıkıldık, kaldık, bütün aldığımız kiraları habire bankaya\nyatırıyoruz. Kalan üç beş kuruş da vergisi ile tamirata gidiyor.\nHASAN\nÇok iyi, çok iyi...\nHATİCE\nİlâhî muhtar efendi bunun neresi iyi... Parasızlıktan canımız çıkıyor.\nHASAN\nAlâ... Alâ... Efendim şimdi biz sadede gelelim... İbrahim şu define hikâyesini anlat bakalım Hatice Hanıma...\nİBRAHİM\nSen anlat muhtar... Daha iyi becerirsin...",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Birlikte Çalışalım",
+      "id": "G11-T1-P68-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 1
+    },
+    {
+      "caption": "Paydos",
+      "alt_description": "Sayfada haber stüdyosu benzeri bir ortamda kişilerin yer aldığı fotoğraf bulunur.",
+      "id": "G11-T1-P68-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P68-ACT01",
+      "type": "activity",
+      "title": "Birlikte Çalışalım",
+      "instruction_ids": [
+        "G11-T1-P68-INST07",
+        "G11-T1-P68-INST01",
+        "G11-T1-P68-INST02",
+        "G11-T1-P68-INST03",
+        "G11-T1-P68-INST04",
+        "G11-T1-P68-INST05"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 3
+    },
+    {
+      "text": "Aşağıdaki basamakları izleyiniz ve teknoloji kullanımının iletişimi bugün nasıl etkilediğinden yola çıkarak uzak gelecekte iletişim\nalanında hangi araçların kullanılabileceğini ve bunların iletişimi nasıl etkileyebileceğini tartışınız.",
+      "instruction_kind": "activity_lead",
+      "id": "G11-T1-P68-INST07",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 4
+    },
+    {
+      "text": "1. Fikir taraması gerçekleştirmek amacıyla öğretmeninizin rehberliğinde sınıf içinde dörder kişilik gruplar\noluşturunuz.",
+      "number": "1",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P68-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 5
+    },
+    {
+      "text": "2. Grup sözcülerini seçiniz.",
+      "number": "2",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P68-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 6
+    },
+    {
+      "text": "3. Grup arkadaşlarınızla yukarıda verilen konuyu on dakika tartışınız.",
+      "number": "3",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P68-INST03",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 7
+    },
+    {
+      "text": "4. Tartışma sonucunda ulaştığınız fikirleri not ediniz.",
+      "number": "4",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P68-INST04",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 8
+    },
+    {
+      "text": "5. Ulaştığınız fikirleri grup sözcüleri aracılığıyla sınıfta arkadaşlarınızla paylaşınız.",
+      "number": "5",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P68-INST05",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 9
+    },
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P68-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 10
+    },
+    {
+      "id": "G11-T1-P68-ACT02",
+      "type": "activity",
+      "title": "Sıra Sizde",
+      "instruction_ids": [
+        "G11-T1-P68-INST08",
+        "G11-T1-P68-INST06"
+      ],
+      "question_ids": [
+        "G11-T1-P68-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 11
+    },
+    {
+      "text": "Sınıfta altışar kişilik vızıltı grupları oluşturarak aşağıdaki adımları uygulayınız.",
+      "instruction_kind": "activity_lead",
+      "id": "G11-T1-P68-INST08",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 12
+    },
+    {
+      "text": "1. Paydos adlı tiyatro eserinden alınan parçayı okuyunuz.",
+      "number": "1",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P68-INST06",
+      "type": "instruction",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 13,
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ]
+    },
+    {
+      "text": "2. Metinde dilin yanlış kullanımından kaynaklı iletişim aksaklıklarını belirleyiniz.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P68-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 14,
+      "activity_id": "G11-T1-P68-ACT02"
+    },
+    {
+      "title": "Paydos",
+      "text": "HATİCE\nEvet konaktan bahsediyorduk. Efendim kaynanamın kocasından kalan bir maaşı vardı. Az bir şey... Onun on\nseneliğini birden verdiler. Bankadan da borç aldı. Bu konağın tapusunu eline geçirdi. Geçirdi amma aradan\nçok geçmeden sizlere ömür vefat edince tapu ile beraber o kocaman banka borcu da bize kaldı.\nHASAN\nÇok güzel, çok güzel...\nHATİCE\nSizin anlayacağınız koca konağın böyle bir odasına tıkıldık, kaldık, bütün aldığımız kiraları habire bankaya\nyatırıyoruz. Kalan üç beş kuruş da vergisi ile tamirata gidiyor.\nHASAN\nÇok iyi, çok iyi...\nHATİCE\nİlâhî muhtar efendi bunun neresi iyi... Parasızlıktan canımız çıkıyor.\nHASAN\nAlâ... Alâ... Efendim şimdi biz sadede gelelim... İbrahim şu define hikâyesini anlat bakalım Hatice Hanıma...\nİBRAHİM\nSen anlat muhtar... Daha iyi becerirsin...",
+      "lines": [],
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": true
+      },
+      "id": "G11-T1-P68-DLG01",
+      "type": "dialogue",
+      "source": {
+        "printed_page": 68,
+        "pdf_page": 69
+      },
+      "order": 15
+    }
+  ]
+}

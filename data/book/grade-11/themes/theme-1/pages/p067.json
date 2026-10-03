@@ -1,0 +1,195 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 67,
+  "pdf_page": 68,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 67,
+    "pdf_page": 68,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "6. Metnin içeriği hakkında metni dinlemeden / izlemeden önceki tahminlerinizle dinledikten / izledikten\nsonraki tespitlerinizi ilgili yerlere yazarak karşılaştırınız.\n\nDinlemeden / İzlemeden Önceki Tahminlerim Dinledikten / İzledikten Sonraki Tespitlerim\n\n\n\n\n7. Metinle ilgili tahmin ve tespitlerinizden hareketle iletişime dair ulaştığınız sonuçları yazınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n\n8. Metinden öznel ve nesnel ifadelere örnekler bulup ilgili yerlere yazınız. Bu ifadelerin metne katkısını\ndeğerlendiriniz.\n\nÖznel İfadeler Nesnel İfadeler\n\n\n\n\n9. Metinden anladıklarınızı özetleyerek aşağıya yazınız.\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n............................................................................................................................................................... Geçmişten Günümüze\n............................................................................................................................................................... İletişim Araçları içeriğine\nkarekoddan\n............................................................................................................................................................... ulaşabilirsiniz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Birlikte Çalışalım",
+      "id": "G11-T1-P67-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 1
+    },
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P67-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 2
+    },
+    {
+      "text": "6. Metnin içeriği hakkında metni dinlemeden / izlemeden önceki tahminlerinizle dinledikten / izledikten sonraki tespitlerinizi ilgili yerlere yazarak karşılaştırınız.",
+      "question_number": "6",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P67-Q06",
+      "type": "question",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 3,
+      "table_ids": [
+        "G11-T1-P67-TABLE01"
+      ],
+      "activity_id": "G11-T1-P67-ACT01"
+    },
+    {
+      "id": "G11-T1-P67-ACT01",
+      "type": "activity",
+      "title": "Gelecekte iletişim ve Paydos",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P67-Q06",
+        "G11-T1-P67-Q07",
+        "G11-T1-P67-Q08",
+        "G11-T1-P67-Q09"
+      ],
+      "table_ids": [
+        "G11-T1-P67-TABLE01",
+        "G11-T1-P67-TABLE02"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 4,
+      "continuation": {
+        "from_previous_page": true,
+        "related_activity_ids": [
+          "G11-T1-P66-ACT01"
+        ]
+      }
+    },
+    {
+      "title": "Tahmin ve tespit karşılaştırması",
+      "columns": [
+        "Dinlemeden / İzlemeden Önceki Tahminlerim",
+        "Dinledikten / İzledikten Sonraki Tespitlerim"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P67-Q06"
+      ],
+      "id": "G11-T1-P67-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 5
+    },
+    {
+      "title": "Öznel ve nesnel ifadeler",
+      "columns": [
+        "Öznel İfadeler",
+        "Nesnel İfadeler"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P67-Q08"
+      ],
+      "id": "G11-T1-P67-TABLE02",
+      "type": "table",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 6
+    },
+    {
+      "text": "7. Metinle ilgili tahmin ve tespitlerinizden hareketle iletişime dair ulaştığınız sonuçları yazınız.",
+      "question_number": "7",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P67-Q07",
+      "type": "question",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 7,
+      "activity_id": "G11-T1-P67-ACT01"
+    },
+    {
+      "text": "8. Metinden öznel ve nesnel ifadelere örnekler bulup ilgili yerlere yazınız. Bu ifadelerin metne katkısını değerlendiriniz.",
+      "question_number": "8",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P67-Q08",
+      "type": "question",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 8,
+      "activity_id": "G11-T1-P67-ACT01",
+      "table_ids": [
+        "G11-T1-P67-TABLE02"
+      ]
+    },
+    {
+      "text": "9. Metinden anladıklarınızı özetleyerek aşağıya yazınız.\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................",
+      "question_number": "9",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "response_area": {
+        "kind": "lined",
+        "visible": true
+      },
+      "id": "G11-T1-P67-Q09",
+      "type": "question",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 9,
+      "activity_id": "G11-T1-P67-ACT01"
+    },
+    {
+      "caption": "Geçmişten Günümüze İletişim Araçları içeriğine karekoddan ulaşabilirsiniz.",
+      "alt_description": "Sayfanın alt sağ köşesinde pembe kutu içinde QR kodu bulunur.",
+      "pedagogical_role": "Karekod, Geçmişten Günümüze İletişim Araçları içeriğine erişim içindir.",
+      "source_note": "Karekod hedefindeki içerik bu PDF sayfasından bağımsızdır; hedef içerik çözümlenmemiştir.",
+      "id": "G11-T1-P67-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68
+      },
+      "order": 10
+    }
+  ]
+}

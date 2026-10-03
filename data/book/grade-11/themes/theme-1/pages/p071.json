@@ -1,0 +1,190 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 71,
+  "pdf_page": 72,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 71,
+    "pdf_page": 72,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "5. Grup arkadaşlarınızla altı dakika tartışınız. Ürettiğiniz farklı çözüm yollarından hangisinin daha etkili\nolabileceğine dair karşılaştırmalar yapınız.\n6. Ulaştığınız sonuçları aşağıdaki tabloya yazınız.\n\nTartışmacılar Çözüm Önerileri\n\n\n1. Tartışmacı\n\n\n2. Tartışmacı\n\n\n3. Tartışmacı\n\n\n4. Tartışmacı\n\n\n5. Tartışmacı\n\n\n6. Tartışmacı\n\n\n\n\nSıra Sizde\n\n\n1. Aşağıdaki kavram haritasını inceleyerek iletişim problemlerinin çözümünde hangi iletişim kanalında na-\nsıl bir dil kullanılacağı hakkında çıkarımlarda bulununuz.\n\n\n\n\nİletişim\nYüz Yüze\nKanalları\nTelefon\nİletişim\n\n\n\n\nE-posta\n\n\n\n\n2. Dinlediğiniz / izlediğiniz çok modlu metni dilin kullanımı açısından eleştirel bir bakış açısıyla değerlen-\ndiriniz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "5. Grup arkadaşlarınızla altı dakika tartışınız. Ürettiğiniz farklı çözüm yollarından hangisinin daha etkili\nolabileceğine dair karşılaştırmalar yapınız.",
+      "number": "5",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P71-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "İletişim kanallarını gösteren; yüz yüze iletişim, telefon ve e-posta etiketli şema bulunur.",
+      "id": "G11-T1-P71-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P71-ACT02",
+      "type": "activity",
+      "title": "Tartışma ve iletişim kanalları (devam)",
+      "instruction_ids": [
+        "G11-T1-P71-INST01",
+        "G11-T1-P71-INST02"
+      ],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T1-P71-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 3,
+      "continuation": {
+        "from_previous_page": true,
+        "related_activity_ids": [
+          "G11-T1-P70-ACT01"
+        ]
+      }
+    },
+    {
+      "text": "6. Ulaştığınız sonuçları aşağıdaki tabloya yazınız.",
+      "number": "6",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P71-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "table_ids": [
+        "G11-T1-P71-TABLE01"
+      ],
+      "order": 4
+    },
+    {
+      "title": "Tartışmacıların çözüm önerileri",
+      "columns": [
+        "Tartışmacılar",
+        "Çözüm Önerileri"
+      ],
+      "rows": [
+        [
+          "1. Tartışmacı",
+          ""
+        ],
+        [
+          "2. Tartışmacı",
+          ""
+        ],
+        [
+          "3. Tartışmacı",
+          ""
+        ],
+        [
+          "4. Tartışmacı",
+          ""
+        ],
+        [
+          "5. Tartışmacı",
+          ""
+        ],
+        [
+          "6. Tartışmacı",
+          ""
+        ]
+      ],
+      "related_question_ids": [],
+      "id": "G11-T1-P71-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "related_instruction_ids": [
+        "G11-T1-P71-INST02"
+      ],
+      "order": 5
+    },
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P71-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 6
+    },
+    {
+      "id": "G11-T1-P71-ACT01",
+      "type": "activity",
+      "title": "İletişim unsurları",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P71-Q01",
+        "G11-T1-P71-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 7
+    },
+    {
+      "text": "1. Aşağıdaki kavram haritasını inceleyerek iletişim problemlerinin çözümünde hangi iletişim kanalında na-\nsıl bir dil kullanılacağı hakkında çıkarımlarda bulununuz.",
+      "question_number": "1",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P71-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 8,
+      "activity_id": "G11-T1-P71-ACT01",
+      "visual_ids": [
+        "G11-T1-P71-VIS01"
+      ]
+    },
+    {
+      "text": "2. Dinlediğiniz / izlediğiniz çok modlu metni dilin kullanımı açısından eleştirel bir bakış açısıyla değerlen-\ndiriniz.",
+      "question_number": "2",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P71-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 71,
+        "pdf_page": 72
+      },
+      "order": 9,
+      "activity_id": "G11-T1-P71-ACT01",
+      "related_activity_ids": [
+        "G11-T1-P61-ACT01"
+      ]
+    }
+  ]
+}

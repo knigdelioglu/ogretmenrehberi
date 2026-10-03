@@ -1,0 +1,143 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 72,
+  "pdf_page": 73,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 72,
+    "pdf_page": 73,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Çözümleyebilme\n\nCevapladığınız soruları ve incelediğiniz zihin haritasını göz önünde bulundurarak Değişen İletişim Araçlarının Hayatımızdaki Yeri\nadlı çok modlu metinle ilgili aşağıdaki basamakları takip ediniz.\n1. Metinde iletişimin etkili olmasını sağlayan güven, saygı, yapıcılık ve nezaket içeren ifadeleri tespit ede-\nrek aşağıdaki tabloya yazınız.\n\n\nNezaket Aklıselim programına hoş geldiniz.\n\n\n\nGüven\n\n\n\nSaygı\n\n\n\nYapıcılık\n\n\n2. Tespit ettiğiniz iletişim unsurları arasındaki ilişki ve etkileşimi aşağıdaki kavram haritasında gösteriniz.\n\nSaygı-Nezaket\n\n\n\nSaygılı olmak ne-\nzaketli davranmayı\ngerektirir.\n\n\n\n\nİletişim Unsurları\nArasındaki\nİlişki ve Etkileşim",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Çözümleyebilme",
+      "id": "G11-T1-P72-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "İletişim unsurları etkileşimini gösteren dallı bir kavram haritası yer alır.",
+      "id": "G11-T1-P72-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P72-ACT01",
+      "type": "activity",
+      "title": "Dil değerlendirme ve çıkış kartı",
+      "instruction_ids": [
+        "G11-T1-P72-INST01"
+      ],
+      "question_ids": [
+        "G11-T1-P72-Q01",
+        "G11-T1-P72-Q02"
+      ],
+      "table_ids": [
+        "G11-T1-P72-TABLE01"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "order": 3
+    },
+    {
+      "text": "Cevapladığınız soruları ve incelediğiniz zihin haritasını göz önünde bulundurarak Değişen İletişim Araçlarının Hayatımızdaki Yeri\nadlı çok modlu metinle ilgili aşağıdaki basamakları takip ediniz.",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P72-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "order": 4
+    },
+    {
+      "text": "1. Metinde iletişimin etkili olmasını sağlayan güven, saygı, yapıcılık ve nezaket içeren ifadeleri tespit ederek aşağıdaki tabloya yazınız.",
+      "question_number": "1",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P72-INST01",
+      "id": "G11-T1-P72-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "table_ids": [
+        "G11-T1-P72-TABLE01"
+      ],
+      "order": 5,
+      "activity_id": "G11-T1-P72-ACT01"
+    },
+    {
+      "title": "İletişim unsurları tablosu",
+      "columns": [
+        "İletişim Unsuru",
+        "İfade"
+      ],
+      "rows": [
+        [
+          "Nezaket",
+          "Aklıselim programına hoş geldiniz."
+        ],
+        [
+          "Güven",
+          ""
+        ],
+        [
+          "Saygı",
+          ""
+        ],
+        [
+          "Yapıcılık",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P72-Q01"
+      ],
+      "id": "G11-T1-P72-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "order": 6
+    },
+    {
+      "text": "2. Tespit ettiğiniz iletişim unsurları arasındaki ilişki ve etkileşimi aşağıdaki kavram haritasında gösteriniz.",
+      "question_number": "2",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P72-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 72,
+        "pdf_page": 73
+      },
+      "order": 7,
+      "activity_id": "G11-T1-P72-ACT01",
+      "visual_ids": [
+        "G11-T1-P72-VIS01"
+      ]
+    }
+  ]
+}

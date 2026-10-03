@@ -1,0 +1,187 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 15,
+  "pdf_page": 16,
+  "section": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+  "source": {
+    "printed_page": 15,
+    "pdf_page": 16,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "METİN TAHLİLİ-1 (ANLAMA)\nOKUMA\nKonuya Başlarken\n\n\nHatırlayalım\n\n\nGeleneksel Türk tiyatrosunun özelliklerini hatırlatmak amacıyla aşağıda verilen metinden yararlanarak soruları cevaplayınız.\n\n\nSeyirlik Halk Oyunları\nSeyirlik halk oyunları adı altında gösterdiğimiz halk edebiyatı türünün çeşit-\nleri şunlardır: meddahlık, kukla, karagöz, orta-oyunu, tulûat tiyatrosu, köylü\noyunları.\nBunları bir küme altında birleştiren ortak yönlerin başında “seyirlik” oluş-\nları gelir. Bunlar birer gösteridir. Bir yanda seyircileri, bir yanda da aktörleri\nvardır: tek aktörlü olsun (meddahlık, karagöz, kukla gibi), çok aktörlü olsun Geleneksel Türk Tiyatrosu\nçalışmasına karekoddan\n(orta-oyunu, köylü oyunları, tulûat tiyatrosu gibi), aktörleri ister canlı olsun,\nulaşabilirsiniz.\nister cansız sûretler olsun.\nTaklit, bu oyunların en önemli ögelerinden biridir; o kadar ki, Metin And’ın belirttiği gibi, taklit kelimesi bu sanat\ngeleneğinde, “temsil” (...) anlamını almıştır; “filân oyunun taklidi”, onun temsil edilmesi, oynanması demektir;\nbir de aktörün türlü şiveleri ve karakterleri tıpkısı tıpkısına canlandırması anlamında “taklit” onlarda ortak bir\nniteliktir: karagözle orta-oyununda Acem, Kastamonulu, Tiryaki, Çelebi, Firenk... taklidi gibi.\n(...)\nHalkedebiyatının başka çeşitlerinde de gördüğümüz, birkaç “sanat”ı bir araya getirme niteliği seyirlik oyunlarda\nsöz sanatını ikinci planda bırakacak kerteye gelmiştir. Gerçekten de seyirlik halk oyunlarında “söz” başka sanat\ngösterilerine bir “dayanak” vazifesini görmekten ileri gitmez. Onun için de bu oyunların önceden hazırlanmış,\nyazılmış, ezberlenmiş metinleri yoktur. Aktör, gayet basit olan, bir eylem çizgisini izleyerek geleneğin istediği,\nhiç değişmeden belli yerlerde söylenen birtakım kalıpların dışında her şeyi irticalle söylemekte serbesttir.\nPertev Naili Boratav, 100 Soruda Türk Halk Edebiyatı\n\n\n1. Metinde dikkatinizi en çok çeken unsurlar nelerdir? Açıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n2. Günlük hayatın tiyatroya nasıl yansıdığını düşünüyorsunuz? Görüşlerinizi açıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n3. Geleneksel Türk tiyatrosunda neden yazılı metinler yoktur?\n4. Günümüzde geleneksel Türk tiyatrosunun yerini hangi sanat türleri veya etkinlikler almıştır? Açıklayınız.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "METİN TAHLİLİ-1 (ANLAMA)",
+      "id": "G11-T1-P15-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "Metin alanının sağında kitap raflarının bulunduğu bir kütüphane fotoğrafı yer alır.",
+      "id": "G11-T1-P15-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 2
+    },
+    {
+      "text": "OKUMA",
+      "id": "G11-T1-P15-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 3
+    },
+    {
+      "text": "Konuya Başlarken",
+      "id": "G11-T1-P15-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 4
+    },
+    {
+      "text": "Hatırlayalım",
+      "id": "G11-T1-P15-SH03",
+      "type": "subheading",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 5
+    },
+    {
+      "id": "G11-T1-P15-ACT01",
+      "type": "activity",
+      "title": "Hatırlayalım",
+      "instruction_ids": [
+        "G11-T1-P15-INST01"
+      ],
+      "question_ids": [
+        "G11-T1-P15-Q01",
+        "G11-T1-P15-Q02",
+        "G11-T1-P15-Q03",
+        "G11-T1-P15-Q04"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P15-TEXT01"
+      ],
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 6
+    },
+    {
+      "text": "Geleneksel Türk tiyatrosunun özelliklerini hatırlatmak amacıyla aşağıda verilen metinden yararlanarak soruları cevaplayınız.\n\n\nSeyirlik Halk Oyunları\nSeyirlik halk oyunları adı altında gösterdiğimiz halk edebiyatı türünün çeşit-\nleri şunlardır: meddahlık, kukla, karagöz, orta-oyunu, tulûat tiyatrosu, köylü\noyunları.\nBunları bir küme altında birleştiren ortak yönlerin başında “seyirlik” oluş-\nları gelir. Bunlar birer gösteridir. Bir yanda seyircileri, bir yanda da aktörleri\nvardır: tek aktörlü olsun (meddahlık, karagöz, kukla gibi), çok aktörlü olsun Geleneksel Türk Tiyatrosu\nçalışmasına karekoddan\n(orta-oyunu, köylü oyunları, tulûat tiyatrosu gibi), aktörleri ister canlı olsun,\nulaşabilirsiniz.\nister cansız sûretler olsun.\nTaklit, bu oyunların en önemli ögelerinden biridir; o kadar ki, Metin And’ın belirttiği gibi, taklit kelimesi bu sanat\ngeleneğinde, “temsil” (...) anlamını almıştır; “filân oyunun taklidi”, onun temsil edilmesi, oynanması demektir;\nbir de aktörün türlü şiveleri ve karakterleri tıpkısı tıpkısına canlandırması anlamında “taklit” onlarda ortak bir\nniteliktir: karagözle orta-oyununda Acem, Kastamonulu, Tiryaki, Çelebi, Firenk... taklidi gibi.\n(...)\nHalkedebiyatının başka çeşitlerinde de gördüğümüz, birkaç “sanat”ı bir araya getirme niteliği seyirlik oyunlarda\nsöz sanatını ikinci planda bırakacak kerteye gelmiştir. Gerçekten de seyirlik halk oyunlarında “söz” başka sanat\ngösterilerine bir “dayanak” vazifesini görmekten ileri gitmez. Onun için de bu oyunların önceden hazırlanmış,\nyazılmış, ezberlenmiş metinleri yoktur. Aktör, gayet basit olan, bir eylem çizgisini izleyerek geleneğin istediği,\nhiç değişmeden belli yerlerde söylenen birtakım kalıpların dışında her şeyi irticalle söylemekte serbesttir.\nPertev Naili Boratav, 100 Soruda Türk Halk Edebiyatı",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P15-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 7
+    },
+    {
+      "title": "Seyirlik Halk Oyunları",
+      "text": "Seyirlik Halk Oyunları\nSeyirlik halk oyunları adı altında gösterdiğimiz halk edebiyatı türünün çeşit-\nleri şunlardır: meddahlık, kukla, karagöz, orta-oyunu, tulûat tiyatrosu, köylü\noyunları.\nBunları bir küme altında birleştiren ortak yönlerin başında “seyirlik” oluş-\nları gelir. Bunlar birer gösteridir. Bir yanda seyircileri, bir yanda da aktörleri\nvardır: tek aktörlü olsun (meddahlık, karagöz, kukla gibi), çok aktörlü olsun Geleneksel Türk Tiyatrosu\nçalışmasına karekoddan\n(orta-oyunu, köylü oyunları, tulûat tiyatrosu gibi), aktörleri ister canlı olsun,\nulaşabilirsiniz.\nister cansız sûretler olsun.\nTaklit, bu oyunların en önemli ögelerinden biridir; o kadar ki, Metin And’ın belirttiği gibi, taklit kelimesi bu sanat\ngeleneğinde, “temsil” (...) anlamını almıştır; “filân oyunun taklidi”, onun temsil edilmesi, oynanması demektir;\nbir de aktörün türlü şiveleri ve karakterleri tıpkısı tıpkısına canlandırması anlamında “taklit” onlarda ortak bir\nniteliktir: karagözle orta-oyununda Acem, Kastamonulu, Tiryaki, Çelebi, Firenk... taklidi gibi.\n(...)\nHalkedebiyatının başka çeşitlerinde de gördüğümüz, birkaç “sanat”ı bir araya getirme niteliği seyirlik oyunlarda\nsöz sanatını ikinci planda bırakacak kerteye gelmiştir. Gerçekten de seyirlik halk oyunlarında “söz” başka sanat\ngösterilerine bir “dayanak” vazifesini görmekten ileri gitmez. Onun için de bu oyunların önceden hazırlanmış,\nyazılmış, ezberlenmiş metinleri yoktur. Aktör, gayet basit olan, bir eylem çizgisini izleyerek geleneğin istediği,\nhiç değişmeden belli yerlerde söylenen birtakım kalıpların dışında her şeyi irticalle söylemekte serbesttir.\nPertev Naili Boratav, 100 Soruda Türk Halk Edebiyatı",
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": false
+      },
+      "id": "G11-T1-P15-TEXT01",
+      "type": "literary_text",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 8
+    },
+    {
+      "text": "1. Metinde dikkatinizi en çok çeken unsurlar nelerdir? Açıklayınız.",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P15-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P15-INST01",
+      "id": "G11-T1-P15-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 9,
+      "activity_id": "G11-T1-P15-ACT01"
+    },
+    {
+      "text": "2. Günlük hayatın tiyatroya nasıl yansıdığını düşünüyorsunuz? Görüşlerinizi açıklayınız.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P15-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P15-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 10,
+      "activity_id": "G11-T1-P15-ACT01"
+    },
+    {
+      "text": "3. Geleneksel Türk tiyatrosunda neden yazılı metinler yoktur?",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P15-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P15-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 11,
+      "activity_id": "G11-T1-P15-ACT01"
+    },
+    {
+      "text": "4. Günümüzde geleneksel Türk tiyatrosunun yerini hangi sanat türleri veya etkinlikler almıştır? Açıklayınız.",
+      "question_number": "4",
+      "related_text_ids": [
+        "G11-T1-P15-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P15-Q04",
+      "type": "question",
+      "source": {
+        "printed_page": 15,
+        "pdf_page": 16
+      },
+      "order": 12,
+      "activity_id": "G11-T1-P15-ACT01"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 45,
+  "pdf_page": 46,
+  "section": "Metin Tahlili-2 (Anlama): Okuma — Mektup / Dilekçe",
+  "source": {
+    "printed_page": 45,
+    "pdf_page": 46,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Ders Dışı Etkinlik\n\n\nAdı Mektup Türünün Sosyal Bilimlerle İlişkisi\n\nAmacı Mektup türünün sosyal bilimlerle ilişkisini çözümleyebilme\n\nSüresi 1 hafta\n\n1. Öğretmeninizin rehberliğinde üç gruba ayrılınız.\n2. Grup sözcülerini seçiniz.\n3. Mehmet Kaplan’ın kaleme aldığı mektup metninden hareketle aşağıdaki başlıklar çerçevesinde araştır-\nma yapınız.\n• Birinci grup: Mektup-Tarih İlişkisi\n• İkinci grup: Mektup-Sosyoloji İlişkisi\n• Üçüncü grup: Mektup-Psikoloji İlişkisi\n\n\n\n\n4. Araştırmalarınızı yaparken farklı mektup örneklerinden de yararlanınız.\n5. Ulaştığınız sonuçları ve seçtiğiniz mektup örneklerini arkadaşlarınızla paylaşınız.\nDeğerlendirme\nYaptığınız çalışmanın mektup türüne bakış açınızda nasıl bir etkisi olduğunu açıklayınız.\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Ders Dışı Etkinlik",
+      "id": "G11-T1-P45-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 1
+    },
+    {
+      "title": "Ders dışı etkinlik bilgi tablosu",
+      "columns": [
+        "Alan",
+        "Değer"
+      ],
+      "rows": [
+        [
+          "Adı",
+          "Mektup Türünün Sosyal Bilimlerle İlişkisi"
+        ],
+        [
+          "Amacı",
+          "Mektup türünün sosyal bilimlerle ilişkisini çözümleyebilme"
+        ],
+        [
+          "Süresi",
+          "1 hafta"
+        ]
+      ],
+      "related_question_ids": [],
+      "id": "G11-T1-P45-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 2,
+      "activity_ids": [
+        "G11-T1-P45-ACT01"
+      ]
+    },
+    {
+      "id": "G11-T1-P45-ACT01",
+      "type": "activity",
+      "title": "Mektup Türünün Sosyal Bilimlerle İlişkisi",
+      "instruction_ids": [
+        "G11-T1-P45-INST01",
+        "G11-T1-P45-INST02",
+        "G11-T1-P45-INST03",
+        "G11-T1-P45-INST04",
+        "G11-T1-P45-INST05"
+      ],
+      "question_ids": [
+        "G11-T1-P45-Q01"
+      ],
+      "table_ids": [
+        "G11-T1-P45-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P37-TEXT01"
+      ],
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 3
+    },
+    {
+      "text": "1. Öğretmeninizin rehberliğinde üç gruba ayrılınız.",
+      "number": "1",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P45-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 4
+    },
+    {
+      "text": "2. Grup sözcülerini seçiniz.",
+      "number": "2",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P45-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 5
+    },
+    {
+      "text": "3. Mehmet Kaplan’ın kaleme aldığı mektup metninden hareketle aşağıdaki başlıklar çerçevesinde araştır-\nma yapınız.\n• Birinci grup: Mektup-Tarih İlişkisi\n• İkinci grup: Mektup-Sosyoloji İlişkisi\n• Üçüncü grup: Mektup-Psikoloji İlişkisi",
+      "number": "3",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P45-INST03",
+      "type": "instruction",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 6
+    },
+    {
+      "text": "4. Araştırmalarınızı yaparken farklı mektup örneklerinden de yararlanınız.",
+      "number": "4",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P45-INST04",
+      "type": "instruction",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 7
+    },
+    {
+      "text": "5. Ulaştığınız sonuçları ve seçtiğiniz mektup örneklerini arkadaşlarınızla paylaşınız.",
+      "number": "5",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P45-INST05",
+      "type": "instruction",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 8
+    },
+    {
+      "text": "Değerlendirme",
+      "id": "G11-T1-P45-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 9
+    },
+    {
+      "text": "Yaptığınız çalışmanın mektup türüne bakış açınızda nasıl bir etkisi olduğunu açıklayınız.\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................\n...........................................................................................................................................................................................................................",
+      "related_text_ids": [
+        "G11-T1-P37-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "response_area": {
+        "kind": "lined_or_dotted",
+        "visible": true
+      },
+      "id": "G11-T1-P45-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 45,
+        "pdf_page": 46
+      },
+      "order": 10,
+      "activity_id": "G11-T1-P45-ACT01"
+    }
+  ]
+}

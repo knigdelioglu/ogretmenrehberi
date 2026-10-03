@@ -1,0 +1,69 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 60,
+  "pdf_page": 61,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 60,
+    "pdf_page": 61,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Dinleme / İzlemeyi Yönetebilme\n\n\nSıra Sizde\n\n\nFarklı mektup türlerinden alınmış aşağıdaki hitap cümlelerini okuyunuz ve bunların işlevlerini belirlemek amacıyla soruları cevap-\nlayınız.\n\nAnkara, 21 Mart 1949\nVefakâr dost ve faziletli kardeş,\n\nMektubunuzu şimdi aldım. O kadar insanca ve içten yazılmış ki...\n\nİbrahim Alâettin Gövsa, Güzel Yazılar Mektuplar\n\n\nLahey, Haziranın ikinci yarısı, 1882\nSevgili Kardeşim,\n\nEpeyce geç oldu, ama sana bir kez daha yazmak istiyorum.\n\nVincent Van Gogh (Vinsent Van Goh), Theo’ya (Teo’ya) Mektuplar\n\n\nCanım Leylâcığım,\n\nBu sabah kısa da olsa Fatoş ile konuştum. Sesi nasıl sana benziyor.\n\nTezer Özlü, Tezer Özlü’den Leylâ Erbil’e Mektuplar\n\n\nAnkara, 3 Mart 39\nMuhterem Hanımefendi,\n\nKıymetli hediyenizi aldım.\nSadi Borak, Atatürk’ün Özel Mektupları\n\n\nBern, 25 Kasım 1948\nPek Aziz ve Muhterem Halide Hanımefendi,\n\nSonsuz Panayır’ınızı derin alâkayla okudum ve size bu kitap hakkındaki his ve düşüncelerimi söylemek ihti-\nyacıyla hemen kaleme sarılıyorum.\nYakup Kadri Karaosmanoğlu, Güzel Yazılar Mektuplar\n\n\nSayın Hasan Âli Yücel,\n\nDört ayı geçiyor, Ankara’daki müessif nümayiş hâdisesinden sonra beni Vekâlet emrine almıştınız.\n\nOrhan Seyfi Orhon, Maarif Vekili Hasan Âli Yücel’e Açık Mektup",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Dinleme / İzlemeyi Yönetebilme",
+      "id": "G11-T1-P60-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 60,
+        "pdf_page": 61
+      },
+      "order": 1
+    },
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P60-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 60,
+        "pdf_page": 61
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P60-ACT01",
+      "type": "activity",
+      "title": "Mektup hitap örnekleri",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P60-TEXT01"
+      ],
+      "source": {
+        "printed_page": 60,
+        "pdf_page": 61
+      },
+      "order": 3
+    },
+    {
+      "title": "Mektup hitaplarından örnekler",
+      "text": "Ankara, 21 Mart 1949\nVefakâr dost ve faziletli kardeş,\n\nMektubunuzu şimdi aldım. O kadar insanca ve içten yazılmış ki...\n\nİbrahim Alâettin Gövsa, Güzel Yazılar Mektuplar\n\n\nLahey, Haziranın ikinci yarısı, 1882\nSevgili Kardeşim,\n\nEpeyce geç oldu, ama sana bir kez daha yazmak istiyorum.\n\nVincent Van Gogh (Vinsent Van Goh), Theo’ya (Teo’ya) Mektuplar\n\n\nCanım Leylâcığım,\n\nBu sabah kısa da olsa Fatoş ile konuştum. Sesi nasıl sana benziyor.\n\nTezer Özlü, Tezer Özlü’den Leylâ Erbil’e Mektuplar\n\n\nAnkara, 3 Mart 39\nMuhterem Hanımefendi,\n\nKıymetli hediyenizi aldım.\nSadi Borak, Atatürk’ün Özel Mektupları\n\n\nBern, 25 Kasım 1948\nPek Aziz ve Muhterem Halide Hanımefendi,\n\nSonsuz Panayır’ınızı derin alâkayla okudum ve size bu kitap hakkındaki his ve düşüncelerimi söylemek ihti-\nyacıyla hemen kaleme sarılıyorum.\nYakup Kadri Karaosmanoğlu, Güzel Yazılar Mektuplar\n\n\nSayın Hasan Âli Yücel,\n\nDört ayı geçiyor, Ankara’daki müessif nümayiş hâdisesinden sonra beni Vekâlet emrine almıştınız.",
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": true
+      },
+      "id": "G11-T1-P60-TEXT01",
+      "type": "literary_text",
+      "source": {
+        "printed_page": 60,
+        "pdf_page": 61
+      },
+      "order": 4
+    }
+  ]
+}

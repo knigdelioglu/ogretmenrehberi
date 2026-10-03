@@ -1,0 +1,51 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 13,
+  "pdf_page": 14,
+  "section": "Tema açılışı",
+  "source": {
+    "printed_page": 13,
+    "pdf_page": 14,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Tema karekodu\n\n\n\n\nTema sunusu\n\n\n\n\nDünya malı ne kadar toplanırsa toplansın, tükenir biter;\nsöz kaleme alınırsa kalır, dünyayı gezinir.\n\n\nYusuf Has Hacib, Kutadgu Bilig\n\n\n\n\nYusuf Has Hacib\n(Temsilî)",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Bir Diyeceğim Var!",
+      "id": "G11-T1-P13-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 13,
+        "pdf_page": 14
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "Açık renkli kâğıtlar ve zarflar üzerinde mavi bir kalem görülür; sağ bölümde iki karekod bulunur.",
+      "id": "G11-T1-P13-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 13,
+        "pdf_page": 14
+      },
+      "source_note": "Karekod hedefi doğrulanmadı; yalnızca basılı işaret ve etiketi kaydedildi.",
+      "order": 2
+    },
+    {
+      "title": "Yusuf Has Hacib, Kutadgu Bilig",
+      "text": "Dünya malı ne kadar toplanırsa toplansın, tükenir biter;\nsöz kaleme alınırsa kalır, dünyayı gezinir.",
+      "id": "G11-T1-P13-QUOTE01",
+      "type": "quote",
+      "source": {
+        "printed_page": 13,
+        "pdf_page": 14
+      },
+      "order": 3
+    }
+  ]
+}

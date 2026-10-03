@@ -1,0 +1,75 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 51,
+  "pdf_page": 52,
+  "section": "Metin Tahlili-2 (Anlama): Okuma — Mektup / Dilekçe",
+  "source": {
+    "printed_page": 51,
+    "pdf_page": 52,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Ara Metin\nDİLEKÇE\n\n\nBÜYÜKŞEHİR BELEDİYESİ BAŞKANLIĞINA\n………………………\n\n\n……………………… Mahallesi, Cumhuriyet Caddesi üzerinde Papatya Parkı’nın\netrafındaki yoldan araçların hızlı geçmesi parkta oynayan çocuklar için tehlike oluşturmakta-\ndır. Olabilecek kazaları önlemek adına parkın etrafındaki yolun uygun görülen yerlerine kasis\nyapılmasını istiyorum.\nGereğini bilgilerinize arz ederim.\n\n\nAdres: ... / ... / ...\nİmza\nAdı-Soyadı\nT.C. Kimlik No:\nİletişim Bilgileri:\n\n\n\nBilgi Köşesi\n\n\n\nDilekçe\nDilekçenin günlük hayatta kullanımı oldukça yaygındır. Dilekçe, vatandaşların kendileri ya da kamu ile ilgili bir dilek veya\nşikâyetini resmî makamlara bildirmek için sunduğu imzalı ve adresli yazıdır.\nDilekçe hakkı, Anayasa’nın 74. maddesinde temel haklar ve ödevler arasında yer almaktadır ve bu hakkın kullanılmasına\nilişkin usul ve esaslar 01.11.1984 tarihli ve 3071 sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun ile düzenlenmiştir.\nDilekçede tarih, dilekçeyi yazanın adı, soyadı, imzası ve adresi bulunmak zorundadır. Yazılan dilekçeye en geç otuz gün\niçinde ilgili kurum tarafından cevap verilmelidir.\nDilekçe Yazarken Dikkat Edilecek Hususlar\n• El yazısı, daktilo veya bilgisayar ile yazılabilir; basılı (matbu) şekildeyse doldurulabilir.\n• Düz, beyaz ve çizgisiz kâğıda tükenmez veya dolma kalemle yazılır.\n• Açık, yalın bir anlatım ve resmî bir üslup kullanılır.\n• Üst makama arz, alt makama rica edilerek tamamlanır.\n• Dilekçenin yazıldığı makam, il veya ilçe belirtilerek büyük harfle yazılır.\n• Dilekçenin içeriği kısa ve açık bir anlatıma sahip olmalıdır.\n• Sağ altta sırasıyla tarih, dilekçe sahibinin imzası, adı-soyadı yer almalıdır.\n• Sol altta dilekçe sahibinin adresi, T.C. kimlik numarası ve diğer iletişim bilgileri yer almalıdır.\n• Adresin altında -varsa- diğer belgeler eklenmelidir.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Ara Metin",
+      "id": "G11-T1-P51-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 51,
+        "pdf_page": 52
+      },
+      "order": 1
+    },
+    {
+      "text": "DİLEKÇE",
+      "id": "G11-T1-P51-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 51,
+        "pdf_page": 52
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P51-ACT01",
+      "type": "activity",
+      "title": "Dilekçe bilgi ve örneği",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P51-EX01"
+      ],
+      "source": {
+        "printed_page": 51,
+        "pdf_page": 52
+      },
+      "order": 3
+    },
+    {
+      "title": "Dilekçe örneği",
+      "text": "BÜYÜKŞEHİR BELEDİYESİ BAŞKANLIĞINA\n………………………\n\n\n……………………… Mahallesi, Cumhuriyet Caddesi üzerinde Papatya Parkı’nın\netrafındaki yoldan araçların hızlı geçmesi parkta oynayan çocuklar için tehlike oluşturmakta-\ndır. Olabilecek kazaları önlemek adına parkın etrafındaki yolun uygun görülen yerlerine kasis\nyapılmasını istiyorum.\nGereğini bilgilerinize arz ederim.\n\n\nAdres: ... / ... / ...\nİmza\nAdı-Soyadı\nT.C. Kimlik No:\nİletişim Bilgileri:",
+      "id": "G11-T1-P51-EX01",
+      "type": "example",
+      "source": {
+        "printed_page": 51,
+        "pdf_page": 52
+      },
+      "order": 4
+    },
+    {
+      "text": "Bilgi Köşesi",
+      "id": "G11-T1-P51-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 51,
+        "pdf_page": 52
+      },
+      "order": 5
+    }
+  ]
+}

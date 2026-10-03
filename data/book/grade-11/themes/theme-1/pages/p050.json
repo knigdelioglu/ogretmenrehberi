@@ -1,0 +1,125 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 50,
+  "pdf_page": 51,
+  "section": "Metin Tahlili-2 (Anlama): Okuma — Mektup / Dilekçe",
+  "source": {
+    "printed_page": 50,
+    "pdf_page": 51,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "5. Metin\nKara gözlüm, efkârlanma gül gayrı,\nİbibikler öter ötmez ordayım...\nMektubunda diyorsun ki “Gel gayrı!”\nSütler kaymak tutar tutmaz ordayım...\nBekir Sıtkı Erdoğan, Bir Yağmur Başladı\n\n1. Metinlerin yazılış amaçlarına dair düşüncelerinizi aşağıya yazınız.\n\n1. Metin:\n\n\n2. Metin:\n\n\n3. Metin:\n\n\n4. Metin:\n\n\n5. Metin:\n\n2. “Yazılış şekilleri farklı olsa da her mektup bir haberleşme aracıdır.” yargısını yukarıdaki metinleri dikkate\nalarak değerlendiriniz. Bu düşünceye katılıp katılmadığınızı gerekçesiyle açıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n3. Metinleri gerçekliği yansıtma biçimleri açısından yorumlayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n4. Sevdiklerinize yukarıdaki metinlerden hangisine benzer bir mektup yazmak isterdiniz? Gerekçesiyle\naçıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "title": "Mektup türüne ait örnek (5)",
+      "text": "Kara gözlüm, efkârlanma gül gayrı,\nİbibikler öter ötmez ordayım...\nMektubunda diyorsun ki “Gel gayrı!”\nSütler kaymak tutar tutmaz ordayım...\nBekir Sıtkı Erdoğan, Bir Yağmur Başladı",
+      "continuation": {
+        "from_previous_page": true,
+        "to_next_page": false
+      },
+      "id": "G11-T1-P50-TEXT01",
+      "type": "literary_text",
+      "source": {
+        "printed_page": 50,
+        "pdf_page": 51
+      },
+      "order": 1
+    },
+    {
+      "text": "1. Metinlerin yazılış amaçlarına dair düşüncelerinizi aşağıya yazınız.\n\n1. Metin:\n\n\n2. Metin:\n\n\n3. Metin:\n\n\n4. Metin:\n\n\n5. Metin:",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P49-TEXT01",
+        "G11-T1-P50-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P50-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 50,
+        "pdf_page": 51
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P50-ACT01",
+      "type": "activity",
+      "title": "Beş mektup örneği",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P50-Q02",
+        "G11-T1-P50-Q03",
+        "G11-T1-P50-Q04"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P49-TEXT01",
+        "G11-T1-P50-TEXT01"
+      ],
+      "source": {
+        "printed_page": 50,
+        "pdf_page": 51
+      },
+      "order": 3
+    },
+    {
+      "text": "2. “Yazılış şekilleri farklı olsa da her mektup bir haberleşme aracıdır.” yargısını yukarıdaki metinleri dikkate\nalarak değerlendiriniz. Bu düşünceye katılıp katılmadığınızı gerekçesiyle açıklayınız.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P49-TEXT01",
+        "G11-T1-P50-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P50-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 50,
+        "pdf_page": 51
+      },
+      "order": 4,
+      "activity_id": "G11-T1-P50-ACT01"
+    },
+    {
+      "text": "3. Metinleri gerçekliği yansıtma biçimleri açısından yorumlayınız.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P49-TEXT01",
+        "G11-T1-P50-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P50-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 50,
+        "pdf_page": 51
+      },
+      "order": 5,
+      "activity_id": "G11-T1-P50-ACT01"
+    },
+    {
+      "text": "4. Sevdiklerinize yukarıdaki metinlerden hangisine benzer bir mektup yazmak isterdiniz? Gerekçesiyle\naçıklayınız.",
+      "question_number": "4",
+      "related_text_ids": [
+        "G11-T1-P49-TEXT01",
+        "G11-T1-P50-TEXT01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P50-Q04",
+      "type": "question",
+      "source": {
+        "printed_page": 50,
+        "pdf_page": 51
+      },
+      "order": 6,
+      "activity_id": "G11-T1-P50-ACT01"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 35,
+  "pdf_page": 36,
+  "section": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+  "source": {
+    "printed_page": 35,
+    "pdf_page": 36,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Süreci Değerlendirebilme\n\nÖğretmeninizin rehberliğinde üç gruba ayrılınız ve aşağıdaki çalışmayı yapınız.\n1. Yazıcı metnindeki dil ve üslup özelliklerinin metnin anlamına katkısını aşağıdaki başlıklara göre değer-\nlendiriniz.\na) Metindeki Dil ve Üslup Özelliklerinin Güldürü Unsurlarının Ortaya Çıkmasına Etkisi\nb) Metindeki Dil ve Üslup Özelliklerinin Çatışmaların Ortaya Çıkmasına Etkisi\nc) Metindeki Dil ve Üslup Özelliklerinin Metnin Oluştuğu Dönemin Toplumsal ve Kültürel Yapısını Yansıtmaya\nEtkisi\n2. Metindeki çatışmalar hangi dramatik öge (mekân, zaman, kişiler) üzerinden daha etkili verilebilirdi?\nAçıklayınız.\n3. Metindeki çatışmalar, yanlış anlamalar ve söz oyunlarıyla verilmiştir. Çatışmalar, başka hangi dil unsurla-\nrıyla daha etkili verilebilir? Açıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n4. Yaptığınız bu çalışmayı aşağıdaki Öz Değerlendirme Formu ile değerlendiriniz.\n\nÖz Değerlendirme Formu\nDeğerlendirme Ölçütleri Evet Kısmen Hayır\nGrup arkadaşlarımın düşüncelerine saygı duyarak onlarla etkili iletişim\n1\nkurdum.\n\n2 Grupta üzerime düşen görevi zamanında tamamladım.\n\n3 Grup arkadaşlarımla uyum içinde çalıştım.\n\n4 Karşılaşılan sorunların çözümüne katkıda bulundum.\n\n5 Çalışmamı hazırlarken arkadaşlarımın görüş ve önerilerini dikkate aldım.\n\n6 Çalışmamı belirlenen süre içinde tamamladım.\n\n\n\n“Kısmen” veya “Hayır” seçeneklerini işaretlediğiniz becerileri gözden geçiriniz.\nAraştırarak veya öğretmeninizden destek alarak eksiklerinizi tamamlayınız.\nGrup arkadaşlarınızdan birinin yaptığı çalışmayı yandaki karekodda verilen Akran Değer-\nlendirme Formu ile değerlendiriniz.\nAkran Değerlendirme\nFormu’na karekoddan\nulaşabilirsiniz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "title": "Dil ve üslup çözümlemesi",
+      "instruction_ids": [
+        "G11-T1-P35-INST01",
+        "G11-T1-P35-INST02"
+      ],
+      "question_ids": [
+        "G11-T1-P35-Q01",
+        "G11-T1-P35-Q02",
+        "G11-T1-P35-Q03"
+      ],
+      "table_ids": [
+        "G11-T1-P35-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "id": "G11-T1-P35-ACT01",
+      "type": "activity",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 1
+    },
+    {
+      "text": "Öğretmeninizin rehberliğinde üç gruba ayrılınız ve aşağıdaki çalışmayı yapınız.",
+      "instruction_kind": "activity_lead",
+      "id": "G11-T1-P35-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 2
+    },
+    {
+      "text": "1. Yazıcı metnindeki dil ve üslup özelliklerinin metnin anlamına katkısını aşağıdaki başlıklara göre değer-\nlendiriniz.",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [
+        {
+          "label": "a",
+          "text": "Metindeki Dil ve Üslup Özelliklerinin Güldürü Unsurlarının Ortaya Çıkmasına Etkisi"
+        },
+        {
+          "label": "b",
+          "text": "Metindeki Dil ve Üslup Özelliklerinin Çatışmaların Ortaya Çıkmasına Etkisi"
+        },
+        {
+          "label": "c",
+          "text": "Metindeki Dil ve Üslup Özelliklerinin Metnin Oluştuğu Dönemin Toplumsal ve Kültürel Yapısını Yansıtmaya\nEtkisi"
+        }
+      ],
+      "options": [],
+      "id": "G11-T1-P35-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 3,
+      "activity_id": "G11-T1-P35-ACT01"
+    },
+    {
+      "text": "2. Metindeki çatışmalar hangi dramatik öge (mekân, zaman, kişiler) üzerinden daha etkili verilebilirdi?\nAçıklayınız.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P35-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 4,
+      "activity_id": "G11-T1-P35-ACT01"
+    },
+    {
+      "text": "3. Metindeki çatışmalar, yanlış anlamalar ve söz oyunlarıyla verilmiştir. Çatışmalar, başka hangi dil unsurla-\nrıyla daha etkili verilebilir? Açıklayınız.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P35-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 5,
+      "activity_id": "G11-T1-P35-ACT01"
+    },
+    {
+      "text": "4. Yaptığınız bu çalışmayı aşağıdaki Öz Değerlendirme Formu ile değerlendiriniz.",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "id": "G11-T1-P35-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 6,
+      "number": "4",
+      "instruction_kind": "numbered_step",
+      "table_ids": [
+        "G11-T1-P35-TABLE01"
+      ]
+    },
+    {
+      "title": "Öz Değerlendirme Formu",
+      "columns": [
+        "No",
+        "Değerlendirme ölçütleri",
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "rows": [
+        [
+          "1",
+          "Grup arkadaşlarımın düşüncelerine saygı duyarak onlarla etkili iletişim kurdum.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "2",
+          "Grupta üzerime düşen görevi zamanında tamamladım.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "3",
+          "Grup arkadaşlarımla uyum içinde çalıştım.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "Karşılaşılan sorunların çözümüne katkıda bulundum.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "Çalışmamı hazırlarken arkadaşlarımın görüş ve önerilerini dikkate aldım.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "6",
+          "Çalışmamı belirlenen süre içinde tamamladım.",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [],
+      "id": "G11-T1-P35-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 7,
+      "related_instruction_ids": [
+        "G11-T1-P35-INST02"
+      ],
+      "activity_ids": [
+        "G11-T1-P35-ACT01"
+      ]
+    },
+    {
+      "caption": "Akran Değerlendirme Formu’na karekoddan ulaşabilirsiniz.",
+      "alt_description": "Sayfanın alt sağ bölümünde pembe kutu içinde Akran Değerlendirme Formu QR kodu bulunur.",
+      "pedagogical_role": "Karekodla akran değerlendirme formuna erişim sağlanır.",
+      "source_note": "Karekod hedefindeki içerik bu PDF sayfasından bağımsızdır; hedef içerik çözümlenmemiştir.",
+      "id": "G11-T1-P35-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 35,
+        "pdf_page": 36
+      },
+      "order": 8
+    }
+  ]
+}

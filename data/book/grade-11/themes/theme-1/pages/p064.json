@@ -1,0 +1,233 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 64,
+  "pdf_page": 65,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 64,
+    "pdf_page": 65,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Metni Dinleyelim / İzleyelim\n\n1. Değişen İletişim Araçlarının Hayatımızdaki Yeri adlı çok modlu metni dinleme / izleme amacınızı tespit\nediniz.\n2. Metnin başlık ve görselinden hareketle içerik ve türüne yönelik tahminlerde bulununuz.\n\nDeğişen İletişim Araçlarının\nHayatımızdaki Yeri\n\n\n\n\n3. Metni etkili bir biçimde dinleyebilmek / izleyebilmek için metin ve ortamla\nilgili iletişim engellerini ortadan kaldırınız.\n4. Değişen İletişim Araçlarının Hayatımızdaki Yeri adlı çok modlu metni dinle-\nme / izleme stratejinizi, dilin günlük hayattaki kullanımını kendi yaşamınız-\nla ilişkilendirecek şekilde belirleyiniz. Değişen İletişim Araçla-\nrının Hayatımızdaki Yeri\n5. Yandaki karekoddan ulaşacağınız çok modlu metni not alarak dinleyiniz /\nvideosuna karekoddan\nizleyiniz. ulaşabilirsiniz.\nÇok modlu metni dinleme / izleme sürecinde yapmanız gerekenler, aşağıda verilen Gözlem Formu’ndaki\nölçütlere göre öğretmeniniz tarafından değerlendirilecektir.\n\nGözlem Formu\nDeğerlendirme Ölçütleri Evet Kısmen Hayır\n\n1 Metni dinleme / izlemeye hazırlık yaptı.\n\n2 Dinleme / izleme amacını belirledi.\n\n3 Metnin içeriğiyle ilgili tahminde bulundu.\n\nDinleme / izlemeyi olumsuz etkileyen iletişim\n4\nengellerini ortadan kaldırdı.\n\n5 Metni dinleme / izleme yöntemine karar verdi.\n\n6 Metni dikkatini yoğunlaştırarak dinledi / izledi.\n\nMetni başkalarını rahatsız etmeden dinledi /\n7\nizledi.\n\n8 Önemli gördüğü yerler hakkında notlar aldı.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [
+    "Karekod açıklaması ve stüdyo görseli ayrıştırıldı; 4. ve 5. yönergeler PDF metin katmanındaki sütun geçişinden arındırıldı."
+  ],
+  "blocks": [
+    {
+      "text": "Metni Dinleyelim / İzleyelim",
+      "id": "G11-T1-P64-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 1
+    },
+    {
+      "text": "1. Değişen İletişim Araçlarının Hayatımızdaki Yeri adlı çok modlu metni dinleme / izleme amacınızı tespit ediniz.",
+      "number": "1",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P64-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P64-ACT01",
+      "type": "activity",
+      "title": "Dinleme / izleme hazırlığı",
+      "instruction_ids": [
+        "G11-T1-P64-INST01",
+        "G11-T1-P64-INST02",
+        "G11-T1-P64-INST03",
+        "G11-T1-P64-INST04",
+        "G11-T1-P64-INST05",
+        "G11-T1-P64-INST06"
+      ],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T1-P64-TABLE01"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 3,
+      "visual_ids": [
+        "G11-T1-P64-VIS01",
+        "G11-T1-P64-VIS02"
+      ]
+    },
+    {
+      "caption": "Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+      "alt_description": "Stüdyo ortamında masa çevresinde oturan üç kişi ve arkalarında harflerin yer aldığı ekranlar görünür.",
+      "pedagogical_role": "Başlık ve görsel, öğrencinin çok modlu metnin içeriği ve türü hakkında tahmin yürütmesi için kullanılır.",
+      "source_note": "Karekod hedefindeki içerik bu PDF sayfasından bağımsızdır; hedef içerik çözümlenmemiştir.",
+      "id": "G11-T1-P64-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 4
+    },
+    {
+      "text": "2. Metnin başlık ve görselinden hareketle içerik ve türüne yönelik tahminlerde bulununuz.",
+      "number": "2",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P64-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 5
+    },
+    {
+      "text": "3. Metni etkili bir biçimde dinleyebilmek / izleyebilmek için metin ve ortamla ilgili iletişim engellerini ortadan kaldırınız.",
+      "number": "3",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P64-INST03",
+      "type": "instruction",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 6
+    },
+    {
+      "text": "4. Değişen İletişim Araçlarının Hayatımızdaki Yeri adlı çok modlu metni dinleme / izleme stratejinizi, dilin günlük hayattaki kullanımını kendi yaşamınızla ilişkilendirecek şekilde belirleyiniz.",
+      "number": "4",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P64-INST04",
+      "type": "instruction",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 7
+    },
+    {
+      "text": "5. Yandaki karekoddan ulaşacağınız çok modlu metni not alarak dinleyiniz / izleyiniz.",
+      "number": "5",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P64-INST05",
+      "type": "instruction",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 8
+    },
+    {
+      "caption": "Değişen İletişim Araçlarının Hayatımızdaki Yeri videosuna karekoddan ulaşabilirsiniz.",
+      "alt_description": "Sayfanın sağ tarafında pembe zeminli kutu içinde video erişim QR kodu bulunur.",
+      "pedagogical_role": "Karekodla çok modlu metnin videosuna erişim sağlanır.",
+      "source_note": "Karekod hedefindeki içerik bu PDF sayfasından bağımsızdır; hedef içerik çözümlenmemiştir.",
+      "id": "G11-T1-P64-VIS02",
+      "type": "visual",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 9
+    },
+    {
+      "text": "Çok modlu metni dinleme / izleme sürecinde yapmanız gerekenler, aşağıda verilen Gözlem Formu’ndaki ölçütlere göre öğretmeniniz tarafından değerlendirilecektir.",
+      "instruction_kind": "assessment_direction",
+      "id": "G11-T1-P64-INST06",
+      "type": "instruction",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 10
+    },
+    {
+      "title": "Gözlem Formu",
+      "columns": [
+        "No",
+        "Değerlendirme Ölçütleri",
+        "Evet",
+        "Kısmen",
+        "Hayır"
+      ],
+      "rows": [
+        [
+          "1",
+          "Metni dinleme / izlemeye hazırlık yaptı.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "2",
+          "Dinleme / izleme amacını belirledi.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "3",
+          "Metnin içeriğiyle ilgili tahminde bulundu.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "Dinleme / izlemeyi olumsuz etkileyen iletişim engellerini ortadan kaldırdı.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "Metni dinleme / izleme yöntemine karar verdi.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "6",
+          "Metni dikkatini yoğunlaştırarak dinledi / izledi.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "7",
+          "Metni başkalarını rahatsız etmeden dinledi / izledi.",
+          "",
+          "",
+          ""
+        ],
+        [
+          "8",
+          "Önemli gördüğü yerler hakkında notlar aldı.",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [],
+      "id": "G11-T1-P64-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 64,
+        "pdf_page": 65
+      },
+      "order": 11,
+      "activity_ids": [
+        "G11-T1-P64-ACT01"
+      ]
+    }
+  ]
+}

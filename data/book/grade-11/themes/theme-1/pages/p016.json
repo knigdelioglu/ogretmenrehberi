@@ -1,0 +1,213 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 16,
+  "pdf_page": 17,
+  "section": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+  "source": {
+    "printed_page": 16,
+    "pdf_page": 17,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Okumayı Yönetebilme\n\n\nHatırlayalım\n\n\n1. Geleneksel Türk tiyatrosuyla ilgili ön bilgilerinizi\ngözden geçirerek bu bilgileri pekiştiriniz ve öğret-\nmeninizin rehberliğinde altı kişilik gruplar oluştu-\nrunuz. Her gruba bir sözcü seçiniz ve masalarınızın\netrafında toplanınız.\n2. Grup üyeleri olarak, konuyla ilgili üç bilgi veya dü-\nşünceyi üç ayrı karta yazıp kartlarınızı masanın üze-\nrine bırakınız.\n3. Grup sözcüleri tarafından okunan, masadaki kartlar-\nda yer alan bilgi ve görüşleri grup arkadaşlarınızla\ntartışınız.\n4. Tartışma sonucunda ulaştığınız ortak bilgi ve görüşleri grup sözcüleri aracılığıyla sınıfla paylaşınız.\n\n\n\n\nSıra Sizde\n\n\nAşağıda Karagöz oyunlarında yer alan bazı tiplerin görselleri verilmiştir. Görsellerden yararlanarak soruları\ncevaplayınız.\n\n\n\n\n1. Bu tiplerin adlarını tahmin ediniz.\n2. Oyun kişilerinin ayırt edici fiziksel özelliklerinden yola çıkarak kişilik özellikleriyle ilgili tahminde bulu-\nnunuz.\n3. Kişilerin iletişim şekillerinin birbirlerinden farklı olması ve dili farklı kullanmalarının nedenleriyle ilgili\ntahminde bulununuz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Okumayı Yönetebilme",
+      "id": "G11-T1-P16-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "Üst bölümde birlikte çalışan öğrencileri gösteren çizim, alt bölümde üç geleneksel gölge oyunu figürü bulunur.",
+      "id": "G11-T1-P16-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 2
+    },
+    {
+      "text": "Hatırlayalım",
+      "id": "G11-T1-P16-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 3
+    },
+    {
+      "id": "G11-T1-P16-ACT01",
+      "type": "activity",
+      "title": "Hatırlayalım",
+      "instruction_ids": [
+        "G11-T1-P16-INST02",
+        "G11-T1-P16-INST03",
+        "G11-T1-P16-INST04",
+        "G11-T1-P16-INST05"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 4
+    },
+    {
+      "text": "1. Geleneksel Türk tiyatrosuyla ilgili ön bilgilerinizi\ngözden geçirerek bu bilgileri pekiştiriniz ve öğret-\nmeninizin rehberliğinde altı kişilik gruplar oluştu-\nrunuz. Her gruba bir sözcü seçiniz ve masalarınızın\netrafında toplanınız.",
+      "number": "1",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P16-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 5
+    },
+    {
+      "text": "2. Grup üyeleri olarak, konuyla ilgili üç bilgi veya dü-\nşünceyi üç ayrı karta yazıp kartlarınızı masanın üze-\nrine bırakınız.",
+      "number": "2",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P16-INST03",
+      "type": "instruction",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 6
+    },
+    {
+      "text": "3. Grup sözcüleri tarafından okunan, masadaki kartlar-\nda yer alan bilgi ve görüşleri grup arkadaşlarınızla\ntartışınız.",
+      "number": "3",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P16-INST04",
+      "type": "instruction",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 7
+    },
+    {
+      "text": "4. Tartışma sonucunda ulaştığınız ortak bilgi ve görüşleri grup sözcüleri aracılığıyla sınıfla paylaşınız.\n\n\n\n\nSıra Sizde\n\n\nAşağıda Karagöz oyunlarında yer alan bazı tiplerin görselleri verilmiştir. Görsellerden yararlanarak soruları\ncevaplayınız.",
+      "number": "4",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P16-INST05",
+      "type": "instruction",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 8
+    },
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P16-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 9
+    },
+    {
+      "id": "G11-T1-P16-ACT02",
+      "type": "activity",
+      "title": "Sıra Sizde",
+      "instruction_ids": [
+        "G11-T1-P16-INST01"
+      ],
+      "question_ids": [
+        "G11-T1-P16-Q01",
+        "G11-T1-P16-Q02",
+        "G11-T1-P16-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 10
+    },
+    {
+      "text": "cevaplayınız.",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P16-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 11
+    },
+    {
+      "text": "1. Bu tiplerin adlarını tahmin ediniz.",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P16-INST01",
+      "id": "G11-T1-P16-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 12,
+      "activity_id": "G11-T1-P16-ACT02"
+    },
+    {
+      "text": "2. Oyun kişilerinin ayırt edici fiziksel özelliklerinden yola çıkarak kişilik özellikleriyle ilgili tahminde bulu-\nnunuz.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P16-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 13,
+      "activity_id": "G11-T1-P16-ACT02"
+    },
+    {
+      "text": "3. Kişilerin iletişim şekillerinin birbirlerinden farklı olması ve dili farklı kullanmalarının nedenleriyle ilgili\ntahminde bulununuz.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P16-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 16,
+        "pdf_page": 17
+      },
+      "order": 14,
+      "activity_id": "G11-T1-P16-ACT02"
+    }
+  ]
+}

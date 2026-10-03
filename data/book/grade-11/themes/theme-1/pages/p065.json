@@ -1,0 +1,93 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 65,
+  "pdf_page": 66,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 65,
+    "pdf_page": 66,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Anlam Oluşturabilme\n\n\nSöz Varlığımız\n\n\nDinlediğiniz / izlediğiniz çok modlu metinde geçen bazı kelimelerin an-\nlamları aşağıdaki kelime ağacında verilmiştir. Metindeki bağlamlarından\nhareketle bu kelimelerin anlamlarını kelime ağacı etkinliğinde eşleştiri-\nniz. Yaptığınız eşleştirmenin doğru olup olmadığını yandaki karekod yar-\nTDK Güncel Türkçe\ndımıyla TDK Güncel Türkçe Sözlük’ten kontrol ediniz.\nSözlük’e karekoddan\nulaşabilirsiniz.\n\nb c ç d\ntasavvur güdü sosyal nörolojik\n\n\na e\nmedeni muhabbet\n..................\n\n\n\n\nSinir bilimsel.\n..................\n..................\n\nGöz önüne Bilinçli veya bilinçsiz\ngetirme, olarak davranışı doğuran,\nhayal etme, sürekliliğini sağlayan ve\nona yön veren herhangi\nzihinde\nbir güç; saik.\ncanlandırma.\n\n\n\n\n..................\n\n..................\nUygar.\nToplumsal.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Anlam Oluşturabilme",
+      "id": "G11-T1-P65-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 65,
+        "pdf_page": 66
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "Kelimeleri anlamlarıyla eşleştirmek için ağaç biçiminde bir kavram şeması bulunur.",
+      "id": "G11-T1-P65-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 65,
+        "pdf_page": 66
+      },
+      "order": 2
+    },
+    {
+      "text": "Söz Varlığımız",
+      "id": "G11-T1-P65-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 65,
+        "pdf_page": 66
+      },
+      "order": 3
+    },
+    {
+      "text": "Dinlediğiniz / izlediğiniz çok modlu metinde geçen bazı kelimelerin anlamları aşağıdaki kelime ağacında verilmiştir. Metindeki bağlamlarından hareketle bu kelimelerin anlamlarını kelime ağacı etkinliğinde eşleştiriniz. Yaptığınız eşleştirmenin doğru olup olmadığını yandaki karekod yardımıyla TDK Güncel Türkçe Sözlük’ten kontrol ediniz.",
+      "instruction_kind": "activity_lead",
+      "id": "G11-T1-P65-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 65,
+        "pdf_page": 66
+      },
+      "order": 4
+    },
+    {
+      "caption": "TDK Güncel Türkçe Sözlük’e karekoddan ulaşabilirsiniz.",
+      "alt_description": "Sayfanın sağ üst tarafında kelime ağacı yönergesinin yanında QR kodu bulunur.",
+      "pedagogical_role": "Karekod TDK Güncel Türkçe Sözlük’e erişim içindir.",
+      "source_note": "Karekod hedefindeki içerik bu PDF sayfasından bağımsızdır; hedef içerik çözümlenmemiştir.",
+      "id": "G11-T1-P65-VIS02",
+      "type": "visual",
+      "source": {
+        "printed_page": 65,
+        "pdf_page": 66
+      },
+      "order": 5
+    },
+    {
+      "id": "G11-T1-P65-ACT01",
+      "type": "activity",
+      "title": "Söz varlığı kelime ağacı",
+      "instruction_ids": [
+        "G11-T1-P65-INST01"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 65,
+        "pdf_page": 66
+      },
+      "order": 6,
+      "visual_ids": [
+        "G11-T1-P65-VIS01",
+        "G11-T1-P65-VIS02"
+      ]
+    }
+  ]
+}

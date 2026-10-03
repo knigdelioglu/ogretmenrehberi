@@ -1,0 +1,219 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 73,
+  "pdf_page": 74,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 73,
+    "pdf_page": 74,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Süreci Değerlendirebilme\n\n1. Metnin dilini değerlendirerek bu konudaki beğenilerinizi gerekçeleriyle açıklayınız.\n2. Metinde olumsuz eleştiride bulunduğunuz hususları ve bunlarla ilgili çözüm önerilerinizi aşağıdaki tab-\nloya yazınız.\n\nOlumsuz Eleştiriler Çözüm Önerileri\n\n\n\n\nÇıkış Kartı\n\n\nÇıkış Kartı’nı dinleme / izleme bölümünde yaptığınız çalışmalara göre tamamlayınız.\n\nDinleme / izleme bölümünde yaptığınız çalışmalarda iletişime dair öğrendiğiniz veya önem-\nÜç Yaz li bulduğunuz üç bilgiyi yazınız.\n\n1\n\n\n2\n\n\n3\n\nDinleme / izleme bölümünde ilginizi çeken ve daha fazla bilgi sahibi olmak istediğiniz konu-\nİki Sor larla ilgili iki soru sorunuz.\n\n1\n\n\n2\n\n\nBir Paylaş Yaptığınız çalışmalarda öğrendiklerinizle ilgili bir görüşünüzü arkadaşlarınızla paylaşınız.\n\n\n1",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [
+    "Çıkış Kartı yönergesi ve formu, önceki iki değerlendirme sorusundan ayrı etkinlik olarak kaydedildi."
+  ],
+  "blocks": [
+    {
+      "text": "Süreci Değerlendirebilme",
+      "id": "G11-T1-P73-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 1
+    },
+    {
+      "caption": null,
+      "alt_description": "Çıkış Kartı için Üç Yaz, İki Sor ve Bir Paylaş alanlarını gösteren renkli form yer alır.",
+      "id": "G11-T1-P73-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P73-ACT01",
+      "type": "activity",
+      "title": "Yazma: mektup ve iletişim zamanı",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P73-Q01",
+        "G11-T1-P73-Q02"
+      ],
+      "table_ids": [
+        "G11-T1-P73-TABLE01"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 3
+    },
+    {
+      "text": "1. Metnin dilini değerlendirerek bu konudaki beğenilerinizi gerekçeleriyle açıklayınız.",
+      "question_number": "1",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P73-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 4,
+      "activity_id": "G11-T1-P73-ACT01"
+    },
+    {
+      "text": "2. Metinde olumsuz eleştiride bulunduğunuz hususları ve bunlarla ilgili çözüm önerilerinizi aşağıdaki tabloya yazınız.",
+      "question_number": "2",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P73-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 5,
+      "activity_id": "G11-T1-P73-ACT01",
+      "table_ids": [
+        "G11-T1-P73-TABLE01"
+      ]
+    },
+    {
+      "title": "Olumsuz eleştiriler ve çözüm önerileri",
+      "columns": [
+        "Olumsuz Eleştiriler",
+        "Çözüm Önerileri"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P73-Q02"
+      ],
+      "id": "G11-T1-P73-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 6
+    },
+    {
+      "title": "Çıkış Kartı alanları",
+      "columns": [
+        "Kart bölümü",
+        "Yönerge / alan",
+        "Yanıt"
+      ],
+      "rows": [
+        [
+          "Üç Yaz",
+          "İletişim hakkında üç bilgi",
+          ""
+        ],
+        [
+          "Üç Yaz",
+          "1",
+          ""
+        ],
+        [
+          "Üç Yaz",
+          "2",
+          ""
+        ],
+        [
+          "Üç Yaz",
+          "3",
+          ""
+        ],
+        [
+          "İki Sor",
+          "İki soru",
+          ""
+        ],
+        [
+          "İki Sor",
+          "1",
+          ""
+        ],
+        [
+          "İki Sor",
+          "2",
+          ""
+        ],
+        [
+          "Bir Paylaş",
+          "Öğrendiklerinle ilgili bir görüş",
+          ""
+        ]
+      ],
+      "related_question_ids": [],
+      "id": "G11-T1-P73-TABLE02",
+      "type": "table",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 7,
+      "activity_ids": [
+        "G11-T1-P73-ACT02"
+      ]
+    },
+    {
+      "text": "Çıkış Kartı",
+      "id": "G11-T1-P73-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 8
+    },
+    {
+      "text": "Çıkış Kartı’nı dinleme / izleme bölümünde yaptığınız çalışmalara göre tamamlayınız.",
+      "instruction_kind": "form_direction",
+      "id": "G11-T1-P73-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 9
+    },
+    {
+      "title": "Dinleme / izleme çıkış kartı",
+      "instruction_ids": [
+        "G11-T1-P73-INST01"
+      ],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T1-P73-TABLE02"
+      ],
+      "related_text_ids": [],
+      "visual_ids": [
+        "G11-T1-P73-VIS01"
+      ],
+      "id": "G11-T1-P73-ACT02",
+      "type": "activity",
+      "source": {
+        "printed_page": 73,
+        "pdf_page": 74
+      },
+      "order": 10
+    }
+  ]
+}

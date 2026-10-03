@@ -1,0 +1,309 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 30,
+  "pdf_page": 31,
+  "section": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+  "source": {
+    "printed_page": 30,
+    "pdf_page": 31,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Sıra Sizde\n\nAşağıdaki geleneksel Türk tiyatrosu türlerini verilen açıklamalarla doğru olarak eleştiriniz.\n\nKöy Seyirlik\na Karagöz b c Kukla ç Meddah\nOyunları\n\n\nKış gecelerinde, düğünlerde, bayramlarda eğlenmek ve vakit geçirmek için düzenlenip oynanan; şar-\nkı, dans ve bedensel anlatıma dayanan oyunlardır.\n\nDeriden kesilen tasvirlerin (insan, hayvan, eşya vb.) arkadan verilen ışıkla beyaz bir perdeye yansı-\ntılmasıyla oynanan bir gölge oyunudur. Bu perdeye “Küşterî meydanı, hayal perdesi, ayna” vb. adlar\nverilir.\n\nBu oyun; sahne, perde ve dekor kullanılmadan açık bir alanda oynanan doğaçlama bir oyundur.\nKavuklu ve Pişekâr bu oyunun iki ana tipidir.\n\n\n\nGeleneksel Türk tiyatrosunun bir türü olan, tek kişilik bir tiyatro oyunudur.\n\n\n\nTahta, alçı, mukavva veya bezden yapılmış çeşitli tip, şekil ve cisimlerin oyunlaştırılması sanatıdır.\nİhtiyar ve İbiş bu oyunun iki ana tipidir.\n\n\n\n\nMetni Anlayalım\n\n\nAşağıdaki soruları Yazıcı metnine göre cevaplayınız.\n1. Günümüzde şenliklerde, okullarda yapılan etkinliklerde ve ramazan programlarında Karagöz gösterileri-\nne yer verilmektedir. Karagöz oyunun varlığını sürdürmesinin sebepleri neler olabilir? Açıklayınız.\n2. Kültürel bir miras olan Karagöz’ün Türk kültüründeki değeriyle ilgili görüşlerinizi belirtiniz.\n3. Metnin konu ve temasını belirleyerek aşağıdaki ilgili alanlara yazınız.\n\nKonu Tema\n\n\n\n\n4. Metindeki açık ve örtük iletileri tespit ederek aşağıdaki ilgili alanlara yazınız.\nAçık İletiler\n\n\n\nÖrtük İletiler\n\n\n\n5. Tespit ettiğiniz açık ve örtük iletilerin toplum hayatındaki iletişime katkısını değerlendiriniz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [
+    "PDF metin katmanındaki 'eleştiriniz' ifadesi sayfa görüntüsünde 'eşleştiriniz' olarak doğrulandı; üstteki seçenek bankası açıklama satırlarından ayrı kaydedildi."
+  ],
+  "blocks": [
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P30-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 1
+    },
+    {
+      "id": "G11-T1-P30-ACT01",
+      "type": "activity",
+      "title": "Türleri eşleştirme",
+      "instruction_ids": [
+        "G11-T1-P30-INST01"
+      ],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T1-P30-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 2
+    },
+    {
+      "text": "Aşağıdaki geleneksel Türk tiyatrosu türlerini verilen açıklamalarla doğru olarak eşleştiriniz.",
+      "instruction_kind": "activity_lead",
+      "id": "G11-T1-P30-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 3
+    },
+    {
+      "title": "Geleneksel Türk tiyatrosu türleri eşleştirme",
+      "columns": [
+        "Cevap alanı",
+        "Açıklama"
+      ],
+      "rows": [
+        [
+          "",
+          "Kış gecelerinde, düğünlerde, bayramlarda eğlenmek ve vakit geçirmek için düzenlenip oynanan; şarkı, dans ve bedensel anlatıma dayanan oyunlardır."
+        ],
+        [
+          "",
+          "Deriden kesilen tasvirlerin (insan, hayvan, eşya vb.) arkadan verilen ışıkla beyaz bir perdeye yansıtılmasıyla oynanan bir gölge oyunudur. Bu perdeye “Küşterî meydanı, hayal perdesi, ayna” vb. adlar verilir."
+        ],
+        [
+          "",
+          "Bu oyun; sahne, perde ve dekor kullanılmadan açık bir alanda oynanan doğaçlama bir oyundur. Kavuklu ve Pişekâr bu oyunun iki ana tipidir."
+        ],
+        [
+          "",
+          "Geleneksel Türk tiyatrosunun bir türü olan, tek kişilik bir tiyatro oyunudur."
+        ],
+        [
+          "",
+          "Tahta, alçı, mukavva veya bezden yapılmış çeşitli tip, şekil ve cisimlerin oyunlaştırılması sanatıdır. İhtiyar ve İbiş bu oyunun iki ana tipidir."
+        ]
+      ],
+      "related_question_ids": [],
+      "structure_note": "Beş açıklama satırının solundaki boş alanlar öğrenci eşleştirmesi içindir. Seçenek bankası üstte ayrı ve sıralı gösterilir.",
+      "choice_bank": [
+        {
+          "label": "a",
+          "text": "Karagöz"
+        },
+        {
+          "label": "b",
+          "text": "Köy Seyirlik Oyunları"
+        },
+        {
+          "label": "c",
+          "text": "Kukla"
+        },
+        {
+          "label": "ç",
+          "text": "Meddah"
+        }
+      ],
+      "id": "G11-T1-P30-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 4
+    },
+    {
+      "text": "Metni Anlayalım",
+      "id": "G11-T1-P30-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 5
+    },
+    {
+      "text": "Aşağıdaki soruları Yazıcı metnine göre cevaplayınız.",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P30-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 6
+    },
+    {
+      "id": "G11-T1-P30-ACT02",
+      "type": "activity",
+      "title": "Metni Anlayalım",
+      "instruction_ids": [
+        "G11-T1-P30-INST02"
+      ],
+      "question_ids": [
+        "G11-T1-P30-Q01",
+        "G11-T1-P30-Q02",
+        "G11-T1-P30-Q03",
+        "G11-T1-P30-Q04",
+        "G11-T1-P30-Q05"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 7
+    },
+    {
+      "text": "1. Günümüzde şenliklerde, okullarda yapılan etkinliklerde ve ramazan programlarında Karagöz gösterileri-\nne yer verilmektedir. Karagöz oyunun varlığını sürdürmesinin sebepleri neler olabilir? Açıklayınız.",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P30-INST02",
+      "id": "G11-T1-P30-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 8,
+      "activity_id": "G11-T1-P30-ACT02"
+    },
+    {
+      "text": "2. Kültürel bir miras olan Karagöz’ün Türk kültüründeki değeriyle ilgili görüşlerinizi belirtiniz.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P30-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 9,
+      "activity_id": "G11-T1-P30-ACT02"
+    },
+    {
+      "text": "3. Metnin konu ve temasını belirleyerek aşağıdaki ilgili alanlara yazınız.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P30-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "table_ids": [
+        "G11-T1-P30-TABLE02"
+      ],
+      "order": 10,
+      "activity_id": "G11-T1-P30-ACT02"
+    },
+    {
+      "title": "Konu ve tema yanıt alanları",
+      "columns": [
+        "Konu",
+        "Tema"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P30-Q03"
+      ],
+      "structure_note": "İki yan yana boş yanıt alanı; tablo üstündeki etiketler sütun başlığıdır.",
+      "id": "G11-T1-P30-TABLE02",
+      "type": "table",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 11
+    },
+    {
+      "text": "4. Metindeki açık ve örtük iletileri tespit ederek aşağıdaki ilgili alanlara yazınız.",
+      "question_number": "4",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P30-Q04",
+      "type": "question",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "table_ids": [
+        "G11-T1-P30-TABLE03"
+      ],
+      "order": 12,
+      "activity_id": "G11-T1-P30-ACT02"
+    },
+    {
+      "title": "Açık ve örtük ileti yanıt alanları",
+      "columns": [
+        "Açık İletiler",
+        "Örtük İletiler"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P30-Q04"
+      ],
+      "structure_note": "İki yan yana boş yanıt alanı; tablo üstündeki etiketler sütun başlığıdır.",
+      "id": "G11-T1-P30-TABLE03",
+      "type": "table",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 13
+    },
+    {
+      "text": "5. Tespit ettiğiniz açık ve örtük iletilerin toplum hayatındaki iletişime katkısını değerlendiriniz.",
+      "question_number": "5",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01",
+        "G11-T1-P31-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P30-Q05",
+      "type": "question",
+      "source": {
+        "printed_page": 30,
+        "pdf_page": 31
+      },
+      "order": 14,
+      "activity_id": "G11-T1-P30-ACT02"
+    }
+  ]
+}

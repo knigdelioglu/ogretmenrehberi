@@ -1,0 +1,188 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 66,
+  "pdf_page": 67,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 66,
+    "pdf_page": 67,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Metni Anlayalım\n\n\nAşağıda verilen soruları Değişen İletişim Araçlarının Hayatımızdaki Yeri adlı çok modlu metne göre cevaplayınız.\n1. İletişim araçlarının geçmişten bugüne gelişimine yönelik yaptığınız araştırma sonuçlarından hareketle\ndinlediğiniz / izlediğiniz metinle bağlantılı çıkarımlarınızı paylaşınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n2. Dinlediğiniz / izlediğiniz çok modlu metinden ve önceki bilgilerinizden yararlanarak e-posta vasıtasıyla\niletişimin diğer iletişim araçlarına göre hangi yönlerden avantajlı olabileceğini gerekçesiyle açıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n3. Metinde geçen “İletişim, bir medenileşme hareketidir.” ifadesini insanın iletişim ihtiyacı bağlamında yo-\nrumlayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n4. Metnin konu ve temasını belirleyiniz.\n\nKonu Tema\n\n\n\n\n5. Metnin ana düşüncesini ve yardımcı düşüncelerini belirleyerek aşağıdaki ilgili alanlara yazınız.\n\nAna Düşünce\n\n\n\n\nYardımcı Düşünceler",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Metni Anlayalım",
+      "id": "G11-T1-P66-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 1
+    },
+    {
+      "text": "Aşağıda verilen soruları Değişen İletişim Araçlarının Hayatımızdaki Yeri adlı çok modlu metne göre cevaplayınız.",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P66-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 2
+    },
+    {
+      "id": "G11-T1-P66-ACT01",
+      "type": "activity",
+      "title": "Çok modlu metni anlama",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P66-Q01",
+        "G11-T1-P66-Q02",
+        "G11-T1-P66-Q03",
+        "G11-T1-P66-Q04",
+        "G11-T1-P66-Q05"
+      ],
+      "table_ids": [
+        "G11-T1-P66-TABLE01",
+        "G11-T1-P66-TABLE02"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 3
+    },
+    {
+      "text": "1. İletişim araçlarının geçmişten bugüne gelişimine yönelik yaptığınız araştırma sonuçlarından hareketle\ndinlediğiniz / izlediğiniz metinle bağlantılı çıkarımlarınızı paylaşınız.",
+      "question_number": "1",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P66-INST01",
+      "id": "G11-T1-P66-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 4,
+      "activity_id": "G11-T1-P66-ACT01"
+    },
+    {
+      "text": "2. Dinlediğiniz / izlediğiniz çok modlu metinden ve önceki bilgilerinizden yararlanarak e-posta vasıtasıyla\niletişimin diğer iletişim araçlarına göre hangi yönlerden avantajlı olabileceğini gerekçesiyle açıklayınız.",
+      "question_number": "2",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P66-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 5,
+      "activity_id": "G11-T1-P66-ACT01"
+    },
+    {
+      "text": "3. Metinde geçen “İletişim, bir medenileşme hareketidir.” ifadesini insanın iletişim ihtiyacı bağlamında yo-\nrumlayınız.",
+      "question_number": "3",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P66-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 6,
+      "activity_id": "G11-T1-P66-ACT01"
+    },
+    {
+      "text": "4. Metnin konu ve temasını belirleyiniz.\n\nKonu Tema",
+      "question_number": "4",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P66-Q04",
+      "type": "question",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 7,
+      "activity_id": "G11-T1-P66-ACT01"
+    },
+    {
+      "title": "Konu ve tema alanları",
+      "columns": [
+        "Konu",
+        "Tema"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P66-Q05"
+      ],
+      "id": "G11-T1-P66-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 8
+    },
+    {
+      "title": "Ana ve yardımcı düşünceler alanları",
+      "columns": [
+        "Ana Düşünce",
+        "Yardımcı Düşünceler"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P66-Q05"
+      ],
+      "id": "G11-T1-P66-TABLE02",
+      "type": "table",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "order": 9
+    },
+    {
+      "text": "5. Metnin ana düşüncesini ve yardımcı düşüncelerini belirleyerek aşağıdaki ilgili alanlara yazınız.\n\nAna Düşünce\n\n\n\n\nYardımcı Düşünceler",
+      "question_number": "5",
+      "related_text_ids": [],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P66-Q05",
+      "type": "question",
+      "source": {
+        "printed_page": 66,
+        "pdf_page": 67
+      },
+      "table_ids": [
+        "G11-T1-P66-TABLE01",
+        "G11-T1-P66-TABLE02"
+      ],
+      "order": 10,
+      "activity_id": "G11-T1-P66-ACT01"
+    }
+  ]
+}

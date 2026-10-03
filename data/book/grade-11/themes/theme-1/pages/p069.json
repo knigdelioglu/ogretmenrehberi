@@ -1,0 +1,54 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 69,
+  "pdf_page": 70,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 69,
+    "pdf_page": 70,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "HASAN\nEfendim bu konak vaktiyle bir şeyhülislâmın malı imiş... (İbrahim’e) Adı ne idi?\nİBRAHİM\nSanırım Zenbilli Ali efendi...\nRIDVAN\nFakat o Yavuzun şeyhülislâmı idi.\nHASAN\nBiz de Sultan Osmanın demedik ki oğul...\nRIDVAN\nOlur şey değil, yani 450 sene evvel mi yapılmış bu ahşap konak?\nHASAN\nİbrahim yanlış söyledi. Ebussûut efendimiz diyecekti galiba...\nRIDVAN\nO da aynı asırda yaşadı...\nİBRAHİM\nYalan, aynı asırda değil, bu konakta yaşamış... Sen nereden bileceksin! Analığım söyledi...\nÖMER\nAnalığı da onun gibidir inanmayın!\nHATİCE\nRıdvan... Bırak adamlar konuşsunlar... Babanın yerine sen mi geçtin?.. Nefes vermiyorsun biçarelere... Sus da\nsöylesinler...\nRIDVAN\nFakat anne. O kadar iyi bildiğim bahisler ki bunlar... Tez yazdım...\nİBRAHİM\nBenim analığım da bana söyleyeli 10 sene olmuyor ya.. Tez söyledi..\nHATİCE\nUkalâlığı bırak diyorum Rıdvan. Mesele Şeyhülislâmın isminde değil...\nHASAN\nHem biz cahil insanlarız. Kusurumuza bakmamalı! Bir şeyhülislâmın konağı imiş işte bu...\nHATİCE\nDevam... Devam...\n(...)\nİBRAHİM\nBir ramazan akşamı imiş... Sular henüz kararıyormuş...\n(...)\nCevat Fehmi Başkut, Paydos",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "title": "Paydos (devam)",
+      "text": "HASAN\nEfendim bu konak vaktiyle bir şeyhülislâmın malı imiş... (İbrahim’e) Adı ne idi?\nİBRAHİM\nSanırım Zenbilli Ali efendi...\nRIDVAN\nFakat o Yavuzun şeyhülislâmı idi.\nHASAN\nBiz de Sultan Osmanın demedik ki oğul...\nRIDVAN\nOlur şey değil, yani 450 sene evvel mi yapılmış bu ahşap konak?\nHASAN\nİbrahim yanlış söyledi. Ebussûut efendimiz diyecekti galiba...\nRIDVAN\nO da aynı asırda yaşadı...\nİBRAHİM\nYalan, aynı asırda değil, bu konakta yaşamış... Sen nereden bileceksin! Analığım söyledi...\nÖMER\nAnalığı da onun gibidir inanmayın!\nHATİCE\nRıdvan... Bırak adamlar konuşsunlar... Babanın yerine sen mi geçtin?.. Nefes vermiyorsun biçarelere... Sus da\nsöylesinler...\nRIDVAN\nFakat anne. O kadar iyi bildiğim bahisler ki bunlar... Tez yazdım...\nİBRAHİM\nBenim analığım da bana söyleyeli 10 sene olmuyor ya.. Tez söyledi..\nHATİCE\nUkalâlığı bırak diyorum Rıdvan. Mesele Şeyhülislâmın isminde değil...\nHASAN\nHem biz cahil insanlarız. Kusurumuza bakmamalı! Bir şeyhülislâmın konağı imiş işte bu...\nHATİCE\nDevam... Devam...\n(...)\nİBRAHİM\nBir ramazan akşamı imiş... Sular henüz kararıyormuş...\n(...)",
+      "lines": [],
+      "stage_directions": [
+        "(...)",
+        "(...)"
+      ],
+      "continuation": {
+        "from_previous_page": true,
+        "to_next_page": false
+      },
+      "id": "G11-T1-P69-DLG01",
+      "type": "dialogue",
+      "source": {
+        "printed_page": 69,
+        "pdf_page": 70
+      },
+      "order": 1
+    },
+    {
+      "id": "G11-T1-P69-ACT01",
+      "type": "activity",
+      "title": "İletişim engelleri",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P68-DLG01"
+      ],
+      "source": {
+        "printed_page": 69,
+        "pdf_page": 70
+      },
+      "order": 2
+    }
+  ]
+}

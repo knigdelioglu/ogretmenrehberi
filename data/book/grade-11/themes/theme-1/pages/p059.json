@@ -1,0 +1,156 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 59,
+  "pdf_page": 60,
+  "section": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Değişen İletişim Araçlarının Hayatımızdaki Yeri",
+  "source": {
+    "printed_page": 59,
+    "pdf_page": 60,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "METİN TAHLİLİ-3 (ANLAMA)\nDİNLEME / İZLEME\nKonuya Başlarken\n\nHatırlayalım\n\nAşağıdaki soruları görsellerden ve metinden yararlanarak cevaplayınız.\n\n\n\n\nAÇIK\nBiz hep açık konuştuk.\nGökyüzünden maviydi sözlerimiz.\nSığ bataklarda değildik, kuşlar gibiydik,\nUçarıydık. Gözlerimizde\nŞavkıyan parıltılar gibiydik.\n\nBiz iyiye iyi, güzele güzel dedik,\nMasallardan çekerdik dizeleri tülbent gibi.\nYalnız, şiirlerde yalan söylemezdik,\nUmutlarımızda, hayallerimizde de yalancı değildik.\n\nBiz buğday tarlalarında buğday,\nAğu yeşili bahçelerde ot,\nTrenlerde düdük sesiydik.\nYıldızlara çobandık, değirmenlere su,\nBozkırlara bulut gölgesiydik.\nCahit Külebi, Bütün Şiirleri\n\n1. Dilin etkili ve güzel kullanımı iletişimde neden önemlidir? Açıklayınız.\n2. Şairin “Yıldızlara çobandık, değirmenlere su, / Bozkırlara bulut gölgesiydik.” dizelerini yorumlayınız.\n\n\n3. Sağlıklı bir iletişim kurmanın yolları nelerdir? Örneklerle açıklayınız.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "METİN TAHLİLİ-3 (ANLAMA)",
+      "id": "G11-T1-P59-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 1
+    },
+    {
+      "text": "DİNLEME / İZLEME",
+      "id": "G11-T1-P59-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 2
+    },
+    {
+      "text": "Konuya Başlarken",
+      "id": "G11-T1-P59-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 3
+    },
+    {
+      "text": "Hatırlayalım",
+      "id": "G11-T1-P59-SH03",
+      "type": "subheading",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 4
+    },
+    {
+      "text": "Aşağıdaki soruları görsellerden ve metinden yararlanarak cevaplayınız.\n\n\n\n\nAÇIK\nBiz hep açık konuştuk.\nGökyüzünden maviydi sözlerimiz.\nSığ bataklarda değildik, kuşlar gibiydik,\nUçarıydık. Gözlerimizde\nŞavkıyan parıltılar gibiydik.\n\nBiz iyiye iyi, güzele güzel dedik,\nMasallardan çekerdik dizeleri tülbent gibi.\nYalnız, şiirlerde yalan söylemezdik,\nUmutlarımızda, hayallerimizde de yalancı değildik.\n\nBiz buğday tarlalarında buğday,\nAğu yeşili bahçelerde ot,\nTrenlerde düdük sesiydik.\nYıldızlara çobandık, değirmenlere su,\nBozkırlara bulut gölgesiydik.\nCahit Külebi, Bütün Şiirleri",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P59-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 5
+    },
+    {
+      "id": "G11-T1-P59-ACT01",
+      "type": "activity",
+      "title": "İletişimin etkili kullanımı",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T1-P59-Q01",
+        "G11-T1-P59-Q02",
+        "G11-T1-P59-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P59-POEM01"
+      ],
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 6
+    },
+    {
+      "title": "Açık",
+      "text": "AÇIK\nBiz hep açık konuştuk.\nGökyüzünden maviydi sözlerimiz.\nSığ bataklarda değildik, kuşlar gibiydik,\nUçarıydık. Gözlerimizde\nŞavkıyan parıltılar gibiydik.\n\nBiz iyiye iyi, güzele güzel dedik,\nMasallardan çekerdik dizeleri tülbent gibi.\nYalnız, şiirlerde yalan söylemezdik,\nUmutlarımızda, hayallerimizde de yalancı değildik.\n\nBiz buğday tarlalarında buğday,\nAğu yeşili bahçelerde ot,\nTrenlerde düdük sesiydik.\nYıldızlara çobandık, değirmenlere su,\nBozkırlara bulut gölgesiydik.",
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": false
+      },
+      "id": "G11-T1-P59-POEM01",
+      "type": "poem",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 7
+    },
+    {
+      "text": "1. Dilin etkili ve güzel kullanımı iletişimde neden önemlidir? Açıklayınız.",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P59-POEM01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P59-INST01",
+      "id": "G11-T1-P59-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 8,
+      "activity_id": "G11-T1-P59-ACT01"
+    },
+    {
+      "text": "2. Şairin “Yıldızlara çobandık, değirmenlere su, / Bozkırlara bulut gölgesiydik.” dizelerini yorumlayınız.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P59-POEM01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P59-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 9,
+      "activity_id": "G11-T1-P59-ACT01"
+    },
+    {
+      "text": "3. Sağlıklı bir iletişim kurmanın yolları nelerdir? Örneklerle açıklayınız.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P59-POEM01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P59-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 59,
+        "pdf_page": 60
+      },
+      "order": 10,
+      "activity_id": "G11-T1-P59-ACT01"
+    }
+  ]
+}

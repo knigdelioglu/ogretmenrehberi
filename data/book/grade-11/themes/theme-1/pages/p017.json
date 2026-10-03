@@ -1,0 +1,139 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 17,
+  "pdf_page": 18,
+  "section": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+  "source": {
+    "printed_page": 17,
+    "pdf_page": 18,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Hatırlayalım\n\nKaragöz oyunu ile ilgili ön bilgilerinizi ifade etmek üzere sıra arkadaşınızla ikişerli grup oluşturarak aşağıda verilen “düşün-eş-\nleş-paylaş” çalışmasını yapınız.\n\nDÜŞÜN\nKaragöz oyunlarında kullanılan dil ve anlatım özellikleri, yardımcı rollerin işlevleri ve kişilerin beden dilinin nasıl\netkili kullanıldığı üzerine düşününüz.\n\n\n\n\nEŞLEŞ\nSıra arkadaşlarınızla önceki adımda düşündüğünüz konuları tartışarak örtüşen fikirleri aşağıya yazınız.\n\n\n\n\nPAYLAŞ\nElde ettiğiniz ortak düşünceleri sınıf arkadaşlarınızla paylaşınız.\n\n\n\nSıra Sizde\n\n\nOkuma amacınızı belirleyerek Yazıcı metnine göz gezdiriniz ve aşağıdaki soruları cevaplayınız.\n1. Metinde açık ve anlaşılır bir dil kullanılmış mıdır? Açıklayınız.\n2. Dönemin dil özelliklerini yansıttığını düşündüğünüz kelime ve cümleleri tespit ediniz.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n3. Tespit ettiğiniz kelime ve cümleler metnin akıcılığını nasıl etkilemiştir? Açıklayınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Hatırlayalım",
+      "id": "G11-T1-P17-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 1
+    },
+    {
+      "id": "G11-T1-P17-ACT01",
+      "type": "activity",
+      "title": "Hatırlayalım",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 2
+    },
+    {
+      "text": "Sıra Sizde",
+      "id": "G11-T1-P17-SH02",
+      "type": "subheading",
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 3
+    },
+    {
+      "id": "G11-T1-P17-ACT02",
+      "type": "activity",
+      "title": "Sıra Sizde",
+      "instruction_ids": [
+        "G11-T1-P17-INST01"
+      ],
+      "question_ids": [
+        "G11-T1-P17-Q01",
+        "G11-T1-P17-Q02",
+        "G11-T1-P17-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 4
+    },
+    {
+      "text": "Okuma amacınızı belirleyerek Yazıcı metnine göz gezdiriniz ve aşağıdaki soruları cevaplayınız.",
+      "instruction_kind": "question_lead",
+      "id": "G11-T1-P17-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 5
+    },
+    {
+      "text": "1. Metinde açık ve anlaşılır bir dil kullanılmış mıdır? Açıklayınız.",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "instruction_id": "G11-T1-P17-INST01",
+      "id": "G11-T1-P17-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 6,
+      "activity_id": "G11-T1-P17-ACT02"
+    },
+    {
+      "text": "2. Dönemin dil özelliklerini yansıttığını düşündüğünüz kelime ve cümleleri tespit ediniz.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P17-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 7,
+      "activity_id": "G11-T1-P17-ACT02"
+    },
+    {
+      "text": "3. Tespit ettiğiniz kelime ve cümleler metnin akıcılığını nasıl etkilemiştir? Açıklayınız.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P17-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 17,
+        "pdf_page": 18
+      },
+      "order": 8,
+      "activity_id": "G11-T1-P17-ACT02"
+    }
+  ]
+}

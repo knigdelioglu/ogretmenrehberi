@@ -1,0 +1,188 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 55,
+  "pdf_page": 56,
+  "section": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — İletişim Engelleri",
+  "source": {
+    "printed_page": 55,
+    "pdf_page": 56,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "İçerik Oluşturabilme\n\nCanlandırma metninizi aşağıdaki aşamaları takip ederek hazırlayınız.\n\nHedef kitlenizin özelliklerine yönelik tahminlerde bulunarak konuşmanızın giriş, gelişme ve sonuç bö-\na lümlerini tasarlayınız.\n\n\nGiriş Gelişme Sonuç\n\n\n\n\nb Konuşmanızın amacına uygun bir ana düşünce belirleyiniz ve karşılaştırma içeren iletiler oluşturunuz.\nDilin kullanım alanına (özel, mesleki, kamusal alan ve eğitim alanı) göre konuşmanızın içeriğini belir-\nc leyiniz.\n\nç Sözlü iletişim engellerine dair araştırma yaparak bilgi toplayınız.\n\nd Söz varlığını içeriğe ve hedef kitleye göre belirleyerek konuşmanızı planlayınız.\n\ne Konuşmanızı planlarken dil yapılarını millî bir bilinçle ve işlevine uygun olarak kullanınız.\n\nf Beden dilini doğru, diksiyon ve telaffuzu etkin bir şekilde kullanmayı planlayınız.\n\ng Konuşmanızın etkileyiciliğini artırmak için amacınıza uygun işitsel ve görsel ögeler kullanınız.\nKonuşmanızın taslağını arkadaşlarınıza sunarak onlardan aldığınız geri bildirimler doğrultusunda ko-\nğ nuşma metninize son şeklini veriniz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "İçerik Oluşturabilme",
+      "id": "G11-T1-P55-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 1
+    },
+    {
+      "id": "G11-T1-P55-ACT01",
+      "type": "activity",
+      "title": "Canlandırma metni",
+      "instruction_ids": [
+        "G11-T1-P55-INST01",
+        "G11-T1-P55-INST02",
+        "G11-T1-P55-INST03",
+        "G11-T1-P55-INST04",
+        "G11-T1-P55-INST05",
+        "G11-T1-P55-INST06",
+        "G11-T1-P55-INST07",
+        "G11-T1-P55-INST08",
+        "G11-T1-P55-INST09"
+      ],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T1-P55-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P53-TEXT01"
+      ],
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 2
+    },
+    {
+      "step_label": "a",
+      "text": "lümlerini tasarlayınız.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 3
+    },
+    {
+      "title": "Konuşma planı",
+      "columns": [
+        "Giriş",
+        "Gelişme",
+        "Sonuç"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [],
+      "structure_note": "Üç sütunlu boş taslak alanı.",
+      "id": "G11-T1-P55-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 4
+    },
+    {
+      "step_label": "b",
+      "text": "Konuşmanızın amacına uygun bir ana düşünce belirleyiniz ve karşılaştırma içeren iletiler oluşturunuz.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 5
+    },
+    {
+      "step_label": "c",
+      "text": "leyiniz.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST03",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 6
+    },
+    {
+      "step_label": "ç",
+      "text": "Sözlü iletişim engellerine dair araştırma yaparak bilgi toplayınız.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST04",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 7
+    },
+    {
+      "step_label": "d",
+      "text": "Söz varlığını içeriğe ve hedef kitleye göre belirleyerek konuşmanızı planlayınız.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST05",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 8
+    },
+    {
+      "step_label": "e",
+      "text": "Konuşmanızı planlarken dil yapılarını millî bir bilinçle ve işlevine uygun olarak kullanınız.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST06",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 9
+    },
+    {
+      "step_label": "f",
+      "text": "Beden dilini doğru, diksiyon ve telaffuzu etkin bir şekilde kullanmayı planlayınız.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST07",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 10
+    },
+    {
+      "step_label": "g",
+      "text": "Konuşmanızın etkileyiciliğini artırmak için amacınıza uygun işitsel ve görsel ögeler kullanınız.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST08",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 11
+    },
+    {
+      "step_label": "ğ",
+      "text": "nuşma metninize son şeklini veriniz.",
+      "instruction_kind": "lettered_step",
+      "id": "G11-T1-P55-INST09",
+      "type": "instruction",
+      "source": {
+        "printed_page": 55,
+        "pdf_page": 56
+      },
+      "order": 12
+    }
+  ]
+}

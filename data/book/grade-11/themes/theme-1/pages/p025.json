@@ -1,0 +1,204 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 25,
+  "pdf_page": 26,
+  "section": "Metin Tahlili-1 (Anlama): Okuma — Karagöz Oyunu (Yazıcı)",
+  "source": {
+    "printed_page": 25,
+    "pdf_page": 26,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Anlam Oluşturabilme\n\n\nSöz Varlığımız\n\nÖğretmeninizin rehberliğinde sınıfta bir “kelime duvarı” oluşturmak için aşağıdaki adımları takip ediniz.\n\nHACİVAT — (Gelir.) Vay efendim, Karagöz’üm! Akşam-ı şerifler hayırlar olsun!\nKARAGÖZ — Sinsileni sansar boğsun! (Hacivat’a vurur.)\n(...)\nHACİVAT — Bendenize vurmadan mûrâdınız?\nKARAGÖZ — Pek ihtiyarladı dadımız. (Hacivat’a vurur.)\nHACİVAT — Bendenize vurmanın esbâb-ı mûcibesi?\nKARAGÖZ — Bizim ispirin ne esbabı var ne cübbesi.\n\n1. Okuduğunuz metnin bağlamını göz önünde bulundurarak altı çizili kelimelerin\nanlamlarına yönelik tahminlerinizi aşağıda verilen kelime duvarındaki ilgili yerle-\nre yazınız. Tahminlerinizin doğruluğunu yandaki karekod yardımıyla TDK Güncel\nTürkçe Sözlük’ten kontrol ediniz (Sinsile, mûrâd, esbab kelimelerinin metindeki ya-\nzımı TDK’de yer almadığından aşağıdaki tabloda verilen günümüz söyleyişine göre\nkontrol ediniz.). TDK Güncel Türkçe\n2. Parçada geçen kelimelerin yerine metnin bağlamına uygun ve anlamını bozmaya- Sözlük’e karekoddan\nulaşabilirsiniz.\ncak şekilde kelime veya kelime grupları öneriniz. Önerilerinizi ilgili yerlere yazınız.\n\n\n\nsinsile (silsile) dadı\nbendeniz\nTahminim: Tahminim: Tahminim:\n\n\n\nÖnerim: Önerim: Önerim:\n\n\n\n\nmûrâd (murat) esbab\nispir\nTahminim: Tahminim:\nTahminim:\n\n\n\nÖnerim: Önerim: Önerim:\n\n\n\n\n3. Metinde anlamını bilmediğiniz diğer kelimeleri tespit ederek bunların anlamlarını TDK Güncel Türkçe\nSözlük’ten öğreniniz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "Anlam Oluşturabilme",
+      "id": "G11-T1-P25-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 1
+    },
+    {
+      "caption": "TDK Güncel Türkçe Sözlük’e karekoddan ulaşabilirsiniz.",
+      "alt_description": "Sayfanın sağında pembe zemin içinde siyah-beyaz QR kodu bulunur.",
+      "id": "G11-T1-P25-VIS01",
+      "type": "visual",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "source_note": "Karekod hedefi doğrulanmadı; yalnızca basılı işaret ve etiketi kaydedildi.",
+      "order": 2
+    },
+    {
+      "text": "Söz Varlığımız",
+      "id": "G11-T1-P25-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 3
+    },
+    {
+      "id": "G11-T1-P25-ACT01",
+      "type": "activity",
+      "title": "Söz Varlığımız",
+      "instruction_ids": [
+        "G11-T1-P25-INST01"
+      ],
+      "question_ids": [
+        "G11-T1-P25-Q01",
+        "G11-T1-P25-Q02",
+        "G11-T1-P25-Q03"
+      ],
+      "table_ids": [
+        "G11-T1-P25-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 4
+    },
+    {
+      "text": "Öğretmeninizin rehberliğinde sınıfta bir “kelime duvarı” oluşturmak için aşağıdaki adımları takip ediniz.",
+      "instruction_kind": "activity_lead",
+      "id": "G11-T1-P25-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 5
+    },
+    {
+      "title": "Yazıcı’dan söz varlığı örneği",
+      "text": "HACİVAT — (Gelir.) Vay efendim, Karagöz’üm! Akşam-ı şerifler hayırlar olsun!\nKARAGÖZ — Sinsileni sansar boğsun! (Hacivat’a vurur.)\n(...)\nHACİVAT — Bendenize vurmadan mûrâdınız?\nKARAGÖZ — Pek ihtiyarladı dadımız. (Hacivat’a vurur.)\nHACİVAT — Bendenize vurmanın esbâb-ı mûcibesi?\nKARAGÖZ — Bizim ispirin ne esbabı var ne cübbesi.",
+      "id": "G11-T1-P25-QUOTE01",
+      "type": "quote",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 6
+    },
+    {
+      "text": "1. Okuduğunuz metnin bağlamını göz önünde bulundurarak altı çizili kelimelerin\nanlamlarına yönelik tahminlerinizi aşağıda verilen kelime duvarındaki ilgili yerle-\nre yazınız. Tahminlerinizin doğruluğunu yandaki karekod yardımıyla TDK Güncel\nTürkçe Sözlük’ten kontrol ediniz (Sinsile, mûrâd, esbab kelimelerinin metindeki ya-\nzımı TDK’de yer almadığından aşağıdaki tabloda verilen günümüz söyleyişine göre\nkontrol ediniz.).",
+      "question_number": "1",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P25-Q01",
+      "type": "question",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "table_ids": [
+        "G11-T1-P25-TABLE01"
+      ],
+      "order": 7,
+      "activity_id": "G11-T1-P25-ACT01"
+    },
+    {
+      "text": "2. Parçada geçen kelimelerin yerine metnin bağlamına uygun ve anlamını bozmaya-\ncak şekilde kelime veya kelime grupları öneriniz. Önerilerinizi ilgili yerlere yazınız.",
+      "question_number": "2",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P25-Q02",
+      "type": "question",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 8,
+      "activity_id": "G11-T1-P25-ACT01",
+      "table_ids": [
+        "G11-T1-P25-TABLE01"
+      ]
+    },
+    {
+      "title": "Kelime duvarı",
+      "columns": [
+        "Kelime",
+        "Tahminim",
+        "Önerim"
+      ],
+      "rows": [
+        [
+          "sinsile (silsile)",
+          "",
+          ""
+        ],
+        [
+          "dadı",
+          "",
+          ""
+        ],
+        [
+          "bendeniz",
+          "",
+          ""
+        ],
+        [
+          "mûrâd (murat)",
+          "",
+          ""
+        ],
+        [
+          "ispir",
+          "",
+          ""
+        ],
+        [
+          "esbab",
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [
+        "G11-T1-P25-Q01",
+        "G11-T1-P25-Q02"
+      ],
+      "id": "G11-T1-P25-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 9
+    },
+    {
+      "text": "3. Metinde anlamını bilmediğiniz diğer kelimeleri tespit ederek bunların anlamlarını TDK Güncel Türkçe\nSözlük’ten öğreniniz.",
+      "question_number": "3",
+      "related_text_ids": [
+        "G11-T1-P18-DLG01"
+      ],
+      "subquestions": [],
+      "options": [],
+      "id": "G11-T1-P25-Q03",
+      "type": "question",
+      "source": {
+        "printed_page": 25,
+        "pdf_page": 26
+      },
+      "order": 10,
+      "activity_id": "G11-T1-P25-ACT01"
+    }
+  ]
+}

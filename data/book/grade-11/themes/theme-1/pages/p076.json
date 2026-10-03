@@ -1,0 +1,185 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 76,
+  "pdf_page": 77,
+  "section": "Edebiyat Atölyesi-2 (Anlatma): Yazma — E-Posta",
+  "source": {
+    "printed_page": 76,
+    "pdf_page": 77,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "İçerik Oluşturabilme\n\nAşağıdaki basamakları takip ederek e-postanızı oluşturunuz.\n1. Dinleme / izleme metnini inceleme sürecinde iletişim ve e-posta konusunda öğrendiğiniz bilgilerden\nyararlanınız.\n2. E-postanızın alıcısını göz önünde bulundurarak karşı tarafa aktarabileceğiniz ek belgeleri (müzik, video,\nresim, metin vb.) belirleyiniz. Bu belgelerin nerelerde ve hangi amaçlarla kullanılabileceği hakkında tah-\nminlerde bulununuz.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n\n3. Tahminleriniz doğrultusunda e-posta ile mektup türünü karşılaştırmak üzere bu türlerin benzerlik ve\nfarklılıklarını aşağıdaki T diyagramına yazınız.\n\nBenzerlikler Farklılıklar\n\n\n\n\n4. Yazma amacınıza ve yazacağınız metnin özelliklerine göre vermek istediğiniz iletiyi aşağıya yazınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n5. Yazacağınız e-postanın amacına ve göndereceğiniz kişiye göre bilgileri düzenleyip içerik taslağını oluş-\nturunuz.\n6. Planınızı oluştururken dil işlevlerinden (rica, koşul, gerekçelendirme vb.) hangilerini kullanacağınıza ka-\nrar veriniz.\n7. Söz varlığını kullanarak karşılaştırma içeren iletiler oluşturup yazınızın içeriğini düzenleyiniz.\n8. Göndereceğiniz ekleri sınıflandırınız.\n9. E-postada doldurulması gereken kısımlara yazılacak bilgileri belirleyiniz ve bu bilgilerin alıcıya uygun dil\nve üslupla yazıldığından emin olunuz.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "text": "İçerik Oluşturabilme",
+      "id": "G11-T1-P76-H01",
+      "type": "heading",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 1
+    },
+    {
+      "id": "G11-T1-P76-ACT01",
+      "type": "activity",
+      "title": "E-posta yazma kuralları",
+      "instruction_ids": [
+        "G11-T1-P76-INST01",
+        "G11-T1-P76-INST02",
+        "G11-T1-P76-INST03",
+        "G11-T1-P76-INST04",
+        "G11-T1-P76-INST05",
+        "G11-T1-P76-INST06",
+        "G11-T1-P76-INST07",
+        "G11-T1-P76-INST08",
+        "G11-T1-P76-INST09"
+      ],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T1-P76-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T1-P74-TEXT01"
+      ],
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 2
+    },
+    {
+      "text": "1. Dinleme / izleme metnini inceleme sürecinde iletişim ve e-posta konusunda öğrendiğiniz bilgilerden\nyararlanınız.",
+      "number": "1",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST01",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 3
+    },
+    {
+      "text": "2. E-postanızın alıcısını göz önünde bulundurarak karşı tarafa aktarabileceğiniz ek belgeleri (müzik, video,\nresim, metin vb.) belirleyiniz. Bu belgelerin nerelerde ve hangi amaçlarla kullanılabileceği hakkında tah-\nminlerde bulununuz.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................",
+      "number": "2",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST02",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 4
+    },
+    {
+      "text": "3. Tahminleriniz doğrultusunda e-posta ile mektup türünü karşılaştırmak üzere bu türlerin benzerlik ve\nfarklılıklarını aşağıdaki T diyagramına yazınız.\n\nBenzerlikler Farklılıklar",
+      "number": "3",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST03",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 5
+    },
+    {
+      "title": "E-posta ve mektup T diyagramı",
+      "columns": [
+        "Benzerlikler",
+        "Farklılıklar"
+      ],
+      "rows": [
+        [
+          "",
+          ""
+        ]
+      ],
+      "related_question_ids": [],
+      "id": "G11-T1-P76-TABLE01",
+      "type": "table",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 6
+    },
+    {
+      "text": "4. Yazma amacınıza ve yazacağınız metnin özelliklerine göre vermek istediğiniz iletiyi aşağıya yazınız.\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................\n......................................................................................................................................................................................................................",
+      "number": "4",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST04",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 7
+    },
+    {
+      "text": "5. Yazacağınız e-postanın amacına ve göndereceğiniz kişiye göre bilgileri düzenleyip içerik taslağını oluş-\nturunuz.",
+      "number": "5",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST05",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 8
+    },
+    {
+      "text": "6. Planınızı oluştururken dil işlevlerinden (rica, koşul, gerekçelendirme vb.) hangilerini kullanacağınıza ka-\nrar veriniz.",
+      "number": "6",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST06",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 9
+    },
+    {
+      "text": "7. Söz varlığını kullanarak karşılaştırma içeren iletiler oluşturup yazınızın içeriğini düzenleyiniz.",
+      "number": "7",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST07",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 10
+    },
+    {
+      "text": "8. Göndereceğiniz ekleri sınıflandırınız.",
+      "number": "8",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST08",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 11
+    },
+    {
+      "text": "9. E-postada doldurulması gereken kısımlara yazılacak bilgileri belirleyiniz ve bu bilgilerin alıcıya uygun dil\nve üslupla yazıldığından emin olunuz.",
+      "number": "9",
+      "instruction_kind": "numbered_step",
+      "id": "G11-T1-P76-INST09",
+      "type": "instruction",
+      "source": {
+        "printed_page": 76,
+        "pdf_page": 77
+      },
+      "order": 12
+    }
+  ]
+}

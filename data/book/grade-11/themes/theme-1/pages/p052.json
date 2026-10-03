@@ -1,0 +1,34 @@
+{
+  "grade": 11,
+  "theme_id": "theme-1",
+  "theme_title": "1. TEMA: BİR DİYECEĞİM VAR!",
+  "printed_page": 52,
+  "pdf_page": 53,
+  "section": "Metin Tahlili-2 (Anlama): Okuma — Mektup / Dilekçe",
+  "source": {
+    "printed_page": 52,
+    "pdf_page": 53,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "text_layer": "Verilen bilgileri ve dilekçe örneğini göz önünde bulundurarak seçtiğiniz bir konuda okul müdürlüğünüze dilekçe yazınız.\n\n\n\n\n“Yaşamın İzinde” temasında tahlil edeceğiniz Huzur adlı romanı, temaya başlamadan önce\nokuyunuz. Kitabınızın 165. sayfasındaki okumayı yönetebilme başlığı altındaki 1, 2 ve 3.\nsorulara yönelik hazırlık yapınız.",
+  "text_layer_note": "PDF içindeki seçilebilir metin katmanı; ana sayfa metnidir. Yapısal kayıtlar blocks dizisinde ayrı tutulur.",
+  "extraction_notes": [],
+  "blocks": [
+    {
+      "id": "G11-T1-P52-ACT01",
+      "type": "activity",
+      "title": "Dilekçe yazma",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T1-P51-EX01"
+      ],
+      "source": {
+        "printed_page": 52,
+        "pdf_page": 53
+      },
+      "order": 1
+    }
+  ]
+}
