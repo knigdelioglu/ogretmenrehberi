@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "GRADE_11_QR_SOURCE_REGISTRY",
+  "course_id": "TDE_11",
+  "policy": "One record per verified external EBA content identity. Each printed QR location is a separate usage location. Local media stays under the repository's ignored sources/local/ path. Download and metadata verification do not imply content review.",
+  "sources": [
+    {
+      "source_id": "QR-EBA-254C08EA3501",
+      "content_type": "video",
+      "book_label": "Seksenler videosuna karekoddan ulaşabilirsiniz.",
+      "eba_title": "SEKSENLER",
+      "permanent_link": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=254c08ea3501e3a701bea75730708e14&resourceType=1&resourceLocation=2",
+      "eba_content_id": "254c08ea3501e3a701bea75730708e14",
+      "local_file": {
+        "path": "sources/local/qr-media/QR-EBA-254C08EA3501.mp4",
+        "sha256": "32a26e05565c9890e04bf2170c93224adbc83ba31bfdee66c571aee4f801a274",
+        "size_bytes": 44298156,
+        "technical_verification": "MP4; H.264 1920x1080; AAC stereo 48 kHz; ffprobe-readable; duration 176.36 s"
+      },
+      "dates": {
+        "eba_metadata_observed": "2026-10-03",
+        "download_verified": "2026-10-03",
+        "content_reviewed": null
+      },
+      "usage_locations": [
+        {
+          "theme": "TEMA_01",
+          "printed_page": 53,
+          "pdf_page": 54,
+          "book_heading": "Edebiyat Atölyesi-1 — Drama hazırlığı",
+          "source_record_ids": [
+            "T01-S0057"
+          ],
+          "question_ids": [
+            "T1-P53-Q01",
+            "T1-P53-Q02"
+          ]
+        }
+      ],
+      "transcript_path": null,
+      "review_notes_path": null,
+      "work_status": "downloaded_metadata_verified_content_review_deferred",
+      "remaining_gaps": [
+        "Video içeriği kullanıcı tarafından daha sonra incelenecek; videoya bağlı yanıtlar içerik bakımından doğrulanmış sayılmamalıdır."
+      ]
+    },
+    {
+      "source_id": "QR-EBA-29BF4F293D53",
+      "content_type": "video",
+      "book_label": "Değişen İletişim Araçlarının Hayatımızdaki Yeri videosuna karekoddan ulaşabilirsiniz.",
+      "eba_title": "DEĞİŞEN İLETİŞİM ARAÇLARININ HAYATIMIZDAKİ YERİ",
+      "permanent_link": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=29bf4f293d533dd8a69466ad7e00f8d0&resourceType=1&resourceLocation=2",
+      "eba_content_id": "29bf4f293d533dd8a69466ad7e00f8d0",
+      "local_file": {
+        "path": "sources/local/qr-media/QR-EBA-29BF4F293D53.mp4",
+        "sha256": "5fb70a9aa9371c060df8b4b788a276c6cefdbe1f2e01e01816074f3473ccde80",
+        "size_bytes": 82041196,
+        "technical_verification": "İndirilen MP4 dosyası ffprobe ve dosya okuma kontrolünden geçti"
+      },
+      "dates": {
+        "eba_metadata_observed": "2026-10-03",
+        "download_verified": "2026-10-03",
+        "content_reviewed": null
+      },
+      "usage_locations": [
+        {
+          "theme": "TEMA_01",
+          "printed_page": 64,
+          "pdf_page": 65,
+          "book_heading": "Metni Dinleyelim / İzleyelim — İletişim ve E-Posta Konulu Çok Modlu Metin",
+          "source_record_ids": [
+            "T01-S0074",
+            "T01-S0075",
+            "T01-S0076",
+            "T01-S0077",
+            "T01-S0078",
+            "T01-S0079",
+            "T01-S0081",
+            "T01-S0084",
+            "T01-S0085",
+            "T01-S0086",
+            "T01-S0087",
+            "T01-S0088",
+            "T01-S0089"
+          ],
+          "question_ids": [
+            "T1-P64-Q01",
+            "T1-P64-PERF01",
+            "T1-P64-PERF02",
+            "T1-P64-PERF03",
+            "T1-P66-Q01",
+            "T1-P66-Q04",
+            "T1-P66-Q05",
+            "T1-P67-Q06",
+            "T1-P67-Q07",
+            "T1-P67-Q08",
+            "T1-P67-Q09"
+          ]
+        }
+      ],
+      "transcript_path": null,
+      "review_notes_path": null,
+      "work_status": "downloaded_metadata_verified_content_review_deferred",
+      "remaining_gaps": [
+        "Video içeriği kullanıcı tarafından daha sonra incelenecek; videoya bağlı yanıtlar içerik bakımından doğrulanmış sayılmamalıdır."
+      ]
+    },
+    {
+      "source_id": "QR-EBA-E43890DFD82A",
+      "content_type": "video",
+      "book_label": "Mektup Türünün Serüveni adlı videoya karekoddan ulaşabilirsiniz.",
+      "eba_title": "MEKTUP TÜRÜNÜN SERÜVENİ",
+      "permanent_link": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=e43890dfd82a3b5c7823d3b0fba2b627&resourceType=1&resourceLocation=2",
+      "eba_content_id": "e43890dfd82a3b5c7823d3b0fba2b627",
+      "local_file": {
+        "path": "sources/local/qr-media/QR-EBA-E43890DFD82A.mp4",
+        "sha256": "e104830a7a29d932925529487bb312e4eaa85b33a3f5fc7cd1897a86b9cc6bf3",
+        "size_bytes": 72273904,
+        "technical_verification": "MP4; ffprobe-readable; streams: video=h264, audio=aac; duration 284.63 s"
+      },
+      "dates": {
+        "eba_metadata_observed": "2026-10-03",
+        "download_verified": "2026-10-03",
+        "content_reviewed": null
+      },
+      "usage_locations": [
+        {
+          "theme": "TEMA_01",
+          "printed_page": 43,
+          "pdf_page": 44,
+          "book_heading": "Fark Edelim / Karşılaştıralım — mektup türü",
+          "source_record_ids": [
+            "T01-S0034"
+          ],
+          "question_ids": [
+            "T1-P43-Q01"
+          ]
+        }
+      ],
+      "transcript_path": null,
+      "review_notes_path": null,
+      "work_status": "downloaded_metadata_verified_content_review_deferred",
+      "remaining_gaps": [
+        "Video içeriği kullanıcı tarafından daha sonra incelenecek; videoya bağlı yanıtlar içerik bakımından doğrulanmış sayılmamalıdır."
+      ]
+    },
+    {
+      "source_id": "QR-EBA-BFB2729458DF",
+      "content_type": "video",
+      "book_label": "Geçmişten Günümüze İletişim Araçları içeriğine karekoddan ulaşabilirsiniz.",
+      "eba_title": "GEÇMİŞTEN GÜNÜMÜZE İLETİŞİM ARAÇLARI",
+      "permanent_link": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=bfb2729458dff5255e99c1d2defe73a6&resourceType=1&resourceLocation=2",
+      "eba_content_id": "bfb2729458dff5255e99c1d2defe73a6",
+      "local_file": {
+        "path": "sources/local/qr-media/QR-EBA-BFB2729458DF.mp4",
+        "sha256": "234198772baad09c0dc0cf5ee1a5e9d0ca9bff3567e58f04eaedcf447dbec559",
+        "size_bytes": 13839751,
+        "technical_verification": "MP4; H.264 1920x1080; AAC stereo 48 kHz; QuickTime’da açıldı; ffprobe-readable; duration 98.60 s"
+      },
+      "dates": {
+        "eba_metadata_observed": "2026-10-03",
+        "download_verified": "2026-10-03",
+        "content_reviewed": null
+      },
+      "usage_locations": [
+        {
+          "theme": "TEMA_01",
+          "printed_page": 67,
+          "pdf_page": 68,
+          "book_heading": "Ders Dışı Etkinlik — İletişim ve E-Posta",
+          "source_record_ids": [
+            "T01-S0130"
+          ],
+          "question_ids": []
+        }
+      ],
+      "transcript_path": null,
+      "review_notes_path": null,
+      "work_status": "downloaded_metadata_verified_content_review_deferred",
+      "remaining_gaps": [
+        "Video içeriği ve altyazılar kullanıcı tarafından daha sonra incelenecek; içerik değerlendirmesi yapılmadı."
+      ]
+    },
+    {
+      "source_id": "QR-EBA-2952F505E3A7",
+      "content_type": "video",
+      "book_label": "Olvido metnine karekoddan ulaşabilirsiniz.",
+      "eba_title": "Olvido",
+      "permanent_link": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=2952f505e3a7923fe38ce31c2bd92871&resourceType=1&resourceLocation=2",
+      "eba_content_id": "2952f505e3a7923fe38ce31c2bd92871",
+      "local_file": {
+        "path": "sources/local/qr-media/QR-EBA-2952F505E3A7.mp4",
+        "sha256": "fe330ca59b5a35a623625f2ffdbe8a4a03738e5b73245576d388dab298a1b5c9",
+        "size_bytes": 18655812,
+        "technical_verification": "MP4; H.264 1920x1080; AAC stereo 44.1 kHz; ffprobe-readable; duration 83.22 s; QuickTime’da açıldı"
+      },
+      "dates": {
+        "eba_metadata_observed": "2026-10-03",
+        "download_verified": "2026-10-03",
+        "content_reviewed": null
+      },
+      "usage_locations": [
+        {
+          "theme": "TEMA_01",
+          "printed_page": 83,
+          "pdf_page": 84,
+          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları — Olvido çok modlu metni",
+          "source_record_ids": [
+            "T01-S0129"
+          ],
+          "question_ids": [
+            "T1-P83-Q13"
+          ]
+        }
+      ],
+      "transcript_path": null,
+      "review_notes_path": null,
+      "work_status": "downloaded_metadata_verified_content_review_deferred",
+      "remaining_gaps": [
+        "Video içeriği ve altyazılar kullanıcı tarafından daha sonra incelenecek; içerik değerlendirmesi yapılmadı."
+      ]
+    }
+  ]
+}
