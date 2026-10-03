@@ -70,6 +70,12 @@
           "Yazma sürecini aksatabilecek engelleri ortadan kaldırın.",
           "Amaç ve alıcıya uygun yazma stratejisini seçin.",
           "Seçtiğiniz stratejiyi uygulanabilir bir plana dönüştürün."
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.75 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=75"
+          }
         ]
       }
     },
@@ -214,7 +220,120 @@
       "prompt": "E-postanızı değerlendirme ölçütleriyle gözden geçirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Taslağınızı kitaptaki ölçütlere ve öz değerlendirme formuna göre gözden geçirin. Karekod bağlantısındaki dereceli puanlama anahtarına erişebiliyorsanız onu da kullanın; göremediğiniz ölçüt veya puanları varsaymayın. “Kısmen” ya da “Hayır” işaretlediğiniz bir ölçütü seçin, taslağınızdan kanıt gösterip tek bir düzeltme hedefi belirleyin ve yeniden değerlendirin.",
+        "lead": "E-posta rubriğindeki her ölçüt, dört başarı düzeyi ve puan aralığıyla gösterilmiştir.",
+        "sections": [
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Metin, Türkçenin doğru kullanımı açısından yetersizdir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Metin, Türkçenin doğru kullanımı açısından kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Metin, Türkçenin doğru kullanımı açısından yeterlidir"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Metin, Türkçenin doğru kullanımı açısından oldukça başarılıdır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Dil ve üslup (18 puan). Metinde dil ve üslup doğru ve yerinde kullanılmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Dil ve üslup (18 puan). Metinde dil ve üslup kısmen doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "İyi · 11–14 puan",
+            "body": "Ölçüt: Dil ve üslup (18 puan). Metinde dil ve üslup doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "Çok iyi · 15–18 puan",
+            "body": "Ölçüt: Dil ve üslup (18 puan). Metinde kullanılan üslup oldukça başarılır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından başarılıdır"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından oldukça başarılıdır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Gerekli durumlarda öznel ve nesnel ifadelere yer verme (16 puan). Metinde öznel ve nesnel ifadeler, doğru ve yerinde kullanılmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Gerekli durumlarda öznel ve nesnel ifadelere yer verme (16 puan). Metinde öznel ve nesnel ifadeler, kısmen doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Gerekli durumlarda öznel ve nesnel ifadelere yer verme (16 puan). Metinde öznel ve nesnel ifadeler, doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Gerekli durumlarda öznel ve nesnel ifadelere yer verme (16 puan). Metinde öznel ve nesnel ifadeler; doğru, yerinde ve başarılı bir biçimde kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Başlık ve hitap kullanımı  (18 puan). Metinde amaç ve içeriğe uygun bir başlık ve hitap kullanılmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Başlık ve hitap kullanımı  (18 puan). Metinde amaç ve içeriğe kısmen uygun bir başlık ve hitap kullanılmıştır"
+          },
+          {
+            "title": "İyi · 11–14 puan",
+            "body": "Ölçüt: Başlık ve hitap kullanımı  (18 puan). Metinde amaç ve içeriğe uygun bir başlık ve hitap kullanılmıştır"
+          },
+          {
+            "title": "Çok iyi · 15–18 puan",
+            "body": "Ölçüt: Başlık ve hitap kullanımı  (18 puan). Metinde amaç ve içeriğe oldukça uygun bir başlık ve hitap kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (16 puan). Metinde yazım ve noktalama kurallarına uygunluk alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (16 puan). Metin yazım ve noktalama kurallarına kısmen uygun yazılmıştır"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (16 puan). Metin yazım ve noktalama kurallarına uygun yazılmıştır"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (16 puan). Metin yazım ve noktalama kurallarına oldukça uygun yazılmıştır"
+          },
+          {
+            "title": "Toplam puan ve hesaplama",
+            "body": "Her ölçütten seçtiğiniz puanları toplayınız. altı ölçüt (Türkçenin doğru kullanımı, özgünlük, dil ve üslup, gerekli durumlarda öznel ve nesnel ifadelere yer verme, başlık ve hitap kullanımı, yazım ve noktalama) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 6, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.78 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=78"
+          },
+          {
+            "label": "E-posta yazma performans görevi dereceli puanlama anahtarı",
+            "url": "assets/assessment-documents/19XU4J2K.docx",
+            "download": true
+          }
+        ],
         "items": [
           "Öz değerlendirme formunda “Kısmen” veya “Hayır” işaretlediğiniz bir ölçütü seçin.",
           "Taslağınızdan bu ölçüte ilişkin belirli bir sözcük, cümle ya da bölüm gösterin.",

@@ -1,6 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  resolveVocabularyAnswerText,
+  resolveWebPresentation as resolveWebPresentationMetadata,
+  validateWebPresentationIndex
+} from "./web-presentation.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
@@ -80,6 +85,14 @@ function loadThemeData(themeCode) {
   const answerById = new Map(
     answers.map((entry) => [entry.question_id, entry])
   );
+  const webPresentationPath = path.join(
+    presentationRoot,
+    `theme-${themeNumber}`,
+    "web-presentation.json"
+  );
+  const webPresentation = themeNumber >= 1 && themeNumber <= 4 && fs.existsSync(webPresentationPath)
+    ? readJson(webPresentationPath)
+    : null;
 
   if (sourceById.size !== sourceIndex.records.length) {
     fail(`Duplicate source_record_id detected in theme ${themeNumber}`);
@@ -96,12 +109,26 @@ function loadThemeData(themeCode) {
     );
   }
 
+  if (webPresentation) {
+    try {
+      validateWebPresentationIndex(webPresentation, {
+        themeNumber,
+        themeId: sourceIndex.theme_id,
+        answerById
+      });
+    } catch (error) {
+      fail(error.message);
+    }
+  }
+
   const data = {
     themeCode,
     themeNumber,
     sourceIndex,
     answerIndex,
     answers,
+    webPresentation,
+    matchedWebPresentationAnswers: new Set(),
     sourceById,
     answerById
   };
@@ -169,19 +196,25 @@ function resolveSectionsLayout(step) {
 // answer_text: "start" | "end" — cevap özet metninin ayrıntılı bölümlerden önce mi sonra mı açılacağı.
 // interleave: true veya { source, group_size, order } — küçük grupları sırayla açar.
 // omit_sections: sunumda görev ekranında zaten görünen answer_sections başlıkları.
-function resolvePresentation(step, answer) {
+function resolvePresentation(step, answer, themeData) {
   const presentation = step.presentation;
-  if (presentation === undefined) return undefined;
+  const web = resolveWebPresentationMetadata(step, answer, themeData);
+  const webAnswerText = resolveVocabularyAnswerText(step, answer, themeData);
+  if ((web || webAnswerText) && Object.hasOwn(themeData.webPresentation.answers, answer.question_id)) {
+    themeData.matchedWebPresentationAnswers.add(answer.question_id);
+  }
+  if (presentation === undefined && web === undefined && webAnswerText === undefined) return undefined;
+  const sourcePresentation = presentation ?? {};
   const allowed = new Set(["answer_text", "interleave", "omit_sections"]);
-  for (const key of Object.keys(presentation)) {
+  for (const key of Object.keys(sourcePresentation)) {
     if (!allowed.has(key)) fail(`Unsupported presentation key "${key}" for ${step.id}`);
   }
-  if (presentation.answer_text !== undefined && !["start", "end"].includes(presentation.answer_text)) {
+  if (sourcePresentation.answer_text !== undefined && !["start", "end"].includes(sourcePresentation.answer_text)) {
     fail(`Unsupported presentation.answer_text for ${step.id}`);
   }
   const sections = answer?.answer_sections;
-  if (presentation.interleave && typeof presentation.interleave === "object") {
-    const config = presentation.interleave;
+  if (sourcePresentation.interleave && typeof sourcePresentation.interleave === "object") {
+    const config = sourcePresentation.interleave;
     const configKeys = new Set(["source", "group_size", "order"]);
     for (const key of Object.keys(config)) {
       if (!configKeys.has(key)) fail(`Unsupported presentation.interleave key "${key}" for ${step.id}`);
@@ -201,15 +234,19 @@ function resolvePresentation(step, answer) {
       config.order.some((key) => !keys.includes(key)))) {
       fail(`presentation.interleave.order must contain unique ${config.source} keys: ${step.id}`);
     }
-  } else if (presentation.interleave && (!sections || Array.isArray(sections))) {
+  } else if (sourcePresentation.interleave && (!sections || Array.isArray(sections))) {
     fail(`presentation.interleave needs keyed answer_sections: ${step.id}`);
   }
-  for (const key of presentation.omit_sections ?? []) {
+  for (const key of sourcePresentation.omit_sections ?? []) {
     if (!sections || Array.isArray(sections) || !(key in sections)) {
       fail(`presentation.omit_sections key not found for ${step.id}: ${key}`);
     }
   }
-  return { ...presentation };
+  return {
+    ...sourcePresentation,
+    ...(web ? { web } : {}),
+    ...(webAnswerText ? { web_answer_text: webAnswerText } : {})
+  };
 }
 
 function resolveDisplayPrompt(step, source, answer, answerStepCountBySource) {
@@ -304,7 +341,10 @@ function buildLesson(flowPath) {
       }
     }
     for (const source of step.content?.sources ?? []) {
-      if (!source.label?.trim() || !/^https:\/\//i.test(source.url ?? "")) {
+      const localDownload = source.download === true &&
+        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.docx$/i.test(source.url ?? "");
+      if (!source.label?.trim() || (!/^https:\/\//i.test(source.url ?? "") && !localDownload) ||
+        (source.download !== undefined && source.download !== true)) {
         fail(`Malformed presentation source link in ${flowName}/${step.id}`);
       }
     }
@@ -415,7 +455,7 @@ function buildLesson(flowPath) {
       layout: step.layout,
       density,
       sections_layout: sectionsLayout,
-      presentation: resolvePresentation(step, answer),
+      presentation: resolvePresentation(step, answer, themeData),
       reveal_order: revealOrder,
       display_prompt: displayPrompt.text,
       display_prompt_mode: displayPrompt.mode,
@@ -523,6 +563,14 @@ if (!flowPaths.length) {
 }
 
 const lessons = flowPaths.map((flowPath) => buildLesson(flowPath));
+
+for (const themeData of themeDataCache.values()) {
+  for (const answerId of Object.keys(themeData.webPresentation?.answers ?? {})) {
+    if (!themeData.matchedWebPresentationAnswers.has(answerId)) {
+      fail(`Web presentation override has no production lesson step: ${answerId}`);
+    }
+  }
+}
 
 const lessonIds = new Set();
 const lessonSlugs = new Set();

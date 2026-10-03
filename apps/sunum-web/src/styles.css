@@ -1367,3 +1367,20 @@ button {
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
+
+.source-links a.source-download {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28em 0.55em;
+  border-radius: 0.35em;
+  background: var(--accent);
+  color: var(--paper);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .sections {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

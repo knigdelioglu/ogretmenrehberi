@@ -1,0 +1,1146 @@
+{
+  "schema_version": "1.1.0",
+  "theme_id": "TEMA_04",
+  "defaults": {
+    "section_units": "one-per-section",
+    "structured_answer_text": "omit-summary",
+    "array_answer_units": "one-list"
+  },
+  "answers": {
+    "T4-P238-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T4-P239-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Sanatsal dönüştürme"
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Hayatla ilişkisi",
+            "text": "Sanatsal metin, hayatı olduğu gibi aktaran bir kayıt değildir;",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P252-PERF02BC": {
+      "units": [
+        {
+          "id": "feature-choice",
+          "sections": [
+            "2b. Beni etkileyen özellik"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Metinden seçilebilecek kanıtlar",
+              "contains_quote_indexes": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "id": "personal-qualities",
+          "sections": [
+            "2c. Tanınmak istediğim özellik"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "feature-choice"
+        },
+        {
+          "index": 1,
+          "unit": "feature-choice"
+        },
+        {
+          "index": 2,
+          "unit": "feature-choice"
+        },
+        {
+          "index": 3,
+          "unit": "feature-choice"
+        }
+      ]
+    },
+    "T4-P252-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "İletinin yorumu"
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "İletinin yorumu",
+            "text": "Sinan’ın farklı yapılara ve harabelere dikkatle bakması bilgiyi, gemi yapımındaki zorlukları sabırla aşması da azim ve çalışkanlığı somutlaştırır.",
+            "position": "end"
+          },
+          {
+            "unit": "Başka özellikler",
+            "text": "Başarıyı destekleyebilecek başka özelliklere merak, öz disiplin, sorumluluk, iş birliği ve hatalardan öğrenme örnek verilebilir.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P254-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Ben, Mimar Sinan → dram"
+        }
+      ]
+    },
+    "T4-P257-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "examples"
+        },
+        {
+          "index": 1,
+          "unit": "examples"
+        },
+        {
+          "index": 2,
+          "unit": "examples"
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "examples",
+            "text": "Monolog için karakterin başka bir kişiyle karşılıklı konuşmadan kendi düşüncesini dile getirdiği bölüm;",
+            "position": "start"
+          },
+          {
+            "unit": "examples",
+            "text": "diyalog için iki kişinin karşılıklı replikleri seçilmelidir.",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "examples",
+          "sections": [
+            "Monolog örneği"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Diyalog örneği",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P259-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        },
+        {
+          "index": 1,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T4-P259-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T4-P260-Q04": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T4-P260-PERF01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "presentation-and-evidence"
+        },
+        {
+          "index": 1,
+          "unit": "presentation-and-evidence"
+        },
+        {
+          "index": 2,
+          "unit": "presentation-and-evidence"
+        },
+        {
+          "index": 3,
+          "unit": "presentation-and-evidence"
+        }
+      ],
+      "units": [
+        {
+          "id": "history-group",
+          "sections": [
+            "Tarih grubu"
+          ]
+        },
+        {
+          "id": "psychology-group",
+          "sections": [
+            "Psikoloji grubu"
+          ]
+        },
+        {
+          "id": "sociology-group",
+          "sections": [
+            "Sosyoloji grubu"
+          ]
+        },
+        {
+          "id": "presentation-and-evidence",
+          "sections": [
+            "Sunum ve değerlendirme"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Metinden örnek kanıtlar",
+              "contains_quote_indexes": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P261-Q01": {
+      "units": [
+        {
+          "id": "conflict-and-evidence",
+          "sections": [
+            "İç gerilim"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Sinan ↔ Ayasofya üzerine üstünlük iddiası",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Sinan ↔ zor koşullar ve talih",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "theme-and-effect",
+          "sections": [
+            "Tematik karşıtlık: kalıcı eser ↔ ölümlülük",
+            "Metne etkisi"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "conflict-and-evidence"
+        },
+        {
+          "index": 1,
+          "unit": "conflict-and-evidence"
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "conflict-and-evidence",
+            "text": "Oyunda kişiler arasında açık bir kavga yoktur;",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P262-PERF01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "criteria-and-choice"
+        },
+        {
+          "index": 1,
+          "unit": "criteria-and-choice"
+        },
+        {
+          "index": 2,
+          "unit": "criteria-and-choice"
+        },
+        {
+          "index": 3,
+          "unit": "criteria-and-choice"
+        }
+      ],
+      "units": [
+        {
+          "id": "criteria-and-choice",
+          "sections": [
+            "Benim ölçütüm",
+            "Metinden örneğim",
+            "Beğendim / beğenmedim",
+            "gerekcem"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Günlük insan ilişkileri için olası kanıtlar",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P262-PERFQ01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "character-choice"
+        },
+        {
+          "index": 1,
+          "unit": "character-choice"
+        },
+        {
+          "index": 2,
+          "unit": "character-choice"
+        },
+        {
+          "index": 3,
+          "unit": "character-choice"
+        }
+      ],
+      "units": [
+        {
+          "id": "character-choice",
+          "sections": [
+            "Canlandırmak istediğim karakter",
+            "Metindeki kanıt",
+            "Seçme gerekçem"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Seçim için örnek kanıt havuzu",
+              "contains_quote_indexes": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P269-Q07": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        },
+        {
+          "index": 1,
+          "unit": "answer"
+        },
+        {
+          "index": 2,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T4-P272-PERF02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "comparison-and-choice"
+        },
+        {
+          "index": 1,
+          "unit": "comparison-and-choice"
+        },
+        {
+          "index": 2,
+          "unit": "comparison-and-choice"
+        },
+        {
+          "index": 3,
+          "unit": "comparison-and-choice"
+        }
+      ],
+      "units": [
+        {
+          "id": "comparison-and-choice",
+          "sections": [
+            "Tiyatrodan kanıtım",
+            "Hikâyeden kanıtım",
+            "tercihim",
+            "gerekcem"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Örnek kanıt havuzu",
+              "contains_quote_indexes": [
+                0,
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P277-PERF02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "values-response"
+        }
+      ],
+      "units": [
+        {
+          "id": "values-response",
+          "sections": [
+            "Seçtiğim söz veya davranış",
+            "Değer yargımla neden çelişiyor?",
+            "Benzer durumda benim tepkim",
+            "Metinden kanıt"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Seçim için örnek metin kanıtları",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P279-PERF01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "text-evaluation"
+        },
+        {
+          "index": 1,
+          "unit": "text-evaluation"
+        }
+      ],
+      "units": [
+        {
+          "id": "text-evaluation",
+          "sections": [
+            "Olası ölçütler",
+            "Seçtiğim ölçüt",
+            "Beğendim / beğenmedim",
+            "Metinden kanıt",
+            "gerekcem",
+            "Kitaptaki örnek ölçüt"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Ölçütlere göre örnek metin kanıtları",
+              "contains_quote_indexes": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P292-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "source-based-conclusion"
+        },
+        {
+          "index": 1,
+          "unit": "source-based-conclusion"
+        },
+        {
+          "index": 2,
+          "unit": "source-based-conclusion"
+        }
+      ],
+      "units": [
+        {
+          "id": "source-based-conclusion",
+          "sections": [
+            "Kaynağın desteklediği çıkarım",
+            "Günlük yaşamdan genel örnekler"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Kaynakta belirtilen sonuçlar",
+              "contains_quote_indexes": [
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T4-P303-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        },
+        {
+          "index": 1,
+          "unit": "answer"
+        },
+        {
+          "index": 2,
+          "unit": "answer"
+        },
+        {
+          "index": 3,
+          "unit": "answer"
+        },
+        {
+          "index": 4,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T4-P304-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Gerekçe"
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Gerekçe",
+            "text": "Doğru seçenek: A",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P256-TABLE01": {
+      "units": [
+        {
+          "id": "structure-elements",
+          "sections": [
+            "Kişiler",
+            "Yer/mekân",
+            "Zaman",
+            "Çatışmalar",
+            "Dramatik örgü"
+          ]
+        },
+        {
+          "id": "structure-relations",
+          "sections": [
+            "Kişiler ve mekân",
+            "Mekân ve zaman",
+            "Kişiler ve çatışmalar",
+            "Çatışmalar ve dramatik örgü"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "structure-elements",
+            "text": "Grup, kullandığı kanıtları oyunun farklı sahnelerinden seçebilir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P272-Q01": {
+      "units": [
+        {
+          "id": "metin-and-tur",
+          "sections": [
+            "İçerik",
+            "Tür",
+            "Şekil",
+            "Dönem"
+          ]
+        },
+        {
+          "id": "yapi-and-iletim",
+          "sections": [
+            "Yapı unsurları",
+            "Dil ve üslup",
+            "İleti"
+          ]
+        }
+      ]
+    },
+    "T4-P278-TABLE01": {
+      "units": [
+        {
+          "id": "workplace-and-generations",
+          "sections": [
+            "Yaş ve konumları farklı çalışanların ilişkileri",
+            "Meslek yaşamında rollerin zamanla değişmesi",
+            "Anlatıcının kuşak değişimiyle yüzleşmesi"
+          ]
+        },
+        {
+          "id": "aging-and-mortality",
+          "sections": [
+            "Yaşlılık, sağlık durumu ve ani ölüm",
+            "Anlatıcının yaşlılık, ölüm ve meslek konumuna ilişkin bilinçaltı çatışmaları",
+            "Ölüm karşısında yaşamı sorgulama"
+          ]
+        },
+        {
+          "id": "modern-pace",
+          "sections": [
+            "İhtiyar memurun modern yaşamın koşuşturmasını eleştirmesi"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "workplace-and-generations",
+            "text": "Bir ayrıntı birden fazla disiplinle ilişkilendirilebilir;",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P279-Q01": {
+      "units": [
+        {
+          "id": "theme-and-symbols",
+          "sections": [
+            "Varoluşçu tema",
+            "Simgeler",
+            "Zaman–mekân"
+          ]
+        },
+        {
+          "id": "poetic-form",
+          "sections": [
+            "Yoğun anlatım",
+            "Şiirsel düzyazı",
+            "Diyalog"
+          ]
+        },
+        {
+          "id": "reader-and-openness",
+          "sections": [
+            "Okur katılımı",
+            "Açık yapıt"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "theme-and-symbols",
+            "text": "Ferit Edgü’nün biyografisinde öne çıkan yalnızlık, yabancılaşma ve varoluşsal kaygılar ile inceleme parçasında anlatılan yoğun ve açık uçlu küçürek öykü anlayışı Merdiven’de gündelik bir karşılaşma üzerinden görünür olur.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P240-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "fictional-replies",
+            "text": "Mimar Sinan’dan alınmış tarihî alıntılar değildir.",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "fictional-replies",
+          "sections": [
+            "Diyalog örneği",
+            "Monolog örneği",
+            "Sahneleme"
+          ]
+        }
+      ]
+    },
+    "T4-P247-VOC01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "çağdaş",
+            "text": "Karekodla sözlükten doğrulama yapılırken sözcüğün bu bağlamdaki anlamı esas alınabilir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P249-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Gerçek gözlem veya eser",
+            "text": "Bu etkinlikte tek bir hazır grup sonucu yoktur.",
+            "position": "start"
+          },
+          {
+            "unit": "Grup sonucu",
+            "text": "Bu çıkarımlar sosyal hayat gözlemleri ve daha önce okunan ya da izlenen tiyatro eserleriyle ilişkilendirilmelidir.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P250-TABLE01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Acemi Ocağı",
+            "text": "Aynı ifadeye ilişkin gerekçeli farklı yorumlar da mümkün olabilir.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P251-Q02A": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Mimar Sinan (yapıları inceleme)",
+            "text": "uygun kanıtlarla farklı özellikler önerebilirsiniz.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P258-GRAM01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Kendisini, Edirne’de çok acı bir haberin beklediğini henüz bilmiyordu.",
+            "text": "Cümlelerin uzunluğu ve kuruluşu değiştikçe anlatımın ritmi de değişir: kısa soru ve ünlemler vurgu ve sahne etkisi yaratırken daha uzun cümleler olay ve düşünceyi ayrıntılandırır.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P264-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Okuma amacı ve tahmin",
+            "text": "“Merdiven” metnini okumadan önceki tahmin ayrı tutulmalıdır.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P266-VOC01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "yeni yetme",
+            "text": "Önerilen karşılıklar anlamı koruyabilse de özellikle “yeni yetme” gibi ifadelerde anlatımın tonunu değiştirebilir.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P267-VOC02": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Farklı anlamda kullanım örnekleri",
+            "text": "Bunlar olası örneklerdir; aynı anlam ayrımını gösteren başka cümleler de kabul edilir.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P268-VOC03": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Çağrışımlar",
+            "text": "Merdiven önce anlatıcının iş yerine çıkıp inmesini sağlayan gerçek bir mekândır.",
+            "position": "start"
+          },
+          {
+            "unit": "İlişki",
+            "text": "Öyküde yol verme hareketinin merdivende birkaç kez yinelenmesi, yaş ve kuşak farkına dayalı ilişkileri de görünür kılar.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P274-ANALYSIS01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Anlatıcı",
+            "text": "Karakter çözümlemesinde kişilerin söyledikleri ile anlatıcının onlar hakkındaki yorumlarını ayırmak gerekir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P275-Q02A": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Mimari",
+            "text": "Binada asansör varsa kişiler merdivende karşılaşmayabilir; bu durumda yol verme hareketi ve anlatıcının yukarı-aşağı yön değişimi başka bir yerde kurulmak zorunda kalır.",
+            "position": "start"
+          },
+          {
+            "unit": "Teknoloji",
+            "text": "Asansörde beklemek, kat düğmelerine basmak veya telefondan haber almak yeni karşılaşma biçimleri yaratabilir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P276-CONFLICT01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "İnsanın kendisiyle çatışması",
+            "text": "Öykünün çatışmaları kısa karşılaşmalarla anlatıcının kararını değiştirir;",
+            "position": "start"
+          },
+          {
+            "unit": "Genç memura yol verme",
+            "text": "bazı gelişmeler gerçekleşmemiş olsaydı son da farklılaşabilirdi.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P277-PERF00": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "counterfactuals",
+            "text": "Aşağıdaki alternatifler olası kurgu önerileridir.",
+            "position": "start"
+          },
+          {
+            "unit": "counterfactuals",
+            "text": "değişikliğin anlatıcının kararı ve öykünün sonu üzerindeki etkisini neden–sonuç ilişkisiyle açıklayabilirsiniz.",
+            "position": "end"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "counterfactuals",
+          "sections": [
+            "Anlatıcı ihtiyar memurla karşılaşmasaydı",
+            "İhtiyar memur ölmemiş olsaydı",
+            "Anlatıcı genç memurla karşılaşmasaydı"
+          ]
+        }
+      ]
+    },
+    "T4-P280-PERF02": {
+      "units": [
+        {
+          "id": "character-foundation",
+          "sections": [
+            "Karakterin amacı ve ilişkileri"
+          ]
+        },
+        {
+          "id": "performance-expression",
+          "sections": [
+            "Ses tonu, vurgu ve tempo",
+            "Jest, mimik ve beden dili",
+            "Sahne konumu ve diğer oyuncularla etkileşim"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "character-foundation",
+            "text": "Önce karakterin ait olduğu toplumsal sınıfı, milliyeti ve tarihsel ortamı; onu eyleme götüren duygu ve amaçları; fiziksel özelliklerini ve yaşadığı zamanı, şehri, yaşam çevresini anlamaya çalışırdım.",
+            "position": "start"
+          },
+          {
+            "unit": "character-foundation",
+            "text": "Ardından “Karakterin yerinde olsaydım ne yapardım?” sorusuyla empati kurup rolün iç yaşamını oluştururdum.",
+            "position": "end"
+          },
+          {
+            "unit": "performance-expression",
+            "text": "Rolü inceleme → rolün yaşamını kurma → canlandırma aşamalarını izleyerek",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P286-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "observable-checklist",
+            "text": "Kontrol listesi ancak izleme sırasında gözlenen davranışlara göre doldurulabilir;",
+            "position": "start"
+          },
+          {
+            "unit": "observable-checklist",
+            "text": "tüm maddelere önceden “Evet” ya da “Hayır” cevabı verilmez",
+            "position": "end"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "observable-checklist",
+          "sections": [
+            "Dikkat ve anlama",
+            "Saygı ve ön yargı",
+            "Diğer dinleyiciler",
+            "Söz alma",
+            "Dikkat dağıtıcı davranışlar"
+          ]
+        }
+      ]
+    },
+    "T4-P287-VOC01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "fedakârlık",
+            "text": "videodaki kesin bağlamı kontrol etmek için karekod içeriği ve sözlük adımı birlikte kullanılmalıdır.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P288-Q02": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Tema",
+            "text": "Tema, konu, ana düşünce ve yardımcı düşünceler videonun gerçek içeriği izlenerek belirlenmelidir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P295-Q10": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Sosyal özellikler",
+            "text": "tek bir sahneyi bütün bir döneme veya Anadolu toplumuna genellemeyin.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P299-Q03": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Düzen",
+            "text": "Ögeler birbirini tekrar etmek yerine tamamlamalı; mesaj-imge bütünlüğü ve sözel hiyerarşi korunmalıdır.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T4-P304-Q03": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Gerekçe",
+            "text": "Doğru seçenek: A",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T4-P305-Q05": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "poster-image-choice",
+            "text": "Afişiniz için bir, birkaç veya tüm görselleri seçebilirsiniz.",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "poster-image-choice",
+          "sections": [
+            "Görsel 1 — çiçekli dal",
+            "Görsel 2 — apartmanlar",
+            "Görsel 3 — açık havada birlikte vakit geçiren yetişkin ve çocuklar",
+            "Görsel 4 — orman yangınına müdahale görüntüsü"
+          ]
+        }
+      ]
+    },
+    "T4-P306-Q08": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "inference-result",
+            "text": "Doğru seçenek: B (II ve III)",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "inference-result",
+          "sections": [
+            "Kesitlerden çıkarılabilenler",
+            "Kesitlerden çıkarılamayanlar"
+          ]
+        }
+      ]
+    },
+    "T4-P306-Q09": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "inference-result",
+            "text": "Doğru seçenek: A",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "inference-result",
+          "sections": [
+            "Metinde değiştiği belirtilen etkenler",
+            "A seçeneği"
+          ]
+        }
+      ]
+    },
+    "T4-P307-Q10": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "inference-result",
+            "text": "Doğru seçenek: B",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "inference-result",
+          "sections": [
+            "Metindeki dayanak",
+            "B seçeneği"
+          ]
+        }
+      ]
+    },
+    "T4-P307-Q11": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "inference-result",
+            "text": "Doğru seçenek: B",
+            "position": "start"
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "inference-result",
+          "sections": [
+            "Tablodaki değişim",
+            "Desteklenen sonuç",
+            "Tablonun göstermediği"
+          ]
+        }
+      ]
+    }
+  }
+}

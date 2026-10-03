@@ -12,6 +12,8 @@ import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { insertThinkingReveal } from "../src/reveal-sequence.js";
 import { collectThinkingRecords, thinkingRecordKey } from "./thinking-data.mjs";
+import { discoverLocalModuleGraph } from "./offline-module-graph.mjs";
+import { assessmentFormsForLessons } from "./assessment-forms.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
@@ -57,6 +59,12 @@ if (password.length < 4) fail("SUNUM_SIFRE en az 4 karakter olmalı.");
 console.log("[sunum-web] Ders verisi kanonik kaynaktan üretiliyor…");
 execFileSync(process.execPath, [lessonBuilder], { stdio: ["ignore", "ignore", "inherit"] });
 const lessons = JSON.parse(fs.readFileSync(lessonsPath, "utf8"));
+const formIndex = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/source/textbook-forms-index.json"), "utf8"));
+// Use the same current book URL as the preserved slide source links.
+const bookSource = lessons.flatMap((lesson) => lesson.steps).flatMap((step) => step.content?.sources || [])
+  .find((source) => source.url.startsWith("https://tymm.meb.gov.tr/assets/pdf/") && source.url.includes("11sinif-ders-kitabi"));
+if (!bookSource) fail("Değerlendirme formları için güncel ders kitabı bağlantısı bulunamadı.");
+const formsByLesson = assessmentFormsForLessons(formIndex, lessons, bookSource.url.split("#")[0]);
 
 const thinkingRoot = path.join(repoRoot, "data/grade-11/presentation");
 let thinkingData;
@@ -105,7 +113,7 @@ function slimStep(step, themeId, thinking) {
   const has = {
     guidance: includeTeacherSupport && Boolean(answer?.guidance),
     answer: Boolean(answer?.answer || answer?.answer_sections),
-    evidence: Boolean(answer?.evidence_quotes?.length),
+    evidence: Boolean(answer?.evidence_quotes?.length && !step.presentation?.web),
     explanation: includeTeacherSupport && Boolean(answer?.explanation),
     dictionary: Boolean(answer?.dictionary_terms?.length)
   };
@@ -139,6 +147,7 @@ const catalog = {
     title: lesson.title,
     subtitle: lesson.subtitle,
     pages: lesson.printed_page_range,
+    forms: formsByLesson.get(lesson.lesson_id),
     steps: lesson.steps.map((step) => {
       const key = thinkingRecordKey(lesson.lesson_id, step.id);
       const thinking = thinkingByStep.get(key);
@@ -186,14 +195,43 @@ function addSourceFiles(directory, prefix = "") {
 addSourceFiles(srcDir);
 const appVersion = sourceHash.digest("hex").slice(0, 10);
 const dataFile = `data.${dataVersion}.bin`;
+const appModuleGraph = discoverLocalModuleGraph(srcDir, "app.js");
+const offlineCore = [...new Set([
+  "./",
+  "index.html",
+  `styles.css?v=${appVersion}`,
+  `app.js?v=${appVersion}`,
+  ...appModuleGraph.requests,
+  dataFile,
+  "icon.svg",
+  "manifest.webmanifest",
+  "assets/karagoz-types.png",
+  "assets/ogulla-bulusma-tren.png",
+  "assets/theme4-p305-option-1.png",
+  "assets/theme4-p305-option-2.png",
+  "assets/theme4-p305-option-3.png",
+  "assets/theme4-p305-option-4.png"
+])];
 fs.writeFileSync(path.join(distDir, dataFile), payload);
 
-for (const name of fs.readdirSync(srcDir)) {
-  if (fs.statSync(path.join(srcDir, name)).isDirectory()) continue;
-  let text = fs.readFileSync(path.join(srcDir, name), "utf8");
-  text = text.replaceAll("__DATA_FILE__", dataFile).replaceAll("__BUILD_VERSION__", appVersion);
-  fs.writeFileSync(path.join(distDir, name), text);
+function copyRuntimeFiles(directory, relativeDirectory = "") {
+  for (const name of fs.readdirSync(directory).sort()) {
+    const source = path.join(directory, name);
+    const relative = path.posix.join(relativeDirectory, name);
+    if (fs.statSync(source).isDirectory()) {
+      if (relative === "assets") continue;
+      copyRuntimeFiles(source, relative);
+      continue;
+    }
+    let text = fs.readFileSync(source, "utf8");
+    text = text.replaceAll("__DATA_FILE__", dataFile).replaceAll("__BUILD_VERSION__", appVersion);
+    if (relative === "sw.js") text = text.replace("__CORE__", JSON.stringify(offlineCore));
+    const target = path.join(distDir, relative);
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.writeFileSync(target, text);
+  }
 }
+copyRuntimeFiles(srcDir);
 fs.cpSync(path.join(srcDir, "assets"), path.join(distDir, "assets"), { recursive: true });
 
 fs.writeFileSync(path.join(distDir, "robots.txt"), "User-agent: *\nDisallow: /\n");

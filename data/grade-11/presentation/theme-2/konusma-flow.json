@@ -19,7 +19,13 @@
       "prompt": "Türklerin dünya medeniyetine katkıları — Sorudan önce kitaptaki videoyu izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu soru videoda verilen örneklerin kullanılmasını gerektirir. Karekod erişilebiliyorsa önce videoyu izleyip örnekleri not edin; erişilemiyorsa videoya özgü katkı örneklerini uydurmayın."
+        "lead": "Bu soru videoda verilen örneklerin kullanılmasını gerektirir. Karekod erişilebiliyorsa önce videoyu izleyip örnekleri not edin; erişilemiyorsa videoya özgü katkı örneklerini uydurmayın.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.129 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=129"
+          }
+        ]
       }
     },
     {
@@ -288,7 +294,7 @@
       "prompt": "Konuşmanızı gözden geçirmek için değerlendirme ölçütlerini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sayfada görünen ölçütleri kullanın. Ayrıntılı dereceli puanlama ve akran değerlendirme formları karekod bağlantısındadır.",
+        "lead": "Aşağıdaki ölçütler, dört puan düzeyi ve aralıklarıyla birlikte gösterilmiştir. Akran formu sonraki slayttadır.",
         "sections": [
           {
             "title": "Konuşma ölçütleri",
@@ -299,11 +305,142 @@
             "body": "Geri bildiriminizi kişiliğe değil, konuşmada gözlediğiniz davranış ve örneklere dayandırın."
           },
           {
-            "title": "Karekod formları",
-            "body": "Ayrıntılı dereceli puanlama anahtarı ve akran değerlendirme formu karekod bağlantısındadır. Formlarda görmediğiniz ölçüt veya puan aralıklarını varsaymayın."
+            "title": "Formları indirme",
+            "body": "Ayrıntılı dereceli puanlama anahtarı ve akran değerlendirme formu bu sayfadaki indirme bağlantılarındadır."
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşmada konuya hâkimiyet zayıftır"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşmada konuya hâkimiyet kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşma, konuya hâkimiyet açısından başarılıdır"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşma, konuya hâkimiyet açısından oldukça güçlüdür"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşmada söz varlığı etkili ve güzel kullanılmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşma içeriğini yansıtan söz varlığı kısmen etkili ve güzel kullanılmıştır"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşma için seçilen söz varlığı etkili ve güzeldir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşmada oldukça zengin ve etkili bir söz varlığı kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya hizmet etmemiştir"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya kısmen katkı sağlamıştır"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmayı desteklemiştir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Beden dili ve sesle anlam oluşturulan başarılı bir konuşma gerçekleştiril-miştir"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zamanı konuşmaya uygun şekilde kullanma farkındalığı zayıftır"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zamanı, konuşma içeriğine uygun şekilde kullanma farkındalığı kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zaman, konuşma içeriğine uygun şekilde yönetilebilmiş-tir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zaman, konuşma içeriğine uygun biçimde oldukça verimli kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgisini çekecek bir konuşma gerçekleştirilme-miştir"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Konuşma, hedef kitlenin ilgisini çekme konusunda kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgisini çekecek nitelikte bir konuşma gerçekleştiril-miştir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgi ve dikkatini canlı tutacak başarılı bir konuşma gerçekleştiril-miştir"
+          },
+          {
+            "title": "Toplam puan ve hesaplama",
+            "body": "Her ölçütten seçtiğiniz puanları toplayınız. beş ölçüt (konuya hâkimiyet, söz varlığını etkili ve güzel kullanma, beden dili ve sesle anlam oluşturma, zamanı ve mekânı konuşmaya uygun şekilde yönetme, seyircinin ilgisini çekme) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 5, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
           }
         ],
-        "note": "Öz ve akran değerlendirmede belirlenen eksikleri sonraki konuşma için somut hedeflere dönüştürün."
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.135 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=135"
+          },
+          {
+            "label": "Türk dünyası görsellerinden hareketle kültürü tanıtan konuşma dereceli puanlama anahtarı",
+            "url": "assets/assessment-documents/19XU4J2L.docx",
+            "download": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s135-peer-form",
+      "source_record_id": "T02-S0115",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Basılı s.135 — Akran Değerlendirme Formu",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçütü gözlediğiniz çalışmaya göre Evet, Kısmen veya Hayır olarak işaretleyin. Geri bildiriminizi metin ya da performansta gördüğünüz kanıta dayandırın.",
+        "items": [
+          "Türk kültüründe dil farkındalığını ortaya koymak için bir konuşma planı hazırladı ve hazırladığı plana uygun bir konuşma yaptı.",
+          "Konuşmasında Türk kültürünü gerektiği gibi tanıtabilmek ve dinleyicinin bu kültürden kendine ait olanları fark etmesini sağlamak için düşünceyi geliştirme yollarından yararlandı.",
+          "Konuşma sırasında vermek istediği açık ve örtük iletileri amacına ve konuşma akışına uygun şekilde dinleyiciye aktardı.",
+          "Türkçenin dil yapısına, işlevine ve bağdaşıklık ögelerine dikkat ederek söz varlığını hedef kitleye ve bağlama uygun bir şekilde kullandı.",
+          "Konuşma sırasında, anlam oluşturmak için beden dilini, diksiyonu, telaffuzu; doğru, etkili ve güzel kullanmaya özen gösterdi.",
+          "Görgü kurallarına uygun hareket etti.",
+          "Konuşurken dinleyiciyle göz teması kurdu.",
+          "Konuşmasında zaman ve mekânı etkili bir biçimde kullandı."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.135 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=135"
+          },
+          {
+            "label": "Öğretmen için akran değerlendirme formunu indir",
+            "url": "assets/assessment-documents/19XU4J2M.docx",
+            "download": true
+          }
+        ]
       }
     },
     {

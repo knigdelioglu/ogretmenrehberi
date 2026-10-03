@@ -108,7 +108,13 @@
       "prompt": "Olvido — Soru 13'ten önce kitaptaki çok modlu metni karekoddan dinleyiniz / izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "13. soruyu yanıtlarken karekod bağlantısındaki Olvido kaynağını dinleyin/izleyin ve şiirin ses, vurgu, görüntü ya da sunum özelliklerine ilişkin kısa notlar alın. Kaynağa erişemiyorsanız duymadığınız veya görmediğiniz ayrıntıları eklemeyin."
+        "lead": "13. soruyu yanıtlarken karekod bağlantısındaki Olvido kaynağını dinleyin/izleyin ve şiirin ses, vurgu, görüntü ya da sunum özelliklerine ilişkin kısa notlar alın. Kaynağa erişemiyorsanız duymadığınız veya görmediğiniz ayrıntıları eklemeyin.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.83 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=83"
+          }
+        ]
       }
     },
     {

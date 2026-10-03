@@ -1,6 +1,7 @@
 // Ders Sunumu — bağımlılıksız sunum oynatıcı
 // Veri: şifreli ders kataloğu (__DATA_FILE__), build sırasında kanonik veriden üretilir.
-import { groupItems, interleaveStages } from "./reveal-sequence.js";
+import { answerEvidenceStages, attachVocabularyAnswerFragments, groupItems, interleaveStages } from "./reveal-sequence.js";
+import { splitAtSentences } from "./text-chunks.js";
 import { createLessonPptx, pptxFilename } from "./pptx-export.js";
 
 const DATA_FILE = "__DATA_FILE__";
@@ -451,7 +452,7 @@ function renderSections(sections, sectionsLayout = "grid", { hideValues = false 
     "div",
     {
       class: `sections${sectionsLayout === "stacked" || isLetter ? " sections--stacked" : ""}`,
-      style: `--cols:${sectionsLayout === "stacked" || isLetter ? 1 : sectionsLayout === "two-column" ? 2 : columnsFor(entries.length)}`
+      style: `--cols:${sectionsLayout === "stacked" || isLetter ? 1 : Math.min(sectionsLayout === "two-column" ? 2 : columnsFor(entries.length), entries.length)}`
     },
     entries.map(([k, v]) => h(
       "article",
@@ -474,6 +475,7 @@ function textWeight(value) {
 // Sunum parçalarının karakter bütçesi. Ölçeklendirme sonucu ekranda gerçekten
 // sığıp sığmadığı ölçülür (calibrate); sığmayan katman daha küçük bütçeyle yeniden bölünür.
 const BUDGET_STEPS = [1, 0.8, 0.64, 0.5, 0.4, 0.32, 0.25, 0.2];
+const PPTX_LAYOUT_BUDGET = 0.8;
 const budgetCache = new Map();
 let calibrating = false;
 let viewOverride = null;
@@ -524,24 +526,6 @@ function balancedChunks(values, options) {
   return fits ? balanced : groups;
 }
 
-function splitAtSentences(text, maxChars = 760) {
-  if (text.length <= maxChars || typeof Intl.Segmenter !== "function") return [text];
-  const sentences = [...new Intl.Segmenter("tr", { granularity: "sentence" }).segment(text)].map(
-    (part) => part.segment
-  );
-  const pages = [];
-  let current = "";
-  for (const sentence of sentences) {
-    if (current && current.length + sentence.length > maxChars) {
-      pages.push(current);
-      current = "";
-    }
-    current += sentence;
-  }
-  if (current) pages.push(current);
-  return pages.length ? pages : [text];
-}
-
 // Tek başına bütçeyi aşan bir başlığı (uzun liste / alt başlıklar / uzun metin) parçalara böler.
 function splitEntry([key, value], maxChars) {
   if (key.length + textWeight(value) <= maxChars) return [[key, value]];
@@ -588,9 +572,9 @@ function vocabularyPages(step, b = 1) {
   const entries = orderedAnswerEntries(step);
   if (!entries.length) return [{ terms: [] }];
   const groupSize = interleaveConfig(step)?.source === "answer_sections"
-    ? scaledItems(interleaveConfig(step).group_size, b)
-    : scaledItems(3, b);
-  return chunkByBudget(entries, { maxItems: groupSize, maxChars: 850 * b }).map((group) => ({
+    ? interleaveConfig(step).group_size
+    : 3;
+  return chunkByBudget(entries, { maxItems: groupSize, maxChars: Infinity }).map((group) => ({
     terms: group.values,
     title: "Söz varlığı"
   }));
@@ -608,13 +592,155 @@ function orderedAnswerEntries(step) {
   const sections = step.answer?.answer_sections;
   if (!sections || Array.isArray(sections)) return [];
   const omit = new Set(step.presentation?.omit_sections || []);
-  const entries = Object.entries(sections).filter(([key]) => !omit.has(key));
+  const webUnits = step.presentation?.web?.units;
+  const responseKeys = webUnits
+    ? new Set(webUnits.flatMap((unit) => unit.section_keys ?? []))
+    : null;
+  const evidenceKeys = new Set(webUnits?.flatMap((unit) =>
+    (unit.evidence_sections ?? []).map((entry) => entry.section_key)
+  ) ?? []);
+  const entries = Object.entries(sections).filter(([key]) =>
+    !omit.has(key) && !evidenceKeys.has(key) && (!responseKeys || responseKeys.has(key))
+  );
   const order = interleaveConfig(step)?.order;
   if (!Array.isArray(order) || !order.length) return entries;
   const byKey = new Map(entries);
   const selected = order.filter((key) => byKey.has(key)).map((key) => [key, byKey.get(key)]);
   const selectedKeys = new Set(selected.map(([key]) => key));
   return [...selected, ...entries.filter(([key]) => !selectedKeys.has(key))];
+}
+
+function webAnswerLayerPages(step, b = 1) {
+  const answer = step.answer || {};
+  const web = step.presentation.web;
+  const sections = answer.answer_sections;
+  const pagesByUnit = new Map();
+  const pages = [];
+  const maxChars = 1050 * b;
+  const fragmentsByUnit = new Map(web.units.map((unit) => [unit.id, { start: [], end: [] }]));
+  for (const fragment of web.answer_text.fragments ?? []) {
+    fragmentsByUnit.get(fragment.unit)?.[fragment.position ?? "start"].push(fragment.text);
+  }
+
+  for (const unit of web.units) {
+    let unitPages = [];
+    const unitFragments = fragmentsByUnit.get(unit.id) ?? { start: [], end: [] };
+    const selectedFragments = [...unitFragments.start, ...unitFragments.end];
+    if (unit.section_keys?.length && sections && !Array.isArray(sections)) {
+      const entries = unit.section_keys.flatMap((key) => splitEntry([key, sections[key]], maxChars));
+      unitPages = chunkByBudget(entries, {
+        maxItems: Math.max(1, entries.length),
+        maxChars
+      }).map((group) => ({ sections: Object.fromEntries(group.values) }));
+    } else if (unit.array_indices?.length && Array.isArray(sections)) {
+      unitPages = [{ sections: unit.array_indices.map((index) => sections[index]) }];
+    } else if (selectedFragments.length || unit.id === "answer") {
+      const text = selectedFragments.length ? selectedFragments.join("\n") : String(answer.answer || "");
+      unitPages = splitAtSentences(text, 760 * b).map((answerText) => ({ sections: null, answerText }));
+    }
+
+    if (!unitPages.length) unitPages = [{ sections: null }];
+    if (unit.section_keys?.length || unit.array_indices?.length) {
+      const fragments = unitFragments;
+      if (fragments.start.length) {
+        unitPages[0].answerText = [fragments.start.join("\n"), unitPages[0].answerText].filter(Boolean).join("\n");
+      }
+      if (fragments.end.length) {
+        const last = unitPages.length - 1;
+        unitPages[last].answerText = [unitPages[last].answerText, fragments.end.join("\n")].filter(Boolean).join("\n");
+      }
+    }
+    unitPages = unitPages.map((page, index) => ({
+      ...page,
+      title: "Cevap",
+      unitId: unit.id,
+      pageId: `${unit.id}:answer:${index + 1}`
+    }));
+    pagesByUnit.set(unit.id, unitPages);
+  }
+
+  const appendEvidenceStage = (unit) => {
+    const answerPages = pagesByUnit.get(unit.id) || [];
+    const inlineQuoteIndexes = new Set(unit.inline_quote_indexes ?? []);
+    const quoteValues = unit.quote_indexes
+      .filter((index) => !inlineQuoteIndexes.has(index))
+      .map((index) => answer.evidence_quotes[index]);
+    const evidenceSections = Object.fromEntries((unit.evidence_sections ?? []).map(({ section_key }) =>
+      [section_key, sections[section_key]]
+    ));
+    if (!quoteValues.length && !Object.keys(evidenceSections).length) return;
+
+    const pairedAnswer = answerPages.at(-1) || { sections: null, title: "Cevap", unitId: unit.id };
+    const quotePages = chunkByBudget(quoteValues, {
+      maxItems: scaledItems(4, b),
+      maxChars: 700 * b
+    });
+    if (!quotePages.length) quotePages.push({ values: [] });
+    quotePages.forEach((group, index) => pages.push({
+      ...pairedAnswer,
+      evidenceSections,
+      quotes: group.values,
+      title: "Cevap ve metinden kanıt",
+      pageId: `${unit.id}:evidence:${index + 1}`
+    }));
+  };
+  const appendUnitStages = (unit) => {
+    pages.push(...(pagesByUnit.get(unit.id) || []));
+    appendEvidenceStage(unit);
+  };
+
+  const interleave = interleaveConfig(step);
+  const interleavesAnswers = interleave?.source === "answer_sections" &&
+    sections && !Array.isArray(sections) && web.units.some((unit) => unit.section_keys?.length);
+  if (interleavesAnswers) {
+    const orderedKeys = orderedAnswerEntries(step).map(([key]) => key);
+    const groups = groupItems(orderedKeys, scaledItems(interleave.group_size, b));
+    const answerUnits = web.units.filter((unit) => unit.section_keys?.length);
+    let merged = true;
+    while (merged) {
+      merged = false;
+      const groupByKey = new Map(groups.flatMap((keys, index) => keys.map((key) => [key, index])));
+      for (const unit of answerUnits) {
+        const indexes = unit.section_keys.map((key) => groupByKey.get(key)).filter(Number.isInteger);
+        if (indexes.length < 2) continue;
+        const first = Math.min(...indexes);
+        const last = Math.max(...indexes);
+        if (first === last) continue;
+        groups.splice(first, last - first + 1, groups.slice(first, last + 1).flat());
+        merged = true;
+        break;
+      }
+    }
+    const unitsByGroup = groups.map((keys) => ({
+      keys,
+      units: web.units.filter((unit) => unit.section_keys?.some((key) => keys.includes(key)))
+    }));
+    const assigned = unitsByGroup.flatMap((group) => group.units.map((unit) => unit.id));
+    if (assigned.length !== answerUnits.length || new Set(assigned).size !== answerUnits.length ||
+      answerUnits.some((unit) => !assigned.includes(unit.id))) {
+      throw new Error(`Web answer units do not align with interleave groups: ${step.id}`);
+    }
+    for (const [index, group] of unitsByGroup.entries()) {
+      if (index > 0 && group.keys.length) {
+        pages.push({
+          preview: Object.fromEntries(group.keys.map((key) => [key, sections[key]])),
+          hideValues: true,
+          sections: Object.fromEntries(group.keys.map((key) => [key, sections[key]])),
+          title: "Görev",
+          pageId: `interleave-prompt:${index + 1}`
+        });
+      }
+      group.units.forEach(appendUnitStages);
+    }
+    web.units.filter((unit) => !unit.section_keys?.length).forEach(appendUnitStages);
+  } else {
+    for (const { type, unit } of answerEvidenceStages(web.units)) {
+      if (type === "answer") pages.push(...(pagesByUnit.get(unit.id) || []));
+      else appendEvidenceStage(unit);
+    }
+  }
+
+  return pages.length ? pages : [{ answerText: String(answer.answer || ""), sections: null, title: "Cevap" }];
 }
 
 function answerSectionGroups(step, b = 1) {
@@ -649,13 +775,19 @@ function interleavedDictionaryGroups(step, b = 1) {
     const byTerm = new Map(terms.map((entry) => [entry.term, entry]));
     terms = config.order.map((term) => byTerm.get(term)).filter(Boolean);
   }
-  return groupItems(terms, scaledItems(config.group_size, b))
+  return groupItems(terms, config.group_size)
     .map((group) => ({ dictionary: group, title: "Sözlük" }));
 }
 
 function contentSources(content) {
   return content.sources?.length ? h("nav", { class: "source-links", "aria-label": "Kaynaklar" },
-    content.sources.map((source) => h("a", { href: source.url, target: "_blank", rel: "noopener noreferrer" }, source.label))
+    content.sources.map((source) => {
+      const isDownload = source.download === true &&
+        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.docx$/i.test(source.url ?? "");
+      return h("a", isDownload
+        ? { href: source.url, download: "", class: "source-download" }
+        : { href: source.url, target: "_blank", rel: "noopener noreferrer" }, source.label);
+    })
   ) : null;
 }
 
@@ -708,20 +840,22 @@ function contentLayerPages(step, b = 1) {
 function answerLayerPages(step, b = 1) {
   const answer = step.answer || {};
   const pres = presentationOf(step);
+  if (pres.web) return webAnswerLayerPages(step, b);
   const textAtEnd = pres.answer_text === "end";
   const answerText = String(answer.answer || "");
-  const textPages = answerText
+  const vocabularyAnswerText = pres.web_answer_text;
+  const textPages = !vocabularyAnswerText && answerText
     ? splitAtSentences(answerText, 760 * b).map((text) => ({ answerText: text, sections: null, title: "Cevap" }))
     : [];
   if (step.layout === "vocabulary") {
     const groups = vocabularyPages(step, b);
-    const termPages = interleaves(step)
+    const termPages = attachVocabularyAnswerFragments(interleaves(step)
       ? interleaveStages(groups).map(({ group, stage }) => ({ ...group, hidden: stage === "prompt" }))
-      : groups;
+      : groups, vocabularyAnswerText);
     return [
-      ...(textAtEnd ? [] : textPages),
+      ...(!vocabularyAnswerText && !textAtEnd ? textPages : []),
       ...termPages,
-      ...(textAtEnd ? textPages : []),
+      ...(!vocabularyAnswerText && textAtEnd ? textPages : []),
       ...dictionaryPages(step, b)
     ];
   }
@@ -834,6 +968,9 @@ function calibrate(step, key) {
 function layerPages(step, key) {
   if (!step) return [];
   const layer = key || "content";
+  // Export visits every step and reveal layer. Use one readable layout budget
+  // instead of repeating the interactive viewport's multi-pass fit calibration.
+  if (exportingPptx) return buildLayerPages(step, layer, PPTX_LAYOUT_BUDGET);
   if (!calibrating) calibrate(step, layer);
   return buildLayerPages(step, layer, budgetCache.get(budgetKey(step, layer)) ?? 1);
 }
@@ -913,7 +1050,7 @@ function dictionaryTerms(step) {
 }
 
 function dictionaryPages(step, b = 1) {
-  return chunkByBudget(dictionaryTerms(step), { maxItems: scaledItems(4, b), maxChars: 850 * b }).map((group) => ({
+  return chunkByBudget(dictionaryTerms(step), { maxItems: 4, maxChars: Infinity }).map((group) => ({
     dictionary: group.values,
     title: "Sözlük"
   }));
@@ -1077,6 +1214,9 @@ function stepSlide(lesson, step) {
     if (sources) main.append(sources);
   }
 
+  if (viewKey === "answer" && isVocab && page.answerTextBefore) {
+    main.append(panel("answer", answerLabel(step, lesson.theme), h("p", {}, page.answerTextBefore), fresh("answer")));
+  }
   if (viewKey === "answer" && isVocab && page.terms?.length) {
     main.append(
       h(
@@ -1098,6 +1238,9 @@ function stepSlide(lesson, step) {
   if (viewKey === "answer" && isVocab && page.answerText) {
     main.append(panel("answer", answerLabel(step, lesson.theme), h("p", {}, page.answerText), fresh("answer")));
   }
+  if (viewKey === "answer" && isVocab && page.answerTextAfter) {
+    main.append(panel("answer", answerLabel(step, lesson.theme), h("p", {}, page.answerTextAfter), fresh("answer")));
+  }
   if (viewKey === "answer" && isVocab && page.dictionary?.length) {
     main.append(dictionaryCard(page.dictionary, { hideMeanings: page.hideMeanings }));
   }
@@ -1117,6 +1260,15 @@ function stepSlide(lesson, step) {
           [page.answerText ? h("p", {}, page.answerText) : null, renderSections(page.sections, step.sections_layout)],
           fresh("answer")
         )
+      );
+    }
+    if (page.quotes?.length || Object.keys(page.evidenceSections || {}).length) {
+      const evidenceBody = [
+        Object.keys(page.evidenceSections || {}).length ? renderSections(page.evidenceSections, "stacked") : null,
+        page.quotes?.length ? h("div", { class: "quotes" }, page.quotes.map((quote) => h("p", {}, quote))) : null
+      ];
+      main.append(
+        panel("evidence", "Metinden kanıt", evidenceBody)
       );
     }
     if (page.dictionary?.length) main.append(dictionaryCard(page.dictionary));
@@ -1194,7 +1346,7 @@ function render({ newSlide }) {
         : "Son";
   document.title = `${lesson.title} · Ders Sunumu`;
   savePosition();
-  if (!$("#menu").hidden) renderMenu();
+  if (!exportingPptx && !$("#menu").hidden) renderMenu();
 }
 
 // Gövde yazı ölçeğini, içerik taşmayacak en büyük değere ayarla
@@ -1414,8 +1566,12 @@ async function exportCurrentLesson() {
       state.extras = new Set();
       state.revealedVocabularyTerms.clear();
       const layerCount = isWordWallStep(step) ? 0 : activeReveals(step).length;
+      status.textContent = `${index + 1}/${lesson.steps.length} adım hazırlanıyor…`;
+      await new Promise(requestAnimationFrame);
       for (let reveal = 0; reveal <= layerCount; reveal += 1) {
         state.reveal = reveal;
+        status.textContent = `${index + 1}/${lesson.steps.length} · ${reveal + 1}/${layerCount + 1} katman hazırlanıyor…`;
+        await new Promise(requestAnimationFrame);
         const view = currentView(step);
         const parts = Math.max(1, view.pages.length);
         for (let part = 0; part < parts; part += 1) {
@@ -1424,7 +1580,7 @@ async function exportCurrentLesson() {
         }
       }
       if (isWordWallStep(step)) {
-        const hiddenTerms = [...$("#canvas .vocab__item--interactive .vocab__term")].map((term) => term.textContent);
+        const hiddenTerms = [...$("#canvas").querySelectorAll(".vocab__item--interactive .vocab__term")].map((term) => term.textContent);
         state.revealedVocabularyTerms = new Set(hiddenTerms);
         await captureState();
       }
@@ -1474,74 +1630,75 @@ async function exportCurrentLesson() {
   }
 }
 
-function copyComputedStyles(source, target) {
-  const computed = getComputedStyle(source);
-  for (let index = 0; index < computed.length; index += 1) {
-    const name = computed.item(index);
-    target.style.setProperty(name, computed.getPropertyValue(name), computed.getPropertyPriority(name));
-  }
-  target.style.setProperty("animation", "none", "important");
-  target.style.setProperty("transition", "none", "important");
-  for (let index = 0; index < source.children.length; index += 1) {
-    copyComputedStyles(source.children[index], target.children[index]);
-  }
-  for (const [pseudo, place] of [["::before", "before"], ["::after", "after"]]) {
-    const pseudoStyle = getComputedStyle(source, pseudo);
-    if (pseudoStyle.content === "none" || pseudoStyle.content === "normal") continue;
-    const marker = document.createElement("span");
-    for (let index = 0; index < pseudoStyle.length; index += 1) {
-      const name = pseudoStyle.item(index);
-      if (name !== "content") marker.style.setProperty(name, pseudoStyle.getPropertyValue(name), pseudoStyle.getPropertyPriority(name));
-    }
-    const content = pseudoStyle.content;
-    if (content !== '""' && content !== "''") marker.textContent = content.replace(/^(?:\"|')|(?:\"|')$/g, "");
-    if (place === "before") target.prepend(marker);
-    else target.append(marker);
-  }
+function xmlText(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&apos;"
+  })[character]);
 }
-
+function svgBox(rect, slideRect, style) {
+  const x=rect.left-slideRect.left,y=rect.top-slideRect.top,width=rect.width,height=rect.height;
+  if(width<=0||height<=0)return "";
+  const opacity=Number(style.opacity||1),fill=style.backgroundColor;
+  const hasFill=fill&&fill!=="transparent"&&!/^rgba\([^)]*,\s*0\s*\)$/.test(fill);
+  const borderWidth=Math.max(...[style.borderTopWidth,style.borderRightWidth,style.borderBottomWidth,style.borderLeftWidth].map(v=>Number.parseFloat(v)||0));
+  const hasBorder=borderWidth>0&&style.borderStyle!=="none"&&style.borderColor!=="transparent";
+  if(!hasFill&&!hasBorder)return "";
+  const radius=Math.max(0,Number.parseFloat(style.borderTopLeftRadius)||0);
+  return "<rect x=\""+x+"\" y=\""+y+"\" width=\""+width+"\" height=\""+height+"\""+(radius?" rx=\""+radius+"\"":"")+
+    (hasFill?" fill=\""+xmlText(fill)+"\"":" fill=\"none\"")+(hasBorder?" stroke=\""+xmlText(style.borderColor)+"\" stroke-width=\""+borderWidth+"\"":"")+
+    (opacity<1?" opacity=\""+opacity+"\"":"")+"/>";
+}
+function svgText(textNode,slideRect) {
+  const text=textNode.textContent,parent=textNode.parentElement;
+  if(!text||!text.trim()||!parent)return "";
+  const style=getComputedStyle(parent);
+  if(style.display==="none"||style.visibility==="hidden"||style.fontSize==="0px")return "";
+  const fontSize=Number.parseFloat(style.fontSize)||16,pieces=[],range=document.createRange();
+  for(const match of text.matchAll(/\S+/gu)){
+    range.setStart(textNode,match.index);range.setEnd(textNode,match.index+match[0].length);
+    const rect=range.getBoundingClientRect();if(!rect.width||!rect.height)continue;
+    let value=match[0];if(style.textTransform==="uppercase")value=value.toLocaleUpperCase("tr-TR");else if(style.textTransform==="lowercase")value=value.toLocaleLowerCase("tr-TR");
+    const x=rect.left-slideRect.left,y=rect.top-slideRect.top;
+    pieces.push("<text x=\""+x+"\" y=\""+y+"\" dominant-baseline=\"hanging\" textLength=\""+rect.width+"\" lengthAdjust=\"spacingAndGlyphs\""+
+      " font-family=\""+xmlText(style.fontFamily)+"\" font-size=\""+fontSize+"\" font-weight=\""+xmlText(style.fontWeight)+"\""+
+      " font-style=\""+xmlText(style.fontStyle)+"\" fill=\""+xmlText(style.color)+"\""+
+      (style.letterSpacing!=="normal"?" letter-spacing=\""+xmlText(style.letterSpacing)+"\"":"")+
+      (style.textDecorationLine!=="none"?" text-decoration=\""+xmlText(style.textDecorationLine)+"\"":"")+
+      (Number(style.opacity)<1?" opacity=\""+style.opacity+"\"":"")+">"+xmlText(value)+"</text>");
+  }
+  return pieces.join("");
+}
+function svgSlideMarkup(source) {
+  const slideRect=source.getBoundingClientRect(),base=getComputedStyle($("#canvas")).backgroundColor;
+  const pieces=["<rect width=\"1920\" height=\"1080\" fill=\""+xmlText(base)+"\"/>"];
+  const visit=(element)=>{
+    const style=getComputedStyle(element);if(style.display==="none"||style.visibility==="hidden")return;
+    const rect=element.getBoundingClientRect();pieces.push(svgBox(rect,slideRect,style));
+    if(element instanceof HTMLImageElement&&element.currentSrc&&rect.width&&rect.height){
+      const x=rect.left-slideRect.left,y=rect.top-slideRect.top,fit=style.objectFit==="contain"?"xMidYMid meet":"none";
+      pieces.push("<image x=\""+x+"\" y=\""+y+"\" width=\""+rect.width+"\" height=\""+rect.height+"\" href=\""+xmlText(element.currentSrc)+"\" preserveAspectRatio=\""+fit+"\"/>");
+    }
+    if(element instanceof SVGElement&&element.tagName.toLowerCase()==="svg"){
+      const serialized=new XMLSerializer().serializeToString(element),x=rect.left-slideRect.left,y=rect.top-slideRect.top;
+      pieces.push("<svg x=\""+x+"\" y=\""+y+"\" width=\""+rect.width+"\" height=\""+rect.height+"\">"+serialized.replace(/^<svg\b[^>]*>/,"").replace(/<\/svg>$/,"")+"</svg>");return;
+    }
+    for(const child of element.childNodes){if(child.nodeType===Node.TEXT_NODE)pieces.push(svgText(child,slideRect));else if(child instanceof Element)visit(child);}
+  };
+  visit(source);return pieces.join("");
+}
 async function captureSlideImage() {
   await document.fonts?.ready;
-  const source = $("#canvas .slide");
-  if (!source) throw new Error("Sunum slaytı bulunamadı.");
-  await Promise.all([...source.querySelectorAll("img")].map((image) => image.decode().catch(() => {})));
-
-  const clone = source.cloneNode(true);
-  copyComputedStyles(source, clone);
-  clone.style.setProperty("position", "relative", "important");
-  clone.style.setProperty("inset", "auto", "important");
-  clone.style.setProperty("width", "1920px", "important");
-  clone.style.setProperty("height", "1080px", "important");
-  clone.style.setProperty("transform", "none", "important");
-  clone.style.setProperty("overflow", "hidden", "important");
-  const originalImages = [...source.querySelectorAll("img")];
-  [...clone.querySelectorAll("img")].forEach((image, index) => {
-    if (originalImages[index]?.currentSrc) image.src = originalImages[index].currentSrc;
-  });
-
-  const background = getComputedStyle($("#canvas")).backgroundColor;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xhtml="http://www.w3.org/1999/xhtml" width="1920" height="1080" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="${background}"/><foreignObject x="0" y="0" width="1920" height="1080">${new XMLSerializer().serializeToString(clone)}</foreignObject></svg>`;
-  const imageData = await new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = () => reject(new Error("Slayt görüntüsü hazırlanamadı."));
-    reader.readAsDataURL(new Blob([svg], { type: "image/svg+xml;charset=utf-8" }));
-  });
-  const image = new Image();
-  image.src = imageData;
-  await image.decode();
-  const canvas = document.createElement("canvas");
-  canvas.width = 1920;
-  canvas.height = 1080;
-  const context = canvas.getContext("2d");
-  if (!context) throw new Error("Sunum görüntüsü çizilemedi.");
-  context.drawImage(image, 0, 0, canvas.width, canvas.height);
-  const png = await new Promise((resolve, reject) => {
-    canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Slayt PNG görüntüsüne dönüştürülemedi.")), "image/png");
-  });
+  const source=$("#canvas .slide");if(!source)throw new Error("Sunum slaytı bulunamadı.");
+  await Promise.all([...source.querySelectorAll("img")].map(image=>image.decode().catch(()=>{})));
+  const svg="<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\">"+svgSlideMarkup(source)+"</svg>";
+  const imageUrl=URL.createObjectURL(new Blob([svg],{type:"image/svg+xml;charset=utf-8"})),image=new Image();image.src=imageUrl;
+  try{await image.decode();}finally{URL.revokeObjectURL(imageUrl);}
+  const canvas=document.createElement("canvas");canvas.width=1920;canvas.height=1080;
+  const context=canvas.getContext("2d");if(!context)throw new Error("Sunum görüntüsü çizilemedi.");
+  context.drawImage(image,0,0,canvas.width,canvas.height);
+  const png=await new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error("Slayt PNG görüntüsüne dönüştürülemedi.")),"image/png"));
   return new Uint8Array(await png.arrayBuffer());
 }
-
 // ============================================================
 // Tam ekran, tema, boş ekran
 // ============================================================

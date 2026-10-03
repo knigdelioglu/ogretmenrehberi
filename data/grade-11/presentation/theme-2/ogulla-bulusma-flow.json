@@ -123,6 +123,14 @@
       "presentation": {
         "interleave": true,
         "answer_text": "end"
+      },
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.95 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=95"
+          }
+        ]
       }
     },
     {
@@ -140,7 +148,15 @@
       "layout": "question",
       "prompt": "Hikâyede bu kelimelerin seçilme nedenlerine ilişkin tahminlerinizi yazınız.",
       "prompt_mode": "VERBATIM_SHORT",
-      "thinking": "Bu kelimelerin hangi sahnelerde ve hangi ayrıntılarla kullanıldığına bakın; kelime seçiminin anlatılan dünyayı nasıl kurduğunu yorumlayın."
+      "thinking": "Bu kelimelerin hangi sahnelerde ve hangi ayrıntılarla kullanıldığına bakın; kelime seçiminin anlatılan dünyayı nasıl kurduğunu yorumlayın.",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.96 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=96"
+          }
+        ]
+      }
     },
     {
       "id": "s96-q4a",
@@ -176,7 +192,15 @@
       "layout": "structure",
       "density": "compact",
       "prompt": "Anlatmaya bağlı edebî metinlerin ayırt edici özelliklerini kavram haritasına yerleştiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.98 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=98"
+          }
+        ]
+      }
     },
     {
       "id": "s99-q2",
@@ -194,7 +218,15 @@
       "layout": "question",
       "prompt": "Bu görsellerin dışında Türk dünyasının ortak kültürünü yansıtabilecek başka görsellere gerekçeli örnekler veriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "thinking": "Sayfadaki görsellerde olmayan bir unsur seçin; hangi toplulukta neyi temsil ettiğini doğrulanabilir bir ayrıntıyla gerekçelendirin."
+      "thinking": "Sayfadaki görsellerde olmayan bir unsur seçin; hangi toplulukta neyi temsil ettiğini doğrulanabilir bir ayrıntıyla gerekçelendirin.",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.99 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=99"
+          }
+        ]
+      }
     },
     {
       "id": "s100-q1",

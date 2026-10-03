@@ -124,7 +124,13 @@
       "prompt": "Not alarak dinleyin / izleyin",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Karekoddaki çok modlu metni izlerken her cümleyi yazmaya çalışmayın; anahtar kavramları ve önemli bağlantıları kısa notlarla kaydedin."
+        "lead": "Karekoddaki çok modlu metni izlerken her cümleyi yazmaya çalışmayın; anahtar kavramları ve önemli bağlantıları kısa notlarla kaydedin.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.64 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=64"
+          }
+        ]
       },
       "answer_id": "T1-P64-PERF03"
     },
@@ -163,6 +169,14 @@
       "presentation": {
         "answer_text": "end",
         "interleave": true
+      },
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.65 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=65"
+          }
+        ]
       }
     },
     {
@@ -226,7 +240,15 @@
       "id": "s67-q9",
       "source_record_id": "T01-S0089",
       "answer_id": "T1-P67-Q09",
-      "layout": "question"
+      "layout": "question",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.67 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=67"
+          }
+        ]
+      }
     },
     {
       "id": "s68-future",
@@ -269,7 +291,15 @@
       "source_record_id": "T01-S0092",
       "answer_id": "T1-P70-Q03",
       "layout": "structure",
-      "density": "compact"
+      "density": "compact",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.70 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=70"
+          }
+        ]
+      }
     },
     {
       "id": "s70-q4",

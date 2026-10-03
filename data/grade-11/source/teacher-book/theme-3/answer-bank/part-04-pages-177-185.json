@@ -11,13 +11,13 @@
       "printed_page": 177,
       "question_no": "14",
       "prompt_summary": "Huzur metnindeki açık ve örtük iletilere örnek verme",
-      "answer": "Açık ileti, metinde doğrudan söylenen düşüncedir; örtük ileti ise birden çok ayrıntıdan çıkarım yapmayı gerektirir. Huzur parçasında bu iki düzey birbirinden ayrılmalıdır.",
+      "answer": "Açık ileti, metinde doğrudan söylenen düşüncedir. Örtük ileti ise birden çok ayrıntıdan çıkarım yapmayı gerektirir. Huzur parçasında bu iki düzey birbirinden ayrılmalıdır.",
       "answer_sections": {
         "acik_iletiler": [
-          "“İstanbul’u tanımadıkça kendimizi bulamayız.” → İstanbul'u ve kültürel çevreyi tanıma ile kendini tanıma arasında doğrudan bağ kurulur.",
-          "“Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” → yeni hayat kurarken geçmişten gelen bir kimlik ve dayanak gerektiği doğrudan savunulur.",
           "“Yeni bir hayat lâzım.” → mevcut hayatın değişmesi ve yenilenmesi gerektiği açıkça ifade edilir."
         ],
+        "Dayanak: şehir ve kimlik": "“İstanbul’u tanımadıkça kendimizi bulamayız.” → İstanbul'u ve kültürel çevreyi tanıma ile kendini tanıma arasında doğrudan bağ kurulur.",
+        "Dayanak: geçmiş ve kimlik": "“Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” → yeni hayat kurarken geçmişten gelen bir kimlik ve dayanak gerektiği doğrudan savunulur.",
         "ortuk_iletiler": [
           "Boğaz'ın mimari, ses ve hatıralarla birlikte anlatılması; mekânın kişisel ve kültürel hafızayı harekete geçirebildiğini düşündürür.",
           "Mümtaz'ın eski musiki ve geçmişe ilgisine karşı Nuran'ın yoksulluk ve bakımsızlığı hatırlatması; geçmişe değer verirken bugünün ihtiyaçlarını ihmal etmeme gereğini düşündürebilir.",
@@ -69,11 +69,9 @@
         "Kelime Avcısı": "Mazi, musiki, yeis gibi kelimeleri bağlamıyla açıklayın.",
         "Hareket İzcisi": "Boğaz, Üsküdar ve İstanbul semtlerinin olay ve duygu üzerindeki etkisini izleyin.",
         "Karakter Çözümleyici": "Kişilerin söz ve davranışlarından temel özelliklerini çıkarın.",
-        "Metinden başlangıç örnekleri": [
-          "Bağ kurucu / sorgulayıcı: “İstanbul’u tanımadıkça kendimizi bulamayız.”",
-          "Okuma aydınlatıcısı / karakter çözümleyici: “Bir hüviyet lâzım.”",
-          "Karakter ve ilişki çözümlemesi: “Bende İhsan’ın tesiri büyüktür. Asıl hocam odur.”"
-        ]
+        "Dayanak: Bağ Kurucu": "Bağ kurucu / sorgulayıcı: “İstanbul’u tanımadıkça kendimizi bulamayız.”",
+        "Dayanak: Okuma Aydınlatıcısı": "Okuma aydınlatıcısı / karakter çözümleyici: “Bir hüviyet lâzım.”",
+        "Dayanak: Karakter Çözümleyici": "Karakter ve ilişki çözümlemesi: “Bende İhsan’ın tesiri büyüktür. Asıl hocam odur.”"
       },
       "evidence_quotes": [
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
@@ -102,7 +100,7 @@
           "cikarim": "Mümtaz’ın düşünce ve kültür dünyasında etkili bir rehber olduğunu Mümtaz’ın anlatımından çıkarabiliriz."
         },
         "Macide": {
-          "soz_davranis": "Bu etkinliğe kadar verilen Huzur kesitinde Macide’nin doğrudan sözü veya kişiliğini açıklamaya yetecek davranışı verilmez; yalnız adı ve İhsan’la birlikte anılması görülür.",
+          "soz_davranis": "Bu etkinliğe kadar verilen Huzur kesitinde Macide’nin doğrudan sözü veya kişiliğini açıklamaya yetecek davranışı verilmez; Nuran yalnızca onu tanımayı ve sevmeyi umduğunu söyler.",
           "cikarim": "Bu kesite dayanarak duygu ve düşünceleri hakkında güvenilir bir çıkarım yapılamaz."
         },
         "Suat": {
@@ -210,7 +208,7 @@
       "printed_page": 183,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Huzur parçalarında öznel ve nesnel anlatım örnekleri ve katkıları",
-      "answer": "Parçalarda nesnel anlatım dışarıdan gözlenebilen olay ve durumları; öznel anlatım ise Mümtaz’ın duygu, düşünce ve iç sorgulamalarını öne çıkarır.",
+      "answer": "Nesnel anlatım dışarıdan gözlenebilen olay ve durumları öne çıkarır. Öznel anlatım ise Mümtaz’ın duygu, düşünce ve iç sorgulamalarını öne çıkarır.",
       "source_locator": "basılı s.183 / PDF s.184 — Sıra Sizde 1, Mümtaz'ın Nuran anıları ve iç sorgulaması",
       "answer_sections": {
         "nesnel_anlatim": [
@@ -454,11 +452,11 @@
       "answer_sections": {
         "Örnek çalışma": {
           "İhsan": "Öğretici ve düşünsel rehber; bu çıkarım Mümtaz'ın anlatımından gelir.",
-          "Macide": "Şefkat ve aile desteği; s.182'de anlatıcının verdiği bilgiye dayanır.",
+          "Macide": "Bu kesitte Macide konuşmaz; Nuran, onu tanıyınca seveceğini düşündüğünü söyler (s.170). Bu, Macide’nin kişiliği veya duyguları hakkında çıkarım yapmak için yeterli değildir.",
           "Sınır": "İki kişiye bu kesitte söylemedikleri sözleri atfetmeyin."
         }
       },
-      "source_locator": "basılı s.180 — Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız."
+      "source_locator": "basılı s.170 ve s.180 — Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız."
     },
     {
       "question_id": "T3-P181-FLOW-S181_MUMTAZ_NURAN",
@@ -484,11 +482,11 @@
       "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
       "answer_sections": {
         "Örnek çalışma": {
-          "İhsan / Macide": "İhsan’ın etkisi ve Macide’nin şefkati dolaylı anlatılır; bu kesitte doğrudan konuşma örneği yoktur.",
+          "İhsan / Macide": "Mümtaz, İhsan’ın etkisini doğrudan sözleriyle anlatır; Macide bu kesitte konuşmaz ve yalnızca Nuran’ın onu tanıyınca seveceğini söylemesinden anılır. Macide’nin dil veya kişilik özelliği bu bilgiden belirlenemez.",
           "Suat / Fâhir": "Okuduğunuz Huzur kesitinde Suat ve Fâhir’in dil ve kişilik özelliklerini belirleyecek yeterli doğrudan kanıt yoktur."
         }
       },
-      "source_locator": "basılı s.181 — Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?"
+      "source_locator": "basılı s.170–181 — Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?"
     },
     {
       "question_id": "T3-P182-FLOW-S182_TWO_TEXTS",

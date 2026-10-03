@@ -2,7 +2,9 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { groupItems, interleaveStages, insertThinkingReveal } from "../src/reveal-sequence.js";
+import { answerEvidenceStages, attachVocabularyAnswerFragments, groupItems, interleaveStages, insertThinkingReveal } from "../src/reveal-sequence.js";
+import { splitAtSentences } from "../src/text-chunks.js";
+import { resolveVocabularyAnswerText, resolveWebPresentation, validateWebPresentationIndex } from "../../lesson-player/scripts/web-presentation.mjs";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -30,6 +32,277 @@ assert.throws(
   /requires an answer reveal/,
   "Cevap katmanı olmayan bir adıma Düşünürken eklenememeli"
 );
+assert.deepEqual(answerEvidenceStages([
+  { id: "topic", quote_indexes: [0], evidence_sections: [] },
+  { id: "main-idea", quote_indexes: [], evidence_sections: [{ section_key: "Dayanaklar" }] }
+]).map(({ type, unit }) => `${type}:${unit.id}`), [
+  "answer:topic", "evidence:topic", "answer:main-idea", "evidence:main-idea"
+], "Evidence sections and linked quotations follow their answer unit");
+
+const vocabularyGroups = attachVocabularyAnswerFragments([
+  { terms: [["çağdaş", "Aynı dönemde yaşayan."], ["özge", "Başka."]] },
+  { terms: [["görkemli", "Gösterişli."]], hidden: true }
+], {
+  mode: "include",
+  fragments: [
+    { unit: "çağdaş", text: "Bağlamı sözlükten doğrulayın.", position: "start" },
+    { unit: "özge", text: "Bu not sonraki gruba taşınmamalı.", position: "end" },
+    { unit: "görkemli", text: "Gizli promptta gösterilmemeli.", position: "start" }
+  ]
+});
+assert.equal(vocabularyGroups[0].answerTextBefore, "Bağlamı sözlükten doğrulayın.",
+  "Vocabulary context can appear before its matched term group");
+assert.equal(vocabularyGroups[0].answerTextAfter, "Bu not sonraki gruba taşınmamalı.",
+  "Vocabulary context can appear after its matched term group");
+assert.equal(vocabularyGroups[1].answerTextBefore, undefined,
+  "Vocabulary context is not leaked into a hidden prompt group");
+const longTextOnlyAnswer = Array.from({ length: 16 }, (_, index) =>
+  `Parça ${index + 1} kısa cümle olarak kendi devam bağlamını korur.`
+).join(" ");
+const continuedAnswer = splitAtSentences(longTextOnlyAnswer, 72);
+assert.ok(continuedAnswer.length > 1, "Long text-only answers split into meaningful continuation pages");
+assert.ok(continuedAnswer.every((part) => part.length <= 72), "Sentence continuation pages respect the requested budget");
+assert.ok(continuedAnswer.every((part) => /[.!?]$/u.test(part.trimEnd())),
+  "Readable answers continue at sentence boundaries when possible");
+assert.equal(continuedAnswer.join(""), longTextOnlyAnswer, "Text continuation does not drop source characters");
+const longSingleSentence = "kelime ".repeat(80).trim();
+const continuedSingleSentence = splitAtSentences(longSingleSentence, 72);
+assert.ok(continuedSingleSentence.length > 1 && continuedSingleSentence.every((part) => part.length <= 72),
+  "An unusually long sentence also receives readable word-boundary continuations");
+assert.equal(continuedSingleSentence.join(""), longSingleSentence, "Word-boundary continuation preserves its source");
+
+const webFixtureAnswer = {
+  question_id: "FIXTURE-Q01",
+  answer: "Giriş cümlesi. Konu cevabı. Ana düşünce cevabı. Sonuç cümlesi.",
+  answer_sections: {
+    topic: "Konu cevabı.",
+    main_idea: "Ana düşünce cevabı.",
+    support: ["‘Şehir insanı kendine çağırır.’ — Bu örnek ana düşünceyi destekler."]
+  },
+  evidence_quotes: ["Şehir insanı kendine çağırır.", "Kimlik için bir hüviyet gerekir."]
+};
+const webFixtureIndex = {
+  schema_version: "1.1.0",
+  theme_id: "TEMA_03",
+  defaults: {
+    section_units: "one-per-section",
+    structured_answer_text: "omit-summary",
+    array_answer_units: "one-list"
+  },
+  answers: {
+    "FIXTURE-Q01": {
+      units: [
+        { id: "topic", sections: ["topic"] },
+        {
+          id: "main-idea",
+          sections: ["main_idea"],
+          evidence_sections: [{ key: "support", contains_quote_indexes: [0] }]
+        }
+      ],
+      answer_text: {
+        mode: "include",
+        fragments: [
+          { unit: "topic", text: "Giriş cümlesi.", position: "start" },
+          { unit: "main-idea", text: "Sonuç cümlesi.", position: "end" }
+        ]
+      },
+      quote_links: [
+        { index: 0, unit: "topic" },
+        { index: 0, unit: "main-idea" },
+        { index: 1, unit: "main-idea" }
+      ]
+    }
+  }
+};
+
+const vocabularyFixture = {
+  layout: "vocabulary",
+  answer: {
+    question_id: "VOCABULARY-Q01",
+    answer: "Tam cevap. Bağlam uyarısı.",
+    answer_sections: { ilk: "Anlam 1", ikinci: "Anlam 2" }
+  }
+};
+const vocabularyThemeData = {
+  webPresentation: {
+    schema_version: "1.1.0",
+    answers: {
+      "VOCABULARY-Q01": {
+        answer_text: {
+          mode: "include",
+          fragments: [{ unit: "ikinci", text: "Bağlam uyarısı.", position: "end" }]
+        }
+      }
+    }
+  }
+};
+assert.deepEqual(
+  resolveVocabularyAnswerText(vocabularyFixture, vocabularyFixture.answer, vocabularyThemeData),
+  { mode: "include", fragments: [{ unit: "ikinci", text: "Bağlam uyarısı.", position: "end" }] },
+  "Vocabulary answer text resolves to a specific term without replacing vocabulary grouping"
+);
+const fixtureThemeData = { webPresentation: webFixtureIndex };
+validateWebPresentationIndex(webFixtureIndex, {
+  themeNumber: 3,
+  themeId: "TEMA_03",
+  answerById: new Map([[webFixtureAnswer.question_id, webFixtureAnswer]])
+});
+const fixtureWeb = resolveWebPresentation({ layout: "question" }, webFixtureAnswer, fixtureThemeData);
+assert.deepEqual(fixtureWeb.units.map((unit) => unit.section_keys), [["topic"], ["main_idea"]]);
+assert.deepEqual(fixtureWeb.units[1].evidence_sections, [
+  { section_key: "support", contains_quote_indexes: [0] }
+], "Evidence-only source sections stay attached to a response unit");
+assert.deepEqual(fixtureWeb.units.map((unit) => unit.quote_indexes), [[0], [0, 1]],
+  "The same source quotation may explicitly support more than one response unit");
+assert.deepEqual(fixtureWeb.units[1].inline_quote_indexes, [0],
+  "A quote already embedded in a moved evidence section is not opened again for that unit");
+assert.deepEqual(fixtureWeb.answer_text.fragments.map(({ unit, text }) => [unit, text]), [
+  ["topic", "Giriş cümlesi."], ["main-idea", "Sonuç cümlesi."]
+], "Only explicitly selected aggregate-summary fragments are retained");
+
+const evidenceOnlyAnswer = {
+  question_id: "EVIDENCE-ONLY-Q01",
+  answer: "Bu yorum metinden çıkarılabilir. İlgili ayrıntı dayanak oluşturur.",
+  answer_sections: {
+    meaning: "Bu yorum metinden çıkarılabilir.",
+    support: ["‘Ortak anlam kurulamamıştır.’ — Bu ayrıntı yorumu destekler."]
+  },
+  evidence_quotes: ["Ortak anlam kurulamamıştır."]
+};
+const evidenceOnlyIndex = {
+  ...webFixtureIndex,
+  answers: {
+    "EVIDENCE-ONLY-Q01": {
+      units: [
+        { id: "meaning", sections: ["meaning"] },
+        { id: "support", evidence_sections: [{ key: "support", contains_quote_indexes: [0] }] }
+      ],
+      answer_text: {
+        mode: "include",
+        fragments: [{ unit: "support", text: "İlgili ayrıntı dayanak oluşturur.", position: "start" }]
+      },
+      quote_links: [{ index: 0, unit: "support" }]
+    }
+  }
+};
+const evidenceOnlyWeb = resolveWebPresentation({ layout: "question" }, evidenceOnlyAnswer, {
+  webPresentation: evidenceOnlyIndex
+});
+assert.deepEqual(evidenceOnlyWeb.units[1].section_keys, [],
+  "A source-only section can have its own later evidence stage");
+assert.deepEqual(evidenceOnlyWeb.units[1].evidence_sections, [
+  { section_key: "support", contains_quote_indexes: [0] }
+]);
+assert.equal(evidenceOnlyWeb.answer_text.fragments[0].unit, "support",
+  "An evidence-only unit must retain an authored answer excerpt before evidence");
+const evidenceWithoutResponse = structuredClone(evidenceOnlyIndex);
+evidenceWithoutResponse.answers["EVIDENCE-ONLY-Q01"].answer_text = {
+  mode: "omit",
+  reason: "No separate response excerpt"
+};
+assert.throws(() => resolveWebPresentation({ layout: "question" }, evidenceOnlyAnswer, {
+  webPresentation: evidenceWithoutResponse
+}), /evidence-only response unit needs an answer_text fragment/);
+
+const unlinkedVocabularyOverride = structuredClone(vocabularyThemeData);
+unlinkedVocabularyOverride.webPresentation.answers["VOCABULARY-Q01"].answer_text.fragments[0].unit = "missing";
+assert.throws(() => resolveVocabularyAnswerText(vocabularyFixture, vocabularyFixture.answer, unlinkedVocabularyOverride),
+  /answer_text fragment must be an exact source excerpt assigned to a unit/);
+assert.throws(() => validateWebPresentationIndex(webFixtureIndex, {
+  themeNumber: 2,
+  themeId: "TEMA_03",
+  answerById: new Map([[webFixtureAnswer.question_id, webFixtureAnswer]])
+}), /theme_id/);
+const unknownAnswerIndex = structuredClone(webFixtureIndex);
+unknownAnswerIndex.answers["MISSING-Q01"] = {};
+assert.throws(() => validateWebPresentationIndex(unknownAnswerIndex, {
+  themeNumber: 3,
+  themeId: "TEMA_03",
+  answerById: new Map([[webFixtureAnswer.question_id, webFixtureAnswer]])
+}), /unknown answer_id/);
+
+const duplicatePairIndex = structuredClone(webFixtureIndex);
+duplicatePairIndex.answers["FIXTURE-Q01"].quote_links.push({ index: 0, unit: "topic" });
+assert.throws(() => resolveWebPresentation({ layout: "question" }, webFixtureAnswer, {
+  webPresentation: duplicatePairIndex
+}), /duplicate quote link/);
+const fullSummaryIndex = structuredClone(webFixtureIndex);
+fullSummaryIndex.answers["FIXTURE-Q01"].answer_text = { mode: "include", unit: "topic" };
+assert.throws(() => resolveWebPresentation({ layout: "question" }, webFixtureAnswer, {
+  webPresentation: fullSummaryIndex
+}), /structured answer_text must use explicit source fragments/);
+const structuredFullFragmentIndex = structuredClone(webFixtureIndex);
+structuredFullFragmentIndex.answers["FIXTURE-Q01"].units = [
+  { id: "whole-answer", sections: ["topic", "main_idea", "support"] }
+];
+structuredFullFragmentIndex.answers["FIXTURE-Q01"].answer_text = {
+  mode: "include",
+  fragments: [{ unit: "whole-answer", text: webFixtureAnswer.answer }]
+};
+structuredFullFragmentIndex.answers["FIXTURE-Q01"].quote_links = [
+  { index: 0, unit: "whole-answer" }, { index: 1, unit: "whole-answer" }
+];
+assert.throws(() => resolveWebPresentation({ layout: "question" }, webFixtureAnswer, {
+  webPresentation: structuredFullFragmentIndex
+}), /structured answer cannot copy its full summary/);
+const repeatedSectionFragmentIndex = structuredClone(webFixtureIndex);
+repeatedSectionFragmentIndex.answers["FIXTURE-Q01"].answer_text.fragments[0].text = "Konu cevabı.";
+assert.throws(() => resolveWebPresentation({ layout: "question" }, webFixtureAnswer, {
+  webPresentation: repeatedSectionFragmentIndex
+}), /fragment repeats a structured response section/);
+const incompleteCoverageIndex = structuredClone(webFixtureIndex);
+delete incompleteCoverageIndex.answers["FIXTURE-Q01"].units[1].evidence_sections;
+assert.throws(() => resolveWebPresentation({ layout: "question" }, webFixtureAnswer, {
+  webPresentation: incompleteCoverageIndex
+}), /cover each answer_sections key exactly once/);
+
+const worksheet = getStep("mektup", "s40-q5");
+assert.deepEqual(worksheet.presentation.web.units.map((unit) => unit.id), [
+  "topic", "main-idea", "supporting-thoughts", "messages"
+], "ISSUE-105: topic and main idea reveal as separate response units in task order");
+assert.equal(worksheet.presentation.web.answer_text.mode, "omit", "ISSUE-105: aggregate worksheet summary is not repeated");
+assert.deepEqual(answerEvidenceStages(worksheet.presentation.web.units).slice(0, 3).map(({ type, unit }) => `${type}:${unit.id}`), [
+  "answer:topic", "evidence:topic", "answer:main-idea"
+], "ISSUE-105: each response opens before its own linked evidence");
+assert.deepEqual(worksheet.presentation.web.units.flatMap((unit) => unit.quote_indexes).sort((a, b) => a - b), [0, 1, 2, 3, 4]);
+const worksheetTwo = getStep("mektup", "s40-q5b");
+assert.deepEqual(worksheetTwo.presentation.web.units.map((unit) => unit.section_keys[0]), [
+  "Anlatım Biçimleri", "Anlatım Özellikleri", "Düşünceyi Geliştirme Yolları"
+], "ISSUE-105: each worksheet 2 response is separate despite its two-column source layout");
+const comparative = getStep("yazma", "s76-q3");
+assert.deepEqual(comparative.presentation.web.units.map((unit) => unit.section_keys), [["benzerlikler", "farkliliklar"]],
+  "A deliberate comparison remains one response unit");
+
+const themeOneBookPages = fs.readdirSync(path.join(repoRoot, "data/book/grade-11/themes/theme-1/pages"))
+  .filter((name) => /^p\d+\.json$/.test(name))
+  .map((name) => JSON.parse(fs.readFileSync(path.join(repoRoot, "data/book/grade-11/themes/theme-1/pages", name), "utf8")));
+const normalizeBookText = (value, repairLineWrap = false) => {
+  let text = String(value).normalize("NFC").replace(/\s*\(basılı s\.\d+\)\s*$/iu, "");
+  text = text.replace(/[•●]/gu, " ").replace(/[\u00ad\u200b]/gu, "");
+  if (repairLineWrap) {
+    text = text
+      .replace(/-\s*\n\s*[a-h]\s+(?=\p{L})/giu, "")
+      .replace(/-\s*\n\s*/gu, "");
+  }
+  return text.replace(/\s+/gu, " ").trim().toLocaleLowerCase("tr");
+};
+const themeOneBookText = themeOneBookPages.map((entry) => entry.text_layer || "").join("\n");
+const directBookText = normalizeBookText(themeOneBookText);
+const reflowedBookText = normalizeBookText(themeOneBookText, true);
+let verifiedDirectQuotes = 0;
+let verifiedLineWrappedQuotes = 0;
+for (const lesson of lessons.filter((entry) => entry.theme_id === "TEMA_01")) {
+  for (const step of lesson.steps) {
+    for (const quote of step.answer?.evidence_quotes ?? []) {
+      const normalizedQuote = normalizeBookText(quote);
+      if (directBookText.includes(normalizedQuote)) verifiedDirectQuotes += 1;
+      else if (reflowedBookText.includes(normalizeBookText(quote, true))) verifiedLineWrappedQuotes += 1;
+      else assert.fail(`${lesson.lesson_slug}/${step.id}: evidence quote not found in Theme 1 book JSON: ${quote}`);
+    }
+  }
+}
+assert.equal(verifiedDirectQuotes, 178, "Theme 1 source quotes match the book JSON after whitespace and list-marker normalization");
+assert.equal(verifiedLineWrappedQuotes, 9, "Remaining quotes match after printed line-wrap repair");
 
 const karagozQ1 = getStep("karagoz", "s16-q1");
 assert.equal(karagozQ1.content.images?.length, 1, "ISSUE-002: source illustration is part of the first view data");

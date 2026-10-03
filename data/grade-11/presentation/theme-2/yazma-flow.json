@@ -269,7 +269,7 @@
       "prompt": "İzlenim yazınızı değerlendirme ölçütleriyle gözden geçiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sayfada görünen ölçütleri kullanın. Ayrıntılı puanlama ve akran değerlendirme formları karekod bağlantısındadır.",
+        "lead": "Aşağıdaki ölçütler, dört puan düzeyi ve aralıklarıyla birlikte gösterilmiştir. Akran formu ayrı slayttadır.",
         "sections": [
           {
             "title": "Yazı ölçütleri",
@@ -280,8 +280,103 @@
             "body": "Geri bildiriminizi kişiliğe değil, yazıda gözlediğiniz özellik ve örneklere dayandırın."
           },
           {
-            "title": "Karekod formları",
-            "body": "Ayrıntılı puanlama ve akran değerlendirme formları karekod bağlantısındadır. Görmediğiniz ölçüt veya puan aralığı eklemeyin."
+            "title": "Formları indirme",
+            "body": "Dereceli puanlama anahtarı ve akran değerlendirme formu bu sayfadaki indirme bağlantılarındadır."
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye uygun değildir"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye kısmen uygundur"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye göre belirlenmiştir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde içeriğe ve hedef kitleye uygun, oldukça başarılı bir dil ve üslup kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Özgünlük  (20 puan). Metinde duygu, düşünce ve istekler özgün biçimde iletilmemiştir"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Özgünlük  (20 puan). Metin, özgünlük açısından kısmen başarılıdır"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Özgünlük  (20 puan). Metinde duygu, düşünce ve istekler özgün biçimde ifade edilmiştir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Özgünlük  (20 puan). Metinde duygu, düşünce ve istekler oldukça özgün biçimde ifade edilmiştir"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metinde öznel ve nesnel ifadelere yer verilmemiştir"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metinde öznel ve nesnel ifadelere kısmen yer verilmiştir"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metinde öznel ve nesnel ifadeler yeterli düzeydedir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metin, öznel ve nesnel ifadelere yer verilmesi açısından oldukça başarılıdır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metinde görsel ögelere yer verilmemiştir"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metinde görsel ögelere kısmen yer verilmiştir"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metin görsel ögelerle desteklenmiştir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metin görsel ögelerle başarılı biçimde desteklenmiştir"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–5 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından oldukça zayıftır"
+          },
+          {
+            "title": "Kabul edilebilir · 6–10 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 11–15 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından iyi düzeydedir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından oldukça başarılıdır"
+          },
+          {
+            "title": "Toplam puan ve hesaplama",
+            "body": "Her ölçütten seçtiğiniz puanları toplayınız. beş ölçüt (dil ve üslup, özgünlük, görsellerden yararlanma, yazım ve noktalama, öznel ve nesnel ifadelere yer verme) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 5, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.153 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=153"
+          },
+          {
+            "label": "Çevrim içi müze gezisi izlenim yazısı dereceli puanlama anahtarı",
+            "url": "assets/assessment-documents/19XU4J2N.docx",
+            "download": true
           }
         ]
       }
@@ -336,6 +431,43 @@
           "Bir Kısmen / Hayır ölçütü seçin ve ilk taslaktan kanıtını gösterin; bu ölçüte yönelik tek, uygulanabilir bir değişiklik belirleyin.",
           "Yazıyı bu hedefe göre gözden geçirip düzeltin. Sonra Öz Değerlendirme ekranına geri dönerek aynı ölçütü yeni metinde yeniden kontrol edin; gerekirse döngüyü yineleyin.",
           "Sonraki çalışma için yeni hedef belirleyin ve düzeltilmiş yazınızı sınıf/okul ortamında paylaşın."
+        ]
+      }
+    },
+    {
+      "id": "s153-peer-form",
+      "source_record_id": "T02-S0146",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Basılı s.153 — Akran Değerlendirme Formu",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçütü gözlediğiniz çalışmaya göre Evet, Kısmen veya Hayır olarak işaretleyin. Geri bildiriminizi metin ya da performansta gördüğünüz kanıta dayandırın.",
+        "items": [
+          "Metnin içeriğine uygun bir başlık belirledi ve yazıyı başlatma, sürdürme, bitirme ifadelerini etkili biçimde kullandı.",
+          "Millî ve manevi değerler ile kültürel unsurlara dikkat ederek yazısında toplumsal hassasiyet oluşturacak ögeler kullanmaktan kaçındı.",
+          "Ele aldığı konuyu desteklemek amacıyla düşünceyi geliştirme yollarından yararlandı.",
+          "Yazdığı metin aracılığıyla alıcıya vermek istediği iletileri açık veya örtük bir şekilde ayrıntılandırarak ifade etti.",
+          "Yazısında Türkçeyi bilinçli ve özenli kullanmaya dikkat ederek Türkçe dil yapılarına, yazım ve noktalama kurallarına özen gösterdi.",
+          "Metnin içeriğini zenginleştirmek amacıyla görsel ögelere ve başka metinlerden alıntılara yer verdi.",
+          "Metnin içeriğine ve hedef kitleye göre belirlediği söz varlığını bağlama uygun şekilde kullandı.",
+          "Metninde karşılaştırma ve sınıflandırmalardan yararlanarak özgün ifadeler kullandı."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.153 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=153"
+          },
+          {
+            "label": "Öğretmen için akran değerlendirme formunu indir",
+            "url": "assets/assessment-documents/OGM2025TDE11153akran.docx",
+            "download": true
+          }
         ]
       }
     },

@@ -22,6 +22,12 @@
           "Gösteri/seyirlik olma özelliğini işaretleyin.",
           "Taklit ve doğaçlamayla ilgili ifadeleri bulun.",
           "Yazılı metin bulunmamasının gerekçesini metinden çıkarın."
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.15 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=15"
+          }
         ]
       }
     },
@@ -206,7 +212,15 @@
       "layout": "vocabulary",
       "prompt": "Bağlamdan hareketle altı çizili kelimelerin anlamlarını tahmin ediniz; ardından sözlükten kontrol ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "density": "compact"
+      "density": "compact",
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.25 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=25"
+          }
+        ]
+      }
     },
     {
       "id": "s25-q2",
@@ -259,7 +273,13 @@
             "body": "Kısa kapanış konuşmasının yapıldığı, kusurlar için özür dilenip sonraki oyunun duyurulabildiği bölümdür."
           }
         ],
-        "note": "Kitap örnekleri incelendikten sonra bu şemayı kısa hafıza desteği olarak kullanın."
+        "note": "Kitap örnekleri incelendikten sonra bu şemayı kısa hafıza desteği olarak kullanın.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.26 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=26"
+          }
+        ]
       }
     },
     {
@@ -530,6 +550,12 @@
           "Grupları Metin–Tarih, Metin–Sosyoloji ve Metin–Psikoloji başlıklarına ayırın.",
           "Bulgularınızı metin kanıtlarıyla ve kullandığınız ek kaynaklarla ilişkilendirin.",
           "Sonuçları sınıfta paylaşın."
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.34 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=34"
+          }
         ]
       }
     },
@@ -623,6 +649,47 @@
           {
             "title": "Değerlendirmeden sonra",
             "body": "“Kısmen” veya “Hayır” işaretlediğiniz becerileri gözden geçiriniz; araştırarak veya öğretmeninizden destek alarak eksiklerinizi tamamlayınız. Bir grup arkadaşınızın çalışmasını kitaptaki karekodda verilen Akran Değerlendirme Formu ile değerlendiriniz."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.35 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=35"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s35-peer-form",
+      "source_record_id": "T01-S0020",
+      "layout": "assessment",
+      "density": "compact",
+      "prompt": "Basılı s.35 — Akran Değerlendirme Formu",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçütü gözlediğiniz çalışmaya göre Evet, Kısmen veya Hayır olarak işaretleyin. Geri bildiriminizi metin ya da performansta gördüğünüz kanıta dayandırın.",
+        "items": [
+          "Metnin dil ve üslup özelliklerini belirledi.",
+          "Dil ve üslup özelliklerinin anlama katkısını değerlendirdi.",
+          "Analitik ve eleştirel düşünebilme becerilerinden yararlandı.",
+          "Metindeki çatışmalar ile metnin dramatik ögeleri (mekân, zaman, kişiler) arasında ilişki kurabildi.",
+          "Türkçenin dil yapısına, işlevine ve bağdaşıklık ögelerine dikkat etti.",
+          "Diğer gruplardan gelen geri bildirimler doğrultusunda görüşlerini gözden geçirdi."
+        ],
+        "scale": [
+          "Evet",
+          "Kısmen",
+          "Hayır"
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.35 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=35"
+          },
+          {
+            "label": "Öğretmen için akran değerlendirme formunu indir",
+            "url": "assets/assessment-documents/OGM2025TDE11135akran.docx",
+            "download": true
           }
         ]
       }

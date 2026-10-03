@@ -27,6 +27,14 @@ Yoğun içerikler bilgileri değiştirmeden birkaç sunum parçasına ayrılır.
 
 Son konum hem tarayıcıda hem adres çubuğunda (`#/karagoz/23/1` = ders / slayt / açık katman; son `/2` varsa parçayı belirtir) tutulur; bu bağlantı yer imi olarak kullanılabilir.
 
+## Rubrik ve akran değerlendirme dosyaları
+
+Kitabın 13 QR bağlantılı değerlendirme kaynağı ilgili dersin menüsünde ve kaynak sayfasına ait görev slaytlarında **Değerlendirme formları** bölümünde bulunur. **EBA form kaynağını aç** veya **Kitaptaki karekodu aç** ile resmî dosyayı edindikten sonra **Dosya ekle** üzerinden PDF, PNG veya JPEG seçin (en fazla 20 MB). **Formu indir**, seçtiğiniz dosyanın aynısını indirir; **Sunumda göster** sunum penceresinde formu açar. **Sunuma dön** veya Escape mevcut slayta geri getirir. PDF sayfaları ve yakınlaştırma tarayıcının PDF görüntüleyicisiyle yönetilir.
+
+Dosyalar yalnız aynı cihaz ve tarayıcının IndexedDB deposunda saklanır; sunucuya gönderilmez. Sayfa yenilendiğinde korunur ve dosya eklendikten sonra ağ gerektirmez. Tarayıcı/site verileri temizlenirse dosyaları yeniden eklemek gerekir. Başka cihazlara aktarılmaz; **Bu cihazda şifreyi unut** dosyaları silmez. İçerik doğrulanmış sayılmaz; doğru resmî form dosyasını seçme sorumluluğu öğretmendedir.
+
+Resmî QR form dosyaları uygulamayla birlikte verilmez; EBA oturumu/erişimi gerekebilir. Belirsiz QR hedefleri doğru kaynağı göstermek için kitap sayfasına yönlendirir. Eklenen dosyalar **PowerPoint dışa aktarımına dahil değildir**; web sunumunda ayrı form görünümünde gösterilir.
+
 ## Şifre
 
 Ders verisi build sırasında `SUNUM_SIFRE` ile **AES-256-GCM** (PBKDF2-SHA256, 250 000 tur) şifrelenir; sitede yalnız şifreli `data.<sürüm>.bin` bulunur. Şifre bilinmeden içerik okunamaz. Şifre ekranında "Bu cihazda hatırla" seçilirse şifre o tarayıcıda saklanır; menüdeki **"Bu cihazda şifreyi unut"** ile silinir.

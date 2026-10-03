@@ -7,6 +7,11 @@ import zlib from "node:zlib";
 import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import { collectThinkingRecords, thinkingRecordKey } from "./thinking-data.mjs";
+import { assessmentFormsForLessons } from "./assessment-forms.mjs";
+import {
+  resolveVocabularyAnswerText,
+  resolveWebPresentation
+} from "../../lesson-player/scripts/web-presentation.mjs";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -28,6 +33,11 @@ decipher.setAuthTag(tag);
 const catalog = JSON.parse(zlib.gunzipSync(Buffer.concat([decipher.update(body), decipher.final()])).toString("utf8"));
 
 const canonical = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
+const formIndex = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/source/textbook-forms-index.json"), "utf8"));
+const bookSource = canonical.flatMap((lesson) => lesson.steps).flatMap((step) => step.content?.sources || [])
+  .find((source) => source.url.startsWith("https://tymm.meb.gov.tr/assets/pdf/") && source.url.includes("11sinif-ders-kitabi"));
+const expectedForms = assessmentFormsForLessons(formIndex, canonical, bookSource.url.split("#")[0]);
+for (const lesson of catalog.lessons) assert.deepEqual(lesson.forms, expectedForms.get(lesson.id), `${lesson.id} form kaynakları şifreli üretim kataloğunda korunmalı`);
 const sourceThinking = collectThinkingRecords(path.join(repoRoot, "data/grade-11/presentation"), canonical);
 const actualThinking = new Map();
 const actualThinkingByTheme = new Map();
@@ -61,6 +71,19 @@ const forbiddenPresentationMeta = [
 assert.equal(catalog.lessons.length, canonical.length, "ders sayısı");
 let studentFacingThemeSteps = 0;
 let otherThemeSupportLayers = 0;
+let themeOneWebUnits = 0;
+let themeOneEvidenceQuotes = 0;
+const webThemes = new Set();
+const webUnitCounts = new Map();
+const webQuoteCounts = new Map();
+const mappedSidecarOverrides = new Map();
+const webSidecars = new Map([1, 2, 3, 4].map((themeNumber) => {
+  const themeId = `TEMA_0${themeNumber}`;
+  const file = path.join(repoRoot, `data/grade-11/presentation/theme-${themeNumber}/web-presentation.json`);
+  const index = JSON.parse(fs.readFileSync(file, "utf8"));
+  assert.equal(index.theme_id, themeId, `${themeId} web sidecar is scoped to its theme`);
+  return [themeId, { index, overrideIds: new Set(Object.keys(index.answers)) }];
+}));
 for (const [i, lesson] of canonical.entries()) {
   const out = catalog.lessons[i];
   assert.equal(out.slug, lesson.lesson_slug);
@@ -93,14 +116,87 @@ for (const [i, lesson] of canonical.entries()) {
       assert.ok(!s.reveals.includes("thinking"), `${lesson.lesson_id}/${s.id} kaynakta olmayan Düşünürken katmanı açılmamalı`);
     }
     if (step.id === "s17-q2" && lesson.lesson_slug === "karagoz") {
-      assert.deepEqual(s.reveals, ["dictionary", "answer", "evidence"]);
+      assert.deepEqual(s.reveals, ["dictionary", "answer"]);
       assert.ok(s.answer.dictionary_terms.length > 0, "s.17/2 sözlük desteği bulunmalı");
+      assert.equal(s.presentation.web.units.reduce((count, unit) => count + unit.quote_indexes.length, 0), 6,
+        "ISSUE-105: six s.17/2 quotations are linked to their response units");
     }
     if (step.id === "s25-q1" && lesson.lesson_slug === "karagoz") {
       assert.deepEqual(Object.keys(s.answer.answer_sections), ["Dadı", "Esbab", "Murad", "Bendeniz", "Silsile", "İspir"]);
       assert.equal(s.prompt, "Bağlamdan hareketle altı çizili kelimelerin anlamlarını tahmin ediniz; ardından sözlükten kontrol ediniz.");
     }
     if (step.answer?.answer) assert.equal(s.answer.answer, step.answer.answer, `${s.id} cevap`);
+    if (webSidecars.has(lesson.theme_id) && step.answer && step.layout === "vocabulary") {
+      const sidecar = webSidecars.get(lesson.theme_id);
+      const webAnswerText = s.presentation?.web_answer_text;
+      const expectedAnswerText = resolveVocabularyAnswerText(step, step.answer, {
+        webPresentation: sidecar.index
+      });
+      assert.deepEqual(webAnswerText, step.presentation?.web_answer_text,
+        `${lesson.theme_id}/${s.id}: vocabulary text metadata reaches the encrypted catalog`);
+      assert.deepEqual(webAnswerText, expectedAnswerText,
+        `${lesson.theme_id}/${s.id}: vocabulary text metadata matches its sidecar`);
+      if (sidecar.overrideIds.has(step.answer.question_id)) {
+        if (!mappedSidecarOverrides.has(lesson.theme_id)) mappedSidecarOverrides.set(lesson.theme_id, new Set());
+        mappedSidecarOverrides.get(lesson.theme_id).add(step.answer.question_id);
+      }
+      if (webAnswerText) webThemes.add(lesson.theme_id);
+    }
+    if (webSidecars.has(lesson.theme_id) && step.answer && step.layout !== "vocabulary") {
+      const web = s.presentation?.web;
+      assert.ok(web, `${lesson.theme_id}/${s.id}: web response units reach the encrypted site catalog`);
+      assert.deepEqual(web, step.presentation?.web,
+        `${lesson.theme_id}/${s.id}: encrypted web metadata matches the canonical production catalog`);
+      const expectedWeb = resolveWebPresentation(step, step.answer, {
+        webPresentation: webSidecars.get(lesson.theme_id).index
+      });
+      assert.deepEqual(web, expectedWeb,
+        `${lesson.theme_id}/${s.id}: production catalog contains its normalized sidecar settings`);
+      assert.ok(!s.reveals.includes("evidence"), `${s.id}: linked evidence stays inside the answer sequence`);
+      webThemes.add(lesson.theme_id);
+      webUnitCounts.set(lesson.theme_id, (webUnitCounts.get(lesson.theme_id) ?? 0) + web.units.length);
+      webQuoteCounts.set(lesson.theme_id, (webQuoteCounts.get(lesson.theme_id) ?? 0) + (step.answer.evidence_quotes?.length ?? 0));
+      const quotePairs = web.units.flatMap((unit) => unit.quote_indexes.map((index) => `${index}\u0000${unit.id}`));
+      assert.equal(new Set(quotePairs).size, quotePairs.length,
+        `${lesson.theme_id}/${s.id}: a quote-to-unit pair is not duplicated`);
+      const linkedQuoteIndexes = new Set(web.units.flatMap((unit) => unit.quote_indexes));
+      assert.deepEqual([...linkedQuoteIndexes].sort((a, b) => a - b),
+        (step.answer.evidence_quotes ?? []).map((_, index) => index),
+        `${lesson.theme_id}/${s.id}: every source quote reaches at least one response unit`);
+      for (const unit of web.units) {
+        const linked = new Set(unit.quote_indexes);
+        for (const index of unit.inline_quote_indexes ?? []) {
+          assert.ok(linked.has(index), `${lesson.theme_id}/${s.id}: inline evidence was linked to its unit`);
+        }
+        for (const section of unit.evidence_sections ?? []) {
+          assert.ok(!unit.section_keys.includes(section.section_key),
+            `${lesson.theme_id}/${s.id}: evidence section does not also appear as a response section`);
+        }
+      }
+      const overrideIds = webSidecars.get(lesson.theme_id).overrideIds;
+      if (overrideIds.has(step.answer.question_id)) {
+        if (!mappedSidecarOverrides.has(lesson.theme_id)) mappedSidecarOverrides.set(lesson.theme_id, new Set());
+        mappedSidecarOverrides.get(lesson.theme_id).add(step.answer.question_id);
+      }
+      if (lesson.theme_id === "TEMA_01") {
+        themeOneWebUnits += web.units.length;
+        themeOneEvidenceQuotes += step.answer.evidence_quotes?.length ?? 0;
+      }
+      const sections = step.answer.answer_sections;
+      if (sections && !Array.isArray(sections)) {
+        const configured = web.units.flatMap((unit) => [
+          ...unit.section_keys,
+          ...(unit.evidence_sections ?? []).map((entry) => entry.section_key)
+        ]);
+        assert.equal(new Set(configured).size, Object.keys(sections).length, `${s.id}: each structured response or evidence section appears once`);
+        assert.deepEqual([...configured].sort(), Object.keys(sections).sort(), `${s.id}: no structured response is missing`);
+        if (web.answer_text.mode === "include" && web.units.length > 1) {
+          assert.ok(web.answer_text.fragments?.length, `${s.id}: multi-unit summaries include only explicit excerpts`);
+          assert.ok(web.answer_text.fragments.every((fragment) => fragment.text !== step.answer.answer),
+            `${s.id}: the complete summary is not copied into an early unit`);
+        }
+      }
+    }
     if (lesson.theme_id === "TEMA_01" || lesson.theme_id === "TEMA_02") {
       studentFacingThemeSteps += 1;
       assert.ok(!s.reveals.includes("guidance"), `${s.id} öğretmen yönlendirmesi sunuma sızmamalı`);
@@ -123,9 +219,18 @@ for (const [i, lesson] of canonical.entries()) {
     }
   }
 }
+assert.deepEqual([...webThemes].sort(), [...webSidecars.keys()].sort(),
+  "all four theme sidecars contribute settings to the encrypted production catalog");
+for (const [themeId, overrideIds] of webSidecars) {
+  assert.deepEqual([...(mappedSidecarOverrides.get(themeId) ?? new Set())].sort(), [...overrideIds.overrideIds].sort(),
+    `${themeId}: each sidecar override resolves to an answer used by a production lesson`);
+  console.log(`[sunum-web] ${themeId}: ${webUnitCounts.get(themeId)} answer units and ${webQuoteCounts.get(themeId)} evidence quotes reached encrypted catalog.`);
+}
 assert.ok(studentFacingThemeSteps > 0, "TEMA_01 ve TEMA_02 sunum adımları kapsanmalı");
 assert.ok(otherThemeSupportLayers > 0, "Diğer temaların mevcut destek katmanları korunmalı");
 assert.ok(!JSON.stringify(catalog).includes('"note"'), "note alanı sunum verisinde olmamalı");
+assert.equal(themeOneWebUnits, 493, "Theme 1 structured answers are revealed as individual response units");
+assert.equal(themeOneEvidenceQuotes, 187, "Theme 1 evidence quotations are all linked to response units");
 
 assert.deepEqual(
   [...actualThinking.keys()].sort(),

@@ -42,7 +42,13 @@
           "Seçiminizi anlam, karakter ve dönüştürülebilirlik bakımından gerekçelendirin.",
           "Sınıf panosunda akran görüşü alıp seçimi gözden geçirin."
         ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Gerçek diyalog ve kişilere ilişkin ayrıntılar QR dinleme kaydından gelmelidir. 'Başusta', 'çırak', gizli atölye, silah üretimi, devriye, torna sesi gibi ayrıntıları kayıt görülmeden hazır cevap olarak kullanmayın. Seçim ölçütleri öğrencinin gerekçelendirmesine açıktır."
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Gerçek diyalog ve kişilere ilişkin ayrıntılar QR dinleme kaydından gelmelidir. 'Başusta', 'çırak', gizli atölye, silah üretimi, devriye, torna sesi gibi ayrıntıları kayıt görülmeden hazır cevap olarak kullanmayın. Seçim ölçütleri öğrencinin gerekçelendirmesine açıktır.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.216 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=216"
+          }
+        ]
       }
     },
     {
@@ -86,7 +92,13 @@
           "Seçilen türün gerekli anlatım yollarını belirleyin.",
           "Bağlamdan kopma veya karakteri değiştirme riskini önceden düşünün."
         ],
-        "note": "Kitaptaki görev süresi 8 ders saatidir.\n\nÖğretmen için kaynak ve değerlendirme notu: Amaç, tür ve yazma stratejisini öğrenci adına 'millî bilinç', 'fedakârlık', 'hikâye' veya 'anı' diye sabitlemeyin. Kitap yalnız örnek olarak yazma amacı için 'ikna etme, bilgilendirme vb.' ifadesini verir."
+        "note": "Kitaptaki görev süresi 8 ders saatidir.\n\nÖğretmen için kaynak ve değerlendirme notu: Amaç, tür ve yazma stratejisini öğrenci adına 'millî bilinç', 'fedakârlık', 'hikâye' veya 'anı' diye sabitlemeyin. Kitap yalnız örnek olarak yazma amacı için 'ikna etme, bilgilendirme vb.' ifadesini verir.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.226 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=226"
+          }
+        ]
       }
     },
     {
@@ -195,7 +207,13 @@
           "Özgün ve tutarlı üslup.",
           "İçeriğe uygun başlık."
         ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Kuralları 'usta olgun konuşur, çırak telaşlıdır', 'vatan sevgisi örtük verilir' gibi QR kaydı görülmeden üretilmiş içeriklerle örneklendirmeyin. Seçilen gerçek diyaloğun bağlamını koruyun."
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Kuralları 'usta olgun konuşur, çırak telaşlıdır', 'vatan sevgisi örtük verilir' gibi QR kaydı görülmeden üretilmiş içeriklerle örneklendirmeyin. Seçilen gerçek diyaloğun bağlamını koruyun.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.216 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=216"
+          }
+        ]
       }
     },
     {
@@ -256,7 +274,137 @@
           "Geri bildirimden sonra hangi değişikliği yaptınız?",
           "Sonraki yazma göreviniz için hangi somut hedefi koydunuz?"
         ],
-        "note": "QR dereceli puanlama anahtarı görülmeden puan aralığı veya ek rubrik ölçütü üretilmez.\n\nÖğretmen için kaynak ve değerlendirme notu: QR Dereceli Puanlama Anahtarı'nın görünmeyen puan aralıklarını veya ölçütlerini uydurmayın. Basılı sayfada görünen değerlendirme ölçütleri kullanılabilir."
+        "note": "QR dereceli puanlama anahtarı görülmeden puan aralığı veya ek rubrik ölçütü üretilmez.\n\nÖğretmen için kaynak ve değerlendirme notu: QR Dereceli Puanlama Anahtarı'nın görünmeyen puan aralıklarını veya ölçütlerini uydurmayın. Basılı sayfada görünen değerlendirme ölçütleri kullanılabilir.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.228 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=228"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s228-rubric",
+      "source_record_id": "T03-S0128",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Diyaloğu başka türe dönüştürme performans görevi rubriği — ölçüt ve puan düzeyleri",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Her ölçütte dört düzey ve puan aralığı verilmiştir. Çalışmanızı gözden geçirirken her ölçüt için uygun düzeyi ve karşılığındaki puanı inceleyin.",
+        "sections": [
+          {
+            "title": "Başlangıç düzeyinde · 1–6 puan",
+            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslubun doğru ve yerinde kullanımı alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 7–10 puan",
+            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslup kısmen doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "İyi · 11–14 puan",
+            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslup doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "Çok iyi · 15–18 puan",
+            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslup çok iyi düzeyde, doğru ve yerinde kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–6 puan",
+            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde başlık kullanılmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 7–10 puan",
+            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde amaç ve içeriğe kısmen uygun bir başlık kullanılmıştır"
+          },
+          {
+            "title": "İyi · 11–14 puan",
+            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde amaç ve içeriğe uygun bir başlık kullanılmıştır"
+          },
+          {
+            "title": "Çok iyi · 15–18 puan",
+            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde amaç ve içeriğe oldukça uygun,  etkili bir başlık kullanılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metinde özgünlük alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından yeterli düzeydedir"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından oldukça başarılıdır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına uygun olmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına kısmen uygundur"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına uygun olmuştur"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına uygun ve başarılı bir şekilde yapılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metinde yazım ve noktalama kurallarına uygunluk alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metin yazım ve noktalama kurallarına kısmen uygun yazılmıştır"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metin yazım ve noktalama kurallarına uygun yazılmıştır"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metin yazım ve noktalama kurallarına oldukça uygun yazılmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadelerin kullanımı alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadelerin kullanımı kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 9–12 puan",
+            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadelerin kullanımı iyi düzeydedir"
+          },
+          {
+            "title": "Çok iyi · 13–16 puan",
+            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadeler oldukça iyi düzeyde kullanılmıştır"
+          },
+          {
+            "title": "Toplam puan ve hesaplama",
+            "body": "Her ölçütten seçtiğiniz puanları toplayınız. altı ölçüt (dil ve üslup, başlık kullanımı, özgünlük, konunun uygunluğu, yazım ve noktalama, öznel ve nesnel ifadelere yer verme) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 6, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.228 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=228"
+          },
+          {
+            "label": "Diyaloğu başka türe dönüştürme dereceli puanlama anahtarı",
+            "url": "assets/assessment-documents/19XU4J2P.docx",
+            "download": true
+          }
+        ]
       }
     },
     {

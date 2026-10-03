@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { deflateSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
@@ -42,6 +44,14 @@ const bytes = new Uint8Array(await blob.arrayBuffer());
 assert.equal(blob.type, "application/vnd.openxmlformats-officedocument.presentationml.presentation");
 assert.deepEqual([...bytes.slice(0, 4)], [0x50, 0x4b, 0x03, 0x04], "PPTX is a ZIP package");
 assert.equal(pptxFilename({ slug: "dinleme-izleme" }), "dinleme-izleme.pptx");
+const packageDir = fs.mkdtempSync(path.join(os.tmpdir(), "sunum-pptx-test-"));
+try {
+  const packagePath = path.join(packageDir, "export.pptx");
+  fs.writeFileSync(packagePath, bytes);
+  execFileSync("unzip", ["-t", packagePath], { stdio: "ignore" });
+} finally {
+  fs.rmSync(packageDir, { recursive: true, force: true });
+}
 
 const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
 const decoder = new TextDecoder();

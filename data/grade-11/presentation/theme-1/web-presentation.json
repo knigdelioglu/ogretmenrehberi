@@ -1,0 +1,1255 @@
+{
+  "schema_version": "1.1.0",
+  "theme_id": "TEMA_01",
+  "defaults": {
+    "section_units": "one-per-section",
+    "structured_answer_text": "omit-summary",
+    "array_answer_units": "one-list"
+  },
+  "answers": {
+    "T1-P14-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T1-P15-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T1-P15-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        },
+        {
+          "index": 1,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T1-P17-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Dönemin dilini yansıtan kelime ve tamlamalar"
+        },
+        {
+          "index": 1,
+          "unit": "Dönemin dilini yansıtan kelime ve tamlamalar"
+        },
+        {
+          "index": 2,
+          "unit": "Dönemin dilini yansıtan kelime ve tamlamalar"
+        },
+        {
+          "index": 3,
+          "unit": "Dönemin dilini yansıtan kelime ve tamlamalar"
+        },
+        {
+          "index": 4,
+          "unit": "Dönemin dilini yansıtan cümleler"
+        },
+        {
+          "index": 5,
+          "unit": "Dönemin dilini yansıtan cümleler"
+        }
+      ]
+    },
+    "T1-P27-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Hacivat"
+        },
+        {
+          "index": 1,
+          "unit": "Karagöz"
+        }
+      ]
+    },
+    "T1-P28-Q01": {
+      "units": [
+        {
+          "id": "language-differences",
+          "sections": [
+            "Çelebi ve Hacivat",
+            "Karagöz"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Metinden örnekler",
+              "contains_quote_indexes": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "language-differences"
+        },
+        {
+          "index": 1,
+          "unit": "language-differences"
+        }
+      ]
+    },
+    "T1-P29-Q01": {
+      "units": [
+        {
+          "id": "relationship",
+          "evidence_sections": [
+            {
+              "key": "Metin And'ın açıklamasından dayanaklar",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Yazıcı metninden örnek",
+              "contains_quote_indexes": []
+            }
+          ]
+        },
+        {
+          "id": "interpretive-limit",
+          "sections": [
+            "Yorum sınırı"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "relationship",
+            "text": "Metin And'ın açıklamasına göre iki kişinin özellikleri birbirini tamamlar:",
+            "position": "start"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "relationship"
+        },
+        {
+          "index": 1,
+          "unit": "relationship"
+        },
+        {
+          "index": 2,
+          "unit": "relationship"
+        }
+      ]
+    },
+    "T1-P29-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        },
+        {
+          "index": 1,
+          "unit": "answer"
+        },
+        {
+          "index": 2,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T1-P30-Q04": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Açık İletiler"
+        },
+        {
+          "index": 1,
+          "unit": "Örtük İletiler"
+        }
+      ]
+    },
+    "T1-P32-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Kişiler"
+        },
+        {
+          "index": 1,
+          "unit": "Yer (Mekân)"
+        },
+        {
+          "index": 2,
+          "unit": "Dramatik örgü"
+        },
+        {
+          "index": 3,
+          "unit": "Çatışma"
+        },
+        {
+          "index": 4,
+          "unit": "Dramatik örgü"
+        }
+      ]
+    },
+    "T1-P32-Q04": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Çatışmaların tarafları"
+        },
+        {
+          "index": 1,
+          "unit": "Çatışmaların kaynağı"
+        },
+        {
+          "index": 2,
+          "unit": "Zamanın etkisi"
+        },
+        {
+          "index": 3,
+          "unit": "Çatışmaların kaynağı"
+        }
+      ]
+    },
+    "T1-P32-Q05": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Kişiler (temel unsur)"
+        },
+        {
+          "index": 1,
+          "unit": "Kişiler (temel unsur)"
+        },
+        {
+          "index": 2,
+          "unit": "Kişiler (temel unsur)"
+        },
+        {
+          "index": 3,
+          "unit": "Kişiler (temel unsur)"
+        },
+        {
+          "index": 4,
+          "unit": "Kişiler (temel unsur)"
+        }
+      ]
+    },
+    "T1-P33-Q07": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Hacivat"
+        },
+        {
+          "index": 1,
+          "unit": "Karagöz"
+        },
+        {
+          "index": 2,
+          "unit": "Hacivat"
+        },
+        {
+          "index": 3,
+          "unit": "Karagöz"
+        },
+        {
+          "index": 4,
+          "unit": "Hacivat"
+        },
+        {
+          "index": 5,
+          "unit": "Karagöz"
+        },
+        {
+          "index": 6,
+          "unit": "Karagöz"
+        }
+      ]
+    },
+    "T1-P34-Q08": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "1. Cümle (“yazılmış”)"
+        },
+        {
+          "index": 1,
+          "unit": "2. Cümle (“derken”, “çıkarak”)"
+        },
+        {
+          "index": 2,
+          "unit": "3. Cümle (“beklemek”)"
+        },
+        {
+          "index": 3,
+          "unit": "4. Cümle (“oturanlar”)"
+        },
+        {
+          "index": 4,
+          "unit": "5. Cümle (“sallandukça”)"
+        },
+        {
+          "index": 5,
+          "unit": "6. Cümle (“geçerken”)"
+        }
+      ]
+    },
+    "T1-P35-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 1,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 2,
+          "unit": "c) Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi"
+        },
+        {
+          "index": 3,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 4,
+          "unit": "b) Çatışmaların ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 5,
+          "unit": "b) Çatışmaların ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 6,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 7,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 8,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 9,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 10,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 11,
+          "unit": "c) Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi"
+        },
+        {
+          "index": 12,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 13,
+          "unit": "c) Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi"
+        },
+        {
+          "index": 14,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        },
+        {
+          "index": 15,
+          "unit": "c) Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi"
+        },
+        {
+          "index": 16,
+          "unit": "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+        }
+      ]
+    },
+    "T1-P36-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "İletişim benzerliği"
+        }
+      ]
+    },
+    "T1-P36-Q03": {
+      "units": [
+        {
+          "id": "positions",
+          "sections": [
+            "Katılan yaklaşım",
+            "Katılmayan yaklaşım"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "positions"
+        }
+      ]
+    },
+    "T1-P37-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Tür tahmini"
+        },
+        {
+          "index": 1,
+          "unit": "İçerik tahmini"
+        }
+      ]
+    },
+    "T1-P40-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Haberleşme ve dertleşme"
+        },
+        {
+          "index": 1,
+          "unit": "Edebî düşünce paylaşımı"
+        },
+        {
+          "index": 2,
+          "unit": "Çalışmaya ve yazmaya teşvik"
+        },
+        {
+          "index": 3,
+          "unit": "Çalışmaya ve yazmaya teşvik"
+        }
+      ]
+    },
+    "T1-P40-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Kişisel haberleşme"
+        },
+        {
+          "index": 1,
+          "unit": "Edebî ve düşünsel paylaşım"
+        },
+        {
+          "index": 2,
+          "unit": "Edebî mektup niteliği"
+        },
+        {
+          "index": 3,
+          "unit": "Edebî ve düşünsel paylaşım"
+        }
+      ]
+    },
+    "T1-P40-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Karakterlerin canlılığı"
+        },
+        {
+          "index": 1,
+          "unit": "Karakterlerin canlılığı"
+        },
+        {
+          "index": 2,
+          "unit": "Geçmiş ve psikolojik derinlik"
+        },
+        {
+          "index": 3,
+          "unit": "Rus-Fransız romanı karşılaştırması"
+        },
+        {
+          "index": 4,
+          "unit": "Rus-Fransız romanı karşılaştırması"
+        }
+      ]
+    },
+    "T1-P40-Q04": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Tekniğin değerlendirilmesi"
+        },
+        {
+          "index": 1,
+          "unit": "Tekniğin değerlendirilmesi"
+        },
+        {
+          "index": 2,
+          "unit": "Tekniğin değerlendirilmesi"
+        },
+        {
+          "index": 3,
+          "unit": "Tekniğin değerlendirilmesi"
+        }
+      ]
+    },
+    "T1-P40-Q05": {
+      "units": [
+        {
+          "id": "topic",
+          "sections": [
+            "Konu"
+          ]
+        },
+        {
+          "id": "main-idea",
+          "sections": [
+            "Ana Düşünce"
+          ]
+        },
+        {
+          "id": "supporting-thoughts",
+          "sections": [
+            "Yardımcı Düşünceler"
+          ]
+        },
+        {
+          "id": "messages",
+          "sections": [
+            "Açık ve Örtük İletiler"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "omit",
+        "reason": "Toplu Konu/Ana düşünce özeti bu dört yapılandırılmış yanıtı tekrar ediyor."
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "main-idea"
+        },
+        {
+          "index": 1,
+          "unit": "main-idea"
+        },
+        {
+          "index": 2,
+          "unit": "main-idea"
+        },
+        {
+          "index": 3,
+          "unit": "messages"
+        },
+        {
+          "index": 4,
+          "unit": "topic"
+        }
+      ]
+    },
+    "T1-P40-Q05B": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Düşünceyi Geliştirme Yolları"
+        },
+        {
+          "index": 1,
+          "unit": "Düşünceyi Geliştirme Yolları"
+        },
+        {
+          "index": 2,
+          "unit": "Düşünceyi Geliştirme Yolları"
+        }
+      ]
+    },
+    "T1-P41-Q01": {
+      "units": [
+        {
+          "id": "source-synthesis",
+          "sections": [
+            "Kaynakların birbirini desteklediği yönler"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Mektuptan doğrudan görülenler",
+              "contains_quote_indexes": []
+            },
+            {
+              "key": "Biyografiden öğrenilenler",
+              "contains_quote_indexes": []
+            },
+            {
+              "key": "M. Orhan Okay'ın tanıklığından öğrenilenler",
+              "contains_quote_indexes": []
+            }
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "source-synthesis",
+            "text": "Her tespitin hangi kaynağa dayandığı ayrı gösterilmelidir.",
+            "position": "end"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "source-synthesis"
+        },
+        {
+          "index": 1,
+          "unit": "source-synthesis"
+        },
+        {
+          "index": 2,
+          "unit": "source-synthesis"
+        },
+        {
+          "index": 3,
+          "unit": "source-synthesis"
+        }
+      ]
+    },
+    "T1-P41-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Öznel İfadeler"
+        },
+        {
+          "index": 1,
+          "unit": "Öznel İfadeler"
+        },
+        {
+          "index": 2,
+          "unit": "Öznel İfadeler"
+        },
+        {
+          "index": 3,
+          "unit": "Nesnel İfadeler"
+        },
+        {
+          "index": 4,
+          "unit": "Nesnel İfadeler"
+        }
+      ]
+    },
+    "T1-P43-Q01": {
+      "units": [
+        {
+          "id": "answer",
+          "sections": [
+            "Edebî mektup yönü (belirleyici)",
+            "Özel mektup biçimi",
+            "Sonuç"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "answer"
+        },
+        {
+          "index": 1,
+          "unit": "answer"
+        },
+        {
+          "index": 2,
+          "unit": "answer"
+        },
+        {
+          "index": 3,
+          "unit": "answer"
+        }
+      ]
+    },
+    "T1-P44-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Yer ve Tarih"
+        },
+        {
+          "index": 1,
+          "unit": "Hitap Bölümü"
+        },
+        {
+          "index": 2,
+          "unit": "Adı-Soyadı"
+        },
+        {
+          "index": 3,
+          "unit": "Adres / Ulaştırma Bilgisi"
+        }
+      ]
+    },
+    "T1-P44-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Muhataba yakınlığın belirlediği samimi dil"
+        },
+        {
+          "index": 1,
+          "unit": "Muhataba yakınlığın belirlediği samimi dil"
+        },
+        {
+          "index": 2,
+          "unit": "İçeriğin gerektirdiği düşünsel dil"
+        },
+        {
+          "index": 3,
+          "unit": "Muhataba yakınlığın belirlediği samimi dil"
+        }
+      ]
+    },
+    "T1-P44-Q03": {
+      "units": [
+        {
+          "id": "relationship",
+          "evidence_sections": [
+            {
+              "key": "Metinden çıkarılabilecek ilişki özellikleri",
+              "contains_quote_indexes": []
+            }
+          ]
+        },
+        {
+          "id": "present-day-comparison",
+          "sections": [
+            "Günümüzle karşılaştırma"
+          ]
+        },
+        {
+          "id": "interpretive-limit",
+          "sections": [
+            "Yorum sınırı"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "relationship",
+            "text": "Mektupta Kaplan ile Âli arasında güvene, yakınlığa ve karşılıklı desteğe dayanan bir dostluk görülür:",
+            "position": "start"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "relationship"
+        },
+        {
+          "index": 1,
+          "unit": "relationship"
+        },
+        {
+          "index": 2,
+          "unit": "relationship"
+        },
+        {
+          "index": 3,
+          "unit": "relationship"
+        }
+      ]
+    },
+    "T1-P44-Q04": {
+      "units": [
+        {
+          "id": "letter-evidence",
+          "evidence_sections": [
+            {
+              "key": "Metinden doğrudan görülenler",
+              "contains_quote_indexes": []
+            }
+          ]
+        },
+        {
+          "id": "external-context",
+          "sections": [
+            "Dış bağlamla araştırılabilecek başlıklar"
+          ]
+        },
+        {
+          "id": "interpretive-limit",
+          "sections": [
+            "Yorum sınırı"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "letter-evidence",
+            "text": "Mektup, Kaplan'ın çevresi üzerinden 1940'taki üniversite ve eğitim hayatı, askerlik, aile ilişkileri, şehirler arası hareketlilik, haberleşme biçimi ve dönemin söz varlığına ilişkin ipuçları verir.",
+            "position": "start"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "letter-evidence"
+        },
+        {
+          "index": 1,
+          "unit": "letter-evidence"
+        },
+        {
+          "index": 2,
+          "unit": "letter-evidence"
+        },
+        {
+          "index": 3,
+          "unit": "letter-evidence"
+        },
+        {
+          "index": 4,
+          "unit": "letter-evidence"
+        }
+      ]
+    },
+    "T1-P44-Q05": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Millî değer olarak yorumlanabilecek örnek"
+        },
+        {
+          "index": 1,
+          "unit": "Evrensel değer olarak yorumlanabilecek örnekler"
+        },
+        {
+          "index": 2,
+          "unit": "Manevi değer olarak yorumlanabilecek örnekler"
+        },
+        {
+          "index": 3,
+          "unit": "Evrensel değer olarak yorumlanabilecek örnekler"
+        }
+      ]
+    },
+    "T1-P52-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Ders_Kitabındaki_Genel_Kurallar"
+        },
+        {
+          "index": 1,
+          "unit": "Ders_Kitabındaki_Genel_Kurallar"
+        },
+        {
+          "index": 2,
+          "unit": "Ders_Kitabındaki_Genel_Kurallar"
+        },
+        {
+          "index": 3,
+          "unit": "Ders_Kitabındaki_Genel_Kurallar"
+        },
+        {
+          "index": 4,
+          "unit": "Kişisel_Bilgi_Güvenliği"
+        }
+      ]
+    },
+    "T1-P53-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "İlişkisel_ve_Sosyal_Boyut"
+        }
+      ]
+    },
+    "T1-P53-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Günlük_Yaşamdan_Karşıt_Örnekler"
+        },
+        {
+          "index": 1,
+          "unit": "Günlük_Yaşamdan_Karşıt_Örnekler"
+        }
+      ]
+    },
+    "T1-P54-PERF01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "1_Konu_ve_Kazanım_Amacı"
+        },
+        {
+          "index": 1,
+          "unit": "4_Yöntem_ve_Canlandırma_Stratejisi"
+        }
+      ]
+    },
+    "T1-P55-PERF01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "1_Örnek_Durum_ve_Karakterler"
+        },
+        {
+          "index": 1,
+          "unit": "2_Örnek_Başlangıç_ve_Çatışma"
+        },
+        {
+          "index": 2,
+          "unit": "5_Yazarken_Kontrol_Edin"
+        }
+      ]
+    },
+    "T1-P56-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "1_Göz_Teması_Kurmama_ve_Telefonla_İlgilenme"
+        }
+      ]
+    },
+    "T1-P56-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Ortam_Kaynaklı_Hatalar"
+        }
+      ]
+    },
+    "T1-P56-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Temel_Etkiler"
+        },
+        {
+          "index": 1,
+          "unit": "İletişim_Kazasının_Ortaya_Çıkabileceği_Örnek_Durumlar"
+        }
+      ]
+    },
+    "T1-P57-PERF01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Canlandırma_Uygulama_Adımları_s57"
+        },
+        {
+          "index": 1,
+          "unit": "Canlandırma_Uygulama_Adımları_s57"
+        },
+        {
+          "index": 2,
+          "unit": "Örnek_Planla_Bağlantı"
+        },
+        {
+          "index": 3,
+          "unit": "Canlandırma_Uygulama_Adımları_s57"
+        }
+      ]
+    },
+    "T1-P59-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Anlamın açıklığı"
+        },
+        {
+          "index": 1,
+          "unit": "Üslup ve etki"
+        }
+      ]
+    },
+    "T1-P59-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Yıldızlara çoban olmak"
+        },
+        {
+          "index": 1,
+          "unit": "Bozkırlara bulut gölgesi olmak"
+        }
+      ]
+    },
+    "T1-P61-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "1. İbrahim Alâettin Gövsa — “Vefakâr dost ve faziletli kardeş”"
+        },
+        {
+          "index": 1,
+          "unit": "2. Vincent Van Gogh — “Sevgili Kardeşim”"
+        },
+        {
+          "index": 2,
+          "unit": "3. Tezer Özlü — “Canım Leylâcığım”"
+        },
+        {
+          "index": 3,
+          "unit": "4. Atatürk'ün Özel Mektupları — “Muhterem Hanımefendi”"
+        },
+        {
+          "index": 4,
+          "unit": "5. Yakup Kadri Karaosmanoğlu — “Pek Aziz ve Muhterem Halide Hanımefendi”"
+        },
+        {
+          "index": 5,
+          "unit": "6. Orhan Seyfi Orhon — “Sayın Hasan Âli Yücel”"
+        }
+      ]
+    },
+    "T1-P63-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Örnek seçilen ifade"
+        },
+        {
+          "index": 1,
+          "unit": "Alternatif ifadeler"
+        },
+        {
+          "index": 2,
+          "unit": "Alternatif ifadeler"
+        }
+      ]
+    },
+    "T1-P63-Q04": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Paylaşma ve yardımlaşma"
+        },
+        {
+          "index": 1,
+          "unit": "Kardeşlik ve aile sevgisi"
+        },
+        {
+          "index": 2,
+          "unit": "Özlem ve bağlılık"
+        }
+      ]
+    },
+    "T1-P66-Q03": {
+      "units": [
+        {
+          "id": "meaning",
+          "sections": [
+            "İfadenin olası anlamı"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Kanıt ve çıkarım",
+              "contains_quote_indexes": []
+            }
+          ]
+        },
+        {
+          "id": "interpretive-limit",
+          "sections": [
+            "Yorumun sınırı"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "meaning"
+        }
+      ]
+    },
+    "T1-P68-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Bağlama uymayan söz seçimi (Hasan)"
+        },
+        {
+          "index": 1,
+          "unit": "Bağlama uymayan söz seçimi (Hasan)"
+        },
+        {
+          "index": 2,
+          "unit": "Çok anlamlı sözcüğün farklı anlaşılması (“tez”)"
+        },
+        {
+          "index": 3,
+          "unit": "Çok anlamlı sözcüğün farklı anlaşılması (“tez”)"
+        },
+        {
+          "index": 4,
+          "unit": "Kişiyi küçümseyen söz (Ömer)"
+        },
+        {
+          "index": 5,
+          "unit": "Konuşmanın akışını bozan davranış (Rıdvan)"
+        }
+      ]
+    },
+    "T1-P70-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Dil ve Anlatımdan Kaynaklı Engeller"
+        },
+        {
+          "index": 1,
+          "unit": "Dil ve Anlatımdan Kaynaklı Engeller"
+        },
+        {
+          "index": 2,
+          "unit": "Sosyokültürel Farklılıklar"
+        },
+        {
+          "index": 3,
+          "unit": "Davranışsal ve Düşünsel Engeller"
+        }
+      ]
+    },
+    "T1-P74-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Olası benzer durum"
+        }
+      ]
+    },
+    "T1-P76-Q03": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "benzerlikler",
+            "farkliliklar"
+          ]
+        }
+      ]
+    },
+    "T1-P79-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Gerekçe"
+        },
+        {
+          "index": 1,
+          "unit": "Gerekçe"
+        }
+      ]
+    },
+    "T1-P81-Q04": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Gerekçe"
+        },
+        {
+          "index": 1,
+          "unit": "Gerekçe"
+        },
+        {
+          "index": 2,
+          "unit": "Gerekçe"
+        }
+      ]
+    },
+    "T1-P81-Q07": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Gerekçe"
+        },
+        {
+          "index": 1,
+          "unit": "Gerekçe"
+        }
+      ]
+    },
+    "T1-P82-Q08": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Çalışkanlık"
+        }
+      ]
+    },
+    "T1-P82-Q10": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Gerekçe"
+        }
+      ]
+    },
+    "T1-P30-Q03": {
+      "units": [
+        {
+          "id": "topic",
+          "evidence_sections": [
+            {
+              "key": "Konu için metin kanıtları",
+              "contains_quote_indexes": []
+            }
+          ]
+        },
+        {
+          "id": "theme",
+          "evidence_sections": [
+            {
+              "key": "Tema için metin kanıtları",
+              "contains_quote_indexes": []
+            }
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "topic",
+            "text": "Konu, Yazıcı metnindeki olaylar ve yanlış anlamalardır.",
+            "position": "start"
+          },
+          {
+            "unit": "theme",
+            "text": "Tema ise bu olayların düşündürdüğü genel anlamdır.",
+            "position": "start"
+          },
+          {
+            "unit": "theme",
+            "text": "İletişim ve anlaşılma, dil farklılıkları veya bilmediği bir işi üstlenmenin sonuçları metne dayalı tema önerileridir.",
+            "position": "end"
+          },
+          {
+            "unit": "theme",
+            "text": "Seçtiğiniz temayı olaylardan kanıtlarla gerekçelendirin.",
+            "position": "end"
+          }
+        ]
+      }
+    }
+  }
+}

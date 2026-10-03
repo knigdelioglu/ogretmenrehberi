@@ -131,6 +131,12 @@
         "items": [
           "Tek bir ana görsel seçin.",
           "Yazıyı okunur kılan, görsel ve iletiyle uyumlu renkleri belirleyin."
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.300 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=300"
+          }
         ]
       }
     },
@@ -172,9 +178,18 @@
       "content": {
         "lead": "c–ç adımında videoyla doğruladığınız iletiyi hedef kitleye uygun söz ve malzemeyle taslağa aktarın.",
         "sections": [
-          { "title": "Bilgi ve söz varlığı", "body": "Yalnızca videoda doğrulanan bilgi ve ifadeleri kullanın." },
-          { "title": "Dil ve malzeme", "body": "Kendi çiziminizi, izinli görseli veya kaynağı belirtilmiş materyali seçin." },
-          { "title": "Geri bildirim", "body": "İletinin anlaşılması, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneri alıp taslağı düzeltin." }
+          {
+            "title": "Bilgi ve söz varlığı",
+            "body": "Yalnızca videoda doğrulanan bilgi ve ifadeleri kullanın."
+          },
+          {
+            "title": "Dil ve malzeme",
+            "body": "Kendi çiziminizi, izinli görseli veya kaynağı belirtilmiş materyali seçin."
+          },
+          {
+            "title": "Geri bildirim",
+            "body": "İletinin anlaşılması, yazının okunurluğu ve görselin iletiyle uyumu üzerine öneri alıp taslağı düzeltin."
+          }
         ]
       }
     },
@@ -297,15 +312,127 @@
       "prompt": "Değerlendirme — Kitapta görünür ölçütlerle son ürünü gözden geçiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "QR'deki ayrıntılı dereceli puanlama anahtarı görülmeden puan, seviye veya yeni rubrik maddesi üretmeyin.",
+        "lead": "Aşağıda kitaptaki anahtarda yer alan ölçütler, dört puan düzeyi ve aralıklarıyla gösterilmiştir.",
+        "sections": [
+          {
+            "title": "Başlangıç düzeyinde · 1–2 puan",
+            "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu yansıtacak şekilde hazırlanmamıştır"
+          },
+          {
+            "title": "Kabul edilebilir · 3–5 puan",
+            "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu kısmen yansıtacak şekilde hazırlanmıştır"
+          },
+          {
+            "title": "İyi · 6–9 puan",
+            "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu yeterli düzeyde yansıtacak şekilde hazırlanmıştır"
+          },
+          {
+            "title": "Çok iyi · 10–15 puan",
+            "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu oldukça başarılı yansıtacak şekilde hazırlanmıştır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık fark edilir düzeydedir"
+          },
+          {
+            "title": "İyi · 9–15 puan",
+            "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık yeterli düzeydedir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık düzeyi oldukça yüksektir"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–3 puan",
+            "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği özgün değildir"
+          },
+          {
+            "title": "Kabul edilebilir · 4–7 puan",
+            "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği kısmen özgündür"
+          },
+          {
+            "title": "İyi · 8–11 puan",
+            "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği yeterince özgündür"
+          },
+          {
+            "title": "Çok iyi · 12–15 puan",
+            "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği özgünlüğü oldukça güçlüdür"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–2 puan",
+            "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı yetersizdir"
+          },
+          {
+            "title": "Kabul edilebilir · 3–5 puan",
+            "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 6–9 puan",
+            "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı başarılıdır"
+          },
+          {
+            "title": "Çok iyi · 10–15 puan",
+            "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı oldukça başarılıdır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–3 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 4–7 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 8–11 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından yeterlidir"
+          },
+          {
+            "title": "Çok iyi · 12–15 puan",
+            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından oldukça başarılıdır"
+          },
+          {
+            "title": "Başlangıç düzeyinde · 1–4 puan",
+            "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşmada etkileyicilik özelliği alt düzeydedir"
+          },
+          {
+            "title": "Kabul edilebilir · 5–8 puan",
+            "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşmada etkileyicilik özelliği kısmen yeterlidir"
+          },
+          {
+            "title": "İyi · 9–15 puan",
+            "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşmada etkileyicilik özelliği yeterli düzeydedir"
+          },
+          {
+            "title": "Çok iyi · 16–20 puan",
+            "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşma etkileyicilik özelliği yönünden oldukça başarılıdır"
+          },
+          {
+            "title": "Toplam puan ve hesaplama",
+            "body": "Her ölçütten seçtiğiniz puanları toplayınız. altı ölçüt (konuya uygunluk, yaratıcılık, özgünlük, görsel/işitsel ögelerin seçimi, Türkçenin doğru kullanımı, etkileyicilik) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 6, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı basılı s.302 — PDF sayfasını aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=302"
+          },
+          {
+            "label": "Afiş hazırlama performans görevi dereceli puanlama anahtarı",
+            "url": "assets/assessment-documents/19XU4J2R.docx",
+            "download": true
+          }
+        ],
         "items": [
           "Konuya uygunluk",
           "Yaratıcılık",
           "Özgünlük",
           "Etkileyicilik",
           "Görsel/işitsel ögelerin seçimi"
-        ],
-        "note": "Öğretmen geri bildirimi sonrası eksikler son üründe düzeltilir."
+        ]
       }
     },
     {

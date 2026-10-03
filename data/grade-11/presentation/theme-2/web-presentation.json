@@ -1,0 +1,1795 @@
+{
+  "schema_version": "1.1.0",
+  "theme_id": "TEMA_02",
+  "defaults": {
+    "section_units": "one-per-section",
+    "structured_answer_text": "omit-summary",
+    "array_answer_units": "one-list"
+  },
+  "answers": {
+    "T2-P130-PERF01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Amaç",
+            "Hedef kitle",
+            "Konuşma süresi",
+            "Ana başlıklar",
+            "Yöntem",
+            "Teknik hazırlık",
+            "Kaçınılacak iletişim engelleri"
+          ]
+        }
+      ]
+    },
+    "T2-P131-PERF01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "giris",
+            "gelisme",
+            "sonuc"
+          ]
+        }
+      ]
+    },
+    "T2-P132-PERF01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Araştırma Matrisi",
+            "Karşılaştırma Soruları",
+            "Kaynak İlkesi"
+          ]
+        }
+      ]
+    },
+    "T2-P135-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "Öz Değerlendirme",
+            "Akran Değerlendirmesi",
+            "Gelişim Döngüsü",
+            "Sunum Ölçütleri"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "assessment",
+            "text": "Akran değerlendirmesi için karekod bağlantısındaki formu kullanın; ulaşamadığınız formun ölçütlerini tahmin etmeyin.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P118-Q01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "benzetme",
+            "deyim",
+            "seslenme",
+            "istifham",
+            "tezat"
+          ]
+        }
+      ]
+    },
+    "T2-P119-COMP01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "icerik",
+            "tur",
+            "donem",
+            "zihniyet",
+            "uslup",
+            "ileti"
+          ]
+        }
+      ]
+    },
+    "T2-P119-Q01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Oğulla Buluşma",
+            "Kül Tigin Âbidesi"
+          ]
+        }
+      ]
+    },
+    "T2-P122-Q02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "icerik",
+            "yapi",
+            "dil_anlatim",
+            "donem_toplum_iliskisi"
+          ]
+        }
+      ]
+    },
+    "T2-P122-Q04": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Bilgi verme",
+            "Yönlendirme",
+            "İkna etme",
+            "Sorgulatma",
+            "Tanıtma ve anma",
+            "Estetik haz (ikincil işlev)",
+            "Kanıları değiştirme (belirgin değil)"
+          ]
+        }
+      ]
+    },
+    "T2-P123-Q05": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "sadelik",
+            "aciklik",
+            "kelime_cesitliligi",
+            "akicilik",
+            "farkli_cumle_yapilari",
+            "etkileyicilik"
+          ]
+        }
+      ]
+    },
+    "T2-P124-PERF01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "milli",
+            "manevi",
+            "evrensel"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "classification",
+            "text": "gruplar başka sınıflandırmaları da kanıtla savunabilir:",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P124-PERF02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "1. Grup — Orhun Abideleri ve Tarih",
+            "2. Grup — Orhun Abideleri ve Coğrafya",
+            "3. Grup — Orhun Abideleri ve Sosyoloji",
+            "Sunum Şablonu"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "classification",
+            "text": "Karşılaştırma için Bilge Kağan ve Tonyukuk Abideleri gibi ek kaynakları da inceleyin.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P149-PERF03": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Cümle Düzeni",
+            "Paragraf Düzeni",
+            "Metin Düzeni"
+          ]
+        }
+      ]
+    },
+    "T2-P149-PERF04": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Örnek Amaçlar",
+            "Amaç Cümlesi"
+          ]
+        }
+      ]
+    },
+    "T2-P149-PERF05": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Süre",
+            "Hedef Kitle",
+            "Uzunluk ve Kapsam",
+            "Paylaşım Ortamı",
+            "Destekleyici Ögeler"
+          ]
+        }
+      ]
+    },
+    "T2-P149-PERF06": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Bilgi Eksikliği",
+            "Notların Dağınıklığı",
+            "Planlama Güçlüğü",
+            "Zaman Yönetimi",
+            "Teknik Sorunlar"
+          ]
+        }
+      ]
+    },
+    "T2-P149-PERF07": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "1. Hazırlık",
+            "2. Sıralama",
+            "3. Taslak",
+            "4. Yazma",
+            "5. Gözden Geçirme"
+          ]
+        }
+      ]
+    },
+    "T2-P151-PERF01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Müzede Yer Alabileceğini Düşündüğüm Unsur",
+            "Kendi Hayatımdaki Karşılığı"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "comparison",
+            "text": "Eviniz, aileniz veya alışkanlıklarınız hakkında varsayım eklemeyin.",
+            "position": "start"
+          },
+          {
+            "unit": "comparison",
+            "text": "Bir unsurun sürmesi, değişmesi veya kaybolması da gerekçelendirilebilecek sonuçlardır.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P151-Q03": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Dil",
+            "Aile ve Yakın Çevre",
+            "Eğitim",
+            "Sanat ve Edebiyat",
+            "Müzeler ve Kültürel Kurumlar",
+            "Gelenekler ve Toplumsal Etkinlikler"
+          ]
+        }
+      ]
+    },
+    "T2-P152-PERF01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Örnek başlık",
+            "Giriş",
+            "Gelişme — Görünen miras",
+            "Gelişme — Görünmeyen miras ve karşılaştırma",
+            "Gelişme — Sanal deneyim",
+            "Sonuç",
+            "Teslim öncesi kaynak kontrolü"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "classification",
+            "text": "Aşağıdaki izlenim yazısı modeli, gerçek bir müze gezisi raporu değildir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P152-PERF02": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "Öz denetim soruları"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "assessment",
+            "text": "Kitaptaki aşamaların yerine geçmez; taslağınızı son kez gözden geçirmenize yardımcı olur.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P154-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "Bu süreçte öğrendiklerim",
+            "Pekiştirmem gereken konular",
+            "Daha ayrıntılı incelemek istediğim konular",
+            "Kendimi geliştirmek için çaba harcadığım konular",
+            "Öğrendiğim ve gelecekte kullanabileceğim bilgiler"
+          ]
+        }
+      ]
+    },
+    "T2-P96-Q04A": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Kazak Türkçesi",
+            "Türkmen Türkçesi",
+            "Uygur Türkçesi",
+            "Azerbaycan Türkçesi",
+            "Kırgız Türkçesi"
+          ]
+        }
+      ]
+    },
+    "T2-P98-Q04C": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Benzerlikler",
+            "Farklılıklar"
+          ]
+        }
+      ]
+    },
+    "T2-P98-Q01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Olay ve Olay Örgüsü",
+            "Kişiler",
+            "Zaman ve Mekân",
+            "Anlatıcı ve Bakış Açısı",
+            "Tema ve İleti",
+            "Dil ve Üslup"
+          ]
+        }
+      ]
+    },
+    "T2-P99-Q02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        }
+      ]
+    },
+    "T2-P102-GRAM01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Haber Kipleriyle Çekimlenmiş Fiiller",
+            "Dilek / Tasarlama Kipleriyle Çekimlenmiş Fiiller",
+            "Basit Çekimli Fiiller (Tek Kip Eki Alanlar)",
+            "Birleşik Çekimli Fiiller (İki Kip / Ek-fiil Alanlar)"
+          ]
+        }
+      ]
+    },
+    "T2-P103-GRAM02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "etken",
+            "edilgen",
+            "donuslu",
+            "istes"
+          ]
+        }
+      ]
+    },
+    "T2-P104-GRAM03": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "gecisli",
+            "gecissiz",
+            "oldurgan",
+            "ettirgen"
+          ]
+        }
+      ]
+    },
+    "T2-P105-Q01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "tema",
+            "kisiler",
+            "anlatici_ve_bakis_acisi",
+            "olay_orgusu",
+            "zaman_ve_mekan",
+            "catismalar"
+          ]
+        }
+      ]
+    },
+    "T2-P105-Q02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "tema_kisiler",
+            "tema_olay_orgusu",
+            "kisiler_mekan",
+            "catisma_tema",
+            "olay_zaman_mekan",
+            "olay_anlatici_bakis"
+          ]
+        }
+      ]
+    },
+    "T2-P107-PERF02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Millî Değerler",
+            "Manevi Değerler",
+            "Evrensel Değerler"
+          ]
+        }
+      ]
+    },
+    "T2-P139-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "1. Dinleme/izleme amacımı belirledim",
+            "2. Metinle ilgili daha önce bildiklerimi gözden geçirdim",
+            "3. Dikkatlice ve anlayarak dinlemeye/izlemeye özen gösterdim",
+            "4. Sabır ve saygıyla, ön yargılardan uzak dinledim/izledim",
+            "5. Yorum/soru öncesinde anlatımın bitmesini bekledim",
+            "6. Diğer dinleyicileri rahatsız edecek davranışlardan kaçındım"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "assessment",
+            "text": "“Evet” veya “Hayır” seçiminiz gerçek deneyiminizi yansıtsın; her madde videodan bağımsız bir dinleme becerisini ölçer.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P142-PERF01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Âşık Atışmasında Gözlenen Mizah",
+            "Günlük Hayattaki Mizah",
+            "Benzerlik",
+            "Farklılık"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "comparison",
+            "text": "genel folklor bilgisini videoda görülmüş bir özellik gibi sunmayın.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P143-Q02": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Benzerlikler",
+            "Farklılıklar"
+          ]
+        }
+      ]
+    },
+    "T2-P143-Q04": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Âşık Şiirinin Dilinden Gözlenebilenler",
+            "Benzerlik",
+            "Farklılık"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Münacaat'ın Dilinden Gözlenebilenler",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "comparison"
+        },
+        {
+          "index": 1,
+          "unit": "comparison"
+        },
+        {
+          "index": 2,
+          "unit": "comparison"
+        }
+      ]
+    },
+    "T2-P143-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "Ölçüt Havuzu",
+            "Ölçüt Seçme Gerekçesi",
+            "Beğenilen Bölüm",
+            "Gerekçe"
+          ]
+        }
+      ]
+    },
+    "T2-P144-MAP01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Mekân",
+            "Beden Dili",
+            "Söyleyiş Tarzı",
+            "Estetik"
+          ]
+        }
+      ]
+    },
+    "T2-P145-PERF01": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "Beyaz Şapka",
+            "Kırmızı Şapka",
+            "Siyah Şapka",
+            "Sarı Şapka",
+            "Yeşil Şapka",
+            "Mavi Şapka"
+          ]
+        }
+      ]
+    },
+    "T2-P147-Q01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Âşık Atışmasına Değer Katan Unsurlar",
+            "Söyleyicinin Metne Katkısı"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "comparison",
+            "text": "Nezaket, vurgu, jest, diksiyon veya hazırcevaplık gibi özellikleri videoda kanıtını görmeden kesinleştirmeyin.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P147-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "1. Atışmadan ne anladım?",
+            "2. Atışmada neleri fark ettim?",
+            "3. Bu temada öğrendiklerim hayatıma neler kattı?",
+            "4. Neyi farklı yapabilirdim?",
+            "5. Ek öğrenmeye ihtiyacım var mı?"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "assessment",
+            "text": "Cümle başlangıçlarını kendi gerçek deneyiminizle tamamlayın.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P111-Q01": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Okumadan Önceki Tahminler",
+            "Okuduktan Sonraki Tespitlerden Örnekler",
+            "Karşılaştırma"
+          ]
+        }
+      ]
+    },
+    "T2-P111-PERF02": {
+      "units": [
+        {
+          "id": "classification",
+          "sections": [
+            "1. Grup — Metin–Tarih",
+            "2. Grup — Metin–Coğrafya",
+            "3. Grup — Metin–Sosyoloji",
+            "Sunum Şablonu",
+            "Etkinlik Sonu Değerlendirmesi"
+          ]
+        }
+      ]
+    },
+    "T2-P112-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "Üç Yaz",
+            "İki Sor",
+            "Bir Paylaş"
+          ]
+        }
+      ]
+    },
+    "T2-P157-Q04": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "Kutadgu Bilig ile örnek karşılaştırma",
+            "Dede Korkut ile örnek karşılaştırma",
+            "Kamus-ı Türkî ile örnek karşılaştırma",
+            "Sonuç"
+          ]
+        }
+      ]
+    },
+    "T2-P159-PERF01": {
+      "units": [
+        {
+          "id": "assessment",
+          "sections": [
+            "Tarihî hafıza",
+            "Dil",
+            "Kültürel süreklilik",
+            "Geçmişten ders",
+            "Kişisel değerlendirme"
+          ]
+        }
+      ]
+    },
+    "T2-P127-Q06": {
+      "units": [
+        {
+          "id": "comparison",
+          "sections": [
+            "ortak_yon",
+            "kul_tigin",
+            "divanu_lugatit_turk"
+          ]
+        }
+      ]
+    },
+    "T2-P100-Q08": {
+      "units": [
+        {
+          "id": "topic",
+          "sections": [
+            "konu"
+          ]
+        },
+        {
+          "id": "writing-purpose",
+          "sections": [
+            "yazilma_amaci"
+          ]
+        }
+      ]
+    },
+    "T2-P121-Q03": {
+      "units": [
+        {
+          "id": "narrator-features",
+          "sections": [
+            "ozellikleri"
+          ]
+        },
+        {
+          "id": "narrative-purposes",
+          "sections": [
+            "amaclari"
+          ]
+        }
+      ]
+    },
+    "T2-P136-Q01": {
+      "units": [
+        {
+          "id": "craft-and-experience",
+          "sections": [
+            "Sanatsal İcra",
+            "Metindeki Deney"
+          ]
+        },
+        {
+          "id": "artist-and-daily-life",
+          "sections": [
+            "Günlük Hayat / Sanatçıyla İlişki"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "craft-and-experience"
+        },
+        {
+          "index": 1,
+          "unit": "craft-and-experience"
+        },
+        {
+          "index": 2,
+          "unit": "craft-and-experience"
+        }
+      ]
+    },
+    "T2-P138-Q01": {
+      "units": [
+        {
+          "id": "tradition-background",
+          "sections": [
+            "Tahmin"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Metindeki Tarihî Süreç",
+              "contains_quote_indexes": [
+                1
+              ]
+            },
+            {
+              "key": "Dönüşümün Metindeki Nedeni",
+              "contains_quote_indexes": [
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "tradition-background"
+        },
+        {
+          "index": 1,
+          "unit": "tradition-background"
+        },
+        {
+          "index": 2,
+          "unit": "tradition-background"
+        }
+      ]
+    },
+    "T2-P155-Q01": {
+      "units": [
+        {
+          "id": "society-classification",
+          "sections": [
+            "Emek ve çalışma",
+            "Devlet ve düzen",
+            "Güç ve mücadele"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Birlik ve dayanışma",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "present-day-connection",
+          "sections": [
+            "Günümüzle ilişki — örnek yorum"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "society-classification"
+        },
+        {
+          "index": 1,
+          "unit": "society-classification"
+        },
+        {
+          "index": 2,
+          "unit": "society-classification"
+        },
+        {
+          "index": 3,
+          "unit": "society-classification"
+        },
+        {
+          "index": 4,
+          "unit": "society-classification"
+        },
+        {
+          "index": 5,
+          "unit": "society-classification"
+        }
+      ]
+    },
+    "T2-P159-Q07": {
+      "units": [
+        {
+          "id": "analysis",
+          "sections": [
+            "a) Yanlış değerlendirme",
+            "Diğer tespitler"
+          ]
+        },
+        {
+          "id": "example-sentence",
+          "sections": [
+            "b) Örnek değerlendirme cümlesi"
+          ]
+        }
+      ]
+    },
+    "T2-P155-Q02": {
+      "units": [
+        {
+          "id": "shared-purpose",
+          "sections": [
+            "Tablodaki dayanaklar",
+            "Ortak amaç"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "shared-purpose",
+            "text": "Devletin temel değerlerini aktarmak.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P157-Q05": {
+      "units": [
+        {
+          "id": "common-criterion",
+          "sections": [
+            "II. İlk olma özelliği",
+            "I. Yazar bilgisi",
+            "III. Yüzyıl bilgisi"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "common-criterion",
+            "text": "Yalnız II.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P158-Q06": {
+      "units": [
+        {
+          "id": "choice-and-analysis",
+          "sections": [
+            "Ayırt edici noktalar",
+            "Terim kullanımı"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "choice-and-analysis",
+            "text": "D.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P86-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Ortak Değerlerin Görünür Hâle Gelmesi"
+        },
+        {
+          "index": 1,
+          "unit": "Kuşaklar Arası Kültür Aktarımı"
+        }
+      ]
+    },
+    "T2-P86-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Fikrî Boyut"
+        }
+      ]
+    },
+    "T2-P87-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Dil Mirasının Korunması"
+        }
+      ]
+    },
+    "T2-P100-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "decision"
+        },
+        {
+          "index": 1,
+          "unit": "decision"
+        }
+      ],
+      "units": [
+        {
+          "id": "decision",
+          "sections": [
+            "Alınan Karar"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Gerekçeler",
+              "contains_quote_indexes": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P100-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "caydirma"
+        },
+        {
+          "index": 1,
+          "unit": "caydirma"
+        }
+      ],
+      "units": [
+        {
+          "id": "caydirma",
+          "sections": [
+            "Kararın değişmeyeceğini görmesi"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Öz annesi olmaması",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P100-Q07": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Metindeki açık gerekçe"
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Metinden desteklenebilecek yorum",
+            "text": "Bu yüzden kızlarının ağır suçlamalarına rağmen verdiği kararı doğru bulur ve pişmanlık duymaz.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P107-AYTMATOV": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Millîden Beşerîye"
+        }
+      ]
+    },
+    "T2-P112-Q05": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "“Kalbim böyle söylüyor, içimden böyle geliyor.”"
+        },
+        {
+          "index": 1,
+          "unit": "“O, tam kendisiydi, kendisinin gençliği.”"
+        },
+        {
+          "index": 2,
+          "unit": "“Bir erkek, bir adam ol oğlum. Nerede olursan ol, erkek ol, mert bir erkek olarak kal!”"
+        }
+      ]
+    },
+    "T2-P113-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Tarihî Hafızayı Korumak"
+        }
+      ]
+    },
+    "T2-P117-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "bilge-intents"
+        },
+        {
+          "index": 1,
+          "unit": "bilge-intents"
+        }
+      ],
+      "units": [
+        {
+          "id": "bilge-intents",
+          "sections": [
+            "Muhataba seslenme",
+            "Tarih ve yönetim deneyimini aktarma",
+            "Öğüt verme",
+            "Kül Tigin'i anma"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Sözü kalıcılaştırma",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P117-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Sonraki kuşaklara sesleniş"
+        }
+      ]
+    },
+    "T2-P117-BILGE01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "management-and-effort"
+        }
+      ],
+      "units": [
+        {
+          "id": "management-and-effort",
+          "sections": [
+            "Kağan ve Yönetici Oluşu"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Kül Tigin'le Birlikte Mücadele Etmesi",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kinship",
+          "sections": [
+            "Kül Tigin'le Akrabalığı"
+          ]
+        },
+        {
+          "id": "monument",
+          "sections": [
+            "Kül Tigin Kitabesi ve Barkı"
+          ]
+        },
+        {
+          "id": "advice",
+          "sections": [
+            "Millete Öğüt Veren Yönü"
+          ]
+        }
+      ]
+    },
+    "T2-P120-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Metindeki görüş"
+        }
+      ]
+    },
+    "T2-P124-Y05": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "death-and-rites"
+        },
+        {
+          "index": 1,
+          "unit": "death-and-rites"
+        },
+        {
+          "index": 2,
+          "unit": "death-and-rites"
+        }
+      ],
+      "units": [
+        {
+          "id": "death-and-rites",
+          "sections": [
+            "Ölümün Kayda Geçirilmesi"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Yas Töreni",
+              "contains_quote_indexes": [
+                1
+              ]
+            },
+            {
+              "key": "Örtmeceli Söyleyiş",
+              "contains_quote_indexes": [
+                0,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "interpretation-limits",
+          "sections": [
+            "Sınır"
+          ]
+        }
+      ]
+    },
+    "T2-P127-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "fieldwork-and-comparison"
+        },
+        {
+          "index": 1,
+          "unit": "fieldwork-and-comparison"
+        },
+        {
+          "index": 1,
+          "unit": "language-history"
+        }
+      ],
+      "units": [
+        {
+          "id": "fieldwork-and-comparison",
+          "sections": [
+            "Karşılaştırmalı Malzeme"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Saha ve Dil Derlemesi",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dictionary",
+          "sections": [
+            "Sözlük Düzeni"
+          ]
+        },
+        {
+          "id": "contextual-examples",
+          "sections": [
+            "Bağlamlı Örnekleme"
+          ]
+        },
+        {
+          "id": "language-history",
+          "sections": [
+            "Dil Tarihi İçin Önemi"
+          ]
+        }
+      ]
+    },
+    "T2-P127-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "social-advice"
+        },
+        {
+          "index": 1,
+          "unit": "social-advice"
+        }
+      ],
+      "units": [
+        {
+          "id": "social-advice",
+          "sections": [
+            "Kısa yanıt"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Yakınları Ağırlama",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Hediyeleşmede Karşılıklılık",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P127-FARK01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Sonuç"
+        }
+      ]
+    },
+    "T2-P128-FARK03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "cause-and-effect"
+        }
+      ],
+      "units": [
+        {
+          "id": "cause-and-effect",
+          "sections": [
+            "Metinde Verilen Sonuçlar"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Metinde Verilen Neden",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P128-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "rhetorical-features"
+        }
+      ],
+      "units": [
+        {
+          "id": "rhetorical-features",
+          "sections": [
+            "Duygusal Anlatım",
+            "Doğrudan Sesleniş"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Hitabet Gücü",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P132-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Olası Nedenler"
+        }
+      ]
+    },
+    "T2-P132-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Söz Varlığı ve Kültür"
+        }
+      ]
+    },
+    "T2-P136-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "saz-as-companion"
+        },
+        {
+          "index": 1,
+          "unit": "saz-as-companion"
+        },
+        {
+          "index": 2,
+          "unit": "saz-as-companion"
+        },
+        {
+          "index": 3,
+          "unit": "saz-as-companion"
+        }
+      ],
+      "units": [
+        {
+          "id": "saz-as-companion",
+          "sections": [
+            "Benzetme"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Birlikte Üretim",
+              "contains_quote_indexes": [
+                1
+              ]
+            },
+            {
+              "key": "Sırdaşlık ve Vefa",
+              "contains_quote_indexes": [
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P138-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "saz-and-performance"
+        },
+        {
+          "index": 1,
+          "unit": "saz-and-performance"
+        }
+      ],
+      "units": [
+        {
+          "id": "saz-and-performance",
+          "sections": [
+            "Doğmaca Söyleme"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Saz ve Müzikal İcra",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language-and-form",
+          "sections": [
+            "Dil ve Söz Varlığı"
+          ]
+        },
+        {
+          "id": "interaction",
+          "sections": [
+            "Karşılıklı İcrayı Takip Etme"
+          ]
+        },
+        {
+          "id": "transmission",
+          "sections": [
+            "Geleneği Öğrenme"
+          ]
+        }
+      ]
+    },
+    "T2-P141-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Metinden Doğrudan Çıkanlar"
+        },
+        {
+          "index": 1,
+          "unit": "Metinden Doğrudan Çıkanlar"
+        }
+      ]
+    },
+    "T2-P141-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Kültürel Bellek"
+        },
+        {
+          "index": 1,
+          "unit": "Yakınlaşma ve Aktarım"
+        },
+        {
+          "index": 2,
+          "unit": "Yakınlaşma ve Aktarım"
+        }
+      ]
+    },
+    "T2-P144-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "respect-and-transmission"
+        },
+        {
+          "index": 1,
+          "unit": "respect-and-transmission"
+        },
+        {
+          "index": 2,
+          "unit": "respect-and-transmission"
+        }
+      ],
+      "units": [
+        {
+          "id": "respect-and-transmission",
+          "sections": [
+            "Kısa yanıt"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Çırağın Ustaya Yaklaşımı",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Ahlak ve Dürüstlük",
+              "contains_quote_indexes": [
+                1
+              ]
+            },
+            {
+              "key": "Bilgiyi Paylaşma",
+              "contains_quote_indexes": [
+                2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P144-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Eser ve İsimlerin Yaşaması"
+        },
+        {
+          "index": 0,
+          "unit": "Geleneğin Devamı"
+        },
+        {
+          "index": 1,
+          "unit": "Dil ve Kültürel Bellek"
+        }
+      ]
+    },
+    "T2-P144-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "training-to-wordplay"
+        },
+        {
+          "index": 1,
+          "unit": "training-to-wordplay"
+        }
+      ],
+      "units": [
+        {
+          "id": "training-to-wordplay",
+          "sections": [
+            "Yorum"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Metindeki Dayanak 1",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Metindeki Dayanak 2",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "T2-P150-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Fiziksel (görünen) miras için olası örnekler"
+        },
+        {
+          "index": 1,
+          "unit": "Görünmeyen miras hakkında sorulabilecekler"
+        },
+        {
+          "index": 2,
+          "unit": "Görünmeyen miras hakkında sorulabilecekler"
+        }
+      ]
+    },
+    "T2-P108-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "1. Grup — Metin–Tarih",
+            "text": "Bu ders dışı etkinlikte hazır tarih, coğrafya ve sosyoloji hükümleri vermeyin.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P111-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "1. Kart Renkleri ve Değerlendirme Ölçütleri",
+            "text": "Her kararınızı metinden bir kelime, ifade veya olayla gerekçelendirin.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P127-Q04": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Günümüzdeki daralan anlamı",
+            "text": "anlam daralması (anlam özelleşmesi)",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P129-Q01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Somut Katkı",
+            "text": "Cevabı üç unsurla kurun:",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P130-PERF02": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "1. Türk Dünyasının Millî ve Manevi Değerleri",
+            "text": "Hazır bir kültür listesini ezberlemek yerine her örneği kaynağıyla birlikte sunun.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P143-Q03": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Söz Varlığı",
+            "text": "Bu çıkarım, önceki T diyagramında videodan yapılan gerçek tespitlere dayanır; video izlenmeden bu atışmaya özgü kesin sonuç yazılmaz.",
+            "position": "start"
+          },
+          {
+            "unit": "Doğrudan İletişim",
+            "text": "Kitaptaki Başgöz metni saz şairlerinin eserlerini bir çalgıyla birlikte söylediğini belirttiği için söz–ezgi ilişkisi güvenli bir başlangıç noktasıdır; diğer özellikler aşağıdaki şablonla videodaki örneklerden gösterilir.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P146-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Yargı 1 — Halk ozanları duygu ve düşüncelerini en iyi biçimde şiirle ifade edebildikleri için",
+            "text": "Dört yargının her biri için kendi görüşünüzü gerekçelendirin.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P149-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "answer",
+            "text": "Müze adını, koleksiyon bilgisini ve tur özelliklerini ilgili kurumun güncel sayfasından doğrulayın.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P149-PERF02": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Seçim ölçütü",
+            "text": "sanal tur özelliklerini seçiminizi yazmadan önce doğrulayın.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T2-P153-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "1. Planlama",
+            "text": "Öz değerlendirme formunda “Kısmen” veya “Hayır” işaretlediğiniz ölçütler için aşağıdaki revizyon önerilerinden yararlanın.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P159-Q08": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Örnek Seçim Havuzu — zorunlu cevap değil",
+            "text": "Video izlenmeden onda hangi eserlerin anıldığını varsaymayın.",
+            "position": "start"
+          },
+          {
+            "unit": "Örnek Seçim Havuzu — zorunlu cevap değil",
+            "text": "Aşağıdaki eserler videonun içeriği değil, karşılaştırma için yararlanılabilecek olası örneklerdir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T2-P107-Q1B": {
+      "answer_text": {
+        "mode": "omit",
+        "reason": "İç çatışma ile kişiler arasındaki örtük gerilim ayrı cevap birimleri olarak açılıyor; toplu özet iç çatışma yanıtını ikinci birimden önce açık eder."
+      }
+    }
+  }
+}

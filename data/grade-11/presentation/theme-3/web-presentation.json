@@ -1,0 +1,1022 @@
+{
+  "schema_version": "1.1.0",
+  "theme_id": "TEMA_03",
+  "defaults": {
+    "section_units": "one-per-section",
+    "structured_answer_text": "omit-summary",
+    "array_answer_units": "one-list"
+  },
+  "answers": {
+    "T3-P164-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Safa'nın görüşü"
+        },
+        {
+          "index": 1,
+          "unit": "Safa'nın görüşü"
+        }
+      ]
+    },
+    "T3-P175-Q02": {
+      "units": [
+        {
+          "id": "konu",
+          "sections": [
+            "konu"
+          ]
+        },
+        {
+          "id": "tema",
+          "sections": [
+            "tema"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: tema",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "yazilis_amaci",
+          "sections": [
+            "yazilis_amaci"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: yazılış amacı",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "tema"
+        },
+        {
+          "index": 1,
+          "unit": "yazilis_amaci"
+        }
+      ]
+    },
+    "T3-P176-Q03": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Psikolojik yönün metin dayanağı"
+        },
+        {
+          "index": 1,
+          "unit": "Modernist yönün metin dayanağı"
+        }
+      ]
+    },
+    "T3-P176-Q04": {
+      "units": [
+        {
+          "id": "İşlev",
+          "sections": [
+            "İşlev"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak 1",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Dayanak 2",
+              "contains_quote_indexes": [
+                1
+              ]
+            },
+            {
+              "key": "Dayanak 3",
+              "contains_quote_indexes": []
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "İşlev"
+        },
+        {
+          "index": 1,
+          "unit": "İşlev"
+        }
+      ]
+    },
+    "T3-P176-Q05": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "metinle_bag"
+        }
+      ]
+    },
+    "T3-P176-Q10": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "metindeki_neden"
+        },
+        {
+          "index": 1,
+          "unit": "konusan_kisi"
+        }
+      ]
+    },
+    "T3-P176-Q13": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "ortak_hatira"
+        }
+      ]
+    },
+    "T3-P177-Q14": {
+      "units": [
+        {
+          "id": "acik_iletiler",
+          "sections": [
+            "acik_iletiler"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: şehir ve kimlik",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Dayanak: geçmiş ve kimlik",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ortuk_iletiler",
+          "sections": [
+            "ortuk_iletiler"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "acik_iletiler",
+            "text": "Açık ileti, metinde doğrudan söylenen düşüncedir.",
+            "position": "start"
+          },
+          {
+            "unit": "ortuk_iletiler",
+            "text": "Örtük ileti ise birden çok ayrıntıdan çıkarım yapmayı gerektirir.",
+            "position": "start"
+          },
+          {
+            "unit": "ortuk_iletiler",
+            "text": "Huzur parçasında bu iki düzey birbirinden ayrılmalıdır.",
+            "position": "end"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "acik_iletiler"
+        },
+        {
+          "index": 1,
+          "unit": "acik_iletiler"
+        }
+      ]
+    },
+    "T3-P178-PERF01": {
+      "units": [
+        {
+          "id": "Bağ Kurucu",
+          "sections": [
+            "Bağ Kurucu"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: Bağ Kurucu",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Ressam",
+          "sections": [
+            "Ressam"
+          ]
+        },
+        {
+          "id": "Okuma Aydınlatıcısı",
+          "sections": [
+            "Okuma Aydınlatıcısı"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: Okuma Aydınlatıcısı",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Sorgulayıcı",
+          "sections": [
+            "Sorgulayıcı"
+          ]
+        },
+        {
+          "id": "Özetleyici",
+          "sections": [
+            "Özetleyici"
+          ]
+        },
+        {
+          "id": "Tahmin Edici",
+          "sections": [
+            "Tahmin Edici"
+          ]
+        },
+        {
+          "id": "Kelime Avcısı",
+          "sections": [
+            "Kelime Avcısı"
+          ]
+        },
+        {
+          "id": "Hareket İzcisi",
+          "sections": [
+            "Hareket İzcisi"
+          ]
+        },
+        {
+          "id": "Karakter Çözümleyici",
+          "sections": [
+            "Karakter Çözümleyici"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: Karakter Çözümleyici",
+              "contains_quote_indexes": [
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Bağ Kurucu"
+        },
+        {
+          "index": 1,
+          "unit": "Okuma Aydınlatıcısı"
+        },
+        {
+          "index": 2,
+          "unit": "Karakter Çözümleyici"
+        }
+      ]
+    },
+    "T3-P182-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Gerçek hayatla bağ"
+        },
+        {
+          "index": 1,
+          "unit": "Kurmaca dönüşüm"
+        }
+      ]
+    },
+    "T3-P184-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "1 · Halkı sevmek ve insanı kavramlaştırmak"
+        },
+        {
+          "index": 1,
+          "unit": "2 · Yeni hayat ve tarihî kökler"
+        },
+        {
+          "index": 2,
+          "unit": "3 · Nuran, serçeler ve köpek"
+        },
+        {
+          "index": 3,
+          "unit": "4 · İhsan'ın hastalığı"
+        }
+      ]
+    },
+    "T3-P187-Q02": {
+      "units": [
+        {
+          "id": "olay_dil_uslup",
+          "sections": [
+            "olay_dil_uslup"
+          ]
+        },
+        {
+          "id": "mekan_dil_uslup",
+          "sections": [
+            "mekan_dil_uslup"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: mekân",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kisi_dil_uslup",
+          "sections": [
+            "kisi_dil_uslup"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: kişi ve kimlik",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Dayanak: kişi diyaloğu",
+              "contains_quote_indexes": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zaman_dil_uslup",
+          "sections": [
+            "zaman_dil_uslup"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "olay_dil_uslup",
+            "text": "Dil ve üslup, olay, mekân, kişi ve zamanın okura nasıl göründüğünü etkiler.",
+            "position": "start"
+          },
+          {
+            "unit": "zaman_dil_uslup",
+            "text": "Bu ilişki, okunan parçadaki somut anlatım tercihlerinden hareketle açıklanabilir.",
+            "position": "end"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "kisi_dil_uslup"
+        },
+        {
+          "index": 1,
+          "unit": "mekan_dil_uslup"
+        },
+        {
+          "index": 2,
+          "unit": "kisi_dil_uslup"
+        }
+      ]
+    },
+    "T3-P188-Q03CC": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "kultur_ve_gecmis"
+        },
+        {
+          "index": 1,
+          "unit": "mimari_ve_sehir"
+        }
+      ]
+    },
+    "T3-P193-PERF01": {
+      "units": [
+        {
+          "id": "Dil ve söz varlığı (örnek)",
+          "sections": [
+            "Dil ve söz varlığı (örnek)"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: Dil ve söz varlığı",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Kişilerin bakış açıları ve ilişkileri (örnek)",
+          "sections": [
+            "Kişilerin bakış açıları ve ilişkileri (örnek)"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: Kişiler ve ilişkiler",
+              "contains_quote_indexes": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Mekânın işlevi (örnek)",
+          "sections": [
+            "Mekânın işlevi (örnek)"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: Mekânın işlevi",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Anlatımın açıklığı (örnek)",
+          "sections": [
+            "Anlatımın açıklığı (örnek)"
+          ]
+        },
+        {
+          "id": "Duygu ve çağrışım (örnek)",
+          "sections": [
+            "Duygu ve çağrışım (örnek)"
+          ]
+        },
+        {
+          "id": "Tutarlılık (örnek)",
+          "sections": [
+            "Tutarlılık (örnek)"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Dil ve söz varlığı (örnek)"
+        },
+        {
+          "index": 1,
+          "unit": "Mekânın işlevi (örnek)"
+        },
+        {
+          "index": 2,
+          "unit": "Kişilerin bakış açıları ve ilişkileri (örnek)"
+        }
+      ]
+    },
+    "T3-P193-PERF03": {
+      "units": [
+        {
+          "id": "Üç Yaz · kimlik",
+          "sections": [
+            "Üç Yaz · kimlik"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak · kimlik (Üç Yaz)",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Üç Yaz · şehir",
+          "sections": [
+            "Üç Yaz · şehir"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak · şehir (Üç Yaz)",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Üç Yaz · hüzün",
+          "sections": [
+            "Üç Yaz · hüzün"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak · hüzün",
+              "contains_quote_indexes": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "id": "İki Sor · kimlik",
+          "sections": [
+            "İki Sor · kimlik"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak · kimlik (İki Sor)",
+              "contains_quote_indexes": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "İki Sor · şehir",
+          "sections": [
+            "İki Sor · şehir"
+          ]
+        },
+        {
+          "id": "Bir Paylaş · şehir",
+          "sections": [
+            "Bir Paylaş · şehir"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak · şehir (Bir Paylaş)",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Üç Yaz · kimlik"
+        },
+        {
+          "index": 0,
+          "unit": "İki Sor · kimlik"
+        },
+        {
+          "index": 1,
+          "unit": "Üç Yaz · şehir"
+        },
+        {
+          "index": 1,
+          "unit": "Bir Paylaş · şehir"
+        },
+        {
+          "index": 2,
+          "unit": "Üç Yaz · hüzün"
+        }
+      ]
+    },
+    "T3-P199-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Değerlendirme"
+        }
+      ]
+    },
+    "T3-P201-WORK01": {
+      "units": [
+        {
+          "id": "Konu",
+          "sections": [
+            "Konu"
+          ]
+        },
+        {
+          "id": "Ana düşünce",
+          "sections": [
+            "Ana düşünce"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Dayanak: sanat ve estetik",
+              "contains_quote_indexes": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "id": "Yardımcı düşünceler",
+          "sections": [
+            "Yardımcı düşünceler"
+          ]
+        },
+        {
+          "id": "Yazılma amacı",
+          "sections": [
+            "Yazılma amacı"
+          ]
+        },
+        {
+          "id": "Anlatım biçimleri",
+          "sections": [
+            "Anlatım biçimleri"
+          ]
+        },
+        {
+          "id": "Düşünceyi geliştirme",
+          "sections": [
+            "Düşünceyi geliştirme"
+          ]
+        },
+        {
+          "id": "Açık iletiler",
+          "sections": [
+            "Açık iletiler"
+          ]
+        },
+        {
+          "id": "Örtük iletiler",
+          "sections": [
+            "Örtük iletiler"
+          ]
+        },
+        {
+          "id": "Bilgilerin sunuluşu",
+          "sections": [
+            "Bilgilerin sunuluşu"
+          ]
+        }
+      ],
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Ana düşünce"
+        },
+        {
+          "index": 1,
+          "unit": "Ana düşünce"
+        }
+      ]
+    },
+    "T3-P202-Q01": {
+      "units": [
+        {
+          "id": "nesnel",
+          "sections": [
+            "nesnel"
+          ]
+        },
+        {
+          "id": "oznel",
+          "sections": [
+            "oznel_cerceve"
+          ],
+          "evidence_sections": [
+            {
+              "key": "oznel",
+              "contains_quote_indexes": [
+                0,
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "nesnel",
+            "text": "Metindeki nesnel ifadeler, eğitim, görev, yayın ve tarihli yaşam olayları gibi doğrulanabilir bilgileri belirtir.",
+            "position": "start"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "oznel"
+        },
+        {
+          "index": 1,
+          "unit": "oznel"
+        },
+        {
+          "index": 2,
+          "unit": "oznel"
+        }
+      ]
+    },
+    "T3-P208-Q02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Nükteli yön"
+        },
+        {
+          "index": 1,
+          "unit": "Tasavvufî yön"
+        }
+      ]
+    },
+    "T3-P210-Q01": {
+      "units": [
+        {
+          "id": "Mülakatın amacı",
+          "sections": [
+            "Mülakatın amacı"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Romanın hazırlanışı",
+              "contains_quote_indexes": [
+                0
+              ]
+            },
+            {
+              "key": "Roman kişisinin canlanması",
+              "contains_quote_indexes": [
+                1
+              ]
+            },
+            {
+              "key": "Yazarlık emeği",
+              "contains_quote_indexes": [
+                2
+              ]
+            },
+            {
+              "key": "Türkçe hakkında görüş",
+              "contains_quote_indexes": [
+                3
+              ]
+            }
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Mülakatın amacı",
+            "text": "Bu mülakat, yazarın çalışma biçimine ilişkin birinci elden kaynak niteliğindedir.",
+            "position": "start"
+          }
+        ]
+      },
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Mülakatın amacı"
+        },
+        {
+          "index": 1,
+          "unit": "Mülakatın amacı"
+        },
+        {
+          "index": 2,
+          "unit": "Mülakatın amacı"
+        },
+        {
+          "index": 3,
+          "unit": "Mülakatın amacı"
+        }
+      ]
+    },
+    "T3-P215-Q01": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "Metinde belirtilen nedenler"
+        },
+        {
+          "index": 1,
+          "unit": "Metinde belirtilen nedenler"
+        },
+        {
+          "index": 2,
+          "unit": "Metinde belirtilen nedenler"
+        }
+      ]
+    },
+    "T3-P218-QH02": {
+      "quote_links": [
+        {
+          "index": 0,
+          "unit": "audio-elements"
+        },
+        {
+          "index": 1,
+          "unit": "audio-elements"
+        },
+        {
+          "index": 2,
+          "unit": "audio-elements"
+        }
+      ],
+      "units": [
+        {
+          "id": "audio-elements",
+          "sections": [
+            "müzik",
+            "ses_efekti",
+            "seslendirme",
+            "tonlama"
+          ]
+        }
+      ]
+    },
+    "T3-P188-Q03B": {
+      "units": [
+        {
+          "id": "mekan_kisi",
+          "sections": [
+            "mekan_kisi"
+          ]
+        },
+        {
+          "id": "mekan_zaman",
+          "sections": [
+            "mekan_zaman"
+          ]
+        },
+        {
+          "id": "olay_uslup",
+          "sections": [
+            "olay_uslup"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "mekan_kisi",
+            "text": "Yapı unsurlarının karşılıklı ilişkisi, sahnenin tek bir işleve indirgenmesini önler.",
+            "position": "start"
+          },
+          {
+            "unit": "olay_uslup",
+            "text": "Böylece olay, mekân, kişiler ve geçmiş çağrışımları aynı anlatı içinde birlikte taşınır.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T3-P200-PERF01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "Anıt ve dizeler",
+            "text": "Mehmet Âkif’in “Sen şehit oğlusun, incitme, yazıktır, atanı: / Verme, dünyaları alsan da bu cennet vatanı.” dizeleri, vatanı koruma ve görev sorumluluğunu öne çıkarır.",
+            "position": "start"
+          },
+          {
+            "unit": "Anıt ve dizeler",
+            "text": "Sayfadaki şehitlerin yaşam bilgileriyle birlikte düşünüldüğünde fedakârlık ve toplumsal dayanışmayı hatırlatır.",
+            "position": "end"
+          }
+        ]
+      }
+    },
+    "T3-P222-PERF01": {
+      "units": [
+        {
+          "id": "tutum_kartlari",
+          "sections": [
+            "tutum_kartlari"
+          ]
+        },
+        {
+          "id": "ornek_kavram_haritasi_basliklari",
+          "sections": [
+            "ornek_kavram_haritasi_basliklari"
+          ]
+        },
+        {
+          "id": "kaynak_durumu",
+          "sections": [
+            "kaynak_durumu"
+          ]
+        }
+      ],
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "tutum_kartlari",
+            "text": "Bu etkinlikte verilen görüşe katılma derecesi ve gerekçeler sınıfça tartışılıp gözden geçirilir.",
+            "position": "start"
+          },
+          {
+            "unit": "ornek_kavram_haritasi_basliklari",
+            "text": "Sayfadaki kavram haritası örneği bir düzenleme modelidir.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T3-P183-Q01": {
+      "answer_text": {
+        "mode": "include",
+        "fragments": [
+          {
+            "unit": "nesnel_anlatim",
+            "text": "Nesnel anlatım dışarıdan gözlenebilen olay ve durumları öne çıkarır.",
+            "position": "start"
+          },
+          {
+            "unit": "oznel_anlatim",
+            "text": "Öznel anlatım ise Mümtaz’ın duygu, düşünce ve iç sorgulamalarını öne çıkarır.",
+            "position": "start"
+          }
+        ]
+      }
+    },
+    "T3-P214-Q01": {
+      "units": [
+        {
+          "id": "Açık ileti",
+          "sections": [
+            "Açık ileti"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Açık iletinin dayanağı",
+              "contains_quote_indexes": []
+            }
+          ]
+        },
+        {
+          "id": "Örtük ileti",
+          "sections": [
+            "Örtük ileti"
+          ],
+          "evidence_sections": [
+            {
+              "key": "Örtük iletinin dayanağı",
+              "contains_quote_indexes": []
+            }
+          ]
+        }
+      ]
+    },
+    "T3-P165-PERF02": {
+      "units": [
+        {
+          "id": "huzur-rüya",
+          "sections": [
+            "huzur",
+            "rüya"
+          ]
+        },
+        {
+          "id": "saz-boğaz",
+          "sections": [
+            "saz",
+            "boğaz"
+          ]
+        },
+        {
+          "id": "tarih-garp",
+          "sections": [
+            "tarih",
+            "garp"
+          ]
+        }
+      ]
+    }
+  }
+}

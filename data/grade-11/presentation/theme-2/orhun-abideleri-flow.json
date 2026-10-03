@@ -19,7 +19,13 @@
       "prompt": "Orhun Vadisi — İlk sorudan önce kitaptaki videoyu karekoddan izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İlk soru Orhun Vadisi videosundaki bölgeye dayanır. Karekod erişilebiliyorsa videoyu izleyip yer, çevre ve anıtlarla ilgili somut ayrıntıları not edin; erişilemiyorsa videoda görülmeyen ayrıntıları kesin bilgi gibi kullanmayın."
+        "lead": "İlk soru Orhun Vadisi videosundaki bölgeye dayanır. Karekod erişilebiliyorsa videoyu izleyip yer, çevre ve anıtlarla ilgili somut ayrıntıları not edin; erişilemiyorsa videoda görülmeyen ayrıntıları kesin bilgi gibi kullanmayın.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.113 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=113"
+          }
+        ]
       }
     },
     {
@@ -126,6 +132,14 @@
       "presentation": {
         "interleave": true,
         "answer_text": "end"
+      },
+      "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.116 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=116"
+          }
+        ]
       }
     },
     {

@@ -252,7 +252,13 @@
       "prompt": "Aidiyet — Sorular 13–14'ten önce kitaptaki videoyu karekoddan izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Soru 13 videodaki Anadolu insanının özelliklerini kanıtlamayı, Soru 14 ise aidiyet düşüncesini video örneğiyle ilişkilendirmeyi gerektirir. Karekod erişilebiliyorsa videoyu izleyip davranış, söz ve sahne kanıtlarını not edin; erişilemiyorsa videoya özgü ayrıntı üretmeyin."
+        "lead": "Soru 13 videodaki Anadolu insanının özelliklerini kanıtlamayı, Soru 14 ise aidiyet düşüncesini video örneğiyle ilişkilendirmeyi gerektirir. Karekod erişilebiliyorsa videoyu izleyip davranış, söz ve sahne kanıtlarını not edin; erişilemiyorsa videoya özgü ayrıntı üretmeyin.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=307"
+          }
+        ]
       }
     },
     {
@@ -265,7 +271,13 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Özellik adı tek başına yeterli değildir; videoda gerçekten gördüğünüz davranış, söz veya sahneyi kanıt gösterin.",
-        "note": "Aidiyet QR videosu görülmeden Lesson Player kişi ve davranış ayrıntısı üretmez."
+        "note": "Aidiyet QR videosu görülmeden Lesson Player kişi ve davranış ayrıntısı üretmez.",
+        "sources": [
+          {
+            "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=307"
+          }
+        ]
       }
     },
     {
