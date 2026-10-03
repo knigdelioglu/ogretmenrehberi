@@ -120,7 +120,7 @@ let exportStatusTimer = 0;
 
 // Yönlendirme ve açıklama öğretmene dönük olduğundan varsayılan olarak kumanda sırasına girmez;
 // Y / A tuşlarıyla elle açılır. Menüdeki ayarla kumanda sırasına eklenebilir.
-const STUDENT_LAYERS = new Set(["answer", "evidence", "dictionary"]);
+const STUDENT_LAYERS = new Set(["thinking", "answer", "evidence", "dictionary"]);
 function activeReveals(step) {
   if (!step) return [];
   if (isWordWallStep(step)) return [];
@@ -362,6 +362,8 @@ function h(tag, attrs = {}, ...children) {
 
 const ICONS = {
   guidance:
+    '<svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M8.3 14.8A6 6 0 1 1 15.7 14.8c-.9.7-1.4 1.4-1.5 2.2h-4.4c-.1-.8-.6-1.5-1.5-2.2Z"/></svg>',
+  thinking:
     '<svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M8.3 14.8A6 6 0 1 1 15.7 14.8c-.9.7-1.4 1.4-1.5 2.2h-4.4c-.1-.8-.6-1.5-1.5-2.2Z"/></svg>',
   answer: '<svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>',
   evidence:
@@ -770,6 +772,9 @@ function buildLayerPages(step, key, b) {
       title: "Metinden kanıt"
     }));
   }
+  if (key === "thinking" && step.thinking) {
+    return [{ text: step.thinking, title: "Düşünürken…" }];
+  }
   if (key === "guidance" || key === "explanation") {
     const value = String(step.answer?.[key] || "");
     return splitAtSentences(value, 900 * b).map((text) => ({
@@ -992,6 +997,7 @@ function stepSlide(lesson, step) {
   const fresh = (k) => state.fresh === k;
   const viewNames = {
     content: isVocab ? "Söz varlığı" : "Görev",
+    thinking: "Düşünürken…",
     answer: answerLabel(step, lesson.theme),
     evidence: "Metinden kanıt",
     guidance: "Yönlendirme",
@@ -1118,6 +1124,8 @@ function stepSlide(lesson, step) {
     main.append(
       panel("evidence", "Metinden kanıt", h("div", { class: "quotes" }, (page.quotes || []).map((q) => h("p", {}, q))), fresh(viewKey))
     );
+  } else if (viewKey === "thinking") {
+    main.append(panel("thinking", "Düşünürken…", h("p", {}, page.text || step.thinking), fresh(viewKey)));
   } else if (viewKey === "guidance") {
     main.append(panel("guidance", "Yönlendirme", h("p", {}, page.text || a.guidance), fresh(viewKey)));
   } else if (viewKey === "explanation") {

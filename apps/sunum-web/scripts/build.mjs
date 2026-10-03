@@ -10,6 +10,8 @@ import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
+import { insertThinkingReveal } from "../src/reveal-sequence.js";
+import { collectThinkingRecords, thinkingRecordKey } from "./thinking-data.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
@@ -56,6 +58,16 @@ console.log("[sunum-web] Ders verisi kanonik kaynaktan üretiliyor…");
 execFileSync(process.execPath, [lessonBuilder], { stdio: ["ignore", "ignore", "inherit"] });
 const lessons = JSON.parse(fs.readFileSync(lessonsPath, "utf8"));
 
+const thinkingRoot = path.join(repoRoot, "data/grade-11/presentation");
+let thinkingData;
+try {
+  thinkingData = collectThinkingRecords(thinkingRoot, lessons);
+} catch (error) {
+  fail(error.message);
+}
+const thinkingByStep = thinkingData.records;
+const matchedThinkingSteps = new Set();
+
 const THEME_NAMES = {
   TEMA_01: "Bir Diyeceğim Var!",
   TEMA_02: "Kültür Yolculuğu",
@@ -72,7 +84,7 @@ function pick(obj, keys) {
   return out;
 }
 
-function slimStep(step, themeId) {
+function slimStep(step, themeId, thinking) {
   const includeTeacherSupport = themeId !== "TEMA_01" && themeId !== "TEMA_02";
   const answerFields = [
     "entry_type",
@@ -97,7 +109,8 @@ function slimStep(step, themeId) {
     explanation: includeTeacherSupport && Boolean(answer?.explanation),
     dictionary: Boolean(answer?.dictionary_terms?.length)
   };
-  const reveals = (step.reveal_order || []).filter((k) => has[k]);
+  const baseReveals = (step.reveal_order || []).filter((k) => has[k]);
+  const reveals = insertThinkingReveal(baseReveals, Boolean(thinking));
 
   return {
     id: step.id,
@@ -109,6 +122,7 @@ function slimStep(step, themeId) {
     heading: step.source?.book_heading ?? "",
     task: step.source?.task_type ?? "",
     reveals,
+    ...(thinking ? { thinking } : {}),
     presentation: step.presentation ?? undefined,
     answer: answer && Object.keys(answer).length ? answer : null,
     content: content && Object.keys(content).length ? content : null
@@ -125,9 +139,19 @@ const catalog = {
     title: lesson.title,
     subtitle: lesson.subtitle,
     pages: lesson.printed_page_range,
-    steps: lesson.steps.map((step) => slimStep(step, lesson.theme_id))
+    steps: lesson.steps.map((step) => {
+      const key = thinkingRecordKey(lesson.lesson_id, step.id);
+      const thinking = thinkingByStep.get(key);
+      if (thinking !== undefined) matchedThinkingSteps.add(key);
+      return slimStep(step, lesson.theme_id, thinking?.text);
+    })
   }))
 };
+
+if (matchedThinkingSteps.size !== thinkingByStep.size) {
+  const unmatched = [...thinkingByStep.keys()].filter((key) => !matchedThinkingSteps.has(key));
+  fail(`Sunum adımında karşılığı olmayan Düşünürken kayıtları: ${unmatched.join(", ")}`);
+}
 
 const stepCount = catalog.lessons.reduce((n, l) => n + l.steps.length, 0);
 

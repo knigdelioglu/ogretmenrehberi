@@ -24,7 +24,8 @@
       "answer_id": "T1-P36-Q02",
       "layout": "question",
       "prompt": "“Her yazı bir mektup olduğu gibi her resim, her ezgi, her yapı da birer mektuptur.” cümlesini iletişim bağlamında yorumlayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Cümledeki yazı, resim, ezgi ve yapı örneklerinin yan yana gelişini inceleyin; bu benzetmenin okurda ne düşündürdüğünü çıkarın."
     },
     {
       "id": "s36-q3",
@@ -58,7 +59,8 @@
       "id": "s37-q2",
       "source_record_id": "T01-S0024",
       "answer_id": "T1-P37-Q02",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Hitabı, tarih-yer bilgisini ve görseli inceleyerek mektubun muhatabı ile konusunu tahmin edin."
     },
     {
       "id": "s37-q3",
@@ -98,26 +100,30 @@
       "id": "s40-q1",
       "source_record_id": "T01-S0026",
       "answer_id": "T1-P40-Q01",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Hitap ve kapanışla arkadaşının durumunu anlatan bölümleri, roman değerlendirmeleriyle karşılaştırın."
     },
     {
       "id": "s40-q2",
       "source_record_id": "T01-S0027",
       "answer_id": "T1-P40-Q02",
       "layout": "question",
-      "sections_layout": "stacked"
+      "sections_layout": "stacked",
+      "thinking": "Romanla ilgili sözlerin mektubun neresinde ve hangi ifadelerin yanında yer aldığını izleyin; bu birlikteliğin metne katkısını yorumlayın."
     },
     {
       "id": "s40-q3",
       "source_record_id": "T01-S0028",
       "answer_id": "T1-P40-Q03",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Kaplan’ın roman karşılaştırmalarında hangi anlatım ölçütlerini kullandığını metinden çıkarın."
     },
     {
       "id": "s40-q4",
       "source_record_id": "T01-S0029",
       "answer_id": "T1-P40-Q04",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Metinde kişileri tanımanıza yardım eden ipuçlarını belirleyin; seçtiğiniz yöntemin başka hangi anlatı türlerine uyarlanabileceğini düşünün."
     },
     {
       "id": "s40-q5",
@@ -127,7 +133,8 @@
       "density": "large",
       "sections_layout": "two-column",
       "prompt": "Çalışma kâğıdı 1/2 — Konu, ana düşünce ve iletiler",
-      "prompt_mode": "FLOW_OVERRIDE"
+      "prompt_mode": "FLOW_OVERRIDE",
+      "thinking": "Mektuptaki günlük yaşam ayrıntılarını ve roman değerlendirmelerini ayırın; doğrudan aktarılanlarla genel düşünceyi belirleyin."
     },
     {
       "id": "s40-q5b",
@@ -137,19 +144,22 @@
       "density": "large",
       "sections_layout": "two-column",
       "prompt": "Çalışma kâğıdı 2/2 — Anlatım ve düşünceyi geliştirme",
-      "prompt_mode": "FLOW_OVERRIDE"
+      "prompt_mode": "FLOW_OVERRIDE",
+      "thinking": "Gündelik olay ve düşünce aktarılan bölümlerden örnekler bulun; anlatım biçimlerini karşılaştırın."
     },
     {
       "id": "s41-q1",
       "source_record_id": "T01-S0031",
       "answer_id": "T1-P41-Q01",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Mektuptaki olay ve tercihleri biyografiyle, Okay’ın yorumuyla karşılaştırın; iki kaynakta da görülenleri ayırın."
     },
     {
       "id": "s41-q2",
       "source_record_id": "T01-S0032",
       "answer_id": "T1-P41-Q02",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Duygu ve değerlendirme bildiren cümlelerle doğrulanabilir bilgileri ayırın; tür yorumunuzu bu dağılıma dayandırın."
     },
     {
       "id": "s42-reference",
@@ -221,14 +231,16 @@
             "body": "Ticari kişi ve kuruluşların iş ilişkileri için yazdığı mektuplardır. Gereksiz ayrıntılardan kaçınılır; amaç ve istek açıkça belirtilir."
           }
         ]
-      }
+      },
+      "thinking": "Özel ve edebî mektup için sayfada verilen ölçütleri karşılaştırıp mektuptaki hitap, konu ve dil örneklerini bu ölçütlerle sınayın."
     },
     {
       "id": "s43-q2",
       "source_record_id": "T01-S0034",
       "answer_id": "T1-P43-Q02",
       "layout": "comparison",
-      "density": "compact"
+      "density": "compact",
+      "thinking": "Tablodaki ölçütleri aynı sırayla ele alın; her iki metinden birer kanıt seçip benzerlik ve ayrımı gerekçelendirin."
     },
     {
       "id": "s44-q1",
@@ -240,7 +252,8 @@
       "id": "s44-q2",
       "source_record_id": "T01-S0036",
       "answer_id": "T1-P44-Q02",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Hitap ve kapanışın yanı sıra metnin asıl bölümündeki söz seçimini inceleyin; bunları mektubun muhatabı ve konusuyla ilişkilendirin."
     },
     {
       "id": "s44-q3",
@@ -248,19 +261,22 @@
       "answer_id": "T1-P44-Q03",
       "layout": "question",
       "prompt": "Mektup metninden hareketle metnin yazıldığı dönemdeki insan ilişkileriyle ilgili çıkarımlarda bulununuz ve bu çıkarımlarınızı günümüzün insan ilişkileriyle karşılaştırınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Mektuptaki sesleniş ve gündelik olayları bugünden bir iletişim örneğiyle karşılaştırın."
     },
     {
       "id": "s44-q4",
       "source_record_id": "T01-S0038",
       "answer_id": "T1-P44-Q04",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Mektuptaki yer, tarih, kurum, ulaşım ve günlük yaşam ayrıntılarını belirleyin; metnin göstermediği tarihsel sonuçları ayrıca sınırlandırın."
     },
     {
       "id": "s44-q5",
       "source_record_id": "T01-S0039",
       "answer_id": "T1-P44-Q05",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Değer yorumunuzu mektuptaki belirli söz, davranış veya dileklerle destekleyin; aynı örneğin birden çok başlıkla ilişkisini tartışın."
     },
     {
       "id": "s45-process",
@@ -305,7 +321,8 @@
       "id": "s46-q3",
       "source_record_id": "T01-S0043",
       "answer_id": "T1-P46-Q03",
-      "layout": "assessment"
+      "layout": "assessment",
+      "thinking": "Mektuptaki beklenti ya da amacı belirleyin; hangi metin özelliklerinin bu izlenimi verdiğini sınayın."
     },
     {
       "id": "s46-q4",
@@ -327,13 +344,15 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=46"
           }
         ]
-      }
+      },
+      "thinking": "Şiirde anlamı taşıyan imge ve seslenişleri seçip bunları mektubun bölümlerine kendi muhatap ve anlatım tercihinizle aktarın."
     },
     {
       "id": "s47-q1",
       "source_record_id": "T01-S0045",
       "answer_id": "T1-P47-Q01",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Mektuptaki kişi, yer ve olayları biyografi ve kaynaklarla karşılaştırın; metinle doğrulanmış bilgiyi ayırın."
     },
     {
       "id": "s47-q2",
@@ -372,7 +391,8 @@
             "body": "1918’de bir askerin babasına yazdığı mektup ilk alıcısına ulaşmaz; Türk Kızılay arşivinde kaldıktan 103 yıl sonra torunlarına teslim edilir."
           }
         ]
-      }
+      },
+      "thinking": "İletiyi yazanların sözlerine ve iletinin kime, hangi koşulda ulaştığına bakıp olası amaçları birbirinden ayırın."
     },
     {
       "id": "s48-q2",
@@ -387,7 +407,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=48"
           }
         ]
-      }
+      },
+      "thinking": "Mektubun gönderilme ve ulaşma koşullarını karşılaştırın; aradaki zaman farkının işlevini düşünün."
     },
     {
       "id": "s48-q3",
@@ -401,7 +422,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=48"
           }
         ]
-      }
+      },
+      "thinking": "Mağara resimleriyle emojileri dönem ve kullanım bağlamları içinde inceleyin; her birinin hangi tür bilgiyi aktardığını karşılaştırın."
     },
     {
       "id": "s50-q1",
@@ -442,7 +464,8 @@
       },
       "presentation": {
         "answer_text": "end"
-      }
+      },
+      "thinking": "Her metinde muhatabı, iletilen isteği veya duyguyu ve metnin sonundaki yönelişi bulun; amaçları metin metin karşılaştırın."
     },
     {
       "id": "s50-q2",
@@ -456,7 +479,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=49"
           }
         ]
-      }
+      },
+      "thinking": "Örneklerde biçim, muhatap ve iletilen içerik bakımından ortak ve ayrılan noktaları işaretleyin."
     },
     {
       "id": "s50-q3",
@@ -471,7 +495,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=49"
           }
         ]
-      }
+      },
+      "thinking": "Metinlerde doğrudan kişi, tarih veya yaşantıya bağlanan ayrıntıları şiirsel ya da kurmaca biçimde dönüştürülen ayrıntılarla karşılaştırın."
     },
     {
       "id": "s50-q4",

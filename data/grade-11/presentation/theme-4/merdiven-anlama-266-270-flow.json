@@ -155,6 +155,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 1 — İhtiyar ve delikanlının duygu ve düşüncelerini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İhtiyarın iki karşılaşmadaki söz ve davranışlarını, delikanlının ölüm haberini verme biçimiyle ve anlatıcının tepkileriyle karşılaştırın; duygu çıkarımlarını gözlenebilir olandan ayırın.",
       "content": {
         "lead": "Duyguya ilişkin her çıkarımı gerçekten söylenen söz veya gösterilen davranışa bağlayın.",
         "sections": [
@@ -178,6 +179,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 2 — İhtiyarın koşuşturma hakkındaki sözünü anlatıcının yerinden yorumlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Anlatıcının ihtiyarın uyarısını ilk duyduğunda ne yaptığını, daha sonra hangi olaydan sonra hatırladığını izleyin; anlamı kendi konumuyla ilişkilendirin.",
       "content": {
         "lead": "İlk karşılaşmada duyup geçilen söz, sonraki olaydan sonra neden yeni anlam kazanıyor?"
       }
@@ -190,6 +192,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 3 — Kişilerin 'memur' olarak verilmesi hangi insan ve hayat görüşünü düşündürür?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kişilerin bireysel geçmişinin ne kadar verildiğini ve ortak olarak hangi meslek sözcüğüyle anıldıklarını karşılaştırın; bu seçimin kısa karşılaşmayı nasıl genişlettiğini sorgulayın.",
       "content": {
         "lead": "Özel adlar yerine yaş ve çalışma konumunun öne çıkmasının kuşak ve meslek döngüsüne etkisini açıklayın."
       }
@@ -202,6 +205,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 4 — 'İnmek' ve 'çıkmak' hangi somut ve simgesel anlamları taşır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "“İnmek” ve “çıkmak” sözcüklerini önce gerçek hareketlerin geçtiği yerlerde bulun, sonra anlatıcının son kararını önceki yönelişleriyle karşılaştırın.",
       "content": {
         "lead": "Önce fiillerin gerçek hareketi, ardından yaşam ve meslek üzerindeki olası çağrışımlarını ayırın.",
         "sections": [
@@ -224,6 +228,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 5 — Hikâye size ne düşündürdü; yazılma amacı ne olabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Öyküde yinelenen iş telaşı, ihtiyarın sözü ve son karşılaşmadan sonra değişen davranışı birlikte değerlendirin; yazarın okura hangi soruyu bıraktığını bu akıştan çıkarın.",
       "content": {
         "lead": "Kendi yorumunuz ile yazarın amacına ilişkin gerekçeli çıkarımınızı ayırın. Tek bir kişisel duygu zorunlu değildir."
       }
@@ -236,6 +241,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 6 — Sınırlı kişi kadrosunun küçürek hikâyeyle ilişkisi nedir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kişilerin öyküde nasıl tanıtıldığına ve olayın hangi karşılaşmalarla ilerlediğine bakın; bu yoğunluğun küçürek hikâyeyle ilişkisini türün tanımıyla sınayın.",
       "content": {
         "lead": "Anlatıcı, ihtiyar ve delikanlının işlevini gösterin; neden ayrıntılı yaşam öykülerine ihtiyaç duyulmadığını açıklayın."
       }
@@ -267,6 +273,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 8 — Anlatıcı neden yukarı çıkmayıp aşağı inmeyi seçer?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Ölüm haberinden önceki iş telaşını, genç memura yol verme anını ve son cümle öncesindeki eylemi sırayla karşılaştırın; yön değişikliğinin dayanağını bulun.",
       "content": {
         "lead": "Son kararı hem gerçek bir merdiven hareketi hem de mesleki hedef ve yaşam önceliği bakımından yorumlayın."
       }

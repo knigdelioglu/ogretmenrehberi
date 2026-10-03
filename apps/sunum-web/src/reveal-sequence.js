@@ -13,3 +13,11 @@ export function interleaveStages(groups) {
     ? [{ group, stage: "answer" }]
     : [{ group, stage: "prompt" }, { group, stage: "answer" }]);
 }
+
+export function insertThinkingReveal(reveals, hasThinking) {
+  if (!hasThinking) return [...reveals];
+  if (!reveals.includes("answer")) {
+    throw new Error("A thinking reveal requires an answer reveal");
+  }
+  return ["thinking", ...reveals.filter((key) => key !== "thinking")];
+}

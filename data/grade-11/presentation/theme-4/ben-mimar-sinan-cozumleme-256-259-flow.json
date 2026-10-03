@@ -154,6 +154,7 @@
       "density": "compact",
       "prompt": "Fark Edelim 2 — Monolog ve diyalog karakteri nasıl farklı yollarla tanıtır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her örnekte konuşmanın tek kişide mi kaldığını yoksa karşılıkla mı ilerlediğini işaretleyin; seçtiğiniz bölümün sahnedeki olaylardan hangisine bağlandığını tartışın.",
       "content": {
         "lead": "Yalnız konuşmacı sayısını söylemeyin; karakterin iç dünyası ile kişiler arası ilişkiyi karşılaştırın."
       }
@@ -182,6 +183,7 @@
       "density": "compact",
       "prompt": "Sıra Sizde 1 — Yazar bu üslubu neden seçmiş; nasıl bir etki oluşturmuştur?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Sahne yönergeleri, farklı seslerin girişi ve Sinan’ın anlatım biçiminin hangi anları öne çıkardığını gözleyin; bunların izleyicide kurduğu etkiyi açıklayın.",
       "content": {
         "lead": "Tarih bilgisiyle dramatik anlatımın birleşmesine, izleyiciye doğrudan seslenmeye ve sahne işaretlerine metinden örnek bulun."
       }
@@ -212,6 +214,7 @@
       "density": "compact",
       "prompt": "Dil bilgisi — Altı cümlede aynı sınıflandırma sırasını uygulayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Yüklemin türünü, yerini, yargı sayısını ve olumluluk durumunu her cümlede ayrı ayrı kontrol edin; sonra yapı farklarının konuşma ritmiyle bağını örneklerde izleyin.",
       "content": {
         "lead": "Örnek satırın sınıflandırmasını koruyun; kendi çözümünüzü bu örnekle karşılaştırın.",
         "items": [
@@ -259,6 +262,7 @@
       "density": "compact",
       "prompt": "Fark Edelim 1 — Ben, Mimar Sinan gelecek kuşaklara tarih ve kültür bilinci kazandırmayı amaçlıyor mu?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Oyunda gelecek kuşağa seslenilen yerleri kültürel üretim ve tarihî kişilerle ilgili kanıtlarla karşılaştırın; yorumunuzu en az bir sahne sözüne dayandırın.",
       "content": {
         "lead": "Oyundan kişi, eser, sanat çevresi ve mimari mirasa ilişkin en az iki somut dayanak seçin."
       }
@@ -271,6 +275,7 @@
       "density": "compact",
       "prompt": "Fark Edelim 2 — Özakman'ın tarih ve millî kimliğe bakışı hakkında hangi çıkarımlar yapılabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Tarih ve kimlik metnindeki dönem anlatısını, Özakman’ın biyografisindeki yazarlık amacıyla ve oyunda farklı kültür kişilerine ilişkin sözlerle birlikte değerlendirin.",
       "content": {
         "lead": "Enver Töre'nin metniyle oyundaki çalışma, sanat ve ortak kültürel miras düşüncesini ilişkilendirin. Çıkarımınızı yazarın doğrudan sözüymüş gibi göstermeyin."
       }

@@ -402,6 +402,16 @@ button {
   border-color: var(--guide);
   box-shadow: none;
 }
+.panel--thinking {
+  background: var(--guide-soft);
+  border-color: var(--guide);
+  box-shadow: none;
+}
+.panel--thinking .panel__label {
+  color: var(--guide);
+  letter-spacing: 0;
+  text-transform: none;
+}
 .panel--guidance .panel__label {
   color: var(--guide);
 }

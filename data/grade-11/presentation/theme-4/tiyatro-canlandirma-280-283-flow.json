@@ -36,6 +36,7 @@
       "density": "compact",
       "prompt": "Konuşmayı Yönetebilme 1 — Bir tiyatro metninin yalnız diyaloglarından hangi genel çıkarımlar yapılabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Repliklerdeki hitapları, sözün karşılığını ve konuşma sırasındaki kesilmeleri inceleyin; bunların kişi ilişkisi, amaç ve gerilim hakkında hangi ipuçlarını verdiğini ayırın.",
       "content": {
         "lead": "Kişi ilişkileri, çatışma, amaç ve duygu hakkında çıkarım yapılabilir; dekor, ışık ve beden dilinin ise yalnız diyalogla tam görülemeyeceğini de belirtin."
       }
@@ -86,6 +87,7 @@
       "density": "compact",
       "prompt": "Konuşmayı Yönetebilme 3 — Diyalog ve dili doğru kullanmak tiyatroda neden önemlidir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Diyalog ve söz seçimlerinin sahnede karakter ilişkisini nasıl kurduğunu, günlük hayattaki açık ve uygun iletişim örnekleriyle ilişkilendirerek değerlendirin.",
       "content": {
         "lead": "Günlük hayattan bir yanlış anlaşılma örneği verip vurgu, kelime seçimi ve ifade açıklığının sahnedeki karşılığını açıklayın."
       }

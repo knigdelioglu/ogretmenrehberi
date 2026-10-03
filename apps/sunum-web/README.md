@@ -10,7 +10,7 @@ Sınıfta öğrencilere gösterilen, **yalnız öğretmenin kullandığı** ders
 
 | Tuş | Ne yapar |
 |---|---|
-| İleri · → · ↓ · PageDown · Boşluk · Enter | Aynı görevin sonraki sunum parçasına, sonra **cevap** ve **metinden kanıt** ekranlarına geçer. Katmanlar ayrı görünür; uzun bir parça taşarsa önce aşağı kaydırır. Hepsi tamamlanınca sonraki slayt; ders sonundan sonra sıradaki ders. |
+| İleri · → · ↓ · PageDown · Boşluk · Enter | Aynı görevin sonraki sunum parçasına, varsa **Düşünürken…** katmanına, ardından **cevap** ve **metinden kanıt** ekranlarına geçer. Katmanlar ayrı görünür; uzun bir parça taşarsa önce aşağı kaydırır. Hepsi tamamlanınca sonraki slayt; ders sonundan sonra sıradaki ders. |
 | Geri · ← · ↑ · PageUp | Aynı görevin önceki sunum parçasına veya katmanına döner; yoksa önceki slayta geçer. |
 | Shift + → / ← | Katmanları atlayıp doğrudan slayt değiştirir. |
 | Y · A | Öğretmen **yönlendirmesini** · **açıklamayı** göster / gizle (kumanda sırasına varsayılan olarak girmez). |

@@ -31,7 +31,8 @@
       "answer_id": "T1-P53-Q01",
       "layout": "question",
       "prompt": "Seksenler adlı çok modlu metinde dikkatinizi çeken sözlü iletişim engelleri nelerdir?",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Konuşmacıların dinleme biçimi, söz sırası ve tepkilerinden bir örnek seçin; hangi iletişim engelini gösterdiğini açıklayın."
     },
     {
       "id": "s53-q2",
@@ -39,7 +40,8 @@
       "answer_id": "T1-P53-Q02",
       "layout": "question",
       "prompt": "Bu engellerin iletişimi nasıl etkilediğini tartışınız ve ulaştığınız sonuçları performans görevinize hazırlık amacıyla tahtaya yazınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her bir örnekte engelin mesajın nasıl anlaşılmasını veya konuşmanın sürmesini etkilediğini tartışın; etkiyi ve olası sonucunu ayırın."
     },
     {
       "id": "s53-q3",
@@ -47,7 +49,8 @@
       "answer_id": "T1-P53-Q03",
       "layout": "question",
       "prompt": "Doğru bir iletişimin niteliklerine dair fikirlerinizi günlük yaşamınızdaki deneyimlerinizden yola çıkarak açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Kendi yaşamınızdan kolay ve güç iletişim örnekleri seçin; dinleme ya da konuşmadaki farkı karşılaştırın."
     },
     {
       "id": "s54-plan",
@@ -99,7 +102,8 @@
       "layout": "structure",
       "density": "compact",
       "prompt": "Canlandırmada belirlediğiniz iletişim hatalarını ve çözüm önerilerini yazınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Canlandırmanızdan belirli bir an seçin; gözlediğiniz davranışla önerdiğiniz çözümü yan yana yazıp çözümün nasıl işe yarayacağını açıklayın."
     },
     {
       "id": "s56-q2",
@@ -116,7 +120,8 @@
       "answer_id": "T1-P56-Q03",
       "layout": "question",
       "prompt": "Bu hataların iletişimi nasıl etkilediği ve hangi durumlarda iletişim kazalarına yol açtığıyla ilgili tahminlerde bulununuz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Seçtiğiniz hatanın mesajın hangi aşamasını aksattığını ve benzer koşullarda ne tür sonuçlar doğurabileceğini örnekleyin."
     },
     {
       "id": "s57-performance-1",

@@ -128,6 +128,7 @@
       "density": "compact",
       "prompt": "Düşünelim Paylaşalım 1 — Tür, içerik ve dilden hareketle metnin yazıldığı dönem hakkında çıkarım yapınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Büro düzenini, memuriyetle ilgili ifadeleri ve metnin kısa, gündelik anlatımını birlikte inceleyin; dönem çıkarımınızı destekleyen ayrıntıları seçin.",
       "content": {
         "lead": "Modern büro yaşamı, memuriyet, cankurtaran ve sade konuşma dili gibi ipuçlarını Ferit Edgü'nün kitapta verilen biyografisiyle ilişkilendirin."
       }
@@ -152,6 +153,7 @@
       "density": "compact",
       "prompt": "Düşünelim Paylaşalım 2/b — Bu güncelleme edebiyatın hayatla ilişkisi hakkında ne gösterir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Güncel koşul önerinizin karşılaşmaları ve anlatıcının kararını nasıl değiştireceğini düşünün; bu değişiklikten edebiyatın yaşanan koşullarla ilişkisine dair çıkarım yapın.",
       "content": {
         "lead": "Değişen teknoloji ve mekânın anlatı ayrıntılarını değiştirmesiyle, temel insan deneyimlerinin dönemler arasında sürmesini birlikte ele alın."
       }
@@ -164,6 +166,7 @@
       "density": "compact",
       "prompt": "Düşünelim Paylaşalım 3 — Günümüzde genç ve yaşlı kuşaklar arasındaki farklılıklar topluma nasıl katkı sağlayabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İhtiyarın uyarısını, anlatıcının aceleci davranışını ve delikanlının olay aktarımını karşılaştırın; kuşakların farklı bakışlarının aynı karşılaşmaya ne kattığını tartışın.",
       "content": {
         "lead": "Kendi çevrenizden gerçek bir örnekle yenilik ve deneyim arasındaki karşılıklı öğrenmeyi tartışın.",
         "note": "Bu güncel gözlem sorusunun tek bir hazır cevabı yoktur."
@@ -253,6 +256,7 @@
       },
       "prompt": "Sıra Sizde 1 — Davranışları yansıttıkları değerlerle eşleştiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Davranışın kime, hangi durumda ve ne sonuç doğuracak biçimde yöneldiğini ayırın; değer eşleştirmenizi olay içindeki somut işaretle gerekçelendirin.",
       "content": {
         "lead": "Bir davranış birden fazla değeri gösterebilir; eşleştirmeyi davranışın bağlamıyla gerekçelendirin.",
         "items": [
@@ -339,6 +343,7 @@
       },
       "prompt": "Fark Edelim — Edgü'nün küçürek hikâye anlayışı Merdiven'e nasıl yansıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İnceleme parçasında okurun tamamlamasına bırakılan anlamları ve anlatım tercihlerini işaretleyin; öyküde benzer izleri taşıyan söz ya da yapısal seçimleri bulup eşleştirin.",
       "content": {
         "lead": "Her özelliğin karşısına Merdiven'den bir yapı, sözcük veya olay kanıtı koyun.",
         "items": [

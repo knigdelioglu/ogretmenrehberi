@@ -34,6 +34,7 @@
       "density": "compact",
       "prompt": "Soru 1 — Batılı tiyatro biçimi ile Doğulu/Türk kültürel özellikler aynı parçada nasıl birleşiyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İlk metindeki birleşme iddiasını, ikinci metindeki sahneleme, anlatıcı ve halk tiyatrosu unsurlarıyla karşılaştırın; verilen parçadan bir örneği bu iddiayla eşleştirin.",
       "content": {
         "lead": "En az bir biçimsel tiyatro özelliği ile bir yerli/kültürel içerik unsurunu ilişkilendirerek açıklayın."
       }
@@ -46,6 +47,7 @@
       "density": "compact",
       "prompt": "Soru 2 — II. metin, I. metindeki düşünceyle hangi anlam ilişkisini kuruyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İki metinde ortak geçen kavramları ve II. metne özgü ayrıntıları işaretleyin; seçeneklerde hangi ilişkinin tüm bu kanıtları karşıladığını sınayın.",
       "content": {
         "lead": "Genel açıklamanın somut örneklerle desteklenip desteklenmediğine bakın; seçeneği yalnız anahtar kelime benzerliğiyle işaretlemeyin."
       }
@@ -58,6 +60,7 @@
       "density": "compact",
       "prompt": "Soru 3 — Küçürek hikâyeye ilişkin parçadan çıkarılamayan yargıyı belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Parçanın açıkça söylediği neden ve özellikleri seçeneklerdeki yargılarla karşılaştırın; metnin kanıtlamadığı ek nitelemeyi bulmaya çalışın.",
       "content": {
         "lead": "Metinde açıkça verilen modern yaşam, yalnızlaşma, dikkat aralığı ve kısalıp özleşme bilgileriyle seçenekleri karşılaştırın."
       }
@@ -81,6 +84,7 @@
       "density": "compact",
       "prompt": "Soru 4 — Çadırın içine hangi duyguyu katardınız? Metin ayrıntılarıyla gerekçelendirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Şiirde tekrarlanan istekleri ve dışarıda bırakılan durumları belirleyin; seçeceğiniz duyguyu en az bir somut dizeyle gerekçelendirin.",
       "content": {
         "lead": "Metindeki somut bir ayrıntıdan hareketle bir duygu seçin ve seçiminizi gerekçelendirin."
       }
@@ -93,6 +97,7 @@
       "density": "compact",
       "prompt": "Soru 5 — Metnin iletisini yansıtacak afiş görsellerini seçiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her görseli şiirdeki hangi imge, değer ya da yaşantıyla ilişkilendirebildiğinizi kontrol edin; seçiminizi şiirle kurduğunuz bağa dayandırın.",
       "content": {
         "lead": "Her görsel için 'ne görüyorum → metindeki hangi düşünceyle bağlantılı → afiş mesajını nasıl güçlendiriyor?' zincirini kurun.",
         "note": "Tek zorunlu görsel seçimi yoktur; karşıtlık amacıyla seçilen görsel de açıkça gerekçelendirilmelidir.",
@@ -139,6 +144,7 @@
       "density": "compact",
       "prompt": "Soru 6 — Bu oyun kişilerine uygun sahne kostümleri nasıl olmalıdır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kostüm önerinizi sahne yönergelerinde görülen mekân, eşya ve hareketlerden çıkarın; kaynakta verilmeyen dönem veya sınıf ayrıntılarını varsaymayın.",
       "content": {
         "lead": "Dönem, mekân, yaş ve sosyal konum bilgisi gerçekten metinde varsa kullanın; kaynakta olmayan ayrıntıyı kesin bilgi gibi eklemeyin."
       }
@@ -151,6 +157,7 @@
       "density": "compact",
       "prompt": "Soru 7 — Sözsüz iletişim duygu, gerilim ve kişi ilişkisini nasıl yansıtıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Sahne yönergelerinde anlatılan bakış, yinelenen hareket ve oda içindeki konumu, karakterlerin açık sözleri varsa onlarla karşılaştırın; sessiz eylemin izleyiciye eklediği bilgiyi belirleyin.",
       "content": {
         "lead": "Bakma, gezinme ve eşyayı tekrar tekrar yer değiştirme gibi hareketlerin konuşma olmadan neyi görünür kıldığını açıklayın."
       }
@@ -163,6 +170,7 @@
       "density": "compact",
       "prompt": "Soru 8 — Verilen kesitlerden hangi tiyatro terimleri kesinlikle çıkarılamaz?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her terimi kesitte gerçekten görülen ya da duyulan bir ayrıntıyla doğrulamaya çalışın; yalnızca olası görünen bir yorumu kesin kanıt saymayın.",
       "content": {
         "lead": "Dekor ve sözsüz hareketlerin görünür olduğunu; diyalog/monolog için ise gerçek konuşma cümlesi gerekip gerekmediğini kontrol edin."
       }
@@ -186,6 +194,7 @@
       "density": "compact",
       "prompt": "Soru 9 — Belgesel yapımının zaman içinde değişmesini sağlayan etkenlerden hangisi metinde desteklenmiyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Bir seçeneğin metinde bulunmayan kesinlik veya kapsam iddiası taşıyıp taşımadığını kontrol edin; iddiayı kaynakta açıkça anlatılan değişimlerle karşılaştırın.",
       "content": {
         "lead": "Metindeki teknolojik değişmeleri açıkça verilen ifadelerle karşılaştırın; 'tamamen' gibi aşırı genellemelere dikkat edin."
       }
@@ -198,6 +207,7 @@
       "density": "compact",
       "prompt": "Soru 10 — Belgeselin toplumsal belleğe katkısı hangi benzetmeyle en iyi açıklanır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Metindeki benzetmelerin hangi saklama ya da aktarma işlevini vurguladığını belirleyin; seçenekleri bu işlevin kapsamıyla karşılaştırın.",
       "content": {
         "lead": "Geçmişe ilişkin bilgi ve deneyimin korunup sonraki kuşaklara aktarılması ortak noktasını arayın."
       }
@@ -210,6 +220,7 @@
       "density": "compact",
       "prompt": "Soru 11 — Elif, yaptığı araştırmalar sonucunda belgesel film izleme mecralarının yıllara göre kullanım oranlarıyla ilgili aşağıdaki istatistiksel sonuçlara ulaşmıştır. Elif, bu tablodaki verilerden hareketle aşağıdaki çıkarımlardan hangisini yapabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her mecra için 2005, 2015 ve 2025 değerlerinin nasıl değiştiğini karşılaştırın; çıkarımınızı tabloda bulunmayan yaş grubu ya da kalite yargısına taşımayın.",
       "content": {
         "lead": "Televizyon, bilgisayar ve internet platformlarındaki oran değişimini doğrudan tablodan okuyun.",
         "items": [
@@ -228,6 +239,7 @@
       "density": "compact",
       "prompt": "Soru 12 — Teknolojik gelişmeler belgeselin etkisini güçlendirmiş midir, zayıflatmış mıdır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Metindeki yapım aşaması, kurgu ve izleyiciye ulaşma yollarıyla ilgili örnekleri ayrı değerlendirin; teknolojinin etkisi hakkındaki görüşünüzü bu kanıtlarla gerekçelendirin.",
       "content": {
         "lead": "Görüşünüzü metindeki üretim, anlatım veya erişim ayrıntılarından somut dayanaklarla gerekçelendirin."
       }

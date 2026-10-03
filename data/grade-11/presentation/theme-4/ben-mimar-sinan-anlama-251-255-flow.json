@@ -19,6 +19,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 1 — Oyunun konusu, yazılma amacı ve metin–yazar ilişkisini belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Oyunun başında Sinan’ın hangi yaşam kesitlerini anlatacağını, olayların nasıl seçilip sıralandığını ve biyografide yazarla ilgili hangi bilginin öne çıktığını inceleyin.",
       "content": {
         "lead": "Üç alanı aynı cümleyle doldurmayın. Önce oyundan konu ve amaç için dayanak bulun, ardından yazarın tarihî ve kültürel ilgisiyle ilişkilendirin.",
         "items": [
@@ -36,6 +37,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 2/a — Kişilerin sözlerinden özelliklerini çıkarınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her kişide örnek cümlenin anlattığı söz ya da davranışı, bu örneğin öncesi ve sonrasındaki durumla birlikte değerlendirin; kişilik çıkarımını kanıtına bağlayın.",
       "content": {
         "lead": "Kitabın s.251–252 tablosunda kişiye ait sözü okuyup yalnız onun desteklediği özelliği yazın.",
         "items": [
@@ -89,6 +91,7 @@
       "density": "compact",
       "prompt": "Metni Anlayalım 3/a–b — Bilgi, azim ve çalışkanlığın başarıdaki rolünü yorumlayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Prut’taki sözün geçtiği bölümü, Sinan’ın karşılaştığı güçlükler ve bunlara verdiği karşılıkla birlikte okuyun; ek özellikler için kendi gerekçeli örneklerinizi düşünün.",
       "content": {
         "lead": "Önce Sinan'ın zorluk karşısında bilgisini nasıl kullandığını metinden gösterin. Ardından başarı için gerekli olabilecek başka özellikleri gerekçelendirin."
       }
@@ -118,6 +121,7 @@
       "density": "compact",
       "prompt": "Karşılaştıralım 1 — Ben, Mimar Sinan ile Cimri'yi dört başlıkta karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İki oyundan aynı ölçütte karşılaştırabileceğiniz bir olay, ilişki ya da söz seçin; dönem ve zihniyet yorumunuzu bu örneklerin nasıl sunulduğuna dayandırın.",
       "content": {
         "lead": "T diyagramındaki her başlıkta iki oyunu da ele alın. Dönem karşılaştırmasında metnin ele aldığı tarihî zamanla yazıldığı zamanı ayırın.",
         "items": [
@@ -157,6 +161,7 @@
       "density": "compact",
       "prompt": "Karşılaştıralım 2 — İki tiyatro metni dram, komedi ve trajedi bakımından nasıl sınıflandırılır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Olay ve çatışmaların sunuluş biçimini, kişilerin söz ve davranışlarında oluşturduğu etkiyle karşılaştırın; tür kararınızı iki metinden ayrı kanıtlarla sınayın.",
       "content": {
         "lead": "Tür etiketini ezberden söylemek yerine oyunun olay işleme biçimi, tonu ve kişiler üzerindeki etkisiyle gerekçelendirin."
       }
@@ -188,6 +193,7 @@
       "density": "compact",
       "prompt": "Sıra Sizde 2/a–b — Yazılma amacı, dil–üslup ve tarihî gerçeklik ilişkisini değerlendiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Özakman’ın biyografisini sahne yönergeleri ve Sinan’ın tarih anlatımıyla birlikte düşünün; tarih bilgilerini dramatik konuşma ve sahneleme ayrıntılarından ayırın.",
       "content": {
         "lead": "Oyunun tarihî kişiyi tanıtma amacıyla sahne sanatının anlatım imkânlarını birlikte düşünün.",
         "sections": [

@@ -35,6 +35,7 @@
       "density": "compact",
       "prompt": "Sıra Sizde 1 — Millî, manevi ve evrensel değerleri gruplandırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Metindeki değerleri sınıflarken yalnızca erdem adlarını değil, Sinan’ın kararlarını ve başkalarının emeğine yaklaşımını da kanıt olarak kullanın.",
       "content": {
         "lead": "Her başlıktan bir veya iki değer belirleyip oyundan gerekçe gösterin; değer adlarını kanıt olmadan çoğaltmayın.",
         "items": [
@@ -52,6 +53,7 @@
       "density": "compact",
       "prompt": "Sıra Sizde 2 — Her değerin karşısına oyundaki örneğini yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her değer için bir söz, davranış ya da olay seçin; aynı örneğin birden fazla değerle ilişkilendirilip ilişkilendirilemeyeceğini gerekçelendirin.",
       "content": {
         "lead": "Kitabın iki sütunlu değerler–metinden örnekler tablosunu kullanın.",
         "items": [
@@ -112,6 +114,7 @@
       "density": "compact",
       "prompt": "Sıra Sizde 4 — Çalışkanlık, estetik ve sorumluluk Sinan'ın kişiliğine ve eserlerine nasıl yansır?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Sinan’ın iş başındaki tutumunu, cami yapımına ilişkin tercihlerini ve verdiği sözleri ayrı ayrı izleyin; kişilikten esere uzanan bağı kanıtlayın.",
       "content": {
         "lead": "Üç değeri ayrı örneklerle temellendirdikten sonra bunların bir mimari eserde nasıl birlikte görünür olduğunu söyleyin."
       }

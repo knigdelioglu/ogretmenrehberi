@@ -55,7 +55,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=93"
           }
         ]
-      }
+      },
+      "thinking": "Başlığı, görselde gerçekten seçilebilen nesneleri ve yazar adını ayrı ipuçları olarak kullanın; kesin olay bilgisi eklemeden tahmin kurun."
     },
     {
       "id": "s90-q2",
@@ -83,7 +84,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=93"
           }
         ]
-      }
+      },
+      "thinking": "Başlıkla görseldeki mekân ve nesne ipuçlarının aynı tahmini destekleyip desteklemediğine bakın; konu tahmininizi tür tahmininizden ayırın."
     },
     {
       "id": "s90-strategy",
@@ -137,7 +139,8 @@
       "answer_id": "T2-P96-Q03",
       "layout": "question",
       "prompt": "Hikâyede bu kelimelerin seçilme nedenlerine ilişkin tahminlerinizi yazınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Bu kelimelerin hangi sahnelerde ve hangi ayrıntılarla kullanıldığına bakın; kelime seçiminin anlatılan dünyayı nasıl kurduğunu yorumlayın."
     },
     {
       "id": "s96-q4a",
@@ -154,7 +157,8 @@
       "answer_id": "T2-P97-Q04B",
       "layout": "question",
       "prompt": "Bu değişikliklerin nedenleriyle ilgili beyin fırtınası yapınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Önce örneklerdeki ses, ek ve anlam değişimlerini gruplayın; sonra her olası nedeni farklı örneklerle sınayın."
     },
     {
       "id": "s98-q4c",
@@ -189,14 +193,16 @@
       "answer_id": "T2-P99-Q03",
       "layout": "question",
       "prompt": "Bu görsellerin dışında Türk dünyasının ortak kültürünü yansıtabilecek başka görsellere gerekçeli örnekler veriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Sayfadaki görsellerde olmayan bir unsur seçin; hangi toplulukta neyi temsil ettiğini doğrulanabilir bir ayrıntıyla gerekçelendirin."
     },
     {
       "id": "s100-q1",
       "source_record_id": "T02-S0026",
       "answer_id": "T2-P100-Q01",
       "layout": "question",
-      "density": "comfortable"
+      "density": "comfortable",
+      "thinking": "Çordon’un sözlerini ve geçmişe dönüşleri birlikte okuyun; gitme isteğinin ne zamandır biriktiğini metinden çıkarın."
     },
     {
       "id": "s100-q2",
@@ -210,35 +216,40 @@
       "source_record_id": "T02-S0028",
       "answer_id": "T2-P100-Q03",
       "layout": "question",
-      "density": "comfortable"
+      "density": "comfortable",
+      "thinking": "Nazifkan’ın tepkisini ve geçmişe dair düşüncelerini karşılaştırıp yadırgama nedenini bulun; benzer kararlara verilebilecek tepkileri ayrıca düşünün."
     },
     {
       "id": "s100-q4",
       "source_record_id": "T02-S0029",
       "answer_id": "T2-P100-Q04",
       "layout": "question",
-      "density": "comfortable"
+      "density": "comfortable",
+      "thinking": "Çordon’un oğlunun öldüğünü bilmesiyle onu görme isteğini ve yolculuk zamanını birlikte değerlendirin; metin dışı tanı koymayın."
     },
     {
       "id": "s100-q5",
       "source_record_id": "T02-S0030",
       "answer_id": "T2-P100-Q05",
       "layout": "question",
-      "density": "comfortable"
+      "density": "comfortable",
+      "thinking": "Çordon’un hatırlamak istemediği olayı bulup anlatılış biçimini inceleyin; metnin açıkça söylediğiyle insanlar hakkındaki genel yorumunuzu ayırın."
     },
     {
       "id": "s100-q6",
       "source_record_id": "T02-S0031",
       "answer_id": "T2-P100-Q06",
       "layout": "question",
-      "density": "comfortable"
+      "density": "comfortable",
+      "thinking": "Kızlarının itirazlarını Çordon’un karşılıkları ve davranışlarıyla karşılaştırın; iki tarafın hangi kaygılarla hareket ettiğini sahneden kanıtlayın."
     },
     {
       "id": "s100-q7",
       "source_record_id": "T02-S0032",
       "answer_id": "T2-P100-Q07",
       "layout": "question",
-      "density": "comfortable"
+      "density": "comfortable",
+      "thinking": "Çordon’un sözünün ardından neyi yapmayı reddettiğini bulun; kızlarının isteğiyle Sultan’ın kendi kararı hakkındaki bilgileri birlikte tartın."
     },
     {
       "id": "s100-q8",
@@ -253,7 +264,8 @@
       "answer_id": "T2-P101-Q09",
       "layout": "question",
       "prompt": "Metindeki öznel ve nesnel ifadelere örnekler bulunuz; hangilerinin sizi daha çok etkilediğini gerekçesiyle açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Olay bildirimleriyle anlatıcının duygu, değerlendirme ve benzetmelerini ayırın; sizi etkileyen ifadeyi seçiminizle ilişkilendirin."
     },
     {
       "id": "s101-q10",
@@ -349,7 +361,8 @@
       "answer_id": "T2-P106-Q1A",
       "layout": "question",
       "prompt": "Çordon ve kızları arasındaki etkileşimi çatışan değer ve beklentiler üzerinden açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kızların Çordon’a yönelttiği talepleri onun istasyondaki seçimiyle karşılaştırın; her iki tarafın beklentisini metindeki sözlerden çıkarın."
     },
     {
       "id": "s107-q1b",
@@ -357,7 +370,8 @@
       "answer_id": "T2-P107-Q1B",
       "layout": "question",
       "prompt": "Çordon ile eşinin bulunduğu parçada görünür ve içsel çatışmaları açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Nazifkan’ın içinden geçirdiklerini Çordon’a söyledikleri ve sustuklarıyla karşılaştırın; kişiler arası gerilimle iç çatışmayı ayırın."
     },
     {
       "id": "s107-conflict-group",
@@ -400,7 +414,8 @@
       "answer_id": "T2-P107-AYTMATOV",
       "layout": "question",
       "prompt": "Aytmatov'un edebî kişiliğinin Oğulla Buluşma hikâyesine nasıl yansıdığını açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Biyografideki yazarlık özelliklerinin hikâyede nerelerde görüldüğünü kişi, mekân ya da olay örnekleriyle bulun; kitapta olmayan bilgi eklemeyin."
     }
   ]
 }

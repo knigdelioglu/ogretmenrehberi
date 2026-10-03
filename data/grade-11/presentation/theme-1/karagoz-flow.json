@@ -31,7 +31,8 @@
       "answer_id": "T1-P15-Q01",
       "layout": "question",
       "prompt": "Metinde dikkatinizi en çok çeken unsurlar nelerdir? Açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Boratav’ın farklı gösteri örneklerini ortaklaştırırken hangi özelliklerden ve eylemlerden söz ettiğini metinden bulun."
     },
     {
       "id": "s15-q2",
@@ -39,7 +40,8 @@
       "answer_id": "T1-P15-Q02",
       "layout": "question",
       "prompt": "Günlük hayatın tiyatroya nasıl yansıdığını düşünüyorsunuz? Görüşlerinizi açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Tiplerin konuşma ve davranışlarına gündelik hayattan benzeyen bir örnek bulun; bu benzerliğin sahnede neye dönüştüğünü açıklayın."
     },
     {
       "id": "s15-q3",
@@ -55,7 +57,8 @@
       "answer_id": "T1-P15-Q04",
       "layout": "question",
       "prompt": "Günümüzde geleneksel Türk tiyatrosunun yerini hangi sanat türleri veya etkinlikler almıştır? Açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Geleneksel oyunun izleyici, taklit, söz ve doğaçlama yönlerini bugün hangi sanat veya etkinliklerde görüp görmediğinizi örneklerle tartışın."
     },
     {
       "id": "s16-process",
@@ -117,7 +120,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=16"
           }
         ]
-      }
+      },
+      "thinking": "Her tip için önce görselde doğrudan görülen bir ayrıntıyı seçin, sonra bu ayrıntının size düşündürdüğü özelliği gerekçelendirin."
     },
     {
       "id": "s16-q3",
@@ -125,7 +129,8 @@
       "answer_id": "T1-P16-Q03",
       "layout": "question",
       "prompt": "Kişilerin iletişim şekillerinin ve dili kullanma biçimlerinin neden farklı olabileceğini tahmin ediniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kişilerin ayırt edici görünüşlerini ve olası yaşantı çevrelerini düşünün; konuşma biçimindeki fark için birden fazla açıklama kurun."
     },
     {
       "id": "s17-process",
@@ -146,7 +151,8 @@
       "answer_id": "T1-P17-Q01",
       "layout": "question",
       "prompt": "Metinde açık ve anlaşılır bir dil kullanılmış mıdır? Açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Hacivat’ın uzun söyleyişleriyle Karagöz’ün verdiği tepkileri yan yana inceleyip metnin ne ölçüde anlaşılır olduğunu değerlendirin."
     },
     {
       "id": "s17-q2",
@@ -167,7 +173,8 @@
       "answer_id": "T1-P17-Q03",
       "layout": "question",
       "prompt": "Tespit ettiğiniz kelime ve cümleler metnin akıcılığını nasıl etkilemiştir? Açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Eski söyleyişlerin okuma hızınıza ve sahnedeki kişileri ayırt etmenize etkisini bir konuşma örneğiyle tartın."
     },
     {
       "id": "s18-q1",
@@ -266,7 +273,8 @@
         "evidence"
       ],
       "prompt": "Karagöz ve Hacivat'ın kullandığı dilden hareketle kişilik özelliklerine ilişkin tahminlerinizi yazınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İki kişinin replik seçimini, karşısındakine verdiği tepkileri ve sözlerin nasıl karşılandığını karşılaştırın."
     },
     {
       "id": "s27-q2",
@@ -274,7 +282,8 @@
       "answer_id": "T1-P27-Q02",
       "layout": "question",
       "prompt": "Karagöz ve Hacivat'ın kişilik özelliklerini belirlerken daha çok hangi özelliklerinden yararlandığınızı açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Söz, konuşma biçimi ya da karşılıklı tutumdan bir ipucu seçin; tahmininizi metin örneğiyle açıklayın."
     },
     {
       "id": "s28-q1",
@@ -300,13 +309,15 @@
           }
         ],
         "note": "Bu karşılaştırma, s.27–29’daki tip–karakter ayrımını pekiştirmek için eklenmiştir."
-      }
+      },
+      "thinking": "Her tipin kullandığı bir sözü seçin; sözün geçtiği bağlamı ve çevresindekilerin tepkisini yorumunuza dayanak yapın."
     },
     {
       "id": "s28-q2",
       "source_record_id": "T01-S0012",
       "answer_id": "T1-P28-Q02",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Söz seçimi dışında bir kişiyi tanımaya yarayabilecek sahne, davranış veya görsel ipuçlarını düşünün; bunları sözlü anlatımla karşılaştırın."
     },
     {
       "id": "s28-q3",
@@ -318,7 +329,8 @@
       "id": "s29-q1",
       "source_record_id": "T01-S0014",
       "answer_id": "T1-P29-Q01",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Kaynağın çizdiği iki kişinin tutumlarını ve oyundaki birlikte hareket ettikleri anları eşleştirip ilişkinin nasıl yürüdüğünü açıklayın."
     },
     {
       "id": "s29-q2",
@@ -336,7 +348,8 @@
             "body": "Dost kara günde belli olur."
           }
         ]
-      }
+      },
+      "thinking": "Dörtlükteki duyguyla atasözünün işaret ettiği durumu yan yana koyup dostluğa dair hangi anlamların oluştuğunu düşünün."
     },
     {
       "id": "s30-sira-sizde",
@@ -352,7 +365,8 @@
       "answer_id": "T1-P30-Q01",
       "layout": "question",
       "prompt": "Karagöz oyununun günümüzde varlığını sürdürmesinin sebepleri neler olabilir? Açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kitapta anılan güncel gösterileri metindeki sahne özellikleriyle karşılaştırın; izleyiciyi çekecek yönleri gerekçelendirin."
     },
     {
       "id": "s30-q2",
@@ -360,7 +374,8 @@
       "answer_id": "T1-P30-Q02",
       "layout": "question",
       "prompt": "Kültürel bir miras olan Karagöz'ün Türk kültüründeki değeriyle ilgili görüşlerinizi belirtiniz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Oyunun dilinden, kişilerinden ve gösterim biçiminden birer örnek seçin; kültürel değer yorumunuzu bunlara dayandırın."
     },
     {
       "id": "s30-q3",
@@ -368,7 +383,8 @@
       "answer_id": "T1-P30-Q03",
       "layout": "question",
       "prompt": "Metnin konu ve temasını belirleyiniz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Olay dizisinde anlatılan somut durumu, metnin bütünüyle düşündürdüğü daha genel çerçeveden ayırın."
     },
     {
       "id": "s30-q4",
@@ -376,7 +392,8 @@
       "answer_id": "T1-P30-Q04",
       "layout": "question",
       "prompt": "Metindeki açık ve örtük iletileri tespit ediniz.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Metinde doğrudan söylenen ya da gösterilen ayrıntıları bir tarafa, bunlardan hareketle ulaştığınız sonuçları başka tarafa not edin."
     },
     {
       "id": "s30-q5",
@@ -384,7 +401,8 @@
       "answer_id": "T1-P30-Q05",
       "layout": "question",
       "prompt": "Açık ve örtük iletilerin toplum hayatındaki iletişime katkısını değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Seçtiğiniz iletinin günlük bir iletişim durumunda hangi davranışı etkileyebileceğini düşünün; metinden bir anla gerekçelendirin."
     },
     {
       "id": "s31-q6",
@@ -400,7 +418,8 @@
       "answer_id": "T1-P31-Q07",
       "layout": "comparison",
       "prompt": "Yazıcı ile Eskici Abdi metinlerini verilen ölçütlere göre karşılaştırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Tablodaki ölçütleri tek tek izleyin; her iki oyundan somut bir parça seçip aynı ölçüt bakımından karşılaştırın."
     },
     {
       "id": "s32-group-start",
@@ -436,7 +455,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "presentation": {
         "answer_text": "end"
-      }
+      },
+      "thinking": "Olayların başındaki beklentiyi sonraki karşılaşmalarla karşılaştırın; kişilerin, yerin ve zamanın çatışmayı nasıl görünür kıldığını ayırın."
     },
     {
       "id": "s32-q5",
@@ -444,7 +464,8 @@
       "answer_id": "T1-P32-Q05",
       "layout": "question",
       "prompt": "Kişilerin dil özelliklerinin oluşmasında en etkili yapı unsurunu veya unsurlarını gerekçelendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Farklı kişilerin konuşmalarından örnekler toplayıp bu örnekleri onları çevreleyen kişiler ve koşullarla birlikte değerlendirin."
     },
     {
       "id": "s32-share",
@@ -481,7 +502,8 @@
       "id": "s33-q7",
       "source_record_id": "T01-S0018",
       "answer_id": "T1-P33-Q07",
-      "layout": "comparison"
+      "layout": "comparison",
+      "thinking": "İki kişinin kısa repliklerini seçin; sözcük ve cümle kuruluşları ile karşılıklı tepkilerden çıkarımınızı kurun."
     },
     {
       "id": "s34-q8",
@@ -517,7 +539,8 @@
       "answer_id": "T1-P34-Q09",
       "layout": "question",
       "prompt": "Yaptığınız çalışmanın gölge oyununa bakış açınızda nasıl bir etkisi olduğunu açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Araştırmadan sonra değişen ya da güçlenen düşüncenizi belirleyin; bunu belirli bir bulguyla ilişkilendirin."
     },
     {
       "id": "s35-group-start",
@@ -548,7 +571,8 @@
       "density": "compact",
       "presentation": {
         "answer_text": "end"
-      }
+      },
+      "thinking": "Yanlış anlama, ağız ve eski söyleyişlerden örnekler seçip bunların sahnenin anlamına ve etkisine katkısını karşılaştırın."
     },
     {
       "id": "s35-q2",
@@ -559,7 +583,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "presentation": {
         "answer_text": "end"
-      }
+      },
+      "thinking": "Çatışmanın belirginleştiği bir sahneyi seçin; kişi, zaman veya mekân değişseydi sahnenin nasıl farklılaşacağını gerekçelendirin."
     },
     {
       "id": "s35-q3",
@@ -570,7 +595,8 @@
       "prompt_mode": "VERIFIED_SUMMARY",
       "presentation": {
         "answer_text": "end"
-      }
+      },
+      "thinking": "Bir çatışma anına odaklanıp yanlış anlama dışındaki bir dil kullanımının aynı sahnede nasıl işleyebileceğini tasarlayın."
     },
     {
       "id": "s35-self-peer-review",

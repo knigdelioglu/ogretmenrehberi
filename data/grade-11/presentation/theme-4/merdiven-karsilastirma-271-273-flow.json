@@ -79,6 +79,7 @@
       "density": "compact",
       "prompt": "Karşılaştıralım 1 — Ben, Mimar Sinan ile Merdiven'i yedi ölçütte karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her başlıkta iki metinden de aynı işleve sahip bir örnek seçin; tiyatrodaki replik ve sahne yönergesini öyküdeki anlatıcı ve olay akışıyla yan yana getirip farkı kanıtlayın.",
       "content": {
         "lead": "Kitabın s.272 tablosunu satır satır doldurun; her ölçütte iki metni de yazmadan sonraki satıra geçmeyin.",
         "items": [
@@ -112,6 +113,7 @@
       "density": "compact",
       "prompt": "Karşılaştıralım 2 — İnsan ilişkilerindeki değerleri tiyatro mu hikâye mi daha etkili yansıtıyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İki metinde insan ilişkisini görünür kılan birer sahne ya da söz seçin; bu örneklerin tiyatro ve hikâye biçimlerinde okura nasıl ulaştığını karşılaştırın.",
       "content": {
         "lead": "Bir türü seçebilirsiniz fakat diğer türün güçlü yönünü de görünür kılın. Gerekçenizi iki metinden somut örnekle destekleyin.",
         "sections": [
@@ -151,6 +153,7 @@
       "density": "compact",
       "prompt": "Sıra Sizde 1 — Şair Tavafî ile Merdiven'i dört ölçütte karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İki anlatıcıya ait betimleme, düşünce ve tekrar örneklerini aynı ölçütler altında yan yana koyun; sözcüklerin sahneyi kurma ve anlam alanı açma biçimini kanıtlarla karşılaştırın.",
       "content": {
         "lead": "Karşılaştırmayı yalnız uzunluk farkına indirgemeyin; iki metnin çağrışımı nasıl kurduğunu ve anlatıcının işlevini de açıklayın.",
         "items": [

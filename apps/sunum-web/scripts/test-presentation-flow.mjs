@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { groupItems, interleaveStages } from "../src/reveal-sequence.js";
+import { groupItems, interleaveStages, insertThinkingReveal } from "../src/reveal-sequence.js";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -14,6 +14,22 @@ const getStep = (slug, id) => {
 };
 const stageNames = (items, size) => interleaveStages(groupItems(items, size)).map(({ group, stage }) => `${stage}:${group[0]}`);
 const sources = (step) => step.content?.sources ?? [];
+
+assert.deepEqual(
+  insertThinkingReveal(["answer", "evidence"], true),
+  ["thinking", "answer", "evidence"],
+  "Düşünürken katmanı cevap ve kanıttan önce açılmalı"
+);
+assert.deepEqual(
+  insertThinkingReveal(["answer", "evidence"], false),
+  ["answer", "evidence"],
+  "Düşünürken verisi olmayan soruların reveal sırası korunmalı"
+);
+assert.throws(
+  () => insertThinkingReveal(["evidence"], true),
+  /requires an answer reveal/,
+  "Cevap katmanı olmayan bir adıma Düşünürken eklenememeli"
+);
 
 const karagozQ1 = getStep("karagoz", "s16-q1");
 assert.equal(karagozQ1.content.images?.length, 1, "ISSUE-002: source illustration is part of the first view data");

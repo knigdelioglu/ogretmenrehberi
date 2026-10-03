@@ -52,7 +52,8 @@
       "answer_id": "T2-P113-Q04",
       "layout": "question",
       "prompt": "Yazıtların Çince yüzünün Türk dili ve tarih araştırmalarına sağlayabileceği katkıları açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Yazıtın Türkçe ve Çince yüzlerinde bulunabilecek bilgileri düşünün; iki yüzü karşılaştırmanın dil ve tarih araştırmalarına ne katacağını çıkarın."
     },
     {
       "id": "s113-q5",
@@ -60,7 +61,8 @@
       "answer_id": "T2-P113-Q05",
       "layout": "question",
       "prompt": "Kaplumbağa figürü ile “bengü taş” düşüncesini kalıcılık ve ebediyet kavramlarıyla ilişkilendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kaidenin biçimini “bengü taş” açıklamasıyla birlikte değerlendirin; figüre ilişkin yorumunuzu kaynakta açık bilgiymiş gibi sunmayın."
     },
     {
       "id": "s114-q1",
@@ -132,7 +134,8 @@
       "answer_id": "T2-P117-Q01",
       "layout": "question",
       "prompt": "Bilge Kağan bu abidede söyledikleriyle neyi amaçlamış olabilir? Açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Bilge Kağan’ın kime seslendiğini, hangi olayları anlattığını ve dinleyiciden ne beklediğini işaretleyin; amacı bu kanıtlardan çıkarın."
     },
     {
       "id": "s117-q2",
@@ -140,7 +143,8 @@
       "answer_id": "T2-P117-Q02",
       "layout": "question",
       "prompt": "“Her ne sözüm varsa ebedî taşa vurdum.” ifadesini yorumlayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "İfadenin geçtiği yeri ve yakınındaki taş yazdırma açıklamasını okuyun; “taşa vurmak” sözünün bağlamdaki anlamını kendi cümlenizle kurun."
     },
     {
       "id": "s117-q3",
@@ -148,7 +152,8 @@
       "answer_id": "T2-P117-Q03",
       "layout": "question",
       "prompt": "Türk milleti ve beylere verilen öğütleri belirleyip günümüzdeki geçerliliğini değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Yazıttaki buyruk ve uyarıları belirleyin; her biri için bugünkü koşullarda kime ve nasıl seslenilebileceğini düşünerek yargınızı gerekçelendirin."
     },
     {
       "id": "s117-bilge",
@@ -156,7 +161,8 @@
       "answer_id": "T2-P117-BILGE01",
       "layout": "question",
       "prompt": "Metinlerden hareketle Bilge Kağan'ın tarihî kişiliği ve yönetici özellikleri hakkında çıkarım yapınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kafesoğlu’nun anlatımını Bilge Kağan’ın sözleriyle karşılaştırın; yönetici özelliklerini unvanından değil, eylem ve sonuçlardan çıkarın."
     },
     {
       "id": "s118-rhetoric",
@@ -191,7 +197,8 @@
       "answer_id": "T2-P120-Q02",
       "layout": "question",
       "prompt": "İki metnin yazılış amaçlarının tür ve anlatım tercihlerine etkisini açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İki metnin türünü, muhataplarını ve anlattıkları olay ya da bilgileri karşılaştırın; bu farklılıkların dil seçimine etkisini örnekleyin."
     },
     {
       "id": "s120-q3",
@@ -199,7 +206,8 @@
       "answer_id": "T2-P120-Q03",
       "layout": "question",
       "prompt": "Dil, kültür ve tarih birliğinin millet hayatındaki önemini Orhun örneğiyle açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Orhun metnindeki söz, öğüt ya da olaylardan birini seçin; bu örneğin toplulukların ortak geçmişiyle nasıl bağ kurduğunu açıklayın."
     },
     {
       "id": "s121-q1",
@@ -207,7 +215,8 @@
       "answer_id": "T2-P121-Q01",
       "layout": "question",
       "prompt": "Bilge Kağan'ın Ötüken'de kalma öğüdünü konargöçer hayat bağlamında değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Ötüken öğüdünü hareketli yaşamın koşullarıyla karşılaştırın; görüşünüzde hangi ihtiyacı önceliklendirdiğinizi açıklayın."
     },
     {
       "id": "s121-q2",
@@ -215,7 +224,8 @@
       "answer_id": "T2-P121-Q02",
       "layout": "question",
       "prompt": "Yerleşik ve konargöçer hayatın devletin uzun ömürlülüğü ve gelişimi üzerindeki etkisini değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Her yaşam biçimini yönetim, kaynaklara erişim ve hareket olanağı gibi ayrı ölçütlerle karşılaştırın; birini tümüyle üstün saymadan gerekçe kurun."
     },
     {
       "id": "s121-q3",
@@ -241,7 +251,8 @@
       "answer_id": "T2-P122-Q03",
       "layout": "question",
       "prompt": "Metnin bölümleri arasındaki anlam bütünlüğünü, tutarlılığını ve yazılış amacına uygunluğunu değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Giriş, gelişme ve sonuçta hangi bilgi ya da düşüncenin eklendiğini izleyin; son bölümün baştaki seslenişle bağını örneklerle sınayın."
     },
     {
       "id": "s122-q4",
@@ -267,7 +278,8 @@
       "answer_id": "T2-P123-Y01",
       "layout": "question",
       "prompt": "Metnin önceki yıllarda öğrendiğiniz öğretici metin türlerinden hangileriyle benzerlik gösterdiğini gerekçelendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Seslenişleri, geçmiş olay anlatılarını ve tarihî kayıtları bulun; bunları daha önce öğrendiğiniz türlerin özellikleriyle karşılaştırın."
     },
     {
       "id": "s123-y2",
@@ -275,7 +287,8 @@
       "answer_id": "T2-P123-Y02",
       "layout": "question",
       "prompt": "Söz varlığı ve üslup seçimlerinin nedenlerini ve metne etkisini açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Tekrarlanan hitapları, öğüt kiplerini ve seçilen kelimeleri metinden örnekleyin; bunların okurda bıraktığı etkiyi yazılış amacıyla ilişkilendirin."
     },
     {
       "id": "s123-y3",
@@ -283,7 +296,8 @@
       "answer_id": "T2-P123-Y03",
       "layout": "question",
       "prompt": "Metnin içerik, yapı, dil ve üslup unsurlarının birbiriyle uyumunu değerlendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "İçerik, düzen, dil ve üsluptan aynı bölümle ilgili örnekler seçin; aralarındaki uyumu destekleyen ya da bozan bir ilişki olup olmadığını tartışın."
     },
     {
       "id": "s124-y4",
@@ -291,7 +305,8 @@
       "answer_id": "T2-P124-Y04",
       "layout": "question",
       "prompt": "Söylev, anı ve tarihî belge özelliklerinin metnin üslubuna etkisini açıklayınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Topluluğa seslenen sözleri, geçmiş olayları ve tarih veren kayıtları ayırın; her birinin söyleyişe etkisini karşılaştırın."
     },
     {
       "id": "s124-y5",
@@ -299,7 +314,8 @@
       "answer_id": "T2-P124-Y05",
       "layout": "question",
       "prompt": "Kül Tigin'in ölümü ve yas anlatısından dönemin kültürüne ilişkin çıkarımlarda bulununuz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Kül Tigin’in ölümüyle ilgili fiillerin yanı sıra tarih ve tören ayrıntılarını bulun; kültür yorumunuzun hangi metinsel kanıta dayandığını gösterin."
     },
     {
       "id": "s124-values",

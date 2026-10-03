@@ -14,7 +14,8 @@
       "id": "s79-q1",
       "source_record_id": "T01-S0117",
       "answer_id": "T1-P79-Q01",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Müşterinin duyduğu sözü ve verdiği tepkiyi belirleyin; bu iletişim biçimini bilgi görselindeki kişi özellikleriyle karşılaştırın."
     },
     {
       "id": "s80-q2",
@@ -27,7 +28,8 @@
       "id": "s80-q3",
       "source_record_id": "T01-S0119",
       "answer_id": "T1-P80-Q03",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Çelebi’nin muammayı sunduğu sahneyi ve tepkileri inceleyin; güncel örneğinizle karşılaştıracağınız yönleri belirleyin."
     },
     {
       "id": "s81-q4",
@@ -40,26 +42,30 @@
       "source_record_id": "T01-S0121",
       "answer_id": "T1-P81-Q05",
       "layout": "structure",
-      "density": "compact"
+      "density": "compact",
+      "thinking": "Roller değişirken söz ve hitap biçimini dönüştürün; her repliğin kime ait olduğunu anlaşılır kılın."
     },
     {
       "id": "s81-q6",
       "source_record_id": "T01-S0122",
       "answer_id": "T1-P81-Q06",
       "layout": "comparison",
-      "density": "compact"
+      "density": "compact",
+      "thinking": "Bir sahne örneği seçin; sanatçının rolünü Karagöz’deki mizah ve toplum üzerindeki etkiyle aynı ölçütlerde karşılaştırın."
     },
     {
       "id": "s81-q7",
       "source_record_id": "T01-S0123",
       "answer_id": "T1-P81-Q07",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Mektubun farklı bölümlerini ve muhataba verilen yanıtı izleyin; amacı gösteren sözleri metinden seçin."
     },
     {
       "id": "s82-q8",
       "source_record_id": "T01-S0124",
       "answer_id": "T1-P82-Q08",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Kapanıştaki sözcükleri seçin; bunların mektuptaki önceki seslenişlerle nasıl bağlandığını yorumlayın."
     },
     {
       "id": "s82-q9",
@@ -72,13 +78,15 @@
       "id": "s82-q10",
       "source_record_id": "T01-S0126",
       "answer_id": "T1-P82-Q10",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Seçenekleri metindeki dönem, araç ve sonuçlarla karşılaştırın; metinden çıkarılamayan yargıyı belirleyin."
     },
     {
       "id": "s83-q11",
       "source_record_id": "T01-S0127",
       "answer_id": "T1-P83-Q11",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Metindeki iletişim araçlarının dönem sırasını izleyin; her değişimin ardından belirtilen toplumsal etkileri not edin."
     },
     {
       "id": "s83-q12",
@@ -89,7 +97,8 @@
       "presentation": {
         "answer_text": "end",
         "interleave": true
-      }
+      },
+      "thinking": "Her cümleyi metindeki ilgili bölümle eşleştirin; doğrudan desteği, metinle çelişmeyi ve metnin bilgi vermemesini birbirinden ayırın."
     },
     {
       "id": "s83-olvido-media-reminder",
@@ -106,7 +115,8 @@
       "id": "s83-q13",
       "source_record_id": "T01-S0129",
       "answer_id": "T1-P83-Q13",
-      "layout": "question"
+      "layout": "question",
+      "thinking": "Şiirin duygusunu belirginleştiren dizeleri seçin; bu etkiyi sunuş biçiminizle ilişkilendirin."
     }
   ]
 }

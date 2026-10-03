@@ -51,7 +51,8 @@
       "answer_id": "T2-P108-Q03",
       "layout": "question",
       "prompt": "Eski İstanbul’dan Çizgiler'e göz gezdirerek millî kültür unsurlarını yansıtabilecek kelime ve ifadeler hakkında tahminde bulununuz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Metne göz gezdirirken gündelik eşya, meslek, ilişki ve davranış adlarını işaretleyin; okuma öncesi tahminlerinizi bu ipuçlarından kurun."
     },
     {
       "id": "s108-110-reading",
@@ -147,7 +148,8 @@
             "maktâ"
           ]
         }
-      }
+      },
+      "thinking": "Sınıflandırdığınız sözcüklerin ait olduğu alanları ve metindeki selamlaşma örneklerini inceleyin; dil çıkarımınızı metinden kanıtlayın."
     },
     {
       "id": "s111-social-sciences",
@@ -172,7 +174,8 @@
       "answer_id": "T2-P112-Q02",
       "layout": "question",
       "prompt": "Hikâyedeki farklı kültür unsurlarıyla ilgili düşünce ve duygularınızı açıklayınız.",
-      "prompt_mode": "VERBATIM_SHORT"
+      "prompt_mode": "VERBATIM_SHORT",
+      "thinking": "Seçtiğiniz kültür unsurunun hikâyede kimin hayatında ve hangi anda göründüğünü belirleyin; düşünce ya da duygunuzu o ayrıntıyla ilişkilendirin."
     },
     {
       "id": "s112-q3",
@@ -188,7 +191,8 @@
       "answer_id": "T2-P112-Q04",
       "layout": "question",
       "prompt": "Sultan'ın hayata bakışı ve amaçlarını düşündüğünüzde ona hak veriyor musunuz? Gerekçelendiriniz.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Sultan’ın kendi söz ve seçimini ailesinin ondan bekledikleriyle yan yana koyun; ona katılıp katılmadığınızı bir olay ayrıntısına dayandırın."
     },
     {
       "id": "s112-q5",
