@@ -1,0 +1,143 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 123,
+  "pdf_page": 124,
+  "section": "Metin Tahlili-2 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 123,
+    "pdf_page": 124,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P123-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                                                                                                    Kültür Yolculuğu\n\n\n5. Aşağıda verilen başlıklara metinden uygun örnekler bularak Kül Tigin Âbidesi metninin dil ve anlatım\n   özelliklerini tespit ediniz.\n\n                          Sadelik                                                         Kelime Çeşitliliği                                                   Farklı Cümle Yapıları\n\n\n\n\n                           Açıklık                                                                  Akıcılık                                                             Etkileyicilik\n\n\n\n\n     Yorumlayalım\n\n\n1. Kül Tigin Âbidesi metninin önceki yıllarda öğrendiğiniz öğretici metin türlerinden hangileriyle benzerlik\n   gösterdiğini gerekçeleriyle ifade ediniz.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n2. Metin yazarının söz varlığı ve üslup seçiminin nedenlerini ve bu seçimlerin metni nasıl etkilediğini açık-\n   layınız.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n3. Metnin içerik, yapı, dil ve üslup unsurlarını birbiriyle uyumlu buluyor musunuz? Metinden örnekler ve-\n   rerek açıklayınız.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n\n\n\n                                                                                                                                                                                                                     123",
+      "order": 1,
+      "source": {
+        "printed_page": 123,
+        "pdf_page": 124,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 39
+      }
+    },
+    {
+      "id": "G11-T2-P123-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-2 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P123-Q05",
+        "G11-T2-P123-Q01",
+        "G11-T2-P123-Q02",
+        "G11-T2-P123-Q03"
+      ],
+      "table_ids": [],
+      "visual_ids": [],
+      "order": 2,
+      "source": {
+        "printed_page": 123,
+        "pdf_page": 124,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P123-Q05",
+      "type": "question",
+      "question_number": "5",
+      "text": "Aşağıda verilen başlıklara metinden uygun örnekler bularak Kül Tigin Âbidesi metninin dil ve anlatım özelliklerini tespit ediniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P123-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 3,
+      "source": {
+        "printed_page": 123,
+        "pdf_page": 124,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 19
+      }
+    },
+    {
+      "id": "G11-T2-P123-Q01",
+      "type": "question",
+      "question_number": "1",
+      "text": "Kül Tigin Âbidesi metninin önceki yıllarda öğrendiğiniz öğretici metin türlerinden hangileriyle benzerlik gösterdiğini gerekçeleriyle ifade ediniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P123-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 123,
+        "pdf_page": 124,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 20,
+        "line_end": 24
+      }
+    },
+    {
+      "id": "G11-T2-P123-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Metin yazarının söz varlığı ve üslup seçiminin nedenlerini ve bu seçimlerin metni nasıl etkilediğini açıklayınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P123-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 5,
+      "source": {
+        "printed_page": 123,
+        "pdf_page": 124,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 25,
+        "line_end": 29
+      }
+    },
+    {
+      "id": "G11-T2-P123-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Metnin içerik, yapı, dil ve üslup unsurlarını birbiriyle uyumlu buluyor musunuz? Metinden örnekler vererek açıklayınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P123-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 123,
+        "pdf_page": 124,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 30,
+        "line_end": 39
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

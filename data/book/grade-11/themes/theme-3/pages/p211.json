@@ -1,0 +1,438 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 211,
+  "pdf_page": 212,
+  "section": "edebiyat-atolyesi-1-konusma",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 211,
+    "pdf_page": 212,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n\n    Performans Görevi\n\n\nAdı                   Mülakat (Görüşme)\n\nAmacı                 Seçilen roman kişisiyle romanın bağlamına uygun hayalî bir mülakat yapabilme\n\nSüresi                8 ders saati\n\nBu çalışmada sizlerden Huzur romanından seçtiğiniz bir kişiyle hayalî bir mülakat yapmanız beklenmektedir. Performans göreviniz\niçin sınıf dışında hazırlık yapınız ve oluşturduğunuz çalışmayı sınıfta paylaşınız.\nÖğretmeninizin rehberliğinde altı gruba ayrılınız ve grup sözcülerini seçiniz. Grup arkadaşlarınızla görüş alışverişinde bulunarak\nçalışmaları birlikte yapınız.\n1. Yapacağınız hazırlıklı konuşmayı aşağıdaki aşamaları ve ilgili çalışmayı takip ederek planlayınız.\n  a) Konuşma amacınıza (ikna etme, bilgilendirme vb.) karar veriniz.\n  b) Konuşmanızın hedef kitlesini, türünü, içeriğini ve hazırlık süresini gözeterek uygun konuşma yöntem ve\n     stratejisini belirleyiniz.\n  c) Konuşmanızın hazırlık, sunma ve değerlendirme aşamalarında önceki konuşmalarınızdan edindiğiniz bilgi\n     ve deneyimlerinizden yararlanınız.\n2. Aşağıda verilen Çalışma Kâğıdı’nı, tahlil ettiğiniz romandaki kişilere ve bunların özelliklerine göre ta-\n   mamlayınız.\n\n          ÇALIŞMA KÂĞIDI\n\n          Romandaki Kişiler                                                Kişilerin Özellikleri\n\n                Mümtaz\n\n\n                 Nuran\n\n\n                 İhsan\n\n\n                  Suat\n\n\n                 Fâhir\n\n\n                Macide\n\n\n\n\n3. Grup arkadaşlarınızla kendinize yakın bulduğunuz bir roman kişisini seçiniz ve bu seçimi yaparken o\n   kişinin hangi özelliğinden etkilendiğinizi belirtiniz.\n\n\n\n                                                                                                                                211",
+  "blocks": [
+    {
+      "id": "G11-T3-P211-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Performans Görevi",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P211-Q01",
+        "G11-T3-P211-Q02",
+        "G11-T3-P211-Q03"
+      ],
+      "table_ids": [
+        "G11-T3-P211-TABLE01",
+        "G11-T3-P211-TABLE02"
+      ],
+      "related_text_ids": [
+        "G11-T3-P211-TEXT01",
+        "G11-T3-P211-TEXT02",
+        "G11-T3-P211-TEXT03",
+        "G11-T3-P211-TEXT04",
+        "G11-T3-P211-TEXT05",
+        "G11-T3-P211-TEXT06",
+        "G11-T3-P211-TEXT07",
+        "G11-T3-P211-TEXT08",
+        "G11-T3-P211-TEXT09",
+        "G11-T3-P211-TEXT10",
+        "G11-T3-P211-TEXT11",
+        "G11-T3-P210-TEXT01",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P211-VIS01"
+      ],
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212
+      }
+    },
+    {
+      "id": "G11-T3-P211-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Blank two-column worksheet listing six Huzur characters.",
+      "alt_description": "Blank two-column worksheet listing six Huzur characters.",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212
+      }
+    },
+    {
+      "id": "G11-T3-P211-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Performans Görevi",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P211-TABLE01",
+      "type": "table",
+      "order": 4,
+      "text": "Performans Görevi bilgi tablosu",
+      "columns": [
+        "Alan",
+        "Bilgi"
+      ],
+      "rows": [
+        [
+          "Adı",
+          "Mülakat (Görüşme)"
+        ],
+        [
+          "Amacı",
+          "Seçilen roman kişisiyle romanın bağlamına uygun hayalî bir mülakat yapabilme"
+        ],
+        [
+          "Süresi",
+          "8 ders saati"
+        ]
+      ],
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 4,
+        "line_end": 54
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P211-TABLE02",
+      "type": "table",
+      "order": 5,
+      "text": "Mülakat çalışması çalışma kâğıdı",
+      "columns": [
+        "Romandaki Kişiler",
+        "Kişilerin Özellikleri"
+      ],
+      "rows": [
+        [
+          "Mümtaz",
+          ""
+        ],
+        [
+          "Nuran",
+          ""
+        ],
+        [
+          "İhsan",
+          ""
+        ],
+        [
+          "Suat",
+          ""
+        ],
+        [
+          "Fâhir",
+          ""
+        ],
+        [
+          "Macide",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 7,
+        "line_end": 54
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P211-TEXT01",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Adı Mülakat (Görüşme)",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 7,
+        "line_end": 7
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT02",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Amacı Seçilen roman kişisiyle romanın bağlamına uygun hayalî bir mülakat yapabilme",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 9,
+        "line_end": 9
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT03",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Süresi 8 ders saati",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 11,
+        "line_end": 11
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT04",
+      "type": "paragraph",
+      "order": 9,
+      "text": "Bu çalışmada sizlerden Huzur romanından seçtiğiniz bir kişiyle hayalî bir mülakat yapmanız beklenmektedir. Performans göreviniz için sınıf dışında hazırlık yapınız ve oluşturduğunuz çalışmayı sınıfta paylaşınız. Öğretmeninizin rehberliğinde altı gruba ayrılınız ve grup sözcülerini seçiniz. Grup arkadaşlarınızla görüş alışverişinde bulunarak çalışmaları birlikte yapınız.",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 13,
+        "line_end": 16
+      }
+    },
+    {
+      "id": "G11-T3-P211-Q01",
+      "type": "question",
+      "order": 10,
+      "text": "Yapacağınız hazırlıklı konuşmayı aşağıdaki aşamaları ve ilgili çalışmayı takip ederek planlayınız.",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 17,
+        "line_end": 22
+      },
+      "question_number": "1",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P211-TEXT01",
+        "G11-T3-P211-TEXT02",
+        "G11-T3-P211-TEXT03",
+        "G11-T3-P211-TEXT04",
+        "G11-T3-P211-TEXT05",
+        "G11-T3-P211-TEXT06",
+        "G11-T3-P211-TEXT07",
+        "G11-T3-P211-TEXT08",
+        "G11-T3-P211-TEXT09",
+        "G11-T3-P211-TEXT10",
+        "G11-T3-P211-TEXT11",
+        "G11-T3-P210-TEXT01",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [
+        {
+          "label": "a",
+          "text": "Konuşma amacınıza (ikna etme, bilgilendirme vb.) karar veriniz."
+        },
+        {
+          "label": "b",
+          "text": "Konuşmanızın hedef kitlesini, türünü, içeriğini ve hazırlık süresini gözeterek uygun konuşma yöntem ve stratejisini belirleyiniz."
+        },
+        {
+          "label": "c",
+          "text": "Konuşmanızın hazırlık, sunma ve değerlendirme aşamalarında önceki konuşmalarınızdan edindiğiniz bilgi ve deneyimlerinizden yararlanınız."
+        }
+      ],
+      "table_ids": [
+        "G11-T3-P211-TABLE01",
+        "G11-T3-P211-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P211-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P211-Q02",
+      "type": "question",
+      "order": 11,
+      "text": "Aşağıda verilen Çalışma Kâğıdı’nı, tahlil ettiğiniz romandaki kişilere ve bunların özelliklerine göre tamamlayınız.",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 23,
+        "line_end": 24
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P211-TEXT01",
+        "G11-T3-P211-TEXT02",
+        "G11-T3-P211-TEXT03",
+        "G11-T3-P211-TEXT04",
+        "G11-T3-P211-TEXT05",
+        "G11-T3-P211-TEXT06",
+        "G11-T3-P211-TEXT07",
+        "G11-T3-P211-TEXT08",
+        "G11-T3-P211-TEXT09",
+        "G11-T3-P211-TEXT10",
+        "G11-T3-P211-TEXT11",
+        "G11-T3-P210-TEXT01",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P211-TABLE01",
+        "G11-T3-P211-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P211-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P211-H02",
+      "type": "heading",
+      "order": 12,
+      "text": "ÇALIŞMA KÂĞIDI",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 26,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT05",
+      "type": "paragraph",
+      "order": 13,
+      "text": "Romandaki Kişiler Kişilerin Özellikleri",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 28,
+        "line_end": 28
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT06",
+      "type": "paragraph",
+      "order": 14,
+      "text": "Mümtaz",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 30,
+        "line_end": 30
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT07",
+      "type": "paragraph",
+      "order": 15,
+      "text": "Nuran",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 33,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT08",
+      "type": "paragraph",
+      "order": 16,
+      "text": "İhsan",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 36,
+        "line_end": 36
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT09",
+      "type": "paragraph",
+      "order": 17,
+      "text": "Suat",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 39,
+        "line_end": 39
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT10",
+      "type": "paragraph",
+      "order": 18,
+      "text": "Fâhir",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 42,
+        "line_end": 42
+      }
+    },
+    {
+      "id": "G11-T3-P211-TEXT11",
+      "type": "paragraph",
+      "order": 19,
+      "text": "Macide",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 45,
+        "line_end": 45
+      }
+    },
+    {
+      "id": "G11-T3-P211-Q03",
+      "type": "question",
+      "order": 20,
+      "text": "Grup arkadaşlarınızla kendinize yakın bulduğunuz bir roman kişisini seçiniz ve bu seçimi yaparken o kişinin hangi özelliğinden etkilendiğinizi belirtiniz.",
+      "source": {
+        "printed_page": 211,
+        "pdf_page": 212,
+        "line_start": 50,
+        "line_end": 51
+      },
+      "question_number": "3",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P211-TEXT01",
+        "G11-T3-P211-TEXT02",
+        "G11-T3-P211-TEXT03",
+        "G11-T3-P211-TEXT04",
+        "G11-T3-P211-TEXT05",
+        "G11-T3-P211-TEXT06",
+        "G11-T3-P211-TEXT07",
+        "G11-T3-P211-TEXT08",
+        "G11-T3-P211-TEXT09",
+        "G11-T3-P211-TEXT10",
+        "G11-T3-P211-TEXT11",
+        "G11-T3-P210-TEXT01",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P211-TABLE01",
+        "G11-T3-P211-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P211-VIS01"
+      ]
+    }
+  ]
+}

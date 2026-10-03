@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 233,
+  "pdf_page": 234,
+  "section": "tema-sonu-olcme-degerlendirme",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 233,
+    "pdf_page": 234,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n\n8.          Metinde Orhan Veli hangi yönleriyle tanıtılmıştır? Gerekçelendirerek açıklayınız.\n            ..................................................................................................................................................................................................................\n            ..................................................................................................................................................................................................................\n            ..................................................................................................................................................................................................................\n            ..................................................................................................................................................................................................................\n            ..................................................................................................................................................................................................................\n\n\n9.          Metinle ilgili aşağıdakilerden hangisi söylenemez?\n            A) Şairin edebî kişiliği tanıtılmıştır.\n            B) Garip akımıyla ilişkisi açıklanmıştır.\n            C) Yazarın yaşamı kronolojik olarak verilmiştir.\n            D) Şiir ve öykülerindeki temalara değinilmiştir.\n            E) Nesnel ve bilgilendirici bir anlatım kullanılmıştır.\n\n\n            10 ve 11. soruları aşağıdaki metin ve tablolardan faydalanarak cevaplayınız.\n\n\n  “Biyografi ve Yaşantı” konulu bir yarışma düzenlemek isteyen Fatma Öğretmen sınıftaki öğrencileri iki gruba\n  ayırır ve öğrencilere yarışma konusuyla ilgili kelimeler vereceğini açıklar. Öğrencilerden verilen kelimeleri bi-\n  yografi türüyle ilişkilendirerek açıklayan cümleler yazmalarını ister. Her doğru cümlenin +5 puan, her yanlış\n  cümlenin ise -2 puan ile değerlendirileceğini ifade eder.\n\n\n                                               Tablo A                                                                                                       Tablo B\n\n                                       Biyografinin amacı bir kişinin                                                                                 Alanında ün kazanmış kişilerin\n      Amaç                                                                                                        Tür\n                                       yaşamı hakkında bilgi vermektir.                                                                               yaşamlarını anlatan yazı türüdür.\n\n                                                                                                                                                      Biyografilerde kişinin hayatı\n                                       Biyografilerde açık ve anlaşılır bir\n      Dil                                                                                                         Tarafsızlık                         anlatılırken tarafsızlık ilkesi göz\n                                       dil kullanılır.\n                                                                                                                                                      ardı edilebilir.\n                                                                                                                                                      Biyografide kişinin doğumundan\n                                       Biyografide kişinin toplumu etki-\n      İçerik                                                                                                      Kronoloji                           itibaren kronolojik sırayı takip\n                                       leyen yönleri anlatılır.\n                                                                                                                                                      etme zorunluluğu vardır.\n                                       Biyografide kişinin yaşam tarzı                                                                                Gerçek kişilerin hayatı ele alın-\n      Tutum                            toplumsal normlara göre değer-                                             Belge                               dığından biyografiler belgelere\n                                       lendirilmelidir.                                                                                               dayandırılmalıdır.\n\n\n\n10.         Tabloda verilen kavram açıklamalarından II. grup 13 puan aldığına göre hangi tablo II. gruba aittir?\n\n\n\n11.         I. grubun tam puan alabilmesi için hangi kavrama / kavramlara doğru cevap vermesi gerekirdi? Açık-\n            layınız.\n\n\n\n\n                                                                                                                                                                                                                          233",
+  "blocks": [
+    {
+      "id": "G11-T3-P233-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "233. sayfadaki etkinlikler",
+      "instruction_ids": [
+        "G11-T3-P233-INST01"
+      ],
+      "question_ids": [
+        "G11-T3-P233-Q01",
+        "G11-T3-P233-Q02",
+        "G11-T3-P233-Q03",
+        "G11-T3-P233-Q04"
+      ],
+      "table_ids": [
+        "G11-T3-P233-TABLE01",
+        "G11-T3-P233-TABLE02"
+      ],
+      "related_text_ids": [
+        "G11-T3-P233-TEXT01",
+        "G11-T3-P233-TEXT02",
+        "G11-T3-P233-TEXT03",
+        "G11-T3-P233-TEXT04"
+      ],
+      "visual_ids": [
+        "G11-T3-P233-VIS01"
+      ],
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234
+      }
+    },
+    {
+      "id": "G11-T3-P233-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Two comparison tables labeled Tablo A and Tablo B.",
+      "alt_description": "Two comparison tables labeled Tablo A and Tablo B.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234
+      }
+    },
+    {
+      "id": "G11-T3-P233-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Metinde Orhan Veli hangi yönleriyle tanıtılmıştır? Gerekçelendirerek açıklayınız.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 4,
+        "line_end": 9
+      },
+      "question_number": "8",
+      "instruction_id": "G11-T3-P232-INST01",
+      "related_text_ids": [
+        "G11-T3-P233-TEXT01",
+        "G11-T3-P233-TEXT02",
+        "G11-T3-P233-TEXT03",
+        "G11-T3-P233-TEXT04",
+        "G11-T3-P232-TEXT01",
+        "G11-T3-P232-TEXT02",
+        "G11-T3-P232-TEXT03",
+        "G11-T3-P232-TEXT04",
+        "G11-T3-P232-TEXT05",
+        "G11-T3-P232-TEXT06",
+        "G11-T3-P232-TEXT07"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P233-TABLE01",
+        "G11-T3-P233-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P233-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P233-Q02",
+      "type": "question",
+      "order": 4,
+      "text": "Metinle ilgili aşağıdakilerden hangisi söylenemez?",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 12,
+        "line_end": 17
+      },
+      "question_number": "9",
+      "instruction_id": "G11-T3-P232-INST01",
+      "related_text_ids": [
+        "G11-T3-P233-TEXT01",
+        "G11-T3-P233-TEXT02",
+        "G11-T3-P233-TEXT03",
+        "G11-T3-P233-TEXT04",
+        "G11-T3-P232-TEXT01",
+        "G11-T3-P232-TEXT02",
+        "G11-T3-P232-TEXT03",
+        "G11-T3-P232-TEXT04",
+        "G11-T3-P232-TEXT05",
+        "G11-T3-P232-TEXT06",
+        "G11-T3-P232-TEXT07"
+      ],
+      "subquestions": [],
+      "options": [
+        {
+          "label": "A",
+          "text": "Şairin edebî kişiliği tanıtılmıştır."
+        },
+        {
+          "label": "B",
+          "text": "Garip akımıyla ilişkisi açıklanmıştır."
+        },
+        {
+          "label": "C",
+          "text": "Yazarın yaşamı kronolojik olarak verilmiştir."
+        },
+        {
+          "label": "D",
+          "text": "Şiir ve öykülerindeki temalara değinilmiştir."
+        },
+        {
+          "label": "E",
+          "text": "Nesnel ve bilgilendirici bir anlatım kullanılmıştır."
+        }
+      ],
+      "table_ids": [
+        "G11-T3-P233-TABLE01",
+        "G11-T3-P233-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P233-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P233-INST01",
+      "type": "instruction",
+      "order": 5,
+      "text": "10 ve 11. soruları aşağıdaki metin ve tablolardan faydalanarak cevaplayınız.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 20,
+        "line_end": 20
+      }
+    },
+    {
+      "id": "G11-T3-P233-TABLE01",
+      "type": "table",
+      "order": 6,
+      "text": "Biyografi türleri tablosu A",
+      "columns": [
+        "Kavram",
+        "Açıklama"
+      ],
+      "rows": [
+        [
+          "Amaç",
+          "Biyografinin amacı bir kişinin yaşamı hakkında bilgi vermektir."
+        ],
+        [
+          "Dil",
+          "Biyografilerde açık ve anlaşılır bir dil kullanılır."
+        ],
+        [
+          "İçerik",
+          "Biyografide kişinin toplumu etkileyen yönleri anlatılır."
+        ],
+        [
+          "Tutum",
+          "Biyografide kişinin yaşam tarzı toplumsal normlara göre değerlendirilmelidir."
+        ]
+      ],
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 23,
+        "line_end": 60
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P233-TABLE02",
+      "type": "table",
+      "order": 7,
+      "text": "Biyografi türleri tablosu B",
+      "columns": [
+        "Kavram",
+        "Açıklama"
+      ],
+      "rows": [
+        [
+          "Tür",
+          "Alanında ün kazanmış kişilerin yaşamlarını anlatan yazı türüdür."
+        ],
+        [
+          "Tarafsızlık",
+          "Biyografilerde kişinin hayatı anlatılırken tarafsızlık ilkesi göz ardı edilebilir."
+        ],
+        [
+          "Kronoloji",
+          "Biyografide kişinin doğumundan itibaren kronolojik sırayı takip etme zorunluluğu vardır."
+        ],
+        [
+          "Belge",
+          "Gerçek kişilerin hayatı ele alındığından biyografiler belgelere dayandırılmalıdır."
+        ]
+      ],
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 23,
+        "line_end": 60
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P233-TEXT01",
+      "type": "literary_text",
+      "order": 8,
+      "text": "“Biyografi ve Yaşantı” konulu bir yarışma düzenlemek isteyen Fatma Öğretmen sınıftaki öğrencileri iki gruba ayırır ve öğrencilere yarışma konusuyla ilgili kelimeler vereceğini açıklar. Öğrencilerden verilen kelimeleri biyografi türüyle ilişkilendirerek açıklayan cümleler yazmalarını ister. Her doğru cümlenin +5 puan, her yanlış cümlenin ise -2 puan ile değerlendirileceğini ifade eder.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 23,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T3-P233-TEXT02",
+      "type": "paragraph",
+      "order": 9,
+      "text": "Tablo A Tablo B",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 29,
+        "line_end": 29
+      }
+    },
+    {
+      "id": "G11-T3-P233-TEXT03",
+      "type": "paragraph",
+      "order": 10,
+      "text": "Biyografinin amacı bir kişinin Alanında ün kazanmış kişilerin Amaç Tür yaşamı hakkında bilgi vermektir. yaşamlarını anlatan yazı türüdür.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 31,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T3-P233-TEXT04",
+      "type": "literary_text",
+      "order": 11,
+      "text": "Biyografilerde kişinin hayatı Biyografilerde açık ve anlaşılır bir Dil Tarafsızlık anlatılırken tarafsızlık ilkesi göz dil kullanılır. ardı edilebilir. Biyografide kişinin doğumundan Biyografide kişinin toplumu etki- İçerik Kronoloji itibaren kronolojik sırayı takip leyen yönleri anlatılır. etme zorunluluğu vardır. Biyografide kişinin yaşam tarzı Gerçek kişilerin hayatı ele alın- Tutum toplumsal normlara göre değer- Belge dığından biyografiler belgelere lendirilmelidir. dayandırılmalıdır.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 35,
+        "line_end": 47
+      }
+    },
+    {
+      "id": "G11-T3-P233-Q03",
+      "type": "question",
+      "order": 12,
+      "text": "Tabloda verilen kavram açıklamalarından II. grup 13 puan aldığına göre hangi tablo II. gruba aittir?",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 51,
+        "line_end": 51
+      },
+      "question_number": "10",
+      "instruction_id": "G11-T3-P233-INST01",
+      "related_text_ids": [
+        "G11-T3-P233-TEXT01",
+        "G11-T3-P233-TEXT02",
+        "G11-T3-P233-TEXT03",
+        "G11-T3-P233-TEXT04"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P233-TABLE01",
+        "G11-T3-P233-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P233-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P233-Q04",
+      "type": "question",
+      "order": 13,
+      "text": "I. grubun tam puan alabilmesi için hangi kavrama / kavramlara doğru cevap vermesi gerekirdi? Açıklayınız.",
+      "source": {
+        "printed_page": 233,
+        "pdf_page": 234,
+        "line_start": 55,
+        "line_end": 56
+      },
+      "question_number": "11",
+      "instruction_id": "G11-T3-P233-INST01",
+      "related_text_ids": [
+        "G11-T3-P233-TEXT01",
+        "G11-T3-P233-TEXT02",
+        "G11-T3-P233-TEXT03",
+        "G11-T3-P233-TEXT04"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P233-TABLE01",
+        "G11-T3-P233-TABLE02"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P233-VIS01"
+      ]
+    }
+  ]
+}

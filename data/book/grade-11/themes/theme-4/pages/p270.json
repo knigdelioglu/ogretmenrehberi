@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 270,
+  "pdf_page": 271,
+  "section": {
+    "id": "theme-4-reading-merdiven",
+    "title": "Metin Tahlili-2 (Anlama): Okuma — Merdiven"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 270,
+    "pdf_page": 271
+  },
+  "page_text": "  4. Tema\n\n\n 8. Metnin sonunda anlatıcı kahramanın merdivenden yukarı doğru çıkmaktan vazgeçip “Ne işim var benim\n    yukarda?” diyerek aşağı inmesi hakkında çıkarımlarda bulununuz.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n\n\n\n                         ÇALIŞMA KÂĞIDI\n\n\n Çalışma Kâğıdı’nı Merdiven metnine göre tamamlayınız.\n\n\n                               Konu\n\n\n\n\n                            Çatışma\n\n\n\n\n                         Açık İletiler\n\n\n\n\n                        Örtük İletiler\n\n\n\n\n                            Zihniyet\n\n\n\n\n                              Üslup\n\n\n\n\n270",
+  "blocks": [
+    {
+      "id": "G11-T4-P270-TABLE01",
+      "type": "table",
+      "order": 1,
+      "title": "Merdiven Metninin Yapı Unsurları",
+      "columns": [
+        "Yapı Unsuru",
+        "Kayıt Alanı"
+      ],
+      "rows": [
+        [
+          "Konu",
+          ""
+        ],
+        [
+          "Çatışma",
+          ""
+        ],
+        [
+          "Açık İletiler",
+          ""
+        ],
+        [
+          "Örtük İletiler",
+          ""
+        ],
+        [
+          "Zihniyet",
+          ""
+        ],
+        [
+          "Üslup",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 270,
+        "pdf_page": 271
+      }
+    },
+    {
+      "id": "G11-T4-P270-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Merdiven Metninin Yapı Unsurları",
+          "alt_description": "Konu, çatışma, açık iletiler, örtük iletiler, zihniyet ve üslup satırlarından oluşan boş çalışma kâğıdı vardır.",
+          "pedagogical_role": "Küçürek hikâyenin yapı unsurlarını kaydetme."
+        }
+      ],
+      "source": {
+        "printed_page": 270,
+        "pdf_page": 271
+      }
+    },
+    {
+      "id": "G11-T4-P270-ACT01",
+      "type": "activity",
+      "order": 4,
+      "title": "Metin Tahlili-2 (Anlama): Okuma — Merdiven",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P270-Q01"
+      ],
+      "table_ids": [
+        "G11-T4-P270-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T4-P265-LIT01"
+      ],
+      "source": {
+        "printed_page": 270,
+        "pdf_page": 271
+      }
+    },
+    {
+      "id": "G11-T4-P270-Q01",
+      "type": "question",
+      "order": 4,
+      "question_number": "8",
+      "text": "Metnin sonunda anlatıcı kahramanın merdivenden yukarı doğru çıkmaktan vazgeçip “Ne işim var benim\nyukarda?” diyerek aşağı inmesi hakkında çıkarımlarda bulununuz.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P265-LIT01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 270,
+        "pdf_page": 271
+      }
+    }
+  ]
+}

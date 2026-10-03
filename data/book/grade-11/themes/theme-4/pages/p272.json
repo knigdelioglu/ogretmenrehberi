@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 272,
+  "pdf_page": 273,
+  "section": {
+    "id": "theme-4-reading-merdiven",
+    "title": "Metin Tahlili-2 (Anlama): Okuma — Merdiven"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 272,
+    "pdf_page": 273
+  },
+  "page_text": "  4. Tema\n\n\n\n          Karşılaştıralım\n\n\n 1. Ben, Mimar Sinan metni ile Merdiven metnini aşağıdaki tabloda verilen ölçütler doğrultusunda karşılaştı-\n    rınız. Tespitlerinizi ilgili alanlara yazınız.\n\n              Ölçütler                                             Ben, Mimar Sinan                                                                       Merdiven\n\n\n                İçerik\n\n\n\n                  Tür\n\n\n\n                 Şekil\n\n\n\n               Dönem\n\n\n\n         Yapı Unsurları\n\n\n\n           Dil ve Üslup\n\n\n\n                 İleti\n\n\n\n 2. Ben, Mimar Sinan ve Merdiven metinlerinden hareketle insan ilişkilerin-\n    de öne çıkan değerlerin tiyatro türündeki metinlerde mi yoksa hikâye\n    türündeki metinlerde mi daha iyi yansıtıldığına dair görüşlerinizi ge-\n    rekçeleriyle yazınız.\n      .................................................................................................................................................\n      .................................................................................................................................................\n      .................................................................................................................................................\n      .................................................................................................................................................   Geleneksel Türk Tiyatrosu / Mo-\n      .................................................................................................................................................   dern Türk Tiyatrosu ve Küçürek\n                                                                                                                                                          Hikâye çalışmasına karekoddan\n      .................................................................................................................................................           ulaşabilirsiniz.\n\n      .................................................................................................................................................\n      .................................................................................................................................................\n\n\n\n272",
+  "blocks": [
+    {
+      "id": "G11-T4-P272-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Ölçütler / Ben, Mimar Sinan / Merdiven",
+          "alt_description": "İki metni yedi ölçüte göre karşılaştırmak için üç sütunlu boş tablo ve karekod kutusu vardır.",
+          "pedagogical_role": "İki ana metni karşılaştırma."
+        }
+      ],
+      "source": {
+        "printed_page": 272,
+        "pdf_page": 273
+      }
+    },
+    {
+      "id": "G11-T4-P272-SH01",
+      "type": "subheading",
+      "order": 5,
+      "text": "Karşılaştıralım",
+      "source": {
+        "printed_page": 272,
+        "pdf_page": 273
+      }
+    },
+    {
+      "id": "G11-T4-P272-ACT01",
+      "type": "activity",
+      "order": 8,
+      "title": "Karşılaştıralım",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P272-Q01",
+        "G11-T4-P272-Q02"
+      ],
+      "table_ids": [
+        "G11-T4-P272-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T4-P265-LIT01"
+      ],
+      "source": {
+        "printed_page": 272,
+        "pdf_page": 273
+      }
+    },
+    {
+      "id": "G11-T4-P272-Q01",
+      "type": "question",
+      "order": 8,
+      "question_number": "1",
+      "text": "Ben, Mimar Sinan metni ile Merdiven metnini aşağıdaki tabloda verilen ölçütler doğrultusunda karşılaştı-\nrınız. Tespitlerinizi ilgili alanlara yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P265-LIT01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 272,
+        "pdf_page": 273
+      }
+    },
+    {
+      "id": "G11-T4-P272-TABLE01",
+      "type": "table",
+      "order": 8,
+      "title": "Ben, Mimar Sinan / Merdiven karşılaştırma tablosu",
+      "columns": [
+        "Ölçütler",
+        "Ben, Mimar Sinan",
+        "Merdiven"
+      ],
+      "rows": [
+        [
+          "İçerik",
+          "",
+          ""
+        ],
+        [
+          "Tür",
+          "",
+          ""
+        ],
+        [
+          "Şekil",
+          "",
+          ""
+        ],
+        [
+          "Dönem",
+          "",
+          ""
+        ],
+        [
+          "Yapı Unsurları",
+          "",
+          ""
+        ],
+        [
+          "Dil ve Üslup",
+          "",
+          ""
+        ],
+        [
+          "İleti",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 272,
+        "pdf_page": 273
+      }
+    },
+    {
+      "id": "G11-T4-P272-Q02",
+      "type": "question",
+      "order": 42,
+      "question_number": "2",
+      "text": "Ben, Mimar Sinan ve Merdiven metinlerinden hareketle insan ilişkilerin-\nde öne çıkan değerlerin tiyatro türündeki metinlerde mi yoksa hikâye\ntüründeki metinlerde mi daha iyi yansıtıldığına dair görüşlerinizi ge-\nrekçeleriyle yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P265-LIT01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 272,
+        "pdf_page": 273
+      }
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 181,
+  "pdf_page": 182,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 181,
+    "pdf_page": 182,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n4. Kahramanları, kişilik özellikleri ve dil kullanımları yönüyle aşağıdaki tabloda karşılaştırınız.\n\n  Kahramanlar                        Kişilik Özellikleri                                 Dil Kullanımları\n                                                                         İnsanı teganni etmek istiyorum, derdim; maddeyi\n                   Hayata bir sanatçı duyarlılığıyla bakan, tabiatı ve\n                                                                         uykusundan uyandıran ve kainata kendi ruhunu\n    Mümtaz         sanatı bir bütün olarak gören hassas bir karak-\n                                                                         geçireni teganni edeceğim, ey bütün büyüklüğü-\n                   terdir.\n                                                                         nü ihata eden lisan! Sen bana yardım et!\n\n\n     Nuran\n\n\n\n     İhsan\n\n\n\n    Macide\n\n\n\n      Suat\n\n\n\n     Fâhir\n\n\n\n\n    Bilgi Köşesi\n\n\n\n                                                Türk Romanında İlkler\n                            İlk Çeviri Roman: Tercüme-i Telemak, Yusuf Kâmil Paşa\n                           İlk Yerli Roman: Taaşşuk-ı Talat ve Fitnat, Şemsettin Sami\n                                     İlk Edebî Roman: İntibah, Namık Kemal                            Yazar-Eser-Kahraman\n                                                                                                      oyununa karekoddan\n                         İlk Realist Roman: Araba Sevdası, Recaizade Mahmut Ekrem                        ulaşabilirsiniz.\n\n                                   İlk Köy Romanı: Karabibik, Nabizade Nâzım\n                                    İlk Psikolojik Roman: Eylül, Mehmet Rauf\n                     Batı Tekniğine Uygun İlk Roman: Mai ve Siyah, Halit Ziya Uşaklıgil\n         İlk Psikolojik Roman Denemesi, İlk Naturalist ve Tezli Roman: Zehra, Nabizade Nâzım\n                İlk Tarihî Uzun Hikâye-Roman Denemesi: Yeniçeriler, Ahmet Mithat Efendi\n                                      İlk Tarihî Roman: Cezmi, Namık Kemal\n                           İlk Polisiye Roman: Esrâr-ı Cinâyât, Ahmet Mithat Efendi\n                Millî Mücadele’nin İşlendiği İlk Roman: Ateşten Gömlek, Halide Edip Adıvar\n\n\n\n\n                                                                                                                           181",
+  "blocks": [
+    {
+      "id": "G11-T3-P181-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Bilgi Köşesi",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P181-Q01"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P181-TEXT01",
+        "G11-T3-P181-TEXT02",
+        "G11-T3-P181-TEXT03",
+        "G11-T3-P181-TEXT04",
+        "G11-T3-P181-TEXT05",
+        "G11-T3-P181-TEXT06",
+        "G11-T3-P181-TEXT07",
+        "G11-T3-P181-TEXT08",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P181-VIS01"
+      ],
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182
+      }
+    },
+    {
+      "id": "G11-T3-P181-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Printed information panel with book-cover images and a QR code.",
+      "alt_description": "Printed information panel with book-cover images and a QR code.",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182
+      },
+      "source_note": "Kod içeriği/dış hedef PDF sayfasından okunmadı."
+    },
+    {
+      "id": "G11-T3-P181-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Kahramanları, kişilik özellikleri ve dil kullanımları yönüyle aşağıdaki tabloda karşılaştırınız.",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 3,
+        "line_end": 3
+      },
+      "question_number": "4",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P181-TEXT01",
+        "G11-T3-P181-TEXT02",
+        "G11-T3-P181-TEXT03",
+        "G11-T3-P181-TEXT04",
+        "G11-T3-P181-TEXT05",
+        "G11-T3-P181-TEXT06",
+        "G11-T3-P181-TEXT07",
+        "G11-T3-P181-TEXT08",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P181-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P181-TEXT01",
+      "type": "paragraph",
+      "order": 4,
+      "text": "Kahramanlar Kişilik Özellikleri Dil Kullanımları İnsanı teganni etmek istiyorum, derdim; maddeyi Hayata bir sanatçı duyarlılığıyla bakan, tabiatı ve uykusundan uyandıran ve kainata kendi ruhunu Mümtaz sanatı bir bütün olarak gören hassas bir karakgeçireni teganni edeceğim, ey bütün büyüklüğüterdir. nü ihata eden lisan! Sen bana yardım et!",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 5,
+        "line_end": 12
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT02",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Nuran",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 15,
+        "line_end": 15
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT03",
+      "type": "paragraph",
+      "order": 6,
+      "text": "İhsan",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 19,
+        "line_end": 19
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT04",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Macide",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 23,
+        "line_end": 23
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT05",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Suat",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 27,
+        "line_end": 27
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT06",
+      "type": "paragraph",
+      "order": 9,
+      "text": "Fâhir",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 31,
+        "line_end": 31
+      }
+    },
+    {
+      "id": "G11-T3-P181-H01",
+      "type": "heading",
+      "order": 10,
+      "text": "Bilgi Köşesi",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 36,
+        "line_end": 36
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT07",
+      "type": "paragraph",
+      "order": 11,
+      "text": "Türk Romanında İlkler İlk Çeviri Roman: Tercüme-i Telemak, Yusuf Kâmil Paşa İlk Yerli Roman: Taaşşuk-ı Talat ve Fitnat, Şemsettin Sami İlk Edebî Roman: İntibah, Namık Kemal Yazar-Eser-Kahraman oyununa karekoddan İlk Realist Roman: Araba Sevdası, Recaizade Mahmut Ekrem ulaşabilirsiniz.",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 40,
+        "line_end": 45
+      }
+    },
+    {
+      "id": "G11-T3-P181-TEXT08",
+      "type": "paragraph",
+      "order": 12,
+      "text": "İlk Köy Romanı: Karabibik, Nabizade Nâzım İlk Psikolojik Roman: Eylül, Mehmet Rauf Batı Tekniğine Uygun İlk Roman: Mai ve Siyah, Halit Ziya Uşaklıgil İlk Psikolojik Roman Denemesi, İlk Naturalist ve Tezli Roman: Zehra, Nabizade Nâzım İlk Tarihî Uzun Hikâye-Roman Denemesi: Yeniçeriler, Ahmet Mithat Efendi İlk Tarihî Roman: Cezmi, Namık Kemal İlk Polisiye Roman: Esrâr-ı Cinâyât, Ahmet Mithat Efendi Millî Mücadele’nin İşlendiği İlk Roman: Ateşten Gömlek, Halide Edip Adıvar",
+      "source": {
+        "printed_page": 181,
+        "pdf_page": 182,
+        "line_start": 47,
+        "line_end": 54
+      }
+    }
+  ]
+}

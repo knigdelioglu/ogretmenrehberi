@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 296,
+  "pdf_page": 297,
+  "section": {
+    "id": "theme-4-listening-viewing",
+    "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 296,
+    "pdf_page": 297
+  },
+  "page_text": "  4. Tema\n\n\n 13. Dinlediğiniz / izlediğiniz Anadolu İnsanı / Fedakârlık adlı belgeselde millî, manevi ve evrensel değerleri\n     belirleyerek belgeselin bu değerleri hangi yollarla aktardığıyla ilgili düşüncelerinizi açıklayınız.\n      ...................................................................................................................................................................................................................\n      ...................................................................................................................................................................................................................\n      ...................................................................................................................................................................................................................\n      ...................................................................................................................................................................................................................\n 14. Anadolu İnsanı / Fedakârlık adlı metnin sosyoloji, psikoloji ve coğrafya disiplinleriyle ilişkisini aşağıda\n     verilen Çalışma Kâğıdı’nda ilgili alanlara yazarak değerlendiriniz.\n\n\n                           ÇALIŞMA KÂĞIDI\n\n\n                         Disiplinler                                                                                    Değerlendirmelerim\n\n\n\n\n              Metin-Sosyoloji İlişkisi\n\n\n\n\n              Metin-Psikoloji İlişkisi\n\n\n\n\n              Metin-Coğrafya İlişkisi\n\n\n\n\n296",
+  "blocks": [
+    {
+      "id": "G11-T4-P296-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Metin-Sosyoloji / Metin-Psikoloji / Metin-Coğrafya İlişkisi",
+          "alt_description": "Disiplinler ve değerlendirmelerim sütunlarından oluşan üç satırlı geniş çalışma kâğıdı vardır.",
+          "pedagogical_role": "Disiplinler arası ilişkiyi değerlendirme."
+        }
+      ],
+      "source": {
+        "printed_page": 296,
+        "pdf_page": 297
+      }
+    },
+    {
+      "id": "G11-T4-P296-ACT01",
+      "type": "activity",
+      "order": 4,
+      "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P296-Q01",
+        "G11-T4-P296-Q02"
+      ],
+      "table_ids": [
+        "G11-T4-P296-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "source": {
+        "printed_page": 296,
+        "pdf_page": 297
+      }
+    },
+    {
+      "id": "G11-T4-P296-Q01",
+      "type": "question",
+      "order": 4,
+      "question_number": "13",
+      "text": "Dinlediğiniz / izlediğiniz Anadolu İnsanı / Fedakârlık adlı belgeselde millî, manevi ve evrensel değerleri\nbelirleyerek belgeselin bu değerleri hangi yollarla aktardığıyla ilgili düşüncelerinizi açıklayınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 296,
+        "pdf_page": 297
+      }
+    },
+    {
+      "id": "G11-T4-P296-Q02",
+      "type": "question",
+      "order": 10,
+      "question_number": "14",
+      "text": "Anadolu İnsanı / Fedakârlık adlı metnin sosyoloji, psikoloji ve coğrafya disiplinleriyle ilişkisini aşağıda\nverilen Çalışma Kâğıdı’nda ilgili alanlara yazarak değerlendiriniz.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 296,
+        "pdf_page": 297
+      }
+    },
+    {
+      "id": "G11-T4-P296-TABLE01",
+      "type": "table",
+      "order": 10,
+      "title": "Disiplinler / Değerlendirmelerim",
+      "columns": [
+        "Disiplinler",
+        "Değerlendirmelerim"
+      ],
+      "rows": [
+        [
+          "Metin-Sosyoloji İlişkisi",
+          ""
+        ],
+        [
+          "Metin-Psikoloji İlişkisi",
+          ""
+        ],
+        [
+          "Metin-Coğrafya İlişkisi",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 296,
+        "pdf_page": 297
+      }
+    }
+  ]
+}

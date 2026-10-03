@@ -1,0 +1,154 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 149,
+  "pdf_page": 150,
+  "section": "Edebiyat Atölyesi-2 (Anlatma) — Yazma",
+  "source": {
+    "printed_page": 149,
+    "pdf_page": 150,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P149-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                                                                                                    Kültür Yolculuğu\n\n\n1. Çevrim içi gezilebilecek müzeleri belirleyiniz. Bu müzeleri tanıtan kısa bir liste hazırlayarak bunu arka-\n   daşlarınızla paylaşınız.\n\n\n                                                                           Çevrim İçi Müzelerin Kısa Tanıtımı\n\n\n\n\n2. İlgi alanlarınıza uygun bir müze seçiniz. Seçiminizi gerekçelendirerek açıklayınız.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n3. Çevrim içi müze gezisi sonunda edindiğiniz izlenimleri yazarken kullanacağınız cümle, paragraf ve metin\n   düzeni için uygun yöntem ve stratejiyi belirleyiniz.\n4. Yazma amacınıza (ikna etme, bilgilendirme, resmî talepte bulunma vb.) karar veriniz.\n5. Yazacağınız metnin özelliklerini (süre, hedef kitle vb.) belirleyiniz.\n6. Yazma süreciyle ilgili engelleri ortadan kaldırınız.\n7. Yazma amacınıza uygun olarak seçtiğiniz stratejiyi yapılandırınız.\n\n\n                                                                                                                                                                                                                     149",
+      "order": 1,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 27
+      }
+    },
+    {
+      "id": "G11-T2-P149-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Çevrim içi müze etkinliğine eşlik eden görsel ve geniş yazma alanı bulunur.",
+      "pedagogical_role": "Sayfa düzeninde yer alan görsel destek.",
+      "source_image_count": 1,
+      "vector_shape_count": 0,
+      "order": 2,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 3,
+        "line_end": 3
+      }
+    },
+    {
+      "id": "G11-T2-P149-ACT01",
+      "type": "activity",
+      "title": "Edebiyat Atölyesi-2 (Anlatma) — Yazma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P149-Q01",
+        "G11-T2-P149-Q02",
+        "G11-T2-P149-Q03",
+        "G11-T2-P149-Q05"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P149-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P149-Q01",
+      "type": "question",
+      "question_number": "1",
+      "text": "Çevrim içi gezilebilecek müzeleri belirleyiniz. Bu müzeleri tanıtan kısa bir liste hazırlayarak bunu arkadaşlarınızla paylaşınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P149-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 12
+      }
+    },
+    {
+      "id": "G11-T2-P149-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "İlgi alanlarınıza uygun bir müze seçiniz. Seçiminizi gerekçelendirerek açıklayınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P149-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 5,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 13,
+        "line_end": 18
+      }
+    },
+    {
+      "id": "G11-T2-P149-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Çevrim içi müze gezisi sonunda edindiğiniz izlenimleri yazarken kullanacağınız cümle, paragraf ve metin düzeni için uygun yöntem ve stratejiyi belirleyiniz. 4. Yazma amacınıza (ikna etme, bilgilendirme, resmî talepte bulunma vb.) karar veriniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P149-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 19,
+        "line_end": 21
+      }
+    },
+    {
+      "id": "G11-T2-P149-Q05",
+      "type": "question",
+      "question_number": "5",
+      "text": "Yazacağınız metnin özelliklerini (süre, hedef kitle vb.) belirleyiniz. 6. Yazma süreciyle ilgili engelleri ortadan kaldırınız. 7. Yazma amacınıza uygun olarak seçtiğiniz stratejiyi yapılandırınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P149-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 7,
+      "source": {
+        "printed_page": 149,
+        "pdf_page": 150,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 22,
+        "line_end": 27
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

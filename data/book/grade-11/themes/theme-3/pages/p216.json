@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 216,
+  "pdf_page": 217,
+  "section": "metin-tahlili-3-dinleme-izleme",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 216,
+    "pdf_page": 217,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n          Dinleme / İzlemeyi Yönetebilme\n\n\n\n\n 1. Bir radyo tiyatrosunu dinlerken “keyif almak, eğlenceli vakit geçirmek, hayal dünyasını zenginleştirmek”\n    gibi amaçlardan hangisini öncelersiniz? Açıklayınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n 2. Direnişin Ustaları adlı radyo tiyatrosunu çözümlemek amacıyla dinleyeceğinizi dikkate alarak dinleme\n    stratejinize karar veriniz.\n 3. Radyo tiyatrosu metninin başlığından hareketle metnin içeriğine ve yazılış amacına yönelik tahminlerde\n    bulununuz.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n Metni Dinleyelim / İzleyelim\n Direnişin Ustaları adlı metni çözümlemek amacıyla dinleyiniz. Metni dinleme / izleme etkinliğiniz, sürece\n etki eden bilişsel süreçler ve duyuşsal davranışlar ile fiziksel etkenleri içeren ölçütlerle öğretmeniniz ta-\n rafından Gözlem Formu’yla değerlendirilecektir. Dinleme / izleme sürecinde formdaki ölçütlere uymaya\n dikkat ediniz.\n\n\n\n\n                                                                                                                                                                             Direnişin Ustaları\n                                                                                                                                                                          videosuna karekoddan\n                                                                                                                                                                              ulaşabilirsiniz.\n\n\n\n216",
+  "blocks": [
+    {
+      "id": "G11-T3-P216-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Dinleme / İzlemeyi Yönetebilme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P216-Q01",
+        "G11-T3-P216-Q02",
+        "G11-T3-P216-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "visual_ids": [
+        "G11-T3-P216-VIS01"
+      ],
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217
+      }
+    },
+    {
+      "id": "G11-T3-P216-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Photograph of a radio microphone/audio recording setup.",
+      "alt_description": "Photograph of a radio microphone/audio recording setup.",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217
+      }
+    },
+    {
+      "id": "G11-T3-P216-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Dinleme / İzlemeyi Yönetebilme",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217,
+        "line_start": 3,
+        "line_end": 3
+      }
+    },
+    {
+      "id": "G11-T3-P216-Q01",
+      "type": "question",
+      "order": 4,
+      "text": "Bir radyo tiyatrosunu dinlerken “keyif almak, eğlenceli vakit geçirmek, hayal dünyasını zenginleştirmek” gibi amaçlardan hangisini öncelersiniz? Açıklayınız.",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217,
+        "line_start": 8,
+        "line_end": 13
+      },
+      "question_number": "1",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P216-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P216-Q02",
+      "type": "question",
+      "order": 5,
+      "text": "Direnişin Ustaları adlı radyo tiyatrosunu çözümlemek amacıyla dinleyeceğinizi dikkate alarak dinleme stratejinize karar veriniz.",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217,
+        "line_start": 14,
+        "line_end": 15
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P216-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P216-Q03",
+      "type": "question",
+      "order": 6,
+      "text": "Radyo tiyatrosu metninin başlığından hareketle metnin içeriğine ve yazılış amacına yönelik tahminlerde bulununuz.",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217,
+        "line_start": 16,
+        "line_end": 20
+      },
+      "question_number": "3",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P216-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P216-TEXT01",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Metni Dinleyelim / İzleyelim Direnişin Ustaları adlı metni çözümlemek amacıyla dinleyiniz. Metni dinleme / izleme etkinliğiniz, sürece etki eden bilişsel süreçler ve duyuşsal davranışlar ile fiziksel etkenleri içeren ölçütlerle öğretmeniniz tarafından Gözlem Formu’yla değerlendirilecektir. Dinleme / izleme sürecinde formdaki ölçütlere uymaya dikkat ediniz.",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217,
+        "line_start": 22,
+        "line_end": 26
+      },
+      "work_title": "Direnişin Ustaları",
+      "source_note": "PDF sayfası radyo tiyatrosuna yönlendirme içeriyor; QR üzerinden erişilen dış medya bu JSON kapsamında incelenmemiştir."
+    },
+    {
+      "id": "G11-T3-P216-TEXT02",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Direnişin Ustaları videosuna karekoddan ulaşabilirsiniz.",
+      "source": {
+        "printed_page": 216,
+        "pdf_page": 217,
+        "line_start": 31,
+        "line_end": 33
+      },
+      "work_title": "Direnişin Ustaları",
+      "source_note": "PDF sayfası radyo tiyatrosuna yönlendirme içeriyor; QR üzerinden erişilen dış medya bu JSON kapsamında incelenmemiştir."
+    }
+  ],
+  "content_limit": "Direnişin Ustaları radyo tiyatrosu PDF sayfasında tam metin olarak yer almıyor; QR/dış medya hedefi bu katmanda içerik gibi gösterilmedi."
+}

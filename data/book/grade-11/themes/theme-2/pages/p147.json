@@ -1,0 +1,130 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 147,
+  "pdf_page": 148,
+  "section": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+  "source": {
+    "printed_page": 147,
+    "pdf_page": 148,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P147-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                             Kültür Yolculuğu\n\n\n     Süreci Değerlendirebilme\n\n1. Etkin dinleyici kimliğinizi oluşturmak için dinlediğiniz / izlediğiniz âşık atışmasına değer katan unsurlar\n   ile söyleyicinin metne katkısını kendi duygu ve düşünceleriniz doğrultusunda değerlendiriniz.\n\n                     Âşık Atışmasına                                         Söyleyicinin\n                   Değer Katan Unsurlar                                      Metne Katkısı\n\n\n\n\n2. Dinlediğiniz / izlediğiniz âşık atışmasından hareketle aşağıdaki soruları dikkate alarak yansıtıcı bir yazı\n   yazınız.\n\n\n\n\n           Atışmada neleri\n             fark ettim?\n\n\n\n\n            Atışmadan ne\n              anladım?\n\n\n\n\n              Neyi farklı\n            yapabilirdim?\n\n\n\n\n                                                                                 Bu temada öğren-\n                                         Ek öğrenmeye\n                                                                                 diklerim hayatıma\n                                       ihtiyacım var mı?\n                                                                                     neler kattı?\n\n\n\n\n                                                                                                            147",
+      "order": 1,
+      "source": {
+        "printed_page": 147,
+        "pdf_page": 148,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 48
+      }
+    },
+    {
+      "id": "G11-T2-P147-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "Süreci Değerlendirebilme",
+      "order": 2,
+      "source": {
+        "printed_page": 147,
+        "pdf_page": 148,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T2-P147-ACT01",
+      "type": "activity",
+      "title": "Süreci Değerlendirebilme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P147-Q01",
+        "G11-T2-P147-Q02"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P147-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 147,
+        "pdf_page": 148,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P147-Q01",
+      "type": "question",
+      "question_number": "1",
+      "text": "Etkin dinleyici kimliğinizi oluşturmak için dinlediğiniz / izlediğiniz âşık atışmasına değer katan unsurlar ile söyleyicinin metne katkısını kendi duygu ve düşünceleriniz doğrultusunda değerlendiriniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P147-SRC01",
+        "G11-T2-P143-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 4,
+      "source": {
+        "printed_page": 147,
+        "pdf_page": 148,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 6,
+        "line_end": 14
+      }
+    },
+    {
+      "id": "G11-T2-P147-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Dinleme süreciyle ilgili simgeler ve doldurulabilir yansıtma/değerlendirme alanları görülür.",
+      "pedagogical_role": "Sayfa düzeninde yer alan görsel destek.",
+      "source_image_count": 7,
+      "vector_shape_count": 70,
+      "order": 5,
+      "source": {
+        "printed_page": 147,
+        "pdf_page": 148,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 8,
+        "line_end": 8
+      }
+    },
+    {
+      "id": "G11-T2-P147-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Dinlediğiniz / izlediğiniz âşık atışmasından hareketle aşağıdaki soruları dikkate alarak yansıtıcı bir yazı yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P147-SRC01",
+        "G11-T2-P143-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 6,
+      "source": {
+        "printed_page": 147,
+        "pdf_page": 148,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 15,
+        "line_end": 48
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

@@ -1,0 +1,95 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 131,
+  "pdf_page": 132,
+  "section": "Edebiyat Atölyesi-1 (Anlatma) — Konuşma",
+  "source": {
+    "printed_page": 131,
+    "pdf_page": 132,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P131-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                          Kültür Yolculuğu\n\n\n     İçerik Oluşturabilme\n\n\n\n\nYaptığınız çalışmalardan ve bulduğunuz görsellerden hareketle konuşma metninizi hazırlarken aşağıdaki adımları uygulayınız.\n\n\n\n  a Konuşmanızın amacını göz önünde bulundurarak hedef kitlenizin beklentilerine yönelik tahminlerde\n    bulununuz.\n\n\n  b Tahminleriniz doğrultusunda konuşmanızın giriş, gelişme ve sonuç bölümlerini tasarlayınız.\n\n                 Giriş                                    Gelişme                                      Sonuç\n\n\n\n\n      Konuşmanızı tasarlarken içeriği zenginleştirecek, konuşmanızı daha etkili ve ilgi çekici kılacak yöntem-\n  c ler geliştirmeye çalışınız.\n      Konuşmanızın amacına uygun olarak, ana düşünceyi belirlerken karşılaştırma içeren ifadelere yer ver-\n  ç meye dikkat ediniz.\n      Türk dünyası ortak kültürü hakkında grup çalışmasıyla elde ettiğiniz bilgileri konuşma metninizde kul-\n  d lanınız.\n      Dilin kullanım alanına (özel, mesleki, kamusal alan ve eğitim alanı) göre konuşmanızın içeriğini belirle-\n  e yiniz.\n  f Konuşmanızı planlarken dil yapılarını, millî bir bilinçle ve işlevine uygun olarak kullanınız.\n\n                                                                                                                              131",
+      "order": 1,
+      "source": {
+        "printed_page": 131,
+        "pdf_page": 132,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 34
+      }
+    },
+    {
+      "id": "G11-T2-P131-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "İçerik Oluşturabilme",
+      "order": 2,
+      "source": {
+        "printed_page": 131,
+        "pdf_page": 132,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T2-P131-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Konuşma planı için renkli kutularla düzenlenmiş görsel alan vardır.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 2,
+      "vector_shape_count": 29,
+      "order": 3,
+      "source": {
+        "printed_page": 131,
+        "pdf_page": 132,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T2-P131-ACT01",
+      "type": "activity",
+      "title": "İçerik Oluşturabilme",
+      "instruction_ids": [
+        "G11-T2-P131-INST01"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P131-VIS01"
+      ],
+      "order": 4,
+      "source": {
+        "printed_page": 131,
+        "pdf_page": 132,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P131-INST01",
+      "type": "instruction",
+      "text": "Yaptığınız çalışmalardan ve bulduğunuz görsellerden hareketle konuşma metninizi hazırlarken aşağıdaki adımları uygulayınız.",
+      "instruction_number": null,
+      "order": 5,
+      "source": {
+        "printed_page": 131,
+        "pdf_page": 132,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 9,
+        "line_end": 9
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

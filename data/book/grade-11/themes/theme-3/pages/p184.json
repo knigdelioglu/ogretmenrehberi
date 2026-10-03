@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 184,
+  "pdf_page": 185,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 184,
+    "pdf_page": 185,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n 2. Huzur romanından bazı parçalar verilmiştir. “Duyarlılık” değerinden hareketle roman kişilerinin yaşadığı\n    insani çelişkileri, ahlaki çatışmaları, toplumsal hayatta yaşadıkları güçlükleri tespit ederek ilgili yerlere\n    yazınız.\n\n\n      - Halkı sever misiniz?\n      - Hayatı seven herkes halkı sever. . .\n      - Hayatı mı, halkı mı? . . Bana öyle geliyor ki, hayatı daha çok seversiniz yahut mefhumları?\n      - Halk hayatın kendisidir. Hem manzarası, hem tek kaynağıdır. Halkı hem sever, hem tadarım. Bazen bir\n      fikir kadar güzel, bazen tabiat kadar haşindir. Orada her şey büyük ölçüdedir. Çok defa büyük denizler\n      gibi susar. Fakat konuşacağı ağzı bulunca da…\n\n\n\n\n      Biz her şeyi irademizle yapacağız. Evvela şartlarımızı tanıyacağız. Sonra işlerimizi sıralayacağız. Yavaş ya-\n      vaş cihan piyasasına çıkmağa başlıyacağız. Kendi piyasamızı kendi istihsalimize açacağız. Aileyi, evi şehri\n      ve köyü tekrar kuracağız… Bunları yaparken insanı da yapmış olacağız. Şimdiye kadar insanla yapıcı ola-\n      rak meşgul olamadık, bir yığın inkılâbın peşinde idik. İçimizde kendimize karşı bir hareket hürriyetini elde\n      etmeğe çalışıyorduk. Bu zaruretten şimdi daha büyük ve esaslı zaruretlere uyanmamız lazım. Her zaman\n      daha düzeltilmez ki... Şimdi o düzlüğe bir bina kurmamız lâzım. Bu bina ne olacak? Yeni Türk insanının\n      ölçülerini kim biliyor? Yalnız bir şeyi biliyoruz. O da birtakım köklere dayanmak zarureti. Tarihimize bü-\n      tünlüğünü iade etmek zarureti. Bunu yapmazsak ikiliğin önüne geçemeyiz.\n\n\n\n\n184",
+  "blocks": [
+    {
+      "id": "G11-T3-P184-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "184. sayfadaki etkinlikler",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P184-Q01"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P184-TEXT01",
+        "G11-T3-P184-TEXT02",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P184-VIS01"
+      ],
+      "source": {
+        "printed_page": 184,
+        "pdf_page": 185
+      }
+    },
+    {
+      "id": "G11-T3-P184-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Two large blank response panels with colored borders, each following a printed excerpt.",
+      "alt_description": "Two large blank response panels with colored borders, each following a printed excerpt.",
+      "source": {
+        "printed_page": 184,
+        "pdf_page": 185
+      }
+    },
+    {
+      "id": "G11-T3-P184-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Huzur romanından bazı parçalar verilmiştir. “Duyarlılık” değerinden hareketle roman kişilerinin yaşadığı insani çelişkileri, ahlaki çatışmaları, toplumsal hayatta yaşadıkları güçlükleri tespit ederek ilgili yerlere yazınız.",
+      "source": {
+        "printed_page": 184,
+        "pdf_page": 185,
+        "line_start": 3,
+        "line_end": 5
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P184-TEXT01",
+        "G11-T3-P184-TEXT02",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P184-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P184-TEXT01",
+      "type": "literary_text",
+      "order": 4,
+      "text": "- Halkı sever misiniz? - Hayatı seven herkes halkı sever. . . - Hayatı mı, halkı mı? . . Bana öyle geliyor ki, hayatı daha çok seversiniz yahut mefhumları? - Halk hayatın kendisidir. Hem manzarası, hem tek kaynağıdır. Halkı hem sever, hem tadarım. Bazen bir fikir kadar güzel, bazen tabiat kadar haşindir. Orada her şey büyük ölçüdedir. Çok defa büyük denizler gibi susar. Fakat konuşacağı ağzı bulunca da…",
+      "source": {
+        "printed_page": 184,
+        "pdf_page": 185,
+        "line_start": 8,
+        "line_end": 13
+      }
+    },
+    {
+      "id": "G11-T3-P184-TEXT02",
+      "type": "literary_text",
+      "order": 5,
+      "text": "Biz her şeyi irademizle yapacağız. Evvela şartlarımızı tanıyacağız. Sonra işlerimizi sıralayacağız. Yavaş yavaş cihan piyasasına çıkmağa başlıyacağız. Kendi piyasamızı kendi istihsalimize açacağız. Aileyi, evi şehri ve köyü tekrar kuracağız… Bunları yaparken insanı da yapmış olacağız. Şimdiye kadar insanla yapıcı olarak meşgul olamadık, bir yığın inkılâbın peşinde idik. İçimizde kendimize karşı bir hareket hürriyetini elde etmeğe çalışıyorduk. Bu zaruretten şimdi daha büyük ve esaslı zaruretlere uyanmamız lazım. Her zaman daha düzeltilmez ki... Şimdi o düzlüğe bir bina kurmamız lâzım. Bu bina ne olacak? Yeni Türk insanının ölçülerini kim biliyor? Yalnız bir şeyi biliyoruz. O da birtakım köklere dayanmak zarureti. Tarihimize bütünlüğünü iade etmek zarureti. Bunu yapmazsak ikiliğin önüne geçemeyiz.",
+      "source": {
+        "printed_page": 184,
+        "pdf_page": 185,
+        "line_start": 18,
+        "line_end": 25
+      }
+    }
+  ]
+}

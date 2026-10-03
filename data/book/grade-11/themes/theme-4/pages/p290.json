@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 290,
+  "pdf_page": 291,
+  "section": {
+    "id": "theme-4-listening-viewing",
+    "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 290,
+    "pdf_page": 291
+  },
+  "page_text": "  4. Tema\n\n\n 6. Belgeselde yer alan öznel ve nesnel ifadeleri belirleyerek bunları aşağıda verilen balık kılçığı diyagramın-\n    daki ilgili yerlere yazınız.\n\n                                                                                                                                                                                    Öznel İfadeler\n\n\n\n\n                                                                                                                                                                                   Nesnel İfadeler\n\n\n 7. Balık kılçığı tekniğiyle tespit ettiğiniz unsurların belgeselin inandırıcılığına ve güvenilirliğine etkisiyle\n    ilgili görüşlerinizi yazınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n 8. Dinlediğiniz / izlediğiniz belgeselde açık ve örtük iletileri tespit ederek ilgili alanlara yazınız.\n\n\n\n                     Açık İletiler\n\n\n\n\n                    Örtük İletiler\n\n\n\n\n 9. Tespit ettiğiniz açık ve örtük iletilerden yola çıkarak iletilerin güvenilirliğini sorgulayınız.\n\n\n\n290",
+  "blocks": [
+    {
+      "id": "G11-T4-P290-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Öznel İfadeler / Nesnel İfadeler",
+          "alt_description": "İki yönde ilerleyen ok biçimli balık kılçığı diyagramında altı renkli yazma alanı vardır.",
+          "pedagogical_role": "Belgeseldeki öznel ve nesnel ifadeleri sınıflandırma."
+        }
+      ],
+      "source": {
+        "printed_page": 290,
+        "pdf_page": 291
+      }
+    },
+    {
+      "id": "G11-T4-P290-ACT01",
+      "type": "activity",
+      "order": 4,
+      "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P290-Q01",
+        "G11-T4-P290-Q02",
+        "G11-T4-P290-Q03",
+        "G11-T4-P290-Q04"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "source": {
+        "printed_page": 290,
+        "pdf_page": 291
+      }
+    },
+    {
+      "id": "G11-T4-P290-Q01",
+      "type": "question",
+      "order": 4,
+      "question_number": "6",
+      "text": "Belgeselde yer alan öznel ve nesnel ifadeleri belirleyerek bunları aşağıda verilen balık kılçığı diyagramın-\ndaki ilgili yerlere yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 290,
+        "pdf_page": 291
+      }
+    },
+    {
+      "id": "G11-T4-P290-Q02",
+      "type": "question",
+      "order": 15,
+      "question_number": "7",
+      "text": "Balık kılçığı tekniğiyle tespit ettiğiniz unsurların belgeselin inandırıcılığına ve güvenilirliğine etkisiyle\nilgili görüşlerinizi yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 290,
+        "pdf_page": 291
+      }
+    },
+    {
+      "id": "G11-T4-P290-Q03",
+      "type": "question",
+      "order": 26,
+      "question_number": "8",
+      "text": "Dinlediğiniz / izlediğiniz belgeselde açık ve örtük iletileri tespit ederek ilgili alanlara yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 290,
+        "pdf_page": 291
+      }
+    },
+    {
+      "id": "G11-T4-P290-Q04",
+      "type": "question",
+      "order": 40,
+      "question_number": "9",
+      "text": "Tespit ettiğiniz açık ve örtük iletilerden yola çıkarak iletilerin güvenilirliğini sorgulayınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 290,
+        "pdf_page": 291
+      }
+    }
+  ]
+}

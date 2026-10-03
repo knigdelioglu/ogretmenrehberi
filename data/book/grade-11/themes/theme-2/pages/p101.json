@@ -1,0 +1,101 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 101,
+  "pdf_page": 102,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 101,
+    "pdf_page": 102,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P101-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                               Kültür Yolculuğu\n\n\n9. Metinde geçen öznel ve nesnel ifadelere örnekler bulup bunları aşağıdaki ilgili yerlere yazınız. Bu ifade-\n   lerden hangilerinin sizi daha çok etkilediğini gerekçesiyle açıklayınız.\n\n                         Öznel İfadeler                                      Nesnel İfadeler\n\n\n\n\n10. Metnin dil, anlatım, zihniyet ve içeriğiyle ilgili tespitlerde bulunarak bunları aşağıdaki tabloda ilgili\n   alanlara yazınız.\n\n\n\n          Anlatım\n          Biçimleri\n\n\n\n\n          Anlatım\n         Teknikleri\n\n\n\n\n        Açık İletiler\n\n\n\n\n        Örtük İletiler\n\n\n\n\n          Zihniyet\n\n\n\n\n           Üslup\n\n\n\n\n                                                                                                              101",
+      "order": 1,
+      "source": {
+        "printed_page": 101,
+        "pdf_page": 102,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 49
+      }
+    },
+    {
+      "id": "G11-T2-P101-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P101-Q09",
+        "G11-T2-P101-Q10"
+      ],
+      "table_ids": [],
+      "visual_ids": [],
+      "order": 2,
+      "source": {
+        "printed_page": 101,
+        "pdf_page": 102,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P101-Q09",
+      "type": "question",
+      "question_number": "9",
+      "text": "Metinde geçen öznel ve nesnel ifadelere örnekler bulup bunları aşağıdaki ilgili yerlere yazınız. Bu ifadelerden hangilerinin sizi daha çok etkilediğini gerekçesiyle açıklayınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P101-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 3,
+      "source": {
+        "printed_page": 101,
+        "pdf_page": 102,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 11
+      }
+    },
+    {
+      "id": "G11-T2-P101-Q10",
+      "type": "question",
+      "question_number": "10",
+      "text": "Metnin dil, anlatım, zihniyet ve içeriğiyle ilgili tespitlerde bulunarak bunları aşağıdaki tabloda ilgili alanlara yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P101-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 101,
+        "pdf_page": 102,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 12,
+        "line_end": 49
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

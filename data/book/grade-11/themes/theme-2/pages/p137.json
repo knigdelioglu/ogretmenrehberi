@@ -1,0 +1,162 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 137,
+  "pdf_page": 138,
+  "section": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+  "source": {
+    "printed_page": 137,
+    "pdf_page": 138,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P137-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                                                                                                    Kültür Yolculuğu\n\n\n      Dinleme / İzlemeyi Yönetebilme\n\n1. Âşık Atışması (Murat Çobanoğlu-Şeref Taşlıova Atışması) adlı çok modlu metni dinleme / izleme amacınızı\n   belirleyiniz.\n\n2. Belirlediğiniz amaca göre dinleme / izleme stratejisine karar veriniz.\n\n\n\n\n3. Çok modlu metnin başlık ve görselinden hareketle içerik ve türüne yönelik tahminlerde bulununuz.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n\n4. Metni etkili bir biçimde dinleyebilmek / izleyebilmek için metin ve ortamla ilgili iletişim engellerini orta-\n   dan kaldırınız.\n\n\n\n\n                                                                                                                                                                                                                     137",
+      "order": 1,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T2-P137-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Âşık atışması dinleme/izleme bölümü için görsel ve karekod alanı yer alır.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 2,
+      "vector_shape_count": 2,
+      "order": 2,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T2-P137-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P137-Q01",
+        "G11-T2-P137-Q02",
+        "G11-T2-P137-Q03",
+        "G11-T2-P137-Q04"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P137-Q01",
+      "type": "question",
+      "question_number": "1",
+      "text": "Âşık Atışması (Murat Çobanoğlu-Şeref Taşlıova Atışması) adlı çok modlu metni dinleme / izleme amacınızı belirleyiniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P137-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 4,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 6,
+        "line_end": 8
+      }
+    },
+    {
+      "id": "G11-T2-P137-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Belirlediğiniz amaca göre dinleme / izleme stratejisine karar veriniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P137-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 5,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 9,
+        "line_end": 13
+      }
+    },
+    {
+      "id": "G11-T2-P137-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Çok modlu metnin başlık ve görselinden hareketle içerik ve türüne yönelik tahminlerde bulununuz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P137-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 6,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 14,
+        "line_end": 19
+      }
+    },
+    {
+      "id": "G11-T2-P137-Q04",
+      "type": "question",
+      "question_number": "4",
+      "text": "Metni etkili bir biçimde dinleyebilmek / izleyebilmek için metin ve ortamla ilgili iletişim engellerini ortadan kaldırınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P137-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 7,
+      "source": {
+        "printed_page": 137,
+        "pdf_page": 138,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 20,
+        "line_end": 26
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

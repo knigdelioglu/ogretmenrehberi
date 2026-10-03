@@ -1,0 +1,79 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 85,
+  "pdf_page": 86,
+  "section": "Tema açılışı",
+  "source": {
+    "printed_page": 85,
+    "pdf_page": 86,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P085-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                           Kültür Yolculuğu\n\n\n\n\n                                                  Tema karekodu\n\n\n\n\n                                                  Tema sunusu\n\n\n\n\n              Boğaç’ı övmüş:\n              Onlar da bu dünyadan geldi geçti.\n              Kervan gibi kondu göçtü.\n              Onları da ecel aldı, yer gizledi.\n              Fani dünya kime kaldı?\n              Gelimli gidimli dünya,\n              Son ucu ölümlü dünya!\n\n                            Dede Korkut Hikâyeleri\nDede Korkut\n (Temsilî)\n\n                                                              85",
+      "order": 1,
+      "source": {
+        "printed_page": 85,
+        "pdf_page": 86,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 28
+      }
+    },
+    {
+      "id": "G11-T2-P085-VIS01",
+      "type": "visual",
+      "caption": "(Temsilî)",
+      "alt_description": "Desenli bir kilim üzerinde telli bir çalgı görülür. Sayfada Dede Korkut alıntısı, temsilî görsel etiketi ve tema karekodları bulunur.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 4,
+      "vector_shape_count": 6,
+      "order": 2,
+      "source": {
+        "printed_page": 85,
+        "pdf_page": 86,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P085-ACT01",
+      "type": "activity",
+      "title": "Tema açılışı",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P085-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 85,
+        "pdf_page": 86,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P085-QUOTE01",
+      "type": "quote",
+      "text": "Boğaç’ı övmüş: Onlar da bu dünyadan geldi geçti. Kervan gibi kondu göçtü. Onları da ecel aldı, yer gizledi. Fani dünya kime kaldı? Gelimli gidimli dünya, Son ucu ölümlü dünya!",
+      "attribution": "Dede Korkut Hikâyeleri",
+      "order": 4,
+      "source": {
+        "printed_page": 85,
+        "pdf_page": 86,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 16,
+        "line_end": 23
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

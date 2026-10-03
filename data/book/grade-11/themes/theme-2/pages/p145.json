@@ -1,0 +1,104 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 145,
+  "pdf_page": 146,
+  "section": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+  "source": {
+    "printed_page": 145,
+    "pdf_page": 146,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P145-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                             Kültür Yolculuğu\n\n\n\n     Sıra Sizde\n\n\n1. Dinlediğiniz / izlediğiniz âşık atışmasını aşağıdaki aşamaları takip ederek altı şapka tekniğine göre de-\n   ğerlendiriniz.\n   a) Öğretmeninizin rehberliğinde altı gruba ayrılınız.\n   b) Grup sözcülerinizi seçiniz.\n   c) Grup arkadaşlarınızla farklı renkteki şapkalardan birini seçiniz. Şapkadaki soruyu grup arkadaşlarınız-\n      la tartışarak cevaplayınız.\n   ç) Grup sözcüleriniz aracılığıyla cevaplarınızı ifade ediniz ve öğretmeninizin geri bildirimlerini dikkatlice\n      dinleyerek cevaplarınızda gerekli düzenlemeleri yapınız.\n\n\n\n\n                                 Âşık\n                       atışmasında aktarılmak\n                          istenen ileti nedir?\n\n\n                     Âşık atışmasını dinlerken /\n                               izlerken\n                     hissettiğiniz duygu nedir?\n                               Neden?\n\n\n                                 Âşık\n                       atışmasındaki olumsuz\n                               iletiler\n                             nelerdir?\n\n                                Âşık\n                        atışmasında iyimser\n                              iletiler\n                             nelerdir?\n\n\n                                 Âşık\n                         atışmasını siz nasıl\n                               devam\n                             ettirirdiniz?\n\n\n                                Âşık\n                          atışmasıyla ilgili\n                          düşünceleriniz\n                              nelerdir?\n\n\n\n\n                                                                                                              145",
+      "order": 1,
+      "source": {
+        "printed_page": 145,
+        "pdf_page": 146,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 56
+      }
+    },
+    {
+      "id": "G11-T2-P145-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P145-Q01"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P145-VIS01"
+      ],
+      "order": 2,
+      "source": {
+        "printed_page": 145,
+        "pdf_page": 146,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P145-Q01",
+      "type": "question",
+      "question_number": "1",
+      "text": "Dinlediğiniz / izlediğiniz âşık atışmasını aşağıdaki aşamaları takip ederek altı şapka tekniğine göre değerlendiriniz. la tartışarak cevaplayınız. ç) Grup sözcüleriniz aracılığıyla cevaplarınızı ifade ediniz ve öğretmeninizin geri bildirimlerini dikkatlice dinleyerek cevaplarınızda gerekli düzenlemeleri yapınız.",
+      "subquestions": [
+        {
+          "label": "a",
+          "text": "Öğretmeninizin rehberliğinde altı gruba ayrılınız."
+        },
+        {
+          "label": "b",
+          "text": "Grup sözcülerinizi seçiniz."
+        },
+        {
+          "label": "c",
+          "text": "Grup arkadaşlarınızla farklı renkteki şapkalardan birini seçiniz. Şapkadaki soruyu grup arkadaşlarınızla tartışarak cevaplayınız. ç) Grup sözcüleriniz aracılığıyla cevaplarınızı ifade ediniz ve öğretmeninizin geri bildirimlerini dikkatlice dinleyerek cevaplarınızda gerekli düzenlemeleri yapınız."
+        }
+      ],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P145-SRC01",
+        "G11-T2-P143-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 145,
+        "pdf_page": 146,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 8,
+        "line_end": 56
+      }
+    },
+    {
+      "id": "G11-T2-P145-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Altı şapka tekniği için renklerle ayrılmış bir görsel düzenleyici yer alır.",
+      "pedagogical_role": "Sayfa düzeninde yer alan görsel destek.",
+      "source_image_count": 1,
+      "vector_shape_count": 8,
+      "order": 4,
+      "source": {
+        "printed_page": 145,
+        "pdf_page": 146,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 18,
+        "line_end": 18
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

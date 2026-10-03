@@ -1,0 +1,109 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 154,
+  "pdf_page": 155,
+  "section": "Tema Sonu Değerlendirme",
+  "source": {
+    "printed_page": 154,
+    "pdf_page": 155,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P154-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "  2. Tema\n\n\n      Tema Sonu Değerlendirme\n\n Tema süresince yaptığınız çalışmalar hakkında genel bir değerlendirme yapmak, böylece temaya ilişkin bilgi eksiklerini ve kavram\n yanılgılarını belirlemek üzere aşağıdaki Öğrenme Günlüğü’nü tamamlayınız.\n\n\n\n\n                                          ÖĞRENME GÜNLÜĞÜ\n                                                                                                      ....... / ....... / .......\n\n                Bu süreçte öğrendiklerim:\n\n\n\n\n                Pekiştirmem gereken konular:\n\n\n\n\n                Daha ayrıntılı incelemek istediğim konular:\n\n\n\n\n                Kendimi geliştirmek için çaba harcadığım konular:\n\n\n\n\n                Öğrendiğim ve gelecekte kullanabileceğim bilgiler:\n\n\n\n\n Öğrenme Günlüğü’nüzde belirlediğiniz eksiklerinizi ve yanılgılarınızı gidermek için öğretmeninizden yardım alarak gerekli uygula-\n maları yapınız.\n\n\n\n154",
+      "order": 1,
+      "source": {
+        "printed_page": 154,
+        "pdf_page": 155,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 45
+      }
+    },
+    {
+      "id": "G11-T2-P154-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "2. Tema",
+      "order": 2,
+      "source": {
+        "printed_page": 154,
+        "pdf_page": 155,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P154-H02",
+      "type": "heading",
+      "level": 2,
+      "text": "Tema Sonu Değerlendirme",
+      "order": 3,
+      "source": {
+        "printed_page": 154,
+        "pdf_page": 155,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T2-P154-ACT01",
+      "type": "activity",
+      "title": "Tema Sonu Değerlendirme",
+      "instruction_ids": [
+        "G11-T2-P154-INST01"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P154-VIS01"
+      ],
+      "order": 4,
+      "source": {
+        "printed_page": 154,
+        "pdf_page": 155,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P154-INST01",
+      "type": "instruction",
+      "text": "Tema süresince yaptığınız çalışmalar hakkında genel bir değerlendirme yapmak, böylece temaya ilişkin bilgi eksiklerini ve kavram yanılgılarını belirlemek üzere aşağıdaki Öğrenme Günlüğü’nü tamamlayınız.",
+      "instruction_number": null,
+      "order": 5,
+      "source": {
+        "printed_page": 154,
+        "pdf_page": 155,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 6,
+        "line_end": 7
+      }
+    },
+    {
+      "id": "G11-T2-P154-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Tema sonu değerlendirme sayfasında büyük renkli dekoratif görsel ve yönerge alanı vardır.",
+      "pedagogical_role": "Sayfa düzeninde yer alan görsel destek.",
+      "source_image_count": 1,
+      "vector_shape_count": 2,
+      "order": 6,
+      "source": {
+        "printed_page": 154,
+        "pdf_page": 155,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 8,
+        "line_end": 8
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

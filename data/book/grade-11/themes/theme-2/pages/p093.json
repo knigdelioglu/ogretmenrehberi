@@ -1,0 +1,88 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 93,
+  "pdf_page": 94,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 93,
+    "pdf_page": 94,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P093-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                 Kültür Yolculuğu\n\n\n\n\nKızların sabrı taşmıştı. Kapıya dayandılar. İçeri girecekleri sırada Çordon kollarından tuttu ve çekti:\n— Hayır, buna izin veremem! dedi.\nBundan sonra merdivene doğru yürüdü, kalabalığı yararak ve onları korkunç bir kuvvetle ellerinden çekerek\nmerdivenden indi. İşte o zaman, hiçbir babanın duymak istemediği ya da istisna sayılacak kadar az babanın\nduyduğu sözleri işitti onların ağzından:\n— Oğlunu ölüme gönderiyorsun!\n— (...) bir baba değilsin sen!\n— Hayır, sen artık bizim babamız değilsin! diye ekledi öteki.\nÇordon’un yüzü bembeyaz oldu. Sıkılan yumruklarını gevşetti, kızların kollarını bıraktı ve tek kelime söyleme-\nden, insanları ite kaka, meydana doğru ilerledi. (...)\n— Sultan! Sultan! Oğlum, buradayım! Görüyor musun beni? diye bağırıyordu elini kolunu sallayarak.\nSultan onu nasıl duysundu ki! Parmaklığın yanında duran bir demiryolcu ona sordu:\n— Atın var mı?\n— Evet, dedi Çordon. (...)\n— Öyleyse babalık, hemen atına atla, dörtnala sür. Beş kilometrelik bir yol gideceksin. Yetişirsin. Katar orada bir\ndakika duracak. Oğlunu görebilir, uğurlayabilirsin. Ama çabuk ol, dikilip durma orada!\nÇordon atını bulmak için oraya buraya koştu. Atını nasıl bulduğunu değil, tek bir hareketle yuları nasıl çözdü-\nğünü, üzengiye nasıl bastığını, kamçısını nasıl şaklattığını ve hayvanın nasıl fırladığını, başını öne eğerek demir-\nyolu boyunca onu nasıl dörtnala sürdüğünü hatırlıyordu yalnız. (...)\nÇordon yavaşlayan katarın son vagonuna yetiştiği zaman tren durmuştu. Oğlu da onu görmüş, trenden atlamış,\nkoşuyordu. Çordon da onu görünce atından atladı. Tek kelime söylemeden birbirlerinin kucağına atıldılar ve\nher şeyi unutarak, öylece hareketsiz kaldılar. Sonra:\n— Baba, beni bağışla gönüllü olarak gidiyorum... dedi Sultan.\n— Biliyorum oğlum, biliyorum.\n\n\n                                                                                                                    93",
+      "order": 1,
+      "source": {
+        "printed_page": 93,
+        "pdf_page": 94,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 32
+      }
+    },
+    {
+      "id": "G11-T2-P093-LIT01",
+      "type": "literary_text",
+      "title": "Oğulla Buluşma",
+      "text": "Oğulla Buluşma",
+      "body_transcription_ids": [
+        "G11-T2-P090-SRC01",
+        "G11-T2-P091-SRC01",
+        "G11-T2-P092-SRC01",
+        "G11-T2-P093-SRC01",
+        "G11-T2-P094-SRC01"
+      ],
+      "continuation": {
+        "from_previous_page": true,
+        "to_next_page": true
+      },
+      "order": 2,
+      "source": {
+        "printed_page": 93,
+        "pdf_page": 94,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P093-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Sayfa üzerinde metinle birlikte fotoğraf veya illüstrasyon yer alır; ayrıntısı PDF görüntüsünde gözlenebilen sınırlar içinde betimlenmiştir.",
+      "pedagogical_role": "Sayfa düzeninde yer alan görsel destek.",
+      "source_image_count": 1,
+      "vector_shape_count": 1,
+      "order": 3,
+      "source": {
+        "printed_page": 93,
+        "pdf_page": 94,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 3,
+        "line_end": 3
+      }
+    },
+    {
+      "id": "G11-T2-P093-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P093-VIS01"
+      ],
+      "order": 4,
+      "source": {
+        "printed_page": 93,
+        "pdf_page": 94,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

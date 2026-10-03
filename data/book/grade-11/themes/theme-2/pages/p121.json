@@ -1,0 +1,182 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 121,
+  "pdf_page": 122,
+  "section": "Metin Tahlili-2 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 121,
+    "pdf_page": 122,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P121-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                                                                                                    Kültür Yolculuğu\n\n\n\n       Sıra Sizde\n\n1. “Ötüken ormanından daha iyisi hiç yokmuş. İl tutacak yer Ötüken ormanı imiş.” ifadeleriyle Bilge Kağan neyi\n   tavsiye etmektedir? Eski Türklerin konargöçer yaşam tarzını göz önünde bulundurarak Bilge Kağan’ın bu\n   görüşüne katılıp katılmadığınızı gerekçeleriyle açıklayınız.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n2. Yerleşik veya konargöçer hayat tarzının devle-\n   tin uzun ömürlü olmasına, ülkenin gelişmesine\n   etkileri hakkında düşüncelerinizi yazınız.\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n  .................................................................................................\n\n\n\n      Çözümleyebilme\n\n\n      Fark Edelim\n\n\n1. Kül Tigin Âbidesi metnindeki anlatıcının özelliklerini ve amaçlarını tespit ederek aşağıdaki ilgili alanlara\n   yazınız.\n\n                                  Özellikleri                                                                                                               Amaçları\n\n\n\n\n                                                                                                                                                                                                                     121",
+      "order": 1,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 44
+      }
+    },
+    {
+      "id": "G11-T2-P121-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-2 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P121-Q01-01",
+        "G11-T2-P121-Q02"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P121-VIS01"
+      ],
+      "order": 2,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P121-Q01-01",
+      "type": "question",
+      "question_number": "1",
+      "text": "“Ötüken ormanından daha iyisi hiç yokmuş. İl tutacak yer Ötüken ormanı imiş.” ifadeleriyle Bilge Kağan neyi tavsiye etmektedir? Eski Türklerin konargöçer yaşam tarzını göz önünde bulundurarak Bilge Kağan’ın bu görüşüne katılıp katılmadığınızı gerekçeleriyle açıklayınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P121-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 3,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 7,
+        "line_end": 12
+      }
+    },
+    {
+      "id": "G11-T2-P121-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Metin çözümlemesi için düğüm/kutu ve bağlantılardan oluşan grafik düzenleyici görülür.",
+      "pedagogical_role": "Sayfa düzeninde yer alan görsel destek.",
+      "source_image_count": 1,
+      "vector_shape_count": 59,
+      "order": 4,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 12,
+        "line_end": 12
+      }
+    },
+    {
+      "id": "G11-T2-P121-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Yerleşik veya konargöçer hayat tarzının devletin uzun ömürlü olmasına, ülkenin gelişmesine etkileri hakkında düşüncelerinizi yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P121-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 5,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 13,
+        "line_end": 35
+      }
+    },
+    {
+      "id": "G11-T2-P121-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "Çözümleyebilme",
+      "order": 6,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 30,
+        "line_end": 30
+      }
+    },
+    {
+      "id": "G11-T2-P121-H02",
+      "type": "heading",
+      "level": 2,
+      "text": "Fark Edelim",
+      "order": 7,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 33,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T2-P121-ACT02",
+      "type": "activity",
+      "title": "Fark Edelim",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P121-Q01-02"
+      ],
+      "table_ids": [],
+      "visual_ids": [],
+      "order": 8,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P121-Q01-02",
+      "type": "question",
+      "question_number": "1",
+      "text": "Kül Tigin Âbidesi metnindeki anlatıcının özelliklerini ve amaçlarını tespit ederek aşağıdaki ilgili alanlara yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P121-SRC01",
+        "G11-T2-P115-LIT01",
+        "G11-T2-P116-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 9,
+      "source": {
+        "printed_page": 121,
+        "pdf_page": 122,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 36,
+        "line_end": 44
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

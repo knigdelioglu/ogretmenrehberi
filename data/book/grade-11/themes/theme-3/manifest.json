@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "document_type": "BOOK_SOURCE_THEME_MANIFEST",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_number": 3,
+  "theme_title": "Yaşamın İzinde",
+  "source": {
+    "filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "canonicality": "PDF remains the canonical source",
+    "pdf_page_count": 313,
+    "text_layer_extraction": "Poppler pdftotext -layout; page images reviewed in a 76-page contact-sheet pass"
+  },
+  "printed_page_start": 160,
+  "printed_page_end": 235,
+  "pdf_page_start": 161,
+  "pdf_page_end": 236,
+  "page_numbering": {
+    "printed_to_pdf_offset": 1,
+    "rule": "pdf_page = printed_page + 1",
+    "verified_at_theme_boundaries": {
+      "first_theme_page": {
+        "printed_page": 160,
+        "pdf_page": 161
+      },
+      "next_theme_begins": {
+        "printed_page": 236,
+        "pdf_page": 237
+      }
+    }
+  },
+  "page_files": [
+    "pages/p160.json",
+    "pages/p161.json",
+    "pages/p162.json",
+    "pages/p163.json",
+    "pages/p164.json",
+    "pages/p165.json",
+    "pages/p166.json",
+    "pages/p167.json",
+    "pages/p168.json",
+    "pages/p169.json",
+    "pages/p170.json",
+    "pages/p171.json",
+    "pages/p172.json",
+    "pages/p173.json",
+    "pages/p174.json",
+    "pages/p175.json",
+    "pages/p176.json",
+    "pages/p177.json",
+    "pages/p178.json",
+    "pages/p179.json",
+    "pages/p180.json",
+    "pages/p181.json",
+    "pages/p182.json",
+    "pages/p183.json",
+    "pages/p184.json",
+    "pages/p185.json",
+    "pages/p186.json",
+    "pages/p187.json",
+    "pages/p188.json",
+    "pages/p189.json",
+    "pages/p190.json",
+    "pages/p191.json",
+    "pages/p192.json",
+    "pages/p193.json",
+    "pages/p194.json",
+    "pages/p195.json",
+    "pages/p196.json",
+    "pages/p197.json",
+    "pages/p198.json",
+    "pages/p199.json",
+    "pages/p200.json",
+    "pages/p201.json",
+    "pages/p202.json",
+    "pages/p203.json",
+    "pages/p204.json",
+    "pages/p205.json",
+    "pages/p206.json",
+    "pages/p207.json",
+    "pages/p208.json",
+    "pages/p209.json",
+    "pages/p210.json",
+    "pages/p211.json",
+    "pages/p212.json",
+    "pages/p213.json",
+    "pages/p214.json",
+    "pages/p215.json",
+    "pages/p216.json",
+    "pages/p217.json",
+    "pages/p218.json",
+    "pages/p219.json",
+    "pages/p220.json",
+    "pages/p221.json",
+    "pages/p222.json",
+    "pages/p223.json",
+    "pages/p224.json",
+    "pages/p225.json",
+    "pages/p226.json",
+    "pages/p227.json",
+    "pages/p228.json",
+    "pages/p229.json",
+    "pages/p230.json",
+    "pages/p231.json",
+    "pages/p232.json",
+    "pages/p233.json",
+    "pages/p234.json",
+    "pages/p235.json"
+  ],
+  "sections": [
+    {
+      "id": "theme-frame",
+      "printed_page_start": 160,
+      "printed_page_end": 164,
+      "title": "3. Tema açılışı ve temaya başlarken"
+    },
+    {
+      "id": "huzur-reading",
+      "printed_page_start": 165,
+      "printed_page_end": 194,
+      "title": "Metin Tahlili-1 (Anlama): Okuma — Huzur"
+    },
+    {
+      "id": "biography-tezkire-reading",
+      "printed_page_start": 195,
+      "printed_page_end": 210,
+      "title": "Metin Tahlili-2 (Anlama): Okuma — biyografi ve tezkire"
+    },
+    {
+      "id": "interview-speaking-workshop",
+      "printed_page_start": 211,
+      "printed_page_end": 214,
+      "title": "Edebiyat Atölyesi-1 (Anlatma): Konuşma — mülakat"
+    },
+    {
+      "id": "radio-theatre-listening",
+      "printed_page_start": 215,
+      "printed_page_end": 224,
+      "title": "Metin Tahlili-3 (Anlama): Dinleme/İzleme — radyo tiyatrosu"
+    },
+    {
+      "id": "dialogue-writing-workshop",
+      "printed_page_start": 225,
+      "printed_page_end": 229,
+      "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma"
+    },
+    {
+      "id": "theme-assessment",
+      "printed_page_start": 230,
+      "printed_page_end": 235,
+      "title": "3. Tema Ölçme ve Değerlendirme Soruları"
+    }
+  ],
+  "statistics": {
+    "pages": 76,
+    "blocks": 809,
+    "questions": 176,
+    "tables": 23,
+    "activities": 57,
+    "visuals": 53,
+    "instructions": 27,
+    "literary_text_blocks": 40
+  },
+  "extraction_policy": {
+    "answers_added": false,
+    "instruction": "Transcription and structure originate in the provided textbook PDF. Text is kept in the transcription; questions, tables, visible images, and activities are separate blocks. QR destinations not present on the printed page are not inferred."
+  },
+  "validation": {
+    "json_parse": "passed during generation",
+    "duplicate_ids": "none",
+    "references": "all local references resolve",
+    "printed_pages": "160-235 continuous",
+    "pdf_pages": "161-236 continuous",
+    "tables": "all rows have the same number of cells",
+    "scope": "all records carry theme_id theme-3"
+  }
+}

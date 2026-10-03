@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 237,
+  "pdf_page": 238,
+  "section": {
+    "id": "theme-opening",
+    "title": "Tema açılışı ve temaya başlarken"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 237,
+    "pdf_page": 238
+  },
+  "page_text": "                                             Hayatın Aynası\n\n\n\n\n                                                 Tema karekodu\n\n\n\n\n                                                 Tema sunusu\n\n\n\n\n              İlim ilim bilmekdir ilim kendin bilmekdir\n              Sen kendini bilmezsin ya niçe okumakdır\n\n                                        Yunus Emre, Divan\n\n\n\nYunus Emre\n  (Temsilî)\n                                                          237",
+  "blocks": [
+    {
+      "id": "G11-T4-P237-QUOTE01",
+      "type": "quote",
+      "order": 1,
+      "title": "Yunus Emre, Divan",
+      "source": {
+        "printed_page": 237,
+        "pdf_page": 238
+      },
+      "text": "İlim ilim bilmekdir ilim kendin bilmekdir\nSen kendini bilmezsin ya niçe okumakdır",
+      "attribution": "Yunus Emre, Divan"
+    },
+    {
+      "id": "G11-T4-P237-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Yunus Emre, Divan",
+          "alt_description": "Yuvarlak kemerli bir açıklıktan gün doğumu ve dağlık bir vadi görünür; iki karekod görselin sağ alt bölümündedir. Sayfanın alt bölümünde Yunus Emre alıntısı ve “Yunus Emre (Temsilî)” etiketi bulunur.",
+          "pedagogical_role": "Tema açılışındaki alıntı ve karekodlar."
+        }
+      ],
+      "source": {
+        "printed_page": 237,
+        "pdf_page": 238
+      }
+    }
+  ]
+}

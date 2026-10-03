@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 291,
+  "pdf_page": 292,
+  "section": {
+    "id": "theme-4-listening-viewing",
+    "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 291,
+    "pdf_page": 292
+  },
+  "page_text": "                                                                                                                                                                                      Hayatın Aynası\n\n\n10. Metindeki karakterin davranışlarından hareketle onların duygu ve düşüncelerine yönelik çıkarımlarda\n    bulununuz.\n   ...................................................................................................................................................................................................................\n   ...................................................................................................................................................................................................................\n   ...................................................................................................................................................................................................................\n   ...................................................................................................................................................................................................................\n   ...................................................................................................................................................................................................................\n   ...................................................................................................................................................................................................................\n11. Öğrenme ve kavrama sürecinde çalışkanlığın önemini de gösterecek şekilde Anadolu İnsanı / Fedakâr-\n    lık adlı çok modlu metni özetleyiniz. Yaptığınız özeti sınıfta arkadaşlarınızla paylaşınız.\n\n\n\n\n                                                                                                                                                                                                                   291",
+  "blocks": [
+    {
+      "id": "G11-T4-P291-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Not alma alanı",
+          "alt_description": "Renkli sekmeleri ve spiralli kenarı olan büyük, boş defter sayfası tasarımı görülür.",
+          "pedagogical_role": "Dinleme/izleme notları ve öğrenme günlüğü."
+        }
+      ],
+      "source": {
+        "printed_page": 291,
+        "pdf_page": 292
+      }
+    },
+    {
+      "id": "G11-T4-P291-ACT01",
+      "type": "activity",
+      "order": 4,
+      "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P291-Q01",
+        "G11-T4-P291-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "source": {
+        "printed_page": 291,
+        "pdf_page": 292
+      }
+    },
+    {
+      "id": "G11-T4-P291-Q01",
+      "type": "question",
+      "order": 4,
+      "question_number": "10",
+      "text": "Metindeki karakterin davranışlarından hareketle onların duygu ve düşüncelerine yönelik çıkarımlarda\nbulununuz.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 291,
+        "pdf_page": 292
+      }
+    },
+    {
+      "id": "G11-T4-P291-Q02",
+      "type": "question",
+      "order": 12,
+      "question_number": "11",
+      "text": "Öğrenme ve kavrama sürecinde çalışkanlığın önemini de gösterecek şekilde Anadolu İnsanı / Fedakâr-\nlık adlı çok modlu metni özetleyiniz. Yaptığınız özeti sınıfta arkadaşlarınızla paylaşınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 291,
+        "pdf_page": 292
+      }
+    }
+  ]
+}

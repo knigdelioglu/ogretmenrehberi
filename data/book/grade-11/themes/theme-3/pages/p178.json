@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 178,
+  "pdf_page": 179,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 178,
+    "pdf_page": 179,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n Huzur metni ile Mescid-i Aksa metnini aşağıdaki tabloda verilen ölçütler doğrultusunda karşılaştırınız.\n       Karşılaştırma Ölçütleri                         Huzur                                         Mescid-i Aksa\n\n                İçerik\n\n                 Tür\n\n                Şekil\n\n               Dönem\n\n              Zihniyet\n\n                Üslup\n\n                İleti\n\n\n\n\n        Karşılaştıralım\n\n      Huzur romanındaki kişilerin söz ve davranışlarından hareketle duygu ve düşüncelerine yönelik çıkarımlar yapmak üzere aşağıdaki\n      çalışmayı yapınız.\n 1. Öğretmeninizin rehberliğinde dörder kişilik okuma çemberi grupları oluşturunuz.\n 2. Okuma çemberiyle ilgili aşağıdaki şemayı inceleyiniz. Temel veya seçimlik rollerden birini seçerek rolü-\n    nüzün gerektirdiği çalışmayı yapınız. Bir sonraki okuma çemberinde farklı bir rolü seçerek çalışmanızı\n    sürdürünüz.\n                                      Okuma Çemberi Etkinliğindeki Temel Roller\n\n                                 Metinle dış dünya arasında bağlantı kurmakla görevlidir. Bu role sahip kişi, okudukla-\n         Bağ Kurucu              rı ile kendi yaşantısı veya başka topluluktaki yaşantılar arasında bağlantılar kurmaya\n                                 çalışır.\n\n\n\n                                 Metindeki başlıca bölümlerle ilgili bir görsel (kroki, çizgi karakter, diyagram vb.) çiz-\n           Ressam                mekle görevlidir. Çizimin konusu okumanın kendisine hatırlattığı bir şey veya metnin\n                                 bir ögesi (konu, karakter, olay vb.) olabilir.\n\n\n                                 Grup içinde tartışma ortamı oluşturmak için sorular hazırlamakla görevlidir. Bu kişi,\n                                 “Okurken merak ettikleriniz nelerdir, betimlenen şeylerle ilgili sorularınız var mı, şu\n         Sorgulayıcı\n                                 sözcük ne anlama geliyor?” şeklinde duygu ve düşünceleri ortaya koymaya yönelik\n                                 sorular hazırlar.\n\n\n                                 Grubuyla tartışmak amacıyla metinden bir paragraf veya cümle seçmekle görevlidir.\n           Okuma\n                                 Amacı; metindeki ilginç, gülünç, eğlenceli, şaşırtıcı ve önemli bir ifadeyi seçip diğer\n         Aydınlatıcısı\n                                 arkadaşları ile paylaşmaktır.\n\n\n\n178",
+  "blocks": [
+    {
+      "id": "G11-T3-P178-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Karşılaştıralım",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P178-Q01",
+        "G11-T3-P178-Q02"
+      ],
+      "table_ids": [
+        "G11-T3-P178-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T3-P178-TEXT01",
+        "G11-T3-P178-TEXT02",
+        "G11-T3-P178-TEXT03",
+        "G11-T3-P178-TEXT04",
+        "G11-T3-P178-TEXT05",
+        "G11-T3-P178-TEXT06",
+        "G11-T3-P178-TEXT07",
+        "G11-T3-P178-TEXT08",
+        "G11-T3-P178-TEXT09",
+        "G11-T3-P178-TEXT10",
+        "G11-T3-P178-TEXT11",
+        "G11-T3-P178-TEXT12",
+        "G11-T3-P178-TEXT13",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P178-VIS01"
+      ],
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179
+      }
+    },
+    {
+      "id": "G11-T3-P178-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Four reading-circle role cards appear below the Huzur/Mescid-i Aksa comparison table; the visible labels are Bağ Kurucu, Ressam, Sorgulayıcı and Okuma Aydınlatıcısı.",
+      "alt_description": "Four reading-circle role cards appear below the Huzur/Mescid-i Aksa comparison table; the visible labels are Bağ Kurucu, Ressam, Sorgulayıcı and Okuma Aydınlatıcısı.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179
+      }
+    },
+    {
+      "id": "G11-T3-P178-TABLE01",
+      "type": "table",
+      "order": 3,
+      "text": "Huzur ve Mescid-i Aksa karşılaştırma tablosu",
+      "columns": [
+        "Karşılaştırma Ölçütleri",
+        "Huzur",
+        "Mescid-i Aksa"
+      ],
+      "rows": [
+        [
+          "İçerik",
+          "",
+          ""
+        ],
+        [
+          "Tür",
+          "",
+          ""
+        ],
+        [
+          "Şekil",
+          "",
+          ""
+        ],
+        [
+          "Dönem",
+          "",
+          ""
+        ],
+        [
+          "Zihniyet",
+          "",
+          ""
+        ],
+        [
+          "Üslup",
+          "",
+          ""
+        ],
+        [
+          "İleti",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 3,
+        "line_end": 58
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P178-TEXT01",
+      "type": "paragraph",
+      "order": 4,
+      "text": "Huzur metni ile Mescid-i Aksa metnini aşağıdaki tabloda verilen ölçütler doğrultusunda karşılaştırınız. Karşılaştırma Ölçütleri Huzur Mescid-i Aksa",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 3,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT02",
+      "type": "paragraph",
+      "order": 5,
+      "text": "İçerik",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 6,
+        "line_end": 6
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT03",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Tür",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 8,
+        "line_end": 8
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT04",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Şekil",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT05",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Dönem",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 12,
+        "line_end": 12
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT06",
+      "type": "paragraph",
+      "order": 9,
+      "text": "Zihniyet",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 14,
+        "line_end": 14
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT07",
+      "type": "paragraph",
+      "order": 10,
+      "text": "Üslup",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 16,
+        "line_end": 16
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT08",
+      "type": "paragraph",
+      "order": 11,
+      "text": "İleti",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 18,
+        "line_end": 18
+      }
+    },
+    {
+      "id": "G11-T3-P178-H01",
+      "type": "heading",
+      "order": 12,
+      "text": "Karşılaştıralım",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 23,
+        "line_end": 23
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT09",
+      "type": "paragraph",
+      "order": 13,
+      "text": "Huzur romanındaki kişilerin söz ve davranışlarından hareketle duygu ve düşüncelerine yönelik çıkarımlar yapmak üzere aşağıdaki çalışmayı yapınız.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 25,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T3-P178-Q01",
+      "type": "question",
+      "order": 14,
+      "text": "Öğretmeninizin rehberliğinde dörder kişilik okuma çemberi grupları oluşturunuz.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 27,
+        "line_end": 27
+      },
+      "question_number": "1",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P178-TEXT01",
+        "G11-T3-P178-TEXT02",
+        "G11-T3-P178-TEXT03",
+        "G11-T3-P178-TEXT04",
+        "G11-T3-P178-TEXT05",
+        "G11-T3-P178-TEXT06",
+        "G11-T3-P178-TEXT07",
+        "G11-T3-P178-TEXT08",
+        "G11-T3-P178-TEXT09",
+        "G11-T3-P178-TEXT10",
+        "G11-T3-P178-TEXT11",
+        "G11-T3-P178-TEXT12",
+        "G11-T3-P178-TEXT13",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P178-TABLE01"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P178-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P178-Q02",
+      "type": "question",
+      "order": 15,
+      "text": "Okuma çemberiyle ilgili aşağıdaki şemayı inceleyiniz. Temel veya seçimlik rollerden birini seçerek rolünüzün gerektirdiği çalışmayı yapınız. Bir sonraki okuma çemberinde farklı bir rolü seçerek çalışmanızı sürdürünüz. Okuma Çemberi Etkinliğindeki Temel Roller",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 28,
+        "line_end": 31
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P178-TEXT01",
+        "G11-T3-P178-TEXT02",
+        "G11-T3-P178-TEXT03",
+        "G11-T3-P178-TEXT04",
+        "G11-T3-P178-TEXT05",
+        "G11-T3-P178-TEXT06",
+        "G11-T3-P178-TEXT07",
+        "G11-T3-P178-TEXT08",
+        "G11-T3-P178-TEXT09",
+        "G11-T3-P178-TEXT10",
+        "G11-T3-P178-TEXT11",
+        "G11-T3-P178-TEXT12",
+        "G11-T3-P178-TEXT13",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P178-TABLE01"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P178-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P178-TEXT10",
+      "type": "paragraph",
+      "order": 16,
+      "text": "Metinle dış dünya arasında bağlantı kurmakla görevlidir. Bu role sahip kişi, okudukla- Bağ Kurucu rı ile kendi yaşantısı veya başka topluluktaki yaşantılar arasında bağlantılar kurmaya çalışır.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 33,
+        "line_end": 35
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT11",
+      "type": "paragraph",
+      "order": 17,
+      "text": "Metindeki başlıca bölümlerle ilgili bir görsel (kroki, çizgi karakter, diyagram vb.) çiz- Ressam mekle görevlidir. Çizimin konusu okumanın kendisine hatırlattığı bir şey veya metnin bir ögesi (konu, karakter, olay vb.) olabilir.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 39,
+        "line_end": 41
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT12",
+      "type": "paragraph",
+      "order": 18,
+      "text": "Grup içinde tartışma ortamı oluşturmak için sorular hazırlamakla görevlidir. Bu kişi, “Okurken merak ettikleriniz nelerdir, betimlenen şeylerle ilgili sorularınız var mı, şu Sorgulayıcı sözcük ne anlama geliyor?” şeklinde duygu ve düşünceleri ortaya koymaya yönelik sorular hazırlar.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 44,
+        "line_end": 48
+      }
+    },
+    {
+      "id": "G11-T3-P178-TEXT13",
+      "type": "paragraph",
+      "order": 19,
+      "text": "Grubuyla tartışmak amacıyla metinden bir paragraf veya cümle seçmekle görevlidir. Okuma Amacı; metindeki ilginç, gülünç, eğlenceli, şaşırtıcı ve önemli bir ifadeyi seçip diğer Aydınlatıcısı arkadaşları ile paylaşmaktır.",
+      "source": {
+        "printed_page": 178,
+        "pdf_page": 179,
+        "line_start": 51,
+        "line_end": 55
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 267,
+  "pdf_page": 268,
+  "section": {
+    "id": "theme-4-reading-merdiven",
+    "title": "Metin Tahlili-2 (Anlama): Okuma — Merdiven"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 267,
+    "pdf_page": 268
+  },
+  "page_text": "                                                                                              Hayatın Aynası\n\n\n\n\n                                  Tahminim               kanı(mca)      Önerim\n\n\n\n\n                                  Tahminim               gereksinme     Önerim\n\n\n\n\n                                  Tahminim               yol vermek     Önerim\n\n\n\n\n                                  Tahminim               duralamak      Önerim\n\n\n\n\n3. Önerdiğiniz kelimeler / kelime grupları, cümlenin anlamında bir değişikliğe sebep oldu mu? Niçin?\n4. Aşağıdaki cümlelerde altı çizili kelimeleri / kelime gruplarını farklı anlamlara gelecek şekilde cümle için-\n   de kullanınız.\n\n\n  Çabuk çabuk çıkıyorum merdivenlerden.\n\n\n\n\n  Bu kez bana yol veriliyor.\n\n\n\n  Biraz sonra, yukarı katta işimi bitirmiş, aynı hızla\n  merdivenlerden iniyorum.\n\n\n\n  Ama kanımca, bir cenaze arabası çağırmak daha\n  yerinde olurdu.\n\n\n\n  Ne işim var benim yukarda?\n\n\n\n\n                                                                                                             267",
+  "blocks": [
+    {
+      "id": "G11-T4-P267-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Tahminim / Önerim",
+          "alt_description": "Kanı(mca), gereksinme, yol vermek ve duralamak sözcüklerini tahmin ve önerilerle eşleştiren karşılıklı ok biçimli renkli şemalar bulunur.",
+          "pedagogical_role": "Söz varlığı ve bağlam çalışması."
+        }
+      ],
+      "source": {
+        "printed_page": 267,
+        "pdf_page": 268
+      }
+    },
+    {
+      "id": "G11-T4-P267-TABLE01",
+      "type": "table",
+      "order": 6,
+      "title": "Tahminim / Kelime veya kelime grubu / Önerim",
+      "columns": [
+        "Tahminim",
+        "Kelime / Kelime Grubu",
+        "Önerim"
+      ],
+      "rows": [
+        [
+          "",
+          "kanı(mca)",
+          ""
+        ],
+        [
+          "",
+          "gereksinme",
+          ""
+        ],
+        [
+          "",
+          "yol vermek",
+          ""
+        ],
+        [
+          "",
+          "duralamak",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 267,
+        "pdf_page": 268
+      }
+    },
+    {
+      "id": "G11-T4-P267-ACT01",
+      "type": "activity",
+      "order": 26,
+      "title": "Metin Tahlili-2 (Anlama): Okuma — Merdiven",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P267-Q01",
+        "G11-T4-P267-Q02"
+      ],
+      "table_ids": [
+        "G11-T4-P267-TABLE01"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 267,
+        "pdf_page": 268
+      }
+    },
+    {
+      "id": "G11-T4-P267-Q01",
+      "type": "question",
+      "order": 26,
+      "question_number": "3",
+      "text": "Önerdiğiniz kelimeler / kelime grupları, cümlenin anlamında bir değişikliğe sebep oldu mu? Niçin?",
+      "instruction_id": null,
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 267,
+        "pdf_page": 268
+      }
+    },
+    {
+      "id": "G11-T4-P267-Q02",
+      "type": "question",
+      "order": 27,
+      "question_number": "4",
+      "text": "Aşağıdaki cümlelerde altı çizili kelimeleri / kelime gruplarını farklı anlamlara gelecek şekilde cümle için-\nde kullanınız.",
+      "instruction_id": null,
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 267,
+        "pdf_page": 268
+      }
+    }
+  ]
+}

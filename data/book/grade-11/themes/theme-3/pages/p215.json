@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 215,
+  "pdf_page": 216,
+  "section": "metin-tahlili-3-dinleme-izleme",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 215,
+    "pdf_page": 216,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n\n                    METİN TAHLİLİ-3 (ANLAMA)\n     DİNLEME / İZLEME\n      Konuya Başlarken\n     Aşağıdaki görsellerden ve metinden yararlanarak soruları cevaplayınız.\n\n\n\n\n                                    Kaybolan Bir Program Formatı: Radyo Tiyatrosu\n     Radyo Tiyatrosu edebiyat ve tiyatro sanatından beslenen kendine özgü sanatsal bir anlatı formudur. Radyo\n     tiyatrosu, televizyonun yaygınlaşmadığı dönemlerde, insanlar tarafından beğeniyle izlenen bir radyo program\n     türüydü (formatıydı).\n     1940’lı yıllardan itibaren Türkiye’de de radyo tiyatrosu bir devlet kurumu olan TRT radyolarında yüksek sayıda\n     üretiliyor, yayınlanıyor ve beğeniyle dinleniyordu. Klasik edebiyat yapıtlarından uyarlamalar yapıldığı gibi, öz-\n     gün radyo oyunları da yazılıyordu.\n     Televizyonun Türkiye’de yaygınlaşması ve popüler kültürün topluma egemen olması sonucunda, radyo tiyatro-\n     sunun yazılması, üretimi ve dinlenme oranları çok belirgin bir biçimde düştü.\n     (…)\n     Türkiye’de özellikle 1980’li yıllardan sonra radyo tiyatrosu formatına dinleyici ilgisinin azaldığı, radyolarda bu\n     türün prodüksiyonunun önemini yitirdiği, radyo tiyatrosunun hem kısa tarihinden, hem de yapılan alan araştır-\n     masının sonuçlarından anlaşılmaktadır.\n     Radyo oyununun Türkiye’deki kısa tarihinde ünlü romancı, öykücü ve şairlerin radyo oyunu yazdıkları dönemde\n     bu türün değer kazandığı görülmektedir.\n     1980’lerden sonra Türkiye’de ticari radyo ve televizyonların yayına başlamasından sonra, reklam alma yarışı ve\n     ticari kaygılar eğlence ağırlıklı yayınların yaygınlık kazanmasına neden olmuştur. Kapitalizmin daha çok tüket-\n     mek üzerine kurulu sistemi, dinleyiciye edebiyat zevki aşılayan radyo tiyatrosu formatını da tüketen başlıca\n     etkenlerden biri olmuştur. Neil Postman’ın (Niyl Postmen) da belirttiği gibi, televizyonun kültürü şekillendirdiği\n     mi, yoksa yalnızca yansıttığı mı sorusu ilginçliğini kaybetmiştir. Çünkü televizyon zamanla bizim kültürümüz\n     haline gelmiştir.\n                                                   Özden Cankaya, Kaybolan Bir Program Formatı: Radyo Tiyatrosu\n\n     1. Radyo tiyatrosuna dinleyici ilgisinin azalması hakkındaki düşünceleriniz nelerdir?\n     2. Edebî ve estetik kaygıların ortadan kalkmasının sonuçları neler olabilir?\n\n\t\t\n     3. Radyo tiyatroları ve televizyon programlarını hayal gücümüzü beslemesi yönüyle karşılaştırınız.\n\n\n\n                                                                                                                      215",
+  "blocks": [
+    {
+      "id": "G11-T3-P215-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "METİN TAHLİLİ-3 (ANLAMA)",
+      "instruction_ids": [
+        "G11-T3-P215-INST01"
+      ],
+      "question_ids": [
+        "G11-T3-P215-Q01",
+        "G11-T3-P215-Q02",
+        "G11-T3-P215-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P215-TEXT01",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "visual_ids": [
+        "G11-T3-P215-VIS01"
+      ],
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216
+      }
+    },
+    {
+      "id": "G11-T3-P215-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Photographs of headphones resting on books and a hand turning pages, above the radio-theatre background text.",
+      "alt_description": "Photographs of headphones resting on books and a hand turning pages, above the radio-theatre background text.",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216
+      }
+    },
+    {
+      "id": "G11-T3-P215-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "METİN TAHLİLİ-3 (ANLAMA)",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P215-H02",
+      "type": "heading",
+      "order": 4,
+      "text": "DİNLEME / İZLEME",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P215-H03",
+      "type": "heading",
+      "order": 5,
+      "text": "Konuya Başlarken",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 6,
+        "line_end": 6
+      }
+    },
+    {
+      "id": "G11-T3-P215-INST01",
+      "type": "instruction",
+      "order": 6,
+      "text": "Aşağıdaki görsellerden ve metinden yararlanarak soruları cevaplayınız.",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 7,
+        "line_end": 7
+      }
+    },
+    {
+      "id": "G11-T3-P215-TEXT01",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Kaybolan Bir Program Formatı: Radyo Tiyatrosu Radyo Tiyatrosu edebiyat ve tiyatro sanatından beslenen kendine özgü sanatsal bir anlatı formudur. Radyo tiyatrosu, televizyonun yaygınlaşmadığı dönemlerde, insanlar tarafından beğeniyle izlenen bir radyo program türüydü (formatıydı). 1940’lı yıllardan itibaren Türkiye’de de radyo tiyatrosu bir devlet kurumu olan TRT radyolarında yüksek sayıda üretiliyor, yayınlanıyor ve beğeniyle dinleniyordu. Klasik edebiyat yapıtlarından uyarlamalar yapıldığı gibi, özgün radyo oyunları da yazılıyordu. Televizyonun Türkiye’de yaygınlaşması ve popüler kültürün topluma egemen olması sonucunda, radyo tiyatrosunun yazılması, üretimi ve dinlenme oranları çok belirgin bir biçimde düştü. (…) Türkiye’de özellikle 1980’li yıllardan sonra radyo tiyatrosu formatına dinleyici ilgisinin azaldığı, radyolarda bu türün prodüksiyonunun önemini yitirdiği, radyo tiyatrosunun hem kısa tarihinden, hem de yapılan alan araştırmasının sonuçlarından anlaşılmaktadır. Radyo oyununun Türkiye’deki kısa tarihinde ünlü romancı, öykücü ve şairlerin radyo oyunu yazdıkları dönemde bu türün değer kazandığı görülmektedir. 1980’lerden sonra Türkiye’de ticari radyo ve televizyonların yayına başlamasından sonra, reklam alma yarışı ve ticari kaygılar eğlence ağırlıklı yayınların yaygınlık kazanmasına neden olmuştur. Kapitalizmin daha çok tüketmek üzerine kurulu sistemi, dinleyiciye edebiyat zevki aşılayan radyo tiyatrosu formatını da tüketen başlıca etkenlerden biri olmuştur. Neil Postman’ın (Niyl Postmen) da belirttiği gibi, televizyonun kültürü şekillendirdiği mi, yoksa yalnızca yansıttığı mı sorusu ilginçliğini kaybetmiştir. Çünkü televizyon zamanla bizim kültürümüz haline gelmiştir. Özden Cankaya, Kaybolan Bir Program Formatı: Radyo Tiyatrosu",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 12,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T3-P215-Q01",
+      "type": "question",
+      "order": 8,
+      "text": "Radyo tiyatrosuna dinleyici ilgisinin azalması hakkındaki düşünceleriniz nelerdir?",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 35,
+        "line_end": 35
+      },
+      "question_number": "1",
+      "instruction_id": "G11-T3-P215-INST01",
+      "related_text_ids": [
+        "G11-T3-P215-TEXT01",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P215-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P215-Q02",
+      "type": "question",
+      "order": 9,
+      "text": "Edebî ve estetik kaygıların ortadan kalkmasının sonuçları neler olabilir?",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 36,
+        "line_end": 36
+      },
+      "question_number": "2",
+      "instruction_id": "G11-T3-P215-INST01",
+      "related_text_ids": [
+        "G11-T3-P215-TEXT01",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P215-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P215-Q03",
+      "type": "question",
+      "order": 10,
+      "text": "Radyo tiyatroları ve televizyon programlarını hayal gücümüzü beslemesi yönüyle karşılaştırınız.",
+      "source": {
+        "printed_page": 215,
+        "pdf_page": 216,
+        "line_start": 39,
+        "line_end": 39
+      },
+      "question_number": "3",
+      "instruction_id": "G11-T3-P215-INST01",
+      "related_text_ids": [
+        "G11-T3-P215-TEXT01",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P215-VIS01"
+      ]
+    }
+  ]
+}

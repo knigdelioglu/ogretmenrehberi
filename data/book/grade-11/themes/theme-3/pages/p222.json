@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 222,
+  "pdf_page": 223,
+  "section": "metin-tahlili-3-dinleme-izleme",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 222,
+    "pdf_page": 223,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n\n      Sıra Sizde\n\n\n Aşağıdaki adımları öğretmeninizin rehberliğinde “görüş geliştirme” tekniği çerçevesinde uygulayınız.\n\n 1. Tahtada yazılı olan “Dinlenen metinde millî\n    ve manevi değerleri yansıtan unsurlar arasın-\n    daki etkileşimlerin metnin iletilerinin ortaya\n    çıkarılmasında önemli bir işlevi vardır.” görüşü\n    üzerinde bir süre düşününüz.\n 2. Kartlara ‘’Kesinlikle katılıyorum’’, ‘’Katılıyorum’’,\n    ‘’Kararsızım’’, ‘’Katılmıyorum’’ ve ‘’Kesinlikle ka-\n    tılmıyorum’’ ifadelerini yazarak sınıfın farklı\n    noktalarına yerleştiriniz.\n 3. Verilen görüşe katılma derecenizi ifade eden\n    kartların etrafında toplanarak görüşünüzün\n    gerekçelerini ifade ediniz.\n 4. Farklı görüşlerdeki arkadaşlarınızın gerekçelerini saygıyla dinleyerek önceki görüşünüzü gözden geçi-\n    riniz ve farklı bir görüşe ikna olduysanız görüşlerinizi açıklayınız.\n 5. Elde ettiğiniz sonuçları yansıtmak üzere aşağıdakine benzer kavram haritaları hazırlayınız.\n\n\n                                             Değerlerin Metnin İletilerine Etkileri\n\n\n\n\n                 İnsan ilişkilerinde saygı\n                                                     Saygı\n                          esastır.\n\n\n\n\n                                                                       Vatanseverlik\n\n\n\n\n                                                    Duyarlılık\n\n\n\n\n                                                                         Hoşgörü\n\n\n\n\n                                                      Aile\n                                                   Bütünlüğü\n\n\n\n\n222",
+  "blocks": [
+    {
+      "id": "G11-T3-P222-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Sıra Sizde",
+      "instruction_ids": [
+        "G11-T3-P222-INST01"
+      ],
+      "question_ids": [
+        "G11-T3-P222-Q01",
+        "G11-T3-P222-Q02",
+        "G11-T3-P222-Q03",
+        "G11-T3-P222-Q04",
+        "G11-T3-P222-Q05"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P222-TEXT01",
+        "G11-T3-P222-TEXT02",
+        "G11-T3-P222-TEXT03",
+        "G11-T3-P222-TEXT04",
+        "G11-T3-P222-TEXT05",
+        "G11-T3-P222-TEXT06",
+        "G11-T3-P222-TEXT07",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "visual_ids": [
+        "G11-T3-P222-VIS01"
+      ],
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223
+      }
+    },
+    {
+      "id": "G11-T3-P222-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Illustration of four people with speech bubbles beside a colored discussion/value map.",
+      "alt_description": "Illustration of four people with speech bubbles beside a colored discussion/value map.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223
+      }
+    },
+    {
+      "id": "G11-T3-P222-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Sıra Sizde",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P222-INST01",
+      "type": "instruction",
+      "order": 4,
+      "text": "Aşağıdaki adımları öğretmeninizin rehberliğinde “görüş geliştirme” tekniği çerçevesinde uygulayınız.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 7,
+        "line_end": 7
+      }
+    },
+    {
+      "id": "G11-T3-P222-TEXT01",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Aşağıdaki adımları öğretmeninizin rehberliğinde “görüş geliştirme” tekniği çerçevesinde uygulayınız.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 7,
+        "line_end": 7
+      }
+    },
+    {
+      "id": "G11-T3-P222-Q01",
+      "type": "question",
+      "order": 6,
+      "text": "Tahtada yazılı olan “Dinlenen metinde millî ve manevi değerleri yansıtan unsurlar arasındaki etkileşimlerin metnin iletilerinin ortaya çıkarılmasında önemli bir işlevi vardır.” görüşü üzerinde bir süre düşününüz.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 9,
+        "line_end": 13
+      },
+      "question_number": "1",
+      "instruction_id": "G11-T3-P222-INST01",
+      "related_text_ids": [
+        "G11-T3-P222-TEXT01",
+        "G11-T3-P222-TEXT02",
+        "G11-T3-P222-TEXT03",
+        "G11-T3-P222-TEXT04",
+        "G11-T3-P222-TEXT05",
+        "G11-T3-P222-TEXT06",
+        "G11-T3-P222-TEXT07",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P222-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P222-Q02",
+      "type": "question",
+      "order": 7,
+      "text": "Kartlara ‘’Kesinlikle katılıyorum’’, ‘’Katılıyorum’’, ‘’Kararsızım’’, ‘’Katılmıyorum’’ ve ‘’Kesinlikle katılmıyorum’’ ifadelerini yazarak sınıfın farklı noktalarına yerleştiriniz.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 14,
+        "line_end": 17
+      },
+      "question_number": "2",
+      "instruction_id": "G11-T3-P222-INST01",
+      "related_text_ids": [
+        "G11-T3-P222-TEXT01",
+        "G11-T3-P222-TEXT02",
+        "G11-T3-P222-TEXT03",
+        "G11-T3-P222-TEXT04",
+        "G11-T3-P222-TEXT05",
+        "G11-T3-P222-TEXT06",
+        "G11-T3-P222-TEXT07",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P222-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P222-Q03",
+      "type": "question",
+      "order": 8,
+      "text": "Verilen görüşe katılma derecenizi ifade eden kartların etrafında toplanarak görüşünüzün gerekçelerini ifade ediniz.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 18,
+        "line_end": 20
+      },
+      "question_number": "3",
+      "instruction_id": "G11-T3-P222-INST01",
+      "related_text_ids": [
+        "G11-T3-P222-TEXT01",
+        "G11-T3-P222-TEXT02",
+        "G11-T3-P222-TEXT03",
+        "G11-T3-P222-TEXT04",
+        "G11-T3-P222-TEXT05",
+        "G11-T3-P222-TEXT06",
+        "G11-T3-P222-TEXT07",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P222-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P222-Q04",
+      "type": "question",
+      "order": 9,
+      "text": "Farklı görüşlerdeki arkadaşlarınızın gerekçelerini saygıyla dinleyerek önceki görüşünüzü gözden geçiriniz ve farklı bir görüşe ikna olduysanız görüşlerinizi açıklayınız.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 21,
+        "line_end": 22
+      },
+      "question_number": "4",
+      "instruction_id": "G11-T3-P222-INST01",
+      "related_text_ids": [
+        "G11-T3-P222-TEXT01",
+        "G11-T3-P222-TEXT02",
+        "G11-T3-P222-TEXT03",
+        "G11-T3-P222-TEXT04",
+        "G11-T3-P222-TEXT05",
+        "G11-T3-P222-TEXT06",
+        "G11-T3-P222-TEXT07",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P222-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P222-Q05",
+      "type": "question",
+      "order": 10,
+      "text": "Elde ettiğiniz sonuçları yansıtmak üzere aşağıdakine benzer kavram haritaları hazırlayınız.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 23,
+        "line_end": 23
+      },
+      "question_number": "5",
+      "instruction_id": "G11-T3-P222-INST01",
+      "related_text_ids": [
+        "G11-T3-P222-TEXT01",
+        "G11-T3-P222-TEXT02",
+        "G11-T3-P222-TEXT03",
+        "G11-T3-P222-TEXT04",
+        "G11-T3-P222-TEXT05",
+        "G11-T3-P222-TEXT06",
+        "G11-T3-P222-TEXT07",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P222-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P222-TEXT02",
+      "type": "paragraph",
+      "order": 11,
+      "text": "Değerlerin Metnin İletilerine Etkileri",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 26,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T3-P222-TEXT03",
+      "type": "paragraph",
+      "order": 12,
+      "text": "İnsan ilişkilerinde saygı Saygı esastır.",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 31,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T3-P222-TEXT04",
+      "type": "paragraph",
+      "order": 13,
+      "text": "Vatanseverlik",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 38,
+        "line_end": 38
+      }
+    },
+    {
+      "id": "G11-T3-P222-TEXT05",
+      "type": "paragraph",
+      "order": 14,
+      "text": "Duyarlılık",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 43,
+        "line_end": 43
+      }
+    },
+    {
+      "id": "G11-T3-P222-TEXT06",
+      "type": "paragraph",
+      "order": 15,
+      "text": "Hoşgörü",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 48,
+        "line_end": 48
+      }
+    },
+    {
+      "id": "G11-T3-P222-TEXT07",
+      "type": "paragraph",
+      "order": 16,
+      "text": "Aile Bütünlüğü",
+      "source": {
+        "printed_page": 222,
+        "pdf_page": 223,
+        "line_start": 53,
+        "line_end": 54
+      }
+    }
+  ]
+}

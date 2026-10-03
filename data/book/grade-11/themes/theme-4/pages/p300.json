@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 300,
+  "pdf_page": 301,
+  "section": {
+    "id": "theme-4-writing",
+    "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 300,
+    "pdf_page": 301
+  },
+  "page_text": "  4. Tema\n\n\n      İçerik Oluşturabilme\n\n Aşağıdaki basamakları takip ederek afişi hazırlayınız.\n a) Çevrenizdeki reklam panolarından, tiyatro ve film afişlerinden fayda-\n    lanarak hazırlayacağınız afişte neleri kullanacağınıza yönelik olarak\n    arkadaşlarınızla fikir alışverişinde bulununuz.\n                                                                                  Afiş Hazırlama Basamakları\n b) Hazırlayacağınız afişin etkileyiciliğini artırmak için afişte kullanacağı-      videosuna karekoddan\n    nız renkleri, yazıları ve görsel unsurları belirleyiniz.                             ulaşabilirsiniz.\n\n\n\n\n c) Belgeselde yer alan iletilerden hangisini ön plana çıkaracağınızı, hangisine yönelik afiş hazırlayacağınızı\n    belirlemek üzere aşağıdaki tabloyu tamamlayınız.\n\n                                                          Belgeseldeki İletiler\n\n\n\n\n300",
+  "blocks": [
+    {
+      "id": "G11-T4-P300-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Belgeseldeki İletiler; Afiş Hazırlama Basamakları",
+          "alt_description": "Kırtasiye malzemeleri fotoğrafı, QR kod ve iletileri sıralamak için renkli boş yatay alanlar görülür.",
+          "pedagogical_role": "Belgesel iletilerinden afiş taslağı oluşturma."
+        }
+      ],
+      "source": {
+        "printed_page": 300,
+        "pdf_page": 301
+      }
+    },
+    {
+      "id": "G11-T4-P300-ACT01",
+      "type": "activity",
+      "order": 6,
+      "title": "Edebiyat Atölyesi-2 (Anlatma): Yazma",
+      "instruction_ids": [
+        "G11-T4-P300-INST01",
+        "G11-T4-P300-INST02",
+        "G11-T4-P300-INST03",
+        "G11-T4-P300-INST04"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 300,
+        "pdf_page": 301
+      }
+    },
+    {
+      "id": "G11-T4-P300-INST01",
+      "type": "instruction",
+      "order": 6,
+      "text": "Aşağıdaki basamakları takip ederek afişi hazırlayınız.",
+      "source": {
+        "printed_page": 300,
+        "pdf_page": 301
+      }
+    },
+    {
+      "id": "G11-T4-P300-INST02",
+      "type": "instruction",
+      "order": 7,
+      "step_label": "a",
+      "text": "Çevrenizdeki reklam panolarından, tiyatro ve film afişlerinden fayda-",
+      "source": {
+        "printed_page": 300,
+        "pdf_page": 301
+      }
+    },
+    {
+      "id": "G11-T4-P300-INST03",
+      "type": "instruction",
+      "order": 11,
+      "step_label": "b",
+      "text": "Hazırlayacağınız afişin etkileyiciliğini artırmak için afişte kullanacağı-      videosuna karekoddan",
+      "source": {
+        "printed_page": 300,
+        "pdf_page": 301
+      }
+    },
+    {
+      "id": "G11-T4-P300-INST04",
+      "type": "instruction",
+      "order": 17,
+      "step_label": "c",
+      "text": "Belgeselde yer alan iletilerden hangisini ön plana çıkaracağınızı, hangisine yönelik afiş hazırlayacağınızı",
+      "source": {
+        "printed_page": 300,
+        "pdf_page": 301
+      }
+    }
+  ]
+}

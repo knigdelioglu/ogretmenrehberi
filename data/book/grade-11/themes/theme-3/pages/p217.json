@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 217,
+  "pdf_page": 218,
+  "section": "metin-tahlili-3-dinleme-izleme",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 217,
+    "pdf_page": 218,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n\n\n    Anlam Oluşturabilme\n\n\n    Söz Varlığımız\n\n\n1. Direnişin Ustaları adlı çok modlu metinde geçen bazı kelime ve kelime\n   grupları aşağıdaki kelime duvarında verilmiştir. Bağlamdan hareketle bun-\n   ların anlamlarına yönelik tahminlerinizi ilgili yerlere yazınız. Tahminlerini-\n   zin doğruluğunu yandaki karekod yardımıyla TDK Güncel Türkçe Sözlük’ten\n   kontrol ediniz.\n2. Dinlediğiniz / izlediğiniz çok modlu metinde geçen bu kelime ve kelime\n   gruplarının yerine metnin bağlamını bozmayacak şekilde varsa başka han-                TDK Güncel Türkçe\n   gi kelime ve kelime grupları kullanılabileceğine yönelik önerilerinizi ilgili         Sözlük’e karekoddan\n   yerlere yazınız.                                                                         ulaşabilirsiniz.\n\n\n\n\n              direniş                                ihbar                                      torna\n  Tahminim:                              Tahminim:                                  Tahminim:\n\n\n\n  Önerim:                                Önerim:                                    Önerim:\n\n\n\n\n                                                                                                                   217",
+  "blocks": [
+    {
+      "id": "G11-T3-P217-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Anlam Oluşturabilme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P217-Q01",
+        "G11-T3-P217-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P217-TEXT01",
+        "G11-T3-P217-TEXT02",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "visual_ids": [
+        "G11-T3-P217-VIS01"
+      ],
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218
+      }
+    },
+    {
+      "id": "G11-T3-P217-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Vocabulary “word wall” cards with writing fields and a printed QR code.",
+      "alt_description": "Vocabulary “word wall” cards with writing fields and a printed QR code.",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218
+      },
+      "source_note": "Kod içeriği/dış hedef PDF sayfasından okunmadı."
+    },
+    {
+      "id": "G11-T3-P217-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Anlam Oluşturabilme",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P217-H02",
+      "type": "heading",
+      "order": 4,
+      "text": "Söz Varlığımız",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218,
+        "line_start": 8,
+        "line_end": 8
+      }
+    },
+    {
+      "id": "G11-T3-P217-Q01",
+      "type": "question",
+      "order": 5,
+      "text": "Direnişin Ustaları adlı çok modlu metinde geçen bazı kelime ve kelime grupları aşağıdaki kelime duvarında verilmiştir. Bağlamdan hareketle bunların anlamlarına yönelik tahminlerinizi ilgili yerlere yazınız. Tahminlerinizin doğruluğunu yandaki karekod yardımıyla TDK Güncel Türkçe Sözlük’ten kontrol ediniz.",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218,
+        "line_start": 11,
+        "line_end": 15
+      },
+      "question_number": "1",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P217-TEXT01",
+        "G11-T3-P217-TEXT02",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P217-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P217-Q02",
+      "type": "question",
+      "order": 6,
+      "text": "Dinlediğiniz / izlediğiniz çok modlu metinde geçen bu kelime ve kelime gruplarının yerine metnin bağlamını bozmayacak şekilde varsa başka han- TDK Güncel Türkçe gi kelime ve kelime grupları kullanılabileceğine yönelik önerilerinizi ilgili Sözlük’e karekoddan yerlere yazınız. ulaşabilirsiniz.",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218,
+        "line_start": 16,
+        "line_end": 19
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P217-TEXT01",
+        "G11-T3-P217-TEXT02",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P217-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P217-TEXT01",
+      "type": "paragraph",
+      "order": 7,
+      "text": "direniş ihbar torna Tahminim: Tahminim: Tahminim:",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218,
+        "line_start": 24,
+        "line_end": 25
+      }
+    },
+    {
+      "id": "G11-T3-P217-TEXT02",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Önerim: Önerim: Önerim:",
+      "source": {
+        "printed_page": 217,
+        "pdf_page": 218,
+        "line_start": 29,
+        "line_end": 29
+      }
+    }
+  ]
+}

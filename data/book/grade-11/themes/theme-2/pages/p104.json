@@ -1,0 +1,197 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 104,
+  "pdf_page": 105,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 104,
+    "pdf_page": 105,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P104-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "  2. Tema\n\n\n 3. Aşağıda verilen örneklerdeki fiillerin nesnesine göre çatı özelliklerini tespit ederek bu fiilleri tablodaki\n    ilgili alanlara yazınız.\n\n                                         Örnekler                                                          Geçişli                      Geçişsiz                    Oldurgan                        Ettirgen\n\n  Özining ölmez etining ölür.\n\n\n  Büyük ak çadırını kara yerin üzerine diktirmişti.\n\n\n  Dedem Korkut himmet kılıcını beline bağladı,\n  çomağı omuzuna bıraktı.\n\n  İnsan daldı sulara, aldı bir avuç toprak\n  Sulardan çıkıp verdi, Tanrısına sunarak.\n\n  Kaşgar’daki Çinliyi ta Turfan’a sürdürdü\n  Turfan’daki Çinliyi Aksu’ya dek püskürttü.\n\n  Kalkıp Kanturalı yerinden doğruldun, geldin,\n  Yelesi kara kazılık atına çabucak bindin.\n\n\n\n Dönüşünde onlarla ilgili pek az şey anlatır, kadın da hiç üstelemezdi. Böyle hallerde üvey ana hiçbir şeye karış-\n mamalıydı. Her halde herkes için en iyisi buydu, işte biraz da bu yüzden ihtiyarın o tuhaf kararını kabul etmek\n zorunda kalmıştı. Sonra düşündü ve şu sonuca vardı: “Belki hasret hastasıdır, bir özlem acısıdır bu. Varsın gitsin,\n yüreğini biraz rahatlatır, üzüntüsünün hafiflediğini hisseder...”\n\n 4. Yukarıdaki parçada yer alan noktalama işaretlerinin kullanım amaçlarını açıklayınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n\n\n\n104",
+      "order": 1,
+      "source": {
+        "printed_page": 104,
+        "pdf_page": 105,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 53
+      }
+    },
+    {
+      "id": "G11-T2-P104-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "2. Tema",
+      "order": 2,
+      "source": {
+        "printed_page": 104,
+        "pdf_page": 105,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P104-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P104-Q03",
+        "G11-T2-P104-Q04"
+      ],
+      "table_ids": [
+        "G11-T2-P104-TABLE01"
+      ],
+      "visual_ids": [],
+      "order": 3,
+      "source": {
+        "printed_page": 104,
+        "pdf_page": 105,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P104-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Aşağıda verilen örneklerdeki fiillerin nesnesine göre çatı özelliklerini tespit ederek bu fiilleri tablodaki ilgili alanlara yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P104-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [
+        "G11-T2-P104-TABLE01"
+      ],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 104,
+        "pdf_page": 105,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T2-P104-TABLE01",
+      "type": "table",
+      "columns": [
+        "Örnekler",
+        "Geçişli",
+        "Geçişsiz",
+        "Oldurgan",
+        "Ettirgen"
+      ],
+      "rows": [
+        [
+          "Özining ölmez etining ölür.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Büyük ak çadırını kara yerin üzerine diktirmişti.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Dedem Korkut himmet kılıcını beline bağladı, çomağı omuzuna bıraktı.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "İnsan daldı sulara, aldı bir avuç toprak Sulardan çıkıp verdi, Tanrısına sunarak.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Kaşgar’daki Çinliyi ta Turfan’a sürdürdü Turfan’daki Çinliyi Aksu’ya dek püskürttü.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Kalkıp Kanturalı yerinden doğruldun, geldin, Yelesi kara kazılık atına çabucak bindin.",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "caption": null,
+      "layout_note": "PDF table cells retained in row/column order; empty cells are empty strings.",
+      "cell_layout": {
+        "empty_cell_positions_preserved": true,
+        "merged_cell_spans_detected": false,
+        "note": "PDF table extraction keeps blank positions but does not reliably distinguish a blank cell from a merged-cell span."
+      },
+      "order": 5,
+      "source": {
+        "printed_page": 104,
+        "pdf_page": 105,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 7,
+        "line_end": 7
+      },
+      "pdf_bbox": [
+        51.4,
+        96.0,
+        504.2,
+        350.4
+      ]
+    },
+    {
+      "id": "G11-T2-P104-Q04",
+      "type": "question",
+      "question_number": "4",
+      "text": "Yukarıdaki parçada yer alan noktalama işaretlerinin kullanım amaçlarını açıklayınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P104-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [
+        "G11-T2-P104-TABLE01"
+      ],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 104,
+        "pdf_page": 105,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 34,
+        "line_end": 53
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

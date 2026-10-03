@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 288,
+  "pdf_page": 289,
+  "section": {
+    "id": "theme-4-listening-viewing",
+    "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 288,
+    "pdf_page": 289
+  },
+  "page_text": "    4. Tema\n\n\n  2. Metinle ilgili aldığınız notlardan hareketle aşağıdaki zihin haritasında verilen başlıklara göre metinle\n     ilgili çıkarımlarınızı yazınız.\n\n\n\n\n                                                                            .............................................................\n\n\n\n\n                                                                                                     Tema\n\n.............................................................                                                                                              .............................................................\n\n\n\n\n           Yardımcı                                                                                                                                                               Konu\n          Düşünceler\n\n\n\n                                                                              Anadolu İnsanı / Fedakârlık\n                                                                                 Metninin Unsurları\n\n\n\n\n                                            Ana                                                                                                          Bilgilerin\n                                          Düşünce                                                                                                      Sunuluş Şekli\n\n\n\n\n                     .............................................................                                                          Bilgiler, içeriği yansıtacak şekilde sunulmuştur.\n\n\n\n\n288",
+  "blocks": [
+    {
+      "id": "G11-T4-P288-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Anadolu İnsanı / Fedakârlık Metninin Unsurları",
+          "alt_description": "Merkezde metin adı; çevresinde tema, konu, ana düşünce, yardımcı düşünceler ve bilginin sunuluş şekli etiketli dairelerden oluşan zihin haritası vardır.",
+          "pedagogical_role": "Metinle ilgili çıkarımları düzenleme."
+        }
+      ],
+      "source": {
+        "printed_page": 288,
+        "pdf_page": 289
+      }
+    },
+    {
+      "id": "G11-T4-P288-ACT01",
+      "type": "activity",
+      "order": 4,
+      "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P288-Q01"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "source": {
+        "printed_page": 288,
+        "pdf_page": 289
+      }
+    },
+    {
+      "id": "G11-T4-P288-Q01",
+      "type": "question",
+      "order": 4,
+      "question_number": "2",
+      "text": "Metinle ilgili aldığınız notlardan hareketle aşağıdaki zihin haritasında verilen başlıklara göre metinle\nilgili çıkarımlarınızı yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 288,
+        "pdf_page": 289
+      }
+    }
+  ]
+}

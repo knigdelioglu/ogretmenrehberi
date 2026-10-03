@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 167,
+  "pdf_page": 168,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 167,
+    "pdf_page": 168,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n1. Okuma Metni\n                                                                      HUZUR\n   (Ana Metin)\n\n (…)\n Mümtaz’a göre insan Ada’ya giderken anonim bir şey olurdu. Orası bir nevi standart insanların yeriydi; orada\n gerçekte kendimize hiç lâzım olmayan, hiç değilse bizi kendimizden uzaklaştıran ve bunu yaparken hiçbir nok-\n taya da yaklaştırmayan şeylerin hasreti çekilirdi. Boğaz’da ise her şey insanı kendisine çağırır, kendi derinliğine\n indirirdi. Çünkü burada terkibi idare eden şeyler, manzara, kalabildiği kadar olsa da mimarî, hepsi bizimdi. Bi-\n zimle beraber kurulmuş, bizimle beraber olmuştu. Burası küçük camili, bodur minareli ve kireç sıvalı duvarları o\n kadar İstanbul semtlerinin kendisi olan küçük mescitli köylerin, bazen bir manzarayı uçtan uca zapt eden geniş\n mezarlıkların, su akmayan lüleleri bile insana, serinlik duygusu veren ayna taşları kırık çeşmelerin, büyük yalı-\n ların, avlusunda şimdi keçi otlayan ahşap tekkelerin, çıraklarının haykırışı İstanbul ramazanlarının uhreviliğini\n yaşayan dünyadan bir selâm gibi karışan iskele kahvelerinin, eski davullu, zurnalı, yarı millî bayram kılıklı peh-\n livan güreşlerinin hatırasıyla dolu meydanların, büyük çınarların, kapalı akşamların, fecir kızlarının ellerindeki\n meşalelerle maddesiz aynalarda bir sedef rüyası içinde yüzdükleri sabahların, garip, içli aksisadaların diyarıydı.\n Zaten Boğaz’da her şey bir akisti. Işık akisti, ses akisti; burada insan bile zaman zaman bilmediği bir yığın şeyin\n aksi olabilirdi.\n Mümtaz, çok küçüklük hatıralarına eğilip de vapur düdüklerinin bu tepelere çarpa çarpa kendine kadar gelen\n akislerini dinlediği zaman, ara sıra içinde kabaran ve kendisini gündelik hayatın ortasında birdenbire o kadar\n zengin yapan hüznün şifasızlığının hangi pınarlardan toplanıp geldiğini anlardı.\n Vapur hıncahınçtı. Şehirdeki işlerinden dönen küçük memurlar, gezmelerden, uzak plâjlardan gelenler, genç\n mektepliler, zabitler, ihtiyar hanımlar, hayatlarının üzüntüsü, günün yorgunluğu yüzlerinden akan bir yığın in-\n san güvertede, bilerek bilmeyerek kendilerini bu akşam saatine teslim etmişe benziyorlardı. (...)Herkes bu ay-\n dınlığın ortasına kendisi olarak geliyor; fakat bir sihirin ortasına düşmüş gibi, onun değişmeleriyle değişiyordu.\n Bazen bir kalabalıktan biraz fazla gürültülü bir kahkaha yükseliyor, uzakta, tâ başta, yalı çocukları ağız çalgıları\n çalıyorlar, tecrübesiz seslerle şarkı söylüyorlar, beraber yolculuk yapmağa alışmış olanlar birbirlerini çağırıyor-\n lardı. Fakat bunlar pek az sürüyordu. Bir nevi bekleyişe benzeyen sessizlik yeniden sonsuz yapraklı ağacıyla\n büyüyor, hepsini örtüyordu.\n\n\n\n\n                                                                                                                   167",
+  "blocks": [
+    {
+      "id": "G11-T3-P167-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "HUZUR",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P167-Q01"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P167-VIS01"
+      ],
+      "source": {
+        "printed_page": 167,
+        "pdf_page": 168
+      }
+    },
+    {
+      "id": "G11-T3-P167-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Color photograph of Istanbul, with waterfront buildings, domes and minarets, below the Huzur excerpt.",
+      "alt_description": "Color photograph of Istanbul, with waterfront buildings, domes and minarets, below the Huzur excerpt.",
+      "source": {
+        "printed_page": 167,
+        "pdf_page": 168
+      }
+    },
+    {
+      "id": "G11-T3-P167-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Okuma Metni",
+      "source": {
+        "printed_page": 167,
+        "pdf_page": 168,
+        "line_start": 3,
+        "line_end": 3
+      },
+      "question_number": "1",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P167-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P167-H01",
+      "type": "heading",
+      "order": 4,
+      "text": "HUZUR",
+      "source": {
+        "printed_page": 167,
+        "pdf_page": 168,
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P167-TEXT01",
+      "type": "paragraph",
+      "order": 5,
+      "text": "(Ana Metin)",
+      "source": {
+        "printed_page": 167,
+        "pdf_page": 168,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P167-TEXT02",
+      "type": "literary_text",
+      "order": 6,
+      "text": "(…) Mümtaz’a göre insan Ada’ya giderken anonim bir şey olurdu. Orası bir nevi standart insanların yeriydi; orada gerçekte kendimize hiç lâzım olmayan, hiç değilse bizi kendimizden uzaklaştıran ve bunu yaparken hiçbir noktaya da yaklaştırmayan şeylerin hasreti çekilirdi. Boğaz’da ise her şey insanı kendisine çağırır, kendi derinliğine indirirdi. Çünkü burada terkibi idare eden şeyler, manzara, kalabildiği kadar olsa da mimarî, hepsi bizimdi. Bizimle beraber kurulmuş, bizimle beraber olmuştu. Burası küçük camili, bodur minareli ve kireç sıvalı duvarları o kadar İstanbul semtlerinin kendisi olan küçük mescitli köylerin, bazen bir manzarayı uçtan uca zapt eden geniş mezarlıkların, su akmayan lüleleri bile insana, serinlik duygusu veren ayna taşları kırık çeşmelerin, büyük yalıların, avlusunda şimdi keçi otlayan ahşap tekkelerin, çıraklarının haykırışı İstanbul ramazanlarının uhreviliğini yaşayan dünyadan bir selâm gibi karışan iskele kahvelerinin, eski davullu, zurnalı, yarı millî bayram kılıklı pehlivan güreşlerinin hatırasıyla dolu meydanların, büyük çınarların, kapalı akşamların, fecir kızlarının ellerindeki meşalelerle maddesiz aynalarda bir sedef rüyası içinde yüzdükleri sabahların, garip, içli aksisadaların diyarıydı. Zaten Boğaz’da her şey bir akisti. Işık akisti, ses akisti; burada insan bile zaman zaman bilmediği bir yığın şeyin aksi olabilirdi. Mümtaz, çok küçüklük hatıralarına eğilip de vapur düdüklerinin bu tepelere çarpa çarpa kendine kadar gelen akislerini dinlediği zaman, ara sıra içinde kabaran ve kendisini gündelik hayatın ortasında birdenbire o kadar zengin yapan hüznün şifasızlığının hangi pınarlardan toplanıp geldiğini anlardı. Vapur hıncahınçtı. Şehirdeki işlerinden dönen küçük memurlar, gezmelerden, uzak plâjlardan gelenler, genç mektepliler, zabitler, ihtiyar hanımlar, hayatlarının üzüntüsü, günün yorgunluğu yüzlerinden akan bir yığın insan güvertede, bilerek bilmeyerek kendilerini bu akşam saatine teslim etmişe benziyorlardı. (...)Herkes bu aydınlığın ortasına kendisi olarak geliyor; fakat bir sihirin ortasına düşmüş gibi, onun değişmeleriyle değişiyordu. Bazen bir kalabalıktan biraz fazla gürültülü bir kahkaha yükseliyor, uzakta, tâ başta, yalı çocukları ağız çalgıları çalıyorlar, tecrübesiz seslerle şarkı söylüyorlar, beraber yolculuk yapmağa alışmış olanlar birbirlerini çağırıyorlardı. Fakat bunlar pek az sürüyordu. Bir nevi bekleyişe benzeyen sessizlik yeniden sonsuz yapraklı ağacıyla büyüyor, hepsini örtüyordu.",
+      "source": {
+        "printed_page": 167,
+        "pdf_page": 168,
+        "line_start": 7,
+        "line_end": 31
+      },
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": true
+      },
+      "work_title": "Huzur"
+    }
+  ]
+}

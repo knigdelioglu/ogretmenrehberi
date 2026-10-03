@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 250,
+  "pdf_page": 251,
+  "section": {
+    "id": "theme-4-reading-mimar-sinan",
+    "title": "Metin Tahlili-1 (Anlama): Okuma — Ben, Mimar Sinan"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 250,
+    "pdf_page": 251
+  },
+  "page_text": "  4. Tema\n\n\n\n         Sıra Sizde\n\n\n Ben, Mimar Sinan adlı tiyatro oyunundan alınmış aşağıdaki cümlelerdeki altı çizili kelime ve kelime grupla-\n rının sosyal hayatı yansıtıp yansıtmadığını “Evet / Hayır” şeklinde belirtiniz. Cevabınızın gerekçesini örnek-\n teki gibi açıklayınız.\n                          Cümleler                          E/H                Gerekçeli Açıklamalar\n\n      Acemi Ocağı, ortaöğretim düzeyinde bir teknik                “Acemi Ocağı”; dönemin eğitim, askerlik ve mes-\n                                                            Evet\n      okuldur.                                                     lek edindirme sistemiyle ilgili bir terimdir.\n\n\n      Caminin içinde her gece sekiz bin kandil yana-\n      caktı.\n\n\n  Ağalar! Mimarbaşı ne dedi, işittiniz, şahit olun!\n\n\n      Bir gün geldi ki, artık kendimi göstermek için fır-\n      sat gözlemeye başladım.\n\n  Bu birimleri yan yana dizerseniz, bir medrese, bir\n  han, bir kervansaray planı çıkar ortaya.\n\n\n      Bunca yıllık çalışmamın ve sabrımın meyvesini\n      toplayacağım saat çalmıştı!\n\n\n      Gördüğüm her binayı ve harabeyi, bir ders gibi\n      inceledim.\n\n\n      Geceleri de meşale ışıkları altında çalışmaya\n      başladık.\n\n\n  Tahta çıkalı daha bir yıl olmuştu.\n\n\n      Bu maddi ve manevi zenginlik içinde, Artemi-\n      os’u ve İsodoros’u yenmemek elimde değildi.\n\n\n  Bir hafta sonra, padişah yine geldi.\n\n\n      Bu bina eylediğin Tanrı evini dua ile yine senin\n      açman, en doğrusudur.\n\n\n      Adamlarımla gemilere bindik, gölün doğu kıyı-\n      sına yaklaştık.\n\n\n\n\n250",
+  "blocks": [
+    {
+      "id": "G11-T4-P250-ACT01",
+      "type": "activity",
+      "order": 1,
+      "title": "Metin Tahlili-1 (Anlama): Okuma — Ben, Mimar Sinan",
+      "instruction_ids": [
+        "G11-T4-P250-INST01"
+      ],
+      "question_ids": [],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 250,
+        "pdf_page": 251
+      }
+    },
+    {
+      "id": "G11-T4-P250-INST01",
+      "type": "instruction",
+      "order": 1,
+      "text": "Ben, Mimar Sinan adlı tiyatro oyunundan alınmış aşağıdaki cümlelerdeki altı çizili kelime ve kelime gruplarının sosyal hayatı yansıtıp yansıtmadığını “Evet / Hayır” şeklinde belirtiniz. Cevabınızın gerekçesini örnekteki gibi açıklayınız.",
+      "source": {
+        "printed_page": 250,
+        "pdf_page": 251
+      }
+    },
+    {
+      "id": "G11-T4-P250-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Evet / Hayır ve gerekçeli açıklama alanları",
+          "alt_description": "Tiyatro metninden alınan cümleler, E/H sütunu ve gerekçeli açıklama alanlarından oluşan satırlı bir tablo vardır.",
+          "pedagogical_role": "Metin ifadelerini sosyal hayatla ilişkilendirme."
+        }
+      ],
+      "source": {
+        "printed_page": 250,
+        "pdf_page": 251
+      }
+    },
+    {
+      "id": "G11-T4-P250-SH01",
+      "type": "subheading",
+      "order": 5,
+      "text": "Sıra Sizde",
+      "source": {
+        "printed_page": 250,
+        "pdf_page": 251
+      }
+    },
+    {
+      "id": "G11-T4-P250-ACT02",
+      "type": "activity",
+      "order": 8,
+      "title": "Sıra Sizde",
+      "instruction_ids": [],
+      "question_ids": [],
+      "table_ids": [
+        "G11-T4-P250-TABLE01"
+      ],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 250,
+        "pdf_page": 251
+      }
+    },
+    {
+      "id": "G11-T4-P250-TABLE01",
+      "type": "table",
+      "order": 8,
+      "title": "Cümleler / E-H / Gerekçeli Açıklamalar",
+      "columns": [
+        "Cümleler",
+        "E/H",
+        "Gerekçeli Açıklamalar"
+      ],
+      "rows": [
+        [
+          "Acemi Ocağı, ortaöğretim düzeyinde bir teknik okuldur.",
+          "Evet",
+          "“Acemi Ocağı”; dönemin eğitim, askerlik ve meslek edindirme sistemiyle ilgili bir terimdir."
+        ],
+        [
+          "Caminin içinde her gece sekiz bin kandil yanacaktı.",
+          "",
+          ""
+        ],
+        [
+          "Ağalar! Mimarbaşı ne dedi, işittiniz, şahit olun!",
+          "",
+          ""
+        ],
+        [
+          "Bir gün geldi ki, artık kendimi göstermek için fırsat gözlemeye başladım.",
+          "",
+          ""
+        ],
+        [
+          "Bu birimleri yan yana dizerseniz, bir medrese, bir han, bir kervansaray planı çıkar ortaya.",
+          "",
+          ""
+        ],
+        [
+          "Bunca yıllık çalışmamın ve sabrımın meyvesini toplayacağım saat çalmıştı!",
+          "",
+          ""
+        ],
+        [
+          "Gördüğüm her binayı ve harabeyi, bir ders gibi inceledim.",
+          "",
+          ""
+        ],
+        [
+          "Geceleri de meşale ışıkları altında çalışmaya başladık.",
+          "",
+          ""
+        ],
+        [
+          "Tahta çıkalı daha bir yıl olmuştu.",
+          "",
+          ""
+        ],
+        [
+          "Bu maddi ve manevi zenginlik içinde, Artemios’u ve İsodoros’u yenmemek elimde değildi.",
+          "",
+          ""
+        ],
+        [
+          "Bir hafta sonra, padişah yine geldi.",
+          "",
+          ""
+        ],
+        [
+          "Bu bina eylediğin Tanrı evini dua ile yine senin açman, en doğrusudur.",
+          "",
+          ""
+        ],
+        [
+          "Adamlarımla gemilere bindik, gölün doğu kıyısına yaklaştık.",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 250,
+        "pdf_page": 251
+      },
+      "structure_notes": "İlk örnekte Evet seçeneği ve gerekçesi basılıdır; diğer satırların hücreleri öğrenci yanıtı içindir."
+    }
+  ]
+}

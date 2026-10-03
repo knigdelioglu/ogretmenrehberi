@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 179,
+  "pdf_page": 180,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 179,
+    "pdf_page": 180,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n\n\n                     Okuma Çemberi Etkinliğindeki Seçimlik Roller\n\n\n\n Özetleyici      Metnin özetini çıkarmakla görevlidir. Metnin önemli bölümlerini özetleyerek anlatır.\n\n\n\n\n                 Metinde anlamı bilinmeyen, ilginç bulunan, farklı bağlamlarda kullanılabilen kelime\nKelime Avcısı    ve kelime gruplarını tespit etmekle görevlidir. Bu kelimelerin anlamlarını sözlükten\n                 araştırır ve metnin bağlamına göre açıklar.\n\n\n\n\n                 Okuduklarının ışığında metinde sonradan anlatılacak olaylara ilişkin tahminlerde\nTahmin Edici     bulunmakla görevlidir. Bir karakterin ne yapacağına, bir sonraki olayın ne olacağına\n                 veya nerede gerçekleşeceğine ilişkin tahminlerde bulunur.\n\n\n\n\n                 Metinde olayların gerçekleştiği mekânı ve bu mekânın nasıl değiştiğini takip etmek-\nHareket İzcisi\n                 le görevlidir. Mekânı ayrıntılı olarak açıklar.\n\n\n\n\n Karakter        Metindeki karakterlerin özelliklerini ortaya koymakla görevlidir. Karakterler hakkında\nÇözümleyici      bilgi verir.\n\n\n\n\n                                                                                                          179",
+  "blocks": [
+    {
+      "id": "G11-T3-P179-VIS01",
+      "type": "visual",
+      "order": 1,
+      "text": "Illustration of books arranged in a circle; beneath it are four role cards for an “Okuma Çemberi”.",
+      "alt_description": "Illustration of books arranged in a circle; beneath it are four role cards for an “Okuma Çemberi”.",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180
+      }
+    },
+    {
+      "id": "G11-T3-P179-TEXT01",
+      "type": "paragraph",
+      "order": 2,
+      "text": "Okuma Çemberi Etkinliğindeki Seçimlik Roller",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P179-TEXT02",
+      "type": "paragraph",
+      "order": 3,
+      "text": "Özetleyici Metnin özetini çıkarmakla görevlidir. Metnin önemli bölümlerini özetleyerek anlatır.",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180,
+        "line_start": 9,
+        "line_end": 9
+      }
+    },
+    {
+      "id": "G11-T3-P179-TEXT03",
+      "type": "paragraph",
+      "order": 4,
+      "text": "Metinde anlamı bilinmeyen, ilginç bulunan, farklı bağlamlarda kullanılabilen kelime Kelime Avcısı ve kelime gruplarını tespit etmekle görevlidir. Bu kelimelerin anlamlarını sözlükten araştırır ve metnin bağlamına göre açıklar.",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180,
+        "line_start": 14,
+        "line_end": 16
+      }
+    },
+    {
+      "id": "G11-T3-P179-TEXT04",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Okuduklarının ışığında metinde sonradan anlatılacak olaylara ilişkin tahminlerde Tahmin Edici bulunmakla görevlidir. Bir karakterin ne yapacağına, bir sonraki olayın ne olacağına veya nerede gerçekleşeceğine ilişkin tahminlerde bulunur.",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180,
+        "line_start": 21,
+        "line_end": 23
+      }
+    },
+    {
+      "id": "G11-T3-P179-TEXT05",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Metinde olayların gerçekleştiği mekânı ve bu mekânın nasıl değiştiğini takip etmek- Hareket İzcisi le görevlidir. Mekânı ayrıntılı olarak açıklar.",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180,
+        "line_start": 28,
+        "line_end": 30
+      }
+    },
+    {
+      "id": "G11-T3-P179-TEXT06",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Karakter Metindeki karakterlerin özelliklerini ortaya koymakla görevlidir. Karakterler hakkında Çözümleyici bilgi verir.",
+      "source": {
+        "printed_page": 179,
+        "pdf_page": 180,
+        "line_start": 35,
+        "line_end": 36
+      }
+    }
+  ]
+}

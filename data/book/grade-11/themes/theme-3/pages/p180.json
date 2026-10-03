@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 180,
+  "pdf_page": 181,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 180,
+    "pdf_page": 181,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n 3. Roman kişilerinin söz ve davranışlarını örnekleyen ifadeleri belirleyiniz. Bu ifadelerden hareketle kişile-\n    rin duygu ve düşüncelerine yönelik çıkarımlarınızı tabloya örnekteki gibi yazınız.\n\n                                                                                Kişilerin Duygu ve Düşüncelerine\n       Kişiler                Kişilerin Söz ve Davranışları\n                                                                                       Yönelik Çıkarımlarım\n\n\n\n                  Fakat sıçrayabilmek, ufuk değiştirmek için dahi\n                                                                       Bir milletin gelişmesi geçmişinden, tarihinden ve\n      Mümtaz      bir yere basmak lâzım. Bir hüviyet lâzım. Bu hüvi-\n                                                                       kültüründen beslenmesine bağlıdır.\n                  yeti her millet mazisinden alıyor.\n\n\n\n\n      Nuran\n\n\n\n\n       İhsan\n\n\n\n\n      Macide\n\n\n\n\n       Suat\n\n\n\n\n       Fâhir\n\n\n\n\n180",
+  "blocks": [
+    {
+      "id": "G11-T3-P180-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "180. sayfadaki etkinlikler",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P180-Q01"
+      ],
+      "table_ids": [
+        "G11-T3-P180-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T3-P180-TEXT01",
+        "G11-T3-P180-TEXT02",
+        "G11-T3-P180-TEXT03",
+        "G11-T3-P180-TEXT04",
+        "G11-T3-P180-TEXT05",
+        "G11-T3-P180-TEXT06",
+        "G11-T3-P180-TEXT07",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [],
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181
+      }
+    },
+    {
+      "id": "G11-T3-P180-Q01",
+      "type": "question",
+      "order": 2,
+      "text": "Roman kişilerinin söz ve davranışlarını örnekleyen ifadeleri belirleyiniz. Bu ifadelerden hareketle kişilerin duygu ve düşüncelerine yönelik çıkarımlarınızı tabloya örnekteki gibi yazınız.",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 3,
+        "line_end": 4
+      },
+      "question_number": "3",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P180-TEXT01",
+        "G11-T3-P180-TEXT02",
+        "G11-T3-P180-TEXT03",
+        "G11-T3-P180-TEXT04",
+        "G11-T3-P180-TEXT05",
+        "G11-T3-P180-TEXT06",
+        "G11-T3-P180-TEXT07",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P180-TABLE01"
+      ]
+    },
+    {
+      "id": "G11-T3-P180-TABLE01",
+      "type": "table",
+      "order": 3,
+      "text": "Roman kişileri: söz, davranış ve çıkarım tablosu",
+      "columns": [
+        "Kişiler",
+        "Kişilerin Söz ve Davranışları",
+        "Kişilerin Duygu ve Düşüncelerine Yönelik Çıkarımlarım"
+      ],
+      "rows": [
+        [
+          "Mümtaz",
+          "Fakat sıçrayabilmek, ufuk değiştirmek için dahi bir yere basmak lâzım. Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.",
+          "Bir milletin gelişmesi geçmişinden, tarihinden ve kültüründen beslenmesine bağlıdır."
+        ],
+        [
+          "Nuran",
+          "",
+          ""
+        ],
+        [
+          "İhsan",
+          "",
+          ""
+        ],
+        [
+          "Macide",
+          "",
+          ""
+        ],
+        [
+          "Suat",
+          "",
+          ""
+        ],
+        [
+          "Fâhir",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 3,
+        "line_end": 45
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P180-TEXT01",
+      "type": "paragraph",
+      "order": 4,
+      "text": "Kişilerin Duygu ve Düşüncelerine Kişiler Kişilerin Söz ve Davranışları Yönelik Çıkarımlarım",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 6,
+        "line_end": 8
+      }
+    },
+    {
+      "id": "G11-T3-P180-TEXT02",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Fakat sıçrayabilmek, ufuk değiştirmek için dahi Bir milletin gelişmesi geçmişinden, tarihinden ve Mümtaz bir yere basmak lâzım. Bir hüviyet lâzım. Bu hüvikültüründen beslenmesine bağlıdır. yeti her millet mazisinden alıyor.",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 12,
+        "line_end": 16
+      }
+    },
+    {
+      "id": "G11-T3-P180-TEXT03",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Nuran",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 21,
+        "line_end": 21
+      }
+    },
+    {
+      "id": "G11-T3-P180-TEXT04",
+      "type": "paragraph",
+      "order": 7,
+      "text": "İhsan",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 26,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T3-P180-TEXT05",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Macide",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 31,
+        "line_end": 31
+      }
+    },
+    {
+      "id": "G11-T3-P180-TEXT06",
+      "type": "paragraph",
+      "order": 9,
+      "text": "Suat",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 36,
+        "line_end": 36
+      }
+    },
+    {
+      "id": "G11-T3-P180-TEXT07",
+      "type": "paragraph",
+      "order": 10,
+      "text": "Fâhir",
+      "source": {
+        "printed_page": 180,
+        "pdf_page": 181,
+        "line_start": 41,
+        "line_end": 41
+      }
+    }
+  ]
+}

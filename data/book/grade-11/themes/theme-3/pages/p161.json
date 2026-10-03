@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 161,
+  "pdf_page": 162,
+  "section": "tema-cercevesi",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 161,
+    "pdf_page": 162,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n\n\n                                                      Tema karekodu\n\n\n\n\n                                                       Tema sunusu\n\n\n\n\n                    Nerde görsen gönlü kırık, merhem ol sen,\n                    Öyle mazlûm yolda kalsa, yoldaşı ol sen,\n\n                             Hoca Ahmed Yesevî, Dîvan-ı Hikmet\n\n\n\nHoca Ahmed Yesevî\n     (Temsilî)\n\n                                                                161",
+  "blocks": [
+    {
+      "id": "G11-T3-P161-VIS01",
+      "type": "visual",
+      "order": 1,
+      "text": "Full-page photograph of footprints in wet sand beside a foamy shoreline; two printed QR codes appear along the right edge, with a labeled Hoca Ahmed Yesevî figure near the bottom.",
+      "alt_description": "Full-page photograph of footprints in wet sand beside a foamy shoreline; two printed QR codes appear along the right edge, with a labeled Hoca Ahmed Yesevî figure near the bottom.",
+      "source": {
+        "printed_page": 161,
+        "pdf_page": 162
+      },
+      "source_note": "Kod içeriği/dış hedef PDF sayfasından okunmadı."
+    },
+    {
+      "id": "G11-T3-P161-TEXT01",
+      "type": "paragraph",
+      "order": 2,
+      "text": "Tema karekodu",
+      "source": {
+        "printed_page": 161,
+        "pdf_page": 162,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P161-TEXT02",
+      "type": "paragraph",
+      "order": 3,
+      "text": "Tema sunusu",
+      "source": {
+        "printed_page": 161,
+        "pdf_page": 162,
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "id": "G11-T3-P161-TEXT03",
+      "type": "poem",
+      "order": 4,
+      "text": "Nerde görsen gönlü kırık, merhem ol sen,\nÖyle mazlûm yolda kalsa, yoldaşı ol sen,",
+      "source": {
+        "printed_page": 161,
+        "pdf_page": 162,
+        "line_start": 15,
+        "line_end": 16
+      }
+    },
+    {
+      "id": "G11-T3-P161-TEXT04",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Hoca Ahmed Yesevî, Dîvan-ı Hikmet",
+      "source": {
+        "printed_page": 161,
+        "pdf_page": 162,
+        "line_start": 18,
+        "line_end": 18
+      }
+    },
+    {
+      "id": "G11-T3-P161-TEXT05",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Hoca Ahmed Yesevî\n(Temsilî)",
+      "source": {
+        "printed_page": 161,
+        "pdf_page": 162,
+        "line_start": 22,
+        "line_end": 23
+      }
+    }
+  ]
+}

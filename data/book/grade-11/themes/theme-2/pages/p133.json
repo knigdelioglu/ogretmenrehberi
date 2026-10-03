@@ -1,0 +1,132 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 133,
+  "pdf_page": 134,
+  "section": "Edebiyat Atölyesi-1 (Anlatma) — Konuşma",
+  "source": {
+    "printed_page": 133,
+    "pdf_page": 134,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P133-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                  Kültür Yolculuğu\n\n\n  b) Tablodaki farklı coğrafyalara ait Türk kültür unsurlarının benzer ve farklı yönleriyle ilgili çıkarımlar yapınız.\n  c) Yaptığınız bu çıkarım ve tespitlerden konuşmanızın içeriğini oluştururken yararlanınız.\n5. Konuşmanızı destekleyecek başka görseller de seçerek bu görsellerle ilgili ihtiyaç duyabileceğiniz açık-\n   layıcı yorumları konuşma içeriğine uygun olarak düzenleyiniz.\n6. Dili, etkili ve güzel kullanmanızı sağlayacak; anlamı, beden dili ve sesin oluşturduğu ahenkle güçlendi-\n   recek; aktarmak istediğiniz iletileri amaca uygun şekilde sunmanızı sağlayacak bir konuşma planı hazır-\n   layınız.\n7. Konuşmanızı planlarken konuşmanızın amacını ve dinleyicilerin özelliklerini dikkate alınız. Bağlama uy-\n   gun kelimeler kullanarak söz varlığı seçimine özen gösteriniz.\n8. Hazırladığınız plana uygun olarak bir konuşma metni yazınız.\n\n\n\n\n                                                     Konuşma Metni\n\n\n\n\n9. Konuşma metninizi arkadaşlarınıza sunarak onlardan geri bildirimler alınız ve bu doğrultuda konuşma\n   metninizde gerekli düzenlemeleri yapınız.\n10. Gerekli hazırlıkları tamamladıktan sonra belirlediğiniz amaca ve konuya uygun etkileşimli bir konuşma\n    yapınız.\n\n\n\n                                                                                                                    133",
+      "order": 1,
+      "source": {
+        "printed_page": 133,
+        "pdf_page": 134,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 30
+      }
+    },
+    {
+      "id": "G11-T2-P133-ACT01",
+      "type": "activity",
+      "title": "Edebiyat Atölyesi-1 (Anlatma) — Konuşma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P133-Q06",
+        "G11-T2-P133-Q08",
+        "G11-T2-P133-Q10"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P133-VIS01"
+      ],
+      "order": 2,
+      "source": {
+        "printed_page": 133,
+        "pdf_page": 134,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P133-Q06",
+      "type": "question",
+      "question_number": "6",
+      "text": "Dili, etkili ve güzel kullanmanızı sağlayacak; anlamı, beden dili ve sesin oluşturduğu ahenkle güçlendirecek; aktarmak istediğiniz iletileri amaca uygun şekilde sunmanızı sağlayacak bir konuşma planı hazırlayınız. 7. Konuşmanızı planlarken konuşmanızın amacını ve dinleyicilerin özelliklerini dikkate alınız. Bağlama uygun kelimeler kullanarak söz varlığı seçimine özen gösteriniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P133-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 3,
+      "source": {
+        "printed_page": 133,
+        "pdf_page": 134,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 8,
+        "line_end": 12
+      }
+    },
+    {
+      "id": "G11-T2-P133-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Coğrafyalara göre kültür ögelerini karşılaştıran geniş renkli tablo/görsel alan görülür.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 1,
+      "vector_shape_count": 1,
+      "order": 4,
+      "source": {
+        "printed_page": 133,
+        "pdf_page": 134,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 9,
+        "line_end": 9
+      }
+    },
+    {
+      "id": "G11-T2-P133-Q08",
+      "type": "question",
+      "question_number": "8",
+      "text": "Hazırladığınız plana uygun olarak bir konuşma metni yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P133-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 5,
+      "source": {
+        "printed_page": 133,
+        "pdf_page": 134,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 13,
+        "line_end": 24
+      }
+    },
+    {
+      "id": "G11-T2-P133-Q10",
+      "type": "question",
+      "question_number": "10",
+      "text": "Gerekli hazırlıkları tamamladıktan sonra belirlediğiniz amaca ve konuya uygun etkileşimli bir konuşma yapınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P133-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 133,
+        "pdf_page": 134,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 25,
+        "line_end": 30
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

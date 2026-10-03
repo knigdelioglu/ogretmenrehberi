@@ -1,0 +1,163 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 139,
+  "pdf_page": 140,
+  "section": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+  "source": {
+    "printed_page": 139,
+    "pdf_page": 140,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P139-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                           Kültür Yolculuğu\n\n\n2. Aşağıdaki dinleme / izleme sürecine ilişkin Kontrol Listesi’ni tamamlayınız.\n                                                Kontrol Listesi\n Ölçütler                                                                                   Evet     Hayır\n\n Dinleme / izleme amacımı belirledim.\n\n\n Metinle ilgili daha önce bildiklerimi gözden geçirdim.\n\n\n Dikkatlice ve anlayarak dinlemeye / izlemeye özen gösterdim.\n\n\n Sabır ve saygıyla, ön yargılardan uzak bir tutumla dinledim / izledim.\n\n Konuşmaya başlamadan, yorum yapmadan veya soru sormadan önce anlatımın bitmesi-\n ni bekledim.\n\n Dinleme / izleme sırasında diğer dinleyicileri rahatsız edecek davranışlardan kaçındım.\n\n\n\n\n3. Çok modlu metni dinleme / izleme süreciniz, aşağıdaki Gözlem Formu’na göre öğretmeniniz tarafından\n   değerlendirilecektir.\n\n\n\n\n                                                                                                             139",
+      "order": 1,
+      "source": {
+        "printed_page": 139,
+        "pdf_page": 140,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T2-P139-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-3 (Anlama) — Dinleme / İzleme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P139-Q02",
+        "G11-T2-P139-Q03"
+      ],
+      "table_ids": [
+        "G11-T2-P139-TABLE01"
+      ],
+      "visual_ids": [],
+      "order": 2,
+      "source": {
+        "printed_page": 139,
+        "pdf_page": 140,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P139-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Aşağıdaki dinleme / izleme sürecine ilişkin Kontrol Listesi’ni tamamlayınız. Kontrol Listesi Ölçütler Evet Hayır",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P139-SRC01"
+      ],
+      "related_table_ids": [
+        "G11-T2-P139-TABLE01"
+      ],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 139,
+        "pdf_page": 140,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T2-P139-TABLE01",
+      "type": "table",
+      "columns": [
+        "Ölçütler",
+        "Evet",
+        "Hayır"
+      ],
+      "rows": [
+        [
+          "Dinleme / izleme amacımı belirledim.",
+          "",
+          ""
+        ],
+        [
+          "Metinle ilgili daha önce bildiklerimi gözden geçirdim.",
+          "",
+          ""
+        ],
+        [
+          "Dikkatlice ve anlayarak dinlemeye / izlemeye özen gösterdim.",
+          "",
+          ""
+        ],
+        [
+          "Sabır ve saygıyla, ön yargılardan uzak bir tutumla dinledim / izledim.",
+          "",
+          ""
+        ],
+        [
+          "Konuşmaya başlamadan, yorum yapmadan veya soru sormadan önce anlatımın bitmesini bekledim.",
+          "",
+          ""
+        ],
+        [
+          "Dinleme / izleme sırasında diğer dinleyicileri rahatsız edecek davranışlardan kaçındım.",
+          "",
+          ""
+        ]
+      ],
+      "caption": "Kontrol Listesi",
+      "layout_note": "PDF table cells retained in row/column order; empty cells are empty strings.",
+      "cell_layout": {
+        "empty_cell_positions_preserved": true,
+        "merged_cell_spans_detected": false,
+        "note": "PDF table extraction keeps blank positions but does not reliably distinguish a blank cell from a merged-cell span."
+      },
+      "order": 4,
+      "source": {
+        "printed_page": 139,
+        "pdf_page": 140,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      },
+      "pdf_bbox": [
+        57.8,
+        81.9,
+        511.9,
+        324.0
+      ]
+    },
+    {
+      "id": "G11-T2-P139-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Çok modlu metni dinleme / izleme süreciniz, aşağıdaki Gözlem Formu’na göre öğretmeniniz tarafından değerlendirilecektir.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P139-SRC01"
+      ],
+      "related_table_ids": [
+        "G11-T2-P139-TABLE01"
+      ],
+      "related_media_ids": [
+        "G11-T2-P137-VIS01"
+      ],
+      "order": 5,
+      "source": {
+        "printed_page": 139,
+        "pdf_page": 140,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 27,
+        "line_end": 33
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

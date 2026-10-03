@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 162,
+  "pdf_page": 163,
+  "section": "tema-cercevesi",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 162,
+    "pdf_page": 163,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n  Temaya Başlarken\n\n Edebiyatın yaşamla ilişkisini fark etmek amacıyla aşağıdaki görselden yararlanarak soruları cevaplayınız.\n\n\n\n\n 1. Görselde “bir yol üzerinde yürüyen insan” ayrıntısının neyi temsil ettiği hakkında düşüncelerinizi açıkla-\n    yınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n 2. Görselin size kendi hayatınızla ilgili neler çağrıştırdığını gerekçelendirerek ifade ediniz.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n 3. Görselden hareketle yaşama dair hangi çıkarımlarda bulunulabilir? Açıklayınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n 4. Görsel, bir roman kapağına ait olsaydı bu romana hangi adı verirdiniz? Gerekçesiyle açıklayınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n\n162",
+  "blocks": [
+    {
+      "id": "G11-T3-P162-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Temaya Başlarken",
+      "instruction_ids": [
+        "G11-T3-P162-INST01"
+      ],
+      "question_ids": [
+        "G11-T3-P162-Q01",
+        "G11-T3-P162-Q02",
+        "G11-T3-P162-Q03",
+        "G11-T3-P162-Q04"
+      ],
+      "table_ids": [],
+      "related_text_ids": [],
+      "visual_ids": [
+        "G11-T3-P162-VIS01"
+      ],
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163
+      }
+    },
+    {
+      "id": "G11-T3-P162-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Illustration of a person walking down a road between green trees on one side and sparse or bare trees on the other; a bright circular light appears behind the figure.",
+      "alt_description": "Illustration of a person walking down a road between green trees on one side and sparse or bare trees on the other; a bright circular light appears behind the figure.",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163
+      },
+      "pedagogical_role": "The printed direction asks learners to answer questions using this image."
+    },
+    {
+      "id": "G11-T3-P162-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Temaya Başlarken",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163,
+        "line_start": 3,
+        "line_end": 3
+      }
+    },
+    {
+      "id": "G11-T3-P162-INST01",
+      "type": "instruction",
+      "order": 4,
+      "text": "Edebiyatın yaşamla ilişkisini fark etmek amacıyla aşağıdaki görselden yararlanarak soruları cevaplayınız.",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P162-Q01",
+      "type": "question",
+      "order": 5,
+      "text": "Görselde “bir yol üzerinde yürüyen insan” ayrıntısının neyi temsil ettiği hakkında düşüncelerinizi açıklayınız.",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163,
+        "line_start": 10,
+        "line_end": 14
+      },
+      "question_number": "1",
+      "instruction_id": "G11-T3-P162-INST01",
+      "related_text_ids": [],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P162-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P162-Q02",
+      "type": "question",
+      "order": 6,
+      "text": "Görselin size kendi hayatınızla ilgili neler çağrıştırdığını gerekçelendirerek ifade ediniz.",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163,
+        "line_start": 15,
+        "line_end": 19
+      },
+      "question_number": "2",
+      "instruction_id": "G11-T3-P162-INST01",
+      "related_text_ids": [],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P162-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P162-Q03",
+      "type": "question",
+      "order": 7,
+      "text": "Görselden hareketle yaşama dair hangi çıkarımlarda bulunulabilir? Açıklayınız.",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163,
+        "line_start": 20,
+        "line_end": 23
+      },
+      "question_number": "3",
+      "instruction_id": "G11-T3-P162-INST01",
+      "related_text_ids": [],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P162-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P162-Q04",
+      "type": "question",
+      "order": 8,
+      "text": "Görsel, bir roman kapağına ait olsaydı bu romana hangi adı verirdiniz? Gerekçesiyle açıklayınız.",
+      "source": {
+        "printed_page": 162,
+        "pdf_page": 163,
+        "line_start": 24,
+        "line_end": 28
+      },
+      "question_number": "4",
+      "instruction_id": "G11-T3-P162-INST01",
+      "related_text_ids": [],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P162-VIS01"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 188,
+  "pdf_page": 189,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 188,
+    "pdf_page": 189,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n      b) Romandaki yapı unsurları arasındaki etkileşimin yazarın üslubuna katkısını açıklayınız.\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n      c) Romanın yazıldığı döneme ait özelliklerin yazarın üslubuna etkileri hakkında çıkarımlarda bulununuz.\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n      ç) Romanda kullanılan söz varlığıyla yazarın üslubu arasındaki ilişkiyi tespit ediniz.\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n\n 4. Huzur romanındaki kişilerin özelliklerini ve amaçlarını aşağıdaki tabloya yazınız.\n\n         Kişiler                                                     Özellikleri                                                                                   Amaçları\n\n\n\n\n       Mümtaz\n\n\n\n\n        Nuran\n\n\n\n\n         İhsan\n\n\n\n\n          Suat\n\n\n\n\n188",
+  "blocks": [
+    {
+      "id": "G11-T3-P188-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "188. sayfadaki etkinlikler",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P188-Q01",
+        "G11-T3-P188-Q02"
+      ],
+      "table_ids": [
+        "G11-T3-P188-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T3-P188-TEXT01",
+        "G11-T3-P188-TEXT02",
+        "G11-T3-P188-TEXT03",
+        "G11-T3-P188-TEXT04",
+        "G11-T3-P188-TEXT05",
+        "G11-T3-P188-TEXT06",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [],
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189
+      }
+    },
+    {
+      "id": "G11-T3-P188-Q01",
+      "type": "question",
+      "order": 2,
+      "text": "",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 3,
+        "line_end": 11
+      },
+      "question_number": "3",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P188-TEXT01",
+        "G11-T3-P188-TEXT02",
+        "G11-T3-P188-TEXT03",
+        "G11-T3-P188-TEXT04",
+        "G11-T3-P188-TEXT05",
+        "G11-T3-P188-TEXT06",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [
+        {
+          "label": "b",
+          "text": "Romandaki yapı unsurları arasındaki etkileşimin yazarın üslubuna katkısını açıklayınız."
+        },
+        {
+          "label": "c",
+          "text": "Romanın yazıldığı döneme ait özelliklerin yazarın üslubuna etkileri hakkında çıkarımlarda bulununuz."
+        },
+        {
+          "label": "ç",
+          "text": "Romanda kullanılan söz varlığıyla yazarın üslubu arasındaki ilişkiyi tespit ediniz."
+        }
+      ],
+      "continuation": {
+        "from_previous_page": true,
+        "to_next_page": false
+      },
+      "table_ids": [
+        "G11-T3-P188-TABLE01"
+      ],
+      "related_question_ids": [
+        "G11-T3-P187-Q02"
+      ]
+    },
+    {
+      "id": "G11-T3-P188-TEXT01",
+      "type": "paragraph",
+      "order": 3,
+      "text": "b) Romandaki yapı unsurları arasındaki etkileşimin yazarın üslubuna katkısını açıklayınız. c) Romanın yazıldığı döneme ait özelliklerin yazarın üslubuna etkileri hakkında çıkarımlarda bulununuz. ç) Romanda kullanılan söz varlığıyla yazarın üslubu arasındaki ilişkiyi tespit ediniz.",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 3,
+        "line_end": 14
+      }
+    },
+    {
+      "id": "G11-T3-P188-Q02",
+      "type": "question",
+      "order": 4,
+      "text": "Huzur romanındaki kişilerin özelliklerini ve amaçlarını aşağıdaki tabloya yazınız.",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 16,
+        "line_end": 16
+      },
+      "question_number": "4",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P188-TEXT01",
+        "G11-T3-P188-TEXT02",
+        "G11-T3-P188-TEXT03",
+        "G11-T3-P188-TEXT04",
+        "G11-T3-P188-TEXT05",
+        "G11-T3-P188-TEXT06",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P188-TABLE01"
+      ]
+    },
+    {
+      "id": "G11-T3-P188-TABLE01",
+      "type": "table",
+      "order": 5,
+      "text": "Huzur romanındaki kişilerin özellikleri ve amaçları",
+      "columns": [
+        "Kişiler",
+        "Özellikleri",
+        "Amaçları"
+      ],
+      "rows": [
+        [
+          "Mümtaz",
+          "",
+          ""
+        ],
+        [
+          "Nuran",
+          "",
+          ""
+        ],
+        [
+          "İhsan",
+          "",
+          ""
+        ],
+        [
+          "Suat",
+          "",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 16,
+        "line_end": 42
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P188-TEXT02",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Kişiler Özellikleri Amaçları",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 18,
+        "line_end": 18
+      }
+    },
+    {
+      "id": "G11-T3-P188-TEXT03",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Mümtaz",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 23,
+        "line_end": 23
+      }
+    },
+    {
+      "id": "G11-T3-P188-TEXT04",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Nuran",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 28,
+        "line_end": 28
+      }
+    },
+    {
+      "id": "G11-T3-P188-TEXT05",
+      "type": "paragraph",
+      "order": 9,
+      "text": "İhsan",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 33,
+        "line_end": 33
+      }
+    },
+    {
+      "id": "G11-T3-P188-TEXT06",
+      "type": "paragraph",
+      "order": 10,
+      "text": "Suat",
+      "source": {
+        "printed_page": 188,
+        "pdf_page": 189,
+        "line_start": 38,
+        "line_end": 38
+      }
+    }
+  ],
+  "page_continuation_note": "Soru 3 alt maddeleri basılı s.187’de başlamış, alt maddeler b), c), ç) s.188’de devam etmiştir."
+}

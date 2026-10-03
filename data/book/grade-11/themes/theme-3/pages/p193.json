@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 193,
+  "pdf_page": 194,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 193,
+    "pdf_page": 194,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n 2. Huzur romanını belirlediğiniz ölçütler doğrultusunda aşağıda verilen örnekteki gibi değerlendiriniz.\n            Belirlediğim Metin Değerlendirme                            Kendi Beğeni Ölçütlerim Doğrultusunda\n                        Ölçütlerim                                               Değerlendirmelerim\n                                                                   Cümle ve ifadeler konu bütünlüğü çerçevesinde\n                           Tutarlılık\n                                                                              tutarlılık göstermektedir.\n\n\n\n\n3. Kendinizi Huzur romanındaki kişilerden birinin yerine koyunuz. Yaşadıklarınız karşısında neler düşünür,\n   nasıl davranırdınız? Sözlü olarak ifade ediniz.\n\n\n     Çıkış Kartı\n\n\nHuzur romanında okuyup beğendiğiniz ifadelerin çağrışım yönünden zenginliğini Çıkış Kartı’nı doldurarak değerlendiriniz.\n\n                      Metinden seçtiğiniz ifadelerin çağrışım zenginliği bakımından en çok beğendiğiniz üç yö-\n     Üç Yaz           nünü yazınız.\n\n        1\n\n\n       2\n\n\n        3\n\n\n     İki Sor          Beğendiğiniz ifadelerin çağrışım zenginliğini ortaya çıkarmak için iki soru sorunuz.\n\n\n       1\n\n\n       2\n\n\n   Bir Paylaş         Beğendiğiniz ifadeler arasında sizi en çok etkileyeni paylaşınız.\n\n\n       1\n\n\n\n\n                                                                                                                           193",
+  "blocks": [
+    {
+      "id": "G11-T3-P193-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Çıkış Kartı",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P193-Q01",
+        "G11-T3-P193-Q02"
+      ],
+      "table_ids": [
+        "G11-T3-P193-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T3-P193-TEXT01",
+        "G11-T3-P193-TEXT02",
+        "G11-T3-P193-TEXT03",
+        "G11-T3-P193-TEXT04",
+        "G11-T3-P193-TEXT05",
+        "G11-T3-P193-TEXT06",
+        "G11-T3-P193-TEXT07",
+        "G11-T3-P193-TEXT08",
+        "G11-T3-P193-TEXT09",
+        "G11-T3-P193-TEXT10",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P193-VIS01"
+      ],
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194
+      }
+    },
+    {
+      "id": "G11-T3-P193-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Printed evaluation form layout and a colored “Üç Yaz, İki Sor, Bir Paylaş” exit-card graphic.",
+      "alt_description": "Printed evaluation form layout and a colored “Üç Yaz, İki Sor, Bir Paylaş” exit-card graphic.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194
+      }
+    },
+    {
+      "id": "G11-T3-P193-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Huzur romanını belirlediğiniz ölçütler doğrultusunda aşağıda verilen örnekteki gibi değerlendiriniz. Belirlediğim Metin Değerlendirme Kendi Beğeni Ölçütlerim Doğrultusunda Ölçütlerim Değerlendirmelerim Cümle ve ifadeler konu bütünlüğü çerçevesinde Tutarlılık tutarlılık göstermektedir.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 3,
+        "line_end": 8
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P193-TEXT01",
+        "G11-T3-P193-TEXT02",
+        "G11-T3-P193-TEXT03",
+        "G11-T3-P193-TEXT04",
+        "G11-T3-P193-TEXT05",
+        "G11-T3-P193-TEXT06",
+        "G11-T3-P193-TEXT07",
+        "G11-T3-P193-TEXT08",
+        "G11-T3-P193-TEXT09",
+        "G11-T3-P193-TEXT10",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P193-TABLE01"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P193-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P193-TABLE01",
+      "type": "table",
+      "order": 4,
+      "text": "Metin değerlendirme ölçütleri tablosu",
+      "columns": [
+        "Belirlediğim Metin Değerlendirme Ölçütlerim",
+        "Kendi Beğeni Ölçütlerim Doğrultusunda Değerlendirmelerim"
+      ],
+      "rows": [
+        [
+          "Tutarlılık",
+          "Cümle ve ifadeler konu bütünlüğü çerçevesinde tutarlılık göstermektedir."
+        ]
+      ],
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 4,
+        "line_end": 50
+      },
+      "table_note": "Boş yanıt hücreleri kitaptaki boş alanı göstermek için boş dizge olarak korunmuştur."
+    },
+    {
+      "id": "G11-T3-P193-Q02",
+      "type": "question",
+      "order": 5,
+      "text": "Kendinizi Huzur romanındaki kişilerden birinin yerine koyunuz. Yaşadıklarınız karşısında neler düşünür, nasıl davranırdınız? Sözlü olarak ifade ediniz.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 13,
+        "line_end": 14
+      },
+      "question_number": "3",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P193-TEXT01",
+        "G11-T3-P193-TEXT02",
+        "G11-T3-P193-TEXT03",
+        "G11-T3-P193-TEXT04",
+        "G11-T3-P193-TEXT05",
+        "G11-T3-P193-TEXT06",
+        "G11-T3-P193-TEXT07",
+        "G11-T3-P193-TEXT08",
+        "G11-T3-P193-TEXT09",
+        "G11-T3-P193-TEXT10",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "table_ids": [
+        "G11-T3-P193-TABLE01"
+      ],
+      "related_visual_ids": [
+        "G11-T3-P193-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P193-H01",
+      "type": "heading",
+      "order": 6,
+      "text": "Çıkış Kartı",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 17,
+        "line_end": 17
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT01",
+      "type": "paragraph",
+      "order": 7,
+      "text": "Huzur romanında okuyup beğendiğiniz ifadelerin çağrışım yönünden zenginliğini Çıkış Kartı’nı doldurarak değerlendiriniz.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 20,
+        "line_end": 20
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT02",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Metinden seçtiğiniz ifadelerin çağrışım zenginliği bakımından en çok beğendiğiniz üç yö- Üç Yaz nünü yazınız.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 22,
+        "line_end": 23
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT03",
+      "type": "paragraph",
+      "order": 9,
+      "text": "1",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 25,
+        "line_end": 25
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT04",
+      "type": "paragraph",
+      "order": 10,
+      "text": "2",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 28,
+        "line_end": 28
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT05",
+      "type": "paragraph",
+      "order": 11,
+      "text": "3",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 31,
+        "line_end": 31
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT06",
+      "type": "paragraph",
+      "order": 12,
+      "text": "İki Sor Beğendiğiniz ifadelerin çağrışım zenginliğini ortaya çıkarmak için iki soru sorunuz.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 34,
+        "line_end": 34
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT07",
+      "type": "paragraph",
+      "order": 13,
+      "text": "1",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 37,
+        "line_end": 37
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT08",
+      "type": "paragraph",
+      "order": 14,
+      "text": "2",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 40,
+        "line_end": 40
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT09",
+      "type": "paragraph",
+      "order": 15,
+      "text": "Bir Paylaş Beğendiğiniz ifadeler arasında sizi en çok etkileyeni paylaşınız.",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 43,
+        "line_end": 43
+      }
+    },
+    {
+      "id": "G11-T3-P193-TEXT10",
+      "type": "paragraph",
+      "order": 16,
+      "text": "1",
+      "source": {
+        "printed_page": 193,
+        "pdf_page": 194,
+        "line_start": 46,
+        "line_end": 46
+      }
+    }
+  ]
+}

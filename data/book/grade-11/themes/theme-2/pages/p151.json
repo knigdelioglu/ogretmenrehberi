@@ -1,0 +1,178 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 151,
+  "pdf_page": 152,
+  "section": "Edebiyat Atölyesi-2 (Anlatma) — Yazma",
+  "source": {
+    "printed_page": 151,
+    "pdf_page": 152,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P151-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                               Kültür Yolculuğu\n\n\n2. Müzelerde yer alabileceğini düşündüğünüz kültür unsurlarını hayatınızdaki kültür unsurlarıyla karşılaş-\n   tırarak aşağıdaki ilgili yerlere yazınız.\n\n      Müzelerde Yer Alabilecek Kültürel Unsurlar                   Kendi Hayatımdaki Kültürel Unsurlar\n\n\n\n\n3. Kültürün hangi yollarla aktarıldığına dair öğretmeninizin rehberliğinde görüş geliştirerek sınıflandırma\n   yapınız ve bunları aşağıdaki tabloya örnekteki gibi yazınız.\n\n     Kültür Taşıyıcısı Unsurlar                                      Açıklama\n\n                                    Dil, kültürün hem taşıyıcısı hem de bir parçasıdır. Bütün kültürel değerler\n                  Dil               dil vasıtasıyla ortaya çıkar. Kültürün korunması ve gelecek nesillere aktarı-\n                                    mında dilin büyük önemi vardır.\n\n\n\n\n              ..............\n\n\n\n\n              ..............\n\n\n\n\n              ..............\n\n\n\n\n              ..............\n\n\n\n\n              ..............\n\n\n\n4. Kültürel mirasın önemli bir parçası olan müzelerle ilgili yaptığınız çalışmayı arkadaşlarınızla paylaşınız.\n5. Metni yazma sürecinde yukarıdaki karşılaştırma ve sınıflandırmalardan yararlanarak özgün ifadeler kul-\n   lanınız.\n6. Yazı içeriğinizi zenginleştirmek amacıyla görsel ve işitsel ögelerle başka metinlerden alıntılara da yer\n   verebilirsiniz.\n\n\n                                                                                                                    151",
+      "order": 1,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 55
+      }
+    },
+    {
+      "id": "G11-T2-P151-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Kültür aktarımını sınıflandırmaya yarayan çok kollu şema ve renkli kutular yer alır.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 0,
+      "vector_shape_count": 104,
+      "order": 2,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P151-ACT01",
+      "type": "activity",
+      "title": "Edebiyat Atölyesi-2 (Anlatma) — Yazma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P151-Q02",
+        "G11-T2-P151-Q03",
+        "G11-T2-P151-Q04",
+        "G11-T2-P151-Q05",
+        "G11-T2-P151-Q06"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P151-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P151-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Müzelerde yer alabileceğini düşündüğünüz kültür unsurlarını hayatınızdaki kültür unsurlarıyla karşılaştırarak aşağıdaki ilgili yerlere yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P151-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 11
+      }
+    },
+    {
+      "id": "G11-T2-P151-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Kültürün hangi yollarla aktarıldığına dair öğretmeninizin rehberliğinde görüş geliştirerek sınıflandırma yapınız ve bunları aşağıdaki tabloya örnekteki gibi yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P151-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 5,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 12,
+        "line_end": 47
+      }
+    },
+    {
+      "id": "G11-T2-P151-Q04",
+      "type": "question",
+      "question_number": "4",
+      "text": "Kültürel mirasın önemli bir parçası olan müzelerle ilgili yaptığınız çalışmayı arkadaşlarınızla paylaşınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P151-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 48,
+        "line_end": 48
+      }
+    },
+    {
+      "id": "G11-T2-P151-Q05",
+      "type": "question",
+      "question_number": "5",
+      "text": "Metni yazma sürecinde yukarıdaki karşılaştırma ve sınıflandırmalardan yararlanarak özgün ifadeler kullanınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P151-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 7,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 49,
+        "line_end": 50
+      }
+    },
+    {
+      "id": "G11-T2-P151-Q06",
+      "type": "question",
+      "question_number": "6",
+      "text": "Yazı içeriğinizi zenginleştirmek amacıyla görsel ve işitsel ögelerle başka metinlerden alıntılara da yer verebilirsiniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P151-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P151-VIS01"
+      ],
+      "order": 8,
+      "source": {
+        "printed_page": 151,
+        "pdf_page": 152,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 51,
+        "line_end": 55
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

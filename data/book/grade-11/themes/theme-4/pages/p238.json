@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 238,
+  "pdf_page": 239,
+  "section": {
+    "id": "theme-opening",
+    "title": "Tema açılışı ve temaya başlarken"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 238,
+    "pdf_page": 239
+  },
+  "page_text": "  4. Tema\n\n\n  Temaya Başlarken\n\n Edebiyatın ve kitapların hayattan kesitler sunan etkili bir araç olduğunu fark edebilmek üzere aşağıdaki görseller ve metinlerden\n yararlanarak soruları cevaplayınız.\n\n\n\n\n      Ol kişi buldu cihân içinde yâr-ı bî-halel\n      Ey Latîfî her kimin yanında yârıdur kitâb\n      (Ey Latîfî, kimin yanında arkadaş olarak bir kitap varsa o, bu cihan içinde ebedî bir dost bulmuş demektir.)\n                                                                                                  Dursun Ali Tökel, Latîfî Der ki: “Kitap Yüz Yapraklı Bir Güldür”\n\n\n 1. Kitap okumanın insanın sosyal yönden gelişmesine katkıları nelerdir? Yorumlayınız.\n 2. Şiirde kitaplar neden “ebedî dostlar” olarak nitelendirilmiş olabilir? Fikirlerinizi açıklayınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n\n238",
+  "blocks": [
+    {
+      "id": "G11-T4-P238-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Dursun Ali Tökel, “Dost” şiiri; Yunus Emre, Divan",
+          "alt_description": "Üstte kitap okuyan başörtülü bir kadın, altta ise kitaplarla ilişkili iki ayrı iç mekân fotoğrafı görülür. Fotoğrafların altında kısa bir alıntı kutusu vardır.",
+          "pedagogical_role": "Temaya başlarken bölümündeki soruların yanında sunulmuştur."
+        }
+      ],
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    },
+    {
+      "id": "G11-T4-P238-H01",
+      "type": "heading",
+      "order": 4,
+      "text": "Temaya Başlarken",
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    },
+    {
+      "id": "G11-T4-P238-ACT01",
+      "type": "activity",
+      "order": 6,
+      "title": "Temaya Başlarken",
+      "instruction_ids": [
+        "G11-T4-P238-INST01",
+        "G11-T4-P238-INST02"
+      ],
+      "question_ids": [
+        "G11-T4-P238-Q01",
+        "G11-T4-P238-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    },
+    {
+      "id": "G11-T4-P238-INST01",
+      "type": "instruction",
+      "order": 6,
+      "text": "Edebiyatın ve kitapların hayattan kesitler sunan etkili bir araç olduğunu fark edebilmek üzere aşağıdaki görseller ve metinlerden\nyararlanarak soruları cevaplayınız.",
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    },
+    {
+      "id": "G11-T4-P238-INST02",
+      "type": "instruction",
+      "order": 7,
+      "text": "yararlanarak soruları cevaplayınız.",
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    },
+    {
+      "id": "G11-T4-P238-Q01",
+      "type": "question",
+      "order": 18,
+      "question_number": "1",
+      "text": "Kitap okumanın insanın sosyal yönden gelişmesine katkıları nelerdir? Yorumlayınız.",
+      "instruction_id": "G11-T4-P238-INST02",
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    },
+    {
+      "id": "G11-T4-P238-Q02",
+      "type": "question",
+      "order": 19,
+      "question_number": "2",
+      "text": "Şiirde kitaplar neden “ebedî dostlar” olarak nitelendirilmiş olabilir? Fikirlerinizi açıklayınız.",
+      "instruction_id": "G11-T4-P238-INST02",
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 238,
+        "pdf_page": 239
+      }
+    }
+  ]
+}

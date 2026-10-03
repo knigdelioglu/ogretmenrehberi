@@ -1,0 +1,180 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 103,
+  "pdf_page": 104,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 103,
+    "pdf_page": 104,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P103-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                     Kültür Yolculuğu\n\n\n\n  — Çalık!\n  Sert bir ses cevap verdi:\n  — Buyur!\n  — Toplan borusu çal!\n  Fakat Çalık daha boruyu dudaklarına götürmeden ışıklı gece birdenbire karardı. Ay görünmez oldu. Bir\n  boradır koptu. Yıldırımlar ortalığı inletmeye, yağmur bardaktan boşanırcasına yağmaya başladı.\n                                                                                Hüseyin Nihâl Atsız, Bozkurtlar\n\n\n       Haber (Bildirme) Kipleriyle Çekimlenmiş Fiiller           Dilek (Tasarlama) Kipleriyle Çekimlenmiş Fiiller\n\n\n\n\n                    Basit Çekimli Fiiller                                     Birleşik Çekimli Fiiller\n\n\n\n\n2. Aşağıda verilen örneklerdeki fiillerin öznesine göre çatı özelliklerini tespit ederek bu fiilleri tablodaki\n   ilgili alanlara yazınız.\n\n                    Örnekler                             Etken     Edilgen             Dönüşlü              İşteş\n\n Kartalın beğenmediğini kargalar kapışırlar.\n\n Anam namaz üste el açıp göye\n Allah’a yalvarır ya Rabbim diye.\n Gümbür gümbür nakkareler döğüldü.\n Burması altın tunç borular çalındı.\n Onunla yarın Beyoğlu yokuşunda buluşmak\n üzere sözleşmiştik.\n\n Seksen yerde badyalar kurulmuştu. Altın\n ayak sürahiler dizilmişti.\n Sayılmakla Oğuz beyleri tükenmez, hep gel-\n diler. Arı sudan abdest aldılar, ak alınlarını\n yere kodular.\n Senin her beğenilen yazınla, sanki altında\n imzam varmış gibi ben seviniyor, ben övü-\n nüyorum.\n\n\n\n                                                                                                                    103",
+      "order": 1,
+      "source": {
+        "printed_page": 103,
+        "pdf_page": 104,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 49
+      }
+    },
+    {
+      "id": "G11-T2-P103-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Dil bilgisi etkinliklerinde fiil çatılarını sınıflandırmak için kutular ve tablo alanları kullanılmıştır.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 0,
+      "vector_shape_count": 55,
+      "order": 2,
+      "source": {
+        "printed_page": 103,
+        "pdf_page": 104,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P103-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P103-Q02"
+      ],
+      "table_ids": [
+        "G11-T2-P103-TABLE01"
+      ],
+      "visual_ids": [
+        "G11-T2-P103-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 103,
+        "pdf_page": 104,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P103-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Aşağıda verilen örneklerdeki fiillerin öznesine göre çatı özelliklerini tespit ederek bu fiilleri tablodaki ilgili alanlara yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P103-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [
+        "G11-T2-P103-TABLE01"
+      ],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 103,
+        "pdf_page": 104,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 24,
+        "line_end": 49
+      }
+    },
+    {
+      "id": "G11-T2-P103-TABLE01",
+      "type": "table",
+      "columns": [
+        "Örnekler",
+        "Etken",
+        "Edilgen",
+        "Dönüşlü",
+        "İşteş"
+      ],
+      "rows": [
+        [
+          "Kartalın beğenmediğini kargalar kapışırlar.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Anam namaz üste el açıp göye Allah’a yalvarır ya Rabbim diye.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Gümbür gümbür nakkareler döğüldü. Burması altın tunç borular çalındı.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Onunla yarın Beyoğlu yokuşunda buluşmak üzere sözleşmiştik.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Seksen yerde badyalar kurulmuştu. Altın ayak sürahiler dizilmişti.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Sayılmakla Oğuz beyleri tükenmez, hep geldiler. Arı sudan abdest aldılar, ak alınlarını yere kodular.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Senin her beğenilen yazınla, sanki altında imzam varmış gibi ben seviniyor, ben övünüyorum.",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "caption": null,
+      "layout_note": "PDF table cells retained in row/column order; empty cells are empty strings.",
+      "cell_layout": {
+        "empty_cell_positions_preserved": true,
+        "merged_cell_spans_detected": false,
+        "note": "PDF table extraction keeps blank positions but does not reliably distinguish a blank cell from a merged-cell span."
+      },
+      "order": 5,
+      "source": {
+        "printed_page": 103,
+        "pdf_page": 104,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 28,
+        "line_end": 28
+      },
+      "pdf_bbox": [
+        57.1,
+        449.6,
+        508.4,
+        723.3
+      ]
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

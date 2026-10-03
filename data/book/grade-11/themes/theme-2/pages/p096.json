@@ -1,0 +1,126 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 96,
+  "pdf_page": 97,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 96,
+    "pdf_page": 97,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P096-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "            2. Tema\n\n\n                                                              Tahminim:\n                              katar\n                                                              Cümlem:\n\n\n                                                              Tahminim:\n                           kampana\n                                                              Cümlem:\n\n\n                                                              Tahminim:\n                                hat\n                                                              Cümlem:\n\n\n                                                              Tahminim:\n                            toynak\n                                                              Cümlem:\n\n\n        3. Hikâyede kullanılan bu kelimelerin seçilme nedenlerine ilişkin tahmin-\n           lerinizi yazınız.\n             .................................................................................................................................................\n             .................................................................................................................................................\n             .................................................................................................................................................\n             .................................................................................................................................................   Söz Varlığı çalışmasına\n                                                                                                                                                                      karekoddan\n             .................................................................................................................................................       ulaşabilirsiniz.\n\n        4. Aşağıdaki örnek metinlerden yararlanarak Türkçenin farklı şiveleriyle ilgili çalışmaları yapınız.\n\n            Kazak Türkçesi                                                                                             Türkiye Türkçesi\n            Dostıq, qastıq, bar qızıq-jüreq isi,                                                                       Dostluk, düşmanlık hepsi de yürek işi,\n            Ar, uyattın bir aqı-küzetşisi.                                                                             Ar, utanmanın akıl bekçisi.\n            Ar men uyat sınbasa, özge qılıq,                                                                           Ar ile utanma bitmezse, başka bir konu,\n            Arın, alqın-bul künnin martebesi                                                                           Arlanma, büyüklük bu günün mertebesi\n                            Abay Kunanbayulı\n                            Ertuğrul Yaman, Türk Dünyası Ortak Edebiyatı\n\n\n            Türkmen Türkçesi                                                                                            Türkiye Türkçesi\n            Men Aşğabatlı                                                                                                Ben Aşkabatlıyım\n            Giice yene gerdi gara perdesin,                                                                              Gece yine gerdi kara perdesini,\n            Saansız haraabaanı gizledi gözden.                                                                           Sayısız harabeyi gizledi gözden.\n            Binaaçı motorlar bes etdi sesin,                                                                             İnşaat motorları kesti sesini,\n            Binaaçılar sııldı çañını yüzden.                                                                             Bina ustaları sildi tozunu yüzden.\n                            Ata Atacanov\n                            Ertuğrul Yaman, Türk Dünyası Ortak Edebiyatı\n\n\n\t\t\t\t\n\n\n\n\n       96",
+      "order": 1,
+      "source": {
+        "printed_page": 96,
+        "pdf_page": 97,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 59
+      }
+    },
+    {
+      "id": "G11-T2-P096-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "2. Tema",
+      "order": 2,
+      "source": {
+        "printed_page": 96,
+        "pdf_page": 97,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P096-VIS01",
+      "type": "visual",
+      "caption": "karekoddan",
+      "alt_description": "Sayfada karekod biçimli bir görsel bulunur; karekodun yönlendirdiği dış medya bu PDF kaynağında yer almaz.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 1,
+      "vector_shape_count": 27,
+      "order": 3,
+      "source": {
+        "printed_page": 96,
+        "pdf_page": 97,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 23,
+        "line_end": 23
+      }
+    },
+    {
+      "id": "G11-T2-P096-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P096-Q03",
+        "G11-T2-P096-Q04"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P096-VIS01"
+      ],
+      "order": 4,
+      "source": {
+        "printed_page": 96,
+        "pdf_page": 97,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P096-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Hikâyede kullanılan bu kelimelerin seçilme nedenlerine ilişkin tahminlerinizi yazınız. ................................................................................................................................................. Söz Varlığı çalışmasına karekoddan ................................................................................................................................................. ulaşabilirsiniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P096-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P096-VIS01"
+      ],
+      "order": 5,
+      "source": {
+        "printed_page": 96,
+        "pdf_page": 97,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 24,
+        "line_end": 32
+      }
+    },
+    {
+      "id": "G11-T2-P096-Q04",
+      "type": "question",
+      "question_number": "4",
+      "text": "Aşağıdaki örnek metinlerden yararlanarak Türkçenin farklı şiveleriyle ilgili çalışmaları yapınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P096-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 96,
+        "pdf_page": 97,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 33,
+        "line_end": 59
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

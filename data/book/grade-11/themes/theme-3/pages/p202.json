@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 202,
+  "pdf_page": 203,
+  "section": "metin-tahlili-2-okuma-biyografi-tezkire",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 202,
+    "pdf_page": 203,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n\n           Sıra Sizde\n\n\n 1. Mehmet Akif Ersoy metninden öznel ve nesnel ifadelere örnekler bularak ilgili yerlere yazınız.\n\n\n                                             Öznel İfadeler                                                                                                Nesnel İfadeler\n\n\n\n\n 2. Biyografi türünü öznel ve nesnel anlatım açısından değerlendirdiğinizde hangi anlatım ön plandadır?\n    Gerekçesiyle açıklayınız.\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n      ......................................................................................................................................................................................................................\n\n\n\n\n          Fark Edelim\n\n\n Soruları metinlerden hareketle cevaplayınız.\n\n\n                                                                                        Kısakürek, Necip Fazıl\n O ve Ben adlı otobiyografisinde kaydettiğine göre 25 Mayıs 1905’te İstanbul Çemberlitaş’ta cinayet mahkemesi\n reisliğinden emekli büyük babası Mehmed Hilmi Efendi’nin konağında doğdu. Babası Mekteb-i Hukuk mezu-\n nu ve bazı memuriyetlerde bulunmuş Abdülbâki Fâzıl Bey, annesi Mediha Hanım’dır. Baba tarafından Maraşlı\n olan Kısakürekoğulları ailesinin kökü Dulkadıroğulları’na dayanmaktadır. Asıl adı Ahmed Necip olan Necip Fazıl\n okuma yazmayı büyük babasından öğrendi. Çeşitli okullarda kesintili ve düzensiz bir öğrenim hayatı geçirdi.\n Önce Gedikpaşa’da bir Fransız, sonra aynı yerde bir Amerikan mektebinde, Büyükdere Emin Efendi mahalle\n mektebinde, Büyük Reşid Paşa Numune, Vaniköy Rehber-i İttihad mekteplerinde okuduktan sonra Heybeliada\n Numune Mektebi’nden mezun oldu. Aynı yıl Heybeliada Bahriye Mektebi’ne kaydoldu. Burada da beş yıl oku-\n du, ancak diploma alamadan ayrıldı. 1921’de İstanbul Dârülfünunu Felsefe Şubesi’ne yazıldı. Bu öğrenimini de\n tamamlayamadan kazandığı devlet bursu ile felsefe tahsili için Paris’e gitti.\n                                                                                                                                                    M. Orhan Okay, İslam Ansiklopedisi\n\n\n\n202",
+  "blocks": [
+    {
+      "id": "G11-T3-P202-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Sıra Sizde",
+      "instruction_ids": [
+        "G11-T3-P202-INST01"
+      ],
+      "question_ids": [
+        "G11-T3-P202-Q01",
+        "G11-T3-P202-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P202-TEXT01",
+        "G11-T3-P202-TEXT02",
+        "G11-T3-P195-TEXT01",
+        "G11-T3-P195-TEXT02",
+        "G11-T3-P195-TEXT03",
+        "G11-T3-P196-TEXT01",
+        "G11-T3-P197-TEXT01",
+        "G11-T3-P197-TEXT02",
+        "G11-T3-P198-TEXT01",
+        "G11-T3-P198-TEXT02",
+        "G11-T3-P198-TEXT03",
+        "G11-T3-P198-TEXT04",
+        "G11-T3-P198-TEXT05",
+        "G11-T3-P198-TEXT06"
+      ],
+      "visual_ids": [
+        "G11-T3-P202-VIS01"
+      ],
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203
+      }
+    },
+    {
+      "id": "G11-T3-P202-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Two large side-by-side empty panels headed “Öznel İfadeler” and “Nesnel İfadeler”.",
+      "alt_description": "Two large side-by-side empty panels headed “Öznel İfadeler” and “Nesnel İfadeler”.",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203
+      }
+    },
+    {
+      "id": "G11-T3-P202-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Sıra Sizde",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P202-Q01",
+      "type": "question",
+      "order": 4,
+      "text": "Mehmet Akif Ersoy metninden öznel ve nesnel ifadelere örnekler bularak ilgili yerlere yazınız.",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 7,
+        "line_end": 7
+      },
+      "question_number": "1",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P202-TEXT01",
+        "G11-T3-P202-TEXT02",
+        "G11-T3-P195-TEXT01",
+        "G11-T3-P195-TEXT02",
+        "G11-T3-P195-TEXT03",
+        "G11-T3-P196-TEXT01",
+        "G11-T3-P197-TEXT01",
+        "G11-T3-P197-TEXT02",
+        "G11-T3-P198-TEXT01",
+        "G11-T3-P198-TEXT02",
+        "G11-T3-P198-TEXT03",
+        "G11-T3-P198-TEXT04",
+        "G11-T3-P198-TEXT05",
+        "G11-T3-P198-TEXT06"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P202-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P202-TEXT01",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Öznel İfadeler Nesnel İfadeler",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "id": "G11-T3-P202-Q02",
+      "type": "question",
+      "order": 6,
+      "text": "Biyografi türünü öznel ve nesnel anlatım açısından değerlendirdiğinizde hangi anlatım ön plandadır? Gerekçesiyle açıklayınız.",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 15,
+        "line_end": 23
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P202-TEXT01",
+        "G11-T3-P202-TEXT02",
+        "G11-T3-P195-TEXT01",
+        "G11-T3-P195-TEXT02",
+        "G11-T3-P195-TEXT03",
+        "G11-T3-P196-TEXT01",
+        "G11-T3-P197-TEXT01",
+        "G11-T3-P197-TEXT02",
+        "G11-T3-P198-TEXT01",
+        "G11-T3-P198-TEXT02",
+        "G11-T3-P198-TEXT03",
+        "G11-T3-P198-TEXT04",
+        "G11-T3-P198-TEXT05",
+        "G11-T3-P198-TEXT06"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P202-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P202-H02",
+      "type": "heading",
+      "order": 7,
+      "text": "Fark Edelim",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 28,
+        "line_end": 28
+      }
+    },
+    {
+      "id": "G11-T3-P202-INST01",
+      "type": "instruction",
+      "order": 8,
+      "text": "Soruları metinlerden hareketle cevaplayınız.",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 31,
+        "line_end": 31
+      }
+    },
+    {
+      "id": "G11-T3-P202-TEXT02",
+      "type": "literary_text",
+      "order": 9,
+      "text": "Kısakürek, Necip Fazıl O ve Ben adlı otobiyografisinde kaydettiğine göre 25 Mayıs 1905’te İstanbul Çemberlitaş’ta cinayet mahkemesi reisliğinden emekli büyük babası Mehmed Hilmi Efendi’nin konağında doğdu. Babası Mekteb-i Hukuk mezunu ve bazı memuriyetlerde bulunmuş Abdülbâki Fâzıl Bey, annesi Mediha Hanım’dır. Baba tarafından Maraşlı olan Kısakürekoğulları ailesinin kökü Dulkadıroğulları’na dayanmaktadır. Asıl adı Ahmed Necip olan Necip Fazıl okuma yazmayı büyük babasından öğrendi. Çeşitli okullarda kesintili ve düzensiz bir öğrenim hayatı geçirdi. Önce Gedikpaşa’da bir Fransız, sonra aynı yerde bir Amerikan mektebinde, Büyükdere Emin Efendi mahalle mektebinde, Büyük Reşid Paşa Numune, Vaniköy Rehber-i İttihad mekteplerinde okuduktan sonra Heybeliada Numune Mektebi’nden mezun oldu. Aynı yıl Heybeliada Bahriye Mektebi’ne kaydoldu. Burada da beş yıl okudu, ancak diploma alamadan ayrıldı. 1921’de İstanbul Dârülfünunu Felsefe Şubesi’ne yazıldı. Bu öğrenimini de tamamlayamadan kazandığı devlet bursu ile felsefe tahsili için Paris’e gitti. M. Orhan Okay, İslam Ansiklopedisi",
+      "source": {
+        "printed_page": 202,
+        "pdf_page": 203,
+        "line_start": 34,
+        "line_end": 45
+      }
+    }
+  ]
+}

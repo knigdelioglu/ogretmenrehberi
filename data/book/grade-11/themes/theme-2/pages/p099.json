@@ -1,0 +1,114 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 99,
+  "pdf_page": 100,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 99,
+    "pdf_page": 100,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P099-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "                                                                                                                                                            Kültür Yolculuğu\n\n\n2. Ön bilgilerinizden hareketle aşağıdaki görsellerin sizde çağrıştırdığı kavramları altlarındaki boşluklara\n   yazınız.\n\n\n\n\n3. Yukarıdaki görsellerin dışında Türk dünyasının ortak kültürünü yansı-\n   tabilecek ne tür görseller olabilir, düşüncelerinizi yazınız.\n  .................................................................................................................................................\n  .................................................................................................................................................\n  .................................................................................................................................................\n  .................................................................................................................................................\n  .................................................................................................................................................\n                                                                                                                                                      Türk Dünyası Ortak\n  .................................................................................................................................................   Kültürü çalışmasına\n                                                                                                                                                          karekoddan\n  .................................................................................................................................................     ulaşabilirsiniz.\n  .................................................................................................................................................\n  .................................................................................................................................................\n\n\n\n                                                                                                                                                                               99",
+      "order": 1,
+      "source": {
+        "printed_page": 99,
+        "pdf_page": 100,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 26
+      }
+    },
+    {
+      "id": "G11-T2-P099-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P099-Q02",
+        "G11-T2-P099-Q03"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P099-VIS01"
+      ],
+      "order": 2,
+      "source": {
+        "printed_page": 99,
+        "pdf_page": 100,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P099-Q02",
+      "type": "question",
+      "question_number": "2",
+      "text": "Ön bilgilerinizden hareketle aşağıdaki görsellerin sizde çağrıştırdığı kavramları altlarındaki boşluklara yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P099-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P099-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 99,
+        "pdf_page": 100,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 9
+      }
+    },
+    {
+      "id": "G11-T2-P099-VIS01",
+      "type": "visual",
+      "caption": "karekoddan",
+      "alt_description": "Farklı kültür ögelerini gösteren altı görsel kartı iki sıra hâlinde dizilmiştir; kartların altında yazma alanları bulunur.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 7,
+      "vector_shape_count": 119,
+      "order": 4,
+      "source": {
+        "printed_page": 99,
+        "pdf_page": 100,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T2-P099-Q03",
+      "type": "question",
+      "question_number": "3",
+      "text": "Yukarıdaki görsellerin dışında Türk dünyasının ortak kültürünü yansıtabilecek ne tür görseller olabilir, düşüncelerinizi yazınız. Türk Dünyası Ortak ................................................................................................................................................. Kültürü çalışmasına karekoddan ................................................................................................................................................. ulaşabilirsiniz.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P099-SRC01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [
+        "G11-T2-P099-VIS01"
+      ],
+      "order": 5,
+      "source": {
+        "printed_page": 99,
+        "pdf_page": 100,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 10,
+        "line_end": 26
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

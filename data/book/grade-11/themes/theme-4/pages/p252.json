@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 252,
+  "pdf_page": 253,
+  "section": {
+    "id": "theme-4-reading-mimar-sinan",
+    "title": "Metin Tahlili-1 (Anlama): Okuma — Ben, Mimar Sinan"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 252,
+    "pdf_page": 253
+  },
+  "page_text": "  4. Tema\n\n\n\n\n        MİMAR                    İnsan, yapabileceğini söylemeli, söylediğini de\n        SİNAN                    yapmalı.\n\n\n\n\n                                 Bak a mimarbaşı! Zaman rüzgâr gibi. Dünya ölüm-\n                                 lü. Hayat bir rüya. Saltanat bir cihan kavgası. Bir\n        8. SES\n                                 gün o da bitecek. Benim adıma da bir cami yap-\n                                 manı isterim. Güzel bir cami.\n\n\n\n\n                                 Mimarbaşılık, çok önemli bir görev! Bu göreve\n        3. SES\n                                 Sinan getirilmeli. Bu işi ancak o yürütebilir.\n\n\n\n\n        MİMAR                    Evet hünkârım. Tanrı’nın yardımıyla, söz verdiğim\n        SİNAN                    tarihte, camiyi tamamlayıp kapısını kapayacağım.\n\n\n\n\n      b) Kişilerin tespit ettiğiniz özelliklerinden hangilerinin sizi daha çok etkilediğini gerekçesiyle açıklayınız.\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n      c) Mimar Sinan gibi başarılı biri olsaydınız hangi özelliklerinizle tanınmak isterdiniz? Açıklayınız.\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n 3. Metinde “Ben de Prut’ta, bilgim, azmim ve çalışkanlığımla talihimi yenmiştim.” cümlesiyle ifade edilen dü-\n    şünce, yalnızca belli bir dönemde değil insanlık tarihi boyunca geçerliliğini koruyan bir düşüncedir. Buna\n    göre\n      a) İzleyiciye / okura verilmek istenen temel iletiyi göz önünde bulundurarak bu sözü yorumlayınız.\n      b) Başarıya ulaşmak isteyen biri, başka hangi özelliklere sahip olmalıdır? Açıklayınız.\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n        .................................................................................................................................................................................................................\n\n\n\n\n252",
+  "blocks": [
+    {
+      "id": "G11-T4-P252-ACT01",
+      "type": "activity",
+      "order": 1,
+      "title": "Metin Tahlili-1 (Anlama): Okuma — Ben, Mimar Sinan",
+      "instruction_ids": [
+        "G11-T4-P252-INST01"
+      ],
+      "question_ids": [
+        "G11-T4-P252-Q01"
+      ],
+      "table_ids": [
+        "G11-T4-P252-TABLE01"
+      ],
+      "related_text_ids": [
+        "G11-T4-P243-LIT01"
+      ],
+      "source": {
+        "printed_page": 252,
+        "pdf_page": 253
+      }
+    },
+    {
+      "id": "G11-T4-P252-Q01",
+      "type": "question",
+      "order": 1,
+      "question_number": "2",
+      "text": "",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P243-LIT01"
+      ],
+      "subquestions": [
+        {
+          "label": "b",
+          "text": "Kişilerin tespit ettiğiniz özelliklerinden hangilerinin sizi daha çok etkilediğini gerekçesiyle açıklayınız."
+        },
+        {
+          "label": "c",
+          "text": "Mimar Sinan gibi başarılı biri olsaydınız hangi özelliklerinizle tanınmak isterdiniz? Açıklayınız."
+        }
+      ],
+      "continuation": {
+        "from_previous_page": true,
+        "previous_question_id": "G11-T4-P251-Q02"
+      },
+      "source": {
+        "printed_page": 252,
+        "pdf_page": 253
+      }
+    },
+    {
+      "id": "G11-T4-P252-TABLE01",
+      "type": "table",
+      "order": 1,
+      "title": "Ben, Mimar Sinan karakter çözümleme tablosunun devamı",
+      "columns": [
+        "Kişiler",
+        "Cümleler",
+        "Kişilik Özellikleri"
+      ],
+      "rows": [
+        [
+          "MİMAR SİNAN",
+          "İnsan, yapabileceğini söylemeli, söylediğini de yapmalı.",
+          ""
+        ],
+        [
+          "8. SES",
+          "Bak a mimarbaşı! Zaman rüzgâr gibi. Dünya ölümlü. Hayat bir rüya. Saltanat bir cihan kavgası. Bir gün o da bitecek. Benim adıma da bir cami yapmanı isterim. Güzel bir cami.",
+          ""
+        ],
+        [
+          "3. SES",
+          "Mimarbaşılık, çok önemli bir görev! Bu göreve Sinan getirilmeli. Bu işi ancak o yürütebilir.",
+          ""
+        ],
+        [
+          "MİMAR SİNAN",
+          "Evet hünkârım. Tanrı’nın yardımıyla, söz verdiğim tarihte, camiyi tamamlayıp kapısını kapayacağım.",
+          ""
+        ]
+      ],
+      "source": {
+        "printed_page": 252,
+        "pdf_page": 253
+      },
+      "continues_from": "G11-T4-P251-TABLE01",
+      "continuation": {
+        "from_previous_page": true,
+        "to_next_page": false
+      }
+    },
+    {
+      "id": "G11-T4-P252-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Kişiler / Cümleler / Kişilik Özellikleri",
+          "alt_description": "Bir önceki sayfada başlayan karakter tablosunun gri satırları devam eder; altında yazılı yanıt çizgileri vardır.",
+          "pedagogical_role": "Karakter özellikleri sorularının devamı."
+        }
+      ],
+      "source": {
+        "printed_page": 252,
+        "pdf_page": 253
+      }
+    },
+    {
+      "id": "G11-T4-P252-INST01",
+      "type": "instruction",
+      "order": 43,
+      "step_number": "3",
+      "text": "Metinde “Ben de Prut’ta, bilgim, azmim ve çalışkanlığımla talihimi yenmiştim.” cümlesiyle ifade edilen dü-\nşünce, yalnızca belli bir dönemde değil insanlık tarihi boyunca geçerliliğini koruyan bir düşüncedir. Buna\ngöre",
+      "source": {
+        "printed_page": 252,
+        "pdf_page": 253
+      }
+    }
+  ]
+}

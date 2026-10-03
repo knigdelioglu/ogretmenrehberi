@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 297,
+  "pdf_page": 298,
+  "section": {
+    "id": "theme-4-listening-viewing",
+    "title": "Metin Tahlili-3 (Anlama): Dinleme / İzleme — Anadolu İnsanı / Fedakârlık"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 297,
+    "pdf_page": 298
+  },
+  "page_text": "                                                                                                                                                                                       Hayatın Aynası\n\n\n\n        Süreci Değerlendirebilme\n\n1. Dinlediğiniz / izlediğiniz çok modlu metne değer katan unsurları günlük hayatınızın gerçeklerini göz\n   önünde bulundurarak kendi beğenileriniz doğrultusunda değerlendiriniz.\n  ......................................................................................................................................................................................................................\n  ......................................................................................................................................................................................................................\n2. İlgi alanlarınızdan ve belgesel hakkında yaptığınız değerlendirmelerden hareketle etkin dinleyici kimli-\n   ğinizi oluşturmak amacıyla aşağıdaki Öğrenme Günlüğü’nü tamamlayınız.\n\n\n\n\n                                                                  ÖĞRENME GÜNLÜĞÜ\n                                                                                                                                                                      ....... / ....... / .......\n                         Belgeselin bana kattığı değerler:\n\n\n\n\n                         Belgeselde yer alan benim de uygulayabileceğim davranış şekilleri:\n\n\n\n\n                         Belgeselde benim hayatımı yansıttığını düşündüğüm yaşantılar:\n\n\n\n\n                         Daha etkin izleyici olarak dikkat etmem gereken hususlar:\n\n\n\n\n                                                                                                                                                                                                                     297",
+  "blocks": [
+    {
+      "id": "G11-T4-P297-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "Öğrenme Günlüğü",
+          "alt_description": "Dört yönlendirme sorusu için renkli sekmeleri olan spiralli defter biçimli boş yazma alanı görülür.",
+          "pedagogical_role": "Dinleme/izleme sürecini değerlendirme."
+        }
+      ],
+      "source": {
+        "printed_page": 297,
+        "pdf_page": 298
+      }
+    },
+    {
+      "id": "G11-T4-P297-SH01",
+      "type": "subheading",
+      "order": 5,
+      "text": "Süreci Değerlendirebilme",
+      "source": {
+        "printed_page": 297,
+        "pdf_page": 298
+      }
+    },
+    {
+      "id": "G11-T4-P297-ACT01",
+      "type": "activity",
+      "order": 7,
+      "title": "Süreci Değerlendirebilme",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P297-Q01",
+        "G11-T4-P297-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "source": {
+        "printed_page": 297,
+        "pdf_page": 298
+      }
+    },
+    {
+      "id": "G11-T4-P297-Q01",
+      "type": "question",
+      "order": 7,
+      "question_number": "1",
+      "text": "Dinlediğiniz / izlediğiniz çok modlu metne değer katan unsurları günlük hayatınızın gerçeklerini göz\nönünde bulundurarak kendi beğenileriniz doğrultusunda değerlendiriniz.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 297,
+        "pdf_page": 298
+      }
+    },
+    {
+      "id": "G11-T4-P297-Q02",
+      "type": "question",
+      "order": 11,
+      "question_number": "2",
+      "text": "İlgi alanlarınızdan ve belgesel hakkında yaptığınız değerlendirmelerden hareketle etkin dinleyici kimli-\nğinizi oluşturmak amacıyla aşağıdaki Öğrenme Günlüğü’nü tamamlayınız.",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T4-P285-VIS01"
+      ],
+      "subquestions": [],
+      "source": {
+        "printed_page": 297,
+        "pdf_page": 298
+      }
+    },
+    {
+      "id": "G11-T4-P297-SH02",
+      "type": "subheading",
+      "order": 17,
+      "text": "ÖĞRENME GÜNLÜĞÜ",
+      "source": {
+        "printed_page": 297,
+        "pdf_page": 298
+      }
+    }
+  ]
+}

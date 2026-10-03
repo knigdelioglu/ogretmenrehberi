@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 177,
+  "pdf_page": 178,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 177,
+    "pdf_page": 178,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n14. Metindeki açık ve örtük iletilere örnekler yazınız.\n\n           Açık İletiler\n\n\n\n\n           Örtük İletiler\n\n\n\n\n     Karşılaştıralım\n\nAşağıdaki metni okuyarak soruyu cevaplayınız.\n\n\n\n\n                                                                       177",
+  "blocks": [
+    {
+      "id": "G11-T3-P177-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Karşılaştıralım",
+      "instruction_ids": [
+        "G11-T3-P177-INST01"
+      ],
+      "question_ids": [
+        "G11-T3-P177-Q01"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P177-TEXT01",
+        "G11-T3-P177-TEXT02",
+        "G11-T3-P177-TEXT03",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P177-VIS01"
+      ],
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178
+      }
+    },
+    {
+      "id": "G11-T3-P177-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Aerial photograph of the Jerusalem/Al-Aqsa compound with domes and surrounding buildings.",
+      "alt_description": "Aerial photograph of the Jerusalem/Al-Aqsa compound with domes and surrounding buildings.",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178
+      }
+    },
+    {
+      "id": "G11-T3-P177-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Metindeki açık ve örtük iletilere örnekler yazınız.",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178,
+        "line_start": 3,
+        "line_end": 3
+      },
+      "question_number": "14",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P177-TEXT01",
+        "G11-T3-P177-TEXT02",
+        "G11-T3-P177-TEXT03",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P177-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P177-TEXT01",
+      "type": "paragraph",
+      "order": 4,
+      "text": "Açık İletiler",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178,
+        "line_start": 5,
+        "line_end": 5
+      }
+    },
+    {
+      "id": "G11-T3-P177-TEXT02",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Örtük İletiler",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178,
+        "line_start": 10,
+        "line_end": 10
+      }
+    },
+    {
+      "id": "G11-T3-P177-H01",
+      "type": "heading",
+      "order": 6,
+      "text": "Karşılaştıralım",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178,
+        "line_start": 15,
+        "line_end": 15
+      }
+    },
+    {
+      "id": "G11-T3-P177-INST01",
+      "type": "instruction",
+      "order": 7,
+      "text": "Aşağıdaki metni okuyarak soruyu cevaplayınız.",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178,
+        "line_start": 17,
+        "line_end": 17
+      }
+    },
+    {
+      "id": "G11-T3-P177-TEXT03",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Aşağıdaki metni okuyarak soruyu cevaplayınız.",
+      "source": {
+        "printed_page": 177,
+        "pdf_page": 178,
+        "line_start": 17,
+        "line_end": 17
+      }
+    }
+  ]
+}

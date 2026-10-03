@@ -1,0 +1,134 @@
+{
+  "grade": 11,
+  "theme_id": "theme-2",
+  "theme_title": "Kültür Yolculuğu",
+  "printed_page": 102,
+  "pdf_page": 103,
+  "section": "Metin Tahlili-1 (Anlama) — Okuma",
+  "source": {
+    "printed_page": 102,
+    "pdf_page": 103,
+    "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+  },
+  "blocks": [
+    {
+      "id": "G11-T2-P102-SRC01",
+      "type": "other",
+      "role": "verbatim_page_transcription",
+      "description": "Poppler pdftotext -layout sayfa dökümü; sayfa üst bilgisi, metin akışı ve boşluklar korunmuştur.",
+      "text": "        2. Tema\n\n\n       11. Okuduğunuz metni özetleyerek aşağıya yazınız.\n\n\n\n\n               Sıra Sizde\n\n       1. Aşağıdaki metinleri inceleyiniz. Bu metinlerdeki fiilleri tablolarda ilgili yerlere yazınız.\n\n            Bir gün Kam Ganoğlu Han Bayındır yerinden kalkmış; otağını yeryüzüne diktirmişti. Alaca gölgeliği\n            gökyüzüne yükselmişti. Bin yerde ipek halıcığı döşeliydi. Hanlar hanı Han Bayındır yılda bir kere ziyafet\n            verip Oğuz beylerini misafir ederdi.\n                                                               (drl.: Bilge Ekinci), Dede Korkut‘tan Seçme Hikâyeler\n\n            Bıktım usandım sürüklemekten onu,\n            Senelerdir, ayaklarımın ucunda;\n            Bu dünyada biraz da yaşayalım,\n            O tek başına,\n            Ben tek başıma.\n                              Orhan Veli, Bütün Şiirleri\n\n            Allah’ımın emri ile cânımı alsa,\n            Cânım oraya gidip bedenim burada kalsa,\n            Rengim yaprak misâli hazân gibi sararsa,\n            İmân ile gideceğimi bilemezdim.\n                                     Hoca Ahmed Yesevî, Dîvân-ı Hikmet\n                                     (ed.: Mustafa Tatcı)\n\n            Kocaman çadırın içi gittikçe soğuyordu. Ekim ayı, olanca ayazını, uzak güneşinde daha çok soğutarak sanki\n            başka bir yer bulamamış gibi çadıra dolduruyordu. (…)\n            “Ne düşündün Sarı Hocam? Niye sustun?”\n            Her zaman böyle olurdu; çocuk, düşündürtmez, söyletirdi.\n            “Seni düşündüm Çağrı Beyimin oğlu.”\n                                                                                    Mustafa Necati Sepetçioğlu, Kilit\n\n\n      102",
+      "order": 1,
+      "source": {
+        "printed_page": 102,
+        "pdf_page": 103,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 40
+      }
+    },
+    {
+      "id": "G11-T2-P102-H01",
+      "type": "heading",
+      "level": 2,
+      "text": "2. Tema",
+      "order": 2,
+      "source": {
+        "printed_page": 102,
+        "pdf_page": 103,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 1,
+        "line_end": 1
+      }
+    },
+    {
+      "id": "G11-T2-P102-ACT01",
+      "type": "activity",
+      "title": "Metin Tahlili-1 (Anlama) — Okuma",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T2-P102-Q11",
+        "G11-T2-P102-Q01"
+      ],
+      "table_ids": [],
+      "visual_ids": [
+        "G11-T2-P102-VIS01"
+      ],
+      "order": 3,
+      "source": {
+        "printed_page": 102,
+        "pdf_page": 103,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba"
+      }
+    },
+    {
+      "id": "G11-T2-P102-Q11",
+      "type": "question",
+      "question_number": "11",
+      "text": "Okuduğunuz metni özetleyerek aşağıya yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P102-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 4,
+      "source": {
+        "printed_page": 102,
+        "pdf_page": 103,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 10
+      }
+    },
+    {
+      "id": "G11-T2-P102-VIS01",
+      "type": "visual",
+      "caption": null,
+      "alt_description": "Sayfa üzerinde metinle birlikte fotoğraf veya illüstrasyon yer alır; ayrıntısı PDF görüntüsünde gözlenebilen sınırlar içinde betimlenmiştir.",
+      "pedagogical_role": "Sayfadaki yönergeyle ilişkili görsel destek veya kaynak yönlendirmesi.",
+      "source_image_count": 1,
+      "vector_shape_count": 15,
+      "order": 5,
+      "source": {
+        "printed_page": 102,
+        "pdf_page": 103,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T2-P102-Q01",
+      "type": "question",
+      "question_number": "1",
+      "text": "Aşağıdaki metinleri inceleyiniz. Bu metinlerdeki fiilleri tablolarda ilgili yerlere yazınız.",
+      "subquestions": [],
+      "instruction_ids": [],
+      "related_text_ids": [
+        "G11-T2-P102-SRC01",
+        "G11-T2-P090-LIT01",
+        "G11-T2-P091-LIT01",
+        "G11-T2-P092-LIT01",
+        "G11-T2-P093-LIT01",
+        "G11-T2-P094-LIT01"
+      ],
+      "related_table_ids": [],
+      "related_media_ids": [],
+      "order": 6,
+      "source": {
+        "printed_page": 102,
+        "pdf_page": 103,
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "line_start": 11,
+        "line_end": 40
+      }
+    }
+  ],
+  "extraction_note": "source-layout transcription preserves Poppler line wrapping; semantic text fields rejoin line-end hyphenation only."
+}

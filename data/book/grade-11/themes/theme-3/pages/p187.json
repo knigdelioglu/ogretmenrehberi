@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 187,
+  "pdf_page": 188,
+  "section": "metin-tahlili-1-okuma-huzur",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 187,
+    "pdf_page": 188,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "Yaşamın İzinde\n\n\n2. Huzur romanının dil ve üslup özellikleriyle yapı unsurları arasındaki ilişkiyi aşağıdaki başlıklara göre be-\n   lirleyip yazınız.\n\n                        Olay-Dil ve Üslup İlişkisi                                                                           Kişi Kadrosu-Dil ve Üslup İlişkisi\n\n\n\n\n                     Mekân-Dil ve Üslup İlişkisi                                                                                   Zaman-Dil ve Üslup İlişkisi\n\n\n\n\n3. Yazarın üslup seçimiyle ilgili çözümlemeler yapmak üzere verilen soruları cevaplayınız.\n  a) Romanın temasının yazarın üslubuna etkisini yorumlayınız.\n    .................................................................................................................................................................................................................\n    .................................................................................................................................................................................................................\n    .................................................................................................................................................................................................................\n    .................................................................................................................................................................................................................\n\n\n\n                                                                                                                                                                                                                  187",
+  "blocks": [
+    {
+      "id": "G11-T3-P187-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "187. sayfadaki etkinlikler",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T3-P187-Q01",
+        "G11-T3-P187-Q02"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P187-TEXT01",
+        "G11-T3-P187-TEXT02",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "visual_ids": [
+        "G11-T3-P187-VIS01"
+      ],
+      "source": {
+        "printed_page": 187,
+        "pdf_page": 188
+      }
+    },
+    {
+      "id": "G11-T3-P187-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "Four empty clipboard-shaped response panels arranged in a two-by-two grid.",
+      "alt_description": "Four empty clipboard-shaped response panels arranged in a two-by-two grid.",
+      "source": {
+        "printed_page": 187,
+        "pdf_page": 188
+      }
+    },
+    {
+      "id": "G11-T3-P187-Q01",
+      "type": "question",
+      "order": 3,
+      "text": "Huzur romanının dil ve üslup özellikleriyle yapı unsurları arasındaki ilişkiyi aşağıdaki başlıklara göre belirleyip yazınız.",
+      "source": {
+        "printed_page": 187,
+        "pdf_page": 188,
+        "line_start": 3,
+        "line_end": 4
+      },
+      "question_number": "2",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P187-TEXT01",
+        "G11-T3-P187-TEXT02",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P187-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P187-TEXT01",
+      "type": "paragraph",
+      "order": 4,
+      "text": "Olay-Dil ve Üslup İlişkisi Kişi Kadrosu-Dil ve Üslup İlişkisi",
+      "source": {
+        "printed_page": 187,
+        "pdf_page": 188,
+        "line_start": 6,
+        "line_end": 6
+      }
+    },
+    {
+      "id": "G11-T3-P187-TEXT02",
+      "type": "paragraph",
+      "order": 5,
+      "text": "Mekân-Dil ve Üslup İlişkisi Zaman-Dil ve Üslup İlişkisi",
+      "source": {
+        "printed_page": 187,
+        "pdf_page": 188,
+        "line_start": 11,
+        "line_end": 11
+      }
+    },
+    {
+      "id": "G11-T3-P187-Q02",
+      "type": "question",
+      "order": 6,
+      "text": "Yazarın üslup seçimiyle ilgili çözümlemeler yapmak üzere verilen soruları cevaplayınız.",
+      "source": {
+        "printed_page": 187,
+        "pdf_page": 188,
+        "line_start": 16,
+        "line_end": 21
+      },
+      "question_number": "3",
+      "instruction_id": null,
+      "related_text_ids": [
+        "G11-T3-P187-TEXT01",
+        "G11-T3-P187-TEXT02",
+        "G11-T3-P167-TEXT01",
+        "G11-T3-P167-TEXT02",
+        "G11-T3-P168-TEXT01",
+        "G11-T3-P169-TEXT01",
+        "G11-T3-P170-TEXT01"
+      ],
+      "subquestions": [
+        {
+          "label": "a",
+          "text": "Romanın temasının yazarın üslubuna etkisini yorumlayınız."
+        }
+      ],
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": true
+      },
+      "related_visual_ids": [
+        "G11-T3-P187-VIS01"
+      ],
+      "related_question_ids": [
+        "G11-T3-P188-Q01"
+      ]
+    }
+  ],
+  "page_continuation_note": "Soru 3 alt maddeleri basılı s.187’de başlamış, alt maddeler b), c), ç) s.188’de devam etmiştir."
+}

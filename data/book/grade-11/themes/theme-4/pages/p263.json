@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-4",
+  "theme_title": "Hayatın Aynası",
+  "printed_page": 263,
+  "pdf_page": 264,
+  "section": {
+    "id": "theme-4-reading-merdiven",
+    "title": "Metin Tahlili-2 (Anlama): Okuma — Merdiven"
+  },
+  "source_pdf": "Edebiyat 11 ders kitabı.pdf",
+  "source": {
+    "printed_page": 263,
+    "pdf_page": 264
+  },
+  "page_text": "                                                                                                       Hayatın Aynası\n\n\n\n                     METİN TAHLİLİ-2 (ANLAMA)\n     OKUMA\n      Konuya Başlarken\n\n     1. Aşağıda insan yaşamının evrelerini yansıtan görseller verilmiştir. Bu görsellerle ilgili duygu ve düşünce-\n        lerinizi ilgili yerlere yazınız.\n\n\n\n\n     2. “Yaşam bir yolculuktur.”, “Yolun başındasın daha.”, “Yolun sonu görünüyor.”, “hayatın dikenli yolları”, “ömrümün\n        baharı”, “ikinci bahar” ifadelerinin sizin için neleri çağrıştırdığını açıklayınız.\n     3. Yukarıdaki görsellerden yola çıkarak insan hayatının hangi dönemiyle ilgili kısa bir hikâye yazmak ister-\n        diniz? Açıklayınız.\n\t\t\n\n\n\n\n                                                                                                                      263",
+  "blocks": [
+    {
+      "id": "G11-T4-P263-H01",
+      "type": "heading",
+      "order": 1,
+      "text": "METİN TAHLİLİ-2 (ANLAMA)",
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-VIS01",
+      "type": "visual",
+      "order": 1,
+      "elements": [
+        {
+          "caption": "İnsan yaşamının evreleri",
+          "alt_description": "Farklı yaşlarda insanların ev içi, dış mekân ve ekran bağlamında görüldüğü beş fotoğraf yer alır.",
+          "pedagogical_role": "Yaşamın farklı dönemleri üzerine başlangıç soruları."
+        }
+      ],
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-SH01",
+      "type": "subheading",
+      "order": 6,
+      "text": "OKUMA",
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-SH02",
+      "type": "subheading",
+      "order": 7,
+      "text": "Konuya Başlarken",
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-ACT01",
+      "type": "activity",
+      "order": 9,
+      "title": "Konuya Başlarken",
+      "instruction_ids": [],
+      "question_ids": [
+        "G11-T4-P263-Q01",
+        "G11-T4-P263-Q02",
+        "G11-T4-P263-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [],
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-Q01",
+      "type": "question",
+      "order": 9,
+      "question_number": "1",
+      "text": "Aşağıda insan yaşamının evrelerini yansıtan görseller verilmiştir. Bu görsellerle ilgili duygu ve düşünce-\nlerinizi ilgili yerlere yazınız.",
+      "instruction_id": null,
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-Q02",
+      "type": "question",
+      "order": 15,
+      "question_number": "2",
+      "text": "“Yaşam bir yolculuktur.”, “Yolun başındasın daha.”, “Yolun sonu görünüyor.”, “hayatın dikenli yolları”, “ömrümün\nbaharı”, “ikinci bahar” ifadelerinin sizin için neleri çağrıştırdığını açıklayınız.",
+      "instruction_id": null,
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    },
+    {
+      "id": "G11-T4-P263-Q03",
+      "type": "question",
+      "order": 17,
+      "question_number": "3",
+      "text": "Yukarıdaki görsellerden yola çıkarak insan hayatının hangi dönemiyle ilgili kısa bir hikâye yazmak ister-\ndiniz? Açıklayınız.",
+      "instruction_id": null,
+      "related_text_ids": [],
+      "subquestions": [],
+      "source": {
+        "printed_page": 263,
+        "pdf_page": 264
+      }
+    }
+  ]
+}

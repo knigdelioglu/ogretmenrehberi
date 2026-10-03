@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0.0",
+  "grade": 11,
+  "theme_id": "theme-3",
+  "theme_title": "Yaşamın İzinde",
+  "printed_page": 220,
+  "pdf_page": 221,
+  "section": "metin-tahlili-3-dinleme-izleme",
+  "source": {
+    "pdf_filename": "Edebiyat 11 ders kitabı.pdf",
+    "sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+    "printed_page": 220,
+    "pdf_page": 221,
+    "text_extraction": "Poppler pdftotext -layout"
+  },
+  "transcription": "3. Tema\n\n\n\n      Sıra Sizde\n\n\n\n Osmancık adlı sahnelenen tiyatro eserine ait çok modlu metinden ve aşağıdaki zihin hari-\n tasından hareketle soruları cevaplayınız.\n\n                                                                                            Osmancık videosuna\n                                                                                               karekoddan\n                                                                                              ulaşabilirsiniz.\n 1. Osmancık metni ile Direnişin Ustaları radyo tiyatrosu metnini aşağıdaki zihin haritasında verilen ölçütlere\n    göre karşılaştırarak haritayı tamamlayınız.\n\n\n\n                                                                              Benzerlik:\n          Müzik\n                                                                              Farklılık:\n\n                                                                              Benzerlik:\n                  Dil Kullanımı\n                                                                              Farklılık:\n\n                                                                              Benzerlik:\n                                   İleti\n                                                                              Farklılık:\n\n                                                                              Benzerlik:\n                                              Maliyet\n                                                                              Farklılık:\n  Sahnelenen Tiyatro\n  ile Radyo Tiyatrosu                                     Duygu               Benzerlik:\n       Arasındaki                                       Değişimleri           Farklılık:\n     Benzerlikler ve\n       Farklılıklar                                                           Benzerlik:\n                                                Dekor\n                                                                              Farklılık:\n\n\n                                                                              Benzerlik:\n                                Ses Tonu\n                                                                              Farklılık:\n\n                                                                              Benzerlik:\n                    Atmosfer\n                                                                              Farklılık:\n\n                                                                              Benzerlik:\n         Empati\n                                                                              Farklılık:\n\n\n\n 2. Zihin haritasından yola çıkarak dinlediğiniz radyo tiyatrosunun dil becerilerinizin gelişimine hangi katkı-\n    ları sağlayacağına dair görüşlerinizi söyleyiniz.\n 3. Direnişin Ustaları metninde kullanılan dil yapılarının (sözcük seçimi, cümle kuruluşları, üslup özellikleri\n    vb.), kişilerin iç dünyalarını yansıtması açısından işlevsel olup olmadığını gerekçesiyle açıklayınız.\n\n\n\n220",
+  "blocks": [
+    {
+      "id": "G11-T3-P220-ACT01",
+      "type": "activity",
+      "order": 1,
+      "text": "Sıra Sizde",
+      "instruction_ids": [
+        "G11-T3-P220-INST01",
+        "G11-T3-P220-TEXT01"
+      ],
+      "question_ids": [
+        "G11-T3-P220-Q01",
+        "G11-T3-P220-Q02",
+        "G11-T3-P220-Q03"
+      ],
+      "table_ids": [],
+      "related_text_ids": [
+        "G11-T3-P220-TEXT01",
+        "G11-T3-P220-TEXT02",
+        "G11-T3-P220-TEXT03",
+        "G11-T3-P220-TEXT04",
+        "G11-T3-P220-TEXT05",
+        "G11-T3-P220-TEXT06",
+        "G11-T3-P220-TEXT07",
+        "G11-T3-P220-TEXT08",
+        "G11-T3-P220-TEXT09",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "visual_ids": [
+        "G11-T3-P220-VIS01"
+      ],
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221
+      }
+    },
+    {
+      "id": "G11-T3-P220-VIS01",
+      "type": "visual",
+      "order": 2,
+      "text": "A colored mind map compares staged theatre and radio theatre; its branches are labeled Müzik, Dil Kullanımı, İleti, Maliyet, Duygu Değişimleri, Dekor, Ses Tonu, Atmosfer and Empati. The page also prints an Osmancık video QR code.",
+      "alt_description": "A colored mind map compares staged theatre and radio theatre; its branches are labeled Müzik, Dil Kullanımı, İleti, Maliyet, Duygu Değişimleri, Dekor, Ses Tonu, Atmosfer and Empati. The page also prints an Osmancık video QR code.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221
+      },
+      "source_note": "Kod içeriği/dış hedef PDF sayfasından okunmadı."
+    },
+    {
+      "id": "G11-T3-P220-H01",
+      "type": "heading",
+      "order": 3,
+      "text": "Sıra Sizde",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 4,
+        "line_end": 4
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT01",
+      "type": "instruction",
+      "order": 4,
+      "text": "Osmancık adlı sahnelenen tiyatro eserine ait çok modlu metinden ve aşağıdaki zihin haritasından hareketle soruları cevaplayınız.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 8,
+        "line_end": 9
+      }
+    },
+    {
+      "id": "G11-T3-P220-INST01",
+      "type": "instruction",
+      "order": 5,
+      "text": "tasından hareketle soruları cevaplayınız.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 9,
+        "line_end": 9
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT02",
+      "type": "paragraph",
+      "order": 6,
+      "text": "Osmancık videosuna karekoddan ulaşabilirsiniz.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 11,
+        "line_end": 13
+      }
+    },
+    {
+      "id": "G11-T3-P220-Q01",
+      "type": "question",
+      "order": 7,
+      "text": "Osmancık metni ile Direnişin Ustaları radyo tiyatrosu metnini aşağıdaki zihin haritasında verilen ölçütlere göre karşılaştırarak haritayı tamamlayınız.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 14,
+        "line_end": 15
+      },
+      "question_number": "1",
+      "instruction_id": "G11-T3-P220-INST01",
+      "related_text_ids": [
+        "G11-T3-P220-TEXT01",
+        "G11-T3-P220-TEXT02",
+        "G11-T3-P220-TEXT03",
+        "G11-T3-P220-TEXT04",
+        "G11-T3-P220-TEXT05",
+        "G11-T3-P220-TEXT06",
+        "G11-T3-P220-TEXT07",
+        "G11-T3-P220-TEXT08",
+        "G11-T3-P220-TEXT09",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P220-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P220-TEXT03",
+      "type": "paragraph",
+      "order": 8,
+      "text": "Benzerlik: Müzik Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 19,
+        "line_end": 21
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT04",
+      "type": "paragraph",
+      "order": 9,
+      "text": "Benzerlik: Dil Kullanımı Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 23,
+        "line_end": 25
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT05",
+      "type": "paragraph",
+      "order": 10,
+      "text": "Benzerlik: İleti Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 27,
+        "line_end": 29
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT06",
+      "type": "paragraph",
+      "order": 11,
+      "text": "Benzerlik: Maliyet Farklılık: Sahnelenen Tiyatro ile Radyo Tiyatrosu Duygu Benzerlik: Arasındaki Değişimleri Farklılık: Benzerlikler ve Farklılıklar Benzerlik: Dekor Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 31,
+        "line_end": 40
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT07",
+      "type": "paragraph",
+      "order": 12,
+      "text": "Benzerlik: Ses Tonu Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 43,
+        "line_end": 45
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT08",
+      "type": "paragraph",
+      "order": 13,
+      "text": "Benzerlik: Atmosfer Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 47,
+        "line_end": 49
+      }
+    },
+    {
+      "id": "G11-T3-P220-TEXT09",
+      "type": "paragraph",
+      "order": 14,
+      "text": "Benzerlik: Empati Farklılık:",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 51,
+        "line_end": 53
+      }
+    },
+    {
+      "id": "G11-T3-P220-Q02",
+      "type": "question",
+      "order": 15,
+      "text": "Zihin haritasından yola çıkarak dinlediğiniz radyo tiyatrosunun dil becerilerinizin gelişimine hangi katkıları sağlayacağına dair görüşlerinizi söyleyiniz.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 57,
+        "line_end": 58
+      },
+      "question_number": "2",
+      "instruction_id": "G11-T3-P220-INST01",
+      "related_text_ids": [
+        "G11-T3-P220-TEXT01",
+        "G11-T3-P220-TEXT02",
+        "G11-T3-P220-TEXT03",
+        "G11-T3-P220-TEXT04",
+        "G11-T3-P220-TEXT05",
+        "G11-T3-P220-TEXT06",
+        "G11-T3-P220-TEXT07",
+        "G11-T3-P220-TEXT08",
+        "G11-T3-P220-TEXT09",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P220-VIS01"
+      ]
+    },
+    {
+      "id": "G11-T3-P220-Q03",
+      "type": "question",
+      "order": 16,
+      "text": "Direnişin Ustaları metninde kullanılan dil yapılarının (sözcük seçimi, cümle kuruluşları, üslup özellikleri vb.), kişilerin iç dünyalarını yansıtması açısından işlevsel olup olmadığını gerekçesiyle açıklayınız.",
+      "source": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "line_start": 59,
+        "line_end": 60
+      },
+      "question_number": "3",
+      "instruction_id": "G11-T3-P220-INST01",
+      "related_text_ids": [
+        "G11-T3-P220-TEXT01",
+        "G11-T3-P220-TEXT02",
+        "G11-T3-P220-TEXT03",
+        "G11-T3-P220-TEXT04",
+        "G11-T3-P220-TEXT05",
+        "G11-T3-P220-TEXT06",
+        "G11-T3-P220-TEXT07",
+        "G11-T3-P220-TEXT08",
+        "G11-T3-P220-TEXT09",
+        "G11-T3-P216-TEXT01",
+        "G11-T3-P216-TEXT02"
+      ],
+      "subquestions": [],
+      "related_visual_ids": [
+        "G11-T3-P220-VIS01"
+      ]
+    }
+  ],
+  "content_limit": "Osmancık videosuna ilişkin QR bağlantısının hedef içeriği bu PDF sayfasında bulunmuyor; yalnızca basılı yönlendirme kaydedildi."
+}
