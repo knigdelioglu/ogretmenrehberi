@@ -62,6 +62,10 @@ class CanonicalContentTest {
             .steps.first { it.id == "s266-vocabulary" }
         assertEquals(LayoutKind.STRUCTURE, misleadingName.layout)
         assertNotNull(misleadingName.answer)
+        val sectionsOnly = bundle.byId.getValue("T11-T03-HUZUR-OKUMA")
+            .steps.first { it.id == "s169-reading" }
+        assertTrue(sectionsOnly.answer?.answer.isNullOrBlank())
+        assertTrue(sectionsOnly.answer?.answerSections is JsonValue.Object)
         assertTrue(bundle.lessons.flatMap { it.steps }.any { it.answer?.answerSections is JsonValue.Array ||
             it.answer?.answerSections is JsonValue.Object })
     }
