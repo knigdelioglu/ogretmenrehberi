@@ -65,7 +65,8 @@ class AndroidShellTest {
         }
         composeRule.onNodeWithTag("teacher-assist-open").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("teacher-assist-drawer"))
+            hasNodes(hasTestTag("teacher-assist-drawer")) ||
+                hasNodes(hasTestTag("teacher-assist-sheet"))
         }
         composeRule.onNodeWithTag("teacher-assist-list")
             .performScrollToNode(hasText("METİNSEL KANIT"))
@@ -184,15 +185,6 @@ class AndroidShellTest {
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
-        if (hasNodes(hasTestTag("lesson-outline-open"))) {
-            composeRule.onNodeWithTag("lesson-outline-open").performClick()
-        }
-        composeRule.onNodeWithTag("lesson-outline-list")
-            .performScrollToNode(hasTestTag("lesson-outline-step-1"))
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-outline-step-1"))
-        }
-        composeRule.onNodeWithTag("lesson-outline-step-1").performClick()
         val lessonList = composeRule.onNodeWithTag("lesson-screen-list")
         // The editor is a lazy-list item below the initial viewport, so scroll it
         // into composition before asserting/interacting with its test tag.

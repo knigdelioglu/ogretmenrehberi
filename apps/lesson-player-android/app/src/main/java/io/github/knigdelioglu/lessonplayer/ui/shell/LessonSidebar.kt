@@ -385,8 +385,7 @@ fun LessonV2Sidebar(
                     state = listState,
                     modifier = Modifier
                         .weight(1f)
-                        .fillMaxWidth()
-                        .testTag("lesson-outline-list"),
+                        .fillMaxWidth(),
                     verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                 ) {
                     itemsIndexed(session.order, key = { _, stepId -> stepId }) { index, stepId ->

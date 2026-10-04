@@ -2,6 +2,7 @@ package io.github.knigdelioglu.lessonplayer
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.material3.Text
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -117,7 +118,9 @@ class TabletLessonColumnTest {
         assertEquals("TeacherAssist width should not change", teacherAssistInitialBounds.width, teacherAssistAfterOpenBounds.width)
 
         // 4. Sol kolonun dışına (scrim üzerine) dokunulunca sol kolon yeniden gizlenir
-        composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performClick()
+        composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performTouchInput {
+            click(Offset(size.width - 1f, size.height / 2f))
+        }
         composeRule.waitUntil(timeoutMillis = 10_000) {
             composeRule.onAllNodesWithTag("tablet-lesson-sidebar-overlay")
                 .fetchSemanticsNodes().isEmpty()
