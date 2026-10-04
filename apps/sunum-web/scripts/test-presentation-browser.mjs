@@ -209,7 +209,7 @@ try {
     assert.equal(metrics.height, fixedHeaderHeight, "s.44 header height stays fixed across reveal layers");
     assert.equal(metrics.bodyTop, fixedBodyTop, "s.44 body position stays fixed across reveal layers");
     assert.ok(metrics.title.includes("Çözümleyebilme"), "full s.44 metadata remains available in the title");
-    if (metrics.title.includes("Metinden kanıt")) {
+    if (/metinden kanıt/i.test(metrics.title || "")) {
       evidenceReached = true;
       break;
     }
