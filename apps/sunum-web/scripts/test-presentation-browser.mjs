@@ -657,8 +657,15 @@ try {
   assert.equal(await page.evaluate("document.querySelectorAll('#canvas .content-images img').length"), 4, "ISSUE-098 four source images render");
   assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .content-images img')).every(image => image.naturalWidth > 100)"), true, "ISSUE-098 all source images load");
   screen = await openStep("degerlendirme-303-307", "s307-q11");
-  assert.ok(screen.text.includes("Elif, yaptığı araştırmalar") && screen.text.includes("A) Televizyon") && screen.text.includes("E) İnternet"), "ISSUE-099 full question and choices are visible before the answer");
-  assert.ok(!screen.text.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
+  let q11TaskText = screen.text;
+  assert.ok(!q11TaskText.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
+  for (let index = 0; index < 4 && !(q11TaskText.includes("A) Televizyon") && q11TaskText.includes("E) İnternet")); index += 1) {
+    const taskPage = await next();
+    assert.ok(!taskPage.includes("Doğru seçenek: B"), "ISSUE-099 choices are shown before the answer reveal");
+    q11TaskText += "\n" + taskPage;
+  }
+  assert.ok(q11TaskText.includes("Elif, yaptığı araştırmalar") && q11TaskText.includes("A) Televizyon") && q11TaskText.includes("E) İnternet"),
+    "ISSUE-099 full question and choices are visible across task pages before the answer");
   assert.ok((await advanceUntil((text) => text.includes("Doğru seçenek: B"), "s307 correct option")).includes("Doğru seçenek: B"),
     "ISSUE-099 correct option opens after the task");
   screen = await openStep("degerlendirme-303-307", "s307-q12");
