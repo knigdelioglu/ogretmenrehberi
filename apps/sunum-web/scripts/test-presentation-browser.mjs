@@ -697,8 +697,8 @@ try {
   screen = await openStep("konusma", "s59-rubric");
   assert.ok(screen.text.includes("Konu seçimi") && screen.text.includes("Başlangıç düzeyinde"),
     "s.59 authored rubric shows its criteria and performance levels to students");
-  assert.ok(screen.text.includes("resmî MEB/kitap anahtarı değildir"),
-    "s.59 authored rubric is identified as an original example, not an official source");
+  assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(screen.text),
+    "s.59 authored rubric does not reintroduce the removed stale disclaimer");
   const rubricDownload = await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
   assert.ok(rubricDownload?.href.endsWith("/assets/assessment-documents/iletisim-engelleri-drama-rubrik.docx"),
     "s.59 rubric has a same-origin Word download link");
