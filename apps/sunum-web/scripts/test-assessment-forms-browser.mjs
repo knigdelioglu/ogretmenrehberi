@@ -189,7 +189,11 @@ try {
       if (section.body) assert.ok(normalizedText.includes(section.body.replace(/\s+/g, " ").trim()),
         `${stepId} retains full rubric descriptor for ${section.title}`);
     }
-    if (stepId === "s59-rubric") assert.match(allText, /resmî MEB\/kitap anahtarı değildir/i);
+    if (stepId === "s59-rubric") assert.doesNotMatch(
+      allText,
+      /örnek anahtar|resmî MEB\/kitap anahtarı değildir/i,
+      "s59-rubric does not reintroduce the removed stale disclaimer"
+    );
 
     assert.ok(download && downloadTriggered, `${stepId} exposes and downloads its DOCX asset on a rendered content page`);
     const downloadedPath = await until(() => {
