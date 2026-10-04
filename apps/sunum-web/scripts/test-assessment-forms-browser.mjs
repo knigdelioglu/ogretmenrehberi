@@ -131,7 +131,12 @@ try {
   await page.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: profile });
   await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate("document.querySelector('#gate-password').value='sunum'; document.querySelector('#gate-submit').click()");
+  const password = process.env.SUNUM_SIFRE || "sunum";
+  await page.evaluate(`(() => {
+    const field = document.querySelector('#gate-password');
+    field.value = ${JSON.stringify(password)};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
   await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
 
   let pageParts = 0;

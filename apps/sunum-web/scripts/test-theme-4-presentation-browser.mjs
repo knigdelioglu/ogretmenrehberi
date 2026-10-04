@@ -179,9 +179,12 @@ try {
   });
   await page.send("Page.navigate", { url: root + "#/degerlendirme-303-307/0" });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate(
-    "document.querySelector('#gate-password').value = 'sunum'; document.querySelector('#gate-submit').click()"
-  );
+  const password = process.env.SUNUM_SIFRE || "sunum";
+  await page.evaluate(`(() => {
+    const field = document.querySelector('#gate-password');
+    field.value = ${JSON.stringify(password)};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
   await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked production site");
 
   // A single structured response takes the full content column and keeps its

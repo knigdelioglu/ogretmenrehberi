@@ -183,7 +183,12 @@ try {
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
   await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate("document.querySelector('#gate-password').value = 'sunum'; document.querySelector('#gate-submit').click()");
+  const password = process.env.SUNUM_SIFRE || "sunum";
+  await page.evaluate(`(() => {
+    const field = document.querySelector('#gate-password');
+    field.value = ${JSON.stringify(password)};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
   try {
     await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
   } catch (error) {

@@ -49,7 +49,16 @@ for (const [index, lesson] of lessons.entries()) {
     assert.equal(step.source.source_status, "VERIFIED");
     assert.ok(step.display_prompt.trim());
     if(step.answer) {
-      assert.ok(step.answer.question_id && step.answer.answer.trim());
+      const answerText = typeof step.answer.answer === "string" ? step.answer.answer.trim() : "";
+      const answerSections = step.answer.answer_sections;
+      const hasAnswerSections = answerSections &&
+        typeof answerSections === "object" &&
+        !Array.isArray(answerSections) &&
+        Object.keys(answerSections).length > 0;
+      assert.ok(
+        step.answer.question_id && (answerText || hasAnswerSections),
+        `Missing answer payload: ${lesson.lesson_id}/${step.id}`
+      );
       assert.ok(step.source.printed_page_range);
     } else {
       assert.ok(step.content, `Missing content: ${lesson.lesson_id}/${step.id}`);
