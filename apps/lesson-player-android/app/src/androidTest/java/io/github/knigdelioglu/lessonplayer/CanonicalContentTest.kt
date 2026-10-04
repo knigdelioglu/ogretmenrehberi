@@ -63,7 +63,7 @@ class CanonicalContentTest {
         val bundle = offlineRepository().load().bundle
         val karagoz = bundle.byId.getValue("T11-T01-KARAGOZ")
         val note = karagoz.steps.first { it.id == "s26-reference" }
-        assertTrue(note.content?.note?.contains("kitap örneklerini") == true)
+        assertTrue(note.content?.note?.contains("Kitap örnekleri") == true)
         assertEquals(LayoutKind.REFERENCE, note.layout)
         assertEquals(4, note.content?.sections?.size)
         val vocabulary = karagoz.steps.first { it.id == "s25-q1" }

@@ -105,7 +105,8 @@ fun LessonV2TeacherAssistPane(
                 modifier = Modifier
                     .weight(1f)
                     .fillMaxWidth()
-                    .padding(LessonSpacing.medium),
+                    .padding(LessonSpacing.medium)
+                    .testTag("teacher-assist-list"),
                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
             ) {
                 if (!hasAnyAssist) {

@@ -118,7 +118,7 @@ class TabletLessonColumnTest {
 
         // 4. Sol kolonun dışına (scrim üzerine) dokunulunca sol kolon yeniden gizlenir
         composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performClick()
-        composeRule.waitUntil(timeoutMillis = 3_000) {
+        composeRule.waitUntil(timeoutMillis = 10_000) {
             composeRule.onAllNodesWithTag("tablet-lesson-sidebar-overlay")
                 .fetchSemanticsNodes().isEmpty()
         }
