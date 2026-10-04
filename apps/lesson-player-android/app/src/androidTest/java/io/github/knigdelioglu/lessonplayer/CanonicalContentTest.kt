@@ -58,10 +58,10 @@ class CanonicalContentTest {
         val vocabulary = karagoz.steps.first { it.id == "s25-q1" }
         assertEquals(LayoutKind.VOCABULARY, vocabulary.layout)
         assertTrue(vocabulary.answer?.answerSections is JsonValue.Object)
-        val misleadingName = bundle.byId.getValue("T11-T04-MERDIVEN-ANLAMA-266-270")
+        val merdivenVocabulary = bundle.byId.getValue("T11-T04-MERDIVEN-ANLAMA-266-270")
             .steps.first { it.id == "s266-vocabulary" }
-        assertEquals(LayoutKind.STRUCTURE, misleadingName.layout)
-        assertNotNull(misleadingName.answer)
+        assertEquals(LayoutKind.VOCABULARY, merdivenVocabulary.layout)
+        assertNotNull(merdivenVocabulary.answer)
         assertTrue(bundle.lessons.flatMap { it.steps }.any { it.answer?.answerSections is JsonValue.Array ||
             it.answer?.answerSections is JsonValue.Object })
     }
