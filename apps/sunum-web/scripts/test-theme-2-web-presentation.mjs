@@ -121,7 +121,7 @@ function verifySourceCoverage() {
 
 function verifyFlowCoverage() {
   assert.equal(flowFiles.length, 9, "all nine Theme 2 flows are present");
-  assert.equal(flowSteps.length, 201, "all Theme 2 flow steps are present");
+  assert.equal(flowSteps.length, 203, "all Theme 2 flow steps are present");
   assert.ok(flows.every((flow) => flow.theme_id === "TEMA_02"));
   const stepIds = new Set();
   const linkedSourceIds = new Set();

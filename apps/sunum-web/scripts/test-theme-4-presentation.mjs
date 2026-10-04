@@ -241,8 +241,8 @@ assert.deepEqual(comparison.units.map((unit) => unit.section_keys), [
 ], "the seven comparison criteria reveal in two related groups");
 
 const p285 = pageByPrintedNumber.get(285);
-assert.ok(p285.blocks.some((block) => block.type === "visual" && /tarlada çalışan eller/i.test(JSON.stringify(block))),
-  "printed page 285 uses the field-working-hands visual description");
+assert.ok(p285.blocks.some((block) => block.type === "visual" && /raylarının yanında bir kaplumbağayı tutan eller/i.test(JSON.stringify(block))),
+  "printed page 285 describes the turtle beside the railway tracks");
 assert.match(answerById.get("T4-P285-Q02").answer, /izleme öncesi tahmindir/u);
 assert.doesNotMatch(answerById.get("T4-P285-Q02").answer, /kaplumbağa|demir yolu/iu,
   "the pre-watch hypothesis does not invent visual details absent from printed page 285");

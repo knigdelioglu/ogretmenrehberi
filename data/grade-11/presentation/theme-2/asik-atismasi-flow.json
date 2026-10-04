@@ -16,7 +16,7 @@
       "source_record_id": "T02-S0116",
       "answer_id": "T2-P136-Q01",
       "layout": "question",
-      "prompt": "Ozanların ve âşıkların sanatlarını icra etmede ve günlük hayatlarında sazın yerini ve önemini açıklayınız.",
+      "prompt": "Ozanların / âşıkların sanatlarını icra etmede ve günlük hayatlarında sazın yerini ve önemini ifade ediniz.",
       "prompt_mode": "VERBATIM_SHORT",
       "thinking": "Nida Tüfekçi’nin sazsız icra gözlemiyle Veysel’in şiirindeki saz anlatımını ayrı inceleyin; iki metnin gösterdiklerini karşılaştırın."
     },
@@ -25,7 +25,7 @@
       "source_record_id": "T02-S0117",
       "answer_id": "T2-P136-Q02",
       "layout": "question",
-      "prompt": "“Sen petek misâli Veysel de arı” dizesini sanat-sanatçı ilişkisi bakımından açıklayınız.",
+      "prompt": "Sazım’a metninde geçen “Sen petek misâli Veysel de arı” dizesini sanat-sanatçı ilişkisi bağlamında açıklayınız.",
       "prompt_mode": "VERBATIM_SHORT",
       "thinking": "Arı, petek ve bal sözlerinin şiirde hangi varlıklara karşılık geldiğini bulun; sanat üretimine ilişkin bağı benzetmenin tüm dizeleriyle açıklayın."
     },
@@ -83,6 +83,29 @@
       }
     },
     {
+      "id": "s140-listen",
+      "source_record_id": "T02-S0122",
+      "layout": "process",
+      "density": "large",
+      "prompt": "Âşık Atışması'nı not alarak dinleyiniz / izleyiniz.",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin.",
+        "items": [
+          "Bir âşığın diğerinin sözüne nasıl cevap verdiğini not edin.",
+          "Mizah, benzetme ve söz oyunu örneklerini işaretleyin.",
+          "Saz-söz ilişkisini ve ritmi gözleyin.",
+          "Beden dili, ses tonu ve dinleyiciyle etkileşim için kısa notlar alın."
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.140 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=140"
+          }
+        ]
+      }
+    },
+    {
       "id": "s139-checklist",
       "source_record_id": "T02-S0121",
       "answer_id": "T2-P139-PERF01",
@@ -121,29 +144,6 @@
           }
         ],
         "note": "Öğretmen, dinleme / izleme sürecini kitapta verilen Gözlem Formu doğrultusunda değerlendirir. Gözlenebilir davranışlar: amaç belirleme, dikkat, sabır, saygı, sözün bitmesini bekleme ve sınıf dinleme ortamına uyum. Geri bildirim öğrencinin kişiliğine değil, gözlenen davranışına ve bir sonraki çalışmada geliştirebileceği somut hedefe odaklanır."
-      }
-    },
-    {
-      "id": "s140-listen",
-      "source_record_id": "T02-S0122",
-      "layout": "process",
-      "density": "large",
-      "prompt": "Âşık Atışması'nı not alarak dinleyiniz / izleyiniz.",
-      "prompt_mode": "VERIFIED_SUMMARY",
-      "content": {
-        "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin.",
-        "items": [
-          "Bir âşığın diğerinin sözüne nasıl cevap verdiğini not edin.",
-          "Mizah, benzetme ve söz oyunu örneklerini işaretleyin.",
-          "Saz-söz ilişkisini ve ritmi gözleyin.",
-          "Beden dili, ses tonu ve dinleyiciyle etkileşim için kısa notlar alın."
-        ],
-        "sources": [
-          {
-            "label": "Ders kitabı s.140 — karekodun bulunduğu sayfayı aç",
-            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=140"
-          }
-        ]
       }
     },
     {

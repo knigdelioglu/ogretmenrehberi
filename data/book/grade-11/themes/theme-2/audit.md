@@ -50,13 +50,7 @@ PDF görüntüsünde kesinleşmiş bir baskı/yazım hatası saptanmadı. Kaynak
 
 ## Mevcut rehber verisiyle uyuşmazlıklar
 
-Book Source tamamlandıktan sonra mevcut tema 2 presentation flow dosyaları salt-okunur karşılaştırıldı. Dokuz akışın basılı sayfa aralıkları temanın 84–159 aralığıyla uyumludur. `VERBATIM_SHORT` olarak etiketlenmiş 48 istemin 23’ü, PDF sayfa metninde boşluk ve satır sonu tireleri normalleştirildikten sonra aynen bulundu; 25’i kitap metniyle bire bir aynı değildir. Bulunmayanların bir bölümü kısa özet veya küçük ifade değişiklikleri görünümündedir; aşağıdaki örnekler kaynak PDF ile akış istemi arasındaki metin farkını gösterir:
-
-- `asik-atismasi-flow.json`: akışta “Ozanların ve âşıkların ... sazın yerini ve önemini açıklayınız”; PDF basılı s.136’da “Ozanların / âşıkların ... sazın yerini ve önemini ifade ediniz.” yazıyor.
-- Aynı akıştaki “Sen petek misâli Veysel de arı” istemi PDF’de “Sazım’a metninde geçen ... dizesini sanat-sanatçı ilişkisi bağlamında açıklayınız.” biçiminde; akıştaki istem bağlamı kısaltıyor ve “bakımından” diyor.
-- `ogulla-bulusma-flow.json`: “Oğulla Buluşma metnini ana olay sırasını koruyarak özetleyiniz” ifadesi PDF’de “Okuduğunuz metni özetleyerek aşağıya yazınız” biçiminde.
-
-Bu farklar mevcut akışlarda bırakıldı. Akışlardan hiçbir metin Book Source’a aktarılmadı; Book Source yalnızca PDF’ye göre oluşturuldu.
+Book Source tamamlandıktan sonra mevcut tema 2 presentation flow dosyaları karşılaştırıldı. Dokuz akışın basılı sayfa aralıkları temanın 84–159 aralığıyla uyumludur. `VERBATIM_SHORT` olarak etiketlenmiş 48 istemin 23’ü, PDF sayfa metninde boşluk ve satır sonu tireleri normalleştirildikten sonra aynen bulundu; 25’i kitap metniyle bire bir aynı değildir. İncelemede s.133’te 6. ve 8. adımların anlamlarının yer değiştirdiği, `ogulla-bulusma-flow.json` s.102 özet isteminin kitaptaki genel yönergeyi daralttığı ve âşık atışması kontrol listesinin dinleme etkinliğinden önce sunulduğu görüldü. Akış istemleri kaynak sayfalarla uyumlu olacak ve kontrol listesi dinleme etkinliğinden sonra gelecek biçimde düzeltildi. Tema 2 akış doğrulayıcısındaki adım sayısı 203 akış adımına güncellendi. Kitap sayfa JSON’ları PDF’ye dayalı kaynak kayıtları olduğundan bu düzeltmeler sunum akışları ve kaynak indeksine yapıldı; sayfa dökümleri değiştirilmedi.
 
 ## ORTAK ALTYAPI ÖNERİLERİ
 

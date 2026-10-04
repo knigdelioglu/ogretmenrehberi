@@ -221,12 +221,13 @@
       "answer_id": "T4-P249-Q01",
       "layout": "comparison",
       "density": "compact",
-      "prompt": "Karşılaştıralım 1 — Gerçek hayatla tiyatro atmosferini dört ölçütte karşılaştırınız.",
+      "prompt": "Karşılaştıralım 1 — Gerçek hayatla tiyatro atmosferini beş ölçütte karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitabın balık kılçığı şemasını doldurun. Olay/durum, mekân, kişi ve söz varlığını ayrı ayrı ele alın.",
+        "lead": "Kitabın balık kılçığı şemasını doldurun. Olay ve durumu ayrı ölçütler olarak ele alın.",
         "items": [
-          "Olay ve durum",
+          "Olay",
+          "Durum",
           "Mekân",
           "Kişiler",
           "Söz varlığı"
