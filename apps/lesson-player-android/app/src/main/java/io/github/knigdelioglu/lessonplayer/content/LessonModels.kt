@@ -56,7 +56,7 @@ data class AnswerEntry(
     val printedPage: Int,
     val questionNo: String?,
     val promptSummary: String,
-    val answer: String,
+    val answer: String?,
     val guidance: String?,
     val explanation: String?,
     val evidenceQuotes: List<String>,
