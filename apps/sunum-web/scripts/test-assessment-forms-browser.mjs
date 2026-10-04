@@ -143,6 +143,8 @@ try {
   for (const [lessonSlug, stepId, filename] of files) {
     const { step } = await openStep(lessonSlug, stepId);
     const pagesText = [];
+    let download = null;
+    let downloadTriggered = false;
     let pageState = await inspectPage();
     assert.equal(pageState.formWidgets, 0, `${stepId} has no duplicate form-upload panel`);
     let marker = /·\s*(\d+)\/(\d+)/.exec(pageState.counter);
@@ -153,6 +155,17 @@ try {
       assert.ok(pageState.scrollHeight <= pageState.clientHeight + 1, `${stepId} page ${currentPage} requires no vertical scrolling`);
       assert.ok(pageState.scrollWidth <= pageState.clientWidth + 1, `${stepId} page ${currentPage} requires no horizontal scrolling`);
       pagesText.push(pageState.text);
+      const pageDownload = await page.evaluate(`(() => {
+        const a = document.querySelector('#canvas .source-links a[download]');
+        return a && { href: a.href, name: a.download, label: a.textContent.trim() };
+      })()`);
+      if (pageDownload && !download) {
+        download = pageDownload;
+        assert.ok(download.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
+        assert.ok(download.label, `${stepId} has a named teacher download`);
+        await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
+        downloadTriggered = true;
+      }
       if (currentPage < totalPages) {
         const previous = pageState.counter;
         await page.evaluate("document.querySelector('#dock [data-action=next]').click()");
@@ -178,13 +191,7 @@ try {
     }
     if (stepId === "s59-rubric") assert.match(allText, /resmî MEB\/kitap anahtarı değildir/i);
 
-    const download = await page.evaluate(`(() => {
-      const a = document.querySelector('#canvas .source-links a[download]');
-      return a && { href: a.href, name: a.download, label: a.textContent.trim() };
-    })()`);
-    assert.ok(download?.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
-    assert.ok(download.label, `${stepId} has a named teacher download`);
-    await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
+    assert.ok(download && downloadTriggered, `${stepId} exposes and downloads its DOCX asset on a rendered content page`);
     const downloadedPath = await until(() => {
       const path = profile + "/" + filename;
       return fs.existsSync(path) ? path : null;
