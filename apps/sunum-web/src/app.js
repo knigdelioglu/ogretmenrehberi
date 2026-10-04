@@ -794,7 +794,12 @@ function contentSources(content) {
 function contentLayerPages(step, b = 1) {
   const content = step.content || {};
   const lead = content.lead && content.lead !== step.prompt ? content.lead : "";
-  const meta = (page) => ({ ...page, lead, images: content.images, sources: content.sources });
+  const meta = (page, index) => ({
+    ...page,
+    lead: index === 0 ? lead : "",
+    images: content.images,
+    sources: index === 0 ? content.sources : undefined
+  });
   if (interleaveConfig(step)?.source === "dictionary_terms") {
     const first = interleavedDictionaryGroups(step, b)[0];
     return [meta(first ? { ...first, hideMeanings: true } : { content: {} })];
@@ -1210,7 +1215,7 @@ function stepSlide(lesson, step) {
       image.caption ? h("figcaption", {}, image.caption) : null
     ))));
     if (page.dictionary?.length) main.append(dictionaryCard(page.dictionary, { hideMeanings: page.hideMeanings }));
-    const sources = contentSources(step.content || {});
+    const sources = contentSources({ sources: page.sources });
     if (sources) main.append(sources);
   }
 

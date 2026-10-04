@@ -277,7 +277,7 @@
       "prompt": "İletişim Engelleri drama performansı — ölçüt ve puan düzeyleri",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin. Bu görev için hazırlanmış örnek anahtardır; resmî MEB/kitap anahtarı değildir.",
+        "lead": "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.",
         "sections": [
           {
             "title": "Başlangıç düzeyinde · 1–2 puan",
@@ -377,7 +377,7 @@
           },
           {
             "title": "Toplam puan ve hesaplama",
-            "body": "Altı ölçütün puanlarını toplayınız. Bu örnek anahtarda toplam puan 6–100 arasındadır."
+            "body": "Altı ölçütün puanlarını toplayınız. Toplam puan 6–100 arasındadır."
           }
         ],
         "sources": [
@@ -386,7 +386,7 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=58"
           },
           {
-            "label": "Örnek öğretmen anahtarı — resmî MEB/kitap anahtarı değildir.",
+            "label": "Öğretmen anahtarı",
             "url": "assets/assessment-documents/iletisim-engelleri-drama-rubrik.docx",
             "download": true
           }

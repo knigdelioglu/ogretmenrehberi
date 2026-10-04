@@ -52,7 +52,9 @@ for (const [filename, relativeFlow, stepId, count] of files) {
   }
 }
 const authored = byFlow.get("data/grade-11/presentation/theme-1/konusma-flow.json").steps.find((step) => step.id === "s59-rubric");
-assert.match(authored.content.lead, /resmî MEB\/kitap anahtarı değildir/i);
+assert.equal(authored.content.lead, "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.");
+assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
+assert.equal(authored.content.sources.find((source) => source.download === true)?.label, "Öğretmen anahtarı");
 assert.match(JSON.stringify(authored.content.sections), /Konu seçimi|İçeriğin uygunluğu|Canlandırma becerisi/);
 const downloadedNames = files.map(([name]) => name).sort();
 const builtNames = fs.readdirSync(path.join(distRoot, "assets/assessment-documents")).sort();

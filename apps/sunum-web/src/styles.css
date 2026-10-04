@@ -1377,6 +1377,7 @@ button {
   border-radius: 0.35em;
   background: var(--accent);
   color: var(--paper);
+  font-size: 0.62em;
   font-weight: 700;
   text-decoration: none;
 }
