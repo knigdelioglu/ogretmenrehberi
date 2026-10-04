@@ -86,6 +86,9 @@ object LessonEngine {
         if (answer != null) add(RevealKey.ANSWER)
         if (!answer?.evidenceQuotes.isNullOrEmpty()) add(RevealKey.EVIDENCE)
         if (!answer?.explanation.isNullOrBlank()) add(RevealKey.EXPLANATION)
+        if (RevealKey.DICTIONARY in step.revealOrder && !answer?.dictionaryTerms.isNullOrEmpty()) {
+            add(RevealKey.DICTIONARY)
+        }
         if (!step.content?.note.isNullOrBlank()) add(RevealKey.NOTE)
     }
 
@@ -210,6 +213,11 @@ object LessonEngine {
  * Explicit student-facing allowlist. Never serialize LessonSession, LessonStep, or
  * AnswerEntry to a pupil device; their teacher-only fields are intentionally absent here.
  */
+data class StudentDictionaryTerm(
+    val term: String,
+    val meaning: String
+)
+
 data class StudentProjection(
     val lessonId: String,
     val stepId: String,
@@ -220,6 +228,7 @@ data class StudentProjection(
     val guidance: String?,
     val evidenceQuotes: List<String>,
     val explanation: String?,
+    val dictionaryTerms: List<StudentDictionaryTerm>,
     val visibleVocabulary: Map<String, JsonValue>
 )
 
@@ -254,6 +263,9 @@ fun toStudentProjection(lesson: LessonData, state: LessonSession): StudentProjec
         explanation = answer?.explanation?.takeIf {
             lesson.themeId != "TEMA_01" && RevealKey.EXPLANATION in state.revealed
         },
+        dictionaryTerms = answer?.dictionaryTerms?.takeIf {
+            RevealKey.DICTIONARY in state.revealed
+        }?.map { StudentDictionaryTerm(it.term, it.meaning) }.orEmpty(),
         visibleVocabulary = visible
     )
 }
