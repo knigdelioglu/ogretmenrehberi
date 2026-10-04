@@ -417,16 +417,26 @@ class ContentRepository(
             require(type in setOf("question_answer", "performance_support", "source_limited")) {
                 "Unsupported answer category $type"
             }
+            val answerText = value.optionalString("answer")?.takeIf { it.isNotBlank() }
+            val answerSections = value.optionalJson("answer_sections")
+            val hasStructuredAnswer = when (answerSections) {
+                is JsonValue.Object -> answerSections.values.isNotEmpty()
+                is JsonValue.Array -> answerSections.items.isNotEmpty()
+                else -> false
+            }
+            require(answerText != null || hasStructuredAnswer) {
+                "Answer needs text or structured sections: ${value.getString("question_id")}"
+            }
             return AnswerEntry(
                 questionId = value.getString("question_id"),
                 entryType = type, printedPage = value.getInt("printed_page"),
                 questionNo = value.optionalString("question_no"),
                 promptSummary = value.getString("prompt_summary"),
-                answer = value.getString("answer").also { require(it.isNotBlank()) },
+                answer = answerText,
                 guidance = value.optionalString("guidance"),
                 explanation = value.optionalString("explanation"),
                 evidenceQuotes = value.optArray("evidence_quotes")?.strings() ?: emptyList(),
-                answerSections = value.optionalJson("answer_sections"),
+                answerSections = answerSections,
                 sourceLocator = value.getString("source_locator"),
                 dictionaryTerms = value.optArray("dictionary_terms")?.objects { item ->
                     val term = item.getString("term").trim()
