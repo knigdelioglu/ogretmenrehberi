@@ -31,6 +31,15 @@ export function answerEvidenceStages(units) {
   ]);
 }
 
+// Keep the paired answer and source context on the first evidence page only.
+export function evidenceContinuationPages(pairedAnswer, evidenceSections, quotePages) {
+  return quotePages.map((group, index) => ({
+    ...(index === 0 ? pairedAnswer : {}),
+    ...(index === 0 ? { evidenceSections } : {}),
+    quotes: group.values
+  }));
+}
+
 export function attachVocabularyAnswerFragments(pages, answerText) {
   if (answerText?.mode !== "include" || !answerText.fragments?.length) return pages;
   return pages.map((page) => {

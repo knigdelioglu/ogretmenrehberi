@@ -1,6 +1,6 @@
 // Ders Sunumu — bağımlılıksız sunum oynatıcı
 // Veri: şifreli ders kataloğu (__DATA_FILE__), build sırasında kanonik veriden üretilir.
-import { answerEvidenceStages, attachVocabularyAnswerFragments, groupItems, interleaveStages } from "./reveal-sequence.js";
+import { answerEvidenceStages, attachVocabularyAnswerFragments, evidenceContinuationPages, groupItems, interleaveStages } from "./reveal-sequence.js";
 import { splitAtSentences } from "./text-chunks.js";
 import { createLessonPptx, pptxFilename } from "./pptx-export.js";
 
@@ -676,10 +676,8 @@ function webAnswerLayerPages(step, b = 1) {
       maxChars: 700 * b
     });
     if (!quotePages.length) quotePages.push({ values: [] });
-    quotePages.forEach((group, index) => pages.push({
-      ...pairedAnswer,
-      evidenceSections,
-      quotes: group.values,
+    evidenceContinuationPages(pairedAnswer, evidenceSections, quotePages).forEach((page, index) => pages.push({
+      ...page,
       title: "Cevap ve metinden kanıt",
       pageId: `${unit.id}:evidence:${index + 1}`
     }));

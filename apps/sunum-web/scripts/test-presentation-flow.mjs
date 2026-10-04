@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { answerEvidenceStages, attachVocabularyAnswerFragments, groupItems, interleaveStages, insertThinkingReveal } from "../src/reveal-sequence.js";
+import { answerEvidenceStages, attachVocabularyAnswerFragments, evidenceContinuationPages, groupItems, interleaveStages, insertThinkingReveal } from "../src/reveal-sequence.js";
 import { splitAtSentences } from "../src/text-chunks.js";
 import { resolveVocabularyAnswerText, resolveWebPresentation, validateWebPresentationIndex } from "../../lesson-player/scripts/web-presentation.mjs";
 
@@ -38,6 +38,18 @@ assert.deepEqual(answerEvidenceStages([
 ]).map(({ type, unit }) => `${type}:${unit.id}`), [
   "answer:topic", "evidence:topic", "answer:main-idea", "evidence:main-idea"
 ], "Evidence sections and linked quotations follow their answer unit");
+const continuedEvidence = evidenceContinuationPages(
+  { sections: { conclusion: "Sonuç" }, answerText: "Gerekçe" },
+  { source: "Kaynak bağlamı" },
+  [{ values: ["Alıntı 1"] }, { values: ["Alıntı 2"] }, { values: ["Alıntı 3"] }, { values: ["Alıntı 4"] }]
+);
+assert.deepEqual(continuedEvidence[0], {
+  sections: { conclusion: "Sonuç" }, answerText: "Gerekçe",
+  evidenceSections: { source: "Kaynak bağlamı" }, quotes: ["Alıntı 1"]
+}, "The first evidence page keeps its answer and source context");
+assert.deepEqual(continuedEvidence.slice(1), [
+  { quotes: ["Alıntı 2"] }, { quotes: ["Alıntı 3"] }, { quotes: ["Alıntı 4"] }
+], "Evidence continuation pages do not repeat the same answer and source cards");
 
 const vocabularyGroups = attachVocabularyAnswerFragments([
   { terms: [["çağdaş", "Aynı dönemde yaşayan."], ["özge", "Başka."]] },
