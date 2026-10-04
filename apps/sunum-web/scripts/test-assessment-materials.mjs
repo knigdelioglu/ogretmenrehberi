@@ -56,7 +56,37 @@ assert.equal(authored.content.lead, "Her ölçüt ve dört puan düzeyini incele
 assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
 assert.equal(authored.content.sources.find((source) => source.download === true)?.label, "Öğretmen anahtarı");
 assert.match(JSON.stringify(authored.content.sections), /Konu seçimi|İçeriğin uygunluğu|Canlandırma becerisi/);
-const downloadedNames = files.map(([name]) => name).sort();
+const rubricPages = [
+  ["data/grade-11/presentation/theme-1/konusma-flow.json", "s59-rubric"],
+  ["data/grade-11/presentation/theme-1/yazma-flow.json", "s78-rubric"],
+  ["data/grade-11/presentation/theme-2/konusma-flow.json", "s135-reference"],
+  ["data/grade-11/presentation/theme-2/yazma-flow.json", "s153-rubric"],
+  ["data/grade-11/presentation/theme-3/kemal-tahir-mulakat-210-214-flow.json", "s214-rubric"],
+  ["data/grade-11/presentation/theme-3/radyo-diyalog-yazma-225-229-flow.json", "s228-rubric"],
+  ["data/grade-11/presentation/theme-4/tiyatro-canlandirma-280-283-flow.json", "s283-performance"],
+  ["data/grade-11/presentation/theme-4/afis-atolyesi-298-302-flow.json", "s302-rubric"]
+];
+const classScorer = "assets/assessment-documents/35-ogrenci-rubrik-puanlama.xlsx";
+for (const [relativeFlow, stepId] of rubricPages) {
+  const flow = byFlow.get(relativeFlow) ?? JSON.parse(fs.readFileSync(path.join(repoRoot, relativeFlow), "utf8"));
+  const step = flow.steps.find((entry) => entry.id === stepId);
+  assert.ok(step, `${relativeFlow}/${stepId} exists`);
+  assert.ok(step.content.sources.some((source) => source.url === classScorer && source.download === true),
+    `${stepId} links the 35-student rubric workbook`);
+}
+const xlsxSource = path.join(appRoot, "src", classScorer);
+const xlsxBuilt = path.join(distRoot, classScorer);
+for (const file of [xlsxSource, xlsxBuilt]) {
+  assert.ok(fs.existsSync(file), `35-student workbook exists: ${file}`);
+  execFileSync("unzip", ["-t", file], { stdio: "ignore" });
+  const workbookXml = execFileSync("unzip", ["-p", file, "xl/workbook.xml"], { encoding: "utf8" });
+  assert.equal((workbookXml.match(/<x:sheet\b/g) ?? []).length, 9, "workbook contains a class list and eight rubric sheets");
+  assert.match(workbookXml, /Sınıf Listesi/);
+  const firstRubricXml = execFileSync("unzip", ["-p", file, "xl/worksheets/sheet2.xml"], { encoding: "utf8" });
+  assert.match(firstRubricXml, /<x:f>/, "rubric totals are formula-driven");
+  assert.match(firstRubricXml, /<x:dataValidations\b/, "criterion score cells have validation");
+}
+const downloadedNames = [...files.map(([name]) => name), path.basename(classScorer)].sort();
 const builtNames = fs.readdirSync(path.join(distRoot, "assets/assessment-documents")).sort();
-assert.deepEqual(builtNames, downloadedNames, "only the requested rubric/peer-form documents are packaged");
-console.log(`[sunum-web] Assessment materials passed: ${files.length} DOCX links, peer criteria, rubric levels and totals.`);
+assert.deepEqual(builtNames, downloadedNames, "only the requested rubric/peer-form documents and class scorer are packaged");
+console.log(`[sunum-web] Assessment materials passed: ${files.length} DOCX links and the 35-student workbook across ${rubricPages.length} rubric pages.`);

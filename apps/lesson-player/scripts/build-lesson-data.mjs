@@ -342,7 +342,7 @@ function buildLesson(flowPath) {
     }
     for (const source of step.content?.sources ?? []) {
       const localDownload = source.download === true &&
-        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.docx$/i.test(source.url ?? "");
+        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.(?:docx|xlsx)$/i.test(source.url ?? "");
       if (!source.label?.trim() || (!/^https:\/\//i.test(source.url ?? "") && !localDownload) ||
         (source.download !== undefined && source.download !== true)) {
         fail(`Malformed presentation source link in ${flowName}/${step.id}`);

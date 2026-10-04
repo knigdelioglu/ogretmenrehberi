@@ -781,7 +781,7 @@ function contentSources(content) {
   return content.sources?.length ? h("nav", { class: "source-links", "aria-label": "Kaynaklar" },
     content.sources.map((source) => {
       const isDownload = source.download === true &&
-        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.docx$/i.test(source.url ?? "");
+        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.(?:docx|xlsx)$/i.test(source.url ?? "");
       return h("a", isDownload
         ? { href: source.url, download: "", class: "source-download" }
         : { href: source.url, target: "_blank", rel: "noopener noreferrer" }, source.label);
