@@ -1,5 +1,6 @@
 package io.github.knigdelioglu.lessonplayer.player
 
+import io.github.knigdelioglu.lessonplayer.content.DictionaryTerm
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
 import io.github.knigdelioglu.lessonplayer.content.LessonData
@@ -86,6 +87,9 @@ object LessonEngine {
         if (answer != null) add(RevealKey.ANSWER)
         if (!answer?.evidenceQuotes.isNullOrEmpty()) add(RevealKey.EVIDENCE)
         if (!answer?.explanation.isNullOrBlank()) add(RevealKey.EXPLANATION)
+        if (RevealKey.DICTIONARY in step.revealOrder && !answer?.dictionaryTerms.isNullOrEmpty()) {
+            add(RevealKey.DICTIONARY)
+        }
         if (!step.content?.note.isNullOrBlank()) add(RevealKey.NOTE)
     }
 
@@ -220,6 +224,7 @@ data class StudentProjection(
     val guidance: String?,
     val evidenceQuotes: List<String>,
     val explanation: String?,
+    val dictionaryTerms: List<DictionaryTerm>,
     val visibleVocabulary: Map<String, JsonValue>
 )
 
@@ -254,6 +259,9 @@ fun toStudentProjection(lesson: LessonData, state: LessonSession): StudentProjec
         explanation = answer?.explanation?.takeIf {
             lesson.themeId != "TEMA_01" && RevealKey.EXPLANATION in state.revealed
         },
+        dictionaryTerms = answer?.dictionaryTerms?.takeIf {
+            RevealKey.DICTIONARY in state.revealed
+        }.orEmpty(),
         visibleVocabulary = visible
     )
 }

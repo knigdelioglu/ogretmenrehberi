@@ -278,6 +278,49 @@ internal fun PresentationLessonScreen(
                         }
                     }
 
+                    if (projection.dictionaryTerms.isNotEmpty()) {
+                        item {
+                            Surface(
+                                modifier = Modifier.fillMaxWidth(),
+                                color = LessonColors.Surface,
+                                border = BorderStroke(1.dp, LessonColors.Border),
+                                shape = RoundedCornerShape(LessonShape.card)
+                            ) {
+                                Column(
+                                    modifier = Modifier.padding(density.cardPadding),
+                                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                ) {
+                                    Text(
+                                        text = "SÖZLÜK",
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = LessonColors.Primary,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    projection.dictionaryTerms.forEach { entry ->
+                                        GlossaryText(
+                                            text = entry.term,
+                                            style = MaterialTheme.typography.titleMedium,
+                                            color = LessonColors.Primary,
+                                            fontWeight = FontWeight.Bold
+                                        )
+                                        GlossaryText(
+                                            text = entry.meaning,
+                                            style = MaterialTheme.typography.bodyLarge,
+                                            color = LessonColors.TextPrimary
+                                        )
+                                        entry.source?.takeIf { it.isNotBlank() }?.let { source ->
+                                            Text(
+                                                text = "Kaynak: $source",
+                                                style = MaterialTheme.typography.labelSmall,
+                                                color = LessonColors.TextSecondary
+                                            )
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     if (answerVisible && step.layout !in setOf(LayoutKind.VOCABULARY, LayoutKind.COMPARISON) && answerDetails != null) {
                         item {
                             Surface(
