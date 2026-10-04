@@ -443,5 +443,6 @@ private fun revealLabel(key: RevealKey): String = when (key) {
     RevealKey.ANSWER -> "Cevap"
     RevealKey.EVIDENCE -> "Metinden kanıt"
     RevealKey.EXPLANATION -> "Açıklama"
+    RevealKey.DICTIONARY -> "Sözlük"
     RevealKey.NOTE -> "Öğretmen notu"
 }

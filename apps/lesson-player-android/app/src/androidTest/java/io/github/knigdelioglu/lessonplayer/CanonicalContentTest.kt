@@ -6,6 +6,7 @@ import io.github.knigdelioglu.lessonplayer.content.ContentOrigin
 import io.github.knigdelioglu.lessonplayer.content.ContentSource
 import io.github.knigdelioglu.lessonplayer.content.JsonValue
 import io.github.knigdelioglu.lessonplayer.content.LayoutKind
+import io.github.knigdelioglu.lessonplayer.content.RevealKey
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -58,10 +59,17 @@ class CanonicalContentTest {
         val vocabulary = karagoz.steps.first { it.id == "s25-q1" }
         assertEquals(LayoutKind.VOCABULARY, vocabulary.layout)
         assertTrue(vocabulary.answer?.answerSections is JsonValue.Object)
-        val misleadingName = bundle.byId.getValue("T11-T04-MERDIVEN-ANLAMA-266-270")
+        val dictionaryReveal = karagoz.steps.first { it.id == "s17-q2" }
+        assertTrue(RevealKey.DICTIONARY in dictionaryReveal.revealOrder)
+        assertEquals(6, dictionaryReveal.answer?.dictionaryTerms?.size)
+        val vocabularyStep = bundle.byId.getValue("T11-T04-MERDIVEN-ANLAMA-266-270")
             .steps.first { it.id == "s266-vocabulary" }
-        assertEquals(LayoutKind.STRUCTURE, misleadingName.layout)
-        assertNotNull(misleadingName.answer)
+        assertEquals(LayoutKind.VOCABULARY, vocabularyStep.layout)
+        assertNotNull(vocabularyStep.answer)
+        val sectionsOnly = bundle.byId.getValue("T11-T03-HUZUR-OKUMA")
+            .steps.first { it.id == "s169-reading" }
+        assertTrue(sectionsOnly.answer?.answer.isNullOrBlank())
+        assertTrue(sectionsOnly.answer?.answerSections is JsonValue.Object)
         assertTrue(bundle.lessons.flatMap { it.steps }.any { it.answer?.answerSections is JsonValue.Array ||
             it.answer?.answerSections is JsonValue.Object })
     }

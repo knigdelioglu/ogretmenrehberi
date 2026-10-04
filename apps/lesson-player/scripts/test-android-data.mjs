@@ -17,6 +17,10 @@ const workflowBytes = fs.readFileSync(path.join(assets, "teacher-workflow.json")
 const workflow = JSON.parse(workflowBytes.toString("utf8"));
 const hash = value => createHash("sha256").update(value).digest("hex");
 const serialize = value => JSON.stringify(value, null, 2) + "\n";
+const hasStructuredAnswer = value =>
+  Array.isArray(value)
+    ? value.length > 0
+    : value !== null && typeof value === "object" && Object.keys(value).length > 0;
 
 assert.deepEqual(lessons, expected, "All content including answers/guidance/nested structures must match web");
 assert.equal(manifest.contentSha256, hash(actualBytes));
@@ -49,7 +53,11 @@ for (const [index, lesson] of lessons.entries()) {
     assert.equal(step.source.source_status, "VERIFIED");
     assert.ok(step.display_prompt.trim());
     if(step.answer) {
-      assert.ok(step.answer.question_id && step.answer.answer.trim());
+      const answerText = typeof step.answer.answer === "string" ? step.answer.answer.trim() : "";
+      assert.ok(
+        step.answer.question_id && (answerText || hasStructuredAnswer(step.answer.answer_sections)),
+        `Missing answer payload: ${lesson.lesson_id}/${step.id}`
+      );
       assert.ok(step.source.printed_page_range);
     } else {
       assert.ok(step.content, `Missing content: ${lesson.lesson_id}/${step.id}`);
@@ -60,7 +68,7 @@ const witness = lessons.find(x => x.lesson_id === "T11-T01-KARAGOZ").steps
   .find(x => x.id === "s26-reference");
 assert.ok(witness.content.note, "Teacher note was lost");
 assert.equal(lessons.find(x => x.lesson_id === "T11-T04-MERDIVEN-ANLAMA-266-270")
-  .steps.find(x => x.id === "s266-vocabulary").layout, "structure");
+  .steps.find(x => x.id === "s266-vocabulary").layout, "vocabulary");
 const modified = structuredClone(lessons);
 const answered = modified.flatMap(x => x.steps).find(x => x.answer?.answer);
 answered.answer.answer += " İçerik değişti.";

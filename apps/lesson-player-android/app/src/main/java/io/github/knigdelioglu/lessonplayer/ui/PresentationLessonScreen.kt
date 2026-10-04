@@ -302,6 +302,42 @@ internal fun PresentationLessonScreen(
                         }
                     }
 
+                    if (projection.dictionaryTerms.isNotEmpty()) {
+                        item {
+                            Surface(
+                                modifier = Modifier.fillMaxWidth(),
+                                color = LessonColors.Surface,
+                                border = BorderStroke(1.dp, LessonColors.Border),
+                                shape = RoundedCornerShape(LessonShape.card)
+                            ) {
+                                Column(
+                                    modifier = Modifier.padding(density.cardPadding),
+                                    verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
+                                ) {
+                                    Text(
+                                        text = "SÖZLÜK",
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = LessonColors.Primary,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    projection.dictionaryTerms.forEach { term ->
+                                        GlossaryText(
+                                            text = term.term,
+                                            style = MaterialTheme.typography.titleMedium,
+                                            color = LessonColors.Primary,
+                                            fontWeight = FontWeight.Bold
+                                        )
+                                        GlossaryText(
+                                            text = term.meaning,
+                                            style = MaterialTheme.typography.bodyLarge,
+                                            color = LessonColors.TextPrimary
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     projection.guidance?.let { value ->
                         item {
                             PresentationRevealCard(

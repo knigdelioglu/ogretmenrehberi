@@ -15,7 +15,7 @@ enum class LayoutKind(val wire: String) {
 
 enum class RevealKey(val wire: String) {
     GUIDANCE("guidance"), ANSWER("answer"), EVIDENCE("evidence"),
-    EXPLANATION("explanation"), NOTE("note");
+    EXPLANATION("explanation"), DICTIONARY("dictionary"), NOTE("note");
 
     companion object {
         fun fromWire(value: String): RevealKey =
@@ -56,7 +56,7 @@ data class AnswerEntry(
     val printedPage: Int,
     val questionNo: String?,
     val promptSummary: String,
-    val answer: String,
+    val answer: String?,
     val guidance: String?,
     val explanation: String?,
     val evidenceQuotes: List<String>,
