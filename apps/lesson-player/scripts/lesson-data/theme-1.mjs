@@ -38,12 +38,12 @@ assert(
 );
 
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 186,
-  "1. Tema toplam 186 ders adımı içermeli."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 189,
+  "1. Tema toplam 189 ders adımı içermeli."
 );
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 129,
-  "1. Tema 129 source-index kaydının tamamını kapsamalı."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 130,
+  "1. Tema 130 source-index kaydının tamamını kapsamalı."
 );
 assert(
   theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 157,
@@ -53,7 +53,7 @@ assert(
 
 const karagoz = byLessonId.get("T11-T01-KARAGOZ");
 assert(karagoz, "Karagöz dersi catalog içinde bulunamadı.");
-assert(karagoz.coverage.steps === 50, "Karagöz pilotu 50 adım olmalı.");
+assert(karagoz.coverage.steps === 51, "Karagöz pilotu 51 adım olmalı.");
 assert(
   karagoz.coverage.source_records === 17,
   "Karagöz pilotu 17 source-index kaydını kapsamalı."
@@ -327,7 +327,7 @@ assert(
 const speaking = byLessonId.get("T11-T01-KONUSMA");
 assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
 assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
-assert(speaking.coverage.steps === 15, "Konuşma dersi 15 adım olmalı.");
+assert(speaking.coverage.steps === 16, "Konuşma dersi 16 adım olmalı.");
 assert(
   speaking.coverage.source_records === 7,
   "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
@@ -411,10 +411,10 @@ assert(
   dinleme.lesson_slug === "dinleme-izleme",
   "Dinleme/İzleme lesson_slug doğru olmalı."
 );
-assert(dinleme.coverage.steps === 39, "Dinleme/İzleme dersi 39 adım olmalı.");
+assert(dinleme.coverage.steps === 40, "Dinleme/İzleme dersi 40 adım olmalı.");
 assert(
-  dinleme.coverage.source_records === 38,
-  "Dinleme/İzleme dersi 38 source-index kaydını kapsamalı."
+  dinleme.coverage.source_records === 39,
+  "Dinleme/İzleme dersi 39 source-index kaydını kapsamalı."
 );
 assert(
   dinleme.coverage.answer_entries === 38,
@@ -674,10 +674,10 @@ assert(
 
 const p82Comparison = degerlendirmeById.get("s82-q9");
 assert(
-  p82Comparison?.answer?.answer_sections?.["Mektup parçasında"] &&
-    p82Comparison.answer.answer_sections?.["Huzur parçasında"] &&
-    p82Comparison.answer.answer_sections?.["Yazar–anlatıcı ayrımı"] &&
-    p82Comparison.answer.guidance?.includes("her iki parçadan"),
+  p82Comparison?.answer?.answer_sections?.["Tanpınar’ın mektubunda"] &&
+    p82Comparison.answer.answer_sections?.["Huzur hakkında verilen çerçeve"] &&
+    p82Comparison.answer.answer_sections?.["Kanıt sınırı"] &&
+    p82Comparison.answer.guidance?.includes("mektuptaki doğrudan seslenişi"),
   "s82 karşılaştırması verilen iki parçaya, anlatıcı/muhatap ayrımına ve metin kanıtına bağlı kalmalı."
 );
 

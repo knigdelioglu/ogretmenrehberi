@@ -189,17 +189,21 @@ def main() -> int:
     expected_answer_count = freeze_manifest.get("canonical", {}).get("answer_entries")
     if len(answers) != expected_answer_count:
         add(errors, "ANSWER_COUNT", f"{len(answers)}!={expected_answer_count}")
-    if len(sources) != 129:
-        add(errors, "SOURCE_COUNT", f"{len(sources)}!=129")
+    expected_source_count = freeze_manifest.get("canonical", {}).get("source_records")
+    if len(sources) != expected_source_count:
+        add(errors, "SOURCE_COUNT", f"{len(sources)}!={expected_source_count}")
     if answer_index.get("status") != "COMPLETE_WITH_SOURCE_LIMITED":
         add(errors, "ANSWER_BANK_STATUS", answer_index.get("status"))
     if source_index.get("answer_bank_status") != "COMPLETE_WITH_SOURCE_LIMITED":
         add(errors, "SOURCE_INDEX_ANSWER_STATUS", source_index.get("answer_bank_status"))
-    if source_index.get("counts") != {"records": 129, "verified_records": 129}:
+    if source_index.get("counts") != {
+        "records": expected_source_count,
+        "verified_records": freeze_manifest.get("canonical", {}).get("verified_sources"),
+    }:
         add(errors, "SOURCE_INDEX_COUNTS", source_index.get("counts"))
 
     source_statuses = Counter(record.get("source_status") for record in sources)
-    if source_statuses != Counter({"VERIFIED": 129}):
+    if source_statuses != Counter({"VERIFIED": freeze_manifest.get("canonical", {}).get("verified_sources")}):
         add(errors, "SOURCE_REVIEW_STATUS", dict(source_statuses))
 
     allowed_types = {"question_answer", "performance_support", "source_limited"}

@@ -82,9 +82,9 @@ assert(
 );
 assert(
   ogullaBulusma.coverage.steps === 37 &&
-    ogullaBulusma.coverage.source_records === 32 &&
+    ogullaBulusma.coverage.source_records === 33 &&
     ogullaBulusma.coverage.answer_entries === 36,
-  "Oğulla Buluşma 37 adım / 32 source / 36 answer olmalı."
+  "Oğulla Buluşma 37 adım / 33 source / 36 answer olmalı."
 );
 
 const ogullaById = new Map(ogullaBulusma.steps.map((step) => [step.id, step]));
@@ -188,10 +188,10 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 201 &&
-    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 158 &&
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 203 &&
+    theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 159 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 177,
-  "Tema 2 tam kapsam 201 adım / 158 source / 177 answer olmalı."
+  "Tema 2 tam kapsam 203 adım / 159 source / 177 answer olmalı."
 );
 
 const orhun = byLessonId.get("T11-T02-ORHUN");
@@ -318,10 +318,10 @@ assert(
   "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
 );
 assert(
-  speaking2.coverage.steps === 23 &&
+  speaking2.coverage.steps === 24 &&
     speaking2.coverage.source_records === 13 &&
     speaking2.coverage.answer_entries === 18,
-  "2. Tema Konuşma 23 adım / 13 source / 18 answer olmalı."
+  "2. Tema Konuşma 24 adım / 13 source / 18 answer olmalı."
 );
 
 const speaking2ById = new Map(speaking2.steps.map((step) => [step.id, step]));
@@ -369,7 +369,10 @@ assert(
   speaking2ById.get("s135-reference")?.answer === null &&
     speaking2ById.get("s135-reference")?.source?.source_record_id === "T02-S0115" &&
     speaking2ById.get("s135-reference")?.content?.sections?.some(
-      (section) => section.title === "Karekod formları"
+      (section) => section.title === "Formları indirme"
+    ) &&
+    speaking2ById.get("s135-peer-form")?.content?.sources?.some(
+      (source) => source.download === true && source.url.endsWith(".docx")
     ),
   "s.135 QR dereceli/akran formları görünmeyen ayrıntılar uydurulmadan referans ekranında kalmalı."
 );
@@ -430,10 +433,10 @@ const museumWriting = byLessonId.get("T11-T02-YAZMA");
 assert(museumWriting, "2. Tema çevrim içi müze yazma dersi bulunamadı.");
 assert(
   museumWriting.printed_page_range === "148-154" &&
-    museumWriting.coverage.steps === 25 &&
+    museumWriting.coverage.steps === 26 &&
     museumWriting.coverage.source_records === 12 &&
     museumWriting.coverage.answer_entries === 17,
-  "Tema 2 Yazma s.148–154, 25 adım / 12 source / 17 answer olmalı."
+  "Tema 2 Yazma s.148–154, 26 adım / 12 source / 17 answer olmalı."
 );
 const museumById = new Map(museumWriting.steps.map((step) => [step.id, step]));
 assert(
@@ -472,7 +475,10 @@ assert(
     (museumById.get("s153-self-2")?.content?.items?.length ?? 0) === 10 &&
     museumById.get("s153-rubric")?.answer === null &&
     museumById.get("s153-rubric")?.content?.sections?.some(
-      (section) => section.title === "Karekod formları"
+      (section) => section.title === "Formları indirme"
+    ) &&
+    museumById.get("s153-peer-form")?.content?.sources?.some(
+      (source) => source.download === true && source.url.endsWith(".docx")
     ),
   "s.153 öz değerlendirme 10 ölçüt içermeli; QR formları kaynak görülmeden uydurulmamalı."
 );

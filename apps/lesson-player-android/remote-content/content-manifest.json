@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "grade": 11,
-  "contentSha256": "6f5c65288eef5876d0cfd55a2b2b4a1c0f7f0022178f604ab734b365bb614a5f",
+  "contentSha256": "ecd4eaaa8e88836baa3c33e27dd3948d1fed30aae1fa8628c4d5c921d76f83c0",
   "workflowSha256": "6632280a3f0ecc3b40987c158c8bbb88333ae1f640d8ca8f1875bc9ecfd64a57",
   "counts": {
     "themes": 4,
     "lessons": 48,
-    "steps": 936,
+    "steps": 944,
     "teacherWorkshops": 8,
     "annualItems": 5
   },
@@ -21,289 +21,289 @@
       "lessonId": "T11-T01-GIRIS",
       "themeId": "TEMA_01",
       "steps": 4,
-      "sha256": "7f20ceaa0c6603f9ba1e0e416219e29aa0bd1343e5f4d48dfefc4466bf5d9416"
+      "sha256": "5f671a1b3915c7f2c4b8bb49a27c7e00b6a9a3a1899af09df1b7add3549b04ce"
     },
     {
       "lessonId": "T11-T01-KARAGOZ",
       "themeId": "TEMA_01",
-      "steps": 50,
-      "sha256": "c7e9fced135227330baa8068fa75cacf05d7fce90f14ef193ebd9d7112b72739"
+      "steps": 51,
+      "sha256": "c100d7ee503d61a3fcb1c8526a853a9456d15bd6424458bc43a9732bf588ce80"
     },
     {
       "lessonId": "T11-T01-MEKTUP",
       "themeId": "TEMA_01",
       "steps": 46,
-      "sha256": "7d4487235a60c94315cc4506d9db393984a446b6e98612c659731fd562a65fbf"
+      "sha256": "5357c514a7d271ebaeb7871251f4f9ba265da395bf4171c7385cb177ac54aa52"
     },
     {
       "lessonId": "T11-T01-KONUSMA",
       "themeId": "TEMA_01",
-      "steps": 15,
-      "sha256": "743286805559acbd281417c79ffce6a43edf9bc3ec57b12c9fa3cf0d6603586d"
+      "steps": 16,
+      "sha256": "89c5fa8a153ed9354f967fab160c0d6fdb535eff92bb153d695fdcf0683c66ca"
     },
     {
       "lessonId": "T11-T01-DINLEME-IZLEME",
       "themeId": "TEMA_01",
-      "steps": 39,
-      "sha256": "417ce9ea4f286d54469f7b687ca6d7291cf20702212441380f69ab0222935105"
+      "steps": 40,
+      "sha256": "4f13acf29181482f2bef7e893b6e8b9efacee8d0f229acf2116917871a060796"
     },
     {
       "lessonId": "T11-T01-YAZMA",
       "themeId": "TEMA_01",
       "steps": 18,
-      "sha256": "92622684709dc419c7b02efdc9ce85b93987dddece16e1627d070e6f19809298"
+      "sha256": "23d44b2cee943cfd2abd7abbca0b39793033c5fcc66f569c49e58c4b02b4c5dc"
     },
     {
       "lessonId": "T11-T01-DEGERLENDIRME",
       "themeId": "TEMA_01",
       "steps": 14,
-      "sha256": "9030b2a3bc3d95374c41d5a163e64377a543f6bae9cb34619877de2b8e56cb07"
+      "sha256": "0639d104c9c53f353216a2ddd613b4c48dc1908cc336ea3e7a3016495b0b0d90"
     },
     {
       "lessonId": "T11-T02-GIRIS",
       "themeId": "TEMA_02",
       "steps": 15,
-      "sha256": "fe600ad51fe91ed0a69e13f85e4f162eed7940c44aa2edc908940833766be81d"
+      "sha256": "e0a8087596d4bab76ab58464488b4d479928a2ec756e5a1d096df4faaa059d31"
     },
     {
       "lessonId": "T11-T02-OGULLA-BULUSMA",
       "themeId": "TEMA_02",
       "steps": 37,
-      "sha256": "7c0e1c273cc1b2719eea238c63aaf97df35c400886e7c5aa690e5cda82648816"
+      "sha256": "4c2b93d1cefb34b166d1162a474c17872e72e43d3517407b34dfee2dea40e8d7"
     },
     {
       "lessonId": "T11-T02-ESKI-ISTANBUL",
       "themeId": "TEMA_02",
       "steps": 15,
-      "sha256": "9a7b1d61e13376568f9d6d1fe722d57384723863c2411f95fd55e0b736cfec46"
+      "sha256": "3dbc7632a91afe983386876b22ab11b06f456a1f37e13f3df637148535324e65"
     },
     {
       "lessonId": "T11-T02-ORHUN",
       "themeId": "TEMA_02",
       "steps": 34,
-      "sha256": "9614ce05d9370e596e7cb95645028cd35b5bbe037966a5b7c2c83ab072df2a1b"
+      "sha256": "a31311ede8a3a6348df36fec2a1779ee1ec25de0927e3c11ba5496679b8015f7"
     },
     {
       "lessonId": "T11-T02-DIVANU-LUGATIT-TURK",
       "themeId": "TEMA_02",
       "steps": 15,
-      "sha256": "c0a147a64e9ed73e407c0b9413c5c9ba5f62c73916f0d81bd4a4afc210983c3a"
+      "sha256": "3a66152894fadcf52b27cbc27536e707b0fa935cd5ab507a658d3547ba1a2d08"
     },
     {
       "lessonId": "T11-T02-KONUSMA",
       "themeId": "TEMA_02",
-      "steps": 23,
-      "sha256": "3449dfe54f36ca4600d3afc7423642cb3141bd1b5f3e7e8b7495de93a30f5197"
+      "steps": 24,
+      "sha256": "06a29f5062aeac8da8d4e5ce9515253685eca75408e976df3425cd4abd6101d7"
     },
     {
       "lessonId": "T11-T02-ASIK-ATISMASI",
       "themeId": "TEMA_02",
       "steps": 27,
-      "sha256": "13390fd35798a8aa9b07ec0e96108b5e7b2374c852ef18a9c5ed6ff028aed0eb"
+      "sha256": "295cda8f20f360896b0712e7263e351d38be0c63fa07f00ea54b36ce10598273"
     },
     {
       "lessonId": "T11-T02-YAZMA",
       "themeId": "TEMA_02",
-      "steps": 25,
-      "sha256": "cee1a29a051d1eec82682c769b0d37de2a1b7a54d289028f9d42b60fc8aaa530"
+      "steps": 26,
+      "sha256": "e0f3fe13734466f9890f830535793b2dd2ea5619fc4f9a2e7ef6447834ba1561"
     },
     {
       "lessonId": "T11-T02-DEGERLENDIRME",
       "themeId": "TEMA_02",
       "steps": 10,
-      "sha256": "b59b03473050550ed49d2dcc76984976c7af0c389bf36ce42ffb9dfd0df1a272"
+      "sha256": "84269f0c3e8011b3956a8e5bc7edf6da7a0ac3279a43446bf409f86c5beabc6d"
     },
     {
       "lessonId": "T11-T03-GIRIS",
       "themeId": "TEMA_03",
       "steps": 8,
-      "sha256": "4fa89f2486722e9f360e0c75838b46ee6caf5af7376c27134530fd98ae9b79c7"
+      "sha256": "6f72d6e05a0795108914ce40895f65beac678dc341954c907b1b4e1b252c152a"
     },
     {
       "lessonId": "T11-T03-HUZUR-OKUMA",
       "themeId": "TEMA_03",
       "steps": 23,
-      "sha256": "385607f4daf8c3a06ee2b60a008ab4c8432af82e4f4939e0ff5085f750cc0a3e"
+      "sha256": "d1bd3ce3be8588e94206ab11aab6ff8f29472d689b3a6f868fe774d42f8a167b"
     },
     {
       "lessonId": "T11-T03-HUZUR-ANLAMA-175-176",
       "themeId": "TEMA_03",
       "steps": 13,
-      "sha256": "4a156a45f3950205805e593456708a93348e20176a7f9d8bd6bd8ea67c579df3"
+      "sha256": "e3366e14e383860a35f9ea936e2ca47c7311272b49241e3c6f0b35a4c345b1da"
     },
     {
       "lessonId": "T11-T03-HUZUR-177-178",
       "themeId": "TEMA_03",
       "steps": 11,
-      "sha256": "75575a0ccb79826ee9361e7135b9b64c656dce4b1cca7380ca2a4437eb092da9"
+      "sha256": "f7c9f2ea75a9843f051353ae6ae3bd9dc40acfe6d2cdee829b478558760664d1"
     },
     {
       "lessonId": "T11-T03-HUZUR-OKUMA-CEMBERI-179-181",
       "themeId": "TEMA_03",
       "steps": 17,
-      "sha256": "f4216efae0efc450a85f6bbf99fca44704f625ba3331f51ea40bbb6b460dd3e4"
+      "sha256": "3c9d3ac3e8a7429590e325543b7cc8f53ef363d20cd36372b4cdacf7a68853dd"
     },
     {
       "lessonId": "T11-T03-HUZUR-HAYAT-KURMACA-182-185",
       "themeId": "TEMA_03",
       "steps": 19,
-      "sha256": "d080f4718e49767f733d4cad7d4eac72ed9d88b716874aed1183cf49179c6ed3"
+      "sha256": "6833776d6baf4c5f26391c32ac38b385b3395659fe4174d1a02bc4a0307bdd94"
     },
     {
       "lessonId": "T11-T03-HUZUR-YAPI-USLUP-186-188",
       "themeId": "TEMA_03",
       "steps": 20,
-      "sha256": "3a9be9a50060f91afdffa43a34c1bcabf0d9968ab89fe5723332d5535cb481cf"
+      "sha256": "37e512e46266b8f4281b911e11e134b3eec73d8faabece8af37274f3fabe08c8"
     },
     {
       "lessonId": "T11-T03-HUZUR-CATISMA-DIL-189-191",
       "themeId": "TEMA_03",
       "steps": 22,
-      "sha256": "e75be6f2f880d5db4b0f0bb623e63eacdaa1af72a891210e8a9318321e01864b"
+      "sha256": "363da81bf3d0dbb1e2f50c1a3fb34688313a39d9489c0e5f646cbf45ba41a441"
     },
     {
       "lessonId": "T11-T03-HUZUR-DEGERLENDIRME-192-193",
       "themeId": "TEMA_03",
       "steps": 14,
-      "sha256": "cd11b89712eb7ac1f8a2b5285ab324f6e9e015170904e994caf6ec98457354fb"
+      "sha256": "f733002cef937024cb0bfcc9f2c8e594ea1c3e8821c2234b2a7320fd76c0feba"
     },
     {
       "lessonId": "T11-T03-BIYOGRAFI-AKIF-194-198",
       "themeId": "TEMA_03",
       "steps": 18,
-      "sha256": "7fea00d8df7aa31d93834d57c87954dcd66e13c534b943ea0436528b9e498d56"
+      "sha256": "eb36522a73bffe712cb9d0c29dbc884fd5d5dbbc340c519921448a409b78a1f8"
     },
     {
       "lessonId": "T11-T03-BIYOGRAFI-AKIF-ANLAMA-199-201",
       "themeId": "TEMA_03",
       "steps": 16,
-      "sha256": "a98252b28f373ead8028e65d3ebf955570355c2d8925b80ee832de1efcb5652a"
+      "sha256": "da81dadfff1c1339269e41602012650dc62ed2a373fa4723f41250a9eff616f5"
     },
     {
       "lessonId": "T11-T03-BIYOGRAFI-AKIF-COZUMLEME-202-205",
       "themeId": "TEMA_03",
       "steps": 17,
-      "sha256": "3f88f3e681bf81fee429b8c2ed013a142f502a3731d2ed5d1be1e5a5c53926ee"
+      "sha256": "5e4eb32e61fba8b0332597bbc4a60490400fc3bdb8ba943b4f483c762853c816"
     },
     {
       "lessonId": "T11-T03-USULI-TEZKIRE-206-209",
       "themeId": "TEMA_03",
       "steps": 15,
-      "sha256": "14ff86144cf455bbae68446dcfaf258bf5232558ac66c83a7d4f394fec38555a"
+      "sha256": "a3bb564b075e22c0374e34c824d91d71425b71409de688f3bfcc617198b705a6"
     },
     {
       "lessonId": "T11-T03-KEMAL-TAHIR-MULAKAT-210-214",
       "themeId": "TEMA_03",
-      "steps": 20,
-      "sha256": "b441fb09eac90354115e95713fbfa1ce5bb7eeb79363acfa1c9c44dc34031583"
+      "steps": 22,
+      "sha256": "034d17e6282211bac1433c75369a99394df4b6b8aa1cd4a430265a992fab3d34"
     },
     {
       "lessonId": "T11-T03-DIRENISIN-USTALARI-215-220",
       "themeId": "TEMA_03",
       "steps": 21,
-      "sha256": "c94457503e8b4516d22cc9d499e8c364518e51360f18279bc48d70f306ab3a14"
+      "sha256": "1c5f0d4240455110b0c07f15612709e042e45512d7728f9a5e6ae2b2741a25d5"
     },
     {
       "lessonId": "T11-T03-DIRENISIN-USTALARI-221-224",
       "themeId": "TEMA_03",
       "steps": 17,
-      "sha256": "624cf44f237d96289bd561c970a36645ba972b74b6ddf55bac09ab933730a2f7"
+      "sha256": "85c6472cb3800461a763cb491eeb1090912eb5290fc996ec3c36a6dda89f146e"
     },
     {
       "lessonId": "T11-T03-RADYO-DIYALOG-YAZMA-225-229",
       "themeId": "TEMA_03",
-      "steps": 17,
-      "sha256": "77433486d46ea5d89aa6cc8f8d1b96474f47cb2a41376ec2b8d2c6add1954918"
+      "steps": 18,
+      "sha256": "01e7c861587c05856dc6650311c72a1e1ff3b692b3fd0dcd5cb24a36cde603fe"
     },
     {
       "lessonId": "T11-T03-DEGERLENDIRME-230-235",
       "themeId": "TEMA_03",
       "steps": 24,
-      "sha256": "853bbc034a1694271b9813b07345a15277672a05ee165004fe206fa6610aaa8b"
+      "sha256": "965f8826e332accea5124dbe76e9358dfdb26d076e2964ad9e6f7d7d8cc368d2"
     },
     {
       "lessonId": "T11-T04-GIRIS-236-242",
       "themeId": "TEMA_04",
       "steps": 17,
-      "sha256": "8ada2f165bb7a5d934e7f957f242454c06af2bafff4845bf1f7226ff758f1e95"
+      "sha256": "7ffb5c66539b4500b38e46171da2c9b0d014f0209cc46d595d7dbf8c8d460ad2"
     },
     {
       "lessonId": "T11-T04-BEN-MIMAR-SINAN-OKUMA-243-250",
       "themeId": "TEMA_04",
       "steps": 14,
-      "sha256": "9c8395b3852994d3f5bd684852ea3ff7f9e2351fe40f889f015f3c43e2331601"
+      "sha256": "9f2e4f7ac744f2e18fb9162d5e59b34cd3fa2c9850978136af9c3ea3ab9ff0f5"
     },
     {
       "lessonId": "T11-T04-BEN-MIMAR-SINAN-ANLAMA-251-255",
       "themeId": "TEMA_04",
       "steps": 13,
-      "sha256": "bf93b8d6bbe28808d5bf6433c8fbde6e9641b1ba04970a0e905e787ba4202632"
+      "sha256": "53a6d9a12d52ad2dee0f12b90c1bb3931c6efd41a1d36b9b0e5f66896d411abf"
     },
     {
       "lessonId": "T11-T04-BEN-MIMAR-SINAN-COZUMLEME-256-259",
       "themeId": "TEMA_04",
       "steps": 16,
-      "sha256": "b004afdc8ee2ab0eea755e7d89df4d74bc83224cfe5ded776aa3ee312f57f280"
+      "sha256": "35908d7b5bfdef9a84b1e354d7212892e5e9fa243cf5b40518cbcdb9b28e43ca"
     },
     {
       "lessonId": "T11-T04-BEN-MIMAR-SINAN-DEGERLER-260-262",
       "themeId": "TEMA_04",
       "steps": 18,
-      "sha256": "f2e958f547589f521a9c4ac4f0153bf66c3c8f9c2de4c8ab26aa1deffa7ec68e"
+      "sha256": "31fa0990110837a0c03405c931e732917a3b2129c424c9bc1370d347d2d1a2f5"
     },
     {
       "lessonId": "T11-T04-MERDIVEN-GIRIS-263-265",
       "themeId": "TEMA_04",
       "steps": 9,
-      "sha256": "f86359c2b310b3295df408a061d72bab122ee18698fd32e265acbd0cb782daa6"
+      "sha256": "4ba8f3e7b0588555e27f885869f3251d2904a632bedbb2487d51d891787eec61"
     },
     {
       "lessonId": "T11-T04-MERDIVEN-ANLAMA-266-270",
       "themeId": "TEMA_04",
       "steps": 17,
-      "sha256": "f4534d9f16d907d86e255e403c35e598b7a5b109f1c1914dce1655f3375e211e"
+      "sha256": "f4790f6b74debb5c7b42081df9975f52ba89bd4c328e227bee2f724e168fd833"
     },
     {
       "lessonId": "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
       "themeId": "TEMA_04",
       "steps": 10,
-      "sha256": "fa8ec8c3f85442f5dc74719e2f9cd7c260f6dac686cdc83c28c51612bf9da097"
+      "sha256": "c3e9b6085a258fc2bc0f54a113e73998ac6c62da8f33e5516946ff52c5f99a30"
     },
     {
       "lessonId": "T11-T04-MERDIVEN-COZUMLEME-274-279",
       "themeId": "TEMA_04",
       "steps": 21,
-      "sha256": "f1a90b89da85c6f9eb6702bae59a4817e3f2e4e884bef3e638209e5e2a51fbd3"
+      "sha256": "16e7ffb6bb6f46df0bb64062e12dfea640f0cb81b47cb1281491585c1b42b845"
     },
     {
       "lessonId": "T11-T04-TIYATRO-CANLANDIRMA-280-283",
       "themeId": "TEMA_04",
       "steps": 17,
-      "sha256": "7ef21593bc506ccef377f07766ed5eb15731927934ee74a3eb48c9507f4a246c"
+      "sha256": "ca75a87b1f33d0fd29c1b06afe86f5ebabe21076675e3c66230d8857784d3633"
     },
     {
       "lessonId": "T11-T04-ANADOLU-INSANI-284-290",
       "themeId": "TEMA_04",
       "steps": 22,
-      "sha256": "66d9efbc370fe4dacae73808521dcee3a9149973e9e008dcb8a38125b081ea37"
+      "sha256": "711760e62df679840e8f634ea9609b547d78a477fbf71024a2f4cee90224cbee"
     },
     {
       "lessonId": "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297",
       "themeId": "TEMA_04",
       "steps": 24,
-      "sha256": "6930aaa234c39e55089b273b7d3065e8a7a0dca91d0004658a1b160d91432383"
+      "sha256": "445a38394a486b19750558173995002ad0da20da98294312783819693dcc5a87"
     },
     {
       "lessonId": "T11-T04-AFIS-ATOLYESI-298-302",
       "themeId": "TEMA_04",
       "steps": 20,
-      "sha256": "9a968eefffa82073ff8765a7b62fd6d087c384faf5bbf5c9614377d66aa5550e"
+      "sha256": "9fc7109a934416782e53920bd083939885e651609e2ed64b2013df572bfae2fd"
     },
     {
       "lessonId": "T11-T04-DEGERLENDIRME-303-307",
       "themeId": "TEMA_04",
       "steps": 19,
-      "sha256": "7666260ceef70479ad98cf393b7e96a42314d3b845bad0c6eaf91220ba1f2439"
+      "sha256": "af2fecefac3547bfdea750edd4e75752bd32ec6f4123d47d4ab8a0e80da3f474"
     }
   ]
 }

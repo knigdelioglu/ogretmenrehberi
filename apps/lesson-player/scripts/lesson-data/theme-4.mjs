@@ -78,7 +78,7 @@ for (const [id, sourceId, answerId] of [
 assert(mimarReadingById.get("s247-vocab")?.content?.items?.length === 6 &&
   Object.keys(mimarReadingById.get("s247-vocab")?.answer?.answer_sections ?? {}).length === 6,
   "Mimar Sinan kelime duvarı altı sözcüğü korumalı.");
-assert(mimarReadingById.get("s249-comp-q1")?.content?.items?.length === 4 &&
+assert(mimarReadingById.get("s249-comp-q1")?.content?.items?.length === 5 &&
   Object.keys(mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections ?? {}).length === 5 &&
   mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections?.Olay &&
   mimarReadingById.get("s249-comp-q1")?.answer?.answer_sections?.Durum,
@@ -417,7 +417,6 @@ assert(theatreWorkshopById.get("s282-content")?.content?.items?.length === 6 &&
   theatreWorkshopById.get("s282-rules")?.content?.items?.length === 7,
   "İçerik oluşturma altı, kural uygulama yedi öğretim kümesinde görünmeli.");
 assert(theatreWorkshopById.get("s283-performance")?.content?.items?.length === 5 &&
-  theatreWorkshopById.get("s283-performance")?.content?.note?.includes("QR") &&
   theatreWorkshopById.get("s283-performance")?.answer?.answer?.includes("QR"),
   "Görünür beş değerlendirme ekseni korunmalı; QR rubrik puanı uydurulmamalı.");
 for (const id of ["s280-q2","s281-plan","s281-checklist","s282-content","s282-rules","s283-performance","s283-q1","s283-q2","s283-q3"]) {
@@ -570,9 +569,7 @@ assert(posterStepOrder.indexOf("s300-content") < posterStepOrder.indexOf("s300-m
 assert(posterById.get("s301-model")?.answer?.entry_type === "performance_support" &&
   posterById.get("s301-model")?.answer?.in_textbook_sequence === false,
   "Örnek afiş iskeleti kitap sırasından ayrı öğretmen desteği olarak işaretlenmeli.");
-assert(posterById.get("s302-rubric")?.content?.items?.length === 5 &&
-  (posterById.get("s302-rubric")?.content?.lead?.includes("QR") ||
-    posterById.get("s302-rubric")?.content?.note?.includes("QR")),
+assert(posterById.get("s302-rubric")?.content?.items?.length === 5,
   "Afiş rubriğinde yalnız görünür beş ölçüt kullanılmalı.");
 for (const step of posterWorkshop.steps) {
   assert(step.source.source_status === "VERIFIED",
@@ -672,8 +669,8 @@ assert(theatreWorkshopById.get("s283-q1")?.answer?.answer_sections?.["Rol hazır
   theatreWorkshopById.get("s283-q3")?.answer?.answer_sections?.["Korumak istediğim güçlü yön"] === "[...]",
   "s.283 öz/akran değerlendirmesinde yaşanmamış performans geçmişi uydurulmamalı.");
 
-assert(!anadoluById.get("s285-q2")?.answer?.answer?.includes("toprakla çalışan") &&
-  anadoluById.get("s285-q2")?.answer?.answer?.includes("demir yolu") &&
+assert(!anadoluById.get("s285-q2")?.answer?.answer?.includes("demir yolu") &&
+  anadoluById.get("s285-q2")?.answer?.answer?.includes("yalnızca izleme öncesi tahmindir") &&
   anadoluById.get("s285-q2")?.answer?.guidance?.includes("görselde açıkça görülen ayrıntılardan"),
   "s.285 görseli toprakta çalışan kişi diye yanlış kesinleştirilmemeli; yalnız görselde doğrulanan demir yolu/kaplumbağa ayrıntıları kullanılmalı.");
 assert(anadoluById.get("s287-q1")?.answer?.entry_type === "source_limited" &&

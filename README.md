@@ -78,7 +78,7 @@ Uygulama:
 
 birleştirir.
 
-Dondurulmuş Tema 1 kapsamı **7 ders / 186 ders adımı / 129 source kaydı / 157 answer kaydıdır**. Amaç, öğretmenin ders sırasında EPUB'a dönmeden tema başından ölçme-değerlendirme sonuna kadar ilerleyebilmesidir. Ayrıntılı mimari ve fazlar için [LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md) belgesine bakın.
+Dondurulmuş Tema 1 kapsamı **7 ders / 189 ders adımı / 130 source kaydı / 157 answer kaydıdır**. Amaç, öğretmenin ders sırasında EPUB'a dönmeden tema başından ölçme-değerlendirme sonuna kadar ilerleyebilmesidir. Ayrıntılı mimari ve fazlar için [LESSON_PLAYER_PLAN.md](docs/LESSON_PLAYER_PLAN.md) belgesine bakın.
 
 ## 1. Tema kalite dondurması
 
@@ -86,7 +86,7 @@ Tema 1 için Lesson Player, Kindle EPUB ve ÖğretmenOS generic Teacher Guide ru
 
 Kalite dondurması şunları zorunlu kılar:
 
-- 129/129 source kaydının `VERIFIED` olması,
+- 130/130 source kaydının `VERIFIED` olması,
 - 157/157 answer-bank kaydının Lesson Player ve EPUB'da kayıpsız temsil edilmesi,
 - 14 `source_limited` kaydın kaynak sınırını koruması,
 - EPUB'da answer, guidance, explanation, evidence ve structured answer alanlarının semantik paritesi,

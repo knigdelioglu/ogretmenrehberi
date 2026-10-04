@@ -486,14 +486,23 @@ function buildLesson(flowPath) {
     );
   }
 
-  const requiredSources = sourceIndex.records.filter((record) => {
+  const requiredSourceIds = new Set(sourceIndex.records.filter((record) => {
     const parts = sourceParts(record.source_record_id);
     return (
       parts.theme === fromParts.theme &&
       parts.ordinal >= fromParts.ordinal &&
       parts.ordinal <= toParts.ordinal
     );
-  });
+  }).map((record) => record.source_record_id));
+  for (const sourceId of flow.additional_source_records ?? []) {
+    if (!sourceById.has(sourceId)) {
+      fail(`Unknown additional source_record_id in ${flow.lesson_id}: ${sourceId}`);
+    }
+    requiredSourceIds.add(sourceId);
+  }
+  const requiredSources = sourceIndex.records.filter((record) =>
+    requiredSourceIds.has(record.source_record_id)
+  );
 
   for (const record of requiredSources) {
     if (!seenSourceIds.has(record.source_record_id)) {

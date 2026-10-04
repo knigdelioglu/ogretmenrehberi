@@ -46,7 +46,7 @@ for (const theme of fs.readdirSync(presentationRoot)) {
     }
   }
 }
-assert.equal(links.length, 92, "the reviewed official book-source links must remain present");
+assert.equal(links.length, 93, "the reviewed official book-source links must remain present");
 
 const generatedLessons = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
 const generatedLinks = generatedLessons.flatMap((lesson) => lesson.steps || []).flatMap((step) =>
@@ -82,5 +82,5 @@ if (currentPdfPath) {
   }
   console.log(`[sunum-web] Current MEB PDF source passed: SHA256, ${pages.length} pages and ${checkedPages.length} printed-page targets checked.`);
 } else {
-  console.log("[sunum-web] Current MEB PDF mapping metadata and all 92 printed-page links passed (set CURRENT_TEXTBOOK_PDF_PATH to verify against a downloaded PDF).");
+  console.log("[sunum-web] Current MEB PDF mapping metadata and all 93 printed-page links passed (set CURRENT_TEXTBOOK_PDF_PATH to verify against a downloaded PDF).");
 }

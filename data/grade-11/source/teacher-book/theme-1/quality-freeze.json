@@ -5,35 +5,35 @@
   "grade": 11,
   "theme_id": "TEMA_01",
   "theme_title": "BİR DİYECEĞİM VAR!",
-  "freeze_date": "2026-10-02",
+  "freeze_date": "2026-10-04",
   "status": "FROZEN_REPO_QA",
   "scope": {
     "printed_page_range": "12-83",
     "answer_bank_page_range": "14-83"
   },
   "canonical": {
-    "source_records": 129,
-    "verified_sources": 129,
+    "source_records": 130,
+    "verified_sources": 130,
     "answer_entries": 157,
     "source_limited_entries": 14
   },
   "lesson_player": {
     "lessons": 7,
-    "steps": 186,
-    "source_records": 129,
+    "steps": 189,
+    "source_records": 130,
     "answer_entries": 157
   },
   "ogretmenos": {
     "projection_contract": "OgretmenOS Generic Teacher Guide Runtime Contract v1",
-    "content_fingerprint": "sha256:de70a5d25bba9c258d04fb292b2e30e8bc1668f3a43319955acb2fc846ae4c24",
+    "content_fingerprint": "sha256:8d8111fc6c4d985215a7fa61d73ccc1e34398ea003acb16046e13b15816af497",
     "deterministic_build": true,
     "row_counts": {
-      "canonical_entities": 287,
+      "canonical_entities": 288,
       "teacher_guides": 1,
       "teacher_guide_sections": 7,
-      "teacher_guide_units": 129,
-      "teacher_guide_items": 186,
-      "teacher_guide_item_relations": 343
+      "teacher_guide_units": 130,
+      "teacher_guide_items": 189,
+      "teacher_guide_item_relations": 346
     }
   },
   "epub": {

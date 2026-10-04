@@ -9,6 +9,7 @@
     "from": "T01-S0064",
     "to": "T01-S0101"
   },
+  "additional_source_records": ["T01-S0130"],
   "steps": [
     {
       "id": "s59-q1",
@@ -242,6 +243,23 @@
       "answer_id": "T1-P67-Q09",
       "layout": "question",
       "content": {
+        "sources": [
+          {
+            "label": "Ders kitabı s.67 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=67"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s67-qr-communication",
+      "source_record_id": "T01-S0130",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Ders Dışı Etkinlik — İletişim ve E-Posta",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kitaptaki karekod farklı bir iletişim videosuna yönelir. Video ve altyazıları incelenmediği için içeriği hakkında çıkarım yapmayın.",
         "sources": [
           {
             "label": "Ders kitabı s.67 — karekodun bulunduğu sayfayı aç",
