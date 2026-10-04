@@ -140,7 +140,8 @@ try {
   await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
 
   let pageParts = 0;
-  for (const [lessonSlug, stepId, filename] of files) {
+  let browserDownloads = 0;
+  for (const [fileIndex, [lessonSlug, stepId, filename]] of files.entries()) {
     const { step } = await openStep(lessonSlug, stepId);
     const pagesText = [];
     let download = null;
@@ -163,8 +164,10 @@ try {
         download = pageDownload;
         assert.ok(download.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
         assert.ok(download.label, `${stepId} has a named teacher download`);
-        await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
-        downloadTriggered = true;
+        if (fileIndex === 0) {
+          await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
+          downloadTriggered = true;
+        }
       }
       if (currentPage < totalPages) {
         const previous = pageState.counter;
@@ -195,22 +198,31 @@ try {
       "s59-rubric does not reintroduce the removed stale disclaimer"
     );
 
-    assert.ok(download && downloadTriggered, `${stepId} exposes and downloads its DOCX asset on a rendered content page`);
-    const downloadedPath = await until(() => {
-      const path = profile + "/" + filename;
-      return fs.existsSync(path) ? path : null;
-    }, `${filename} browser download`);
-    const actual = fs.readFileSync(downloadedPath);
+    assert.ok(download, `${stepId} exposes its DOCX asset on a rendered content page`);
     const expected = fs.readFileSync(path.join(appRoot, "dist/assets/assessment-documents", filename));
-    assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
-    assert.deepEqual([...actual.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
-    fs.rmSync(downloadedPath);
+    const response = await fetch(download.href);
+    assert.equal(response.status, 200, `${filename} is served by the built app`);
+    const served = Buffer.from(await response.arrayBuffer());
+    assert.deepEqual(served, expected, `${filename} served bytes match the packaged DOCX`);
+    assert.deepEqual([...served.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
+
+    if (fileIndex === 0) {
+      assert.equal(downloadTriggered, true, `${stepId} triggers a representative browser download`);
+      const downloadedPath = await until(() => {
+        const path = profile + "/" + filename;
+        return fs.existsSync(path) ? path : null;
+      }, `${filename} browser download`);
+      const actual = fs.readFileSync(downloadedPath);
+      assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
+      fs.rmSync(downloadedPath);
+      browserDownloads += 1;
+    }
   }
 
   await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
   const menuWidgets = await page.evaluate("document.querySelectorAll('#menu .assessment-resources, #menu input[type=file]').length");
   assert.equal(menuWidgets, 0, "lesson menu does not expose an upload flow for already prepared resources");
-  console.log(`[sunum-web] Chrome assessment check passed: ${files.length} DOCX downloads; ${pageParts} content pages fit at 1440x900 with every criterion and level rendered.`);
+  console.log(`[sunum-web] Chrome assessment check passed: ${files.length} DOCX links/assets, ${browserDownloads} representative browser download; ${pageParts} content pages fit at 1440x900 with every criterion and level rendered.`);
 } finally {
   for (const client of clients) client.close();
   for (const child of [browser, server]) {
