@@ -284,8 +284,10 @@ button {
 }
 
 .where {
-  white-space: normal;
-  overflow-wrap: anywhere;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   max-width: 60%;
 }
 

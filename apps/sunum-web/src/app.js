@@ -1150,7 +1150,7 @@ function stepSlide(lesson, step) {
     h("span", { class: "tag" }, taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
     h(
       "span",
-      { class: "where" },
+      { class: "where", title: `s. ${String(step.page).replace("-", "–")}${step.heading ? ` · ${step.heading}` : ""}${viewKey !== "content" || view.pages.length > 1 ? ` · ${page.title || viewNames[viewKey]}${pageMarker}` : ""}` },
       h("b", {}, `s. ${String(step.page).replace("-", "–")}`),
       step.heading ? `  ·  ${step.heading}` : "",
       viewKey !== "content" || view.pages.length > 1 ? `  ·  ${page.title || viewNames[viewKey]}${pageMarker}` : ""

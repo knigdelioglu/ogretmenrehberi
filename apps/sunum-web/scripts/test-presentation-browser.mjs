@@ -95,6 +95,19 @@ const findStep = (slug, id) => {
 let page;
 
 async function bodyText() { return page.evaluate("document.querySelector('#canvas .slide__body')?.innerText ?? ''"); }
+async function headerMetrics() {
+  return page.evaluate(`(() => {
+    const top = document.querySelector('#canvas .slide__top');
+    const where = top?.querySelector('.where');
+    const style = where && getComputedStyle(where);
+    return {
+      height: top?.getBoundingClientRect().height,
+      bodyTop: top?.nextElementSibling?.getBoundingClientRect().top,
+      whiteSpace: style?.whiteSpace,
+      title: where?.title
+    };
+  })()`);
+}
 async function answerPanelText() { return page.evaluate("document.querySelector('#canvas .panel--answer')?.innerText ?? ''"); }
 async function evidencePanelText() { return page.evaluate("document.querySelector('#canvas .panel--evidence')?.innerText ?? ''"); }
 async function next() {
@@ -177,6 +190,37 @@ try {
     const diagnostics = await page.evaluate("JSON.stringify({gateError: document.querySelector('#gate-error')?.textContent, visible: !document.querySelector('#gate').hidden, canvas: document.querySelector('#canvas')?.innerText, ready: document.readyState})");
     console.error(`[sunum-web] Chrome unlock diagnostics: ${diagnostics}`);
     throw error;
+  }
+
+  // Long location metadata must never add header rows as answer/reveal labels change.
+  await openStep("mektup", "s44-q2");
+  const initialHeader = await headerMetrics();
+  const fixedHeaderHeight = initialHeader.height;
+  const fixedBodyTop = initialHeader.bodyTop;
+  let evidenceReached = false;
+  for (let index = 0; index < 12; index += 1) {
+    const metrics = await headerMetrics();
+    assert.equal(metrics.whiteSpace, "nowrap", "s.44 metadata stays on one line");
+    assert.equal(metrics.height, fixedHeaderHeight, "s.44 header height stays fixed across reveal layers");
+    assert.equal(metrics.bodyTop, fixedBodyTop, "s.44 body position stays fixed across reveal layers");
+    assert.ok(metrics.title.includes("Çözümleyebilme"), "full s.44 metadata remains available in the title");
+    if (metrics.title.includes("Metinden kanıt")) {
+      evidenceReached = true;
+      break;
+    }
+    await next();
+  }
+  assert.ok(evidenceReached, "s.44 regression case reaches its evidence reveal");
+  await openStep("konusma", "s53-q1");
+  const longHeadingMetrics = await headerMetrics();
+  assert.equal(longHeadingMetrics.whiteSpace, "nowrap", "s.53 long heading stays on one line");
+  assert.equal(longHeadingMetrics.height, fixedHeaderHeight, "s.53 long heading does not change header height");
+  assert.ok(longHeadingMetrics.title.includes("Drama hazırlığı"), "full s.53 heading remains available in the title");
+  for (let index = 0; index < 5; index += 1) {
+    await next();
+    const metrics = await headerMetrics();
+    assert.equal(metrics.height, fixedHeaderHeight, "s.53 header height stays fixed across reveal layers");
+    assert.equal(metrics.bodyTop, fixedBodyTop, "s.53 body position stays fixed across reveal layers");
   }
 
   let screen = await openStep("mektup", "s40-q5");
