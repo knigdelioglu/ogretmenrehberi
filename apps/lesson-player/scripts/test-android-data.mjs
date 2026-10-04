@@ -69,7 +69,7 @@ const witness = lessons.find(x => x.lesson_id === "T11-T01-KARAGOZ").steps
   .find(x => x.id === "s26-reference");
 assert.ok(witness.content.note, "Teacher note was lost");
 assert.equal(lessons.find(x => x.lesson_id === "T11-T04-MERDIVEN-ANLAMA-266-270")
-  .steps.find(x => x.id === "s266-vocabulary").layout, "structure");
+  .steps.find(x => x.id === "s266-vocabulary").layout, "vocabulary");
 const modified = structuredClone(lessons);
 const answered = modified.flatMap(x => x.steps).find(x => x.answer?.answer);
 answered.answer.answer += " İçerik değişti.";
