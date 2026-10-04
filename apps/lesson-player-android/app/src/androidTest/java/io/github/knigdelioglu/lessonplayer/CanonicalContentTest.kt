@@ -41,6 +41,13 @@ class CanonicalContentTest {
         assertEquals(bundle.byId.keys, bundle.lessonSha256.keys)
         assertTrue(loaded.statusMessage.isNotBlank())
         assertTrue(bundle.lessonSha256.values.all { it.matches(Regex("[0-9a-f]{64}")) })
+        assertTrue(bundle.lessons.flatMap { it.steps }.any {
+            it.answer?.answer.isNullOrBlank() && when (val sections = it.answer?.answerSections) {
+                is JsonValue.Array -> sections.items.isNotEmpty()
+                is JsonValue.Object -> sections.values.isNotEmpty()
+                else -> false
+            }
+        })
         bundle.lessons.forEach { lesson ->
             assertEquals(lesson.steps.size, lesson.steps.map { it.id }.distinct().size)
             assertTrue(lesson.steps.all { it.source.sourceStatus == "VERIFIED" })
