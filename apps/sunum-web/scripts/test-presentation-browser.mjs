@@ -723,6 +723,9 @@ try {
   assert.deepEqual([...peerBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "peer-form download is a real DOCX ZIP package");
   assert.ok(peerBytes.length > 5000, "peer-form download has complete document content");
 
+  // Keep the browser export regression representative without rendering the much
+  // larger 51-step Karagöz lesson on every CI run.
+  await openStep("konusma", "s59-rubric");
   await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
   await until(() => page.evaluate("!document.querySelector('#menu').hidden && Boolean(document.querySelector('#menu-export-pptx'))"), "PPTX export control in lesson menu");
   await page.evaluate("document.querySelector('#menu-export-pptx').click()");
