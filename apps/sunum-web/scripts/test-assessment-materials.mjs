@@ -3,6 +3,7 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { assessmentDownloads } from "../src/menu-files.js";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -71,8 +72,8 @@ for (const [relativeFlow, stepId] of rubricPages) {
   const flow = byFlow.get(relativeFlow) ?? JSON.parse(fs.readFileSync(path.join(repoRoot, relativeFlow), "utf8"));
   const step = flow.steps.find((entry) => entry.id === stepId);
   assert.ok(step, `${relativeFlow}/${stepId} exists`);
-  assert.ok(step.content.sources.some((source) => source.url === classScorer && source.download === true),
-    `${stepId} links the 35-student rubric workbook`);
+  const workbookLink = step.content.sources.find((source) => source.url === classScorer && source.download === true);
+  assert.equal(workbookLink?.label, "Puanlama Exceli", `${stepId} uses the concise workbook label`);
 }
 const xlsxSource = path.join(appRoot, "src", classScorer);
 const xlsxBuilt = path.join(distRoot, classScorer);
@@ -89,4 +90,10 @@ for (const file of [xlsxSource, xlsxBuilt]) {
 const downloadedNames = [...files.map(([name]) => name), path.basename(classScorer)].sort();
 const builtNames = fs.readdirSync(path.join(distRoot, "assets/assessment-documents")).sort();
 assert.deepEqual(builtNames, downloadedNames, "only the requested rubric/peer-form documents and class scorer are packaged");
-console.log(`[sunum-web] Assessment materials passed: ${files.length} DOCX links and the 35-student workbook across ${rubricPages.length} rubric pages.`);
+const generatedLessons = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
+const menuFiles = assessmentDownloads({ lessons: generatedLessons });
+assert.equal(menuFiles.length, downloadedNames.length, "the Files tab exposes every packaged assessment file once");
+assert.equal(menuFiles[0]?.label, "Puanlama Exceli", "the workbook is first in the Files tab without a student count");
+assert.equal(menuFiles[0]?.type, "XLSX");
+assert.deepEqual(menuFiles.map((file) => path.basename(file.url)).sort(), downloadedNames);
+console.log(`[sunum-web] Assessment materials passed: ${files.length} DOCX links, Puanlama Exceli and ${menuFiles.length} files in the menu catalog.`);

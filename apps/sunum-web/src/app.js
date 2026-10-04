@@ -3,6 +3,7 @@
 import { answerEvidenceStages, attachVocabularyAnswerFragments, evidenceContinuationPages, groupItems, interleaveStages } from "./reveal-sequence.js";
 import { splitAtSentences } from "./text-chunks.js";
 import { createLessonPptx, pptxFilename } from "./pptx-export.js";
+import { assessmentDownloads } from "./menu-files.js";
 
 const DATA_FILE = "__DATA_FILE__";
 const BUILD = "__BUILD_VERSION__";
@@ -111,6 +112,7 @@ const state = {
   fresh: null, // son açılan katman (animasyon için)
   blank: null, // null | "black" | "white"
   menuTheme: null,
+  menuFiles: false,
   extras: new Set(), // kumanda sırası dışında elle açılan katmanlar (yönlendirme / açıklama)
   extraReturn: null,
   revealedVocabularyTerms: new Set(),
@@ -1422,17 +1424,49 @@ function renderMenu() {
         {
           type: "button",
           role: "tab",
-          "aria-selected": String(t === state.menuTheme),
+          "aria-selected": String(!state.menuFiles && t === state.menuTheme),
           onclick: () => {
             if (exportingPptx) return;
+            state.menuFiles = false;
             state.menuTheme = t;
             renderMenu();
           }
         },
         `${no}. Tema · ${state.catalog.themes[t] || ""}`
       );
-    })
+    }),
+    h("button", {
+      type: "button",
+      id: "menu-files-tab",
+      role: "tab",
+      "aria-controls": "menu-files",
+      "aria-selected": String(state.menuFiles),
+      onclick: () => {
+        if (exportingPptx) return;
+        state.menuFiles = true;
+        renderMenu();
+      }
+    }, "Dosyalar")
   );
+
+  const filesView = state.menuFiles;
+  $("#menu-lessons").hidden = filesView;
+  $("#menu-steps").hidden = filesView;
+  $("#menu-files").hidden = !filesView;
+  $(".menu__body").classList.toggle("menu__body--files", filesView);
+  if (filesView) {
+    const files = assessmentDownloads(state.catalog);
+    $("#menu-files").replaceChildren(
+      h("h2", {}, "Dosyalar"),
+      h("p", { class: "menu__files-note" }, "Değerlendirme ve puanlama dosyaları"),
+      h("ul", { class: "menu__file-list" }, files.map((file) =>
+        h("li", {}, h("a", { href: file.url, download: "", class: "menu__file" },
+          h("span", { class: "menu__file-name" }, file.label),
+          h("span", { class: "menu__file-type" }, file.type)
+        ))
+      ))
+    );
+  }
 
   $("#menu-lessons").replaceChildren(
     ...lessons()
@@ -1497,6 +1531,7 @@ function renderMenu() {
 
 function openMenu() {
   state.menuTheme = currentLesson().theme;
+  state.menuFiles = false;
   $("#menu").hidden = false;
   renderMenu();
   requestAnimationFrame(() => {
