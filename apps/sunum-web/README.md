@@ -1,6 +1,6 @@
 # Sunum Web
 
-Sınıfta öğrencilere gösterilen, **yalnız öğretmenin kullandığı** ders sunumu. Netlify'da yayımlanır; sunum kumandasıyla slayt gibi ileri–geri yönetilir.
+Sınıfta öğrencilere gösterilen, **yalnız öğretmenin kullandığı** ders sunumu. GitHub Pages veya Netlify'da yayımlanır; sunum kumandasıyla slayt gibi ileri–geri yönetilir.
 
 - İçerik: `data/grade-11/presentation/theme-*/*-flow.json` ders akışları + kanonik `source-index` / `answer-bank` verisi (Lesson Player'ın veri üreticisiyle aynı kaynak). Her ders: **kapak → adım slaytları → ders sonu**.
 - Öğretmen notları (`content.note`) sunum verisine hiç girmez.
@@ -39,7 +39,7 @@ Resmî QR form dosyaları uygulamayla birlikte verilmez; EBA oturumu/erişimi ge
 
 Ders verisi build sırasında `SUNUM_SIFRE` ile **AES-256-GCM** (PBKDF2-SHA256, 250 000 tur) şifrelenir; sitede yalnız şifreli `data.<sürüm>.bin` bulunur. Şifre bilinmeden içerik okunamaz. Şifre ekranında "Bu cihazda hatırla" seçilirse şifre o tarayıcıda saklanır; menüdeki **"Bu cihazda şifreyi unut"** ile silinir.
 
-Şifreyi değiştirmek: Netlify'da `SUNUM_SIFRE` değerini değiştirip yeniden deploy edin.
+Şifreyi değiştirmek: kullandığınız yayın ortamında `SUNUM_SIFRE` değerini değiştirip yeniden deploy edin.
 
 ## Yerelde çalıştırma
 
@@ -48,9 +48,20 @@ cd apps/sunum-web
 npm run dev        # build + http://127.0.0.1:5180
 ```
 
-`SUNUM_SIFRE` verilmezse yerelde deneme şifresi `sunum` kullanılır. Kalıcı yerel şifre için `apps/sunum-web/.env.local` dosyasına `SUNUM_SIFRE=...` yazılabilir (git'e girmez). Netlify'da şifre tanımlı değilse build bilerek hata verir.
+`SUNUM_SIFRE` verilmezse yerelde deneme şifresi `sunum` kullanılır. Kalıcı yerel şifre için `apps/sunum-web/.env.local` dosyasına `SUNUM_SIFRE=...` yazılabilir (git'e girmez). Netlify veya GitHub Actions'ta şifre tanımlı değilse build bilerek hata verir.
 
 `npm test` build alır ve şifreli veriyi çözerek ders/adım/cevap sayılarını kanonik katalogla karşılaştırır.
+
+## GitHub Pages kurulumu (bir kez)
+
+1. GitHub deposunda **Settings → Secrets and variables → Actions → New repository secret** yoluyla `SUNUM_SIFRE` ekleyin. Değer, sunumu açarken kullanacağınız şifredir; en az dört karakter olmalıdır.
+2. **Settings → Pages → Build and deployment → Source** alanında **GitHub Actions** seçin.
+3. `.github/workflows/sunum-pages.yml` dosyasını içeren değişiklikleri `main` dalına gönderin. Akış, şifreli siteyi derler, testleri çalıştırır ve yalnız `apps/sunum-web/dist` çıktısını yayımlar.
+4. **Actions → Publish Sunum Web to GitHub Pages** çalışmasının başarılı olmasını bekleyin. Gerektiğinde **Run workflow** ile `main` dalından yeniden yayımlayın.
+
+Adres: https://knigdelioglu.github.io/ogretmenrehberi/
+
+**Deploy from a branch → main → /(root)** ayarı uygulamayı derlemez; kökte `index.html` bulunmadığı için README'yi gösterir. GitHub Actions yayını aynı `main` dalındaki kaynakları kullanır; derlenmiş site dosyalarını Git'e eklemek gerekmez. Dosya ve service worker yolları göreli olduğundan sunum `/ogretmenrehberi/` altında da çalışır.
 
 ## Netlify kurulumu (bir kez)
 

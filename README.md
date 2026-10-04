@@ -62,9 +62,9 @@ Yeni üretim ve düzeltmelerde önce kanonik, sürüm kontrollü JSON verisi esa
 
 `apps/lesson-player/src/generated/lessons.json`, ÖğretmenOS projection bundle'ı ve EPUB dosyaları **üretilmiş çıktıdır; ana veritabanı değildir**. Gelecekte bir iş talebi geldiğinde bu kural varsayılan kabul edilir; eski bir veri/çıktı görülürse kullanılmaz ve kanonik kaynak yeniden doğrulanır.
 
-## Sınıf sunumu (Netlify)
+## Sınıf sunumu (GitHub Pages / Netlify)
 
-`apps/sunum-web`, ders akışlarını öğrencilere slayt gibi gösteren, yalnız öğretmenin kullandığı şifreli web sunumudur. Sunum kumandasıyla ileri/geri yönetilir (ileri: önce cevap, sonra sonraki slayt). Netlify ayarı kök dizindeki `netlify.toml` dosyasındadır; şifre `SUNUM_SIFRE` ortam değişkeniyle verilir. Ayrıntılar: [apps/sunum-web/README.md](apps/sunum-web/README.md).
+`apps/sunum-web`, ders akışlarını öğrencilere slayt gibi gösteren, yalnız öğretmenin kullandığı şifreli web sunumudur. Sunum kumandasıyla ileri/geri yönetilir (ileri: önce cevap, sonra sonraki slayt). GitHub Pages için `.github/workflows/sunum-pages.yml`, `main` dalından derlenen siteyi yayımlar; Pages kaynağı **GitHub Actions**, repository secret adı **SUNUM_SIFRE** olmalıdır. Netlify ayarı kök dizindeki `netlify.toml` dosyasındadır; şifre `SUNUM_SIFRE` ortam değişkeniyle verilir. Ayrıntılar: [apps/sunum-web/README.md](apps/sunum-web/README.md).
 
 ## Ders Modu / Lesson Player
 

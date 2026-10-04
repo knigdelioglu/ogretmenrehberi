@@ -12,6 +12,8 @@ import { discoverLocalModuleGraph } from "./offline-module-graph.mjs";
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
 const distRoot = path.join(appRoot, "dist");
+const basePath = process.env.SUNUM_BASE_PATH || "/";
+assert.match(basePath, /^\/(?:[a-zA-Z0-9_-]+\/)*$/, "base path must start and end with / and contain safe path segments");
 const chrome = process.env.CHROME;
 if (!chrome) throw new Error("Set CHROME to a Chrome/Chromium executable for offline browser checks.");
 if (!fs.existsSync(path.join(distRoot, "index.html"))) {
@@ -45,7 +47,13 @@ const server = https.createServer({
   cert: fs.readFileSync(certFile)
 }, (req, res) => {
   const urlPath = decodeURIComponent(new URL(req.url, "https://localhost").pathname);
-  const file = path.resolve(distRoot, urlPath === "/" ? "index.html" : urlPath.slice(1));
+  if (!urlPath.startsWith(basePath)) {
+    res.writeHead(404);
+    res.end("Outside the site base path.");
+    return;
+  }
+  const relativePath = urlPath.slice(basePath.length);
+  const file = path.resolve(distRoot, relativePath || "index.html");
   if (!file.startsWith(distRoot + path.sep) && file !== path.join(distRoot, "index.html")) {
     res.writeHead(403, { "Cache-Control": "no-cache" });
     res.end("Forbidden");
@@ -164,7 +172,7 @@ try {
     server.once("error", reject);
     server.listen(0, "127.0.0.1", resolve);
   });
-  const root = `https://127.0.0.1:${server.address().port}/`;
+  const root = `https://127.0.0.1:${server.address().port}${basePath}`;
   const portFile = path.join(profile, "DevToolsActivePort");
   const debugPort = await until(() => fs.existsSync(portFile)
     ? Number(fs.readFileSync(portFile, "utf8").split("\n")[0]) : null, "Chrome debugging endpoint");
@@ -172,7 +180,7 @@ try {
   page.on("Network.responseReceived", ({ response }) => {
     if (!offlinePhase || !response.fromServiceWorker) return;
     const url = new URL(response.url);
-    serviceWorkerResponses.add(`${url.pathname.replace(/^\//, "")}${url.search}`);
+    serviceWorkerResponses.add(`${url.pathname.slice(basePath.length)}${url.search}`);
   });
 
   await page.send("Page.navigate", { url: root });
@@ -184,6 +192,8 @@ try {
     "service worker install and activation");
   await until(() => page.evaluate("Boolean(navigator.serviceWorker.controller)"),
     "service worker controls the first page");
+  assert.equal(await page.evaluate("new URL(navigator.serviceWorker.controller.scriptURL).pathname"),
+    `${basePath}sw.js`, "service worker is loaded inside the site base path");
 
   const graph = discoverLocalModuleGraph(distRoot, "app.js");
   const appSource = fs.readFileSync(path.join(distRoot, "app.js"), "utf8");
@@ -199,7 +209,7 @@ try {
     const keys = [];
     for (const name of cachesList) {
       const cache = await caches.open(name);
-      for (const request of await cache.keys()) keys.push(new URL(request.url).pathname.replace(/^\\//, "") + new URL(request.url).search);
+      for (const request of await cache.keys()) keys.push(new URL(request.url).pathname.slice(${basePath.length}) + new URL(request.url).search);
     }
     return expected.filter((request) => keys.includes(request));
   })()`);
@@ -227,7 +237,7 @@ try {
   const loadedByWorker = [...serviceWorkerResponses].sort();
   assert.ok(loadedByWorker.includes(""), "offline navigation is served by the service worker");
   const appEntryUrl = new URL(appUrl, root);
-  const appEntryRequest = `${appEntryUrl.pathname.replace(/^\//, "")}${appEntryUrl.search}`;
+  const appEntryRequest = `${appEntryUrl.pathname.slice(basePath.length)}${appEntryUrl.search}`;
   assert.ok(loadedByWorker.includes(appEntryRequest), "offline app entry is served by the service worker");
   for (const request of graph.requests) {
     assert.ok(loadedByWorker.includes(request), `offline module response came from the service worker: ${request}`);
@@ -236,7 +246,7 @@ try {
   assert.equal(await page.evaluate("navigator.serviceWorker.controller !== null"), true,
     "the presentation remains controlled by the active worker after offline reload");
 
-  console.log(`[sunum-web] Offline Chrome regression passed: secure HTTPS worker precached ${graph.files.length} modules; offline reload opened the encrypted lesson catalog.`);
+  console.log(`[sunum-web] Offline Chrome regression passed at ${basePath}: secure HTTPS worker precached ${graph.files.length} modules; offline reload opened the encrypted lesson catalog.`);
 } finally {
   for (const client of clients) client.close();
   await stopChild(browser);

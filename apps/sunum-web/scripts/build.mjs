@@ -47,7 +47,7 @@ let password = process.env.SUNUM_SIFRE || readLocalEnv().SUNUM_SIFRE || "";
 if (!password) {
   if (isCi) {
     fail(
-      "SUNUM_SIFRE ortam değişkeni tanımlı değil. Netlify > Site configuration > Environment variables bölümünden SUNUM_SIFRE ekleyin."
+      "SUNUM_SIFRE ortam değişkeni tanımlı değil. GitHub Actions için repository secret, Netlify için Environment variables bölümünden SUNUM_SIFRE ekleyin."
     );
   }
   password = "sunum";

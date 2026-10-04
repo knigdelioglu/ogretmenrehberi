@@ -1,0 +1,75 @@
+name: Publish Sunum Web to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/sunum-web/**"
+      - "apps/lesson-player/scripts/**"
+      - "data/grade-11/**"
+      - ".github/workflows/sunum-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sunum-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SUNUM_SIFRE: ${{ secrets.SUNUM_SIFRE }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Build encrypted site and run tests
+        working-directory: apps/sunum-web
+        run: npm test
+
+      - name: Verify GitHub Pages subpath in Chrome
+        working-directory: apps/sunum-web
+        env:
+          SUNUM_BASE_PATH: /${{ github.event.repository.name }}/
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          if [ -z "$CHROME" ]; then
+            echo "No Chrome/Chromium executable found on runner."
+            exit 1
+          fi
+          CHROME="$CHROME" node scripts/test-offline-browser.mjs
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload built site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/sunum-web/dist
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
