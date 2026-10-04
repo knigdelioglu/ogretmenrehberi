@@ -417,7 +417,9 @@ class ContentRepository(
 
         private fun parseAnswer(value: JSONObject): AnswerEntry {
             val type = value.getString("entry_type")
-            require(type in setOf("question_answer", "performance_support", "source_limited")) {
+            require(type in setOf(
+                "question_answer", "performance_support", "source_limited", "reference_answer"
+            )) {
                 "Unsupported answer category $type"
             }
             val answerSections = value.optionalJson("answer_sections")
