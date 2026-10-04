@@ -41,6 +41,17 @@ class CanonicalContentTest {
         assertEquals(bundle.byId.keys, bundle.lessonSha256.keys)
         assertTrue(loaded.statusMessage.isNotBlank())
         assertTrue(bundle.lessonSha256.values.all { it.matches(Regex("[0-9a-f]{64}")) })
+        assertEquals(
+            setOf("question_answer", "performance_support", "source_limited", "reference_answer"),
+            bundle.lessons.flatMap { it.steps }.mapNotNull { it.answer?.entryType }.toSet()
+        )
+        assertTrue(bundle.lessons.flatMap { it.steps }.any {
+            it.answer?.answer.isNullOrBlank() && when (val sections = it.answer?.answerSections) {
+                is JsonValue.Array -> sections.items.isNotEmpty()
+                is JsonValue.Object -> sections.values.isNotEmpty()
+                else -> false
+            }
+        })
         bundle.lessons.forEach { lesson ->
             assertEquals(lesson.steps.size, lesson.steps.map { it.id }.distinct().size)
             assertTrue(lesson.steps.all { it.source.sourceStatus == "VERIFIED" })
@@ -52,16 +63,16 @@ class CanonicalContentTest {
         val bundle = offlineRepository().load().bundle
         val karagoz = bundle.byId.getValue("T11-T01-KARAGOZ")
         val note = karagoz.steps.first { it.id == "s26-reference" }
-        assertTrue(note.content?.note?.contains("kitap örneklerini") == true)
+        assertTrue(note.content?.note?.contains("Kitap örnekleri") == true)
         assertEquals(LayoutKind.REFERENCE, note.layout)
         assertEquals(4, note.content?.sections?.size)
         val vocabulary = karagoz.steps.first { it.id == "s25-q1" }
         assertEquals(LayoutKind.VOCABULARY, vocabulary.layout)
         assertTrue(vocabulary.answer?.answerSections is JsonValue.Object)
-        val misleadingName = bundle.byId.getValue("T11-T04-MERDIVEN-ANLAMA-266-270")
+        val merdivenVocabulary = bundle.byId.getValue("T11-T04-MERDIVEN-ANLAMA-266-270")
             .steps.first { it.id == "s266-vocabulary" }
-        assertEquals(LayoutKind.STRUCTURE, misleadingName.layout)
-        assertNotNull(misleadingName.answer)
+        assertEquals(LayoutKind.VOCABULARY, merdivenVocabulary.layout)
+        assertNotNull(merdivenVocabulary.answer)
         assertTrue(bundle.lessons.flatMap { it.steps }.any { it.answer?.answerSections is JsonValue.Array ||
             it.answer?.answerSections is JsonValue.Object })
     }

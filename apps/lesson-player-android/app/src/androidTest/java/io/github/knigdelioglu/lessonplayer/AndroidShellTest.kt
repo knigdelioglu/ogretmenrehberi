@@ -61,9 +61,15 @@ class AndroidShellTest {
         }
         composeRule.onNodeWithTag("lesson-outline-step-2").performClick()
         composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-workspace-answer")) &&
-                hasNodes(hasTestTag("lesson-evidence-toggle"))
+            hasNodes(hasTestTag("lesson-workspace-answer"))
         }
+        composeRule.onNodeWithTag("teacher-assist-open").performClick()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
+            hasNodes(hasTestTag("teacher-assist-drawer")) ||
+                hasNodes(hasTestTag("teacher-assist-sheet"))
+        }
+        composeRule.onNodeWithTag("teacher-assist-list")
+            .performScrollToNode(hasText("METİNSEL KANIT"))
         composeRule.onNodeWithTag("lesson-previous").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-next").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-workspace-answer").assertExists()
@@ -71,7 +77,8 @@ class AndroidShellTest {
             "Teacher answer is always visible; answer toggle must not be rendered",
             !hasNodes(hasTestTag("lesson-answer-toggle"))
         )
-        composeRule.onNodeWithTag("lesson-evidence-toggle").assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("METİNSEL KANIT").assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithTag("teacher-assist-close").performClick()
         composeRule.onNodeWithTag("lesson-presentation-toggle")
             .assertIsEnabled().performClick()
 
@@ -178,13 +185,6 @@ class AndroidShellTest {
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
         }
-        if (hasNodes(hasTestTag("lesson-outline-open"))) {
-            composeRule.onNodeWithTag("lesson-outline-open").performClick()
-        }
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-outline-step-1"))
-        }
-        composeRule.onNodeWithTag("lesson-outline-step-1").performClick()
         val lessonList = composeRule.onNodeWithTag("lesson-screen-list")
         // The editor is a lazy-list item below the initial viewport, so scroll it
         // into composition before asserting/interacting with its test tag.

@@ -183,7 +183,12 @@ try {
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
   await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate("document.querySelector('#gate-password').value = 'sunum'; document.querySelector('#gate-submit').click()");
+  const password = process.env.SUNUM_SIFRE || "sunum";
+  await page.evaluate(`(() => {
+    const field = document.querySelector('#gate-password');
+    field.value = ${JSON.stringify(password)};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
   try {
     await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
   } catch (error) {
@@ -204,7 +209,7 @@ try {
     assert.equal(metrics.height, fixedHeaderHeight, "s.44 header height stays fixed across reveal layers");
     assert.equal(metrics.bodyTop, fixedBodyTop, "s.44 body position stays fixed across reveal layers");
     assert.ok(metrics.title.includes("Çözümleyebilme"), "full s.44 metadata remains available in the title");
-    if (metrics.title.includes("Metinden kanıt")) {
+    if (/metinden kanıt/i.test(metrics.title || "")) {
       evidenceReached = true;
       break;
     }
@@ -652,8 +657,15 @@ try {
   assert.equal(await page.evaluate("document.querySelectorAll('#canvas .content-images img').length"), 4, "ISSUE-098 four source images render");
   assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .content-images img')).every(image => image.naturalWidth > 100)"), true, "ISSUE-098 all source images load");
   screen = await openStep("degerlendirme-303-307", "s307-q11");
-  assert.ok(screen.text.includes("Elif, yaptığı araştırmalar") && screen.text.includes("A) Televizyon") && screen.text.includes("E) İnternet"), "ISSUE-099 full question and choices are visible before the answer");
-  assert.ok(!screen.text.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
+  let q11TaskText = screen.text;
+  assert.ok(!q11TaskText.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
+  for (let index = 0; index < 4 && !(q11TaskText.includes("A) Televizyon") && q11TaskText.includes("E) İnternet")); index += 1) {
+    const taskPage = await next();
+    assert.ok(!taskPage.includes("Doğru seçenek: B"), "ISSUE-099 choices are shown before the answer reveal");
+    q11TaskText += "\n" + taskPage;
+  }
+  assert.ok(q11TaskText.includes("Elif, yaptığı araştırmalar") && q11TaskText.includes("A) Televizyon") && q11TaskText.includes("E) İnternet"),
+    "ISSUE-099 full question and choices are visible across task pages before the answer");
   assert.ok((await advanceUntil((text) => text.includes("Doğru seçenek: B"), "s307 correct option")).includes("Doğru seçenek: B"),
     "ISSUE-099 correct option opens after the task");
   screen = await openStep("degerlendirme-303-307", "s307-q12");
@@ -692,8 +704,8 @@ try {
   screen = await openStep("konusma", "s59-rubric");
   assert.ok(screen.text.includes("Konu seçimi") && screen.text.includes("Başlangıç düzeyinde"),
     "s.59 authored rubric shows its criteria and performance levels to students");
-  assert.ok(screen.text.includes("resmî MEB/kitap anahtarı değildir"),
-    "s.59 authored rubric is identified as an original example, not an official source");
+  assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(screen.text),
+    "s.59 authored rubric does not reintroduce the removed stale disclaimer");
   const rubricDownload = await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
   assert.ok(rubricDownload?.href.endsWith("/assets/assessment-documents/iletisim-engelleri-drama-rubrik.docx"),
     "s.59 rubric has a same-origin Word download link");
@@ -711,6 +723,10 @@ try {
   assert.deepEqual([...peerBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "peer-form download is a real DOCX ZIP package");
   assert.ok(peerBytes.length > 5000, "peer-form download has complete document content");
 
+  // Keep the browser export regression representative without rendering a
+  // large lesson on every CI run; the four-step Theme 1 intro exercises the
+  // same real capture, PPTX assembly and browser-download path.
+  await openStep("tema-girisi", "s12-13-overview");
   await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
   await until(() => page.evaluate("!document.querySelector('#menu').hidden && Boolean(document.querySelector('#menu-export-pptx'))"), "PPTX export control in lesson menu");
   await page.evaluate("document.querySelector('#menu-export-pptx').click()");

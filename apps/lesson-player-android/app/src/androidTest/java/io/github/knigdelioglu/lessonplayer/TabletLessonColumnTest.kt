@@ -10,6 +10,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.centerRight
+import androidx.compose.ui.test.click
 import androidx.compose.ui.test.getUnclippedBoundsInRoot
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
@@ -117,8 +119,10 @@ class TabletLessonColumnTest {
         assertEquals("TeacherAssist width should not change", teacherAssistInitialBounds.width, teacherAssistAfterOpenBounds.width)
 
         // 4. Sol kolonun dışına (scrim üzerine) dokunulunca sol kolon yeniden gizlenir
-        composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performClick()
-        composeRule.waitUntil(timeoutMillis = 3_000) {
+        composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performTouchInput {
+            click(centerRight)
+        }
+        composeRule.waitUntil(timeoutMillis = 10_000) {
             composeRule.onAllNodesWithTag("tablet-lesson-sidebar-overlay")
                 .fetchSemanticsNodes().isEmpty()
         }

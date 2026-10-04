@@ -349,6 +349,7 @@ internal fun SessionLessonScreen(
                                             RevealKey.GUIDANCE -> !answer?.guidance.isNullOrBlank()
                                             RevealKey.EVIDENCE -> !answer?.evidenceQuotes.isNullOrEmpty()
                                             RevealKey.EXPLANATION -> !answer?.explanation.isNullOrBlank()
+                                            RevealKey.DICTIONARY -> !answer?.dictionaryTerms.isNullOrEmpty()
                                             else -> false
                                         }
                                         if (hasContent) {
@@ -367,6 +368,7 @@ internal fun SessionLessonScreen(
                                                             RevealKey.GUIDANCE -> "Yönlendirme"
                                                             RevealKey.EVIDENCE -> "Metinden kanıt"
                                                             RevealKey.EXPLANATION -> "Açıklama"
+                                                            RevealKey.DICTIONARY -> "Sözlük"
                                                             else -> key.wire
                                                         }
                                                 )
@@ -376,6 +378,9 @@ internal fun SessionLessonScreen(
                                                     RevealKey.GUIDANCE -> answer?.guidance
                                                     RevealKey.EVIDENCE -> answer?.evidenceQuotes?.joinToString("\n")
                                                     RevealKey.EXPLANATION -> answer?.explanation
+                                                    RevealKey.DICTIONARY -> answer?.dictionaryTerms?.joinToString("\n\n") {
+                                                        "${it.term}: ${it.meaning}"
+                                                    }
                                                     else -> null
                                                 }
                                                 text?.let {

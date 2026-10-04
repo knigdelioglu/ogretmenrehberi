@@ -10,6 +10,7 @@ internal fun revealLayerLabel(key: RevealKey): String = when (key) {
     RevealKey.ANSWER -> "Cevap"
     RevealKey.EVIDENCE -> "Metinden kanıt"
     RevealKey.EXPLANATION -> "Açıklama"
+    RevealKey.DICTIONARY -> "Sözlük"
     RevealKey.NOTE -> "Öğretmen notu"
 }
 
@@ -26,6 +27,7 @@ internal fun isPublicRevealAllowed(step: LessonStep, key: RevealKey): Boolean {
             (!step.answer.answer.isNullOrBlank() || step.answer.answerSections != null)
         RevealKey.EXPLANATION -> !step.answer?.explanation.isNullOrBlank()
         RevealKey.EVIDENCE -> !step.answer?.evidenceQuotes.isNullOrEmpty()
+        RevealKey.DICTIONARY -> !step.answer?.dictionaryTerms.isNullOrEmpty()
         RevealKey.NOTE -> false
     }
 }

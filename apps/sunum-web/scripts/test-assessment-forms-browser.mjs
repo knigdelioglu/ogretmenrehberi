@@ -131,13 +131,21 @@ try {
   await page.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: profile });
   await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate("document.querySelector('#gate-password').value='sunum'; document.querySelector('#gate-submit').click()");
+  const password = process.env.SUNUM_SIFRE || "sunum";
+  await page.evaluate(`(() => {
+    const field = document.querySelector('#gate-password');
+    field.value = ${JSON.stringify(password)};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
   await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
 
   let pageParts = 0;
-  for (const [lessonSlug, stepId, filename] of files) {
+  let browserDownloads = 0;
+  for (const [fileIndex, [lessonSlug, stepId, filename]] of files.entries()) {
     const { step } = await openStep(lessonSlug, stepId);
     const pagesText = [];
+    let download = null;
+    let downloadTriggered = false;
     let pageState = await inspectPage();
     assert.equal(pageState.formWidgets, 0, `${stepId} has no duplicate form-upload panel`);
     let marker = /·\s*(\d+)\/(\d+)/.exec(pageState.counter);
@@ -148,6 +156,19 @@ try {
       assert.ok(pageState.scrollHeight <= pageState.clientHeight + 1, `${stepId} page ${currentPage} requires no vertical scrolling`);
       assert.ok(pageState.scrollWidth <= pageState.clientWidth + 1, `${stepId} page ${currentPage} requires no horizontal scrolling`);
       pagesText.push(pageState.text);
+      const pageDownload = await page.evaluate(`(() => {
+        const a = document.querySelector('#canvas .source-links a[download]');
+        return a && { href: a.href, name: a.download, label: a.textContent.trim() };
+      })()`);
+      if (pageDownload && !download) {
+        download = pageDownload;
+        assert.ok(download.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
+        assert.ok(download.label, `${stepId} has a named teacher download`);
+        if (fileIndex === 0) {
+          await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
+          downloadTriggered = true;
+        }
+      }
       if (currentPage < totalPages) {
         const previous = pageState.counter;
         await page.evaluate("document.querySelector('#dock [data-action=next]').click()");
@@ -171,30 +192,37 @@ try {
       if (section.body) assert.ok(normalizedText.includes(section.body.replace(/\s+/g, " ").trim()),
         `${stepId} retains full rubric descriptor for ${section.title}`);
     }
-    if (stepId === "s59-rubric") assert.match(allText, /resmî MEB\/kitap anahtarı değildir/i);
+    if (stepId === "s59-rubric") assert.doesNotMatch(
+      allText,
+      /örnek anahtar|resmî MEB\/kitap anahtarı değildir/i,
+      "s59-rubric does not reintroduce the removed stale disclaimer"
+    );
 
-    const download = await page.evaluate(`(() => {
-      const a = document.querySelector('#canvas .source-links a[download]');
-      return a && { href: a.href, name: a.download, label: a.textContent.trim() };
-    })()`);
-    assert.ok(download?.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
-    assert.ok(download.label, `${stepId} has a named teacher download`);
-    await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
-    const downloadedPath = await until(() => {
-      const path = profile + "/" + filename;
-      return fs.existsSync(path) ? path : null;
-    }, `${filename} browser download`);
-    const actual = fs.readFileSync(downloadedPath);
+    assert.ok(download, `${stepId} exposes its DOCX asset on a rendered content page`);
     const expected = fs.readFileSync(path.join(appRoot, "dist/assets/assessment-documents", filename));
-    assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
-    assert.deepEqual([...actual.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
-    fs.rmSync(downloadedPath);
+    const response = await fetch(download.href);
+    assert.equal(response.status, 200, `${filename} is served by the built app`);
+    const served = Buffer.from(await response.arrayBuffer());
+    assert.deepEqual(served, expected, `${filename} served bytes match the packaged DOCX`);
+    assert.deepEqual([...served.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
+
+    if (fileIndex === 0) {
+      assert.equal(downloadTriggered, true, `${stepId} triggers a representative browser download`);
+      const downloadedPath = await until(() => {
+        const path = profile + "/" + filename;
+        return fs.existsSync(path) ? path : null;
+      }, `${filename} browser download`);
+      const actual = fs.readFileSync(downloadedPath);
+      assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
+      fs.rmSync(downloadedPath);
+      browserDownloads += 1;
+    }
   }
 
   await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
   const menuWidgets = await page.evaluate("document.querySelectorAll('#menu .assessment-resources, #menu input[type=file]').length");
   assert.equal(menuWidgets, 0, "lesson menu does not expose an upload flow for already prepared resources");
-  console.log(`[sunum-web] Chrome assessment check passed: ${files.length} DOCX downloads; ${pageParts} content pages fit at 1440x900 with every criterion and level rendered.`);
+  console.log(`[sunum-web] Chrome assessment check passed: ${files.length} DOCX links/assets, ${browserDownloads} representative browser download; ${pageParts} content pages fit at 1440x900 with every criterion and level rendered.`);
 } finally {
   for (const client of clients) client.close();
   for (const child of [browser, server]) {

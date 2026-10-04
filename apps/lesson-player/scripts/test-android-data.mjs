@@ -49,7 +49,16 @@ for (const [index, lesson] of lessons.entries()) {
     assert.equal(step.source.source_status, "VERIFIED");
     assert.ok(step.display_prompt.trim());
     if(step.answer) {
-      assert.ok(step.answer.question_id && step.answer.answer.trim());
+      const answerText = typeof step.answer.answer === "string" ? step.answer.answer.trim() : "";
+      const answerSections = step.answer.answer_sections;
+      const hasAnswerSections = answerSections &&
+        typeof answerSections === "object" &&
+        !Array.isArray(answerSections) &&
+        Object.keys(answerSections).length > 0;
+      assert.ok(
+        step.answer.question_id && (answerText || hasAnswerSections),
+        `Missing answer payload: ${lesson.lesson_id}/${step.id}`
+      );
       assert.ok(step.source.printed_page_range);
     } else {
       assert.ok(step.content, `Missing content: ${lesson.lesson_id}/${step.id}`);
@@ -60,7 +69,7 @@ const witness = lessons.find(x => x.lesson_id === "T11-T01-KARAGOZ").steps
   .find(x => x.id === "s26-reference");
 assert.ok(witness.content.note, "Teacher note was lost");
 assert.equal(lessons.find(x => x.lesson_id === "T11-T04-MERDIVEN-ANLAMA-266-270")
-  .steps.find(x => x.id === "s266-vocabulary").layout, "structure");
+  .steps.find(x => x.id === "s266-vocabulary").layout, "vocabulary");
 const modified = structuredClone(lessons);
 const answered = modified.flatMap(x => x.steps).find(x => x.answer?.answer);
 answered.answer.answer += " İçerik değişti.";
