@@ -43,7 +43,7 @@ for (const [filename, relativeFlow, stepId, count] of files) {
   if (/peer-form$/.test(stepId) || stepId === "s58-feedback") {
     assert.equal(step.content.items.length, count, `${stepId} exposes every peer-form criterion`);
     assert.deepEqual(step.content.scale, ["Evet", "Kısmen", "Hayır"], `${stepId} displays the original peer scale`);
-  } else {
+  } else if (stepId !== "s59-rubric") {
     const levels = step.content.sections.filter((section) => section.title !== "Toplam puan ve hesaplama" && /puan/.test(section.title));
     assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
     assert.ok(step.content.sections.some((section) => section.title === "Toplam puan ve hesaplama"),
@@ -53,10 +53,21 @@ for (const [filename, relativeFlow, stepId, count] of files) {
   }
 }
 const authored = byFlow.get("data/grade-11/presentation/theme-1/konusma-flow.json").steps.find((step) => step.id === "s59-rubric");
-assert.equal(authored.content.lead, "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.");
+assert.equal(authored.content.lead, "Ders kitabının 54. sayfasındaki konuşma kontrol listesini kullanarak iletişim engelleri canlandırmasını değerlendirin.");
 assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
 assert.equal(authored.content.sources.find((source) => source.download === true)?.label, "Öğretmen anahtarı");
-assert.match(JSON.stringify(authored.content.sections), /Konu seçimi|İçeriğin uygunluğu|Canlandırma becerisi/);
+assert.equal(authored.content.sections.length, 7, "communication barriers use the seven textbook checklist criteria");
+assert.deepEqual(authored.content.sections.map((section) => section.body), [
+  "Konuşmanın konusunu ve amacını belirledi.",
+  "Konuşmanın konusuyla ilgili gerekli gözlem, inceleme ve araştırmalar yaptı.",
+  "Konuşmaya uygun yöntem ve stratejiyi belirledi.",
+  "Konuşmanın süresini ve hedef kitlenin özelliklerini belirledi.",
+  "Konuşmayı nasıl ve hangi araçları kullanarak gerçekleştireceğine karar verdi.",
+  "Mekânın, teknik altyapının, görüntü ve sesin uygunluğunu kontrol etti.",
+  "Konuşmada iletişimin önündeki engelleri ortadan kaldırdı."
+]);
+assert.equal(authored.content.sources[0]?.label, "Ders kitabı basılı s.54 — PDF sayfasını aç");
+assert.match(authored.content.sources[0]?.url ?? "", /#page=55$/);
 const rubricPages = [
   ["data/grade-11/presentation/theme-1/konusma-flow.json", "s59-rubric"],
   ["data/grade-11/presentation/theme-1/yazma-flow.json", "s78-rubric"],
@@ -68,6 +79,20 @@ const rubricPages = [
   ["data/grade-11/presentation/theme-4/afis-atolyesi-298-302-flow.json", "s302-rubric"]
 ];
 const classScorer = "assets/assessment-documents/35-ogrenci-rubrik-puanlama.xlsx";
+const rubricDocuments = [
+  ["data/grade-11/presentation/theme-1/yazma-flow.json", "s78-rubric", "19XU4J2K.docx"],
+  ["data/grade-11/presentation/theme-2/konusma-flow.json", "s135-reference", "19XU4J2L.docx"],
+  ["data/grade-11/presentation/theme-2/yazma-flow.json", "s153-rubric", "19XU4J2N.docx"],
+  ["data/grade-11/presentation/theme-3/kemal-tahir-mulakat-210-214-flow.json", "s214-rubric", "19XU4J2O.docx"],
+  ["data/grade-11/presentation/theme-3/radyo-diyalog-yazma-225-229-flow.json", "s228-rubric", "19XU4J2P.docx"],
+  ["data/grade-11/presentation/theme-4/tiyatro-canlandirma-280-283-flow.json", "s283-performance", "19XU4J2Q.docx"],
+  ["data/grade-11/presentation/theme-4/afis-atolyesi-298-302-flow.json", "s302-rubric", "19XU4J2R.docx"]
+];
+for (const [relativeFlow, stepId, filename] of rubricDocuments) {
+  const flow = byFlow.get(relativeFlow) ?? JSON.parse(fs.readFileSync(path.join(repoRoot, relativeFlow), "utf8"));
+  const source = flow.steps.find((entry) => entry.id === stepId).content.sources.find((entry) => entry.url.endsWith(`/${filename}`));
+  assert.equal(source?.label, `Kaynak: ${filename}`, `${stepId} identifies its DOCX source`);
+}
 for (const [relativeFlow, stepId] of rubricPages) {
   const flow = byFlow.get(relativeFlow) ?? JSON.parse(fs.readFileSync(path.join(repoRoot, relativeFlow), "utf8"));
   const step = flow.steps.find((entry) => entry.id === stepId);
@@ -84,8 +109,23 @@ for (const file of [xlsxSource, xlsxBuilt]) {
   assert.equal((workbookXml.match(/<x:sheet\b/g) ?? []).length, 9, "workbook contains a class list and eight rubric sheets");
   assert.match(workbookXml, /Sınıf Listesi/);
   const firstRubricXml = execFileSync("unzip", ["-p", file, "xl/worksheets/sheet2.xml"], { encoding: "utf8" });
-  assert.match(firstRubricXml, /<x:f>/, "rubric totals are formula-driven");
-  assert.match(firstRubricXml, /<x:dataValidations\b/, "criterion score cells have validation");
+  assert.match(firstRubricXml, /COUNTIF\(B6:H6,"Evet"\)/, "the supplied group checklist counts its seven criteria");
+  assert.match(firstRubricXml, /SUM\(D19:J19\)/, "the supplied individual performance table calculates totals");
+  assert.match(firstRubricXml, /<x:dataValidations\b/, "checklist and scoring cells retain their validations");
+  assert.match(firstRubricXml, /#page=55/, "the communication workbook cites the printed page 54 checklist");
+  assert.match(firstRubricXml, /iletisim-engelleri-drama-rubrik\.docx/, "the communication sheet cites its teacher key");
+}
+for (const [sheetNumber, filename] of [
+  ["sheet3.xml", "19XU4J2K.docx"],
+  ["sheet4.xml", "19XU4J2L.docx"],
+  ["sheet5.xml", "19XU4J2N.docx"],
+  ["sheet6.xml", "19XU4J2O.docx"],
+  ["sheet7.xml", "19XU4J2P.docx"],
+  ["sheet8.xml", "19XU4J2Q.docx"],
+  ["sheet9.xml", "19XU4J2R.docx"]
+]) {
+  const sheetXml = execFileSync("unzip", ["-p", xlsxBuilt, `xl/worksheets/${sheetNumber}`], { encoding: "utf8" });
+  assert.ok(sheetXml.includes(`Kaynak: ${filename}`), `${filename} is cited on its matching worksheet`);
 }
 const downloadedNames = [...files.map(([name]) => name), path.basename(classScorer)].sort();
 const builtNames = fs.readdirSync(path.join(distRoot, "assets/assessment-documents")).sort();
