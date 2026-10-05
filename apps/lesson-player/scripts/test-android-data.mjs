@@ -49,7 +49,11 @@ for (const [index, lesson] of lessons.entries()) {
     assert.equal(step.source.source_status, "VERIFIED");
     assert.ok(step.display_prompt.trim());
     if(step.answer) {
-      assert.ok(step.answer.question_id && step.answer.answer.trim());
+      const sections = step.answer.answer_sections;
+      const hasStructuredAnswer = Array.isArray(sections)
+        ? sections.length > 0
+        : Boolean(sections && typeof sections === "object" && Object.keys(sections).length > 0);
+      assert.ok(step.answer.question_id && (step.answer.answer?.trim() || hasStructuredAnswer));
       assert.ok(step.source.printed_page_range);
     } else {
       assert.ok(step.content, `Missing content: ${lesson.lesson_id}/${step.id}`);
@@ -60,7 +64,7 @@ const witness = lessons.find(x => x.lesson_id === "T11-T01-KARAGOZ").steps
   .find(x => x.id === "s26-reference");
 assert.ok(witness.content.note, "Teacher note was lost");
 assert.equal(lessons.find(x => x.lesson_id === "T11-T04-MERDIVEN-ANLAMA-266-270")
-  .steps.find(x => x.id === "s266-vocabulary").layout, "structure");
+  .steps.find(x => x.id === "s266-vocabulary").layout, "vocabulary");
 const modified = structuredClone(lessons);
 const answered = modified.flatMap(x => x.steps).find(x => x.answer?.answer);
 answered.answer.answer += " İçerik değişti.";

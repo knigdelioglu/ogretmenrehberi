@@ -183,7 +183,8 @@ try {
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
   await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate("document.querySelector('#gate-password').value = 'sunum'; document.querySelector('#gate-submit').click()");
+  const password = JSON.stringify(process.env.SUNUM_SIFRE || "sunum");
+  await page.evaluate(`document.querySelector('#gate-password').value = ${password}; document.querySelector('#gate-submit').click()`);
   try {
     await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
   } catch (error) {
@@ -197,20 +198,20 @@ try {
   const initialHeader = await headerMetrics();
   const fixedHeaderHeight = initialHeader.height;
   const fixedBodyTop = initialHeader.bodyTop;
-  let evidenceReached = false;
+  let answerReached = false;
   for (let index = 0; index < 12; index += 1) {
     const metrics = await headerMetrics();
     assert.equal(metrics.whiteSpace, "nowrap", "s.44 metadata stays on one line");
     assert.equal(metrics.height, fixedHeaderHeight, "s.44 header height stays fixed across reveal layers");
     assert.equal(metrics.bodyTop, fixedBodyTop, "s.44 body position stays fixed across reveal layers");
     assert.ok(metrics.title.includes("Çözümleyebilme"), "full s.44 metadata remains available in the title");
-    if (metrics.title.includes("Metinden kanıt")) {
-      evidenceReached = true;
+    if (metrics.title.includes(" · Cevap")) {
+      answerReached = true;
       break;
     }
     await next();
   }
-  assert.ok(evidenceReached, "s.44 regression case reaches its evidence reveal");
+  assert.ok(answerReached, "s.44 regression case reaches its answer reveal");
   await openStep("konusma", "s53-q1");
   const longHeadingMetrics = await headerMetrics();
   assert.equal(longHeadingMetrics.whiteSpace, "nowrap", "s.53 long heading stays on one line");
@@ -692,8 +693,8 @@ try {
   screen = await openStep("konusma", "s59-rubric");
   assert.ok(screen.text.includes("Konu seçimi") && screen.text.includes("Başlangıç düzeyinde"),
     "s.59 authored rubric shows its criteria and performance levels to students");
-  assert.ok(screen.text.includes("resmî MEB/kitap anahtarı değildir"),
-    "s.59 authored rubric is identified as an original example, not an official source");
+  assert.ok(screen.text.includes("Öğretmen anahtarı") && screen.text.includes("Puanlama Exceli"),
+    "s.59 authored rubric links its teacher rubric and scoring workbook");
   const rubricDownload = await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
   assert.ok(rubricDownload?.href.endsWith("/assets/assessment-documents/iletisim-engelleri-drama-rubrik.docx"),
     "s.59 rubric has a same-origin Word download link");

@@ -131,12 +131,30 @@ try {
   await page.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: profile });
   await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
   await until(() => page.evaluate("!document.querySelector('#gate').hidden"), "password screen");
-  await page.evaluate("document.querySelector('#gate-password').value='sunum'; document.querySelector('#gate-submit').click()");
+  const password = JSON.stringify(process.env.SUNUM_SIFRE || "sunum");
+  await page.evaluate(`document.querySelector('#gate-password').value=${password}; document.querySelector('#gate-submit').click()`);
   await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide'))"), "unlocked presentation");
 
   let pageParts = 0;
   for (const [lessonSlug, stepId, filename] of files) {
     const { step } = await openStep(lessonSlug, stepId);
+    const download = await page.evaluate(`(() => {
+      const a = document.querySelector('#canvas .source-links a[download]');
+      return a && { href: a.href, name: a.download, label: a.textContent.trim() };
+    })()`);
+    assert.ok(download?.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
+    assert.ok(download.label, `${stepId} has a named teacher download`);
+    await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
+    const downloadedPath = await until(() => {
+      const path = profile + "/" + filename;
+      return fs.existsSync(path) ? path : null;
+    }, `${filename} browser download`);
+    const actual = fs.readFileSync(downloadedPath);
+    const expected = fs.readFileSync(path.join(appRoot, "dist/assets/assessment-documents", filename));
+    assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
+    assert.deepEqual([...actual.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
+    fs.rmSync(downloadedPath);
+
     const pagesText = [];
     let pageState = await inspectPage();
     assert.equal(pageState.formWidgets, 0, `${stepId} has no duplicate form-upload panel`);
@@ -171,24 +189,11 @@ try {
       if (section.body) assert.ok(normalizedText.includes(section.body.replace(/\s+/g, " ").trim()),
         `${stepId} retains full rubric descriptor for ${section.title}`);
     }
-    if (stepId === "s59-rubric") assert.match(allText, /resmî MEB\/kitap anahtarı değildir/i);
+    if (stepId === "s59-rubric") {
+      assert.ok(allText.includes("Öğretmen anahtarı") && allText.includes("Puanlama Exceli"),
+        "s59-rubric links its teacher rubric and scoring workbook");
+    }
 
-    const download = await page.evaluate(`(() => {
-      const a = document.querySelector('#canvas .source-links a[download]');
-      return a && { href: a.href, name: a.download, label: a.textContent.trim() };
-    })()`);
-    assert.ok(download?.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
-    assert.ok(download.label, `${stepId} has a named teacher download`);
-    await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
-    const downloadedPath = await until(() => {
-      const path = profile + "/" + filename;
-      return fs.existsSync(path) ? path : null;
-    }, `${filename} browser download`);
-    const actual = fs.readFileSync(downloadedPath);
-    const expected = fs.readFileSync(path.join(appRoot, "dist/assets/assessment-documents", filename));
-    assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
-    assert.deepEqual([...actual.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
-    fs.rmSync(downloadedPath);
   }
 
   await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");

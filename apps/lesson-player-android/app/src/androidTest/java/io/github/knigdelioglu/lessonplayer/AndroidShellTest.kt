@@ -192,7 +192,7 @@ class AndroidShellTest {
         composeRule.onNodeWithTag("lesson-editor-open").performClick()
         composeRule.onNodeWithText("Yerel adım düzenleme").assertExists()
         composeRule.onNodeWithText("Soru / başlık").assertExists()
-        lessonList.performScrollToNode(hasText("Süreç maddeleri ve bilgi kartları"))
+        lessonList.performScrollToNode(hasTestTag("lesson-editor"))
         composeRule.onNodeWithText("Süreç maddeleri ve bilgi kartları").assertExists()
         lessonList.performScrollToNode(hasText("Düzenlemeyi kapat"))
         composeRule.onNodeWithText("Düzenlemeyi kapat").performClick()
