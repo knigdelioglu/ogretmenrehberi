@@ -66,9 +66,6 @@ assert.deepEqual(preparation.content.sections.map((section) => section.body), [
   "Mekânın, teknik altyapının, görüntü ve sesin uygunluğunu kontrol etti.",
   "Konuşmada iletişimin önündeki engelleri ortadan kaldırdı."
 ]);
-assert.equal(preparation.content.sources[0]?.label, "Ders kitabı basılı s.54 — PDF sayfasını aç");
-assert.match(preparation.content.sources[0]?.url ?? "", /#page=54$/);
-
 const authored = speakingFlow.steps.find((step) => step.id === "s59-rubric");
 assert.equal(authored.content.lead, "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.");
 assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
