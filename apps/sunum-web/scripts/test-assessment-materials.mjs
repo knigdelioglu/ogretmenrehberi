@@ -43,7 +43,7 @@ for (const [filename, relativeFlow, stepId, count] of files) {
   if (/peer-form$/.test(stepId) || stepId === "s58-feedback") {
     assert.equal(step.content.items.length, count, `${stepId} exposes every peer-form criterion`);
     assert.deepEqual(step.content.scale, ["Evet", "Kısmen", "Hayır"], `${stepId} displays the original peer scale`);
-  } else if (stepId !== "s59-rubric") {
+  } else {
     const levels = step.content.sections.filter((section) => section.title !== "Toplam puan ve hesaplama" && /puan/.test(section.title));
     assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
     assert.ok(step.content.sections.some((section) => section.title === "Toplam puan ve hesaplama"),
@@ -52,12 +52,12 @@ for (const [filename, relativeFlow, stepId, count] of files) {
       `${stepId} retains the verified book-page reference`);
   }
 }
-const authored = byFlow.get("data/grade-11/presentation/theme-1/konusma-flow.json").steps.find((step) => step.id === "s59-rubric");
-assert.equal(authored.content.lead, "Ders kitabının 54. sayfasındaki konuşma kontrol listesini kullanarak iletişim engelleri canlandırmasını değerlendirin.");
-assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
-assert.equal(authored.content.sources.find((source) => source.download === true)?.label, "Öğretmen anahtarı");
-assert.equal(authored.content.sections.length, 7, "communication barriers use the seven textbook checklist criteria");
-assert.deepEqual(authored.content.sections.map((section) => section.body), [
+const speakingFlow = byFlow.get("data/grade-11/presentation/theme-1/konusma-flow.json");
+const preparation = speakingFlow.steps.find((step) => step.id === "s54-plan");
+assert.equal(preparation.content.lead, "Sözlü iletişim engellerini konu alan canlandırmayı uygulamadan önce planlama kararlarını tamamlayın. Bu aşama hazırlık sürecidir; nihai drama performans puanından ayrıdır.");
+assert.deepEqual(preparation.content.scale, ["Evet", "Hayır"], "page 54 preparation checklist keeps the textbook scale");
+assert.equal(preparation.content.sections.length, 7, "page 54 keeps all seven preparation checklist criteria");
+assert.deepEqual(preparation.content.sections.map((section) => section.body), [
   "Konuşmanın konusunu ve amacını belirledi.",
   "Konuşmanın konusuyla ilgili gerekli gözlem, inceleme ve araştırmalar yaptı.",
   "Konuşmaya uygun yöntem ve stratejiyi belirledi.",
@@ -66,8 +66,16 @@ assert.deepEqual(authored.content.sections.map((section) => section.body), [
   "Mekânın, teknik altyapının, görüntü ve sesin uygunluğunu kontrol etti.",
   "Konuşmada iletişimin önündeki engelleri ortadan kaldırdı."
 ]);
-assert.equal(authored.content.sources[0]?.label, "Ders kitabı basılı s.54 — PDF sayfasını aç");
-assert.match(authored.content.sources[0]?.url ?? "", /#page=55$/);
+assert.equal(preparation.content.sources[0]?.label, "Ders kitabı basılı s.54 — PDF sayfasını aç");
+assert.match(preparation.content.sources[0]?.url ?? "", /#page=55$/);
+
+const authored = speakingFlow.steps.find((step) => step.id === "s59-rubric");
+assert.equal(authored.content.lead, "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.");
+assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
+assert.equal(authored.content.sources.find((source) => source.download === true)?.label, "Öğretmen anahtarı");
+assert.match(JSON.stringify(authored.content.sections), /Konu seçimi|İçeriğin uygunluğu|Canlandırma becerisi/);
+assert.equal(authored.content.sources[0]?.label, "Ders kitabı basılı s.58 — PDF sayfasını aç");
+assert.match(authored.content.sources[0]?.url ?? "", /#page=58$/);
 const rubricPages = [
   ["data/grade-11/presentation/theme-1/konusma-flow.json", "s59-rubric"],
   ["data/grade-11/presentation/theme-1/yazma-flow.json", "s78-rubric"],
