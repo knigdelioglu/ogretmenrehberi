@@ -8724,7 +8724,7 @@
           "source_locator": "basılı s.54 / PDF s.55"
         },
         "content": {
-          "lead": "Sözlü iletişim engellerini konu alan canlandırmayı uygulamadan önce planlama kararlarını tamamlayın.",
+          "lead": "Sözlü iletişim engellerini konu alan canlandırmayı uygulamadan önce planlama kararlarını tamamlayın. Bu aşama hazırlık sürecidir; nihai drama performans puanından ayrıdır.",
           "items": [
             "Gruplara ayrılın; konuşmanın konusunu ve amacını belirleyin.",
             "Gerekli gözlem, inceleme ve araştırmayı yapın.",
@@ -8732,6 +8732,46 @@
             "Süreyi ve hedef kitlenin özelliklerini belirleyin.",
             "Konuya uygun konuşma yöntem ve stratejisini seçin.",
             "Mekân, teknik altyapı, görüntü ve ses koşullarını kontrol ederek olası iletişim engellerini azaltın."
+          ],
+          "sections": [
+            {
+              "title": "Konu ve amaç",
+              "body": "Konuşmanın konusunu ve amacını belirledi."
+            },
+            {
+              "title": "Gözlem, inceleme ve araştırma",
+              "body": "Konuşmanın konusuyla ilgili gerekli gözlem, inceleme ve araştırmalar yaptı."
+            },
+            {
+              "title": "Yöntem ve strateji",
+              "body": "Konuşmaya uygun yöntem ve stratejiyi belirledi."
+            },
+            {
+              "title": "Süre ve hedef kitle",
+              "body": "Konuşmanın süresini ve hedef kitlenin özelliklerini belirledi."
+            },
+            {
+              "title": "Araçlar ve canlandırma biçimi",
+              "body": "Konuşmayı nasıl ve hangi araçları kullanarak gerçekleştireceğine karar verdi."
+            },
+            {
+              "title": "Mekân, teknik altyapı, görüntü ve ses",
+              "body": "Mekânın, teknik altyapının, görüntü ve sesin uygunluğunu kontrol etti."
+            },
+            {
+              "title": "İletişim engellerini giderme",
+              "body": "Konuşmada iletişimin önündeki engelleri ortadan kaldırdı."
+            }
+          ],
+          "scale": [
+            "Evet",
+            "Hayır"
+          ],
+          "sources": [
+            {
+              "label": "Ders kitabı basılı s.54 — PDF sayfasını aç",
+              "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=55"
+            }
           ]
         }
       },
@@ -9637,8 +9677,8 @@
           ],
           "sources": [
             {
-              "label": "Ders kitabı basılı s.54 — PDF sayfasını aç",
-              "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=55"
+              "label": "Ders kitabı basılı s.58 — PDF sayfasını aç",
+              "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=58"
             },
             {
               "label": "Öğretmen için akran değerlendirme formunu indir",
@@ -9654,7 +9694,7 @@
         "density": "compact",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "İletişim Engelleri konuşma kontrol listesi",
+        "display_prompt": "İletişim Engelleri drama performansı — ölçüt ve puan düzeyleri",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T01-S0063",
@@ -9668,41 +9708,113 @@
         },
         "answer": null,
         "content": {
-          "lead": "Ders kitabının 54. sayfasındaki konuşma kontrol listesini kullanarak iletişim engelleri canlandırmasını değerlendirin.",
+          "lead": "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.",
           "sections": [
             {
-              "title": "Konu ve amaç",
-              "body": "Konuşmanın konusunu ve amacını belirledi."
+              "title": "Başlangıç düzeyinde · 1–2 puan",
+              "body": "Ölçüt: Konu seçimi (10 puan). Seçilen konu ile sözlü iletişim engelleri ve görevin amacı arasında anlaşılır bir bağ kurulmamıştır"
             },
             {
-              "title": "Gözlem, inceleme ve araştırma",
-              "body": "Konuşmanın konusuyla ilgili gerekli gözlem, inceleme ve araştırmalar yaptı."
+              "title": "Kabul edilebilir · 3–5 puan",
+              "body": "Ölçüt: Konu seçimi (10 puan). Konu iletişim engelleriyle kısmen ilişkilidir; amaç ya da kapsam yeterince açık değildir"
             },
             {
-              "title": "Yöntem ve strateji",
-              "body": "Konuşmaya uygun yöntem ve stratejiyi belirledi."
+              "title": "İyi · 6–8 puan",
+              "body": "Ölçüt: Konu seçimi (10 puan). Konu ve amaç uygundur; canlandırmanın hangi iletişim engelini ele aldığı anlaşılır"
             },
             {
-              "title": "Süre ve hedef kitle",
-              "body": "Konuşmanın süresini ve hedef kitlenin özelliklerini belirledi."
+              "title": "Çok iyi · 9–10 puan",
+              "body": "Ölçüt: Konu seçimi (10 puan). Konu odaklı ve ilgi çekicidir; amaç, iletişim engelleri ve canlandırma biçimi güçlü biçimde örtüşür"
             },
             {
-              "title": "Araçlar ve canlandırma biçimi",
-              "body": "Konuşmayı nasıl ve hangi araçları kullanarak gerçekleştireceğine karar verdi."
+              "title": "Başlangıç düzeyinde · 1–5 puan",
+              "body": "Ölçüt: İçeriğin uygunluğu (20 puan). İletişim engelleri belirgin değildir ya da yanlış yansıtılmıştır; olaylar görevin amacına hizmet etmez"
             },
             {
-              "title": "Mekân, teknik altyapı, görüntü ve ses",
-              "body": "Mekânın, teknik altyapının, görüntü ve sesin uygunluğunu kontrol etti."
+              "title": "Kabul edilebilir · 6–10 puan",
+              "body": "Ölçüt: İçeriğin uygunluğu (20 puan). Bir iletişim engeli görülür; ancak durum, etkisi veya çözümle ilişkisi kısmen açıklığa kavuşur"
             },
             {
-              "title": "İletişim engellerini giderme",
-              "body": "Konuşmada iletişimin önündeki engelleri ortadan kaldırdı."
+              "title": "İyi · 11–15 puan",
+              "body": "Ölçüt: İçeriğin uygunluğu (20 puan). İletişim engelleri doğru ve anlaşılır biçimde gösterilir; canlandırmadaki durumlar konuya uygundur"
+            },
+            {
+              "title": "Çok iyi · 16–20 puan",
+              "body": "Ölçüt: İçeriğin uygunluğu (20 puan). İletişim engelleri, kişiler arasındaki etkileri ve uygun çözüm yolları tutarlı, açık ve ikna edici biçimde işlenir"
+            },
+            {
+              "title": "Başlangıç düzeyinde · 1–3 puan",
+              "body": "Ölçüt: Özgünlük (15 puan). Metin ve canlandırmada gruba ait yorum ya da özgün bir katkı görülmez"
+            },
+            {
+              "title": "Kabul edilebilir · 4–7 puan",
+              "body": "Ölçüt: Özgünlük (15 puan). Bazı özgün seçimler vardır; ancak bunlar sınırlı kalır veya canlandırmaya yeterince yansımaz"
+            },
+            {
+              "title": "İyi · 8–11 puan",
+              "body": "Ölçüt: Özgünlük (15 puan). Grup, iletişim engellerini anlatırken konuya uygun özgün örnekler ve yorumlar kullanır"
+            },
+            {
+              "title": "Çok iyi · 12–15 puan",
+              "body": "Ölçüt: Özgünlük (15 puan). Özgün örnek ve yorumlar belirgindir; seçilen anlatım biçimi canlandırmayı akılda kalıcı kılar"
+            },
+            {
+              "title": "Başlangıç düzeyinde · 1–5 puan",
+              "body": "Ölçüt: Dil ve üslup (20 puan). Söz varlığı, anlatım ve konuşma düzeni iletiyi anlamayı güçleştirir; hedef kitleye uygunluk gözetilmez"
+            },
+            {
+              "title": "Kabul edilebilir · 6–10 puan",
+              "body": "Ölçüt: Dil ve üslup (20 puan). İleti genel olarak anlaşılır; ancak dil, üslup veya konuşma akışında belirgin tutarsızlıklar vardır"
+            },
+            {
+              "title": "İyi · 11–15 puan",
+              "body": "Ölçüt: Dil ve üslup (20 puan). Dil ve üslup amaca ve dinleyiciye uygundur; konuşma açık ve tutarlı ilerler"
+            },
+            {
+              "title": "Çok iyi · 16–20 puan",
+              "body": "Ölçüt: Dil ve üslup (20 puan). Dil ve üslup etkili ve amaca uygundur; sözcük seçimi ve konuşma akışı dinleyicinin ilgisini destekler"
+            },
+            {
+              "title": "Başlangıç düzeyinde · 1–3 puan",
+              "body": "Ölçüt: Plan oluşturma (15 puan). Konu, amaç, hedef kitle, süre veya canlandırma yöntemi için kullanılabilir bir plan oluşturulmamıştır"
+            },
+            {
+              "title": "Kabul edilebilir · 4–7 puan",
+              "body": "Ölçüt: Plan oluşturma (15 puan). Planın bazı temel kararları vardır; ancak hedef kitle, süre, yöntem ya da araçlarla ilgili önemli boşluklar kalır"
+            },
+            {
+              "title": "İyi · 8–11 puan",
+              "body": "Ölçüt: Plan oluşturma (15 puan). Konu ve amaçla uyumlu plan; hedef kitleyi, süreyi, yöntemi ve gerekli araçları yeterli biçimde belirler"
+            },
+            {
+              "title": "Çok iyi · 12–15 puan",
+              "body": "Ölçüt: Plan oluşturma (15 puan). Planın kararları birbiriyle uyumludur; mekân, teknik koşullar ve olası engeller önceden gözetilmiştir"
+            },
+            {
+              "title": "Başlangıç düzeyinde · 1–5 puan",
+              "body": "Ölçüt: Canlandırma becerisi (20 puan). Canlandırmanın akışı izlenemez; söz, ses veya beden dili iletiyi aktarmaya yetmez"
+            },
+            {
+              "title": "Kabul edilebilir · 6–10 puan",
+              "body": "Ölçüt: Canlandırma becerisi (20 puan). Canlandırmanın ana fikri izlenir; ancak akış, sözlü anlatım, beden dili veya grup uyumunda aksaklıklar görülür"
+            },
+            {
+              "title": "İyi · 11–15 puan",
+              "body": "Ölçüt: Canlandırma becerisi (20 puan). Canlandırma anlaşılır ve tutarlıdır; konuşma, beden dili ve grup çalışması görevi destekler"
+            },
+            {
+              "title": "Çok iyi · 16–20 puan",
+              "body": "Ölçüt: Canlandırma becerisi (20 puan). Canlandırma akıcı ve etkileyicidir; söz, ses, beden dili, grup uyumu ve zaman kullanımı iletiyi güçlü biçimde taşır"
+            },
+            {
+              "title": "Toplam puan ve hesaplama",
+              "body": "Altı ölçütün puanlarını toplayınız. Toplam puan 6–100 arasındadır."
             }
           ],
           "sources": [
             {
-              "label": "Ders kitabı basılı s.54 — PDF sayfasını aç",
-              "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=55"
+              "label": "Ders kitabı basılı s.58 — PDF sayfasını aç",
+              "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=58"
             },
             {
               "label": "Öğretmen anahtarı",
