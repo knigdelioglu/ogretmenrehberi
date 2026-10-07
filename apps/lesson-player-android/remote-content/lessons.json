@@ -5671,7 +5671,7 @@
         "density": "comfortable",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Kitaptaki mektup türleri tablosunu inceleyin; türleri amaç, muhatap ve kullanım bağlamı bakımından ayırt edin.",
+        "display_prompt": "Mektup türlerini amaç, muhatap ve kullanım bağlamına göre karşılaştırın.",
         "display_prompt_mode": "SOURCE_OR_CONTENT",
         "source": {
           "source_record_id": "T01-S0033",
@@ -5685,7 +5685,25 @@
         },
         "answer": null,
         "content": {
-          "lead": "Kitaptaki mektup türleri tablosunu inceleyin; türleri amaç, muhatap ve kullanım bağlamı bakımından ayırt edin."
+          "lead": "Mektup türlerini amaç, muhatap ve kullanım bağlamına göre karşılaştırın.",
+          "sections": [
+            {
+              "title": "Özel mektup",
+              "body": "Yakınlara ve dostlara duygu, düşünce ve günlük haberleri aktarmak için yazılır. Samimi dil; hitap, tarih, ileti, kapanış ve imza gibi bölümler öne çıkar."
+            },
+            {
+              "title": "Edebî mektup",
+              "body": "Sanatçılar ve düşünürler arasında edebiyat ya da sanat üzerine görüş paylaşır. Kişisel yazışma niteliğinin yanında dönemin düşünce ve edebiyat yaşamına ilişkin belge değeri taşıyabilir."
+            },
+            {
+              "title": "İş mektubu",
+              "body": "İşletmeler ve kişiler arasındaki ticari ya da mesleki iletişimde kullanılır. Konu açık ve kısa tutulur; kurum bilgisi, tarih, muhatap, ileti ve imza düzeni gözetilir."
+            },
+            {
+              "title": "Resmî mektup",
+              "body": "Kamu kurumları ve makamlarla resmî iletişim kurar. Açık ve ciddi bir dil kullanılır; makam, tarih, konu, muhatap, metin, imza ve varsa ekler belirli bir düzende verilir."
+            }
+          ]
         }
       },
       {
@@ -6828,7 +6846,15 @@
           "guidance": "Bunları tek doğru ölçüt listesi olarak kullanmayın. Öğrencinin önce kendi ölçütünü ve nedenini belirtmesini sağlayın; ardından isterse bu örneklerle karşılaştırın. Sonraki değerlendirmede seçtiği ölçütleri metinden kanıtla desteklemesini isteyin.",
           "explanation": "T01-S0041 kaynak kaydı bir REFERENCE kaydıdır; bu içerik doğrulanmış bir kitap sorusunun cevabı değil, değerlendirme için örnek ölçüt desteğidir."
         },
-        "content": null
+        "content": {
+          "lead": "Kitaptaki örnek tabloda dört ölçütü kendiniz belirlemeniz için boş bırakılmış; verilen tek örnek ölçüt “Yalnızlık”tır.",
+          "sections": [
+            {
+              "title": "Kitaptaki örnek ölçüt",
+              "body": "Yalnızlık"
+            }
+          ]
+        }
       },
       {
         "id": "s46-q2",
@@ -8082,7 +8108,7 @@
         "density": "comfortable",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Dilekçenin resmî iletişimdeki işlevini ve kitaptaki temel biçim özelliklerini inceleyin.",
+        "display_prompt": "Dilekçenin resmî iletişimdeki işlevini, örneğini ve temel biçim kurallarını inceleyin.",
         "display_prompt_mode": "SOURCE_OR_CONTENT",
         "source": {
           "source_record_id": "T01-S0055",
@@ -8096,7 +8122,21 @@
         },
         "answer": null,
         "content": {
-          "lead": "Dilekçenin resmî iletişimdeki işlevini ve kitaptaki temel biçim özelliklerini inceleyin."
+          "lead": "Dilekçenin resmî iletişimdeki işlevini, örneğini ve temel biçim kurallarını inceleyin.",
+          "sections": [
+            {
+              "title": "İşlevi",
+              "body": "Dilekçe, kişinin bir isteğini veya şikâyetini yetkili kamu makamına yazılı olarak iletmesidir. Kitaptaki örnekte belediyeden park yakınındaki yola hız kesici yapılması istenir; gerekçe çocukların güvenliğidir."
+            },
+            {
+              "title": "Metnin düzeni",
+              "body": "Makam adı ve yer, tarih, konu, kısa ve açık istek metni, uygun resmî kapanış, imza ve ad-soyad bulunur. Adres ve iletişim bilgileri eklenir; varsa ekler belirtilir."
+            },
+            {
+              "title": "Dil ve biçim",
+              "body": "Sade, anlaşılır ve resmî bir dil kullanın; isteği somut gerekçesiyle açıklayın. Kitap, dilekçelerin ilgili mevzuat kapsamında değerlendirilmesini ve başvurulara otuz gün içinde cevap verilmesini de hatırlatır."
+            }
+          ]
         }
       },
       {
@@ -43309,7 +43349,17 @@
         },
         "answer": null,
         "content": {
-          "lead": "Basılı s.194’teki Tarık Buğra ve Âşık Veysel parçalarını okuyup yaşamlarındaki önemli olayları not edin."
+          "lead": "Basılı s.194’teki iki biyografi parçasında yaşam öyküsündeki dönüm noktalarını izleyin.",
+          "sections": [
+            {
+              "title": "Tarık Buğra",
+              "body": "Askerlik döneminde ailesini ziyareti ve türkü söylemesi, radyo oyunu yazmasına uzanan bir başlangıç olur. “Arayan Bulur” oyununun kabul edilmesiyle ilk telif ücretini alır."
+            },
+            {
+              "title": "Âşık Veysel",
+              "body": "Ahmet Kutsi Tecer’le tanışması ve 1931’deki Âşıklar Bayramı, yaşamındaki önemli dönüm noktalarıdır. Sonraki yıllarda farklı yol arkadaşlarıyla yurt içinde gezerek sazını ve şiirlerini tanıtır."
+            }
+          ]
         }
       },
       {
