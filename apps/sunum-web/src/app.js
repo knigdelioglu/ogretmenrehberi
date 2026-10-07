@@ -1248,7 +1248,11 @@ function stepSlide(lesson, step) {
     { class: "slide__top" },
     modernQuestionLayout
       ? questionBadge
-      : h("span", { class: "tag" }, step.layout === "process" ? "Süreç" : step.layout === "assessment" ? "Değerlendirme" : step.layout === "reference" ? "Bilgi" : taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
+      : step.layout === "process"
+        ? h("span", { class: "tag process-tag" },
+          h("span", { class: "process-tag__category" }, "Süreç"),
+          no ? h("span", { class: "tag__no process-tag__type" }, no) : null)
+        : h("span", { class: "tag" }, step.layout === "assessment" ? "Değerlendirme" : step.layout === "reference" ? "Bilgi" : taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
     h(
       "span",
       { class: "where", title: modernQuestionLayout
@@ -1464,6 +1468,7 @@ function render({ newSlide, qaPromptEnter = false }) {
   const body = slide.querySelector(".slide__body");
   fitBody(body, step?.density);
   alignModernQuestionPrompt(slide);
+  if (step?.layout === "process") alignProcessPrompt(slide);
   if (qaPromptEnter) {
     const prompt = slide.querySelector(".slide--qa-modern .qa-context > .prompt");
     if (prompt) addQaPromptEnter(prompt);
@@ -1488,6 +1493,26 @@ function alignModernQuestionPrompt(slide) {
   if (document.fonts?.status === "loading") {
     document.fonts.ready.then(() => {
       if (prompt.isConnected) alignModernQuestionPrompt(slide);
+    });
+  }
+
+  const range = document.createRange();
+  range.selectNodeContents(prompt);
+  const lineTops = [...range.getClientRects()]
+    .map((rect) => rect.top)
+    .sort((a, b) => a - b)
+    .filter((top, index, tops) => index === 0 || top - tops[index - 1] > 1);
+
+  prompt.style.textAlign = lineTops.length >= 3 ? "left" : "center";
+}
+
+function alignProcessPrompt(slide) {
+  const prompt = slide.querySelector(".slide--visual-process .prompt");
+  if (!prompt) return;
+
+  if (document.fonts?.status === "loading") {
+    document.fonts.ready.then(() => {
+      if (prompt.isConnected) alignProcessPrompt(slide);
     });
   }
 

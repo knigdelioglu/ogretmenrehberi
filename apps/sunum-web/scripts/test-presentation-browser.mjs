@@ -559,6 +559,10 @@ presentationBrowserSuite: {
       { slug: "tema-2-degerlendirme", id: "s159-q7", layout: "structure", maxStages: 5 },
       { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s256-elements", layout: "structure", maxStages: 5 },
       { slug: "mektup", id: "s50-q1", layout: "structure", maxStages: 7 },
+      { slug: "ogulla-bulusma", id: "s106-discussion", layout: "process", maxStages: 1, expectedItems: 4, qaModern: false },
+      { slug: "yazma", id: "s77-feedback", layout: "process", maxStages: 3, expectedItems: 3, qaModern: false },
+      { slug: "karagoz", id: "s17-process", layout: "process", maxStages: 0, expectedItems: 3, shortTitle: true, qaModern: false },
+      { slug: "tema-2-yazma", id: "s153-feedback", layout: "process", maxStages: 3, wrappedItem: true, qaModern: false },
       { slug: "karagoz", id: "s35-q1", layout: "assessment", maxStages: 5, qaModern: false },
       { slug: "kemal-tahir-mulakat-210-214", id: "s214-eval", layout: "assessment", maxStages: 0, qaModern: false },
       { slug: "kemal-tahir-mulakat-210-214", id: "s214-rubric", layout: "reference", maxStages: 0, qaModern: false },
@@ -589,9 +593,40 @@ presentationBrowserSuite: {
       const slide = document.querySelector('#canvas .slide');
       const body = slide?.querySelector('.slide__body');
       const context = slide?.querySelector('.qa-context');
-      const prompt = context?.querySelector(':scope > .prompt');
+      const prompt = context?.querySelector(':scope > .prompt') || slide?.querySelector('.prompt');
       const focus = slide?.querySelector('.qa-focus');
       const rect = (node) => { const b = node?.getBoundingClientRect(); return b && {x:b.x,y:b.y,width:b.width,height:b.height,right:b.right,bottom:b.bottom}; };
+      const stack = slide?.querySelector('.body-grid > .stack');
+      const lead = stack?.querySelector(':scope > .lead');
+      const list = stack?.querySelector('.steps-list');
+      const processCategory = slide?.querySelector('.process-tag__category');
+      const processType = slide?.querySelector('.process-tag__type');
+      const range = prompt && document.createRange();
+      if (range) range.selectNodeContents(prompt);
+      const lineTops = [...(range?.getClientRects() || [])].map((line) => line.top).sort((a,b) => a-b)
+        .filter((top,index,tops) => index === 0 || top - tops[index-1] > 1);
+      const promptStyle = prompt && getComputedStyle(prompt);
+      const sizing = (style) => style && ({width:style.width,maxWidth:style.maxWidth,fontSize:style.fontSize,lineHeight:style.lineHeight,letterSpacing:style.letterSpacing,fontFamily:style.fontFamily});
+      const alignmentInputs = sizing(promptStyle);
+      let alternateAlignmentInputs = null;
+      let alternateLineCount = null;
+      if (prompt) {
+        const inlineAlignment = prompt.style.textAlign;
+        prompt.style.textAlign = promptStyle.textAlign === 'left' ? 'center' : 'left';
+        alternateAlignmentInputs = sizing(getComputedStyle(prompt));
+        const alternateRange = document.createRange();
+        alternateRange.selectNodeContents(prompt);
+        alternateLineCount = [...alternateRange.getClientRects()].map((line) => line.top).sort((a,b) => a-b)
+          .filter((top,index,tops) => index === 0 || top - tops[index-1] > 1).length;
+        if (inlineAlignment) prompt.style.textAlign = inlineAlignment;
+        else prompt.style.removeProperty('text-align');
+      }
+      const listRows = [...(list?.querySelectorAll(':scope > li') || [])].map((item) => ({
+        number:rect(item.querySelector(':scope > .n')),
+        text:rect(item.querySelector(':scope > span:not(.n)')),
+        align:getComputedStyle(item.querySelector(':scope > span:not(.n)')).textAlign,
+        lines:(() => { const text=item.querySelector(':scope > span:not(.n)'); const r=document.createRange(); r.selectNodeContents(text); return [...r.getClientRects()].map((line) => line.top).sort((a,b) => a-b).filter((top,index,tops) => index === 0 || top-tops[index-1] > 1).length; })()
+      }));
       const contentAlignment = [...(context?.querySelectorAll(':scope > :not(.prompt), .lead, .steps-list, .steps-list li, .steps-list li > :not(.n), .criteria, .fields, .sections, .sec, .vocab__item, .vocab__meaning') || [])]
         .map((node) => ({cls:node.className || node.tagName,align:getComputedStyle(node).textAlign}));
       const nodes = [...(focus?.querySelectorAll('.sections,.sec,.criteria,.criteria li,.scale-form,.scale-form__row,.vocab__item,.vocab__meaning,.panel--answer,.panel--evidence,.steps-list,.steps-list li') || [])];
@@ -599,14 +634,80 @@ presentationBrowserSuite: {
         classes: [...(slide?.classList || [])], prompt: prompt?.innerText || '', compact: Boolean(context?.matches(':has(+ .qa-focus:not(:empty))')),
         promptFontSize: prompt ? getComputedStyle(prompt).fontSize : '', body: rect(body), context: rect(context), focus: rect(focus),
         promptAlignment: prompt ? getComputedStyle(prompt).textAlign : '', contentAlignment,
+        process: slide?.classList.contains('slide--visual-process') ? {
+          lineCount:lineTops.length, promptAlign:promptStyle?.textAlign, fontFamily:promptStyle?.fontFamily,
+          fontCheck:document.fonts.check('16px "Inter"', prompt?.textContent || ''), promptRect:rect(prompt), leadRect:rect(lead),
+          leadAlign:lead ? getComputedStyle(lead).textAlign : null, listRect:rect(list), listAlign:list ? getComputedStyle(list).textAlign : null,
+          listItems:list?.querySelectorAll(':scope > li').length || 0, listRows, alignmentInputs, alternateAlignmentInputs, alternateLineCount,
+          category:{rect:rect(processCategory),fontSize:processCategory ? getComputedStyle(processCategory).fontSize : null,fontWeight:processCategory ? getComputedStyle(processCategory).fontWeight : null},
+          type:{rect:rect(processType),fontSize:processType ? getComputedStyle(processType).fontSize : null,fontWeight:processType ? getComputedStyle(processType).fontWeight : null},
+          where:slide?.querySelector('.slide__top .where')?.innerText || '', bodyText:body?.innerText || ''
+        } : null,
         focusText: focus?.innerText || '', bodyMetrics: body && {clientWidth:body.clientWidth,scrollWidth:body.scrollWidth,clientHeight:body.clientHeight,scrollHeight:body.scrollHeight,overflowing:body.classList.contains('is-overflowing')},
         rendererNodes: nodes.map((node) => ({cls:node.className,tag:node.tagName,text:(node.innerText||'').slice(0,180),rect:rect(node),scrollWidth:node.scrollWidth,clientWidth:node.clientWidth,scrollHeight:node.scrollHeight,clientHeight:node.clientHeight,columns:getComputedStyle(node).gridTemplateColumns})),
         columns: focus?.querySelector('.sections') ? getComputedStyle(focus.querySelector('.sections')).gridTemplateColumns : '',
         fontsReady: document.fonts.check('16px "Inter"')
       };
     })()`);
+    function assertProcessMetrics(state, fixture, stage) {
+      const process = state.process;
+      assert.ok(process, `${fixture.id} ${stage} uses the process visual shell`);
+      assert.equal(process.fontCheck, true, `${fixture.id} ${stage} measures the title after Inter loads`);
+      assert.match(process.fontFamily, /^\s*["']?Inter["']?(?:\s*,|$)/i, `${fixture.id} ${stage} keeps Inter on the process title`);
+      assert.equal(process.promptAlign, process.lineCount >= 3 ? "left" : "center",
+        `${fixture.id} ${stage} aligns by its ${process.lineCount} rendered title lines`);
+      assert.deepEqual(process.alignmentInputs, process.alternateAlignmentInputs,
+        `${fixture.id} ${stage} changes only title text alignment`);
+      assert.equal(process.lineCount, process.alternateLineCount,
+        `${fixture.id} ${stage} keeps line wrapping unchanged when alignment changes`);
+      if (process.leadRect) {
+        assert.equal(process.leadAlign, "left", `${fixture.id} ${stage} keeps its lead left aligned`);
+        assert.ok(Math.abs(process.promptRect.x - process.leadRect.x) <= 1,
+          `${fixture.id} ${stage} title and lead share a left axis`);
+      }
+      if (process.listRect) {
+        assert.equal(process.listAlign, "left", `${fixture.id} ${stage} keeps its steps list left aligned`);
+        assert.ok(Math.abs(process.promptRect.x - process.listRect.x) <= 1,
+          `${fixture.id} ${stage} title and steps list share a left axis`);
+        assert.ok(process.listRows.every((row) => row.align === "left"), `${fixture.id} ${stage} keeps each step left aligned`);
+        assert.ok(process.listRows.every((row) => Math.abs(row.number.x - process.listRows[0].number.x) <= 1),
+          `${fixture.id} ${stage} aligns all number bubbles on one vertical axis`);
+        assert.ok(process.listRows.every((row) => Math.abs(row.text.x - process.listRows[0].text.x) <= 1),
+          `${fixture.id} ${stage} aligns all item text starts on one vertical axis`);
+      }
+      if (process.type.rect) {
+        const badgeGap = process.type.rect.x - process.category.rect.right;
+        assert.ok(badgeGap >= 12 && badgeGap <= 18, `${fixture.id} ${stage} separates its badges by ${badgeGap}px`);
+        assert.ok(process.category.rect.height > process.type.rect.height,
+          `${fixture.id} ${stage} gives the main category badge more height than its subtype`);
+        assert.ok(Number.parseFloat(process.category.fontSize) > Number.parseFloat(process.type.fontSize),
+          `${fixture.id} ${stage} gives the main category badge more type weight in size`);
+      }
+      if (stage === "opening" && fixture.expectedItems !== undefined) {
+        assert.equal(process.listItems, fixture.expectedItems, `${fixture.id} ${stage} keeps its expected authored item count`);
+      }
+      if (stage === "opening" && fixture.shortTitle) {
+        assert.ok(process.lineCount <= 2, `${fixture.id} ${stage} remains a genuinely short rendered title`);
+      }
+      if (stage === "opening" && fixture.wrappedItem) {
+        assert.ok(process.listRows.some((row) => row.lines >= 2), `${fixture.id} ${stage} exercises a long wrapped list item`);
+      }
+      assert.ok(process.bodyText.length > 0, `${fixture.id} ${stage} retains visible process content`);
+      assert.ok(state.bodyMetrics?.scrollWidth <= state.bodyMetrics?.clientWidth + 1,
+        `${fixture.id} ${stage} has no horizontal process-body overflow`);
+      if (fixture.id === "s106-discussion") {
+        assert.ok(process.where.includes("s. 106") && process.where.includes("Düşünelim Paylaşalım"),
+          `${fixture.id} ${stage} preserves its top-right page and context information`);
+      }
+      return process;
+    }
     async function capture(fixture, stage) {
       await waitForPromptFonts();
+      await page.evaluate(`(() => {
+        for (const animation of document.querySelector('#canvas .slide')?.getAnimations() ?? []) {
+          try { animation.finish(); } catch { /* canceled entry animations are already stable */ }
+        }
+      })()`);
       await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
       const metrics = await inspect();
       const png = await page.send("Page.captureScreenshot", { format: "png", fromSurface: true, captureBeyondViewport: true });
@@ -619,6 +720,7 @@ presentationBrowserSuite: {
       assert.equal(entry.step.layout, fixture.layout, `${fixture.id} canonical layout`);
       const qa = await inspect();
       assert.equal(qa.classes.includes("slide--qa-modern"), fixture.qaModern !== false, `${fixture.id} QA-modern shell eligibility`);
+      if (fixture.layout === "process") assertProcessMetrics(qa, fixture, "opening");
       if (fixture.qaModern !== false) {
         assert.ok(qa.contentAlignment.every((node) => node.align === "left"),
           `${fixture.id} opening renderer content stays left aligned: ${JSON.stringify(qa.contentAlignment)}`);
@@ -630,6 +732,7 @@ presentationBrowserSuite: {
           await next();
           const stage = await inspect();
           if (!stage.prompt || stage.prompt !== entry.step.display_prompt) break;
+          if (fixture.layout === "process") assertProcessMetrics(stage, fixture, `page ${i + 1}`);
           if (fixture.qaModern !== false && stage.focusText.trim()) {
             assert.equal(stage.compact, true, `${fixture.id} compacts the prompt when focus content opens`);
             assert.ok(stage.bodyMetrics?.scrollWidth <= stage.bodyMetrics?.clientWidth + 1, `${fixture.id} focus content has no horizontal body overflow`);
