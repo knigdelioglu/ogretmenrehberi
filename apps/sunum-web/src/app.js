@@ -926,9 +926,18 @@ function contentSources(content) {
     content.sources.map((source) => {
       const isDownload = source.download === true &&
         /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.(?:docx|xlsx)$/i.test(source.url ?? "");
+      const separator = source.label.indexOf(" — ");
+      const context = separator >= 0 ? source.label.slice(0, separator) : "Kaynak";
+      const action = separator >= 0 ? source.label.slice(separator + 3) : source.label;
       return h("a", isDownload
-        ? { href: source.url, download: "", class: "source-download" }
-        : { href: source.url, target: "_blank", rel: "noopener noreferrer" }, source.label);
+        ? { href: source.url, download: "", class: "source-link source-download" }
+        : { href: source.url, target: "_blank", rel: "noopener noreferrer", class: "source-link" },
+        h("span", { class: "source-link__icon", "aria-hidden": "true" }, isDownload ? "↓" : "↗"),
+        h("span", { class: "source-link__copy" },
+          h("span", { class: "source-link__context" }, context),
+          h("span", { class: "source-link__action" }, action)
+        )
+      );
     })
   ) : null;
 }
@@ -1244,15 +1253,22 @@ function coverSlide(lesson) {
   const themeNo = Number(String(lesson.theme).replace(/\D/g, "")) || "";
   return h(
     "div",
-    { class: "slide slide--cover" },
+    { class: "slide slide--cover slide--lesson-cover" },
     h("div", { class: "cover__theme" }, `${themeNo}. Tema${themeName ? " · " + themeName : ""}`),
     h("h1", { class: "cover__title" }, lesson.title),
     lesson.subtitle ? h("p", { class: "cover__subtitle" }, lesson.subtitle) : null,
+    h("div", { class: "cover__mark", "aria-hidden": "true" }, String(themeNo).padStart(2, "0")),
     h(
       "div",
       { class: "cover__meta" },
-      h("span", {}, `Ders kitabı s. ${lesson.pages.replace("-", "–")}`),
-      h("span", {}, `${lesson.steps.length} slayt`)
+      h("span", { class: "cover__meta-item" },
+        h("span", { class: "cover__meta-label" }, "Ders kitabı"),
+        h("strong", {}, `s. ${lesson.pages.replace("-", "–")}`)
+      ),
+      h("span", { class: "cover__meta-item" },
+        h("span", { class: "cover__meta-label" }, "İçerik"),
+        h("strong", {}, `${lesson.steps.length} slayt`)
+      )
     )
   );
 }
@@ -1714,7 +1730,10 @@ function renderMenu() {
               }
             },
             h("span", { class: "t" }, l.title),
-            h("span", { class: "s" }, `s. ${l.pages.replace("-", "–")} · ${l.steps.length} slayt`)
+            h("span", { class: "menu__lesson-meta" },
+              h("span", {}, `Kitap s. ${l.pages.replace("-", "–")}`),
+              h("span", {}, `${l.steps.length} slayt`)
+            )
           )
         )
       )
@@ -1728,8 +1747,11 @@ function renderMenu() {
       h(
         "button",
         { type: "button", class: state.slide === 0 ? "is-current" : "", onclick: () => { if (exportingPptx) return; closeMenu(); goto(state.lesson, 0, 0, 1); } },
-        h("span", { class: "n" }, "0"),
-        h("span", { class: "t" }, `Kapak — ${lesson.title}`)
+        h("span", { class: "menu__step-number" }, "0"),
+        h("span", { class: "menu__step-copy" },
+          h("span", { class: "t" }, `Kapak — ${lesson.title}`),
+          h("span", { class: "menu__step-meta" }, h("span", { class: "menu__step-type menu__step-type--cover" }, "Bölüm açılışı"))
+        )
       )
     ),
     ...lesson.steps.map((s, i) =>
@@ -1743,9 +1765,14 @@ function renderMenu() {
             class: state.slide === i + 1 ? "is-current" : "",
             onclick: () => { if (exportingPptx) return; closeMenu(); goto(state.lesson, i + 1, 0, 1); }
           },
-          h("span", { class: "n" }, String(i + 1)),
-          h("span", { class: "t" }, s.prompt),
-          h("span", { class: "s" }, `s. ${s.page} · ${taskLabel(s, lesson.theme)}`)
+          h("span", { class: "menu__step-number" }, String(i + 1)),
+          h("span", { class: "menu__step-copy" },
+            h("span", { class: "t" }, s.prompt),
+            h("span", { class: "menu__step-meta" },
+              h("span", {}, `s. ${s.page}`),
+              h("span", { class: "menu__step-type" }, taskLabel(s, lesson.theme))
+            )
+          )
         )
       )
     )

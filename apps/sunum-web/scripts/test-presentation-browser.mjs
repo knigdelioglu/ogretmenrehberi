@@ -716,6 +716,88 @@ presentationBrowserSuite: {
       fs.writeFileSync(imagePath, Buffer.from(png.data, "base64"));
       console.log(`[qa-visual-audit] ${fixture.id} ${stage}: ${JSON.stringify({imagePath, ...metrics})}`);
     }
+    async function captureProductUi(label) {
+      await waitForPromptFonts();
+      await page.evaluate(`(() => {
+        for (const animation of document.querySelector('#canvas .slide')?.getAnimations() ?? []) {
+          try { animation.finish(); } catch { /* canceled entry animations are already stable */ }
+        }
+      })()`);
+      await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+      const metrics = await page.evaluate(`(() => {
+        const rect = (node) => { const box=node?.getBoundingClientRect(); return box && {x:box.x,y:box.y,width:box.width,height:box.height,right:box.right,bottom:box.bottom}; };
+        const slide = document.querySelector('#canvas .slide');
+        const cover = slide?.classList.contains('slide--lesson-cover');
+        const title = slide?.querySelector('.cover__title');
+        const menu = document.querySelector('#menu');
+        const panel = document.querySelector('.menu__panel');
+        const link = slide?.querySelector('.source-link');
+        const body = slide?.querySelector('.slide__body');
+        return {
+          viewport:[innerWidth,innerHeight], slide:rect(slide), cover,
+          coverTitle:title?.innerText || '', coverFont:title ? getComputedStyle(title).fontFamily : '',
+          coverMeta:[...slide?.querySelectorAll('.cover__meta-item') || []].map((node) => node.innerText),
+          sourceLinks:[...slide?.querySelectorAll('.source-link') || []].map((node) => ({text:node.innerText,href:node.href,target:node.target,rect:rect(node),scrollWidth:node.scrollWidth,clientWidth:node.clientWidth})),
+          body:body && {scrollWidth:body.scrollWidth,clientWidth:body.clientWidth,scrollHeight:body.scrollHeight,clientHeight:body.clientHeight,overflowing:body.classList.contains('is-overflowing')},
+          menuOpen:menu ? !menu.hidden : false, menuPanel:rect(panel),
+          selectedTheme:document.querySelector('#menu-tabs [aria-selected="true"]')?.innerText || '',
+          currentLessons:document.querySelectorAll('#menu-lessons .is-current').length,
+          currentSteps:document.querySelectorAll('#menu-steps .is-current').length,
+          lessonCards:document.querySelectorAll('#menu-lessons button').length,
+          stepRows:document.querySelectorAll('#menu-steps button').length,
+          stepTypes:document.querySelectorAll('#menu-steps .menu__step-type').length,
+          menuScroll:[...document.querySelectorAll('.menu__lessons,.menu__steps')].map((node) => ({scrollWidth:node.scrollWidth,clientWidth:node.clientWidth,scrollHeight:node.scrollHeight,clientHeight:node.clientHeight}))
+        };
+      })()`);
+      if (label.startsWith("cover-")) {
+        assert.equal(metrics.cover, true, `${label} shows a lesson cover`);
+        assert.ok(metrics.coverTitle, `${label} retains its lesson title`);
+        assert.match(metrics.coverFont, /^\s*["']?Inter["']?(?:\s*,|$)/i, `${label} uses modern Inter typography`);
+        assert.equal(metrics.coverMeta.length, 2, `${label} retains book page and slide count metadata`);
+      } else if (label.startsWith("book-link-")) {
+        assert.equal(metrics.sourceLinks.length, 1, `${label} shows one book action`);
+        assert.ok(metrics.sourceLinks[0].text.includes("Ders kitabı") && metrics.sourceLinks[0].text.includes("aç"), `${label} separates source context and action copy`);
+        assert.equal(metrics.sourceLinks[0].target, "_blank", `${label} keeps the existing external-link behavior`);
+        assert.ok(metrics.sourceLinks[0].href.includes("#page="), `${label} preserves the book page destination`);
+        assert.ok(metrics.sourceLinks[0].rect.width > 0 && metrics.sourceLinks[0].scrollWidth <= metrics.sourceLinks[0].clientWidth + 1, `${label} CTA fits without horizontal text overflow`);
+      } else {
+        assert.equal(metrics.menuOpen, true, `${label} opens the lesson browser`);
+        assert.ok(metrics.menuPanel?.width > 1000 && metrics.menuPanel?.height > 700, `${label} menu panel fits desktop layout`);
+        assert.ok(metrics.selectedTheme, `${label} has an active theme tab`);
+        assert.ok(metrics.lessonCards > 0 && metrics.stepRows > 0 && metrics.stepTypes > 0, `${label} renders selectable lesson cards and typed slide rows`);
+        assert.ok(metrics.menuScroll.every((area) => area.scrollWidth <= area.clientWidth + 1), `${label} list columns do not overflow horizontally`);
+      }
+      const screenshot = await page.send("Page.captureScreenshot", { format: "png", fromSurface: true, captureBeyondViewport: true });
+      const imagePath = path.join(outputDir, `${label}.png`);
+      fs.writeFileSync(imagePath, Buffer.from(screenshot.data, "base64"));
+      console.log(`[qa-visual-audit] ${label}: ${JSON.stringify({imagePath,...metrics})}`);
+    }
+
+    for (const slug of ["orhun-abideleri", "tema-2-girisi"]) {
+      await page.send("Page.navigate", { url: `${root}/#/${slug}/0` });
+      await until(() => page.evaluate("document.querySelector('#canvas .slide--lesson-cover')?.innerText || ''"), `${slug} lesson cover`);
+      await captureProductUi(`cover-${slug}`);
+    }
+
+    for (const [slug,id] of [["orhun-abideleri","s113-media-reminder"],["tema-2-girisi","s85-theme-presentation"]]) {
+      await openStep(slug,id);
+      await captureProductUi(`book-link-${id}`);
+    }
+
+    await page.send("Page.navigate", { url: `${root}/#/orhun-abideleri/0` });
+    await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide--lesson-cover'))"), "Orhun lesson before menu capture");
+    await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+    await until(() => page.evaluate("!document.querySelector('#menu').hidden"), "Orhun lesson browser");
+    await captureProductUi("lesson-browser-orhun-theme-2");
+
+    await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
+    await until(() => page.evaluate("document.querySelector('#menu').hidden"), "close Orhun lesson browser");
+    await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
+    await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide--lesson-cover'))"), "Karagöz lesson before menu capture");
+    await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+    await until(() => page.evaluate("!document.querySelector('#menu').hidden"), "Karagöz lesson browser");
+    await captureProductUi("lesson-browser-karagoz-theme-1");
+
     for (const fixture of selectedCases) {
       const entry = await openStep(fixture.slug, fixture.id);
       assert.equal(entry.step.layout, fixture.layout, `${fixture.id} canonical layout`);

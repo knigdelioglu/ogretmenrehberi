@@ -2354,6 +2354,470 @@ button {
   text-decoration: none;
 }
 
+/* Modern secondary book/source actions used by process and reference slides. */
+.slide--visual-process .source-links,
+.slide--visual-reference .source-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), max-content));
+  gap: 0.5em;
+  width: 100%;
+  margin-top: 0.1em;
+  font-family: var(--modern-font);
+}
+
+.slide--visual-process .source-links a,
+.slide--visual-reference .source-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.65em;
+  width: min(100%, 760px);
+  min-width: 0;
+  padding: 0.52em 0.7em;
+  border: 1px solid var(--modern-rule);
+  border-radius: 0.5em;
+  background: var(--modern-card);
+  color: var(--modern-ink);
+  box-shadow: var(--modern-card-shadow);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.slide--visual-process .source-links a:hover,
+.slide--visual-reference .source-links a:hover {
+  border-color: var(--modern-teal);
+  background: var(--modern-teal-soft);
+  transform: translateY(-1px);
+}
+
+.slide--visual-process .source-links a:focus-visible,
+.slide--visual-reference .source-links a:focus-visible {
+  outline: 3px solid var(--modern-blue);
+  outline-offset: 3px;
+}
+
+.slide--visual-process .source-link__icon,
+.slide--visual-reference .source-link__icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 1.75em;
+  height: 1.75em;
+  place-items: center;
+  border-radius: 0.45em;
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+  font-size: 0.8em;
+  font-weight: 750;
+}
+
+.slide--visual-process .source-link__copy,
+.slide--visual-reference .source-link__copy {
+  display: grid;
+  min-width: 0;
+  gap: 0.08em;
+  line-height: 1.3;
+}
+
+.slide--visual-process .source-link__context,
+.slide--visual-reference .source-link__context {
+  color: var(--modern-ink);
+  font-size: 0.62em;
+  font-weight: 700;
+}
+
+.slide--visual-process .source-link__action,
+.slide--visual-reference .source-link__action {
+  color: var(--modern-muted);
+  font-size: 0.52em;
+  font-weight: 500;
+}
+
+.slide--visual-process .source-links a.source-download,
+.slide--visual-reference .source-links a.source-download {
+  background: var(--modern-card);
+  color: var(--modern-ink);
+}
+
+/* Lesson covers share the modern slide palette while keeping an opening-card feel. */
+.slide--lesson-cover {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  padding: 100px 148px 112px;
+  background:
+    radial-gradient(ellipse at 88% 16%, var(--modern-teal-soft), transparent 36%),
+    linear-gradient(135deg, var(--modern-paper), #ffffff 72%);
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+}
+
+.slide--lesson-cover::before {
+  position: absolute;
+  top: 116px;
+  bottom: 116px;
+  left: 88px;
+  width: 5px;
+  border-radius: 999px;
+  background: linear-gradient(var(--modern-teal), var(--modern-blue));
+  content: "";
+}
+
+.slide--lesson-cover .cover__theme {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid var(--modern-rule);
+  border-radius: 999px;
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+  font-family: var(--modern-font);
+  font-size: 17px;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.slide--lesson-cover .cover__title {
+  max-width: min(1100px, 68%);
+  margin: 30px 0 0;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  font-size: clamp(76px, 6.1vw, 116px);
+  font-weight: 760;
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
+.slide--lesson-cover .cover__subtitle {
+  max-width: min(920px, 66%);
+  margin: 24px 0 0;
+  color: var(--modern-muted);
+  font-family: var(--modern-font);
+  font-size: 34px;
+  font-weight: 450;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.slide--lesson-cover .cover__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 42px;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  font-size: 16px;
+}
+
+.slide--lesson-cover .cover__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 8px 16px;
+  border: 1px solid var(--modern-rule);
+  border-radius: 14px;
+  background: var(--modern-card);
+  box-shadow: var(--modern-card-shadow);
+}
+
+.slide--lesson-cover .cover__meta-label {
+  color: var(--modern-muted);
+  font-size: 0.82em;
+  font-weight: 550;
+}
+
+.slide--lesson-cover .cover__meta strong {
+  color: var(--modern-ink);
+  font-size: 1em;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.slide--lesson-cover .cover__mark {
+  position: absolute;
+  top: 50%;
+  right: 160px;
+  display: grid;
+  width: 420px;
+  height: 420px;
+  place-items: center;
+  border: 1px solid var(--modern-rule);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.46);
+  color: var(--modern-teal-soft);
+  font-family: var(--modern-font);
+  font-size: 280px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.11em;
+  padding-right: 0.11em;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Lesson and slide browser */
+.menu {
+  background: rgba(20, 33, 39, 0.46);
+  backdrop-filter: blur(8px);
+  font-family: var(--modern-font);
+}
+
+.menu__panel {
+  width: min(1500px, calc(100% - 64px));
+  height: min(900px, calc(100% - 64px));
+  border: 1px solid var(--modern-rule);
+  border-radius: 22px;
+  background: var(--modern-paper);
+  color: var(--modern-ink);
+  box-shadow: 0 28px 80px rgba(24, 42, 53, 0.24);
+  font-family: var(--modern-font);
+}
+
+.menu__head {
+  gap: 14px;
+  padding: 18px 22px;
+  border-color: var(--modern-rule);
+  background: var(--modern-card);
+}
+
+.menu__tabs { gap: 8px; }
+
+.menu__tabs button {
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--modern-muted);
+  font-family: var(--modern-font);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.menu__tabs button:hover {
+  border-color: var(--modern-rule);
+  background: var(--modern-paper);
+  color: var(--modern-ink);
+}
+
+.menu__tabs button[aria-selected="true"] {
+  border-color: var(--modern-rule);
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+}
+
+.menu__close {
+  flex: 0 0 auto;
+  border: 1px solid var(--modern-rule);
+  background: var(--modern-card);
+  color: var(--modern-muted);
+}
+
+.menu__close:hover { background: var(--modern-paper); color: var(--modern-ink); }
+
+.menu__export {
+  border: 1px solid var(--modern-rule);
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+}
+
+.menu__export:hover { background: var(--modern-teal); color: #fff; filter: none; }
+
+.menu__body { grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.18fr); }
+
+.menu__lessons,
+.menu__steps {
+  padding: 18px;
+  background: var(--modern-paper);
+  scrollbar-color: var(--modern-rule) transparent;
+}
+
+.menu__lessons li { margin-bottom: 8px; }
+
+.menu__lessons button {
+  border-color: var(--modern-rule);
+  background: var(--modern-card);
+  box-shadow: var(--modern-card-shadow);
+}
+
+.menu__lessons button,
+.menu__steps button {
+  gap: 6px;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  padding: 12px 14px;
+  background: transparent;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.menu__lessons button:hover,
+.menu__steps button:hover {
+  border-color: var(--modern-rule);
+  background: var(--modern-card);
+}
+
+.menu__lessons button.is-current,
+.menu__steps button.is-current {
+  border-color: var(--modern-rule);
+  background: var(--modern-card);
+  box-shadow: inset 3px 0 0 var(--modern-teal), var(--modern-card-shadow);
+}
+
+.menu__lessons .t {
+  color: var(--modern-ink);
+  font-size: 16px;
+  font-weight: 680;
+  line-height: 1.3;
+}
+
+.menu__lesson-meta,
+.menu__step-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: var(--modern-muted);
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.menu__lesson-meta > span,
+.menu__step-meta > span:not(.menu__step-type) {
+  padding: 3px 7px;
+  border: 1px solid var(--modern-rule);
+  border-radius: 999px;
+  background: var(--modern-paper);
+  color: var(--modern-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.menu__steps {
+  border-left: 1px solid var(--modern-rule);
+  background: var(--modern-card);
+}
+
+.menu__steps button {
+  grid-template-columns: 42px minmax(0, 1fr);
+  column-gap: 12px;
+  align-items: start;
+  margin-bottom: 4px;
+}
+
+.menu__step-number {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--modern-rule);
+  border-radius: 11px;
+  background: var(--modern-paper);
+  color: var(--modern-muted);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.menu__steps button.is-current .menu__step-number {
+  border-color: transparent;
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+}
+
+.menu__step-copy {
+  display: grid;
+  min-width: 0;
+  gap: 6px;
+}
+
+.menu__steps .t {
+  display: block;
+  overflow: visible;
+  color: var(--modern-ink);
+  font-size: 14px;
+  font-weight: 570;
+  line-height: 1.38;
+}
+
+.menu__step-type {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 8px;
+  border: 1px solid var(--modern-rule);
+  border-radius: 999px;
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+  font-size: 11px;
+  font-weight: 680;
+}
+
+.menu__step-type--cover {
+  background: var(--modern-blue-soft);
+  color: var(--modern-blue);
+}
+
+.menu__foot {
+  gap: 16px;
+  padding: 13px 20px;
+  border-color: var(--modern-rule);
+  background: var(--modern-card);
+  color: var(--modern-muted);
+  font-family: var(--modern-font);
+}
+
+.menu__setting { color: var(--modern-muted); }
+.menu__foot button { border-color: var(--modern-rule); border-radius: 10px; background: var(--modern-paper); color: var(--modern-ink); }
+.menu__foot button:hover { border-color: var(--modern-teal); background: var(--modern-teal-soft); }
+
+.dock {
+  gap: 3px;
+  padding: 7px;
+  border: 1px solid rgba(215, 224, 223, 0.85);
+  border-radius: 17px;
+  background: rgba(247, 248, 245, 0.96);
+  color: var(--modern-ink);
+  box-shadow: 0 12px 34px rgba(24, 42, 53, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+.dock button { border-radius: 12px; }
+.dock button:hover { background: var(--modern-teal-soft); color: var(--modern-teal); }
+.dock__counter { color: var(--modern-muted); }
+.dock__sep { background: var(--modern-rule); }
+
+:root[data-theme="dark"] .slide--lesson-cover {
+  background:
+    radial-gradient(ellipse at 88% 16%, var(--modern-teal-soft), transparent 36%),
+    linear-gradient(135deg, var(--modern-paper), #1c252b 72%);
+}
+
+:root[data-theme="dark"] .slide--lesson-cover .cover__mark { background: rgba(28, 37, 43, 0.5); }
+
+:root[data-theme="dark"] .menu__panel { box-shadow: 0 20px 60px rgba(0, 0, 0, 0.38); }
+
+:root[data-theme="dark"] .dock {
+  border-color: var(--modern-rule);
+  background: rgba(28, 37, 43, 0.96);
+  color: var(--modern-ink);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.38);
+}
+
+@media (max-width: 900px) {
+  .slide--lesson-cover { padding: 80px 48px; }
+  .slide--lesson-cover::before { left: 24px; }
+  .slide--lesson-cover .cover__title { font-size: clamp(54px, 9vw, 86px); }
+  .slide--lesson-cover .cover__subtitle { font-size: 26px; }
+  .slide--lesson-cover .cover__mark { right: 40px; width: 280px; height: 280px; font-size: 190px; opacity: 0.45; }
+  .menu__panel { width: calc(100% - 24px); height: calc(100% - 24px); }
+  .menu__head { align-items: flex-start; }
+  .menu__body { grid-template-columns: minmax(190px, 0.75fr) minmax(0, 1.25fr); }
+  .menu__lessons, .menu__steps { padding: 10px; }
+  .menu__foot { align-items: flex-start; flex-direction: column; }
+}
+
 @media (max-width: 900px) {
   .sections {
     grid-template-columns: minmax(0, 1fr);
