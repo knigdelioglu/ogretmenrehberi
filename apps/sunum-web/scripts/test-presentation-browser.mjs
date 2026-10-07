@@ -124,24 +124,29 @@ function readBuiltCatalog() {
   return JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
 }
 const builtCatalog = readBuiltCatalog();
-const catalogQuestionAnswers = builtCatalog.lessons.flatMap((lesson) => lesson.steps)
-  .filter((step) => step.answer?.entry_type === "question_answer" && step.reveals?.includes("answer"));
+const catalogAnswerRevealSteps = builtCatalog.lessons.flatMap((lesson) => lesson.steps)
+  .filter((step) => step.prompt?.trim() && step.reveals?.includes("answer") && step.answer?.entry_type?.trim());
 const qaModernCountsByLayout = new Map();
-for (const step of catalogQuestionAnswers) {
+const qaModernCountsByEntryType = new Map();
+for (const step of catalogAnswerRevealSteps) {
   assert.equal(usesModernQuestionLayout(step), true,
-    `${step.answer.question_id} meets semantic QA-modern eligibility regardless of ${step.layout} layout`);
+    `${step.answer.question_id || step.id} with ${step.answer.entry_type} meets QA-modern eligibility regardless of ${step.layout} layout`);
   const layout = step.layout || "(none)";
   qaModernCountsByLayout.set(layout, (qaModernCountsByLayout.get(layout) || 0) + 1);
+  qaModernCountsByEntryType.set(step.answer.entry_type, (qaModernCountsByEntryType.get(step.answer.entry_type) || 0) + 1);
 }
 for (const step of builtCatalog.lessons.flatMap((lesson) => lesson.steps)) {
-  if (step.answer?.entry_type && step.answer.entry_type !== "question_answer") {
+  if (!step.prompt?.trim() || !step.reveals?.includes("answer") || !step.answer?.entry_type?.trim()) {
     assert.equal(usesModernQuestionLayout(step), false,
-      `${step.answer.question_id} with ${step.answer.entry_type} does not enter QA-modern automatically`);
+      `${step.answer?.question_id || step.id} without a prompt, answer reveal, or typed answer stays outside QA-modern`);
   }
 }
 const qaModernCoverage = Object.fromEntries([...qaModernCountsByLayout.entries()].sort(([a], [b]) => a.localeCompare(b)));
-assert.ok(catalogQuestionAnswers.length > 0, "the production catalog has answer-bearing question_answer entries");
-console.log(`[sunum-web] QA-modern eligible catalog steps by layout: ${JSON.stringify(qaModernCoverage)} (total ${catalogQuestionAnswers.length}).`);
+const qaModernEntryTypes = Object.fromEntries([...qaModernCountsByEntryType.entries()].sort(([a], [b]) => a.localeCompare(b)));
+assert.equal(qaModernEntryTypes.question_answer, 387, "all 387 question_answer steps remain QA-modern eligible");
+assert.equal(Object.values(qaModernEntryTypes).reduce((sum, count) => sum + count, 0), 718,
+  "all prompt-bearing steps with an answer reveal and typed canonical answer enter QA-modern");
+console.log(`[sunum-web] QA-modern eligible catalog steps by layout: ${JSON.stringify(qaModernCoverage)}; by entry type: ${JSON.stringify(qaModernEntryTypes)} (total ${catalogAnswerRevealSteps.length}).`);
 const multiPageContentQa = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
   .find(({ step }) => step.layout === "question" && step.reveals.includes("answer") &&
     ((step.content?.items?.length || 0) > 4 || (step.content?.sections?.length || 0) > 2));
@@ -559,7 +564,13 @@ presentationBrowserSuite: {
       { slug: "mektup", id: "s39-q3", layout: "vocabulary", maxStages: 6 },
       { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", maxStages: 7 },
       { slug: "anadolu-insani-284-290", id: "s287-vocab", layout: "vocabulary", maxStages: 5 },
-      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s258-grammar-apply", layout: "process", maxStages: 7 }
+      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s258-grammar-apply", layout: "process", maxStages: 7 },
+      { slug: "konusma", id: "s53-q1", layout: "question", maxStages: 4 },
+      { slug: "konusma", id: "s54-plan", layout: "structure", maxStages: 5 },
+      { slug: "konusma", id: "s55-content", layout: "structure", maxStages: 5 },
+      { slug: "konusma", id: "s57-performance-2", layout: "process", maxStages: 5 },
+      { slug: "konusma", id: "s58-self-assessment-2", layout: "assessment", maxStages: 4 },
+      { slug: "konusma", id: "s58-feedback", layout: "assessment", maxStages: 4 }
     ];
     const requestedIds = process.env.QA_VISUAL_AUDIT_ONLY?.split(",").map((id) => id.trim()).filter(Boolean);
     const selectedCases = requestedIds ? fixtures.filter((fixture) => requestedIds.includes(fixture.id)) : fixtures;
@@ -1190,25 +1201,27 @@ presentationBrowserSuite: {
   assert.deepEqual(longCompactMetrics.beforeAlignment.inputs, longCompactMetrics.afterAlignment.inputs,
     "long compact alignment changes no width, font, or wrapping inputs");
 
-  // Non-question answer types retain their specialized renderer and stay outside
-  // the semantic QA shell even when their legacy layout is named "question".
+  // Non-question answer types keep their specialized answer renderer inside the
+  // QA shell whenever their canonical step has a prompt and answer reveal.
   const qaEntry = findStep("huzur-metni-anlayalim-175-176", "s175-q1");
   const qaRuntimeEntry = builtCatalog.lessons.find((lesson) => lesson.slug === qaEntry.lesson.lesson_slug)
     ?.steps.find((step) => step.id === qaEntry.step.id);
   assert.equal(qaEntry.step.layout, "question", "s175-q1 keeps its canonical content layout");
   assert.equal(qaRuntimeEntry?.answer?.entry_type, "performance_support", "s175-q1 is performance support");
-  assert.equal(usesModernQuestionLayout(qaRuntimeEntry), false, "s175-q1 performance support is excluded from QA-modern");
+  assert.equal(usesModernQuestionLayout(qaRuntimeEntry), true, "s175-q1 performance support enters QA-modern by its prompt and answer reveal");
   assert.equal(qaEntry.step.answer.question_no, "1", "s175-q1 production fixture has question number 1");
   assert.ok(qaEntry.step.answer.answer_sections, "s175-q1 has structured production answers");
   await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
   let qa = await qaState();
-  assert.equal(qa.modern, false, `s175-q1 keeps its specialized performance-support shell: ${JSON.stringify(qa)}`);
-  assert.equal(qa.badge, "", "s175-q1 does not get a QA SORU badge");
+  assert.equal(qa.modern, true, `s175-q1 performance support uses the QA-modern shell: ${JSON.stringify(qa)}`);
+  assert.equal(qa.badge, "SORU · 1. soru", "s175-q1 keeps its canonical question number in the QA SORU badge");
   assert.ok((await bodyText()).includes(qaEntry.step.display_prompt), "s175-q1 still renders its task prompt");
   const s175AnswerSnippet = firstSourceString(qaEntry.step.answer.answer_sections).trim().slice(0, 36);
   const s175Answer = await advanceUntil((text) => text.includes(s175AnswerSnippet), "s175 performance-support answer", 12);
   assert.ok(s175Answer.includes(s175AnswerSnippet), "s175-q1 answer remains available through its existing renderer");
-  assert.equal((await qaState()).modern, false, "s175-q1 never enters QA-modern during answer navigation");
+  qa = await qaState();
+  assert.equal(qa.modern, true, "s175-q1 remains in QA-modern during answer navigation");
+  assert.ok(qa.focus.includes(s175AnswerSnippet), "s175-q1 specialized performance-support answer stays in the focus stage");
 
   const pairedQaEntry = findStep("ogulla-bulusma", "s100-q1");
   assert.equal(pairedQaEntry.step.layout, "question", "s100-q1 production fixture is QA eligible");
@@ -1242,9 +1255,9 @@ presentationBrowserSuite: {
   assert.ok((await answerPanelText()).trim(), "s100-q1 backward navigation restores the answer page");
   assert.equal((await evidencePanelText()).trim(), "", "s100-q1 backward navigation closes its evidence page");
   const s58QaCandidate = findStep("konusma", "s58-feedback");
-  assert.equal(s58QaCandidate.step.layout, "assessment", "s58-feedback stays outside QA eligibility");
+  assert.equal(s58QaCandidate.step.layout, "assessment", "s58-feedback keeps its canonical assessment renderer");
   await openStep("konusma", "s58-feedback");
-  assert.equal((await qaState()).modern, false, "s58-feedback does not enter the QA browser presentation");
+  assert.equal((await qaState()).modern, true, "s58-feedback source-limited answer uses the QA-modern shell");
 
   // The encrypted runtime catalog is the source of truth for reveal eligibility.
   // s155-q2 has five answer-choice items, so its actual content view spans two parts.
@@ -1330,17 +1343,16 @@ presentationBrowserSuite: {
   assert.equal((await qaTransitionCalls()).length, 2,
     `${multiPageEntry.step.id} reverse content pagination does not start a transition`);
 
-  // Walk every semantically eligible question_answer through its real URL
-  // entry point, independent of the renderer selected by layout.
+  // Walk every prompt-bearing answer-reveal step through its real URL entry
+  // point, independent of entry type and renderer selected by layout.
   const allQuestionCases = builtCatalog.lessons.flatMap((lesson) => lesson.steps
     .map((step, index) => ({ lesson, step, slide: index + 1 }))
     .filter(({ step }) => usesModernQuestionLayout(step)));
   const sourceQuestionCount = lessons.reduce((count, lesson) =>
-    count + lesson.steps.filter((step) => step.answer?.entry_type === "question_answer" &&
-      typeof step.display_prompt === "string" && step.display_prompt.trim() &&
-      step.reveal_order?.includes("answer")).length, 0);
+    count + lesson.steps.filter((step) => typeof step.display_prompt === "string" && step.display_prompt.trim() &&
+      step.reveal_order?.includes("answer") && step.answer?.entry_type?.trim()).length, 0);
   assert.equal(allQuestionCases.length, sourceQuestionCount,
-    "built and source catalogs contain the same number of semantically eligible question_answer steps");
+    "built and source catalogs contain the same number of prompt-bearing answer-reveal steps");
   const questionSweep = [];
   for (const { lesson, step, slide } of allQuestionCases) {
     const hash = `#/${lesson.slug}/${slide}`;
@@ -1385,7 +1397,7 @@ presentationBrowserSuite: {
       console.log(`[sunum-web] Production question opening-state sweep progress: ${questionSweep.length}/${allQuestionCases.length}`);
     }
   }
-  assert.equal(questionSweep.length, 387, "all semantically eligible production question URLs completed the opening-state sweep");
+  assert.equal(questionSweep.length, 718, "all semantically eligible production answer-reveal URLs completed the opening-state sweep");
   console.log(`[sunum-web] Production question opening-state sweep: ${JSON.stringify({
     questionSteps: questionSweep.length,
     modernQaSteps: questionSweep.filter((step) => step.modern).length
@@ -1405,8 +1417,8 @@ presentationBrowserSuite: {
   const excludedComparisonCases = allComparisonCases.filter(({ step }) =>
     !usesModernQuestionLayout(step));
   assert.equal(allComparisonCases.length, 88, "production catalog contains 88 comparison steps");
-  assert.equal(eligibleComparisonCases.length, 36, "36 comparisons meet semantic QA shell eligibility");
-  assert.equal(excludedComparisonCases.length, 52, "52 comparisons remain outside QA shell eligibility");
+  assert.equal(eligibleComparisonCases.length, 75, "75 comparisons with answer reveals meet semantic QA shell eligibility");
+  assert.equal(excludedComparisonCases.length, 13, "13 comparisons without answer reveals remain outside QA shell eligibility");
   for (const { lesson, step, slide } of allComparisonCases) {
     const eligible = usesModernQuestionLayout(step);
     await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
@@ -1499,11 +1511,11 @@ presentationBrowserSuite: {
   const pairedQuestionCases = allQuestionCases.filter(({ step }) =>
     step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length));
   const sourcePairedQuestionCount = lessons.reduce((count, lesson) => count + lesson.steps.filter((step) =>
-    step.answer?.entry_type === "question_answer" && typeof step.display_prompt === "string" &&
-    step.display_prompt.trim() && step.reveal_order?.includes("answer") &&
+    typeof step.display_prompt === "string" && step.display_prompt.trim() &&
+    step.reveal_order?.includes("answer") && step.answer?.entry_type?.trim() &&
     step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length)).length, 0);
   assert.equal(pairedQuestionCases.length, sourcePairedQuestionCount,
-    "built and source catalogs contain the same number of paired-evidence question steps");
+    "built and source catalogs contain the same number of paired-evidence answer-reveal steps");
   for (const [pairedIndex, { lesson, step, slide }] of pairedQuestionCases.entries()) {
     await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
     await until(async () => (await qaState()).prompt === step.prompt, `paired QA URL ${lesson.slug}/${step.id}`);
