@@ -2237,19 +2237,21 @@ presentationBrowserSuite: {
   let visualQa = await qaState();
   assert.equal(visualQa.modern, true, "s39-q1 browser screenshot uses the semantic QA shell");
   assert.equal(visualQa.focus.trim(), "", "s39-q1 browser screenshot shows its vocabulary prompt");
-  const qaContentScreenshot = await captureQaScreenshot("s39-q1 QA vocabulary content");
-
   const pairedVisualEntry = findStep("huzur-metni-anlayalim-175-176", "s176-q4");
   const pairedVisualUnit = pairedVisualEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
   assert.ok(pairedVisualUnit, "s176-q4 has a production answer/evidence unit for visual comparison");
   await openStep("huzur-metni-anlayalim-175-176", "s176-q4");
+  const qaLessonPromptScreenshot = await captureQaScreenshot("s176-q4 QA prompt");
   await advanceUntilEvidenceSection(pairedVisualUnit.evidence_sections[0].section_key, "s176-q4 visual evidence");
   visualQa = await qaState();
   assert.equal(visualQa.modern, true, "s176-q4 browser screenshot uses the modern QA layout");
   assert.ok((await answerPanelText()).trim(), "s176-q4 browser screenshot includes its paired answer");
   assert.ok((await evidencePanelText()).trim(), "s176-q4 browser screenshot includes paired evidence");
   const qaPairScreenshot = await captureQaScreenshot("s176-q4 paired answer/evidence");
-  const webQaScreenshots = [qaContentScreenshot, qaPairScreenshot];
+  // PPTX export is scoped to the currently selected lesson. Keep the visual
+  // targets in that lesson so each browser state can be matched to an exported
+  // slide; s39-q1 belongs to a different lesson and cannot appear in this file.
+  const webQaScreenshots = [qaLessonPromptScreenshot, qaPairScreenshot];
   const visualPptxTargets = webQaScreenshots.map(({ label, state }) => ({
     label,
     prompt: state.prompt,
