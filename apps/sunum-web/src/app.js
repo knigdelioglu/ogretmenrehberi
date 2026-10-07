@@ -178,9 +178,63 @@ function scrollBody(direction) {
   return false;
 }
 
+function animateQaQuestionBoundary(update) {
+  const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches === true;
+  if (reducedMotion || exportingPptx) {
+    update(false);
+    return;
+  }
+
+  const startViewTransition = document.startViewTransition;
+  if (typeof startViewTransition !== "function") {
+    update(true);
+    return;
+  }
+
+  let updated = false;
+  let nextPrompt = null;
+  const applyUpdate = (useFallback) => {
+    updated = true;
+    update(useFallback);
+    nextPrompt = $("#canvas .slide--qa-modern .qa-context > .prompt");
+  };
+  const fallbackIfCurrent = () => {
+    if (!reducedMotion && !exportingPptx && nextPrompt?.isConnected) addQaPromptEnter(nextPrompt);
+  };
+
+  try {
+    const transition = startViewTransition.call(document, () => applyUpdate(false));
+    transition.ready?.catch(fallbackIfCurrent);
+  } catch {
+    if (updated) fallbackIfCurrent();
+    else applyUpdate(true);
+  }
+}
+
+function addQaPromptEnter(prompt) {
+  if (
+    exportingPptx ||
+    prompt.classList.contains("qa-prompt-enter") ||
+    window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches
+  ) return;
+  prompt.classList.add("qa-prompt-enter");
+  let timeout;
+  const clear = (event) => {
+    if (event && event.target !== prompt) return;
+    prompt.classList.remove("qa-prompt-enter");
+    prompt.removeEventListener("animationend", clear);
+    prompt.removeEventListener("transitionend", clear);
+    window.clearTimeout(timeout);
+  };
+  prompt.addEventListener("animationend", clear);
+  prompt.addEventListener("transitionend", clear);
+  timeout = window.setTimeout(clear, 1200);
+}
+
 function next({ skipReveals = false } = {}) {
   const step = currentStep();
   const reveals = activeReveals(step);
+  const startsOnContent = state.reveal === 0 && state.extras.size === 0;
   if (!skipReveals && scrollBody(1)) return;
   if (step && !skipReveals) {
     if (state.extras.size) {
@@ -196,10 +250,18 @@ function next({ skipReveals = false } = {}) {
       return;
     }
     if (state.reveal < reveals.length) {
-      state.reveal += 1;
-      state.part = 0;
-      state.fresh = reveals[state.reveal - 1];
-      render({ newSlide: false });
+      const enterFirstQaReveal =
+        usesModernQuestionLayout(step) &&
+        startsOnContent &&
+        state.part === layerPages(step, "content").length - 1;
+      const reveal = (qaPromptEnter = false) => {
+        state.reveal += 1;
+        state.part = 0;
+        state.fresh = reveals[state.reveal - 1];
+        render({ newSlide: false, qaPromptEnter });
+      };
+      if (enterFirstQaReveal) animateQaQuestionBoundary(reveal);
+      else reveal();
       return;
     }
   }
@@ -230,11 +292,18 @@ function prev({ skipReveals = false } = {}) {
       return;
     }
     if (state.reveal > 0) {
-      state.reveal -= 1;
-      const previousKey = state.reveal > 0 ? activeReveals(step)[state.reveal - 1] : "content";
-      state.part = layerPages(step, previousKey).length - 1;
-      state.fresh = null;
-      render({ newSlide: false });
+      const enterQaContent = usesModernQuestionLayout(step) && state.reveal === 1 && state.part === 0;
+      const showPrevious = (qaPromptEnter = false) => {
+        state.reveal -= 1;
+        const previousKey = state.reveal > 0 ? activeReveals(step)[state.reveal - 1] : "content";
+        state.part = layerPages(step, previousKey).length - 1;
+        state.fresh = null;
+        render({ newSlide: false, qaPromptEnter });
+      };
+      if (enterQaContent) {
+        // Reverse transition keeps the same prompt as the shared view-transition target.
+        animateQaQuestionBoundary(showPrevious);
+      } else showPrevious();
       return;
     }
   }
@@ -338,6 +407,20 @@ function restorePosition() {
       state.slide = saved.slide || 0;
       state.reveal = 0;
       state.part = 0;
+      state.extras.clear();
+      state.extraReturn = null;
+      const step = currentStep();
+      const reveals = activeReveals(step);
+      const reveal = Number(saved.reveal || 0);
+      const part = Number(saved.part || 0);
+      const key = reveal > 0 ? reveals[reveal - 1] : "content";
+      const pageCount = step ? layerPages(step, key).length : 1;
+      const validPosition = Number.isInteger(reveal) && reveal >= 0 && reveal <= reveals.length &&
+        Number.isInteger(part) && part >= 0 && part < pageCount;
+      if (validPosition) {
+        state.reveal = reveal;
+        state.part = part;
+      }
     }
   }
   clampPosition();
@@ -1129,12 +1212,19 @@ function endSlide(lesson) {
   );
 }
 
+function usesModernQuestionLayout(step) {
+  if (!Array.isArray(step?.reveals) || !step.reveals.includes("answer")) return false;
+  if (step.layout === "question") return true;
+  return step.layout === "comparison" && typeof step.prompt === "string" && Boolean(step.prompt.trim());
+}
+
 function stepSlide(lesson, step) {
   const active = activeReveals(step);
   const view = currentView(step);
   const viewKey = view.key;
   const page = view.page;
   const a = step.answer;
+  const modernQuestionLayout = usesModernQuestionLayout(step);
   const isVocab = step.layout === "vocabulary";
   const fresh = (k) => state.fresh === k;
   const viewNames = {
@@ -1149,16 +1239,27 @@ function stepSlide(lesson, step) {
 
   // Üst şerit
   const no = questionNo(a?.question_no);
+  const questionBadge = h(
+    "span",
+    { class: "tag qa-question" },
+    h("span", { class: "tag__no" }, no ? `SORU · ${no}` : "SORU")
+  );
   const top = h(
     "header",
     { class: "slide__top" },
-    h("span", { class: "tag" }, taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
+    modernQuestionLayout
+      ? questionBadge
+      : h("span", { class: "tag" }, taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
     h(
       "span",
-      { class: "where", title: `s. ${String(step.page).replace("-", "–")}${step.heading ? ` · ${step.heading}` : ""}${viewKey !== "content" || view.pages.length > 1 ? ` · ${page.title || viewNames[viewKey]}${pageMarker}` : ""}` },
+      { class: "where", title: modernQuestionLayout
+        ? `${lesson.title} · s. ${String(step.page).replace("-", "–")}${step.heading ? ` · ${step.heading}` : ""}`
+        : `s. ${String(step.page).replace("-", "–")}${step.heading ? ` · ${step.heading}` : ""}${viewKey !== "content" || view.pages.length > 1 ? ` · ${page.title || viewNames[viewKey]}${pageMarker}` : ""}` },
+      modernQuestionLayout ? h("b", {}, lesson.title) : null,
+      modernQuestionLayout ? "  ·  " : "",
       h("b", {}, `s. ${String(step.page).replace("-", "–")}`),
       step.heading ? `  ·  ${step.heading}` : "",
-      viewKey !== "content" || view.pages.length > 1 ? `  ·  ${page.title || viewNames[viewKey]}${pageMarker}` : ""
+      !modernQuestionLayout && (viewKey !== "content" || view.pages.length > 1) ? `  ·  ${page.title || viewNames[viewKey]}${pageMarker}` : ""
     )
   );
 
@@ -1289,6 +1390,21 @@ function stepSlide(lesson, step) {
     main.append(panel("explanation", "Açıklama", h("p", {}, page.text || a.explanation), fresh(viewKey)));
   }
 
+  if (modernQuestionLayout) {
+    const prompt = main.firstChild;
+    const pageContent = [...main.childNodes].slice(1);
+    const context = h("div", { class: "qa-context" }, prompt);
+    const focus = h("div", { class: "qa-focus" });
+    for (const node of pageContent) {
+      if (viewKey !== "content") focus.append(node);
+      else context.append(node);
+    }
+    if (viewKey !== "content" && !focus.querySelector(".panel__label")) {
+      focus.prepend(h("div", { class: "panel__label qa-stage-label" }, page.title || viewNames[viewKey]));
+    }
+    main.replaceChildren(context, focus);
+  }
+
   const bodyInner = h("div", { class: "body-grid" }, main);
 
   // Alt şerit
@@ -1300,17 +1416,23 @@ function stepSlide(lesson, step) {
     { class: "slide__foot" },
     h("span", { class: "lesson-name" }, lesson.title),
     dots,
-    h("span", { class: "counter" }, `${state.slide} / ${lesson.steps.length}`)
+    h("span", { class: "counter" }, `${state.slide} / ${lesson.steps.length}${modernQuestionLayout && view.pages.length > 1 ? ` · sayfa ${view.index + 1}/${view.pages.length}` : ""}`)
   );
 
-  return h("div", { class: "slide" }, top, h("div", { class: "slide__body" }, bodyInner), foot);
+  const qaClasses = modernQuestionLayout
+    ? ` slide--qa-modern${step.layout === "comparison" ? " slide--qa-comparison" : ""}`
+    : "";
+  const structureClass = step.layout === "structure" ? " slide--visual-structure" : "";
+  const processClass = step.layout === "process" ? " slide--visual-process" : "";
+  const referenceClass = step.layout === "reference" ? " slide--visual-reference" : "";
+  return h("div", { class: `slide${qaClasses}${structureClass}${processClass}${referenceClass}` }, top, h("div", { class: "slide__body" }, bodyInner), foot);
 }
 
 // ============================================================
 // Çizim
 // ============================================================
 
-function render({ newSlide }) {
+function render({ newSlide, qaPromptEnter = false }) {
   const lesson = currentLesson();
   const step = currentStep();
   const view = step ? currentView(step) : null;
@@ -1341,6 +1463,11 @@ function render({ newSlide }) {
   }
   const body = slide.querySelector(".slide__body");
   fitBody(body, step?.density);
+  alignModernQuestionPrompt(slide);
+  if (qaPromptEnter) {
+    const prompt = slide.querySelector(".slide--qa-modern .qa-context > .prompt");
+    if (prompt) addQaPromptEnter(prompt);
+  }
   revealIntoView(body);
 
   $("#dock-counter").textContent =
@@ -1352,6 +1479,20 @@ function render({ newSlide }) {
   document.title = `${lesson.title} · Ders Sunumu`;
   savePosition();
   if (!exportingPptx && !$("#menu").hidden) renderMenu();
+}
+
+function alignModernQuestionPrompt(slide) {
+  const prompt = slide.querySelector(".slide--qa-modern .qa-context > .prompt");
+  if (!prompt || document.fonts?.status === "loading") return;
+
+  const range = document.createRange();
+  range.selectNodeContents(prompt);
+  const lineTops = [...range.getClientRects()]
+    .map((rect) => rect.top)
+    .sort((a, b) => a - b)
+    .filter((top, index, tops) => index === 0 || top - tops[index - 1] > 1);
+
+  prompt.style.textAlign = lineTops.length >= 3 ? "left" : "center";
 }
 
 // Gövde yazı ölçeğini, içerik taşmayacak en büyük değere ayarla
@@ -1673,18 +1814,104 @@ function xmlText(value) {
     "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&apos;"
   })[character]);
 }
-function svgBox(rect, slideRect, style) {
+function svgShadow(style, id, x, y, width, height) {
+  const value = style.boxShadow;
+  if (!value || value === "none") return { definitions: "", attribute: "" };
+  const shadows = [];
+  let depth = 0, start = 0;
+  for (let index = 0; index <= value.length; index += 1) {
+    const character = value[index];
+    if (character === "(") depth += 1;
+    else if (character === ")") depth -= 1;
+    else if ((character === "," && depth === 0) || index === value.length) {
+      const part = value.slice(start, index).trim();
+      start = index + 1;
+      if (!part || /\binset\b/.test(part)) continue;
+      const colorMatch = part.match(/(?:rgba?|hsla?)\([^)]*\)|#[\da-f]{3,8}\b|\b(?:transparent|[a-z]+)\b/i);
+      const lengths = [...part.matchAll(/(-?(?:\d+\.?\d*|\.\d+))px/g)].map((match) => Number(match[1]));
+      if (lengths.length < 2) continue;
+      const [offsetX, offsetY, blur = 0, spread = 0] = lengths;
+      const sigma = Math.max(0, blur) / 2;
+      let color = colorMatch?.[0] || "black", opacity = 1;
+      const rgba = color.match(/^rgba\(([^)]+)\)$/i);
+      if (rgba) {
+        const channels = rgba[1].split(/\s*,\s*/);
+        color = `rgb(${channels.slice(0, 3).join(", ")})`;
+        opacity = Number(channels[3]) || 0;
+      }
+      shadows.push({ offsetX, offsetY, sigma, spread: Math.max(0, spread), color, opacity });
+    }
+  }
+  if (!shadows.length) return { definitions: "", attribute: "" };
+  const padding = shadows.reduce((edge, shadow) => {
+    const extent = Math.ceil(shadow.sigma * 3 + shadow.spread + 1);
+    edge.left = Math.max(edge.left, extent - shadow.offsetX);
+    edge.right = Math.max(edge.right, extent + shadow.offsetX);
+    edge.top = Math.max(edge.top, extent - shadow.offsetY);
+    edge.bottom = Math.max(edge.bottom, extent + shadow.offsetY);
+    return edge;
+  }, { left: 0, right: 0, top: 0, bottom: 0 });
+  const filterId = "box-shadow-" + id;
+  const primitives = shadows.map((shadow, index) =>
+    `<feGaussianBlur in="SourceAlpha" stdDeviation="${shadow.sigma}" result="blur-${index}"/>`+
+    `<feOffset in="blur-${index}" dx="${shadow.offsetX}" dy="${shadow.offsetY}" result="offset-${index}"/>`+
+    `<feFlood flood-color="${xmlText(shadow.color)}" flood-opacity="${shadow.opacity}" result="color-${index}"/>`+
+    `<feComposite in="color-${index}" in2="offset-${index}" operator="in" result="shadow-${index}"/>`
+  ).join("");
+  const merge = shadows.map((_, index) => `<feMergeNode in="shadow-${index}"/>`).join("");
+  return {
+    definitions: `<filter id="${filterId}" filterUnits="userSpaceOnUse" x="${x - padding.left}" y="${y - padding.top}" width="${width + padding.left + padding.right}" height="${height + padding.top + padding.bottom}" color-interpolation-filters="sRGB">${primitives}<feMerge>${merge}<feMergeNode in="SourceGraphic"/></feMerge></filter>`,
+    attribute: ` filter="url(#${filterId})"`
+  };
+}
+function svgBox(rect, slideRect, style, id) {
   const x=rect.left-slideRect.left,y=rect.top-slideRect.top,width=rect.width,height=rect.height;
   if(width<=0||height<=0)return "";
   const opacity=Number(style.opacity||1),fill=style.backgroundColor;
+  const shadow=svgShadow(style,id,x,y,width,height);
   const hasFill=fill&&fill!=="transparent"&&!/^rgba\([^)]*,\s*0\s*\)$/.test(fill);
-  const borderWidth=Math.max(...[style.borderTopWidth,style.borderRightWidth,style.borderBottomWidth,style.borderLeftWidth].map(v=>Number.parseFloat(v)||0));
-  const hasBorder=borderWidth>0&&style.borderStyle!=="none"&&style.borderColor!=="transparent";
+  const borderSides=[
+    { side:"Top", x1:x, y1:y, x2:x+width, y2:y, offset:"y", sign:1 },
+    { side:"Right", x1:x+width, y1:y, x2:x+width, y2:y+height, offset:"x", sign:-1 },
+    { side:"Bottom", x1:x, y1:y+height, x2:x+width, y2:y+height, offset:"y", sign:-1 },
+    { side:"Left", x1:x, y1:y, x2:x, y2:y+height, offset:"x", sign:1 }
+  ].map((border)=>({
+    ...border,
+    width:Number.parseFloat(style[`border${border.side}Width`])||0,
+    style:style[`border${border.side}Style`],
+    color:style[`border${border.side}Color`]
+  })).filter((border)=>border.width>0&&border.style!=="none"&&border.style!=="hidden"&&border.color!=="transparent");
+  const hasBorder=borderSides.length>0;
   if(!hasFill&&!hasBorder)return "";
-  const radius=Math.max(0,Number.parseFloat(style.borderTopLeftRadius)||0);
-  return "<rect x=\""+x+"\" y=\""+y+"\" width=\""+width+"\" height=\""+height+"\""+(radius?" rx=\""+radius+"\"":"")+
-    (hasFill?" fill=\""+xmlText(fill)+"\"":" fill=\"none\"")+(hasBorder?" stroke=\""+xmlText(style.borderColor)+"\" stroke-width=\""+borderWidth+"\"":"")+
-    (opacity<1?" opacity=\""+opacity+"\"":"")+"/>";
+  const radiusParts=String(style.borderTopLeftRadius||"0").split(/\s+/);
+  const radiusValue=(value,size)=>value.endsWith("%")?(Number.parseFloat(value)||0)*size/100:(Number.parseFloat(value)||0);
+  let radiusX=radiusValue(radiusParts[0],width),radiusY=radiusValue(radiusParts[1]||radiusParts[0],height);
+  const radiusScale=Math.min(1,radiusX?width/(2*radiusX):1,radiusY?height/(2*radiusY):1);
+  radiusX*=radiusScale;radiusY*=radiusScale;
+  const uniformBorder=borderSides.length===4&&borderSides.every((border)=>border.width===borderSides[0].width&&border.style==="solid"&&border.color===borderSides[0].color);
+  if(uniformBorder){
+    const border=borderSides[0];
+    const inset=border.width/2;
+    return (shadow.definitions?"<defs>"+shadow.definitions+"</defs>":"")+"<rect x=\""+(x+inset)+"\" y=\""+(y+inset)+"\" width=\""+(width-border.width)+"\" height=\""+(height-border.width)+"\""+(radiusX>inset?" rx=\""+(radiusX-inset)+"\"":"")+(radiusY>inset?" ry=\""+(radiusY-inset)+"\"":"")+
+      (hasFill?" fill=\""+xmlText(fill)+"\"":" fill=\"none\"")+" stroke=\""+xmlText(border.color)+"\" stroke-width=\""+border.width+"\""+
+      (opacity<1?" opacity=\""+opacity+"\"":"")+shadow.attribute+"/>";
+  }
+  const background=hasFill
+    ? "<rect x=\""+x+"\" y=\""+y+"\" width=\""+width+"\" height=\""+height+"\""+(radiusX?" rx=\""+radiusX+"\"":"")+(radiusY?" ry=\""+radiusY+"\"":"")+
+      " fill=\""+xmlText(fill)+"\""+(opacity<1?" opacity=\""+opacity+"\"":"")+shadow.attribute+"/>"
+    : "";
+  const borders=borderSides.map((border)=>{
+    const half=border.width/2;
+    const x1=border.x1+(border.offset==="x"?border.sign*half:0),
+      y1=border.y1+(border.offset==="y"?border.sign*half:0),
+      x2=border.x2+(border.offset==="x"?border.sign*half:0),
+      y2=border.y2+(border.offset==="y"?border.sign*half:0);
+    const dash=border.style==="dashed"?" stroke-dasharray=\""+(border.width*3)+" "+border.width+"\"":
+      border.style==="dotted"?" stroke-dasharray=\"0 "+(border.width*2)+"\" stroke-linecap=\"round\"":"";
+    return "<path d=\"M "+x1+" "+y1+" L "+x2+" "+y2+"\" fill=\"none\" stroke=\""+xmlText(border.color)+"\" stroke-width=\""+border.width+"\""+dash+
+      (opacity<1?" opacity=\""+opacity+"\"":"")+"/>";
+  }).join("");
+  return (shadow.definitions?"<defs>"+shadow.definitions+"</defs>":"")+background+borders;
 }
 function svgText(textNode,slideRect) {
   const text=textNode.textContent,parent=textNode.parentElement;
@@ -1696,7 +1923,7 @@ function svgText(textNode,slideRect) {
     range.setStart(textNode,match.index);range.setEnd(textNode,match.index+match[0].length);
     const rect=range.getBoundingClientRect();if(!rect.width||!rect.height)continue;
     let value=match[0];if(style.textTransform==="uppercase")value=value.toLocaleUpperCase("tr-TR");else if(style.textTransform==="lowercase")value=value.toLocaleLowerCase("tr-TR");
-    const x=rect.left-slideRect.left,y=rect.top-slideRect.top;
+    const x=rect.left-slideRect.left,y=rect.top-slideRect.top+fontSize*0.2;
     pieces.push("<text x=\""+x+"\" y=\""+y+"\" dominant-baseline=\"hanging\" textLength=\""+rect.width+"\" lengthAdjust=\"spacingAndGlyphs\""+
       " font-family=\""+xmlText(style.fontFamily)+"\" font-size=\""+fontSize+"\" font-weight=\""+xmlText(style.fontWeight)+"\""+
       " font-style=\""+xmlText(style.fontStyle)+"\" fill=\""+xmlText(style.color)+"\""+
@@ -1711,18 +1938,29 @@ function svgSlideMarkup(source) {
   const pieces=["<rect width=\"1920\" height=\"1080\" fill=\""+xmlText(base)+"\"/>"];
   const visit=(element)=>{
     const style=getComputedStyle(element);if(style.display==="none"||style.visibility==="hidden")return;
-    const rect=element.getBoundingClientRect();pieces.push(svgBox(rect,slideRect,style));
+    const rect=element.getBoundingClientRect();pieces.push(svgBox(rect,slideRect,style,pieces.length));
     if(element instanceof HTMLImageElement&&element.currentSrc&&rect.width&&rect.height){
       const x=rect.left-slideRect.left,y=rect.top-slideRect.top,fit=style.objectFit==="contain"?"xMidYMid meet":"none";
       pieces.push("<image x=\""+x+"\" y=\""+y+"\" width=\""+rect.width+"\" height=\""+rect.height+"\" href=\""+xmlText(element.currentSrc)+"\" preserveAspectRatio=\""+fit+"\"/>");
     }
     if(element instanceof SVGElement&&element.tagName.toLowerCase()==="svg"){
-      const serialized=new XMLSerializer().serializeToString(element),x=rect.left-slideRect.left,y=rect.top-slideRect.top;
-      pieces.push("<svg x=\""+x+"\" y=\""+y+"\" width=\""+rect.width+"\" height=\""+rect.height+"\">"+serialized.replace(/^<svg\b[^>]*>/,"").replace(/<\/svg>$/,"")+"</svg>");return;
+      const clone=element.cloneNode(true),svgStyles=["color","display","fill","fill-opacity","fill-rule","opacity","paint-order","shape-rendering","stroke","stroke-dasharray","stroke-dashoffset","stroke-linecap","stroke-linejoin","stroke-miterlimit","stroke-opacity","stroke-width","vector-effect","visibility"];
+      const sourceNodes=[element,...element.querySelectorAll("*")],cloneNodes=[clone,...clone.querySelectorAll("*")];
+      sourceNodes.forEach((sourceNode,index)=>{
+        const computed=getComputedStyle(sourceNode),target=cloneNodes[index];
+        for(const property of svgStyles)target.style.setProperty(property,computed.getPropertyValue(property));
+      });
+      const serialized=new XMLSerializer().serializeToString(clone),x=rect.left-slideRect.left,y=rect.top-slideRect.top;
+      const viewBox=clone.getAttribute("viewBox");
+      const rootStyle=clone.getAttribute("style");
+      pieces.push("<svg x=\""+x+"\" y=\""+y+"\" width=\""+rect.width+"\" height=\""+rect.height+"\""+(viewBox?" viewBox=\""+xmlText(viewBox)+"\"":"")+(rootStyle?" style=\""+xmlText(rootStyle)+"\"":"")+">"+serialized.replace(/^<svg\b[^>]*>/,"").replace(/<\/svg>$/,"")+"</svg>");return;
     }
     for(const child of element.childNodes){if(child.nodeType===Node.TEXT_NODE)pieces.push(svgText(child,slideRect));else if(child instanceof Element)visit(child);}
   };
-  visit(source);return pieces.join("");
+  visit(source);
+  const progress=$("#canvas .progress");
+  if(progress)pieces.push(svgBox(progress.getBoundingClientRect(),slideRect,getComputedStyle(progress),pieces.length));
+  return pieces.join("");
 }
 async function captureSlideImage() {
   await document.fonts?.ready;
@@ -2001,9 +2239,16 @@ function setupInput() {
     resizeTimer = setTimeout(remeasure, 200);
   });
   window.addEventListener("hashchange", () => {
-    const before = `${state.lesson}/${state.slide}/${state.reveal}`;
+    const before = JSON.stringify([
+      state.lesson, state.slide, state.reveal, state.part,
+      [...state.extras], [...state.revealedVocabularyTerms]
+    ]);
     restorePosition();
-    if (`${state.lesson}/${state.slide}/${state.reveal}` !== before) render({ newSlide: true });
+    const after = JSON.stringify([
+      state.lesson, state.slide, state.reveal, state.part,
+      [...state.extras], [...state.revealedVocabularyTerms]
+    ]);
+    if (after !== before) render({ newSlide: true });
   });
 }
 

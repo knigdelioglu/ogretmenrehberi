@@ -1,4 +1,12 @@
 /* ============ Renkler ============ */
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/InterVariable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --canvas-scale: 1;
   --bg: #1a1d21;
@@ -617,6 +625,181 @@ button {
   font-size: 1em;
 }
 
+/* Yapı slaytları: renk ve yazı dili; alanların grid ve iç ölçüleri korunur */
+.slide--visual-structure {
+  --structure-ink: #182a35;
+  --structure-muted: #5b6b73;
+  --structure-rule: #d7e0df;
+  --structure-teal: #176d68;
+  --structure-blue: #5363a7;
+  --structure-gold: #9a650f;
+  --structure-card: #ffffff;
+  --structure-paper: #f7f8f5;
+  color: var(--structure-ink);
+  background: var(--structure-paper);
+}
+
+.slide--visual-structure .slide__top,
+.slide--visual-structure .slide__foot {
+  color: var(--structure-muted);
+  border-color: var(--structure-rule);
+}
+
+.slide--visual-structure .tag,
+.slide--visual-structure .where b,
+.slide--visual-structure .counter {
+  color: var(--structure-teal);
+}
+
+.slide--visual-structure .slide__body {
+  color: var(--structure-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide--visual-structure .prompt {
+  font-family: var(--serif);
+}
+
+.slide--visual-structure .field {
+  color: var(--structure-ink);
+  background: var(--structure-card);
+  border-color: var(--structure-rule);
+  border-style: solid;
+}
+
+.slide--visual-structure .field .n,
+.slide--visual-structure .sec h3 {
+  color: var(--structure-teal);
+}
+
+.slide--visual-structure .field:nth-child(3n + 2) .n,
+.slide--visual-structure .sec:nth-child(3n + 2) h3 {
+  color: var(--structure-blue);
+}
+
+.slide--visual-structure .field:nth-child(3n) .n,
+.slide--visual-structure .sec:nth-child(3n) h3 {
+  color: var(--structure-gold);
+}
+
+.slide--visual-structure .sec {
+  color: var(--structure-ink);
+  background: var(--structure-card);
+  box-shadow: inset 0 0 0 1px var(--structure-rule);
+}
+
+:root[data-theme="dark"] .slide--visual-structure {
+  --structure-ink: #edf3f1;
+  --structure-muted: #bdc9c7;
+  --structure-rule: #344248;
+  --structure-teal: #72c9ba;
+  --structure-blue: #a7b1ff;
+  --structure-gold: #efbd68;
+  --structure-card: #1c252b;
+  --structure-paper: #151b20;
+}
+
+/* Süreç akışları: yalnız mevcut numaralı listenin yazı ve vurgu renkleri */
+.slide--visual-process ol.steps-list {
+  --process-ink: #182a35;
+  --process-teal: #176d68;
+  --process-teal-soft: #e2efeb;
+  --process-blue: #5363a7;
+  --process-blue-soft: #eceefa;
+  --process-gold: #9a650f;
+  --process-gold-soft: #f8efd9;
+  color: var(--process-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide--visual-process ol.steps-list .n {
+  color: var(--process-teal);
+  background: var(--process-teal-soft);
+  font-family: "Inter", var(--font);
+}
+
+.slide--visual-process ol.steps-list li:nth-child(3n + 2) .n {
+  color: var(--process-blue);
+  background: var(--process-blue-soft);
+}
+
+.slide--visual-process ol.steps-list li:nth-child(3n) .n {
+  color: var(--process-gold);
+  background: var(--process-gold-soft);
+}
+
+:root[data-theme="dark"] .slide--visual-process ol.steps-list {
+  --process-ink: #edf3f1;
+  --process-teal: #72c9ba;
+  --process-teal-soft: #1c3734;
+  --process-blue: #a7b1ff;
+  --process-blue-soft: #242a43;
+  --process-gold: #efbd68;
+  --process-gold-soft: #362d1d;
+}
+
+/* Reference slaytları: tipografi ve renk; bölümlerin mevcut geometrisi korunur */
+.slide--visual-reference {
+  --reference-ink: #182a35;
+  --reference-muted: #5b6b73;
+  --reference-rule: #d7e0df;
+  --reference-teal: #176d68;
+  --reference-blue: #5363a7;
+  --reference-gold: #9a650f;
+  --reference-card: #ffffff;
+}
+
+.slide--visual-reference .prompt {
+  color: var(--reference-ink);
+  font-family: var(--serif);
+}
+
+.slide--visual-reference .prompt.is-small {
+  border-left-color: var(--reference-rule);
+}
+
+.slide--visual-reference .lead {
+  color: var(--reference-muted);
+  font-family: "Inter", var(--font);
+}
+
+.slide--visual-reference .source-links,
+.slide--visual-reference .source-links a {
+  font-family: "Inter", var(--font);
+}
+
+.slide--visual-reference .source-links a {
+  color: var(--reference-teal);
+}
+
+.slide--visual-reference .sections .sec {
+  color: var(--reference-ink);
+  background: var(--reference-card);
+  font-family: "Inter", var(--font);
+}
+
+.slide--visual-reference .sections .sec h3 {
+  color: var(--reference-teal);
+}
+
+.slide--visual-reference .sections .sec:nth-child(3n + 2) h3 {
+  color: var(--reference-blue);
+}
+
+.slide--visual-reference .sections .sec:nth-child(3n) h3 {
+  color: var(--reference-gold);
+}
+
+:root[data-theme="dark"] .slide--visual-reference {
+  --reference-ink: #edf3f1;
+  --reference-muted: #bdc9c7;
+  --reference-rule: #344248;
+  --reference-teal: #72c9ba;
+  --reference-blue: #a7b1ff;
+  --reference-gold: #efbd68;
+  --reference-card: #1c252b;
+}
+
 .criteria {
   margin: 0;
   padding: 0;
@@ -640,6 +823,35 @@ button {
   margin-top: 0.3em;
 }
 
+/* Kontrol listeleri: QA metin/renk dili; mevcut checkbox ve liste geometrisi korunur */
+.slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) {
+  --criteria-ink: #182a35;
+  --criteria-teal: #176d68;
+  --criteria-blue: #5363a7;
+  --criteria-gold: #9a650f;
+  --accent: var(--criteria-teal);
+}
+
+.slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) ul.criteria {
+  color: var(--criteria-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) .criteria li:nth-child(3n + 2)::before {
+  border-color: var(--criteria-blue);
+}
+
+.slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) .criteria li:nth-child(3n)::before {
+  border-color: var(--criteria-gold);
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) {
+  --criteria-ink: #edf3f1;
+  --criteria-teal: #72c9ba;
+  --criteria-blue: #a7b1ff;
+  --criteria-gold: #efbd68;
+}
+
 /* Ölçekli değerlendirme formu (Evet / Kısmen / Hayır) */
 .scale-form {
   --scale: 3;
@@ -660,6 +872,9 @@ button {
   background: var(--accent-soft);
   color: var(--accent);
   font-weight: 700;
+}
+
+.scale-form__head > span {
   font-size: 0.8em;
 }
 
@@ -698,6 +913,69 @@ button {
   height: 0.85em;
   border: 0.12em solid var(--accent);
   border-radius: 0.16em;
+}
+
+/* Ölçekli değerlendirme formları: QA paleti, form geometrisi aynı kalır */
+.slide:not(.slide--qa-modern):has(.scale-form) {
+  --assessment-card: #ffffff;
+  --assessment-ink: #182a35;
+  --assessment-rule: #d7e0df;
+  --assessment-teal: #176d68;
+  --assessment-teal-soft: #e2efeb;
+  --assessment-blue: #5363a7;
+  --assessment-blue-soft: #eceefa;
+  --assessment-gold: #9a650f;
+  --assessment-gold-soft: #f8efd9;
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form {
+  background: var(--assessment-card);
+  border-color: var(--assessment-rule);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head {
+  background: var(--assessment-teal-soft);
+  color: var(--assessment-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head > span:nth-child(2),
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__row > .scale-form__box:nth-child(2) {
+  color: var(--assessment-teal);
+  border-color: var(--assessment-teal);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head > span:nth-child(3),
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__row > .scale-form__box:nth-child(3) {
+  color: var(--assessment-blue);
+  border-color: var(--assessment-blue);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head > span:nth-child(4),
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__row > .scale-form__box:nth-child(4) {
+  color: var(--assessment-gold);
+  border-color: var(--assessment-gold);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head > span:nth-child(3) {
+  background: var(--assessment-blue-soft);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head > span:nth-child(4) {
+  background: var(--assessment-gold-soft);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__text {
+  color: var(--assessment-ink);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__text .n {
+  color: var(--assessment-teal);
+}
+
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__head + .scale-form__row,
+.slide:not(.slide--qa-modern):has(.scale-form) .scale-form__row + .scale-form__row {
+  border-color: var(--assessment-rule);
 }
 
 .is-hidden-value {
@@ -765,6 +1043,126 @@ button {
   letter-spacing: 0.3em;
 }
 
+/* Normal söz varlığı kartları: QA paleti, mevcut üç sütunlu düzen korunur */
+.slide:not(.slide--qa-modern):has(.vocab) {
+  --vocab-ink: #182a35;
+  --vocab-rule: #d7e0df;
+  --vocab-teal: #176d68;
+  --vocab-blue: #5363a7;
+  --vocab-gold: #9a650f;
+  --vocab-muted: #718087;
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__item {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px var(--vocab-rule);
+  color: var(--vocab-ink);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__item:nth-child(3n + 1) {
+  --vocab-term-accent: var(--vocab-teal);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__item:nth-child(3n + 2) {
+  --vocab-term-accent: var(--vocab-blue);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__item:nth-child(3n) {
+  --vocab-term-accent: var(--vocab-gold);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__term {
+  color: var(--vocab-term-accent, var(--vocab-teal));
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__meaning {
+  color: var(--vocab-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__meaning:not(.is-hidden) {
+  letter-spacing: 0.015em;
+}
+
+.slide:not(.slide--qa-modern):has(.vocab) .vocab__meaning.is-hidden {
+  color: var(--vocab-muted);
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab) {
+  --vocab-ink: #edf3f1;
+  --vocab-rule: #344248;
+  --vocab-teal: #72c9ba;
+  --vocab-blue: #a7b1ff;
+  --vocab-gold: #efbd68;
+  --vocab-muted: #94a29f;
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab) .vocab__item {
+  background: #1c252b;
+}
+
+/* Tıklanabilir kelime duvarı: yalnız interaktif kartlar için QA paleti */
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) {
+  --word-wall-ink: #182a35;
+  --word-wall-rule: #d7e0df;
+  --word-wall-teal: #176d68;
+  --word-wall-blue: #5363a7;
+  --word-wall-gold: #9a650f;
+  --word-wall-muted: #718087;
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px var(--word-wall-rule);
+  color: var(--word-wall-ink);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n + 1) {
+  --word-wall-accent: var(--word-wall-teal);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n + 2) {
+  --word-wall-accent: var(--word-wall-blue);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n) {
+  --word-wall-accent: var(--word-wall-gold);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive .vocab__term {
+  color: var(--word-wall-accent, var(--word-wall-teal));
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive .vocab__meaning {
+  color: var(--word-wall-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive .vocab__meaning.is-hidden {
+  color: var(--word-wall-muted);
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive[aria-expanded="true"] {
+  box-shadow: inset 0 0 0 1px var(--word-wall-accent, var(--word-wall-teal));
+}
+
+.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:focus-visible {
+  outline-color: var(--word-wall-teal);
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab__item--interactive) {
+  --word-wall-ink: #edf3f1;
+  --word-wall-rule: #344248;
+  --word-wall-teal: #72c9ba;
+  --word-wall-blue: #a7b1ff;
+  --word-wall-gold: #efbd68;
+  --word-wall-muted: #94a29f;
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive {
+  background: #1c252b;
+}
+
 /* Sözlük kartı */
 .dict {
   background: var(--card);
@@ -802,6 +1200,40 @@ button {
 .dict .src {
   font-size: 1em;
   color: var(--ink-3);
+}
+
+/* Sözlük kartı: QA renkleri, mevcut başlık ve açıklama ölçüleri korunur */
+.slide:not(.slide--qa-modern):has(.dict) {
+  --dict-ink: #182a35;
+  --dict-accent: #176d68;
+}
+
+.slide:not(.slide--qa-modern):has(.dict) .dict {
+  background: #ffffff;
+  border-top-color: var(--dict-accent);
+}
+
+.slide:not(.slide--qa-modern):has(.dict) .dict h2 {
+  color: var(--dict-ink);
+  font-family: "Inter", var(--font);
+}
+
+.slide:not(.slide--qa-modern):has(.dict) .dict dt {
+  color: var(--dict-accent);
+}
+
+.slide:not(.slide--qa-modern):has(.dict) .dict dd:not(.src) {
+  color: var(--dict-ink);
+  font-family: "Inter", var(--font);
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.dict) {
+  --dict-ink: #edf3f1;
+  --dict-accent: #72c9ba;
+}
+
+:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.dict) .dict {
+  background: #1c252b;
 }
 
 /* Alt şerit */
@@ -1131,6 +1563,219 @@ button {
 .menu__export:disabled {
   opacity: 0.55;
   cursor: progress;
+}
+
+/* QA soru slaytları: 1920×1080 tuval içindeki özel görsel dil */
+.slide--qa-modern {
+  --qa-paper: #f7f8f5;
+  --qa-card: #ffffff;
+  --qa-ink: #182a35;
+  --qa-muted: #5b6b73;
+  --qa-rule: #d7e0df;
+  --qa-accent: #176d68;
+  --qa-accent-soft: #e2efeb;
+  --qa-answer: #176d68;
+  --qa-answer-soft: #e6f2ed;
+  --qa-evidence: #5363a7;
+  --qa-evidence-soft: #eceefa;
+  --qa-guide: #9a650f;
+  --qa-guide-soft: #f8efd9;
+  --qa-explain: #765494;
+  --qa-explain-soft: #f1eaf6;
+  --qa-font: "Inter", var(--font);
+  --qa-display-font: var(--qa-font);
+  --paper: var(--qa-paper);
+  --card: var(--qa-card);
+  --ink: var(--qa-ink);
+  --ink-2: var(--qa-muted);
+  --ink-3: #718087;
+  --rule: var(--qa-rule);
+  --accent: var(--qa-accent);
+  --accent-soft: var(--qa-accent-soft);
+  --answer: var(--qa-answer);
+  --answer-soft: var(--qa-answer-soft);
+  --evidence: var(--qa-evidence);
+  --evidence-soft: var(--qa-evidence-soft);
+  --guide: var(--qa-guide);
+  --guide-soft: var(--qa-guide-soft);
+  --explain: var(--qa-explain);
+  --explain-soft: var(--qa-explain-soft);
+  background: var(--qa-paper);
+  color: var(--qa-ink);
+  font-family: var(--qa-font);
+}
+
+:root[data-theme="dark"] .slide--qa-modern {
+  --qa-paper: #151b20;
+  --qa-card: #1c252b;
+  --qa-ink: #edf3f1;
+  --qa-muted: #bdc9c7;
+  --qa-rule: #344248;
+  --qa-accent: #72c9ba;
+  --qa-accent-soft: #1c3734;
+  --qa-answer: #72c9ba;
+  --qa-answer-soft: #1b3431;
+  --qa-evidence: #a7b1ff;
+  --qa-evidence-soft: #242a43;
+  --qa-guide: #efbd68;
+  --qa-guide-soft: #362d1d;
+  --qa-explain: #d0a9ef;
+  --qa-explain-soft: #30243a;
+  --ink-3: #94a29f;
+}
+
+.slide--qa-modern .slide__top,
+.slide--qa-modern .slide__foot {
+  color: var(--qa-muted);
+  border-color: var(--qa-rule);
+}
+
+.slide--qa-modern .where b {
+  color: var(--qa-muted);
+}
+
+.slide--qa-modern .qa-question {
+  color: var(--qa-accent);
+}
+
+.slide--qa-modern .qa-question .tag__no {
+  color: var(--qa-paper);
+  background: var(--qa-accent);
+}
+
+.slide--qa-modern .slide__body {
+  color: var(--qa-ink);
+  font-family: var(--qa-font);
+}
+
+.slide--qa-modern .prompt {
+  font-family: var(--qa-display-font);
+  color: var(--qa-ink);
+}
+
+.slide--qa-modern .body-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-height: 100%;
+}
+
+.slide--qa-modern .qa-context {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  width: 100%;
+  text-align: center;
+}
+
+.slide--qa-modern .qa-context > .prompt {
+  view-transition-name: qa-question;
+  width: min(100%, 1500px);
+  font-size: 1.7em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+::view-transition-group(qa-question),
+::view-transition-old(qa-question),
+::view-transition-new(qa-question) {
+  animation-duration: 220ms;
+  animation-timing-function: cubic-bezier(0.22, 0.7, 0.25, 1);
+}
+
+@keyframes qa-prompt-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide--qa-modern .qa-context > .prompt.qa-prompt-enter {
+  animation: qa-prompt-enter 220ms cubic-bezier(0.22, 0.7, 0.25, 1) both;
+}
+
+.slide--qa-modern .qa-context > :not(.prompt) {
+  width: min(100%, 1420px);
+}
+
+.slide--qa-modern .qa-context:has(+ .qa-focus:not(:empty)) {
+  flex: 0 0 auto;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 0.9em;
+  text-align: left;
+}
+
+.slide--qa-modern .qa-context:has(+ .qa-focus:not(:empty)) > .prompt {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.02em;
+  line-height: 1.3;
+  color: var(--qa-muted);
+}
+
+.slide--qa-modern .qa-focus:not(:empty) {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7em;
+  width: 100%;
+}
+
+.slide--qa-modern .qa-focus > :not(.panel__label) {
+  width: 100%;
+}
+
+.slide--qa-modern .qa-focus .panel {
+  background: var(--card);
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.slide--qa-modern .qa-focus .panel--answer {
+  background: var(--qa-answer-soft);
+  border-color: var(--qa-answer);
+}
+
+.slide--qa-modern .qa-focus .panel--evidence {
+  background: var(--qa-evidence-soft);
+  border-color: var(--qa-evidence);
+}
+
+.slide--qa-modern .qa-focus .panel--guidance,
+.slide--qa-modern .qa-focus .panel--thinking {
+  background: var(--qa-guide-soft);
+  border-color: var(--qa-guide);
+}
+
+.slide--qa-modern .qa-focus .panel--explanation {
+  background: var(--qa-explain-soft);
+  border-color: var(--qa-explain);
+}
+
+.slide--qa-modern .counter {
+  color: var(--qa-accent);
+  font-weight: 650;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(qa-question),
+  ::view-transition-old(qa-question),
+  ::view-transition-new(qa-question) {
+    animation: none !important;
+  }
+
+  .slide--qa-modern .qa-context > .prompt.qa-prompt-enter {
+    animation: none;
+  }
 }
 
 .visually-hidden {

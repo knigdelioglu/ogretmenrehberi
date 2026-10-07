@@ -210,7 +210,8 @@ const offlineCore = [...new Set([
   "assets/theme4-p305-option-1.png",
   "assets/theme4-p305-option-2.png",
   "assets/theme4-p305-option-3.png",
-  "assets/theme4-p305-option-4.png"
+  "assets/theme4-p305-option-4.png",
+  "assets/fonts/InterVariable.woff2"
 ])];
 fs.writeFileSync(path.join(distDir, dataFile), payload);
 

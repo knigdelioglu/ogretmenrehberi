@@ -1,10 +1,13 @@
 import assert from "node:assert/strict";
+import crypto from "node:crypto";
 import { execFileSync, spawn } from "node:child_process";
 import fs from "node:fs";
+import http from "node:http";
 import os from "node:os";
 import path from "node:path";
 import { setTimeout as sleep } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
+import zlib from "node:zlib";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -13,7 +16,30 @@ if (!chrome) throw new Error("Set CHROME to a Chrome/Chromium executable to run 
 const port = Number(process.env.PORT || 5181);
 const root = `http://127.0.0.1:${port}`;
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "sunum-web-cdp-"));
-const server = spawn(process.execPath, [path.join(appRoot, "scripts/serve.mjs")], {
+const rasterAudit = process.env.PPTX_RASTER_AUDIT === "1";
+const server = rasterAudit ? http.createServer((request, response) => {
+  const distDir = path.join(appRoot, "dist");
+  const urlPath = decodeURIComponent(new URL(request.url, root).pathname);
+  const file = path.resolve(distDir, urlPath === "/" ? "index.html" : `.${urlPath}`);
+  if (!file.startsWith(`${distDir}${path.sep}`) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
+    response.writeHead(404).end("Not found");
+    return;
+  }
+  let content = fs.readFileSync(file);
+  if (urlPath === "/app.js") {
+    content = Buffer.concat([content, Buffer.from(`\nwindow.__testCaptureSlideImage = async () => {
+      const bytes = await captureSlideImage();
+      let binary = "";
+      for (let offset = 0; offset < bytes.length; offset += 32768) {
+        binary += String.fromCharCode(...bytes.subarray(offset, offset + 32768));
+      }
+      return btoa(binary);
+    };\n`)]);
+  }
+  const types = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".bin": "application/octet-stream", ".svg": "image/svg+xml" };
+  response.writeHead(200, { "Content-Type": types[path.extname(file)] || "application/octet-stream", "Cache-Control": "no-cache" });
+  response.end(content);
+}).listen(port, "127.0.0.1") : spawn(process.execPath, [path.join(appRoot, "scripts/serve.mjs")], {
   env: { ...process.env, PORT: String(port) }, stdio: "ignore"
 });
 const browser = spawn(chrome, [
@@ -77,6 +103,29 @@ async function connectTarget(debugPort, predicate) {
 }
 
 const lessons = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
+function readBuiltCatalog() {
+  const dist = path.join(appRoot, "dist");
+  const dataFile = fs.readdirSync(dist).find((name) => name.startsWith("data.") && name.endsWith(".bin"));
+  assert.ok(dataFile, "built encrypted lesson catalog exists");
+  const payload = fs.readFileSync(path.join(dist, dataFile));
+  assert.equal(payload.toString("ascii", 0, 4), "SNM1", "built catalog uses the supported envelope");
+  const iterations = payload.readUInt32BE(4);
+  const salt = payload.subarray(8, 24);
+  const iv = payload.subarray(24, 36);
+  const decipher = crypto.createDecipheriv(
+    "aes-256-gcm",
+    crypto.pbkdf2Sync(process.env.SUNUM_SIFRE || "sunum", salt, iterations, 32, "sha256"),
+    iv
+  );
+  decipher.setAuthTag(payload.subarray(-16));
+  const compressed = Buffer.concat([decipher.update(payload.subarray(36, -16)), decipher.final()]);
+  return JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
+}
+const builtCatalog = readBuiltCatalog();
+const multiPageContentQa = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.layout === "question" && step.reveals.includes("answer") &&
+    ((step.content?.items?.length || 0) > 4 || (step.content?.sections?.length || 0) > 2));
+assert.ok(multiPageContentQa, "production catalog has a question with answer reveal and potentially multi-page content");
 const evidencePresentationCases = new Map();
 for (const lesson of lessons) {
   for (const step of lesson.steps) {
@@ -110,12 +159,254 @@ async function headerMetrics() {
 }
 async function answerPanelText() { return page.evaluate("document.querySelector('#canvas .panel--answer')?.innerText ?? ''"); }
 async function evidencePanelText() { return page.evaluate("document.querySelector('#canvas .panel--evidence')?.innerText ?? ''"); }
+async function qaState() {
+  return page.evaluate(`(() => {
+    const slide = document.querySelector('#canvas .slide');
+    const context = slide?.querySelector('.qa-context');
+    const focus = slide?.querySelector('.qa-focus');
+    const where = slide?.querySelector('.slide__top .where');
+    return {
+      modern: slide?.classList.contains('slide--qa-modern') ?? false,
+      comparison: slide?.classList.contains('slide--qa-comparison') ?? false,
+      slidePrompt: slide?.querySelector('.slide__body .prompt')?.innerText ?? '',
+      prompt: context?.querySelector('.prompt')?.innerText ?? '',
+      context: context?.innerText ?? '',
+      focus: focus?.innerText ?? '',
+      badge: slide?.querySelector('.slide__top .qa-question')?.innerText.trim() ?? '',
+      stageLabels: [...(focus?.querySelectorAll('.panel__label') ?? [])].map((label) => label.innerText.trim()),
+      qaStageLabels: focus?.querySelectorAll('.qa-stage-label').length ?? 0,
+      whereText: where?.innerText ?? '',
+      whereTitle: where?.title ?? '',
+      counter: slide?.querySelector('.slide__foot .counter')?.innerText ?? ''
+    };
+  })()`);
+}
+async function visualLayoutState() {
+  return page.evaluate(`(() => {
+    const slide = document.querySelector('#canvas .slide');
+    const body = slide?.querySelector('.slide__body');
+    return {
+      prompt: slide?.querySelector('.prompt')?.innerText ?? '',
+      visualClasses: [...(slide?.classList ?? [])].filter((name) => name.startsWith('slide--visual-')),
+      qaModern: slide?.classList.contains('slide--qa-modern') ?? false,
+      qaComparison: slide?.classList.contains('slide--qa-comparison') ?? false,
+      children: [...(slide?.children ?? [])].map((child) => child.tagName),
+      bodyClasses: [...(body?.querySelector('.body-grid > .stack')?.classList ?? [])],
+      stepLists: body?.querySelectorAll('.steps-list').length ?? 0,
+      sections: body?.querySelectorAll('.sections').length ?? 0,
+      sources: body?.querySelectorAll('.source-links a').length ?? 0,
+      revealDots: slide?.querySelectorAll('.dots i').length ?? 0,
+      revealedDots: slide?.querySelectorAll('.dots i.on').length ?? 0
+    };
+  })()`);
+}
+async function qaPromptMetrics() {
+  return page.evaluate(`(() => {
+    const prompt = document.querySelector('#canvas .slide--qa-modern .qa-context > .prompt');
+    if (!prompt) return null;
+    const measure = () => {
+      const style = getComputedStyle(prompt);
+      const range = document.createRange();
+      range.selectNodeContents(prompt);
+      const lineTops = [...range.getClientRects()]
+        .map((rect) => rect.top)
+        .sort((a, b) => a - b)
+        .filter((top, index, tops) => index === 0 || top - tops[index - 1] > 1);
+      return {
+        lineCount: lineTops.length,
+        textAlign: style.textAlign,
+        fontCheck: document.fonts.check('16px "Inter"', prompt.textContent),
+        interFaces: [...document.fonts]
+          .filter((face) => face.family.replace(/[\"']/g, "").trim() === "Inter")
+          .map((face) => ({ status: face.status, weight: face.weight, style: face.style })),
+        inputs: {
+          width: style.width,
+          maxWidth: style.maxWidth,
+          fontSize: style.fontSize,
+          lineHeight: style.lineHeight,
+          letterSpacing: style.letterSpacing,
+          fontFamily: style.fontFamily
+        }
+      };
+    };
+    const appliedTextAlign = prompt.style.textAlign;
+    const afterAlignment = measure();
+    prompt.style.removeProperty('text-align');
+    const beforeAlignment = measure();
+    if (appliedTextAlign) prompt.style.setProperty('text-align', appliedTextAlign);
+    const restored = measure();
+    return { appliedTextAlign, beforeAlignment, afterAlignment, restored };
+  })()`);
+}
+async function waitForPromptFonts() {
+  await page.evaluate("document.fonts.ready.then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))))");
+}
+async function qaVisualState() {
+  return page.evaluate(`(() => {
+    const slide = document.querySelector('#canvas .slide--qa-modern');
+    const context = slide?.querySelector('.qa-context');
+    const focus = slide?.querySelector('.qa-focus');
+    const prompt = context?.querySelector(':scope > .prompt');
+    const body = slide?.querySelector('.slide__body');
+    const style = prompt && getComputedStyle(prompt);
+    return {
+      prompt: prompt?.innerText ?? '',
+      context: context?.innerText ?? '',
+      focus: focus?.innerText ?? '',
+      answer: focus?.querySelector('.panel--answer')?.innerText ?? '',
+      evidence: focus?.querySelector('.panel--evidence')?.innerText ?? '',
+      fontFamily: style?.fontFamily ?? '',
+      fontCheck: Boolean(prompt && document.fonts.check('16px "Inter"', prompt.textContent)),
+      bodyScrollTop: body?.scrollTop ?? -1,
+      bodyOverflowing: body?.classList.contains('is-overflowing') ?? false
+    };
+  })()`);
+}
+async function captureQaScreenshot(label) {
+  await waitForPromptFonts();
+  await page.evaluate(`(() => {
+    for (const animation of document.querySelector('#canvas .slide')?.getAnimations() ?? []) {
+      try { animation.finish(); } catch { /* canceled entry animations are already stable */ }
+    }
+  })()`);
+  await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+  const state = await qaVisualState();
+  assert.ok(state.prompt, `${label} renders a QA prompt`);
+  assert.match(state.fontFamily, /^\s*["']?Inter["']?(?:\s*,|$)/i, `${label} uses Inter`);
+  assert.equal(state.fontCheck, true, `${label} screenshot is captured after Inter loads`);
+  assert.equal(state.bodyScrollTop, 0, `${label} screenshot starts at the top of its QA body`);
+  assert.equal(state.bodyOverflowing, false, `${label} QA body fits without extra scroll captures`);
+  const rect = await page.evaluate(`(() => {
+    const bounds = document.querySelector('#canvas .slide--qa-modern')?.getBoundingClientRect();
+    return bounds && { x: bounds.left, y: bounds.top, width: bounds.width, height: bounds.height,
+      viewportWidth: innerWidth, viewportHeight: innerHeight };
+  })()`);
+  assert.deepEqual([rect?.viewportWidth, rect?.viewportHeight, rect?.width, rect?.height], [1920, 1080, 1920, 1080],
+    `${label} web view and screenshot clip use the 1920×1080 canvas`);
+  const screenshot = await page.send("Page.captureScreenshot", {
+    format: "png", fromSurface: true, captureBeyondViewport: true,
+    clip: { x: rect.x, y: rect.y, width: rect.width, height: rect.height, scale: 1 }
+  });
+  const bytes = Buffer.from(screenshot.data, "base64");
+  assert.equal(bytes.toString("hex", 0, 8), "89504e470d0a1a0a", `${label} browser screenshot is PNG`);
+  assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [1920, 1080],
+    `${label} browser screenshot clip is 1920×1080`);
+  return { label, state, bytes };
+}
+async function comparePngPixels(browserPng, pptxPng) {
+  return page.evaluate(`(async () => {
+    const decode = async (base64) => {
+      const binary = atob(base64);
+      const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+      const image = new Image();
+      image.src = URL.createObjectURL(new Blob([bytes], { type: 'image/png' }));
+      try { await image.decode(); } finally { URL.revokeObjectURL(image.src); }
+      const canvas = document.createElement('canvas');
+      canvas.width = image.naturalWidth;
+      canvas.height = image.naturalHeight;
+      const context = canvas.getContext('2d', { willReadFrequently: true });
+      context.drawImage(image, 0, 0);
+      return { width: canvas.width, height: canvas.height, pixels: context.getImageData(0, 0, canvas.width, canvas.height).data };
+    };
+    const [browser, pptx] = await Promise.all([decode(${JSON.stringify(browserPng.toString("base64"))}), decode(${JSON.stringify(pptxPng.toString("base64"))})]);
+    if (browser.width !== pptx.width || browser.height !== pptx.height) return { dimensionsMatch: false, browser: [browser.width, browser.height], pptx: [pptx.width, pptx.height] };
+    let differentPixels = 0;
+    let changedChannels = 0;
+    let totalChannelDelta = 0;
+    let maxChannelDelta = 0;
+    for (let pixel = 0; pixel < browser.width * browser.height; pixel += 1) {
+      let pixelDiffers = false;
+      for (let channel = 0; channel < 4; channel += 1) {
+        const delta = Math.abs(browser.pixels[pixel * 4 + channel] - pptx.pixels[pixel * 4 + channel]);
+        if (delta) { pixelDiffers = true; changedChannels += 1; totalChannelDelta += delta; maxChannelDelta = Math.max(maxChannelDelta, delta); }
+      }
+      if (pixelDiffers) differentPixels += 1;
+    }
+    return {
+      dimensionsMatch: true,
+      width: browser.width,
+      height: browser.height,
+      differentPixels,
+      changedChannels,
+      meanChangedChannelDelta: changedChannels ? totalChannelDelta / changedChannels : 0,
+      maxChannelDelta
+    };
+  })()`);
+}
+async function installQaTransitionProbe() {
+  await page.evaluate(`(() => {
+    const probe = window.__qaTransitionProbe = { calls: [] };
+    const promptSnapshot = () => {
+      const prompts = [...document.querySelectorAll('#canvas .slide--qa-modern .qa-context > .prompt')];
+      const prompt = prompts[0];
+      return prompt ? {
+        count: prompts.length,
+        text: prompt.textContent,
+        viewTransitionName: getComputedStyle(prompt).viewTransitionName
+      } : null;
+    };
+    Object.defineProperty(document, 'startViewTransition', {
+      configurable: true,
+      writable: true,
+      value(callback) {
+        const before = promptSnapshot();
+        callback();
+        const after = promptSnapshot();
+        probe.calls.push({
+          before,
+          after,
+          exportBusy: document.querySelector('#menu')?.getAttribute('aria-busy') === 'true'
+        });
+        const settled = Promise.resolve();
+        return { ready: settled, finished: settled, updateCallbackDone: settled, skipTransition() {} };
+      }
+    });
+  })()`);
+}
+async function qaTransitionCalls() {
+  return page.evaluate("window.__qaTransitionProbe?.calls ?? []");
+}
+async function clearQaTransitionCalls() {
+  await page.evaluate("if (window.__qaTransitionProbe) window.__qaTransitionProbe.calls = []");
+}
+async function qaViewportMetrics() {
+  return page.evaluate(`(() => {
+    const body = document.querySelector('#canvas .slide__body');
+    const focus = document.querySelector('#canvas .qa-focus');
+    const stage = focus?.querySelector('.panel, .qa-stage-label');
+    const bodyRect = body?.getBoundingClientRect();
+    const stageRect = stage?.getBoundingClientRect();
+    const visibleIntersection = Boolean(bodyRect && stageRect &&
+      Math.min(bodyRect.bottom, stageRect.bottom) > Math.max(bodyRect.top, stageRect.top) &&
+      Math.min(bodyRect.right, stageRect.right) > Math.max(bodyRect.left, stageRect.left));
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight,
+      horizontalOverflow: Boolean(body && body.scrollWidth > body.clientWidth + 1),
+      bodyCanScrollVertically: Boolean(body?.classList.contains('is-overflowing')),
+      focusText: focus?.innerText.trim() ?? '',
+      focusStageVisible: visibleIntersection
+    };
+  })()`);
+}
 async function next() {
   await page.evaluate(`(() => {
     const body = document.querySelector('#canvas .slide__body');
     if (body) body.scrollTop = body.scrollHeight;
     document.querySelector('#dock [data-action=next]').click();
   })()`);
+  await sleep(150);
+  return bodyText();
+}
+async function nextImmediately() {
+  await page.evaluate(`(() => {
+    const body = document.querySelector('#canvas .slide__body');
+    if (body) body.scrollTop = body.scrollHeight;
+    document.querySelector('#dock [data-action=next]').click();
+  })()`);
+}
+async function previous() {
+  await page.evaluate("document.querySelector('#dock [data-action=prev]').click()");
   await sleep(150);
   return bodyText();
 }
@@ -193,6 +484,456 @@ try {
     throw error;
   }
 
+presentationBrowserSuite: {
+  if (rasterAudit) {
+    await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
+    await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
+    await until(() => page.evaluate("typeof window.__testCaptureSlideImage === 'function'"), "test-only direct slide capture hook");
+    const outputDir = process.env.PPTX_RASTER_AUDIT_DIR || path.join(os.tmpdir(), "sunum-web-raster-audit");
+    fs.mkdirSync(outputDir, { recursive: true });
+    const auditCases = [
+      { slug: "asik-atismasi", id: "s143-q4", name: "asik-atismasi-s143-q4-paired", text: ["Münacaat", "Âşık Şiirinin Dili"], pairedEvidence: true },
+      { slug: "mektup", id: "s40-q5", name: "mektup-s40-q5-structure", text: ["Konu", "Çalışma kâğıdı"], answerPanel: true },
+      { slug: "huzur-okuma", id: "s172-vocabulary", name: "huzur-okuma-s172-vocabulary", text: ["mahzen", "cevher"] },
+      { slug: "kemal-tahir-mulakat-210-214", id: "s214-eval", name: "kemal-tahir-s214-eval-scale", text: ["Evet", "Kısmen", "Hayır"] },
+      { slug: "tiyatro-canlandirma-280-283", id: "s283-performance", name: "tiyatro-s283-performance", text: ["İçeriğe uygunluk", "Çok iyi", "puan"], advanceTo: "Çok iyi" }
+    ];
+    const requestedIds = process.env.PPTX_RASTER_AUDIT_ONLY?.split(",").map((id) => id.trim()).filter(Boolean);
+    const selectedCases = requestedIds ? auditCases.filter((fixture) => requestedIds.includes(fixture.id)) : auditCases;
+    assert.ok(selectedCases.length > 0, "PPTX_RASTER_AUDIT_ONLY selects at least one known fixture");
+    for (const fixture of selectedCases) {
+      const entry = await openStep(fixture.slug, fixture.id);
+      if (fixture.pairedEvidence) {
+        const unit = entry.step.presentation?.web?.units?.find((candidate) => candidate.evidence_sections?.length);
+        assert.ok(unit, `${fixture.name} has a paired evidence unit`);
+        await advanceUntilEvidenceSection(unit.evidence_sections[0].section_key, fixture.name);
+        assert.ok((await answerPanelText()).trim(), `${fixture.name} shows its answer panel`);
+        assert.ok((await evidencePanelText()).trim(), `${fixture.name} shows its evidence panel`);
+      }
+      if (fixture.advanceTo) {
+        await advanceUntil((text) => includesText(text, fixture.advanceTo), `${fixture.name} ${fixture.advanceTo} level`, 36);
+      }
+      if (fixture.answerPanel) {
+        for (let index = 0; index < 12 && !(await answerPanelText()).trim(); index += 1) await next();
+        assert.ok((await answerPanelText()).trim(), `${fixture.name} captures its first visible structure answer`);
+      }
+      await waitForPromptFonts();
+      await page.evaluate(`(() => {
+        for (const animation of document.querySelector('#canvas .slide')?.getAnimations() ?? []) {
+          try { animation.finish(); } catch { /* canceled entry animations are already stable */ }
+        }
+      })()`);
+      await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+      const visual = await page.evaluate(`(() => {
+        const slide = document.querySelector('#canvas .slide');
+        const body = slide?.querySelector('.slide__body');
+        const rect = (node) => {
+          const box = node?.getBoundingClientRect();
+          return box && { x: box.x, y: box.y, width: box.width, height: box.height, right: box.right, bottom: box.bottom };
+        };
+        const fontTarget = slide?.querySelector('.vocab__meaning, .panel, .sec, .slide__body');
+        return {
+          text: slide?.innerText ?? '', fontReady: document.fonts.check('16px "Inter"'),
+          fontFamily: fontTarget ? getComputedStyle(fontTarget).fontFamily : '',
+          interFaces: [...document.fonts].filter((face) => face.family.replace(/["']/g, '').trim() === 'Inter').map((face) => face.status),
+          slide: rect(slide), body: rect(body),
+          header: rect(slide?.querySelector('.slide__top')),
+          footer: rect(slide?.querySelector('.slide__foot')),
+          decorations: slide?.querySelectorAll('.slide__top, .slide__foot, .progress, .qa-badge, .panel__label, .sec h3').length ?? 0,
+          overflow: body ? { horizontal: body.scrollWidth > body.clientWidth + 1, vertical: body.classList.contains('is-overflowing') } : null
+        };
+      })()`);
+      assert.equal(visual.fontReady, true, `${fixture.name} has loaded Inter before capture`);
+      assert.ok(visual.interFaces.length > 0 && visual.interFaces.every((status) => status === 'loaded'), `${fixture.name} has loaded Inter font faces before capture`);
+      assert.deepEqual([visual.slide?.x, visual.slide?.y, visual.slide?.width, visual.slide?.height], [0, 0, 1920, 1080], `${fixture.name} slide fills the 1920×1080 viewport`);
+      assert.ok(visual.body?.width > 0 && visual.body?.height > 0 && visual.body.x >= 0 && visual.body.right <= 1920 && visual.body.y >= 0 && visual.body.bottom <= 1080, `${fixture.name} body stays within slide bounds`);
+      assert.ok(visual.decorations >= 2, `${fixture.name} retains slide decorations and visible labels`);
+      assert.ok(visual.header?.width > 0 && visual.footer?.width > 0, `${fixture.name} header and footer are present within the captured slide`);
+      assert.equal(visual.overflow.horizontal, false, `${fixture.name} has no horizontal body overflow`);
+      for (const fragment of fixture.text) assert.ok(includesText(visual.text, fragment), `${fixture.name} shows label/text “${fragment}”`);
+      const base64 = await page.evaluate("window.__testCaptureSlideImage()" );
+      const bytes = Buffer.from(base64, "base64");
+      assert.equal(bytes.toString("hex", 0, 8), "89504e470d0a1a0a", `${fixture.name} direct capture returns PNG`);
+      assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [1920, 1080], `${fixture.name} direct capture is 1920×1080`);
+      const imagePath = path.join(outputDir, `${fixture.name}.png`);
+      fs.writeFileSync(imagePath, bytes);
+      console.log(`[sunum-web] Raster audit ${fixture.name}: ${JSON.stringify({ imagePath, dimensions: [1920, 1080], font: visual.fontFamily, decorations: visual.decorations, bounds: visual.body, visibleText: fixture.text, bytes: bytes.length })}`);
+    }
+    console.log(`[sunum-web] Captured ${selectedCases.length} representative slide states directly; PPTX export was not invoked.`);
+  } else {
+  if (process.env.STRUCTURE_VISUAL_SMOKE === "1") {
+    const sourceStructureCount = lessons.reduce((count, lesson) => count + lesson.steps.filter((step) => step.layout === "structure").length, 0);
+    const builtStructureCount = builtCatalog.lessons.reduce((count, lesson) => count + lesson.steps.filter((step) => step.layout === "structure").length, 0);
+    assert.equal(sourceStructureCount, 155, "the source catalog has 155 structure-layout steps for the visual modifier");
+    assert.equal(builtStructureCount, 155, "the built catalog retains all 155 structure-layout steps");
+    await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
+    await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
+
+    const captureStructureState = () => page.evaluate(`(() => {
+      const slide = document.querySelector('#canvas .slide');
+      const body = slide?.querySelector('.slide__body');
+      const answer = slide?.querySelector('.panel--answer');
+      const firstSection = answer?.querySelector('.sec h3');
+      const bodyRect = body?.getBoundingClientRect();
+      return {
+        visualStructure: slide?.classList.contains('slide--visual-structure') ?? false,
+        qaModern: slide?.classList.contains('slide--qa-modern') ?? false,
+        qaComparison: slide?.classList.contains('slide--qa-comparison') ?? false,
+        qaAccent: getComputedStyle(slide).getPropertyValue('--qa-accent').trim(),
+        structureInk: getComputedStyle(slide).getPropertyValue('--structure-ink').trim(),
+        structureTeal: getComputedStyle(slide).getPropertyValue('--structure-teal').trim(),
+        slideBackground: getComputedStyle(slide).backgroundColor,
+        bodyFont: body ? getComputedStyle(body).fontFamily : '',
+        firstSectionColor: firstSection ? getComputedStyle(firstSection).color : '',
+        answerLabels: [...(answer?.querySelectorAll('.sec h3') || [])].map((node) => node.textContent.trim()),
+        answerText: answer?.innerText ?? '',
+        bodyText: body?.innerText ?? '',
+        bodyRect: bodyRect && { x: bodyRect.x, y: bodyRect.y, right: bodyRect.right, bottom: bodyRect.bottom },
+        fits: Boolean(body && body.scrollHeight <= body.clientHeight + 1 && body.scrollWidth <= body.clientWidth + 1 &&
+          !body.classList.contains('is-overflowing'))
+      };
+    })()`);
+
+    async function waitForStructureAnswer(key, label) {
+      let state = await captureStructureState();
+      for (let index = 0; index < 24; index += 1) {
+        if (state.answerLabels.includes(key)) return state;
+        await next();
+        state = await captureStructureState();
+      }
+      assert.fail(`Could not reach structure answer ${label}: ${JSON.stringify(state.answerLabels)}`);
+    }
+
+    for (const fixture of [
+      { slug: "mektup", id: "s40-q5" },
+      { slug: "karagoz", id: "s32-q3" }
+    ]) {
+      const entry = findStep(fixture.slug, fixture.id);
+      assert.equal(entry.step.layout, "structure", `${fixture.id} uses the canonical structure layout`);
+      const expectedKeys = entry.step.presentation.web.units.flatMap((unit) => unit.section_keys);
+      assert.ok(expectedKeys.length >= 4, `${fixture.id} has a multi-unit structured answer`);
+      const opened = await openStep(fixture.slug, fixture.id);
+      assert.ok(opened.text.includes(entry.step.display_prompt), `${fixture.id} opens its real route prompt`);
+      let state = await captureStructureState();
+      assert.equal(state.visualStructure, true, `${fixture.id} receives the visual-structure modifier`);
+      assert.equal(state.qaModern, false, `${fixture.id} does not receive the QA modifier`);
+      assert.equal(state.qaComparison, false, `${fixture.id} does not receive the comparison modifier`);
+      assert.equal(state.qaAccent, "", `${fixture.id} has no inherited QA accent modifier`);
+      assert.equal(state.structureInk, "#182a35", `${fixture.id} receives the structure ink palette`);
+      assert.equal(state.structureTeal, "#176d68", `${fixture.id} receives the structure teal palette`);
+      assert.equal(state.slideBackground, "rgb(247, 248, 245)", `${fixture.id} uses the structure paper surface`);
+      assert.match(state.bodyFont, /^Inter(?:,|$)/, `${fixture.id} structure body uses Inter at 1920x1080`);
+      assert.ok(state.fits, `${fixture.id} initial structure page fits at 1920x1080`);
+
+      const seenKeys = [];
+      for (const [index, key] of expectedKeys.entries()) {
+        state = await waitForStructureAnswer(key, `${fixture.id}/${key}`);
+        assert.ok(state.answerLabels.includes(key), `${fixture.id} renders the expected answer unit: ${key}`);
+        assert.equal(state.visualStructure, true, `${fixture.id}/${key} retains the structure modifier`);
+        assert.equal(state.qaModern, false, `${fixture.id}/${key} does not gain the QA modifier`);
+        assert.equal(state.qaComparison, false, `${fixture.id}/${key} does not gain the comparison modifier`);
+        assert.ok(state.fits, `${fixture.id}/${key} answer page fits at 1920x1080`);
+        if (index === 0) {
+          assert.equal(state.firstSectionColor, "rgb(23, 109, 104)", `${fixture.id} first structure section uses the teal accent`);
+          const firstAnswerText = state.answerText;
+          await previous();
+          const backwardState = await captureStructureState();
+          assert.ok(!backwardState.answerLabels.includes(key), `${fixture.id} backward navigation restores the preceding non-answer page`);
+          assert.equal(backwardState.visualStructure, true, `${fixture.id} backward navigation keeps its structure modifier`);
+          assert.equal(backwardState.qaModern, false, `${fixture.id} backward navigation does not leak into QA`);
+          await next();
+          state = await waitForStructureAnswer(key, `${fixture.id}/${key} restored`);
+          assert.equal(state.answerText, firstAnswerText, `${fixture.id} forward navigation restores the first answer page`);
+          assert.ok(state.fits, `${fixture.id} restored answer page fits at 1920x1080`);
+        }
+        seenKeys.push(key);
+      }
+      assert.deepEqual(seenKeys, expectedKeys, `${fixture.id} answer pagination follows its authored unit order`);
+      console.log(`[sunum-web] Structure smoke ${fixture.slug}/${fixture.id}: ${seenKeys.length} answer units in order at 1920x1080.`);
+    }
+    console.log("[sunum-web] Focused Chrome structure visual smoke passed: 155 source/built layouts, pagination order, reverse/forward, overflow, and QA/comparison isolation.");
+    break presentationBrowserSuite;
+  }
+
+  if (process.env.VISUAL_LAYOUT_CLASS_SMOKE === "1") {
+    const expectVisualClasses = (state, expected, label) => {
+      assert.deepEqual(state.visualClasses, expected, `${label} has only its expected visual-layout modifier`);
+    };
+    const setTeacherRevealMode = async (enabled) => {
+      await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+      await until(() => page.evaluate("document.querySelector('#menu')?.hidden === false"), "open presentation menu");
+      const checked = await page.evaluate("document.querySelector('#menu-guide')?.checked ?? false");
+      if (checked !== enabled) await page.evaluate("document.querySelector('#menu-guide').click()");
+      assert.equal(
+        await page.evaluate("localStorage.getItem('sunum.guideOnRemote') === '1'"),
+        enabled,
+        `teacher reveal mode persists as ${enabled ? "enabled" : "disabled"}`
+      );
+      await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
+      await until(() => page.evaluate("document.querySelector('#menu')?.hidden === true"), "close presentation menu");
+    };
+    const processEntry = findStep("karagoz", "s16-process");
+    assert.equal(processEntry.step.layout, "process", "s16-process is the process fixture");
+    assert.deepEqual(processEntry.step.reveal_order, [], "s16-process has no authored reveal layers");
+    const processOpened = await openStep("karagoz", "s16-process");
+    let visual = await visualLayoutState();
+    expectVisualClasses(visual, ["slide--visual-process"], "karagoz/s16-process");
+    assert.deepEqual(visual.children, ["HEADER", "DIV", "FOOTER"], "process modifier preserves the slide's direct DOM children");
+    assert.ok(visual.bodyClasses.includes("stack"), "process modifier preserves the existing body stack");
+    assert.equal(visual.stepLists, 1, "s16-process remains an ordered step list");
+    const nextProcessEntry = processEntry.lesson.steps[processEntry.slide];
+    await next();
+    visual = await until(async () => {
+      const state = await visualLayoutState();
+      return state.prompt === nextProcessEntry.display_prompt ? state : null;
+    }, "s16-process next step");
+    expectVisualClasses(visual, [], "s16-process next-step boundary");
+    await previous();
+    visual = await until(async () => {
+      const state = await visualLayoutState();
+      return state.prompt === processEntry.step.display_prompt ? state : null;
+    }, "s16-process previous step restore");
+    expectVisualClasses(visual, ["slide--visual-process"], "s16-process previous-step restore");
+    assert.ok(processOpened.text.includes(processEntry.step.display_prompt), "s16-process opens its canonical prompt");
+
+    const sourceReference = findStep("dinleme-izleme", "s67-qr-communication");
+    assert.equal(sourceReference.step.layout, "reference", "s67-qr-communication is a reference-layout fixture");
+    assert.deepEqual(sourceReference.step.reveal_order, [], "s67-qr-communication has no authored reveal layers");
+    const referenceOpened = await openStep("dinleme-izleme", "s67-qr-communication");
+    visual = await visualLayoutState();
+    expectVisualClasses(visual, ["slide--visual-reference"], "dinleme-izleme/s67-qr-communication");
+    assert.ok(referenceOpened.text.includes(sourceReference.step.display_prompt), "source reference keeps its prompt");
+    assert.ok(visual.sources > 0, "source reference keeps its existing source-link list");
+    const nextReferenceEntry = sourceReference.lesson.steps[sourceReference.slide];
+    await next();
+    visual = await until(async () => {
+      const state = await visualLayoutState();
+      return state.prompt === nextReferenceEntry.display_prompt ? state : null;
+    }, "s67-qr-communication next step");
+    await previous();
+    visual = await until(async () => {
+      const state = await visualLayoutState();
+      return state.prompt === sourceReference.step.display_prompt ? state : null;
+    }, "s67-qr-communication previous step restore");
+    expectVisualClasses(visual, ["slide--visual-reference"], "s67-qr-communication previous-step restore");
+
+    const noteReference = findStep("karagoz", "s26-reference");
+    assert.equal(noteReference.step.layout, "reference", "s26-reference is a reference-layout fixture");
+    assert.deepEqual(noteReference.step.reveal_order, ["note"], "s26-reference retains its authored note reveal");
+    const runtimeNoteReference = builtCatalog.lessons
+      .find((lesson) => lesson.slug === "karagoz")?.steps.find((step) => step.id === "s26-reference");
+    assert.ok(runtimeNoteReference, "built catalog contains the s26-reference runtime fixture");
+    assert.ok(!runtimeNoteReference.reveals.includes("note"), "built runtime excludes note from the reveal sequence");
+    assert.equal(runtimeNoteReference.content.note, undefined, "built runtime excludes teacher note from rendered content");
+    await setTeacherRevealMode(true);
+    await openStep("karagoz", "s26-reference");
+    visual = await visualLayoutState();
+    expectVisualClasses(visual, ["slide--visual-reference"], "karagoz/s26-reference");
+    assert.equal(visual.revealDots, 0, "s26-reference retains its current no-reveal runtime behavior");
+    await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+    await until(() => page.evaluate("document.querySelector('#menu')?.hidden === false"), "verify persisted teacher mode");
+    assert.equal(await page.evaluate("document.querySelector('#menu-guide')?.checked"), true,
+      "teacher reveal mode is active after navigating to s26-reference");
+    await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
+    const nextNoteStep = noteReference.lesson.steps[noteReference.slide];
+    let contentPageAdvances = 0;
+    for (let index = 0; index < 8 && visual.prompt === noteReference.step.display_prompt; index += 1) {
+      await next();
+      visual = await visualLayoutState();
+      if (visual.prompt === noteReference.step.display_prompt) {
+        contentPageAdvances += 1;
+        assert.equal(visual.revealDots, 0, "s26-reference content pages do not create a note reveal");
+      }
+    }
+    assert.ok(contentPageAdvances > 0, "s26-reference advances through its paginated content before the next step");
+    visual = await until(async () => {
+      const state = await visualLayoutState();
+      return state.prompt === nextNoteStep.display_prompt ? state : null;
+    }, "s26-reference next-step boundary after content pages");
+    assert.ok(!(await bodyText()).includes(noteReference.step.content.note), "s26-reference teacher note is not rendered by the current runtime catalog");
+    expectVisualClasses(visual, [], "s26-reference next-step boundary");
+    await previous();
+    visual = await until(async () => {
+      const state = await visualLayoutState();
+      return state.prompt === noteReference.step.display_prompt ? state : null;
+    }, "s26-reference previous-step restore after content pages");
+    assert.equal(visual.revealDots, 0, "s26-reference reverse navigation keeps the current no-reveal runtime behavior");
+    expectVisualClasses(visual, ["slide--visual-reference"], "s26-reference previous-step restore after content pages");
+    await setTeacherRevealMode(false);
+
+    for (const fixture of [
+      { slug: "dinleme-izleme", id: "s64-listen", layout: "process", key: "answer" },
+      { slug: "huzur-okuma", id: "s170-reading", layout: "reference", key: "answer" }
+    ]) {
+      const entry = findStep(fixture.slug, fixture.id);
+      assert.equal(entry.step.layout, fixture.layout, `${fixture.slug}/${fixture.id} reveal fixture has its expected layout`);
+      assert.ok(entry.step.reveal_order.includes(fixture.key), `${fixture.slug}/${fixture.id} authors the expected ${fixture.key} reveal`);
+      await openStep(fixture.slug, fixture.id);
+      visual = await visualLayoutState();
+      expectVisualClasses(visual, [`slide--visual-${fixture.layout}`], `${fixture.slug}/${fixture.id} opening`);
+      assert.equal(visual.revealDots, 1, `${fixture.slug}/${fixture.id} has one active student reveal`);
+      assert.equal(visual.revealedDots, 0, `${fixture.slug}/${fixture.id} starts before its answer reveal`);
+      await next();
+      visual = await visualLayoutState();
+      assert.equal(visual.prompt, entry.step.display_prompt, `${fixture.slug}/${fixture.id} answer stays on the same step`);
+      assert.equal(visual.revealedDots, 1, `${fixture.slug}/${fixture.id} next opens the authored answer reveal`);
+      assert.ok(await answerPanelText(), `${fixture.slug}/${fixture.id} renders its answer content`);
+      expectVisualClasses(visual, [`slide--visual-${fixture.layout}`], `${fixture.slug}/${fixture.id} answer reveal`);
+      await previous();
+      visual = await visualLayoutState();
+      assert.equal(visual.prompt, entry.step.display_prompt, `${fixture.slug}/${fixture.id} previous returns to its task`);
+      assert.equal(visual.revealedDots, 0, `${fixture.slug}/${fixture.id} previous closes the answer reveal`);
+      expectVisualClasses(visual, [`slide--visual-${fixture.layout}`], `${fixture.slug}/${fixture.id} reverse navigation`);
+    }
+
+    for (const fixture of [
+      { slug: "mektup", id: "s40-q5", layout: "structure", classes: ["slide--visual-structure"] },
+      { slug: "asik-atismasi", id: "s143-q4", layout: "comparison", classes: [] },
+      { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", classes: [] },
+      { slug: "konusma", id: "s58-feedback", layout: "assessment", classes: [] }
+    ]) {
+      const entry = await openStep(fixture.slug, fixture.id);
+      assert.equal(entry.step.layout, fixture.layout, `${fixture.slug}/${fixture.id} control fixture has its expected layout`);
+      visual = await visualLayoutState();
+      expectVisualClasses(visual, fixture.classes, `${fixture.slug}/${fixture.id} control fixture`);
+    }
+    console.log("[sunum-web] Focused process/reference class smoke passed: route classes, navigation/reveal order, DOM shape, and other-layout isolation.");
+    break presentationBrowserSuite;
+  }
+
+  if (process.env.VOCAB_DICT_SMOKE === "1") {
+    const { step: dictionaryStep } = await openStep("orhun-abideleri", "s116-vocabulary");
+    assert.equal(dictionaryStep.layout, "vocabulary", "s116-vocabulary is the canonical dictionary card fixture");
+    let dictionaryVisible = await page.evaluate("Boolean(document.querySelector('#canvas .dict'))");
+    for (let index = 0; index < 12 && !dictionaryVisible; index += 1) {
+      await next();
+      dictionaryVisible = await page.evaluate("Boolean(document.querySelector('#canvas .dict'))");
+    }
+    assert.equal(dictionaryVisible, true, "s116-vocabulary reaches its rendered dictionary card on the real route");
+    const dictionaryStyle = await page.evaluate(`(async () => {
+      await document.fonts.ready;
+      const interFaces = await document.fonts.load('400 16px "Inter"');
+      const slide = document.querySelector('#canvas .slide');
+      const body = slide.querySelector('.slide__body');
+      const card = slide.querySelector('.dict');
+      const heading = card?.querySelector('h2');
+      const dl = card?.querySelector('dl');
+      const definitions = [...(dl?.querySelectorAll(':scope > dd:not(.src)') || [])];
+      const termNodes = [...(dl?.querySelectorAll(':scope > dt') || [])];
+      const cardRect = card?.getBoundingClientRect();
+      const bodyRect = body?.getBoundingClientRect();
+      const cardStyle = card && getComputedStyle(card);
+      const headingStyle = heading && getComputedStyle(heading);
+      const termStyles = termNodes.map((node) => getComputedStyle(node));
+      const definitionStyles = definitions.map((node) => getComputedStyle(node));
+      const bodyStyle = body && getComputedStyle(body);
+      return {
+        cardCount: slide.querySelectorAll('.dict').length,
+        headingCount: [...slide.querySelectorAll('.dict h2')].filter((node) => node.textContent.trim() === 'Sözlük').length,
+        headingText: heading?.textContent.trim() ?? '',
+        headingFont: headingStyle?.fontFamily ?? '',
+        cardBackground: cardStyle?.backgroundColor ?? '',
+        dictInk: getComputedStyle(slide).getPropertyValue('--dict-ink').trim(),
+        dictAccent: getComputedStyle(slide).getPropertyValue('--dict-accent').trim(),
+        vocabInk: getComputedStyle(slide).getPropertyValue('--vocab-ink').trim(),
+        assessmentTeal: getComputedStyle(slide).getPropertyValue('--assessment-teal').trim(),
+        termEntries: termNodes.map((term, index) => ({
+          term: term.textContent.trim(),
+          tag: term.tagName,
+          definitionTag: term.nextElementSibling?.tagName ?? '',
+          definition: definitions[index]?.textContent.trim() ?? '',
+          termFont: termStyles[index]?.fontFamily ?? '',
+          termWeight: termStyles[index]?.fontWeight ?? '',
+          definitionFont: definitionStyles[index]?.fontFamily ?? ''
+        })),
+        dlChildTags: [...(dl?.children || [])].map((node) => node.tagName),
+        cardRect: cardRect && { x: cardRect.x, y: cardRect.y, right: cardRect.right, bottom: cardRect.bottom },
+        bodyRect: bodyRect && { x: bodyRect.x, y: bodyRect.y, right: bodyRect.right, bottom: bodyRect.bottom },
+        cardWithinBody: Boolean(cardRect && bodyRect && cardRect.left >= bodyRect.left - 1 && cardRect.right <= bodyRect.right + 1 &&
+          cardRect.top >= bodyRect.top - 1 && cardRect.bottom <= bodyRect.top + body.scrollHeight + 1),
+        cardNoScrollOverflow: Boolean(card && card.scrollWidth <= card.clientWidth + 1 && card.scrollHeight <= card.clientHeight + 1),
+        bodyNoHorizontalOverflow: Boolean(body && body.scrollWidth <= body.clientWidth + 1),
+        verticalScrollMode: bodyStyle?.overflowY ?? '',
+        interLoaded: interFaces.some((face) => face.family.replaceAll('"', '') === 'Inter' && face.status === 'loaded')
+      };
+    })()`);
+    assert.equal(dictionaryStyle.cardCount, 1, "s116-vocabulary renders one visible .dict card");
+    assert.equal(dictionaryStyle.headingCount, 1, "the dictionary card has one Sözlük heading");
+    assert.equal(dictionaryStyle.headingText, "Sözlük", "the heading is the Sözlük label");
+    assert.match(dictionaryStyle.headingFont, /^Inter(?:,|$)/, "the dictionary heading uses Inter");
+    assert.match(dictionaryStyle.termEntries[0]?.definitionFont ?? "", /^Inter(?:,|$)/, "dictionary definitions use Inter");
+    assert.ok(dictionaryStyle.interLoaded, "the local Inter font is loaded for dictionary text");
+    assert.ok(dictionaryStyle.termEntries.length > 0 && dictionaryStyle.termEntries.every((entry) =>
+      entry.tag === "DT" && entry.definitionTag === "DD" && entry.definition && !entry.termFont.startsWith("Inter") && Number(entry.termWeight) >= 700),
+    `dictionary terms retain bold DT/definition DD hierarchy: ${JSON.stringify(dictionaryStyle.termEntries)}`);
+    assert.ok(dictionaryStyle.dlChildTags.every((tag) => tag === "DT" || tag === "DD"), "dictionary terms and definitions remain direct DL children");
+    assert.equal(dictionaryStyle.dictInk, "#182a35", "dictionary palette is scoped to the dictionary-bearing slide");
+    assert.equal(dictionaryStyle.dictAccent, "#176d68", "dictionary accent palette is applied to the card");
+    assert.equal(dictionaryStyle.vocabInk, "", "dictionary styling does not activate the .vocab palette");
+    assert.equal(dictionaryStyle.assessmentTeal, "", "dictionary styling does not activate the assessment palette");
+    assert.equal(dictionaryStyle.cardBackground, "rgb(255, 255, 255)", "the dictionary card uses its intended white surface");
+    assert.ok(dictionaryStyle.cardWithinBody, `dictionary card remains within the slide body bounds: ${JSON.stringify(dictionaryStyle.cardRect)}`);
+    assert.ok(dictionaryStyle.cardNoScrollOverflow, "dictionary card has no internal scroll overflow");
+    assert.ok(dictionaryStyle.bodyNoHorizontalOverflow, "dictionary page has no horizontal body overflow");
+
+    await openStep("huzur-okuma", "s172-vocabulary");
+    const vocabularyStyle = await page.evaluate(`(() => {
+      const slide = document.querySelector('#canvas .slide');
+      const terms = [...slide.querySelectorAll('.vocab__term')];
+      return {
+        dictInk: getComputedStyle(slide).getPropertyValue('--dict-ink').trim(),
+        dictAccent: getComputedStyle(slide).getPropertyValue('--dict-accent').trim(),
+        vocabInk: getComputedStyle(slide).getPropertyValue('--vocab-ink').trim(),
+        termColors: terms.map((node) => getComputedStyle(node).color),
+        termFonts: terms.map((node) => getComputedStyle(node).fontFamily)
+      };
+    })()`);
+    assert.equal(vocabularyStyle.dictInk, "", "dictionary ink does not leak onto .vocab slides");
+    assert.equal(vocabularyStyle.dictAccent, "", "dictionary accent does not leak onto .vocab slides");
+    assert.notEqual(vocabularyStyle.vocabInk, "", "the .vocab palette remains active on vocabulary cards");
+    assert.ok(vocabularyStyle.termColors.includes("rgb(83, 99, 167)"), "vocabulary term accent hierarchy remains intact");
+    assert.ok(vocabularyStyle.termFonts.every((font) => !font.startsWith("Inter")), "vocabulary terms keep their serif hierarchy");
+
+    await openStep("asik-atismasi", "s139-checklist");
+    const criteriaStyle = await page.evaluate(`(() => {
+      const slide = document.querySelector('#canvas .slide');
+      const marker = getComputedStyle(slide.querySelector('.criteria li'), '::before').borderTopColor;
+      const accentProbe = document.createElement('span');
+      accentProbe.style.color = getComputedStyle(slide).getPropertyValue('--accent').trim();
+      slide.append(accentProbe);
+      const accent = getComputedStyle(accentProbe).color;
+      accentProbe.remove();
+      return {
+        dictInk: getComputedStyle(slide).getPropertyValue('--dict-ink').trim(),
+        dictAccent: getComputedStyle(slide).getPropertyValue('--dict-accent').trim(),
+        marker,
+        accent
+      };
+    })()`);
+    assert.equal(criteriaStyle.dictInk, "", "dictionary ink does not leak onto .criteria slides");
+    assert.equal(criteriaStyle.dictAccent, "", "dictionary accent does not leak onto .criteria slides");
+    assert.equal(criteriaStyle.marker, criteriaStyle.accent, "criteria markers keep the lesson accent");
+
+    await openStep("kemal-tahir-mulakat-210-214", "s214-eval");
+    const scaleStyle = await page.evaluate(`(() => {
+      const slide = document.querySelector('#canvas .slide');
+      const head = slide.querySelector('.scale-form__head');
+      return {
+        dictInk: getComputedStyle(slide).getPropertyValue('--dict-ink').trim(),
+        dictAccent: getComputedStyle(slide).getPropertyValue('--dict-accent').trim(),
+        assessmentTeal: getComputedStyle(slide).getPropertyValue('--assessment-teal').trim(),
+        headBackground: getComputedStyle(head).backgroundColor,
+        rowCount: slide.querySelectorAll('.scale-form__row').length
+      };
+    })()`);
+    assert.equal(scaleStyle.dictInk, "", "dictionary ink does not leak onto .scale-form slides");
+    assert.equal(scaleStyle.dictAccent, "", "dictionary accent does not leak onto .scale-form slides");
+    assert.notEqual(scaleStyle.assessmentTeal, "", "the assessment palette remains active on scale forms");
+    assert.equal(scaleStyle.headBackground, "rgb(226, 239, 235)", "scale-form header keeps its own background style");
+    assert.equal(scaleStyle.rowCount, 6, "the scale form retains all six rows");
+    console.log("[sunum-web] Focused Chrome dictionary smoke passed: card, heading, Inter definitions, term hierarchy, bounds, and vocabulary/criteria/scale-form style isolation.");
+    break presentationBrowserSuite;
+  }
   // Long location metadata must never add header rows as answer/reveal labels change.
   await openStep("mektup", "s44-q2");
   const initialHeader = await headerMetrics();
@@ -205,13 +946,15 @@ try {
     assert.equal(metrics.height, fixedHeaderHeight, "s.44 header height stays fixed across reveal layers");
     assert.equal(metrics.bodyTop, fixedBodyTop, "s.44 body position stays fixed across reveal layers");
     assert.ok(metrics.title.includes("Çözümleyebilme"), "full s.44 metadata remains available in the title");
-    if (metrics.title.includes(" · Cevap")) {
+    assert.ok(!metrics.title.includes(" · Cevap"), "s.44 QA header title never receives the reveal label");
+    if ((await answerPanelText()).trim()) {
       answerReached = true;
       break;
     }
     await next();
   }
-  assert.ok(answerReached, "s.44 regression case reaches its answer reveal");
+  assert.ok(answerReached, "s.44 regression case reaches its answer reveal without adding it to .where");
+  assert.ok(!(await headerMetrics()).title.includes(" · Cevap"), "s.44 answer view keeps the view label out of .where");
   await openStep("konusma", "s53-q1");
   const longHeadingMetrics = await headerMetrics();
   assert.equal(longHeadingMetrics.whiteSpace, "nowrap", "s.53 long heading stays on one line");
@@ -223,6 +966,456 @@ try {
     assert.equal(metrics.height, fixedHeaderHeight, "s.53 header height stays fixed across reveal layers");
     assert.equal(metrics.bodyTop, fixedBodyTop, "s.53 body position stays fixed across reveal layers");
   }
+
+  const promptFixtures = [
+    { slug: "huzur-metni-anlayalim-175-176", id: "s175-q1", expected: "short" },
+    { slug: "tema-2-degerlendirme", id: "s155-q2" },
+    { slug: "tema-2-degerlendirme", id: "s157-q3" },
+    { slug: "tema-2-girisi", id: "s88-q4", expected: "long" }
+  ];
+  const promptAlignmentResults = [];
+  for (const fixture of promptFixtures) {
+    const source = findStep(fixture.slug, fixture.id);
+    const runtimeLesson = builtCatalog.lessons.find((lesson) => lesson.slug === fixture.slug);
+    const runtimeStep = runtimeLesson?.steps.find((step) => step.id === fixture.id);
+    assert.equal(source.step.layout, "question", `${fixture.id} production layout is question`);
+    assert.equal(runtimeStep?.layout, "question", `${fixture.id} runtime layout is question`);
+    assert.ok(runtimeStep?.reveals.includes("answer"), `${fixture.id} canonical runtime reveals include answer`);
+    await openStep(fixture.slug, fixture.id);
+    await waitForPromptFonts();
+    const metrics = await qaPromptMetrics();
+    assert.ok(metrics, `${fixture.id} renders a QA prompt for measurement`);
+    const lines = metrics.afterAlignment.lineCount;
+    assert.match(metrics.afterAlignment.inputs.fontFamily, /^\s*["']?Inter["']?(?:\s*,|$)/i,
+      `${fixture.id} computed QA prompt font-family starts with Inter (${metrics.afterAlignment.inputs.fontFamily})`);
+    assert.equal(metrics.afterAlignment.fontCheck, true,
+      `${fixture.id} document.fonts.check confirms Inter is loaded for the prompt text`);
+    assert.ok(metrics.afterAlignment.interFaces.some((face) => face.status === "loaded"),
+      `${fixture.id} has a loaded Inter FontFace (${JSON.stringify(metrics.afterAlignment.interFaces)})`);
+    assert.ok(lines > 0, `${fixture.id} has measurable rendered text lines`);
+    assert.equal(metrics.appliedTextAlign, lines >= 3 ? "left" : "center",
+      `${fixture.id} text-align follows its actual rendered line count (${lines})`);
+    assert.equal(metrics.afterAlignment.textAlign, metrics.appliedTextAlign,
+      `${fixture.id} computed alignment reflects the applied measurement decision`);
+    assert.deepEqual(metrics.beforeAlignment.inputs, metrics.afterAlignment.inputs,
+      `${fixture.id} alignment does not change width/font measurement inputs`);
+    assert.equal(metrics.beforeAlignment.lineCount, metrics.afterAlignment.lineCount,
+      `${fixture.id} alignment does not change the measured line count`);
+    assert.deepEqual(metrics.restored, metrics.afterAlignment,
+      `${fixture.id} restoring the tested alignment returns the same measured layout`);
+    if (fixture.expected === "short") assert.ok(lines >= 1 && lines <= 2, `${fixture.id} is a real 1–2 line QA prompt`);
+    if (fixture.expected === "long") assert.ok(lines >= 3, `${fixture.id} is a real 3+ line QA prompt`);
+    promptAlignmentResults.push({
+      id: fixture.id,
+      lines,
+      textAlign: metrics.afterAlignment.textAlign,
+      fontFamily: metrics.afterAlignment.inputs.fontFamily,
+      fontCheck: metrics.afterAlignment.fontCheck
+    });
+  }
+  console.log(`[sunum-web] Inter-loaded QA prompt alignment: ${JSON.stringify(promptAlignmentResults)}`);
+
+  // QA presentation keeps the question in context while each authored answer page
+  // opens in the focus area. These are production lessons, not synthetic fixtures.
+  const qaEntry = findStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  assert.equal(qaEntry.step.layout, "question", "s175-q1 production fixture is a QA question");
+  assert.equal(qaEntry.step.answer.question_no, "1", "s175-q1 production fixture has question number 1");
+  assert.ok(qaEntry.step.answer.answer_sections, "s175-q1 has structured production answers");
+  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  let qa = await qaState();
+  assert.equal(qa.modern, true, "s175-q1 uses the modern QA layout");
+  assert.ok(qa.context.includes(qaEntry.step.display_prompt), "s175-q1 prompt starts in qa-context");
+  assert.equal(qa.focus.trim(), "", "s175-q1 opening content has an empty qa-focus");
+  assert.equal(qa.badge, "SORU · 1. soru", "s175-q1 shows the SORU badge and question_no");
+  assert.ok(!qa.counter.includes("sayfa"), "single-page s175-q1 content does not show a page count");
+  const s175Thinking = await next();
+  qa = await qaState();
+  assert.equal(qa.prompt, qaEntry.step.display_prompt, "s175-q1 prompt remains in qa-context during reveal");
+  assert.ok(qa.context.includes(qaEntry.step.display_prompt), "s175-q1 thinking reveal leaves prompt in qa-context");
+  assert.ok(qa.focus.includes("Düşünürken"), "s175-q1 thinking content opens in qa-focus");
+  assert.equal(qa.qaStageLabels, 0, "s175-q1 does not duplicate a stage label already supplied by its panel");
+  assert.ok(s175Thinking.includes("Düşünürken"), "s175-q1 production thinking layer is visible");
+  const s175Answer = await next();
+  qa = await qaState();
+  assert.equal(qa.prompt, qaEntry.step.display_prompt, "s175-q1 prompt remains in qa-context during answer reveal");
+  assert.ok(qa.focus.includes("Okuma öncesi tahmin"), "s175-q1 answer content opens in qa-focus");
+  assert.equal(qa.stageLabels.length, new Set(qa.stageLabels).size,
+    "s175-q1 answer stage labels do not repeat");
+  assert.ok(s175Answer.includes("İstanbul ve Boğaz"), "s175-q1 first structured answer is visible");
+  assert.ok(qa.counter.includes("sayfa 1/"), "multi-page s175-q1 answer count is shown in the footer");
+  assert.ok(!qa.whereText.includes("Okuma öncesi tahmin") && !qa.whereTitle.includes("Okuma öncesi tahmin"),
+    "s175-q1 answer page title stays out of the header");
+  const s175NextAnswerPage = await next();
+  qa = await qaState();
+  assert.ok(qa.counter.includes("sayfa 2/"), "s175-q1 forward navigation increments its footer page count");
+  assert.ok(qa.focus.includes("Metinden öğrenilenler"), "s175-q1 advances to its second structured answer");
+  assert.ok(s175NextAnswerPage.includes("eski musiki"), "s175-q1 second answer page has its production content");
+  await previous();
+  qa = await qaState();
+  assert.ok(qa.counter.includes("sayfa 1/"), "s175-q1 backward navigation restores the prior footer page count");
+  assert.ok(qa.focus.includes("Okuma öncesi tahmin"), "s175-q1 backward navigation restores the prior answer");
+
+  const pairedQaEntry = findStep("ogulla-bulusma", "s100-q1");
+  assert.equal(pairedQaEntry.step.layout, "question", "s100-q1 production fixture is QA eligible");
+  assert.equal(pairedQaEntry.step.answer.question_no, "1", "s100-q1 production fixture has question number 1");
+  const pairedUnit = pairedQaEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
+  assert.ok(pairedUnit, "s100-q1 production fixture pairs answer and evidence");
+  await openStep("ogulla-bulusma", "s100-q1");
+  qa = await qaState();
+  assert.equal(qa.modern, true, "s100-q1 uses the modern QA layout");
+  assert.equal(qa.badge, "SORU · 1. soru", "s100-q1 shows the SORU badge and question_no");
+  const s100Answer = await advanceUntil((text) => text.includes("Çordon, yaklaşık yirmi yıl önce"), "s100-q1 paired answer");
+  qa = await qaState();
+  assert.equal(qa.prompt, pairedQaEntry.step.display_prompt, "s100-q1 prompt stays in qa-context through its answer reveal");
+  assert.ok(qa.focus.includes("Çordon, yaklaşık yirmi yıl önce"), "s100-q1 answer opens in qa-focus");
+  assert.ok(s100Answer.includes("Çordon, yaklaşık yirmi yıl önce"), "s100-q1 answer page shows production answer text");
+  assert.ok(qa.counter.includes("sayfa 1/"), "s100-q1 multi-page answer count is shown in the footer");
+  assert.ok((await answerPanelText()).trim(), "s100-q1 paired answer is visible before its evidence page");
+  assert.equal((await evidencePanelText()).trim(), "", "s100-q1 evidence waits for its authored follow-up page");
+  assert.equal(qa.qaStageLabels, 0, "s100-q1 does not add a duplicate stage label beside answer/evidence panels");
+  await next();
+  qa = await qaState();
+  assert.equal(qa.prompt, pairedQaEntry.step.display_prompt, "s100-q1 prompt remains in context on the next answer page");
+  assert.ok(qa.counter.includes("sayfa 2/"), "s100-q1 forward navigation increments the footer page count");
+  assert.ok(qa.focus.includes("Alınan Karar"), "s100-q1 evidence page keeps its linked answer in qa-focus");
+  assert.equal(qa.stageLabels.length, new Set(qa.stageLabels).size, "s100-q1 answer/evidence stage labels do not repeat");
+  assert.ok((await answerPanelText()).trim(), "s100-q1 linked answer remains paired with its evidence");
+  assert.ok((await evidencePanelText()).includes("Henüz gözlerim kapanmadan"), "s100-q1 linked evidence opens on its paired page");
+  await previous();
+  qa = await qaState();
+  assert.ok(qa.counter.includes("sayfa 1/"), "s100-q1 backward navigation restores the answer page count");
+  assert.ok((await answerPanelText()).trim(), "s100-q1 backward navigation restores the answer page");
+  assert.equal((await evidencePanelText()).trim(), "", "s100-q1 backward navigation closes its evidence page");
+  const s58QaCandidate = findStep("konusma", "s58-feedback");
+  assert.equal(s58QaCandidate.step.layout, "assessment", "s58-feedback stays outside QA eligibility");
+  await openStep("konusma", "s58-feedback");
+  assert.equal((await qaState()).modern, false, "s58-feedback does not enter the QA browser presentation");
+
+  // The encrypted runtime catalog is the source of truth for reveal eligibility.
+  // s155-q2 has five answer-choice items, so its actual content view spans two parts.
+  const multiPageQa = multiPageContentQa;
+  const multiPageEntry = findStep(multiPageQa.lesson.slug, multiPageQa.step.id);
+  assert.equal(multiPageQa.step.layout, "question", `${multiPageEntry.step.id} production layout is question`);
+  assert.ok(multiPageQa.step.reveals.includes("answer"), `${multiPageEntry.step.id} canonical reveals include answer`);
+  assert.ok(multiPageEntry.step.reveal_order.includes("answer"), `${multiPageEntry.step.id} source reveal order includes answer`);
+  assert.equal(multiPageEntry.step.content.items.length, 5, `${multiPageEntry.step.id} has five production answer choices`);
+  const firstContentPage = await openStep(multiPageQa.lesson.slug, multiPageEntry.step.id);
+  qa = await qaState();
+  assert.equal(qa.modern, true, `${multiPageEntry.step.id} opens in the QA layout`);
+  assert.equal(qa.counter.split("· sayfa ")[1], "1/2", `${multiPageEntry.step.id} content starts at part 1/2`);
+  assert.ok(qa.focus.trim() === "", `${multiPageEntry.step.id} content starts with an empty qa-focus`);
+  const firstContentItems = multiPageEntry.step.content.items.filter((item) => qa.context.includes(item));
+  const secondContentItems = multiPageEntry.step.content.items.filter((item) => !firstContentItems.includes(item));
+  assert.ok(firstContentItems.length > 0 && secondContentItems.length > 0,
+    `${multiPageEntry.step.id} first content part shows a proper subset of its choices`);
+  assert.ok(firstContentPage.text.includes(firstContentItems[0]));
+  const secondContentPage = await next();
+  qa = await qaState();
+  assert.equal(qa.counter.split("· sayfa ")[1], "2/2", `${multiPageEntry.step.id} advances to content part 2/2`);
+  assert.equal(qa.focus.trim(), "", `${multiPageEntry.step.id} second content part remains in qa-context`);
+  assert.ok(secondContentItems.every((item) => qa.context.includes(item)),
+    `${multiPageEntry.step.id} second content part shows the remaining choices`);
+  assert.ok(secondContentPage.includes(secondContentItems[0]));
+  await next();
+  qa = await qaState();
+  assert.equal(qa.prompt, multiPageEntry.step.display_prompt, `${multiPageEntry.step.id} prompt remains in qa-context after content`);
+  assert.ok(qa.focus.includes("Düşünürken"), `${multiPageEntry.step.id} thinking follows both content parts`);
+  await next();
+  qa = await qaState();
+  assert.ok(qa.focus.includes("Devletin temel değerlerini aktarmak"), `${multiPageEntry.step.id} answer follows thinking`);
+  assert.equal(qa.prompt, multiPageEntry.step.display_prompt, `${multiPageEntry.step.id} prompt remains in qa-context during answer`);
+  await previous();
+  qa = await qaState();
+  assert.ok(qa.focus.includes("Düşünürken"), `${multiPageEntry.step.id} first reverse step returns to thinking`);
+  await previous();
+  qa = await qaState();
+  assert.equal(qa.counter.split("· sayfa ")[1], "2/2", `${multiPageEntry.step.id} reverse navigation returns to content part 2/2`);
+  assert.ok(secondContentItems.every((item) => qa.context.includes(item)), `${multiPageEntry.step.id} reverse part 2 restores its choices`);
+  assert.equal(qa.focus.trim(), "", `${multiPageEntry.step.id} reverse part 2 clears qa-focus`);
+  await previous();
+  qa = await qaState();
+  assert.equal(qa.counter.split("· sayfa ")[1], "1/2", `${multiPageEntry.step.id} reverse navigation returns to content part 1/2`);
+  assert.ok(firstContentItems.every((item) => qa.context.includes(item)),
+    `${multiPageEntry.step.id} reverse part 1 restores its choices`);
+
+  // Intercept the native View Transition API in this harness so the boundary
+  // policy is deterministic across Chrome versions and headless environments.
+  await installQaTransitionProbe();
+  await clearQaTransitionCalls();
+  await next(); // Content part 1 -> content part 2 must not animate the prompt.
+  assert.equal((await qaTransitionCalls()).length, 0,
+    `${multiPageEntry.step.id} content pagination does not start a QA prompt transition`);
+  await next(); // Last content part -> first reveal.
+  let transitionCalls = await qaTransitionCalls();
+  assert.equal(transitionCalls.length, 1,
+    `${multiPageEntry.step.id} last content part to first reveal starts exactly one transition`);
+  assert.equal(transitionCalls[0].before.count, 1, "QA transition starts with one named prompt");
+  assert.equal(transitionCalls[0].after.count, 1, "QA transition ends with one named prompt");
+  assert.equal(transitionCalls[0].before.viewTransitionName, "qa-question",
+    "the outgoing QA prompt has the shared view-transition name");
+  assert.equal(transitionCalls[0].after.viewTransitionName, "qa-question",
+    "the incoming QA prompt has the shared view-transition name");
+  assert.equal(transitionCalls[0].after.text, transitionCalls[0].before.text,
+    "the transition carries the same question prompt into its first reveal");
+  await next(); // First reveal -> next reveal must not animate.
+  assert.equal((await qaTransitionCalls()).length, 1,
+    `${multiPageEntry.step.id} reveal-to-reveal navigation does not start a transition`);
+  await previous(); // Return to the first reveal.
+  assert.equal((await qaTransitionCalls()).length, 1,
+    `${multiPageEntry.step.id} reverse reveal-to-reveal navigation does not start a transition`);
+  await previous(); // First reveal -> last content part.
+  transitionCalls = await qaTransitionCalls();
+  assert.equal(transitionCalls.length, 2,
+    `${multiPageEntry.step.id} first reveal to content starts one reverse transition`);
+  assert.equal(transitionCalls[1].before.viewTransitionName, "qa-question",
+    "reverse transition starts with the shared prompt name");
+  assert.equal(transitionCalls[1].after.viewTransitionName, "qa-question",
+    "reverse transition returns to the shared prompt name");
+  await previous(); // Content part 2 -> content part 1.
+  assert.equal((await qaTransitionCalls()).length, 2,
+    `${multiPageEntry.step.id} reverse content pagination does not start a transition`);
+
+  // Walk every authored question through its real URL entry point. Focused
+  // cases above cover the detailed reveal/page transitions; this sweep makes
+  // sure the opening QA state remains valid across the full production catalog.
+  const allQuestionCases = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+    .map((step, index) => ({ lesson, step, slide: index + 1 }))
+    .filter(({ step }) => step.layout === "question"));
+  const sourceQuestionCount = lessons.reduce((count, lesson) =>
+    count + lesson.steps.filter((step) => step.layout === "question").length, 0);
+  assert.equal(allQuestionCases.length, sourceQuestionCount,
+    "built and source catalogs contain the same number of question steps");
+  const questionSweep = [];
+  for (const { lesson, step, slide } of allQuestionCases) {
+    const hash = `#/${lesson.slug}/${slide}`;
+    await page.send("Page.navigate", { url: `${root}/${hash}` });
+    let opened;
+    try {
+      opened = await until(async () => {
+        const state = await qaState();
+        const isReady = step.reveals.includes("answer")
+          ? state.prompt === step.prompt
+          : (await bodyText()).includes(step.prompt);
+        return isReady ? state : null;
+      }, `question URL restore ${lesson.slug}/${step.id}`);
+    } catch (error) {
+      const diagnostics = await page.evaluate(`JSON.stringify({hash: location.hash, body: document.querySelector('#canvas .slide__body')?.innerText,
+        title: document.querySelector('#canvas .where')?.title, modern: document.querySelector('#canvas .slide')?.classList.contains('slide--qa-modern')})`);
+      console.error(`[sunum-web] QA question URL sweep diagnostics ${lesson.slug}/${step.id}: ${diagnostics}`);
+      throw error;
+    }
+    assert.ok((await bodyText()).includes(step.prompt), `${lesson.slug}/${step.id} opens its authored prompt`);
+    assert.ok((await page.evaluate("document.querySelector('#canvas .slide') !== null")),
+      `${lesson.slug}/${step.id} renders a slide from its URL`);
+    if (step.reveals.includes("answer")) {
+      assert.equal(opened.modern, true, `${lesson.slug}/${step.id} opens in modern QA layout`);
+      assert.equal(opened.prompt, step.prompt, `${lesson.slug}/${step.id} keeps its prompt in QA context`);
+      assert.equal(opened.focus.trim(), "", `${lesson.slug}/${step.id} starts with an empty QA focus`);
+    }
+    const contentPageCount = opened.counter.match(/sayfa 1\/(\d+)/)?.[1];
+    if (contentPageCount && Number(contentPageCount) > 1) {
+      await nextImmediately();
+      const nextContentPage = await qaState();
+      assert.ok(nextContentPage.counter.includes(`sayfa 2/${contentPageCount}`),
+        `${lesson.slug}/${step.id} advances its opening content page`);
+      assert.equal(nextContentPage.focus.trim(), "", `${lesson.slug}/${step.id} keeps paginated content in QA context`);
+      await previous();
+      const restoredContentPage = await qaState();
+      assert.ok(restoredContentPage.counter.includes(`sayfa 1/${contentPageCount}`),
+        `${lesson.slug}/${step.id} backward navigation restores its opening content page`);
+    }
+    questionSweep.push({ slug: lesson.slug, id: step.id, modern: opened.modern });
+    if (questionSweep.length % 50 === 0) {
+      console.log(`[sunum-web] Production question opening-state sweep progress: ${questionSweep.length}/${allQuestionCases.length}`);
+    }
+  }
+  assert.equal(questionSweep.length, 292, "all production question URLs completed the opening-state sweep");
+  console.log(`[sunum-web] Production question opening-state sweep: ${JSON.stringify({
+    questionSteps: questionSweep.length,
+    modernQaSteps: questionSweep.filter((step) => step.modern).length
+  })}`);
+
+  // Comparison shell eligibility is intentionally narrower than the layout
+  // count: an authored answer reveal and a non-empty prompt are both required.
+  const allComparisonCases = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+    .map((step, index) => ({ lesson, step, slide: index + 1 }))
+    .filter(({ step }) => step.layout === "comparison"));
+  const sourceComparisonCount = lessons.reduce((count, lesson) =>
+    count + lesson.steps.filter((step) => step.layout === "comparison").length, 0);
+  assert.equal(allComparisonCases.length, sourceComparisonCount,
+    "built and source catalogs contain the same number of comparison steps");
+  const eligibleComparisonCases = allComparisonCases.filter(({ step }) =>
+    step.reveals.includes("answer") && typeof step.prompt === "string" && step.prompt.trim());
+  const excludedComparisonCases = allComparisonCases.filter(({ step }) =>
+    !step.reveals.includes("answer") || typeof step.prompt !== "string" || !step.prompt.trim());
+  assert.equal(allComparisonCases.length, 88, "production catalog contains 88 comparison steps");
+  assert.equal(eligibleComparisonCases.length, 75, "75 comparisons meet QA shell eligibility");
+  assert.equal(excludedComparisonCases.length, 13, "13 comparisons remain outside QA shell eligibility");
+  for (const { lesson, step, slide } of allComparisonCases) {
+    const eligible = step.reveals.includes("answer") && typeof step.prompt === "string" && Boolean(step.prompt.trim());
+    await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
+    const state = await until(async () => {
+      const current = await qaState();
+      return current.slidePrompt === step.prompt ? current : null;
+    }, `comparison QA eligibility ${lesson.slug}/${step.id}`);
+    assert.equal(state.modern, eligible, `${lesson.slug}/${step.id} QA shell eligibility matches its answer/prompt contract`);
+    assert.equal(state.comparison, eligible, `${lesson.slug}/${step.id} comparison shell class matches eligibility`);
+    if (eligible) {
+      assert.equal(state.prompt, step.prompt, `${lesson.slug}/${step.id} prompt stays in QA context`);
+      assert.equal(state.focus.trim(), "", `${lesson.slug}/${step.id} opens with an empty QA focus`);
+    }
+  }
+  console.log(`[sunum-web] Comparison QA eligibility: ${JSON.stringify({
+    comparisons: allComparisonCases.length,
+    eligible: eligibleComparisonCases.length,
+    excluded: excludedComparisonCases.length
+  })}`);
+
+  // s143-q4 exercises comparison response order, a distinct paired-evidence
+  // page, reverse navigation, and restoring the bookmarked question URL.
+  const comparisonPairEntry = findStep("asik-atismasi", "s143-q4");
+  const comparisonPairUnit = comparisonPairEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
+  assert.ok(comparisonPairUnit, "s143-q4 has a production paired-evidence unit");
+  assert.equal(comparisonPairEntry.step.layout, "comparison", "s143-q4 is a comparison fixture");
+  const comparisonAnswerOrder = comparisonPairUnit.section_keys;
+  const comparisonEvidenceOrder = comparisonPairUnit.evidence_sections.map((section) => section.section_key);
+  await openStep("asik-atismasi", "s143-q4");
+  let comparisonQa = await qaState();
+  assert.equal(comparisonQa.modern, true, "s143-q4 opens in the QA shell");
+  assert.equal(comparisonQa.comparison, true, "s143-q4 receives the comparison QA class");
+  assert.equal(comparisonQa.focus.trim(), "", "s143-q4 bookmark starts at its task page");
+  const comparisonBookmark = await page.evaluate("location.href");
+  const renderedComparisonAnswerOrder = [];
+  let foundComparisonEvidencePage = false;
+  for (let pageIndex = 0; pageIndex < 12; pageIndex += 1) {
+    if ((await evidencePanelText()).trim()) {
+      foundComparisonEvidencePage = true;
+      break;
+    }
+    renderedComparisonAnswerOrder.push(...await page.evaluate(`Array.from(document.querySelectorAll('#canvas .qa-focus .panel--answer .sec h3'))
+      .map((heading) => heading.innerText.trim())`));
+    await next();
+  }
+  assert.deepEqual(renderedComparisonAnswerOrder, comparisonAnswerOrder,
+    "s143-q4 answer sections render in canonical order across their answer pages");
+  assert.equal(foundComparisonEvidencePage, true, "s143-q4 paired evidence follows the answer pages on its own page");
+  comparisonQa = await qaState();
+  assert.ok((await answerPanelText()).trim(), "s143-q4 paired evidence page retains its linked answer");
+  assert.deepEqual(await page.evaluate(`Array.from(document.querySelectorAll('#canvas .qa-focus .panel--evidence .sec h3'))
+    .map((heading) => heading.innerText.trim())`), comparisonEvidenceOrder,
+  "s143-q4 evidence sections render on their own paired page");
+  await previous();
+  assert.equal((await evidencePanelText()).trim(), "", "s143-q4 backward navigation closes the evidence page");
+  assert.deepEqual(await page.evaluate(`Array.from(document.querySelectorAll('#canvas .qa-focus .panel--answer .sec h3'))
+    .map((heading) => heading.innerText.trim())`), [comparisonAnswerOrder.at(-1)],
+  "s143-q4 backward navigation restores the answer page before its evidence");
+  await page.send("Page.navigate", { url: comparisonBookmark });
+  comparisonQa = await until(async () => {
+    const state = await qaState();
+    return state.comparison && state.prompt === comparisonPairEntry.step.display_prompt && state.focus.trim() === "" ? state : null;
+  }, "s143-q4 bookmarked question URL restore");
+  assert.equal(comparisonQa.comparison, true, "s143-q4 bookmark restores the comparison shell");
+  assert.ok(comparisonQa.context.includes(comparisonPairEntry.step.display_prompt),
+    "s143-q4 bookmark restores the prompt in QA context");
+
+  // Canonical comparison with seven task items spans content pages. Exercise
+  // both directions in its QA shell without exporting the lesson deck here.
+  const longComparisonEntry = findStep("biyografi-akif-cozumleme-202-205", "s204-q1");
+  assert.equal(longComparisonEntry.step.layout, "comparison", "s204-q1 is a comparison layout");
+  assert.equal(longComparisonEntry.step.content.items.length, 7, "s204-q1 is the seven-item long comparison fixture");
+  await openStep("biyografi-akif-cozumleme-202-205", "s204-q1");
+  comparisonQa = await qaState();
+  assert.equal(comparisonQa.comparison, true, "s204-q1 opens in the comparison QA shell");
+  const longComparisonPages = comparisonQa.counter.match(/sayfa 1\/(\d+)/);
+  assert.ok(longComparisonPages && Number(longComparisonPages[1]) > 1,
+    "s204-q1 opening content is split across multiple pages");
+  await next();
+  comparisonQa = await qaState();
+  assert.ok(comparisonQa.counter.includes(`sayfa 2/${longComparisonPages[1]}`),
+    "s204-q1 advances to its second content page");
+  assert.equal(comparisonQa.focus.trim(), "", "s204-q1 keeps paginated task content in QA context");
+  await previous();
+  assert.ok((await qaState()).counter.includes(`sayfa 1/${longComparisonPages[1]}`),
+    "s204-q1 backward navigation restores its first content page");
+
+  // Exercise paired answer/evidence sequencing and reverse navigation for all
+  // production questions that author evidence alongside an answer.
+  const pairedQuestionCases = allQuestionCases.filter(({ step }) =>
+    step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length));
+  const sourcePairedQuestionCount = lessons.reduce((count, lesson) => count + lesson.steps.filter((step) =>
+    step.layout === "question" && step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length)).length, 0);
+  assert.equal(pairedQuestionCases.length, sourcePairedQuestionCount,
+    "built and source catalogs contain the same number of paired-evidence question steps");
+  for (const [pairedIndex, { lesson, step, slide }] of pairedQuestionCases.entries()) {
+    await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
+    await until(async () => (await qaState()).prompt === step.prompt, `paired QA URL ${lesson.slug}/${step.id}`);
+    let evidence = "";
+    for (let index = 0; index < 48; index += 1) {
+      evidence = await evidencePanelText();
+      if (evidence.trim()) break;
+      await nextImmediately();
+    }
+    assert.ok(evidence.trim(), `${lesson.slug}/${step.id} advances from its question to paired evidence`);
+    assert.ok((await answerPanelText()).trim(), `${lesson.slug}/${step.id} keeps the linked answer beside evidence`);
+    await previous();
+    assert.equal((await evidencePanelText()).trim(), "",
+      `${lesson.slug}/${step.id} backward navigation closes the paired evidence page`);
+    assert.ok((await answerPanelText()).trim(), `${lesson.slug}/${step.id} backward navigation restores its answer`);
+    if ((pairedIndex + 1) % 5 === 0) {
+      console.log(`[sunum-web] Paired evidence sweep progress: ${pairedIndex + 1}/${pairedQuestionCases.length}`);
+    }
+  }
+
+  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  await page.evaluate("document.startViewTransition = undefined");
+  const fallbackPrompt = await page.evaluate(`(() => {
+    document.querySelector('#dock [data-action=next]').click();
+    const prompt = document.querySelector('#canvas .slide--qa-modern .qa-context > .prompt');
+    return {
+      apiUnavailable: typeof document.startViewTransition !== 'function',
+      hasEnterClass: prompt?.classList.contains('qa-prompt-enter') ?? false,
+      animationName: prompt ? getComputedStyle(prompt).animationName : null
+    };
+  })()`);
+  assert.equal(fallbackPrompt.apiUnavailable, true, "fallback case disables the native API in the harness");
+  assert.equal(fallbackPrompt.hasEnterClass, true, "API fallback adds the QA prompt enter class");
+  assert.equal(fallbackPrompt.animationName, "qa-prompt-enter", "API fallback runs the prompt enter animation");
+
+  await page.send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
+  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  await installQaTransitionProbe();
+  await clearQaTransitionCalls();
+  const reducedMotionPrompt = await page.evaluate(`(() => {
+    document.querySelector('#dock [data-action=next]').click();
+    const prompt = document.querySelector('#canvas .slide--qa-modern .qa-context > .prompt');
+    return {
+      matches: matchMedia('(prefers-reduced-motion: reduce)').matches,
+      hasEnterClass: prompt?.classList.contains('qa-prompt-enter') ?? false,
+      animationName: prompt ? getComputedStyle(prompt).animationName : null
+    };
+  })()`);
+  assert.equal(reducedMotionPrompt.matches, true, "harness emulates prefers-reduced-motion: reduce");
+  assert.equal(reducedMotionPrompt.hasEnterClass, false, "reduced motion does not add the fallback class");
+  assert.equal(reducedMotionPrompt.animationName, "none", "reduced motion disables prompt animation");
+  assert.equal((await qaTransitionCalls()).length, 0, "reduced motion does not start a view transition");
+  await page.send("Emulation.setEmulatedMedia", { features: [] });
+
+  // Verify visible focus stages at the three classroom viewport sizes. Vertical
+  // scrolling is a supported long-content state, so only horizontal clipping and
+  // a completely clipped stage are treated as failures.
+  for (const [width, height] of [[1920, 1080], [1280, 800], [1366, 768]]) {
+    await page.send("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: 1, mobile: false });
+    await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+    await next(); // Thinking
+    await next(); // Answer
+    const metrics = await qaViewportMetrics();
+    assert.equal(metrics.width, width, `QA viewport width is ${width}`);
+    assert.equal(metrics.height, height, `QA viewport height is ${height}`);
+    assert.equal(metrics.horizontalOverflow, false, `QA stage has no horizontal clipping at ${width}×${height}`);
+    assert.ok(metrics.focusText, `QA focus stage is populated at ${width}×${height}`);
+    assert.equal(metrics.focusStageVisible, true, `QA focus stage intersects the visible body at ${width}×${height}`);
+  }
+  await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
 
   let screen = await openStep("mektup", "s40-q5");
   assert.ok(screen.text.includes("Çalışma kâğıdı 1/2"), "ISSUE-105: worksheet question remains on the same slide");
@@ -712,13 +1905,137 @@ try {
   assert.deepEqual([...peerBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "peer-form download is a real DOCX ZIP package");
   assert.ok(peerBytes.length > 5000, "peer-form download has complete document content");
 
+  await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
+  const qaContentEntry = findStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  assert.equal(qaContentEntry.step.layout, "question", "s175-q1 is a production QA content fixture");
+  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  let visualQa = await qaState();
+  assert.equal(visualQa.modern, true, "s175-q1 browser screenshot uses the modern QA layout");
+  assert.equal(visualQa.focus.trim(), "", "s175-q1 browser screenshot shows its content view");
+  const qaContentScreenshot = await captureQaScreenshot("s175-q1 QA content");
+
+  const pairedVisualEntry = findStep("huzur-metni-anlayalim-175-176", "s176-q4");
+  const pairedVisualUnit = pairedVisualEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
+  assert.ok(pairedVisualUnit, "s176-q4 has a production answer/evidence unit for visual comparison");
+  await openStep("huzur-metni-anlayalim-175-176", "s176-q4");
+  await advanceUntilEvidenceSection(pairedVisualUnit.evidence_sections[0].section_key, "s176-q4 visual evidence");
+  visualQa = await qaState();
+  assert.equal(visualQa.modern, true, "s176-q4 browser screenshot uses the modern QA layout");
+  assert.ok((await answerPanelText()).trim(), "s176-q4 browser screenshot includes its paired answer");
+  assert.ok((await evidencePanelText()).trim(), "s176-q4 browser screenshot includes paired evidence");
+  const qaPairScreenshot = await captureQaScreenshot("s176-q4 paired answer/evidence");
+  const webQaScreenshots = [qaContentScreenshot, qaPairScreenshot];
+  const visualPptxTargets = webQaScreenshots.map(({ label, state }) => ({
+    label,
+    prompt: state.prompt,
+    context: state.context,
+    focus: state.focus,
+    answer: state.answer,
+    evidence: state.evidence,
+    bodyScrollTop: state.bodyScrollTop
+  }));
+
   await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
   await until(() => page.evaluate("!document.querySelector('#menu').hidden && Boolean(document.querySelector('#menu-export-pptx'))"), "PPTX export control in lesson menu");
+  await installQaTransitionProbe();
+  await clearQaTransitionCalls();
+  await page.evaluate(`(() => {
+    const probe = window.__qaPptxCaptureProbe = { qaCaptures: [], enterClassAttempts: [], visualCaptureCount: 0, visualMatches: [] };
+    const canvas = document.querySelector('#canvas');
+    const menu = document.querySelector('#menu');
+    probe.visualTargets = ${JSON.stringify(visualPptxTargets)};
+    const inspectCapture = (target) => {
+      if (menu?.getAttribute('aria-busy') !== 'true') return;
+      const prompt = target?.querySelector('.slide--qa-modern .qa-context > .prompt');
+      if (!prompt) return;
+      probe.qaCaptures.push({
+        text: prompt.textContent,
+        hasEnterClass: prompt.classList.contains('qa-prompt-enter'),
+        animationName: getComputedStyle(prompt).animationName,
+        viewTransitionName: getComputedStyle(prompt).viewTransitionName
+      });
+    };
+    const originalReplaceChildren = Element.prototype.replaceChildren;
+    Element.prototype.replaceChildren = function(...nodes) {
+      const result = originalReplaceChildren.apply(this, nodes);
+      if (this === canvas) inspectCapture(canvas);
+      return result;
+    };
+    const originalAdd = DOMTokenList.prototype.add;
+    DOMTokenList.prototype.add = function(...tokens) {
+      if (tokens.includes('qa-prompt-enter') && menu?.getAttribute('aria-busy') === 'true') {
+        probe.enterClassAttempts.push(true);
+      }
+      return originalAdd.apply(this, tokens);
+    };
+    const originalToBlob = HTMLCanvasElement.prototype.toBlob;
+    HTMLCanvasElement.prototype.toBlob = function(callback, ...args) {
+      if (this.width === 1920 && this.height === 1080 && menu?.getAttribute('aria-busy') === 'true') {
+        probe.visualCaptureCount += 1;
+        const prompt = canvas?.querySelector('.slide--qa-modern .qa-context > .prompt');
+        const target = prompt && probe.visualTargets.find((item) => item.prompt === prompt.innerText);
+        if (target) {
+          const context = canvas.querySelector('.slide--qa-modern .qa-context');
+          const focus = canvas.querySelector('.slide--qa-modern .qa-focus');
+          const state = {
+            prompt: prompt.innerText,
+            context: context?.innerText ?? '',
+            focus: focus?.innerText ?? '',
+            answer: focus?.querySelector('.panel--answer')?.innerText ?? '',
+            evidence: focus?.querySelector('.panel--evidence')?.innerText ?? '',
+            bodyScrollTop: canvas.querySelector('.slide__body')?.scrollTop ?? -1
+          };
+          if (Object.keys(state).every((key) => state[key] === target[key])) {
+            probe.visualMatches.push({ label: target.label, slideNumber: probe.visualCaptureCount, state });
+          }
+        }
+      }
+      return originalToBlob.call(this, callback, ...args);
+    };
+    probe.stop = () => {
+      Element.prototype.replaceChildren = originalReplaceChildren;
+      DOMTokenList.prototype.add = originalAdd;
+      HTMLCanvasElement.prototype.toBlob = originalToBlob;
+    };
+  })()`);
   await page.evaluate("document.querySelector('#menu-export-pptx').click()");
   const downloadedPptx = await until(() => {
     const file = fs.readdirSync(profile).find((name) => name.endsWith(".pptx"));
     return file ? path.join(profile, file) : null;
-  }, "visual PPTX download", 60000);
+  }, "visual PPTX download", 300000);
+  await until(() => page.evaluate("document.querySelector('#menu').getAttribute('aria-busy') !== 'true'"), "PPTX capture completion");
+  const pptxCaptureTransitions = await page.evaluate(`(() => {
+    const probe = window.__qaPptxCaptureProbe;
+    probe.stop();
+    return probe;
+  })()`);
+  assert.ok(pptxCaptureTransitions.qaCaptures.length > 0,
+    "PPTX export captured at least one QA prompt while its menu busy guard was active");
+  assert.ok(pptxCaptureTransitions.qaCaptures.every((capture) =>
+    !capture.hasEnterClass && capture.animationName === "none"),
+  "PPTX capture keeps QA prompt transition classes and CSS animation off");
+  assert.deepEqual(pptxCaptureTransitions.enterClassAttempts, [],
+    "PPTX capture never attempts to add the QA prompt fallback class");
+  assert.deepEqual(await qaTransitionCalls(), [],
+    "PPTX capture never starts a view transition");
+  assert.ok(pptxCaptureTransitions.visualCaptureCount > 10, "PPTX mapping counts each rendered slide PNG in capture order");
+  for (const webScreenshot of webQaScreenshots) {
+    const matches = pptxCaptureTransitions.visualMatches.filter((item) => item.label === webScreenshot.label);
+    assert.equal(matches.length, 1, `${webScreenshot.label} maps to exactly one PPTX PNG by its rendered QA content`);
+    const pptxPng = execFileSync("unzip", ["-p", downloadedPptx, `ppt/media/slide${matches[0].slideNumber}.png`], {
+      maxBuffer: 20 * 1024 * 1024
+    });
+    const pixelComparison = await comparePngPixels(webScreenshot.bytes, pptxPng);
+    // Report decoded-pixel differences without inventing a tolerance between the
+    // browser compositor and the exporter's separate SVG rasterization path.
+    console.log(`[sunum-web] Web/PPTX QA image comparison: ${JSON.stringify({
+      label: webScreenshot.label,
+      slideNumber: matches[0].slideNumber,
+      exactPixels: pixelComparison.differentPixels === 0,
+      ...pixelComparison
+    })}`);
+    assert.equal(pixelComparison.dimensionsMatch, true, `${webScreenshot.label} browser and PPTX PNG dimensions match`);
+  }
   const pptxBytes = fs.readFileSync(downloadedPptx);
   assert.deepEqual([...pptxBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "download is a PPTX ZIP package");
   assert.ok(pptxBytes.length > 50000, "download contains rendered slide images, not plain text only");
@@ -730,13 +2047,17 @@ try {
   } else {
     console.log("[sunum-web] Headless Chrome verified Theme 1 answer units, paired evidence, layout, and safe restore.");
   }
+  }
+}
 } finally {
   for (const client of clients) client.close();
   if (browser.exitCode === null) {
     browser.kill("SIGTERM");
     await Promise.race([new Promise((resolve) => browser.once("exit", resolve)), sleep(3000)]);
   }
-  if (server.exitCode === null) {
+  if (rasterAudit) {
+    await new Promise((resolve) => server.close(resolve));
+  } else if (server.exitCode === null) {
     server.kill("SIGTERM");
     await Promise.race([new Promise((resolve) => server.once("exit", resolve)), sleep(1000)]);
   }

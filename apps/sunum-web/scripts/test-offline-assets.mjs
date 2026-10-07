@@ -36,6 +36,13 @@ assert.ok(buildVersion, "app entry URL carries its build version");
 assert.ok(core.includes(appUrl), "the versioned app entry is precached");
 assert.ok(worker.includes(`sunum-${buildVersion}`), "service worker cache version matches the app build");
 
+const qaFontAsset = "assets/fonts/InterVariable.woff2";
+const sourceStyles = fs.readFileSync(path.join(sourceRoot, "styles.css"), "utf8");
+assert.ok(sourceStyles.includes('./assets/fonts/InterVariable.woff2'), "QA CSS references the local Inter variable font");
+assert.ok(fs.existsSync(path.join(sourceRoot, qaFontAsset)), "local Inter variable font exists in source assets");
+assert.ok(core.includes(qaFontAsset), "local Inter variable font is explicitly precached");
+assert.ok(fs.existsSync(path.join(distRoot, qaFontAsset)), "Inter variable font is copied to the production build");
+
 for (const request of builtGraph.requests) {
   assert.ok(core.includes(request), `local module dependency is precached: ${request}`);
 }
