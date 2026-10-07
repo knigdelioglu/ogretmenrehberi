@@ -28,6 +28,24 @@
   --explain-soft: #efe8f6;
   --card: #fffdf8;
   --shadow: 0 1px 0 rgba(27, 35, 48, 0.06), 0 6px 20px rgba(27, 35, 48, 0.06);
+  --modern-paper: #f7f8f5;
+  --modern-card: #ffffff;
+  --modern-ink: #182a35;
+  --modern-muted: #5b6b73;
+  --modern-rule: #d7e0df;
+  --modern-teal: #176d68;
+  --modern-teal-soft: #e2efeb;
+  --modern-blue: #5363a7;
+  --modern-blue-soft: #eceefa;
+  --modern-gold: #9a650f;
+  --modern-gold-soft: #f8efd9;
+  --modern-purple: #765494;
+  --modern-purple-soft: #f1eaf6;
+  --modern-card-shadow: 0 1px 3px rgba(24, 42, 53, 0.08);
+  --modern-font: "Inter", var(--font);
+  --modern-content-gap: 0.8;
+  --modern-content-max: 1420px;
+  --modern-title-max: 1500px;
   --font: "Segoe UI", "Noto Sans", "Ubuntu", "Helvetica Neue", "DejaVu Sans", Arial, sans-serif;
   --serif: "Iowan Old Style", "Palatino Linotype", "Noto Serif", "DejaVu Serif", Georgia, serif;
   color-scheme: light;
@@ -53,6 +71,20 @@
   --explain-soft: #271d33;
   --card: #1a1f26;
   --shadow: none;
+  --modern-paper: #151b20;
+  --modern-card: #1c252b;
+  --modern-ink: #edf3f1;
+  --modern-muted: #bdc9c7;
+  --modern-rule: #344248;
+  --modern-teal: #72c9ba;
+  --modern-teal-soft: #1c3734;
+  --modern-blue: #a7b1ff;
+  --modern-blue-soft: #242a43;
+  --modern-gold: #efbd68;
+  --modern-gold-soft: #362d1d;
+  --modern-purple: #d0a9ef;
+  --modern-purple-soft: #30243a;
+  --modern-card-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   color-scheme: dark;
 }
 
@@ -699,23 +731,155 @@ button {
   --structure-paper: #151b20;
 }
 
-/* Süreç akışları: yalnız mevcut numaralı listenin yazı ve vurgu renkleri */
+/* Semantik olarak ayrı görsel shell'ler, ortak modern tasarım tokenları */
+.slide--visual-process,
+.slide--visual-assessment,
+.slide--visual-reference {
+  --paper: var(--modern-paper);
+  --card: var(--modern-card);
+  --ink: var(--modern-ink);
+  --ink-2: var(--modern-muted);
+  --ink-3: #718087;
+  --rule: var(--modern-rule);
+  --accent: var(--modern-teal);
+  --accent-soft: var(--modern-teal-soft);
+  background: var(--modern-paper);
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+}
+
+.slide--visual-process { --process-ink: var(--modern-ink); }
+
+.slide--visual-process .slide__top,
+.slide--visual-process .slide__foot,
+.slide--visual-assessment .slide__top,
+.slide--visual-assessment .slide__foot,
+.slide--visual-reference .slide__top,
+.slide--visual-reference .slide__foot {
+  color: var(--modern-muted);
+  border-color: var(--modern-rule);
+}
+
+.slide--visual-process .tag,
+.slide--visual-assessment .tag,
+.slide--visual-reference .tag {
+  gap: 0;
+  padding: 9px 18px;
+  border: 1px solid var(--modern-rule);
+  border-radius: 999px;
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+  font-family: var(--modern-font);
+  font-size: calc(18px / var(--canvas-scale));
+  font-weight: 750;
+  letter-spacing: 0.09em;
+}
+
+.slide--visual-process .slide__body,
+.slide--visual-assessment .slide__body,
+.slide--visual-reference .slide__body {
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+}
+
+.slide--visual-process .body-grid {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+}
+
+.slide--visual-process .stack {
+  width: min(100%, var(--modern-title-max));
+  margin: auto;
+  gap: calc(var(--modern-content-gap) * 1em);
+}
+
+.slide--visual-process .prompt {
+  width: min(100%, var(--modern-title-max));
+  margin: 0 auto 0.08em;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  font-size: 1.7em;
+  font-weight: 680;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.slide--visual-assessment .body-grid,
+.slide--visual-reference .body-grid {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide--visual-assessment .stack,
+.slide--visual-reference .stack {
+  width: min(100%, var(--modern-content-max));
+  margin-inline: auto;
+  gap: calc(var(--modern-content-gap) * 1em);
+}
+
+.slide--visual-assessment .prompt,
+.slide--visual-reference .prompt {
+  width: min(100%, var(--modern-title-max));
+  margin: 0 0 0.08em;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  font-size: 1.7em;
+  font-weight: 680;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.slide--visual-assessment .prompt.is-small,
+.slide--visual-reference .prompt.is-small {
+  font-size: 1.02em;
+  line-height: 1.3;
+  color: var(--modern-muted);
+}
+
+.slide--visual-assessment .lead,
+.slide--visual-reference .lead {
+  color: var(--modern-muted);
+  font-family: var(--modern-font);
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.slide--visual-process .lead {
+  width: min(100%, var(--modern-content-max));
+  margin: 0 auto;
+  color: var(--modern-muted);
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
 .slide--visual-process ol.steps-list {
-  --process-ink: #182a35;
-  --process-teal: #176d68;
-  --process-teal-soft: #e2efeb;
-  --process-blue: #5363a7;
-  --process-blue-soft: #eceefa;
-  --process-gold: #9a650f;
-  --process-gold-soft: #f8efd9;
+  --process-teal: var(--modern-teal);
+  --process-teal-soft: var(--modern-teal-soft);
+  --process-blue: var(--modern-blue);
+  --process-blue-soft: var(--modern-blue-soft);
+  --process-gold: var(--modern-gold);
+  --process-gold-soft: var(--modern-gold-soft);
+  width: min(100%, var(--modern-content-max));
+  margin-inline: auto;
+  gap: 0.42em;
   color: var(--process-ink);
-  font-family: "Inter", var(--font);
+  font-family: var(--modern-font);
+  font-size: 0.9em;
+  line-height: 1.34;
+  text-align: left;
 }
 
 .slide--visual-process ol.steps-list .n {
   color: var(--process-teal);
   background: var(--process-teal-soft);
-  font-family: "Inter", var(--font);
+  font-family: var(--modern-font);
 }
 
 .slide--visual-process ol.steps-list li:nth-child(3n + 2) .n {
@@ -729,75 +893,59 @@ button {
 }
 
 :root[data-theme="dark"] .slide--visual-process ol.steps-list {
-  --process-ink: #edf3f1;
-  --process-teal: #72c9ba;
-  --process-teal-soft: #1c3734;
-  --process-blue: #a7b1ff;
-  --process-blue-soft: #242a43;
-  --process-gold: #efbd68;
-  --process-gold-soft: #362d1d;
+  --process-ink: var(--modern-ink);
 }
 
-/* Reference slaytları: tipografi ve renk; bölümlerin mevcut geometrisi korunur */
-.slide--visual-reference {
-  --reference-ink: #182a35;
-  --reference-muted: #5b6b73;
-  --reference-rule: #d7e0df;
-  --reference-teal: #176d68;
-  --reference-blue: #5363a7;
-  --reference-gold: #9a650f;
-  --reference-card: #ffffff;
-}
-
-.slide--visual-reference .prompt {
-  color: var(--reference-ink);
-  font-family: var(--serif);
-}
-
-.slide--visual-reference .prompt.is-small {
-  border-left-color: var(--reference-rule);
-}
-
-.slide--visual-reference .lead {
-  color: var(--reference-muted);
-  font-family: "Inter", var(--font);
-}
-
-.slide--visual-reference .source-links,
-.slide--visual-reference .source-links a {
-  font-family: "Inter", var(--font);
-}
-
-.slide--visual-reference .source-links a {
-  color: var(--reference-teal);
-}
-
+/* Reference içerik ve kart geometrisi korunur; yalnız modern yüzey dili uygulanır. */
 .slide--visual-reference .sections .sec {
-  color: var(--reference-ink);
-  background: var(--reference-card);
-  font-family: "Inter", var(--font);
+  min-width: 0;
+  border: 1px solid var(--modern-rule);
+  border-radius: 0.5em;
+  color: var(--modern-ink);
+  background: var(--modern-card);
+  box-shadow: var(--modern-card-shadow);
+  font-family: var(--modern-font);
+  line-height: 1.4;
 }
 
-.slide--visual-reference .sections .sec h3 {
-  color: var(--reference-teal);
+.slide--visual-reference .sections .sec h3 { color: var(--modern-teal); }
+.slide--visual-reference .sections .sec:nth-child(3n + 2) h3 { color: var(--modern-blue); }
+.slide--visual-reference .sections .sec:nth-child(3n) h3 { color: var(--modern-gold); }
+.slide--visual-reference .source-links,
+.slide--visual-reference .source-links a { font-family: var(--modern-font); }
+.slide--visual-reference .source-links a { color: var(--modern-teal); }
+
+.slide--visual-assessment .criteria {
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  line-height: 1.4;
+  text-align: left;
 }
 
-.slide--visual-reference .sections .sec:nth-child(3n + 2) h3 {
-  color: var(--reference-blue);
+.slide--visual-assessment .scale-form {
+  border: 1px solid var(--assessment-rule);
+  border-radius: 0.4em;
 }
 
-.slide--visual-reference .sections .sec:nth-child(3n) h3 {
-  color: var(--reference-gold);
+.slide--visual-assessment .scale-form__head {
+  font-family: var(--modern-font);
+  font-weight: 700;
 }
 
-:root[data-theme="dark"] .slide--visual-reference {
-  --reference-ink: #edf3f1;
-  --reference-muted: #bdc9c7;
-  --reference-rule: #344248;
-  --reference-teal: #72c9ba;
-  --reference-blue: #a7b1ff;
-  --reference-gold: #efbd68;
-  --reference-card: #1c252b;
+.slide--visual-assessment .scale-form__text {
+  min-width: 0;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  line-height: 1.35;
+  text-align: left;
+}
+
+.slide--visual-assessment .scale-form__text > span:last-child {
+  min-width: 0;
+}
+
+.slide--visual-assessment .scale-form__box {
+  border-radius: 0.2em;
 }
 
 .criteria {
@@ -825,16 +973,16 @@ button {
 
 /* Kontrol listeleri: QA metin/renk dili; mevcut checkbox ve liste geometrisi korunur */
 .slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) {
-  --criteria-ink: #182a35;
-  --criteria-teal: #176d68;
-  --criteria-blue: #5363a7;
-  --criteria-gold: #9a650f;
+  --criteria-ink: var(--modern-ink);
+  --criteria-teal: var(--modern-teal);
+  --criteria-blue: var(--modern-blue);
+  --criteria-gold: var(--modern-gold);
   --accent: var(--criteria-teal);
 }
 
 .slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) ul.criteria {
   color: var(--criteria-ink);
-  font-family: "Inter", var(--font);
+  font-family: var(--modern-font);
 }
 
 .slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) .criteria li:nth-child(3n + 2)::before {
@@ -866,10 +1014,10 @@ button {
 }
 
 :root[data-theme="dark"] .slide:not(.slide--qa-modern):has(ul.criteria):not(:has(.scale-form)) {
-  --criteria-ink: #edf3f1;
-  --criteria-teal: #72c9ba;
-  --criteria-blue: #a7b1ff;
-  --criteria-gold: #efbd68;
+  --criteria-ink: var(--modern-ink);
+  --criteria-teal: var(--modern-teal);
+  --criteria-blue: var(--modern-blue);
+  --criteria-gold: var(--modern-gold);
 }
 
 /* Ölçekli değerlendirme formu (Evet / Kısmen / Hayır) */
@@ -937,15 +1085,15 @@ button {
 
 /* Ölçekli değerlendirme formları: QA paleti, form geometrisi aynı kalır */
 .slide:not(.slide--qa-modern):has(.scale-form) {
-  --assessment-card: #ffffff;
-  --assessment-ink: #182a35;
-  --assessment-rule: #d7e0df;
-  --assessment-teal: #176d68;
-  --assessment-teal-soft: #e2efeb;
-  --assessment-blue: #5363a7;
-  --assessment-blue-soft: #eceefa;
-  --assessment-gold: #9a650f;
-  --assessment-gold-soft: #f8efd9;
+  --assessment-card: var(--modern-card);
+  --assessment-ink: var(--modern-ink);
+  --assessment-rule: var(--modern-rule);
+  --assessment-teal: var(--modern-teal);
+  --assessment-teal-soft: var(--modern-teal-soft);
+  --assessment-blue: var(--modern-blue);
+  --assessment-blue-soft: var(--modern-blue-soft);
+  --assessment-gold: var(--modern-gold);
+  --assessment-gold-soft: var(--modern-gold-soft);
 }
 
 .slide--qa-modern:has(.scale-form) {
@@ -968,7 +1116,7 @@ button {
 .slide:has(.scale-form) .scale-form__head {
   background: var(--assessment-teal-soft);
   color: var(--assessment-ink);
-  font-family: "Inter", var(--font);
+  font-family: var(--modern-font);
 }
 
 .slide:has(.scale-form) .scale-form__head > span:nth-child(2),
@@ -1599,22 +1747,22 @@ button {
 
 /* QA soru slaytları: 1920×1080 tuval içindeki özel görsel dil */
 .slide--qa-modern {
-  --qa-paper: #f7f8f5;
-  --qa-card: #ffffff;
-  --qa-ink: #182a35;
-  --qa-muted: #5b6b73;
-  --qa-rule: #d7e0df;
-  --qa-accent: #176d68;
-  --qa-accent-soft: #e2efeb;
-  --qa-answer: #176d68;
+  --qa-paper: var(--modern-paper);
+  --qa-card: var(--modern-card);
+  --qa-ink: var(--modern-ink);
+  --qa-muted: var(--modern-muted);
+  --qa-rule: var(--modern-rule);
+  --qa-accent: var(--modern-teal);
+  --qa-accent-soft: var(--modern-teal-soft);
+  --qa-answer: var(--modern-teal);
   --qa-answer-soft: #e6f2ed;
-  --qa-evidence: #5363a7;
-  --qa-evidence-soft: #eceefa;
-  --qa-guide: #9a650f;
-  --qa-guide-soft: #f8efd9;
-  --qa-explain: #765494;
-  --qa-explain-soft: #f1eaf6;
-  --qa-font: "Inter", var(--font);
+  --qa-evidence: var(--modern-blue);
+  --qa-evidence-soft: var(--modern-blue-soft);
+  --qa-guide: var(--modern-gold);
+  --qa-guide-soft: var(--modern-gold-soft);
+  --qa-explain: var(--modern-purple);
+  --qa-explain-soft: var(--modern-purple-soft);
+  --qa-font: var(--modern-font);
   --qa-display-font: var(--qa-font);
   --paper: var(--qa-paper);
   --card: var(--qa-card);
@@ -1638,21 +1786,21 @@ button {
 }
 
 :root[data-theme="dark"] .slide--qa-modern {
-  --qa-paper: #151b20;
-  --qa-card: #1c252b;
-  --qa-ink: #edf3f1;
-  --qa-muted: #bdc9c7;
-  --qa-rule: #344248;
-  --qa-accent: #72c9ba;
-  --qa-accent-soft: #1c3734;
-  --qa-answer: #72c9ba;
+  --qa-paper: var(--modern-paper);
+  --qa-card: var(--modern-card);
+  --qa-ink: var(--modern-ink);
+  --qa-muted: var(--modern-muted);
+  --qa-rule: var(--modern-rule);
+  --qa-accent: var(--modern-teal);
+  --qa-accent-soft: var(--modern-teal-soft);
+  --qa-answer: var(--modern-teal);
   --qa-answer-soft: #1b3431;
-  --qa-evidence: #a7b1ff;
-  --qa-evidence-soft: #242a43;
-  --qa-guide: #efbd68;
-  --qa-guide-soft: #362d1d;
-  --qa-explain: #d0a9ef;
-  --qa-explain-soft: #30243a;
+  --qa-evidence: var(--modern-blue);
+  --qa-evidence-soft: var(--modern-blue-soft);
+  --qa-guide: var(--modern-gold);
+  --qa-guide-soft: var(--modern-gold-soft);
+  --qa-explain: var(--modern-purple);
+  --qa-explain-soft: var(--modern-purple-soft);
   --ink-3: #94a29f;
 }
 
@@ -1698,13 +1846,13 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.8em;
+  gap: calc(var(--modern-content-gap) * 1em);
   width: 100%;
 }
 
 .slide--qa-modern .qa-context > .prompt {
   view-transition-name: qa-question;
-  width: min(100%, 1500px);
+  width: min(100%, var(--modern-title-max));
   font-size: 1.7em;
   line-height: 1.2;
   text-wrap: balance;
@@ -1734,7 +1882,7 @@ button {
 }
 
 .slide--qa-modern .qa-context > :not(.prompt) {
-  width: min(100%, 1420px);
+  width: min(100%, var(--modern-content-max));
   text-align: left;
 }
 

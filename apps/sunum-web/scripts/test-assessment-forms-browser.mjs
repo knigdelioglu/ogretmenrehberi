@@ -305,6 +305,7 @@ try {
       })));
       return {
         modernQa: slide.classList.contains('slide--qa-modern'),
+        modernAssessment: slide.classList.contains('slide--visual-assessment'),
         columns: headStyle.gridTemplateColumns.split(' ').length,
         rowColumns: [...new Set(rows.map((row) => getComputedStyle(row).gridTemplateColumns.split(' ').length))],
         headerCells: headColumns.length,
@@ -361,9 +362,9 @@ try {
   assert.deepEqual(scaleStyle.boxBorders, ["rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)"],
     "s214-eval response cells use the matching scale accents");
   assert.ok(scaleStyle.removedModifierRules > 0, "the scale-only modifier rules can be isolated for the baseline geometry comparison");
-  if (scaleStyle.modernQa) {
+  if (scaleStyle.modernQa || scaleStyle.modernAssessment) {
     assert.match(scaleStyle.withoutModifier.headerFont, /^Inter(?:,|$)/,
-      "QA typography remains active when scale-form modifiers are removed");
+      "the shared modern shell keeps Inter when scale-form modifiers are removed");
   } else {
     assert.doesNotMatch(scaleStyle.withoutModifier.headerFont, /^Inter(?:,|$)/,
       "baseline geometry capture disables the scale-only font modifier");

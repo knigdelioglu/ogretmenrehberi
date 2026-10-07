@@ -6,6 +6,10 @@ import { createLessonPptx, pptxFilename } from "./pptx-export.js";
 import { assessmentDownloads } from "./menu-files.js";
 import { usesModernQuestionLayout } from "./qa-modern.js";
 
+function usesModernQuestionShell(step) {
+  return !["process", "assessment", "reference"].includes(step?.layout) && usesModernQuestionLayout(step);
+}
+
 const DATA_FILE = "__DATA_FILE__";
 const BUILD = "__BUILD_VERSION__";
 const LS = {
@@ -252,7 +256,7 @@ function next({ skipReveals = false } = {}) {
     }
     if (state.reveal < reveals.length) {
       const enterFirstQaReveal =
-        usesModernQuestionLayout(step) &&
+        usesModernQuestionShell(step) &&
         startsOnContent &&
         state.part === layerPages(step, "content").length - 1;
       const reveal = (qaPromptEnter = false) => {
@@ -293,7 +297,7 @@ function prev({ skipReveals = false } = {}) {
       return;
     }
     if (state.reveal > 0) {
-      const enterQaContent = usesModernQuestionLayout(step) && state.reveal === 1 && state.part === 0;
+      const enterQaContent = usesModernQuestionShell(step) && state.reveal === 1 && state.part === 0;
       const showPrevious = (qaPromptEnter = false) => {
         state.reveal -= 1;
         const previousKey = state.reveal > 0 ? activeReveals(step)[state.reveal - 1] : "content";
@@ -1219,7 +1223,7 @@ function stepSlide(lesson, step) {
   const viewKey = view.key;
   const page = view.page;
   const a = step.answer;
-  const modernQuestionLayout = usesModernQuestionLayout(step);
+  const modernQuestionLayout = usesModernQuestionShell(step);
   const isVocab = step.layout === "vocabulary";
   const fresh = (k) => state.fresh === k;
   const viewNames = {
@@ -1244,7 +1248,7 @@ function stepSlide(lesson, step) {
     { class: "slide__top" },
     modernQuestionLayout
       ? questionBadge
-      : h("span", { class: "tag" }, taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
+      : h("span", { class: "tag" }, step.layout === "process" ? "Süreç" : step.layout === "assessment" ? "Değerlendirme" : step.layout === "reference" ? "Bilgi" : taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
     h(
       "span",
       { class: "where", title: modernQuestionLayout
@@ -1419,8 +1423,9 @@ function stepSlide(lesson, step) {
     : "";
   const structureClass = step.layout === "structure" ? " slide--visual-structure" : "";
   const processClass = step.layout === "process" ? " slide--visual-process" : "";
+  const assessmentClass = step.layout === "assessment" ? " slide--visual-assessment" : "";
   const referenceClass = step.layout === "reference" ? " slide--visual-reference" : "";
-  return h("div", { class: `slide${qaClasses}${structureClass}${processClass}${referenceClass}` }, top, h("div", { class: "slide__body" }, bodyInner), foot);
+  return h("div", { class: `slide${qaClasses}${structureClass}${processClass}${assessmentClass}${referenceClass}` }, top, h("div", { class: "slide__body" }, bodyInner), foot);
 }
 
 // ============================================================

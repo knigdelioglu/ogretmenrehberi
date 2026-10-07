@@ -559,18 +559,28 @@ presentationBrowserSuite: {
       { slug: "tema-2-degerlendirme", id: "s159-q7", layout: "structure", maxStages: 5 },
       { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s256-elements", layout: "structure", maxStages: 5 },
       { slug: "mektup", id: "s50-q1", layout: "structure", maxStages: 7 },
-      { slug: "karagoz", id: "s35-q1", layout: "assessment", maxStages: 5 },
+      { slug: "karagoz", id: "s35-q1", layout: "assessment", maxStages: 5, qaModern: false },
       { slug: "kemal-tahir-mulakat-210-214", id: "s214-eval", layout: "assessment", maxStages: 0, qaModern: false },
+      { slug: "kemal-tahir-mulakat-210-214", id: "s214-rubric", layout: "reference", maxStages: 0, qaModern: false },
+      { slug: "yazma", id: "s78-self", layout: "assessment", maxStages: 3, qaModern: false },
+      { slug: "asik-atismasi", id: "s139-checklist", layout: "assessment", maxStages: 2, qaModern: false },
+      { slug: "tema-2-girisi", id: "s84-overview", layout: "reference", maxStages: 2, qaModern: false },
+      { slug: "tema-2-girisi", id: "s85-theme-presentation", layout: "reference", maxStages: 0, qaModern: false },
+      { slug: "karagoz", id: "s26-reference", layout: "reference", maxStages: 2, qaModern: false },
+      { slug: "tema-3-girisi", id: "s160-overview", layout: "reference", maxStages: 2, qaModern: false },
+      { slug: "tema-girisi-236-242", id: "s237-threshold", layout: "reference", maxStages: 2, qaModern: false },
+      { slug: "yazma", id: "s78-rubric", layout: "reference", maxStages: 2, qaModern: false },
+      { slug: "huzur-okuma-cemberi-179-181", id: "s181-game-qr", layout: "reference", maxStages: 0, qaModern: false },
       { slug: "mektup", id: "s39-q3", layout: "vocabulary", maxStages: 6 },
       { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", maxStages: 7 },
       { slug: "anadolu-insani-284-290", id: "s287-vocab", layout: "vocabulary", maxStages: 5 },
-      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s258-grammar-apply", layout: "process", maxStages: 7 },
+      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s258-grammar-apply", layout: "process", maxStages: 7, qaModern: false },
       { slug: "konusma", id: "s53-q1", layout: "question", maxStages: 4 },
       { slug: "konusma", id: "s54-plan", layout: "structure", maxStages: 5 },
       { slug: "konusma", id: "s55-content", layout: "structure", maxStages: 5 },
-      { slug: "konusma", id: "s57-performance-2", layout: "process", maxStages: 5 },
-      { slug: "konusma", id: "s58-self-assessment-2", layout: "assessment", maxStages: 4 },
-      { slug: "konusma", id: "s58-feedback", layout: "assessment", maxStages: 4 }
+      { slug: "konusma", id: "s57-performance-2", layout: "process", maxStages: 5, qaModern: false },
+      { slug: "konusma", id: "s58-self-assessment-2", layout: "assessment", maxStages: 4, qaModern: false },
+      { slug: "konusma", id: "s58-feedback", layout: "assessment", maxStages: 4, qaModern: false }
     ];
     const requestedIds = process.env.QA_VISUAL_AUDIT_ONLY?.split(",").map((id) => id.trim()).filter(Boolean);
     const selectedCases = requestedIds ? fixtures.filter((fixture) => requestedIds.includes(fixture.id)) : fixtures;
@@ -913,6 +923,30 @@ presentationBrowserSuite: {
     expectVisualClasses(visual, ["slide--visual-reference"], "s26-reference previous-step restore after content pages");
     await setTeacherRevealMode(false);
 
+    const selfAssessment = findStep("yazma", "s78-self");
+    assert.equal(selfAssessment.step.layout, "assessment", "s78-self remains an assessment layout");
+    assert.equal(selfAssessment.step.answer, null, "s78-self does not acquire answer data");
+    const selfAssessmentOpened = await openStep("yazma", "s78-self");
+    visual = await visualLayoutState();
+    expectVisualClasses(visual, ["slide--visual-assessment"], "yazma/s78-self");
+    const assessmentMarkup = await page.evaluate(`(() => ({
+      qa: Boolean(document.querySelector('#canvas .slide--qa-modern')),
+      focus: Boolean(document.querySelector('#canvas .qa-focus')),
+      checklistRows: document.querySelectorAll('#canvas .criteria li').length,
+      scaleRows: document.querySelectorAll('#canvas .scale-form__row').length,
+      label: document.querySelector('#canvas .slide__top .tag')?.childNodes[0]?.textContent.trim(),
+      titleAlign: getComputedStyle(document.querySelector('#canvas .prompt')).textAlign,
+      titleFont: getComputedStyle(document.querySelector('#canvas .prompt')).fontFamily
+    }))()`);
+    assert.equal(assessmentMarkup.qa, false, "assessment stays outside the QA-modern shell");
+    assert.equal(assessmentMarkup.focus, false, "assessment does not gain a QA answer-focus region");
+    assert.ok(assessmentMarkup.checklistRows > 0, "s78-self retains its checklist rows");
+    assert.ok(assessmentMarkup.scaleRows > 0, "s78-self retains its Evet/Kısmen/Hayır scale rows");
+    assert.equal(assessmentMarkup.label, "Değerlendirme", "assessment uses its semantic badge label");
+    assert.equal(assessmentMarkup.titleAlign, "left", "assessment title remains left aligned");
+    assert.match(assessmentMarkup.titleFont, /^\s*["']?Inter["']?(?:\s*,|$)/i, "assessment title uses Inter");
+    assert.ok(selfAssessmentOpened.text.includes(selfAssessment.step.display_prompt), "s78-self keeps its existing prompt content");
+
     for (const fixture of [
       { slug: "dinleme-izleme", id: "s64-listen", layout: "process", key: "answer" },
       { slug: "huzur-okuma", id: "s170-reading", layout: "reference", key: "answer" }
@@ -942,14 +976,14 @@ presentationBrowserSuite: {
       { slug: "mektup", id: "s40-q5", layout: "structure", classes: ["slide--visual-structure"] },
       { slug: "asik-atismasi", id: "s143-q4", layout: "comparison", classes: [] },
       { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", classes: [] },
-      { slug: "konusma", id: "s58-feedback", layout: "assessment", classes: [] }
+      { slug: "konusma", id: "s58-feedback", layout: "assessment", classes: ["slide--visual-assessment"] }
     ]) {
       const entry = await openStep(fixture.slug, fixture.id);
       assert.equal(entry.step.layout, fixture.layout, `${fixture.slug}/${fixture.id} control fixture has its expected layout`);
       visual = await visualLayoutState();
       expectVisualClasses(visual, fixture.classes, `${fixture.slug}/${fixture.id} control fixture`);
     }
-    console.log("[sunum-web] Focused process/reference class smoke passed: route classes, navigation/reveal order, DOM shape, and other-layout isolation.");
+    console.log("[sunum-web] Focused visual-layout class smoke passed: process, assessment and reference shell isolation, pagination/reveal order, and existing content structures.");
     break presentationBrowserSuite;
   }
 
@@ -1256,8 +1290,10 @@ presentationBrowserSuite: {
   assert.equal((await evidencePanelText()).trim(), "", "s100-q1 backward navigation closes its evidence page");
   const s58QaCandidate = findStep("konusma", "s58-feedback");
   assert.equal(s58QaCandidate.step.layout, "assessment", "s58-feedback keeps its canonical assessment renderer");
+  assert.equal(usesModernQuestionLayout(s58QaCandidate.step), false,
+    "s58-feedback source fixture does not synthesize QA answer eligibility");
   await openStep("konusma", "s58-feedback");
-  assert.equal((await qaState()).modern, true, "s58-feedback source-limited answer uses the QA-modern shell");
+  assert.equal((await qaState()).modern, false, "s58-feedback stays outside the QA-modern shell by layout policy");
 
   // The encrypted runtime catalog is the source of truth for reveal eligibility.
   // s155-q2 has five answer-choice items, so its actual content view spans two parts.
@@ -1355,15 +1391,17 @@ presentationBrowserSuite: {
     "built and source catalogs contain the same number of prompt-bearing answer-reveal steps");
   const questionSweep = [];
   for (const { lesson, step, slide } of allQuestionCases) {
+    const qaShellEligible = usesModernQuestionLayout(step) &&
+      !["process", "assessment", "reference"].includes(step.layout);
     const hash = `#/${lesson.slug}/${slide}`;
     await page.send("Page.navigate", { url: `${root}/${hash}` });
     let opened;
     try {
       opened = await until(async () => {
         const state = await qaState();
-        const isReady = usesModernQuestionLayout(step)
+        const isReady = qaShellEligible
           ? state.prompt === step.prompt
-          : (await bodyText()).includes(step.prompt);
+          : !state.modern && (await bodyText()).includes(step.prompt);
         return isReady ? state : null;
       }, `question URL restore ${lesson.slug}/${step.id}`);
     } catch (error) {
@@ -1375,7 +1413,9 @@ presentationBrowserSuite: {
     assert.ok((await bodyText()).includes(step.prompt), `${lesson.slug}/${step.id} opens its authored prompt`);
     assert.ok((await page.evaluate("document.querySelector('#canvas .slide') !== null")),
       `${lesson.slug}/${step.id} renders a slide from its URL`);
-    if (usesModernQuestionLayout(step)) {
+    assert.equal(opened.modern, qaShellEligible,
+      `${lesson.slug}/${step.id} (layout ${step.layout ?? "default"}) shell policy keeps process, assessment and reference layouts out of QA-modern`);
+    if (qaShellEligible) {
       assert.equal(opened.modern, true, `${lesson.slug}/${step.id} opens in modern QA layout`);
       assert.equal(opened.prompt, step.prompt, `${lesson.slug}/${step.id} keeps its prompt in QA context`);
       assert.equal(opened.focus.trim(), "", `${lesson.slug}/${step.id} starts with an empty QA focus`);
@@ -1517,8 +1557,18 @@ presentationBrowserSuite: {
   assert.equal(pairedQuestionCases.length, sourcePairedQuestionCount,
     "built and source catalogs contain the same number of paired-evidence answer-reveal steps");
   for (const [pairedIndex, { lesson, step, slide }] of pairedQuestionCases.entries()) {
+    const qaShellEligible = usesModernQuestionLayout(step) &&
+      !["process", "assessment", "reference"].includes(step.layout);
     await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
-    await until(async () => (await qaState()).prompt === step.prompt, `paired QA URL ${lesson.slug}/${step.id}`);
+    await until(async () => {
+      const state = await qaState();
+      return qaShellEligible ? state.prompt === step.prompt : !state.modern && (await bodyText()).includes(step.prompt);
+    }, `paired answer URL ${lesson.slug}/${step.id}`);
+    if (!qaShellEligible) {
+      const openingState = await qaState();
+      assert.equal(openingState.modern, false,
+        `${lesson.slug}/${step.id} keeps its authored ${step.layout} layout outside QA-modern`);
+    }
     let evidence = "";
     for (let index = 0; index < 48; index += 1) {
       evidence = await evidencePanelText();
