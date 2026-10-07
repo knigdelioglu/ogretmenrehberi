@@ -553,6 +553,60 @@ function renderSections(sections, sectionsLayout = "grid", { hideValues = false 
   );
 }
 
+function renderProcessSupportSections(step, sections, sectionsLayout = "grid") {
+  if (step.id !== "s111-card-technique" || !sections?.["1. Kart Renkleri ve Değerlendirme Ölçütleri"]) {
+    return renderSections(sections, sectionsLayout);
+  }
+
+  const entries = Object.entries(sections);
+  const criteriaKey = "1. Kart Renkleri ve Değerlendirme Ölçütleri";
+  const cardItems = String(sections[criteriaKey] ?? "")
+    .split(/\n+/)
+    .map((line) => line.replace(/^\s*[•*-]\s*/, "").trim())
+    .filter(Boolean)
+    .map((line) => {
+      const separator = line.indexOf(":");
+      if (separator < 0) return null;
+      const label = line.slice(0, separator).trim();
+      let description = line.slice(separator + 1).trim();
+      let note = "";
+      const example = description.match(/\s*\(Örn:\s*([\s\S]*?)\)\.?$/i);
+      if (example) {
+        note = `Örnek: ${example[1]}`;
+        description = description.slice(0, example.index).trim();
+      } else {
+        const detail = description.match(/\s*(Örneğin,\s*[\s\S]*)$/i);
+        if (detail) {
+          note = detail[1];
+          description = description.slice(0, detail.index).trim();
+        }
+      }
+      return { label, description, note };
+    });
+
+  if (cardItems.length !== 3 || cardItems.some((item) => !item)) return renderSections(sections, sectionsLayout);
+
+  const columns = sectionsLayout === "stacked" ? 1 : Math.min(columnsFor(entries.length), entries.length);
+  return h(
+    "div",
+    { class: `sections${sectionsLayout === "stacked" ? " sections--stacked" : ""}`, style: `--cols:${columns}` },
+    entries.map(([key, value]) => h(
+      "article",
+      { class: `sec${key === criteriaKey ? " sec--process-card-criteria" : ""}` },
+      h("h3", {}, humanKey(key)),
+      key === criteriaKey
+        ? h("div", { class: "process-card-items" }, cardItems.map((item) => h(
+          "article",
+          { class: "process-card-item" },
+          h("h4", {}, item.label),
+          h("p", {}, item.description),
+          item.note ? h("p", { class: "process-card-item__note" }, item.note) : null
+        )))
+        : renderValue(value)
+    ))
+  );
+}
+
 function textWeight(value) {
   if (typeof value === "string") return value.length;
   if (Array.isArray(value)) return value.reduce((total, item) => total + textWeight(item), 0);
@@ -1366,7 +1420,7 @@ function stepSlide(lesson, step) {
         panel(
           "answer",
           answerLabel(step, lesson.theme),
-          [page.answerText ? h("p", {}, page.answerText) : null, renderSections(page.sections, step.sections_layout)],
+          [page.answerText ? h("p", {}, page.answerText) : null, renderProcessSupportSections(step, page.sections, step.sections_layout)],
           fresh("answer")
         )
       );

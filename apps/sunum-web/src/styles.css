@@ -937,6 +937,47 @@ button {
   background: var(--process-gold-soft);
 }
 
+.slide--visual-process .sec--process-card-criteria {
+  text-align: left;
+}
+
+.slide--visual-process .process-card-items {
+  display: grid;
+  gap: 0.42em;
+  margin-top: 0.5em;
+}
+
+.slide--visual-process .process-card-item {
+  min-width: 0;
+  padding: 0.48em 0.62em;
+  border: 1px solid var(--modern-rule);
+  border-radius: 0.35em;
+  background: var(--modern-paper);
+  text-align: left;
+}
+
+.slide--visual-process .process-card-item h4 {
+  margin: 0 0 0.16em;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  font-size: 0.72em;
+  font-weight: 720;
+  line-height: 1.3;
+}
+
+.slide--visual-process .process-card-item p {
+  color: var(--modern-ink);
+  font-size: 0.58em;
+  font-weight: 450;
+  line-height: 1.38;
+}
+
+.slide--visual-process .process-card-item .process-card-item__note {
+  margin-top: 0.18em;
+  color: var(--modern-muted);
+  font-size: 0.5em;
+}
+
 :root[data-theme="dark"] .slide--visual-process ol.steps-list {
   --process-ink: var(--modern-ink);
 }

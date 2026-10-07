@@ -560,6 +560,7 @@ presentationBrowserSuite: {
       { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s256-elements", layout: "structure", maxStages: 5 },
       { slug: "mektup", id: "s50-q1", layout: "structure", maxStages: 7 },
       { slug: "ogulla-bulusma", id: "s106-discussion", layout: "process", maxStages: 1, expectedItems: 4, qaModern: false },
+      { slug: "eski-istanbul", id: "s111-card-technique", layout: "process", maxStages: 2, qaModern: false },
       { slug: "yazma", id: "s77-feedback", layout: "process", maxStages: 3, expectedItems: 3, qaModern: false },
       { slug: "karagoz", id: "s17-process", layout: "process", maxStages: 0, expectedItems: 3, shortTitle: true, qaModern: false },
       { slug: "tema-2-yazma", id: "s153-feedback", layout: "process", maxStages: 3, wrappedItem: true, qaModern: false },
@@ -728,11 +729,39 @@ presentationBrowserSuite: {
       await capture(fixture, "opening");
       if (fixture.maxStages) {
         let traversed = 0;
+        let supportCardsCaptured = false;
         for (let i = 1; i <= fixture.maxStages; i++) {
           await next();
           const stage = await inspect();
           if (!stage.prompt || stage.prompt !== entry.step.display_prompt) break;
           if (fixture.layout === "process") assertProcessMetrics(stage, fixture, `page ${i + 1}`);
+          if (fixture.id === "s111-card-technique" && stage.process?.bodyText.includes("Kart Renkleri ve Değerlendirme Ölçütleri")) {
+            const supportCards = await page.evaluate(`(() => {
+              const items = [...document.querySelectorAll('.process-card-item')];
+              const rect = (node) => { const box = node.getBoundingClientRect(); return {x:box.x,y:box.y,width:box.width,height:box.height,right:box.right,bottom:box.bottom}; };
+              return {
+                items: items.map((item) => ({title:item.querySelector('h4')?.innerText || '', text:item.innerText, rect:rect(item)})),
+                notes: [...document.querySelectorAll('.process-card-item__note')].map((node) => node.innerText),
+                section: rect(document.querySelector('.sec--process-card-criteria')),
+                panel: rect(document.querySelector('.panel--answer')),
+                body: (() => { const node=document.querySelector('.slide__body'); return {clientWidth:node.clientWidth,scrollWidth:node.scrollWidth,clientHeight:node.clientHeight,scrollHeight:node.scrollHeight,overflowing:node.classList.contains('is-overflowing')}; })()
+              };
+            })()`);
+            assert.equal(supportCards.items.length, 3, "s111 support renders three separate card-type blocks");
+            assert.match(supportCards.items[0].title, /Mavi Kart \(Katılıyorum\)/, "s111 first block identifies the blue card in text");
+            assert.match(supportCards.items[1].title, /Kırmızı Kart \(Katılmıyorum\)/, "s111 second block identifies the red card in text");
+            assert.match(supportCards.items[2].title, /Kahverengi Kart \(Kararsızım \/ Dolaylı İlişki\)/, "s111 third block identifies the brown card in text");
+            assert.equal(supportCards.items[0].rect.x, supportCards.items[1].rect.x, "s111 card blocks share a left axis");
+            assert.equal(supportCards.items[1].rect.x, supportCards.items[2].rect.x, "s111 card blocks share a left axis");
+            assert.ok(supportCards.items[0].rect.y < supportCards.items[1].rect.y && supportCards.items[1].rect.y < supportCards.items[2].rect.y,
+              "s111 card blocks stack as distinct rows");
+            assert.ok(supportCards.notes.length >= 2, "s111 examples and added detail appear as secondary notes");
+            assert.ok(supportCards.panel && supportCards.section && supportCards.panel.y < supportCards.section.y,
+              "s111 support panel and inner card hierarchy are visible");
+            assert.ok(supportCards.body.scrollWidth <= supportCards.body.clientWidth + 1, "s111 support has no horizontal overflow");
+            assert.equal(supportCards.body.overflowing, false, "s111 support fits vertically at 1920×1080 without overflow scrolling");
+            supportCardsCaptured = true;
+          }
           if (fixture.qaModern !== false && stage.focusText.trim()) {
             assert.equal(stage.compact, true, `${fixture.id} compacts the prompt when focus content opens`);
             assert.ok(stage.bodyMetrics?.scrollWidth <= stage.bodyMetrics?.clientWidth + 1, `${fixture.id} focus content has no horizontal body overflow`);
@@ -742,6 +771,7 @@ presentationBrowserSuite: {
           await capture(fixture, `reveal-${i}`);
           traversed++;
         }
+        if (fixture.id === "s111-card-technique") assert.equal(supportCardsCaptured, true, "s111 audit reaches the card-criteria support panel");
         for (let i = traversed; i > 0; i--) await previous();
         await capture(fixture, "back-to-opening");
       }
