@@ -2082,8 +2082,9 @@ presentationBrowserSuite: {
   assert.equal(await page.evaluate("document.querySelectorAll('#canvas .content-images img').length"), 4, "ISSUE-098 four source images render");
   assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .content-images img')).every(image => image.naturalWidth > 100)"), true, "ISSUE-098 all source images load");
   screen = await openStep("degerlendirme-303-307", "s307-q11");
-  assert.ok(screen.text.includes("Elif, yaptığı araştırmalar") && screen.text.includes("A) Televizyon") && screen.text.includes("E) İnternet"), "ISSUE-099 full question and choices are visible before the answer");
-  assert.ok(!screen.text.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
+  screen = await advanceUntil((text) => text.includes("A) Televizyon") && text.includes("E) İnternet"), "ISSUE-099 answer choices before answer", 4);
+  assert.ok(screen.includes("Elif, yaptığı araştırmalar") && screen.includes("A) Televizyon") && screen.includes("E) İnternet"), "ISSUE-099 full question and choices are visible before the answer");
+  assert.ok(!screen.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
   assert.ok((await advanceUntil((text) => text.includes("Doğru seçenek: B"), "s307 correct option")).includes("Doğru seçenek: B"),
     "ISSUE-099 correct option opens after the task");
   screen = await openStep("degerlendirme-303-307", "s307-q12");

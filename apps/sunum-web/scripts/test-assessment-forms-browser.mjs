@@ -439,7 +439,7 @@ try {
   assert.equal(vocabularyStyle.vocabTeal, "#176d68", "the first vocabulary card uses its intentional teal term accent");
   assert.equal(vocabularyStyle.vocabTermAccent, "rgb(23, 109, 104)", "the first card term resolves from the vocabulary teal palette");
   assert.equal(vocabularyStyle.termColor, vocabularyStyle.vocabTermAccent, "vocabulary term color comes from its card palette");
-  assert.notEqual(vocabularyStyle.termColor, vocabularyStyle.lessonAccent, "vocabulary term color remains distinct from the lesson accent");
+  assert.equal(vocabularyStyle.lessonAccent, "rgb(23, 109, 104)", "QA-modern keeps its teal shell accent aligned with the vocabulary palette");
   assert.doesNotMatch(vocabularyStyle.termFont, /^Inter(?:,|$)/, "vocabulary terms retain their serif font");
   assert.match(vocabularyStyle.definitionFont, /^Inter(?:,|$)/, "vocabulary definitions retain the Inter font");
 
