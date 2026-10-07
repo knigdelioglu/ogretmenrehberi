@@ -2403,8 +2403,7 @@ presentationBrowserSuite: {
       if (this.width === 1920 && this.height === 1080 && menu?.getAttribute('aria-busy') === 'true') {
         probe.visualCaptureCount += 1;
         const prompt = canvas?.querySelector('.slide--qa-modern .qa-context > .prompt');
-        const target = prompt && probe.visualTargets.find((item) => item.prompt === prompt.innerText);
-        if (target) {
+        if (prompt) {
           const context = canvas.querySelector('.slide--qa-modern .qa-context');
           const focus = canvas.querySelector('.slide--qa-modern .qa-focus');
           const state = {
@@ -2415,7 +2414,12 @@ presentationBrowserSuite: {
             evidence: focus?.querySelector('.panel--evidence')?.innerText ?? '',
             bodyScrollTop: canvas.querySelector('.slide__body')?.scrollTop ?? -1
           };
-          if (Object.keys(state).every((key) => state[key] === target[key])) {
+          // A prompt appears in multiple export layers for the same question.
+          // Select the visual target by its full rendered state, not the first
+          // target with the same prompt (for example, prompt-only vs. answer/evidence).
+          const target = probe.visualTargets.find((item) => item.prompt === state.prompt &&
+            Object.keys(state).every((key) => state[key] === item[key]));
+          if (target) {
             probe.visualMatches.push({ label: target.label, slideNumber: probe.visualCaptureCount, state });
           }
         }
