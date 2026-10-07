@@ -19,6 +19,7 @@ const root = `http://127.0.0.1:${port}`;
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "sunum-web-cdp-"));
 const rasterAudit = process.env.PPTX_RASTER_AUDIT === "1";
 const qaVisualAudit = process.env.QA_VISUAL_AUDIT === "1";
+const paginationGeometryAudit = process.env.PAGINATION_GEOMETRY_AUDIT === "1";
 const server = rasterAudit ? http.createServer((request, response) => {
   const distDir = path.join(appRoot, "dist");
   const urlPath = decodeURIComponent(new URL(request.url, root).pathname);
@@ -544,6 +545,258 @@ try {
   }
 
 presentationBrowserSuite: {
+  if (paginationGeometryAudit) {
+    await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
+    await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
+    const targetLayouts = new Set(["process", "assessment", "reference", "structure", "comparison"]);
+    const candidates = lessons.flatMap((lesson) => lesson.steps.map((step, index) => {
+      const content = step.content || {};
+      const items = Array.isArray(content.items) ? content.items : [];
+      const sections = Array.isArray(content.sections) ? content.sections : [];
+      const contentWeight = items.reduce((total, item) => total + String(item).length, 0) +
+        sections.reduce((total, section) => total + String(section.title || "").length + String(section.body || "").length, 0);
+      const answer = step.answer || {};
+      const answerSections = answer.answer_sections || {};
+      const answerWeight = String(answer.answer || "").length + JSON.stringify(answerSections).length +
+        (answer.evidence_quotes || []).reduce((total, quote) => total + String(quote).length, 0);
+      const contentMayPaginate = items.length > (content.scale?.length ? 6 : 4) || sections.length > 2 || contentWeight > 850;
+      const answerMayPaginate = (step.presentation?.web?.units?.length || 0) > 1 ||
+        Object.keys(answerSections).length > 2 || answerWeight > 760 ||
+        (answer.evidence_quotes?.length || 0) > 4 || String(answer.guidance || "").length > 900 ||
+        String(answer.explanation || "").length > 900 || (answer.dictionary_terms?.length || 0) > 4;
+      const qaModern = usesModernQuestionLayout(step);
+      const knownQaMultiPageAnswer = lesson.lesson_slug === "ogulla-bulusma" && step.id === "s100-q1";
+      if (!targetLayouts.has(step.layout) && !qaModern && !knownQaMultiPageAnswer) return null;
+      if (!contentMayPaginate && !answerMayPaginate && !knownQaMultiPageAnswer) return null;
+      return { lesson, step, slide: index + 1, contentMayPaginate, answerMayPaginate, qaModern };
+    })).filter(Boolean);
+    const groups = new Map();
+    const unstable = [];
+    const pageCountByLayout = new Map();
+    let scannedSteps = 0;
+    let measuredPages = 0;
+    let roundTripChecked = false;
+
+    async function readPromptGeometry() {
+      return page.evaluate(`(() => {
+        for (const animation of document.getAnimations({subtree:true})) {
+          try { animation.finish(); } catch { /* a completed or canceled transition is already stable */ }
+        }
+        const slide=document.querySelector('#canvas .slide');
+        const body=slide?.querySelector('.slide__body');
+        const prompt=slide?.querySelector('.qa-context > .prompt') || slide?.querySelector('.prompt');
+        const where=slide?.querySelector('.slide__top .where')?.innerText || '';
+        const counter=slide?.querySelector('.slide__foot .counter')?.innerText || '';
+        const focus=slide?.querySelector('.qa-focus');
+        const label=focus?.querySelector('.panel__label,.qa-stage-label')?.innerText.trim() || 'İçerik';
+        const qa=slide?.classList.contains('slide--qa-modern') || false;
+        const marker=qa ? counter.match(/sayfa\\s+(\\d+)\\/(\\d+)/i) : where.match(/ · (\\d+)\\/(\\d+)$/);
+        const style=prompt && getComputedStyle(prompt);
+        const range=prompt && document.createRange();
+        if(range) range.selectNodeContents(prompt);
+        const lineCount=range ? [...range.getClientRects()].map((line)=>line.top).sort((a,b)=>a-b)
+          .filter((top,index,tops)=>index===0||top-tops[index-1]>1).length : 0;
+        const box=prompt?.getBoundingClientRect();
+        return {
+          prompt:prompt?.innerText || '', top:box?.top ?? null, left:box?.left ?? null, width:box?.width ?? null,
+          fontSize:style ? Number.parseFloat(style.fontSize) : null, lineCount,
+          scale:body ? Number.parseFloat(getComputedStyle(body).getPropertyValue('--k')) || 1 : 1,
+          qa, view:qa ? label : where.replace(/ · \\d+\\/\\d+$/, ''),
+          revealIndex:Number(location.hash.split('/')[3] || 0),
+          pageIndex:marker ? Number(marker[1]) : null, pageTotal:marker ? Number(marker[2]) : null,
+          slideIndex:Number(counter.match(/^(\\d+)\\s*\\//)?.[1] || 0),
+          scrollWidth:body?.scrollWidth ?? 0, clientWidth:body?.clientWidth ?? 0,
+          bodyText:body?.innerText || ''
+        };
+      })()`);
+    }
+    async function changePart(action) {
+      await page.evaluate(`(() => {
+        const direction=${JSON.stringify(action)};
+        const body=document.querySelector('#canvas .slide__body');
+        if(body) body.scrollTop=direction==='next' ? body.scrollHeight : 0;
+        document.querySelector('#dock [data-action=${JSON.stringify(action === "next" ? "next" : "prev")}]').click();
+      })()`);
+      await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+      return readPromptGeometry();
+    }
+    const round = (value) => Math.round(value * 100) / 100;
+    await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+    await until(() => page.evaluate("!document.querySelector('#menu').hidden"), "enable full reveal pagination audit");
+    if (!(await page.evaluate("document.querySelector('#menu-guide')?.checked"))) {
+      await page.evaluate("document.querySelector('#menu-guide').click()");
+    }
+    await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
+    await until(() => page.evaluate("document.querySelector('#menu').hidden"), "close pagination audit menu");
+
+    async function openPosition(lesson, step, slide, reveal, part) {
+      const path = `/${lesson.lesson_slug}/${slide}${reveal || part ? `/${reveal}` : ""}${part ? `/${part}` : ""}`;
+      const expectedHash = `#${path}`;
+      await page.evaluate(`location.hash=${JSON.stringify(path)}`);
+      const opened = await until(() => page.evaluate(`(() => {
+        const prompt=document.querySelector('#canvas .prompt')?.innerText || '';
+        const counter=Number(document.querySelector('#canvas .slide__foot .counter')?.innerText.match(/^(\\d+)\\s*\\//)?.[1] || 0);
+        return location.hash === ${JSON.stringify(expectedHash)} && prompt === ${JSON.stringify(step.display_prompt)} && counter === ${slide};
+      })()`), `pagination geometry open ${step.id} ${reveal}/${part}`).catch(() => false);
+      if (!opened) {
+        await page.send("Page.navigate", { url: `${root}/${expectedHash}` });
+        const reloaded = await until(() => page.evaluate(`(() => {
+          const prompt=document.querySelector('#canvas .prompt')?.innerText || '';
+          const counter=Number(document.querySelector('#canvas .slide__foot .counter')?.innerText.match(/^(\\d+)\\s*\\//)?.[1] || 0);
+          return location.hash === ${JSON.stringify(expectedHash)} && prompt === ${JSON.stringify(step.display_prompt)} && counter === ${slide};
+        })()`), `pagination geometry reload ${step.id} ${reveal}/${part}`).catch(() => false);
+        if (reloaded) return readPromptGeometry();
+        const actual = await page.evaluate(`(() => ({hash:location.hash,prompt:document.querySelector('#canvas .prompt')?.innerText || '',counter:document.querySelector('#canvas .slide__foot .counter')?.innerText || '',where:document.querySelector('#canvas .where')?.innerText || ''}))()`);
+        assert.fail(`pagination geometry could not open ${step.id} at ${lesson.lesson_slug}/${slide}/${reveal}/${part}: ${JSON.stringify(actual)}`);
+      }
+      return readPromptGeometry();
+    }
+
+    for (const candidate of candidates) {
+      const { lesson, step, slide } = candidate;
+      scannedSteps += 1;
+      for (const reveal of [0]) {
+        const first = await openPosition(lesson, step, slide, reveal, 0);
+        const total = first.pageTotal || 1;
+        if (total < 2) continue;
+        for (let part = 0; part < total; part += 1) {
+          const current = part === 0 ? first : await openPosition(lesson, step, slide, reveal, part);
+          assert.equal(current.pageIndex, part + 1, `${step.id} restores ${current.pageIndex}/${total} from URL`);
+          assert.equal(current.pageTotal, total, `${step.id} keeps the ${total}-page view count during URL restore`);
+          measuredPages += 1;
+          const key = `${step.id}|${current.revealIndex}|${total}`;
+          if (!groups.has(key)) groups.set(key, { stepId:step.id, layout:step.layout, qa:current.qa, revealIndex:current.revealIndex, view:current.view, total, pages:[] });
+          groups.get(key).pages.push(current);
+          if (part === 0 && total === 2 && !roundTripChecked) {
+            const second = await changePart("next");
+            assert.equal(second.pageIndex, 2, `${step.id} advances from page 1/2 to 2/2`);
+            const back = await changePart("prev");
+            assert.equal(back.pageIndex, 1, `${step.id} returns from page 2/2 to 1/2`);
+            assert.ok(Math.abs(back.top - current.top) <= 2 && Math.abs(back.left - current.left) <= 2,
+              `${step.id} keeps prompt geometry on 1/2 → 2/2 → 1/2 navigation`);
+            const forward = await changePart("next");
+            assert.equal(forward.pageIndex, 2, `${step.id} advances again to page 2/2 after reverse navigation`);
+            roundTripChecked = true;
+          }
+        }
+      }
+    }
+
+    const qaAnswerCandidate = candidates.find((candidate) => candidate.lesson.lesson_slug === "ogulla-bulusma" && candidate.step.id === "s100-q1");
+    await openPosition(qaAnswerCandidate.lesson, qaAnswerCandidate.step, qaAnswerCandidate.slide, 0, 0);
+    let qaAnswerPage = await readPromptGeometry();
+    for (let advance = 0; advance < 8 && !await page.evaluate("(document.querySelector('#canvas .qa-focus')?.innerText || '').includes('Çordon, yaklaşık yirmi yıl önce')"); advance += 1) {
+      await page.evaluate("document.querySelector('#dock [data-action=next]').click()");
+      await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+      qaAnswerPage = await readPromptGeometry();
+    }
+    assert.ok(qaAnswerPage.qa && qaAnswerPage.revealIndex > 0 && qaAnswerPage.pageTotal >= 2 &&
+      qaAnswerPage.bodyText.includes("Çordon, yaklaşık yirmi yıl önce"),
+      `s100-q1 opens a multi-page QA-modern answer: ${JSON.stringify(qaAnswerPage)}`);
+    const qaAnswerKey = `s100-q1|${qaAnswerPage.revealIndex}|${qaAnswerPage.pageTotal}`;
+    groups.set(qaAnswerKey, { stepId:"s100-q1", layout:"question", qa:true, revealIndex:qaAnswerPage.revealIndex,
+      view:"Cevap", total:qaAnswerPage.pageTotal, pages:[qaAnswerPage] });
+    for (let part = 1; part < qaAnswerPage.pageTotal; part += 1) {
+      const answerPart = await openPosition(qaAnswerCandidate.lesson, qaAnswerCandidate.step, qaAnswerCandidate.slide,
+        qaAnswerPage.revealIndex, part);
+      assert.equal(answerPart.pageIndex, part + 1, `s100-q1 restores QA answer page ${part + 1}/${qaAnswerPage.pageTotal}`);
+      groups.get(qaAnswerKey).pages.push(answerPart);
+      measuredPages += 1;
+    }
+
+    const multipageSteps = new Set();
+    const multipageViews = [];
+    for (const group of groups.values()) {
+      const pageByIndex = new Map(group.pages.map((item) => [item.pageIndex, item]));
+      if (pageByIndex.size < 2) continue;
+      multipageSteps.add(group.stepId);
+      multipageViews.push(group);
+      const sequence = Array.from({ length:group.total }, (_, index) => pageByIndex.get(index + 1)).filter(Boolean);
+      assert.equal(sequence.length, group.total, `${group.stepId} ${group.view} captures every page in ${group.total}-page view`);
+      const baseline = sequence[0];
+      const maxTopDelta = Math.max(...sequence.map((item) => Math.abs(item.top - baseline.top)));
+      const maxLeftDelta = Math.max(...sequence.map((item) => Math.abs(item.left - baseline.left)));
+      const maxWidthDelta = Math.max(...sequence.map((item) => Math.abs(item.width - baseline.width)));
+      const maxFontDelta = Math.max(...sequence.map((item) => Math.abs(item.fontSize - baseline.fontSize)));
+      const maxScaleDelta = Math.max(...sequence.map((item) => Math.abs(item.scale - baseline.scale)));
+      const lineCounts = new Set(sequence.map((item) => item.lineCount));
+      const metrics = { stepId:group.stepId, layout:group.layout, view:group.view, total:group.total,
+        maxTopDelta:round(maxTopDelta), maxLeftDelta:round(maxLeftDelta), maxWidthDelta:round(maxWidthDelta),
+        maxFontDelta:round(maxFontDelta), maxScaleDelta:round(maxScaleDelta), lineCounts:[...lineCounts] };
+      if (maxTopDelta > 2 || maxLeftDelta > 2 || maxWidthDelta > 2 || maxFontDelta > 1 || lineCounts.size !== 1) unstable.push(metrics);
+      assert.ok(maxTopDelta <= 2, `${group.stepId} ${group.view} prompt top differs by at most 2px across pages: ${JSON.stringify(metrics)}`);
+      assert.ok(maxLeftDelta <= 2, `${group.stepId} ${group.view} prompt left stays fixed across pages: ${JSON.stringify(metrics)}`);
+      assert.ok(maxWidthDelta <= 2, `${group.stepId} ${group.view} prompt width stays fixed across pages: ${JSON.stringify(metrics)}`);
+      assert.ok(maxFontDelta <= 1 && lineCounts.size === 1,
+        `${group.stepId} ${group.view} keeps prompt size and wrapping stable when fitBody scale changes: ${JSON.stringify(metrics)}`);
+      assert.ok(sequence.every((item) => item.scrollWidth <= item.clientWidth + 1), `${group.stepId} ${group.view} has no horizontal overflow across pages`);
+      pageCountByLayout.set(group.layout, (pageCountByLayout.get(group.layout) || 0) + 1);
+    }
+
+    const getExample = (predicate) => multipageViews.find(predicate);
+    const processGroups = multipageViews.filter((group) => group.layout === "process" && group.total === 2 && group.pages.length >= 2);
+    const processDenseShort = processGroups.find((group) => group.pages.find((page) => page.pageIndex === 1)?.bodyText.length > group.pages.find((page) => page.pageIndex === 2)?.bodyText.length);
+    const processShortDense = processGroups.find((group) => group.pages.find((page) => page.pageIndex === 1)?.bodyText.length < group.pages.find((page) => page.pageIndex === 2)?.bodyText.length);
+    const threePage = getExample((group) => group.total >= 3);
+    const qaAnswer = getExample((group) => group.qa && group.revealIndex > 0);
+    assert.ok(processDenseShort, "catalog scan includes a two-page process with a denser first page and shorter second page");
+    let syntheticShortDense = null;
+    if (!processShortDense) {
+      const processCandidate = candidates.find((candidate) => candidate.step.id === processDenseShort.stepId);
+      await openPosition(processCandidate.lesson, processCandidate.step, processCandidate.slide, 0, 0);
+      syntheticShortDense = await page.evaluate(`(() => {
+        const source=document.querySelector('#canvas .slide--visual-process');
+        if(!source) return null;
+        const fixture=source.cloneNode(true);
+        fixture.style.cssText='position:fixed;left:-4000px;top:0;width:1920px;height:1080px;transform:none;visibility:hidden;pointer-events:none';
+        fixture.classList.remove('is-entering','from-back');
+        document.body.append(fixture);
+        const body=fixture.querySelector('.slide__body');
+        const prompt=fixture.querySelector('.prompt');
+        const stack=fixture.querySelector('.stack');
+        if(!body||!prompt||!stack) return null;
+        [...stack.children].filter((child)=>child!==prompt).forEach((child)=>child.remove());
+        const measure=()=>{
+          const range=document.createRange();range.selectNodeContents(prompt);
+          const tops=[...range.getClientRects()].map((rect)=>rect.top).sort((a,b)=>a-b)
+            .filter((top,index,all)=>index===0||top-all[index-1]>1);
+          const rect=prompt.getBoundingClientRect();
+          return {top:rect.top,left:rect.left,width:rect.width,fontSize:Number.parseFloat(getComputedStyle(prompt).fontSize),lineCount:tops.length};
+        };
+        const lead=document.createElement('p');lead.className='lead';lead.textContent='Kısa içerik.';stack.append(lead);
+        body.style.setProperty('--k','1');const shortPage=measure();lead.remove();
+        const denseLead=document.createElement('p');denseLead.className='lead';denseLead.textContent='Yoğun sayfadaki açıklama alanı.';stack.append(denseLead);
+        const list=document.createElement('ol');list.className='steps-list';
+        for(let index=0;index<8;index+=1){const item=document.createElement('li');item.textContent=(index+1)+'. Ayrıntılı yönerge '+(index+1)+', ikinci sayfadaki yoğun içeriği temsil eder.';list.append(item)}
+        stack.append(list);body.style.setProperty('--k','0.65');const densePage=measure();
+        fixture.remove();
+        return {shortPage,densePage,topDelta:Math.abs(shortPage.top-densePage.top),leftDelta:Math.abs(shortPage.left-densePage.left),widthDelta:Math.abs(shortPage.width-densePage.width),fontDelta:Math.abs(shortPage.fontSize-densePage.fontSize),lineCounts:[shortPage.lineCount,densePage.lineCount]};
+      })()`);
+      assert.ok(syntheticShortDense && syntheticShortDense.shortPage.width > 0 &&
+        Number.isFinite(syntheticShortDense.shortPage.fontSize) && syntheticShortDense.densePage.width > 0 &&
+        syntheticShortDense.topDelta <= 2 && syntheticShortDense.leftDelta <= 2 &&
+        syntheticShortDense.widthDelta <= 2 && syntheticShortDense.fontDelta <= 1 &&
+        syntheticShortDense.lineCounts[0] === syntheticShortDense.lineCounts[1],
+        `process shell keeps prompt geometry when a short first page is followed by dense content: ${JSON.stringify(syntheticShortDense)}`);
+    }
+    assert.ok(threePage, "catalog scan includes a 3+ page presentation");
+    for (const layout of ["process", "assessment", "reference", "structure", "comparison"]) {
+      assert.ok(multipageViews.some((group) => group.layout === layout), `catalog scan includes a multipage ${layout} example`);
+    }
+    assert.ok(qaAnswer, "catalog scan includes a multipage QA-modern answer example");
+    assert.equal(roundTripChecked, true, "browser regression checks 1/2 → 2/2 → 1/2 and back through next/previous");
+    console.log(`[pagination-geometry-audit] ${JSON.stringify({
+      candidateSteps:candidates.length, scannedSteps, multipageSteps:multipageSteps.size,
+      multipageViews:multipageViews.length, measuredPages, layoutViews:Object.fromEntries(pageCountByLayout),
+      scaleVariedViews:multipageViews.filter((group) => new Set(group.pages.map((item) => round(item.scale))).size > 1).length,
+      examples:{processDenseShort:processDenseShort.stepId,processShortDense:processShortDense?.stepId || "synthetic process-modern shell",
+        syntheticShortDense,
+        threePage:{stepId:threePage.stepId,total:threePage.total},qaAnswer:{stepId:qaAnswer.stepId,total:qaAnswer.total}},
+      unstable:unstable.length, unstableExamples:unstable.slice(0,10)
+    })}`);
+    break presentationBrowserSuite;
+  }
+
   if (qaVisualAudit) {
     await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
     await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
