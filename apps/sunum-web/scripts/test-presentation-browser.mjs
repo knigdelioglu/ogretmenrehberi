@@ -8,6 +8,7 @@ import path from "node:path";
 import { setTimeout as sleep } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
 import zlib from "node:zlib";
+import { usesModernQuestionLayout } from "../src/qa-modern.js";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -17,6 +18,7 @@ const port = Number(process.env.PORT || 5181);
 const root = `http://127.0.0.1:${port}`;
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "sunum-web-cdp-"));
 const rasterAudit = process.env.PPTX_RASTER_AUDIT === "1";
+const qaVisualAudit = process.env.QA_VISUAL_AUDIT === "1";
 const server = rasterAudit ? http.createServer((request, response) => {
   const distDir = path.join(appRoot, "dist");
   const urlPath = decodeURIComponent(new URL(request.url, root).pathname);
@@ -122,6 +124,24 @@ function readBuiltCatalog() {
   return JSON.parse(zlib.gunzipSync(compressed).toString("utf8"));
 }
 const builtCatalog = readBuiltCatalog();
+const catalogQuestionAnswers = builtCatalog.lessons.flatMap((lesson) => lesson.steps)
+  .filter((step) => step.answer?.entry_type === "question_answer" && step.reveals?.includes("answer"));
+const qaModernCountsByLayout = new Map();
+for (const step of catalogQuestionAnswers) {
+  assert.equal(usesModernQuestionLayout(step), true,
+    `${step.answer.question_id} meets semantic QA-modern eligibility regardless of ${step.layout} layout`);
+  const layout = step.layout || "(none)";
+  qaModernCountsByLayout.set(layout, (qaModernCountsByLayout.get(layout) || 0) + 1);
+}
+for (const step of builtCatalog.lessons.flatMap((lesson) => lesson.steps)) {
+  if (step.answer?.entry_type && step.answer.entry_type !== "question_answer") {
+    assert.equal(usesModernQuestionLayout(step), false,
+      `${step.answer.question_id} with ${step.answer.entry_type} does not enter QA-modern automatically`);
+  }
+}
+const qaModernCoverage = Object.fromEntries([...qaModernCountsByLayout.entries()].sort(([a], [b]) => a.localeCompare(b)));
+assert.ok(catalogQuestionAnswers.length > 0, "the production catalog has answer-bearing question_answer entries");
+console.log(`[sunum-web] QA-modern eligible catalog steps by layout: ${JSON.stringify(qaModernCoverage)} (total ${catalogQuestionAnswers.length}).`);
 const multiPageContentQa = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
   .find(({ step }) => step.layout === "question" && step.reveals.includes("answer") &&
     ((step.content?.items?.length || 0) > 4 || (step.content?.sections?.length || 0) > 2));
@@ -181,6 +201,19 @@ async function qaState() {
     };
   })()`);
 }
+async function qaVocabularyStage(stage) {
+  return page.evaluate(`(() => {
+    const root = document.querySelector(${JSON.stringify(stage)});
+    const prompt = document.querySelector("#canvas .slide--qa-modern .qa-context > .prompt");
+    return {
+      terms: [...(root?.querySelectorAll(".vocab__term") || [])].map((node) => node.textContent.trim()),
+      termColors: [...(root?.querySelectorAll(".vocab__term") || [])].map((node) => getComputedStyle(node).color),
+      hiddenMeanings: [...(root?.querySelectorAll(".vocab__meaning.is-hidden") || [])].length,
+      promptFontSize: prompt ? Number.parseFloat(getComputedStyle(prompt).fontSize) : null,
+      vocabCount: root?.querySelectorAll(".vocab").length ?? 0
+    };
+  })()`);
+}
 async function visualLayoutState() {
   return page.evaluate(`(() => {
     const slide = document.querySelector('#canvas .slide');
@@ -236,6 +269,26 @@ async function qaPromptMetrics() {
     if (appliedTextAlign) prompt.style.setProperty('text-align', appliedTextAlign);
     const restored = measure();
     return { appliedTextAlign, beforeAlignment, afterAlignment, restored };
+  })()`);
+}
+async function qaContentAlignmentState() {
+  return page.evaluate(`(() => {
+    const slide = document.querySelector('#canvas .slide--qa-modern');
+    const context = slide?.querySelector('.qa-context');
+    const prompt = context?.querySelector(':scope > .prompt');
+    const list = context?.querySelector('.steps-list');
+    const item = list?.querySelector('li');
+    const number = item?.querySelector('.n');
+    const text = number?.nextElementSibling;
+    const align = (node) => node ? getComputedStyle(node).textAlign : null;
+    const rect = (node) => { const box = node?.getBoundingClientRect(); return box && {left:box.left,right:box.right}; };
+    return {
+      prompt: align(prompt), context: align(context),
+      content: [...(context?.querySelectorAll(':scope > :not(.prompt), .lead, .steps-list, .steps-list li, .steps-list li > :not(.n), .sections, .sec, .criteria, .fields, .vocab__item, .vocab__meaning') || [])]
+        .map((node) => ({selector:node.className || node.tagName, align:align(node)})),
+      listDisplay: item ? getComputedStyle(item).display : null,
+      number: rect(number), itemText: rect(text)
+    };
   })()`);
 }
 async function waitForPromptFonts() {
@@ -415,6 +468,7 @@ async function openStep(slug, id) {
   await page.send("Page.navigate", { url: `${root}/#/${entry.lesson.lesson_slug}/${entry.slide}` });
   await until(async () => (await bodyText()).includes(entry.step.display_prompt), `open ${id}`);
   await until(() => page.evaluate("Array.from(document.querySelectorAll('#canvas .content-images img')).every(image => image.complete && image.naturalWidth > 0)"), `images ${id}`);
+  await waitForPromptFonts();
   return { ...entry, text: await bodyText() };
 }
 function terms(text) {
@@ -485,6 +539,93 @@ try {
   }
 
 presentationBrowserSuite: {
+  if (qaVisualAudit) {
+    await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
+    await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
+    const outputDir = process.env.QA_VISUAL_AUDIT_DIR || path.join(os.tmpdir(), "sunum-web-qa-visual-audit");
+    fs.mkdirSync(outputDir, { recursive: true });
+    const fixtures = [
+      { slug: "tema-girisi", id: "s14-q1", layout: "question", maxStages: 2 },
+      { slug: "karagoz", id: "s28-q1", layout: "comparison", maxStages: 4 },
+      { slug: "karagoz", id: "s29-q1", layout: "question", maxStages: 4 },
+      { slug: "asik-atismasi", id: "s143-q4", layout: "comparison", maxStages: 3 },
+      { slug: "karagoz", id: "s32-q3", layout: "structure", maxStages: 7 },
+      { slug: "mektup", id: "s40-q5", layout: "structure", maxStages: 7 },
+      { slug: "tema-2-degerlendirme", id: "s159-q7", layout: "structure", maxStages: 5 },
+      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s256-elements", layout: "structure", maxStages: 5 },
+      { slug: "mektup", id: "s50-q1", layout: "structure", maxStages: 7 },
+      { slug: "karagoz", id: "s35-q1", layout: "assessment", maxStages: 5 },
+      { slug: "kemal-tahir-mulakat-210-214", id: "s214-eval", layout: "assessment", maxStages: 0, qaModern: false },
+      { slug: "mektup", id: "s39-q3", layout: "vocabulary", maxStages: 6 },
+      { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", maxStages: 7 },
+      { slug: "anadolu-insani-284-290", id: "s287-vocab", layout: "vocabulary", maxStages: 5 },
+      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s258-grammar-apply", layout: "process", maxStages: 7 }
+    ];
+    const requestedIds = process.env.QA_VISUAL_AUDIT_ONLY?.split(",").map((id) => id.trim()).filter(Boolean);
+    const selectedCases = requestedIds ? fixtures.filter((fixture) => requestedIds.includes(fixture.id)) : fixtures;
+    assert.ok(selectedCases.length > 0, "QA_VISUAL_AUDIT_ONLY selects at least one known fixture");
+    const inspect = () => page.evaluate(`(() => {
+      const slide = document.querySelector('#canvas .slide');
+      const body = slide?.querySelector('.slide__body');
+      const context = slide?.querySelector('.qa-context');
+      const prompt = context?.querySelector(':scope > .prompt');
+      const focus = slide?.querySelector('.qa-focus');
+      const rect = (node) => { const b = node?.getBoundingClientRect(); return b && {x:b.x,y:b.y,width:b.width,height:b.height,right:b.right,bottom:b.bottom}; };
+      const contentAlignment = [...(context?.querySelectorAll(':scope > :not(.prompt), .lead, .steps-list, .steps-list li, .steps-list li > :not(.n), .criteria, .fields, .sections, .sec, .vocab__item, .vocab__meaning') || [])]
+        .map((node) => ({cls:node.className || node.tagName,align:getComputedStyle(node).textAlign}));
+      const nodes = [...(focus?.querySelectorAll('.sections,.sec,.criteria,.criteria li,.scale-form,.scale-form__row,.vocab__item,.vocab__meaning,.panel--answer,.panel--evidence,.steps-list,.steps-list li') || [])];
+      return {
+        classes: [...(slide?.classList || [])], prompt: prompt?.innerText || '', compact: Boolean(context?.matches(':has(+ .qa-focus:not(:empty))')),
+        promptFontSize: prompt ? getComputedStyle(prompt).fontSize : '', body: rect(body), context: rect(context), focus: rect(focus),
+        promptAlignment: prompt ? getComputedStyle(prompt).textAlign : '', contentAlignment,
+        focusText: focus?.innerText || '', bodyMetrics: body && {clientWidth:body.clientWidth,scrollWidth:body.scrollWidth,clientHeight:body.clientHeight,scrollHeight:body.scrollHeight,overflowing:body.classList.contains('is-overflowing')},
+        rendererNodes: nodes.map((node) => ({cls:node.className,tag:node.tagName,text:(node.innerText||'').slice(0,180),rect:rect(node),scrollWidth:node.scrollWidth,clientWidth:node.clientWidth,scrollHeight:node.scrollHeight,clientHeight:node.clientHeight,columns:getComputedStyle(node).gridTemplateColumns})),
+        columns: focus?.querySelector('.sections') ? getComputedStyle(focus.querySelector('.sections')).gridTemplateColumns : '',
+        fontsReady: document.fonts.check('16px "Inter"')
+      };
+    })()`);
+    async function capture(fixture, stage) {
+      await waitForPromptFonts();
+      await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+      const metrics = await inspect();
+      const png = await page.send("Page.captureScreenshot", { format: "png", fromSurface: true, captureBeyondViewport: true });
+      const imagePath = path.join(outputDir, `${fixture.id}-${stage}.png`);
+      fs.writeFileSync(imagePath, Buffer.from(png.data, "base64"));
+      console.log(`[qa-visual-audit] ${fixture.id} ${stage}: ${JSON.stringify({imagePath, ...metrics})}`);
+    }
+    for (const fixture of selectedCases) {
+      const entry = await openStep(fixture.slug, fixture.id);
+      assert.equal(entry.step.layout, fixture.layout, `${fixture.id} canonical layout`);
+      const qa = await inspect();
+      assert.equal(qa.classes.includes("slide--qa-modern"), fixture.qaModern !== false, `${fixture.id} QA-modern shell eligibility`);
+      if (fixture.qaModern !== false) {
+        assert.ok(qa.contentAlignment.every((node) => node.align === "left"),
+          `${fixture.id} opening renderer content stays left aligned: ${JSON.stringify(qa.contentAlignment)}`);
+      }
+      await capture(fixture, "opening");
+      if (fixture.maxStages) {
+        let traversed = 0;
+        for (let i = 1; i <= fixture.maxStages; i++) {
+          await next();
+          const stage = await inspect();
+          if (!stage.prompt || stage.prompt !== entry.step.display_prompt) break;
+          if (fixture.qaModern !== false && stage.focusText.trim()) {
+            assert.equal(stage.compact, true, `${fixture.id} compacts the prompt when focus content opens`);
+            assert.ok(stage.bodyMetrics?.scrollWidth <= stage.bodyMetrics?.clientWidth + 1, `${fixture.id} focus content has no horizontal body overflow`);
+            assert.ok(stage.rendererNodes.filter((node) => node.cls === "sec" || node.cls === "vocab__item")
+              .every((node) => node.scrollWidth <= node.clientWidth + 1), `${fixture.id} renderer cards do not clip horizontally`);
+          }
+          await capture(fixture, `reveal-${i}`);
+          traversed++;
+        }
+        for (let i = traversed; i > 0; i--) await previous();
+        await capture(fixture, "back-to-opening");
+      }
+      console.log(`[qa-visual-audit] ${fixture.id}: layout=${fixture.layout}, maxStages=${fixture.maxStages ?? 0}`);
+    }
+    console.log(`[qa-visual-audit] Captured ${selectedCases.length} catalog fixtures in Chrome at 1920×1080.`);
+    break presentationBrowserSuite;
+  }
   if (rasterAudit) {
     await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
     await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
@@ -968,7 +1109,9 @@ presentationBrowserSuite: {
   }
 
   const promptFixtures = [
-    { slug: "huzur-metni-anlayalim-175-176", id: "s175-q1", expected: "short" },
+    { slug: "tema-girisi", id: "s14-q1", expected: "short" },
+    { slug: "karagoz", id: "s28-q1", expected: "long" },
+    { slug: "mektup", id: "s39-q1" },
     { slug: "tema-2-degerlendirme", id: "s155-q2" },
     { slug: "tema-2-degerlendirme", id: "s157-q3" },
     { slug: "tema-2-girisi", id: "s88-q4", expected: "long" }
@@ -978,9 +1121,11 @@ presentationBrowserSuite: {
     const source = findStep(fixture.slug, fixture.id);
     const runtimeLesson = builtCatalog.lessons.find((lesson) => lesson.slug === fixture.slug);
     const runtimeStep = runtimeLesson?.steps.find((step) => step.id === fixture.id);
-    assert.equal(source.step.layout, "question", `${fixture.id} production layout is question`);
-    assert.equal(runtimeStep?.layout, "question", `${fixture.id} runtime layout is question`);
+    assert.ok(source.step.display_prompt.trim(), `${fixture.id} has a prompt in the canonical source`);
+    assert.ok(runtimeStep?.prompt.trim(), `${fixture.id} runtime catalog has a non-empty prompt`);
     assert.ok(runtimeStep?.reveals.includes("answer"), `${fixture.id} canonical runtime reveals include answer`);
+    assert.equal(runtimeStep?.answer?.entry_type, "question_answer", `${fixture.id} is a canonical question_answer`);
+    assert.equal(usesModernQuestionLayout(runtimeStep), true, `${fixture.id} enters QA-modern by semantic eligibility`);
     await openStep(fixture.slug, fixture.id);
     await waitForPromptFonts();
     const metrics = await qaPromptMetrics();
@@ -1015,45 +1160,55 @@ presentationBrowserSuite: {
   }
   console.log(`[sunum-web] Inter-loaded QA prompt alignment: ${JSON.stringify(promptAlignmentResults)}`);
 
-  // QA presentation keeps the question in context while each authored answer page
-  // opens in the focus area. These are production lessons, not synthetic fixtures.
+  const longOpening = await openStep("karagoz", "s28-q1");
+  assert.equal(longOpening.step.answer.question_id, "T1-P28-Q01", "s.28 target prompt has its expected canonical identity");
+  let s28PromptMetrics = await qaPromptMetrics();
+  assert.ok(s28PromptMetrics.afterAlignment.lineCount >= 3, "s.28 long opening prompt occupies at least three rendered lines");
+  assert.equal(s28PromptMetrics.afterAlignment.textAlign, "left", "s.28 long prompt is left aligned");
+  let s28ContentAlignment = await qaContentAlignmentState();
+  assert.equal(s28ContentAlignment.prompt, "left", "long prompt alignment stays on the prompt element");
+  assert.equal(s28ContentAlignment.context, "start", "QA context does not inherit centered text alignment");
+  assert.ok(s28ContentAlignment.content.length > 0 && s28ContentAlignment.content.every((node) => node.align === "left"),
+    `s.28 opening content blocks are left aligned: ${JSON.stringify(s28ContentAlignment.content)}`);
+  assert.equal(s28ContentAlignment.listDisplay, "grid", "s.28 numbered items retain the existing grid layout");
+  assert.ok(s28ContentAlignment.number?.left < s28ContentAlignment.itemText?.left,
+    "s.28 number bubbles remain to the left of each item text");
+  await next();
+  await waitForPromptFonts();
+  s28PromptMetrics = await qaPromptMetrics();
+  assert.equal(s28PromptMetrics.appliedTextAlign, s28PromptMetrics.afterAlignment.lineCount >= 3 ? "left" : "center",
+    "s.28 compact reveal prompt follows its actual rendered line count");
+  assert.deepEqual(s28PromptMetrics.beforeAlignment.inputs, s28PromptMetrics.afterAlignment.inputs,
+    "s.28 compact reveal alignment leaves prompt sizing and wrapping inputs unchanged");
+  const longCompact = await openStep("karagoz", "s29-q1");
+  assert.equal(longCompact.step.answer.question_id, "T1-P29-Q01", "s.29 compact-prompt fixture has its expected identity");
+  await next();
+  await waitForPromptFonts();
+  const longCompactMetrics = await qaPromptMetrics();
+  assert.ok(longCompactMetrics.afterAlignment.lineCount >= 3, "s.29 reveal prompt remains a long compact prompt after fitBody");
+  assert.equal(longCompactMetrics.afterAlignment.textAlign, "left", "long compact reveal prompt is left aligned");
+  assert.deepEqual(longCompactMetrics.beforeAlignment.inputs, longCompactMetrics.afterAlignment.inputs,
+    "long compact alignment changes no width, font, or wrapping inputs");
+
+  // Non-question answer types retain their specialized renderer and stay outside
+  // the semantic QA shell even when their legacy layout is named "question".
   const qaEntry = findStep("huzur-metni-anlayalim-175-176", "s175-q1");
-  assert.equal(qaEntry.step.layout, "question", "s175-q1 production fixture is a QA question");
+  const qaRuntimeEntry = builtCatalog.lessons.find((lesson) => lesson.slug === qaEntry.lesson.lesson_slug)
+    ?.steps.find((step) => step.id === qaEntry.step.id);
+  assert.equal(qaEntry.step.layout, "question", "s175-q1 keeps its canonical content layout");
+  assert.equal(qaRuntimeEntry?.answer?.entry_type, "performance_support", "s175-q1 is performance support");
+  assert.equal(usesModernQuestionLayout(qaRuntimeEntry), false, "s175-q1 performance support is excluded from QA-modern");
   assert.equal(qaEntry.step.answer.question_no, "1", "s175-q1 production fixture has question number 1");
   assert.ok(qaEntry.step.answer.answer_sections, "s175-q1 has structured production answers");
   await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
   let qa = await qaState();
-  assert.equal(qa.modern, true, "s175-q1 uses the modern QA layout");
-  assert.ok(qa.context.includes(qaEntry.step.display_prompt), "s175-q1 prompt starts in qa-context");
-  assert.equal(qa.focus.trim(), "", "s175-q1 opening content has an empty qa-focus");
-  assert.equal(qa.badge, "SORU · 1. soru", "s175-q1 shows the SORU badge and question_no");
-  assert.ok(!qa.counter.includes("sayfa"), "single-page s175-q1 content does not show a page count");
-  const s175Thinking = await next();
-  qa = await qaState();
-  assert.equal(qa.prompt, qaEntry.step.display_prompt, "s175-q1 prompt remains in qa-context during reveal");
-  assert.ok(qa.context.includes(qaEntry.step.display_prompt), "s175-q1 thinking reveal leaves prompt in qa-context");
-  assert.ok(qa.focus.includes("Düşünürken"), "s175-q1 thinking content opens in qa-focus");
-  assert.equal(qa.qaStageLabels, 0, "s175-q1 does not duplicate a stage label already supplied by its panel");
-  assert.ok(s175Thinking.includes("Düşünürken"), "s175-q1 production thinking layer is visible");
-  const s175Answer = await next();
-  qa = await qaState();
-  assert.equal(qa.prompt, qaEntry.step.display_prompt, "s175-q1 prompt remains in qa-context during answer reveal");
-  assert.ok(qa.focus.includes("Okuma öncesi tahmin"), "s175-q1 answer content opens in qa-focus");
-  assert.equal(qa.stageLabels.length, new Set(qa.stageLabels).size,
-    "s175-q1 answer stage labels do not repeat");
-  assert.ok(s175Answer.includes("İstanbul ve Boğaz"), "s175-q1 first structured answer is visible");
-  assert.ok(qa.counter.includes("sayfa 1/"), "multi-page s175-q1 answer count is shown in the footer");
-  assert.ok(!qa.whereText.includes("Okuma öncesi tahmin") && !qa.whereTitle.includes("Okuma öncesi tahmin"),
-    "s175-q1 answer page title stays out of the header");
-  const s175NextAnswerPage = await next();
-  qa = await qaState();
-  assert.ok(qa.counter.includes("sayfa 2/"), "s175-q1 forward navigation increments its footer page count");
-  assert.ok(qa.focus.includes("Metinden öğrenilenler"), "s175-q1 advances to its second structured answer");
-  assert.ok(s175NextAnswerPage.includes("eski musiki"), "s175-q1 second answer page has its production content");
-  await previous();
-  qa = await qaState();
-  assert.ok(qa.counter.includes("sayfa 1/"), "s175-q1 backward navigation restores the prior footer page count");
-  assert.ok(qa.focus.includes("Okuma öncesi tahmin"), "s175-q1 backward navigation restores the prior answer");
+  assert.equal(qa.modern, false, `s175-q1 keeps its specialized performance-support shell: ${JSON.stringify(qa)}`);
+  assert.equal(qa.badge, "", "s175-q1 does not get a QA SORU badge");
+  assert.ok((await bodyText()).includes(qaEntry.step.display_prompt), "s175-q1 still renders its task prompt");
+  const s175AnswerSnippet = firstSourceString(qaEntry.step.answer.answer_sections).trim().slice(0, 36);
+  const s175Answer = await advanceUntil((text) => text.includes(s175AnswerSnippet), "s175 performance-support answer", 12);
+  assert.ok(s175Answer.includes(s175AnswerSnippet), "s175-q1 answer remains available through its existing renderer");
+  assert.equal((await qaState()).modern, false, "s175-q1 never enters QA-modern during answer navigation");
 
   const pairedQaEntry = findStep("ogulla-bulusma", "s100-q1");
   assert.equal(pairedQaEntry.step.layout, "question", "s100-q1 production fixture is QA eligible");
@@ -1175,16 +1330,17 @@ presentationBrowserSuite: {
   assert.equal((await qaTransitionCalls()).length, 2,
     `${multiPageEntry.step.id} reverse content pagination does not start a transition`);
 
-  // Walk every authored question through its real URL entry point. Focused
-  // cases above cover the detailed reveal/page transitions; this sweep makes
-  // sure the opening QA state remains valid across the full production catalog.
+  // Walk every semantically eligible question_answer through its real URL
+  // entry point, independent of the renderer selected by layout.
   const allQuestionCases = builtCatalog.lessons.flatMap((lesson) => lesson.steps
     .map((step, index) => ({ lesson, step, slide: index + 1 }))
-    .filter(({ step }) => step.layout === "question"));
+    .filter(({ step }) => usesModernQuestionLayout(step)));
   const sourceQuestionCount = lessons.reduce((count, lesson) =>
-    count + lesson.steps.filter((step) => step.layout === "question").length, 0);
+    count + lesson.steps.filter((step) => step.answer?.entry_type === "question_answer" &&
+      typeof step.display_prompt === "string" && step.display_prompt.trim() &&
+      step.reveal_order?.includes("answer")).length, 0);
   assert.equal(allQuestionCases.length, sourceQuestionCount,
-    "built and source catalogs contain the same number of question steps");
+    "built and source catalogs contain the same number of semantically eligible question_answer steps");
   const questionSweep = [];
   for (const { lesson, step, slide } of allQuestionCases) {
     const hash = `#/${lesson.slug}/${slide}`;
@@ -1193,7 +1349,7 @@ presentationBrowserSuite: {
     try {
       opened = await until(async () => {
         const state = await qaState();
-        const isReady = step.reveals.includes("answer")
+        const isReady = usesModernQuestionLayout(step)
           ? state.prompt === step.prompt
           : (await bodyText()).includes(step.prompt);
         return isReady ? state : null;
@@ -1207,7 +1363,7 @@ presentationBrowserSuite: {
     assert.ok((await bodyText()).includes(step.prompt), `${lesson.slug}/${step.id} opens its authored prompt`);
     assert.ok((await page.evaluate("document.querySelector('#canvas .slide') !== null")),
       `${lesson.slug}/${step.id} renders a slide from its URL`);
-    if (step.reveals.includes("answer")) {
+    if (usesModernQuestionLayout(step)) {
       assert.equal(opened.modern, true, `${lesson.slug}/${step.id} opens in modern QA layout`);
       assert.equal(opened.prompt, step.prompt, `${lesson.slug}/${step.id} keeps its prompt in QA context`);
       assert.equal(opened.focus.trim(), "", `${lesson.slug}/${step.id} starts with an empty QA focus`);
@@ -1229,14 +1385,14 @@ presentationBrowserSuite: {
       console.log(`[sunum-web] Production question opening-state sweep progress: ${questionSweep.length}/${allQuestionCases.length}`);
     }
   }
-  assert.equal(questionSweep.length, 292, "all production question URLs completed the opening-state sweep");
+  assert.equal(questionSweep.length, 387, "all semantically eligible production question URLs completed the opening-state sweep");
   console.log(`[sunum-web] Production question opening-state sweep: ${JSON.stringify({
     questionSteps: questionSweep.length,
     modernQaSteps: questionSweep.filter((step) => step.modern).length
   })}`);
 
-  // Comparison shell eligibility is intentionally narrower than the layout
-  // count: an authored answer reveal and a non-empty prompt are both required.
+  // The comparison renderer remains layout-driven; QA shell eligibility follows
+  // the same semantic contract as every other layout.
   const allComparisonCases = builtCatalog.lessons.flatMap((lesson) => lesson.steps
     .map((step, index) => ({ lesson, step, slide: index + 1 }))
     .filter(({ step }) => step.layout === "comparison"));
@@ -1245,14 +1401,14 @@ presentationBrowserSuite: {
   assert.equal(allComparisonCases.length, sourceComparisonCount,
     "built and source catalogs contain the same number of comparison steps");
   const eligibleComparisonCases = allComparisonCases.filter(({ step }) =>
-    step.reveals.includes("answer") && typeof step.prompt === "string" && step.prompt.trim());
+    usesModernQuestionLayout(step));
   const excludedComparisonCases = allComparisonCases.filter(({ step }) =>
-    !step.reveals.includes("answer") || typeof step.prompt !== "string" || !step.prompt.trim());
+    !usesModernQuestionLayout(step));
   assert.equal(allComparisonCases.length, 88, "production catalog contains 88 comparison steps");
-  assert.equal(eligibleComparisonCases.length, 75, "75 comparisons meet QA shell eligibility");
-  assert.equal(excludedComparisonCases.length, 13, "13 comparisons remain outside QA shell eligibility");
+  assert.equal(eligibleComparisonCases.length, 36, "36 comparisons meet semantic QA shell eligibility");
+  assert.equal(excludedComparisonCases.length, 52, "52 comparisons remain outside QA shell eligibility");
   for (const { lesson, step, slide } of allComparisonCases) {
-    const eligible = step.reveals.includes("answer") && typeof step.prompt === "string" && Boolean(step.prompt.trim());
+    const eligible = usesModernQuestionLayout(step);
     await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
     const state = await until(async () => {
       const current = await qaState();
@@ -1343,7 +1499,9 @@ presentationBrowserSuite: {
   const pairedQuestionCases = allQuestionCases.filter(({ step }) =>
     step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length));
   const sourcePairedQuestionCount = lessons.reduce((count, lesson) => count + lesson.steps.filter((step) =>
-    step.layout === "question" && step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length)).length, 0);
+    step.answer?.entry_type === "question_answer" && typeof step.display_prompt === "string" &&
+    step.display_prompt.trim() && step.reveal_order?.includes("answer") &&
+    step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length)).length, 0);
   assert.equal(pairedQuestionCases.length, sourcePairedQuestionCount,
     "built and source catalogs contain the same number of paired-evidence question steps");
   for (const [pairedIndex, { lesson, step, slide }] of pairedQuestionCases.entries()) {
@@ -1366,7 +1524,7 @@ presentationBrowserSuite: {
     }
   }
 
-  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  await openStep("mektup", "s39-q1");
   await page.evaluate("document.startViewTransition = undefined");
   const fallbackPrompt = await page.evaluate(`(() => {
     document.querySelector('#dock [data-action=next]').click();
@@ -1382,7 +1540,7 @@ presentationBrowserSuite: {
   assert.equal(fallbackPrompt.animationName, "qa-prompt-enter", "API fallback runs the prompt enter animation");
 
   await page.send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
-  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  await openStep("mektup", "s39-q1");
   await installQaTransitionProbe();
   await clearQaTransitionCalls();
   const reducedMotionPrompt = await page.evaluate(`(() => {
@@ -1405,9 +1563,8 @@ presentationBrowserSuite: {
   // a completely clipped stage are treated as failures.
   for (const [width, height] of [[1920, 1080], [1280, 800], [1366, 768]]) {
     await page.send("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: 1, mobile: false });
-    await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
-    await next(); // Thinking
-    await next(); // Answer
+    await openStep("mektup", "s39-q1");
+    await next(); // Vocabulary answer group
     const metrics = await qaViewportMetrics();
     assert.equal(metrics.width, width, `QA viewport width is ${width}`);
     assert.equal(metrics.height, height, `QA viewport height is ${height}`);
@@ -1459,6 +1616,85 @@ presentationBrowserSuite: {
   }, "ISSUE-105 legacy answer subpart restores to its question");
   assert.ok(!restoredQuestion.includes("Mehmet Kaplan'ın Âli'ye günlük hayatını"),
     "ISSUE-105: an old numeric subpart cannot restore to a different answer unit");
+
+  const mektupLesson = lessons.find((entry) => entry.lesson_slug === "mektup");
+  for (const fixture of [
+    { id: "s39-q1", questionId: "T1-P39-Q01" },
+    { id: "s39-q3", questionId: "T1-P39-Q03" }
+  ]) {
+    const entry = findStep("mektup", fixture.id);
+    const catalogStep = builtCatalog.lessons.find((lesson) => lesson.slug === "mektup")
+      ?.steps.find((step) => step.id === fixture.id);
+    assert.ok(mektupLesson, "Mektup lesson is present in the canonical catalog");
+    assert.ok(catalogStep, `${fixture.questionId} is present in the built presentation catalog`);
+    assert.equal(catalogStep.layout, "vocabulary", `${fixture.questionId} keeps its canonical vocabulary layout`);
+    assert.equal(usesModernQuestionLayout(catalogStep), true, `${fixture.questionId} enters QA-modern by semantic eligibility`);
+
+    const opened = await openStep("mektup", fixture.id);
+    assert.ok(opened.text.includes(entry.step.display_prompt), `${fixture.questionId} starts with its authored prompt`);
+    let state = await qaState();
+    assert.equal(state.modern, true, `${fixture.questionId} initial view uses the QA-modern shell`);
+    assert.ok(state.badge.includes("SORU") && state.badge.includes(entry.step.answer.question_no),
+      `${fixture.questionId} shows the large question design and numbered SORU badge`);
+    assert.equal(state.focus.trim(), "", `${fixture.questionId} starts without answer content in the focus stage`);
+
+    const sections = Object.entries(entry.step.answer.answer_sections);
+    const expectedGroups = [];
+    for (let index = 0; index < sections.length; index += 3) {
+      expectedGroups.push(sections.slice(index, index + 3).map(([term]) => term));
+    }
+    assert.ok(expectedGroups.length >= 2, `${fixture.questionId} has multiple interleaved vocabulary groups`);
+    const initialStage = await qaVocabularyStage("#canvas .slide--qa-modern .qa-context");
+    assert.deepEqual(initialStage.terms, expectedGroups[0], `${fixture.questionId} first prompt group keeps its authored order`);
+    assert.deepEqual(initialStage.termColors, ["rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)"],
+      `${fixture.questionId} keeps the existing teal/blue/gold vocabulary hierarchy inside QA-modern`);
+    assert.equal(initialStage.hiddenMeanings, expectedGroups[0].length,
+      `${fixture.questionId} first prompt group keeps meanings hidden`);
+    assert.equal(initialStage.vocabCount, 1, `${fixture.questionId} uses the existing vocabulary card renderer`);
+    const largePromptSize = initialStage.promptFontSize;
+
+    await next();
+    state = await qaState();
+    assert.equal(state.modern, true, `${fixture.questionId} remains in QA-modern after advancing`);
+    assert.ok(state.focus.trim(), `${fixture.questionId} answer appears in the focus stage`);
+    const compactAnswerStage = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
+    assert.deepEqual(compactAnswerStage.terms, expectedGroups[0],
+      `${fixture.questionId} answer card group matches the initial vocabulary group`);
+    assert.equal(compactAnswerStage.vocabCount, 1, `${fixture.questionId} answer stays in the vocabulary renderer`);
+    assert.equal(compactAnswerStage.hiddenMeanings, 0,
+      `${fixture.questionId} first answer group reveals its meanings`);
+    assert.ok(compactAnswerStage.promptFontSize < largePromptSize,
+      `${fixture.questionId} prompt compacts when the answer focus stage opens`);
+
+    await previous();
+    state = await qaState();
+    assert.equal(state.modern, true, `${fixture.questionId} backward navigation restores the QA-modern shell`);
+    assert.equal(state.focus.trim(), "", `${fixture.questionId} backward navigation restores the question-only stage`);
+    const restoredPromptStage = await qaVocabularyStage("#canvas .slide--qa-modern .qa-context");
+    assert.deepEqual(restoredPromptStage.terms, expectedGroups[0],
+      `${fixture.questionId} backward navigation restores the first vocabulary group in order`);
+
+    await next();
+    for (let groupIndex = 1; groupIndex < expectedGroups.length; groupIndex += 1) {
+      await next();
+      state = await qaState();
+      assert.equal(state.modern, true, `${fixture.questionId} group ${groupIndex + 1} stays in QA-modern`);
+      assert.ok(state.focus.trim(), `${fixture.questionId} next interleave prompt remains in the focus stage`);
+      const shownGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
+      assert.deepEqual(shownGroup.terms, expectedGroups[groupIndex],
+        `${fixture.questionId} next prompt group ${groupIndex + 1} keeps its term order in focus`);
+      assert.equal(shownGroup.hiddenMeanings, expectedGroups[groupIndex].length,
+        `${fixture.questionId} next prompt group ${groupIndex + 1} keeps meanings hidden`);
+      await next();
+      state = await qaState();
+      assert.ok(state.focus.trim(), `${fixture.questionId} next group answers remain in focus stage`);
+      const answerGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
+      assert.deepEqual(answerGroup.terms, expectedGroups[groupIndex],
+        `${fixture.questionId} answer group ${groupIndex + 1} keeps its interleaved order`);
+      assert.equal(answerGroup.hiddenMeanings, 0,
+        `${fixture.questionId} answer group ${groupIndex + 1} shows its meanings`);
+    }
+  }
 
   if (process.env.THEME1_ONLY !== "1") {
   screen = await openStep("karagoz", "s16-q1");
@@ -1906,13 +2142,13 @@ presentationBrowserSuite: {
   assert.ok(peerBytes.length > 5000, "peer-form download has complete document content");
 
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
-  const qaContentEntry = findStep("huzur-metni-anlayalim-175-176", "s175-q1");
-  assert.equal(qaContentEntry.step.layout, "question", "s175-q1 is a production QA content fixture");
-  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
+  const qaContentEntry = findStep("mektup", "s39-q1");
+  assert.equal(qaContentEntry.step.layout, "vocabulary", "s39-q1 keeps its production vocabulary layout");
+  await openStep("mektup", "s39-q1");
   let visualQa = await qaState();
-  assert.equal(visualQa.modern, true, "s175-q1 browser screenshot uses the modern QA layout");
-  assert.equal(visualQa.focus.trim(), "", "s175-q1 browser screenshot shows its content view");
-  const qaContentScreenshot = await captureQaScreenshot("s175-q1 QA content");
+  assert.equal(visualQa.modern, true, "s39-q1 browser screenshot uses the semantic QA shell");
+  assert.equal(visualQa.focus.trim(), "", "s39-q1 browser screenshot shows its vocabulary prompt");
+  const qaContentScreenshot = await captureQaScreenshot("s39-q1 QA vocabulary content");
 
   const pairedVisualEntry = findStep("huzur-metni-anlayalim-175-176", "s176-q4");
   const pairedVisualUnit = pairedVisualEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);

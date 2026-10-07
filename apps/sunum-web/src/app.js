@@ -4,6 +4,7 @@ import { answerEvidenceStages, attachVocabularyAnswerFragments, evidenceContinua
 import { splitAtSentences } from "./text-chunks.js";
 import { createLessonPptx, pptxFilename } from "./pptx-export.js";
 import { assessmentDownloads } from "./menu-files.js";
+import { usesModernQuestionLayout } from "./qa-modern.js";
 
 const DATA_FILE = "__DATA_FILE__";
 const BUILD = "__BUILD_VERSION__";
@@ -1212,12 +1213,6 @@ function endSlide(lesson) {
   );
 }
 
-function usesModernQuestionLayout(step) {
-  if (!Array.isArray(step?.reveals) || !step.reveals.includes("answer")) return false;
-  if (step.layout === "question") return true;
-  return step.layout === "comparison" && typeof step.prompt === "string" && Boolean(step.prompt.trim());
-}
-
 function stepSlide(lesson, step) {
   const active = activeReveals(step);
   const view = currentView(step);
@@ -1483,7 +1478,13 @@ function render({ newSlide, qaPromptEnter = false }) {
 
 function alignModernQuestionPrompt(slide) {
   const prompt = slide.querySelector(".slide--qa-modern .qa-context > .prompt");
-  if (!prompt || document.fonts?.status === "loading") return;
+  if (!prompt) return;
+
+  if (document.fonts?.status === "loading") {
+    document.fonts.ready.then(() => {
+      if (prompt.isConnected) alignModernQuestionPrompt(slide);
+    });
+  }
 
   const range = document.createRange();
   range.selectNodeContents(prompt);

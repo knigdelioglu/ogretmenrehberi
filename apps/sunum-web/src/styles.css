@@ -1044,7 +1044,7 @@ button {
 }
 
 /* Normal söz varlığı kartları: QA paleti, mevcut üç sütunlu düzen korunur */
-.slide:not(.slide--qa-modern):has(.vocab) {
+.slide:has(.vocab) {
   --vocab-ink: #182a35;
   --vocab-rule: #d7e0df;
   --vocab-teal: #176d68;
@@ -1053,42 +1053,42 @@ button {
   --vocab-muted: #718087;
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__item {
+.slide:has(.vocab) .vocab__item {
   background: #ffffff;
   box-shadow: inset 0 0 0 1px var(--vocab-rule);
   color: var(--vocab-ink);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__item:nth-child(3n + 1) {
+.slide:has(.vocab) .vocab__item:nth-child(3n + 1) {
   --vocab-term-accent: var(--vocab-teal);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__item:nth-child(3n + 2) {
+.slide:has(.vocab) .vocab__item:nth-child(3n + 2) {
   --vocab-term-accent: var(--vocab-blue);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__item:nth-child(3n) {
+.slide:has(.vocab) .vocab__item:nth-child(3n) {
   --vocab-term-accent: var(--vocab-gold);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__term {
+.slide:has(.vocab) .vocab__term {
   color: var(--vocab-term-accent, var(--vocab-teal));
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__meaning {
+.slide:has(.vocab) .vocab__meaning {
   color: var(--vocab-ink);
   font-family: "Inter", var(--font);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__meaning:not(.is-hidden) {
+.slide:has(.vocab) .vocab__meaning:not(.is-hidden) {
   letter-spacing: 0.015em;
 }
 
-.slide:not(.slide--qa-modern):has(.vocab) .vocab__meaning.is-hidden {
+.slide:has(.vocab) .vocab__meaning.is-hidden {
   color: var(--vocab-muted);
 }
 
-:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab) {
+:root[data-theme="dark"] .slide:has(.vocab) {
   --vocab-ink: #edf3f1;
   --vocab-rule: #344248;
   --vocab-teal: #72c9ba;
@@ -1097,12 +1097,12 @@ button {
   --vocab-muted: #94a29f;
 }
 
-:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab) .vocab__item {
+:root[data-theme="dark"] .slide:has(.vocab) .vocab__item {
   background: #1c252b;
 }
 
 /* Tıklanabilir kelime duvarı: yalnız interaktif kartlar için QA paleti */
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) {
+.slide:has(.vocab__item--interactive) {
   --word-wall-ink: #182a35;
   --word-wall-rule: #d7e0df;
   --word-wall-teal: #176d68;
@@ -1111,46 +1111,46 @@ button {
   --word-wall-muted: #718087;
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive {
   background: #ffffff;
   box-shadow: inset 0 0 0 1px var(--word-wall-rule);
   color: var(--word-wall-ink);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n + 1) {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n + 1) {
   --word-wall-accent: var(--word-wall-teal);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n + 2) {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n + 2) {
   --word-wall-accent: var(--word-wall-blue);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n) {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive:nth-child(3n) {
   --word-wall-accent: var(--word-wall-gold);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive .vocab__term {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive .vocab__term {
   color: var(--word-wall-accent, var(--word-wall-teal));
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive .vocab__meaning {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive .vocab__meaning {
   color: var(--word-wall-ink);
   font-family: "Inter", var(--font);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive .vocab__meaning.is-hidden {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive .vocab__meaning.is-hidden {
   color: var(--word-wall-muted);
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive[aria-expanded="true"] {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive[aria-expanded="true"] {
   box-shadow: inset 0 0 0 1px var(--word-wall-accent, var(--word-wall-teal));
 }
 
-.slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive:focus-visible {
+.slide:has(.vocab__item--interactive) .vocab__item--interactive:focus-visible {
   outline-color: var(--word-wall-teal);
 }
 
-:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab__item--interactive) {
+:root[data-theme="dark"] .slide:has(.vocab__item--interactive) {
   --word-wall-ink: #edf3f1;
   --word-wall-rule: #344248;
   --word-wall-teal: #72c9ba;
@@ -1159,7 +1159,7 @@ button {
   --word-wall-muted: #94a29f;
 }
 
-:root[data-theme="dark"] .slide:not(.slide--qa-modern):has(.vocab__item--interactive) .vocab__item--interactive {
+:root[data-theme="dark"] .slide:has(.vocab__item--interactive) .vocab__item--interactive {
   background: #1c252b;
 }
 
@@ -1668,7 +1668,6 @@ button {
   justify-content: center;
   gap: 0.8em;
   width: 100%;
-  text-align: center;
 }
 
 .slide--qa-modern .qa-context > .prompt {
@@ -1677,6 +1676,7 @@ button {
   font-size: 1.7em;
   line-height: 1.2;
   text-wrap: balance;
+  text-align: center;
 }
 
 ::view-transition-group(qa-question),
@@ -1703,6 +1703,7 @@ button {
 
 .slide--qa-modern .qa-context > :not(.prompt) {
   width: min(100%, 1420px);
+  text-align: left;
 }
 
 .slide--qa-modern .qa-context:has(+ .qa-focus:not(:empty)) {
@@ -1710,7 +1711,6 @@ button {
   align-items: flex-start;
   gap: 0;
   margin-bottom: 0.9em;
-  text-align: left;
 }
 
 .slide--qa-modern .qa-context:has(+ .qa-focus:not(:empty)) > .prompt {
