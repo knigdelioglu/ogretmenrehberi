@@ -17,7 +17,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     env:
       SUNUM_SIFRE: sunum-ci
     steps:

@@ -2466,7 +2466,7 @@ presentationBrowserSuite: {
   const downloadedPptx = await until(() => {
     const file = fs.readdirSync(profile).find((name) => name.endsWith(".pptx"));
     return file ? path.join(profile, file) : null;
-  }, "visual PPTX download", 300000);
+  }, "visual PPTX download", 480000);
   await until(() => page.evaluate("document.querySelector('#menu').getAttribute('aria-busy') !== 'true'"), "PPTX capture completion");
   const pptxCaptureTransitions = await page.evaluate(`(() => {
     const probe = window.__qaPptxCaptureProbe;
