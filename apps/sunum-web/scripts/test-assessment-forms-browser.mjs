@@ -304,6 +304,7 @@ try {
         width: Number((rect.width - headerRects[index].width).toFixed(2))
       })));
       return {
+        modernQa: slide.classList.contains('slide--qa-modern'),
         columns: headStyle.gridTemplateColumns.split(' ').length,
         rowColumns: [...new Set(rows.map((row) => getComputedStyle(row).gridTemplateColumns.split(' ').length))],
         headerCells: headColumns.length,
@@ -347,7 +348,8 @@ try {
   assert.equal(scaleStyle.columns, 4, "s214-eval scale form keeps four aligned grid columns");
   assert.deepEqual(scaleStyle.rowColumns, [4], "s214-eval rows keep the same four columns as the header");
   assert.equal(scaleStyle.headerCells, 4, "s214-eval shows one criterion header and three scale headers");
-  assert.equal(scaleStyle.rowCount, 6, "s214-eval renders all six criteria as rows");
+  assert.ok(scaleStyle.rowCount > 0 && scaleStyle.rowCount <= selfAssessment.content.items.length,
+    "s214-eval renders a non-empty, paginated set of criteria rows");
   assert.deepEqual(scaleStyle.rowCellCounts, [4], "each s214-eval row contains a criterion and three response cells");
   assert.match(scaleStyle.headerFont, /^Inter(?:,|$)/, "s214-eval scale header uses the local Inter font");
   assert.ok(scaleStyle.interLoaded, "the local Inter font face is loaded for s214-eval");
@@ -359,12 +361,32 @@ try {
   assert.deepEqual(scaleStyle.boxBorders, ["rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)"],
     "s214-eval response cells use the matching scale accents");
   assert.ok(scaleStyle.removedModifierRules > 0, "the scale-only modifier rules can be isolated for the baseline geometry comparison");
-  assert.doesNotMatch(scaleStyle.withoutModifier.headerFont, /^Inter(?:,|$)/, "baseline geometry capture disables the scale-only font modifier");
+  if (scaleStyle.modernQa) {
+    assert.match(scaleStyle.withoutModifier.headerFont, /^Inter(?:,|$)/,
+      "QA typography remains active when scale-form modifiers are removed");
+  } else {
+    assert.doesNotMatch(scaleStyle.withoutModifier.headerFont, /^Inter(?:,|$)/,
+      "baseline geometry capture disables the scale-only font modifier");
+  }
   assert.ok(scaleStyle.aligned, `s214-eval response cells align horizontally with their scale headers. `
     + `Styled header=${JSON.stringify(scaleStyle.expectedHeaderRects)}, first row=${JSON.stringify(scaleStyle.actualFirstRowCellRects)}, `
     + `deltas=${JSON.stringify(scaleStyle.firstRowDeltas)}; without modifier header=${JSON.stringify(scaleStyle.withoutModifier.expectedHeaderRects)}, `
     + `first row=${JSON.stringify(scaleStyle.withoutModifier.actualFirstRowCellRects)}, deltas=${JSON.stringify(scaleStyle.withoutModifier.firstRowDeltas)}`);
   assert.ok(scaleStyle.bodyFits, "s214-eval fits without horizontal or vertical overflow at 1440x900");
+
+  const visibleCriteria = [];
+  for (let pageIndex = 0; pageIndex < selfAssessment.content.items.length; pageIndex += 1) {
+    const pageCriteria = await page.evaluate(`Array.from(document.querySelectorAll('#canvas .scale-form__text > span:last-child')).map((node) => node.textContent.trim())`);
+    visibleCriteria.push(...pageCriteria);
+    if (visibleCriteria.length >= selfAssessment.content.items.length) break;
+    const previousPage = JSON.stringify(pageCriteria);
+    await page.evaluate("document.querySelector('#dock [data-action=next]').click()");
+    await until(async () => JSON.stringify(await page.evaluate(
+      `Array.from(document.querySelectorAll('#canvas .scale-form__text > span:last-child')).map((node) => node.textContent.trim())`
+    )) !== previousPage, `s214-eval criteria page ${pageIndex + 2}`);
+  }
+  assert.deepEqual(visibleCriteria, selfAssessment.content.items,
+    "s214-eval preserves all six criteria in source order across its visible content pages");
 
   await openStep("asik-atismasi", "s139-checklist");
   const criteriaStyle = await page.evaluate(`(() => {
