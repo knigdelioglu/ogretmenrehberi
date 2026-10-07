@@ -19,7 +19,17 @@
       "prompt": "Konuya Başlarken — Tarık Buğra ve Âşık Veysel'e ilişkin iki parçayı okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.194’teki Tarık Buğra ve Âşık Veysel parçalarını okuyup yaşamlarındaki önemli olayları not edin."
+        "lead": "Basılı s.194’teki iki biyografi parçasında yaşam öyküsündeki dönüm noktalarını izleyin.",
+        "sections": [
+          {
+            "title": "Tarık Buğra",
+            "body": "Askerlik döneminde ailesini ziyareti ve türkü söylemesi, radyo oyunu yazmasına uzanan bir başlangıç olur. “Arayan Bulur” oyununun kabul edilmesiyle ilk telif ücretini alır."
+          },
+          {
+            "title": "Âşık Veysel",
+            "body": "Ahmet Kutsi Tecer’le tanışması ve 1931’deki Âşıklar Bayramı, yaşamındaki önemli dönüm noktalarıdır. Sonraki yıllarda farklı yol arkadaşlarıyla yurt içinde gezerek sazını ve şiirlerini tanıtır."
+          }
+        ]
       }
     },
     {

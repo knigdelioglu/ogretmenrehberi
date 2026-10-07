@@ -174,7 +174,25 @@
       "source_record_id": "T01-S0033",
       "layout": "reference",
       "content": {
-        "lead": "Kitaptaki mektup türleri tablosunu inceleyin; türleri amaç, muhatap ve kullanım bağlamı bakımından ayırt edin."
+        "lead": "Mektup türlerini amaç, muhatap ve kullanım bağlamına göre karşılaştırın.",
+        "sections": [
+          {
+            "title": "Özel mektup",
+            "body": "Yakınlara ve dostlara duygu, düşünce ve günlük haberleri aktarmak için yazılır. Samimi dil; hitap, tarih, ileti, kapanış ve imza gibi bölümler öne çıkar."
+          },
+          {
+            "title": "Edebî mektup",
+            "body": "Sanatçılar ve düşünürler arasında edebiyat ya da sanat üzerine görüş paylaşır. Kişisel yazışma niteliğinin yanında dönemin düşünce ve edebiyat yaşamına ilişkin belge değeri taşıyabilir."
+          },
+          {
+            "title": "İş mektubu",
+            "body": "İşletmeler ve kişiler arasındaki ticari ya da mesleki iletişimde kullanılır. Konu açık ve kısa tutulur; kurum bilgisi, tarih, muhatap, ileti ve imza düzeni gözetilir."
+          },
+          {
+            "title": "Resmî mektup",
+            "body": "Kamu kurumları ve makamlarla resmî iletişim kurar. Açık ve ciddi bir dil kullanılır; makam, tarih, konu, muhatap, metin, imza ve varsa ekler belirli bir düzende verilir."
+          }
+        ]
       }
     },
     {
@@ -317,7 +335,16 @@
       "answer_id": "T1-P46-Q01",
       "layout": "reference",
       "prompt": "Örnek beğeni ölçütleri — Önce kendi ölçütlerinizi belirleyin; ardından aşağıdaki örneklerle karşılaştırın.",
-      "prompt_mode": "FLOW_OVERRIDE"
+      "prompt_mode": "FLOW_OVERRIDE",
+      "content": {
+        "lead": "Kitaptaki örnek tabloda dört ölçütü kendiniz belirlemeniz için boş bırakılmış; verilen tek örnek ölçüt “Yalnızlık”tır.",
+        "sections": [
+          {
+            "title": "Kitaptaki örnek ölçüt",
+            "body": "Yalnızlık"
+          }
+        ]
+      }
     },
     {
       "id": "s46-q2",
@@ -525,7 +552,21 @@
       "source_record_id": "T01-S0055",
       "layout": "reference",
       "content": {
-        "lead": "Dilekçenin resmî iletişimdeki işlevini ve kitaptaki temel biçim özelliklerini inceleyin."
+        "lead": "Dilekçenin resmî iletişimdeki işlevini, örneğini ve temel biçim kurallarını inceleyin.",
+        "sections": [
+          {
+            "title": "İşlevi",
+            "body": "Dilekçe, kişinin bir isteğini veya şikâyetini yetkili kamu makamına yazılı olarak iletmesidir. Kitaptaki örnekte belediyeden park yakınındaki yola hız kesici yapılması istenir; gerekçe çocukların güvenliğidir."
+          },
+          {
+            "title": "Metnin düzeni",
+            "body": "Makam adı ve yer, tarih, konu, kısa ve açık istek metni, uygun resmî kapanış, imza ve ad-soyad bulunur. Adres ve iletişim bilgileri eklenir; varsa ekler belirtilir."
+          },
+          {
+            "title": "Dil ve biçim",
+            "body": "Sade, anlaşılır ve resmî bir dil kullanın; isteği somut gerekçesiyle açıklayın. Kitap, dilekçelerin ilgili mevzuat kapsamında değerlendirilmesini ve başvurulara otuz gün içinde cevap verilmesini de hatırlatır."
+          }
+        ]
       }
     },
     {

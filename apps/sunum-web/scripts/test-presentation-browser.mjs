@@ -1696,6 +1696,32 @@ presentationBrowserSuite: {
     }
   }
 
+  for (const fixture of [
+    { slug: "mektup", id: "s42-reference", titles: ["Özel mektup", "Edebî mektup", "İş mektubu", "Resmî mektup"] },
+    { slug: "mektup", id: "s46-q1", titles: ["Kitaptaki örnek ölçüt", "Yalnızlık"] },
+    { slug: "mektup", id: "s51-reference", titles: ["İşlevi", "Metnin düzeni", "Dil ve biçim"] },
+    { slug: "biyografi-akif-194-198", id: "s194-two-biographies", titles: ["Tarık Buğra", "Âşık Veysel"] }
+  ]) {
+    screen = await openStep(fixture.slug, fixture.id);
+    const seenTitles = new Set();
+    for (let pageIndex = 0; pageIndex < fixture.titles.length + 1; pageIndex += 1) {
+      for (const title of fixture.titles) if (screen.text.includes(title)) seenTitles.add(title);
+      const renderedSections = await page.evaluate(`Array.from(document.querySelectorAll('#canvas .sections .sec')).map((section) => {
+        const rect = section.getBoundingClientRect();
+        return { text: section.innerText, width: rect.width, height: rect.height };
+      })`);
+      assert.ok(renderedSections.length > 0 && renderedSections.every((section) => section.width > 0 && section.height > 0),
+        `${fixture.id} source sections are visible in Chrome page ${pageIndex + 1}`);
+      assert.equal(await page.evaluate("document.querySelector('#canvas .slide__body')?.classList.contains('is-overflowing')"), false,
+        `${fixture.id} source sections fit the slide body on page ${pageIndex + 1}`);
+      if (fixture.titles.every((title) => seenTitles.has(title))) break;
+      screen = { ...screen, text: await next() };
+    }
+    for (const title of fixture.titles) {
+      assert.ok(seenTitles.has(title), `${fixture.id} renders its source-grounded ${title} section`);
+    }
+  }
+
   if (process.env.THEME1_ONLY !== "1") {
   screen = await openStep("karagoz", "s16-q1");
   assert.ok(screen.text.includes("tiplerin adlarını"));
