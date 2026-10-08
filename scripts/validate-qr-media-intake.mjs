@@ -210,4 +210,50 @@ assert.ok(bridge.answer.includes("Kül Tigin") && bridge.answer.includes("Tonyuk
 assert.ok(bridge.answer.includes("videoda anıldığına dair ses kanıtı değildir"),
   "Do not attribute selected literary works to untranscribed narration");
 
+// Theme 4: distinguish the 58-second title sequence from the main film,
+// and keep visual-only observations explicitly separate from spoken transcripts.
+const t4Files = [
+  ["19XU4GDV.mp4", 285, "bc54a785fede521619c982332455dc72", "UNVERIFIED-19XU4GDV.md"],
+  ["19XU49LQ.mp4", 285, "5fd2b97cb78fabe367aa3fcde8f9718d", "UNVERIFIED-19XU49LQ.md"],
+  ["19XU49KB.mp4", 293, "cc654606d608113ea65f523584ab801b", "UNVERIFIED-19XU49KB.md"],
+  ["19XU49LS.mp4", 307, "6e0ca79cee422408b5dcfaf3ad7a1459", "UNVERIFIED-19XU49LS.md"],
+];
+for (const [file, page, qrId, noteFile] of t4Files) {
+  const record = intake.records.find(r => r.file_name === file);
+  assert.ok(record, `Missing Theme 4 video: ${file}`);
+  assert.equal(record.printed_page, page);
+  assert.equal(record.book_qr.eba_content_id, qrId);
+  assert.equal(record.book_qr.media_binary_identity, "not_verified_from_eba_download");
+  assert.equal(record.mapping_status, "provisional_png_and_visual_review");
+  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.equal(record.visual_review, "time_stamped_sampled_frames");
+  const notePath = "data/grade-11/source/qr-review-notes/" + noteFile;
+  assert.equal(record.review_notes_path, notePath);
+  const note = fs.readFileSync(path.join(root, notePath), "utf8");
+  assert.ok(note.includes("EBA") && note.toLocaleLowerCase("tr-TR").includes("ses"),
+    "Every Theme 4 review must disclose EBA/MP4 and sound-transcript uncertainty");
+}
+const theme4Part10 = read("data/grade-11/source/teacher-book/theme-4/answer-bank/part-10-pages-284-297.json");
+const theme4Part12 = read("data/grade-11/source/teacher-book/theme-4/answer-bank/part-12-pages-303-307.json");
+const q4 = new Map([...theme4Part10.entries, ...theme4Part12.entries].map(q => [q.question_id,q]));
+for (const [id,kind,refs] of [
+  ["T4-P285-Q02", "performance_support", ["UNVERIFIED-19XU4GDV.md"]],
+  ["T4-P286-Q03", "source_limited", ["UNVERIFIED-19XU49LQ.md"]],
+  ["T4-P293-Q02", "source_limited", ["UNVERIFIED-19XU49KB.md"]],
+  ["T4-P293-Q03", "source_limited", ["UNVERIFIED-19XU49KB.md","UNVERIFIED-19XU49LQ.md"]],
+  ["T4-P307-SL13", "source_limited", ["UNVERIFIED-19XU49LS.md"]],
+  ["T4-P307-SL14", "source_limited", ["UNVERIFIED-19XU49LS.md"]],
+]) {
+  const answer = q4.get(id);
+  assert.equal(answer?.entry_type, kind, `Source verification level changed for ${id}`);
+  for (const ref of refs) assert.ok(answer.source_locator.includes(ref), `Evidence missing in ${id}`);
+}
+const comparison = q4.get("T4-P293-Q03");
+assert.deepEqual(Object.keys(comparison.answer_sections), ["Dil ve Üslup","İleti","Tür","İçerik"]);
+for(const v of Object.values(comparison.answer_sections["Dil ve Üslup"]))
+  assert.ok(v.includes("transkript edilmedi"),"Cannot certify style without audio");
+for(const id of ["T4-P307-SL13","T4-P307-SL14"])
+  assert.ok(q4.get(id).answer.includes("ses") || q4.get(id).answer.includes("transkript"),
+    "Aidiyet answer must not assign unverified motives to people");
+
 console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");
