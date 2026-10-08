@@ -29,6 +29,19 @@ Aşağıdaki üç kaynak için **kitapta bulunan özgün EBA QR hedefi doğrulan
 
 | 159 | `19XU49MB.mp4` — Göktürklerin Dirilişi | [İlteriş Kutluğ Kağan, Kül Tigin, Bilge Kağan ve Tonyukuk ekran etiketleri](qr-review-notes/UNVERIFIED-19XU49MB.md); Q08 karşılaştırmasına kısmi görsel kanıt eklendi | Sesli anlatım, ekranda gösterilen tarihler ve MP4 kökeninin doğrulanması |
 
+## Tema 4 — Anadolu İnsanı video incelemeleri
+
+Kitap PDF'sinden **dört özgün video QR hedefi** kesinleştirilmiştir. Drive MP4'lerinin EBA sunucusundan indirilmiş birebir dosyalar olduğu henüz doğrulanmadığından kısmi kare incelemeleri **geçici medya kaydı** olarak tutulur.
+
+| Basılı sayfa | Ayrı QR kaynağı / dosya | Doğrulanan görüntüler | Kullanılan soru / açık eksik |
+| --- | --- | --- | --- |
+| 285 | **58 sn. jenerik** — `19XU4GDV.mp4` | [Su, tabiat, hayvan bakımı ve ANADOLU İNSANI başlığı](qr-review-notes/UNVERIFIED-19XU4GDV.md) | Q02 izleme öncesi tahmin; ses/jenerik müziği bilinmiyor |
+| 285 | **Uzun Fedakârlık** — `19XU49LQ.mp4` | [Dağlık arazi, yürüyüş, demiryolu çevresi ve kırsal doğa](qr-review-notes/UNVERIFIED-19XU49LQ.md) | s.286 Q03, s.293 karşılaştırması; kişinin amacı ve kesin ileti bilinmiyor |
+| 293 | **Çalışkanlık** — `19XU49KB.mp4` | [Traktör, üretim, meyve/ürün toplama, topluluk görüntüleri](qr-review-notes/UNVERIFIED-19XU49KB.md) | Q02–Q03; kesin ana düşünce, dil ve üslup için ses gerekiyor |
+| 307 | **Aidiyet** — `19XU49LS.mp4` | [Dağlık çevre, köy/çeşme, yollar ve günlük doğa işleri](qr-review-notes/UNVERIFIED-19XU49LS.md) | Soru 13–14; kişinin hisleri/söyledikleri henüz bilinmiyor |
+
+Bu notlar **tam ses transkripti değildir**. Videoların izinsiz kopyaları, uzun birebir transkriptleri veya kanıtlanmamış kişi niyetleri kamusal repoya eklenmez.
+
 ## Kaynak güvenliği
 
 - `qr-sources.json` yalnız EBA kimliği/QR hedefi doğrulanmış kaynakların kanonik kaydıdır.
