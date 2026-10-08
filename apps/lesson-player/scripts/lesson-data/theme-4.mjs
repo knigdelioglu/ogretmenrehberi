@@ -416,9 +416,9 @@ assert(theatreWorkshopById.get("s281-plan")?.content?.items?.length === 6 &&
 assert(theatreWorkshopById.get("s282-content")?.content?.items?.length === 6 &&
   theatreWorkshopById.get("s282-rules")?.content?.items?.length === 7,
   "İçerik oluşturma altı, kural uygulama yedi öğretim kümesinde görünmeli.");
-assert(theatreWorkshopById.get("s283-performance")?.content?.items?.length === 5 &&
+assert(theatreWorkshopById.get("s283-performance")?.content?.items?.length === 6 &&
   theatreWorkshopById.get("s283-performance")?.answer?.answer?.includes("QR"),
-  "Görünür beş değerlendirme ekseni korunmalı; QR rubrik puanı uydurulmamalı.");
+  "Görünür altı rubrik ölçütü korunmalı; QR kaynağı dışında puan uydurulmamalı.");
 for (const id of ["s280-q2","s281-plan","s281-checklist","s282-content","s282-rules","s283-performance","s283-q1","s283-q2","s283-q3"]) {
   assert(theatreWorkshopById.get(id)?.answer?.entry_type === "performance_support",
     `Canlandırma süreci hazır öğrenci performansı gibi sunulmamalı: ${id}`);
@@ -464,9 +464,9 @@ for (const [id, sourceId, answerId] of [
 assert(anadoluById.get("s287-vocab")?.content?.items?.length === 5 &&
   Object.keys(anadoluById.get("s287-vocab")?.answer?.answer_sections ?? {}).length === 5,
   "Anadolu İnsanı söz varlığı beş kelimeyi korumalı.");
-assert(anadoluById.get("s288-q2")?.content?.items?.length === 5 &&
+assert(anadoluById.get("s288-q2")?.content?.items?.length === 4 &&
   anadoluById.get("s286-checklist")?.content?.items?.length === 5,
-  "Zihin haritası ve dinleme kontrol listesi beşli yapıyı korumalı.");
+  "Zihin haritasının dört boş alanı ve dinleme kontrol listesinin beş ölçütü korunmalı.");
 for (const id of ["s286-theme-words","s286-messages","s287-q1","s288-q2","s289-q3","s289-q5","s290-q6","s290-q7","s290-q8","s290-q9"]) {
   assert(anadoluById.get(id)?.answer?.entry_type === "source_limited",
     `QR video görülmeden kesin cevap üretilmemeli: ${id}`);
@@ -569,8 +569,8 @@ assert(posterStepOrder.indexOf("s300-content") < posterStepOrder.indexOf("s300-m
 assert(posterById.get("s301-model")?.answer?.entry_type === "performance_support" &&
   posterById.get("s301-model")?.answer?.in_textbook_sequence === false,
   "Örnek afiş iskeleti kitap sırasından ayrı öğretmen desteği olarak işaretlenmeli.");
-assert(posterById.get("s302-rubric")?.content?.items?.length === 5,
-  "Afiş rubriğinde yalnız görünür beş ölçüt kullanılmalı.");
+assert(posterById.get("s302-rubric")?.content?.items?.length === 6,
+  "Afiş rubriğinde kaynak anahtarın altı ölçütü gösterilmeli.");
 for (const step of posterWorkshop.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Afiş s.298–302 doğrulanmış kaynak: ${step.source.source_record_id}`);

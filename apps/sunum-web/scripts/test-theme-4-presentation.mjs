@@ -240,6 +240,43 @@ assert.deepEqual(comparison.units.map((unit) => unit.section_keys), [
   ["Yapı unsurları", "Dil ve üslup", "İleti"]
 ], "the seven comparison criteria reveal in two related groups");
 
+
+const flowStepById = new Map(flows.flatMap((flow) => flow.steps.map((step) => [step.id, step])));
+for (const [id, count] of Object.entries({
+  "s247-vocab": 6, "s250-social-table": 7, "s250-social-table-rest": 6,
+  "s258-grammar-apply": 6, "s272-table": 7, "s278-disciplines": 7,
+  "s287-vocab": 5, "s294-q1": 5, "s294-q4": 5
+})) {
+  assert.equal(flowStepById.get(id)?.content?.items?.length, count,
+    id + ": all required items appear in student task");
+}
+assert.equal(flowStepById.get("s250-social-table").content.items.length +
+  flowStepById.get("s250-social-table-rest").content.items.length, 13);
+assert.equal(flowStepById.get("s288-q2").content.items.length, 4,
+  "mind map asks for only four unfilled areas");
+assert.match(flowStepById.get("s288-q2").content.note, /Bilgilerin Sunuluş Şekli/u);
+for (const id of ["s306-q8", "s306-q9", "s307-q10"]) {
+  assert.ok(flowStepById.get(id)?.content?.lead && flowStepById.get(id)?.thinking,
+    id + ": pre-answer guidance is available");
+}
+assert.doesNotMatch(flowStepById.get("s306-q8").content.lead, /diyalog|monolog/iu);
+assert.doesNotMatch(flowStepById.get("s306-q9").content.lead, /tamamen/iu);
+assert.doesNotMatch(flowStepById.get("s307-q10").content.lead, /korunup|kuşak|arşiv/iu);
+assert.doesNotMatch(JSON.stringify(flowStepById.get("s264-stairs").content),
+  /yaşam evresi|yükselme/iu);
+assert.match(flowStepById.get("s265-check").content.sections[1].body, /metin kanıtıyla/u);
+assert.match(flowStepById.get("s299-strategy").content.note, /hedef kitle uygunluğu/u);
+for (const id of ["s283-performance", "s302-rubric"]) {
+  const rubric = flowStepById.get(id).content;
+  assert.equal(rubric.items.length, 6, id + ": six rubric criteria");
+  assert.equal(rubric.sections.length, 7, id + ": six grouped criteria and total");
+  for (const section of rubric.sections.slice(0, 6)) {
+    for (const level of ["Başlangıç düzeyinde", "Kabul edilebilir", "İyi", "Çok iyi"]) {
+      assert.ok(section.body.includes(level), id + "/" + section.title + ": " + level);
+    }
+  }
+}
+
 const p285 = pageByPrintedNumber.get(285);
 assert.ok(p285.blocks.some((block) => block.type === "visual" && /raylarının yanında bir kaplumbağayı tutan eller/i.test(JSON.stringify(block))),
   "printed page 285 describes the turtle beside the railway tracks");

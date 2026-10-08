@@ -166,14 +166,14 @@ try {
             listRect.top >= bodyRect.top - 1 && listRect.bottom <= bodyRect.bottom + 1)
         };
       })()`);
-      assert.equal(step.content.items.length, 5, "s283-performance has five canonical performance criteria");
+      assert.equal(step.content.items.length, 6, "s283-performance displays all six source rubric criteria");
       assert.ok(performanceCriteria.items.length > 0 &&
         JSON.stringify(performanceCriteria.items) === JSON.stringify(step.content.items.slice(0, performanceCriteria.items.length)),
       "s283-performance starts its paginated criteria list in canonical source order");
       assert.match(performanceCriteria.listFont, /^Inter(?:,|$)/, "s283-performance criteria use Inter at 1920x1080");
       assert.equal(performanceCriteria.criteriaInk, "#182a35", "s283-performance uses the criteria palette");
       assert.equal(performanceCriteria.criteriaTeal, "#176d68", "s283-performance uses the criteria teal accent");
-      const expectedMarkerColors = ["rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)", "rgb(23, 109, 104)", "rgb(83, 99, 167)"];
+      const expectedMarkerColors = ["rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)", "rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)"];
       assert.deepEqual(performanceCriteria.markerColors, expectedMarkerColors.slice(0, performanceCriteria.items.length),
         "s283-performance visible criteria markers retain the teal-blue-gold sequence");
       assert.deepEqual(performanceCriteria.rowColumns, [2], "s283-performance criteria retain the two-column checkbox row geometry");

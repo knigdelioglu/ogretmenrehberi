@@ -224,103 +224,31 @@
       "prompt": "Değerlendirme — Canlandırmanızı görünür ölçütlerle gözden geçiriniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Aşağıda kitaptaki anahtarda yer alan ölçütler, dört puan düzeyi ve aralıklarıyla gösterilmiştir.",
+        "lead": "Her ölçütte dört başarı düzeyini ve puan aralıklarını aynı kartta karşılaştırın. Uygulama desteği ile bağlantılı dereceli puanlama anahtarını birlikte kullanın; puanlamada kaynak belgeyi esas alın.",
         "sections": [
           {
-            "title": "Başlangıç düzeyinde · 1–2 puan",
-            "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu içeriğine uygun bir şekilde canlandıramamıştır"
+            "title": "İçeriğe uygunluk · 15 puan",
+            "body": "Başlangıç düzeyinde · 1–2 puan: Oyunu içeriğine uygun bir şekilde canlandıramamıştır.  •  Kabul edilebilir · 3–5 puan: Oyunu kısmen içeriğine uygun bir şekilde canlandırmıştır.  •  İyi · 6–9 puan: Oyunu içeriğine uygun bir şekilde canlandırmıştır.  •  Çok iyi · 10–15 puan: Oyunu içeriğe uygunluk açısından oldukça başarılı bir düzeyde canlandırmıştır."
           },
           {
-            "title": "Kabul edilebilir · 3–5 puan",
-            "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu kısmen içeriğine uygun bir şekilde canlandırmıştır"
+            "title": "Grupla uyum içinde çalışma · 20 puan",
+            "body": "Başlangıç düzeyinde · 1–4 puan: Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmamıştır.  •  Kabul edilebilir · 5–8 puan: Oyun hazırlıkları ve canlandırma esnasında grupla kısmen uyum içerisinde çalışmıştır.  •  İyi · 9–15 puan: Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmıştır.  •  Çok iyi · 16–20 puan: Oyun hazırlıkları ve canlandırma esnasında grupla çok uyumlu çalışmıştır."
           },
           {
-            "title": "İyi · 6–9 puan",
-            "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu içeriğine uygun bir şekilde canlandırmıştır"
+            "title": "Özgünlük · 15 puan",
+            "body": "Başlangıç düzeyinde · 1–3 puan: Oyunu canlandırırken kendi yorumunu hiç katmamıştır.  •  Kabul edilebilir · 4–7 puan: Oyunu canlandırırken kendi yorumunu kısmen katmıştır.  •  İyi · 8–11 puan: Oyunu canlandırırken kendi yorumunu yeterince katmıştır.  •  Çok iyi · 12–15 puan: Oyunu canlandırmada  kendi yorumu çok başarılı düzeydedir."
           },
           {
-            "title": "Çok iyi · 10–15 puan",
-            "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu içeriğe uygunluk açısından oldukça başarılı bir düzeyde canlandırmıştır"
+            "title": "Canlandırma becerisi · 15 puan",
+            "body": "Başlangıç düzeyinde · 1–2 puan: Oyunu canlandırma becerisi yetersizdir.  •  Kabul edilebilir · 3–5 puan: Oyunu canlandırma becerisi kısmen yeterlidir.  •  İyi · 6–9 puan: Oyunu canlandırma becerisi yeterlidir.  •  Çok iyi · 10–15 puan: Oyunu canlandırma becerisi oldukça başarılıdır."
           },
           {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmamıştır"
+            "title": "Türkçenin doğru kullanımı · 15 puan",
+            "body": "Başlangıç düzeyinde · 1–3 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısına hiç dikkat etmemiştir.  •  Kabul edilebilir · 4–7 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısına kısmen dikkat etmiştir.  •  İyi · 8–11 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısını yeterli düzeyde yansıtmıştır.  •  Çok iyi · 12–15 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısını yansıtmada oldukça başarılıdır."
           },
           {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla kısmen uyum içerisinde çalışmıştır"
-          },
-          {
-            "title": "İyi · 9–15 puan",
-            "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmıştır"
-          },
-          {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla çok uyumlu çalışmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–3 puan",
-            "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırırken kendi yorumunu hiç katmamıştır"
-          },
-          {
-            "title": "Kabul edilebilir · 4–7 puan",
-            "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırırken kendi yorumunu kısmen katmıştır"
-          },
-          {
-            "title": "İyi · 8–11 puan",
-            "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırırken kendi yorumunu yeterince katmıştır"
-          },
-          {
-            "title": "Çok iyi · 12–15 puan",
-            "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırmada  kendi yorumu çok başarılı düzeydedir"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–2 puan",
-            "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi yetersizdir"
-          },
-          {
-            "title": "Kabul edilebilir · 3–5 puan",
-            "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 6–9 puan",
-            "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi yeterlidir"
-          },
-          {
-            "title": "Çok iyi · 10–15 puan",
-            "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi oldukça başarılıdır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–3 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısına hiç dikkat etmemiştir"
-          },
-          {
-            "title": "Kabul edilebilir · 4–7 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısına kısmen dikkat etmiştir"
-          },
-          {
-            "title": "İyi · 8–11 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısını yeterli düzeyde yansıtmıştır"
-          },
-          {
-            "title": "Çok iyi · 12–15 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısını yansıtmada oldukça başarılıdır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine dikkat etmemiştir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine kısmen dikkat etmiştir"
-          },
-          {
-            "title": "İyi · 9–15 puan",
-            "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlaması, jest ve mimikleri yeterli düzeydedir"
-          },
-          {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlama ile jest ve mimiklerini kullanmada oldukça başarılıdır"
+            "title": "Sözü ve beden dilini etkili kullanma · 20 puan",
+            "body": "Başlangıç düzeyinde · 1–4 puan: Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine dikkat etmemiştir.  •  Kabul edilebilir · 5–8 puan: Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine kısmen dikkat etmiştir.  •  İyi · 9–15 puan: Canlandırma esnasında vurgu ve tonlaması, jest ve mimikleri yeterli düzeydedir.  •  Çok iyi · 16–20 puan: Canlandırma esnasında vurgu ve tonlama ile jest ve mimiklerini kullanmada oldukça başarılıdır."
           },
           {
             "title": "Toplam puan ve hesaplama",
@@ -333,7 +261,7 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=283"
           },
           {
-          "label": "Kaynak: 19XU4J2Q.docx",
+            "label": "Kaynak: 19XU4J2Q.docx",
             "url": "assets/assessment-documents/19XU4J2Q.docx",
             "download": true
           },
@@ -344,11 +272,12 @@
           }
         ],
         "items": [
-          "Kurgulanan içeriğe uygunluk",
+          "İçeriğe uygunluk",
+          "Grupla uyum içinde çalışma",
           "Özgünlük",
-          "Sözü etkili kullanma",
-          "Beden dilini etkili kullanma",
-          "Grupla uyum içinde çalışma"
+          "Canlandırma becerisi",
+          "Türkçenin doğru kullanımı",
+          "Sözü ve beden dilini etkili kullanma"
         ]
       }
     },

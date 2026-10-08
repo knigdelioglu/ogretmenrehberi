@@ -110,22 +110,18 @@
       "source_record_id": "T04-S0042",
       "layout": "comparison",
       "density": "compact",
-      "prompt": "Yaşam ve merdiven — Ortak çağrışımlarını karşılaştırınız.",
+      "prompt": "Okuma öncesi — Merdiven size hangi farklı çağrışımları düşündürüyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Fiziksel merdivenin hareketini hayata uygularken bunun henüz metin öncesi tahmin olduğunu açık tutun.",
+        "lead": "Henüz hikâyeyi okumadan başlık ve günlük deneyimlerinizden hareketle farklı çağrışımlar üretin; bunları metnin anlamı olarak kesinleştirmeyin.",
         "sections": [
           {
-            "title": "Basamak",
-            "body": "Zamanla ilerleme veya yaşam evresi."
+            "title": "Gözlem",
+            "body": "Merdivenin gündelik hayatta nerelerde ve hangi amaçlarla kullanıldığını söyleyin."
           },
           {
-            "title": "Çıkma",
-            "body": "Hedefe yönelme, yükselme veya çaba."
-          },
-          {
-            "title": "İnme",
-            "body": "Yavaşlama, geri dönme ya da bakış açısı değişimi."
+            "title": "İlk tahminler",
+            "body": "Başlığın hikâyede neyi anlatabileceğine dair birden fazla tahmin yazın; gerekçe olarak yalnız ön bilgilerinizi kullanın."
           }
         ]
       }
@@ -171,18 +167,18 @@
       "source_record_id": "T04-S0042",
       "layout": "process",
       "density": "compact",
-      "prompt": "Ön tahmini kontrol edin — Metinde merdiven yalnız fiziksel bir mekân mı?",
+      "prompt": "Okuma sonrası — İlk tahmininizi metindeki ayrıntılarla sınayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İlk tahmininize dönün ve daha sonra s.267–270'te tartışacağınız simgesel anlamlara hazırlık yapın.",
+        "lead": "Ön okuma tahminini olduğu gibi koruyun. Metinde gerçekten anlatılan olayları belirleyin; ardından simgesel yorumların hangilerine metinden gerekçe bulabildiğinizi tartışın.",
         "sections": [
           {
-            "title": "Somut düzey",
-            "body": "Memurların katlar arasında inip çıkması ve yolda karşılaşması."
+            "title": "Metindeki somut düzey",
+            "body": "Memurların katlar arasında inip çıkması ve yolda karşılaşması gibi gözlenebilir ayrıntıları belirleyin."
           },
           {
-            "title": "Çağrışım",
-            "body": "Anlatıcının hayata, yaşlanmaya ve çalışmaya bakışındaki değişimi düşündüren tekrarlar."
+            "title": "Olası simgesel okumalar",
+            "body": "Basamak, çıkma ve inmenin yaşam evreleri, çaba veya yön değiştirmeyle ilişkisi kurulabilir mi? Başka yorumlara da açık kalın; her yorumu metin kanıtıyla sınayın."
           }
         ]
       }

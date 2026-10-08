@@ -260,17 +260,17 @@
       "answer_id": "T4-P288-Q02",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Metni Anlayalım 2 — Zihin haritasını beş başlıkta doldurunuz.",
+      "prompt": "Metni Anlayalım 2 — Zihin haritasındaki dört boş alanı doldurunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Konu, tema ve ana düşünceyi birbirine karıştırmayın; bilgilerin sunuluş biçimini gerçekten kullanılan video yöntemlerine göre yazın.",
+        "lead": "Notlarınızdan hareketle tema, konu, ana düşünce ve yardımcı düşünceleri ayrı ayrı belirleyin. Kitapta hazır yazılmış beşinci alanı yeniden doldurmayın.",
         "items": [
-          "Konu",
           "Tema",
+          "Konu",
           "Ana düşünce",
-          "Yardımcı düşünceler",
-          "Bilgilerin sunuluş şekli"
-        ]
+          "Yardımcı düşünceler"
+        ],
+        "note": "Kitapta hazır verilen bilgi — Bilgilerin Sunuluş Şekli: “Bilgiler, içeriği yansıtacak şekilde sunulmuştur.”"
       }
     },
     {
