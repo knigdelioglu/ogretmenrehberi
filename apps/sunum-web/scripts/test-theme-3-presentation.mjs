@@ -570,7 +570,7 @@ function verifyPedagogicalEdits() {
     for (const row of rubric.rows) {
       assert.equal(row.levels.length, 4);
       assert.ok(row.levels.every((level, i) => level.label === rubric.columns[i] &&
-        /^\\d+[–-]\\d+$/.test(level.points) && level.description.trim().length > 12));
+        /^\d+[–-]\d+$/.test(level.points) && level.description.trim().length > 12));
       assert.equal(+row.levels[3].points.split(/[–-]/)[1], row.max_points);
     }
   }
