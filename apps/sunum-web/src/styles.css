@@ -1911,6 +1911,7 @@ button {
 }
 
 .slide--modern-companion .companion-focus > :not(.panel__label) {
+  min-width: 0;
   width: 100%;
 }
 
