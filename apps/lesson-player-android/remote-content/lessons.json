@@ -866,7 +866,9 @@
           "items": [
             "Karagöz oyunundaki dil ve anlatım, yardımcı roller ve beden dili üzerine bireysel olarak düşünün.",
             "Sıra arkadaşınızla fikirlerinizi karşılaştırın ve örtüşen görüşleri belirleyin.",
-            "Ortak düşüncelerinizi sınıfla paylaşın."
+            "Ortak düşüncelerinizi sınıfla paylaşın.",
+            "Okuma amacınızı belirleyin; s.18–24'teki Yazıcı metnine 2–3 dakika göz gezdirin. Henüz rollere ayırarak okumayın.",
+            "Soruları cevaplamadan önce metinden bir eski söyleyişi ve bir yanlış anlamayı işaretleyin; ayrıntılı rol okumasını s.18 aşamasında yapın."
           ]
         }
       },
@@ -1369,11 +1371,11 @@
             "Esbab": "sebepler",
             "Murat": "amaç",
             "Bendeniz": "ben",
-            "Silsile": "zincir / sıra",
+            "Silsile": "Bu beddua bağlamında soy / sülale (\"Sinsileni sansar boğsun!\" → \"Soyunu / sülaleni sansar boğsun!\"). “Zincir, sıra” başka bağlamlarda görülebilen genel sözlük anlamıdır, burada uygun karşılık değildir.",
             "İspir": "seyis / at bakıcısı",
             "Metnin üslubuna etkisi": "Bu sözcükleri modern karşılıklarla değiştirmek Karagöz'ün yanlış anlamalarına dayalı mizahı ve dönemin dil havasını zayıflatabilir."
           },
-          "explanation": "Etkinlikte yalnız anlam değil, kelime değişiminin üsluba etkisi de görülebilir.",
+          "explanation": "Sözcüğün genel sözlük anlamı ile metinde kullanılan bağlamsal anlamını ayırın. Güncel karşılığa geçişte söz oyununun sesi ve güldürü etkisi değişebilir.",
           "source_locator": "basılı s.25 / PDF s.26"
         },
         "content": null
@@ -1487,7 +1489,12 @@
         },
         "answer": null,
         "content": {
-          "lead": "Söz varlığı çalışmasının sonunda sınıfça bir kelime duvarı oluşturun."
+          "lead": "Söz varlığı çalışmasının sonunda sınıfça bir kelime duvarı oluşturun.",
+          "items": [
+            "Bir sözcük seçip metinde geçtiği kısa sözü yazın.",
+            "Bu sözdeki bağlam anlamını ve günlük Türkçedeki uygun karşılığını ekleyin.",
+            "Sözcüğün yanlış anlamaya veya dil mizahına katkısı varsa bir cümleyle açıklayın."
+          ]
         }
       },
       {
@@ -1516,19 +1523,19 @@
           "sections": [
             {
               "title": "Mukaddime",
-              "body": "Hacivat'ın perdeye gelerek oyunu başlattığı giriş bölümüdür."
+              "body": "Hacivat'ın semai söyleyerek perdeye geldiği, perde gazelinin duyulduğu giriş bölümüdür."
             },
             {
               "title": "Muhavere",
-              "body": "Karagöz ile Hacivat'ın söyleştiği; yanlış anlama ve söz oyunlarının öne çıktığı bölümdür."
+              "body": "Karagöz ve Hacivat'ın karşılıklı konuştuğu bölümdür. “Sinsileni sansar boğsun!” gibi yanlış anlamalar ve söz oyunları belirgindir."
             },
             {
               "title": "Fasıl",
-              "body": "Asıl olayın gösterildiği ve diğer tiplerin de oyuna katıldığı bölümdür."
+              "body": "Asıl olayın geliştiği bölümdür: Yazıcı'da Karagöz'ün dükkânına mektup veya başka yazı işleri için farklı tipler gelir."
             },
             {
               "title": "Bitiş",
-              "body": "Kısa kapanış konuşmasının yapıldığı, kusurlar için özür dilenip sonraki oyunun duyurulabildiği bölümdür."
+              "body": "Kısa kapanışın yapıldığı bölümdür; “Her ne kadar sürc-i lisan ettikse afola!” gibi özür ve sonraki oyun duyurusu bulunabilir."
             }
           ],
           "note": "Kitap örnekleri incelendikten sonra bu şemayı kısa hafıza desteği olarak kullanın.",
@@ -1537,6 +1544,9 @@
               "label": "Ders kitabı s.26 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=26"
             }
+          ],
+          "items": [
+            "Hızlı yoklama: Hacivat'ın semai söyleyerek perdeye gelmesi hangi bölüme aittir? Yanıtınızı kitaptaki örnekle doğrulayın."
           ]
         }
       },
@@ -1795,23 +1805,13 @@
           "guidance": "Önce kitabın sorusunu metindeki söz varlığı örnekleriyle cevaplatın. Gerekirse tip–karakter mini uygulamasına ikincil bir kavram desteği olarak geçin: Karagöz ve Hacivat’ın sözlerinden hangileri temsilî tip özelliklerini, hangileri kişisel ayrıntıları gösteriyor? Bu uygulamanın ayrı bir kitap sorusu olmadığını ve sosyal statü/eğitim yorumlarının metin kanıtıyla sınırlı kalması gerektiğini belirtin."
         },
         "content": {
-          "lead": "Tip–karakter ayrımını “Yazıcı” metninden seçtiğiniz kanıtlarla uygulayın.",
+          "lead": "Yazıcı'daki tiplerin söz varlığını sosyal statü ve eğitim durumlarıyla ilişkilendirin; yorumunuzu doğrudan repliklerle sınayın.",
           "items": [
-            "Karagöz veya Hacivat için metinden en az iki söz ya da davranış kanıtı seçin.",
-            "Seçtiğiniz kanıtların kişiyi temsilî/kalıplaşmış bir tipe mi, yoksa bireysel ve çok yönlü bir karaktere mi yaklaştırdığını tartışın.",
-            "Sonucunuzu gerekçelendirin; seçtiğiniz kişinin karakter yönünün güçlenmesi için iç dünya, çelişki, geçmiş, seçim veya değişim bakımından hangi ayrıntıların eklenebileceğini söyleyin."
+            "Karagöz, Hacivat ve Çelebi'nin konuşmalarından birbirinden farklı iki söz seçin.",
+            "Sözcük ve söyleyiş farklarının sosyal çevre veya eğitimle ilgili hangi olası ipuçlarını verdiğini açıklayın.",
+            "Metnin doğrudan gösterdiği sözle yalnızca tahmin ettiğiniz eğitim ya da toplumsal konumu ayırın; kesin biyografi üretmeyin."
           ],
-          "sections": [
-            {
-              "title": "Tip",
-              "body": "Belirgin ve tekrarlanan özellikleriyle bir toplumsal kesimi, mesleği, yöresel kimliği ya da davranış biçimini temsil eder; temsil işlevi bireysel psikolojik ayrıntının önündedir."
-            },
-            {
-              "title": "Karakter",
-              "body": "Bireysel yönleri, iç dünyası, çelişkileri, geçmişi ve seçimleri daha ayrıntılı işlenir; tek bir temsil özelliğine indirgenmesi daha zordur."
-            }
-          ],
-          "note": "Bu karşılaştırma, s.27–29’daki tip–karakter ayrımını pekiştirmek için eklenmiştir."
+          "note": "İsteğe bağlı pekiştirme: Soru yanıtlandıktan sonra temsilî tip ile çok yönlü karakter ayrımı ayrıca kısaca tartışılabilir; ana sorunun yerini almamalıdır."
         }
       },
       {
@@ -4131,6 +4131,10 @@
             {
               "title": "Değerlendirmeden sonra",
               "body": "“Kısmen” veya “Hayır” işaretlediğiniz becerileri gözden geçiriniz; araştırarak veya öğretmeninizden destek alarak eksiklerinizi tamamlayınız. Bir grup arkadaşınızın çalışmasını kitaptaki karekodda verilen Akran Değerlendirme Formu ile değerlendiriniz."
+            },
+            {
+              "title": "Bir sonraki çalışmaya aktarın",
+              "body": "“Kısmen” veya “Hayır” seçtiğiniz bir ölçütü belirleyin; kendi çalışmanızdan bir kanıt gösterin ve sonraki grup etkinliğinde uygulayacağınız tek bir düzeltme yazın."
             }
           ],
           "sources": [
@@ -5707,74 +5711,6 @@
         }
       },
       {
-        "id": "s43-private-letter",
-        "layout": "comparison",
-        "density": "large",
-        "sections_layout": "grid",
-        "reveal_order": [],
-        "display_prompt": "Özel mektup: kişisel haberleşme",
-        "display_prompt_mode": "FLOW_OVERRIDE",
-        "source": {
-          "source_record_id": "T01-S0034",
-          "theme_id": "TEMA_01",
-          "printed_page_range": "43",
-          "book_heading": "Fark Edelim / Karşılaştıralım",
-          "task_type": "COMPARISON",
-          "prompt": "“Yazıcı” ile Âli’ye Mektuplar'ı içerik, tür, dönem/çevre, yapı, dil/üslup ve ileti bakımından karşılaştırma",
-          "rights_mode": "DERIVED_ACTIVITY",
-          "source_locator": "basılı s.43 / PDF s.44; karekod kaynağı QR-EBA-E43890DFD82A (EBA içerik ID: e43890dfd82a3b5c7823d3b0fba2b627; video içeriği henüz incelenmedi)",
-          "source_status": "VERIFIED"
-        },
-        "answer": null,
-        "content": {
-          "lead": "Özel mektuplar, yakın kişiler arasında duygu, düşünce ve günlük haberleri paylaşmak için yazılır. Samimi ve kişisel bir dil öne çıkar.",
-          "sections": [
-            {
-              "title": "Kitaptaki ölçüt",
-              "body": "Mektubun belirli bir muhatabı vardır; hitap, kişisel ilişkiyi ve yazışma amacını yansıtır."
-            },
-            {
-              "title": "Kaplan'ın mektubunda",
-              "body": "Kaplan, dostu Âli'ye günlük yaşamından ve yalnızlığından söz eder; onunla konuşmaya duyduğu ihtiyacı dile getirir. Bu özellikler özel mektup yönünü gösterir."
-            }
-          ]
-        }
-      },
-      {
-        "id": "s43-literary-letter",
-        "layout": "comparison",
-        "density": "large",
-        "sections_layout": "grid",
-        "reveal_order": [],
-        "display_prompt": "Edebî mektup: edebiyat üzerine düşünce paylaşımı",
-        "display_prompt_mode": "FLOW_OVERRIDE",
-        "source": {
-          "source_record_id": "T01-S0034",
-          "theme_id": "TEMA_01",
-          "printed_page_range": "43",
-          "book_heading": "Fark Edelim / Karşılaştıralım",
-          "task_type": "COMPARISON",
-          "prompt": "“Yazıcı” ile Âli’ye Mektuplar'ı içerik, tür, dönem/çevre, yapı, dil/üslup ve ileti bakımından karşılaştırma",
-          "rights_mode": "DERIVED_ACTIVITY",
-          "source_locator": "basılı s.43 / PDF s.44; karekod kaynağı QR-EBA-E43890DFD82A (EBA içerik ID: e43890dfd82a3b5c7823d3b0fba2b627; video içeriği henüz incelenmedi)",
-          "source_status": "VERIFIED"
-        },
-        "answer": null,
-        "content": {
-          "lead": "Edebî mektuplar, kişisel yazışma içinde sanat ve edebiyat görüşlerinin de paylaşıldığı metinlerdir.",
-          "sections": [
-            {
-              "title": "Kitaptaki ölçüt",
-              "body": "Yazar ve düşünürlerin edebî konular üzerine görüş, duygu ve düşüncelerini aktarması mektuba edebî bir işlev kazandırabilir."
-            },
-            {
-              "title": "Kaplan'ın mektubunda",
-              "body": "Kaplan roman kişileri ve anlatım tekniklerini değerlendirir; Dostoyevski ile Stendhal'in roman anlayışlarını karşılaştırır ve okuduklarının yazma isteğine etkisini anlatır."
-            }
-          ]
-        }
-      },
-      {
         "id": "s43-q1",
         "layout": "question",
         "density": "large",
@@ -5848,15 +5784,73 @@
           ]
         },
         "content": {
-          "lead": "S.42'deki mektup türlerini amaç, muhatap ve içerik bakımından karşılaştırarak bu metnin hangi türe daha yakın olduğunu gerekçelendirin.",
+          "lead": "Dört mektup türünün ölçütlerini kullanın. Önce kendi tür tahmininizi yapın; Kaplan'ın hitabından ve roman değerlendirmelerinden iki kanıt seçerek gerekçelendirin."
+        }
+      },
+      {
+        "id": "s43-private-letter",
+        "layout": "comparison",
+        "density": "large",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "Özel mektup: kişisel haberleşme",
+        "display_prompt_mode": "FLOW_OVERRIDE",
+        "source": {
+          "source_record_id": "T01-S0034",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "43",
+          "book_heading": "Fark Edelim / Karşılaştıralım",
+          "task_type": "COMPARISON",
+          "prompt": "“Yazıcı” ile Âli’ye Mektuplar'ı içerik, tür, dönem/çevre, yapı, dil/üslup ve ileti bakımından karşılaştırma",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.43 / PDF s.44; karekod kaynağı QR-EBA-E43890DFD82A (EBA içerik ID: e43890dfd82a3b5c7823d3b0fba2b627; video içeriği henüz incelenmedi)",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Özel mektuplar, yakın kişiler arasında duygu, düşünce ve günlük haberleri paylaşmak için yazılır. Samimi ve kişisel bir dil öne çıkar.",
           "sections": [
             {
-              "title": "Resmî mektup",
-              "body": "Kurumlar ya da kişiler ile kurumlar arasındaki yazışmalardır. Açık, ciddi ve konuya dönük bir dil kullanılır."
+              "title": "Kitaptaki ölçüt",
+              "body": "Mektubun belirli bir muhatabı vardır; hitap, kişisel ilişkiyi ve yazışma amacını yansıtır."
             },
             {
-              "title": "İş mektubu",
-              "body": "Ticari kişi ve kuruluşların iş ilişkileri için yazdığı mektuplardır. Gereksiz ayrıntılardan kaçınılır; amaç ve istek açıkça belirtilir."
+              "title": "Kaplan'ın mektubunda",
+              "body": "Kaplan, dostu Âli'ye günlük yaşamından ve yalnızlığından söz eder; onunla konuşmaya duyduğu ihtiyacı dile getirir. Bu özellikler özel mektup yönünü gösterir."
+            }
+          ]
+        }
+      },
+      {
+        "id": "s43-literary-letter",
+        "layout": "comparison",
+        "density": "large",
+        "sections_layout": "grid",
+        "reveal_order": [],
+        "display_prompt": "Edebî mektup: edebiyat üzerine düşünce paylaşımı",
+        "display_prompt_mode": "FLOW_OVERRIDE",
+        "source": {
+          "source_record_id": "T01-S0034",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "43",
+          "book_heading": "Fark Edelim / Karşılaştıralım",
+          "task_type": "COMPARISON",
+          "prompt": "“Yazıcı” ile Âli’ye Mektuplar'ı içerik, tür, dönem/çevre, yapı, dil/üslup ve ileti bakımından karşılaştırma",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.43 / PDF s.44; karekod kaynağı QR-EBA-E43890DFD82A (EBA içerik ID: e43890dfd82a3b5c7823d3b0fba2b627; video içeriği henüz incelenmedi)",
+          "source_status": "VERIFIED"
+        },
+        "answer": null,
+        "content": {
+          "lead": "Edebî mektuplar, kişisel yazışma içinde sanat ve edebiyat görüşlerinin de paylaşıldığı metinlerdir.",
+          "sections": [
+            {
+              "title": "Kitaptaki ölçüt",
+              "body": "Yazar ve düşünürlerin edebî konular üzerine görüş, duygu ve düşüncelerini aktarması mektuba edebî bir işlev kazandırabilir."
+            },
+            {
+              "title": "Kaplan'ın mektubunda",
+              "body": "Kaplan roman kişileri ve anlatım tekniklerini değerlendirir; Dostoyevski ile Stendhal'in roman anlayışlarını karşılaştırır ve okuduklarının yazma isteğine etkisini anlatır."
             }
           ]
         }
@@ -6847,11 +6841,11 @@
           "explanation": "T01-S0041 kaynak kaydı bir REFERENCE kaydıdır; bu içerik doğrulanmış bir kitap sorusunun cevabı değil, değerlendirme için örnek ölçüt desteğidir."
         },
         "content": {
-          "lead": "Kitaptaki örnek tabloda dört ölçütü kendiniz belirlemeniz için boş bırakılmış; verilen tek örnek ölçüt “Yalnızlık”tır.",
+          "lead": "Kitaptaki örnek beğeni ölçütü “Yalınlık”tır. Önce kendi ölçütlerinizi belirleyin, ardından bu örnekle karşılaştırın.",
           "sections": [
             {
               "title": "Kitaptaki örnek ölçüt",
-              "body": "Yalnızlık"
+              "body": "Yalınlık"
             }
           ]
         }
@@ -7147,7 +7141,7 @@
           "explanation": "Tam model mektup yerine plan ve kısa başlangıç örneği verilir; böylece öğrenci şiiri kendi yorumuyla dönüştürür ve kaynakta doğrulanmamış ayrıntılar cevaba eklenmez."
         },
         "content": {
-          "lead": "Önce şiirin bu kısa bölümünü okuyun; tam şiir ve yazma yönergesi ders kitabının aynı sayfasında.",
+          "lead": "Şiirin tamamını s.46'dan okuyun; şiirdeki duygu ve imgelerden hareketle aynı içerik çizgisini taşıyan özgün bir mektup yazın.",
           "sections": [
             {
               "title": "Geri Gelen Mektup — Hüseyin Nihâl Atsız",
@@ -7159,6 +7153,11 @@
               "label": "Ders kitabı s.46 — şiirin tamamını ve yönergeyi aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=46"
             }
+          ],
+          "items": [
+            "Şiirdeki iki farklı imgeyi veya duygu ifadesini seçin; şiirde neyi anlattıklarını kendi sözlerinizle açıklayın.",
+            "Mektubun muhatabını belirleyip bu iki unsuru hitap, gelişme ve sonuç içinde düzyazı cümlelerine dönüştürün.",
+            "Metni kendi beğeni ölçütlerinizle (ör. yalınlık, içtenlik) kontrol edin; şiiri dize dize aktarmayın."
           ]
         }
       },
@@ -7437,9 +7436,9 @@
           "web": {
             "units": [
               {
-                "id": "Olası amaçlar",
+                "id": "Kitap haberinin doğrudan belirttikleri",
                 "section_keys": [
-                  "Olası amaçlar"
+                  "Kitap haberinin doğrudan belirttikleri"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -7447,9 +7446,19 @@
                 "inline_quote_indexes": []
               },
               {
-                "id": "Kitaptaki örneğin bağlamı",
+                "id": "Bu etkinlikte benimsenen yorum",
                 "section_keys": [
-                  "Kitaptaki örneğin bağlamı"
+                  "Bu etkinlikte benimsenen yorum"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "quote_indexes": [],
+                "inline_quote_indexes": []
+              },
+              {
+                "id": "Başka olası amaçlar",
+                "section_keys": [
+                  "Başka olası amaçlar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -7487,18 +7496,20 @@
           "printed_page": 48,
           "question_no": "1",
           "prompt_summary": "Şişeye bırakılan bir iletinin olası gönderilme amaçları",
-          "answer": "Şişeye bırakılan bir ileti; bilinmeyen bir alıcıya ulaşmak, bir hatıra bırakmak, şişenin nereye varacağını öğrenmek ya da zor durumdaki insanlara destek, dayanışma ve umut iletmek amacıyla gönderilebilir. Bu çalışmada Beth ve Zac’ın şişeyle gönderdikleri mektup, Gazze halkına destek ve dayanışma mesajı ulaştırma amacı taşıyan bir eylem olarak kabul edilir. Mektubun Gazze’de bir balıkçı tarafından bulunması ve sonrasında kurulan iletişim de bu dayanışma bağını güçlendirir.",
+          "answer": "Şişeye bırakılan bir ileti; bilinmeyen bir alıcıya ulaşmak, bir hatıra bırakmak, nereye varacağını görmek veya zor durumdaki insanlara destek ve umut iletmek için gönderilebilir. Bu etkinlikte Beth ve Zac'ın eylemi Gazze halkına destek ve dayanışma amacıyla gönderilmiş olarak yorumlanır; ancak kitapta aktarılan haber, gönderme anındaki niyeti doğrudan açıklamaz. Haber metninin doğruladığı, şişenin Gazze'de bulunması ve gönderenlerle bulan kişi arasında sonradan arkadaşlık kurulmasıdır.",
           "source_locator": "basılı s.48 / PDF s.49",
           "answer_sections": {
-            "Olası amaçlar": [
-              "Zor durumda olan insanlara destek ve dayanışma mesajı ulaştırmak, umut vermek veya yaşananlara dikkat çekmek.",
-              "Bilinmeyen bir alıcıya mesaj ulaştırmak.",
-              "Bir mesaj, hatıra veya iz bırakmak.",
-              "İletinin nereye ve kime ulaşacağını merak etmek."
+            "Kitap haberinin doğrudan belirttikleri": [
+              "Şişe mektup Rodos'ta denize bırakılır ve Gazze'de bir balıkçı tarafından bulunur.",
+              "Mektuptaki e-posta adresi üzerinden iletişim kurulur; sonrasında sosyal medya arkadaşlığı oluşur."
             ],
-            "Kitaptaki örneğin bağlamı": "Beth ve Zac’ın şişeyle gönderdikleri mektup, bu çalışmada Gazze halkına destek, dayanışma ve umut iletme amacı taşıyan bir eylem olarak kabul edilir. Şişenin Gazze’de bulunması ve Gazzeli balıkçıyla sonradan iletişim kurulması bu dayanışmanın somut sonucu olarak değerlendirilir."
+            "Bu etkinlikte benimsenen yorum": "Gazze halkına destek, dayanışma ve umut iletme amacıyla gönderilmiş olduğu kabul edilerek yorumlanabilir. Bu, haberin açıkça belgelediği gönderici beyanı değildir.",
+            "Başka olası amaçlar": [
+              "Bilinmeyen bir kişiye mesaj veya hatıra bırakmak.",
+              "İletinin nerede ve kimin eline geçeceğini merak etmek."
+            ]
           },
-          "guidance": "Beth ve Zac’ın şişeyle gönderdikleri mektubu Gazze halkına destek, dayanışma ve umut iletme amacı taşıyan bir eylem olarak kabul edin. Öğrencilerin bu destek amacını iletişimin temel amacı olarak ifade eden cevaplarını doğru kabul edin."
+          "guidance": "Önce haberde doğrudan yazılanları belirletin. Ardından bu sınıf çalışmasında esas alınan destek/dayanışma yorumunu haberden doğrulanan ilk niyet gibi değil, yorum olarak açıkça ayırın. Sonradan kurulan arkadaşlık, gönderme anındaki amacı tek başına ispatlamaz."
         },
         "content": {
           "lead": "Önce kitabınızın 48. sayfasındaki iki haber metnini okuyunuz: “‘Rodos’tan Gazze’ye yüzen’ şişeyle başlayan kıtalar arası arkadaşlık” ve “Asırlık mektuplar sahibine ulaşıyor”. Bu soru ilk metinle ilgilidir.",
@@ -8321,8 +8332,8 @@
         "content": {
           "lead": "Bu bölümdeki ilk sorular videodaki sözlü iletişim engellerine dayanır. Karekod erişilebiliyorsa videoyu izleyin; erişilemiyorsa videoya özgü davranış, söz veya sahne ayrıntısını kesinleştirmeyin.",
           "items": [
-            "İzlerken iletişimi bozan davranışları kısa notlarla kaydedin.",
-            "Her gözlemi iletişime etkisiyle eşleştirin."
+            "İzlerken iletişimi bozan bir davranışı veya ifadeyi gerçekten gözlediğiniz biçimiyle not edin.",
+            "Bu somut kanıttan hareketle iletişim engelini adlandırın ve mesaj üzerindeki olası etkisini yorumlayın."
           ],
           "sources": [
             {
@@ -8766,6 +8777,7 @@
         "content": {
           "lead": "Sözlü iletişim engellerini konu alan canlandırmayı uygulamadan önce planlama kararlarını tamamlayın. Bu aşama hazırlık sürecidir; nihai drama performans puanından ayrıdır.",
           "items": [
+            "Örnek planı açmadan önce grubunuzun kendi sahne konusunu, muhatabını ve iletişim engelini seçin; örnekler zorunlu senaryo değildir.",
             "Gruplara ayrılın; konuşmanın konusunu ve amacını belirleyin.",
             "Gerekli gözlem, inceleme ve araştırmayı yapın.",
             "Kullanacağınız araçları ve canlandırma biçimini belirleyin.",
@@ -9595,6 +9607,12 @@
             "Evet",
             "Kısmen",
             "Hayır"
+          ],
+          "sections": [
+            {
+              "title": "Sonraki prova için tek hedef",
+              "body": "“Kısmen” veya “Hayır” seçtiğiniz bir ölçütü bulun. Canlandırmanızdan bir kanıtla nedenini açıklayın ve bir sonraki provada yapacağınız tek somut değişikliği yazın."
+            }
           ]
         }
       },
@@ -9684,7 +9702,7 @@
           "source_locator": "basılı s.58 / PDF s.59 — dış QR rubrik/form sınırı"
         },
         "content": {
-          "lead": "Arkadaşınızın grup canlandırmasını formdaki ölçütlere göre gözleyin; her satırda tek bir seçenek işaretleyin.",
+          "lead": "Akran değerlendirmesinde gözlediğiniz çalışmadan kanıt gösterin. Ders kitabının s.58'deki QR formu ile burada sunulan örnek geri bildirim maddelerinin birebir aynı olduğu doğrulanmamıştır.",
           "note": "Akran formunun tam maddeleri ve puan ağırlıkları QR içeriği incelenmeden bilinemez; görünmeyen ayrıntıları tahmin etmeyin.",
           "items": [
             "Sözlü iletişim engellerine dair araştırma yaparak bilgi topladı.",
@@ -9742,7 +9760,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.",
+          "lead": "Bu, canlandırma için hazırlanmış örnek puanlama rubriğidir. Kitabın s.58 QR anahtarındaki ölçüt ve puanların birebir aktarımı olduğu doğrulanmamıştır.",
           "sections": [
             {
               "title": "Başlangıç düzeyinde · 1–2 puan",
@@ -9860,6 +9878,10 @@
               "url": "assets/assessment-documents/35-ogrenci-rubrik-puanlama.xlsx",
               "download": true
             }
+          ],
+          "items": [
+            "Resmî değerlendirme yapılacaksa önce ders kitabı s.58'deki QR dereceli puanlama anahtarını kullanın.",
+            "Buradaki düzeyleri ise çalışmayı geliştirmek için isteğe bağlı örnek kontrol ölçütleri olarak okuyun."
           ]
         }
       },
@@ -11316,6 +11338,10 @@
               "label": "Ders kitabı s.64 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=64"
             }
+          ],
+          "items": [
+            "Önce çok modlu metni izleyin; gerçekten duyduğunuz bir sözü veya gördüğünüz bir ayrıntıyı not edin.",
+            "Bu kanıtı konu, dil kullanımı veya iletişim etkisiyle ilişkilendirerek yorumlayın."
           ]
         }
       },
@@ -14152,6 +14178,7 @@
         "content": {
           "lead": "Yazmaya başlamadan önce amaç, alıcı, konu ve stratejiyi birbiriyle uyumlu hâle getirin.",
           "items": [
+            "Örnek e-postayı açmadan önce kendi amacınızı ve alıcınızı seçin: örneğin bir etkinlik başvurusu veya kulüp duyurusu da hazırlayabilirsiniz.",
             "Yazma amacınızı belirleyin: bilgilendirme, ikna etme, resmî talep vb.",
             "Hedef kitleyi ve alıcıyı belirleyin.",
             "Yazma sürecini aksatabilecek engelleri ortadan kaldırın.",
@@ -14679,7 +14706,8 @@
             "Söz varlığını bağlama; dil ve üslubu amaç ile alıcıya uygun seçin.",
             "Yazmayı başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
             "Yazım, noktalama, bağdaşıklık ve Türkçenin özenli kullanımını kontrol edin.",
-            "Toplumsal hassasiyetlere ve olumlu değerlere aykırı ifadelerden kaçının."
+            "Toplumsal hassasiyetlere ve olumlu değerlere aykırı ifadelerden kaçının.",
+            "Hazır e-posta örneğini kullanırsanız hangi ölçütü nasıl karşıladığını açıklayın; aynı konuyu veya cümleleri kopyalamak zorunda değilsiniz."
           ]
         }
       },
@@ -14741,6 +14769,12 @@
             "Evet",
             "Kısmen",
             "Hayır"
+          ],
+          "sections": [
+            {
+              "title": "Değerlendirmeden sonraki tek düzeltme",
+              "body": "“Kısmen” veya “Hayır” işaretlediğiniz tek bir ölçütü seçin; taslağınızdan kanıt gösterip yapacağınız bir düzeltmeyi belirtin."
+            }
           ]
         }
       },
@@ -14856,7 +14890,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "E-posta rubriğindeki her ölçüt, dört başarı düzeyi ve puan aralığıyla gösterilmiştir.",
+          "lead": "Bu örnek puanlama rubriği, ders kitabı s.78'de QR ile verilen resmî dereceli puanlama anahtarının doğrulanmış kopyası değildir.",
           "sections": [
             {
               "title": "Başlangıç düzeyinde · 1–4 puan",
@@ -14888,7 +14922,7 @@
             },
             {
               "title": "Çok iyi · 15–18 puan",
-              "body": "Ölçüt: Dil ve üslup (18 puan). Metinde kullanılan üslup oldukça başarılır"
+              "body": "Ölçüt: Dil ve üslup (18 puan). Metinde kullanılan üslup oldukça başarılıdır"
             },
             {
               "title": "Başlangıç düzeyinde · 1–4 puan",
@@ -14976,6 +15010,7 @@
             }
           ],
           "items": [
+            "Resmî puanlama için önce kitaptaki QR anahtarı esas alınır; buradaki düzeyler taslağı geliştirmek amacıyla örnektir.",
             "Öz değerlendirme formunda “Kısmen” veya “Hayır” işaretlediğiniz bir ölçütü seçin.",
             "Taslağınızdan bu ölçüte ilişkin belirli bir sözcük, cümle ya da bölüm gösterin.",
             "Kanıta dayanarak tek bir somut düzeltme hedefi belirleyin; gerekirse eksik bilgiyi araştırın veya destek alın.",
@@ -16108,6 +16143,10 @@
               "label": "Ders kitabı s.83 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=83"
             }
+          ],
+          "items": [
+            "Önce kaynağı dinleyin/izleyin; duyduğunuz bir seslendirme özelliği veya gördüğünüz bir görsel tercihi kaydedin.",
+            "Bu kanıtın belirli bir dizeyle ve şiirin duygusuyla nasıl ilişkili olduğunu kendi yorumunuzla açıklayın."
           ]
         }
       },
