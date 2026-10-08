@@ -1833,6 +1833,136 @@ button {
   cursor: progress;
 }
 
+/* QA ile ortak görev/odak hiyerarşisi; türlerin kendi içerik geometrisi korunur. */
+.slide--modern-companion .body-grid {
+  flex-direction: column;
+  gap: 0;
+}
+
+.slide--modern-companion .stack {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  gap: 0;
+}
+
+.slide--modern-companion .companion-context {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: calc(var(--modern-content-gap) * 1em);
+  min-width: 0;
+  width: 100%;
+}
+
+.slide--modern-companion .companion-context > .prompt {
+  max-width: 100%;
+  margin: 0 0 0.08em;
+  font-family: var(--modern-font);
+  font-size: calc(1.7em / var(--k));
+  font-weight: 680;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.slide--modern-companion .companion-context > :not(.prompt) {
+  min-width: 0;
+  width: 100%;
+}
+
+.slide--modern-companion.slide--visual-process .companion-context > .prompt {
+  text-align: center;
+}
+
+.slide--modern-companion.slide--visual-assessment .companion-context > .prompt,
+.slide--modern-companion.slide--visual-reference .companion-context > .prompt {
+  text-align: left;
+}
+
+.slide--modern-companion .companion-context:has(+ .companion-focus:not(:empty)) {
+  flex: 0 0 auto;
+  gap: 0;
+  margin-bottom: 0.9em;
+}
+
+.slide--modern-companion .companion-context:has(+ .companion-focus:not(:empty)) > .prompt {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--modern-muted);
+  font-size: calc(1.02em / var(--k));
+  font-weight: 570;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.slide--modern-companion .companion-focus:not(:empty) {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7em;
+  min-width: 0;
+  width: 100%;
+}
+
+.slide--modern-companion .companion-focus > :not(.panel__label) {
+  width: 100%;
+}
+
+.slide--modern-companion .companion-focus .panel {
+  box-shadow: none;
+}
+
+.slide--modern-companion .companion-focus .panel--answer {
+  background: var(--modern-teal-soft);
+  border-color: var(--modern-teal);
+}
+
+.slide--modern-companion .companion-focus .panel--evidence {
+  background: var(--modern-blue-soft);
+  border-color: var(--modern-blue);
+}
+
+.slide--modern-companion .companion-focus .panel--guidance,
+.slide--modern-companion .companion-focus .panel--thinking {
+  background: var(--modern-gold-soft);
+  border-color: var(--modern-gold);
+}
+
+.slide--modern-companion .companion-focus .panel--explanation {
+  background: var(--modern-purple-soft);
+  border-color: var(--modern-purple);
+}
+
+.slide--modern-companion .companion-stage-label {
+  margin-bottom: 0;
+  color: var(--modern-teal);
+}
+
+.slide--modern-companion .where b {
+  color: var(--modern-muted);
+}
+
+.slide--modern-companion .counter {
+  color: var(--modern-teal);
+  font-weight: 650;
+}
+
+/* Yapı kartları da aynı sans-serif başlık ölçeğini kullanır. */
+.slide--visual-structure .prompt {
+  font-family: var(--modern-font);
+  font-size: calc(1.7em / var(--k));
+  font-weight: 680;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
 /* QA soru slaytları: 1920×1080 tuval içindeki özel görsel dil */
 .slide--qa-modern {
   --qa-paper: var(--modern-paper);
