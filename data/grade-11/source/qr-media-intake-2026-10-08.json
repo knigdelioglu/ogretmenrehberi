@@ -210,7 +210,7 @@
       "duration_seconds": 157,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -222,7 +222,9 @@
         "observed_book_label": "Dünyadaki Türkiye Türk Dünyası",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md",
+      "media_content_observation": "sampled_video_frames_only"
     },
     {
       "file_name": "19XU49JV.mp4",
@@ -233,7 +235,7 @@
       "duration_seconds": 207.066667,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -245,7 +247,9 @@
         "observed_book_label": "Murat Çobanoğlu Şeref Taşlıova Atışması",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md",
+      "media_content_observation": "sampled_video_frames_only"
     },
     {
       "file_name": "19XU49MG.mp4",
@@ -256,7 +260,7 @@
       "duration_seconds": 283.833333,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -268,7 +272,9 @@
         "observed_book_label": "Âşıklık Geleneği",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
+      "media_content_observation": "sampled_video_frames_only"
     },
     {
       "file_name": "19XU49MB.mp4",
