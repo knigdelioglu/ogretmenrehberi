@@ -66701,6 +66701,14 @@
             {
               "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=285"
+            },
+            {
+              "label": "Jenerik — kitabın özgün EBA karekodu (58 sn.)",
+              "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=bc54a785fede521619c982332455dc72&resourceType=1&resourceLocation=2"
+            },
+            {
+              "label": "Fedakârlık — asıl belgeselin özgün EBA karekodu",
+              "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2"
             }
           ]
         }
@@ -66784,7 +66792,7 @@
               "fragments": [
                 {
                   "unit": "answer",
-                  "text": "Olası tahmin: “Fedakârlık” başlığı ve sayfadaki tarlada çalışan ellerin yakın çekimi, belgeselin emek veya başkaları için çaba gösterme gibi temalara değinebileceğini düşündürebilir. Bu yalnızca izleme öncesi tahmindir; QR videosundaki kişi, olay, amaç ve sonuçlar izleme sırasında doğrulanmalıdır.",
+                  "text": "Örnek izleme öncesi tahmini: “Fedakârlık” başlığı ve ders kitabındaki görsel, emek ve başkaları için çaba gösterme üzerine bir belgesel izleneceğini düşündürebilir. Yaklaşık 58 saniyelik ayrı jenerikte su doldurma, tabiat, hayvanlar ve kuzuyla ilgilenen bir kişi görülür; bu görüntüler kırsal yaşamı ve emeği çağrıştırır. Bu yalnızca izleme öncesi tahmindir: kişilerin kimliği, kimin ne için fedakârlık yaptığı ve uzun belgeselin sonucu jenerikten çıkarılamaz.",
                   "position": "start"
                 }
               ]
@@ -66793,7 +66801,8 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "explanation"
         ],
         "display_prompt": "Hazırlık 2 — Başlık, görsel ve jenerikten içeriğe ilişkin tahmin yapınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -66812,13 +66821,14 @@
           "entry_type": "performance_support",
           "printed_page": 285,
           "question_no": "2",
-          "source_locator": "basılı s.285 / PDF s.286 — Dinleme/İzlemeyi Yönetebilme soru 2",
+          "source_locator": "basılı s.285 / PDF s.286 — iki ayrı EBA QR: jenerik bc54a785fede521619c982332455dc72, ana video 5fd2b97cb78fabe367aa3fcde8f9718d; jenerik görsel notu: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU4GDV.md",
           "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
-          "answer": "Olası tahmin: “Fedakârlık” başlığı ve sayfadaki tarlada çalışan ellerin yakın çekimi, belgeselin emek veya başkaları için çaba gösterme gibi temalara değinebileceğini düşündürebilir. Bu yalnızca izleme öncesi tahmindir; QR videosundaki kişi, olay, amaç ve sonuçlar izleme sırasında doğrulanmalıdır.",
-          "guidance": "Başlık ve soruya ait görselde açıkça görülen ayrıntılardan hareketle tahmin kurun. Jenerik içeriğine gerçekten erişmeden kişi, olay, amaç veya sonuç hakkında özel bilgi üretmeyin."
+          "answer": "Örnek izleme öncesi tahmini: “Fedakârlık” başlığı ve ders kitabındaki görsel, emek ve başkaları için çaba gösterme üzerine bir belgesel izleneceğini düşündürebilir. Yaklaşık 58 saniyelik ayrı jenerikte su doldurma, tabiat, hayvanlar ve kuzuyla ilgilenen bir kişi görülür; bu görüntüler kırsal yaşamı ve emeği çağrıştırır. Bu yalnızca izleme öncesi tahmindir: kişilerin kimliği, kimin ne için fedakârlık yaptığı ve uzun belgeselin sonucu jenerikten çıkarılamaz.",
+          "guidance": "İzlemeden önce başlığa ve görselde açıkça görülen ayrıntılardan hareketle tahmin yaptırın; ardından yalnız kısa jeneriği izletip yaklaşık 00:08, 00:24 ve 00:48 görüntüleriyle tahmini yeniden değerlendirin. 58 saniyelik jenerikle yaklaşık 7 dakikalık asıl belgesel iki ayrı QR kaynağıdır. Jenerikte gözlenmeyen kişi motivasyonları ve olay sonuçlarını hazır cevap vermeyin.",
+          "explanation": "Jenerik görselleri örneklendi; aday MP4'ün EBA dosya özdeşliği ve sesli içerik henüz doğrulanmadı. Bu soru gerçekleşmiş olay anlatımı değil, izleme öncesi tahmin görevidir."
         },
         "content": {
-          "lead": "Tahmini kesin olay bilgisi gibi yazmayın; hangi görsel veya başlık ipucundan yola çıktığınızı belirtin."
+          "lead": "Önce başlık ve kitap görselinden tahmin yapın; sonra 58 saniyelik ayrı jeneriğin su, tabiat ve hayvancılık görüntüleriyle tahmininizi karşılaştırın. Tahmini yaşanmış olay veya kesin sonuç diye sunmayın."
         }
       },
       {
@@ -67002,6 +67012,10 @@
             {
               "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=285"
+            },
+            {
+              "label": "Fedakârlık — asıl belgesel EBA hedefi",
+              "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2"
             }
           ]
         }
@@ -67069,7 +67083,7 @@
             "Videoda geçtiği bağlam",
             "Hayatın Aynası temasıyla ilişkisi"
           ],
-          "note": "QR video içeriği elimizde olmadığı için Lesson Player hazır kelime listesi üretmez.",
+          "note": "Uzun Fedakârlık videosunun bazı görüntüleri incelendi; ancak tam konuşma/ses dökümü bulunmadığı için videoda duyulan sözcükler hazır liste olarak verilmez. Görsel kanıt, sesli ifade yerine kullanılamaz.",
           "sources": [
             {
               "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
@@ -67100,7 +67114,7 @@
               "fragments": [
                 {
                   "unit": "answer",
-                  "text": "Belgeseldeki ana ve yardımcı iletileri, tekrar eden davranışlar ve anlatıcının vurgularından hareketle belirleyin. Her iletiyi videodan bir gözlemle gerekçelendirin.",
+                  "text": "Gözleme dayalı olası yorum: Aday Fedakârlık videosunda sırt çantalı bir kişinin dağlık arazide yürümesi (00:45–01:30), demiryolu çevresinde ilerlemesi (02:15–04:45) ve kırsal doğa/bitki görüntüleri (05:00–06:30) öne çıkar. Bunlar insanın emek, sorumluluk ve doğal çevreyle ilişkisi üzerine bir iletiyi düşündürebilir. Ancak kişinin hangi amaçla hareket ettiği, kimin için neyi göze aldığı ve belgeselin kesin ana/yardımcı iletileri sesli anlatım incelenmeden bilinemez.",
                   "position": "start"
                 }
               ]
@@ -67109,7 +67123,8 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "explanation"
         ],
         "display_prompt": "Dinleme notları 3 — Belgeselin iletilerini kanıtlarla belirleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -67128,10 +67143,11 @@
           "entry_type": "source_limited",
           "printed_page": 286,
           "question_no": "3",
-          "source_locator": "basılı s.286 / PDF s.287 — Metni Dinleyelim/İzleyelim soru 3 / Fedakârlık QR videosu gerekli",
+          "source_locator": "basılı s.286 / PDF s.287 — uzun video QR 5fd2b97cb78fabe367aa3fcde8f9718d, aday 19XU49LQ.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md",
           "prompt_summary": "Video notlarından hareketle belgeselin iletilerini belirleme",
-          "answer": "Belgeseldeki ana ve yardımcı iletileri, tekrar eden davranışlar ve anlatıcının vurgularından hareketle belirleyin. Her iletiyi videodan bir gözlemle gerekçelendirin.",
-          "guidance": "İletiyi yalnızca başlıktan çıkarmayın; videoda gördüğünüz bir sahne veya duyduğunuz bir ifadeyle destekleyin."
+          "answer": "Gözleme dayalı olası yorum: Aday Fedakârlık videosunda sırt çantalı bir kişinin dağlık arazide yürümesi (00:45–01:30), demiryolu çevresinde ilerlemesi (02:15–04:45) ve kırsal doğa/bitki görüntüleri (05:00–06:30) öne çıkar. Bunlar insanın emek, sorumluluk ve doğal çevreyle ilişkisi üzerine bir iletiyi düşündürebilir. Ancak kişinin hangi amaçla hareket ettiği, kimin için neyi göze aldığı ve belgeselin kesin ana/yardımcı iletileri sesli anlatım incelenmeden bilinemez.",
+          "guidance": "Tahtada 'Görüntüde gözlemlediğim eylem' ve 'Bu eylemden çıkardığım olası ileti' sütunları oluşturun. Yürüme veya demiryoluyla ilgili görüntüleri gözlem, 'fedakârlık yapıyor' sözünü yorum olarak değerlendirin. Kesin ana düşünce için anlatıcının sözleri ve kişinin eylem gerekçesini dinleyerek doğrulayın.",
+          "explanation": "Uzun video kısmi görüntülerle incelendi, konuşma transkripti yok. QR hedefi kitap PDF'sinden doğrulandı fakat aday Drive MP4'ünün EBA indirme kökeni bağımsız kesin değil; source_limited korunmuştur."
         },
         "content": {
           "lead": "Her ileti için videodaki bir söz, davranış veya olay dayanağı gösterin.",
@@ -68297,11 +68313,19 @@
             "Tür",
             "İçerik"
           ],
-          "note": "Çalışkanlık videosunun ayrıntıları QR kaynak görülmeden Lesson Player tarafından doldurulmaz.",
+          "note": "Çalışkanlık ve Fedakârlık videolarının kısmi görüntüleri incelendi. Görülen tarımsal üretim ve çevre ayrıntılarıyla başlayın; tam ses dökümü olmadığından Dil ve Üslup ile kesin İleti hücreleri henüz doldurulmaz.",
           "sources": [
             {
               "label": "Ders kitabı s.293 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=293"
+            },
+            {
+              "label": "Çalışkanlık — özgün EBA karekod hedefi",
+              "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cc654606d608113ea65f523584ab801b&resourceType=1&resourceLocation=2"
+            },
+            {
+              "label": "Fedakârlık — karşılaştırma videosu EBA hedefi",
+              "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2"
             }
           ]
         }
@@ -68328,7 +68352,7 @@
               "fragments": [
                 {
                   "unit": "answer",
-                  "text": "Videoda tekrar eden davranış ve sonuçlardan hareketle ana düşünceyi bir cümleyle kurun. Yargınızı en az bir gözlemle destekleyin.",
+                  "text": "Kısmi görüntülere dayanarak kurulabilecek ana düşünce adayı: 'Kırsal yaşamda emek, üretim ve birlikte sürdürülen günlük işler önemli yer tutar.' Bunu tarımsal alanlar ve traktör (yaklaşık 01:15–01:45), meyve/ürün toplama (02:45–03:15), birlikte hazırlanan yiyecek ve tarım çalışmaları (03:45–05:00) destekler. Bu cümle belgeselin kesin ana düşüncesi diye sunulmamalıdır; konuşmacıların anlatımı ve kapanış vurgusu dinlenerek gerekirse değiştirilmelidir.",
                   "position": "start"
                 }
               ]
@@ -68336,7 +68360,9 @@
           }
         },
         "reveal_order": [
-          "answer"
+          "guidance",
+          "answer",
+          "explanation"
         ],
         "display_prompt": "Karşılaştıralım 2 — Çalışkanlık videosunun ana düşüncesini belirleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -68357,9 +68383,11 @@
           "entry_type": "source_limited",
           "printed_page": 293,
           "question_no": "2",
-          "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 2 / Çalışkanlık QR videosu gerekli",
+          "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b; 19XU49KB.mp4 kısmi görüntü kaydı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md",
           "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-          "answer": "Videoda tekrar eden davranış ve sonuçlardan hareketle ana düşünceyi bir cümleyle kurun. Yargınızı en az bir gözlemle destekleyin."
+          "answer": "Kısmi görüntülere dayanarak kurulabilecek ana düşünce adayı: 'Kırsal yaşamda emek, üretim ve birlikte sürdürülen günlük işler önemli yer tutar.' Bunu tarımsal alanlar ve traktör (yaklaşık 01:15–01:45), meyve/ürün toplama (02:45–03:15), birlikte hazırlanan yiyecek ve tarım çalışmaları (03:45–05:00) destekler. Bu cümle belgeselin kesin ana düşüncesi diye sunulmamalıdır; konuşmacıların anlatımı ve kapanış vurgusu dinlenerek gerekirse değiştirilmelidir.",
+          "guidance": "Önce iki veya üç farklı sahnede ortak eylemi (tarla işleri, ürün toplama, ev içi/dışı üretim) buldurun. Öğrencinin önerdiği ana düşünceyi bu gözlemlerle sınayın; yapımın sözlü mesajı henüz transkript edilmediği için farklı gerekçeli yorumları kabul edin.",
+          "explanation": "Görüntü kanıtı mevcuttur; konuşmaların tam dökümü ve MP4'ün EBA kaynak kimliğiyle birebir dosya eşleşmesi yoktur. source_limited korunur."
         },
         "content": {
           "lead": "Ana düşünceyi yalnız başlıktan çıkarmayın; tekrarlanan davranış, sonuç ve final vurgusuyla kanıtlayın."
@@ -68422,7 +68450,8 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "explanation"
         ],
         "display_prompt": "Karşılaştıralım 3 — Fedakârlık ve Çalışkanlık belgesellerini dört ölçütte karşılaştırınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -68443,28 +68472,29 @@
           "entry_type": "source_limited",
           "printed_page": 293,
           "question_no": "3",
-          "source_locator": "basılı s.293 / PDF s.294 — Karşılaştıralım soru 3 / Fedakârlık ve Çalışkanlık QR videoları gerekli",
+          "source_locator": "basılı s.293 / PDF s.294 — iki ayrı QR: Fedakârlık 5fd2b97cb78fabe367aa3fcde8f9718d ve Çalışkanlık cc654606d608113ea65f523584ab801b. Kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md; data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md",
           "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-          "answer": "İki belgeseli ders kitabında verilen dört ölçüte göre karşılaştırın. Her hücreyi yalnız videolarda gerçekten gözlediğiniz dil, ileti, tür ve içerik özellikleriyle doldurun.",
+          "answer": "İki kayıt görsel düzeyde kısmen karşılaştırılabilir: Fedakârlıkta dağlık arazide/demiryolu çevresinde ilerleyen bir kişi; Çalışkanlıkta tarım arazileri, traktör, ürün toplama ve toplu günlük işler görülür. İkisi de kitabın belgesel/çok modlu metin olarak sunduğu Anadolu İnsanı serisindendir. Dil ve üslup ile kesin ileti için iki videonun tam sesli anlatımı henüz çözümlenmediğinden bu satırlar tamamlanmış bir karşılaştırma sayılamaz.",
           "answer_sections": {
             "Dil ve Üslup": {
-              "Anadolu İnsanı / Fedakârlık": "[Video izlenerek belirlenir.]",
-              "Anadolu İnsanı / Çalışkanlık": "[Video izlenerek belirlenir.]"
+              "Anadolu İnsanı / Fedakârlık": "[Sesli anlatımın sözcük seçimi, cümle kuruluşu ve ses tonu transkript edilmedi; kesin yorum bekliyor.]",
+              "Anadolu İnsanı / Çalışkanlık": "[Sesli anlatımın sözcük seçimi, cümle kuruluşu ve ses tonu transkript edilmedi; kesin yorum bekliyor.]"
             },
             "İleti": {
-              "Anadolu İnsanı / Fedakârlık": "[Video izlenerek belirlenir.]",
-              "Anadolu İnsanı / Çalışkanlık": "[Video izlenerek belirlenir.]"
+              "Anadolu İnsanı / Fedakârlık": "Başlık ve uzun videodaki arazide/demiryolunda ilerleme görüntüleri emek ve sorumluluk yorumu düşündürebilir; belgeselin kesin iletisi henüz doğrulanmadı.",
+              "Anadolu İnsanı / Çalışkanlık": "Başlık ve tarımsal üretim/ürün toplama görüntüleri çalışkanlık ve üretim yorumu düşündürebilir; kesin ileti ses olmadan bilinmez."
             },
             "Tür": {
               "Anadolu İnsanı / Fedakârlık": "Belgesel / çok modlu metin.",
               "Anadolu İnsanı / Çalışkanlık": "Belgesel / çok modlu metin."
             },
             "İçerik": {
-              "Anadolu İnsanı / Fedakârlık": "[Video izlenerek belirlenir.]",
-              "Anadolu İnsanı / Çalışkanlık": "[Video izlenerek belirlenir.]"
+              "Anadolu İnsanı / Fedakârlık": "00:45–06:30 arasında dağlık arazi, demiryolu çevresinde ilerleyen kişi, kırsal tabiat ve bitkiler gözlenir.",
+              "Anadolu İnsanı / Çalışkanlık": "01:15–05:00 arasında traktör, tarım alanları, meyve/ürün toplama, yemek hazırlığı ve birlikte geçirilen zaman görüntüleri gözlenir."
             }
           },
-          "guidance": "Karşılaştırmayı yalnız kitapta verilen Dil ve Üslup, İleti, Tür ve İçerik ölçütleri üzerinden yapın. Video izlenmeden dil, ileti veya içerik hakkında özel hüküm üretmeyin."
+          "guidance": "Dört başlığı muhafaza edin: Dil ve Üslup, İleti, Tür, İçerik. Gözlenen görselleri yalnız 'İçerik' hücrelerinde kesin veri olarak kullanın. 'İleti' hücrelerini yorumsal/koşullu gösterin; 'Dil ve Üslup' hücrelerini iki tam ses dökümü olmadan doldurmayın. Benzerlik ve farkları aynı ölçüt üzerinden karşılaştırın.",
+          "explanation": "İki aday Drive videosunun görsel örnekleri incelendi, tam diyalog ve MP4–EBA dosya kökeni doğrulanmadı. Bu nedenle source_limited durumu devam eder."
         },
         "content": {
           "lead": "Her ölçütte en az bir benzerlik ve bir farklılık yazın; iki videodan da gerçek kanıt kullanın.",
@@ -72319,11 +72349,15 @@
         },
         "answer": null,
         "content": {
-          "lead": "Soru 13 videodaki Anadolu insanının özelliklerini kanıtlamayı, Soru 14 ise aidiyet düşüncesini video örneğiyle ilişkilendirmeyi gerektirir. Karekod erişilebiliyorsa videoyu izleyip davranış, söz ve sahne kanıtlarını not edin; erişilemiyorsa videoya özgü ayrıntı üretmeyin.",
+          "lead": "Aidiyet videosunun kısmi görüntülerinde dağlık çevre, köy, çeşme, yollar ve dal/odun toplama yer alıyor. 13. soruda gözlenen uyum davranışını, 14. soruda ise bu görüntülerden çıkarılan olası aidiyet bağını ayırın. Konuşma ve kişinin duyguları henüz doğrulanmadı.",
           "sources": [
             {
               "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
               "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=307"
+            },
+            {
+              "label": "Aidiyet — özgün EBA karekod hedefi",
+              "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=6e0ca79cee422408b5dcfaf3ad7a1459&resourceType=1&resourceLocation=2"
             }
           ]
         }
@@ -72376,6 +72410,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "explanation",
           "note"
         ],
         "display_prompt": "Soru 13 — Aidiyet videosundaki Anadolu insanının belirgin özelliklerini kanıtlarıyla açıklayınız.",
@@ -72397,19 +72432,20 @@
           "entry_type": "source_limited",
           "printed_page": 307,
           "question_no": "13",
-          "source_locator": "basılı s.307 / PDF s.308 — Soru 13 / Anadolu İnsanı-Aidiyet QR videosu",
+          "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459; 19XU49LS.mp4 kısmi görsel kanıtı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md",
           "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-          "answer": "Videoda Anadolu’nun farklı yörelerine uyum sağlama ile ilişkilendirilebilecek kişi, davranış ve tutumları belirleyin. Bu örneklerden çıkardığınız bir veya birden fazla özelliği yazın ve her özelliği görüntü, söz ya da eylem kanıtıyla gerekçelendirin.",
+          "answer": "Videonun örnek görüntülerinde bir kişinin engebeli doğa koşullarında ilerlemesi (00:45–01:30), kırsal yerleşimdeki yollar ve çeşme (02:00–02:45), ağaçlık arazide yürüyüş ve dal/odun toplama (03:45–04:15) görülür. Bu sahneler doğaya uyum sağlama, gündelik ihtiyaçları çevresindeki imkânlarla karşılama ve kırsal koşullarda yaşamı sürdürme gibi özellikler üzerine yorum geliştirmeye elverişlidir. Bu özelliklerin tüm Anadolu insanlarının değişmez karakteri olduğu söylenemez; kişinin kendi niyeti veya düşüncesi ise henüz transkript edilmemiştir.",
           "answer_sections": {
             "Videoda gözlediğim kişi, davranış veya tutum": "[...]",
             "Çıkardığım özellik veya özellikler": "[...]",
             "Her özellik için video kanıtı": "[...]"
           },
-          "guidance": "Özellikleri video öncesinde hazır sonuç olarak seçmeyin; videoda gözlemlediğiniz kişi, davranış, tutum veya mekân bağlamından çıkarın."
+          "guidance": "Öğrenciden 'gördüğüm eylem' ve 'buradan çıkardığım özellik' ifadelerini ayrı yazmasını isteyin. Bölgenin neresi olduğu, kişinin geçmişi, özverisinin amacı gibi doğrulanmamış ayrıntıları eklemeyin. Farklı gerekçeli yorumları kabul edin.",
+          "explanation": "QR kitabın PDF hedefinde doğrulandı, aday Drive videosu görüntülerle örneklendi. Tam ses deşifresi ve videonun EBA MP4 indirme özdeşliği doğrulanmadığı için source_limited korunur."
         },
         "content": {
           "lead": "Özellik adı tek başına yeterli değildir; videoda gerçekten gördüğünüz davranış, söz veya sahneyi kanıt gösterin.",
-          "note": "Aidiyet QR videosu görülmeden Lesson Player kişi ve davranış ayrıntısı üretmez.",
+          "note": "Video örnek kareleri incelendi: dağlık alanda yürüyüş, köy/çeşme ve çevreden dal toplama sahneleri var. Bu davranışlardan kesin karakter yargısı veya kişinin sözleri çıkarılamaz.",
           "sources": [
             {
               "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
@@ -72466,6 +72502,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "explanation",
           "note"
         ],
         "display_prompt": "Soru 14 — Bir kişinin yaşadığı yere aidiyet duygusu geliştirmesi nelere bağlıdır?",
@@ -72487,15 +72524,16 @@
           "entry_type": "source_limited",
           "printed_page": 307,
           "question_no": "14",
-          "source_locator": "basılı s.307 / PDF s.308 — Soru 14 / Anadolu İnsanı-Aidiyet QR videosu",
+          "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459; kısmi görsel kaynak: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md",
           "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-          "answer": "Videoda bir kişinin yaşadığı yere aidiyet geliştirmesini açıklayan söz, davranış, ilişki veya mekân örneklerini belirleyin. Bu örneklerden hareketle aidiyet duygusunun hangi etkenlerle bağlantılı olduğunu açıklayın; her sonucu videodaki somut bir kanıtla destekleyin.",
+          "answer": "Aidiyet duygusu, kişinin bir mekânı tanıması, o yerde zaman geçirmesi, ilişkiler kurması ve gündelik hayatını orada sürdürmesiyle gelişebilir. Aday videoda dağlık çevre, bir köy yerleşimi ve çeşmesi, yollar ve doğada günlük işler görülür; bunlar mekâna aşinalık ile günlük yaşantı bağını düşündüren somut video kanıtı olarak kullanılabilir. Ancak filmdeki kişinin o yeri neden sevdiği veya oraya ait hissettiğini söyleyip söylemediği sesli anlatım olmadan bilinmez; cevap bu nedenle gerekçeli bir çıkarımdır.",
           "answer_sections": {
             "Videoda aidiyetle ilişkilendirdiğim etken": "[...]",
             "Video kanıtı": "[...]",
             "Bu kanıtın aidiyetle ilişkisi": "[...]"
           },
-          "guidance": "Aidiyetin nedenlerini video izlenmeden hazır bir liste hâlinde vermeyin. Çıkarımınızı videodaki gerçek kişi, söz, davranış, ilişki veya mekân kanıtına dayandırın."
+          "guidance": "Aidiyeti salt doğum yeri veya tek bir sabit özelliğe indirgemeyin. Köy, su, yol ve günlük iş görüntülerini gözlem, 'aidiyet duygusu doğurabilir' sonucunu yorum olarak sınıflandırın. Kişiye ait duygu ve nedenleri birebir söz duyulmadan ona atfetmeyin.",
+          "explanation": "Görüntüler örneklendi; anlatıcının/kişinin aidiyet açıklaması ve EBA indirme özdeşliği bağımsız doğrulanmadı. source_limited korunmuştur."
         },
         "content": {
           "lead": "Video örneklerinden hareketle aidiyet duygusunun hangi koşullarla ilişkili olduğunu açıklayın; her iddianızı gerçek bir kanıtla destekleyin.",
