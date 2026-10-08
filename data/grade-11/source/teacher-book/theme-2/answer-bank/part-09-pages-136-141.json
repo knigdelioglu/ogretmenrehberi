@@ -148,8 +148,8 @@
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Çağ, canan, sine, kahır, saban kelimelerini atışmadaki bağlamına göre anlamlandırma ve alternatif önerme",
       "answer": "Çağ, canan, sine, kahır ve saban kelimelerinin videoda geçtiği dizeleri bulun. Her kelimenin anlamını bağlamdan tahmin edin, TDK Güncel Türkçe Sözlük'te kontrol edin ve dizedeki anlama uygun bir alternatif önerin. Videoda duymadığınız bir mecaz veya yan anlamı kesin bilgi gibi yazmayın.",
-      "guidance": "Önce videoda kelimenin geçtiği dizeyi belirleyin; anlamı dizeden tahmin edip TDK'de kontrol edin. Bağlamda kanıtını görmediğiniz mecazları hazır cevap olarak kullanmayın.",
-      "source_locator": "basılı s.140 / PDF s.141 — Âşık Atışması QR medyası gerekli",
+      "guidance": "Videonun yaklaşık 00:10–03:20 bölümünde iki saz icracısının nöbetleşe söyleyişi ve 02:20 civarında seyircinin alkışı görüntüde görülmektedir. Bu görsel kanıt atışmanın icra biçimini açıklamak içindir; *çağ, canan, sine, kahır, saban* sözcüklerinin hangi dizelerde geçtiğini kanıtlamaz. Sözcüğün videodaki bağlamı için öğrenciden mısrayı gerçekten işiterek not etmesini, ardından anlam tahminini TDK ile kontrol etmesini isteyin.",
+      "source_locator": "basılı s.140 / PDF s.141 — video EBA QR 85ae59be9852fb990c8de54f7cb313ce; aday 19XU49JV.mp4; görsel sahne kanıtı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md. TDK karekodu ayrıca kitapta bulunur; sesli mısra transkripti eksik.",
       "answer_sections": {
         "çağ": {
           "temel_sozluk_alani": "zaman, dönem, devir",
@@ -187,7 +187,7 @@
           "alternatif": "[Bağlama uygun öneri]"
         }
       },
-      "explanation": "Bağlam anlamını videoda duyduğunuz dizeden çıkarın; sözlükte bulduğunuz temel anlamla karşılaştırın. Dizede görülmeyen bir mecaz anlamı varmış gibi eklemeyin.",
+      "explanation": "Âşık atışması performansının sahne ve saz ilişkisi örnek karelerle incelendi. Ses dökümü tamamlanmadığı için kelimelerin geçtiği dizeler ve mecaz anlamlar doğrulanmış sayılamaz. TDK sözlük bağlantısı, video karekodundan ayrı bir kitap karekodudur.",
       "dictionary_terms": [
         {
           "term": "çağ",

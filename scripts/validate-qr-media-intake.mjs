@@ -155,4 +155,40 @@ assert.ok(orhunQ1 && orhunQ1.entry_type === "source_limited",
 assert.ok(orhunQ1.source_locator.includes("UNVERIFIED-19XU49LT.md"));
 assert.ok(orhunQ1.answer.includes("KÜL TİGİN ABİDESİ"), "Observed image evidence missing");
 
+// Theme 2 oral-culture videos are sampled visually, not transcribed.
+// Guard against accidentally treating a book QR URL as proof of Drive MP4 provenance.
+for (const [fileName, page, qrId, notePath] of [
+  ["19XU49LP.mp4", 129, "2d18e79ed46861b363ef8affbfefcecb", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md"],
+  ["19XU49JV.mp4", 140, "85ae59be9852fb990c8de54f7cb313ce", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md"],
+  ["19XU49MG.mp4", 141, "79b9d858a98472d2c1c9c773b715c6a2", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md"],
+]) {
+  const record = intake.records.find((r) => r.file_name === fileName);
+  assert.ok(record, `Missing Theme 2 cultural video ${fileName}`);
+  assert.equal(record.printed_page, page);
+  assert.equal(record.book_qr.eba_content_id, qrId);
+  assert.equal(record.book_qr.media_binary_identity, "not_verified_from_eba_download");
+  assert.equal(record.mapping_status, "provisional_png_and_visual_review");
+  assert.equal(record.review_notes_path, notePath);
+  assert.equal(record.visual_review, "time_stamped_sampled_frames");
+  assert.equal(record.spoken_audio_transcript, "not_done");
+  const review = fs.readFileSync(path.join(root, notePath), "utf8");
+  const normalizedReview = review.toLocaleLowerCase("tr-TR");
+  assert.ok(normalizedReview.includes("ses") && normalizedReview.includes("eba"),
+    "Notes must explain why sampled frames do not prove complete audio or download provenance");
+}
+const t2Part8 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-08-pages-129-135.json");
+const q129 = t2Part8.entries.find(e => e.question_id === "T2-P129-Q01");
+assert.equal(q129?.entry_type, "source_limited");
+assert.ok(q129.source_locator.includes("UNVERIFIED-19XU49LP.md"));
+assert.ok(q129.answer.includes("taş yazıt"), "Observation in bounded Q129 answer missing");
+const t2Part9 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-09-pages-136-141.json");
+const voc = t2Part9.entries.find(e => e.question_id === "T2-P140-VOC01");
+assert.equal(voc?.entry_type, "source_limited");
+assert.ok(voc.source_locator.includes("UNVERIFIED-19XU49JV.md"));
+assert.equal(voc.dictionary_terms.length, 5);
+for (const entry of Object.values(voc.answer_sections)) {
+  assert.ok(entry.videodaki_dize.startsWith("["),
+    "Do not fabricate sung verses without a verified sound transcript");
+}
+
 console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");
