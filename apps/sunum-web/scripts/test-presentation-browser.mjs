@@ -1408,7 +1408,7 @@ presentationBrowserSuite: {
     }))()`);
     assert.equal(assessmentMarkup.qa, false, "assessment stays outside the QA-modern shell");
     assert.equal(assessmentMarkup.focus, false, "assessment does not gain a QA answer-focus region");
-    assert.ok(assessmentMarkup.checklistRows > 0, "s78-self retains its checklist rows");
+    assert.ok(assessmentMarkup.checklistRows + assessmentMarkup.scaleRows > 0, "s78-self keeps its original assessment rows");
     assert.ok(assessmentMarkup.scaleRows > 0, "s78-self retains its Evet/Kısmen/Hayır scale rows");
     assert.equal(assessmentMarkup.label, "Değerlendirme", "assessment uses its semantic badge label");
     assert.equal(assessmentMarkup.titleAlign, "left", "assessment title remains left aligned");
@@ -1451,6 +1451,37 @@ presentationBrowserSuite: {
       visual = await visualLayoutState();
       expectVisualClasses(visual, fixture.classes, `${fixture.slug}/${fixture.id} control fixture`);
     }
+    // Dört temada süreç, bilgi ve değerlendirme türleri Modern QA olmadan ortak kabuğu kullanır.
+    for (const [slug, id, layout] of [
+      ["karagoz", "s16-process", "process"],
+      ["dinleme-izleme", "s67-qr-communication", "reference"],
+      ["yazma", "s78-self", "assessment"],
+      ["tema-2-konusma", "s130-stations", "process"],
+      ["huzur-177-178", "s178-circle-plan", "process"],
+      ["tiyatro-canlandirma-280-283", "s281-plan", "process"]
+    ]) {
+      await openStep(slug, id);
+      const appearance = await page.evaluate("(() => { const slide = document.querySelector('#canvas .slide'); const context = slide?.querySelector('.companion-context'); const focus = slide?.querySelector('.companion-focus'); const prompt = context?.querySelector(':scope > .prompt'); return { classes: slide?.className ?? '', prompt: prompt?.textContent ?? '', align: prompt ? getComputedStyle(prompt).textAlign : '', children: context?.children.length ?? 0, focusEmpty: focus?.childElementCount === 0, hasQaFocus: Boolean(slide?.querySelector('.qa-focus')) }; })()");
+      assert.ok(appearance.classes.includes("slide--modern-companion"), slug + "/" + id + " has shared shell");
+      assert.ok(appearance.classes.includes("slide--visual-" + layout), slug + "/" + id + " preserves its layout");
+      assert.ok(appearance.prompt.trim().length > 0 && appearance.children > 1, slug + "/" + id + " preserves content");
+      assert.ok(appearance.focusEmpty && !appearance.hasQaFocus, slug + "/" + id + " is not QA");
+      assert.ok(layout === "process" ? ["center", "left"].includes(appearance.align) : appearance.align === "left",
+        slug + "/" + id + " keeps its readable semantic title alignment");
+    }
+
+    await openStep("dinleme-izleme", "s68-69-paydos-q1");
+    const originalPromptSize = await page.evaluate("parseFloat(getComputedStyle(document.querySelector('#canvas .companion-context > .prompt')).fontSize)");
+    assert.equal(await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount"), 0, "Paydos starts as a reading instruction");
+    await next();
+    const revealed = await page.evaluate("(() => { const prompt = document.querySelector('#canvas .companion-context > .prompt'); return { size: parseFloat(getComputedStyle(prompt).fontSize), title: prompt.textContent, answer: Boolean(document.querySelector('#canvas .companion-focus .panel--answer')), qa: Boolean(document.querySelector('#canvas .slide--qa-modern')) }; })()");
+    assert.ok(revealed.size < originalPromptSize, "Paydos heading contracts when support opens");
+    assert.equal(revealed.title, "Paydos parçasını okuyun", "Paydos title is preserved");
+    assert.equal(revealed.answer, true, "Paydos support is in the shared focus area");
+    assert.equal(revealed.qa, false, "Paydos stays a process, not a QA question");
+    await previous();
+    assert.equal(await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount"), 0, "Paydos reverse navigation restores its instruction");
+    console.log("[sunum-web] Companion visual smoke passed in four themes.");
     console.log("[sunum-web] Focused visual-layout class smoke passed: process, assessment and reference shell isolation, pagination/reveal order, and existing content structures.");
     break presentationBrowserSuite;
   }
