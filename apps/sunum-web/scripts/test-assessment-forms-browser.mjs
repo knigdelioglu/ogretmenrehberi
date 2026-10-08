@@ -228,10 +228,23 @@ try {
         for (const option of step.content.scale) assert.ok(allText.includes(option), `${stepId} shows scale option ${option}`);
       }
     }
-    for (const section of step.content.sections || []) {
-      assert.ok(allText.includes(section.title), `${stepId} retains rubric level ${section.title}`);
-      if (section.body) assert.ok(normalizedText.includes(section.body.replace(/\s+/g, " ").trim()),
-        `${stepId} retains full rubric descriptor for ${section.title}`);
+    if (step.content.rubric?.rows?.length) {
+      for (const row of step.content.rubric.rows) {
+        assert.ok(allText.includes(row.criterion),
+          `${stepId} retains rubric criterion ${row.criterion}`);
+        for (const level of row.levels) {
+          assert.ok(allText.includes(level.points),
+            `${stepId} retains score range ${level.points} for ${row.criterion}`);
+          assert.ok(normalizedText.includes(level.description.replace(/\s+/g, " ").trim()),
+            `${stepId} retains full rubric descriptor for ${row.criterion} / ${level.label}`);
+        }
+      }
+    } else {
+      for (const section of step.content.sections || []) {
+        assert.ok(allText.includes(section.title), `${stepId} retains rubric level ${section.title}`);
+        if (section.body) assert.ok(normalizedText.includes(section.body.replace(/\s+/g, " ").trim()),
+          `${stepId} retains full rubric descriptor for ${section.title}`);
+      }
     }
     if (performanceRubric) {
       assert.ok(totalPages > 1, "s283-performance rubric remains a multi-page flow at 1920x1080");
