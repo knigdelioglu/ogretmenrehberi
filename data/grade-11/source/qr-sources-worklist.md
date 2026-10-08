@@ -2,6 +2,8 @@
 
 Bu liste EBA indirme/SHA kaydıyla doğrulanmış kaynakları izler. **Ders kitabının PDF bağlantı katmanından 18 video kullanım yerinin tamamının QR hedef kimliği ayrıca kesin olarak çıkarılmıştır.** Ayrıntılı tablo için [kitap QR bağlantı denetimi](qr-book-link-audit-2026-10-08.md). Ancak QR hedefinin kesinleşmesi, her Drive MP4'ünün aynı EBA indirmesi olduğunu kanıtlamaz. Kullanıcının Drive klasöründeki **18 MP4 dosyasının tamamının** geçici/dogrulanmış eşleştirmeleri ayrı dosyada tutulur: [qr-media-intake-2026-10-08.json](qr-media-intake-2026-10-08.json). 5 kaynak bu kayıtla SHA-256 düzeyinde eşleşmektedir.
 
+**Kanıt notu kapsamı (2026-10-08):** Basılı kitapta kullanılan 18 video bağlantısının **18'i** ayrı bir mevcut kaynak inceleme notuna bağlıdır. Bağlantıların varlığı `scripts/validate-qr-media-intake.mjs` testiyle doğrulanır. Notların kapsamı değişir: yalnız ekrandaki yazılar, kısmi görsel sahne incelemesi veya kullanıcının sahne gözlemine dayanan açıklamalar bulunabilir; **18 video için de tam ses transkripti doğrulanmamıştır**. MP4–EBA kriptografik kökeni ise hâlen yalnız **5/18** kayıt için kesinleşmiştir.
+
 **Durum ayrımı:** Dosya indirilmiş olması video içeriğinin dinlendiği anlamına gelmez. Kısmi sahne incelemesi tam diyalog transkripti sayılmaz. Ekranda yazı görülen videolarda yazılı veri ayrıca incelenir; ses, sahne ve ekran yazısı birbirine karıştırılmaz.
 
 | Kaynak | Basılı sayfa / PDF sayfası | İnceleme durumu | Kalan iş |
