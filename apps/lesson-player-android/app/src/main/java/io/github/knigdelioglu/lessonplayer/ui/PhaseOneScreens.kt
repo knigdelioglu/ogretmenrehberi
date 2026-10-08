@@ -575,7 +575,9 @@ internal fun LibraryScreen(
                         singleLine = true
                     )
                 }
-                item {
+                // Search results should appear immediately, without an unrelated
+                // resume card consuming the small-screen viewport (especially with IME).
+                if (query.isBlank()) item {
                     val currentLesson = bundle.byId.getValue(session.lessonId)
                     val currentStep = currentLesson.steps.firstOrNull { it.id == session.stepId }
                     val stepIndex = session.order.indexOf(session.stepId) + 1
