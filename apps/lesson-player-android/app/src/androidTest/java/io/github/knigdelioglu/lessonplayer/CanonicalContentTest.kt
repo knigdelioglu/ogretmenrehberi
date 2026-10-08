@@ -105,6 +105,12 @@ class CanonicalContentTest {
         assertTrue(bundle.lessons.isNotEmpty())
         assertTrue(bundle.lessons.sumOf { it.steps.size } > 0)
         assertEquals(bundle.lessons.size, bundle.byId.size)
+        assertTrue(
+            "A reference_answer must survive canonical parsing",
+            bundle.lessons.any { lesson ->
+                lesson.steps.any { it.answer?.entryType == "reference_answer" }
+            }
+        )
         assertEquals(bundle.byTheme.keys, bundle.workflow.themes.map { it.id }.toSet())
         assertEquals(64, bundle.contentSha256.length)
         assertEquals(bundle.lessons.size, bundle.lessonSha256.size)
