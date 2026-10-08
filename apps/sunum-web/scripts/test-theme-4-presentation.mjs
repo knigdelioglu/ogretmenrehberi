@@ -259,7 +259,7 @@ for (const id of ["s306-q8", "s306-q9", "s307-q10"]) {
   assert.ok(flowStepById.get(id)?.content?.lead && flowStepById.get(id)?.thinking,
     id + ": pre-answer guidance is available");
 }
-assert.doesNotMatch(flowStepById.get("s306-q8").content.lead, /diyalog\\/monolog/iu);
+assert.doesNotMatch(flowStepById.get("s306-q8").content.lead, /diyalog|monolog/iu);
 assert.doesNotMatch(flowStepById.get("s306-q9").content.lead, /tamamen/iu);
 assert.doesNotMatch(flowStepById.get("s307-q10").content.lead, /korunup|kuşak|arşiv/iu);
 assert.doesNotMatch(JSON.stringify(flowStepById.get("s264-stairs").content),
