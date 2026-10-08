@@ -687,11 +687,18 @@ assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Örnek du
   !JSON.stringify(theme4AssessmentById.get("s305-q5")?.answer).includes("Kiraz") &&
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections?.["Görsel 1 — çiçekli dal"]?.includes("kesinleştirilmez"),
   "s.304 örnek duygu tek doğruya çevrilmemeli; s.305 görsel türü doğrulanamayacak biçimde kesinleştirilmemeli.");
-assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Videoda gözlediğim kişi, davranış veya tutum"] === "[...]" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Her özellik için video kanıtı"] === "[...]" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "source_limited" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Video kanıtı"] === "[...]",
-  "s.307 Aidiyet cevapları video kanıtı olmadan doldurulmamalı.");
+// Aidiyet has timestamped *visual* observations but still lacks verified audio.
+const aidiyet13 = theme4AssessmentById.get("s307-q13")?.answer;
+const aidiyet14 = theme4AssessmentById.get("s307-q14")?.answer;
+assert(aidiyet13?.entry_type === "source_limited" &&
+  aidiyet14?.entry_type === "source_limited" &&
+  aidiyet13.source_locator.includes("UNVERIFIED-19XU49LS.md") &&
+  aidiyet14.source_locator.includes("UNVERIFIED-19XU49LS.md") &&
+  aidiyet13.answer_sections["Videoda gözlediğim kişi, davranış veya tutum"].includes("00:45") &&
+  aidiyet13.answer_sections["Her özellik için video kanıtı"].includes("04:15") &&
+  aidiyet14.answer_sections["Video kanıtı"].includes("02:00") &&
+  aidiyet14.answer.includes("sesli anlatım olmadan bilinmez") &&
+  aidiyet13.explanation.includes("source_limited"),
+  "s.307 Aidiyet cevapları yalnız zamanlı görsel kanıt kullanmalı; ses ve duygu atıfları belirsiz kalmalı.");
 
 }
