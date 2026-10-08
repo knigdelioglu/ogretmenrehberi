@@ -240,10 +240,10 @@ fun toStudentProjection(lesson: LessonData, state: LessonSession): StudentProjec
     return StudentProjection(
         lessonId = lesson.lessonId, stepId = state.stepId,
         printedPageRange = effective.source.printedPageRange,
-        prompt = if (showAnswer && effective.layout != LayoutKind.VOCABULARY) null
-            else effective.displayPrompt,
+        prompt = if (showAnswer && effective.layout != LayoutKind.VOCABULARY &&
+            !answer?.answer.isNullOrBlank()) null else effective.displayPrompt,
         answerText = answer?.answer?.takeIf {
-            showAnswer && effective.layout != LayoutKind.VOCABULARY
+            showAnswer && effective.layout != LayoutKind.VOCABULARY && it.isNotBlank()
         },
         answerSections = answer?.answerSections?.takeIf {
             showAnswer && effective.layout != LayoutKind.VOCABULARY
