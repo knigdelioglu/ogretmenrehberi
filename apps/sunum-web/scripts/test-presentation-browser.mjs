@@ -2684,11 +2684,18 @@ presentationBrowserSuite: {
 
   await page.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: profile });
   screen = await openStep("konusma", "s59-rubric");
-  assert.ok(screen.text.includes("Konu seçimi") && screen.text.includes("Başlangıç düzeyinde"),
-    "s.59 authored rubric shows its criteria and performance levels to students");
-  assert.ok(screen.text.includes("Öğretmen anahtarı") && screen.text.includes("Puanlama Exceli"),
-    "s.59 authored rubric links its teacher rubric and scoring workbook");
-  const rubricDownload = await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
+  let rubricCriteriaSeen = false;
+  let rubricResourcesSeen = false;
+  let rubricDownload = null;
+  for (let i = 0; i < 16; i += 1) {
+    const currentText = i === 0 ? screen.text : await next();
+    rubricCriteriaSeen ||= currentText.includes("Konu seçimi") && currentText.includes("Başlangıç düzeyinde");
+    rubricResourcesSeen ||= currentText.includes("Öğretmen anahtarı") && currentText.includes("Puanlama Exceli");
+    rubricDownload ||= await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
+    if (rubricCriteriaSeen && rubricResourcesSeen && rubricDownload) break;
+  }
+  assert.ok(rubricCriteriaSeen, "s.59 authored rubric shows criteria and levels across its paginated content");
+  assert.ok(rubricResourcesSeen, "s.59 authored rubric links its teacher rubric and scoring workbook");
   assert.ok(rubricDownload?.href.endsWith("/assets/assessment-documents/iletisim-engelleri-drama-rubrik.docx"),
     "s.59 rubric has a same-origin Word download link");
   assert.equal(rubricDownload.download, true, "rubric resource is exposed as a browser download");
