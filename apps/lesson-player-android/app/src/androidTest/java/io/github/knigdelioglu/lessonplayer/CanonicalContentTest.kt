@@ -39,6 +39,66 @@ class CanonicalContentTest {
     }
 
     @Test
+    fun structuredOnlyAnswerDecodesAndRejectsTrulyEmptyAnswer() {
+        val lessons = JSONArray(bytes("lessons.json").toString(Charsets.UTF_8))
+        var lessonId: String? = null
+        var stepId: String? = null
+        var changedAnswer: JSONObject? = null
+        for (lessonIndex in 0 until lessons.length()) {
+            val lesson = lessons.getJSONObject(lessonIndex)
+            val steps = lesson.getJSONArray("steps")
+            for (stepIndex in 0 until steps.length()) {
+                val step = steps.getJSONObject(stepIndex)
+                val answer = step.optJSONObject("answer") ?: continue
+                val sections = answer.opt("answer_sections")
+                val hasSections = when (sections) {
+                    is JSONObject -> sections.length() > 0
+                    is JSONArray -> sections.length() > 0
+                    else -> false
+                }
+                if (!hasSections) continue
+                lessonId = lesson.getString("lesson_id")
+                stepId = step.getString("id")
+                changedAnswer = answer
+                answer.remove("answer")
+                break
+            }
+            if (changedAnswer != null) break
+        }
+        assertNotNull("Need a canonical answer with sections", changedAnswer)
+        val workflowBytes = bytes("teacher-workflow.json")
+        val manifest = JSONObject(bytes("content-manifest.json").toString(Charsets.UTF_8))
+
+        fun decodeModified() : io.github.knigdelioglu.lessonplayer.content.LessonBundle {
+            val lessonBytes = lessons.toString().toByteArray(Charsets.UTF_8)
+            manifest.put("contentSha256", ContentRepository.sha256(lessonBytes))
+            return ContentRepository.decode(
+                lessonBytes,
+                workflowBytes,
+                manifest.toString().toByteArray(Charsets.UTF_8)
+            )
+        }
+
+        val bundle = decodeModified()
+        val lesson = bundle.byId.getValue(lessonId!!)
+        val step = lesson.steps.first { it.id == stepId }
+        assertEquals("", step.answer?.answer)
+        assertNotNull(step.answer?.answerSections)
+        val session = io.github.knigdelioglu.lessonplayer.player.LessonEngine
+            .initial(lesson, bundle.lessonDigest(lesson.lessonId))
+            .copy(stepId = stepId!!, revealed = setOf(
+                io.github.knigdelioglu.lessonplayer.content.RevealKey.ANSWER
+            ))
+        val projected = io.github.knigdelioglu.lessonplayer.player.toStudentProjection(lesson, session)
+        assertEquals(step.displayPrompt, projected.prompt)
+        assertTrue(projected.answerText == null)
+        assertNotNull(projected.answerSections)
+
+        changedAnswer!!.remove("answer_sections")
+        assertThrows(IllegalArgumentException::class.java) { decodeModified() }
+    }
+
+    @Test
     fun canonicalBundleLoadsAndValidates() = runBlocking {
         val loaded = offlineRepository().load()
         val bundle = loaded.bundle
