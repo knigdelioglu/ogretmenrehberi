@@ -1,6 +1,6 @@
 # Grade 11 QR source worklist
 
-Bu liste EBA kimliği ve orijinal QR hedefi doğrulanmış kaynakları izler. Kullanıcının Drive klasöründeki **18 MP4 dosyasının tamamının** geçici/dogrulanmış eşleştirmeleri ayrı dosyada tutulur: [qr-media-intake-2026-10-08.json](qr-media-intake-2026-10-08.json). 5 kaynak bu kayıtla SHA-256 düzeyinde eşleşmektedir.
+Bu liste EBA indirme/SHA kaydıyla doğrulanmış kaynakları izler. **Ders kitabının PDF bağlantı katmanından 18 video kullanım yerinin tamamının QR hedef kimliği ayrıca kesin olarak çıkarılmıştır.** Ayrıntılı tablo için [kitap QR bağlantı denetimi](qr-book-link-audit-2026-10-08.md). Ancak QR hedefinin kesinleşmesi, her Drive MP4'ünün aynı EBA indirmesi olduğunu kanıtlamaz. Kullanıcının Drive klasöründeki **18 MP4 dosyasının tamamının** geçici/dogrulanmış eşleştirmeleri ayrı dosyada tutulur: [qr-media-intake-2026-10-08.json](qr-media-intake-2026-10-08.json). 5 kaynak bu kayıtla SHA-256 düzeyinde eşleşmektedir.
 
 **Durum ayrımı:** Dosya indirilmiş olması video içeriğinin dinlendiği anlamına gelmez. Kısmi sahne incelemesi tam diyalog transkripti sayılmaz. Ekranda yazı görülen videolarda yazılı veri ayrıca incelenir; ses, sahne ve ekran yazısı birbirine karıştırılmaz.
 
@@ -14,11 +14,11 @@ Bu liste EBA kimliği ve orijinal QR hedefi doğrulanmış kaynakları izler. Ku
 
 ## Bilinen eşleştirme hatası
 
-PNG'de **s.88** için de `19XU4CVR.mp4` belirtilmiş; bu dosya s.67'deki *Geçmişten Günümüze İletişim Araçları* videosudur. `19XU49LO.mp4` şenlikler videosu için **adaydır**, fakat s.88'deki basılı QR hedefiyle eşleştirilmeden doğrulanmış kaynak sayılmamalı veya s.88 cevaplarına kanıt yapılmamalıdır.
+PNG'de **s.88** için yanlışlıkla `19XU4CVR.mp4` yazılmıştır. Bu dosyanın s.67'deki *Geçmişten Günümüze İletişim Araçları* kaydı olduğu kesin. **s.88'in özgün basılı QR hedefi**, kitap PDF'sindeki bağlantıdan `382543f8f403f67200b286af84e71b40` olarak **doğrulandı**. `19XU49LO.mp4` görüntüleri şenlikler/ortak kültür konusuyla örtüştüğünden dosya **adayıdır**; EBA URL'sinden indirilmiş aynı MP4 olduğunun bağımsız teyidi hâlâ bulunmuyor. Bu nedenle s.88 videoya dayalı yeni olgular henüz kesin cevap yapılmamalıdır.
 
 ## Kaynak güvenliği
 
 - `qr-sources.json` yalnız EBA kimliği/QR hedefi doğrulanmış kaynakların kanonik kaydıdır.
-- `qr-media-intake-2026-10-08.json` eksik/onay bekleyen videoları saklayan envanterdir; oradaki geçici eşleştirmeler kanonik QR kimliği değildir.
+- `qr-media-intake-2026-10-08.json` 18 **basılı QR hedefini kesin**, yalnız 5 **MP4 EBA indirme kimliğini/SHA'sını kesin** olarak tutar. Diğer Drive dosyaları için ilgili URL ve video dosyası arasındaki bağ hâlâ geçicidir.
 - Orijinal MP4'ler ve uzun üçüncü taraf transkriptleri herkese açık GitHub reposuna yüklenmez.
 - Ses çözümlemesi bitmeden hiçbir kaynak `full_transcript_verified` kabul edilmez.
