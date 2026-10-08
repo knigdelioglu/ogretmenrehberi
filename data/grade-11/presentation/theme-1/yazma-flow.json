@@ -188,13 +188,18 @@
           "Söz varlığını hedef kitleye ve amaca uygun kullandım.",
           "Düşünceyi geliştirme yollarından yararlandım.",
           "İçeriğe uygun bir başlık belirledim.",
-          "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim.",
-          "“Kısmen” veya “Hayır” işaretlediğiniz tek bir ölçütü seçin; taslağınızdan kanıt gösterip yapacağınız bir düzeltmeyi belirtin."
+          "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim."
         ],
         "scale": [
           "Evet",
           "Kısmen",
           "Hayır"
+        ],
+        "sections": [
+          {
+            "title": "Değerlendirmeden sonraki tek düzeltme",
+            "body": "“Kısmen” veya “Hayır” işaretlediğiniz tek bir ölçütü seçin; taslağınızdan kanıt gösterip yapacağınız bir düzeltmeyi belirtin."
+          }
         ]
       }
     },
