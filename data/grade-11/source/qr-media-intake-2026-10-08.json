@@ -285,7 +285,7 @@
       "duration_seconds": 247.1,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames_and_on_screen_labels",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -297,7 +297,9 @@
         "observed_book_label": "Göktürklerin Dirilişi",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MB.md",
+      "media_content_observation": "time_stamped_stills_not_full_video_or_audio_transcript"
     },
     {
       "file_name": "19XU49LV.mp4",
