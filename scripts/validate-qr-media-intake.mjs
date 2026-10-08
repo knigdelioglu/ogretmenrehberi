@@ -133,4 +133,26 @@ assert.ok(q8.answer.includes("1971"), "Missing verified on-screen objective exam
 assert.ok(q8.answer.includes("kanatlanmış"), "Missing verified on-screen subjective example");
 assert.ok(q8.source_locator.includes("QR-EBA-29BF4F293D53.md"), "Quote provenance missing");
 
+for (const [fileName, page, notePath] of [
+  ["19XU49LO.mp4", 88, "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LO.md"],
+  ["19XU49LT.mp4", 113, "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md"],
+]) {
+  const record = intake.records.find((r) => r.file_name === fileName);
+  assert.ok(record, `Theme 2 record missing: ${fileName}`);
+  assert.equal(record.printed_page, page);
+  assert.equal(record.review_notes_path, notePath);
+  assert.equal(record.visual_review, "time_stamped_sampled_frames");
+  assert.equal(record.book_qr.media_binary_identity, "not_verified_from_eba_download");
+  assert.equal(record.spoken_audio_transcript, "not_done");
+  const note = fs.readFileSync(path.join(root, notePath), "utf8");
+  assert.ok(note.includes("görüntü") && note.includes("doğrula"),
+    "Theme 2 visual notes must distinguish observation from source validation");
+}
+const t2AnswerBank = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-05-pages-113-120.json");
+const orhunQ1 = t2AnswerBank.entries.find((e) => e.question_id === "T2-P113-Q01");
+assert.ok(orhunQ1 && orhunQ1.entry_type === "source_limited",
+  "Unverified video transcript must remain source_limited");
+assert.ok(orhunQ1.source_locator.includes("UNVERIFIED-19XU49LT.md"));
+assert.ok(orhunQ1.answer.includes("KÜL TİGİN ABİDESİ"), "Observed image evidence missing");
+
 console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");
