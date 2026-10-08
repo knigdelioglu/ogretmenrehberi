@@ -159,10 +159,10 @@
       "sha256": "d08e628832b872074906fe54e1bea87a47d6cca6f68802bf7b671ca595cd5140",
       "duration_seconds": 277.5,
       "existing_source_id": null,
-      "mapping_status": "candidate_needs_original_qr_verification",
+      "mapping_status": "book_pdf_qr_verified_media_file_candidate_unconfirmed",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "evidence_scope": "page_88_printed_qr_verified_and_visual_topic_match_but_mp4_eba_origin_unverified",
       "book_qr": {
         "printed_page": 88,
         "pdf_page": 89,
