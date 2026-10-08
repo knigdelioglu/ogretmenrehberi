@@ -160,7 +160,7 @@
       "duration_seconds": 277.5,
       "existing_source_id": null,
       "mapping_status": "book_pdf_qr_verified_media_file_candidate_unconfirmed",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "page_88_printed_qr_verified_and_visual_topic_match_but_mp4_eba_origin_unverified",
       "book_qr": {
@@ -172,7 +172,9 @@
         "observed_book_label": "Türklerde Toylar Merasimler Festivaller ve Şenlikler",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LO.md",
+      "media_content_observation": "sampled_video_frames_only"
     },
     {
       "file_name": "19XU49LT.mp4",
@@ -183,7 +185,7 @@
       "duration_seconds": 264.033333,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -195,7 +197,9 @@
         "observed_book_label": "Orhun Vadisi",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md",
+      "media_content_observation": "sampled_video_frames_only"
     },
     {
       "file_name": "19XU49LP.mp4",
