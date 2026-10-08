@@ -44,10 +44,18 @@ for (const [filename, relativeFlow, stepId, count] of files) {
     assert.equal(step.content.items.length, count, `${stepId} exposes every peer-form criterion`);
     assert.deepEqual(step.content.scale, ["Evet", "Kısmen", "Hayır"], `${stepId} displays the original peer scale`);
   } else {
-    const levels = step.content.sections.filter((section) => section.title !== "Toplam puan ve hesaplama" && /puan/.test(section.title));
-    assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
-    assert.ok(step.content.sections.some((section) => section.title === "Toplam puan ve hesaplama"),
-      `${stepId} explains the total-score calculation`);
+    if (step.content.rubric?.rows?.length) {
+      assert.equal(step.content.rubric.rows.length, count, `${stepId} preserves every rubric criterion`);
+      assert.ok(step.content.rubric.rows.every((row) => row.levels.length === 4),
+        `${stepId} contains four separate scored descriptors per criterion`);
+      assert.equal(step.content.rubric.rows.reduce((total, row) => total + row.max_points, 0), 100);
+      assert.equal(step.content.rubric.total_points, 100, `${stepId} preserves score totals`);
+    } else {
+      const levels = step.content.sections.filter((section) => section.title !== "Toplam puan ve hesaplama" && /puan/.test(section.title));
+      assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
+      assert.ok(step.content.sections.some((section) => section.title === "Toplam puan ve hesaplama"),
+        `${stepId} explains the total-score calculation`);
+    }
     assert.ok(step.content.sources.some((source) => source.url.startsWith("https://") && /#page=/.test(source.url)),
       `${stepId} retains the verified book-page reference`);
   }
