@@ -375,123 +375,35 @@
       "prompt": "Mülakat performans görevi rubriği — ölçüt ve puan düzeyleri",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her ölçütte dört düzey ve puan aralığı verilmiştir. Çalışmanızı gözden geçirirken her ölçüt için uygun düzeyi ve karşılığındaki puanı inceleyin.",
+        "lead": "Rubriği ölçütler ile dört başarı düzeyinin kesişiminde inceleyin. Her ölçüt için bir düzey ve o aralıktan puan belirleyin; toplamı 100 üzerinden hesaplayın.",
         "sections": [
           {
-            "title": "Başlangıç düzeyinde · 1–2 puan",
-            "body": "Ölçüt: Düşünceyi geliştirme yollarından yararlanma    (12 puan). Mülakat yapılırken düşünceyi geliştirme yollarından yararlanılmamıştır"
+            "title": "Düşünceyi geliştirme yollarından yararlanma · 12 puan",
+            "body": "Başlangıç düzeyinde (1–2): Mülakat yapılırken düşünceyi geliştirme yollarından yararlanılmamıştır\nKabul edilebilir (3–5): Mülakat yapılırken düşünceyi geliştirme yollarından kısmen yararlanılmıştır\nİyi (6–9): Mülakat yapılırken düşünceyi geliştirme yollarından yeterli düzeyde yararlanılmıştır\nÇok iyi (10–12): Mülakat yapılırken düşünceyi geliştirme yollarından oldukça etkili bir biçimde yararlanılmıştır"
           },
           {
-            "title": "Kabul edilebilir · 3–5 puan",
-            "body": "Ölçüt: Düşünceyi geliştirme yollarından yararlanma    (12 puan). Mülakat yapılırken düşünceyi geliştirme yollarından kısmen yararlanılmıştır"
+            "title": "Anlatım ilkelerine (akıcılık, duruluk vb.) uygunluk · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Konuşmada anlatım ilkelerine uyulmamıştır\nKabul edilebilir (5–8): Konuşma anlatım ilkelerine kısmen uygundur\nİyi (9–12): Konuşma anlatım ilkelerine yeterli düzeyde uygundur\nÇok iyi (13–16): Konuşma anlatım ilkelerine oldukça yüksek düzeyde uygundur"
           },
           {
-            "title": "İyi · 6–9 puan",
-            "body": "Ölçüt: Düşünceyi geliştirme yollarından yararlanma    (12 puan). Mülakat yapılırken düşünceyi geliştirme yollarından yeterli düzeyde yararlanılmıştır"
+            "title": "Beden dilinin kullanımı · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Beden dilinin kullanımı içerikle çok az ilgilidir\nKabul edilebilir (5–8): Beden dili içeriği kısmen yansıtmıştır\nİyi (9–12): Beden dili içeriği yeterince yansıtmaktadır\nÇok iyi (13–16): Beden dili içeriği oldukça güçlü bir şekilde yansıtmaktadır"
           },
           {
-            "title": "Çok iyi · 10–12 puan",
-            "body": "Ölçüt: Düşünceyi geliştirme yollarından yararlanma    (12 puan). Mülakat yapılırken düşünceyi geliştirme yollarından oldukça etkili bir biçimde yararlanılmıştır"
+            "title": "Ses ve diksiyon · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Konuşmada ses ve diksiyona uygunluk alt düzeydedir\nKabul edilebilir (5–8): Konuşmada ses ve diksiyona kısmen uyulmuştur\nİyi (9–12): Konuşmada ses ve diksiyona uygunluk yeterli düzeydedir\nÇok iyi (13–16): Konuşma, ses ve diksiyona uygunluk yönünden oldukça başarılıdır"
           },
           {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Anlatım ilkelerine (akıcılık, duruluk vb.) uygunluk   (16 puan). Konuşmada anlatım ilkelerine uyulmamıştır"
+            "title": "Zaman yönetimi · 12 puan",
+            "body": "Başlangıç düzeyinde (1–2): Konuşmada zaman yönetimi başarısızdır\nKabul edilebilir (3–5): Konuşma zaman yönetimi açısından kısmen yeterlidir\nİyi (6–9): Konuşma zaman yönetimi açısından başarılıdır\nÇok iyi (10–12): Konuşma zaman yönetimi açısından oldukça başarılıdır"
           },
           {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Anlatım ilkelerine (akıcılık, duruluk vb.) uygunluk   (16 puan). Konuşma anlatım ilkelerine kısmen uygundur"
+            "title": "Mekânı etkili kullanma · 12 puan",
+            "body": "Başlangıç düzeyinde (1–2): Mekân etkili kullanılmamıştır\nKabul edilebilir (3–5): Mekân kısmen etkili kullanılmıştır\nİyi (6–9): Mekân etkili kullanılmıştır\nÇok iyi (10–12): Mekân oldukça etkili kullanılmıştır"
           },
           {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Anlatım ilkelerine (akıcılık, duruluk vb.) uygunluk   (16 puan). Konuşma anlatım ilkelerine yeterli düzeyde uygundur"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Anlatım ilkelerine (akıcılık, duruluk vb.) uygunluk   (16 puan). Konuşma anlatım ilkelerine oldukça yüksek düzeyde uygundur"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Beden dilinin kullanımı  (16 puan). Beden dilinin kullanımı içerikle çok az ilgilidir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Beden dilinin kullanımı  (16 puan). Beden dili içeriği kısmen yansıtmıştır"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Beden dilinin kullanımı  (16 puan). Beden dili içeriği yeterince yansıtmaktadır"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Beden dilinin kullanımı  (16 puan). Beden dili içeriği oldukça güçlü bir şekilde yansıtmaktadır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Ses ve diksiyon    (16 puan). Konuşmada ses ve diksiyona uygunluk alt düzeydedir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Ses ve diksiyon    (16 puan). Konuşmada ses ve diksiyona kısmen uyulmuştur"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Ses ve diksiyon    (16 puan). Konuşmada ses ve diksiyona uygunluk yeterli düzeydedir"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Ses ve diksiyon    (16 puan). Konuşma, ses ve diksiyona uygunluk yönünden oldukça başarılıdır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–2 puan",
-            "body": "Ölçüt: Zaman yönetimi    (12 puan). Konuşmada zaman yönetimi başarısızdır"
-          },
-          {
-            "title": "Kabul edilebilir · 3–5 puan",
-            "body": "Ölçüt: Zaman yönetimi    (12 puan). Konuşma zaman yönetimi açısından kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 6–9 puan",
-            "body": "Ölçüt: Zaman yönetimi    (12 puan). Konuşma zaman yönetimi açısından başarılıdır"
-          },
-          {
-            "title": "Çok iyi · 10–12 puan",
-            "body": "Ölçüt: Zaman yönetimi    (12 puan). Konuşma zaman yönetimi açısından oldukça başarılıdır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–2 puan",
-            "body": "Ölçüt: Mekânı etkili kullanma (12 puan). Mekân etkili kullanılmamıştır"
-          },
-          {
-            "title": "Kabul edilebilir · 3–5 puan",
-            "body": "Ölçüt: Mekânı etkili kullanma (12 puan). Mekân kısmen etkili kullanılmıştır"
-          },
-          {
-            "title": "İyi · 6–9 puan",
-            "body": "Ölçüt: Mekânı etkili kullanma (12 puan). Mekân etkili kullanılmıştır"
-          },
-          {
-            "title": "Çok iyi · 10–12 puan",
-            "body": "Ölçüt: Mekânı etkili kullanma (12 puan). Mekân oldukça etkili kullanılmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Konuşma, Türkçenin doğru kullanımı açısından alt düzeydedir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Konuşma, Türkçenin doğru kullanımı açısından kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Konuşma, Türkçenin doğru kullanımı açısından yeterlidir"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Türkçenin doğru kullanımı  (16 puan). Konuşma, Türkçenin doğru kullanımı açısından oldukça başarılıdır"
-          },
-          {
-            "title": "Toplam puan ve hesaplama",
-            "body": "Her ölçütten seçtiğiniz puanları toplayınız. yedi ölçüt (düşünceyi geliştirme yollarından yararlanma, anlatım ilkelerine uygunluk, beden dilinin kullanımı, ses ve diksiyon, zaman yönetimi, mekânı etkili kullanma, Türkçenin doğru kullanımı) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 7, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
+            "title": "Türkçenin doğru kullanımı · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Konuşma, Türkçenin doğru kullanımı açısından alt düzeydedir\nKabul edilebilir (5–8): Konuşma, Türkçenin doğru kullanımı açısından kısmen yeterlidir\nİyi (9–12): Konuşma, Türkçenin doğru kullanımı açısından yeterlidir\nÇok iyi (13–16): Konuşma, Türkçenin doğru kullanımı açısından oldukça başarılıdır"
           }
         ],
         "sources": [
@@ -509,7 +421,201 @@
             "url": "assets/assessment-documents/35-ogrenci-rubrik-puanlama.xlsx",
             "download": true
           }
-        ]
+        ],
+        "rubric": {
+          "columns": [
+            "Başlangıç düzeyinde",
+            "Kabul edilebilir",
+            "İyi",
+            "Çok iyi"
+          ],
+          "rows": [
+            {
+              "criterion": "Düşünceyi geliştirme yollarından yararlanma",
+              "max_points": 12,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–2",
+                  "description": "Mülakat yapılırken düşünceyi geliştirme yollarından yararlanılmamıştır"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "3–5",
+                  "description": "Mülakat yapılırken düşünceyi geliştirme yollarından kısmen yararlanılmıştır"
+                },
+                {
+                  "label": "İyi",
+                  "points": "6–9",
+                  "description": "Mülakat yapılırken düşünceyi geliştirme yollarından yeterli düzeyde yararlanılmıştır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "10–12",
+                  "description": "Mülakat yapılırken düşünceyi geliştirme yollarından oldukça etkili bir biçimde yararlanılmıştır"
+                }
+              ]
+            },
+            {
+              "criterion": "Anlatım ilkelerine (akıcılık, duruluk vb.) uygunluk",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Konuşmada anlatım ilkelerine uyulmamıştır"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Konuşma anlatım ilkelerine kısmen uygundur"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Konuşma anlatım ilkelerine yeterli düzeyde uygundur"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Konuşma anlatım ilkelerine oldukça yüksek düzeyde uygundur"
+                }
+              ]
+            },
+            {
+              "criterion": "Beden dilinin kullanımı",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Beden dilinin kullanımı içerikle çok az ilgilidir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Beden dili içeriği kısmen yansıtmıştır"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Beden dili içeriği yeterince yansıtmaktadır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Beden dili içeriği oldukça güçlü bir şekilde yansıtmaktadır"
+                }
+              ]
+            },
+            {
+              "criterion": "Ses ve diksiyon",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Konuşmada ses ve diksiyona uygunluk alt düzeydedir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Konuşmada ses ve diksiyona kısmen uyulmuştur"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Konuşmada ses ve diksiyona uygunluk yeterli düzeydedir"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Konuşma, ses ve diksiyona uygunluk yönünden oldukça başarılıdır"
+                }
+              ]
+            },
+            {
+              "criterion": "Zaman yönetimi",
+              "max_points": 12,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–2",
+                  "description": "Konuşmada zaman yönetimi başarısızdır"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "3–5",
+                  "description": "Konuşma zaman yönetimi açısından kısmen yeterlidir"
+                },
+                {
+                  "label": "İyi",
+                  "points": "6–9",
+                  "description": "Konuşma zaman yönetimi açısından başarılıdır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "10–12",
+                  "description": "Konuşma zaman yönetimi açısından oldukça başarılıdır"
+                }
+              ]
+            },
+            {
+              "criterion": "Mekânı etkili kullanma",
+              "max_points": 12,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–2",
+                  "description": "Mekân etkili kullanılmamıştır"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "3–5",
+                  "description": "Mekân kısmen etkili kullanılmıştır"
+                },
+                {
+                  "label": "İyi",
+                  "points": "6–9",
+                  "description": "Mekân etkili kullanılmıştır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "10–12",
+                  "description": "Mekân oldukça etkili kullanılmıştır"
+                }
+              ]
+            },
+            {
+              "criterion": "Türkçenin doğru kullanımı",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Konuşma, Türkçenin doğru kullanımı açısından alt düzeydedir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Konuşma, Türkçenin doğru kullanımı açısından kısmen yeterlidir"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Konuşma, Türkçenin doğru kullanımı açısından yeterlidir"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Konuşma, Türkçenin doğru kullanımı açısından oldukça başarılıdır"
+                }
+              ]
+            }
+          ],
+          "min_points": 7,
+          "total_points": 100
+        }
       }
     },
     {
