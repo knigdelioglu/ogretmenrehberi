@@ -335,7 +335,7 @@
       "duration_seconds": 58.366667,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -347,7 +347,9 @@
         "observed_book_label": "Anadolu İnsanı Fedakârlık jeneriği",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU4GDV.md",
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
     },
     {
       "file_name": "19XU49LQ.mp4",
@@ -358,7 +360,7 @@
       "duration_seconds": 429,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -370,7 +372,9 @@
         "observed_book_label": "Anadolu İnsanı Fedakârlık asıl video",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md",
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
     },
     {
       "file_name": "19XU49KB.mp4",
@@ -381,7 +385,7 @@
       "duration_seconds": 306.6,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -393,7 +397,9 @@
         "observed_book_label": "Anadolu İnsanı Çalışkanlık",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md",
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
     },
     {
       "file_name": "19XU3SW3.mp4",
@@ -428,7 +434,7 @@
       "duration_seconds": 285.333333,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -440,7 +446,9 @@
         "observed_book_label": "Anadolu İnsanı Aidiyet",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md",
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
     }
   ],
   "known_conflicts": [

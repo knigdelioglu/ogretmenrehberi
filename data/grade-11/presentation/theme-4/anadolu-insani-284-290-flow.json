@@ -71,6 +71,14 @@
           {
             "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=285"
+          },
+          {
+            "label": "Jenerik — kitabın özgün EBA karekodu (58 sn.)",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=bc54a785fede521619c982332455dc72&resourceType=1&resourceLocation=2"
+          },
+          {
+            "label": "Fedakârlık — asıl belgeselin özgün EBA karekodu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2"
           }
         ]
       }
@@ -96,7 +104,7 @@
       "prompt": "Hazırlık 2 — Başlık, görsel ve jenerikten içeriğe ilişkin tahmin yapınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tahmini kesin olay bilgisi gibi yazmayın; hangi görsel veya başlık ipucundan yola çıktığınızı belirtin."
+        "lead": "Önce başlık ve kitap görselinden tahmin yapın; sonra 58 saniyelik ayrı jeneriğin su, tabiat ve hayvancılık görüntüleriyle tahmininizi karşılaştırın. Tahmini yaşanmış olay veya kesin sonuç diye sunmayın."
       }
     },
     {
@@ -145,6 +153,10 @@
           {
             "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=285"
+          },
+          {
+            "label": "Fedakârlık — asıl belgesel EBA hedefi",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2"
           }
         ]
       }
@@ -164,7 +176,7 @@
           "Videoda geçtiği bağlam",
           "Hayatın Aynası temasıyla ilişkisi"
         ],
-        "note": "QR video içeriği elimizde olmadığı için Lesson Player hazır kelime listesi üretmez.",
+        "note": "Uzun Fedakârlık videosunun bazı görüntüleri incelendi; ancak tam konuşma/ses dökümü bulunmadığı için videoda duyulan sözcükler hazır liste olarak verilmez. Görsel kanıt, sesli ifade yerine kullanılamaz.",
         "sources": [
           {
             "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
