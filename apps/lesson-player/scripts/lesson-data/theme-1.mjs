@@ -104,19 +104,16 @@ assert(
 
 assert(
   s28q1.layout === "comparison" &&
-    s28q1.content?.sections?.some((section) => section.title === "Tip") &&
-    s28q1.content?.sections?.some((section) => section.title === "Karakter"),
-  "s28-q1 tip–karakter ayrımını iki karşılaştırma kartıyla göstermeli."
+    s28q1.content?.lead?.includes("söz varlığını sosyal statü ve eğitim") &&
+    s28q1.content?.items?.length === 3 &&
+    s28q1.content.items.some((item) => item.includes("doğrudan gösterdiği sözle")),
+  "s28-q1 kitap sorusunu söz varlığı → sosyal/eğitimsel çıkarım → kanıt sınırı olarak işletmeli."
 );
 assert(
-  s28q1.content?.items?.length === 3 &&
-    s28q1.answer?.guidance?.includes("tip–karakter mini uygulamasına") &&
-    s28q1.answer?.explanation?.includes("Karakter ise bireysel yönleri"),
-  "s28-q1 kavram açıklaması ve metne dayalı uygulama rehberliğini birlikte taşımalı."
-);
-assert(
-  s28q1.content?.note?.includes("pekiştirmek için eklenmiştir"),
-  "Tip–karakter zenginleştirmesinin akışa eklenen pekiştirme olduğu açık kalmalı."
+  !s28q1.content?.sections?.some((section) => ["Tip", "Karakter"].includes(section.title)) &&
+    s28q1.content?.note?.includes("İsteğe bağlı pekiştirme") &&
+    s28q1.answer?.guidance?.includes("tip–karakter mini uygulamasına"),
+  "s28-q1 tip–karakter ek çalışması asıl sorudan sonra isteğe bağlı kalmalı."
 );
 
 const s31PredictionCompare = karagozById.get("s31-q6");
@@ -365,7 +362,8 @@ assert(
   "s54 planlama performans desteğine bağlı olmalı."
 );
 assert(
-  s54Plan.content?.items?.length === 6,
+  s54Plan.content?.items?.length === 7 &&
+    s54Plan.content.items[0].includes("Örnek planı açmadan önce"),
   "s54 planlama altı zorunlu hazırlık adımını taşımalı."
 );
 
@@ -683,12 +681,13 @@ assert(
 
 const selfRevisionItems = y78Rubric.content?.items ?? [];
 assert(
-  selfRevisionItems.length === 5 &&
-    /Kısmen|Hayır/.test(selfRevisionItems[0]) &&
-    /taslağınızdan/i.test(selfRevisionItems[1]) &&
-    /tek bir somut düzeltme hedefi/i.test(selfRevisionItems[2]) &&
-    /düzeltin/i.test(selfRevisionItems[3]) &&
-    /aynı ölçüte/i.test(selfRevisionItems[4]),
+  selfRevisionItems.length === 6 &&
+    /resmî puanlama/i.test(selfRevisionItems[0]) &&
+    /Kısmen|Hayır/.test(selfRevisionItems[1]) &&
+    /taslağınızdan/i.test(selfRevisionItems[2]) &&
+    /tek bir somut düzeltme hedefi/i.test(selfRevisionItems[3]) &&
+    /düzeltin/i.test(selfRevisionItems[4]) &&
+    /aynı ölçüte/i.test(selfRevisionItems[5]),
   "s78 öz değerlendirme akışı işaretleme → taslak kanıtı → tek hedef → revizyon → aynı ölçütü yeniden değerlendirme döngüsünü korumalı."
 );
 
