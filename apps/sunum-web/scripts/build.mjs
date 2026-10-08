@@ -106,7 +106,7 @@ function slimStep(step, themeId, thinking) {
   const answer = step.answer
     ? pick(step.answer, answerFields)
     : null;
-  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "scale", "images", "sources"]) : null;
+  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "rubric", "scale", "images", "sources"]) : null;
 
   // Kumandayla açılacak katmanlar: kanonik reveal_order sırası, öğretmen notu hariç,
   // yalnız gerçekten içeriği olan katmanlar.
