@@ -8,6 +8,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.getUnclippedBoundsInRoot
@@ -117,8 +118,14 @@ class TabletLessonColumnTest {
         assertEquals("TeacherAssist width should not change", teacherAssistInitialBounds.width, teacherAssistAfterOpenBounds.width)
 
         // 4. Sol kolonun dışına (scrim üzerine) dokunulunca sol kolon yeniden gizlenir
-        composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performClick()
-        composeRule.waitUntil(timeoutMillis = 3_000) {
+        // The scrim fills the viewport but its center lies *behind* the 240dp+
+        // sidebar on a Pixel 6. A real user closes it by tapping the exposed
+        // right edge, rather than tapping through the sidebar at scrim center.
+        composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performTouchInput {
+            click(Offset(size.width - 12f, size.height / 2f))
+        }
+        composeRule.waitForIdle()
+        composeRule.waitUntil(timeoutMillis = 10_000) {
             composeRule.onAllNodesWithTag("tablet-lesson-sidebar-overlay")
                 .fetchSemanticsNodes().isEmpty()
         }
