@@ -291,107 +291,31 @@
       "prompt": "Diyaloğu başka türe dönüştürme performans görevi rubriği — ölçüt ve puan düzeyleri",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her ölçütte dört düzey ve puan aralığı verilmiştir. Çalışmanızı gözden geçirirken her ölçüt için uygun düzeyi ve karşılığındaki puanı inceleyin.",
+        "lead": "Rubriği ölçütler ile dört başarı düzeyinin kesişiminde inceleyin. Her ölçüt için bir düzey ve o aralıktan puan belirleyin; toplamı 100 üzerinden hesaplayın.",
         "sections": [
           {
-            "title": "Başlangıç düzeyinde · 1–6 puan",
-            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslubun doğru ve yerinde kullanımı alt düzeydedir"
+            "title": "Dil ve Üslup · 18 puan",
+            "body": "Başlangıç düzeyinde (1–6): Metin yazılırken dil ve üslubun doğru ve yerinde kullanımı alt düzeydedir\nKabul edilebilir (7–10): Metin yazılırken dil ve üslup kısmen doğru ve yerinde kullanılmıştır\nİyi (11–14): Metin yazılırken dil ve üslup doğru ve yerinde kullanılmıştır\nÇok iyi (15–18): Metin yazılırken dil ve üslup çok iyi düzeyde, doğru ve yerinde kullanılmıştır"
           },
           {
-            "title": "Kabul edilebilir · 7–10 puan",
-            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslup kısmen doğru ve yerinde kullanılmıştır"
+            "title": "Başlık Kullanımı · 18 puan",
+            "body": "Başlangıç düzeyinde (1–6): Metinde başlık kullanılmamıştır\nKabul edilebilir (7–10): Metinde amaç ve içeriğe kısmen uygun bir başlık kullanılmıştır\nİyi (11–14): Metinde amaç ve içeriğe uygun bir başlık kullanılmıştır\nÇok iyi (15–18): Metinde amaç ve içeriğe oldukça uygun,  etkili bir başlık kullanılmıştır"
           },
           {
-            "title": "İyi · 11–14 puan",
-            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslup doğru ve yerinde kullanılmıştır"
+            "title": "Özgünlük · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Metinde özgünlük alt düzeydedir\nKabul edilebilir (5–8): Metin özgünlük açısından kısmen yeterlidir\nİyi (9–12): Metin özgünlük açısından yeterli düzeydedir\nÇok iyi (13–16): Metin özgünlük açısından oldukça başarılıdır"
           },
           {
-            "title": "Çok iyi · 15–18 puan",
-            "body": "Ölçüt: Dil ve Üslup (18 puan). Metin yazılırken dil ve üslup çok iyi düzeyde, doğru ve yerinde kullanılmıştır"
+            "title": "Konunun Uygunluğu · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Konu seçimi, metnin amacına uygun olmamıştır\nKabul edilebilir (5–8): Konu seçimi, metnin amacına kısmen uygundur\nİyi (9–12): Konu seçimi, metnin amacına uygun olmuştur\nÇok iyi (13–16): Konu seçimi, metnin amacına uygun ve başarılı bir şekilde yapılmıştır"
           },
           {
-            "title": "Başlangıç düzeyinde · 1–6 puan",
-            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde başlık kullanılmamıştır"
+            "title": "Yazım ve Noktalama · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Metinde yazım ve noktalama kurallarına uygunluk alt düzeydedir\nKabul edilebilir (5–8): Metin yazım ve noktalama kurallarına kısmen uygun yazılmıştır\nİyi (9–12): Metin yazım ve noktalama kurallarına uygun yazılmıştır\nÇok iyi (13–16): Metin yazım ve noktalama kurallarına oldukça uygun yazılmıştır"
           },
           {
-            "title": "Kabul edilebilir · 7–10 puan",
-            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde amaç ve içeriğe kısmen uygun bir başlık kullanılmıştır"
-          },
-          {
-            "title": "İyi · 11–14 puan",
-            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde amaç ve içeriğe uygun bir başlık kullanılmıştır"
-          },
-          {
-            "title": "Çok iyi · 15–18 puan",
-            "body": "Ölçüt: Başlık Kullanımı  (18 puan). Metinde amaç ve içeriğe oldukça uygun,  etkili bir başlık kullanılmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Özgünlük  (16 puan). Metinde özgünlük alt düzeydedir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından yeterli düzeydedir"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Özgünlük  (16 puan). Metin özgünlük açısından oldukça başarılıdır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına uygun olmamıştır"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına kısmen uygundur"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına uygun olmuştur"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Konunun Uygunluğu  (16 puan). Konu seçimi, metnin amacına uygun ve başarılı bir şekilde yapılmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metinde yazım ve noktalama kurallarına uygunluk alt düzeydedir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metin yazım ve noktalama kurallarına kısmen uygun yazılmıştır"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metin yazım ve noktalama kurallarına uygun yazılmıştır"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Yazım ve Noktalama  (16 puan). Metin yazım ve noktalama kurallarına oldukça uygun yazılmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–4 puan",
-            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadelerin kullanımı alt düzeydedir"
-          },
-          {
-            "title": "Kabul edilebilir · 5–8 puan",
-            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadelerin kullanımı kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 9–12 puan",
-            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadelerin kullanımı iyi düzeydedir"
-          },
-          {
-            "title": "Çok iyi · 13–16 puan",
-            "body": "Ölçüt: Öznel ve Nesnel İfadelere Yer Verme  (16 puan). Metinde öznel ve nesnel ifadeler oldukça iyi düzeyde kullanılmıştır"
-          },
-          {
-            "title": "Toplam puan ve hesaplama",
-            "body": "Her ölçütten seçtiğiniz puanları toplayınız. altı ölçüt (dil ve üslup, başlık kullanımı, özgünlük, konunun uygunluğu, yazım ve noktalama, öznel ve nesnel ifadelere yer verme) ve dört başarı düzeyi (Başlangıç Düzeyinde, Kabul Edilebilir, İyi, Çok İyi) bulunmaktadır. Öğrenci bu formdan en az 6, en fazla 100 puan alabilir. Öğrencinin puanı her ölçütten aldığı puanların toplamıdır."
+            "title": "Öznel ve Nesnel İfadelere Yer Verme · 16 puan",
+            "body": "Başlangıç düzeyinde (1–4): Metinde öznel ve nesnel ifadelerin kullanımı alt düzeydedir\nKabul edilebilir (5–8): Metinde öznel ve nesnel ifadelerin kullanımı kısmen yeterlidir\nİyi (9–12): Metinde öznel ve nesnel ifadelerin kullanımı iyi düzeydedir\nÇok iyi (13–16): Metinde öznel ve nesnel ifadeler oldukça iyi düzeyde kullanılmıştır"
           }
         ],
         "sources": [
@@ -400,7 +324,7 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=228"
           },
           {
-          "label": "Kaynak: 19XU4J2P.docx",
+            "label": "Kaynak: 19XU4J2P.docx",
             "url": "assets/assessment-documents/19XU4J2P.docx",
             "download": true
           },
@@ -409,7 +333,175 @@
             "url": "assets/assessment-documents/35-ogrenci-rubrik-puanlama.xlsx",
             "download": true
           }
-        ]
+        ],
+        "rubric": {
+          "columns": [
+            "Başlangıç düzeyinde",
+            "Kabul edilebilir",
+            "İyi",
+            "Çok iyi"
+          ],
+          "rows": [
+            {
+              "criterion": "Dil ve Üslup",
+              "max_points": 18,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–6",
+                  "description": "Metin yazılırken dil ve üslubun doğru ve yerinde kullanımı alt düzeydedir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "7–10",
+                  "description": "Metin yazılırken dil ve üslup kısmen doğru ve yerinde kullanılmıştır"
+                },
+                {
+                  "label": "İyi",
+                  "points": "11–14",
+                  "description": "Metin yazılırken dil ve üslup doğru ve yerinde kullanılmıştır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "15–18",
+                  "description": "Metin yazılırken dil ve üslup çok iyi düzeyde, doğru ve yerinde kullanılmıştır"
+                }
+              ]
+            },
+            {
+              "criterion": "Başlık Kullanımı",
+              "max_points": 18,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–6",
+                  "description": "Metinde başlık kullanılmamıştır"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "7–10",
+                  "description": "Metinde amaç ve içeriğe kısmen uygun bir başlık kullanılmıştır"
+                },
+                {
+                  "label": "İyi",
+                  "points": "11–14",
+                  "description": "Metinde amaç ve içeriğe uygun bir başlık kullanılmıştır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "15–18",
+                  "description": "Metinde amaç ve içeriğe oldukça uygun,  etkili bir başlık kullanılmıştır"
+                }
+              ]
+            },
+            {
+              "criterion": "Özgünlük",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Metinde özgünlük alt düzeydedir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Metin özgünlük açısından kısmen yeterlidir"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Metin özgünlük açısından yeterli düzeydedir"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Metin özgünlük açısından oldukça başarılıdır"
+                }
+              ]
+            },
+            {
+              "criterion": "Konunun Uygunluğu",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Konu seçimi, metnin amacına uygun olmamıştır"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Konu seçimi, metnin amacına kısmen uygundur"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Konu seçimi, metnin amacına uygun olmuştur"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Konu seçimi, metnin amacına uygun ve başarılı bir şekilde yapılmıştır"
+                }
+              ]
+            },
+            {
+              "criterion": "Yazım ve Noktalama",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Metinde yazım ve noktalama kurallarına uygunluk alt düzeydedir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Metin yazım ve noktalama kurallarına kısmen uygun yazılmıştır"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Metin yazım ve noktalama kurallarına uygun yazılmıştır"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Metin yazım ve noktalama kurallarına oldukça uygun yazılmıştır"
+                }
+              ]
+            },
+            {
+              "criterion": "Öznel ve Nesnel İfadelere Yer Verme",
+              "max_points": 16,
+              "levels": [
+                {
+                  "label": "Başlangıç düzeyinde",
+                  "points": "1–4",
+                  "description": "Metinde öznel ve nesnel ifadelerin kullanımı alt düzeydedir"
+                },
+                {
+                  "label": "Kabul edilebilir",
+                  "points": "5–8",
+                  "description": "Metinde öznel ve nesnel ifadelerin kullanımı kısmen yeterlidir"
+                },
+                {
+                  "label": "İyi",
+                  "points": "9–12",
+                  "description": "Metinde öznel ve nesnel ifadelerin kullanımı iyi düzeydedir"
+                },
+                {
+                  "label": "Çok iyi",
+                  "points": "13–16",
+                  "description": "Metinde öznel ve nesnel ifadeler oldukça iyi düzeyde kullanılmıştır"
+                }
+              ]
+            }
+          ],
+          "min_points": 6,
+          "total_points": 100
+        }
       }
     },
     {
