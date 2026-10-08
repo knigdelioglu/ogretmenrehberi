@@ -308,7 +308,7 @@
       "duration_seconds": 294.833333,
       "existing_source_id": null,
       "mapping_status": "provisional_png_and_visual_review",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
       "book_qr": {
@@ -320,7 +320,9 @@
         "observed_book_label": "Osmancık",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LV.md",
+      "media_content_observation": "staged_play_visuals_only_audio_untranscribed"
     },
     {
       "file_name": "19XU4GDV.mp4",
