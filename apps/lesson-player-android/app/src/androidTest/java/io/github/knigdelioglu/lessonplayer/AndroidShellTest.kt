@@ -46,9 +46,10 @@ class AndroidShellTest {
         // Filter to the canonical Karagöz lesson instead of relying on lazy-list
         // composition order; the Pixel 6 test viewport does not compose every card.
         composeRule.onNodeWithTag("library-search-field").performTextInput("Karagöz")
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasText("Karagöz — Yazıcı", substring = true))
-        }
+        // Scroll the actual catalog list: with the keyboard open, lazy items
+        // may exist in data but not yet be composed in the visible viewport.
+        composeRule.onNodeWithTag("library-lesson-list")
+            .performScrollToNode(hasText("Karagöz — Yazıcı", substring = true))
         composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
@@ -171,9 +172,10 @@ class AndroidShellTest {
         // Filter to Karagöz so the test is independent of catalog ordering and
         // which lazy-list cards happen to be composed.
         composeRule.onNodeWithTag("library-search-field").performTextInput("Karagöz")
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasText("Karagöz — Yazıcı", substring = true))
-        }
+        // Scroll the actual catalog list: with the keyboard open, lazy items
+        // may exist in data but not yet be composed in the visible viewport.
+        composeRule.onNodeWithTag("library-lesson-list")
+            .performScrollToNode(hasText("Karagöz — Yazıcı", substring = true))
         composeRule.onAllNodes(hasTestTag("library-lesson-open"))[0].performClick()
         composeRule.waitUntil(timeoutMillis = 30_000) {
             hasNodes(hasTestTag("lesson-presentation-toggle").and(isEnabled()))
