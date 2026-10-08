@@ -9,6 +9,9 @@ on:
       - 'data/grade-11/source/qr-review-notes/**'
       - 'data/grade-11/source/teacher-book/theme-1/answer-bank/part-13-pages-53-58.json'
       - 'scripts/validate-qr-media-intake.mjs'
+      - 'scripts/qr_audio_transcribe.py'
+      - 'scripts/tests/test_qr_audio_transcribe.py'
+      - 'data/grade-11/source/qr-audio-transcription-workflow.md'
       - '.github/workflows/qr-media-intake.yml'
   workflow_dispatch:
 
@@ -22,3 +25,8 @@ jobs:
           node-version: '22'
       - name: Verify QR source mapping and scene provenance
         run: node scripts/validate-qr-media-intake.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test private local ASR workflow without downloading a model
+        run: python -m unittest discover -s scripts/tests -p 'test_qr_audio_transcribe.py' -v
