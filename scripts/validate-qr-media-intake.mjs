@@ -172,7 +172,8 @@ for (const [fileName, page, qrId, notePath] of [
   assert.equal(record.visual_review, "time_stamped_sampled_frames");
   assert.equal(record.spoken_audio_transcript, "not_done");
   const review = fs.readFileSync(path.join(root, notePath), "utf8");
-  assert.ok(review.includes("ses") && review.includes("EBA"),
+  const normalizedReview = review.toLocaleLowerCase("tr-TR");
+  assert.ok(normalizedReview.includes("ses") && normalizedReview.includes("eba"),
     "Notes must explain why sampled frames do not prove complete audio or download provenance");
 }
 const t2Part8 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-08-pages-129-135.json");
