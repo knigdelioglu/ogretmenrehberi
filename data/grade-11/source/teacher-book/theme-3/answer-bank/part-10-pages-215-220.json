@@ -211,8 +211,8 @@
       "printed_page": 220,
       "question_no": "Sıra Sizde 1",
       "prompt_summary": "Osmancık sahne tiyatrosu ile Direnişin Ustaları radyo tiyatrosunu dokuz ölçütte karşılaştırma",
-      "answer": "Bu karşılaştırma, Osmancık sahne kaydı ile Direnişin Ustaları radyo tiyatrosu kaydının birlikte izlenip/dinlenmesine dayanır. PDF’de iki kaydın içeriği bulunmadığından dokuz ölçütte gerçek bir karşılaştırma yalnız PDF’ye dayanarak tamamlanamaz.",
-      "source_locator": "basılı s.220 / PDF s.221 — Sıra Sizde soru 1 / iki QR medya gerekli",
+      "answer": "Bu karşılaştırma, Osmancık sahne kaydı ile Direnişin Ustaları radyo tiyatrosu kaydının birlikte izlenip/dinlenmesine dayanır. PDF’de iki kaydın içeriği bulunmadığından dokuz ölçütte gerçek bir karşılaştırma yalnız PDF’ye dayanarak tamamlanamaz. Osmancık kaydının kısmi görüntü incelemesinde tarihî dönem kostümleri, fiziksel dekor, oturma elemanları, sahnede görülen müzisyenler ve karşılıklı jestler tespit edilebiliyor. Bunlar yalnız sahne tiyatrosu tarafındaki görsel gözlemlerdir; Direnişin Ustaları radyo tiyatrosuna ait gözlemler, ses tonu, gerçek müzik, replikler ve kesin maliyet bilgisi hâlâ eksiktir.",
+      "source_locator": "basılı s.220 / PDF s.221 — Osmancık QR hedefi 572fe5fff1b65d73736b167d98ab85b4; görsel incelenen aday 19XU49LV.mp4; kısmi sahne notu data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LV.md; Direnişin Ustaları ses kanıtı eksik",
       "answer_sections": {
         "karşılaştırma_ölçütleri": [
           "Müzik",
@@ -225,10 +225,11 @@
           "Atmosfer",
           "Empati"
         ],
-        "kaynak_durumu": "Her ölçütte benzerlik ve farklılık belirlemek için Osmancık ve Direnişin Ustaları QR medyalarının ikisi de gereklidir.",
+        "kaynak_durumu": "Osmancık aday videosunun yaklaşık 00:15–04:45 arasındaki görsellerinde dönem kostümü, dekor, müzisyenler ve yüz yüze jestler görülür. Radyo tiyatrosunun ses kaydı ve Osmancık'ın replikleri transkript edilmediğinden yalnız bu gözlemlerle dokuz ölçütün iki tarafı karşılaştırılamaz.",
         "Maliyet ölçütü — gözlem ve kanıt sınırı": "Sahne tiyatrosu ve radyo tiyatrosunda görülen veya duyulan oyuncu, dekor, kostüm, ışık, mekân, kayıt ve ses tasarımı gereksinimleri hakkında koşullu teknik tahmin yapılabilir. Bunlar gerçek prodüksiyon bütçesi veya kesin maliyet tutarı değildir; tutarlı ekonomik karşılaştırma için bütçe/üretim verisi gerekir."
       },
-      "guidance": "Önce her iki kayıtta gerçekten görülen veya duyulan üretim gereksinimlerini not ettirin. Gözleme dayalı teknik tahmini kesin maliyet hesabından ayırın; kaydı olmayan bütçe, ücret veya tutar uydurtmayın."
+      "guidance": "Önce Osmancık için sahnede gerçekten görülen dekor/kostüm/jestleri ayrı sütuna yazdırın. Sahnede müzisyen görülmesini doğrulanmış bir melodi olarak değerlendirmeyin. Direnişin Ustaları ses kaydı dinlenene kadar ileti, müzik, ses tonu ve dil karşılaştırmasını boş bırakın; maliyet için gerçek bütçe verisi yoksa koşullu tahmin dışında rakam üretmeyin.",
+      "explanation": "Bu ek kısmi görüntü incelemesine dayanır. Basılı QR URL'si doğrulanmıştır, fakat Drive MP4 dosyasının EBA kökeni ve her iki eserin bütün sesli içeriği doğrulanmadı. Gözlem sınırı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LV.md."
     },
     {
       "question_id": "T3-P220-Q02",
