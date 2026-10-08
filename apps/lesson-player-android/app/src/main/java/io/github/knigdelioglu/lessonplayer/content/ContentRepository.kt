@@ -419,7 +419,7 @@ class ContentRepository(
 
         private fun parseAnswer(value: JSONObject): AnswerEntry {
             val type = value.getString("entry_type")
-            require(type in setOf("question_answer", "performance_support", "source_limited")) {
+            require(type in setOf("question_answer", "reference_answer", "performance_support", "source_limited")) {
                 "Unsupported answer category $type"
             }
             // Canonical web data permits a structured-only answer without a summary.
