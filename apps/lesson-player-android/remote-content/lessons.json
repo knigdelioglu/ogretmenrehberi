@@ -21915,7 +21915,7 @@
               "fragments": [
                 {
                   "unit": "answer",
-                  "text": "Orhun Vadisi videosunda gerçekten gördüğünüz ve duyduğunuz ayrıntıları önceden bildiklerinizle karşılaştırın. Video izlenmeden günümüzdeki vadi, müze, kazı alanı veya anıtların korunma biçimi hakkında kesin bilgi eklemeyin.",
+                  "text": "Ön bilgilerimden hareketle Orhun Vadisi'ni Türk dili ve tarihinin önemli yazılı kaynaklarının bulunduğu yerlerden biri olarak tanıyorum. İzlediğim görsel örnekte açık bozkırda taş yazıtları, kaplumbağaya benzer taş kaideyi, korunmuş bir anıt alanını ve yazıtların sergilendiği kapalı mekânları görüyorum. Bir kuşbakışı görüntüde 'KÜL TİGİN ABİDESİ' yazısı da yer alıyor. Bunlar videodan alınmış görsel gözlemlerdir; bölgenin tarihî anlamına ilişkin açıklamalar ayrıca kitap veya araştırma bilgileriyle gerekçelendirilmelidir.",
                   "position": "start"
                 }
               ]
@@ -21924,7 +21924,8 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "explanation"
         ],
         "display_prompt": "Orhun Vadisi videosunda anlatılan bölgeyle ilgili bildiklerinizi, videoda gerçekten gördüğünüz ayrıntılarla ilişkilendiriniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -21946,9 +21947,10 @@
           "printed_page": 113,
           "question_no": "1",
           "prompt_summary": "Orhun Vadisi videosundaki bölgeyi ön bilgilerle ilişkilendirme",
-          "answer": "Orhun Vadisi videosunda gerçekten gördüğünüz ve duyduğunuz ayrıntıları önceden bildiklerinizle karşılaştırın. Video izlenmeden günümüzdeki vadi, müze, kazı alanı veya anıtların korunma biçimi hakkında kesin bilgi eklemeyin.",
-          "guidance": "İki sütun kullanılabilir: “Önceden bildiğim” ve “Videoda gerçekten gördüğüm/duyduğum”. İkinci sütuna yalnız videoda doğrulanan ayrıntılar yazılmalıdır.",
-          "source_locator": "basılı s.113 / PDF s.114 — Hatırlayalım soru 1 / Orhun Vadisi QR videosu gerekli"
+          "answer": "Ön bilgilerimden hareketle Orhun Vadisi'ni Türk dili ve tarihinin önemli yazılı kaynaklarının bulunduğu yerlerden biri olarak tanıyorum. İzlediğim görsel örnekte açık bozkırda taş yazıtları, kaplumbağaya benzer taş kaideyi, korunmuş bir anıt alanını ve yazıtların sergilendiği kapalı mekânları görüyorum. Bir kuşbakışı görüntüde 'KÜL TİGİN ABİDESİ' yazısı da yer alıyor. Bunlar videodan alınmış görsel gözlemlerdir; bölgenin tarihî anlamına ilişkin açıklamalar ayrıca kitap veya araştırma bilgileriyle gerekçelendirilmelidir.",
+          "guidance": "Öğrencilerden iki sütun yapmalarını isteyin: 'Önceden bildiğim' / 'Videoda gördüğüm'. Görsel kanıtlara bozkır, dikili taş, kaide, müze/vitrin ve 'KÜL TİGİN ABİDESİ' yazısı örnek verilebilir. Bunları videoda söylenmiş sözler olarak aktarmayın; öğrencinin farklı gerekçeli ön bilgilerini kabul edin.",
+          "source_locator": "basılı s.113 / PDF s.114 — Orhun Vadisi PDF QR ID 06740daa8a1a08c3bfe9d46c65f3fe56; olası Drive videosu 19XU49LT.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md",
+          "explanation": "Örnek görüntülerde görülen ayrıntılar (yaklaşık 00:00–04:03), kaynağın tamamının veya konuşmalarının transkripti değildir; Drive dosyasının kitap PDF'sindeki EBA QR indirmesiyle dosya kökeni de doğrulanmadığı için source_limited korunur."
         },
         "content": null
       },
