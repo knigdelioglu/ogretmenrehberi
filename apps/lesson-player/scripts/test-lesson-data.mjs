@@ -70,9 +70,9 @@ assert(theme3Entries.length === 220 &&
   "Tema 3 parça kayıtları güncel kanonik dağılımı ve source-limited sayısını vermeli.");
 const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
 assert(theme3Compare?.entry_type === "source_limited" &&
-  theme3Compare.source_locator.includes("şiir metni verilen PDF görüntüsünde görünmüyor") &&
+  theme3Compare.source_locator.includes("görsel olarak yeniden doğrulanmalı") &&
   theme3Compare.answer_sections?.Huzur?.İçerik &&
-  theme3Compare.answer_sections?.["Mescid-i Aksa"]?.includes("tam metni verilen PDF’de görünmediğinden") &&
+  theme3Compare.answer_sections?.["Mescid-i Aksa"]?.includes("doğrulanmadan") &&
   !theme3Compare.evidence_quotes,
   "T3-P177-COMP01 yalnız PDF’de görünen Huzur bilgisini içermeli; şiir metni ve dizeleri kaynak sınırlı olmalı.");
 assert(

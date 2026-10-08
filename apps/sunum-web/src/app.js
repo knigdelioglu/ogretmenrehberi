@@ -951,6 +951,18 @@ function contentLayerPages(step, b = 1) {
     images: content.images,
     sources: index === 0 ? content.sources : undefined
   });
+  if (content.rubric?.rows?.length) {
+    const size = Math.max(1, scaledItems(2, b));
+    const pages = [];
+    for (let index = 0; index < content.rubric.rows.length; index += size) {
+      pages.push(meta({
+        content: {
+          rubric: { ...content.rubric, rows: content.rubric.rows.slice(index, index + size) }
+        }
+      }, pages.length));
+    }
+    return pages;
+  }
   if (interleaveConfig(step)?.source === "dictionary_terms") {
     const first = interleavedDictionaryGroups(step, b)[0];
     return [meta(first ? { ...first, hideMeanings: true } : { content: {} })];
@@ -1145,6 +1157,28 @@ function currentView(step) {
 
 function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
+  if (content.rubric?.rows?.length) {
+    const rubric = content.rubric;
+    return h("div", { class: "rubric-table-wrap" },
+      h("table", { class: "rubric-matrix" },
+        h("thead", {}, h("tr", {},
+          h("th", { scope: "col" }, "Ölçüt (azami puan)"),
+          rubric.columns.map((col) => h("th", { scope: "col" }, col))
+        )),
+        h("tbody", {}, rubric.rows.map((row) =>
+          h("tr", {},
+            h("th", { scope: "row" }, row.criterion, " (", String(row.max_points), ")"),
+            row.levels.map((level) => h("td", {},
+              h("strong", {}, level.points, " puan"),
+              h("span", {}, level.description)
+            ))
+          )
+        ))
+      ),
+      h("p", { class: "rubric-total" }, "Toplam: ", String(rubric.min_points), "–", String(rubric.total_points),
+        " puan; her ölçütten bir puan seçilip toplanır.")
+    );
+  }
   const items = content.items || [];
   const sections = content.sections || [];
   const sectionCards = sections.length

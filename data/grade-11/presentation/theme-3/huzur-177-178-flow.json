@@ -33,19 +33,19 @@
       "prompt": "Basılı s.177’de görünen görseli ve s.178’deki karşılaştırma yönergesini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Verilen ders kitabı PDF’sinin basılı s.177 / PDF s.178 görüntüsünde Mescid-i Aksa fotoğrafı görünür; şiir dizeleri görüntüde yer almıyor.",
+        "lead": "Basılı s.177'nin farklı sürümleri hakkında çelişkili raporlar bulunuyor. Sınıfta kullanılan baskının sayfasını görsel olarak kontrol edin; fotoğrafla şiir metnini birbirine karıştırmayın.",
         "sections": [
           {
-            "title": "Görsel",
-            "body": "Sayfada Mescid-i Aksa fotoğrafı bulunur."
+            "title": "Görsel ve şiir ayrımı",
+            "body": "Fotoğraf, şiirin içeriğini veya biçimini tek başına kanıtlamaz. Şiir dizeleri kullanılan baskıda görünüyorsa metinden hareketle inceleme yapılır."
           },
           {
-            "title": "Kaynak sınırı",
-            "body": "Fotoğraftan şiirin içeriği, biçimi veya üslubu çıkarılamaz. Başka baskı ya da dijital sürümde metnin bulunduğu eldeki PDF’den doğrulanamaz."
+            "title": "Kaynak doğrulama",
+            "body": "Şiir dizeleri bu incelemede kesin olarak doğrulanamadı. Fotoğrafın bulunduğuna ilişkin eski kayıtlar ile şiirin göründüğünü bildiren önceki denetimler çelişiyor."
           },
           {
-            "title": "Karşılaştırma yönergesi",
-            "body": "Kitap s.178’de Huzur ile Mescid-i Aksa’yı karşılaştırmayı ister; şiir metni doğrulanmış biçimde sağlanıncaya kadar yalnız Huzur tarafını doldurun."
+            "title": "Öğretim alternatifi",
+            "body": "Huzur sütununu romandan kanıtlarla doldurun. Öğretmen doğrulanmış şiir metnini sağladığında Mescid-i Aksa sütununu aynı yedi ölçütle tamamlatın; metin yoksa şiir üzerine kesin yargı kurdurmayın."
           }
         ]
       }

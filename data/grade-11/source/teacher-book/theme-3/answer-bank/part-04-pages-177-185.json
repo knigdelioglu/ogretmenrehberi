@@ -28,7 +28,8 @@
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
         "Bir hüviyet lâzım."
       ],
-      "source_locator": "basılı s.167-177 / PDF s.168-178 — soru 14"
+      "source_locator": "basılı s.167-177 / PDF s.168-178 — soru 14",
+      "guidance": "Bir cümlenin kendisi doğrudan alıntılanabiliyorsa, alıntının ötesindeki geniş yorumu ‘açık ileti’ diye sunmayın. ‘Millî şuurun en temel anahtarı’, ‘varoluşsal yalnızlığa şifa’ gibi sonuçlar metinde açıkça söylenmediği için zorunlu ileti değildir."
     },
     {
       "question_id": "T3-P177-COMP01",
@@ -36,8 +37,8 @@
       "printed_page": 177,
       "question_no": "Karşılaştıralım",
       "prompt_summary": "Huzur ile Mescid-i Aksa metnini içerik, tür, şekil, dönem, zihniyet, üslup ve ileti bakımından karşılaştırma",
-      "answer": "Huzur sütunu, temada okunan roman kesitine göre doldurulabilir. Verilen kanonik ders kitabı PDF’sinin basılı s.177 / PDF s.178 görüntüsünde Mescid-i Aksa fotoğrafı görünür; şiirin dizeleri görünmediğinden o metne bağlı karşılaştırma ölçütleri kesin yanıtlanamaz. Doğrulanmış tam şiir metni sağlandığında Mescid-i Aksa sütunu tamamlanmalıdır.",
-      "source_locator": "basılı s.177 / PDF s.178 — Mescid-i Aksa fotoğrafı; şiir metni verilen PDF görüntüsünde görünmüyor; basılı s.178 / PDF s.179 — Karşılaştıralım yönergesi",
+      "answer": "Huzur sütunu okunan roman kesitinden kanıtla doldurulabilir. Mescid-i Aksa şiirinin kullanılan baskının sayfasında bulunup bulunmadığına ilişkin önceki denetimler çelişiyor; bu turda görsel doğrulama tamamlanmadığından şiire bağlı yedi ölçüt kesin yanıtlanmaz. Doğrulanmış metin sağlandığında karşılaştırma tamamlanır.",
+      "source_locator": "basılı s.177 / PDF s.178 — kullanılan baskının şiir/görsel yerleşimi görsel olarak yeniden doğrulanmalı; basılı s.178 / PDF s.179 — Karşılaştıralım yönergesi",
       "answer_sections": {
         "Huzur": {
           "İçerik": "Mümtaz ile Nuran’ın İstanbul ve Boğaz gezileri; eski musiki, tarihî mekânlar, yoksul semtler ve geçmiş–yeni hayat tartışması.",
@@ -48,8 +49,9 @@
           "Üslup": "Betimleyici, çağrışımlı, düşünsel ve şiirsel düzyazı; uzun cümlelerde mekân, musiki ve iç dünya iç içe geçer.",
           "İleti": "Geleceği kurmak için geçmişle ve kültürel mirasla bağ kurmak gerekir; şehri tanımak insanın kendini tanımasıdır."
         },
-        "Mescid-i Aksa": "Şiirin doğrulanmış tam metni verilen PDF’de görünmediğinden içerik, tür, şekil, dönem, zihniyet, üslup ve ileti ölçütleri bu kaynağa dayanarak tamamlanamaz."
-      }
+        "Mescid-i Aksa": "Şiirin tam metni kullanılan ders kitabı baskısında veya öğretmenin sunduğu güvenilir kaynakta doğrulanmadan içerik, tür, şekil, dönem, zihniyet, üslup ve ileti başlıklarında metin kanıtı varmış gibi çözüm üretilmemelidir."
+      },
+      "guidance": "Yedi ölçütü metin kanıtıyla doldurtun. Mescid-i Aksa şiirinin tam metni kullanılan baskıda doğrulanmadıkça fotoğraftan içerik, tür, şekil, dönem, zihniyet, üslup veya ileti çıkarımı yaptırmayın; ikinci metin öğretmen tarafından sağlanırsa aynı ölçütlerle tamamlatın."
     },
     {
       "question_id": "T3-P178-PERF01",
@@ -77,7 +79,8 @@
         "İstanbul’u tanımadıkça kendimizi bulamayız.",
         "Bir hüviyet lâzım.",
         "Bende İhsan’ın tesiri büyüktür. Asıl hocam odur."
-      ]
+      ],
+      "guidance": "Roller tek doğru ürün üretmez; öğrenci seçtiği rolü metinden somut bir örnekle yürütmelidir. Okuma çemberinde her döngüde öğrencilerin rol değiştirmesi sağlanarak metne farklı bilişsel pencerelerden bakma alışkanlığı kazandırılmalıdır."
     },
     {
       "question_id": "T3-P180-TABLE01",
@@ -112,7 +115,8 @@
           "cikarim": "Bu kesite dayanarak duygu ve düşünceleri belirlenemez."
         }
       },
-      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3"
+      "source_locator": "basılı s.167–171 ve 180 / PDF s.168–172 ve 181 — Okuma Çemberi soru 3",
+      "guidance": "s.182'de daha sonra verilen Macide–İhsan aile bilgilerini s.180 tablosuna geriye taşımayın. Etkinliğin amacı öğrencinin o ana kadar gördüğü söz/davranıştan çıkarım yapmasıdır."
     },
     {
       "question_id": "T3-P181-TABLE02",
@@ -147,7 +151,8 @@
           "dil": "Doğrudan söz örneği yoktur; belirlenemez."
         }
       },
-      "source_locator": "basılı s.168–171 ve 181 / PDF s.169–172 ve 182 — Okuma Çemberi soru 4"
+      "source_locator": "basılı s.168–171 ve 181 / PDF s.169–172 ve 182 — Okuma Çemberi soru 4",
+      "guidance": "Macide'nin s.182'deki ‘şefkat’ bilgisi bu tabloya önceden taşınmamalıdır. Kaynak yetersizliği de geçerli bir öğretmen notudur."
     },
     {
       "question_id": "T3-P182-Q02",
@@ -186,7 +191,8 @@
           "Tanpınar ile Yahya Kemal arasında akrabalık olmadığı hâlde Mümtaz ile İhsan romanda akraba yapılmıştır."
         ]
       },
-      "source_locator": "basılı s.182 / PDF s.183 — Sıra Sizde soru 1, iki kaynak metin ve balık kılçığı"
+      "source_locator": "basılı s.182 / PDF s.183 — Sıra Sizde soru 1, iki kaynak metin ve balık kılçığı",
+      "guidance": "Kaplan metninde Nuran'ın gerçek hayattaki örneği için ‘derin hayranlık duyduğu kadın’ denmiyor; yalnız genç ve güzel kadın örneğinden söz ediliyor. Kaynakta olmayan duygu ve ilişki eklemeyin."
     },
     {
       "question_id": "T3-P183-Q02",
@@ -200,7 +206,8 @@
         "gerceklik_zemini": "Gerçek kişilerden ve yaşam çevresinden gelen özellikler, roman kişilerinin ve ilişkilerinin somut bir gerçeklik zeminine dayanmasına yardımcı olur.",
         "kurmaca_ozgurlugu": "Yazar, esin aldığı kişileri birebir kopyalamak zorunda değildir; özelliklerini, aile durumlarını ve ilişkilerini değiştirebilir.",
         "metne_katkisi": "Bu dönüşüm, gerçek yaşam malzemesinin romanın kişi, çatışma ve tema düzenine uyarlanmasını sağlar."
-      }
+      },
+      "guidance": "‘Gerçek kişiler aynen aktarılsaydı eser yalnız biyografi olurdu’ veya ‘böylece evrensel sanat yapıtına dönüşür’ gibi zorunlu estetik hükümler kurmayın; katkıyı s.182'deki somut dönüşümlerle açıklayın."
     },
     {
       "question_id": "T3-P183-Q01",
@@ -220,7 +227,8 @@
           "“Sanki benim azaplarım onların bir yığın kaçış imkânlarıyla dolu hayatlarından daha mı iyi?” — kişinin kendisini sorgulayan iç düşüncesi yansıtılır."
         ],
         "metne_ve_kisilere_katkisi": "Nesnel anlatım olay ve davranışların zeminini kurarken öznel anlatım Mümtaz’ın özlemini, huzursuzluğunu ve kendi içindeki çatışmayı derinleştirir."
-      }
+      },
+      "guidance": "Soru yalnız s.183'teki iki parçaya dayanır; s.185'teki İhsan hastalığı parçasını buradaki doğrudan örnekler yerine koymayın. ‘Nesnel’ sözü burada gerçek dünyada doğrulanmış olgu değil, parçada dışarıdan betimlenebilen durum anlamındadır."
     },
     {
       "question_id": "T3-P184-Q02",
@@ -257,7 +265,8 @@
         "Tarihimize bütünlüğünü iade etmek zarureti.",
         "Mümtaz, ekmek ufaklarını pencerenin kenarına koydu, camı kapattı.",
         "komşunun evinden telefon etmek"
-      ]
+      ],
+      "guidance": "s.184–185'te renkli dört metin parçasının altında ayrı dört boş yanıt alanı var. Her parçayı aynı genel 'duyarlılık' cümlesiyle geçiştirmeyin; parçanın göstermediği yoksulluk veya kişisel geçmiş uydurulmasın."
     },
     {
       "question_id": "T3-P178-FLOW-S178_HUZUR_CONTENT",
@@ -265,7 +274,7 @@
       "printed_page": 178,
       "question_no": "Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız.",
       "prompt_summary": "Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz ve Nuran üzerinden İstanbul, musiki, geçmiş ve kimlikle kurulan bağ.",
       "answer_sections": {
         "Örnek çalışma": {
           "İçerik": "Mümtaz ve Nuran üzerinden İstanbul, musiki, geçmiş ve kimlikle kurulan bağ.",
@@ -273,7 +282,8 @@
           "Şekil": "Düzyazı; şiirdeki dize ve dörtlük düzeninden farklı olarak paragraf, betimleme ve diyaloglarla ilerler."
         }
       },
-      "source_locator": "basılı s.178 — Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız."
+      "source_locator": "basılı s.178 — Huzur sütunu: içerik, tür ve şekli birbirinden ayırınız.",
+      "guidance": "Üç ölçütü birbirine karıştırmadan öğrencilerin Huzur kesitinden ayrı dayanak seçmesini isteyin."
     },
     {
       "question_id": "T3-P178-FLOW-S178_HUZUR_CONTEXT",
@@ -281,15 +291,16 @@
       "printed_page": 178,
       "question_no": "Huzur ile Mescid-i Aksa: dönem bilgisini zihniyet çıkarımından ayırınız.",
       "prompt_summary": "Huzur ile Mescid-i Aksa: dönem bilgisini zihniyet çıkarımından ayırınız.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması romanı Cumhuriyet Dönemi’ne yerleştirir.",
       "answer_sections": {
         "Örnek çalışma": {
           "Huzur — dönem": "Kitap Tanpınar’ın yaşam tarihlerini (1901-1962) verir; parçalardaki “inkılâp” ve “yeni hayat” tartışması romanı Cumhuriyet Dönemi’ne yerleştirir. 1949 ilk yayım yılı kitap dışı bilgidir; kullanırsanız kaynağıyla belirtin.",
           "Huzur — zihniyet": "İstanbul’un geçmişi, musiki ve bugünkü şehir yaşamı hakkındaki sözleri birlikte inceleyin. “İstanbul’u tanımadıkça kendimizi bulamayız” düşüncesini şehir ve kimlik ilişkisiyle açıklayın.",
-          "Mescid-i Aksa — kaynak sınırı": "Şiir dizeleri verilen PDF’de görünmediğinden dönem ve zihniyet çıkarımı bu kaynağa dayanarak yapılamaz. Başka sürüm veya harici kaynak doğrulanmış sayılmamalıdır."
+          "Mescid-i Aksa — kaynak sınırı": "Şiirin tam metni kullanılan baskıda bu denetim kapsamında görsel olarak doğrulanamadı. Metnin içerik, dönem, zihniyet, üslup ve ileti özellikleri, ancak doğrulanmış şiir metniyle incelenebilir."
         }
       },
-      "source_locator": "basılı s.178 — Huzur ile Mescid-i Aksa: dönem bilgisini zihniyet çıkarımından ayırınız."
+      "source_locator": "basılı s.178 — Huzur ile Mescid-i Aksa: dönem bilgisini zihniyet çıkarımından ayırınız.",
+      "guidance": "Dönem bilgisiyle metnin yansıttığı düşünce dünyasını ayırt ettirin; kullanılmayan şiir metni hakkında yargı ürettirmeyin."
     },
     {
       "question_id": "T3-P178-FLOW-S178_HUZUR_MESSAGE",
@@ -297,14 +308,15 @@
       "printed_page": 178,
       "question_no": "İki metnin üslup ve iletisini karşılaştırınız.",
       "prompt_summary": "İki metnin üslup ve iletisini karşılaştırınız.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Betimleyici, düşünsel ve şiirsel düzyazıda şehir ve musiki tasvirlerinin Mümtaz’ın iç dünyasıyla nasıl birleştiğini inceleyin.",
       "answer_sections": {
         "Örnek çalışma": {
           "Huzur — üslup ve ileti": "Betimleyici, düşünsel ve şiirsel düzyazıda şehir ve musiki tasvirlerinin Mümtaz’ın iç dünyasıyla nasıl birleştiğini inceleyin. Şehir ve kültür mirasıyla bağın kimliği anlamaya katkısını metinden örneklerle açıklayın.",
-          "Mescid-i Aksa — kaynak sınırı": "Şiirin dizeleri bu PDF görüntüsünde yer almadığı için üslup ve ileti ölçütleri tamamlanamaz; şiir metni doğrulanmış bir kaynakla sağlandığında yeniden ele alınmalıdır."
+          "Mescid-i Aksa — kaynak sınırı": "Şiirin tam metni kullanılan baskıda bu denetim kapsamında görsel olarak doğrulanamadı. Metnin içerik, dönem, zihniyet, üslup ve ileti özellikleri, ancak doğrulanmış şiir metniyle incelenebilir."
         }
       },
-      "source_locator": "basılı s.178 — İki metnin üslup ve iletisini karşılaştırınız."
+      "source_locator": "basılı s.178 — İki metnin üslup ve iletisini karşılaştırınız.",
+      "guidance": "Üslubu biçimsel gözlem, iletiyi metinden çıkarım olarak gerekçelendirmelerini sağlayın; doğrulanmamış ikinci metin için boşluk bırakın."
     },
     {
       "question_id": "T3-P178-FLOW-S178_ROLE_LINK",
@@ -312,14 +324,15 @@
       "printed_page": 178,
       "question_no": "Temel rol: Bağ Kurucu",
       "prompt_summary": "Temel rol: Bağ Kurucu",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Huzur’daki İstanbul ve kültür ilgisini kendi şehrinizden bir mekân ya da başka bir yaşantıyla ilişkilendirin.",
       "answer_sections": {
         "Örnek çalışma": {
           "Görev": "Huzur’daki İstanbul ve kültür ilgisini kendi şehrinizden bir mekân ya da başka bir yaşantıyla ilişkilendirin.",
           "Soru": "Sizin çevrenizde hangi yer, şehrin geçmişini bugünle buluşturuyor?"
         }
       },
-      "source_locator": "basılı s.178 — Temel rol: Bağ Kurucu"
+      "source_locator": "basılı s.178 — Temel rol: Bağ Kurucu",
+      "guidance": "Kişisel yaşamla kurulan bağı öğrencinin seçmesine izin verin; ilişkinin somut bir metin ayrıntısına dayanmasını isteyin."
     },
     {
       "question_id": "T3-P178-FLOW-S178_ROLE_VISUAL",
@@ -327,14 +340,15 @@
       "printed_page": 178,
       "question_no": "Temel rol: Ressam",
       "prompt_summary": "Temel rol: Ressam",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Boğaz–Üsküdar gezi hattı veya Mümtaz'ın geçmiş–yeni hayat düşüncesi için görsel hazırlayın.",
       "answer_sections": {
         "Örnek çalışma": {
           "Görev": "Boğaz–Üsküdar gezi hattı veya Mümtaz'ın geçmiş–yeni hayat düşüncesi için görsel hazırlayın.",
           "Sınır": "Çizimi gerçek olay örgüsüne dayandırın; kitaptaki mekânı göstermediği hâlde varmış gibi çizmeyin."
         }
       },
-      "source_locator": "basılı s.178 — Temel rol: Ressam"
+      "source_locator": "basılı s.178 — Temel rol: Ressam",
+      "guidance": "Öğrencilere kitapta geçtiğini doğruladıkları bir mekân veya ilişkiyi çizdirin; çizime kaynakta olmayan olay ekletmeyin."
     },
     {
       "question_id": "T3-P178-FLOW-S178_ROLE_INQUIRY",
@@ -342,14 +356,15 @@
       "printed_page": 178,
       "question_no": "Temel rol: Sorgulayıcı",
       "prompt_summary": "Temel rol: Sorgulayıcı",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz, Nuran, musiki veya İstanbul mekânlarıyla ilgili tartışmaya açık bir soru kurun.",
       "answer_sections": {
         "Örnek çalışma": {
           "Görev": "Mümtaz, Nuran, musiki veya İstanbul mekânlarıyla ilgili tartışmaya açık bir soru kurun.",
           "Örnek soru": "Mümtaz'ın geçmişi önemsemesiyle Nuran'ın bugünün sorunlarını hatırlatması birbiriyle nasıl ilişkilidir?"
         }
       },
-      "source_locator": "basılı s.178 — Temel rol: Sorgulayıcı"
+      "source_locator": "basılı s.178 — Temel rol: Sorgulayıcı",
+      "guidance": "Öğrencilerden metinle yanıtlanabilecek fakat tek kelimelik cevabı olmayan tartışma soruları istemeyi tercih edin."
     },
     {
       "question_id": "T3-P178-FLOW-S178_ROLE_HIGHLIGHT",
@@ -357,14 +372,15 @@
       "printed_page": 178,
       "question_no": "Temel rol: Okuma Aydınlatıcısı",
       "prompt_summary": "Temel rol: Okuma Aydınlatıcısı",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Sözün yerini belirleyin; neden şaşırtıcı, önemli veya düşünmeye değer olduğunu kendi gerekçenizle anlatın.",
       "answer_sections": {
         "Örnek çalışma": {
           "Görev": "Sözün yerini belirleyin; neden şaşırtıcı, önemli veya düşünmeye değer olduğunu kendi gerekçenizle anlatın.",
           "Sınır": "Metinden uzun paragraf kopyalamayın. Sözü ve yorumunu birbirinden ayırın."
         }
       },
-      "source_locator": "basılı s.178 — Temel rol: Okuma Aydınlatıcısı"
+      "source_locator": "basılı s.178 — Temel rol: Okuma Aydınlatıcısı",
+      "guidance": "Önemli gördükleri kısa bir ifadeyi seçtirin; ifadeyi aktarmayla neden önemli olduğunu açıklamayı ayırt ettirin."
     },
     {
       "question_id": "T3-P179-FLOW-S179_SUMMARY",
@@ -372,14 +388,15 @@
       "printed_page": 179,
       "question_no": "Seçimlik rol: Özetleyici",
       "prompt_summary": "Seçimlik rol: Özetleyici",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz ve Nuran'ın İstanbul gezilerinin kültür ve yeni hayat tartışmasına nasıl uzandığını metin sırasını bozmayarak anlatın.",
       "answer_sections": {
         "Örnek çalışma": {
           "Huzur'dan izlek": "Mümtaz ve Nuran'ın İstanbul gezilerinin kültür ve yeni hayat tartışmasına nasıl uzandığını metin sırasını bozmayarak anlatın.",
           "Sınır": "Kitapta yalnız bir roman kesiti var; tüm romanın sonunu yazmış gibi özetlemeyin."
         }
       },
-      "source_locator": "basılı s.179 — Seçimlik rol: Özetleyici"
+      "source_locator": "basılı s.179 — Seçimlik rol: Özetleyici",
+      "guidance": "Romanın yalnız okunan kesitini özetletin; kesitte olmayan son olayları öğrencilerin biliyormuş gibi anlatmalarına izin vermeyin."
     },
     {
       "question_id": "T3-P179-FLOW-S179_PREDICT",
@@ -387,7 +404,7 @@
       "printed_page": 179,
       "question_no": "Seçimlik rol: Tahmin Edici",
       "prompt_summary": "Seçimlik rol: Tahmin Edici",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Bir kişinin sonraki davranışı, olayın gelişimi veya mekân değişimi.",
       "answer_sections": {
         "Örnek çalışma": {
           "Tahmin konusu": "Bir kişinin sonraki davranışı, olayın gelişimi veya mekân değişimi.",
@@ -395,7 +412,8 @@
           "Uyarı": "Tahmin gerçekleşmiş olay değildir. Romanın okunmayan bölümlerini biliyormuş gibi anlatmayın."
         }
       },
-      "source_locator": "basılı s.179 — Seçimlik rol: Tahmin Edici"
+      "source_locator": "basılı s.179 — Seçimlik rol: Tahmin Edici",
+      "guidance": "Tahmini metinde gerçekleşmiş olaydan ayırın; öğrencilerin olası devamı hangi ipucundan çıkardığını sorgulayın."
     },
     {
       "question_id": "T3-P179-FLOW-S179_PLACE",
@@ -403,14 +421,15 @@
       "printed_page": 179,
       "question_no": "Seçimlik rol: Hareket İzcisi",
       "prompt_summary": "Seçimlik rol: Hareket İzcisi",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Boğaz, Üsküdar, semt gezileri ve sosyal çevre.",
       "answer_sections": {
         "Örnek çalışma": {
           "İzlenecek hat": "Boğaz, Üsküdar, semt gezileri ve sosyal çevre.",
           "Gerekçe": "Yalnız yer adı sıralamayın; mekânın duygu, kişi ve olayla ilişkisini söyleyin."
         }
       },
-      "source_locator": "basılı s.179 — Seçimlik rol: Hareket İzcisi"
+      "source_locator": "basılı s.179 — Seçimlik rol: Hareket İzcisi",
+      "guidance": "Öğrencilerin mekân adını ve bu mekânda yaşanan duygu/olayı iki farklı sütunda eşleştirmelerini isteyin."
     },
     {
       "question_id": "T3-P179-FLOW-S179_CHARACTER",
@@ -418,14 +437,15 @@
       "printed_page": 179,
       "question_no": "Seçimlik rol: Karakter Çözümleyici",
       "prompt_summary": "Seçimlik rol: Karakter Çözümleyici",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz'ın geçmişe dayanmadan yeni hayata geçilemeyeceğini düşünmesi, kültürle ilişkisini gösterir.",
       "answer_sections": {
         "Örnek çalışma": {
           "Örnek": "Mümtaz'ın geçmişe dayanmadan yeni hayata geçilemeyeceğini düşünmesi, kültürle ilişkisini gösterir.",
           "Kaynak sınırı": "Adı geçen fakat doğrudan davranışı görülmeyen kişiyi kesin özelliklerle tanıtmayın."
         }
       },
-      "source_locator": "basılı s.179 — Seçimlik rol: Karakter Çözümleyici"
+      "source_locator": "basılı s.179 — Seçimlik rol: Karakter Çözümleyici",
+      "guidance": "Kişi özelliği söylenmeden önce bu özelliğe dayanak oluşturan bir söz veya davranış aratın."
     },
     {
       "question_id": "T3-P180-FLOW-S180_MUMTAZ_NURAN",
@@ -433,14 +453,15 @@
       "printed_page": 180,
       "question_no": "Soru 3 — Mümtaz ve Nuran için metin dayanağını karşılaştırınız.",
       "prompt_summary": "Soru 3 — Mümtaz ve Nuran için metin dayanağını karşılaştırınız.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Yeni hayatı kültür ve kimlik bilincine dayandırır (s.169; kitap s.180 örneği).",
       "answer_sections": {
         "Örnek çalışma": {
           "Mümtaz": "Yeni hayatı kültür ve kimlik bilincine dayandırır (s.169; kitap s.180 örneği).",
           "Nuran": "Geçmişi sevse de yoksul insanların bugünkü koşullarını görür; 'Niçin eskiye bu kadar bağlıyız?' diye sorar (s.169)."
         }
       },
-      "source_locator": "basılı s.180 — Soru 3 — Mümtaz ve Nuran için metin dayanağını karşılaştırınız."
+      "source_locator": "basılı s.180 — Soru 3 — Mümtaz ve Nuran için metin dayanağını karşılaştırınız.",
+      "guidance": "İki kişinin farklı tutumlarını birer söze dayandırmalarını isteyin; aynı sözü iki kişiye atfetmeyin."
     },
     {
       "question_id": "T3-P180-FLOW-S180_IHSAN_MACIDE",
@@ -448,7 +469,7 @@
       "printed_page": 180,
       "question_no": "Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız.",
       "prompt_summary": "Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Öğretici ve düşünsel rehber; bu çıkarım Mümtaz'ın anlatımından gelir.",
       "answer_sections": {
         "Örnek çalışma": {
           "İhsan": "Öğretici ve düşünsel rehber; bu çıkarım Mümtaz'ın anlatımından gelir.",
@@ -456,7 +477,8 @@
           "Sınır": "İki kişiye bu kesitte söylemedikleri sözleri atfetmeyin."
         }
       },
-      "source_locator": "basılı s.170 ve s.180 — Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız."
+      "source_locator": "basılı s.170 ve s.180 — Soru 3 — İhsan ve Macide için doğrudan söz ile aktarılan bilgiyi ayırınız.",
+      "guidance": "Doğrudan karakter sözü ile başkasının karakter hakkında aktardığı bilgiyi ayrı kaydettirin."
     },
     {
       "question_id": "T3-P181-FLOW-S181_MUMTAZ_NURAN",
@@ -464,14 +486,15 @@
       "printed_page": 181,
       "question_no": "Soru 4 — Mümtaz ile Nuran'ın kişilik ve dil özelliklerini karşılaştırınız.",
       "prompt_summary": "Soru 4 — Mümtaz ile Nuran'ın kişilik ve dil özelliklerini karşılaştırınız.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Sanatçı duyarlığı; s.181 örnek cümlesinde çağrışımlı, şiirsel ve seslenmeli dil.",
       "answer_sections": {
         "Örnek çalışma": {
           "Mümtaz": "Sanatçı duyarlığı; s.181 örnek cümlesinde çağrışımlı, şiirsel ve seslenmeli dil.",
           "Nuran": "Sanata açık fakat yaşamın güçlüklerine duyarlı; s.169'da daha kısa ve doğrudan soru kurar."
         }
       },
-      "source_locator": "basılı s.181 — Soru 4 — Mümtaz ile Nuran'ın kişilik ve dil özelliklerini karşılaştırınız."
+      "source_locator": "basılı s.181 — Soru 4 — Mümtaz ile Nuran'ın kişilik ve dil özelliklerini karşılaştırınız.",
+      "guidance": "Kişilik yargısını ve dil kullanımına ilişkin gözlemi aynı kanıtla açıklamaya zorlamayın; her biri için ayrı örnek isteyin."
     },
     {
       "question_id": "T3-P181-FLOW-S181_OTHER_PEOPLE",
@@ -479,14 +502,15 @@
       "printed_page": 181,
       "question_no": "Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?",
       "prompt_summary": "Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz, İhsan’ın etkisini doğrudan sözleriyle anlatır; Macide bu kesitte konuşmaz ve yalnızca Nuran’ın onu tanıyınca seveceğini söylemesinden anılır.",
       "answer_sections": {
         "Örnek çalışma": {
           "İhsan / Macide": "Mümtaz, İhsan’ın etkisini doğrudan sözleriyle anlatır; Macide bu kesitte konuşmaz ve yalnızca Nuran’ın onu tanıyınca seveceğini söylemesinden anılır. Macide’nin dil veya kişilik özelliği bu bilgiden belirlenemez.",
           "Suat / Fâhir": "Okuduğunuz Huzur kesitinde Suat ve Fâhir’in dil ve kişilik özelliklerini belirleyecek yeterli doğrudan kanıt yoktur."
         }
       },
-      "source_locator": "basılı s.170–181 — Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?"
+      "source_locator": "basılı s.170–181 — Soru 4 — İhsan, Macide, Suat ve Fâhir'in dil kullanımı nerede belirlenebilir?",
+      "guidance": "Gözlenen konuşma biçimini tanıtıcı bilgiyle karıştırmayın; doğrudan replik yoksa dil özelliği uydurulmasın."
     },
     {
       "question_id": "T3-P182-FLOW-S182_TWO_TEXTS",
@@ -494,14 +518,15 @@
       "printed_page": 182,
       "question_no": "Fark Edelim — Huzur ve Mehmet Kaplan'ın yazısından iki parçayı okuyunuz.",
       "prompt_summary": "Fark Edelim — Huzur ve Mehmet Kaplan'ın yazısından iki parçayı okuyunuz.",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz'ın anne-babasının ölümünden sonra İhsan ile Macide'nin onun yaşamındaki yeri.",
       "answer_sections": {
         "Örnek çalışma": {
           "Roman parçası": "Mümtaz'ın anne-babasının ölümünden sonra İhsan ile Macide'nin onun yaşamındaki yeri.",
           "Eleştiri parçası": "Kaplan'a göre Mümtaz, İhsan ve Nuran gerçek yaşamdan izler taşısa da Tanpınar kişilerinin özelliklerini ve ilişkilerini değiştirir."
         }
       },
-      "source_locator": "basılı s.182 — Fark Edelim — Huzur ve Mehmet Kaplan'ın yazısından iki parçayı okuyunuz."
+      "source_locator": "basılı s.182 — Fark Edelim — Huzur ve Mehmet Kaplan'ın yazısından iki parçayı okuyunuz.",
+      "guidance": "İki kaynak metni bir kez daha okutun; yazar hayatı ile roman kişisi arasındaki ilişkinin nasıl kurulduğunu öğrenciler bulsun."
     },
     {
       "question_id": "T3-P182-FLOW-S182_REAL",
@@ -509,7 +534,7 @@
       "printed_page": 182,
       "question_no": "Balık kılçığı — hangi unsurların gerçek hayatta bir karşılığı var?",
       "prompt_summary": "Balık kılçığı — hangi unsurların gerçek hayatta bir karşılığı var?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Kaplan, Mümtaz'ın Tanpınar'dan izler taşıdığını belirtir.",
       "answer_sections": {
         "Örnek çalışma": {
           "Mümtaz": "Kaplan, Mümtaz'ın Tanpınar'dan izler taşıdığını belirtir.",
@@ -517,7 +542,8 @@
           "Nuran ve çevre": "Nuran'ın hayattan esinlenen örneği ile İstanbul/kültür çevresi gerçek kaynaklardır."
         }
       },
-      "source_locator": "basılı s.182 — Balık kılçığı — hangi unsurların gerçek hayatta bir karşılığı var?"
+      "source_locator": "basılı s.182 — Balık kılçığı — hangi unsurların gerçek hayatta bir karşılığı var?",
+      "guidance": "Metinde dış dünyada karşılığı olabilecek unsurları seçtirin; gerçek kişiden esinlenmeyi birebir biyografi saymayın."
     },
     {
       "question_id": "T3-P182-FLOW-S182_FICTION",
@@ -525,7 +551,7 @@
       "printed_page": 182,
       "question_no": "Balık kılçığı — hangi ilişkiler romanda yeniden kurulmuş?",
       "prompt_summary": "Balık kılçığı — hangi ilişkiler romanda yeniden kurulmuş?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Kaplan'a göre gerçek kişi bekârken romanda benzeri evli ve çocukludur.",
       "answer_sections": {
         "Örnek çalışma": {
           "Yahya Kemal → İhsan": "Kaplan'a göre gerçek kişi bekârken romanda benzeri evli ve çocukludur.",
@@ -533,7 +559,8 @@
           "Yeniden kurma": "Yazar kişilere yeni nitelikler ve yaşam koşulları verebilir."
         }
       },
-      "source_locator": "basılı s.182 — Balık kılçığı — hangi ilişkiler romanda yeniden kurulmuş?"
+      "source_locator": "basılı s.182 — Balık kılçığı — hangi ilişkiler romanda yeniden kurulmuş?",
+      "guidance": "Gözlemden kurmaca anlatıya geçerken hangi ilişkilerin yeniden düzenlendiğini sorularla açtırın."
     },
     {
       "question_id": "T3-P183-FLOW-S183_CONTRIBUTION_EXAMPLE",
@@ -541,7 +568,7 @@
       "printed_page": 183,
       "question_no": "Örnek üzerinden düşünelim: İhsan neden Yahya Kemal'in birebir biyografisi değild",
       "prompt_summary": "Örnek üzerinden düşünelim: İhsan neden Yahya Kemal'in birebir biyografisi değildir?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Kaplan, İhsan'ın düşünce dünyasında Yahya Kemal'den izler bulunduğunu söyler.",
       "answer_sections": {
         "Örnek çalışma": {
           "Gerçek kaynak": "Kaplan, İhsan'ın düşünce dünyasında Yahya Kemal'den izler bulunduğunu söyler.",
@@ -549,7 +576,8 @@
           "Edebî katkı": "Bu değişimler, kişinin romandaki ilişkiler ve çatışmalar içinde görev almasına olanak tanır."
         }
       },
-      "source_locator": "basılı s.183 — Örnek üzerinden düşünelim: İhsan neden Yahya Kemal'in birebir biyografisi değildir?"
+      "source_locator": "basılı s.183 — Örnek üzerinden düşünelim: İhsan neden Yahya Kemal'in birebir biyografisi değildir?",
+      "guidance": "Kaynak kişi ile roman kişisini karşılaştırırken benzerliğin birebir özdeşlik anlamına gelmediğini öğrencilere gerekçelendirtin."
     },
     {
       "question_id": "T3-P183-FLOW-S183_TEXT_MEMORY",
@@ -557,14 +585,15 @@
       "printed_page": 183,
       "question_no": "Sıra Sizde — Birinci Huzur parçasını kitaptan okuyunuz (s.183).",
       "prompt_summary": "Sıra Sizde — Birinci Huzur parçasını kitaptan okuyunuz (s.183).",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Nuran'ın gülümsemesi, şakayı kesmesi veya oyuna katılması.",
       "answer_sections": {
         "Örnek çalışma": {
           "Dış olay ve davranış": "Nuran'ın gülümsemesi, şakayı kesmesi veya oyuna katılması.",
           "Değerlendirme ve duygu": "Hatırlamanın Mümtaz için artık hüzün uyandırması; Nuran'a ilişkin iç duygu."
         }
       },
-      "source_locator": "basılı s.183 — Sıra Sizde — Birinci Huzur parçasını kitaptan okuyunuz (s.183)."
+      "source_locator": "basılı s.183 — Sıra Sizde — Birinci Huzur parçasını kitaptan okuyunuz (s.183).",
+      "guidance": "Birinci parçayı metinden okutun; nesnel olarak betimlenenlerle yorum katılmış ifadeleri ayırmalarını isteyin."
     },
     {
       "question_id": "T3-P183-FLOW-S183_TEXT_INNER",
@@ -572,14 +601,15 @@
       "printed_page": 183,
       "question_no": "Sıra Sizde — İkinci Huzur parçasını kitaptan okuyunuz (s.183).",
       "prompt_summary": "Sıra Sizde — İkinci Huzur parçasını kitaptan okuyunuz (s.183).",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Başkalarıyla alay ederken kendisinin de kaçıp kaçmadığını düşünmesi.",
       "answer_sections": {
         "Örnek çalışma": {
           "İç sorgulama": "Başkalarıyla alay ederken kendisinin de kaçıp kaçmadığını düşünmesi.",
           "Dış çerçeve": "Dükkânda oturması, uykularının bozulması ve düşüncelerini takip etmekte zorlanması."
         }
       },
-      "source_locator": "basılı s.183 — Sıra Sizde — İkinci Huzur parçasını kitaptan okuyunuz (s.183)."
+      "source_locator": "basılı s.183 — Sıra Sizde — İkinci Huzur parçasını kitaptan okuyunuz (s.183).",
+      "guidance": "İkinci parçayı metinden okutun; dış olayın kişinin düşüncesine nasıl bağlandığını öğrencilere buldurun."
     },
     {
       "question_id": "T3-P183-FLOW-S183_SUBJECTIVE",
@@ -587,7 +617,7 @@
       "printed_page": 183,
       "question_no": "Mümtaz'ın duygusal yorumları hangi söz ve düşüncelerle belirginleşiyor?",
       "prompt_summary": "Mümtaz'ın duygusal yorumları hangi söz ve düşüncelerle belirginleşiyor?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Geçmiş eğlenceli anıları şimdi hüzün duygusuyla hatırlar.",
       "answer_sections": {
         "Örnek çalışma": {
           "Nuran'ı anma": "Geçmiş eğlenceli anıları şimdi hüzün duygusuyla hatırlar.",
@@ -595,7 +625,8 @@
           "Anlatımın katkısı": "Okur, Mümtaz'ın özlemini, suçluluğunu ve sıkışmışlığını algılar."
         }
       },
-      "source_locator": "basılı s.183 — Mümtaz'ın duygusal yorumları hangi söz ve düşüncelerle belirginleşiyor?"
+      "source_locator": "basılı s.183 — Mümtaz'ın duygusal yorumları hangi söz ve düşüncelerle belirginleşiyor?",
+      "guidance": "Öznel yargı saptayan öğrenciden kendi yorumuyla anlatıcının metindeki yorumunu ayırmasını isteyin."
     },
     {
       "question_id": "T3-P183-FLOW-S183_OBJECTIVE",
@@ -603,7 +634,7 @@
       "printed_page": 183,
       "question_no": "Dış olay betimlemesi Mümtaz'ın durumunu nasıl somutlaştırıyor?",
       "prompt_summary": "Dış olay betimlemesi Mümtaz'ın durumunu nasıl somutlaştırıyor?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Nuran'ın şakaya bazen katılması ya da şakayı kesmesi anlatılır.",
       "answer_sections": {
         "Örnek çalışma": {
           "İlk parça": "Nuran'ın şakaya bazen katılması ya da şakayı kesmesi anlatılır.",
@@ -611,7 +642,8 @@
           "Anlatımın katkısı": "Kişinin duyguları, ilişki ve yaşam koşulları içinde anlaşılır."
         }
       },
-      "source_locator": "basılı s.183 — Dış olay betimlemesi Mümtaz'ın durumunu nasıl somutlaştırıyor?"
+      "source_locator": "basılı s.183 — Dış olay betimlemesi Mümtaz'ın durumunu nasıl somutlaştırıyor?",
+      "guidance": "Betimlemede dışarıdan gözlenebilir ayrıntılarla karakterin bunlara yüklediği anlamı ayırt ettirin."
     },
     {
       "question_id": "T3-P184-FLOW-S184_HALK",
@@ -619,14 +651,15 @@
       "printed_page": 184,
       "question_no": "Birinci parça — Halkı sevmekle halkı bir kavram olarak görmek arasında ne fark v",
       "prompt_summary": "Birinci parça — Halkı sevmekle halkı bir kavram olarak görmek arasında ne fark var?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Halka değer vermek ile halkı soyut bir fikir olarak sevmek aynı olmayabilir.",
       "answer_sections": {
         "Örnek çalışma": {
           "İnsani gerilim": "Halka değer vermek ile halkı soyut bir fikir olarak sevmek aynı olmayabilir.",
           "Duyarlılık": "İnsanı yalnız düşünce konusu değil, yaşayan ve konuşan bir özne olarak görmek."
         }
       },
-      "source_locator": "basılı s.184 — Birinci parça — Halkı sevmekle halkı bir kavram olarak görmek arasında ne fark var?"
+      "source_locator": "basılı s.184 — Birinci parça — Halkı sevmekle halkı bir kavram olarak görmek arasında ne fark var?",
+      "guidance": "İki farklı insan/toplum yaklaşımını metin içi sözlerden çıkarıp aralarındaki gerilimi öğrencilerin açıklamasını isteyin."
     },
     {
       "question_id": "T3-P184-FLOW-S184_NEW_LIFE",
@@ -634,14 +667,15 @@
       "printed_page": 184,
       "question_no": "İkinci parça — Yeni hayatın kurulmasıyla tarihî köklerden beslenme nasıl birlikt",
       "prompt_summary": "İkinci parça — Yeni hayatın kurulmasıyla tarihî köklerden beslenme nasıl birlikte düşünülüyor?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Üretim ve yaşam şartlarını düzenlemek; yeni bir insan ve toplum anlayışı oluşturmak.",
       "answer_sections": {
         "Örnek çalışma": {
           "Toplumsal zorluk": "Üretim ve yaşam şartlarını düzenlemek; yeni bir insan ve toplum anlayışı oluşturmak.",
           "İnsani gerilim": "Değişim için çalışırken geçmişten ve insandan kopmamak."
         }
       },
-      "source_locator": "basılı s.184 — İkinci parça — Yeni hayatın kurulmasıyla tarihî köklerden beslenme nasıl birlikte düşünülüyor?"
+      "source_locator": "basılı s.184 — İkinci parça — Yeni hayatın kurulmasıyla tarihî köklerden beslenme nasıl birlikte düşünülüyor?",
+      "guidance": "Önce her iki görüşün vurgusunu metinden buldurun; sentezi öğrencinin kurmasına alan bırakın."
     },
     {
       "question_id": "T3-P185-FLOW-S185_ANIMALS",
@@ -649,14 +683,15 @@
       "printed_page": 185,
       "question_no": "Üçüncü parça — Nuran'ın serçelerle ve köpekle ilişkisi hangi duyarlılığı gösteri",
       "prompt_summary": "Üçüncü parça — Nuran'ın serçelerle ve köpekle ilişkisi hangi duyarlılığı gösteriyor?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Nuran serçelerle ilgilenir; köpek barınır, Mümtaz pencere önüne ekmek ufakları koyar.",
       "answer_sections": {
         "Örnek çalışma": {
           "Davranış": "Nuran serçelerle ilgilenir; köpek barınır, Mümtaz pencere önüne ekmek ufakları koyar.",
           "Çıkarım": "Canlıların farklı ihtiyaçlarına karşı şefkat; parça birinin kasıtlı olarak zarar verdiğini söylemez."
         }
       },
-      "source_locator": "basılı s.185 — Üçüncü parça — Nuran'ın serçelerle ve köpekle ilişkisi hangi duyarlılığı gösteriyor?"
+      "source_locator": "basılı s.185 — Üçüncü parça — Nuran'ın serçelerle ve köpekle ilişkisi hangi duyarlılığı gösteriyor?",
+      "guidance": "Karakterin davranışını gözlemden yoruma geçerek çözümletin; ahlaki yargıyı doğrudan dayatmayın."
     },
     {
       "question_id": "T3-P185-FLOW-S185_ILLNESS",
@@ -664,7 +699,7 @@
       "printed_page": 185,
       "question_no": "Dördüncü parça — İhsan'ın hastalığı Mümtaz'a hangi sorumlulukları yüklüyor?",
       "prompt_summary": "Dördüncü parça — İhsan'ın hastalığı Mümtaz'a hangi sorumlulukları yüklüyor?",
-      "answer": "Aşağıdaki örnek çözüm, basılı metin ve görevle birlikte değerlendirilmelidir.",
+      "answer": "Örnek çözüm: Mümtaz bakım işlerini ve evdekilerin ihtiyaçlarını üstlenir.",
       "answer_sections": {
         "Örnek çalışma": {
           "Davranış": "Mümtaz bakım işlerini ve evdekilerin ihtiyaçlarını üstlenir.",
@@ -672,7 +707,8 @@
           "Güçlük": "Hastalıkla birlikte ev halkında korku ve kaygı artar."
         }
       },
-      "source_locator": "basılı s.185 — Dördüncü parça — İhsan'ın hastalığı Mümtaz'a hangi sorumlulukları yüklüyor?"
+      "source_locator": "basılı s.185 — Dördüncü parça — İhsan'ın hastalığı Mümtaz'a hangi sorumlulukları yüklüyor?",
+      "guidance": "Hastalıkla ilgili doğrudan anlatılanları ve karakterde uyandırdığı sorumluluk düşüncesini birbirinden ayırmalarını sağlayın."
     },
     {
       "question_id": "T3-P180-FLOW-S180_SUAT_FAHIR",
@@ -692,7 +728,8 @@
           ]
         }
       },
-      "source_locator": "basılı s.180 — Suat ve Fâhir için kanıt sınırı"
+      "source_locator": "basılı s.180 — Suat ve Fâhir için kanıt sınırı",
+      "guidance": "Karakter hakkında kesitte kanıt yoksa öğrenciye 'bu parçadan belirlenemiyor' deme alanı tanıyın."
     }
   ]
 }

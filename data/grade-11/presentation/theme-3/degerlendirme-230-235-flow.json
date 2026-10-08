@@ -19,11 +19,11 @@
       "prompt": "Tema sonu değerlendirme — Üç metni tez ve antitezle birlikte inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kitaptaki üç kısa metni numaralarıyla okuyun; Venn şemasındaki tez ve antitez cümlelerini birbirine karıştırmayın.",
+        "lead": "Basılı s.230'daki üç metni okuyun. Her metnin tez, antitez ve kesişimle ilişkisini henüz sınıflandırmadan tartışın.",
         "items": [
-          "Metin 1'in kurmaca anlatımını ve gerçeklikten yararlanma biçimini düşünün.",
-          "Metin 2'nin yaşam öyküsü bildiren birinci kişi anlatımını belirleyin.",
-          "Metin 3'te gerçek gözlem ile anlatıcının yorumunu birbirinden ayırın."
+          "Her metinde anlatıcının yaşantı bilgisi hangi biçimde sunuluyor?",
+          "Gözlem, olay ve yorum birbirinden nasıl ayırt edilebilir?",
+          "Her metnin iki görüşten hangisine ne ölçüde dayanak oluşturduğunu metinle gerekçelendirin."
         ],
         "note": "Metinlerin tamamı ders kitabının basılı s.230 sayfasından okunur; Lesson Player kaynak metinleri yeniden yayımlamaz."
       }
@@ -77,8 +77,8 @@
       "prompt": "Ölçme ve Değerlendirme 2 — Tez ve antitezi birleştiren sentez cümlesi yazınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kesişimdeki metinden hareketle 'iz taşıyabilir; fakat birebir kopya değildir' düşüncesini kendi cümlenizle gerekçelendirin.",
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Öğrencinin cümlesini tek bir kalıba zorlamayın; hem 'hayattan iz taşıma' hem de 'edebî dönüştürme/bağımsızlık' yönünü birlikte ifade etmesi yeterlidir."
+        "lead": "İki görüşten hangi noktaları koruyabilirsiniz, hangi sınırlılığı eklemeniz gerekir? Kendi sentez cümlenizi yazın.",
+        "note": "Önce öğrencilerin bağımsız cümle kurmasını sağlayın; örnek sentezi yanıt açıldıktan sonra karşılaştırın."
       },
       "thinking": "Kesişen örneğin iki uç savla ortak ve ayrılan yanlarını bulun; bunları kapsayan kendi cümlenizi kurun."
     },
@@ -229,7 +229,7 @@
       "prompt": "Ölçme ve Değerlendirme 9 — Orhan Veli metni hakkında söylenemeyecek seçeneği bulunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Metin sanatçının yaşamını kronolojik sırayla mı anlatıyor, yoksa edebî kişiliğine mi odaklanıyor? Bu ayrım üzerinden seçin.",
+        "lead": "Seçeneklerden hangisi için metin içi yeterli dayanak bulunmuyor? Her yargıyı metinle kontrol ederek karar verin.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Metni 'edebî portre' gibi kitaptaki sorunun gerektirmediği bir türe kesin olarak etiketlemeye gerek yoktur."
       }
     },
