@@ -49,6 +49,11 @@ for (const [index, lesson] of lessons.entries()) {
     assert.equal(step.source.source_status, "VERIFIED");
     assert.ok(step.display_prompt.trim());
     if(step.answer) {
+      assert.ok(
+        new Set(["question_answer", "reference_answer", "performance_support", "source_limited"])
+          .has(step.answer.entry_type),
+        `Android parser must support canonical answer type: ${lesson.lesson_id}/${step.id} (${step.answer.entry_type})`
+      );
       const sections = step.answer.answer_sections;
       const hasStructuredAnswer = Array.isArray(sections)
         ? sections.length > 0
