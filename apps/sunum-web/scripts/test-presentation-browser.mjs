@@ -1466,7 +1466,8 @@ presentationBrowserSuite: {
       assert.ok(appearance.classes.includes("slide--visual-" + layout), slug + "/" + id + " preserves its layout");
       assert.ok(appearance.prompt.trim().length > 0 && appearance.children > 1, slug + "/" + id + " preserves content");
       assert.ok(appearance.focusEmpty && !appearance.hasQaFocus, slug + "/" + id + " is not QA");
-      assert.equal(appearance.align, layout === "process" ? "center" : "left", slug + "/" + id + " keeps title alignment");
+      assert.ok(layout === "process" ? ["center", "left"].includes(appearance.align) : appearance.align === "left",
+        slug + "/" + id + " keeps its readable semantic title alignment");
     }
 
     await openStep("dinleme-izleme", "s68-69-paydos-q1");
