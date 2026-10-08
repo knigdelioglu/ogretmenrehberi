@@ -191,4 +191,23 @@ for (const entry of Object.values(voc.answer_sections)) {
     "Do not fabricate sung verses without a verified sound transcript");
 }
 
+const gokturk = intake.records.find(r => r.file_name === "19XU49MB.mp4");
+assert.ok(gokturk && gokturk.printed_page === 159);
+assert.equal(gokturk.book_qr.eba_content_id, "b557411639a9c10b3b7c33b91819cd42");
+assert.equal(gokturk.book_qr.media_binary_identity, "not_verified_from_eba_download");
+assert.equal(gokturk.spoken_audio_transcript, "not_done");
+assert.equal(gokturk.visual_review, "time_stamped_sampled_frames_and_on_screen_labels");
+assert.equal(gokturk.review_notes_path, "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MB.md");
+const gokturkNote = fs.readFileSync(path.join(root, gokturk.review_notes_path), "utf8");
+for (const label of ["İLTERİŞ KUTLUĞ KAĞAN", "KÜL TİGİN", "BİLGE KAĞAN", "TONYUKUK"]) {
+  assert.ok(gokturkNote.includes(label), `Missing visual screen label: ${label}`);
+}
+const t2Part12 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-12-pages-155-159.json");
+const bridge = t2Part12.entries.find(e => e.question_id === "T2-P159-Q08");
+assert.equal(bridge?.entry_type, "source_limited");
+assert.ok(bridge.source_locator.includes(gokturk.review_notes_path));
+assert.ok(bridge.answer.includes("Kül Tigin") && bridge.answer.includes("Tonyukuk"));
+assert.ok(bridge.answer.includes("videoda anıldığına dair ses kanıtı değildir"),
+  "Do not attribute selected literary works to untranscribed narration");
+
 console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");
