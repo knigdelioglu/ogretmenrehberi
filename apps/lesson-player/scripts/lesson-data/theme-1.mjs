@@ -367,6 +367,25 @@ assert(
   "s54 planlama altı zorunlu hazırlık adımını taşımalı."
 );
 
+// F-12: Alternative situations are optional supports, not fixed scripts.
+const s54Alternatives = s54Plan.answer?.answer_sections?.["7_İsteğe_Bağlı_Alternatif_Durum_Kartları"];
+assert(
+  Array.isArray(s54Alternatives) && s54Alternatives.length === 2 &&
+    s54Alternatives.every((item) => typeof item === "string" && item.length > 40),
+  "F-12: s54 must offer exactly two brief alternative drama situations."
+);
+assert(
+  s54Plan.answer?.guidance?.includes("Yalnız konu bulmakta zorlanan") &&
+    s54Plan.content.items[0].includes("ihtiyaç duyarsanız"),
+  "F-12: Example plans must remain optional and follow student decisions."
+);
+const s55Content = speakingById.get("s55-content");
+assert(
+  s55Content?.content?.items?.some((item) => item.includes("kendi taslağınızdan sonra")) &&
+    s55Content.answer?.guidance?.includes("Önce her grup kendi"),
+  "F-12: Students must draft first and analyse optional models afterwards."
+);
+
 const s57Performance1 = speakingById.get("s57-performance-1");
 const s57Performance2 = speakingById.get("s57-performance-2");
 assert(s57Performance1 && s57Performance2, "Konuşma s57 iki ekranı da bulunmalı.");
