@@ -379,6 +379,11 @@ class ContentRepository(
                 if (answer != null) add(RevealKey.ANSWER)
                 if (!answer?.evidenceQuotes.isNullOrEmpty()) add(RevealKey.EVIDENCE)
                 if (!answer?.explanation.isNullOrBlank()) add(RevealKey.EXPLANATION)
+                // The canonical flow exposes dictionary only when explicitly requested
+                // and when sourced definitions exist. Reject missing or phantom layers.
+                if (RevealKey.DICTIONARY in keys && !answer?.dictionaryTerms.isNullOrEmpty()) {
+                    add(RevealKey.DICTIONARY)
+                }
                 if (!content?.note.isNullOrBlank()) add(RevealKey.NOTE)
             }
             require(keys.size == keys.distinct().size && keys.toSet() == available.toSet()) {

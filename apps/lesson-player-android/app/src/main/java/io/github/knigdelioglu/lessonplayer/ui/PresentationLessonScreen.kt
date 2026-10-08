@@ -302,6 +302,23 @@ internal fun PresentationLessonScreen(
                         }
                     }
 
+                    if (RevealKey.DICTIONARY in state.revealed) {
+                        val dictionaryTerms = step.answer?.dictionaryTerms.orEmpty()
+                        if (dictionaryTerms.isNotEmpty()) {
+                            item {
+                                PresentationRevealCard(
+                                    label = "SÖZLÜK",
+                                    text = dictionaryTerms.joinToString("\n\n") { term ->
+                                        "${term.term}: ${term.meaning}"
+                                    },
+                                    surfaceColor = LessonColors.GuidanceSurface,
+                                    borderColor = LessonColors.GuidanceBorder,
+                                    textColor = LessonColors.GuidanceText
+                                )
+                            }
+                        }
+                    }
+
                     projection.guidance?.let { value ->
                         item {
                             PresentationRevealCard(

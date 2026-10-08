@@ -86,6 +86,9 @@ object LessonEngine {
         if (answer != null) add(RevealKey.ANSWER)
         if (!answer?.evidenceQuotes.isNullOrEmpty()) add(RevealKey.EVIDENCE)
         if (!answer?.explanation.isNullOrBlank()) add(RevealKey.EXPLANATION)
+        if (RevealKey.DICTIONARY in step.revealOrder && !answer?.dictionaryTerms.isNullOrEmpty()) {
+            add(RevealKey.DICTIONARY)
+        }
         if (!step.content?.note.isNullOrBlank()) add(RevealKey.NOTE)
     }
 

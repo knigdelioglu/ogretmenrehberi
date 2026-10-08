@@ -29,6 +29,16 @@ class CanonicalContentTest {
     )
 
     @Test
+    fun canonicalDictionaryRevealIsAvailableAndValid() = runBlocking {
+        val bundle = offlineRepository().load().bundle
+        val step = bundle.byId.getValue("T11-T01-KARAGOZ").steps.first { it.id == "s17-q2" }
+        val dictionary = io.github.knigdelioglu.lessonplayer.content.RevealKey.DICTIONARY
+        assertTrue(step.answer?.dictionaryTerms?.isNotEmpty() == true)
+        assertTrue(dictionary in step.revealOrder)
+        assertTrue(dictionary in io.github.knigdelioglu.lessonplayer.player.LessonEngine.availableKeys(step))
+    }
+
+    @Test
     fun canonicalBundleLoadsAndValidates() = runBlocking {
         val loaded = offlineRepository().load()
         val bundle = loaded.bundle
