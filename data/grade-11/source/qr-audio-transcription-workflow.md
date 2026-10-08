@@ -52,6 +52,33 @@ Var olan taslağı değiştirmek için --overwrite seçeneği açıkça istenmel
 
 JSON içinde kaynak SHA-256, sayfa, EBA QR kimliği, dosya kökeni doğrulama düzeyi, model, zaman damgaları, belirsizlik uyarıları bulunur. Durum **her zaman** ASR_DRAFT_UNREVIEWED ve transcript_verified=false olarak çıkar; satırlar da human_verified=false ile başlar. Taslaklar tam şiir veya söyleşi metni içerebilir: **kamusal GitHub'a yüklemeyin**.
 
+## Yerel taslaklardan dinleme kontrol kuyruğu oluşturma
+
+ASR taslakları üretildiğinde, aynı özel klasörde her ses parçasının zaman aralığını ve kontrol önceliğini gösteren bir **inceleme kuyruğu** oluşturabilirsiniz:
+
+~~~bash
+# 18 kaydın hangisinin transkript taslağı var? Yalnız durum, yazma yok.
+.venv/bin/python scripts/qr_audio_review_queue.py --all --status
+
+# Üç öncelikli kayıt için zaman damgalı kontrol listesi oluştur.
+.venv/bin/python scripts/qr_audio_review_queue.py \
+  --file OGM2025TDE118312.mp4 \
+  --file 19XU49JV.mp4 \
+  --file 19XU49ME.mp4
+
+# Tüm video taslakları mevcut olmalıysa strict kontrol kullan.
+.venv/bin/python scripts/qr_audio_review_queue.py --all --strict
+
+# Önceden hazırlanmış özel kontrol listesini bilinçli yenile.
+.venv/bin/python scripts/qr_audio_review_queue.py --all --overwrite
+~~~
+
+Varsayılan özel çıktı sources/local/qr-transcripts/_qr-audio-manual-review-queue.md dosyasıdır. Dosyanın içinde konuşma/şiir metinleri **yeniden kopyalanmaz**; yalnız bölüm numaraları, yaklaşık dakika/saniye ve dinleme uyarıları vardır. Gerçek taslak satırlarını aynı özel klasördeki asr-draft.srt ile karşılaştırın.
+
+Araç, JSON'un beklenen **SHA-256, EBA hedefi, sayfa, model ve doğrulama bayrağına** uyup uymadığını sınar. Yanlış kaynak veya bozulan satır bulunduğunda INVALID_DRAFT, henüz üretilmeyen kayıt için MISSING_DRAFT yazar. Düşük olasılık, sessizlik, tekrarlanan cümle, tarih/sayı, çakışan zaman gibi şüpheli bölümleri **öncelikli** listeler. Şiir ve âşık atışmasındaki **her satır** ayrıca önceliklidir.
+
+**Bu araç otomatik onay mekanizması değildir:** Liste üzerindeki bir kutunun işaretlenmesi, gerçek dinleyenin kimliğini veya doğruladığı sözcükleri kanıtlamaz; sesli kanıtı cevaba taşımak için ayrıca orijinal MP4'le insan kontrolü yapılmalıdır. Kişilerin sözlerini şiire/mısraya atfetme, şairin sesi iddiası veya tarihî olgu kontrolü uygulama tarafından otomatik doğrulanamaz.
+
 ## Öğretmen tarafından dinleyerek doğrulama
 
 1. **83. sayfa — Olvido:** Gerçek şiir okuyuşunu dinleyerek dize sınırları, ses tonu, vurgu, tempo, duraklama ve varsa müziği ayrı ayrı doğrulayın. Video girişindeki “Şairin Sesinden” yazısı sesin arşiv kökeninin bağımsız kanıtı değildir. Yanıt Q13'te görsel gözlemi ve işitsel kanıtı ayrı gösterin.
@@ -64,6 +91,7 @@ JSON içinde kaynak SHA-256, sayfa, EBA QR kimliği, dosya kökeni doğrulama d�
 
 ~~~bash
 python3 -m unittest discover -s scripts/tests -p 'test_qr_audio_transcribe.py' -v
+python3 -m unittest discover -s scripts/tests -p 'test_qr_audio_review_queue.py' -v
 node scripts/validate-qr-media-intake.mjs
 ~~~
 
