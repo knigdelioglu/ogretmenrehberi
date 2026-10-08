@@ -1,0 +1,24 @@
+name: QR media intake consistency
+
+on:
+  pull_request:
+    paths:
+      - 'data/grade-11/source/qr-media-intake-2026-10-08.json'
+      - 'data/grade-11/source/qr-sources.json'
+      - 'data/grade-11/source/qr-sources-worklist.md'
+      - 'data/grade-11/source/qr-review-notes/**'
+      - 'data/grade-11/source/teacher-book/theme-1/answer-bank/part-13-pages-53-58.json'
+      - 'scripts/validate-qr-media-intake.mjs'
+      - '.github/workflows/qr-media-intake.yml'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify QR source mapping and scene provenance
+        run: node scripts/validate-qr-media-intake.mjs
