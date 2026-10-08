@@ -96,7 +96,7 @@
       "prompt": "Hazırlık 2 — Başlık, görsel ve jenerikten içeriğe ilişkin tahmin yapınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tahmini kesin olay bilgisi gibi yazmayın; hangi görsel veya başlık ipucundan yola çıktığınızı belirtin."
+        "lead": "Önce başlık ve kitap görselinden tahmin yapın; sonra 58 saniyelik ayrı jeneriğin su, tabiat ve hayvancılık görüntüleriyle tahmininizi karşılaştırın. Tahmini yaşanmış olay veya kesin sonuç diye sunmayın."
       }
     },
     {
@@ -164,7 +164,7 @@
           "Videoda geçtiği bağlam",
           "Hayatın Aynası temasıyla ilişkisi"
         ],
-        "note": "QR video içeriği elimizde olmadığı için Lesson Player hazır kelime listesi üretmez.",
+        "note": "Uzun Fedakârlık videosunun bazı görüntüleri incelendi; ancak tam konuşma/ses dökümü bulunmadığı için videoda duyulan sözcükler hazır liste olarak verilmez. Görsel kanıt, sesli ifade yerine kullanılamaz.",
         "sources": [
           {
             "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
