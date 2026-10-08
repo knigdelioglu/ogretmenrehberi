@@ -50,7 +50,21 @@ export interface SupplementalSection {
   body: string;
 }
 
+export interface RubricCriterion {
+  criterion: string;
+  max_points: number;
+  levels: { label: string; points: string; description: string }[];
+}
+
+export interface RubricMatrix {
+  columns: string[];
+  rows: RubricCriterion[];
+  min_points: number;
+  total_points: number;
+}
+
 export interface StepContent {
+  rubric?: RubricMatrix;
   lead?: string;
   items?: string[];
   scale?: string[];
