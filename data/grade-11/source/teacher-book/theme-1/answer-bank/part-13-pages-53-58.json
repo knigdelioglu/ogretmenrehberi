@@ -6,7 +6,7 @@
   "entries": [
     {
       "question_id": "T1-P53-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 53,
       "question_no": "1",
       "prompt_summary": "Seksenler videosundaki sözlü iletişim engellerini belirleme",
@@ -27,7 +27,7 @@
         ]
       },
       "guidance": "Önce üç sahnede kimin neyi dinlemediğini öğrencilerden bulmalarını isteyin; sonra davranışı iletişim engeliyle eşleştirin. Videoda teyit edilmeyen söz kesme, sert ses tonu veya replikleri gerçekleşmiş gibi sunmayın.",
-      "explanation": "Bu örnek cevap, kullanıcının videoyu izleyerek aktardığı sahne olaylarına dayanır; birebir ses/diyalog transkripti henüz tamamlanmamıştır. Ayrıntılar için data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md.",
+      "explanation": "Kullanıcının izleyip anlattığı üç sahneden örnek davranışlar doğrulanabilir; ancak tüm videonun kelimesi kelimesine ses dökümü yapılmadığı ve bütün sahneler tam doğrulanmadığı için kaynak durumu source_limited kalır. Kanıt: data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md.",
       "source_locator": "basılı s.53 / PDF s.54 — QR-EBA-254C08EA3501; 19XU49K2.mp4 (SHA-256 doğrulandı); sahne özeti: data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md; kelimesi kelimesine ses dökümü yapılmadı"
     },
     {
