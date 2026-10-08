@@ -90,7 +90,7 @@
       "prompt": "Âşık Atışması'nı not alarak dinleyiniz / izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin.",
+        "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin. QR videosuna erişilemiyorsa kitap s.158'deki atışma örneği yalnız ayrı bir teknik alıştırmada kullanılabilir; bu videoda duyulan sözlerin kanıtı olarak sunulamaz.",
         "items": [
           "Bir âşığın diğerinin sözüne nasıl cevap verdiğini not edin.",
           "Mizah, benzetme ve söz oyunu örneklerini işaretleyin.",
@@ -209,7 +209,7 @@
       "source_record_id": "T02-S0125",
       "answer_id": "T2-P142-Q01",
       "layout": "question",
-      "prompt": "Atışmanın âşıklık geleneğindeki yerini açıklayınız.",
+      "prompt": "Başlık ve görselden hareketle atışmanın âşıklık geleneğindeki yerine ilişkin tahminlerinizi ve dayanaklarınızı belirtiniz.",
       "prompt_mode": "VERIFIED_SUMMARY"
     },
     {
@@ -254,7 +254,10 @@
       "layout": "comparison",
       "density": "compact",
       "prompt": "Münacaat şiiri ile âşık şiirlerinin dilini karşılaştırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kaynak durumu: Münacaat için ders kitabı s.143 dizeleri incelenebilir. Âşık şiiri sütunu ise izlenen QR videosunda gerçekten duyulan örneklerle tamamlanacaktır; kaydedilmemiş dizeler varsayılmamalıdır."
+      }
     },
     {
       "id": "s143-preference",

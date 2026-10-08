@@ -10,7 +10,9 @@
     "from": "T02-S0015",
     "to": "T02-S0046"
   },
-  "additional_source_records": ["T02-S0159"],
+  "additional_source_records": [
+    "T02-S0159"
+  ],
   "steps": [
     {
       "id": "s89-common-words",
@@ -106,10 +108,10 @@
       "content": {
         "lead": "Ana metni ders kitabından okuyun. Okurken olay akışını, kültür söz varlığını ve hikâye türünün özelliklerini izleyin.",
         "items": [
-          "Çordon'un bugünkü yolculuğu ile geçmişteki olayların birbirine nasıl bağlandığını izleyin.",
-          "Oğul özlemi, yas ve hatıra duygusunun hangi davranışlarda görünür olduğunu işaretleyin.",
-          "Çordon, kızları ve Nazifkan'ın aynı olaya neden farklı yaklaştığını not edin.",
-          "İstasyon ve vedalaşma bölümünde dilin duygu yoğunluğunu nasıl artırdığına dikkat edin."
+          "Olayların anlatıldığı zaman ile hatırlanan geçmişi ayırarak okuyun.",
+          "Kişilerin aynı duruma verdikleri farklı tepkileri metinden işaretleyin.",
+          "Duyguyu doğrudan adlandırmak yerine sezdiren söz ve davranışların altını çizin.",
+          "İkinci okumada kişi adlarını, mekânları ve kararların nedenlerini metin kanıtlarıyla ilişkilendirin."
         ]
       }
     },
@@ -324,7 +326,8 @@
       "layout": "structure",
       "density": "compact",
       "prompt": "Verilen metinlerdeki çekimli fiilleri kip ve çekim yapısına göre sınıflandırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Önce fiili kaynak cümlede birebir bulun; çekim eklerini ve varsa çatı eklerini işaretleyin. Ardından istenen gruba gerekçesiyle yerleştirip cevabı kontrol edin."
     },
     {
       "id": "s103-gram2",
@@ -333,7 +336,8 @@
       "layout": "structure",
       "density": "compact",
       "prompt": "Verilen fiilleri öznesine göre çatı özellikleri bakımından sınıflandırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Önce fiili kaynak cümlede birebir bulun; çekim eklerini ve varsa çatı eklerini işaretleyin. Ardından istenen gruba gerekçesiyle yerleştirip cevabı kontrol edin."
     },
     {
       "id": "s104-gram3",
@@ -342,7 +346,8 @@
       "layout": "structure",
       "density": "compact",
       "prompt": "Verilen fiilleri nesnesine göre çatı özellikleri bakımından sınıflandırınız.",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Önce fiili kaynak cümlede birebir bulun; çekim eklerini ve varsa çatı eklerini işaretleyin. Ardından istenen gruba gerekçesiyle yerleştirip cevabı kontrol edin."
     },
     {
       "id": "s104-gram4",

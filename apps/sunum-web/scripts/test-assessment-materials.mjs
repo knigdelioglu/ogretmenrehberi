@@ -7,6 +7,8 @@ import { assessmentDownloads } from "../src/menu-files.js";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
+// Scope: Theme 2 pedagogy regression checks; existing expectations for other themes are untouched.
+execFileSync(process.execPath, [path.join(repoRoot, "scripts/verify-theme2-pedagogical.mjs")], { stdio: "inherit" });
 const distRoot = path.join(appRoot, "dist");
 const files = [
   ["19XU4J2J.docx", "data/grade-11/presentation/theme-1/konusma-flow.json", "s58-feedback", 10],
@@ -50,6 +52,14 @@ for (const [filename, relativeFlow, stepId, count] of files) {
       for (const section of levels) {
         for (const level of ["Başlangıç düzeyinde", "Kabul edilebilir", "İyi", "Çok iyi"]) {
           assert.ok(section.body.includes(level), `${stepId}/${section.title}: missing ${level}`);
+        }
+      }
+    } else if (stepId === "s135-reference" || stepId === "s153-rubric") {
+      // Tema 2: four source-aligned point levels are grouped under each of five criterion headings.
+      assert.equal(levels.length, count, `${stepId} groups five rubric criteria`);
+      for (const criterion of levels) {
+        for (const range of ["1–5 puan", "6–10 puan", "11–15 puan", "16–20 puan"]) {
+          assert.ok(criterion.body.includes(range), `${stepId} preserves ${range} for ${criterion.title}`);
         }
       }
     } else {
