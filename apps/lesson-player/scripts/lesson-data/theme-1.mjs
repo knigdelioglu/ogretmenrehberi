@@ -502,7 +502,8 @@ const y75Plan = yazmaById.get("s75-plan");
 assert(y75Plan, "s75 e-posta planlama adımı eksik.");
 assert(
   y75Plan.answer?.entry_type === "performance_support" &&
-    y75Plan.content?.items?.length === 5,
+    y75Plan.content?.items?.length === 6 &&
+    y75Plan.content.items[0].includes("Örnek e-postayı açmadan önce"),
   "s75 planlama, performans desteği ve beş hazırlık adımını korumalı."
 );
 

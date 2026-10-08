@@ -67,8 +67,8 @@ assert.deepEqual(preparation.content.sections.map((section) => section.body), [
   "Konuşmada iletişimin önündeki engelleri ortadan kaldırdı."
 ]);
 const authored = speakingFlow.steps.find((step) => step.id === "s59-rubric");
-assert.equal(authored.content.lead, "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.");
-assert.ok(!/örnek anahtar|resmî MEB\/kitap anahtarı değildir/i.test(JSON.stringify(authored.content)));
+assert.match(authored.content.lead, /örnek puanlama rubriği/);
+assert.match(authored.content.lead, /birebir aktarımı olduğu doğrulanmamıştır/);
 assert.equal(authored.content.sources.find((source) => source.download === true)?.label, "Öğretmen anahtarı");
 assert.match(JSON.stringify(authored.content.sections), /Konu seçimi|İçeriğin uygunluğu|Canlandırma becerisi/);
 assert.equal(authored.content.sources[0]?.label, "Ders kitabı basılı s.58 — PDF sayfasını aç");
