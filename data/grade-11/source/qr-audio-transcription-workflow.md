@@ -79,6 +79,23 @@ Araç, JSON'un beklenen **SHA-256, EBA hedefi, sayfa, model ve doğrulama bayra�
 
 **Bu araç otomatik onay mekanizması değildir:** Liste üzerindeki bir kutunun işaretlenmesi, gerçek dinleyenin kimliğini veya doğruladığı sözcükleri kanıtlamaz; sesli kanıtı cevaba taşımak için ayrıca orijinal MP4'le insan kontrolü yapılmalıdır. Kişilerin sözlerini şiire/mısraya atfetme, şairin sesi iddiası veya tarihî olgu kontrolü uygulama tarafından otomatik doğrulanamaz.
 
+## Whisper zaman damgası video süresini aşarsa
+
+Bazı ASR taslakları, özellikle sessizlik veya klibin sonundaki boşluklar sırasında, **video bitiminden sonraya taşan bölüm zamanları** üretebilir. Bu bir konuşma kanıtı değildir. Daha önce bu durum `INVALID_DRAFT, 0 segments` olarak görünüyordu ve inceleme sırasını gizliyordu.
+
+Güncel `qr_audio_review_queue.py`, **kaynağın SHA, EBA kimliği ve ASR taslak durumu doğruysa** bu tür bölümleri silmeden `ASR_DRAFT_TIMING_REVIEW` durumuna alır. İlgili zaman aralıkları `beyond_media_end_check_audio` etiketiyle **HIGH** öncelikli görünür. Bölüm video bittikten *sonra başlıyorsa* ayrıca `segment_starts_after_media_end_possible_hallucination` işareti çıkar. Ekranda gerçek taşma miktarı da gösterilir. Negatif, ters veya sonlu olmayan zamanlar hâlâ `INVALID_DRAFT` olarak reddedilir.
+
+Güncellemeyi çektikten sonra **videoları yeniden transkribe etmeden** raporu yeniden oluşturun:
+
+~~~bash
+git pull --ff-only
+sources/local/qr-media/.venv/bin/python scripts/qr_audio_review_queue.py --all --overwrite
+~~~
+
+İncelenecek beş dosya: `19XU3SUD.mp4`, `19XU4CVR.mp4`, `19XU49JV.mp4`, `19XU49LQ.mp4`, `19XU3SW3.mp4`. Önce orijinal MP4'lerin son 30–45 saniyesini dinleyin. Taslakta süre aşan cümleler gerçekten duyulmuyorsa **uydurulmuş içerik** olabilecekleri için hiçbir ders cevabına aktarılmamalıdır. Sesli içerik transkriptinin tam doğrulandığı iddia edilemez.
+
+`--strict` kipinde bu tür zaman-taşması bulunan kayıtlar **başarısız** sayılır; böylece zaman taşması sessizce başarıya dönüşmez. Normal rapor kipinde ise bölüm listesi korunur ve kullanıcıya hangi kısmın inceleneceği açıkça gösterilir.
+
 ## Öğretmen tarafından dinleyerek doğrulama
 
 1. **83. sayfa — Olvido:** Gerçek şiir okuyuşunu dinleyerek dize sınırları, ses tonu, vurgu, tempo, duraklama ve varsa müziği ayrı ayrı doğrulayın. Video girişindeki “Şairin Sesinden” yazısı sesin arşiv kökeninin bağımsız kanıtı değildir. Yanıt Q13'te görsel gözlemi ve işitsel kanıtı ayrı gösterin.
