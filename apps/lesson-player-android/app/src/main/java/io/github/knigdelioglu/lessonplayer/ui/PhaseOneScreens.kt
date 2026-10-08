@@ -228,7 +228,7 @@ private fun LessonOutlineRows(
     onStepSelected: () -> Unit = {}
 ) {
     LazyColumn(
-        modifier = modifier,
+        modifier = modifier.testTag("lesson-outline-list"),
         state = listState,
         verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
     ) {
