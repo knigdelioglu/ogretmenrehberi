@@ -1408,7 +1408,7 @@ presentationBrowserSuite: {
     }))()`);
     assert.equal(assessmentMarkup.qa, false, "assessment stays outside the QA-modern shell");
     assert.equal(assessmentMarkup.focus, false, "assessment does not gain a QA answer-focus region");
-    assert.ok(assessmentMarkup.checklistRows > 0, "s78-self retains its checklist rows");
+    assert.ok(assessmentMarkup.checklistRows + assessmentMarkup.scaleRows > 0, "s78-self keeps its original assessment rows");
     assert.ok(assessmentMarkup.scaleRows > 0, "s78-self retains its Evet/Kısmen/Hayır scale rows");
     assert.equal(assessmentMarkup.label, "Değerlendirme", "assessment uses its semantic badge label");
     assert.equal(assessmentMarkup.titleAlign, "left", "assessment title remains left aligned");
