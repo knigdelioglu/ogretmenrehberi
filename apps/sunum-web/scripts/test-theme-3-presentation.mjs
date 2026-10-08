@@ -79,7 +79,7 @@ function verifySource() {
 
 function verifyFlows() {
   assert.equal(flowFiles.length, 18, "all Theme 3 flows are present");
-  assert.equal(flowSteps.length, 312, "all Theme 3 lesson steps are present");
+  assert.equal(flowSteps.length, 315, "all Theme 3 lesson steps are present");
   assert.ok(flows.every((flow) => flow.theme_id === "TEMA_03"));
   const stepIds = new Set();
   const reachedSources = new Set();
@@ -530,6 +530,53 @@ async function runProductionBrowserChecks(production) {
   }
 }
 
+function verifyPedagogicalEdits() {
+  const step = (id) => {
+    const result = flowSteps.find(({ step }) => step.id === id)?.step;
+    assert.ok(result, "Theme 3 step " + id + " exists");
+    return result;
+  };
+  assert.ok(answers.filter((item) => item.guidance?.trim()).length >= 125,
+    "contextual teacher guidance has been recovered for answer records");
+  const words = step("s191-spell").content.items;
+  assert.deepEqual(words, ["zatürree", "fevkalâdelik", "ilân", "telâştan", "eksilmiyen"],
+    "five printed spellings are presented without treating correct circumflex forms as errors");
+  assert.ok(!step("s230-q2").content.lead.includes("birebir kopya"),
+    "synthesis answer is not shown before student work");
+  assert.ok(!step("s233-q9").content.lead.includes("kronolojik"),
+    "multiple-choice hint does not announce the correct option");
+  assert.ok(step("s230-venn-reading").content.items.every((text) => !/Metin [123]'/.test(text)),
+    "Venn labels require student classification");
+  const biographicalPreview = JSON.stringify(step("s194-two-biographies").content);
+  assert.ok(!biographicalPreview.includes("Arayan Bulur") && !biographicalPreview.includes("1931"),
+    "biographical turning points follow reading rather than precede it");
+  const localAnswer = answerById.get("T3-P176-Q06");
+  assert.ok(localAnswer.answer_sections["Kendi şehrimden örnek üretme"]);
+  assert.ok(localAnswer.answer_sections["Eskişehir için örnek"]);
+  const opinion = answerById.get("T3-P215-Q01");
+  assert.ok(opinion.answer.startsWith("Örnek görüş:"));
+  assert.ok(opinion.answer_sections["Gerekçelendirilebilecek başka yaklaşımlar"].length >= 2);
+  assert.equal(answerById.get("T3-P177-COMP01").entry_type, "source_limited");
+  for (const [stepId, count] of [["s214-rubric", 7], ["s228-rubric", 6]]) {
+    const content = step(stepId).content;
+    const rubric = content.rubric;
+    assert.deepEqual(rubric.columns, ["Başlangıç düzeyinde", "Kabul edilebilir", "İyi", "Çok iyi"]);
+    assert.equal(rubric.rows.length, count);
+    assert.equal(rubric.min_points, count);
+    assert.equal(rubric.rows.reduce((sum, row) => sum + row.max_points, 0), 100);
+    assert.equal(rubric.total_points, 100);
+    assert.ok(content.sources.some((source) => source.url.endsWith(".docx")),
+      "official rubric source link is retained");
+    for (const row of rubric.rows) {
+      assert.equal(row.levels.length, 4);
+      assert.ok(row.levels.every((level, i) => level.label === rubric.columns[i] &&
+        /^\\d+[–-]\\d+$/.test(level.points) && level.description.trim().length > 12));
+      assert.equal(+row.levels[3].points.split(/[–-]/)[1], row.max_points);
+    }
+  }
+}
+
+verifyPedagogicalEdits();
 const sourceReport = verifySource();
 const flowReport = verifyFlows();
 const metadataReport = verifyMetadata();
