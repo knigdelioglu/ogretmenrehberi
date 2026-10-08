@@ -61,12 +61,18 @@ def scan_draft(record: dict, doc: dict) -> list[dict]:
             raise InputProblem("Invalid segment timestamps") from exc
         if not all(math.isfinite(x) for x in (start, end)) or start < 0 or end < start:
             raise InputProblem("Impossible segment timing")
-        if duration and end > duration + 2:
-            raise InputProblem("Segment exceeds known video duration")
+        # Whisper may hallucinate words or generate padded timestamps at the
+        # end of a video. Keep every raw segment for human inspection, but never
+        # treat speech outside the source as an ordinary ASR draft. Provenance
+        # mismatches and structurally impossible timestamps still fail closed.
         original_flags = s.get("review_flags")
         if not isinstance(original_flags, list) or not all(isinstance(v, str) for v in original_flags):
             raise InputProblem("Malformed machine-generated segment flags")
         flags = list(original_flags)
+        if duration and end > duration + 2:
+            flags.append("beyond_media_end_check_audio")
+            if start > duration:
+                flags.append("segment_starts_after_media_end_possible_hallucination")
         if not phrase.strip():
             flags.append("empty_text")
         if end - start > 18:
@@ -86,6 +92,7 @@ def scan_draft(record: dict, doc: dict) -> list[dict]:
             flags.append("literary_audio_every_line_needs_verification")
         flags = list(dict.fromkeys(flags))
         review.append({"index": i, "start": start, "end": end,
+                       "source_duration": duration,
                        "priority": "HIGH" if flags else "STANDARD", "flags": flags})
         previous_end = max(previous_end, end)
         previous_text = normalized
@@ -116,6 +123,11 @@ def generate_report(rows: list[dict]) -> str:
         if r["status"] == "INVALID_DRAFT":
             text.append("- [ ] Taslağın kaynak veya segment denetimi başarısız: " + r["error"])
             continue
+        if r["status"] == "ASR_DRAFT_TIMING_REVIEW":
+            text.append("**SÜRE TAŞMASI:** ASR'nin bazı bölümleri video süresini aşıyor. "
+                        "Bölümler silinmedi veya otomatik kırpılmadı. "
+                        "Özellikle son bölümleri özgün kayıttan kontrol edin; "
+                        "taşan konuşma gerçekte hiç söylenmemiş olabilir.")
         if r["file"] in SPECIAL:
             text.append("**Kontrol odağı:** " + SPECIAL[r["file"]])
         for s in r["segments"]:
@@ -158,12 +170,27 @@ def run(argv: list[str] | None = None) -> int:
                 try:
                     doc = json.loads(path.read_text(encoding="utf-8"))
                     row["segments"] = scan_draft(r, doc)
-                    row["status"] = "ASR_DRAFT_UNREVIEWED"
+                    has_overflow = any(
+                        "beyond_media_end_check_audio" in segment["flags"]
+                        for segment in row["segments"]
+                    )
+                    row["status"] = (
+                        "ASR_DRAFT_TIMING_REVIEW" if has_overflow else
+                        "ASR_DRAFT_UNREVIEWED"
+                    )
                 except (InputProblem, OSError, TypeError, KeyError, ValueError) as exc:
                     row["status"] = "INVALID_DRAFT"
                     row["error"] = str(exc).replace("|", "/").replace("\n", " ")
             rows.append(row)
-            print(f"{name}: {row['status']}, {len(row['segments'])} segments")
+            overruns = [
+                seg for seg in row["segments"]
+                if "beyond_media_end_check_audio" in seg["flags"]
+            ]
+            suffix = ""
+            if overruns:
+                maximum = max(seg["end"] - seg["source_duration"] for seg in overruns)
+                suffix = f", {len(overruns)} segment(s) beyond video end (max +{maximum:.2f}s)"
+            print(f"{name}: {row['status']}, {len(row['segments'])} segments{suffix}")
         if not args.status:
             report = output_dir / "_qr-audio-manual-review-queue.md"
             if report.exists() and not args.overwrite:

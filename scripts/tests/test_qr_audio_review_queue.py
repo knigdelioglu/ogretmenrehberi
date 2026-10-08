@@ -82,12 +82,57 @@ class PrivateListeningQueueTests(unittest.TestCase):
     def test_invalid_timing_or_reviewed_status_rejected(self):
         for segment in [
             dict(self.document["segments"][0], start_seconds=-1),
-            dict(self.document["segments"][0], end_seconds=250),
             dict(self.document["segments"][0], human_verified=True),
             dict(self.document["segments"][0], review_flags="invalid"),
         ]:
             with self.subTest(segment=segment):
                 doc = dict(self.document, segments=[segment, self.document["segments"][1]])
+                with self.assertRaises(queue.InputProblem):
+                    queue.scan_draft(self.record, doc)
+
+    def test_overflowed_segments_survive_with_high_priority(self):
+        # These five videos formerly showed INVALID_DRAFT and zero segments.
+        # The original timestamps and text must remain available for listening.
+        copy = dict(self.document)
+        copy["segments"] = [
+            self.document["segments"][0],
+            dict(self.document["segments"][1], end_seconds=93.2),
+        ]
+        segments = queue.scan_draft(self.record, copy)
+        self.assertEqual(len(segments), 2)
+        tail = next(s for s in segments if s["index"] == 2)
+        self.assertEqual(tail["end"], 93.2)
+        self.assertEqual(tail["priority"], "HIGH")
+        self.assertIn("beyond_media_end_check_audio", tail["flags"])
+        self.assertEqual(tail["source_duration"], 84)
+        copy["segments"][1] = dict(copy["segments"][1], start_seconds=89)
+        tail = next(s for s in queue.scan_draft(self.record, copy) if s["index"] == 2)
+        self.assertIn("segment_starts_after_media_end_possible_hallucination", tail["flags"])
+
+    def test_overflow_report_retains_segments_but_strict_fails(self):
+        doc = dict(self.document, segments=[
+            self.document["segments"][0],
+            dict(self.document["segments"][1], end_seconds=93.2),
+        ])
+        self.draft.write_text(json.dumps(doc), encoding="utf-8")
+        self.assertEqual(queue.run(self.args("--all", "--strict")), 2)
+        report = (self.folder / "_qr-audio-manual-review-queue.md").read_text(encoding="utf-8")
+        self.assertIn("ASR_DRAFT_TIMING_REVIEW", report)
+        self.assertIn("SÜRE TAŞMASI", report)
+        self.assertIn("Bölüm 2", report)
+        self.assertIn("beyond_media_end_check_audio", report)
+        self.assertNotIn("INVALID_DRAFT", report)
+        self.assertNotIn("Deneme cümlesi", report)
+        self.assertEqual(queue.run(self.args("--all", "--overwrite")), 0)
+
+    def test_nonfinite_and_negative_timestamp_remain_invalid(self):
+        for start, end in [(-1., 2.), (float("nan"), 3.),
+                           (2., float("inf")), (10., 3.)]:
+            with self.subTest(start=start, end=end):
+                doc = dict(self.document, segments=[
+                    dict(self.document["segments"][0],
+                         start_seconds=start, end_seconds=end),
+                ])
                 with self.assertRaises(queue.InputProblem):
                     queue.scan_draft(self.record, doc)
 
