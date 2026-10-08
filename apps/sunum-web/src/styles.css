@@ -2825,3 +2825,14 @@ button {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Tema 3 dereceli puanlama: yalnız rubric verisi taşıyan adımlara uygulanır. */
+.rubric-table-wrap { max-width: 100%; overflow-x: auto; padding-bottom: .35rem; }
+.rubric-matrix { width: 100%; min-width: 780px; border-collapse: collapse; font-size: clamp(.75rem, 1.12vw, .98rem); line-height: 1.38; }
+.rubric-matrix th, .rubric-matrix td { padding: .6rem .7rem; border: 1px solid var(--line, #b8bec8); text-align: left; vertical-align: top; }
+.rubric-matrix thead th { font-weight: 750; background: var(--surface-subtle, rgba(120, 120, 120, .12)); }
+.rubric-matrix tbody th { width: 18%; font-weight: 720; }
+.rubric-matrix td { width: 20.5%; }
+.rubric-matrix td strong { display: block; margin-bottom: .3rem; white-space: nowrap; }
+.rubric-matrix td span { display: block; }
+.rubric-total { margin: .7rem 0 0; font-size: .88em; opacity: .85; }
