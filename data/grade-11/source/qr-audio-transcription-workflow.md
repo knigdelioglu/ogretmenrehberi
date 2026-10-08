@@ -96,6 +96,27 @@ sources/local/qr-media/.venv/bin/python scripts/qr_audio_review_queue.py --all -
 
 `--strict` kipinde bu tür zaman-taşması bulunan kayıtlar **başarısız** sayılır; böylece zaman taşması sessizce başarıya dönüşmez. Normal rapor kipinde ise bölüm listesi korunur ve kullanıcıya hangi kısmın inceleneceği açıkça gösterilir.
 
+## Gerçek MP4 süresi ölçümü: son 30 saniye uyarısının açıklaması
+
+Beş videonun orijinal MP4 süresi `ffprobe` ile kontrol edildi; envanterle **tam eşleşiyor**. Her sorunlu ASR bölümünün ham uzunluğu yaklaşık **29,98 saniye**: bu, modelin son 30 saniyelik çalışma penceresinin zamanlarını gerçek video bitişine uyarlayamamasıyla **uyumludur**; kendi başına bütün sözlerin hayal ürünü olduğunu kanıtlamaz.
+
+| Video | MP4 süresi (sn) | Ham son ASR bölümü | Taşma (sn) |
+| --- | ---: | --- | ---: |
+| `19XU3SUD.mp4` | 143,88 | 120,00–149,98 | +6,10 |
+| `19XU4CVR.mp4` | 98,60 | 90,00–119,98 | +21,38 |
+| `19XU49JV.mp4` | 207,07 | 179,10–209,08 | +2,01 |
+| `19XU49LQ.mp4` | 429,00 | 423,68–453,66 | +24,66 |
+| `19XU3SW3.mp4` | 146,16 | 120,00–149,98 | +3,82 |
+
+Kontrol listesinin yeni gösterimi **Dinleme** aralığını MP4'ün gerçek bitişinde durdurur. **Ham ASR** aralığı ve toplam taşma süresi **ayrıca ve aynen** görünür. Taslak JSON/SRT zamanları, ses metinleri ve kaynak dosyaları değiştirilmez. Bölüm bütünüyle videonun sonrasına düşerse **Oynatılabilir ses yok** uyarısı gösterilir; o ifadeler işitsel kanıt kabul edilmez.
+
+```bash
+git pull --ff-only
+sources/local/qr-media/.venv/bin/python scripts/qr_audio_review_queue.py --all --overwrite
+```
+
+Bu beş videoda gerçek kayıt içindeki son bölümleri orijinal MP4 ile dinleyerek doğrulayın. Gerçek video sonrasındaki saniyelerden hiçbir konuşma/alıntı çıkarılamaz; videonun içinde başlayan 30 saniyelik bir ASR bölümünün **tamamı** ise otomatik olarak sahte kabul edilmez. `--strict` süre taşmalarını uyarı olarak değil, **tam doğrulama için engel** olarak saymaya devam eder.
+
 ## Öğretmen tarafından dinleyerek doğrulama
 
 1. **83. sayfa — Olvido:** Gerçek şiir okuyuşunu dinleyerek dize sınırları, ses tonu, vurgu, tempo, duraklama ve varsa müziği ayrı ayrı doğrulayın. Video girişindeki “Şairin Sesinden” yazısı sesin arşiv kökeninin bağımsız kanıtı değildir. Yanıt Q13'te görsel gözlemi ve işitsel kanıtı ayrı gösterin.
