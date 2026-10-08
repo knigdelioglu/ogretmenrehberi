@@ -156,7 +156,8 @@
         "İletişim, bir medenileşme hareketidir."
       ],
       "guidance": "Önce öğrenciden sözün kendisinde hangi iddianın bulunduğunu kendi cümlesiyle kurmasını isteyin. Ardından metinde veya video izlendi ise videoda gerçekten gördüğü bir dayanağı buldurup bunun hangi sonucu ve ne ölçüde desteklediğini sordurun. Evet/hayır yanıtıyla yetinmeyin; farklı ve sınırlı yorumları kanıt ile gerekçesine göre değerlendirin.",
-      "source_locator": "basılı s.66 / PDF s.67 — Metni Anlayalım soru 3"
+      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53; 01:14 ekran yazısı doğrulandı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Videonun 01:14 civarındaki alt bantta bu cümle görünmektedir; konuşmacının kelimesi kelimesine ses aktarımı doğrulanmamıştır."
     },
     {
       "question_id": "T1-P66-Q04",
@@ -234,21 +235,22 @@
       "printed_page": 67,
       "question_no": "8",
       "prompt_summary": "Videodaki öznel ve nesnel ifadeleri bulma ve katkılarını değerlendirme",
-      "answer": "Öznel ve nesnel ifadeleri videodan seçin; videoda söylenmiş gibi yeni cümleler üretmeyin. Nesnel ifade doğrulanabilir bir olguya, öznel ifade ise kişisel yorum veya değerlendirmeye dayanır.",
+      "answer": "Videonun alt bant yazılarında öznel ifadeye “Mektup, sevginin kanatlanmış hâlidir.” (yaklaşık 03:10), nesnel ifadeye “İlk e-posta 1971 yılında atıldı.” (yaklaşık 04:08) örnek verilebilir. İlk cümle kişisel yorum ve mecaz içerir; ikinci cümle tarihsel bir iddia bildirir ve doğruluğu araştırılarak sınanabilir. Bu örnekler ekranda yazılı olarak doğrulanmıştır; bütün sözlü anlatım henüz çözümlenmemiştir.",
       "answer_sections": {
         "Nesnel İfade Nasıl Tanınır?": {
           "Ölçüt": "Doğruluğu dış kaynaklarla sınanabilen tarih, sayı, tanım veya olgu bildirir.",
           "Metne Katkısı": "Bilgi verme, açıklama yapma ve anlatının doğrulanabilir zeminini güçlendirme.",
-          "Videodan örneğim": "[Videodan birebir ya da anlamı korunmuş kısa ifade]"
+          "Videodan örneğim": "Ekran yazısı (yaklaşık 04:08): “İlk e-posta 1971 yılında atıldı.” Bu cümlenin tarihsel doğruluğu dış kaynaklarla sınanabilir; nesnel oluşu doğru olduğu anlamına gelmez."
         },
         "Öznel İfade Nasıl Tanınır?": {
           "Ölçüt": "Kişisel değerlendirme, yorum, beğeni, eleştiri veya değer yargısı içerir.",
           "Metne Katkısı": "Yorum, bakış açısı ve tartışma alanı oluşturma.",
-          "Videodan örneğim": "[Videodan birebir ya da anlamı korunmuş kısa ifade]"
+          "Videodan örneğim": "Ekran yazısı (yaklaşık 03:10): “Mektup, sevginin kanatlanmış hâlidir.” Sevgi ve kanatlanma ilişkisi mecazlı, kişisel bir değerlendirmedir."
         }
       },
-      "guidance": "Her örnek için “Bu ifadeyi nesnel/öznel yapan nedir?” sorusunu sorun. Kitaptaki “İletişim, bir medenileşme hareketidir.” cümlesi ancak videoda gerçekten yer aldığı doğrulanırsa video örneği olarak kullanılmalıdır.",
-      "source_locator": "basılı s.67 / PDF s.68; QR video gerekli — QR-EBA-29BF4F293D53; local: sources/local/qr-media/QR-EBA-29BF4F293D53.mp4; video content review deferred"
+      "guidance": "İki cümlenin videoda **ekranda gösterilen yazılar** olduğunu belirtin; işitildiği veya kimin söylediği ayrıca doğrulanmadı. Öğrencilere nesnel ifadenin 'kesin doğru' değil 'doğrulanabilir' olduğunu hatırlatın. İsteyen öğrenciler farklı örnekleri videonun tamamından seçebilir.",
+      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53, 19XU49LL.mp4; 03:10 ve 04:08 ekran kanıtları: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md; tam ses transkripti henüz yapılmadı",
+      "explanation": "Ekran örnekleri kısmi doğrulandı. Sesli içerik ve videonun tamamı çözümlenmediğinden kaynak türü source_limited olarak korunur."
     },
     {
       "question_id": "T1-P67-Q09",

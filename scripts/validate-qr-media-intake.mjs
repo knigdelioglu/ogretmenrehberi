@@ -56,4 +56,36 @@ for (const id of ["T1-P53-Q01", "T1-P53-Q02"]) {
   assert.ok(entry.source_locator.includes(sek.review_notes_path), "Source evidence locator missing");
   assert.ok(entry.answer.includes("ön yarg"), "Expected scene-grounded communication barrier");
 }
+for (const [fileName, notePath] of [
+  ["19XU3SUD.mp4", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SUD.md"],
+  ["19XU3SW3.mp4", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SW3.md"],
+]) {
+  const record = intake.records.find((r) => r.file_name === fileName);
+  assert.ok(record, `Provisional media entry missing: ${fileName}`);
+  assert.equal(record.mapping_status, "provisional_png_and_visual_review");
+  assert.equal(record.existing_source_id, null, "Do not invent verified EBA identities");
+  assert.equal(record.review_notes_path, notePath);
+  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.ok(fs.readFileSync(path.join(root, notePath), "utf8").includes("ekran"));
+}
+
+const communicationBank = read("data/grade-11/source/teacher-book/theme-1/answer-bank/part-15-pages-64-67.json");
+for (const [sourceId, reviewFile] of [
+  ["QR-EBA-29BF4F293D53", "data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md"],
+  ["QR-EBA-BFB2729458DF", "data/grade-11/source/qr-review-notes/QR-EBA-BFB2729458DF.md"],
+]) {
+  const s = known.get(sourceId);
+  assert.ok(s, `Missing screen-reviewed EBA source: ${sourceId}`);
+  assert.equal(s.review_notes_path, reviewFile);
+  assert.equal(s.transcript_path, null, "Screen review must not claim an audio transcript");
+  assert.equal(s.dates.content_reviewed, null, "Partial review must not claim complete review");
+  assert.ok(fs.readFileSync(path.join(root, reviewFile), "utf8").includes("ekran"), "Screen evidence note missing");
+}
+const q8 = communicationBank.entries.find((e) => e.question_id === "T1-P67-Q08");
+assert.ok(q8, "Video dependent question 8 missing");
+assert.equal(q8.entry_type, "source_limited");
+assert.ok(q8.answer.includes("1971"), "Missing verified on-screen objective example");
+assert.ok(q8.answer.includes("kanatlanmış"), "Missing verified on-screen subjective example");
+assert.ok(q8.source_locator.includes("QR-EBA-29BF4F293D53.md"), "Quote provenance missing");
+
 console.log("QR media intake PASS: 18 unique files; 5 verified EBA/SHA matches, 12 provisional, 1 unresolved; Seksenler Q1–Q2 grounded.");
