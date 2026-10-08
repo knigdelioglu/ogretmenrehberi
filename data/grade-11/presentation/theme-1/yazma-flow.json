@@ -65,6 +65,7 @@
       "content": {
         "lead": "Yazmaya başlamadan önce amaç, alıcı, konu ve stratejiyi birbiriyle uyumlu hâle getirin.",
         "items": [
+          "Örnek e-postayı açmadan önce kendi amacınızı ve alıcınızı seçin: örneğin bir etkinlik başvurusu veya kulüp duyurusu da hazırlayabilirsiniz.",
           "Yazma amacınızı belirleyin: bilgilendirme, ikna etme, resmî talep vb.",
           "Hedef kitleyi ve alıcıyı belirleyin.",
           "Yazma sürecini aksatabilecek engelleri ortadan kaldırın.",
@@ -154,7 +155,8 @@
           "Söz varlığını bağlama; dil ve üslubu amaç ile alıcıya uygun seçin.",
           "Yazmayı başlatma, sürdürme ve bitirme ifadelerini etkili kullanın.",
           "Yazım, noktalama, bağdaşıklık ve Türkçenin özenli kullanımını kontrol edin.",
-          "Toplumsal hassasiyetlere ve olumlu değerlere aykırı ifadelerden kaçının."
+          "Toplumsal hassasiyetlere ve olumlu değerlere aykırı ifadelerden kaçının.",
+          "Hazır e-posta örneğini kullanırsanız hangi ölçütü nasıl karşıladığını açıklayın; aynı konuyu veya cümleleri kopyalamak zorunda değilsiniz."
         ]
       }
     },
@@ -186,7 +188,8 @@
           "Söz varlığını hedef kitleye ve amaca uygun kullandım.",
           "Düşünceyi geliştirme yollarından yararlandım.",
           "İçeriğe uygun bir başlık belirledim.",
-          "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim."
+          "Düşüncelerimi özgün ve tutarlı bir üslupla ifade ettim.",
+          "“Kısmen” veya “Hayır” işaretlediğiniz tek bir ölçütü seçin; taslağınızdan kanıt gösterip yapacağınız bir düzeltmeyi belirtin."
         ],
         "scale": [
           "Evet",
@@ -220,7 +223,7 @@
       "prompt": "E-postanızı değerlendirme ölçütleriyle gözden geçirin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "E-posta rubriğindeki her ölçüt, dört başarı düzeyi ve puan aralığıyla gösterilmiştir.",
+        "lead": "Bu örnek puanlama rubriği, ders kitabı s.78'de QR ile verilen resmî dereceli puanlama anahtarının doğrulanmış kopyası değildir.",
         "sections": [
           {
             "title": "Başlangıç düzeyinde · 1–4 puan",
@@ -252,7 +255,7 @@
           },
           {
             "title": "Çok iyi · 15–18 puan",
-            "body": "Ölçüt: Dil ve üslup (18 puan). Metinde kullanılan üslup oldukça başarılır"
+            "body": "Ölçüt: Dil ve üslup (18 puan). Metinde kullanılan üslup oldukça başarılıdır"
           },
           {
             "title": "Başlangıç düzeyinde · 1–4 puan",
@@ -329,7 +332,7 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=78"
           },
           {
-          "label": "Kaynak: 19XU4J2K.docx",
+            "label": "Kaynak: 19XU4J2K.docx",
             "url": "assets/assessment-documents/19XU4J2K.docx",
             "download": true
           },
@@ -340,6 +343,7 @@
           }
         ],
         "items": [
+          "Resmî puanlama için önce kitaptaki QR anahtarı esas alınır; buradaki düzeyler taslağı geliştirmek amacıyla örnektir.",
           "Öz değerlendirme formunda “Kısmen” veya “Hayır” işaretlediğiniz bir ölçütü seçin.",
           "Taslağınızdan bu ölçüte ilişkin belirli bir sözcük, cümle ya da bölüm gösterin.",
           "Kanıta dayanarak tek bir somut düzeltme hedefi belirleyin; gerekirse eksik bilgiyi araştırın veya destek alın.",

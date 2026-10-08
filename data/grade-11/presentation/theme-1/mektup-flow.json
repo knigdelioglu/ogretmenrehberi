@@ -196,6 +196,19 @@
       }
     },
     {
+      "id": "s43-q1",
+      "source_record_id": "T01-S0034",
+      "answer_id": "T1-P43-Q01",
+      "layout": "question",
+      "density": "large",
+      "prompt": "Kaplan'ın mektubu hangi mektup türünü örnekler? Gerekçelendirin.",
+      "prompt_mode": "FLOW_OVERRIDE",
+      "content": {
+        "lead": "Dört mektup türünün ölçütlerini kullanın. Önce kendi tür tahmininizi yapın; Kaplan'ın hitabından ve roman değerlendirmelerinden iki kanıt seçerek gerekçelendirin."
+      },
+      "thinking": "Önce metindeki hitap ve edebiyat üzerine değerlendirmeleri ayrı ayrı işaretleyin; tür yargınızı bu iki kanıttan sonra kurun."
+    },
+    {
       "id": "s43-private-letter",
       "source_record_id": "T01-S0034",
       "layout": "comparison",
@@ -236,29 +249,6 @@
           }
         ]
       }
-    },
-    {
-      "id": "s43-q1",
-      "source_record_id": "T01-S0034",
-      "answer_id": "T1-P43-Q01",
-      "layout": "question",
-      "density": "large",
-      "prompt": "Kaplan'ın mektubu hangi mektup türünü örnekler? Gerekçelendirin.",
-      "prompt_mode": "FLOW_OVERRIDE",
-      "content": {
-        "lead": "S.42'deki mektup türlerini amaç, muhatap ve içerik bakımından karşılaştırarak bu metnin hangi türe daha yakın olduğunu gerekçelendirin.",
-        "sections": [
-          {
-            "title": "Resmî mektup",
-            "body": "Kurumlar ya da kişiler ile kurumlar arasındaki yazışmalardır. Açık, ciddi ve konuya dönük bir dil kullanılır."
-          },
-          {
-            "title": "İş mektubu",
-            "body": "Ticari kişi ve kuruluşların iş ilişkileri için yazdığı mektuplardır. Gereksiz ayrıntılardan kaçınılır; amaç ve istek açıkça belirtilir."
-          }
-        ]
-      },
-      "thinking": "Özel ve edebî mektup için sayfada verilen ölçütleri karşılaştırıp mektuptaki hitap, konu ve dil örneklerini bu ölçütlerle sınayın."
     },
     {
       "id": "s43-q2",
@@ -337,11 +327,11 @@
       "prompt": "Örnek beğeni ölçütleri — Önce kendi ölçütlerinizi belirleyin; ardından aşağıdaki örneklerle karşılaştırın.",
       "prompt_mode": "FLOW_OVERRIDE",
       "content": {
-        "lead": "Kitaptaki örnek tabloda dört ölçütü kendiniz belirlemeniz için boş bırakılmış; verilen tek örnek ölçüt “Yalnızlık”tır.",
+        "lead": "Kitaptaki örnek beğeni ölçütü “Yalınlık”tır. Önce kendi ölçütlerinizi belirleyin, ardından bu örnekle karşılaştırın.",
         "sections": [
           {
             "title": "Kitaptaki örnek ölçüt",
-            "body": "Yalnızlık"
+            "body": "Yalınlık"
           }
         ]
       }
@@ -366,7 +356,7 @@
       "layout": "structure",
       "sections_layout": "letter",
       "content": {
-        "lead": "Önce şiirin bu kısa bölümünü okuyun; tam şiir ve yazma yönergesi ders kitabının aynı sayfasında.",
+        "lead": "Şiirin tamamını s.46'dan okuyun; şiirdeki duygu ve imgelerden hareketle aynı içerik çizgisini taşıyan özgün bir mektup yazın.",
         "sections": [
           {
             "title": "Geri Gelen Mektup — Hüseyin Nihâl Atsız",
@@ -378,6 +368,11 @@
             "label": "Ders kitabı s.46 — şiirin tamamını ve yönergeyi aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=46"
           }
+        ],
+        "items": [
+          "Şiirdeki iki farklı imgeyi veya duygu ifadesini seçin; şiirde neyi anlattıklarını kendi sözlerinizle açıklayın.",
+          "Mektubun muhatabını belirleyip bu iki unsuru hitap, gelişme ve sonuç içinde düzyazı cümlelerine dönüştürün.",
+          "Metni kendi beğeni ölçütlerinizle (ör. yalınlık, içtenlik) kontrol edin; şiiri dize dize aktarmayın."
         ]
       },
       "thinking": "Şiirde anlamı taşıyan imge ve seslenişleri seçip bunları mektubun bölümlerine kendi muhatap ve anlatım tercihinizle aktarın."

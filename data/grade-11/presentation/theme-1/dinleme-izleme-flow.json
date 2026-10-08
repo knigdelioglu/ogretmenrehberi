@@ -9,7 +9,9 @@
     "from": "T01-S0064",
     "to": "T01-S0101"
   },
-  "additional_source_records": ["T01-S0130"],
+  "additional_source_records": [
+    "T01-S0130"
+  ],
   "steps": [
     {
       "id": "s59-q1",
@@ -131,6 +133,10 @@
             "label": "Ders kitabı s.64 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=64"
           }
+        ],
+        "items": [
+          "Önce çok modlu metni izleyin; gerçekten duyduğunuz bir sözü veya gördüğünüz bir ayrıntıyı not edin.",
+          "Bu kanıtı konu, dil kullanımı veya iletişim etkisiyle ilişkilendirerek yorumlayın."
         ]
       },
       "answer_id": "T1-P64-PERF03"

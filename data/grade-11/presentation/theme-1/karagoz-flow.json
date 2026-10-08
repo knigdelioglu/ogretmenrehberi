@@ -147,7 +147,9 @@
         "items": [
           "Karagöz oyunundaki dil ve anlatım, yardımcı roller ve beden dili üzerine bireysel olarak düşünün.",
           "Sıra arkadaşınızla fikirlerinizi karşılaştırın ve örtüşen görüşleri belirleyin.",
-          "Ortak düşüncelerinizi sınıfla paylaşın."
+          "Ortak düşüncelerinizi sınıfla paylaşın.",
+          "Okuma amacınızı belirleyin; s.18–24'teki Yazıcı metnine 2–3 dakika göz gezdirin. Henüz rollere ayırarak okumayın.",
+          "Soruları cevaplamadan önce metinden bir eski söyleyişi ve bir yanlış anlamayı işaretleyin; ayrıntılı rol okumasını s.18 aşamasında yapın."
         ]
       }
     },
@@ -246,7 +248,12 @@
       "prompt": "Kelime duvarı",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Söz varlığı çalışmasının sonunda sınıfça bir kelime duvarı oluşturun."
+        "lead": "Söz varlığı çalışmasının sonunda sınıfça bir kelime duvarı oluşturun.",
+        "items": [
+          "Bir sözcük seçip metinde geçtiği kısa sözü yazın.",
+          "Bu sözdeki bağlam anlamını ve günlük Türkçedeki uygun karşılığını ekleyin.",
+          "Sözcüğün yanlış anlamaya veya dil mizahına katkısı varsa bir cümleyle açıklayın."
+        ]
       }
     },
     {
@@ -258,19 +265,19 @@
         "sections": [
           {
             "title": "Mukaddime",
-            "body": "Hacivat'ın perdeye gelerek oyunu başlattığı giriş bölümüdür."
+            "body": "Hacivat'ın semai söyleyerek perdeye geldiği, perde gazelinin duyulduğu giriş bölümüdür."
           },
           {
             "title": "Muhavere",
-            "body": "Karagöz ile Hacivat'ın söyleştiği; yanlış anlama ve söz oyunlarının öne çıktığı bölümdür."
+            "body": "Karagöz ve Hacivat'ın karşılıklı konuştuğu bölümdür. “Sinsileni sansar boğsun!” gibi yanlış anlamalar ve söz oyunları belirgindir."
           },
           {
             "title": "Fasıl",
-            "body": "Asıl olayın gösterildiği ve diğer tiplerin de oyuna katıldığı bölümdür."
+            "body": "Asıl olayın geliştiği bölümdür: Yazıcı'da Karagöz'ün dükkânına mektup veya başka yazı işleri için farklı tipler gelir."
           },
           {
             "title": "Bitiş",
-            "body": "Kısa kapanış konuşmasının yapıldığı, kusurlar için özür dilenip sonraki oyunun duyurulabildiği bölümdür."
+            "body": "Kısa kapanışın yapıldığı bölümdür; “Her ne kadar sürc-i lisan ettikse afola!” gibi özür ve sonraki oyun duyurusu bulunabilir."
           }
         ],
         "note": "Kitap örnekleri incelendikten sonra bu şemayı kısa hafıza desteği olarak kullanın.",
@@ -279,6 +286,9 @@
             "label": "Ders kitabı s.26 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=26"
           }
+        ],
+        "items": [
+          "Hızlı yoklama: Hacivat'ın semai söyleyerek perdeye gelmesi hangi bölüme aittir? Yanıtınızı kitaptaki örnekle doğrulayın."
         ]
       }
     },
@@ -312,25 +322,15 @@
       "layout": "comparison",
       "density": "compact",
       "content": {
-        "lead": "Tip–karakter ayrımını “Yazıcı” metninden seçtiğiniz kanıtlarla uygulayın.",
+        "lead": "Yazıcı'daki tiplerin söz varlığını sosyal statü ve eğitim durumlarıyla ilişkilendirin; yorumunuzu doğrudan repliklerle sınayın.",
         "items": [
-          "Karagöz veya Hacivat için metinden en az iki söz ya da davranış kanıtı seçin.",
-          "Seçtiğiniz kanıtların kişiyi temsilî/kalıplaşmış bir tipe mi, yoksa bireysel ve çok yönlü bir karaktere mi yaklaştırdığını tartışın.",
-          "Sonucunuzu gerekçelendirin; seçtiğiniz kişinin karakter yönünün güçlenmesi için iç dünya, çelişki, geçmiş, seçim veya değişim bakımından hangi ayrıntıların eklenebileceğini söyleyin."
+          "Karagöz, Hacivat ve Çelebi'nin konuşmalarından birbirinden farklı iki söz seçin.",
+          "Sözcük ve söyleyiş farklarının sosyal çevre veya eğitimle ilgili hangi olası ipuçlarını verdiğini açıklayın.",
+          "Metnin doğrudan gösterdiği sözle yalnızca tahmin ettiğiniz eğitim ya da toplumsal konumu ayırın; kesin biyografi üretmeyin."
         ],
-        "sections": [
-          {
-            "title": "Tip",
-            "body": "Belirgin ve tekrarlanan özellikleriyle bir toplumsal kesimi, mesleği, yöresel kimliği ya da davranış biçimini temsil eder; temsil işlevi bireysel psikolojik ayrıntının önündedir."
-          },
-          {
-            "title": "Karakter",
-            "body": "Bireysel yönleri, iç dünyası, çelişkileri, geçmişi ve seçimleri daha ayrıntılı işlenir; tek bir temsil özelliğine indirgenmesi daha zordur."
-          }
-        ],
-        "note": "Bu karşılaştırma, s.27–29’daki tip–karakter ayrımını pekiştirmek için eklenmiştir."
+        "note": "İsteğe bağlı pekiştirme: Soru yanıtlandıktan sonra temsilî tip ile çok yönlü karakter ayrımı ayrıca kısaca tartışılabilir; ana sorunun yerini almamalıdır."
       },
-      "thinking": "Her tipin kullandığı bir sözü seçin; sözün geçtiği bağlamı ve çevresindekilerin tepkisini yorumunuza dayanak yapın."
+      "thinking": "Bir ağır/eskimiş söyleyişle gündelik halk söyleyişini karşılaştırın; hangi sosyal veya eğitimsel çıkarımların metinle desteklendiğini, hangilerinin tahmin olduğunu ayırın."
     },
     {
       "id": "s28-q2",
@@ -649,6 +649,10 @@
           {
             "title": "Değerlendirmeden sonra",
             "body": "“Kısmen” veya “Hayır” işaretlediğiniz becerileri gözden geçiriniz; araştırarak veya öğretmeninizden destek alarak eksiklerinizi tamamlayınız. Bir grup arkadaşınızın çalışmasını kitaptaki karekodda verilen Akran Değerlendirme Formu ile değerlendiriniz."
+          },
+          {
+            "title": "Bir sonraki çalışmaya aktarın",
+            "body": "“Kısmen” veya “Hayır” seçtiğiniz bir ölçütü belirleyin; kendi çalışmanızdan bir kanıt gösterin ve sonraki grup etkinliğinde uygulayacağınız tek bir düzeltme yazın."
           }
         ],
         "sources": [

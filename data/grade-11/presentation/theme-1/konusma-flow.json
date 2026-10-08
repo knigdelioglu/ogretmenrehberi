@@ -20,8 +20,8 @@
       "content": {
         "lead": "Bu bölümdeki ilk sorular videodaki sözlü iletişim engellerine dayanır. Karekod erişilebiliyorsa videoyu izleyin; erişilemiyorsa videoya özgü davranış, söz veya sahne ayrıntısını kesinleştirmeyin.",
         "items": [
-          "İzlerken iletişimi bozan davranışları kısa notlarla kaydedin.",
-          "Her gözlemi iletişime etkisiyle eşleştirin."
+          "İzlerken iletişimi bozan bir davranışı veya ifadeyi gerçekten gözlediğiniz biçimiyle not edin.",
+          "Bu somut kanıttan hareketle iletişim engelini adlandırın ve mesaj üzerindeki olası etkisini yorumlayın."
         ],
         "sources": [
           {
@@ -69,6 +69,7 @@
       "content": {
         "lead": "Sözlü iletişim engellerini konu alan canlandırmayı uygulamadan önce planlama kararlarını tamamlayın. Bu aşama hazırlık sürecidir; nihai drama performans puanından ayrıdır.",
         "items": [
+          "Örnek planı açmadan önce grubunuzun kendi sahne konusunu, muhatabını ve iletişim engelini seçin; örnekler zorunlu senaryo değildir.",
           "Gruplara ayrılın; konuşmanın konusunu ve amacını belirleyin.",
           "Gerekli gözlem, inceleme ve araştırmayı yapın.",
           "Kullanacağınız araçları ve canlandırma biçimini belirleyin.",
@@ -248,6 +249,12 @@
           "Evet",
           "Kısmen",
           "Hayır"
+        ],
+        "sections": [
+          {
+            "title": "Sonraki prova için tek hedef",
+            "body": "“Kısmen” veya “Hayır” seçtiğiniz bir ölçütü bulun. Canlandırmanızdan bir kanıtla nedenini açıklayın ve bir sonraki provada yapacağınız tek somut değişikliği yazın."
+          }
         ]
       },
       "answer_id": "T1-P58-PERF01",
@@ -265,7 +272,7 @@
       "prompt": "Sınıf arkadaşlarınızın çalışmasına geri bildirim verin.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Arkadaşınızın grup canlandırmasını formdaki ölçütlere göre gözleyin; her satırda tek bir seçenek işaretleyin.",
+        "lead": "Akran değerlendirmesinde gözlediğiniz çalışmadan kanıt gösterin. Ders kitabının s.58'deki QR formu ile burada sunulan örnek geri bildirim maddelerinin birebir aynı olduğu doğrulanmamıştır.",
         "note": "Akran formunun tam maddeleri ve puan ağırlıkları QR içeriği incelenmeden bilinemez; görünmeyen ayrıntıları tahmin etmeyin.",
         "items": [
           "Sözlü iletişim engellerine dair araştırma yaparak bilgi topladı.",
@@ -312,7 +319,7 @@
       "prompt": "İletişim Engelleri drama performansı — ölçüt ve puan düzeyleri",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her ölçüt ve dört puan düzeyini inceleyerek sunumunuzu gözden geçirin.",
+        "lead": "Bu, canlandırma için hazırlanmış örnek puanlama rubriğidir. Kitabın s.58 QR anahtarındaki ölçüt ve puanların birebir aktarımı olduğu doğrulanmamıştır.",
         "sections": [
           {
             "title": "Başlangıç düzeyinde · 1–2 puan",
@@ -430,6 +437,10 @@
             "url": "assets/assessment-documents/35-ogrenci-rubrik-puanlama.xlsx",
             "download": true
           }
+        ],
+        "items": [
+          "Resmî değerlendirme yapılacaksa önce ders kitabı s.58'deki QR dereceli puanlama anahtarını kullanın.",
+          "Buradaki düzeyleri ise çalışmayı geliştirmek için isteğe bağlı örnek kontrol ölçütleri olarak okuyun."
         ]
       }
     },

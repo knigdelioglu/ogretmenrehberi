@@ -60,6 +60,34 @@ function collectPresentationText(value, out = []) {
   return out;
 }
 
+
+/* Tema 1 içerik/pedagoji koruma kontrolleri (2026-10-08). */
+const theme1FlowRoot = path.join(repoRoot, "data/grade-11/presentation/theme-1");
+const theme1AnswerRoot = path.join(repoRoot, "data/grade-11/source/teacher-book/theme-1/answer-bank");
+const readTheme1Json = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
+const theme1Mektup = readTheme1Json(path.join(theme1FlowRoot, "mektup-flow.json")).steps;
+const theme1Karagoz = readTheme1Json(path.join(theme1FlowRoot, "karagoz-flow.json")).steps;
+const theme1Speaking = readTheme1Json(path.join(theme1FlowRoot, "konusma-flow.json")).steps;
+const theme1Writing = readTheme1Json(path.join(theme1FlowRoot, "yazma-flow.json")).steps;
+const theme1Get = (steps, id) => steps.find((step) => step.id === id);
+assert.equal(theme1Get(theme1Mektup, "s46-q1").content.sections[0].body, "Yalınlık");
+assert.ok(theme1Get(theme1Mektup, "s46-q1").content.lead.includes("Yalınlık"));
+assert.ok(theme1Get(theme1Karagoz, "s17-process").content.items.join(" ").includes("göz gezdirin"));
+assert.ok(theme1Get(theme1Karagoz, "s28-q1").content.lead.includes("söz varlığını"));
+assert.ok(theme1Mektup.findIndex((step) => step.id === "s43-q1") < theme1Mektup.findIndex((step) => step.id === "s43-private-letter"));
+assert.ok(theme1Mektup.findIndex((step) => step.id === "s43-q1") < theme1Mektup.findIndex((step) => step.id === "s43-literary-letter"));
+assert.ok(theme1Get(theme1Mektup, "s46-q4").content.items.some((item) => item.includes("beğeni ölçütlerinizle")));
+const theme1Vocab = readTheme1Json(path.join(theme1AnswerRoot, "part-02-pages-25-29.json")).entries;
+assert.ok(theme1Vocab.find((e) => e.question_id === "T1-P25-Q02").answer_sections.Silsile.includes("soy / sülale"));
+const theme1Bottle = readTheme1Json(path.join(theme1AnswerRoot, "part-11-pages-48-50.json")).entries.find((e) => e.question_id === "T1-P48-Q01");
+assert.ok(theme1Bottle.answer_sections["Kitap haberinin doğrudan belirttikleri"]);
+assert.ok(theme1Bottle.answer_sections["Bu etkinlikte benimsenen yorum"]);
+for (const step of [theme1Get(theme1Speaking, "s59-rubric"), theme1Get(theme1Writing, "s78-rubric")]) {
+  assert.match(step.content.lead, /QR|resmî/);
+  assert.match(step.content.lead, /örnek/);
+}
+assert.ok(!JSON.stringify(theme1Get(theme1Writing, "s78-rubric")).includes("başarılır"));
+
 const forbiddenPresentationMeta = [
   /öğrencinin[^\n]*(?:cevap|yanıt|görüş|kabul|tamamlam)/i,
   /öğrenci(?:ler)?[^\n]*(?:kabul edilir|kabul edilebilir|beklenir|tamamlamalıdır)/i,
