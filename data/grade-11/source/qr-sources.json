@@ -38,11 +38,12 @@
         }
       ],
       "transcript_path": null,
-      "review_notes_path": null,
-      "work_status": "downloaded_metadata_verified_content_review_deferred",
+      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md",
+      "work_status": "partially_reviewed_user_scene_summary_audio_not_transcribed",
       "remaining_gaps": [
-        "Video içeriği kullanıcı tarafından daha sonra incelenecek; videoya bağlı yanıtlar içerik bakımından doğrulanmış sayılmamalıdır."
-      ]
+        "Üç sahnenin olay anlatımı kullanıcı izleme notuna dayanır; konuşmaların birebir ses dökümü, kesin zaman damgaları ve sahne doğrulaması eksiktir."
+      ],
+      "content_review_basis": "user_observed_scene_summary_plus_sampled_frames_not_verbatim"
     },
     {
       "source_id": "QR-EBA-29BF4F293D53",
