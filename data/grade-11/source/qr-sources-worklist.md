@@ -27,6 +27,8 @@ Aşağıdaki üç kaynak için **kitapta bulunan özgün EBA QR hedefi doğrulan
 | 140 | `19XU49JV.mp4` — Âşık Atışması | [İki saz icracısının nöbetleşe icrası, seyirci tepkisi](qr-review-notes/UNVERIFIED-19XU49JV.md); kelime sorusu ses dökümü bekler | Şiir dizeleri, kelimelerin işitsel bağlamı, MP4 kökeni |
 | 141 | `19XU49MG.mp4` — Âşıklık Geleneği | [Söyleşi, saz ve arşiv görüntüleri](qr-review-notes/UNVERIFIED-19XU49MG.md); s.141 metin soruları video görüşüyle karıştırılmadı | Konuşulan fikirlerin tam dökümü, MP4 kökeni |
 
+| 159 | `19XU49MB.mp4` — Göktürklerin Dirilişi | [İlteriş Kutluğ Kağan, Kül Tigin, Bilge Kağan ve Tonyukuk ekran etiketleri](qr-review-notes/UNVERIFIED-19XU49MB.md); Q08 karşılaştırmasına kısmi görsel kanıt eklendi | Sesli anlatım, ekranda gösterilen tarihler ve MP4 kökeninin doğrulanması |
+
 ## Kaynak güvenliği
 
 - `qr-sources.json` yalnız EBA kimliği/QR hedefi doğrulanmış kaynakların kanonik kaydıdır.
