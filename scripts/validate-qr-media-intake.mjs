@@ -256,4 +256,45 @@ for(const id of ["T4-P307-SL13","T4-P307-SL14"])
   assert.ok(q4.get(id).answer.includes("ses") || q4.get(id).answer.includes("transkript"),
     "Aidiyet answer must not assign unverified motives to people");
 
+// Pages 43 and 83 are confirmed EBA/SHA videos with visual frame evidence.
+// A verified binary is NOT a verified narration, a precise time-aligned poem,
+// or evidence that the page-43 Kaplan letter was discussed in the documentary.
+for (const [fileName, page, sourceId, qrId, noteName, visible] of [
+  ["19XU49ME.mp4", 43, "QR-EBA-E43890DFD82A",
+    "e43890dfd82a3b5c7823d3b0fba2b627", "QR-EBA-E43890DFD82A.md",
+    "Abdülhak Hâmid'in Mektupları"],
+  ["OGM2025TDE118312.mp4", 83, "QR-EBA-2952F505E3A7",
+    "2952f505e3a7923fe38ce31c2bd92871", "QR-EBA-2952F505E3A7.md",
+    "ŞAİRİN SESİNDEN"],
+]) {
+  const record = intake.records.find(r => r.file_name === fileName);
+  const canonicalSource = known.get(sourceId);
+  assert.ok(record && canonicalSource, `QR EBA source absent: ${fileName}`);
+  assert.equal(record.printed_page, page);
+  assert.equal(record.existing_source_id, sourceId);
+  assert.equal(record.book_qr.eba_content_id, qrId);
+  assert.equal(record.book_qr.media_binary_identity, "sha256_matches_earlier_eba_verified_source");
+  assert.equal(record.sha256, canonicalSource.local_file.sha256);
+  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.equal(canonicalSource.transcript_path, null);
+  assert.equal(canonicalSource.work_status,
+    "partially_reviewed_verified_media_visual_only_audio_not_transcribed");
+  assert.equal(canonicalSource.content_review_basis,
+    "sampled_video_frames_with_timecodes_not_audio");
+  assert.equal(record.visual_review, "time_stamped_sampled_frames");
+  const notePath = "data/grade-11/source/qr-review-notes/" + noteName;
+  assert.equal(record.review_notes_path, notePath);
+  assert.equal(canonicalSource.review_notes_path, notePath);
+  const note = fs.readFileSync(path.join(root, notePath), "utf8");
+  assert.ok(note.includes(visible), `Specific visual evidence missing: ${visible}`);
+  assert.ok(note.includes("Ses") || note.includes("ses"), "Audio uncertainty must be explicit");
+  assert.ok(note.includes("s." + page), "Printed page context must be explicit");
+}
+const t1Page43 = read("data/grade-11/source/teacher-book/theme-1/answer-bank/part-09-pages-43-44.json");
+const t1Page83 = read("data/grade-11/source/teacher-book/theme-1/answer-bank/part-20-pages-79-83.json");
+assert.equal(t1Page43.entries.find(e => e.question_id === "T1-P43-Q01")?.entry_type,
+  "question_answer", "Mektup type must remain based on Kaplan's printed text");
+assert.equal(t1Page83.entries.find(e => e.question_id === "T1-P83-Q13")?.entry_type,
+  "source_limited", "Olvido audio-sensitive question must stay source_limited");
+
 console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");

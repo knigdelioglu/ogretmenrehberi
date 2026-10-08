@@ -21,9 +21,9 @@
       "duration_seconds": 284.633333,
       "existing_source_id": "QR-EBA-E43890DFD82A",
       "mapping_status": "verified_existing_eba_registry_and_sha256",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "evidence_scope": "verified_eba_sha256_file_plus_partial_visual_review_audio_untranscribed",
       "book_qr": {
         "printed_page": 43,
         "pdf_page": 44,
@@ -33,7 +33,9 @@
         "observed_book_label": "mektup türü videosu",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-E43890DFD82A.md",
+      "media_content_observation": "sampled_stills_and_opening_text_without_audio_verification"
     },
     {
       "file_name": "19XU49K2.mp4",
@@ -137,9 +139,9 @@
       "duration_seconds": 83.220317,
       "existing_source_id": "QR-EBA-2952F505E3A7",
       "mapping_status": "verified_existing_eba_registry_and_sha256",
-      "visual_review": "sampled_frames_only",
+      "visual_review": "time_stamped_sampled_frames",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "evidence_scope": "verified_eba_sha256_file_plus_partial_visual_review_audio_untranscribed",
       "book_qr": {
         "printed_page": 83,
         "pdf_page": 84,
@@ -149,7 +151,9 @@
         "observed_book_label": "Olvido videosu",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
-      }
+      },
+      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-2952F505E3A7.md",
+      "media_content_observation": "sampled_stills_and_opening_text_without_audio_verification"
     },
     {
       "file_name": "19XU49LO.mp4",
