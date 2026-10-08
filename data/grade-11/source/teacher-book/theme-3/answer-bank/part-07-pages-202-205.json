@@ -273,7 +273,7 @@
       "printed_page": 203,
       "question_no": "Üç örneğin ayrımını hangi özellik belirler?",
       "prompt_summary": "Üç örneğin ayrımını hangi özellik belirler?",
-      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer": "Yaşam çizgisi, görevler, eserler ve doğrulanabilir bilgiler öne çıkar.",
       "answer_sections": {
         "Yönerge": "Kitaptaki Bilgi Köşesi ve üç örneği esas alın.",
         "Çözüm": {
@@ -282,7 +282,8 @@
           "Biyografik roman": "Gerçek bir yaşamdan hareket eder; romanın anlatı ve kurgu imkânlarını kullanır."
         }
       },
-      "source_locator": "basılı s.203 — Üç örneğin ayrımını hangi özellik belirler?"
+      "source_locator": "basılı s.203 — Üç örneğin ayrımını hangi özellik belirler?",
+      "guidance": "Üç biyografi örneğini önce bağımsız okutup tür ayrımını öğrencilerin bulduğu göstergelerle kurun."
     },
     {
       "question_id": "T3-P204-FLOW-S204_Q1_FIRST",
@@ -290,7 +291,7 @@
       "printed_page": 204,
       "question_no": "Karşılaştırma 1/2 — İçerik, tür, yapı ve dönem ölçütlerini doldurunuz.",
       "prompt_summary": "Karşılaştırma 1/2 — İçerik, tür, yapı ve dönem ölçütlerini doldurunuz.",
-      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer": "Kurmaca romanın kişiler, olaylar ve kültürel bağlamla kurduğu dünyadan kanıt gösterin.",
       "answer_sections": {
         "Yönerge": "Kitaptaki karşılaştırma tablosunu iki sütun hâlinde ele alın.",
         "Çözüm": {
@@ -298,7 +299,8 @@
           "Mehmet Âkif Ersoy": "Gerçek yaşam çizgisi, eser ve tarih bilgilerini kaynak olarak kullanın."
         }
       },
-      "source_locator": "basılı s.204 — Karşılaştırma 1/2 — İçerik, tür, yapı ve dönem ölçütlerini doldurunuz."
+      "source_locator": "basılı s.204 — Karşılaştırma 1/2 — İçerik, tür, yapı ve dönem ölçütlerini doldurunuz.",
+      "guidance": "İki metnin karşılaştırmasında her ölçüt için en az birer kaynak dayanağı isteyin."
     },
     {
       "question_id": "T3-P204-FLOW-S204_Q1_SECOND",
@@ -306,7 +308,7 @@
       "printed_page": 204,
       "question_no": "Karşılaştırma 2/2 — Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz.",
       "prompt_summary": "Karşılaştırma 2/2 — Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz.",
-      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer": "Kişi, olay, mekân ve zaman kurmaca bir bütün oluşturur.",
       "answer_sections": {
         "Yönerge": "İki metnin benzer bir yaşam–kültür ilişkisini farklı anlatma yollarıyla kurabildiğini tartışın.",
         "Çözüm": {
@@ -315,7 +317,8 @@
           "Ortak tartışma": "Kişi ve yaşadığı toplum arasındaki bağ iki metinde hangi farklı anlatımlarla görünür?"
         }
       },
-      "source_locator": "basılı s.204 — Karşılaştırma 2/2 — Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz."
+      "source_locator": "basılı s.204 — Karşılaştırma 2/2 — Yapı unsurları, dil–üslup ve iletiyi ilişkilendiriniz.",
+      "guidance": "Yapı ve üslup yorumunu seçilen metin parçalarının somut özellikleriyle ilişkilendirmelerini isteyin."
     },
     {
       "question_id": "T3-P205-FLOW-S205_Q1_CHRONOLOGY",
@@ -323,7 +326,7 @@
       "printed_page": 205,
       "question_no": "Biyografide yaşam çizgisi: Olayları oluş sırasına yerleştiriniz.",
       "prompt_summary": "Biyografide yaşam çizgisi: Olayları oluş sırasına yerleştiriniz.",
-      "answer": "Aşağıdaki örnek çalışma çözümü, basılı kaynaktaki görev ve kanıtlarla birlikte değerlendirilmelidir.",
+      "answer": "Metindeki olayları kaynak sayfadan doğrulayarak sıralayın; tarih verilmediyse tahmin etmeyin.",
       "answer_sections": {
         "Yönerge": "Metindeki olayları kaynak sayfadan doğrulayarak sıralayın; tarih verilmediyse tahmin etmeyin.",
         "Örnekler": [
@@ -333,7 +336,8 @@
           "Mısır yılları ve son dönem"
         ]
       },
-      "source_locator": "basılı s.205 — Biyografide yaşam çizgisi: Olayları oluş sırasına yerleştiriniz."
+      "source_locator": "basılı s.205 — Biyografide yaşam çizgisi: Olayları oluş sırasına yerleştiriniz.",
+      "guidance": "Kronoloji için yalnız metindeki tarih ve olay ilişkilerini kullanmalarını, bilinmeyen tarihleri tahmin etmemelerini isteyin."
     }
   ]
 }
