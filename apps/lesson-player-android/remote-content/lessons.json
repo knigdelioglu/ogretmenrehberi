@@ -17811,10 +17811,10 @@
         "content": {
           "lead": "Ana metni ders kitabından okuyun. Okurken olay akışını, kültür söz varlığını ve hikâye türünün özelliklerini izleyin.",
           "items": [
-            "Çordon'un bugünkü yolculuğu ile geçmişteki olayların birbirine nasıl bağlandığını izleyin.",
-            "Oğul özlemi, yas ve hatıra duygusunun hangi davranışlarda görünür olduğunu işaretleyin.",
-            "Çordon, kızları ve Nazifkan'ın aynı olaya neden farklı yaklaştığını not edin.",
-            "İstasyon ve vedalaşma bölümünde dilin duygu yoğunluğunu nasıl artırdığına dikkat edin."
+            "Olayların anlatıldığı zaman ile hatırlanan geçmişi ayırarak okuyun.",
+            "Kişilerin aynı duruma verdikleri farklı tepkileri metinden işaretleyin.",
+            "Duyguyu doğrudan adlandırmak yerine sezdiren söz ve davranışların altını çizin.",
+            "İkinci okumada kişi adlarını, mekânları ve kararların nedenlerini metin kanıtlarıyla ilişkilendirin."
           ]
         }
       },
@@ -19544,7 +19544,7 @@
               "düşündün (görülen geçmiş zaman)",
               "sustun (görülen geçmiş zaman)",
               "olurdu (geniş zamanın hikâyesi)",
-              "düşündürmez (geniş zamanın olumsuzu)",
+              "düşündürtmez (geniş zamanın olumsuzu)",
               "söyletirdi (geniş zamanın hikâyesi)",
               "düşündüm (görülen geçmiş zaman)",
               "verdi (görülen geçmiş zaman)",
@@ -19571,7 +19571,7 @@
               "sararsa",
               "düşündün",
               "sustun",
-              "düşündürmez",
+              "düşündürtmez",
               "düşündüm",
               "verdi",
               "buyur",
@@ -19706,6 +19706,7 @@
           }
         },
         "reveal_order": [
+          "guidance",
           "answer"
         ],
         "display_prompt": "Verilen fiilleri nesnesine göre çatı özellikleri bakımından sınıflandırınız.",
@@ -19747,13 +19748,14 @@
               "kalkıp (geçişsizdir, nesne almaz)"
             ],
             "oldurgan": [
-              "püskürttü ('püskürmek' geçişsizdir, -t- ekiyle nesne alabilir hâle getirilmiştir)"
+              "püskürttü ('Turfan’daki Çinliyi Aksu’ya dek püskürttü' cümlesinde 'Çinliyi' nesnesini alır; -t- çatı eki bu örneğin bağlamında incelenir. 'Püskürmek' fiilinin her kullanımının geçişsiz olduğu varsayılmamalıdır; oldurgan/ettirgen sınıflandırması dil bilgisi kaynağıyla ayrıca karşılaştırılmalıdır.)"
             ],
             "ettirgen": [
               "diktirmişti ('dikmek' geçişlidir, -tir- ekiyle geçişlilik derecesi artırılmış ve iş başkasına yaptırılmıştır)",
               "sürdürdü ('sürmek' geçişlidir, -dür- ekiyle ettirgen yapılmıştır)"
             ]
-          }
+          },
+          "guidance": "Önce kitap cümlesi ve nesneyi, ardından püskür- / püskürt- biçimlerini ve -t- ekinin bu bağlamdaki işlevini inceleyin. Fiilin tüm sözlük anlamlarına yayılan kesin geçişlilik yargısından kaçının; kategori etiketi kaynak denetimi bekleyen öğretmen notudur."
         },
         "content": null
       },
@@ -21064,7 +21066,7 @@
               "fragments": [
                 {
                   "unit": "1. Kart Renkleri ve Değerlendirme Ölçütleri",
-                  "text": "Her kararınızı metinden bir kelime, ifade veya olayla gerekçelendirin.",
+                  "text": "Metinde doğrudan bulunan, çıkarılabilen ve doğrulanamayan unsurları birbirinden ayırın;",
                   "position": "start"
                 }
               ]
@@ -21093,12 +21095,12 @@
           "printed_page": 111,
           "question_no": "2",
           "prompt_summary": "Kart gösterme tekniğiyle tahminleri sınıflandırma",
-          "answer": "Tahminlerinizi kartlarla sınıflandırın: metinde açıkça karşılığı olanlar, metinde bulunmayanlar ve metindeki bir ayrıntıyla sınırlı ilişki kurabilenler. Her kararınızı metinden bir kelime, ifade veya olayla gerekçelendirin.",
-          "guidance": "Kartın rengi tek başına gerekçe değildir. Her kart için kararınızı destekleyen metin kanıtını açıklayın.",
+          "answer": "Arkadaşınızın tahminine mavi (katılıyorum), kırmızı (katılmıyorum) veya kahverengi (kararsızım) kartla gerekçeli yanıt verin. Metinde doğrudan bulunan, çıkarılabilen ve doğrulanamayan unsurları birbirinden ayırın; metinde anılmayan bir tahmini kendiliğinden yanlış saymayın.",
+          "guidance": "Kart renkleri, tahmine ilişkin gerekçeli tutumu gösterir; 'metinde geçmiyor = yanlış' kuralı değildir. Değerlendirmeyi gerçek metin ayrıntısı, çıkarım gücü ve belirsizlik bakımından açıklayın.",
           "source_locator": "basılı s.111 / PDF s.112 — Karşılaştıralım soru 2",
           "answer_sections": {
-            "1. Kart Renkleri ve Değerlendirme Ölçütleri": "• Mavi Kart (Katılıyorum): Tahmin edilen kelime/unsur metinde açıkça geçmektedir (Örn: Kapalıçarşı, fayton, bekçi, saka, hilye, hat).\n• Kırmızı Kart (Katılmıyorum): Tahmin edilen unsur metinde hiç yer almamaktadır veya metnin geleneksel atmosferiyle bağdaşmamaktadır (Örn: Sanayi fabrikası, otomobil, modern tiyatro).\n• Kahverengi Kart (Kararsızım / Dolaylı İlişki): Kelime metinde lafzen geçmez ama metindeki bir ayrıntıyla sınırlı bir ilişki kurulabilir. Örneğin, 'tulumbacı' sözcüğü parçada yoktur; Beyazıt Yangın Kulesi nöbetçisinin yangını haber vermesi ve köşklülerin evlere haber ulaştırması bir uyarı/iletişim düzenini gösterir. Bu ayrıntılar tulumbacıları veya bir yangın söndürme teşkilatını doğrulamaz.",
-            "2. Kanıt Temelli Gerekçelendirme Örnekleri": "• Mavi kart gerekçesi: 'Arkadaşımın söylediği esnaf kültürü tahmini doğrudur çünkü metinde Kalpakçılar Caddesi'ndeki tülbentçi ve tezgâhtar Bahaeddin Efendi ayrıntısıyla anlatılmaktadır.'\n• Kırmızı kart gerekçesi: 'Arkadaşımın söylediği motorlu taşıtlar tahmini yanlıştır çünkü metin henüz motorlu taşıtların olmadığı dönemi anlatmakta, kupa ve faytonlardan bahsetmektedir.'",
+            "1. Kart Renkleri ve Değerlendirme Ölçütleri": "• Mavi kart (Katılıyorum): Tahmine katılıyorum; metinde açık örnek veya gerekçeli çıkarım desteği gösterebilirim.\n• Kırmızı kart (Katılmıyorum): Tahmine katılmıyorum; metindeki bir ayrıntıyla gerçekten çeliştiğini gerekçelendirebilirim. Yalnızca metinde adının geçmemesi çelişki kanıtı değildir.\n• Kahverengi kart (Kararsızım): Tahmin metinle doğrulanamıyor veya kanıt farklı yorumlara açık; kesin karar için daha fazla dayanak gerekir.\n• Kanıt durumu (karttan ayrı): Metinde doğrudan var / metinden çıkarılabilir / metinle doğrulanamadı.",
+            "2. Kanıt Temelli Gerekçelendirme Örnekleri": "• Mavi kart örneği: 'Esnaf kültürüne ilişkin tahmine katılıyorum; metinde Kalpakçılar Caddesi'ndeki tülbentçi ve tezgâhtar Bahaeddin Efendi anlatılır.'\n• Kahverengi kart örneği: 'Yangına müdahale eden kişilere ilişkin tahmin için kule nöbetçileri bir ipucu olabilir; ancak metin bir söndürme teşkilatını doğrudan doğrulamıyor.'\n• Kırmızı kart için kalıp: 'Tahmine katılmıyorum çünkü metindeki [gerçek ifade] tahmindeki [iddia] ile çelişiyor.' Köşeli alanlar gerçek karşıt kanıt bulunabildiğinde doldurulmalı.",
             "3. Kültür Unsurlarını Sınıflandırma Tablosu": "• Esnaf ve Ticaret Ahlakı: Kapalıçarşı, Kalpakçılar Caddesi, tülbentçi, haydâriye, bereket duası.\n• Ev Yaşamı ve Manevi Eşyalar: 'Yâ Hâfız' levhası, sedir, rahle, Hilye-i Şerîf, cüz kesesi, sevâhidî minder.\n• Ulaşım, Asayiş ve Hizmet: Fayton, kupa arabası, ucu demirli sopalı bekçi, Beyazıt Yangın Kulesi köşklüleri, sebilci, saka.\n• Sanat, Musikî ve Zanaat: Hat sanatı, maktâcılık, ebru, divitçilik, mürekkep, ud, keman, kanun, gergef, kasnak.\n• Âdetler, Törenler ve Eğlenceler: Âmin alayı, kırk hamamı, gelin hamamı, kına gecesi, semâî kahvesi, meddah, Karagöz, cirit, helva sohbeti."
           }
         },
@@ -26627,7 +26629,8 @@
                 "section_keys": [
                   "Araştırma Matrisi",
                   "Karşılaştırma Soruları",
-                  "Kaynak İlkesi"
+                  "Kaynak İlkesi",
+                  "Öğretmen için tek kaynaklı karşılaştırma örneği — dil"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -26680,7 +26683,13 @@
               "“Ortak” dediğiniz unsur için hangi kaynaklar kanıt sağlıyor?",
               "Bir özelliği bütün ülkeye/topluma genellemekten kaçınmak gerekiyor mu?"
             ],
-            "Kaynak İlkesi": "Resmî kültür kurumları, müze/üniversite kaynakları, güvenilir ansiklopediler veya akademik kaynaklar kullanılmalı; her hücreye dayanak eklenmelidir."
+            "Kaynak İlkesi": "Resmî kültür kurumları, müze/üniversite kaynakları, güvenilir ansiklopediler veya akademik kaynaklar kullanılmalı; her hücreye dayanak eklenmelidir.",
+            "Öğretmen için tek kaynaklı karşılaştırma örneği — dil": {
+              "Türkiye": "Türkiye Cumhuriyeti Anayasası m.3 devletin dilini Türkçe olarak belirtir. Kaynak: https://www.anayasa.gov.tr/tr/mevzuat/anayasa/",
+              "Azerbaycan": "Azerbaycan Cumhuriyeti Anayasası m.21 devlet dilini Azerbaycan dili (Azerbaycan Türkçesi) olarak belirtir. Kaynak: https://president.az/az/pages/view/azerbaijan/constitution",
+              "Karşılaştırma": "Benzerlik: İki ülkede de resmî devlet dili anayasa hükmüyle belirtilir. Farklılık: Resmî adlandırmalar Türkçe ve Azerbaycan dili olarak ayrılır. Bu tek veri, konuşma biçimlerinin birebir aynı olduğunu veya ülkelerde başka diller konuşulmadığını göstermez.",
+              "Uygulama notu": "8 Ekim 2026'da resmî anayasa metinleri üzerinden kontrol edilen yalnız 'dil' boyutu örneğidir. Öğrenciler kalan ülke ve boyutlar için kendi kaynaklarını bulur."
+            }
           }
         },
         "content": {
@@ -27036,7 +27045,7 @@
           "question_no": "10",
           "prompt_summary": "Türk kültürünü tanıtan örnek kısa konuşma",
           "answer": "Aşağıdaki model, araştırmanızda doğruladığınız iki veya üç kültür örneğini konuşmanızda nasıl kullanabileceğinizi gösterir. Köşeli alanları kendi gerçek araştırma bulgularınızla doldurun.",
-          "guidance": "Model konuşmayı kendi araştırma bulgularınızla oluşturun. Dombra, Nevruz, yemekler veya belirli şehir ve mimari örneklerini bütün Türk dünyasına ait ortak unsurlar diye kanıtsız biçimde sunmayın; benzerliklerle farklılıkları birlikte ele alın.",
+          "guidance": "Model konuşmayı kendi araştırma bulgularınızla oluşturun. Dombra, Nevruz, yemekler veya belirli şehir ve mimari örneklerini bütün Türk dünyasına ait ortak unsurlar diye kanıtsız biçimde sunmayın; benzerliklerle farklılıkları birlikte ele alın. Model konuşmayı öğrenciler önce kendi ülke/kültür unsuru seçimini ve iki kaynaklı bulgusunu belirledikten sonra isteğe bağlı açın; örneğin tamamını ezberletmeyin.",
           "source_locator": "basılı s.133 / PDF s.134 — soru 10",
           "answer_sections": {
             "Model Konuşma": "Değerli öğretmenim, sevgili arkadaşlarım,\n\nBugün Türk dünyasının ortak kültürünü, ortaklıkların yanında farklılıkları da görerek tanıtmaya çalışacağım.\n\nBu temada Orhun Abideleri ile Dîvânu Lugâti’t-Türk'ü inceledik. Orhun Abideleri bize il, töre, millet ve yönetim anlayışıyla ilgili tarihî bir söz varlığı sunarken Dîvânu Lugâti’t-Türk farklı Türk topluluklarının kelimelerini, atasözlerini ve kültürel hayatından örnekleri kayda geçiriyor. Bu iki eser bile dilin kültürel hafızayı nasıl taşıdığını göstermeye yeterlidir.\n\nDers dışı araştırmamda [ülke/bölge 1] ile [ülke/bölge 2] arasında [kültür unsuru] bakımından şu benzerliği gördüm: [...]. Kaynağım [...]. Aynı unsurun farklılaştığı nokta ise [...]. İkinci örneğim [müzik/yemek/gelenek/giyim/sanat] alanından: [...]. Burada da ortaklık kadar yerel farklılıkların önemli olduğunu gördüm.\n\nBu karşılaştırma bana Türk dünyasını tek biçimli bir kültür olarak değil, tarihî ve dilsel bağları bulunan ama farklı coğrafyalarda farklılaşmış zengin bir kültür alanı olarak düşünmenin daha doğru olduğunu gösterdi.\n\nDinlediğiniz için teşekkür ederim.",
@@ -27390,7 +27399,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "Aşağıdaki ölçütler, dört puan düzeyi ve aralıklarıyla birlikte gösterilmiştir. Akran formu sonraki slayttadır.",
+          "lead": "Beş ölçüt, her biri dört başarı düzeyi (1–5 / 6–10 / 11–15 / 16–20 puan) ile birlikte gruplanmıştır. Kaynak DOCX bağlantısı korunmuştur.",
           "sections": [
             {
               "title": "Konuşma ölçütleri",
@@ -27405,84 +27414,24 @@
               "body": "Ayrıntılı dereceli puanlama anahtarı ve akran değerlendirme formu bu sayfadaki indirme bağlantılarındadır."
             },
             {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşmada konuya hâkimiyet zayıftır"
+              "title": "Konuya hâkimiyet · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Konuşmada konuya hâkimiyet zayıftır\n• Kabul edilebilir (6–10 puan): Konuşmada konuya hâkimiyet kısmen yeterlidir\n• İyi (11–15 puan): Konuşma, konuya hâkimiyet açısından başarılıdır\n• Çok iyi (16–20 puan): Konuşma, konuya hâkimiyet açısından oldukça güçlüdür"
             },
             {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşmada konuya hâkimiyet kısmen yeterlidir"
+              "title": "Söz varlığını etkili ve güzel kullanma · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Konuşmada söz varlığı etkili ve güzel kullanılmamıştır\n• Kabul edilebilir (6–10 puan): Konuşma içeriğini yansıtan söz varlığı kısmen etkili ve güzel kullanılmıştır\n• İyi (11–15 puan): Konuşma için seçilen söz varlığı etkili ve güzeldir\n• Çok iyi (16–20 puan): Konuşmada oldukça zengin ve etkili bir söz varlığı kullanılmıştır"
             },
             {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşma, konuya hâkimiyet açısından başarılıdır"
+              "title": "Beden dili ve sesle anlam oluşturma · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya hizmet etmemiştir\n• Kabul edilebilir (6–10 puan): Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya kısmen katkı sağlamıştır\n• İyi (11–15 puan): Konuşmada kullanılan beden dili ve ses, anlam oluşturmayı desteklemiştir\n• Çok iyi (16–20 puan): Beden dili ve sesle anlam oluşturulan başarılı bir konuşma gerçekleştirilmiştir"
             },
             {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşma, konuya hâkimiyet açısından oldukça güçlüdür"
+              "title": "Zamanı ve mekânı konuşmaya uygun şekilde yönetme · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Mekân ve zamanı konuşmaya uygun şekilde kullanma farkındalığı zayıftır\n• Kabul edilebilir (6–10 puan): Mekân ve zamanı, konuşma içeriğine uygun şekilde kullanma farkındalığı kısmen yeterlidir\n• İyi (11–15 puan): Mekân ve zaman, konuşma içeriğine uygun şekilde yönetilebilmiştir\n• Çok iyi (16–20 puan): Mekân ve zaman, konuşma içeriğine uygun biçimde oldukça verimli kullanılmıştır"
             },
             {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşmada söz varlığı etkili ve güzel kullanılmamıştır"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşma içeriğini yansıtan söz varlığı kısmen etkili ve güzel kullanılmıştır"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşma için seçilen söz varlığı etkili ve güzeldir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşmada oldukça zengin ve etkili bir söz varlığı kullanılmıştır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya hizmet etmemiştir"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya kısmen katkı sağlamıştır"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmayı desteklemiştir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Beden dili ve sesle anlam oluşturulan başarılı bir konuşma gerçekleştiril-miştir"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zamanı konuşmaya uygun şekilde kullanma farkındalığı zayıftır"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zamanı, konuşma içeriğine uygun şekilde kullanma farkındalığı kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zaman, konuşma içeriğine uygun şekilde yönetilebilmiş-tir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zaman, konuşma içeriğine uygun biçimde oldukça verimli kullanılmıştır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgisini çekecek bir konuşma gerçekleştirilme-miştir"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Konuşma, hedef kitlenin ilgisini çekme konusunda kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgisini çekecek nitelikte bir konuşma gerçekleştiril-miştir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgi ve dikkatini canlı tutacak başarılı bir konuşma gerçekleştiril-miştir"
+              "title": "Seyircinin ilgisini çekme · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Hedef kitlenin ilgisini çekecek bir konuşma gerçekleştirilme-miştir\n• Kabul edilebilir (6–10 puan): Konuşma, hedef kitlenin ilgisini çekme konusunda kısmen yeterlidir\n• İyi (11–15 puan): Hedef kitlenin ilgisini çekecek nitelikte bir konuşma gerçekleştirilmiştir\n• Çok iyi (16–20 puan): Hedef kitlenin ilgi ve dikkatini canlı tutacak başarılı bir konuşma gerçekleştirilmiştir"
             },
             {
               "title": "Toplam puan ve hesaplama",
@@ -28196,7 +28145,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin.",
+          "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin. QR videosuna erişilemiyorsa kitap s.158'deki atışma örneği yalnız ayrı bir teknik alıştırmada kullanılabilir; bu videoda duyulan sözlerin kanıtı olarak sunulamaz.",
           "items": [
             "Bir âşığın diğerinin sözüne nasıl cevap verdiğini not edin.",
             "Mizah, benzetme ve söz oyunu örneklerini işaretleyin.",
@@ -28764,7 +28713,7 @@
           "answer",
           "explanation"
         ],
-        "display_prompt": "Atışmanın âşıklık geleneğindeki yerini açıklayınız.",
+        "display_prompt": "Başlık ve görselden hareketle atışmanın âşıklık geleneğindeki yerine ilişkin tahminlerinizi ve dayanaklarınızı belirtiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T02-S0125",
@@ -29191,7 +29140,7 @@
           "printed_page": 143,
           "question_no": "4",
           "prompt_summary": "İsmet Özel'in Münacaat şiirinin dili ile âşık şiirlerinin dilini karşılaştırma",
-          "answer": "Karşılaştırmanın Münacaat kısmı sayfadaki dizelerden yapılabilir; âşık şiiri kısmı ise dinlenen atışmada gerçekten tespit edilen kullanımlara dayanır.",
+          "answer": "Kaynak durumu: Münacaat'a ilişkin gözlemler kitabın basılı s.143 dizelerine dayanır (doğrulandı). Âşık şiirine ilişkin karşılaştırma, QR videosundaki gerçek dizeler duyulup not alınmadan tamamlanamaz (video kaynağı bekleniyor).",
           "evidence_quotes": [
             "demek gökten ağsa bile tohum yürekten düşecekmiş",
             "kaldı bu silinmez yaşamak suçu üzerimde",
@@ -29206,12 +29155,14 @@
               "Alışılmadık bağdaştırmalar ve yoğun imgeler anlamı doğrudan vermek yerine düşündürür.",
               "Günlük konuşmadan uzaklaşan, bireysel ve yoğun bir şiir dili vardır."
             ],
-            "Âşık Şiirinin Dilinden Gözlenebilenler": "[Videoda gerçekten duyulan daha açık/doğrudan söyleyiş, deyim, benzetme, hitap, mizah veya ritmik kullanım örnekleri]",
+            "Âşık Şiirinin Dilinden Gözlenebilenler": "KAYNAK BEKLENİYOR — Bu sütun yalnız QR videosunda gerçekten duyulan söz ve söyleyişlerle doldurulur: [dize / zaman damgası / dil özelliği]. Kitaptaki Münacaat dizeleri atışmada söylenmiş gibi gösterilmez.",
             "Benzerlik": "Her iki şiir dilinde de düz günlük konuşmadan farklı olarak mecaz, çağrışım ve estetik söyleyiş kullanılabilir.",
             "Farklılık": "Münacaat'taki yoğun/özgün imge yapısı ile atışmada gözlenen daha doğrudan, karşılıklı veya sözlü icraya bağlı söyleyiş arasındaki fark gerçek örneklerle açıklanır."
           }
         },
-        "content": null
+        "content": {
+          "lead": "Kaynak durumu: Münacaat için ders kitabı s.143 dizeleri incelenebilir. Âşık şiiri sütunu ise izlenen QR videosunda gerçekten duyulan örneklerle tamamlanacaktır; kaydedilmemiş dizeler varsayılmamalıdır."
+        }
       },
       {
         "id": "s143-preference",
@@ -30151,7 +30102,7 @@
             "1. Kaynağı bulma: Resmî müze/kurum veya güvenilir kültür platformunda sanal tur olup olmadığını araştırın. Müze ile ören yerini ayrı türler olarak kaydedin.",
             "2. Kısa tanıtım kaydı: [Müze/ören yeri adı] — [şehir] — [kurumun belirttiği koleksiyon/alan] — [resmî sanal tur bağlantısı].",
             "3. Erişimi ve özelliği denetleme: [Kontrol tarihi] — [tur açıldı/açılmadı] — [gerçekten sunulan panorama, nesne yakınlaştırma, sesli rehber veya bilgi panosu; yalnız varsa].",
-            "4. Listeyi sunma: İlgi alanınıza ve erişilebilirliğe göre seçtiğiniz kayıtları arkadaşlarınızla paylaşın; çalışmayan bağlantıyı erişilebilir örnek olarak göstermeyin."
+            "4. Listeyi sunma: İlgi alanınıza ve erişilebilirliğe göre seçtiğiniz kayıtları arkadaşlarınızla paylaşın; çalışmayan bağlantıyı erişilebilir örnek olarak göstermeyin.\n\nÖğretmen için resmî kaynak örneği (8 Ekim 2026): Kültür ve Turizm Bakanlığı sanal müze kataloğu https://sanalmuze.gov.tr/; Ankara Anadolu Medeniyetleri Müzesi için https://sanalmuze.gov.tr/muzeler/ankara-anadolu-medeniyetleri-muzesi/; Gaziantep Zeugma Mozaik Müzesi için https://sanalmuze.gov.tr/muzeler/GAZIANTEP_ZEUGMA_MOZAIK_MUZESI/. Resmî katalog ve ilgili sayfalara yönlendirme doğrulandı; tarayıcıda etkileşimli sanal turun bütün işlevleri denenmedi. Dersten önce turu açıp panorama ve gezinmeyi kendiniz kontrol edin. Sadece dijital koleksiyon listesini sanal tur saymayın."
           ]
         },
         "content": {
@@ -30161,6 +30112,20 @@
             "Müzenin adı, konumu ve koleksiyonunu kısaca kaydedin.",
             "Sanal turda hangi imkânların sunulduğunu gerçekten kontrol edin.",
             "Her kayıt için kaynak adresini not edip listenizi sınıfla paylaşın."
+          ],
+          "sources": [
+            {
+              "label": "Kültür ve Turizm Bakanlığı — Sanal Müze kataloğu",
+              "url": "https://sanalmuze.gov.tr/"
+            },
+            {
+              "label": "Ankara Anadolu Medeniyetleri Müzesi — resmî sanal tur sayfası",
+              "url": "https://sanalmuze.gov.tr/muzeler/ankara-anadolu-medeniyetleri-muzesi/"
+            },
+            {
+              "label": "Zeugma Mozaik Müzesi — resmî sanal tur sayfası",
+              "url": "https://sanalmuze.gov.tr/muzeler/GAZIANTEP_ZEUGMA_MOZAIK_MUZESI/"
+            }
           ]
         }
       },
@@ -31177,7 +31142,8 @@
                   "Gelişme — Görünmeyen miras ve karşılaştırma",
                   "Gelişme — Sanal deneyim",
                   "Sonuç",
-                  "Teslim öncesi kaynak kontrolü"
+                  "Teslim öncesi kaynak kontrolü",
+                  "İsteğe bağlı kısa yöntem örneği (kurgu; gerçek gezi kaydı değildir)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -31229,7 +31195,8 @@
             "Gelişme — Görünmeyen miras ve karşılaştırma": "“Eserin yapılma amacı, kullanım alanı veya hikâyesi hakkında [kaynakta verilen bilgi] beni düşündürdü. Kendi yaşamımda [gerçek karşılık/benzerlik/farklılık/yokluk] gördüğüm için bu nesneyi [kişisel yorum] bakımından anlamlı buldum. Metindeki bilgiyle kendi yorumumu ayrı tutuyorum.”",
             "Gelişme — Sanal deneyim": "“Sanal gezi sırasında gerçekten yararlandığım özellik [varsa yakınlaştırma/panorama/bilgi panosu/başka bir özellik]. Bu özellik incelememi [nasıl] etkiledi. Ekrandan gezmenin [kendi gözlediğim avantaj/sınır] yönünü de fark ettim.”",
             "Sonuç": "“Geziden sonra [öğrendiğim bir şey] ve [değişen ya da pekişen düşüncem] benim için öne çıktı. Bu deneyim kültürel mirasa bakışımı [kendi gerekçemle] etkiledi.”",
-            "Teslim öncesi kaynak kontrolü": "Gerçek müze bağlantısı, ziyaret tarihi, eser adı, bilgi panosu ve kullanılan görseller doğrulanır. Her paragrafta gözlem, dış kaynak bilgisi ve kişisel yorum ayırt edilir."
+            "Teslim öncesi kaynak kontrolü": "Gerçek müze bağlantısı, ziyaret tarihi, eser adı, bilgi panosu ve kullanılan görseller doğrulanır. Her paragrafta gözlem, dış kaynak bilgisi ve kişisel yorum ayırt edilir.",
+            "İsteğe bağlı kısa yöntem örneği (kurgu; gerçek gezi kaydı değildir)": "Gözlenen nesne → somut ayrıntı → kişisel anlam → kültür bağı: 'Örnek olarak, bir çini levhada tekrarlanan mavi çizgileri gördüğümü varsayıyorum (kurgu gözlem). Bu tekrarın bende uyandırdığı ritim duygusunu kişisel yorum olarak açıklar, levhanın dönemi ve kullanımına ilişkin bilgiyi ancak müze kaynağına dayandırırım.' Öğrenciler bu nesneyi ve duyguya ilişkin cümleleri kendi gerçek gezi notlarıyla değiştirmelidir."
           }
         },
         "content": {
@@ -31349,7 +31316,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "Aşağıdaki ölçütler, dört puan düzeyi ve aralıklarıyla birlikte gösterilmiştir. Akran formu ayrı slayttadır.",
+          "lead": "Beş ölçüt, her biri dört başarı düzeyi (1–5 / 6–10 / 11–15 / 16–20 puan) ile birlikte gruplanmıştır. Kaynak DOCX bağlantısı korunmuştur.",
           "sections": [
             {
               "title": "Yazı ölçütleri",
@@ -31364,84 +31331,24 @@
               "body": "Dereceli puanlama anahtarı ve akran değerlendirme formu bu sayfadaki indirme bağlantılarındadır."
             },
             {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye uygun değildir"
+              "title": "Dil ve üslup · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye uygun değildir\n• Kabul edilebilir (6–10 puan): Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye kısmen uygundur\n• İyi (11–15 puan): Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye göre belirlenmiştir\n• Çok iyi (16–20 puan): Metinde içeriğe ve hedef kitleye uygun, oldukça başarılı bir dil ve üslup kullanılmıştır"
             },
             {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye kısmen uygundur"
+              "title": "Özgünlük · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Metinde duygu, düşünce ve istekler özgün biçimde iletilmemiştir\n• Kabul edilebilir (6–10 puan): Metin, özgünlük açısından kısmen başarılıdır\n• İyi (11–15 puan): Metinde duygu, düşünce ve istekler özgün biçimde ifade edilmiştir\n• Çok iyi (16–20 puan): Metinde duygu, düşünce ve istekler oldukça özgün biçimde ifade edilmiştir"
             },
             {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde kullanılan dil ve üslup, içeriğe ve hedef kitleye göre belirlenmiştir"
+              "title": "Öznel ve nesnel ifadelere yer verme · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Metinde öznel ve nesnel ifadelere yer verilmemiştir\n• Kabul edilebilir (6–10 puan): Metinde öznel ve nesnel ifadelere kısmen yer verilmiştir\n• İyi (11–15 puan): Metinde öznel ve nesnel ifadeler yeterli düzeydedir\n• Çok iyi (16–20 puan): Metin, öznel ve nesnel ifadelere yer verilmesi açısından oldukça başarılıdır"
             },
             {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Dil ve üslup  (20 puan). Metinde içeriğe ve hedef kitleye uygun, oldukça başarılı bir dil ve üslup kullanılmıştır"
+              "title": "Görsellerden yararlanma · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Metinde görsel ögelere yer verilmemiştir\n• Kabul edilebilir (6–10 puan): Metinde görsel ögelere kısmen yer verilmiştir\n• İyi (11–15 puan): Metin görsel ögelerle desteklenmiştir\n• Çok iyi (16–20 puan): Metin görsel ögelerle başarılı biçimde desteklenmiştir"
             },
             {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Özgünlük  (20 puan). Metinde duygu, düşünce ve istekler özgün biçimde iletilmemiştir"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Özgünlük  (20 puan). Metin, özgünlük açısından kısmen başarılıdır"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Özgünlük  (20 puan). Metinde duygu, düşünce ve istekler özgün biçimde ifade edilmiştir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Özgünlük  (20 puan). Metinde duygu, düşünce ve istekler oldukça özgün biçimde ifade edilmiştir"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metinde öznel ve nesnel ifadelere yer verilmemiştir"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metinde öznel ve nesnel ifadelere kısmen yer verilmiştir"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metinde öznel ve nesnel ifadeler yeterli düzeydedir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Öznel ve nesnel ifadelere yer verme  (20 puan). Metin, öznel ve nesnel ifadelere yer verilmesi açısından oldukça başarılıdır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metinde görsel ögelere yer verilmemiştir"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metinde görsel ögelere kısmen yer verilmiştir"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metin görsel ögelerle desteklenmiştir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Görsellerden yararlanma  (20 puan). Metin görsel ögelerle başarılı biçimde desteklenmiştir"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–5 puan",
-              "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından oldukça zayıftır"
-            },
-            {
-              "title": "Kabul edilebilir · 6–10 puan",
-              "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 11–15 puan",
-              "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından iyi düzeydedir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Yazım ve noktalama  (20 puan). Metin yazım ve noktalama kurallarının uygulanması açısından oldukça başarılıdır"
+              "title": "Yazım ve noktalama · 20 puan",
+              "body": "• Başlangıç düzeyinde (1–5 puan): Metin yazım ve noktalama kurallarının uygulanması açısından oldukça zayıftır\n• Kabul edilebilir (6–10 puan): Metin yazım ve noktalama kurallarının uygulanması açısından kısmen yeterlidir\n• İyi (11–15 puan): Metin yazım ve noktalama kurallarının uygulanması açısından iyi düzeydedir\n• Çok iyi (16–20 puan): Metin yazım ve noktalama kurallarının uygulanması açısından oldukça başarılıdır"
             },
             {
               "title": "Toplam puan ve hesaplama",
@@ -32143,7 +32050,7 @@
           }
         },
         "content": {
-          "lead": "Sözlü kültürden yazılı kültüre geçiş iddiasını her eserin tarihiyle ayrı ayrı sınayın.",
+          "lead": "Her seçeneği üç eserin dönem, tür ve işlevi açısından ayrı ayrı sınayın; genellemelere karşı örnek arayın.",
           "items": [
             "A · Üç eser de sözlü kültürden yazılı kültüre geçiş sırasında ortaya çıkmıştır.",
             "B · Kutadgu Bilig ve Dede Korkut, İslamiyet etkisindeki dönemi farklı biçimlerde yansıtır.",
