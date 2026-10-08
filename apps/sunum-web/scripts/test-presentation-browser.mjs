@@ -2262,8 +2262,15 @@ presentationBrowserSuite: {
   assert.ok(["Beberuhi", "Çelebi", "Zenne"].every((name) => karagozAnswer.includes(name)), "ISSUE-002 type names appear on the next answer slide");
 
   screen = await openStep("mektup", "s46-q4");
-  assert.ok(screen.text.includes("Hasret sana ey yirmi yılın"), "ISSUE-013 poem excerpt is visible");
-  assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=46'))"), true);
+  let poemExcerptSeen = screen.text.includes("Hasret sana ey yirmi yılın");
+  let poemSourceSeen = await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=46'))");
+  for (let i = 0; i < 6 && !(poemExcerptSeen && poemSourceSeen); i += 1) {
+    const text = await next();
+    poemExcerptSeen ||= text.includes("Hasret sana ey yirmi yılın");
+    poemSourceSeen ||= await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=46'))");
+  }
+  assert.ok(poemExcerptSeen, "ISSUE-013 poem excerpt is visible across the paginated writing task");
+  assert.ok(poemSourceSeen, "ISSUE-013 textbook PDF link remains available across the paginated writing task");
 
   for (const id of ["s48-q1", "s48-q2", "s48-q3"]) {
     screen = await openStep("mektup", id);
