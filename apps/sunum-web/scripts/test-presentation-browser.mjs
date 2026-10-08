@@ -2228,7 +2228,7 @@ presentationBrowserSuite: {
 
   for (const fixture of [
     { slug: "mektup", id: "s42-reference", titles: ["Özel mektup", "Edebî mektup", "İş mektubu", "Resmî mektup"] },
-    { slug: "mektup", id: "s46-q1", titles: ["Kitaptaki örnek ölçüt", "Yalnızlık"] },
+    { slug: "mektup", id: "s46-q1", titles: ["Kitaptaki örnek ölçüt", "Yalınlık"] },
     { slug: "mektup", id: "s51-reference", titles: ["İşlevi", "Metnin düzeni", "Dil ve biçim"] },
     { slug: "biyografi-akif-194-198", id: "s194-two-biographies", titles: ["Tarık Buğra", "Âşık Veysel"] }
   ]) {
