@@ -21,8 +21,11 @@ SPECIAL = {
 
 
 def clock(seconds: float) -> str:
-    minutes, seconds = divmod(int(max(0, seconds)), 60)
-    return f"{minutes:02d}:{seconds:02d}"
+    # Preserve centiseconds for short overrun windows, without 59.99 -> 60.00.
+    centiseconds = round(max(0., seconds) * 100)
+    minutes, remainder = divmod(centiseconds, 6000)
+    whole_seconds, fractions = divmod(remainder, 100)
+    return f"{minutes:02d}:{whole_seconds:02d}.{fractions:02d}"
 
 
 def scan_draft(record: dict, doc: dict) -> list[dict]:
@@ -71,7 +74,7 @@ def scan_draft(record: dict, doc: dict) -> list[dict]:
         flags = list(original_flags)
         if duration and end > duration + 2:
             flags.append("beyond_media_end_check_audio")
-            if start > duration:
+            if start >= duration:
                 flags.append("segment_starts_after_media_end_possible_hallucination")
         if not phrase.strip():
             flags.append("empty_text")
@@ -91,7 +94,12 @@ def scan_draft(record: dict, doc: dict) -> list[dict]:
         if record["file_name"] in SPECIAL:
             flags.append("literary_audio_every_line_needs_verification")
         flags = list(dict.fromkeys(flags))
+        # Only the *review playback window* is bounded. Never rewrite ASR
+        # timing, erase its text, or imply that its overflow is genuine speech.
+        play_start = min(start, duration) if duration else start
+        play_end = min(end, duration) if duration else end
         review.append({"index": i, "start": start, "end": end,
+                       "play_start": play_start, "play_end": play_end,
                        "source_duration": duration,
                        "priority": "HIGH" if flags else "STANDARD", "flags": flags})
         previous_end = max(previous_end, end)
@@ -132,8 +140,16 @@ def generate_report(rows: list[dict]) -> str:
             text.append("**Kontrol odağı:** " + SPECIAL[r["file"]])
         for s in r["segments"]:
             labels = ", ".join(s["flags"]) if s["flags"] else "rutin_dinleme"
+            if s["source_duration"] and s["play_start"] >= s["source_duration"]:
+                playback = "Oynatılabilir ses yok (video bitmiş)"
+            else:
+                playback = (f"Dinleme: {clock(s['play_start'])}–"
+                            f"{clock(s['play_end'])}")
+            if s["source_duration"] and s["end"] > s["source_duration"]:
+                playback += (f" · Ham ASR: {clock(s['start'])}–{clock(s['end'])}"
+                             f" (bitiş +{s['end'] - s['source_duration']:.2f} sn)")
             text.append(f"- [ ] {s['priority']} · Bölüm {s['index']} · "
-                        f"{clock(s['start'])}–{clock(s['end'])} · {labels}")
+                        f"{playback} · {labels}")
         text.append("İşaretli kutular bile otomatik insan doğrulaması veya "
                     "öğretmen cevaplarına aktarım izni oluşturmaz.")
     return "\n".join(text) + "\n"
