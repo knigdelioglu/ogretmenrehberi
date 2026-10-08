@@ -297,4 +297,26 @@ assert.equal(t1Page43.entries.find(e => e.question_id === "T1-P43-Q01")?.entry_t
 assert.equal(t1Page83.entries.find(e => e.question_id === "T1-P83-Q13")?.entry_type,
   "source_limited", "Olvido audio-sensitive question must stay source_limited");
 
+// Cross-reference audit: all 18 page-video records must open their own
+// existing evidence note, without conflating URL identity with MP4 provenance.
+const notePaths = new Set();
+for (const r of intake.records) {
+  assert.ok(r.review_notes_path?.startsWith("data/grade-11/source/qr-review-notes/"),
+    `Video has no accessible evidence note: ${r.file_name}`);
+  assert.ok(!notePaths.has(r.review_notes_path),
+    `Two distinct page videos share a review note: ${r.file_name}`);
+  notePaths.add(r.review_notes_path);
+  const noteFile = path.join(root, r.review_notes_path);
+  assert.ok(fs.existsSync(noteFile), `Linked evidence note missing: ${r.review_notes_path}`);
+  assert.ok(fs.readFileSync(noteFile,"utf8").length > 140, `Empty video note: ${r.file_name}`);
+  assert.equal(r.spoken_audio_transcript, "not_done",
+    `Visual notes must never masquerade as a complete audio transcript: ${r.file_name}`);
+  if (r.existing_source_id) {
+    const canonicalSource = known.get(r.existing_source_id);
+    assert.equal(canonicalSource.review_notes_path, r.review_notes_path,
+      `Registry and intake disagree on EBA evidence note: ${r.file_name}`);
+  }
+}
+assert.equal(notePaths.size, 18, "Every textbook video must have its own note");
+
 console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");
