@@ -59,6 +59,14 @@ for (const [filename, relativeFlow, stepId, count] of files) {
             assert.ok(section.body.includes(level), `${stepId}/${section.title}: missing ${level}`);
           }
         }
+      } else if (stepId === "s135-reference" || stepId === "s153-rubric") {
+        // Tema 2: four source-aligned point levels are grouped under each of five criterion headings.
+        assert.equal(levels.length, count, `${stepId} groups five rubric criteria`);
+        for (const criterion of levels) {
+          for (const range of ["1–5 puan", "6–10 puan", "11–15 puan", "16–20 puan"]) {
+            assert.ok(criterion.body.includes(range), `${stepId} preserves ${range} for ${criterion.title}`);
+          }
+        }
       } else {
         assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
       }

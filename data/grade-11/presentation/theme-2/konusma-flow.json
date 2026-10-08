@@ -210,7 +210,8 @@
       "layout": "question",
       "density": "compact",
       "prompt": "10. adım — Gerekli hazırlıkların ardından amaca ve konuya uygun etkileşimli konuşma yapma",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Önce konuşmanızın amacını, iki kültür unsurunu ve gerçek kaynaklarınızı seçin. Ölçütleri kontrol ettikten sonra öğretmen desteğine gerek duyarsanız model konuşmayı açıp kendi bulgularınıza göre uyarlayın."
     },
     {
       "id": "s134-rules-1",
@@ -294,7 +295,7 @@
       "prompt": "Konuşmanızı gözden geçirmek için değerlendirme ölçütlerini inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Aşağıdaki ölçütler, dört puan düzeyi ve aralıklarıyla birlikte gösterilmiştir. Akran formu sonraki slayttadır.",
+        "lead": "Beş ölçüt, her biri dört başarı düzeyi (1–5 / 6–10 / 11–15 / 16–20 puan) ile birlikte gruplanmıştır. Kaynak DOCX bağlantısı korunmuştur.",
         "sections": [
           {
             "title": "Konuşma ölçütleri",
@@ -309,84 +310,24 @@
             "body": "Ayrıntılı dereceli puanlama anahtarı ve akran değerlendirme formu bu sayfadaki indirme bağlantılarındadır."
           },
           {
-            "title": "Başlangıç düzeyinde · 1–5 puan",
-            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşmada konuya hâkimiyet zayıftır"
+            "title": "Konuya hâkimiyet · 20 puan",
+            "body": "• Başlangıç düzeyinde (1–5 puan): Konuşmada konuya hâkimiyet zayıftır\n• Kabul edilebilir (6–10 puan): Konuşmada konuya hâkimiyet kısmen yeterlidir\n• İyi (11–15 puan): Konuşma, konuya hâkimiyet açısından başarılıdır\n• Çok iyi (16–20 puan): Konuşma, konuya hâkimiyet açısından oldukça güçlüdür"
           },
           {
-            "title": "Kabul edilebilir · 6–10 puan",
-            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşmada konuya hâkimiyet kısmen yeterlidir"
+            "title": "Söz varlığını etkili ve güzel kullanma · 20 puan",
+            "body": "• Başlangıç düzeyinde (1–5 puan): Konuşmada söz varlığı etkili ve güzel kullanılmamıştır\n• Kabul edilebilir (6–10 puan): Konuşma içeriğini yansıtan söz varlığı kısmen etkili ve güzel kullanılmıştır\n• İyi (11–15 puan): Konuşma için seçilen söz varlığı etkili ve güzeldir\n• Çok iyi (16–20 puan): Konuşmada oldukça zengin ve etkili bir söz varlığı kullanılmıştır"
           },
           {
-            "title": "İyi · 11–15 puan",
-            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşma, konuya hâkimiyet açısından başarılıdır"
+            "title": "Beden dili ve sesle anlam oluşturma · 20 puan",
+            "body": "• Başlangıç düzeyinde (1–5 puan): Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya hizmet etmemiştir\n• Kabul edilebilir (6–10 puan): Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya kısmen katkı sağlamıştır\n• İyi (11–15 puan): Konuşmada kullanılan beden dili ve ses, anlam oluşturmayı desteklemiştir\n• Çok iyi (16–20 puan): Beden dili ve sesle anlam oluşturulan başarılı bir konuşma gerçekleştirilmiştir"
           },
           {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Konuya hâkimiyet  (20 puan). Konuşma, konuya hâkimiyet açısından oldukça güçlüdür"
+            "title": "Zamanı ve mekânı konuşmaya uygun şekilde yönetme · 20 puan",
+            "body": "• Başlangıç düzeyinde (1–5 puan): Mekân ve zamanı konuşmaya uygun şekilde kullanma farkındalığı zayıftır\n• Kabul edilebilir (6–10 puan): Mekân ve zamanı, konuşma içeriğine uygun şekilde kullanma farkındalığı kısmen yeterlidir\n• İyi (11–15 puan): Mekân ve zaman, konuşma içeriğine uygun şekilde yönetilebilmiştir\n• Çok iyi (16–20 puan): Mekân ve zaman, konuşma içeriğine uygun biçimde oldukça verimli kullanılmıştır"
           },
           {
-            "title": "Başlangıç düzeyinde · 1–5 puan",
-            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşmada söz varlığı etkili ve güzel kullanılmamıştır"
-          },
-          {
-            "title": "Kabul edilebilir · 6–10 puan",
-            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşma içeriğini yansıtan söz varlığı kısmen etkili ve güzel kullanılmıştır"
-          },
-          {
-            "title": "İyi · 11–15 puan",
-            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşma için seçilen söz varlığı etkili ve güzeldir"
-          },
-          {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Söz varlığını etkili ve güzel kullanma  (20 puan). Konuşmada oldukça zengin ve etkili bir söz varlığı kullanılmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–5 puan",
-            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya hizmet etmemiştir"
-          },
-          {
-            "title": "Kabul edilebilir · 6–10 puan",
-            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmaya kısmen katkı sağlamıştır"
-          },
-          {
-            "title": "İyi · 11–15 puan",
-            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Konuşmada kullanılan beden dili ve ses, anlam oluşturmayı desteklemiştir"
-          },
-          {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Beden dili ve sesle anlam oluşturma  (20 puan). Beden dili ve sesle anlam oluşturulan başarılı bir konuşma gerçekleştiril-miştir"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–5 puan",
-            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zamanı konuşmaya uygun şekilde kullanma farkındalığı zayıftır"
-          },
-          {
-            "title": "Kabul edilebilir · 6–10 puan",
-            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zamanı, konuşma içeriğine uygun şekilde kullanma farkındalığı kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 11–15 puan",
-            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zaman, konuşma içeriğine uygun şekilde yönetilebilmiş-tir"
-          },
-          {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Zamanı ve mekânı konuşmaya uygun şekilde yönetme  (20 puan). Mekân ve zaman, konuşma içeriğine uygun biçimde oldukça verimli kullanılmıştır"
-          },
-          {
-            "title": "Başlangıç düzeyinde · 1–5 puan",
-            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgisini çekecek bir konuşma gerçekleştirilme-miştir"
-          },
-          {
-            "title": "Kabul edilebilir · 6–10 puan",
-            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Konuşma, hedef kitlenin ilgisini çekme konusunda kısmen yeterlidir"
-          },
-          {
-            "title": "İyi · 11–15 puan",
-            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgisini çekecek nitelikte bir konuşma gerçekleştiril-miştir"
-          },
-          {
-            "title": "Çok iyi · 16–20 puan",
-            "body": "Ölçüt: Seyircinin ilgisini çekme  (20 puan). Hedef kitlenin ilgi ve dikkatini canlı tutacak başarılı bir konuşma gerçekleştiril-miştir"
+            "title": "Seyircinin ilgisini çekme · 20 puan",
+            "body": "• Başlangıç düzeyinde (1–5 puan): Hedef kitlenin ilgisini çekecek bir konuşma gerçekleştirilme-miştir\n• Kabul edilebilir (6–10 puan): Konuşma, hedef kitlenin ilgisini çekme konusunda kısmen yeterlidir\n• İyi (11–15 puan): Hedef kitlenin ilgisini çekecek nitelikte bir konuşma gerçekleştirilmiştir\n• Çok iyi (16–20 puan): Hedef kitlenin ilgi ve dikkatini canlı tutacak başarılı bir konuşma gerçekleştirilmiştir"
           },
           {
             "title": "Toplam puan ve hesaplama",
@@ -399,7 +340,7 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=135"
           },
           {
-          "label": "Kaynak: 19XU4J2L.docx",
+            "label": "Kaynak: 19XU4J2L.docx",
             "url": "assets/assessment-documents/19XU4J2L.docx",
             "download": true
           },

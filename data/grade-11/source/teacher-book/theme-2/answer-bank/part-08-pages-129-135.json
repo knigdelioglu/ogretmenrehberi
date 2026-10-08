@@ -210,7 +210,13 @@
           "“Ortak” dediğiniz unsur için hangi kaynaklar kanıt sağlıyor?",
           "Bir özelliği bütün ülkeye/topluma genellemekten kaçınmak gerekiyor mu?"
         ],
-        "Kaynak İlkesi": "Resmî kültür kurumları, müze/üniversite kaynakları, güvenilir ansiklopediler veya akademik kaynaklar kullanılmalı; her hücreye dayanak eklenmelidir."
+        "Kaynak İlkesi": "Resmî kültür kurumları, müze/üniversite kaynakları, güvenilir ansiklopediler veya akademik kaynaklar kullanılmalı; her hücreye dayanak eklenmelidir.",
+        "Öğretmen için tek kaynaklı karşılaştırma örneği — dil": {
+          "Türkiye": "Türkiye Cumhuriyeti Anayasası m.3 devletin dilini Türkçe olarak belirtir. Kaynak: https://www.anayasa.gov.tr/tr/mevzuat/anayasa/",
+          "Azerbaycan": "Azerbaycan Cumhuriyeti Anayasası m.21 devlet dilini Azerbaycan dili (Azerbaycan Türkçesi) olarak belirtir. Kaynak: https://president.az/az/pages/view/azerbaijan/constitution",
+          "Karşılaştırma": "Benzerlik: İki ülkede de resmî devlet dili anayasa hükmüyle belirtilir. Farklılık: Resmî adlandırmalar Türkçe ve Azerbaycan dili olarak ayrılır. Bu tek veri, konuşma biçimlerinin birebir aynı olduğunu veya ülkelerde başka diller konuşulmadığını göstermez.",
+          "Uygulama notu": "8 Ekim 2026'da resmî anayasa metinleri üzerinden kontrol edilen yalnız 'dil' boyutu örneğidir. Öğrenciler kalan ülke ve boyutlar için kendi kaynaklarını bulur."
+        }
       }
     },
     {
@@ -271,7 +277,7 @@
       "question_no": "10",
       "prompt_summary": "Türk kültürünü tanıtan örnek kısa konuşma",
       "answer": "Aşağıdaki model, araştırmanızda doğruladığınız iki veya üç kültür örneğini konuşmanızda nasıl kullanabileceğinizi gösterir. Köşeli alanları kendi gerçek araştırma bulgularınızla doldurun.",
-      "guidance": "Model konuşmayı kendi araştırma bulgularınızla oluşturun. Dombra, Nevruz, yemekler veya belirli şehir ve mimari örneklerini bütün Türk dünyasına ait ortak unsurlar diye kanıtsız biçimde sunmayın; benzerliklerle farklılıkları birlikte ele alın.",
+      "guidance": "Model konuşmayı kendi araştırma bulgularınızla oluşturun. Dombra, Nevruz, yemekler veya belirli şehir ve mimari örneklerini bütün Türk dünyasına ait ortak unsurlar diye kanıtsız biçimde sunmayın; benzerliklerle farklılıkları birlikte ele alın. Model konuşmayı öğrenciler önce kendi ülke/kültür unsuru seçimini ve iki kaynaklı bulgusunu belirledikten sonra isteğe bağlı açın; örneğin tamamını ezberletmeyin.",
       "source_locator": "basılı s.133 / PDF s.134 — soru 10",
       "answer_sections": {
         "Model Konuşma": "Değerli öğretmenim, sevgili arkadaşlarım,\n\nBugün Türk dünyasının ortak kültürünü, ortaklıkların yanında farklılıkları da görerek tanıtmaya çalışacağım.\n\nBu temada Orhun Abideleri ile Dîvânu Lugâti’t-Türk'ü inceledik. Orhun Abideleri bize il, töre, millet ve yönetim anlayışıyla ilgili tarihî bir söz varlığı sunarken Dîvânu Lugâti’t-Türk farklı Türk topluluklarının kelimelerini, atasözlerini ve kültürel hayatından örnekleri kayda geçiriyor. Bu iki eser bile dilin kültürel hafızayı nasıl taşıdığını göstermeye yeterlidir.\n\nDers dışı araştırmamda [ülke/bölge 1] ile [ülke/bölge 2] arasında [kültür unsuru] bakımından şu benzerliği gördüm: [...]. Kaynağım [...]. Aynı unsurun farklılaştığı nokta ise [...]. İkinci örneğim [müzik/yemek/gelenek/giyim/sanat] alanından: [...]. Burada da ortaklık kadar yerel farklılıkların önemli olduğunu gördüm.\n\nBu karşılaştırma bana Türk dünyasını tek biçimli bir kültür olarak değil, tarihî ve dilsel bağları bulunan ama farklı coğrafyalarda farklılaşmış zengin bir kültür alanı olarak düşünmenin daha doğru olduğunu gösterdi.\n\nDinlediğiniz için teşekkür ederim.",
