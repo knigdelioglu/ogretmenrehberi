@@ -1328,6 +1328,7 @@ function stepSlide(lesson, step) {
   const page = view.page;
   const a = step.answer;
   const modernQuestionLayout = usesModernQuestionShell(step);
+  const modernCompanionLayout = ["process", "assessment", "reference"].includes(step.layout);
   const isVocab = step.layout === "vocabulary";
   const fresh = (k) => state.fresh === k;
   const viewNames = {
@@ -1510,6 +1511,20 @@ function stepSlide(lesson, step) {
       focus.prepend(h("div", { class: "panel__label qa-stage-label" }, page.title || viewNames[viewKey]));
     }
     main.replaceChildren(context, focus);
+  } else if (modernCompanionLayout) {
+    // Görev, bilgi ve değerlendirme içeriklerini QA'dan ayrı, ortak bir sunum hiyerarşisinde tut.
+    const prompt = main.firstChild;
+    const pageContent = [...main.childNodes].slice(1);
+    const context = h("div", { class: "companion-context" }, prompt);
+    const focus = h("div", { class: "companion-focus" });
+    for (const node of pageContent) {
+      if (viewKey === "content") context.append(node);
+      else focus.append(node);
+    }
+    if (viewKey !== "content" && focus.childNodes.length && !focus.querySelector(".panel__label")) {
+      focus.prepend(h("div", { class: "panel__label companion-stage-label" }, page.title || viewNames[viewKey]));
+    }
+    main.replaceChildren(context, focus);
   }
 
   const bodyInner = h("div", { class: "body-grid" }, main);
@@ -1529,11 +1544,12 @@ function stepSlide(lesson, step) {
   const qaClasses = modernQuestionLayout
     ? ` slide--qa-modern${step.layout === "comparison" ? " slide--qa-comparison" : ""}`
     : "";
+  const companionClass = modernCompanionLayout ? " slide--modern-companion" : "";
   const structureClass = step.layout === "structure" ? " slide--visual-structure" : "";
   const processClass = step.layout === "process" ? " slide--visual-process" : "";
   const assessmentClass = step.layout === "assessment" ? " slide--visual-assessment" : "";
   const referenceClass = step.layout === "reference" ? " slide--visual-reference" : "";
-  return h("div", { class: `slide${qaClasses}${structureClass}${processClass}${assessmentClass}${referenceClass}` }, top, h("div", { class: "slide__body" }, bodyInner), foot);
+  return h("div", { class: `slide${qaClasses}${companionClass}${structureClass}${processClass}${assessmentClass}${referenceClass}` }, top, h("div", { class: "slide__body" }, bodyInner), foot);
 }
 
 // ============================================================
