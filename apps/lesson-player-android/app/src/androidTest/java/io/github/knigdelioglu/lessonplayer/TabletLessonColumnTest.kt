@@ -8,8 +8,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.test.click
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.getUnclippedBoundsInRoot
 import androidx.compose.ui.test.junit4.createComposeRule
@@ -122,7 +122,7 @@ class TabletLessonColumnTest {
         // sidebar on a Pixel 6. A real user closes it by tapping the exposed
         // right edge, rather than tapping through the sidebar at scrim center.
         composeRule.onNodeWithTag("tablet-lesson-sidebar-scrim").performTouchInput {
-            click(Offset(size.width - 12f, size.height / 2f))
+            click(percentOffset(.95f, .5f))
         }
         composeRule.waitForIdle()
         composeRule.waitUntil(timeoutMillis = 10_000) {
