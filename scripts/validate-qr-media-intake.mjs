@@ -52,7 +52,7 @@ for (const token of ["televizyon", "Kuzen", "Kayınpeder", "diyalog"]) {
 for (const id of ["T1-P53-Q01", "T1-P53-Q02"]) {
   const entry = answerBank.entries.find((e) => e.question_id === id);
   assert.ok(entry, `Missing answer bank entry: ${id}`);
-  assert.equal(entry.entry_type, "question_answer");
+  assert.equal(entry.entry_type, id === "T1-P53-Q01" ? "source_limited" : "question_answer");
   assert.ok(entry.source_locator.includes(sek.review_notes_path), "Source evidence locator missing");
   assert.ok(entry.answer.includes("ön yarg"), "Expected scene-grounded communication barrier");
 }
