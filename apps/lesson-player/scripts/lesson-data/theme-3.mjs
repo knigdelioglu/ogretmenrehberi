@@ -537,7 +537,7 @@ assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
 assert(huzur177ById.get("s177-source-photo")?.answer === null &&
   huzur177ById.get("s177-source-photo")?.content?.lead?.includes("çelişkili raporlar") &&
   huzur177ById.get("s177-source-photo")?.content?.sections?.some(section =>
-    section.title === "Kaynak doğrulama" && section.body.includes("görsel olarak doğrulanamadı")),
+    section.title === "Kaynak doğrulama" && section.body.includes("kesin olarak doğrulanamadı")),
   "Basılı s.177'deki farklı baskı ve raporlar kaynak kesinliği gibi sunulmamalı.");
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
   huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
