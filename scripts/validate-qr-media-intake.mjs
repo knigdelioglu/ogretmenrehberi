@@ -56,6 +56,19 @@ for (const id of ["T1-P53-Q01", "T1-P53-Q02"]) {
   assert.ok(entry.source_locator.includes(sek.review_notes_path), "Source evidence locator missing");
   assert.ok(entry.answer.includes("ön yarg"), "Expected scene-grounded communication barrier");
 }
+for (const [fileName, notePath] of [
+  ["19XU3SUD.mp4", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SUD.md"],
+  ["19XU3SW3.mp4", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SW3.md"],
+]) {
+  const record = intake.records.find((r) => r.file_name === fileName);
+  assert.ok(record, `Provisional media entry missing: ${fileName}`);
+  assert.equal(record.mapping_status, "provisional_png_and_visual_review");
+  assert.equal(record.existing_source_id, null, "Do not invent verified EBA identities");
+  assert.equal(record.review_notes_path, notePath);
+  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.ok(fs.readFileSync(path.join(root, notePath), "utf8").includes("ekran"));
+}
+
 const communicationBank = read("data/grade-11/source/teacher-book/theme-1/answer-bank/part-15-pages-64-67.json");
 for (const [sourceId, reviewFile] of [
   ["QR-EBA-29BF4F293D53", "data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md"],
