@@ -477,7 +477,7 @@ internal fun LibraryScreen(
                     modifier = Modifier.weight(1.25f).fillMaxHeight(),
                     verticalArrangement = Arrangement.spacedBy(LessonSpacing.small)
                 ) {
-                    if (classGroups.isNotEmpty()) {
+                    if (classGroups.isNotEmpty() && query.isBlank()) {
                         ClassGroupSummariesRow(
                             classGroups = classGroups,
                             activeClassGroup = classGroup,
@@ -495,7 +495,7 @@ internal fun LibraryScreen(
                         singleLine = true
                     )
                     LazyColumn(
-                        modifier = Modifier.weight(1f).fillMaxWidth(),
+                        modifier = Modifier.weight(1f).fillMaxWidth().testTag("library-lesson-list"),
                         contentPadding = PaddingValues(bottom = LessonSpacing.medium),
                         verticalArrangement = Arrangement.spacedBy(LessonSpacing.tiny)
                     ) {
@@ -550,11 +550,11 @@ internal fun LibraryScreen(
             }
         } else {
             LazyColumn(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth().testTag("library-lesson-list"),
                 contentPadding = PaddingValues(LessonSpacing.large),
                 verticalArrangement = Arrangement.spacedBy(LessonSpacing.medium)
             ) {
-                if (classGroups.isNotEmpty()) {
+                if (classGroups.isNotEmpty() && query.isBlank()) {
                     item {
                         ClassGroupSummariesRow(
                             classGroups = classGroups,
