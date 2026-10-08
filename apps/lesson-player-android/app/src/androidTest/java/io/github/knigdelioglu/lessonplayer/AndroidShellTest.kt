@@ -61,10 +61,10 @@ class AndroidShellTest {
             hasNodes(hasTestTag("lesson-outline-step-2"))
         }
         composeRule.onNodeWithTag("lesson-outline-step-2").performClick()
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-workspace-answer")) &&
-                hasNodes(hasTestTag("lesson-evidence-toggle"))
-        }
+        // The question card sits below the lesson header in a lazy list. Scroll
+        // to it before checking the teacher-only canonical answer.
+        composeRule.onNodeWithTag("lesson-screen-list")
+            .performScrollToNode(hasTestTag("lesson-workspace-answer"))
         composeRule.onNodeWithTag("lesson-previous").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-next").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithTag("lesson-workspace-answer").assertExists()
@@ -72,7 +72,16 @@ class AndroidShellTest {
             "Teacher answer is always visible; answer toggle must not be rendered",
             !hasNodes(hasTestTag("lesson-answer-toggle"))
         )
-        composeRule.onNodeWithTag("lesson-evidence-toggle").assertHeightIsAtLeast(48.dp)
+        // Evidence lives in the teacher assist sheet, not in a legacy
+        // "lesson-evidence-toggle" attached to the workspace.
+        composeRule.onNodeWithTag("lesson-screen-list")
+            .performScrollToNode(hasTestTag("teacher-assist-open-card"))
+        composeRule.onNodeWithTag("teacher-assist-open-card").performClick()
+        composeRule.onNodeWithTag("teacher-assist-sheet").assertExists()
+        composeRule.onNodeWithText("METİNSEL KANIT").assertExists()
+        composeRule.onNodeWithTag("teacher-assist-close").performClick()
+        composeRule.onNodeWithTag("lesson-screen-list")
+            .performScrollToNode(hasTestTag("lesson-presentation-toggle"))
         composeRule.onNodeWithTag("lesson-presentation-toggle")
             .assertIsEnabled().performClick()
 
@@ -183,9 +192,10 @@ class AndroidShellTest {
         if (hasNodes(hasTestTag("lesson-outline-open"))) {
             composeRule.onNodeWithTag("lesson-outline-open").performClick()
         }
-        composeRule.waitUntil(timeoutMillis = 10_000) {
-            hasNodes(hasTestTag("lesson-outline-step-1"))
-        }
+        // The outline restores scroll to the last selected step; its first
+        // row may not be composed until explicitly scrolled into view.
+        composeRule.onNodeWithTag("lesson-outline-list")
+            .performScrollToNode(hasTestTag("lesson-outline-step-1"))
         composeRule.onNodeWithTag("lesson-outline-step-1").performClick()
         val lessonList = composeRule.onNodeWithTag("lesson-screen-list")
         // The editor is a lazy-list item below the initial viewport, so scroll it
