@@ -25,7 +25,8 @@
         "Roman kişisinin canlanması": "Kişinin bir noktadan sonra yazarın önceden bütünüyle belirleyemeyeceği ayrıntılar kazanması.",
         "Yazarlık emeği": "Başlangıcın zor ve yıpratıcı oluşu; ilk müsveddelerin yazma sürecinde gelişmesi.",
         "Türkçe hakkında görüş": "Kemal Tahir'in Türkçeyi sanat ve düşünceyi anlatmak bakımından güçsüz görmemesi."
-      }
+      },
+      "guidance": "Öğretmen, öğrencilerin mülakatın yalnızca soru sorma etkinliği olmadığını; bir yazarın sanat atölyesine ve düşünce dünyasına açılan birincil kapı olduğunu fark etmelerini sağlamalıdır."
     },
     {
       "question_id": "T3-P210-Q02",
@@ -39,7 +40,8 @@
         "sorularin_onceden_hazirlanmasi": "Temel konuların unutulmasını ve gereksiz tekrarları azaltır; sorular arasında anlamlı sıra kurmayı kolaylaştırır.",
         "surenin_belirlenmesi": "Her başlığa ayrılacak zamanı dengelemeye ve görüşmenin gereksiz uzamasını önlemeye yardımcı olur.",
         "hedef_kitlenin_belirlenmesi": "Dil, kavram düzeyi ve açıklama ayrıntısının dinleyici/okura göre ayarlanmasını sağlar."
-      }
+      },
+      "guidance": "Öğrencilerin hazırlıksız konuşma ile hazırlıklı mülakat arasındaki farkı kavramaları ve planlamanın iletişim başarısındaki rolünü içselleştirmeleri desteklenmelidir."
     },
     {
       "question_id": "T3-P211-PERF01",
@@ -58,9 +60,14 @@
         "Örnek seçim": "Mümtaz — şehir, sanat, musiki ve kültürel geçmişe duyarlılığı nedeniyle kendime yakın buluyorum.",
         "Mülakatın amacı": "Mümtaz’ın İstanbul, geçmiş, kimlik ve yeni hayat hakkındaki düşüncelerini romanın bağlamına uygun hayalî sorularla görünür kılmak.",
         "Hedef kitle": "Sınıf arkadaşları.",
-        "Konuşma stratejisi": "Açık uçlu sorularla ilerleyen soru-cevap biçimi; cevaplarda Huzur’dan bilinen düşünce ve davranışları temel alma, hayalî eklemeleri karakterin metindeki özellikleriyle uyumlu tutma."
+        "Konuşma stratejisi": "Açık uçlu sorularla ilerleyen soru-cevap biçimi; cevaplarda Huzur’dan bilinen düşünce ve davranışları temel alma, hayalî eklemeleri karakterin metindeki özellikleriyle uyumlu tutma.",
+        "Farklı karakterler için soru başlangıçları": [
+          "Nuran: ‘Tarihî mekânları önemserken bugünkü insanların hangi ihtiyaçlarını göz önünde bulundurursunuz?’",
+          "İhsan: ‘Mümtaz’ın düşünme ve okuma alışkanlıklarının gelişiminde nasıl bir rol üstlendiniz?’"
+        ]
       },
-      "source_locator": "basılı s.211 / PDF s.212 — Performans Görevi"
+      "source_locator": "basılı s.211 / PDF s.212 — Performans Görevi",
+      "guidance": "Öğrencilere Mümtaz dışında Nuran ve İhsan gibi metinde dayanağı bulunan kişileri seçme olanağı tanıyın. Örnek soru başlangıçlarını taslak yazımından sonra gösterin; Suat ve Fâhir için doğrulanmamış kişilik veya replik üretmeyin."
     },
     {
       "question_id": "T3-P212-PERF01",
@@ -86,7 +93,8 @@
         ],
         "Hedef kitle beklentisi": "Sınıf arkadaşlarının roman kişisini daha iyi tanımasını sağlayacak, metindeki düşüncelere dayanan ve anlaşılır cevaplar.",
         "Sunumu zenginleştirme": "Soruları geçmiş → İstanbul → musiki → yeni hayat sırasıyla ilerletmek; kısa bir giriş ve sonuç kullanmak; gerektiğinde İstanbul ve musikiyle ilgili görsellerden yararlanmak."
-      }
+      },
+      "guidance": "Sorular roman kişisini gerçekten konuşturmalı; yalnız 'evet/hayır' cevabı doğuran veya kitapta dayanağı olmayan ayrıntıları soran maddeler elenmelidir."
     },
     {
       "question_id": "T3-P212-PERF02",
@@ -115,7 +123,8 @@
           "hayali_cevap": "Bu sorular geçmişe duyulan sevgiyi bugünün gerçeklerinden koparmamak gerektiğini hatırlatıyor. Kültürü korumakla yaşayan insanların ihtiyaçlarına duyarlı olmak birbirinin karşıtı değildir."
         },
         "Sonuç": "“Mümtaz’ın cevapları, geçmişe bağlılık ile yeni bir hayat kurma isteğinin romanda birlikte düşünüldüğünü gösteriyor.”"
-      }
+      },
+      "guidance": "Önce öğrencilerin seçtikleri karakter için kendi sorularını ve hayalî yanıtlarını yazmalarını isteyin. Örnek Mümtaz mülakatını yalnız karşılaştırma aşamasında açın; özgün roman sözleri ile yaratıcı varsayımları ayırmalarını sağlayın."
     },
     {
       "question_id": "T3-P213-PERF01",
@@ -134,7 +143,8 @@
         "Anlatım ilkeleri": "Akıcılık, duruluk ve yalınlık gibi anlatım ilkelerine bağlı kalmak.",
         "Görgü ve hassasiyet": "Görgü kurallarına uymak ve toplumsal hassasiyetlere aykırı ögelerden kaçınmak.",
         "Sunum becerileri": "Beden dilini, diksiyonu, zamanı ve mekânı etkili kullanmak."
-      }
+      },
+      "guidance": "Karakteri canlandırmak, yapay ağız taklidi yapmak anlamına gelmez. Kaynakta belirgin ağız özelliği yoksa standart ve karaktere uygun doğal Türkçe kullanılmalıdır."
     },
     {
       "question_id": "T3-P214-Q01",
@@ -149,7 +159,8 @@
         "Açık iletinin dayanağı": "Mümtaz’ın “İstanbul’u tanımadıkça kendimizi bulamayız.” ve “Bir hüviyet lâzım.” düşünceleri.",
         "Örtük ileti": "Yeni bir hayat kurmak için geçmişten kopmak gerekmez; kültürel miras bugünün ihtiyaçlarıyla birlikte değerlendirilebilir.",
         "Örtük iletinin dayanağı": "Mümtaz’ın geçmiş ve kimlik vurgusuyla “yeni hayat” düşüncesinin; Nuran’ın bugünün insanlarını ve koşullarını hatırlatan sorgulamalarıyla birlikte verilmesi."
-      }
+      },
+      "guidance": "Öğrenci başka bir roman kişisini seçtiyse açık/örtük ileti değerlendirmesi o kişinin kaynakta görülen söz ve davranışlarına göre yeniden yapılmalıdır."
     },
     {
       "question_id": "T3-P214-Q02",
@@ -166,7 +177,8 @@
         "Macide": "Yargı: Mümtaz’ın hayatında şefkat ve bakım yönüyle önemli bir yere sahiptir. Dayanak: anlatıcının, Macide’nin Mümtaz’ın kadın şefkatine ve güzelliğin terbiyesine en muhtaç olduğu zamanda hayatına girdiğini belirtmesi.",
         "Suat": "Verilen Huzur kesitlerinde Suat’ın kişiliği hakkında güvenilir ve ayrıntılı bir yargı kurmaya yetecek doğrudan kanıt yoktur.",
         "Fâhir": "Verilen Huzur kesitlerinde Fâhir’in kişiliği hakkında güvenilir ve ayrıntılı bir yargı kurmaya yetecek doğrudan kanıt yoktur."
-      }
+      },
+      "guidance": "Yargı bildirilirken sübjektif yakıştırmalar yapılmamalı; karakterin romanda söylediği bir söz veya yaptığı bir eylem dayanak olarak gösterilmelidir."
     },
     {
       "question_id": "T3-P214-PERF01",
@@ -184,7 +196,8 @@
         "Anlatım ilkeleri": "Akıcılık, duruluk ve yalınlık gibi anlatım ilkelerine uyulması.",
         "Ek ve kelime seçimi": "Eklerin doğru, kelimelerin bağlama uygun kullanılması.",
         "Sonraki adım": "Kısmen ya da yetersiz görülen becerilerin belirlenip sonraki konuşmada geliştirilmesi."
-      }
+      },
+      "guidance": "QR'deki Dereceli Puanlama Anahtarı ve Akran Değerlendirme Formu görülmeden bunlara ait puan, seviye veya ek ölçüt uydurulmamalıdır. Öğretmen, öğrencilerin formdaki 'Kısmen' ve 'Hayır' işaretlemelerini başarısızlık olarak değil, kişisel gelişim fırsatı ve somut eylem hedefi olarak görmelerini teşvik etmelidir."
     }
   ]
 }
