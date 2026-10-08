@@ -125,6 +125,69 @@ class PrivateListeningQueueTests(unittest.TestCase):
         self.assertNotIn("Deneme cümlesi", report)
         self.assertEqual(queue.run(self.args("--all", "--overwrite")), 0)
 
+    def test_five_real_video_overruns_do_not_create_fake_playback_time(self):
+        # Values measured on the user's original files with ffprobe. These
+        # are padded 29.98-second ASR segments, not evidence of audible words.
+        rows = [
+            ("19XU3SUD.mp4", 143.88, 120.00, 149.98),
+            ("19XU4CVR.mp4", 98.60, 90.00, 119.98),
+            ("19XU49JV.mp4", 207.07, 179.10, 209.08),
+            ("19XU49LQ.mp4", 429.00, 423.68, 453.66),
+            ("19XU3SW3.mp4", 146.16, 120.00, 149.98),
+        ]
+        for filename, duration, start, end in rows:
+            with self.subTest(file=filename):
+                record = dict(self.record, file_name=filename,
+                              duration_seconds=duration)
+                document = dict(self.document,
+                                video_file_name=filename,
+                                segments=[{
+                                    "index": 1,
+                                    "start_seconds": start,
+                                    "end_seconds": end,
+                                    "draft_text": "Unreviewed ASR audio",
+                                    "review_flags": [],
+                                    "human_verified": False,
+                                }])
+                segments = queue.scan_draft(record, document)
+                self.assertEqual(len(segments), 1)
+                item = segments[0]
+                self.assertEqual(item["start"], start)
+                self.assertEqual(item["end"], end)
+                self.assertEqual(item["play_start"], start)
+                self.assertEqual(item["play_end"], duration)
+                self.assertIn("beyond_media_end_check_audio", item["flags"])
+                self.assertEqual(item["priority"], "HIGH")
+                report = queue.generate_report([{
+                    "file": filename, "page": 83,
+                    "status": "ASR_DRAFT_TIMING_REVIEW",
+                    "segments": segments,
+                }])
+                self.assertIn("Ham ASR:", report)
+                self.assertIn("Dinleme:", report)
+                self.assertIn(f"+{end - duration:.2f} sn", report)
+                self.assertNotIn("Unreviewed ASR audio", report)
+        self.assertEqual(queue.clock(143.88), "02:23.88")
+        self.assertEqual(queue.clock(98.60), "01:38.60")
+
+    def test_entirely_outside_media_has_no_playable_audio(self):
+        record = dict(self.record, duration_seconds=84)
+        document = dict(self.document, segments=[
+            dict(self.document["segments"][0],
+                 start_seconds=84, end_seconds=113.98)
+        ])
+        item = queue.scan_draft(record, document)[0]
+        self.assertEqual(item["play_start"], 84)
+        self.assertEqual(item["play_end"], 84)
+        self.assertIn("segment_starts_after_media_end_possible_hallucination",
+                      item["flags"])
+        report = queue.generate_report([{
+            "file": record["file_name"], "page": 83,
+            "status": "ASR_DRAFT_TIMING_REVIEW", "segments": [item],
+        }])
+        self.assertIn("Oynatılabilir ses yok", report)
+        self.assertIn("Ham ASR:", report)
+
     def test_nonfinite_and_negative_timestamp_remain_invalid(self):
         for start, end in [(-1., 2.), (float("nan"), 3.),
                            (2., float("inf")), (10., 3.)]:
