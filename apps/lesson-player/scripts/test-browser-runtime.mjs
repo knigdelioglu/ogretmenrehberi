@@ -446,7 +446,7 @@ try {
       lesson: "T11-T04-TIYATRO-CANLANDIRMA-280-283",
       step: "s283-performance",
       selector: '[data-content-layout="assessment"] .assessment-criterion',
-      count: 5
+      count: 6
     },
     {
       lesson: "T11-T01-KONUSMA",

@@ -45,7 +45,16 @@ for (const [filename, relativeFlow, stepId, count] of files) {
     assert.deepEqual(step.content.scale, ["Evet", "Kısmen", "Hayır"], `${stepId} displays the original peer scale`);
   } else {
     const levels = step.content.sections.filter((section) => section.title !== "Toplam puan ve hesaplama" && /puan/.test(section.title));
-    assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
+    if (relativeFlow.includes("/theme-4/")) {
+      assert.equal(levels.length, count, `${stepId} groups all rubric levels under six criteria`);
+      for (const section of levels) {
+        for (const level of ["Başlangıç düzeyinde", "Kabul edilebilir", "İyi", "Çok iyi"]) {
+          assert.ok(section.body.includes(level), `${stepId}/${section.title}: missing ${level}`);
+        }
+      }
+    } else {
+      assert.equal(levels.length, count * 4, `${stepId} preserves four point-bearing levels for every criterion`);
+    }
     assert.ok(step.content.sections.some((section) => section.title === "Toplam puan ve hesaplama"),
       `${stepId} explains the total-score calculation`);
     assert.ok(step.content.sources.some((source) => source.url.startsWith("https://") && /#page=/.test(source.url)),
@@ -142,3 +151,6 @@ assert.equal(menuFiles[0]?.label, "Puanlama Exceli", "the workbook is first in t
 assert.equal(menuFiles[0]?.type, "XLSX");
 assert.deepEqual(menuFiles.map((file) => path.basename(file.url)).sort(), downloadedNames);
 console.log(`[sunum-web] Assessment materials passed: ${files.length} DOCX links, Puanlama Exceli and ${menuFiles.length} files in the menu catalog.`);
+
+// Keep Theme 4 pedagogical scope checks in the existing CI test run.
+await import("./test-theme-4-presentation.mjs");
