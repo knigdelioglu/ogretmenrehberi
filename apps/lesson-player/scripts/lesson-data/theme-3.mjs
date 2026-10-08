@@ -535,20 +535,20 @@ assert(huzur177ById.get("s177-q14")?.answer?.question_id === "T3-P177-Q14" &&
   huzur177ById.get("s177-q14")?.answer?.answer_sections?.ortuk_iletiler?.length===3,
   "s.177 14. soruda açık/örtük iletiler ayrıştırılmalı.");
 assert(huzur177ById.get("s177-source-photo")?.answer === null &&
-  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("şiir dizeleri görüntüde yer almıyor") &&
+  huzur177ById.get("s177-source-photo")?.content?.lead?.includes("çelişkili raporlar") &&
   huzur177ById.get("s177-source-photo")?.content?.sections?.some(section =>
-    section.title === "Kaynak sınırı" && section.body.includes("Fotoğraftan şiirin içeriği")),
-  "Basılı s.177 fotoğrafı şiir metni yerine geçmemeli; kaynak sınırı görünür olmalı.");
+    section.title === "Kaynak doğrulama" && section.body.includes("görsel olarak doğrulanamadı")),
+  "Basılı s.177'deki farklı baskı ve raporlar kaynak kesinliği gibi sunulmamalı.");
 assert(huzur177ById.get("s178-compare-task")?.answer?.question_id === "T3-P177-COMP01" &&
   huzur177ById.get("s178-compare-task")?.answer?.entry_type === "source_limited" &&
   huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.Huzur?.İçerik &&
-  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("ölçütleri bu kaynağa dayanarak tamamlanamaz") &&
+  huzur177ById.get("s178-compare-task")?.answer?.answer_sections?.["Mescid-i Aksa"]?.includes("doğrulanmadan") &&
   huzur177ById.get("s178-compare-task")?.content?.lead?.includes("şiirin doğrulanmış tam metni sağlanıncaya kadar"),
-  "Karşılaştırma Huzur tarafını yanıtlamalı, şiire bağlı tarafı kaynağa bağlı olarak açık bırakmalı.");
-assert(huzur177ById.get("s178-huzur-context")?.answer?.answer_sections?.["Örnek çalışma"]?.["Mescid-i Aksa — kaynak sınırı"]?.includes("dönem ve zihniyet çıkarımı bu kaynağa dayanarak yapılamaz"),
-  "Şiirin dönem ve zihniyet özellikleri eldeki PDF’ye atfedilmemeli.");
-assert(huzur177ById.get("s178-huzur-message")?.answer?.answer_sections?.["Örnek çalışma"]?.["Mescid-i Aksa — kaynak sınırı"]?.includes("üslup ve ileti ölçütleri tamamlanamaz"),
-  "Şiirin üslup ve ileti özellikleri doğrulanmış metin olmadan verilmemeli.");
+  "Karşılaştırma Huzur tarafını yanıtlamalı, şiire bağlı tarafı kaynak doğrulanıncaya dek açık bırakmalı.");
+for(const id of ["s178-huzur-context","s178-huzur-message"]) {
+  assert(huzur177ById.get(id)?.answer?.answer_sections?.["Örnek çalışma"]?.["Mescid-i Aksa — kaynak sınırı"]?.includes("görsel olarak doğrulanamadı"),
+    "Şiirin özellikleri eldeki baskı görseli doğrulanmadan kesinleştirilmemeli.");
+}
 for(const id of ["s178-huzur-content","s178-huzur-context","s178-huzur-message"]){
   assert(huzur177ById.get(id)?.answer?.entry_type === "performance_support" &&
     !huzur177ById.get(id)?.content?.sections &&
