@@ -422,16 +422,28 @@ class ContentRepository(
             require(type in setOf("question_answer", "performance_support", "source_limited")) {
                 "Unsupported answer category $type"
             }
+            // Canonical web data permits a structured-only answer without a summary.
+            // Keep the actual structure; never invent a summary or accept an empty answer.
+            val answerText = value.optionalString("answer").orEmpty()
+            val sections = value.optionalJson("answer_sections")
+            val hasStructuredAnswer = when (sections) {
+                is JsonValue.Object -> sections.values.isNotEmpty()
+                is JsonValue.Array -> sections.items.isNotEmpty()
+                else -> false
+            }
+            require(answerText.isNotBlank() || hasStructuredAnswer) {
+                "Answer has neither text nor structured sections: ${value.getString("question_id")}"
+            }
             return AnswerEntry(
                 questionId = value.getString("question_id"),
                 entryType = type, printedPage = value.getInt("printed_page"),
                 questionNo = value.optionalString("question_no"),
                 promptSummary = value.getString("prompt_summary"),
-                answer = value.getString("answer").also { require(it.isNotBlank()) },
+                answer = answerText,
                 guidance = value.optionalString("guidance"),
                 explanation = value.optionalString("explanation"),
                 evidenceQuotes = value.optArray("evidence_quotes")?.strings() ?: emptyList(),
-                answerSections = value.optionalJson("answer_sections"),
+                answerSections = sections,
                 sourceLocator = value.getString("source_locator"),
                 dictionaryTerms = value.optArray("dictionary_terms")?.objects { item ->
                     val term = item.getString("term").trim()
