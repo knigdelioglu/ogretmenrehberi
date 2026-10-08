@@ -12,14 +12,18 @@
       "prompt_summary": "Seksenler videosundaki sözlü iletişim engellerini belirleme",
       "answer": "Seksenler videosunda etkin dinlememe, ilgisizlik, dikkatin televizyona yönelmesi ve ön yargı öne çıkan iletişim engelleridir. Televizyon izleyen baba kendisiyle konuşmak isteyen kişiyi ve sonrasındaki aracılık girişimini dinlemez. Başka bir sahnede kayınpeder, damadının anlattıklarına karşı ön yargıyla yaklaşır.",
       "answer_sections": {
-        "Sahne ve iletişim engeli": [
-          "Babayla konuşma girişimi: Baba televizyona odaklanır ve karşısındakini dinlemez — dikkat dağınıklığı, ilgisizlik, etkin dinlememe.",
-          "Kuzenin aracılık girişimi: Baba dolaylı iletilmeye çalışılan sözü de dinlemez — dinlemeye isteksizlik, iletişime kapalı olma.",
-          "Kayınpeder ile damat: Kayınpeder damadının sözlerini ön yargıyla karşılar — peşin hüküm, etkin dinlememe."
+        "Videoyu_İzlerken_Kontrol_Edilebilecek_Olası_İletişim_Engelleri": [
+          "Baba televizyona odaklandığı için karşısındaki kişiyi dinlemez: dikkat dağınıklığı, ilgisizlik ve etkin dinlememe.",
+          "Kuzenin mesaj iletme amacıyla aracı kullanma girişimi de karşılık bulmaz: dinlemeye isteksizlik ve iletişime kapalılık.",
+          "Kayınpeder damadına ön yargıyla yaklaşarak anlattıklarını dinlemez: peşin hüküm ve etkin dinlememe."
         ],
-        "Gözlemi yorumdan ayırma": [
-          "Gözlem: Babanın televizyondan ilgisini ayırmaması. Yorum: Bu tutumun konuşanı önemsiz hissettirebilmesi.",
-          "Gözlem: Kayınpederin damadı dinlememesi; kullanıcının aktardığı bağlamda ön yargıyla yaklaşması. Yorum: Ön yargının karşılıklı anlamayı azaltabilmesi."
+        "Çok_Modlu_Metin_Kavramı": [
+          "Çok modlu metin, anlamı yalnız yazı veya sözle değil; görsel, ses, müzik, jest-mimik, hareket ve mekânsal düzen gibi birden fazla iletişim modunu birlikte kullanarak kuran metindir.",
+          "Bu unsurlar yalnız yan yana bulunmaz; birbirini tamamlayıp güçlendirerek metnin anlamını oluşturur. Örneğin bir videoda söz, görüntü, ses ve hareket birlikte anlam taşır."
+        ],
+        "Gözlem tablosu": [
+          "Sahne / gözlenen davranış / iletişim engeli başlıklı üç sütun açın ve üç sahneyi karşılaştırın.",
+          "Videoda doğrulanmayan söz kesme, sert ses tonu veya özel replikler eklemeyin. Davranışı gözlem olarak, olası etkisini yorum olarak kaydedin."
         ]
       },
       "guidance": "Önce üç sahnede kimin neyi dinlemediğini öğrencilerden bulmalarını isteyin; sonra davranışı iletişim engeliyle eşleştirin. Videoda teyit edilmeyen söz kesme, sert ses tonu veya replikleri gerçekleşmiş gibi sunmayın.",
@@ -34,15 +38,17 @@
       "prompt_summary": "Sözlü iletişim engellerinin iletişime etkisi",
       "answer": "Videoda baba televizyon izlerken kendisiyle konuşmak isteyenleri dinlemediği için iletilmek istenen mesaj karşılık bulmaz. Kuzenin aracı kullanma girişimi de dinlenmeyince iletişim kopukluğu sürer. Kayınpederin damadına ön yargılı yaklaşması ise söylenenlerin değerlendirilmesini engeller. Bu engeller yanlış anlaşılma, kırgınlık ve kişiler arası uzaklaşma doğurabilir; etkin ve ön yargısız dinleme iletişimi güçlendirir.",
       "answer_sections": {
-        "Videodaki olaylardan çıkarılabilecek sonuçlar": [
-          "Televizyona odaklanma: Konuşmacı sözünü söylemeye çalışsa bile alıcı dikkat vermeyince ileti amacına ulaşmaz.",
-          "Aracılık girişiminin sonuçsuz kalması: Muhatap dinlemeye kapalıysa mesajı farklı bir kişiden iletmek de her zaman çözüm olmaz.",
-          "Damada yönelik ön yargı: Kişiyi baştan yargılamak söylenenleri anlamadan reddetmeye neden olabilir."
+        "Bireysel_ve_Psikolojik_Boyut": [
+          "Televizyon izleyen baba dikkatini vermediği için konuşmak isteyen kişi kendini önemsenmemiş hissedebilir ve mesajını iletemeyebilir.",
+          "Damadın ön yargıyla dinlenmemesi, kendisini açıklama isteğini azaltabilir; bu sonuç kesin duygu beyanı değil, sahnenin olası etkisidir."
         ],
-        "Sınıf tartışmasında sınanabilecek çözüm önerileri": [
-          "Konuşma için uygun zaman ve ortam seçmek; televizyon gibi dikkat dağıtıcı etkenleri azaltmak.",
-          "Karşıdakinin sözünü tamamlamasına fırsat verip anlaşılan mesajı kontrol etmek.",
-          "Ön yargıları askıya alıp söyleneni kişiden bağımsız değerlendirmek."
+        "İlişkisel_ve_Sosyal_Boyut": [
+          "Aracı kullanma girişimi de dinlenmeyince bilgi aktarımı gerçekleşmez; iletişimdeki kopukluk sürer.",
+          "Kayınpederin ön yargısı, söylenenleri gerçekten değerlendirmeden reddetmeye ve karşılıklı anlayışın azalmasına yol açabilir."
+        ],
+        "Performans_Görevine_Yansıtılacak_Aksiyonlar": [
+          "Canlandırmada dikkat dağıtıcı televizyon veya dinlemeye kapalı bir karakterle iletişim engeli oluşturun; çözüm sahnesinde dinlemeye alan açın.",
+          "Ön yargılı yaklaşımı önce gösterip daha sonra soru sorma, söz hakkı verme ve etkin dinlemeyle nasıl aşılabileceğini deneyin."
         ]
       },
       "guidance": "Tahtada iki sütun oluşturun: 'Videodaki davranış' ve 'İletişime etkisi'. Öğrencilerden her sahneye dayalı en az bir gerekçe istemek yeterlidir; tek cevap dayatmayın. İsterseniz önerilen çözümleri 54–55. sayfalardaki drama taslağına taşıyın.",
