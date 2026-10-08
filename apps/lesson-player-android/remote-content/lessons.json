@@ -57533,7 +57533,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Sıra Sizde — Altı çizili ifadeler dönemin sosyal hayatını yansıtıyor mu?",
+        "display_prompt": "Sıra Sizde — Kitaptaki yedi ifadeyi sosyal hayat açısından değerlendirin.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T04-S0015",
@@ -57574,7 +57574,7 @@
             "meyvesini toplamak",
             "bir ders gibi"
           ],
-          "note": "Kelimenin eski görünmesi, tek başına dönemin toplumsal kurumunu veya yaşayışını yansıttığı anlamına gelmez."
+          "note": "“Acemi Ocağı” satırı kitapta Evet ve gerekçesiyle örnek olarak doldurulmuştur. Kalan altı satırda sosyal hayatla ilgiyi metin kanıtıyla gerekçelendirin; yalnızca eski bir sözcük oluşuna dayanmayın."
         }
       },
       {
@@ -61037,7 +61037,7 @@
         "density": "compact",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Yaşam ve merdiven — Ortak çağrışımlarını karşılaştırınız.",
+        "display_prompt": "Okuma öncesi — Merdiven size hangi farklı çağrışımları düşündürüyor?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T04-S0042",
@@ -61051,19 +61051,15 @@
         },
         "answer": null,
         "content": {
-          "lead": "Fiziksel merdivenin hareketini hayata uygularken bunun henüz metin öncesi tahmin olduğunu açık tutun.",
+          "lead": "Henüz hikâyeyi okumadan başlık ve günlük deneyimlerinizden hareketle farklı çağrışımlar üretin; bunları metnin anlamı olarak kesinleştirmeyin.",
           "sections": [
             {
-              "title": "Basamak",
-              "body": "Zamanla ilerleme veya yaşam evresi."
+              "title": "Gözlem",
+              "body": "Merdivenin gündelik hayatta nerelerde ve hangi amaçlarla kullanıldığını söyleyin."
             },
             {
-              "title": "Çıkma",
-              "body": "Hedefe yönelme, yükselme veya çaba."
-            },
-            {
-              "title": "İnme",
-              "body": "Yavaşlama, geri dönme ya da bakış açısı değişimi."
+              "title": "İlk tahminler",
+              "body": "Başlığın hikâyede neyi anlatabileceğine dair birden fazla tahmin yazın; gerekçe olarak yalnız ön bilgilerinizi kullanın."
             }
           ]
         }
@@ -61232,7 +61228,7 @@
         "density": "compact",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Ön tahmini kontrol edin — Metinde merdiven yalnız fiziksel bir mekân mı?",
+        "display_prompt": "Okuma sonrası — İlk tahmininizi metindeki ayrıntılarla sınayınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T04-S0042",
@@ -61246,15 +61242,15 @@
         },
         "answer": null,
         "content": {
-          "lead": "İlk tahmininize dönün ve daha sonra s.267–270'te tartışacağınız simgesel anlamlara hazırlık yapın.",
+          "lead": "Ön okuma tahminini olduğu gibi koruyun. Metinde gerçekten anlatılan olayları belirleyin; ardından simgesel yorumların hangilerine metinden gerekçe bulabildiğinizi tartışın.",
           "sections": [
             {
-              "title": "Somut düzey",
-              "body": "Memurların katlar arasında inip çıkması ve yolda karşılaşması."
+              "title": "Metindeki somut düzey",
+              "body": "Memurların katlar arasında inip çıkması ve yolda karşılaşması gibi gözlenebilir ayrıntıları belirleyin."
             },
             {
-              "title": "Çağrışım",
-              "body": "Anlatıcının hayata, yaşlanmaya ve çalışmaya bakışındaki değişimi düşündüren tekrarlar."
+              "title": "Olası simgesel okumalar",
+              "body": "Basamak, çıkma ve inmenin yaşam evreleri, çaba veya yön değiştirmeyle ilişkisi kurulabilir mi? Başka yorumlara da açık kalın; her yorumu metin kanıtıyla sınayın."
             }
           ]
         }
@@ -65504,103 +65500,31 @@
           "guidance": "Karekod anahtarına erişildiğinde eksikler o ölçütlere göre giderilir. Buradaki görünür ölçütler, rubriğin tamamı olarak sunulmamalıdır."
         },
         "content": {
-          "lead": "Aşağıda kitaptaki anahtarda yer alan ölçütler, dört puan düzeyi ve aralıklarıyla gösterilmiştir.",
+          "lead": "Her ölçütte dört başarı düzeyini ve puan aralıklarını aynı kartta karşılaştırın. Uygulama desteği ile bağlantılı dereceli puanlama anahtarını birlikte kullanın; puanlamada kaynak belgeyi esas alın.",
           "sections": [
             {
-              "title": "Başlangıç düzeyinde · 1–2 puan",
-              "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu içeriğine uygun bir şekilde canlandıramamıştır"
+              "title": "İçeriğe uygunluk · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–2 puan: Oyunu içeriğine uygun bir şekilde canlandıramamıştır.  •  Kabul edilebilir · 3–5 puan: Oyunu kısmen içeriğine uygun bir şekilde canlandırmıştır.  •  İyi · 6–9 puan: Oyunu içeriğine uygun bir şekilde canlandırmıştır.  •  Çok iyi · 10–15 puan: Oyunu içeriğe uygunluk açısından oldukça başarılı bir düzeyde canlandırmıştır."
             },
             {
-              "title": "Kabul edilebilir · 3–5 puan",
-              "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu kısmen içeriğine uygun bir şekilde canlandırmıştır"
+              "title": "Grupla uyum içinde çalışma · 20 puan",
+              "body": "Başlangıç düzeyinde · 1–4 puan: Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmamıştır.  •  Kabul edilebilir · 5–8 puan: Oyun hazırlıkları ve canlandırma esnasında grupla kısmen uyum içerisinde çalışmıştır.  •  İyi · 9–15 puan: Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmıştır.  •  Çok iyi · 16–20 puan: Oyun hazırlıkları ve canlandırma esnasında grupla çok uyumlu çalışmıştır."
             },
             {
-              "title": "İyi · 6–9 puan",
-              "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu içeriğine uygun bir şekilde canlandırmıştır"
+              "title": "Özgünlük · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–3 puan: Oyunu canlandırırken kendi yorumunu hiç katmamıştır.  •  Kabul edilebilir · 4–7 puan: Oyunu canlandırırken kendi yorumunu kısmen katmıştır.  •  İyi · 8–11 puan: Oyunu canlandırırken kendi yorumunu yeterince katmıştır.  •  Çok iyi · 12–15 puan: Oyunu canlandırmada  kendi yorumu çok başarılı düzeydedir."
             },
             {
-              "title": "Çok iyi · 10–15 puan",
-              "body": "Ölçüt: İçeriğe uygunluk  (15 puan). Oyunu içeriğe uygunluk açısından oldukça başarılı bir düzeyde canlandırmıştır"
+              "title": "Canlandırma becerisi · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–2 puan: Oyunu canlandırma becerisi yetersizdir.  •  Kabul edilebilir · 3–5 puan: Oyunu canlandırma becerisi kısmen yeterlidir.  •  İyi · 6–9 puan: Oyunu canlandırma becerisi yeterlidir.  •  Çok iyi · 10–15 puan: Oyunu canlandırma becerisi oldukça başarılıdır."
             },
             {
-              "title": "Başlangıç düzeyinde · 1–4 puan",
-              "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmamıştır"
+              "title": "Türkçenin doğru kullanımı · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–3 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısına hiç dikkat etmemiştir.  •  Kabul edilebilir · 4–7 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısına kısmen dikkat etmiştir.  •  İyi · 8–11 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısını yeterli düzeyde yansıtmıştır.  •  Çok iyi · 12–15 puan: Oyunu canlandırırken dönemin ve karakterin dil yapısını yansıtmada oldukça başarılıdır."
             },
             {
-              "title": "Kabul edilebilir · 5–8 puan",
-              "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla kısmen uyum içerisinde çalışmıştır"
-            },
-            {
-              "title": "İyi · 9–15 puan",
-              "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla uyum içerisinde çalışmıştır"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Grupla uyum içinde çalışma  (20 puan). Oyun hazırlıkları ve canlandırma esnasında grupla çok uyumlu çalışmıştır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–3 puan",
-              "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırırken kendi yorumunu hiç katmamıştır"
-            },
-            {
-              "title": "Kabul edilebilir · 4–7 puan",
-              "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırırken kendi yorumunu kısmen katmıştır"
-            },
-            {
-              "title": "İyi · 8–11 puan",
-              "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırırken kendi yorumunu yeterince katmıştır"
-            },
-            {
-              "title": "Çok iyi · 12–15 puan",
-              "body": "Ölçüt: Özgünlük  (15 puan). Oyunu canlandırmada  kendi yorumu çok başarılı düzeydedir"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–2 puan",
-              "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi yetersizdir"
-            },
-            {
-              "title": "Kabul edilebilir · 3–5 puan",
-              "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 6–9 puan",
-              "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi yeterlidir"
-            },
-            {
-              "title": "Çok iyi · 10–15 puan",
-              "body": "Ölçüt: Canlandırma becerisi  (15 puan). Oyunu canlandırma becerisi oldukça başarılıdır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–3 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısına hiç dikkat etmemiştir"
-            },
-            {
-              "title": "Kabul edilebilir · 4–7 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısına kısmen dikkat etmiştir"
-            },
-            {
-              "title": "İyi · 8–11 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısını yeterli düzeyde yansıtmıştır"
-            },
-            {
-              "title": "Çok iyi · 12–15 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Oyunu canlandırırken dönemin ve karakterin dil yapısını yansıtmada oldukça başarılıdır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–4 puan",
-              "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine dikkat etmemiştir"
-            },
-            {
-              "title": "Kabul edilebilir · 5–8 puan",
-              "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine kısmen dikkat etmiştir"
-            },
-            {
-              "title": "İyi · 9–15 puan",
-              "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlaması, jest ve mimikleri yeterli düzeydedir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Sözü ve beden dilini etkili kullanma  (20 puan). Canlandırma esnasında vurgu ve tonlama ile jest ve mimiklerini kullanmada oldukça başarılıdır"
+              "title": "Sözü ve beden dilini etkili kullanma · 20 puan",
+              "body": "Başlangıç düzeyinde · 1–4 puan: Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine dikkat etmemiştir.  •  Kabul edilebilir · 5–8 puan: Canlandırma esnasında vurgu ve tonlamasına, jest ve mimiklerine kısmen dikkat etmiştir.  •  İyi · 9–15 puan: Canlandırma esnasında vurgu ve tonlaması, jest ve mimikleri yeterli düzeydedir.  •  Çok iyi · 16–20 puan: Canlandırma esnasında vurgu ve tonlama ile jest ve mimiklerini kullanmada oldukça başarılıdır."
             },
             {
               "title": "Toplam puan ve hesaplama",
@@ -65624,11 +65548,12 @@
             }
           ],
           "items": [
-            "Kurgulanan içeriğe uygunluk",
+            "İçeriğe uygunluk",
+            "Grupla uyum içinde çalışma",
             "Özgünlük",
-            "Sözü etkili kullanma",
-            "Beden dilini etkili kullanma",
-            "Grupla uyum içinde çalışma"
+            "Canlandırma becerisi",
+            "Türkçenin doğru kullanımı",
+            "Sözü ve beden dilini etkili kullanma"
           ]
         }
       },
@@ -67006,9 +66931,10 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "note"
         ],
-        "display_prompt": "Metni Anlayalım 2 — Zihin haritasını beş başlıkta doldurunuz.",
+        "display_prompt": "Metni Anlayalım 2 — Zihin haritasındaki dört boş alanı doldurunuz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T04-S0088",
@@ -67040,14 +66966,14 @@
           "guidance": "Tema, konu, ana düşünce ve yardımcı düşünceleri yalnız videodaki gerçek içerik ve notlardan çıkarın. “Bilgilerin Sunuluş Şekli” alanında ders kitabında verilen ifadeyi koruyun."
         },
         "content": {
-          "lead": "Konu, tema ve ana düşünceyi birbirine karıştırmayın; bilgilerin sunuluş biçimini gerçekten kullanılan video yöntemlerine göre yazın.",
+          "lead": "Notlarınızdan hareketle tema, konu, ana düşünce ve yardımcı düşünceleri ayrı ayrı belirleyin. Kitapta hazır yazılmış beşinci alanı yeniden doldurmayın.",
           "items": [
-            "Konu",
             "Tema",
+            "Konu",
             "Ana düşünce",
-            "Yardımcı düşünceler",
-            "Bilgilerin sunuluş şekli"
-          ]
+            "Yardımcı düşünceler"
+          ],
+          "note": "Kitapta hazır verilen bilgi — Bilgilerin Sunuluş Şekli: “Bilgiler, içeriği yansıtacak şekilde sunulmuştur.”"
         }
       },
       {
@@ -69631,8 +69557,10 @@
         "layout": "process",
         "density": "compact",
         "sections_layout": "grid",
-        "reveal_order": [],
-        "display_prompt": "Afiş stratejisi — Mesajı altı saniyede anlaşılır kılacak biçimde sadeleştiriniz.",
+        "reveal_order": [
+          "note"
+        ],
+        "display_prompt": "Afiş stratejisi — Belgeselin iletisini hedef kitleye anlaşılır biçimde aktarınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T04-S0121",
@@ -69646,21 +69574,22 @@
         },
         "answer": null,
         "content": {
-          "lead": "3–4 slogan taslağı üretin; en açık ve kısa olanı seçin. Görselin slogandaki sözcükleri tekrar etmek yerine mesajı güçlendirmesini sağlayın.",
+          "lead": "Belgeselden doğrulayabildiğiniz iletiye ve hedef kitlenize göre slogan ile görseli birlikte tasarlayın. Birkaç taslak üretip en anlaşılır ve tutarlı olanı seçebilirsiniz.",
           "sections": [
             {
-              "title": "Slogan",
-              "body": "3–5 sözcük, kısa ve akılda kalıcı."
+              "title": "Slogan — örnek yöntem",
+              "body": "3–5 sözcüklü kısa bir slogan deneyebilirsiniz; uzunluk zorunlu kural değildir. İleti ve hedef kitle daha farklı bir anlatımı gerektirebilir."
             },
             {
-              "title": "Görsel",
-              "body": "Tek güçlü imge; ana iletiyi yorumlayan veya destekleyen."
+              "title": "Görsel — örnek yöntem",
+              "body": "Tek güçlü imge kullanmayı deneyebilirsiniz; asıl ölçüt görselin doğrulanmış iletiyi desteklemesi ve mesaj–imge bütünlüğüdür."
             },
             {
-              "title": "Hiyerarşi",
-              "body": "İlk bakışta neyin önce görüleceği açık."
+              "title": "Sözel ve görsel hiyerarşi",
+              "body": "Okunurluğu ve ilk bakışta anlaşılmayı sınayın. Altı saniyelik bakış testi yalnızca denenebilir bir yöntemdir, değerlendirmede tek başarı ölçütü değildir."
             }
-          ]
+          ],
+          "note": "Değerlendirmede mesajın anlaşılırlığı, belgesel içeriğine bağlılık, görsel bütünlük ve hedef kitle uygunluğu esastır."
         }
       },
       {
@@ -70555,103 +70484,31 @@
           "guidance": "Görünen ölçütleri afişinize uygulayın. Ayrıntılı puanlama anahtarı elinizdeyse düzey ve puanları o anahtara göre belirleyin."
         },
         "content": {
-          "lead": "Aşağıda kitaptaki anahtarda yer alan ölçütler, dört puan düzeyi ve aralıklarıyla gösterilmiştir.",
+          "lead": "Her ölçütte dört başarı düzeyini ve puan aralıklarını aynı kartta karşılaştırın. Uygulama desteği ile bağlantılı dereceli puanlama anahtarını birlikte kullanın; puanlamada kaynak belgeyi esas alın.",
           "sections": [
             {
-              "title": "Başlangıç düzeyinde · 1–2 puan",
-              "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu yansıtacak şekilde hazırlanmamıştır"
+              "title": "Konuya uygunluk · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–2 puan: Afiş, konuyu yansıtacak şekilde hazırlanmamıştır.  •  Kabul edilebilir · 3–5 puan: Afiş, konuyu kısmen yansıtacak şekilde hazırlanmıştır.  •  İyi · 6–9 puan: Afiş, konuyu yeterli düzeyde yansıtacak şekilde hazırlanmıştır.  •  Çok iyi · 10–15 puan: Afiş, konuyu oldukça başarılı yansıtacak şekilde hazırlanmıştır."
             },
             {
-              "title": "Kabul edilebilir · 3–5 puan",
-              "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu kısmen yansıtacak şekilde hazırlanmıştır"
+              "title": "Yaratıcılık · 20 puan",
+              "body": "Başlangıç düzeyinde · 1–4 puan: Afiş hazırlamada yaratıcılık alt düzeydedir.  •  Kabul edilebilir · 5–8 puan: Afiş hazırlamada yaratıcılık fark edilir düzeydedir.  •  İyi · 9–15 puan: Afiş hazırlamada yaratıcılık yeterli düzeydedir.  •  Çok iyi · 16–20 puan: Afiş hazırlamada yaratıcılık düzeyi oldukça yüksektir."
             },
             {
-              "title": "İyi · 6–9 puan",
-              "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu yeterli düzeyde yansıtacak şekilde hazırlanmıştır"
+              "title": "Özgünlük · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–3 puan: Afiş içeriği özgün değildir.  •  Kabul edilebilir · 4–7 puan: Afiş içeriği kısmen özgündür.  •  İyi · 8–11 puan: Afiş içeriği yeterince özgündür.  •  Çok iyi · 12–15 puan: Afiş içeriği özgünlüğü oldukça güçlüdür."
             },
             {
-              "title": "Çok iyi · 10–15 puan",
-              "body": "Ölçüt: Konuya uygunluk   (15 puan). Afiş, konuyu oldukça başarılı yansıtacak şekilde hazırlanmıştır"
+              "title": "Görsel/İşitsel ögelerin seçimi · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–2 puan: Afişte konuya ait görsel ögelerin kullanımı yetersizdir.  •  Kabul edilebilir · 3–5 puan: Afişte konuya ait görsel ögelerin kullanımı kısmen yeterlidir.  •  İyi · 6–9 puan: Afişte konuya ait görsel ögelerin kullanımı başarılıdır.  •  Çok iyi · 10–15 puan: Afişte konuya ait görsel ögelerin kullanımı oldukça başarılıdır."
             },
             {
-              "title": "Başlangıç düzeyinde · 1–4 puan",
-              "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık alt düzeydedir"
+              "title": "Türkçenin doğru kullanımı · 15 puan",
+              "body": "Başlangıç düzeyinde · 1–3 puan: Afiş, Türkçenin doğru kullanımı açısından alt düzeydedir.  •  Kabul edilebilir · 4–7 puan: Afiş, Türkçenin doğru kullanımı açısından kısmen yeterlidir.  •  İyi · 8–11 puan: Afiş, Türkçenin doğru kullanımı açısından yeterlidir.  •  Çok iyi · 12–15 puan: Afiş, Türkçenin doğru kullanımı açısından oldukça başarılıdır."
             },
             {
-              "title": "Kabul edilebilir · 5–8 puan",
-              "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık fark edilir düzeydedir"
-            },
-            {
-              "title": "İyi · 9–15 puan",
-              "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık yeterli düzeydedir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Yaratıcılık  (20 puan). Afiş hazırlamada yaratıcılık düzeyi oldukça yüksektir"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–3 puan",
-              "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği özgün değildir"
-            },
-            {
-              "title": "Kabul edilebilir · 4–7 puan",
-              "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği kısmen özgündür"
-            },
-            {
-              "title": "İyi · 8–11 puan",
-              "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği yeterince özgündür"
-            },
-            {
-              "title": "Çok iyi · 12–15 puan",
-              "body": "Ölçüt: Özgünlük (15 puan). Afiş içeriği özgünlüğü oldukça güçlüdür"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–2 puan",
-              "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı yetersizdir"
-            },
-            {
-              "title": "Kabul edilebilir · 3–5 puan",
-              "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 6–9 puan",
-              "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı başarılıdır"
-            },
-            {
-              "title": "Çok iyi · 10–15 puan",
-              "body": "Ölçüt: Görsel/İşitsel ögelerin seçimi   (15 puan). Afişte konuya ait görsel ögelerin kullanımı oldukça başarılıdır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–3 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından alt düzeydedir"
-            },
-            {
-              "title": "Kabul edilebilir · 4–7 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 8–11 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından yeterlidir"
-            },
-            {
-              "title": "Çok iyi · 12–15 puan",
-              "body": "Ölçüt: Türkçenin doğru kullanımı  (15 puan). Afiş, Türkçenin doğru kullanımı açısından oldukça başarılıdır"
-            },
-            {
-              "title": "Başlangıç düzeyinde · 1–4 puan",
-              "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşmada etkileyicilik özelliği alt düzeydedir"
-            },
-            {
-              "title": "Kabul edilebilir · 5–8 puan",
-              "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşmada etkileyicilik özelliği kısmen yeterlidir"
-            },
-            {
-              "title": "İyi · 9–15 puan",
-              "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşmada etkileyicilik özelliği yeterli düzeydedir"
-            },
-            {
-              "title": "Çok iyi · 16–20 puan",
-              "body": "Ölçüt: Etkileyicilik  (20 puan). Konuşma etkileyicilik özelliği yönünden oldukça başarılıdır"
+              "title": "Etkileyicilik · 20 puan",
+              "body": "Başlangıç düzeyinde · 1–4 puan: Konuşmada etkileyicilik özelliği alt düzeydedir.  •  Kabul edilebilir · 5–8 puan: Konuşmada etkileyicilik özelliği kısmen yeterlidir.  •  İyi · 9–15 puan: Konuşmada etkileyicilik özelliği yeterli düzeydedir.  •  Çok iyi · 16–20 puan: Konuşma etkileyicilik özelliği yönünden oldukça başarılıdır."
             },
             {
               "title": "Toplam puan ve hesaplama",
@@ -70678,8 +70535,9 @@
             "Konuya uygunluk",
             "Yaratıcılık",
             "Özgünlük",
-            "Etkileyicilik",
-            "Görsel/işitsel ögelerin seçimi"
+            "Görsel/İşitsel ögelerin seçimi",
+            "Türkçenin doğru kullanımı",
+            "Etkileyicilik"
           ]
         }
       },
@@ -71602,7 +71460,7 @@
           }
         },
         "content": {
-          "lead": "Dekor ve sözsüz hareketlerin görünür olduğunu; diyalog/monolog için ise gerçek konuşma cümlesi gerekip gerekmediğini kontrol edin."
+          "lead": "Seçeneklerde geçen terimleri metnin sahne yönergeleri ve konuşmalarıyla tek tek karşılaştırın; olasılık ile kesin kanıtı ayırın."
         }
       },
       {
@@ -71698,7 +71556,7 @@
           }
         },
         "content": {
-          "lead": "Metindeki teknolojik değişmeleri açıkça verilen ifadelerle karşılaştırın; 'tamamen' gibi aşırı genellemelere dikkat edin."
+          "lead": "Seçeneklerin her biri için metinde doğrudan dayanak arayın; dayanak bulunmayan ifadeyi gerekçesiyle belirtin."
         }
       },
       {
@@ -71764,7 +71622,7 @@
           }
         },
         "content": {
-          "lead": "Geçmişe ilişkin bilgi ve deneyimin korunup sonraki kuşaklara aktarılması ortak noktasını arayın."
+          "lead": "Önce sorunun istediği benzetme ilişkisini açıklayın; seçenekler arasında yalnız metnin desteklediğini seçin."
         }
       },
       {

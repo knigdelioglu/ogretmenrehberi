@@ -170,9 +170,9 @@
       "density": "compact",
       "prompt": "Soru 8 — Verilen kesitlerden hangi tiyatro terimleri kesinlikle çıkarılamaz?",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "thinking": "Her terimi kesitte gerçekten görülen ya da duyulan bir ayrıntıyla doğrulamaya çalışın; yalnızca olası görünen bir yorumu kesin kanıt saymayın.",
+      "thinking": "Her seçeneği aynı ölçütle sınayın: Kesitte açıkça gösterilen ya da söylenen hangi ayrıntı bu terimi destekliyor? Kanıtı olmayan çıkarımı işaretleyin.",
       "content": {
-        "lead": "Dekor ve sözsüz hareketlerin görünür olduğunu; diyalog/monolog için ise gerçek konuşma cümlesi gerekip gerekmediğini kontrol edin."
+        "lead": "Seçeneklerde geçen terimleri metnin sahne yönergeleri ve konuşmalarıyla tek tek karşılaştırın; olasılık ile kesin kanıtı ayırın."
       }
     },
     {
@@ -194,9 +194,9 @@
       "density": "compact",
       "prompt": "Soru 9 — Belgesel yapımının zaman içinde değişmesini sağlayan etkenlerden hangisi metinde desteklenmiyor?",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "thinking": "Bir seçeneğin metinde bulunmayan kesinlik veya kapsam iddiası taşıyıp taşımadığını kontrol edin; iddiayı kaynakta açıkça anlatılan değişimlerle karşılaştırın.",
+      "thinking": "Her seçenekteki iddiayı metinde açıkça yer alan bilgiyle karşılaştırın; desteklenmeyen veya metnin kapsamını aşan ifadeyi gerekçelendirin.",
       "content": {
-        "lead": "Metindeki teknolojik değişmeleri açıkça verilen ifadelerle karşılaştırın; 'tamamen' gibi aşırı genellemelere dikkat edin."
+        "lead": "Seçeneklerin her biri için metinde doğrudan dayanak arayın; dayanak bulunmayan ifadeyi gerekçesiyle belirtin."
       }
     },
     {
@@ -207,9 +207,9 @@
       "density": "compact",
       "prompt": "Soru 10 — Belgeselin toplumsal belleğe katkısı hangi benzetmeyle en iyi açıklanır?",
       "prompt_mode": "VERIFIED_SUMMARY",
-      "thinking": "Metindeki benzetmelerin hangi saklama ya da aktarma işlevini vurguladığını belirleyin; seçenekleri bu işlevin kapsamıyla karşılaştırın.",
+      "thinking": "Metindeki benzetmenin hangi özelliğinin soruyla ilişkili olduğunu kendi sözlerinizle belirleyin; sonra bütün seçenekleri aynı ölçüte göre tartın.",
       "content": {
-        "lead": "Geçmişe ilişkin bilgi ve deneyimin korunup sonraki kuşaklara aktarılması ortak noktasını arayın."
+        "lead": "Önce sorunun istediği benzetme ilişkisini açıklayın; seçenekler arasında yalnız metnin desteklediğini seçin."
       }
     },
     {
