@@ -4,7 +4,7 @@
 
 Tema 2'nin basılı 84–159. sayfaları PDF 85–160. sayfalarına karşılık geliyor. Kanonik kaynak, kitap metninin 76 yerel sayfa JSON'u ile öğretmen kitabının kaynak/cevap indeksleri ve cevap bankasıdır.
 
-Dokuz akışın 201 adımı, 159 kaynak kaydının ve 177 cevap kaydının tamamını kapsıyor. Cevap havuzu 118 `question_answer`, 49 `performance_support` ve 10 `source_limited` kaydından oluşuyor. Kaynak indeksi 159 kaydın tamamını doğrulanmış olarak sayıyor.
+Dokuz akışın 203 adımı, 159 kaynak kaydının ve 177 cevap kaydının tamamını kapsıyor. Cevap havuzu 118 `question_answer`, 49 `performance_support` ve 10 `source_limited` kaydından oluşuyor. Kaynak indeksi 159 kaydın tamamını doğrulanmış olarak sayıyor.
 
 | Akış | Basılı sayfalar |
 | --- | ---: |
@@ -17,6 +17,8 @@ Dokuz akışın 201 adımı, 159 kaynak kaydının ve 177 cevap kaydının tamam
 | Âşık Atışması | 136–147 |
 | Yazma | 148–154 |
 | Değerlendirme | 155–159 |
+
+Sayım doğrulaması: `node scripts/verify-theme2-pedagogical.mjs` komutu sunum JSON'larından adım sayılarını yeniden hesaplar. Bu belgedeki geçmiş görsel/test bulguları yeni bir tarayıcı çalıştırması yapılmadan güncel PASS kabul edilmez.
 
 ## Sunum ve içerik kararları
 
