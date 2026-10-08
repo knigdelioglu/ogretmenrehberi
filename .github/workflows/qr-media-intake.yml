@@ -11,6 +11,8 @@ on:
       - 'scripts/validate-qr-media-intake.mjs'
       - 'scripts/qr_audio_transcribe.py'
       - 'scripts/tests/test_qr_audio_transcribe.py'
+      - 'scripts/qr_audio_review_queue.py'
+      - 'scripts/tests/test_qr_audio_review_queue.py'
       - 'data/grade-11/source/qr-audio-transcription-workflow.md'
       - '.github/workflows/qr-media-intake.yml'
   workflow_dispatch:
@@ -30,3 +32,5 @@ jobs:
           python-version: '3.12'
       - name: Test private local ASR workflow without downloading a model
         run: python -m unittest discover -s scripts/tests -p 'test_qr_audio_transcribe.py' -v
+      - name: Test private ASR human-review queue
+        run: python -m unittest discover -s scripts/tests -p 'test_qr_audio_review_queue.py' -v
