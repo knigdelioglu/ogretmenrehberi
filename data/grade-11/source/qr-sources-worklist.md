@@ -8,8 +8,8 @@ Bu liste EBA kimliği ve orijinal QR hedefi doğrulanmış kaynakları izler. Ku
 |---|---|---|---|
 | QR-EBA-E43890DFD82A — Mektup Türünün Serüveni | 43 / 44 | EBA kimliği, indirme ve SHA-256 doğrulandı; örnek görüntüler incelendi | Sesli anlatım/transkript, kitap cevabı kanıtı |
 | QR-EBA-254C08EA3501 — Seksenler | 53 / 54 | EBA ve SHA-256 doğrulandı; kullanıcının üç sahne açıklaması [kanıt notuna](qr-review-notes/QR-EBA-254C08EA3501.md) kaydedildi; Q01–Q02 gerçek sahnelere göre düzenlendi | Birebir diyalog, konuşmacılar ve sahne zamanları doğrulanacak |
-| QR-EBA-29BF4F293D53 — Değişen İletişim Araçlarının Hayatımızdaki Yeri | 64 / 65; sorular s.66–67 | EBA ve SHA-256 doğrulandı; ekranda görülen bazı ifadeler belirlendi | Tüm sözlü anlatım, alıntıların zamana göre doğrulanması, s.66–67 cevapları |
-| QR-EBA-BFB2729458DF — Geçmişten Günümüze İletişim Araçları | 67 / 68 | EBA ve SHA-256 doğrulandı; on iletişim aracı görünen zaman çizelgesinde tespit edildi | Ekran yazılarının tüm akışını gözden geçir; ayrı ders dışı kaynak olarak tut |
+| QR-EBA-29BF4F293D53 — Değişen İletişim Araçlarının Hayatımızdaki Yeri | 64 / 65; sorular s.66–67 | EBA ve SHA-256 doğrulandı; [01:14–04:08 arasında dört ekran yazısı](qr-review-notes/QR-EBA-29BF4F293D53.md) zaman damgasıyla denetlendi; s.67 Q08 gerçek örneklerle güncellendi | Tüm sözlü anlatım, ana-yardımcı düşünceler ve tam video özeti |
+| QR-EBA-BFB2729458DF — Geçmişten Günümüze İletişim Araçları | 67 / 68 | EBA ve SHA-256 doğrulandı; [on iletişim aracı etiketi](qr-review-notes/QR-EBA-BFB2729458DF.md) ayrı video kaynağı olarak kaydedildi ve sunum açıklaması düzeltildi | Ekrandaki tanımların ve olası sesli açıklamaların tamamını doğrula |
 | QR-EBA-2952F505E3A7 — Olvido | 83 / 84 | EBA ve SHA-256 doğrulandı; görsel akış örneklendi | Sesli şiir okunuşunu ve vurgu/durakları kontrol et |
 
 ## Bilinen eşleştirme hatası
