@@ -26,7 +26,7 @@ for (const r of intake.records) {
     assert.ok(s, `Unknown verified EBA source: ${r.existing_source_id}`);
     assert.equal(s.local_file.sha256, r.sha256, "File SHA-256 differs from verified EBA source");
     assert.ok(s.usage_locations.some((u) => u.printed_page === r.printed_page), "Wrong printed page for verified EBA source");
-  } else if (r.mapping_status === "candidate_needs_original_qr_verification") {
+  } else if (r.mapping_status === "book_pdf_qr_verified_media_file_candidate_unconfirmed") {
     unresolved++;
   } else {
     provisional++;
@@ -34,11 +34,56 @@ for (const r of intake.records) {
   }
 }
 assert.deepEqual([verified, provisional, unresolved], [5, 12, 1]);
+// The actual PDF page-QR hyperlinks were extracted from the 313-page
+// textbook whose SHA-256 is the source-page PDF fingerprint.
+const pdfFingerprint = "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba";
+const pdfLinkIds = new Set();
+for (const r of intake.records) {
+  const qr = r.book_qr;
+  assert.ok(qr, `Missing verified textbook QR target: ${r.file_name}`);
+  assert.equal(qr.printed_page, r.printed_page);
+  assert.equal(qr.pdf_page, r.printed_page + 1);
+  assert.equal(qr.pdf_sha256, pdfFingerprint);
+  assert.equal(qr.destination_verification, "verified_from_original_textbook_pdf_link_annotation");
+  assert.match(qr.eba_content_id, /^[0-9a-f]{32}$/);
+  assert.equal(qr.eba_url,
+    `https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=${qr.eba_content_id}&resourceType=1&resourceLocation=2`);
+  assert.ok(!pdfLinkIds.has(qr.eba_content_id), "Duplicate QR link assigned to two videos");
+  pdfLinkIds.add(qr.eba_content_id);
+  if (r.existing_source_id) {
+    const source = known.get(r.existing_source_id);
+    assert.equal(source.eba_content_id, qr.eba_content_id,
+      "Verified EBA source registry mismatches original printed QR link");
+    assert.equal(qr.media_binary_identity, "sha256_matches_earlier_eba_verified_source");
+  } else {
+    assert.equal(qr.media_binary_identity, "not_verified_from_eba_download",
+      "PDF QR destination proves a link, not the Drive MP4's EBA binary identity");
+  }
+}
+assert.equal(pdfLinkIds.size, 18);
+const importantIds = new Map([
+  ["19XU3SUD.mp4", "551442fb39efe8a8438247ae6c0e03d0"],
+  ["19XU49LO.mp4", "382543f8f403f67200b286af84e71b40"],
+  ["19XU49JV.mp4", "85ae59be9852fb990c8de54f7cb313ce"],
+  ["19XU4GDV.mp4", "bc54a785fede521619c982332455dc72"],
+  ["19XU49LQ.mp4", "5fd2b97cb78fabe367aa3fcde8f9718d"],
+  ["19XU3SW3.mp4", "5a6b3d654679891e8dfbafcd74a32bd7"],
+]);
+for (const [fileName, ebaId] of importantIds) {
+  assert.equal(intake.records.find(r => r.file_name === fileName)?.book_qr?.eba_content_id,
+    ebaId, `Ambiguous textbook page QR target changed: ${fileName}`);
+}
+assert.equal(intake.excluded_nearby_qr_links.length, 4);
+for (const excluded of intake.excluded_nearby_qr_links) {
+  assert.ok(!pdfLinkIds.has(excluded.eba_content_id),
+    "Dictionary / other questions must not be classified as a video QR");
+}
+
 const communication = intake.records.find((r) => r.file_name === "19XU4CVR.mp4");
 assert.equal(communication.printed_page, 67);
 const festivalCandidate = intake.records.find((r) => r.file_name === "19XU49LO.mp4");
 assert.equal(festivalCandidate.printed_page, 88);
-assert.equal(festivalCandidate.mapping_status, "candidate_needs_original_qr_verification");
+assert.equal(festivalCandidate.mapping_status, "book_pdf_qr_verified_media_file_candidate_unconfirmed");
 assert.ok(intake.known_conflicts.some((e) => e.printed_page === 88));
 
 const sek = known.get("QR-EBA-254C08EA3501");
@@ -88,4 +133,4 @@ assert.ok(q8.answer.includes("1971"), "Missing verified on-screen objective exam
 assert.ok(q8.answer.includes("kanatlanmış"), "Missing verified on-screen subjective example");
 assert.ok(q8.source_locator.includes("QR-EBA-29BF4F293D53.md"), "Quote provenance missing");
 
-console.log("QR media intake PASS: 18 unique files; 5 verified EBA/SHA matches, 12 provisional, 1 unresolved; Seksenler Q1–Q2 grounded.");
+console.log("QR media intake PASS: all 18 printed QR destinations verified; 5 EBA/SHA-confirmed MP4, 12 provisional and 1 page-88 MP4 candidate; multimedia evidence boundaries enforced.");

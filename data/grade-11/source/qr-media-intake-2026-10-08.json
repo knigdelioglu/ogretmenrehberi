@@ -7,7 +7,9 @@
     "Five existing EBA-verified files have byte-identical SHA-256 matches in data/grade-11/source/qr-sources.json.",
     "The 88-page PNG assignment mistakenly repeats the page 67 file; 19XU49LO.mp4 is only a visual candidate for page 88.",
     "All videos have video and audio streams, but a stream is not a transcription.",
-    "Do not publish MP4 or full third-party transcripts in this public repository; link only verified content and brief educational evidence."
+    "Do not publish MP4 or full third-party transcripts in this public repository; link only verified content and brief educational evidence.",
+    "2026-10-08: Verified exact hyperlink destinations for all 18 video usage locations from the 313-page textbook PDF (SHA-256 87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba). These verify QR link identity, not all unmatched MP4 download provenance.",
+    "Ambiguous pages were disambiguated visually against the textbook: page 53 two videos, page 140 video vs dictionary, page 285 trailer vs full video, page 83/159/307 video vs optional-question QR."
   ],
   "records": [
     {
@@ -21,7 +23,17 @@
       "mapping_status": "verified_existing_eba_registry_and_sha256",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 43,
+        "pdf_page": 44,
+        "eba_content_id": "e43890dfd82a3b5c7823d3b0fba2b627",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=e43890dfd82a3b5c7823d3b0fba2b627&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "mektup türü videosu",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
+      }
     },
     {
       "file_name": "19XU49K2.mp4",
@@ -34,7 +46,17 @@
       "mapping_status": "verified_existing_eba_registry_and_sha256",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "user_scene_summary_not_verbatim_dialogue"
+      "evidence_scope": "user_scene_summary_not_verbatim_dialogue",
+      "book_qr": {
+        "printed_page": 53,
+        "pdf_page": 54,
+        "eba_content_id": "254c08ea3501e3a701bea75730708e14",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=254c08ea3501e3a701bea75730708e14&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Seksenler videosu",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
+      }
     },
     {
       "file_name": "19XU3SUD.mp4",
@@ -48,7 +70,17 @@
       "visual_review": "screen_text_partial",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
-      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SUD.md"
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SUD.md",
+      "book_qr": {
+        "printed_page": 53,
+        "pdf_page": 54,
+        "eba_content_id": "551442fb39efe8a8438247ae6c0e03d0",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=551442fb39efe8a8438247ae6c0e03d0&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Sözlü İletişim Engelleri",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49LL.mp4",
@@ -61,7 +93,17 @@
       "mapping_status": "verified_existing_eba_registry_and_sha256",
       "visual_review": "screen_quotes_partial",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 64,
+        "pdf_page": 65,
+        "eba_content_id": "29bf4f293d533dd8a69466ad7e00f8d0",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=29bf4f293d533dd8a69466ad7e00f8d0&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "iletişim araçları söyleşisi",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
+      }
     },
     {
       "file_name": "19XU4CVR.mp4",
@@ -74,7 +116,17 @@
       "mapping_status": "verified_existing_eba_registry_and_sha256",
       "visual_review": "screen_text_partial",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 67,
+        "pdf_page": 68,
+        "eba_content_id": "bfb2729458dff5255e99c1d2defe73a6",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=bfb2729458dff5255e99c1d2defe73a6&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "geçmişten günümüze iletişim araçları",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
+      }
     },
     {
       "file_name": "OGM2025TDE118312.mp4",
@@ -87,7 +139,17 @@
       "mapping_status": "verified_existing_eba_registry_and_sha256",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 83,
+        "pdf_page": 84,
+        "eba_content_id": "2952f505e3a7923fe38ce31c2bd92871",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=2952f505e3a7923fe38ce31c2bd92871&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Olvido videosu",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
+      }
     },
     {
       "file_name": "19XU49LO.mp4",
@@ -97,10 +159,20 @@
       "sha256": "d08e628832b872074906fe54e1bea87a47d6cca6f68802bf7b671ca595cd5140",
       "duration_seconds": 277.5,
       "existing_source_id": null,
-      "mapping_status": "candidate_needs_original_qr_verification",
+      "mapping_status": "book_pdf_qr_verified_media_file_candidate_unconfirmed",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "page_88_printed_qr_verified_and_visual_topic_match_but_mp4_eba_origin_unverified",
+      "book_qr": {
+        "printed_page": 88,
+        "pdf_page": 89,
+        "eba_content_id": "382543f8f403f67200b286af84e71b40",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=382543f8f403f67200b286af84e71b40&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Türklerde Toylar Merasimler Festivaller ve Şenlikler",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49LT.mp4",
@@ -113,7 +185,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 113,
+        "pdf_page": 114,
+        "eba_content_id": "06740daa8a1a08c3bfe9d46c65f3fe56",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=06740daa8a1a08c3bfe9d46c65f3fe56&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Orhun Vadisi",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49LP.mp4",
@@ -126,7 +208,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 129,
+        "pdf_page": 130,
+        "eba_content_id": "2d18e79ed46861b363ef8affbfefcecb",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=2d18e79ed46861b363ef8affbfefcecb&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Dünyadaki Türkiye Türk Dünyası",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49JV.mp4",
@@ -139,7 +231,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 140,
+        "pdf_page": 141,
+        "eba_content_id": "85ae59be9852fb990c8de54f7cb313ce",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=85ae59be9852fb990c8de54f7cb313ce&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Murat Çobanoğlu Şeref Taşlıova Atışması",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49MG.mp4",
@@ -152,7 +254,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 141,
+        "pdf_page": 142,
+        "eba_content_id": "79b9d858a98472d2c1c9c773b715c6a2",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=79b9d858a98472d2c1c9c773b715c6a2&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Âşıklık Geleneği",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49MB.mp4",
@@ -165,7 +277,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 159,
+        "pdf_page": 160,
+        "eba_content_id": "b557411639a9c10b3b7c33b91819cd42",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=b557411639a9c10b3b7c33b91819cd42&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Göktürklerin Dirilişi",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49LV.mp4",
@@ -178,7 +300,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 220,
+        "pdf_page": 221,
+        "eba_content_id": "572fe5fff1b65d73736b167d98ab85b4",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=572fe5fff1b65d73736b167d98ab85b4&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Osmancık",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU4GDV.mp4",
@@ -191,7 +323,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 285,
+        "pdf_page": 286,
+        "eba_content_id": "bc54a785fede521619c982332455dc72",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=bc54a785fede521619c982332455dc72&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Anadolu İnsanı Fedakârlık jeneriği",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49LQ.mp4",
@@ -204,7 +346,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 285,
+        "pdf_page": 286,
+        "eba_content_id": "5fd2b97cb78fabe367aa3fcde8f9718d",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Anadolu İnsanı Fedakârlık asıl video",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49KB.mp4",
@@ -217,7 +369,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 293,
+        "pdf_page": 294,
+        "eba_content_id": "cc654606d608113ea65f523584ab801b",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cc654606d608113ea65f523584ab801b&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Anadolu İnsanı Çalışkanlık",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU3SW3.mp4",
@@ -231,7 +393,17 @@
       "visual_review": "screen_text_partial",
       "spoken_audio_transcript": "not_done",
       "evidence_scope": "visual_sample_and_filename_or_existing_registry",
-      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SW3.md"
+      "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SW3.md",
+      "book_qr": {
+        "printed_page": 300,
+        "pdf_page": 301,
+        "eba_content_id": "5a6b3d654679891e8dfbafcd74a32bd7",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5a6b3d654679891e8dfbafcd74a32bd7&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Afiş Hazırlama Basamakları",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     },
     {
       "file_name": "19XU49LS.mp4",
@@ -244,7 +416,17 @@
       "mapping_status": "provisional_png_and_visual_review",
       "visual_review": "sampled_frames_only",
       "spoken_audio_transcript": "not_done",
-      "evidence_scope": "visual_sample_and_filename_or_existing_registry"
+      "evidence_scope": "visual_sample_and_filename_or_existing_registry",
+      "book_qr": {
+        "printed_page": 307,
+        "pdf_page": 308,
+        "eba_content_id": "6e0ca79cee422408b5dcfaf3ad7a1459",
+        "eba_url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=6e0ca79cee422408b5dcfaf3ad7a1459&resourceType=1&resourceLocation=2",
+        "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
+        "observed_book_label": "Anadolu İnsanı Aidiyet",
+        "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
+        "media_binary_identity": "not_verified_from_eba_download"
+      }
     }
   ],
   "known_conflicts": [
@@ -253,7 +435,31 @@
       "png_file_name": "19XU4CVR.mp4",
       "conflict": "This exact file is the verified page 67 communication timeline video, not the page 88 festival video.",
       "candidate_file_name": "19XU49LO.mp4",
-      "resolution": "unverified_pending_book_qr_identity"
+      "resolution": "Printed-page 88 QR target verified: EBA content 382543f8f403f67200b286af84e71b40. Candidate 19XU49LO.mp4 not binary-verified against this EBA identity.",
+      "pdf_qr_target_verified": true,
+      "candidate_media_verified": false
+    }
+  ],
+  "excluded_nearby_qr_links": [
+    {
+      "printed_page": 83,
+      "eba_content_id": "89f20fd73ff30babb94f117c4a5543d9",
+      "purpose": "extra questions, not Olvido video"
+    },
+    {
+      "printed_page": 140,
+      "eba_content_id": "0e3a491e5a0ec25589859f9ea01d65a9",
+      "purpose": "TDK dictionary, not âşık atışması"
+    },
+    {
+      "printed_page": 159,
+      "eba_content_id": "091d0e9f24ce079185394326201e9a7d",
+      "purpose": "additional questions, not Göktürklerin Dirilişi"
+    },
+    {
+      "printed_page": 307,
+      "eba_content_id": "c22abf815e01824417aea84f6c4d4bcf",
+      "purpose": "additional questions, not Anadolu İnsanı Aidiyet"
     }
   ]
 }
