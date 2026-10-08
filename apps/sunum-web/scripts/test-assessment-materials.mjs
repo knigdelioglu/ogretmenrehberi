@@ -7,6 +7,8 @@ import { assessmentDownloads } from "../src/menu-files.js";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
+// Scope: Theme 2 pedagogy regression checks; existing expectations for other themes are untouched.
+execFileSync(process.execPath, [path.join(repoRoot, "scripts/verify-theme2-pedagogical.mjs")], { stdio: "inherit" });
 const distRoot = path.join(appRoot, "dist");
 const files = [
   ["19XU4J2J.docx", "data/grade-11/presentation/theme-1/konusma-flow.json", "s58-feedback", 10],
