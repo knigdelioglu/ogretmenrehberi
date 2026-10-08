@@ -37,6 +37,37 @@ function NumberedItems({ items }: { items: string[] }) {
   );
 }
 
+function RubricContent({ rubric }: { rubric: NonNullable<StepContent["rubric"]> }) {
+  return (
+    <div className="layout-content layout-content--rubric" data-content-layout="rubric">
+      <div className="assessment-table-wrap">
+        <table className="assessment-table rubric-table">
+          <thead>
+            <tr>
+              <th scope="col">Ölçüt (azami puan)</th>
+              {rubric.columns.map((name) => <th scope="col" key={name}>{name}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {rubric.rows.map((row) => (
+              <tr key={row.criterion}>
+                <th scope="row">{row.criterion} ({row.max_points})</th>
+                {row.levels.map((level) => (
+                  <td key={level.label}>
+                    <strong>{level.points} puan</strong>
+                    <p>{level.description}</p>
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="rubric-total">Toplam: {rubric.min_points}–{rubric.total_points} puan; her ölçütten seçilen puanlar toplanır.</p>
+    </div>
+  );
+}
+
 function ComparisonContent({ content }: { content: VisibleContent }) {
   const sections = content.sections;
   return (
@@ -213,7 +244,8 @@ export function StepContentLayout({
   onAssessmentSelect: (stepId: string, itemIndex: number, value: string) => void;
   assessmentReadOnly?: boolean;
 }) {
-  if (!content?.items?.length && !content?.sections?.length) return null;
+  if (!content?.items?.length && !content?.sections?.length && !content?.rubric?.rows?.length) return null;
+  if (content?.rubric?.rows?.length) return <RubricContent rubric={content.rubric} />;
   if (layout === "vocabulary") return null;
   if (layout === "assessment") {
     return (
