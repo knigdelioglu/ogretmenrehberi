@@ -151,3 +151,6 @@ assert.equal(menuFiles[0]?.label, "Puanlama Exceli", "the workbook is first in t
 assert.equal(menuFiles[0]?.type, "XLSX");
 assert.deepEqual(menuFiles.map((file) => path.basename(file.url)).sort(), downloadedNames);
 console.log(`[sunum-web] Assessment materials passed: ${files.length} DOCX links, Puanlama Exceli and ${menuFiles.length} files in the menu catalog.`);
+
+// Keep Theme 4 pedagogical scope checks in the existing CI test run.
+await import("./test-theme-4-presentation.mjs");
