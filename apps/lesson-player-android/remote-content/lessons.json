@@ -943,12 +943,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  0,
-                  1,
-                  2,
-                  3
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -958,10 +953,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  4,
-                  5
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -983,8 +975,7 @@
         },
         "reveal_order": [
           "dictionary",
-          "answer",
-          "evidence"
+          "answer"
         ],
         "display_prompt": "Dönemin dil özelliklerini yansıttığını düşündüğünüz kelime ve cümleleri tespit ediniz.",
         "display_prompt_mode": "VERBATIM_SHORT",
@@ -1023,14 +1014,6 @@
             ],
             "Sosyal dil çeşitliliği": "Hacivat ve Çelebi'nin ağır dili ile Karagöz'ün halk söyleyişi arasındaki fark."
           },
-          "evidence_quotes": [
-            "cânân",
-            "meh-i tâbân",
-            "esbâb-ı mûcibe",
-            "mâ-nahnü-fîh",
-            "Bendenize vurmadan mûrâdınız?",
-            "Bendenize vurmanın esbâb-ı mûcibesi?"
-          ],
           "dictionary_terms": [
             {
               "term": "cânân",
