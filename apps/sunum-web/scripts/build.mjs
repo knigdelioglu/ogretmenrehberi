@@ -106,6 +106,9 @@ function slimStep(step, themeId, thinking) {
   const answer = step.answer
     ? pick(step.answer, answerFields)
     : null;
+  if (answer?.dictionary_terms) {
+    answer.dictionary_terms = answer.dictionary_terms.map(({ term, meaning }) => ({ term, meaning }));
+  }
   const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "rubric", "scale", "images", "sources"]) : null;
 
   // Kumandayla açılacak katmanlar: kanonik reveal_order sırası, öğretmen notu hariç,

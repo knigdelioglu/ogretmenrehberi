@@ -1256,8 +1256,7 @@ function dictionaryCard(terms, { hideMeanings = false } = {}) {
       {},
       terms.map((term) => [
         h("dt", {}, term.term),
-        h("dd", {}, hideMeanings ? "• • •" : term.meaning),
-        term.source && !hideMeanings ? h("dd", { class: "src" }, term.source) : null
+        h("dd", {}, hideMeanings ? "• • •" : term.meaning)
       ])
     )
   );

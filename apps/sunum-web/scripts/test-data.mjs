@@ -143,11 +143,18 @@ for (const [i, lesson] of canonical.entries()) {
       assert.equal(s.thinking, undefined, `${lesson.lesson_id}/${s.id} kaynakta olmayan Düşünürken metni build'e eklenmemeli`);
       assert.ok(!s.reveals.includes("thinking"), `${lesson.lesson_id}/${s.id} kaynakta olmayan Düşünürken katmanı açılmamalı`);
     }
+    if (s.answer?.dictionary_terms?.length) {
+      assert.ok(s.answer.dictionary_terms.every((entry) =>
+        Object.keys(entry).sort().join(",") === "meaning,term" &&
+        typeof entry.meaning === "string" && entry.meaning.trim().length > 0
+      ), `${lesson.lesson_id}/${s.id} web sözlüğünde yalnız terim ve anlam bulunmalı`);
+    }
     if (step.id === "s17-q2" && lesson.lesson_slug === "karagoz") {
       assert.deepEqual(s.reveals, ["dictionary", "answer"]);
       assert.ok(s.answer.dictionary_terms.length > 0, "s.17/2 sözlük desteği bulunmalı");
-      assert.equal(s.presentation.web.units.reduce((count, unit) => count + unit.quote_indexes.length, 0), 6,
-        "ISSUE-105: six s.17/2 quotations are linked to their response units");
+      assert.equal(s.answer.evidence_quotes, undefined, "s.17/2 yinelenen metinden kanıt katmanı kaldırılmalı");
+      assert.equal(s.presentation.web.units.reduce((count, unit) => count + unit.quote_indexes.length, 0), 0,
+        "s.17/2 cevap birimleri yinelenen alıntı bağlantıları taşımamalı");
     }
     if (step.id === "s25-q1" && lesson.lesson_slug === "karagoz") {
       assert.deepEqual(Object.keys(s.answer.answer_sections), ["Dadı", "Esbab", "Murad", "Bendeniz", "Silsile", "İspir"]);
