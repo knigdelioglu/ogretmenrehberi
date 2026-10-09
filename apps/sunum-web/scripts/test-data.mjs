@@ -150,7 +150,7 @@ for (const [i, lesson] of canonical.entries()) {
       ), `${lesson.lesson_id}/${s.id} web sözlüğünde yalnız terim ve anlam bulunmalı`);
     }
     if (step.id === "s17-q2" && lesson.lesson_slug === "karagoz") {
-      assert.deepEqual(s.reveals, ["dictionary", "answer"]);
+      assert.deepEqual(s.reveals, ["answer", "dictionary"]);
       assert.ok(s.answer.dictionary_terms.length > 0, "s.17/2 sözlük desteği bulunmalı");
       assert.equal(s.answer.evidence_quotes, undefined, "s.17/2 yinelenen metinden kanıt katmanı kaldırılmalı");
       assert.equal(s.presentation.web.units.reduce((count, unit) => count + unit.quote_indexes.length, 0), 0,
