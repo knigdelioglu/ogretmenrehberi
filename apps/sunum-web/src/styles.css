@@ -2487,9 +2487,8 @@ button {
   text-decoration: none;
 }
 
-/* Modern secondary book/source actions used by process and reference slides. */
-.slide--visual-process .source-links,
-.slide--visual-reference .source-links {
+/* Modern secondary book/source actions shared by every presentation layout. */
+.source-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), max-content));
   gap: 0.5em;
@@ -2498,8 +2497,7 @@ button {
   font-family: var(--modern-font);
 }
 
-.slide--visual-process .source-links a,
-.slide--visual-reference .source-links a {
+.source-links a {
   display: flex;
   align-items: center;
   gap: 0.65em;
@@ -2516,21 +2514,18 @@ button {
   transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
-.slide--visual-process .source-links a:hover,
-.slide--visual-reference .source-links a:hover {
+.source-links a:hover {
   border-color: var(--modern-teal);
   background: var(--modern-teal-soft);
   transform: translateY(-1px);
 }
 
-.slide--visual-process .source-links a:focus-visible,
-.slide--visual-reference .source-links a:focus-visible {
+.source-links a:focus-visible {
   outline: 3px solid var(--modern-blue);
   outline-offset: 3px;
 }
 
-.slide--visual-process .source-link__icon,
-.slide--visual-reference .source-link__icon {
+.source-link__icon {
   display: grid;
   flex: 0 0 auto;
   width: 1.75em;
@@ -2543,30 +2538,26 @@ button {
   font-weight: 750;
 }
 
-.slide--visual-process .source-link__copy,
-.slide--visual-reference .source-link__copy {
+.source-link__copy {
   display: grid;
   min-width: 0;
   gap: 0.08em;
   line-height: 1.3;
 }
 
-.slide--visual-process .source-link__context,
-.slide--visual-reference .source-link__context {
+.source-link__context {
   color: var(--modern-ink);
   font-size: 0.62em;
   font-weight: 700;
 }
 
-.slide--visual-process .source-link__action,
-.slide--visual-reference .source-link__action {
+.source-link__action {
   color: var(--modern-muted);
   font-size: 0.52em;
   font-weight: 500;
 }
 
-.slide--visual-process .source-links a.source-download,
-.slide--visual-reference .source-links a.source-download {
+.source-links a.source-download {
   background: var(--modern-card);
   color: var(--modern-ink);
 }
