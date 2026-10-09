@@ -990,7 +990,16 @@ presentationBrowserSuite: {
           viewport:[innerWidth,innerHeight], slide:rect(slide), cover,
           coverTitle:title?.innerText || '', coverFont:title ? getComputedStyle(title).fontFamily : '',
           coverMeta:[...slide?.querySelectorAll('.cover__meta-item') || []].map((node) => node.innerText),
-          sourceLinks:[...slide?.querySelectorAll('.source-link') || []].map((node) => ({text:node.innerText,href:node.href,target:node.target,rect:rect(node),scrollWidth:node.scrollWidth,clientWidth:node.clientWidth})),
+          sourceLinks:[...slide?.querySelectorAll('.source-link') || []].map((node) => {
+            const style = getComputedStyle(node);
+            const icon = node.querySelector('.source-link__icon');
+            return {
+              text:node.innerText, href:node.href, target:node.target, rect:rect(node),
+              scrollWidth:node.scrollWidth, clientWidth:node.clientWidth,
+              fontFamily:style.fontFamily, textDecoration:style.textDecorationLine,
+              borderRadius:style.borderRadius, iconDisplay:icon ? getComputedStyle(icon).display : ''
+            };
+          }),
           body:body && {scrollWidth:body.scrollWidth,clientWidth:body.clientWidth,scrollHeight:body.scrollHeight,clientHeight:body.clientHeight,overflowing:body.classList.contains('is-overflowing')},
           menuOpen:menu ? !menu.hidden : false, menuPanel:rect(panel),
           selectedTheme:document.querySelector('#menu-tabs [aria-selected="true"]')?.innerText || '',
@@ -1013,6 +1022,10 @@ presentationBrowserSuite: {
         assert.equal(metrics.sourceLinks[0].target, "_blank", `${label} keeps the existing external-link behavior`);
         assert.ok(metrics.sourceLinks[0].href.includes("#page="), `${label} preserves the book page destination`);
         assert.ok(metrics.sourceLinks[0].rect.width > 0 && metrics.sourceLinks[0].scrollWidth <= metrics.sourceLinks[0].clientWidth + 1, `${label} CTA fits without horizontal text overflow`);
+        assert.match(metrics.sourceLinks[0].fontFamily, /Inter/i, `${label} uses the shared modern typography`);
+        assert.equal(metrics.sourceLinks[0].textDecoration, "none", `${label} uses the modern card treatment instead of legacy underlining`);
+        assert.notEqual(metrics.sourceLinks[0].borderRadius, "0px", `${label} keeps the modern rounded source card`);
+        assert.equal(metrics.sourceLinks[0].iconDisplay, "grid", `${label} keeps the modern source icon treatment`);
       } else {
         assert.equal(metrics.menuOpen, true, `${label} opens the lesson browser`);
         assert.ok(metrics.menuPanel?.width > 1000 && metrics.menuPanel?.height > 700, `${label} menu panel fits desktop layout`);
@@ -1032,7 +1045,11 @@ presentationBrowserSuite: {
       await captureProductUi(`cover-${slug}`);
     }
 
-    for (const [slug,id] of [["orhun-abideleri","s113-media-reminder"],["tema-2-girisi","s85-theme-presentation"]]) {
+    for (const [slug,id] of [
+      ["orhun-abideleri","s113-media-reminder"],
+      ["tema-2-girisi","s85-theme-presentation"],
+      ["ogulla-bulusma","s95-q1"]
+    ]) {
       await openStep(slug,id);
       await captureProductUi(`book-link-${id}`);
     }
