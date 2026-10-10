@@ -9,7 +9,7 @@
     "preview": "node scripts/serve.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "test": "node scripts/build.mjs && node scripts/test-data.mjs && node scripts/test-presentation-flow.mjs && node scripts/test-textbook-pdf-links.mjs && node scripts/test-assessment-forms.mjs && node scripts/test-pptx-export.mjs && node scripts/test-offline-assets.mjs && node scripts/test-assessment-materials.mjs && node scripts/test-theme-3-presentation.mjs --static-only",
-    "test:browser": "npm run build && node scripts/test-offline-assets.mjs && node scripts/test-assessment-forms-browser.mjs && VISUAL_LAYOUT_CLASS_SMOKE=1 node scripts/test-presentation-browser.mjs && node scripts/test-presentation-browser.mjs && node scripts/test-offline-browser.mjs",
+    "test:browser": "npm run build && node scripts/test-offline-assets.mjs && node scripts/test-assessment-forms-browser.mjs && VISUAL_LAYOUT_CLASS_SMOKE=1 node scripts/test-presentation-browser.mjs && node scripts/test-presentation-browser.mjs && node scripts/test-offline-browser.mjs && node scripts/test-theme-3-presentation.mjs",
     "test:offline": "npm run build && node scripts/test-offline-assets.mjs && node scripts/test-offline-browser.mjs",
     "audit:design": "npm run build && node scripts/design-inventory-browser.mjs"
   },
