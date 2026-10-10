@@ -14,6 +14,6 @@ Bu klasör, Öğretmen Rehberi ders kitabı sayfalarının **yeniden pedagojik v
 
 | Sınıf | Tema | Sayfa aralığı | Yeniden kontrol edilen | Takip |
 |---|---|---|---|---|
-| 11 | 3 — Yaşamın İzinde | 160–235 | **5 / 76** (231–235) | [11. sınıf / Tema 3](11-sinif/tema-3.md) |
+| 11 | 3 — Yaşamın İzinde | 160–235 | **6 / 76** (230–235) | [11. sınıf / Tema 3](11-sinif/tema-3.md) |
 
-**İlk kayıt tarihi:** 2026-10-10. İlk kayıtlar yalnızca bu oturumda yeniden incelenen ve düzenlenen sayfaları kapsar; 230. sayfa işaretlenmemiştir.
+**İlk kayıt tarihi:** 2026-10-10. İlk kayıtlar bu oturumda yeniden incelenen ve düzenlenen 230–235. sayfaları kapsar.
