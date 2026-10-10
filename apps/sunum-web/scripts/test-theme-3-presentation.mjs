@@ -537,6 +537,12 @@ async function runProductionBrowserChecks(production) {
     await openAnswer("T3-P231-Q03");
     const conceptRows = await client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length");
     assert.equal(conceptRows, 5, "the five concepts are visible together on one slide");
+    view = await advanceUntil((value) => value.answer.includes("Dış dünyanın benzerlerinden"), "first concept definition");
+    let filledCells = await client.evaluate("document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length");
+    assert.equal(filledCells, 1, "only the first term is revealed on the first answer step");
+    view = await next();
+    filledCells = await client.evaluate("document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length");
+    assert.equal(filledCells, 2, "the second term opens in the same table without hiding the first");
     for (const [answerId, expected] of [["T3-P231-Q05", "E"], ["T3-P231-Q06", "C"]]) {
       await openAnswer(answerId);
       const choiceLabels = await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map((el) => el.textContent.trim())");
@@ -572,6 +578,11 @@ function verifyPedagogicalEdits() {
   assert.deepEqual(table231.columns, ["İfade", "Açıklama"]);
   assert.deepEqual(table231.rows, page231.blocks.find((block) => block.type === "table").rows,
     "five source concepts retain their blank explanation cells in one table");
+  assert.equal(table231.reveal_by_row, true, "concept definitions reveal inside the original five-row table");
+  const termAnswers = answerById.get("T3-P231-Q03").answer_sections;
+  assert.ok(table231.rows.every(([term]) => Object.keys(termAnswers).some((name) =>
+    name.toLocaleLowerCase("tr") === term.toLocaleLowerCase("tr"))),
+  "every table row has a matching independent definition");
   for (const [id, questionNo] of [["s231-q5", "5"], ["s231-q6", "6"]]) {
     const actual = step(id).content.options;
     const source = page231.blocks.find((block) => block.type === "question" && block.question_number === questionNo);
