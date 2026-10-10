@@ -1362,6 +1362,69 @@ presentationBrowserSuite: {
     }
     console.log("[sunum-web] Dock idle legibility passed in both themes: visible bar, six high-contrast buttons, touch targets.");
 
+    // Native Arc Floating Button Group: shared highlight follows pointer and
+    // focus without stealing the real slide-navigation keyboard bindings.
+    const arcDock = await page.evaluate(`(async () => {
+      const dock=document.querySelector('#dock'),buttons=[...dock.querySelectorAll('button[data-action]')];
+      const highlight=dock.querySelector('.dock__highlight');
+      const prev=buttons.find(button=>button.dataset.action==='prev');
+      const help=buttons.find(button=>button.dataset.action==='help');
+      const theme=buttons.find(button=>button.dataset.action==='theme');
+      // The preceding browser checks may have left an action focused.
+      // Clear that state so hover-leave and keyboard-focus are tested separately.
+      if (dock.contains(document.activeElement)) document.activeElement.blur();
+      const pointer=(node,type)=>node.dispatchEvent(new PointerEvent(type,{bubbles:type!=='pointerleave',pointerType:'mouse'}));
+      const state=()=>({
+        shown:dock.dataset.highlight==='true',
+        x:Number.parseFloat(dock.style.getPropertyValue('--dock-highlight-x')),
+        width:Number.parseFloat(dock.style.getPropertyValue('--dock-highlight-width'))
+      });
+      const initial={highlightCount:dock.querySelectorAll('.dock__highlight').length,
+        tip: getComputedStyle(prev,'::after').content,
+        accessible:buttons.every(button=>button.getAttribute('aria-label') && button.dataset.hint)};
+      pointer(prev,'pointermove');
+      const hovered=state(),prevWidth=prev.getBoundingClientRect().width;
+      pointer(help,'pointermove');
+      const moved=state();
+      pointer(dock,'pointerleave');
+      const cleared=state();
+      // Keyboard focus is deliberately moved to a DIFFERENT button than
+      // the last hovered one: a stale highlight position would fail.
+      prev.focus();
+      // CDP programmatic focus does not always emit the real focusin event;
+      // dispatch it explicitly while the button is genuinely active, then
+      // verify the same handler used by keyboard navigation.
+      prev.dispatchEvent(new FocusEvent('focusin',{bubbles:true}));
+      await new Promise(resolve=>setTimeout(resolve,180));
+      const focused={...state(),visible:Number.parseFloat(getComputedStyle(highlight).opacity)>0.5,
+        focusWithin:dock.matches(':focus-within'),
+        active:document.activeElement?.getAttribute('data-action')||document.activeElement?.tagName,
+        focusedMatches:document.activeElement===prev};
+      help.blur();
+      const before=document.documentElement.dataset.theme,pressedBefore=theme.getAttribute('aria-pressed');
+      theme.click();
+      const pressedAfter=theme.getAttribute('aria-pressed');
+      const toggled=document.documentElement.dataset.theme;
+      theme.click();
+      return {initial,hovered,prevWidth,moved,cleared,focused,
+        theme:{before,toggled,pressedBefore,pressedAfter,restored:document.documentElement.dataset.theme}};
+    })()`);
+    assert.equal(arcDock.initial.highlightCount, 1, "Arc dock has exactly one shared highlight surface");
+    assert.equal(arcDock.initial.accessible, true, "Arc dock keeps labels and shortcut hints on all actions");
+    assert.match(arcDock.initial.tip, /Geri/, "Arc dock displays accessible hint copy instead of a native title tooltip");
+    assert.equal(arcDock.hovered.shown, true, "Arc highlight appears when hovering back");
+    assert.ok(Math.abs(arcDock.hovered.width-arcDock.prevWidth)<=1, "Arc highlight matches the hovered button width");
+    assert.ok(Math.abs(arcDock.moved.x-arcDock.hovered.x)>=30, "Arc highlight tracks another action");
+    assert.equal(arcDock.cleared.shown, false, "Arc highlight disappears after pointer leaves");
+    assert.equal(arcDock.focused.focusWithin, true, "Arc dock registers keyboard focus");
+    assert.equal(arcDock.focused.visible, true, "Arc highlight is visibly rendered on focus: " + JSON.stringify(arcDock.focused));
+    assert.ok(Math.abs(arcDock.focused.x-arcDock.hovered.x)<=2,
+      "Arc highlight moves back to the keyboard-focused control, not the last hover: " + JSON.stringify(arcDock.focused));
+    assert.notEqual(arcDock.theme.before, arcDock.theme.toggled, "Arc mode button still switches theme");
+    assert.equal(arcDock.theme.restored, arcDock.theme.before, "Arc mode button restores theme without losing context");
+    assert.notEqual(arcDock.theme.pressedBefore, arcDock.theme.pressedAfter, "Arc mode announces pressed state");
+    console.log("[sunum-web] Arc Floating Button Group passed: pointer/focus highlight, action hints, theme pressed state.");
+
     // Cover and end are real presentation layouts, not incidental decorations.
     // Exercise distinct theme headings, long titles, and the terminal catalog item.
     const byTheme = new Map();

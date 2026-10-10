@@ -710,77 +710,187 @@
   background: var(--ords-color-surface);
 }
 
-/* Controls remain discoverable without hover and keep readable contrast.
- * The previous dark surface + inherited dark ink made resting icons disappear.
- * Use paired ORDS foreground/background tokens in both themes. */
-.dock {
-  gap: 4px;
+/* Arc Floating Button Group, native edition. Source inspiration:
+ * https://github.com/kuratlielia/arc-library/tree/main/registry/components/floating-button-group
+ * No React, Motion or runtime dependencies. One highlight follows pointer/keyboard
+ * focus while each icon remains legible on a quiet raised tray at rest. */
+.dock.dock--arc {
+  --dock-foreground: var(--ords-color-text-primary);
+  --dock-quiet: var(--ords-color-surface-muted);
+  --dock-highlight: var(--ords-color-primary-soft);
+  --dock-active-ink: var(--ords-color-primary-strong);
+  isolation: isolate;
+  gap: 5px;
   padding: 7px;
   border: 1px solid var(--ords-color-border-strong);
-  border-radius: 16px;
+  border-radius: 19px;
   background: var(--ords-color-surface-raised);
-  color: var(--ords-color-text-primary);
+  color: var(--dock-foreground);
   box-shadow: var(--ords-shadow-floating);
-  backdrop-filter: blur(14px);
-  opacity: 0.96;
+  opacity: 0.97;
   transform: none;
   pointer-events: auto;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
   transition: opacity var(--ords-duration-fast) var(--ords-ease-standard);
 }
 
-.viewport.show-ui .dock { opacity: 1; }
+.viewport.show-ui .dock--arc { opacity: 1; }
 
-.dock button {
+.dock--arc .dock__highlight {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: var(--dock-highlight-width, 48px);
+  height: var(--dock-highlight-height, 48px);
+  border: 1px solid var(--ords-color-border-strong);
+  border-radius: 13px;
+  background: var(--dock-highlight);
+  box-shadow: var(--ords-shadow-resting);
+  opacity: 0;
+  transform: translate3d(var(--dock-highlight-x, 0px), var(--dock-highlight-y, 0px), 0);
+  pointer-events: none;
+  transition:
+    transform var(--ords-duration-standard) var(--ords-ease-standard),
+    width var(--ords-duration-standard) var(--ords-ease-standard),
+    height var(--ords-duration-standard) var(--ords-ease-standard),
+    opacity var(--ords-duration-instant) var(--ords-ease-standard);
+}
+
+.dock--arc[data-highlight="true"] .dock__highlight,
+.dock--arc:focus-within .dock__highlight { opacity: 1; }
+
+.dock--arc button {
+  position: relative;
+  z-index: 2;
+  display: grid;
   width: 48px;
   height: 48px;
-  border: 1px solid var(--ords-color-border);
-  border-radius: 12px;
-  background: var(--ords-color-surface-muted);
-  color: var(--ords-color-text-primary);
+  place-items: center;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  background: var(--dock-quiet);
+  color: var(--dock-foreground);
+  font-family: var(--modern-font);
+  cursor: pointer;
+  touch-action: manipulation;
   transition:
-    background var(--ords-duration-fast) var(--ords-ease-standard),
-    border-color var(--ords-duration-fast) var(--ords-ease-standard),
     color var(--ords-duration-fast) var(--ords-ease-standard),
+    background var(--ords-duration-fast) var(--ords-ease-standard),
     transform var(--ords-duration-fast) var(--ords-ease-standard);
 }
 
-.dock button svg {
+.dock--arc button svg {
   width: 24px;
   height: 24px;
   stroke: currentColor;
+  stroke-width: 2;
 }
 
-.dock button[data-action="prev"],
-.dock button[data-action="next"] {
-  border-color: var(--ords-color-border-strong);
+.dock--arc button[data-action="prev"],
+.dock--arc button[data-action="next"] {
+  border-color: var(--ords-color-border);
   background: var(--ords-color-primary-soft);
-  color: var(--ords-color-primary-strong);
+  color: var(--dock-active-ink);
 }
 
-.dock button:hover,
-.dock button:focus-visible {
-  border-color: var(--ords-color-primary);
+/* The shared highlight is the only moving surface; controls never jump. */
+.dock--arc button:is(:hover, :focus-visible),
+.dock--arc button[aria-pressed="true"] {
+  color: var(--dock-active-ink);
+}
+.dock--arc button:is(:hover, :focus-visible) { background: transparent; }
+.dock--arc button[aria-pressed="true"]:not(:hover):not(:focus-visible) {
   background: var(--ords-color-primary-soft);
-  color: var(--ords-color-primary-strong);
 }
+.dock--arc button:active { transform: scale(0.965); }
 
-.dock button:active { transform: scale(0.96); }
-
-.dock__counter {
-  color: var(--ords-color-text-primary);
+.dock--arc .dock__counter {
+  position: relative;
+  z-index: 2;
+  min-width: 76px;
+  color: var(--dock-foreground);
+  font-family: var(--modern-font);
+  font-size: 15px;
+  font-weight: 730;
+  font-variant-numeric: tabular-nums;
   opacity: 1;
-  font-weight: 720;
 }
 
-.dock__sep { background: var(--ords-color-border-strong); }
+.dock--arc .dock__sep {
+  position: relative;
+  z-index: 2;
+  width: 1px;
+  height: 27px;
+  background: var(--ords-color-border-strong);
+}
 
-/* Always use the dark theme's matching ink with its dark surface. */
-:root[data-theme="dark"] .dock {
-  border-color: var(--ords-color-border-strong);
+/* Arc-like lightweight tooltip: no duplicate native title tooltip, and
+ * semantic labels remain on the real button for assistive technology. */
+.dock--arc button[data-hint]::after {
+  position: absolute;
+  z-index: 8;
+  right: 50%;
+  bottom: calc(100% + 14px);
+  width: max-content;
+  max-width: 230px;
+  padding: 9px 13px;
+  border: 1px solid var(--ords-color-border-strong);
+  border-radius: 11px;
+  background: var(--ords-color-text-primary);
+  color: var(--ords-color-bg-app);
+  box-shadow: var(--ords-shadow-raised);
+  content: attr(data-hint);
+  font-family: var(--modern-font);
+  font-size: 14px;
+  font-weight: 570;
+  line-height: 1.25;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(50%, 4px) scale(0.98);
+  pointer-events: none;
+  transition:
+    opacity var(--ords-duration-fast) var(--ords-ease-standard),
+    transform var(--ords-duration-fast) var(--ords-ease-standard);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dock--arc button[data-hint]:hover::after {
+    opacity: 1;
+    transform: translate(50%, 0) scale(1);
+  }
+}
+.dock--arc button[data-hint]:focus-visible::after {
+  opacity: 1;
+  transform: translate(50%, 0) scale(1);
+}
+
+.dock--arc button:focus-visible {
+  outline: 3px solid var(--ords-color-primary);
+  outline-offset: 2px;
+}
+
+/* The presentation stage uses two color schemes; read all button values
+ * from the corresponding ORDS tokens instead of inherited shell colors. */
+:root[data-theme="dark"] .dock--arc {
+  --dock-foreground: var(--ords-color-text-primary);
+  --dock-quiet: var(--ords-color-surface-muted);
+  --dock-highlight: var(--ords-color-primary-soft);
+  --dock-active-ink: var(--ords-color-primary-strong);
   background: var(--ords-color-surface-raised);
-  color: var(--ords-color-text-primary);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .dock--arc,
+  .dock--arc .dock__highlight,
+  .dock--arc button,
+  .dock--arc button[data-hint]::after {
+    transition: none !important;
+  }
+  .dock--arc button:active { transform: none; }
+}
 
 .menu {
   background: rgba(10, 15, 18, 0.5);
