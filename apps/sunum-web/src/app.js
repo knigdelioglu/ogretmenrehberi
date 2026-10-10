@@ -1114,19 +1114,15 @@ function answerLayerPages(step, b = 1) {
         : (typeof sections[name] === "string" ? `Düzeltme: ${sections[name]}` : "Doğru açıklama."));
     const steps = target.rows.length + 2;
     return Array.from({ length: steps }, (_, stage) => ({
-      title: `${target.title} · Değerlendirme`,
-      responseTable: {
-        columns: target.columns,
-        rows: target.rows.map((row, index) => ({
-          name: row[0],
-          original: row[1],
-          final: `${row[1]} — ${feedback[index]}`,
-          shown: index < stage
-        })).map(row => [row.name, {
-          text: row.original + (row.shown ? ` — ${feedback[target.rows.findIndex(r => r[0] === row.name)]}` : ""),
-          reserve: row.final
-        }])
-      },
+      title: "Tabloların değerlendirilmesi",
+      responseTables: step.content.tables.map(table =>
+        table.title !== target.title ? table : {
+          ...table,
+          rows: table.rows.map(([name, statement], index) => [name, {
+            text: statement + (index < stage ? ` — ${feedback[index]}` : ""),
+            reserve: `${statement} — ${feedback[index]}`
+          }])
+        }),
       responseConclusion: answer.answer,
       conclusionVisible: stage > target.rows.length
     }));
@@ -1726,7 +1722,7 @@ function stepSlide(lesson, step) {
   }
 
   if (viewKey === "answer" && !isVocab) {
-    if (page.responseTable) {
+    if (page.responseTable || page.responseTables) {
       const conclusion = page.responseConclusion
         ? h("div", { class: "presentation-conclusion" },
             h("span", { class: "presentation-conclusion__measure", "aria-hidden": "true" }, page.responseConclusion),
@@ -1734,7 +1730,9 @@ function stepSlide(lesson, step) {
               page.conclusionVisible ? page.responseConclusion : ""))
         : null;
       main.append(panel("answer", answerLabel(step, lesson.theme),
-        [renderContent(step, { table: page.responseTable }), conclusion], fresh("answer")));
+        [renderContent(step, page.responseTables
+          ? { tables: page.responseTables }
+          : { table: page.responseTable }), conclusion], fresh("answer")));
     } else if (page.hideValues) {
       main.append(renderSections(page.sections, step.sections_layout, { hideValues: true }));
     } else if (page.answerText || page.sections) {
