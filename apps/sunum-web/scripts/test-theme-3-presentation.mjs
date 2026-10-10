@@ -534,19 +534,47 @@ async function runProductionBrowserChecks(production) {
     assert.ok(!view.hasEvidence && !(recordingLimited.step.answer.evidence_quotes?.length),
       "the missing recording does not create a fabricated evidence stage");
 
+    // Verify geometry as well as reveal order. Text is present for layout but
+    // hidden from the student and accessibility tree until its turn.
+    const conceptTableMetrics = () => client.evaluate(`(() => {
+      const panel = document.querySelector('#canvas .panel--answer');
+      const table = panel?.querySelector('.presentation-table');
+      const cells = [...(table?.querySelectorAll('tbody td') || [])];
+      return {
+        panelHeight: panel?.offsetHeight,
+        tableHeight: table?.offsetHeight,
+        tableWidth: table?.offsetWidth,
+        rowHeights: [...(table?.querySelectorAll('tbody tr') || [])].map(row => row.offsetHeight),
+        filled: cells.filter(cell => !cell.classList.contains('presentation-table__empty')).length,
+        reserved: cells.filter(cell => {
+          const ghost = cell.querySelector('.presentation-table__measure');
+          return ghost?.getAttribute('aria-hidden') === 'true' &&
+            getComputedStyle(ghost).visibility === 'hidden' &&
+            ghost.textContent.trim().length > 0;
+        }).length,
+        visibleValues: cells.map(cell => cell.querySelector('.presentation-table__value')?.innerText ?? cell.innerText)
+      };
+    })()`);
     await openAnswer("T3-P231-Q03");
     const conceptRows = await client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length");
     assert.equal(conceptRows, 5, "the five concepts are visible together on one slide");
     view = await advanceUntil((value) => value.answer.includes("Kurmaca"), "initial blank concept answer table");
-    const filledConceptCells = () => client.evaluate(
-      "document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length"
-    );
-    assert.equal(await filledConceptCells(), 0,
-      "opening the answer table must not expose the Kurmaca definition");
+    const baseline = await conceptTableMetrics();
+    assert.equal(baseline.filled, 0, "opening the answer table does not reveal Kurmaca");
+    assert.equal(baseline.reserved, 5, "every future definition reserves its final layout height");
+    assert.deepEqual(baseline.visibleValues, Array(5).fill("—"), "all explanations remain visually hidden");
     for (let revealed = 1; revealed <= 5; revealed += 1) {
       view = await next();
-      assert.equal(await filledConceptCells(), revealed,
+      const current = await conceptTableMetrics();
+      assert.equal(current.filled, revealed,
         "each subsequent click reveals exactly one additional concept, in table order");
+      assert.equal(current.reserved, 5, "all five definitions keep their layout reservations");
+      for (const key of ["panelHeight", "tableHeight", "tableWidth"]) {
+        assert.ok(Math.abs(current[key] - baseline[key]) <= 1,
+          `page 231 ${key} must not move after reveal ${revealed}: ${current[key]} vs ${baseline[key]}`);
+      }
+      assert.deepEqual(current.rowHeights, baseline.rowHeights,
+        `page 231 row heights must stay fixed after reveal ${revealed}`);
     }
     assert.ok(view.answer.includes("Dış dünyanın benzerlerinden"),
       "Kurmaca definition stays visible after subsequent reveals");

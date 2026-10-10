@@ -1075,8 +1075,14 @@ function answerLayerPages(step, b = 1) {
         title: "Cevap",
         responseTable: {
           columns: table.columns,
-          rows: table.rows.map(([name], rowIndex) => [name,
-            rowIndex < revealedCount ? definitions.get(name.toLocaleLowerCase("tr")) : ""])
+          rows: table.rows.map(([name], rowIndex) => {
+            const finalText = definitions.get(name.toLocaleLowerCase("tr"));
+            return [name, {
+              text: rowIndex < revealedCount ? finalText : "",
+              reserve: finalText,
+              revealed: rowIndex < revealedCount
+            }];
+          })
         }
       }));
     }
@@ -1233,13 +1239,40 @@ function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
   if (content.table?.rows?.length) {
     const table = content.table;
+    // Reserve each definition's final height even before it becomes visible.
+    // The same measurements apply to the original blank task table and every answer stage.
+    const definitions = step.content?.table?.reveal_by_row && step.answer?.answer_sections;
+    const reserveByTerm = definitions && !Array.isArray(definitions)
+      ? new Map(Object.entries(definitions).map(([term, definition]) =>
+        [term.toLocaleLowerCase("tr"), String(definition)]))
+      : null;
+    const renderCell = (cell, index, row) => {
+      if (index === 0) return h("th", { scope: "row" }, cell);
+      const structured = cell && typeof cell === "object" && !Array.isArray(cell);
+      const visibleText = String(structured ? cell.text ?? "" : cell ?? "");
+      const finalText = String(structured ? cell.reserve ?? visibleText
+        : reserveByTerm?.get(String(row[0]).toLocaleLowerCase("tr")) ?? visibleText);
+      if (!finalText) {
+        return h("td", { class: "presentation-table__empty" }, "—");
+      }
+      const blank = !visibleText.trim();
+      return h("td", { class: blank ? "presentation-table__empty" : "" },
+        h("div", { class: "presentation-table__cell" },
+          h("span", {
+            class: "presentation-table__measure",
+            "aria-hidden": "true"
+          }, finalText),
+          h("span", {
+            class: `presentation-table__value${blank ? " presentation-table__value--placeholder" : ""}`
+          }, blank ? "—" : visibleText)
+        )
+      );
+    };
     return h("div", { class: "presentation-table-wrap" },
       h("table", { class: "presentation-table" },
         h("thead", {}, h("tr", {}, table.columns.map((column) => h("th", { scope: "col" }, column)))),
         h("tbody", {}, table.rows.map((row) =>
-          h("tr", {}, row.map((cell, index) => index === 0
-            ? h("th", { scope: "row" }, cell)
-            : h("td", { class: cell ? "" : "presentation-table__empty" }, cell || "—")))
+          h("tr", {}, row.map((cell, index) => renderCell(cell, index, row)))
         ))
       )
     );
