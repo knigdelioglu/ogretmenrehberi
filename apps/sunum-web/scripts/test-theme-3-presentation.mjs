@@ -309,6 +309,16 @@ function verifyProductionCatalog() {
   const assessment = encryptedBySlug.get("degerlendirme-230-235");
   assert.ok(assessment, "published assessment lesson exists");
   const publishedSteps = new Map(assessment.steps.map((step) => [step.id, step]));
+  assert.deepEqual(publishedSteps.get("s230-venn-reading")?.content?.excerpts?.map(e => e.label),
+    ["1", "2", "3"], "encrypted production catalog retains all three source passages");
+  assert.ok(publishedSteps.get("s230-venn-reading")?.content?.claims?.thesis &&
+    publishedSteps.get("s230-venn-reading")?.content?.claims?.antithesis,
+    "encrypted catalog retains source claims next to each excerpt");
+  assert.ok(publishedSteps.get("s230-q1")?.content?.venn?.thesis &&
+    publishedSteps.get("s230-q1")?.content?.venn?.antithesis,
+    "encrypted catalog retains both Venn claims");
+  assert.equal(publishedSteps.get("s230-q1")?.content?.items, undefined,
+    "published Venn replaces duplicate numbered-card fallback");
   assert.equal(publishedSteps.get("s231-q3")?.content?.table?.rows.length, 5,
     "production catalog preserves the complete concept table");
   assert.equal(publishedSteps.get("s232-veli-chart")?.content?.table?.rows.length, 5,
