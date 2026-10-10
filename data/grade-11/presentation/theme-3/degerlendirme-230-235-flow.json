@@ -327,13 +327,13 @@
       "answer_id": "T3-P233-Q08",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 8 — Metin Orhan Veli'yi hangi edebî yönleriyle tanıtıyor?",
+      "prompt": "Ölçme ve Değerlendirme 8 — Metinde Orhan Veli hangi yönleriyle tanıtılmıştır? Gerekçelendirerek açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.232–233'teki parçada şairlik, Garip akımı, öykücülük, tema ve üslup bilgilerini birlikte değerlendirin.",
+        "lead": "Metindeki ifadelerden dayanak göstererek açıklayınız.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: 'Garip'in kurucusu/teorisyeni', 'hece ve aruzu yıktı', 'balıkçıları ve memurları şiire soktu', 'halkın günlük konuşma dilini kullandı' gibi bu parçada açıkça söylenmeyen ayrıntıları zorunlu cevap yapmayın."
       },
-      "thinking": "Şairlik, Garip akımı, öykücülük, konu ve anlatım hakkındaki bilgileri ayrı gruplandırıp metnin odağını belirleyin."
+      "thinking": "Metnin şair hakkında verdiği bilgileri bulun; her çıkarımınızı metinden örnekle destekleyin."
     },
     {
       "id": "s233-q9",
@@ -341,11 +341,33 @@
       "answer_id": "T3-P233-Q09",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 9 — Orhan Veli metni hakkında söylenemeyecek seçeneği bulunuz.",
+      "prompt": "Ölçme ve Değerlendirme 9 — Metinle ilgili aşağıdakilerden hangisi söylenemez?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Seçeneklerden hangisi için metin içi yeterli dayanak bulunmuyor? Her yargıyı metinle kontrol ederek karar verin.",
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Metni 'edebî portre' gibi kitaptaki sorunun gerektirmediği bir türe kesin olarak etiketlemeye gerek yoktur."
+        "lead": "Önce seçenekleri okuyun; her ifade için metinden kanıt arayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metni 'edebî portre' gibi kitaptaki sorunun gerektirmediği bir türe kesin olarak etiketlemeye gerek yoktur.",
+        "options": [
+          {
+            "label": "A",
+            "text": "Şairin edebî kişiliği tanıtılmıştır."
+          },
+          {
+            "label": "B",
+            "text": "Garip akımıyla ilişkisi açıklanmıştır."
+          },
+          {
+            "label": "C",
+            "text": "Yazarın yaşamı kronolojik olarak verilmiştir."
+          },
+          {
+            "label": "D",
+            "text": "Şiir ve öykülerindeki temalara değinilmiştir."
+          },
+          {
+            "label": "E",
+            "text": "Nesnel ve bilgilendirici bir anlatım kullanılmıştır."
+          }
+        ]
       }
     },
     {
@@ -353,10 +375,10 @@
       "source_record_id": "T03-S0140",
       "layout": "process",
       "density": "compact",
-      "prompt": "Biyografi yarışması — Puanlama kuralını önce uygulayınız.",
+      "prompt": "Biyografi yarışması — Tablo A ve Tablo B'deki açıklamaları karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İki tabloda yer alan her açıklamayı biyografi türünün özelliklerine göre ayrı ayrı değerlendirin.",
+        "lead": "Her doğru açıklama +5, yanlış açıklama −2 puandır. İki tablodaki dört ifadeyi ayrı ayrı değerlendirin; sonuçlarını hesaplayın.",
         "sections": [
           {
             "title": "Doğru açıklama",
@@ -370,6 +392,58 @@
             "title": "Kontrol",
             "body": "Her tablonun dört açıklaması ayrı değerlendirilir; grup eşleştirmesi toplamdan sonra yapılır."
           }
+        ],
+        "tables": [
+          {
+            "title": "Tablo A",
+            "columns": [
+              "Kavram",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Amaç",
+                "Biyografinin amacı bir kişinin yaşamı hakkında bilgi vermektir."
+              ],
+              [
+                "Dil",
+                "Biyografilerde açık ve anlaşılır bir dil kullanılır."
+              ],
+              [
+                "İçerik",
+                "Biyografide kişinin toplumu etkileyen yönleri anlatılır."
+              ],
+              [
+                "Tutum",
+                "Biyografide kişinin yaşam tarzı toplumsal normlara göre değerlendirilmelidir."
+              ]
+            ]
+          },
+          {
+            "title": "Tablo B",
+            "columns": [
+              "Kavram",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Tür",
+                "Alanında ün kazanmış kişilerin yaşamlarını anlatan yazı türüdür."
+              ],
+              [
+                "Tarafsızlık",
+                "Biyografilerde kişinin hayatı anlatılırken tarafsızlık ilkesi göz ardı edilebilir."
+              ],
+              [
+                "Kronoloji",
+                "Biyografide kişinin doğumundan itibaren kronolojik sırayı takip etme zorunluluğu vardır."
+              ],
+              [
+                "Belge",
+                "Gerçek kişilerin hayatı ele alındığından biyografiler belgelere dayandırılmalıdır."
+              ]
+            ]
+          }
         ]
       }
     },
@@ -379,10 +453,10 @@
       "answer_id": "T3-P233-Q10",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 10 — 13 puan alan II. gruba hangi tablo aittir?",
+      "prompt": "Ölçme ve Değerlendirme 10 — Tabloda verilen kavram açıklamalarından II. grup 13 puan aldığına göre hangi tablo II. gruba aittir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tablo A'daki Amaç, Dil, İçerik ve Tutum cümlelerini tek tek denetleyip toplamı hesaplayın.",
+        "lead": "Önce her tablodaki dört ifadeyi değerlendirin; toplam puanları hesaplayıp II. grubun tablosunu belirleyin.",
         "items": [
           "Amaç",
           "Dil",
@@ -390,7 +464,63 @@
           "Tutum",
           "Toplam puan"
         ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Tutum cümlesini tabloda verildiği biçimde kullanın; yorumunuzu metindeki ölçütlere dayandırın."
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tutum cümlesini tabloda verildiği biçimde kullanın; yorumunuzu metindeki ölçütlere dayandırın.",
+        "tables": [
+          {
+            "title": "Tablo A",
+            "columns": [
+              "Kavram",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Amaç",
+                "Biyografinin amacı bir kişinin yaşamı hakkında bilgi vermektir."
+              ],
+              [
+                "Dil",
+                "Biyografilerde açık ve anlaşılır bir dil kullanılır."
+              ],
+              [
+                "İçerik",
+                "Biyografide kişinin toplumu etkileyen yönleri anlatılır."
+              ],
+              [
+                "Tutum",
+                "Biyografide kişinin yaşam tarzı toplumsal normlara göre değerlendirilmelidir."
+              ]
+            ]
+          },
+          {
+            "title": "Tablo B",
+            "columns": [
+              "Kavram",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Tür",
+                "Alanında ün kazanmış kişilerin yaşamlarını anlatan yazı türüdür."
+              ],
+              [
+                "Tarafsızlık",
+                "Biyografilerde kişinin hayatı anlatılırken tarafsızlık ilkesi göz ardı edilebilir."
+              ],
+              [
+                "Kronoloji",
+                "Biyografide kişinin doğumundan itibaren kronolojik sırayı takip etme zorunluluğu vardır."
+              ],
+              [
+                "Belge",
+                "Gerçek kişilerin hayatı ele alındığından biyografiler belgelere dayandırılmalıdır."
+              ]
+            ]
+          }
+        ],
+        "table_review": {
+          "mode": "score",
+          "target": "A"
+        }
       }
     },
     {
@@ -399,19 +529,75 @@
       "answer_id": "T3-P233-Q11",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 11 — I. grup hangi kavram açıklamalarını düzeltmelidir?",
+      "prompt": "Ölçme ve Değerlendirme 11 — I. grubun tam puan alabilmesi için hangi kavrama / kavramlara doğru cevap vermesi gerekirdi? Açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Tablo B’deki dört kavram açıklamasını biyografi türüne göre tek tek değerlendirin; hatalı olanları belirleyip düzeltin.",
+        "lead": "Her açıklamayı biyografi türünün özelliklerine göre kontrol edin. Düzeltme gerektirenleri gerekçelendirin.",
         "items": [
           "Tür",
           "Tarafsızlık",
           "Kronoloji",
           "Belge"
         ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Tablodaki hatalı cümleleri olduğu gibi aktarın ve bu iki kavramın tanımlarıyla düzeltin."
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Tablodaki hatalı cümleleri olduğu gibi aktarın ve bu iki kavramın tanımlarıyla düzeltin.",
+        "tables": [
+          {
+            "title": "Tablo A",
+            "columns": [
+              "Kavram",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Amaç",
+                "Biyografinin amacı bir kişinin yaşamı hakkında bilgi vermektir."
+              ],
+              [
+                "Dil",
+                "Biyografilerde açık ve anlaşılır bir dil kullanılır."
+              ],
+              [
+                "İçerik",
+                "Biyografide kişinin toplumu etkileyen yönleri anlatılır."
+              ],
+              [
+                "Tutum",
+                "Biyografide kişinin yaşam tarzı toplumsal normlara göre değerlendirilmelidir."
+              ]
+            ]
+          },
+          {
+            "title": "Tablo B",
+            "columns": [
+              "Kavram",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Tür",
+                "Alanında ün kazanmış kişilerin yaşamlarını anlatan yazı türüdür."
+              ],
+              [
+                "Tarafsızlık",
+                "Biyografilerde kişinin hayatı anlatılırken tarafsızlık ilkesi göz ardı edilebilir."
+              ],
+              [
+                "Kronoloji",
+                "Biyografide kişinin doğumundan itibaren kronolojik sırayı takip etme zorunluluğu vardır."
+              ],
+              [
+                "Belge",
+                "Gerçek kişilerin hayatı ele alındığından biyografiler belgelere dayandırılmalıdır."
+              ]
+            ]
+          }
+        ],
+        "table_review": {
+          "mode": "correction",
+          "target": "B"
+        }
       },
-      "thinking": "Her kavram tanımındaki zorunlu özellikle sık görülen eğilimi ayırın; biyografi hakkında kurulan genellemeleri bu ölçüyle denetleyin."
+      "thinking": "Kesin zorunluluk bildiren yargılar da dâhil olmak üzere dört tanımın doğruluğunu ayrı ayrı sorgulayın."
     },
     {
       "id": "s234-mustafa",
@@ -421,11 +607,11 @@
       "prompt": "Bir Bilim Adamının Romanı — Mustafa İnan parçasını okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Mustafa İnan’ın öğretme isteği ile çevresindekilerin onu ne ölçüde tanıdığını karşılaştırın.",
+        "lead": "Ders kitabındaki parçayı ve Fuzûlî beytini okuyun. Sözlerin metindeki bağlamını belirleyin.",
         "items": [
-          "Mühendis arkadaşlarına yaptığı açıklama",
-          "Onu dinleyenlerin tepkisi",
-          "Fuzûlî beyti ve yalnızlık ilişkisi"
+          "Mustafa İnan'ın arkadaşlarına anlattığı olay",
+          "Onu dinleyenlerin sonrasında söyledikleri",
+          "Metne alınan Fuzûlî beyti"
         ],
         "note": "Beyti ve düzyazı parçasını kaynak kitaptan okuyun; tüm metni Lesson Player'a kopyalamayın."
       }
@@ -436,13 +622,13 @@
       "answer_id": "T3-P234-Q12",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 12 — Fuzûlî'ye yapılan gönderme Mustafa İnan'ı nasıl yansıtır?",
+      "prompt": "Ölçme ve Değerlendirme 12 — Verilen parçada Fuzûlî’ye atıf yapılması ve onun bir beytine yer verilmesinin amacı ne olabilir? Düşüncelerinizi açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kalabalık içinde bulunmak ile anlaşılmış olmak arasındaki farkı, arkadaşlarının hatırladığı şeylerle birlikte yorumlayın.",
+        "lead": "Göndermeyi ve beyti parçanın bütünüyle ilişkilendirerek kendi yorumunuzu gerekçelendirin.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Mustafa İnan'ın Divan şiiri, felsefe veya halk irfanı bilgisine ilişkin bu parçada verilmeyen sonuçları beyitten hareketle 'kanıtlandı' diye eklemeyin."
       },
-      "thinking": "Şairin beytinde dile getirilen duygu ile bilim insanının arkadaşlarınca anılma biçimini yan yana getirip gönderme bağını çıkarın."
+      "thinking": "Beytin dile getirdiği duyguyu ve anlatıcının göndermeyi hangi bağlamda yaptığını metinden çıkarın."
     },
     {
       "id": "s234-q13",
@@ -450,10 +636,10 @@
       "answer_id": "T3-P234-Q13",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 13 — Sekiz yargıyı Evet / Hayır / Bilgi yok olarak değerlendiriniz.",
+      "prompt": "Ölçme ve Değerlendirme 13 — Aşağıdaki cümleleri okuduğunuz metne göre değerlendirerek “Evet”, “Hayır” veya “Bilgi yok” seçeneklerinden birini onaylama işaretiyle (✔) işaretleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Sekiz cümleyi sırayla okuyun; her kararınızı parçada bulunan bilgi veya anlatım özelliğine dayandırın.",
+        "lead": "Cümleleri metne göre işaretleyin; her seçiminize metinden gerekçe bulun.",
         "items": [
           "1. Bilgi verme amacı",
           "2. Biyografik roman türü",
@@ -464,7 +650,76 @@
           "7. Nesnel anlatım",
           "8. Kronolojik sıra"
         ],
-        "note": "Yanıtı açmadan önce sekiz satırın tamamını işaretleyin; yalnız 'Bilgi yok' seçeneğini dışlamak için tahminde bulunmayın.\n\nÖğretmen için kaynak ve değerlendirme notu: 'Hâkim anlatıcı' gibi bu kısa parça üzerinden kesinleştirilmesi gerekmeyen anlatıcı alt türlerini eklemeyin. 'Bilgi yok' seçeneği ancak parçada karar vermeye yeterli veri bulunmadığında kullanılmalıdır."
+        "note": "Yanıtı açmadan önce sekiz satırın tamamını işaretleyin; yalnız 'Bilgi yok' seçeneğini dışlamak için tahminde bulunmayın.\n\nÖğretmen için kaynak ve değerlendirme notu: 'Hâkim anlatıcı' gibi bu kısa parça üzerinden kesinleştirilmesi gerekmeyen anlatıcı alt türlerini eklemeyin. 'Bilgi yok' seçeneği ancak parçada karar vermeye yeterli veri bulunmadığında kullanılmalıdır.",
+        "table": {
+          "columns": [
+            "Cümleler",
+            "Evet",
+            "Hayır",
+            "Bilgi yok"
+          ],
+          "rows": [
+            [
+              "Bilgi vermek amaçlanmıştır.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Biyografik roman türünden alınmıştır.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Açık ve anlaşılır bir dil kullanılmıştır.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mustafa İnan’ın yaşadıklarından söz edilmiştir.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Kahraman anlatıcı tarafından aktarılmıştır.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Devrik cümleler kullanılarak anlatım güçlendirilmiştir.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Nesnel bir anlatımla kaleme alınmıştır.",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Zamanda kronolojik bir sıra takip edilmiştir.",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "review": "checks",
+          "review_reasons": [
+            "Mustafa İnan'ın öğreticiliği ve çevresi anlatılır.",
+            "Parça biyografik roman örneğindendir.",
+            "Dil genel olarak anlaşılırdır.",
+            "Mustafa İnan'ın yaşadığı bir olay aktarılır.",
+            "Olaylar üçüncü kişili anlatımla aktarılır.",
+            "Yüklemin sonda olmadığı cümleler vardır.",
+            "Anlatıcı yorumlarına ve edebî söyleyişe yer verilir.",
+            "Bu kesitte olaylar zaman sırasıyla aktarılır."
+          ]
+        }
       },
       "thinking": "Her yargı için metinde açıkça verilen bir ifade arayın; anlatıcının yorumu ile bilgi bulunmayan durumu ayrı tutun."
     },
@@ -485,8 +740,8 @@
         "note": "QR videosunun transkripti elimizde olmadığından Lesson Player yapımdan alıntı veya sahne ayrıntısı üretmez.",
         "sources": [
           {
-            "label": "Ders kitabı s.234 — karekodun bulunduğu sayfayı aç",
-            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=234"
+            "label": "Ders kitabı s.234 — Aile Bağları karekodunu göster",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=235"
           }
         ]
       }
@@ -497,10 +752,10 @@
       "answer_id": "T3-P234-Q14",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 14 — Diyalog tekniği Aile Bağları'nın anlatımına nasıl katkı sağlar?",
+      "prompt": "Ölçme ve Değerlendirme 14 — Metinde kullanılan diyalog tekniği, metnin anlatımına nasıl bir katkı sağlamıştır? Düşüncelerinizi sözlü olarak açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Videoda gerçekten duyulan bir konuşmayı seçin; kişinin duygu, düşünce veya ilişkisini hangi yönden görünür kıldığını açıklayın.",
+        "lead": "Videoyu izledikten sonra gerçekten duyduğunuz bir konuşmayı seçip katkısını sözlü olarak açıklayın.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Yalnız genel çözümleme şablonu verin. 'Kuşak çatışması', 'aile içi güç dengesi', belirli alt metin veya psikolojik özellikleri videodan kanıt olmadan bu yapımın özelliği gibi yazmayın."
       }
     },
@@ -510,7 +765,7 @@
       "answer_id": "T3-P234-Q15",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 15 — Kişi, mekân ve zaman dramatik örgüyü nasıl etkiler?",
+      "prompt": "Ölçme ve Değerlendirme 15 — Radyo tiyatrosunda yer alan kişi, mekân ve zaman unsurlarının dramatik olay örgüsüne katkıları hakkında neler söyleyebilirsiniz?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
         "lead": "Cevabınızı videodaki somut sahnelerden hareketle kurun. Genel tiyatro bilgisi, bu yapımın kanıtı yerine geçmez.",
@@ -527,19 +782,34 @@
       "source_record_id": "T03-S0146",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Beş parça — Yazarın hayatından hareketle olay yazısına uygun örnekleri ayırt ediniz.",
+      "prompt": "Ölçme ve Değerlendirme 16 — I–V numaralı metinleri okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "s.235'teki I–V numaralı parçaları kitaptan okuyun. Sanatçının hayatı hakkında bilgi veren pasajları kurmaca kişinin iç yaşantısından ayırın.",
-        "sections": [
+        "lead": "Her parçayı kitaptaki özgün bağlamıyla okuyun. Sınıflandırmayı ve A–E seçimini sonraki soru ekranında yapın.",
+        "excerpts": [
           {
-            "title": "Hayat bilgisi",
-            "body": "Mahlasın, yaşam çevresinin veya gerçek kişinin anısının anlatılması."
+            "label": "I",
+            "text": "Doğrusunu söylemek gerekirse yanıp yakılma cihetinde geceyi aydınlatan yanan mum gibi dilinden tutuşmuş, mumla ilişkisi ismen ve resmen üstüne kalmıştı. Zayıf ve sarı vücudu yaralı ve çehresinin rengi balmumu gibi sarı olduğu için Şem’î mahlasını seçti."
           },
           {
-            "title": "Kurmaca anlatım",
-            "body": "Roman kişisinin iç dünyasındaki yaşantının yazarın biyografisi olarak sunulmaması."
+            "label": "II",
+            "text": "Böyle devam ederse bir müddet sonra Cavidan’ı mutsuz etmekten korkuyordum. Yakın zamanda saplandığım bu duyguları hissedecek ve evin havasını bir mutsuzluk kaplayacaktı. Cavidan her zamanki kibarlığı ve olgunluğuyla tahammül etmeye çalışacaktı. Çünkü ailesine karşı verdiği mücadeleden dolayı eli kolu bağlı vaziyetteydi."
+          },
+          {
+            "label": "III",
+            "text": "Metroya bindiğim zaman yanımdaki boş yere heykeli bırakmadım. Hâlâ omuzlarımdaydı. Oradan ağır ağır vücuduma, içime süzüldüğünü ve bir zehir gibi kanıma karıştığını hissettim. Kalbim vuruşunu artırmıştı. Eve bir sıtma nöbeti içinde vardım, bir kartpostal büyüklüğünde kalmış, erimiş heykeli sırtımdan adeta kopararak masamın üzerinde bıraktım ve yatağımın üstüne boylu boyunca uzanıp bir sıtmalı gibi titreye titreye saatlerce kaldım."
+          },
+          {
+            "label": "IV",
+            "text": "Dediğim gibi şehre alışmamı kolaylaştıran bir başka sebep de dostlarımın Ankara’da olmasıydı. Ahmet Muhip, Orhan Veli, Şahap Sıtkı, Melih Cevdet, Oktay Rifat, Baki Süha, Ceyhun Atuf, Yaşar Nabi, Cevdet Kudret, Sabahattin Eyüboğlu Ankara’daydı ve Ankara bu sanatkârların ses verdiği yer olmaya başlamıştı."
+          },
+          {
+            "label": "V",
+            "text": "Kul olduğu için Çakerî mahlasını kullanırdı. Rivayet edilir ki adı geçenin daha gençliğinde nezle rahatsızlığı yüzünden sakalı erken ağarmıştı. O da bu duruma üzülüp sakalını boyardı. Sultan Bayezid bir gün niçin karaya boyayıp rengini değiştiriyor ve ak sakalın yüzüne kara çalıp suçlular gibi teşhir ediyorsun diye sorunca, devletli padişahım ben kulunuz şüphesiz yaşımı biliyorum, sakal yalan söylüyor. Bu yüzden ben de yüzüme kara çalıp onu teşhir ettim ve küçük düşürüp intikam aldım diye cevap vermiş."
           }
+        ],
+        "items": [
+          "I–V parçalarını okuyup her birinin anlatıcı ve gerçek kişiyle ilişkisini değerlendirin."
         ]
       }
     },
@@ -549,19 +819,41 @@
       "answer_id": "T3-P235-Q16",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 16 — Hangi parçalar yazarın hayatından bilgi vererek olay yazmaya uygundur?",
+      "prompt": "Ölçme ve Değerlendirme 16 — Türk dili ve edebiyatı dersinde bir olayı yazarın hayatına dair bilgiler de vererek yazma etkinliği yapacak olan Esra, kütüphaneden bir roman ve tezkire örneği alır. Eve döndüğünde yazma etkinliğini yapmak için kütüphaneden aldığı kitaplarda yer alan aşağıdaki ifadelerden hangilerine benzer ifadeler kullanırsa etkinliğin amacına uygun davranmış olur?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her parçada anlatılan kişinin yazar mı, bir tezkirede tanıtılan şair mi, yoksa kurmaca karakter mi olduğunu denetleyin.",
+        "lead": "I–V parçalarını değerlendirdikten sonra A–E seçeneklerinden birini işaretleyin.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: I. parçada 'tahsil', V. parçada 'şiir hevesi/yetiştiği çevre' gibi bu sayfadaki parçalarda bulunmayan ayrıntıları gerekçeye eklemeyin.",
         "sources": [
           {
-            "label": "Ders kitabı s.235 — karekodun bulunduğu sayfayı aç",
-            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=235"
+            "label": "Ders kitabı s.235 — beş metin ve soru 16'yı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=236"
+          }
+        ],
+        "options": [
+          {
+            "label": "A",
+            "text": "I, II, III"
+          },
+          {
+            "label": "B",
+            "text": "I, III, V"
+          },
+          {
+            "label": "C",
+            "text": "I, IV, V"
+          },
+          {
+            "label": "D",
+            "text": "II, III, IV"
+          },
+          {
+            "label": "E",
+            "text": "II, IV, V"
           }
         ]
       },
-      "thinking": "Parçaları türüne ve anlatıcının yaşam bilgisi verme biçimine göre karşılaştırın; yaşantı aktarımıyla kurmaca sahneyi ayırın."
+      "thinking": "Seçiminizi her metnin gerçek kişiye ait yaşam bilgisi içerip içermediğine göre gerekçelendirin; doğru seçeneği en sonunda belirleyin."
     }
   ]
 }
