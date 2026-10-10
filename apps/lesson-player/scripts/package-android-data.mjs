@@ -78,10 +78,11 @@ const outputs = {
 };
 if (checkOnly) {
   for (const [name, bytes] of Object.entries(outputs)) {
-    assert.deepEqual(fs.readFileSync(path.join(assets, name)), Buffer.from(bytes),
-      `Stale/missing Android asset: ${name}`);
-    assert.deepEqual(fs.readFileSync(path.join(published, name)), Buffer.from(bytes),
-      `Stale/missing published content: ${name}`);
+    const expected = Buffer.from(bytes);
+    const actualAsset = fs.readFileSync(path.join(assets, name));
+    assert.ok(actualAsset.equals(expected), `Stale/missing Android asset: ${name}`);
+    const actualPublished = fs.readFileSync(path.join(published, name));
+    assert.ok(actualPublished.equals(expected), `Stale/missing published content: ${name}`);
   }
 } else {
   fs.mkdirSync(assets, { recursive: true });

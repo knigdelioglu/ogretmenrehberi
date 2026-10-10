@@ -1,0 +1,217 @@
+/**
+ * ÖğretmenRehberi Tasarım Sistemi (ORDS) - Temel Tasarım Tokenları
+ * Arc Library semantik yaklaşımı ve modern QA pedagojik renkleri baz alınarak oluşturulmuştur.
+ */
+
+:root {
+  /* ==========================================================================
+     1. Nötr ve Yüzey Katmanları (Surfaces & Backgrounds)
+     ========================================================================== */
+  --ords-color-bg-app: #f7f8f5;
+  --ords-color-surface: #ffffff;
+  --ords-color-surface-raised: #ffffff;
+  --ords-color-surface-muted: #f0f3f2;
+
+  --ords-color-border: #d7e0df;
+  --ords-color-border-subtle: #e8eeed;
+  --ords-color-border-strong: #b8c5c4;
+
+  /* ==========================================================================
+     2. Metin ve Mürekkep Hiyerarşisi (Typography & Inks)
+     ========================================================================== */
+  --ords-color-text-primary: #182a35;
+  --ords-color-text-secondary: #5b6b73;
+  --ords-color-text-muted: #718087;
+
+  /* ==========================================================================
+     3. Ana Marka ve Eylem Vurgusu (Primary & Accent)
+     ========================================================================== */
+  --ords-color-primary: #176d68;
+  --ords-color-primary-soft: #e2efeb;
+  --ords-color-primary-strong: #0f524e;
+  --ords-color-primary-contrast: #ffffff;
+
+  /* ==========================================================================
+     4. Pedagojik Destek Sütunları (Educational Assist Pillars)
+     ========================================================================== */
+  /* Cevap (Answer): Çam Yeşili / Teal */
+  --ords-color-answer: #176d68;
+  --ords-color-answer-bg: #e2efeb;
+  --ords-color-answer-border: #b8cec6;
+  --ords-color-answer-text: #0d4a46;
+
+  /* Yönlendirme (Guidance): Sıcak Altın / Kehribar */
+  --ords-color-guidance: #9a650f;
+  --ords-color-guidance-bg: #f8efd9;
+  --ords-color-guidance-border: #ecd9b0;
+  --ords-color-guidance-text: #6b4305;
+
+  /* Metinsel Kanıt (Evidence): Mavi / İndigo */
+  --ords-color-evidence: #5363a7;
+  --ords-color-evidence-bg: #eceefa;
+  --ords-color-evidence-border: #cfd5f2;
+  --ords-color-evidence-text: #34407b;
+
+  /* Açıklama (Explanation): Duru Mor */
+  --ords-color-explanation: #765494;
+  --ords-color-explanation-bg: #f1eaf6;
+  --ords-color-explanation-border: #decceb;
+  --ords-color-explanation-text: #4e3465;
+
+  /* Öğretmen Notu (Note): Sıcak Toprak / Sand */
+  --ords-color-note: #9a5d2f;
+  --ords-color-note-bg: #f4e8dc;
+  --ords-color-note-border: #e6ceb8;
+  --ords-color-note-text: #663b1a;
+
+  /* ==========================================================================
+     5. Fonksiyonel Durum Renkleri (Status Colors)
+     ========================================================================== */
+  --ords-color-success: #145c32;
+  --ords-color-success-bg: #eaf8f0;
+  --ords-color-success-border: #bce9ce;
+
+  --ords-color-warning: #9a650f;
+  --ords-color-warning-bg: #fdf8ee;
+  --ords-color-warning-border: #f5e5be;
+
+  --ords-color-danger: #ba1a1a;
+  --ords-color-danger-bg: #ffdad6;
+  --ords-color-danger-border: #fcd3bd;
+
+  --ords-color-info: #164e8c;
+  --ords-color-info-bg: #ebf3fe;
+  --ords-color-info-border: #c6dcfc;
+
+  /* ==========================================================================
+     6. Tipografi Skalası (Typography Scale)
+     ========================================================================== */
+  --ords-font-body: "Inter Variable", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ords-font-display: "Inter Variable", Inter, sans-serif;
+  --ords-font-literary: "Iowan Old Style", "Palatino Linotype", "Noto Serif", Georgia, serif;
+
+  --ords-text-xs: 0.75rem;    /* 12px */
+  --ords-text-sm: 0.875rem;   /* 14px */
+  --ords-text-base: 1rem;     /* 16px */
+  --ords-text-lg: 1.125rem;   /* 18px */
+  --ords-text-xl: 1.25rem;    /* 20px */
+  --ords-text-2xl: 1.5rem;    /* 24px */
+  --ords-text-3xl: 1.875rem;  /* 30px */
+  --ords-text-4xl: 2.25rem;   /* 36px */
+
+  --ords-leading-tight: 1.2;
+  --ords-leading-normal: 1.5;
+  --ords-leading-relaxed: 1.62;
+
+  --ords-tracking-display: -0.025em;
+  --ords-tracking-body: 0;
+
+  /* ==========================================================================
+     7. Boşluk Skalası (Spacing Scale)
+     ========================================================================== */
+  --ords-space-1: 0.25rem;  /* 4px  */
+  --ords-space-2: 0.50rem;  /* 8px  */
+  --ords-space-3: 0.75rem;  /* 12px */
+  --ords-space-4: 1.00rem;  /* 16px */
+  --ords-space-5: 1.25rem;  /* 20px */
+  --ords-space-6: 1.50rem;  /* 24px */
+  --ords-space-8: 2.00rem;  /* 32px */
+  --ords-space-10: 2.50rem; /* 40px */
+  --ords-space-12: 3.00rem; /* 48px */
+
+  /* ==========================================================================
+     8. Köşe Yuvarlatma Skalası (Radii Scale)
+     ========================================================================== */
+  --ords-radius-xs: 4px;
+  --ords-radius-sm: 8px;
+  --ords-radius-md: 12px;
+  --ords-radius-lg: 16px;
+  --ords-radius-xl: 22px;
+  --ords-radius-pill: 9999px;
+
+  /* ==========================================================================
+     9. Gölgeler (Shadows & Elevation)
+     ========================================================================== */
+  --ords-shadow-resting: 0 1px 2px rgba(24, 42, 53, 0.05);
+  --ords-shadow-raised: 0 1px 3px rgba(24, 42, 53, 0.08), 0 6px 20px rgba(24, 42, 53, 0.04);
+  --ords-shadow-floating: 0 12px 32px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  /* ==========================================================================
+     10. Sakin Hareket Tokenları (Arc Calm Motion Tokens)
+     ========================================================================== */
+  --ords-duration-instant: 120ms;
+  --ords-duration-fast: 160ms;
+  --ords-duration-standard: 240ms;
+  --ords-duration-considered: 480ms;
+
+  --ords-ease-enter: cubic-bezier(0.16, 1.0, 0.30, 1.0);
+  --ords-ease-exit: cubic-bezier(0.70, 0.0, 0.84, 0.0);
+  --ords-ease-standard: cubic-bezier(0.22, 1.0, 0.36, 1.0);
+  --ords-ease-in-out: cubic-bezier(0.65, 0.0, 0.35, 1.0);
+}
+
+/* ==========================================================================
+   Karanlık Tema Değerleri (Dark Theme)
+   ========================================================================== */
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --ords-color-bg-app: #151b20;
+  --ords-color-surface: #1c252b;
+  --ords-color-surface-raised: #232f37;
+  --ords-color-surface-muted: #1a2228;
+
+  --ords-color-border: #344248;
+  --ords-color-border-subtle: #263238;
+  --ords-color-border-strong: #4a5c64;
+
+  --ords-color-text-primary: #edf3f1;
+  --ords-color-text-secondary: #bdc9c7;
+  --ords-color-text-muted: #94a29f;
+
+  --ords-color-primary: #72c9ba;
+  --ords-color-primary-soft: #1c3734;
+  --ords-color-primary-strong: #8ce0d2;
+  --ords-color-primary-contrast: #0b1a17;
+
+  /* Pedagojik Destek Renkleri (Dark) */
+  --ords-color-answer: #72c9ba;
+  --ords-color-answer-bg: #1c3734;
+  --ords-color-answer-border: #29554f;
+  --ords-color-answer-text: #b6ede3;
+
+  --ords-color-guidance: #efbd68;
+  --ords-color-guidance-bg: #362d1d;
+  --ords-color-guidance-border: #5a4b2a;
+  --ords-color-guidance-text: #fbe09e;
+
+  --ords-color-evidence: #a7b1ff;
+  --ords-color-evidence-bg: #242a43;
+  --ords-color-evidence-border: #3b446e;
+  --ords-color-evidence-text: #d8ddff;
+
+  --ords-color-explanation: #d0a9ef;
+  --ords-color-explanation-bg: #30243a;
+  --ords-color-explanation-border: #4d365f;
+  --ords-color-explanation-text: #eedbfb;
+
+  --ords-color-note: #f2b556;
+  --ords-color-note-bg: #2e2413;
+  --ords-color-note-border: #4e3a19;
+  --ords-color-note-text: #f9d89d;
+
+  --ords-shadow-resting: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --ords-shadow-raised: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --ords-shadow-floating: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* ==========================================================================
+   Erişilebilirlik: Tercih Edilen Azaltılmış Hareket (Reduced Motion)
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ords-duration-instant: 0.01ms;
+    --ords-duration-fast: 0.01ms;
+    --ords-duration-standard: 0.01ms;
+    --ords-duration-considered: 0.01ms;
+  }
+}

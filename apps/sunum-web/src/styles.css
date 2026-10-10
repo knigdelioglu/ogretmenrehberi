@@ -9,6 +9,82 @@
 
 :root {
   --canvas-scale: 1;
+
+  /* ============ ÖğretmenRehberi Tasarım Sistemi (ORDS) Tokenları ============ */
+  --ords-color-bg-app: #f7f8f5;
+  --ords-color-surface: #ffffff;
+  --ords-color-surface-raised: #ffffff;
+  --ords-color-surface-muted: #f0f3f2;
+  --ords-color-border: #d7e0df;
+  --ords-color-border-subtle: #e8eeed;
+  --ords-color-border-strong: #b8c5c4;
+
+  --ords-color-text-primary: #182a35;
+  --ords-color-text-secondary: #5b6b73;
+  --ords-color-text-muted: #718087;
+
+  --ords-color-primary: #176d68;
+  --ords-color-primary-soft: #e2efeb;
+  --ords-color-primary-strong: #0f524e;
+
+  /* Pedagojik Destek Sütunları (Educational Assist Pillars) */
+  --ords-color-answer: #176d68;
+  --ords-color-answer-bg: #e2efeb;
+  --ords-color-guidance: #9a650f;
+  --ords-color-guidance-bg: #f8efd9;
+  --ords-color-evidence: #5363a7;
+  --ords-color-evidence-bg: #eceefa;
+  --ords-color-explanation: #765494;
+  --ords-color-explanation-bg: #f1eaf6;
+  --ords-color-note: #9a5d2f;
+  --ords-color-note-bg: #f4e8dc;
+
+  /* Durumlar */
+  --ords-color-success: #145c32;
+  --ords-color-success-bg: #eaf8f0;
+  --ords-color-warning: #9a650f;
+  --ords-color-warning-bg: #fdf8ee;
+  --ords-color-danger: #ba1a1a;
+  --ords-color-danger-bg: #ffdad6;
+  --ords-color-info: #164e8c;
+  --ords-color-info-bg: #ebf3fe;
+
+  /* Boşluklar */
+  --ords-space-1: 0.25rem;
+  --ords-space-2: 0.50rem;
+  --ords-space-3: 0.75rem;
+  --ords-space-4: 1.00rem;
+  --ords-space-5: 1.25rem;
+  --ords-space-6: 1.50rem;
+  --ords-space-8: 2.00rem;
+  --ords-space-10: 2.50rem;
+  --ords-space-12: 3.00rem;
+
+  /* Köşe Yuvarlatma */
+  --ords-radius-xs: 4px;
+  --ords-radius-sm: 8px;
+  --ords-radius-md: 12px;
+  --ords-radius-lg: 16px;
+  --ords-radius-xl: 22px;
+  --ords-radius-pill: 9999px;
+
+  /* Gölgeler */
+  --ords-shadow-resting: 0 1px 2px rgba(24, 42, 53, 0.05);
+  --ords-shadow-raised: 0 1px 3px rgba(24, 42, 53, 0.08), 0 6px 20px rgba(24, 42, 53, 0.04);
+  --ords-shadow-floating: 0 12px 32px rgba(0, 0, 0, 0.16), 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  /* Sakin Hareket (Arc Calm Motion) */
+  --ords-duration-instant: 120ms;
+  --ords-duration-fast: 160ms;
+  --ords-duration-standard: 240ms;
+  --ords-duration-considered: 480ms;
+
+  --ords-ease-enter: cubic-bezier(0.16, 1.0, 0.30, 1.0);
+  --ords-ease-exit: cubic-bezier(0.70, 0.0, 0.84, 0.0);
+  --ords-ease-standard: cubic-bezier(0.22, 1.0, 0.36, 1.0);
+  --ords-ease-in-out: cubic-bezier(0.65, 0.0, 0.35, 1.0);
+
+  /* Geriye dönük uyumluluk ve tuval değişkenleri */
   --bg: #1a1d21;
   --paper: #f5f2ea;
   --paper-2: #ebe6d9;
@@ -28,20 +104,20 @@
   --explain-soft: #efe8f6;
   --card: #fffdf8;
   --shadow: 0 1px 0 rgba(27, 35, 48, 0.06), 0 6px 20px rgba(27, 35, 48, 0.06);
-  --modern-paper: #f7f8f5;
-  --modern-card: #ffffff;
-  --modern-ink: #182a35;
-  --modern-muted: #5b6b73;
-  --modern-rule: #d7e0df;
-  --modern-teal: #176d68;
-  --modern-teal-soft: #e2efeb;
-  --modern-blue: #5363a7;
-  --modern-blue-soft: #eceefa;
-  --modern-gold: #9a650f;
-  --modern-gold-soft: #f8efd9;
-  --modern-purple: #765494;
-  --modern-purple-soft: #f1eaf6;
-  --modern-card-shadow: 0 1px 3px rgba(24, 42, 53, 0.08);
+  --modern-paper: var(--ords-color-bg-app, #f7f8f5);
+  --modern-card: var(--ords-color-surface, #ffffff);
+  --modern-ink: var(--ords-color-text-primary, #182a35);
+  --modern-muted: var(--ords-color-text-secondary, #5b6b73);
+  --modern-rule: var(--ords-color-border, #d7e0df);
+  --modern-teal: var(--ords-color-answer, #176d68);
+  --modern-teal-soft: var(--ords-color-answer-bg, #e2efeb);
+  --modern-blue: var(--ords-color-evidence, #5363a7);
+  --modern-blue-soft: var(--ords-color-evidence-bg, #eceefa);
+  --modern-gold: var(--ords-color-guidance, #9a650f);
+  --modern-gold-soft: var(--ords-color-guidance-bg, #f8efd9);
+  --modern-purple: var(--ords-color-explanation, #765494);
+  --modern-purple-soft: var(--ords-color-explanation-bg, #f1eaf6);
+  --modern-card-shadow: var(--ords-shadow-raised, 0 1px 3px rgba(24, 42, 53, 0.08));
   --modern-font: "Inter", var(--font);
   --modern-content-gap: 0.8;
   --modern-content-max: 1420px;
@@ -51,7 +127,40 @@
   color-scheme: light;
 }
 
-:root[data-theme="dark"] {
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  /* ============ ÖğretmenRehberi Tasarım Sistemi (ORDS) Dark Tokenları ============ */
+  --ords-color-bg-app: #151b20;
+  --ords-color-surface: #1c252b;
+  --ords-color-surface-raised: #232f37;
+  --ords-color-surface-muted: #1a2228;
+  --ords-color-border: #344248;
+  --ords-color-border-subtle: #263238;
+  --ords-color-border-strong: #4a5c64;
+
+  --ords-color-text-primary: #edf3f1;
+  --ords-color-text-secondary: #bdc9c7;
+  --ords-color-text-muted: #94a29f;
+
+  --ords-color-primary: #72c9ba;
+  --ords-color-primary-soft: #1c3734;
+  --ords-color-primary-strong: #8ce0d2;
+
+  --ords-color-answer: #72c9ba;
+  --ords-color-answer-bg: #1c3734;
+  --ords-color-guidance: #efbd68;
+  --ords-color-guidance-bg: #362d1d;
+  --ords-color-evidence: #a7b1ff;
+  --ords-color-evidence-bg: #242a43;
+  --ords-color-explanation: #d0a9ef;
+  --ords-color-explanation-bg: #30243a;
+  --ords-color-note: #f2b556;
+  --ords-color-note-bg: #2e2413;
+
+  --ords-shadow-resting: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --ords-shadow-raised: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --ords-shadow-floating: 0 16px 40px rgba(0, 0, 0, 0.55);
+
   --bg: #07090c;
   --paper: #14181e;
   --paper-2: #1c222a;
@@ -71,19 +180,19 @@
   --explain-soft: #271d33;
   --card: #1a1f26;
   --shadow: none;
-  --modern-paper: #151b20;
-  --modern-card: #1c252b;
-  --modern-ink: #edf3f1;
-  --modern-muted: #bdc9c7;
-  --modern-rule: #344248;
-  --modern-teal: #72c9ba;
-  --modern-teal-soft: #1c3734;
-  --modern-blue: #a7b1ff;
-  --modern-blue-soft: #242a43;
-  --modern-gold: #efbd68;
-  --modern-gold-soft: #362d1d;
-  --modern-purple: #d0a9ef;
-  --modern-purple-soft: #30243a;
+  --modern-paper: var(--ords-color-bg-app, #151b20);
+  --modern-card: var(--ords-color-surface, #1c252b);
+  --modern-ink: var(--ords-color-text-primary, #edf3f1);
+  --modern-muted: var(--ords-color-text-secondary, #bdc9c7);
+  --modern-rule: var(--ords-color-border, #344248);
+  --modern-teal: var(--ords-color-answer, #72c9ba);
+  --modern-teal-soft: var(--ords-color-answer-bg, #1c3734);
+  --modern-blue: var(--ords-color-evidence, #a7b1ff);
+  --modern-blue-soft: var(--ords-color-evidence-bg, #242a43);
+  --modern-gold: var(--ords-color-guidance, #efbd68);
+  --modern-gold-soft: var(--ords-color-guidance-bg, #362d1d);
+  --modern-purple: var(--ords-color-explanation, #d0a9ef);
+  --modern-purple-soft: var(--ords-color-explanation-bg, #30243a);
   --modern-card-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   color-scheme: dark;
 }
@@ -2166,6 +2275,13 @@ button {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  :root {
+    --ords-duration-instant: 0.01ms;
+    --ords-duration-fast: 0.01ms;
+    --ords-duration-standard: 0.01ms;
+    --ords-duration-considered: 0.01ms;
+  }
+
   ::view-transition-group(qa-question),
   ::view-transition-old(qa-question),
   ::view-transition-new(qa-question) {
