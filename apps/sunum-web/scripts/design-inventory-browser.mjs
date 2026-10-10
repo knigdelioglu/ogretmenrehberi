@@ -255,8 +255,8 @@ const designReview = {
   "presentation-structure": { previous:"Eski/tutarsız", action:"Modernleştirildi", reason:"Yapı alanları ve kartları ORDS yüzeyleri, okunur numaralar ve tutarlı boşluklarla yenilendi." },
   "qa-comparison": { previous:"Modern", action:"Korundu ve rafine edildi", reason:"Başarılı karşılaştırma yerleşimi korundu; başlık ve sayfa üst bilgisi sadeleştirildi." },
   "qa-question": { previous:"Modern", action:"Korundu ve rafine edildi", reason:"Başarılı soru/cevap hiyerarşisi korundu; içerik türü etiketi ve sayfa üst bilgisi netleştirildi." },
-  "lesson-cover": { previous:"Modern", action:"Korundu", reason:"Başarılı tema açılışı korunarak mevcut tipografik ve kompozisyon dengesi sürdürüldü." },
-  "lesson-end": { previous:"Modern", action:"Korundu", reason:"Sade ders sonu ve sonraki ders yönlendirmesi mevcut işleviyle korundu." }
+  "lesson-cover": { previous:"Modern", action:"Yenilendi", reason:"Arc esintili editoryal açılış, iki bilgi kartı ve belirgin tema kimliğiyle yeniden tasarlandı." },
+  "lesson-end": { previous:"Modern", action:"Yenilendi", reason:"Tamamlanma sahnesi, görünür ilerleme yönlendirmesi ve son ders için ayrı bitiş durumu tasarlandı." }
 };
 
 const screenshot = async (client, outputPath) => {

@@ -1318,22 +1318,36 @@ function coverSlide(lesson) {
   const themeNo = Number(String(lesson.theme).replace(/\D/g, "")) || "";
   return h(
     "div",
-    { class: "slide slide--cover slide--lesson-cover" },
-    h("div", { class: "cover__theme" }, `${themeNo}. Tema${themeName ? " · " + themeName : ""}`),
-    h("h1", { class: "cover__title" }, lesson.title),
-    lesson.subtitle ? h("p", { class: "cover__subtitle" }, lesson.subtitle) : null,
-    h("div", { class: "cover__mark", "aria-hidden": "true" }, String(themeNo).padStart(2, "0")),
-    h(
-      "div",
-      { class: "cover__meta" },
-      h("span", { class: "cover__meta-item" },
-        h("span", { class: "cover__meta-label" }, "Ders kitabı"),
-        h("strong", {}, `s. ${lesson.pages.replace("-", "–")}`)
+    { class: "slide slide--cover slide--lesson-cover slide--arc-cover" },
+    h("div", { class: "arc-cover__canvas" },
+      h("section", { class: "arc-cover__copy", "aria-label": "Ders bilgileri" },
+        h("div", { class: "arc-cover__eyebrow" },
+          h("span", { class: "arc-cover__eyebrow-dot", "aria-hidden": "true" }),
+          h("div", { class: "cover__theme" }, `${themeNo}. Tema${themeName ? " · " + themeName : ""}`)
+        ),
+        h("p", { class: "arc-cover__kicker" }, "11. SINIF · TÜRK DİLİ VE EDEBİYATI"),
+        h("h1", { class: "cover__title" }, lesson.title),
+        lesson.subtitle ? h("p", { class: "cover__subtitle" }, lesson.subtitle) : null,
+        h("div", { class: "cover__meta", "aria-label": "Ders özeti" },
+          h("span", { class: "cover__meta-item" },
+            h("span", { class: "cover__meta-label" }, "Ders kitabı"),
+            h("strong", {}, `s. ${lesson.pages.replace("-", "–")}`)
+          ),
+          h("span", { class: "cover__meta-item" },
+            h("span", { class: "cover__meta-label" }, "İçerik"),
+            h("strong", {}, `${lesson.steps.length} slayt`)
+          )
+        )
       ),
-      h("span", { class: "cover__meta-item" },
-        h("span", { class: "cover__meta-label" }, "İçerik"),
-        h("strong", {}, `${lesson.steps.length} slayt`)
+      h("div", { class: "arc-cover__visual", "aria-hidden": "true" },
+        h("span", { class: "arc-cover__visual-label" }, "TEMA"),
+        h("div", { class: "cover__mark" }, String(themeNo).padStart(2, "0")),
+        h("span", { class: "arc-cover__visual-caption" }, "Edebiyat · 11")
       )
+    ),
+    h("div", { class: "arc-cover__footer" },
+      h("span", {}, "ÖĞRETMENREHBERİ"),
+      h("span", {}, "İleri tuşuyla derse başlayın", h("span", { "aria-hidden": "true" }, "  →"))
     )
   );
 }
@@ -1342,13 +1356,34 @@ function endSlide(lesson) {
   const nextLesson = lessons()[state.lesson + 1];
   return h(
     "div",
-    { class: "slide slide--cover" },
-    h("div", { class: "cover__theme" }, "Ders sonu"),
-    h("h1", { class: "cover__title" }, lesson.title),
-    nextLesson
-      ? h("p", { class: "cover__subtitle" }, `Sıradaki: ${nextLesson.title}`)
-      : h("p", { class: "cover__subtitle" }, "Kataloğun son dersi."),
-    nextLesson ? h("div", { class: "cover__hint" }, "İleri → sıradaki ders") : null
+    { class: "slide slide--cover slide--lesson-end slide--arc-end" },
+    h("div", { class: "arc-end__canvas" },
+      h("section", { class: "arc-end__copy", "aria-label": "Ders sonu" },
+        h("div", { class: "arc-end__eyebrow" },
+          h("span", { class: "arc-end__status-icon", "aria-hidden": "true" }, "✓"),
+          h("span", { class: "cover__theme" }, "Ders tamamlandı")
+        ),
+        h("p", { class: "arc-end__kicker" }, "BU DERSİN SONUNA GELDİNİZ"),
+        h("h1", { class: "cover__title" }, lesson.title),
+        h("div", { class: "arc-end__next", "aria-label": nextLesson ? "Sıradaki ders" : "Katalog sonu" },
+          h("span", { class: "arc-end__next-label" }, nextLesson ? "SIRADAKİ DERS" : "KATALOG TAMAMLANDI"),
+          h("p", { class: "cover__subtitle" },
+            nextLesson ? `Sıradaki: ${nextLesson.title}` : "Kataloğun son dersi."
+          ),
+          nextLesson
+            ? h("div", { class: "cover__hint" }, "İleri → sıradaki ders")
+            : h("span", { class: "arc-end__final-note" }, "Ders kataloğuna menüden ulaşabilirsiniz.")
+        )
+      ),
+      h("div", { class: "arc-end__visual", "aria-hidden": "true" },
+        h("div", { class: "arc-end__visual-ring" }, "✓"),
+        h("span", { class: "arc-end__visual-label" }, "TAMAMLANDI")
+      )
+    ),
+    h("div", { class: "arc-end__footer" },
+      h("span", {}, "ÖĞRETMENREHBERİ"),
+      h("span", {}, nextLesson ? "Sonraki ders için →" : "Ders sonu")
+    )
   );
 }
 

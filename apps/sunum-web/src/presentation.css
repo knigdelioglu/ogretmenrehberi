@@ -856,3 +856,352 @@
   .slide--presentation .source-links a:hover,
   .slide--presentation .vocab__item--interactive:hover { transform: none; }
 }
+
+
+/* Arc-inspired lesson bookends. CSS-only composition; no runtime dependency.
+ * Both shells deliberately differ from the ordinary question/step slides.
+ * The existing 1920x1080 canvas and keyboard/remote navigation stay intact. */
+.slide.slide--arc-cover,
+.slide.slide--arc-end {
+  --bookend-ink: var(--ords-color-text-primary);
+  --bookend-muted: var(--ords-color-text-secondary);
+  --bookend-accent: var(--ords-color-primary);
+  --bookend-accent-soft: var(--ords-color-primary-soft);
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  padding: 76px 108px 52px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ords-color-bg-app), var(--ords-color-surface-muted));
+  color: var(--bookend-ink);
+  font-family: var(--modern-font);
+}
+
+.slide--arc-cover::before { content: none; }
+
+.arc-cover__canvas,
+.arc-end__canvas {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: minmax(0, 1.36fr) minmax(380px, 0.64fr);
+  gap: 22px;
+  min-height: 0;
+  padding: 22px;
+  border: 1px solid var(--ords-color-border);
+  border-radius: 36px;
+  background: var(--ords-color-surface);
+  box-shadow: var(--ords-shadow-raised);
+}
+
+.arc-cover__copy,
+.arc-end__copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 48px 48px 58px;
+}
+
+.arc-cover__eyebrow,
+.arc-end__eyebrow {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  gap: 13px;
+  padding: 8px 20px;
+  border: 1px solid var(--ords-color-border);
+  border-radius: var(--ords-radius-pill);
+  background: var(--bookend-accent-soft);
+}
+
+.arc-cover__eyebrow-dot {
+  width: 11px;
+  height: 11px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--bookend-accent);
+  box-shadow: 0 0 0 5px var(--ords-color-surface);
+}
+
+.slide--arc-cover .cover__theme,
+.slide--arc-end .cover__theme {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--bookend-accent);
+  font-family: var(--modern-font);
+  font-size: 19px;
+  font-weight: 760;
+  line-height: 1.3;
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+.arc-cover__kicker,
+.arc-end__kicker {
+  margin: 44px 0 0;
+  color: var(--bookend-muted);
+  font-size: 19px;
+  font-weight: 740;
+  line-height: 1.3;
+  letter-spacing: 0.11em;
+}
+
+.slide--arc-cover .cover__title,
+.slide--arc-end .cover__title {
+  max-width: 100%;
+  margin: 20px 0 0;
+  color: var(--bookend-ink);
+  font-family: var(--modern-font);
+  font-size: clamp(58px, 4.35vw, 84px);
+  font-weight: 790;
+  line-height: 1.09;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.slide--arc-cover .cover__subtitle {
+  max-width: 100%;
+  margin: 24px 0 0;
+  color: var(--bookend-muted);
+  font-family: var(--modern-font);
+  font-size: 27px;
+  font-weight: 450;
+  line-height: 1.4;
+}
+
+.slide--arc-cover .cover__meta {
+  display: grid;
+  width: min(100%, 660px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 46px;
+  color: var(--bookend-ink);
+  font-family: var(--modern-font);
+  font-size: 17px;
+}
+
+.slide--arc-cover .cover__meta-item {
+  display: flex;
+  min-width: 0;
+  min-height: 104px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 17px 22px;
+  border: 1px solid var(--ords-color-border);
+  border-radius: 18px;
+  background: var(--ords-color-surface-muted);
+  box-shadow: none;
+}
+
+.slide--arc-cover .cover__meta-label {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--bookend-muted);
+  font-size: 15px;
+  font-weight: 690;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.slide--arc-cover .cover__meta strong {
+  color: var(--bookend-ink);
+  font-size: 25px;
+  font-weight: 760;
+  line-height: 1.1;
+}
+
+.arc-cover__visual,
+.arc-end__visual {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--ords-color-border);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 58% 38%, var(--ords-color-surface) 0%, transparent 55%),
+    linear-gradient(150deg, var(--bookend-accent-soft), var(--ords-color-surface-muted));
+}
+
+.arc-cover__visual::before,
+.arc-end__visual::before {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border: 1px solid var(--ords-color-border-strong);
+  border-radius: 50%;
+  opacity: 0.75;
+  content: "";
+}
+
+.arc-cover__visual::after,
+.arc-end__visual::after {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border: 1px solid var(--ords-color-border);
+  border-radius: 50%;
+  content: "";
+}
+
+.arc-cover__visual-label,
+.arc-cover__visual-caption,
+.arc-end__visual-label {
+  position: relative;
+  z-index: 1;
+  color: var(--bookend-accent);
+  font-family: var(--modern-font);
+  font-weight: 750;
+  letter-spacing: 0.16em;
+}
+
+.arc-cover__visual-label { font-size: 19px; }
+.arc-cover__visual-caption { font-size: 18px; letter-spacing: 0.075em; }
+
+.slide--arc-cover .cover__mark {
+  position: relative;
+  z-index: 1;
+  top: auto;
+  right: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 20px 0 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--bookend-accent);
+  font-family: var(--modern-font);
+  font-size: 220px;
+  font-weight: 780;
+  line-height: 1;
+  letter-spacing: -0.12em;
+  transform: none;
+  opacity: 0.88;
+}
+
+:root[data-theme="dark"] .slide--lesson-cover.slide--arc-cover .cover__mark {
+  background: transparent;
+}
+
+.arc-cover__footer,
+.arc-end__footer {
+  display: flex;
+  min-height: 44px;
+  flex: 0 0 auto;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--bookend-muted);
+  font-family: var(--modern-font);
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: 0.035em;
+}
+
+.arc-cover__footer > :last-child,
+.arc-end__footer > :last-child { color: var(--bookend-accent); }
+
+/* End screen: completion is an outcome, not another ordinary content slide. */
+.arc-end__canvas {
+  grid-template-columns: minmax(0, 1.32fr) minmax(390px, 0.68fr);
+}
+
+.arc-end__status-icon {
+  display: inline-grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--bookend-accent);
+  color: var(--ords-color-surface);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.arc-end__kicker { margin-top: 46px; }
+.slide--arc-end .cover__title { max-width: 100%; }
+
+.arc-end__next {
+  display: flex;
+  width: min(100%, 760px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 46px;
+  padding: 24px 28px;
+  border: 1px solid var(--ords-color-border);
+  border-left: 5px solid var(--bookend-accent);
+  border-radius: 20px;
+  background: var(--ords-color-surface-muted);
+  box-shadow: var(--ords-shadow-resting);
+}
+
+.arc-end__next-label {
+  color: var(--bookend-accent);
+  font-size: 17px;
+  font-weight: 780;
+  letter-spacing: 0.09em;
+}
+
+.slide--arc-end .cover__subtitle {
+  max-width: 100%;
+  margin: 0;
+  color: var(--bookend-ink);
+  font-family: var(--modern-font);
+  font-size: 31px;
+  font-weight: 640;
+  line-height: 1.29;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+.slide--arc-end .cover__hint,
+.arc-end__final-note {
+  position: static;
+  margin: 0;
+  color: var(--bookend-accent);
+  font-family: var(--modern-font);
+  font-size: 21px;
+  font-weight: 690;
+  line-height: 1.35;
+}
+
+.arc-end__visual-ring {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 270px;
+  height: 270px;
+  place-items: center;
+  border: 4px solid var(--bookend-accent);
+  border-radius: 50%;
+  background: var(--ords-color-surface);
+  box-shadow: 0 0 0 17px var(--bookend-accent-soft);
+  color: var(--bookend-accent);
+  font-size: 150px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.arc-end__visual-label { margin-top: 58px; font-size: 18px; }
+
+/* Preserve the 1920px stage geometry at reduced motion as well. */
+@media (prefers-reduced-motion: reduce) {
+  .slide--arc-cover *,
+  .slide--arc-end * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
