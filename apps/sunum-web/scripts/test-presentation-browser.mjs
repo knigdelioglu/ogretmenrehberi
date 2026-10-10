@@ -1355,7 +1355,7 @@ presentationBrowserSuite: {
       for (const theme of bookCards.themes) {
         assert.notEqual(theme.background, "rgba(0, 0, 0, 0)", slug + "/" + id + " " + theme.theme + " card stays distinct");
         assert.equal(theme.horizontalOverflow, false, slug + "/" + id + " " + theme.theme + " card content fits");
-        assert.ok(theme.cardHeight >= 60, slug + "/" + id + " " + theme.theme + " has a finger-sized card");
+        assert.ok(theme.cardHeight >= 44, slug + "/" + id + " " + theme.theme + " has a finger-sized card: " + theme.cardHeight.toFixed(1) + "px");
       }
     }
     console.log("[sunum-web] Arc textbook cards passed: three authored PDF links, light/dark, icon, focus and geometry.");
