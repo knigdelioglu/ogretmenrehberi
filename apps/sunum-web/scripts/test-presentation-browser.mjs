@@ -1370,6 +1370,9 @@ presentationBrowserSuite: {
       const prev=buttons.find(button=>button.dataset.action==='prev');
       const help=buttons.find(button=>button.dataset.action==='help');
       const theme=buttons.find(button=>button.dataset.action==='theme');
+      // The preceding browser checks may have left an action focused.
+      // Clear that state so hover-leave and keyboard-focus are tested separately.
+      if (dock.contains(document.activeElement)) document.activeElement.blur();
       const pointer=(node,type)=>node.dispatchEvent(new PointerEvent(type,{bubbles:type!=='pointerleave',pointerType:'mouse'}));
       const state=()=>({
         shown:dock.dataset.highlight==='true',
