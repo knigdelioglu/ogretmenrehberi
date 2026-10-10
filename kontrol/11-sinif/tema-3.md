@@ -1,7 +1,7 @@
 # 11. sınıf · Tema 3 — Yaşamın İzinde
 
 **Basılı ders kitabı sayfaları:** 160–235 (76 sayfa)  
-**Yeniden incelenen:** **5 / 76** — **231, 232, 233, 234, 235**  
+**Yeniden incelenen:** **6 / 76** — **230, 231, 232, 233, 234, 235**  
 **Kayıt tarihi:** 2026-10-10
 
 Bu kontrol listesi yalnızca yeniden gözden geçirme durumunu gösterir. Bir sayfanın önceden üretilmiş olmasını, geçmişte farklı bir QA raporunda yer almasını veya otomatik testlerce kapsanmasını **yeniden kontrol edilmiş** olarak değerlendirmez.
@@ -101,7 +101,7 @@ Bu kontrol listesi yalnızca yeniden gözden geçirme durumunu gösterir. Bir sa
 
 ### 230–235
 
-- [ ] **s. 230**
+- [x] **s. 230** — 2026-10-10: kaynak / pedagojik yeniden inceleme ve düzeltme tamamlandı
 - [x] **s. 231** — 2026-10-10: kaynak / pedagojik yeniden inceleme tamamlandı
 - [x] **s. 232** — 2026-10-10: kaynak / pedagojik yeniden inceleme tamamlandı
 - [x] **s. 233** — 2026-10-10: kaynak / pedagojik yeniden inceleme tamamlandı
@@ -112,16 +112,17 @@ Bu kontrol listesi yalnızca yeniden gözden geçirme durumunu gösterir. Bir sa
 
 | Basılı sayfa | Kaynak ve pedagojik denetim | İlgili düzeltmeler | Tamamlanmamış doğrulama / sınır |
 |---|---|---|---|
+| **230** | Tez-antitez ifadeleri, üç özgün metin, Venn şeması ve iki sentez sorusu ders kitabı, sunum akışı ve cevap bankasıyla yeniden karşılaştırıldı. Metinler ayrı okuma ekranlarına ayrıldı, şema yeniden kuruldu, hazır sentez ipuçları kaldırıldı. | Bu kontrolün PR'ı: [230. sayfa Venn düzeltmesi](https://github.com/knigdelioglu/ogretmenrehberi/pulls) — kesin PR bağlantısı birleştirme sonrası eklenecek. | Görsel yerleşim ve tarayıcı/CI kabulü ayrıca doğrulanmalı; özgün metinler kaynak kitabın bölünmüş sütunları temel alınarak ayrıldı. |
 | **231** | Beş kavramlık tablo, 4. sorunun sözlü niteliği ve 5–6. soruların A–E seçenekleri ders kitabıyla yeniden karşılaştırıldı; cevabı sezdiren ifadeler kaldırıldı. | [PR #88](https://github.com/knigdelioglu/ogretmenrehberi/pull/88), [#89](https://github.com/knigdelioglu/ogretmenrehberi/pull/89), [#90](https://github.com/knigdelioglu/ogretmenrehberi/pull/90) — boş başlangıç, satır satır açılma ve çerçeve yüksekliğinin korunması | Bütün canlı tarayıcı / CI sonuçlarının geçtiği bu kayıtta teyit edilmedi |
 | **232** | Orhan Veli'nin beş tema oranı ve 7. soru; özgün kaynakla oran eşleşmesi ve ön cevap sızıntısı açısından denetlendi. | [PR #88](https://github.com/knigdelioglu/ogretmenrehberi/pull/88) — tek parça karşılaştırma tablosu, tarafsız yönlendirme | Canlı ders anlatımı kabul testi ayrıca yapılabilir |
 | **233** | Orhan Veli 8–9. soruları; biyografi yarışmasının iki özgün tablosu ve 10–11. soruların puan/yorum ilişkileri denetlendi. | [PR #91](https://github.com/knigdelioglu/ogretmenrehberi/pull/91) — seçenekler, iki tablo, aşamalı puanlama ve düzeltme | Bütün ekran ölçülerinin canlı tarayıcıda kabulü ayrıca kontrol edilmeli |
 | **234** | Mustafa İnan/Fuzûlî 12. soru, sekiz satırlı Evet–Hayır–Bilgi yok etkinliği, sözlü 14. soru ve 15. sorunun video bağımlılığı yeniden incelendi. | [PR #91](https://github.com/knigdelioglu/ogretmenrehberi/pull/91) — özgün matris, sırayla açılan kararlar, cevap sızıntısının kaldırılması | **Aile Bağları QR videosunun içeriği doğrulanamadı**; sahne/diyalog temelli cevaplar kaynakla tamamlanmadı |
 | **235** | I–V özgün pasajlar, 16. sorunun beş seçeneği ve gerekçeli cevap bankası ders kitabıyla karşılaştırıldı. | [PR #91](https://github.com/knigdelioglu/ogretmenrehberi/pull/91) — metinlerin ayrı okuma ekranları ve eksiksiz A–E seçenekleri | Tam tarayıcı kabul testi henüz bu takipte belgelenmedi |
 
-**Kaynaklar:** `data/book/grade-11/themes/theme-3/pages/p231.json`–`p235.json`; `data/grade-11/presentation/theme-3/degerlendirme-230-235-flow.json`; `data/grade-11/source/teacher-book/theme-3/answer-bank/part-13-pages-230-235.json`.
+**Kaynaklar:** `data/book/grade-11/themes/theme-3/pages/p230.json`–`p235.json`; `data/grade-11/presentation/theme-3/degerlendirme-230-235-flow.json`; `data/grade-11/source/teacher-book/theme-3/answer-bank/part-13-pages-230-235.json`.
 
 **Önemli sayfa eşleştirmesi:** Yerel kitap JSON'unda basılı sayfa ile PDF'nin fiziksel sayfa numarası arasında fark bulunabilir. Ancak Sunum Web'deki doğrulanmış **uzak MEB PDF** bağlantılarında `#page` basılı sayfayı izler. Bu nedenle s.234 ve s.235 için uzaktaki `#page=234` ve `#page=235` bağlantıları korunmuştur.
 
 ## Sonraki kontroller
 
-Yeni bir sayfa yeniden incelendiğinde ilgili kutu işaretlenmeli, toplam sayı güncellenmeli ve **tarih, denetim kapsamı, PR veya commit, açık sınırlar** bu bölüme eklenmelidir. Bu oturumda 230. sayfa yeniden incelenmediğinden boş bırakıldı. Hiçbir sayfa yalnızca komşu sayfaları incelendi diye işaretlenmemelidir.
+Yeni bir sayfa yeniden incelendiğinde ilgili kutu işaretlenmeli, toplam sayı güncellenmeli ve **tarih, denetim kapsamı, PR veya commit, açık sınırlar** bu bölüme eklenmelidir. 230. sayfa da 2026-10-10 tarihinde yeniden incelenip düzenlenmiştir. Hiçbir sayfa yalnızca komşu sayfaları incelendi diye işaretlenmemelidir.
