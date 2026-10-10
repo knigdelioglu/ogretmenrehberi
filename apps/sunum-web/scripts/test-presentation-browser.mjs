@@ -1303,6 +1303,70 @@ presentationBrowserSuite: {
   }
 
   if (process.env.VISUAL_LAYOUT_CLASS_SMOKE === "1") {
+    // Cover and end are real presentation layouts, not incidental decorations.
+    // Exercise distinct theme headings, long titles, and the terminal catalog item.
+    const byTheme = new Map();
+    for (const lesson of builtCatalog.lessons) {
+      if (!byTheme.has(lesson.theme) ||
+          lesson.title.length > byTheme.get(lesson.theme).title.length) {
+        byTheme.set(lesson.theme, lesson);
+      }
+    }
+    assert.equal(byTheme.size, 4, "all four themes have Arc bookend examples");
+    const bookendSamples = [...byTheme.values()];
+    const lastCatalogLesson = builtCatalog.lessons.at(-1);
+    if (!bookendSamples.includes(lastCatalogLesson)) bookendSamples.push(lastCatalogLesson);
+
+    for (const lesson of bookendSamples) {
+      for (const [slideIndex, kind] of [[0, "cover"], [lesson.steps.length + 1, "end"]]) {
+        await page.send("Page.navigate", { url: root + "/#/" + lesson.slug + "/" + slideIndex });
+        await until(() => page.evaluate(
+          "Boolean(document.querySelector('#canvas .slide--arc-" + kind + "'))"
+        ), "Arc " + kind + " for " + lesson.slug);
+        await page.evaluate("document.fonts.ready");
+        const geometry = await page.evaluate(`(() => {
+          const slide=document.querySelector('#canvas .slide');
+          const canvas=slide?.querySelector('.arc-cover__canvas,.arc-end__canvas');
+          const title=slide?.querySelector('.cover__title');
+          const subtitle=slide?.querySelector('.cover__subtitle');
+          const meta=slide?.querySelector('.cover__meta');
+          const next=slide?.querySelector('.cover__hint');
+          const visual=slide?.querySelector('.arc-cover__visual,.arc-end__visual');
+          const rect=(node)=>{const r=node?.getBoundingClientRect();return r&&{left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}};
+          return {titleText:title?.textContent||'', title:rect(title),surface:rect(canvas),
+            subtitle:rect(subtitle),meta:rect(meta),visual:rect(visual),
+            metaCount:meta?.querySelectorAll('.cover__meta-item').length||0,
+            next:Boolean(next),nextText:next?.textContent||'',
+            scrollWidth:slide.scrollWidth,clientWidth:slide.clientWidth,
+            scrollHeight:slide.scrollHeight,clientHeight:slide.clientHeight,
+            font:title?getComputedStyle(title).fontFamily:''};
+        })()`);
+        assert.equal(geometry.titleText, lesson.title, lesson.slug + " " + kind + " retains lesson title");
+        assert.match(geometry.font, /Inter/i, lesson.slug + " " + kind + " uses Inter");
+        assert.ok(geometry.surface?.width > 1100 && geometry.visual?.width > 250,
+          lesson.slug + " " + kind + " has a visible Arc layout");
+        assert.ok(geometry.scrollWidth <= geometry.clientWidth + 1 && geometry.scrollHeight <= geometry.clientHeight + 1,
+          lesson.slug + " " + kind + " does not overflow the stage");
+        for (const [name, box] of [["title", geometry.title], ["subtitle", geometry.subtitle], ["meta", geometry.meta]]) {
+          if (!box) continue;
+          assert.ok(box.left >= geometry.surface.left - 2 &&
+            box.right <= geometry.surface.right + 2 &&
+            box.top >= geometry.surface.top - 2 &&
+            box.bottom <= geometry.surface.bottom + 2,
+            lesson.slug + " " + kind + " keeps " + name + " inside its card: " + JSON.stringify(box));
+        }
+        if (kind === "cover") {
+          assert.equal(geometry.metaCount, 2, lesson.slug + " cover retains book and slide metadata");
+        } else {
+          const hasNext = builtCatalog.lessons.indexOf(lesson) < builtCatalog.lessons.length - 1;
+          assert.equal(geometry.next, hasNext, lesson.slug + " end shows navigation hint only when a next lesson exists");
+          if (hasNext) assert.match(geometry.nextText, /İleri/, lesson.slug + " end preserves next-lesson instruction");
+        }
+      }
+    }
+    console.log("[sunum-web] Arc cover/end visual shell smoke passed: " +
+      bookendSamples.length + " representative lessons, both layouts and terminal navigation.");
+
     const expectVisualClasses = (state, expected, label) => {
       assert.deepEqual(state.visualClasses, expected, `${label} has only its expected visual-layout modifier`);
     };
