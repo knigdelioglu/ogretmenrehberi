@@ -1379,10 +1379,10 @@
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.65em;
+  gap: 0.52em;
   width: min(100%, 800px);
-  min-height: 3.65em;
-  padding: 0.55em 0.7em;
+  min-height: 2.3em;
+  padding: 0.3em 0.62em;
   border: 1px solid var(--ords-color-border-strong);
   border-radius: 0.7em;
   background: var(--ords-color-surface-raised);
@@ -1412,12 +1412,12 @@
 
 .slide--presentation .source-link--book .source-link__icon--book {
   display: grid;
-  width: 2.25em;
-  height: 2.25em;
+  width: 1.9em;
+  height: 1.9em;
   flex: none;
   place-items: center;
   border: 1px solid var(--ords-color-border);
-  border-radius: 0.7em;
+  border-radius: 0.55em;
   background: var(--ords-color-primary-soft);
   color: var(--ords-color-primary-strong);
   font-size: 0.8em;
@@ -1433,21 +1433,13 @@
 .slide--presentation .source-link--book .source-link__copy {
   display: grid;
   min-width: 0;
-  gap: 0.1em;
-  line-height: 1.22;
-}
-
-.slide--presentation .source-link--book .source-link__eyebrow {
-  color: var(--ords-color-primary);
-  font-size: 0.39em;
-  font-weight: 780;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  gap: 0.08em;
+  line-height: 1.2;
 }
 
 .slide--presentation .source-link--book .source-link__context {
   color: var(--ords-color-text-primary);
-  font-size: 0.78em;
+  font-size: 0.7em;
   font-weight: 750;
   letter-spacing: -0.02em;
   line-height: 1.22;
@@ -1455,7 +1447,7 @@
 
 .slide--presentation .source-link--book .source-link__action {
   color: var(--ords-color-text-secondary);
-  font-size: 0.6em;
+  font-size: 0.52em;
   font-weight: 480;
   line-height: 1.3;
 }
@@ -1463,7 +1455,7 @@
 .slide--presentation .source-link--book .source-link__trailing {
   display: inline-flex;
   min-width: 4em;
-  min-height: 2.05em;
+  min-height: 1.85em;
   flex: none;
   align-items: center;
   justify-content: center;
@@ -1473,7 +1465,7 @@
   border-radius: var(--ords-radius-pill);
   background: var(--ords-color-primary-soft);
   color: var(--ords-color-primary-strong);
-  font-size: 0.55em;
+  font-size: 0.53em;
   font-weight: 750;
   white-space: nowrap;
   transition:
