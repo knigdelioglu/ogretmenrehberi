@@ -1017,6 +1017,15 @@ function contentLayerPages(step, b = 1) {
     return [meta({ content: { table: content.table } }, 0)];
   }
   if (content.options?.length) {
+    if (content.options_on_next_click) {
+      // Question-only opening; the first advance shows every choice together.
+      // Move choices to the QA focus layer so the long prompt moves up and shrinks.
+      return [
+        { ...meta({ content: {} }, 0), lead: "", sources: undefined },
+        { ...meta({ content: { options: content.options }, compactPrompt: true }, 1),
+          lead: "", sources: content.sources }
+      ];
+    }
     return [meta({ content: { options: content.options } }, 0)];
   }
   if (content.rubric?.rows?.length) {
@@ -1674,7 +1683,7 @@ function stepSlide(lesson, step) {
 
   // Ana sütun
   const main = h("div", { class: "stack" });
-  main.append(h("h1", { class: `prompt${viewKey !== "content" && !isVocab ? " is-small" : ""}` }, step.prompt));
+  main.append(h("h1", { class: `prompt${page.compactPrompt || (viewKey !== "content" && !isVocab) ? " is-small" : ""}` }, step.prompt));
 
   if (viewKey === "content") {
     if (page.lead) main.append(h("p", { class: "lead" }, page.lead));
@@ -1819,7 +1828,7 @@ function stepSlide(lesson, step) {
     const context = h("div", { class: "qa-context" }, prompt);
     const focus = h("div", { class: "qa-focus" });
     for (const node of pageContent) {
-      if (viewKey !== "content") focus.append(node);
+      if (viewKey !== "content" || page.compactPrompt) focus.append(node);
       else context.append(node);
     }
     if (viewKey !== "content" && !focus.querySelector(".panel__label")) {
