@@ -999,6 +999,15 @@ function contentLayerPages(step, b = 1) {
     images: content.images,
     sources: index === 0 ? content.sources : undefined
   });
+  // Preserve both competing source tables together; passage readings get one complete
+  // source excerpt per page, never mixed with an unshown multiple-choice solution.
+  if (content.tables?.length) {
+    return [meta({ content: { tables: content.tables, table_review: content.table_review } }, 0)];
+  }
+  if (content.excerpts?.length) {
+    return content.excerpts.map((excerpt, index) =>
+      meta({ content: { excerpts: [excerpt] }, title: `Parça ${excerpt.label}` }, index));
+  }
   // Source tables and multiple-choice sets must remain intact on one slide.
   // Their source rows/options are small enough to fit together, even on narrow screens.
   if (content.table?.rows?.length) {
@@ -1063,6 +1072,65 @@ function contentLayerPages(step, b = 1) {
 
 function answerLayerPages(step, b = 1) {
   const answer = step.answer || {};
+  const assessmentTable = step.content?.table;
+  if (assessmentTable?.review === "checks" && Array.isArray(assessmentTable.rows)) {
+    const decisions = assessmentTable.rows.map((row, index) => {
+      const value = String(answer.answer_sections?.[String(index + 1)] ?? "");
+      const result = value.match(/^(Evet|Hayır|Bilgi yok)\s*[—–-]/u)?.[1];
+      if (!result || !assessmentTable.columns.includes(result)) {
+        throw new Error(`Değerlendirme yanıtı eşleştirilemedi: ${step.id}/${index + 1}`);
+      }
+      return result;
+    });
+    return Array.from({ length: assessmentTable.rows.length + 1 }, (_, count) => ({
+      title: "Cevap",
+      responseTable: {
+        ...assessmentTable,
+        rows: assessmentTable.rows.map((row, index) => {
+          const reason = assessmentTable.review_reasons[index];
+          const shown = index < count;
+          return [
+            {
+              text: row[0] + (shown ? ` — ${reason}` : ""),
+              reserve: `${row[0]} — ${reason}`
+            },
+            ...assessmentTable.columns.slice(1).map(column =>
+              shown && decisions[index] === column ? "✓" : "")
+          ];
+        })
+      }
+    }));
+  }
+  const tableReview = step.content?.table_review;
+  if (tableReview && step.content?.tables?.length) {
+    const target = step.content.tables.find(table => table.title === `Tablo ${tableReview.target}`);
+    if (!target) throw new Error(`Değerlendirme tablosu yok: ${step.id}`);
+    const sections = answer.answer_sections ?? {};
+    const scores = new Map([...sections["Doğru puanlar"] ?? [], ...sections["Yanlış puan"] ?? []]
+      .map(entry => String(entry).split(":").map(part => part.trim())));
+    const feedback = target.rows.map(([name]) =>
+      tableReview.mode === "score"
+        ? `${scores.get(name) ?? "Puan belirtilmedi"} puan`.replace(" puan puan", " puan")
+        : (typeof sections[name] === "string" ? `Düzeltme: ${sections[name]}` : "Doğru açıklama."));
+    const steps = target.rows.length + 2;
+    return Array.from({ length: steps }, (_, stage) => ({
+      title: `${target.title} · Değerlendirme`,
+      responseTable: {
+        columns: target.columns,
+        rows: target.rows.map((row, index) => ({
+          name: row[0],
+          original: row[1],
+          final: `${row[1]} — ${feedback[index]}`,
+          shown: index < stage
+        })).map(row => [row.name, {
+          text: row.original + (row.shown ? ` — ${feedback[target.rows.findIndex(r => r[0] === row.name)]}` : ""),
+          reserve: row.final
+        }])
+      },
+      responseConclusion: answer.answer,
+      conclusionVisible: stage > target.rows.length
+    }));
+  }
   // Fill an authored source table progressively instead of losing its row context.
   const table = step.content?.table;
   if (table?.reveal_by_row && answer.answer_sections && !Array.isArray(answer.answer_sections)) {
