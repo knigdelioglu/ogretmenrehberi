@@ -3192,3 +3192,88 @@ button {
 .presentation-choice__text {
   min-width: 0;
 }
+
+/* Book-faithful side-by-side tables and stable review overlays (pp. 233–234). */
+.presentation-table-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75em;
+  width: 100%;
+  align-items: start;
+}
+.presentation-table-group {
+  min-width: 0;
+}
+.presentation-table-group__title {
+  margin: 0 0 0.35em;
+  font-size: 1.05em;
+  color: var(--modern-teal);
+  font-weight: 750;
+}
+.presentation-table-grid .presentation-table {
+  font-size: 0.83em;
+}
+.presentation-table-grid .presentation-table th,
+.presentation-table-grid .presentation-table td {
+  padding: 0.5em 0.55em;
+}
+.presentation-table-grid .presentation-table tbody th {
+  width: 26%;
+}
+.presentation-table--checks {
+  table-layout: fixed;
+  font-size: 0.88em;
+}
+.presentation-table--checks th,
+.presentation-table--checks td {
+  padding: 0.42em 0.65em;
+}
+.presentation-table--checks thead th:first-child,
+.presentation-table--checks tbody th {
+  width: 62%;
+}
+.presentation-table--checks thead th:not(:first-child),
+.presentation-table--checks tbody td {
+  width: 12.66%;
+  text-align: center;
+  font-weight: 750;
+}
+.presentation-conclusion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 0.5em;
+  color: var(--modern-teal);
+  font-weight: 750;
+}
+.presentation-conclusion__measure,
+.presentation-conclusion__value {
+  grid-area: 1 / 1;
+}
+.presentation-conclusion__measure {
+  visibility: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.presentation-excerpts {
+  width: 100%;
+  display: grid;
+  gap: 0.6em;
+}
+.presentation-excerpt {
+  background: var(--modern-card);
+  color: var(--modern-ink);
+  border: 1px solid var(--modern-rule);
+  border-radius: 0.55em;
+  padding: 0.7em 0.95em;
+}
+.presentation-excerpt h2 {
+  margin: 0 0 0.35em;
+  font-size: 1em;
+  color: var(--modern-teal);
+}
+.presentation-excerpt blockquote {
+  margin: 0;
+  font-style: normal;
+  line-height: 1.55;
+  white-space: normal;
+}
