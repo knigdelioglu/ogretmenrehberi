@@ -74,4 +74,13 @@ Adres: https://knigdelioglu.github.io/ogretmenrehberi/
 
 Git push'ları otomatik build başlatmaz. Yerel deploy komutu önce `apps/sunum-web` için `npm run build` çalıştırır, ardından hazır `dist` çıktısını Netlify CLI ile production'a yükler. Komut dosyası ve Netlify site bağlantısı makineye özeldir; `.gitignore` nedeniyle repoya eklenmez.
 
+### Şifre ekranında `Veri indirilemedi (404)`
+
+Bu hata yanlış şifre değildir: açılan `app.js` içindeki sürüm numaralı `data.*.bin` dosyası sunucuda bulunamamıştır. Tarayıcı eski sürümü açıyorsa uygulama bir kez önbelleği atlayarak yeniden yükler. Gerçekten eksik yayımlanmış dosya varsa tek başına yeniden yükleme sorunu çözmez.
+
+1. Depoyu yerel bilgisayarda güncelleyin (`git pull --ff-only`). `apps/sunum-web/.env.local` dosyasındaki `SUNUM_SIFRE` değerinin, kullanmak istediğiniz yayın şifresiyle aynı olduğundan emin olun; şifreyi repoya eklemeyin.
+2. Önceden kullandığınız `local-only/Netlify Deploy.command` dosyasıyla production'a **yeniden tam yayın** yapın. Komut `dist/index.html`, `dist/app.js` ve aynı build'e ait `dist/data.*.bin` dosyasını birlikte yüklemelidir. `dist` içinden tek tek dosya taşımayın.
+3. Yayın sonrası gizli pencereden deneyin. Normal sekmede eski servis çalışanı sorun çıkarıyorsa sayfayı zorla yenileyin. **Site verilerini topluca silmeyin:** değerlendirme için tarayıcıya yüklenen formlar IndexedDB'de saklanıyor olabilir.
+4. Netlify'daki production deploy hâlâ eskiyse, GitHub'daki yeşil `Sunum Web` / `Publish Sunum Web to GitHub Pages` Actions sonucu bunu değiştirmez; Netlify otomatik dağıtımı `netlify.toml` ile özellikle kapalıdır.
+
 Site `noindex` başlığı ve `robots.txt` ile arama motorlarına kapalıdır. Service worker son açılan sürümü önbellekte tutar; okul ağı kesilirse sayfa yine açılır.
