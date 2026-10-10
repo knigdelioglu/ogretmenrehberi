@@ -1468,23 +1468,34 @@ presentationBrowserSuite: {
       visual = await visualLayoutState();
       expectVisualClasses(visual, fixture.classes, `${fixture.slug}/${fixture.id} control fixture`);
     }
-    // Dört temada süreç, bilgi ve değerlendirme türleri Modern QA olmadan ortak kabuğu kullanır.
+    // Every internal companion heading must stay on the same vertical baseline,
+    // even when adjacent slides contain substantially different amounts of content.
+    const titleAnchorByLayout = new Map();
     for (const [slug, id, layout] of [
       ["karagoz", "s16-process", "process"],
       ["dinleme-izleme", "s67-qr-communication", "reference"],
+      ["karagoz", "s26-reference", "reference"],
       ["yazma", "s78-self", "assessment"],
+      ["konusma", "s58-feedback", "assessment"],
       ["tema-2-konusma", "s130-stations", "process"],
       ["huzur-177-178", "s178-circle-plan", "process"],
       ["tiyatro-canlandirma-280-283", "s281-plan", "process"]
     ]) {
       await openStep(slug, id);
-      const appearance = await page.evaluate("(() => { const slide = document.querySelector('#canvas .slide'); const context = slide?.querySelector('.companion-context'); const focus = slide?.querySelector('.companion-focus'); const prompt = context?.querySelector(':scope > .prompt'); return { classes: slide?.className ?? '', prompt: prompt?.textContent ?? '', align: prompt ? getComputedStyle(prompt).textAlign : '', children: context?.children.length ?? 0, focusEmpty: focus?.childElementCount === 0, hasQaFocus: Boolean(slide?.querySelector('.qa-focus')) }; })()");
+      const appearance = await page.evaluate("(() => { const slide = document.querySelector('#canvas .slide'); const context = slide?.querySelector('.companion-context'); const focus = slide?.querySelector('.companion-focus'); const prompt = context?.querySelector(':scope > .prompt'); return { classes: slide?.className ?? '', prompt: prompt?.textContent ?? '', align: prompt ? getComputedStyle(prompt).textAlign : '', children: context?.children.length ?? 0, focusEmpty: focus?.childElementCount === 0, hasQaFocus: Boolean(slide?.querySelector('.qa-focus')), titleOffset: prompt ? prompt.getBoundingClientRect().top - slide.querySelector('.slide__body').getBoundingClientRect().top : null }; })()");
       assert.ok(appearance.classes.includes("slide--modern-companion"), slug + "/" + id + " has shared shell");
       assert.ok(appearance.classes.includes("slide--visual-" + layout), slug + "/" + id + " preserves its layout");
       assert.ok(appearance.prompt.trim().length > 0 && appearance.children > 1, slug + "/" + id + " preserves content");
       assert.ok(appearance.focusEmpty && !appearance.hasQaFocus, slug + "/" + id + " is not QA");
       assert.ok(layout === "process" ? ["center", "left"].includes(appearance.align) : appearance.align === "left",
         slug + "/" + id + " keeps its readable semantic title alignment");
+      assert.ok(Number.isFinite(appearance.titleOffset), slug + "/" + id + " has a measurable heading position");
+      if (titleAnchorByLayout.has(layout)) {
+        const delta = Math.abs(appearance.titleOffset - titleAnchorByLayout.get(layout));
+        assert.ok(delta <= 2, slug + "/" + id + " keeps a stable heading baseline when content density changes: " + delta.toFixed(2) + "px");
+      } else {
+        titleAnchorByLayout.set(layout, appearance.titleOffset);
+      }
     }
 
     await openStep("dinleme-izleme", "s68-69-paydos-q1");
