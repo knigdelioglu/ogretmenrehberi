@@ -42,6 +42,7 @@ const types = {
 };
 const netlifyToml = fs.readFileSync(path.join(repoRoot, "netlify.toml"), "utf8");
 const csp = /Content-Security-Policy = "([^"]+)"/.exec(netlifyToml)?.[1] ?? "";
+let failOneDataRequest = false;
 const server = https.createServer({
   key: fs.readFileSync(keyFile),
   cert: fs.readFileSync(certFile)
@@ -53,6 +54,12 @@ const server = https.createServer({
     return;
   }
   const relativePath = urlPath.slice(basePath.length);
+  if (failOneDataRequest && /^data\.[a-f0-9]+\.bin$/.test(relativePath)) {
+    failOneDataRequest = false;
+    res.writeHead(404, { "Cache-Control": "no-cache" });
+    res.end("Simulated missing encrypted catalog");
+    return;
+  }
   const file = path.resolve(distRoot, relativePath || "index.html");
   if (!file.startsWith(distRoot + path.sep) && file !== path.join(distRoot, "index.html")) {
     res.writeHead(403, { "Cache-Control": "no-cache" });
@@ -246,7 +253,34 @@ try {
   assert.equal(await page.evaluate("navigator.serviceWorker.controller !== null"), true,
     "the presentation remains controlled by the active worker after offline reload");
 
-  console.log(`[sunum-web] Offline Chrome regression passed at ${basePath}: secure HTTPS worker precached ${graph.files.length} modules; offline reload opened the encrypted lesson catalog.`);
+  // Regression: an outdated browser tab can request a deleted versioned
+  // catalog. One fresh navigation must recover without treating it as a
+  // wrong password or entering a reload loop.
+  await page.send("Network.emulateNetworkConditions", {
+    offline: false, latency: 0, downloadThroughput: 0, uploadThroughput: 0, connectionType: "wifi"
+  });
+  await page.evaluate("localStorage.removeItem('sunum.pw')");
+  failOneDataRequest = true;
+  const recoveryStart = await page.evaluate("performance.timeOrigin");
+  await page.send("Page.reload", {});
+  await until(() => page.evaluate(`performance.timeOrigin > ${recoveryStart} && !document.querySelector('#gate')?.hidden`),
+    "password gate before simulated missing data");
+  await page.evaluate(`(() => {
+    document.querySelector('#gate-password').value = ${JSON.stringify(localPassword())};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
+  await until(() => page.evaluate("new URL(location.href).searchParams.has('_sunum_recover') && !document.querySelector('#gate')?.hidden"),
+    "a missing catalog triggers one fresh site reload");
+  await page.evaluate(`(() => {
+    document.querySelector('#gate-password').value = ${JSON.stringify(localPassword())};
+    document.querySelector('#gate-form').requestSubmit();
+  })()`);
+  await until(() => page.evaluate("document.querySelector('#gate').hidden && Boolean(document.querySelector('#canvas .slide'))"),
+    "password opens the catalog after 404 recovery", 30000);
+  assert.equal(await page.evaluate("new URL(location.href).searchParams.has('_sunum_recover')"), false,
+    "successful recovery clears its temporary reload marker");
+
+  console.log(`[sunum-web] Offline Chrome and missing-catalog recovery passed at ${basePath}: ${graph.files.length} precached modules; one simulated 404 recovered on fresh reload.`);
 } finally {
   for (const client of clients) client.close();
   await stopChild(browser);
