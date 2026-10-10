@@ -205,7 +205,10 @@ class AndroidShellTest {
         composeRule.onNodeWithText("Yerel adım düzenleme").assertExists()
         composeRule.onNodeWithText("Soru / başlık").assertExists()
         lessonList.performScrollToNode(hasTestTag("lesson-editor"))
-        composeRule.onNodeWithText("Süreç maddeleri ve bilgi kartları").assertExists()
+        // This smoke test selects the first lesson step, which may not have
+        // editable content; check the editor sections that are always present.
+        composeRule.onNodeWithText("Görünüm ve yoğunluk").assertExists()
+        composeRule.onNodeWithText("Açılım sırası").assertExists()
         lessonList.performScrollToNode(hasText("Düzenlemeyi kapat"))
         composeRule.onNodeWithText("Düzenlemeyi kapat").performClick()
     }
