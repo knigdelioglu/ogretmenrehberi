@@ -3095,3 +3095,75 @@ button {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Kaynak kitaptaki doldurma/karşılaştırma tabloları ve seçenekler: bütüncül sunum. */
+.presentation-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--modern-rule);
+  border-radius: 0.65em;
+  background: var(--modern-card);
+}
+.presentation-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--modern-ink);
+  font-family: var(--modern-font);
+  font-size: 1em;
+  text-align: left;
+}
+.presentation-table th,
+.presentation-table td {
+  padding: 0.65em 0.9em;
+  border-bottom: 1px solid var(--modern-rule);
+  vertical-align: middle;
+}
+.presentation-table thead {
+  background: var(--modern-teal-soft);
+}
+.presentation-table thead th {
+  color: var(--modern-teal);
+  font-weight: 750;
+}
+.presentation-table tbody th {
+  width: 44%;
+  font-weight: 650;
+}
+.presentation-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+.presentation-table__empty {
+  color: var(--ink-2);
+}
+.presentation-choices {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.44em;
+  width: 100%;
+}
+.presentation-choice {
+  display: grid;
+  grid-template-columns: 2em minmax(0, 1fr);
+  align-items: center;
+  gap: 0.7em;
+  padding: 0.48em 0.68em;
+  color: var(--modern-ink);
+  background: var(--modern-card);
+  border: 1px solid var(--modern-rule);
+  border-radius: 0.55em;
+  font-family: var(--modern-font);
+  text-align: left;
+}
+.presentation-choice__letter {
+  display: grid;
+  place-items: center;
+  width: 1.9em;
+  height: 1.9em;
+  border-radius: 0.5em;
+  background: var(--modern-teal-soft);
+  color: var(--modern-teal);
+  font-weight: 750;
+}
+.presentation-choice__text {
+  min-width: 0;
+}

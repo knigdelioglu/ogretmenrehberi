@@ -90,7 +90,7 @@
       "prompt": "Kurmaca ve gerçeklik — Kitaptaki açıklayıcı metni okuyunuz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.231'deki parçada dış dünya gerçekliği, kurmaca dünyanın kuruluşu ve okur yorumu arasındaki farkı işaretleyin.",
+        "lead": "3–6. sorular için basılı s.231’deki metni okuyun. Metnin dış dünya, kurmaca gerçeklik ve okur yorumunu nasıl ele aldığını belirleyin.",
         "items": [
           "Dış dünyanın yaşanmış ve doğrulanabilir yönleri",
           "Kurmaca anlatının yaratıcılıkla oluşturduğu dünya",
@@ -104,10 +104,10 @@
       "answer_id": "T3-P231-Q03",
       "layout": "structure",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 3 — Beş kavramı okuduğunuz metinle ilişkilendirerek açıklayınız.",
+      "prompt": "Ölçme ve Değerlendirme 3 — Tablodaki beş kavramı metne göre birer cümleyle açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her kavramı tek cümlede açıklayın; gerçeklik izlenimini nesnellikle, okur yorumunu çok anlamlılıkla özdeşleştirmeyin.",
+        "lead": "Kavramların açıklama sütununu metinden hareketle siz doldurun. Cevaplar daha sonra açılacaktır.",
         "items": [
           "Kurmaca",
           "Gerçeklik izlenimi",
@@ -115,9 +115,38 @@
           "Nesnellik",
           "Çok anlamlılık"
         ],
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Metinde olmayan 'metaforik doku', 'alımlama estetiği' gibi kuramsal terimleri zorunlu cevap hâline getirmeyin."
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Metinde olmayan 'metaforik doku', 'alımlama estetiği' gibi kuramsal terimleri zorunlu cevap hâline getirmeyin.",
+        "table": {
+          "columns": [
+            "İfade",
+            "Açıklama"
+          ],
+          "rows": [
+            [
+              "Kurmaca",
+              ""
+            ],
+            [
+              "Gerçeklik İzlenimi",
+              ""
+            ],
+            [
+              "Okur Yorumu",
+              ""
+            ],
+            [
+              "Nesnellik",
+              ""
+            ],
+            [
+              "Çok Anlamlılık",
+              ""
+            ]
+          ],
+          "reveal_by_row": true
+        }
       },
-      "thinking": "Her kavramı açıklarken metinden ayrı bir söz veya anlatım özelliği seçin; benzer görünen terimleri birbirinin yerine kullanmayın."
+      "thinking": "Kavramları metindeki bağlamlarıyla düşünün; her biri için metinden uygun bir ifade bulun."
     },
     {
       "id": "s231-q4",
@@ -125,13 +154,13 @@
       "answer_id": "T3-P231-Q04",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 4 — Dış dünya gerçekliğini yansıtmak edebî değeri nasıl etkiler?",
+      "prompt": "Ölçme ve Değerlendirme 4 — Kurmaca bir metnin dış dünyanın gerçekliğini yansıtması metnin değerini etkiler mi? Görüşlerinizi sözlü olarak ifade ediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bir görüş geliştirin; gerçekliğe benzerlik yanında dil, kurgu ve anlatımın rolünü de değerlendirin. Gerekçeli farklı görüşler mümkün.",
+        "lead": "Önce kendi görüşünüzü sözlü olarak açıklayın ve gerekçelendirin; ardından arkadaşlarınızın farklı yorumlarını dinleyin.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Klasik realizm, modernizm, postmodernizm gibi dış kuramları zorunlu gerekçe olarak eklemeyin."
       },
-      "thinking": "Dış dünyadan alınan bir unsurla edebî biçimde düzenlenen unsuru aynı örnekte ayırın; değerlendirmenizi gerekçelendirin."
+      "thinking": "Görüşünüzü metindeki kurmaca ve gerçeklik ilişkisine dayandırın. Farklı, gerekçeli görüşler mümkün."
     },
     {
       "id": "s231-q5",
@@ -139,11 +168,40 @@
       "answer_id": "T3-P231-Q05",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 5 — Okur yorumu anlayışına uygun seçeneği belirleyiniz.",
+      "prompt": "Ölçme ve Değerlendirme 5 — Aşağıdaki ifadelerden hangisi metindeki “okur yorumu” anlayışıyla örtüşmektedir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Seçenekleri basılı s.231'den okuyun; metnin farklı okurların birikim, ilgi ve değerlerine ilişkin açıklamasıyla karşılaştırın.",
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir."
+        "lead": "Metne dayanarak seçenekleri değerlendirin. Doğru yanıtı seçmeden önce diğerlerini neden elediğinizi açıklayın.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir.",
+        "options": [
+          {
+            "label": "A",
+            "text": "Kurmaca metinlerde anlamı belirleyen, yazarın dili kullanma şeklidir."
+          },
+          {
+            "label": "B",
+            "text": "Kurmaca metinlerde anlam sabittir ve okurun yorumu metni değiştirmez."
+          },
+          {
+            "label": "C",
+            "text": "Okurlar, kurmaca metinleri sadece yazarın amacı doğrultusunda anlamalıdır."
+          },
+          {
+            "label": "D",
+            "text": "Tüm okurlar olayları gerçek hayatta yaşanmış gibi değerlendirmek zorundadır."
+          },
+          {
+            "label": "E",
+            "text": "Okurların geçmişi, ilgileri ve değer yargıları metni nasıl yorumladıklarını etkiler."
+          }
+        ],
+        "items": [
+          "A) Kurmaca metinlerde anlamı belirleyen, yazarın dili kullanma şeklidir.",
+          "B) Kurmaca metinlerde anlam sabittir ve okurun yorumu metni değiştirmez.",
+          "C) Okurlar, kurmaca metinleri sadece yazarın amacı doğrultusunda anlamalıdır.",
+          "D) Tüm okurlar olayları gerçek hayatta yaşanmış gibi değerlendirmek zorundadır.",
+          "E) Okurların geçmişi, ilgileri ve değer yargıları metni nasıl yorumladıklarını etkiler."
+        ]
       }
     },
     {
@@ -152,11 +210,40 @@
       "answer_id": "T3-P231-Q06",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 6 — Kurmaca ile dış dünya gerçekliği arasındaki temel farkı belirleyiniz.",
+      "prompt": "Ölçme ve Değerlendirme 6 — Kurmaca metinleri dış dünya gerçekliğinden ayıran farkı en uygun biçimde ifade eden seçeneği belirleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kurmaca dünyanın ne tamamen gerçekliğin kopyası ne de inandırıcılıktan yoksun bir evren olduğunu düşünün.",
-        "note": "Öğretmen için kaynak ve değerlendirme notu: Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir."
+        "lead": "Metinde anlatılan iki gerçeklik türünü karşılaştırarak bütün seçenekleri değerlendirin.",
+        "note": "Öğretmen için kaynak ve değerlendirme notu: Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir.",
+        "options": [
+          {
+            "label": "A",
+            "text": "Dış dünyadaki olayları ve mekânları değiştirmeden yansıtması"
+          },
+          {
+            "label": "B",
+            "text": "Sadece yaşanmış olayları konu edinerek tarihsel bir belge niteliği taşıması"
+          },
+          {
+            "label": "C",
+            "text": "Nesnel gerçeklik yerine, yaratıcılıkla oluşturulmuş bir gerçeklik izlenimi sunması"
+          },
+          {
+            "label": "D",
+            "text": "Gerçek dünyadan tamamen kopuk, inandırıcılığı olmayan hayalî bir evren yaratması"
+          },
+          {
+            "label": "E",
+            "text": "Okurun kültürel birikimine ve kişisel ilgisine göre farklı şekillerde yorumlanabilmesi"
+          }
+        ],
+        "items": [
+          "A) Dış dünyadaki olayları ve mekânları değiştirmeden yansıtması",
+          "B) Sadece yaşanmış olayları konu edinerek tarihsel bir belge niteliği taşıması",
+          "C) Nesnel gerçeklik yerine, yaratıcılıkla oluşturulmuş bir gerçeklik izlenimi sunması",
+          "D) Gerçek dünyadan tamamen kopuk, inandırıcılığı olmayan hayalî bir evren yaratması",
+          "E) Okurun kültürel birikimine ve kişisel ilgisine göre farklı şekillerde yorumlanabilmesi"
+        ]
       }
     },
     {
@@ -164,10 +251,10 @@
       "source_record_id": "T03-S0137",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Orhan Veli şiirleri — Kitaptaki tema dağılımını inceleyiniz.",
+      "prompt": "Orhan Veli — 7–9. soruların metnini okuyup tema dağılımını inceleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Basılı s.232'de verilen oranları okuyun. En yüksek orana sahip temayı, diğer temalarla karıştırmadan belirleyin.",
+        "lead": "Ders kitabının basılı s.232–233’ündeki Orhan Veli metnini okuyun. Ardından şiir temalarının aşağıdaki dağılımını karşılaştırın.",
         "sections": [
           {
             "title": "Gündelik yaşam",
@@ -189,7 +276,35 @@
             "title": "Aşk",
             "body": "%10"
           }
-        ]
+        ],
+        "table": {
+          "columns": [
+            "Tema",
+            "Yüzdesi (%)"
+          ],
+          "rows": [
+            [
+              "Gündelik Yaşam",
+              "40"
+            ],
+            [
+              "Doğa",
+              "15"
+            ],
+            [
+              "Toplumsal Eleştiri",
+              "20"
+            ],
+            [
+              "Yaşama Sevinci",
+              "15"
+            ],
+            [
+              "Aşk",
+              "10"
+            ]
+          ]
+        }
       }
     },
     {
@@ -198,13 +313,13 @@
       "answer_id": "T3-P232-Q07",
       "layout": "question",
       "density": "compact",
-      "prompt": "Ölçme ve Değerlendirme 7 — En yüksek oranlı temanın Garip anlayışıyla bağlantısı nedir?",
+      "prompt": "Ölçme ve Değerlendirme 7 — En yüksek oranlı şiir temasıyla Orhan Veli’nin şiir anlayışı arasında nasıl bir ilişki kurulabilir?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Önce tablodan oranı söyleyin. Ardından sıradan insanın ve gündelik hayatın şiire taşınmasıyla ilişkilendirin.",
+        "lead": "Tablodaki en yüksek oranlı temayı belirleyin. Kurduğunuz ilişkiyi metindeki bir ifadeyle gerekçelendirin.",
         "note": "Öğretmen için kaynak ve değerlendirme notu: Kitabe-i Seng-i Mezar, Süleyman Efendi, aruz/heceyi yıkma, kahvehane, tramvay gibi bu sayfalarda verilmeyen örnekleri hazır cevaba eklemeyin."
       },
-      "thinking": "Tablodaki en büyük oranı belirleyin; ardından bu temanın şiir anlayışındaki karşılığını metindeki özelliklerle ilişkilendirin."
+      "thinking": "Önce oranları karşılaştırın; ardından düşüncenizi metinden uygun bir kanıtla destekleyin."
     },
     {
       "id": "s233-q8",

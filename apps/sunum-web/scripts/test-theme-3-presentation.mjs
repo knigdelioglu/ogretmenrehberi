@@ -306,6 +306,19 @@ function verifyProductionCatalog() {
         lesson.lesson_slug + "/" + step.id + ": encrypted catalog preserves resolved Theme 3 metadata");
     }
   }
+  const assessment = encryptedBySlug.get("degerlendirme-230-235");
+  assert.ok(assessment, "published assessment lesson exists");
+  const publishedSteps = new Map(assessment.steps.map((step) => [step.id, step]));
+  assert.equal(publishedSteps.get("s231-q3")?.content?.table?.rows.length, 5,
+    "production catalog preserves the complete concept table");
+  assert.equal(publishedSteps.get("s232-veli-chart")?.content?.table?.rows.length, 5,
+    "production catalog preserves the complete Orhan Veli table");
+  for (const id of ["s231-q5", "s231-q6"]) {
+    assert.equal(publishedSteps.get(id)?.content?.options?.length, 5,
+      id + ": published multiple-choice screen retains all options");
+    assert.equal(publishedSteps.get(id)?.content?.items, undefined,
+      id + ": duplicated Lesson Player fallback items are not published");
+  }
   return { generatedTheme, generatedAnswers, encryptedCatalog };
 }
 
@@ -521,7 +534,27 @@ async function runProductionBrowserChecks(production) {
     assert.ok(!view.hasEvidence && !(recordingLimited.step.answer.evidence_quotes?.length),
       "the missing recording does not create a fabricated evidence stage");
 
-    console.log("PASS production browser: encrypted Theme 3 catalog; p.165/p.184/p.214 interleaves; p.177 quote suppression; p.218 grouped audio evidence; p.184/p.218 responsive at 1440px and 800px; source-limited recording boundary at 1440px.");
+    await openAnswer("T3-P231-Q03");
+    const conceptRows = await client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length");
+    assert.equal(conceptRows, 5, "the five concepts are visible together on one slide");
+    view = await advanceUntil((value) => value.answer.includes("Dış dünyanın benzerlerinden"), "first concept definition");
+    let filledCells = await client.evaluate("document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length");
+    assert.equal(filledCells, 1, "only the first term is revealed on the first answer step");
+    view = await next();
+    filledCells = await client.evaluate("document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length");
+    assert.equal(filledCells, 2, "the second term opens in the same table without hiding the first");
+    for (const [answerId, expected] of [["T3-P231-Q05", "E"], ["T3-P231-Q06", "C"]]) {
+      await openAnswer(answerId);
+      const choiceLabels = await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map((el) => el.textContent.trim())");
+      assert.deepEqual(choiceLabels, ["A", "B", "C", "D", "E"], answerId + ": choices are visible together before answer reveal");
+      assert.ok(!(await state()).answer, answerId + ": correct answer remains hidden on first view");
+    }
+    const assessmentLesson = production.generatedTheme.find((lesson) => lesson.lesson_slug === "degerlendirme-230-235");
+    const chartIndex = assessmentLesson.steps.findIndex((step) => step.id === "s232-veli-chart");
+    await client.send("Page.navigate", { url: `${root}/#/${assessmentLesson.lesson_slug}/${chartIndex + 1}` });
+    await until(() => client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length === 5"),
+      "Orhan Veli table visible with all five ratios");
+    console.log("PASS production browser: intact p.231 concept table, both five-choice questions, p.232 ratio table; other Theme 3 reveal scenarios.");
   } finally {
     client?.close();
     if (browser.exitCode === null) { browser.kill("SIGTERM"); await Promise.race([new Promise((resolve) => browser.once("exit", resolve)), sleep(2500)]); }
@@ -538,6 +571,36 @@ function verifyPedagogicalEdits() {
   };
   assert.ok(answers.filter((item) => item.guidance?.trim()).length >= 125,
     "contextual teacher guidance has been recovered for answer records");
+  // Kaynak kitaptaki tabloların ve çoktan seçmeli seçeneklerin içeriği korunur.
+  const page231 = readJson(path.join(bookRoot, "pages/p231.json"));
+  const page232 = readJson(path.join(bookRoot, "pages/p232.json"));
+  const table231 = step("s231-q3").content.table;
+  assert.deepEqual(table231.columns, ["İfade", "Açıklama"]);
+  assert.deepEqual(table231.rows, page231.blocks.find((block) => block.type === "table").rows,
+    "five source concepts retain their blank explanation cells in one table");
+  assert.equal(table231.reveal_by_row, true, "concept definitions reveal inside the original five-row table");
+  const termAnswers = answerById.get("T3-P231-Q03").answer_sections;
+  assert.ok(table231.rows.every(([term]) => Object.keys(termAnswers).some((name) =>
+    name.toLocaleLowerCase("tr") === term.toLocaleLowerCase("tr"))),
+  "every table row has a matching independent definition");
+  for (const [id, questionNo] of [["s231-q5", "5"], ["s231-q6", "6"]]) {
+    const actual = step(id).content.options;
+    const source = page231.blocks.find((block) => block.type === "question" && block.question_number === questionNo);
+    assert.deepEqual(actual, source.options, id + ": all five multiple-choice options match the textbook");
+    assert.ok(!/birikim, ilgi ve değerleri|ne tamamen gerçekliğin kopyası/u.test(step(id).content.lead),
+      id + ": the initial guidance must not reveal option elimination or correct choice");
+  }
+  const themeChart = step("s232-veli-chart");
+  assert.deepEqual(themeChart.content.table.rows,
+    page232.blocks.find((block) => block.type === "table").rows,
+    "Orhan Veli theme ratios must remain together as a comparison table");
+  assert.match(themeChart.content.lead, /metnini okuyun/u,
+    "questions 7–9 refer to the textbook source reading");
+  assert.ok(!/Garip anlayışı|sıradan insanın ve gündelik hayatın şiire/u.test(
+    step("s232-q7").prompt + " " + step("s232-q7").content.lead + " " + step("s232-q7").thinking),
+    "the student must infer the main connection before the answer opens");
+  assert.match(step("s231-q4").prompt, /sözlü olarak ifade ediniz/u);
+  assert.match(answerById.get("T3-P231-Q03").answer_sections.Nesnellik, /gözlemlenebilir ve doğrulanabilir/u);
   const words = step("s191-spell").content.items;
   assert.deepEqual(words, ["zatürree", "fevkalâdelik", "ilân", "telâştan", "eksilmiyen"],
     "five printed spellings are presented without treating correct circumflex forms as errors");

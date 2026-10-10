@@ -999,6 +999,14 @@ function contentLayerPages(step, b = 1) {
     images: content.images,
     sources: index === 0 ? content.sources : undefined
   });
+  // Source tables and multiple-choice sets must remain intact on one slide.
+  // Their source rows/options are small enough to fit together, even on narrow screens.
+  if (content.table?.rows?.length) {
+    return [meta({ content: { table: content.table } }, 0)];
+  }
+  if (content.options?.length) {
+    return [meta({ content: { options: content.options } }, 0)];
+  }
   if (content.rubric?.rows?.length) {
     const size = Math.max(1, scaledItems(2, b));
     const pages = [];
@@ -1055,6 +1063,22 @@ function contentLayerPages(step, b = 1) {
 
 function answerLayerPages(step, b = 1) {
   const answer = step.answer || {};
+  // Fill an authored source table progressively instead of losing its row context.
+  const table = step.content?.table;
+  if (table?.reveal_by_row && answer.answer_sections && !Array.isArray(answer.answer_sections)) {
+    const definitions = new Map(Object.entries(answer.answer_sections).map(([name, value]) =>
+      [name.toLocaleLowerCase("tr"), value]));
+    if (table.rows.every(([name]) => typeof definitions.get(name.toLocaleLowerCase("tr")) === "string")) {
+      return table.rows.map((_, index) => ({
+        title: "Cevap",
+        responseTable: {
+          columns: table.columns,
+          rows: table.rows.map(([name], rowIndex) => [name,
+            rowIndex <= index ? definitions.get(name.toLocaleLowerCase("tr")) : ""])
+        }
+      }));
+    }
+  }
   const pres = presentationOf(step);
   if (pres.web) return webAnswerLayerPages(step, b);
   const textAtEnd = pres.answer_text === "end";
@@ -1205,6 +1229,27 @@ function currentView(step) {
 
 function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
+  if (content.table?.rows?.length) {
+    const table = content.table;
+    return h("div", { class: "presentation-table-wrap" },
+      h("table", { class: "presentation-table" },
+        h("thead", {}, h("tr", {}, table.columns.map((column) => h("th", { scope: "col" }, column)))),
+        h("tbody", {}, table.rows.map((row) =>
+          h("tr", {}, row.map((cell, index) => index === 0
+            ? h("th", { scope: "row" }, cell)
+            : h("td", { class: cell ? "" : "presentation-table__empty" }, cell || "—")))
+        ))
+      )
+    );
+  }
+  if (content.options?.length) {
+    return h("div", { class: "presentation-choices", role: "list", "aria-label": "Cevap seçenekleri" },
+      content.options.map((option) => h("div", { class: "presentation-choice", role: "listitem" },
+        h("span", { class: "presentation-choice__letter" }, option.label),
+        h("span", { class: "presentation-choice__text" }, option.text)
+      ))
+    );
+  }
   if (content.rubric?.rows?.length) {
     const rubric = content.rubric;
     return h("div", { class: "rubric-table-wrap" },
@@ -1565,7 +1610,10 @@ function stepSlide(lesson, step) {
   }
 
   if (viewKey === "answer" && !isVocab) {
-    if (page.hideValues) {
+    if (page.responseTable) {
+      main.append(panel("answer", answerLabel(step, lesson.theme),
+        renderContent(step, { table: page.responseTable }), fresh("answer")));
+    } else if (page.hideValues) {
       main.append(renderSections(page.sections, step.sections_layout, { hideValues: true }));
     } else if (page.answerText || page.sections) {
       main.append(
