@@ -710,25 +710,77 @@
   background: var(--ords-color-surface);
 }
 
-/* Controls stay touch sized and share the presentation surface tokens. */
+/* Controls remain discoverable without hover and keep readable contrast.
+ * The previous dark surface + inherited dark ink made resting icons disappear.
+ * Use paired ORDS foreground/background tokens in both themes. */
 .dock {
   gap: 4px;
   padding: 7px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid var(--ords-color-border-strong);
   border-radius: 16px;
-  background: rgba(21, 27, 32, 0.9);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+  background: var(--ords-color-surface-raised);
+  color: var(--ords-color-text-primary);
+  box-shadow: var(--ords-shadow-floating);
   backdrop-filter: blur(14px);
+  opacity: 0.96;
+  transform: none;
+  pointer-events: auto;
+  transition: opacity var(--ords-duration-fast) var(--ords-ease-standard);
 }
+
+.viewport.show-ui .dock { opacity: 1; }
 
 .dock button {
   width: 48px;
   height: 48px;
+  border: 1px solid var(--ords-color-border);
   border-radius: 12px;
-  transition: background var(--ords-duration-fast) var(--ords-ease-standard), transform var(--ords-duration-fast) var(--ords-ease-standard);
+  background: var(--ords-color-surface-muted);
+  color: var(--ords-color-text-primary);
+  transition:
+    background var(--ords-duration-fast) var(--ords-ease-standard),
+    border-color var(--ords-duration-fast) var(--ords-ease-standard),
+    color var(--ords-duration-fast) var(--ords-ease-standard),
+    transform var(--ords-duration-fast) var(--ords-ease-standard);
+}
+
+.dock button svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+.dock button[data-action="prev"],
+.dock button[data-action="next"] {
+  border-color: var(--ords-color-border-strong);
+  background: var(--ords-color-primary-soft);
+  color: var(--ords-color-primary-strong);
+}
+
+.dock button:hover,
+.dock button:focus-visible {
+  border-color: var(--ords-color-primary);
+  background: var(--ords-color-primary-soft);
+  color: var(--ords-color-primary-strong);
 }
 
 .dock button:active { transform: scale(0.96); }
+
+.dock__counter {
+  color: var(--ords-color-text-primary);
+  opacity: 1;
+  font-weight: 720;
+}
+
+.dock__sep { background: var(--ords-color-border-strong); }
+
+/* Always use the dark theme's matching ink with its dark surface. */
+:root[data-theme="dark"] .dock {
+  border-color: var(--ords-color-border-strong);
+  background: var(--ords-color-surface-raised);
+  color: var(--ords-color-text-primary);
+}
+
 
 .menu {
   background: rgba(10, 15, 18, 0.5);
