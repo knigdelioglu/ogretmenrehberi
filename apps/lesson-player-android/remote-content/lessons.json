@@ -54627,7 +54627,7 @@
         "reveal_order": [
           "note"
         ],
-        "display_prompt": "Tema sonu değerlendirme — Üç metni tez ve antitezle birlikte inceleyiniz.",
+        "display_prompt": "Tema sonu değerlendirme — Tez ve antitezi okuyup üç metni inceleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0131",
@@ -54643,13 +54643,26 @@
         },
         "answer": null,
         "content": {
-          "lead": "Basılı s.230'daki üç metni okuyun. Her metnin tez, antitez ve kesişimle ilişkisini henüz sınıflandırmadan tartışın.",
-          "items": [
-            "Her metinde anlatıcının yaşantı bilgisi hangi biçimde sunuluyor?",
-            "Gözlem, olay ve yorum birbirinden nasıl ayırt edilebilir?",
-            "Her metnin iki görüşten hangisine ne ölçüde dayanak oluşturduğunu metinle gerekçelendirin."
+          "lead": "Kitaptaki 1–3 numaralı metinleri okuyun. Her metnin yaşamla ilişkisini kendi gerekçenizle değerlendirin; sınıflandırmayı bir sonraki ekranda yapın.",
+          "claims": {
+            "thesis": "Edebî metinler, içerikleri ile yazarların / şairlerin hayatından birtakım izler taşır.",
+            "antithesis": "Edebî metinler, içerikleri ile yazarların / şairlerin hayatından izler taşımaz."
+          },
+          "excerpts": [
+            {
+              "label": "1",
+              "text": "Yeşillikler bir anda sarardı, ertesi sene gürbüz ağaçlar kupkuru bir iskelet hâline geldi. Bahar bir hazan gibi girdi ve kimse baharın geldiğini anlayamadı. İri boylu otlar cüceleşti, cılızlaştı. Nihayet kayboldu. O nazlı, güzel çiçek denizi kurudu, şimdi ortada sonsuz bir çöl var. Sanki dünyanın vahşî sürüleri ayaklarıyla, dişleriyle, tırnaklarıyla burayı eştiler. Eski zamanların karınlarına bir mahallenin evleri sığan hayvanlar susuzluklarını burada dindirdiler. Artık buradaki rüzgârlar Sam’dan başka bir şey değildi."
+            },
+            {
+              "label": "2",
+              "text": "Babam Havranlıydı. Ben orada doğdum ve büyüdüm. Orada ilk tahsilimi yaptım, sonra bir müddet, bize bir saat kadar uzaklıktaki Edremit İdadisine gidip geldim. Umumî Harbin son senelerinde, on dokuz yaşlarında askere alındım; fakat daha talimgâhta iken mütareke ilân edildi. Kasabaya döndüm. Tekrar idadiye devam edip bitirmedim."
+            },
+            {
+              "label": "3",
+              "text": "İlk gözüme çarpan şey, o civardaki büyük bir yalağın yaptığı bataklıkta çömelmiş iki manda karaltısı oldu. Bu mandalar -burada bunu söylemeliyim- Erzurum’da benim bir nevi fikr-i sabitim olmuştu. Günün her saatinde onlardan biriyle karşılaşır, sırtlarına ve hatta başlarına kadar taşıdıkları kurumuş çamur parçaları ve tepelerinin üstünde bir küçük kasırga gibi dalgalanan küçük hayvanlar kümesiyle bana büyük ve cüsseli olmanın kefaretini bütün ömürlerince çekmeğe mahkûm büyük zavallılar gibi görünürlerdi."
+            }
           ],
-          "note": "Metinlerin tamamı ders kitabının basılı s.230 sayfasından okunur; Lesson Player kaynak metinleri yeniden yayımlamaz."
+          "note": "Basılı s.230'daki üç sütun ayrı okunabilir pasajlara ayrılmıştır. Önce tez ve antitezi ele alın; metinlere cevap numarası ya da alanı atamayın."
         }
       },
       {
@@ -54701,7 +54714,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 1 — Üç metni tez, antitez ve kesişim alanına yerleştiriniz.",
+        "display_prompt": "Ölçme ve Değerlendirme 1 — Metin numaralarını Venn şemasındaki uygun alanlara yazınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0131",
@@ -54730,22 +54743,31 @@
           }
         },
         "content": {
-          "lead": "Her metnin numarasını Venn şemasına yerleştirmeden önce neden o alana ait olduğunu açıklayın.",
+          "lead": "Üç metni ve iki yargıyı karşılaştırın. Yerleşimi belirleyip her seçiminize metinden gerekçe gösterin.",
+          "venn": {
+            "thesis": "Edebî metinler, içerikleri ile yazarların / şairlerin hayatından birtakım izler taşır.",
+            "antithesis": "Edebî metinler, içerikleri ile yazarların / şairlerin hayatından izler taşımaz.",
+            "labels": [
+              "Tez",
+              "Kesişim",
+              "Antitez"
+            ]
+          },
           "items": [
             "Tez alanı",
             "Antitez alanı",
             "Kesişim alanı"
           ],
-          "note": "Öğretmen için kaynak ve değerlendirme notu: Metinlerin kaynağına veya yazarların biyografilerine kitaptaki parçaların dışında ayrıntı eklemeyin. Gerekçeyi yalnız parçadaki anlatıcı, yaşam bilgisi, gözlem ve edebî dönüştürme göstergeleriyle kurun."
+          "note": "Üç bölgeyi tek şemada gösterin; sayılar cevaptan önce boş kalmalı. Cevaplar aynı şemada sırayla açılmalı."
         }
       },
       {
         "id": "s230-distinction",
-        "layout": "comparison",
+        "layout": "process",
         "density": "compact",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Venn şeması — Hayattan iz taşımak ile hayatı birebir anlatmak aynı şey midir?",
+        "display_prompt": "Sentez için hazırlık — Tez ve antitezin sınırlarını düşününüz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0131",
@@ -54761,16 +54783,11 @@
         },
         "answer": null,
         "content": {
-          "lead": "Üçüncü metindeki gözlem ve anlatıcı yorumunu birlikte ele alın. Gerçeklikten yararlanma, bir metnin tamamını otobiyografi yapmaz.",
-          "sections": [
-            {
-              "title": "Doğrudan hayat bilgisi",
-              "body": "Kişinin yaşamından açıkça aktarılan somut ayrıntılar."
-            },
-            {
-              "title": "Dönüştürülmüş gerçeklik",
-              "body": "Yaşanan veya gözlemlenen malzemenin tasvir ve yorumla kurmaca anlatı içinde yeniden kurulması."
-            }
+          "lead": "İki savı karşılaştırın. Sentez cümleniz, iki yargının ilişkisini nedenleriyle açıklamalı; hazır bir sonuca bağlı kalmamalıdır.",
+          "items": [
+            "Tezin güçlü ve sınırlı yönleri neler?",
+            "Antitezin güçlü ve sınırlı yönleri neler?",
+            "Üçüncü metin üzerinden ikisinin ilişkisini nasıl açıklarsınız?"
           ]
         }
       },
@@ -54807,7 +54824,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 2 — Tez ve antitezi birleştiren sentez cümlesi yazınız.",
+        "display_prompt": "Ölçme ve Değerlendirme 2 — Kesişimdeki metinden hareketle tez ve antitezi birleştiren bir cümle yazınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0132",
@@ -54831,7 +54848,7 @@
           "source_locator": "basılı s.230 / PDF s.231 — soru 2"
         },
         "content": {
-          "lead": "İki görüşten hangi noktaları koruyabilirsiniz, hangi sınırlılığı eklemeniz gerekir? Kendi sentez cümlenizi yazın.",
+          "lead": "Kesişimdeki metni dayanak alarak iki yargıyı anlamca birleştiren özgün bir cümle kurun; gerekçenizi belirtin.",
           "note": "Önce öğrencilerin bağımsız cümle kurmasını sağlayın; örnek sentezi yanıt açıldıktan sonra karşılaştırın."
         }
       },
