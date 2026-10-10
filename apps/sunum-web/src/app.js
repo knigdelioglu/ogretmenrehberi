@@ -2470,6 +2470,14 @@ function setupArcDock() {
   // surfaces can dispatch the events differently when focus moves by script.
   dock.addEventListener("focus", trackFocus, true);
   dock.addEventListener("focusin", trackFocus);
+  dock.addEventListener("keydown", (event) => {
+    if (event.key === "Tab") {
+      requestAnimationFrame(() => {
+        focusButton = validButton(document.activeElement);
+        moveHighlight();
+      });
+    }
+  });
   dock.addEventListener("focusout", () => {
     // During browser focus transfer, relatedTarget can briefly be null even
     // when focus has already reached another button in the same tray.
