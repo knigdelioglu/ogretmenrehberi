@@ -961,14 +961,30 @@ function contentSources(content) {
       const separator = source.label.indexOf(" — ");
       const context = separator >= 0 ? source.label.slice(0, separator) : "Kaynak";
       const action = separator >= 0 ? source.label.slice(separator + 3) : source.label;
+      const isBookReference = !isDownload && /^Ders kitabı(?:\s|,|$)/i.test(context);
+
+      // Inspired by Arc's quiet action cards: a visible destination, a clear
+      // secondary action and tactile feedback, without changing link behavior.
+      // The document icon is a fixed trusted SVG, never interpolated user text.
+      const bookIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.3c-2.5-1.4-5.3-1.6-8-1v13c2.7-.6 5.5-.4 8 1"/><path d="M12 6.3c2.5-1.4 5.3-1.6 8-1v13c-2.7-.6-5.5-.4-8 1"/><path d="M12 6.3v13"/></svg>';
+
       return h("a", isDownload
         ? { href: source.url, download: "", class: "source-link source-download" }
-        : { href: source.url, target: "_blank", rel: "noopener noreferrer", class: "source-link" },
-        h("span", { class: "source-link__icon", "aria-hidden": "true" }, isDownload ? "↓" : "↗"),
+        : { href: source.url, target: "_blank", rel: "noopener noreferrer",
+          class: isBookReference ? "source-link source-link--book" : "source-link" },
+        isBookReference
+          ? h("span", { class: "source-link__icon source-link__icon--book", "aria-hidden": "true", html: bookIcon })
+          : h("span", { class: "source-link__icon", "aria-hidden": "true" }, isDownload ? "↓" : "↗"),
         h("span", { class: "source-link__copy" },
           h("span", { class: "source-link__context" }, context),
           h("span", { class: "source-link__action" }, action)
-        )
+        ),
+        isBookReference
+          ? h("span", { class: "source-link__trailing", "aria-hidden": "true" },
+            h("span", { class: "source-link__open-label" }, "Aç"),
+            h("span", { class: "source-link__arrow" }, "↗")
+          )
+          : null
       );
     })
   ) : null;

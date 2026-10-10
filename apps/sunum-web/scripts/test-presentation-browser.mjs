@@ -1303,6 +1303,63 @@ presentationBrowserSuite: {
   }
 
   if (process.env.VISUAL_LAYOUT_CLASS_SMOKE === "1") {
+    // Arc-inspired book reference cards must be shared across themes without
+    // mutating original PDF page anchors or other source/download actions.
+    for (const [slug, id] of [
+      ["orhun-abideleri", "s113-media-reminder"],
+      ["tema-2-girisi", "s85-theme-presentation"],
+      ["ogulla-bulusma", "s95-q1"]
+    ]) {
+      await openStep(slug, id);
+      await waitForPromptFonts();
+      const bookCards = await page.evaluate(`(() => {
+        const originalTheme = document.documentElement.dataset.theme;
+        const card = document.querySelector('#canvas a.source-link--book');
+        if (!card) return null;
+        const icon = card.querySelector('.source-link__icon--book');
+        const caption = card.querySelector('.source-link__context');
+        const helper = card.querySelector('.source-link__action');
+        const action = card.querySelector('.source-link__trailing');
+        const check = (theme) => {
+          document.documentElement.dataset.theme = theme;
+          const cardCss=getComputedStyle(card);
+          const actionCss=getComputedStyle(action);
+          return {
+            theme,background:cardCss.backgroundColor,borderRadius:cardCss.borderRadius,
+            actionBackground:actionCss.backgroundColor,actionColor:actionCss.color,
+            horizontalOverflow:card.scrollWidth > card.clientWidth+1,
+            cardHeight:card.getBoundingClientRect().height
+          };
+        };
+        const themes=['light','dark'].map(check);
+        document.documentElement.dataset.theme=originalTheme;
+        card.focus();
+        const focusable=document.activeElement===card;
+        card.blur();
+        return {href:card.href,target:card.target,rel:card.rel,
+          label:card.innerText,icon:!!icon?.querySelector('svg'),
+          iconDisplay:icon&&getComputedStyle(icon).display,
+          caption:caption?.innerText,helper:helper?.innerText,
+          actionText:action?.innerText,focusable,themes};
+      })()`);
+      assert.ok(bookCards, slug + "/" + id + " renders a textbook action card");
+      assert.match(bookCards.caption, /^Ders kitabı/, slug + "/" + id + " preserves textbook source context");
+      assert.ok(bookCards.helper.includes("aç"), slug + "/" + id + " preserves authored source action");
+      assert.ok(bookCards.actionText.includes("Aç") && bookCards.actionText.includes("↗"), slug + "/" + id + " displays the action affordance");
+      assert.ok(bookCards.icon && bookCards.iconDisplay==="grid", slug + "/" + id + " has the readable book icon");
+      assert.equal(bookCards.target,"_blank",slug + "/" + id + " opens the textbook externally");
+      assert.ok(bookCards.rel.includes("noopener") && bookCards.rel.includes("noreferrer"),
+        slug + "/" + id + " preserves safe external-link attributes");
+      assert.ok(bookCards.href.includes("#page="), slug + "/" + id + " preserves exact PDF page URL");
+      assert.equal(bookCards.focusable,true,slug + "/" + id + " remains keyboard focusable");
+      for (const theme of bookCards.themes) {
+        assert.notEqual(theme.background, "rgba(0, 0, 0, 0)", slug + "/" + id + " " + theme.theme + " card stays distinct");
+        assert.equal(theme.horizontalOverflow, false, slug + "/" + id + " " + theme.theme + " card content fits");
+        assert.ok(theme.cardHeight >= 44, slug + "/" + id + " " + theme.theme + " has a finger-sized card: " + theme.cardHeight.toFixed(1) + "px");
+      }
+    }
+    console.log("[sunum-web] Arc textbook cards passed: three authored PDF links, light/dark, icon, focus and geometry.");
+
     // The dock must be visible and its icons legible *before* pointer hover
     // in both presentation themes, including the prominent prev/next actions.
     const restingDock = await page.evaluate(`(() => {
