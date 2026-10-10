@@ -3135,6 +3135,31 @@ button {
 .presentation-table__empty {
   color: var(--ink-2);
 }
+
+/* Hidden definitions reserve their complete, final line wrapping before reveal. */
+.presentation-table__cell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+.presentation-table__measure,
+.presentation-table__value {
+  grid-area: 1 / 1;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.presentation-table__measure {
+  visibility: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.presentation-table__value {
+  position: relative;
+}
+.presentation-table__value--placeholder {
+  color: var(--ink-2);
+}
 .presentation-choices {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
