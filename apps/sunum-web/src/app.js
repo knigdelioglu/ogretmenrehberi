@@ -957,11 +957,11 @@ function contentSources(content) {
   return content.sources?.length ? h("nav", { class: "source-links", "aria-label": "Kaynaklar" },
     content.sources.map((source) => {
       const isDownload = source.download === true &&
-        /^assets\\/assessment-documents\\/[A-Za-z0-9._-]+\\.(?:docx|xlsx)$/i.test(source.url ?? "");
+        /^assets\/assessment-documents\/[A-Za-z0-9._-]+\.(?:docx|xlsx)$/i.test(source.url ?? "");
       const separator = source.label.indexOf(" — ");
       const context = separator >= 0 ? source.label.slice(0, separator) : "Kaynak";
       const action = separator >= 0 ? source.label.slice(separator + 3) : source.label;
-      const isBookReference = !isDownload && /^Ders kitabı\\b/i.test(context);
+      const isBookReference = !isDownload && /^Ders kitabı\b/i.test(context);
 
       // Inspired by Arc's quiet action cards: a visible destination, a clear
       // secondary action and tactile feedback, without changing link behavior.
