@@ -1303,6 +1303,65 @@ presentationBrowserSuite: {
   }
 
   if (process.env.VISUAL_LAYOUT_CLASS_SMOKE === "1") {
+    // The dock must be visible and its icons legible *before* pointer hover
+    // in both presentation themes, including the prominent prev/next actions.
+    const restingDock = await page.evaluate(`(() => {
+      const viewport=document.querySelector('#viewport');
+      const originalUi=viewport.classList.contains('show-ui');
+      const originalTheme=document.documentElement.getAttribute('data-theme');
+      viewport.classList.remove('show-ui');
+      const rgb=(value)=>(value.match(/[\\d.]+/g)||[]).slice(0,3).map(Number);
+      const luminance=(value)=>{
+        const c=rgb(value).map(channel=>{
+          const s=channel/255;return s<=0.04045?s/12.92:Math.pow((s+0.055)/1.055,2.4);
+        });
+        return 0.2126*c[0]+0.7152*c[1]+0.0722*c[2];
+      };
+      const contrast=(a,b)=>{
+        const x=luminance(a),y=luminance(b);
+        return (Math.max(x,y)+0.05)/(Math.min(x,y)+0.05);
+      };
+      const result=[];
+      for(const theme of ['light','dark']){
+        document.documentElement.setAttribute('data-theme',theme);
+        const dock=document.querySelector('#dock'),dockStyle=getComputedStyle(dock);
+        const entries=[...dock.querySelectorAll('button')].map(button=>{
+          const style=getComputedStyle(button),svg=getComputedStyle(button.querySelector('svg'));
+          return {
+            action:button.dataset.action,buttonColor:style.color,buttonBackground:style.backgroundColor,
+            contrast:contrast(style.color,style.backgroundColor),
+            iconStroke:svg.stroke,iconWidth:button.querySelector('svg').getBoundingClientRect().width,
+            size:[button.getBoundingClientRect().width,button.getBoundingClientRect().height]
+          };
+        });
+        const counterStyle=getComputedStyle(dock.querySelector('.dock__counter'));
+        result.push({theme,opacity:Number(dockStyle.opacity),pointerEvents:dockStyle.pointerEvents,
+          background:dockStyle.backgroundColor,counterContrast:contrast(counterStyle.color,dockStyle.backgroundColor),entries});
+      }
+      if(originalTheme===null) document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme',originalTheme);
+      if(originalUi) viewport.classList.add('show-ui');
+      return result;
+    })()`);
+    for (const variant of restingDock) {
+      assert.ok(variant.opacity >= 0.95, variant.theme + " dock stays visible before mouse movement");
+      assert.notEqual(variant.pointerEvents, "none", variant.theme + " resting dock remains clickable");
+      assert.ok(variant.counterContrast >= 4.5, variant.theme + " dock counter has readable contrast");
+      assert.deepEqual(variant.entries.map(button => button.action),
+        ["prev", "next", "menu", "theme", "fullscreen", "help"],
+        variant.theme + " dock exposes all six navigational controls");
+      for (const button of variant.entries) {
+        assert.ok(button.contrast >= 4.5, variant.theme + " " + button.action +
+          " icon has contrast before hover: " + button.contrast.toFixed(2));
+        assert.ok(button.size[0] >= 44 && button.size[1] >= 44,
+          variant.theme + " " + button.action + " touch target remains at least 44px");
+        assert.ok(button.iconWidth >= 20, variant.theme + " " + button.action + " icon remains distinct");
+        assert.equal(button.iconStroke, button.buttonColor,
+          variant.theme + " " + button.action + " icon stroke follows accessible foreground");
+      }
+    }
+    console.log("[sunum-web] Dock idle legibility passed in both themes: visible bar, six high-contrast buttons, touch targets.");
+
     // Cover and end are real presentation layouts, not incidental decorations.
     // Exercise distinct theme headings, long titles, and the terminal catalog item.
     const byTheme = new Map();
