@@ -537,12 +537,19 @@ async function runProductionBrowserChecks(production) {
     await openAnswer("T3-P231-Q03");
     const conceptRows = await client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length");
     assert.equal(conceptRows, 5, "the five concepts are visible together on one slide");
-    view = await advanceUntil((value) => value.answer.includes("Dış dünyanın benzerlerinden"), "first concept definition");
-    let filledCells = await client.evaluate("document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length");
-    assert.equal(filledCells, 1, "only the first term is revealed on the first answer step");
-    view = await next();
-    filledCells = await client.evaluate("document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length");
-    assert.equal(filledCells, 2, "the second term opens in the same table without hiding the first");
+    view = await advanceUntil((value) => value.answer.includes("Kurmaca"), "initial blank concept answer table");
+    const filledConceptCells = () => client.evaluate(
+      "document.querySelectorAll('#canvas .panel--answer .presentation-table tbody td:not(.presentation-table__empty)').length"
+    );
+    assert.equal(await filledConceptCells(), 0,
+      "opening the answer table must not expose the Kurmaca definition");
+    for (let revealed = 1; revealed <= 5; revealed += 1) {
+      view = await next();
+      assert.equal(await filledConceptCells(), revealed,
+        "each subsequent click reveals exactly one additional concept, in table order");
+    }
+    assert.ok(view.answer.includes("Dış dünyanın benzerlerinden"),
+      "Kurmaca definition stays visible after subsequent reveals");
     for (const [answerId, expected] of [["T3-P231-Q05", "E"], ["T3-P231-Q06", "C"]]) {
       await openAnswer(answerId);
       const choiceLabels = await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map((el) => el.textContent.trim())");
