@@ -999,6 +999,14 @@ function contentLayerPages(step, b = 1) {
     images: content.images,
     sources: index === 0 ? content.sources : undefined
   });
+  // Source tables and multiple-choice sets must remain intact on one slide.
+  // Their source rows/options are small enough to fit together, even on narrow screens.
+  if (content.table?.rows?.length) {
+    return [meta({ content: { table: content.table } }, 0)];
+  }
+  if (content.options?.length) {
+    return [meta({ content: { options: content.options } }, 0)];
+  }
   if (content.rubric?.rows?.length) {
     const size = Math.max(1, scaledItems(2, b));
     const pages = [];
@@ -1205,6 +1213,27 @@ function currentView(step) {
 
 function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
+  if (content.table?.rows?.length) {
+    const table = content.table;
+    return h("div", { class: "presentation-table-wrap" },
+      h("table", { class: "presentation-table" },
+        h("thead", {}, h("tr", {}, table.columns.map((column) => h("th", { scope: "col" }, column)))),
+        h("tbody", {}, table.rows.map((row) =>
+          h("tr", {}, row.map((cell, index) => index === 0
+            ? h("th", { scope: "row" }, cell)
+            : h("td", { class: cell ? "" : "presentation-table__empty" }, cell || "—")))
+        ))
+      )
+    );
+  }
+  if (content.options?.length) {
+    return h("div", { class: "presentation-choices", role: "list", "aria-label": "Cevap seçenekleri" },
+      content.options.map((option) => h("div", { class: "presentation-choice", role: "listitem" },
+        h("span", { class: "presentation-choice__letter" }, option.label),
+        h("span", { class: "presentation-choice__text" }, option.text)
+      ))
+    );
+  }
   if (content.rubric?.rows?.length) {
     const rubric = content.rubric;
     return h("div", { class: "rubric-table-wrap" },
