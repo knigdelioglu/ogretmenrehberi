@@ -54857,7 +54857,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "Basılı s.231'deki parçada dış dünya gerçekliği, kurmaca dünyanın kuruluşu ve okur yorumu arasındaki farkı işaretleyin.",
+          "lead": "3–6. sorular için basılı s.231’deki metni okuyun. Metnin dış dünya, kurmaca gerçeklik ve okur yorumunu nasıl ele aldığını belirleyin.",
           "items": [
             "Dış dünyanın yaşanmış ve doğrulanabilir yönleri",
             "Kurmaca anlatının yaratıcılıkla oluşturduğu dünya",
@@ -54934,7 +54934,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 3 — Beş kavramı okuduğunuz metinle ilişkilendirerek açıklayınız.",
+        "display_prompt": "Ölçme ve Değerlendirme 3 — Tablodaki beş kavramı metne göre birer cümleyle açıklayınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0133",
@@ -54960,12 +54960,12 @@
             "Kurmaca": "Dış dünyanın benzerlerinden yararlanıp onları yaratıcı biçimde yeniden kuran anlatı dünyası.",
             "Gerçeklik izlenimi": "Düşsel kişi, olay, zaman ve mekânın gerçeğe benzer/inandırıcı biçimde sunulması.",
             "Okur yorumu": "Okurun birikim, inanç, ilgi, dikkat ve merakına göre metni farklı anlamlandırması.",
-            "Nesnellik": "Dış dünya göndergelerinin yaşanmış, bilinir ve nesnel yönü.",
+            "Nesnellik": "Dış dünyadaki kişi, olay ve olguların kişisel değerlendirmelerden bağımsız, gözlemlenebilir ve doğrulanabilir yönü.",
             "Çok anlamlılık": "Kurmaca gerçekliğin farklı yorumlara açık olması."
           }
         },
         "content": {
-          "lead": "Her kavramı tek cümlede açıklayın; gerçeklik izlenimini nesnellikle, okur yorumunu çok anlamlılıkla özdeşleştirmeyin.",
+          "lead": "Kavramların açıklama sütununu metinden hareketle siz doldurun. Cevaplar daha sonra açılacaktır.",
           "items": [
             "Kurmaca",
             "Gerçeklik izlenimi",
@@ -54973,7 +54973,36 @@
             "Nesnellik",
             "Çok anlamlılık"
           ],
-          "note": "Öğretmen için kaynak ve değerlendirme notu: Metinde olmayan 'metaforik doku', 'alımlama estetiği' gibi kuramsal terimleri zorunlu cevap hâline getirmeyin."
+          "note": "Öğretmen için kaynak ve değerlendirme notu: Metinde olmayan 'metaforik doku', 'alımlama estetiği' gibi kuramsal terimleri zorunlu cevap hâline getirmeyin.",
+          "table": {
+            "columns": [
+              "İfade",
+              "Açıklama"
+            ],
+            "rows": [
+              [
+                "Kurmaca",
+                ""
+              ],
+              [
+                "Gerçeklik İzlenimi",
+                ""
+              ],
+              [
+                "Okur Yorumu",
+                ""
+              ],
+              [
+                "Nesnellik",
+                ""
+              ],
+              [
+                "Çok Anlamlılık",
+                ""
+              ]
+            ],
+            "reveal_by_row": true
+          }
         }
       },
       {
@@ -55010,7 +55039,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 4 — Dış dünya gerçekliğini yansıtmak edebî değeri nasıl etkiler?",
+        "display_prompt": "Ölçme ve Değerlendirme 4 — Kurmaca bir metnin dış dünyanın gerçekliğini yansıtması metnin değerini etkiler mi? Görüşlerinizi sözlü olarak ifade ediniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0134",
@@ -55035,7 +55064,7 @@
           "guidance": "Öğrenci farklı görüş bildirebilir; önemli olan görüşünü metindeki kurmaca-gerçeklik ayrımıyla gerekçelendirmesidir."
         },
         "content": {
-          "lead": "Bir görüş geliştirin; gerçekliğe benzerlik yanında dil, kurgu ve anlatımın rolünü de değerlendirin. Gerekçeli farklı görüşler mümkün.",
+          "lead": "Önce kendi görüşünüzü sözlü olarak açıklayın ve gerekçelendirin; ardından arkadaşlarınızın farklı yorumlarını dinleyin.",
           "note": "Öğretmen için kaynak ve değerlendirme notu: Klasik realizm, modernizm, postmodernizm gibi dış kuramları zorunlu gerekçe olarak eklemeyin."
         }
       },
@@ -55079,7 +55108,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 5 — Okur yorumu anlayışına uygun seçeneği belirleyiniz.",
+        "display_prompt": "Ölçme ve Değerlendirme 5 — Aşağıdaki ifadelerden hangisi metindeki “okur yorumu” anlayışıyla örtüşmektedir?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0135",
@@ -55108,8 +55137,37 @@
           "guidance": "Doğru seçeneği söylemeden önce öğrencilerden her yargı için metinde doğrudan destek, çelişki veya bilgi eksikliği gösteren bir dayanak aramalarını isteyin. Seçim ve açıklamayı cevap katmanına bırakın."
         },
         "content": {
-          "lead": "Seçenekleri basılı s.231'den okuyun; metnin farklı okurların birikim, ilgi ve değerlerine ilişkin açıklamasıyla karşılaştırın.",
-          "note": "Öğretmen için kaynak ve değerlendirme notu: Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir."
+          "lead": "Metne dayanarak seçenekleri değerlendirin. Doğru yanıtı seçmeden önce diğerlerini neden elediğinizi açıklayın.",
+          "note": "Öğretmen için kaynak ve değerlendirme notu: Gerekçe doğrudan metindeki okur farklarıyla kurulmalıdır; dış okur kuramlarına başvurmak gerekli değildir.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Kurmaca metinlerde anlamı belirleyen, yazarın dili kullanma şeklidir."
+            },
+            {
+              "label": "B",
+              "text": "Kurmaca metinlerde anlam sabittir ve okurun yorumu metni değiştirmez."
+            },
+            {
+              "label": "C",
+              "text": "Okurlar, kurmaca metinleri sadece yazarın amacı doğrultusunda anlamalıdır."
+            },
+            {
+              "label": "D",
+              "text": "Tüm okurlar olayları gerçek hayatta yaşanmış gibi değerlendirmek zorundadır."
+            },
+            {
+              "label": "E",
+              "text": "Okurların geçmişi, ilgileri ve değer yargıları metni nasıl yorumladıklarını etkiler."
+            }
+          ],
+          "items": [
+            "A) Kurmaca metinlerde anlamı belirleyen, yazarın dili kullanma şeklidir.",
+            "B) Kurmaca metinlerde anlam sabittir ve okurun yorumu metni değiştirmez.",
+            "C) Okurlar, kurmaca metinleri sadece yazarın amacı doğrultusunda anlamalıdır.",
+            "D) Tüm okurlar olayları gerçek hayatta yaşanmış gibi değerlendirmek zorundadır.",
+            "E) Okurların geçmişi, ilgileri ve değer yargıları metni nasıl yorumladıklarını etkiler."
+          ]
         }
       },
       {
@@ -55152,7 +55210,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 6 — Kurmaca ile dış dünya gerçekliği arasındaki temel farkı belirleyiniz.",
+        "display_prompt": "Ölçme ve Değerlendirme 6 — Kurmaca metinleri dış dünya gerçekliğinden ayıran farkı en uygun biçimde ifade eden seçeneği belirleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0136",
@@ -55181,8 +55239,37 @@
           "guidance": "Doğru seçeneği söylemeden önce öğrencilerden her yargı için metinde doğrudan destek, çelişki veya bilgi eksikliği gösteren bir dayanak aramalarını isteyin. Seçim ve açıklamayı cevap katmanına bırakın."
         },
         "content": {
-          "lead": "Kurmaca dünyanın ne tamamen gerçekliğin kopyası ne de inandırıcılıktan yoksun bir evren olduğunu düşünün.",
-          "note": "Öğretmen için kaynak ve değerlendirme notu: Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir."
+          "lead": "Metinde anlatılan iki gerçeklik türünü karşılaştırarak bütün seçenekleri değerlendirin.",
+          "note": "Öğretmen için kaynak ve değerlendirme notu: Diğer seçenekleri 'tamamen yanlış' diye genellemeyin; özellikle E, metnin başka bir boyutunu ifade eder fakat sorunun odağı değildir.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Dış dünyadaki olayları ve mekânları değiştirmeden yansıtması"
+            },
+            {
+              "label": "B",
+              "text": "Sadece yaşanmış olayları konu edinerek tarihsel bir belge niteliği taşıması"
+            },
+            {
+              "label": "C",
+              "text": "Nesnel gerçeklik yerine, yaratıcılıkla oluşturulmuş bir gerçeklik izlenimi sunması"
+            },
+            {
+              "label": "D",
+              "text": "Gerçek dünyadan tamamen kopuk, inandırıcılığı olmayan hayalî bir evren yaratması"
+            },
+            {
+              "label": "E",
+              "text": "Okurun kültürel birikimine ve kişisel ilgisine göre farklı şekillerde yorumlanabilmesi"
+            }
+          ],
+          "items": [
+            "A) Dış dünyadaki olayları ve mekânları değiştirmeden yansıtması",
+            "B) Sadece yaşanmış olayları konu edinerek tarihsel bir belge niteliği taşıması",
+            "C) Nesnel gerçeklik yerine, yaratıcılıkla oluşturulmuş bir gerçeklik izlenimi sunması",
+            "D) Gerçek dünyadan tamamen kopuk, inandırıcılığı olmayan hayalî bir evren yaratması",
+            "E) Okurun kültürel birikimine ve kişisel ilgisine göre farklı şekillerde yorumlanabilmesi"
+          ]
         }
       },
       {
@@ -55191,7 +55278,7 @@
         "density": "compact",
         "sections_layout": "grid",
         "reveal_order": [],
-        "display_prompt": "Orhan Veli şiirleri — Kitaptaki tema dağılımını inceleyiniz.",
+        "display_prompt": "Orhan Veli — 7–9. soruların metnini okuyup tema dağılımını inceleyiniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0137",
@@ -55207,7 +55294,7 @@
         },
         "answer": null,
         "content": {
-          "lead": "Basılı s.232'de verilen oranları okuyun. En yüksek orana sahip temayı, diğer temalarla karıştırmadan belirleyin.",
+          "lead": "Ders kitabının basılı s.232–233’ündeki Orhan Veli metnini okuyun. Ardından şiir temalarının aşağıdaki dağılımını karşılaştırın.",
           "sections": [
             {
               "title": "Gündelik yaşam",
@@ -55229,7 +55316,35 @@
               "title": "Aşk",
               "body": "%10"
             }
-          ]
+          ],
+          "table": {
+            "columns": [
+              "Tema",
+              "Yüzdesi (%)"
+            ],
+            "rows": [
+              [
+                "Gündelik Yaşam",
+                "40"
+              ],
+              [
+                "Doğa",
+                "15"
+              ],
+              [
+                "Toplumsal Eleştiri",
+                "20"
+              ],
+              [
+                "Yaşama Sevinci",
+                "15"
+              ],
+              [
+                "Aşk",
+                "10"
+              ]
+            ]
+          }
         }
       },
       {
@@ -55265,7 +55380,7 @@
           "answer",
           "note"
         ],
-        "display_prompt": "Ölçme ve Değerlendirme 7 — En yüksek oranlı temanın Garip anlayışıyla bağlantısı nedir?",
+        "display_prompt": "Ölçme ve Değerlendirme 7 — En yüksek oranlı şiir temasıyla Orhan Veli’nin şiir anlayışı arasında nasıl bir ilişki kurulabilir?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
         "source": {
           "source_record_id": "T03-S0137",
@@ -55289,7 +55404,7 @@
           "source_locator": "basılı s.232 / PDF s.233 — soru 7"
         },
         "content": {
-          "lead": "Önce tablodan oranı söyleyin. Ardından sıradan insanın ve gündelik hayatın şiire taşınmasıyla ilişkilendirin.",
+          "lead": "Tablodaki en yüksek oranlı temayı belirleyin. Kurduğunuz ilişkiyi metindeki bir ifadeyle gerekçelendirin.",
           "note": "Öğretmen için kaynak ve değerlendirme notu: Kitabe-i Seng-i Mezar, Süleyman Efendi, aruz/heceyi yıkma, kahvehane, tramvay gibi bu sayfalarda verilmeyen örnekleri hazır cevaba eklemeyin."
         }
       },
