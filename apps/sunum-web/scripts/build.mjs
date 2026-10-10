@@ -109,7 +109,14 @@ function slimStep(step, themeId, thinking) {
   if (answer?.dictionary_terms) {
     answer.dictionary_terms = answer.dictionary_terms.map(({ term, meaning }) => ({ term, meaning }));
   }
-  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "rubric", "scale", "images", "sources"]) : null;
+  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "table", "options", "rubric", "scale", "images", "sources"]) : null;
+  // Keep the Lesson Player fallbacks in the canonical flow, but avoid duplicate web output.
+  if (content?.table) {
+    delete content.items;
+    delete content.sections;
+  } else if (content?.options) {
+    delete content.items;
+  }
 
   // Kumandayla açılacak katmanlar: kanonik reveal_order sırası, öğretmen notu hariç,
   // yalnız gerçekten içeriği olan katmanlar.
