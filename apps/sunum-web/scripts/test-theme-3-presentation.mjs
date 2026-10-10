@@ -589,7 +589,68 @@ async function runProductionBrowserChecks(production) {
     await client.send("Page.navigate", { url: `${root}/#/${assessmentLesson.lesson_slug}/${chartIndex + 1}` });
     await until(() => client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length === 5"),
       "Orhan Veli table visible with all five ratios");
-    console.log("PASS production browser: intact p.231 concept table, both five-choice questions, p.232 ratio table; other Theme 3 reveal scenarios.");
+    // Biographical contest: both original tables are visible before answering.
+    await openAnswer("T3-P233-Q10");
+    assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-table-grid .presentation-table').length"), 2,
+      "p.233 question 10 starts with both source tables");
+    view = await advanceUntil(v => v.answer.includes("Biyografinin amacı"), "p.233 answer-scoring table");
+    const scoringGeometry = await client.evaluate("(() => { const t=document.querySelector('#canvas .panel--answer .presentation-table');return {width:t.offsetWidth,height:t.offsetHeight,rows:[...t.querySelectorAll('tbody tr')].map(x=>x.offsetHeight)};})()");
+    assert.ok(!view.answer.includes("+5 puan"), "first score is hidden until next click");
+    view = await next();
+    assert.ok(view.answer.includes("+5 puan"), "the first biography row score appears on the next click");
+    assert.deepEqual(await client.evaluate("(() => { const t=document.querySelector('#canvas .panel--answer .presentation-table');return {width:t.offsetWidth,height:t.offsetHeight,rows:[...t.querySelectorAll('tbody tr')].map(x=>x.offsetHeight)};})()"),
+      scoringGeometry, "scoring rows retain final heights during reveal");
+
+    await openAnswer("T3-P233-Q11");
+    assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-table-grid .presentation-table').length"), 2,
+      "p.233 question 11 also keeps both source tables visible");
+    view = await advanceUntil(v => v.answer.includes("Tarafsızlık"), "p.233 correction table");
+    assert.ok(!view.answer.includes("Düzeltme:"), "corrections must initially remain hidden");
+    view = await next();
+    assert.ok(view.answer.includes("Doğru açıklama"), "first biography definition is assessed before corrections");
+
+    await openAnswer("T3-P233-Q09");
+    assert.deepEqual(await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map(el=>el.innerText)"),
+      ["A","B","C","D","E"], "p.233 multiple-choice options display in full");
+
+    await openAnswer("T3-P234-Q13");
+    view = await advanceUntil(v => v.answer.includes("Bilgi vermek amaçlanmıştır."), "p.234 empty decision matrix");
+    const matrix = () => client.evaluate(`(() => {
+      const p=document.querySelector('#canvas .panel--answer');
+      const t=p.querySelector('.presentation-table');
+      return {panelHeight:p.offsetHeight,tableHeight:t.offsetHeight,
+        rowHeights:[...t.querySelectorAll('tbody tr')].map(row=>row.offsetHeight),
+        checkmarks:[...t.querySelectorAll('tbody td')].filter(cell=>cell.innerText.includes('✓')).length,
+        reserve:[...t.querySelectorAll('tbody th .presentation-table__measure')].length};
+    })()`);
+    const zero = await matrix();
+    assert.equal(zero.checkmarks, 0, "assessment starts with no revealed decisions");
+    assert.equal(zero.reserve, 8, "eight eventual explanations reserve their final row heights");
+    for (let count = 1; count <= 8; count += 1) {
+      view = await next();
+      const measured = await matrix();
+      assert.equal(measured.checkmarks, count, `decision ${count} is revealed only after its click`);
+      for (const key of ["panelHeight", "tableHeight"]) {
+        assert.ok(Math.abs(measured[key] - zero[key]) <= 1, `decision ${count} keeps ${key} stable`);
+      }
+      assert.deepEqual(measured.rowHeights, zero.rowHeights,
+        `decision ${count} preserves every table-row height`);
+    }
+
+    const assessment = production.generatedTheme.find(l => l.lesson_slug === "degerlendirme-230-235");
+    const readingIndex = assessment.steps.findIndex(s => s.id === "s235-source");
+    await client.send("Page.navigate", {url: `${root}/#/${assessment.lesson_slug}/${readingIndex+1}`});
+    await until(() => client.evaluate("Boolean(document.querySelector('#canvas .presentation-excerpt'))"),
+      "p.235 passage I visible");
+    for (const label of ["I","II","III","IV","V"]) {
+      assert.equal(await client.evaluate("document.querySelector('#canvas .presentation-excerpt h2')?.innerText"),
+        `Parça ${label}`, "full original passage " + label + " appears before choices");
+      if (label !== "V") await next();
+    }
+    await openAnswer("T3-P235-Q16");
+    assert.deepEqual(await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map(el=>el.innerText)"),
+      ["A","B","C","D","E"], "p.235 original answer options remain on one screen");
+    console.log("PASS production browser: p.231–235 tables, choices, progressive decisions, stable assessment geometry and five passages.");
   } finally {
     client?.close();
     if (browser.exitCode === null) { browser.kill("SIGTERM"); await Promise.race([new Promise((resolve) => browser.once("exit", resolve)), sleep(2500)]); }
