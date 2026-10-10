@@ -6,6 +6,7 @@ on:
       - main
       - "feat/**"
       - "fix/**"
+      - "codex/**"
     paths:
       - "apps/sunum-web/**"
       - "apps/lesson-player/scripts/**"
