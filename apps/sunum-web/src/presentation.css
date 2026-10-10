@@ -1091,6 +1091,10 @@
   opacity: 0.88;
 }
 
+:root[data-theme="dark"] .slide--lesson-cover.slide--arc-cover .cover__mark {
+  background: transparent;
+}
+
 .arc-cover__footer,
 .arc-end__footer {
   display: flex;
