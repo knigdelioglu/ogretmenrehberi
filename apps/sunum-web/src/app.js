@@ -2462,10 +2462,14 @@ function setupArcDock() {
     pointerButton = null;
     moveHighlight();
   });
-  dock.addEventListener("focusin", (event) => {
+  const trackFocus = (event) => {
     focusButton = validButton(event.target);
     moveHighlight();
-  });
+  };
+  // Capture non-bubbling focus as well as focusin: browser/embedded fullscreen
+  // surfaces can dispatch the events differently when focus moves by script.
+  dock.addEventListener("focus", trackFocus, true);
+  dock.addEventListener("focusin", trackFocus);
   dock.addEventListener("focusout", (event) => {
     if (!dock.contains(event.relatedTarget)) {
       focusButton = null;
