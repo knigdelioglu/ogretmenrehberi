@@ -1069,12 +1069,14 @@ function answerLayerPages(step, b = 1) {
     const definitions = new Map(Object.entries(answer.answer_sections).map(([name, value]) =>
       [name.toLocaleLowerCase("tr"), value]));
     if (table.rows.every(([name]) => typeof definitions.get(name.toLocaleLowerCase("tr")) === "string")) {
-      return table.rows.map((_, index) => ({
+      // Show the empty answer table first; reveal the first definition only
+      // on the *next* advance, then one additional row on each advance.
+      return Array.from({ length: table.rows.length + 1 }, (_, revealedCount) => ({
         title: "Cevap",
         responseTable: {
           columns: table.columns,
           rows: table.rows.map(([name], rowIndex) => [name,
-            rowIndex <= index ? definitions.get(name.toLocaleLowerCase("tr")) : ""])
+            rowIndex < revealedCount ? definitions.get(name.toLocaleLowerCase("tr")) : ""])
         }
       }));
     }
