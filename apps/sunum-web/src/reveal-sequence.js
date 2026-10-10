@@ -32,11 +32,15 @@ export function answerEvidenceStages(units) {
 }
 
 // Keep the paired answer and source context on the first evidence page only.
-export function evidenceContinuationPages(pairedAnswer, evidenceSections, quotePages) {
-  return quotePages.map((group, index) => ({
+export function evidenceContinuationPages(pairedAnswer, evidenceSections, quotePages, evidenceSectionPages = null) {
+  const sectionPages = evidenceSectionPages ?? (Object.keys(evidenceSections || {}).length ? [evidenceSections] : []);
+  const count = Math.max(quotePages.length, sectionPages.length);
+  return Array.from({ length: count }, (_, index) => ({
     ...(index === 0 ? pairedAnswer : {}),
-    ...(index === 0 ? { evidenceSections } : {}),
-    quotes: group.values
+    ...(sectionPages[index] && Object.keys(sectionPages[index]).length
+      ? { evidenceSections: sectionPages[index] }
+      : {}),
+    ...(quotePages[index] ? { quotes: quotePages[index].values } : {})
   }));
 }
 

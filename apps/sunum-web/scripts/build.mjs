@@ -202,7 +202,8 @@ const appModuleGraph = discoverLocalModuleGraph(srcDir, "app.js");
 const offlineCore = [...new Set([
   "./",
   "index.html",
-  `styles.css?v=${appVersion}`,
+  `base.css?v=${appVersion}`,
+  `presentation.css?v=${appVersion}`,
   `app.js?v=${appVersion}`,
   ...appModuleGraph.requests,
   dataFile,
