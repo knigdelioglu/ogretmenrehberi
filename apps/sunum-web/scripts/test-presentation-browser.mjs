@@ -1391,6 +1391,10 @@ presentationBrowserSuite: {
       // Keyboard focus is deliberately moved to a DIFFERENT button than
       // the last hovered one: a stale highlight position would fail.
       prev.focus();
+      // CDP programmatic focus does not always emit the real focusin event;
+      // dispatch it explicitly while the button is genuinely active, then
+      // verify the same handler used by keyboard navigation.
+      prev.dispatchEvent(new FocusEvent('focusin',{bubbles:true}));
       await new Promise(resolve=>setTimeout(resolve,180));
       const focused={...state(),visible:Number.parseFloat(getComputedStyle(highlight).opacity)>0.5,
         focusWithin:dock.matches(':focus-within'),
