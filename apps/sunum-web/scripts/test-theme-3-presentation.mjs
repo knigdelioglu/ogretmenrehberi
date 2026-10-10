@@ -309,6 +309,16 @@ function verifyProductionCatalog() {
   const assessment = encryptedBySlug.get("degerlendirme-230-235");
   assert.ok(assessment, "published assessment lesson exists");
   const publishedSteps = new Map(assessment.steps.map((step) => [step.id, step]));
+  assert.deepEqual(publishedSteps.get("s230-venn-reading")?.content?.excerpts?.map(e => e.label),
+    ["1", "2", "3"], "encrypted production catalog retains all three source passages");
+  assert.ok(publishedSteps.get("s230-venn-reading")?.content?.claims?.thesis &&
+    publishedSteps.get("s230-venn-reading")?.content?.claims?.antithesis,
+    "encrypted catalog retains source claims next to each excerpt");
+  assert.ok(publishedSteps.get("s230-q1")?.content?.venn?.thesis &&
+    publishedSteps.get("s230-q1")?.content?.venn?.antithesis,
+    "encrypted catalog retains both Venn claims");
+  assert.equal(publishedSteps.get("s230-q1")?.content?.items, undefined,
+    "published Venn replaces duplicate numbered-card fallback");
   assert.equal(publishedSteps.get("s231-q3")?.content?.table?.rows.length, 5,
     "production catalog preserves the complete concept table");
   assert.equal(publishedSteps.get("s232-veli-chart")?.content?.table?.rows.length, 5,
@@ -589,6 +599,49 @@ async function runProductionBrowserChecks(production) {
     await client.send("Page.navigate", { url: `${root}/#/${assessmentLesson.lesson_slug}/${chartIndex + 1}` });
     await until(() => client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length === 5"),
       "Orhan Veli table visible with all five ratios");
+    // Page 230: three original readings and exact thesis/antithesis precede the blank Venn.
+    const assessment230 = production.generatedTheme.find(l => l.lesson_slug === "degerlendirme-230-235");
+    const reading230Index = assessment230.steps.findIndex(s => s.id === "s230-venn-reading");
+    await client.send("Page.navigate", { url: `${root}/#/${assessment230.lesson_slug}/${reading230Index + 1}` });
+    await until(() => client.evaluate("Boolean(document.querySelector('#canvas .presentation-excerpt'))"),
+      "p.230 original passage one visible");
+    for (const label of ["1", "2", "3"]) {
+      assert.equal(await client.evaluate("document.querySelector('#canvas .presentation-excerpt h2')?.innerText"),
+        `Parça ${label}`, "p.230 correctly numbers each original reading");
+      assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-claim').length"), 2,
+        "p.230 retains both complete thesis claims alongside each passage");
+      if (label !== "3") await next();
+    }
+    await openAnswer("T3-P230-Q01");
+    assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-venn__circle').length"), 2,
+      "p.230 has an actual overlapping two-circle Venn instead of numbered cards");
+    view = await advanceUntil(v => v.answer.includes("ANTİTEZ") &&
+      v.answer.includes("Kesişim"), "p.230 initial blank Venn answer");
+    const vennState = () => client.evaluate(`(() => {
+      const panel = document.querySelector('#canvas .panel--answer');
+      const diagram = panel?.querySelector('.presentation-venn');
+      const values = Object.fromEntries([...diagram?.querySelectorAll('[data-region]') || []]
+        .map(el => [el.dataset.region, el.querySelector('b')?.textContent.trim()]));
+      return { values, panelHeight: panel?.offsetHeight,
+        width: diagram?.offsetWidth, height: diagram?.offsetHeight };
+    })()`);
+    const blankVenn = await vennState();
+    assert.deepEqual(blankVenn.values, { tez:"—", kesisim:"—", antitez:"—" },
+      "the first answer view is completely blank");
+    for (const expected of [
+      { tez:"2", kesisim:"—", antitez:"—" },
+      { tez:"2", kesisim:"—", antitez:"1" },
+      { tez:"2", kesisim:"3", antitez:"1" }
+    ]) {
+      await next();
+      const shown = await vennState();
+      assert.deepEqual(shown.values, expected, "one additional Venn placement opens with each click");
+      assert.equal(shown.panelHeight, blankVenn.panelHeight,
+        "Venn answer panel height stays fixed while entries appear");
+      assert.equal(shown.width, blankVenn.width, "Venn width stays fixed");
+      assert.equal(shown.height, blankVenn.height, "Venn height stays fixed");
+    }
+
     // Biographical contest: both original tables are visible before answering.
     await openAnswer("T3-P233-Q10");
     assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-table-grid .presentation-table').length"), 2,
@@ -668,6 +721,30 @@ function verifyPedagogicalEdits() {
   assert.ok(answers.filter((item) => item.guidance?.trim()).length >= 125,
     "contextual teacher guidance has been recovered for answer records");
   // Kaynak kitaptaki tabloların ve çoktan seçmeli seçeneklerin içeriği korunur.
+  const page230 = readJson(path.join(bookRoot, "pages/p230.json"));
+  const reading230 = step("s230-venn-reading").content;
+  const thesis = page230.blocks.find(b => b.id === "G11-T3-P230-TEXT01").text.replace(/^TEZ\s+/u, "");
+  const antithesis = page230.blocks.find(b => b.id === "G11-T3-P230-TEXT02").text.replace(/^ANTİTEZ\s+/u, "");
+  assert.deepEqual(reading230.claims, { thesis, antithesis },
+    "p.230 textbook thesis/antithesis remain complete before the classification");
+  assert.deepEqual(reading230.excerpts.map(e => e.label), ["1", "2", "3"],
+    "p.230 presents three source texts separately without assigning Venn answers");
+  for (const [index, phrase] of ["Yeşillikler bir anda sarardı", "Babam Havranlıydı", "İlk gözüme çarpan şey"].entries()) {
+    assert.ok(reading230.excerpts[index].text.startsWith(phrase),
+      "p.230 numbered text has the correct source opening: " + (index + 1));
+  }
+  assert.ok(reading230.excerpts.every(e => e.text.length > 240),
+    "p.230 source passages are complete enough for independent reading");
+  assert.deepEqual(step("s230-q1").content.venn, {
+    thesis, antithesis, labels: ["Tez", "Kesişim", "Antitez"]
+  }, "p.230 Venn task uses both printed claims without a prefilled answer");
+  const distribution = answerById.get("T3-P230-Q01").answer_sections;
+  assert.deepEqual([distribution.tez, distribution.antitez, distribution.kesisim], ["2", "1", "3"]);
+  const preparation = JSON.stringify(step("s230-distinction").content);
+  assert.ok(!/otobiyografi|Dönüştürülmüş gerçeklik|Doğrudan hayat bilgisi/iu.test(preparation),
+    "p.230 synthesis preparation does not reveal the intended conclusion");
+  assert.ok(!/birebir kopya|otobiyografi/iu.test(step("s230-q2").content.lead),
+    "p.230 synthesis is student-produced before the model answer");
   const page231 = readJson(path.join(bookRoot, "pages/p231.json"));
   const page232 = readJson(path.join(bookRoot, "pages/p232.json"));
   const table231 = step("s231-q3").content.table;
@@ -752,8 +829,9 @@ function verifyPedagogicalEdits() {
     "synthesis answer is not shown before student work");
   assert.ok(!step("s233-q9").content.lead.includes("kronolojik"),
     "multiple-choice hint does not announce the correct option");
-  assert.ok(step("s230-venn-reading").content.items.every((text) => !/Metin [123]'/.test(text)),
-    "Venn labels require student classification");
+  assert.ok(step("s230-venn-reading").content.excerpts.every(({ text }) =>
+    !/tez alanı|antitez alanı|kesişim alanı/iu.test(text)),
+    "p.230 reading never inserts Venn answer labels into the source passages");
   const biographicalPreview = JSON.stringify(step("s194-two-biographies").content);
   assert.ok(!biographicalPreview.includes("Arayan Bulur") && !biographicalPreview.includes("1931"),
     "biographical turning points follow reading rather than precede it");

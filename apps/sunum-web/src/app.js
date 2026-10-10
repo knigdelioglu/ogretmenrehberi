@@ -1006,7 +1006,10 @@ function contentLayerPages(step, b = 1) {
   }
   if (content.excerpts?.length) {
     return content.excerpts.map((excerpt, index) =>
-      meta({ content: { excerpts: [excerpt] }, title: `Parça ${excerpt.label}` }, index));
+      meta({ content: { excerpts: [excerpt], claims: content.claims }, title: `Parça ${excerpt.label}` }, index));
+  }
+  if (content.venn) {
+    return [meta({ content: { venn: content.venn } }, 0)];
   }
   // Source tables and multiple-choice sets must remain intact on one slide.
   // Their source rows/options are small enough to fit together, even on narrow screens.
@@ -1072,6 +1075,20 @@ function contentLayerPages(step, b = 1) {
 
 function answerLayerPages(step, b = 1) {
   const answer = step.answer || {};
+  if (step.content?.venn && answer.answer_sections) {
+    const sections = answer.answer_sections;
+    const labels = ["tez", "antitez", "kesisim"];
+    if (labels.every(label => /^[1-3]$/.test(String(sections[label])))) {
+      return Array.from({ length: 4 }, (_, revealedCount) => ({
+        title: "Cevap",
+        responseVenn: {
+          ...step.content.venn,
+          numbers: Object.fromEntries(labels.map((label, index) =>
+            [label, index < revealedCount ? sections[label] : ""]))
+        }
+      }));
+    }
+  }
   const assessmentTable = step.content?.table;
   if (assessmentTable?.review === "checks" && Array.isArray(assessmentTable.rows)) {
     const decisions = assessmentTable.rows.map((row, index) => {
@@ -1301,6 +1318,29 @@ function currentView(step) {
 
 function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
+  const claimCards = (claims) => h("div", { class: "presentation-claims" },
+    h("div", { class: "presentation-claim presentation-claim--thesis" },
+      h("strong", {}, "TEZ"), h("p", {}, claims.thesis)),
+    h("div", { class: "presentation-claim presentation-claim--antithesis" },
+      h("strong", {}, "ANTİTEZ"), h("p", {}, claims.antithesis))
+  );
+  if (content.venn) {
+    const venn = content.venn;
+    const number = (key) => String(venn.numbers?.[key] || "—");
+    return h("div", { class: "presentation-venn-lesson" },
+      claimCards(venn),
+      h("div", { class: "presentation-venn", role: "group", "aria-label": "Tez, antitez ve kesişimden oluşan Venn şeması" },
+        h("div", { class: "presentation-venn__circle presentation-venn__circle--thesis", "aria-hidden": "true" }),
+        h("div", { class: "presentation-venn__circle presentation-venn__circle--antithesis", "aria-hidden": "true" }),
+        h("span", { class: "presentation-venn__region presentation-venn__region--thesis", "data-region": "tez" },
+          h("small", {}, "Tez"), h("b", {}, number("tez"))),
+        h("span", { class: "presentation-venn__region presentation-venn__region--intersection", "data-region": "kesisim" },
+          h("small", {}, "Kesişim"), h("b", {}, number("kesisim"))),
+        h("span", { class: "presentation-venn__region presentation-venn__region--antithesis", "data-region": "antitez" },
+          h("small", {}, "Antitez"), h("b", {}, number("antitez")))
+      )
+    );
+  }
   if (content.tables?.length) {
     return h("div", { class: "presentation-table-grid" },
       content.tables.map(table => h("section", { class: "presentation-table-group" },
@@ -1310,11 +1350,14 @@ function renderContent(step, content = step.content, itemOffset = 0) {
     );
   }
   if (content.excerpts?.length) {
-    return h("div", { class: "presentation-excerpts" },
-      content.excerpts.map(excerpt => h("article", { class: "presentation-excerpt" },
+    return h("div", { class: "presentation-source-reading" },
+      content.claims ? claimCards(content.claims) : null,
+      h("div", { class: "presentation-excerpts" },
+        content.excerpts.map(excerpt => h("article", { class: "presentation-excerpt" },
         h("h2", {}, `Parça ${excerpt.label}`),
         h("blockquote", {}, excerpt.text)
-      ))
+        ))
+      )
     );
   }
   if (content.table?.rows?.length) {
@@ -1722,7 +1765,10 @@ function stepSlide(lesson, step) {
   }
 
   if (viewKey === "answer" && !isVocab) {
-    if (page.responseTable || page.responseTables) {
+    if (page.responseVenn) {
+      main.append(panel("answer", answerLabel(step, lesson.theme),
+        renderContent(step, { venn: page.responseVenn }), fresh("answer")));
+    } else if (page.responseTable || page.responseTables) {
       const conclusion = page.responseConclusion
         ? h("div", { class: "presentation-conclusion" },
             h("span", { class: "presentation-conclusion__measure", "aria-hidden": "true" }, page.responseConclusion),
