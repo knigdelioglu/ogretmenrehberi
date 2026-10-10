@@ -109,9 +109,9 @@ function slimStep(step, themeId, thinking) {
   if (answer?.dictionary_terms) {
     answer.dictionary_terms = answer.dictionary_terms.map(({ term, meaning }) => ({ term, meaning }));
   }
-  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "table", "options", "rubric", "scale", "images", "sources"]) : null;
+  const content = step.content ? pick(step.content, ["lead", "items", "item_offset", "sections", "table", "tables", "table_review", "options", "excerpts", "rubric", "scale", "images", "sources"]) : null;
   // Keep the Lesson Player fallbacks in the canonical flow, but avoid duplicate web output.
-  if (content?.table) {
+  if (content?.table || content?.tables || content?.excerpts) {
     delete content.items;
     delete content.sections;
   } else if (content?.options) {
