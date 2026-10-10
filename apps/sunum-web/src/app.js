@@ -54,12 +54,36 @@ let encryptedPayload = null;
 async function fetchPayload() {
   if (encryptedPayload) return encryptedPayload;
   const res = await fetch(DATA_FILE, { cache: "no-cache" });
+  if (res.status === 404 || res.status === 410) throw new MissingCatalogError(res.status);
   if (!res.ok) throw new Error(`Veri indirilemedi (${res.status})`);
   encryptedPayload = new Uint8Array(await res.arrayBuffer());
   return encryptedPayload;
 }
 
 class WrongPassword extends Error {}
+class MissingCatalogError extends Error {
+  constructor(status) {
+    super(`Sunum veri dosyası bulunamadı (${status}). Bu bir şifre hatası değildir. ${DATA_FILE} dosyasını içeren tam site sürümünü yeniden yayımlayın.`);
+  }
+}
+
+async function recoverMissingCatalog(error) {
+  if (!(error instanceof MissingCatalogError)) return false;
+  const url = new URL(location.href);
+  // A single cache-busting reload can recover an old tab or service worker.
+  // Keep the flag after a failed retry so a genuinely incomplete deploy
+  // cannot cause an endless reload loop.
+  if (url.searchParams.get("_sunum_recover") === BUILD) return false;
+  try {
+    const registration = await navigator.serviceWorker?.getRegistration();
+    await registration?.unregister();
+  } catch {
+    // The next navigation still forces a fresh document URL.
+  }
+  url.searchParams.set("_sunum_recover", BUILD);
+  location.replace(url.href);
+  return true;
+}
 
 async function decryptCatalog(password) {
   if (!window.crypto?.subtle) {
@@ -2465,6 +2489,12 @@ async function unlock(password, remember) {
   const catalog = await decryptCatalog(password);
   if (remember) storage.set(LS.password, password);
   else storage.remove(LS.password);
+  // Drop the recovery query only after the current encrypted payload loads.
+  const url = new URL(location.href);
+  if (url.searchParams.has("_sunum_recover")) {
+    url.searchParams.delete("_sunum_recover");
+    history.replaceState(history.state, "", url.href);
+  }
   start(catalog);
 }
 
@@ -2484,6 +2514,7 @@ async function boot() {
     try {
       await unlock($("#gate-password").value, $("#gate-remember").checked);
     } catch (err) {
+      if (await recoverMissingCatalog(err)) return;
       $("#gate-error").textContent = err instanceof WrongPassword ? "Şifre yanlış." : err.message;
       $("#gate-password").select();
     } finally {
@@ -2498,6 +2529,7 @@ async function boot() {
       await unlock(saved, true);
       return;
     } catch (err) {
+      if (await recoverMissingCatalog(err)) return;
       if (err instanceof WrongPassword) storage.remove(LS.password);
       showGate(err instanceof WrongPassword ? "Şifre değişmiş; yeniden girin." : err.message);
       return;
