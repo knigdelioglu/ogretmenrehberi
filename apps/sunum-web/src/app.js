@@ -2470,11 +2470,14 @@ function setupArcDock() {
   // surfaces can dispatch the events differently when focus moves by script.
   dock.addEventListener("focus", trackFocus, true);
   dock.addEventListener("focusin", trackFocus);
-  dock.addEventListener("focusout", (event) => {
-    if (!dock.contains(event.relatedTarget)) {
-      focusButton = null;
+  dock.addEventListener("focusout", () => {
+    // During browser focus transfer, relatedTarget can briefly be null even
+    // when focus has already reached another button in the same tray.
+    // Reconcile against the final activeElement instead of clearing early.
+    queueMicrotask(() => {
+      focusButton = validButton(document.activeElement);
       moveHighlight();
-    }
+    });
   });
   window.addEventListener("resize", () => {
     if (dock.hasAttribute("data-highlight")) moveHighlight();
