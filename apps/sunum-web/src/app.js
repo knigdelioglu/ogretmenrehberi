@@ -2237,6 +2237,7 @@ function toggleFullscreen() {
 
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
+  document.querySelector('#dock [data-action="theme"]')?.setAttribute("aria-pressed", String(theme === "dark"));
   document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#14181e" : "#f5f2ea";
 }
 
@@ -2285,6 +2286,10 @@ function onKeyDown(event) {
   if (!state.catalog) return;
   const target = event.target;
   if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) return;
+  // Let focused dock buttons activate natively with Enter/Space; otherwise
+  // those keystrokes would advance the slide instead of pressing the button.
+  if (target instanceof HTMLButtonElement && target.closest("#dock") &&
+      (event.key === "Enter" || event.key === " " || event.key === "Spacebar")) return;
   if (event.metaKey || event.ctrlKey || event.altKey) return;
 
   const key = event.key;
@@ -2416,6 +2421,68 @@ function onAction(action) {
   }
 }
 
+// Native counterpart of Arc's Floating Button Group: one quiet moving
+// highlight for pointer or keyboard focus. Geometry comes from the actual
+// buttons so resizing and different text widths never hard-code offsets.
+function setupArcDock() {
+  const dock = $("#dock");
+  const highlight = dock.querySelector(".dock__highlight");
+  if (!highlight) return;
+
+  let pointerButton = null;
+  let focusButton = null;
+  const validButton = (node) => node instanceof HTMLButtonElement && dock.contains(node) ? node : null;
+  const moveHighlight = () => {
+    const button = pointerButton || focusButton;
+    if (!button || !button.isConnected) {
+      dock.removeAttribute("data-highlight");
+      return;
+    }
+    const root = dock.getBoundingClientRect();
+    const rect = button.getBoundingClientRect();
+    dock.style.setProperty("--dock-highlight-x", `${rect.left - root.left}px`);
+    dock.style.setProperty("--dock-highlight-y", `${rect.top - root.top}px`);
+    dock.style.setProperty("--dock-highlight-width", `${rect.width}px`);
+    dock.style.setProperty("--dock-highlight-height", `${rect.height}px`);
+    dock.dataset.highlight = "true";
+  };
+
+  dock.addEventListener("pointermove", (event) => {
+    if (event.pointerType === "touch") return;
+    const button = validButton(event.target.closest("button[data-action]"));
+    if (button !== pointerButton) {
+      pointerButton = button;
+      moveHighlight();
+    }
+  });
+  dock.addEventListener("pointerleave", () => {
+    pointerButton = null;
+    moveHighlight();
+  });
+  dock.addEventListener("focusin", (event) => {
+    focusButton = validButton(event.target);
+    moveHighlight();
+  });
+  dock.addEventListener("focusout", (event) => {
+    if (!dock.contains(event.relatedTarget)) {
+      focusButton = null;
+      moveHighlight();
+    }
+  });
+  window.addEventListener("resize", () => {
+    if (dock.hasAttribute("data-highlight")) moveHighlight();
+  });
+
+  // Arc-style pressed states must match real application state.
+  const syncFullscreen = () => {
+    const active = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
+    dock.querySelector('[data-action="fullscreen"]').setAttribute("aria-pressed", String(active));
+  };
+  document.addEventListener("fullscreenchange", syncFullscreen);
+  document.addEventListener("webkitfullscreenchange", syncFullscreen);
+  syncFullscreen();
+}
+
 function setupInput() {
   window.addEventListener("keydown", onKeyDown);
 
@@ -2433,6 +2500,8 @@ function setupInput() {
   });
   $("#help").addEventListener("click", () => ($("#help").hidden = true));
   $("#blank").addEventListener("click", () => setBlank(state.blank));
+
+  setupArcDock();
 
   // Kaydırma (akıllı tahta / tablet)
   const viewport = $("#viewport");
