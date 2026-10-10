@@ -941,7 +941,7 @@ button {
 .slide--visual-process .body-grid {
   display: flex;
   min-height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -968,7 +968,7 @@ button {
 .slide--visual-reference .body-grid {
   display: flex;
   min-height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -1952,6 +1952,7 @@ button {
 /* QA ile ortak görev/odak hiyerarşisi; türlerin kendi içerik geometrisi korunur. */
 .slide--modern-companion .body-grid {
   flex-direction: column;
+  justify-content: flex-start;
   gap: 0;
 }
 
