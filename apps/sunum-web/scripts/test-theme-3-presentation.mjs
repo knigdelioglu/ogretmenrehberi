@@ -319,6 +319,10 @@ function verifyProductionCatalog() {
     "encrypted catalog retains both Venn claims");
   assert.equal(publishedSteps.get("s230-q1")?.content?.items, undefined,
     "published Venn replaces duplicate numbered-card fallback");
+  assert.equal(publishedSteps.get("s235-q16")?.content?.options_on_next_click, true,
+    "p.235 q16 staging flag survives production catalog build and encryption");
+  assert.equal(publishedSteps.get("s235-q16")?.content?.options?.length, 5,
+    "p.235 q16 all five options survive publication");
   assert.equal(publishedSteps.get("s231-q3")?.content?.table?.rows.length, 5,
     "production catalog preserves the complete concept table");
   assert.equal(publishedSteps.get("s232-veli-chart")?.content?.table?.rows.length, 5,
@@ -701,8 +705,27 @@ async function runProductionBrowserChecks(production) {
       if (label !== "V") await next();
     }
     await openAnswer("T3-P235-Q16");
-    assert.deepEqual(await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map(el=>el.innerText)"),
-      ["A","B","C","D","E"], "p.235 original answer options remain on one screen");
+    const q16Phase = () => client.evaluate(`(() => ({
+      choices: [...document.querySelectorAll('#canvas .presentation-choice__letter')].map(el => el.innerText.trim()),
+      promptCompact: Boolean(document.querySelector('#canvas .qa-context > .prompt.is-small')),
+      promptInContext: Boolean(document.querySelector('#canvas .qa-context > .prompt')),
+      choicesInFocus: document.querySelectorAll('#canvas .qa-focus .presentation-choice').length,
+      question: document.querySelector('#canvas .qa-context > .prompt')?.innerText ?? "",
+      sourceLinks: document.querySelectorAll('#canvas .source-link').length
+    }))()`);
+    const q16First = await q16Phase();
+    assert.deepEqual(q16First.choices, [], "p.235 q16 first slide shows only the question");
+    assert.equal(q16First.promptCompact, false, "p.235 q16 question starts at the usual large size");
+    assert.ok(q16First.promptInContext && q16First.question.includes("Esra") &&
+      q16First.question.includes("tezkire"), "full original question is preserved");
+    view = await next();
+    const q16Second = await q16Phase();
+    assert.deepEqual(q16Second.choices, ["A", "B", "C", "D", "E"],
+      "p.235 q16 choices appear together after exactly one click");
+    assert.equal(q16Second.promptCompact, true, "p.235 q16 prompt moves up and shrinks with choices");
+    assert.equal(q16Second.choicesInFocus, 5,
+      "p.235 q16 choices render in the modern QA focus region, below the compact prompt");
+    assert.ok(!view.answer, "p.235 q16 correct answer stays hidden when options first appear");
     console.log("PASS production browser: p.231–235 tables, choices, progressive decisions, stable assessment geometry and five passages.");
   } finally {
     client?.close();
@@ -792,6 +815,8 @@ function verifyPedagogicalEdits() {
   assert.equal(step("s233-q11").content.table_review.mode, "correction");
   assert.ok(!/Tablo A/u.test(step("s233-q10").content.lead), "question 10 must not leak correct table");
   assert.ok(!/Tablo B/u.test(step("s233-q11").content.lead), "question 11 must not leak group matching");
+  assert.equal(step("s235-q16").content.options_on_next_click, true,
+    "p.235 q16 requires a question-only first slide and a separate choices slide");
   for (const [id, page, number] of [
     ["s233-q9", p233, "9"],
     ["s235-q16", p235, "16"]
