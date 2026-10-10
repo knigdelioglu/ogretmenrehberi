@@ -636,6 +636,54 @@ function verifyPedagogicalEdits() {
     "the student must infer the main connection before the answer opens");
   assert.match(step("s231-q4").prompt, /sözlü olarak ifade ediniz/u);
   assert.match(answerById.get("T3-P231-Q03").answer_sections.Nesnellik, /gözlemlenebilir ve doğrulanabilir/u);
+  const p233 = readJson(path.join(bookRoot, "pages/p233.json"));
+  const p234 = readJson(path.join(bookRoot, "pages/p234.json"));
+  const p235 = readJson(path.join(bookRoot, "pages/p235.json"));
+  const sourceTable = (page, id) => {
+    const table = page.blocks.find(block => block.id === id);
+    return { columns: table.columns, rows: table.rows };
+  };
+  for (const id of ["s233-scoring", "s233-q10", "s233-q11"]) {
+    const tables = step(id).content.tables;
+    assert.deepEqual(tables.map(({ title, columns, rows }) => ({ title, columns, rows })), [
+      { title: "Tablo A", ...sourceTable(p233, "G11-T3-P233-TABLE01") },
+      { title: "Tablo B", ...sourceTable(p233, "G11-T3-P233-TABLE02") }
+    ], id + ": textbook biography statements are complete and unmodified");
+  }
+  assert.equal(step("s233-q10").content.table_review.mode, "score");
+  assert.equal(step("s233-q11").content.table_review.mode, "correction");
+  assert.ok(!/Tablo A/u.test(step("s233-q10").content.lead), "question 10 must not leak correct table");
+  assert.ok(!/Tablo B/u.test(step("s233-q11").content.lead), "question 11 must not leak group matching");
+  for (const [id, page, number] of [
+    ["s233-q9", p233, "9"],
+    ["s235-q16", p235, "16"]
+  ]) {
+    const original = page.blocks.find(block => block.type === "question" && block.question_number === number);
+    assert.deepEqual(step(id).content.options, original.options,
+      id + ": all five original A–E options are projected");
+  }
+  assert.deepEqual(step("s234-q13").content.table.columns, ["Cümleler", "Evet", "Hayır", "Bilgi yok"]);
+  assert.deepEqual(step("s234-q13").content.table.rows,
+    sourceTable(p234, "G11-T3-P234-TABLE01").rows,
+    "all eight original assessment statements and blank response cells are retained");
+  assert.equal(step("s234-q13").content.table.review, "checks");
+  assert.equal(step("s234-q13").content.table.review_reasons.length, 8);
+  assert.equal(step("s235-source").content.excerpts.length, 5,
+    "source reading retains five independent Roman-numeral excerpts");
+  assert.deepEqual(step("s235-source").content.excerpts,
+    p235.blocks.filter(block => block.type === "quote").map(({ label, text }) => ({ label, text })),
+    "all source excerpts match the printed textbook exactly");
+  assert.ok(!/hayat bilgisi|kurmaca anlatım/iu.test(step("s235-source").content.lead),
+    "reading screen does not preclassify the passages");
+  for (const [id, page] of [["s234-aile", 234], ["s235-q16", 235]]) {
+    const source = step(id).content.sources[0];
+    assert.equal(Number(source.url.match(/#page=(\d+)$/u)[1]), page,
+      "remote verified MEB PDF opens its printed page, without local PDF offset");
+  }
+  assert.ok(step("s234-q14").prompt.includes("sözlü olarak açıklayınız"),
+    "original oral-response instruction is retained");
+  assert.ok(!/yalnızlık ilişkisi/iu.test(JSON.stringify(step("s234-mustafa").content.items)),
+    "Fuzuli interpretation waits until after the student reads the passage");
   const words = step("s191-spell").content.items;
   assert.deepEqual(words, ["zatürree", "fevkalâdelik", "ilân", "telâştan", "eksilmiyen"],
     "five printed spellings are presented without treating correct circumflex forms as errors");
