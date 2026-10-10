@@ -37,11 +37,20 @@ assert.ok(core.includes(appUrl), "the versioned app entry is precached");
 assert.ok(worker.includes(`sunum-${buildVersion}`), "service worker cache version matches the app build");
 
 const qaFontAsset = "assets/fonts/InterVariable.woff2";
-const sourceStyles = fs.readFileSync(path.join(sourceRoot, "styles.css"), "utf8");
-assert.ok(sourceStyles.includes('./assets/fonts/InterVariable.woff2'), "QA CSS references the local Inter variable font");
+const stylesheetUrls = [...indexHtml.matchAll(/<link\s+rel="stylesheet"\s+href="([^"]+)"/g)].map((match) => match[1]);
+const foundationStyles = fs.readFileSync(path.join(sourceRoot, "base.css"), "utf8");
+const presentationStyles = fs.readFileSync(path.join(sourceRoot, "presentation.css"), "utf8");
+assert.deepEqual(stylesheetUrls.map((url) => new URL(url, "https://offline.test/").pathname.split("/").at(-1)),
+  ["base.css", "presentation.css"], "the foundation loads before the presentation component layer");
+assert.ok(foundationStyles.includes('./assets/fonts/InterVariable.woff2'), "foundation CSS references the local Inter variable font");
+assert.ok(presentationStyles.includes(".slide--presentation"), "presentation CSS provides the shared ORDS slide layer");
 assert.ok(fs.existsSync(path.join(sourceRoot, qaFontAsset)), "local Inter variable font exists in source assets");
 assert.ok(core.includes(qaFontAsset), "local Inter variable font is explicitly precached");
 assert.ok(fs.existsSync(path.join(distRoot, qaFontAsset)), "Inter variable font is copied to the production build");
+for (const cssFile of ["base.css", "presentation.css"]) {
+  assert.ok(core.some((url) => url.split("?")[0] === cssFile), `presentation stylesheet dependency is explicitly precached: ${cssFile}`);
+  assert.ok(fs.existsSync(path.join(distRoot, cssFile)), `presentation stylesheet dependency is copied to the production build: ${cssFile}`);
+}
 
 for (const request of builtGraph.requests) {
   assert.ok(core.includes(request), `local module dependency is precached: ${request}`);

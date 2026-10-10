@@ -50,6 +50,16 @@ assert.deepEqual(continuedEvidence[0], {
 assert.deepEqual(continuedEvidence.slice(1), [
   { quotes: ["Alıntı 2"] }, { quotes: ["Alıntı 3"] }, { quotes: ["Alıntı 4"] }
 ], "Evidence continuation pages do not repeat the same answer and source cards");
+const segmentedEvidence = evidenceContinuationPages(
+  { answerText: "Cevap" },
+  { first: "Birinci kaynak", second: "İkinci kaynak" },
+  [{ values: ["Alıntı"] }],
+  [{ first: "Birinci kaynak" }, { second: "İkinci kaynak" }]
+);
+assert.deepEqual(segmentedEvidence, [
+  { answerText: "Cevap", evidenceSections: { first: "Birinci kaynak" }, quotes: ["Alıntı"] },
+  { evidenceSections: { second: "İkinci kaynak" } }
+], "Long paired evidence continues in order without losing its answer or repeating the answer card");
 
 const vocabularyGroups = attachVocabularyAnswerFragments([
   { terms: [["çağdaş", "Aynı dönemde yaşayan."], ["özge", "Başka."]] },

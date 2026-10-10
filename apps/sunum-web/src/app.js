@@ -642,7 +642,7 @@ function textWeight(value) {
 
 // Sunum parçalarının karakter bütçesi. Ölçeklendirme sonucu ekranda gerçekten
 // sığıp sığmadığı ölçülür (calibrate); sığmayan katman daha küçük bütçeyle yeniden bölünür.
-const BUDGET_STEPS = [1, 0.8, 0.64, 0.5, 0.4, 0.32, 0.25, 0.2];
+const BUDGET_STEPS = [1, 0.8, 0.64, 0.5, 0.4, 0.32, 0.25, 0.2, 0.16, 0.12, 0.1];
 const PPTX_LAYOUT_BUDGET = 0.8;
 const budgetCache = new Map();
 let calibrating = false;
@@ -844,7 +844,15 @@ function webAnswerLayerPages(step, b = 1) {
       maxChars: 700 * b
     });
     if (!quotePages.length) quotePages.push({ values: [] });
-    evidenceContinuationPages(pairedAnswer, evidenceSections, quotePages).forEach((page, index) => pages.push({
+    const evidenceEntries = Object.entries(evidenceSections)
+      .flatMap((entry) => splitEntry(entry, 1050 * b));
+    const evidencePageGroups = evidenceEntries.length
+      ? chunkByBudget(evidenceEntries, {
+        maxItems: scaledItems(3, b),
+        maxChars: 1050 * b
+      }).map((group) => Object.fromEntries(group.values))
+      : [];
+    evidenceContinuationPages(pairedAnswer, evidenceSections, quotePages, evidencePageGroups).forEach((page, index) => pages.push({
       ...page,
       title: "Cevap ve metinden kanıt",
       pageId: `${unit.id}:evidence:${index + 1}`
@@ -1364,12 +1372,35 @@ function stepSlide(lesson, step) {
   };
   const pageMarker = view.pages.length > 1 ? ` · ${view.index + 1}/${view.pages.length}` : "";
 
-  // Üst şerit
-  const no = questionNo(a?.question_no);
+  // The header carries the lesson location; prompt and reveal labels stay in
+  // the content area so the same instructional cue is not repeated twice.
+  const rawQuestionNo = typeof a?.question_no === "string" ? a.question_no.trim() : a?.question_no;
+  const no = questionNo(rawQuestionNo);
+  const numericQuestionNo = Boolean(no && /^\d/.test(String(rawQuestionNo ?? "").trim()));
+  const sourceLabel = typeof rawQuestionNo === "string" ? rawQuestionNo : "";
+  const duplicateSourceLabel = !numericQuestionNo && sourceLabel && [step.prompt, step.heading]
+    .filter(Boolean)
+    .some((text) => text.trim() === sourceLabel || text.trim().startsWith(sourceLabel));
+  const visibleNo = duplicateSourceLabel ? null : no;
+  const pageLabel = step.page ? `s. ${String(step.page).replace("-", "–")}` : "Ders";
+  const headerContext = [lesson.title, pageLabel, step.heading]
+    .filter(Boolean)
+    .join(" · ");
+  const questionCategory = rawQuestionNo
+    ? "Soru"
+    : step.layout === "vocabulary"
+      ? "Söz varlığı"
+      : step.layout === "comparison"
+        ? "Karşılaştırma"
+        : taskLabel(step, lesson.theme) || "Soru";
   const questionBadge = h(
     "span",
     { class: "tag qa-question" },
-    h("span", { class: "tag__no" }, no ? `SORU · ${no}` : "SORU")
+    h("span", { class: "tag__category" }, questionCategory),
+    visibleNo ? h("span", {
+      class: `tag__no${numericQuestionNo ? "" : " tag__context"}`,
+      title: String(rawQuestionNo)
+    }, ` · ${visibleNo}`) : null
   );
   const top = h(
     "header",
@@ -1379,18 +1410,14 @@ function stepSlide(lesson, step) {
       : step.layout === "process"
         ? h("span", { class: "tag process-tag" },
           h("span", { class: "process-tag__category" }, "Süreç"),
-          no ? h("span", { class: "tag__no process-tag__type" }, no) : null)
-        : h("span", { class: "tag" }, step.layout === "assessment" ? "Değerlendirme" : step.layout === "reference" ? "Bilgi" : taskLabel(step, lesson.theme), no ? h("span", { class: "tag__no" }, no) : null),
+          visibleNo ? h("span", { class: `tag__no process-tag__type${numericQuestionNo ? "" : " tag__context"}`, title: String(rawQuestionNo) }, visibleNo) : null)
+        : h("span", { class: "tag" },
+          h("span", { class: "tag__category" }, step.layout === "assessment" ? "Değerlendirme" : step.layout === "reference" ? "Bilgi" : taskLabel(step, lesson.theme)),
+          visibleNo ? h("span", { class: `tag__no${numericQuestionNo ? "" : " tag__context"}`, title: String(rawQuestionNo) }, visibleNo) : null),
     h(
       "span",
-      { class: "where", title: modernQuestionLayout
-        ? `${lesson.title} · s. ${String(step.page).replace("-", "–")}${step.heading ? ` · ${step.heading}` : ""}`
-        : `s. ${String(step.page).replace("-", "–")}${step.heading ? ` · ${step.heading}` : ""}${viewKey !== "content" || view.pages.length > 1 ? ` · ${page.title || viewNames[viewKey]}${pageMarker}` : ""}` },
-      modernQuestionLayout ? h("b", {}, lesson.title) : null,
-      modernQuestionLayout ? "  ·  " : "",
-      h("b", {}, `s. ${String(step.page).replace("-", "–")}`),
-      step.heading ? `  ·  ${step.heading}` : "",
-      !modernQuestionLayout && (viewKey !== "content" || view.pages.length > 1) ? `  ·  ${page.title || viewNames[viewKey]}${pageMarker}` : ""
+      { class: "where", title: `${headerContext}${pageMarker}` },
+      h("b", {}, pageLabel)
     )
   );
 
@@ -1572,7 +1599,7 @@ function stepSlide(lesson, step) {
   const processClass = step.layout === "process" ? " slide--visual-process" : "";
   const assessmentClass = step.layout === "assessment" ? " slide--visual-assessment" : "";
   const referenceClass = step.layout === "reference" ? " slide--visual-reference" : "";
-  return h("div", { class: `slide${qaClasses}${companionClass}${structureClass}${processClass}${assessmentClass}${referenceClass}` }, top, h("div", { class: "slide__body" }, bodyInner), foot);
+  return h("div", { class: `slide slide--presentation${qaClasses}${companionClass}${structureClass}${processClass}${assessmentClass}${referenceClass}`, "data-layout": step.layout }, top, h("div", { class: "slide__body" }, bodyInner), foot);
 }
 
 // ============================================================
