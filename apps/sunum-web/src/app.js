@@ -961,7 +961,7 @@ function contentSources(content) {
       const separator = source.label.indexOf(" — ");
       const context = separator >= 0 ? source.label.slice(0, separator) : "Kaynak";
       const action = separator >= 0 ? source.label.slice(separator + 3) : source.label;
-      const isBookReference = !isDownload && /^Ders kitabı\b/i.test(context);
+      const isBookReference = !isDownload && /^Ders kitabı(?:\s|,|$)/i.test(context);
 
       // Inspired by Arc's quiet action cards: a visible destination, a clear
       // secondary action and tactile feedback, without changing link behavior.
