@@ -976,7 +976,6 @@ function contentSources(content) {
           ? h("span", { class: "source-link__icon source-link__icon--book", "aria-hidden": "true", html: bookIcon })
           : h("span", { class: "source-link__icon", "aria-hidden": "true" }, isDownload ? "↓" : "↗"),
         h("span", { class: "source-link__copy" },
-          isBookReference ? h("span", { class: "source-link__eyebrow" }, "KİTAP REFERANSI") : null,
           h("span", { class: "source-link__context" }, context),
           h("span", { class: "source-link__action" }, action)
         ),
