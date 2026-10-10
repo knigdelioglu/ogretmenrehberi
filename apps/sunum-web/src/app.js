@@ -2432,8 +2432,11 @@ function setupArcDock() {
   let pointerButton = null;
   let focusButton = null;
   const validButton = (node) => node instanceof HTMLButtonElement && dock.contains(node) ? node : null;
+  // A focus can predate setup or stay on the same button across pointer changes.
+  // Read the browser's current focus as a fallback instead of relying on focusin alone.
+  focusButton = validButton(document.activeElement);
   const moveHighlight = () => {
-    const button = pointerButton || focusButton;
+    const button = pointerButton || focusButton || validButton(document.activeElement);
     if (!button || !button.isConnected) {
       dock.removeAttribute("data-highlight");
       return;
