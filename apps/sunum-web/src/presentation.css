@@ -758,7 +758,8 @@
     opacity var(--ords-duration-instant) var(--ords-ease-standard);
 }
 
-.dock--arc[data-highlight="true"] .dock__highlight { opacity: 1; }
+.dock--arc[data-highlight="true"] .dock__highlight,
+.dock--arc:focus-within .dock__highlight { opacity: 1; }
 
 .dock--arc button {
   position: relative;
