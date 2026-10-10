@@ -999,6 +999,15 @@ function contentLayerPages(step, b = 1) {
     images: content.images,
     sources: index === 0 ? content.sources : undefined
   });
+  // Preserve both competing source tables together; passage readings get one complete
+  // source excerpt per page, never mixed with an unshown multiple-choice solution.
+  if (content.tables?.length) {
+    return [meta({ content: { tables: content.tables, table_review: content.table_review } }, 0)];
+  }
+  if (content.excerpts?.length) {
+    return content.excerpts.map((excerpt, index) =>
+      meta({ content: { excerpts: [excerpt] }, title: `Parça ${excerpt.label}` }, index));
+  }
   // Source tables and multiple-choice sets must remain intact on one slide.
   // Their source rows/options are small enough to fit together, even on narrow screens.
   if (content.table?.rows?.length) {
@@ -1063,6 +1072,61 @@ function contentLayerPages(step, b = 1) {
 
 function answerLayerPages(step, b = 1) {
   const answer = step.answer || {};
+  const assessmentTable = step.content?.table;
+  if (assessmentTable?.review === "checks" && Array.isArray(assessmentTable.rows)) {
+    const decisions = assessmentTable.rows.map((row, index) => {
+      const value = String(answer.answer_sections?.[String(index + 1)] ?? "");
+      const result = value.match(/^(Evet|Hayır|Bilgi yok)\s*[—–-]/u)?.[1];
+      if (!result || !assessmentTable.columns.includes(result)) {
+        throw new Error(`Değerlendirme yanıtı eşleştirilemedi: ${step.id}/${index + 1}`);
+      }
+      return result;
+    });
+    return Array.from({ length: assessmentTable.rows.length + 1 }, (_, count) => ({
+      title: "Cevap",
+      responseTable: {
+        ...assessmentTable,
+        rows: assessmentTable.rows.map((row, index) => {
+          const reason = assessmentTable.review_reasons[index];
+          const shown = index < count;
+          return [
+            {
+              text: row[0] + (shown ? ` — ${reason}` : ""),
+              reserve: `${row[0]} — ${reason}`
+            },
+            ...assessmentTable.columns.slice(1).map(column =>
+              shown && decisions[index] === column ? "✓" : "")
+          ];
+        })
+      }
+    }));
+  }
+  const tableReview = step.content?.table_review;
+  if (tableReview && step.content?.tables?.length) {
+    const target = step.content.tables.find(table => table.title === `Tablo ${tableReview.target}`);
+    if (!target) throw new Error(`Değerlendirme tablosu yok: ${step.id}`);
+    const sections = answer.answer_sections ?? {};
+    const scores = new Map([...sections["Doğru puanlar"] ?? [], ...sections["Yanlış puan"] ?? []]
+      .map(entry => String(entry).split(":").map(part => part.trim())));
+    const feedback = target.rows.map(([name]) =>
+      tableReview.mode === "score"
+        ? `${scores.get(name) ?? "Puan belirtilmedi"} puan`.replace(" puan puan", " puan")
+        : (typeof sections[name] === "string" ? `Düzeltme: ${sections[name]}` : "Doğru açıklama."));
+    const steps = target.rows.length + 2;
+    return Array.from({ length: steps }, (_, stage) => ({
+      title: "Tabloların değerlendirilmesi",
+      responseTables: step.content.tables.map(table =>
+        table.title !== target.title ? table : {
+          ...table,
+          rows: table.rows.map(([name, statement], index) => [name, {
+            text: statement + (index < stage ? ` — ${feedback[index]}` : ""),
+            reserve: `${statement} — ${feedback[index]}`
+          }])
+        }),
+      responseConclusion: answer.answer,
+      conclusionVisible: stage > target.rows.length
+    }));
+  }
   // Fill an authored source table progressively instead of losing its row context.
   const table = step.content?.table;
   if (table?.reveal_by_row && answer.answer_sections && !Array.isArray(answer.answer_sections)) {
@@ -1237,42 +1301,55 @@ function currentView(step) {
 
 function renderContent(step, content = step.content, itemOffset = 0) {
   if (!content || step.layout === "vocabulary") return null;
+  if (content.tables?.length) {
+    return h("div", { class: "presentation-table-grid" },
+      content.tables.map(table => h("section", { class: "presentation-table-group" },
+        h("h2", { class: "presentation-table-group__title" }, table.title),
+        renderContent(step, { table })
+      ))
+    );
+  }
+  if (content.excerpts?.length) {
+    return h("div", { class: "presentation-excerpts" },
+      content.excerpts.map(excerpt => h("article", { class: "presentation-excerpt" },
+        h("h2", {}, `Parça ${excerpt.label}`),
+        h("blockquote", {}, excerpt.text)
+      ))
+    );
+  }
   if (content.table?.rows?.length) {
     const table = content.table;
-    // Reserve each definition's final height even before it becomes visible.
-    // The same measurements apply to the original blank task table and every answer stage.
     const definitions = step.content?.table?.reveal_by_row && step.answer?.answer_sections;
     const reserveByTerm = definitions && !Array.isArray(definitions)
       ? new Map(Object.entries(definitions).map(([term, definition]) =>
         [term.toLocaleLowerCase("tr"), String(definition)]))
       : null;
-    const renderCell = (cell, index, row) => {
-      if (index === 0) return h("th", { scope: "row" }, cell);
+    const renderCell = (cell, index, row, rowIndex) => {
       const structured = cell && typeof cell === "object" && !Array.isArray(cell);
       const visibleText = String(structured ? cell.text ?? "" : cell ?? "");
+      const assessmentReserve = table.review === "checks" && index === 0 && table.review_reasons?.[rowIndex]
+        ? `${row[0]} — ${table.review_reasons[rowIndex]}`
+        : null;
       const finalText = String(structured ? cell.reserve ?? visibleText
-        : reserveByTerm?.get(String(row[0]).toLocaleLowerCase("tr")) ?? visibleText);
-      if (!finalText) {
-        return h("td", { class: "presentation-table__empty" }, "—");
-      }
+        : assessmentReserve ?? reserveByTerm?.get(String(row[0]).toLocaleLowerCase("tr")) ?? visibleText);
       const blank = !visibleText.trim();
-      return h("td", { class: blank ? "presentation-table__empty" : "" },
-        h("div", { class: "presentation-table__cell" },
-          h("span", {
-            class: "presentation-table__measure",
-            "aria-hidden": "true"
-          }, finalText),
-          h("span", {
-            class: `presentation-table__value${blank ? " presentation-table__value--placeholder" : ""}`
-          }, blank ? "—" : visibleText)
-        )
-      );
+      const placeholder = table.review === "checks" && index > 0 ? "○" : "—";
+      const contents = !finalText
+        ? placeholder
+        : h("div", { class: "presentation-table__cell" },
+            h("span", { class: "presentation-table__measure", "aria-hidden": "true" }, finalText),
+            h("span", {
+              class: `presentation-table__value${blank ? " presentation-table__value--placeholder" : ""}`
+            }, blank ? placeholder : visibleText)
+          );
+      const props = { class: blank ? "presentation-table__empty" : "" };
+      return index === 0 ? h("th", { ...props, scope: "row" }, contents) : h("td", props, contents);
     };
     return h("div", { class: "presentation-table-wrap" },
-      h("table", { class: "presentation-table" },
-        h("thead", {}, h("tr", {}, table.columns.map((column) => h("th", { scope: "col" }, column)))),
-        h("tbody", {}, table.rows.map((row) =>
-          h("tr", {}, row.map((cell, index) => renderCell(cell, index, row)))
+      h("table", { class: `presentation-table${table.review === "checks" ? " presentation-table--checks" : ""}` },
+        h("thead", {}, h("tr", {}, table.columns.map(column => h("th", { scope: "col" }, column)))),
+        h("tbody", {}, table.rows.map((row, rowIndex) =>
+          h("tr", {}, row.map((cell, index) => renderCell(cell, index, row, rowIndex)))
         ))
       )
     );
@@ -1645,9 +1722,17 @@ function stepSlide(lesson, step) {
   }
 
   if (viewKey === "answer" && !isVocab) {
-    if (page.responseTable) {
+    if (page.responseTable || page.responseTables) {
+      const conclusion = page.responseConclusion
+        ? h("div", { class: "presentation-conclusion" },
+            h("span", { class: "presentation-conclusion__measure", "aria-hidden": "true" }, page.responseConclusion),
+            h("span", { class: "presentation-conclusion__value" },
+              page.conclusionVisible ? page.responseConclusion : ""))
+        : null;
       main.append(panel("answer", answerLabel(step, lesson.theme),
-        renderContent(step, { table: page.responseTable }), fresh("answer")));
+        [renderContent(step, page.responseTables
+          ? { tables: page.responseTables }
+          : { table: page.responseTable }), conclusion], fresh("answer")));
     } else if (page.hideValues) {
       main.append(renderSections(page.sections, step.sections_layout, { hideValues: true }));
     } else if (page.answerText || page.sections) {

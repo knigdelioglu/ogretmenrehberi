@@ -589,7 +589,68 @@ async function runProductionBrowserChecks(production) {
     await client.send("Page.navigate", { url: `${root}/#/${assessmentLesson.lesson_slug}/${chartIndex + 1}` });
     await until(() => client.evaluate("document.querySelectorAll('#canvas .presentation-table tbody tr').length === 5"),
       "Orhan Veli table visible with all five ratios");
-    console.log("PASS production browser: intact p.231 concept table, both five-choice questions, p.232 ratio table; other Theme 3 reveal scenarios.");
+    // Biographical contest: both original tables are visible before answering.
+    await openAnswer("T3-P233-Q10");
+    assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-table-grid .presentation-table').length"), 2,
+      "p.233 question 10 starts with both source tables");
+    view = await advanceUntil(v => v.answer.includes("Biyografinin amacı"), "p.233 answer-scoring table");
+    const scoringGeometry = await client.evaluate("(() => { const t=document.querySelector('#canvas .panel--answer .presentation-table');return {width:t.offsetWidth,height:t.offsetHeight,rows:[...t.querySelectorAll('tbody tr')].map(x=>x.offsetHeight)};})()");
+    assert.ok(!view.answer.includes("+5 puan"), "first score is hidden until next click");
+    view = await next();
+    assert.ok(view.answer.includes("+5 puan"), "the first biography row score appears on the next click");
+    assert.deepEqual(await client.evaluate("(() => { const t=document.querySelector('#canvas .panel--answer .presentation-table');return {width:t.offsetWidth,height:t.offsetHeight,rows:[...t.querySelectorAll('tbody tr')].map(x=>x.offsetHeight)};})()"),
+      scoringGeometry, "scoring rows retain final heights during reveal");
+
+    await openAnswer("T3-P233-Q11");
+    assert.equal(await client.evaluate("document.querySelectorAll('#canvas .presentation-table-grid .presentation-table').length"), 2,
+      "p.233 question 11 also keeps both source tables visible");
+    view = await advanceUntil(v => v.answer.includes("Tarafsızlık"), "p.233 correction table");
+    assert.ok(!view.answer.includes("Düzeltme:"), "corrections must initially remain hidden");
+    view = await next();
+    assert.ok(view.answer.includes("Doğru açıklama"), "first biography definition is assessed before corrections");
+
+    await openAnswer("T3-P233-Q09");
+    assert.deepEqual(await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map(el=>el.innerText)"),
+      ["A","B","C","D","E"], "p.233 multiple-choice options display in full");
+
+    await openAnswer("T3-P234-Q13");
+    view = await advanceUntil(v => v.answer.includes("Bilgi vermek amaçlanmıştır."), "p.234 empty decision matrix");
+    const matrix = () => client.evaluate(`(() => {
+      const p=document.querySelector('#canvas .panel--answer');
+      const t=p.querySelector('.presentation-table');
+      return {panelHeight:p.offsetHeight,tableHeight:t.offsetHeight,
+        rowHeights:[...t.querySelectorAll('tbody tr')].map(row=>row.offsetHeight),
+        checkmarks:[...t.querySelectorAll('tbody td')].filter(cell=>cell.innerText.includes('✓')).length,
+        reserve:[...t.querySelectorAll('tbody th .presentation-table__measure')].length};
+    })()`);
+    const zero = await matrix();
+    assert.equal(zero.checkmarks, 0, "assessment starts with no revealed decisions");
+    assert.equal(zero.reserve, 8, "eight eventual explanations reserve their final row heights");
+    for (let count = 1; count <= 8; count += 1) {
+      view = await next();
+      const measured = await matrix();
+      assert.equal(measured.checkmarks, count, `decision ${count} is revealed only after its click`);
+      for (const key of ["panelHeight", "tableHeight"]) {
+        assert.ok(Math.abs(measured[key] - zero[key]) <= 1, `decision ${count} keeps ${key} stable`);
+      }
+      assert.deepEqual(measured.rowHeights, zero.rowHeights,
+        `decision ${count} preserves every table-row height`);
+    }
+
+    const assessment = production.generatedTheme.find(l => l.lesson_slug === "degerlendirme-230-235");
+    const readingIndex = assessment.steps.findIndex(s => s.id === "s235-source");
+    await client.send("Page.navigate", {url: `${root}/#/${assessment.lesson_slug}/${readingIndex+1}`});
+    await until(() => client.evaluate("Boolean(document.querySelector('#canvas .presentation-excerpt'))"),
+      "p.235 passage I visible");
+    for (const label of ["I","II","III","IV","V"]) {
+      assert.equal(await client.evaluate("document.querySelector('#canvas .presentation-excerpt h2')?.innerText"),
+        `Parça ${label}`, "full original passage " + label + " appears before choices");
+      if (label !== "V") await next();
+    }
+    await openAnswer("T3-P235-Q16");
+    assert.deepEqual(await client.evaluate("Array.from(document.querySelectorAll('#canvas .presentation-choice__letter')).map(el=>el.innerText)"),
+      ["A","B","C","D","E"], "p.235 original answer options remain on one screen");
+    console.log("PASS production browser: p.231–235 tables, choices, progressive decisions, stable assessment geometry and five passages.");
   } finally {
     client?.close();
     if (browser.exitCode === null) { browser.kill("SIGTERM"); await Promise.race([new Promise((resolve) => browser.once("exit", resolve)), sleep(2500)]); }
@@ -636,6 +697,54 @@ function verifyPedagogicalEdits() {
     "the student must infer the main connection before the answer opens");
   assert.match(step("s231-q4").prompt, /sözlü olarak ifade ediniz/u);
   assert.match(answerById.get("T3-P231-Q03").answer_sections.Nesnellik, /gözlemlenebilir ve doğrulanabilir/u);
+  const p233 = readJson(path.join(bookRoot, "pages/p233.json"));
+  const p234 = readJson(path.join(bookRoot, "pages/p234.json"));
+  const p235 = readJson(path.join(bookRoot, "pages/p235.json"));
+  const sourceTable = (page, id) => {
+    const table = page.blocks.find(block => block.id === id);
+    return { columns: table.columns, rows: table.rows };
+  };
+  for (const id of ["s233-scoring", "s233-q10", "s233-q11"]) {
+    const tables = step(id).content.tables;
+    assert.deepEqual(tables.map(({ title, columns, rows }) => ({ title, columns, rows })), [
+      { title: "Tablo A", ...sourceTable(p233, "G11-T3-P233-TABLE01") },
+      { title: "Tablo B", ...sourceTable(p233, "G11-T3-P233-TABLE02") }
+    ], id + ": textbook biography statements are complete and unmodified");
+  }
+  assert.equal(step("s233-q10").content.table_review.mode, "score");
+  assert.equal(step("s233-q11").content.table_review.mode, "correction");
+  assert.ok(!/Tablo A/u.test(step("s233-q10").content.lead), "question 10 must not leak correct table");
+  assert.ok(!/Tablo B/u.test(step("s233-q11").content.lead), "question 11 must not leak group matching");
+  for (const [id, page, number] of [
+    ["s233-q9", p233, "9"],
+    ["s235-q16", p235, "16"]
+  ]) {
+    const original = page.blocks.find(block => block.type === "question" && block.question_number === number);
+    assert.deepEqual(step(id).content.options, original.options,
+      id + ": all five original A–E options are projected");
+  }
+  assert.deepEqual(step("s234-q13").content.table.columns, ["Cümleler", "Evet", "Hayır", "Bilgi yok"]);
+  assert.deepEqual(step("s234-q13").content.table.rows,
+    sourceTable(p234, "G11-T3-P234-TABLE01").rows,
+    "all eight original assessment statements and blank response cells are retained");
+  assert.equal(step("s234-q13").content.table.review, "checks");
+  assert.equal(step("s234-q13").content.table.review_reasons.length, 8);
+  assert.equal(step("s235-source").content.excerpts.length, 5,
+    "source reading retains five independent Roman-numeral excerpts");
+  assert.deepEqual(step("s235-source").content.excerpts,
+    p235.blocks.filter(block => block.type === "quote").map(({ label, text }) => ({ label, text })),
+    "all source excerpts match the printed textbook exactly");
+  assert.ok(!/hayat bilgisi|kurmaca anlatım/iu.test(step("s235-source").content.lead),
+    "reading screen does not preclassify the passages");
+  for (const [id, page] of [["s234-aile", 234], ["s235-q16", 235]]) {
+    const source = step(id).content.sources[0];
+    assert.equal(Number(source.url.match(/#page=(\d+)$/u)[1]), page,
+      "remote verified MEB PDF opens its printed page, without local PDF offset");
+  }
+  assert.ok(step("s234-q14").prompt.includes("sözlü olarak açıklayınız"),
+    "original oral-response instruction is retained");
+  assert.ok(!/yalnızlık ilişkisi/iu.test(JSON.stringify(step("s234-mustafa").content.items)),
+    "Fuzuli interpretation waits until after the student reads the passage");
   const words = step("s191-spell").content.items;
   assert.deepEqual(words, ["zatürree", "fevkalâdelik", "ilân", "telâştan", "eksilmiyen"],
     "five printed spellings are presented without treating correct circumflex forms as errors");
