@@ -1364,7 +1364,7 @@ presentationBrowserSuite: {
 
     // Native Arc Floating Button Group: shared highlight follows pointer and
     // focus without stealing the real slide-navigation keyboard bindings.
-    const arcDock = await page.evaluate(`(() => {
+    const arcDock = await page.evaluate(`(async () => {
       const dock=document.querySelector('#dock'),buttons=[...dock.querySelectorAll('button[data-action]')];
       const highlight=dock.querySelector('.dock__highlight');
       const prev=buttons.find(button=>button.dataset.action==='prev');
@@ -1388,11 +1388,14 @@ presentationBrowserSuite: {
       const moved=state();
       pointer(dock,'pointerleave');
       const cleared=state();
-      help.focus();
-      const focused={...state(),active:document.activeElement?.getAttribute('data-action')||document.activeElement?.tagName,
-        helpVisible:help.getClientRects().length>0, viewportHidden:document.querySelector('#viewport').hidden,
-        menuHidden:document.querySelector('#menu').hidden, focusedTag:document.activeElement?.outerHTML.slice(0,180),
-        focusedMatches:document.activeElement===help};
+      // Keyboard focus is deliberately moved to a DIFFERENT button than
+      // the last hovered one: a stale highlight position would fail.
+      prev.focus();
+      await new Promise(resolve=>setTimeout(resolve,180));
+      const focused={...state(),visible:Number.parseFloat(getComputedStyle(highlight).opacity)>0.5,
+        focusWithin:dock.matches(':focus-within'),
+        active:document.activeElement?.getAttribute('data-action')||document.activeElement?.tagName,
+        focusedMatches:document.activeElement===prev};
       help.blur();
       const before=document.documentElement.dataset.theme,pressedBefore=theme.getAttribute('aria-pressed');
       theme.click();
@@ -1409,7 +1412,10 @@ presentationBrowserSuite: {
     assert.ok(Math.abs(arcDock.hovered.width-arcDock.prevWidth)<=1, "Arc highlight matches the hovered button width");
     assert.ok(Math.abs(arcDock.moved.x-arcDock.hovered.x)>=30, "Arc highlight tracks another action");
     assert.equal(arcDock.cleared.shown, false, "Arc highlight disappears after pointer leaves");
-    assert.equal(arcDock.focused.shown, true, "Arc highlight follows keyboard focus: " + JSON.stringify(arcDock.focused));
+    assert.equal(arcDock.focused.focusWithin, true, "Arc dock registers keyboard focus");
+    assert.equal(arcDock.focused.visible, true, "Arc highlight is visibly rendered on focus: " + JSON.stringify(arcDock.focused));
+    assert.ok(Math.abs(arcDock.focused.x-arcDock.hovered.x)<=2,
+      "Arc highlight moves back to the keyboard-focused control, not the last hover: " + JSON.stringify(arcDock.focused));
     assert.notEqual(arcDock.theme.before, arcDock.theme.toggled, "Arc mode button still switches theme");
     assert.equal(arcDock.theme.restored, arcDock.theme.before, "Arc mode button restores theme without losing context");
     assert.notEqual(arcDock.theme.pressedBefore, arcDock.theme.pressedAfter, "Arc mode announces pressed state");
