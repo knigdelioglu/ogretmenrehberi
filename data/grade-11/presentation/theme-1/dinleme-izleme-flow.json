@@ -18,14 +18,14 @@
       "source_record_id": "T01-S0064",
       "answer_id": "T1-P59-Q01",
       "layout": "question",
-      "thinking": "Günlük bir konuşmada aynı iletiyi iki farklı söyleyişle kurun; karşı tarafta oluşturdukları etkiyi karşılaştırın."
+      "thinking": "Aynı isteği sert ve nazik iki farklı söyleyişle kurun. Sözcük seçimi ve ses tonu, karşı tarafta oluşabilecek etkiyi nasıl değiştirebilir?"
     },
     {
       "id": "s59-q2",
       "source_record_id": "T01-S0065",
       "answer_id": "T1-P59-Q02",
       "layout": "question",
-      "thinking": "Şiirde “biz” diye anılan varlık ile yıldız, değirmen ve bozkır imgeleri arasında nasıl bir bağ kurulduğunu ayrı ayrı inceleyin."
+      "thinking": "Bir çobanın, değirmene gelen suyun ve bozkırdaki bulut gölgesinin işlevlerini ayrı ayrı düşünün. Şair bu üç imgeyle nasıl bir ortak duygu veya tutum kuruyor olabilir?"
     },
     {
       "id": "s59-q3",
@@ -39,14 +39,14 @@
       "source_record_id": "T01-S0067",
       "answer_id": "T1-P61-Q01",
       "layout": "question",
-      "thinking": "Her hitabı tarih-yer bilgisi ve ilk cümleyle birlikte okuyun; tahmininizi sayfada görülen ipuçlarıyla sınırlayın."
+      "thinking": "Altı mektupta hitabı, ilk cümleyi ve kaynak künyesini birlikte inceleyin. Alıcısı açıkça belirtilenlerle yalnızca tahmin edilebilenleri ayırın."
     },
     {
       "id": "s61-q2",
       "source_record_id": "T01-S0068",
       "answer_id": "T1-P61-Q02",
       "layout": "question",
-      "thinking": "Hitaplarda seçilen sözcükleri ve devamındaki cümle tonunu karşılaştırın; yakınlık biçimlerinin nasıl değiştiğine bakın."
+      "thinking": "“Vefakâr”, “canım”, “muhterem” ve “sayın” sözcükleri hangi yakınlık veya saygı derecelerini düşündürüyor? Farkı somut hitaplarla açıklayın."
     },
     {
       "id": "s63-q1",
@@ -66,7 +66,7 @@
       "source_record_id": "T01-S0071",
       "answer_id": "T1-P63-Q03",
       "layout": "question",
-      "thinking": "Mektuptaki etkileyici bulduğunuz sözü seçin; seçiminizi sözcük, imge veya cümle kuruluşundan bir dayanakla açıklayın."
+      "thinking": "Seçtiğiniz sözü etkileyici kılan şey bir benzetme, tekrar, karşıtlık veya anlatılan durum olabilir mi? Metindeki ayrıntıyla gerekçelendirin."
     },
     {
       "id": "s63-q4",
@@ -184,7 +184,8 @@
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=65"
           }
         ]
-      }
+      },
+      "thinking": "Altı sözcüğü verilen beş tanımla karşılaştırın. Hangi eşleştirmelerden eminsiniz; anlam kutusu olmayan sözcüğü nasıl belirliyorsunuz?"
     },
     {
       "id": "s66-q1",
@@ -308,7 +309,7 @@
       "source_record_id": "T01-S0091",
       "answer_id": "T1-P68-Q02",
       "layout": "question",
-      "thinking": "68. sayfadaki Hatice-Hasan konuşmasını ve 69. sayfadaki devamı inceleyin. Her iletişim aksaklığı yorumunuzu kısa bir söz ya da konuşma anıyla metinden kanıtlayın."
+      "thinking": "68. sayfadaki Hatice-Hasan konuşmasıyla 69. sayfadaki devamı birlikte okuyun. “Çok iyi”, “tez” ve tarih düzeltmelerinin iletişimde neye yol açtığını metindeki sözlerle açıklayın."
     },
     {
       "id": "s70-q3",
@@ -330,7 +331,7 @@
       "source_record_id": "T01-S0093",
       "answer_id": "T1-P70-Q04",
       "layout": "question",
-      "thinking": "Belirlediğiniz her engel için konuşmada neyin değişmesi gerektiğini düşünün; önerinin hangi aksaklığı gidereceğini ayrı ayrı açıklayın."
+      "thinking": "“Çok iyi” karşılığını, “tez” yanlış anlaşılmasını veya Rıdvan'ın araya girmesini seçin; konuşmayı daha yapıcı biçimde yeniden kurup hangi engeli giderdiğinizi belirtin."
     },
     {
       "id": "s71-solutions",
@@ -339,7 +340,8 @@
       "layout": "comparison",
       "density": "compact",
       "prompt": "Çözüm yollarını karşılaştırın",
-      "prompt_mode": "VERIFIED_SUMMARY"
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "thinking": "Bir iletişim sorununa iki farklı çözüm önerin. Hangi çözümün neden daha etkili olabileceğini Paydos'taki somut söz veya davranışla karşılaştırın."
     },
     {
       "id": "s71-q1",
