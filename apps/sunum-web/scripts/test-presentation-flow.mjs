@@ -46,6 +46,26 @@ assert.ok(olvidoMedia?.content?.sources?.some((source) => source.url === olvidoR
   "Printed P83 Olvido should link to its own verified EBA video");
 assert.ok(olvidoMedia?.content?.sources?.some((source) => source.url.endsWith("#page=83")),
   "P83 should retain its current official web textbook page link");
+
+const otherThemeQrManifest = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/source/qr-media-intake-2026-10-08.json"), "utf8"));
+for (const [flowName, stepId, printedPage, fileName] of [
+  ["tema-girisi-flow.json", "s88-media-reminder", 88, "19XU49LO.mp4"],
+  ["orhun-abideleri-flow.json", "s113-media-reminder", 113, "19XU49LT.mp4"]
+]) {
+  const sourceFlow = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/presentation/theme-2", flowName), "utf8"));
+  const step = sourceFlow.steps.find((entry) => entry.id === stepId);
+  const qrRecord = otherThemeQrManifest.records.find((entry) => entry.file_name === fileName);
+  assert.equal(qrRecord?.printed_page, printedPage, `${stepId} must use the actual book QR page`);
+  assert.ok(step?.content?.sources?.some((entry) => entry.url === qrRecord.book_qr.eba_url),
+    `${stepId} must open the correct official EBA QR target`);
+  assert.ok(step.content.sources.some((entry) => entry.url.endsWith(`#page=${printedPage}`)),
+    `${stepId} must retain its current textbook PDF link`);
+}
+assert.notEqual(
+  otherThemeQrManifest.records.find((entry) => entry.file_name === "19XU4CVR.mp4").book_qr.eba_content_id,
+  otherThemeQrManifest.records.find((entry) => entry.file_name === "19XU49LO.mp4").book_qr.eba_content_id,
+  "P67 communication timeline must not be reused as the P88 toy/festival video");
+
 const qrCommunication = flowStep("s67-qr-communication");
 assert.match(qrCommunication.content?.lead ?? "", /İçeriği izleyin/u,
   "QR reference should show a simple student-facing instruction");

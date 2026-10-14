@@ -1,4 +1,12 @@
 import assert from "node:assert/strict";
+import { spawn } from "node:child_process";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { setTimeout as sleep } from "node:timers/promises";
+import { fileURLToPath } from "node:url";
+import { resolveWebPresentation, validateWebPresentationIndex } from "../../lesson-player/scripts/web-presentation.mjs";
+
 // QR-media audit: exact textbook QR identities, not similar-named MP4 files.
 
 const qrFlowRoot = new URL("../../../data/grade-11/presentation/theme-2/", import.meta.url);
@@ -18,13 +26,6 @@ assert.notEqual(qrManifest.records.find((x) => x.file_name === "19XU4CVR.mp4")?.
   qrManifest.records.find((x) => x.file_name === "19XU49LO.mp4")?.book_qr.eba_url,
   "P67 communication animation must not be confused with P88 festival video");
 
-import { spawn } from "node:child_process";
-import fs from "node:fs";
-import os from "node:os";
-import path from "node:path";
-import { setTimeout as sleep } from "node:timers/promises";
-import { fileURLToPath } from "node:url";
-import { resolveWebPresentation, validateWebPresentationIndex } from "../../lesson-player/scripts/web-presentation.mjs";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
