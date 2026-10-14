@@ -31,6 +31,13 @@ assert.match(s63Email.thinking, /mektup yazma ve gönderme/u,
   "P63 prompt should focus on changing the letter-writing process");
 assert.match(s66Email.thinking, /dinlediğiniz metin/u,
   "P66 prompt should call for evidence from the multimedia text");
+const mediaRegistry = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/source/qr-sources.json"), "utf8"));
+const mediaUrl = (id) => mediaRegistry.sources.find((source) => source.source_id === id)?.permanent_link;
+assert.ok(flowStep("s64-listen").content?.sources?.some((source) => source.url === mediaUrl("QR-EBA-29BF4F293D53")), "P64 main video must link to its verified EBA identity");
+assert.ok(flowStep("s64-listen").content?.sources?.some((source) => source.url.endsWith("#page=64")), "P64 must retain the correctly numbered official web textbook PDF");
+assert.ok(flowStep("s67-qr-communication").content?.sources?.some((source) => source.url === mediaUrl("QR-EBA-BFB2729458DF")), "P67 supplementary animation must link to its own verified EBA identity");
+assert.ok(flowStep("s67-qr-communication").content?.sources?.some((source) => source.url.endsWith("#page=67")), "P67 must retain the correctly numbered official web textbook PDF");
+assert.notEqual(mediaUrl("QR-EBA-29BF4F293D53"), mediaUrl("QR-EBA-BFB2729458DF"), "Two QR videos must have distinct EBA IDs");
 const qrCommunication = flowStep("s67-qr-communication");
 assert.match(qrCommunication.content?.lead ?? "", /İçeriği izleyin/u,
   "QR reference should show a simple student-facing instruction");

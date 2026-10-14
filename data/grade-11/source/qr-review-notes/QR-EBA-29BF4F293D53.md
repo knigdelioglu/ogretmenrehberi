@@ -4,7 +4,7 @@
 
 ## İnceleme sınırı
 
-TRT Aklıselim söyleşi videosundan **zaman damgalı ekran görüntülerindeki altyazı/alt bant yazıları** okunmuştur. Bunlar **ekranda gösterilen ifadeler**dir; konuşmacıların sözcüğü sözcüğüne ses transkripti olduğuna dair iddia değildir. Videonun tüm sözlü içeriği çözümlenmedi; ana düşünce ve tam özet bu kısmi veriden kesinleştirilmemelidir.
+TRT Aklıselim söyleşi videosundan **zaman damgalı ekran görüntülerindeki altyazı/alt bant yazıları** okunmuştur. Bunlar **ekranda gösterilen ifadeler**dir; konuşmacıların sözcüğü sözcüğüne ses transkripti olduğuna dair iddia değildir. 01:04 ve 01:14 gibi farklı noktalar aynı bant ifadesini gösterebilir; zamanlar ifadenin başlangıcını değil, doğrulanmış örnek kareleri belirtir. Videonun tüm sözlü içeriği çözümlenmedi; ana düşünce ve tam özet bu kısmi veriden kesinleştirilmemelidir.
 
 | Yaklaşık zaman | Ekranda birebir görülen ifade | Kullanım |
 | --- | --- | --- |

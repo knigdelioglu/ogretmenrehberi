@@ -2,7 +2,7 @@
 
 **EBA kaynağı:** `QR-EBA-BFB2729458DF` · **Dosya:** `19XU4CVR.mp4` · **Basılı sayfa:** 67 · **Süre:** 01:38,600. **Yüklenen dosyanın SHA-256:** `234198772baad09c0dc0cf5ee1a5e9d0ca9bff3567e58f04eaedcf447dbec559` (kayıtlı QR dosyasıyla birebir eşleşir).
 
-Bu, kitapta **ders dışı İletişim ve E-Posta etkinliğine** eklenmiş *ayrı* bir video kaynağıdır. Aynı sayfadaki 6–9. soruların esas izlemesi olan `19XU49LL.mp4` ile birleştirilmemelidir.
+Bu video **basılı s.67'deki “Metni Anlayalım” bölümünün sonunda**, 9. sorunun yazma alanının yanında bulunan ek karekodun kaynağıdır. Aynı sayfadaki 6–9. soruların esas izleme metni olan `19XU49LL.mp4` ile birleştirilmemelidir; zaman çizelgesi, iletişim araçlarını karşılaştırmak için yardımcı malzeme olarak kullanılabilir.
 
 ## Görsel kanıt
 
