@@ -2829,10 +2829,16 @@ presentationBrowserSuite: {
   screen = await openStep("degerlendirme-230-235", "s233-q11");
   assert.ok(!screen.text.includes("özellikle Tarafsızlık ve Kronoloji") && !screen.text.includes("hataları düzeltin"), "ISSUE-062 avoids naming the answer in the task");
   screen = await openStep("degerlendirme-230-235", "s235-q16");
-  assert.ok(!screen.text.includes("Doğru cevap: C"), "ISSUE-064 answer stays hidden initially");
+  assert.ok(!screen.text.includes("Doğru cevap: C") && !screen.text.includes("I, IV, V"),
+    "ISSUE-064 question opens without answer or options");
+  const classificationOptions = await next();
+  assert.ok(["I, II, III", "I, III, V", "I, IV, V", "II, III, IV", "II, IV, V"]
+    .every((option) => classificationOptions.includes(option)) &&
+    !classificationOptions.includes("Doğru cevap: C"),
+  "ISSUE-064 first advance reveals all five choices but not the answer");
   const classificationThinking = await next();
   assert.ok(classificationThinking.includes("Düşünürken") && !classificationThinking.includes("Uygun."),
-    "ISSUE-064 the authored thinking prompt precedes source classifications");
+    "ISSUE-064 authored thinking follows staged options and precedes classifications");
   const classificationResults = [];
   for (let index = 0; index < 5; index += 1) classificationResults.push(await next());
   const classificationMarkers = ["Şem’î’nin mahlası", "Kurmaca bir roman kişisinin yaşantısı",
