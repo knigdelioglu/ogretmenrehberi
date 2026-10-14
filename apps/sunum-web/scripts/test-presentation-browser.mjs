@@ -2247,9 +2247,12 @@ presentationBrowserSuite: {
     usesModernQuestionLayout(step));
   const excludedComparisonCases = allComparisonCases.filter(({ step }) =>
     !usesModernQuestionLayout(step));
-  assert.equal(allComparisonCases.length, 88, "production catalog contains 88 comparison steps");
-  assert.equal(eligibleComparisonCases.length, 75, "75 comparisons with answer reveals meet semantic QA shell eligibility");
-  assert.equal(excludedComparisonCases.length, 13, "13 comparisons without answer reveals remain outside QA shell eligibility");
+  // Total comparison count is already checked against the source catalog above.
+  // Do not pin it a second time: authoring may legitimately change a layout.
+  assert.equal(eligibleComparisonCases.length, 75,
+    "75 prompt-bearing comparison answers meet semantic QA shell eligibility");
+  assert.equal(excludedComparisonCases.length + eligibleComparisonCases.length, sourceComparisonCount,
+    "all source comparisons are either QA-eligible or explicitly excluded");
   for (const { lesson, step, slide } of allComparisonCases) {
     const eligible = usesModernQuestionLayout(step);
     await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/${slide}` });
