@@ -590,10 +590,17 @@ async function runProductionBrowserChecks(production) {
     assert.equal(baseline.reserved, 5, "every future definition reserves its final layout height");
     assert.deepEqual(baseline.visibleValues, Array(5).fill("—"), "all explanations remain visually hidden");
     for (let revealed = 1; revealed <= 5; revealed += 1) {
-      view = await next();
-      const current = await conceptTableMetrics();
+      let current = await conceptTableMetrics();
+      // The presentation's Next control scrolls overflowing content before
+      // changing its reveal stage. Count actual row reveals, not scroll clicks.
+      for (let attempts = 0; attempts < 8 && current.filled < revealed; attempts += 1) {
+        view = await next();
+        current = await conceptTableMetrics();
+        assert.ok(current.filled <= revealed,
+          "one navigation stage never reveals more than one new table row");
+      }
       assert.equal(current.filled, revealed,
-        "each subsequent click reveals exactly one additional concept, in table order");
+        "each concept opens in table order after any necessary content scroll");
       assert.equal(current.reserved, 5, "all five definitions keep their layout reservations");
       for (const key of ["panelHeight", "tableHeight", "tableWidth"]) {
         assert.ok(Math.abs(current[key] - baseline[key]) <= 1,
