@@ -511,8 +511,17 @@ async function runProductionBrowserChecks(production) {
     }
     assert.ok(view.hasEvidence && !view.overflow, "grouped audio answer/evidence fits at 1440px");
     await client.send("Emulation.setDeviceMetricsOverride", { width: 800, height: 900, deviceScaleFactor: 1, mobile: false });
-    view = await state();
-    assert.ok(view.hasEvidence && view.answer && !view.overflow, "grouped audio answer/evidence pair remains usable at 800px");
+    // At this point the 1440px traversal is on the *last* evidence continuation.
+    // Continuation pages intentionally contain evidence only, while the first
+    // evidence page carries the paired answer. Re-enter the question at 800px
+    // and inspect that first paired page rather than requiring the last
+    // continuation to duplicate an already revealed answer.
+    await openAnswer("T3-P218-QH02");
+    view = await advanceUntil((value) => value.hasEvidence &&
+      Boolean(value.answer) && value.evidence.includes("İki aynı renkteki sese"),
+    "grouped audio first paired answer/evidence at 800px", 50);
+    assert.ok(view.hasEvidence && view.answer && !view.overflow,
+      "grouped audio first answer/evidence pair remains usable at 800px");
     await client.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
 
     await openAnswer("T3-P177-Q14");
