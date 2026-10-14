@@ -59,7 +59,7 @@
       "source_record_id": "T01-S0070",
       "answer_id": "T1-P63-Q02",
       "layout": "question",
-      "thinking": "E-postayı başka iletişim araçlarıyla aynı amaçta kullanmayı düşünün; hangi kullanım koşulunun bir aracı seçtireceğini açıklayın."
+      "thinking": "E-postanın hangi özelliklerinin mektup yazma ve gönderme sürecini değiştirdiğini düşünün; yararınızı somut bir kullanım durumuyla açıklayın."
     },
     {
       "id": "s63-q3",
@@ -197,7 +197,7 @@
       "source_record_id": "T01-S0082",
       "answer_id": "T1-P66-Q02",
       "layout": "question",
-      "thinking": "E-postayı mektup, telefon veya yüz yüze iletişimle aynı mesaj üzerinden karşılaştırın; seçiminizi etkileyen koşulu açıklayın."
+      "thinking": "E-postanın başka araçlara göre hangi koşullarda kolaylık sağladığını düşünün; gerekçenizi dinlediğiniz metin ve önceki bilginizden dayanaklarla kurun."
     },
     {
       "id": "s66-q3",
@@ -262,10 +262,10 @@
       "source_record_id": "T01-S0130",
       "layout": "reference",
       "density": "compact",
-      "prompt": "Ders Dışı Etkinlik — İletişim ve E-Posta",
+      "prompt": "Geçmişten Günümüze İletişim Araçları",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu karekod, mağara duvarına yapılan çizimlerden cep telefonuna uzanan iletişim araçlarını sıralayan bağımsız bir görsel zaman çizelgesine yönelir. Videonun ekranındaki on araç etiketi incelendi; tam ses dökümü yapılmadı. Bu kaynak, 66–67. sayfalardaki 'Değişen İletişim Araçlarının Hayatımızdaki Yeri' söyleşisinin yerini tutmaz.",
+        "lead": "İçeriği izleyin ve iletişim araçlarıyla ilgili dikkatinizi çeken unsurları not alın.",
         "sources": [
           {
             "label": "Ders kitabı s.67 — karekodun bulunduğu sayfayı aç",
@@ -308,7 +308,7 @@
       "source_record_id": "T01-S0091",
       "answer_id": "T1-P68-Q02",
       "layout": "question",
-      "thinking": "Hatice ve Hasan’ın konuşmalarını izleyin; sözlerin önceki anlatımla uyumunu ve konuşmanın yönünü değerlendirin."
+      "thinking": "68. sayfadaki Hatice-Hasan konuşmasını ve 69. sayfadaki devamı inceleyin. Her iletişim aksaklığı yorumunuzu kısa bir söz ya da konuşma anıyla metinden kanıtlayın."
     },
     {
       "id": "s70-q3",
@@ -369,7 +369,8 @@
       "source_record_id": "T01-S0098",
       "answer_id": "T1-P72-Q02",
       "layout": "structure",
-      "density": "compact"
+      "density": "compact",
+      "thinking": "Haritadaki Saygı-Nezaket örneğini inceleyin. Tabloda bulduğunuz diğer unsurlardan ikisi arasında yeni bir ilişki kurun ve bu ilişkinin iletişime nasıl yansıdığını gerekçelendirin."
     },
     {
       "id": "s73-q1",

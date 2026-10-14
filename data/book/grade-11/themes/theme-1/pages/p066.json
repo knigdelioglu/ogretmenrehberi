@@ -56,7 +56,14 @@
         "printed_page": 66,
         "pdf_page": 67
       },
-      "order": 3
+      "order": 3,
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": true,
+        "related_activity_ids": [
+          "G11-T1-P67-ACT01"
+        ]
+      }
     },
     {
       "text": "1. İletişim araçlarının geçmişten bugüne gelişimine yönelik yaptığınız araştırma sonuçlarından hareketle\ndinlediğiniz / izlediğiniz metinle bağlantılı çıkarımlarınızı paylaşınız.",
@@ -117,7 +124,10 @@
         "pdf_page": 67
       },
       "order": 7,
-      "activity_id": "G11-T1-P66-ACT01"
+      "activity_id": "G11-T1-P66-ACT01",
+      "table_ids": [
+        "G11-T1-P66-TABLE01"
+      ]
     },
     {
       "title": "Konu ve tema alanları",
@@ -132,7 +142,7 @@
         ]
       ],
       "related_question_ids": [
-        "G11-T1-P66-Q05"
+        "G11-T1-P66-Q04"
       ],
       "id": "G11-T1-P66-TABLE01",
       "type": "table",
@@ -178,7 +188,6 @@
         "pdf_page": 67
       },
       "table_ids": [
-        "G11-T1-P66-TABLE01",
         "G11-T1-P66-TABLE02"
       ],
       "order": 10,

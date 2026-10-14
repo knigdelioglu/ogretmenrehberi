@@ -18,7 +18,8 @@
       "text": "3. Metinde hangi iletişim engellerinin yer aldığını belirleyiniz ve bunları aşağıdaki kavram haritasında ilgili yerlere yazınız.",
       "question_number": "3",
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "subquestions": [],
       "options": [],
@@ -52,7 +53,7 @@
     {
       "id": "G11-T1-P70-ACT01",
       "type": "activity",
-      "title": "Tartışma ve iletişim kanalları",
+      "title": "Paydos — iletişim engelleri",
       "instruction_ids": [],
       "question_ids": [
         "G11-T1-P70-Q03",
@@ -60,19 +61,27 @@
       ],
       "table_ids": [],
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "source": {
         "printed_page": 70,
         "pdf_page": 71
       },
-      "order": 3
+      "order": 3,
+      "continuation": {
+        "from_previous_page": true,
+        "related_activity_ids": [
+          "G11-T1-P69-ACT01"
+        ]
+      }
     },
     {
       "text": "4. Kavram haritasına yazdığınız iletişim engellerini nasıl ortadan kaldırabileceğinize dair çıkarımlarınızı\nnot ediniz.",
       "question_number": "4",
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "subquestions": [],
       "options": [],

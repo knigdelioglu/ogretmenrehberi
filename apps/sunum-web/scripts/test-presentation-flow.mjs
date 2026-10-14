@@ -16,6 +16,32 @@ const getStep = (slug, id) => {
 };
 const stageNames = (items, size) => interleaveStages(groupItems(items, size)).map(({ group, stage }) => `${stage}:${group[0]}`);
 const sources = (step) => step.content?.sources ?? [];
+const dinlemeFlow = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/presentation/theme-1/dinleme-izleme-flow.json"), "utf8"));
+const flowStep = (id) => {
+  const step = dinlemeFlow.steps.find((entry) => entry.id === id);
+  assert.ok(step, `canonical flow step exists: ${id}`);
+  return step;
+};
+
+const s63Email = flowStep("s63-q2");
+const s66Email = flowStep("s66-q2");
+assert.notEqual(s63Email.thinking, s66Email.thinking,
+  "P63 and P66 email questions need distinct thinking prompts for their different purposes");
+assert.match(s63Email.thinking, /mektup yazma ve gönderme/u,
+  "P63 prompt should focus on changing the letter-writing process");
+assert.match(s66Email.thinking, /dinlediğiniz metin/u,
+  "P66 prompt should call for evidence from the multimedia text");
+const qrCommunication = flowStep("s67-qr-communication");
+assert.match(qrCommunication.content?.lead ?? "", /İçeriği izleyin/u,
+  "QR reference should show a simple student-facing instruction");
+assert.doesNotMatch(qrCommunication.content?.lead ?? "", /dökümü|incelendi|yerini tutmaz|QR hedefi/u,
+  "QR reference should not expose audit notes or verification caveats to students");
+assert.match(flowStep("s68-69-q2").thinking, /69\. sayfadaki devamı/u,
+  "Paydos thinking prompt should explicitly include both printed pages");
+assert.match(flowStep("s72-q2").thinking, /Saygı-Nezaket örneğini inceleyin/u,
+  "Concept-map prompt should acknowledge the relation printed in the map");
+assert.match(flowStep("s72-q2").thinking, /diğer unsurlardan ikisi arasında yeni bir ilişki kurun/u,
+  "Concept-map prompt should invite students to justify another relation");
 
 assert.deepEqual(
   insertThinkingReveal(["answer", "evidence"], true),

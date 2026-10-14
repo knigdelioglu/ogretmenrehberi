@@ -66,7 +66,7 @@
       "order": 3
     },
     {
-      "text": "4. “I. Metin”de hangi değerlere ulaşılabilir? Gerekçeleriyle yazınız.\n\n\n\n\nDers Dışı Etkinlik\n\n\n\nAdı İletişim ve E-posta\n\nAmacı Geçmişten günümüze iletişim araçları hakkında araştırma yapabilme\n\nSüresi 1 hafta\n\nAşağıdaki adımları takip ederek araştırmayı yapınız.",
+      "text": "4. “I. Metin”de hangi değerlere ulaşılabilir? Gerekçeleriyle yazınız.",
       "question_number": "4",
       "related_text_ids": [
         "G11-T1-P62-TEXT01",
@@ -81,6 +81,16 @@
         "pdf_page": 64
       },
       "order": 4
+    },
+    {
+      "text": "Ders Dışı Etkinlik",
+      "id": "G11-T1-P63-SH01",
+      "type": "subheading",
+      "source": {
+        "printed_page": 63,
+        "pdf_page": 64
+      },
+      "order": 5
     },
     {
       "title": "Ders dışı etkinlik bilgi tablosu",
@@ -109,12 +119,12 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 5
+      "order": 6
     },
     {
       "id": "G11-T1-P63-ACT01",
       "type": "activity",
-      "title": "İletişim ve e-posta araştırması",
+      "title": "İletişim ve E-posta",
       "instruction_ids": [
         "G11-T1-P63-INST01",
         "G11-T1-P63-INST02",
@@ -123,7 +133,9 @@
         "G11-T1-P63-INST05"
       ],
       "question_ids": [],
-      "table_ids": [],
+      "table_ids": [
+        "G11-T1-P63-TABLE01"
+      ],
       "related_text_ids": [
         "G11-T1-P62-TEXT01",
         "G11-T1-P62-EX01"
@@ -132,7 +144,7 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 6
+      "order": 7
     },
     {
       "text": "1. Öğretmeninizin rehberliğinde üç gruba ayrılınız.",
@@ -144,7 +156,7 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 7
+      "order": 8
     },
     {
       "text": "2. Grup sözcülerini seçiniz.",
@@ -156,7 +168,7 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 8
+      "order": 9
     },
     {
       "text": "3. Aşağıdaki başlıklar doğrultusunda geçmişten bugüne iletişimde\nkullanılan araçlar hakkında okul kütüphanesinden, çevrede bu-\nlunan kütüphanelerden yararlanarak gruplar hâlinde araştırma\nyapınız.\n• Birinci grup: Yazılı İletişim Araçları\n• İkinci grup: Görsel İletişim Araçları\n• Üçüncü grup: İşitsel İletişim Araçları",
@@ -168,7 +180,7 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 9
+      "order": 10
     },
     {
       "text": "4. Araştırmanızı yaparken sorumluluk bilinciyle hareket ediniz.",
@@ -180,7 +192,7 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 10
+      "order": 11
     },
     {
       "text": "5. E-posta türünün ortaya çıkışına kadar hangi iletişim araçlarının yaygın kullanıldığıyla ilgili topladığınız\nbilgileri grup sözcüleri aracılığıyla sınıfta paylaşınız.\nDeğerlendirme\nİletişimin giderek daha hızlı ve pratik hâle gelmesinin olumlu ve olumsuz yönlerini değerlendirerek düşün-\ncelerinizi açıklayınız.",
@@ -192,7 +204,7 @@
         "printed_page": 63,
         "pdf_page": 64
       },
-      "order": 11
+      "order": 12
     }
   ]
 }

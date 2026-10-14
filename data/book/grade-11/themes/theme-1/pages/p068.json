@@ -25,17 +25,6 @@
       "order": 1
     },
     {
-      "caption": "Paydos",
-      "alt_description": "Sayfada haber stüdyosu benzeri bir ortamda kişilerin yer aldığı fotoğraf bulunur.",
-      "id": "G11-T1-P68-VIS01",
-      "type": "visual",
-      "source": {
-        "printed_page": 68,
-        "pdf_page": 69
-      },
-      "order": 2
-    },
-    {
       "id": "G11-T1-P68-ACT01",
       "type": "activity",
       "title": "Birlikte Çalışalım",
@@ -140,7 +129,7 @@
     {
       "id": "G11-T1-P68-ACT02",
       "type": "activity",
-      "title": "Sıra Sizde",
+      "title": "Sıra Sizde — Paydos",
       "instruction_ids": [
         "G11-T1-P68-INST08",
         "G11-T1-P68-INST06"
@@ -150,13 +139,21 @@
       ],
       "table_ids": [],
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "source": {
         "printed_page": 68,
         "pdf_page": 69
       },
-      "order": 11
+      "order": 11,
+      "continuation": {
+        "from_previous_page": false,
+        "to_next_page": true,
+        "related_activity_ids": [
+          "G11-T1-P69-ACT01"
+        ]
+      }
     },
     {
       "text": "Sınıfta altışar kişilik vızıltı grupları oluşturarak aşağıdaki adımları uygulayınız.",
@@ -188,7 +185,8 @@
       "text": "2. Metinde dilin yanlış kullanımından kaynaklı iletişim aksaklıklarını belirleyiniz.",
       "question_number": "2",
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "subquestions": [],
       "options": [],
@@ -215,7 +213,10 @@
         "printed_page": 68,
         "pdf_page": 69
       },
-      "order": 15
+      "order": 15,
+      "stage_directions": [
+        "(...)"
+      ]
     }
   ]
 }

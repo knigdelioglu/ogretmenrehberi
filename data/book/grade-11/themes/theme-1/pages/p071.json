@@ -40,7 +40,7 @@
     {
       "id": "G11-T1-P71-ACT02",
       "type": "activity",
-      "title": "Tartışma ve iletişim kanalları (devam)",
+      "title": "İletişim engellerine çözüm (devam)",
       "instruction_ids": [
         "G11-T1-P71-INST01",
         "G11-T1-P71-INST02"
@@ -50,7 +50,8 @@
         "G11-T1-P71-TABLE01"
       ],
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "source": {
         "printed_page": 71,
@@ -136,7 +137,7 @@
     {
       "id": "G11-T1-P71-ACT01",
       "type": "activity",
-      "title": "İletişim unsurları",
+      "title": "Sıra Sizde — iletişim kanalları",
       "instruction_ids": [],
       "question_ids": [
         "G11-T1-P71-Q01",
@@ -183,7 +184,7 @@
       "order": 9,
       "activity_id": "G11-T1-P71-ACT01",
       "related_activity_ids": [
-        "G11-T1-P61-ACT01"
+        "G11-T1-P64-ACT01"
       ]
     }
   ]

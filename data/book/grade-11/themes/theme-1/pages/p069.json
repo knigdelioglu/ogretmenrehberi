@@ -37,18 +37,25 @@
     {
       "id": "G11-T1-P69-ACT01",
       "type": "activity",
-      "title": "İletişim engelleri",
+      "title": "Paydos (devam)",
       "instruction_ids": [],
       "question_ids": [],
       "table_ids": [],
       "related_text_ids": [
-        "G11-T1-P68-DLG01"
+        "G11-T1-P68-DLG01",
+        "G11-T1-P69-DLG01"
       ],
       "source": {
         "printed_page": 69,
         "pdf_page": 70
       },
-      "order": 2
+      "order": 2,
+      "continuation": {
+        "from_previous_page": true,
+        "related_activity_ids": [
+          "G11-T1-P68-ACT02"
+        ]
+      }
     }
   ]
 }

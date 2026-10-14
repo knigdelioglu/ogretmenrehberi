@@ -1593,6 +1593,11 @@ presentationBrowserSuite: {
     visual = await visualLayoutState();
     expectVisualClasses(visual, ["slide--visual-reference"], "dinleme-izleme/s67-qr-communication");
     assert.ok(referenceOpened.text.includes(sourceReference.step.display_prompt), "source reference keeps its prompt");
+    assert.ok(referenceOpened.text.includes("İçeriği izleyin ve iletişim araçlarıyla ilgili dikkatinizi çeken unsurları not alın."),
+      "s67 QR screen shows the student-facing activity direction");
+    assert.ok(!/dökümü yapılmadı|ekranındaki on araç etiketi incelendi|yerini tutmaz/u.test(referenceOpened.text),
+      "s67 QR screen does not show technical review notes");
+    console.log("[sunum-web] QR reference student-copy regression passed: s67 prompt is concise and audit notes are absent.");
     assert.ok(visual.sources > 0, "source reference keeps its existing source-link list");
     const nextReferenceEntry = sourceReference.lesson.steps[sourceReference.slide];
     await next();

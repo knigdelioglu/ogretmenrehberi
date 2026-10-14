@@ -118,3 +118,77 @@ console.log(
   `Lesson data assertions passed: ${lessons.length} lessons, ` +
   `${lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0)} total steps.`
 );
+
+
+const theme1PagesRoot = path.resolve(repoRoot, "data/book/grade-11/themes/theme-1/pages");
+const readPage = (page) => JSON.parse(fs.readFileSync(path.join(theme1PagesRoot, `p${String(page).padStart(3, "0")}.json`), "utf8"));
+const pageBlock = (page, id) => readPage(page).blocks.find((block) => block.id === id);
+const theme1PageBlocks = Array.from({ length: 15 }, (_, index) => readPage(index + 59).blocks).flat();
+const theme1BlockById = new Map(theme1PageBlocks.map((block) => [block.id, block]));
+assert(theme1BlockById.size === theme1PageBlocks.length,
+  "P59-P73 page block IDs must be unique.");
+const blockReferenceTargets = {
+  activity_ids: "activity", question_ids: "question", table_ids: "table",
+  instruction_ids: "instruction", visual_ids: "visual", related_text_ids: null,
+  related_question_ids: "question", related_instruction_ids: "instruction",
+  related_activity_ids: "activity"
+};
+for (const source of theme1PageBlocks) {
+  for (const [field, expectedType] of Object.entries(blockReferenceTargets)) {
+    for (const id of source[field] ?? []) {
+      const target = theme1BlockById.get(id);
+      assert(target, `${source.id}.${field} must resolve to ${id}.`);
+      if (expectedType) assert(target.type === expectedType,
+        `${source.id}.${field} must reference a ${expectedType} block (${id}).`);
+    }
+  }
+  for (const [field, expectedType] of [["activity_id", "activity"], ["instruction_id", "instruction"]]) {
+    const id = source[field];
+    if (id) assert(theme1BlockById.get(id)?.type === expectedType,
+      `${source.id}.${field} must reference a ${expectedType} block (${id}).`);
+  }
+  if (source.continuation?.related_activity_ids) {
+    for (const id of source.continuation.related_activity_ids) {
+      assert(theme1BlockById.get(id)?.type === "activity",
+        `${source.id}.continuation must reference an activity (${id}).`);
+    }
+  }
+}
+const p60Text = pageBlock(60, "G11-T1-P60-TEXT01");
+assert(p60Text.text.includes("Orhan Seyfi Orhon, Maarif Vekili Hasan Âli Yücel’e Açık Mektup") &&
+  p60Text.continuation.to_next_page === false,
+  "P60 Orhan Seyfi Orhon künyesi tamamlanmalı ve metin gerçek sayfa sınırında bitmeli.");
+assert(pageBlock(62, "G11-T1-P62-EX01").text.endsWith("Saygı ve selam ile..."),
+  "P62 e-posta örneği basılı kapanış ifadesini içermeli.");
+const p63q4 = pageBlock(63, "G11-T1-P63-Q04");
+assert(!p63q4.text.includes("Ders Dışı Etkinlik") &&
+  pageBlock(63, "G11-T1-P63-SH01")?.text === "Ders Dışı Etkinlik" &&
+  pageBlock(63, "G11-T1-P63-ACT01").table_ids.includes("G11-T1-P63-TABLE01"),
+  "P63 Q04 ve Ders Dışı Etkinlik blok sınırları ayrı ve tablo etkinliğe bağlı olmalı.");
+const p66q4 = pageBlock(66, "G11-T1-P66-Q04");
+const p66q5 = pageBlock(66, "G11-T1-P66-Q05");
+assert(p66q4.table_ids?.includes("G11-T1-P66-TABLE01") &&
+  pageBlock(66, "G11-T1-P66-TABLE01").related_question_ids.includes("G11-T1-P66-Q04") &&
+  p66q5.table_ids?.includes("G11-T1-P66-TABLE02") &&
+  pageBlock(66, "G11-T1-P66-TABLE02").related_question_ids.includes("G11-T1-P66-Q05"),
+  "P66 konu/tema ve ana/yardımcı düşünce tabloları karşılıklı doğru sorulara bağlanmalı.");
+const p65Answer = JSON.parse(fs.readFileSync(path.join(teacherBookRoot, "theme-1/answer-bank/part-15-pages-64-67.json"), "utf8"))
+  .entries.find((entry) => entry.question_id === "T1-P65-Q01");
+assert(Object.keys(p65Answer.answer_sections).length === 6 &&
+  ["Tasavvur", "Nörolojik", "Sosyal", "Güdü", "Medeni"].every((term) => p65Answer.answer_sections[term]) &&
+  p65Answer.answer_sections.Muhabbet.includes("eşleşmeyen"),
+  "P65 altı sözcüğü korumalı; beş eşleşen anlam ve eşleşmeyen Muhabbet ayrı kalmalı.");
+const p67 = readPage(67);
+assert(!p67.blocks.some((block) => ["G11-T1-P67-SH01", "G11-T1-P67-SH02"].includes(block.id)) &&
+  p67.blocks.find((block) => block.id === "G11-T1-P67-ACT01").continuation?.related_activity_ids?.includes("G11-T1-P66-ACT01"),
+  "P67 basılı olmayan başlıkları taşımamalı ve P66 Metni Anlayalım etkinliğini sürdürmeli.");
+const paydosIds = ["G11-T1-P68-DLG01", "G11-T1-P69-DLG01"];
+for (const [page, id] of [[68, "G11-T1-P68-Q02"], [70, "G11-T1-P70-Q03"], [70, "G11-T1-P70-Q04"]]) {
+  const refs = pageBlock(page, id).related_text_ids;
+  assert(paydosIds.every((textId) => refs.includes(textId)), `${id} Paydos'un 68-69. sayfa metninin tamamına bağlanmalı.`);
+}
+assert(!readPage(68).blocks.some((block) => block.id === "G11-T1-P68-VIS01"),
+  "P68'de kaynağa dayanmayan stüdyo görseli kaydı bulunmamalı.");
+assert(pageBlock(71, "G11-T1-P71-Q02").related_activity_ids?.includes("G11-T1-P64-ACT01") &&
+  !pageBlock(71, "G11-T1-P71-Q02").related_activity_ids.includes("G11-T1-P61-ACT01"),
+  "P71 Q02 ilgili dinleme/izleme hazırlığına bağlanmalı, mektup etkinliğine değil.");
