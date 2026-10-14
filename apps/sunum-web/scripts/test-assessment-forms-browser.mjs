@@ -17,7 +17,7 @@ const server = spawn(process.execPath, [path.join(appRoot, "scripts/serve.mjs")]
   env: { ...process.env, PORT: String(port) }, stdio: "ignore"
 });
 const browser = spawn(chrome, [
-  "--headless=new", "--no-sandbox", "--disable-gpu", "--disable-popup-blocking", "--no-first-run",
+  "--headless=new", "--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage", "--disable-popup-blocking", "--no-first-run",
   "--remote-allow-origins=*", "--remote-debugging-port=0", `--user-data-dir=${profile}`, "about:blank"
 ], { stdio: "ignore" });
 const clients = [];
@@ -37,7 +37,8 @@ const files = [
   ["afis-atolyesi-298-302", "s302-rubric", "19XU4J2R.docx"]
 ];
 
-async function until(check, label, timeout = 15000) {
+// CI runners may need more time to start headless Chrome and finish heavy slide reflows.
+async function until(check, label, timeout = 30000) {
   const deadline = Date.now() + timeout;
   while (Date.now() < deadline) {
     try {

@@ -202,7 +202,7 @@ for (const answerId of quoteAnswerIds) {
 }
 assert.equal(duplicateQuoteAnswerIds.size, 10, "all ten quote-bearing answer pools are attached to response evidence");
 assert.equal(evidenceSectionCount, 11, "all 11 overlapping answer-bank sections are shown in evidence stages");
-assert.equal(embeddedQuoteCount, 34, "all 34 inline quote repeats are suppressed from the separate quote list");
+assert.equal(embeddedQuoteCount, 35, "all 35 inline quote repeats are suppressed from the separate quote list");
 
 for (const flow of flows) {
   for (const step of flow.steps.filter((candidate) => candidate.answer_id && candidate.layout !== "vocabulary")) {
@@ -289,4 +289,4 @@ assert.equal(answerById.get("T4-P262-PERF01").evidence_quotes[3],
 assert.ok(pageByPrintedNumber.get(257).page_text.includes("öyle bir bina yap ki, bir eşi daha bulunmaya!"),
   "the p.262 evidence quote matches the printed p.257 passage, including punctuation");
 
-console.log("Theme 4 metadata/source QA passed: 72 pages, 14 flows, 237 steps, 143 source records, 164 answers, 93 structured answers, 34 curated summary inclusions, 48 source quotes, 11 evidence sections and 34 inline quotes.");
+console.log("Theme 4 metadata/source QA passed: 72 pages, 14 flows, 237 steps, 143 source records, 164 answers, 93 structured answers, 34 curated summary inclusions, 48 source quotes, 11 evidence sections and 35 inline quotes.");

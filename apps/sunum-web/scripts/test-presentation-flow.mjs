@@ -349,6 +349,7 @@ for (const lesson of lessons.filter((entry) => entry.theme_id === "TEMA_01")) {
     }
   }
 }
+// After the reviewed p.59–73 evidence cleanup, 153 quotes match directly; 9 require line-wrap repair.
 assert.equal(verifiedDirectQuotes, 153, "Theme 1 source quotes match the book JSON after whitespace and list-marker normalization");
 assert.equal(verifiedLineWrappedQuotes, 9, "Remaining quotes match after printed line-wrap repair");
 
