@@ -59,28 +59,51 @@ for (const form of formsIndex.forms.filter((entry) => entry.location_scope === "
   assert.ok(form.remote_pdf_page <= remotePdf.page_count, `${form.form_id}: current remote page range`);
 }
 
+// A local copy and the official web PDF have different page counts and offsets.
+// CURRENT_TEXTBOOK_PDF_PATH accepts either *verified* PDF, without rewriting
+// links to the official web version or weakening their SHA-256 pin.
 const currentPdfPath = process.env.CURRENT_TEXTBOOK_PDF_PATH;
 if (currentPdfPath) {
+  const localManifest = JSON.parse(fs.readFileSync(path.join(
+    repoRoot, "data/book/grade-11/themes/theme-1/manifest.json"
+  ), "utf8"));
+  const localPdf = {
+    sha256: localManifest.source.pdf_sha256,
+    page_count: localManifest.source.pdf_page_count,
+    printed_to_pdf_offset: localManifest.printed_to_pdf_offset
+  };
+  assert.equal(localPdf.printed_to_pdf_offset, 1,
+    "local textbook PDF printed-to-physical-page offset remains +1");
+  assert.equal(localPdf.page_count, 313, "local source PDF has 313 pages");
   const digest = createHash("sha256").update(fs.readFileSync(currentPdfPath)).digest("hex");
-  assert.equal(digest, remotePdf.sha256, "downloaded PDF must match the pinned current MEB source");
+  const matchesRemote = digest === remotePdf.sha256;
+  const matchesLocal = digest === localPdf.sha256;
+  assert.ok(matchesRemote || matchesLocal,
+    "PDF fingerprint must match either the verified 312-page MEB web PDF or the canonical 313-page local textbook");
+  const selected = matchesRemote
+    ? { name: "MEB web", count: remotePdf.page_count, offset: 0 }
+    : { name: "canonical local", count: localPdf.page_count, offset: localPdf.printed_to_pdf_offset };
   const extracted = execFileSync("pdftotext", ["-q", "-layout", currentPdfPath, "-"], {
     encoding: "utf8",
     maxBuffer: 10 * 1024 * 1024
   });
   const pages = extracted.split("\f");
   if (!pages.at(-1)?.trim()) pages.pop();
-  assert.equal(pages.length, remotePdf.page_count, "current PDF page count");
+  assert.equal(pages.length, selected.count, `${selected.name} PDF page count`);
   const checkedPages = [...new Set([
     ...links.map(({ printedPage }) => printedPage),
     ...formsIndex.forms.filter((form) => form.location_scope === "EXTERNAL_OFFICIAL_QR")
       .map((form) => form.remote_pdf_page)
   ])];
-  for (const pageNumber of checkedPages) {
-    const lines = pages[pageNumber - 1].trim().split(/\r?\n/).filter((line) => line.trim());
-    assert.equal(lines.at(-1)?.trim(), String(pageNumber),
-      `current PDF page ${pageNumber} must visibly carry printed page number ${pageNumber}`);
+  for (const printedPage of checkedPages) {
+    const pdfPage = printedPage + selected.offset;
+    assert.ok(pdfPage > 0 && pdfPage <= pages.length,
+      `${selected.name} printed page ${printedPage} maps to valid PDF page ${pdfPage}`);
+    const lines = pages[pdfPage - 1].trim().split(/\r?\n/).filter((line) => line.trim());
+    assert.equal(lines.at(-1)?.trim(), String(printedPage),
+      `${selected.name} PDF page ${pdfPage} must visibly carry printed page number ${printedPage}`);
   }
-  console.log(`[sunum-web] Current MEB PDF source passed: SHA256, ${pages.length} pages and ${checkedPages.length} printed-page targets checked.`);
+  console.log(`[sunum-web] ${selected.name} PDF source passed: SHA256, ${pages.length} pages, ${checkedPages.length} printed-page targets checked (offset ${selected.offset}). Official web links still use printed-page numbering.`);
 } else {
-  console.log("[sunum-web] Current MEB PDF mapping metadata and all 93 printed-page links passed (set CURRENT_TEXTBOOK_PDF_PATH to verify against a downloaded PDF).");
+  console.log("[sunum-web] Current MEB PDF mapping metadata and all 93 printed-page links passed (set CURRENT_TEXTBOOK_PDF_PATH to verify either pinned textbook PDF).");
 }
