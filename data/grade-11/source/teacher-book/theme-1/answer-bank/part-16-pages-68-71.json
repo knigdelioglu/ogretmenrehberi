@@ -15,7 +15,8 @@
         "Örnek Gelecek Senaryoları": [
           "Holografik eş zamanlı iletişim: Uzak mekânlardaki kişilerin üç boyutlu temsil üzerinden toplantı veya derse katılabilmesi.",
           "Zihin-makine arayüzleri: Bazı düşünce veya komutların cihazlara daha doğrudan aktarılabilmesi.",
-          "Yapay zekâ destekli temsilciler: Rutin yazışmaları yürüten, toplantıları özetleyen veya çeviri desteği veren dijital yardımcılar."
+          "Yapay zekâ destekli temsilciler: Rutin yazışmaları yürüten, toplantıları özetleyen veya çeviri desteği veren dijital yardımcılar.",
+          "Giyilebilir artırılmış gerçeklik araçları: Görüşme sırasında ortak görüntü ve açıklamaların kişinin görüş alanına yansıtıldığı bir iletişim ortamı tasarlanabilir."
         ],
         "Olası Fırsatlar": [
           "Uzak uzmanlara ve eğitim ortamlarına erişimi kolaylaştırabilir.",
@@ -51,12 +52,12 @@
       "printed_page": 68,
       "question_no": "2",
       "prompt_summary": "Paydos parçasında dil kullanımından kaynaklanan iletişim aksaklıkları",
-      "answer": "Paydos parçasında dilin yanlış kullanımından doğan aksaklıklar şunlardır: Hasan'ın Hatice'nin sıkıntılarına bağlama uymayan “Çok güzel”, “Çok iyi” sözleriyle karşılık vermesi; “tez” sözcüğünün Rıdvan ve İbrahim tarafından farklı anlamlarda anlaşılması ve Ömer'in İbrahim'i ve analığını küçümseyen sözü. Rıdvan'ın söz kesmesi ve bilgiçlik taslaması da konuşmanın akışını bozar; ancak bu daha çok bir iletişim davranışıdır.",
+      "answer": "Paydos parçasında Hasan’ın sıkıntılı bir anlatıya “Çok güzel”, “Çok iyi” diye karşılık vermesi, “tez” sözünün farklı anlaşılması ve İbrahim ile Ömer’in kırıcı sözleri iletişimi aksatır. Rıdvan’ın araya girerek yaptığı tarih düzeltmeleri ise konuşmayı define meselesinden uzaklaştırır.",
       "answer_sections": {
         "Bağlama uymayan söz seçimi (Hasan)": "Hatice konağın borcunu ve parasızlıklarını anlatırken Hasan “Çok güzel, çok güzel...”, “Çok iyi, çok iyi...”, “Alâ... Alâ...” diyerek duruma uymayan karşılıklar verir. Hatice'nin “İlâhî muhtar efendi bunun neresi iyi...” tepkisi, bu söz seçiminin iletişimi bozduğunu gösterir.",
-        "Çok anlamlı sözcüğün farklı anlaşılması (“tez”)": "Rıdvan “Tez yazdım...” derken akademik bir çalışmayı kasteder; İbrahim ise sözcüğü “çabuk, yakın zamanda” anlamında alarak “Tez söyledi..” karşılığını verir. Aynı sözcüğe farklı anlam yüklenmesi yanlış anlamaya ve güldürüye yol açar.",
-        "Kişiyi küçümseyen söz (Ömer)": "Ömer'in “Analığı da onun gibidir inanmayın!” sözü, anlatılan bilgiyi tartışmak yerine İbrahim'i ve analığını küçümser. Bu kırıcı dil gerginliği artırır.",
-        "Konuşmanın akışını bozan davranış (Rıdvan)": "Rıdvan, konuşanların sözünü keserek tarih düzeltmeleri yapar (Yavuz, Ebussuud Efendi, 450 yıl). Hatice'nin “Nefes vermiyorsun biçarelere” ve “Ukalâlığı bırak” sözleri, bu tutumun asıl konunun anlatılmasını engellediğini gösterir. Bu aksaklık dilin kendisinden çok konuşma davranışından kaynaklanır."
+        "Sözcüğün farklı anlamlarda anlaşılması (“tez”)": "Rıdvan “Tez yazdım...” derken akademik bir çalışmayı kasteder; İbrahim ise “Tez söyledi..” karşılığında çabukluk anlamını kullanır. Sözcüğün aynı biçiminden farklı anlamlar çıkarılması yanlış anlamaya ve güldürüye yol açar.",
+        "Kırıcı ve suçlayıcı dil (İbrahim ve Ömer)": "İbrahim’in “Yalan, aynı asırda değil, bu konakta yaşamış... Sen nereden bileceksin!” sözü suçlayıcıdır. Ömer’in “Analığı da onun gibidir inanmayın!” sözü de İbrahim’i ve analığını küçümser. Kişiye yönelen bu dil tartışmayı sertleştirir.",
+        "Konuşmanın akışını bozan davranış (Rıdvan)": "Rıdvan konuşanların sözünü keserek tarih düzeltmeleri yapar. Hatice’nin “Nefes vermiyorsun biçarelere” ve “Mesele Şeyhülislâmın isminde değil...” sözleri, ayrıntı tartışmasının asıl konu olan define hikâyesinin anlatılmasını geciktirdiğini gösterir. Burada söz kesme, dil seçiminden çok konuşma davranışıyla ilgilidir."
       },
       "evidence_quotes": [
         "Ukalâlığı bırak diyorum Rıdvan. Mesele Şeyhülislâmın isminde değil..."
@@ -77,15 +78,17 @@
           "Söz kesme / konuşmanın akışını bozma — Kanıt: Rıdvan'ın sık sık araya girmesi; Hatice'nin “Nefes vermiyorsun biçarelere” diye uyarması."
         ],
         "Dil ve Anlatımdan Kaynaklı Engeller": [
-          "Çok anlamlı sözcüğün farklı anlaşılması — Kanıt: “Tez yazdım...” / “Tez söyledi...” sözlerinde “tez” sözcüğünün farklı anlamlarda kullanılması.",
-          "Kırıcı ve küçümseyici dil — Kanıt: Ömer'in “Analığı da onun gibidir inanmayın!” sözü."
+          "Sözcüğün farklı anlamlarda anlaşılması — Kanıt: “Tez yazdım...” / “Tez söyledi..” sözlerinde “tez” farklı anlamlarda kullanılır.",
+          "Bağlama uymayan sözler — Kanıt: Hatice maddi sıkıntısını anlatırken Hasan’ın “Çok güzel”, “Çok iyi” karşılıkları vermesi.",
+          "Kırıcı ve suçlayıcı dil — Kanıt: İbrahim’in “Yalan... Sen nereden bileceksin!” ve Ömer’in “Analığı da onun gibidir inanmayın!” sözleri."
         ],
         "Sosyokültürel Farklılıklar": [
           "Bilgi ve ifade düzeyi farklılığına ilişkin ipucu — Kanıt: Rıdvan'ın “tez yazdım” sözü ile Hasan'ın “Hem biz cahil insanlarız. Kusurumuza bakmamalı!” sözü.",
-          "Bu farkın iletişime etkisi yorumlanabilir; ancak kişilerin eğitim geçmişleri metinde verilenden daha ayrıntılı biçimde kesinleştirilmemelidir."
+          "Bu farkın iletişime etkisi yorumlanabilir; ancak kişilerin eğitim geçmişleri metinde verilenden daha ayrıntılı biçimde kesinleştirilmemelidir.",
+          "Aile içi rol ve otoriteye ilişkin ipucu — Hatice’nin “Babanın yerine sen mi geçtin?” sözü, Rıdvan’ın müdahalesini ailedeki rolü üzerinden değerlendirdiğini düşündürür. Bu ayrıntı bütün kuşaklar hakkında genelleme yapmaya yetmez."
         ],
-        "Psikolojik Engeller": "Metinde kişilerin iç niyet ve duyguları açıkça verilmediği için kesin bir psikolojik neden yazmak yerine, varsa gözlenebilir ön yargılı veya küçümseyici yaklaşımı replikle gösterin. Örneğin Ömer'in küçümseyici sözü bu başlıkla ilişkilendirilebilir; bunun nedeni hakkında ayrıca kesin niyet yüklemeyin.",
-        "Fiziksel ve Çevresel Engeller": "Kavram haritasında fiziksel/çevresel engeller için genel örnekler bulunabilir; ancak Paydos parçasında iletişim aksamasını doğrudan açıklayan belirgin bir gürültü veya benzeri fiziksel engel gösterilmemiştir. Bu nedenle bu başlık için “metinde açık örnek yok” denebilir."
+        "Psikolojik Engeller": "Hatice’nin “Parasızlıktan canımız çıkıyor.” sözü yaşadığı maddi sıkıntıyı açıkça gösterir. Bu sıkıntının konuşmadaki gerginliğe etkisi psikolojik boyut açısından yorumlanabilir; ancak kişilere aşağılık veya üstünlük kompleksi gibi tanılar yüklenemez.",
+        "Fiziksel ve Çevresel Engeller": "Kitaptaki kavram haritasında “Gürültü” genel örnek olarak verilmiştir. Paydos parçasında ise eş zamanlı konuşma uğultusu veya dış gürültü açıkça belirtilmez. Söz kesme davranışı tek başına fiziksel gürültü kanıtı sayılmamalıdır; bu başlık için “parçada açık örnek yok” denebilir."
       },
       "explanation": "Temel çalışma sırası: metin kanıtı → iletişim engeli → kavram haritasındaki kategori. Psikolojik veya sosyolojik yorum, bu sınıflandırmanın yerine geçmemelidir.",
       "evidence_quotes": [
@@ -105,7 +108,8 @@
         "Etkin dinleme": "Hasan, Hatice'nin anlattıklarına ezbere “Çok iyi” demek yerine dinlediğini gösteren bir karşılık verebilir: “Banka borcu sizi çok zorlamış, anlıyorum; şimdi define meselesine geçelim mi?”",
         "Söz kesmeme": "Rıdvan, konuşanın sözünü bitirmesini beklemeli; düzeltmek istediği bir bilgi varsa bunu anlatım bittikten sonra, kibar bir dille dile getirmelidir.",
         "Anlamı netleştirme": "Rıdvan “Ben tez derken üniversitede yazdığım araştırmayı kastediyorum.” diyerek sözcüğü açıklayabilir; İbrahim de anlamadığı sözü sorarak netleştirebilir.",
-        "Saygılı dil kullanma": "Ömer, İbrahim'in ailesini küçümsemek yerine anlatılan bilgiyi sorgulayabilir; örneğin “Bu bilgiyi nereden öğrendin?” diye sorarak tartışmayı konu üzerinde tutabilir."
+        "Saygılı dil kullanma": "Ömer, İbrahim'in ailesini küçümsemek yerine anlatılan bilgiyi sorgulayabilir; örneğin “Bu bilgiyi nereden öğrendin?” diye sorarak tartışmayı konu üzerinde tutabilir.",
+        "Konuya odaklanma": "Define hikâyesini anlatma amacı korunmalı; şeyhülislâmın kimliğiyle ilgili ayrıntılar asıl mesajı engelliyorsa sonradan konuşulmak üzere ertelenmelidir."
       },
       "guidance": "Öğrencilerin çözümleri soyut bırakmayıp sahnedeki diyalogları 'Doğrusu nasıl söylenmeliydi?' şeklinde somutlaştırmaları sağlanmalıdır.",
       "source_locator": "basılı s.68-70 / PDF s.69-71 — Sıra Sizde soru 4"
@@ -118,12 +122,12 @@
       "prompt_summary": "İletişim sorunlarına yönelik çözüm yollarını tartışıp karşılaştırma",
       "answer": "Altı kişilik grubunuzda iletişim engellerine karşı farklı çözüm yolları üretip karşılaştırın. Aşağıdaki önerilerden yararlanabilir veya yeni öneriler ekleyebilirsiniz; hangi çözümün daha etkili olduğunu gerekçelendirin.",
       "answer_sections": {
-        "Örnek çözüm 1 — Etkin Dinleme": "Konuşmacıya dikkat vermek, sözünü tamamlamasını beklemek ve uygun geri bildirim vermek.",
-        "Örnek çözüm 2 — Söz Kesmeme ve Sabır": "İtiraz veya düzeltmeyi konuşmanın tamamlanmasının ardından nezaketle iletmek.",
-        "Örnek çözüm 3 — Anlam Netliği": "Çok anlamlı veya teknik bir sözcük karışıklık yaratıyorsa anlamı açıklığa kavuşturmak.",
-        "Örnek çözüm 4 — Saygılı ve Konu Odaklı Tutum": "Kişiliğe, aileye veya sosyal konuma saldırmak yerine konuya odaklanmak.",
-        "Örnek çözüm 5 — Duygusal Farkındalık": "Muhatabın içinde bulunduğu zor durumu fark ederek ses tonu ve yaklaşımı buna göre ayarlamak.",
-        "Örnek çözüm 6 — Ortak Amaç / Moderasyon": "Tali tartışmaları sınırlayıp konuşmayı ana meseleye döndürmek.",
+        "Örnek çözüm 1 — Etkin Dinleme": "Hasan, Hatice’nin borç ve geçim sıkıntısını dikkatle dinleyip “Çok iyi” yerine duruma uygun bir karşılık verebilir.",
+        "Örnek çözüm 2 — Söz Kesmeme ve Sabır": "Rıdvan, tarih bilgisine ilişkin düzeltmelerini konuşmacının sözünü tamamlamasından sonra nezaketle iletebilir.",
+        "Örnek çözüm 3 — Anlam Netliği": "Rıdvan “tez” ile araştırma yazısını kastettiğini açıklayabilir; İbrahim de anlamadığı sözcüğü sorabilir.",
+        "Örnek çözüm 4 — Saygılı ve Konu Odaklı Tutum": "İbrahim ve Ömer, kişiyi veya ailesini küçümsemek yerine bilginin dayanağını sorabilir; “Yalan” yerine “Benim bildiğim kadarıyla...” gibi bir başlangıç kullanabilir.",
+        "Örnek çözüm 5 — Duygusal Farkındalık": "Hatice’nin yaşadığı geçim sıkıntısı dikkate alınarak konuşmanın ses tonu ve verilen karşılıklar ayarlanabilir.",
+        "Örnek çözüm 6 — Ortak Amaç / Moderasyon": "Konuşma define meselesine döndürülebilir; tali tarih tartışması ertelenip herkesin sırasıyla konuşması sağlanabilir.",
         "Örnek Karşılaştırma": "Paydos sahnesinde birçok sorunun dinlememeden doğduğunu gerekçe göstererek etkin dinlemeyi öncelikli bulabilirsiniz. Söz kesmeme, anlamı netleştirme veya saygılı dil kullanımını daha belirleyici görmeniz de mümkündür. Seçiminizi karşılaştırarak açıklayın."
       },
       "guidance": "Örnekleri kişilere zorunlu roller gibi dağıtmayın. Öğrenciden “Bu çözüm hangi somut iletişim sorununu azaltıyor veya ortadan kaldırıyor?” ve “Neden diğer çözümden daha öncelikli olabilir?” sorularına gerekçe vermesini isteyin. Öğretmen tek bir kazanan çözüm dayatmamalıdır.",
@@ -139,15 +143,15 @@
       "answer_sections": {
         "Yüz Yüze İletişim": {
           "Kanal Özelliği": "Sözcüklere ek olarak jest, mimik, göz teması, duruş ve anlık geri bildirim kullanılabilir.",
-          "Dil ve Üslup": "Arkadaş sohbetinde samimi, iş görüşmesi veya resmî toplantıda resmî olabilir; bağlama göre değişir."
+          "Dil ve Üslup": "Açık, saygılı ve yapıcı konuşulmalı; jest ve mimikler sözlerle uyumlu olmalıdır. Samimiyet veya resmiyet düzeyi muhataba ve duruma göre seçilir."
         },
         "Telefon ile İletişim": {
           "Kanal Özelliği": "Görsel beden dili çoğu durumda görünmez; ses tonu, vurgu, duraklama ve açık ifade daha çok önem kazanır.",
-          "Dil ve Üslup": "Samimi de resmî de olabilir. Yanlış anlamayı azaltmak için gerektiğinde teyit soruları kullanılabilir."
+          "Dil ve Üslup": "Anlaşılır telaffuz, uygun ses tonu ve vurgu kullanılmalı; söz kesmeden dinlenmeli, gerektiğinde teyit soruları sorulmalıdır. Üslup amaca ve muhataba göre samimi veya resmî olabilir."
         },
         "E-posta ile İletişim": {
           "Kanal Özelliği": "Yazılı ve çoğu zaman asenkron bir kanaldır; konu başlığı, paragraf düzeni ve açık cümleler yararlıdır.",
-          "Dil ve Üslup": "Kurumsal e-postada resmî/yarı resmî, arkadaşlar arasındaki e-postada samimi olabilir. Kalıcı kayıt bırakabildiği için düşünerek yazmak önemlidir."
+          "Dil ve Üslup": "Uygun hitap, açık konu başlığı ve anlaşılır cümleler kullanılmalı; yazım ve noktalama gözden geçirilmelidir. Kurumsal yazışmada resmî veya yarı resmî, arkadaşlar arasında samimi bir dil seçilebilir."
         }
       },
       "guidance": "“Yüz yüze = samimi, e-posta = resmî” gibi eşitlemelerden kaçının. Öğrenciye aynı kanalın farklı amaç ve muhataplarda nasıl farklı bir üslup gerektirebileceğine örnek kurdurun.",
@@ -162,7 +166,7 @@
       "answer": "Videoyu izledikten sonra dil kullanımını aşağıdaki ölçütlerle değerlendirin. Olumlu veya geliştirilmesi gereken her özellik için videodan somut bir söz, sahne ya da sunum tercihi gösterin.",
       "answer_sections": {
         "Açıklık ve Hedef Kitle": "Cümleler anlaşılır mı? Kullanılan terimler gerektiğinde açıklanıyor mu? Dil hedef kitleye uygun mu?",
-        "Kelime Seçimi ve Terim Kullanımı": "Gereksiz yabancı/ağdalı kullanım var mı? Soyut kavramlar bağlam içinde anlaşılır hâle getiriliyor mu?",
+        "Kelime Seçimi ve Terim Kullanımı": "Söz Varlığımız bölümündeki “tasavvur”, “nörolojik” gibi kavramlar videoda nasıl kullanılıyor ve açıklanıyor? Sözcüklerin anlamayı kolaylaştırdığı veya zorlaştırdığı bir bölümü gerçek örnekle değerlendirin.",
         "Ses Tonu, Vurgu ve Tempo": "Önemli noktalar ses tonu ve duraklamayla destekleniyor mu? Tempo anlamayı ve not almayı kolaylaştırıyor mu?",
         "Görsel–Sözlü Uyum": "Görüntü, grafik veya yazılar konuşulan içeriği gerçekten destekliyor mu; yoksa dikkat dağıtıyor mu?",
         "Gerekçeli Değerlendirme": "Her olumlu veya geliştirilebilir özellik için videodan somut bir söz, sahne ya da sunum tercihi gösterilmelidir."

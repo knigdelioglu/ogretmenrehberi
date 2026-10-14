@@ -349,7 +349,7 @@ for (const lesson of lessons.filter((entry) => entry.theme_id === "TEMA_01")) {
     }
   }
 }
-assert.equal(verifiedDirectQuotes, 172, "Theme 1 source quotes match the book JSON after whitespace and list-marker normalization");
+assert.equal(verifiedDirectQuotes, 153, "Theme 1 source quotes match the book JSON after whitespace and list-marker normalization");
 assert.equal(verifiedLineWrappedQuotes, 9, "Remaining quotes match after printed line-wrap repair");
 
 const karagozQ1 = getStep("karagoz", "s16-q1");

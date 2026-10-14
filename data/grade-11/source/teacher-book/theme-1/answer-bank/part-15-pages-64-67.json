@@ -12,8 +12,8 @@
       "prompt_summary": "Değişen İletişim Araçlarının Hayatımızdaki Yeri için dinleme/izleme amacı belirleme",
       "answer": "Dinleme/izleme amacı başlık ve bölüm bağlamından hareketle belirlenebilir. Örneğin iletişim araçlarının hayatımızdaki yerini anlamak, metnin temel düşüncelerini belirlemek ya da metindeki durumları kendi iletişim alışkanlıklarımızla karşılaştırmak amaçlarından biri veya birkaçı seçilebilir. Video izlendikçe amaç daha özel alt sorularla geliştirilebilir.",
       "answer_sections": {
-        "Örnek amaç 1 — Genel anlamayı geliştirme": "İletişim araçlarıyla ilgili hangi konuların ele alındığını ve metnin temel iletisini belirlemek.",
-        "Örnek amaç 2 — Görüş ve gerekçeleri ayırt etme": "Sunulan düşünceleri, örnekleri ve gerekçeleri fark etmek; dikkat çeken noktaları not etmek.",
+        "Örnek amaç 1 — Genel anlamayı geliştirme": "İletişim araçlarının zaman içinde nasıl değiştiğini ve bu değişimin günlük yaşamla ilişkisini öğrenmek.",
+        "Örnek amaç 2 — Görüş ve gerekçeleri ayırt etme": "Geleneksel ve dijital iletişim araçlarına ilişkin görüşleri ve gerekçeleri karşılaştırmak; dikkat çeken noktaları not etmek.",
         "Örnek amaç 3 — Kişisel bağ kurma": "Metindeki iletişim durumlarını kendi günlük yaşamındaki iletişim alışkanlıklarıyla karşılaştırmak."
       },
       "guidance": "Bunları tek doğru amaç listesi olarak sunmayın. Öğrenci, izleme öncesinde başlık ve bağlama uygun bir amaç seçsin ve bunu bir cümleyle gerekçelendirsin. Video içinde hangi tarihsel araçların, görüşlerin veya kavramların geçeceğini önceden kesinleştirmeyin.",
@@ -25,11 +25,11 @@
       "printed_page": 64,
       "question_no": "2",
       "prompt_summary": "Başlık ve görselden içerik ve tür tahmini",
-      "answer": "Başlık ve varsa karekod görselleri, iletişim araçlarının değişimi ve bunun insan yaşamındaki yeri hakkında tahmin yürütmeye yardım edebilir. Videoyu izleyene kadar içerikteki araçları, grafikleri, tarihî görselleri veya görüşleri kesin bilgi gibi yazmayın.",
+      "answer": "Başlık, iletişim araçlarının değişimi ve insan yaşamındaki etkilerinin ele alınabileceğini düşündürür. Fotoğraftaki stüdyo ortamı ve masa çevresindeki üç kişi, televizyon söyleşisi ya da tartışma programı tahminini destekler. Bu tahminleri izleme sonrasında gerçek içerikle karşılaştırın.",
       "answer_sections": {
-        "İçerik Tahmini": "İletişim araçlarının zaman içinde değişmesi ve bu değişimin günlük yaşama etkileri ele alınabilir.",
-        "Tür / Sunum Tahmini": "Karekodla erişilen görsel-işitsel bir içerik olduğu için bilgilendirici, söyleşi, program veya belgesel benzeri bir çok modlu metin olabilir.",
-        "Tahminin Sınırı": "Videoyu izlemeden belirli araçların, grafiklerin, tarihî fotoğrafların, ses efektlerinin veya belirli görüşlerin kesin olarak yer aldığı söylenemez."
+        "İçerik Tahmini": "İletişim araçlarının zaman içinde değişmesi ve bu değişimin günlük yaşama ve insan ilişkilerine etkileri ele alınabilir.",
+        "Tür / Sunum Tahmini": "Televizyon söyleşisi ya da tartışma programı olabilir; masa çevresindeki kişilerin karşılıklı konuşma düzeni bu tahmini destekler.",
+        "Görselden dayanak": "Stüdyo ortamı, masa çevresindeki üç kişi, kitaplar, not kâğıtları, yer küre ve arka plandaki harfler görülür. Bunlar belirli konuşmacıların uzmanlık alanını veya programdaki bütün görüşleri tek başına göstermez."
       },
       "guidance": "Öğrenciden “Bu tahmini başlığın hangi sözcüğü veya görselin hangi ayrıntısı destekliyor?” diye gerekçe isteyin. İzleme sonrasında tahminleri gerçek içerikle karşılaştırın.",
       "source_locator": "basılı s.64 / PDF s.65 — Dinleme / İzlemeyi Yönetebilme"
@@ -97,14 +97,14 @@
       "printed_page": 65,
       "question_no": "Kelime Ağacı",
       "prompt_summary": "Kelime ağacındaki kavramları verilen anlamlarla eşleştirme",
-      "answer": "Kelime ağacındaki sözcükler verilen anlamlarla şöyle eşleşir: Tasavvur (zihinde canlandırma), Nörolojik (sinir sistemi ve sinir bilimiyle ilgili), Güdü (davranışı doğuran ve yönlendiren güç), Medeni (uygar), Sosyal (toplumsal). “Muhabbet” ise ağaçta verilen anlam kutularından hiçbirine uymayan sözcüktür.",
+      "answer": "Kelime ağacındaki sözcükler verilen anlamlarla şöyle eşleşir: Tasavvur (zihinde canlandırma), Nörolojik (sinir bilimsel), Güdü (davranışı doğuran ve yönlendiren güç), Medeni (uygar), Sosyal (toplumsal). “Muhabbet” ise ağaçta verilen anlam kutularından hiçbirine uymayan sözcüktür.",
       "answer_sections": {
         "Tasavvur": "Göz önüne getirme, hayal etme, zihinde canlandırma.",
-        "Nörolojik": "Sinir sistemi ve sinir bilimiyle ilgili.",
+        "Nörolojik": "Sinir bilimsel.",
         "Güdü": "Bilinçli veya bilinçsiz olarak davranışı doğuran, sürekliliğini sağlayan ve ona yön veren herhangi bir güç; saik.",
         "Medeni": "Uygar.",
         "Sosyal": "Toplumsal.",
-        "Muhabbet": "Verilen anlam kutularıyla eşleşmeyen çeldirici sözcük; sevgi, dostluk ve samimi sohbet anlamlarına gelir."
+        "Muhabbet": "Verilen beş anlam kutusuyla eşleşmeyen sözcük; sevgi, dostluk ve samimi sohbet anlamlarına gelir."
       },
       "guidance": "Sözcükleri yalnız sözlük karşılığı olarak ezberletmeyin; metindeki bağlamda hangi anlam ilişkisini kurduklarını da sordurun. “Muhabbet”in eşleşmeyen sözcük olduğu sayfadaki kelime ağacı yapısına göre değerlendirilmelidir.",
       "source_locator": "basılı s.65 / PDF s.66 — Anlam Oluşturabilme / Söz Varlığımız"
@@ -132,7 +132,12 @@
       "prompt_summary": "E-postanın diğer iletişim araçlarına göre avantajları",
       "answer": "E-posta, fiziksel mektuba göre çoğu durumda daha hızlı ve düşük maliyetlidir; alıcının aynı anda çevrim içi olmasını gerektirmez, sonradan okunup yanıtlanabilir. Yazılı kayıt bıraktığı için ileti sonradan aranıp yeniden okunabilir ve dosya eki gönderilebilir.",
       "answer_sections": {
-        "Genel avantajlar": "Fiziksel postaya göre hız ve çoğu durumda düşük gönderim maliyeti; eş zamanlı iletişim gerektirmeyen kullanım; yazılı içeriği sonradan arama ve gözden geçirme olanağı; dosya ekleyebilme.",
+        "Genel avantajlar": [
+          "Fiziksel mektuba göre: Çoğu durumda daha hızlı iletim ve daha düşük gönderim maliyeti sağlayabilir.",
+          "Telefon görüşmesine göre: Alıcının aynı anda hazır olmasını gerektirmez; ileti sonradan okunup yanıtlanabilir.",
+          "İçeriği düzenleme ve paylaşma: Uzun yazılar ile dosya ekleri gönderilebilir; aynı ileti birden fazla alıcıyla paylaşılabilir.",
+          "Yazılı kayıt: İleti sonradan aranabilir ve yeniden okunabilir; kayıtların korunması kullanılan hizmete ve saklama koşullarına bağlıdır."
+        ],
         "Bağlama ve teknik koşullar": "Gönderim maliyeti, teslim ve erişim, kayıtların saklanması ve dosya eklerinin boyut-biçim sınırları kullanılan hizmete ve kullanıcının koşullarına bağlıdır.",
         "Video ile karşılaştırma": "Videoda gerçekten görülen örnek ancak video incelendikten sonra kaydedilmelidir. Video erişilemiyorsa yukarıdaki genel avantajlar önceki bilgi ve kitap sorusundan hareketle tartışılır; bunlar videoda gösterilmiş örnek diye sunulmaz."
       },
@@ -148,7 +153,7 @@
       "prompt_summary": "İletişimin medenileşme hareketi olarak yorumlanması",
       "answer": "“İletişim, bir medenileşme hareketidir.” sözü, iletişimin insanların ortak anlamlar ve bilgi paylaşması, birlikte yaşama biçimleri geliştirmesi ve kültürü kuşaklara aktarmasındaki rolünü vurguluyor diye yorumlanabilir. Bu yorumun kapsamı, metin veya videoda verilen örneklerin neyi gösterdiğiyle sınanmalıdır. İletişimin bütün anlaşmazlıkları çözdüğü ya da tek başına medeniyet oluşturduğu sonucu yalnız bu ifadeden çıkarılamaz.",
       "answer_sections": {
-        "İfadenin olası anlamı": "İletişim, ortak yaşam ve kültür aktarımına katkı sağlayan bir süreç olarak yorumlanabilir.",
+        "İfadenin olası anlamı": "İnsanlar iletişim yoluyla duygu, düşünce ve bilgilerini paylaşır; ortak yaşamı düzenlemeye ve sorunlara birlikte çözüm aramaya çalışır. Bilim, sanat ve kültür birikiminin kuşaklar arasında aktarılması da iletişimle mümkün olur. Bu yönleriyle iletişim, uygarlaşmaya katkı sağlayan bir süreç olarak yorumlanabilir.",
         "Kanıt ve çıkarım": "Metinde veya izlediğiniz videoda gerçekten sunulan bir dayanak belirleyin ve bunun yorumunuzu nasıl desteklediğini açıklayın.",
         "Yorumun sınırı": "İfadenin farklı biçimlerde yorumlanması mümkündür; iletişimin tek başına bütün toplumsal sorunları çözdüğü genellenmemelidir."
       },

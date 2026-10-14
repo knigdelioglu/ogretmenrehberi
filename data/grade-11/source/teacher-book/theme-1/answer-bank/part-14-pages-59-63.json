@@ -14,7 +14,8 @@
       "answer_sections": {
         "Anlamın açıklığı": "Amaca ve bağlama uygun sözcük seçimi, anlatılmak istenenin daha kolay anlaşılmasına ve anlam bulanıklığının azalmasına yardımcı olur.",
         "Üslup ve etki": "Özenli, saygılı ve bağlama uygun bir söyleyiş muhatabın iletişimi sürdürmesini kolaylaştırabilir; sert veya uygunsuz bir söyleyiş ise iletişimi zorlaştırabilir.",
-        "Duygu ve düşüncenin aktarımı": "Dilin anlatım imkânlarından yararlanmak, duygu ve düşüncelerin yalnız bilgi olarak değil, ton ve çağrışımlarıyla da aktarılmasına yardımcı olabilir."
+        "Duygu ve düşüncenin aktarımı": "Dilin anlatım imkânlarından yararlanmak, duygu ve düşüncelerin yalnız bilgi olarak değil, ton ve çağrışımlarıyla da aktarılmasına yardımcı olabilir.",
+        "Görsel bağlantısı": "Sayfadaki yaşlı bir elin genç eller tarafından tutulması, iletişimi destekleyen şefkatli ve nazik beden diline örnektir."
       },
       "guidance": "Öğrencilerin yalnız “düşüncelerimizi aktarırız” demekle yetinmemesini sağlayın; sözcük seçimi, açıklık, üslup ve ses tonunun ileti üzerindeki olası etkisini örneklerle açıklatın. “Güven oluşturur” veya “empati sağlar” gibi sonuçları her durumda gerçekleşen kesin sonuçlar olarak sunmayın.",
       "evidence_quotes": [
@@ -61,6 +62,11 @@
         "Somut Günlük Yaşam Uygulamaları": [
           "Geri bildirim verme: “Doğru anladıysam şunu demek istedin, değil mi?” gibi bir soruyla anlaşılanı kontrol etmek.",
           "Sözle uyumlu beden dili: Konuşana yönelmek, uygun göz teması kurmak ve dinlediğini gösteren jest-mimikler kullanmak."
+        ],
+        "Sayfadaki görsellerden örnekler": [
+          "Sağdaki büyük görselde kulağına elini götüren kişi, dikkatle dinlemeyi çağrıştırır.",
+          "Ortadaki alt görselde konuşanı dinleyip not alan kişi, dikkati sürdürmeye örnektir.",
+          "Yaşlı bir elin tutulduğu görsel, şefkat ve saygıyı; bilgisayar kullanan tekerlekli sandalyedeki birey ise teknolojinin iletişime erişimi desteklemesini gösterir."
         ]
       },
       "guidance": "Bu maddeleri ezberlenecek zorunlu bir liste gibi sunmayın. Öğrenciden günlük hayattan bir iletişim durumunu seçip hangi davranışların iletişimi kolaylaştırabileceğini somut olarak açıklamasını isteyin.",
@@ -72,34 +78,34 @@
       "printed_page": 61,
       "question_no": "1",
       "prompt_summary": "Hitaplardan hareketle mektupların kime yazılmış olabileceği ve içerikleri hakkında tahmin",
-      "answer": "Muhatap ve içerik hakkında yalnız sayfada görülen hitap, varsa başlık bilgisi, tarih-yer bilgisi ve ilk cümlelerden hareketle olasılıklar kurulmalıdır. Hitabın vermediği biyografik bilgiler tahminin yerine geçirilmemelidir.",
+      "answer": "Sayfadaki hitap, kaynak künyesi, tarih-yer bilgisi ve ilk cümleler mektubun muhatabı ve içeriği hakkında tahmin kurmaya yardımcı olur. Künyede açıkça verilen bilgiler kullanılabilir; sayfada bulunmayan biyografik ayrıntılar eklenmemelidir.",
       "answer_sections": {
         "1. İbrahim Alâettin Gövsa — “Vefakâr dost ve faziletli kardeş”": {
           "Muhatap tahmini": "Yakın, değer verilen ve saygı duyulan bir dost ya da kardeş gibi görülen bir kişi olabilir.",
           "İçerik tahmini": "Dostluk, teşekkür, hâl-hatır veya kişisel düşünce paylaşımı içerebilir."
         },
         "2. Vincent Van Gogh — “Sevgili Kardeşim”": {
-          "Muhatap tahmini": "Bir kardeşe veya kardeş kadar yakın bir aile üyesine yazılmış olabilir. Yalnız hitaptan kişinin adını belirleyemeyiz.",
+          "Muhatap tahmini": "Kaynak künyesinde mektupların Theo’ya yazıldığı belirtilir; alıntıda ise “Sevgili Kardeşim” diye seslenilir.",
           "İçerik tahmini": "Kişisel haberler, günlük yaşam ve aile içi duygu/düşünce paylaşımı içerebilir."
         },
         "3. Tezer Özlü — “Canım Leylâcığım”": {
-          "Muhatap tahmini": "Leylâ adlı, yazarın samimi ve yakın olduğu bir kişiye yazılmış olabilir.",
-          "İçerik tahmini": "Ortak çevre, günlük yaşam ve kişisel haberler içerebilir."
+          "Muhatap tahmini": "Kaynak künyesinde mektubun Leylâ Erbil’e yazıldığı belirtilir; hitap yakınlığı da gösterir.",
+          "İçerik tahmini": "Fatoş’la konuşma ve ses benzerliği gibi ortak çevreye ve gündelik yaşama ilişkin kişisel haberler içerir."
         },
-        "4. Atatürk'ün Özel Mektupları — “Muhterem Hanımefendi”": {
-          "Muhatap tahmini": "Saygılı ve daha mesafeli bir ilişki içinde olunan bir hanımefendi olabilir.",
+        "4. Atatürk’ün Özel Mektupları — “Muhterem Hanımefendi”": {
+          "Muhatap tahmini": "Kaynak bilgisi örneği Atatürk’ün özel mektupları içinde verir; bu alıntıda hanımefendinin adı belirtilmez.",
           "İçerik tahmini": "İlk cümledeki hediye bilgisine göre teşekkür ve nezaket içeren bir cevap olabilir."
         },
         "5. Yakup Kadri Karaosmanoğlu — “Pek Aziz ve Muhterem Halide Hanımefendi”": {
-          "Muhatap tahmini": "Halide adlı, hem değer verilen hem de saygı gösterilen bir hanımefendiye yazılmış olabilir.",
-          "İçerik tahmini": "İlk cümlede anılan eser üzerinden edebî değerlendirme, görüş paylaşımı veya tebrik içerebilir."
+          "Muhatap tahmini": "Sonsuz Panayır adlı eserin yazarı Halide Edip Adıvar'a yazılmıştır; “Pek Aziz ve Muhterem” hitabı ona duyulan saygıyı yansıtır.",
+          "İçerik tahmini": "Sonsuz Panayır adlı kitap hakkındaki düşünceleri ve edebî değerlendirmeleri içerir."
         },
         "6. Orhan Seyfi Orhon — “Sayın Hasan Âli Yücel”": {
-          "Muhatap tahmini": "Hasan Âli Yücel adlı kişiye saygılı ve görece resmî bir ilişki içinde yazılmış olabilir.",
-          "İçerik tahmini": "İlk cümledeki işlem/karar bilgisinden hareketle açıklama, değerlendirme veya itiraz içerebilir."
+          "Muhatap tahmini": "Kaynak başlığı, mektubun Maarif Vekili Hasan Âli Yücel’e yazılmış açık mektup olduğunu belirtir.",
+          "İçerik tahmini": "Ankara’daki nümayişin ardından Vekâlet emrine alınmasına ilişkin açıklama, değerlendirme veya itiraz içerebilir."
         }
       },
-      "guidance": "Her tahmin için “Bunu hangi hitap veya ilk cümle düşündürdü?” sorusunu yöneltin. Sayfada açıkça yazmayan Theo, Leylâ Erbil, Halide Edib Adıvar veya muhatabın makamı gibi dış bilgileri tahmin cevabına taşımayın; varsa sayfadaki başlık bilgisini de hitaptan yapılan çıkarımla karıştırmayın.",
+      "guidance": "Her tahmin için “Bunu hangi hitap, eser adı, kaynak künyesi veya ilk cümle düşündürdü?” sorusunu yöneltin. Künyede belirtilen Theo, Leylâ Erbil ve Hasan Âli Yücel bilgilerini kullanabilirsiniz; Yakup Kadri'nin hitabındaki Halide Hanımefendi'yi mektupta adı geçen Sonsuz Panayır'ın yazarı Halide Edip Adıvar olarak tanımlayabilirsiniz. Alıntıda görünmeyen mektup ayrıntılarını kesin bilgi gibi eklemeyin.",
       "source_locator": "basılı s.60-61 / PDF s.61-62 — Sıra Sizde"
     },
     {
@@ -168,6 +174,8 @@
         "Örnek seçilen ifade": "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
         "Örnek gerekçe": "Kardeşlik gibi soyut bir duygu, “yığın yığın gönderilebilen” somut bir şey gibi anlatılarak somutlaştırılmıştır; bu söyleyiş kardeşe duyulan sevgi ve özlemi güçlü biçimde hissettirebilir.",
         "Alternatif ifadeler": [
+          "“İhtimal yakında bütün mektuplar başıma konfeti gibi dökülecekler.” — Mektup bekleyişini neşeli bir görüntüyle anlatması umut ve sevinç duygusu uyandırabilir.",
+          "“Güneş, her gün güneş ve masmavi bir gök. Ne yazık ki, bu güzel kış günlerini ancak penceremden seyredebiliyorum.” — Güzel hava ile kış günlerini yalnızca pencereden izleyebilme durumu arasındaki karşıtlık, anlatıma burukluk katar.",
           "“Uzat gözlerini kardeşim. Sana sevgiler, sevgiler, sevgiler gönderirim.” — Mesafeye rağmen yakınlık kurma isteği ve sevgi tekrar yoluyla yoğunlaştırılabilir.",
           "“İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.” — Paylaşma ve destek olma isteği açısından etkileyici bulunabilir.",
           "Metindeki başka bir ifade de duygu, dil veya düşünce açısından gerekçelendirilerek seçilebilir."
@@ -182,14 +190,17 @@
       "printed_page": 63,
       "question_no": "4",
       "prompt_summary": "Kardeş mektubunda görülen değerler",
-      "answer": "Mektupta kardeşlik ve aile sevgisi, paylaşma-yardımlaşma, özlem ve bağlılık, samimiyet gibi değerlere ulaşılabilir. Bunlar örnek değerlerdir; her değer metindeki somut bir söz veya davranışla gerekçelendirilmelidir.",
+      "answer": "Mektupta kardeşlik ve aile sevgisi, paylaşma-yardımlaşma, özlem, samimiyet, yakınlara ilgi, anlayış ve iyimserlik gibi değerlere ulaşılabilir. Bunlar örnek yorumlardır; her değer metindeki bir söz veya davranışla gerekçelendirilmelidir.",
       "answer_sections": {
         "Kardeşlik ve aile sevgisi": "“Bedir, Sevgili Bedir, nasılsın?” diye seslenmesi, aile bireylerini sorması ve kardeşinin resmini istemesi yakınlık ve aile sevgisini gösterir.",
         "Paylaşma ve yardımlaşma": "“İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.” sözü, elindeki imkânı kardeşiyle paylaşma isteğini gösterir.",
         "Özlem ve bağlılık": "“O kadar göresledim ki seni. Bana bir resmini gönder emi.” sözü kardeşine duyduğu özlemi ve yakınlığı doğrudan gösterir.",
-        "Samimiyet": "“Ben gene geç kaldım. Olur şey değil...” gibi ifadeler resmî olmayan, içten ve doğal bir anlatım oluşturur."
+        "Samimiyet": "“Ben gene geç kaldım. Olur şey değil...” gibi ifadeler resmî olmayan, içten ve doğal bir anlatım oluşturur.",
+        "Yakınlara ilgi": "Ferit’in yazmadığını belirtmesi ve Cemâl ağabeyi ile Niyazi’nin durumunu sorması, ailesini ve arkadaşlarını merak ettiğini gösterir.",
+        "Anlayış ve iyi niyet": "Trabzon’dan mektup gelmemesini bayram yorgunluğuna, Niyazi’nin yazmamasını derslerinin yoğunluğuna bağlaması, yakınlarına anlayışlı ve iyi niyetli yaklaşımını düşündürür.",
+        "İyimserlik ve iyi dilek": "“İhtimal yakında bütün mektuplar başıma konfeti gibi dökülecekler.” sözü umutlu bir bekleyişi; “Nazar, göz değmesin.” sözü ise güzel havanın sürmesine yönelik kültürel bir iyi dileği yansıtabilir."
       },
-      "guidance": "Bunları tek ve değişmez bir değer listesi olarak sunmayın. Öğrenciden seçtiği her değeri metindeki doğrudan bir söz veya davranışla gerekçelendirmesini isteyin. Hizmetçinin mektup şakası gibi dolaylı ayrıntıları tek başına “vefa” kanıtı olarak kullanmayın.",
+      "guidance": "Bunları tek ve değişmez bir değer listesi olarak sunmayın. Öğrenciden seçtiği her değeri metindeki doğrudan bir söz veya davranışla gerekçelendirmesini isteyin. “Nazar, göz değmesin.” kültürel bir iyi dilek ve güzel havayı takdir etme biçimi olarak yorumlanabilir; tek başına şükür değerini kanıtlaması beklenmemelidir.",
       "evidence_quotes": [
         "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim."
       ],
@@ -200,22 +211,31 @@
       "entry_type": "performance_support",
       "printed_page": 63,
       "question_no": "Değerlendirme",
-      "prompt_summary": "İletişimin hızlanmasının olumlu ve olumsuz yönlerini değerlendirme",
-      "answer": "İletişim araçları haberleşmeyi hızlandırıp uzak kişi ve kaynaklara erişimi kolaylaştırabilir. Hızlı yanıt beklentisi, acele iletiler veya sürekli ulaşılabilir olma baskısı da tartışılabilir. Etkiler araca, iletişim amacına ve koşullara göre değişir. Araştırma bulgularınızı değerlendirip gerekçeli sonucunuzu oluşturun.",
+      "prompt_summary": "İletişim araçlarını araştırıp paylaşma ve iletişimin hızlanmasını değerlendirme",
+      "answer": "Yazılı, görsel ve işitsel iletişim araçlarını gruplar hâlinde araştırın; kullandığınız kaynakları belirterek bulgularınızı paylaşın. Ardından iletişimin hızlanmasının kolaylıklarını ve doğurabileceği sorunları somut örneklerle değerlendirin.",
       "answer_sections": {
+        "Araştırma için başlangıç örnekleri": {
+          "Yazılı iletişim": "Mektup, gazete ve telgrafın hangi dönem ve yerlerde nasıl kullanıldığını araştırın.",
+          "Görsel iletişim": "Resim, fotoğraf, sinema ve televizyonun görüntüyle nasıl ileti taşıdığını araştırın.",
+          "İşitsel iletişim": "Tellal, telefon, radyo ve telsizin ses yoluyla ileti aktarma biçimlerini araştırın."
+        },
+        "Araştırma kaydı ve sınıflandırma": "Her araç için kullanım dönemi ve yeri, işlevi ve kaynak bilgisini kaydedin. Sinema ve televizyon gibi araçlar hem görüntü hem ses taşıyabilir; seçtiğiniz sınıflandırmayı gerekçelendirin. Taşıyıcı malzeme, yazı üretme aracı ve iletim yöntemini birbirinden ayırın.",
         "Olası kolaylıklar": [
           "Acil veya zamana duyarlı durumlarda hızlı haberleşme.",
           "Uzak kişi ve kaynaklarla daha kolay iletişim.",
-          "Yazışma ve bilgi paylaşımında bekleme süresinin azalması."
+          "Yazışma ve bilgi paylaşımında bekleme süresinin azalması.",
+          "Bazı yazışmalarda kâğıt ve fiziksel gönderim ihtiyacının azalması."
         ],
         "Tartışılabilecek riskler": [
           "Acele iletinin yanlış anlaşılma veya kırgınlık yaratma olasılığı.",
           "Anında yanıt beklentisinin baskı oluşturabilmesi.",
-          "Kısa ve sık mesajlaşmanın bazı durumlarda ayrıntılı konuşmanın yerini alabilmesi."
+          "Kısa ve sık mesajlaşmanın bazı durumlarda ayrıntılı konuşmanın yerini alabilmesi.",
+          "Çok sayıda bildirim nedeniyle dikkatin dağılabilmesi.",
+          "Doğrulanmadan paylaşılan bilgilerin hızla yayılabilmesi."
         ],
         "Gerekçeli değerlendirme": "Araştırma bulgularınızı ve somut koşulları değerlendirerek gerekçeli sonucunuzu oluşturun. Hız, özen veya başka bir ölçüt arasında tek bir zorunlu denge yoktur."
       },
-      "guidance": "Olumlu ve olumsuz yönleri birlikte ele aldırın. Her sav için araştırma bulgusu veya somut örnek ve ilgili koşulu sordurun; öğrenciler farklı gerekçeli sonuçlara ulaşabilir, tek bir denge formülünü zorunlu kılmayın.",
+      "guidance": "Araç listesini tamamlanmış araştırma veya her dönemde en yaygın araçlar listesi olarak sunmayın. Öğrenciler kullanım dönemi, yer ve kaynak bilgisiyle bulgularını doğrulasın. Hızın etkilerini dilin mutlaka bozulduğu veya insanların mutlaka yalnızlaştığı biçiminde genellemek yerine kullanım koşullarıyla açıklatın.",
       "source_locator": "basılı s.63 / PDF s.64 — Ders Dışı Etkinlik / Değerlendirme"
     }
   ]
