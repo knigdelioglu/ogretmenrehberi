@@ -1,6 +1,6 @@
 # Geçmişten Günümüze İletişim Araçları — ekran yazıları
 
-**EBA kaynağı:** `QR-EBA-BFB2729458DF` · **Dosya:** `19XU4CVR.mp4` · **Basılı sayfa:** 67 · **Süre:** yaklaşık 01:39.
+**EBA kaynağı:** `QR-EBA-BFB2729458DF` · **Dosya:** `19XU4CVR.mp4` · **Basılı sayfa:** 67 · **Süre:** 01:38,600. **Yüklenen dosyanın SHA-256:** `234198772baad09c0dc0cf5ee1a5e9d0ca9bff3567e58f04eaedcf447dbec559` (kayıtlı QR dosyasıyla birebir eşleşir).
 
 Bu, kitapta **ders dışı İletişim ve E-Posta etkinliğine** eklenmiş *ayrı* bir video kaynağıdır. Aynı sayfadaki 6–9. soruların esas izlemesi olan `19XU49LL.mp4` ile birleştirilmemelidir.
 

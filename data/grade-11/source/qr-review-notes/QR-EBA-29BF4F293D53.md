@@ -1,6 +1,6 @@
 # Değişen İletişim Araçlarının Hayatımızdaki Yeri — kısmi ekran kanıtı
 
-**EBA kaynağı:** `QR-EBA-29BF4F293D53` · **Dosya:** `19XU49LL.mp4` · **Basılı kitap sayfaları:** 64 (izleme yönergesi), 66–67 (sorular). **Süre:** yaklaşık 05:23.
+**EBA kaynağı:** `QR-EBA-29BF4F293D53` · **Dosya:** `19XU49LL.mp4` · **Basılı kitap sayfaları:** 64 (izleme yönergesi), 66–67 (sorular). **Süre:** 05:22,867. **Yüklenen dosyanın SHA-256:** `5fb70a9aa9371c060df8b4b788a276c6cefdbe1f2e01e01816074f3473ccde80` (kayıtlı QR dosyasıyla birebir eşleşir).
 
 ## İnceleme sınırı
 
@@ -8,10 +8,10 @@ TRT Aklıselim söyleşi videosundan **zaman damgalı ekran görüntülerindeki 
 
 | Yaklaşık zaman | Ekranda birebir görülen ifade | Kullanım |
 | --- | --- | --- |
-| 01:14 | “İletişim, bir medenileşme hareketidir.” | Basılı s.66, soru 3'ün doğrudan metinsel dayanağı |
-| 02:12 | “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” | İletişimin kişiler arası yakınlık yönü |
-| 03:10 | “Mektup, sevginin kanatlanmış hâlidir.” | Basılı s.67, soru 8 için **öznel/mecazlı** ekran ifadesi |
-| 04:08 | “İlk e-posta 1971 yılında atıldı.” | Basılı s.67, soru 8 için **nesnel/sınanabilir** ekran ifadesi; tarihsel iddia kaynak doğrulamasına açıktır |
+| 01:04 | “İletişim, bir medenileşme hareketidir.” | Basılı s.66, soru 3'ün doğrudan metinsel dayanağı |
+| 02:05 | “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” | İletişimin kişiler arası yakınlık yönü |
+| 03:08 | “Mektup, sevginin kanatlanmış hâlidir.” | Basılı s.67, soru 8 için **öznel/mecazlı** ekran ifadesi |
+| 04:06 | “İlk e-posta 1971 yılında atıldı.” | Basılı s.67, soru 8 için **nesnel/sınanabilir** ekran ifadesi; tarihsel iddia kaynak doğrulamasına açıktır |
 
 ## Kitap sorularıyla ilişki
 
