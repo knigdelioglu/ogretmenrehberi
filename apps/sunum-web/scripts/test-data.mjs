@@ -88,6 +88,43 @@ for (const step of [theme1Get(theme1Speaking, "s59-rubric"), theme1Get(theme1Wri
 }
 assert.ok(!JSON.stringify(theme1Get(theme1Writing, "s78-rubric")).includes("başarılır"));
 
+// The printed p.65 tree has six labelled words but only five definition
+// boxes. Keep that source geometry separate from the teaching answer bank:
+// "muhabbet" is intentionally unmatched, not a missing OCR definition.
+const p65 = readTheme1Json(path.join(repoRoot, "data/book/grade-11/themes/theme-1/pages/p065.json"));
+const p65Matching = p65.blocks.find((block) => block.id === "G11-T1-P65-VIS01")?.matching;
+assert.equal(p65Matching?.task, "match_term_to_definition", "p.65 tree has structured matching data");
+assert.deepEqual(p65Matching.terms.map(({ label, term }) => [label, term]), [
+  ["a", "medeni"], ["b", "tasavvur"], ["c", "güdü"],
+  ["ç", "sosyal"], ["d", "nörolojik"], ["e", "muhabbet"]
+], "p.65 six labels match the printed tree");
+assert.deepEqual(p65Matching.definition_boxes.map(({ term_label }) => term_label),
+  ["d", "b", "c", "a", "ç"], "five definition boxes map to the correct words");
+assert.deepEqual(p65Matching.definition_boxes.map(({ text }) => text), [
+  "Sinir bilimsel.",
+  "Göz önüne getirme, hayal etme, zihinde canlandırma.",
+  "Bilinçli veya bilinçsiz olarak davranışı doğuran, sürekliliğini sağlayan ve ona yön veren herhangi bir güç; saik.",
+  "Uygar.",
+  "Toplumsal."
+], "p.65 meanings are copied from the book, not generated");
+assert.equal(p65Matching.unmatched_term_label, "e", "muhabbet remains unmatched");
+assert.equal(new Set(p65Matching.definition_boxes.map(({ term_label }) => term_label)).size, 5,
+  "no definition is assigned twice");
+assert.ok(p65Matching.terms.every(({ label }) =>
+  label === p65Matching.unmatched_term_label ||
+  p65Matching.definition_boxes.some(({ term_label }) => label === term_label)),
+"all p.65 terms are either matched once or explicitly left unmatched");
+const p65Answer = readTheme1Json(path.join(theme1AnswerRoot, "part-15-pages-64-67.json"))
+  .entries.find((entry) => entry.question_id === "T1-P65-Q01");
+assert.equal(Object.keys(p65Answer.answer_sections).length, 6,
+  "canonical vocabulary guidance retains all six words");
+assert.match(p65Answer.answer_sections.Muhabbet, /eşleşmeyen|çeldirici/,
+  "canonical answer acknowledges the unmatched word");
+const p65Lesson = canonical.find((lesson) => lesson.lesson_slug === "dinleme-izleme");
+const p65Step = p65Lesson?.steps.find((step) => step.id === "s65-vocabulary");
+assert.equal(p65Step?.layout, "vocabulary", "p.65 is still a controlled vocabulary reveal");
+assert.equal(p65Step?.answer?.question_id, "T1-P65-Q01", "p.65 source and answer remain linked");
+
 const forbiddenPresentationMeta = [
   /öğrencinin[^\n]*(?:cevap|yanıt|görüş|kabul|tamamlam)/i,
   /öğrenci(?:ler)?[^\n]*(?:kabul edilir|kabul edilebilir|beklenir|tamamlamalıdır)/i,
