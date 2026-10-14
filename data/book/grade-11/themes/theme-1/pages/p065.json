@@ -33,7 +33,65 @@
         "printed_page": 65,
         "pdf_page": 66
       },
-      "order": 2
+      "order": 2,
+      "matching": {
+        "task": "match_term_to_definition",
+        "terms": [
+          {
+            "label": "a",
+            "term": "medeni"
+          },
+          {
+            "label": "b",
+            "term": "tasavvur"
+          },
+          {
+            "label": "c",
+            "term": "güdü"
+          },
+          {
+            "label": "ç",
+            "term": "sosyal"
+          },
+          {
+            "label": "d",
+            "term": "nörolojik"
+          },
+          {
+            "label": "e",
+            "term": "muhabbet"
+          }
+        ],
+        "definition_boxes": [
+          {
+            "id": "1",
+            "text": "Sinir bilimsel.",
+            "term_label": "d"
+          },
+          {
+            "id": "2",
+            "text": "Göz önüne getirme, hayal etme, zihinde canlandırma.",
+            "term_label": "b"
+          },
+          {
+            "id": "3",
+            "text": "Bilinçli veya bilinçsiz olarak davranışı doğuran, sürekliliğini sağlayan ve ona yön veren herhangi bir güç; saik.",
+            "term_label": "c"
+          },
+          {
+            "id": "4",
+            "text": "Uygar.",
+            "term_label": "a"
+          },
+          {
+            "id": "5",
+            "text": "Toplumsal.",
+            "term_label": "ç"
+          }
+        ],
+        "unmatched_term_label": "e",
+        "source_note": "Yalnız PDF görselinde bulunan beş tanım kutusu kaydedilmiştir; muhabbet için altıncı bir tanım kutusu yoktur."
+      }
     },
     {
       "text": "Söz Varlığımız",
