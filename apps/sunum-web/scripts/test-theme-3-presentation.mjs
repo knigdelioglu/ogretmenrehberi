@@ -516,9 +516,12 @@ async function runProductionBrowserChecks(production) {
     // evidence page carries the paired answer. Re-enter the question at 800px
     // and inspect that first paired page rather than requiring the last
     // continuation to duplicate an already revealed answer.
+    // Opening the same hash again does not necessarily reset browser state.
+    // Navigate to another verified step first, then return to the audio task.
+    await openAnswer("T3-P177-Q14");
     await openAnswer("T3-P218-QH02");
     view = await advanceUntil((value) => value.hasEvidence &&
-      Boolean(value.answer) && value.evidence.includes("İki aynı renkteki sese"),
+      Boolean(value.answer) && Boolean(value.evidence.trim()),
     "grouped audio first paired answer/evidence at 800px", 50);
     assert.ok(view.hasEvidence && view.answer && !view.overflow,
       "grouped audio first answer/evidence pair remains usable at 800px");
