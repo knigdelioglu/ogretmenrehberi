@@ -12,6 +12,7 @@ const browser = spawn(chrome, [
   "--headless=new",
   "--no-sandbox",
   "--disable-gpu",
+  "--disable-dev-shm-usage",
   "--disable-popup-blocking",
   "--no-first-run",
   "--remote-allow-origins=*",
@@ -21,7 +22,8 @@ const browser = spawn(chrome, [
 ], { stdio: "ignore" });
 const clients = [];
 
-async function until(check, label, timeout = 12000) {
+// Allow CI headless Chrome and large lesson views sufficient startup/render time.
+async function until(check, label, timeout = 30000) {
   const deadline = Date.now() + timeout;
   while (Date.now() < deadline) {
     try {
