@@ -38,6 +38,14 @@ assert.ok(flowStep("s64-listen").content?.sources?.some((source) => source.url.e
 assert.ok(flowStep("s67-qr-communication").content?.sources?.some((source) => source.url === mediaUrl("QR-EBA-BFB2729458DF")), "P67 supplementary animation must link to its own verified EBA identity");
 assert.ok(flowStep("s67-qr-communication").content?.sources?.some((source) => source.url.endsWith("#page=67")), "P67 must retain the correctly numbered official web textbook PDF");
 assert.notEqual(mediaUrl("QR-EBA-29BF4F293D53"), mediaUrl("QR-EBA-BFB2729458DF"), "Two QR videos must have distinct EBA IDs");
+const evaluationFlow = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/presentation/theme-1/degerlendirme-flow.json"), "utf8"));
+const olvidoMedia = evaluationFlow.steps.find((step) => step.id === "s83-olvido-media-reminder");
+const olvidoRegistry = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/grade-11/source/qr-sources.json"), "utf8"))
+  .sources.find((source) => source.source_id === "QR-EBA-2952F505E3A7");
+assert.ok(olvidoMedia?.content?.sources?.some((source) => source.url === olvidoRegistry?.permanent_link),
+  "Printed P83 Olvido should link to its own verified EBA video");
+assert.ok(olvidoMedia?.content?.sources?.some((source) => source.url.endsWith("#page=83")),
+  "P83 should retain its current official web textbook page link");
 const qrCommunication = flowStep("s67-qr-communication");
 assert.match(qrCommunication.content?.lead ?? "", /İçeriği izleyin/u,
   "QR reference should show a simple student-facing instruction");

@@ -1,7 +1,9 @@
 # Orhun Vadisi — kısmi görsel video kanıtı
 
 **Basılı sayfa:** 113 · **Kitap PDF'sinden doğrulanan EBA QR kimliği:** `06740daa8a1a08c3bfe9d46c65f3fe56`  
-**Drive MP4 adayı:** `19XU49LT.mp4`, yaklaşık 04:24; TRT logosu görülüyor.
+**Kullanıcı tarafından tekrar yüklenen MP4:** `19XU49LT.mp4`, 04:24,033; SHA-256 `25d236f97f199afa4d3c94462b44061a93e24da13aec6afc6a2bf58f3000d9ab`. Dosya, daha önceki QR aday envanterindeki SHA-256 ile eşleşiyor; TRT logosu ve Orhun anıtları görüntülerde görülüyor.
+
+**Resmî kitap QR adresi:** `https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=06740daa8a1a08c3bfe9d46c65f3fe56&resourceType=1&resourceLocation=2`. Kitaptaki QR kimliği kesin; MP4'ün EBA kaynağından indirilen baytlarla birebir eşleşmesi hâlâ doğrulanmış değil.
 
 **Doğrulama sınırı:** Basılı QR'nin link hedefi PDF'de kesinleşti; ancak eldeki MP4 dosyasının EBA indirmesiyle kriptografik eşleşmesi henüz doğrulanmadı. Videodaki sözlü anlatımın tamamı transkript edilmedi. Aşağıdaki bulgular yalnız zaman damgalı **görüntü incelemesidir**.
 

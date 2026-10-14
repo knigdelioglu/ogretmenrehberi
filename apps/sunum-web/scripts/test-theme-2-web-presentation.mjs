@@ -1,4 +1,23 @@
 import assert from "node:assert/strict";
+// QR-media audit: exact textbook QR identities, not similar-named MP4 files.
+
+const qrFlowRoot = new URL("../../../data/grade-11/presentation/theme-2/", import.meta.url);
+const qrManifest = JSON.parse(fs.readFileSync(new URL("../../../data/grade-11/source/qr-media-intake-2026-10-08.json", import.meta.url), "utf8"));
+for (const [flowFile, stepId, page, fileName] of [
+  ["orhun-abideleri-flow.json", "s113-media-reminder", 113, "19XU49LT.mp4"],
+  ["tema-girisi-flow.json", "s88-media-reminder", 88, "19XU49LO.mp4"]
+]) {
+  const flow = JSON.parse(fs.readFileSync(new URL(flowFile, qrFlowRoot), "utf8"));
+  const step = flow.steps.find((item) => item.id === stepId);
+  const entry = qrManifest.records.find((item) => item.file_name === fileName);
+  assert.ok(step && entry && entry.printed_page === page, `${stepId} maps to its verified printed page`);
+  assert.ok(step.content?.sources?.some((item) => item.url === entry.book_qr.eba_url), `${stepId} links the exact book QR destination`);
+  assert.ok(step.content?.sources?.some((item) => item.url.endsWith(`#page=${page}`)), `${stepId} retains the book PDF`);
+}
+assert.notEqual(qrManifest.records.find((x) => x.file_name === "19XU4CVR.mp4")?.book_qr.eba_url,
+  qrManifest.records.find((x) => x.file_name === "19XU49LO.mp4")?.book_qr.eba_url,
+  "P67 communication animation must not be confused with P88 festival video");
+
 import { spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
