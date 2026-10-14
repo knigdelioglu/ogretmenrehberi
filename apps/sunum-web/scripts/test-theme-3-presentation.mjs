@@ -412,7 +412,24 @@ async function runProductionBrowserChecks(production) {
   async function state() {
     return client.evaluate("(() => {const a=document.querySelector('#canvas .panel--answer');const e=document.querySelector('#canvas .panel--evidence');const b=document.querySelector('#canvas .slide__body');return {body:b?.innerText??'',answer:a?.innerText??'',evidence:e?.innerText??'',hasEvidence:Boolean(e),overflow:document.documentElement.scrollWidth>innerWidth+1,scroll:[b?.scrollTop??0,b?.scrollHeight??0,b?.clientHeight??0],where:document.querySelector('#canvas .where')?.innerText??'',answerHeadings:Array.from(a?.querySelectorAll('.sec h3')??[]).map(x=>x.textContent.trim()),evidenceHeadings:Array.from(e?.querySelectorAll('.sec h3')??[]).map(x=>x.textContent.trim()),quotes:e?.querySelector('.quotes')?.innerText??''}})()");
   }
-  async function next() { await client.evaluate("document.querySelector('#dock [data-action=next]').click()"); await sleep(100); return state(); }
+  async function next() {
+    // Production navigation scrolls an overflowing slide before changing
+    // its content stage. Browser assertions here target presentation stages,
+    // so traverse any intermediate scroll-only clicks without skipping a
+    // visible content transition.
+    const before = await state();
+    for (let attempts = 0; attempts < 16; attempts += 1) {
+      await client.evaluate("document.querySelector('#dock [data-action=next]').click()");
+      await sleep(100);
+      const after = await state();
+      if (after.body !== before.body || after.answer !== before.answer ||
+          after.evidence !== before.evidence || after.where !== before.where) {
+        return after;
+      }
+    }
+    assert.fail("Next did not advance the visible presentation stage after 16 scroll/navigation attempts: " +
+      before.body.slice(0, 180));
+  }
   async function openAnswer(answerId) {
     const target = production.generatedAnswers.get(answerId);
     assert.ok(target, "production catalog has answer " + answerId);
