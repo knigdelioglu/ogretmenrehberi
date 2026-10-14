@@ -10216,9 +10216,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  0
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10228,9 +10226,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  1
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10240,9 +10236,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  2
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10252,9 +10246,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  3
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10264,9 +10256,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  4
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10276,9 +10266,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  5
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               }
             ],
@@ -10290,8 +10278,7 @@
         },
         "reveal_order": [
           "guidance",
-          "answer",
-          "evidence"
+          "answer"
         ],
         "display_prompt": "Hitap örneklerinden mektupların muhatabı ve içeriği hakkında tahminde bulununuz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -10341,14 +10328,6 @@
             }
           },
           "guidance": "Her tahmin için “Bunu hangi hitap veya ilk cümle düşündürdü?” sorusunu yöneltin. Sayfada açıkça yazmayan Theo, Leylâ Erbil, Halide Edib Adıvar veya muhatabın makamı gibi dış bilgileri tahmin cevabına taşımayın; varsa sayfadaki başlık bilgisini de hitaptan yapılan çıkarımla karıştırmayın.",
-          "evidence_quotes": [
-            "Vefakâr dost ve faziletli kardeş,",
-            "Sevgili Kardeşim,",
-            "Canım Leylâcığım,",
-            "Muhterem Hanımefendi,",
-            "Pek Aziz ve Muhterem Halide Hanımefendi,",
-            "Sayın Hasan Âli Yücel,"
-          ],
           "source_locator": "basılı s.60-61 / PDF s.61-62 — Sıra Sizde"
         },
         "content": null
@@ -10638,9 +10617,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  0
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10660,10 +10637,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  1,
-                  2
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               }
             ],
@@ -10675,8 +10649,7 @@
         },
         "reveal_order": [
           "guidance",
-          "answer",
-          "evidence"
+          "answer"
         ],
         "display_prompt": "I. Metin'de sizi en çok etkileyen ifadeyi seçip gerekçelendiriniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -10709,11 +10682,6 @@
             ]
           },
           "guidance": "Tek bir “en etkileyici” cevap vermeyin. Öğrencinin seçtiği ifadeyi neden etkileyici bulduğunu metindeki söz, imge veya düşünce üzerinden açıklaması yeterlidir. Somutlaştırma gibi edebî bir özellik kullanılabilir; metinde açık dayanağı olmayan “tezat”, “çaresizlik” gibi yorumları zorunlu kılmayın.",
-          "evidence_quotes": [
-            "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
-            "Uzat gözlerini kardeşim.",
-            "İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim."
-          ],
           "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım"
         },
         "content": null
@@ -10734,7 +10702,7 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "quote_indexes": [
-                  1
+                  0
                 ],
                 "inline_quote_indexes": []
               },
@@ -10745,9 +10713,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  0
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10757,9 +10723,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  2
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -10813,9 +10777,7 @@
           },
           "guidance": "Bunları tek ve değişmez bir değer listesi olarak sunmayın. Öğrenciden seçtiği her değeri metindeki doğrudan bir söz veya davranışla gerekçelendirmesini isteyin. Hizmetçinin mektup şakası gibi dolaylı ayrıntıları tek başına “vefa” kanıtı olarak kullanmayın.",
           "evidence_quotes": [
-            "İşte sana helalinden yüz frank. Mümkün olsaydı yüzlerce gönderseydim. İktisadım bundan ibaret.",
-            "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim.",
-            "O kadar göresledim ki seni. Bana bir resmini gönder emi."
+            "Kardeşlik gönderilir bir şey olsaydı, ondan sana yığın yığın gönderseydim."
           ],
           "source_locator": "basılı s.62-63 / PDF s.63-64 — Düşünelim Paylaşalım"
         },
@@ -12398,10 +12360,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  0,
-                  1
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -12411,10 +12370,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  2,
-                  3
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -12424,9 +12380,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  4
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -12437,7 +12391,7 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "quote_indexes": [
-                  5
+                  0
                 ],
                 "inline_quote_indexes": []
               }
@@ -12481,11 +12435,6 @@
             "Konuşmanın akışını bozan davranış (Rıdvan)": "Rıdvan, konuşanların sözünü keserek tarih düzeltmeleri yapar (Yavuz, Ebussuud Efendi, 450 yıl). Hatice'nin “Nefes vermiyorsun biçarelere” ve “Ukalâlığı bırak” sözleri, bu tutumun asıl konunun anlatılmasını engellediğini gösterir. Bu aksaklık dilin kendisinden çok konuşma davranışından kaynaklanır."
           },
           "evidence_quotes": [
-            "Çok güzel, çok güzel...",
-            "İlâhî muhtar efendi bunun neresi iyi...",
-            "Tez yazdım...",
-            "Tez söyledi..",
-            "Analığı da onun gibidir inanmayın!",
             "Ukalâlığı bırak diyorum Rıdvan. Mesele Şeyhülislâmın isminde değil..."
           ],
           "guidance": "Soru dilin yanlış kullanımını sorduğu için önce söz seçimi ve anlamdan kaynaklanan aksaklıkları (Hasan, “tez”, Ömer), ardından söz kesme gibi davranışları ayırt ettirin; ikinci grup 3. sorudaki iletişim engelleri haritasında da kullanılabilir. “Birbirlerini anlamıyorlar” gibi genel cevaplar yerine her aksaklığı metindeki sözle göstermelerini isteyin.",
@@ -12509,7 +12458,7 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "quote_indexes": [
-                  3
+                  0
                 ],
                 "inline_quote_indexes": []
               },
@@ -12520,10 +12469,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  0,
-                  1
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -12533,9 +12479,7 @@
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
-                "quote_indexes": [
-                  2
-                ],
+                "quote_indexes": [],
                 "inline_quote_indexes": []
               },
               {
@@ -12608,9 +12552,6 @@
           },
           "explanation": "Temel çalışma sırası: metin kanıtı → iletişim engeli → kavram haritasındaki kategori. Psikolojik veya sosyolojik yorum, bu sınıflandırmanın yerine geçmemelidir.",
           "evidence_quotes": [
-            "Tez yazdım...",
-            "Tez söyledi..",
-            "Hem biz cahil insanlarız. Kusurumuza bakmamalı!",
             "Ukalâlığı bırak diyorum Rıdvan."
           ],
           "source_locator": "basılı s.68-70 / PDF s.69-71 — Sıra Sizde soru 3",
