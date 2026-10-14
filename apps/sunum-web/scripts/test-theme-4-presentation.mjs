@@ -170,7 +170,8 @@ for (const answerId of quoteAnswerIds) {
   for (const unit of presentation.units) {
     const answerStage = stages.findIndex((stage) => stage.type === "answer" && stage.unit.id === unit.id);
     const evidenceStage = stages.findIndex((stage) => stage.type === "evidence" && stage.unit.id === unit.id);
-    if (unit.quote_indexes.length || unit.evidence_sections.length) {
+    const hasSeparateQuotes = unit.quote_indexes.some((index) => !unit.inline_quote_indexes.includes(index));
+    if (hasSeparateQuotes || unit.evidence_sections.length) {
       assert.ok(answerStage >= 0 && evidenceStage > answerStage,
         answerId + "/" + unit.id + ": answer precedes its evidence stage");
     }
@@ -201,7 +202,7 @@ for (const answerId of quoteAnswerIds) {
 }
 assert.equal(duplicateQuoteAnswerIds.size, 10, "all ten quote-bearing answer pools are attached to response evidence");
 assert.equal(evidenceSectionCount, 11, "all 11 overlapping answer-bank sections are shown in evidence stages");
-assert.equal(embeddedQuoteCount, 25, "all 25 quote-in-section repeats are suppressed from the separate quote list");
+assert.equal(embeddedQuoteCount, 34, "all 34 inline quote repeats are suppressed from the separate quote list");
 
 for (const flow of flows) {
   for (const step of flow.steps.filter((candidate) => candidate.answer_id && candidate.layout !== "vocabulary")) {
@@ -288,4 +289,4 @@ assert.equal(answerById.get("T4-P262-PERF01").evidence_quotes[3],
 assert.ok(pageByPrintedNumber.get(257).page_text.includes("öyle bir bina yap ki, bir eşi daha bulunmaya!"),
   "the p.262 evidence quote matches the printed p.257 passage, including punctuation");
 
-console.log("Theme 4 metadata/source QA passed: 72 pages, 14 flows, 237 steps, 143 source records, 164 answers, 93 structured answers, 34 curated summary inclusions, 48 source quotes, 11 evidence sections and 25 embedded-quote repeats.");
+console.log("Theme 4 metadata/source QA passed: 72 pages, 14 flows, 237 steps, 143 source records, 164 answers, 93 structured answers, 34 curated summary inclusions, 48 source quotes, 11 evidence sections and 34 inline quotes.");

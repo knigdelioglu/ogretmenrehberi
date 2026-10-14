@@ -53,16 +53,12 @@
           "id": "language-differences",
           "sections": [
             "Çelebi ve Hacivat",
-            "Karagöz"
+            "Karagöz",
+            "Metinden örnekler"
           ],
-          "evidence_sections": [
-            {
-              "key": "Metinden örnekler",
-              "contains_quote_indexes": [
-                0,
-                1
-              ]
-            }
+          "inline_quote_indexes": [
+            0,
+            1
           ]
         }
       ],
@@ -127,6 +123,14 @@
       ]
     },
     "T1-P29-Q02": {
+      "units": [
+        {
+          "id": "answer",
+          "inline_quote_indexes": [
+            2
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -143,6 +147,23 @@
       ]
     },
     "T1-P30-Q04": {
+      "units": [
+        {
+          "id": "Açık İletiler",
+          "sections": [
+            "Açık İletiler"
+          ],
+          "inline_quote_indexes": [
+            0
+          ]
+        },
+        {
+          "id": "Örtük İletiler",
+          "sections": [
+            "Örtük İletiler"
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -223,6 +244,29 @@
       ]
     },
     "T1-P33-Q07": {
+      "units": [
+        {
+          "id": "Karagöz",
+          "sections": [
+            "Karagöz"
+          ],
+          "inline_quote_indexes": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "Hacivat",
+          "sections": [
+            "Hacivat"
+          ],
+          "inline_quote_indexes": [
+            0,
+            2,
+            6
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -250,11 +294,52 @@
         },
         {
           "index": 6,
-          "unit": "Karagöz"
+          "unit": "Hacivat"
         }
       ]
     },
     "T1-P34-Q08": {
+      "units": [
+        {
+          "id": "1. Cümle (“yazılmış”)",
+          "sections": [
+            "1. Cümle (“yazılmış”)"
+          ]
+        },
+        {
+          "id": "2. Cümle (“derken”, “çıkarak”)",
+          "sections": [
+            "2. Cümle (“derken”, “çıkarak”)"
+          ]
+        },
+        {
+          "id": "3. Cümle (“beklemek”)",
+          "sections": [
+            "3. Cümle (“beklemek”)"
+          ]
+        },
+        {
+          "id": "4. Cümle (“oturanlar”)",
+          "sections": [
+            "4. Cümle (“oturanlar”)"
+          ]
+        },
+        {
+          "id": "5. Cümle (“sallandukça”)",
+          "sections": [
+            "5. Cümle (“sallandukça”)"
+          ],
+          "inline_quote_indexes": [
+            4
+          ]
+        },
+        {
+          "id": "6. Cümle (“geçerken”)",
+          "sections": [
+            "6. Cümle (“geçerken”)"
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -283,6 +368,40 @@
       ]
     },
     "T1-P35-Q01": {
+      "units": [
+        {
+          "id": "a) Güldürü unsurlarının ortaya çıkmasına etkisi",
+          "sections": [
+            "a) Güldürü unsurlarının ortaya çıkmasına etkisi"
+          ],
+          "inline_quote_indexes": [
+            0,
+            1,
+            3,
+            7,
+            8
+          ]
+        },
+        {
+          "id": "b) Çatışmaların ortaya çıkmasına etkisi",
+          "sections": [
+            "b) Çatışmaların ortaya çıkmasına etkisi"
+          ],
+          "inline_quote_indexes": [
+            4,
+            5
+          ]
+        },
+        {
+          "id": "c) Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi",
+          "sections": [
+            "c) Dönemin toplumsal ve kültürel yapısını yansıtmaya etkisi"
+          ],
+          "inline_quote_indexes": [
+            2
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -380,6 +499,26 @@
       ]
     },
     "T1-P37-Q02": {
+      "units": [
+        {
+          "id": "Tür tahmini",
+          "sections": [
+            "Tür tahmini"
+          ],
+          "inline_quote_indexes": [
+            0
+          ]
+        },
+        {
+          "id": "İçerik tahmini",
+          "sections": [
+            "İçerik tahmini"
+          ],
+          "inline_quote_indexes": [
+            1
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -392,6 +531,32 @@
       ]
     },
     "T1-P40-Q01": {
+      "units": [
+        {
+          "id": "Haberleşme ve dertleşme",
+          "sections": [
+            "Haberleşme ve dertleşme"
+          ],
+          "inline_quote_indexes": [
+            0
+          ]
+        },
+        {
+          "id": "Edebî düşünce paylaşımı",
+          "sections": [
+            "Edebî düşünce paylaşımı"
+          ]
+        },
+        {
+          "id": "Çalışmaya ve yazmaya teşvik",
+          "sections": [
+            "Çalışmaya ve yazmaya teşvik"
+          ],
+          "inline_quote_indexes": [
+            3
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -412,6 +577,36 @@
       ]
     },
     "T1-P40-Q02": {
+      "units": [
+        {
+          "id": "Kişisel haberleşme",
+          "sections": [
+            "Kişisel haberleşme"
+          ],
+          "inline_quote_indexes": [
+            0
+          ]
+        },
+        {
+          "id": "Edebî ve düşünsel paylaşım",
+          "sections": [
+            "Edebî ve düşünsel paylaşım"
+          ],
+          "inline_quote_indexes": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "Edebî mektup niteliği",
+          "sections": [
+            "Edebî mektup niteliği"
+          ],
+          "inline_quote_indexes": [
+            2
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -432,6 +627,32 @@
       ]
     },
     "T1-P40-Q03": {
+      "units": [
+        {
+          "id": "Karakterlerin canlılığı",
+          "sections": [
+            "Karakterlerin canlılığı"
+          ],
+          "inline_quote_indexes": [
+            1
+          ]
+        },
+        {
+          "id": "Geçmiş ve psikolojik derinlik",
+          "sections": [
+            "Geçmiş ve psikolojik derinlik"
+          ]
+        },
+        {
+          "id": "Rus-Fransız romanı karşılaştırması",
+          "sections": [
+            "Rus-Fransız romanı karşılaştırması"
+          ],
+          "inline_quote_indexes": [
+            4
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -530,6 +751,29 @@
       ]
     },
     "T1-P40-Q05B": {
+      "units": [
+        {
+          "id": "Anlatım Biçimleri",
+          "sections": [
+            "Anlatım Biçimleri"
+          ]
+        },
+        {
+          "id": "Anlatım Özellikleri",
+          "sections": [
+            "Anlatım Özellikleri"
+          ]
+        },
+        {
+          "id": "Düşünceyi Geliştirme Yolları",
+          "sections": [
+            "Düşünceyi Geliştirme Yolları"
+          ],
+          "inline_quote_indexes": [
+            2
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -598,6 +842,35 @@
       ]
     },
     "T1-P41-Q02": {
+      "units": [
+        {
+          "id": "Öznel İfadeler",
+          "sections": [
+            "Öznel İfadeler"
+          ],
+          "inline_quote_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "Nesnel İfadeler",
+          "sections": [
+            "Nesnel İfadeler"
+          ],
+          "inline_quote_indexes": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "Türü belirlemedeki etki değerlendirmesi",
+          "sections": [
+            "Türü belirlemedeki etki değerlendirmesi"
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -652,6 +925,62 @@
       ]
     },
     "T1-P44-Q01": {
+      "units": [
+        {
+          "id": "Yer ve Tarih",
+          "sections": [
+            "Yer ve Tarih"
+          ],
+          "inline_quote_indexes": [
+            0
+          ]
+        },
+        {
+          "id": "Hitap Bölümü",
+          "sections": [
+            "Hitap Bölümü"
+          ],
+          "inline_quote_indexes": [
+            1
+          ]
+        },
+        {
+          "id": "Giriş Bölümü",
+          "sections": [
+            "Giriş Bölümü"
+          ]
+        },
+        {
+          "id": "Gelişme Bölümü",
+          "sections": [
+            "Gelişme Bölümü"
+          ]
+        },
+        {
+          "id": "Sonuç Bölümü",
+          "sections": [
+            "Sonuç Bölümü"
+          ]
+        },
+        {
+          "id": "Adı-Soyadı",
+          "sections": [
+            "Adı-Soyadı"
+          ],
+          "inline_quote_indexes": [
+            2
+          ]
+        },
+        {
+          "id": "Adres / Ulaştırma Bilgisi",
+          "sections": [
+            "Adres / Ulaştırma Bilgisi"
+          ],
+          "inline_quote_indexes": [
+            3
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,
@@ -672,6 +1001,31 @@
       ]
     },
     "T1-P44-Q02": {
+      "units": [
+        {
+          "id": "Muhataba yakınlığın belirlediği samimi dil",
+          "sections": [
+            "Muhataba yakınlığın belirlediği samimi dil"
+          ],
+          "inline_quote_indexes": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "id": "İçeriğin gerektirdiği düşünsel dil",
+          "sections": [
+            "İçeriğin gerektirdiği düşünsel dil"
+          ]
+        },
+        {
+          "id": "Sonuç",
+          "sections": [
+            "Sonuç"
+          ]
+        }
+      ],
       "quote_links": [
         {
           "index": 0,

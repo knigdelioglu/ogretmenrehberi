@@ -128,11 +128,24 @@ export function resolveWebPresentation(step, answer, themeData) {
     if (!isRecord(rawUnit) || typeof rawUnit.id !== "string" || !rawUnit.id.trim()) {
       fail(`malformed unit ${unitIndex} for ${answer.question_id}`);
     }
-    assertOnlyKeys(rawUnit, new Set(["id", "sections", "items", "evidence_sections"]), "unit");
+    assertOnlyKeys(rawUnit, new Set(["id", "sections", "items", "evidence_sections", "inline_quote_indexes"]), "unit");
     if (unitIds.has(rawUnit.id)) fail(`duplicate unit id ${rawUnit.id} for ${answer.question_id}`);
     unitIds.add(rawUnit.id);
 
-    const unit = { id: rawUnit.id, section_keys: [], array_indices: [], evidence_sections: [] };
+    if (rawUnit.inline_quote_indexes !== undefined && (index.schema_version !== "1.1.0" ||
+      !Array.isArray(rawUnit.inline_quote_indexes) || !rawUnit.inline_quote_indexes.length ||
+      rawUnit.inline_quote_indexes.some((quoteIndex) => !Number.isInteger(quoteIndex) || quoteIndex < 0) ||
+      new Set(rawUnit.inline_quote_indexes).size !== rawUnit.inline_quote_indexes.length)) {
+      fail(`inline_quote_indexes must be a unique non-empty list of quote indexes for ${answer.question_id}`);
+    }
+
+    const unit = {
+      id: rawUnit.id,
+      section_keys: [],
+      array_indices: [],
+      evidence_sections: [],
+      inline_quote_indexes: [...(rawUnit.inline_quote_indexes ?? [])]
+    };
     if (rawUnit.sections !== undefined) {
       if (rawUnit.items !== undefined || !sectionKeys.length || !Array.isArray(rawUnit.sections) ||
         !rawUnit.sections.length || rawUnit.sections.some((key) => typeof key !== "string" || !sectionKeys.includes(key))) {
@@ -211,6 +224,13 @@ export function resolveWebPresentation(step, answer, themeData) {
 
   const inlineByUnit = new Map(units.map((unit) => [unit.id, new Set()]));
   for (const unit of units) {
+    for (const quoteIndex of unit.inline_quote_indexes) {
+      const pair = `${quoteIndex}\u0000${unit.id}`;
+      if (quoteIndex >= quotes.length || !pairs.has(pair)) {
+        fail(`inline quote ${quoteIndex} must be linked to unit ${unit.id} for ${answer.question_id}`);
+      }
+      inlineByUnit.get(unit.id).add(quoteIndex);
+    }
     for (const section of unit.evidence_sections) {
       for (const quoteIndex of section.contains_quote_indexes) {
         const pair = `${quoteIndex}\u0000${unit.id}`;

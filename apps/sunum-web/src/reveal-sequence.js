@@ -25,10 +25,14 @@ export function insertThinkingReveal(reveals, hasThinking) {
 // Reveal each response unit first, then its linked evidence while retaining
 // the unit on screen. This order is shared by the web UI and export capture.
 export function answerEvidenceStages(units) {
-  return units.flatMap((unit) => [
-    { type: "answer", unit },
-    ...(unit.quote_indexes?.length || unit.evidence_sections?.length ? [{ type: "evidence", unit }] : [])
-  ]);
+  return units.flatMap((unit) => {
+    const inlineQuotes = new Set(unit.inline_quote_indexes ?? []);
+    const hasSeparateQuotes = unit.quote_indexes?.some((index) => !inlineQuotes.has(index));
+    return [
+      { type: "answer", unit },
+      ...(hasSeparateQuotes || unit.evidence_sections?.length ? [{ type: "evidence", unit }] : [])
+    ];
+  });
 }
 
 // Keep the paired answer and source context on the first evidence page only.
