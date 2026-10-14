@@ -302,7 +302,8 @@ assert.ok(studentFacingThemeSteps > 0, "TEMA_01 ve TEMA_02 sunum adımları kaps
 assert.ok(otherThemeSupportLayers > 0, "Diğer temaların mevcut destek katmanları korunmalı");
 assert.ok(!JSON.stringify(catalog).includes('"note"'), "note alanı sunum verisinde olmamalı");
 assert.equal(themeOneWebUnits, 495, "Theme 1 structured answers are revealed as individual response units");
-assert.equal(themeOneEvidenceQuotes, 181, "Theme 1 evidence quotations are all linked to response units");
+// Approved p.59–73 deduplication removed 19 redundant quotations; retain an explicit baseline.
+assert.equal(themeOneEvidenceQuotes, 162, "Theme 1 curated evidence quotations are all linked to response units");
 
 assert.deepEqual(
   [...actualThinking.keys()].sort(),
