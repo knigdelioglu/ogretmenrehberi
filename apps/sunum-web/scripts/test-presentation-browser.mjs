@@ -2201,11 +2201,27 @@ presentationBrowserSuite: {
       const nextContentPage = await qaState();
       assert.ok(nextContentPage.counter.includes(`sayfa 2/${contentPageCount}`),
         `${lesson.slug}/${step.id} advances its opening content page`);
-      assert.equal(nextContentPage.focus.trim(), "", `${lesson.slug}/${step.id} keeps paginated content in QA context`);
+      if (step.content?.options_on_next_click) {
+        // Staged multiple-choice questions intentionally move the complete option
+        // set into QA focus after the first advance (instead of the answer panel).
+        assert.ok(step.content.options?.length > 0,
+          `${lesson.slug}/${step.id} has authored staged options`);
+        assert.ok(step.content.options.every((option) =>
+          nextContentPage.focus.includes(option.text)),
+        `${lesson.slug}/${step.id} shows every option together in QA focus after one advance`);
+        assert.ok(!nextContentPage.stageLabels.includes("CEVAP") &&
+          !nextContentPage.focus.includes("Doğru cevap:"),
+        `${lesson.slug}/${step.id} staged options do not reveal the answer`);
+      } else {
+        assert.equal(nextContentPage.focus.trim(), "",
+          `${lesson.slug}/${step.id} keeps ordinary paginated content in QA context`);
+      }
       await previous();
       const restoredContentPage = await qaState();
       assert.ok(restoredContentPage.counter.includes(`sayfa 1/${contentPageCount}`),
         `${lesson.slug}/${step.id} backward navigation restores its opening content page`);
+      assert.equal(restoredContentPage.focus.trim(), "",
+        `${lesson.slug}/${step.id} restores the question-only opening on back navigation`);
     }
     questionSweep.push({ slug: lesson.slug, id: step.id, modern: opened.modern });
     if (questionSweep.length % 50 === 0) {
