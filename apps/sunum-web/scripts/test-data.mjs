@@ -122,6 +122,8 @@ for (const [i, lesson] of canonical.entries()) {
     const s = out.steps[j];
     assert.equal(s.id, step.id);
     assert.equal(s.prompt, projected.display_prompt);
+    assert.ok(!/\b19XU[A-Z0-9]{2,}\b/i.test(s.prompt),
+      `${lesson.lesson_id}/${step.id}: teknik medya dosya kodları slayt başlığına taşınmamalı`);
     if (card?.title) {
       assert.equal(s.content?.sections, undefined, `${step.id}: video konuşma/ekran dökümü yayımlanamaz`);
       assert.equal(s.content?.lead, card.lead, `${step.id}: kısa tanıtım`);
