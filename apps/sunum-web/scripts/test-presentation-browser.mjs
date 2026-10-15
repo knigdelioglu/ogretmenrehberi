@@ -2987,9 +2987,13 @@ presentationBrowserSuite: {
   screen = await openStep("degerlendirme-303-307", "s307-q12");
   assert.ok(!screen.text.includes("Dijital üretim") && !screen.text.includes("teknolojinin tek başına"), "ISSUE-100 argument skeleton is hidden initially");
   screen = await openStep("degerlendirme-303-307", "s307-q14");
-  assert.ok(!screen.text.includes("Yer, ilişki, kültür, emek, anı"), "ISSUE-101 answer categories are hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Video kanıtı"), "s307 source-limited guidance")).includes("Video kanıtı"),
-    "ISSUE-101 source-limited answer guidance opens after the task");
+  assert.ok(!screen.text.includes("Bu kanıtın aidiyetle ilişkisi") && !screen.text.includes("dört çeşme yaptırdığını"),
+    "ISSUE-101 video-backed answer and its evidence remain hidden on the question screen");
+  const aidiyetAnswer = await advanceUntil(
+    (text) => text.includes("Anlatıcının açıklaması") || text.includes("Halil Bey'in örneği"),
+    "s307 verified Aidiyet answer");
+  assert.ok(aidiyetAnswer.includes("Anlatıcının açıklaması") || aidiyetAnswer.includes("Halil Bey'in örneği"),
+    "ISSUE-101 verified video-backed Aidiyet answer opens after the task");
 
   for (const themeId of ["TEMA_01", "TEMA_02", "TEMA_03", "TEMA_04"]) {
     const candidate = evidencePresentationCases.get(themeId);
