@@ -15,11 +15,12 @@
       "source_record_id": "T01-S0057",
       "layout": "process",
       "density": "compact",
-      "prompt": "Seksenler — Sorulara geçmeden önce kitaptaki çok modlu metni karekoddan izleyiniz.",
+      "prompt": "Sözlü İletişim Engelleri ve Seksenler — Sorulara geçmeden önce iki videoyu izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu bölümdeki ilk sorular, videodaki sözlü iletişim engellerine dayanır. İzlerken iletişimi bozan davranışları, ifadeleri ve tepkileri örnekleriyle not edin.",
+        "lead": "Bu sayfada iki ayrı video var: 19XU3SUD fiziksel, bilişsel ve duyuşsal engelleri tanıtır; Seksenler sahneleri bu engellere örnek sunar. Soruları yanıtlarken sahne kanıtlarını Seksenler videosundan seçin.",
         "items": [
+          "Engel türlerini ve tanımlarını Sözlü İletişim Engelleri videosundan inceleyin.",
           "İki sahnede iletişimi bozan davranış veya ifadelerden somut örnek seçin.",
           "Her örnekte iletişim engelini adlandırın ve konuşmanın anlaşılmasına ya da sürmesine etkisini açıklayın."
         ],
@@ -27,6 +28,49 @@
           {
             "label": "Ders kitabı s.53 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=53"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s53-video-barriers",
+      "source_record_id": "T01-S0057",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "QR video içeriği — 19XU3SUD · Sözlü İletişim Engelleri",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Dış sesli açıklama yoktur. İlk bölümde kadın seslendirmen Yunus Emre şiirini okur; slaytların geri kalanında bağlama ağırlıklı müzik ve daktilo yazı efektleri duyulur.",
+        "sections": [
+          {
+            "title": "Yunus Emre şiiri · 00:00–00:28",
+            "body": "00:00–00:20 arasında okunan ve ekranda gösterilen şiir: “Sözünü bilen kişinin / Yüzünü ak ede bir söz / Sözü pişirip diyenin / İşini sağ ede bir söz / Söz ola kese savaşı / Söz ola kestire başı / Söz ola ağulu aşı / Balıla yağ ede bir söz / Yunus Emre”"
+          },
+          {
+            "title": "Fiziksel engeller · 00:39–01:10",
+            "body": "Kişinin konuşmasını engelleyecek yorgunluk, uykusuzluk, bulantı gibi fiziksel sorunlar yaşaması; ses tellerinin aşırı veya yanlış kullanımı ya da nefes kontrolü yetersizliğinden kaynaklanan bedensel rahatsızlıklar; dinleyicinin söylenenleri kavrayıp zihninde yapılandırmasını engelleyen fiziksel kısıtlılıklar; konuşma ortamındaki gürültü, sıcaklık ve koku gibi olumsuz etkenler."
+          },
+          {
+            "title": "Bilişsel engeller · 01:12–01:48",
+            "body": "Konuşma için hazırlık yapmamak, konuya hâkim olmamak veya bilgi eksikliği, düzgün diksiyona sahip olmamak; dinleyicinin konuya karşı ön yargılı ya da ilgisiz olması."
+          },
+          {
+            "title": "Duyuşsal engeller · 01:50–02:16",
+            "body": "Konuşma için gerekli motivasyonun olmaması; heyecanlı, tedirgin veya gergin bir ruh hâli; dinleyicinin aktarılan iletiyi farklı şekilde algılaması."
+          },
+          {
+            "title": "Başlık ve kapanış yazıları",
+            "body": "00:31–00:37 arasında “SÖZLÜ İLETİŞİM ENGELLERİ” başlığı; 02:19–02:23 arasında “Sözlü İletişim Engelleri ile ilgili içeriği izlediniz.” kapanış notu görünür."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.53 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=53"
+          },
+          {
+            "label": "Sözlü İletişim Engelleri — EBA videosu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=551442fb39efe8a8438247ae6c0e03d0&resourceType=1&resourceLocation=2"
           }
         ]
       }

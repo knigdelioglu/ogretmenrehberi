@@ -101,6 +101,37 @@
       "thinking": "Her cümleyi metindeki ilgili bölümle eşleştirin; doğrudan desteği, metinle çelişmeyi ve metnin bilgi vermemesini birbirinden ayırın."
     },
     {
+      "id": "s83-video-olvido",
+      "source_record_id": "T01-S0129",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Şairin Sesinden — Ahmet Muhip Dıranas / Olvido",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Ahmet Muhip Dıranas, “Olvido” şiirini kendi sesinden okur.",
+        "sections": [
+          {
+            "title": "Seslendirilen şiir",
+            "body": "Hoyrattır bu akşamüstüler daima.\nGün saltanatıyla gitti mi bir defa,\nYalnızlığımızla doldurur her yeri.\nBir renk çığlığı içinde bahçemizden,\nBir el çıkarmaya başlar bohçamızdan\nLavanta çiçeği kokan kederleri.\nHoyrattır bu akşamüstüler daima.\nDalga dalga hücum edip pişmanlıklar,\nUnutuşun o tunç kapısını zorlar;\nVe ruh atılan oklarla deliktir.\nİşte doğduğun eski evdesin birden,\nYolunu gözlüyor lamba ve merdiven,\nSusmuş ninnilerle gıcırdayan beşik\nVe cümle yitikler, mağluplar, mahzunlar..."
+          },
+          {
+            "title": "Ekranda görünen yazılar",
+            "body": "00:00–00:02'de “ŞAİRİN SESİNDEN” ve “Ahmet Muhip Dıranas - ‘Olvido’” başlıkları görünür. Ekranın sağ üstünde “TRT 2” logosu yer alır. 00:07–00:12 arasındaki alt bantta “Ahmet Muhip Dıranas” ve “‘Olvido’” yazıları gösterilir."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.83 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=83"
+          },
+          {
+            "label": "Olvido — EBA video kaynağını aç",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=2952f505e3a7923fe38ce31c2bd92871&resourceType=1&resourceLocation=2"
+          }
+        ]
+      }
+    },
+    {
       "id": "s83-olvido-media-reminder",
       "source_record_id": "T01-S0129",
       "layout": "process",
@@ -108,7 +139,7 @@
       "prompt": "Olvido — Soru 13'ten önce kitaptaki çok modlu metni karekoddan dinleyiniz / izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "13. soruyu yanıtlarken karekod bağlantısındaki Olvido kaynağını dinleyin/izleyin ve şiirin ses, vurgu, görüntü ya da sunum özelliklerine ilişkin kısa notlar alın. Kaynağa erişemiyorsanız duymadığınız veya görmediğiniz ayrıntıları eklemeyin.",
+        "lead": "13. soruyu yanıtlarken Dıranas'ın kendi sesinden okuduğu şiiri ve ekrandaki başlıkları inceleyin; seçtiğiniz dizeyle ilgili kısa notlar alın.",
         "sources": [
           {
             "label": "Ders kitabı s.83 — karekodun bulunduğu sayfayı aç",
@@ -120,8 +151,8 @@
           }
         ],
         "items": [
-          "Önce kaynağı dinleyin/izleyin; duyduğunuz bir seslendirme özelliği veya gördüğünüz bir görsel tercihi kaydedin.",
-          "Bu kanıtın belirli bir dizeyle ve şiirin duygusuyla nasıl ilişkili olduğunu kendi yorumunuzla açıklayın."
+          "Dıranas'ın okumasında dikkatinizi çeken bir vurgu veya duraklamayı seçtiğiniz dizeyle ilişkilendirin.",
+          "“Şairin Sesinden” başlığıyla alt bantta yer alan şair ve şiir adının sunuma katkısını açıklayın."
         ]
       }
     },

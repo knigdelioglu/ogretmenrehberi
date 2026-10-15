@@ -237,26 +237,22 @@
     },
     {
       "question_id": "T1-P83-Q13",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 83,
       "question_no": "13",
       "prompt_summary": "Olvido çok modlu metninde şiirin duygusunu aktaran unsurlar",
-      "answer": "Olvido çok modlu metninde gerçekten duyduğunuz sesleri ve gördüğünüz görüntüleri şiirin dizeleriyle ilişkilendirerek inceleyin. Ses veya görüntü unsuruna erişemiyorsanız onu kullanılmış gibi varsaymayın.",
-      "guidance": "“Sonbahar görüntüsü”, “pastel renk”, “enstrümantal fon”, “yavaş çekim” gibi ayrıntıları yalnız videoda gerçekten görülüp duyuluyorsa kullanın. Video erişilemiyorsa belirli cevap üretmek yerine bu gözlem sorularını kullanın.",
-      "explanation": "source_limited: basılı sayfa yalnız QR yönlendirmesini ve soruyu verir; çok modlu içeriğin gerçek görsel/işitsel tasarımı PDF'den doğrulanamaz.",
-      "source_locator": "basılı s.83 / PDF s.84 — 1. Tema Ölçme ve Değerlendirme soru 13; QR-EBA-2952F505E3A7 (resourceId 2952f505e3a7923fe38ce31c2bd92871); yerel MP4: sources/local/qr-media/QR-EBA-2952F505E3A7.mp4",
+      "answer": "Örnek yanıt: “Hoyrattır bu akşamüstüler daima” dizesinin yinelenmesi akşamüstü ve yalnızlık duygusunu öne çıkarır. “Lavanta çiçeği kokan kederleri” dizesi koku imgesiyle anı ve hüznü bir araya getirir; “unutuşun o tunç kapısı” ise geçmişi unutmanın güçlüğünü anlatır. Ahmet Muhip Dıranas'ın şiiri kendi sesinden okuması, dizelerin şairin yorumuyla dinlenmesini sağlar. Öğrenci, dinlerken dikkatini çeken bir vurgu veya duraklamayı seçtiği dizeyle ilişkilendirebilir.",
+      "guidance": "Metindeki imge ve yinelemeleri şiirin duygusuyla ilişkilendirin; seslendirme yorumunda ise öğrencinin seçtiği dizeye dayalı dinleme gözlemini esas alın.",
+      "explanation": "Şiirde akşamüstü, yalnızlık, hatıra ve unutma imgeleri birlikte ilerler. Şairin kendi sesinden okuması da şiirin çok modlu sunumunun belirgin bir unsurudur.",
+      "source_locator": "basılı s.83 / PDF s.84 — 1. Tema Ölçme ve Değerlendirme soru 13; Ahmet Muhip Dıranas, “Olvido” QR videosu (resourceId 2952f505e3a7923fe38ce31c2bd92871); yerel MP4: sources/local/qr-media/QR-EBA-2952F505E3A7.mp4",
       "answer_sections": {
-        "İşitsel Olarak İncelenebilecek Unsurlar": [
-          "Seslendirme varsa ses tonu, tempo, vurgu ve duraklamalar şiirin duygusunu nasıl etkiliyor?",
-          "Fon müziği veya başka sesler varsa bunlar şiirin ritmi ve atmosferiyle nasıl ilişki kuruyor?",
-          "Sessizlik veya ses yoğunluğu belirli dizelerde anlamı güçlendiriyor mu?"
+        "Şiir metnindeki unsurlar": [
+          "“Hoyrattır bu akşamüstüler daima” dizesi yinelenerek şiirde akşamüstü ve yalnızlık duygusunu belirginleştirir.",
+          "“Lavanta çiçeği kokan kederleri” dizesi koku imgesini kederle birleştirir.",
+          "“Unutuşun o tunç kapısını zorlar” dizesi geçmişten gelen pişmanlıkları ve unutmanın güçlüğünü anlatır."
         ],
-        "Görsel Olarak İncelenebilecek Unsurlar": [
-          "Görseller varsa hangi imgeler, renkler veya mekânlar seçilmiş?",
-          "Tipografi, dize gösterimi veya yazı yerleşimi şiirin okunmasını nasıl yönlendiriyor?",
-          "Görüntü geçişleri varsa ritim ve duygu üzerinde nasıl bir etki oluşturuyor?"
-        ],
-        "Metin–Görüntü–Ses İlişkisi": "Gerçekten gözlemlediğiniz en az iki unsuru şiirin belirli bir dizesi veya genel duygusuyla ilişkilendirerek açıklayın."
+        "Ses ve sunum": "Ahmet Muhip Dıranas şiiri kendi sesinden okur. Öğrenci, seçtiği dizedeki vurgu veya duraklama gözlemini şiirin duygusuyla ilişkilendirir.",
+        "Ekrandaki yazılar": "Açılışta “ŞAİRİN SESİNDEN” ve “Ahmet Muhip Dıranas - ‘Olvido’” başlıkları; alt bantta “Ahmet Muhip Dıranas” ve “‘Olvido’” yazıları görünür."
       }
     }
   ]

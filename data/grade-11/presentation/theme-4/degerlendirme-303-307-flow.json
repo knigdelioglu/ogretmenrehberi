@@ -252,7 +252,7 @@
       "prompt": "Aidiyet — Sorular 13–14'ten önce kitaptaki videoyu karekoddan izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Aidiyet videosunun kısmi görüntülerinde dağlık çevre, köy, çeşme, yollar ve dal/odun toplama yer alıyor. 13. soruda gözlenen uyum davranışını, 14. soruda ise bu görüntülerden çıkarılan olası aidiyet bağını ayırın. Konuşma ve kişinin duyguları henüz doğrulanmadı.",
+        "lead": "Dökümde Anadolu insanının sabrı, cesareti ve fedakârlığı; Halil Bey'in çeşmelere gösterdiği özen ve dedesinden öğrendiği su hayrı geleneği anlatılır. 13. soruda söz ve davranışları örnekleyin; 14. soruda aidiyet bağını açıklayın.",
         "sources": [
           {
             "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
@@ -266,16 +266,74 @@
       }
     },
     {
+      "id": "s307-video-transcript",
+      "source_record_id": "T04-S0142",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "QR video dökümü — 19XU49LS · Anadolu İnsanı: Aidiyet",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Anlatıcı, Anadolu insanının yurduna ve yaşadığı çevreye bağlılığını vurguluyor. Mamak köyünde Halil Bey'in çeşme bakımı ve su hayrı geleneğini sürdürmesi, bu bağı gündelik emek ve kuşaklar arası aktarım üzerinden gösteriyor.",
+        "sections": [
+          {
+            "title": "Dış ses · 00:15–00:56",
+            "body": "Sabırlı, cesur, fedakâr... Milyonlarca insan, Anadolu'nun birbirinden zorlu koşullarına kusursuz bir uyum sağlıyor. Yedi bölgeye şekil veren farklı coğrafi özellikler, bu topraklarda yaşayanların karakter özelliklerine de şekil veriyor. Merhamet, dürüstlük, cömertlik gibi nice büyük erdemler ve yüreğinde taşıdığı en güzel duygularla yaşamı kucaklamaya devam ediyor. Anadolu İnsanı."
+          },
+          {
+            "title": "Dış ses · 01:02–01:30",
+            "body": "Kimi zaman doğduğu toprağın uzağına düşer insan. Kader, beklenmedik bir yön çizer yaşamına. Bazen gönüllü, bazen de zorunlu bir yolculuğun içinde bulur kendisini. Kimi zaman da daha iyi imkânları görmezden gelir. Ve terk etmez kendine yurt bildiği yeri. Aklı, gönlü, ruhu ait olduğu topraklarla iç içedir."
+          },
+          {
+            "title": "Dış ses · 01:44–02:13",
+            "body": "Su, yaşamın çehresini değiştirir. Yokluğu darlık, varlığı bereket getirir. Suyun kıymetini en iyi bilen medeniyetler, hep bu topraklarda boy göstermiştir bu yüzden. Bugün Anadolu'nun dört bir yanında sanki birer anıt gibi yükselen çeşmeler, bulundukları bölgelere hayat veriyor."
+          },
+          {
+            "title": "Dış ses · 02:14–02:49",
+            "body": "Türkiye'nin yeraltı su kaynakları bakımından en şanslı illerinden biri de Kütahya. Simav'a bağlı Mamak köyü, sahip olduğu bu hazinenin değerini çok iyi biliyor. Nesiller boyunca yeraltı su kaynağından en verimli şekilde yararlanabilmek maksadıyla çeşmeler yaptırılmış. Üstelik çeşme yaptırma geleneği buralarda sadece köylerle de sınırlı kalmamış. Çeşmelerin coşkuyla aktığı bir başka yer de dağlar."
+          },
+          {
+            "title": "Dış ses · 02:50–03:05",
+            "body": "Mamak köyünde yaşayan Halil, dağdaki çeşmelerin bahar temizliğini yapmak için yolda. Kışın hemen ardından gelen yağmurlarla birlikte çeşmelerin de bakım zamanı geldi."
+          },
+          {
+            "title": "Halil Bey · 03:06–03:36",
+            "body": "Aşağı yukarı ben 28... 25 yaşımdan beri geleli de aynı bakardım çeşmeye. O sene, bu sene devam ediyoruz. Bakım olarak çeşmelerde sık sık yıkanacak ahırlar... pislik, kurbağa pisliği oluyor. Onu temizledin mi tertemiz oluyor. Mal makırdak gelen su içecek. İnsanlar su içecek. Bakımı bu yani, bakımı çok kelepir. Öyle zor bir şey değil bakımı. Bakım çok kelepir."
+          },
+          {
+            "title": "Dış ses · 03:44–04:02",
+            "body": "Bu işi elleriyle yapmak pratik geliyor Halil'e. Suyun içindeki pislikleri avuçlayarak dışarı atıyor. Ancak kışın henüz sona erdiği bu dönemde su buz gibi soğuk. Bu derdin de bir çaresi var elbette."
+          },
+          {
+            "title": "Halil Bey · 04:08–04:39",
+            "body": "Dedemden gördüm ben bunları. “Var sen oğlum çeşme yaptır. Hayır oğlum, hayır; hayırdır” derdi hep. “Çeşme hayrı gibi, su hayrı gibi yoktur oğlum” derdi. Ondan öğrendik biz de. Hemen bir yakada su gördük mü, daha görsem de yaptırsam. Dört çeşme yaptırdım ben bu yaşa geleli. Su bulursam yine de, sağ olursam yaptırırım."
+          },
+          {
+            "title": "Ekrandaki yazılar ve nesneler",
+            "body": "00:01–00:04’te sağ altta “İçerikte alt yazı seçeneği bulunmaktadır. ↓” bildirimi görünür. Sol üstte “TRTBELGESEL” / “BELGESEL” logosu yer alır. 00:52–00:55’te “ANADOLU İNSANI”; 01:34–01:36’da “AİDİYET” başlığı çıkar. 03:12’de beyaz Toros'un plakasında “43 ET 097”; 04:28’de dikiz aynasındaki nazarlık/muska üzerinde “Maşallah” yazılıdır."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=307"
+          },
+          {
+            "label": "Anadolu İnsanı: Aidiyet — kitabın EBA video bağlantısını aç",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=6e0ca79cee422408b5dcfaf3ad7a1459&resourceType=1&resourceLocation=2"
+          }
+        ]
+      }
+    },
+    {
       "id": "s307-q13",
       "source_record_id": "T04-S0142",
-      "answer_id": "T4-P307-SL13",
+      "answer_id": "T4-P307-Q13",
       "layout": "assessment",
       "density": "compact",
       "prompt": "Soru 13 — Aidiyet videosundaki Anadolu insanının belirgin özelliklerini kanıtlarıyla açıklayınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Özellik adı tek başına yeterli değildir; videoda gerçekten gördüğünüz davranış, söz veya sahneyi kanıt gösterin.",
-        "note": "Video örnek kareleri incelendi: dağlık alanda yürüyüş, köy/çeşme ve çevreden dal toplama sahneleri var. Bu davranışlardan kesin karakter yargısı veya kişinin sözleri çıkarılamaz.",
+        "lead": "Anlatıcının Anadolu insanı için saydığı özelliklerle Halil Bey'in çeşme bakımı ve su hayrı hakkındaki sözlerini kanıt olarak kullanın.",
         "sources": [
           {
             "label": "Ders kitabı s.307 — karekodun bulunduğu sayfayı aç",
@@ -287,14 +345,14 @@
     {
       "id": "s307-q14",
       "source_record_id": "T04-S0143",
-      "answer_id": "T4-P307-SL14",
+      "answer_id": "T4-P307-Q14",
       "layout": "assessment",
       "density": "compact",
       "prompt": "Soru 14 — Bir kişinin yaşadığı yere aidiyet duygusu geliştirmesi nelere bağlıdır?",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Video örneklerinden hareketle aidiyet duygusunun hangi koşullarla ilişkili olduğunu açıklayın; her iddianızı gerçek bir kanıtla destekleyin.",
-        "note": "Kavramsal açıklama yapılabilir; video örneği uydurulmaz."
+        "lead": "Anlatıcının aidiyet tanımını ve Halil Bey'in çeşme bakımını sürdürerek yaşadığı çevreyle kurduğu bağı birlikte değerlendirin.",
+        "note": "Anlatıcının doğrudan açıklamasını Halil Bey'in çeşme hayrını sürdürme örneğinden ayırın."
       }
     }
   ]

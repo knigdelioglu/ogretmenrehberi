@@ -19,11 +19,50 @@
       "prompt": "Türklerin dünya medeniyetine katkıları — Sorudan önce kitaptaki videoyu izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu soru videoda verilen örneklerin kullanılmasını gerektirir. Karekod erişilebiliyorsa önce videoyu izleyip örnekleri not edin; erişilemiyorsa videoya özgü katkı örneklerini uydurmayın.",
+        "lead": "Dökümde Türklerin dünya medeniyetine katkısı devlet kurma ve geniş coğrafyalara yayılma üzerinden ele alınıyor. Adı verilen devletleri kanıt olarak kullanın; genel katkı iddiasıyla tek tek somut bulguları ayırın.",
         "sources": [
           {
             "label": "Ders kitabı s.129 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=129"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s129-video-transcript",
+      "source_record_id": "T02-S0103",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "QR video dökümü — 19XU49LP · Dünyadaki Türkiye",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Stüdyo sunucusu Türklerin bugünkü siyasi varlığını tanıtıyor; VTR ise Türk tarihini Türkistan'daki ilk devletlerden Selçuklu ve Osmanlı dönemlerine, ardından günümüz Türk Dünyası kavramına kadar izliyor.",
+        "sections": [
+          {
+            "title": "Doç. Dr. Mücahit Küçükyılmaz · stüdyo açılışı · 00:38–01:19",
+            "body": "Dünyadaki Türkiye'den herkese merhaba. Bugün yine kıymetli bir isimle Türklerin dünyasını ekranlarınıza getireceğiz. Tarihin en eski dönemlerinden itibaren varlıklarını sürdüren Türkler, kurdukları devletlerle dünya medeniyetine önemli katkılarda bulundular. Türklerin Orta Asya steplerinde, Türkistan'da başlayan hikâyesi Avrupa'nın içlerine kadar uzanan geniş bir coğrafyada yazıldı. Bugün 7 bağımsız ve 20'ye yakın özerk devletle Türkler, uluslararası siyasetin önemli bir öznesi durumunda. Bu bölümde kıymetli bir isimle Türk dünyasını değerlendirmeye çalışacağız. Dünyadaki Türkiye, VTR'nin ardından başlıyor."
+          },
+          {
+            "title": "VTR dış ses · 01:23–02:32",
+            "body": "Mazisi oldukça eskilere dayanan ve tarihin akışına yön veren en önemli milletlerden olan Türkler, göçebe bir toplum olduklarından pek çok coğrafyanın da vatan olmasına katkı sunmuşlardı. Tarihte Türklere dair ilk izlere Türkistan'da rastlansa da, mücadeleci ruhlarıyla kısa zamanda Orta Asya'ya yayılan ve gittikleri coğrafyalara damga vuran Türkler, anavatanlarında da devlet kurmayı başardılar ve ilk devletlerini Türkistan'da inşa ettiler. Hunlarla başlayıp Göktürk ve Uygurlarla devam eden bu süreç, Selçuklular ve Osmanlılar gibi Doğu'ya ve Avrupa'ya hükmeden küresel çaplı devletlerle süregeldi. 20. yüzyılın sonları ve 21. yüzyılın başında ortaya atılan “Türk Dünyası” kavramı, dünyada yaşayan tüm Türk halklarını ifade ediyor. Bugün Türkiye, Azerbaycan, Kazakistan, Kırgızistan, Özbekistan, Türkmenistan ve Kuzey Kıbrıs Türk Cumhuriyeti gibi bağımsız devletlerde ortalama 165 milyon, tüm dünyadaysa toplam 250 milyon Türk bulunuyor."
+          },
+          {
+            "title": "Ekrandaki yazılar ve logolar",
+            "body": "00:01–00:04’te sağ altta açık kitap ve yaprak görseli üzerinde “İçerikte alt yazı seçeneği bulunmaktadır. ↓” bildirimi görünür. Sağ üst köşede beyaz “TRT” logosu vardır. 00:34–00:36’da “DÜNYADAKİ TÜRKİYE” jenerik başlığı; 00:37–02:31 boyunca sol altta aynı programın köşe logosu görünür. 00:42–01:19 arasında sunucunun elindeki kartta “TRT TÜRK”; 00:46–00:54 tanıtım bandında “DOÇ. DR. MÜCAHİT KÜÇÜKYILMAZ / İLETİŞİM BİLİMCİ” yazılıdır."
+          },
+          {
+            "title": "Harita ve festival alanı yazıları",
+            "body": "00:37–01:19 stüdyo dekorundaki dünya haritasında Türkiye, İtalya, Romanya, Bulgaristan, Yunanistan, Sırbistan, Bosna Hersek, Hırvatistan, Rusya, Suriye, Irak, İran, Mısır, Tunus, Fas ve KKTC gibi ülke adları görünür. 02:08–02:11’de çadırda “SAİRAM OTOĞI” yazısı ve “2017 Türkistan Türk Dünyası Kültür Başkenti” logosu yer alır."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.129 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=129"
+          },
+          {
+            "label": "Dünyadaki Türkiye — kitabın EBA video bağlantısını aç",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=2d18e79ed46861b363ef8affbfefcecb&resourceType=1&resourceLocation=2"
           }
         ]
       }

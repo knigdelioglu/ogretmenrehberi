@@ -120,6 +120,45 @@
       }
     },
     {
+      "id": "s300-video-poster-steps",
+      "source_record_id": "T04-S0122",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "QR video içeriği — 19XU3SW3 · Afiş Hazırlama Basamakları",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Video boyunca dış sesli anlatım yoktur; hareketli enstrümantal fon müziği eşliğinde afiş hazırlama süreci ekrandaki yazılarla açıklanır.",
+        "sections": [
+          {
+            "title": "Açılış başlığı · 00:01–00:09",
+            "body": "“AFİŞ HAZIRLAMA BASAMAKLARI”"
+          },
+          {
+            "title": "1–5. basamaklar · 00:15–01:25",
+            "body": "1. (00:15–00:28) Hedef kitlenizi ve amacınızı belirleyiniz.\n2. (00:29–00:43) Hangi konuda afiş hazırlayacağınıza karar veriniz.\n3. (00:44–00:57) Afişte vermek istediğiniz iletinin net, dikkat çekici ve anlaşılır olmasına dikkat ediniz.\n4. (00:58–01:11) Afişinizi hazırlarken kullanacağınız görsel ya da dijital unsurları belirleyiniz.\n5. (01:12–01:25) Hedef kitlenizi göz önünde bulundurarak nasıl bir tasarım yapmak istediğinize karar veriniz."
+          },
+          {
+            "title": "6. basamak — tasarım ölçütleri · 01:26–02:04",
+            "body": "Afiş tasarımı özgün olmalı; görseller ve yazılar sistemli ve uyumlu düzenlenmeli; tasarım bütünlük taşımalıdır. Başlık, alt başlık ve slogan gibi içerikler verilmek istenen iletilerin önem sırasına göre yerleştirilmeli; etkiyi artırmak için yazı az ve okunaklı tutulmalıdır. Renkler arasında zıtlık oluşturulmalı ve afiş ilk bakışta fark edilebilmelidir."
+          },
+          {
+            "title": "7. basamak ve kapanış · 02:05–02:25",
+            "body": "02:05–02:18’de tasarım gözden geçirilerek gerekli düzeltmelerin yapılması istenir. 02:19–02:25’te “Afiş Hazırlama Basamakları ile ilgili içeriği izlediniz.” kapanış notu görünür."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.300 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=300"
+          },
+          {
+            "label": "Afiş Hazırlama Basamakları — EBA videosu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5a6b3d654679891e8dfbafcd74a32bd7&resourceType=1&resourceLocation=2"
+          }
+        ]
+      }
+    },
+    {
       "id": "s300-content",
       "source_record_id": "T04-S0122",
       "answer_id": "T4-P300-PERF01",

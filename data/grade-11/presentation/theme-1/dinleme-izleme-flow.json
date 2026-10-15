@@ -297,11 +297,21 @@
       "id": "s67-qr-communication",
       "source_record_id": "T01-S0130",
       "layout": "reference",
-      "density": "compact",
+      "density": "large",
       "prompt": "Geçmişten Günümüze İletişim Araçları",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İçeriği izleyin ve iletişim araçlarıyla ilgili dikkatinizi çeken unsurları not alın.",
+        "lead": "Video boyunca dış sesli anlatım yoktur; tempolu enstrümantal müzik eşliğinde iletişim araçlarının zaman çizelgesi ekranda tanıtılır.",
+        "sections": [
+          {
+            "title": "Açılış başlığı · 00:01–00:08",
+            "body": "“Geçmişten Günümüze İletişim Araçları”"
+          },
+          {
+            "title": "Zaman çizelgesi · 00:16–01:25",
+            "body": "1. Mağara Duvarına Yapılan Çizimler (00:16): “Eski zamanlarda insanların kendilerini ifade etmek ve haberleşmek amacıyla mağara duvarlarına yaptıkları çizimlerdir.”\n2. Posta Güvercini (00:24): “Yazılı mesajların bir yerden başka bir yere taşınmasını sağlayan güvercinlerdir.”\n3. Ulak (00:31): “Haber getiren kimsedir.”\n4. Mektup (00:39): “Bir şeyi haber vermek, sormak, istemek veya duygu ve düşünceleri bildirmek için birinin çoğunlukla posta yoluyla gönderilen, zarfa konulmuş yazılı kâğıttır.”\n5. Gazete (00:46): “Politika, ekonomi, kültür ve daha başka konularda haber ve bilgi vermek için günde veya belirli zaman aralıklarıyla çıkarılan yayındır.”\n6. Telgraf (00:54): “İki merkez arasında, kararlaştırılmış işaretlerin yardımıyla yazılı haberlerin veya belgelerin iletimini sağlayan bir telekomünikasyon düzenidir.”\n7. Kablolu Telefon (01:01): “Sesli iletişim aracı olarak icat edilen kablolu telefonlar, sesin elektrik sinyalleriyle iletildiği bir ağa bağlı çalışan düzenektir.”\n8. Dizüstü Bilgisayar (01:09): “Dizüstü bilgisayarlar her türlü donanımı ile bir arada çalışan taşınabilir duruma getirilmiş biçimidir.”\n9. E-posta (01:17): “Her türlü bilgisayar, tablet ve cep telefonundan internet aracılığıyla çeşitli formatlarda (metin, görsel, ses vb.) mesajların iletilmesini sağlayan elektronik mektuptur.”\n10. Cep Telefonu (01:25): “Kişinin yanında taşıyabildiği kablosuz telefondur.”"
+          }
+        ],
         "sources": [
           {
             "label": "Ders kitabı s.67 — karekodun bulunduğu sayfayı aç",

@@ -187,36 +187,40 @@
       "guidance": "Cevabınızı metindeki kamera-ses teknolojisinin dijitalleşmesi, bilgisayarlı kurgu ve yeni izleme mecraları gibi somut dayanaklarla gerekçelendirin. Farklı bir görüş ileri sürerseniz bunun metnin doğrudan söylediği bilgi değil, gerekçelendirilmiş kişisel değerlendirme olduğunu açıkça ayırın."
     },
     {
-      "question_id": "T4-P307-SL13",
-      "entry_type": "source_limited",
+      "question_id": "T4-P307-Q13",
+      "entry_type": "question_answer",
       "printed_page": 307,
       "question_no": "13",
-      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459; 19XU49LS.mp4 kısmi görsel kanıtı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md",
+      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü",
       "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-      "answer": "Videonun örnek görüntülerinde bir kişinin engebeli doğa koşullarında ilerlemesi (00:45–01:30), kırsal yerleşimdeki yollar ve çeşme (02:00–02:45), ağaçlık arazide yürüyüş ve dal/odun toplama (03:45–04:15) görülür. Bu sahneler doğaya uyum sağlama, gündelik ihtiyaçları çevresindeki imkânlarla karşılama ve kırsal koşullarda yaşamı sürdürme gibi özellikler üzerine yorum geliştirmeye elverişlidir. Bu özelliklerin tüm Anadolu insanlarının değişmez karakteri olduğu söylenemez; kişinin kendi niyeti veya düşüncesi ise henüz transkript edilmemiştir.",
+      "answer": "Anlatıcı Anadolu insanını “sabırlı, cesur, fedakâr” sözleriyle tanımlar; merhamet, dürüstlük ve cömertlik gibi erdemlerden de söz eder. Halil Bey'in dağ çeşmelerini her yıl temizleyip bakımını yapması, suyun insanlar ve hayvanlar için temiz kalmasına önem vermesi, dedesinden öğrendiği çeşme hayrını sürdürüp dört çeşme yaptırması emek, sorumluluk ve topluma hizmet özelliklerine örnektir.",
       "answer_sections": {
-        "Videoda gözlediğim kişi, davranış veya tutum": "[...]",
-        "Çıkardığım özellik veya özellikler": "[...]",
-        "Her özellik için video kanıtı": "[...]"
+        "Videoda sayılan özellikler": "Dış ses Anadolu insanını sabırlı, cesur ve fedakâr olarak niteler; merhamet, dürüstlük ve cömertliği de öne çıkarır.",
+        "Halil Bey'den kanıtlar": [
+          "Dağdaki çeşmeleri her bahar temizleyip bakımını yapar; bu işi yıllardır sürdürdüğünü anlatır.",
+          "Dedesinden çeşme ve su hayrının önemini öğrenmiştir.",
+          "Dört çeşme yaptırdığını ve su bulursa yenilerini de yaptıracağını söyler."
+        ],
+        "Çıkarım": "Bu söz ve davranışlar çalışkanlık, sorumluluk, cömertlik ve topluma hizmet değerleriyle ilişkilendirilebilir."
       },
-      "guidance": "Öğrenciden 'gördüğüm eylem' ve 'buradan çıkardığım özellik' ifadelerini ayrı yazmasını isteyin. Bölgenin neresi olduğu, kişinin geçmişi, özverisinin amacı gibi doğrulanmamış ayrıntıları eklemeyin. Farklı gerekçeli yorumları kabul edin.",
-      "explanation": "QR kitabın PDF hedefinde doğrulandı, aday Drive videosu görüntülerle örneklendi. Tam ses deşifresi ve videonun EBA MP4 indirme özdeşliği doğrulanmadığı için source_limited korunur."
+      "guidance": "Anlatıcının doğrudan sıraladığı özellikleri Halil Bey'in çeşme bakımı, temiz suyu paylaşma ve çeşme yaptırma örnekleriyle eşleştirin. Videodaki somut söz ve davranıştan hareket eden farklı gerekçeli yorumları kabul edin.",
+      "explanation": "Videoda anlatıcının erdem ve uyum vurgusu, Halil Bey'in çeşmeleri düzenli temizlemesi ve su hayrı geleneğini sürdürmesiyle somutlaştırılır."
     },
     {
-      "question_id": "T4-P307-SL14",
-      "entry_type": "source_limited",
+      "question_id": "T4-P307-Q14",
+      "entry_type": "question_answer",
       "printed_page": 307,
       "question_no": "14",
-      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459; kısmi görsel kaynak: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md",
+      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü",
       "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-      "answer": "Aidiyet duygusu, kişinin bir mekânı tanıması, o yerde zaman geçirmesi, ilişkiler kurması ve gündelik hayatını orada sürdürmesiyle gelişebilir. Aday videoda dağlık çevre, bir köy yerleşimi ve çeşmesi, yollar ve doğada günlük işler görülür; bunlar mekâna aşinalık ile günlük yaşantı bağını düşündüren somut video kanıtı olarak kullanılabilir. Ancak filmdeki kişinin o yeri neden sevdiği veya oraya ait hissettiğini söyleyip söylemediği sesli anlatım olmadan bilinmez; cevap bu nedenle gerekçeli bir çıkarımdır.",
+      "answer": "Anlatıcıya göre aidiyet; kişinin aklı, gönlü ve ruhunun ait olduğu topraklarla iç içe olması, daha iyi imkânları bulunsa da kendine yurt bildiği yeri terk etmemesiyle ilişkilidir. Halil Bey'in Mamak çevresindeki çeşmelerin bakımını sürdürmesi, dedesinden öğrendiği su hayrı geleneğini devam ettirmesi ve dört çeşme yaptırması, yaşadığı çevreyle kurduğu bağı ve bu geleneğe bağlılığını gösteren örnekler olarak yorumlanabilir.",
       "answer_sections": {
-        "Videoda aidiyetle ilişkilendirdiğim etken": "[...]",
-        "Video kanıtı": "[...]",
-        "Bu kanıtın aidiyetle ilişkisi": "[...]"
+        "Anlatıcının açıklaması": "Aidiyet; kişinin aklı, gönlü ve ruhunun ait olduğu topraklarla iç içe olması ve kendine yurt bildiği yeri terk etmemesiyle anlatılır.",
+        "Halil Bey'in örneği": "Halil Bey, Mamak çevresindeki dağ çeşmelerini temizlemeyi sürdürür; dedesinden öğrendiği su hayrını devam ettirir, dört çeşme yaptırdığını ve su bulursa yenilerini de yaptıracağını söyler.",
+        "Bu kanıtın aidiyetle ilişkisi": "Yaşadığı çevrenin su kaynağına emek vermesi ve aileden öğrendiği çeşme geleneğini sürdürmesi, yere bağlılık ve kültürel aktarım olarak yorumlanabilir."
       },
-      "guidance": "Aidiyeti salt doğum yeri veya tek bir sabit özelliğe indirgemeyin. Köy, su, yol ve günlük iş görüntülerini gözlem, 'aidiyet duygusu doğurabilir' sonucunu yorum olarak sınıflandırın. Kişiye ait duygu ve nedenleri birebir söz duyulmadan ona atfetmeyin.",
-      "explanation": "Görüntüler örneklendi; anlatıcının/kişinin aidiyet açıklaması ve EBA indirme özdeşliği bağımsız doğrulanmadı. source_limited korunmuştur."
+      "guidance": "Anlatıcının aidiyet açıklamasını doğrudan dayanak olarak; Halil Bey'in çeşmeleri temizleme ve su hayrını sürdürme davranışlarını ise örnek üzerinden yapılan yorum olarak ayırın. Farklı gerekçeli cevapları kabul edin.",
+      "explanation": "Anlatıcı aidiyeti doğulan veya yurt bilinen toprağa gönülden bağlı kalmakla açıklar. Halil Bey'in su kaynağına ve çeşme yaptırma geleneğine yönelik emeği, bu bağın yerel yaşam ve kuşaklar arası aktarım yönleriyle ilişkilendirilebilir."
     }
   ]
 }
