@@ -602,6 +602,19 @@
   font-size: calc(21px / var(--canvas-scale));
 }
 
+/* Öğretmen için ikincil dosya referansı: başlıkla yarışmaz. */
+.slide--presentation .slide-video-file {
+  flex: 0 1 auto;
+  max-width: 36%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ords-color-text-muted);
+  font-size: calc(14px / var(--canvas-scale));
+  font-weight: 450;
+  letter-spacing: 0.01em;
+}
+
 .slide--presentation .counter {
   color: var(--ords-color-primary);
   font-weight: 700;
