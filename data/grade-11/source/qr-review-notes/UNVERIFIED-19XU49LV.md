@@ -1,11 +1,11 @@
-# Osmancık — sahnelenen tiyatro videosunun kısmi görsel incelemesi
+# Osmancık — sahnelenen tiyatro videosu için görsel inceleme ve anlatım özeti
 
 **Kitap:** 11. sınıf Türk Dili ve Edebiyatı, basılı s.220 / PDF s.221 · **PDF'deki EBA QR:** `572fe5fff1b65d73736b167d98ab85b4`.  
 **Drive video adayı:** `19XU49LV.mp4`, yaklaşık **04:55**.
 
-## İnceleme sınırı
+## Kaynak ve inceleme kapsamı
 
-Ders kitabındaki QR URL'si PDF üzerinden doğrulanmış durumdadır. Ancak bu MP4'ün EBA indirmesiyle dosya kökeni karşılaştırılmadı. Video **yaklaşık 15 saniye aralıklarla seçilen kareler** üzerinden görsel olarak incelendi; konuşma repliklerinin ve müziklerin tam ses dökümü yapılmadı.
+Ders kitabındaki QR URL'si PDF üzerinden doğrulanmış durumdadır. Ancak bu MP4'ün EBA indirmesiyle dosya kökeni karşılaştırılmadı. Video **yaklaşık 15 saniye aralıklarla seçilen kareler** üzerinden görsel olarak incelendi.
 
 | Yaklaşık zaman | Gözlemlenebilir görsel kanıt |
 | --- | --- |
@@ -31,6 +31,12 @@ Soru, **Osmancık sahne tiyatrosu** ile **Direnişin Ustaları radyo tiyatrosunu
 
 **Maliyet notu:** Kostüm ve dekorun görünmesi, kesin prodüksiyon maliyeti bilgisi sağlamaz.
 
+## Kullanıcı tarafından sağlanan ses ve yazı dökümü
+
+2026-10-15'te kullanıcı, 19XU49LV için zaman damgalı sahne sesi ve diyalog dökümü ile ekranda görünen yazıların dökümünü sağladı. Sunulan anlatımda canlı enstrümantal açılış (kudüm, ney, kanun ve yaylılar), Osman Bey'in Şeyh Edebali ve ailesiyle buluşması, adalet ve yönetim sorumluluğu üzerine öğütler, bilgi ve bilginlerin desteklenmesi, Bursa'nın gelecek kuşaklar için bir durak olarak anılması ve kandillerdeki sikkeler yoluyla incitmeden yardım düşüncesi yer alıyor. Ekran yazısı altyazı seçeneği bildiriminden ibaret; sahne ve kapanışta başka okunabilir metin olmadığı belirtiliyor.
+
+Web sunumuna tam diyaloglar yerine bu anlatım ve yazı içeriğinin kısa özeti eklenmiştir. Envanterdeki `spoken_audio_transcript: not_done` alanı bağımsız ses çözümlemesi durumunu izlemeyi sürdürür.
+
 ## Bekleyen doğrulamalar
 
-Osmancık sesli diyalog/müzik dökümü; Direnişin Ustaları radyo kaydı; EBA–Drive MP4 dosya kökeni; her iki kayda dayalı tam karşılaştırma.
+Direnişin Ustaları radyo tiyatrosu kaydının karşılaştırma için incelenmesi; EBA–Drive MP4 dosya kökeni; iki kayda dayalı tam karşılaştırma.

@@ -1,4 +1,4 @@
-# Orhun Vadisi — kısmi görsel video kanıtı
+# Orhun Vadisi — kısmi görsel kanıt ve kullanıcı dökümü
 
 **Basılı sayfa:** 113 · **Kitap PDF'sinden doğrulanan EBA QR kimliği:** `06740daa8a1a08c3bfe9d46c65f3fe56`  
 **Kullanıcı tarafından tekrar yüklenen MP4:** `19XU49LT.mp4`, 04:24,033; SHA-256 `25d236f97f199afa4d3c94462b44061a93e24da13aec6afc6a2bf58f3000d9ab`. Dosya, daha önceki QR aday envanterindeki SHA-256 ile eşleşiyor; TRT logosu ve Orhun anıtları görüntülerde görülüyor.
@@ -24,6 +24,10 @@
 - **Q02–Q04 (yazılış amacı, Türk dili/tarihi, Çince cephe):** Görüntüler tek başına sözlü açıklamaların metnini veya tarihî yorumları kanıtlamaz; bu soruların tarihsel cevapları kitap ve güvenilir araştırma kaynaklarıyla temellendirilmelidir.
 - **Q05 (kaplumbağa kaide):** Hayvan figürlü taş kaide görüntüsü kavram tartışması için destek olabilir; simgesel anlamlar görüntüden kesin tarihsel neden olarak çıkarılamaz.
 
-## Tamamlanmamış
+## Kullanıcı tarafından sağlanan döküm
 
-Sunucunun konuşmaları, taş yazıtların birebir üzerindeki bütün karakterler ve teşhir nesnelerinin ayrıntılı tanımları doğrulanmadı. Bu dosya **tam ses dökümü değildir**.
+2026-10-15'te kullanıcı, videonun dört zaman aralığı için ayrıntılı sözlü anlatım dökümü ile ekrandaki yazılara ilişkin notlar sağladı. Sunulan döküme göre anlatım; Orhun Vadisi ve Bilge Kağan/Kül Tigin anıtlarını, anıtların tarihlerini ve yazı sistemini, kaplumbağa kaideyi, 1889'da bulunuş ve çözümleme sürecini, Bilge Kağan'ın tacını ve müze buluntularını ele alıyor. Ekran notları altyazı bildirimi ve logoları, yol ve abide başlıklarını, yazıt yüzeylerini ve tacın üç dilli vitrin kartını kapsıyor.
+
+Bu döküm MP4 sesiyle bağımsız olarak karşılaştırılmadı; dolayısıyla **doğrulanmış transkript** değildir. Web sunumunda tam döküm yerine yalnız kısa, kullanıcı dökümüne dayalı bir özet kullanılır. Medya envanterindeki `spoken_audio_transcript: not_done` ve kısmi görsel kanıt durumu bu nedenle korunur. Tarihî veya simgesel yorumlar yalnız dökümde geçiyor diye doğrulanmış kabul edilmemelidir.
+
+Yazıtların yüzeyindeki bütün karakterler ve teşhir nesnelerinin ayrıntılı tanımları da bağımsız olarak doğrulanmadı.

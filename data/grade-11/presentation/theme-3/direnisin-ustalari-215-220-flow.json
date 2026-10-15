@@ -323,11 +323,15 @@
       "prompt": "Sıra Sizde — Osmancık ile Direnişin Ustaları'nı karşılaştırmaya hazırlanın.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Her iki QR kaydını da inceledikten sonra karşılaştırma haritasını doldurun. Yalnız sahne tiyatrosu veya radyo tiyatrosu hakkında genel tahmin yapmak yeterli değildir.",
+        "lead": "Osmancık videosundaki sahne, müzik ve diyalog notlarını karşılaştırmanın ilk tarafında kullanın; Direnişin Ustaları kaydını da dinleyip iki yapımı dokuz ölçütte karşılaştırın.",
         "sections": [
           {
             "title": "Osmancık",
-            "body": "Gördüğünüz ve duyduğunuz sahneleme özelliklerini somut olarak not edin."
+            "body": "00:05–00:37'de kudüm, ney, kanun ve yaylılarla enstrümantal açılış duyulur. Ardından Osman Bey'in Şeyh Edebali ve ailesiyle buluşması, Orhan'ın büyümesi ve Osman'ın işleri/adalet kararları üzerine konuşması gelir. Edebali adil ve acele etmeden karar vermeyi, halkı gözetmeyi, alınan yeri koruyup onarmayı, bilgiyi ve bilginleri desteklemeyi öğütler. Osman Bursa'yı sonraki kuşaklar için bir durak olarak anar. Kandillerdeki sikkeler, ihtiyaç sahibine onu utandırmadan yardım etme düşüncesiyle açıklanır; sahne sofra daveti ve kapanış müziğiyle biter."
+          },
+          {
+            "title": "Ekrandaki yazı",
+            "body": "00:01–00:04'te ve 04:53'te açık kitap ve sonbahar yaprakları görseli üzerindeki aşağı okla “İçerikte alt yazı seçeneği bulunmaktadır.” bildirimi görünür. Sahne ve kapanışta okunabilir başka yazı, afiş, altyazı veya jenerik metni yer almaz."
           },
           {
             "title": "Direnişin Ustaları",
@@ -359,7 +363,7 @@
       "prompt": "Sıra Sizde 1 — İki tiyatroyu zihin haritasındaki dokuz ölçüte göre karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dokuz ölçütü iki kayıttan hareketle karşılaştırın. ‘Maliyet’ için gözlenebilen teknik gereksinimi gerçek üretim bütçesinden ayırın; kesin tutar yalnız doğrulanmış verilerle belirlenebilir.",
+        "lead": "Osmancık videosundaki sahne ve diyalog özellikleriyle Direnişin Ustaları kaydındaki işitsel özellikleri dokuz ölçütte karşılaştırın. ‘Maliyet’ için teknik gereksinimi gerçek üretim bütçesinden ayırın.",
         "items": [
           "Müzik",
           "Dil kullanımı",
@@ -379,14 +383,14 @@
       "prompt": "Karşılaştırma devamı — Dekor, ses tonu, atmosfer ve empati.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Dört ölçütü de zihin haritasının ikinci kısmında işleyin; önceki sorudaki dokuz ölçütün toplamını koruyun.",
+        "lead": "İkinci kısımda Osmancık'taki dönem dekoru, oyunculuk ve duygu geçişlerini Direnişin Ustaları kaydındaki işitsel anlatımla karşılaştırın.",
         "items": [
           "Dekor",
           "Ses tonu",
           "Atmosfer",
           "Empati"
         ],
-        "note": "Osmancık görüntüsü veya Direnişin Ustaları kaydı görülmeden yapımlara özgü özellikler kesin olarak yazılmaz."
+        "note": "Osmancık sütununda videodaki kostüm, dekor, oyunculuk ve diyalog özelliklerini kullanın; Direnişin Ustaları sütununu radyo tiyatrosunun ses, söz, müzik ve efekt özellikleriyle doldurun."
       }
     },
     {

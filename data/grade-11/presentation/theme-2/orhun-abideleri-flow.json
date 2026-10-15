@@ -19,7 +19,17 @@
       "prompt": "Orhun Vadisi — İlk sorudan önce kitaptaki videoyu karekoddan izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "İlk soru Orhun Vadisi videosundaki bölgeye dayanır. Karekod erişilebiliyorsa videoyu izleyip yer, çevre ve anıtlarla ilgili somut ayrıntıları not edin; erişilemiyorsa videoda görülmeyen ayrıntıları kesin bilgi gibi kullanmayın.",
+        "lead": "İlk sorudan önce kitap videosunu izleyip kendi notlarınızı alın. Aşağıdaki notlar videodaki sözlü anlatım ve ekranda görülen yazılardaki başlıca bilgileri özetler; bunları Orhun Abideleri'nin metniyle ilişkilendirin.",
+        "sections": [
+          {
+            "title": "Sözlü anlatımdan öne çıkanlar",
+            "body": "00:41–01:03'te sunucu, yaklaşık 1300 yıllık anıtlara ve Bilge Kağan Anıtı'na yaklaşırken gök ve yerle başlayan öğüdü, vadinin önemini ve abidelerin millet hafızasındaki yerini anıyor. 01:30–02:01'de Kül Tigin Âbidesi'nin 732'de yaptırıldığını, Türk adının yazıtlardaki kullanımını, 38 harfli Göktürk alfabesini ve kaplumbağa kaidenin uzun ömür ile bereketi simgelediğini aktarıyor. 02:44–03:38'de Kül Tigin (732) ve Bilge Kağan (735) anıtlarının asıllarının müzede korunmasını, siyasetname niteliğini ve Türk tarihini kendi dillerinden anlatmasını vurguluyor; 1889'da Yadrintsev'in buluşu ile Radloff ve Thomsen'in çözümlemesini, Çince yazıların ve “Tengri” sözcüğünün katkısını anlatıyor. 03:43–04:19'da 2001 kazılarında bulunan, VI–VIII. yüzyıla tarihlenen Bilge Kağan tacı, balballar, aslan ve taş heykeller ile tarihî değerleri yaşatmadaki katkısı için TİKA'ya teşekkür yer alıyor."
+          },
+          {
+            "title": "Ekrandaki yazılardan öne çıkanlar",
+            "body": "00:01–00:04'te aşağı okla “İçerikte alt yazı seçeneği bulunmaktadır.” bildirimi; görüntülerde TRT logosu ve mikrofonda TRT AVAZ logosu yer alıyor. 00:17'de “BİLGE KAĞAN KARAYOLU”, 02:26'da “KÜL TİGİN ABİDESİ” yazısı; 03:24–03:30'da yazıtların Çin karakterli ve Göktürk harfli yüzleri gösteriliyor. 03:43–03:46'daki vitrin kartı Moğolca, İngilizce ve Türkçe olarak tacı “БИЛГЭ ХААНЫ АЛТАН ТИТЭМ / GOLDEN CROWN OF BILGE KHAN / BİLGE KAĞAN ALTIN TACI” diye adlandırıyor; Göktürk/Türk dönemini VI–VIII. yüzyıl olarak ve Moğol-Türk ortak kazısını 2001 yılıyla ilişkilendiriyor."
+          }
+        ],
         "sources": [
           {
             "label": "Ders kitabı s.113 — karekodun bulunduğu sayfayı aç",
