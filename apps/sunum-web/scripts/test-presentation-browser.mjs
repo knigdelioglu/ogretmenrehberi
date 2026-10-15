@@ -583,23 +583,31 @@ for (const [width, height, zoom] of [[1920, 1080, 1], [1228, 700, 1], [1228, 412
       try { animation.finish(); } catch { /* no active animation */ }
     }
     const label = document.querySelector('#canvas .slide-video-file');
+    const title = document.querySelector('#canvas .slide__foot .lesson-name');
     const dock = document.querySelector('#dock');
     const rect = (node) => {
       const box = node?.getBoundingClientRect();
-      return box && { left: box.left, right: box.right, width: box.width };
+      return box && { left: box.left, right: box.right, top: box.top, bottom: box.bottom, width: box.width };
     };
     return {
       label: label?.textContent?.trim(),
       labelRect: rect(label),
+      titleRect: rect(title),
       dockRect: rect(dock),
       scrollWidth: label?.scrollWidth,
       clientWidth: label?.clientWidth
     };
   })()`);
   assert.equal(placement.label, "19XU4CVR.mp4", "video filename displays without technical prefix");
-  assert.ok(placement.labelRect?.left >= 0 &&
-    placement.labelRect?.right + 8 <= placement.dockRect?.left,
-    `video filename stays left of navigation at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
+  const adjacentGap = placement.labelRect?.left - placement.titleRect?.right;
+  assert.ok(adjacentGap >= 0 && adjacentGap <= 36,
+    `video filename is immediately after lesson title at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
+  const overlapsDock = placement.labelRect?.right > placement.dockRect?.left &&
+    placement.labelRect?.left < placement.dockRect?.right &&
+    placement.labelRect?.bottom > placement.dockRect?.top &&
+    placement.labelRect?.top < placement.dockRect?.bottom;
+  assert.ok(placement.labelRect?.left >= 0 && !overlapsDock,
+    `video filename must not be covered by navigation at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
   assert.ok(placement.scrollWidth <= placement.clientWidth + 1,
     `video filename is fully readable at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
 }
