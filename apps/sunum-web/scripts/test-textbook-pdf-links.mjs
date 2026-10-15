@@ -105,5 +105,5 @@ if (currentPdfPath) {
   }
   console.log(`[sunum-web] ${selected.name} PDF source passed: SHA256, ${pages.length} pages, ${checkedPages.length} printed-page targets checked (offset ${selected.offset}). Official web links still use printed-page numbering.`);
 } else {
-  console.log("[sunum-web] Current MEB PDF mapping metadata and all ${links.length} printed-page links passed (set CURRENT_TEXTBOOK_PDF_PATH to verify either pinned textbook PDF).");
+  console.log(`[sunum-web] Current MEB PDF mapping metadata and all ${links.length} printed-page links passed (set CURRENT_TEXTBOOK_PDF_PATH to verify either pinned textbook PDF).`);
 }

@@ -144,7 +144,7 @@ for (const step of builtCatalog.lessons.flatMap((lesson) => lesson.steps)) {
 }
 const qaModernCoverage = Object.fromEntries([...qaModernCountsByLayout.entries()].sort(([a], [b]) => a.localeCompare(b)));
 const qaModernEntryTypes = Object.fromEntries([...qaModernCountsByEntryType.entries()].sort(([a], [b]) => a.localeCompare(b)));
-assert.equal(qaModernEntryTypes.question_answer, 387, "all 387 question_answer steps remain QA-modern eligible");
+assert.equal(qaModernEntryTypes.question_answer, 411, "all 411 current question_answer steps remain QA-modern eligible");
 assert.equal(Object.values(qaModernEntryTypes).reduce((sum, count) => sum + count, 0), 718,
   "all prompt-bearing steps with an answer reveal and typed canonical answer enter QA-modern");
 console.log(`[sunum-web] QA-modern eligible catalog steps by layout: ${JSON.stringify(qaModernCoverage)}; by entry type: ${JSON.stringify(qaModernEntryTypes)} (total ${catalogAnswerRevealSteps.length}).`);
