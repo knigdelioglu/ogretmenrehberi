@@ -8,6 +8,13 @@ const cards = {
     lead: "Mektubun kişisel ilişkiler ve kültürel hafıza açısından önemini ele alan videoyu izleyin.",
     items: ["Mektupların duyguları ve yaşanan dönemi nasıl yansıttığını düşünün.", "Mektup ile günümüzün dijital iletişim biçimlerini karşılaştırmak üzere not alın."]
   },
+  "T11-T01-KONUSMA/s53-video-barriers": {
+    title: "Sözlü İletişim Engelleri",
+    file: "19XU3SUD.mp4",
+    fileCandidate: true,
+    lead: "Etkili konuşma ve dinlemeyi güçleştiren durumları tanıtan kısa videoyu izleyin.",
+    items: ["Fiziksel, bilişsel ve duyuşsal engellerin nasıl ortaya çıktığını gözlemleyin.", "Bu engelleri azaltmak için uygulanabilecek yöntemleri tartışın."]
+  },
   "T11-T01-KONUSMA/s53-video-summary": {
     title: "Seksenler — İletişim Engelleri",
     file: "19XU49K2.mp4",
