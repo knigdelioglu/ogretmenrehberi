@@ -51,11 +51,11 @@ const s88Questions = ["s88-q1", "s88-q2", "s88-q3", "s88-q4", "s88-q5", "s88-q6"
   .map((id) => theme2IntroById.get(id)?.answer);
 assert(
   s88Questions.every((answer) => answer?.entry_type === "question_answer") &&
-    s88Questions.every((answer) => answer?.source_locator?.includes("QR video")),
-  "s.88 soruları soru kökünden cevaplanabilir kalmalı; QR kaynak izi korunmalı."
+    s88Questions.every((answer) => answer?.source_locator?.includes("19XU49LO.mp4")),
+  "s.88 soruları doğrulanmış 19XU49LO videosunun kaynak izini korumalı."
 );
 assert(
-  /gördüğü|duyduğu/i.test(s88Questions[0]?.guidance ?? "") &&
+  /toy|festival|saya/i.test(s88Questions[0]?.guidance ?? "") &&
     !/videoda.*(kesin|gerçek).*(tören|imece|sahne)/i.test(
       s88Questions.map((answer) => answer.answer).join(" ")
     ) &&
