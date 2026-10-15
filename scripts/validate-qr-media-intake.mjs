@@ -250,7 +250,8 @@ for (const id of ["T2-P141-Q01", "T2-P141-Q02"]) {
   const entry = t2Part9.entries.find((candidate) => candidate.question_id === id);
   assert.equal(entry?.entry_type, "source_limited", `${id} cannot treat an untranscribed interview as verified speech`);
   assert.ok(entry.source_locator.includes("UNVERIFIED-19XU49MG.md"));
-  assert.ok(entry.answer.includes("transkript"));
+  assert.match(`${entry.guidance ?? ""} ${entry.explanation ?? ""}`, /transkript|ses dökümü/iu,
+    `${id}: teacher-facing provenance must document the missing transcript`);
 }
 for (const forbidden of ["Tengri Dağları", "Buhara", "Tebriz", "Kerkük", "Bağdat", "Mehmet Oktay Ergani"]) {
   const unsupportedInterviewClaims = t2Part9.entries
