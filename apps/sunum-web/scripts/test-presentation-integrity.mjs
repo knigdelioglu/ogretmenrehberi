@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { gunzipSync } from "node:zlib";
 import { resolveWebPresentation, validateWebPresentationIndex } from "../../lesson-player/scripts/web-presentation.mjs";
+import { projectVideoStep } from "./video-presentation.mjs";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -209,12 +210,16 @@ function verifyProductionCatalog() {
   for (const lesson of generatedTheme) {
     const encryptedLesson = encryptedBySlug.get(lesson.lesson_slug);
     assert(encryptedLesson, `${lesson.lesson_slug}: generated lesson is present in encrypted catalog`);
-    assert.equal(encryptedLesson.steps.length, lesson.steps.length,
-      `${lesson.lesson_slug}: encrypted step count matches the generated catalog`);
-    for (const [index, step] of lesson.steps.entries()) {
+    const projectedSteps = lesson.steps
+      .map((step) => ({ canonical: step, projected: projectVideoStep(step, lesson.lesson_id) }))
+      .filter(({ projected }) => projected !== null);
+    assert.equal(encryptedLesson.steps.length, projectedSteps.length,
+      `${lesson.lesson_slug}: encrypted step count matches Web Sunum projection`);
+    for (const [index, { canonical: step, projected }] of projectedSteps.entries()) {
       const encryptedStep = encryptedLesson.steps[index];
-      assert.equal(encryptedStep.id, step.id, `${lesson.lesson_slug}: encrypted step order matches generated catalog`);
-      assert.equal(encryptedStep.prompt, step.display_prompt, `${lesson.lesson_slug}/${step.id}: encrypted prompt matches generated catalog`);
+      assert.equal(encryptedStep.id, step.id, `${lesson.lesson_slug}: encrypted step order matches Web Sunum projection`);
+      assert.equal(encryptedStep.prompt, projected.display_prompt,
+        `${lesson.lesson_slug}/${step.id}: encrypted video/card prompt matches Web Sunum projection`);
       assert.deepEqual(encryptedStep.answer, expectedPublicAnswer(lesson, step),
         `${lesson.lesson_slug}/${step.id}: encrypted answer contains the current student-facing response and no private linkage metadata`);
       assert.equal(encryptedStep.content?.note, undefined,
