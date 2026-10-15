@@ -11,10 +11,10 @@ assert(
   "2. Tema giriş bloğu kitapta s.84–88 aralığını kapsamalı."
 );
 assert(
-  theme2Intro.coverage.steps === 15 &&
+  theme2Intro.coverage.steps === 16 &&
     theme2Intro.coverage.source_records === 14 &&
     theme2Intro.coverage.answer_entries === 12,
-  "2. Tema giriş bloğu 15 adım / 14 source / 12 answer olmalı."
+  "2. Tema giriş bloğu 16 adım / 14 source / 12 answer olmalı."
 );
 
 const theme2IntroById = new Map(
@@ -51,11 +51,11 @@ const s88Questions = ["s88-q1", "s88-q2", "s88-q3", "s88-q4", "s88-q5", "s88-q6"
   .map((id) => theme2IntroById.get(id)?.answer);
 assert(
   s88Questions.every((answer) => answer?.entry_type === "question_answer") &&
-    s88Questions.every((answer) => answer?.source_locator?.includes("QR video")),
-  "s.88 soruları soru kökünden cevaplanabilir kalmalı; QR kaynak izi korunmalı."
+    s88Questions.every((answer) => answer?.source_locator?.includes("19XU49LO.mp4")),
+  "s.88 soruları doğrulanmış 19XU49LO videosunun kaynak izini korumalı."
 );
 assert(
-  /gördüğü|duyduğu/i.test(s88Questions[0]?.guidance ?? "") &&
+  /toy|festival|saya/i.test(s88Questions[0]?.guidance ?? "") &&
     !/videoda.*(kesin|gerçek).*(tören|imece|sahne)/i.test(
       s88Questions.map((answer) => answer.answer).join(" ")
     ) &&
@@ -188,7 +188,7 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 203 &&
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 208 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 159 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 177,
   "Tema 2 tam kapsam 203 adım / 159 source / 177 answer olmalı."
@@ -216,9 +216,9 @@ assert(
   "s.113 Orhun Vadisi video hatırlatması ilk sorudan önce gelmeli."
 );
 assert(
-  orhunById.get("s113-q1")?.answer?.entry_type === "source_limited" &&
+  orhunById.get("s113-q1")?.answer?.entry_type === "question_answer" &&
     orhunById.get("s113-q1")?.answer?.guidance,
-  "s.113 QR video sorusu source_limited ve yönlendirmeli kalmalı."
+  "s.113 video dökümüyle doğrulanan soru cevap ve yönlendirme içermeli."
 );
 assert(
   orhunById.get("s114-115-reading")?.answer === null &&
@@ -318,7 +318,7 @@ assert(
   "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
 );
 assert(
-  speaking2.coverage.steps === 24 &&
+  speaking2.coverage.steps === 25 &&
     speaking2.coverage.source_records === 13 &&
     speaking2.coverage.answer_entries === 18,
   "2. Tema Konuşma 24 adım / 13 source / 18 answer olmalı."
@@ -333,9 +333,9 @@ assert(
   "s.129 video hatırlatması kaynak sınırlı sorudan önce gelmeli."
 );
 assert(
-  speaking2ById.get("s129-q1")?.answer?.entry_type === "source_limited" &&
+  speaking2ById.get("s129-q1")?.answer?.entry_type === "question_answer" &&
     speaking2ById.get("s129-q1")?.answer?.guidance,
-  "s.129 QR-video sorusu source_limited ve yönlendirmeli kalmalı."
+  "s.129 video dökümüyle doğrulanan soru cevap ve yönlendirme içermeli."
 );
 assert(
   speaking2ById.get("s130-plan")?.answer?.entry_type === "performance_support" &&
@@ -384,7 +384,7 @@ assert(
   "Âşık Atışması doğal bloğu s.136–147 aralığını kapsamalı."
 );
 assert(
-  asik.coverage.steps === 27 &&
+  asik.coverage.steps === 29 &&
     asik.coverage.source_records === 22 &&
     asik.coverage.answer_entries === 25,
   "Âşık Atışması 27 adım / 22 source / 25 answer olmalı."
@@ -399,7 +399,7 @@ assert(
 );
 assert(
   asikById.get("s140-listen")?.answer === null &&
-    asikById.get("s140-vocabulary")?.answer?.entry_type === "source_limited" &&
+    asikById.get("s140-vocabulary")?.answer?.entry_type === "question_answer" &&
     asikById.get("s140-vocabulary")?.content?.items === undefined &&
     asikById.get("s140-vocabulary")?.answer?.dictionary_terms?.length === 5 &&
     asikById.get("s140-vocabulary")?.presentation?.interleave?.source === "dictionary_terms" &&
@@ -407,15 +407,15 @@ assert(
   "Gerçek video dinleme adımı ile beş sözcüklük kaynaklı aşamalı sözlük akışı ayrılmalı."
 );
 assert(
-  asikById.get("s142-q2")?.answer?.entry_type === "source_limited" &&
-    asikById.get("s143-language")?.answer?.entry_type === "source_limited" &&
-    asikById.get("s144-map")?.answer?.entry_type === "source_limited",
-  "Benzetme, video dili ve çok modlu unsur çözümlemeleri kaynak-sınırlı kalmalı."
+  asikById.get("s142-q2")?.answer?.entry_type === "question_answer" &&
+    asikById.get("s143-language")?.answer?.entry_type === "question_answer" &&
+    asikById.get("s144-map")?.answer?.entry_type === "performance_support",
+  "Benzetme ve dil analizi doğrulanmış cevabı, zihin haritası performans desteğini korumalı."
 );
 assert(
-  asikById.get("s145-hats")?.answer?.entry_type === "source_limited" &&
+  asikById.get("s145-hats")?.answer?.entry_type === "performance_support" &&
     Object.keys(asikById.get("s145-hats")?.answer?.answer_sections ?? {}).length === 6,
-  "Altı şapka çerçevesi korunmalı ancak gerçek video içeriği uydurulmamalı."
+  "Altı şapka çerçevesi performance_support olarak korunmalı."
 );
 assert(
   asikById.get("s146-viewpoints")?.answer?.entry_type === "performance_support" &&
@@ -423,10 +423,10 @@ assert(
   "s.146 görüş geliştirme dört kitap yargısını görünür tutmalı."
 );
 assert(
-  asikById.get("s147-q1")?.answer?.entry_type === "source_limited" &&
+  asikById.get("s147-q1")?.answer?.entry_type === "question_answer" &&
     asikById.get("s147-reflection")?.answer?.entry_type === "performance_support" &&
     asikById.get("s147-reflection")?.content?.items?.length === 5,
-  "s.147 performans değerlendirmesi kaynak-sınırlı; yansıtıcı yazı beş soruluk yapı olmalı."
+  "s.147 video destekli değerlendirme yanıtı; yansıtıcı yazı beş soruluk yapı olmalı."
 );
 
 const museumWriting = byLessonId.get("T11-T02-YAZMA");
@@ -506,7 +506,7 @@ const theme2Assessment = byLessonId.get("T11-T02-DEGERLENDIRME");
 assert(theme2Assessment, "Tema 2 değerlendirme dersi bulunamadı.");
 assert(
   theme2Assessment.printed_page_range === "155-159" &&
-    theme2Assessment.coverage.steps === 10 &&
+    theme2Assessment.coverage.steps === 11 &&
     theme2Assessment.coverage.source_records === 9 &&
     theme2Assessment.coverage.answer_entries === 9,
   "Tema 2 değerlendirme 10 adım / 9 source / 9 answer olmalı."
@@ -532,9 +532,9 @@ assert(
   "s.159 soru 7 yanlış değerlendirme ve kişisel yanıtı birlikte kapsamalı."
 );
 assert(
-  assessment2ById.get("s159-q8")?.answer?.entry_type === "source_limited" &&
+  assessment2ById.get("s159-q8")?.answer?.entry_type === "question_answer" &&
     assessment2ById.get("s159-q9")?.answer?.entry_type === "performance_support",
-  "QR ayrıntıları uydurulmamalı, slogan tek doğru gibi sunulmamalı."
+  "QR video sorusu doğrulanmış, slogan performance_support kalmalı."
 );
 for (const step of theme2Assessment.steps) {
   assert(step.source.source_status === "VERIFIED", `Tema 2 assessment source VERIFIED olmalı: ${step.source.source_record_id}`);

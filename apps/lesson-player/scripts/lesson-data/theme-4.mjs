@@ -92,7 +92,7 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 237 &&
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 244 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 164,
   "Tema 4 tamamı 14 ders / 237 ekran / 143 kaynak / 164 cevap olmalı.");
@@ -430,11 +430,11 @@ for (const step of theatreWorkshop.steps) {
 
 const anadoluListening = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-284-290");
 assert(anadoluListening && anadoluListening.printed_page_range === "284-290" &&
-  anadoluListening.coverage.steps === 22 && anadoluListening.coverage.source_records === 12 &&
+  anadoluListening.coverage.steps === 26 && anadoluListening.coverage.source_records === 12 &&
   anadoluListening.coverage.answer_entries === 20,
   "Anadolu İnsanı s.284–290 22 ekran / 12 kaynak / 20 cevap içermeli.");
 const anadoluById = new Map(anadoluListening.steps.map(step => [step.id, step]));
-assert(anadoluById.size === 22, "Anadolu İnsanı ekran kimlikleri benzersiz olmalı.");
+assert(anadoluById.size === 26, "Anadolu İnsanı ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s284-q1","T04-S0084","T4-P284-Q01"],
   ["s284-q2","T04-S0084","T4-P284-Q02"],
@@ -467,7 +467,11 @@ assert(anadoluById.get("s287-vocab")?.content?.items?.length === 5 &&
 assert(anadoluById.get("s288-q2")?.content?.items?.length === 4 &&
   anadoluById.get("s286-checklist")?.content?.items?.length === 5,
   "Zihin haritasının dört boş alanı ve dinleme kontrol listesinin beş ölçütü korunmalı.");
-for (const id of ["s286-theme-words","s286-messages","s287-q1","s288-q2","s289-q3","s289-q5","s290-q6","s290-q7","s290-q8","s290-q9"]) {
+for (const id of ["s286-theme-words", "s286-messages"]) {
+  assert(anadoluById.get(id)?.answer?.entry_type === "reference_answer",
+    `Video dökümünden oluşturulan referans cevap korunmalı: ${id}`);
+}
+for (const id of ["s287-q1","s288-q2","s289-q3","s289-q5","s290-q6","s290-q7","s290-q8","s290-q9"]) {
   assert(anadoluById.get(id)?.answer?.entry_type === "source_limited",
     `QR video görülmeden kesin cevap üretilmemeli: ${id}`);
 }
@@ -478,11 +482,11 @@ for (const step of anadoluListening.steps) {
 
 const anadoluAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297");
 assert(anadoluAnalysis && anadoluAnalysis.printed_page_range === "291-297" &&
-  anadoluAnalysis.coverage.steps === 24 && anadoluAnalysis.coverage.source_records === 21 &&
+  anadoluAnalysis.coverage.steps === 25 && anadoluAnalysis.coverage.source_records === 21 &&
   anadoluAnalysis.coverage.answer_entries === 23,
   "Anadolu İnsanı çözümleme s.291–297 24 ekran / 21 kaynak / 23 cevap içermeli.");
 const anadoluAnalysisById = new Map(anadoluAnalysis.steps.map(step => [step.id, step]));
-assert(anadoluAnalysisById.size === 24, "Anadolu İnsanı çözümleme ekran kimlikleri benzersiz olmalı.");
+assert(anadoluAnalysisById.size === 25, "Anadolu İnsanı çözümleme ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s291-q10","T04-S0096","T4-P291-Q10"],
   ["s291-q11","T04-S0097","T4-P291-Q11"],
@@ -518,9 +522,16 @@ assert(anadoluAnalysisById.get("s294-q1")?.content?.items?.length === 5 &&
 assert(anadoluAnalysisById.get("s295-q12")?.answer?.entry_type === "source_limited" &&
   anadoluAnalysisById.get("s295-q12")?.answer?.printed_page === 295,
   "Çözümleyebilme 12 sayfa alanı sayısal olmalı ve QR sınırı korunmalı.");
-for (const id of ["s291-q10","s291-q11","s293-q2","s293-q3","s294-q1","s294-q2","s294-q3","s294-q4","s294-q5","s294-q6","s295-q7","s295-q8","s295-q9","s295-q10","s295-q11","s295-q12","s296-q13","s296-q14"]) {
+for (const id of ["s291-q10","s294-q1","s294-q2","s294-q3","s294-q4","s294-q5","s294-q6","s295-q7","s295-q8","s295-q9","s295-q10","s295-q11","s295-q12","s296-q13","s296-q14"]) {
   assert(anadoluAnalysisById.get(id)?.answer?.entry_type === "source_limited",
     `QR video görülmeden çözümleme cevabı kesinleştirilmemeli: ${id}`);
+}
+assert(anadoluAnalysisById.get("s291-q11")?.answer?.entry_type === "reference_answer",
+  "s291-q11 video referans cevabı ile doğrulanmalı.");
+for (const id of ["s293-q2", "s293-q3"]) {
+  assert(anadoluAnalysisById.get(id)?.answer?.entry_type === "question_answer" &&
+    anadoluAnalysisById.get(id)?.answer?.source_locator?.includes(".mp4"),
+    `s293 video dökümünden doğrulanmış cevap korunmalı: ${id}`);
 }
 for (const step of anadoluAnalysis.steps) {
   assert(step.source.source_status === "VERIFIED",
@@ -529,11 +540,11 @@ for (const step of anadoluAnalysis.steps) {
 
 const posterWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-AFIS-ATOLYESI-298-302");
 assert(posterWorkshop && posterWorkshop.printed_page_range === "298-302" &&
-  posterWorkshop.coverage.steps === 20 && posterWorkshop.coverage.source_records === 13 &&
+  posterWorkshop.coverage.steps === 21 && posterWorkshop.coverage.source_records === 13 &&
   posterWorkshop.coverage.answer_entries === 16,
   "Afiş atölyesi s.298–302 20 ekran / 13 kaynak / 16 cevap içermeli.");
 const posterById = new Map(posterWorkshop.steps.map(step => [step.id, step]));
-assert(posterById.size === 20, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
+assert(posterById.size === 21, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s299-q1","T04-S0118","T4-P299-Q01"],
   ["s299-q2","T04-S0119","T4-P299-Q02"],
@@ -578,11 +589,11 @@ for (const step of posterWorkshop.steps) {
 
 const theme4Assessment = lessons.find(lesson => lesson.lesson_id === "T11-T04-DEGERLENDIRME-303-307");
 assert(theme4Assessment && theme4Assessment.printed_page_range === "303-307" &&
-  theme4Assessment.coverage.steps === 19 && theme4Assessment.coverage.source_records === 14 &&
+  theme4Assessment.coverage.steps === 20 && theme4Assessment.coverage.source_records === 14 &&
   theme4Assessment.coverage.answer_entries === 14,
   "Tema 4 değerlendirme s.303–307 19 ekran / 14 kaynak / 14 cevap içermeli.");
 const theme4AssessmentById = new Map(theme4Assessment.steps.map(step => [step.id, step]));
-assert(theme4AssessmentById.size === 19, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
+assert(theme4AssessmentById.size === 20, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
 const theme4AssessmentOrderedIds = theme4Assessment.steps.map((step) => step.id);
 assert(
   theme4AssessmentById.get("s307-aidiyet-media-reminder")?.layout === "process" &&
@@ -603,8 +614,8 @@ for (const [id, sourceId, answerId] of [
   ["s307-q10","T04-S0139","T4-P307-Q10"],
   ["s307-q11","T04-S0140","T4-P307-Q11"],
   ["s307-q12","T04-S0141","T4-P307-Q12"],
-  ["s307-q13","T04-S0142","T4-P307-SL13"],
-  ["s307-q14","T04-S0143","T4-P307-SL14"]
+  ["s307-q13","T04-S0142","T4-P307-Q13"],
+  ["s307-q14","T04-S0143","T4-P307-Q14"]
 ]) {
   assert(theme4AssessmentById.get(id)?.source?.source_record_id === sourceId &&
     theme4AssessmentById.get(id)?.answer?.question_id === answerId,
@@ -614,9 +625,9 @@ assert(theme4AssessmentById.get("s307-q11")?.content?.items?.length === 4 &&
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections &&
   Object.keys(theme4AssessmentById.get("s305-q5")?.answer?.answer_sections ?? {}).length === 4,
   "İzleme mecraları tablosu ve afiş görsel değerlendirmesi yapılandırılmış kalmalı.");
-assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "source_limited",
-  "Aidiyet videosu görülmeden son iki soru kesin cevap gibi sunulmamalı.");
+assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "question_answer" &&
+  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "question_answer",
+  "Kaynaklı Aidiyet cevapları doğrulanmış video dökümüne bağlı question_answer olmalı.");
 for (const step of theme4Assessment.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 4 s.303–307 doğrulanmış kaynak: ${step.source.source_record_id}`);
@@ -687,11 +698,12 @@ assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Örnek du
   !JSON.stringify(theme4AssessmentById.get("s305-q5")?.answer).includes("Kiraz") &&
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections?.["Görsel 1 — çiçekli dal"]?.includes("kesinleştirilmez"),
   "s.304 örnek duygu tek doğruya çevrilmemeli; s.305 görsel türü doğrulanamayacak biçimde kesinleştirilmemeli.");
-assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "source_limited" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Videoda gözlediğim kişi, davranış veya tutum"] === "[...]" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Her özellik için video kanıtı"] === "[...]" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "source_limited" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Video kanıtı"] === "[...]",
-  "s.307 Aidiyet cevapları video kanıtı olmadan doldurulmamalı.");
+assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "question_answer" &&
+  theme4AssessmentById.get("s307-q13")?.answer?.source_locator?.includes("19XU49LS.mp4") &&
+  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Halil Bey'den kanıtlar"] &&
+  theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "question_answer" &&
+  theme4AssessmentById.get("s307-q14")?.answer?.source_locator?.includes("19XU49LS.mp4") &&
+  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Bu kanıtın aidiyetle ilişkisi"],
+  "s.307 Aidiyet cevapları doğrulanmış video kaynağı ve somut kanıt içermeli.");
 
 }

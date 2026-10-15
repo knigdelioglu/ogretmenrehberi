@@ -144,7 +144,7 @@ for (const step of builtCatalog.lessons.flatMap((lesson) => lesson.steps)) {
 }
 const qaModernCoverage = Object.fromEntries([...qaModernCountsByLayout.entries()].sort(([a], [b]) => a.localeCompare(b)));
 const qaModernEntryTypes = Object.fromEntries([...qaModernCountsByEntryType.entries()].sort(([a], [b]) => a.localeCompare(b)));
-assert.equal(qaModernEntryTypes.question_answer, 387, "all 387 question_answer steps remain QA-modern eligible");
+assert.equal(qaModernEntryTypes.question_answer, 411, "all 411 current question_answer steps remain QA-modern eligible");
 assert.equal(Object.values(qaModernEntryTypes).reduce((sum, count) => sum + count, 0), 718,
   "all prompt-bearing steps with an answer reveal and typed canonical answer enter QA-modern");
 console.log(`[sunum-web] QA-modern eligible catalog steps by layout: ${JSON.stringify(qaModernCoverage)}; by entry type: ${JSON.stringify(qaModernEntryTypes)} (total ${catalogAnswerRevealSteps.length}).`);
@@ -1600,11 +1600,13 @@ presentationBrowserSuite: {
     console.log("[sunum-web] QR reference student-copy regression passed: s67 prompt is concise and audit notes are absent.");
     assert.ok(visual.sources > 0, "source reference keeps its existing source-link list");
     const nextReferenceEntry = sourceReference.lesson.steps[sourceReference.slide];
-    await next();
-    visual = await until(async () => {
-      const state = await visualLayoutState();
-      return state.prompt === nextReferenceEntry.display_prompt ? state : null;
-    }, "s67-qr-communication next step");
+    // Long source material can occupy multiple visual pages before navigation.
+    for (let attempt = 0; attempt < 20 && visual.prompt === sourceReference.step.display_prompt; attempt += 1) {
+      await next();
+      visual = await visualLayoutState();
+    }
+    assert.equal(visual.prompt, nextReferenceEntry.display_prompt,
+      "s67 QR material paginates before advancing to the next lesson step");
     await previous();
     visual = await until(async () => {
       const state = await visualLayoutState();
@@ -2934,8 +2936,8 @@ presentationBrowserSuite: {
     ["fedakârlık", "hemzemin geçit", "mesai"], ["aksaklık", "tahammül"],
     "kendi çıkarından", "olağan biçimde ilerlemesini bozan",
     (text) => {
-      assert.ok(text.includes("videodaki kesin bağlamı kontrol etmek için karekod içeriği ve sözlük adımı birlikte kullanılmalıdır."),
-        "T4-P287-VOC01 retains the context warning with its linked term group");
+      assert.ok(text.includes("Mehmet Bey\'in kaplumbağaları kurtarmayı"),
+        "T4-P287-VOC01 retains the observed video example with its linked term group");
       assert.ok(!text.includes("Aşağıdaki anlamlar sözcüklerin genel kullanımına göredir"),
         "T4-P287-VOC01 does not reveal the full summary early");
     }
@@ -2985,9 +2987,13 @@ presentationBrowserSuite: {
   screen = await openStep("degerlendirme-303-307", "s307-q12");
   assert.ok(!screen.text.includes("Dijital üretim") && !screen.text.includes("teknolojinin tek başına"), "ISSUE-100 argument skeleton is hidden initially");
   screen = await openStep("degerlendirme-303-307", "s307-q14");
-  assert.ok(!screen.text.includes("Yer, ilişki, kültür, emek, anı"), "ISSUE-101 answer categories are hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Video kanıtı"), "s307 source-limited guidance")).includes("Video kanıtı"),
-    "ISSUE-101 source-limited answer guidance opens after the task");
+  assert.ok(!screen.text.includes("Bu kanıtın aidiyetle ilişkisi") && !screen.text.includes("dört çeşme yaptırdığını"),
+    "ISSUE-101 video-backed answer and its evidence remain hidden on the question screen");
+  const aidiyetAnswer = await advanceUntil(
+    (text) => text.includes("Anlatıcının açıklaması") || text.includes("Halil Bey'in örneği"),
+    "s307 verified Aidiyet answer");
+  assert.ok(aidiyetAnswer.includes("Anlatıcının açıklaması") || aidiyetAnswer.includes("Halil Bey'in örneği"),
+    "ISSUE-101 verified video-backed Aidiyet answer opens after the task");
 
   for (const themeId of ["TEMA_01", "TEMA_02", "TEMA_03", "TEMA_04"]) {
     const candidate = evidencePresentationCases.get(themeId);

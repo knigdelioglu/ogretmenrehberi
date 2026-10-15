@@ -38,8 +38,8 @@ assert(
 );
 
 assert(
-  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 189,
-  "1. Tema toplam 189 ders adımı içermeli."
+  theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 194,
+  "1. Tema toplam 194 ders adımı içermeli."
 );
 assert(
   theme1Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 130,
@@ -222,7 +222,7 @@ assert(
 const mektup = byLessonId.get("T11-T01-MEKTUP");
 assert(mektup, "Mektup dersi catalog içinde bulunamadı.");
 assert(mektup.lesson_slug === "mektup", "Mektup lesson_slug doğru olmalı.");
-assert(mektup.coverage.steps === 46, "Mektup dersi 46 adım olmalı.");
+assert(mektup.coverage.steps === 47, "Mektup dersi 47 adım olmalı.");
 assert(
   mektup.coverage.source_records === 36,
   "Mektup dersi 36 source-index kaydını kapsamalı."
@@ -324,7 +324,7 @@ assert(
 const speaking = byLessonId.get("T11-T01-KONUSMA");
 assert(speaking, "Konuşma dersi catalog içinde bulunamadı.");
 assert(speaking.lesson_slug === "konusma", "Konuşma lesson_slug doğru olmalı.");
-assert(speaking.coverage.steps === 16, "Konuşma dersi 16 adım olmalı.");
+assert(speaking.coverage.steps === 18, "Konuşma dersi 18 adım olmalı.");
 assert(
   speaking.coverage.source_records === 7,
   "Konuşma dersi 7 doğrulanmış source-index kaydını kapsamalı."
@@ -347,8 +347,8 @@ assert(
 const s53q1 = speakingById.get("s53-q1");
 assert(s53q1, "Konuşma s53-q1 bulunamadı.");
 assert(
-  s53q1.answer?.entry_type === "source_limited",
-  "Video bağımlı s53-q1 source_limited kalmalı."
+  s53q1.answer?.entry_type === "question_answer",
+  "Dökümü doğrulanan s53-q1, sahne kanıtları içeren question_answer olmalı."
 );
 assert(
   s53q1.display_prompt_mode === "VERBATIM_SHORT",
@@ -428,7 +428,7 @@ assert(
   dinleme.lesson_slug === "dinleme-izleme",
   "Dinleme/İzleme lesson_slug doğru olmalı."
 );
-assert(dinleme.coverage.steps === 40, "Dinleme/İzleme dersi 40 adım olmalı.");
+assert(dinleme.coverage.steps === 41, "Dinleme/İzleme dersi 41 adım olmalı.");
 assert(
   dinleme.coverage.source_records === 39,
   "Dinleme/İzleme dersi 39 source-index kaydını kapsamalı."
@@ -473,10 +473,10 @@ for (const term of ["Tasavvur", "Nörolojik", "Sosyal", "Güdü", "Medeni", "Muh
 }
 
 assert(
-  dinlemeById.get("s66-q1")?.answer?.entry_type === "source_limited" &&
-    dinlemeById.get("s66-q4")?.answer?.entry_type === "source_limited" &&
+  dinlemeById.get("s66-q1")?.answer?.entry_type === "question_answer" &&
+    dinlemeById.get("s66-q4")?.answer?.entry_type === "question_answer" &&
     dinlemeById.get("s71-q2")?.answer?.entry_type === "source_limited",
-  "QR videoya bağlı cevaplar source_limited olarak korunmalı."
+  "Dökümü sağlanan s66 cevapları doğrulanmış olmalı; s71 kaynak gerektirmeli."
 );
 
 assert(
@@ -584,10 +584,10 @@ assert(
   "Tema değerlendirme lesson_slug doğru olmalı."
 );
 assert(
-  degerlendirme.coverage.steps === 14 &&
+  degerlendirme.coverage.steps === 15 &&
     degerlendirme.coverage.source_records === 13 &&
     degerlendirme.coverage.answer_entries === 13,
-  "Tema değerlendirme 14 adım / 13 source / 13 answer olmalı."
+  "Tema değerlendirme 15 adım / 13 source / 13 answer olmalı."
 );
 
 const degerlendirmeById = new Map(
@@ -625,8 +625,8 @@ assert(
 const dQ13 = degerlendirmeById.get("s83-q13");
 assert(dQ13, "s83 Olvido sorusu eksik.");
 assert(
-  dQ13.answer?.entry_type === "source_limited",
-  "Olvido dış video sorusu source_limited kalmalı."
+  dQ13.answer?.entry_type === "question_answer",
+  "Yerel Olvido videosuyla desteklenen soru 13 question_answer olmalı."
 );
 
 const p66Email = dinlemeById.get("s66-q2");
@@ -641,8 +641,8 @@ assert(
 
 const p66ResearchAndVideo = dinlemeById.get("s66-q1");
 assert(
-  p66ResearchAndVideo?.answer?.entry_type === "source_limited" &&
-    ["Araştırma bulgusu", "Videoda gözlenen nokta", "Karşılaştırma ve sonuç"].every(
+  p66ResearchAndVideo?.answer?.entry_type === "question_answer" &&
+    ["Araştırma bulgusu", "Videodaki dayanak", "Karşılaştırma ve sonuç"].every(
       (section) => p66ResearchAndVideo.answer.answer_sections?.[section]
     ) &&
     p66ResearchAndVideo.answer.guidance,
