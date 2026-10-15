@@ -2936,8 +2936,8 @@ presentationBrowserSuite: {
     ["fedakârlık", "hemzemin geçit", "mesai"], ["aksaklık", "tahammül"],
     "kendi çıkarından", "olağan biçimde ilerlemesini bozan",
     (text) => {
-      assert.ok(text.includes("videodaki kesin bağlamı kontrol etmek için karekod içeriği ve sözlük adımı birlikte kullanılmalıdır."),
-        "T4-P287-VOC01 retains the context warning with its linked term group");
+      assert.ok(text.includes("Mehmet Bey\'in kaplumbağaları kurtarmayı"),
+        "T4-P287-VOC01 retains the observed video example with its linked term group");
       assert.ok(!text.includes("Aşağıdaki anlamlar sözcüklerin genel kullanımına göredir"),
         "T4-P287-VOC01 does not reveal the full summary early");
     }
