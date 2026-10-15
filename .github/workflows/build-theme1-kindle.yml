@@ -5,9 +5,6 @@ on:
   push:
     branches:
       - main
-      - "feat/**"
-      - "fix/**"
-      - "codex/**"
     paths:
       - ".github/workflows/build-theme1-kindle.yml"
       - "tools/build_kindle_epub.py"
