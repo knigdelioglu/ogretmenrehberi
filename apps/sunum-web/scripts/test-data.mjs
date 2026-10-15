@@ -61,69 +61,24 @@ function collectPresentationText(value, out = []) {
 }
 
 
-/* Tema 1 içerik/pedagoji koruma kontrolleri (2026-10-08). */
-const theme1FlowRoot = path.join(repoRoot, "data/grade-11/presentation/theme-1");
-const theme1AnswerRoot = path.join(repoRoot, "data/grade-11/source/teacher-book/theme-1/answer-bank");
-const readTheme1Json = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
-const theme1Mektup = readTheme1Json(path.join(theme1FlowRoot, "mektup-flow.json")).steps;
-const theme1Karagoz = readTheme1Json(path.join(theme1FlowRoot, "karagoz-flow.json")).steps;
-const theme1Speaking = readTheme1Json(path.join(theme1FlowRoot, "konusma-flow.json")).steps;
-const theme1Writing = readTheme1Json(path.join(theme1FlowRoot, "yazma-flow.json")).steps;
-const theme1Get = (steps, id) => steps.find((step) => step.id === id);
-assert.equal(theme1Get(theme1Mektup, "s46-q1").content.sections[0].body, "Yalınlık");
-assert.ok(theme1Get(theme1Mektup, "s46-q1").content.lead.includes("Yalınlık"));
-assert.ok(theme1Get(theme1Karagoz, "s17-process").content.items.join(" ").includes("göz gezdirin"));
-assert.ok(theme1Get(theme1Karagoz, "s28-q1").content.lead.includes("söz varlığını"));
-assert.ok(theme1Mektup.findIndex((step) => step.id === "s43-q1") < theme1Mektup.findIndex((step) => step.id === "s43-private-letter"));
-assert.ok(theme1Mektup.findIndex((step) => step.id === "s43-q1") < theme1Mektup.findIndex((step) => step.id === "s43-literary-letter"));
-assert.ok(theme1Get(theme1Mektup, "s46-q4").content.items.some((item) => item.includes("beğeni ölçütlerinizle")));
-const theme1Vocab = readTheme1Json(path.join(theme1AnswerRoot, "part-02-pages-25-29.json")).entries;
-assert.ok(theme1Vocab.find((e) => e.question_id === "T1-P25-Q02").answer_sections.Silsile.includes("soy / sülale"));
-const theme1Bottle = readTheme1Json(path.join(theme1AnswerRoot, "part-11-pages-48-50.json")).entries.find((e) => e.question_id === "T1-P48-Q01");
-assert.ok(theme1Bottle.answer_sections["Kitap haberinin doğrudan belirttikleri"]);
-assert.ok(theme1Bottle.answer_sections["Bu etkinlikte benimsenen yorum"]);
-for (const step of [theme1Get(theme1Speaking, "s59-rubric"), theme1Get(theme1Writing, "s78-rubric")]) {
-  assert.match(step.content.lead, /QR|resmî/);
-  assert.match(step.content.lead, /örnek/);
-}
-assert.ok(!JSON.stringify(theme1Get(theme1Writing, "s78-rubric")).includes("başarılır"));
-
-// The printed p.65 tree has six labelled words but only five definition
-// boxes. Keep that source geometry separate from the teaching answer bank:
-// "muhabbet" is intentionally unmatched, not a missing OCR definition.
-const p65 = readTheme1Json(path.join(repoRoot, "data/book/grade-11/themes/theme-1/pages/p065.json"));
-const p65Matching = p65.blocks.find((block) => block.id === "G11-T1-P65-VIS01")?.matching;
-assert.equal(p65Matching?.task, "match_term_to_definition", "p.65 tree has structured matching data");
-assert.deepEqual(p65Matching.terms.map(({ label, term }) => [label, term]), [
-  ["a", "medeni"], ["b", "tasavvur"], ["c", "güdü"],
-  ["ç", "sosyal"], ["d", "nörolojik"], ["e", "muhabbet"]
-], "p.65 six labels match the printed tree");
-assert.deepEqual(p65Matching.definition_boxes.map(({ term_label }) => term_label),
-  ["d", "b", "c", "a", "ç"], "five definition boxes map to the correct words");
-assert.deepEqual(p65Matching.definition_boxes.map(({ text }) => text), [
-  "Sinir bilimsel.",
-  "Göz önüne getirme, hayal etme, zihinde canlandırma.",
-  "Bilinçli veya bilinçsiz olarak davranışı doğuran, sürekliliğini sağlayan ve ona yön veren herhangi bir güç; saik.",
-  "Uygar.",
-  "Toplumsal."
-], "p.65 meanings are copied from the book, not generated");
-assert.equal(p65Matching.unmatched_term_label, "e", "muhabbet remains unmatched");
-assert.equal(new Set(p65Matching.definition_boxes.map(({ term_label }) => term_label)).size, 5,
-  "no definition is assigned twice");
-assert.ok(p65Matching.terms.every(({ label }) =>
-  label === p65Matching.unmatched_term_label ||
-  p65Matching.definition_boxes.some(({ term_label }) => label === term_label)),
-"all p.65 terms are either matched once or explicitly left unmatched");
-const p65Answer = readTheme1Json(path.join(theme1AnswerRoot, "part-15-pages-64-67.json"))
-  .entries.find((entry) => entry.question_id === "T1-P65-Q01");
-assert.equal(Object.keys(p65Answer.answer_sections).length, 6,
-  "canonical vocabulary guidance retains all six words");
-assert.match(p65Answer.answer_sections.Muhabbet, /eşleşmeyen|çeldirici/,
-  "canonical answer acknowledges the unmatched word");
-const p65Lesson = canonical.find((lesson) => lesson.lesson_slug === "dinleme-izleme");
-const p65Step = p65Lesson?.steps.find((step) => step.id === "s65-vocabulary");
-assert.equal(p65Step?.layout, "vocabulary", "p.65 is still a controlled vocabulary reveal");
-assert.equal(p65Step?.answer?.question_id, "T1-P65-Q01", "p.65 source and answer remain linked");
+// Independent source-model fixture: the book transcription has a structured
+// matching exercise. Keep its shape contract without pinning the mutable terms.
+const p65 = JSON.parse(fs.readFileSync(
+  path.join(repoRoot, "data/book/grade-11/themes/theme-1/pages/p065.json"), "utf8"
+));
+const p65Matching = p65.blocks.find((block) => block.type === "visual" && block.matching)?.matching;
+assert.equal(p65Matching?.task, "match_term_to_definition", "book matching source has its supported task type");
+const p65TermLabels = p65Matching.terms.map(({ label }) => label);
+const p65DefinitionLabels = p65Matching.definition_boxes.map(({ term_label }) => term_label);
+assert.equal(new Set(p65TermLabels).size, p65TermLabels.length, "matching terms have unique labels");
+assert.equal(new Set(p65DefinitionLabels).size, p65DefinitionLabels.length, "matching definitions are not assigned twice");
+assert.ok(p65Matching.unmatched_term_label, "source model explicitly identifies any unmatched term");
+assert.ok(p65TermLabels.includes(p65Matching.unmatched_term_label), "unmatched label refers to a listed source term");
+assert.ok(!p65DefinitionLabels.includes(p65Matching.unmatched_term_label), "unmatched term has no fabricated definition");
+assert.deepEqual([...p65TermLabels].sort(), [...p65DefinitionLabels, p65Matching.unmatched_term_label].sort(),
+  "every source term is matched once or explicitly left unmatched");
+assert.ok(p65Matching.definition_boxes.every(({ text }) => typeof text === "string" && text.trim()),
+  "source definition boxes contain readable text");
 
 const forbiddenPresentationMeta = [
   /öğrencinin[^\n]*(?:cevap|yanıt|görüş|kabul|tamamlam)/i,
@@ -136,8 +91,6 @@ const forbiddenPresentationMeta = [
 assert.equal(catalog.lessons.length, canonical.length, "ders sayısı");
 let studentFacingThemeSteps = 0;
 let otherThemeSupportLayers = 0;
-let themeOneWebUnits = 0;
-let themeOneEvidenceQuotes = 0;
 const webThemes = new Set();
 const webUnitCounts = new Map();
 const webQuoteCounts = new Map();
@@ -185,17 +138,6 @@ for (const [i, lesson] of canonical.entries()) {
         Object.keys(entry).sort().join(",") === "meaning,term" &&
         typeof entry.meaning === "string" && entry.meaning.trim().length > 0
       ), `${lesson.lesson_id}/${s.id} web sözlüğünde yalnız terim ve anlam bulunmalı`);
-    }
-    if (step.id === "s17-q2" && lesson.lesson_slug === "karagoz") {
-      assert.deepEqual(s.reveals, ["answer", "dictionary"]);
-      assert.ok(s.answer.dictionary_terms.length > 0, "s.17/2 sözlük desteği bulunmalı");
-      assert.equal(s.answer.evidence_quotes, undefined, "s.17/2 yinelenen metinden kanıt katmanı kaldırılmalı");
-      assert.equal(s.presentation.web.units.reduce((count, unit) => count + unit.quote_indexes.length, 0), 0,
-        "s.17/2 cevap birimleri yinelenen alıntı bağlantıları taşımamalı");
-    }
-    if (step.id === "s25-q1" && lesson.lesson_slug === "karagoz") {
-      assert.deepEqual(Object.keys(s.answer.answer_sections), ["Dadı", "Esbab", "Murad", "Bendeniz", "Silsile", "İspir"]);
-      assert.equal(s.prompt, "Bağlamdan hareketle altı çizili kelimelerin anlamlarını tahmin ediniz; ardından sözlükten kontrol ediniz.");
     }
     if (step.answer?.answer) assert.equal(s.answer.answer, step.answer.answer, `${s.id} cevap`);
     if (webSidecars.has(lesson.theme_id) && step.answer && step.layout === "vocabulary") {
@@ -250,10 +192,6 @@ for (const [i, lesson] of canonical.entries()) {
         if (!mappedSidecarOverrides.has(lesson.theme_id)) mappedSidecarOverrides.set(lesson.theme_id, new Set());
         mappedSidecarOverrides.get(lesson.theme_id).add(step.answer.question_id);
       }
-      if (lesson.theme_id === "TEMA_01") {
-        themeOneWebUnits += web.units.length;
-        themeOneEvidenceQuotes += step.answer.evidence_quotes?.length ?? 0;
-      }
       const sections = step.answer.answer_sections;
       if (sections && !Array.isArray(sections)) {
         const configured = web.units.flatMap((unit) => [
@@ -301,10 +239,6 @@ for (const [themeId, overrideIds] of webSidecars) {
 assert.ok(studentFacingThemeSteps > 0, "TEMA_01 ve TEMA_02 sunum adımları kapsanmalı");
 assert.ok(otherThemeSupportLayers > 0, "Diğer temaların mevcut destek katmanları korunmalı");
 assert.ok(!JSON.stringify(catalog).includes('"note"'), "note alanı sunum verisinde olmamalı");
-assert.equal(themeOneWebUnits, 511, "Theme 1 structured answers are revealed as individual response units");
-// Approved p.59–73 deduplication removed 19 redundant quotations; retain an explicit baseline.
-assert.equal(themeOneEvidenceQuotes, 165, "Theme 1 curated evidence quotations are all linked to response units");
-
 assert.deepEqual(
   [...actualThinking.keys()].sort(),
   [...sourceThinking.records.keys()].sort(),

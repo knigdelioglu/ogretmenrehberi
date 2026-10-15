@@ -1,5 +1,7 @@
 # Theme 3 presentation QA
 
+> Historical QA snapshot. Theme-specific content assertions were consolidated into `apps/sunum-web/scripts/test-presentation-integrity.mjs`; source text and counts below describe the snapshot at the time of this report, not current test expectations.
+
 ## Scope and source
 
 This audit covers only Grade 11 Theme 3, printed pages 160–235. The primary local source is `data/book/grade-11/themes/theme-3/manifest.json` and its 76 page JSON files (`p160.json`–`p235.json`). The manifest records SHA-256 `87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba`; printed page *n* corresponds to PDF page *n* + 1 (PDF pages 161–236). Source checks used page transcriptions, question/table blocks, visual descriptions, and source-index records; the PDF text layer alone was not treated as the complete source.

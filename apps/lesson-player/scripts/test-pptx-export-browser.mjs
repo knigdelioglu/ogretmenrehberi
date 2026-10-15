@@ -13,6 +13,21 @@ const chrome = process.env.CHROME ?? "/Applications/Google Chrome.app/Contents/M
 const port = Number(process.env.PPTX_TEST_PORT ?? 4179);
 const appUrl = process.env.LESSON_PLAYER_TEST_URL ?? `http://127.0.0.1:${port}`;
 const lessons = JSON.parse(fs.readFileSync(path.join(packageRoot, "src/generated/lessons.json"), "utf8"));
+const realExportCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.reveal_order?.includes("answer") && step.reveal_order?.includes("evidence") &&
+    step.answer?.answer && step.answer?.evidence_quotes?.length && !String(step.source?.printed_page_range ?? "").includes("-"));
+assert.ok(realExportCase, "canonical catalog provides a current answer/evidence step for the real export path");
+const { lesson: realExportLesson, step: realExportStep } = realExportCase;
+const projectionKey = `ogretmenrehberi.lesson.${realExportLesson.lesson_id}.projection`;
+const realExportPlan = planExportSlides(lessons, {
+  scope: "selected-steps",
+  currentLessonId: realExportLesson.lesson_id,
+  currentStepId: realExportStep.id,
+  selectedStepIds: [realExportStep.id],
+  view: "student",
+  revealMode: "stages",
+  quality: "high"
+});
 const profilePath = fs.mkdtempSync(path.join(os.tmpdir(), "lesson-player-pptx-cdp-"));
 const downloadPath = fs.mkdtempSync(path.join(os.tmpdir(), "lesson-player-pptx-download-"));
 const vite = spawn(process.execPath, [
@@ -324,12 +339,25 @@ try {
   const highResolutionSignature = await imageSignature(page, highResolutionImage.dataUrl);
   assert.deepEqual([highResolutionSignature.width, highResolutionSignature.height], [3840, 2160], "high-quality screenshot is 4K 16:9");
 
-  const mektup = lessons.find((item) => item.lesson_id === "T11-T01-MEKTUP");
-  const longPromptSlides = planExportSlides([mektup], {
+  const planFixture = (step) => ({
+    lesson_id: fixture.lessonId,
+    title: fixture.lessonTitle,
+    lesson_slug: fixture.lessonSlug,
+    theme_id: fixture.themeId,
+    steps: [step]
+  });
+  const longPromptStep = structuredClone(fixture.step);
+  longPromptStep.id = "fixture-long-prompt";
+  longPromptStep.layout = "question";
+  longPromptStep.reveal_order = [];
+  longPromptStep.answer = null;
+  longPromptStep.content = null;
+  longPromptStep.display_prompt = "Uzun içerik düzenlemesinde başlığın yapısı korunmalı: ".repeat(12);
+  const longPromptSlides = planExportSlides([planFixture(longPromptStep)], {
     scope: "selected-steps",
-    currentLessonId: mektup.lesson_id,
-    currentStepId: "s36-q3",
-    selectedStepIds: ["s36-q3"],
+    currentLessonId: fixture.lessonId,
+    currentStepId: longPromptStep.id,
+    selectedStepIds: [longPromptStep.id],
     view: "student",
     revealMode: "stages",
     quality: "high"
@@ -353,17 +381,25 @@ try {
   assert.equal(compactLayout.density, expectedLongPromptDensity, "fit retry changes density only when the renderer needs it");
   assert.ok(compactLayout.verticalOverflow <= 1 && compactLayout.horizontalOverflow <= 1, "long prompt has no clipped content");
 
-  const nestedAnswerSlides = planExportSlides([mektup], {
+  const nestedAnswerStep = structuredClone(fixture.step);
+  nestedAnswerStep.id = "fixture-nested-answer";
+  nestedAnswerStep.answer.answer = "Yanıt içeriği. ".repeat(35);
+  nestedAnswerStep.answer.answer_sections = {
+    "Metin": ["Birinci bölüm. ".repeat(8), "İkinci bölüm. ".repeat(8)],
+    "Uyarlama": ["Üçüncü bölüm. ".repeat(8), "Dördüncü bölüm. ".repeat(8)]
+  };
+  nestedAnswerStep.answer.evidence_quotes = ["Kaynak kanıtı. ".repeat(10)];
+  const nestedAnswerSlides = planExportSlides([planFixture(nestedAnswerStep)], {
     scope: "selected-steps",
-    currentLessonId: mektup.lesson_id,
-    currentStepId: "s40-q4",
-    selectedStepIds: ["s40-q4"],
+    currentLessonId: fixture.lessonId,
+    currentStepId: nestedAnswerStep.id,
+    selectedStepIds: [nestedAnswerStep.id],
     view: "student",
     revealMode: "stages",
     quality: "high"
   });
   const nestedAnswerEvidenceRender = await renderInPage(page, nestedAnswerSlides.at(-1), 2);
-  assert.equal(nestedAnswerEvidenceRender.type, "lesson-player-export-rendered", "dense answer plus evidence slide fits the export viewport");
+  assert.equal(nestedAnswerEvidenceRender.type, "lesson-player-export-rendered", `dense answer plus evidence slide fits the export viewport: ${JSON.stringify(nestedAnswerEvidenceRender)}`);
   const tightLayout = await page.evaluate(`(() => {
     const stage = document.querySelector(".lesson-stage");
     return {
@@ -379,17 +415,25 @@ try {
   );
   assert.ok(tightLayout.verticalOverflow <= 1 && tightLayout.horizontalOverflow <= 1, "dense answer plus evidence has no clipped content");
 
-  const denseComparisonSlides = planExportSlides([mektup], {
+  const denseComparisonStep = structuredClone(fixture.step);
+  denseComparisonStep.id = "fixture-dense-comparison";
+  denseComparisonStep.answer.answer = "Karşılaştırma yanıtı. ".repeat(45);
+  denseComparisonStep.answer.answer_sections = {
+    "Metin": ["Metin bölümü. ".repeat(16)],
+    "Uyarlama": ["Uyarlama bölümü. ".repeat(16)]
+  };
+  denseComparisonStep.answer.evidence_quotes = ["Karşılaştırmayı destekleyen kanıt. ".repeat(12)];
+  const denseComparisonSlides = planExportSlides([planFixture(denseComparisonStep)], {
     scope: "selected-steps",
-    currentLessonId: mektup.lesson_id,
-    currentStepId: "s47-q2",
-    selectedStepIds: ["s47-q2"],
+    currentLessonId: fixture.lessonId,
+    currentStepId: denseComparisonStep.id,
+    selectedStepIds: [denseComparisonStep.id],
     view: "student",
     revealMode: "stages",
     quality: "high"
   });
   const denseComparisonRender = await renderInPage(page, denseComparisonSlides[1], 2);
-  assert.equal(denseComparisonRender.type, "lesson-player-export-rendered", "long comparison answer fits after explicit dense fallback");
+  assert.equal(denseComparisonRender.type, "lesson-player-export-rendered", `long comparison answer fits after explicit dense fallback: ${JSON.stringify(denseComparisonRender)}`);
   const ultraLayout = await page.evaluate(`(() => {
     const stage = document.querySelector(".lesson-stage");
     return {
@@ -443,14 +487,25 @@ try {
   assert.equal(overflowResult.type, "lesson-player-export-render-error", "overflow is a visible export error");
   assert.ok(overflowResult.overflow?.vertical > 0, "overflow error reports measured vertical overflow");
 
-  await page.evaluate(`localStorage.setItem("ogretmenrehberi.lesson.T11-T01-KARAGOZ.projection", "true")`);
+  await page.evaluate(`localStorage.setItem(${JSON.stringify(projectionKey)}, "true")`);
   await page.send("Page.navigate", {
-    url: `${appUrl}/?lesson=T11-T01-KARAGOZ&step=s28-q1`
+    url: `${appUrl}/?lesson=${encodeURIComponent(realExportLesson.lesson_id)}&step=${encodeURIComponent(realExportStep.id)}`
   });
-  await until(
-    () => page.evaluate("document.getElementById('presentation-pptx-export-trigger')?.textContent?.includes('Dışa aktar')"),
-    "PowerPoint action in the direct presentation view"
-  );
+  try {
+    await until(
+      () => page.evaluate("document.getElementById('presentation-pptx-export-trigger')?.getAttribute('aria-label')?.toLocaleLowerCase('tr').includes('dışa aktar')"),
+      "PowerPoint action in the direct presentation view"
+    );
+  } catch (error) {
+    const state = await page.evaluate(`({
+      url: location.href,
+      lesson: document.querySelector('.stage-card h1')?.textContent ?? null,
+      appClass: document.querySelector('.app-shell')?.className ?? null,
+      projection: localStorage.getItem(${JSON.stringify(projectionKey)}),
+      button: document.getElementById('presentation-pptx-export-trigger')?.outerHTML ?? null
+    })`).catch(() => null);
+    throw new Error(`${error.message}; presentation view state: ${JSON.stringify(state)}`);
+  }
   assert.equal(
     await page.evaluate("getComputedStyle(document.querySelector('.topbar')).display"),
     "none",
@@ -461,7 +516,7 @@ try {
   await page.evaluate("document.querySelector('.pptx-export-dialog__close').click()");
 
   await page.send("Page.navigate", {
-    url: `${appUrl}/?display=1&lesson=T11-T01-KARAGOZ&step=s28-q1`
+    url: `${appUrl}/?display=1&lesson=${encodeURIComponent(realExportLesson.lesson_id)}&step=${encodeURIComponent(realExportStep.id)}`
   });
   await until(
     () => page.evaluate("Boolean(document.querySelector('.app-shell.external-display'))"),
@@ -473,9 +528,9 @@ try {
     "the synchronized external student projection does not show an export control"
   );
 
-  await page.evaluate(`localStorage.removeItem("ogretmenrehberi.lesson.T11-T01-KARAGOZ.projection")`);
+  await page.evaluate(`localStorage.removeItem(${JSON.stringify(projectionKey)})`);
   await page.send("Page.navigate", {
-    url: `${appUrl}/?lesson=T11-T01-KARAGOZ&step=s28-q1`
+    url: `${appUrl}/?lesson=${encodeURIComponent(realExportLesson.lesson_id)}&step=${encodeURIComponent(realExportStep.id)}`
   });
   await until(
     () => page.evaluate("document.getElementById('pptx-export-trigger')?.textContent?.includes('Dışa aktar')"),
@@ -498,7 +553,8 @@ try {
   })`);
   assert.equal(options.quality, "high", "high quality is the default export resolution");
   assert.equal(options.selectedSteps, 1, "selected-step scope starts at the current step");
-  assert.ok(options.estimatedSlides?.includes("3 slayt"), "student UI estimate excludes teacher-only reveal stages");
+  assert.ok(options.estimatedSlides?.includes(`${realExportPlan.length} slayt`),
+    "student UI estimate matches the current student-visible reveal plan");
 
   await page.evaluate("document.querySelector('.pptx-export-primary').click()");
   const downloadResult = await until(async () => {
@@ -530,7 +586,8 @@ try {
   const slidePaths = archiveEntries
     .filter((name) => /^ppt\/slides\/slide\d+\.xml$/.test(name))
     .sort((left, right) => Number(left.match(/slide(\d+)/)[1]) - Number(right.match(/slide(\d+)/)[1]));
-  assert.equal(slidePaths.length, 3, "real Karagöz student comparison exports initial, answer and evidence states");
+  assert.equal(slidePaths.length, realExportPlan.length,
+    "real lesson export contains the current student-visible reveal plan");
   assert.ok(archiveEntries.includes("ppt/notesSlides/notesSlide1.xml"), "speaker notes carry slide trace metadata");
 
   const noteStages = [];
@@ -544,17 +601,14 @@ try {
     assert.ok(Math.abs(Number(imageTransform[3]) / Number(imageTransform[4]) - 16 / 9) < 0.001, `slide ${index} image fills a 16:9 slide`);
     assert.ok(!slideXml.includes("<p:timing"), `slide ${index} has no PowerPoint animation`);
     const notesXml = runUnzip(["-p", downloadedPath, `ppt/notesSlides/notesSlide${index}.xml`]);
-    assert.ok(notesXml.includes("T11-T01-KARAGOZ"), `slide ${index} notes include lesson_id`);
-    assert.ok(notesXml.includes("s28-q1"), `slide ${index} notes include step_id`);
-    assert.ok(notesXml.includes("printed_page: 28"), `slide ${index} notes include printed page`);
+    assert.ok(notesXml.includes(realExportLesson.lesson_id), `slide ${index} notes include lesson_id`);
+    assert.ok(notesXml.includes(realExportStep.id), `slide ${index} notes include step_id`);
+    assert.ok(notesXml.includes(`printed_page: ${realExportStep.source.printed_page_range}`), `slide ${index} notes include printed page`);
     const stage = notesXml.match(/reveal_stage: ([^<\r\n]+)/)?.[1] ?? "";
     noteStages.push(stage);
   }
-  assert.deepEqual(noteStages, [
-    "Başlangıç görünümü",
-    "Cevap açıldı",
-    "Metinden kanıt açıldı"
-  ], "student PPTX speaker notes preserve the public reveal order and omit teacher-only stages");
+  assert.deepEqual(noteStages, realExportPlan.map((slide) => slide.revealLabel),
+    "student PPTX speaker notes preserve the current public reveal order and omit teacher-only stages");
 
   const presentationXml = runUnzip(["-p", downloadedPath, "ppt/presentation.xml"]);
   const size = presentationXml.match(/<p:sldSz cx="(\d+)" cy="(\d+)"/);
@@ -563,20 +617,33 @@ try {
   assert.ok(Math.abs(ratio - 16 / 9) < 0.001, "PowerPoint page size is 16:9");
 
   if (process.env.PPTX_TEST_FULL_LESSON === "1") {
+    const fullLesson = [...lessons].filter((lesson) => lesson.steps.length > 1)
+      .sort((left, right) => left.steps.length - right.steps.length)[0];
+    assert.ok(fullLesson, "current catalog provides a multi-step lesson for the full export flow");
+    const firstStep = fullLesson.steps[0];
+    const fullLessonPlan = planExportSlides(lessons, {
+      scope: "lesson",
+      currentLessonId: fullLesson.lesson_id,
+      currentStepId: firstStep.id,
+      selectedStepIds: [],
+      view: "student",
+      revealMode: "stages",
+      quality: "high"
+    });
     const previousFiles = new Set(fs.readdirSync(downloadPath).filter((name) => name.endsWith(".pptx")));
     await page.send("Page.navigate", {
-      url: `${appUrl}/?lesson=T11-T01-MEKTUP&step=s36-q3`
+      url: `${appUrl}/?lesson=${encodeURIComponent(fullLesson.lesson_id)}&step=${encodeURIComponent(firstStep.id)}`
     });
     await until(
       () => page.evaluate("document.getElementById('pptx-export-trigger')?.textContent?.includes('Dışa aktar')"),
-      "full Mektup lesson toolbar"
+      `full ${fullLesson.lesson_slug} lesson toolbar`
     );
     await page.evaluate("document.getElementById('pptx-export-trigger').click()");
-    await until(() => page.evaluate("document.querySelector('.pptx-export-dialog')?.open"), "full Mektup export options");
+    await until(() => page.evaluate("document.querySelector('.pptx-export-dialog')?.open"), "full lesson export options");
     await page.evaluate("document.querySelector('input[name=\"pptx-reveal\"][value=\"stages\"]').click()");
     assert.ok(
-      await page.evaluate("document.querySelector('.pptx-export-estimate')?.textContent?.includes('103 slayt')"),
-      "Mektup lesson reveal plan matches the user's 103-slide export"
+      await page.evaluate(`document.querySelector('.pptx-export-estimate')?.textContent?.includes(${JSON.stringify(`${fullLessonPlan.length} slayt`)})`),
+      "full lesson estimate matches the current student-visible reveal plan"
     );
     await page.evaluate("document.querySelector('.pptx-export-primary').click()");
 
@@ -589,36 +656,35 @@ try {
       }
       const exportError = await page.evaluate("document.querySelector('.pptx-export-error')?.textContent ?? ''");
       return exportError ? { error: exportError } : null;
-    }, "full 103-slide Mektup export", 300_000);
-    if (fullLessonDownload.error) throw new Error(`Full Mektup export failed: ${fullLessonDownload.error}`);
+    }, `full ${fullLesson.lesson_slug} export`, 300_000);
+    if (fullLessonDownload.error) throw new Error(`Full lesson export failed: ${fullLessonDownload.error}`);
     await until(
       () => page.evaluate("document.querySelector('.pptx-export-status')?.textContent?.includes('indirme listesine eklendi')"),
-      "full Mektup export success state",
+      "full lesson export success state",
       300_000
     );
 
     const fullLessonEntries = runUnzip(["-Z1", fullLessonDownload.file]).split(/\r?\n/).filter(Boolean);
     const fullLessonSlides = fullLessonEntries.filter((name) => /^ppt\/slides\/slide\d+\.xml$/.test(name));
-    assert.equal(fullLessonSlides.length, 103, "full Mektup PPTX contains all planned reveal states");
-    let q3FitTraceNotes = 0;
+    assert.equal(fullLessonSlides.length, fullLessonPlan.length,
+      "full lesson PPTX contains all current planned reveal states");
+    let fitTraceNotes = 0;
     for (let index = 1; index <= fullLessonSlides.length; index += 1) {
       const slideXml = runUnzip(["-p", fullLessonDownload.file, `ppt/slides/slide${index}.xml`]);
-      assert.ok(!slideXml.includes("<p:timing"), `Mektup slide ${index} has no PowerPoint animation`);
+      assert.ok(!slideXml.includes("<p:timing"), `lesson slide ${index} has no PowerPoint animation`);
       const notePath = `ppt/notesSlides/notesSlide${index}.xml`;
       if (fullLessonEntries.includes(notePath)) {
         const notesXml = runUnzip(["-p", fullLessonDownload.file, notePath]);
-        if (notesXml.includes("step_id: s36-q3") && notesXml.includes("fit_adjustment:")) {
-          q3FitTraceNotes += 1;
-        }
+        if (notesXml.includes("step_id:") && notesXml.includes("fit_adjustment:")) fitTraceNotes += 1;
       }
     }
-    assert.ok(q3FitTraceNotes > 0, "speaker notes preserve the measured fit trace for s36-q3");
+    assert.ok(fitTraceNotes > 0, "speaker notes preserve measured fit traces for current lesson steps");
     if (process.env.PPTX_FULL_LESSON_OUTPUT) {
       const requestedOutput = path.resolve(process.env.PPTX_FULL_LESSON_OUTPUT);
       fs.mkdirSync(path.dirname(requestedOutput), { recursive: true });
       fs.copyFileSync(fullLessonDownload.file, requestedOutput);
     }
-    console.log(`Full Mektup export passed: ${fullLessonSlides.length} reveal slides; fit trace on ${q3FitTraceNotes} s36-q3 slide(s).`);
+    console.log(`Full ${fullLesson.lesson_slug} export passed: ${fullLessonSlides.length} reveal slides; fit trace on ${fitTraceNotes} slide(s).`);
   }
 
   console.log(`PPTX export browser checks passed: ${slidePaths.length} real slides, reveal order and metadata verified; download: ${path.basename(downloadedPath)}${process.env.PPTX_TEST_OUTPUT ? `; sample: ${path.resolve(process.env.PPTX_TEST_OUTPUT)}` : ""}`);

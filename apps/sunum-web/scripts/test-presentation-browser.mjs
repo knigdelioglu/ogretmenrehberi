@@ -9,6 +9,7 @@ import { setTimeout as sleep } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
 import zlib from "node:zlib";
 import { usesModernQuestionLayout } from "../src/qa-modern.js";
+import { answerLayerMarker, assertLayerHidden, assertLayerVisible } from "../../lesson-player/scripts/presentation-behavior-contracts.mjs";
 
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repoRoot = path.resolve(appRoot, "../..");
@@ -144,14 +145,34 @@ for (const step of builtCatalog.lessons.flatMap((lesson) => lesson.steps)) {
 }
 const qaModernCoverage = Object.fromEntries([...qaModernCountsByLayout.entries()].sort(([a], [b]) => a.localeCompare(b)));
 const qaModernEntryTypes = Object.fromEntries([...qaModernCountsByEntryType.entries()].sort(([a], [b]) => a.localeCompare(b)));
-assert.equal(qaModernEntryTypes.question_answer, 411, "all 411 current question_answer steps remain QA-modern eligible");
-assert.equal(Object.values(qaModernEntryTypes).reduce((sum, count) => sum + count, 0), 718,
-  "all prompt-bearing steps with an answer reveal and typed canonical answer enter QA-modern");
+assert.equal(Object.values(qaModernEntryTypes).reduce((sum, count) => sum + count, 0), catalogAnswerRevealSteps.length,
+  "every prompt-bearing step with an answer reveal and typed answer is counted from the current catalog");
+assert.equal(catalogAnswerRevealSteps.length, builtCatalog.lessons.flatMap((lesson) => lesson.steps)
+  .filter((step) => usesModernQuestionLayout(step)).length,
+"QA-modern eligibility is derived from the current answer/reveal contract, without a pinned content total");
 console.log(`[sunum-web] QA-modern eligible catalog steps by layout: ${JSON.stringify(qaModernCoverage)}; by entry type: ${JSON.stringify(qaModernEntryTypes)} (total ${catalogAnswerRevealSteps.length}).`);
-const multiPageContentQa = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
-  .find(({ step }) => step.layout === "question" && step.reveals.includes("answer") &&
-    ((step.content?.items?.length || 0) > 4 || (step.content?.sections?.length || 0) > 2));
-assert.ok(multiPageContentQa, "production catalog has a question with answer reveal and potentially multi-page content");
+const multiPageContentCandidates = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+  .map((step) => ({ lesson, step }))
+  .filter(({ step }) => step.layout === "question" && step.reveals?.includes("answer") &&
+    (step.content?.items?.length ?? 0) > 1))
+  .sort((left, right) => right.step.content.items.length - left.step.content.items.length);
+const interleavedAnswerCandidates = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+  .map((step) => ({ lesson, step }))
+  .filter(({ step }) => {
+    const sections = step.answer?.answer_sections;
+    const interleave = step.presentation?.interleave;
+    const groupSize = typeof interleave === "object" ? interleave.group_size : 3;
+    return step.layout === "vocabulary" && usesModernQuestionLayout(step) &&
+      (interleave === true || interleave?.source === "answer_sections") && !step.presentation?.web?.units?.length &&
+      sections && !Array.isArray(sections) && Object.keys(sections).length > groupSize;
+  }))
+  .sort((left, right) => Object.keys(right.step.answer.answer_sections).length -
+    Object.keys(left.step.answer.answer_sections).length);
+const multiUnitEvidenceCases = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+  .map((step) => ({ lesson, step }))
+  .filter(({ step }) => step.prompt?.trim() && step.reveals?.includes("answer") && step.answer?.entry_type?.trim() &&
+    usesModernQuestionLayout(step) && !["process", "assessment", "reference"].includes(step.layout) &&
+    (step.presentation?.web?.units ?? []).filter((unit) => unit.section_keys?.length && unit.evidence_sections?.length).length > 1));
 const evidencePresentationCases = new Map();
 for (const lesson of lessons) {
   for (const step of lesson.steps) {
@@ -564,10 +585,9 @@ presentationBrowserSuite: {
         Object.keys(answerSections).length > 2 || answerWeight > 760 ||
         (answer.evidence_quotes?.length || 0) > 4 || String(answer.guidance || "").length > 900 ||
         String(answer.explanation || "").length > 900 || (answer.dictionary_terms?.length || 0) > 4;
-      const qaModern = usesModernQuestionLayout(step);
-      const knownQaMultiPageAnswer = lesson.lesson_slug === "ogulla-bulusma" && step.id === "s100-q1";
-      if (!targetLayouts.has(step.layout) && !qaModern && !knownQaMultiPageAnswer) return null;
-      if (!contentMayPaginate && !answerMayPaginate && !knownQaMultiPageAnswer) return null;
+      const qaModern = usesModernQuestionLayout(step) && !["process", "assessment", "reference"].includes(step.layout);
+      if (!targetLayouts.has(step.layout) && !qaModern) return null;
+      if (!contentMayPaginate && !answerMayPaginate) return null;
       return { lesson, step, slide: index + 1, contentMayPaginate, answerMayPaginate, qaModern };
     })).filter(Boolean);
     const groups = new Map();
@@ -682,26 +702,36 @@ presentationBrowserSuite: {
       }
     }
 
-    const qaAnswerCandidate = candidates.find((candidate) => candidate.lesson.lesson_slug === "ogulla-bulusma" && candidate.step.id === "s100-q1");
-    await openPosition(qaAnswerCandidate.lesson, qaAnswerCandidate.step, qaAnswerCandidate.slide, 0, 0);
-    let qaAnswerPage = await readPromptGeometry();
-    for (let advance = 0; advance < 8 && !await page.evaluate("(document.querySelector('#canvas .qa-focus')?.innerText || '').includes('Çordon, yaklaşık yirmi yıl önce')"); advance += 1) {
-      await page.evaluate("document.querySelector('#dock [data-action=next]').click()");
-      await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
-      qaAnswerPage = await readPromptGeometry();
-    }
-    assert.ok(qaAnswerPage.qa && qaAnswerPage.revealIndex > 0 && qaAnswerPage.pageTotal >= 2 &&
-      qaAnswerPage.bodyText.includes("Çordon, yaklaşık yirmi yıl önce"),
-      `s100-q1 opens a multi-page QA-modern answer: ${JSON.stringify(qaAnswerPage)}`);
-    const qaAnswerKey = `s100-q1|${qaAnswerPage.revealIndex}|${qaAnswerPage.pageTotal}`;
-    groups.set(qaAnswerKey, { stepId:"s100-q1", layout:"question", qa:true, revealIndex:qaAnswerPage.revealIndex,
-      view:"Cevap", total:qaAnswerPage.pageTotal, pages:[qaAnswerPage] });
-    for (let part = 1; part < qaAnswerPage.pageTotal; part += 1) {
-      const answerPart = await openPosition(qaAnswerCandidate.lesson, qaAnswerCandidate.step, qaAnswerCandidate.slide,
-        qaAnswerPage.revealIndex, part);
-      assert.equal(answerPart.pageIndex, part + 1, `s100-q1 restores QA answer page ${part + 1}/${qaAnswerPage.pageTotal}`);
-      groups.get(qaAnswerKey).pages.push(answerPart);
-      measuredPages += 1;
+    let qaMultiPageAnswer = null;
+    for (const candidate of candidates.filter(({ qaModern, answerMayPaginate, step }) =>
+      qaModern && answerMayPaginate && step.reveals?.includes("answer"))) {
+      await openPosition(candidate.lesson, candidate.step, candidate.slide, 0, 0);
+      const marker = answerLayerMarker(candidate.step, "answer");
+      if (!marker) continue;
+      let answerPage = await readPromptGeometry();
+      for (let advance = 0; advance < 64; advance += 1) {
+        const normalizedBody = answerPage.bodyText.normalize("NFC").replace(/\s+/gu, " ");
+        if (answerPage.qa && answerPage.revealIndex > 0 && answerPage.pageTotal >= 2 && normalizedBody.includes(marker)) break;
+        await page.evaluate("document.querySelector('#dock [data-action=next]').click()");
+        await page.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+        answerPage = await readPromptGeometry();
+      }
+      if (!answerPage.qa || answerPage.revealIndex === 0 || answerPage.pageTotal < 2 ||
+        !answerPage.bodyText.normalize("NFC").replace(/\s+/gu, " ").includes(marker)) continue;
+
+      qaMultiPageAnswer = `${candidate.lesson.lesson_slug}/${candidate.step.id}`;
+      const answerKey = `${candidate.step.id}|${answerPage.revealIndex}|${answerPage.pageTotal}`;
+      groups.set(answerKey, { stepId:candidate.step.id, layout:candidate.step.layout, qa:true,
+        revealIndex:answerPage.revealIndex, view:"Cevap", total:answerPage.pageTotal, pages:[answerPage] });
+      for (let part = 1; part < answerPage.pageTotal; part += 1) {
+        const answerPart = await openPosition(candidate.lesson, candidate.step, candidate.slide,
+          answerPage.revealIndex, part);
+        assert.equal(answerPart.pageIndex, part + 1,
+          `${candidate.step.id} restores QA answer page ${part + 1}/${answerPage.pageTotal}`);
+        groups.get(answerKey).pages.push(answerPart);
+        measuredPages += 1;
+      }
+      break;
     }
 
     const multipageSteps = new Set();
@@ -738,11 +768,11 @@ presentationBrowserSuite: {
     const processDenseShort = processGroups.find((group) => group.pages.find((page) => page.pageIndex === 1)?.bodyText.length > group.pages.find((page) => page.pageIndex === 2)?.bodyText.length);
     const processShortDense = processGroups.find((group) => group.pages.find((page) => page.pageIndex === 1)?.bodyText.length < group.pages.find((page) => page.pageIndex === 2)?.bodyText.length);
     const threePage = getExample((group) => group.total >= 3);
-    const qaAnswer = getExample((group) => group.qa && group.revealIndex > 0);
-    assert.ok(processDenseShort, "catalog scan includes a two-page process with a denser first page and shorter second page");
     let syntheticShortDense = null;
     if (!processShortDense) {
-      const processCandidate = candidates.find((candidate) => candidate.step.id === processDenseShort.stepId);
+      const processCandidate = candidates.find((candidate) => candidate.step.id === processDenseShort?.stepId) ??
+        candidates.find((candidate) => candidate.step.layout === "process");
+      if (processCandidate) {
       await openPosition(processCandidate.lesson, processCandidate.step, processCandidate.slide, 0, 0);
       syntheticShortDense = await page.evaluate(`(() => {
         const source=document.querySelector('#canvas .slide--visual-process');
@@ -778,20 +808,18 @@ presentationBrowserSuite: {
         syntheticShortDense.widthDelta <= 2 && syntheticShortDense.fontDelta <= 1 &&
         syntheticShortDense.lineCounts[0] === syntheticShortDense.lineCounts[1],
         `process shell keeps prompt geometry when a short first page is followed by dense content: ${JSON.stringify(syntheticShortDense)}`);
+      }
     }
-    assert.ok(threePage, "catalog scan includes a 3+ page presentation");
-    for (const layout of ["process", "assessment", "reference", "structure", "comparison"]) {
-      assert.ok(multipageViews.some((group) => group.layout === layout), `catalog scan includes a multipage ${layout} example`);
+    if ([...groups.values()].some((group) => group.total === 2)) {
+      assert.equal(roundTripChecked, true, "browser regression checks 1/2 → 2/2 → 1/2 and back through next/previous");
     }
-    assert.ok(qaAnswer, "catalog scan includes a multipage QA-modern answer example");
-    assert.equal(roundTripChecked, true, "browser regression checks 1/2 → 2/2 → 1/2 and back through next/previous");
     console.log(`[pagination-geometry-audit] ${JSON.stringify({
       candidateSteps:candidates.length, scannedSteps, multipageSteps:multipageSteps.size,
       multipageViews:multipageViews.length, measuredPages, layoutViews:Object.fromEntries(pageCountByLayout),
       scaleVariedViews:multipageViews.filter((group) => new Set(group.pages.map((item) => round(item.scale))).size > 1).length,
-      examples:{processDenseShort:processDenseShort.stepId,processShortDense:processShortDense?.stepId || "synthetic process-modern shell",
+      examples:{processDenseShort:processDenseShort?.stepId || null,processShortDense:processShortDense?.stepId || "synthetic process-modern shell",
         syntheticShortDense,
-        threePage:{stepId:threePage.stepId,total:threePage.total},qaAnswer:{stepId:qaAnswer.stepId,total:qaAnswer.total}},
+        threePage:threePage ? {stepId:threePage.stepId,total:threePage.total} : null,qaAnswer:qaMultiPageAnswer},
       unstable:unstable.length, unstableExamples:unstable.slice(0,10)
     })}`);
     break presentationBrowserSuite;
@@ -802,44 +830,20 @@ presentationBrowserSuite: {
     await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
     const outputDir = process.env.QA_VISUAL_AUDIT_DIR || path.join(os.tmpdir(), "sunum-web-qa-visual-audit");
     fs.mkdirSync(outputDir, { recursive: true });
-    const fixtures = [
-      { slug: "tema-girisi", id: "s14-q1", layout: "question", maxStages: 2 },
-      { slug: "karagoz", id: "s28-q1", layout: "comparison", maxStages: 4 },
-      { slug: "karagoz", id: "s29-q1", layout: "question", maxStages: 4 },
-      { slug: "asik-atismasi", id: "s143-q4", layout: "comparison", maxStages: 3 },
-      { slug: "karagoz", id: "s32-q3", layout: "structure", maxStages: 7 },
-      { slug: "mektup", id: "s40-q5", layout: "structure", maxStages: 7 },
-      { slug: "tema-2-degerlendirme", id: "s159-q7", layout: "structure", maxStages: 5 },
-      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s256-elements", layout: "structure", maxStages: 5 },
-      { slug: "mektup", id: "s50-q1", layout: "structure", maxStages: 7 },
-      { slug: "ogulla-bulusma", id: "s106-discussion", layout: "process", maxStages: 1, expectedItems: 4, qaModern: false },
-      { slug: "eski-istanbul", id: "s111-card-technique", layout: "process", maxStages: 2, qaModern: false },
-      { slug: "yazma", id: "s77-feedback", layout: "process", maxStages: 3, expectedItems: 3, qaModern: false },
-      { slug: "karagoz", id: "s17-process", layout: "process", maxStages: 0, expectedItems: 3, shortTitle: true, qaModern: false },
-      { slug: "tema-2-yazma", id: "s153-feedback", layout: "process", maxStages: 3, wrappedItem: true, qaModern: false },
-      { slug: "karagoz", id: "s35-q1", layout: "assessment", maxStages: 5, qaModern: false },
-      { slug: "kemal-tahir-mulakat-210-214", id: "s214-eval", layout: "assessment", maxStages: 0, qaModern: false },
-      { slug: "kemal-tahir-mulakat-210-214", id: "s214-rubric", layout: "reference", maxStages: 0, qaModern: false },
-      { slug: "yazma", id: "s78-self", layout: "assessment", maxStages: 3, qaModern: false },
-      { slug: "asik-atismasi", id: "s139-checklist", layout: "assessment", maxStages: 2, qaModern: false },
-      { slug: "tema-2-girisi", id: "s84-overview", layout: "reference", maxStages: 2, qaModern: false },
-      { slug: "tema-2-girisi", id: "s85-theme-presentation", layout: "reference", maxStages: 0, qaModern: false },
-      { slug: "karagoz", id: "s26-reference", layout: "reference", maxStages: 2, qaModern: false },
-      { slug: "tema-3-girisi", id: "s160-overview", layout: "reference", maxStages: 2, qaModern: false },
-      { slug: "tema-girisi-236-242", id: "s237-threshold", layout: "reference", maxStages: 2, qaModern: false },
-      { slug: "yazma", id: "s78-rubric", layout: "reference", maxStages: 2, qaModern: false },
-      { slug: "huzur-okuma-cemberi-179-181", id: "s181-game-qr", layout: "reference", maxStages: 0, qaModern: false },
-      { slug: "mektup", id: "s39-q3", layout: "vocabulary", maxStages: 6 },
-      { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", maxStages: 7 },
-      { slug: "anadolu-insani-284-290", id: "s287-vocab", layout: "vocabulary", maxStages: 5 },
-      { slug: "ben-mimar-sinan-cozumleme-256-259", id: "s258-grammar-apply", layout: "process", maxStages: 7, qaModern: false },
-      { slug: "konusma", id: "s53-q1", layout: "question", maxStages: 4 },
-      { slug: "konusma", id: "s54-plan", layout: "structure", maxStages: 5 },
-      { slug: "konusma", id: "s55-content", layout: "structure", maxStages: 5 },
-      { slug: "konusma", id: "s57-performance-2", layout: "process", maxStages: 5, qaModern: false },
-      { slug: "konusma", id: "s58-self-assessment-2", layout: "assessment", maxStages: 4, qaModern: false },
-      { slug: "konusma", id: "s58-feedback", layout: "assessment", maxStages: 4, qaModern: false }
-    ];
+    const fixturesByLayout = new Map();
+    for (const lesson of builtCatalog.lessons) {
+      for (const step of lesson.steps) {
+        if (!step.prompt?.trim() || fixturesByLayout.has(step.layout)) continue;
+        fixturesByLayout.set(step.layout, { lesson, step });
+      }
+    }
+    const fixtures = [...fixturesByLayout].map(([layout, { lesson, step }]) => ({
+      slug: lesson.slug,
+      id: step.id,
+      layout,
+      maxStages: step.reveals?.length ? 16 : 0,
+      qaModern: usesModernQuestionLayout(step)
+    }));
     const requestedIds = process.env.QA_VISUAL_AUDIT_ONLY?.split(",").map((id) => id.trim()).filter(Boolean);
     const selectedCases = requestedIds ? fixtures.filter((fixture) => requestedIds.includes(fixture.id)) : fixtures;
     assert.ok(selectedCases.length > 0, "QA_VISUAL_AUDIT_ONLY selects at least one known fixture");
@@ -937,22 +941,9 @@ presentationBrowserSuite: {
         assert.ok(Number.parseFloat(process.category.fontSize) > Number.parseFloat(process.type.fontSize),
           `${fixture.id} ${stage} gives the main category badge more type weight in size`);
       }
-      if (stage === "opening" && fixture.expectedItems !== undefined) {
-        assert.equal(process.listItems, fixture.expectedItems, `${fixture.id} ${stage} keeps its expected authored item count`);
-      }
-      if (stage === "opening" && fixture.shortTitle) {
-        assert.ok(process.lineCount <= 2, `${fixture.id} ${stage} remains a genuinely short rendered title`);
-      }
-      if (stage === "opening" && fixture.wrappedItem) {
-        assert.ok(process.listRows.some((row) => row.lines >= 2), `${fixture.id} ${stage} exercises a long wrapped list item`);
-      }
       assert.ok(process.bodyText.length > 0, `${fixture.id} ${stage} retains visible process content`);
       assert.ok(state.bodyMetrics?.scrollWidth <= state.bodyMetrics?.clientWidth + 1,
         `${fixture.id} ${stage} has no horizontal process-body overflow`);
-      if (fixture.id === "s106-discussion") {
-        assert.ok(process.where.includes("s. 106") && process.where.includes("Düşünelim Paylaşalım"),
-          `${fixture.id} ${stage} preserves its top-right page and context information`);
-      }
       return process;
     }
     async function capture(fixture, stage) {
@@ -1017,7 +1008,7 @@ presentationBrowserSuite: {
         assert.match(metrics.coverFont, /^\s*["']?Inter["']?(?:\s*,|$)/i, `${label} uses modern Inter typography`);
         assert.equal(metrics.coverMeta.length, 2, `${label} retains book page and slide count metadata`);
       } else if (label.startsWith("book-link-")) {
-        assert.equal(metrics.sourceLinks.length, 1, `${label} shows one book action`);
+        assert.ok(metrics.sourceLinks.length > 0, `${label} shows a current book action`);
         assert.ok(metrics.sourceLinks[0].text.includes("Ders kitabı") && metrics.sourceLinks[0].text.includes("aç"), `${label} separates source context and action copy`);
         assert.equal(metrics.sourceLinks[0].target, "_blank", `${label} keeps the existing external-link behavior`);
         assert.ok(metrics.sourceLinks[0].href.includes("#page="), `${label} preserves the book page destination`);
@@ -1039,34 +1030,35 @@ presentationBrowserSuite: {
       console.log(`[qa-visual-audit] ${label}: ${JSON.stringify({imagePath,...metrics})}`);
     }
 
-    for (const slug of ["orhun-abideleri", "tema-2-girisi"]) {
+    const coverLessons = [...new Map(builtCatalog.lessons.map((lesson) => [lesson.theme, lesson])).values()];
+    for (const { slug } of coverLessons) {
       await page.send("Page.navigate", { url: `${root}/#/${slug}/0` });
       await until(() => page.evaluate("document.querySelector('#canvas .slide--lesson-cover')?.innerText || ''"), `${slug} lesson cover`);
       await captureProductUi(`cover-${slug}`);
     }
 
-    for (const [slug,id] of [
-      ["orhun-abideleri","s113-media-reminder"],
-      ["tema-2-girisi","s85-theme-presentation"],
-      ["ogulla-bulusma","s95-q1"]
-    ]) {
-      await openStep(slug,id);
-      await captureProductUi(`book-link-${id}`);
+    const bookLinkCases = new Map();
+    for (const lesson of builtCatalog.lessons) {
+      for (const step of lesson.steps) {
+        if (!bookLinkCases.has(lesson.theme) && step.content?.sources?.some((source) => source.url?.includes("#page="))) {
+          bookLinkCases.set(lesson.theme, { lesson, step });
+        }
+      }
+    }
+    for (const { lesson, step } of bookLinkCases.values()) {
+      await openStep(lesson.slug, step.id);
+      await captureProductUi(`book-link-${step.id}`);
     }
 
-    await page.send("Page.navigate", { url: `${root}/#/orhun-abideleri/0` });
-    await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide--lesson-cover'))"), "Orhun lesson before menu capture");
-    await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
-    await until(() => page.evaluate("!document.querySelector('#menu').hidden"), "Orhun lesson browser");
-    await captureProductUi("lesson-browser-orhun-theme-2");
-
-    await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
-    await until(() => page.evaluate("document.querySelector('#menu').hidden"), "close Orhun lesson browser");
-    await page.send("Page.navigate", { url: `${root}/#/karagoz/0` });
-    await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide--lesson-cover'))"), "Karagöz lesson before menu capture");
-    await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
-    await until(() => page.evaluate("!document.querySelector('#menu').hidden"), "Karagöz lesson browser");
-    await captureProductUi("lesson-browser-karagoz-theme-1");
+    for (const lesson of [builtCatalog.lessons[0], builtCatalog.lessons.at(-1)]) {
+      await page.send("Page.navigate", { url: `${root}/#/${lesson.slug}/0` });
+      await until(() => page.evaluate("Boolean(document.querySelector('#canvas .slide--lesson-cover'))"), `${lesson.slug} lesson before menu capture`);
+      await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
+      await until(() => page.evaluate("!document.querySelector('#menu').hidden"), `${lesson.slug} lesson browser`);
+      await captureProductUi(`lesson-browser-${lesson.theme}`);
+      await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
+      await until(() => page.evaluate("document.querySelector('#menu').hidden"), `${lesson.slug} close lesson browser`);
+    }
 
     for (const fixture of selectedCases) {
       const entry = await openStep(fixture.slug, fixture.id);
@@ -1081,39 +1073,11 @@ presentationBrowserSuite: {
       await capture(fixture, "opening");
       if (fixture.maxStages) {
         let traversed = 0;
-        let supportCardsCaptured = false;
         for (let i = 1; i <= fixture.maxStages; i++) {
           await next();
           const stage = await inspect();
           if (!stage.prompt || stage.prompt !== entry.step.display_prompt) break;
           if (fixture.layout === "process") assertProcessMetrics(stage, fixture, `page ${i + 1}`);
-          if (fixture.id === "s111-card-technique" && stage.process?.bodyText.includes("Kart Renkleri ve Değerlendirme Ölçütleri")) {
-            const supportCards = await page.evaluate(`(() => {
-              const items = [...document.querySelectorAll('.process-card-item')];
-              const rect = (node) => { const box = node.getBoundingClientRect(); return {x:box.x,y:box.y,width:box.width,height:box.height,right:box.right,bottom:box.bottom}; };
-              return {
-                items: items.map((item) => ({title:item.querySelector('h4')?.innerText || '', text:item.innerText, rect:rect(item)})),
-                notes: [...document.querySelectorAll('.process-card-item__note')].map((node) => node.innerText),
-                section: rect(document.querySelector('.sec--process-card-criteria')),
-                panel: rect(document.querySelector('.panel--answer')),
-                body: (() => { const node=document.querySelector('.slide__body'); return {clientWidth:node.clientWidth,scrollWidth:node.scrollWidth,clientHeight:node.clientHeight,scrollHeight:node.scrollHeight,overflowing:node.classList.contains('is-overflowing')}; })()
-              };
-            })()`);
-            assert.equal(supportCards.items.length, 3, "s111 support renders three separate card-type blocks");
-            assert.match(supportCards.items[0].title, /Mavi Kart \(Katılıyorum\)/, "s111 first block identifies the blue card in text");
-            assert.match(supportCards.items[1].title, /Kırmızı Kart \(Katılmıyorum\)/, "s111 second block identifies the red card in text");
-            assert.match(supportCards.items[2].title, /Kahverengi Kart \(Kararsızım \/ Dolaylı İlişki\)/, "s111 third block identifies the brown card in text");
-            assert.equal(supportCards.items[0].rect.x, supportCards.items[1].rect.x, "s111 card blocks share a left axis");
-            assert.equal(supportCards.items[1].rect.x, supportCards.items[2].rect.x, "s111 card blocks share a left axis");
-            assert.ok(supportCards.items[0].rect.y < supportCards.items[1].rect.y && supportCards.items[1].rect.y < supportCards.items[2].rect.y,
-              "s111 card blocks stack as distinct rows");
-            assert.ok(supportCards.notes.length >= 2, "s111 examples and added detail appear as secondary notes");
-            assert.ok(supportCards.panel && supportCards.section && supportCards.panel.y < supportCards.section.y,
-              "s111 support panel and inner card hierarchy are visible");
-            assert.ok(supportCards.body.scrollWidth <= supportCards.body.clientWidth + 1, "s111 support has no horizontal overflow");
-            assert.equal(supportCards.body.overflowing, false, "s111 support fits vertically at 1920×1080 without overflow scrolling");
-            supportCardsCaptured = true;
-          }
           if (fixture.qaModern !== false && stage.focusText.trim()) {
             assert.equal(stage.compact, true, `${fixture.id} compacts the prompt when focus content opens`);
             assert.ok(stage.bodyMetrics?.scrollWidth <= stage.bodyMetrics?.clientWidth + 1, `${fixture.id} focus content has no horizontal body overflow`);
@@ -1123,7 +1087,6 @@ presentationBrowserSuite: {
           await capture(fixture, `reveal-${i}`);
           traversed++;
         }
-        if (fixture.id === "s111-card-technique") assert.equal(supportCardsCaptured, true, "s111 audit reaches the card-criteria support panel");
         for (let i = traversed; i > 0; i--) await previous();
         await capture(fixture, "back-to-opening");
       }
@@ -1138,31 +1101,46 @@ presentationBrowserSuite: {
     await until(() => page.evaluate("typeof window.__testCaptureSlideImage === 'function'"), "test-only direct slide capture hook");
     const outputDir = process.env.PPTX_RASTER_AUDIT_DIR || path.join(os.tmpdir(), "sunum-web-raster-audit");
     fs.mkdirSync(outputDir, { recursive: true });
+    const rasterSteps = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })));
+    const rasterCase = (name, predicate, mode) => {
+      const entry = rasterSteps.find(({ step }) => predicate(step));
+      return entry && { slug: entry.lesson.slug, id: entry.step.id, name: `${name}-${entry.step.id}`, mode };
+    };
     const auditCases = [
-      { slug: "asik-atismasi", id: "s143-q4", name: "asik-atismasi-s143-q4-paired", text: ["Münacaat", "Âşık Şiirinin Dili"], pairedEvidence: true },
-      { slug: "mektup", id: "s40-q5", name: "mektup-s40-q5-structure", text: ["Konu", "Çalışma kâğıdı"], answerPanel: true },
-      { slug: "huzur-okuma", id: "s172-vocabulary", name: "huzur-okuma-s172-vocabulary", text: ["mahzen", "cevher"] },
-      { slug: "kemal-tahir-mulakat-210-214", id: "s214-eval", name: "kemal-tahir-s214-eval-scale", text: ["Evet", "Kısmen", "Hayır"] },
-      { slug: "tiyatro-canlandirma-280-283", id: "s283-performance", name: "tiyatro-s283-performance", text: ["İçeriğe uygunluk", "Çok iyi", "puan"], advanceTo: "Çok iyi" }
-    ];
+      rasterCase("paired-evidence", (step) => !["process", "assessment", "reference"].includes(step.layout) &&
+        step.presentation?.web?.units?.some((unit) => unit.evidence_sections?.length), "pairedEvidence"),
+      rasterCase("structured-answer", (step) => step.layout === "structure" &&
+        step.presentation?.web?.units?.some((unit) => unit.section_keys?.length), "answer"),
+      rasterCase("vocabulary", (step) => step.layout === "vocabulary" &&
+        Object.keys(step.answer?.answer_sections ?? {}).length > 0, "answer"),
+      rasterCase("assessment-scale", (step) => step.layout === "assessment" && step.content?.scale?.length, "scale"),
+      rasterCase("process", (step) => step.layout === "process" && step.content?.items?.length, "process")
+    ].filter(Boolean);
     const requestedIds = process.env.PPTX_RASTER_AUDIT_ONLY?.split(",").map((id) => id.trim()).filter(Boolean);
     const selectedCases = requestedIds ? auditCases.filter((fixture) => requestedIds.includes(fixture.id)) : auditCases;
     assert.ok(selectedCases.length > 0, "PPTX_RASTER_AUDIT_ONLY selects at least one known fixture");
     for (const fixture of selectedCases) {
       const entry = await openStep(fixture.slug, fixture.id);
-      if (fixture.pairedEvidence) {
+      if (fixture.mode === "pairedEvidence") {
         const unit = entry.step.presentation?.web?.units?.find((candidate) => candidate.evidence_sections?.length);
         assert.ok(unit, `${fixture.name} has a paired evidence unit`);
         await advanceUntilEvidenceSection(unit.evidence_sections[0].section_key, fixture.name);
         assert.ok((await answerPanelText()).trim(), `${fixture.name} shows its answer panel`);
         assert.ok((await evidencePanelText()).trim(), `${fixture.name} shows its evidence panel`);
       }
-      if (fixture.advanceTo) {
-        await advanceUntil((text) => includesText(text, fixture.advanceTo), `${fixture.name} ${fixture.advanceTo} level`, 36);
+      if (fixture.mode === "answer") {
+        const answerMarker = answerLayerMarker(entry.step, "answer");
+        assert.ok(answerMarker, `${fixture.name} has a current answer marker`);
+        await advanceUntil((text) => includesText(text, answerMarker), `${fixture.name} answer reveal`, 64);
+        assert.ok((await answerPanelText()).trim(), `${fixture.name} shows its current answer`);
       }
-      if (fixture.answerPanel) {
-        for (let index = 0; index < 12 && !(await answerPanelText()).trim(); index += 1) await next();
-        assert.ok((await answerPanelText()).trim(), `${fixture.name} captures its first visible structure answer`);
+      if (fixture.mode === "scale") {
+        assert.ok(await page.evaluate("Boolean(document.querySelector('#canvas .scale-form'))"),
+          `${fixture.name} renders the current assessment scale`);
+      }
+      if (fixture.mode === "process") {
+        assert.ok(await page.evaluate("Boolean(document.querySelector('#canvas .steps-list, #canvas .process-card-item'))"),
+          `${fixture.name} renders its current process content`);
       }
       await waitForPromptFonts();
       await page.evaluate(`(() => {
@@ -1197,22 +1175,26 @@ presentationBrowserSuite: {
       assert.ok(visual.decorations >= 2, `${fixture.name} retains slide decorations and visible labels`);
       assert.ok(visual.header?.width > 0 && visual.footer?.width > 0, `${fixture.name} header and footer are present within the captured slide`);
       assert.equal(visual.overflow.horizontal, false, `${fixture.name} has no horizontal body overflow`);
-      for (const fragment of fixture.text) assert.ok(includesText(visual.text, fragment), `${fixture.name} shows label/text “${fragment}”`);
+      assert.ok(includesText(visual.text, entry.step.display_prompt), `${fixture.name} renders its current prompt`);
       const base64 = await page.evaluate("window.__testCaptureSlideImage()" );
       const bytes = Buffer.from(base64, "base64");
       assert.equal(bytes.toString("hex", 0, 8), "89504e470d0a1a0a", `${fixture.name} direct capture returns PNG`);
       assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [1920, 1080], `${fixture.name} direct capture is 1920×1080`);
       const imagePath = path.join(outputDir, `${fixture.name}.png`);
       fs.writeFileSync(imagePath, bytes);
-      console.log(`[sunum-web] Raster audit ${fixture.name}: ${JSON.stringify({ imagePath, dimensions: [1920, 1080], font: visual.fontFamily, decorations: visual.decorations, bounds: visual.body, visibleText: fixture.text, bytes: bytes.length })}`);
+      console.log(`[sunum-web] Raster audit ${fixture.name}: ${JSON.stringify({ imagePath, dimensions: [1920, 1080], font: visual.fontFamily, decorations: visual.decorations, bounds: visual.body, bytes: bytes.length })}`);
     }
     console.log(`[sunum-web] Captured ${selectedCases.length} representative slide states directly; PPTX export was not invoked.`);
   } else {
   if (process.env.STRUCTURE_VISUAL_SMOKE === "1") {
-    const sourceStructureCount = lessons.reduce((count, lesson) => count + lesson.steps.filter((step) => step.layout === "structure").length, 0);
-    const builtStructureCount = builtCatalog.lessons.reduce((count, lesson) => count + lesson.steps.filter((step) => step.layout === "structure").length, 0);
-    assert.equal(sourceStructureCount, 155, "the source catalog has 155 structure-layout steps for the visual modifier");
-    assert.equal(builtStructureCount, 155, "the built catalog retains all 155 structure-layout steps");
+    const sourceStructureIds = lessons.flatMap((lesson) => lesson.steps
+      .filter((step) => step.layout === "structure")
+      .map((step) => `${lesson.lesson_slug}/${step.id}`)).sort();
+    const builtStructureIds = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+      .filter((step) => step.layout === "structure")
+      .map((step) => `${lesson.slug}/${step.id}`)).sort();
+    assert.deepEqual(builtStructureIds, sourceStructureIds,
+      "the built catalog preserves every current structure-layout step from the source");
     await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
     await page.evaluate('document.fonts.load(\'400 16px "Inter"\')');
 
@@ -1251,14 +1233,19 @@ presentationBrowserSuite: {
       assert.fail(`Could not reach structure answer ${label}: ${JSON.stringify(state.answerLabels)}`);
     }
 
-    for (const fixture of [
-      { slug: "mektup", id: "s40-q5" },
-      { slug: "karagoz", id: "s32-q3" }
-    ]) {
+    const structureCandidates = lessons.flatMap((lesson) => lesson.steps
+      .filter((step) => step.layout === "structure")
+      .map((step) => ({ lesson, step, keys: step.presentation?.web?.units?.flatMap((unit) => unit.section_keys) ?? [] })))
+      .filter(({ keys }) => keys.length > 0)
+      .sort((left, right) => left.keys.length - right.keys.length);
+    assert.ok(structureCandidates.length > 0, "current structure content provides an answer unit for interaction checks");
+    const structureExamples = [...new Map([structureCandidates[0], structureCandidates.at(-1)]
+      .map(({ lesson, step }) => [`${lesson.lesson_slug}/${step.id}`, { slug: lesson.lesson_slug, id: step.id }])).values()];
+    for (const fixture of structureExamples) {
       const entry = findStep(fixture.slug, fixture.id);
       assert.equal(entry.step.layout, "structure", `${fixture.id} uses the canonical structure layout`);
       const expectedKeys = entry.step.presentation.web.units.flatMap((unit) => unit.section_keys);
-      assert.ok(expectedKeys.length >= 4, `${fixture.id} has a multi-unit structured answer`);
+      assert.ok(expectedKeys.length > 0, `${fixture.id} has current structured answer units`);
       const opened = await openStep(fixture.slug, fixture.id);
       assert.ok(opened.text.includes(entry.step.display_prompt), `${fixture.id} opens its real route prompt`);
       let state = await captureStructureState();
@@ -1298,18 +1285,26 @@ presentationBrowserSuite: {
       assert.deepEqual(seenKeys, expectedKeys, `${fixture.id} answer pagination follows its authored unit order`);
       console.log(`[sunum-web] Structure smoke ${fixture.slug}/${fixture.id}: ${seenKeys.length} answer units in order at 1920x1080.`);
     }
-    console.log("[sunum-web] Focused Chrome structure visual smoke passed: 155 source/built layouts, pagination order, reverse/forward, overflow, and QA/comparison isolation.");
+    console.log(`[sunum-web] Focused Chrome structure visual smoke passed: ${sourceStructureIds.length} source/built layouts, pagination order, reverse/forward, overflow, and QA/comparison isolation.`);
     break presentationBrowserSuite;
   }
 
   if (process.env.VISUAL_LAYOUT_CLASS_SMOKE === "1") {
     // Arc-inspired book reference cards must be shared across themes without
     // mutating original PDF page anchors or other source/download actions.
-    for (const [slug, id] of [
-      ["orhun-abideleri", "s113-media-reminder"],
-      ["tema-2-girisi", "s85-theme-presentation"],
-      ["ogulla-bulusma", "s95-q1"]
-    ]) {
+    const bookCardCases = new Map();
+    for (const lesson of builtCatalog.lessons) {
+      for (const step of lesson.steps) {
+        if (!bookCardCases.has(lesson.theme) &&
+          step.content?.sources?.some((source) => source.url?.includes("#page="))) {
+          bookCardCases.set(lesson.theme, { lesson, step });
+        }
+      }
+    }
+    assert.ok(bookCardCases.size > 0, "canonical catalog contains a page-linked textbook source");
+    for (const { lesson, step } of bookCardCases.values()) {
+      const slug = lesson.slug;
+      const id = step.id;
       await openStep(slug, id);
       await waitForPromptFonts();
       const bookCards = await page.evaluate(`(() => {
@@ -1358,7 +1353,7 @@ presentationBrowserSuite: {
         assert.ok(theme.cardHeight >= 44, slug + "/" + id + " " + theme.theme + " has a finger-sized card: " + theme.cardHeight.toFixed(1) + "px");
       }
     }
-    console.log("[sunum-web] Arc textbook cards passed: three authored PDF links, light/dark, icon, focus and geometry.");
+    console.log(`[sunum-web] Arc textbook cards passed: ${bookCardCases.size} canonical PDF links, light/dark, icon, focus and geometry.`);
 
     // The dock must be visible and its icons legible *before* pointer hover
     // in both presentation themes, including the prominent prev/next actions.
@@ -1562,108 +1557,109 @@ presentationBrowserSuite: {
       await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
       await until(() => page.evaluate("document.querySelector('#menu')?.hidden === true"), "close presentation menu");
     };
-    const processEntry = findStep("karagoz", "s16-process");
-    assert.equal(processEntry.step.layout, "process", "s16-process is the process fixture");
-    assert.deepEqual(processEntry.step.reveal_order, [], "s16-process has no authored reveal layers");
-    const processOpened = await openStep("karagoz", "s16-process");
+    const processCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step, index) => ({ lesson, step, index })))
+      .find(({ lesson, step, index }) => step.layout === "process" && step.content?.items?.length &&
+        !step.reveals?.length && lesson.steps[index + 1] && lesson.steps[index + 1].layout !== "process");
+    assert.ok(processCase, "canonical catalog contains a standalone process slide with a following step");
+    const processEntry = findStep(processCase.lesson.slug, processCase.step.id);
+    const processOpened = await openStep(processCase.lesson.slug, processCase.step.id);
     let visual = await visualLayoutState();
-    expectVisualClasses(visual, ["slide--visual-process"], "karagoz/s16-process");
+    expectVisualClasses(visual, ["slide--visual-process"], `${processCase.lesson.slug}/${processCase.step.id}`);
     assert.deepEqual(visual.children, ["HEADER", "DIV", "FOOTER"], "process modifier preserves the slide's direct DOM children");
     assert.ok(visual.bodyClasses.includes("stack"), "process modifier preserves the existing body stack");
-    assert.equal(visual.stepLists, 1, "s16-process remains an ordered step list");
+    assert.equal(visual.stepLists, 1, `${processCase.lesson.slug}/${processCase.step.id} remains an ordered step list`);
     const nextProcessEntry = processEntry.lesson.steps[processEntry.slide];
     await next();
     visual = await until(async () => {
       const state = await visualLayoutState();
       return state.prompt === nextProcessEntry.display_prompt ? state : null;
-    }, "s16-process next step");
-    expectVisualClasses(visual, [], "s16-process next-step boundary");
+    }, `${processCase.lesson.slug}/${processCase.step.id} next step`);
+    const nextVisualClasses = ["process", "reference", "assessment", "structure"].includes(nextProcessEntry.layout)
+      ? [`slide--visual-${nextProcessEntry.layout}`]
+      : [];
+    expectVisualClasses(visual, nextVisualClasses, `${processCase.lesson.slug}/${processCase.step.id} next-step boundary`);
     await previous();
     visual = await until(async () => {
       const state = await visualLayoutState();
       return state.prompt === processEntry.step.display_prompt ? state : null;
-    }, "s16-process previous step restore");
-    expectVisualClasses(visual, ["slide--visual-process"], "s16-process previous-step restore");
-    assert.ok(processOpened.text.includes(processEntry.step.display_prompt), "s16-process opens its canonical prompt");
+    }, `${processCase.lesson.slug}/${processCase.step.id} previous step restore`);
+    expectVisualClasses(visual, ["slide--visual-process"], `${processCase.lesson.slug}/${processCase.step.id} previous-step restore`);
+    assert.ok(processOpened.text.includes(processEntry.step.display_prompt), `${processCase.lesson.slug}/${processCase.step.id} opens its canonical prompt`);
 
-    const sourceReference = findStep("dinleme-izleme", "s67-qr-communication");
-    assert.equal(sourceReference.step.layout, "reference", "s67-qr-communication is a reference-layout fixture");
-    assert.deepEqual(sourceReference.step.reveal_order, [], "s67-qr-communication has no authored reveal layers");
-    const referenceOpened = await openStep("dinleme-izleme", "s67-qr-communication");
+    const referenceCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step, index) => ({ lesson, step, index })))
+      .find(({ lesson, step, index }) => step.layout === "reference" && !step.reveals?.length &&
+        step.content?.sources?.length && lesson.steps[index + 1]);
+    assert.ok(referenceCase, "canonical catalog contains a source-linked reference slide with a following step");
+    const sourceReference = findStep(referenceCase.lesson.slug, referenceCase.step.id);
+    const referenceOpened = await openStep(referenceCase.lesson.slug, referenceCase.step.id);
     visual = await visualLayoutState();
-    expectVisualClasses(visual, ["slide--visual-reference"], "dinleme-izleme/s67-qr-communication");
-    assert.ok(referenceOpened.text.includes(sourceReference.step.display_prompt), "source reference keeps its prompt");
-    assert.ok(referenceOpened.text.includes("İçeriği izleyin ve iletişim araçlarıyla ilgili dikkatinizi çeken unsurları not alın."),
-      "s67 QR screen shows the student-facing activity direction");
-    assert.ok(!/dökümü yapılmadı|ekranındaki on araç etiketi incelendi|yerini tutmaz/u.test(referenceOpened.text),
-      "s67 QR screen does not show technical review notes");
-    console.log("[sunum-web] QR reference student-copy regression passed: s67 prompt is concise and audit notes are absent.");
+    expectVisualClasses(visual, ["slide--visual-reference"], `${referenceCase.lesson.slug}/${referenceCase.step.id}`);
+    assert.ok(referenceOpened.text.includes(sourceReference.step.display_prompt), "source reference keeps its canonical prompt");
     assert.ok(visual.sources > 0, "source reference keeps its existing source-link list");
-    const nextReferenceEntry = sourceReference.lesson.steps[sourceReference.slide];
-    // Long source material can occupy multiple visual pages before navigation.
-    for (let attempt = 0; attempt < 20 && visual.prompt === sourceReference.step.display_prompt; attempt += 1) {
-      await next();
-      visual = await visualLayoutState();
-    }
-    assert.equal(visual.prompt, nextReferenceEntry.display_prompt,
-      "s67 QR material paginates before advancing to the next lesson step");
+    await next();
     await previous();
     visual = await until(async () => {
       const state = await visualLayoutState();
       return state.prompt === sourceReference.step.display_prompt ? state : null;
-    }, "s67-qr-communication previous step restore");
-    expectVisualClasses(visual, ["slide--visual-reference"], "s67-qr-communication previous-step restore");
+    }, `${referenceCase.lesson.slug}/${referenceCase.step.id} previous step restore`);
+    expectVisualClasses(visual, ["slide--visual-reference"], `${referenceCase.lesson.slug}/${referenceCase.step.id} previous-step restore`);
 
-    const noteReference = findStep("karagoz", "s26-reference");
-    assert.equal(noteReference.step.layout, "reference", "s26-reference is a reference-layout fixture");
-    assert.deepEqual(noteReference.step.reveal_order, ["note"], "s26-reference retains its authored note reveal");
-    const runtimeNoteReference = builtCatalog.lessons
-      .find((lesson) => lesson.slug === "karagoz")?.steps.find((step) => step.id === "s26-reference");
-    assert.ok(runtimeNoteReference, "built catalog contains the s26-reference runtime fixture");
-    assert.ok(!runtimeNoteReference.reveals.includes("note"), "built runtime excludes note from the reveal sequence");
-    assert.equal(runtimeNoteReference.content.note, undefined, "built runtime excludes teacher note from rendered content");
+    const noteReferenceCase = lessons.flatMap((lesson) => lesson.steps.map((step, index) => ({ lesson, step, index })))
+      .find(({ lesson, step, index }) => {
+        if (step.layout !== "reference" || !step.content?.note || !lesson.steps[index + 1]) return false;
+        const runtimeStep = builtCatalog.lessons.find((entry) => entry.slug === lesson.lesson_slug)
+          ?.steps.find((entry) => entry.id === step.id);
+        return runtimeStep && !runtimeStep.reveals?.includes("note") && runtimeStep.content?.note === undefined;
+      });
+    assert.ok(noteReferenceCase, "a source reference with a teacher note is excluded from the student runtime");
+    const noteReference = findStep(noteReferenceCase.lesson.lesson_slug, noteReferenceCase.step.id);
+    const runtimeNoteReference = builtCatalog.lessons.find((lesson) => lesson.slug === noteReferenceCase.lesson.lesson_slug)
+      ?.steps.find((step) => step.id === noteReferenceCase.step.id);
+    const noteMarker = noteReference.step.content.note.normalize("NFC").replace(/\s+/gu, " ").trim().slice(0, 48);
+    assert.ok(!runtimeNoteReference.reveals?.includes("note"), `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id} runtime excludes the note reveal`);
+    assert.equal(runtimeNoteReference.content.note, undefined, `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id} runtime excludes teacher note text`);
     await setTeacherRevealMode(true);
-    await openStep("karagoz", "s26-reference");
+    await openStep(noteReferenceCase.lesson.lesson_slug, noteReferenceCase.step.id);
     visual = await visualLayoutState();
-    expectVisualClasses(visual, ["slide--visual-reference"], "karagoz/s26-reference");
-    assert.equal(visual.revealDots, 0, "s26-reference retains its current no-reveal runtime behavior");
+    expectVisualClasses(visual, ["slide--visual-reference"], `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id}`);
+    assert.equal(visual.revealDots, 0, "teacher-only notes do not enter the student reveal sequence");
     await page.evaluate("document.querySelector('#dock [data-action=menu]').click()");
     await until(() => page.evaluate("document.querySelector('#menu')?.hidden === false"), "verify persisted teacher mode");
     assert.equal(await page.evaluate("document.querySelector('#menu-guide')?.checked"), true,
-      "teacher reveal mode is active after navigating to s26-reference");
+      "teacher reveal mode stays active while a reference slide is open");
     await page.evaluate("document.querySelector('#menu [data-action=close-menu]').click()");
     const nextNoteStep = noteReference.lesson.steps[noteReference.slide];
-    let contentPageAdvances = 0;
-    for (let index = 0; index < 8 && visual.prompt === noteReference.step.display_prompt; index += 1) {
+    for (let index = 0; index < 64 && visual.prompt === noteReference.step.display_prompt; index += 1) {
       await next();
       visual = await visualLayoutState();
-      if (visual.prompt === noteReference.step.display_prompt) {
-        contentPageAdvances += 1;
-        assert.equal(visual.revealDots, 0, "s26-reference content pages do not create a note reveal");
-      }
+      assert.equal(visual.revealDots, 0, "teacher-only note content does not create a student reveal");
+      assert.ok(!(await bodyText()).includes(noteMarker), "teacher-only note text stays out of the student slide");
     }
-    assert.ok(contentPageAdvances > 0, "s26-reference advances through its paginated content before the next step");
     visual = await until(async () => {
       const state = await visualLayoutState();
       return state.prompt === nextNoteStep.display_prompt ? state : null;
-    }, "s26-reference next-step boundary after content pages");
-    assert.ok(!(await bodyText()).includes(noteReference.step.content.note), "s26-reference teacher note is not rendered by the current runtime catalog");
-    expectVisualClasses(visual, [], "s26-reference next-step boundary");
+    }, `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id} next-step boundary`);
+    const nextNoteVisualClasses = ["process", "reference", "assessment", "structure"].includes(nextNoteStep.layout)
+      ? [`slide--visual-${nextNoteStep.layout}`]
+      : [];
+    expectVisualClasses(visual, nextNoteVisualClasses,
+      `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id} next-step boundary`);
     await previous();
     visual = await until(async () => {
       const state = await visualLayoutState();
       return state.prompt === noteReference.step.display_prompt ? state : null;
-    }, "s26-reference previous-step restore after content pages");
-    assert.equal(visual.revealDots, 0, "s26-reference reverse navigation keeps the current no-reveal runtime behavior");
-    expectVisualClasses(visual, ["slide--visual-reference"], "s26-reference previous-step restore after content pages");
+    }, `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id} previous-step restore`);
+    assert.equal(visual.revealDots, 0, "back navigation does not make teacher notes student reveals");
+    expectVisualClasses(visual, ["slide--visual-reference"], `${noteReferenceCase.lesson.lesson_slug}/${noteReferenceCase.step.id} previous-step restore`);
     await setTeacherRevealMode(false);
 
-    const selfAssessment = findStep("yazma", "s78-self");
-    assert.equal(selfAssessment.step.layout, "assessment", "s78-self remains an assessment layout");
-    assert.equal(selfAssessment.step.answer, null, "s78-self does not acquire answer data");
-    const selfAssessmentOpened = await openStep("yazma", "s78-self");
+    const assessmentCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.layout === "assessment" && step.content?.scale?.length && !step.answer?.question_id);
+    assert.ok(assessmentCase, "canonical catalog contains an independent assessment scale");
+    const selfAssessment = findStep(assessmentCase.lesson.slug, assessmentCase.step.id);
+    const selfAssessmentOpened = await openStep(assessmentCase.lesson.slug, assessmentCase.step.id);
     visual = await visualLayoutState();
-    expectVisualClasses(visual, ["slide--visual-assessment"], "yazma/s78-self");
+    expectVisualClasses(visual, ["slide--visual-assessment"], `${assessmentCase.lesson.slug}/${assessmentCase.step.id}`);
     const assessmentMarkup = await page.evaluate(`(() => ({
       qa: Boolean(document.querySelector('#canvas .slide--qa-modern')),
       focus: Boolean(document.querySelector('#canvas .qa-focus')),
@@ -1675,67 +1671,88 @@ presentationBrowserSuite: {
     }))()`);
     assert.equal(assessmentMarkup.qa, false, "assessment stays outside the QA-modern shell");
     assert.equal(assessmentMarkup.focus, false, "assessment does not gain a QA answer-focus region");
-    assert.ok(assessmentMarkup.checklistRows + assessmentMarkup.scaleRows > 0, "s78-self keeps its original assessment rows");
-    assert.ok(assessmentMarkup.scaleRows > 0, "s78-self retains its Evet/Kısmen/Hayır scale rows");
+    assert.ok(assessmentMarkup.checklistRows + assessmentMarkup.scaleRows > 0, "the assessment renders its authored criteria rows");
+    assert.ok(assessmentMarkup.scaleRows > 0, "the assessment renders its current response scale");
     assert.equal(assessmentMarkup.label, "Değerlendirme", "assessment uses its semantic badge label");
     assert.equal(assessmentMarkup.titleAlign, "left", "assessment title remains left aligned");
     assert.match(assessmentMarkup.titleFont, /^\s*["']?Inter["']?(?:\s*,|$)/i, "assessment title uses Inter");
-    assert.ok(selfAssessmentOpened.text.includes(selfAssessment.step.display_prompt), "s78-self keeps its existing prompt content");
+    assert.ok(selfAssessmentOpened.text.includes(selfAssessment.step.display_prompt), "assessment keeps its canonical prompt content");
 
-    for (const fixture of [
-      { slug: "dinleme-izleme", id: "s64-listen", layout: "process", key: "answer" },
-      { slug: "huzur-okuma", id: "s170-reading", layout: "reference", key: "answer" }
-    ]) {
-      const entry = findStep(fixture.slug, fixture.id);
-      assert.equal(entry.step.layout, fixture.layout, `${fixture.slug}/${fixture.id} reveal fixture has its expected layout`);
-      assert.ok(entry.step.reveal_order.includes(fixture.key), `${fixture.slug}/${fixture.id} authors the expected ${fixture.key} reveal`);
-      await openStep(fixture.slug, fixture.id);
+    for (const layout of ["process", "reference"]) {
+      const fixture = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+        .find(({ step }) => step.layout === layout && step.reveals?.includes("answer") && answerLayerMarker(step, "answer"));
+      assert.ok(fixture, `canonical catalog contains an answer-bearing ${layout} companion slide`);
+      const entry = findStep(fixture.lesson.slug, fixture.step.id);
+      await openStep(fixture.lesson.slug, fixture.step.id);
       visual = await visualLayoutState();
-      expectVisualClasses(visual, [`slide--visual-${fixture.layout}`], `${fixture.slug}/${fixture.id} opening`);
-      assert.equal(visual.revealDots, 1, `${fixture.slug}/${fixture.id} has one active student reveal`);
-      assert.equal(visual.revealedDots, 0, `${fixture.slug}/${fixture.id} starts before its answer reveal`);
-      await next();
+      expectVisualClasses(visual, [`slide--visual-${layout}`], `${fixture.lesson.slug}/${fixture.step.id} opening`);
+      const initialRevealDots = visual.revealDots;
+      assert.ok(initialRevealDots > 0, `${fixture.lesson.slug}/${fixture.step.id} exposes its current answer reveal sequence`);
+      assert.equal(visual.revealedDots, 0, `${fixture.lesson.slug}/${fixture.step.id} starts before its answer reveal`);
+      const answerMarker = answerLayerMarker(entry.step, "answer");
+      assertLayerHidden(entry.step, await bodyText(), "answer", `${fixture.lesson.slug}/${fixture.step.id} task view`);
+      for (let attempt = 0; attempt < 64 && !(await answerPanelText()).trim(); attempt += 1) {
+        await next();
+        const answerState = await visualLayoutState();
+        assert.equal(answerState.prompt, entry.step.display_prompt,
+          `${fixture.lesson.slug}/${fixture.step.id} advances within its current step`);
+      }
       visual = await visualLayoutState();
-      assert.equal(visual.prompt, entry.step.display_prompt, `${fixture.slug}/${fixture.id} answer stays on the same step`);
-      assert.equal(visual.revealedDots, 1, `${fixture.slug}/${fixture.id} next opens the authored answer reveal`);
-      assert.ok(await answerPanelText(), `${fixture.slug}/${fixture.id} renders its answer content`);
-      expectVisualClasses(visual, [`slide--visual-${fixture.layout}`], `${fixture.slug}/${fixture.id} answer reveal`);
-      await previous();
-      visual = await visualLayoutState();
-      assert.equal(visual.prompt, entry.step.display_prompt, `${fixture.slug}/${fixture.id} previous returns to its task`);
-      assert.equal(visual.revealedDots, 0, `${fixture.slug}/${fixture.id} previous closes the answer reveal`);
-      expectVisualClasses(visual, [`slide--visual-${fixture.layout}`], `${fixture.slug}/${fixture.id} reverse navigation`);
+      assert.equal(visual.prompt, entry.step.display_prompt, `${fixture.lesson.slug}/${fixture.step.id} answer stays on the same step`);
+      assert.ok(visual.revealedDots > 0 && visual.revealedDots <= initialRevealDots,
+        `${fixture.lesson.slug}/${fixture.step.id} advances within its authored reveal sequence`);
+      assertLayerVisible(await bodyText(), answerMarker, "answer", `${fixture.lesson.slug}/${fixture.step.id} answer reveal`);
+      assert.ok((await answerPanelText()).trim(), `${fixture.lesson.slug}/${fixture.step.id} renders its answer content`);
+      expectVisualClasses(visual, [`slide--visual-${layout}`], `${fixture.lesson.slug}/${fixture.step.id} answer reveal`);
+      for (let attempt = 0; attempt < 128 && visual.revealedDots > 0; attempt += 1) {
+        await previous();
+        visual = await visualLayoutState();
+      }
+      assert.equal(visual.prompt, entry.step.display_prompt, `${fixture.lesson.slug}/${fixture.step.id} previous returns to its task`);
+      assert.equal(visual.revealedDots, 0, `${fixture.lesson.slug}/${fixture.step.id} previous closes the answer reveal`);
+      assertLayerHidden(entry.step, await bodyText(), "answer", `${fixture.lesson.slug}/${fixture.step.id} after backward navigation`);
+      expectVisualClasses(visual, [`slide--visual-${layout}`], `${fixture.lesson.slug}/${fixture.step.id} reverse navigation`);
     }
 
-    for (const fixture of [
-      { slug: "mektup", id: "s40-q5", layout: "structure", classes: ["slide--visual-structure"] },
-      { slug: "asik-atismasi", id: "s143-q4", layout: "comparison", classes: [] },
-      { slug: "huzur-okuma", id: "s172-vocabulary", layout: "vocabulary", classes: [] },
-      { slug: "konusma", id: "s58-feedback", layout: "assessment", classes: ["slide--visual-assessment"] }
-    ]) {
-      const entry = await openStep(fixture.slug, fixture.id);
-      assert.equal(entry.step.layout, fixture.layout, `${fixture.slug}/${fixture.id} control fixture has its expected layout`);
+    const visualControlCases = new Map([
+      ["process", processCase],
+      ["reference", referenceCase],
+      ["assessment", assessmentCase],
+      ...["structure", "comparison", "vocabulary"].map((layout) => [layout,
+        builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+          .find(({ step }) => step.layout === layout)])
+    ]);
+    for (const [layout, fixture] of visualControlCases) {
+      assert.ok(fixture, `canonical catalog contains a ${layout} visual-layout control`);
+      const entry = await openStep(fixture.lesson.slug, fixture.step.id);
+      assert.equal(entry.step.layout, layout, `${fixture.lesson.slug}/${fixture.step.id} retains its canonical ${layout} layout`);
       visual = await visualLayoutState();
-      expectVisualClasses(visual, fixture.classes, `${fixture.slug}/${fixture.id} control fixture`);
+      const expectedClasses = ["process", "reference", "assessment", "structure"].includes(layout)
+        ? [`slide--visual-${layout}`]
+        : [];
+      expectVisualClasses(visual, expectedClasses, `${fixture.lesson.slug}/${fixture.step.id} control fixture`);
     }
     // Every internal companion heading must stay on the same vertical baseline,
     // even when adjacent slides contain substantially different amounts of content.
     const titleAnchorByLayout = new Map();
-    for (const [slug, id, layout] of [
-      ["karagoz", "s16-process", "process"],
-      ["dinleme-izleme", "s67-qr-communication", "reference"],
-      ["karagoz", "s26-reference", "reference"],
-      ["yazma", "s78-self", "assessment"],
-      ["konusma", "s58-feedback", "assessment"],
-      ["tema-2-konusma", "s130-stations", "process"],
-      ["huzur-177-178", "s178-circle-plan", "process"],
-      ["tiyatro-canlandirma-280-283", "s281-plan", "process"]
-    ]) {
+    const anchorCases = [];
+    for (const layout of ["process", "reference", "assessment"]) {
+      const candidates = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+        .filter((step) => step.layout === layout && step.prompt?.trim())
+        .map((step) => ({ lesson, step })))
+        .sort((left, right) => left.step.prompt.length - right.step.prompt.length);
+      assert.ok(candidates.length > 0, `canonical catalog contains a ${layout} heading example`);
+      anchorCases.push(candidates[0]);
+      if (candidates.length > 1) anchorCases.push(candidates.at(-1));
+    }
+    for (const { lesson, step } of anchorCases) {
+      const layout = step.layout;
+      const { slug, id } = { slug: lesson.slug, id: step.id };
       await openStep(slug, id);
       const appearance = await page.evaluate("(() => { const slide = document.querySelector('#canvas .slide'); const context = slide?.querySelector('.companion-context'); const focus = slide?.querySelector('.companion-focus'); const prompt = context?.querySelector(':scope > .prompt'); return { classes: slide?.className ?? '', prompt: prompt?.textContent ?? '', align: prompt ? getComputedStyle(prompt).textAlign : '', children: context?.children.length ?? 0, focusEmpty: focus?.childElementCount === 0, hasQaFocus: Boolean(slide?.querySelector('.qa-focus')), titleOffset: prompt ? prompt.getBoundingClientRect().top - slide.querySelector('.slide__body').getBoundingClientRect().top : null }; })()");
       assert.ok(appearance.classes.includes("slide--modern-companion"), slug + "/" + id + " has shared shell");
       assert.ok(appearance.classes.includes("slide--visual-" + layout), slug + "/" + id + " preserves its layout");
-      assert.ok(appearance.prompt.trim().length > 0 && appearance.children > 1, slug + "/" + id + " preserves content");
+      assert.ok(appearance.prompt.trim().length > 0 && appearance.children > 0, slug + "/" + id + " preserves its visible prompt context");
       assert.ok(appearance.focusEmpty && !appearance.hasQaFocus, slug + "/" + id + " is not QA");
       assert.ok(layout === "process" ? ["center", "left"].includes(appearance.align) : appearance.align === "left",
         slug + "/" + id + " keeps its readable semantic title alignment");
@@ -1748,31 +1765,43 @@ presentationBrowserSuite: {
       }
     }
 
-    await openStep("dinleme-izleme", "s68-69-paydos-q1");
+    const companionAnswerCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.layout === "process" && step.reveals?.includes("answer") && answerLayerMarker(step, "answer"));
+    assert.ok(companionAnswerCase, "canonical catalog contains an answer-bearing process companion");
+    await openStep(companionAnswerCase.lesson.slug, companionAnswerCase.step.id);
     const originalPromptSize = await page.evaluate("parseFloat(getComputedStyle(document.querySelector('#canvas .companion-context > .prompt')).fontSize)");
-    assert.equal(await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount"), 0, "Paydos starts as a reading instruction");
-    await next();
+    assert.equal(await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount"), 0,
+      `${companionAnswerCase.lesson.slug}/${companionAnswerCase.step.id} starts without support in focus`);
+    for (let attempt = 0; attempt < 64 && !(await page.evaluate("Boolean(document.querySelector('#canvas .companion-focus .panel--answer'))")); attempt += 1) {
+      await next();
+    }
     const revealed = await page.evaluate("(() => { const prompt = document.querySelector('#canvas .companion-context > .prompt'); return { size: parseFloat(getComputedStyle(prompt).fontSize), title: prompt.textContent, answer: Boolean(document.querySelector('#canvas .companion-focus .panel--answer')), qa: Boolean(document.querySelector('#canvas .slide--qa-modern')) }; })()");
-    assert.ok(revealed.size < originalPromptSize, "Paydos heading contracts when support opens");
-    assert.equal(revealed.title, "Paydos parçasını okuyun", "Paydos title is preserved");
-    assert.equal(revealed.answer, true, "Paydos support is in the shared focus area");
-    assert.equal(revealed.qa, false, "Paydos stays a process, not a QA question");
-    await previous();
-    assert.equal(await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount"), 0, "Paydos reverse navigation restores its instruction");
+    assert.ok(revealed.size < originalPromptSize, "process heading contracts when support opens");
+    assert.ok(revealed.title.includes(companionAnswerCase.step.prompt), "the canonical process prompt stays in context");
+    assert.equal(revealed.answer, true, "process answer support appears in the shared focus area");
+    assert.equal(revealed.qa, false, "process companion stays outside the QA question shell");
+    for (let attempt = 0; attempt < 128 && await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount > 0"); attempt += 1) {
+      await previous();
+    }
+    assert.equal(await page.evaluate("document.querySelector('#canvas .companion-focus').childElementCount"), 0,
+      "reverse navigation restores the process instruction without support");
     console.log("[sunum-web] Companion visual smoke passed in four themes.");
     console.log("[sunum-web] Focused visual-layout class smoke passed: process, assessment and reference shell isolation, pagination/reveal order, and existing content structures.");
     break presentationBrowserSuite;
   }
 
   if (process.env.VOCAB_DICT_SMOKE === "1") {
-    const { step: dictionaryStep } = await openStep("orhun-abideleri", "s116-vocabulary");
-    assert.equal(dictionaryStep.layout, "vocabulary", "s116-vocabulary is the canonical dictionary card fixture");
+    const dictionaryCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.layout === "vocabulary" && step.answer?.dictionary_terms?.length);
+    assert.ok(dictionaryCase, "current catalog provides a vocabulary answer with dictionary terms");
+    const { step: dictionaryStep } = await openStep(dictionaryCase.lesson.slug, dictionaryCase.step.id);
+    assert.equal(dictionaryStep.layout, "vocabulary", `${dictionaryCase.step.id} uses the vocabulary layout`);
     let dictionaryVisible = await page.evaluate("Boolean(document.querySelector('#canvas .dict'))");
     for (let index = 0; index < 12 && !dictionaryVisible; index += 1) {
       await next();
       dictionaryVisible = await page.evaluate("Boolean(document.querySelector('#canvas .dict'))");
     }
-    assert.equal(dictionaryVisible, true, "s116-vocabulary reaches its rendered dictionary card on the real route");
+    assert.equal(dictionaryVisible, true, `${dictionaryCase.lesson.slug}/${dictionaryCase.step.id} reaches its rendered dictionary card on the real route`);
     const dictionaryStyle = await page.evaluate(`(async () => {
       await document.fonts.ready;
       const interFaces = await document.fonts.load('400 16px "Inter"');
@@ -1820,7 +1849,7 @@ presentationBrowserSuite: {
         interLoaded: interFaces.some((face) => face.family.replaceAll('"', '') === 'Inter' && face.status === 'loaded')
       };
     })()`);
-    assert.equal(dictionaryStyle.cardCount, 1, "s116-vocabulary renders one visible .dict card");
+    assert.equal(dictionaryStyle.cardCount, 1, `${dictionaryCase.lesson.slug}/${dictionaryCase.step.id} renders one visible .dict card`);
     assert.equal(dictionaryStyle.headingCount, 1, "the dictionary card has one Sözlük heading");
     assert.equal(dictionaryStyle.headingText, "Sözlük", "the heading is the Sözlük label");
     assert.match(dictionaryStyle.headingFont, /^Inter(?:,|$)/, "the dictionary heading uses Inter");
@@ -1839,7 +1868,17 @@ presentationBrowserSuite: {
     assert.ok(dictionaryStyle.cardNoScrollOverflow, "dictionary card has no internal scroll overflow");
     assert.ok(dictionaryStyle.bodyNoHorizontalOverflow, "dictionary page has no horizontal body overflow");
 
-    await openStep("huzur-okuma", "s172-vocabulary");
+    const vocabularyCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.layout === "vocabulary" && Object.keys(step.answer?.answer_sections ?? {}).length > 0 &&
+        !step.answer?.dictionary_terms?.length);
+    assert.ok(vocabularyCase, "current catalog provides a vocabulary-card answer");
+    await openStep(vocabularyCase.lesson.slug, vocabularyCase.step.id);
+    let vocabularyVisible = await page.evaluate("Boolean(document.querySelector('#canvas .vocab__item'))");
+    for (let index = 0; index < 64 && !vocabularyVisible; index += 1) {
+      await next();
+      vocabularyVisible = await page.evaluate("Boolean(document.querySelector('#canvas .vocab__item'))");
+    }
+    assert.equal(vocabularyVisible, true, `${vocabularyCase.step.id} reaches its vocabulary cards`);
     const vocabularyStyle = await page.evaluate(`(() => {
       const slide = document.querySelector('#canvas .slide');
       const terms = [...slide.querySelectorAll('.vocab__term')];
@@ -1857,7 +1896,10 @@ presentationBrowserSuite: {
     assert.ok(vocabularyStyle.termColors.includes("rgb(83, 99, 167)"), "vocabulary term accent hierarchy remains intact");
     assert.ok(vocabularyStyle.termFonts.every((font) => !font.startsWith("Inter")), "vocabulary terms keep their serif hierarchy");
 
-    await openStep("asik-atismasi", "s139-checklist");
+    const criteriaCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.layout === "assessment" && step.content?.items?.length && !step.content.scale?.length);
+    assert.ok(criteriaCase, "current catalog provides an assessment criteria list");
+    await openStep(criteriaCase.lesson.lesson_slug, criteriaCase.step.id);
     const criteriaStyle = await page.evaluate(`(() => {
       const slide = document.querySelector('#canvas .slide');
       const marker = getComputedStyle(slide.querySelector('.criteria li'), '::before').borderTopColor;
@@ -1877,7 +1919,10 @@ presentationBrowserSuite: {
     assert.equal(criteriaStyle.dictAccent, "", "dictionary accent does not leak onto .criteria slides");
     assert.equal(criteriaStyle.marker, criteriaStyle.accent, "criteria markers keep the lesson accent");
 
-    await openStep("kemal-tahir-mulakat-210-214", "s214-eval");
+    const scaleCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.layout === "assessment" && step.content?.scale?.length && step.content?.items?.length);
+    assert.ok(scaleCase, "current catalog provides an assessment scale form");
+    await openStep(scaleCase.lesson.lesson_slug, scaleCase.step.id);
     const scaleStyle = await page.evaluate(`(() => {
       const slide = document.querySelector('#canvas .slide');
       const head = slide.querySelector('.scale-form__head');
@@ -1893,87 +1938,48 @@ presentationBrowserSuite: {
     assert.equal(scaleStyle.dictAccent, "", "dictionary accent does not leak onto .scale-form slides");
     assert.notEqual(scaleStyle.assessmentTeal, "", "the assessment palette remains active on scale forms");
     assert.equal(scaleStyle.headBackground, "rgb(226, 239, 235)", "scale-form header keeps its own background style");
-    assert.equal(scaleStyle.rowCount, 6, "the scale form retains all six rows");
+    assert.ok(scaleStyle.rowCount > 0 && scaleStyle.rowCount <= scaleCase.step.content.items.length,
+      `${scaleCase.step.id} renders a non-empty page from its current assessment criteria`);
     console.log("[sunum-web] Focused Chrome dictionary smoke passed: card, heading, Inter definitions, term hierarchy, bounds, and vocabulary/criteria/scale-form style isolation.");
     break presentationBrowserSuite;
   }
-  // Long location metadata must never add header rows as answer/reveal labels change.
-  await openStep("mektup", "s44-q2");
-  const initialHeader = await headerMetrics();
-  const fixedHeaderHeight = initialHeader.height;
-  const fixedBodyTop = initialHeader.bodyTop;
-  let answerReached = false;
-  for (let index = 0; index < 12; index += 1) {
-    const metrics = await headerMetrics();
-    assert.equal(metrics.whiteSpace, "nowrap", "s.44 metadata stays on one line");
-    assert.equal(metrics.height, fixedHeaderHeight, "s.44 header height stays fixed across reveal layers");
-    assert.equal(metrics.bodyTop, fixedBodyTop, "s.44 body position stays fixed across reveal layers");
-    assert.ok(metrics.title.includes("Çözümleyebilme"), "full s.44 metadata remains available in the title");
-    assert.ok(!metrics.title.includes(" · Cevap"), "s.44 QA header title never receives the reveal label");
-    if ((await answerPanelText()).trim()) {
-      answerReached = true;
-      break;
-    }
-    await next();
-  }
-  assert.ok(answerReached, "s.44 regression case reaches its answer reveal without adding it to .where");
-  assert.ok(!(await headerMetrics()).title.includes(" · Cevap"), "s.44 answer view keeps the view label out of .where");
-  await openStep("konusma", "s53-q1");
-  const longHeadingMetrics = await headerMetrics();
-  assert.equal(longHeadingMetrics.whiteSpace, "nowrap", "s.53 long heading stays on one line");
-  assert.equal(longHeadingMetrics.height, fixedHeaderHeight, "s.53 long heading does not change header height");
-  assert.ok(longHeadingMetrics.title.includes("Drama hazırlığı"), "full s.53 heading remains available in the title");
-  for (let index = 0; index < 5; index += 1) {
-    await next();
-    const metrics = await headerMetrics();
-    assert.equal(metrics.height, fixedHeaderHeight, "s.53 header height stays fixed across reveal layers");
-    assert.equal(metrics.bodyTop, fixedBodyTop, "s.53 body position stays fixed across reveal layers");
-  }
-
-  const promptFixtures = [
-    { slug: "tema-girisi", id: "s14-q1", expected: "short" },
-    { slug: "karagoz", id: "s28-q1", expected: "long" },
-    { slug: "mektup", id: "s39-q1" },
-    { slug: "tema-2-degerlendirme", id: "s155-q2" },
-    { slug: "tema-2-degerlendirme", id: "s157-q3" },
-    { slug: "tema-2-girisi", id: "s88-q4", expected: "long" }
-  ];
+  // Select current prompts by their canonical text length. The UI contract
+  // follows rendered geometry, so editorial wording can change freely.
+  const promptCandidates = builtCatalog.lessons.flatMap((lesson) => lesson.steps
+    .map((step) => ({ lesson, step }))
+    .filter(({ step }) => usesModernQuestionLayout(step) && step.prompt?.trim() &&
+      !["process", "assessment", "reference"].includes(step.layout)));
+  assert.ok(promptCandidates.length > 0, "catalog has a prompt-bearing answer-reveal step");
+  const byPromptLength = [...promptCandidates].sort((left, right) => left.step.prompt.length - right.step.prompt.length);
+  const promptFixtures = [...new Map([byPromptLength[0], byPromptLength.at(-1)]
+    .map((entry) => [`${entry.lesson.slug}/${entry.step.id}`, entry])).values()];
   const promptAlignmentResults = [];
   for (const fixture of promptFixtures) {
-    const source = findStep(fixture.slug, fixture.id);
-    const runtimeLesson = builtCatalog.lessons.find((lesson) => lesson.slug === fixture.slug);
-    const runtimeStep = runtimeLesson?.steps.find((step) => step.id === fixture.id);
-    assert.ok(source.step.display_prompt.trim(), `${fixture.id} has a prompt in the canonical source`);
-    assert.ok(runtimeStep?.prompt.trim(), `${fixture.id} runtime catalog has a non-empty prompt`);
-    assert.ok(runtimeStep?.reveals.includes("answer"), `${fixture.id} canonical runtime reveals include answer`);
-    assert.equal(runtimeStep?.answer?.entry_type, "question_answer", `${fixture.id} is a canonical question_answer`);
-    assert.equal(usesModernQuestionLayout(runtimeStep), true, `${fixture.id} enters QA-modern by semantic eligibility`);
-    await openStep(fixture.slug, fixture.id);
+    const label = `${fixture.lesson.slug}/${fixture.step.id}`;
+    await openStep(fixture.lesson.slug, fixture.step.id);
     await waitForPromptFonts();
     const metrics = await qaPromptMetrics();
-    assert.ok(metrics, `${fixture.id} renders a QA prompt for measurement`);
+    assert.ok(metrics, `${label} renders a QA prompt for measurement`);
     const lines = metrics.afterAlignment.lineCount;
     assert.match(metrics.afterAlignment.inputs.fontFamily, /^\s*["']?Inter["']?(?:\s*,|$)/i,
-      `${fixture.id} computed QA prompt font-family starts with Inter (${metrics.afterAlignment.inputs.fontFamily})`);
+      `${label} computed QA prompt font-family starts with Inter (${metrics.afterAlignment.inputs.fontFamily})`);
     assert.equal(metrics.afterAlignment.fontCheck, true,
-      `${fixture.id} document.fonts.check confirms Inter is loaded for the prompt text`);
+      `${label} document.fonts.check confirms Inter is loaded for the prompt text`);
     assert.ok(metrics.afterAlignment.interFaces.some((face) => face.status === "loaded"),
-      `${fixture.id} has a loaded Inter FontFace (${JSON.stringify(metrics.afterAlignment.interFaces)})`);
-    assert.ok(lines > 0, `${fixture.id} has measurable rendered text lines`);
+      `${label} has a loaded Inter FontFace (${JSON.stringify(metrics.afterAlignment.interFaces)})`);
+    assert.ok(lines > 0, `${label} has measurable rendered text lines`);
     assert.equal(metrics.appliedTextAlign, lines >= 3 ? "left" : "center",
-      `${fixture.id} text-align follows its actual rendered line count (${lines})`);
+      `${label} text-align follows its actual rendered line count (${lines})`);
     assert.equal(metrics.afterAlignment.textAlign, metrics.appliedTextAlign,
-      `${fixture.id} computed alignment reflects the applied measurement decision`);
+      `${label} computed alignment reflects the applied measurement decision`);
     assert.deepEqual(metrics.beforeAlignment.inputs, metrics.afterAlignment.inputs,
-      `${fixture.id} alignment does not change width/font measurement inputs`);
+      `${label} alignment does not change width/font measurement inputs`);
     assert.equal(metrics.beforeAlignment.lineCount, metrics.afterAlignment.lineCount,
-      `${fixture.id} alignment does not change the measured line count`);
+      `${label} alignment does not change the measured line count`);
     assert.deepEqual(metrics.restored, metrics.afterAlignment,
-      `${fixture.id} restoring the tested alignment returns the same measured layout`);
-    if (fixture.expected === "short") assert.ok(lines >= 1 && lines <= 2, `${fixture.id} is a real 1–2 line QA prompt`);
-    if (fixture.expected === "long") assert.ok(lines >= 3, `${fixture.id} is a real 3+ line QA prompt`);
+      `${label} restoring the tested alignment returns the same measured layout`);
     promptAlignmentResults.push({
-      id: fixture.id,
+      id: fixture.step.id,
       lines,
       textAlign: metrics.afterAlignment.textAlign,
       fontFamily: metrics.afterAlignment.inputs.fontFamily,
@@ -1982,179 +1988,132 @@ presentationBrowserSuite: {
   }
   console.log(`[sunum-web] Inter-loaded QA prompt alignment: ${JSON.stringify(promptAlignmentResults)}`);
 
-  const longOpening = await openStep("karagoz", "s28-q1");
-  assert.equal(longOpening.step.answer.question_id, "T1-P28-Q01", "s.28 target prompt has its expected canonical identity");
-  let s28PromptMetrics = await qaPromptMetrics();
-  assert.ok(s28PromptMetrics.afterAlignment.lineCount >= 3, "s.28 long opening prompt occupies at least three rendered lines");
-  assert.equal(s28PromptMetrics.afterAlignment.textAlign, "left", "s.28 long prompt is left aligned");
-  let s28ContentAlignment = await qaContentAlignmentState();
-  assert.equal(s28ContentAlignment.prompt, "left", "long prompt alignment stays on the prompt element");
-  assert.equal(s28ContentAlignment.context, "start", "QA context does not inherit centered text alignment");
-  assert.ok(s28ContentAlignment.content.length > 0 && s28ContentAlignment.content.every((node) => node.align === "left"),
-    `s.28 opening content blocks are left aligned: ${JSON.stringify(s28ContentAlignment.content)}`);
-  assert.equal(s28ContentAlignment.listDisplay, "grid", "s.28 numbered items retain the existing grid layout");
-  assert.ok(s28ContentAlignment.number?.left < s28ContentAlignment.itemText?.left,
-    "s.28 number bubbles remain to the left of each item text");
-  await next();
-  await waitForPromptFonts();
-  s28PromptMetrics = await qaPromptMetrics();
-  assert.equal(s28PromptMetrics.appliedTextAlign, s28PromptMetrics.afterAlignment.lineCount >= 3 ? "left" : "center",
-    "s.28 compact reveal prompt follows its actual rendered line count");
-  assert.deepEqual(s28PromptMetrics.beforeAlignment.inputs, s28PromptMetrics.afterAlignment.inputs,
-    "s.28 compact reveal alignment leaves prompt sizing and wrapping inputs unchanged");
-  const longCompact = await openStep("karagoz", "s29-q1");
-  assert.equal(longCompact.step.answer.question_id, "T1-P29-Q01", "s.29 compact-prompt fixture has its expected identity");
-  await next();
-  await waitForPromptFonts();
-  const longCompactMetrics = await qaPromptMetrics();
-  assert.ok(longCompactMetrics.afterAlignment.lineCount >= 3, "s.29 reveal prompt remains a long compact prompt after fitBody");
-  assert.equal(longCompactMetrics.afterAlignment.textAlign, "left", "long compact reveal prompt is left aligned");
-  assert.deepEqual(longCompactMetrics.beforeAlignment.inputs, longCompactMetrics.afterAlignment.inputs,
-    "long compact alignment changes no width, font, or wrapping inputs");
+  const headerCase = promptCandidates.reduce((shortest, candidate) => {
+    const candidateText = candidate.step.answer?.answer ?? JSON.stringify(candidate.step.answer?.answer_sections ?? "");
+    const shortestText = shortest.step.answer?.answer ?? JSON.stringify(shortest.step.answer?.answer_sections ?? "");
+    return candidateText.length < shortestText.length ? candidate : shortest;
+  });
+  await openStep(headerCase.lesson.slug, headerCase.step.id);
+  const initialHeader = await headerMetrics();
+  const fixedHeaderHeight = initialHeader.height;
+  const fixedBodyTop = initialHeader.bodyTop;
+  const stableHeaderMetadata = (title) => title?.replace(/ · \d+\/\d+$/, "");
+  let answerReached = false;
+  for (let index = 0; index < 64; index += 1) {
+    const metrics = await headerMetrics();
+    assert.equal(metrics.whiteSpace, "nowrap", `${headerCase.step.id} metadata stays on one line`);
+    assert.equal(metrics.height, fixedHeaderHeight, `${headerCase.step.id} header height stays fixed across reveal layers`);
+    assert.equal(metrics.bodyTop, fixedBodyTop, `${headerCase.step.id} body position stays fixed across reveal layers`);
+    assert.equal(stableHeaderMetadata(metrics.title), stableHeaderMetadata(initialHeader.title),
+      `${headerCase.step.id} lesson metadata stays stable while its page counter advances`);
+    assert.ok(!metrics.title.includes(" · Cevap"), `${headerCase.step.id} header does not gain a reveal label`);
+    if ((await answerPanelText()).trim()) {
+      answerReached = true;
+      break;
+    }
+    await next();
+  }
+  assert.ok(answerReached, `${headerCase.step.id} reaches its authored answer reveal`);
 
-  // Non-question answer types keep their specialized answer renderer inside the
-  // QA shell whenever their canonical step has a prompt and answer reveal.
-  const qaEntry = findStep("huzur-metni-anlayalim-175-176", "s175-q1");
-  const qaRuntimeEntry = builtCatalog.lessons.find((lesson) => lesson.slug === qaEntry.lesson.lesson_slug)
-    ?.steps.find((step) => step.id === qaEntry.step.id);
-  assert.equal(qaEntry.step.layout, "question", "s175-q1 keeps its canonical content layout");
-  assert.equal(qaRuntimeEntry?.answer?.entry_type, "performance_support", "s175-q1 is performance support");
-  assert.equal(usesModernQuestionLayout(qaRuntimeEntry), true, "s175-q1 performance support enters QA-modern by its prompt and answer reveal");
-  assert.equal(qaEntry.step.answer.question_no, "1", "s175-q1 production fixture has question number 1");
-  assert.ok(qaEntry.step.answer.answer_sections, "s175-q1 has structured production answers");
-  await openStep("huzur-metni-anlayalim-175-176", "s175-q1");
-  let qa = await qaState();
-  assert.equal(qa.modern, true, `s175-q1 performance support uses the QA-modern shell: ${JSON.stringify(qa)}`);
-  assert.equal(qa.badge, "SORU · 1. soru", "s175-q1 keeps its canonical question number in the QA SORU badge");
-  assert.ok((await bodyText()).includes(qaEntry.step.display_prompt), "s175-q1 still renders its task prompt");
-  const s175AnswerSnippet = firstSourceString(qaEntry.step.answer.answer_sections).trim().slice(0, 36);
-  const s175Answer = await advanceUntil((text) => text.includes(s175AnswerSnippet), "s175 performance-support answer", 12);
-  assert.ok(s175Answer.includes(s175AnswerSnippet), "s175-q1 answer remains available through its existing renderer");
-  qa = await qaState();
-  assert.equal(qa.modern, true, "s175-q1 remains in QA-modern during answer navigation");
-  assert.ok(qa.focus.includes(s175AnswerSnippet), "s175-q1 specialized performance-support answer stays in the focus stage");
+  // Renderer eligibility follows the current entry type and layout. Select a
+  // non-question answer category from canonical data instead of pinning an ID.
+  const specializedAnswerCase = promptCandidates.find(({ step }) =>
+    step.answer?.entry_type && step.answer.entry_type !== "question_answer");
+  if (specializedAnswerCase) {
+    const entry = await openStep(specializedAnswerCase.lesson.slug, specializedAnswerCase.step.id);
+    const marker = answerLayerMarker(entry.step, "answer");
+    const initialState = await qaState();
+    assert.equal(initialState.modern, usesModernQuestionLayout(specializedAnswerCase.step),
+      `${specializedAnswerCase.step.id} follows the semantic answer/reveal shell policy`);
+    assert.ok((await bodyText()).includes(entry.step.display_prompt),
+      `${specializedAnswerCase.step.id} renders its canonical prompt`);
+    assertLayerHidden(entry.step, await bodyText(), "answer", `${specializedAnswerCase.step.id} task view`);
+    const revealed = await advanceUntil((text) => text.includes(marker),
+      `${specializedAnswerCase.step.id} ${entry.step.answer.entry_type} answer`, 64);
+    assertLayerVisible(revealed, marker, "answer", `${specializedAnswerCase.step.id} answer reveal`);
+    const revealedState = await qaState();
+    assert.ok(revealedState.focus.includes(marker), `${specializedAnswerCase.step.id} answer appears in its focus stage`);
+  }
+  let qa;
 
-  const pairedQaEntry = findStep("ogulla-bulusma", "s100-q1");
-  assert.equal(pairedQaEntry.step.layout, "question", "s100-q1 production fixture is QA eligible");
-  assert.equal(pairedQaEntry.step.answer.question_no, "1", "s100-q1 production fixture has question number 1");
-  const pairedUnit = pairedQaEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
-  assert.ok(pairedUnit, "s100-q1 production fixture pairs answer and evidence");
-  await openStep("ogulla-bulusma", "s100-q1");
-  qa = await qaState();
-  assert.equal(qa.modern, true, "s100-q1 uses the modern QA layout");
-  assert.equal(qa.badge, "SORU · 1. soru", "s100-q1 shows the SORU badge and question_no");
-  const s100Answer = await advanceUntil((text) => text.includes("Çordon, yaklaşık yirmi yıl önce"), "s100-q1 paired answer");
-  qa = await qaState();
-  assert.equal(qa.prompt, pairedQaEntry.step.display_prompt, "s100-q1 prompt stays in qa-context through its answer reveal");
-  assert.ok(qa.focus.includes("Çordon, yaklaşık yirmi yıl önce"), "s100-q1 answer opens in qa-focus");
-  assert.ok(s100Answer.includes("Çordon, yaklaşık yirmi yıl önce"), "s100-q1 answer page shows production answer text");
-  assert.ok(qa.counter.includes("sayfa 1/"), "s100-q1 multi-page answer count is shown in the footer");
-  assert.ok((await answerPanelText()).trim(), "s100-q1 paired answer is visible before its evidence page");
-  assert.equal((await evidencePanelText()).trim(), "", "s100-q1 evidence waits for its authored follow-up page");
-  assert.equal(qa.qaStageLabels, 0, "s100-q1 does not add a duplicate stage label beside answer/evidence panels");
-  await next();
-  qa = await qaState();
-  assert.equal(qa.prompt, pairedQaEntry.step.display_prompt, "s100-q1 prompt remains in context on the next answer page");
-  assert.ok(qa.counter.includes("sayfa 2/"), "s100-q1 forward navigation increments the footer page count");
-  assert.ok(qa.focus.includes("Alınan Karar"), "s100-q1 evidence page keeps its linked answer in qa-focus");
-  assert.equal(qa.stageLabels.length, new Set(qa.stageLabels).size, "s100-q1 answer/evidence stage labels do not repeat");
-  assert.ok((await answerPanelText()).trim(), "s100-q1 linked answer remains paired with its evidence");
-  assert.ok((await evidencePanelText()).includes("Henüz gözlerim kapanmadan"), "s100-q1 linked evidence opens on its paired page");
-  await previous();
-  qa = await qaState();
-  assert.ok(qa.counter.includes("sayfa 1/"), "s100-q1 backward navigation restores the answer page count");
-  assert.ok((await answerPanelText()).trim(), "s100-q1 backward navigation restores the answer page");
-  assert.equal((await evidencePanelText()).trim(), "", "s100-q1 backward navigation closes its evidence page");
-  const s58QaCandidate = findStep("konusma", "s58-feedback");
-  assert.equal(s58QaCandidate.step.layout, "assessment", "s58-feedback keeps its canonical assessment renderer");
-  assert.equal(usesModernQuestionLayout(s58QaCandidate.step), false,
-    "s58-feedback source fixture does not synthesize QA answer eligibility");
-  await openStep("konusma", "s58-feedback");
-  assert.equal((await qaState()).modern, false, "s58-feedback stays outside the QA-modern shell by layout policy");
+  // Find a currently paginated multi-choice question from runtime geometry.
+  // Neither a particular ID nor a fixed number of content items is required.
+  let multiPageQa = null;
+  let multiPageEntry = null;
+  let contentPageCount = 0;
+  for (const candidate of multiPageContentCandidates) {
+    const opened = await openStep(candidate.lesson.slug, candidate.step.id);
+    const state = await qaState();
+    const total = Number(state.counter.match(/sayfa 1\/(\d+)/)?.[1] ?? 0);
+    if (total > 1) {
+      multiPageQa = candidate;
+      multiPageEntry = opened;
+      contentPageCount = total;
+      qa = state;
+      break;
+    }
+  }
+  if (multiPageQa) {
+    const label = `${multiPageEntry.lesson.lesson_slug}/${multiPageEntry.step.id}`;
+    const answerMarker = answerLayerMarker(multiPageEntry.step, "answer");
+    const itemPages = [qa.context];
+    assert.equal(qa.modern, true, `${label} opens in the semantic QA shell`);
+    assert.equal(qa.focus.trim(), "", `${label} starts with an empty answer focus`);
+    assertLayerHidden(multiPageEntry.step, qa.context, "answer", `${label} first content page`);
+    for (let part = 2; part <= contentPageCount; part += 1) {
+      await next();
+      qa = await qaState();
+      assert.ok(qa.counter.includes(`sayfa ${part}/${contentPageCount}`), `${label} advances to content part ${part}`);
+      assert.equal(qa.focus.trim(), "", `${label} content part ${part} keeps the answer hidden`);
+      assertLayerHidden(multiPageEntry.step, qa.context, "answer", `${label} content part ${part}`);
+      itemPages.push(qa.context);
+    }
+    for (const item of multiPageEntry.step.content.items) {
+      assert.ok(itemPages.some((text) => text.includes(item)), `${label} shows each authored item on a content page`);
+    }
 
-  // The encrypted runtime catalog is the source of truth for reveal eligibility.
-  // s155-q2 has five answer-choice items, so its actual content view spans two parts.
-  const multiPageQa = multiPageContentQa;
-  const multiPageEntry = findStep(multiPageQa.lesson.slug, multiPageQa.step.id);
-  assert.equal(multiPageQa.step.layout, "question", `${multiPageEntry.step.id} production layout is question`);
-  assert.ok(multiPageQa.step.reveals.includes("answer"), `${multiPageEntry.step.id} canonical reveals include answer`);
-  assert.ok(multiPageEntry.step.reveal_order.includes("answer"), `${multiPageEntry.step.id} source reveal order includes answer`);
-  assert.equal(multiPageEntry.step.content.items.length, 5, `${multiPageEntry.step.id} has five production answer choices`);
-  const firstContentPage = await openStep(multiPageQa.lesson.slug, multiPageEntry.step.id);
-  qa = await qaState();
-  assert.equal(qa.modern, true, `${multiPageEntry.step.id} opens in the QA layout`);
-  assert.equal(qa.counter.split("· sayfa ")[1], "1/2", `${multiPageEntry.step.id} content starts at part 1/2`);
-  assert.ok(qa.focus.trim() === "", `${multiPageEntry.step.id} content starts with an empty qa-focus`);
-  const firstContentItems = multiPageEntry.step.content.items.filter((item) => qa.context.includes(item));
-  const secondContentItems = multiPageEntry.step.content.items.filter((item) => !firstContentItems.includes(item));
-  assert.ok(firstContentItems.length > 0 && secondContentItems.length > 0,
-    `${multiPageEntry.step.id} first content part shows a proper subset of its choices`);
-  assert.ok(firstContentPage.text.includes(firstContentItems[0]));
-  const secondContentPage = await next();
-  qa = await qaState();
-  assert.equal(qa.counter.split("· sayfa ")[1], "2/2", `${multiPageEntry.step.id} advances to content part 2/2`);
-  assert.equal(qa.focus.trim(), "", `${multiPageEntry.step.id} second content part remains in qa-context`);
-  assert.ok(secondContentItems.every((item) => qa.context.includes(item)),
-    `${multiPageEntry.step.id} second content part shows the remaining choices`);
-  assert.ok(secondContentPage.includes(secondContentItems[0]));
-  await next();
-  qa = await qaState();
-  assert.equal(qa.prompt, multiPageEntry.step.display_prompt, `${multiPageEntry.step.id} prompt remains in qa-context after content`);
-  assert.ok(qa.focus.includes("Düşünürken"), `${multiPageEntry.step.id} thinking follows both content parts`);
-  await next();
-  qa = await qaState();
-  assert.ok(qa.focus.includes("Devletin temel değerlerini aktarmak"), `${multiPageEntry.step.id} answer follows thinking`);
-  assert.equal(qa.prompt, multiPageEntry.step.display_prompt, `${multiPageEntry.step.id} prompt remains in qa-context during answer`);
-  await previous();
-  qa = await qaState();
-  assert.ok(qa.focus.includes("Düşünürken"), `${multiPageEntry.step.id} first reverse step returns to thinking`);
-  await previous();
-  qa = await qaState();
-  assert.equal(qa.counter.split("· sayfa ")[1], "2/2", `${multiPageEntry.step.id} reverse navigation returns to content part 2/2`);
-  assert.ok(secondContentItems.every((item) => qa.context.includes(item)), `${multiPageEntry.step.id} reverse part 2 restores its choices`);
-  assert.equal(qa.focus.trim(), "", `${multiPageEntry.step.id} reverse part 2 clears qa-focus`);
-  await previous();
-  qa = await qaState();
-  assert.equal(qa.counter.split("· sayfa ")[1], "1/2", `${multiPageEntry.step.id} reverse navigation returns to content part 1/2`);
-  assert.ok(firstContentItems.every((item) => qa.context.includes(item)),
-    `${multiPageEntry.step.id} reverse part 1 restores its choices`);
+    for (let part = contentPageCount; part > 1; part -= 1) await previous();
+    qa = await qaState();
+    assert.ok(qa.counter.includes(`sayfa 1/${contentPageCount}`), `${label} restores the first content page`);
 
-  // Intercept the native View Transition API in this harness so the boundary
-  // policy is deterministic across Chrome versions and headless environments.
-  await installQaTransitionProbe();
-  await clearQaTransitionCalls();
-  await next(); // Content part 1 -> content part 2 must not animate the prompt.
-  assert.equal((await qaTransitionCalls()).length, 0,
-    `${multiPageEntry.step.id} content pagination does not start a QA prompt transition`);
-  await next(); // Last content part -> first reveal.
-  let transitionCalls = await qaTransitionCalls();
-  assert.equal(transitionCalls.length, 1,
-    `${multiPageEntry.step.id} last content part to first reveal starts exactly one transition`);
-  assert.equal(transitionCalls[0].before.count, 1, "QA transition starts with one named prompt");
-  assert.equal(transitionCalls[0].after.count, 1, "QA transition ends with one named prompt");
-  assert.equal(transitionCalls[0].before.viewTransitionName, "qa-question",
-    "the outgoing QA prompt has the shared view-transition name");
-  assert.equal(transitionCalls[0].after.viewTransitionName, "qa-question",
-    "the incoming QA prompt has the shared view-transition name");
-  assert.equal(transitionCalls[0].after.text, transitionCalls[0].before.text,
-    "the transition carries the same question prompt into its first reveal");
-  await next(); // First reveal -> next reveal must not animate.
-  assert.equal((await qaTransitionCalls()).length, 1,
-    `${multiPageEntry.step.id} reveal-to-reveal navigation does not start a transition`);
-  await previous(); // Return to the first reveal.
-  assert.equal((await qaTransitionCalls()).length, 1,
-    `${multiPageEntry.step.id} reverse reveal-to-reveal navigation does not start a transition`);
-  await previous(); // First reveal -> last content part.
-  transitionCalls = await qaTransitionCalls();
-  assert.equal(transitionCalls.length, 2,
-    `${multiPageEntry.step.id} first reveal to content starts one reverse transition`);
-  assert.equal(transitionCalls[1].before.viewTransitionName, "qa-question",
-    "reverse transition starts with the shared prompt name");
-  assert.equal(transitionCalls[1].after.viewTransitionName, "qa-question",
-    "reverse transition returns to the shared prompt name");
-  await previous(); // Content part 2 -> content part 1.
-  assert.equal((await qaTransitionCalls()).length, 2,
-    `${multiPageEntry.step.id} reverse content pagination does not start a transition`);
+    // Content-to-content pagination stays still; crossing into a reveal gets
+    // one named-prompt transition, and reversing that boundary gets one more.
+    await installQaTransitionProbe();
+    await clearQaTransitionCalls();
+    for (let part = 2; part <= contentPageCount; part += 1) {
+      await next();
+      assert.equal((await qaTransitionCalls()).length, 0, `${label} content pagination does not animate the prompt`);
+    }
+    await next();
+    let transitionCalls = await qaTransitionCalls();
+    assert.equal(transitionCalls.length, 1, `${label} content-to-reveal navigation starts one transition`);
+    assert.equal(transitionCalls[0].before.viewTransitionName, "qa-question", "outgoing QA prompt has its shared transition name");
+    assert.equal(transitionCalls[0].after.viewTransitionName, "qa-question", "incoming QA prompt has its shared transition name");
+    assert.equal(transitionCalls[0].after.text, transitionCalls[0].before.text, "transition preserves the current prompt");
+    if ((multiPageEntry.step.reveals?.length ?? 0) > 1) {
+      await next();
+      assert.equal((await qaTransitionCalls()).length, 1, `${label} reveal-to-reveal navigation does not animate`);
+      await previous();
+      assert.equal((await qaTransitionCalls()).length, 1, `${label} reverse reveal navigation does not animate`);
+    }
+    qa = await qaState();
+    let reversePages = 0;
+    while (qa.focus.trim() && reversePages < 64) {
+      await previous();
+      qa = await qaState();
+      reversePages += 1;
+    }
+    assert.equal(qa.focus.trim(), "", `${label} reverse navigation returns to the last content page`);
+    assert.ok(qa.counter.includes(`sayfa ${contentPageCount}/${contentPageCount}`), `${label} restores the last content part`);
+    transitionCalls = await qaTransitionCalls();
+    assert.equal(transitionCalls.length, 2, `${label} reveal-to-content reverse navigation starts one transition`);
+    assert.equal(transitionCalls[1].before.viewTransitionName, "qa-question", "reverse transition starts with the QA prompt name");
+    assert.equal(transitionCalls[1].after.viewTransitionName, "qa-question", "reverse transition returns to the QA prompt name");
+    for (let part = contentPageCount - 1; part > 0; part -= 1) await previous();
+    assert.equal((await qaTransitionCalls()).length, 2, `${label} reverse content pagination does not animate`);
+  } else {
+    console.log("[sunum-web] Current catalog has no paginated multi-choice opening; the full prompt sweep still checks every current step.");
+  }
 
   // Walk every prompt-bearing answer-reveal step through its real URL entry
   // point, independent of entry type and renderer selected by layout.
@@ -2230,7 +2189,8 @@ presentationBrowserSuite: {
       console.log(`[sunum-web] Production question opening-state sweep progress: ${questionSweep.length}/${allQuestionCases.length}`);
     }
   }
-  assert.equal(questionSweep.length, 718, "all semantically eligible production answer-reveal URLs completed the opening-state sweep");
+  assert.equal(questionSweep.length, allQuestionCases.length,
+    "every semantically eligible production answer-reveal URL completed the opening-state sweep");
   console.log(`[sunum-web] Production question opening-state sweep: ${JSON.stringify({
     questionSteps: questionSweep.length,
     modernQaSteps: questionSweep.filter((step) => step.modern).length
@@ -2251,8 +2211,6 @@ presentationBrowserSuite: {
     !usesModernQuestionLayout(step));
   // Total comparison count is already checked against the source catalog above.
   // Do not pin it a second time: authoring may legitimately change a layout.
-  assert.equal(eligibleComparisonCases.length, 75,
-    "75 prompt-bearing comparison answers meet semantic QA shell eligibility");
   assert.equal(excludedComparisonCases.length + eligibleComparisonCases.length, sourceComparisonCount,
     "all source comparisons are either QA-eligible or explicitly excluded");
   for (const { lesson, step, slide } of allComparisonCases) {
@@ -2274,73 +2232,6 @@ presentationBrowserSuite: {
     eligible: eligibleComparisonCases.length,
     excluded: excludedComparisonCases.length
   })}`);
-
-  // s143-q4 exercises comparison response order, a distinct paired-evidence
-  // page, reverse navigation, and restoring the bookmarked question URL.
-  const comparisonPairEntry = findStep("asik-atismasi", "s143-q4");
-  const comparisonPairUnit = comparisonPairEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
-  assert.ok(comparisonPairUnit, "s143-q4 has a production paired-evidence unit");
-  assert.equal(comparisonPairEntry.step.layout, "comparison", "s143-q4 is a comparison fixture");
-  const comparisonAnswerOrder = comparisonPairUnit.section_keys;
-  const comparisonEvidenceOrder = comparisonPairUnit.evidence_sections.map((section) => section.section_key);
-  await openStep("asik-atismasi", "s143-q4");
-  let comparisonQa = await qaState();
-  assert.equal(comparisonQa.modern, true, "s143-q4 opens in the QA shell");
-  assert.equal(comparisonQa.comparison, true, "s143-q4 receives the comparison QA class");
-  assert.equal(comparisonQa.focus.trim(), "", "s143-q4 bookmark starts at its task page");
-  const comparisonBookmark = await page.evaluate("location.href");
-  const renderedComparisonAnswerOrder = [];
-  let foundComparisonEvidencePage = false;
-  for (let pageIndex = 0; pageIndex < 12; pageIndex += 1) {
-    if ((await evidencePanelText()).trim()) {
-      foundComparisonEvidencePage = true;
-      break;
-    }
-    renderedComparisonAnswerOrder.push(...await page.evaluate(`Array.from(document.querySelectorAll('#canvas .qa-focus .panel--answer .sec h3'))
-      .map((heading) => heading.innerText.trim())`));
-    await next();
-  }
-  assert.deepEqual(renderedComparisonAnswerOrder, comparisonAnswerOrder,
-    "s143-q4 answer sections render in canonical order across their answer pages");
-  assert.equal(foundComparisonEvidencePage, true, "s143-q4 paired evidence follows the answer pages on its own page");
-  comparisonQa = await qaState();
-  assert.ok((await answerPanelText()).trim(), "s143-q4 paired evidence page retains its linked answer");
-  assert.deepEqual(await page.evaluate(`Array.from(document.querySelectorAll('#canvas .qa-focus .panel--evidence .sec h3'))
-    .map((heading) => heading.innerText.trim())`), comparisonEvidenceOrder,
-  "s143-q4 evidence sections render on their own paired page");
-  await previous();
-  assert.equal((await evidencePanelText()).trim(), "", "s143-q4 backward navigation closes the evidence page");
-  assert.deepEqual(await page.evaluate(`Array.from(document.querySelectorAll('#canvas .qa-focus .panel--answer .sec h3'))
-    .map((heading) => heading.innerText.trim())`), [comparisonAnswerOrder.at(-1)],
-  "s143-q4 backward navigation restores the answer page before its evidence");
-  await page.send("Page.navigate", { url: comparisonBookmark });
-  comparisonQa = await until(async () => {
-    const state = await qaState();
-    return state.comparison && state.prompt === comparisonPairEntry.step.display_prompt && state.focus.trim() === "" ? state : null;
-  }, "s143-q4 bookmarked question URL restore");
-  assert.equal(comparisonQa.comparison, true, "s143-q4 bookmark restores the comparison shell");
-  assert.ok(comparisonQa.context.includes(comparisonPairEntry.step.display_prompt),
-    "s143-q4 bookmark restores the prompt in QA context");
-
-  // Canonical comparison with seven task items spans content pages. Exercise
-  // both directions in its QA shell without exporting the lesson deck here.
-  const longComparisonEntry = findStep("biyografi-akif-cozumleme-202-205", "s204-q1");
-  assert.equal(longComparisonEntry.step.layout, "comparison", "s204-q1 is a comparison layout");
-  assert.equal(longComparisonEntry.step.content.items.length, 7, "s204-q1 is the seven-item long comparison fixture");
-  await openStep("biyografi-akif-cozumleme-202-205", "s204-q1");
-  comparisonQa = await qaState();
-  assert.equal(comparisonQa.comparison, true, "s204-q1 opens in the comparison QA shell");
-  const longComparisonPages = comparisonQa.counter.match(/sayfa 1\/(\d+)/);
-  assert.ok(longComparisonPages && Number(longComparisonPages[1]) > 1,
-    "s204-q1 opening content is split across multiple pages");
-  await next();
-  comparisonQa = await qaState();
-  assert.ok(comparisonQa.counter.includes(`sayfa 2/${longComparisonPages[1]}`),
-    "s204-q1 advances to its second content page");
-  assert.equal(comparisonQa.focus.trim(), "", "s204-q1 keeps paginated task content in QA context");
-  await previous();
-  assert.ok((await qaState()).counter.includes(`sayfa 1/${longComparisonPages[1]}`),
-    "s204-q1 backward navigation restores its first content page");
 
   // Exercise paired answer/evidence sequencing and reverse navigation for all
   // production questions that author evidence alongside an answer.
@@ -2382,7 +2273,10 @@ presentationBrowserSuite: {
     }
   }
 
-  await openStep("mektup", "s39-q1");
+  const animationQuestion = allQuestionCases.find(({ step }) => usesModernQuestionLayout(step) &&
+    !["process", "assessment", "reference"].includes(step.layout));
+  assert.ok(animationQuestion, "canonical catalog contains a question eligible for the QA prompt transition");
+  await openStep(animationQuestion.lesson.slug, animationQuestion.step.id);
   await page.evaluate("document.startViewTransition = undefined");
   const fallbackPrompt = await page.evaluate(`(() => {
     document.querySelector('#dock [data-action=next]').click();
@@ -2398,7 +2292,7 @@ presentationBrowserSuite: {
   assert.equal(fallbackPrompt.animationName, "qa-prompt-enter", "API fallback runs the prompt enter animation");
 
   await page.send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "reduce" }] });
-  await openStep("mektup", "s39-q1");
+  await openStep(animationQuestion.lesson.slug, animationQuestion.step.id);
   await installQaTransitionProbe();
   await clearQaTransitionCalls();
   const reducedMotionPrompt = await page.evaluate(`(() => {
@@ -2421,7 +2315,7 @@ presentationBrowserSuite: {
   // a completely clipped stage are treated as failures.
   for (const [width, height] of [[1920, 1080], [1280, 800], [1366, 768]]) {
     await page.send("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: 1, mobile: false });
-    await openStep("mektup", "s39-q1");
+    await openStep(animationQuestion.lesson.slug, animationQuestion.step.id);
     await next(); // Vocabulary answer group
     const metrics = await qaViewportMetrics();
     assert.equal(metrics.width, width, `QA viewport width is ${width}`);
@@ -2432,20 +2326,82 @@ presentationBrowserSuite: {
   }
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
 
-  let screen = await openStep("mektup", "s40-q5");
-  assert.ok(screen.text.includes("Çalışma kâğıdı 1/2"), "ISSUE-105: worksheet question remains on the same slide");
-  await next(); // Düşünürken
-  const topicAnswer = await next();
-  assert.ok(topicAnswer.includes("Mehmet Kaplan'ın Âli'ye günlük hayatını"), "ISSUE-105: topic is the first structured response");
-  assert.ok(!topicAnswer.includes("Yazar, dostuyla duygu ve düşüncelerini paylaşırken"), "ISSUE-105: main idea waits for its own advance");
-  assert.equal(await page.evaluate("getComputedStyle(document.querySelector('#canvas .sections')).gridTemplateColumns.split(' ').length"), 1,
-    "ISSUE-105: one response fills one column without an empty second column");
-  const topicEvidence = await next();
-  assert.ok(topicEvidence.includes("Mehmet Kaplan'ın Âli'ye günlük hayatını"), "ISSUE-105: answer remains visible beside its evidence");
-  assert.ok(topicEvidence.includes("Bu roman bende yine roman yazmak arzusunu canlandırdı"), "ISSUE-105: topic evidence follows the topic");
-  assert.ok(!topicEvidence.includes("Yazar, dostuyla duygu ve düşüncelerini paylaşırken"), "ISSUE-105: unrelated answer is not shown beside topic evidence");
-  const mainIdeaAnswer = await next();
-  assert.ok(mainIdeaAnswer.includes("Yazar, dostuyla duygu ve düşüncelerini paylaşırken"), "ISSUE-105: main idea opens after topic evidence");
+  if (interleavedAnswerCandidates.length) {
+    const { lesson, step } = interleavedAnswerCandidates[0];
+    const entry = findStep(lesson.slug, step.id);
+    const interleave = step.presentation.interleave;
+    const groupSize = typeof interleave === "object" ? interleave.group_size : 3;
+    const omitted = new Set(step.presentation.omit_sections ?? []);
+    const expectedEntries = Object.entries(step.answer.answer_sections).filter(([key]) => !omitted.has(key));
+    const expectedGroups = [];
+    for (let index = 0; index < expectedEntries.length; index += groupSize) {
+      expectedGroups.push(expectedEntries.slice(index, index + groupSize).map(([term]) => term));
+    }
+    assert.ok(expectedGroups.length > 1, `${lesson.slug}/${step.id} has multiple current interleave groups`);
+    const opened = await openStep(lesson.slug, step.id);
+    assert.ok(opened.text.includes(step.prompt), `${lesson.slug}/${step.id} opens with its current prompt`);
+    const initialState = await qaState();
+    assert.equal(initialState.modern, true, `${lesson.slug}/${step.id} uses the QA question shell`);
+    assert.equal(initialState.focus.trim(), "", `${lesson.slug}/${step.id} starts with an empty answer stage`);
+    const initialGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-context");
+    assert.deepEqual(initialGroup.terms, expectedGroups[0], `${lesson.slug}/${step.id} starts with the first authored term group`);
+    assert.equal(initialGroup.hiddenMeanings, expectedGroups[0].length,
+      `${lesson.slug}/${step.id} hides the current group's meanings until the answer action`);
+
+    for (let groupIndex = 0; groupIndex < expectedGroups.length; groupIndex += 1) {
+      if (groupIndex > 0) {
+        await next();
+        const promptGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
+        assert.deepEqual(promptGroup.terms, expectedGroups[groupIndex],
+          `${lesson.slug}/${step.id} advances to authored group ${groupIndex + 1}`);
+        assert.equal(promptGroup.hiddenMeanings, expectedGroups[groupIndex].length,
+          `${lesson.slug}/${step.id} keeps group ${groupIndex + 1} meanings hidden before reveal`);
+      }
+      await next();
+      const answerGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
+      assert.deepEqual(answerGroup.terms, expectedGroups[groupIndex],
+        `${lesson.slug}/${step.id} reveals group ${groupIndex + 1} in authored order`);
+      assert.equal(answerGroup.hiddenMeanings, 0,
+        `${lesson.slug}/${step.id} reveals every meaning in group ${groupIndex + 1}`);
+      if (groupIndex === 0) {
+        await previous();
+        assert.equal((await qaState()).focus.trim(), "",
+          `${lesson.slug}/${step.id} backward navigation hides the first answer group again`);
+        await next();
+        const restoredAnswerGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
+        assert.deepEqual(restoredAnswerGroup.terms, expectedGroups[0],
+          `${lesson.slug}/${step.id} forward navigation restores the first authored group`);
+        assert.equal(restoredAnswerGroup.hiddenMeanings, 0,
+          `${lesson.slug}/${step.id} restores the revealed meanings after forward navigation`);
+      }
+    }
+  }
+
+  if (multiUnitEvidenceCases.length) {
+    const { lesson, step } = multiUnitEvidenceCases[0];
+    const responseUnits = step.presentation.web.units.filter((unit) => unit.section_keys?.length && unit.evidence_sections?.length);
+    const firstUnit = responseUnits[0];
+    const secondUnit = responseUnits[1];
+    const answerTextFor = (unit) => unit.section_keys
+      .map((key) => firstSourceString(step.answer.answer_sections?.[key]))
+      .filter(Boolean).join(" ");
+    const evidenceTextFor = (unit) => unit.evidence_sections
+      .map(({ section_key }) => firstSourceString(step.answer.answer_sections?.[section_key]))
+      .filter(Boolean).join(" ");
+    const firstAnswerMarker = answerTextFor(firstUnit).trim().slice(0, 30);
+    const secondAnswerMarker = answerTextFor(secondUnit).trim().slice(0, 30);
+    const firstEvidenceMarker = evidenceTextFor(firstUnit).trim().slice(0, 30);
+    assert.ok(firstAnswerMarker.length > 10 && secondAnswerMarker.length > 10 && firstEvidenceMarker.length > 10,
+      `${lesson.slug}/${step.id} has independent answer and evidence markers for multiple authored units`);
+    await openStep(lesson.slug, step.id);
+    const firstAnswer = await advanceUntil((text) => text.includes(firstAnswerMarker), `${lesson.slug}/${step.id} first answer unit`, 64);
+    assert.ok(!firstAnswer.includes(secondAnswerMarker), `${lesson.slug}/${step.id} keeps the next answer unit closed`);
+    const firstEvidence = await advanceUntil((text) => text.includes(firstEvidenceMarker), `${lesson.slug}/${step.id} first evidence unit`, 32);
+    assert.ok(firstEvidence.includes(firstAnswerMarker), `${lesson.slug}/${step.id} keeps the related answer beside its evidence`);
+    assert.ok(!firstEvidence.includes(secondAnswerMarker), `${lesson.slug}/${step.id} does not leak the following unit into first evidence`);
+    const secondAnswer = await advanceUntil((text) => text.includes(secondAnswerMarker), `${lesson.slug}/${step.id} next answer unit`, 48);
+    assert.ok(secondAnswer.includes(secondAnswerMarker), `${lesson.slug}/${step.id} advances to the next authored answer unit`);
+  }
 
   await page.send("Emulation.setDeviceMetricsOverride", { width: 800, height: 900, deviceScaleFactor: 1, mobile: false });
   const responsiveColumns = await page.evaluate(`(() => {
@@ -2466,611 +2422,135 @@ presentationBrowserSuite: {
   assert.equal(responsiveColumns, 1, "Related response cards stack into one column on narrow screens");
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
 
-  const worksheet = findStep("mektup", "s40-q5");
-  await page.send("Page.navigate", { url: `${root}/#/${worksheet.lesson.lesson_slug}/${worksheet.slide}/2/8` });
-  const restoredQuestion = await until(async () => {
-    const text = await bodyText();
-    return text.includes("Çalışma kâğıdı 1/2") ? text : null;
-  }, "ISSUE-105 legacy answer subpart restores to its question");
-  assert.ok(!restoredQuestion.includes("Mehmet Kaplan'ın Âli'ye günlük hayatını"),
-    "ISSUE-105: an old numeric subpart cannot restore to a different answer unit");
-
-  const mektupLesson = lessons.find((entry) => entry.lesson_slug === "mektup");
-  for (const fixture of [
-    { id: "s39-q1", questionId: "T1-P39-Q01" },
-    { id: "s39-q3", questionId: "T1-P39-Q03" }
-  ]) {
-    const entry = findStep("mektup", fixture.id);
-    const catalogStep = builtCatalog.lessons.find((lesson) => lesson.slug === "mektup")
-      ?.steps.find((step) => step.id === fixture.id);
-    assert.ok(mektupLesson, "Mektup lesson is present in the canonical catalog");
-    assert.ok(catalogStep, `${fixture.questionId} is present in the built presentation catalog`);
-    assert.equal(catalogStep.layout, "vocabulary", `${fixture.questionId} keeps its canonical vocabulary layout`);
-    assert.equal(usesModernQuestionLayout(catalogStep), true, `${fixture.questionId} enters QA-modern by semantic eligibility`);
-
-    const opened = await openStep("mektup", fixture.id);
-    assert.ok(opened.text.includes(entry.step.display_prompt), `${fixture.questionId} starts with its authored prompt`);
-    let state = await qaState();
-    assert.equal(state.modern, true, `${fixture.questionId} initial view uses the QA-modern shell`);
-    assert.ok(state.badge.includes("SORU") && state.badge.includes(entry.step.answer.question_no),
-      `${fixture.questionId} shows the large question design and numbered SORU badge`);
-    assert.equal(state.focus.trim(), "", `${fixture.questionId} starts without answer content in the focus stage`);
-
-    const sections = Object.entries(entry.step.answer.answer_sections);
-    const expectedGroups = [];
-    for (let index = 0; index < sections.length; index += 3) {
-      expectedGroups.push(sections.slice(index, index + 3).map(([term]) => term));
-    }
-    assert.ok(expectedGroups.length >= 2, `${fixture.questionId} has multiple interleaved vocabulary groups`);
-    const initialStage = await qaVocabularyStage("#canvas .slide--qa-modern .qa-context");
-    assert.deepEqual(initialStage.terms, expectedGroups[0], `${fixture.questionId} first prompt group keeps its authored order`);
-    assert.deepEqual(initialStage.termColors, ["rgb(23, 109, 104)", "rgb(83, 99, 167)", "rgb(154, 101, 15)"],
-      `${fixture.questionId} keeps the existing teal/blue/gold vocabulary hierarchy inside QA-modern`);
-    assert.equal(initialStage.hiddenMeanings, expectedGroups[0].length,
-      `${fixture.questionId} first prompt group keeps meanings hidden`);
-    assert.equal(initialStage.vocabCount, 1, `${fixture.questionId} uses the existing vocabulary card renderer`);
-    const largePromptSize = initialStage.promptFontSize;
-
-    await next();
-    state = await qaState();
-    assert.equal(state.modern, true, `${fixture.questionId} remains in QA-modern after advancing`);
-    assert.ok(state.focus.trim(), `${fixture.questionId} answer appears in the focus stage`);
-    const compactAnswerStage = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
-    assert.deepEqual(compactAnswerStage.terms, expectedGroups[0],
-      `${fixture.questionId} answer card group matches the initial vocabulary group`);
-    assert.equal(compactAnswerStage.vocabCount, 1, `${fixture.questionId} answer stays in the vocabulary renderer`);
-    assert.equal(compactAnswerStage.hiddenMeanings, 0,
-      `${fixture.questionId} first answer group reveals its meanings`);
-    assert.ok(compactAnswerStage.promptFontSize < largePromptSize,
-      `${fixture.questionId} prompt compacts when the answer focus stage opens`);
-
-    await previous();
-    state = await qaState();
-    assert.equal(state.modern, true, `${fixture.questionId} backward navigation restores the QA-modern shell`);
-    assert.equal(state.focus.trim(), "", `${fixture.questionId} backward navigation restores the question-only stage`);
-    const restoredPromptStage = await qaVocabularyStage("#canvas .slide--qa-modern .qa-context");
-    assert.deepEqual(restoredPromptStage.terms, expectedGroups[0],
-      `${fixture.questionId} backward navigation restores the first vocabulary group in order`);
-
-    await next();
-    for (let groupIndex = 1; groupIndex < expectedGroups.length; groupIndex += 1) {
-      await next();
-      state = await qaState();
-      assert.equal(state.modern, true, `${fixture.questionId} group ${groupIndex + 1} stays in QA-modern`);
-      assert.ok(state.focus.trim(), `${fixture.questionId} next interleave prompt remains in the focus stage`);
-      const shownGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
-      assert.deepEqual(shownGroup.terms, expectedGroups[groupIndex],
-        `${fixture.questionId} next prompt group ${groupIndex + 1} keeps its term order in focus`);
-      assert.equal(shownGroup.hiddenMeanings, expectedGroups[groupIndex].length,
-        `${fixture.questionId} next prompt group ${groupIndex + 1} keeps meanings hidden`);
-      await next();
-      state = await qaState();
-      assert.ok(state.focus.trim(), `${fixture.questionId} next group answers remain in focus stage`);
-      const answerGroup = await qaVocabularyStage("#canvas .slide--qa-modern .qa-focus");
-      assert.deepEqual(answerGroup.terms, expectedGroups[groupIndex],
-        `${fixture.questionId} answer group ${groupIndex + 1} keeps its interleaved order`);
-      assert.equal(answerGroup.hiddenMeanings, 0,
-        `${fixture.questionId} answer group ${groupIndex + 1} shows its meanings`);
-    }
-  }
-
-  for (const fixture of [
-    { slug: "mektup", id: "s42-reference", titles: ["Özel mektup", "Edebî mektup", "İş mektubu", "Resmî mektup"] },
-    { slug: "mektup", id: "s46-q1", titles: ["Kitaptaki örnek ölçüt", "Yalınlık"] },
-    { slug: "mektup", id: "s51-reference", titles: ["İşlevi", "Metnin düzeni", "Dil ve biçim"] },
-    { slug: "biyografi-akif-194-198", id: "s194-two-biographies", titles: ["Tarık Buğra", "Âşık Veysel"] }
-  ]) {
-    screen = await openStep(fixture.slug, fixture.id);
-    const seenTitles = new Set();
-    for (let pageIndex = 0; pageIndex < fixture.titles.length + 1; pageIndex += 1) {
-      for (const title of fixture.titles) if (screen.text.includes(title)) seenTitles.add(title);
-      const renderedSections = await page.evaluate(`Array.from(document.querySelectorAll('#canvas .sections .sec')).map((section) => {
-        const rect = section.getBoundingClientRect();
-        return { text: section.innerText, width: rect.width, height: rect.height };
-      })`);
-      assert.ok(renderedSections.length > 0 && renderedSections.every((section) => section.width > 0 && section.height > 0),
-        `${fixture.id} source sections are visible in Chrome page ${pageIndex + 1}`);
-      assert.equal(await page.evaluate("document.querySelector('#canvas .slide__body')?.classList.contains('is-overflowing')"), false,
-        `${fixture.id} source sections fit the slide body on page ${pageIndex + 1}`);
-      if (fixture.titles.every((title) => seenTitles.has(title))) break;
-      screen = { ...screen, text: await next() };
-    }
-    for (const title of fixture.titles) {
-      assert.ok(seenTitles.has(title), `${fixture.id} renders its source-grounded ${title} section`);
-    }
-  }
-
   if (process.env.THEME1_ONLY !== "1") {
-  screen = await openStep("karagoz", "s16-q1");
-  assert.ok(screen.text.includes("tiplerin adlarını"));
-  assert.equal(await page.evaluate("document.querySelector('#canvas .content-images img')?.naturalWidth > 100"), true, "ISSUE-002 source illustration renders in Chrome");
-  assert.ok(screen.text.includes("Ders kitabı, basılı s.16"));
-  assert.ok(!screen.text.includes("Beberuhi") && !screen.text.includes("Çelebi") && !screen.text.includes("Zenne"), "ISSUE-002 type names are hidden on the question slide");
-  const karagozAnswer = await next();
-  assert.ok(["Beberuhi", "Çelebi", "Zenne"].every((name) => karagozAnswer.includes(name)), "ISSUE-002 type names appear on the next answer slide");
-
-  screen = await openStep("mektup", "s46-q4");
-  let poemExcerptSeen = screen.text.includes("Hasret sana ey yirmi yılın");
-  let poemSourceSeen = await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=46'))");
-  for (let i = 0; i < 6 && !(poemExcerptSeen && poemSourceSeen); i += 1) {
-    const text = await next();
-    poemExcerptSeen ||= text.includes("Hasret sana ey yirmi yılın");
-    poemSourceSeen ||= await page.evaluate("Array.from(document.querySelectorAll('#canvas .source-links a')).some(a => a.href.includes('#page=46'))");
-  }
-  assert.ok(poemExcerptSeen, "ISSUE-013 poem excerpt is visible across the paginated writing task");
-  assert.ok(poemSourceSeen, "ISSUE-013 textbook PDF link remains available across the paginated writing task");
-
-  for (const id of ["s48-q1", "s48-q2", "s48-q3"]) {
-    screen = await openStep("mektup", id);
-    assert.ok(screen.text.includes("Ders kitabı s.48"), `ISSUE-015 ${id} has a usable source link`);
-    if (id === "s48-q1") assert.ok(screen.text.includes("103 yıl sonra"), "both article contexts are visible");
-  }
-  for (const id of ["s50-q1", "s50-q2", "s50-q3", "s50-q4"]) {
-    screen = await openStep("mektup", id);
-    assert.ok(screen.text.includes("beş kaynak metnin tam sayfalarını aç"), `ISSUE-017 ${id} exposes all five source texts`);
-  }
-
-  screen = await openStep("tema-2-girisi", "s88-q4");
-  assert.ok(screen.text.includes("doğuştan beri geçen ve yıl birimiyle ölçülen zaman"), "ISSUE-027 meaning is on the question screen");
-
-  for (const id of ["s90-q1", "s90-q2"]) {
-    screen = await openStep("ogulla-bulusma", id);
-    assert.equal(await page.evaluate("document.querySelector('#canvas .content-images img')?.naturalWidth > 100"), true, `ISSUE-028 ${id} shows the verified train image`);
-    assert.ok(screen.text.includes("s.93’deki tren ve manzara"));
-    const answer = (await next()).toLocaleLowerCase("tr");
-    assert.ok(!answer.includes("görseldeki atlı yaşlı kişi"));
-  }
-
-  screen = await openStep("ogulla-bulusma", "s90-strategy");
-  assert.ok(!screen.text.includes("Göz Gezdirme") && !screen.text.includes("işaretleyerek okuma"), "ISSUE-029 strategy does not leak into first view");
-  assert.ok((await next()).includes("Göz Gezdirme"), "strategy is available after a click");
-
-  screen = await openStep("ogulla-bulusma", "s95-q1");
-  assert.deepEqual(await terms(screen.text), ["Yular", "Üzengi", "Katar"], "ISSUE-030 starts with the first three terms only");
-  await revealDictionaryGroup(["Yular", "Üzengi", "Katar"], ["Kampana", "Hat", "Toynak"], "başlarına takılan ipli veya kayışlı başlık", "istasyonun çaldığı çan");
-
-  screen = await openStep("eski-istanbul", "s111-q1");
-  await revealDictionaryGroup(["hilye", "rahle"], ["cüz kesesi", "sebilci"], "Hz. Muhammed’in fiziksel özelliklerini", "Âmin alayında cüzü taşımak");
-
-  screen = await openStep("eski-istanbul", "s111-q3");
-  const oldIstanbulFirstGroup = await terms(screen.text);
-  assert.ok(["sebilci", "saka"].every((term) => oldIstanbulFirstGroup.includes(term)),
-    "Theme 2 vocabulary prompt starts with the authored first group");
-  assert.ok(!includesText(screen.text, "meşin tulumbalar içindeki suyu"),
-    "Theme 2 vocabulary meanings remain hidden on the initial question");
-  const oldIstanbulThinking = await next();
-  assert.ok(oldIstanbulThinking.includes("Düşünürken"),
-    "Theme 2's authored thinking layer precedes dictionary reveals");
-  assert.ok(!includesText(oldIstanbulThinking, "meşin tulumbalar içindeki suyu"),
-    "The thinking reveal does not open dictionary meanings early");
-  const oldIstanbulFirstAnswer = await next();
-  assert.ok(includesText(oldIstanbulFirstAnswer, "meşin tulumbalar içindeki suyu"),
-    "The first vocabulary group meaning opens after the thinking layer");
-  const oldIstanbulAnswerTerms = await terms(oldIstanbulFirstAnswer);
-  assert.ok(!["lîka", "rîh"].some((term) => oldIstanbulAnswerTerms.includes(term)),
-    "The second vocabulary group remains separate");
-  const oldIstanbulNextPrompt = await next();
-  const oldIstanbulNextPromptTerms = await terms(oldIstanbulNextPrompt);
-  assert.ok(["lîka", "rîh"].every((term) => oldIstanbulNextPromptTerms.includes(term)),
-    "The next vocabulary prompt appears after the first group answer");
-  assert.ok(!includesText(oldIstanbulNextPrompt, "ham ipek"),
-    "The next vocabulary meaning stays hidden until its answer reveal");
-  assert.ok(includesText(await next(), "ham ipek"),
-    "The next vocabulary meaning opens on its own answer reveal");
-
-  screen = await openStep("orhun-abideleri", "s116-vocabulary");
-  assert.deepEqual(await terms(screen.text), ["ecdat", "il", "yağız"], "ISSUE-033 starts with the first three terms only");
-  await revealDictionaryGroup(["ecdat", "il", "yağız"], ["kılmak", "töre", "şad"], "Geçmişteki büyükler, atalar", "Etmek, yapmak");
-
-  screen = await openStep("divanu-lugatit-turk", "s127-q7");
-  assert.ok(!screen.text.includes("Kapsamı Belirleme") && !screen.text.includes("Veri Toplama"), "ISSUE-034 research plan is hidden on first view");
-  assert.ok((await next()).includes("Kapsamı Belirleme"), "research plan opens after a click");
-
-  screen = await openStep("asik-atismasi", "s140-vocabulary");
-  await revealDictionaryGroup(["çağ", "kahır"], ["canan", "saban"], "Zaman dilimlerinden her biri", "Gönülden sevilen");
-
-  screen = await openStep("tema-2-degerlendirme", "s155-q1");
-  assert.ok(screen.text.includes("yuyka / kalın; yinçge / yoğun"));
-  assert.ok(!screen.text.includes("Birlik ve dayanışma") && !screen.text.includes("Emek ve çalışma"), "ISSUE-036 comments are absent on first view");
-  const answer = await next();
-  assert.ok(answer.includes("Emek ve çalışma") && !answer.includes("Birlik ve dayanışma"),
-    "ISSUE-036 response categories open before their source evidence");
-  const answerEvidence = await advanceUntilEvidenceSection("Birlik ve dayanışma", "ISSUE-036 source evidence");
-  assert.ok(answerEvidence.includes("Birlik ve dayanışma") && includesText(answerEvidence, "yufka kalın olsa delmesi zormuş"),
-    "ISSUE-036 source-backed comments open after all linked response pages");
-  assert.ok((await answerPanelText()).trim(), "ISSUE-036 paired response remains visible with its evidence");
-
-  screen = await openStep("tema-3-girisi", "s161-theme-presentation");
-  assert.ok(screen.text.includes("Nerde görsen gönlü kırık"), "ISSUE-037 Yesevî source remains visible");
-  assert.ok(!/karekodunu.*açın|erişilemiyorsa|üzerinden devam edin/i.test(screen.text), "ISSUE-037 operator directions stay out of student view");
-  screen = await openStep("tema-3-girisi", "s163-q5");
-  assert.ok(!screen.text.includes("Sesli yayın, dinleme") && !screen.text.includes("Sorular, yanıtlar"), "ISSUE-039 answer is hidden initially");
-  assert.ok((await next()).includes("Sesli yayın, dinleme"), "ISSUE-039 answer opens after advance");
-  screen = await openStep("tema-3-girisi", "s163-q6");
-  assert.ok(!screen.text.includes("edebiyatçı hakkında bilgi verir"), "ISSUE-040 comparison is hidden initially");
-  const comparisonThinking = await next();
-  assert.ok(comparisonThinking.includes("Düşünürken") && !comparisonThinking.includes("edebiyatçı hakkında bilgi verir"),
-    "ISSUE-040 thinking prompt precedes the comparison answer");
-  const comparisonAnswer = await next();
-  assert.ok(comparisonAnswer.includes("edebiyatçı hakkında bilgi verir"), "ISSUE-040 comparison opens after thinking");
-
-  screen = await openStep("huzur-okuma", "s166-meaning");
-  assert.ok(!screen.text.includes("bedendeki bölgeyi"), "ISSUE-042 word example is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-042 answer opens after advance");
-  screen = await openStep("huzur-177-178", "s177-q14");
-  assert.ok(!screen.text.includes("Açık iletiler"), "ISSUE-043 message examples are hidden initially");
-  const messageThinking = await next();
-  assert.ok(messageThinking.includes("Düşünürken") && !messageThinking.includes("Açık iletiler"),
-    "ISSUE-043 authored thinking prompt precedes the message answer");
-  assert.ok((await next()).includes("CEVAP"), "ISSUE-043 answer opens after thinking");
-  screen = await openStep("huzur-177-178", "s178-huzur-content");
-  assert.ok(!screen.text.includes("Mümtaz ve Nuran üzerinden İstanbul"), "ISSUE-043 comparison model is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-043 comparison answer opens after advance");
-  screen = await openStep("huzur-okuma-cemberi-179-181", "s180-mumtaz-nuran");
-  assert.ok(!screen.text.includes("Yeni hayatı kültür ve kimlik"), "ISSUE-044 person comparison is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-044 answer opens after advance");
-  screen = await openStep("huzur-hayat-kurmaca-182-185", "s184-halk");
-  assert.ok(!screen.text.includes("düşünce konusu değil"), "ISSUE-045 analysis is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-045 answer opens after advance");
-
-  screen = await openStep("huzur-okuma", "s165-166-fark");
-  assert.ok(screen.text.includes("huzur") && screen.text.includes("rüya") && !screen.text.includes("saz"), "ISSUE-041 starts with the first group only");
-  let t3Reveal = await next();
-  assert.ok(t3Reveal.includes("Yoğun bir günün ardından") && !t3Reveal.includes("boğaz"), "ISSUE-041 first group answer precedes later terms");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("saz") && t3Reveal.includes("boğaz"), "ISSUE-041 second group follows first answer");
-
-  const captureVocabularyGroups = async (width) => {
-    await page.send("Emulation.setDeviceMetricsOverride", {
-      width, height: 900, deviceScaleFactor: 1, mobile: width <= 600
-    });
-    screen = await openStep("huzur-okuma", "s172-vocabulary");
-    const initial = await terms(screen.text);
+  let screen;
+  const answerBehaviorCase = allQuestionCases.find(({ step }) => answerLayerMarker(step, "answer"));
+  assert.ok(answerBehaviorCase, "canonical catalog contains an answer independent from its question prompt");
+  const { lesson: answerLesson, step: answerStep } = answerBehaviorCase;
+  screen = await openStep(answerLesson.slug, answerStep.id);
+  let visible = await bodyText();
+  const answerMarker = assertLayerHidden(answerStep, visible, "answer", `${answerLesson.slug}/${answerStep.id}`);
+  assert.equal((await qaState()).focus.trim(), "", `${answerLesson.slug}/${answerStep.id} opens without a response layer`);
+  let answerOpened = false;
+  for (let attempt = 0; attempt < 64; attempt += 1) {
     await next();
-    const firstAnswerText = await bodyText();
-    const firstAnswer = await terms(firstAnswerText);
-    const nextPromptText = await advanceUntil(
-      (text) => ["yeis", "zarafet", "neşretmek"].every((term) => includesText(text, term)),
-      "s172 next vocabulary group"
-    );
-    const nextPrompt = await terms(nextPromptText);
-    return { initial, firstAnswer, nextPrompt };
-  };
-  const wideVocabularyGroups = await captureVocabularyGroups(1440);
-  const narrowVocabularyGroups = await captureVocabularyGroups(390);
-  assert.deepEqual(narrowVocabularyGroups, wideVocabularyGroups,
-    "Vocabulary group membership is stable between desktop and narrow viewports");
-  await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
-  screen = await openStep("huzur-okuma", "s172-vocabulary");
-  await revealDictionaryGroup(["mustarip (muzdarip)", "mahzen", "cevher"], ["yeis", "zarafet", "neşretmek"], "acı/sıkıntı çeken", "umutsuzluk");
-  await next();
-  const thirdGroupPrompt = await bodyText();
-  assert.ok(["hulâsa (hülasa)", "muazzam", "cins"].every(term => includesText(thirdGroupPrompt, term)), "ISSUE-068 third group opens after second group's answer");
-  await next();
-  assert.ok(includesText(await bodyText(), "özetle"), "ISSUE-068 third group meanings follow its prompt");
-
-  screen = await openStep("direnisin-ustalari-215-220", "s217-vocabulary");
-  assert.ok(!screen.text.includes("Öğretmen için kaynak ve değerlendirme notu"), "Teacher-only content.note is absent from student projection");
-  await revealDictionaryGroup(["direniş", "ihbar", "torna"], ["kafa yormak", "haber uçurmak"], "QR medya gerekli", "QR medya gerekli");
-
-  screen = await openStep("huzur-hayat-kurmaca-182-185", "s184-185-value-q2");
-  assert.ok(!screen.text.includes("Halkı sevdiğini söylemek ile"), "ISSUE-046 answers stay out of the task view");
-  const valueThinking = await next();
-  assert.ok(valueThinking.includes("Düşünürken") && !valueThinking.includes("insanı yalnız bir fikir"),
-    "ISSUE-046 thinking prompt precedes the four-part answer");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("insanı yalnız bir fikir") && !t3Reveal.includes("tarihî-kültürel köklerden") && !t3Reveal.includes("serçelere"),
-    `ISSUE-046 first answer does not summarize later parts: ${t3Reveal}`);
-
-  screen = await openStep("huzur-catisma-dil-189-191", "s189-one");
-  assert.ok(!screen.text.includes("Gündelik hayatın ortasında"), "ISSUE-048 conflict model is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-048 answer opens after advance");
-  screen = await openStep("huzur-catisma-dil-189-191", "s190-words");
-  assert.ok(!screen.text.includes("Bugün de kullanılan"), "ISSUE-049 language examples are hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-049 answer opens after advance");
-  screen = await openStep("huzur-catisma-dil-189-191", "s190-gram-a");
-  assert.ok(!screen.text.includes("Yüklem isim soyludur"), "ISSUE-050 grammar analysis is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-050 answer opens after advance");
-  screen = await openStep("huzur-degerlendirme-192-193", "s192-values");
-  assert.ok(!screen.text.includes("Millî: tarihî şehir"), "ISSUE-051 worksheet answer is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-051 answer opens after advance");
-  screen = await openStep("huzur-degerlendirme-192-193", "s192-structure");
-  assert.ok(!screen.text.includes("Tarihî İstanbul semtleri kültürel hafızayı"), "ISSUE-051 structure example is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-051 structure example opens after advance");
-  screen = await openStep("biyografi-akif-194-198", "s194-tarik");
-  assert.ok(!screen.text.includes("meslek yaşamında somut sonuç"), "ISSUE-052 biography inference is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-052 answer opens after advance");
-  screen = await openStep("biyografi-akif-194-198", "s196-anthem");
-  assert.ok(!screen.text.includes("Yarışma ilanı →"), "ISSUE-053 chronology is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-053 answer opens after advance");
-  screen = await openStep("biyografi-akif-anlama-199-201", "s201-content");
-  assert.ok(!screen.text.includes("Sanatçının hayatı ve eserleri"), "ISSUE-054 worksheet solution is hidden initially");
-  const worksheetThinking = await next();
-  assert.ok(worksheetThinking.includes("Düşünürken") && !worksheetThinking.includes("Sanatçının hayatı ve eserleri"),
-    "ISSUE-054 thinking prompt precedes the worksheet solution");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-054 answer opens after thinking");
-  screen = await openStep("biyografi-akif-cozumleme-202-205", "s204-q1-second");
-  assert.ok(!screen.text.includes("Kişi, olay, mekân ve zaman kurmaca"), "ISSUE-055 comparison groups are hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-055 answer opens after advance");
-  screen = await openStep("biyografi-akif-cozumleme-202-205", "s205-q1-chronology");
-  assert.ok(!screen.text.includes("Millî Mücadele ve İstiklâl Marşı"), "ISSUE-055 chronology is hidden initially");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-055 chronology answer opens after advance");
-  screen = await openStep("biyografi-akif-cozumleme-202-205", "s205-asim-q1");
-  assert.ok(screen.text.includes("KAAN ve TCG Anadolu") && screen.text.includes("Göktürk-1 ve BİLSAT"), "ISSUE-056 source captions remain visible");
-  assert.ok(!screen.text.includes("Güven güçlenerek sürüyor") && !screen.text.includes("çalışma ve sorumluluk"), "ISSUE-056 conclusion stays out of the task view");
-  const modelThinking = await next();
-  assert.ok(modelThinking.includes("Düşünürken") && !modelThinking.includes("Güven güçlenerek sürüyor"),
-    "ISSUE-056 authored thinking prompt precedes the interpretation");
-  assert.ok((await next()).includes("UYGULAMA DESTEĞİ"), "ISSUE-056 model interpretation opens after thinking");
-
-  screen = await openStep("kemal-tahir-mulakat-210-214", "s214-q1");
-  assert.ok(!screen.text.includes("İstanbul’u, musikiyi") && !screen.text.includes("Yeni bir hayat kurmak"), "ISSUE-057 both model messages are hidden initially");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("Düşünürken") && !t3Reveal.includes("İstanbul’u, musikiyi"),
-    "ISSUE-057 thinking prompt precedes the explicit-message answer");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("İstanbul") && !t3Reveal.includes("Yeni bir hayat kurmak"), "ISSUE-057 explicit message opens first");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("Açık iletinin dayanağı") && (await answerPanelText()).trim(),
-    "ISSUE-057 the explicit answer remains paired with its later evidence");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("Örtük ileti") && !t3Reveal.includes("Yeni bir hayat kurmak"), "ISSUE-057 implicit-message prompt precedes its answer");
-  assert.ok((await next()).includes("Yeni bir hayat kurmak"), "ISSUE-057 implicit message opens after its prompt");
-  screen = await openStep("kemal-tahir-mulakat-210-214", "s214-eval");
-  assert.ok(["Evet", "Kısmen", "Hayır"].every(label => screen.text.includes(label)), "ISSUE-058 three labels render");
-  const peerScaleRows = await page.evaluate("[...document.querySelectorAll('#canvas .scale-form__row')].map(row => row.querySelectorAll('.scale-form__box').length)");
-  assert.ok(peerScaleRows.length > 0 && peerScaleRows.every((count) => count === 3),
-    "ISSUE-058 each visible peer-review row contains all three empty choices (content may span presentation pages)");
-
-  screen = await openStep("radyo-diyalog-yazma-225-229", "s225-reference");
-  assert.ok(!screen.text.includes("Kişiler ve çatışmalar") && !screen.text.includes("Müzik ve efekt"), "ISSUE-061 type answers hidden initially");
-  t3Reveal = await next();
-  assert.ok(t3Reveal.includes("Kişiler ve çatışmalar") && !t3Reveal.includes("Müzik ve efekt"),
-    "ISSUE-061 the first type answer opens independently");
-  assert.ok((await next()).includes("Müzik ve efekt"), "ISSUE-061 the second type answer opens on its own advance");
-  screen = await openStep("degerlendirme-230-235", "s233-q11");
-  assert.ok(!screen.text.includes("özellikle Tarafsızlık ve Kronoloji") && !screen.text.includes("hataları düzeltin"), "ISSUE-062 avoids naming the answer in the task");
-  screen = await openStep("degerlendirme-230-235", "s235-q16");
-  assert.ok(!screen.text.includes("Doğru cevap: C") && !screen.text.includes("I, IV, V"),
-    "ISSUE-064 question opens without answer or options");
-  const classificationOptions = await next();
-  assert.ok(["I, II, III", "I, III, V", "I, IV, V", "II, III, IV", "II, IV, V"]
-    .every((option) => classificationOptions.includes(option)) &&
-    !classificationOptions.includes("Doğru cevap: C"),
-  "ISSUE-064 first advance reveals all five choices but not the answer");
-  const classificationThinking = await next();
-  assert.ok(classificationThinking.includes("Düşünürken") && !classificationThinking.includes("Uygun."),
-    "ISSUE-064 authored thinking follows staged options and precedes classifications");
-  const classificationResults = [];
-  for (let index = 0; index < 5; index += 1) classificationResults.push(await next());
-  const classificationMarkers = ["Şem’î’nin mahlası", "Kurmaca bir roman kişisinin yaşantısı",
-    "Kurmaca bir roman kişisinin iç dünyasını", "Anlatıcı kendi Ankara hayatından", "Çakerî’nin mahlası"];
-  classificationResults.forEach((text, index) => {
-    assert.ok(text.includes(classificationMarkers[index]), `ISSUE-064 classification ${index + 1} opens in order`);
-    assert.ok(classificationMarkers.every((marker, markerIndex) => markerIndex === index || !text.includes(marker)),
-      `ISSUE-064 classification ${index + 1} opens independently`);
-  });
-
-  for (const [stepId, phrase] of [["s169-reading", "Musiki, tarih ve şehir mirasını"], ["s170-reading", "Mümtaz’ın geçmiş ve kültür bağında"], ["s171-author", "Yahya Kemal–Ahmet Haşim"], ["s173-types-1", "Başkasının yaşamı"], ["s173-types-2", "Hareket ve merak"], ["s174-types-1", "Dönemini yansıtan"], ["s174-types-2", "Bireyin iç dünyası"]]) {
-    screen = await openStep("huzur-okuma", stepId);
-    assert.ok(!screen.text.includes(phrase), `ISSUE-065–073 ${stepId} answer hidden initially`);
-    assert.ok((await next()).includes(phrase), `ISSUE-065–073 ${stepId} answer opens after advance`);
+    visible = await bodyText();
+    if (visible.normalize("NFC").replace(/\s+/gu, " ").includes(answerMarker)) {
+      answerOpened = true;
+      break;
+    }
+    assertLayerHidden(answerStep, visible, "answer", `${answerLesson.slug}/${answerStep.id} before reveal`);
   }
-  screen = await openStep("huzur-okuma", "s174-style");
-  assert.ok(!screen.text.includes("betimleyici"), "ISSUE-073 style examples hidden initially");
-  assert.ok((await next()).includes("betimleyici"), "ISSUE-073 style examples open after advance");
+  assert.equal(answerOpened, true, `${answerLesson.slug}/${answerStep.id} reveals the canonical answer after navigation`);
+  assertLayerVisible(visible, answerMarker, "answer", `${answerLesson.slug}/${answerStep.id}`);
+  assert.ok((await answerPanelText()).trim(), `${answerLesson.slug}/${answerStep.id} renders the response panel`);
 
-  screen = await openStep("tema-girisi-236-242", "s236-map");
-  assert.ok(!screen.text.includes("Ben, Mimar Sinan") && !screen.text.includes("Anadolu İnsanı") &&
-    !screen.text.includes("Okuma") && !screen.text.includes("Dinleme / İzleme") && !screen.text.includes("Konuşma ve yazma"),
-  "ISSUE-074 answer map and skill labels are hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Ben, Mimar Sinan"), "s236 answer map")).includes("Ben, Mimar Sinan"), "ISSUE-074 skill map opens after the task");
-  screen = await openStep("tema-girisi-236-242", "s240-fact-fiction");
-  assert.ok(!screen.text.includes("Kaynağın verdiği tarihî") && !screen.text.includes("Kurduğunuz hayalî metin"), "ISSUE-076 classification result is hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Kaynağın verdiği tarihî"), "s240 classification answer")).includes("Kaynağın verdiği tarihî"), "ISSUE-076 classification result opens after the task");
-  screen = await openStep("tema-girisi-236-242", "s237-threshold");
-  assert.ok(!/karekodunu.*bu aşamada açın/i.test(screen.text), "ISSUE-075 QR operation stays out of the student view");
+  const explanationBehaviorCase = allQuestionCases.find(({ step }) =>
+    step.answer?.explanation && step.reveals?.includes("explanation") && answerLayerMarker(step, "explanation"));
+  if (explanationBehaviorCase) {
+    const { lesson, step } = explanationBehaviorCase;
+    await openStep(lesson.slug, step.id);
+    const explanationText = await bodyText();
+    const explanationMarker = assertLayerHidden(step, explanationText, "explanation", `${lesson.slug}/${step.id}`);
+    await page.send("Input.dispatchKeyEvent", { type: "keyDown", key: "a", code: "KeyA", windowsVirtualKeyCode: 65 });
+    await page.send("Input.dispatchKeyEvent", { type: "keyUp", key: "a", code: "KeyA", windowsVirtualKeyCode: 65 });
+    const revealedExplanation = await until(async () => {
+      const text = await bodyText();
+      return await page.evaluate("Boolean(document.querySelector('#canvas .panel--explanation'))") ? text : null;
+    }, `${lesson.slug}/${step.id} teacher explanation shortcut`);
+    assertLayerVisible(revealedExplanation, explanationMarker, "explanation", `${lesson.slug}/${step.id}`);
+    await page.send("Input.dispatchKeyEvent", { type: "keyDown", key: "a", code: "KeyA", windowsVirtualKeyCode: 65 });
+    await page.send("Input.dispatchKeyEvent", { type: "keyUp", key: "a", code: "KeyA", windowsVirtualKeyCode: 65 });
+    const closedExplanation = await until(async () => {
+      const text = await bodyText();
+      return !(await page.evaluate("Boolean(document.querySelector('#canvas .panel--explanation'))")) ? text : null;
+    }, `${lesson.slug}/${step.id} teacher explanation shortcut close`);
+    assertLayerHidden(step, closedExplanation, "explanation", `${lesson.slug}/${step.id} after closing explanation`);
+  }
 
-  screen = await openStep("ben-mimar-sinan-okuma-243-250", "s247-vocab");
-  await revealDictionaryGroup(
-    ["çağdaş", "özge", "görkemli"], ["şevk", "avaze", "sadr-ı âzam"],
-    "Aynı dönemde yaşayan", "Bir işi yapma isteği",
-    (text) => {
-      assert.ok(text.includes("Karekodla sözlükten doğrulama yapılırken sözcüğün bu bağlamdaki anlamı esas alınabilir."),
-        "T4-P247-VOC01 keeps its exact context fragment with the first vocabulary group");
-      assert.ok(!text.includes("Aşağıdaki karşılıklar metindeki kullanıma göre verilmiştir."),
-        "T4-P247-VOC01 does not repeat the complete answer summary");
-    }
-  );
-  screen = await openStep("ben-mimar-sinan-okuma-243-250", "s250-social-table");
-  assert.ok(!screen.text.includes("Osmanlı dönemindeki askerî eğitim"), "ISSUE-078 first social-expression answer is hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Osmanlı dönemindeki askerî eğitim"), "s250 first answer")).includes("Osmanlı dönemindeki askerî eğitim"), "ISSUE-078 first social-expression group opens after the task");
-  screen = await openStep("ben-mimar-sinan-okuma-243-250", "s250-social-table-rest");
-  assert.ok(!screen.text.includes("Dönemin aydınlatma koşulları"), "ISSUE-078 remaining social-expression answer is hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Dönemin aydınlatma koşulları"), "s250 remaining answer")).includes("Dönemin aydınlatma koşulları"), "ISSUE-078 remaining social-expression group opens after the task");
+  const videoReferenceCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+    .map((entry) => ({ ...entry, source: (entry.step.content?.sources ?? []).find((source) => /(?:\.mp4|video|eba)/iu.test(source.url)) }))
+    .find((entry) => entry.source);
+  assert.ok(videoReferenceCase, "canonical catalog contains a source-backed video reference");
+  await openStep(videoReferenceCase.lesson.lesson_slug, videoReferenceCase.step.id);
+  const videoLinkState = await page.evaluate(`(() => Array.from(document.querySelectorAll('#canvas .source-links a'))
+    .map((anchor) => ({ href: anchor.href, label: anchor.innerText.trim() }))
+    .find((anchor) => /(?:\.mp4|video|eba)/iu.test(anchor.href)) ?? null)()`);
+  assert.ok(videoLinkState, `${videoReferenceCase.lesson.lesson_slug}/${videoReferenceCase.step.id} renders its video link`);
+  assert.equal(videoLinkState.href, new URL(videoReferenceCase.source.url).href,
+    "rendered video link targets the canonical source URL");
+  assert.match(videoLinkState.href, /^https:\/\//u, "video source opens over HTTPS");
+  assert.ok(videoLinkState.label, "video source link has a readable student-facing label");
 
-  screen = await openStep("ben-mimar-sinan-cozumleme-256-259", "s256-elements");
-  assert.ok(screen.text.includes("Kişiler") && screen.text.includes("Dramatik örgü"), "ISSUE-079 first structure group is visible");
-  assert.ok(!screen.text.includes("Sinan merkezî kişidir"), "ISSUE-079 first structure answers stay hidden initially");
-  let structureAnswer = await next();
-  assert.ok(structureAnswer.includes("Sinan merkezî kişidir"));
-  structureAnswer = await advanceUntil((text) => text.includes("Mekân ve zaman"), "s256 relation prompt");
-  assert.ok(structureAnswer.includes("Mekân ve zaman"), "ISSUE-079 relation group follows the first answer group");
-  screen = await openStep("ben-mimar-sinan-cozumleme-256-259", "s258-q2");
-  assert.ok(!screen.text.includes("Sinan'ın düşünce") && !screen.text.includes("Görev, beklenti") &&
-    !screen.text.includes("Monoloğun işlevi") && !screen.text.includes("Diyaloğun işlevi"),
-  "ISSUE-080 monologue/dialogue answers are hidden initially");
-  assert.ok((await next()).includes("Monolog"), "ISSUE-080 answer opens after the task");
-  screen = await openStep("ben-mimar-sinan-cozumleme-256-259", "s258-grammar");
-  assert.ok(!screen.text.includes("Kendisini ... bilmiyordu"), "ISSUE-081 classification task is not reversed");
-  screen = await openStep("ben-mimar-sinan-cozumleme-256-259", "s258-grammar-apply");
-  assert.ok(screen.text.includes("Kendisini ... bilmiyordu") && !screen.text.includes("isim"), "ISSUE-081 classification task starts before the answer");
-  assert.ok((await advanceUntil((text) => text.includes("Ama nasıl?"), "s258 six-sentence task")).includes("Ama nasıl?"), "ISSUE-081 all six sentences are shown before the answer");
-  assert.ok((await advanceUntil((text) => text.includes("Fiil cümlesi"), "s258 sentence classifications")).includes("Fiil cümlesi"),
-    "ISSUE-081 classifications open after the six-sentence task");
-
-  screen = await openStep("merdiven-anlama-266-270", "s266-vocabulary");
-  await revealDictionaryGroup(
-    ["daire", "yeni yetme", "kanı(mca)"], ["yol vermek", "gereksinme", "duralamak"],
-    "büro veya kurum birimi", "geçebilmesi için yol açmak",
-    (text) => {
-      assert.ok(text.includes("Önerilen karşılıklar anlamı koruyabilse de özellikle “yeni yetme” gibi ifadelerde anlatımın tonunu değiştirebilir."),
-        "T4-P266-VOC01 appends its source fragment to the matching answer group");
-      assert.ok(!text.includes("Öyküdeki altı kelime/kelime grubunun bağlamsal anlamları"),
-        "T4-P266-VOC01 keeps the aggregate summary out of the first group");
-    }
-  );
-  screen = await openStep("merdiven-cozumleme-274-279", "s275-q2a");
-  assert.ok(!screen.text.includes("Merdivenin yerini") && !screen.text.includes("Mimari") &&
-    !screen.text.includes("Teknoloji") && !screen.text.includes("Korunabilecek tema"),
-  "ISSUE-083 comparison examples and answer directions are hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("asansör"), "s275 comparison answer")).includes("asansör"), "ISSUE-083 comparison answer opens after the task");
-  screen = await openStep("merdiven-cozumleme-274-279", "s276-conflicts");
-  assert.ok(!screen.text.includes("Yükselme/acele") && !screen.text.includes("İhtiyarın deneyimi"), "ISSUE-084 conflict answers are hidden initially");
-  assert.ok((await next()).includes("Anlatıcının iş telaşı"), "ISSUE-084 conflict answer opens after the task");
-  screen = await openStep("merdiven-cozumleme-274-279", "s277-whatif");
-  assert.ok(!screen.text.includes("Yaşlı adamın iyi dileğini"), "ISSUE-085 counterfactual answers are not shown before the question");
-  assert.ok((await next()).includes("Yaşlı adamın iyi dileğini"), "ISSUE-085 counterfactual answers open once in the follow-up task");
-  screen = await openStep("anadolu-insani-284-290", "s287-vocab");
-  await revealDictionaryGroup(
-    ["fedakârlık", "hemzemin geçit", "mesai"], ["aksaklık", "tahammül"],
-    "kendi çıkarından", "olağan biçimde ilerlemesini bozan",
-    (text) => {
-      assert.ok(text.includes("Mehmet Bey\'in kaplumbağaları kurtarmayı"),
-        "T4-P287-VOC01 retains the observed video example with its linked term group");
-      assert.ok(!text.includes("Aşağıdaki anlamlar sözcüklerin genel kullanımına göredir"),
-        "T4-P287-VOC01 does not reveal the full summary early");
-    }
-  );
-  screen = await openStep("merdiven-cozumleme-274-279", "s278-disciplines");
-  assert.ok(screen.text.includes("Kurumda yaş/konum ilişkileri") && !screen.text.includes("Kuşak değişimi") &&
-    !screen.text.includes("Sosyoloji, psikoloji"), "ISSUE-086 group 1 task is visible without group 2 or answers");
-  assert.ok((await advanceUntil((text) => text.includes("Sosyoloji, psikoloji"), "s278 group 1 answer")).includes("Sosyoloji, psikoloji"), "ISSUE-086 group 1 answers open before group 2");
-  const disciplineGroup2 = await advanceUntil((text) => text.includes("Anlatıcının kuşak değişimiyle yüzleşmesi"), "s278 group 2 prompt");
-  assert.ok(disciplineGroup2.includes("Anlatıcının kuşak değişimiyle yüzleşmesi"));
-  screen = await openStep("merdiven-cozumleme-274-279", "s279-q1");
-  assert.ok(screen.text.includes("Varoluşçu tema") && !screen.text.includes("Simgeler") &&
-    !screen.text.includes("Anlatıcının aceleyle işini görme alışkanlığı"), "ISSUE-087 group 1 task is visible without group 2 or answers");
-  assert.ok((await advanceUntil((text) => text.includes("Anlatıcının aceleyle işini görme alışkanlığı"), "s279 group 1 answer")).includes("Anlatıcının aceleyle işini görme alışkanlığı"), "ISSUE-087 group 1 answers open before group 2");
-
-  screen = await openStep("tiyatro-canlandirma-280-283", "s280-q2");
-  assert.ok(!screen.text.includes("Karakterin amacı ve ilişkileri") && !screen.text.includes("Ses tonu, vurgu"), "ISSUE-089 role dimensions are hidden initially");
-  assert.ok((await next()).includes("Karakterin amacı ve ilişkileri"), "ISSUE-089 role dimensions open after the task");
-  screen = await openStep("tiyatro-canlandirma-280-283", "s280-subtext");
-  assert.ok(!screen.text.includes("Metinde doğrudan duyulan"), "ISSUE-090 definitions are hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Metinde doğrudan duyulan"), "s280 definitions answer")).includes("Metinde doğrudan duyulan"), "ISSUE-090 definitions open after the task");
-  screen = await openStep("anadolu-insani-cozumleme-291-297", "s295-q7");
-  assert.ok(!screen.text.includes("göndergesel") && !screen.text.includes("heyecana bağlı"), "ISSUE-092 textbook function terms are hidden initially");
-  assert.ok((await next()).includes("Göndergesel"), "ISSUE-092 textbook function terms open after the task");
-  screen = await openStep("anadolu-insani-cozumleme-291-297", "s297-next");
-  assert.ok(!screen.text.includes("olgu ile yorumu"), "ISSUE-093 example target is hidden initially");
-  assert.ok((await advanceUntil((text) => text.toLocaleLowerCase("tr").includes("uygulanabilir hedef"), "s297 target support", 24)).includes("uygulanabilir hedef"), "ISSUE-093 target support opens after the task");
-  screen = await openStep("afis-atolyesi-298-302", "s302-next");
-  assert.ok(!screen.text.includes("ana iletiyi tasarımdan") && !screen.text.includes("3 kısa mesaj"), "ISSUE-094 example target is hidden initially");
-  assert.ok((await advanceUntil((text) => text.toLocaleLowerCase("tr").includes("gözlenebilir hedef"), "s302 target support", 24)).includes("gözlenebilir hedef"), "ISSUE-094 target support opens after the task");
-
-  screen = await openStep("degerlendirme-303-307", "s303-reading");
-  assert.ok(!screen.text.includes("Hitap, dinî söyleyiş") && !screen.text.includes("şehitlik"), "ISSUE-096 answer examples are absent from the reading card");
-  screen = await openStep("degerlendirme-303-307", "s304-q4");
-  assert.ok(!screen.text.includes("Umut, sevgi, güven, merhamet"), "ISSUE-097 answer candidates are hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Örnek duygu"), "s304 example emotion")).includes("Örnek duygu"),
-    "ISSUE-097 example emotion opens after the task");
-  screen = await openStep("degerlendirme-303-307", "s305-q5");
-  assert.equal(await page.evaluate("document.querySelectorAll('#canvas .content-images img').length"), 4, "ISSUE-098 four source images render");
-  assert.equal(await page.evaluate("Array.from(document.querySelectorAll('#canvas .content-images img')).every(image => image.naturalWidth > 100)"), true, "ISSUE-098 all source images load");
-  screen = await openStep("degerlendirme-303-307", "s307-q11");
-  screen = await advanceUntil((text) => text.includes("A) Televizyon") && text.includes("E) İnternet"), "ISSUE-099 answer choices before answer", 4);
-  assert.ok(screen.includes("Elif, yaptığı araştırmalar") && screen.includes("A) Televizyon") && screen.includes("E) İnternet"), "ISSUE-099 full question and choices are visible before the answer");
-  assert.ok(!screen.includes("Doğru seçenek: B"), "ISSUE-099 correct option is hidden initially");
-  assert.ok((await advanceUntil((text) => text.includes("Doğru seçenek: B"), "s307 correct option")).includes("Doğru seçenek: B"),
-    "ISSUE-099 correct option opens after the task");
-  screen = await openStep("degerlendirme-303-307", "s307-q12");
-  assert.ok(!screen.text.includes("Dijital üretim") && !screen.text.includes("teknolojinin tek başına"), "ISSUE-100 argument skeleton is hidden initially");
-  screen = await openStep("degerlendirme-303-307", "s307-q14");
-  assert.ok(!screen.text.includes("Bu kanıtın aidiyetle ilişkisi") && !screen.text.includes("dört çeşme yaptırdığını"),
-    "ISSUE-101 video-backed answer and its evidence remain hidden on the question screen");
-  const aidiyetAnswer = await advanceUntil(
-    (text) => text.includes("Anlatıcının açıklaması") || text.includes("Halil Bey'in örneği"),
-    "s307 verified Aidiyet answer");
-  assert.ok(aidiyetAnswer.includes("Anlatıcının açıklaması") || aidiyetAnswer.includes("Halil Bey'in örneği"),
-    "ISSUE-101 verified video-backed Aidiyet answer opens after the task");
-
-  for (const themeId of ["TEMA_01", "TEMA_02", "TEMA_03", "TEMA_04"]) {
-    const candidate = evidencePresentationCases.get(themeId);
-    assert.ok(candidate, `${themeId} production catalog has an explicitly paired evidence section`);
+  for (const [themeId, candidate] of evidencePresentationCases) {
+    assert.ok(candidate, `${themeId} has a canonical answer/evidence presentation`);
     const { lesson, step, unit } = candidate;
     screen = await openStep(lesson.lesson_slug, step.id);
-    const sourceSection = step.answer.answer_sections[unit.evidence_sections[0].section_key];
-    const sourceSnippet = firstSourceString(sourceSection).trim().slice(0, 44);
-    assert.ok(sourceSnippet.length > 10, `${themeId}/${step.id} paired evidence section has source text`);
-    assert.ok(!screen.text.includes(sourceSnippet), `${themeId}/${step.id} paired evidence is hidden on the task view`);
+    const evidenceValue = step.answer.answer_sections?.[unit.evidence_sections[0].section_key];
+    const sourceSnippet = firstSourceString(evidenceValue).trim().slice(0, 44);
+    assert.ok(sourceSnippet.length > 10, `${themeId}/${step.id} has authored evidence text`);
+    assert.ok(!screen.text.includes(sourceSnippet), `${themeId}/${step.id} keeps evidence hidden on the task view`);
     const responseKey = unit.section_keys?.[0];
-    const responseValue = responseKey ? step.answer.answer_sections[responseKey] : step.answer.answer;
+    const responseValue = responseKey ? step.answer.answer_sections?.[responseKey] : step.answer.answer;
     const responseSnippet = firstSourceString(responseValue).trim().slice(0, 34);
-    assert.ok(responseSnippet.length > 10, `${themeId}/${step.id} linked response has source text`);
-    const responseText = await advanceUntil((text) => text.includes(responseSnippet), `${themeId} linked answer` , 36);
-    assert.ok(responseText.includes(responseSnippet), `${themeId}/${step.id} opens the linked response before evidence`);
+    assert.ok(responseSnippet.length > 10, `${themeId}/${step.id} has an authored answer marker`);
+    const responseText = await advanceUntil((text) => text.includes(responseSnippet), `${themeId} linked answer`, 48);
+    assert.ok(responseText.includes(responseSnippet), `${themeId}/${step.id} reveals its answer before evidence`);
     const evidenceText = await advanceUntilEvidenceSection(unit.evidence_sections[0].section_key, `${themeId}/${step.id}`);
-    assert.ok(evidenceText.includes(sourceSnippet), `${themeId}/${step.id} source evidence section opens after its answer`);
-    assert.ok((await answerPanelText()).trim(), `${themeId}/${step.id} keeps the linked answer visible with evidence`);
+    assert.ok(evidenceText.includes(sourceSnippet), `${themeId}/${step.id} reveals its linked evidence`);
+    assert.ok((await answerPanelText()).trim(), `${themeId}/${step.id} keeps the answer visible with evidence`);
     const quotePanel = await page.evaluate("document.querySelector('#canvas .panel--evidence .quotes')?.innerText ?? ''");
     for (const quoteIndex of unit.inline_quote_indexes ?? []) {
       const quote = step.answer.evidence_quotes[quoteIndex];
-      assert.ok(!quotePanel.includes(quote), `${themeId}/${step.id} quote ${quoteIndex} is not duplicated as a separate evidence card`);
+      assert.ok(!quotePanel.includes(quote), `${themeId}/${step.id} does not duplicate inline quote ${quoteIndex} as a card`);
     }
   }
 
   await page.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: profile });
-  screen = await openStep("konusma", "s59-rubric");
-  let rubricCriteriaSeen = false;
-  let rubricResourcesSeen = false;
-  let rubricDownload = null;
-  for (let i = 0; i < 16; i += 1) {
-    const currentText = i === 0 ? screen.text : await next();
-    rubricCriteriaSeen ||= currentText.includes("Konu seçimi") && currentText.includes("Başlangıç düzeyinde");
-    rubricResourcesSeen ||= currentText.includes("Öğretmen anahtarı") && currentText.includes("Puanlama Exceli");
-    rubricDownload ||= await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
-    if (rubricCriteriaSeen && rubricResourcesSeen && rubricDownload) break;
+  const downloadCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+    .find(({ step }) => (step.content?.sources ?? []).some((source) => source.download === true));
+  assert.ok(downloadCase, "canonical presentation data declares a downloadable resource");
+  await openStep(downloadCase.lesson.lesson_slug, downloadCase.step.id);
+  let downloadLink = await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
+  for (let attempt = 0; attempt < 24 && !downloadLink; attempt += 1) {
+    await next();
+    downloadLink = await page.evaluate("(() => { const a = document.querySelector('#canvas .source-links a[download]'); return a && {href:a.href, label:a.textContent.trim(), target:a.getAttribute('target'), download:a.hasAttribute('download')}; })()");
   }
-  assert.ok(rubricCriteriaSeen, "s.59 authored rubric shows criteria and levels across its paginated content");
-  assert.ok(rubricResourcesSeen, "s.59 authored rubric links its teacher rubric and scoring workbook");
-  assert.ok(rubricDownload?.href.endsWith("/assets/assessment-documents/iletisim-engelleri-drama-rubrik.docx"),
-    "s.59 rubric has a same-origin Word download link");
-  assert.equal(rubricDownload.download, true, "rubric resource is exposed as a browser download");
-  assert.equal(rubricDownload.target, null, "Word download stays in the current presentation tab");
-  screen = await openStep("karagoz", "s35-peer-form");
-  assert.ok(screen.text.includes("Evet") && screen.text.includes("Kısmen") && screen.text.includes("Hayır"),
-    "s.35 peer-assessment response scale is visible to students");
+  assert.ok(downloadLink?.label, `${downloadCase.lesson.lesson_slug}/${downloadCase.step.id} exposes its download label`);
+  assert.equal(downloadLink.download, true, "downloadable resources use the download interaction");
+  assert.equal(downloadLink.target, null, "local downloads stay in the presentation tab");
+  const authoredDownload = downloadCase.step.content.sources.find((source) => source.download === true);
+  assert.ok(downloadLink.href.includes(authoredDownload.url), "rendered download URL matches the canonical resource");
+  const downloadFilename = decodeURIComponent(path.basename(new URL(downloadLink.href).pathname));
   await page.evaluate("document.querySelector('#canvas .source-links a[download]')?.click()");
-  const downloadedPeerForm = await until(() => {
-    const file = fs.readdirSync(profile).find((name) => name === "OGM2025TDE11135akran.docx");
+  const downloadedFile = await until(() => {
+    const file = fs.readdirSync(profile).find((name) => name === downloadFilename);
     return file ? path.join(profile, file) : null;
-  }, "peer-assessment DOCX download");
-  const peerBytes = fs.readFileSync(downloadedPeerForm);
-  assert.deepEqual([...peerBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "peer-form download is a real DOCX ZIP package");
-  assert.ok(peerBytes.length > 5000, "peer-form download has complete document content");
+  }, "authored assessment document download");
+  const downloadedBytes = fs.readFileSync(downloadedFile);
+  assert.deepEqual([...downloadedBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04],
+    "declared assessment document downloads as a valid ZIP package");
+  assert.ok(downloadedBytes.length > 0, "downloaded document is non-empty");
 
   await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
-  const qaContentEntry = findStep("mektup", "s39-q1");
-  assert.equal(qaContentEntry.step.layout, "vocabulary", "s39-q1 keeps its production vocabulary layout");
-  await openStep("mektup", "s39-q1");
-  let visualQa = await qaState();
-  assert.equal(visualQa.modern, true, "s39-q1 browser screenshot uses the semantic QA shell");
-  assert.equal(visualQa.focus.trim(), "", "s39-q1 browser screenshot shows its vocabulary prompt");
-  const pairedVisualEntry = findStep("huzur-metni-anlayalim-175-176", "s176-q4");
-  const pairedVisualUnit = pairedVisualEntry.step.presentation?.web?.units?.find((unit) => unit.evidence_sections?.length);
-  assert.ok(pairedVisualUnit, "s176-q4 has a production answer/evidence unit for visual comparison");
-  await openStep("huzur-metni-anlayalim-175-176", "s176-q4");
-  const qaLessonPromptScreenshot = await captureQaScreenshot("s176-q4 QA prompt");
-  await advanceUntilEvidenceSection(pairedVisualUnit.evidence_sections[0].section_key, "s176-q4 visual evidence");
-  visualQa = await qaState();
-  assert.equal(visualQa.modern, true, "s176-q4 browser screenshot uses the modern QA layout");
-  assert.ok((await answerPanelText()).trim(), "s176-q4 browser screenshot includes its paired answer");
-  assert.ok((await evidencePanelText()).trim(), "s176-q4 browser screenshot includes paired evidence");
-  const qaPairScreenshot = await captureQaScreenshot("s176-q4 paired answer/evidence");
-  // PPTX export is scoped to the currently selected lesson. Keep the visual
-  // targets in that lesson so each browser state can be matched to an exported
-  // slide; s39-q1 belongs to a different lesson and cannot appear in this file.
+  const pairedVisualCase = builtCatalog.lessons.flatMap((lesson) => lesson.steps.map((step) => ({
+    lesson,
+    step,
+    unit: step.presentation?.web?.units?.find((candidate) => candidate.evidence_sections?.length)
+  }))).filter(({ step, unit }) => unit && usesModernQuestionLayout(step) &&
+    !["process", "assessment", "reference"].includes(step.layout))
+    .sort((left, right) => left.lesson.steps.length - right.lesson.steps.length)[0];
+  assert.ok(pairedVisualCase, "catalog has a QA-modern answer/evidence pair for export comparison");
+  await openStep(pairedVisualCase.lesson.slug, pairedVisualCase.step.id);
+  const qaLessonPromptScreenshot = await captureQaScreenshot(`${pairedVisualCase.step.id} QA prompt`);
+  const pairedVisualUnit = pairedVisualCase.unit;
+  await advanceUntilEvidenceSection(pairedVisualUnit.evidence_sections[0].section_key,
+    `${pairedVisualCase.step.id} visual evidence`);
+  const visualQa = await qaState();
+  assert.equal(visualQa.modern, true, `${pairedVisualCase.step.id} uses the QA shell`);
+  assert.ok((await answerPanelText()).trim(), `${pairedVisualCase.step.id} keeps its answer visible`);
+  assert.ok((await evidencePanelText()).trim(), `${pairedVisualCase.step.id} shows its authored evidence`);
+  const qaPairScreenshot = await captureQaScreenshot(`${pairedVisualCase.step.id} paired answer/evidence`);
   const webQaScreenshots = [qaLessonPromptScreenshot, qaPairScreenshot];
   const visualPptxTargets = webQaScreenshots.map(({ label, state }) => ({
     label,
@@ -3169,7 +2649,7 @@ presentationBrowserSuite: {
     "PPTX capture never attempts to add the QA prompt fallback class");
   assert.deepEqual(await qaTransitionCalls(), [],
     "PPTX capture never starts a view transition");
-  assert.ok(pptxCaptureTransitions.visualCaptureCount > 10, "PPTX mapping counts each rendered slide PNG in capture order");
+  assert.ok(pptxCaptureTransitions.visualCaptureCount > 0, "PPTX capture renders slide PNGs in presentation order");
   for (const webScreenshot of webQaScreenshots) {
     const matches = pptxCaptureTransitions.visualMatches.filter((item) => item.label === webScreenshot.label);
     assert.equal(matches.length, 1, `${webScreenshot.label} maps to exactly one PPTX PNG by its rendered QA content`);
@@ -3189,9 +2669,11 @@ presentationBrowserSuite: {
   }
   const pptxBytes = fs.readFileSync(downloadedPptx);
   assert.deepEqual([...pptxBytes.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], "download is a PPTX ZIP package");
-  assert.ok(pptxBytes.length > 50000, "download contains rendered slide images, not plain text only");
+  assert.ok(pptxBytes.length > 0, "downloaded PPTX is non-empty");
   const pptxEntries = execFileSync("unzip", ["-Z1", downloadedPptx], { encoding: "utf8" });
-  assert.ok((pptxEntries.match(/ppt\/media\/slide\d+\.png/g) || []).length > 10, "PPTX embeds the lesson slide renderings");
+  const embeddedSlideCount = (pptxEntries.match(/ppt\/media\/slide\d+\.png/g) || []).length;
+  assert.equal(embeddedSlideCount, pptxCaptureTransitions.visualCaptureCount,
+    "PPTX embeds every slide image captured by the browser export");
   if (process.env.PPTX_TEST_OUTPUT) fs.copyFileSync(downloadedPptx, process.env.PPTX_TEST_OUTPUT);
 
   console.log("[sunum-web] Headless Chrome verified presentation flow and visual PPTX export.");

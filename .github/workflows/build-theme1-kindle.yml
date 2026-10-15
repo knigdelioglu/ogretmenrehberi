@@ -3,7 +3,16 @@ name: Build Theme 1 Kindle EPUB
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches:
+      - main
+      - "feat/**"
+      - "fix/**"
+      - "codex/**"
+    paths:
+      - ".github/workflows/build-theme1-kindle.yml"
+      - "tools/build_kindle_epub.py"
+      - "data/grade-11/source/teacher-book/theme-1/**"
+  pull_request:
     paths:
       - ".github/workflows/build-theme1-kindle.yml"
       - "tools/build_kindle_epub.py"

@@ -1,5 +1,7 @@
 # Sunum Web — Tema 4 QA
 
+> Historical QA snapshot. Theme-specific content assertions were consolidated into `apps/sunum-web/scripts/test-presentation-integrity.mjs`; counts and old command output below describe the snapshot at the time of this report, not current test expectations.
+
 Tarih: 2026-10-03  
 Kapsam: 11. sınıf Türk Dili ve Edebiyatı, 4. Tema — *Hayatın Aynası*.
 

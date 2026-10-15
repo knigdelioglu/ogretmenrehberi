@@ -50,7 +50,7 @@ npm run dev        # build + http://127.0.0.1:5180
 
 `SUNUM_SIFRE` verilmezse yerelde deneme şifresi `sunum` kullanılır. Kalıcı yerel şifre için `apps/sunum-web/.env.local` dosyasına `SUNUM_SIFRE=...` yazılabilir (git'e girmez). Netlify veya GitHub Actions'ta şifre tanımlı değilse build bilerek hata verir.
 
-`npm test` build alır ve şifreli veriyi çözerek ders/adım/cevap sayılarını kanonik katalogla karşılaştırır.
+`npm run test:content` kanonik akış, kaynak dizini, cevap bankası ve web sunum metaverisini ortak doğrulayıcılarla denetler; hata fikstürleri yanlış tür, eksik alan, yinelenen kimlik, bozuk eşleşme ve erken cevap/açıklama görünürlüğünü sınar. Soru ve açıklama metinleri testlerde sabitlenmez. `npm test` bu katmana ek olarak şifreli üretim kataloğunu, kaynakları, formları, PPTX paketini ve çevrimdışı varlıkları kontrol eder. `CHROME=/Chrome/veya/Chromium/yolu npm run test:browser:ci` gerçek tarayıcı etkileşimlerini ve üretim kataloğunu doğrular.
 
 ## GitHub Pages kurulumu (bir kez)
 
