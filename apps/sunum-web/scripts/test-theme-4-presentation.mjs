@@ -51,7 +51,7 @@ const flowSourceIds = new Set(flows.flatMap((flow) => flow.steps.map((step) => s
 const flowAnswerIds = new Set(flows.flatMap((flow) => flow.steps.map((step) => step.answer_id).filter(Boolean)));
 
 assert.equal(flows.length, 14, "Theme 4 has 14 presentation flows");
-assert.equal(flows.reduce((count, flow) => count + flow.steps.length, 0), 237, "all Theme 4 lesson steps are present");
+assert.equal(flows.reduce((count, flow) => count + flow.steps.length, 0), 244, "all Theme 4 lesson steps are present");
 assert.equal(flowSourceIds.size, sourceIndex.records.length, "all 143 indexed source records are reached");
 assert.deepEqual([...flowSourceIds].sort(), sourceIndex.records.map((record) => record.source_record_id).sort(),
   "the flows use exactly the indexed Theme 4 source records");
@@ -289,4 +289,4 @@ assert.equal(answerById.get("T4-P262-PERF01").evidence_quotes[3],
 assert.ok(pageByPrintedNumber.get(257).page_text.includes("öyle bir bina yap ki, bir eşi daha bulunmaya!"),
   "the p.262 evidence quote matches the printed p.257 passage, including punctuation");
 
-console.log("Theme 4 metadata/source QA passed: 72 pages, 14 flows, 237 steps, 143 source records, 164 answers, 93 structured answers, 34 curated summary inclusions, 48 source quotes, 11 evidence sections and 35 inline quotes.");
+console.log("Theme 4 metadata/source QA passed: 72 pages, 14 flows, 244 steps, 143 source records, 164 answers, 93 structured answers, 34 curated summary inclusions, 48 source quotes, 11 evidence sections and 35 inline quotes.");
