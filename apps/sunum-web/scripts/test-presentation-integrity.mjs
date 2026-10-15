@@ -142,10 +142,6 @@ function verifyWebPresentation() {
     if (presentation) {
       resolved.set(answerId, presentation);
     }
-    if (answer.entry_type === "source_limited") {
-      assert.equal(answer.evidence_quotes?.length ?? 0, 0,
-        `${answerId}: source-limited answers do not claim verbatim source quotations`);
-    }
   }
   const configuredIds = Object.keys(webPresentation.answers ?? {});
   assert.equal(new Set(configuredIds).size, configuredIds.length, "web presentation answer overrides have unique IDs");

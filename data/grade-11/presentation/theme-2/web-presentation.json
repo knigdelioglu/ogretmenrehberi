@@ -546,8 +546,9 @@
         {
           "id": "comparison",
           "sections": [
-            "Benzerlikler",
-            "Farklılıklar"
+            "Doğrulanmış görsel gözlem",
+            "Ses kanıtı",
+            "Çalışma yolu"
           ]
         }
       ]
@@ -557,32 +558,10 @@
         {
           "id": "comparison",
           "sections": [
-            "Âşık Şiirinin Dilinden Gözlenebilenler",
-            "Benzerlik",
-            "Farklılık"
-          ],
-          "evidence_sections": [
-            {
-              "key": "Münacaat'ın Dilinden Gözlenebilenler",
-              "contains_quote_indexes": [
-                1
-              ]
-            }
+            "Doğrulanmış görsel gözlem",
+            "Ses kanıtı",
+            "Çalışma yolu"
           ]
-        }
-      ],
-      "quote_links": [
-        {
-          "index": 0,
-          "unit": "comparison"
-        },
-        {
-          "index": 1,
-          "unit": "comparison"
-        },
-        {
-          "index": 2,
-          "unit": "comparison"
         }
       ]
     },
@@ -632,8 +611,9 @@
         {
           "id": "comparison",
           "sections": [
-            "Âşık Atışmasına Değer Katan Unsurlar",
-            "Söyleyicinin Metne Katkısı"
+            "Doğrulanmış görsel gözlem",
+            "Ses kanıtı",
+            "Çalışma yolu"
           ]
         }
       ]
@@ -1666,8 +1646,8 @@
         "mode": "include",
         "fragments": [
           {
-            "unit": "Somut Katkı",
-            "text": "Hunlarla başlayıp Göktürk ve Uygurlarla devam eden bu süreç, Selçuklular ve Osmanlılar gibi Doğu'ya ve Avrupa'ya hükmeden küresel çaplı devletlerle süregeldi.",
+            "unit": "Gözlem",
+            "text": "Kısmi görüntülerde tarihî taş yazıt yüzeyi, bozkır, yurt/çadır, toplu etkinlik ve tarihî mimari görülür.",
             "position": "start"
           }
         ]
@@ -1738,8 +1718,8 @@
         "mode": "include",
         "fragments": [
           {
-            "unit": "Örnek seçimler — zorunlu cevap değil",
-            "text": "Dîvânu Lugâti't-Türk, Kutadgu Bilig veya Dede Korkut Hikâyeleri gibi bir eser seçilebilir",
+            "unit": "Görsel kanıt",
+            "text": "Ekran görüntülerinde Kül Tigin, Bilge Kağan ve Tonyukuk adları yazıtlarla birlikte görünür",
             "position": "start"
           }
         ]
