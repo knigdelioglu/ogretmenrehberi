@@ -7,6 +7,16 @@ on:
       - main
       - "feat/**"
       - "fix/**"
+      - "codex/**"
+    paths:
+      - "tools/build_kindle_epub.py"
+      - "tools/build_ogretmenos_export.py"
+      - "tools/theme1_quality_freeze.py"
+      - "apps/lesson-player/**"
+      - "data/grade-11/presentation/theme-1/**"
+      - "data/grade-11/source/teacher-book/theme-1/**"
+      - ".github/workflows/theme1-quality-freeze.yml"
+  pull_request:
     paths:
       - "tools/build_kindle_epub.py"
       - "tools/build_ogretmenos_export.py"

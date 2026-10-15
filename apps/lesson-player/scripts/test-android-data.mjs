@@ -65,11 +65,14 @@ for (const [index, lesson] of lessons.entries()) {
     }
   }
 }
-const witness = lessons.find(x => x.lesson_id === "T11-T01-KARAGOZ").steps
-  .find(x => x.id === "s26-reference");
-assert.ok(witness.content.note, "Teacher note was lost");
-assert.equal(lessons.find(x => x.lesson_id === "T11-T04-MERDIVEN-ANLAMA-266-270")
-  .steps.find(x => x.id === "s266-vocabulary").layout, "vocabulary");
+const noteWitness = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.content?.note?.trim());
+assert.ok(noteWitness, "Canonical catalog has a teacher-note example");
+assert.ok(noteWitness.step.content.note, "Teacher note was lost");
+const vocabularyWitness = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.layout === "vocabulary" && step.answer?.answer_sections);
+assert.ok(vocabularyWitness, "Canonical catalog has a vocabulary answer example");
+assert.equal(vocabularyWitness.step.layout, "vocabulary");
 const modified = structuredClone(lessons);
 const answered = modified.flatMap(x => x.steps).find(x => x.answer?.answer);
 answered.answer.answer += " İçerik değişti.";

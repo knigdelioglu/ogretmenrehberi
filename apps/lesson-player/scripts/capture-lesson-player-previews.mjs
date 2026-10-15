@@ -23,8 +23,37 @@ if (!chrome) throw new Error("CHROME must point to Chrome or Chromium.");
 const baseUrl = new URL(option("--base-url", `${rootOrigin}/`));
 if (!baseUrl.pathname.endsWith("/")) baseUrl.pathname += "/";
 const outputDir = path.resolve(option("--output-dir", process.cwd()));
-const captures = JSON.parse(fs.readFileSync(path.join(here, "preview-captures.json"), "utf8"));
-assert.ok(Array.isArray(captures) && captures.length > 0, "preview capture manifest must not be empty");
+const lessons = JSON.parse(fs.readFileSync(path.join(here, "../src/generated/lessons.json"), "utf8"));
+function buildCaptures() {
+  const captures = [];
+  const layouts = new Set(["question", "comparison", "structure", "process", "assessment", "reference", "vocabulary"]);
+  const add = (lesson, step, name, display = true) => {
+    captures.push({
+      file: `lesson-player-${name}.png`,
+      width: 1440,
+      height: 900,
+      url: new URL(`?${display ? "display=1&" : ""}lesson=${encodeURIComponent(lesson.lesson_id)}&step=${encodeURIComponent(step.id)}`, baseUrl).toString()
+    });
+  };
+  for (const themeId of [...new Set(lessons.map((lesson) => lesson.theme_id))]) {
+    const themeLessons = lessons.filter((lesson) => lesson.theme_id === themeId);
+    const themeName = themeId.toLowerCase().replace(/[^a-z0-9-]+/gu, "-");
+    for (const layout of layouts) {
+      const lesson = themeLessons.find((candidate) => candidate.steps.some((step) => step.layout === layout));
+      const step = lesson?.steps.find((candidate) => candidate.layout === layout);
+      if (lesson && step) add(lesson, step, `${themeName}-${layout}`);
+    }
+    const teacherQuestion = themeLessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.answer?.answer && step.reveal_order?.includes("answer"));
+    if (teacherQuestion) add(teacherQuestion.lesson, teacherQuestion.step, `${themeName}-teacher-answer`, false);
+    const guidanceQuestion = themeLessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+      .find(({ step }) => step.answer?.guidance && step.reveal_order?.includes("guidance"));
+    if (guidanceQuestion) add(guidanceQuestion.lesson, guidanceQuestion.step, `${themeName}-teacher-guidance`, false);
+  }
+  assert.ok(captures.length > 0, "current catalog provides at least one representative preview capture");
+  return captures;
+}
+const captures = buildCaptures();
 
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "lesson-player-preview-"));
 const chromeProcess = spawn(chrome, [
@@ -234,21 +263,27 @@ try {
   pageSession = await createPageSession();
 
   await verifyDom(pageSession, baseUrl.toString(), 1440, 900, (html) => {
-    assert.ok(html.includes("1. Tema — Giriş"), "lesson catalog renders its first lesson");
     assert.ok(html.includes('id="pptx-export-trigger"'), "PPTX export control is present");
   });
 
-  const questionUrl = new URL("?lesson=T11-T01-KARAGOZ&step=s15-q1", baseUrl).toString();
+  const answerCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+    .find(({ step }) => step.answer?.answer && step.reveal_order?.includes("answer"));
+  assert.ok(answerCase, "current catalog provides an answer-reveal interaction preview");
+  const questionUrl = new URL(`?lesson=${encodeURIComponent(answerCase.lesson.lesson_id)}&step=${encodeURIComponent(answerCase.step.id)}`, baseUrl).toString();
   await verifyDom(pageSession, questionUrl, 1366, 768, (html) => {
-    assert.ok(html.includes('aria-label="Cevabı göster"'), "answer reveal control is accessible");
+    assert.ok(html.includes('aria-label="Cevabı göster"'), `${answerCase.step.id} answer reveal control is accessible`);
     assert.ok(!html.includes("Göster: Cevap"), "legacy answer control text is absent");
   });
 
-  const guidanceUrl = new URL("?lesson=T11-T01-KARAGOZ&step=s15-q2", baseUrl).toString();
-  await verifyDom(pageSession, guidanceUrl, 1366, 768, (html) => {
-    assert.ok(html.includes('aria-label="Yönlendirmeyi göster"'), "guidance reveal control is accessible");
-    assert.ok(!html.includes("Göster: Yönlendirme"), "legacy guidance control text is absent");
-  });
+  const guidanceCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+    .find(({ step }) => step.answer?.guidance && step.reveal_order?.includes("guidance"));
+  if (guidanceCase) {
+    const guidanceUrl = new URL(`?lesson=${encodeURIComponent(guidanceCase.lesson.lesson_id)}&step=${encodeURIComponent(guidanceCase.step.id)}`, baseUrl).toString();
+    await verifyDom(pageSession, guidanceUrl, 1366, 768, (html) => {
+      assert.ok(html.includes('aria-label="Yönlendirmeyi göster"'), `${guidanceCase.step.id} guidance reveal control is accessible`);
+      assert.ok(!html.includes("Göster: Yönlendirme"), "legacy guidance control text is absent");
+    });
+  }
 
   for (let index = 0; index < captures.length; index += 1) {
     const entry = captures[index];

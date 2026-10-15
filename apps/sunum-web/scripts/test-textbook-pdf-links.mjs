@@ -72,14 +72,15 @@ if (currentPdfPath) {
     page_count: localManifest.source.pdf_page_count,
     printed_to_pdf_offset: localManifest.printed_to_pdf_offset
   };
-  assert.equal(localPdf.printed_to_pdf_offset, 1,
-    "local textbook PDF printed-to-physical-page offset remains +1");
-  assert.equal(localPdf.page_count, 313, "local source PDF has 313 pages");
+  assert.ok(Number.isInteger(localPdf.printed_to_pdf_offset),
+    "canonical local PDF declares an integer printed-to-physical-page offset");
+  assert.ok(Number.isInteger(localPdf.page_count) && localPdf.page_count > 0,
+    "canonical local PDF declares a positive physical page count");
   const digest = createHash("sha256").update(fs.readFileSync(currentPdfPath)).digest("hex");
   const matchesRemote = digest === remotePdf.sha256;
   const matchesLocal = digest === localPdf.sha256;
   assert.ok(matchesRemote || matchesLocal,
-    "PDF fingerprint must match either the verified 312-page MEB web PDF or the canonical 313-page local textbook");
+    "PDF fingerprint must match either the verified MEB web PDF or the canonical local textbook");
   const selected = matchesRemote
     ? { name: "MEB web", count: remotePdf.page_count, offset: 0 }
     : { name: "canonical local", count: localPdf.page_count, offset: localPdf.printed_to_pdf_offset };

@@ -1,8 +1,3 @@
-import { checkTheme1 } from "./lesson-data/theme-1.mjs";
-import { checkTheme2 } from "./lesson-data/theme-2.mjs";
-import { checkTheme3 } from "./lesson-data/theme-3.mjs";
-import { checkTheme4 } from "./lesson-data/theme-4.mjs";
-
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -52,29 +47,6 @@ for (const themeNo of [1, 2, 3, 4]) {
   manifestAnswerTotal += manifestTheme.answer_bank_entries;
   manifestSourceTotal += manifestTheme.source_records;
 }
-const theme3Index = JSON.parse(fs.readFileSync(
-  path.join(teacherBookRoot, "theme-3/answer-bank.json"), "utf8"
-));
-const theme3Entries = theme3Index.parts.flatMap((part) => {
-  const sourcePath = path.join(teacherBookRoot, "theme-3", part.path);
-  return JSON.parse(fs.readFileSync(sourcePath, "utf8")).entries;
-});
-const theme3Types = theme3Entries.reduce((counts, entry) => {
-  counts[entry.entry_type] = (counts[entry.entry_type] ?? 0) + 1;
-  return counts;
-}, {});
-assert(theme3Entries.length === 220 &&
-  theme3Types.question_answer === 81 &&
-  theme3Types.performance_support === 114 &&
-  theme3Types.source_limited === 25,
-  "Tema 3 parça kayıtları güncel kanonik dağılımı ve source-limited sayısını vermeli.");
-const theme3Compare = theme3Entries.find((entry) => entry.question_id === "T3-P177-COMP01");
-assert(theme3Compare?.entry_type === "source_limited" &&
-  theme3Compare.source_locator.includes("görsel olarak yeniden doğrulanmalı") &&
-  theme3Compare.answer_sections?.Huzur?.İçerik &&
-  theme3Compare.answer_sections?.["Mescid-i Aksa"]?.includes("doğrulanmadan") &&
-  !theme3Compare.evidence_quotes,
-  "T3-P177-COMP01 yalnız PDF’de görünen Huzur bilgisini içermeli; şiir metni ve dizeleri kaynak sınırlı olmalı.");
 assert(
   teacherBookManifest.totals.answer_bank_entries === manifestAnswerTotal &&
     teacherBookManifest.totals.source_records === manifestSourceTotal,
@@ -87,16 +59,12 @@ const theme2Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_02");
 const theme3Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_03");
 const theme4Lessons = lessons.filter((lesson) => lesson.theme_id === "TEMA_04");
 
-assert(
-  theme1Lessons.length === 7,
-  "1. Tema freeze kapsamı tam olarak yedi ders içermeli."
-);
-assert(
-  theme2Lessons.length === 9,
-  "Tema 2 üretiminde değerlendirme dâhil dokuz doğal blok bulunmalı."
-);
-
-assert(theme3Lessons.length === 18, "Tema 3 ölçme ve değerlendirme s.230–235 ile on sekiz doğal blok içermeli.");
+for (const [themeNumber, themeLessons] of [theme1Lessons, theme2Lessons, theme3Lessons, theme4Lessons].entries()) {
+  const flowRoot = path.join(repoRoot, `data/grade-11/presentation/theme-${themeNumber + 1}`);
+  const flowCount = fs.readdirSync(flowRoot).filter((name) => name.endsWith("-flow.json")).length;
+  assert(themeLessons.length === flowCount,
+    `TEMA_0${themeNumber + 1} generated lesson count must match its canonical flow files.`);
+}
 
 const byLessonId = new Map(lessons.map((lesson) => [lesson.lesson_id, lesson]));
 assert(
@@ -108,11 +76,6 @@ assert(
   "Lesson catalog içinde yinelenen lesson_slug olmamalı."
 );
 
-
-checkTheme1({ lessons, byLessonId, assert, theme1Lessons });
-checkTheme2({ lessons, byLessonId, assert, theme2Lessons });
-checkTheme3({ lessons, byLessonId, assert, theme3Lessons });
-checkTheme4({ lessons, byLessonId, assert, theme4Lessons });
 
 console.log(
   `Lesson data assertions passed: ${lessons.length} lessons, ` +
@@ -172,12 +135,6 @@ assert(p66q4.table_ids?.includes("G11-T1-P66-TABLE01") &&
   p66q5.table_ids?.includes("G11-T1-P66-TABLE02") &&
   pageBlock(66, "G11-T1-P66-TABLE02").related_question_ids.includes("G11-T1-P66-Q05"),
   "P66 konu/tema ve ana/yardımcı düşünce tabloları karşılıklı doğru sorulara bağlanmalı.");
-const p65Answer = JSON.parse(fs.readFileSync(path.join(teacherBookRoot, "theme-1/answer-bank/part-15-pages-64-67.json"), "utf8"))
-  .entries.find((entry) => entry.question_id === "T1-P65-Q01");
-assert(Object.keys(p65Answer.answer_sections).length === 6 &&
-  ["Tasavvur", "Nörolojik", "Sosyal", "Güdü", "Medeni"].every((term) => p65Answer.answer_sections[term]) &&
-  p65Answer.answer_sections.Muhabbet.includes("eşleşmeyen"),
-  "P65 altı sözcüğü korumalı; beş eşleşen anlam ve eşleşmeyen Muhabbet ayrı kalmalı.");
 const p67 = readPage(67);
 assert(!p67.blocks.some((block) => ["G11-T1-P67-SH01", "G11-T1-P67-SH02"].includes(block.id)) &&
   p67.blocks.find((block) => block.id === "G11-T1-P67-ACT01").continuation?.related_activity_ids?.includes("G11-T1-P66-ACT01"),

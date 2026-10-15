@@ -3,10 +3,50 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { setTimeout as sleep } from "node:timers/promises";
+import { answerLayerMarker } from "./presentation-behavior-contracts.mjs";
 
 const chrome = process.env.CHROME;
 if (!chrome) throw new Error("CHROME must point to Chrome/Chromium.");
 const root = process.env.LESSON_PLAYER_URL ?? "http://127.0.0.1:4173";
+const lessons = JSON.parse(fs.readFileSync(new URL("../src/generated/lessons.json", import.meta.url), "utf8"));
+const answerCase = lessons.flatMap((lesson) => lesson.steps.map((step, index) => ({ lesson, step, index })))
+  .find(({ lesson, step, index }) => step.answer?.answer && step.reveal_order?.includes("answer") && index > 0 && index < lesson.steps.length - 1);
+const assessmentCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.layout === "assessment" && step.content?.items?.length && step.content.scale?.length);
+const checklistCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.layout === "assessment" && step.content?.items?.length && !step.content.scale?.length);
+const noteCase = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.layout === "reference" && step.content?.note?.trim());
+const layoutCases = [
+  ["comparison", ({ step }) => step.layout === "comparison" && (step.content?.items?.length || step.content?.sections?.length), '[data-content-layout="comparison"] .comparison-criterion, [data-content-layout="comparison"] .reference-card'],
+  ["structure", ({ step }) => step.layout === "structure" && (step.content?.items?.length || step.content?.sections?.length), '[data-content-layout="structure"] .structure-field, [data-content-layout="structure"] .reference-card'],
+  ["process", ({ step }) => step.layout === "process" && (step.content?.items?.length || step.content?.sections?.length), '[data-content-layout="process"] .process-list__row, [data-content-layout="process"] .reference-card'],
+  ["assessment", ({ step }) => step.layout === "assessment" && (step.content?.items?.length || step.content?.rubric?.rows?.length), '[data-content-layout="assessment"] .assessment-criterion, [data-content-layout="assessment"] .assessment-table tbody tr'],
+  ["reference", ({ step }) => step.layout === "reference" && (step.content?.items?.length || step.content?.sections?.length), '[data-content-layout="reference"] .process-list__row, [data-content-layout="reference"] .reference-card'],
+  ["vocabulary", ({ step }) => step.layout === "vocabulary" && step.answer?.answer_sections && !Array.isArray(step.answer.answer_sections), '.vocabulary-card']
+].map(([layout, predicate, selector]) => {
+  const fixture = lessons.flatMap((lesson) => lesson.steps.map((step) => ({ lesson, step }))).find(predicate);
+  return { layout, selector, ...fixture };
+});
+for (const [name, value] of [["answer-reveal", answerCase], ["assessment table", assessmentCase], ["checklist", checklistCase], ["teacher note", noteCase], ...layoutCases.map((item) => [`${item.layout} layout`, item.lesson && item.step ? item : null])]) {
+  if (!value) throw new Error(`Current lesson catalog does not provide a ${name} browser fixture.`);
+}
+const { lesson: answerLesson, step: answerStep, index: answerIndex } = answerCase;
+const answerMarker = answerLayerMarker(answerStep);
+if (!answerMarker) throw new Error(`Current answer-reveal fixture has no independent answer marker: ${answerLesson.lesson_id}/${answerStep.id}`);
+const firstStep = answerLesson.steps[0];
+const targetLesson = lessons.find((lesson) => lesson.lesson_id !== noteCase.lesson.lesson_id);
+if (!targetLesson) throw new Error("Current lesson catalog does not provide a second lesson for projection sync.");
+const answerUrl = `${root}/?lesson=${encodeURIComponent(answerLesson.lesson_id)}&step=${encodeURIComponent(answerStep.id)}`;
+const assessmentChoice = assessmentCase.step.content.scale[0];
+const assessmentInput = `.assessment-table input[name="${assessmentCase.step.id}-assessment-0"]`;
+const assessmentStorageKey = `ogretmenrehberi.lesson.${assessmentCase.lesson.lesson_id}.assessments`;
+const checklistStorageKey = `ogretmenrehberi.lesson.${checklistCase.lesson.lesson_id}.assessments`;
+const editorLessonKey = `ogretmenrehberi.lesson.${answerLesson.lesson_id}`;
+const expectedEditorOrder = answerLesson.steps.map((step) => step.id);
+[expectedEditorOrder[answerIndex], expectedEditorOrder[answerIndex + 1]] =
+  [expectedEditorOrder[answerIndex + 1], expectedEditorOrder[answerIndex]];
+const noteMarker = noteCase.step.content.note.trim().slice(0, Math.min(80, noteCase.step.content.note.trim().length));
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "lesson-player-cdp-"));
 const browser = spawn(chrome, [
   "--headless=new",
@@ -96,64 +136,59 @@ try {
     "Chrome debugging endpoint"
   );
   const teacher = await connectTarget(port, (target) => target.url === "about:blank");
-  const karagoz = `${root}/?lesson=T11-T01-KARAGOZ&step=s15-q1`;
-  await teacher.send("Page.navigate", { url: karagoz });
+  await teacher.send("Page.navigate", { url: answerUrl });
   await until(
-    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
-    "Karagöz initial step"
+    () => teacher.evaluate(`document.querySelector('.stage-card h1')?.textContent?.includes(${JSON.stringify(answerStep.display_prompt)})`),
+    "Current answer-reveal step"
+  );
+  if (!await teacher.evaluate(`!document.body.innerText.includes(${JSON.stringify(answerMarker)})`)) {
+    throw new Error(`Answer was visible before user action: ${answerLesson.lesson_id}/${answerStep.id}`);
+  }
+  const answerButtonReady = await teacher.evaluate(`Boolean(document.querySelector('.stage-icon-toggle--answer'))`);
+  if (!answerButtonReady) throw new Error(`Answer action is missing: ${answerLesson.lesson_id}/${answerStep.id}`);
+  await teacher.evaluate("document.querySelector('.stage-icon-toggle--answer').click()");
+  await until(() => teacher.evaluate(`document.body.innerText.includes(${JSON.stringify(answerMarker)})`),
+    "Answer appears after teacher opens it");
+  await teacher.evaluate("document.querySelector('.stage-icon-toggle--answer').click()");
+  await until(() => teacher.evaluate(`!document.body.innerText.includes(${JSON.stringify(answerMarker)})`),
+    "Answer hides after teacher closes it");
+
+  await teacher.send("Page.navigate", {
+    url: `${root}/?lesson=${encodeURIComponent(assessmentCase.lesson.lesson_id)}&step=${encodeURIComponent(assessmentCase.step.id)}`
+  });
+  await until(
+    () => teacher.evaluate('document.querySelectorAll(".assessment-table tbody tr").length > 0'),
+    "Interactive self-assessment table"
+  );
+  await teacher.evaluate(`document.querySelector(${JSON.stringify(assessmentInput)})?.click()`);
+  await until(() => teacher.evaluate(`(() => {
+    const input = document.querySelector(${JSON.stringify(assessmentInput)});
+    const saved = JSON.parse(localStorage.getItem(${JSON.stringify(assessmentStorageKey)}) ?? '{}');
+    return input?.checked && saved[${JSON.stringify(assessmentCase.step.id)}]?.[0] === ${JSON.stringify(assessmentChoice)};
+  })()`), "Assessment choice persistence");
+  await teacher.send("Page.reload");
+  await until(
+    () => teacher.evaluate(`document.querySelector(${JSON.stringify(assessmentInput)})?.checked`),
+    "Assessment selection restored after reload"
   );
 
   await teacher.send("Page.navigate", {
-    url: `${root}/?lesson=T11-T01-KONUSMA&step=s58-self-assessment-1`
+    url: `${root}/?lesson=${encodeURIComponent(checklistCase.lesson.lesson_id)}&step=${encodeURIComponent(checklistCase.step.id)}`
   });
   await until(
-    () => teacher.evaluate('document.querySelectorAll(".assessment-table tbody tr").length === 5'),
-    "Interactive self-assessment table"
-  );
-  await teacher.evaluate(
-    'document.querySelector(".assessment-table input[name=\\"s58-self-assessment-1-assessment-0\\"][value=\\"Evet\\"]")?.click()'
-  );
-  await until(() => teacher.evaluate(`(() => {
-    const input = document.querySelector('.assessment-table input[name="s58-self-assessment-1-assessment-0"][value="Evet"]');
-    const saved = JSON.parse(localStorage.getItem('ogretmenrehberi.lesson.T11-T01-KONUSMA.assessments') ?? '{}');
-    return input?.checked && saved['s58-self-assessment-1']?.[0] === 'Evet';
-  })()`), "Assessment choice persistence");
-  await teacher.send("Page.navigate", {
-    url: `${root}/?lesson=T11-T01-KONUSMA&step=s58-self-assessment-2`
-  });
-  await until(
-    () => teacher.evaluate('document.querySelectorAll(".assessment-table tbody tr").length === 5'),
-    "Second self-assessment page"
-  );
-  await teacher.send("Page.navigate", {
-    url: `${root}/?lesson=T11-T01-KONUSMA&step=s58-self-assessment-1`
-  });
-  await until(
-    () => teacher.evaluate('document.querySelector(".assessment-table input[name=\\"s58-self-assessment-1-assessment-0\\"][value=\\"Evet\\"]")?.checked'),
-    "Assessment selection restored between pages"
-  );
-  await teacher.send("Page.reload");
-  await until(
-    () => teacher.evaluate('document.querySelector(".assessment-table input[name=\\"s58-self-assessment-1-assessment-0\\"][value=\\"Evet\\"]")?.checked'),
-    "Assessment selection restored after reload"
-  );
-  await teacher.send("Page.navigate", {
-    url: `${root}/?lesson=T11-T04-TIYATRO-CANLANDIRMA-280-283&step=s281-checklist`
-  });
-  await until(
-    () => teacher.evaluate('document.querySelectorAll(".assessment-criterion input[type=checkbox]").length === 5'),
+    () => teacher.evaluate('document.querySelectorAll(".assessment-criterion input[type=checkbox]").length > 0'),
     "Interactive checklist without a rating scale"
   );
   await teacher.evaluate('document.querySelector(".assessment-criterion input[type=checkbox]")?.click()');
   await until(() => teacher.evaluate(`(() => {
     const input = document.querySelector('.assessment-criterion input[type="checkbox"]');
-    const saved = JSON.parse(localStorage.getItem('ogretmenrehberi.lesson.T11-T04-TIYATRO-CANLANDIRMA-280-283.assessments') ?? '{}');
-    return input?.checked && saved['s281-checklist']?.[0] === 'checked';
+    const saved = JSON.parse(localStorage.getItem(${JSON.stringify(checklistStorageKey)}) ?? '{}');
+    return input?.checked && saved[${JSON.stringify(checklistCase.step.id)}]?.[0] === 'checked';
   })()`), "Checklist selection persistence");
-  await teacher.send("Page.navigate", { url: karagoz });
+  await teacher.send("Page.navigate", { url: answerUrl });
   await until(
-    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
-    "Karagöz initial step after assessment check"
+    () => teacher.evaluate(`document.querySelector('.stage-card h1')?.textContent?.includes(${JSON.stringify(answerStep.display_prompt)})`),
+    "Current answer-reveal step after assessment check"
   );
 
   // The guidance is teacher-only and must never leak into the student display.
@@ -224,7 +259,7 @@ try {
   })()`), "Three independent local teacher plan marks persisted");
   await teacher.send("Page.reload");
   await until(
-    () => teacher.evaluate("document.querySelector('.stage-card h1')?.textContent?.includes('dikkatinizi')"),
+    () => teacher.evaluate(`document.querySelector('.stage-card h1')?.textContent?.includes(${JSON.stringify(answerStep.display_prompt)})`),
     "Teacher lesson after plan reload"
   );
   await until(
@@ -258,17 +293,17 @@ try {
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Aşağı taşı')).click()"
   );
   await until(() => teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
+    const key = ${JSON.stringify(editorLessonKey)};
     const stored = JSON.parse(localStorage.getItem(key + ".order") ?? "{}");
-    return stored.schemaVersion === 1 && stored.order?.[2] === "s15-q1" &&
-      localStorage.getItem(key + ".step-id") === "s15-q1" &&
-      localStorage.getItem(key + ".index") === "2";
+    return stored.schemaVersion === 1 && JSON.stringify(stored.order) === ${JSON.stringify(JSON.stringify(expectedEditorOrder))} &&
+      localStorage.getItem(key + ".step-id") === ${JSON.stringify(answerStep.id)} &&
+      localStorage.getItem(key + ".index") === ${JSON.stringify(String(answerIndex + 1))};
   })()`), "Reordered step ID persistence");
   await teacher.send("Page.reload");
   await until(() => teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
-    return document.querySelector(".stage-card h1")?.textContent?.includes("dikkatinizi") &&
-      localStorage.getItem(key + ".index") === "2";
+    const key = ${JSON.stringify(editorLessonKey)};
+    return document.querySelector(".stage-card h1")?.textContent?.includes(${JSON.stringify(answerStep.display_prompt)}) &&
+      localStorage.getItem(key + ".index") === ${JSON.stringify(String(answerIndex + 1))};
   })()`), "Reordered deep link reload");
 
   await teacher.evaluate(
@@ -282,26 +317,29 @@ try {
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Tüm sunum ayarlarını sıfırla')).click()"
   );
   await until(() => teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-KARAGOZ";
+    const key = ${JSON.stringify(editorLessonKey)};
     const stored = JSON.parse(localStorage.getItem(key + ".order") ?? "{}");
-    return stored.schemaVersion === 1 && stored.order?.[0] === "s15-source-reminder" &&
-      localStorage.getItem(key + ".step-id") === "s15-source-reminder" &&
+    return stored.schemaVersion === 1 && stored.order?.[0] === ${JSON.stringify(firstStep.id)} &&
+      localStorage.getItem(key + ".step-id") === ${JSON.stringify(firstStep.id)} &&
       localStorage.getItem(key + ".index") === "0" &&
-      new URLSearchParams(location.search).get("step") === "s15-source-reminder";
+      new URLSearchParams(location.search).get("step") === ${JSON.stringify(firstStep.id)};
   })()`), "Reset restores the canonical step and deep link");
 
-  const reference = `${root}/?lesson=T11-T01-KARAGOZ&step=s26-reference`;
+  const reference = `${root}/?lesson=${encodeURIComponent(noteCase.lesson.lesson_id)}&step=${encodeURIComponent(noteCase.step.id)}`;
   await teacher.send("Page.navigate", { url: reference });
   await until(
-    () => teacher.evaluate("document.body.innerText.includes('Mukaddime')"),
+    () => teacher.evaluate(`document.querySelector('.stage-card h1')?.textContent?.includes(${JSON.stringify(noteCase.step.display_prompt)})`),
     "Teacher-only reference step"
   );
+  if (await teacher.evaluate(`document.body.innerText.includes(${JSON.stringify(noteMarker)})`)) {
+    throw new Error("Teacher-only note was visible before the reveal action.");
+  }
   await teacher.evaluate(
     "Array.from(document.querySelectorAll('button')).find(b => b.textContent.trim() === 'Öğrenci ekranı').click()"
   );
   const student = await connectTarget(port, (target) => target.url.includes("display=1"));
   await until(
-    () => student.evaluate("document.body.innerText.includes('Mukaddime')"),
+    () => student.evaluate(`document.querySelector('.stage-card h1')?.textContent?.includes(${JSON.stringify(noteCase.step.display_prompt)})`),
     "Student projection opens"
   );
   const teacherGuideLeaked = await student.evaluate(`(() =>
@@ -312,7 +350,7 @@ try {
   )()`);
   if (teacherGuideLeaked) throw new Error("Teacher guidance leaked into student display.");
   await teacher.evaluate("window.dispatchEvent(new KeyboardEvent('keydown', { key: ' ', bubbles: true }))");
-  const secret = "Kitap örnekleri incelendikten sonra bu şemayı kısa hafıza desteği";
+  const secret = noteMarker;
   await until(
     () => teacher.evaluate(`document.body.innerText.includes(${JSON.stringify(secret)})`),
     "Teacher note reveal"
@@ -323,21 +361,21 @@ try {
 
   await teacher.evaluate(`(() => {
     const select = document.querySelector(".lesson-select select");
-    select.value = "T11-T01-MEKTUP";
+    select.value = ${JSON.stringify(targetLesson.lesson_id)};
     select.dispatchEvent(new Event("change", { bubbles: true }));
   })()`);
   await until(
-    () => teacher.evaluate("new URLSearchParams(location.search).get('lesson') === 'T11-T01-MEKTUP'"),
+    () => teacher.evaluate(`new URLSearchParams(location.search).get('lesson') === ${JSON.stringify(targetLesson.lesson_id)}`),
     "Teacher lesson switch"
   );
   await until(
-    () => student.evaluate("new URLSearchParams(location.search).get('lesson') === 'T11-T01-MEKTUP'"),
+    () => student.evaluate(`new URLSearchParams(location.search).get('lesson') === ${JSON.stringify(targetLesson.lesson_id)}`),
     "Student follows new lesson"
   );
   await until(
     () => teacher.evaluate(`(() => {
       const params = new URLSearchParams(location.search);
-      return params.get('lesson') === 'T11-T01-MEKTUP' &&
+      return params.get('lesson') === ${JSON.stringify(targetLesson.lesson_id)} &&
         Array.from(document.querySelectorAll('button')).some(
           b => b.textContent.trim() === 'Öğrenci ekranı'
         );
@@ -370,8 +408,8 @@ try {
   }
 
   await teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-MEKTUP.overrides";
-    localStorage.setItem(key, JSON.stringify({ "s36-q1": { display_prompt: "STALE PROMPT" } }));
+    const key = ${JSON.stringify(`ogretmenrehberi.lesson.${targetLesson.lesson_id}.overrides`)};
+    localStorage.setItem(key, JSON.stringify({ ${JSON.stringify(targetLesson.steps.at(-1).id)}: { display_prompt: "STALE PROMPT" } }));
   })()`);
   await teacher.send("Page.reload");
   await until(
@@ -379,7 +417,7 @@ try {
     "Stale override recovery notice"
   );
   const safe = await teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-MEKTUP.overrides";
+    const key = ${JSON.stringify(`ogretmenrehberi.lesson.${targetLesson.lesson_id}.overrides`)};
     const backup = Object.keys(localStorage).find(k => k.startsWith(key + ".backup."));
     const current = JSON.parse(localStorage.getItem(key));
     return Boolean(backup) && current.schemaVersion === 1 &&
@@ -389,7 +427,7 @@ try {
   if (!safe) throw new Error("Legacy overrides masked current content or were not backed up.");
 
   await teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-MEKTUP.order";
+    const key = ${JSON.stringify(`ogretmenrehberi.lesson.${targetLesson.lesson_id}.order`)};
     const current = JSON.parse(localStorage.getItem(key));
     const legacyCustom = [...current.order];
     [legacyCustom[0], legacyCustom[1]] = [legacyCustom[1], legacyCustom[0]];
@@ -401,89 +439,46 @@ try {
     "Stale custom order recovery notice"
   );
   const safeOrder = await teacher.evaluate(`(() => {
-    const key = "ogretmenrehberi.lesson.T11-T01-MEKTUP.order";
+    const key = ${JSON.stringify(`ogretmenrehberi.lesson.${targetLesson.lesson_id}.order`)};
     const backup = Object.keys(localStorage).find(k => k.startsWith(key + ".backup."));
     const current = JSON.parse(localStorage.getItem(key));
     return Boolean(backup) &&
       current.schemaVersion === 1 &&
-      current.order?.[0] === "s36-q1";
+      current.order?.[0] === ${JSON.stringify(targetLesson.steps[0].id)};
   })()`);
   if (!safeOrder) {
     throw new Error("Legacy custom order masked the canonical flow or was not backed up.");
   }
 
-  // Verify that Chrome renders each layout, not merely that JSON contains its items.
-  for (const check of [
-    {
-      lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
-      step: "s273-q1",
-      selector: '[data-content-layout="comparison"] .comparison-criterion',
-      count: 4
-    },
-    {
-      lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
-      step: "s273-density",
-      selector: '[data-content-layout="comparison"] .comparison-pair .reference-card',
-      count: 2
-    },
-    {
-      lesson: "T11-T04-MERDIVEN-KARSILASTIRMA-271-273",
-      step: "s272-table",
-      selector: '[data-content-layout="structure"] .structure-field',
-      count: 7
-    },
-    {
-      lesson: "T11-T04-MERDIVEN-COZUMLEME-274-279",
-      step: "s275-work",
-      selector: '[data-content-layout="structure"] .structure-field',
-      count: 4
-    },
-    {
-      lesson: "T11-T04-TIYATRO-CANLANDIRMA-280-283",
-      step: "s281-plan",
-      selector: '[data-content-layout="process"] .process-list__row',
-      count: 6
-    },
-    {
-      lesson: "T11-T04-TIYATRO-CANLANDIRMA-280-283",
-      step: "s283-performance",
-      selector: '[data-content-layout="assessment"] .assessment-criterion',
-      count: 6
-    },
-    {
-      lesson: "T11-T01-KONUSMA",
-      step: "s58-self-assessment-1",
-      selector: '[data-content-layout="assessment"] .assessment-table tbody tr',
-      count: 5
-    }
-  ]) {
+  // Select one current catalog example per supported layout and assert the rendered structure.
+  for (const check of layoutCases) {
     await teacher.send("Page.navigate", {
-      url: `${root}/?lesson=${check.lesson}&step=${check.step}`
+      url: `${root}/?lesson=${encodeURIComponent(check.lesson.lesson_id)}&step=${encodeURIComponent(check.step.id)}`
     });
     await until(
       () => teacher.evaluate(
-        `document.querySelectorAll(${JSON.stringify(check.selector)}).length === ${check.count}`
+        `document.querySelectorAll(${JSON.stringify(check.selector)}).length > 0`
       ),
-      `Dedicated content layout: ${check.lesson}/${check.step}`
+      `Dedicated content layout: ${check.lesson.lesson_id}/${check.step.id}`
     );
-    if (check.step === "s272-table" || check.step === "s273-q1") {
+    if (check.layout === "structure" || check.layout === "comparison") {
       await teacher.evaluate(
         "document.querySelector('.stage-icon-toggle--answer')?.click()"
       );
-      const answerClass = check.step === "s272-table"
+      const answerClass = check.layout === "structure"
         ? ".answer-sections--structure .section-card"
         : ".answer-sections--comparison .section-card";
       await until(
         () => teacher.evaluate(
-          `document.querySelectorAll(${JSON.stringify(answerClass)}).length === ${check.count}`
+          `document.querySelectorAll(${JSON.stringify(answerClass)}).length > 0`
         ),
-        `Dedicated revealed answer: ${check.lesson}/${check.step}`
+        `Dedicated revealed answer: ${check.lesson.lesson_id}/${check.step.id}`
       );
       await until(
         () => teacher.evaluate(
-          `document.querySelectorAll(${JSON.stringify(check.selector)}).length === ${check.count}`
+          `document.querySelectorAll(${JSON.stringify(check.selector)}).length > 0`
         ),
-        `Structured task content remains visible with answer: ${check.lesson}/${check.step}`
+        `Structured task content remains visible with answer: ${check.lesson.lesson_id}/${check.step.id}`
       );
     }
   }

@@ -6,6 +6,15 @@ import {
   resolveWebPresentation as resolveWebPresentationMetadata,
   validateWebPresentationIndex
 } from "./web-presentation.mjs";
+import {
+  validateAnswerBankEntry,
+  validateAnswerBankIndex,
+  validateAnswerBankPart,
+  validateFlowStepReferences,
+  validatePresentationFlowSchema,
+  validateSourceIndex,
+  readPresentationJson
+} from "./presentation-content-validation.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
@@ -20,10 +29,6 @@ const presentationRoot = path.join(
   "data/grade-11/presentation"
 );
 const outputPath = path.join(appRoot, "src/generated/lessons.json");
-
-function readJson(filePath) {
-  return JSON.parse(fs.readFileSync(filePath, "utf8"));
-}
 
 function fail(message) {
   throw new Error(`Lesson data build failed: ${message}`);
@@ -70,13 +75,29 @@ function loadThemeData(themeCode) {
     fail(`Missing canonical teacher-book data for theme ${themeNumber}`);
   }
 
-  const sourceIndex = readJson(sourceIndexPath);
-  const answerIndex = readJson(answerIndexPath);
+  const sourceIndex = readPresentationJson(sourceIndexPath);
+  const answerIndex = readPresentationJson(answerIndexPath);
+  validateSourceIndex(sourceIndex, { filePath: sourceIndexPath, themeNumber });
+  validateAnswerBankIndex(answerIndex, { filePath: answerIndexPath, themeNumber });
   const answers = [];
+  const answerOrigins = new Map();
 
   for (const part of answerIndex.parts ?? []) {
-    const payload = readJson(path.join(themeBase, part.path));
-    answers.push(...(payload.entries ?? []));
+    const partPath = path.join(themeBase, part.path);
+    const payload = readPresentationJson(partPath);
+    validateAnswerBankPart(payload, { filePath: partPath, themeNumber, themeTitle: answerIndex.theme_title });
+    if (payload.entries.length !== part.entries) {
+      throw new Error(`[presentation-data] ${path.relative(repoRoot, partPath)} :: entries: index declares ${part.entries}, file contains ${payload.entries.length}`);
+    }
+    for (const [entryIndex, entry] of payload.entries.entries()) {
+      validateAnswerBankEntry(entry, { filePath: partPath, index: entryIndex, themeNumber });
+      const priorPath = answerOrigins.get(entry.question_id);
+      if (priorPath) {
+        throw new Error(`[presentation-data] ${path.relative(repoRoot, partPath)} :: entries[${entryIndex}].question_id: duplicate ${entry.question_id}; already declared in ${path.relative(repoRoot, priorPath)}`);
+      }
+      answerOrigins.set(entry.question_id, partPath);
+    }
+    answers.push(...payload.entries);
   }
 
   const sourceById = new Map(
@@ -91,7 +112,7 @@ function loadThemeData(themeCode) {
     "web-presentation.json"
   );
   const webPresentation = themeNumber >= 1 && themeNumber <= 4 && fs.existsSync(webPresentationPath)
-    ? readJson(webPresentationPath)
+    ? readPresentationJson(webPresentationPath)
     : null;
 
   if (sourceById.size !== sourceIndex.records.length) {
@@ -100,15 +121,25 @@ function loadThemeData(themeCode) {
   if (answerById.size !== answers.length) {
     fail(`Duplicate question_id detected in theme ${themeNumber}`);
   }
-  if (
-    Number(answerIndex.coverage?.entry_count) !== answers.length
-  ) {
-    fail(
-      `Answer index count mismatch in theme ${themeNumber}: ` +
-      `${answerIndex.coverage?.entry_count} != ${answers.length}`
-    );
+  if (sourceIndex.counts.records !== sourceIndex.records.length) {
+    throw new Error(`[presentation-data] ${path.relative(repoRoot, sourceIndexPath)} :: counts.records: index declares ${sourceIndex.counts.records}, file contains ${sourceIndex.records.length}`);
   }
-
+  if (sourceIndex.counts.linked_answers !== undefined && sourceIndex.counts.linked_answers !== answers.length) {
+    throw new Error(`[presentation-data] ${path.relative(repoRoot, sourceIndexPath)} :: counts.linked_answers: index declares ${sourceIndex.counts.linked_answers}, answer bank contains ${answers.length}`);
+  }
+  if (sourceIndex.counts.verified_records !== undefined) {
+    const verifiedRecords = sourceIndex.records.filter((record) => record.source_status === "VERIFIED").length;
+    if (sourceIndex.counts.verified_records !== verifiedRecords) {
+      throw new Error(`[presentation-data] ${path.relative(repoRoot, sourceIndexPath)} :: counts.verified_records: index declares ${sourceIndex.counts.verified_records}, found ${verifiedRecords} verified records`);
+    }
+  }
+  if (answerIndex.coverage.entry_count !== answers.length) {
+    throw new Error(`[presentation-data] ${path.relative(repoRoot, answerIndexPath)} :: coverage.entry_count: index declares ${answerIndex.coverage.entry_count}, answer bank contains ${answers.length}`);
+  }
+  const sourceLimitedEntries = answers.filter((entry) => entry.entry_type === "source_limited").length;
+  if (answerIndex.coverage.source_limited_entries !== sourceLimitedEntries) {
+    throw new Error(`[presentation-data] ${path.relative(repoRoot, answerIndexPath)} :: coverage.source_limited_entries: index declares ${answerIndex.coverage.source_limited_entries}, answer bank contains ${sourceLimitedEntries}`);
+  }
   if (webPresentation) {
     try {
       validateWebPresentationIndex(webPresentation, {
@@ -279,8 +310,10 @@ function resolveDisplayPrompt(step, source, answer, answerStepCountBySource) {
 }
 
 function buildLesson(flowPath) {
-  const flow = readJson(flowPath);
+  const flow = readPresentationJson(flowPath);
   const flowName = path.basename(flowPath);
+  const themeNumberFromName = Number(/theme-(\d+)/.exec(flowPath)?.[1]);
+  validatePresentationFlowSchema(flow, { filePath: flowPath, themeNumber: themeNumberFromName });
   const lessonSlug =
     flow.lesson_slug ??
     flowName.replace(/-flow\.json$/i, "").replace(/\.json$/i, "");
@@ -334,7 +367,7 @@ function buildLesson(flowPath) {
     );
   }
 
-  const steps = (flow.steps ?? []).map((step) => {
+  const steps = (flow.steps ?? []).map((step, stepIndex) => {
     for (const image of step.content?.images ?? []) {
       if (!/^assets\/[A-Za-z0-9._-]+$/.test(image.src ?? "") || !image.alt?.trim()) {
         fail(`Malformed presentation image in ${flowName}/${step.id}`);
@@ -353,19 +386,16 @@ function buildLesson(flowPath) {
     }
     seenStepIds.add(step.id);
 
-    const source = sourceById.get(step.source_record_id);
-    if (!source) {
-      fail(`Unknown source_record_id in ${flow.lesson_id}: ${step.source_record_id}`);
-    }
+    const { source, answer: linkedAnswer } = validateFlowStepReferences(step, {
+      sourceById,
+      answerById,
+      filePath: flowPath,
+      stepIndex
+    });
     seenSourceIds.add(step.source_record_id);
 
-    let answer = null;
+    let answer = linkedAnswer;
     if (step.answer_id) {
-      answer = answerById.get(step.answer_id);
-      if (!answer) {
-        fail(`Unknown answer_id in ${flow.lesson_id}: ${step.answer_id}`);
-      }
-
       if (answer.dictionary_terms !== undefined) {
         if (!Array.isArray(answer.dictionary_terms)) {
           fail(`dictionary_terms must be an array for ${answer.question_id}`);
@@ -399,17 +429,6 @@ function buildLesson(flowPath) {
       seenAnswerIds.set(step.answer_id, count);
       if (count > 1) {
         fail(`Answer entry used more than once in ${flow.lesson_id}: ${step.answer_id}`);
-      }
-
-      const sourcePages = pageBounds(source.printed_page_range);
-      if (
-        answer.printed_page < sourcePages.from ||
-        answer.printed_page > sourcePages.to
-      ) {
-        fail(
-          `Page mismatch in ${flow.lesson_id}: ${step.answer_id} is s.${answer.printed_page} but ` +
-          `${step.source_record_id} covers ${source.printed_page_range}`
-        );
       }
 
       if (

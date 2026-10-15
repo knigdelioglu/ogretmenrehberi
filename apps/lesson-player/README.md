@@ -153,7 +153,7 @@ Bu düzenleme kanonik `answer-bank` içeriğini değiştirmez; yalnız presentat
 
 Karşılaştırmalar ölçüt ve ikili kart düzeniyle, yapılandırılmış çalışmalar alan kutularıyla, değerlendirmeler ölçüt listesiyle, süreç görevleri numaralı adımlarla gösterilir. İçeriğin başlık ve metinleri ile kaynak/cevap bağlantıları değiştirilmez; dar ekranda karşılaştırma sütunları alt alta iner. Cevap açıldığında da türün görünüm dili korunur.
 
-`npm run test:data` dört tema için `scripts/lesson-data/theme-*.mjs` dosyalarını çalıştırır. `npm run test:runtime` export, öğretmen notu ve yerel düzenleme sözleşmelerini denetler. `npm run test:browser` çalışan Vite preview ve `CHROME` yolu gerektirir; gerçek tarayıcıda adım sırası, projeksiyon ve görev görünümü regresyonlarını sınar. `npm run build`, veri testini, runtime testini, TypeScript ve Vite production build'i çalıştırır.
+`npm run test:data` kanonik kaynak, cevap bankası, akış şemaları ve ID ilişkilerini ortak doğrulayıcıyla denetler; ayrıca içerik değişikliklerinden bağımsız hata enjeksiyonu ve cevap görünürlüğü sözleşmelerini çalıştırır. Yeni soru/açıklama metinleri sabit test metinlerine bağlanmaz. `npm run test:runtime` dışa aktarma, öğretmen notu ve yerel düzenleme sözleşmelerini denetler. `npm run test:browser` çalışan Vite preview ve `CHROME` yolu gerektirir; gerçek tarayıcıda adım sırası, cevap açma ve görev görünümü regresyonlarını sınar. `npm run build`, veri testini, runtime testini, TypeScript ve Vite production build'i çalıştırır.
 
 ## Kaynak sınırlı içerik
 

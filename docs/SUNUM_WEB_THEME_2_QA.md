@@ -1,5 +1,7 @@
 # Sunum Web — Tema 2 QA
 
+> Historical QA snapshot. Theme-specific content assertions were consolidated into `apps/sunum-web/scripts/test-presentation-integrity.mjs`; the counts and old command output below describe the snapshot at the time of this report, not current test expectations.
+
 ## Kapsam ve kaynak
 
 Tema 2'nin basılı 84–159. sayfaları PDF 85–160. sayfalarına karşılık geliyor. Kanonik kaynak, kitap metninin 76 yerel sayfa JSON'u ile öğretmen kitabının kaynak/cevap indeksleri ve cevap bankasıdır.

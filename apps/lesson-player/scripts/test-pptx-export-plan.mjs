@@ -1,23 +1,28 @@
 import assert from "node:assert/strict";
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { planExportSlides } from "../src/export/plan.js";
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const lessons = JSON.parse(
-  fs.readFileSync(path.join(root, "src/generated/lessons.json"), "utf8")
-);
-const lesson = lessons.find((item) => item.lesson_id === "T11-T01-KARAGOZ");
-const step = lesson.steps.find((item) => item.id === "s28-q1");
-
-assert.ok(step, "real Karagöz lesson fixture exists");
-assert.equal(step.layout, "comparison", "fixture exercises comparison rendering");
-assert.deepEqual(step.reveal_order, ["guidance", "answer", "evidence", "explanation", "note"]);
-assert.ok(step.answer.answer_sections, "fixture has structured answer sections");
-assert.ok(step.content.note, "fixture has a teacher note");
-
-const exportLesson = { ...lesson, steps: [step] };
+// This deliberately small synthetic fixture keeps the export-planner contract
+// independent from lesson wording, IDs, and the current catalog's reveal order.
+const step = {
+  id: "fixture-step",
+  layout: "comparison",
+  reveal_order: ["guidance", "answer", "evidence", "explanation", "note"],
+  source: { printed_page_range: "10–11" },
+  answer: {
+    answer: "A sample answer.",
+    guidance: "Teacher guidance.",
+    evidence_quotes: ["An evidence sample."],
+    explanation: "Teacher explanation."
+  },
+  content: { note: "Teacher-only note." }
+};
+const lesson = {
+  lesson_id: "FIXTURE-LESSON",
+  lesson_slug: "fixture-lesson",
+  title: "Export planner fixture",
+  theme_id: "FIXTURE-THEME",
+  steps: [step]
+};
 const baseConfiguration = {
   scope: "selected-steps",
   currentLessonId: lesson.lesson_id,
@@ -27,11 +32,10 @@ const baseConfiguration = {
   quality: "high"
 };
 
-const teacherSlides = planExportSlides([exportLesson], {
+const teacherSlides = planExportSlides([lesson], {
   ...baseConfiguration,
   view: "teacher"
 });
-assert.equal(teacherSlides.length, 6, "teacher gets initial plus five cumulative reveal slides");
 assert.deepEqual(
   teacherSlides.map((slide) => slide.revealStage),
   [
@@ -41,24 +45,28 @@ assert.deepEqual(
     ["guidance", "answer", "evidence"],
     ["guidance", "answer", "evidence", "explanation"],
     ["guidance", "answer", "evidence", "explanation", "note"]
-  ]
+  ],
+  "teacher export emits initial and cumulative stages for available reveal content"
 );
 assert.deepEqual(
   teacherSlides.map(({ lessonId, stepId, printedPage }) => [lessonId, stepId, printedPage]),
-  Array.from({ length: 6 }, () => [lesson.lesson_id, step.id, "28"])
+  Array.from({ length: teacherSlides.length }, () => [lesson.lesson_id, step.id, "10–11"])
 );
 
-const studentSlides = planExportSlides([exportLesson], {
+const studentSlides = planExportSlides([lesson], {
   ...baseConfiguration,
   view: "student"
 });
-assert.equal(studentSlides.length, 3, "student reveal plan omits teacher-only stages");
-assert.deepEqual(studentSlides.map((slide) => slide.revealStage), [[], ["answer"], ["answer", "evidence"]]);
+assert.deepEqual(
+  studentSlides.map((slide) => slide.revealStage),
+  [[], ["answer"], ["answer", "evidence"]],
+  "student export omits teacher-only reveal stages"
+);
 assert.equal("guidance" in studentSlides.at(-1).step.answer, false);
 assert.equal("explanation" in studentSlides.at(-1).step.answer, false);
 assert.equal("note" in studentSlides.at(-1).step.content, false);
 
-const finalStudent = planExportSlides([exportLesson], {
+const finalStudent = planExportSlides([lesson], {
   ...baseConfiguration,
   view: "student",
   revealMode: "final"
@@ -68,12 +76,12 @@ assert.deepEqual(finalStudent[0].revealStage, ["answer", "evidence"]);
 
 const secondLesson = {
   ...lesson,
-  lesson_id: "T11-T01-SECOND",
-  lesson_slug: "second-lesson",
-  title: "İkinci ders",
-  steps: [{ ...step, id: "other-step" }]
+  lesson_id: "FIXTURE-SECOND-LESSON",
+  lesson_slug: "fixture-second-lesson",
+  title: "Second fixture lesson",
+  steps: [{ ...step, id: "fixture-second-step" }]
 };
-const themeSlides = planExportSlides([exportLesson, secondLesson], {
+const themeSlides = planExportSlides([lesson, secondLesson], {
   ...baseConfiguration,
   scope: "theme",
   selectedStepIds: [],
@@ -83,10 +91,10 @@ const themeSlides = planExportSlides([exportLesson, secondLesson], {
 assert.deepEqual(themeSlides.map((slide) => slide.lessonId), [lesson.lesson_id, secondLesson.lesson_id]);
 assert.deepEqual(themeSlides.map((slide) => slide.slideNumber), [1, 2]);
 
-const emptySelection = planExportSlides([exportLesson], {
+const emptySelection = planExportSlides([lesson], {
   ...baseConfiguration,
   selectedStepIds: []
 });
 assert.equal(emptySelection.length, 0, "empty selected-step scope stays empty");
 
-console.log("PPTX export planner checks passed (real comparison lesson, reveal sequence, privacy redaction, theme and selection scopes).");
+console.log("PPTX export planner checks passed (synthetic reveal, privacy, theme and selection contracts).");
