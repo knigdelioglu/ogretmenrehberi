@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-      - "feat/**"
-      - "fix/**"
-      - "codex/**"
     paths:
       - "apps/sunum-web/**"
       - "apps/lesson-player/scripts/**"
