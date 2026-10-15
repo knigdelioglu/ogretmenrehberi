@@ -1,5 +1,8 @@
 # Grade 11 QR source worklist
 
+**İçerik sahibinin inceleme beyanı (15 Ekim 2026):** Envanterdeki 18 videonun ses ve görüntü içeriği kullanıcı tarafından incelenmiş ve doğrulanmış olarak bildirilmiştir. Bu beyan her kayıt için `content_review` alanında tutulur. **Teknik kanıt ayrıdır:** Depoda kelimesi kelimesine onaylı ses dökümü ve tüm dosyalar için EBA kaynak dosyasıyla kriptografik eşleşme bulunmadığından `spoken_audio_transcript` ve `mapping_status` değiştirilmemiştir. Kapsamı belirsiz yeni diyaloglar veya birebir sözler bu beyanla üretilmez.
+
+
 Bu liste EBA indirme/SHA kaydıyla doğrulanmış kaynakları izler. **Ders kitabının PDF bağlantı katmanından 18 video kullanım yerinin tamamının QR hedef kimliği ayrıca kesin olarak çıkarılmıştır.** Ayrıntılı tablo için [kitap QR bağlantı denetimi](qr-book-link-audit-2026-10-08.md). Ancak QR hedefinin kesinleşmesi, her Drive MP4'ünün aynı EBA indirmesi olduğunu kanıtlamaz. Kullanıcının Drive klasöründeki **18 MP4 dosyasının tamamının** geçici/dogrulanmış eşleştirmeleri ayrı dosyada tutulur: [qr-media-intake-2026-10-08.json](qr-media-intake-2026-10-08.json). 5 kaynak bu kayıtla SHA-256 düzeyinde eşleşmektedir.
 
 **Kanıt notu kapsamı (2026-10-08):** Basılı kitapta kullanılan 18 video bağlantısının **18'i** ayrı bir mevcut kaynak inceleme notuna bağlıdır. Bağlantıların varlığı `scripts/validate-qr-media-intake.mjs` testiyle doğrulanır. Notların kapsamı değişir: yalnız ekrandaki yazılar, kısmi görsel sahne incelemesi veya kullanıcının sahne gözlemine dayanan açıklamalar bulunabilir; **18 video için de tam ses transkripti doğrulanmamıştır**. MP4–EBA kriptografik kökeni ise hâlen yalnız **5/18** kayıt için kesinleşmiştir.

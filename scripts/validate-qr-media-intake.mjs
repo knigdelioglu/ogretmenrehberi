@@ -25,6 +25,16 @@ for (const r of intake.records) {
   assert.match(r.sha256, /^[0-9a-f]{64}$/);
   assert.ok(Number.isInteger(r.printed_page) && r.printed_page > 0);
   assert.ok(r.duration_seconds > 0);
+  // Content-owner attestation is a separate provenance dimension from an
+  // archived word-for-word transcript or independently matched EBA binary.
+  assert.equal(r.content_review?.status, "owner_confirmed",
+    `${r.file_name}: content owner review confirmation is missing`);
+  assert.deepEqual(r.content_review?.modalities, ["audio", "video"],
+    `${r.file_name}: owner review scope must include both audio and video`);
+  assert.equal(r.content_review?.basis, "content_owner_attestation",
+    `${r.file_name}: review provenance must be explicit`);
+  assert.match(r.content_review?.declaration_recorded_on ?? "", /^\d{4}-\d{2}-\d{2}$/,
+    `${r.file_name}: missing recorded review date`);
   assert.equal(r.spoken_audio_transcript, "not_done", "Never mark incomplete audio as transcribed");
   if (r.existing_source_id) {
     verified++;
@@ -240,7 +250,8 @@ for (const id of ["T2-P141-Q01", "T2-P141-Q02"]) {
   const entry = t2Part9.entries.find((candidate) => candidate.question_id === id);
   assert.equal(entry?.entry_type, "source_limited", `${id} cannot treat an untranscribed interview as verified speech`);
   assert.ok(entry.source_locator.includes("UNVERIFIED-19XU49MG.md"));
-  assert.ok(entry.answer.includes("transkript"));
+  assert.match(`${entry.guidance ?? ""} ${entry.explanation ?? ""}`, /transkript|ses dökümü/iu,
+    `${id}: teacher-facing provenance must document the missing transcript`);
 }
 for (const forbidden of ["Tengri Dağları", "Buhara", "Tebriz", "Kerkük", "Bağdat", "Mehmet Oktay Ergani"]) {
   const unsupportedInterviewClaims = t2Part9.entries

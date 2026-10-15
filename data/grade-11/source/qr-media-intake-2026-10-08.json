@@ -35,7 +35,17 @@
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-E43890DFD82A.md",
-      "media_content_observation": "sampled_stills_and_opening_text_without_audio_verification"
+      "media_content_observation": "sampled_stills_and_opening_text_without_audio_verification",
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49K2.mp4",
@@ -59,7 +69,17 @@
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
       },
-      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md"
+      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md",
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU3SUD.mp4",
@@ -86,7 +106,17 @@
       },
       "linked_question_ids": [
         "T1-P53-Q01"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LL.mp4",
@@ -110,7 +140,17 @@
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
       },
-      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md"
+      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU4CVR.mp4",
@@ -134,7 +174,17 @@
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
       },
-      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-BFB2729458DF.md"
+      "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-BFB2729458DF.md",
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "OGM2025TDE118312.mp4",
@@ -159,7 +209,17 @@
         "media_binary_identity": "sha256_matches_earlier_eba_verified_source"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-2952F505E3A7.md",
-      "media_content_observation": "sampled_stills_and_opening_text_without_audio_verification"
+      "media_content_observation": "sampled_stills_and_opening_text_without_audio_verification",
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LO.mp4",
@@ -191,7 +251,17 @@
         "T2-P88-Q03",
         "T2-P88-Q04",
         "T2-P88-Q05"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LT.mp4",
@@ -219,7 +289,17 @@
       "media_content_observation": "sampled_video_frames_only",
       "linked_question_ids": [
         "T2-P113-Q01"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LP.mp4",
@@ -249,7 +329,17 @@
         "T2-P129-Q01",
         "T2-P129-Q02",
         "T2-P129-Q03"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49JV.mp4",
@@ -284,7 +374,17 @@
         "T2-P144-MAP01",
         "T2-P145-PERF01",
         "T2-P147-Q01"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49MG.mp4",
@@ -313,7 +413,17 @@
       "linked_question_ids": [
         "T2-P141-Q01",
         "T2-P141-Q02"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49MB.mp4",
@@ -341,7 +451,17 @@
       "media_content_observation": "time_stamped_stills_not_full_video_or_audio_transcript",
       "linked_question_ids": [
         "T2-P159-Q08"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LV.mp4",
@@ -369,7 +489,17 @@
       "media_content_observation": "staged_play_visuals_only_audio_untranscribed",
       "linked_question_ids": [
         "T3-P220-COMP01"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU4GDV.mp4",
@@ -397,7 +527,17 @@
       "media_content_observation": "sampled_stills_only_audio_not_transcribed",
       "linked_question_ids": [
         "T4-P285-Q02"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LQ.mp4",
@@ -427,7 +567,17 @@
         "T4-P285-Q02",
         "T4-P286-Q03",
         "T4-P293-Q03"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49KB.mp4",
@@ -456,7 +606,17 @@
       "linked_question_ids": [
         "T4-P293-Q02",
         "T4-P293-Q03"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU3SW3.mp4",
@@ -483,7 +643,17 @@
       },
       "linked_question_ids": [
         "T4-P300-PERF01"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     },
     {
       "file_name": "19XU49LS.mp4",
@@ -512,7 +682,17 @@
       "linked_question_ids": [
         "T4-P307-Q13",
         "T4-P307-Q14"
-      ]
+      ],
+      "content_review": {
+        "status": "owner_confirmed",
+        "modalities": [
+          "audio",
+          "video"
+        ],
+        "basis": "content_owner_attestation",
+        "declaration_recorded_on": "2026-10-15",
+        "archival_note": "Review confirmation is not a transcript, verified quotation, or EBA binary identity check."
+      }
     }
   ],
   "known_conflicts": [
