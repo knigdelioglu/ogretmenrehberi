@@ -185,8 +185,11 @@ for (const lesson of lessons) {
 const findStep = (slug, id) => {
   const lesson = lessons.find((entry) => entry.lesson_slug === slug);
   const index = lesson?.steps.findIndex((step) => step.id === id) ?? -1;
-  assert.ok(index >= 0, `fixture exists: ${slug}/${id}`);
-  return { lesson, step: lesson.steps[index], slide: index + 1 };
+  assert.ok(index >= 0, `canonical fixture exists: ${slug}/${id}`);
+  const webLesson = builtCatalog.lessons.find((entry) => entry.slug === slug);
+  const webIndex = webLesson?.steps.findIndex((step) => step.id === id) ?? -1;
+  assert.ok(webIndex >= 0, `Web Sunum fixture exists: ${slug}/${id}`);
+  return { lesson, step: lesson.steps[index], webStep: webLesson.steps[webIndex], slide: webIndex + 1 };
 };
 let page;
 
@@ -493,7 +496,7 @@ async function previous() {
 async function openStep(slug, id) {
   const entry = findStep(slug, id);
   await page.send("Page.navigate", { url: `${root}/#/${entry.lesson.lesson_slug}/${entry.slide}` });
-  await until(async () => (await bodyText()).includes(entry.step.display_prompt), `open ${id}`);
+  await until(async () => (await bodyText()).includes(entry.webStep.prompt), `open ${id}`);
   await until(() => page.evaluate("Array.from(document.querySelectorAll('#canvas .content-images img')).every(image => image.complete && image.naturalWidth > 0)"), `images ${id}`);
   await waitForPromptFonts();
   return { ...entry, text: await bodyText() };
