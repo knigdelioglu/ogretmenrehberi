@@ -92,7 +92,7 @@ for (const step of mimarReading.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Mimar Sinan s.243–250 doğrulanmış kaynak: ${step.source.source_record_id}`);
 }
-assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 237 &&
+assert(theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.steps,0) === 244 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.source_records,0) === 143 &&
   theme4Lessons.reduce((sum,lesson)=>sum+lesson.coverage.answer_entries,0) === 164,
   "Tema 4 tamamı 14 ders / 237 ekran / 143 kaynak / 164 cevap olmalı.");
@@ -430,11 +430,11 @@ for (const step of theatreWorkshop.steps) {
 
 const anadoluListening = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-284-290");
 assert(anadoluListening && anadoluListening.printed_page_range === "284-290" &&
-  anadoluListening.coverage.steps === 22 && anadoluListening.coverage.source_records === 12 &&
+  anadoluListening.coverage.steps === 26 && anadoluListening.coverage.source_records === 12 &&
   anadoluListening.coverage.answer_entries === 20,
   "Anadolu İnsanı s.284–290 22 ekran / 12 kaynak / 20 cevap içermeli.");
 const anadoluById = new Map(anadoluListening.steps.map(step => [step.id, step]));
-assert(anadoluById.size === 22, "Anadolu İnsanı ekran kimlikleri benzersiz olmalı.");
+assert(anadoluById.size === 26, "Anadolu İnsanı ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s284-q1","T04-S0084","T4-P284-Q01"],
   ["s284-q2","T04-S0084","T4-P284-Q02"],
@@ -478,11 +478,11 @@ for (const step of anadoluListening.steps) {
 
 const anadoluAnalysis = lessons.find(lesson => lesson.lesson_id === "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297");
 assert(anadoluAnalysis && anadoluAnalysis.printed_page_range === "291-297" &&
-  anadoluAnalysis.coverage.steps === 24 && anadoluAnalysis.coverage.source_records === 21 &&
+  anadoluAnalysis.coverage.steps === 25 && anadoluAnalysis.coverage.source_records === 21 &&
   anadoluAnalysis.coverage.answer_entries === 23,
   "Anadolu İnsanı çözümleme s.291–297 24 ekran / 21 kaynak / 23 cevap içermeli.");
 const anadoluAnalysisById = new Map(anadoluAnalysis.steps.map(step => [step.id, step]));
-assert(anadoluAnalysisById.size === 24, "Anadolu İnsanı çözümleme ekran kimlikleri benzersiz olmalı.");
+assert(anadoluAnalysisById.size === 25, "Anadolu İnsanı çözümleme ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s291-q10","T04-S0096","T4-P291-Q10"],
   ["s291-q11","T04-S0097","T4-P291-Q11"],
@@ -529,11 +529,11 @@ for (const step of anadoluAnalysis.steps) {
 
 const posterWorkshop = lessons.find(lesson => lesson.lesson_id === "T11-T04-AFIS-ATOLYESI-298-302");
 assert(posterWorkshop && posterWorkshop.printed_page_range === "298-302" &&
-  posterWorkshop.coverage.steps === 20 && posterWorkshop.coverage.source_records === 13 &&
+  posterWorkshop.coverage.steps === 21 && posterWorkshop.coverage.source_records === 13 &&
   posterWorkshop.coverage.answer_entries === 16,
   "Afiş atölyesi s.298–302 20 ekran / 13 kaynak / 16 cevap içermeli.");
 const posterById = new Map(posterWorkshop.steps.map(step => [step.id, step]));
-assert(posterById.size === 20, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
+assert(posterById.size === 21, "Afiş atölyesi ekran kimlikleri benzersiz olmalı.");
 for (const [id, sourceId, answerId] of [
   ["s299-q1","T04-S0118","T4-P299-Q01"],
   ["s299-q2","T04-S0119","T4-P299-Q02"],
@@ -578,11 +578,11 @@ for (const step of posterWorkshop.steps) {
 
 const theme4Assessment = lessons.find(lesson => lesson.lesson_id === "T11-T04-DEGERLENDIRME-303-307");
 assert(theme4Assessment && theme4Assessment.printed_page_range === "303-307" &&
-  theme4Assessment.coverage.steps === 19 && theme4Assessment.coverage.source_records === 14 &&
+  theme4Assessment.coverage.steps === 20 && theme4Assessment.coverage.source_records === 14 &&
   theme4Assessment.coverage.answer_entries === 14,
   "Tema 4 değerlendirme s.303–307 19 ekran / 14 kaynak / 14 cevap içermeli.");
 const theme4AssessmentById = new Map(theme4Assessment.steps.map(step => [step.id, step]));
-assert(theme4AssessmentById.size === 19, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
+assert(theme4AssessmentById.size === 20, "Tema 4 değerlendirme ekran kimlikleri benzersiz olmalı.");
 const theme4AssessmentOrderedIds = theme4Assessment.steps.map((step) => step.id);
 assert(
   theme4AssessmentById.get("s307-aidiyet-media-reminder")?.layout === "process" &&

@@ -11,10 +11,10 @@ assert(
   "2. Tema giriş bloğu kitapta s.84–88 aralığını kapsamalı."
 );
 assert(
-  theme2Intro.coverage.steps === 15 &&
+  theme2Intro.coverage.steps === 16 &&
     theme2Intro.coverage.source_records === 14 &&
     theme2Intro.coverage.answer_entries === 12,
-  "2. Tema giriş bloğu 15 adım / 14 source / 12 answer olmalı."
+  "2. Tema giriş bloğu 16 adım / 14 source / 12 answer olmalı."
 );
 
 const theme2IntroById = new Map(
@@ -188,7 +188,7 @@ assert(
 );
 
 assert(
-  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 203 &&
+  theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.steps, 0) === 208 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.source_records, 0) === 159 &&
     theme2Lessons.reduce((sum, lesson) => sum + lesson.coverage.answer_entries, 0) === 177,
   "Tema 2 tam kapsam 203 adım / 159 source / 177 answer olmalı."
@@ -318,7 +318,7 @@ assert(
   "2. Tema Konuşma doğal bloğu s.129–135 aralığını kapsamalı."
 );
 assert(
-  speaking2.coverage.steps === 24 &&
+  speaking2.coverage.steps === 25 &&
     speaking2.coverage.source_records === 13 &&
     speaking2.coverage.answer_entries === 18,
   "2. Tema Konuşma 24 adım / 13 source / 18 answer olmalı."
@@ -384,7 +384,7 @@ assert(
   "Âşık Atışması doğal bloğu s.136–147 aralığını kapsamalı."
 );
 assert(
-  asik.coverage.steps === 27 &&
+  asik.coverage.steps === 29 &&
     asik.coverage.source_records === 22 &&
     asik.coverage.answer_entries === 25,
   "Âşık Atışması 27 adım / 22 source / 25 answer olmalı."
@@ -506,7 +506,7 @@ const theme2Assessment = byLessonId.get("T11-T02-DEGERLENDIRME");
 assert(theme2Assessment, "Tema 2 değerlendirme dersi bulunamadı.");
 assert(
   theme2Assessment.printed_page_range === "155-159" &&
-    theme2Assessment.coverage.steps === 10 &&
+    theme2Assessment.coverage.steps === 11 &&
     theme2Assessment.coverage.source_records === 9 &&
     theme2Assessment.coverage.answer_entries === 9,
   "Tema 2 değerlendirme 10 adım / 9 source / 9 answer olmalı."
