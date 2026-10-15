@@ -6,7 +6,7 @@
   "entries": [
     {
       "question_id": "T1-P64-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "performance_support",
       "printed_page": 64,
       "question_no": "1",
       "prompt_summary": "Değişen İletişim Araçlarının Hayatımızdaki Yeri için dinleme/izleme amacı belirleme",
@@ -17,7 +17,7 @@
         "Örnek amaç 3 — Kişisel bağ kurma": "Metindeki iletişim durumlarını kendi günlük yaşamındaki iletişim alışkanlıklarıyla karşılaştırmak."
       },
       "guidance": "Bunları tek doğru amaç listesi olarak sunmayın. Öğrenci, izleme öncesinde başlık ve bağlama uygun bir amaç seçsin ve bunu bir cümleyle gerekçelendirsin. Video içinde hangi tarihsel araçların, görüşlerin veya kavramların geçeceğini önceden kesinleştirmeyin.",
-      "source_locator": "basılı s.64 / PDF s.65 — Dinleme / İzlemeyi Yönetebilme — QR-EBA-29BF4F293D53; 19XU49LL.mp4, kullanıcı tarafından sağlanan içerik dökümü"
+      "source_locator": "basılı s.64 / PDF s.65 — Dinleme / İzlemeyi Yönetebilme — QR-EBA-29BF4F293D53; 19XU49LL.mp4"
     },
     {
       "question_id": "T1-P64-Q02",
@@ -111,18 +111,19 @@
     },
     {
       "question_id": "T1-P66-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 66,
       "question_no": "1",
       "prompt_summary": "Araştırma sonuçları ile dinlenen/izlenen metin arasında bağlantı kurma",
-      "answer": "63. sayfadaki araştırmanızdan bir bulgu seçin ve bunu 19XU49LL söyleşisindeki düşüncelerle karşılaştırın. Söyleşide iletişim; paylaşma, yeni düşünceler edinme ve medenileşmeyle ilişkilendirilir. Mektubun duygusal ve yeniden okunabilir yönleri, e-postanın sağlık, eğitim ve bürokraside sağladığı hız ve erişim kolaylıklarıyla birlikte ele alınır. İki dayanağın ortak ya da ayrılan yönünü açıklayın.",
+      "answer": "Doğrulanmış ekran kanıtlarından “İletişim, bir medenileşme hareketidir.” ve mektubun uzakları yakın etmesine ilişkin altyazı seçilebilir. Öğrenci, s.63 araştırmasındaki bir bulguyu bu görünür ifadelerle karşılaştırabilir. Görüşmenin geri kalanındaki sözlü düşünceler tam olarak çözümlenmediğinden bunları videoya atfetmeyin.",
       "answer_sections": {
         "Araştırma bulgusu": "Araştırmanızdan ilgili bir bulgu seçin ve kaynağını belirtin.",
         "Videodaki dayanak": "İletişimin paylaşma ve medenileşmeyle ilişkisi; mektubun duyguları taşıyıp tekrar okunabilmesi; e-postanın kurumlarda hız ve erişim kolaylığı sağlaması.",
         "Karşılaştırma ve sonuç": "Araştırma bulgusunun söyleşideki hangi düşünceyle örtüştüğünü ya da ayrıldığını ve karşılaştırmadan hangi sonuca ulaştığınızı açıklayın."
       },
-      "guidance": "Araştırma notundan bir bulgu seçtirin; ardından söyleşiden uygun bir düşünce veya örneği belirletin. Ortak ve ayrılan yönleri iki dayanakla gerekçelendirmelerini sağlayın.",
-      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü; yardımcı görsel zaman çizelgesi: basılı s.67 / 19XU4CVR.mp4"
+      "guidance": "Araştırma bulgusu ile zaman damgalı ekranda gerçekten görülen ifadeyi karşılaştırın; ses dökümü doğrulanmadığı için başka bir görüşü videonun sözü gibi sunmayın.",
+      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; doğrulanmış ekran metni: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md; yardımcı görsel zaman çizelgesi: basılı s.67 / 19XU4CVR.mp4",
+      "explanation": "Kaynak notu birkaç ekrandaki ifadeyi doğrular; bütün söyleşinin sözlü içeriğini doğrulamaz."
     },
     {
       "question_id": "T1-P66-Q02",
@@ -151,7 +152,7 @@
       "printed_page": 66,
       "question_no": "3",
       "prompt_summary": "İletişimin medenileşme hareketi olarak yorumlanması",
-      "answer": "“İletişim, bir medenileşme hareketidir.” sözü, insanların paylaşım yoluyla birbirinden haberdar olması, düşüncelerini gözden geçirip yenilerini edinmesi ve ortak yaşam biçimleri geliştirmesindeki rolü vurgular. Ahmet Dağ konuşmasında bu düşünceyi açıklar; mektup ve e-posta örnekleri de iletişim biçimlerinin insan hayatındaki etkisini gösterir. İletişimin tek başına bütün sorunları çözdüğü sonucu çıkarılmamalıdır.",
+      "answer": "Ekranda doğrulanan “İletişim, bir medenileşme hareketidir.” ifadesi, iletişimin insanlar arasında paylaşım ve ortak yaşamla ilişkisini yorumlamaya imkân verir. Bu ifade ekranda görülmüştür; konuşmacının birebir sözü olduğu doğrulanmamıştır. Öğrenciler yorumu kendi gerekçeleriyle genişletebilir.",
       "answer_sections": {
         "İfadenin olası anlamı": "İnsanlar iletişim yoluyla duygu, düşünce ve bilgilerini paylaşır; ortak yaşamı düzenlemeye ve sorunlara birlikte çözüm aramaya çalışır. Bilim, sanat ve kültür birikiminin kuşaklar arasında aktarılması da iletişimle mümkün olur. Bu yönleriyle iletişim, uygarlaşmaya katkı sağlayan bir süreç olarak yorumlanabilir.",
         "Kanıt ve çıkarım": "Dağ, iletişimin paylaşma, başkalarından haberdar olma ve yeni düşünceler edinme olanağı sağladığını belirtir. Alt bantta da “İletişim, bir medenileşme hareketidir.” ifadesi yer alır. Bu dayanakların yorumunuzu nasıl desteklediğini açıklayın.",
@@ -161,79 +162,78 @@
         "İletişim, bir medenileşme hareketidir."
       ],
       "guidance": "Öğrenciden sözün iddiasını kendi cümlesiyle kurmasını, ardından konuşmada sunulan paylaşma ve düşünce alışverişi açıklamasından dayanak seçmesini isteyin. İletişimin bütün toplumsal sorunları çözdüğü gibi aşırı genellemeleri kabul etmeyin.",
-      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; konuşma ve alt bant dökümü",
+      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; doğrulanmış ekran ifadesi ve kanıt sınırı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
       "explanation": "Konuşmada iletişim; paylaşma, başkalarından haberdar olma ve yeni düşünceler edinme süreçleriyle açıklanır. Alt bantta aynı düşünce kısa bir ifadeyle öne çıkarılır."
     },
     {
       "question_id": "T1-P66-Q04",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 66,
       "question_no": "4",
       "prompt_summary": "Çok modlu metnin konu ve temasını belirleme",
-      "answer": "Videonun konusu, mektuptan e-postaya iletişim araçlarının değişmesi ve bu araçların insan yaşamına etkileridir. Tema, iletişim biçimlerinin insan ilişkilerini ve toplumsal yaşamı dönüştürmesidir.",
+      "answer": "Ekran örneklerinde mektup ve e-posta iletişim araçları görünür. Bu kısmi kanıt, videonun tüm konu ve temasını kesinleştirmeye yetmez; öğrenci tam izleme sırasında belirlediği konuyu ve temayı doğrudan gözlemlediği bir örnekle gerekçelendirmelidir.",
       "answer_sections": {
-        "Konu": "Mektup ve e-posta üzerinden iletişim araçlarının değişimi ve kullanım alanları.",
-        "Tema": "İletişim biçimlerinin değişmesiyle insan ilişkilerinin, düşünce paylaşımının ve gündelik yaşamın dönüşmesi.",
-        "Ana düşünceden farkı": "Konu ve tema, videonun neyi ve hangi genel izlek çevresinde ele aldığını söyler; ana düşünce ise videonun bu konuda ileri sürdüğü temel yargıdır.",
-        "Kanıt": "Konuşmada mektubun kişisel ve duygusal yönleri, e-postanın sağlık, eğitim ve bürokraside sağladığı pratiklik anlatılır; alt bantlarda mektup ve iletişime ilişkin kısa ifadeler öne çıkar."
+        "Doğrulanabilen": "Kısmi ekran kanıtlarında mektup ve e-posta ifadeleri yer alır.",
+        "Sınır": "Tam konu ve tema, bütün söyleşi incelenmeden kesin cevap olarak sunulamaz."
       },
-      "guidance": "Konu–tema–ana düşünce ayrımını koruyun: konu iletişim araçlarının değişimi, tema iletişim biçimlerinin insan ve toplum yaşamına etkisidir. Ana düşünceyi bir sonraki soruda ayrıca kurdurun.",
-      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı dökümü"
+      "guidance": "Konu ve tema yorumlarını tam izleme notlarıyla gerekçelendirin; doğrulanmış ekran parçalarını tüm videonun özeti gibi kullanmayın.",
+      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran kanıtı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Mevcut kaynak notu yalnız seçilmiş ekran ifadelerini doğrular; tam ses transkripti yoktur."
     },
     {
       "question_id": "T1-P66-Q05",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 66,
       "question_no": "5",
       "prompt_summary": "Çok modlu metnin ana ve yardımcı düşüncelerini belirleme",
-      "answer": "Ana düşünce: İletişim araçları insanın paylaşma ve ilişki kurma ihtiyacına göre değişir; mektup kişisel duyguları saklayıp yeniden düşünmeye imkân verirken e-posta iletişimi hızlandırır ve kurumlarda işleri kolaylaştırır. Bu değişim insan yaşamını ve toplumsal gelişimi etkiler.",
+      "answer": "Ana ve yardımcı düşünceler, söyleşinin tamamı dinlenip izlendikten sonra öğrencinin kendi notlarından belirlenmelidir. Mevcut kısmi kanıt yalnız ekranda görülen birkaç ifadeyi doğrular; bu parçalar tek başına tüm metnin ana düşüncesini veya düşünce hiyerarşisini kanıtlamaz.",
       "answer_sections": {
-        "Ana düşünce": "İletişim araçlarındaki değişim, insanın ilişki ve paylaşım biçimlerini dönüştürür; yeni teknolojiler hız ve erişim kolaylığı sağlarken mektubun kişisel-duygusal işlevi de önemini korur.",
-        "Yardımcı düşünce 1": "İletişim paylaşmayı, başkalarından haberdar olmayı ve yeni düşünceler edinmeyi sağlar.",
-        "Yardımcı düşünce 2": "Mektup, özellikle başka iletişim imkânlarının sınırlı olduğu dönemlerde duyguları iletme ve yazılanları yeniden okuyup üzerinde düşünme aracı olmuştur.",
-        "Yardımcı düşünce 3": "E-posta sağlık, eğitim ve bürokraside hızlı bilgi erişimine katkı sağlar; konuşmada ilk e-postanın 1971’de ARPANET üzerinden gönderildiği ve yaygınlaşmanın 1990’lardan sonra hızlandığı belirtilir."
+        "Örnek çalışma": "Doğrudan duyulan/görülen bir ifadeyi not edin; bunu ana düşünce ya da yardımcı düşünce olarak sınıflandırıp gerekçelendirin.",
+        "Kanıt sınırı": "Tam transkript olmadığından burada tek bir kesin ana düşünce verilemez."
       },
-      "guidance": "Ana düşünceyi videonun farklı bölümlerini birleştirecek biçimde kurdurun. Yardımcı düşünceleri mektubun işlevi, e-postanın kullanım kolaylıkları ve iletişim değişiminin toplumsal etkisiyle ilişkilendirin.",
-      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı dökümü"
+      "guidance": "Öğrencinin kendi dinleme notlarını ve metinden seçtiği kanıtı kullanın; kısmi ekran dökümünü tüm içerik yerine koymayın.",
+      "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran kanıtı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Ana-yardımcı düşünce ayrımı için bütün söyleşinin içeriği gerekir; mevcut kaynak örneklenmiş ekran yazılarıyla sınırlıdır."
     },
     {
       "question_id": "T1-P67-Q06",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 67,
       "question_no": "6",
       "prompt_summary": "Dinleme öncesi tahminlerle sonrasındaki tespitleri karşılaştırma",
-      "answer": "Başlık ve stüdyo görselinden iletişim araçlarının ve değişiminin ele alınacağını tahmin ettiyseniz, söyleşi bu tahmini mektup ve e-posta örnekleriyle geliştirir. Önceki tahmininiz farklıysa onu da koruyup videodan bir örnekle nasıl değiştiğini açıklayın.",
+      "answer": "Öğrenci, izleme öncesi tahminini izledikten sonra kendi doğrudan gözlem ve dinleme notlarıyla karşılaştırmalıdır. Ekran notlarında mektup/e-posta ve birkaç kısa ifade doğrulanmıştır; tam söyleşi transkripti bulunmadığından örnek karşılaştırma bu sınırlı kanıtla bitirilemez.",
       "answer_sections": {
         "Dinlemeden / İzlemeden Önce": "“Başlık ve görselden hareketle ... olacağını tahmin etmiştim.”",
         "Dinledikten / İzledikten Sonra": "“Videoda ... üzerinde durulduğunu gördüm; bunu ... ifadesi/sahnesi destekliyor.”",
         "Karşılaştırma": "“Tahminim ... yönüyle doğrulandı / değişti / genişledi; çünkü ...”"
       },
-      "guidance": "İlk tahmin ile izleme sonrası tespiti ayrı ayrı yazdırın. Tahminin doğrulanması kadar, yeni bilgiyle değişmesi veya genişlemesi de gerekçeli biçimde kabul edilir.",
-      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü"
+      "guidance": "Tahmin ile sonradan doğrulanan bulguyu ayırın. Tam izleme sırasında not edilen bir örneği kullanın; kullanıcı dökümünü doğrulanmış transkript saymayın.",
+      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran kanıtı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Kısmi ekran kanıtı, tam içerikle ilgili kesin sonuç vermeye yetmez."
     },
     {
       "question_id": "T1-P67-Q07",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 67,
       "question_no": "7",
       "prompt_summary": "İletişime dair genel sonuç çıkarma",
-      "answer": "İletişim araçları insanın paylaşma ve ilişki kurma ihtiyacına göre değişir. Mektup, duyguları taşıyıp tekrar okunabilen kişisel bir iletişim biçimidir; e-posta ise özellikle kurumlarda bilgiye daha hızlı erişim sağlayabilir. Bu nedenle iletişim aracının etkisi kullanım amacı ve koşullarıyla birlikte değerlendirilmelidir.",
+      "answer": "Kaynak notunda doğrulanan ekrandaki ifadeler, iletişim araçları ve iletişimin toplumsal yönü üzerine sınırlı yorum yapmaya imkân verir. Mektup ve e-postanın bütün özellikleri ile söyleşinin genel sonucu, tam ses içeriği doğrulanmadan kesinleştirilemez.",
       "answer_sections": {
         "Önceki tahminim": "İletişim araçlarının değişmesinin iletişimi hızlandıracağını tahmin etmiştim.",
         "Sonraki tespitim": "Söyleşide e-postanın hastane, eğitim ve bürokrasi işlerinde hız sağladığı; mektubun ise duygu ve düşünceleri taşıyıp tekrar okunabildiği anlatılıyor.",
         "Ulaştığım sonuç": "Araçların değişmesi iletişimi hızlandırıp kullanım alanlarını genişletir; ancak mektubun kişisel ve duygusal işlevi de sürer."
       },
-      "guidance": "Sonucun hem mektup hem e-posta örnekleriyle desteklenmesini isteyin. Öğrenci farklı bir sonuca ulaşıyorsa bunu söyleşideki dayanaklarla gerekçelendirmesi yeterlidir.",
-      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü",
-      "explanation": "Model cevap, söyleşideki mektup ve e-posta örneklerini birlikte değerlendirerek bir sonuç çıkarır."
+      "guidance": "Genel sonucu tam izleme sırasında alınan notlarla gerekçelendirin; doğrulanmış birkaç ekran cümlesini tüm söyleşiye genellemeyin.",
+      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran kanıtı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Ekran ifadeleri kısmi kanıttır, tam özet veya ses transkripti değildir."
     },
     {
       "question_id": "T1-P67-Q08",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 67,
       "question_no": "8",
       "prompt_summary": "Videodaki öznel ve nesnel ifadeleri bulma ve katkılarını değerlendirme",
-      "answer": "Nesnel ifade örneği: “İlk e-posta 1971 yılında atıldı.” Tarih bildirdiği için doğruluğu araştırılabilir. Öznel ve mecazlı ifade örnekleri: “Mektup, sevginin kanatlanmış hâlidir.” ve “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” Bu sözler mektubun duygusal ve ilişkisel etkisini yorumlar.",
+      "answer": "Nesnel ve öznel ifade için kaynak notunda ekranda birebir görüldüğü kaydedilen örnekler kullanılabilir: “İlk e-posta 1971 yılında atıldı.” sınanabilir bir tarih iddiasıdır; “Mektup, sevginin kanatlanmış hâlidir.” ve “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” öznel/mecazlı ifadelerdir. Bunlar ekran yazılarıdır; konuşmacıya ait sözlü alıntı oldukları doğrulanmamıştır. 1971 iddiasının tarihsel doğruluğu ayrıca araştırılmalıdır.",
       "answer_sections": {
         "Nesnel İfade Nasıl Tanınır?": {
           "Ölçüt": "Doğruluğu dış kaynaklarla sınanabilen tarih, sayı veya olgu bildirir.",
@@ -247,16 +247,17 @@
         },
         "Ekran yazısı ve konuşma": "Bu ifadeler programın alt bantlarında görünür; söyleşide de mektup ve e-postanın işlevleri sözlü olarak ele alınır."
       },
-      "guidance": "Öğrencilerden her örneğin nesnel ya da öznel sayılma gerekçesini açıklamalarını isteyin. Nesnel ifadenin “kesin doğru” değil “doğrulanabilir” olduğunu vurgulayın; alt bant ifadesiyle konuşmadaki açıklamayı ayırt ettirin.",
-      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; alt bant ve ses dökümü"
+      "guidance": "Yalnız doğrulanmış ekranda görülen ifadeleri kullanın. Görüntüdeki yazıyı sesli konuşmacıya atfetmeyin; tarihsel iddiayı ayrı kaynakla sınayın.",
+      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; dört doğrulanmış ekran ifadesi: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Dört ifade seçilmiş ekran karelerinde doğrulanmıştır; tüm videonun transkripti değildir."
     },
     {
       "question_id": "T1-P67-Q09",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 67,
       "question_no": "9",
       "prompt_summary": "Çok modlu metni özetleme",
-      "answer": "Videonun konusu, iletişim araçlarının mektuptan e-postaya değişmesi ve bu değişimin insan yaşamına etkisidir. Söyleşi, iletişimin paylaşma ve medenileşmeyle ilişkisini kurar; mektubun duyguları taşıyıp tekrar okunabilen yönleriyle e-postanın hız ve erişim kolaylıklarını karşılaştırır. Böylece iletişim biçimlerinin insan ilişkilerini ve toplumsal yaşamı dönüştürdüğü düşüncesine ulaşılır.",
+      "answer": "Tam özet için söyleşinin tamamı güvenilir bir transkript veya sınıfta yapılan tam izleme notlarıyla incelenmelidir. Mevcut not dört seçilmiş ekran ifadesini doğrular; bunlar tüm metnin konusu, ana düşüncesi ve ayrıntılarını özetlemeye yetmez.",
       "answer_sections": {
         "Temel konu": "Mektuptan e-postaya iletişim araçlarının gelişimi ve yaşam üzerindeki etkileri.",
         "Ana düşünce": "İletişim biçimleri insanın ilişki kurma ihtiyacına ve teknik olanaklara göre değişir; bu değişim toplumsal yaşamı da etkiler.",
@@ -267,8 +268,9 @@
         ],
         "Sonuç": "İletişim aracını değerlendirirken hem sağladığı kolaylıkları hem de insan ilişkilerindeki işlevini dikkate almak gerekir."
       },
-      "guidance": "Öğrencilerin özetinde ana düşünceyi destekleyen örnekleri seçmelerini sağlayın; mektup ve e-posta bölümlerini birlikte ele alan kısa, bütünlüklü ve kendi cümleleriyle kurulmuş yanıtları kabul edin.",
-      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü"
+      "guidance": "Öğrencinin tam izleme notlarından ana düşünceyi ve destekleyici ayrıntıları seçmesini isteyin; kısmi ekran örneklerini tam özet diye sunmayın.",
+      "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran notu: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "Tam ses dökümü bulunmadığından kesin bir özet doğrulanamaz."
     }
   ]
 }

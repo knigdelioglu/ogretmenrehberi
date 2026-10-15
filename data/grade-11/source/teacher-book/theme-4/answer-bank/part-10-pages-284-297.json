@@ -88,13 +88,18 @@
     },
     {
       "question_id": "T4-P286-Q03",
-      "entry_type": "reference_answer",
+      "entry_type": "source_limited",
       "printed_page": 286,
       "question_no": "3",
-      "source_locator": "basılı s.286 / PDF s.287 — uzun video QR 5fd2b97cb78fabe367aa3fcde8f9718d; 19XU49LQ kullanıcı dökümü",
+      "source_locator": "basılı s.286 / PDF s.287 — uzun video QR, kaynak QR basılı s.285: 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md; ses transkripti doğrulanmadı",
       "prompt_summary": "Video notlarından hareketle belgeselin iletilerini belirleme",
-      "answer": "Belgeselin ana iletisi, fedakârlığın günlük emek ve canlılara karşı sorumlulukla görünür olduğudur. Dış ses, başkalarının iyiliği için paylaşmayı ve çaba göstermeyi vurgular. Mehmet Bey'in raylarda karşılaştığı kaplumbağaları kurtarması, emekli olduktan sonra da bu uğraşı sürdürmesi ve yaklaşık 6000 fidan diktiğini anlatması bu iletiyi destekler.",
-      "guidance": "Dış sesin sözlerini Mehmet Bey'in anlattığı deneyimlerle ilişkilendirin. Kaplumbağaları kurtarması ve fidan dikmesi gözlenebilir davranışlardır; bu davranışlardan fedakârlık, merhamet ve doğaya karşı sorumluluk sonuçlarını çıkarın."
+      "answer": "Kısmi görsel inceleme ve MP4 kökeni, videonun ana iletisini veya dış sesin sözlerini doğrulamıyor. Öğrenci doğrudan gözlediği bir sahneyi kaydedebilir; fedakârlık ile ilgili genel iletiyi bu sahneden çıkarıyorsa bunu yorum olarak işaretlemeli ve sözlü iddiayı doğrulanmış gibi aktarmamalıdır.",
+      "guidance": "Kısmi görsel gözlemi video özeti gibi sunmayın. Tam içerik için kaynak kimliği ve ses transkripti doğrulanmalıdır.",
+      "answer_sections": {
+        "Doğrulanabilen": "Yalnız notta açıkça kaydedilmiş görsel örnekler kullanılabilir.",
+        "Kanıtlanmayan": "Dış sesin ana iletisi, olay anlatımı ve sahne zamanları tam transkriptle doğrulanmadı."
+      },
+      "explanation": "UNVERIFIED-19XU49LQ notu örnek kare sınırlarını ve ses belirsizliğini açıklar."
     },
     {
       "question_id": "T4-P286-PERF01",
@@ -278,48 +283,35 @@
     },
     {
       "question_id": "T4-P293-Q02",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 293,
       "question_no": "2",
-      "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kullanıcı tarafından sağlanan video dökümü",
+      "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; ses transkripti yok",
       "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-      "answer": "Kırtık köyünde çalışkanlık, Muharrem ve Zübeyde’nin yıl boyunca sürdürdüğü bahçe işleriyle somutlaşır. Organik üretim ve mahsulün zamanla değer kazanması emeğin karşılığını gösterirken, çocukların köyden ayrılması ve yaşlı çiftin işleri sürdürmekte kalması bu yaşam biçiminin yeni kuşağa aktarılmasını güçleştirir.",
-      "guidance": "Ana düşünceyi çalışmanın yıl boyu sürmesi, organik üretim ve kuşakların üretimle ilişkisi arasındaki bağla gerekçelendirin. Öğrencinin farklı bir ana düşüncesi varsa belgeselden uygun kanıtlarla açıklamasını isteyin.",
-      "explanation": "Belgesel, yıl boyu süren bahçecilik emeğini organik üretim, aile iş gücü ve kuşak değişimiyle birlikte ele alır.",
+      "answer": "Örnek görüntü notları çalışmayı/üretimi ve kırsal yaşamı tartışmaya açabilir; konuşmalar transkript edilmediği için videonun ana düşüncesi, kişilerin adları, yaşam öyküsü veya ekonomik ayrıntıları doğrulanmış gibi verilemez. Öğrenci doğrudan gözlediği görüntü ile yorumunu ayırmalı.",
+      "guidance": "Sahne özetini olgu; çalışkanlık yorumu olarak ayrı yazın. Dış ses veya kişilerin sözlerini transkript olmadan aktarmayın.",
+      "explanation": "Kaynak notu örnek görsel incelemedir; konuşma içeriği kanıtı sağlamaz.",
       "answer_sections": {
-        "Ana düşünce": "Kırtık’ta bahçecilik ve organik üretim yıl boyu emek ister; bu emeğin değeri artarken üretim geleneğinin yeni kuşağa aktarılması belirsizleşir.",
-        "Yıl boyunca emek": "Bahçe hazırlığı, zeytin hasadı, çam fıstığı ve yeni ekim işleri mevsimler boyunca birbirini izler.",
-        "Üretim ve değer": "Belgesel organik bahçeciliği, sebze-meyve çeşitlerini ve organik ürünlerin zaman içinde değer kazanmasını anlatır.",
-        "Kuşak değişimi": "Zübeyde Hanım, çocukların ayrılmasından sonra işlerin kendileriyle kaldığını ve genç kuşağın bu işleri sürdürmeyebileceğini söyler."
+        "Görsel gözlem": "Notta görülen sahnelerden birini seçip betimleyin.",
+        "Yorum": "Görüntünün çalışkanlık kavramını nasıl düşündürdüğünü gerekçelendirin.",
+        "Kanıt sınırı": "Sesli anlatı, kişi bilgileri ve neden-sonuç iddiaları doğrulanmadı."
       }
     },
     {
       "question_id": "T4-P293-Q03",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 293,
       "question_no": "3",
-      "source_locator": "basılı s.293 / PDF s.294 — Fedakârlık QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4 ve Çalışkanlık QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kullanıcı tarafından sağlanan video dökümleri",
+      "source_locator": "basılı s.293 / PDF s.294 — Fedakârlık QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4 (kaynak QR s.285; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md) ve Çalışkanlık QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; görsel notlar, ses dökümleri değil",
       "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-      "answer": "Fedakârlık belgeseli, Mehmet Bey’in kaplumbağaları kurtarması ve fidan dikmesi üzerinden doğaya karşı sorumluluk ve özveriyi anlatır. Çalışkanlık belgeseli, Kırtık’ta Muharrem ve Zübeyde’nin yıl boyu süren bahçe işlerini, organik üretimini, emeğin ekonomik değerini ve çocukların ayrılmasıyla iş gücünün azalmasını ele alır. İki yapım da kişilerin emek ve sorumluluğunu belgesel anlatımıyla görünür kılar; çalışma alanları ve öne çıkardıkları değerler farklılaşır.",
+      "answer": "İki videonun konuşma transkriptleri ve MP4 kökenleri doğrulanmadı; bu nedenle dil, ileti ve içerik bakımından kesin karşılaştırma yapılamaz. Öğrenciler sınıfta doğrulanmış tam izleme notu oluşturana kadar yalnız doğrudan gördükleri sahne özelliklerini karşılaştırmalı, bunları gözlem olarak etiketlemelidir.",
       "answer_sections": {
-        "Dil ve Üslup": {
-          "Anadolu İnsanı / Fedakârlık": "Dış ses Anadolu insanını övgü ve değer bildiren sözlerle tanıtır; Mehmet Bey kendi çalışma deneyimini yalın, kişisel anlatımla aktarır.",
-          "Anadolu İnsanı / Çalışkanlık": "Dış ses köyü, üretim koşullarını ve mevsimsel iş döngüsünü açıklayıcı biçimde tanıtır. Muharrem ve Zübeyde Hanım gündelik, kişisel anlatımla çalışma yaşamını ve geçmişteki güçlükleri paylaşır."
-        },
-        "İleti": {
-          "Anadolu İnsanı / Fedakârlık": "Fedakârlık; Mehmet Bey’in raylardaki kaplumbağaları kurtarmayı ve çevresine fidan dikmeyi sürdürmesiyle anlatılır.",
-          "Anadolu İnsanı / Çalışkanlık": "Yıl boyu sürdürülen bahçe işleri ve organik üretim çalışkanlığı; ürünlerin değer kazanması emeğin karşılığını, gençlerin ayrılması ise üretim geleneğinin geleceğini düşündürür."
-        },
-        "Tür": {
-          "Anadolu İnsanı / Fedakârlık": "Belgesel / çok modlu metin.",
-          "Anadolu İnsanı / Çalışkanlık": "Belgesel / çok modlu metin."
-        },
-        "İçerik": {
-          "Anadolu İnsanı / Fedakârlık": "Manisa Ahmetli’de emekli demiryolu görevlisi Mehmet Bey’in kaplumbağaları kurtarma ve fidan dikme çalışmaları anlatılır.",
-          "Anadolu İnsanı / Çalışkanlık": "Balıkesir Burhaniye’nin Kırtık köyünde Muharrem ve Zübeyde’nin bahçecilik ve organik üretim yaşamı; zeytin, çam fıstığı, sebze ve meyve işleri; geçmişteki yoksulluk ve genç kuşağın köyden ayrılması anlatılır."
-        }
+        "Dil ve Üslup": "Doğrulanmış ses transkripti yok.",
+        "İleti": "Dış sesin ana iletisi kanıtlanmadı.",
+        "Tür": "Görsel biçim tek başına belgesel alt türünü doğrulamaz.",
+        "İçerik": "Kısmi sahne gözlemi ile anlatılan olayları ayırın."
       },
-      "guidance": "Dört başlığı koruyun: Dil ve Üslup, İleti, Tür, İçerik. Her belgesel için verilen olay ve anlatım örneklerinden yararlanın; benzerlikleri emek ve sorumluluk, farklılıkları çalışma alanı ve öne çıkan değerler üzerinden gerekçelendirin."
+      "guidance": "Ses veya MP4 kökeni doğrulanana kadar iki videonun sözlü içeriğini karşılaştırmayın; kısmi gözlemleri açıkça sınırlayın."
     },
     {
       "question_id": "T4-P294-Q01",

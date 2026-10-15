@@ -83,7 +83,10 @@
         "observed_book_label": "Sözlü İletişim Engelleri",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "linked_question_ids": [
+        "T1-P53-Q01"
+      ]
     },
     {
       "file_name": "19XU49LL.mp4",
@@ -181,7 +184,14 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LO.md",
-      "media_content_observation": "sampled_video_frames_only"
+      "media_content_observation": "sampled_video_frames_only",
+      "linked_question_ids": [
+        "T2-P88-Q01",
+        "T2-P88-Q02",
+        "T2-P88-Q03",
+        "T2-P88-Q04",
+        "T2-P88-Q05"
+      ]
     },
     {
       "file_name": "19XU49LT.mp4",
@@ -206,7 +216,10 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md",
-      "media_content_observation": "sampled_video_frames_only"
+      "media_content_observation": "sampled_video_frames_only",
+      "linked_question_ids": [
+        "T2-P113-Q01"
+      ]
     },
     {
       "file_name": "19XU49LP.mp4",
@@ -231,7 +244,12 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md",
-      "media_content_observation": "sampled_video_frames_only"
+      "media_content_observation": "sampled_video_frames_only",
+      "linked_question_ids": [
+        "T2-P129-Q01",
+        "T2-P129-Q02",
+        "T2-P129-Q03"
+      ]
     },
     {
       "file_name": "19XU49JV.mp4",
@@ -256,7 +274,17 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md",
-      "media_content_observation": "sampled_video_frames_only"
+      "media_content_observation": "sampled_video_frames_only",
+      "linked_question_ids": [
+        "T2-P140-VOC01",
+        "T2-P142-Q02",
+        "T2-P143-Q02",
+        "T2-P143-Q03",
+        "T2-P143-Q04",
+        "T2-P144-MAP01",
+        "T2-P145-PERF01",
+        "T2-P147-Q01"
+      ]
     },
     {
       "file_name": "19XU49MG.mp4",
@@ -281,7 +309,11 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
-      "media_content_observation": "sampled_video_frames_only"
+      "media_content_observation": "sampled_video_frames_only",
+      "linked_question_ids": [
+        "T2-P141-Q01",
+        "T2-P141-Q02"
+      ]
     },
     {
       "file_name": "19XU49MB.mp4",
@@ -306,7 +338,10 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MB.md",
-      "media_content_observation": "time_stamped_stills_not_full_video_or_audio_transcript"
+      "media_content_observation": "time_stamped_stills_not_full_video_or_audio_transcript",
+      "linked_question_ids": [
+        "T2-P159-Q08"
+      ]
     },
     {
       "file_name": "19XU49LV.mp4",
@@ -331,7 +366,10 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LV.md",
-      "media_content_observation": "staged_play_visuals_only_audio_untranscribed"
+      "media_content_observation": "staged_play_visuals_only_audio_untranscribed",
+      "linked_question_ids": [
+        "T3-P220-COMP01"
+      ]
     },
     {
       "file_name": "19XU4GDV.mp4",
@@ -356,7 +394,10 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU4GDV.md",
-      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed",
+      "linked_question_ids": [
+        "T4-P285-Q02"
+      ]
     },
     {
       "file_name": "19XU49LQ.mp4",
@@ -381,7 +422,12 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md",
-      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed",
+      "linked_question_ids": [
+        "T4-P285-Q02",
+        "T4-P286-Q03",
+        "T4-P293-Q03"
+      ]
     },
     {
       "file_name": "19XU49KB.mp4",
@@ -406,7 +452,11 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md",
-      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed",
+      "linked_question_ids": [
+        "T4-P293-Q02",
+        "T4-P293-Q03"
+      ]
     },
     {
       "file_name": "19XU3SW3.mp4",
@@ -430,7 +480,10 @@
         "observed_book_label": "Afiş Hazırlama Basamakları",
         "destination_verification": "verified_from_original_textbook_pdf_link_annotation",
         "media_binary_identity": "not_verified_from_eba_download"
-      }
+      },
+      "linked_question_ids": [
+        "T4-P300-PERF01"
+      ]
     },
     {
       "file_name": "19XU49LS.mp4",
@@ -455,7 +508,11 @@
         "media_binary_identity": "not_verified_from_eba_download"
       },
       "review_notes_path": "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md",
-      "media_content_observation": "sampled_stills_only_audio_not_transcribed"
+      "media_content_observation": "sampled_stills_only_audio_not_transcribed",
+      "linked_question_ids": [
+        "T4-P307-Q13",
+        "T4-P307-Q14"
+      ]
     }
   ],
   "known_conflicts": [

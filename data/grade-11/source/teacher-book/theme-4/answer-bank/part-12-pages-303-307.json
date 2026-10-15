@@ -25,7 +25,7 @@
       "entry_type": "question_answer",
       "printed_page": 304,
       "question_no": "2",
-      "source_locator": "basılı s.304 / PDF s.305 — Soru 2 / doğru seçenek A",
+      "source_locator": "basılı s.304 / PDF s.305 — Soru 2 / doğru seçenek A; alıntı metinleri basılı s.303",
       "prompt_summary": "I ve II. metin arasındaki anlam ilişkisini belirleme",
       "answer": "Doğru seçenek: A.",
       "answer_sections": {
@@ -188,12 +188,12 @@
     },
     {
       "question_id": "T4-P307-Q13",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 307,
       "question_no": "13",
-      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü",
+      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md; ses transkripti doğrulanmadı",
       "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-      "answer": "Anlatıcı Anadolu insanını “sabırlı, cesur, fedakâr” sözleriyle tanımlar; merhamet, dürüstlük ve cömertlik gibi erdemlerden de söz eder. Halil Bey'in dağ çeşmelerini her yıl temizleyip bakımını yapması, suyun insanlar ve hayvanlar için temiz kalmasına önem vermesi, dedesinden öğrendiği çeşme hayrını sürdürüp dört çeşme yaptırması emek, sorumluluk ve topluma hizmet özelliklerine örnektir.",
+      "answer": "Kısmi görüntü notu bu videodaki konuşmacıların Anadolu insanını “sabırlı, cesur, fedakâr” diye tanımladığını doğrulamıyor. Ses transkripti doğrulanmadığından bu sıfatlar kaynak alıntısı değildir. Öğrenci, tam izleme sırasında gözlediği bir davranıştan çıkarım yapabilir; anlatıcının kullandığı sıfat veya kişi öyküsü gibi aktarmamalıdır.",
       "answer_sections": {
         "Videoda sayılan özellikler": "Dış ses Anadolu insanını sabırlı, cesur ve fedakâr olarak niteler; merhamet, dürüstlük ve cömertliği de öne çıkarır.",
         "Halil Bey'den kanıtlar": [
@@ -203,24 +203,24 @@
         ],
         "Çıkarım": "Bu söz ve davranışlar çalışkanlık, sorumluluk, cömertlik ve topluma hizmet değerleriyle ilişkilendirilebilir."
       },
-      "guidance": "Anlatıcının doğrudan sıraladığı özellikleri Halil Bey'in çeşme bakımı, temiz suyu paylaşma ve çeşme yaptırma örnekleriyle eşleştirin. Videodaki somut söz ve davranıştan hareket eden farklı gerekçeli yorumları kabul edin.",
-      "explanation": "Videoda anlatıcının erdem ve uyum vurgusu, Halil Bey'in çeşmeleri düzenli temizlemesi ve su hayrı geleneğini sürdürmesiyle somutlaştırılır."
+      "guidance": "Tam ses dökümü yoktur. Gözlenen davranışı anlatıcıya atfedilen söz ve gerekçelerden ayırın; yalnız doğrulanmış görsel kanıtla sınırlı kalın.",
+      "explanation": "UNVERIFIED-19XU49LS notu örnek görselleri kaydeder, fakat konuşmayı veya kişilerin öyküsünü doğrulamaz."
     },
     {
       "question_id": "T4-P307-Q14",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 307,
       "question_no": "14",
-      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü",
+      "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md; ses transkripti doğrulanmadı",
       "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-      "answer": "Anlatıcıya göre aidiyet; kişinin aklı, gönlü ve ruhunun ait olduğu topraklarla iç içe olması, daha iyi imkânları bulunsa da kendine yurt bildiği yeri terk etmemesiyle ilişkilidir. Halil Bey'in Mamak çevresindeki çeşmelerin bakımını sürdürmesi, dedesinden öğrendiği su hayrı geleneğini devam ettirmesi ve dört çeşme yaptırması, yaşadığı çevreyle kurduğu bağı ve bu geleneğe bağlılığını gösteren örnekler olarak yorumlanabilir.",
+      "answer": "Kişinin yaşadığı yere aidiyetinin nasıl tanımlandığına ilişkin sözlü anlatım transkript edilmedi. Öğrenci görüntüde doğrudan gözlediği davranışı betimleyip aidiyet yorumunu ayrı belirtmeli; çeşme bakımı, aile geçmişi veya bırakmama nedeni gibi ayrıntıları doğrulanmış bilgi diye sunmamalıdır.",
       "answer_sections": {
         "Anlatıcının açıklaması": "Aidiyet; kişinin aklı, gönlü ve ruhunun ait olduğu topraklarla iç içe olması ve kendine yurt bildiği yeri terk etmemesiyle anlatılır.",
         "Halil Bey'in örneği": "Halil Bey, Mamak çevresindeki dağ çeşmelerini temizlemeyi sürdürür; dedesinden öğrendiği su hayrını devam ettirir, dört çeşme yaptırdığını ve su bulursa yenilerini de yaptıracağını söyler.",
         "Bu kanıtın aidiyetle ilişkisi": "Yaşadığı çevrenin su kaynağına emek vermesi ve aileden öğrendiği çeşme geleneğini sürdürmesi, yere bağlılık ve kültürel aktarım olarak yorumlanabilir."
       },
-      "guidance": "Anlatıcının aidiyet açıklamasını doğrudan dayanak olarak; Halil Bey'in çeşmeleri temizleme ve su hayrını sürdürme davranışlarını ise örnek üzerinden yapılan yorum olarak ayırın. Farklı gerekçeli cevapları kabul edin.",
-      "explanation": "Anlatıcı aidiyeti doğulan veya yurt bilinen toprağa gönülden bağlı kalmakla açıklar. Halil Bey'in su kaynağına ve çeşme yaptırma geleneğine yönelik emeği, bu bağın yerel yaşam ve kuşaklar arası aktarım yönleriyle ilişkilendirilebilir."
+      "guidance": "Tam ses dökümü yoktur. Gözlenen davranışı anlatıcıya atfedilen söz ve gerekçelerden ayırın; yalnız doğrulanmış görsel kanıtla sınırlı kalın.",
+      "explanation": "UNVERIFIED-19XU49LS notu örnek görselleri kaydeder, fakat konuşmayı veya kişilerin öyküsünü doğrulamaz."
     }
   ]
 }

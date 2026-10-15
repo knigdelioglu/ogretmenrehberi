@@ -143,51 +143,51 @@
     },
     {
       "question_id": "T2-P140-VOC01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 140,
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Çağ, canan, sine, kahır, saban kelimelerini atışmadaki bağlamına göre anlamlandırma ve alternatif önerme",
-      "answer": "Dökümde çağ, canan, kahır ve saban sözcükleri ilgili dörtlüklerde geçer; sine sözcüğü aktarılan dizelerde yer almaz. Sözcük anlamlarını sözlükle karşılaştırın ve video bağlamındaki anlamı, sözcüğün geçtiği dizeye dayanarak açıklayın.",
-      "guidance": "Dizeyi ve sözlük anlamını yan yana kullanın: “Zaman geçen çağ gibiyim”; “Başı duman cananın dağ gibiyim”; “Yel vurması neme kahır”; “Saban gibi toprakları / Eş eşebilirsen eğer.” Sine için dökümde geçen bir dize olmadığından bağlamsal anlam çıkarmayın.",
-      "source_locator": "basılı s.140 / PDF s.141 — QR-EBA-85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; ses ve ekran yazısı dökümü",
+      "answer": "Ses transkripti doğrulanmadığından çağ, canan, sine, kahır ve saban sözcüklerinin bu performansta geçip geçmediği veya hangi dizede kullanıldığı doğrulanamaz. Sözlük kaynakları temel anlamları verir; bağlamsal anlam için doğrulanmış bir dize gerekir. Doğrulanmış dize yoksa video bağlamında anlam veya alternatif kelime önermeyin.",
+      "guidance": "Her kelime için doğrulanmış dizeyi ve sözlük anlamını yan yana kullanın. Ses kaydı çözümlenmediği için bu video adına dize aktarmayın; sine dahil hiçbir kelimenin kullanılıp kullanılmadığı varsayılmamalıdır.",
+      "source_locator": "basılı s.140 / PDF s.141 — EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti doğrulanmadı",
       "answer_sections": {
         "çağ": {
           "temel_sozluk_alani": "zaman, dönem, devir",
-          "videodaki_dize": "“Zaman geçen çağ gibiyim.”",
-          "baglam_tahmini": "Zamanın ilerlemesini veya değişen dönemi çağrıştırır.",
+          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
+          "baglam_tahmini": "Video bağlamı belirlenemez.",
           "tdk_kontrolu": "zaman dilimlerinden her biri; devir",
-          "alternatif": "Dizedeki çağ sözcüğü yerine “devir” düşünülebilir; ölçü ve uyak açısından ayrıca değerlendirilir."
+          "alternatif": "Dize doğrulanmadan video bağlamında alternatif verilemez."
         },
         "canan": {
           "temel_sozluk_alani": "gönülden sevilen kimse, sevgili",
-          "videodaki_dize": "“Başı duman cananın dağ gibiyim.”",
-          "baglam_tahmini": "Canan, gönülden sevilen kişiyi anlatır; dize onu başı dumanlı dağa benzetir.",
+          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
+          "baglam_tahmini": "Video bağlamı belirlenemez.",
           "tdk_kontrolu": "gönülden sevilen kimse",
-          "alternatif": "“Sevgili” anlamca yakın bir karşılıktır; dizede ses ve uyak etkisini ayrıca tartışın."
+          "alternatif": "Dize doğrulanmadan video bağlamında alternatif verilemez."
         },
         "sine": {
           "temel_sozluk_alani": "göğüs, bağır",
-          "videodaki_dize": "Dökümde bu sözcüğün geçtiği bir dize yer almıyor.",
-          "baglam_tahmini": "Bu dörtlüklerdeki bağlamı belirlenemiyor.",
+          "videodaki_dize": "Doğrulanmış transkript yok.",
+          "baglam_tahmini": "Video bağlamı belirlenemez.",
           "tdk_kontrolu": "göğüs, bağır",
-          "alternatif": "Video bağlamında kullanılacak bir alternatif öneri için sözcüğün geçtiği dize gerekir."
+          "alternatif": "Dize doğrulanmadan video bağlamında alternatif verilemez."
         },
         "kahır": {
           "temel_sozluk_alani": "derin üzüntü veya acı, sıkıntı",
-          "videodaki_dize": "“Yel vurması neme kahır,”",
-          "baglam_tahmini": "Kahır, yel vurmasının doğurduğu sıkıntı veya üzüntüyü belirtir.",
+          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
+          "baglam_tahmini": "Video bağlamı belirlenemez.",
           "tdk_kontrolu": "derin üzüntü veya acı, sıkıntı",
-          "alternatif": "“Sıkıntı” anlamca yakın bir karşılıktır; dizedeki ses düzenine katkısını tartışın."
+          "alternatif": "Dize doğrulanmadan video bağlamında alternatif verilemez."
         },
         "saban": {
           "temel_sozluk_alani": "toprağı sürmeye yarayan tarım aracı",
-          "videodaki_dize": "“Saban gibi toprakları, / Eş eşebilirsen eğer.”",
-          "baglam_tahmini": "Saban ve eşmek sözcükleri toprağı işleme görüntüsü kurar.",
+          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
+          "baglam_tahmini": "Video bağlamı belirlenemez.",
           "tdk_kontrolu": "toprağı sürmeye yarayan çiftçilik aracı",
-          "alternatif": "“Sürmek” ya da “işlemek” anlamı düşünülebilir; dizeyi ve tekrar edilen kapanış kalıbını koruyup korumadığı tartışılır."
+          "alternatif": "Dize doğrulanmadan video bağlamında alternatif verilemez."
         }
       },
-      "explanation": "Söz varlığı çalışması, her kelimenin dizedeki kullanımını sözlük anlamıyla karşılaştırır. Dökümde bulunmayan sine sözcüğüne video içi bir bağlam atfedilmez.",
+      "explanation": "Sözlük anlamları kaynağıyla korunmuştur. Medya notu görsel örneklemeye dayanır ve dize/metin kanıtı sağlamaz.",
       "dictionary_terms": [
         {
           "term": "çağ",
@@ -218,18 +218,18 @@
     },
     {
       "question_id": "T2-P141-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 141,
       "question_no": "1",
       "prompt_summary": "Âşıklık geleneğinin korunması ve yaşatılması için yapılabilecekler",
-      "answer": "Erman Artun'un metnine göre âşıklık geleneğinin geleceğe taşınması için kültürel miras saptanmalı, korunmalı, teşvik edilmeli ve aktarılmalıdır. Eğitim çalışmaları, toplumsal katılım ve geleneğin çağdaş yorumları bu aktarımı destekler. 19XU49MG videosunda öne çıkan usta-çırak ilişkisi ve sazla icra da bu geleneği yaşatmaya yönelik atölye, buluşma ve gösteriler için dayanak olabilir.",
+      "answer": "Erman Artun'un metnine göre âşıklık geleneğinin geleceğe taşınması için kültürel miras saptanmalı, korunmalı, teşvik edilmeli ve aktarılmalıdır. Eğitim çalışmaları, toplumsal katılım ve geleneğin çağdaş yorumları bu aktarımı destekleyebilir. Yaşayan âşıkları belgelemek, eğitim ve atölye çalışmaları düzenlemek bu ilkelerden hareketle geliştirilebilecek önerilerdir. 19XU49MG için doğrulanmış tam ses transkripti bulunmadığından söyleşideki görüşler cevapta kanıt olarak kullanılmamıştır.",
       "evidence_quotes": [
         "Bilgi ve eğitim boyutuna ağırlık verilerek, âşıklık geleneği kültürel mirasının saptanması, korunması, teşviki ve aktarılmasını hedef alan politikalar geliştirilmelidir.",
         "geçmişi gelecek kuşaklara taşımak ve çağdaş yorumlarını yapmak amacıyla sosyal, kültürel ve sanatsal çalışmaları, toplumumuzun değişik kesimleri ile birlikte yürütme"
       ],
-      "explanation": "Metin, âşıklık geleneğinin korunmasını eğitim, aktarım, teşvik, çağdaş yorum ve toplumun farklı kesimlerinin katıldığı kültürel çalışmalarla ilişkilendirir. Video ise usta-çırak ilişkisini ve sazlı icrayı geleneğin yaşama biçimleri arasında gösterir.",
-      "guidance": "Önerinizi metindeki koruma ve aktarım ilkelerinden biriyle ilişkilendirin; videodan usta-çırak aktarımı veya sazlı icrayı sürdürmeye yönelik bir uygulama ekleyebilirsiniz.",
-      "source_locator": "basılı s.141 / PDF s.142 — soru 1; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4 içerik dökümü",
+      "explanation": "Basılı metin, âşıklık geleneğinin korunmasını eğitim, aktarım, teşvik, çağdaş yorum ve toplumun farklı kesimlerinin katıldığı kültürel çalışmalarla ilişkilendirir. Görsel inceleme notu söyleşi biçimini ve saz/bağlamayla ilgili görüntüleri kaydeder; konuşmanın içeriğini kanıtlayan bir transkript değildir.",
+      "guidance": "Önerinizi metindeki koruma ve aktarım ilkelerinden biriyle ilişkilendirin. Videodaki görsel kesitleri konuşmacının görüşü gibi aktarmayın; tam ses transkripti doğrulanmamıştır.",
+      "source_locator": "basılı s.141 / PDF s.142 — soru 1; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4; görsel kanıt ve sınırlar: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
       "answer_sections": {
         "Metinden Doğrudan Çıkanlar": [
           "Geleneği belgelemek ve korumak.",
@@ -244,30 +244,30 @@
           "Dijital platformlarda güvenilir kayıt ve tanıtım içerikleri hazırlamak.",
           "Festival, buluşma veya usta-çırak etkinlikleri düzenlemek."
         ],
-        "Videodan Hareketle": "Usta-çırak ilişkisini, sazla icrayı ve geleneğin icra edildiği buluşma ortamlarını destekleyen atölye ve etkinlikler düzenlenebilir.",
+        "Videodan Görsel Olarak Gözlenebilenler": "Notlar, söyleşi kadrajını, konuşan kişilerin alt bant bilgisini ve saz/bağlamayla ilişkili görselleri kaydeder. Bu kareler, kişilerin konuşmada ne söylediğini kanıtlamaz.",
         "Sınır": "UNESCO, TÜRKSOY, konservatuvar, burs veya belirli kurum programları ancak ayrıca araştırılmış güncel uygulamalar olarak verilebilir; metnin doğrudan önerileri değildir."
       }
     },
     {
       "question_id": "T2-P141-Q02",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 141,
       "question_no": "2",
       "prompt_summary": "Âşıklık geleneğini sürdürmenin Türk kültür mirası açısından önemi",
-      "answer": "Metne göre âşıklık geleneği yüzyılların deneyimini kuşaktan kuşağa aktarır ve farklı Türk toplulukları arasında kültürel yakınlık kurar. 19XU49MG videosu bu bağı Orta Asya'dan Anadolu'ya uzanan yol hikâyesiyle somutlaştırır; sevgi, saygı, barış ve birlik-beraberlik değerlerini geleneğin gayesi olarak öne çıkarır.",
+      "answer": "Basılı metin, âşıklık geleneğini yüzyılların deneyimini kuşaktan kuşağa aktaran kültürel miras olarak tanımlar ve kültürün toplumları yakınlaştırmadaki işlevini vurgular. Bu nedenle geleneğin sürdürülmesi ortak kültürel belleğin ve aktarımın korunması bakımından önemlidir. 19XU49MG için doğrulanmış tam ses transkripti bulunmadığından videoda anlatıldığı ileri sürülen coğrafyalar veya değerler cevaba eklenmemiştir.",
       "evidence_quotes": [
         "Türk dünyası âşıklık geleneği, yüzyılların deneyimlerinden süzülerek biçimlenmiş, kuşaktan kuşağa aktarılan bir değerler bütünüdür.",
         "Kültürel miras, sürdürülebilir kalkınma ve barışın garantisidir.",
         "Kültür, ulusları birbirlerine yakınlaştırmakta, insanların barış ve hoşgörü içinde yaşamalarının temelini oluşturmaktadır."
       ],
-      "explanation": "Kitap metni kuşaklar arası aktarımı ve Türk toplulukları arasındaki kültürel yakınlaşmayı vurgular. Video, bu sürekliliği tarihî-coğrafi yolculuk ve ortak değerler üzerinden işler.",
-      "guidance": "Metindeki aktarım ve kültürel miras vurgusunu, videoda adı geçen coğrafyalar ve Aşık Mehmet Oktay Ergani'nin sıraladığı değerlerle ilişkilendirebilirsiniz.",
-      "source_locator": "basılı s.141 / PDF s.142 — soru 2; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4 içerik dökümü",
+      "explanation": "Kitap metni geleneğin kuşaklar arası aktarımını ve kültürün toplumları yakınlaştırmasını destekler. Video notları yalnızca örneklenmiş görüntüleri doğrular; konuşmadaki coğrafya ve değer sıralamasını doğrulamaz.",
+      "guidance": "Yorumunuzu basılı metindeki aktarım ve kültürel miras ifadelerine dayandırın. Görüntü notlarından konuşmacıya coğrafya veya değer iddiası atfetmeyin.",
+      "source_locator": "basılı s.141 / PDF s.142 — soru 2; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4; görsel kanıt ve sınırlar: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
       "answer_sections": {
-        "Kültürel Bellek": "Kitap metni geleneği kuşaktan kuşağa aktarılan bir değerler bütünü olarak tanımlar; video usta-çırak ilişkisini ve sazlı icrayı öne çıkarır.",
-        "Türk Dünyasındaki Yaygınlık": "Video, Orta Asya'dan Anadolu'ya uzanan hattı Tengri Dağları, Buhara, Tebriz, Kerkük ve Bağdat üzerinden anlatır.",
-        "Yakınlaşma ve Aktarım": "Kitap kültürün toplumları yakınlaştırmasını vurgular; videoda sevgi, saygı, barış ve birlik-beraberlik aşıklığın gayesi olarak sıralanır.",
-        "Değerlendirme": "Bu ortak kültürel miras, tarihî süreklilik, usta-çırak aktarımı ve paylaşılan değerler üzerinden açıklanabilir."
+        "Kültürel Bellek": "Kitap metni geleneği yüzyılların deneyiminden süzülen ve kuşaktan kuşağa aktarılan bir değerler bütünü olarak tanımlar.",
+        "Türk Dünyasındaki Yaygınlık": "Metin, âşıklık geleneğini Türk dünyasının ortak kültürel mirası bağlamında ele alır.",
+        "Yakınlaşma ve Aktarım": "Metin, kültürün toplumları yakınlaştırdığını ve barış ile hoşgörülü yaşamın temelini oluşturduğunu belirtir.",
+        "Değerlendirme": "Bu önem, basılı metindeki kültürel aktarım ve toplumları yakınlaştırma ifadelerine dayandırılabilir; örneklenmiş video kareleri konuşmanın içeriğini doğrulamaz."
       }
     }
   ]

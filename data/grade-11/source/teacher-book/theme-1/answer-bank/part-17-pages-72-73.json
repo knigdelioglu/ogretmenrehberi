@@ -6,32 +6,21 @@
   "entries": [
     {
       "question_id": "T1-P72-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 72,
       "question_no": "1",
       "prompt_summary": "Videoda güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleme",
-      "answer": "Tabloda söyleşideki ifadeleri iletişim nitelikleriyle eşleştirin. Selamlaşma ve teşekkürler nezaketi; “hocam”, “Şeyhim” ve “baba” gibi hitaplar saygıyı gösterir. Davacılara akıl ve vicdanla hükmetmeye çalışma güvenilir ve adil iletişim örneğidir. “Adil ol”, “kararlarında aceleci olma” ve bilgiyi destekleme öğütleri yapıcı iletişime örnektir.",
+      "answer": "Tam ses transkripti bulunmadığından güven, saygı, yapıcılık veya nezaketi gösteren bir söyleşi cümlesi önceden örneklenemez. Öğrenci tam izleme sırasında duyduğu ifadeyi zaman damgası ve bağlamıyla kaydedip niteliğini kendi gerekçesiyle ilişkilendirmelidir.",
       "answer_sections": {
-        "Nezaket": [
-          "“TRT Türk ekranlarından iyi akşamlar.”",
-          "“Hoş geldiniz.”",
-          "“Hoş bulduk.”",
-          "“Allah razı olsun.”"
-        ],
-        "Saygı": [
-          "“Hocam”, “Şeyhim” ve “baba” hitapları.",
-          "“Edebalı babamızla Ildız Hatun anamızın elini öpelim” sözü."
-        ],
-        "Güven": "Osman Bey, davacı ve davalı ayrımı yapmadan kararlarını akıl ve vicdanına göre vermeye çalıştığını söyler.",
-        "Yapıcılık": [
-          "“Hak yeme oğul. Adil ol.”",
-          "“Kararlarında aceleci olma.”",
-          "Bilginin ve okumuş yazmış kişilerin desteklenmesini öğütleyen bölüm."
-        ],
-        "Davranışların Kullanımı": "Sözlerin geçtiği sahnedeki dinleme ve karşılıklı hitap biçimleri, seçilen ifadelerin bağlamını açıklamak için kullanılabilir."
+        "Nezaket": "Tam izleme sırasında duyulan selamlama veya teşekkür ifadesini, zaman damgası ve bağlamıyla buraya kaydedin.",
+        "Saygı": "Kişilerin birbirine hitap veya dinleme biçiminde gözlediğiniz kanıtı buraya kaydedin.",
+        "Güven": "Güven duygusunu desteklediğini düşündüğünüz doğrudan ifadeyi ve gerekçenizi buraya ekleyin.",
+        "Yapıcılık": "Soruna çözüm veya geliştirici öneri içeren, izleme sırasında doğruladığınız örneği kaydedin.",
+        "Davranışların Kullanımı": "Seçtiğiniz ifadenin bağlamını kendi izleme notunuzla açıklayın; kaynağı belirsiz dökümü alıntı olarak kullanmayın."
       },
-      "guidance": "Önce söyleşiden bir ifade seçtirin, ardından bunun güven, saygı, yapıcılık veya nezaket niteliğini nasıl gösterdiğini açıklatın. Aynı ifade birden fazla nitelikle ilişkilendirilebilir; gerekçe isteyin.",
-      "source_locator": "basılı s.72 / PDF s.73 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı tarafından sağlanan söyleşi dökümü"
+      "guidance": "Sadece sınıfta doğrulanmış izleme notlarına dayalı örnekleri kullanın; kullanıcı tarafından sağlanan dökümü birebir ses kanıtı saymayın.",
+      "source_locator": "basılı s.72 / PDF s.73 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; ses transkripti yok; kısmi kanıt: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "QR kaydı ekran örnekleriyle sınırlıdır; söyleşinin sözlü içeriği tam çözümlenmemiştir."
     },
     {
       "question_id": "T1-P72-Q02",
@@ -53,34 +42,39 @@
     },
     {
       "question_id": "T1-P73-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 73,
       "question_no": "1",
       "prompt_summary": "Videonun diline ilişkin beğenileri gerekçelendirme",
-      "answer": "Programın açılışında konu açıkça tanıtılır ve iletişim araçlarının insan yaşamındaki yeri hakkında yönlendirici bir soru kurulur. Konukların mektubun duygusal ve yeniden okunabilir yönleriyle e-postanın hız ve kullanım kolaylıklarını karşılaştırması, konuyu örneklerle geliştirir. Alt bantlardaki kısa ifadeler de temel düşünceleri öne çıkarır.",
+      "answer": "Notlarda 03:08'de ekranda “Mektup, sevginin kanatlanmış hâlidir.” ifadesi birebir görülür. Bu mecazlı ifade üzerinden dil tercihinizi beğeni gerekçenizle açıklayabilirsiniz; ekran yazısı konuşmacının sözü olarak doğrulanmamıştır. Sesli örnek kullanırsanız onu tam izleme kaydınızla ayrıca belirtin.",
+      "evidence_quotes": [
+        "Mektup, sevginin kanatlanmış hâlidir."
+      ],
       "answer_sections": {
-        "Konuya uygunluk ve açıklık": "Mektuptan e-postaya geçiş ve bu araçların etkileri programın başında açıklanır.",
-        "Örnek ve gerekçeler": "Mektubun 1960–70’lerdeki işlevi; hastane, eğitim ve bürokraside e-posta kullanımı somut örnekler sunar.",
-        "Dil ve anlatım": "“Mektup, sevginin kanatlanmış hâlidir.” gibi mecazlı sözler anlatıma duygu katar; konuşmadaki uzun cümlelerin anlaşılabilirliğini de değerlendirebilirsiniz.",
-        "Görsel yazılar": "Program adı, konuşmacı tanıtımı ve konuya ilişkin alt bantlar söyleşinin ana başlıklarını görünür kılar."
+        "Konuya uygunluk ve açıklık": "Beğeni gerekçenizi konunun anlaşılmasına veya sunulan örneğin açıklığına bağlayın; belirli bir iddia ses dökümüne dayanmamalıdır.",
+        "Örnek ve gerekçeler": "Ekranda doğrulanmış mecazlı ifade, dil beğenisi için kullanılabilir; bunu konuşmacıya ait sesli söz diye aktarmayın.",
+        "Dil ve anlatım": "Mecazın okur/izleyici üzerindeki etkisini kendi cümlenizle açıklayın.",
+        "Görsel yazılar": "Kaynak notunda ekran yazıları örneklenmiştir; bunlar tam söyleşi transkripti değildir."
       },
-      "guidance": "Genel “güzeldi / akıcıydı” yargıları yerine söyleşiden bir söz, örnek veya sunuş tercihi seçtirin; bunun izleyici üzerindeki olası etkisini açıklatın. Ses tonu ve diksiyonla ilgili değerlendirmeleri öğrencinin dinleme gözlemine dayandırın.",
-      "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı dökümü"
+      "guidance": "Ekranda birebir görülen mecazlı yazıyı, konuşmada duyulan ifadeden ayrı tutun. Ses tonu veya diksiyonla ilgili yorumları öğrencinin tam izleme gözlemine dayandırın.",
+      "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; ekrandaki ifade ve kanıt sınırı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "QR kaydı ekran örnekleriyle sınırlıdır; söyleşinin sözlü içeriği tam çözümlenmemiştir."
     },
     {
       "question_id": "T1-P73-Q02",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 73,
       "question_no": "2",
       "prompt_summary": "Videodaki olumsuz dil özellikleri ve çözüm önerileri",
-      "answer": "Ahmet Dağ’ın 00:41–02:01 arasındaki girişinde bazı cümleler uzundur ve “farklı bir düzlemde/farklı bir hayat tasavvuru” düşüncesi birkaç kez yinelenir. Anlatımı daha kısa cümlelere bölmek ve temel soruyu daha erken kurmak açıklığı artırabilir. Öğrenciler başka bir sorun gözlemlediyse onu da kanıt ve uygun çözümle gerekçelendirebilir.",
+      "answer": "Doğrulanmış notlarda söyleşinin olumsuz dil özelliği belirlenmemiştir. Tam izleme sırasında uzun veya tekrarlı bulduğunuz bir ifadeyi kendi zaman damgalı kaydınızla gösterin; dinleyiciye etkisini ve daha açık bir söyleyiş önerinizi açıklayın. Belirgin örnek duymadıysanız bunu gerekçelendirerek yazın.",
       "answer_sections": {
-        "Gözlenen özellik": "Bazı uzun cümleler ve benzer düşüncelerin tekrarı dinlemeyi zorlaştırabilir.",
-        "Neden sorun oluşturabilir?": "Dinleyici ana düşünceyi takip ederken cümle içindeki bağlantıları akılda tutmakta zorlanabilir.",
-        "Çözüm önerisi": "Uzun cümleleri daha kısa birimlere ayırmak, tekrarları azaltmak ve temel soruyu doğrudan ifade etmek."
+        "Gözlenen özellik": "Tam izleme sırasında fark ettiğiniz cümleyi veya tekrar örüntüsünü zaman damgasıyla kaydedin.",
+        "Neden sorun oluşturabilir?": "Örneğin dinleyicinin ana düşünceyi izleme veya bağlantıları kurma biçimine olası etkisini açıklayın.",
+        "Çözüm önerisi": "Aynı anlamı koruyarak daha kısa ve doğrudan bir söyleyiş önerin; kaynakta bulunmayan örnek üretmeyin."
       },
-      "guidance": "Sorun belirleyen öğrenciden ilgili söz veya bölümü, olası etkisini ve buna doğrudan karşılık veren bir düzenleme önerisini birlikte istemek gerekir. Belirgin sorun görmeyen öğrenci de bunu gerekçelendirebilir.",
-      "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı dökümü"
+      "guidance": "Önceden verilmiş bir dil kusuru varsaymayın. Öğrenciden kendi kaydını, etkisini ve çözümünü birlikte açıklamasını isteyin.",
+      "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; ses transkripti yok; kısmi kanıt: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+      "explanation": "QR kaydı ekran örnekleriyle sınırlıdır; söyleşinin sözlü içeriği tam çözümlenmemiştir."
     },
     {
       "question_id": "T1-P73-PERF01",

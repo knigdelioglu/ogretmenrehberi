@@ -147,6 +147,8 @@ try {
     "the behavior contract catches a missing or unexpected reveal output");
 
   console.log("[presentation-data] Schema, linkage and reveal fault-injection fixtures passed; text-only updates remain valid.");
+  await import("./test-presentation-source-evidence.mjs");
+  await import("./test-presentation-pedagogy-contracts.mjs");
 } finally {
   fs.rmSync(tempRoot, { recursive: true, force: true });
 }

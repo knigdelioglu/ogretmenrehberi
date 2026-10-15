@@ -6,19 +6,19 @@
   "entries": [
     {
       "question_id": "T2-P113-Q01",
-      "entry_type": "question_answer",
+      "entry_type": "source_limited",
       "printed_page": 113,
       "question_no": "1",
       "prompt_summary": "Orhun Vadisi videosundaki bölgeyi ön bilgilerle ilişkilendirme",
-      "answer": "Ön bilgilerimden hareketle Orhun Vadisi’ni Türk dili ve tarihinin önemli yazılı kaynaklarının bulunduğu yerlerden biri olarak tanıyorum. Söyleşide Bilge Kağan ve Kül Tigin anıtlarının tarihi, Göktürk alfabesi, yazıtların çözülmesi ve müzede korunan eserler anlatılır. Görüntülerde açık bozkırdaki taş yazıtlar, kaplumbağa biçimli kaide, müze/vitrin ve “KÜL TİGİN ABİDESİ” yazısı görülür. Bu sözlü ve görsel ayrıntılar bölgenin tarihî önemini düşünmeme yardımcı olur.",
-      "guidance": "Öğrencilerden “Önceden bildiğim” ve “Videodan edindiğim” notlarını ayırmalarını isteyin. Sözlü anlatımdaki tarihî bilgileri, görüntülerdeki anıt ve müze ayrıntılarıyla ilişkilendirsinler; farklı gerekçeli ön bilgileri kabul edin.",
-      "source_locator": "basılı s.113 / PDF s.114 — Orhun Vadisi QR-EBA ID 06740daa8a1a08c3bfe9d46c65f3fe56 / 19XU49LT.mp4; kullanıcı tarafından sağlanan ses ve ekran yazısı dökümü",
+      "answer": "Ön bilgilerimi ve görüntüde doğrudan gördüklerimi ayrı kaydederim. Örnek görüntülerde bozkır, taş yazıtlar, koruma alanı, taş kaide, müze teşhiri ve “KÜL TİGİN ABİDESİ” başlığı görülür. Anıtların tarihi, yazıtların çözülmesi veya müzedeki eserlerin kimliği hakkında videonun konuşmaları doğrulanmış transkriptle denetlenmedi; bu tarihî iddiaları bağımsız güvenilir kaynakla doğrulayın.",
+      "guidance": "“Ön bilgilerim” ve “videoda gördüğüm” notlarını ayırın. Görseli tarihî açıklama kanıtı saymayın; sesli iddiaları bağımsız kaynakla doğrulatın.",
+      "source_locator": "basılı s.113 / PDF s.114 — EBA QR 06740daa8a1a08c3bfe9d46c65f3fe56 / 19XU49LT.mp4; yalnız zaman damgalı görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md; ses transkripti doğrulanmadı",
       "answer_sections": {
-        "Ön bilgilerim": "Orhun Vadisi, Türk dili ve tarihinin eski yazılı kaynaklarıyla ilişkilidir.",
-        "Sözlü anlatım": "Videoda Kül Tigin ve Bilge Kağan anıtları, Göktürk alfabesi, yazıtların çözülmesi, “Tengri” sözcüğü ve müzede korunan eserler anlatılır.",
-        "Görsel kanıt": "Bozkırdaki taş yazıtlar, kaplumbağa biçimli kaide, müze/vitrin ve “KÜL TİGİN ABİDESİ” başlığı gösterilir.",
-        "İlişki": "Sözlü anlatımdaki tarihî bilgiler ile görüntülerdeki anıt ve eserler, Orhun Vadisi’nin Türk tarihi ve kültüründeki önemini birlikte gösterir."
-      }
+        "Ön bilgilerim": "Öğrencinin önceki öğrenmelerine göre değişir.",
+        "Görsel kanıt": "Bozkır, taş yazıt, koruma alanı, taş kaide, müze/vitrin ve görüntüdeki “KÜL TİGİN ABİDESİ” başlığı.",
+        "Sınır": "Sözlü tarih anlatımı ve tarihî/simgesel yorumlar doğrulanmış transkript değildir."
+      },
+      "explanation": "Dosyanın kitap QR hedefi kesin olsa da MP4 kökeni ve konuşma transkripti doğrulanmamıştır."
     },
     {
       "question_id": "T2-P113-Q02",
@@ -189,7 +189,7 @@
         "Bu sözümü iyice işit, adamakıllı dinle",
         "Her ne sözüm varsa ebedî taşa vurdum."
       ],
-      "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 1",
+      "source_locator": "basılı s.117 / PDF s.118 — Anlam Oluşturabilme soru 1; alıntı metinleri basılı s.114",
       "answer_sections": {
         "Muhataba seslenme": "Bilge Kağan Türk milleti ve beylerine doğrudan seslenir; sözlerinin dinlenmesini ve üzerinde düşünülmesini ister.",
         "Tarih ve yönetim deneyimini aktarma": "Geçmişte yaşananları, devletin durumunu, seferleri ve kendisiyle Kül Tigin'in millete hizmetini anlatarak tarihî deneyimi kayda geçirir.",
@@ -244,7 +244,7 @@
       "evidence_quotes": [
         "Türk milleti için gece uyumadım, gündüz oturmadım."
       ],
-      "source_locator": "basılı s.117 / PDF s.118 — Fark Edelim",
+      "source_locator": "basılı s.117 / PDF s.118 — Fark Edelim; alıntı metinleri basılı s.114",
       "answer_sections": {
         "Kül Tigin'le Akrabalığı": "Kül Tigin'in ağabeyidir; yazıtta kardeşinden ve onun ölümünde yaşadığı derin üzüntüden söz eder.",
         "Kağan ve Yönetici Oluşu": "Türk milletini yöneten bir kağandır; seferlerden, devletin düzenlenmesinden ve millet için yaptığı çalışmalardan söz eder.",
