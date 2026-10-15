@@ -583,6 +583,7 @@ for (const [width, height, zoom] of [[1920, 1080, 1], [1228, 700, 1], [1228, 412
       try { animation.finish(); } catch { /* no active animation */ }
     }
     const label = document.querySelector('#canvas .slide-video-file');
+    const title = document.querySelector('#canvas .slide__foot .lesson-name');
     const dock = document.querySelector('#dock');
     const rect = (node) => {
       const box = node?.getBoundingClientRect();
@@ -591,12 +592,16 @@ for (const [width, height, zoom] of [[1920, 1080, 1], [1228, 700, 1], [1228, 412
     return {
       label: label?.textContent?.trim(),
       labelRect: rect(label),
+      titleRect: rect(title),
       dockRect: rect(dock),
       scrollWidth: label?.scrollWidth,
       clientWidth: label?.clientWidth
     };
   })()`);
   assert.equal(placement.label, "19XU4CVR.mp4", "video filename displays without technical prefix");
+  const adjacentGap = placement.labelRect?.left - placement.titleRect?.right;
+  assert.ok(adjacentGap >= 0 && adjacentGap <= 36,
+    `video filename is immediately after lesson title at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
   assert.ok(placement.labelRect?.left >= 0 &&
     placement.labelRect?.right + 8 <= placement.dockRect?.left,
     `video filename stays left of navigation at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
