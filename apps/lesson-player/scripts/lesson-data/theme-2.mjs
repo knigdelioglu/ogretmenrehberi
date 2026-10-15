@@ -216,9 +216,9 @@ assert(
   "s.113 Orhun Vadisi video hatırlatması ilk sorudan önce gelmeli."
 );
 assert(
-  orhunById.get("s113-q1")?.answer?.entry_type === "source_limited" &&
+  orhunById.get("s113-q1")?.answer?.entry_type === "question_answer" &&
     orhunById.get("s113-q1")?.answer?.guidance,
-  "s.113 QR video sorusu source_limited ve yönlendirmeli kalmalı."
+  "s.113 video dökümüyle doğrulanan soru cevap ve yönlendirme içermeli."
 );
 assert(
   orhunById.get("s114-115-reading")?.answer === null &&
@@ -333,9 +333,9 @@ assert(
   "s.129 video hatırlatması kaynak sınırlı sorudan önce gelmeli."
 );
 assert(
-  speaking2ById.get("s129-q1")?.answer?.entry_type === "source_limited" &&
+  speaking2ById.get("s129-q1")?.answer?.entry_type === "question_answer" &&
     speaking2ById.get("s129-q1")?.answer?.guidance,
-  "s.129 QR-video sorusu source_limited ve yönlendirmeli kalmalı."
+  "s.129 video dökümüyle doğrulanan soru cevap ve yönlendirme içermeli."
 );
 assert(
   speaking2ById.get("s130-plan")?.answer?.entry_type === "performance_support" &&
@@ -399,7 +399,7 @@ assert(
 );
 assert(
   asikById.get("s140-listen")?.answer === null &&
-    asikById.get("s140-vocabulary")?.answer?.entry_type === "source_limited" &&
+    asikById.get("s140-vocabulary")?.answer?.entry_type === "question_answer" &&
     asikById.get("s140-vocabulary")?.content?.items === undefined &&
     asikById.get("s140-vocabulary")?.answer?.dictionary_terms?.length === 5 &&
     asikById.get("s140-vocabulary")?.presentation?.interleave?.source === "dictionary_terms" &&
@@ -407,15 +407,15 @@ assert(
   "Gerçek video dinleme adımı ile beş sözcüklük kaynaklı aşamalı sözlük akışı ayrılmalı."
 );
 assert(
-  asikById.get("s142-q2")?.answer?.entry_type === "source_limited" &&
-    asikById.get("s143-language")?.answer?.entry_type === "source_limited" &&
-    asikById.get("s144-map")?.answer?.entry_type === "source_limited",
-  "Benzetme, video dili ve çok modlu unsur çözümlemeleri kaynak-sınırlı kalmalı."
+  asikById.get("s142-q2")?.answer?.entry_type === "question_answer" &&
+    asikById.get("s143-language")?.answer?.entry_type === "question_answer" &&
+    asikById.get("s144-map")?.answer?.entry_type === "performance_support",
+  "Benzetme ve dil analizi doğrulanmış cevabı, zihin haritası performans desteğini korumalı."
 );
 assert(
-  asikById.get("s145-hats")?.answer?.entry_type === "source_limited" &&
+  asikById.get("s145-hats")?.answer?.entry_type === "performance_support" &&
     Object.keys(asikById.get("s145-hats")?.answer?.answer_sections ?? {}).length === 6,
-  "Altı şapka çerçevesi korunmalı ancak gerçek video içeriği uydurulmamalı."
+  "Altı şapka çerçevesi performance_support olarak korunmalı."
 );
 assert(
   asikById.get("s146-viewpoints")?.answer?.entry_type === "performance_support" &&
@@ -423,10 +423,10 @@ assert(
   "s.146 görüş geliştirme dört kitap yargısını görünür tutmalı."
 );
 assert(
-  asikById.get("s147-q1")?.answer?.entry_type === "source_limited" &&
+  asikById.get("s147-q1")?.answer?.entry_type === "question_answer" &&
     asikById.get("s147-reflection")?.answer?.entry_type === "performance_support" &&
     asikById.get("s147-reflection")?.content?.items?.length === 5,
-  "s.147 performans değerlendirmesi kaynak-sınırlı; yansıtıcı yazı beş soruluk yapı olmalı."
+  "s.147 video destekli değerlendirme yanıtı; yansıtıcı yazı beş soruluk yapı olmalı."
 );
 
 const museumWriting = byLessonId.get("T11-T02-YAZMA");
@@ -532,9 +532,9 @@ assert(
   "s.159 soru 7 yanlış değerlendirme ve kişisel yanıtı birlikte kapsamalı."
 );
 assert(
-  assessment2ById.get("s159-q8")?.answer?.entry_type === "source_limited" &&
+  assessment2ById.get("s159-q8")?.answer?.entry_type === "question_answer" &&
     assessment2ById.get("s159-q9")?.answer?.entry_type === "performance_support",
-  "QR ayrıntıları uydurulmamalı, slogan tek doğru gibi sunulmamalı."
+  "QR video sorusu doğrulanmış, slogan performance_support kalmalı."
 );
 for (const step of theme2Assessment.steps) {
   assert(step.source.source_status === "VERIFIED", `Tema 2 assessment source VERIFIED olmalı: ${step.source.source_record_id}`);

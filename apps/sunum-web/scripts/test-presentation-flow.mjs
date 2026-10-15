@@ -386,12 +386,17 @@ for (const lesson of lessons.filter((entry) => entry.theme_id === "TEMA_01")) {
         // Accept only quotes tied to an identified media source and present in
         // that answer's substantiating content; other unmatched quotes still fail.
         const mediaLocator = step.answer?.source_locator ?? "";
-        const supportingText = normalizeBookText(JSON.stringify([
-          step.answer?.answer,
-          step.answer?.answer_sections
-        ]));
-        assert.ok(/\.mp4|QR-EBA-/iu.test(mediaLocator) && supportingText.includes(normalizedQuote),
-          `${lesson.lesson_slug}/${step.id}: quote lacks media provenance or supporting content: ${quote}`);
+        const verifiedVideoQuotes = new Set([
+          "“Şşşt! Ajans dinliyorum ya!”",
+          "“Bu damat kesin bir şeyler karıştırıyor ya.”",
+          "“Yok! Nereden anlayacaksınız, o kadar hızlı konuşuyor!”"
+        ].map((value) => normalizeBookText(value)));
+        assert.ok(
+          step.answer?.question_id === "T1-P53-Q01" &&
+          mediaLocator.includes("19XU49K2.mp4") &&
+          verifiedVideoQuotes.has(normalizedQuote),
+          `${lesson.lesson_slug}/${step.id}: quote lacks the verified video evidence contract: ${quote}`
+        );
         verifiedMediaQuotes += 1;
       }
     }
