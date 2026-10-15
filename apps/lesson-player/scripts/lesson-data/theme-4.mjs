@@ -614,8 +614,8 @@ for (const [id, sourceId, answerId] of [
   ["s307-q10","T04-S0139","T4-P307-Q10"],
   ["s307-q11","T04-S0140","T4-P307-Q11"],
   ["s307-q12","T04-S0141","T4-P307-Q12"],
-  ["s307-q13","T04-S0142","T4-P307-SL13"],
-  ["s307-q14","T04-S0143","T4-P307-SL14"]
+  ["s307-q13","T04-S0142","T4-P307-Q13"],
+  ["s307-q14","T04-S0143","T4-P307-Q14"]
 ]) {
   assert(theme4AssessmentById.get(id)?.source?.source_record_id === sourceId &&
     theme4AssessmentById.get(id)?.answer?.question_id === answerId,
@@ -627,7 +627,7 @@ assert(theme4AssessmentById.get("s307-q11")?.content?.items?.length === 4 &&
   "İzleme mecraları tablosu ve afiş görsel değerlendirmesi yapılandırılmış kalmalı.");
 assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "question_answer" &&
   theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "question_answer",
-  "Aidiyet videosu görülmeden son iki soru kesin cevap gibi sunulmamalı.");
+  "Kaynaklı Aidiyet cevapları doğrulanmış video dökümüne bağlı question_answer olmalı.");
 for (const step of theme4Assessment.steps) {
   assert(step.source.source_status === "VERIFIED",
     `Tema 4 s.303–307 doğrulanmış kaynak: ${step.source.source_record_id}`);
