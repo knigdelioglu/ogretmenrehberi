@@ -89,7 +89,7 @@ const structuredAnswers = answers.filter(isStructured);
 const structuredObjectAnswers = structuredAnswers.filter((answer) =>
   answer.answer_sections && !Array.isArray(answer.answer_sections)
 );
-assert.equal(structuredObjectAnswers.length, 93, "all 93 keyed structured answers were reviewed");
+assert.equal(structuredObjectAnswers.length, 94, "all 94 keyed structured answers are available");
 const includedAnswerTextIds = new Set();
 
 for (const answer of structuredAnswers) {
