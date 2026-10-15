@@ -1600,11 +1600,13 @@ presentationBrowserSuite: {
     console.log("[sunum-web] QR reference student-copy regression passed: s67 prompt is concise and audit notes are absent.");
     assert.ok(visual.sources > 0, "source reference keeps its existing source-link list");
     const nextReferenceEntry = sourceReference.lesson.steps[sourceReference.slide];
-    await next();
-    visual = await until(async () => {
-      const state = await visualLayoutState();
-      return state.prompt === nextReferenceEntry.display_prompt ? state : null;
-    }, "s67-qr-communication next step");
+    // Long source material can occupy multiple visual pages before navigation.
+    for (let attempt = 0; attempt < 20 && visual.prompt === sourceReference.step.display_prompt; attempt += 1) {
+      await next();
+      visual = await visualLayoutState();
+    }
+    assert.equal(visual.prompt, nextReferenceEntry.display_prompt,
+      "s67 QR material paginates before advancing to the next lesson step");
     await previous();
     visual = await until(async () => {
       const state = await visualLayoutState();
