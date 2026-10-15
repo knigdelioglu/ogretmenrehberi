@@ -532,7 +532,7 @@ noLeak("afis-atolyesi-298-302", "s302-next", /ana iletiyi tasarımdan|3 kısa me
 noLeak("degerlendirme-303-307", "s303-reading", /Hitap, dinî söyleyiş|şehitlik/, "ISSUE-096", null);
 noLeak("degerlendirme-303-307", "s304-q4", /Umut, sevgi, güven, merhamet/, "ISSUE-097", /Umut/);
 noLeak("degerlendirme-303-307", "s307-q12", /Dijital üretim|teknolojinin tek başına/, "ISSUE-100", /kamera ve ses teknolojisinin dijitalleşmesi|bilgisayar teknolojisinin kurgu/);
-noLeak("degerlendirme-303-307", "s307-q14", /Yer, ilişki, kültür, emek, anı/, "ISSUE-101", /hazır bir liste|video kanıtı/);
+noLeak("degerlendirme-303-307", "s307-q14", /Yer, ilişki, kültür, emek, anı/, "ISSUE-101", /Halil Bey|çeşme|aidiyet/);
 
 const grammarPrompt = theme4Step("ben-mimar-sinan-cozumleme-256-259", "s258-grammar");
 const grammarApply = theme4Step("ben-mimar-sinan-cozumleme-256-259", "s258-grammar-apply");

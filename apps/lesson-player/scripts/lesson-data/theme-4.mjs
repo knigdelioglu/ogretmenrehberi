@@ -467,7 +467,11 @@ assert(anadoluById.get("s287-vocab")?.content?.items?.length === 5 &&
 assert(anadoluById.get("s288-q2")?.content?.items?.length === 4 &&
   anadoluById.get("s286-checklist")?.content?.items?.length === 5,
   "Zihin haritasının dört boş alanı ve dinleme kontrol listesinin beş ölçütü korunmalı.");
-for (const id of ["s286-theme-words","s286-messages","s287-q1","s288-q2","s289-q3","s289-q5","s290-q6","s290-q7","s290-q8","s290-q9"]) {
+for (const id of ["s286-theme-words", "s286-messages"]) {
+  assert(anadoluById.get(id)?.answer?.entry_type === "reference_answer",
+    `Video dökümünden oluşturulan referans cevap korunmalı: ${id}`);
+}
+for (const id of ["s287-q1","s288-q2","s289-q3","s289-q5","s290-q6","s290-q7","s290-q8","s290-q9"]) {
   assert(anadoluById.get(id)?.answer?.entry_type === "source_limited",
     `QR video görülmeden kesin cevap üretilmemeli: ${id}`);
 }
@@ -518,9 +522,16 @@ assert(anadoluAnalysisById.get("s294-q1")?.content?.items?.length === 5 &&
 assert(anadoluAnalysisById.get("s295-q12")?.answer?.entry_type === "source_limited" &&
   anadoluAnalysisById.get("s295-q12")?.answer?.printed_page === 295,
   "Çözümleyebilme 12 sayfa alanı sayısal olmalı ve QR sınırı korunmalı.");
-for (const id of ["s291-q10","s291-q11","s293-q2","s293-q3","s294-q1","s294-q2","s294-q3","s294-q4","s294-q5","s294-q6","s295-q7","s295-q8","s295-q9","s295-q10","s295-q11","s295-q12","s296-q13","s296-q14"]) {
+for (const id of ["s291-q10","s294-q1","s294-q2","s294-q3","s294-q4","s294-q5","s294-q6","s295-q7","s295-q8","s295-q9","s295-q10","s295-q11","s295-q12","s296-q13","s296-q14"]) {
   assert(anadoluAnalysisById.get(id)?.answer?.entry_type === "source_limited",
     `QR video görülmeden çözümleme cevabı kesinleştirilmemeli: ${id}`);
+}
+assert(anadoluAnalysisById.get("s291-q11")?.answer?.entry_type === "reference_answer",
+  "s291-q11 video referans cevabı ile doğrulanmalı.");
+for (const id of ["s293-q2", "s293-q3"]) {
+  assert(anadoluAnalysisById.get(id)?.answer?.entry_type === "question_answer" &&
+    anadoluAnalysisById.get(id)?.answer?.source_locator?.includes(".mp4"),
+    `s293 video dökümünden doğrulanmış cevap korunmalı: ${id}`);
 }
 for (const step of anadoluAnalysis.steps) {
   assert(step.source.source_status === "VERIFIED",
@@ -688,10 +699,11 @@ assert(theme4AssessmentById.get("s304-q4")?.answer?.answer_sections?.["Örnek du
   theme4AssessmentById.get("s305-q5")?.answer?.answer_sections?.["Görsel 1 — çiçekli dal"]?.includes("kesinleştirilmez"),
   "s.304 örnek duygu tek doğruya çevrilmemeli; s.305 görsel türü doğrulanamayacak biçimde kesinleştirilmemeli.");
 assert(theme4AssessmentById.get("s307-q13")?.answer?.entry_type === "question_answer" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Videoda gözlediğim kişi, davranış veya tutum"] === "[...]" &&
-  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Her özellik için video kanıtı"] === "[...]" &&
+  theme4AssessmentById.get("s307-q13")?.answer?.source_locator?.includes("19XU49LS.mp4") &&
+  theme4AssessmentById.get("s307-q13")?.answer?.answer_sections?.["Halil Bey'den kanıtlar"] &&
   theme4AssessmentById.get("s307-q14")?.answer?.entry_type === "question_answer" &&
-  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Video kanıtı"] === "[...]",
-  "s.307 Aidiyet cevapları video kanıtı olmadan doldurulmamalı.");
+  theme4AssessmentById.get("s307-q14")?.answer?.source_locator?.includes("19XU49LS.mp4") &&
+  theme4AssessmentById.get("s307-q14")?.answer?.answer_sections?.["Bu kanıtın aidiyetle ilişkisi"],
+  "s.307 Aidiyet cevapları doğrulanmış video kaynağı ve somut kanıt içermeli.");
 
 }
