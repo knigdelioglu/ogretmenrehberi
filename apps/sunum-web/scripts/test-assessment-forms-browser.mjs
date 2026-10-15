@@ -77,6 +77,8 @@ async function connectTarget(debugPort) {
   return client;
 }
 
+import { projectVideoStep } from "./video-presentation.mjs";
+
 const lessons = JSON.parse(fs.readFileSync(path.join(repoRoot, "apps/lesson-player/src/generated/lessons.json"), "utf8"));
 const files = lessons.flatMap((lesson) => lesson.steps.flatMap((step) =>
   (step.content?.sources ?? []).filter((source) => source.download === true && /\.docx$/iu.test(source.url))
@@ -89,11 +91,16 @@ let page;
 async function openStep(lessonSlug, stepId) {
   const lesson = lessons.find((entry) => entry.lesson_slug === lessonSlug);
   assert.ok(lesson, `lesson exists: ${lessonSlug}`);
-  const index = lesson.steps.findIndex((step) => step.id === stepId);
-  assert.ok(index >= 0, `step exists: ${lessonSlug}/${stepId}`);
-  const step = lesson.steps[index];
+  const step = lesson.steps.find((entry) => entry.id === stepId);
+  assert.ok(step, `step exists: ${lessonSlug}/${stepId}`);
+  // The Web Sunum catalog deliberately omits redundant transcript-only slides.
+  // Derive the ordinal from the same projection that is used for production.
+  const webSteps = lesson.steps.map((entry) => projectVideoStep(entry, lesson.lesson_id)).filter(Boolean);
+  const index = webSteps.findIndex((entry) => entry.id === stepId);
+  assert.ok(index >= 0, `Web Sunum step exists: ${lessonSlug}/${stepId}`);
+  const expectedPrompt = webSteps[index].display_prompt;
   await page.send("Page.navigate", { url: `${root}/#/${lessonSlug}/${index + 1}` });
-  await until(() => page.evaluate("document.querySelector('#canvas .slide__body')?.innerText.includes(" + JSON.stringify(step.display_prompt) + ")"), `open ${stepId}`);
+  await until(() => page.evaluate("document.querySelector('#canvas .slide__body')?.innerText.includes(" + JSON.stringify(expectedPrompt) + ")"), `open ${stepId}`);
   return { lesson, step };
 }
 

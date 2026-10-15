@@ -14,6 +14,7 @@ import { insertThinkingReveal } from "../src/reveal-sequence.js";
 import { collectThinkingRecords, thinkingRecordKey } from "./thinking-data.mjs";
 import { discoverLocalModuleGraph } from "./offline-module-graph.mjs";
 import { assessmentFormsForLessons } from "./assessment-forms.mjs";
+import { projectVideoStep } from "./video-presentation.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(here, "..");
@@ -136,6 +137,7 @@ function slimStep(step, themeId, thinking) {
     density: step.density,
     sections_layout: step.sections_layout,
     prompt: step.display_prompt,
+    ...(step.video_file ? { video_file: step.video_file } : {}),
     page: step.source?.printed_page_range ?? "",
     heading: step.source?.book_heading ?? "",
     task: step.source?.task_type ?? "",
@@ -158,11 +160,16 @@ const catalog = {
     subtitle: lesson.subtitle,
     pages: lesson.printed_page_range,
     forms: formsByLesson.get(lesson.lesson_id),
-    steps: lesson.steps.map((step) => {
+    steps: lesson.steps.flatMap((step) => {
       const key = thinkingRecordKey(lesson.lesson_id, step.id);
       const thinking = thinkingByStep.get(key);
+      const projected = projectVideoStep(step, lesson.lesson_id);
+      if (!projected) {
+        if (thinking !== undefined) fail(`${key}: Düşünürken katmanı olan video adımı gizlenemez.`);
+        return [];
+      }
       if (thinking !== undefined) matchedThinkingSteps.add(key);
-      return slimStep(step, lesson.theme_id, thinking?.text);
+      return [slimStep(projected, lesson.theme_id, thinking?.text)];
     })
   }))
 };

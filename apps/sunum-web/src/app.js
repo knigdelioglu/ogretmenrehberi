@@ -1861,6 +1861,9 @@ function stepSlide(lesson, step) {
     "footer",
     { class: "slide__foot" },
     h("span", { class: "lesson-name" }, lesson.title),
+    step.video_file
+      ? h("span", { class: "slide-video-file", title: step.video_file }, step.video_file)
+      : null,
     dots,
     h("span", { class: "counter" }, `${state.slide} / ${lesson.steps.length}${modernQuestionLayout && view.pages.length > 1 ? ` · sayfa ${view.index + 1}/${view.pages.length}` : ""}`)
   );

@@ -8,6 +8,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import { collectThinkingRecords, thinkingRecordKey } from "./thinking-data.mjs";
 import { assessmentFormsForLessons } from "./assessment-forms.mjs";
+import { projectVideoStep, videoPresentationCases, videoPresentationRule } from "./video-presentation.mjs";
 import {
   resolveVocabularyAnswerText,
   resolveWebPresentation
@@ -94,6 +95,7 @@ let otherThemeSupportLayers = 0;
 const webThemes = new Set();
 const webUnitCounts = new Map();
 const webQuoteCounts = new Map();
+const matchedVideoCases = new Set();
 const mappedSidecarOverrides = new Map();
 const webSidecars = new Map([1, 2, 3, 4].map((themeNumber) => {
   const themeId = `TEMA_0${themeNumber}`;
@@ -105,11 +107,31 @@ const webSidecars = new Map([1, 2, 3, 4].map((themeNumber) => {
 for (const [i, lesson] of canonical.entries()) {
   const out = catalog.lessons[i];
   assert.equal(out.slug, lesson.lesson_slug);
-  assert.equal(out.steps.length, lesson.steps.length, `${lesson.lesson_slug} adım sayısı`);
-  for (const [j, step] of lesson.steps.entries()) {
+  const webSteps = lesson.steps.filter((step) => {
+    const rule = videoPresentationRule(lesson.lesson_id, step.id);
+    if (rule) matchedVideoCases.add(`${lesson.lesson_id}/${step.id}`);
+    const hasTranscript = /\b(?:QR video (?:dökümü|notları|içeriği)|video dökümü|kapanış jeneriği|ekrandaki yazılar)\b/i.test(step.display_prompt ?? "") &&
+      step.content?.sections?.some((section) => /\b\d\d:\d\d\b|dış ses|ekranda görünen/i.test(`${section.title} ${section.body}`));
+    assert.ok(!hasTranscript || rule, `${lesson.lesson_id}/${step.id}: yeni video dökümü Web Sunum projeksiyonu olmadan eklenemez`);
+    return projectVideoStep(step, lesson.lesson_id) !== null;
+  });
+  assert.equal(out.steps.length, webSteps.length, `${lesson.lesson_slug} web adım sayısı`);
+  for (const [j, step] of webSteps.entries()) {
+    const projected = projectVideoStep(step, lesson.lesson_id);
+    const card = videoPresentationRule(lesson.lesson_id, step.id);
     const s = out.steps[j];
     assert.equal(s.id, step.id);
-    assert.equal(s.prompt, step.display_prompt);
+    assert.equal(s.prompt, projected.display_prompt);
+    assert.ok(!/\b19XU[A-Z0-9]{2,}\b/i.test(s.prompt),
+      `${lesson.lesson_id}/${step.id}: teknik medya dosya kodları slayt başlığına taşınmamalı`);
+    if (card?.title) {
+      assert.equal(s.content?.sections, undefined, `${step.id}: video konuşma/ekran dökümü yayımlanamaz`);
+      assert.equal(s.content?.lead, card.lead, `${step.id}: kısa tanıtım`);
+      assert.deepEqual(s.content?.items, card.items, `${step.id}: izleme odağı`);
+      assert.equal(s.video_file, projected.video_file, `${step.id}: öğretmen dosya referansı`);
+      assert.ok(!/\b\d\d:\d\d\b|döküm|transkript/i.test(JSON.stringify(s.content)),
+        `${step.id}: Web Sunum videosunda zaman kodu ya da döküm bulunmamalı`);
+    }
     assert.ok(!s.reveals.includes("note"), "öğretmen notu sunuma sızmamalı");
     const thinkingKey = thinkingRecordKey(lesson.lesson_id, step.id);
     const expectedThinking = sourceThinking.records.get(thinkingKey);
@@ -229,6 +251,8 @@ for (const [i, lesson] of canonical.entries()) {
     }
   }
 }
+assert.deepEqual([...matchedVideoCases].sort(), [...videoPresentationCases].sort(),
+  "her video sunumu kuralı kanonik bir ders adımına eşleşmeli");
 assert.deepEqual([...webThemes].sort(), [...webSidecars.keys()].sort(),
   "all four theme sidecars contribute settings to the encrypted production catalog");
 for (const [themeId, overrideIds] of webSidecars) {
