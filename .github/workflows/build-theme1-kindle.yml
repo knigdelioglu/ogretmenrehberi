@@ -43,8 +43,11 @@ jobs:
               assert "OEBPS/toc.ncx" in z.namelist()
 
           data = json.loads(report.read_text(encoding="utf-8"))
-          assert data["entries"] == 157
-          assert data["source_limited"] == 14
+          canonical = json.loads(Path(
+              "data/grade-11/source/teacher-book/theme-1/answer-bank.json"
+          ).read_text(encoding="utf-8"))["coverage"]
+          assert data["entries"] == canonical["entry_count"]
+          assert data["source_limited"] == canonical["source_limited_entries"]
           print(json.dumps(data, ensure_ascii=False, indent=2))
           PY
 
