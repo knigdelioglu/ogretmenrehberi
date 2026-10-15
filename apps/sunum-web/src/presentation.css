@@ -604,8 +604,10 @@
 
 /* Öğretmen için ikincil dosya referansı: başlıkla yarışmaz. */
 .slide--presentation .slide-video-file {
+  order: -1;
   flex: 0 1 auto;
-  max-width: 36%;
+  min-width: 0;
+  max-width: min(280px, 22%);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

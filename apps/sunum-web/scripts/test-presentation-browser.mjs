@@ -568,6 +568,44 @@ try {
     throw error;
   }
 
+// A teacher's video filename must remain legible to the LEFT of the floating
+// controls, including at browser zoom levels that previously covered it.
+const videoFileCase = builtCatalog.lessons.flatMap((lesson) =>
+  lesson.steps.map((step) => ({ lesson, step })))
+  .find(({ step }) => step.video_file?.includes("19XU4CVR.mp4"));
+assert.ok(videoFileCase, "the video filename positioning fixture exists");
+for (const [width, height, zoom] of [[1920, 1080, 1], [1228, 700, 1], [1228, 412, 1.75]]) {
+  await page.send("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: 1, mobile: false });
+  await page.evaluate(`document.documentElement.style.zoom = ${JSON.stringify(zoom)}`);
+  await openStep(videoFileCase.lesson.slug, videoFileCase.step.id);
+  const placement = await page.evaluate(`(() => {
+    for (const animation of document.querySelector('#canvas .slide')?.getAnimations() ?? []) {
+      try { animation.finish(); } catch { /* no active animation */ }
+    }
+    const label = document.querySelector('#canvas .slide-video-file');
+    const dock = document.querySelector('#dock');
+    const rect = (node) => {
+      const box = node?.getBoundingClientRect();
+      return box && { left: box.left, right: box.right, width: box.width };
+    };
+    return {
+      label: label?.textContent?.trim(),
+      labelRect: rect(label),
+      dockRect: rect(dock),
+      scrollWidth: label?.scrollWidth,
+      clientWidth: label?.clientWidth
+    };
+  })()`);
+  assert.equal(placement.label, "19XU4CVR.mp4", "video filename displays without technical prefix");
+  assert.ok(placement.labelRect?.left >= 0 &&
+    placement.labelRect?.right + 8 <= placement.dockRect?.left,
+    `video filename stays left of navigation at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
+  assert.ok(placement.scrollWidth <= placement.clientWidth + 1,
+    `video filename is fully readable at ${width}×${height}, zoom ${zoom}: ${JSON.stringify(placement)}`);
+}
+await page.evaluate("document.documentElement.style.removeProperty('zoom')");
+await page.send("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
+
 presentationBrowserSuite: {
   if (paginationGeometryAudit) {
     await page.send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
