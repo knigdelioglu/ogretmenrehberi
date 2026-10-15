@@ -15,7 +15,7 @@
 
 ## Açık kaynak ve kalite durumu
 
-- `T01-S0130`, basılı s.67'deki QR video kaydıdır. Kaynak iş listesinde videonun içerik ve altyazı incelemesi beklemede olduğundan bu kayıt ders sunumuna yansıtılmamıştır.
+- `T01-S0130`, basılı s.67'deki QR video kaydıdır. Kullanıcının sağladığı döküm `dinleme-izleme-flow.json` içindeki `s67-qr-communication` kartına işlenmiştir.
 - Tema 1 kaynak manifestosu 129 kayıt beklerken kaynak dizininde 130 kayıt bulunuyor. Bu fark nedeniyle Lesson Player `npm run build` içindeki `test:data` ve OgretmenOS projeksiyon üretimi başarısız oluyor (`UNPROJECTED_SOURCES: T01-S0130`). Kaynak kaydı veya kalite dondurma ölçütü değiştirilmedi; bu iki kalite/aktarış kapısı açık kalıyor.
 
 ## Doğrulama
