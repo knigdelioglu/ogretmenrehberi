@@ -602,12 +602,25 @@
   font-size: calc(21px / var(--canvas-scale));
 }
 
-/* Öğretmen için ikincil dosya referansı: başlıkla yarışmaz. */
-.slide--presentation .slide-video-file {
-  order: -1;
+/* Ders adı ve küçük video dosyası etiketi bitişik bir grup oluşturur;
+ * kalan alanı grup doldurur, böylece slayt sayacı sağda kalır. */
+.slide--presentation .slide__foot .lesson-meta {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  min-width: 0;
+  gap: calc(12px / var(--canvas-scale));
+}
+
+.slide--presentation .slide__foot .lesson-meta .lesson-name {
   flex: 0 1 auto;
   min-width: 0;
-  max-width: min(280px, 22%);
+}
+
+/* Öğretmen için ikincil dosya referansı: ders adının hemen sağında. */
+.slide--presentation .slide-video-file {
+  flex: 0 0 auto;
+  max-width: min(280px, 28%);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
