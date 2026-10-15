@@ -146,6 +146,37 @@
       "answer_id": "T1-P64-PERF03"
     },
     {
+      "id": "s64-video-summary",
+      "source_record_id": "T01-S0078",
+      "layout": "reference",
+      "density": "comfortable",
+      "prompt": "19XU49LL — Aklıselim: Mektuptan e-postaya iletişim",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Söyleşinin ana düşüncelerini ve ekranda öne çıkarılan ifadeleri notlarınızla ilişkilendirin.",
+        "sections": [
+          {
+            "title": "Sözlü anlatımdan öne çıkanlar",
+            "body": "00:07–00:32’de Doç. Dr. Ahmet Dağ, Hamza Müslümanoğlu ve Abdurrahman Mıhçıoğlu ile mektuptan e-postaya iletişim araçlarını ve bunların yaşam üzerindeki etkilerini konuşacaklarını tanıtır; konuklarla selamlaşır. 00:41–02:01’de iletişimi paylaşma, yeni düşünceler edinme ve medenileşmeyle ilişkilendirerek insanların neden iletişim kurduğunu sorar. Hamza Müslümanoğlu (02:02–04:00), özellikle 1960’lar ve 1970’lerde mektubun uzaktaki kişilerden haber almayı sağladığını; yazılanların tekrar okunup üzerinde düşünülebildiğini anlatır. Dağ (04:00–05:18), e-postanın sağlık, eğitim ve bürokraside sağladığı hız ve erişim kolaylıklarından söz eder; ilk e-postayı 1971’de ARPANET’e bağlar ve yaygınlaşmanın özellikle 1990’lardan sonra hızlandığını belirtir."
+          },
+          {
+            "title": "Ekranda görünen yazılar",
+            "body": "00:01–00:04: “İçerikte alt yazı seçeneği bulunmaktadır. ↓”. 00:05–00:06: “AKLISELİM” program logosu. Kanal/stüdyo logoları: sol üstte “TRT TÜRK”; sağ üstte ve kırmızı kupalarda “TRT”. 00:25–00:32 alt bandı: “AKLISELİM” / “Doç. Dr. Ahmet DAĞ” / “Uludağ Üni. İlahiyat Fak. Felsefe Tarihi Öğretim Üyesi”. 00:51–01:13: “İletişim, bir medenileşme hareketidir.” 02:01–02:40: “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” 02:54–03:59: “Mektup, sevginin kanatlanmış hâlidir.” 04:00–05:17: “İlk e-posta 1971 yılında atıldı.” Bu alıntıların alt bant başlığı “AKLISELİM” olarak görünür."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.64 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=64"
+          },
+          {
+            "label": "Değişen İletişim Araçlarının Hayatımızdaki Yeri — resmî EBA videosu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=29bf4f293d533dd8a69466ad7e00f8d0&resourceType=1&resourceLocation=2"
+          }
+        ]
+      }
+    },
+    {
       "id": "s64-observation",
       "source_record_id": "T01-S0079",
       "layout": "assessment",

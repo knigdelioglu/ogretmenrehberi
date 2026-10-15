@@ -539,17 +539,7 @@
             "Farklılık"
           ]
         }
-      ],
-      "answer_text": {
-        "mode": "include",
-        "fragments": [
-          {
-            "unit": "comparison",
-            "text": "genel folklor bilgisini videoda görülmüş bir özellik gibi sunmayın.",
-            "position": "start"
-          }
-        ]
-      }
+      ]
     },
     "T2-P143-Q02": {
       "units": [
@@ -646,17 +636,7 @@
             "Söyleyicinin Metne Katkısı"
           ]
         }
-      ],
-      "answer_text": {
-        "mode": "include",
-        "fragments": [
-          {
-            "unit": "comparison",
-            "text": "Nezaket, vurgu, jest, diksiyon veya hazırcevaplık gibi özellikleri videoda kanıtını görmeden kesinleştirmeyin.",
-            "position": "start"
-          }
-        ]
-      }
+      ]
     },
     "T2-P147-PERF01": {
       "units": [
@@ -1705,23 +1685,6 @@
         ]
       }
     },
-    "T2-P143-Q03": {
-      "answer_text": {
-        "mode": "include",
-        "fragments": [
-          {
-            "unit": "Söz Varlığı",
-            "text": "Bu çıkarım, önceki T diyagramında videodan yapılan gerçek tespitlere dayanır; video izlenmeden bu atışmaya özgü kesin sonuç yazılmaz.",
-            "position": "start"
-          },
-          {
-            "unit": "Doğrudan İletişim",
-            "text": "Kitaptaki Başgöz metni saz şairlerinin eserlerini bir çalgıyla birlikte söylediğini belirttiği için söz–ezgi ilişkisi güvenli bir başlangıç noktasıdır; diğer özellikler aşağıdaki şablonla videodaki örneklerden gösterilir.",
-            "position": "end"
-          }
-        ]
-      }
-    },
     "T2-P146-PERF01": {
       "answer_text": {
         "mode": "include",
@@ -1775,13 +1738,8 @@
         "mode": "include",
         "fragments": [
           {
-            "unit": "Örnek Seçim Havuzu — zorunlu cevap değil",
-            "text": "Video izlenmeden onda hangi eserlerin anıldığını varsaymayın.",
-            "position": "start"
-          },
-          {
-            "unit": "Örnek Seçim Havuzu — zorunlu cevap değil",
-            "text": "Aşağıdaki eserler videonun içeriği değil, karşılaştırma için yararlanılabilecek olası örneklerdir.",
+            "unit": "Örnek seçimler — zorunlu cevap değil",
+            "text": "Dîvânu Lugâti't-Türk, Kutadgu Bilig veya Dede Korkut Hikâyeleri gibi bir eser seçilebilir",
             "position": "start"
           }
         ]

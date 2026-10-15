@@ -66,7 +66,7 @@
           "İletişim engellerini giderme",
           "İzleme stratejisi ve kısa not yöntemi"
         ],
-        "note": "Video içeriği görülmeden olay, kişi veya sonuç ayrıntısı önceden verilmez.",
+        "note": "İzleme sonrasında özet kartındaki ayrıntıları kendi notlarınız ve gözlemlerinizle karşılaştırın.",
         "sources": [
           {
             "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
@@ -162,6 +162,69 @@
       }
     },
     {
+      "id": "s286-video-notes",
+      "source_record_id": "T04-S0085",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "QR video notları — Anadolu İnsanı / Fedakârlık",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Belgesel, Anadolu insanını sabır, cesaret, merhamet, dürüstlük, cömertlik ve fedakârlık değerleriyle tanıtır; ardından Manisa Ahmetli'de yaşayan Mehmet Bey'in öyküsüne odaklanır.",
+        "sections": [
+          {
+            "title": "Demiryolundaki emek",
+            "body": "Mehmet Bey, Devlet Demiryollarında 30 yıl yol kontrol memurluğu yaptığını ve görevdeyken günde yaklaşık 20 kilometre yürüdüğünü anlatır. Aksaklıkları giderir, gereken durumlarda bakım ekibine haber verir veya treni durdurur. Emekli olduktan sonra da raylarda yürümeyi sürdürür."
+          },
+          {
+            "title": "Canlıları ve doğayı koruma",
+            "body": "Mehmet Bey, raylarda karşılaştığı 1000'den fazla kaplumbağayı kurtardığını söyler. Ayrıca Ahmetli, Turgutlu ve Salihli çevresine yaklaşık 6000 fidan diktiğini; ormanların erozyonu önlemedeki ve su kaynaklarını korumadaki önemini anlatır. Belgeselin sonunda orman yangınlarına ilişkin kaygısı ve doğayı koruma çabası öne çıkar."
+          },
+          {
+            "title": "Söz varlığı",
+            "body": "Dış ses Anadolu insanını “sabırlı, cesur, fedakâr” ve “merhamet, dürüstlük, cömertlik” sözleriyle tanıtır. Mehmet Bey'in anlatımında “aksaklık” raylardaki sorunları, “hemzemin geçit” kara yolu ile rayların kesiştiği yeri anlatır. Dış ses, kaplumbağaları kurtarmayı sürdürmesini yeni bir “mesai” olarak niteler; “tahammül” sözcüğünü orman yangını düşüncesine karşı tutumunu aktarırken kullanır."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s286-screen-text",
+      "source_record_id": "T04-S0085",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Ekrandaki yazılar — başlıklar, logo ve işaretler",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Videoda görünen logo, başlık, tabela ve altyazı bildirimlerini inceleyin.",
+        "sections": [
+          {
+            "title": "Ekrandaki yazılar",
+            "body": "00:01–00:04'te “İçerikte alt yazı seçeneği bulunmaktadır. ↓” uyarısı görünür. Sol üstte “TRTBELGESEL / BELGESEL” logosu yer alır. 00:52–00:56'da “ANADOLU İNSANI”, 01:39–01:40'ta “FEDAKARLIK” başlığı çıkar. Mehmet Bey'in şapkasında TCDD amblemi ve “www.tcdd.gov.tr” adresi; 02:58, 04:15 ve 04:22'de ray kenarında “H 275” ve “117” levhaları görülür."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s286-closing-credits",
+      "source_record_id": "T04-S0085",
+      "layout": "reference",
+      "density": "compact",
+      "prompt": "Kapanış jeneriği — ekip ve teşekkürler",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "06:40–07:08 arasında görünen kapanış jeneriği.",
+        "sections": [
+          {
+            "title": "Yapım ekibi",
+            "body": "Yönetmen / Director: MUSTAFA KORAY POLAT. Yapımcı / Producer: EMRAH KEKİLLİ. TRT Belgesel Yapım Sorumlusu / Head of Production of TRT Belgesel: EVRİM İNCİ, SELİN TOKLAR. Metin Yazarı / Copywriter: ONUR KOÇASLAN. Görüntü Yönetmeni / D.O.P: ABDULLAH TARIK KARAGÖZ. Drone Operatörü / Drone Operator: AYAZ BİLGİÇ. Kurgu / Edit: FIRAT TÜGEN. Yönetmen Yardımcısı / Assistant Director: ZEKİ CAN ÜNLÜ. Seslendirmen / Narrator: ALİ RAGIP İPİN. Müzik / Music: ALİ SARAN. Kamera / Camera: ONUR ATEŞ. Ses / Sound: UMUT KAYABAŞ. Ses Miksaj / Sound Mix: FIRAT TÜGEN. Renk Düzenleme / Color Correction: HAKAN PALİOĞLU. Ses Kayıt / Sound Recording: VEDAT VURAL. Altyazı / Subtitle: DEMET KENAR."
+          },
+          {
+            "title": "TEŞEKKÜRLER / THANKS",
+            "body": "NURETTİN GÜRMAN, KAMİL GÜRMAN, FATMA GÜRMAN, NURİ GÜRMAN, EMİNE GÜRMAN, FATMA GÜRMAN, OLCAY ÖZTÜRKLER, YAVUZ ÖZTÜRKLER, MEHMET ERBİL, MEHMET GÜNAY ESER, RAMAZAN ÇEPNİ, BARIŞ ÇEPNİ, İSA ÇEPNİ."
+          }
+        ]
+      }
+    },
+    {
       "id": "s286-theme-words",
       "source_record_id": "T04-S0085",
       "answer_id": "T4-P286-Q02",
@@ -170,13 +233,12 @@
       "prompt": "Dinleme notları 2 — Hayatın Aynası temasını yansıtan gerçek kelime ve ifadeleri kaydediniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Genel çağrışım üretmeyin; videoda gerçekten duyduğunuz kelime veya ifadeyi not edin.",
+        "lead": "Dış sesin nitelendirmelerini ve Mehmet Bey'in anlatımındaki sözcükleri bağlamlarıyla eşleştirin.",
         "items": [
           "İfade",
           "Videoda geçtiği bağlam",
           "Hayatın Aynası temasıyla ilişkisi"
         ],
-        "note": "Uzun Fedakârlık videosunun bazı görüntüleri incelendi; ancak tam konuşma/ses dökümü bulunmadığı için videoda duyulan sözcükler hazır liste olarak verilmez. Görsel kanıt, sesli ifade yerine kullanılamaz.",
         "sources": [
           {
             "label": "Ders kitabı s.285 — karekodun bulunduğu sayfayı aç",
@@ -362,7 +424,7 @@
             "body": "Yorum, değerlendirme, beğeni veya değer yargısı."
           }
         ],
-        "note": "Video transkripti bulunmadığı için Lesson Player örnek cümle uydurmaz."
+        "note": "Dış sesin genel değerlendirmeleriyle Mehmet Bey'in kişisel deneyim anlatımını ayrı ayrı inceleyin."
       }
     },
     {

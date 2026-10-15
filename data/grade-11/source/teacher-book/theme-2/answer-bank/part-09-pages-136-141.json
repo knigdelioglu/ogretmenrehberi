@@ -143,51 +143,51 @@
     },
     {
       "question_id": "T2-P140-VOC01",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 140,
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Çağ, canan, sine, kahır, saban kelimelerini atışmadaki bağlamına göre anlamlandırma ve alternatif önerme",
-      "answer": "Çağ, canan, sine, kahır ve saban kelimelerinin videoda geçtiği dizeleri bulun. Her kelimenin anlamını bağlamdan tahmin edin, TDK Güncel Türkçe Sözlük'te kontrol edin ve dizedeki anlama uygun bir alternatif önerin. Videoda duymadığınız bir mecaz veya yan anlamı kesin bilgi gibi yazmayın.",
-      "guidance": "Videonun yaklaşık 00:10–03:20 bölümünde iki saz icracısının nöbetleşe söyleyişi ve 02:20 civarında seyircinin alkışı görüntüde görülmektedir. Bu görsel kanıt atışmanın icra biçimini açıklamak içindir; *çağ, canan, sine, kahır, saban* sözcüklerinin hangi dizelerde geçtiğini kanıtlamaz. Sözcüğün videodaki bağlamı için öğrenciden mısrayı gerçekten işiterek not etmesini, ardından anlam tahminini TDK ile kontrol etmesini isteyin.",
-      "source_locator": "basılı s.140 / PDF s.141 — video EBA QR 85ae59be9852fb990c8de54f7cb313ce; aday 19XU49JV.mp4; görsel sahne kanıtı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md. TDK karekodu ayrıca kitapta bulunur; sesli mısra transkripti eksik.",
+      "answer": "Dökümde çağ, canan, kahır ve saban sözcükleri ilgili dörtlüklerde geçer; sine sözcüğü aktarılan dizelerde yer almaz. Sözcük anlamlarını sözlükle karşılaştırın ve video bağlamındaki anlamı, sözcüğün geçtiği dizeye dayanarak açıklayın.",
+      "guidance": "Dizeyi ve sözlük anlamını yan yana kullanın: “Zaman geçen çağ gibiyim”; “Başı duman cananın dağ gibiyim”; “Yel vurması neme kahır”; “Saban gibi toprakları / Eş eşebilirsen eğer.” Sine için dökümde geçen bir dize olmadığından bağlamsal anlam çıkarmayın.",
+      "source_locator": "basılı s.140 / PDF s.141 — QR-EBA-85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; ses ve ekran yazısı dökümü",
       "answer_sections": {
         "çağ": {
           "temel_sozluk_alani": "zaman, dönem, devir",
-          "videodaki_dize": "[Kelimenin geçtiği gerçek dize]",
-          "baglam_tahmini": "[Dizeden çıkardığınız anlam]",
-          "tdk_kontrolu": "[TDK ile doğrulanan anlam]",
-          "alternatif": "[Dizenin anlamını bozmayacak öneri]"
+          "videodaki_dize": "“Zaman geçen çağ gibiyim.”",
+          "baglam_tahmini": "Zamanın ilerlemesini veya değişen dönemi çağrıştırır.",
+          "tdk_kontrolu": "zaman dilimlerinden her biri; devir",
+          "alternatif": "Dizedeki çağ sözcüğü yerine “devir” düşünülebilir; ölçü ve uyak açısından ayrıca değerlendirilir."
         },
         "canan": {
-          "temel_sozluk_alani": "sevgili, gönülden sevilen kimse",
-          "videodaki_dize": "[Kelimenin geçtiği gerçek dize]",
-          "baglam_tahmini": "[Dizeden çıkardığınız anlam]",
-          "tdk_kontrolu": "[TDK ile doğrulanan anlam]",
-          "alternatif": "[Bağlama uygun öneri]"
+          "temel_sozluk_alani": "gönülden sevilen kimse, sevgili",
+          "videodaki_dize": "“Başı duman cananın dağ gibiyim.”",
+          "baglam_tahmini": "Canan, gönülden sevilen kişiyi anlatır; dize onu başı dumanlı dağa benzetir.",
+          "tdk_kontrolu": "gönülden sevilen kimse",
+          "alternatif": "“Sevgili” anlamca yakın bir karşılıktır; dizede ses ve uyak etkisini ayrıca tartışın."
         },
         "sine": {
-          "temel_sozluk_alani": "göğüs, bağır; bağlama göre iç/gönül çağrışımı",
-          "videodaki_dize": "[Kelimenin geçtiği gerçek dize]",
-          "baglam_tahmini": "[Dizeden çıkardığınız anlam]",
-          "tdk_kontrolu": "[TDK ile doğrulanan anlam]",
-          "alternatif": "[Bağlama uygun öneri]"
+          "temel_sozluk_alani": "göğüs, bağır",
+          "videodaki_dize": "Dökümde bu sözcüğün geçtiği bir dize yer almıyor.",
+          "baglam_tahmini": "Bu dörtlüklerdeki bağlamı belirlenemiyor.",
+          "tdk_kontrolu": "göğüs, bağır",
+          "alternatif": "Video bağlamında kullanılacak bir alternatif öneri için sözcüğün geçtiği dize gerekir."
         },
         "kahır": {
           "temel_sozluk_alani": "derin üzüntü veya acı, sıkıntı",
-          "videodaki_dize": "[Kelimenin geçtiği gerçek dize]",
-          "baglam_tahmini": "[Dizeden çıkardığınız anlam]",
-          "tdk_kontrolu": "[TDK ile doğrulanan anlam]",
-          "alternatif": "[Bağlama uygun öneri]"
+          "videodaki_dize": "“Yel vurması neme kahır,”",
+          "baglam_tahmini": "Kahır, yel vurmasının doğurduğu sıkıntı veya üzüntüyü belirtir.",
+          "tdk_kontrolu": "derin üzüntü veya acı, sıkıntı",
+          "alternatif": "“Sıkıntı” anlamca yakın bir karşılıktır; dizedeki ses düzenine katkısını tartışın."
         },
         "saban": {
-          "temel_sozluk_alani": "toprağı sürmekte kullanılan tarım aracı",
-          "videodaki_dize": "[Kelimenin geçtiği gerçek dize]",
-          "baglam_tahmini": "[Dizeden çıkardığınız anlam]",
-          "tdk_kontrolu": "[TDK ile doğrulanan anlam]",
-          "alternatif": "[Bağlama uygun öneri]"
+          "temel_sozluk_alani": "toprağı sürmeye yarayan tarım aracı",
+          "videodaki_dize": "“Saban gibi toprakları, / Eş eşebilirsen eğer.”",
+          "baglam_tahmini": "Saban ve eşmek sözcükleri toprağı işleme görüntüsü kurar.",
+          "tdk_kontrolu": "toprağı sürmeye yarayan çiftçilik aracı",
+          "alternatif": "“Sürmek” ya da “işlemek” anlamı düşünülebilir; dizeyi ve tekrar edilen kapanış kalıbını koruyup korumadığı tartışılır."
         }
       },
-      "explanation": "Âşık atışması performansının sahne ve saz ilişkisi örnek karelerle incelendi. Ses dökümü tamamlanmadığı için kelimelerin geçtiği dizeler ve mecaz anlamlar doğrulanmış sayılamaz. TDK sözlük bağlantısı, video karekodundan ayrı bir kitap karekodudur.",
+      "explanation": "Söz varlığı çalışması, her kelimenin dizedeki kullanımını sözlük anlamıyla karşılaştırır. Dökümde bulunmayan sine sözcüğüne video içi bir bağlam atfedilmez.",
       "dictionary_terms": [
         {
           "term": "çağ",

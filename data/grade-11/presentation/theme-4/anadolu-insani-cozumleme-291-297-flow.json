@@ -35,10 +35,10 @@
       "answer_id": "T4-P291-Q11",
       "layout": "assessment",
       "density": "compact",
-      "prompt": "Metni Anlayalım 11 — Fedakârlık videosunu çalışkanlığın öğrenme ve kavramadaki önemini gösterecek biçimde özetleyiniz.",
+      "prompt": "Metni Anlayalım 11 — Fedakârlık videosunun ana olayını ve iletisini özetleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Yalnız videoda bulunan ana olay, kişi, fedakârlık davranışı ve sonuçları seçin; yeni olay eklemeyin."
+        "lead": "Manisa Ahmetli'de yaşayan emekli demiryolu görevlisi Mehmet Bey'in raylardaki kaplumbağaları kurtarmayı ve çevresine fidan dikmeyi sürdürmesini; emeği ve doğaya karşı sorumluluğu öne çıkararak özetleyin."
       }
     },
     {
@@ -81,7 +81,7 @@
           "Tür",
           "İçerik"
         ],
-        "note": "Çalışkanlık ve Fedakârlık videolarının kısmi görüntüleri incelendi. Görülen tarımsal üretim ve çevre ayrıntılarıyla başlayın; tam ses dökümü olmadığından Dil ve Üslup ile kesin İleti hücreleri henüz doldurulmaz.",
+        "note": "Fedakârlık videosunda Mehmet Bey'in demiryolu görevini, kaplumbağaları kurtarmasını ve fidan dikmesini; Çalışkanlık videosunda tarımsal üretim görüntülerini dört başlık altında karşılaştırın.",
         "sources": [
           {
             "label": "Ders kitabı s.293 — karekodun bulunduğu sayfayı aç",
@@ -94,6 +94,37 @@
           {
             "label": "Fedakârlık — karşılaştırma videosu EBA hedefi",
             "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=5fd2b97cb78fabe367aa3fcde8f9718d&resourceType=1&resourceLocation=2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s293-video-summary",
+      "source_record_id": "T04-S0099",
+      "layout": "reference",
+      "density": "comfortable",
+      "prompt": "QR video notları — Anadolu İnsanı / Çalışkanlık",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Kırtık köyünde yıl boyunca sürdürülen bahçecilik emeğini, organik üretimi ve bu yaşam biçiminin kuşaklar arasındaki geleceğini birlikte değerlendirin.",
+        "sections": [
+          {
+            "title": "Sözlü anlatımdan öne çıkanlar",
+            "body": "00:09–00:33’te dış ses, Balıkesir Burhaniye’nin Kırtık köyünü ve zeytin ile çam fıstığının yanı sıra bahçeciliğin geçim kaynağı oluşunu tanıtır. 00:37’de Muharrem ve Zübeyde, torunlarıyla hasat için bahçeye gider. 00:55–01:36’da yaylanın hayvancılıktan çok tarıma elverişli koşulları, köy ile yayla arasındaki traktör yolculuğu ve köylülerin çalışkanlığı anlatılır. Muharrem Bey (01:38–01:59), bahçe, zeytin ve çam fıstığı işlerinin yıl boyunca birbirini izlediğini açıklar. 02:07–02:24’te dış ses bahçelerde organik tarım yapıldığını ve köyün sertifikalı organik üretim yapan yerlerden biri olduğunu belirtir; Muharrem Bey (02:27–02:49) 2009’dan beri bahçesinde ilaç kullanmadığını ve bu yöntemden memnun olduğunu söyler. 02:53–03:22’de sebze ve meyve çeşitleri ile aile iş gücünün azalması anlatılır. Zübeyde Hanım (03:37–03:54), çocukların evlenip ayrılmasından sonra işlerin kendileriyle kaldığını, yaşlandıklarını ve bu üretim biçiminin yeni kuşağa geçmeyebileceğini dile getirir. 04:02–04:42’de geçmişte yaşanan yoksulluk, ulaşım ve yaşam güçlüklerini hatırlar. 04:43–05:01’de dış ses, yaşam boyu süren emeği ve organik ürünlerin zamanla değer kazanmasını vurgular."
+          },
+          {
+            "title": "Ekranda görünen yazılar",
+            "body": "00:01–00:04’te ekranın sağ alt köşesinde açık kitap ve sonbahar yaprakları üzerinde “İçerikte alt yazı seçeneği bulunmaktadır. ↓” bildirimi görünür. Bunun dışında kanal logosu, jenerik metni, alt yazı veya kişi tanıtım alt bandı yer almaz."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.293 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=293"
+          },
+          {
+            "label": "Anadolu İnsanı / Çalışkanlık — resmî EBA videosu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=cc654606d608113ea65f523584ab801b&resourceType=1&resourceLocation=2"
           }
         ]
       }
@@ -319,7 +350,7 @@
             "body": "Ses ve görüntü birlikte hangi daha geniş anlamı kuruyor?"
           }
         ],
-        "note": "Fedakârlık videosuna özgü sonuç, gerçek deneyden sonra yazılmalıdır."
+        "note": "Dış sesin anlatımıyla Mehmet Bey'in kendi sözlerinin ve görüntülerin anlamı nasıl birlikte kurduğunu değerlendirin."
       }
     },
     {

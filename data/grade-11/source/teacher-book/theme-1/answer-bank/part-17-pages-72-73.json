@@ -6,30 +6,32 @@
   "entries": [
     {
       "question_id": "T1-P72-Q01",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 72,
       "question_no": "1",
       "prompt_summary": "Videoda güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleme",
-      "answer": "Tabloyu öncelikle izlediğiniz videoda gerçekten geçen söz ve ifadelere dayanarak doldurun. Basılı sayfada verilen “Aklıselim programına hoş geldiniz.” sözü nezaket örneğidir; güven, saygı ve yapıcılığa ilişkin ifadeleri videodan seçin. Jest, tavır veya konuşma davranışları ancak seçtiğiniz ifadenin bağlamını açıklayan destekleyici kanıt olarak kullanılabilir.",
+      "answer": "Tabloda söyleşideki ifadeleri iletişim nitelikleriyle eşleştirin. Selamlaşma ve teşekkürler nezaketi; “hocam”, “Şeyhim” ve “baba” gibi hitaplar saygıyı gösterir. Davacılara akıl ve vicdanla hükmetmeye çalışma güvenilir ve adil iletişim örneğidir. “Adil ol”, “kararlarında aceleci olma” ve bilgiyi destekleme öğütleri yapıcı iletişime örnektir.",
       "answer_sections": {
-        "Nezaket": {
-          "Kitapta Görünen Örnek": "“Aklıselim programına hoş geldiniz.”",
-          "Videoda Aranacak İfadeler": "Selamlama, teşekkür, rica, izin isteme, nazik hitap veya farklı görüşü kırmadan dile getiren sözler."
-        },
-        "Güven": {
-          "Videoda Aranacak İfadeler": "Bilginin kaynağını açıkça belirten, belirsizliği dürüstçe ifade eden veya ölçülü ve tutarlı açıklama içeren sözler."
-        },
-        "Saygı": {
-          "Videoda Aranacak İfadeler": "Muhataba uygun hitap eden, farklı görüşü küçümsemeden karşılayan veya karşı tarafın düşüncesini dikkate aldığını gösteren sözler."
-        },
-        "Yapıcılık": {
-          "Videoda Aranacak İfadeler": "Sorunla birlikte çözüm öneren, eleştiriyi geliştirmeye yönelten veya ortak bir noktaya ulaşmaya çalışan sözler."
-        },
-        "Davranışların Kullanımı": "Söz kesmeme, dinleme, ses tonu veya beden dili gibi davranışlar yardımcı bağlam kanıtı olabilir; fakat soru özellikle ifade istediği için ana örnek olarak videodaki sözleri yazın."
+        "Nezaket": [
+          "“TRT Türk ekranlarından iyi akşamlar.”",
+          "“Hoş geldiniz.”",
+          "“Hoş bulduk.”",
+          "“Allah razı olsun.”"
+        ],
+        "Saygı": [
+          "“Hocam”, “Şeyhim” ve “baba” hitapları.",
+          "“Edebalı babamızla Ildız Hatun anamızın elini öpelim” sözü."
+        ],
+        "Güven": "Osman Bey, davacı ve davalı ayrımı yapmadan kararlarını akıl ve vicdanına göre vermeye çalıştığını söyler.",
+        "Yapıcılık": [
+          "“Hak yeme oğul. Adil ol.”",
+          "“Kararlarında aceleci olma.”",
+          "Bilginin ve okumuş yazmış kişilerin desteklenmesini öğütleyen bölüm."
+        ],
+        "Davranışların Kullanımı": "Sözlerin geçtiği sahnedeki dinleme ve karşılıklı hitap biçimleri, seçilen ifadelerin bağlamını açıklamak için kullanılabilir."
       },
-      "guidance": "Önce öğrenciden videoda gerçekten duyduğu ifadeyi yazmasını, ardından bu ifadenin neden güven, saygı, yapıcılık veya nezaket gösterdiğini açıklamasını isteyin. Kitapta görünmeyen cümleleri video repliği gibi yazmayın. Davranışları yalnız ifadenin bağlamını desteklemek için kullanın.",
-      "source_locator": "basılı s.72 / PDF s.73 — Değişen İletişim Araçlarının Hayatımızdaki Yeri: QR-EBA-29BF4F293D53 / 19XU49LL.mp4; “Aklıselim programına hoş geldiniz.” örneği basılı kitapta görülebilir; başka sözlü örnekler ses transkriptiyle doğrulanmadı",
-      "explanation": "source_limited: “Aklıselim programına hoş geldiniz.” basılı sayfada görünür; diğer örnekler QR videodan doğrulanmalıdır."
+      "guidance": "Önce söyleşiden bir ifade seçtirin, ardından bunun güven, saygı, yapıcılık veya nezaket niteliğini nasıl gösterdiğini açıklatın. Aynı ifade birden fazla nitelikle ilişkilendirilebilir; gerekçe isteyin.",
+      "source_locator": "basılı s.72 / PDF s.73 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı tarafından sağlanan söyleşi dökümü"
     },
     {
       "question_id": "T1-P72-Q02",
@@ -51,47 +53,34 @@
     },
     {
       "question_id": "T1-P73-Q01",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 73,
       "question_no": "1",
       "prompt_summary": "Videonun diline ilişkin beğenileri gerekçelendirme",
-      "answer": "Videonun diline ilişkin değerlendirmenizi somut kanıtlarla gerekçelendirin. Videoya erişemiyorsanız belirli bir dil özelliğini görmüş veya duymuş gibi yazmayın.",
+      "answer": "Programın açılışında konu açıkça tanıtılır ve iletişim araçlarının insan yaşamındaki yeri hakkında yönlendirici bir soru kurulur. Konukların mektubun duygusal ve yeniden okunabilir yönleriyle e-postanın hız ve kullanım kolaylıklarını karşılaştırması, konuyu örneklerle geliştirir. Alt bantlardaki kısa ifadeler de temel düşünceleri öne çıkarır.",
       "answer_sections": {
-        "Kelime Seçimi": "Kelimeler açık, anlaşılır ve hedef kitleye uygun mu? Beğenilen veya dikkat çeken bir örnek gösterin.",
-        "Cümle Yapısı ve Akıcılık": "Cümleler takip edilebilir mi? Düşünceler arasında bağlantı açık mı?",
-        "Terimlerin Açıklanması": "Soyut veya teknik kavramlar anlaşılır biçimde açıklanıyor ya da örneklendiriliyor mu?",
-        "Ses Tonu, Diksiyon ve Vurgu": "Ses tonu, tempo, telaffuz ve vurgu anlamı destekliyor mu?",
-        "Görsel–İşitsel Uyum": "Görüntüler, yazılar veya grafikler sözlü anlatımı destekliyor mu?",
-        "Gerekçe Şablonu": "“Videonun ... özelliğini beğendim; çünkü ... bölümünde ... örneğini gördüm/duydum.”"
+        "Konuya uygunluk ve açıklık": "Mektuptan e-postaya geçiş ve bu araçların etkileri programın başında açıklanır.",
+        "Örnek ve gerekçeler": "Mektubun 1960–70’lerdeki işlevi; hastane, eğitim ve bürokraside e-posta kullanımı somut örnekler sunar.",
+        "Dil ve anlatım": "“Mektup, sevginin kanatlanmış hâlidir.” gibi mecazlı sözler anlatıma duygu katar; konuşmadaki uzun cümlelerin anlaşılabilirliğini de değerlendirebilirsiniz.",
+        "Görsel yazılar": "Program adı, konuşmacı tanıtımı ve konuya ilişkin alt bantlar söyleşinin ana başlıklarını görünür kılar."
       },
-      "guidance": "“Çok güzeldi / akıcıydı” gibi genel yargılar yerine videodan gerçek örnek isteyin. Video erişilemiyorsa spesifik beğeni uydurmayın; yalnız değerlendirme ölçütlerini öğretin.",
-      "source_locator": "basılı s.73 / PDF s.74; QR video gerekli",
-      "explanation": "source_limited: videonun gerçek kelime seçimi, grafik kullanımı, temposu ve diksiyonu ancak QR içeriği görülerek değerlendirilebilir."
+      "guidance": "Genel “güzeldi / akıcıydı” yargıları yerine söyleşiden bir söz, örnek veya sunuş tercihi seçtirin; bunun izleyici üzerindeki olası etkisini açıklatın. Ses tonu ve diksiyonla ilgili değerlendirmeleri öğrencinin dinleme gözlemine dayandırın.",
+      "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı dökümü"
     },
     {
       "question_id": "T1-P73-Q02",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 73,
       "question_no": "2",
       "prompt_summary": "Videodaki olumsuz dil özellikleri ve çözüm önerileri",
-      "answer": "Videoda gerçekten gözlediğiniz bir sorunu belirleyin ve buna doğrudan karşılık veren bir çözüm önerin. Belirgin bir sorun görmediyseniz bunu kanıtınızla birlikte açıklayın.",
+      "answer": "Ahmet Dağ’ın 00:41–02:01 arasındaki girişinde bazı cümleler uzundur ve “farklı bir düzlemde/farklı bir hayat tasavvuru” düşüncesi birkaç kez yinelenir. Anlatımı daha kısa cümlelere bölmek ve temel soruyu daha erken kurmak açıklığı artırabilir. Öğrenciler başka bir sorun gözlemlediyse onu da kanıt ve uygun çözümle gerekçelendirebilir.",
       "answer_sections": {
-        "Sorun–Çözüm Şablonları": [
-          "Eğer konuşma bazı bölümlerde gereğinden hızlıysa → önemli kavramlarda tempo düşürülebilir ve kısa duraklamalar yapılabilir.",
-          "Eğer teknik/soyut bir terim açıklanmadan kullanılıyorsa → kısa tanım veya günlük yaşam örneği eklenebilir.",
-          "Eğer görsel sözlü anlatımla ilişkisizse → doğrudan anlatılan kavramı destekleyen görsel tercih edilebilir.",
-          "Eğer cümleler gereğinden uzun/karmaşıksa → daha kısa ve açık cümlelere bölünebilir.",
-          "Eğer konuşmacı ile izleyici arasında etkileşim azsa → uygun yerlerde soru, örnek veya kısa düşünme araları eklenebilir."
-        ],
-        "Gözlem ve çözüm önerim": {
-          "Videoda gözlediğim sorun": "[Somut sahne/söz/sunum tercihi]",
-          "Neden sorun oluşturuyor?": "[Anlama, dikkat, nezaket veya akıcılık üzerindeki etkisi]",
-          "Çözüm önerim": "[Soruna doğrudan karşılık veren uygulanabilir öneri]"
-        }
+        "Gözlenen özellik": "Bazı uzun cümleler ve benzer düşüncelerin tekrarı dinlemeyi zorlaştırabilir.",
+        "Neden sorun oluşturabilir?": "Dinleyici ana düşünceyi takip ederken cümle içindeki bağlantıları akılda tutmakta zorlanabilir.",
+        "Çözüm önerisi": "Uzun cümleleri daha kısa birimlere ayırmak, tekrarları azaltmak ve temel soruyu doğrudan ifade etmek."
       },
-      "guidance": "Sırf tabloyu doldurmak için kusur üretmeyin. Öğrenci belirgin bir olumsuzluk görmediyse bunu söyleyebilir; varsa eleştiri mutlaka somut video kanıtına ve doğrudan ilişkili bir çözüme dayanmalıdır.",
-      "source_locator": "basılı s.73 / PDF s.74; QR video gerekli",
-      "explanation": "source_limited: terim hızı, tek yönlülük veya stok görüntü gibi belirli kusurlar QR video görülmeden bu metne atfedilemez."
+      "guidance": "Sorun belirleyen öğrenciden ilgili söz veya bölümü, olası etkisini ve buna doğrudan karşılık veren bir düzenleme önerisini birlikte istemek gerekir. Belirgin sorun görmeyen öğrenci de bunu gerekçelendirebilir.",
+      "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kullanıcı dökümü"
     },
     {
       "question_id": "T1-P73-PERF01",

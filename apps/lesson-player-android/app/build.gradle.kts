@@ -71,8 +71,18 @@ dependencies {
 
  
 // Generate assets from the *same validated data as web* before any APK build.
+val lessonPlayerRoot = rootProject.projectDir.resolve("../lesson-player")
+val canonicalDataRoot = rootProject.projectDir.resolve("../../data/grade-11")
 val prepareLessonAssets = tasks.register<Exec>("prepareLessonAssets") {
     workingDir = rootProject.projectDir
+    inputs.dir(lessonPlayerRoot.resolve("scripts"))
+    inputs.file(lessonPlayerRoot.resolve("src/teacher-workflow.json"))
+    inputs.file(lessonPlayerRoot.resolve("src/runtime-contracts.js"))
+    inputs.dir(canonicalDataRoot.resolve("presentation"))
+    inputs.dir(canonicalDataRoot.resolve("source/teacher-book"))
+    outputs.file(lessonPlayerRoot.resolve("src/generated/lessons.json"))
+    outputs.dir(projectDir.resolve("src/main/assets/lesson-player"))
+    outputs.dir(rootProject.projectDir.resolve("remote-content"))
     commandLine("node",
         rootProject.projectDir.resolve("../lesson-player/scripts/package-android-data.mjs"))
 }

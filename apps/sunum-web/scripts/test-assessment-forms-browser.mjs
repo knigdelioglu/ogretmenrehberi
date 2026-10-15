@@ -187,13 +187,14 @@ try {
     })()`);
     assert.ok(download?.href.endsWith(`/assets/assessment-documents/${filename}`), `${stepId} links the correct DOCX asset`);
     assert.ok(download.label, `${stepId} has a named teacher download`);
+    const expected = fs.readFileSync(path.join(appRoot, "dist/assets/assessment-documents", filename));
     await page.evaluate("document.querySelector('#canvas .source-links a[download]').click()");
     const downloadedPath = await until(() => {
       const path = profile + "/" + filename;
-      return fs.existsSync(path) ? path : null;
+      if (!fs.existsSync(path) || fs.existsSync(`${path}.crdownload`)) return null;
+      return fs.statSync(path).size === expected.length ? path : null;
     }, `${filename} browser download`);
     const actual = fs.readFileSync(downloadedPath);
-    const expected = fs.readFileSync(path.join(appRoot, "dist/assets/assessment-documents", filename));
     assert.deepEqual(actual, expected, `${filename} browser download matches the packaged DOCX byte-for-byte`);
     assert.deepEqual([...actual.subarray(0, 4)], [0x50, 0x4b, 0x03, 0x04], `${filename} is a real DOCX ZIP`);
     fs.rmSync(downloadedPath);

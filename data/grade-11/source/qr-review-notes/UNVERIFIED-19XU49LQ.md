@@ -1,8 +1,8 @@
-# Anadolu İnsanı / Fedakârlık — uzun videonun kısmi görsel kanıtı (s.285–293)
+# Anadolu İnsanı / Fedakârlık — video notları (s.285–293)
 
 **Özgün kitap QR hedefi:** `5fd2b97cb78fabe367aa3fcde8f9718d` (basılı s.285 / PDF s.286). **Drive dosya adayı:** `19XU49LQ.mp4` (yaklaşık 07:09).
 
-**Kanıt türü:** 15 saniye aralıklarla örneklenmiş görüntüler. Ders kitabının QR hedefi doğrulandı; bu MP4'ün doğrudan EBA videosunun aynısı olduğu ve sesli anlatımın tümü doğrulanmadı. Bu video **58 saniyelik jenerikten ayrı**dır.
+**Döküm:** Kullanıcı, videonun sözlü anlatımını ve ekrandaki yazıları iletti. Bu döküm web sunumu için kaynak kabul edildi. Görsel notlar aşağıda 15 saniye aralıklarla örneklenmiştir. Bu video **58 saniyelik jenerikten ayrı**dır.
 
 | Yaklaşık zaman | Videoda görülen |
 | --- | --- |
@@ -15,10 +15,14 @@
 | 06:00–06:30 | Ağaç dalları ve meyve bahçesi/kırsal tarım alanı; kişinin arazide yürüyüşü |
 | 06:45–07:00 | Kapanış ve yapım ekibi yazıları |
 
+## Dökümün kısa özeti
+
+- Dış ses, Anadolu insanını sabır, cesaret, merhamet, dürüstlük, cömertlik ve fedakârlık değerleriyle tanıtır. Ardından Manisa Ahmetli'de yaşayan emekli demiryolu görevlisi Mehmet Bey'in öyküsüne geçer.
+- Mehmet Bey, 30 yıllık yol kontrol memurluğunu, raylardaki kaplumbağaları kurtarma uğraşını ve Ahmetli, Turgutlu, Salihli çevresine yaklaşık 6000 fidan diktiğini anlatır. Doğayı koruma ve orman yangınlarına ilişkin kaygısı öne çıkar.
+- Ekran metinlerinde altyazı uyarısı, TRT Belgesel logosu, “ANADOLU İNSANI” ve “FEDAKARLIK” başlıkları, TCDD amblemi, web adresi, “H 275” ve “117” levhaları ile kapanış ekibi ve teşekkür listesi yer alır.
+
 ## Kitap sorularına katkı
 
-- **s.286, kelime/ifade (Q02):** Görüntüde kişi, mekân ve eylem örnekleri kaydedilebilir; **ses dökümü olmadığı için filmde duyulan sözcükler** üretilmemelidir.
-- **s.286, ana/yardımcı ileti (Q03):** Kırsal emek, sürekli yürüyüş ve doğayla ilişki görsel gözlemdir. Bunlar fedakârlıkla **yorum olarak ilişkilendirilebilir**, fakat kişilerin amaçları, fedakârlıklarının muhatabı veya filmin kesin iletisi konuşmalar duyulmadan belirlenemez.
-- **s.293, karşılaştırma:** Diğer *Çalışkanlık* belgeselinde görülen üretim ve tarla emeğiyle bu videodaki arazide ilerleyiş görsel düzeyde karşılaştırılabilir; iki metnin dili/üslubu ve tam iletileri için ses gereklidir.
-
-**Eksikler:** Konuşma/müzik transkripti, filmdeki kişinin mesleği ve amacı, tam anlatı/sonuç, EBA–MP4 indirme kökeni.
+- **s.286, sözcük ve ifadeler (Q02):** “Sabırlı, cesur, fedakâr”, “merhamet, dürüstlük, cömertlik” ve doğayı koruma ifadeleri, videoda geçtikleri dış ses veya Mehmet Bey anlatımıyla eşleştirilebilir.
+- **s.286 ve s.288, ileti/özet:** Belgeselin iletisi Mehmet Bey'in kaplumbağaları kurtarma ve fidan dikme davranışları üzerinden fedakârlık ve doğaya karşı sorumlulukla ilişkilendirilebilir.
+- **s.293, karşılaştırma:** Fedakârlık videosunun dili, iletisi, türü ve içeriği; Çalışkanlık videosundan öğrencinin izleme notlarıyla karşılaştırılabilir.

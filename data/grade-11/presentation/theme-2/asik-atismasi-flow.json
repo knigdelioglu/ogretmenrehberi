@@ -90,7 +90,7 @@
       "prompt": "Âşık Atışması'nı not alarak dinleyiniz / izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Murat Çobanoğlu–Şeref Taşlıova atışmasını QR kaynaktan izlerken sözü, sazı ve karşılıklı cevapları birlikte takip edin. QR videosuna erişilemiyorsa kitap s.158'deki atışma örneği yalnız ayrı bir teknik alıştırmada kullanılabilir; bu videoda duyulan sözlerin kanıtı olarak sunulamaz.",
+        "lead": "Murat Çobanoğlu ile Şeref Taşlıova’nın bağlama eşliğindeki atışmasını izleyin; karşılıklı dörtlükleri, benzetmeleri, söz oyunlarını ve tekrarlanan “-ebilirsen eğer” kapanışını not edin.",
         "items": [
           "Bir âşığın diğerinin sözüne nasıl cevap verdiğini not edin.",
           "Mizah, benzetme ve söz oyunu örneklerini işaretleyin.",
@@ -101,6 +101,57 @@
           {
             "label": "Ders kitabı s.140 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=140"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s140-video-transcript",
+      "source_record_id": "T02-S0122",
+      "layout": "reference",
+      "density": "large",
+      "prompt": "QR video dökümü — Murat Çobanoğlu ve Şeref Taşlıova",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "Bağlama eşliğindeki atışmada iki ozan sırayla toplam altı dörtlük söyler (her biri üçer dörtlük). Dörtlük sonlarında değişen eylemler ortak “-ebilirsen eğer” redifine bağlanır.",
+        "sections": [
+          {
+            "title": "1. dörtlük · Murat Çobanoğlu · 00:08–00:28",
+            "body": "Gönül aşkı bir kuyudur, / Düştüysen bilirsen eğer. / Dört çarkı yirmi biri vardır, / Diş bişebilirsen (dişebilirsen) eğer."
+          },
+          {
+            "title": "2. dörtlük · Şeref Taşlıova · 00:32–00:53",
+            "body": "Çiçek veren bağ gibiyim, / Zaman geçen çağ gibiyim. / Başı duman cananın dağ gibiyim, / Koş koşabilirsen eğer."
+          },
+          {
+            "title": "3. dörtlük · Murat Çobanoğlu · 00:55–01:14",
+            "body": "Yel vurması neme kahır, / Köyün sonu olur şehir. / Üstü şerbet altı zehir, / İç içebilirsen eğer."
+          },
+          {
+            "title": "4. dörtlük · Şeref Taşlıova · 01:18–01:48",
+            "body": "Âşık bilir durakları / Gönüldeki merakları / Saban gibi toprakları / Eş eşebilirsen eğer // Tekrar: Tavuk gibi toprakları / Eş eşebilirsen eğer"
+          },
+          {
+            "title": "5. dörtlük · Murat Çobanoğlu · 01:52–02:22",
+            "body": "Ne dedimse bir yana yoz / Bazı kış der bazı da yaz / Sen bir tilki ben bir horoz / Düştüysen bilirsen eğer... // Sözü düzeltip tekrar: “Sen bir tilki, ben bir horoz / Koş koşabilirsen eğer!” // Dizeyi şaşırıp gülümseyince seyirciler ve stüdyodaki Barış Manço alkışlar."
+          },
+          {
+            "title": "6. dörtlük · Şeref Taşlıova · 02:24–02:54",
+            "body": "Şeref der gönül kitabı / Bellisiz aşkın hesabı / Naylon bir balon gibi / Şiş şişebilirsen eğer // Tekrar: Meydanda ay hindi gibi / Şiş şişebilirsen eğer"
+          },
+          {
+            "title": "Ekranda görünen yazılar ve logolar",
+            "body": "00:01–00:04 ve 02:52’de açık kitap ve sonbahar yaprakları görseliyle “İçerikte alt yazı seçeneği bulunmaktadır. ↓” bildirimi çıkar. 00:05–02:51 arasında sol üstte beyaz “TRT 1” logosu görünür. Dekordaki kırmızı panoda “[...] MUHTARLIĞI” yazılıdır. Orkestra klavyesinde 00:05, 01:05 ve 03:04’te “Roland” ve “Yamaha DX” marka yazıları görünür."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.140 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=140"
+          },
+          {
+            "label": "Âşık Atışması — EBA videosu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=85ae59be9852fb990c8de54f7cb313ce&resourceType=1&resourceLocation=2"
           }
         ]
       }
@@ -256,7 +307,7 @@
       "prompt": "Münacaat şiiri ile âşık şiirlerinin dilini karşılaştırınız.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Kaynak durumu: Münacaat için ders kitabı s.143 dizeleri incelenebilir. Âşık şiiri sütunu ise izlenen QR videosunda gerçekten duyulan örneklerle tamamlanacaktır; kaydedilmemiş dizeler varsayılmamalıdır."
+        "lead": "Münacaat şiirindeki yoğun imgeleri, atışmadaki gündelik söz varlığı, benzetmeler, tekrar ve karşılıklı söyleyişle karşılaştırın."
       }
     },
     {

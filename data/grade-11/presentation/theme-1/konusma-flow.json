@@ -18,15 +18,50 @@
       "prompt": "Seksenler — Sorulara geçmeden önce kitaptaki çok modlu metni karekoddan izleyiniz.",
       "prompt_mode": "VERIFIED_SUMMARY",
       "content": {
-        "lead": "Bu bölümdeki ilk sorular videodaki sözlü iletişim engellerine dayanır. Karekod erişilebiliyorsa videoyu izleyin; erişilemiyorsa videoya özgü davranış, söz veya sahne ayrıntısını kesinleştirmeyin.",
+        "lead": "Bu bölümdeki ilk sorular, videodaki sözlü iletişim engellerine dayanır. İzlerken iletişimi bozan davranışları, ifadeleri ve tepkileri örnekleriyle not edin.",
         "items": [
-          "İzlerken iletişimi bozan bir davranışı veya ifadeyi gerçekten gözlediğiniz biçimiyle not edin.",
-          "Bu somut kanıttan hareketle iletişim engelini adlandırın ve mesaj üzerindeki olası etkisini yorumlayın."
+          "İki sahnede iletişimi bozan davranış veya ifadelerden somut örnek seçin.",
+          "Her örnekte iletişim engelini adlandırın ve konuşmanın anlaşılmasına ya da sürmesine etkisini açıklayın."
         ],
         "sources": [
           {
             "label": "Ders kitabı s.53 — karekodun bulunduğu sayfayı aç",
             "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=53"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s53-video-summary",
+      "source_record_id": "T01-S0057",
+      "layout": "reference",
+      "density": "comfortable",
+      "prompt": "QR video notları — Seksenler",
+      "prompt_mode": "VERIFIED_SUMMARY",
+      "content": {
+        "lead": "İki ev sahnesindeki konuşmaları iletişim engelleri açısından karşılaştırın.",
+        "sections": [
+          {
+            "title": "Fehmi’nin evi · 00:05–00:54",
+            "body": "Gülden ile Ahmet konuşmaya çalışırken Ahmet’in babası Fehmi ajansı dinlediği için “Şşşt! Ajans dinliyorum ya!” diyerek onları susturur. Ahmet de sesini alçaltıp “Ajans dinliyor...” diye karşılık verir. Erkut, Ahmet’e söylemesi gereken şeyi sorup acele ettirir; Fehmi yeniden sessiz olmalarını ister. Sahne, televizyona/radyoya yönelen dikkat ve karşılıklı dinlemenin kesilmesiyle konuşmanın nasıl zorlaştığını gösterir. 00:45–00:54 arasında dizi jenerik melodisi duyulur."
+          },
+          {
+            "title": "Seyfi’nin evi · 00:55–02:51",
+            "body": "Seyfi, damadının “bir şeyler karıştırdığı” kuşkusuyla konuşmayı başlatır ve Nurten’in itirazına rağmen bunu kanıtlayacağını söyler. Damat, şirket işlerinin “saat gibi” yürüdüğünü anlatır; ardından Almanlar, İngilizler ve Çinlilerle görüştüğünü öne sürer. Nurten yabancı dil bilip bilmediğini sorunca damat İngilizce, Almanca ve Çince izlenimi veren sözler sıralar. Nurten onu övse de sonunda “Nereden anlayacaksınız?” diyerek söylenenleri anlamadığını belirtir. Sahne, ön yargı ve kuşkunun yanında anlaşılır olmayan anlatımın gerçek iletişimi nasıl örtebildiğini gösterir."
+          },
+          {
+            "title": "Ekranda görünen yazılar",
+            "body": "00:01–00:04’te sağ altta, açık kitap ve sonbahar yaprakları görseli üzerinde “İçerikte alt yazı seçeneği bulunmaktadır. ↓” bildirimi yer alır. 00:05–02:51 boyunca sağ üst köşede “TRT 1” logosu görünür. Başka bir jenerik yazısı, altyazı veya kişi tanıtım alt bandı bulunmaz."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Ders kitabı s.53 — karekodun bulunduğu sayfayı aç",
+            "url": "https://tymm.meb.gov.tr/assets/pdf/turk-dili-ve-edebiyati-11sinif-ders-kitabi_20260930_091040_422.pdf#page=53"
+          },
+          {
+            "label": "Seksenler — resmî EBA videosu",
+            "url": "https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=254c08ea3501e3a701bea75730708e14&resourceType=1&resourceLocation=2"
           }
         ]
       }

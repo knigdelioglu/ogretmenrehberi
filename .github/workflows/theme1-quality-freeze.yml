@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: "24"
           cache: "npm"
-          cache-dependency-path: apps/lesson-player/package.json
+          cache-dependency-path: apps/lesson-player/package-lock.json
 
       - name: Compile Python quality tools
         run: |
@@ -41,7 +41,7 @@ jobs:
       - name: Build and validate Lesson Player
         working-directory: apps/lesson-player
         run: |
-          npm install --no-audit --no-fund
+          npm ci --no-audit --no-fund
           npm run build
 
       - name: Build Kindle EPUB

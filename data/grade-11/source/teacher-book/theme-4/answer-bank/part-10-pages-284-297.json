@@ -78,24 +78,23 @@
     },
     {
       "question_id": "T4-P286-Q02",
-      "entry_type": "source_limited",
+      "entry_type": "reference_answer",
       "printed_page": 286,
       "question_no": "2",
       "source_locator": "basılı s.286 / PDF s.287 — Metni Dinleyelim/İzleyelim soru 2 / Fedakârlık QR videosu gerekli",
       "prompt_summary": "Videoda Hayatın Aynası temasını yansıtan sözcük ve ifadeleri not etme",
-      "answer": "Videoda tema ile ilişkilendirdiğiniz sözcük ve ifadeleri not edin. Her birini geçtiği sahne ya da konuşmayla eşleştirin.",
-      "guidance": "Alıntılarınızı videoda duyduğunuz gerçek sözlerden seçin ve ilgili sahneyle eşleştirin."
+      "answer": "Örnek sözcük ve ifadeler: “sabırlı, cesur, fedakâr”, “merhamet, dürüstlük, cömertlik” ve “doğal yaşamı korumak”. Dış ses ilk ifadeleri Anadolu insanını tanıtırken kullanır; Mehmet Bey'in kaplumbağaları kurtarması ve fidan dikmesi fedakârlık düşüncesini davranışlarla somutlaştırır.",
+      "guidance": "Sözcükleri geçtiği bölümle eşleştirin. Dış sesin genel nitelendirmeleriyle Mehmet Bey'in kendi deneyimini anlattığı konuşmaları ayırın."
     },
     {
       "question_id": "T4-P286-Q03",
-      "entry_type": "source_limited",
+      "entry_type": "reference_answer",
       "printed_page": 286,
       "question_no": "3",
-      "source_locator": "basılı s.286 / PDF s.287 — uzun video QR 5fd2b97cb78fabe367aa3fcde8f9718d, aday 19XU49LQ.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md",
+      "source_locator": "basılı s.286 / PDF s.287 — uzun video QR 5fd2b97cb78fabe367aa3fcde8f9718d; 19XU49LQ kullanıcı dökümü",
       "prompt_summary": "Video notlarından hareketle belgeselin iletilerini belirleme",
-      "answer": "Gözleme dayalı olası yorum: Aday Fedakârlık videosunda sırt çantalı bir kişinin dağlık arazide yürümesi (00:45–01:30), demiryolu çevresinde ilerlemesi (02:15–04:45) ve kırsal doğa/bitki görüntüleri (05:00–06:30) öne çıkar. Bunlar insanın emek, sorumluluk ve doğal çevreyle ilişkisi üzerine bir iletiyi düşündürebilir. Ancak kişinin hangi amaçla hareket ettiği, kimin için neyi göze aldığı ve belgeselin kesin ana/yardımcı iletileri sesli anlatım incelenmeden bilinemez.",
-      "guidance": "Tahtada 'Görüntüde gözlemlediğim eylem' ve 'Bu eylemden çıkardığım olası ileti' sütunları oluşturun. Yürüme veya demiryoluyla ilgili görüntüleri gözlem, 'fedakârlık yapıyor' sözünü yorum olarak değerlendirin. Kesin ana düşünce için anlatıcının sözleri ve kişinin eylem gerekçesini dinleyerek doğrulayın.",
-      "explanation": "Uzun video kısmi görüntülerle incelendi, konuşma transkripti yok. QR hedefi kitap PDF'sinden doğrulandı fakat aday Drive MP4'ünün EBA indirme kökeni bağımsız kesin değil; source_limited korunmuştur."
+      "answer": "Belgeselin ana iletisi, fedakârlığın günlük emek ve canlılara karşı sorumlulukla görünür olduğudur. Dış ses, başkalarının iyiliği için paylaşmayı ve çaba göstermeyi vurgular. Mehmet Bey'in raylarda karşılaştığı kaplumbağaları kurtarması, emekli olduktan sonra da bu uğraşı sürdürmesi ve yaklaşık 6000 fidan diktiğini anlatması bu iletiyi destekler.",
+      "guidance": "Dış sesin sözlerini Mehmet Bey'in anlattığı deneyimlerle ilişkilendirin. Kaplumbağaları kurtarması ve fidan dikmesi gözlenebilir davranışlardır; bu davranışlardan fedakârlık, merhamet ve doğaya karşı sorumluluk sonuçlarını çıkarın."
     },
     {
       "question_id": "T4-P286-PERF01",
@@ -120,13 +119,13 @@
       "question_no": "Söz Varlığımız 1-2",
       "source_locator": "basılı s.287 / PDF s.288 — Söz Varlığımız",
       "prompt_summary": "Belgesel bağlamındaki beş sözcüğün anlamını ve bağlama uygun karşılıklarını bulma",
-      "answer": "Aşağıdaki anlamlar sözcüklerin genel kullanımına göredir; videodaki kesin bağlamı kontrol etmek için karekod içeriği ve sözlük adımı birlikte kullanılmalıdır.",
+      "answer": "Videodaki örneklerde fedakârlık, Mehmet Bey'in kaplumbağaları kurtarması ve fidan dikmesiyle görünür.",
       "answer_sections": {
-        "fedakârlık": "Bir amaç veya başkaları uğruna kendi çıkarından ya da rahatından vazgeçme. Öneri: özveri.",
-        "hemzemin geçit": "Demir yolu ile kara yolunun aynı seviyede kesiştiği geçit. Yakın açıklama: tren geçidi.",
-        "mesai": "Çalışma süresi veya iş için ayrılan zaman. Öneri: çalışma saati.",
-        "aksaklık": "Bir işin olağan biçimde ilerlemesini bozan pürüz veya kesinti. Öneri: aksama, pürüz.",
-        "tahammül": "Zorluğa katlanma, dayanma. Öneri: sabır, dayanma."
+        "fedakârlık": "Bir amaç veya başkaları uğruna kendi çıkarından ya da rahatından vazgeçme. Mehmet Bey'in kaplumbağaları kurtarmayı ve fidan dikmeyi sürdürmesi bu değere örnektir. Yakın karşılık: özveri.",
+        "hemzemin geçit": "Demir yolu ile kara yolunun aynı seviyede kesiştiği geçit. Mehmet Bey, kaplumbağaların bu geçitlerden çıkma olasılığı olduğunu anlatır.",
+        "mesai": "Çalışma süresi veya iş için ayrılan zaman. Dış ses, Mehmet Bey'in emeklilikten sonra sürdürdüğü yürüyüşleri yeni bir mesai olarak anlatır.",
+        "aksaklık": "Bir işin olağan biçimde ilerlemesini bozan pürüz veya kesinti. Mehmet Bey, yol kontrol memuruyken raylardaki aksaklıkları giderdiğini söyler.",
+        "tahammül": "Zorluğa katlanma, dayanma. Dış ses, Mehmet Bey'in orman yangınlarının doğayı yok etmesi düşüncesine tahammül edemediğini aktarır."
       },
       "guidance": "“Hemzemin geçit” gibi terimlerin tam anlamını tek sözcüklü eş anlamlıyla değiştirmek güçtür; açıklayıcı karşılık da kabul edilebilir."
     },
@@ -240,12 +239,12 @@
     },
     {
       "question_id": "T4-P291-Q11",
-      "entry_type": "source_limited",
+      "entry_type": "reference_answer",
       "printed_page": 291,
       "question_no": "11",
       "source_locator": "basılı s.291 / PDF s.292 — Metni Anlayalım soru 11 / Fedakârlık QR videosu gerekli",
-      "prompt_summary": "Fedakârlık belgeselini çalışkanlığın öğrenme ve kavramadaki rolünü gösterecek biçimde özetleme",
-      "answer": "Videoda çalışkanlığın öğrenme veya kavramayla ilişkisini gösteren söz, davranış ve olayları seçin. Belgeselin temel olay akışını ve önemli ayrıntılarını koruyarak, bu unsurların çalışkanlığın öğrenme ve kavrama sürecindeki önemini nasıl gösterdiğini öne çıkaran kısa bir özet yazın."
+      "prompt_summary": "Fedakârlık belgeselinin ana olayını ve iletisini özetleme",
+      "answer": "Örnek özet: Manisa Ahmetli'de yaşayan emekli demiryolu görevlisi Mehmet Bey, otuz yıl boyunca rayları kontrol etmiş; emekli olduktan sonra da raylarda bulduğu kaplumbağaları kurtarmayı sürdürmüştür. Ormanların önemini anlatarak Ahmetli, Turgutlu ve Salihli çevresine yaklaşık 6000 fidan diktiğini söyler. Belgesel, onun emeğini ve doğayı koruma çabasını fedakârlık örneği olarak sunar."
     },
     {
       "question_id": "T4-P292-Q01",
@@ -279,43 +278,48 @@
     },
     {
       "question_id": "T4-P293-Q02",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 293,
       "question_no": "2",
-      "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b; 19XU49KB.mp4 kısmi görüntü kaydı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md",
+      "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kullanıcı tarafından sağlanan video dökümü",
       "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-      "answer": "Kısmi görüntülere dayanarak kurulabilecek ana düşünce adayı: 'Kırsal yaşamda emek, üretim ve birlikte sürdürülen günlük işler önemli yer tutar.' Bunu tarımsal alanlar ve traktör (yaklaşık 01:15–01:45), meyve/ürün toplama (02:45–03:15), birlikte hazırlanan yiyecek ve tarım çalışmaları (03:45–05:00) destekler. Bu cümle belgeselin kesin ana düşüncesi diye sunulmamalıdır; konuşmacıların anlatımı ve kapanış vurgusu dinlenerek gerekirse değiştirilmelidir.",
-      "guidance": "Önce iki veya üç farklı sahnede ortak eylemi (tarla işleri, ürün toplama, ev içi/dışı üretim) buldurun. Öğrencinin önerdiği ana düşünceyi bu gözlemlerle sınayın; yapımın sözlü mesajı henüz transkript edilmediği için farklı gerekçeli yorumları kabul edin.",
-      "explanation": "Görüntü kanıtı mevcuttur; konuşmaların tam dökümü ve MP4'ün EBA kaynak kimliğiyle birebir dosya eşleşmesi yoktur. source_limited korunur."
+      "answer": "Kırtık köyünde çalışkanlık, Muharrem ve Zübeyde’nin yıl boyunca sürdürdüğü bahçe işleriyle somutlaşır. Organik üretim ve mahsulün zamanla değer kazanması emeğin karşılığını gösterirken, çocukların köyden ayrılması ve yaşlı çiftin işleri sürdürmekte kalması bu yaşam biçiminin yeni kuşağa aktarılmasını güçleştirir.",
+      "guidance": "Ana düşünceyi çalışmanın yıl boyu sürmesi, organik üretim ve kuşakların üretimle ilişkisi arasındaki bağla gerekçelendirin. Öğrencinin farklı bir ana düşüncesi varsa belgeselden uygun kanıtlarla açıklamasını isteyin.",
+      "explanation": "Belgesel, yıl boyu süren bahçecilik emeğini organik üretim, aile iş gücü ve kuşak değişimiyle birlikte ele alır.",
+      "answer_sections": {
+        "Ana düşünce": "Kırtık’ta bahçecilik ve organik üretim yıl boyu emek ister; bu emeğin değeri artarken üretim geleneğinin yeni kuşağa aktarılması belirsizleşir.",
+        "Yıl boyunca emek": "Bahçe hazırlığı, zeytin hasadı, çam fıstığı ve yeni ekim işleri mevsimler boyunca birbirini izler.",
+        "Üretim ve değer": "Belgesel organik bahçeciliği, sebze-meyve çeşitlerini ve organik ürünlerin zaman içinde değer kazanmasını anlatır.",
+        "Kuşak değişimi": "Zübeyde Hanım, çocukların ayrılmasından sonra işlerin kendileriyle kaldığını ve genç kuşağın bu işleri sürdürmeyebileceğini söyler."
+      }
     },
     {
       "question_id": "T4-P293-Q03",
-      "entry_type": "source_limited",
+      "entry_type": "question_answer",
       "printed_page": 293,
       "question_no": "3",
-      "source_locator": "basılı s.293 / PDF s.294 — iki ayrı QR: Fedakârlık 5fd2b97cb78fabe367aa3fcde8f9718d ve Çalışkanlık cc654606d608113ea65f523584ab801b. Kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md; data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md",
+      "source_locator": "basılı s.293 / PDF s.294 — Fedakârlık QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4 ve Çalışkanlık QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kullanıcı tarafından sağlanan video dökümleri",
       "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-      "answer": "İki kayıt görsel düzeyde kısmen karşılaştırılabilir: Fedakârlıkta dağlık arazide/demiryolu çevresinde ilerleyen bir kişi; Çalışkanlıkta tarım arazileri, traktör, ürün toplama ve toplu günlük işler görülür. İkisi de kitabın belgesel/çok modlu metin olarak sunduğu Anadolu İnsanı serisindendir. Dil ve üslup ile kesin ileti için iki videonun tam sesli anlatımı henüz çözümlenmediğinden bu satırlar tamamlanmış bir karşılaştırma sayılamaz.",
+      "answer": "Fedakârlık belgeseli, Mehmet Bey’in kaplumbağaları kurtarması ve fidan dikmesi üzerinden doğaya karşı sorumluluk ve özveriyi anlatır. Çalışkanlık belgeseli, Kırtık’ta Muharrem ve Zübeyde’nin yıl boyu süren bahçe işlerini, organik üretimini, emeğin ekonomik değerini ve çocukların ayrılmasıyla iş gücünün azalmasını ele alır. İki yapım da kişilerin emek ve sorumluluğunu belgesel anlatımıyla görünür kılar; çalışma alanları ve öne çıkardıkları değerler farklılaşır.",
       "answer_sections": {
         "Dil ve Üslup": {
-          "Anadolu İnsanı / Fedakârlık": "[Sesli anlatımın sözcük seçimi, cümle kuruluşu ve ses tonu transkript edilmedi; kesin yorum bekliyor.]",
-          "Anadolu İnsanı / Çalışkanlık": "[Sesli anlatımın sözcük seçimi, cümle kuruluşu ve ses tonu transkript edilmedi; kesin yorum bekliyor.]"
+          "Anadolu İnsanı / Fedakârlık": "Dış ses Anadolu insanını övgü ve değer bildiren sözlerle tanıtır; Mehmet Bey kendi çalışma deneyimini yalın, kişisel anlatımla aktarır.",
+          "Anadolu İnsanı / Çalışkanlık": "Dış ses köyü, üretim koşullarını ve mevsimsel iş döngüsünü açıklayıcı biçimde tanıtır. Muharrem ve Zübeyde Hanım gündelik, kişisel anlatımla çalışma yaşamını ve geçmişteki güçlükleri paylaşır."
         },
         "İleti": {
-          "Anadolu İnsanı / Fedakârlık": "Başlık ve uzun videodaki arazide/demiryolunda ilerleme görüntüleri emek ve sorumluluk yorumu düşündürebilir; belgeselin kesin iletisi henüz doğrulanmadı.",
-          "Anadolu İnsanı / Çalışkanlık": "Başlık ve tarımsal üretim/ürün toplama görüntüleri çalışkanlık ve üretim yorumu düşündürebilir; kesin ileti ses olmadan bilinmez."
+          "Anadolu İnsanı / Fedakârlık": "Fedakârlık; Mehmet Bey’in raylardaki kaplumbağaları kurtarmayı ve çevresine fidan dikmeyi sürdürmesiyle anlatılır.",
+          "Anadolu İnsanı / Çalışkanlık": "Yıl boyu sürdürülen bahçe işleri ve organik üretim çalışkanlığı; ürünlerin değer kazanması emeğin karşılığını, gençlerin ayrılması ise üretim geleneğinin geleceğini düşündürür."
         },
         "Tür": {
           "Anadolu İnsanı / Fedakârlık": "Belgesel / çok modlu metin.",
           "Anadolu İnsanı / Çalışkanlık": "Belgesel / çok modlu metin."
         },
         "İçerik": {
-          "Anadolu İnsanı / Fedakârlık": "00:45–06:30 arasında dağlık arazi, demiryolu çevresinde ilerleyen kişi, kırsal tabiat ve bitkiler gözlenir.",
-          "Anadolu İnsanı / Çalışkanlık": "01:15–05:00 arasında traktör, tarım alanları, meyve/ürün toplama, yemek hazırlığı ve birlikte geçirilen zaman görüntüleri gözlenir."
+          "Anadolu İnsanı / Fedakârlık": "Manisa Ahmetli’de emekli demiryolu görevlisi Mehmet Bey’in kaplumbağaları kurtarma ve fidan dikme çalışmaları anlatılır.",
+          "Anadolu İnsanı / Çalışkanlık": "Balıkesir Burhaniye’nin Kırtık köyünde Muharrem ve Zübeyde’nin bahçecilik ve organik üretim yaşamı; zeytin, çam fıstığı, sebze ve meyve işleri; geçmişteki yoksulluk ve genç kuşağın köyden ayrılması anlatılır."
         }
       },
-      "guidance": "Dört başlığı muhafaza edin: Dil ve Üslup, İleti, Tür, İçerik. Gözlenen görselleri yalnız 'İçerik' hücrelerinde kesin veri olarak kullanın. 'İleti' hücrelerini yorumsal/koşullu gösterin; 'Dil ve Üslup' hücrelerini iki tam ses dökümü olmadan doldurmayın. Benzerlik ve farkları aynı ölçüt üzerinden karşılaştırın.",
-      "explanation": "İki aday Drive videosunun görsel örnekleri incelendi, tam diyalog ve MP4–EBA dosya kökeni doğrulanmadı. Bu nedenle source_limited durumu devam eder."
+      "guidance": "Dört başlığı koruyun: Dil ve Üslup, İleti, Tür, İçerik. Her belgesel için verilen olay ve anlatım örneklerinden yararlanın; benzerlikleri emek ve sorumluluk, farklılıkları çalışma alanı ve öne çıkan değerler üzerinden gerekçelendirin."
     },
     {
       "question_id": "T4-P294-Q01",
