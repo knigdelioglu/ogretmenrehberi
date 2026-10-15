@@ -25,6 +25,16 @@ for (const r of intake.records) {
   assert.match(r.sha256, /^[0-9a-f]{64}$/);
   assert.ok(Number.isInteger(r.printed_page) && r.printed_page > 0);
   assert.ok(r.duration_seconds > 0);
+  // Content-owner attestation is a separate provenance dimension from an
+  // archived word-for-word transcript or independently matched EBA binary.
+  assert.equal(r.content_review?.status, "owner_confirmed",
+    `${r.file_name}: content owner review confirmation is missing`);
+  assert.deepEqual(r.content_review?.modalities, ["audio", "video"],
+    `${r.file_name}: owner review scope must include both audio and video`);
+  assert.equal(r.content_review?.basis, "content_owner_attestation",
+    `${r.file_name}: review provenance must be explicit`);
+  assert.match(r.content_review?.declaration_recorded_on ?? "", /^\d{4}-\d{2}-\d{2}$/,
+    `${r.file_name}: missing recorded review date`);
   assert.equal(r.spoken_audio_transcript, "not_done", "Never mark incomplete audio as transcribed");
   if (r.existing_source_id) {
     verified++;
