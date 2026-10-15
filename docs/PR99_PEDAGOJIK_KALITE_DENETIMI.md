@@ -16,6 +16,22 @@
 
 **Kaynaklar:** Ders kitabının `p053.json`, `p054.json`, `p066.json`, `p067.json` sayfaları; `QR-EBA-254C08EA3501.md` ve `QR-EBA-29BF4F293D53.md` medya gözlem notları; PR #99 öncesi ve sonrası cevap bankaları. İlgili MP4 kayıtlarını yeniden ses transkripsiyonuna sokma işlemi bu turda yapılmadı.
 
+## Tur 2 — soru bazlı öğretim değeri ve kaybedilen içerik
+
+| Kayıt | Eski sürümün öğretim değeri | PR #99 ve mevcut sürümün açığı | Bu turdaki geri kazanım |
+| --- | --- | --- | --- |
+| `T1-P66-Q03` | Medenileşme, bilgi aktarımı ve ortak yaşama ilişkin yorum | Öğrenci cevabı yüzeyselleşti; `answer_sections` / `guidance` konuşmacıya doğrulanmamış söz atfetti | Sosyal ilişki, ortak yaşam ve kültürel aktarım örnekleri; **ekrandaki ifadeden yapılan yorum** ayrı |
+| `T1-P67-Q06` | Öğrencinin kullanabileceği örnek tahmin–tespit karşılaştırması | Kısıt uyarısı öne geçti, gerçek örnek kayboldu | Ön tahmin, ekran kanıtı ve tahminin nasıl genişlediğini anlatan tam örnek |
+| `T1-P67-Q07` | Mektup/e-posta karşılaştırmasından gerekçeli genel sonuç | Öğrenci cevabı belirsiz, alt bölümler konuşmada doğrulanmamış hastane/bürokrasi iddiaları içeriyor | İki doğrulanmış ekran ifadesinden çıkarılan **insani ve toplumsal işlev** sonucu; bölüm/cevap tutarlılığı |
+| `T1-P67-Q08` | Nesnel ve öznel ifadelerin örnekleri | Örnekler korunmuş; ifadelerin **anlatıma katkısı** ve ekran/yazar atfı ayrımı yeterince açık değildi | İfade–niteliği–metne katkısı eşleştirmesi; yanlış `nesnel=kesin doğru` çıkarımı önlendi |
+| `T1-P67-Q09` | Giriş–gelişme–sonuç yönü olan örnek özet | Cevap yalnız tam transkript ihtiyacını söylüyor, ayrıntı bölümü ise doğrulanmamış video anlatımlarını tam özet gibi sunuyordu | **Sadece doğrulanmış ekran ifadelerinden kısmi özet** ve tutarlı ayrıntı yapısı; tam söyleşi özeti olduğu iddia edilmedi |
+
+**Soru kaynağı:** `data/book/grade-11/themes/theme-1/pages/p066.json` ve `p067.json`.
+**Video kanıtı:** `data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md`, 01:04/02:05/03:08/04:06 ekran ifadeleri.
+**Karar:** Görsel/ekran metninden **kaynaklı yorum** yapılabilir; depoda tam konuşma dökümü olmadıkça söyleşi konuşmacısına birebir söz veya videoda anlatıldığı kesin ayrıntı atfedilemez. `T1-P67-Q06–Q09` için `source_limited` statüsü korunmuştur. Mevcut video transkripsiyonu bu turda yeniden yapılmadı.
+
+**Kalite duraklaması:** Beş kaydın tamamı ayrı ayrı karşılaştırıldı; bu turda içerik üretimi burada durur. Sonraki tur yeni dosya incelemesiyle başlar.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -23,13 +39,13 @@
 | Tema 1 | `T1-P53-Q01` | 53–58 | **Tur 1: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P53-Q02` | 53–58 | **Tur 1: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P66-Q01` | 64–67 | **Tur 1: incelendi ve düzeltildi** |
-| Tema 1 | `T1-P66-Q03` | 64–67 | Bekliyor |
+| Tema 1 | `T1-P66-Q03` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P66-Q04` | 64–67 | **Tur 1: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P66-Q05` | 64–67 | **Tur 1: incelendi ve düzeltildi** |
-| Tema 1 | `T1-P67-Q06` | 64–67 | Bekliyor |
-| Tema 1 | `T1-P67-Q07` | 64–67 | Bekliyor |
-| Tema 1 | `T1-P67-Q08` | 64–67 | Bekliyor |
-| Tema 1 | `T1-P67-Q09` | 64–67 | Bekliyor |
+| Tema 1 | `T1-P67-Q06` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
+| Tema 1 | `T1-P67-Q07` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
+| Tema 1 | `T1-P67-Q08` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
+| Tema 1 | `T1-P67-Q09` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P72-Q01` | 72–73 | Bekliyor |
 | Tema 1 | `T1-P73-Q01` | 72–73 | Bekliyor |
 | Tema 1 | `T1-P73-Q02` | 72–73 | Bekliyor |
@@ -60,7 +76,7 @@
 | Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
 | Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
 
-**Tur 1 tamamlandı: 5/39 metni değişmiş cevap kaydı. Kalan: 34.**
+**Tur 1–2 tamamlandı: 10/39 metni değişmiş cevap kaydı. Kalan: 29.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -71,4 +87,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Önce Tema 1 `T1-P66-Q03` ve `T1-P67-Q06`–`T1-P67-Q09`; sonra s.72–73 ve s.83. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Sıradaki beşli: Tema 1 `T1-P72-Q01`, `T1-P73-Q01`, `T1-P73-Q02`, `T1-P83-Q13` ve Tema 2 `T2-P88-Q01`; her biri için yeni kaynak karşılaştırması yapılacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
