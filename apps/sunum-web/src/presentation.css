@@ -630,6 +630,14 @@
   letter-spacing: 0.01em;
 }
 
+/* Çok kısa/yakınlaştırılmış pencerede kayan kumanda alt şeridin üstüne
+ * çıkmaz; normal sunum boyutlarında kumanda yerinde kalır. */
+@media (max-height: 480px) {
+  .dock.dock--arc {
+    bottom: 132px;
+  }
+}
+
 .slide--presentation .counter {
   color: var(--ords-color-primary);
   font-weight: 700;
