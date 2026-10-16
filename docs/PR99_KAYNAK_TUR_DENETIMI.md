@@ -62,6 +62,18 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 
 **Tur K4 kapsamı:** PR #99 öncesindeki `6f029e0` ile güncel cevap kayıtlarının `answer` ve `entry_type` alanları karşılaştırıldı; beş kayıtta ikisi de aynı. Basılı ders kitabının sayfa JSON kayıtları ve tema sunumlarının `quote_links`, `units`, `evidence_sections` ilişkileri incelendi. İki `source_locator` alanı düzeltildi. Cevap, cevap bölümleri, kanıt listesi, öğretmen yönlendirmesi ve sunum davranışı değiştirilmedi. Bu tur video sesini veya QR medyasını doğrulamamaktadır.
 
+## Tur K5 — Okuma çemberi, Huzur değerlendirmesi ve Ben, Mimar Sinan (5 kayıt)
+
+| Kayıt | PR #99 farkı ve görev türü | Basılı kitap ve sunum kanıtı | Karar |
+| --- | --- | --- | --- |
+| `T3-P178-PERF01` | `answer` ve `performance_support` korunmuş; `source_locator` s.169–170 alıntılarıyla genişletilmiş | s.178'de dört temel rol (**Bağ Kurucu, Ressam, Sorgulayıcı, Okuma Aydınlatıcısı**), s.179'da beş seçimlik rol bulunuyor. Öğrenciler dört kişilik gruplarda rol seçerek metne dayalı ürün oluşturur; sonraki toplantıda rol değiştirir. “İstanbul'u tanımadıkça…” ile “Bir hüviyet lâzım” s.169'da; “Bende İhsan'ın tesiri büyüktür” s.170'te. Üç `quote_links` indeksi ve dokuz rol birimi geçerli | **Uygun.** Kaynaklar ve görev türü tutarlı |
+| `T3-P193-PERF01` | `answer` ve `performance_support` değişmemiş; kaynak s.169/s.182'ye genişletilmiş | s.193'te öğrencinin kendi ölçütlerini yazacağı tablo bulunuyor; yalnız `Tutarlılık` örnek ölçüt olarak verilmiş. Doğrudan alıntılar s.169 (“Bir hüviyet lâzım”, “İstanbul'u tanımadıkça…”) ve s.182 (“İhsan, onun hem babası, hem hocası idi”). Ancak `Duygu ve çağrışım (örnek)` bölümündeki vapur düdüğünün çocukluk hüznünü çağrıştırması **s.167**'ye dayanıyor. Sunumun üç alıntı indeksi/altı ölçüt birimi geçerli | **Kaynak kapsamı düzeltildi.** Doğrudan alıntılardan ayrı olarak s.167 açıklama kanıtı belirtildi |
+| `T3-P193-PERF03` | `answer` ve `performance_support` sabit; kaynak s.167/s.169 eklenmiş | s.193 çıkış kartında **Üç Yaz (3), İki Sor (2), Bir Paylaş (1)** alanları bulunuyor. “hüznün şifasızlığı” s.167'de; “Bir hüviyet lâzım” ve “İstanbul'u tanımadıkça…” s.169'da. Sunumdaki beş kanıt bağlantısı üç alıntıyı birden fazla doğru etkinlik bölümünde yeniden kullanıyor; indeks ve birim denetimi olumlu | **Uygun.** Öğrencinin kişisel yorum seçimi korunmuş |
+| `T4-P252-PERF02BC` | `answer` ve `performance_support` sabit; kaynak s.243, s.245, s.246'ya genişletilmiş | s.252'de 2/b öğrencinin etkileyici bulduğu özelliği, 2/c ise kendi tanınmak istediği yönü sorar. “bilgim, azmim…” s.243'te; “İnsan, yapabileceğini…” ve “Güzellik, büyüklükten…” s.245'te; “tek başıma yenmedim” s.246'da. Sunumda dört kanıt indeksi ile iki değerlendirme birimi geçerli | **Uygun.** Metin kanıtı ve öz değerlendirme birbirinden ayrılmış |
+| `T4-P259-Q01` | `answer` ve `question_answer` sabit; kaynak s.246 doğrudan alıntılarına genişletilmiş | s.259 **Fark Edelim 1** Enver Töre'nin `Türk Tiyatrosunun Kaynakları` parçasından hareketle tarih/kültür bilinci aktarımını sorguluyor. İki `evidence_quotes` s.246'da; cevapta anılan **Bâkî, Fuzûlî, Matrakçı Nasuh ve Pîrî Reis** ise s.244'te. Sunumdaki 0/1 indeksleri `answer` birimine geçerli bağlanmış | **Kaynak kapsamı düzeltildi.** s.244 kültür çevresi kanıtı, s.246 doğrudan alıntı, s.259 soru ve yardımcı metin olarak ayrıştırıldı |
+
+**Tur K5 kapsamı:** PR #99 öncesi `6f029e0` ile güncel yanıt bankası karşılaştırıldı; beş kaydın `answer`, `entry_type`, `evidence_quotes` ve `answer_sections` alanları aynı kaldı. Basılı kitap JSON sayfaları, s.252'nin `page_text` alanı, Tema 3/4 sunum akışları ile `web-presentation.json` içindeki alıntı indeksleri ve bölüm eşleşmeleri incelendi. Yalnız iki `source_locator` düzeltildi; cevap metinleri, cevap türleri, kanıt listeleri ve öğretmen yönlendirmeleri değiştirilmedi. Video ses dökümü veya QR medya eşleşmesi bu turda yeniden incelenmedi.
+
 ## Bekleyen kaynak-bağlantısı denetimi
 
 | Tema | Kimlik | Kontrol odağı | Durum |
@@ -81,11 +93,11 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 3 | `T3-P176-Q03` | Soru ve Bilgi Köşesi/metin bağı | **Kaynak kapsamı düzeltildi** |
 | Tema 3 | `T3-P176-Q05` | Alıntı sayfası | **Uygun** |
 | Tema 3 | `T3-P176-Q13` | Alıntı sayfası | **Uygun** |
-| Tema 3 | `T3-P178-PERF01` | Okuma çemberi/metin bağı | **Bekliyor** |
-| Tema 3 | `T3-P193-PERF01` | Değerlendirme tablosu ve alıntılar | **Bekliyor** |
-| Tema 3 | `T3-P193-PERF03` | Çıkış kartı ve alıntılar | **Bekliyor** |
-| Tema 4 | `T4-P252-PERF02BC` | Oyun metni alıntı sayfaları | **Bekliyor** |
-| Tema 4 | `T4-P259-Q01` | Oyun metni alıntı sayfası | **Bekliyor** |
+| Tema 3 | `T3-P178-PERF01` | Okuma çemberi/metin bağı | **Uygun** |
+| Tema 3 | `T3-P193-PERF01` | Değerlendirme tablosu ve alıntılar | **Kaynak kapsamı düzeltildi** |
+| Tema 3 | `T3-P193-PERF03` | Çıkış kartı ve alıntılar | **Uygun** |
+| Tema 4 | `T4-P252-PERF02BC` | Oyun metni alıntı sayfaları | **Uygun** |
+| Tema 4 | `T4-P259-Q01` | Oyun metni alıntı sayfası | **Kaynak kapsamı düzeltildi** |
 | Tema 4 | `T4-P259-Q02` | Oyun metni alıntı sayfası | **Bekliyor** |
 | Tema 4 | `T4-P260-Q04` | Oyun metni alıntı sayfası | **Bekliyor** |
 | Tema 4 | `T4-P260-PERF01` | Tiyatro ve sosyal bilimler metni | **Bekliyor** |
@@ -97,8 +109,8 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Bekliyor** |
 | Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Bekliyor** |
 
-**İlerleme:** Kaynak/tür değişen **20/35 kayıt incelendi; 15 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
+**İlerleme:** Kaynak/tür değişen **25/35 kayıt incelendi; 10 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
 
 ## Sonraki küçük tur
 
-Önce `T3-P178-PERF01`, `T3-P193-PERF01`, `T3-P193-PERF03`, `T4-P252-PERF02BC` ve `T4-P259-Q01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
+Önce `T4-P259-Q02`, `T4-P260-Q04`, `T4-P260-PERF01`, `T4-P261-Q01` ve `T4-P262-PERF01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
