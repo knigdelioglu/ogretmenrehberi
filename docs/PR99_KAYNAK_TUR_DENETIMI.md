@@ -38,6 +38,18 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 
 **Tur K2 kapsam sınırı:** Yukarıdaki doğrulama, depodaki basılı kitap JSON sayfalarının metin katmanı ve yapılandırılmış soru bloklarıyla yapıldı; video sesinin yeniden dinlenmesi veya yeni bir transkript üretimi değildir. Bu turda cevap metinleri ve cevap türleri değiştirilmedi. Yalnız `T2-P88-Q06` akışındaki bir öğretmen yönlendirmesi kaynak belirsizliğine uygun hâle getirildi. Sunumun `quote_links` indeksleri ile hedef cevap bölümlerinin varlığı kayıt bazında kontrol edildi; otomatik test sonucu yerine geçirilmemelidir.
 
+## Tur K3 — Oğulla Buluşma ve Kül Tigin Âbidesi (5 kayıt)
+
+| Kayıt | PR #99 farkı / kanıt sınırı | Basılı sayfa ve sunum kanıtı | Karar |
+| --- | --- | --- | --- |
+| `T2-P100-Q02` | Aynı `answer` ve `entry_type=question_answer` korunarak `source_locator` alıntı sayfası s.91'i kapsayacak biçimde genişletilmiş | Basılı s.100 soru 2, Nazifkan'ın tepkisizliğini sorar. s.91'de caydırmanın yararsızlığı ve öz anne olmama çekincesi birlikte açıkça yer alır. Sunumun 0/1 kanıt indeksleri `caydirma` birimine; ikinci kanıt `Öz annesi olmaması` bölümüne geçerli bağlanır | **Uygun.** Soru ve iki alıntı doğru konumda; metin değişikliği yok |
+| `T2-P100-Q07` | `source_locator` s.92'yi gösteriyordu; cevap alt bölümünde ek s.93–94 kanıtları da kullanılıyor | Basılı s.100 soru 7 pişmanlık yorumunu sorar. “Huyuma suyuma uymaz / Oğluma kötülük edemem!” doğrudan alıntısı s.92'de; Sultan'ın “Baba, beni bağışla gönüllü olarak gidiyorum...” sözü s.93'te; Çordon'un “mert bir erkek” öğüdü s.94'tedir. Sunumdaki tek `quote_links[0]`, mevcut `Metindeki açık gerekçe` bölümüne geçerli bağlanır | **Kaynak kapsamı düzeltildi.** Alıntı s.92 ve ek bölüm kanıtları s.93–94 ayrı açıklandı; cevap değişmedi |
+| `T2-P112-Q05` | `source_locator` s.90, 94, 95 metinlerine genişletilmiş; cevap ve tür aynı | Basılı s.112 soru 5 kişisel beğeni ifadesi istiyor. “Kalbim böyle söylüyor...” s.90'da, “O, tam kendisiydi...” ve “Bir erkek, bir adam ol oğlum...” s.94'te; son iki ifadeye s.95'teki etkinlik alıntısı da destek veriyor. Sunumun 0/1/2 indeksleri mevcut üç `answer_sections` başlığına geçerli bağlanır | **Uygun.** Kitap alıntıları ve alternatifleri mevcut; cevap değişmedi |
+| `T2-P117-Q01` | `source_locator` yalnız s.114 alıntılarını gösteriyordu; `Kül Tigin'i anma` cevap bölümünün bağlamı s.115'te devam ediyor | Basılı s.117 `Metni Anlayalım` soru 1, Bilge Kağan'ın amacını sorar. Sesleniş ve “ebedî taşa vurdum” sözleri s.114'te, Kül Tigin'in ölümü/yası s.115'tedir. Sunum 0/1 kanıtları `bilge-intents` birimine, indeks 1 `Sözü kalıcılaştırma` alt bölümüne geçerli bağlanıyor | **Kaynak kapsamı düzeltildi.** s.114 alıntısı ve s.115 anma kanıtı ayrıştırıldı; cevap değişmedi |
+| `T2-P117-BILGE01` | `source_locator` yazıt için s.114'ü gösteriyor, `Fark Edelim` Kafesoğlu metnini ve s.115'teki yas anlatısını yeterince ayrıştırmıyordu | Basılı s.117'deki soru `Bilgi Köşesi`ne değil `Fark Edelim` altında verilen İbrahim Kafesoğlu metnine ve Kül Tigin yazıtına dayanır. Kafesoğlu parçasında kitabe/bark Bilge Kağan'ın himmetiyle ilişkilendirilir; yazıtta s.114'te millet için çalışma, s.115'te kardeş Kül Tigin'in ölümünün ardından yas yer alır. Sunumdaki indeks 0 ve `management-and-effort` / `kinship` / `monument` / `advice` bölüm bağları geçerli | **Kaynak kapsamı düzeltildi.** S.117 Kafesoğlu + s.114–115 yazıt ayrımı açıklaştırıldı; cevap değişmedi |
+
+**Tur K3 sonuç ve kapsam:** Beş kaydın cevap türü `question_answer` kalmıştır. Karşılaştırma PR #99 öncesi `6f029e0` ve güncel `main` JSON kayıtlarıyla yapılmıştır; beşinin `answer` içeriği değişmemiştir. Basılı kitap soru ve alıntıları, sunumdaki `quote_links` sayısal indeksleri, hedef `answer_sections` ve tema-2 akışlarının `answer_id` eşlemeleri kontrol edildi. Orhun video/QR sesi incelenmedi ve tam transkript doğrulaması iddia edilmedi. Üç `source_locator` alanı kapsayıcı kaynak izlenebilirliği için düzeltildi; cevap, kanıt dizisi ve pedagojik yönlendirme değiştirilmedi.
+
 ## Bekleyen kaynak-bağlantısı denetimi
 
 | Tema | Kimlik | Kontrol odağı | Durum |
@@ -47,11 +59,11 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 1 | `T1-P56-Q03` | İletişim metni alıntı sayfaları | **Uygun** |
 | Tema 2 | `T2-P88-Q06` | Soru kökündeki davranışlar | **Koşullu uygun** |
 | Tema 2 | `T2-P100-Q01` | Alıntı metni sayfası | **Uygun** |
-| Tema 2 | `T2-P100-Q02` | Alıntı metni sayfası | **Bekliyor** |
-| Tema 2 | `T2-P100-Q07` | Alıntı metni sayfası | **Bekliyor** |
-| Tema 2 | `T2-P112-Q05` | Alıntı metni sayfaları | **Bekliyor** |
-| Tema 2 | `T2-P117-Q01` | Orhun metni sayfa bağı | **Bekliyor** |
-| Tema 2 | `T2-P117-BILGE01` | Bilgi Köşesi/metin bağı | **Bekliyor** |
+| Tema 2 | `T2-P100-Q02` | Alıntı metni sayfası | **Uygun** |
+| Tema 2 | `T2-P100-Q07` | Alıntı metni sayfası | **Kaynak kapsamı düzeltildi** |
+| Tema 2 | `T2-P112-Q05` | Alıntı metni sayfaları | **Uygun** |
+| Tema 2 | `T2-P117-Q01` | Orhun metni sayfa bağı | **Kaynak kapsamı düzeltildi** |
+| Tema 2 | `T2-P117-BILGE01` | Fark Edelim (Kafesoğlu) / yazıt bağı | **Kaynak kapsamı düzeltildi** |
 | Tema 2 | `T2-P128-Q01` | Orhun metni sayfa bağı | **Bekliyor** |
 | Tema 3 | `T3-P175-Q02` | Metin içi alıntı sayfası | **Bekliyor** |
 | Tema 3 | `T3-P176-Q03` | Soru ve Bilgi Köşesi/metin bağı | **Bekliyor** |
@@ -73,8 +85,8 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Bekliyor** |
 | Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Bekliyor** |
 
-**İlerleme:** Kaynak/tür değişen **10/35 kayıt incelendi; 25 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
+**İlerleme:** Kaynak/tür değişen **15/35 kayıt incelendi; 20 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
 
 ## Sonraki küçük tur
 
-Önce `T2-P100-Q02`, `T2-P100-Q07`, `T2-P112-Q05`, `T2-P117-Q01` ve `T2-P117-BILGE01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
+Önce `T2-P128-Q01`, `T3-P175-Q02`, `T3-P176-Q03`, `T3-P176-Q05` ve `T3-P176-Q13` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
