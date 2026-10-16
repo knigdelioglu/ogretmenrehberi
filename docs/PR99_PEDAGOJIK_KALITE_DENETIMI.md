@@ -48,6 +48,22 @@
 
 **Son durum:** Beş kaydın `source_limited` statüsü değiştirilmedi. İçerik sahibi inceleme beyanı ayrıdır; kelimesi kelimesine arşivlenmiş transkript veya aday MP4'ün EBA dosya kimliği yerine kullanılmadı. Yeni başka cevap üretilmeden bu turda duruldu.
 
+## Tur 4 — Tema 2: ortak kültür, dil ve Orhun Vadisi
+
+| Soru | PR #99 öncesi öğretim katkısı | PR #99 / güncel sürümün durumu | Bu turda yapılan düzeltme |
+| --- | --- | --- | --- |
+| `T2-P88-Q02` | Hasat, Nevruz ve farklı kutlamaların ortak kültüre etkisini örnekliyordu; ancak ülke/tören ayrıntılarını doğrulanmamış video sözü gibi veriyordu | PR #103 genel işlevleri geri getirmiş, somut karşılaştırma sınırlı kalmıştı | Hasat–Nevruz için ortak işlev, ayırıcı özellik ve kuşaklararası aktarım örneği bağımsız bölümlerde düzenlendi; eski tören listesi transkript gibi aktarılmadı |
+| `T2-P88-Q03` | Coğrafya adları ve kültürel bağ açıklaması vardı; video dış sesine kesin atıflar kanıtsızdı | PR #103 birkaç coğrafya örneğini korudu fakat her birinin gerekçesi azdı | Orta Asya, Azerbaycan, Kırım ve Balkanlar için kültürel bağ ve yorum sınırı belirtildi; siyasi sınır ve video sözü iddialarından ayrıldı |
+| `T2-P88-Q04` | Kitapta verilen yaş–yaşıl/yeşil öncülünü mevsim, canlılık ve tabiat yorumu ile birleştiriyordu | PR #99 ve #103 kaynağı sorgulamaya ağırlık verip **kitabın açık yorumlama sorusuna** somut cevap vermeyi zayıflattı | Kitabın verdiği kökteşlik öncülü, hayat–tabiat–yenilenme çağrışımları ve bahar örneğiyle yorumlandı; bağımsız etimolojik araştırma ihtiyacı ayrı tutuldu |
+| `T2-P88-Q05` | Birlikte çalışma ile saya gezme paylaşımını örnekliyor, fakat paylaşımı imeceyle karıştırmaya açıktı | PR #103 imecenin tanımını ve genel yararını geri kazandırmıştı | Sulama kanalını birlikte temizleme **açıklayıcı örneği**, kolektif emek–güven–ortak yarar zinciri ve şenlik/imece farkı işlendi |
+| `T2-P113-Q01` | Orhun Vadisi, yazıtlar, Kül Tigin ve Bilge Kağan hakkında somut ön bilgi vardı; bazı ayrıntılar kanıtsız sözlü videoya atfediliyordu | PR #99 ön bilgiyi genel bir boş şablona indirgemiş, çoğunlukla görsel nesneleri sıralamıştı | Öğrenciye kullanılabilir bölge, Kök Türk yazıtları ve tarihî yazılı miras örnek yanıtı verildi; videodaki **“KÜL TİGİN ABİDESİ”** görseli ve bilgi–gözlem ilişkisi ayrı işlendi |
+
+**Denetlenen kaynaklar:** ders kitabının `data/book/grade-11/themes/theme-2/pages/p088.json` ve `p113.json` soruları; `data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LO.md`, `UNVERIFIED-19XU49LT.md` görsel notları; PR #99 öncesi `6f029e0`, PR #99 sonrası `ce8406d`, çalışmaya başlanılan `main` cevapları. PR #103'ün mevcut iyileştirmeleri korunarak ilerletildi.
+
+**Kanıt kararı:** Beş sorunun mevcut `source_limited` statüsü korundu. Kullanıcının ses/görüntü incelemesini doğruladığı beyanı ayrıca envanterde duruyor; fakat eldeki MP4'lerin EBA indirme baytlarıyla eşleşmesi ve depolanmış kelimesi kelimesine ses çözümü hâlâ ayrı kanıt aşamaları. Model olarak verilen hasat ve sulama örnekleri **kaydedilmiş video sahnesi veya doğrudan alıntı değil**.
+
+**Kalite duraklaması:** Bu beş soru düzenlendikten sonra başka soru değiştirilmedi. CI kontrolleri ve kod–sunum sözleşmeleri son aşama olarak ayrı doğrulanacak.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -67,11 +83,11 @@
 | Tema 1 | `T1-P73-Q02` | 72–73 | **Tur 3: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P83-Q13` | 79–83 | **Tur 3: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P88-Q01` | 86–89 | **Tur 3: incelendi ve düzeltildi** |
-| Tema 2 | `T2-P88-Q02` | 86–89 | Bekliyor |
-| Tema 2 | `T2-P88-Q03` | 86–89 | Bekliyor |
-| Tema 2 | `T2-P88-Q04` | 86–89 | Bekliyor |
-| Tema 2 | `T2-P88-Q05` | 86–89 | Bekliyor |
-| Tema 2 | `T2-P113-Q01` | 113–120 | Bekliyor |
+| Tema 2 | `T2-P88-Q02` | 86–89 | **Tur 4: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P88-Q03` | 86–89 | **Tur 4: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P88-Q04` | 86–89 | **Tur 4: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P88-Q05` | 86–89 | **Tur 4: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P113-Q01` | 113–120 | **Tur 4: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P129-Q01` | 129–135 | Bekliyor |
 | Tema 2 | `T2-P129-Q02` | 129–135 | Bekliyor |
 | Tema 2 | `T2-P129-Q03` | 129–135 | Bekliyor |
@@ -92,7 +108,7 @@
 | Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
 | Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
 
-**Tur 1–3 tamamlandı: 15/39 metni değişmiş cevap kaydı. Kalan: 24.**
+**Tur 1–4 tamamlandı: 20/39 metni değişmiş cevap kaydı. Kalan: 19.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -103,4 +119,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Sıradaki beşli: Tema 2 `T2-P88-Q02`, `T2-P88-Q03`, `T2-P88-Q04`, `T2-P88-Q05` ve `T2-P113-Q01`; kitap/sözlük/media kanıtı ile her biri ayrı doğrulanacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Sıradaki küçük grup: Tema 2 `T2-P129-Q01`, `T2-P129-Q02`, `T2-P129-Q03`, `T2-P140-VOC01`, `T2-P141-Q01`; her biri eski/yeni cevap, ders kitabı ve medya kanıtıyla yeniden kontrol edilecek. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
