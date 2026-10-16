@@ -182,13 +182,28 @@ const communicationLaterAnswers = new Map(communicationLaterBank.entries.map((en
 const p72 = communicationLaterAnswers.get("T1-P72-Q01");
 const p73q1 = communicationLaterAnswers.get("T1-P73-Q01");
 const p73q2 = communicationLaterAnswers.get("T1-P73-Q02");
-assert.ok(!JSON.stringify(p72.answer_sections).includes("Hoş geldiniz"),
-  "Untranscribed speech must not remain as a verified dialogue example");
+// Basılı s.72 tablosu bir selamlama ifadesini örnek olarak VERİYOR.
+// Bu, video ses dökümünden türetilmiş bir alıntı değildir. Kaynak güvenliğini
+// korurken kitabın bağımsız, doğrudan doğrulanabilir örneğini yasaklamayalım.
+const communicationBookP72 = read("data/book/grade-11/themes/theme-1/pages/p072.json");
+assert.ok(communicationBookP72.text_layer.includes("Aklıselim programına hoş geldiniz."),
+  "Page 72 textbook must actually contain the sample greeting");
+assert.ok(p72.answer_sections?.Nezaket?.includes("Aklıselim programına hoş geldiniz."),
+  "Page 72 should preserve the directly supported textbook example");
+assert.match(`${p72.answer} ${p72.guidance}`, /kitap|basılı/iu,
+  "Book evidence must not be mislabeled as a verified recording");
 assert.deepEqual(p73q1.evidence_quotes, ["Mektup, sevginin kanatlanmış hâlidir."],
   "Page 73 may use the exact screen caption verified in its review note");
 assert.ok(p73q1.source_locator.includes("QR-EBA-29BF4F293D53.md"));
-assert.ok(p73q1.answer.includes("konuşmacının sözü olarak doğrulanmamıştır"));
-assert.ok(p73q2.answer.includes("olumsuz dil özelliği belirlenmemiştir"));
+const p73Provenance = `${p73q1.answer} ${p73q1.guidance} ${p73q1.explanation ?? ""}`;
+assert.match(p73Provenance, /ekran|alt bant|görsel/iu,
+  "Page 73 must identify the visually verified provenance of the quote");
+assert.match(p73Provenance, /konuşmacı|sesli|ses dökümü|ses tonu/iu,
+  "Page 73 must keep spoken dialogue distinct from on-screen text");
+assert.match(p73q2.answer, /ekran/iu,
+  "Example criticism must be grounded in screen evidence");
+assert.match(p73q2.answer, /çözüm/iu,
+  "Example criticism needs a corresponding improvement proposal");
 assert.ok(!JSON.stringify(p73q2.answer_sections).includes("benzer düşüncelerin tekrarı dinlemeyi zorlaştırabilir"),
   "Do not invent an audio-derived language flaw");
 
