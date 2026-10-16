@@ -17,7 +17,12 @@
     {
       "text": "6. Metnin içeriği hakkında metni dinlemeden / izlemeden önceki tahminlerinizle dinledikten / izledikten sonraki tespitlerinizi ilgili yerlere yazarak karşılaştırınız.",
       "question_number": "6",
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02",
+        "G11-T1-P67-VID01",
+        "G11-T1-P67-VID02"
+      ],
       "subquestions": [],
       "options": [],
       "id": "G11-T1-P67-Q06",
@@ -47,7 +52,12 @@
         "G11-T1-P67-TABLE01",
         "G11-T1-P67-TABLE02"
       ],
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02",
+        "G11-T1-P67-VID01",
+        "G11-T1-P67-VID02"
+      ],
       "source": {
         "printed_page": 67,
         "pdf_page": 68
@@ -109,7 +119,12 @@
     {
       "text": "7. Metinle ilgili tahmin ve tespitlerinizden hareketle iletişime dair ulaştığınız sonuçları yazınız.",
       "question_number": "7",
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02",
+        "G11-T1-P67-VID01",
+        "G11-T1-P67-VID02"
+      ],
       "subquestions": [],
       "options": [],
       "id": "G11-T1-P67-Q07",
@@ -124,7 +139,12 @@
     {
       "text": "8. Metinden öznel ve nesnel ifadelere örnekler bulup ilgili yerlere yazınız. Bu ifadelerin metne katkısını değerlendiriniz.",
       "question_number": "8",
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02",
+        "G11-T1-P67-VID01",
+        "G11-T1-P67-VID02"
+      ],
       "subquestions": [],
       "options": [],
       "id": "G11-T1-P67-Q08",
@@ -142,7 +162,12 @@
     {
       "text": "9. Metinden anladıklarınızı özetleyerek aşağıya yazınız.\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................\n...............................................................................................................................................................",
       "question_number": "9",
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02",
+        "G11-T1-P67-VID01",
+        "G11-T1-P67-VID02"
+      ],
       "subquestions": [],
       "options": [],
       "response_area": {
@@ -170,6 +195,38 @@
         "pdf_page": 68
       },
       "order": 10
+    },
+    {
+      "id": "G11-T1-P67-VID01",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU4CVR.mp4",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı Geçmişten Günümüze İletişim Araçları videosunun ses içeriği; sözlü anlatım bulunmadığı ve enstrümantal müzik olduğu bilgisi.",
+      "text": "Sözlü anlatım: Videoda dış ses veya konuşma bulunmamaktadır. Video süresince tempolu ve neşeli bir enstrümantal fon müziği çalmaktadır.",
+      "order": 11,
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68,
+        "media_file": "19XU4CVR.mp4",
+        "provenance": "user_supplied_transcript"
+      }
+    },
+    {
+      "id": "G11-T1-P67-VID02",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU4CVR.mp4",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı Geçmişten Günümüze İletişim Araçları videosundaki açılış başlığı ve zaman çizelgesi metinleri dökümü.",
+      "text": "Açılış başlığı (00:01–00:08): “Geçmişten Günümüze İletişim Araçları”.\n\n1. Mağara Duvarına Yapılan Çizimler (00:16–00:23): “Eski zamanlarda insanların kendilerini ifade etmek ve haberleşmek amacıyla mağara duvarlarına yaptıkları çizimlerdir.”\n\n2. Posta Güvercini (00:24–00:30): “Yazılı mesajların bir yerden başka bir yere taşınmasını sağlayan güvercinlerdir.”\n\n3. Ulak (00:31–00:38): “Haber getiren kimsedir.”\n\n4. Mektup (00:39–00:46): “Bir şeyi haber vermek, sormak, istemek veya duygu ve düşünceleri bildirmek için birinin çoğunlukla posta yoluyla gönderilen, zarfa konulmuş yazılı kâğıttır.”\n\n5. Gazete (00:47–00:54): “Politika, ekonomi, kültür ve daha başka konularda haber ve bilgi vermek için günde veya belirli zaman aralıklarıyla çıkarılan yayındır.”\n\n6. Telgraf (00:54–01:00): “İki merkez arasında, kararlaştırılmış işaretlerin yardımıyla yazılı haberlerin veya belgelerin iletimini sağlayan bir telekomünikasyon düzenidir.”\n\n7. Kablolu Telefon (01:01–01:08): “Sesli iletişim aracı olarak icat edilen kablolu telefonlar, sesin elektrik sinyalleriyle iletildiği bir ağa bağlı çalışan düzenektir.”\n\n8. Dizüstü Bilgisayar (01:09–01:16): “Dizüstü bilgisayarlar her türlü donanımı ile bir arada çalışan taşınabilir duruma getirilmiş biçimidir.”\n\n9. E-posta (01:17–01:24): “Her türlü bilgisayar, tablet ve cep telefonundan internet aracılığıyla çeşitli formatlarda (metin, görsel, ses vb.) mesajların iletilmesini sağlayan elektronik mektuptur.”\n\n10. Cep Telefonu (01:25–01:38): “Kişinin yanında taşıyabildiği kablosuz telefondur.”",
+      "order": 12,
+      "source": {
+        "printed_page": 67,
+        "pdf_page": 68,
+        "media_file": "19XU4CVR.mp4",
+        "provenance": "user_supplied_transcript"
+      }
     }
   ]
 }

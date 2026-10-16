@@ -147,47 +147,47 @@
       "printed_page": 140,
       "question_no": "Söz Varlığımız",
       "prompt_summary": "Çağ, canan, sine, kahır, saban kelimelerini atışmadaki bağlamına göre anlamlandırma ve alternatif önerme",
-      "answer": "Çağ: dönem veya devir; canan: gönülden sevilen kimse; sine: göğüs, bağır, kimi kullanımlarda yürek; kahır: derin üzüntü veya sıkıntı; saban: toprağı sürmeye yarayan tarım aracı. Bunlar sözcüklerin temel anlamlarıdır. Sözgelimi çağ→devir, canan→sevgili, kahır→üzüntü ve saban→pulluk yakın anlamlı önerilerdir; fakat bir atışma dizesine yerleştirildiklerinde ses, hece, uyak ve imge farklılaşabilir. 'Kahır' yerine 'üzüntü' seçildiğinde hece sayısı bile değişebilir. Kitaptaki çalışma, gerçek dinleme dizesi ve TDK sözlüğü karşılaştırılarak tamamlanmalıdır; bu öneriler doğrulanmış video dizesi değildir.",
-      "guidance": "Öğrencinin kitapta verilen beş sözcük için (1) kendi anlam tahminini, (2) TDK kontrolünü, (3) gerçekten dinlediği mısrayı ve (4) alternatif sözcüğü yan yana getirmesini sağlayın. 'Çağ/devir' ve 'kahır/üzüntü' ikamelerinde hece farkının ahenge etkisini tartıştırın; sözcüğün mecaz anlamını açıklamak için gerçek dize gerekçesi isteyin. Sine'nin videoda geçip geçmediğine ilişkin kesin tespit yapmayın; depoda doğrulanmış ses transkripti bulunmuyor.",
-      "source_locator": "basılı s.140 / PDF s.141 — EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti doğrulanmadı",
+      "answer": "Dökümdeki kullanımlar: **çağ** “Zaman geçen çağ gibiyim”; **canan** “Başı duman cananın dağ gibiyim”; **kahır** “Yel vurması neme kahır”; **saban** “Saban gibi toprakları”; **sine** ise paylaşılan dörtlüklerde yer almıyor. Çağ “devir/dönem”, canan “gönülden sevilen kimse”, kahır “derin üzüntü veya sıkıntı”, saban “toprağı sürmeye yarayan araç” anlamındadır. “Sine” için temel sözlük anlamı göğüs/bağırdır; ancak bu dökümde bağlam örneği yok. Yakın karşılık önerirken dizedeki hece sayısı, uyak, anlam ve imgeyi yeniden değerlendirmek gerekir.",
+      "guidance": "Önce beş sözcüğün anlamını tahmin ettirin, ardından sözlükle karşılaştırın. Dökümde geçen dört sözcüğün bulunduğu dizeyi p140 sayfa JSON’undan kullanarak bağlamı tartıştırın. “Sine”nin kullanıcı tarafından sağlanan dörtlüklerde bulunmadığını açıkça belirtin; daha geniş videoda başka yerde geçmediği sonucunu çıkarmayın. Alternatif sözcükleri dizede deneyip anlam, hece ve ahenk etkisini karşılaştırın.",
+      "source_locator": "basılı s.140 / PDF s.141 — 19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrı görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
         "çağ": {
           "temel_sozluk_alani": "zaman, dönem, devir",
-          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-          "baglam_tahmini": "Dizede zamanın geçişi, bir dönem veya bir tarihî devre işaret ediyorsa 'çağ' bu anlamda kullanılabilir. Hangi anlamın uygun olduğu duyulan dizeye göre belirlenmelidir.",
+          "videodaki_dize": "“Zaman geçen çağ gibiyim.”",
+          "baglam_tahmini": "Zamanın geçişi veya bir dönem çağrışımı vardır; dörtlüğün devamındaki dağ imgesiyle kurulan benzetme birlikte okunmalıdır.",
           "tdk_kontrolu": "zaman dilimlerinden her biri; devir",
-          "alternatif": "Devir veya dönem yakın karşılıktır; çağ tek, devir ve dönem iki hecedir. Bu nedenle dize ritmi ve uyak etkisi ayrıca denenmelidir."
+          "alternatif": "Devir veya dönem düşünülebilir; dizede hece ve uyak yapısını yeniden sınayın."
         },
         "canan": {
           "temel_sozluk_alani": "gönülden sevilen kimse, sevgili",
-          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-          "baglam_tahmini": "Sevilen kişiye hitap veya onu betimleme bağlamı varsa canan 'sevgili' anlamına gelebilir; bu bir video alıntısı değil koşullu anlam tahminidir.",
+          "videodaki_dize": "“Başı duman cananın dağ gibiyim.”",
+          "baglam_tahmini": "Canan, sevgili anlamıyla kullanılır; dize sevgiliyi başı dumanlı dağa benzeten imgesel bir söyleyiş kurar.",
           "tdk_kontrolu": "gönülden sevilen kimse",
-          "alternatif": "Sevgili anlamca yakındır; canan iki, sevgili üç hecelidir. İkamenin ritim ve ses benzerliğini değiştirip değiştirmediği dizede kontrol edilir."
+          "alternatif": "Sevgili yakın karşılıktır; hece sayısı ve dizedeki ses düzeni değişebilir."
         },
         "sine": {
           "temel_sozluk_alani": "göğüs, bağır",
-          "videodaki_dize": "Doğrulanmış transkript yok.",
-          "baglam_tahmini": "Sine bedensel 'göğüs/bağır' anlamında veya duyguların bulunduğu yer için mecazen kullanılmış olabilir; gerçek dize olmadan karar verilemez.",
+          "videodaki_dize": "Kullanıcının sağladığı dörtlüklerde bu sözcük geçmiyor.",
+          "baglam_tahmini": "Bu dökümde bağlamı bulunmadığından yalnız sözlük anlamı verilebilir.",
           "tdk_kontrolu": "göğüs, bağır",
-          "alternatif": "Göğüs veya bağır, bağlam uygunsa yürek önerilebilir; ses ve çağrışım değiştiğinden doğrudan eşdeğer oldukları varsayılmaz."
+          "alternatif": "Bağlama göre göğüs, bağır veya mecazen yürek düşünülebilir; bu kayıtta dize örneği yok."
         },
         "kahır": {
           "temel_sozluk_alani": "derin üzüntü veya acı, sıkıntı",
-          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-          "baglam_tahmini": "Duygusal acı, derin sıkıntı veya üzüntü anlatılıyorsa kahır sözcüğünün böyle bir anlam alanı olabilir; dize doğrulanmadan kesinleştirilmez.",
+          "videodaki_dize": "“Yel vurması neme kahır.”",
+          "baglam_tahmini": "Kahır, üzüntü veya sıkıntı anlam alanında kullanılır; dize doğa imgesi üzerinden duygusal bir durumu dile getirir.",
           "tdk_kontrolu": "derin üzüntü veya acı, sıkıntı",
-          "alternatif": "Üzüntü veya sıkıntı yakın anlamlı olabilir. Kahır iki, üzüntü üç hecelidir; söyleyişin ahengi değişebilir."
+          "alternatif": "Üzüntü veya sıkıntı yakın karşılıklardır; hece yapısı ve şiirsel etki değişebilir."
         },
         "saban": {
           "temel_sozluk_alani": "toprağı sürmeye yarayan tarım aracı",
-          "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-          "baglam_tahmini": "Sabanın gerçek bir tarım aracı mı yoksa bir benzetme unsuru mu olduğu, bulunduğu mısranın bütününden anlaşılır.",
+          "videodaki_dize": "“Saban gibi toprakları, / Eş eşebilirsen eğer.”",
+          "baglam_tahmini": "Saban, toprağı işleme imgesi içinde kullanılır; “eşmek” fiili ve sonraki tekrar dörtlükteki ses/ifade oyununu kurar.",
           "tdk_kontrolu": "toprağı sürmeye yarayan çiftçilik aracı",
-          "alternatif": "Pulluk yakın karşılıktır; ancak çağrışım ve ses yapısı farklılaşabileceği için dizede denenmelidir. 'Sürmek' fiili saban adının doğrudan eş anlamlısı değildir."
+          "alternatif": "Pulluk yakın karşılıktır; sözcük değişince imge, hece ve uyak etkisini dizede karşılaştırın."
         }
       },
-      "explanation": "PR #99 sözlük verisini korumak amacıyla doğru biçimde kaynağı sınırlamıştı; PR #103 temel anlam ve ikameleri kısmen geri kazandırdı. Bu turda her sözcük için örnek alternatifin ritim/çağrışım sonucu gösterildi; kitaptaki iki aşamalı anlam tahmini–TDK denetimi ve bağlamsal ikame görevi güçlendirildi. Videoya ait mısra üretilmedi.",
+      "explanation": "Kullanıcının sağladığı atışma dökümü dört kelimenin gerçek dize bağlamını gösteriyor. “Sine” bu paylaşılan dörtlüklerde yer almıyor; bu sınırlı ifade, videonun tamamına dair bir yokluk iddiası değildir.",
       "dictionary_terms": [
         {
           "term": "çağ",
@@ -222,14 +222,14 @@
       "printed_page": 141,
       "question_no": "1",
       "prompt_summary": "Âşıklık geleneğinin korunması ve yaşatılması için yapılabilecekler",
-      "answer": "Âşıklık geleneğinin korunması için yaşayan âşıkların icraları izin alınarak kaydedilmeli, kayıtlar tarih, yöre, kullanılan saz ve icra bağlamı gibi bilgilerle arşivlenmelidir. Okullarda âşıklarla söyleşiler ve dinleti–atölyeler düzenlenerek usta-çırak aktarımı ve sözlü edebiyatın özellikleri yeni kuşaklara tanıtılabilir. Erman Artun'un metni geleneği saptama, koruma, teşvik etme, eğitimle aktarma ve çağdaş yorumlarla yaşatma ilkelerini öne çıkarır. Örneğin öğrencilerin bir yöreden icra derleyip aynı geleneğin Kazaklarda 'akın', Kırgızlarda 'aytışçı' gibi adlarla yaşadığını araştırmaları, ortak miras ile yerel farklılığı birlikte gösterir. Bunlar metinden geliştirilen uygulama önerileridir; videodaki söyleşi konuşmacısının doğrulanmamış sözleri değildir.",
+      "answer": "Âşıklık geleneğinin sürmesi için yaşayan âşıkların eserleri ve icraları kaydedilip kaynak bilgileriyle arşivlenebilir; okullarda dinleti, söyleşi ve usta-çırak çalışmaları yapılabilir; sözlü şiirin doğaçlama, saz ve karşılıklı söyleyiş yönleri yeni kuşaklara aktarılabilir. Kullanıcının sağladığı söyleşide Prof. Dr. Muammer Mete Taşlıova, âşıklığı Türk kültürünün yaşayan önemli alanlarından biri olarak tanımlar ve ozanlıktan âşıklığa geçişi tarihsel bir dönüşüm içinde açıklar. Bu görüş, geleneğin yalnız eserleri saklayarak değil, icra ve aktarım ortamlarını yaşatarak korunması gerektiğini destekler.",
       "evidence_quotes": [
         "Bilgi ve eğitim boyutuna ağırlık verilerek, âşıklık geleneği kültürel mirasının saptanması, korunması, teşviki ve aktarılmasını hedef alan politikalar geliştirilmelidir.",
         "geçmişi gelecek kuşaklara taşımak ve çağdaş yorumlarını yapmak amacıyla sosyal, kültürel ve sanatsal çalışmaları, toplumumuzun değişik kesimleri ile birlikte yürütme"
       ],
-      "explanation": "Âşıklığın geleceğe taşınmasına dair metinsel öneriler ve doğrulanmış iki kitap alıntısı korunmuştur. Eski sürümde video usta–çırak ve sazlı icra iddiaları içerik dökümü gibi sunuluyordu; bunlar yeniden atfedilmedi. Bu tur kitabın gerçekten listelediği Türk dünyası adlandırmalarını ve uygulanabilir, izinli arşivleme modelini daha belirgin hâle getirmiştir.",
-      "guidance": "Öneriyi metindeki koruma/teşvik/aktarım ilkelerinden biriyle ilişkilendirtin. Somut bir okul uygulaması planlatın: kiminle, nerede, hangi izinle, nasıl kaydedilecek ve sonraki kuşağa nasıl aktarılacak? Basılı s.141'deki ozan/âşık/akın/aytışçı örneklerini kullanarak geleneklerin ortak ve yerel yanlarını karşılaştırın. Görsel söyleşi kaydının konuşmacıya ait birebir görüş sunduğunu varsaymayın; tam ses transkripti doğrulanmamıştır.",
-      "source_locator": "basılı s.141 / PDF s.142 — soru 1; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4; görsel kanıt ve sınırlar: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
+      "explanation": "Kitaptaki koruma/aktarım ilkeleri, kullanıcının sağladığı söyleşide yer alan âşıklık tanımı ve tarihsel çerçeveyle birlikte ele alındı.",
+      "guidance": "Metindeki koruma, teşvik, eğitim ve aktarım önerilerini; videodaki uzman görüşünde açıklanan yaşayan sözlü şiir geleneği, sazlı icra ve farklı icra mekânlarıyla ilişkilendirin. Öğrencilerden izinli kayıt, kaynak bilgisi, dinleti veya söyleşi gibi somut bir uygulama önermelerini isteyin.",
+      "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
       "answer_sections": {
         "Metinden Doğrudan Çıkanlar": [
           "Geleneği belgelemek ve korumak.",
@@ -254,15 +254,15 @@
       "printed_page": 141,
       "question_no": "2",
       "prompt_summary": "Âşıklık geleneğini sürdürmenin Türk kültür mirası açısından önemi",
-      "answer": "Âşıklık geleneği yalnız eski şiirlerin korunması değil, sözün sazla ve dinleyici önünde yeniden üretilen bir kültürel birikim olarak yaşatılmasıdır. Erman Artun'un basılı metni, farklı Türk topluluklarında âşık, ozan, akın ve aytışçı gibi adlarla karşılaşılan bu geleneğin ortak hafızayı kuşaktan kuşağa taşıdığını belirtir. Örneğin Türkiye'deki âşıklık ile Kırgız Türklerindeki aytışçı geleneğini karşılaştırmak, aynı sözlü kültür çevresinin yerel söyleyişlerle çeşitlendiğini fark ettirir. Geleneğin sürdürülmesi; Türkçenin söz varlığını, anlatma ve karşılıklı söyleme becerilerini, kültürel belleği ve topluluklar arası yakınlığı gelecek kuşaklara aktarır. Bu yorum basılı metne dayanır; videodaki konuşmacılara ait doğrulanmamış sözler içermez.",
+      "answer": "Âşıklık geleneğini sürdürmek; Türk sözlü şiirinin, sazla söyleyişin, ortak kültürel belleğin ve kuşaklar arası aktarımın yaşamasına katkı sağlar. Kullanıcının sağladığı söyleşide Taşlıova, geleneğin kamlık/baksılık ve ozanlık dönemlerinden gelişerek farklı adlarla günümüze ulaştığını; âşıklığın 16. yüzyılda yeni bir biçim aldığını anlatır. Dış ses bunu Orta Asya’dan Anadolu’ya uzanan, ustaları ve çırakları olan uzun bir kültür yolculuğu olarak sunar. Bu tarihsel aktarım, geleneğin hem ortak miras hem de yaşayan bir sanat olduğunu gösterir.",
       "evidence_quotes": [
         "Türk dünyası âşıklık geleneği, yüzyılların deneyimlerinden süzülerek biçimlenmiş, kuşaktan kuşağa aktarılan bir değerler bütünüdür.",
         "Kültürel miras, sürdürülebilir kalkınma ve barışın garantisidir.",
         "Kültür, ulusları birbirlerine yakınlaştırmakta, insanların barış ve hoşgörü içinde yaşamalarının temelini oluşturmaktadır."
       ],
-      "explanation": "PR #99, kaynak dışı video güzergâhları ve konuşmacı atıflarını kaldırarak isabetli davrandı; PR #103 somut cevabı büyük ölçüde geri kazandırdı. Bu tur özgün basılı s.141'de verilen Türk dünyası adlarını ve üç aşamalı kültürel miras gerekçesini alt bölümlere ekledi. Üç basılı alıntının kaynak ilişkisi korundu.",
-      "guidance": "Yalnız 'gelenek önemlidir' cevabıyla yetinmeyin. Öğrenciden basılı metindeki 'kuşaktan kuşağa aktarılan' ve 'ulusları yakınlaştırmakta' dayanaklarına dayanarak neyin (sözlü şiir, saz, icra), nasıl (eğitim, buluşma, kuşaklararası aktarım) ve niçin (ortak kültürel hafıza, tanışma/hoşgörü) korunduğunu gerekçelendirmesini isteyin. Âşık–akın–aytışçı karşılaştırmasında farklı adların tüm icraların aynı olduğu anlamına gelmediğini hatırlatın. Depoda tam ses transkripti yok; doğrulanmamış söyleşi sözlerini alıntılamayın.",
-      "source_locator": "basılı s.141 / PDF s.142 — soru 2; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4; görsel kanıt ve sınırlar: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
+      "explanation": "Kültürel miras yanıtı, kitapta basılı ortak miras açıklamalarıyla birlikte kullanıcının sağladığı söyleşi ve dış ses dökümünü de içeriyor.",
+      "guidance": "Öğrencilerden “neyi koruyoruz, hangi yollarla aktarıyoruz, kültür mirası için neden önemli?” sorularına dayanaklı yanıt isteyin. Basılı metindeki kuşaktan kuşağa aktarım ve kültürler arası yakınlaşma görüşlerini; kullanıcı dökümündeki ozanlık/âşıklık tarihi, usta-çırak ve sözlü şiir anlatımıyla birleştirebilirler.",
+      "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
       "answer_sections": {
         "Kültürel Bellek": "Basılı metnin 'kuşaktan kuşağa aktarılan bir değerler bütünü' tanımı, âşıkların eserlerinin yanında sözlü anlatma/ezgili söyleme geleneğinin ve geçmiş deneyimlerin de korunmasını gerektirir. Yalnız kayıt saklamak değil, geleneğin yaşatılarak aktarılması önemlidir.",
         "Türk Dünyasındaki Yaygınlık": "Kitapta Türkiye için 'ozan, âşık', Kazak Türkleri için 'akın, aytısger', Kırgız Türkleri için 'aytışçı', Türkmen/Özbek sahaları için 'bahsi' gibi adlandırmalar verilir. Adlar ve yerel icra biçimleri farklılaşsa da bu örnekler kültürel bağları karşılaştırmaya imkân verir.",

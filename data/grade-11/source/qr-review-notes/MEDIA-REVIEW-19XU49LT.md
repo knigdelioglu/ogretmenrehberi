@@ -5,7 +5,7 @@
 
 **Resmî kitap QR adresi:** `https://ders.eba.gov.tr/ders//redirectContent.jsp?resourceId=06740daa8a1a08c3bfe9d46c65f3fe56&resourceType=1&resourceLocation=2`. Kitaptaki QR kimliği kesin; MP4'ün EBA kaynağından indirilen baytlarla birebir eşleşmesi hâlâ doğrulanmış değil.
 
-**Doğrulama sınırı:** Basılı QR'nin link hedefi PDF'de kesinleşti; ancak eldeki MP4 dosyasının EBA indirmesiyle kriptografik eşleşmesi henüz doğrulanmadı. Videodaki sözlü anlatımın tamamı transkript edilmedi. Aşağıdaki bulgular yalnız zaman damgalı **görüntü incelemesidir**.
+**Kullanıcı dökümü:** Orhun Vadisi videosundaki sözlü anlatım ve ekranda görünen yazılar kullanıcı tarafından sağlandı; p.113 sayfa JSON'una eklendi. Aşağıdaki tablo zaman damgalı **görüntü incelemesidir**. MP4'ün EBA indirmesiyle dosya özdeşliği, içerik dökümünden ayrı bir kaynak bilgisidir.
 
 | Yaklaşık zaman | Görsel kanıt |
 | --- | --- |
@@ -28,6 +28,6 @@
 
 2026-10-15'te kullanıcı, videonun dört zaman aralığı için ayrıntılı sözlü anlatım dökümü ile ekrandaki yazılara ilişkin notlar sağladı. Sunulan döküme göre anlatım; Orhun Vadisi ve Bilge Kağan/Kül Tigin anıtlarını, anıtların tarihlerini ve yazı sistemini, kaplumbağa kaideyi, 1889'da bulunuş ve çözümleme sürecini, Bilge Kağan'ın tacını ve müze buluntularını ele alıyor. Ekran notları altyazı bildirimi ve logoları, yol ve abide başlıklarını, yazıt yüzeylerini ve tacın üç dilli vitrin kartını kapsıyor.
 
-Bu döküm MP4 sesiyle bağımsız olarak karşılaştırılmadı; dolayısıyla **doğrulanmış transkript** değildir. Web sunumunda tam döküm yerine yalnız kısa, kullanıcı dökümüne dayalı bir özet kullanılır. Medya envanterindeki `spoken_audio_transcript: not_done` ve kısmi görsel kanıt durumu bu nedenle korunur. Tarihî veya simgesel yorumlar yalnız dökümde geçiyor diye doğrulanmış kabul edilmemelidir.
+Kullanıcının verdiği ses ve ekran dökümü p.113 sayfa JSON'unda tam bağlamıyla yer alır. Buradaki tarihî anlatı, videonun kullanıcı tarafından sağlanan içeriğidir; yazıtların yüzeyindeki karakterler ve vitrin nesnelerinin ayrıntıları ise bu dökümün kapsamı dışında kalır.
 
-Yazıtların yüzeyindeki bütün karakterler ve teşhir nesnelerinin ayrıntılı tanımları da bağımsız olarak doğrulanmadı.
+Yazıtların yüzeyindeki bütün karakterler ile teşhir nesnelerinin her ayrıntısı, kullanıcı dökümünde tek tek aktarılmamıştır.

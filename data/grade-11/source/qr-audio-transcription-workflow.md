@@ -92,7 +92,7 @@ git pull --ff-only
 sources/local/qr-media/.venv/bin/python scripts/qr_audio_review_queue.py --all --overwrite
 ~~~
 
-İncelenecek beş dosya: `19XU3SUD.mp4`, `19XU4CVR.mp4`, `19XU49JV.mp4`, `19XU49LQ.mp4`, `19XU3SW3.mp4`. Önce orijinal MP4'lerin son 30–45 saniyesini dinleyin. Taslakta süre aşan cümleler gerçekten duyulmuyorsa **uydurulmuş içerik** olabilecekleri için hiçbir ders cevabına aktarılmamalıdır. Sesli içerik transkriptinin tam doğrulandığı iddia edilemez.
+Önceki pilot listesinde yer alan `19XU3SUD.mp4`, `19XU4CVR.mp4`, `19XU49JV.mp4`, `19XU49LQ.mp4` ve `19XU3SW3.mp4` için kullanıcı içerik dökümleri ilgili sayfa JSON kayıtlarına eklendi. Sözlü anlatım bulunmadığı bildirilen kliplerde bu durum da kullanıcı notu olarak kaydedildi. Bu kayıtları otomatik ASR taslaklarıyla karıştırmayın; sonraki yeni videolarda kaynak ve kapsamı sayfa kaydında belirtin.
 
 `--strict` kipinde bu tür zaman-taşması bulunan kayıtlar **başarısız** sayılır; böylece zaman taşması sessizce başarıya dönüşmez. Normal rapor kipinde ise bölüm listesi korunur ve kullanıcıya hangi kısmın inceleneceği açıkça gösterilir.
 
@@ -115,15 +115,15 @@ git pull --ff-only
 sources/local/qr-media/.venv/bin/python scripts/qr_audio_review_queue.py --all --overwrite
 ```
 
-Bu beş videoda gerçek kayıt içindeki son bölümleri orijinal MP4 ile dinleyerek doğrulayın. Gerçek video sonrasındaki saniyelerden hiçbir konuşma/alıntı çıkarılamaz; videonun içinde başlayan 30 saniyelik bir ASR bölümünün **tamamı** ise otomatik olarak sahte kabul edilmez. `--strict` süre taşmalarını uyarı olarak değil, **tam doğrulama için engel** olarak saymaya devam eder.
+Bu beş videoya ait zaman taşması, otomatik ASR taslaklarının kuyruk/segment durumudur; kullanıcı tarafından sağlanan ses dökümlerinin içeriğini tanımlamaz veya geçersiz kılmaz. ASR taslakları yeni bir kullanımda kaynak gösterilecekse ilgili ses bölümü orijinal MP4'te dinlenmelidir. Gerçek video sonrasındaki saniyelerden ASR çıktısı işitsel kanıt sayılmaz. `--strict` süre taşmalarını uyarı olarak değil, **tam doğrulama için engel** olarak saymaya devam eder.
 
-## Öğretmen tarafından dinleyerek doğrulama
+## Kullanıcı tarafından sağlanan dökümler
 
-1. **83. sayfa — Olvido:** Gerçek şiir okuyuşunu dinleyerek dize sınırları, ses tonu, vurgu, tempo, duraklama ve varsa müziği ayrı ayrı doğrulayın. Video girişindeki “Şairin Sesinden” yazısı sesin arşiv kökeninin bağımsız kanıtı değildir. Yanıt Q13'te görsel gözlemi ve işitsel kanıtı ayrı gösterin.
-2. **140. sayfa — âşık atışması:** İcracıların hangi sırayla konuştuğunu ve çağ, canan, sine, kahır, saban sözcüklerinin gerçekten hangi mısralarda kullanıldığını dinleyerek işaretleyin. Tam şiir dizeleri ve konuşmacı kimlikleri modelden varsayılmaz.
-3. **43. sayfa — Mektup Türünün Serüveni:** Videodaki farklı mektup koleksiyonuyla Mehmet Kaplan'ın *kitapta basılı* özel/edebî mektup özelliklerini karıştırmayın. Sınıflandırma yine basılı metinden kanıtlanır.
-4. **Diğer videolar:** Özellikle özel ad, tarih, halk ağzı, doğrudan alıntı ve konuşmacı atfını tek tek sesle karşılaştırın. Düşük log olasılığı veya olası sessizlik uyarıları bulunan segmentleri öncelikli denetleyin.
-5. **Kaynak terfisi:** Ancak doğrulandıktan sonra kısa zaman damgalı paraphrase'leri kaynak notlarına aktarın; ayrı PR'de ilgili soru, kaynak status ve sunum değişikliklerini test edin. Tam ses dökümünü repoya eklemeyin.
+- **83. sayfa — Olvido:** Şiir metni ve Ahmet Muhip Dıranas ses atfı kullanıcı tarafından sağlandı/doğrulandı. Q13 şiirin yalnızlık, keder, pişmanlık, eski ev ve yitiklik imgelerini görsel sunumla birlikte ele alır.
+- **140. sayfa — âşık atışması:** Altı dörtlük, söyleyici atıfları, tekrarlar ve performans akışı kullanıcı dökümünde yer alır. “Çağ”, “canan”, “kahır” ve “saban” gerçek dize bağlamlarıyla sayfa JSON'una işlendi; “sine” sağlanan dörtlüklerde geçmiyor.
+- **43. sayfa — Mektup Türünün Serüveni:** Dış ses, Gülper Refiğ söyleşisi ve ekrandaki metinler kullanıcı dökümünde bulunur. Mehmet Kaplan mektubunun basılı kitaptaki tür sınıflandırması yine o mektubun kendi metninden kanıtlanır.
+- **Diğer video kayıtları:** İçerik, kullanıcı dökümünün kapsadığı biçimde ilgili sayfa JSON'larında tutulur. İki kayıtta sözlü anlatım olmadığı ve müzik bulunduğu kullanıcı notu ayrıca belirtilir.
+- **Yeni ASR taslakları:** ASR tarafından oluşturulmuş metinler kullanıcı dökümüyle karıştırılmaz; doğrudan kaynak olarak kullanılmadan önce kayıtla dinlenerek denetlenir. Kullanıcı tarafından açıkça sağlanan dökümler `user_supplied` türüyle kaydedilebilir.
 
 ## Geliştirici kontrolleri
 
@@ -135,4 +135,4 @@ node scripts/validate-qr-media-intake.mjs
 
 Bunlar sahte ASR motoru üzerinden **yazılımın** SHA korumasını, özel çıktı biçimini, zaman damgasını ve kaldığı yerden devam etme davranışını sınar. **Gerçek modelin konuşma doğruluğunu sınamaz.**
 
-**2026-10-08 itibarıyla:** 18/18 kitap QR hedefi, 18/18 kanıt notu; 5/18 MP4 için EBA/SHA kesin eşleşmesi; **0/18 doğrulanmış tam ses transkripti**. Bu dosyadaki komutların çalışabilir olması, herhangi bir videonun sesinin çözümlendiği anlamına gelmez.
+**İçerik dökümü durumu (2026-10-16):** Kullanıcının sağladığı ses ve ekran yazısı dökümleri ilgili sayfa JSON’larında kaynak türü belirtilerek tutulur; iki kayıtta sözlü anlatım olmadığı ve müzik bulunduğu bilgisi kaydedilmiştir. Bu, ses tanıma çıktısı değil kullanıcı tarafından iletilen içerik kaydıdır. MP4–EBA dosya kökeni kontrolleri ayrı bir kayıttır ve konuşma içeriğine ilişkin bir kuşku anlamına gelmez.

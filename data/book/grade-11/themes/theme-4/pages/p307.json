@@ -218,7 +218,9 @@
       "text": "Anadolu’nun birçok yöresine uyum sağlayan insanların belirgin özellikleri nelerdir?",
       "instruction_id": "G11-T4-P307-INST01",
       "related_text_ids": [
-        "G11-T4-P307-LIT01"
+        "G11-T4-P307-LIT01",
+        "G11-T4-P307-VID01",
+        "G11-T4-P307-VID02"
       ],
       "subquestions": [],
       "source": {
@@ -234,12 +236,46 @@
       "text": "Bir kişinin yaşadığı yere aidiyet duygusu geliştirebilmesi nelere bağlıdır? Örneklerle açıklayınız.",
       "instruction_id": "G11-T4-P307-INST01",
       "related_text_ids": [
-        "G11-T4-P307-LIT01"
+        "G11-T4-P307-LIT01",
+        "G11-T4-P307-VID01",
+        "G11-T4-P307-VID02"
       ],
       "subquestions": [],
       "source": {
         "printed_page": 307,
         "pdf_page": 308
+      }
+    },
+    {
+      "id": "G11-T4-P307-VID01",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49LS.mp4",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı Anadolu İnsanı / Aidiyet dış ses ve Halil Bey röportajı dökümü; zaman aralıkları ve konuşmacılar sunulduğu biçimde korunmuştur.",
+      "text": "Dış ses (00:15–00:56): “Sabırlı, cesur, fedakâr... Milyonlarca insan, Anadolu'nun birbirinden zorlu koşullarına kusursuz bir uyum sağlıyor. Yedi bölgeye şekil veren farklı coğrafi özellikler, bu topraklarda yaşayanların karakter özelliklerine de şekil veriyor. Merhamet, dürüstlük, cömertlik gibi nice büyük erdemler ve yüreğinde taşıdığı en güzel duygularla yaşamı kucaklamaya devam ediyor. Anadolu İnsanı.”\n\nDış ses (01:02–01:30): “Kimi zaman doğduğu toprağın uzağına düşer insan. Kader, beklenmedik bir yön çizer yaşamına. Bazen gönüllü, bazen de zorunlu bir yolculuğun içinde bulur kendisini. Kimi zaman da daha iyi imkanları görmezden gelir. Ve terk etmez kendine yurt bildiği yeri. Aklı, gönlü, ruhu ait olduğu topraklarla iç içedir.”\n\nDış ses (01:44–02:13): “Su, yaşamın çehresini değiştirir. Yokluğu darlık, varlığı bereket getirir. Suyun kıymetini en iyi bilen medeniyetler, hep bu topraklarda boy göstermiştir bu yüzden. Bugün Anadolu'nun dört bir yanında sanki birer anıt gibi yükselen çeşmeler, bulundukları bölgelere hayat veriyor.”\n\nDış ses (02:14–02:49): “Türkiye'nin yeraltı su kaynakları bakımından en şanslı illerinden biri de Kütahya. Simav'a bağlı Mamak köyü, sahip olduğu bu hazinenin değerini çok iyi biliyor. Nesiller boyunca yeraltı su kaynağından en verimli şekilde yararlanabilmek maksadıyla çeşmeler yaptırılmış. Üstelik çeşme yaptırma geleneği buralarda sadece köylerle de sınırlı kalmamış. Çeşmelerin coşkuyla aktığı bir başka yer de dağlar.”\n\nDış ses (02:50–03:05): “Mamak köyünde yaşayan Halil, dağdaki çeşmelerin bahar temizliğini yapmak için yolda. Kışın hemen ardından gelen yağmurlarla birlikte çeşmelerin de bakım zamanı geldi.”\n\nHalil Bey (03:06–03:36): “Aşağı yukarı ben 28... 25 yaşımdan beri geleli de aynı bakardım çeşmeye. O sene, bu sene devam ediyoruz. Bakım olarak çeşmelerde sık sık yıkanacak ahırlar... pislik, kurbağa pisliği oluyor. Onu temizledin mi tertemiz oluyor. Mal makırdak gelen su içecek. İnsanlar su içecek. Bakımı bu yani, bakımı çok kelepir. Öyle zor bir şey değil bakımı. Bakım çok kelepir.”\n\nDış ses (03:44–04:02): “Bu işi elleriyle yapmak pratik geliyor Halil'e. Suyun içindeki pislikleri avuçlayarak dışarı atıyor. Ancak kışın henüz sona erdiği bu dönemde su buz gibi soğuk. Bu derdin de bir çaresi var elbette.”\n\nHalil Bey (04:08–04:39): “Dedemden gördüm ben bunları. 'Var sen oğlum çeşme yaptır. Hayır oğlum, hayır; hayırdır' derdi hep. 'Çeşme hayrı gibi, su hayrı gibi yoktur oğlum' derdi. Ondan öğrendik biz de. Hemen bir yakada su gördük mü, daha görsem de yaptırsam. Dört çeşme yaptırdım ben bu yaşa geleli. Su bulursam yine de, sağ olursam yaptırırım.”",
+      "order": 50,
+      "source": {
+        "printed_page": 307,
+        "pdf_page": 308,
+        "media_file": "19XU49LS.mp4",
+        "provenance": "user_supplied_transcript"
+      }
+    },
+    {
+      "id": "G11-T4-P307-VID02",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49LS.mp4",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı logo, başlık, araç plakası ve nazarlık üzerindeki yazı dökümü.",
+      "text": "Alt yazı bildirimi (00:01–00:04): Ekranın sağ alt köşesinde açık kitap ve sonbahar yaprakları görseli üzerinde “İçerikte alt yazı seçeneği bulunmaktadır. ↓” metni.\n\nKanal logosu: Sol üst köşede “TRTBELGESEL” / “BELGESEL” logosu.\n\nKuşak / program başlığı (00:52–00:55): “ANADOLU İNSANI”.\n\nKonu başlığı (01:34–01:36): “AİDİYET”.\n\nAraç plakası (03:12): Halil Bey'in kullandığı beyaz Toros marka aracın ön plakasında “43 ET 097” yazısı.\n\nDikiz aynası süsü (04:28): Aracın dikiz aynasında asılı nazarlık / muska üzerinde “Maşallah” yazısı.",
+      "order": 51,
+      "source": {
+        "printed_page": 307,
+        "pdf_page": 308,
+        "media_file": "19XU49LS.mp4",
+        "provenance": "user_supplied_transcript"
       }
     }
   ]

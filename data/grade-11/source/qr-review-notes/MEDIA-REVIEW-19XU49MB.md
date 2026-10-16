@@ -4,7 +4,7 @@
 
 ## Doğrulama kapsamı
 
-Ders kitabındaki PDF QR URL'si doğrulandı. Video adayının **10–15 saniye aralıklı görüntüleri** incelendi. Dosyanın EBA'dan indirildiğine dair bağımsız MP4/SHA kökeni ve konuşma transkripti **yoktur**. Ekranda görülen adlar **ekran yazısı olarak** kaydedilmiştir; konuşmacıların bütün sözleri olarak sunulmaz.
+Ders kitabındaki PDF QR URL'si doğrulandı. Video adayının **10–15 saniye aralıklı görüntüleri** incelendi. Kullanıcı dış ses ve uzman görüşlerinin yanı sıra ekran yazıları, harita bilgileri ve tarihî şahsiyet kartlarının dökümünü sağladı; içerik p.159 sayfa JSON'una eklendi. MP4'ün EBA indirme kökeni, kullanıcı dökümünün içeriğinden ayrı bir dosya bilgisidir.
 
 | Yaklaşık zaman | Görsel ve ekran yazısı |
 | --- | --- |
@@ -25,9 +25,9 @@ Ders kitabındaki PDF QR URL'si doğrulandı. Video adayının **10–15 saniye 
 Soru, Orhun Abideleri'nden başka yazılı eserlere kültürel bir köprü kurdurur. Videoda **Kül Tigin, Bilge Kağan ve Tonyukuk adlarının yazıtlarla birlikte göründüğü** ekran kanıtı; anıt/yazıt, tarihsel bellek ve gelecek kuşaklara aktarılan söz düşüncesini desteklemek için kullanılabilir.
 
 - Öğrenci ikinci köprü ayağı olarak `Dîvânu Lugâti't-Türk`, `Kutadgu Bilig` veya `Dede Korkut Hikâyeleri` gibi eserleri **kendi seçimi ve önceki ders bilgisiyle** önerebilir.
-- Bu eserlerin **videoda adı geçtiği doğrulanmadı**. Kitaptaki seçeneklerin video konuşmasına atfedilmesi yanlış olur.
+- Kullanıcının sağladığı anlatım dökümü yazıtların kuruluşu, keşfi ve tarihî şahsiyetler üzerinedir; kitapta seçenek olarak verilen diğer eser adları bu dökümde yer almaz. Bu eserler soru yanıtında öğrenci karşılaştırması olarak kullanılabilir.
 - Cevabın kanıt zinciri: **ekranda görülen yazıt ve tarihî kişiler** → öğrencinin seçtiği başka eserdeki **somut dil/kültür özelliği** → **gerekçeli karşılaştırma**.
 
-## Eksikler
+## Kalan bağımsız kontroller
 
-Diyalog/sesli anlatımın tam dökümü; ekran kişileri için tarih doğrulaması; Drive dosyasının EBA indirme kimliğiyle kriptografik eşleşmesi.
+Kullanıcının dış ses ve uzman görüşleri dökümü ile ekran yazıları p.159 sayfa JSON’unda yer alır. Tarihî kartlardaki yaşam yılları ve tarihsel anlatım ayrıca güvenilir kaynaklarla karşılaştırılabilir; Drive dosyasının EBA indirme kimliğiyle kriptografik eşleşmesi de ayrı bir dosya-kökeni kontrolüdür.

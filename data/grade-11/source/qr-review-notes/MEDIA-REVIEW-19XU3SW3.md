@@ -2,7 +2,7 @@
 
 **Drive MP4:** `19XU3SW3.mp4` · **PNG'deki basılı sayfa:** 300 · **Süre:** yaklaşık 02:26.
 
-**Eşleştirme düzeyi:** Kullanıcının PNG sayfa eşleştirmesi ve video görüntü incelemesi. Orijinal QR hedefi/EBA içerik kimliği doğrulanmadı. **Ekran yazılarının kısmi dökümüdür; ses transkripti değildir.**
+**İçerik dökümü:** Kullanıcı videoda sözlü anlatım olmadığını, enstrümantal müzik bulunduğunu ve ekrandaki tüm basamakları sağladı; metin p.300 sayfa JSON'una eklendi. **Orijinal QR hedefi/EBA içerik kimliği** sayfa eşleştirmesinden ayrı bir medya kaynağı bilgisidir.
 
 ## Zaman damgalı ekran yönergeleri
 
@@ -26,4 +26,4 @@
 
 Öğrencinin afiş taslağında **hedef kitle, ileti, görsel hiyerarşi, okunabilirlik ve özgünlük** kriterleriyle kontrol yapılabilir. Bu, videoda aktarılan ölçütlerden hazırlanmış öğretmen desteğidir; kaynakta geçmeyen yeni zorunluluklar konulmamalıdır.
 
-**Eksik doğrulama:** Animasyondaki her ara geçişin sözcüğü sözcüğüne metni ve varsa sesli anlatım henüz tam çözülmedi. Tema 4'ün kanonik cevap bankası bu kısmi kanıtla değiştirilmedi.
+Kullanıcı, videoda sözlü anlatım olmadığını ve enstrümantal müzik bulunduğunu bildirdi. Bu içerik kapsamı p.300 sayfa JSON'unda kaydedilmiştir.

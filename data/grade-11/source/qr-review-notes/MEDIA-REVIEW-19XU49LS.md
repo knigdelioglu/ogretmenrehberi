@@ -2,7 +2,7 @@
 
 **Özgün kitap QR hedefi:** `6e0ca79cee422408b5dcfaf3ad7a1459` (basılı s.307 / PDF s.308). **Drive dosya adayı:** `19XU49LS.mp4` (yaklaşık 04:45).
 
-**İnceleme sınırı:** Zaman damgalı örnek görüntüler değerlendirildi. PDF'deki QR bağlantısı doğrulandı, ancak aday MP4'ün EBA ile indirme düzeyinde eşleşmesi ve sesli anlatımın deşifresi henüz mevcut değil.
+**Kullanıcı dökümü:** Dış ses, Halil Bey'in konuşmaları ve ekrandaki yazılar kullanıcı tarafından sağlanıp p.307 sayfa JSON'una eklendi. Bu nottaki zaman damgalı örnekler görsel incelemeyi gösterir; MP4'ün EBA ile indirme düzeyinde eşleşmesi ayrı bir dosya-kökeni bilgisidir.
 
 | Yaklaşık zaman | Görsel olarak görülen |
 | --- | --- |
@@ -18,6 +18,6 @@
 ## s.307 soru 13–14 için kullanım
 
 - **Soru 13:** Engebeli arazide yol alma, kırsal çevreyle iç içe yaşam ve doğada gündelik işler **görülüyor**. Bütün Anadolu insanlarına ait değişmez kişilik özelliği çıkarmak yerine **videodaki kişilerin gözlenen uyum davranışları** tartışılabilir.
-- **Soru 14:** Yerleşim, çeşme, yollar ve peyzajın tekrar görünmesi, aidiyetin **mekân, gündelik deneyim ve aşinalık** ile ilişkisini düşündürebilir. Karakterin gerçek duygusu, geçmişi ve hangi nedenle bir yere bağlandığı **ses dökümü olmadan bilinmiyor**.
+- **Soru 14:** Yerleşim, çeşme, yollar ve peyzajın tekrar görünmesi, aidiyetin **mekân, gündelik deneyim ve aşinalık** ile ilişkisini düşündürebilir. Kullanıcının sağladığı dökümde Halil Bey çeşme bakımını dedesinden öğrendiğini, çeşmeleri ortak yarar için temizleyip yaptırdığını anlatır; bu sözler mekânla bağ ve sorumluluk yorumuna dayanak sağlar.
 
-**Eksikler:** Kişilerin kendi sözleri, aidiyete ilişkin açık beyanları, yerlerin kesin kimliği, tam ses/görüntü çözümlemesi ve MP4'ün EBA dosyasıyla özdeşliği.
+**Kapsam:** Kullanıcı dökümünde Halil Bey'in çeşme bakımı, dedesinden öğrendiği su hayrı ve çeşme yaptırma deneyimi yer alır. Görsel tablo örnek karelerle sınırlıdır; MP4'ün EBA dosyasıyla eşleşmesi ayrı kaynak bilgisidir.

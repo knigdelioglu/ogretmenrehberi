@@ -6,7 +6,7 @@
 
 ## İnceleme yöntemi ve kanıt sınırı
 
-MP4 içinden yaklaşık 16 saniye aralıklarla kareler alınıp görsel olarak incelendi. Bu rapordaki zamanlar **yaklaşıktır**; video her saniye eksiksiz izlenmedi. Görüntüde görülen kitap kapağı, mektuplar ve konuşmacı doğrudan görsel gözlemlerdir. **Söylenen cümlelerin tam dökümü yoktur**; konuşmacıya tarihî veya edebî görüş atfedilemez. Bu kaynak için **EBA indirme kimliği/SHA eşleşmesi doğrulanmış** olsa da bu, sesli içeriğin transkript edildiği anlamına gelmez.
+MP4 içinden yaklaşık 16 saniye aralıklarla kareler alınıp görsel olarak incelendi. Bu rapordaki zamanlar **yaklaşıktır**; video her saniye eksiksiz izlenmedi. Görüntüde görülen kitap kapağı, mektuplar ve konuşmacı doğrudan görsel gözlemlerdir. Kullanıcı ayrıca dış ses ve Gülper Refiğ söyleşisinin dökümünü, ekrandaki yazılarla birlikte sağladı; ikisi de `data/book/grade-11/themes/theme-1/pages/p043.json` içine eklendi. EBA indirme kimliği/SHA eşleşmesi kaynağın dosya eşleşmesi bilgisidir.
 
 | Yaklaşık zaman | Doğrudan gözlenen görsel |
 | --- | --- |
@@ -32,5 +32,5 @@ Videonun katkısı, mektubu bir **fiziksel yazılı iletişim aracı** olarak g�
 
 - **Orijinal QR URL / MP4 kaynak kimliği / SHA eşleşmesi:** doğrulandı.
 - **Zaman damgalı kısmi görsel inceleme:** yapıldı.
-- **Tam sesli anlatım / kişi görüşleri / birebir konuşma transkripti:** **yapılmadı**.
-- **Kamusal depoya MP4 ve uzun birebir transkript:** eklenmedi.
+- **Kullanıcı tarafından sağlanan sesli anlatım ve ekrandaki yazı dökümü:** p.43 sayfa JSON'unda yer alıyor.
+- **Görsel inceleme:** zaman damgalı örnek karelerle sınırlıdır; bu notta tam video kare dökümü yoktur.

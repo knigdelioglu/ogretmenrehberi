@@ -50,4 +50,4 @@ Basılı **s.88'in özgün QR URL'si** şudur:
 
 ## İçeriğe ilişkin sınır
 
-Bir QR URL'sinin kesinlikle doğrulanmış olması, EBA sayfasının kullanıcının ortamında açıldığını veya sesin eksiksiz çözümlendiğini göstermez. Ayrıca paylaşılan Drive dosyaları üçüncü taraf içerikleri barındırıyor olabilir; bu MP4'leri veya tam konuşma transkriptlerini izin olmadan kamusal repo/siteye koyma.
+Bir QR URL'sinin doğrulanması tek başına MP4 dosyasının EBA'dan indirilen baytlarla aynı olduğunu göstermez. Kullanıcının sağladığı ses/ekran dökümleri ayrı olarak ilgili sayfa JSON'larında kayıtlıdır; bu içerik kaynağı, QR–MP4 ikili eşleşmesiyle karıştırılmamalıdır. Ayrıca paylaşılan Drive dosyaları üçüncü taraf içerikleri barındırıyor olabilir; MP4'leri veya konuşma dökümlerini izin olmadan kamusal repo/siteye koyma.

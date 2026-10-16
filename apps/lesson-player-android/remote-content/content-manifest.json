@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "grade": 11,
-  "contentSha256": "75a621e3e98e116a9f2a21db44aa44bc70d0ee90d123e781e6deee79a27bdbd6",
+  "contentSha256": "0bbdd4b3c0dcbdbf94152c1b316135a7e45c5a88706dd06c5c071af12429bea1",
   "workflowSha256": "6632280a3f0ecc3b40987c158c8bbb88333ae1f640d8ca8f1875bc9ecfd64a57",
   "counts": {
     "themes": 4,
@@ -39,13 +39,13 @@
       "lessonId": "T11-T01-KONUSMA",
       "themeId": "TEMA_01",
       "steps": 18,
-      "sha256": "415b61aae053e47844a24941189cd4ad261ba43e826f73374159e94efaffaa19"
+      "sha256": "4fe6e43499ba157512e55f7a226e0ce1c5ed8f1fa2c3deb1e54f235776accb7e"
     },
     {
       "lessonId": "T11-T01-DINLEME-IZLEME",
       "themeId": "TEMA_01",
       "steps": 41,
-      "sha256": "80cb5e8793dc4bf2a4995648b2934b654820ba1370ad44079e432def00cefd78"
+      "sha256": "b08c7df25d14a6f7939a0f145218cf5e399ed3c4e3da5e43fe35c5eec5ecd8bf"
     },
     {
       "lessonId": "T11-T01-YAZMA",
@@ -57,13 +57,13 @@
       "lessonId": "T11-T01-DEGERLENDIRME",
       "themeId": "TEMA_01",
       "steps": 15,
-      "sha256": "adabc93f7d1a739e3c515ac358ba26730ff04688b8306a77c3e7ce0184a3f304"
+      "sha256": "06fb2ab4f439c7f091b80eeed28e2dea7b4ebd70889fa84ea4febae4579cf62c"
     },
     {
       "lessonId": "T11-T02-GIRIS",
       "themeId": "TEMA_02",
       "steps": 16,
-      "sha256": "3895fabaddeddf9a2d6fdeab462d4145383d8279c8d11cc46701fdfd1bc515be"
+      "sha256": "dad4a72ddd4f4a90facbcf4c4da59255926ac03a8bdbb51db91c1ba0e1ab38d3"
     },
     {
       "lessonId": "T11-T02-OGULLA-BULUSMA",
@@ -81,7 +81,7 @@
       "lessonId": "T11-T02-ORHUN",
       "themeId": "TEMA_02",
       "steps": 34,
-      "sha256": "cf34f944164c5a2c6edcf0ecfb80785eeae2f2f858cde57bae433210a5f7d792"
+      "sha256": "470381ff94c79ea5650126a876979875a14fcec357e9e06f6fa22f8a0c4a7d3a"
     },
     {
       "lessonId": "T11-T02-DIVANU-LUGATIT-TURK",
@@ -93,13 +93,13 @@
       "lessonId": "T11-T02-KONUSMA",
       "themeId": "TEMA_02",
       "steps": 25,
-      "sha256": "3730606e32a8b6a600c3f6576a0795334af110b4289eed1f585b34ab57e808a4"
+      "sha256": "76acf5d6e98bd663730f4a55cf574ac532a0254ad9b2c84cab36982620528d38"
     },
     {
       "lessonId": "T11-T02-ASIK-ATISMASI",
       "themeId": "TEMA_02",
       "steps": 29,
-      "sha256": "43acb743ead3f5cf76ccd9f9987d8e9cecf59ff0bce907ffc729ce662d63dbdf"
+      "sha256": "a8304cc65ebfd6df3a7039cf3f2779555f23d6a182fa2483e0fad7514900b23a"
     },
     {
       "lessonId": "T11-T02-YAZMA",
@@ -111,7 +111,7 @@
       "lessonId": "T11-T02-DEGERLENDIRME",
       "themeId": "TEMA_02",
       "steps": 11,
-      "sha256": "cfd9d675902a01eab2391727733bc96c7dc4cb21dd39f7722178fad4a307169e"
+      "sha256": "7f8e6b67a9fbbf7bb462f39462cd9c5340219ff4d7de392ec46082d5203e0f4f"
     },
     {
       "lessonId": "T11-T03-GIRIS",
@@ -201,7 +201,7 @@
       "lessonId": "T11-T03-DIRENISIN-USTALARI-215-220",
       "themeId": "TEMA_03",
       "steps": 21,
-      "sha256": "912fa25450bf3c7c09f31dad59b8a25c3348e47df3f238858f575a01f3308581"
+      "sha256": "7cb2e10e79ffaebd6fa258f3d20be682ea8058b70108ea6307fc9e7a56bfa15d"
     },
     {
       "lessonId": "T11-T03-DIRENISIN-USTALARI-221-224",
@@ -285,13 +285,13 @@
       "lessonId": "T11-T04-ANADOLU-INSANI-284-290",
       "themeId": "TEMA_04",
       "steps": 26,
-      "sha256": "7c130affb379eef50cd3b51136619fd888525578752d552f606e26074b0bc879"
+      "sha256": "a8626ed90e0ea06422f00d8073402058a75e6693719fc6297deefd979cd64cc3"
     },
     {
       "lessonId": "T11-T04-ANADOLU-INSANI-COZUMLEME-291-297",
       "themeId": "TEMA_04",
       "steps": 25,
-      "sha256": "36d0cdb61a8d07da35d4321917cd41ec643530d7ca5f596d9a303fab7b23feef"
+      "sha256": "44010977a6e401d5b28aa6dde8e7fce6858fcd3f25a9b179627ddd11a0425e4f"
     },
     {
       "lessonId": "T11-T04-AFIS-ATOLYESI-298-302",
@@ -303,7 +303,7 @@
       "lessonId": "T11-T04-DEGERLENDIRME-303-307",
       "themeId": "TEMA_04",
       "steps": 20,
-      "sha256": "bf07f6b911f900cb913e0c26f5d39f3574d1819f84b332d54eec411f39ec66e2"
+      "sha256": "ea452d6fe6f2af9804636ded666932bd01978b88dbb08cfa975402dd7468271b"
     }
   ]
 }

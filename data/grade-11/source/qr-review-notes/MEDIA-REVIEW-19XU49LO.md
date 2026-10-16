@@ -5,7 +5,7 @@
 
 ## Kanıt ve sınırlılık
 
-Basılı kitap QR bağlantısı **kesin** olarak doğrulandı; fakat **bu Drive MP4 dosyasının söz konusu EBA kaynağından indirildiğine dair doğrudan metadata/SHA kanıtı yoktur**. Bu nedenle izlenen klibe ait gözlemler, s.88'in kesin EBA video metni gibi atfedilmemelidir. Konuşmalar dinlenip birebir yazıya geçirilmedi.
+Basılı kitap QR bağlantısı **kesin** olarak doğrulandı; bu Drive MP4 dosyasının EBA indirmesiyle eşleşmesi ayrı bir dosya-kökeni konusudur. Kullanıcı Ortak Miras videosundaki dış ses, saya gezme canlandırması ve uzman görüşü dökümünü sağladı; konuşma içeriği p.88 sayfa JSON'una kullanıcı kaynağı olarak eklendi.
 
 ## Doğrudan görülen sahneler (yaklaşık süreler)
 
@@ -17,7 +17,7 @@ Basılı kitap QR bağlantısı **kesin** olarak doğrulandı; fakat **bu Drive 
 | 01:48–02:00 | Ürün toplama/kurutma gibi hasat ve tarımsal üretim görüntüleri | Görüntü |
 | 02:15 | Topluluk hâlinde geleneksel kıyafetlerle kutlama/dans | Görüntü |
 | 02:42–03:10 | Kırsal yerleşimde gündelik hayat ve bir araya gelmiş kişiler | Görüntü |
-| 03:36–04:10 | Söyleşi/röportaj yapan kişiler | Görüntü; sözler transkript edilmedi |
+| 03:36–04:10 | Söyleşi/röportaj yapan kişiler | Görüntü; konuşmalar kullanıcı tarafından sağlanan dökümde yer alır |
 
 ## Öğretmen kullanımına uygun sınır
 

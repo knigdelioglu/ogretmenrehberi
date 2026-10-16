@@ -2,7 +2,7 @@
 
 - **Karekod:** Basılı s.141 / PDF s.142, EBA `79b9d858a98472d2c1c9c773b715c6a2` (kitap PDF'sinde doğrulandı).
 - **Drive video adayı:** `19XU49MG.mp4`, yaklaşık **04:44**, TRT2 yayın işareti.
-- **İnceleme sınırı:** Konuşmaların dökümü yapılmadı; ekrandaki unvan yazısı, kitap konusuyla ilgili akademik söyleşi biçimini desteklese de **konuşmanın içeriğini kanıtlamaz**. MP4'ün EBA indirme kökeni ayrı doğrulanmalıdır.
+- **Kullanıcı dökümü:** Program açılışı, Mete Taşlıova'nın öz geçmişi ve âşıklık geleneğine ilişkin açıklaması ile ekrandaki yazılar kullanıcı tarafından sağlandı; p.141 sayfa JSON'una eklendi. MP4'ün EBA indirme kökeni, bu dökümden ayrı bir dosya bilgisidir.
 
 | Yaklaşık zaman | Videoda görülen |
 | --- | --- |
@@ -17,9 +17,9 @@
 ## Sayfa 141 için kullanımı
 
 - Ders kitabındaki iki soru esas olarak **basılı metinden** ve öğrencinin önceki öğrenmelerinden hareketle yanıtlanır; videodaki söyleşiye otomatik olarak yeni sözler atfedilmemelidir.
-- Görsel kesitler, âşıklık geleneğinin **sözlü icra, saz, kültürel bellek ve kuşaklar arası aktarım** gibi kavramlarının işlenmesine giriş olabilir. Kişilerin geleneğe ilişkin **tam görüşleri** ancak ses deşifresiyle aktarılabilir.
+- Kullanıcının dökümünde âşıklığın kamlık/baksılık ve ozanlık geleneğinden tarihsel gelişimi, 16. yüzyılda yeni bir forma kavuşması ve günümüzdeki adlandırmaları açıklanır.
 - Atışma performansı (`19XU49JV.mp4`) ile açıklayıcı söyleşi (`19XU49MG.mp4`) iki farklı kaynaktır.
 
 ## Kalanlar
 
-Söyleşi ses transkripti ve zaman damgalı iddialar; klip–EBA indirme bağı; ders kitabındaki metinle sesli söyleşinin sistematik karşılaştırması.
+Görsel tablo örnek karelerle sınırlıdır. Konuşma dökümü p.141 sayfa JSON'unda yer alır; klip–EBA dosya bağı ayrı kaynak kaydıdır.

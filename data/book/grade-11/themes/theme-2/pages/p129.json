@@ -121,7 +121,10 @@
         "G11-T2-P129-SRC01"
       ],
       "related_table_ids": [],
-      "related_media_ids": [],
+      "related_media_ids": [
+        "G11-T2-P129-VID01",
+        "G11-T2-P129-VID02"
+      ],
       "order": 7,
       "source": {
         "printed_page": 129,
@@ -145,7 +148,9 @@
       ],
       "related_table_ids": [],
       "related_media_ids": [
-        "G11-T2-P129-VIS01"
+        "G11-T2-P129-VIS01",
+        "G11-T2-P129-VID01",
+        "G11-T2-P129-VID02"
       ],
       "order": 8,
       "source": {
@@ -169,7 +174,10 @@
         "G11-T2-P129-SRC01"
       ],
       "related_table_ids": [],
-      "related_media_ids": [],
+      "related_media_ids": [
+        "G11-T2-P129-VID01",
+        "G11-T2-P129-VID02"
+      ],
       "order": 9,
       "source": {
         "printed_page": 129,
@@ -177,6 +185,38 @@
         "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
         "line_start": 37,
         "line_end": 46
+      }
+    },
+    {
+      "id": "G11-T2-P129-VID01",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49LP.mp4",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı Dünyadaki Türkiye stüdyo açılışı ve VTR dış ses dökümü; zaman aralıkları ve konuşmacılar sunulduğu biçimde korunmuştur.",
+      "text": "Doç. Dr. Mücahit Küçükyılmaz — stüdyo açılışı (00:38–01:19): “Dünyadaki Türkiye'den herkese merhaba. Bugün yine kıymetli bir isimle Türklerin dünyasını ekranlarınıza getireceğiz. Tarihin en eski dönemlerinden itibaren varlıklarını sürdüren Türkler, kurdukları devletlerle dünya medeniyetine önemli katkılarda bulundular. Türklerin Orta Asya steplerinde, Türkistan'da başlayan hikayesi Avrupa'nın içlerine kadar uzanan geniş bir coğrafyada yazıldı. Bugün 7 bağımsız ve 20'ye yakın özerk devletle Türkler, uluslararası siyasetin önemli bir öznesi durumunda. Bu bölümde kıymetli bir isimle Türk dünyasını değerlendirmeye çalışacağız. Dünyadaki Türkiye, VTR'nin ardından başlıyor.”\n\nVTR dış ses / belgesel anlatımı (01:23–02:32): “Mazisi oldukça eskilere dayanan ve tarihin akışına yön veren en önemli milletlerden olan Türkler, göçebe bir toplum olduklarından pek çok coğrafyanın da vatan olmasına katkı sunmuşlardı. Tarihte Türklere dair ilk izlere Türkistan'da rastlansa da, mücadeleci ruhlarıyla kısa zamanda Orta Asya'ya yayılan ve gittikleri coğrafyalara damga vuran Türkler, anavatanlarında da devlet kurmayı başardılar ve ilk devletlerini Türkistan'da inşa ettiler. Hunlarla başlayıp Göktürk ve Uygurlarla devam eden bu süreç, Selçuklular ve Osmanlılar gibi Doğu'ya ve Avrupa'ya hükmeden küresel çaplı devletlerle süregeldi. 20. yüzyılın sonları ve 21. yüzyılın başında ortaya atılan ‘Türk Dünyası’ kavramı, dünyada yaşayan tüm Türk halklarını ifade ediyor. Bugün Türkiye, Azerbaycan, Kazakistan, Kırgızistan, Özbekistan, Türkmenistan ve Kuzey Kıbrıs Türk Cumhuriyeti gibi bağımsız devletlerde ortalama 165 milyon, tüm dünyadaysa toplam 250 milyon Türk bulunuyor.”",
+      "order": 10,
+      "source": {
+        "printed_page": 129,
+        "pdf_page": 130,
+        "media_file": "19XU49LP.mp4",
+        "provenance": "user_supplied_transcript"
+      }
+    },
+    {
+      "id": "G11-T2-P129-VID02",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49LP.mp4",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı ekran yazıları, program logoları, stüdyo haritası ve etkinlik alanı tabelası dökümü.",
+      "text": "Alt yazı bildirimi (00:01–00:04): Ekranın sağ alt köşesinde açık kitap ve yaprak görseli üzerinde “İçerikte alt yazı seçeneği bulunmaktadır. ↓” metni.\n\nKanal logosu: Ekranın sağ üst köşesinde beyaz “TRT” logosu.\n\nProgram jenerik başlığı (00:34–00:36): “DÜNYADAKİ TÜRKİYE”.\n\nProgram köşe logosu (00:37–02:31): Stüdyo çekimi ve VTR boyunca sol alt köşede “DÜNYADAKİ TÜRKİYE” logosu.\n\nSunucunun elindeki kart (00:42–01:19): “TRT TÜRK”.\n\nSunucu tanıtım alt bandı (00:46–00:54): “DOÇ. DR. MÜCAHİT KÜÇÜKYILMAZ”; “İLETİŞİM BİLİMCİ”.\n\nStüdyo dekor haritası (00:37–01:19): Dünya haritası üzerinde Türkiye, İtalya, Romanya, Bulgaristan, Yunanistan, Sırbistan, Bosna Hersek, Hırvatistan, Rusya, Suriye, Irak, İran, Mısır, Tunus, Fas, KKTC ve diğer ülke adları.\n\nEtkinlik / festival alanı tabelası (02:08–02:11): VTR görüntülerindeki çadır üzerinde “SAİRAM OTOĞI” yazısı ve “2017 Türkistan Türk Dünyası Kültür Başkenti” logosu.",
+      "order": 11,
+      "source": {
+        "printed_page": 129,
+        "pdf_page": 130,
+        "media_file": "19XU49LP.mp4",
+        "provenance": "user_supplied_transcript"
       }
     }
   ],

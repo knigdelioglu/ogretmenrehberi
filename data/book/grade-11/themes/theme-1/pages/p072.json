@@ -49,7 +49,10 @@
       "table_ids": [
         "G11-T1-P72-TABLE01"
       ],
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02"
+      ],
       "source": {
         "printed_page": 72,
         "pdf_page": 73
@@ -70,7 +73,10 @@
     {
       "text": "1. Metinde iletişimin etkili olmasını sağlayan güven, saygı, yapıcılık ve nezaket içeren ifadeleri tespit ederek aşağıdaki tabloya yazınız.",
       "question_number": "1",
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02"
+      ],
       "subquestions": [],
       "options": [],
       "instruction_id": "G11-T1-P72-INST01",
@@ -124,7 +130,10 @@
     {
       "text": "2. Tespit ettiğiniz iletişim unsurları arasındaki ilişki ve etkileşimi aşağıdaki kavram haritasında gösteriniz.",
       "question_number": "2",
-      "related_text_ids": [],
+      "related_text_ids": [
+        "G11-T1-P64-VT01",
+        "G11-T1-P64-VT02"
+      ],
       "subquestions": [],
       "options": [],
       "id": "G11-T1-P72-Q02",

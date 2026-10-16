@@ -2,7 +2,7 @@
 
 **Drive MP4:** `19XU3SUD.mp4` · **PNG'deki basılı sayfa:** 53 · **Konu:** Sözlü İletişim Engelleri · **Süre:** yaklaşık 02:24.
 
-**Eşleştirme düzeyi:** Kullanıcının PNG sayfa eşleştirmesi + video örnek görüntüleri. Orijinal EBA QR hedef kimliği henüz ayrı doğrulanmadı. **Bu kayıt kanonik EBA eşleştirmesi veya tam video transkripti değildir.**
+**İçerik dökümü:** Kullanıcı şiir seslendirmesini, şiir metnini ve tüm ekranda görünen öğretici metinleri sağladı; kayıt p.53 sayfa JSON'una eklendi. **Orijinal EBA QR hedef kimliği** sayfa eşleştirmesinden ayrı bir medya kaynağı bilgisidir.
 
 ## Ekran metninden çıkarılan içerik
 
@@ -25,7 +25,7 @@
 - Heyecan, tedirginlik ve gerginlik.
 - Dinleyicinin iletiyi farklı anlamlandırması.
 
-**Kaynak notu:** Bunlar animasyonda görülen maddelerin **kısa anlam dökümüdür**, birebir alıntı veya sesli açıklamaların tamamı değildir. Videonun başında Yunus Emre'den bir söz/söyleyiş örneği de görünür; eser metninin tamamı burada yeniden yayımlanmaz.
+**İçerik kapsamı:** Kullanıcının sağladığı tam içerik kaydı şiirin seslendirmesini, ekranda görünen Yunus Emre dizelerini ve üç bölümde sıralanan öğretici maddeleri p.53 sayfa JSON’unda içerir. Bu not, uzun şiir ve öğretici metinleri yeniden yazmak yerine soru bağlamındaki başlıkları özetler.
 
 ## ÖğretmenRehberi kullanımı
 

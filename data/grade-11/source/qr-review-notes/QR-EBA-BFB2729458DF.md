@@ -19,7 +19,7 @@ Videonun gelişen zaman çizelgesinin yaklaşık 00:20–01:35 arasındaki ekran
 9. e-posta
 10. Cep telefonu
 
-Liste ekrandan okunmuş **başlıkların kısa dökümüdür**; video içindeki tanımların tamamının yeniden yayımlanması veya sesli transkript değildir. Videodaki sıralama, kesin tarihsel icat kronolojisi ya da farklı teknolojilerin eş zamanlı kullanılamadığı iddiası olarak yorumlanmamalıdır.
+Kullanıcı bu zaman çizelgesindeki başlık ve açıklamaların tam dökümünü sağladı; metinler p.67 sayfa JSON'una eklendi. Kullanıcı ayrıca videoda sözlü anlatım olmadığını ve enstrümantal müzik bulunduğunu bildirdi. Videodaki sıralama, kesin tarihsel icat kronolojisi ya da farklı teknolojilerin eş zamanlı kullanılamadığı iddiası olarak yorumlanmamalıdır.
 
 ## Ders dışı çalışma önerisi
 
@@ -27,4 +27,4 @@ Liste ekrandan okunmuş **başlıkların kısa dökümüdür**; video içindeki 
 
 ## Kaynak sınırı
 
-Ekran yazılarının etiketleri doğrulandı. Sesli anlatımın tamamı ve videoda varsa diğer ekran metinleri henüz eksiksiz çözümlenmedi. Bu video **basılı s.88 toylar/şenlikler videosu değildir**.
+Kullanıcının sağladığı tam ekran metni ve ses bilgisi p.67 sayfa JSON'unda yer alır. Bu video **basılı s.88 toylar/şenlikler videosu değildir**.

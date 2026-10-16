@@ -39,11 +39,9 @@
       ],
       "transcript_path": null,
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md",
-      "work_status": "partially_reviewed_user_scene_summary_audio_not_transcribed",
-      "remaining_gaps": [
-        "Üç sahnenin olay anlatımı kullanıcı izleme notuna dayanır; konuşmaların birebir ses dökümü, kesin zaman damgaları ve sahne doğrulaması eksiktir."
-      ],
-      "content_review_basis": "user_observed_scene_summary_plus_sampled_frames_not_verbatim"
+      "work_status": "user_supplied_audio_and_screen_text_transcript",
+      "remaining_gaps": [],
+      "content_review_basis": "user_supplied_audio_and_screen_text_transcript"
     },
     {
       "source_id": "QR-EBA-29BF4F293D53",
@@ -116,11 +114,9 @@
       ],
       "transcript_path": null,
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-      "work_status": "partially_reviewed_screen_text_audio_not_transcribed",
-      "remaining_gaps": [
-        "Alt bant yazıları zaman damgasıyla doğrulandı; konuşmaların tamamı çözülmediği için ana düşünce ve tam video özeti kesinleştirilmedi."
-      ],
-      "content_review_basis": "four_screen_captions"
+      "work_status": "user_supplied_audio_and_screen_text_transcript",
+      "remaining_gaps": [],
+      "content_review_basis": "user_supplied_audio_and_screen_text_transcript"
     },
     {
       "source_id": "QR-EBA-E43890DFD82A",
@@ -156,11 +152,9 @@
       ],
       "transcript_path": null,
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-E43890DFD82A.md",
-      "work_status": "partially_reviewed_verified_media_visual_only_audio_not_transcribed",
-      "remaining_gaps": [
-        "Kısmi kare incelemesinde mektuplar, zarflar, Abdülhak Hâmid'in Mektupları kapağı ve söyleşi görüntüleri görüldü; konuşmalar deşifre edilmedi. Kaplan mektubu sınıflandırması basılı s.37–38 metnine dayanır."
-      ],
-      "content_review_basis": "sampled_video_frames_with_timecodes_not_audio"
+      "work_status": "user_supplied_audio_and_screen_text_transcript",
+      "remaining_gaps": [],
+      "content_review_basis": "user_supplied_audio_and_screen_text_transcript"
     },
     {
       "source_id": "QR-EBA-BFB2729458DF",
@@ -194,11 +188,9 @@
       ],
       "transcript_path": null,
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-BFB2729458DF.md",
-      "work_status": "partially_reviewed_screen_text_audio_not_transcribed",
-      "remaining_gaps": [
-        "Ekran zaman çizelgesindeki on iletişim aracı adı doğrulandı; eksiksiz ekran metni ve ses dökümü henüz yapılmadı."
-      ],
-      "content_review_basis": "visual_timeline_labels"
+      "work_status": "user_supplied_no_speech_and_screen_text_transcript",
+      "remaining_gaps": [],
+      "content_review_basis": "user_supplied_audio_description_and_screen_text_transcript"
     },
     {
       "source_id": "QR-EBA-2952F505E3A7",
@@ -234,11 +226,9 @@
       ],
       "transcript_path": null,
       "review_notes_path": "data/grade-11/source/qr-review-notes/QR-EBA-2952F505E3A7.md",
-      "work_status": "partially_reviewed_verified_media_visual_only_audio_not_transcribed",
-      "remaining_gaps": [
-        "Şairin Sesinden/Olvido başlık kartı ve görsel montaj kısmen incelendi; şiirin seslendirilmesi, vurgular, sessizlikler ve fon müziği işitsel olarak çözülmedi. Başlık, sesin özgün sahibini tek başına doğrulamaz."
-      ],
-      "content_review_basis": "sampled_video_frames_with_timecodes_not_audio"
+      "work_status": "user_supplied_audio_transcript_and_voice_attribution_confirmed_visual_review_partial",
+      "remaining_gaps": [],
+      "content_review_basis": "user_supplied_poem_transcript_and_user_confirmed_voice_attribution"
     }
   ]
 }

@@ -35,7 +35,17 @@ for (const r of intake.records) {
     `${r.file_name}: review provenance must be explicit`);
   assert.match(r.content_review?.declaration_recorded_on ?? "", /^\d{4}-\d{2}-\d{2}$/,
     `${r.file_name}: missing recorded review date`);
-  assert.equal(r.spoken_audio_transcript, "not_done", "Never mark incomplete audio as transcribed");
+  assert.match(r.evidence_scope ?? "", /user_supplied/u,
+    `${r.file_name}: evidence scope must retain the user-provided transcript provenance`);
+  assert.ok(["user_supplied", "user_supplied_no_speech_report"].includes(r.spoken_audio_transcript),
+    `${r.file_name}: record the user's transcript or no-speech report explicitly`);
+  const pageJson = read(`data/book/grade-11/themes/theme-${Number(r.theme.slice(-2))}/pages/p${String(r.printed_page).padStart(3, "0")}.json`);
+  const transcriptBlocks = pageJson.blocks.filter((block) =>
+    block.media_file === r.file_name && block.role === "user_supplied_video_transcript");
+  assert.ok(transcriptBlocks.some((block) => block.modality === "audio"),
+    `${r.file_name}: user-supplied audio content is missing from its page JSON`);
+  assert.ok(transcriptBlocks.some((block) => block.modality === "on_screen_text"),
+    `${r.file_name}: user-supplied screen text is missing from its page JSON`);
   if (r.existing_source_id) {
     verified++;
     assert.equal(r.mapping_status, "verified_existing_eba_registry_and_sha256");
@@ -56,7 +66,8 @@ assert.deepEqual([verified, provisional, unresolved], [5, 12, 1]);
 // canonical registry usage_locations. Check both directions so an unrelated
 // same-page video cannot be substituted silently.
 for (const r of intake.records.filter((record) => !record.existing_source_id)) {
-  const mediaTokens = [r.file_name, r.book_qr.eba_content_id].map((token) => token.toLocaleLowerCase("en-US"));
+  const mediaTokens = [r.file_name, r.file_name.replace(/\.mp4$/iu, ""), r.book_qr.eba_content_id]
+    .map((token) => token.toLocaleLowerCase("en-US"));
   const citations = allAnswers.filter((entry) => mediaTokens.some((token) => entry.source_locator?.toLocaleLowerCase("en-US").includes(token)));
   const citedIds = citations.map((entry) => entry.question_id).sort();
   const linkedIds = [...(r.linked_question_ids ?? [])].sort();
@@ -128,7 +139,8 @@ for (const id of ["T2-P88-Q01", "T2-P88-Q02", "T2-P88-Q03", "T2-P88-Q04", "T2-P8
 const sek = known.get("QR-EBA-254C08EA3501");
 assert.equal(sek.review_notes_path, "data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md");
 assert.equal(sek.dates.content_reviewed, null, "Partial review must not claim full video review");
-assert.equal(sek.transcript_path, null, "No full audio transcript has been verified");
+assert.match(sek.work_status, /user_supplied/u,
+  "The user-supplied Seksenler transcript must be distinct from the sampled-frame review");
 const note = fs.readFileSync(path.join(root, sek.review_notes_path), "utf8");
 for (const token of ["televizyon", "Kuzen", "Kayınpeder", "diyalog"]) {
   assert.ok(note.includes(token), `Missing evidence note term: ${token}`);
@@ -136,22 +148,25 @@ for (const token of ["televizyon", "Kuzen", "Kayınpeder", "diyalog"]) {
 for (const id of ["T1-P53-Q01", "T1-P53-Q02"]) {
   const entry = answerBank.entries.find((e) => e.question_id === id);
   assert.ok(entry, `Missing answer bank entry: ${id}`);
-  assert.equal(entry.entry_type, "source_limited", `${id} depends on sampled scenes without a verified dialogue transcript`);
+  assert.equal(entry.entry_type, "source_limited", `${id} must stay within the recorded scene scope and supplied dialogue`);
   assert.ok(entry.source_locator.includes(sek.review_notes_path), "Source evidence locator missing");
   assert.ok(entry.answer.includes("ön yarg"), "Expected scene-grounded communication barrier");
-  assert.ok(!Array.isArray(entry.evidence_quotes), "Unverified scene dialogue must not be stored as a verified quote");
+  assert.ok(entry.source_locator.includes("p053.json"), "Scene answer must cite the page's user-supplied transcript");
 }
 for (const [fileName, notePath] of [
-  ["19XU3SUD.mp4", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SUD.md"],
-  ["19XU3SW3.mp4", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU3SW3.md"],
+  ["19XU3SUD.mp4", "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU3SUD.md"],
+  ["19XU3SW3.mp4", "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU3SW3.md"],
 ]) {
   const record = intake.records.find((r) => r.file_name === fileName);
   assert.ok(record, `Provisional media entry missing: ${fileName}`);
   assert.equal(record.mapping_status, "provisional_png_and_visual_review");
   assert.equal(record.existing_source_id, null, "Do not invent verified EBA identities");
   assert.equal(record.review_notes_path, notePath);
-  assert.equal(record.spoken_audio_transcript, "not_done");
-  assert.ok(fs.readFileSync(path.join(root, notePath), "utf8").includes("ekran"));
+  assert.equal(record.spoken_audio_transcript,
+    fileName === "19XU3SW3.mp4" ? "user_supplied_no_speech_report" : "user_supplied");
+  const mediaNote = fs.readFileSync(path.join(root, notePath), "utf8");
+  assert.ok(mediaNote.includes("ekran"));
+  assert.ok(mediaNote.toLocaleLowerCase("tr-TR").includes("kullanıcı"), "User-provided content scope must be recorded");
 }
 
 const communicationBank = read("data/grade-11/source/teacher-book/theme-1/answer-bank/part-15-pages-64-67.json");
@@ -163,7 +178,7 @@ for (const [sourceId, reviewFile] of [
   const s = known.get(sourceId);
   assert.ok(s, `Missing screen-reviewed EBA source: ${sourceId}`);
   assert.equal(s.review_notes_path, reviewFile);
-  assert.equal(s.transcript_path, null, "Screen review must not claim an audio transcript");
+  assert.match(s.work_status, /user_supplied/u, "User transcript provenance must be recorded separately from visual review");
   assert.equal(s.dates.content_reviewed, null, "Partial review must not claim complete review");
   assert.ok(fs.readFileSync(path.join(root, reviewFile), "utf8").includes("ekran"), "Screen evidence note missing");
 }
@@ -176,7 +191,9 @@ assert.ok(q8.source_locator.includes("QR-EBA-29BF4F293D53.md"), "Quote provenanc
 for (const id of ["T1-P66-Q01", "T1-P66-Q04", "T1-P66-Q05", "T1-P67-Q06", "T1-P67-Q07", "T1-P67-Q09", "T1-P72-Q01", "T1-P73-Q01", "T1-P73-Q02"]) {
   const entry = [...communicationBank.entries, ...communicationLaterBank.entries].find((candidate) => candidate.question_id === id);
   assert.equal(entry?.entry_type, "source_limited",
-    `${id} depends on speech not covered by the screen-only review`);
+    `${id} must remain within the user-supplied transcript's scope`);
+  assert.ok(entry.source_locator.includes("p064.json") || entry.source_locator.includes("19XU49LL"),
+    `${id} must cite the user-supplied Aklıselim source`);
 }
 const communicationLaterAnswers = new Map(communicationLaterBank.entries.map((entry) => [entry.question_id, entry]));
 const p72 = communicationLaterAnswers.get("T1-P72-Q01");
@@ -198,9 +215,9 @@ assert.ok(p73q1.source_locator.includes("QR-EBA-29BF4F293D53.md"));
 const p73Provenance = `${p73q1.answer} ${p73q1.guidance} ${p73q1.explanation ?? ""}`;
 assert.match(p73Provenance, /ekran|alt bant|görsel/iu,
   "Page 73 must identify the visually verified provenance of the quote");
-assert.match(p73Provenance, /konuşmacı|sesli|ses dökümü|ses tonu/iu,
+assert.match(p73Provenance, /konuşmacı|sesli|ses dökümü|konuşma dökümü|sözlü/iu,
   "Page 73 must keep spoken dialogue distinct from on-screen text");
-assert.match(p73q2.answer, /ekran/iu,
+assert.match(p73q2.answer, /ekran|alt band/iu,
   "Example criticism must be grounded in screen evidence");
 assert.match(p73q2.answer, /çözüm/iu,
   "Example criticism needs a corresponding improvement proposal");
@@ -208,8 +225,8 @@ assert.ok(!JSON.stringify(p73q2.answer_sections).includes("benzer düşünceleri
   "Do not invent an audio-derived language flaw");
 
 for (const [fileName, page, notePath] of [
-  ["19XU49LO.mp4", 88, "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LO.md"],
-  ["19XU49LT.mp4", 113, "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md"],
+  ["19XU49LO.mp4", 88, "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LO.md"],
+  ["19XU49LT.mp4", 113, "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LT.md"],
 ]) {
   const record = intake.records.find((r) => r.file_name === fileName);
   assert.ok(record, `Theme 2 record missing: ${fileName}`);
@@ -217,7 +234,7 @@ for (const [fileName, page, notePath] of [
   assert.equal(record.review_notes_path, notePath);
   assert.equal(record.visual_review, "time_stamped_sampled_frames");
   assert.equal(record.book_qr.media_binary_identity, "not_verified_from_eba_download");
-  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.equal(record.spoken_audio_transcript, "user_supplied");
   const note = fs.readFileSync(path.join(root, notePath), "utf8");
   assert.ok(note.includes("görüntü") && note.includes("doğrula"),
     "Theme 2 visual notes must distinguish observation from source validation");
@@ -225,16 +242,18 @@ for (const [fileName, page, notePath] of [
 const t2AnswerBank = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-05-pages-113-120.json");
 const orhunQ1 = t2AnswerBank.entries.find((e) => e.question_id === "T2-P113-Q01");
 assert.ok(orhunQ1 && orhunQ1.entry_type === "source_limited",
-  "Unverified video transcript must remain source_limited");
-assert.ok(orhunQ1.source_locator.includes("UNVERIFIED-19XU49LT.md"));
-assert.ok(orhunQ1.answer.includes("KÜL TİGİN ABİDESİ"), "Observed image evidence missing");
+  "Keep the Orkhon response within its documented answer scope");
+assert.ok(orhunQ1.source_locator.includes("MEDIA-REVIEW-19XU49LT.md"));
+assert.ok(`${orhunQ1.answer} ${JSON.stringify(orhunQ1.answer_sections)}`.includes("KÜL TİGİN ABİDESİ"),
+  "Observed image evidence missing");
 
-// Theme 2 oral-culture videos are sampled visually, not transcribed.
-// Guard against accidentally treating a book QR URL as proof of Drive MP4 provenance.
+// Theme 2 oral-culture videos have user-supplied content transcripts and
+// sampled visual notes; guard against treating the book QR URL as proof of
+// Drive MP4 binary provenance.
 for (const [fileName, page, qrId, notePath] of [
-  ["19XU49LP.mp4", 129, "2d18e79ed46861b363ef8affbfefcecb", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md"],
-  ["19XU49JV.mp4", 140, "85ae59be9852fb990c8de54f7cb313ce", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md"],
-  ["19XU49MG.mp4", 141, "79b9d858a98472d2c1c9c773b715c6a2", "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md"],
+  ["19XU49LP.mp4", 129, "2d18e79ed46861b363ef8affbfefcecb", "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LP.md"],
+  ["19XU49JV.mp4", 140, "85ae59be9852fb990c8de54f7cb313ce", "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md"],
+  ["19XU49MG.mp4", 141, "79b9d858a98472d2c1c9c773b715c6a2", "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md"],
 ]) {
   const record = intake.records.find((r) => r.file_name === fileName);
   assert.ok(record, `Missing Theme 2 cultural video ${fileName}`);
@@ -244,53 +263,54 @@ for (const [fileName, page, qrId, notePath] of [
   assert.equal(record.mapping_status, "provisional_png_and_visual_review");
   assert.equal(record.review_notes_path, notePath);
   assert.equal(record.visual_review, "time_stamped_sampled_frames");
-  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.equal(record.spoken_audio_transcript, "user_supplied");
   const review = fs.readFileSync(path.join(root, notePath), "utf8");
   const normalizedReview = review.toLocaleLowerCase("tr-TR");
-  assert.ok(normalizedReview.includes("ses") && normalizedReview.includes("eba"),
-    "Notes must explain why sampled frames do not prove complete audio or download provenance");
+  assert.ok(normalizedReview.includes("döküm") && normalizedReview.includes("eba"),
+    "Notes must distinguish supplied speech content from EBA/MP4 file provenance");
 }
 const t2Part8 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-08-pages-129-135.json");
 const q129 = t2Part8.entries.find(e => e.question_id === "T2-P129-Q01");
 assert.equal(q129?.entry_type, "source_limited");
-assert.ok(q129.source_locator.includes("UNVERIFIED-19XU49LP.md"));
-assert.ok(q129.answer.includes("taş yazıt"), "Observation in bounded Q129 answer missing");
+assert.ok(q129.source_locator.includes("MEDIA-REVIEW-19XU49LP.md"));
+assert.ok(q129.answer.includes("Hun, Göktürk ve Uygur"), "Supplied VTR content is missing from Q129 answer");
 for (const id of ["T2-P129-Q02", "T2-P129-Q03"]) {
   const entry = t2Part8.entries.find((candidate) => candidate.question_id === id);
-  assert.equal(entry?.entry_type, "source_limited", `${id} must not present the unreviewed narration as verified`);
-  assert.ok(entry.source_locator.includes("UNVERIFIED-19XU49LP.md"));
+  assert.equal(entry?.entry_type, "source_limited", `${id} must remain within the supplied narration's scope`);
+  assert.ok(entry.source_locator.includes("MEDIA-REVIEW-19XU49LP.md"));
 }
 const t2Part9 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-09-pages-136-141.json");
 for (const id of ["T2-P141-Q01", "T2-P141-Q02"]) {
   const entry = t2Part9.entries.find((candidate) => candidate.question_id === id);
-  assert.equal(entry?.entry_type, "source_limited", `${id} cannot treat an untranscribed interview as verified speech`);
-  assert.ok(entry.source_locator.includes("UNVERIFIED-19XU49MG.md"));
-  assert.match(`${entry.guidance ?? ""} ${entry.explanation ?? ""}`, /transkript|ses dökümü/iu,
-    `${id}: teacher-facing provenance must document the missing transcript`);
+  assert.equal(entry?.entry_type, "source_limited", `${id} must stay within the user's interview transcript and book text`);
+  assert.ok(entry.source_locator.includes("MEDIA-REVIEW-19XU49MG.md"));
+  assert.match(`${entry.answer} ${JSON.stringify(entry.answer_sections ?? {})}`, /âşıklık|Taşlıova|ozanlık/iu,
+    `${id}: answer should use the supplied interview content`);
 }
 for (const forbidden of ["Tengri Dağları", "Buhara", "Tebriz", "Kerkük", "Bağdat", "Mehmet Oktay Ergani"]) {
-  const unsupportedInterviewClaims = t2Part9.entries
+  const claimsNotInSuppliedTranscript = t2Part9.entries
     .filter((entry) => ["T2-P141-Q01", "T2-P141-Q02"].includes(entry.question_id))
     .map((entry) => `${entry.answer} ${entry.explanation ?? ""} ${entry.guidance ?? ""} ${JSON.stringify(entry.answer_sections ?? {})}`)
     .join(" ");
-  assert.ok(!unsupportedInterviewClaims.includes(forbidden), `Untranscribed interview claim must not be asserted: ${forbidden}`);
+  assert.ok(!claimsNotInSuppliedTranscript.includes(forbidden), `Claim absent from the supplied interview must not be asserted: ${forbidden}`);
 }
 const voc = t2Part9.entries.find(e => e.question_id === "T2-P140-VOC01");
 assert.equal(voc?.entry_type, "source_limited");
-assert.ok(voc.source_locator.includes("UNVERIFIED-19XU49JV.md"));
+assert.ok(voc.source_locator.includes("MEDIA-REVIEW-19XU49JV.md"));
 assert.equal(voc.dictionary_terms.length, 5);
-for (const entry of Object.values(voc.answer_sections)) {
-  assert.ok(entry.videodaki_dize.includes("Doğrulanmış transkript yok"),
-    "Do not attribute a lyric or word occurrence to an untranscribed recording");
-}
+assert.match(voc.answer_sections.çağ.videodaki_dize, /Zaman geçen çağ/iu);
+assert.match(voc.answer_sections.canan.videodaki_dize, /cananın dağ/iu);
+assert.match(voc.answer_sections.kahır.videodaki_dize, /neme kahır/iu);
+assert.match(voc.answer_sections.saban.videodaki_dize, /Saban gibi toprakları/iu);
+assert.match(voc.answer_sections.sine.videodaki_dize, /sağladığı dörtlüklerde.*geçmiyor/iu);
 
 const gokturk = intake.records.find(r => r.file_name === "19XU49MB.mp4");
 assert.ok(gokturk && gokturk.printed_page === 159);
 assert.equal(gokturk.book_qr.eba_content_id, "b557411639a9c10b3b7c33b91819cd42");
 assert.equal(gokturk.book_qr.media_binary_identity, "not_verified_from_eba_download");
-assert.equal(gokturk.spoken_audio_transcript, "not_done");
+assert.equal(gokturk.spoken_audio_transcript, "user_supplied");
 assert.equal(gokturk.visual_review, "time_stamped_sampled_frames_and_on_screen_labels");
-assert.equal(gokturk.review_notes_path, "data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MB.md");
+assert.equal(gokturk.review_notes_path, "data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MB.md");
 const gokturkNote = fs.readFileSync(path.join(root, gokturk.review_notes_path), "utf8");
 for (const label of ["İLTERİŞ KUTLUĞ KAĞAN", "KÜL TİGİN", "BİLGE KAĞAN", "TONYUKUK"]) {
   assert.ok(gokturkNote.includes(label), `Missing visual screen label: ${label}`);
@@ -299,30 +319,32 @@ const t2Part12 = read("data/grade-11/source/teacher-book/theme-2/answer-bank/par
 const bridge = t2Part12.entries.find(e => e.question_id === "T2-P159-Q08");
 assert.equal(bridge?.entry_type, "source_limited");
 assert.ok(bridge.source_locator.includes(gokturk.review_notes_path));
-assert.ok(bridge.answer.includes("Kül Tigin") && bridge.answer.includes("Tonyukuk"));
-assert.ok(bridge.answer.includes("videoda anıldığına dair ses kanıtı değildir"),
-  "Do not attribute selected literary works to untranscribed narration");
+const bridgeEvidence = `${bridge.answer} ${JSON.stringify(bridge.answer_sections)}`.toLocaleUpperCase("tr-TR");
+assert.ok(bridgeEvidence.includes("KÜL TİGİN") && bridgeEvidence.includes("TONYUKUK"));
+assert.ok(bridge.answer_sections["Kanıt sınırı"].includes("videoda anıldığına dair ses kanıtı değildir"),
+  "Do not attribute literary works to the narration when they do not occur in the supplied transcript");
 assert.ok(bridge.source_locator.includes(gokturk.review_notes_path));
 
 const performanceBank = read("data/grade-11/source/teacher-book/theme-2/answer-bank/part-10-pages-142-147.json");
 for (const id of ["T2-P142-Q02", "T2-P143-Q02", "T2-P143-Q03", "T2-P143-Q04", "T2-P147-Q01"]) {
   const entry = performanceBank.entries.find((candidate) => candidate.question_id === id);
-  assert.equal(entry?.entry_type, "source_limited", `${id} depends on the untranscribed p.140 performance`);
-  assert.ok(entry.source_locator.includes("UNVERIFIED-19XU49JV.md"));
+  assert.equal(entry?.entry_type, "source_limited", `${id} must remain within the user's p.140 performance transcript`);
+  assert.ok(entry.source_locator.includes("MEDIA-REVIEW-19XU49JV.md"));
 }
 for (const id of ["T2-P144-MAP01", "T2-P145-PERF01"]) {
   const entry = performanceBank.entries.find((candidate) => candidate.question_id === id);
   assert.equal(entry?.entry_type, "performance_support");
-  assert.ok(entry.answer.includes("Görüntü notunda") || entry.answer.includes("doğrulanmış"));
+  assert.match(entry.answer, /döküm|redif|bağlama/iu,
+    `${id} should use the user-supplied performance transcript`);
 }
 
 // Theme 4: distinguish the 58-second title sequence from the main film,
 // and keep visual-only observations explicitly separate from spoken transcripts.
 const t4Files = [
-  ["19XU4GDV.mp4", 285, "bc54a785fede521619c982332455dc72", "UNVERIFIED-19XU4GDV.md"],
-  ["19XU49LQ.mp4", 285, "5fd2b97cb78fabe367aa3fcde8f9718d", "UNVERIFIED-19XU49LQ.md"],
-  ["19XU49KB.mp4", 293, "cc654606d608113ea65f523584ab801b", "UNVERIFIED-19XU49KB.md"],
-  ["19XU49LS.mp4", 307, "6e0ca79cee422408b5dcfaf3ad7a1459", "UNVERIFIED-19XU49LS.md"],
+  ["19XU4GDV.mp4", 285, "bc54a785fede521619c982332455dc72", "MEDIA-REVIEW-19XU4GDV.md"],
+  ["19XU49LQ.mp4", 285, "5fd2b97cb78fabe367aa3fcde8f9718d", "MEDIA-REVIEW-19XU49LQ.md"],
+  ["19XU49KB.mp4", 293, "cc654606d608113ea65f523584ab801b", "MEDIA-REVIEW-19XU49KB.md"],
+  ["19XU49LS.mp4", 307, "6e0ca79cee422408b5dcfaf3ad7a1459", "MEDIA-REVIEW-19XU49LS.md"],
 ];
 for (const [file, page, qrId, noteFile] of t4Files) {
   const record = intake.records.find(r => r.file_name === file);
@@ -331,24 +353,24 @@ for (const [file, page, qrId, noteFile] of t4Files) {
   assert.equal(record.book_qr.eba_content_id, qrId);
   assert.equal(record.book_qr.media_binary_identity, "not_verified_from_eba_download");
   assert.equal(record.mapping_status, "provisional_png_and_visual_review");
-  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.equal(record.spoken_audio_transcript, "user_supplied");
   assert.equal(record.visual_review, "time_stamped_sampled_frames");
   const notePath = "data/grade-11/source/qr-review-notes/" + noteFile;
   assert.equal(record.review_notes_path, notePath);
   const note = fs.readFileSync(path.join(root, notePath), "utf8");
   assert.ok(note.toLocaleLowerCase("tr-TR").includes("qr") && note.toLocaleLowerCase("tr-TR").includes("ses"),
-    "Every Theme 4 review must disclose QR/MP4 and sound-transcript uncertainty");
+    "Every Theme 4 review must distinguish user-supplied speech from QR/MP4 provenance");
 }
 const theme4Part10 = read("data/grade-11/source/teacher-book/theme-4/answer-bank/part-10-pages-284-297.json");
 const theme4Part12 = read("data/grade-11/source/teacher-book/theme-4/answer-bank/part-12-pages-303-307.json");
 const q4 = new Map([...theme4Part10.entries, ...theme4Part12.entries].map(q => [q.question_id,q]));
 for (const [id,kind,refs] of [
-  ["T4-P285-Q02", "performance_support", ["UNVERIFIED-19XU4GDV.md"]],
-  ["T4-P286-Q03", "source_limited", ["UNVERIFIED-19XU49LQ.md"]],
-  ["T4-P293-Q02", "source_limited", ["UNVERIFIED-19XU49KB.md"]],
-  ["T4-P293-Q03", "source_limited", ["UNVERIFIED-19XU49KB.md","UNVERIFIED-19XU49LQ.md"]],
-  ["T4-P307-Q13", "source_limited", ["UNVERIFIED-19XU49LS.md"]],
-  ["T4-P307-Q14", "source_limited", ["UNVERIFIED-19XU49LS.md"]],
+  ["T4-P285-Q02", "performance_support", ["19XU4GDV", "19XU49LQ"]],
+  ["T4-P286-Q03", "source_limited", ["MEDIA-REVIEW-19XU49LQ.md"]],
+  ["T4-P293-Q02", "source_limited", ["MEDIA-REVIEW-19XU49KB.md"]],
+  ["T4-P293-Q03", "source_limited", ["MEDIA-REVIEW-19XU49KB.md","MEDIA-REVIEW-19XU49LQ.md"]],
+  ["T4-P307-Q13", "source_limited", ["MEDIA-REVIEW-19XU49LS.md"]],
+  ["T4-P307-Q14", "source_limited", ["MEDIA-REVIEW-19XU49LS.md"]],
 ]) {
   const answer = q4.get(id);
   assert.equal(answer?.entry_type, kind, `Source verification level changed for ${id}`);
@@ -356,14 +378,15 @@ for (const [id,kind,refs] of [
 }
 const comparison = q4.get("T4-P293-Q03");
 assert.deepEqual(Object.keys(comparison.answer_sections), ["Dil ve Üslup","İleti","Tür","İçerik"]);
-assert.ok(comparison.answer_sections["Dil ve Üslup"].includes("transkript"),"Cannot certify style without audio");
+assert.ok(comparison.answer_sections["Dil ve Üslup"].includes("konuşma dili"),
+  "Style comparison must describe the supplied interviews without inferring unprovided vocal detail");
 for(const id of ["T4-P307-Q13","T4-P307-Q14"])
-  assert.ok(q4.get(id).answer.includes("ses") || q4.get(id).answer.includes("transkript"),
-    "Aidiyet answer must not assign unverified motives to people");
+  assert.ok(q4.get(id).answer.includes("çeşme") || q4.get(id).answer.includes("su"),
+    "Aidiyet answer must use the supplied account of fountain maintenance and public benefit");
 
-// Pages 43 and 83 are confirmed EBA/SHA videos with visual frame evidence.
-// A verified binary is NOT a verified narration, a precise time-aligned poem,
-// or evidence that the page-43 Kaplan letter was discussed in the documentary.
+// Pages 43 and 83 are confirmed EBA/SHA videos. Their audio transcripts and
+// the Dıranas voice attribution were supplied by the content owner; those
+// claims remain distinct from the sampled-frame review and printed text.
 for (const [fileName, page, sourceId, qrId, noteName, visible] of [
   ["19XU49ME.mp4", 43, "QR-EBA-E43890DFD82A",
     "e43890dfd82a3b5c7823d3b0fba2b627", "QR-EBA-E43890DFD82A.md",
@@ -380,19 +403,17 @@ for (const [fileName, page, sourceId, qrId, noteName, visible] of [
   assert.equal(record.book_qr.eba_content_id, qrId);
   assert.equal(record.book_qr.media_binary_identity, "sha256_matches_earlier_eba_verified_source");
   assert.equal(record.sha256, canonicalSource.local_file.sha256);
-  assert.equal(record.spoken_audio_transcript, "not_done");
+  assert.equal(record.spoken_audio_transcript, "user_supplied");
   assert.equal(canonicalSource.transcript_path, null);
-  assert.equal(canonicalSource.work_status,
-    "partially_reviewed_verified_media_visual_only_audio_not_transcribed");
-  assert.equal(canonicalSource.content_review_basis,
-    "sampled_video_frames_with_timecodes_not_audio");
+  assert.match(canonicalSource.work_status, /user_supplied/u);
+  assert.match(canonicalSource.content_review_basis, /user_supplied/u);
   assert.equal(record.visual_review, "time_stamped_sampled_frames");
   const notePath = "data/grade-11/source/qr-review-notes/" + noteName;
   assert.equal(record.review_notes_path, notePath);
   assert.equal(canonicalSource.review_notes_path, notePath);
   const note = fs.readFileSync(path.join(root, notePath), "utf8");
   assert.ok(note.includes(visible), `Specific visual evidence missing: ${visible}`);
-  assert.ok(note.includes("Ses") || note.includes("ses"), "Audio uncertainty must be explicit");
+  assert.ok(note.includes("Ses") || note.includes("ses"), "User-provided audio transcript scope must be explicit");
   assert.ok(note.includes("s." + page), "Printed page context must be explicit");
 }
 const t1Page43 = read("data/grade-11/source/teacher-book/theme-1/answer-bank/part-09-pages-43-44.json");
@@ -400,7 +421,7 @@ const t1Page83 = read("data/grade-11/source/teacher-book/theme-1/answer-bank/par
 assert.equal(t1Page43.entries.find(e => e.question_id === "T1-P43-Q01")?.entry_type,
   "question_answer", "Mektup type must remain based on Kaplan's printed text");
 assert.equal(t1Page83.entries.find(e => e.question_id === "T1-P83-Q13")?.entry_type,
-  "source_limited", "Olvido audio-sensitive question must stay source_limited");
+  "source_limited", "Olvido response must keep interpretation distinct from direct poem and visual evidence");
 
 // Cross-reference audit: all 18 page-video records must open their own
 // existing evidence note, without conflating URL identity with MP4 provenance.
@@ -414,8 +435,8 @@ for (const r of intake.records) {
   const noteFile = path.join(root, r.review_notes_path);
   assert.ok(fs.existsSync(noteFile), `Linked evidence note missing: ${r.review_notes_path}`);
   assert.ok(fs.readFileSync(noteFile,"utf8").length > 140, `Empty video note: ${r.file_name}`);
-  assert.equal(r.spoken_audio_transcript, "not_done",
-    `Visual notes must never masquerade as a complete audio transcript: ${r.file_name}`);
+  assert.ok(["user_supplied", "user_supplied_no_speech_report"].includes(r.spoken_audio_transcript),
+    `Every user-provided video record needs an explicit audio transcript scope: ${r.file_name}`);
   if (r.existing_source_id) {
     const canonicalSource = known.get(r.existing_source_id);
     assert.equal(canonicalSource.review_notes_path, r.review_notes_path,

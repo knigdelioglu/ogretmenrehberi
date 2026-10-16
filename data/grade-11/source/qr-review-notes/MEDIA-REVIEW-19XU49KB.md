@@ -2,7 +2,7 @@
 
 **Özgün kitap QR hedefi:** `cc654606d608113ea65f523584ab801b` (basılı s.293 / PDF s.294). **Drive dosya adayı:** `19XU49KB.mp4` (yaklaşık 05:07).
 
-**İnceleme sınırı:** Yaklaşık 15 saniyede bir örneklenmiş görüntüler; tam ses transkripti ve EBA'dan alınmış MP4 dosya özdeşliği henüz doğrulanmadı. Video teması başlığa göre *Çalışkanlık*tır; görüntü yorumları tamamlanmış konuşma gibi verilmez.
+**Kullanıcı dökümü:** Dış ses ve Muharrem/Zübeyde röportajları ile ekrandaki yazılara ilişkin içerik kullanıcı tarafından sağlandı ve p.293 sayfa JSON'una eklendi. Aşağıdaki görsel tablo yaklaşık 15 saniyede bir örneklenen kareleri kaydeder. EBA'dan indirme kökeni, içerik dökümünden ayrı tutulur.
 
 | Yaklaşık zaman | Gözlenebilir görüntüler |
 | --- | --- |
@@ -17,7 +17,7 @@
 
 ## s.293 sorularına aktarım
 
-- **Ana düşünce (Q02):** Tekrarlanan **tarımsal üretim, ürün toplama ve birlikte yapılan işler** çalışkanlıkla ilişkilendirilebilir. “Emek ve üretimin günlük hayatın parçası olduğu” ifadesi **kanıtlı bir görsel yorumdur**, belgeselin konuşmayla doğrulanmış kesin ana fikri değildir.
+- **Ana düşünce (Q02):** Kullanıcının dökümünde yıl boyu süren üretim emeği, organik tarım, bahçe işleri, kuşaklar arası iş bölümü ve geçmişteki yoksunluklar anlatılır. Tarımsal üretim ve ürün toplama kareleri bu sözlü anlatımla birlikte çalışkanlık temasını destekler.
 - **Dört ölçütte karşılaştırma (Q03):** İki kayıt da *Anadolu İnsanı* belgesel serisiyle ilişkilendirilmiş olup ayrı kaynaklardır. *Çalışkanlık* görüntülerinde tarımsal üretim ve topluluk/aile sahneleri; *Fedakârlık* görüntülerinde dağlık arazi ve demiryolu çevresinde ilerleyen kişi görülebilir. **Dil ve üslup, sesli ileti, ayrıntılı olay ve kişiler arası ilişkiler** konuşma/müzik incelemesi olmadan tamamlanamaz.
 
 **Eksikler:** Asıl sözlü anlatım, kişi anlatıları, yapımın tam iletisi, MP4 indirme kökeni.

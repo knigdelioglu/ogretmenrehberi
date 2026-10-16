@@ -106,7 +106,9 @@
       ],
       "related_table_ids": [],
       "related_media_ids": [
-        "G11-T2-P159-VIS01"
+        "G11-T2-P159-VIS01",
+        "G11-T2-P159-VID01",
+        "G11-T2-P159-VID02"
       ],
       "order": 5,
       "source": {
@@ -129,7 +131,9 @@
       ],
       "related_table_ids": [],
       "related_media_ids": [
-        "G11-T2-P159-VIS01"
+        "G11-T2-P159-VIS01",
+        "G11-T2-P159-VID01",
+        "G11-T2-P159-VID02"
       ],
       "order": 6,
       "source": {
@@ -138,6 +142,38 @@
         "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
         "line_start": 48,
         "line_end": 57
+      }
+    },
+    {
+      "id": "G11-T2-P159-VID01",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49MB.mp4",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı Göktürk yazıtları belgeselindeki dış ses ve uzman görüşleri dökümü; zaman aralıkları ve konuşmacılar sunulduğu biçimde korunmuştur.",
+      "text": "Dış ses (00:05–01:13): “Türk tarihi yalnızca savaşlarla değil; bilgeliğiyle, devletiyle, töresiyle yazılmış binlerce yıllık bir destandır. Bazen dağlara hükmeden kağanlar anlatır bu tarihi, bazen de suskun bozkırlarda yankılanan at nalı sesleri. Asya'nın derinliklerinden Avrupa içlerine uzanan bu büyük yürüyüş imparatorluklarla, liderlerle, savaşlarla ve yeri geldiğinde bir kelimeyle anılır. Destanlarla süslenir, efsanelerle anlatılır. Ancak tarih belgelerle kalıcılık kazanır. Ve işte o belgelerin en kıymetlilerinden bazıları, taşa kazınmış kelimelerle bize ulaşan yazıtlardır. Bu taşlar arasında öyle bir grup vardır ki sadece bir milletin değil, Göktürk tarihinin tanıklarıdır onlar. İlteriş Kutluk Kağan liderliğinde kurulan İkinci Göktürk Devleti'ne ait bu yazıtlar, Orhun Yazıtlarıdır ya da bir diğer adıyla Orhun Kitabeleri.”\n\nProf. Dr. Saadettin Yağmur Gömeç (01:14–01:49): “Biz bunlara devlet kitabesi diyoruz. Bu devlet kitabelerinde bir milletin ortaya çıkışından o yazıldığı çağa kadar neredeyse başından geçen bütün hadiseleri görüyoruz. Ne diyor kitabelerin başında? ‘Ey Türk! Üste gök basmasar, altta yer tengimeser, senin ilini ve töreni kim bozabilir?’ Yani yukarıda gökyüzü çökmedikçe, aşağıda dünya yok olmadıkça senin ve devletin baki olarak kalacak diye de bir müjde veriyor.”\n\nDış ses (01:50–02:19): “İlteriş Kutluk Kağan'ın oğulları Bilge Kağan ve Kül Tigin'e ait yazıtlar Moğolistan'ın batısında keşfedildi. Devletin kuruluşunda İlteriş Kutluk Kağan'la birlikte yer alan, onun ölümünden sonra da oğullarıyla birlikte devlet yönetiminde etkin rol oynayan; zekâsı, stratejik dehası ve bilge kişiliğiyle öne çıkan Tonyukuk'a ait yazıtsa Moğolistan'ın doğusunda bulundu.”\n\nProf. Dr. Enkhbat Avirmed (Türkçe seslendirme, 02:20–02:47): “Bilge Kağan ve Kül Tigin yazıtları 1889 yılında, Tonyukuk Yazıtı ise 1897 yılında keşfedildi. Bu keşifler Türk dilinin bilinen en eski metinlerine ulaşmamızı sağladı. Şimdi ise tarih tekerrür etti. Bilge Kağan ve Kül Tigin'in babası, Tonyukuk'un silah arkadaşı olan İlteriş Kutluk Kağan Yazıtı'nın, hatta anıt külliyesinin keşfini yaptığımızı düşünüyoruz.”\n\nProf. Dr. Şaban Doğan (02:48–02:53): “Bu keşif, yazıt olarak son yüzyılda yapılan en büyük keşiftir.”\n\nDış ses (02:54–04:01): “İlteriş Kutluk Kağan'a ait olduğu düşünülen ve yazıt geleneğinin ilk örneklerinden biri sayılan bu tarihi eser, içinde ‘Türk’ kelimesi geçen en eski yazıtlardan biri. Araştırmacılar bu yazıtın İlteriş'in kardeşi Kapgan Kağan tarafından yazdırılmış olabileceğini öne sürüyor. Hal böyle olsa da oğullarına ait yazıtlar hakkında elimizde çok daha net ve kesin bilgiler var. Kül Tigin, 731 yılında hayatını kaybetti. Onun adına dikilen yazıt, devletin resmi tarihçisi ve yazmanı Yollug Tigin'e yazdırıldı. Bilge Kağan'sa 734 yılında vefat etti. Onun adına hazırlanan yazıt, ölümünden bir yıl sonra yine Yollug Tigin tarafından kaleme alındı. Göktürklerin en önemli devlet adamlarından biri olan Tonyukuk'sa yazıtını hayattayken kendi ağzından yazdırmıştır. Bu yönüyle Türk tarihindeki ilk otobiyografik metin olarak kabul edilir.”",
+      "order": 7,
+      "source": {
+        "printed_page": 159,
+        "pdf_page": 160,
+        "media_file": "19XU49MB.mp4",
+        "provenance": "user_supplied_transcript"
+      }
+    },
+    {
+      "id": "G11-T2-P159-VID02",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49MB.mp4",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı ekran yazıları, harita etiketleri, mesafeler ve tarihî şahsiyet alt bantları dökümü.",
+      "text": "Giriş ve kapanış bildirimi (00:01–00:04 ve 04:02): Ekranın sağ alt köşesinde açık kitap ve sonbahar yaprakları görseli üzerinde “İçerikte alt yazı seçeneği bulunmaktadır. ↓” metni.\n\nKanal logosu: Ekranın sol üst köşesinde “TRT AVAZ” logosu.\n\n3D yazıt kaideleri üzerindeki yazılar: Tonyukuk yazıtı modellemesinin kaidesinde “BİLGE TONYUKUK”; Kül Tigin yazıtı modellemesinde “KÜL TİGİN”; Bilge Kağan yazıtı modellemesinde “BİLGE KAĞAN”.\n\nKonuşmacı tanıtım alt bantları:\n01:17 — “PROF. DR. SAADETTİN YAĞMUR GÖMEÇ / TARİHÇİ”.\n02:21 — “PROF. DR. ENKHBAT AVİRMED / TARİHÇİ”.\n02:49 — “PROF. DR. ŞABAN DOĞAN / ESKİ TÜRKÇE UZMANI”.\n\nHarita üzerindeki konum ve mesafe bilgileri (01:50–02:19): “MOĞOLİSTAN”; “Ulan Batur”; “Bilge Kağan Yazıtı / Kül Tigin Yazıtı”; “İlteriş Kutluğ Kağan Yazıtı”; “Tonyukuk Yazıtı”. Mesafe göstergeleri: Ulan Batur – Bilge Kağan/Kül Tigin Yazıtı “360 KM”; Bilge Kağan/Kül Tigin Yazıtı – İlteriş Kutluğ Kağan Yazıtı “60 KM”; Ulan Batur – Tonyukuk Yazıtı “60 KM”.\n\nTarihi şahsiyet tanıtım kartları ve yaşam yılları (3D canlandırma üzerinde):\n02:54 — “İLTERİŞ KUTLUG KAĞAN / ? - 694”.\n03:22 — “KÜL TİGİN / 685 - 731”.\n03:35 — “BİLGE KAĞAN / 683 - 734”.\n03:47 — “TONYUKUK / 646 - 726”.",
+      "order": 8,
+      "source": {
+        "printed_page": 159,
+        "pdf_page": 160,
+        "media_file": "19XU49MB.mp4",
+        "provenance": "user_supplied_transcript"
       }
     }
   ],

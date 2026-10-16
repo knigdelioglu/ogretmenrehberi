@@ -2,7 +2,7 @@
 
 **Özgün kitap QR hedefi:** `bc54a785fede521619c982332455dc72` (PDF sayfa 286 / basılı s.285 bağlantısından doğrulandı). **Drive dosya adayı:** `19XU4GDV.mp4` (yaklaşık 00:58).
 
-**Kanıt türü:** Yaklaşık sekizer saniyelik örnek görüntüler. PDF'deki EBA hedefi kesin; MP4'ün doğrudan EBA indirmesiyle özdeşliği ve ses dökümü doğrulanmadı. Bu kısa kayıt **asıl Fedakârlık belgeseli değil**, başlık/jenerik sorusunda ayrı incelenmesi gereken kayıttır.
+**Kullanıcı dökümü:** Kısa jeneriğin dış ses anlatımı ve ekrandaki yazıları kullanıcı tarafından sağlandı; bunlar p.285 sayfa JSON'una eklendi. Yaklaşık sekizer saniyelik örnek kareler ayrı görsel notlardır. MP4'ün doğrudan EBA indirmesiyle özdeşliği ayrı bir dosya-kökeni bilgisidir. Bu kısa kayıt **asıl Fedakârlık belgeseli değil**, başlık/jenerik sorusunda ayrı incelenmesi gereken kayıttır.
 
 | Yaklaşık zaman | Ekranda görülen |
 | --- | --- |

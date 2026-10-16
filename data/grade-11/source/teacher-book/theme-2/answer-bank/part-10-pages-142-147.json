@@ -11,9 +11,9 @@
       "question_no": "1",
       "prompt_summary": "Metnin başlık ve görselinden hareketle “atışma”nın âşıklık geleneğindeki yerini tahmin etme",
       "answer": "Başlık ve görsel, sazlarıyla karşılıklı söyleyen iki âşığın bulunduğunu düşündürür. Dökümde Murat Çobanoğlu ile Şeref Taşlıova’nın toplam altı dörtlükte (her biri üçer dörtlük söyleyerek) sırayla karşılık verdiği; kapanışlarda değişen eylemlerin “-ebilirsen eğer” kalıbına bağlandığı görülür. Bu örnek, atışmanın karşılıklı söz üretimi, saz eşliği ve ortak bir ayak çevresinde ilerlediği tahminini destekler.",
-      "explanation": "Soru doğrudan tahmin istemektedir; geleneğin bütün teknik kurallarını önceden doğru cevap olarak vermek etkinliğin işlevini bozar.",
+      "explanation": "Öğrenciler önce yalnız başlık ve görselden tahmin eder; izleme sonrasında kullanıcı dökümündeki karşılıklı altı dörtlük ve tekrar eden “-ebilirsen eğer” kalıbıyla tahminlerini karşılaştırır.",
       "guidance": "Başlık ve görselden gerekçelendirebildiğiniz tahminleri yazın. Genel âşıklık bilgilerini daha sonra doğrulama veya karşılaştırma için kullanabilirsiniz.",
-      "source_locator": "basılı s.142 / PDF s.143 — Metni Anlayalım soru 1",
+      "source_locator": "basılı s.142 / PDF s.143 — soru ve izleme sonrası karşılaştırma; kullanıcı video dökümü: data/book/grade-11/themes/theme-2/pages/p140.json",
       "answer_sections": {
         "Başlıktan Çıkan Tahmin": "İki âşığın karşılıklı olarak şiir/söz söyleyeceği bir icra.",
         "Görselden Çıkan Tahmin": "Sazın icrada önemli olduğu ve iki sanatçının birbirine cevap veren bir düzen içinde bulunabileceği.",
@@ -26,16 +26,21 @@
       "printed_page": 142,
       "question_no": "2",
       "prompt_summary": "Atışmadaki benzetmeleri ve bunların âşık atışmasına katkısını belirleme",
-      "answer": "Benzetme, bir varlığı veya durumu başka bir varlığın belirgin özelliğiyle ilişkilendirerek anlatımı somut ve etkili kılar. Örneğin atışmadan alınmış olmayan 'sözün ırmak gibi akması' benzetmesinde benzeyen söz, benzetilen ırmak, benzetme yönü ise akıcılıktır. Bir âşık benzetmeyi karşısındakine ustaca cevap vermek, bir duyguyu görünür kılmak veya mizah oluşturmak için kullanabilir. İncelenen atışmada iki icracının sazla karşılıklı söylemesi ve seyircinin tepki vermesi görsel olarak doğrulanmıştır; gerçek atışmadaki benzetmeleri sıralamak içinse duyulan dizelerin ayrıca kaydedilmesi gerekir.",
-      "guidance": "İlk olarak videodan ALINMAMIŞ kısa bir model benzetmeyle unsurları gösterin. İkinci adımda öğrencilerin dinlediği gerçek dizeleri yazdırıp her biri için dört unsur ve atışmaya katkı tespiti isteyin. Görsel alkış veya sazı belirli bir benzetmenin yarattığı sonucun kanıtı saymayın; ses transkripti depoda bulunmuyor.",
-      "source_locator": "basılı s.142 / PDF s.143 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "Dökümdeki belirgin benzetmeler arasında “Çiçek veren bağ gibiyim”, “Zaman geçen çağ gibiyim”, “Başı duman cananın dağ gibiyim”, “Saban gibi toprakları” ve “Naylon bir balon gibi” ifadeleri vardır. “Gibi” ile kurulan bu benzetmeler bağ, çağ, dağ, saban ve balon imgelerini kullanarak duyguyu ve söyleyiş oyununu somutlaştırır. Şeref Taşlıova’nın “Meydan ay hindi gibi” tekrarında ise abartılı ve mizahi bir imge öne çıkar. Atışmadaki “…-ebilirsen eğer” tekrar kalıbı karşılıklı meydan okuma ve ahenk duygusunu güçlendirir.",
+      "guidance": "Öğrenciler her benzetmede benzeyen, benzetilen, benzetme edatı ve bağlamdaki işlevi belirlesin. Dökümdeki gerçek dizeleri kullanın; imgenin anlam, mizah ve ahenk katkısını dörtlüğün bütünüyle açıklatın.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
-        "Benzetmenin unsurları — öğretim örneği": "Video alıntısı OLMAYAN 'sözün ırmak gibi akması' örneğinde benzeyen söz, benzetilen ırmak, benzetme yönü akıcılık, edat 'gibi'dir. Gerçek atışma dizesinde bu dört unsurun hepsi açık olmayabilir.",
-        "Atışmaya olası katkılar": "Somutlaştırma: soyut niteliği anlaşılır kılma. Mizah: şaşırtıcı ilişkiyle güldürme. Meydan okuma: rakibin sözüne güçlü karşılık verme. Ahenk: ses benzerliğiyle söyleyişi etkili kılma. Her katkı, seçilen gerçek dizeyle ayrıca kanıtlanmalıdır.",
-        "Doğrulanmış performans gözlemi": "Video notlarında sazlı karşılıklı icra, iki kişinin dönüşümlü söyleyişi ve dinleyicilerin alkışı görülür. Görüntü, performans ve dinleyici etkileşimini doğrular; bir dizedeki benzetmeyi doğrulamaz.",
-        "Çözümleme şeması": "Öğrenci tarafından gerçekten duyulup yazılan dize → benzeyen/benzetilen/yön/edat → dizenin işlevi (mizah, imge, cevap) → gerekçe. Doğrulanmış ses dizesi yoksa özgün atışmanın benzetme listesi kesinleştirilmez."
+        "Benzetme örnekleri": [
+          "“Çiçek veren bağ gibiyim” — söyleyici kendisini çiçek veren bağa benzetir.",
+          "“Zaman geçen çağ gibiyim” — zaman/geçiş çağrışımı kurar.",
+          "“Başı duman cananın dağ gibiyim” — sevgili/dağ imgesiyle benzetme kurar.",
+          "“Saban gibi toprakları” — tarımsal imgeyi atışmaya taşır.",
+          "“Naylon bir balon gibi” ve “Meydan ay hindi gibi” — mizahi, şaşırtıcı imgeler kullanır."
+        ],
+        "Atışmaya katkısı": "“Gibi” yapısı ve “…-ebilirsen eğer” redifi dörtlükleri birbirine bağlar; imge, mizah ve meydan okuma etkisi oluşturur.",
+        "Çözümleme": "Her dizede benzeyen ve benzetilen sözcükleri belirleyin; benzetmenin önceki ve sonraki dizelerle nasıl ilişkilendiğini açıklayın."
       },
-      "explanation": "PR #99'un doğru ses kanıtı sınırı korunurken PR #103'teki genel benzetme tanımı, sınıfta doğrudan kullanılabilir çözümlenmiş model ve işlev gerekçelerine dönüştürüldü. Model benzetme açıkça atışmaya ait değildir."
+      "explanation": "Kullanıcının sağladığı dörtlüklerdeki gerçek benzetmeler, tekrar kalıbı ve mizahi imgeler örneklenerek sınıfta doğrudan kullanılabilir bir çözümleme oluşturuldu."
     },
     {
       "question_id": "T2-P142-PERF01",
@@ -63,23 +68,21 @@
       "printed_page": 143,
       "question_no": "2",
       "prompt_summary": "Günlük dil ile atışmadaki dil arasındaki benzerlik ve farklılıkları T diyagramında belirleme",
-      "answer": "Günlük dil ile âşık atışması, karşıdakine seslenme, duygu aktarma ve söz alıp cevap verme yönünden benzerlik gösterir. Farklılık, âşıkların bu karşılıklılığı saz ve dinleyici önündeki şiirsel icrayla gerçekleştirmesidir. T diyagramının benzerlik alanına 'karşılıklı iletişim, cevap verme, günlük yaşamdan konu ve kelimeler'; farklılık alanına 'saz eşliği, ezgili söyleyiş, dörtlük/uyak/ölçü gibi şiirsel örgünün bulunabilmesi' yazılabilir. Saz ve dönüşümlü icra görüntüyle doğrulanmıştır; belirli uyak veya ölçü bu kaydın doğrulanmış dizelerinden çıkarılmadıkça videonun kesin özelliği olarak gösterilmez.",
-      "guidance": "Önce T diyagramına iki benzerlik, iki farklılık yazdırın. Birinci somut farklılığı görüntüden (saz/karşılıklı sahne icrası), diğer şiirsel farkı ise öğrencinin dinleme notundan temellendirin. Yalnız tür tanımından hareketle videodaki tüm dizelerin uyak ve ölçüsünü kesinleştirmeyin.",
-      "source_locator": "basılı s.143 / PDF s.144 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "Günlük dil ile atışma arasında doğrudan seslenme, karşılık verme ve ortak sözcüklerden yararlanma bakımından benzerlik vardır. Atışmada bu alışılmış söz varlığı saz eşliğinde dörtlüklere, benzetmelere ve uyaklı/tekrarlı söyleyişe dönüşür. “Koş koşabilirsen eğer”, “Eş eşebilirsen eğer” ve “Şiş şişebilirsen eğer” tekrarları, konuşmadaki meydan okumayı şiirsel bir kalıpla birleştirir. Bağ, çağ, dağ; toprak ve balon gibi gündelik imgeler de sanatlı söyleyişe taşınır.",
+      "guidance": "T diyagramında günlük dildeki seslenme ve karşılık verme özelliklerini; atışmadaki saz eşliği, dörtlük, benzetme ve “...-ebilirsen eğer” tekrarını ayrı sütunlara yazdırın. Dökümden örnek dize seçip her farkı açıklatın.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
         "Benzerlikler — T diyagramı": [
-          "Günlük konuşmada da atışmada da birine seslenme, söz sırasını alma ve karşılık verme işlevi bulunabilir.",
-          "Her iki kullanım da sevgi, rekabet, kırgınlık veya günlük yaşam gibi insan deneyimlerini anlatabilir.",
-          "Günlük Türkçenin sözcükleri, şiirsel söyleyişin malzemesi olabilir; özel dize kelimeleri dinlenip doğrulanmalıdır."
+          "Karşılıklı iletişim, seslenme ve cevap verme vardır.",
+          "Gündelik sözcükler ve doğa/yaşamdan imgeler kullanılır."
         ],
         "Farklılıklar — T diyagramı": [
-          "Videoda görsel olarak doğrulanan fark: İki icracı sazla ve dinleyici önünde dönüşümlü icra yapar; sıradan sohbet bu sahne yapısını gerektirmez.",
-          "Âşık şiirinde ölçü, uyak, tekrar, doğaçlama ve benzetme estetik düzen oluşturabilir; bu kayda özgü örnekler ancak duyulup yazıya geçirilen dizelerle teyit edilir.",
-          "Günlük konuşma çoğu zaman serbest söz dizimi ve konuşma ritmiyle ilerler; atışmada müzikli icra ve şiirsel düzen amaçlanır."
-        ],
-        "Kanıt ve değerlendirme": "T diyagramındaki görsel kanıt (saz, sahne, karşılıklılık) ile tür bilgisine dayalı olası dil özellikleri (ölçü, uyak, doğaçlama) farklı düzeydedir. Her örneğin hangi düzeyde bulunduğu belirtilmelidir."
+          "Atışma saz eşliğinde ve dörtlükler hâlinde icra edilir.",
+          "Benzetme, uyak ve “…-ebilirsen eğer” redifi söyleyişe ahenk ve meydan okuma katar.",
+          "“Bağ/çağ/dağ” ve “koş/eş/şiş” ses oyunları şiirsel düzen oluşturur."
+        ]
       },
-      "explanation": "Eski ses dökümündeki -ebilirsen eğer kapanışı ve altı dörtlük iddiası doğrulanamadı; bu nedenle geri alınmadı. Öğrencinin doldurabileceği örnek T diyagramı, gözlenmiş icra ile tür düzeyindeki şiir özelliklerini ayırarak kuruldu."
+      "explanation": "T diyagramı, günlük konuşmayla karşılıklı söyleyişin ortak yönlerini ve dökümde görülen saz, dörtlük, benzetme ve redif özelliklerini karşılaştırır."
     },
     {
       "question_id": "T2-P143-Q03",
@@ -87,15 +90,15 @@
       "printed_page": 143,
       "question_no": "3",
       "prompt_summary": "Âşıkların dili kullanma biçimi hakkında çıkarımlar",
-      "answer": "Âşıkların dili kullanımı, dinleyici karşısında karşılıklı söz üretme ve etki oluşturma amacı taşır. İncelenen görüntülerde iki icracının sazla dönüşümlü söylemesi, karşı tarafa sözle cevap vermenin bu geleneğin belirgin bir performans yönü olduğunu gösterir. Dil düzeyinde ise âşıklar gündelik kelimeleri ritim, imge, uyak, nükteli söz ve kimi zaman doğaçlamayla estetik bir söyleyişe dönüştürebilir. Bu son özelliklerin hangilerinin videodaki belirli dizelerde bulunduğu ancak sözcüklerin dinlenip doğrulanmasıyla gösterilebilir; görüntü, mizahın tam ifadesini veya dize düzeltmesini tek başına kanıtlamaz.",
-      "explanation": "PR #103'teki genel yorumlar soru köküne özgü gözlem–çıkarım zincirine dönüştürüldü. Sesli performansın kelime ve uyak özellikleri doğrulanmış gibi sunulmadı.",
-      "guidance": "Çıkarımı 'ne gördüm/ne duydum → nasıl yorumluyorum → hangi etkiyi oluşturuyor?' üçlüsüyle kurdurun. Performansa ait sırayla söyleme bilgisi görüntüyle desteklenir; dize içi söz oyununu öğrencinin gerçek dinleme notuyla doğrulatın. Önceki cevapta geçen düzeltme repliğini veya sahne katılımcısının adını tam ses kanıtı olmadan geri getirmeyin.",
-      "source_locator": "basılı s.143 / PDF s.144 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "Âşıklar gündelik sözcükleri benzetme, ses benzerliği, tekrar ve mizahla şiirsel bir atışmaya dönüştürür. “…-ebilirsen eğer” kalıbı her dörtlüğün sonunda tekrarlanırken “koş”, “eş”, “iç”, “şiş” gibi fiillerle söz oyunu ve meydan okuma sürdürülür. Bağ/çağ/dağ, saban/toprak ve balon/hindi imgeleri günlük hayattan alınır; kafiye ve tekrar bunları akılda kalıcı kılar. Çobanoğlu’nun bir dizeyi “Düştüysen bilirsen eğer” diye karıştırıp sonra “Koş koşabilirsen eğer” biçiminde düzeltmesi de canlı icradaki doğaçlama ve mizahi etkileşimi gösterir.",
+      "explanation": "Yanıt, kullanıcı dökümündeki tekrar, söz oyunu, benzetme ve dizeyi düzeltme anını dil kullanımının somut örnekleri olarak ele alır.",
+      "guidance": "Dildeki özelliği gerçek dizeyle ve etkisiyle eşleştirin: tekrar → ahenk/bağlayıcılık; gündelik imge → somutlaştırma; beklenmedik benzetme → mizah; dönüşümlü cevap → etkileşim. Düzeltme anını da yalnız dökümde verildiği biçimde kullanın.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
-        "Doğrudan gözlenen söyleyiş ortamı": "Sahnede sazlı ve dönüşümlü icra vardır; iki icracının sırayla söz alması ve dinleyicinin alkışı gözlenebilir. Bu gözlem, gerçek zamanlı karşılıklılığa dair dayanak sağlar.",
-        "Dilsel özellik için kanıt gereği": "Doğaçlama, mecaz, nükteli cevap, uyak veya dize tekrarı gibi dil özelliklerinin hangi sözde gerçekleştiği görsel karelerden saptanamaz. Bunlar atışma türü bakımından incelenebilecek özelliklerdir, bu kaydın onaylı mısraları değildir.",
-        "Örnek çıkarım biçimi": "Gözlem: İcracılar sırayla söylemektedir → çıkarım: karşılıklı söz üretme ve rakibe cevap verme önemlidir → olası işlev: dinleyiciyle etkileşim, sanatçıların söz ustalığını sergilemesi. İşlev, görsel kanıtın kapsamını aşmadan yorumlanmalıdır.",
-        "Sınıf sunumunda gerekçe": "Öğrenci önce gerçekten duyduğu bir ifadeyi not eder; ardından ses/kelime tercihini ve etkisini gerekçelendirir. Söz kaydı yoksa yalnız performans biçimi hakkında kesin gözlem yapılabilir."
+        "Doğrudan içerik": "İki âşık karşılıklı dörtlükler söyler; bağlama eşliği vardır.",
+        "Söz varlığı ve söyleyiş": "Dökümde “bağ, çağ, dağ”, “toprak, saban”, “balon” gibi sözcükler ve “…-ebilirsen eğer” kalıbı yer alır.",
+        "Söz oyunları": "“Koş koşabilirsen”, “eş eşebilirsen”, “şiş şişebilirsen” tekrarları ses ve anlam oyunuyla atışmayı ilerletir.",
+        "Etkisi": "Benzetmeler imge kurar, tekrarlar ahenk sağlar, karşılıklı meydan okuma da dinleyicinin ilgisini canlı tutar."
       }
     },
     {
@@ -104,16 +107,15 @@
       "printed_page": 143,
       "question_no": "4",
       "prompt_summary": "İsmet Özel'in Münacaat şiirinin dili ile âşık şiirlerinin dilini karşılaştırma",
-      "answer": "İsmet Özel'in kitapta basılı *Münacaat* şiirinde 'kaldı bu silinmez yaşamak suçu üzerimde' sözü, yaşama deneyimini suçluluk çağrışımıyla ilişkilendiren alışılmadık ve yoğun bir bağdaştırmadır. 'tütmesi gereken ocak nerde?' sorusu ise ocak imgesiyle ev, aidiyet ve süreklilik arayışını düşündürebilir. Âşık atışmasında da dil imge ve söz sanatlarıyla güçlenebilir; fakat burada şiir dinleyici önünde sazla ve karşılıklı icra edilir. **Benzerlik:** Her ikisi gündelik dilin ötesinde duygu ve düşünceyi sanatlı sözle aktarabilir. **Farklılık:** *Münacaat*ın basılı dizelerinde çağrışımı yoğun bireysel sorgulama; incelenen atışmanın görüntülerinde ise karşılıklı, sazlı ve topluluk önündeki icra belirgindir. Video dizeleri doğrulanmadığından belirli uyak veya mecazları kesin olarak karşılaştıramıyoruz.",
-      "explanation": "PR #99 ile atışmaya ait doğrulanmamış dizeler kaldırılırken kitabın s.143'te basılı gerçek Münacaat şiirinin çözümlemesi de kaybolmuştu. İki basılı dize, imge, bireysel sorgulama ve icra bağlamı temelinde öğretim cevabına geri kazandırıldı; video şiiri olarak yanlış kaynak gösterilmedi.",
-      "guidance": "Tahlili iki kanıt türüyle yaptırın: s.143 basılı *Münacaat* dizesini edebî dil yönünden çözümleme ve atışmanın gözlenen sahne/icra biçimini açıklama. Bir benzerlik ve bir farklılığı gerekçelendirtin; öğrenci atışmadan gerçek dize notu aldığında o dizenin imgesini de karşılaştırabilir. Dil çeşitliliğini estetik üstünlük hiyerarşisine dönüştürmeyin; ses transkripti yoktur.",
-      "source_locator": "basılı s.143 / PDF s.144 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "İsmet Özel’in basılı *Münacaat* şiiri ile kullanıcı dökümündeki âşık atışması, duyguyu sanatlı dille aktarmaları bakımından karşılaştırılabilir. *Münacaat*’ta “kaldı bu silinmez yaşamak suçu üzerimde” dizesi yoğun bireysel sorgulamayı; “tütmesi gereken ocak nerde?” dizesi ev, aidiyet ve süreklilik çağrışımını kurar. Atışmada ise bağ/çağ/dağ, balon ve toprak gibi somut imgeler; mizah, redif ve karşılıklı söz üretimi öne çıkar. *Münacaat* basılı bireysel şiir olarak okunurken atışma sazla ve iki âşığın dönüşümlü söyleyişiyle sahnelenir.",
+      "explanation": "Basılı Münacaat dizeleri ile kullanıcı dökümündeki gerçek atışma örnekleri; imge, duygu ve sunuluş biçimleri üzerinden karşılaştırıldı.",
+      "guidance": "Basılı *Münacaat* dizelerini imge ve duygu yönünden çözümleyin; atışma dökümünden gerçek benzetme veya redif örnekleri seçtirin. Bir benzerlik (sanatlı ve çağrışımlı anlatım), bir farklılık (bireysel şiir / sazlı karşılıklı icra) gerekçelendirilmelidir.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
-        "Münacaat — basılı şiirden çözümleme": "'kaldı bu silinmez yaşamak suçu üzerimde' sözünde yaşamak ve suç sözcüklerinin beklenmedik birlikteliği yoğun kişisel sorgulama oluşturur. 'tütmesi gereken ocak nerde?' sorusunda ocak; ev, canlılık veya aidiyet gibi çağrışımlara açılır. Bu dizeler basılı s.143'ten doğrulanabilir.",
-        "Atışma — gözlenen icra": "Görüntü incelemesinde iki sanatçı saz eşliğinde, dinleyici karşısında sırayla söylemektedir. Bu, sözün sahnede karşılıklı kurulması bakımından *Münacaat*ın basılı bireysel sesinden farklı bir sunuluş biçimidir.",
-        "Benzerlik — şiir dili": "Her iki şiir biçiminde de bir duygunun düz açıklama yerine benzetme, mecaz, çağrışım veya ses düzeniyle aktarılması mümkündür. Münacaat için somut basılı dize gösterilir; atışmaya ait belirli söz sanatı ancak dinlenmiş dizeyle saptanır.",
-        "Farklılık — dilin amacı ve bağlamı": "Münacaat'taki hitap ve kişisel sorgulama ile âşık atışmasının karşılıklı söyleme ve seyirciyle kurulan etkileşim yönü karşılaştırılabilir. Modern şiir 'ağır', halk şiiri 'basit' diye değersel sıralama yapılmamalıdır.",
-        "Kanıt sınırı": "Basılı Münacaat dizeleri doğrudan metin kanıtıdır. Atışmanın görüntüleri icra biçimini kanıtlar; doğrulanmış sözlü transkript olmadığı için o videoya belirli benzetme, uyak veya dize atfedilmez."
+        "Münacaat — basılı şiir": "Yaşamak/suç birlikteliği bireysel sorgulama; ocak imgesi ev ve aidiyet arayışı çağrıştırır.",
+        "Atışma — kullanıcı dökümü": "Benzetme, mizah, “…-ebilirsen eğer” redifi ve karşılıklı söyleyiş belirgindir.",
+        "Benzerlik": "Her iki metin de düz anlatım yerine imge ve çağrışımlı dil kullanır.",
+        "Farklılık": "Münacaat basılı bireysel şiir; atışma sazla, iki söyleyicinin sırayla karşılık verdiği canlı bir performanstır."
       }
     },
     {
@@ -209,16 +211,16 @@
       "printed_page": 144,
       "question_no": "Çözümleyebilme",
       "prompt_summary": "Âşık atışmasının çok modlu unsurlarını (mekân, beden dili, söyleyiş tarzı, estetik) belirleme",
-      "answer": "Görüntü notunda iki sazlı icracının sahnede karşılıklı ve nöbetleşe yer aldığı, çekimlerin bir icracıdan diğerine geçtiği ve seyircilerin alkışladığı kaydedilmiştir. Zihin haritası şöyle doldurulabilir: **Mekân:** icracıların sahnesi ve dinleyici alanı; **Beden dili:** sazı tutup çalma ve dönüşümlü kadraja girme gibi görüntüde kaydedilen hareketler; **Söyleyiş tarzı:** iki icracının sırayla söz alarak saz eşliğinde söylemesi; **Estetik:** söz ve müziğin birlikte sunuluşu, dönüşümlü icranın oluşturduğu karşılıklılık ve dinleyiciyle etkileşim. Dizelerin ölçüsü, esprilerin içeriği veya sözlü tekrarlar yalnız görüntülerden kesinleştirilemez.",
-      "guidance": "S.144'teki zihin haritasının dört alanını ayrı doldurtun: her alanda önce 'doğrudan gördüm/duydum', ardından 'nasıl yorumluyorum?' sorularını kullandırın. Mekânı dekor markasıyla, beden dilini doğrulanmamış jestlerle, estetiği kanıtlanmamış uyak/dizelerle doldurmayın. Öğrencinin sınıfta yaptığı tam izleme notlarını tarih ve sahneyle eşleştirin; arşivde ses transkripti yoktur.",
-      "source_locator": "basılı s.144 / PDF s.145 — Çözümleyebilme zihin haritası / kaynak QR basılı s.140: 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "Zihin haritası şöyle doldurulabilir: **Mekân:** saz eşliğinde sunulan sahne ve dinleyici alanı. **Beden dili:** âşıkların bağlamalarını çalıp sırayla söylemeleri; dökümde Çobanoğlu’nun dizeyi şaşırıp gülümsemesi ve seyircilerin alkışlaması da belirtilir. **Söyleyiş tarzı:** dönüşümlü dörtlükler, “…-ebilirsen eğer” redifi, benzetmeler ve tekrarlar. **Estetik:** saz, uyak/tekrar, mizah, söz ustalığı ve seyirci tepkisinin oluşturduğu bütünlük.",
+      "guidance": "Dört başlığın her birine dökümden somut bir unsur seçtirin: sahne ve seyirci; bağlama ve icracı etkileşimi; dörtlük/redif/benzetmeler; ahenk ve mizah. Öğrenci gözlem ile bu unsurların etkisine dair yorumunu ayırsın.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
-        "Mekân": "İki sazlı icracının bulunduğu sahne, performansın gerçekleştiği ortak alandır; kadraj değişimleri ve dinleyiciye dönük sunum, atışmanın canlı ortamını gösterir. Arka panonun tam yazısı veya çalgıların markaları görsel notta doğrulanmış değildir.",
-        "Beden Dili": "Sazın tutulması ve çalınması, icracıların sahnede dönüşümlü görünmesi doğrudan görsel gözlemdir. Yüz ifadeleri, rakibe yönelik belirli bir jest veya dizeyi şaşırınca verilen tepki, örnek kare notundan kesinleştirilemez.",
-        "Söyleyiş Tarzı": "İki icracı bağlama eşliğinde nöbetleşe söylemektedir; bu, karşılıklı söz üretiminin gözlenebilir performans biçimidir. Dizelerin sayısı, ölçüsü, uyakları ve belirli kapanış kalıpları henüz ses dökümünden doğrulanmadı.",
-        "Estetik": "Sazın ve insan sesinin birlikte sunumu ile karşılıklı icra düzeni bir performans bütünlüğü oluşturur. Dinleyici alkışı etkinlikte bir tepkinin bulunduğunu gösterir; alkışın hangi dizedeki nükteye verildiği saptanmamıştır."
+        "Mekân": "Sazlı canlı icranın yapıldığı sahne ve dinleyici alanı.",
+        "Beden Dili": "İki âşık sırayla bağlama çalar; bir dizedeki şaşırma ve gülümseme ile seyirci alkışı aktarılmıştır.",
+        "Söyleyiş Tarzı": "Karşılıklı dörtlükler, tekrar edilen “…-ebilirsen eğer” redifi, benzetme ve fiil oyunları.",
+        "Estetik": "Söz ile sazın birlikteliği; uyak, tekrar ve mizahın seyirciyle kurduğu etkileşim."
       },
-      "explanation": "PR #99'un bilinmeyen dize ve replikleri kaldırma kararı korundu; önceki haritanın somut sınıflandırma işlevi dört ayrı gözlem–yorum eşleştirmesiyle geri kazanıldı."
+      "explanation": "Haritanın dört alanı, kullanıcı dökümündeki performans akışı ve dörtlük örnekleriyle somutlaştırıldı; görüntü gözlemleri de ayrı tutuldu."
     },
     {
       "question_id": "T2-P145-PERF01",
@@ -226,18 +228,18 @@
       "printed_page": 145,
       "question_no": "1",
       "prompt_summary": "Âşık atışmasını altı şapka tekniğiyle çok boyutlu değerlendirme",
-      "answer": "Görüntü notunda iki âşığın sazla dönüşümlü söylemesi ve seyirci alkışı doğrulanmıştır. Kitabın altı şapka sorularına örnek yanıtlar: **Beyaz:** İki icracı karşılıklı, saz eşliğinde söylemektedir; sözlerin tam iletisi için dinleme notu gerekir. **Kırmızı:** Bu karşılıklılık bende merak ve coşku uyandırabilir. **Siyah:** Bir sözün küçümseme veya kırıcı meydan okuma içerip içermediği ancak o söz duyularak değerlendirilebilir; olumsuz ileti saptanmadıysa bu da gerekçeyle söylenir. **Sarı:** Karşılıklı söyleyiş ve saz eşliği birlikte üretme ve dinleyici katılımı açısından olumlu görülebilir. **Yeşil:** Saygıyı koruyan yeni bir karşılık dörtlüğü tasarlayabilirim. **Mavi:** Gözlem, kişisel duygu, eleştiri ve önerileri birlikte tartıp sonucumu belirtirim. Bunlar kaynak düzeyleri ayrılmış örnek öğrenci yanıtlarıdır.",
-      "guidance": "Altı gruba s.145'teki altı özgün soruyu ayrı ayrı dağıtın; özellikle beyaz şapkayı yalnız 'nesnel envanter', siyah şapkayı yalnız 'transkript eksikliği' diye geçiştirmeyin. İleti ve eleştiri için gerçekten duyulmuş bir söz, duygu için kişisel gerekçe, yaratıcı şapka için öğrencinin özgün üretimi gerekir. Görüntüden hareketle konuşmacıya birebir söz atfetmeyin; sözlü ses transkripti depoda yok.",
-      "source_locator": "basılı s.145 / PDF s.146 — Altı Şapka tekniği / kaynak QR basılı s.140: 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "Örnek altı şapka değerlendirmesi: **Beyaz:** İki âşık bağlama eşliğinde dönüşümlü dörtlükler söyler; “…-ebilirsen eğer” kalıbı yinelenir. **Kırmızı:** Karşılıklı söz oyunları merak, eğlence veya coşku uyandırabilir. **Siyah:** Bazı ifadeler dinleyici için ilk anda anlaşılması güç olabilir; “diş bişebilirsen” gibi aktarılan bir dize dökümünde farklı işitme olasılığı not edilmiştir. **Sarı:** Benzetme, uyak, saz ve karşılıklı doğaçlama geleneği canlı tutar. **Yeşil:** Öğrenci aynı redif yapısını kullanarak saygılı ve mizahi yeni bir dörtlük oluşturabilir. **Mavi:** İçerik, biçim, kişisel tepki ve geliştirme önerisini birlikte değerlendirip sonucu özetler.",
+      "guidance": "Altı şapkayı birbirinden ayırın. Beyaz şapkada dökümdeki olguları; kırmızıda kişisel duyguyu; siyahta gerekçeli güçlüğü; sarıda olumlu yönleri; yeşilde özgün üretimi; mavide genel değerlendirmeyi isteyin. Öğrenciler farklı ve gerekçeli yorumlar sunabilir.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
-        "Beyaz Şapka": "Soru: 'Aktarılmak istenen ileti nedir?' Gözlem: İki sazlı icracı karşılıklı söylemektedir. Örnek ön yorum: Söz ustalığını karşılıklı sergileme ön plandadır. Ancak kesin mesajı, duyulan sözlerden gerekçe göstererek belirlemek gerekir; görüntü tek başına metnin iletisini kanıtlamaz.",
-        "Kırmızı Şapka": "Soru: 'Ne hissettiniz, neden?' Örnek öznel yanıt: 'Sırayla verilen sözlü karşılıkları görmek bende merak uyandırdı; dinleyici alkışı coşku hissimi artırdı.' Bu öğrencinin olası kişisel tepkisidir, herkesin duyduğu duygu değildir.",
-        "Siyah Şapka": "Soru: 'Olumsuz iletiler neler?' Öğrenci gerçekten duyduğu dizede alay, kırıcı hitap, önyargı veya aşağılayıcı bir ifade varsa metinle kanıtlayıp etkisini tartışabilir. Yoksa 'Dinlediğim bölümde gerekçelendirebileceğim olumsuz bir ileti saptamadım' diyebilir. Kanıt yok diye doğrudan olumsuz ileti varmış gibi örnek uydurulmaz.",
-        "Sarı Şapka": "Soru: 'İyimser iletiler neler?' Örnek gerekçeli yorum: Karşılıklı icranın sürmesi ve dinleyicilerin katılımı, kültürün birlikte yaşatılmasının değerini düşündürebilir. Bu, görüntüye dayalı olumlu yorumdur; belirli bir sözel ileti olduğu iddiası değildir.",
-        "Yeşil Şapka": "Soru: 'Siz nasıl devam ettirirdiniz?' Örnek yaratıcı üretim hedefi: Âşıklık atışmasının karşılıklı cevap düzenini izleyen, mizahı korurken karşı tarafı incitmeyen özgün bir dörtlük hazırlayıp sazlı veya sözlü sunmak. Yazılan dörtlük videonun parçası sayılmaz.",
-        "Mavi Şapka": "Soru: 'Genel düşünceniz?' Örnek sonuç: 'Saz, söz alma sırası ve izleyici etkileşimi gösterinin canlı yönünü güçlendiriyor; hangi iletilerin olumlu/olumsuz olduğunu değerlendirmek için dizeleri ayrıca dinlemeliyim.' Böylece diğer beş şapkanın gözlem ve görüşleri birlikte tartılır."
+        "Beyaz Şapka": "İki söyleyici, saz eşliği, dörtlükler, tekrar edilen redif ve seyirci alkışı dökümde yer alır.",
+        "Kırmızı Şapka": "“Söz oyunları bende eğlence ve merak uyandırdı; çünkü söyleyiciler aynı kalıba farklı fiillerle karşılık veriyor.”",
+        "Siyah Şapka": "Bazı eski veya yöresel sözcükler, ayrıca dökümde farklı işitiliş ihtimali belirtilen ilk dize, dinleyici için açıklama gerektirebilir.",
+        "Sarı Şapka": "Saz, karşılıklı cevap, benzetme ve tekrar geleneğin estetik yönünü ve canlı aktarımını gösterir.",
+        "Yeşil Şapka": "Aynı redif yapısıyla karşı tarafa saygıyı koruyan özgün bir dörtlük yazıp sunmak.",
+        "Mavi Şapka": "Dökümdeki dil, saz, mizah, dinleyici tepkisi ve kişisel değerlendirmeyi bir sonuçta birleştirmek."
       },
-      "explanation": "PR #99 öncesindeki doğrulanmamış dize ve sahne düzeltme anlatıları çıkarılmaya devam ediyor. Altı şapkanın altı ayrı **kitap sorusuna** karşılık veren somut, kanıt düzeyi belirtilmiş örnek yanıtlar geri kazandırıldı.",
+      "explanation": "Altı şapka örnekleri, kullanıcı dökümündeki gerçek söz, sazlı karşılıklı söyleyiş, mizah ve seyirci tepkisini gözlem, kişisel duygu ve öneri başlıklarında sınıflandırır.",
       "activity_name": "Altı Şapka"
     },
     {
@@ -280,22 +282,23 @@
       "printed_page": 147,
       "question_no": "1",
       "prompt_summary": "Atışmaya değer katan unsurlar ile söyleyicinin metne katkısını değerlendirme",
-      "answer": "**Âşık atışmasına değer katan unsurlar:** Saz eşliğinde canlı söyleyiş, iki icracının sırayla cevaplaşması ve dinleyiciyle kurulan etkileşimdir. Görsel kayıtta icracıların dönüşümlü performansı ve seyirci alkışı doğrudan gözlenir. **Söyleyicinin metne katkısı:** Aynı sözler farklı vurgu, ezgi, tempo ve beden diliyle başka bir etki kazanabilir; bu etkinin hangi dizede nasıl oluştuğu gerçek dinleme notuyla gösterilmelidir. Örnek kişisel değerlendirme: 'Sazla karşılıklı söyleyiş, atışmayı tek kişinin şiir okumasından daha canlı bir iletişime dönüştürdüğü için ilgimi çekti.' Söz sanatlarının veya belirli bir mısranın bu videoda yer aldığı, ses kanıtı olmadan söylenemez.",
-      "guidance": "S.147'deki iki sütunu gerçekten iki ayrı görev olarak kullandırın. Solda metne/performance değer katan öğeyi, sağda onu söyleyicinin nasıl görünür veya işitilir kıldığını isteyin. Her öğrenci bir **gözlem ve gerekçeli kişisel değerlendirme** sunmalı. Sesin doğrulanmadığı dize/söz oyunu öğelerini videoya atfetmeyin; somut müzik/vurgu örneği için gerçek dinleme kanıtı gereklidir.",
-      "source_locator": "basılı s.147 / PDF s.148 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+      "answer": "Atışmaya değer katan unsurlar; iki âşığın karşılıklı söz üretmesi, saz eşliği, benzetmeler, uyak ve “…-ebilirsen eğer” redifiyle kurulan ahenk, ayrıca mizahi cevaplaşmadır. Söyleyiciler metne yalnız dizeleri seslendirerek değil, anlık cevap ve doğaçlama, tekrar, ses ve saz icrası yoluyla katkı verir. Kullanıcı dökümünde Çobanoğlu’nun bir dizeyi şaşırıp gülümseyerek düzeltmesi ve seyircilerin alkışlaması bu canlı etkileşimin örneğidir.",
+      "guidance": "Sol sütunda metne değer katan söz, imge, uyak, tekrar ve sazı; sağ sütunda söyleyicinin karşılık üretme, doğaçlama ve icrasını yazdırın. Her maddeyi p140 dökümündeki somut bir dize veya olayla gerekçelendirin.",
+      "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
         "Âşık Atışmasına Değer Katan Unsurlar": [
-          "Görsel olarak doğrulanan saz eşliği ve iki icracının nöbetleşe söylemesi: sözün karşılıklı üretilmesini ve icranın canlı yönünü gösterir.",
-          "Görsel olarak doğrulanan seyirci alkışı: dinleyici tepkisinin performansta yer aldığını gösterir; alkışın belirli bir dizeye neden verildiği bilinmiyor.",
-          "Ölçü, kafiye, nükte veya imge gibi metinsel özellikler atışmaya değer katabilir; bu videodaki somut örnekleri yalnız doğrulanmış dinleme notuyla saptanır."
+          "Bağlama eşliği ve iki icracının karşılıklı dörtlükleri.",
+          "Benzetmeler, “…-ebilirsen eğer” redifi, ses/fiil oyunları ve mizah.",
+          "Dinleyici alkışı ve canlı etkileşim."
         ],
         "Söyleyicinin Metne Katkısı": [
-          "İki icracının sözü sırayla üstlenmesi, atışmayı karşılıklı bir söz ve sahne ilişkisine dönüştürür.",
-          "Ses tonu, vurgu, duraklama ve ezgi söylenenin anlamını/etkisini değiştirebilir; ancak bu klibe özgü kesin bir vurgu örneği arşivlenmiş değildir.",
-          "Örnek öznel değerlendirme: 'Karşılıklı sazlı icra ve seyircinin tepkisi, benim için atışmanın etkileyiciliğini artırdı.' Bu bir öğrenci yorumu, doğrulanmış video repliği değildir."
+          "Karşılıklı cevap üretmek ve önceki dizeye bağlanmak.",
+          "Dörtlükleri saz, tekrar ve uyakla icra etmek.",
+          "Anlık şaşırma ve düzeltme gibi performans anlarıyla söyleyişi canlı kılmak.",
+          "Örnek değerlendirme: “Söz ve sazın karşılıklı ilerlemesi, atışmayı hem şiir hem de sahne etkileşimi hâline getiriyor.”"
         ]
       },
-      "explanation": "PR #103'te geri gelen genel açıklama, kitapta iki sütunla istenen metin değeri ve söyleyici katkısı ayrımına göre somutlaştırıldı. Eski dökümün '-ebilirsen eğer', 'bağ/çağ/dağ' ve dizeyi düzeltme iddiaları doğrulanmadan geri eklenmedi."
+      "explanation": "Yanıt, kullanıcı dökümündeki benzetme, redif, saz, karşılıklı cevap üretimi ve performans anlarını kitapta istenen iki değerlendirme sütununa yerleştirir."
     },
     {
       "question_id": "T2-P147-PERF01",

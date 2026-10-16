@@ -47,7 +47,9 @@
       ],
       "related_text_ids": [
         "G11-T1-P82-TEXT01",
-        "G11-T1-P83-VIS01"
+        "G11-T1-P83-VIS01",
+        "G11-T1-P83-VID01",
+        "G11-T1-P83-VID02"
       ],
       "source": {
         "printed_page": 83,
@@ -158,7 +160,9 @@
       "question_number": "13",
       "related_text_ids": [
         "G11-T1-P82-TEXT01",
-        "G11-T1-P83-VIS01"
+        "G11-T1-P83-VIS01",
+        "G11-T1-P83-VID01",
+        "G11-T1-P83-VID02"
       ],
       "subquestions": [],
       "options": [],
@@ -182,6 +186,38 @@
         "pdf_page": 84
       },
       "order": 7
+    },
+    {
+      "id": "G11-T1-P83-VID01",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "OGM2025TDE118312.mp4",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı Olvido şiiri dökümü; kullanıcı sesin Ahmet Muhip Dıranas'a ait olduğunu doğrulamıştır.",
+      "text": "Şiir seslendirmesi (dize zaman damgaları kullanıcı metninde verilmemiştir):\n\n“Hoyrattır bu akşamüstüler daima.\nGün saltanatıyla gitti mi bir defa,\nYalnızlığımızla doldurur her yeri.\nBir renk çığlığı içinde bahçemizden,\nBir el çıkarmaya başlar bohçamızdan\nLavanta çiçeği kokan kederleri.\nHoyrattır bu akşamüstüler daima.\nDalga dalga hücum edip pişmanlıklar,\nUnutuşun o tunç kapısını zorlar;\nVe ruh atılan oklarla deliktir.\nİşte doğduğun eski evdesin birden,\nYolunu gözlüyor lamba ve merdiven,\nSusmuş ninnilerle gıcırdayan beşik\nVe cümle yitikler, mağluplar, mahzunlar...”",
+      "source": {
+        "printed_page": 83,
+        "pdf_page": 84,
+        "media_file": "OGM2025TDE118312.mp4",
+        "provenance": "user_supplied_transcript"
+      },
+      "order": 8
+    },
+    {
+      "id": "G11-T1-P83-VID02",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "OGM2025TDE118312.mp4",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı Olvido videosundaki başlık, logo ve alt bant yazıları dökümü.",
+      "text": "Açılış başlığı (00:00–00:02): “ŞAİRİN SESİNDEN”; “Ahmet Muhip Dıranas - 'Olvido'”.\n\nKanal logosu: Ekranın sağ üst köşesinde “TRT 2” logosu.\n\nAlt bant (00:07–00:12): “Ahmet Muhip Dıranas”; “'Olvido'”.",
+      "source": {
+        "printed_page": 83,
+        "pdf_page": 84,
+        "media_file": "OGM2025TDE118312.mp4",
+        "provenance": "user_supplied_transcript"
+      },
+      "order": 9
     }
   ]
 }

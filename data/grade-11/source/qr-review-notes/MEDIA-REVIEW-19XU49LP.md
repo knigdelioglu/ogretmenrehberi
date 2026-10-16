@@ -2,7 +2,7 @@
 
 - **Karekod:** Basılı s.129 / PDF s.130, özgün EBA `2d18e79ed46861b363ef8affbfefcecb` (kitap PDF bağlantısından doğrulandı).
 - **Drive video adayı:** `19XU49LP.mp4`, yaklaşık **02:37**, görüntüde TRT ve *Dünyadaki Türkiye* program işareti.
-- **Doğrulama:** Buradaki 10 saniye aralıklı örnek görüntüler klibe aittir. Dosyanın özgün EBA bağlantısından alındığı ve konuşmaların kelimesi kelimesine içeriği henüz doğrulanmadı. **Ses transkripti değildir.**
+- **Kullanıcı dökümü:** Sunucu açılışı, VTR dış sesi ve ekrandaki metinler kullanıcı tarafından sağlanıp p.129 sayfa JSON'una eklendi. Aşağıdaki tablo 10 saniye aralıklı örnek görüntülerdir. MP4'ün özgün EBA bağlantısından indirme kökeni ayrı bir dosya bilgisidir.
 
 | Yaklaşık zaman | Videoda görülen |
 | --- | --- |
@@ -23,4 +23,4 @@
 
 ## Kalanlar
 
-Konuşmacıların sözleri; tarihî yapılar ve kültürel katkılar arasındaki neden-sonuç bağları; videonun EBA kimliği ile MP4 dosyasının köken doğrulaması; tam ses/görüntü taraması.
+Görsel tablonun kapsamı kısmi örnek karelerle sınırlıdır. Konuşma dökümü p.129 sayfa JSON'unda yer alır; EBA kimliği ile MP4 dosyasının kökeni ayrı kaynak alanlarında tutulur.

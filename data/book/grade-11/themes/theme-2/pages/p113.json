@@ -139,6 +139,38 @@
       }
     },
     {
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49LT.mp4",
+      "source": {
+        "printed_page": 113,
+        "pdf_page": 114,
+        "media_file": "19XU49LT.mp4",
+        "provenance": "user_supplied_transcript"
+      },
+      "id": "G11-T2-P113-VID01",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı sözlü anlatım dökümü; zaman aralıkları sunulduğu biçimde korunmuştur.",
+      "text": "00:41–01:03 — “Üste mavi gök çökmedikçe, yerde yağız yer delinmedikçe, senin ilini ve töreni kim bozabilir? Evet, bu anlamlı sözlerin yazdığı, tarihe damgasını vuran Orhun Vadisi'ndeyim. Şu an Bilge Kağan Anıtı'na doğru yürüyorum. Yaklaşık 1300 yılı devirmiş bu taşlar, hem Türk tarihi açısından hem de dünya tarihi açısından çok önemli.”\n\n01:30–02:01 — “Muharrem Ergin'in deyimiyle, 'bir kavmi bir millet yapan' abidelerin önündeyiz. Türk adının ilk kez kullanıldığı bir diğer abide de Bilge Kağan'ın 732 yılında yaptırdığı Kül Tigin Abidesi. Abide, 38 harfli Göktürk alfabesiyle yazılmış. Ve abide, bir kaplumbağa kaidesinin üzerine oturtulmuş. Kaplumbağa, Göktürklerde uzun ömrü ve bereketi sembolize ediyor.”\n\n02:44–03:38 — “Dışarıda gördüğümüz Bilge Kağan ve Kül Tigin anıtlarının orijinalleri doğa şartlarından korunmak için bu müzede saklanıyor. 732 yılında yapılan Kül Tigin Anıtı ve 735 yılında yapılan Bilge Kağan Anıtı. Bu anıtlar birer siyasetname niteliğinde, bu yüzden çok önemli. Bize bu zamana kadar öğrendiğimiz, Moğollardan ve Çinlilerden öğrendiğimiz Türk tarihini kendi dilimizden, kendi şeklimizle anlatıyor. Anıtlar ilk kez 1889 yılında Yadrintsev tarafından bulunuyor ve Radloff, Thomsen tarafından çözümlemesi yapılıyor. Çözümlemesi yapılırken en önemli unsur, arkada yazılan Çin harfleri. İşte bu harfler, kitabelerin çözülmesinde epey yardımcı olmuş. Ayrıca bu çözümlemede bu kitabelerin Türklere ait olduğunu bildiren en önemli kelime, 'Tengri' kelimesi.”\n\n03:43–04:19 — “2001 yılında yapılan kazılarda bulunan Bilge Kağan'ın altın tacını görüyoruz şu an. 6. ve 8. yüzyıldan kaldığı biliniyor tacın. Ayrıca müzede birçok balbal, birçok aslan heykeli, taş heykel, hepsini ayrı ayrı muhafaza edildiğini görüyoruz. Ve TİKA'ya tüm bu katkılarından dolayı teşekkür ederken, dünyanın dört bir yanında olduğu gibi burada da Moğolistan'da da kendi milli kültürüne sahip çıktığı için, kendi tarihi değerlerini bildiği için ve bunu bize gösterdiği için, hepsinden önemlisi kendi tarihimizi tanımamıza yardımcı olduğu için TİKA'ya tekrar çok büyük bir teşekkür ediyoruz.”",
+      "order": 9
+    },
+    {
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49LT.mp4",
+      "source": {
+        "printed_page": 113,
+        "pdf_page": 114,
+        "media_file": "19XU49LT.mp4",
+        "provenance": "user_supplied_transcript"
+      },
+      "id": "G11-T2-P113-VID02",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı ekranda görünen metin ve levha dökümü.",
+      "text": "00:01–00:04 — Alt yazı uyarısı (ekranın sağ altı): “İçerikte alt yazı seçeneği bulunmaktadır. ↓”\n\nKanal logoları — Ekranın sağ üst köşesinde “TRT” logosu; sunucunun mikrofonunda “TRT AVAZ” logosu.\n\n00:17–00:20 — Karayolu zemin yazısı: “BİLGE KAĞAN KARAYOLU”.\n\n02:26–02:30 — Müze yerleşkesinin havadan çekiminde ekrana gelen başlık: “KÜL TİGİN ABİDESİ”.\n\n03:24–03:30 — Abideler üzerindeki orijinal Çince karakterler ve Göktürk alfabesiyle yazılmış metinler.\n\n03:43–03:46 — Bilge Kağan'ın altın tacının bulunduğu vitrindeki üç dilli tanıtım kartı:\n\nMoğolca:\nБИЛГЭ ХААНЫ АЛТАН ТИТЭМ\nТҮРЭГИЙН ҮЕ: VII-VIII ЗУУН БИЛГЭ ХААНЫ ТАХИЛЫН\nОНГОНЫ МОНГОЛ-ТҮРКИЙН ХАМТАРСАН\nМАЛТЛАГА, 2001 ОН\n\nİngilizce:\nGOLDEN CROWN OF BILGE KHAN\nTURKISH PERIOD 6-8th CENTURY BILGE KHAN\nCOMPLEX EXCAVATION OF THE MONGOLIAN-TURKISH\nJOINT EXPEDITION, 2001 YEAR\n\nTürkçe:\nBİLGE KAĞAN ALTIN TACI\nGÖKTÜRK DÖNEMİ: VI-VIII YY\nBİLGE KAĞAN KÜLLİYESİ MOĞOL-TÜRK\nKAZI, 2001 YILI",
+      "order": 10
+    },
+    {
       "id": "G11-T2-P113-Q01",
       "type": "question",
       "question_number": "1",
@@ -150,13 +182,15 @@
       "related_text_ids": [
         "G11-T2-P113-SRC01",
         "G11-T2-P115-LIT01",
-        "G11-T2-P116-LIT01"
+        "G11-T2-P116-LIT01",
+        "G11-T2-P113-VID01",
+        "G11-T2-P113-VID02"
       ],
       "related_table_ids": [],
       "related_media_ids": [
         "G11-T2-P113-VIS01"
       ],
-      "order": 9,
+      "order": 11,
       "source": {
         "printed_page": 113,
         "pdf_page": 114,
@@ -177,11 +211,13 @@
       "related_text_ids": [
         "G11-T2-P113-SRC01",
         "G11-T2-P115-LIT01",
-        "G11-T2-P116-LIT01"
+        "G11-T2-P116-LIT01",
+        "G11-T2-P113-VID01",
+        "G11-T2-P113-VID02"
       ],
       "related_table_ids": [],
       "related_media_ids": [],
-      "order": 10,
+      "order": 12,
       "source": {
         "printed_page": 113,
         "pdf_page": 114,
@@ -202,11 +238,13 @@
       "related_text_ids": [
         "G11-T2-P113-SRC01",
         "G11-T2-P115-LIT01",
-        "G11-T2-P116-LIT01"
+        "G11-T2-P116-LIT01",
+        "G11-T2-P113-VID01",
+        "G11-T2-P113-VID02"
       ],
       "related_table_ids": [],
       "related_media_ids": [],
-      "order": 11,
+      "order": 13,
       "source": {
         "printed_page": 113,
         "pdf_page": 114,
@@ -227,11 +265,13 @@
       "related_text_ids": [
         "G11-T2-P113-SRC01",
         "G11-T2-P115-LIT01",
-        "G11-T2-P116-LIT01"
+        "G11-T2-P116-LIT01",
+        "G11-T2-P113-VID01",
+        "G11-T2-P113-VID02"
       ],
       "related_table_ids": [],
       "related_media_ids": [],
-      "order": 12,
+      "order": 14,
       "source": {
         "printed_page": 113,
         "pdf_page": 114,
@@ -252,11 +292,13 @@
       "related_text_ids": [
         "G11-T2-P113-SRC01",
         "G11-T2-P115-LIT01",
-        "G11-T2-P116-LIT01"
+        "G11-T2-P116-LIT01",
+        "G11-T2-P113-VID01",
+        "G11-T2-P113-VID02"
       ],
       "related_table_ids": [],
       "related_media_ids": [],
-      "order": 13,
+      "order": 15,
       "source": {
         "printed_page": 113,
         "pdf_page": 114,

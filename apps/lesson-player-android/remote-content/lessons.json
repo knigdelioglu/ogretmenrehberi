@@ -8657,9 +8657,9 @@
             "Kayınpederin tutumu": "Kayınpeder damadını peşin hükümle karşılar; bu, söylenenlerin tarafsız değerlendirilmesini güçleştirir. Engel: ön yargı.",
             "Çok modlu metnin katkısı": "Konuşmanın yanı sıra bakış yönü, davranış, sahne ve televizyon görüntüsü iletişim engellerini anlamaya yardımcı olabilir; gözlenmeyen ayrıntı kanıt olarak sunulmaz."
           },
-          "guidance": "Her sahnede önce gözlenebilen davranışı, ardından iletişim engelini ve olası etkisini yazdırın. Tahtada 'durum → engel → sonuç' çizelgesi kullanın; Sözlü İletişim Engelleri kaydının fiziksel/bilişsel/duyuşsal ayrımını kavram desteği olarak ele alın. Doğrulanmış birebir replik olmadan tırnaklı Seksenler diyaloğu eklemeyin.",
-          "explanation": "Üç sahneye özgü çözümleme geri kazandırıldı; önceki sürümdeki sözcüğü sözcüğüne doğrulanmamış diyaloglar geri alınmadı.",
-          "source_locator": "basılı s.53 / PDF s.54 — Seksenler QR-EBA-254C08EA3501 / 19XU49K2.mp4; kanıt: data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md; kullanıcı olay özeti, ses transkripti değil; kavram desteği: Sözlü İletişim Engelleri 19XU3SUD.mp4 kısmi ekran notu"
+          "guidance": "Her sahnede önce gözlenebilen davranışı, ardından iletişim engelini ve olası etkisini yazdırın. Tahtada 'durum → engel → sonuç' çizelgesi kullanın; Sözlü İletişim Engelleri kaydının fiziksel/bilişsel/duyuşsal ayrımını kavram desteği olarak ele alın. Kullanıcının sağladığı diyalog dökümündeki replikler sahne çözümlemesine doğrudan dayanak olabilir.",
+          "explanation": "Üç sahne çözümlemesi kullanıcının sağladığı diyalog ve sahne dökümüyle birlikte güncellendi; replikler video içeriği olarak kaynaklandırıldı.",
+          "source_locator": "basılı s.53 / PDF s.54 — Seksenler QR-EBA-254C08EA3501 / 19XU49K2.mp4; kullanıcı dökümü: data/book/grade-11/themes/theme-1/pages/p053.json; sahne görsel notu: data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md; kavram desteği: Sözlü İletişim Engelleri 19XU3SUD.mp4"
         },
         "content": null
       },
@@ -8752,7 +8752,7 @@
           },
           "guidance": "Kitabın ikinci sorusu, iletişim engellerinin etkisinin tartışılıp sonuçların tahtaya yazılmasını istiyor. Her sahne için 'ne oldu, nasıl etkiler, nasıl önlenebilir?' sorularını kullanın; varsayılan karakter niyetlerini kesin olay gibi göstermeyin.",
           "explanation": "Örnekler sahne özetleriyle desteklenmiş pedagojik yorumlardır. Doğan Cüceloğlu'nun basılı s.54'teki işitmek–dinlemek ayrımıyla bağ kurulabilir.",
-          "source_locator": "basılı s.53-54 / PDF s.54-55 — Seksenler QR-EBA-254C08EA3501 / 19XU49K2.mp4; kanıt notu: data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md; ses transkripti doğrulanmadı"
+          "source_locator": "basılı s.53-54 / PDF s.54-55 — Seksenler QR-EBA-254C08EA3501 / 19XU49K2.mp4; kullanıcı diyalog dökümü: data/book/grade-11/themes/theme-1/pages/p053.json; görsel not: data/grade-11/source/qr-review-notes/QR-EBA-254C08EA3501.md"
         },
         "content": null
       },
@@ -11865,9 +11865,9 @@
             "Bağlantılı çıkarım": "İletişim araçlarının biçimi değişse de bilgi, duygu ve düşünce paylaşma ihtiyacı devam eder.",
             "Kanıt düzeyi": "Araştırma bulgusu ile ekranda doğrulanan sözler ilişkilidir; bunlar söyleşideki tüm konuşmaların birebir dökümü değildir."
           },
-          "guidance": "63. sayfadaki araştırma bulgusunu kaynak gösterterek seçtirin. Ekran yazısı ile araştırma olgusunu ve bu ikisinden kurulan çıkarımı ayrı değerlendirin. Önceki cevaptaki hastane, bürokrasi ve eğitim gibi konuşma ayrıntılarını depolanmış doğrulanmış ses kanıtı olmadan videoya atfetmeyin.",
+          "guidance": "63. sayfadaki araştırma bulgusunu kaynak gösterterek seçtirin. Ekran yazısı, kullanıcının sağladığı konuşma dökümü ve bu ikisinden kurulan çıkarımı ayrı değerlendirin. Kullanıcı dökümünde hastaneler, bürokrasi, eğitim ve e-postanın gelişimi örneklenir.",
           "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; doğrulanmış ekran metni: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md; yardımcı görsel zaman çizelgesi: basılı s.67 / 19XU4CVR.mp4",
-          "explanation": "Karşılaştırma etkinliği için doldurulabilir örnek ve gerekçe geri kazandırıldı; video kanıtı ekran yazılarıyla sınırlıdır."
+          "explanation": "Karşılaştırma etkinliği için doldurulabilir örnek, ekran yazıları ve kullanıcının sağladığı program konuşmasıyla birlikte kaynaklandırıldı."
         },
         "content": null
       },
@@ -12029,15 +12029,15 @@
           "answer": "“İletişim, bir medenileşme hareketidir.” ifadesi, insanların yalnız haberleşmesini değil; bilgi ve deneyim paylaşarak birbirini anlamasını, birlikte karar almasını ve ortak bir kültür oluşturmasını da anlatır. Örneğin bir toplumda yeni bir bilginin kuşaktan kuşağa aktarılması, insanların farklı düşünceleri tartışabilmesi ve sorunlara birlikte çözüm araması iletişimle mümkün olur. Böylece iletişim, toplumsal gelişmeyi destekler. Bununla birlikte her iletişim doğru veya yapıcı değildir; etkili iletişim için anlaşılabilirlik, karşılıklı dinleme ve saygı da gerekir.",
           "answer_sections": {
             "İfadenin olası anlamı": "Haber vermenin ötesinde paylaşma, karşılıklı anlama, ortak yaşam kurma ve kültürel birikimi aktarma işlevleri medenileşmeyle ilişkilendirilebilir.",
-            "Kanıt ve çıkarım": "Videonun ekranındaki “İletişim, bir medenileşme hareketidir.” ifadesi yorumun çıkış noktasıdır. Örneğin bir deneyimin paylaşılması başkalarının ondan yararlanmasını sağlayabilir; bu, ekran ifadesinden hareketle kurulmuş açıklayıcı bir örnektir, konuşmacıya ait birebir söz değildir.",
+            "Kanıt ve çıkarım": "Ekrandaki “İletişim, bir medenileşme hareketidir.” ifadesi, Ahmet Dağ'ın dökümdeki “Çünkü iletişim aynı zamanda bir medenileşme hareketidir.” sözünü kısaltarak aktarır. Bir deneyimin paylaşılması başkalarının ondan yararlanmasını sağlayabilir; bu da ifadenin anlamından hareketle kurulmuş açıklayıcı bir örnektir.",
             "Yorumun sınırı": "İletişim toplumsal gelişmeye katkıda bulunabilir; ancak tek başına bütün anlaşmazlıkları çözmez. İletişimin niteliği ve dinleme davranışı da önemlidir."
           },
           "evidence_quotes": [
             "İletişim, bir medenileşme hareketidir."
           ],
-          "guidance": "Kitap s.66 soru 3'teki ifadeyi insanın iletişim ihtiyacıyla ilişkilendirtin: ihtiyaç → paylaşım/ortak yaşam → medenileşmeye katkı. Örneklerin öğrencinin gerekçeli yorumları olduğunu, konuşmacı alıntısı olmadığını belirtin. Videoda doğrulanan şey sözün ekranda görünmesidir; depoda tüm konuşmanın doğrulanmış dökümü yoktur.",
+          "guidance": "Kitap s.66 soru 3'teki ifadeyi insanın iletişim ihtiyacıyla ilişkilendirtin: ihtiyaç → paylaşım/ortak yaşam → medenileşmeye katkı. Kullanıcının sağladığı Ahmet Dağ ve konuk konuşmalarından bilgi paylaşımı, iletişim araçları ve toplumsal gelişme örnekleri seçilebilir.",
           "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; doğrulanmış ekran ifadesi ve kanıt sınırı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "Eski cevabın bilgi paylaşımı ve toplumsal gelişme çözümlemesi örneklerle geri kazanıldı. Önceki 'Ahmet Dağ konuşmasında...' atfı bağımsız doğrulanmadığından kullanılmadı."
+          "explanation": "Bilgi paylaşımı ve toplumsal gelişme çözümlemesi, kullanıcının sağladığı program konuşma dökümüyle kaynaklandırıldı."
         },
         "content": null
       },
@@ -12121,7 +12121,7 @@
           "printed_page": 66,
           "question_no": "4",
           "prompt_summary": "Çok modlu metnin konu ve temasını belirleme",
-          "answer": "Konu için gerekçeli örnek: İletişim araçlarının geçmişten günümüze değişmesi ve mektup ile e-postanın bu süreçteki yeri. Tema için gerekçeli örnek: İletişimin insanlar arasında yakınlık ve paylaşım kurma işlevi. Ekranda görülen mektup ve iletişim ifadeleri bu yorumları destekler. Konu metnin 'ne hakkında' olduğunu; tema ise ele alınan konunun bağlandığı genel izlek ve anlam alanını anlatır. Bu örnekler, bütün söyleşinin eksiksiz dökümüne değil doğrulanabilen ekran kanıtına dayanır.",
+          "answer": "Konu: İletişim araçlarının geçmişten günümüze değişmesi ve mektup ile e-postanın bu süreçteki yeri. Tema: İletişimin insanlar arasında yakınlık ve paylaşım kurma işlevi. Kullanıcının sağladığı konuşmalarda mektubun duyguları ve özlemi aktarması, e-postanın ise sağlık, eğitim ve bürokraside hız kazandırması anlatılır. Konu metnin “ne hakkında” olduğunu; tema ise ele alınan konunun bağlandığı genel izlek ve anlam alanını anlatır.",
           "answer_sections": {
             "Konu": "İletişim araçlarının değişimi; mektup ve e-postanın iletişimdeki yeri.",
             "Tema": "İnsanların birbirine ulaşma, yakınlık kurma ve paylaşma ihtiyacının farklı iletişim biçimleriyle sürmesi.",
@@ -12130,7 +12130,7 @@
           },
           "guidance": "Konu, tema ve ana düşünceyi üç ayrı sütunda tartıştırın. Alternatif yorumların dayanağını ekran metninden veya sınıfta alınmış dinleme notundan gösterin; örneği bütün videonun kesin çözümü olarak sunmayın.",
           "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran kanıtı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "PR #99'da kaybolan somut konu–tema cevabı ve kavram ayrımı yeniden sağlandı. Sözlü transkriptin bulunmaması kanıt sınırı olarak korundu."
+          "explanation": "Somut konu–tema cevabı, kullanıcının sağladığı sözlü anlatım dökümü ve ekran metinleriyle desteklendi."
         },
         "content": null
       },
@@ -12224,7 +12224,7 @@
           "printed_page": 66,
           "question_no": "5",
           "prompt_summary": "Çok modlu metnin ana ve yardımcı düşüncelerini belirleme",
-          "answer": "Doğrulanabilen ekran ifadelerinden hareketle örnek ana düşünce şöyle kurulabilir: İletişim araçları değişse de insanların birbirine ulaşma, bilgi ve duygu paylaşma ihtiyacı sürer; bu ihtiyaç toplumsal yaşamla iç içedir. Yardımcı düşünceler, mektubun uzak kişiler arasında yakınlık kurması, duygusal değer taşıması ve elektronik haberleşmenin tarihsel gelişimine değinilmesi olarak açıklanabilir. Bu, mevcut ekran metinlerine dayalı örnek bir düşünce düzenidir; tüm söyleşinin kesin ana-yardımcı düşünce haritası değildir.",
+          "answer": "Ana düşünce: İletişim araçları değişse de insanların birbirine ulaşma, bilgi ve duygu paylaşma ihtiyacı sürer ve bu ihtiyaç toplumsal yaşamı etkiler. Yardımcı düşünceler: mektupların özlem ve sevgiyi aktarması; e-postanın sağlık, eğitim ve bürokraside hız sağlaması; ilk e-postanın 1971’de gönderilmesi; iletişim ağlarının özellikle 1990’lardan sonra genişlemesi. Bu başlıklar kullanıcının sağladığı söyleşi dökümü ve ekrandaki bilgi notlarına dayanır.",
           "answer_sections": {
             "Örnek ana düşünce": "Araçlar değişirken iletişimin yakınlık kurma ve paylaşma işlevi önemini korur.",
             "Yardımcı düşünce 1": "“Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” kişisel bağların sürdürülmesini düşündürür.",
@@ -12234,7 +12234,7 @@
           },
           "guidance": "Ana düşünceyi bir cümlede; yardımcı düşünceleri o yargıyı destekleyen ayrı kanıtlarla kurdurun. Ekran yazısı, öğrencinin dinleme notu ve bağımsız tarihsel araştırmayı ayırın. Alternatif yorumları gerekçeli olmaları şartıyla kabul edin.",
           "source_locator": "basılı s.66 / PDF s.67 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran kanıtı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "Öğretmene yalnız yöntem önerme yerine örnek ana düşünce ve üç dayanak kazandırıldı; videoda doğrulanmamış konuşmalar atfedilmedi."
+          "explanation": "Örnek ana düşünce ve dayanaklar kullanıcının sağladığı konuşma dökümünden oluşturuldu."
         },
         "content": null
       },
@@ -12411,26 +12411,6 @@
           "web": {
             "units": [
               {
-                "id": "Nesnel İfade Nasıl Tanınır?",
-                "section_keys": [
-                  "Nesnel İfade Nasıl Tanınır?"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Öznel İfade Nasıl Tanınır?",
-                "section_keys": [
-                  "Öznel İfade Nasıl Tanınır?"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
                 "id": "Ekran yazısı ve konuşma",
                 "section_keys": [
                   "Ekran yazısı ve konuşma"
@@ -12472,23 +12452,13 @@
           "printed_page": 67,
           "question_no": "8",
           "prompt_summary": "Videodaki öznel ve nesnel ifadeleri bulma ve katkılarını değerlendirme",
-          "answer": "Nesnel ifade örneği: “İlk e-posta 1971 yılında atıldı.” Bu, doğruluğu tarihî kaynaklarla araştırılabilen bir bilgi iddiasıdır; metne somutluk ve bilgi boyutu katar. Öznel/mecazlı ifade örnekleri: “Mektup, sevginin kanatlanmış hâlidir.” ve “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” Bu ifadeler mektubun kişilerde uyandırdığı yakınlığı ve duygusal değeri vurgulayarak anlatımı etkileyici kılar. Üçü de videonun ekran yazılarında doğrulanmıştır; sesli konuşmacıya birebir atfedilmez.",
+          "answer": "Nesnel ifade örneği: “İlk e-posta 1971 yılında atıldı.” Bu, doğruluğu tarihî kaynaklarla araştırılabilen bir bilgi iddiasıdır. Öznel/mecazlı ifadeler: “Mektup, sevginin kanatlanmış hâlidir” ve “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” Konuşmacılar ayrıca mektupların hatırlama, özlem ve sevgiyi aktarma işlevini anlatır. Bu örnekler duygu ve bilgi aktarımının farklı yollarını gösterir.",
           "answer_sections": {
-            "Nesnel İfade Nasıl Tanınır?": {
-              "Ölçüt": "Doğruluğu bağımsız kanıtla sınanabilecek olgu, tarih veya sayı bildirir; nesnel nitelik kesin doğru olmayı garanti etmez.",
-              "Metne Katkısı": "Tarihsel bir dayanak sunarak anlatımı bilgi bakımından somutlaştırır; tarih iddiası ayrıca denetlenebilir.",
-              "Videodan örnek": "Ekranda “İlk e-posta 1971 yılında atıldı.” yazılıdır. Tarih iddiası doğrulanabilir niteliktedir."
-            },
-            "Öznel İfade Nasıl Tanınır?": {
-              "Ölçüt": "Kişisel duygu, değerlendirme veya mecazlı yorum içerir. Mecazlı anlatımın işlevini bağlamıyla açıklamak gerekir.",
-              "Metne Katkısı": "Mektubun sevgi, yakınlık ve bağ kurma yönünü vurgulayarak anlatıma duygu ve çağrışım kazandırır.",
-              "Videodan örnekler": "“Mektup, sevginin kanatlanmış hâlidir.” sözü sevgiye kanat imgesi yükler; “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” sözü mesafeyi duygusal yakınlıkla karşılaştırır."
-            },
-            "Ekran yazısı ve konuşma": "Örnekler görüntüdeki alt bant ifadeleridir; kimin ağzından birebir söylendiğine dair onaylı ses transkripti bulunmaz."
+            "Ekran yazısı ve konuşma": "“İlk e-posta 1971 yılında atıldı” ekran ifadesi, Ahmet Dağ'ın ilk e-postanın 1971'de ARPANET'te gönderildiği yönündeki sözüyle aynı bilgiyi aktarır. “Mektup, sevginin kanatlanmış hâlidir” ve “Mektup yazmanın bir fonksiyonu...” alt bantları dökümde birebir replik değildir; mektubun duygu ve yakınlık işlevi konuşmada ayrıca anlatılır."
           },
           "guidance": "Öğrenciye iki ayrı işlem yaptırın: örneği nesnel/öznel olarak gerekçelendirme ve onun metne katkısını açıklama. 'Nesnel = kesin doğru' çıkarımını düzeltin. Mektubun uzakları yakın etmesi ifadesinin iletişim işlevine dayalı mecazlı bir değerlendirme olduğunu, teknik mesafe azalması iddiası olmadığını fark ettirin.",
           "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; dört doğrulanmış ekran ifadesi: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "Öznel–nesnel örnekler PR #99'da zaten korunmuştu; bu turda ifade–özellik–anlatıma katkı bağı güçlendirildi ve doğrulanmamış sözlü atıf alt bölümden kaldırıldı."
+          "explanation": "Öznel–nesnel örnekler ve konuşmacıların mektup üzerine görüşleri, kullanıcının sağladığı ekran ve sözlü içerik dökümüne dayanır."
         },
         "content": null
       },
@@ -12572,7 +12542,7 @@
           "printed_page": 67,
           "question_no": "9",
           "prompt_summary": "Çok modlu metni özetleme",
-          "answer": "Ekranda doğrulanan bölümlerden hareketle oluşturulmuş kısa, kısmi özet: “Değişen İletişim Araçlarının Hayatımızdaki Yeri” başlıklı içerik, haberleşmenin zaman içindeki değişimiyle iletişimin insan ilişkilerindeki işlevini birlikte düşündürür. Ekran ifadelerinde iletişim toplumsal gelişmeyle ilişkilendirilir; mektubun uzakları yakınlaştıran ve sevgi taşıyan yönü vurgulanır. İlk e-postanın yılına ilişkin bir bilgi de yer alır. Bu özet doğrulanmış ekran parçalarına dayanır; söyleşinin tamamının özeti değildir.",
+          "answer": "Kullanıcının sağladığı döküme göre Aklıselim programı mektuptan e-postaya iletişim araçlarını ve bunların yaşam üzerindeki etkisini ele alır. Konuk, mektupların özlem, sevgi ve düşünceleri kalıcı biçimde aktardığını; Ahmet Dağ ise e-postanın sağlık, eğitim ve bürokrasi alanlarında bilgiye hızlı erişim sağladığını anlatır. İlk e-postanın 1971’de gönderildiği ve iletişim ağlarının özellikle 1990’lardan sonra genişlediği belirtilir. Böylece özet, iletişim araçlarındaki değişimi ve bu değişimin kişisel/toplumsal sonuçlarını kapsar.",
           "answer_sections": {
             "Temel konu": "İletişim araçlarının değişimi ile mektup ve e-posta üzerinden iletişimin insani/toplumsal işlevi (ekran kanıtlarından çıkan olası konu).",
             "Ana düşünce": "Örnek yorum: Araçlar değişse de haberleşme ve yakınlık kurma ihtiyacı devam eder; iletişim toplumsal yaşamı etkiler.",
@@ -12581,11 +12551,11 @@
               "Mektubun uzakları yakın etmesi ve sevginin kanatlanmış hâli olarak anlatılması onun duygusal işlevini öne çıkarır.",
               "İlk e-postanın 1971'de atıldığı ekran ifadesi teknik değişimin tarihine ilişkin sınanabilir bir bilgi iddiasıdır."
             ],
-            "Sonuç": "Ekran notlarına dayalı bu örnek, bir özetin ana fikir ve seçilmiş dayanaklardan kurulabileceğini gösterir; sesli söyleşinin başka önemli bölümlerini kapsadığı iddia edilmez."
+            "Sonuç": "Kullanıcının sağladığı konuşma dökümü ve ekran notlarından seçilmiş bu örnek, bir özetin ana fikir ve dayanaklardan kurulmasını gösterir; tüm ayrıntıları içeren sözcüğü sözcüğüne bir yeniden anlatım değildir."
           },
-          "guidance": "Önce giriş–gelişme–sonuç bütünlüğü taşıyan kısa bir özet örneği sunun. Sonra öğrencilerin tam izleme notlarıyla söylenen önemli başka bilgileri tespit edip özetini genişletmelerini isteyin. Eski answer_sections'taki hastane/eğitim/bürokrasi ve tekrar okuma gibi doğrulanmamış sözlü içerikleri bu videonun kesin ayrıntıları olarak kabul etmeyin.",
+          "guidance": "Giriş–gelişme–sonuç bütünlüğü kurdurun. Kullanıcının sağladığı dökümden mektubun duygusal ve kalıcı yönü ile e-postanın hız ve erişim kolaylığını seçtirip ana düşünceye bağlayın.",
           "source_locator": "basılı s.67 / PDF s.68 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; kısmi ekran notu: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "PR #99, önceki bütünlüklü özet örneğini yalnız kanıt uyarısına indirmişti. Kısmi kaynaklardan üretilebilen örnek metin ve tutarlı bölümleri geri getirildi; tam özet iddiası özellikle kurulmadı."
+          "explanation": "Özet, kullanıcının sağladığı konuşma dökümündeki ana savları ve örnekleri içerir; mektup ve e-postanın farklı işlevlerini bir arada gösterir."
         },
         "content": {
           "sources": [
@@ -13482,16 +13452,6 @@
                 "quote_indexes": []
               },
               {
-                "id": "Güven",
-                "section_keys": [
-                  "Güven"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
                 "id": "Yapıcılık",
                 "section_keys": [
                   "Yapıcılık"
@@ -13502,9 +13462,19 @@
                 "quote_indexes": []
               },
               {
-                "id": "İletişim unsurları arasındaki ilişki",
+                "id": "Güven",
                 "section_keys": [
-                  "İletişim unsurları arasındaki ilişki"
+                  "Güven"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "İlişki",
+                "section_keys": [
+                  "İlişki"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13542,17 +13512,17 @@
           "printed_page": 72,
           "question_no": "1",
           "prompt_summary": "Videoda güven, saygı, yapıcılık ve nezaket içeren ifadeleri belirleme",
-          "answer": "İletişimin etkili olmasını sağlayan nitelikler için kitapta verilen somut nezaket örneği “Aklıselim programına hoş geldiniz.” ifadesidir: izleyiciye yönelik kibar bir karşılama içerir. Saygı, karşıdakinin görüşüne değer verme ve sözünü kesmeden dinleme; güven, açık ve tutarlı bilgi paylaşımı; yapıcılık ise anlaşmazlığı çözmeye veya ortak anlayış kurmaya yönelik söyleyişle ilişkilendirilebilir. Son üçü bu soruya uygun değerlendirme ölçütleridir; doğrulanmış ekran notlarında bunları gösteren birebir sözler bulunmadığından videodan alınmış alıntılar gibi sunulmaz.",
+          "answer": "Videonun açılışında Ahmet Dağ konuklarını “hocam” diye karşılar, “hoş geldiniz” der ve teşekkür eder; konuklar da “hoş bulduk” ve “Allah razı olsun” diyerek nazikçe karşılık verir. Bu ifadeler nezaket ve saygıya örnektir. Ahmet Dağ’ın iletişimin insanları düşüncelerini gözden geçirmeye yönelttiğini açıklayıp konuklarına görüş sorması, açık ve yapıcı bir söyleşiyi destekler. Güven ise tek bir selamlamadan değil, konuşmada sunulan bilgilerin gerekçeli ve tutarlı olmasından değerlendirilir.",
           "answer_sections": {
-            "Nezaket": "Basılı ders kitabının s.72 tablosundaki örnek: “Aklıselim programına hoş geldiniz.” Selamlama ve karşılamayla saygılı bir iletişim ortamı kurulmasına katkı sağlar.",
-            "Saygı": "Örnek değerlendirme ölçütü: Karşıdaki kişiye söz hakkı tanıma, görüşünü dikkate alma ve küçümseyici dil kullanmama. Videoda bu tutumu gösteren belirli bir söz seçilecekse dinleme kaydından ayrıca doğrulanmalıdır.",
-            "Güven": "Örnek değerlendirme ölçütü: Verilen bilgiyi açık, gerekçeli ve tutarlı sunma. Ekranda görülen tarih veya alıntı tek başına konuşmacının güvenilirliğine kanıt değildir.",
-            "Yapıcılık": "Örnek değerlendirme ölçütü: Sadece sorun belirtmekle kalmayıp uygulanabilir çözüm veya ortak anlayış arayışına yönelme. Bir ifade bu nitelikle eşleştirilirken bağlamı ve etkisi açıklanmalıdır.",
-            "İletişim unsurları arasındaki ilişki": "Nezaket karşıdakinin konuşmaya katılmasını kolaylaştırabilir; saygılı dinleme güveni destekleyebilir; güven ortamı da yapıcı görüş alışverişini güçlendirebilir. Bu bağların her biri somut gözlem ve gerekçeyle sınanmalıdır."
+            "Nezaket": "Açılıştaki “Aklıselim programına hoş geldiniz.”, “Rica ederim” ve “Allah razı olsun” ifadeleri karşılıklı selam ve teşekkür örnekleridir.",
+            "Saygı": "Konuklara “hocam” diye hitap edilmesi, görüşlerini sormak ve sözlerini dinlemek.",
+            "Yapıcılık": "İletişimin medenileştirici işlevi üzerine soru açıp mektup ve e-postanın etkilerini birlikte tartışmaya davet etmek.",
+            "Güven": "Güven, yalnız nazik bir ifade değil; ileri sürülen düşüncenin tutarlı ve gerekçeli sunulmasıyla ilişkilendirilebilir.",
+            "İlişki": "Nezaket ve saygı, konuşmacıların kendilerini rahatça ifade etmelerine yardımcı olur; açık tartışma yapıcı iletişimi destekler."
           },
-          "guidance": "S.72'nin ilk sorusunda kitapta zaten verilen 'Aklıselim programına hoş geldiniz.' ifadesini somut model yapın. Üç diğer başlıkta ölçütleri örnekleyin ama bu açıklayıcı model cümleleri videodaki birebir diyalog sanmayın. Öğrenci gerçekten duyduğu ifadeyi bağlamıyla kaydederse ölçüte göre değerlendirsin; s.72'nin ikinci sorusundaki kavram haritasına saygı–nezaket–güven–yapıcılık bağlarını taşıyabilirsiniz.",
-          "source_locator": "basılı s.72 / PDF s.73 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; ses transkripti yok; kısmi kanıt: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "Eski sürümdeki Osman Bey/Edebali/adalet öğütleri bu Aklıselim söyleşisiyle ilişkili olmadığından geri getirilmedi. Somut selamlama örneği kitap sayfasından doğrulandı; kalan nitelikler için sesli konuşma örneği kaynakta bulunmuyor."
+          "guidance": "Öğrenciler p064 kullanıcı dökümünden tam ifadeleri seçsin ve nezaket, saygı, yapıcılık ile güven ölçütlerine göre gerekçelendirsin. Açılıştaki “Aklıselim programına hoş geldiniz.” ifadesi basılı s.72'de de örneklenir; selamlama/teşekkür ifadelerini nezaket, güveni ise bilgi sunumunun tutarlılığı üzerinden değerlendirin.",
+          "source_locator": "basılı s.72-73 / PDF s.73-74 — 19XU49LL kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-1/pages/p064.json; ayrı görsel not: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+          "explanation": "Yanıt, p064.json’a eklenen kullanıcı konuşma dökümündeki gerçek karşılama, hitap ve tartışma örneklerini kullanıyor."
         },
         "content": null
       },
@@ -13752,7 +13722,7 @@
           "printed_page": 73,
           "question_no": "1",
           "prompt_summary": "Videonun diline ilişkin beğenileri gerekçelendirme",
-          "answer": "Metnin dilinde beğenilebilecek bir özellik, görüntüde yer alan “Mektup, sevginin kanatlanmış hâlidir.” ifadesinin soyut sevgiyi kanat imgesiyle somutlaştırmasıdır. Böylece mektubun yalnız haber ileten bir araç değil, duygusal yakınlık kuran bir iletişim biçimi olduğu etkili biçimde anlatılır. Ekrandaki “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” ifadesi de kişiler arasında bağ kurmayı anlaşılır bir mecazla öne çıkarır. Bu, doğrulanmış görsel yazılara dayalı örnek dil değerlendirmesidir; ses tonu veya bütün konuşmanın akıcılığı hakkında kanıt oluşturmaz.",
+          "answer": "Metnin dilinde beğenilebilecek bir özellik, görüntüde yer alan “Mektup, sevginin kanatlanmış hâlidir.” ifadesinin soyut sevgiyi kanat imgesiyle somutlaştırmasıdır. Böylece mektubun yalnız haber ileten bir araç değil, duygusal yakınlık kuran bir iletişim biçimi olduğu etkili biçimde anlatılır. Ekrandaki “Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” ifadesi de kişiler arasında bağ kurmayı anlaşılır bir mecazla öne çıkarır. Bu iki ifade kullanıcı dökümünde birebir konuşma repliği olarak yer almaz; yanıt onları ekranda görünen yazılı metin olarak çözümler.",
           "evidence_quotes": [
             "Mektup, sevginin kanatlanmış hâlidir."
           ],
@@ -13760,11 +13730,11 @@
             "Beğenilen ifade": "“Mektup, sevginin kanatlanmış hâlidir.” — 03:08 civarında görülen ekran yazısı; sevgi ve mektup arasında imgesel bağlantı kurar.",
             "Dil ve anlatım": "Kanatlanma imgesi duyguya hareket ve uzaklığa erişme çağrışımı katar. Mektubun ilişki kurma işlevini kısa, akılda kalıcı bir söyleyişle anlatır.",
             "İkinci gerekçe": "“Mektup yazmanın bir fonksiyonu da uzakları yakın etmesidir.” — yaklaşık 02:05 ekran yazısı; mekânsal uzaklık ile duygusal yakınlık arasındaki karşıtlıktan yararlanır.",
-            "İzleme ve konuşma ayrımı": "Bu iki sözün ekranda bulunması doğrulanmıştır. Konuşmacının diksiyonu, vurgu ve ses tonu ayrı dinleme gözlemi gerektirir."
+            "İzleme ve konuşma ayrımı": "Bu iki söz ekranda yazılıdır; kullanıcı dökümünde birebir replik olarak geçmez. Mektubun duygu ve yakınlık işlevi ise söyleşide ayrıca anlatılır."
           },
-          "guidance": "Kitabın 'beğeni + gerekçe' beklentisini iki aşamada somutlaştırın: dil özelliğini adlandırın, neden etkili olduğunu söyleyin. Alt bantta görülen ifadeyi sesli konuşmacının cümlesi gibi atfetmeyin. Öğrenci videonun başka bölümünden dinleme notu getirirse gözlem ile yorumu ayırarak kabul edin.",
+          "guidance": "Kitabın 'beğeni + gerekçe' beklentisini iki aşamada somutlaştırın: dil özelliğini adlandırın, neden etkili olduğunu söyleyin. Bu sorudaki iki ifadeyi alt bantta görünen yazılı metin olarak değerlendirin; söyleşinin sözlü bölümlerini örneklemek isteyen öğrenci p064 sayfa kaydındaki dökümden ayrı bir replik seçebilir.",
           "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; ekrandaki ifade ve kanıt sınırı: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "PR #99 sonrasında örnek mecaz korunmuştu ancak çözümlemesi genel yönergeyle sınırlıydı; iki doğrulanmış görsel ifadenin imge ve anlam ilişkisi gerekçelendirildi."
+          "explanation": "Yanıt, alt banttaki mecazları imge ve anlam ilişkisi üzerinden çözümler ve bunları konuşma dökümündeki repliklerden ayrı tutar."
         },
         "content": null
       },
@@ -13777,9 +13747,9 @@
           "web": {
             "units": [
               {
-                "id": "Olumsuz eleştiri 1",
+                "id": "Olası eleştiri",
                 "section_keys": [
-                  "Olumsuz eleştiri 1"
+                  "Olası eleştiri"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13787,9 +13757,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Çözüm önerisi 1",
+                "id": "Çözüm",
                 "section_keys": [
-                  "Çözüm önerisi 1"
+                  "Çözüm"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13797,9 +13767,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Olumsuz eleştiri 2",
+                "id": "Dilin kullanımı",
                 "section_keys": [
-                  "Olumsuz eleştiri 2"
+                  "Dilin kullanımı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13807,9 +13777,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Çözüm önerisi 2",
+                "id": "Mecaz örneği",
                 "section_keys": [
-                  "Çözüm önerisi 2"
+                  "Mecaz örneği"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13817,9 +13787,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Sesli söyleyişte değerlendirme sınırı",
+                "id": "Değerlendirme ilkesi",
                 "section_keys": [
-                  "Sesli söyleyişte değerlendirme sınırı"
+                  "Değerlendirme ilkesi"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13857,17 +13827,17 @@
           "printed_page": 73,
           "question_no": "2",
           "prompt_summary": "Videodaki olumsuz dil özellikleri ve çözüm önerileri",
-          "answer": "Örnek eleştiri 1: Ekranda “İlk e-posta 1971 yılında atıldı.” bilgisi verilir. Bu tür tarihsel bir yargının doğrulanabilir olması yararlıdır; ancak yalnız bu ekran cümlesi, hangi tarihsel kaynağa dayandığını açıklamaz. Çözüm, bilgiye eşlik eden açık bir kaynak gösterimidir. Örnek eleştiri 2: “Mektup, sevginin kanatlanmış hâlidir.” mecazı etkileyicidir fakat herkes için aynı açıklıkta olmayabilir. Çözüm, mektubun duyguları ve uzaklıkları aşan iletişim işlevini bir örnekle açıklamaktır. Bunlar ekran metninden geliştirilebilecek gerekçeli eleştirilerdir; konuşmacının doğrulanmamış kusurları veya videonun tümüne ilişkin kesin hükümler değildir.",
+          "answer": "Soru, videodaki olumsuz dil özelliklerini gerekçeli biçimde seçip çözüm önermeyi ister; her metinde mutlaka olumsuz özellik bulunması gerekmez. Kullanıcının sağladığı dökümdeki tarihsel iddia örneğin “İlk e-posta 1971 yılında ARPANET’te gönderiliyor” biçimindedir. Bu tür bilgi, kaynak veya tarihsel bağlam eklenerek daha denetlenebilir sunulabilir. Uzun cümleler ya da tekrarlar ancak metnin anlaşılmasını zorlaştırdığı somut bir yer gösterildiğinde eleştiri konusu yapılmalıdır. Programdaki “Mektup, sevginin kanatlanmış hâlidir” alt bandı ise mecazlı bir anlatımdır; olumsuzluk değil, yorumlanabilecek bir üslup özelliğidir.",
           "answer_sections": {
-            "Olumsuz eleştiri 1": "Tarihsel bir bilgi iddiasının yalnız ekranda görülmesi, izleyicinin kaynağını hemen denetlemesine imkân vermeyebilir.",
-            "Çözüm önerisi 1": "Tarih iddiasının dayandığı güvenilir kaynak ekranda veya erişilebilir açıklamada belirtilebilir.",
-            "Olumsuz eleştiri 2": "Mecazlı ifade, düz anlamı bekleyen izleyici için ilk anda kapalı kalabilir.",
-            "Çözüm önerisi 2": "“Mektup, uzaktaki insanlarla duygu ve düşünce paylaşmamızı sağlar.” gibi doğrudan bir açıklama mecazın yanına eklenebilir; bu cümle videodan alıntı değildir.",
-            "Sesli söyleyişte değerlendirme sınırı": "Uzun cümle, gereksiz tekrar, vurgu ya da konuşma temposuyla ilgili bir eleştiri ancak gerçekten dinlenen bölüme dayandırılabilir. Olumsuz dil özelliği bulunması zorunlu bir varsayım değildir."
+            "Olası eleştiri": "Tarihsel bir iddia kaynak göstermeden sunulmuşsa izleyici dayanağını denetleyemeyebilir. Bu eleştiri, içerikte gerçekten kaynak verilmediği gözlemiyle gerekçelendirilmelidir.",
+            "Çözüm": "E-posta tarihine ilişkin güvenilir kaynak ve tarihsel bağlam eklenebilir.",
+            "Dilin kullanımı": "Dökümde bazı uzun konuşma cümleleri ve tekrarlar vardır; bunlar ancak anlaşılmayı zorlaştırdığı belirli bir örnekle gösterilirse yapıcı eleştiriye dönüşür.",
+            "Mecaz örneği": "“Mektup, sevginin kanatlanmış hâlidir” alt banttaki mecazdır; tek başına olumsuz dil örneği sayılmaz.",
+            "Değerlendirme ilkesi": "Öğrenciler olumsuz örnek bulamazsa bunu gerekçeyle söyleyebilir; eleştiri uydurmak gerekmez."
           },
-          "guidance": "S.73'teki iki sütunu birlikte doldurtun: eleştirilen özellik ile ona karşılık gelen çözüm aynı satırda olmalı. Eleştiriyi gerekçeli ve nazik biçimde ifade ettirin. Buradaki iki örnek, görülen alt bantların olası anlaşılma/kaynak gösterimi sınırları üzerinedir; programın başka yerlerinde mutlaka kaynak verilmediği sonucuna varmayın.",
-          "source_locator": "basılı s.73 / PDF s.74 — QR-EBA-29BF4F293D53 / 19XU49LL.mp4; ses transkripti yok; kısmi kanıt: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
-          "explanation": "Eski sürümde 00:41–02:01 arasındaki doğrulanmamış söz tekrarları kesin eleştiri gibi aktarılıyordu. Yeni örnekler yalnızca kayıtlı ekran kanıtına bağlıdır; eleştirinin pedagojik somutluğunu ve çözüm eşleştirmesini geri sağlar."
+          "guidance": "Eleştiri ile çözümü aynı satırda ilişkilendirin. p064 kullanıcı dökümünden somut söz veya bilgi seçin; bir özelliğin gerçekten sorun oluşturup oluşturmadığını açıklatın. Gerekçesiz biçimde konuşmacıya kusur atfetmeyin.",
+          "source_locator": "basılı s.72-73 / PDF s.73-74 — 19XU49LL kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-1/pages/p064.json; ayrı görsel not: data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md",
+          "explanation": "Yanıt, Aklıselim dökümündeki e-posta tarihi ifadesiyle alt banttaki mecazı örnek alır; eleştiriyi yalnız gerekçelendirilebilen özelliklerle sınırlar."
         },
         "content": null
       },
@@ -16670,9 +16640,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Ses ve ritim değerlendirmesi",
+                "id": "Şiirin sözlü içeriği",
                 "section_keys": [
-                  "Ses ve ritim değerlendirmesi"
+                  "Şiirin sözlü içeriği"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16680,9 +16650,19 @@
                 "quote_indexes": []
               },
               {
-                "id": "Ekrandaki başlık ve kaynak sınırı",
+                "id": "Ses ve başlık",
                 "section_keys": [
-                  "Ekrandaki başlık ve kaynak sınırı"
+                  "Ses ve başlık"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Çok modlu ilişki",
+                "section_keys": [
+                  "Çok modlu ilişki"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16721,10 +16701,10 @@
           "printed_page": 83,
           "question_no": "13",
           "prompt_summary": "Olvido çok modlu metninde şiirin duygusunu aktaran unsurlar",
-          "answer": "Olvido'nun çok modlu sunumunda şiirin duygusunu aktarmaya yardımcı olan doğrulanmış görsel unsurlar arasında siyah-beyaz yazı yazma ve kitap görüntüleri, sisli deniz ufku, gün batımı, kuş ve gece ışıkları bulunur. Yazı, kitap ve eski görüntüler geçmişi hatırlama duygusunu; sisli ufuk ve gün batımı ise hüzün, dinginlik veya özlem çağrışımını güçlendirebilir. Bu çağrışımlar izleyicinin yorumudur; görüntülerin belirli dizelere denk düştüğü doğrulanmış değildir. Videonun açılışındaki “Şairin Sesinden” başlığı bir sunum bilgisidir, sesi kimin okuduğunun bağımsız kanıtı değildir. Ses tonu, vurgu, duraklama ve olası müzik ancak kaydı dinleyerek değerlendirilebilir.",
-          "guidance": "Videoyu önce sessiz izletip 'gözlem / duygu çağrışımı' tablosunu doldurtun. Sonra gerçek ses kaydını dinleyebiliyorsanız seçilen bir bölümde vurgu, tempo, duraklama ve ses–görüntü ilişkisini öğrencilerin kendi gözlemleriyle çözümletin. Önceki cevaptaki Olvido dizelerini basılı s.83 kaynaklı diye sunmayın; sayfada şiir metni yoktur. Başlıktan hareketle ses kimliğini kesinleştirmeyin.",
-          "explanation": "Eski yanıtın şiir duygusunu somut öğelerle çözümleme değeri, kare inceleme notundaki gerçek görsel unsurlarla geri kazanıldı. Eski yanıtta bulunan şiir dizeleri ve 'şairin kendi sesinden' ifadesi, bu sayfa ve görsel inceleme notuyla bağımsız doğrulanamadığı için kanıtlı alıntı olarak kullanılmadı.",
-          "source_locator": "basılı s.83 / PDF s.84 — Olvido videolu soru (basılı sayfada şiirin tam metni yoktur); QR-EBA-2952F505E3A7 / resourceId 2952f505e3a7923fe38ce31c2bd92871; EBA ile eşleşen MP4: OGM2025TDE118312.mp4; görsel inceleme: data/grade-11/source/qr-review-notes/QR-EBA-2952F505E3A7.md; ses çözümü bulunmuyor",
+          "answer": "Olvido'nun çok modlu sunumunda şiirin duygusu söz, ses ve görüntüyle kurulur. Şiirde akşamüstü, yalnızlık, lavanta kokan keder, pişmanlık, doğulan eski ev, susmuş ninniler ve “yitikler, mağluplar, mahzunlar” imgeleri hüzün, hatırlama, özlem ve kayıp duygularını öne çıkarır. Kullanıcının doğruladığı üzere şiir Ahmet Muhip Dıranas'ın kendi sesinden okunur. Görseldeki eski yazı/kitap görüntüleri, sisli deniz ufku, gün batımı, kuş ve gece ışıkları da şiirin geçmişe ve yitirilmiş olana dönük havasıyla ilişkilendirilebilir. Bu unsurların oluşturduğu çağrışımlar izleyicinin gerekçeli yorumudur.",
+          "guidance": "Önce şiirdeki duygu ve imgeleri belirletin: akşamüstü, yalnızlık, keder, pişmanlık, eski ev ve yitikler. Ardından bunları görüntülerdeki yazı/kitap, deniz, gün batımı ve gece ışıklarıyla ilişkilendirip her eşleştirmeyi gerekçelendirtin. Şiir ve Dıranas'a ait ses bilgisi kullanıcı dökümü olarak p.83 sayfa JSON'unda yer alır; basılı s.83'te şiirin dizeleri bulunmaz.",
+          "explanation": "Kullanıcının sağladığı şiir dökümü ve Dıranas ses atfı, sorunun çok modlu metin bağlamına işlendi. Yanıt şiirdeki yalnızlık, keder, pişmanlık ve yitiklik imgelerini görsel montajla birlikte ele alır; duygu eşleştirmeleri gerekçeli yorum olarak sunulur.",
+          "source_locator": "basılı s.83 / PDF s.84 — Olvido videolu soru; şiir dökümü ve Ahmet Muhip Dıranas ses atfı: kullanıcı tarafından sağlanan p.83 sayfa JSON kaydı; QR-EBA-2952F505E3A7 / resourceId 2952f505e3a7923fe38ce31c2bd92871; MP4: OGM2025TDE118312.mp4",
           "answer_sections": {
             "Doğrudan görülen görsel unsurlar": [
               "Eski mikrofon ve siyah-beyaz yazma görüntüleri: dönem, geçmiş ve hatıra çağrışımı oluşturabilir.",
@@ -16732,8 +16712,9 @@
               "Sisli deniz ufku, güvercin, gün batımı ve gece ışıkları: sükûnet, uzaklık, hüzün veya özlem duygularıyla yorumlanabilir."
             ],
             "Gözlemden yoruma": "Görselde gün batımının bulunması bir gözlemdir; bunun yalnızlık veya özlem hissettirmesi gerekçelendirilebilecek kişisel yorumdur. Farklı çağrışımlar mümkündür.",
-            "Ses ve ritim değerlendirmesi": "Şiirin duygu aktarımında sesin vurgusu, temposu, duraklamaları ve varsa müzik etkili olabilir; bu kayda ait somut ses özelliği, depoda arşivli bir dinleme analizi bulunmadığından doğrulanmış olgu gibi sunulmaz.",
-            "Ekrandaki başlık ve kaynak sınırı": "Açılışta “Şairin Sesinden”, “Ahmet Muhip Dıranas” ve “Olvido” yazıları görünür. Bu, yayının tanıtım bilgisidir; ses kimliğinin bağımsız doğrulaması değildir. Basılı s.83, şiirin dizelerini değil çok modlu metne yönlendiren soruyu içerir."
+            "Şiirin sözlü içeriği": "Kullanıcı dökümündeki şiir; akşamüstü, yalnızlık, lavanta kokan keder, pişmanlık, eski ev, susmuş ninniler ve yitiklik imgeleriyle hüzün ve özlem duygusu kurar.",
+            "Ses ve başlık": "Şiir Ahmet Muhip Dıranas'ın kendi sesinden okunur; açılışta “Şairin Sesinden”, “Ahmet Muhip Dıranas” ve “Olvido” yazıları görünür.",
+            "Çok modlu ilişki": "Şiir metnindeki geçmiş, yalnızlık ve kayıp imgeleri; eski yazı/kitap görüntüleri, sisli ufuk, gün batımı ve gece ışıklarıyla ilişkilendirilebilir. Eşleştirme gerekçelendirilen bir yorumdur."
           }
         },
         "content": null
@@ -17501,9 +17482,9 @@
           "web": {
             "units": [
               {
-                "id": "Toyun toplu görüşme işlevi",
+                "id": "Toyun anlamı",
                 "section_keys": [
-                  "Toyun toplu görüşme işlevi"
+                  "Toyun anlamı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17511,9 +17492,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Toyun şenlik ve paylaşma işlevi",
+                "id": "Birlik işlevi",
                 "section_keys": [
-                  "Toyun şenlik ve paylaşma işlevi"
+                  "Birlik işlevi"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17521,19 +17502,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Gerekçeli örnek",
+                "id": "Günümüzdeki örnek",
                 "section_keys": [
-                  "Gerekçeli örnek"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Kanıt ve çıkarım ayrımı",
-                "section_keys": [
-                  "Kanıt ve çıkarım ayrımı"
+                  "Günümüzdeki örnek"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17572,16 +17543,15 @@
           "printed_page": 88,
           "question_no": "1",
           "prompt_summary": "Toyların toplumda birlik sağlamadaki işlevi",
-          "answer": "Toyun hem toplu görüşme hem de birlikte eğlenme anlamı taşıması, insanları yalnızca aynı mekânda buluşturmakla kalmayıp ortak karar, hazırlık ve paylaşım çevresinde bir araya getirir. Örneğin bir topluluğun hasat sonunda ürünleri paylaşarak düzenlediği ortak kutlama, emeğin takdir edilmesine, farklı kuşakların tanışmasına ve geleneklerin aktarılmasına katkı sağlayabilir. Katılımcılar aynı töreni birlikte gerçekleştirdiklerinde aidiyet, yardımlaşma ve dayanışma duyguları güçlenebilir. Bu hasat kutlaması açıklayıcı bir örnektir; s.88'e bağlanan aday MP4'te birebir anlatıldığı doğrulanmış bir olay değildir.",
-          "source_locator": "basılı s.88 / PDF s.89 — Konuya Başlarken soru 1 / 19XU49LO.mp4 (EBA kökeni doğrulanmamış aday)",
-          "guidance": "Önce kitap sorusundaki toy tanımının iki parçasını (toplantı + eğlence) ayrı çözümletin. Ardından 'aynı geleneğe birlikte katılmak birliği nasıl güçlendirir?' sorusunu hazırlık–paylaşma–aidiyet ilişkisiyle gerekçelendirtin. Hasat şenliği bir model örnektir, videonun birebir transkripti değildir. Eski cevapta geçen Dede Korkut/Oğuz Kağan atıflarını kaynak olmadan videodan aktarılmış saymayın.",
+          "answer": "Videoda “toy” sözcüğü toplantı ve toplantı sonrası eğlence anlamlarıyla açıklanır; Dede Korkut anlatılarının “Dede Korkut geldi, boy boyladı, toy toyladı” sözüyle başladığı aktarılır. Günümüzdeki tarım festivalleri de üretim, ortak çalışma ve eğlenceyi bir araya getirir. Ortak hazırlık ve kutlama, farklı yaşlardan insanları buluşturup dayanışma ve kültürel aktarımı güçlendirebilir.",
+          "source_locator": "basılı s.88 / PDF s.89 — 19XU49LO kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p088.json",
+          "guidance": "Kitaptaki toy tanımının toplantı ve eğlence boyutlarını, dökümdeki üretim–ortak çalışma–eğlence açıklamasıyla ilişkilendirin. Dede Korkut’taki açılış sözü ve günümüz festivalleri örneklerini dökümdeki içerik olarak kullanın.",
           "answer_sections": {
-            "Toyun toplu görüşme işlevi": "İnsanların ortak meseleleri konuşması ve birbirini dinlemesi, karşılıklı anlayış ve birlikte hareket etme imkânı doğurur.",
-            "Toyun şenlik ve paylaşma işlevi": "Ortak hazırlık, birlikte yemek/ürün paylaşımı ve kutlamaya katılım, topluluk üyelerinin aynı geleneğin parçası olduklarını hissetmelerine yardımcı olabilir.",
-            "Gerekçeli örnek": "Varsayımsal hasat şenliği: Aileler ortak ürün ve emeği paylaşır, yaşlılar gelenekleri anlatır, çocuklar kutlamaya katılır. Böylece birlik; paylaşma, kuşaklararası aktarım ve ortak sorumluluk üzerinden açıklanır.",
-            "Kanıt ve çıkarım ayrımı": "Kitap sorusu 'toplantı ve toplantı sonrası eğlence' tanımını verir. Aday videonun görsel notunda toplu kutlama ve tarımsal üretim sahneleri görülür; MP4–EBA eşleşmesi ve sözcüğü sözcüğüne konuşma kanıtı ayrıca tamamlanmadığından tarihî kişi, destan sözü veya törenin tam kökeni videoya atfedilmez."
+            "Toyun anlamı": "Toplantı ve toplantı sonrası eğlence. Dede Korkut anlatılarında “boy boylama” ve “toy toylama” ile ilişkilendirilir.",
+            "Birlik işlevi": "Üretim, ortak çalışma ve kutlama toplumu bir araya getirir; paylaşım, aidiyet ve kuşaklararası aktarımı destekleyebilir.",
+            "Günümüzdeki örnek": "Tarım alanındaki festivaller, eski toyların modernleşmiş biçimleri olarak anlatılır."
           },
-          "explanation": "PR #99'un genel uyarıya indirgediği içerik PR #103'te iyileştirilmişti. Bu turda asıl kitap tanımı merkeze alındı; toplu görüşme ile paylaşımın birliği nasıl kurduğu örneklendi. MP4 adayının EBA kaynağıyla dosya eşleşmesi ve saklanan tam ses dökümü henüz kanıtlanmış olarak gösterilmedi."
+          "explanation": "Yanıt, kullanıcının sağladığı video dökümündeki toy tanımı, Dede Korkut sözü ve modern festivaller bilgilerini içerir."
         },
         "content": null
       },
@@ -17594,9 +17564,9 @@
           "web": {
             "units": [
               {
-                "id": "Ortak işlev: birlik ve dayanışma",
+                "id": "Ortak coğrafyalar",
                 "section_keys": [
-                  "Ortak işlev: birlik ve dayanışma"
+                  "Ortak coğrafyalar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17604,9 +17574,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Hasat kutlamasının ayırt edici yönü",
+                "id": "Tören örnekleri",
                 "section_keys": [
-                  "Hasat kutlamasının ayırt edici yönü"
+                  "Tören örnekleri"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17614,19 +17584,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Nevruz'un ayırt edici yönü",
+                "id": "Ortak kültüre katkı",
                 "section_keys": [
-                  "Nevruz'un ayırt edici yönü"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Kuşaklararası aktarım örneği",
-                "section_keys": [
-                  "Kuşaklararası aktarım örneği"
+                  "Ortak kültüre katkı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17665,16 +17625,15 @@
           "printed_page": 88,
           "question_no": "2",
           "prompt_summary": "Hasat ve Nevruz eğlencelerinin ortak kültür açısından önemi",
-          "answer": "Hasat şenlikleri, ortak emeğin ürününü paylaşmayı ve bereketi; Nevruz kutlamaları ise baharın gelişini, yenilenmeyi ve birlikte kutlama yapmayı öne çıkarır. Farklı Türk topluluklarında aynı mevsimsel dönüm noktalarının kutlanması, ortak kültürel belleğin korunmasına katkı sağlayabilir. Örneğin bir aile büyüklerinin çocuklara neden bahar kutlaması yaptıklarını anlatması, geleneğin kuşaklara aktarılmasını sağlar. İkisinde de bir araya gelme, paylaşma ve dayanışma işlevi bulunur; hasat daha çok üretim döngüsünü, Nevruz ise bahar ve yenilenme düşüncesini merkeze alır. Bu kültürel karşılaştırma, videoda belirli bir ülke veya törenin adı geçtiğine dair iddia değildir.",
-          "source_locator": "basılı s.88 / PDF s.89 — Konuya Başlarken soru 2 / 19XU49LO.mp4 (EBA kökeni doğrulanmamış aday)",
-          "guidance": "Önce hasat ile Nevruz'un ortak toplumsal işlevini (birlik, paylaşma, kültürel aktarım) belirletin; ardından üretim/bereket ile bahar/yenilenme farkını gerekçelendirsinler. Video adayının tarımsal üretim ve toplu etkinlik görüntüleri yalnız görsel gözlem olarak kullanılabilir; önceki yanıttaki Sabantoy, Hızır, Kırım vb. törensel ayrıntıları kaynak kanıtı olmadan videonun sözlü içeriğine atfetmeyin.",
+          "answer": "Döküm, Özbekistan’dan Tataristan’a, Kırgızistan’dan Anadolu’ya, Kırım’dan Balkanlar’a tarımsal törenlerin benzerlik gösterdiğini belirtir. Koç katımı, kış yarısı, çiğdem eğlencesi, ilk saban izi, Hızır, Nevruz, Sabantoy ve bağ bozumu şenlikleri örnek verilir. Bu kutlamalar mevsim ve üretim döngülerini ortak ritüellerle karşılayarak kültürel belleği ve topluluk dayanışmasını yaşatır.",
+          "source_locator": "basılı s.88 / PDF s.89 — 19XU49LO kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p088.json",
+          "guidance": "İki veya daha fazla coğrafya ve töreni dökümden seçtirin; mevsim, üretim, ortak ritüel ve kutlama bağlarını karşılaştırmalarını isteyin. Tören adlarının bölgelere göre farklılık gösterebileceğini tartıştırın.",
           "answer_sections": {
-            "Ortak işlev: birlik ve dayanışma": "Katılımcıların aynı etkinlikte buluşması, birbirini tanımasını ve ortak değerleri paylaşmasını kolaylaştırır. İmeceyle yapılan hazırlıklar bu etkiyi güçlendirebilir.",
-            "Hasat kutlamasının ayırt edici yönü": "Üretim sürecinin sonunda emek, ürün ve bereket düşüncesi öne çıkar; ortak üretimin toplumsal değeri görünür hâle gelebilir.",
-            "Nevruz'un ayırt edici yönü": "Baharın gelişi ve yenilenme simgeleri üzerinden farklı kuşakların ortak ritüellere katılması kültürel sürekliliği destekleyebilir.",
-            "Kuşaklararası aktarım örneği": "Bir aile büyüğünün kutlamanın anlamını çocuğa anlatması, törendeki bir davranışın neden sürdürüldüğünün öğrenilmesine yardımcı olur. Bu, açıklayıcı örnektir; videodan alınmış olay değildir."
+            "Ortak coğrafyalar": "Özbekistan, Tataristan, Kırgızistan, Anadolu, Kırım ve Balkanlar.",
+            "Tören örnekleri": "Koç katımı, kış yarısı, çiğdem eğlencesi, ilk saban izi bayramı, Hızır, Nevruz, Sabantoy ve bağ bozumu.",
+            "Ortak kültüre katkı": "Mevsimsel dönüm noktaları ve üretim çevresindeki törenler; ortak çalışma, kutlama ve kültürel aktarımı sürdürür."
           },
-          "explanation": "PR #99 öncesi ayrıntılı ülke ve tören listesi sesli videoya atfediliyordu; PR #103 genel pedagojik cevabı geri kazandırdı. Bu tur, özgün sorunun istediği ortak kültür ve karşılaştırma işlevlerini ayrı örneklerle güçlendirdi. Aday MP4–EBA eşleşmesi ve tam konuşma transkripti hâlâ arşivlenmiş kanıt değil."
+          "explanation": "Kullanıcının sağladığı anlatım, Türk dünyasındaki tarımsal törenleri ve coğrafyalar arası benzerlikleri açıkça sıralar; yanıt bu örnekleri doğrudan kullanır."
         },
         "content": null
       },
@@ -17687,9 +17646,9 @@
           "web": {
             "units": [
               {
-                "id": "Orta Asya / Türkistan",
+                "id": "Dökümde geçen genişlik",
                 "section_keys": [
-                  "Orta Asya / Türkistan"
+                  "Dökümde geçen genişlik"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17697,9 +17656,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Azerbaycan",
+                "id": "Somut coğrafyalar",
                 "section_keys": [
-                  "Azerbaycan"
+                  "Somut coğrafyalar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17707,19 +17666,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Kırım ve Balkanlar",
+                "id": "Kültürel bağ",
                 "section_keys": [
-                  "Kırım ve Balkanlar"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Kavramın sınırı",
-                "section_keys": [
-                  "Kavramın sınırı"
+                  "Kültürel bağ"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17758,16 +17707,15 @@
           "printed_page": 88,
           "question_no": "3",
           "prompt_summary": "'Gönül coğrafyamız' sözünün çağrıştırdığı coğrafyalara örnek verme",
-          "answer": "“Gönül coğrafyamız” sözü yalnız siyasi sınırları değil, ortak dil, tarih, edebiyat, gelenek ve hatıralarla yakınlık hissedilen yerleri düşündürür. Örnek olarak Orta Asya'da Kazakistan, Kırgızistan ve Özbekistan; Kafkasya'da Azerbaycan; ayrıca Kırım ve Balkanlar anılabilir. Bu bölgelerin seçilmesi tek bir siyasi bütünlük iddiasına değil, farklı topluluklar arasında kurulmuş dilsel ve kültürel bağlara dayanır. Örneğin Nevruz'un farklı yerlerde kutlanması ortak bir kültürel unsurun yerel biçimlerle sürdürülebileceğini gösteren bir karşılaştırma konusu olabilir. Verilen yer adları soruya uygun yorum örnekleridir; videoda mutlaka sayılmış yerler olarak sunulmaz.",
-          "guidance": "Sınıfça haritada en az iki yer seçip her biri için 'yer – somut kültürel bağ – neden bu kavramla ilişkilendirilebilir?' zincirini kurdurun. Örneklerin öznel çağrışım içerebildiğini, kültürel yakınlığın coğrafi veya siyasi sahiplik anlamına gelmediğini açıklayın. Eski yanıtın Sibirya–Adriyatik gibi sesli anlatım iddialarını bağımsız kayıttan doğrulamadan geri getirmeyin.",
-          "source_locator": "basılı s.88-89 / PDF s.89-90 — Konuya Başlarken soru 3 / 19XU49LO.mp4 (EBA kökeni doğrulanmamış aday)",
+          "answer": "“Gönül coğrafyamız” ortak dil, tarih ve kültürel geleneklerle yakınlık duyulan geniş alanları çağrıştırır. Videoda toy sözcüğünün Sibirya’dan Adriyatik’e uzanan Türk dillerinde benzer anlamlarla yaşadığı söylenir; ayrıca Özbekistan, Tataristan, Kırgızistan, Anadolu, Kırım ve Balkanlar’daki tarımsal törenlerden söz edilir. Bu örnekler, coğrafi uzaklığa rağmen ortak sözlü kültür ve mevsimlik kutlama geleneklerinin sürdüğünü düşündürür.",
+          "guidance": "“Sibirya’dan Adriyatik’e” ifadesini ve dökümde sıralanan tören coğrafyalarını haritada gösterin. Her yer için dil, toy veya tarımsal tören gibi dökümdeki kültürel bağlardan birini gerekçe olarak yazdırın.",
+          "source_locator": "basılı s.88 / PDF s.89 — 19XU49LO kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p088.json",
           "answer_sections": {
-            "Orta Asya / Türkistan": "Kazakistan, Kırgızistan ve Özbekistan; Türk dilleri, sözlü kültür, anlatı ve törenler açısından karşılaştırılabilecek coğrafyalardır.",
-            "Azerbaycan": "Türkçeyle akraba bir dilin kullanılması ve edebiyat, müzik, tarihî ilişkiler gibi ortaklıklar üzerinden örneklendirilebilir.",
-            "Kırım ve Balkanlar": "Göç, ortak tarih, türkü, yer adları ve kültürel izler gibi bağlantılar çerçevesinde değerlendirilebilir; her yer için aynı bağın bulunduğu varsayılmaz.",
-            "Kavramın sınırı": "Gönül coğrafyası resmî bir ülke listesi veya sınır çizgisi değildir; seçilen yer, belirtilen kültürel/tarihî gerekçeyle ilişkilendirilmelidir."
+            "Dökümde geçen genişlik": "Toy sözcüğünün Sibirya’dan Adriyatik’e kadar konuşulan Türk dillerinde yaşadığı ifade edilir.",
+            "Somut coğrafyalar": "Özbekistan, Tataristan, Kırgızistan, Anadolu, Kırım ve Balkanlar.",
+            "Kültürel bağ": "Benzer anlamlı toy sözcüğü, tarımsal törenler, mevsim kutlamaları ve ortak çalışma kültürel yakınlık örnekleridir."
           },
-          "explanation": "PR #99 sonrası cevap genel kültür sınırına çekilmiş, PR #103 birkaç somut örnek kazandırmıştı. Bu tur, özgün sorudaki 'hangi coğrafyalar' gereğini birden çok açık örnek ve bunların seçim gerekçeleriyle karşılıyor; bunları MP4 transkripti gibi göstermiyor."
+          "explanation": "Coğrafya örnekleri artık kullanıcı tarafından sağlanan video dökümüne dayanıyor; varsayımsal yer adlarıyla sınırlı değil."
         },
         "content": null
       },
@@ -17852,8 +17800,8 @@
           "question_no": "4",
           "prompt_summary": "Yaş ve yeşil/yaşıl ilişkisini tabiatla bağ açısından yorumlama",
           "answer": "Soruda verilen “yaş” sözcüğünün ömür ve taze bitki anlamlarıyla “yaşıl/yeşil” kökteşliği, insanın yaşamı tabiatın canlılığı ve yenilenmesiyle birlikte düşünmesine örnek olarak yorumlanabilir. Bitkilerin yeşermesi, büyümesi ve mevsimlerle değişmesi; insanın yaş alması ve yaşamını dönemlere ayırması arasında bir çağrışım bağı kurulur. Örneğin baharda ağaçların yeniden yeşermesinin başlangıç ve umutla ilişkilendirilmesi, tabiatın dilde ve kültürel kutlamalarda bir anlam kaynağı olduğunu düşündürür. Bu bir kültürel yorumdur; sözcüklerin kökenini yalnız ses benzerliğinden türettiğimiz anlamına gelmez.",
-          "source_locator": "basılı s.88 / PDF s.89 — Konuya Başlarken / 19XU49LO.mp4 (EBA kökeni doğrulanmamış aday)",
-          "guidance": "Soru kökünde zaten sunulan yaş–yaşıl/yeşil ilişkisini yeniden ispatlatmak yerine 'tabiat–insan yaşamı–kültürel çağrışım' bağlantısını öğrencinin bir örnekle açıklamasını sağlayın. Dilsel öncül ile kişisel kültürel yorum ayrı işaretlensin. Konu derinleştirilirse tarihî Türkçe sözlükleri ek araştırma kaynağı olarak kullanın; aday MP4'ten doğrulanmamış diyalog aktarmayın.",
+          "source_locator": "basılı s.88 / PDF s.89 — 19XU49LO kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p088.json",
+          "guidance": "Soru kökündeki yaş–yaşıl/yeşil ilişkisini dilsel öncül olarak alın; öğrencilerden tabiat, insan yaşamı ve kültürel çağrışım arasındaki bağı bir örnekle açıklamalarını isteyin. Bu soru için video dökümünde ayrıca bir etimoloji iddiası bulunmadığından dilsel öncül ve yorum ayrı tutulmalıdır.",
           "answer_sections": {
             "Kitabın verdiği dilsel öncül": "Soru metni, “yaş”ın ömür ve taze bitki anlamlarını ve “yaşıl/yeşil” ile kökteşliğini başlangıç bilgisi olarak sunar. Öğrencinin görevi bu verinin çağrışımını yorumlamaktır.",
             "Canlılık ve yenilenme": "Bitkinin yeşermesi, insanın büyümesi ve tabiatın mevsimsel dönüşümü arasında hayatın sürekliliğine ilişkin çağrışımlar kurulabilir.",
@@ -17873,9 +17821,9 @@
           "web": {
             "units": [
               {
-                "id": "İmecenin ayırt edici özelliği",
+                "id": "Videodaki dayanak",
                 "section_keys": [
-                  "İmecenin ayırt edici özelliği"
+                  "Videodaki dayanak"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17883,9 +17831,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Somut örnek: ortak sulama kanalı",
+                "id": "İmecenin anlamı",
                 "section_keys": [
-                  "Somut örnek: ortak sulama kanalı"
+                  "İmecenin anlamı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17893,19 +17841,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Birlik ve beraberliğe katkısı",
+                "id": "Birlik ve beraberliğe katkı",
                 "section_keys": [
-                  "Birlik ve beraberliğe katkısı"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Video kanıtının sınırı",
-                "section_keys": [
-                  "Video kanıtının sınırı"
+                  "Birlik ve beraberliğe katkı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -17944,15 +17882,14 @@
           "printed_page": 88,
           "question_no": "5",
           "prompt_summary": "İmecenin birlik ve beraberlik açısından önemi",
-          "answer": "İmece, bir topluluğun ortak bir işi gönüllü veya karşılıklı yardımlaşmayla birlikte yapmasıdır. Örneğin bir köyde sulama kanalının temizliğini komşuların birlikte üstlenmesi, tek kişinin zorlanacağı işin tamamlanmasını kolaylaştırır. Herkesin emeğini paylaşması hem ortak yarar sağlar hem de insanların birbirine güvenmesini, sorumluluk almasını ve dayanışma içinde hareket etmesini destekler. Sonuçta birlik ve beraberlik yalnız aynı kutlamaya katılmakla değil, ortak bir ihtiyacın çözümü için birlikte çalışmakla güçlenir. Sulama kanalı örneği açıklama amacıyla oluşturulmuştur; videoda gerçekleştiği iddiası değildir.",
-          "explanation": "PR #103'ün temel yardımlaşma tanımı korundu; bu turda kolektif emek ile şenlikte paylaşma arasındaki kavramsal fark ve sınıf için kullanılabilir neden–sonuç örneği eklendi.",
-          "source_locator": "basılı s.88 / PDF s.89 — Konuya Başlarken soru 5 / 19XU49LO.mp4 (EBA kökeni doğrulanmamış aday)",
-          "guidance": "İmeceyi 'yardım edilen kişi – ortak iş – katkı verenler – toplumsal yarar' zinciriyle açıklatın. Kutlama, ürün paylaşımı ve imece kavramlarını eş anlamlı saymayın. Eski yanıtın saya gezme ve ev ev toplanan ürünlerle ilgili detayları sözlü video kanıtı olarak geri getirmeyin; gerekirse farklı kültür etkinlikleriyle karşılaştırın.",
+          "answer": "Videoda modern tarım festivallerinin üretim, ortak çalışma ve eğlence içerdiği; eski toyların ana temasının bu biçimlerde sürdüğü anlatılır. Bu ortak çalışma yönü imeceyle ilişkilendirilebilir: insanlar bir üretim veya ortak ihtiyaç için emeklerini birleştirir, yükü paylaşır ve topluluk bağlarını güçlendirir. İmece, yalnız aynı kutlamaya katılmak değil, ortak iş için birlikte emek vermektir.",
+          "explanation": "İmece yanıtı, kullanıcının sağladığı videoda toy ve modern festivaller için belirtilen ortak çalışma temasına bağlandı.",
+          "source_locator": "basılı s.88 / PDF s.89 — 19XU49LO kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p088.json",
+          "guidance": "İmeceyi ortak çalışma ve emek paylaşımıyla tanımlayın; videodaki festivallerde vurgulanan ortak üretim/çalışma yönüyle ilişkilendirin. Kutlama ile imeceyi aynı kavram saymayın; aralarındaki bağı gerekçelendirin.",
           "answer_sections": {
-            "İmecenin ayırt edici özelliği": "Bir işi ortak emek ve sorumlulukla gerçekleştirme; yalnız birlikte eğlenmek veya birbirine hediye vermek imeceyle aynı şey değildir.",
-            "Somut örnek: ortak sulama kanalı": "Komşular farklı işleri paylaşarak kanalı temizler. Böylece hem suya erişim kolaylaşır hem de ortak sorunun çözümü için işbirliği yapılır.",
-            "Birlik ve beraberliğe katkısı": "Ortak emek karşılıklı güveni, görev paylaşımını, yardımlaşmayı ve topluluk sorumluluğunu geliştirebilir.",
-            "Video kanıtının sınırı": "Aday MP4'ün inceleme notunda tarımsal üretim ve toplu etkinlik görüntüleri vardır; bu görüntüler imecenin belirli bir uygulamasını veya bir söyleşi cümlesini doğrulamaya yetmez."
+            "Videodaki dayanak": "Modern festivallerin üretim, ortak çalışma ve eğlence içerdiği belirtilir.",
+            "İmecenin anlamı": "Bir topluluğun ortak işi işbirliği ve emek paylaşımıyla yürütmesi.",
+            "Birlik ve beraberliğe katkı": "Ortak sorumluluk, karşılıklı yardımlaşma ve ürün/sonuç paylaşımı topluluk bağlarını kuvvetlendirebilir."
           }
         },
         "content": null
@@ -22681,16 +22618,16 @@
           "printed_page": 113,
           "question_no": "1",
           "prompt_summary": "Orhun Vadisi videosundaki bölgeyi ön bilgilerle ilişkilendirme",
-          "answer": "Ön bilgilerime göre Orhun Vadisi, günümüzde Moğolistan sınırlarında bulunan ve Türk dili ile tarihi açısından önemli yazılı anıtları barındıran bir bölgedir. Kök Türkler döneminden kalan Kül Tigin ve Bilge Kağan yazıtları, Türkçenin eski yazılı örnekleri arasında yer alır; dönemin yöneticileri, toplumsal hayatı ve millete verilen öğütler hakkında bilgi taşır. Videonun incelenmiş görsel karelerinde bozkır, dikili taş yazıtlar, koruma alanı, kaide ve müze teşhiri görülür; ayrıca ekranda “KÜL TİGİN ABİDESİ” başlığı yer alır. Böylece önceden bildiğim yazılı kültür mirasını görüntülerdeki anıt ve koruma çevresiyle ilişkilendirebilirim. Bu tarihî bilgiler, videonun henüz arşivlenmemiş sözlü anlatımından yapılmış birebir alıntılar değildir.",
-          "guidance": "Kitabın sorusu 'bölgeyle ilgili bildiklerinizi' istediği için önce öğrencinin bilgilerini örneklemesini sağlayın; yalnız videoda ne görüldüğünü sıralatmayın. 'Ön bilgi – görselde gözledim – bunlardan çıkardığım sonuç' şemasını kullandırın. Yer, dönem, yazıt adları ve Türk dilinin yazılı geçmişi ayrı kavramlardır. Önceki metindeki 1889 keşfi, yazıtların çözülmesi veya taç kimliği gibi sesli anlatım ayrıntılarını doğrulanmış transkript saymayın.",
-          "source_locator": "basılı s.113 / PDF s.114 — EBA QR 06740daa8a1a08c3bfe9d46c65f3fe56 / 19XU49LT.mp4; yalnız zaman damgalı görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LT.md; ses transkripti doğrulanmadı",
+          "answer": "Ön bilgilerime göre Orhun Vadisi, günümüzde Moğolistan sınırlarında bulunan ve Türk dili ile tarihi açısından önemli yazılı anıtları barındıran bir bölgedir. Kullanıcının sağladığı video dökümünde Bilge Kağan ve Kül Tigin anıtlarının yaklaşık 1300 yıllık olduğu, Kül Tigin Abidesi’nin 732’de, Bilge Kağan Anıtı’nın 735’te yapıldığı; yazıtların 1889’da bulunduğu ve çözümlemede Çince yazıların yanı sıra “Tengri” sözcüğünün önem taşıdığı anlatılır. Ayrıca 2001 kazılarında bulunan altın taç ve müzedeki taş eserlerden söz edilir. Böylece ön bilgi, videoda aktarılan tarihî anlatım ve görüntüler birbiriyle ilişkilendirilebilir.",
+          "guidance": "Kitabın sorusu “bölgeyle ilgili bildiklerinizi” istediği için önce öğrencinin bilgilerini örneklemesini sağlayın; ardından kullanıcının video dökümündeki tarihler, yazıtların bulunup çözülmesi ve müze buluntularıyla karşılaştırın. “Ön bilgi – video anlatımında verilen bilgi – görüntüde gözledim – çıkarımım” şemasını kullandırın.",
+          "source_locator": "basılı s.113 / PDF s.114 — EBA QR 06740daa8a1a08c3bfe9d46c65f3fe56 / 19XU49LT.mp4; kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p113.json; görsel inceleme: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LT.md",
           "answer_sections": {
             "Ön bilgilerim — örnek yanıt": "Orhun Vadisi, bugünkü Moğolistan'da Kök Türk tarihine ilişkin yazıtların bulunduğu yerdir. Kül Tigin ve Bilge Kağan yazıtları Türk dilinin eski yazılı kaynaklarındandır. Yazıtlar Türklerin siyasi, kültürel ve toplumsal yaşamını anlamak için önem taşır.",
             "Görsel kanıt — videoda gözlenen": "İnceleme notunda bozkır, taş yazıtlar, koruma alanı, taş kaide ve müze/vitrin görüntüleri kaydedilir. Ekranda “KÜL TİGİN ABİDESİ” yazısı da görülür.",
             "Bilgi–gözlem ilişkisi": "Önceden bilinen yazılı miras ve tarihî bölge bilgisi, görüntülerde görülen anıtlarla somutlaşır; koruma ve müzede sergileme görüntüleri mirası günümüze taşıma düşüncesini gündeme getirir.",
             "Kaynak ve yorum sınırı": "Ön bilgiler, ders kitabının bu sayfadaki Orhun Abideleri bağlamı ve genel tarih-dil bilgisine dayalı örnektir. Yazıtların keşif yılı, sesli anlatım, ayrıntılı nesne kimliği ve kaidenin simgesel açıklaması görsel karelerden kesinleştirilemez."
           },
-          "explanation": "PR #99'da ve güncel cevapta kaynak temkini korunmuş ancak somut tarihî ön bilgi neredeyse tümüyle çıkarılmıştı. Orhun Vadisi'nin konumu, Kök Türk yazıtları ve kültürel miras işlevi örnek öğrenci yanıtına geri alındı; görüntüden görülmeyen tarihî ayrıntı kesin video iddiası olarak sunulmadı."
+          "explanation": "Ön bilgi, kullanıcının sağladığı sözlü anlatım dökümü ve görsel kareler aynı yanıtta ayrı kanıt türleri olarak gösterildi."
         },
         "content": null
       },
@@ -26658,14 +26595,8 @@
               }
             ],
             "answer_text": {
-              "mode": "include",
-              "fragments": [
-                {
-                  "unit": "Gözlem",
-                  "text": "Kısmi görüntülerde tarihî taş yazıt yüzeyi, bozkır, yurt/çadır, toplu etkinlik ve tarihî mimari görülür.",
-                  "position": "start"
-                }
-              ]
+              "mode": "omit",
+              "reason": "Güncel kullanıcı dökümüne dayalı yapılandırılmış yanıtın tarih ve katkı bölümleri yanıtı doğrudan sunar; eski görüntü özeti kullanılmaz."
             }
           }
         },
@@ -26694,16 +26625,16 @@
           "printed_page": 129,
           "question_no": "1",
           "prompt_summary": "Türklerin dünya medeniyetine katkılarını video içeriğiyle ilişkilendirme",
-          "answer": "Kısmi görüntülerde tarihî taş yazıt yüzeyi, bozkır, yurt/çadır, toplu etkinlik ve tarihî mimari görülür. Türklerin dünya medeniyetine katkıları yalnız devlet kurma ve geniş coğrafyalarda yaşama ile sınırlı değildir. Örneğin Kök Türk dönemi Orhun Yazıtları, Türkçenin erken yazılı mirasını ve devlet-toplum ilişkisine dair düşünceleri günümüze ulaştırır. Kâşgarlı Mahmud'un Dîvânu Lugâti't-Türk eseri, dil ve kültür birikimini derleyip karşılaştırması yönüyle dikkate değer bir katkıdır. Selçuklu dönemindeki kervansaraylar ise uzun mesafeli ticaretin ve kültürler arası karşılaşmaların altyapısına örnek gösterilebilir. Bunlar bağımsız tarih ve edebiyat öğrenmelerinden verilen örneklerdir; videoda kesinlikle adlandırıldıkları veya görüntüdeki her yapının Türklerce inşa edildiği ileri sürülmez.",
-          "guidance": "Sorudaki 'katkı' sözcüğünü devlet kurmakla özdeşleştirmeden yazı, dil, ticaret ve kültür etkileşimi gibi alanlara ayırın. Her öğrenci bir somut örnek seçip 'hangi katkı, hangi tarihî eser/uygulama, niçin önemli?' bağlantısını kursun. Dersin başka bölümündeki Orhun Abideleri ve söz varlığı öğrenmelerine dayalı örnekler tarihî bilgi olarak kullanılabilir; kaynakta doğrulanmamış VTR cümlesi gibi gösterilmemelidir.",
-          "source_locator": "basılı s.129 / PDF s.130 — EBA QR 2d18e79ed46861b363ef8affbfefcecb / 19XU49LP.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md; ses transkripti doğrulanmadı",
+          "answer": "Kullanıcının sağladığı VTR dökümünde Türklerin Türkistan’dan Orta Asya’ya ve Avrupa içlerine uzanan tarihinden; Hun, Göktürk ve Uygur devletlerinden; Selçuklu ve Osmanlıların geniş coğrafyalardaki etkisinden söz edilir. Yazılı miras ve devlet geleneği, bu tarih anlatısının başlıca katkı alanları olarak sunulur. Öğrenciler bu örnekleri Orhun Yazıtları veya Dîvânu Lugâti’t-Türk gibi eserlerle ilişkilendirerek Türklerin dil, yazı ve kültür birikimine katkılarını açıklayabilir.",
+          "guidance": "Videonun kullanıcı tarafından sağlanan dökümünden Hun, Göktürk, Uygur, Selçuklu ve Osmanlı örneklerini seçtirin; ardından katkıyı yazı, dil, devlet ve kültür etkileşimi alanlarına ayırın. Her örneği “hangi katkı, hangi tarihî eser/uygulama, niçin önemli?” bağlantısıyla gerekçelendirin.",
+          "source_locator": "basılı s.129 / PDF s.130 — EBA QR 2d18e79ed46861b363ef8affbfefcecb / 19XU49LP.mp4; kullanıcı stüdyo/VTR dökümü: data/book/grade-11/themes/theme-2/pages/p129.json; görsel inceleme: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LP.md",
           "answer_sections": {
             "Devlet ve yazılı kültür": "Kök Türk devletinin bıraktığı Orhun Yazıtları, yönetim anlayışı ve Türkçenin yazılı geçmişi için somut bir örnektir. Tarihî devlet kurmak ile medeniyete katkının hangi alanda oluştuğunu ayırın.",
             "Dil ve kültür çalışmaları": "Dîvânu Lugâti't-Türk, farklı Türk boylarının söz varlığı ve kültürel hayatına ilişkin malzemeleri toplaması bakımından örneklendirilebilir.",
             "Ulaşım ve kültürel etkileşim": "Selçuklu kervansarayları ticaret yollarına hizmet veren yapılardır; farklı bölgelerden insan ve malların dolaşımıyla kurulabilecek ilişki açıklanabilir.",
             "Gözlem": "Zaman damgalı inceleme notlarında yazıt yüzeyi, bozkır, çadır, toplu etkinlik ve mimari görüntüleri kaydedilmiştir. Bunların her biri araştırma konusu olabilir; bir yapının görüntüde bulunması, onu kimin inşa ettiğinin veya medeniyete katkısının kanıtı değildir."
           },
-          "explanation": "PR #99 öncesinde video sunucusuna atfedilen Hun–Göktürk–Uygur–Selçuklu–Osmanlı sıralaması doğrulanmış ses kaydı değildir. PR #99 bunları çıkarırken öğrenciye yararlı katkı örneklerini de kaldırmıştı. Kayıtlı görsel kanıt korunarak bağımsız edebiyat/tarih örnekleri geri kazanıldı."
+          "explanation": "Video anlatımındaki devletler dizisi kullanıcı dökümünden alındı; yazılı mirasa ilişkin örnekler ayrıca açıklanarak soru için tarihî bağ kuruldu."
         },
         "content": null
       },
@@ -26787,9 +26718,9 @@
           "printed_page": 129,
           "question_no": "2",
           "prompt_summary": "Türk dünyasının farklı siyasi yapılardaki varlığını yorumlama",
-          "answer": "Kitabın alıntıladığı “yedi bağımsız ve yirmiye yakın özerk devlet” ifadesi, Türk dünyasının tek bir ülkeden ibaret olmayıp farklı siyasal yapılar ve geniş bir coğrafya içinde yer aldığını vurgular. Buradaki asıl düşünce, farklı ülkelerde ve idari yapılarda yaşayan Türk topluluklarının uluslararası ilişkiler, dil ve kültür alışverişi bakımından birbirleriyle bağlantılar kurabilmesidir. Bağımsız devlet ile özerk yönetim aynı hukuki statüde değildir; bu nedenle sayıları toplayarak tek bir siyasi birlik varmış gibi yorumlamak doğru olmaz. İfadedeki rakamlar metnin üretildiği dönemin söylemi olarak ele alınmalı; güncel ve resmî sayım oldukları ayrıca doğrulanmadan ileri sürülmemelidir.",
-          "explanation": "PR #99'un doğru kaynak ihtiyatı korunurken sorunun istediği somut siyasi/coğrafi yorum geri kazandırıldı. Önceki sürümdeki 165/250 milyon gibi sayılar ve video konuşmacısına atfedilen cümle, bağımsız doğrulama olmadan cevap bilgisi olarak kullanılmadı.",
-          "source_locator": "basılı s.129 / PDF s.130 — 19XU49LP.mp4, kısmi görsel inceleme: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md; ses dökümü yok",
+          "answer": "Videonun kullanıcı tarafından sağlanan VTR dökümünde Türk Dünyası kavramının bütün Türk halklarını ifade ettiği belirtilir. Döküm, Türkiye, Azerbaycan, Kazakistan, Kırgızistan, Özbekistan, Türkmenistan ve KKTC gibi bağımsız devletlerde ortalama 165 milyon; dünya genelinde ise toplam 250 milyon Türk bulunduğunu aktarır. Bunlar videonun yayımlandığı dönemin anlatımındaki sayılardır; bağımsız güncel sayım olarak değil, videonun savı olarak ele alınmalıdır. Bağımsız devlet ve özerk yönetim aynı siyasal statü değildir.",
+          "explanation": "Siyasal yapı ve nüfus sayıları kullanıcı dökümünde videonun aktardığı bilgiler olarak verildi; dönemsel ifade ile güncel sayım ayrımı korundu.",
+          "source_locator": "19XU49LP kullanıcı stüdyo/VTR dökümü: data/book/grade-11/themes/theme-2/pages/p129.json; görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LP.md",
           "answer_sections": {
             "İfadenin temel anlamı": "Farklı ülkelerde ve idari yapılarda yaşayan Türk topluluklarının coğrafi yaygınlığına ve siyasal görünürlüğüne dikkat çekilir.",
             "Bağımsız ve özerk statü ayrımı": "Bağımsız devlet uluslararası hukukta egemen bir siyasi yapıdır; özerk yönetim ise farklı derecelerde yetkiye sahip olup çoğunlukla başka bir devletin hukuk düzeninde yer alır. Bu iki grup eş değer devletler olarak sayılamaz.",
@@ -26890,8 +26821,8 @@
           "printed_page": 129,
           "question_no": "3",
           "prompt_summary": "Geniş coğrafyada yaşayan Türklerin tarihe etkisini değerlendirme",
-          "answer": "Geniş coğrafyalarda yaşayan Türk topluluklarının tarih üzerindeki etkisi, farklı dönemlerde kurdukları siyasi yapılar kadar, dillerini ve kültürlerini yazılı eserlerle aktarmaları ve bölgeler arası etkileşimlere katılmaları üzerinden de değerlendirilebilir. Örneğin Orhun Yazıtları yönetim, millet ve sorumluluk anlayışı için erken bir yazılı tanıktır; Dîvânu Lugâti't-Türk ise dil ve kültür mirasının derlenmesine somut örnektir. Göçler, ticaret ve komşu toplumlarla temas da dil, sanat ve yaşam biçimlerinin karşılıklı değişimine zemin hazırlamıştır. Bu etkinin kapsamını değerlendirirken 'dünya tarihine yön vermek' gibi geniş bir yargıyı tek bir görüntüye değil, belirli tarihî örneğe ve gerekçesine dayandırmak gerekir.",
-          "source_locator": "basılı s.129 / PDF s.130 — 19XU49LP.mp4, kısmi görsel inceleme: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md; ses dökümü yok",
+          "answer": "Kullanıcının sağladığı videoda Türklerin göçleri, farklı coğrafyalarda devletler kurmaları, dil ve kültürlerini taşımaları, Orta Asya’dan Avrupa içlerine uzanan tarihî etkileri anlatılır. Öğrenci bu anlatımı Orhun Yazıtları, Dîvânu Lugâti’t-Türk veya Selçuklu kervansarayları gibi somut örneklerle ilişkilendirerek siyasi, dilsel, kültürel ve ticari katkıları değerlendirebilir.",
+          "source_locator": "19XU49LP kullanıcı stüdyo/VTR dökümü: data/book/grade-11/themes/theme-2/pages/p129.json; görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LP.md",
           "answer_sections": {
             "Siyasi yapı ve yönetim": "Farklı dönemlerde kurulan siyasi örgütlenmeler, yönetim ve toplumsal düzen bakımından incelenebilir. Devlet adını saymak yerine hangi tarihî etkinin tartışıldığını açıklayın.",
             "Göç ve kültürel etkileşim": "Göç ve ticaret hareketleri, Türk topluluklarıyla komşu toplumlar arasında ürünlerin, tekniklerin, anlatıların ve sözcüklerin alışverişine ortam hazırlayabilir.",
@@ -26899,8 +26830,8 @@
             "Dil mirası — Dîvânu Lugâti't-Türk": "Söz varlığı ve farklı Türk topluluklarının kültürüne ilişkin bilgilerin derlenmesi, yazılı aktarımın somut katkısıdır.",
             "Görsel–tarihsel iddia ayrımı": "Video adayındaki yazıt, bozkır ve mimari görüntüleri araştırma sorusu için kullanılabilir; bunlar tek başına eserlerin kimliğini, tarihini veya sözlü anlatımdaki tarih görüşünü doğrulamaz."
           },
-          "guidance": "Soruya iki tarihî örnek ve bunların niçin önemli olduklarını açıklayan neden-sonuç cümleleri isteyin. Önceden öğrenilmiş eser bilgisiyle videodaki kısmi görüntüyü birbirinden ayırın. Göçün veya siyasi etkinin her durumda tek yönlü olduğu genellemesinden kaçının; etkilenmenin karşılıklı olabileceğini hatırlatın.",
-          "explanation": "PR #99'da yerinde bir kaynak uyarısı eklenmişti fakat öğrenci cevap metni video görüntülerinden araştırma sorusu üretmeye indirgenmişti. Zaten var olan yazılı miras alt bölümleri ana cevapla tutarlı hâle getirilerek tarihî örneğe dayalı çözümleme geri kazanıldı."
+          "guidance": "Videonun kullanıcı dökümünden iki tarihî örnek seçtirin; “anlatımdaki bilgi → örnek eser/uygulama → katkının önemi” zincirini kurdurun. Geniş bir yargıyı tek bir görüntüye değil, dökümdeki anlatım ve somut tarihî örneklere dayandırın.",
+          "explanation": "Videonun içerik dökümü soru bağlamına eklendi; geniş tarihî yargılar somut eser ve uygulama örnekleriyle temellendirildi."
         },
         "content": null
       },
@@ -29275,47 +29206,47 @@
           "printed_page": 140,
           "question_no": "Söz Varlığımız",
           "prompt_summary": "Çağ, canan, sine, kahır, saban kelimelerini atışmadaki bağlamına göre anlamlandırma ve alternatif önerme",
-          "answer": "Çağ: dönem veya devir; canan: gönülden sevilen kimse; sine: göğüs, bağır, kimi kullanımlarda yürek; kahır: derin üzüntü veya sıkıntı; saban: toprağı sürmeye yarayan tarım aracı. Bunlar sözcüklerin temel anlamlarıdır. Sözgelimi çağ→devir, canan→sevgili, kahır→üzüntü ve saban→pulluk yakın anlamlı önerilerdir; fakat bir atışma dizesine yerleştirildiklerinde ses, hece, uyak ve imge farklılaşabilir. 'Kahır' yerine 'üzüntü' seçildiğinde hece sayısı bile değişebilir. Kitaptaki çalışma, gerçek dinleme dizesi ve TDK sözlüğü karşılaştırılarak tamamlanmalıdır; bu öneriler doğrulanmış video dizesi değildir.",
-          "guidance": "Öğrencinin kitapta verilen beş sözcük için (1) kendi anlam tahminini, (2) TDK kontrolünü, (3) gerçekten dinlediği mısrayı ve (4) alternatif sözcüğü yan yana getirmesini sağlayın. 'Çağ/devir' ve 'kahır/üzüntü' ikamelerinde hece farkının ahenge etkisini tartıştırın; sözcüğün mecaz anlamını açıklamak için gerçek dize gerekçesi isteyin. Sine'nin videoda geçip geçmediğine ilişkin kesin tespit yapmayın; depoda doğrulanmış ses transkripti bulunmuyor.",
-          "source_locator": "basılı s.140 / PDF s.141 — EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; kısmi görsel kanıt: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti doğrulanmadı",
+          "answer": "Dökümdeki kullanımlar: **çağ** “Zaman geçen çağ gibiyim”; **canan** “Başı duman cananın dağ gibiyim”; **kahır** “Yel vurması neme kahır”; **saban** “Saban gibi toprakları”; **sine** ise paylaşılan dörtlüklerde yer almıyor. Çağ “devir/dönem”, canan “gönülden sevilen kimse”, kahır “derin üzüntü veya sıkıntı”, saban “toprağı sürmeye yarayan araç” anlamındadır. “Sine” için temel sözlük anlamı göğüs/bağırdır; ancak bu dökümde bağlam örneği yok. Yakın karşılık önerirken dizedeki hece sayısı, uyak, anlam ve imgeyi yeniden değerlendirmek gerekir.",
+          "guidance": "Önce beş sözcüğün anlamını tahmin ettirin, ardından sözlükle karşılaştırın. Dökümde geçen dört sözcüğün bulunduğu dizeyi p140 sayfa JSON’undan kullanarak bağlamı tartıştırın. “Sine”nin kullanıcı tarafından sağlanan dörtlüklerde bulunmadığını açıkça belirtin; daha geniş videoda başka yerde geçmediği sonucunu çıkarmayın. Alternatif sözcükleri dizede deneyip anlam, hece ve ahenk etkisini karşılaştırın.",
+          "source_locator": "basılı s.140 / PDF s.141 — 19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrı görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
             "çağ": {
               "temel_sozluk_alani": "zaman, dönem, devir",
-              "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-              "baglam_tahmini": "Dizede zamanın geçişi, bir dönem veya bir tarihî devre işaret ediyorsa 'çağ' bu anlamda kullanılabilir. Hangi anlamın uygun olduğu duyulan dizeye göre belirlenmelidir.",
+              "videodaki_dize": "“Zaman geçen çağ gibiyim.”",
+              "baglam_tahmini": "Zamanın geçişi veya bir dönem çağrışımı vardır; dörtlüğün devamındaki dağ imgesiyle kurulan benzetme birlikte okunmalıdır.",
               "tdk_kontrolu": "zaman dilimlerinden her biri; devir",
-              "alternatif": "Devir veya dönem yakın karşılıktır; çağ tek, devir ve dönem iki hecedir. Bu nedenle dize ritmi ve uyak etkisi ayrıca denenmelidir."
+              "alternatif": "Devir veya dönem düşünülebilir; dizede hece ve uyak yapısını yeniden sınayın."
             },
             "canan": {
               "temel_sozluk_alani": "gönülden sevilen kimse, sevgili",
-              "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-              "baglam_tahmini": "Sevilen kişiye hitap veya onu betimleme bağlamı varsa canan 'sevgili' anlamına gelebilir; bu bir video alıntısı değil koşullu anlam tahminidir.",
+              "videodaki_dize": "“Başı duman cananın dağ gibiyim.”",
+              "baglam_tahmini": "Canan, sevgili anlamıyla kullanılır; dize sevgiliyi başı dumanlı dağa benzeten imgesel bir söyleyiş kurar.",
               "tdk_kontrolu": "gönülden sevilen kimse",
-              "alternatif": "Sevgili anlamca yakındır; canan iki, sevgili üç hecelidir. İkamenin ritim ve ses benzerliğini değiştirip değiştirmediği dizede kontrol edilir."
+              "alternatif": "Sevgili yakın karşılıktır; hece sayısı ve dizedeki ses düzeni değişebilir."
             },
             "sine": {
               "temel_sozluk_alani": "göğüs, bağır",
-              "videodaki_dize": "Doğrulanmış transkript yok.",
-              "baglam_tahmini": "Sine bedensel 'göğüs/bağır' anlamında veya duyguların bulunduğu yer için mecazen kullanılmış olabilir; gerçek dize olmadan karar verilemez.",
+              "videodaki_dize": "Kullanıcının sağladığı dörtlüklerde bu sözcük geçmiyor.",
+              "baglam_tahmini": "Bu dökümde bağlamı bulunmadığından yalnız sözlük anlamı verilebilir.",
               "tdk_kontrolu": "göğüs, bağır",
-              "alternatif": "Göğüs veya bağır, bağlam uygunsa yürek önerilebilir; ses ve çağrışım değiştiğinden doğrudan eşdeğer oldukları varsayılmaz."
+              "alternatif": "Bağlama göre göğüs, bağır veya mecazen yürek düşünülebilir; bu kayıtta dize örneği yok."
             },
             "kahır": {
               "temel_sozluk_alani": "derin üzüntü veya acı, sıkıntı",
-              "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-              "baglam_tahmini": "Duygusal acı, derin sıkıntı veya üzüntü anlatılıyorsa kahır sözcüğünün böyle bir anlam alanı olabilir; dize doğrulanmadan kesinleştirilmez.",
+              "videodaki_dize": "“Yel vurması neme kahır.”",
+              "baglam_tahmini": "Kahır, üzüntü veya sıkıntı anlam alanında kullanılır; dize doğa imgesi üzerinden duygusal bir durumu dile getirir.",
               "tdk_kontrolu": "derin üzüntü veya acı, sıkıntı",
-              "alternatif": "Üzüntü veya sıkıntı yakın anlamlı olabilir. Kahır iki, üzüntü üç hecelidir; söyleyişin ahengi değişebilir."
+              "alternatif": "Üzüntü veya sıkıntı yakın karşılıklardır; hece yapısı ve şiirsel etki değişebilir."
             },
             "saban": {
               "temel_sozluk_alani": "toprağı sürmeye yarayan tarım aracı",
-              "videodaki_dize": "Doğrulanmış transkript yok; videoda geçtiği söylenemez.",
-              "baglam_tahmini": "Sabanın gerçek bir tarım aracı mı yoksa bir benzetme unsuru mu olduğu, bulunduğu mısranın bütününden anlaşılır.",
+              "videodaki_dize": "“Saban gibi toprakları, / Eş eşebilirsen eğer.”",
+              "baglam_tahmini": "Saban, toprağı işleme imgesi içinde kullanılır; “eşmek” fiili ve sonraki tekrar dörtlükteki ses/ifade oyununu kurar.",
               "tdk_kontrolu": "toprağı sürmeye yarayan çiftçilik aracı",
-              "alternatif": "Pulluk yakın karşılıktır; ancak çağrışım ve ses yapısı farklılaşabileceği için dizede denenmelidir. 'Sürmek' fiili saban adının doğrudan eş anlamlısı değildir."
+              "alternatif": "Pulluk yakın karşılıktır; sözcük değişince imge, hece ve uyak etkisini dizede karşılaştırın."
             }
           },
-          "explanation": "PR #99 sözlük verisini korumak amacıyla doğru biçimde kaynağı sınırlamıştı; PR #103 temel anlam ve ikameleri kısmen geri kazandırdı. Bu turda her sözcük için örnek alternatifin ritim/çağrışım sonucu gösterildi; kitaptaki iki aşamalı anlam tahmini–TDK denetimi ve bağlamsal ikame görevi güçlendirildi. Videoya ait mısra üretilmedi.",
+          "explanation": "Kullanıcının sağladığı atışma dökümü dört kelimenin gerçek dize bağlamını gösteriyor. “Sine” bu paylaşılan dörtlüklerde yer almıyor; bu sınırlı ifade, videonun tamamına dair bir yokluk iddiası değildir.",
           "dictionary_terms": [
             {
               "term": "çağ",
@@ -29481,14 +29412,14 @@
           "printed_page": 141,
           "question_no": "1",
           "prompt_summary": "Âşıklık geleneğinin korunması ve yaşatılması için yapılabilecekler",
-          "answer": "Âşıklık geleneğinin korunması için yaşayan âşıkların icraları izin alınarak kaydedilmeli, kayıtlar tarih, yöre, kullanılan saz ve icra bağlamı gibi bilgilerle arşivlenmelidir. Okullarda âşıklarla söyleşiler ve dinleti–atölyeler düzenlenerek usta-çırak aktarımı ve sözlü edebiyatın özellikleri yeni kuşaklara tanıtılabilir. Erman Artun'un metni geleneği saptama, koruma, teşvik etme, eğitimle aktarma ve çağdaş yorumlarla yaşatma ilkelerini öne çıkarır. Örneğin öğrencilerin bir yöreden icra derleyip aynı geleneğin Kazaklarda 'akın', Kırgızlarda 'aytışçı' gibi adlarla yaşadığını araştırmaları, ortak miras ile yerel farklılığı birlikte gösterir. Bunlar metinden geliştirilen uygulama önerileridir; videodaki söyleşi konuşmacısının doğrulanmamış sözleri değildir.",
+          "answer": "Âşıklık geleneğinin sürmesi için yaşayan âşıkların eserleri ve icraları kaydedilip kaynak bilgileriyle arşivlenebilir; okullarda dinleti, söyleşi ve usta-çırak çalışmaları yapılabilir; sözlü şiirin doğaçlama, saz ve karşılıklı söyleyiş yönleri yeni kuşaklara aktarılabilir. Kullanıcının sağladığı söyleşide Prof. Dr. Muammer Mete Taşlıova, âşıklığı Türk kültürünün yaşayan önemli alanlarından biri olarak tanımlar ve ozanlıktan âşıklığa geçişi tarihsel bir dönüşüm içinde açıklar. Bu görüş, geleneğin yalnız eserleri saklayarak değil, icra ve aktarım ortamlarını yaşatarak korunması gerektiğini destekler.",
           "evidence_quotes": [
             "Bilgi ve eğitim boyutuna ağırlık verilerek, âşıklık geleneği kültürel mirasının saptanması, korunması, teşviki ve aktarılmasını hedef alan politikalar geliştirilmelidir.",
             "geçmişi gelecek kuşaklara taşımak ve çağdaş yorumlarını yapmak amacıyla sosyal, kültürel ve sanatsal çalışmaları, toplumumuzun değişik kesimleri ile birlikte yürütme"
           ],
-          "explanation": "Âşıklığın geleceğe taşınmasına dair metinsel öneriler ve doğrulanmış iki kitap alıntısı korunmuştur. Eski sürümde video usta–çırak ve sazlı icra iddiaları içerik dökümü gibi sunuluyordu; bunlar yeniden atfedilmedi. Bu tur kitabın gerçekten listelediği Türk dünyası adlandırmalarını ve uygulanabilir, izinli arşivleme modelini daha belirgin hâle getirmiştir.",
-          "guidance": "Öneriyi metindeki koruma/teşvik/aktarım ilkelerinden biriyle ilişkilendirtin. Somut bir okul uygulaması planlatın: kiminle, nerede, hangi izinle, nasıl kaydedilecek ve sonraki kuşağa nasıl aktarılacak? Basılı s.141'deki ozan/âşık/akın/aytışçı örneklerini kullanarak geleneklerin ortak ve yerel yanlarını karşılaştırın. Görsel söyleşi kaydının konuşmacıya ait birebir görüş sunduğunu varsaymayın; tam ses transkripti doğrulanmamıştır.",
-          "source_locator": "basılı s.141 / PDF s.142 — soru 1; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4; görsel kanıt ve sınırlar: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
+          "explanation": "Kitaptaki koruma/aktarım ilkeleri, kullanıcının sağladığı söyleşide yer alan âşıklık tanımı ve tarihsel çerçeveyle birlikte ele alındı.",
+          "guidance": "Metindeki koruma, teşvik, eğitim ve aktarım önerilerini; videodaki uzman görüşünde açıklanan yaşayan sözlü şiir geleneği, sazlı icra ve farklı icra mekânlarıyla ilişkilendirin. Öğrencilerden izinli kayıt, kaynak bilgisi, dinleti veya söyleşi gibi somut bir uygulama önermelerini isteyin.",
+          "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
           "answer_sections": {
             "Metinden Doğrudan Çıkanlar": [
               "Geleneği belgelemek ve korumak.",
@@ -29602,15 +29533,15 @@
           "printed_page": 141,
           "question_no": "2",
           "prompt_summary": "Âşıklık geleneğini sürdürmenin Türk kültür mirası açısından önemi",
-          "answer": "Âşıklık geleneği yalnız eski şiirlerin korunması değil, sözün sazla ve dinleyici önünde yeniden üretilen bir kültürel birikim olarak yaşatılmasıdır. Erman Artun'un basılı metni, farklı Türk topluluklarında âşık, ozan, akın ve aytışçı gibi adlarla karşılaşılan bu geleneğin ortak hafızayı kuşaktan kuşağa taşıdığını belirtir. Örneğin Türkiye'deki âşıklık ile Kırgız Türklerindeki aytışçı geleneğini karşılaştırmak, aynı sözlü kültür çevresinin yerel söyleyişlerle çeşitlendiğini fark ettirir. Geleneğin sürdürülmesi; Türkçenin söz varlığını, anlatma ve karşılıklı söyleme becerilerini, kültürel belleği ve topluluklar arası yakınlığı gelecek kuşaklara aktarır. Bu yorum basılı metne dayanır; videodaki konuşmacılara ait doğrulanmamış sözler içermez.",
+          "answer": "Âşıklık geleneğini sürdürmek; Türk sözlü şiirinin, sazla söyleyişin, ortak kültürel belleğin ve kuşaklar arası aktarımın yaşamasına katkı sağlar. Kullanıcının sağladığı söyleşide Taşlıova, geleneğin kamlık/baksılık ve ozanlık dönemlerinden gelişerek farklı adlarla günümüze ulaştığını; âşıklığın 16. yüzyılda yeni bir biçim aldığını anlatır. Dış ses bunu Orta Asya’dan Anadolu’ya uzanan, ustaları ve çırakları olan uzun bir kültür yolculuğu olarak sunar. Bu tarihsel aktarım, geleneğin hem ortak miras hem de yaşayan bir sanat olduğunu gösterir.",
           "evidence_quotes": [
             "Türk dünyası âşıklık geleneği, yüzyılların deneyimlerinden süzülerek biçimlenmiş, kuşaktan kuşağa aktarılan bir değerler bütünüdür.",
             "Kültürel miras, sürdürülebilir kalkınma ve barışın garantisidir.",
             "Kültür, ulusları birbirlerine yakınlaştırmakta, insanların barış ve hoşgörü içinde yaşamalarının temelini oluşturmaktadır."
           ],
-          "explanation": "PR #99, kaynak dışı video güzergâhları ve konuşmacı atıflarını kaldırarak isabetli davrandı; PR #103 somut cevabı büyük ölçüde geri kazandırdı. Bu tur özgün basılı s.141'de verilen Türk dünyası adlarını ve üç aşamalı kültürel miras gerekçesini alt bölümlere ekledi. Üç basılı alıntının kaynak ilişkisi korundu.",
-          "guidance": "Yalnız 'gelenek önemlidir' cevabıyla yetinmeyin. Öğrenciden basılı metindeki 'kuşaktan kuşağa aktarılan' ve 'ulusları yakınlaştırmakta' dayanaklarına dayanarak neyin (sözlü şiir, saz, icra), nasıl (eğitim, buluşma, kuşaklararası aktarım) ve niçin (ortak kültürel hafıza, tanışma/hoşgörü) korunduğunu gerekçelendirmesini isteyin. Âşık–akın–aytışçı karşılaştırmasında farklı adların tüm icraların aynı olduğu anlamına gelmediğini hatırlatın. Depoda tam ses transkripti yok; doğrulanmamış söyleşi sözlerini alıntılamayın.",
-          "source_locator": "basılı s.141 / PDF s.142 — soru 2; QR-EBA-79b9d858a98472d2c1c9c773b715c6a2 / 19XU49MG.mp4; görsel kanıt ve sınırlar: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md",
+          "explanation": "Kültürel miras yanıtı, kitapta basılı ortak miras açıklamalarıyla birlikte kullanıcının sağladığı söyleşi ve dış ses dökümünü de içeriyor.",
+          "guidance": "Öğrencilerden “neyi koruyoruz, hangi yollarla aktarıyoruz, kültür mirası için neden önemli?” sorularına dayanaklı yanıt isteyin. Basılı metindeki kuşaktan kuşağa aktarım ve kültürler arası yakınlaşma görüşlerini; kullanıcı dökümündeki ozanlık/âşıklık tarihi, usta-çırak ve sözlü şiir anlatımıyla birleştirebilirler.",
+          "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
           "answer_sections": {
             "Kültürel Bellek": "Basılı metnin 'kuşaktan kuşağa aktarılan bir değerler bütünü' tanımı, âşıkların eserlerinin yanında sözlü anlatma/ezgili söyleme geleneğinin ve geçmiş deneyimlerin de korunmasını gerektirir. Yalnız kayıt saklamak değil, geleneğin yaşatılarak aktarılması önemlidir.",
             "Türk Dünyasındaki Yaygınlık": "Kitapta Türkiye için 'ozan, âşık', Kazak Türkleri için 'akın, aytısger', Kırgız Türkleri için 'aytışçı', Türkmen/Özbek sahaları için 'bahsi' gibi adlandırmalar verilir. Adlar ve yerel icra biçimleri farklılaşsa da bu örnekler kültürel bağları karşılaştırmaya imkân verir.",
@@ -29691,9 +29622,9 @@
           "question_no": "1",
           "prompt_summary": "Metnin başlık ve görselinden hareketle “atışma”nın âşıklık geleneğindeki yerini tahmin etme",
           "answer": "Başlık ve görsel, sazlarıyla karşılıklı söyleyen iki âşığın bulunduğunu düşündürür. Dökümde Murat Çobanoğlu ile Şeref Taşlıova’nın toplam altı dörtlükte (her biri üçer dörtlük söyleyerek) sırayla karşılık verdiği; kapanışlarda değişen eylemlerin “-ebilirsen eğer” kalıbına bağlandığı görülür. Bu örnek, atışmanın karşılıklı söz üretimi, saz eşliği ve ortak bir ayak çevresinde ilerlediği tahminini destekler.",
-          "explanation": "Soru doğrudan tahmin istemektedir; geleneğin bütün teknik kurallarını önceden doğru cevap olarak vermek etkinliğin işlevini bozar.",
+          "explanation": "Öğrenciler önce yalnız başlık ve görselden tahmin eder; izleme sonrasında kullanıcı dökümündeki karşılıklı altı dörtlük ve tekrar eden “-ebilirsen eğer” kalıbıyla tahminlerini karşılaştırır.",
           "guidance": "Başlık ve görselden gerekçelendirebildiğiniz tahminleri yazın. Genel âşıklık bilgilerini daha sonra doğrulama veya karşılaştırma için kullanabilirsiniz.",
-          "source_locator": "basılı s.142 / PDF s.143 — Metni Anlayalım soru 1",
+          "source_locator": "basılı s.142 / PDF s.143 — soru ve izleme sonrası karşılaştırma; kullanıcı video dökümü: data/book/grade-11/themes/theme-2/pages/p140.json",
           "answer_sections": {
             "Başlıktan Çıkan Tahmin": "İki âşığın karşılıklı olarak şiir/söz söyleyeceği bir icra.",
             "Görselden Çıkan Tahmin": "Sazın icrada önemli olduğu ve iki sanatçının birbirine cevap veren bir düzen içinde bulunabileceği.",
@@ -29711,9 +29642,9 @@
           "web": {
             "units": [
               {
-                "id": "Benzetmenin unsurları — öğretim örneği",
+                "id": "Benzetme örnekleri",
                 "section_keys": [
-                  "Benzetmenin unsurları — öğretim örneği"
+                  "Benzetme örnekleri"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29721,9 +29652,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Atışmaya olası katkılar",
+                "id": "Atışmaya katkısı",
                 "section_keys": [
-                  "Atışmaya olası katkılar"
+                  "Atışmaya katkısı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29731,19 +29662,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Doğrulanmış performans gözlemi",
+                "id": "Çözümleme",
                 "section_keys": [
-                  "Doğrulanmış performans gözlemi"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Çözümleme şeması",
-                "section_keys": [
-                  "Çözümleme şeması"
+                  "Çözümleme"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29782,16 +29703,21 @@
           "printed_page": 142,
           "question_no": "2",
           "prompt_summary": "Atışmadaki benzetmeleri ve bunların âşık atışmasına katkısını belirleme",
-          "answer": "Benzetme, bir varlığı veya durumu başka bir varlığın belirgin özelliğiyle ilişkilendirerek anlatımı somut ve etkili kılar. Örneğin atışmadan alınmış olmayan 'sözün ırmak gibi akması' benzetmesinde benzeyen söz, benzetilen ırmak, benzetme yönü ise akıcılıktır. Bir âşık benzetmeyi karşısındakine ustaca cevap vermek, bir duyguyu görünür kılmak veya mizah oluşturmak için kullanabilir. İncelenen atışmada iki icracının sazla karşılıklı söylemesi ve seyircinin tepki vermesi görsel olarak doğrulanmıştır; gerçek atışmadaki benzetmeleri sıralamak içinse duyulan dizelerin ayrıca kaydedilmesi gerekir.",
-          "guidance": "İlk olarak videodan ALINMAMIŞ kısa bir model benzetmeyle unsurları gösterin. İkinci adımda öğrencilerin dinlediği gerçek dizeleri yazdırıp her biri için dört unsur ve atışmaya katkı tespiti isteyin. Görsel alkış veya sazı belirli bir benzetmenin yarattığı sonucun kanıtı saymayın; ses transkripti depoda bulunmuyor.",
-          "source_locator": "basılı s.142 / PDF s.143 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "Dökümdeki belirgin benzetmeler arasında “Çiçek veren bağ gibiyim”, “Zaman geçen çağ gibiyim”, “Başı duman cananın dağ gibiyim”, “Saban gibi toprakları” ve “Naylon bir balon gibi” ifadeleri vardır. “Gibi” ile kurulan bu benzetmeler bağ, çağ, dağ, saban ve balon imgelerini kullanarak duyguyu ve söyleyiş oyununu somutlaştırır. Şeref Taşlıova’nın “Meydan ay hindi gibi” tekrarında ise abartılı ve mizahi bir imge öne çıkar. Atışmadaki “…-ebilirsen eğer” tekrar kalıbı karşılıklı meydan okuma ve ahenk duygusunu güçlendirir.",
+          "guidance": "Öğrenciler her benzetmede benzeyen, benzetilen, benzetme edatı ve bağlamdaki işlevi belirlesin. Dökümdeki gerçek dizeleri kullanın; imgenin anlam, mizah ve ahenk katkısını dörtlüğün bütünüyle açıklatın.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
-            "Benzetmenin unsurları — öğretim örneği": "Video alıntısı OLMAYAN 'sözün ırmak gibi akması' örneğinde benzeyen söz, benzetilen ırmak, benzetme yönü akıcılık, edat 'gibi'dir. Gerçek atışma dizesinde bu dört unsurun hepsi açık olmayabilir.",
-            "Atışmaya olası katkılar": "Somutlaştırma: soyut niteliği anlaşılır kılma. Mizah: şaşırtıcı ilişkiyle güldürme. Meydan okuma: rakibin sözüne güçlü karşılık verme. Ahenk: ses benzerliğiyle söyleyişi etkili kılma. Her katkı, seçilen gerçek dizeyle ayrıca kanıtlanmalıdır.",
-            "Doğrulanmış performans gözlemi": "Video notlarında sazlı karşılıklı icra, iki kişinin dönüşümlü söyleyişi ve dinleyicilerin alkışı görülür. Görüntü, performans ve dinleyici etkileşimini doğrular; bir dizedeki benzetmeyi doğrulamaz.",
-            "Çözümleme şeması": "Öğrenci tarafından gerçekten duyulup yazılan dize → benzeyen/benzetilen/yön/edat → dizenin işlevi (mizah, imge, cevap) → gerekçe. Doğrulanmış ses dizesi yoksa özgün atışmanın benzetme listesi kesinleştirilmez."
+            "Benzetme örnekleri": [
+              "“Çiçek veren bağ gibiyim” — söyleyici kendisini çiçek veren bağa benzetir.",
+              "“Zaman geçen çağ gibiyim” — zaman/geçiş çağrışımı kurar.",
+              "“Başı duman cananın dağ gibiyim” — sevgili/dağ imgesiyle benzetme kurar.",
+              "“Saban gibi toprakları” — tarımsal imgeyi atışmaya taşır.",
+              "“Naylon bir balon gibi” ve “Meydan ay hindi gibi” — mizahi, şaşırtıcı imgeler kullanır."
+            ],
+            "Atışmaya katkısı": "“Gibi” yapısı ve “…-ebilirsen eğer” redifi dörtlükleri birbirine bağlar; imge, mizah ve meydan okuma etkisi oluşturur.",
+            "Çözümleme": "Her dizede benzeyen ve benzetilen sözcükleri belirleyin; benzetmenin önceki ve sonraki dizelerle nasıl ilişkilendiğini açıklayın."
           },
-          "explanation": "PR #99'un doğru ses kanıtı sınırı korunurken PR #103'teki genel benzetme tanımı, sınıfta doğrudan kullanılabilir çözümlenmiş model ve işlev gerekçelerine dönüştürüldü. Model benzetme açıkça atışmaya ait değildir."
+          "explanation": "Kullanıcının sağladığı dörtlüklerdeki gerçek benzetmeler, tekrar kalıbı ve mizahi imgeler örneklenerek sınıfta doğrudan kullanılabilir bir çözümleme oluşturuldu."
         },
         "content": null
       },
@@ -29873,8 +29799,7 @@
                 "id": "comparison",
                 "section_keys": [
                   "Benzerlikler — T diyagramı",
-                  "Farklılıklar — T diyagramı",
-                  "Kanıt ve değerlendirme"
+                  "Farklılıklar — T diyagramı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29911,23 +29836,21 @@
           "printed_page": 143,
           "question_no": "2",
           "prompt_summary": "Günlük dil ile atışmadaki dil arasındaki benzerlik ve farklılıkları T diyagramında belirleme",
-          "answer": "Günlük dil ile âşık atışması, karşıdakine seslenme, duygu aktarma ve söz alıp cevap verme yönünden benzerlik gösterir. Farklılık, âşıkların bu karşılıklılığı saz ve dinleyici önündeki şiirsel icrayla gerçekleştirmesidir. T diyagramının benzerlik alanına 'karşılıklı iletişim, cevap verme, günlük yaşamdan konu ve kelimeler'; farklılık alanına 'saz eşliği, ezgili söyleyiş, dörtlük/uyak/ölçü gibi şiirsel örgünün bulunabilmesi' yazılabilir. Saz ve dönüşümlü icra görüntüyle doğrulanmıştır; belirli uyak veya ölçü bu kaydın doğrulanmış dizelerinden çıkarılmadıkça videonun kesin özelliği olarak gösterilmez.",
-          "guidance": "Önce T diyagramına iki benzerlik, iki farklılık yazdırın. Birinci somut farklılığı görüntüden (saz/karşılıklı sahne icrası), diğer şiirsel farkı ise öğrencinin dinleme notundan temellendirin. Yalnız tür tanımından hareketle videodaki tüm dizelerin uyak ve ölçüsünü kesinleştirmeyin.",
-          "source_locator": "basılı s.143 / PDF s.144 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "Günlük dil ile atışma arasında doğrudan seslenme, karşılık verme ve ortak sözcüklerden yararlanma bakımından benzerlik vardır. Atışmada bu alışılmış söz varlığı saz eşliğinde dörtlüklere, benzetmelere ve uyaklı/tekrarlı söyleyişe dönüşür. “Koş koşabilirsen eğer”, “Eş eşebilirsen eğer” ve “Şiş şişebilirsen eğer” tekrarları, konuşmadaki meydan okumayı şiirsel bir kalıpla birleştirir. Bağ, çağ, dağ; toprak ve balon gibi gündelik imgeler de sanatlı söyleyişe taşınır.",
+          "guidance": "T diyagramında günlük dildeki seslenme ve karşılık verme özelliklerini; atışmadaki saz eşliği, dörtlük, benzetme ve “...-ebilirsen eğer” tekrarını ayrı sütunlara yazdırın. Dökümden örnek dize seçip her farkı açıklatın.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
             "Benzerlikler — T diyagramı": [
-              "Günlük konuşmada da atışmada da birine seslenme, söz sırasını alma ve karşılık verme işlevi bulunabilir.",
-              "Her iki kullanım da sevgi, rekabet, kırgınlık veya günlük yaşam gibi insan deneyimlerini anlatabilir.",
-              "Günlük Türkçenin sözcükleri, şiirsel söyleyişin malzemesi olabilir; özel dize kelimeleri dinlenip doğrulanmalıdır."
+              "Karşılıklı iletişim, seslenme ve cevap verme vardır.",
+              "Gündelik sözcükler ve doğa/yaşamdan imgeler kullanılır."
             ],
             "Farklılıklar — T diyagramı": [
-              "Videoda görsel olarak doğrulanan fark: İki icracı sazla ve dinleyici önünde dönüşümlü icra yapar; sıradan sohbet bu sahne yapısını gerektirmez.",
-              "Âşık şiirinde ölçü, uyak, tekrar, doğaçlama ve benzetme estetik düzen oluşturabilir; bu kayda özgü örnekler ancak duyulup yazıya geçirilen dizelerle teyit edilir.",
-              "Günlük konuşma çoğu zaman serbest söz dizimi ve konuşma ritmiyle ilerler; atışmada müzikli icra ve şiirsel düzen amaçlanır."
-            ],
-            "Kanıt ve değerlendirme": "T diyagramındaki görsel kanıt (saz, sahne, karşılıklılık) ile tür bilgisine dayalı olası dil özellikleri (ölçü, uyak, doğaçlama) farklı düzeydedir. Her örneğin hangi düzeyde bulunduğu belirtilmelidir."
+              "Atışma saz eşliğinde ve dörtlükler hâlinde icra edilir.",
+              "Benzetme, uyak ve “…-ebilirsen eğer” redifi söyleyişe ahenk ve meydan okuma katar.",
+              "“Bağ/çağ/dağ” ve “koş/eş/şiş” ses oyunları şiirsel düzen oluşturur."
+            ]
           },
-          "explanation": "Eski ses dökümündeki -ebilirsen eğer kapanışı ve altı dörtlük iddiası doğrulanamadı; bu nedenle geri alınmadı. Öğrencinin doldurabileceği örnek T diyagramı, gözlenmiş icra ile tür düzeyindeki şiir özelliklerini ayırarak kuruldu."
+          "explanation": "T diyagramı, günlük konuşmayla karşılıklı söyleyişin ortak yönlerini ve dökümde görülen saz, dörtlük, benzetme ve redif özelliklerini karşılaştırır."
         },
         "content": null
       },
@@ -29940,9 +29863,9 @@
           "web": {
             "units": [
               {
-                "id": "Doğrudan gözlenen söyleyiş ortamı",
+                "id": "Doğrudan içerik",
                 "section_keys": [
-                  "Doğrudan gözlenen söyleyiş ortamı"
+                  "Doğrudan içerik"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29950,9 +29873,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Dilsel özellik için kanıt gereği",
+                "id": "Söz varlığı ve söyleyiş",
                 "section_keys": [
-                  "Dilsel özellik için kanıt gereği"
+                  "Söz varlığı ve söyleyiş"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29960,9 +29883,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Örnek çıkarım biçimi",
+                "id": "Söz oyunları",
                 "section_keys": [
-                  "Örnek çıkarım biçimi"
+                  "Söz oyunları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -29970,9 +29893,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Sınıf sunumunda gerekçe",
+                "id": "Etkisi",
                 "section_keys": [
-                  "Sınıf sunumunda gerekçe"
+                  "Etkisi"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -30009,15 +29932,15 @@
           "printed_page": 143,
           "question_no": "3",
           "prompt_summary": "Âşıkların dili kullanma biçimi hakkında çıkarımlar",
-          "answer": "Âşıkların dili kullanımı, dinleyici karşısında karşılıklı söz üretme ve etki oluşturma amacı taşır. İncelenen görüntülerde iki icracının sazla dönüşümlü söylemesi, karşı tarafa sözle cevap vermenin bu geleneğin belirgin bir performans yönü olduğunu gösterir. Dil düzeyinde ise âşıklar gündelik kelimeleri ritim, imge, uyak, nükteli söz ve kimi zaman doğaçlamayla estetik bir söyleyişe dönüştürebilir. Bu son özelliklerin hangilerinin videodaki belirli dizelerde bulunduğu ancak sözcüklerin dinlenip doğrulanmasıyla gösterilebilir; görüntü, mizahın tam ifadesini veya dize düzeltmesini tek başına kanıtlamaz.",
-          "explanation": "PR #103'teki genel yorumlar soru köküne özgü gözlem–çıkarım zincirine dönüştürüldü. Sesli performansın kelime ve uyak özellikleri doğrulanmış gibi sunulmadı.",
-          "guidance": "Çıkarımı 'ne gördüm/ne duydum → nasıl yorumluyorum → hangi etkiyi oluşturuyor?' üçlüsüyle kurdurun. Performansa ait sırayla söyleme bilgisi görüntüyle desteklenir; dize içi söz oyununu öğrencinin gerçek dinleme notuyla doğrulatın. Önceki cevapta geçen düzeltme repliğini veya sahne katılımcısının adını tam ses kanıtı olmadan geri getirmeyin.",
-          "source_locator": "basılı s.143 / PDF s.144 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "Âşıklar gündelik sözcükleri benzetme, ses benzerliği, tekrar ve mizahla şiirsel bir atışmaya dönüştürür. “…-ebilirsen eğer” kalıbı her dörtlüğün sonunda tekrarlanırken “koş”, “eş”, “iç”, “şiş” gibi fiillerle söz oyunu ve meydan okuma sürdürülür. Bağ/çağ/dağ, saban/toprak ve balon/hindi imgeleri günlük hayattan alınır; kafiye ve tekrar bunları akılda kalıcı kılar. Çobanoğlu’nun bir dizeyi “Düştüysen bilirsen eğer” diye karıştırıp sonra “Koş koşabilirsen eğer” biçiminde düzeltmesi de canlı icradaki doğaçlama ve mizahi etkileşimi gösterir.",
+          "explanation": "Yanıt, kullanıcı dökümündeki tekrar, söz oyunu, benzetme ve dizeyi düzeltme anını dil kullanımının somut örnekleri olarak ele alır.",
+          "guidance": "Dildeki özelliği gerçek dizeyle ve etkisiyle eşleştirin: tekrar → ahenk/bağlayıcılık; gündelik imge → somutlaştırma; beklenmedik benzetme → mizah; dönüşümlü cevap → etkileşim. Düzeltme anını da yalnız dökümde verildiği biçimde kullanın.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
-            "Doğrudan gözlenen söyleyiş ortamı": "Sahnede sazlı ve dönüşümlü icra vardır; iki icracının sırayla söz alması ve dinleyicinin alkışı gözlenebilir. Bu gözlem, gerçek zamanlı karşılıklılığa dair dayanak sağlar.",
-            "Dilsel özellik için kanıt gereği": "Doğaçlama, mecaz, nükteli cevap, uyak veya dize tekrarı gibi dil özelliklerinin hangi sözde gerçekleştiği görsel karelerden saptanamaz. Bunlar atışma türü bakımından incelenebilecek özelliklerdir, bu kaydın onaylı mısraları değildir.",
-            "Örnek çıkarım biçimi": "Gözlem: İcracılar sırayla söylemektedir → çıkarım: karşılıklı söz üretme ve rakibe cevap verme önemlidir → olası işlev: dinleyiciyle etkileşim, sanatçıların söz ustalığını sergilemesi. İşlev, görsel kanıtın kapsamını aşmadan yorumlanmalıdır.",
-            "Sınıf sunumunda gerekçe": "Öğrenci önce gerçekten duyduğu bir ifadeyi not eder; ardından ses/kelime tercihini ve etkisini gerekçelendirir. Söz kaydı yoksa yalnız performans biçimi hakkında kesin gözlem yapılabilir."
+            "Doğrudan içerik": "İki âşık karşılıklı dörtlükler söyler; bağlama eşliği vardır.",
+            "Söz varlığı ve söyleyiş": "Dökümde “bağ, çağ, dağ”, “toprak, saban”, “balon” gibi sözcükler ve “…-ebilirsen eğer” kalıbı yer alır.",
+            "Söz oyunları": "“Koş koşabilirsen”, “eş eşebilirsen”, “şiş şişebilirsen” tekrarları ses ve anlam oyunuyla atışmayı ilerletir.",
+            "Etkisi": "Benzetmeler imge kurar, tekrarlar ahenk sağlar, karşılıklı meydan okuma da dinleyicinin ilgisini canlı tutar."
           }
         },
         "content": null
@@ -30033,11 +29956,10 @@
               {
                 "id": "comparison",
                 "section_keys": [
-                  "Münacaat — basılı şiirden çözümleme",
-                  "Atışma — gözlenen icra",
-                  "Benzerlik — şiir dili",
-                  "Farklılık — dilin amacı ve bağlamı",
-                  "Kanıt sınırı"
+                  "Münacaat — basılı şiir",
+                  "Atışma — kullanıcı dökümü",
+                  "Benzerlik",
+                  "Farklılık"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -30074,16 +29996,15 @@
           "printed_page": 143,
           "question_no": "4",
           "prompt_summary": "İsmet Özel'in Münacaat şiirinin dili ile âşık şiirlerinin dilini karşılaştırma",
-          "answer": "İsmet Özel'in kitapta basılı *Münacaat* şiirinde 'kaldı bu silinmez yaşamak suçu üzerimde' sözü, yaşama deneyimini suçluluk çağrışımıyla ilişkilendiren alışılmadık ve yoğun bir bağdaştırmadır. 'tütmesi gereken ocak nerde?' sorusu ise ocak imgesiyle ev, aidiyet ve süreklilik arayışını düşündürebilir. Âşık atışmasında da dil imge ve söz sanatlarıyla güçlenebilir; fakat burada şiir dinleyici önünde sazla ve karşılıklı icra edilir. **Benzerlik:** Her ikisi gündelik dilin ötesinde duygu ve düşünceyi sanatlı sözle aktarabilir. **Farklılık:** *Münacaat*ın basılı dizelerinde çağrışımı yoğun bireysel sorgulama; incelenen atışmanın görüntülerinde ise karşılıklı, sazlı ve topluluk önündeki icra belirgindir. Video dizeleri doğrulanmadığından belirli uyak veya mecazları kesin olarak karşılaştıramıyoruz.",
-          "explanation": "PR #99 ile atışmaya ait doğrulanmamış dizeler kaldırılırken kitabın s.143'te basılı gerçek Münacaat şiirinin çözümlemesi de kaybolmuştu. İki basılı dize, imge, bireysel sorgulama ve icra bağlamı temelinde öğretim cevabına geri kazandırıldı; video şiiri olarak yanlış kaynak gösterilmedi.",
-          "guidance": "Tahlili iki kanıt türüyle yaptırın: s.143 basılı *Münacaat* dizesini edebî dil yönünden çözümleme ve atışmanın gözlenen sahne/icra biçimini açıklama. Bir benzerlik ve bir farklılığı gerekçelendirtin; öğrenci atışmadan gerçek dize notu aldığında o dizenin imgesini de karşılaştırabilir. Dil çeşitliliğini estetik üstünlük hiyerarşisine dönüştürmeyin; ses transkripti yoktur.",
-          "source_locator": "basılı s.143 / PDF s.144 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "İsmet Özel’in basılı *Münacaat* şiiri ile kullanıcı dökümündeki âşık atışması, duyguyu sanatlı dille aktarmaları bakımından karşılaştırılabilir. *Münacaat*’ta “kaldı bu silinmez yaşamak suçu üzerimde” dizesi yoğun bireysel sorgulamayı; “tütmesi gereken ocak nerde?” dizesi ev, aidiyet ve süreklilik çağrışımını kurar. Atışmada ise bağ/çağ/dağ, balon ve toprak gibi somut imgeler; mizah, redif ve karşılıklı söz üretimi öne çıkar. *Münacaat* basılı bireysel şiir olarak okunurken atışma sazla ve iki âşığın dönüşümlü söyleyişiyle sahnelenir.",
+          "explanation": "Basılı Münacaat dizeleri ile kullanıcı dökümündeki gerçek atışma örnekleri; imge, duygu ve sunuluş biçimleri üzerinden karşılaştırıldı.",
+          "guidance": "Basılı *Münacaat* dizelerini imge ve duygu yönünden çözümleyin; atışma dökümünden gerçek benzetme veya redif örnekleri seçtirin. Bir benzerlik (sanatlı ve çağrışımlı anlatım), bir farklılık (bireysel şiir / sazlı karşılıklı icra) gerekçelendirilmelidir.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
-            "Münacaat — basılı şiirden çözümleme": "'kaldı bu silinmez yaşamak suçu üzerimde' sözünde yaşamak ve suç sözcüklerinin beklenmedik birlikteliği yoğun kişisel sorgulama oluşturur. 'tütmesi gereken ocak nerde?' sorusunda ocak; ev, canlılık veya aidiyet gibi çağrışımlara açılır. Bu dizeler basılı s.143'ten doğrulanabilir.",
-            "Atışma — gözlenen icra": "Görüntü incelemesinde iki sanatçı saz eşliğinde, dinleyici karşısında sırayla söylemektedir. Bu, sözün sahnede karşılıklı kurulması bakımından *Münacaat*ın basılı bireysel sesinden farklı bir sunuluş biçimidir.",
-            "Benzerlik — şiir dili": "Her iki şiir biçiminde de bir duygunun düz açıklama yerine benzetme, mecaz, çağrışım veya ses düzeniyle aktarılması mümkündür. Münacaat için somut basılı dize gösterilir; atışmaya ait belirli söz sanatı ancak dinlenmiş dizeyle saptanır.",
-            "Farklılık — dilin amacı ve bağlamı": "Münacaat'taki hitap ve kişisel sorgulama ile âşık atışmasının karşılıklı söyleme ve seyirciyle kurulan etkileşim yönü karşılaştırılabilir. Modern şiir 'ağır', halk şiiri 'basit' diye değersel sıralama yapılmamalıdır.",
-            "Kanıt sınırı": "Basılı Münacaat dizeleri doğrudan metin kanıtıdır. Atışmanın görüntüleri icra biçimini kanıtlar; doğrulanmış sözlü transkript olmadığı için o videoya belirli benzetme, uyak veya dize atfedilmez."
+            "Münacaat — basılı şiir": "Yaşamak/suç birlikteliği bireysel sorgulama; ocak imgesi ev ve aidiyet arayışı çağrıştırır.",
+            "Atışma — kullanıcı dökümü": "Benzetme, mizah, “…-ebilirsen eğer” redifi ve karşılıklı söyleyiş belirgindir.",
+            "Benzerlik": "Her iki metin de düz anlatım yerine imge ve çağrışımlı dil kullanır.",
+            "Farklılık": "Münacaat basılı bireysel şiir; atışma sazla, iki söyleyicinin sırayla karşılık verdiği canlı bir performanstır."
           }
         },
         "content": {
@@ -30514,16 +30435,16 @@
           "printed_page": 144,
           "question_no": "Çözümleyebilme",
           "prompt_summary": "Âşık atışmasının çok modlu unsurlarını (mekân, beden dili, söyleyiş tarzı, estetik) belirleme",
-          "answer": "Görüntü notunda iki sazlı icracının sahnede karşılıklı ve nöbetleşe yer aldığı, çekimlerin bir icracıdan diğerine geçtiği ve seyircilerin alkışladığı kaydedilmiştir. Zihin haritası şöyle doldurulabilir: **Mekân:** icracıların sahnesi ve dinleyici alanı; **Beden dili:** sazı tutup çalma ve dönüşümlü kadraja girme gibi görüntüde kaydedilen hareketler; **Söyleyiş tarzı:** iki icracının sırayla söz alarak saz eşliğinde söylemesi; **Estetik:** söz ve müziğin birlikte sunuluşu, dönüşümlü icranın oluşturduğu karşılıklılık ve dinleyiciyle etkileşim. Dizelerin ölçüsü, esprilerin içeriği veya sözlü tekrarlar yalnız görüntülerden kesinleştirilemez.",
-          "guidance": "S.144'teki zihin haritasının dört alanını ayrı doldurtun: her alanda önce 'doğrudan gördüm/duydum', ardından 'nasıl yorumluyorum?' sorularını kullandırın. Mekânı dekor markasıyla, beden dilini doğrulanmamış jestlerle, estetiği kanıtlanmamış uyak/dizelerle doldurmayın. Öğrencinin sınıfta yaptığı tam izleme notlarını tarih ve sahneyle eşleştirin; arşivde ses transkripti yoktur.",
-          "source_locator": "basılı s.144 / PDF s.145 — Çözümleyebilme zihin haritası / kaynak QR basılı s.140: 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "Zihin haritası şöyle doldurulabilir: **Mekân:** saz eşliğinde sunulan sahne ve dinleyici alanı. **Beden dili:** âşıkların bağlamalarını çalıp sırayla söylemeleri; dökümde Çobanoğlu’nun dizeyi şaşırıp gülümsemesi ve seyircilerin alkışlaması da belirtilir. **Söyleyiş tarzı:** dönüşümlü dörtlükler, “…-ebilirsen eğer” redifi, benzetmeler ve tekrarlar. **Estetik:** saz, uyak/tekrar, mizah, söz ustalığı ve seyirci tepkisinin oluşturduğu bütünlük.",
+          "guidance": "Dört başlığın her birine dökümden somut bir unsur seçtirin: sahne ve seyirci; bağlama ve icracı etkileşimi; dörtlük/redif/benzetmeler; ahenk ve mizah. Öğrenci gözlem ile bu unsurların etkisine dair yorumunu ayırsın.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
-            "Mekân": "İki sazlı icracının bulunduğu sahne, performansın gerçekleştiği ortak alandır; kadraj değişimleri ve dinleyiciye dönük sunum, atışmanın canlı ortamını gösterir. Arka panonun tam yazısı veya çalgıların markaları görsel notta doğrulanmış değildir.",
-            "Beden Dili": "Sazın tutulması ve çalınması, icracıların sahnede dönüşümlü görünmesi doğrudan görsel gözlemdir. Yüz ifadeleri, rakibe yönelik belirli bir jest veya dizeyi şaşırınca verilen tepki, örnek kare notundan kesinleştirilemez.",
-            "Söyleyiş Tarzı": "İki icracı bağlama eşliğinde nöbetleşe söylemektedir; bu, karşılıklı söz üretiminin gözlenebilir performans biçimidir. Dizelerin sayısı, ölçüsü, uyakları ve belirli kapanış kalıpları henüz ses dökümünden doğrulanmadı.",
-            "Estetik": "Sazın ve insan sesinin birlikte sunumu ile karşılıklı icra düzeni bir performans bütünlüğü oluşturur. Dinleyici alkışı etkinlikte bir tepkinin bulunduğunu gösterir; alkışın hangi dizedeki nükteye verildiği saptanmamıştır."
+            "Mekân": "Sazlı canlı icranın yapıldığı sahne ve dinleyici alanı.",
+            "Beden Dili": "İki âşık sırayla bağlama çalar; bir dizedeki şaşırma ve gülümseme ile seyirci alkışı aktarılmıştır.",
+            "Söyleyiş Tarzı": "Karşılıklı dörtlükler, tekrar edilen “…-ebilirsen eğer” redifi, benzetme ve fiil oyunları.",
+            "Estetik": "Söz ile sazın birlikteliği; uyak, tekrar ve mizahın seyirciyle kurduğu etkileşim."
           },
-          "explanation": "PR #99'un bilinmeyen dize ve replikleri kaldırma kararı korundu; önceki haritanın somut sınıflandırma işlevi dört ayrı gözlem–yorum eşleştirmesiyle geri kazanıldı."
+          "explanation": "Haritanın dört alanı, kullanıcı dökümündeki performans akışı ve dörtlük örnekleriyle somutlaştırıldı; görüntü gözlemleri de ayrı tutuldu."
         },
         "content": {
           "items": [
@@ -30587,18 +30508,18 @@
           "printed_page": 145,
           "question_no": "1",
           "prompt_summary": "Âşık atışmasını altı şapka tekniğiyle çok boyutlu değerlendirme",
-          "answer": "Görüntü notunda iki âşığın sazla dönüşümlü söylemesi ve seyirci alkışı doğrulanmıştır. Kitabın altı şapka sorularına örnek yanıtlar: **Beyaz:** İki icracı karşılıklı, saz eşliğinde söylemektedir; sözlerin tam iletisi için dinleme notu gerekir. **Kırmızı:** Bu karşılıklılık bende merak ve coşku uyandırabilir. **Siyah:** Bir sözün küçümseme veya kırıcı meydan okuma içerip içermediği ancak o söz duyularak değerlendirilebilir; olumsuz ileti saptanmadıysa bu da gerekçeyle söylenir. **Sarı:** Karşılıklı söyleyiş ve saz eşliği birlikte üretme ve dinleyici katılımı açısından olumlu görülebilir. **Yeşil:** Saygıyı koruyan yeni bir karşılık dörtlüğü tasarlayabilirim. **Mavi:** Gözlem, kişisel duygu, eleştiri ve önerileri birlikte tartıp sonucumu belirtirim. Bunlar kaynak düzeyleri ayrılmış örnek öğrenci yanıtlarıdır.",
-          "guidance": "Altı gruba s.145'teki altı özgün soruyu ayrı ayrı dağıtın; özellikle beyaz şapkayı yalnız 'nesnel envanter', siyah şapkayı yalnız 'transkript eksikliği' diye geçiştirmeyin. İleti ve eleştiri için gerçekten duyulmuş bir söz, duygu için kişisel gerekçe, yaratıcı şapka için öğrencinin özgün üretimi gerekir. Görüntüden hareketle konuşmacıya birebir söz atfetmeyin; sözlü ses transkripti depoda yok.",
-          "source_locator": "basılı s.145 / PDF s.146 — Altı Şapka tekniği / kaynak QR basılı s.140: 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "Örnek altı şapka değerlendirmesi: **Beyaz:** İki âşık bağlama eşliğinde dönüşümlü dörtlükler söyler; “…-ebilirsen eğer” kalıbı yinelenir. **Kırmızı:** Karşılıklı söz oyunları merak, eğlence veya coşku uyandırabilir. **Siyah:** Bazı ifadeler dinleyici için ilk anda anlaşılması güç olabilir; “diş bişebilirsen” gibi aktarılan bir dize dökümünde farklı işitme olasılığı not edilmiştir. **Sarı:** Benzetme, uyak, saz ve karşılıklı doğaçlama geleneği canlı tutar. **Yeşil:** Öğrenci aynı redif yapısını kullanarak saygılı ve mizahi yeni bir dörtlük oluşturabilir. **Mavi:** İçerik, biçim, kişisel tepki ve geliştirme önerisini birlikte değerlendirip sonucu özetler.",
+          "guidance": "Altı şapkayı birbirinden ayırın. Beyaz şapkada dökümdeki olguları; kırmızıda kişisel duyguyu; siyahta gerekçeli güçlüğü; sarıda olumlu yönleri; yeşilde özgün üretimi; mavide genel değerlendirmeyi isteyin. Öğrenciler farklı ve gerekçeli yorumlar sunabilir.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
-            "Beyaz Şapka": "Soru: 'Aktarılmak istenen ileti nedir?' Gözlem: İki sazlı icracı karşılıklı söylemektedir. Örnek ön yorum: Söz ustalığını karşılıklı sergileme ön plandadır. Ancak kesin mesajı, duyulan sözlerden gerekçe göstererek belirlemek gerekir; görüntü tek başına metnin iletisini kanıtlamaz.",
-            "Kırmızı Şapka": "Soru: 'Ne hissettiniz, neden?' Örnek öznel yanıt: 'Sırayla verilen sözlü karşılıkları görmek bende merak uyandırdı; dinleyici alkışı coşku hissimi artırdı.' Bu öğrencinin olası kişisel tepkisidir, herkesin duyduğu duygu değildir.",
-            "Siyah Şapka": "Soru: 'Olumsuz iletiler neler?' Öğrenci gerçekten duyduğu dizede alay, kırıcı hitap, önyargı veya aşağılayıcı bir ifade varsa metinle kanıtlayıp etkisini tartışabilir. Yoksa 'Dinlediğim bölümde gerekçelendirebileceğim olumsuz bir ileti saptamadım' diyebilir. Kanıt yok diye doğrudan olumsuz ileti varmış gibi örnek uydurulmaz.",
-            "Sarı Şapka": "Soru: 'İyimser iletiler neler?' Örnek gerekçeli yorum: Karşılıklı icranın sürmesi ve dinleyicilerin katılımı, kültürün birlikte yaşatılmasının değerini düşündürebilir. Bu, görüntüye dayalı olumlu yorumdur; belirli bir sözel ileti olduğu iddiası değildir.",
-            "Yeşil Şapka": "Soru: 'Siz nasıl devam ettirirdiniz?' Örnek yaratıcı üretim hedefi: Âşıklık atışmasının karşılıklı cevap düzenini izleyen, mizahı korurken karşı tarafı incitmeyen özgün bir dörtlük hazırlayıp sazlı veya sözlü sunmak. Yazılan dörtlük videonun parçası sayılmaz.",
-            "Mavi Şapka": "Soru: 'Genel düşünceniz?' Örnek sonuç: 'Saz, söz alma sırası ve izleyici etkileşimi gösterinin canlı yönünü güçlendiriyor; hangi iletilerin olumlu/olumsuz olduğunu değerlendirmek için dizeleri ayrıca dinlemeliyim.' Böylece diğer beş şapkanın gözlem ve görüşleri birlikte tartılır."
+            "Beyaz Şapka": "İki söyleyici, saz eşliği, dörtlükler, tekrar edilen redif ve seyirci alkışı dökümde yer alır.",
+            "Kırmızı Şapka": "“Söz oyunları bende eğlence ve merak uyandırdı; çünkü söyleyiciler aynı kalıba farklı fiillerle karşılık veriyor.”",
+            "Siyah Şapka": "Bazı eski veya yöresel sözcükler, ayrıca dökümde farklı işitiliş ihtimali belirtilen ilk dize, dinleyici için açıklama gerektirebilir.",
+            "Sarı Şapka": "Saz, karşılıklı cevap, benzetme ve tekrar geleneğin estetik yönünü ve canlı aktarımını gösterir.",
+            "Yeşil Şapka": "Aynı redif yapısıyla karşı tarafa saygıyı koruyan özgün bir dörtlük yazıp sunmak.",
+            "Mavi Şapka": "Dökümdeki dil, saz, mizah, dinleyici tepkisi ve kişisel değerlendirmeyi bir sonuçta birleştirmek."
           },
-          "explanation": "PR #99 öncesindeki doğrulanmamış dize ve sahne düzeltme anlatıları çıkarılmaya devam ediyor. Altı şapkanın altı ayrı **kitap sorusuna** karşılık veren somut, kanıt düzeyi belirtilmiş örnek yanıtlar geri kazandırıldı.",
+          "explanation": "Altı şapka örnekleri, kullanıcı dökümündeki gerçek söz, sazlı karşılıklı söyleyiş, mizah ve seyirci tepkisini gözlem, kişisel duygu ve öneri başlıklarında sınıflandırır.",
           "activity_name": "Altı Şapka"
         },
         "content": null
@@ -30783,22 +30704,23 @@
           "printed_page": 147,
           "question_no": "1",
           "prompt_summary": "Atışmaya değer katan unsurlar ile söyleyicinin metne katkısını değerlendirme",
-          "answer": "**Âşık atışmasına değer katan unsurlar:** Saz eşliğinde canlı söyleyiş, iki icracının sırayla cevaplaşması ve dinleyiciyle kurulan etkileşimdir. Görsel kayıtta icracıların dönüşümlü performansı ve seyirci alkışı doğrudan gözlenir. **Söyleyicinin metne katkısı:** Aynı sözler farklı vurgu, ezgi, tempo ve beden diliyle başka bir etki kazanabilir; bu etkinin hangi dizede nasıl oluştuğu gerçek dinleme notuyla gösterilmelidir. Örnek kişisel değerlendirme: 'Sazla karşılıklı söyleyiş, atışmayı tek kişinin şiir okumasından daha canlı bir iletişime dönüştürdüğü için ilgimi çekti.' Söz sanatlarının veya belirli bir mısranın bu videoda yer aldığı, ses kanıtı olmadan söylenemez.",
-          "guidance": "S.147'deki iki sütunu gerçekten iki ayrı görev olarak kullandırın. Solda metne/performance değer katan öğeyi, sağda onu söyleyicinin nasıl görünür veya işitilir kıldığını isteyin. Her öğrenci bir **gözlem ve gerekçeli kişisel değerlendirme** sunmalı. Sesin doğrulanmadığı dize/söz oyunu öğelerini videoya atfetmeyin; somut müzik/vurgu örneği için gerçek dinleme kanıtı gereklidir.",
-          "source_locator": "basılı s.147 / PDF s.148 — soru / kaynak QR basılı s.140: EBA QR 85ae59be9852fb990c8de54f7cb313ce / 19XU49JV.mp4; görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49JV.md; ses transkripti yok",
+          "answer": "Atışmaya değer katan unsurlar; iki âşığın karşılıklı söz üretmesi, saz eşliği, benzetmeler, uyak ve “…-ebilirsen eğer” redifiyle kurulan ahenk, ayrıca mizahi cevaplaşmadır. Söyleyiciler metne yalnız dizeleri seslendirerek değil, anlık cevap ve doğaçlama, tekrar, ses ve saz icrası yoluyla katkı verir. Kullanıcı dökümünde Çobanoğlu’nun bir dizeyi şaşırıp gülümseyerek düzeltmesi ve seyircilerin alkışlaması bu canlı etkileşimin örneğidir.",
+          "guidance": "Sol sütunda metne değer katan söz, imge, uyak, tekrar ve sazı; sağ sütunda söyleyicinin karşılık üretme, doğaçlama ve icrasını yazdırın. Her maddeyi p140 dökümündeki somut bir dize veya olayla gerekçelendirin.",
+          "source_locator": "19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
           "answer_sections": {
             "Âşık Atışmasına Değer Katan Unsurlar": [
-              "Görsel olarak doğrulanan saz eşliği ve iki icracının nöbetleşe söylemesi: sözün karşılıklı üretilmesini ve icranın canlı yönünü gösterir.",
-              "Görsel olarak doğrulanan seyirci alkışı: dinleyici tepkisinin performansta yer aldığını gösterir; alkışın belirli bir dizeye neden verildiği bilinmiyor.",
-              "Ölçü, kafiye, nükte veya imge gibi metinsel özellikler atışmaya değer katabilir; bu videodaki somut örnekleri yalnız doğrulanmış dinleme notuyla saptanır."
+              "Bağlama eşliği ve iki icracının karşılıklı dörtlükleri.",
+              "Benzetmeler, “…-ebilirsen eğer” redifi, ses/fiil oyunları ve mizah.",
+              "Dinleyici alkışı ve canlı etkileşim."
             ],
             "Söyleyicinin Metne Katkısı": [
-              "İki icracının sözü sırayla üstlenmesi, atışmayı karşılıklı bir söz ve sahne ilişkisine dönüştürür.",
-              "Ses tonu, vurgu, duraklama ve ezgi söylenenin anlamını/etkisini değiştirebilir; ancak bu klibe özgü kesin bir vurgu örneği arşivlenmiş değildir.",
-              "Örnek öznel değerlendirme: 'Karşılıklı sazlı icra ve seyircinin tepkisi, benim için atışmanın etkileyiciliğini artırdı.' Bu bir öğrenci yorumu, doğrulanmış video repliği değildir."
+              "Karşılıklı cevap üretmek ve önceki dizeye bağlanmak.",
+              "Dörtlükleri saz, tekrar ve uyakla icra etmek.",
+              "Anlık şaşırma ve düzeltme gibi performans anlarıyla söyleyişi canlı kılmak.",
+              "Örnek değerlendirme: “Söz ve sazın karşılıklı ilerlemesi, atışmayı hem şiir hem de sahne etkileşimi hâline getiriyor.”"
             ]
           },
-          "explanation": "PR #103'te geri gelen genel açıklama, kitapta iki sütunla istenen metin değeri ve söyleyici katkısı ayrımına göre somutlaştırıldı. Eski dökümün '-ebilirsen eğer', 'bağ/çağ/dağ' ve dizeyi düzeltme iddiaları doğrulanmadan geri eklenmedi."
+          "explanation": "Yanıt, kullanıcı dökümündeki benzetme, redif, saz, karşılıklı cevap üretimi ve performans anlarını kitapta istenen iki değerlendirme sütununa yerleştirir."
         },
         "content": null
       },
@@ -33403,14 +33325,8 @@
               }
             ],
             "answer_text": {
-              "mode": "include",
-              "fragments": [
-                {
-                  "unit": "Görsel kanıt",
-                  "text": "Ekran görüntülerinde Kül Tigin, Bilge Kağan ve Tonyukuk adları yazıtlarla birlikte görünür",
-                  "position": "start"
-                }
-              ]
+              "mode": "omit",
+              "reason": "Yapılandırılmış yanıtın görsel kanıt ve eser karşılaştırması bölümleri, toplu özeti ayrıca göstermeden yanıtı tamamlar."
             }
           }
         },
@@ -33439,9 +33355,9 @@
           "printed_page": 159,
           "question_no": "8",
           "prompt_summary": "Orhun Abidelerinden günümüze uzanan kültürel köprünün diğer ayağını oluşturabilecek eserleri belirleme",
-          "answer": "Ekran görüntülerinde Kül Tigin, Bilge Kağan ve Tonyukuk adları yazıtlarla birlikte görünür; bunlar tarihî kişilere ilişkin ekran etiketleridir, sözlü anlatımın doğrulanmış dökümü değildir. **Örnek köprü 1:** Orhun Yazıtlarında toplum ve yönetime yönelik öğütlerin yazıyla aktarılması ile *Kutadgu Bilig*'de adalet, akıl ve doğru yönetim konularının işlenmesi arasında düşünce ve devlet anlayışı bakımından süreklilik kurulabilir. **Örnek köprü 2:** Orhun Yazıtlarının Türkçenin erken yazılı belgelerinden olması, *Dîvânu Lugâti't-Türk*'ün dil ve söz varlığı birikimini kayda geçirmesiyle ilişkilendirilebilir. *Dede Korkut Hikâyeleri* de toplumsal değerler ve sözlü-yazılı anlatı sürekliliği yönünden alternatif olabilir. Bunlar öğrencinin ders bilgisinden seçebileceği eserlerdir; seçilen eserlerin videoda anıldığına dair ses kanıtı değildir.",
-          "guidance": "Öğrenciden yalnız eser adı istemeyin; 'Orhun'da ele alınan özellik → seçtiğim eserdeki somut karşılık → ortaklık ve fark → gerekçe' zincirini kurdurun. En az bir dolu örnek olarak Kutadgu Bilig/yönetim düşüncesi veya Dîvânu Lugâti't-Türk/yazılı dil mirası kullanılabilir. İki eserin eş dönemli veya aynı türde olduğu sonucuna varılmamalıdır. Yazıt adlarının ekranda görülmesini sesli açıklamanın kanıtı saymayın.",
-          "source_locator": "basılı s.159 / PDF s.160 — QR  b557411639a9c10b3b7c33b91819cd42 / 19XU49MB.mp4; zaman damgalı ekran kanıtı: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MB.md; ses transkripti yok",
+          "answer": "Kullanıcının sağladığı Göktürk yazıtları videosu, yazıtları devletin geçmişini ve milletin başından geçen olayları aktaran kaynaklar olarak tanıtır. Anlatımda “Ey Türk! Üste gök basmasar, altta yer tengimeser, senin ilini ve töreni kim bozabilir?” sözüne yer verilir. Bu devlet ve yönetim anlayışı, *Kutadgu Bilig*’de adalet, akıl ve doğru yönetimin işlenmesiyle karşılaştırılabilir. Yazıtların Türkçenin erken yazılı belgeleri oluşu da *Dîvânu Lugâti’t-Türk*’ün dil ve söz varlığını kaydetmesiyle ilişkilendirilebilir. Bunlar ortak düşünce ve yazılı miras üzerinden kurulabilecek köprülerdir.",
+          "guidance": "Öğrenciden “videoda anlatılan yazıt özelliği → seçtiğim eserdeki somut karşılık → ortaklık ve fark → gerekçe” zincirini kurdurun. Video dökümündeki devlet öğüdü ve yazıtların tarihî tanıklık işlevi, *Kutadgu Bilig* veya *Dîvânu Lugâti’t-Türk* ile karşılaştırmaya dayanak olabilir.",
+          "source_locator": "basılı s.159 / PDF s.160 — QR b557411639a9c10b3b7c33b91819cd42 / 19XU49MB.mp4; kullanıcı video dökümü: data/book/grade-11/themes/theme-2/pages/p159.json; görsel inceleme: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MB.md",
           "answer_sections": {
             "Görsel kanıt": "Görsel notlarda “KÜL TİGİN”, “BİLGE KAĞAN” ve “TONYUKUK” etiketli yazıt/kişi çizimleri görülür. Ekran yazısı, eser adını veya tarihî olayın doğruluğunu tek başına kanıtlamaz.",
             "Örnek seçim 1 — Kutadgu Bilig": "Orhun Yazıtları bir topluluğun tarihî deneyimini, töre ve yönetimle ilgili öğütleri yazıya taşır. Kutadgu Bilig, adalet ve iyi yönetim gibi kavramları işlemesi bakımından karşılaştırılabilir. Bağ: yazıyla aktarılan yönetim düşüncesi; fark: tür, dönem ve anlatım biçimi.",
@@ -33449,7 +33365,7 @@
             "Alternatif eser — Dede Korkut Hikâyeleri": "Topluluk değerleri, hafıza ve anlatı geleneği üzerinden ikinci bir kültürel ayak seçilebilir; yazıt ile hikâyenin tür ve kurgu farkı da açıklanmalıdır.",
             "Kanıt sınırı": "Ekran adları kaynak notuyla doğrulanmıştır. Kitapta verilen 'köprü' sorusu eser seçimine açıktır. Bu eserlerin videoda anıldığına dair ses kanıtı değildir; animasyonda görülen tarihler de bağımsız olarak doğrulanmış değildir."
           },
-          "explanation": "PR #99 öncesi sürümdeki örnek eser seçimi yararlıydı ancak video kişi/tarih/anlatım ayrıntıları doğrulanmış ses dökümü gibi sunuluyordu. Güncel ana cevap eser adlarını korumuş fakat **örnek eserler arasındaki somut karşılaştırmayı** öğrenci için tamamlamamıştı. Bu turda iki model bağlantı verildi; görsel ve ses kanıtı ayrımı korundu."
+          "explanation": "Kullanıcının sağladığı sözlü anlatım dökümü ile ders kitabında seçilebilecek eserler arasında somut düşünce köprüleri kuruldu."
         },
         "content": {
           "lead": "Dökümdeki yazıt ve tarihî kişi bilgilerinden birini seçin; Orhun Abideleri ile kültürel köprü kurduğunuz eserden somut bir ortak yön gösterin.",
@@ -52858,7 +52774,7 @@
           "question_no": "Sıra Sizde 1",
           "prompt_summary": "Osmancık sahne tiyatrosu ile Direnişin Ustaları radyo tiyatrosunu dokuz ölçütte karşılaştırma",
           "answer": "Osmancık sahne tiyatrosu, kudüm, ney, kanun ve yaylıların eşlik ettiği enstrümantal açılışla başlar. Osman Bey'in Şeyh Edebali ve ailesiyle buluşmasının ardından adaletli karar verme, acele etmeme, halkı gözetme, alınan yeri koruyup onarma ve bilgi sahiplerini destekleme üzerine öğütler öne çıkar. Bursa sonraki kuşakların yolculuğu için bir durak olarak anılır; kandillerdeki sikkeler ise ihtiyaç sahibine onu utandırmadan yardım etme düşüncesini yansıtır. Karşılaştırmanın Osmancık tarafında bu müzik, diyalog, sahne ve dekor özellikleri; Direnişin Ustaları tarafında ise kayıttaki söz, müzik, ses tonu ve efektler ilgili ölçütlerle eşleştirilir.",
-          "source_locator": "basılı s.220 / PDF s.221 — Osmancık QR hedefi 572fe5fff1b65d73736b167d98ab85b4; 19XU49LV.mp4 sahne ve diyalog özeti: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LV.md; Direnişin Ustaları karşılaştırma kaydı s.216",
+          "source_locator": "basılı s.220 / PDF s.221 — Osmancık QR hedefi 572fe5fff1b65d73736b167d98ab85b4; 19XU49LV.mp4 sahne ve diyalog özeti: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LV.md; Direnişin Ustaları karşılaştırma kaydı s.216",
           "answer_sections": {
             "karşılaştırma_ölçütleri": [
               "Müzik",
@@ -68272,11 +68188,11 @@
           "entry_type": "performance_support",
           "printed_page": 285,
           "question_no": "2",
-          "source_locator": "basılı s.285 / PDF s.286 — iki ayrı EBA QR: jenerik bc54a785fede521619c982332455dc72, ana video 5fd2b97cb78fabe367aa3fcde8f9718d; jenerik görsel notu: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU4GDV.md",
+          "source_locator": "basılı s.285 / PDF s.286 — iki ayrı EBA QR: kısa video kaydı 19XU4GDV kullanıcı dökümü ve görsel notu: data/book/grade-11/themes/theme-4/pages/p285.json; ana video QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ kullanıcı dökümü: data/book/grade-11/themes/theme-4/pages/p285.json",
           "prompt_summary": "Başlık, karekod görseli ve jenerikten hareketle belgesel içeriğini izleme öncesi tahmin etme",
           "answer": "Örnek izleme öncesi tahmini: “Fedakârlık” başlığı ve ders kitabındaki görsel, emek ve başkaları için çaba gösterme üzerine bir belgesel izleneceğini düşündürebilir. Yaklaşık 58 saniyelik ayrı jenerikte su doldurma, tabiat, hayvanlar ve kuzuyla ilgilenen bir kişi görülür; bu görüntüler kırsal yaşamı ve emeği çağrıştırır. Bu yalnızca izleme öncesi tahmindir: kişilerin kimliği, kimin ne için fedakârlık yaptığı ve uzun belgeselin sonucu jenerikten çıkarılamaz.",
           "guidance": "İzlemeden önce başlığa ve görselde açıkça görülen ayrıntılardan hareketle tahmin yaptırın; ardından yalnız kısa jeneriği izletip yaklaşık 00:08, 00:24 ve 00:48 görüntüleriyle tahmini yeniden değerlendirin. 58 saniyelik jenerikle yaklaşık 7 dakikalık asıl belgesel iki ayrı QR kaynağıdır. Jenerikte gözlenmeyen kişi motivasyonları ve olay sonuçlarını hazır cevap vermeyin.",
-          "explanation": "Jenerik görselleri örneklendi; aday MP4'ün EBA dosya özdeşliği ve sesli içerik henüz doğrulanmadı. Bu soru gerçekleşmiş olay anlatımı değil, izleme öncesi tahmin görevidir."
+          "explanation": "Jenerik görüntüler ve kullanıcı tarafından sağlanan açılış dış ses dökümü kayıt altındadır. Bu soru yine de izleme öncesi tahmin görevidir; örnek yanıt yalnız başlık ve başlangıç görsellerinden hareket eder, uzun belgeseldeki olayların yerine geçmez."
         },
         "content": {
           "lead": "Önce başlık ve kitap görselinden tahmin yapın; sonra 58 saniyelik ayrı jeneriğin su, tabiat ve hayvancılık görüntüleriyle tahmininizi karşılaştırın. Tahmini yaşanmış olay veya kesin sonuç diye sunmayın."
@@ -68724,9 +68640,9 @@
           "web": {
             "units": [
               {
-                "id": "Doğrudan kaydedilen görseller",
+                "id": "Kullanıcının sağladığı anlatım",
                 "section_keys": [
-                  "Doğrudan kaydedilen görseller"
+                  "Kullanıcının sağladığı anlatım"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -68734,9 +68650,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Sağlanan anlatımın özeti",
+                "id": "Doğaya katkı",
                 "section_keys": [
-                  "Sağlanan anlatımın özeti"
+                  "Doğaya katkı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -68744,9 +68660,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "İleti 1 — merhamet ve sorumluluk",
+                "id": "İleti",
                 "section_keys": [
-                  "İleti 1 — merhamet ve sorumluluk"
+                  "İleti"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -68754,19 +68670,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "İleti 2 — süreklilik gösteren emek",
+                "id": "Dökümdeki başka vurgu",
                 "section_keys": [
-                  "İleti 2 — süreklilik gösteren emek"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Ana ileti ile kanıtın ilişkisi",
-                "section_keys": [
-                  "Ana ileti ile kanıtın ilişkisi"
+                  "Dökümdeki başka vurgu"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -68802,18 +68708,17 @@
           "entry_type": "source_limited",
           "printed_page": 286,
           "question_no": "3",
-          "source_locator": "basılı s.286 / PDF s.287 — uzun video QR, kaynak QR basılı s.285: 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md; ses transkripti doğrulanmadı",
+          "source_locator": "basılı s.286 / PDF s.287 — 19XU49LQ kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-4/pages/p285.json; video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LQ.md",
           "prompt_summary": "Video notlarından hareketle belgeselin iletilerini belirleme",
-          "answer": "Belgeselin 'Hayatın Aynası' temasıyla ilişkilendirilebilecek örnek iletisi şudur: **Fedakârlık, başkalarının ve diğer canlıların iyiliği için karşılık beklemeden emek vermek ve sorumluluk üstlenmektir.** Videodan kaydedilmiş görsel örneklerde demiryolunda yürüyen bir kişi, ağaçlık alanlar ve kırsal yaşam görülür. Kullanıcının sağladığı anlatım dökümünün depodaki özetine göre emekli demiryolu görevlisi Mehmet Bey raylarda karşılaştığı kaplumbağaları kurtarmayı ve çevreye fidan dikmeyi anlatır. Bu iki eylem, canlılara merhamet ve doğayı korumak için süreklilik gösteren çaba yönlerinden fedakârlık ile ilişkilendirilebilir. Kaplumbağa ve fidan ayrıntıları **bağımsız görüntü doğrulaması değil, kullanıcı tarafından sağlanan anlatım özetidir**; sesin kelimesi kelimesine doğrulanmış transkripti olarak aktarılmaz.",
-          "guidance": "S.286'nın istediği 'ileti' ile 'sahnede olan'ı ayırın. Tahtada 'gördüğümüz görüntü / elimizdeki anlatım notu / buradan çıkardığımız mesaj' sütunları oluşturun. Görsel olarak demiryolu/doğa, sağlanan anlatım özetine göre kaplumbağaları koruma/fidan dikme, yorum olarak fedakârlık–merhamet–sorumluluk yazdırın. Öğrenciler videoyu sınıfta bütünüyle dinlemişse sözcük/sahne zamanını ayrıca doğrulayabilir; tam konuşma transkripti ve MP4'ün EBA bayt kimliği depoda bağımsız olarak doğrulanmış değildir.",
+          "answer": "Belgeselin ana iletisi **başkalarının ve diğer canlıların iyiliği için karşılık beklemeden emek vermek ve sorumluluk üstlenmektir.** Kullanıcının sağladığı anlatımda emekli demiryolu görevlisi Mehmet Bey’in yıllar boyunca her gün rayları kontrol ettiği, kaplumbağaları kurtardığı ve 1000’den fazla kaplumbağayı raylardan aldığı anlatılır. Ayrıca çevreye binlerce fidan dikmiş; ormanların erozyonu ve su kaybını önlemedeki önemini açıklamıştır. Bu süreklilik gösteren çaba, canlılara merhamet ve doğayı koruma sorumluluğunu fedakârlıkla ilişkilendirir. Dış ses, Mehmet’in orman yangınları karşısındaki hassasiyetini de aktarır.",
+          "guidance": "“İleti”yi kullanıcının sağladığı tam anlatım dökümündeki somut örneklerle temellendirin: raylarda kaplumbağa kurtarma, fidan dikme ve doğayı koruma. Öğrencilerden her örneği fedakârlık, merhamet veya sorumlulukla ilişkilendirip gerekçelendirmelerini isteyin.",
           "answer_sections": {
-            "Doğrudan kaydedilen görseller": "Örnek kare notlarında demiryolu hattı ve boyunca yürüyüş, kırsal arazi, ağaçlık yol ve tarım alanı görüntüleri vardır. Bunlar **nerede/ne görüldü?** sorusunu karşılar; kurtarılan kaplumbağa sayısı veya dikilmiş ağaç miktarı gibi ayrıntıları bağımsız doğrulamaz.",
-            "Sağlanan anlatımın özeti": "Depodaki UNVERIFIED-19XU49LQ notu, kullanıcının paylaştığı anlatım dökümünü özetler: Mehmet Bey demiryolu çevresindeki kaplumbağaları kurtarma uğraşından ve fidan dikme çabasından söz eder. Bu bilgi ayrı bir kanıt düzeyidir; örnek kare incelemesinden türetilmemiştir.",
-            "İleti 1 — merhamet ve sorumluluk": "Rayda tehlikeyle karşılaşan canlıya yardım etmek, başka canlının yaşamına dikkat göstermenin ve kişisel sorumluluğun örneği olarak yorumlanabilir.",
-            "İleti 2 — süreklilik gösteren emek": "Çevreye fidan dikmek, doğayı yalnız sözle sevmekten farklı olarak gelecek için zaman ve çaba ayırmak anlamına gelebilir. Bu, insanın davranışıyla değer üretmesi yönünden temaya bağlanır.",
-            "Ana ileti ile kanıtın ilişkisi": "Görsel çevre (demiryolu/doğa) → kullanıcı kaynaklı olay özeti (kaplumbağa/fidan) → **fedakârlık, merhamet ve çevre sorumluluğu** çıkarımı. Son basamak yorumdur; dış sesin kelimesi kelimesine sözü olarak gösterilmez."
+            "Kullanıcının sağladığı anlatım": "Mehmet Bey 30 yıl demiryollarında yol kontrol memurluğu yapmış; raylarda kaplumbağa kurtarma işini sürdürmüş ve 1000’in üzerinde kaplumbağayı kurtardığını anlatmıştır.",
+            "Doğaya katkı": "Turgutlu, Salihli ve Ahmetli çevresine binlerce fidan diktiğini ve ormanların erozyonla su kaybını önlemedeki önemini açıklar.",
+            "İleti": "Canlılara merhamet etmek, doğayı korumak ve uzun süreli sorumluluk almak fedakârlığın somut örnekleridir.",
+            "Dökümdeki başka vurgu": "Dış ses, Mehmet’in orman yangınlarıyla yok olan doğa fikrine tahammül edemediğini aktarır."
           },
-          "explanation": "PR #99 öncesinde anlatılan kaplumbağa ve fidan örnekleri öğretim açısından yararlıydı fakat doğrudan doğrulanmış video içeriği sayılıyordu. PR #99 bunları kaldırırken geriye yalnız genel uyarı kaldı. Mevcut notta **kullanıcının sağladığı dökümün kısa özeti** bulunduğu için örnekleri bu kanıt düzeyinde geri kazandırdık; gerçek görsel kare gözlemleriyle ve yorumla ayrı tutuldu."
+          "explanation": "Yanıt, p285.json içindeki kullanıcı dökümünü tam içerik bağlamı olarak kullanır; kaplumbağa kurtarma, fidan dikimi ve çevre koruma unsurları doğrudan bu anlatımda yer alır."
         },
         "content": {
           "lead": "Her ileti için videodaki bir söz, davranış veya olay dayanağı gösterin.",
@@ -70050,9 +69955,9 @@
           "web": {
             "units": [
               {
-                "id": "Görsel kanıt",
+                "id": "Yıl boyu emek",
                 "section_keys": [
-                  "Görsel kanıt"
+                  "Yıl boyu emek"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70060,9 +69965,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Örnek ana düşünce",
+                "id": "Üretim biçimi",
                 "section_keys": [
-                  "Örnek ana düşünce"
+                  "Üretim biçimi"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70070,9 +69975,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Kanıt–yorum ilişkisi",
+                "id": "Aile emeği",
                 "section_keys": [
-                  "Kanıt–yorum ilişkisi"
+                  "Aile emeği"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70080,19 +69985,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Alternatif gerekçeli yorum",
+                "id": "Çıkarım",
                 "section_keys": [
-                  "Alternatif gerekçeli yorum"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Doğrulama sınırı",
-                "section_keys": [
-                  "Doğrulama sınırı"
+                  "Çıkarım"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70130,17 +70025,16 @@
           "entry_type": "source_limited",
           "printed_page": 293,
           "question_no": "2",
-          "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; ses transkripti yok",
+          "source_locator": "basılı s.293 / PDF s.294 — 19XU49KB kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-4/pages/p293.json; görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49KB.md",
           "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-          "answer": "**Örnek ana düşünce:** Çalışkanlık, doğayla iç içe sürdürülen üretimde düzenli emek vermeyi, sorumluluk almayı ve gerektiğinde birlikte çalışmayı gerektirir. Belgeselin kayıtlı görüntülerinde tarım arazileri, bitkilerle ilgilenen kişiler, ürün toplama ve kırsal ortamda bir araya gelme sahneleri vardır. Bu görüntüler, emeğin yalnız tek bir anlık çabadan değil, hazırlık, bakım ve hasat gibi birbirini izleyen işlerden oluştuğunu düşündürür. **Örnek gerekçe:** Ürün toplama sahnesi bir sonuç gösterir; bitkilerin bakımı ve tarladaki çalışma görüntüleri bu sonucun arkasındaki sürekliliğe dikkat çeker. Bu, görsel kaynağa dayanan gerekçeli bir ana düşünce önerisidir; konuşmada dile getirilen kesin mesaj veya kişi öyküsünün tam dökümü değildir.",
-          "guidance": "Ana düşünceyi bir cümleyle kurdurun; ardından en az iki görüntüyü gerekçe olarak yazdırın. 'Gördüğüm üretim aşaması → çıkardığım sonuç → çalışkanlıkla ilişkisi' çizelgesi kullanın. Görsel kayıttan kişilerin adı, kuşak çatışması ve organik ürünlerin fiyatı çıkarılamaz; bu ayrıntılar için öğrencinin gerçek dinleme notu ya da kaynaklı transkript gerekir.",
-          "explanation": "PR #99'un ses kaynağı ihtiyatı korundu. Önceki sürümdeki yıl boyu emek ve üretim gerekçeleri, kaydedilmiş tarla/bakım/hasat sahnelerine dayalı bir örnek ana düşünce içinde yeniden kuruldu. Kişi ve ekonomi ayrıntıları bağımsız kaynak olmadan geri eklenmedi.",
+          "answer": "**Örnek ana düşünce:** Çalışkanlık, yıl boyunca sürdürülen üretim emeği, doğayla uyum ve ailece üstlenilen sorumlulukla görünür. Kullanıcının sağladığı dökümde Muharrem Bey köyde işin 12 ay bitmediğini; bahçe, zeytin ve fıstık çamı işlerinin birbirini izlediğini anlatır. Bahçede 2009’dan beri ilaç kullanmadığını ve organik üretimden memnun olduğunu söyler. Zübeyde Hanım, çocuklar evlendikten sonra işin çoğunun kendileriyle kaldığını ve yıllarca yoksulluk içinde çalıştıklarını aktarır. Dış ses de sebze ve meyve üretimi ile organik tarımı öne çıkarır.",
+          "guidance": "Ana düşünceyi dökümdeki üretim döngüsü, organik tarım ve aile emeğinden en az iki örnekle gerekçelendirin. Muharrem ve Zübeyde’nin sözleri ile dış ses bilgisini birbirinden ayırın; çalışkanlığı yalnız kişilik sıfatı olarak değil, sürdürülen işler üzerinden açıklayın.",
+          "explanation": "Önceki yalnız görsel yorumun yerine p293.json’da kullanıcının sağladığı dış ses ve röportaj dökümündeki gerçek içerik işlendi.",
           "answer_sections": {
-            "Görsel kanıt": "Kayıtlı örnek karelerde tarım alanları, ağaç/bitki bakımı, ürün toplama, kırsal yaşam ve topluluk/aile birlikteliği görülür. Kişilerin kimliği, ürünlerin ekonomik değeri veya konuşma içeriği bu karelerden kesinleştirilemez.",
-            "Örnek ana düşünce": "Kırsal üretim, süreklilik gösteren emek, doğayla uyum ve ortak sorumlulukla sürdürülebilir. Bu cümle görüntülerden yapılan bir yorumdur, dış sesin birebir ifadesi değildir.",
-            "Kanıt–yorum ilişkisi": "Gözlem: tarla/ürün toplama/bakım görüntüleri → çıkarım: üretimin farklı aşamaları emek ve zaman gerektirir → tema bağlantısı: çalışkanlık düzenli gayretle görünür olur.",
-            "Alternatif gerekçeli yorum": "Öğrenci ortak yemek ve birlikte geçirilen zaman görüntülerini dikkate alarak çalışmanın aile ve topluluk hayatını bir araya getirdiğini savunabilir. Bu yorum diğerlerinden üstün sayılmadan görüntü dayanağıyla tartışılmalıdır.",
-            "Doğrulama sınırı": "Kırtık köyü, Muharrem/Zübeyde, organik üretimin ekonomik değeri veya çocukların ayrılması gibi eski yanıt ayrıntıları görsel inceleme notunda doğrulanmadığı için videonun kanıtlanmış sözlü anlatısı olarak sunulmaz."
+            "Yıl boyu emek": "Muharrem Bey bahçe, zeytin ve fıstık çamı işlerinin mevsimler boyunca birbirini izlediğini ve köyde 12 ay iş bulunduğunu söyler.",
+            "Üretim biçimi": "Dış ses Kırtık köyündeki sertifikalı organik üretimi vurgular; Muharrem Bey 2009’dan beri bahçesinde ilaç kullanmadığını belirtir.",
+            "Aile emeği": "Zübeyde Hanım çocuklar ayrıldıktan sonra işin kendisi ve eşiyle sürdüğünü, neslin yaşlandığını anlatır.",
+            "Çıkarım": "Çalışkanlık; planlı, mevsimlere yayılan ve güçlükler karşısında sürdürülen emekle ortaya çıkar."
           }
         },
         "content": {
@@ -70226,17 +70120,17 @@
           "entry_type": "source_limited",
           "printed_page": 293,
           "question_no": "3",
-          "source_locator": "basılı s.293 / PDF s.294 — Fedakârlık QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4 (kaynak QR s.285; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md) ve Çalışkanlık QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; görsel notlar, ses dökümleri değil",
+          "source_locator": "Fedakârlık 19XU49LQ kullanıcı dökümü: data/book/grade-11/themes/theme-4/pages/p285.json; Çalışkanlık 19XU49KB kullanıcı dökümü: data/book/grade-11/themes/theme-4/pages/p293.json; görsel notlar: MEDIA-REVIEW-19XU49LQ.md ve MEDIA-REVIEW-19XU49KB.md",
           "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-          "answer": "İki belgesel de Anadolu insanının emek ve sorumlulukla ilişkisini anlatmaya elverişli örnekler sunar; ancak bunları farklı çalışma alanları üzerinden işler. **Fedakârlık:** Demiryolu çevresinde ilerleyen kişi ve doğa görüntüleri vardır; kullanıcı tarafından iletilen anlatım özetinde kaplumbağaları koruma ve fidan dikme çabasından söz edilir. **Çalışkanlık:** Tarlada bakım, tarımsal üretim, ürün toplama ve kırsal birlikte yaşam görüntüleri görülür. **Ortak nokta:** Emeğin başka insanlara, canlılara veya yaşanan çevreye katkı sunması. **Fark:** İlkinde canlıları ve doğayı koruma; ikincisinde üretimde düzenli çalışma daha belirgindir. İki kaydın anlatıcı dili ve sesli iletisini birebir karşılaştırmak için Çalışkanlık konuşma transkripti gerekir.",
+          "answer": "İki belgesel emek ve sorumluluk değerlerini farklı işler üzerinden işler. **Fedakârlık** videosunda Mehmet Bey’in demiryolu raylarında kaplumbağa kurtarması, her gün yürüyerek hatları kontrol etmesi ve fidan dikmesi anlatılır. **Çalışkanlık** videosunda Muharrem ve Zübeyde’nin yıl boyunca organik sebze-meyve üretimini sürdürmesi, çocuklar ayrıldıktan sonra işin çoğunu birlikte üstlenmesi ve geçmiş yoksulluklarına rağmen çalışmayı bırakmaması öne çıkar. Ortak yönleri düzenli emek ve çevreye/yaşama katkıdır; fark, ilkinde canlıları ve doğayı koruma, ikincisinde tarımsal üretim ve aile emeğinin merkezde olmasıdır. Her iki videoda da dış sesle kişi röportajları birlikte kullanılır.",
           "answer_sections": {
-            "Dil ve Üslup": "Fedakârlık: depodaki kullanıcı kaynaklı anlatım özetinde değerleri tanıtan bir dış ses ve kişinin deneyimlerini aktarması belirtilir; bu, arşivlenmiş sözcüğü sözcüğüne transkript değildir. Çalışkanlık: görsel notta tarla, hasat ve topluluk sahneleri vardır; konuşmacıların kelime seçimi, vurgu ve ses tonu hakkında transkript bulunmadığı için kesin üslup farkı kurulamaz.",
-            "İleti": "Fedakârlık için örnek ileti, anlatım özetindeki kaplumbağaları koruma ve fidan dikme çabalarından hareketle 'canlılara merhamet ve çevreye karşı sorumluluk'tur. Çalışkanlık için görselden hareketle örnek ileti, 'üretim ve bakımın düzenli emek gerektirmesi'dir. Birincisi kullanıcı kaynaklı anlatım özetiyle, ikincisi görüntü yorumuyla desteklendiğinden aynı kanıt düzeyi sanılmamalıdır.",
-            "Tür": "Her iki yapım ders kitabında Anadolu İnsanı serisinin çok modlu belgesel metinleri olarak sunulur. Görüntü ve ses birlikte kullanılabilir; kaynaklardaki doğrulama farkı, iki yapımın kitapta belgesel olarak ele alınmasını ortadan kaldırmaz.",
-            "İçerik": "Fedakârlık görüntüleri demiryolu/doğa çevresini; kullanıcı kaynaklı anlatım özeti kaplumbağa kurtarma ve fidan dikme uğraşını kapsar. Çalışkanlık görüntüleri tarla, bitki bakımı, ürün toplama ve kırsal birlikte yaşamı gösterir. İlkinde çevreyi koruma, ikincisinde üretim emeği belirginleşir; Çalışkanlık videosundaki kişilerin yaşam öyküleri bağımsız olarak doğrulanmadı."
+            "Dil ve Üslup": "Her iki yapımda dış ses konuyu betimleyip kişiye geçiş yapar; röportajlarda kişiler kendi deneyimlerini konuşma diliyle aktarır. Çalışkanlık videosunda Muharrem ve Zübeyde’nin kırsal ağız özellikleri duyulur; Fedakârlıkta Mehmet Bey’in iş ve doğa deneyimleri kendi anlatımıyla verilir.",
+            "İleti": "Fedakârlık: canlıları ve doğayı korumak için sürekli sorumluluk almak. Çalışkanlık: üretimi mevsimler boyunca düzenli emekle sürdürmek.",
+            "Tür": "İki video da dış ses, röportaj ve görüntüyü birleştiren belgesel metinleridir.",
+            "İçerik": "Fedakârlıkta demiryolu, kaplumbağa kurtarma ve ağaç dikme; Çalışkanlıkta organik bahçecilik, yıl boyu tarımsal işler, aile emeği ve geçmiş yoksulluk anlatılır."
           },
-          "guidance": "S.293'teki dört ölçütü ayrı koruyun. Dil/üslupta ses kanıtı eksikliğini dürüstçe belirtip görüntülerden ses tonu üretmeyin. İleti bölümünü iki sütunda birer **gerekçeli öneri** olarak yazdırın; kanıt düzeylerini açıkça ayırın. Fedakârlık için kullanıcı kaynaklı anlatım notunu, Çalışkanlık için bağımsız görsel kareleri kullanın. Karşılaştırmayı olgu, çıkarım ve yorum ayrımıyla değerlendirin.",
-          "explanation": "Eski cevabın iki belgeselin emek ve sorumluluk ortaklığına dayalı karşılaştırma değeri yeniden kuruldu. Çalışkanlık için doğrulanmamış Muharrem/Zübeyde aile öyküsü kesin video içeriği olarak aktarılmadı; Fedakârlık için arşivdeki kullanıcı kaynaklı özet bağımsız görüntü/ses kanıtı gibi sunulmadı."
+          "guidance": "Dört ölçütü ayrı ayrı karşılaştırın: dil/üslup, ileti, tür ve içerik. İleti ve içerikte iki kullanıcının dökümünden somut örnekler alın. Dil ve üslupta dış sesin belgesel anlatımıyla kişilerin birinci tekil şahısla deneyim aktarmasını karşılaştırın; ses tonu veya vurgu hakkında dökümde verilmeyen ayrıntıları eklemeyin.",
+          "explanation": "Karşılaştırma, iki videonun da kullanıcı tarafından sağlanan ses dökümlerini kullanır; sözlü içerik artık yalnız görsel notlarla sınırlanmıyor."
         },
         "content": {
           "lead": "Her ölçütte en az bir benzerlik ve bir farklılık yazın; iki videodan da gerçek kanıt kullanın.",
@@ -74254,9 +74148,9 @@
           "web": {
             "units": [
               {
-                "id": "Gözlenen yaşam ve çevre",
+                "id": "Bakım ve emek",
                 "section_keys": [
-                  "Gözlenen yaşam ve çevre"
+                  "Bakım ve emek"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74264,9 +74158,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Özellik–davranış ilişkisi",
+                "id": "Hayır ve kuşak aktarımı",
                 "section_keys": [
-                  "Özellik–davranış ilişkisi"
+                  "Hayır ve kuşak aktarımı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74274,9 +74168,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Çıkarımın sınırı",
+                "id": "Çevreye bağlılık",
                 "section_keys": [
-                  "Çıkarımın sınırı"
+                  "Çevreye bağlılık"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74284,9 +74178,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Eski cevaptaki doğrulanmamış ayrıntılar",
+                "id": "Çıkarım",
                 "section_keys": [
-                  "Eski cevaptaki doğrulanmamış ayrıntılar"
+                  "Çıkarım"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74324,21 +74218,17 @@
           "entry_type": "source_limited",
           "printed_page": 307,
           "question_no": "13",
-          "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md; ses transkripti doğrulanmadı",
+          "source_locator": "basılı s.307 / PDF s.308 — 19XU49LS kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-4/pages/p307.json; ayrıca görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LS.md",
           "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-          "answer": "Anadolu'nun farklı yörelerindeki yaşam koşullarına uyum sağlayabilen insanlarda **çalışkanlık, dayanıklılık, çevreyi tanıma, sorumluluk ve yardımlaşma** gibi özellikler bulunabilir. Bunlar herkes için değişmez özellikler değil, davranışlardan gerekçelendirilebilecek değerlerdir. *Aidiyet* videosunun örnek görüntülerinde engebeli arazide ilerleyen bir kişi, kırsal yerleşim, su/çeşme çevresi ve doğada gerçekleştirilen gündelik işler görülür. Örneğin zorlu arazide yol almak uyum ve gayretle; yaşanan çevreyle ilgilenmek sorumlulukla ilişkilendirilebilir. Ancak görüntü, kişinin niyetini veya geçmişini kesin olarak göstermez. Bu cevap görüntülerden hareketle hazırlanmış örnek yorumdur; depoda konuşmaların doğrulanmış ses transkripti bulunmuyor.",
+          "answer": "Kullanıcının sağladığı dökümde Halil Bey’in **çalışkanlığı, sorumluluğu ve yaşadığı çevreye bağlılığı** somut davranışlarla görünür. Yaklaşık 25 yaşından beri dağ çeşmelerinin bakımını yaptığını; suyu temizleyip insanların ve hayvanların içebilmesini sağladığını anlatır. Bu işi dedesinden öğrendiğini, dört çeşme yaptırdığını ve su bulursa yenilerini de yaptıracağını söyler. Dış sesin köy ve çevre anlatımıyla birlikte bunlar, yerel yaşamı ve ortak su kaynaklarını koruma çabasını gösterir.",
           "answer_sections": {
-            "Gözlenen yaşam ve çevre": "Kayıtlı karelerde ağaçlık ve engebeli arazi, sırt çantasıyla yürüyen bir kişi, su/çeşme, kırsal yerleşim, doğada ilerleme ve çevreyle ilgilenmeye benzeyen el hareketleri görülür.",
-            "Özellik–davranış ilişkisi": [
-              "Uyum ve dayanıklılık: engebeli arazide ilerleme görüntüsü, zor koşullarda hareket etmeye ilişkin örnek olarak yorumlanabilir.",
-              "Çalışkanlık ve sorumluluk: toprak, dal/odun gibi çevre unsurlarıyla ilgilenme görüntüsü gündelik emek fikrini düşündürebilir; yapılan işin amacı bilinmiyor.",
-              "Çevreye bağlılık ve yardımlaşma: çeşme/yerleşim görüntüleri ortak mekâna bakım ve paylaşma konularını tartışmaya açar; bir kişinin bu amaçla hareket ettiği yalnız karelerden kanıtlanmaz."
-            ],
-            "Çıkarımın sınırı": "Öğrenci önce görüntüyü tarif etmeli, sonra 'bu bana hangi özelliği düşündürüyor ve neden?' diyerek yorumunu kurmalıdır. Bütün Anadolu insanlarına aynı kişilik özellikleri atfedilmez.",
-            "Eski cevaptaki doğrulanmamış ayrıntılar": "Halil Bey'in ismi, aile öyküsü, dört çeşme yaptırması ve dış sesin sıfatları mevcut görsel notta/ses transkriptinde bağımsız olarak doğrulanmış değildir; bu yüzden kesin video kanıtı olarak kullanılmaz."
+            "Bakım ve emek": "Halil Bey yaklaşık 25 yaşından beri çeşmeleri temizlediğini; su içen insan ve hayvanlar için bakımın gerekli olduğunu söyler.",
+            "Hayır ve kuşak aktarımı": "Bu anlayışı dedesinden öğrendiğini, su/çeşme hayrının değerini ondan duyduğunu aktarır.",
+            "Çevreye bağlılık": "Dört çeşme yaptırdığını ve imkân bulursa yenilerini de yaptıracağını belirtir.",
+            "Çıkarım": "Sorumluluk, çalışkanlık, cömertlik ve yaşanan çevreye aidiyet davranışlarla gerekçelendirilebilir."
           },
-          "guidance": "Soru 13 için soyut özelliklerin arkasına birer gözlenebilir davranış ve gerekçe yazdırın: 'gördüğüm → düşündürdüğü özellik → gerekçem'. Sınıfta gerçekten dinlenen bir söz varsa ayrıca not edip sesli kanıta bağlayın. Kaynak notundaki kırsal görüntülerden Halil Bey'in kimliği veya motivasyonu çıkarılamaz. 'Anadolu insanı her zaman...' türünden genellemelere gitmeyin.",
-          "explanation": "PR #99 öncesi cevap davranış–erdem eşleştirmeleriyle öğretim değeri taşıyordu, fakat kişilere ve anlatıcıya doğrulanmamış sözler atfediyordu. Mevcut alt bölümlerde kalan bu çelişki giderildi; kısmi görüntülere dayalı özellik–davranış–yorum örnekleri geri kazanıldı."
+          "guidance": "Özellik–davranış–gerekçe düzeninde yanıt kurdurun: çeşme temizliği ve yaptırma → çalışkanlık/sorumluluk → ortak su kaynağına emek verme. Halil Bey’in kendi sözlerini, dış sesin Kütahya ve Mamak köyü bağlamından ayırın.",
+          "explanation": "Halil Bey’in çeşme bakımı ve dört çeşme bilgisi kullanıcı dökümünde açıkça yer alır; yanıt bu davranışları aidiyet ve ortak yarar bağlamında yorumlar."
         },
         "content": {
           "lead": "Anlatıcının Anadolu insanı için saydığı özelliklerle Halil Bey'in çeşme bakımı ve su hayrı hakkındaki sözlerini kanıt olarak kullanın.",
@@ -74359,9 +74249,9 @@
           "web": {
             "units": [
               {
-                "id": "Aidiyetin oluşma koşulları",
+                "id": "Mekâna emek verme",
                 "section_keys": [
-                  "Aidiyetin oluşma koşulları"
+                  "Mekâna emek verme"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74369,9 +74259,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Görselden hareketle yorum",
+                "id": "Kuşaklararası aktarım",
                 "section_keys": [
-                  "Görselden hareketle yorum"
+                  "Kuşaklararası aktarım"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74379,9 +74269,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Açıklayıcı örnek — video alıntısı değil",
+                "id": "Süreklilik",
                 "section_keys": [
-                  "Açıklayıcı örnek — video alıntısı değil"
+                  "Süreklilik"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74389,9 +74279,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Eski anlatının kanıt sınırı",
+                "id": "Aidiyet yorumu",
                 "section_keys": [
-                  "Eski anlatının kanıt sınırı"
+                  "Aidiyet yorumu"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74430,17 +74320,17 @@
           "entry_type": "source_limited",
           "printed_page": 307,
           "question_no": "14",
-          "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md; ses transkripti doğrulanmadı",
+          "source_locator": "basılı s.307 / PDF s.308 — 19XU49LS kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-4/pages/p307.json; ayrıca görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49LS.md",
           "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-          "answer": "Bir kişinin yaşadığı yere **aidiyet duygusu** geliştirmesi; oradaki insanlarla bağ kurmasına, ortak anılar biriktirmesine, çevreyi tanımasına, gelenekleri paylaşmasına ve yaşadığı mekâna emek vermesine bağlı olabilir. Örneğin bir köyün çeşmesinden yararlanan kişinin çevresini temiz tutması veya mahallenin ortak alanına gönüllü katkı sunması, 'burayı yalnız kullanan değil koruyan biriyim' düşüncesini güçlendirebilir. *Aidiyet* videosunun görsel notlarında çeşme, yerleşim, yollar ve doğayla ilişki kurulan sahneler vardır; bunlar mekâna aşinalık ve sorumluluk üzerine yorum yapmaya elverişlidir. Ancak örnek verilen gönüllü çeşme bakımı, videoda kesinlikle gerçekleştiği doğrulanmış bir olay değildir. Kişinin neden oraya bağlı olduğunu doğrudan anlamak için kendi sözlerini içeren doğrulanmış ses kaydı gerekir.",
+          "answer": "Halil Bey’in yaşadığı yere aidiyeti, ortak su kaynaklarına yıllarca emek vermesinde görülür. Yaklaşık 25 yaşından beri dağ çeşmelerini temizlediğini; bu işi dedesinden öğrendiğini ve dört çeşme yaptırdığını anlatır. “Su bulursam yine de, sağ olursam yaptırırım” sözü bu bağlılığın süreceğini gösterir. Çeşme bakımı yalnız kişisel kullanım değil, köy ve dağ çevresindeki insanların ve hayvanların suya erişimine katkıdır; bu nedenle aidiyet, yaşadığı çevreyi koruma ve ortak yarara emek verme davranışlarıyla açıklanabilir.",
           "answer_sections": {
-            "Aidiyetin oluşma koşulları": "Aile ve komşuluk ilişkileri, ortak geçmiş/anılar, kültürel alışkanlıklar, çevreyi tanıma ve yaşanan yere katkı verme birbirini destekleyebilir. Aidiyet yalnız doğum yeri veya hiç taşınmamış olmakla sınırlı değildir.",
-            "Görselden hareketle yorum": "Videoda su/çeşme, yerleşim, kırsal yollar ve tanıdık doğa çevresi tekrar görünür. Bu unsurlar ortak mekânın gündelik yaşamda önem taşıyabileceğini düşündürür, ancak kişinin hislerini göstermez.",
-            "Açıklayıcı örnek — video alıntısı değil": "Bir köy çeşmesinin bakımına gönüllü katılan kişi hem komşularıyla ortak iş yapar hem de yaşadığı yere emek verir. Böyle bir katkı aidiyet duygusunu artırabilir; bu örnek pedagojik modeldir, belirli videodaki doğrulanmış sahne değildir.",
-            "Eski anlatının kanıt sınırı": "Önceki cevapta bulunan Halil Bey, dededen öğrenilen su hayrı ve dört çeşme yaptırma ayrıntıları, depodaki görüntü karelerinden veya arşivlenmiş bir ses transkriptinden doğrulanmış değildir. Bu yüzden konuşmacı sözü olarak kullanılmaz."
+            "Mekâna emek verme": "Dağ çeşmelerini düzenli temizleyip insanların ve hayvanların su içmesini sağlamak.",
+            "Kuşaklararası aktarım": "Dedesinden çeşme ve su hayrının değerini öğrenmesi.",
+            "Süreklilik": "Dört çeşme yaptırdığını ve imkân bulursa devam edeceğini söylemesi.",
+            "Aidiyet yorumu": "Yaşadığı çevreyi koruyup ortak kullanım için kalıcı katkı sunmak, yere bağlılık ve sorumluluğun göstergesi olabilir."
           },
-          "guidance": "Öğrencilerden 'aidiyet nedir?' tanımı ile 'hangi davranış bunu geliştirebilir?' örneğini ayrı yazmalarını isteyin. Videoda görülen çeşme/kırsal çevre ile önerilen örnek etkinliği karıştırmayın. Taşınan veya yeni bir yere yerleşen birinin de aidiyet geliştirebileceğini tartıştırın. Birebir konuşma sözleri için doğrulanmış transkript yoktur.",
-          "explanation": "PR #99 öncesindeki çeşme geleneğinin çevreye aidiyetle ilişkisini kurma değeri, **video olayı olduğu iddia edilmeyen** ortak mekâna bakım örneğiyle korundu. Kaynakta kanıtlanmayan karakter geçmişi ve dört çeşme iddiası kesin içerikten çıkarıldı."
+          "guidance": "Aidiyeti yalnız “orada doğmuş olmak” şeklinde tanımlamayın. Halil Bey’in çeşme bakımı, dedesinden öğrendiği hayır anlayışı ve yeni çeşme yaptırma isteğini mekâna bağ ve ortak yarara katkı olarak açıklatın.",
+          "explanation": "Kullanıcının sağladığı döküm Halil Bey’in çeşme bakımını, dede etkisini ve dört çeşme yaptırmasını içeriyor; bu unsurlar aidiyet sorusuna doğrudan bağlandı."
         },
         "content": {
           "lead": "Anlatıcının aidiyet tanımını ve Halil Bey'in çeşme bakımını sürdürerek yaşadığı çevreyle kurduğu bağı birlikte değerlendirin.",

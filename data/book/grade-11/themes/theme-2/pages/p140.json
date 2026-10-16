@@ -133,7 +133,9 @@
       "related_table_ids": [],
       "related_media_ids": [
         "G11-T2-P140-VIS01",
-        "G11-T2-P137-VIS01"
+        "G11-T2-P137-VIS01",
+        "G11-T2-P140-VID01",
+        "G11-T2-P140-VID02"
       ],
       "order": 8,
       "source": {
@@ -157,7 +159,9 @@
       "related_table_ids": [],
       "related_media_ids": [
         "G11-T2-P140-VIS01",
-        "G11-T2-P137-VIS01"
+        "G11-T2-P137-VIS01",
+        "G11-T2-P140-VID01",
+        "G11-T2-P140-VID02"
       ],
       "order": 9,
       "source": {
@@ -166,6 +170,38 @@
         "pdf_sha256": "87248cb5f6940c29b7d152fab5cb1f7b800e4d5ddc46ac4cdeb5542f0361a1ba",
         "line_start": 29,
         "line_end": 55
+      }
+    },
+    {
+      "id": "G11-T2-P140-VID01",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49JV.mp4",
+      "modality": "audio",
+      "description": "Kullanıcının sağladığı âşık atışması sözleri ve sahne akışı; zaman aralıkları, söyleyiciler ve tekrarlar sunulduğu biçimde korunmuştur.",
+      "text": "Atışmanın ayağı, tekrarlanan fiil köküyle birlikte “...-ebilirsen eğer” redifine dayanmaktadır. Aşık Murat Çobanoğlu ve Aşık Şeref Taşlıova bağlamalar eşliğinde dönüşümlü olarak atışır.\n\n1. dörtlük — Aşık Murat Çobanoğlu (00:08–00:28):\n“Gönül aşkı bir kuyudur,\nDüştüysen bilirsen eğer.\nDört çarkı yirmi biri vardır,\nDiş bişebilirsen (dişebilirsen) eğer.”\n\n2. dörtlük — Aşık Şeref Taşlıova (00:32–00:53):\n“Çiçek veren bağ gibiyim,\nZaman geçen çağ gibiyim.\nBaşı duman cananın dağ gibiyim,\nKoş koşabilirsen eğer.”\n\n3. dörtlük — Aşık Murat Çobanoğlu (00:55–01:14):\n“Yel vurması neme kahır,\nKöyün sonu olur şehir.\nÜstü şerbet altı zehir,\nİç içebilirsen eğer.”\n\n4. dörtlük — Aşık Şeref Taşlıova (01:18–01:48):\n“Âşık bilir durakları,\nGönüldeki merakları.\nSaban gibi toprakları,\nEş eşebilirsen eğer.”\n\nTekrar:\n“Tavuk gibi toprakları,\nEş eşebilirsen eğer.”\n\n5. dörtlük — Aşık Murat Çobanoğlu (01:52–02:22):\n“Ne dedimse bir yana yoz,\nBazı kış der bazı da yaz.\nSen bir tilki ben bir horoz,\nDüştüysen bilirsen eğer...”\n\nSözü bir an şaşırıp gülümser; seyirciler ve stüdyodaki Barış Manço alkışlar. Düzeltip tekrar eder:\n“Sen bir tilki, ben bir horoz,\nKoş koşabilirsen eğer!”\n\n6. dörtlük — Aşık Şeref Taşlıova (02:24–02:54):\n“Şeref der gönül kitabı,\nBellisiz aşkın hesabı.\nNaylon bir balon gibi,\nŞiş şişebilirsen eğer.”\n\nTekrar:\n“Meydanda ay hindi gibi,\nŞiş şişebilirsen eğer.”",
+      "order": 10,
+      "source": {
+        "printed_page": 140,
+        "pdf_page": 141,
+        "media_file": "19XU49JV.mp4",
+        "provenance": "user_supplied_transcript"
+      }
+    },
+    {
+      "id": "G11-T2-P140-VID02",
+      "type": "other",
+      "role": "user_supplied_video_transcript",
+      "media_file": "19XU49JV.mp4",
+      "modality": "on_screen_text",
+      "description": "Kullanıcının sağladığı ekrandaki yazı, tabela ve marka ibareleri dökümü.",
+      "text": "Giriş ve kapanış bilgilendirme metni (00:01–00:04 ve 02:52): Açık kitap ve sonbahar yaprakları görseli üzerinde ok işaretiyle “İçerikte alt yazı seçeneği bulunmaktadır. ↓” metni.\n\nKanal logosu (00:05–02:51): Ekranın sol üst köşesinde beyaz “TRT 1” logosu.\n\nDekor tabelası (00:51, 01:15, 02:35): Kalpaklı yaşlı konuğun arkasındaki kırmızı panoda “[...] MUHTARLIĞI” yazısı.\n\nMüzik aletleri üzerindeki marka yazıları (00:05, 01:05, 03:04): Arka plandaki orkestra klavyesinde “Roland” ve “Yamaha DX” ibareleri.",
+      "order": 11,
+      "source": {
+        "printed_page": 140,
+        "pdf_page": 141,
+        "media_file": "19XU49JV.mp4",
+        "provenance": "user_supplied_transcript"
       }
     }
   ],

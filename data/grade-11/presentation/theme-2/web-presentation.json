@@ -547,8 +547,7 @@
           "id": "comparison",
           "sections": [
             "Benzerlikler — T diyagramı",
-            "Farklılıklar — T diyagramı",
-            "Kanıt ve değerlendirme"
+            "Farklılıklar — T diyagramı"
           ]
         }
       ]
@@ -558,11 +557,10 @@
         {
           "id": "comparison",
           "sections": [
-            "Münacaat — basılı şiirden çözümleme",
-            "Atışma — gözlenen icra",
-            "Benzerlik — şiir dili",
-            "Farklılık — dilin amacı ve bağlamı",
-            "Kanıt sınırı"
+            "Münacaat — basılı şiir",
+            "Atışma — kullanıcı dökümü",
+            "Benzerlik",
+            "Farklılık"
           ]
         }
       ]
@@ -1644,14 +1642,8 @@
     },
     "T2-P129-Q01": {
       "answer_text": {
-        "mode": "include",
-        "fragments": [
-          {
-            "unit": "Gözlem",
-            "text": "Kısmi görüntülerde tarihî taş yazıt yüzeyi, bozkır, yurt/çadır, toplu etkinlik ve tarihî mimari görülür.",
-            "position": "start"
-          }
-        ]
+        "mode": "omit",
+        "reason": "Güncel kullanıcı dökümüne dayalı yapılandırılmış yanıtın tarih ve katkı bölümleri yanıtı doğrudan sunar; eski görüntü özeti kullanılmaz."
       }
     },
     "T2-P130-PERF02": {
@@ -1716,14 +1708,8 @@
     },
     "T2-P159-Q08": {
       "answer_text": {
-        "mode": "include",
-        "fragments": [
-          {
-            "unit": "Görsel kanıt",
-            "text": "Ekran görüntülerinde Kül Tigin, Bilge Kağan ve Tonyukuk adları yazıtlarla birlikte görünür",
-            "position": "start"
-          }
-        ]
+        "mode": "omit",
+        "reason": "Yapılandırılmış yanıtın görsel kanıt ve eser karşılaştırması bölümleri, toplu özeti ayrıca göstermeden yanıtı tamamlar."
       }
     },
     "T2-P107-Q1B": {
