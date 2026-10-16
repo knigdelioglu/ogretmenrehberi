@@ -11,7 +11,10 @@ on:
       - "tools/theme1_quality_freeze.py"
       - "apps/lesson-player/**"
       - "data/grade-11/presentation/theme-1/**"
-      - "data/grade-11/source/teacher-book/theme-1/**"
+      - "data/grade-11/source/teacher-book/**"
+      - "data/grade-11/source/qr-media-intake-2026-10-08.json"
+      - "data/grade-11/source/qr-sources.json"
+      - "data/book/grade-11/themes/**"
       - ".github/workflows/theme1-quality-freeze.yml"
   pull_request:
     paths:
@@ -20,7 +23,10 @@ on:
       - "tools/theme1_quality_freeze.py"
       - "apps/lesson-player/**"
       - "data/grade-11/presentation/theme-1/**"
-      - "data/grade-11/source/teacher-book/theme-1/**"
+      - "data/grade-11/source/teacher-book/**"
+      - "data/grade-11/source/qr-media-intake-2026-10-08.json"
+      - "data/grade-11/source/qr-sources.json"
+      - "data/book/grade-11/themes/**"
       - ".github/workflows/theme1-quality-freeze.yml"
 
 permissions:
