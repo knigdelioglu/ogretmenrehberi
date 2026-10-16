@@ -26,15 +26,27 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 
 **Kalite kuralı:** Basılı metnin doğru sayfada bulunması, ona ait sesli video dökümünün de doğrulandığı anlamına gelmez. `source_locator` içinde gösterilen farklı kaynak türlerini (soru sayfası, alıntı sayfası, video notu ve ses deşifresi) karıştırma.
 
+## Tur K2 — Sıradaki beş kaydın basılı kaynak, tür ve sunum kanıtı denetimi
+
+| Kayıt | PR #99'daki alan değişimi | Birincil kanıt / sunum bağı | Karar |
+| --- | --- | --- | --- |
+| `T1-P35-Q01` | `source_locator` alanına basılı s.19, 21–24 eklendi | Soru basılı s.35'te üç alt başlıkla dil ve üslubun güldürüye, çatışmaya, toplumsal-kültürel bağlama etkisini sorar. “hutûr/tesmiye” s.19'da, II. Hanım'ın yanlış anlamaları s.21'de, Tiryaki ve Çelebi diyalogları s.22–23'te; oyunun bitişi s.24'tedir. Sunumdaki 17 alıntı indeksi 17 gerçek kanıt ögesine ve var olan üç cevap bölümüne bağlanıyor. | **Uygun.** Alıntı dizisi ile sunum indeksleri tutarlı; s.24 bütünüyle oyun metninin bağlamı olarak kullanılabilir |
+| `T1-P43-Q01` | `source_locator` alanından QR video dosyası ve doğrulanmamış ses/ekran dökümü iddiası çıkarıldı | Soru s.43'te; mektup türlerinin ölçütleri s.42–43'te; Mehmet Kaplan'ın mektubu ve dört kanıt cümlesi s.37–38'de. Ayrı QR “Mektup Türünün Serüveni” videosudur; `QR-EBA-E43890DFD82A.md` kimlik/SHA düzeyi eşleşme bildirir, ancak tam ses dökümü yoktur. Video Kaplan mektubunun doğrudan tür kanıtı değildir. Sunumun dört `quote_links` indeksi `answer` birimine geçerli biçimde bağlanıyor. | **Uygun.** Basılı tür kanıtı ile yardımcı video birbirinden doğru ayrılmış |
+| `T1-P56-Q03` | `source_locator` alanına alıntı sayfaları s.53–54 eklendi | Basılı s.56 soru 3, öğrencinin kendi canlandırmasında belirlediği hataların olası etkilerini sorar. Doğan Cüceloğlu'nun iletişim kopukluklarına ilişkin metninin girişi s.53, komşu örneği ve ikinci alıntı s.54'tedir. Sunumdaki indeks 0 `Temel_Etkiler`, indeks 1 `İletişim_Kazasının_Ortaya_Çıkabileceği_Örnek_Durumlar` bölümüne geçerli bağlanıyor. | **Uygun.** s.53–54 kuramsal/örnek destek; öğrencinin canlandırması sorunun esas bağlamı olmaya devam etmeli |
+| `T2-P88-Q06` | Doğrulanmamış `19XU49LO.mp4` atfı kaldırıldı; `source_locator` basılı soru köküne sınırlandı | Basılı s.88 soru 6, besmeleyle tohum saçılması ve kuşların gözetilmesini açıkça içerir. Bu nedenle cevaptaki yorum **soru köküyle** destekleniyor. QR hedefi doğrulanmış olsa da `UNVERIFIED-19XU49LO.md` video dosyasının EBA kimliğiyle doğrudan SHA/binary eşleşmesini ve tam konuşma dökümünü doğrulamıyor. Sunum akışındaki “ekim sahnesindeki” ifadesi doğrulanmış video sahnesi izlenimi verebildiği için soru köküne dayalı ifadeyle düzeltildi. | **Koşullu uygun.** Basılı soru köküne dayanan yorum geçerli; video içeriği doğrulanmış sayılmamalı |
+| `T2-P100-Q01` | `source_locator` alanına basılı s.90 alıntı sayfası eklendi | Soru basılı s.100'de Çordon'un kararını sorar. “Onun hayatta olduğuna...” ve “Henüz gözlerim kapanmadan...” cümleleri basılı s.90'dadır. İki `quote_links` indeksi `decision` birimine, `contains_quote_indexes: [0,1]` kanıt bölümü `Gerekçeler` alanına işaret ediyor. | **Uygun.** Alıntı sayfası ve sunum bağları tutarlı |
+
+**Tur K2 kapsam sınırı:** Yukarıdaki doğrulama, depodaki basılı kitap JSON sayfalarının metin katmanı ve yapılandırılmış soru bloklarıyla yapıldı; video sesinin yeniden dinlenmesi veya yeni bir transkript üretimi değildir. Bu turda cevap metinleri ve cevap türleri değiştirilmedi. Yalnız `T2-P88-Q06` akışındaki bir öğretmen yönlendirmesi kaynak belirsizliğine uygun hâle getirildi. Sunumun `quote_links` indeksleri ile hedef cevap bölümlerinin varlığı kayıt bazında kontrol edildi; otomatik test sonucu yerine geçirilmemelidir.
+
 ## Bekleyen kaynak-bağlantısı denetimi
 
 | Tema | Kimlik | Kontrol odağı | Durum |
 | --- | --- | --- | --- |
-| Tema 1 | `T1-P35-Q01` | Metindeki repliklerin basılı sayfa karşılıkları | **Bekliyor** |
-| Tema 1 | `T1-P43-Q01` | Mektup türünde ana metin/QR kaynak ayrımı | **Bekliyor** |
-| Tema 1 | `T1-P56-Q03` | İletişim metni alıntı sayfaları | **Bekliyor** |
-| Tema 2 | `T2-P88-Q06` | Soru kökündeki davranışlar | **Bekliyor** |
-| Tema 2 | `T2-P100-Q01` | Alıntı metni sayfası | **Bekliyor** |
+| Tema 1 | `T1-P35-Q01` | Metindeki repliklerin basılı sayfa karşılıkları | **Uygun** |
+| Tema 1 | `T1-P43-Q01` | Mektup türünde ana metin/QR kaynak ayrımı | **Uygun** |
+| Tema 1 | `T1-P56-Q03` | İletişim metni alıntı sayfaları | **Uygun** |
+| Tema 2 | `T2-P88-Q06` | Soru kökündeki davranışlar | **Koşullu uygun** |
+| Tema 2 | `T2-P100-Q01` | Alıntı metni sayfası | **Uygun** |
 | Tema 2 | `T2-P100-Q02` | Alıntı metni sayfası | **Bekliyor** |
 | Tema 2 | `T2-P100-Q07` | Alıntı metni sayfası | **Bekliyor** |
 | Tema 2 | `T2-P112-Q05` | Alıntı metni sayfaları | **Bekliyor** |
@@ -61,8 +73,8 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Bekliyor** |
 | Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Bekliyor** |
 
-**İlerleme:** Kaynak/tür değişen **5/35 kayıt incelendi; 30 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
+**İlerleme:** Kaynak/tür değişen **10/35 kayıt incelendi; 25 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
 
 ## Sonraki küçük tur
 
-Önce `T1-P35-Q01`, `T1-P43-Q01`, `T1-P56-Q03`, `T2-P88-Q06` ve `T2-P100-Q01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
+Önce `T2-P100-Q02`, `T2-P100-Q07`, `T2-P112-Q05`, `T2-P117-Q01` ve `T2-P117-BILGE01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
