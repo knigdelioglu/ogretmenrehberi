@@ -116,6 +116,23 @@
 
 **Kalite durağı:** Başka kayıt bu turda değiştirilmedi; sıradaki grup ayrı kaynak ve test turunda değerlendirilecek.
 
+## Tur 8 — Tema 4: Çalışkanlık ve Aidiyet; kaynak düzeyini koruyan nihai dört cevap
+
+| Soru | PR #99 öncesi öğretim değeri ve sorun | PR #99 sonrası / güncel durum | Tur 8'deki düzeltme |
+| --- | --- | --- | --- |
+| `T4-P293-Q02` | Yıl boyu üretim, zeytin/çam fıstığı, Muharrem–Zübeyde ve köyde kuşak değişimiyle örneklendiriyordu; ancak sözlü video transkripti depo kanıtlarıyla karşılaştırılmamıştı | PR #99 kesin kişi/ekonomi anlatılarını çıkardı fakat **örnek ana düşünceyi** öğrencinin kendi doldurması gereken uyarıya dönüştürdü | Tarlada bakım, ürün toplama, kırsal topluluk sahnelerinden **süreklilik gösteren emek** hakkında bir ana düşünce, iki gözlem ve gerekçe kuruldu; kişi isimleri ve sözlü ekonomik yargılar doğrulanmış sayılmadı |
+| `T4-P293-Q03` | Dört ölçütle (dil, ileti, tür, içerik) ayrıntılı belgesel karşılaştırması vardı ama Çalışkanlık yaşam öyküsünü kesin video olgusu gibi sunuyordu | PR #99 doğru kanıt sınırına geçerken öğrencinin dolduracağı karşılaştırma örneklerini büyük ölçüde boş bıraktı | **Dört ölçüt** için somut ve farklı kanıt düzeyleriyle örnek karşılaştırma yazıldı: Fedakârlıkta kullanıcı kaynaklı konuşma özeti + görsel; Çalışkanlıkta sadece görsel gözlem; belgesel türü kitapta adıyla doğrulanmış, **ses üslubu farkı** ise hâlâ ayrı transkript gerektiriyor |
+| `T4-P307-Q13` | Halil Bey'in çeşmeleri temizlemesi ve dört çeşme yaptırması üzerinden sorumluluk/merhamet gibi değerleri örneklendirmişti; eski kesin kişi ve anlatıcı atıfları desteklenmiyordu | Güncel ana cevap daha temkinliydi ancak `answer_sections` **doğrulanmamış sıfatları ve Halil Bey öyküsünü hâlâ kesin anlatı** gibi veriyordu | Kitabın 'uyum sağlayan insanların özellikleri' sorusu, engebeli arazi/doğadaki işler/çeşme görüntülerinden **gözlem → olası özellik → gerekçe** modeliyle cevaplandı. Alt bölümlerdeki kesin konuşmacı/kişi iddiaları ayrıştırıldı |
+| `T4-P307-Q14` | Aidiyeti çeşme bakımı, aile geleneği ve yurt bağlılığı ile somutlaştırmıştı; kaynakta kişinin nedenleri doğrulanamıyordu | Güncel ana cevap aidiyeti iyi tanımlasa da alt bölümlerde sanki kesin video sözleri biliniyormuş gibi kişi geçmişi anlatılıyordu | Aile/sosyal bağ, anılar, ortak alanı koruma ve emek verme üzerinden örnek aidiyet cevabı hazırlandı; **gönüllü çeşme bakımı açıkça varsayımsal öğrenci örneği** olarak işaretlendi; gerçek video görüntüsü ayrı tutuldu |
+
+**Birincil sayfalar:** `data/book/grade-11/themes/theme-4/pages/p293.json`, `p307.json`; **medya kanıt notları:** `UNVERIFIED-19XU49KB.md`, `UNVERIFIED-19XU49LQ.md`, `UNVERIFIED-19XU49LS.md`. Üç cevap sürümü karşılaştırıldı: PR #99 öncesi `6f029e0`, PR #99 sonrası `ce8406d`, tur başındaki `main`.
+
+**Kritik düzeltme:** `T4-P307-Q13` ve `T4-P307-Q14` eski `answer_sections` içerikleri ana cevabın uyarılarıyla çelişiyordu. Artık Halil Bey'in adı, ailesi, 'dört çeşme' veya anlatıcının sözleri depodaki görsel kanıttan doğrulanmış olarak sunulmuyor. Bu ayrıntılar için tam, güvenilir ses kaydı/izleme kanıtı gerekir.
+
+**Kanıt ayrımı:** `19XU49LQ` notunda kullanıcının paylaştığı sözlü anlatımın **özeti** saklıdır; `19XU49KB` ve `19XU49LS` notları ise **yalnız örnek görüntüleri** kaydeder. Kullanıcı tarafından sağlanan özet, bağımsız olarak doğrulanmış EBA MP4 dosyası veya zaman damgalı kelimesi kelimesine transkript yerine geçmez. Dört cevap da `source_limited` kalır.
+
+**Denetim kapanışı:** PR #99'da `answer` metni değişen **39/39 kaydın soru bazında pedagojik karşılaştırması ve gerekli düzenlemeleri** tamamlandı. Bu, tüm QR videolarının seslerinin yeniden doğrulandığı veya PR #99'daki yalnız kaynak/tür değişikliklerinin ayrıca tamamen denetlendiği anlamına gelmez.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -155,12 +172,12 @@
 | Tema 2 | `T2-P147-Q01` | 142–147 | **Tur 7: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P159-Q08` | 155–159 | **Tur 7: incelendi ve düzeltildi** |
 | Tema 4 | `T4-P286-Q03` | 284–297 | **Tur 7: incelendi ve düzeltildi** |
-| Tema 4 | `T4-P293-Q02` | 284–297 | Bekliyor |
-| Tema 4 | `T4-P293-Q03` | 284–297 | Bekliyor |
-| Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
-| Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
+| Tema 4 | `T4-P293-Q02` | 284–297 | **Tur 8: incelendi ve düzeltildi** |
+| Tema 4 | `T4-P293-Q03` | 284–297 | **Tur 8: incelendi ve düzeltildi** |
+| Tema 4 | `T4-P307-Q13` | 303–307 | **Tur 8: incelendi ve düzeltildi** |
+| Tema 4 | `T4-P307-Q14` | 303–307 | **Tur 8: incelendi ve düzeltildi** |
 
-**Tur 1–7 tamamlandı: 35/39 metni değişmiş cevap kaydı. Kalan: 4.**
+**Tur 1–8 tamamlandı: 39/39 metni değişmiş cevap kaydı. Kalan cevap-metni kaydı: 0.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -171,4 +188,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Sıradaki son dört kayıt: Tema 4 `T4-P293-Q02`, `T4-P293-Q03`, `T4-P307-Q13`, `T4-P307-Q14`. Her birinin kitap sorusu, görüntü notları, bağımsız kaynakları ve eski cevapları ayrı değerlendirilecek. Tamamlandıktan sonra 39 kayıt için son tutarlılık denetimi yapılacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Cevap metni değişen 39 kaydın pedagojik incelemesi tamamlandı. Son kalite kapısı: **PR CI + soru kimliği, kaynak ve bölüm tutarlılığı**. Ayrı sonraki iş olarak PR #99'da yalnız `entry_type`/`source_locator` veya cevap dışı alanları değişen kayıtlar (ör. `T1-P64-Q01`) bağımsız bir kaynak-izlenebilirlik turunda denetlenebilir. **Bu çalışma tüm ses transkriptleri veya video kökenleri için bağımsız doğrulama iddiası değildir.**
