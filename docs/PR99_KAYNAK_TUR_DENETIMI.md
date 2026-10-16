@@ -86,6 +86,18 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 
 **Tur K6 yöntem ve sınır:** PR #99 öncesindeki `6f029e0` ile denetim başlangıcındaki güncel `main` karşılaştırıldığında beş kayıtta yalnız `source_locator` değişmişti; `answer`, `entry_type`, alıntı dizileri, cevap bölümleri ve öğretmen yönlendirmeleri korunmuştur. Ders kitabının s.243–246 ve 259–262 sayfalarıyla tema 4 sunum akışları ve `web-presentation.json` içindeki indeks/bölüm bağlantıları denetlendi. Bu turda sadece üç `source_locator` kaydı düzeltildi; video ses/döküm doğrulaması yapılmadı, tüm uygulama testlerinin başarılı olduğu varsayılmadı.
 
+## Tur K7 — Son beş kayıt: karakter, türler, değer ve ölçme-değerlendirme
+
+| Kayıt | PR #99 farkı ve görev türü | Kitap kanıtı ve sunum bağı | Karar |
+| --- | --- | --- | --- |
+| `T4-P262-PERFQ01` | `answer` ve `entry_type=performance_support` sabit; `source_locator` s.243, 245, 246 ile genişletilmiş | s.262 **Sıra Sizde 1**, öğrencinin canlandırmak istediği karakteri kendi gerekçesiyle seçmesini istiyor. “bilgim, azmim ve çalışkanlığımla talihimi yenmiştim” s.243; “İnsan, yapabileceğini…” ve “Güzellik, büyüklükten…” s.245; “tek başıma yenmedim” s.246'da. Dört `quote_links` indeksi `character-choice` birimi ve `Seçim için örnek kanıt havuzu` bölümüyle tutarlı. | **Uygun.** Tek bir karakter zorunlu doğru olarak sunulmuyor; değişiklik gerekmiyor |
+| `T4-P272-PERF02` | `answer` ve `entry_type=performance_support` sabit; `source_locator` s.243, 245, 246, 265 ile genişletilmiş | s.272 **Karşılaştıralım 2**, insan ilişkilerindeki değerlerin tiyatro mu hikâyede mi daha etkili anlatıldığına ilişkin gerekçeli kişisel görüş istiyor. **Ben, Mimar Sinan** içinde “Mimarlarına da saygı duyuyordum” s.243, “Sana güveniyorum Koca Sinan” s.245, “tek başıma yenmedim” s.246'da; **Merdiven**'de “Bahtiyar ol” s.265'te. Sunumdaki dört indeks `comparison-and-choice` biriminin kanıt havuzuna geçerli bağlanıyor. | **Uygun.** İki türün üstünlüklerini tartışan karşılaştırma ve kaynaklar yerinde; değişiklik gerekmiyor |
+| `T4-P277-PERF02` | `answer` ve `entry_type=performance_support` sabit; `source_locator` s.265'i eklemiş | s.277 **Sıra Sizde 2** öğrenciye kendi değer yargısıyla çelişen davranışı seçtirip alternatif tepkiyi gerekçelendirmesini istiyor. Örnek tartışma dayanağı “yeni yetme” nitelemesi **Merdiven**'in s.265 metninde geçiyor. İndeks 0 `values-response` birimi ve `Seçim için örnek metin kanıtları` bölümüyle uyumlu. | **Uygun.** Örneğin öğrenci yargısını zorunlu olarak belirlemediği görüldü |
+| `T4-P279-PERF01` | `answer` ve `entry_type=performance_support` sabit; `source_locator` s.265'i eklemiş | s.279 **Süreci Değerlendirebilme**, `Konunun işlenişi` için basılı bir örnek vererek öğrencinin **kendi ölçütünü**, beğenme/beğenmeme kararını ve gerekçesini oluşturmasını istiyor. Söz dizimi için “Çabuk çabuk”, gündelik diyalog için “Bahtiyar ol” ifadeleri s.265'te. Sunum indeksleri 0/1 `text-evaluation` birimindeki örnek kanıtlarla uyumlu. | **Uygun.** Basılı örnek ile kişisel değerlendirme ayrılmış; değişiklik gerekmiyor |
+| `T4-P304-Q02` | `answer` ve `entry_type=question_answer` sabit; `source_locator` I ve II. metnin bulunduğu s.303'e genişletilmiş | s.303'te **I. metin** geleneksel biçimlerle Batı tiyatrosu yaklaşımının buluşmasını, **II. metin** bu sürecin 1960'lardaki örneklerini ve “episodik bir yapı”yı anlatır. s.304'teki soru 2 için **A seçeneği**, II. metnin I. metinde ifade edilen durumun sonucuna değindiğini belirtir; seçeneklerin karşıt ve yanlış ilişkileri metinle desteklenmez. İndeks 0 `Gerekçe` bölümüne geçerli bağlanıyor. | **Uygun.** Alıntı ve çoktan seçmeli cevap metinlerle tutarlı; değişiklik gerekmiyor |
+
+**Tur K7 yöntem ve kapsam:** Beş yanıt bankası kaydı PR #99 öncesi `6f029e0` ile ve güncel `main` ile karşılaştırıldı. Her beşinde `answer`, `entry_type`, `evidence_quotes` ve `answer_sections` değişmemiş; PR #99 ile yalnız `source_locator` genişlemişti. Basılı sayfalar s.243, 245–246, 262, 265, 272, 277, 279, 303–304; ilgili sunum akışları; `web-presentation.json` alıntı indeksleri ve hedef bölümleri denetlendi. Yeni hata bulunmadığı için cevap bankası ve sunum değiştirilmedi. Bu turda video ses kaydı veya QR medyası yeniden incelenmedi.
+
 ## Bekleyen kaynak-bağlantısı denetimi
 
 | Tema | Kimlik | Kontrol odağı | Durum |
@@ -115,14 +127,22 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 4 | `T4-P260-PERF01` | Tiyatro ve sosyal bilimler metni | **Uygun** |
 | Tema 4 | `T4-P261-Q01` | Çatışma ve oyun metni | **Kaynak kapsamı düzeltildi** |
 | Tema 4 | `T4-P262-PERF01` | Oyun ve değerlendirme bağı | **Uygun** |
-| Tema 4 | `T4-P262-PERFQ01` | Oyun metni kanıt bağı | **Bekliyor** |
-| Tema 4 | `T4-P272-PERF02` | Oyun karşılaştırma alıntıları | **Bekliyor** |
-| Tema 4 | `T4-P277-PERF02` | Diğer oyun metni alıntıları | **Bekliyor** |
-| Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Bekliyor** |
-| Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Bekliyor** |
+| Tema 4 | `T4-P262-PERFQ01` | Oyun metni kanıt bağı | **Uygun** |
+| Tema 4 | `T4-P272-PERF02` | Oyun karşılaştırma alıntıları | **Uygun** |
+| Tema 4 | `T4-P277-PERF02` | Diğer oyun metni alıntıları | **Uygun** |
+| Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Uygun** |
+| Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Uygun** |
 
-**İlerleme:** Kaynak/tür değişen **30/35 kayıt incelendi; 5 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
+**İlerleme: 35/35 kaynak/tür kaydı incelendi; bekleyen kaynak/tür kaydı yok.** Ayrı tamamlanan **39/39 cevap-metni pedagojik denetimi** ile PR #99'un bu envanterdeki iki cevap-bankası değişim sınıfı için **74/74 kayıt düzeyi inceleme tamamlandı**. Bu sayı uygulamanın bütün dosyalarının, bütün video seslerinin veya bütün ders kitabı metinlerinin bağımsız olarak doğrulandığı anlamına gelmez.
 
-## Sonraki küçük tur
+### Kapanış ve açık doğrulama sınırı
 
-Önce `T4-P262-PERFQ01`, `T4-P272-PERF02`, `T4-P277-PERF02`, `T4-P279-PERF01` ve `T4-P304-Q02` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
+- **Tamamlanan:** PR #99'da değişen 39 cevap metninin pedagojik denetimi ve cevap metni değişmeyen 35 kaydın kaynak/tür denetimi. Kaynak bağlantıları basılı kitap ve mevcut sunum JSON'larıyla eşleştirildi; gerekli yerlerde dar kapsamlı kaynak adresi düzeltmeleri uygulandı.
+- **Açık koşul:** `T2-P88-Q06` basılı soru kökünden doğrulanmış olsa da, `19XU49LO.mp4` ile QR/EBA içeriğinin doğrudan ikili dosya eşleşmesi ve tam ses dökümü bu denetim kapsamında kanıtlanmadı. Kaydın **Koşullu uygun** statüsü korunur.
+- **Kapsam dışı:** Yeni video dinleme/ASR, tüm medya dosyalarının tam izlenmesi, sınıf içinde pedagojik etkililik ölçümü ve PR #99 dışında kalan tüm kaynak dosyaları.
+- **Teknik doğrulama:** İlgili sunum alıntı indeksleri ve hedef bölümler kayıt bazında denetlendi. GitHub Actions sonuçları kendi koşu durumlarına göre ayrıca değerlendirilmeli; bu metinsel denetim CI test başarısının yerine geçmez.
+
+
+## Denetim tamamlandı
+
+Yedi küçük tur sonucunda kaynak/tür denetim envanterindeki **35 kaydın tamamı** işlendi. Kalan bir sonraki zorunlu beşli yoktur. Yeni çalışma açılacaksa yalnız **Koşullu uygun** durumundaki medya eşleşmesinin doğrulanması veya ayrı bir son kullanıcı/pedagoji testi için bağımsız kapsam belirlenmelidir.
