@@ -98,6 +98,24 @@
 
 **Kalite durağı:** Bu turda beş kayıt kontrol edildi; sıradaki grup testler tamamlanmadan açılmadı.
 
+## Tur 7 — Tema 2 s.144–159 ve Tema 4 s.286: performans, kültürel köprü, ileti
+
+| Soru | PR #99 öncesi öğretim katkısı ve kanıt sorunu | Güncel sürümün pedagojik açığı | Tur 7 onarımı |
+| --- | --- | --- | --- |
+| `T2-P144-MAP01` | Mekân/beden dili/söyleyiş/estetik haritasını çeşitli sahne ve söz örnekleriyle dolduruyordu; klavye markası, tam sahne yazısı, sanatçının dizeyi düzeltmesi ve altı dörtlük gibi ayrıntılar arşivli görsel notta yoktu | PR #99 doğru ihtiyatla görsel örnekleri korudu fakat dört alanı çok kısa ve öğretimde yetersiz bıraktı | Dört harita alanı için **gözlenen sahne unsuru + yorumu + sınırı** ayrı oluşturuldu. Sazlı nöbetleşe söyleyiş ve alkış kaydedildi; dize sayısı/replik/dekor iddiası eklenmedi |
+| `T2-P145-PERF01` | Altı şapkayı sahne/dize örnekleriyle dolduruyordu; düzeltme repliği, uyak ve belirli olumsuz iletiler bağımsız doğrulanmamıştı | 'Siyah şapka = ses kanıtı yok' açıklaması **kitaptaki olumsuz iletileri sorgulama görevi**ni karşılamıyordu | Basılı s.145'in **altı özgün sorusunun her birine** ayrı örnek yanıt verildi. Siyah şapkada sadece duyulan sözle olumsuz ileti belirleme, aksi durumda 'tespit etmedim' seçeneği; yeşilde özgün dörtlük tasarlama sağlandı |
+| `T2-P147-Q01` | Söz sanatları ve söyleyicinin katkısı iki alanda somuttu; doğrulanmamış bağ/çağ/dağ ve tekrar/şahıs sahne iddiaları vardı | Cevap geliştirildi ancak iki sütun için sınıfça doldurulabilir **somut örnek ve öznel gerekçe** azdı | **Âşık atışmasına değer katan unsurlar / Söyleyicinin metne katkısı** iki ayrı bölüm ve gözlem–kişisel yorum örnekleriyle işlendi; Sunum Web `comparison` bölümleri buna eşleştirildi |
+| `T2-P159-Q08` | Dîvânu Lugâti't-Türk, Kutadgu Bilig ve Dede Korkut örnekleri vardı; konuşmacı kişi, tarih ve eserleri kesin video anlatısı gibi aktarmak doğru değildi | Eser adları korunsa da Orhun Yazıtlarıyla **iki kaynak arasında model karşılaştırma** sınırlıydı | Kutadgu Bilig için yönetim/adalet düşüncesi, Dîvânu Lugâti't-Türk için Türkçe/yazılı bellek üzerinden ayrı somut kültürel köprü örnekleri; Dede Korkut alternatif olarak verildi |
+| `T4-P286-Q03` | Fedakârlık, kaplumbağa kurtarma ve fidan dikme olaylarıyla somutlanmıştı; önceki cevap bu olayları kesin ses/görüntü kanıtı gibi sunuyordu | PR #99 yalnız kaynak uyarısına indirgedi; depodaki `UNVERIFIED-19XU49LQ.md` notunda kullanıcı tarafından iletilen anlatımın özeti bulunduğu dikkate alınmadı | Doğrudan **demiryolu/doğa görüntüsü**, **kullanıcının sağladığı anlatım özetindeki kaplumbağa/fidan örnekleri** ve bunlardan çıkan **merhamet/fedakârlık/doğa sorumluluğu yorumu** üç ayrı kanıt düzeyinde işlendi |
+
+**Basılı kaynaklar:** `data/book/grade-11/themes/theme-2/pages/p144.json`, `p145.json`, `p147.json`, `p159.json`; `data/book/grade-11/themes/theme-4/pages/p285.json`, `p286.json`. **Arşiv notları:** `UNVERIFIED-19XU49JV.md`, `UNVERIFIED-19XU49MB.md`, `UNVERIFIED-19XU49LQ.md`. Cevaplar PR #99 öncesi `6f029e0`, sonrası `ce8406d` ve tur başlangıcı `main` üzerinden ayrı karşılaştırıldı.
+
+**Kaynak durumu:** s.144/s.145 kayıtları `performance_support`, s.147/s.159/s.286 kayıtları `source_limited` olarak bırakıldı. EBA MP4 bayt kimliği ve bağımsız tam ses transkripti hâlâ doğrulanmış değildir. s.286 video notunda **kullanıcı tarafından sağlanan anlatımın özeti** bulunduğu için bu kaynak, doğrulanmış ses alıntısı veya salt görsel gözlem diye yeniden etiketlenmeden öğretim örneği olarak değerlendirildi.
+
+**Sunum sözleşmesi:** `T2-P147-Q01` için yeni iki sütun başlığı `data/grade-11/presentation/theme-2/web-presentation.json` içindeki `comparison.sections` ile eşleştirildi. `T2-P159-Q08`'in doğrulanmış ekran alıntısını taşıyan `answer_text.fragments` ve 'videoda anıldığına dair ses kanıtı değildir' ifadesi korundu.
+
+**Kalite durağı:** Başka kayıt bu turda değiştirilmedi; sıradaki grup ayrı kaynak ve test turunda değerlendirilecek.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -132,17 +150,17 @@
 | Tema 2 | `T2-P143-Q02` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P143-Q03` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P143-Q04` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
-| Tema 2 | `T2-P144-MAP01` | 142–147 | Bekliyor |
-| Tema 2 | `T2-P145-PERF01` | 142–147 | Bekliyor |
-| Tema 2 | `T2-P147-Q01` | 142–147 | Bekliyor |
-| Tema 2 | `T2-P159-Q08` | 155–159 | Bekliyor |
-| Tema 4 | `T4-P286-Q03` | 284–297 | Bekliyor |
+| Tema 2 | `T2-P144-MAP01` | 142–147 | **Tur 7: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P145-PERF01` | 142–147 | **Tur 7: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P147-Q01` | 142–147 | **Tur 7: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P159-Q08` | 155–159 | **Tur 7: incelendi ve düzeltildi** |
+| Tema 4 | `T4-P286-Q03` | 284–297 | **Tur 7: incelendi ve düzeltildi** |
 | Tema 4 | `T4-P293-Q02` | 284–297 | Bekliyor |
 | Tema 4 | `T4-P293-Q03` | 284–297 | Bekliyor |
 | Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
 | Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
 
-**Tur 1–6 tamamlandı: 30/39 metni değişmiş cevap kaydı. Kalan: 9.**
+**Tur 1–7 tamamlandı: 35/39 metni değişmiş cevap kaydı. Kalan: 4.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -153,4 +171,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Sıradaki beşli: Tema 2 `T2-P144-MAP01`, `T2-P145-PERF01`, `T2-P147-Q01`, `T2-P159-Q08` ve Tema 4 `T4-P286-Q03`. Tamamı önce eski/yeni cevap ve ilgili kaynakla yeniden karşılaştırılacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Sıradaki son dört kayıt: Tema 4 `T4-P293-Q02`, `T4-P293-Q03`, `T4-P307-Q13`, `T4-P307-Q14`. Her birinin kitap sorusu, görüntü notları, bağımsız kaynakları ve eski cevapları ayrı değerlendirilecek. Tamamlandıktan sonra 39 kayıt için son tutarlılık denetimi yapılacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**

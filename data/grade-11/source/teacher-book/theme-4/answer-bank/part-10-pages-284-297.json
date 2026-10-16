@@ -93,13 +93,16 @@
       "question_no": "3",
       "source_locator": "basılı s.286 / PDF s.287 — uzun video QR, kaynak QR basılı s.285: 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md; ses transkripti doğrulanmadı",
       "prompt_summary": "Video notlarından hareketle belgeselin iletilerini belirleme",
-      "answer": "Kısmi görsel inceleme ve MP4 kökeni, videonun ana iletisini veya dış sesin sözlerini doğrulamıyor. Öğrenci doğrudan gözlediği bir sahneyi kaydedebilir; fedakârlık ile ilgili genel iletiyi bu sahneden çıkarıyorsa bunu yorum olarak işaretlemeli ve sözlü iddiayı doğrulanmış gibi aktarmamalıdır.",
-      "guidance": "Kısmi görsel gözlemi video özeti gibi sunmayın. Tam içerik için kaynak kimliği ve ses transkripti doğrulanmalıdır.",
+      "answer": "Belgeselin 'Hayatın Aynası' temasıyla ilişkilendirilebilecek örnek iletisi şudur: **Fedakârlık, başkalarının ve diğer canlıların iyiliği için karşılık beklemeden emek vermek ve sorumluluk üstlenmektir.** Videodan kaydedilmiş görsel örneklerde demiryolunda yürüyen bir kişi, ağaçlık alanlar ve kırsal yaşam görülür. Kullanıcının sağladığı anlatım dökümünün depodaki özetine göre emekli demiryolu görevlisi Mehmet Bey raylarda karşılaştığı kaplumbağaları kurtarmayı ve çevreye fidan dikmeyi anlatır. Bu iki eylem, canlılara merhamet ve doğayı korumak için süreklilik gösteren çaba yönlerinden fedakârlık ile ilişkilendirilebilir. Kaplumbağa ve fidan ayrıntıları **bağımsız görüntü doğrulaması değil, kullanıcı tarafından sağlanan anlatım özetidir**; sesin kelimesi kelimesine doğrulanmış transkripti olarak aktarılmaz.",
+      "guidance": "S.286'nın istediği 'ileti' ile 'sahnede olan'ı ayırın. Tahtada 'gördüğümüz görüntü / elimizdeki anlatım notu / buradan çıkardığımız mesaj' sütunları oluşturun. Görsel olarak demiryolu/doğa, sağlanan anlatım özetine göre kaplumbağaları koruma/fidan dikme, yorum olarak fedakârlık–merhamet–sorumluluk yazdırın. Öğrenciler videoyu sınıfta bütünüyle dinlemişse sözcük/sahne zamanını ayrıca doğrulayabilir; tam konuşma transkripti ve MP4'ün EBA bayt kimliği depoda bağımsız olarak doğrulanmış değildir.",
       "answer_sections": {
-        "Doğrulanabilen": "Yalnız notta açıkça kaydedilmiş görsel örnekler kullanılabilir.",
-        "Kanıtlanmayan": "Dış sesin ana iletisi, olay anlatımı ve sahne zamanları tam transkriptle doğrulanmadı."
+        "Doğrudan kaydedilen görseller": "Örnek kare notlarında demiryolu hattı ve boyunca yürüyüş, kırsal arazi, ağaçlık yol ve tarım alanı görüntüleri vardır. Bunlar **nerede/ne görüldü?** sorusunu karşılar; kurtarılan kaplumbağa sayısı veya dikilmiş ağaç miktarı gibi ayrıntıları bağımsız doğrulamaz.",
+        "Sağlanan anlatımın özeti": "Depodaki UNVERIFIED-19XU49LQ notu, kullanıcının paylaştığı anlatım dökümünü özetler: Mehmet Bey demiryolu çevresindeki kaplumbağaları kurtarma uğraşından ve fidan dikme çabasından söz eder. Bu bilgi ayrı bir kanıt düzeyidir; örnek kare incelemesinden türetilmemiştir.",
+        "İleti 1 — merhamet ve sorumluluk": "Rayda tehlikeyle karşılaşan canlıya yardım etmek, başka canlının yaşamına dikkat göstermenin ve kişisel sorumluluğun örneği olarak yorumlanabilir.",
+        "İleti 2 — süreklilik gösteren emek": "Çevreye fidan dikmek, doğayı yalnız sözle sevmekten farklı olarak gelecek için zaman ve çaba ayırmak anlamına gelebilir. Bu, insanın davranışıyla değer üretmesi yönünden temaya bağlanır.",
+        "Ana ileti ile kanıtın ilişkisi": "Görsel çevre (demiryolu/doğa) → kullanıcı kaynaklı olay özeti (kaplumbağa/fidan) → **fedakârlık, merhamet ve çevre sorumluluğu** çıkarımı. Son basamak yorumdur; dış sesin kelimesi kelimesine sözü olarak gösterilmez."
       },
-      "explanation": "UNVERIFIED-19XU49LQ notu örnek kare sınırlarını ve ses belirsizliğini açıklar."
+      "explanation": "PR #99 öncesinde anlatılan kaplumbağa ve fidan örnekleri öğretim açısından yararlıydı fakat doğrudan doğrulanmış video içeriği sayılıyordu. PR #99 bunları kaldırırken geriye yalnız genel uyarı kaldı. Mevcut notta **kullanıcının sağladığı dökümün kısa özeti** bulunduğu için örnekleri bu kanıt düzeyinde geri kazandırdık; gerçek görsel kare gözlemleriyle ve yorumla ayrı tutuldu."
     },
     {
       "question_id": "T4-P286-PERF01",
