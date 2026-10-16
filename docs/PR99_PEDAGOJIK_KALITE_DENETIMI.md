@@ -32,6 +32,22 @@
 
 **Kalite duraklaması:** Beş kaydın tamamı ayrı ayrı karşılaştırıldı; bu turda içerik üretimi burada durur. Sonraki tur yeni dosya incelemesiyle başlar.
 
+## Tur 3 — beş sorunun kaynak ve pedagojik doğruluk incelemesi
+
+| Soru | PR #99 öncesinde yararlı olan | Önceki sürümdeki risk / kalite kaybı | Kanıta dayalı nihai düzenleme |
+| --- | --- | --- | --- |
+| `T1-P72-Q01` | Nezaket–saygı–güven–yapıcılık sınıflaması | Eski cevap yanlışlıkla Osman Bey/Edebali'nin sözlerini **Aklıselim söyleşisinin örnekleri** olarak vermişti; PR #99 yalnız genel doldurma yönergelerine döndü | Kitabın s.72'de doğrudan verdiği 'Aklıselim programına hoş geldiniz.' nezaket kanıtı korundu; diğer nitelikler için **örnek değerlendirme ölçütleri** ve aralarındaki ilişki sunuldu; doğrulanmayan sözler yazılmadı |
+| `T1-P73-Q01` | Dil özelliklerini beğeniyle gerekçelendirme | PR #99'da mecaz örneği korunmuş ama yorum ve metne katkı açıklaması kısalmış | Ekran notlarının 02:05 ve 03:08 ifadeleri kullanılarak sevgi–kanat ve yakınlık–mesafe çağrışımları gerekçelendirildi; **ekran yazısı ≠ sesli konuşmacı sözü** ayrımı korundu |
+| `T1-P73-Q02` | Olumsuz eleştiri ile düzenleme önerisini birlikte sunma | Eski 00:41–02:01 uzun/tekrarlı cümle iddiaları arşivlenmiş ses dökümünde yok; PR #99 soru için tamamlanmış örnek sağlamıyordu | Ekranda görülen tarih iddiası için kaynak gösterimi ve mecaz için açıklayıcı örnek öneren **eleştiri–çözüm çiftleri** verildi; tüm programda kaynak eksikliği bulunduğu iddia edilmedi |
+| `T1-P83-Q13` | Şiirdeki duyguya somut unsur seçme | Güncel cevap s.83'te bulunmayan şiir dizelerini **basılı şiir metni** sayıyor; alt bölüm ise sesin kesinlikle şaire ait olduğunu ileri sürüyordu | Kare notlarında görülen siyah-beyaz yazma, kitap, deniz ufku, gün batımı ve kuş gibi **doğrulanmış görsellerden gerekçeli yorum** kuruldu; seslendiren kişi ve vurgu ayrı kanıt gerektiriyor |
+| `T2-P88-Q01` | Toyun toplantı, paylaşma ve eğlenceyle birliğe katkısını göstermek | PR #99 kapsamı genel uyarıya indirmiş, PR #103 öğretim değerini kısmen geri getirmişti | Kitabın toy tanımından başlayan **toplantı → hazırlık → paylaşım → aidiyet** ilişkisi ve varsayımsal hasat şenliği örneği geliştirildi; destan alıntısı veya MP4-EBA eşleşmesi uydurulmadı |
+
+**Kaynak kontrolü:** `data/book/grade-11/themes/theme-1/pages/p072.json`, `p073.json`, `p083.json` ve `data/book/grade-11/themes/theme-2/pages/p088.json`; `data/grade-11/source/qr-review-notes/QR-EBA-29BF4F293D53.md`, `QR-EBA-2952F505E3A7.md`, `UNVERIFIED-19XU49LO.md`. Eski/PR #99/güncel cevaplar üçlü karşılaştırıldı.
+
+**Önemli kaynak kusuru:** Basılı s.83, `Olvido` şiirinin dizelerini içermiyor; videoya yönlendirme ve soru metni içeriyor. Eski cevapta kullanılan şiir dizelerinin kaynak atfı bu nedenle geri getirilmedi. `QR-EBA-2952F505E3A7` notu görsel karelerden ibarettir, sesli okunuş veya ses kimliği doğrulaması değildir.
+
+**Son durum:** Beş kaydın `source_limited` statüsü değiştirilmedi. İçerik sahibi inceleme beyanı ayrıdır; kelimesi kelimesine arşivlenmiş transkript veya aday MP4'ün EBA dosya kimliği yerine kullanılmadı. Yeni başka cevap üretilmeden bu turda duruldu.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -46,11 +62,11 @@
 | Tema 1 | `T1-P67-Q07` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P67-Q08` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
 | Tema 1 | `T1-P67-Q09` | 64–67 | **Tur 2: incelendi ve düzeltildi** |
-| Tema 1 | `T1-P72-Q01` | 72–73 | Bekliyor |
-| Tema 1 | `T1-P73-Q01` | 72–73 | Bekliyor |
-| Tema 1 | `T1-P73-Q02` | 72–73 | Bekliyor |
-| Tema 1 | `T1-P83-Q13` | 79–83 | Bekliyor |
-| Tema 2 | `T2-P88-Q01` | 86–89 | Bekliyor |
+| Tema 1 | `T1-P72-Q01` | 72–73 | **Tur 3: incelendi ve düzeltildi** |
+| Tema 1 | `T1-P73-Q01` | 72–73 | **Tur 3: incelendi ve düzeltildi** |
+| Tema 1 | `T1-P73-Q02` | 72–73 | **Tur 3: incelendi ve düzeltildi** |
+| Tema 1 | `T1-P83-Q13` | 79–83 | **Tur 3: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P88-Q01` | 86–89 | **Tur 3: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P88-Q02` | 86–89 | Bekliyor |
 | Tema 2 | `T2-P88-Q03` | 86–89 | Bekliyor |
 | Tema 2 | `T2-P88-Q04` | 86–89 | Bekliyor |
@@ -76,7 +92,7 @@
 | Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
 | Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
 
-**Tur 1–2 tamamlandı: 10/39 metni değişmiş cevap kaydı. Kalan: 29.**
+**Tur 1–3 tamamlandı: 15/39 metni değişmiş cevap kaydı. Kalan: 24.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -87,4 +103,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Sıradaki beşli: Tema 1 `T1-P72-Q01`, `T1-P73-Q01`, `T1-P73-Q02`, `T1-P83-Q13` ve Tema 2 `T2-P88-Q01`; her biri için yeni kaynak karşılaştırması yapılacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Sıradaki beşli: Tema 2 `T2-P88-Q02`, `T2-P88-Q03`, `T2-P88-Q04`, `T2-P88-Q05` ve `T2-P113-Q01`; kitap/sözlük/media kanıtı ile her biri ayrı doğrulanacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
