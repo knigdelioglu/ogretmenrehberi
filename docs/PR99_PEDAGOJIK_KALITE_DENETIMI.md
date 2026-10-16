@@ -64,6 +64,22 @@
 
 **Kalite duraklaması:** Bu beş soru düzenlendikten sonra başka soru değiştirilmedi. CI kontrolleri ve kod–sunum sözleşmeleri son aşama olarak ayrı doğrulanacak.
 
+## Tur 5 — Tema 2 s.129, 140 ve 141: tarih, söz varlığı ve âşıklık mirası
+
+| Soru | Önceki sürümün öğretim değeri ve problemi | PR #99 ile kayıp / güncel durum | Tur 5 kararı |
+| --- | --- | --- | --- |
+| `T2-P129-Q01` | Hun–Göktürk–Uygur–Selçuklu–Osmanlı devletleri ve kültür etkinliği, videodaki **doğrulanmamış sunucu sözleri** olarak aktarılmıştı | PR #99 yalnız görsel gözlem/araştırma sorusuna indirdi; gerçek medeniyet katkısı örneği kalmadı | Kitabın diğer öğrenmeleri ve genel tarih bilgisiyle **Orhun Yazıtları, Dîvânu Lugâti't-Türk ve Selçuklu kervansarayları** alan–örnek–etki ilişkisi içinde açıklandı; bu örnekler videoda kesin söylendi sayılmadı |
+| `T2-P129-Q02` | '7 bağımsız/20'ye yakın özerk' ve nüfus sayıları video konuşmacısına güncel kesin veri olarak atfedildi | Sayıların kanıt sınırı korundu fakat **siyasi statü, uluslararası ilişki ve kültür bağı** yorumu zayıfladı | Soru kökünün alıntısı tarihli kaynak söylemi olarak yorumlandı; bağımsız devlet/özerk yönetim farkı ve kültürel işbirliği örneği ayrıldı; **bugünkü sayı/tanınma iddiası yok** |
+| `T2-P129-Q03` | Devlet kurma, göç, kültür, yazılı miras ve karşılıklı etkileşim örnekleri vardı | PR #99 genel kanıt uyarısı koyarken ana cevapta somut örnekleri sildi; alt bölümlerde bazıları duruyordu | Orhun Yazıtları ile Dîvânu Lugâti't-Türk ana cevapla ilişkilendirildi; göç ve kültür etkileşimi **tek yönlü zafer anlatısına** indirgenmedi |
+| `T2-P140-VOC01` | Çağ, canan, sine, kahır, saban için dizeli karşılaştırma öneriliyordu; ses dökümündeki dizeler bağımsız doğrulanmamıştı | PR #99 dize iddiasını çıkardı; PR #103 sözlük anlamı ve koşullu önerileri geri getirdi | Beş sözcüğün temel anlamları ve **çağ/devir, canan/sevgili, kahır/üzüntü, saban/pulluk** ikamelerinin ses/hece/çağrışım farkları somutlaştırıldı; gerçek atışma mısrası uydurulmadı |
+| `T2-P141-Q01` | Basılı Erman Artun metnindeki koruma, aktarım, eğitim ve çağdaş yorum ilkeleri somuttu; videoya ait usta–çırak/sazlı icra sözleri kanıtsız aktarılmıştı | PR #99 ve #103 basılı önerileri korudu; uygulanabilirlik ve Türk dünyası örnekleri zayıf kaldı | Kaynak ve izin bilgileriyle **yerel icra arşivi**, okul dinletisi ve kitabın **ozan/akın/aytışçı/bahsi** adlandırmalarını karşılaştırma önerisi eklendi; 2 basılı alıntı korundu |
+
+**Birincil kaynaklar:** `data/book/grade-11/themes/theme-2/pages/p129.json`, `p140.json`, `p141.json`; `data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LP.md`, `UNVERIFIED-19XU49JV.md`, `UNVERIFIED-19XU49MG.md`. Karşılaştırma: PR #99 öncesi `6f029e0`, PR #99 sonrası `ce8406d`, tur başı güncel `main`.
+
+**Kanıt kararı:** Sözlü medya tam deşifre edilmedi; EBA indirmesi–yerel MP4 bayt kimliği bağı eksik. Beş soruda `source_limited` korundu. Kitabın kendi soru alıntıları ve s.141 basılı metin alıntıları, sesli videoya değil **basılı kaynağa** aittir. Sesli performansa ilişkin gerçek mısra uydurulmadı. Türk tarihi eserleri, video montajında göründüğü kanıtlanan nesneler değil **ön öğrenmelerden kültürel-tarihî örneklerdir**.
+
+**Kalite durağı:** Yalnız beş kayıt düzenlendi; sonraki soru grubu bu turda açılmadı.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -88,11 +104,11 @@
 | Tema 2 | `T2-P88-Q04` | 86–89 | **Tur 4: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P88-Q05` | 86–89 | **Tur 4: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P113-Q01` | 113–120 | **Tur 4: incelendi ve düzeltildi** |
-| Tema 2 | `T2-P129-Q01` | 129–135 | Bekliyor |
-| Tema 2 | `T2-P129-Q02` | 129–135 | Bekliyor |
-| Tema 2 | `T2-P129-Q03` | 129–135 | Bekliyor |
-| Tema 2 | `T2-P140-VOC01` | 136–141 | Bekliyor |
-| Tema 2 | `T2-P141-Q01` | 136–141 | Bekliyor |
+| Tema 2 | `T2-P129-Q01` | 129–135 | **Tur 5: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P129-Q02` | 129–135 | **Tur 5: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P129-Q03` | 129–135 | **Tur 5: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P140-VOC01` | 136–141 | **Tur 5: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P141-Q01` | 136–141 | **Tur 5: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P141-Q02` | 136–141 | Bekliyor |
 | Tema 2 | `T2-P142-Q02` | 142–147 | Bekliyor |
 | Tema 2 | `T2-P143-Q02` | 142–147 | Bekliyor |
@@ -108,7 +124,7 @@
 | Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
 | Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
 
-**Tur 1–4 tamamlandı: 20/39 metni değişmiş cevap kaydı. Kalan: 19.**
+**Tur 1–5 tamamlandı: 25/39 metni değişmiş cevap kaydı. Kalan: 14.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -119,4 +135,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Sıradaki küçük grup: Tema 2 `T2-P129-Q01`, `T2-P129-Q02`, `T2-P129-Q03`, `T2-P140-VOC01`, `T2-P141-Q01`; her biri eski/yeni cevap, ders kitabı ve medya kanıtıyla yeniden kontrol edilecek. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Sıradaki kontrollü beşli: Tema 2 `T2-P141-Q02`, `T2-P142-Q02`, `T2-P143-Q02`, `T2-P143-Q03`, `T2-P143-Q04`; kitap soru kökleri, önceki cevap ve video kanıtlarıyla ayrı değerlendirilecek. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
