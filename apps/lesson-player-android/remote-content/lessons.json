@@ -70050,9 +70050,9 @@
           "web": {
             "units": [
               {
-                "id": "Görsel gözlem",
+                "id": "Görsel kanıt",
                 "section_keys": [
-                  "Görsel gözlem"
+                  "Görsel kanıt"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70060,9 +70060,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Yorum",
+                "id": "Örnek ana düşünce",
                 "section_keys": [
-                  "Yorum"
+                  "Örnek ana düşünce"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70070,9 +70070,29 @@
                 "quote_indexes": []
               },
               {
-                "id": "Kanıt sınırı",
+                "id": "Kanıt–yorum ilişkisi",
                 "section_keys": [
-                  "Kanıt sınırı"
+                  "Kanıt–yorum ilişkisi"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Alternatif gerekçeli yorum",
+                "section_keys": [
+                  "Alternatif gerekçeli yorum"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Doğrulama sınırı",
+                "section_keys": [
+                  "Doğrulama sınırı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -70112,13 +70132,15 @@
           "question_no": "2",
           "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; ses transkripti yok",
           "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-          "answer": "Örnek görüntü notları çalışmayı/üretimi ve kırsal yaşamı tartışmaya açabilir; konuşmalar transkript edilmediği için videonun ana düşüncesi, kişilerin adları, yaşam öyküsü veya ekonomik ayrıntıları doğrulanmış gibi verilemez. Öğrenci doğrudan gözlediği görüntü ile yorumunu ayırmalı.",
-          "guidance": "Sahne özetini olgu; çalışkanlık yorumu olarak ayrı yazın. Dış ses veya kişilerin sözlerini transkript olmadan aktarmayın.",
-          "explanation": "Kaynak notu örnek görsel incelemedir; konuşma içeriği kanıtı sağlamaz.",
+          "answer": "**Örnek ana düşünce:** Çalışkanlık, doğayla iç içe sürdürülen üretimde düzenli emek vermeyi, sorumluluk almayı ve gerektiğinde birlikte çalışmayı gerektirir. Belgeselin kayıtlı görüntülerinde tarım arazileri, bitkilerle ilgilenen kişiler, ürün toplama ve kırsal ortamda bir araya gelme sahneleri vardır. Bu görüntüler, emeğin yalnız tek bir anlık çabadan değil, hazırlık, bakım ve hasat gibi birbirini izleyen işlerden oluştuğunu düşündürür. **Örnek gerekçe:** Ürün toplama sahnesi bir sonuç gösterir; bitkilerin bakımı ve tarladaki çalışma görüntüleri bu sonucun arkasındaki sürekliliğe dikkat çeker. Bu, görsel kaynağa dayanan gerekçeli bir ana düşünce önerisidir; konuşmada dile getirilen kesin mesaj veya kişi öyküsünün tam dökümü değildir.",
+          "guidance": "Ana düşünceyi bir cümleyle kurdurun; ardından en az iki görüntüyü gerekçe olarak yazdırın. 'Gördüğüm üretim aşaması → çıkardığım sonuç → çalışkanlıkla ilişkisi' çizelgesi kullanın. Görsel kayıttan kişilerin adı, kuşak çatışması ve organik ürünlerin fiyatı çıkarılamaz; bu ayrıntılar için öğrencinin gerçek dinleme notu ya da kaynaklı transkript gerekir.",
+          "explanation": "PR #99'un ses kaynağı ihtiyatı korundu. Önceki sürümdeki yıl boyu emek ve üretim gerekçeleri, kaydedilmiş tarla/bakım/hasat sahnelerine dayalı bir örnek ana düşünce içinde yeniden kuruldu. Kişi ve ekonomi ayrıntıları bağımsız kaynak olmadan geri eklenmedi.",
           "answer_sections": {
-            "Görsel gözlem": "Notta görülen sahnelerden birini seçip betimleyin.",
-            "Yorum": "Görüntünün çalışkanlık kavramını nasıl düşündürdüğünü gerekçelendirin.",
-            "Kanıt sınırı": "Sesli anlatı, kişi bilgileri ve neden-sonuç iddiaları doğrulanmadı."
+            "Görsel kanıt": "Kayıtlı örnek karelerde tarım alanları, ağaç/bitki bakımı, ürün toplama, kırsal yaşam ve topluluk/aile birlikteliği görülür. Kişilerin kimliği, ürünlerin ekonomik değeri veya konuşma içeriği bu karelerden kesinleştirilemez.",
+            "Örnek ana düşünce": "Kırsal üretim, süreklilik gösteren emek, doğayla uyum ve ortak sorumlulukla sürdürülebilir. Bu cümle görüntülerden yapılan bir yorumdur, dış sesin birebir ifadesi değildir.",
+            "Kanıt–yorum ilişkisi": "Gözlem: tarla/ürün toplama/bakım görüntüleri → çıkarım: üretimin farklı aşamaları emek ve zaman gerektirir → tema bağlantısı: çalışkanlık düzenli gayretle görünür olur.",
+            "Alternatif gerekçeli yorum": "Öğrenci ortak yemek ve birlikte geçirilen zaman görüntülerini dikkate alarak çalışmanın aile ve topluluk hayatını bir araya getirdiğini savunabilir. Bu yorum diğerlerinden üstün sayılmadan görüntü dayanağıyla tartışılmalıdır.",
+            "Doğrulama sınırı": "Kırtık köyü, Muharrem/Zübeyde, organik üretimin ekonomik değeri veya çocukların ayrılması gibi eski yanıt ayrıntıları görsel inceleme notunda doğrulanmadığı için videonun kanıtlanmış sözlü anlatısı olarak sunulmaz."
           }
         },
         "content": {
@@ -70182,7 +70204,8 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "explanation"
         ],
         "display_prompt": "Karşılaştıralım 3 — Fedakârlık ve Çalışkanlık belgesellerini dört ölçütte karşılaştırınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -70205,14 +70228,15 @@
           "question_no": "3",
           "source_locator": "basılı s.293 / PDF s.294 — Fedakârlık QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4 (kaynak QR s.285; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md) ve Çalışkanlık QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; görsel notlar, ses dökümleri değil",
           "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-          "answer": "İki videonun konuşma transkriptleri ve MP4 kökenleri doğrulanmadı; bu nedenle dil, ileti ve içerik bakımından kesin karşılaştırma yapılamaz. Öğrenciler sınıfta doğrulanmış tam izleme notu oluşturana kadar yalnız doğrudan gördükleri sahne özelliklerini karşılaştırmalı, bunları gözlem olarak etiketlemelidir.",
+          "answer": "İki belgesel de Anadolu insanının emek ve sorumlulukla ilişkisini anlatmaya elverişli örnekler sunar; ancak bunları farklı çalışma alanları üzerinden işler. **Fedakârlık:** Demiryolu çevresinde ilerleyen kişi ve doğa görüntüleri vardır; kullanıcı tarafından iletilen anlatım özetinde kaplumbağaları koruma ve fidan dikme çabasından söz edilir. **Çalışkanlık:** Tarlada bakım, tarımsal üretim, ürün toplama ve kırsal birlikte yaşam görüntüleri görülür. **Ortak nokta:** Emeğin başka insanlara, canlılara veya yaşanan çevreye katkı sunması. **Fark:** İlkinde canlıları ve doğayı koruma; ikincisinde üretimde düzenli çalışma daha belirgindir. İki kaydın anlatıcı dili ve sesli iletisini birebir karşılaştırmak için Çalışkanlık konuşma transkripti gerekir.",
           "answer_sections": {
-            "Dil ve Üslup": "Doğrulanmış ses transkripti yok.",
-            "İleti": "Dış sesin ana iletisi kanıtlanmadı.",
-            "Tür": "Görsel biçim tek başına belgesel alt türünü doğrulamaz.",
-            "İçerik": "Kısmi sahne gözlemi ile anlatılan olayları ayırın."
+            "Dil ve Üslup": "Fedakârlık: depodaki kullanıcı kaynaklı anlatım özetinde değerleri tanıtan bir dış ses ve kişinin deneyimlerini aktarması belirtilir; bu, arşivlenmiş sözcüğü sözcüğüne transkript değildir. Çalışkanlık: görsel notta tarla, hasat ve topluluk sahneleri vardır; konuşmacıların kelime seçimi, vurgu ve ses tonu hakkında transkript bulunmadığı için kesin üslup farkı kurulamaz.",
+            "İleti": "Fedakârlık için örnek ileti, anlatım özetindeki kaplumbağaları koruma ve fidan dikme çabalarından hareketle 'canlılara merhamet ve çevreye karşı sorumluluk'tur. Çalışkanlık için görselden hareketle örnek ileti, 'üretim ve bakımın düzenli emek gerektirmesi'dir. Birincisi kullanıcı kaynaklı anlatım özetiyle, ikincisi görüntü yorumuyla desteklendiğinden aynı kanıt düzeyi sanılmamalıdır.",
+            "Tür": "Her iki yapım ders kitabında Anadolu İnsanı serisinin çok modlu belgesel metinleri olarak sunulur. Görüntü ve ses birlikte kullanılabilir; kaynaklardaki doğrulama farkı, iki yapımın kitapta belgesel olarak ele alınmasını ortadan kaldırmaz.",
+            "İçerik": "Fedakârlık görüntüleri demiryolu/doğa çevresini; kullanıcı kaynaklı anlatım özeti kaplumbağa kurtarma ve fidan dikme uğraşını kapsar. Çalışkanlık görüntüleri tarla, bitki bakımı, ürün toplama ve kırsal birlikte yaşamı gösterir. İlkinde çevreyi koruma, ikincisinde üretim emeği belirginleşir; Çalışkanlık videosundaki kişilerin yaşam öyküleri bağımsız olarak doğrulanmadı."
           },
-          "guidance": "Ses veya MP4 kökeni doğrulanana kadar iki videonun sözlü içeriğini karşılaştırmayın; kısmi gözlemleri açıkça sınırlayın."
+          "guidance": "S.293'teki dört ölçütü ayrı koruyun. Dil/üslupta ses kanıtı eksikliğini dürüstçe belirtip görüntülerden ses tonu üretmeyin. İleti bölümünü iki sütunda birer **gerekçeli öneri** olarak yazdırın; kanıt düzeylerini açıkça ayırın. Fedakârlık için kullanıcı kaynaklı anlatım notunu, Çalışkanlık için bağımsız görsel kareleri kullanın. Karşılaştırmayı olgu, çıkarım ve yorum ayrımıyla değerlendirin.",
+          "explanation": "Eski cevabın iki belgeselin emek ve sorumluluk ortaklığına dayalı karşılaştırma değeri yeniden kuruldu. Çalışkanlık için doğrulanmamış Muharrem/Zübeyde aile öyküsü kesin video içeriği olarak aktarılmadı; Fedakârlık için arşivdeki kullanıcı kaynaklı özet bağımsız görüntü/ses kanıtı gibi sunulmadı."
         },
         "content": {
           "lead": "Her ölçütte en az bir benzerlik ve bir farklılık yazın; iki videodan da gerçek kanıt kullanın.",
@@ -74230,9 +74254,9 @@
           "web": {
             "units": [
               {
-                "id": "Videoda sayılan özellikler",
+                "id": "Gözlenen yaşam ve çevre",
                 "section_keys": [
-                  "Videoda sayılan özellikler"
+                  "Gözlenen yaşam ve çevre"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74240,9 +74264,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Halil Bey'den kanıtlar",
+                "id": "Özellik–davranış ilişkisi",
                 "section_keys": [
-                  "Halil Bey'den kanıtlar"
+                  "Özellik–davranış ilişkisi"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74250,9 +74274,19 @@
                 "quote_indexes": []
               },
               {
-                "id": "Çıkarım",
+                "id": "Çıkarımın sınırı",
                 "section_keys": [
-                  "Çıkarım"
+                  "Çıkarımın sınırı"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Eski cevaptaki doğrulanmamış ayrıntılar",
+                "section_keys": [
+                  "Eski cevaptaki doğrulanmamış ayrıntılar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74292,18 +74326,19 @@
           "question_no": "13",
           "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md; ses transkripti doğrulanmadı",
           "prompt_summary": "Aidiyet videosundaki Anadolu insanının belirgin özelliklerini örneklerle belirleme",
-          "answer": "Aidiyet anlatısı çevresindeki insanlara ve yaşadığı yere karşı sorumluluk alma davranışı üzerinden çözümlenebilir. Mevcut öğretmen cevabında Halil Bey'in dağ çeşmelerini temizlemesi ve su hayrı geleneğini sürdürmesi, emek, cömertlik ve kültürel aktarım için örnek olarak verilmiştir. Öğrenci bu davranışları birer değerle eşleştirip gerekçelendirmelidir. Konuşmacıya kelimesi kelimesine söz atfedilecekse ayrıca transkript gerekir.",
+          "answer": "Anadolu'nun farklı yörelerindeki yaşam koşullarına uyum sağlayabilen insanlarda **çalışkanlık, dayanıklılık, çevreyi tanıma, sorumluluk ve yardımlaşma** gibi özellikler bulunabilir. Bunlar herkes için değişmez özellikler değil, davranışlardan gerekçelendirilebilecek değerlerdir. *Aidiyet* videosunun örnek görüntülerinde engebeli arazide ilerleyen bir kişi, kırsal yerleşim, su/çeşme çevresi ve doğada gerçekleştirilen gündelik işler görülür. Örneğin zorlu arazide yol almak uyum ve gayretle; yaşanan çevreyle ilgilenmek sorumlulukla ilişkilendirilebilir. Ancak görüntü, kişinin niyetini veya geçmişini kesin olarak göstermez. Bu cevap görüntülerden hareketle hazırlanmış örnek yorumdur; depoda konuşmaların doğrulanmış ses transkripti bulunmuyor.",
           "answer_sections": {
-            "Videoda sayılan özellikler": "Dış ses Anadolu insanını sabırlı, cesur ve fedakâr olarak niteler; merhamet, dürüstlük ve cömertliği de öne çıkarır.",
-            "Halil Bey'den kanıtlar": [
-              "Dağdaki çeşmeleri her bahar temizleyip bakımını yapar; bu işi yıllardır sürdürdüğünü anlatır.",
-              "Dedesinden çeşme ve su hayrının önemini öğrenmiştir.",
-              "Dört çeşme yaptırdığını ve su bulursa yenilerini de yaptıracağını söyler."
+            "Gözlenen yaşam ve çevre": "Kayıtlı karelerde ağaçlık ve engebeli arazi, sırt çantasıyla yürüyen bir kişi, su/çeşme, kırsal yerleşim, doğada ilerleme ve çevreyle ilgilenmeye benzeyen el hareketleri görülür.",
+            "Özellik–davranış ilişkisi": [
+              "Uyum ve dayanıklılık: engebeli arazide ilerleme görüntüsü, zor koşullarda hareket etmeye ilişkin örnek olarak yorumlanabilir.",
+              "Çalışkanlık ve sorumluluk: toprak, dal/odun gibi çevre unsurlarıyla ilgilenme görüntüsü gündelik emek fikrini düşündürebilir; yapılan işin amacı bilinmiyor.",
+              "Çevreye bağlılık ve yardımlaşma: çeşme/yerleşim görüntüleri ortak mekâna bakım ve paylaşma konularını tartışmaya açar; bir kişinin bu amaçla hareket ettiği yalnız karelerden kanıtlanmaz."
             ],
-            "Çıkarım": "Bu söz ve davranışlar çalışkanlık, sorumluluk, cömertlik ve topluma hizmet değerleriyle ilişkilendirilebilir."
+            "Çıkarımın sınırı": "Öğrenci önce görüntüyü tarif etmeli, sonra 'bu bana hangi özelliği düşündürüyor ve neden?' diyerek yorumunu kurmalıdır. Bütün Anadolu insanlarına aynı kişilik özellikleri atfedilmez.",
+            "Eski cevaptaki doğrulanmamış ayrıntılar": "Halil Bey'in ismi, aile öyküsü, dört çeşme yaptırması ve dış sesin sıfatları mevcut görsel notta/ses transkriptinde bağımsız olarak doğrulanmış değildir; bu yüzden kesin video kanıtı olarak kullanılmaz."
           },
-          "guidance": "Önce kişinin davranışını, ardından bundan çıkarılan özelliği ayırın: çeşme bakımı → sorumluluk; su hayrı → paylaşma; kuşaktan öğrenilen işi sürdürme → kültürel aktarım. Bu eşleştirmeleri tek doğru yorum gibi sunmayın.",
-          "explanation": "UNVERIFIED-19XU49LS notu örnek görselleri kaydeder, fakat konuşmayı veya kişilerin öyküsünü doğrulamaz."
+          "guidance": "Soru 13 için soyut özelliklerin arkasına birer gözlenebilir davranış ve gerekçe yazdırın: 'gördüğüm → düşündürdüğü özellik → gerekçem'. Sınıfta gerçekten dinlenen bir söz varsa ayrıca not edip sesli kanıta bağlayın. Kaynak notundaki kırsal görüntülerden Halil Bey'in kimliği veya motivasyonu çıkarılamaz. 'Anadolu insanı her zaman...' türünden genellemelere gitmeyin.",
+          "explanation": "PR #99 öncesi cevap davranış–erdem eşleştirmeleriyle öğretim değeri taşıyordu, fakat kişilere ve anlatıcıya doğrulanmamış sözler atfediyordu. Mevcut alt bölümlerde kalan bu çelişki giderildi; kısmi görüntülere dayalı özellik–davranış–yorum örnekleri geri kazanıldı."
         },
         "content": {
           "lead": "Anlatıcının Anadolu insanı için saydığı özelliklerle Halil Bey'in çeşme bakımı ve su hayrı hakkındaki sözlerini kanıt olarak kullanın.",
@@ -74324,9 +74359,9 @@
           "web": {
             "units": [
               {
-                "id": "Anlatıcının açıklaması",
+                "id": "Aidiyetin oluşma koşulları",
                 "section_keys": [
-                  "Anlatıcının açıklaması"
+                  "Aidiyetin oluşma koşulları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74334,9 +74369,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Halil Bey'in örneği",
+                "id": "Görselden hareketle yorum",
                 "section_keys": [
-                  "Halil Bey'in örneği"
+                  "Görselden hareketle yorum"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74344,9 +74379,19 @@
                 "quote_indexes": []
               },
               {
-                "id": "Bu kanıtın aidiyetle ilişkisi",
+                "id": "Açıklayıcı örnek — video alıntısı değil",
                 "section_keys": [
-                  "Bu kanıtın aidiyetle ilişkisi"
+                  "Açıklayıcı örnek — video alıntısı değil"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Eski anlatının kanıt sınırı",
+                "section_keys": [
+                  "Eski anlatının kanıt sınırı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -74387,14 +74432,15 @@
           "question_no": "14",
           "source_locator": "basılı s.307 / PDF s.308 — Anadolu İnsanı / Aidiyet EBA QR 6e0ca79cee422408b5dcfaf3ad7a1459 / 19XU49LS.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LS.md; ses transkripti doğrulanmadı",
           "prompt_summary": "Bir kişinin yaşadığı yere aidiyet geliştirmesini video örnekleriyle açıklama",
-          "answer": "Bir yere aidiyet, o çevreyi yalnız yaşanan mekân olarak değil, emek verilen, korunan ve hatıralarla anlam kazanan bir yurt olarak benimsemektir. Öğretmen cevap bölümlerinde anlatılan Halil Bey'in çeşme bakımı ve su hayrını sürdürmesi, yerle kurulan bağın davranışa dönüşmesine örnek olarak kullanılabilir. Öğrenci, somut davranışı ve bu davranışın aidiyetle ilişkisine dair kendi çıkarımını ayrı ayrı ifade etmelidir. Birebir konuşma transkripti depoda arşivlenmediği için bu çözümleme, konuşmacının sözcüğü sözcüğüne alıntısı olarak sunulmaz.",
+          "answer": "Bir kişinin yaşadığı yere **aidiyet duygusu** geliştirmesi; oradaki insanlarla bağ kurmasına, ortak anılar biriktirmesine, çevreyi tanımasına, gelenekleri paylaşmasına ve yaşadığı mekâna emek vermesine bağlı olabilir. Örneğin bir köyün çeşmesinden yararlanan kişinin çevresini temiz tutması veya mahallenin ortak alanına gönüllü katkı sunması, 'burayı yalnız kullanan değil koruyan biriyim' düşüncesini güçlendirebilir. *Aidiyet* videosunun görsel notlarında çeşme, yerleşim, yollar ve doğayla ilişki kurulan sahneler vardır; bunlar mekâna aşinalık ve sorumluluk üzerine yorum yapmaya elverişlidir. Ancak örnek verilen gönüllü çeşme bakımı, videoda kesinlikle gerçekleştiği doğrulanmış bir olay değildir. Kişinin neden oraya bağlı olduğunu doğrudan anlamak için kendi sözlerini içeren doğrulanmış ses kaydı gerekir.",
           "answer_sections": {
-            "Anlatıcının açıklaması": "Aidiyet; kişinin aklı, gönlü ve ruhunun ait olduğu topraklarla iç içe olması ve kendine yurt bildiği yeri terk etmemesiyle anlatılır.",
-            "Halil Bey'in örneği": "Halil Bey, Mamak çevresindeki dağ çeşmelerini temizlemeyi sürdürür; dedesinden öğrendiği su hayrını devam ettirir, dört çeşme yaptırdığını ve su bulursa yenilerini de yaptıracağını söyler.",
-            "Bu kanıtın aidiyetle ilişkisi": "Yaşadığı çevrenin su kaynağına emek vermesi ve aileden öğrendiği çeşme geleneğini sürdürmesi, yere bağlılık ve kültürel aktarım olarak yorumlanabilir."
+            "Aidiyetin oluşma koşulları": "Aile ve komşuluk ilişkileri, ortak geçmiş/anılar, kültürel alışkanlıklar, çevreyi tanıma ve yaşanan yere katkı verme birbirini destekleyebilir. Aidiyet yalnız doğum yeri veya hiç taşınmamış olmakla sınırlı değildir.",
+            "Görselden hareketle yorum": "Videoda su/çeşme, yerleşim, kırsal yollar ve tanıdık doğa çevresi tekrar görünür. Bu unsurlar ortak mekânın gündelik yaşamda önem taşıyabileceğini düşündürür, ancak kişinin hislerini göstermez.",
+            "Açıklayıcı örnek — video alıntısı değil": "Bir köy çeşmesinin bakımına gönüllü katılan kişi hem komşularıyla ortak iş yapar hem de yaşadığı yere emek verir. Böyle bir katkı aidiyet duygusunu artırabilir; bu örnek pedagojik modeldir, belirli videodaki doğrulanmış sahne değildir.",
+            "Eski anlatının kanıt sınırı": "Önceki cevapta bulunan Halil Bey, dededen öğrenilen su hayrı ve dört çeşme yaptırma ayrıntıları, depodaki görüntü karelerinden veya arşivlenmiş bir ses transkriptinden doğrulanmış değildir. Bu yüzden konuşmacı sözü olarak kullanılmaz."
           },
-          "guidance": "Cevabı iki aşamada kurdurun: gözlemlenen davranış ve aidiyete ilişkin gerekçeli yorum. Köklere bağlılık ve ortak mekâna bakım temalarını ayırın; birebir konuşma alıntıları için kayıtlı doğrulanmış döküm isteyin.",
-          "explanation": "UNVERIFIED-19XU49LS notu örnek görselleri kaydeder, fakat konuşmayı veya kişilerin öyküsünü doğrulamaz."
+          "guidance": "Öğrencilerden 'aidiyet nedir?' tanımı ile 'hangi davranış bunu geliştirebilir?' örneğini ayrı yazmalarını isteyin. Videoda görülen çeşme/kırsal çevre ile önerilen örnek etkinliği karıştırmayın. Taşınan veya yeni bir yere yerleşen birinin de aidiyet geliştirebileceğini tartıştırın. Birebir konuşma sözleri için doğrulanmış transkript yoktur.",
+          "explanation": "PR #99 öncesindeki çeşme geleneğinin çevreye aidiyetle ilişkisini kurma değeri, **video olayı olduğu iddia edilmeyen** ortak mekâna bakım örneğiyle korundu. Kaynakta kanıtlanmayan karakter geçmişi ve dört çeşme iddiası kesin içerikten çıkarıldı."
         },
         "content": {
           "lead": "Anlatıcının aidiyet tanımını ve Halil Bey'in çeşme bakımını sürdürerek yaşadığı çevreyle kurduğu bağı birlikte değerlendirin.",
