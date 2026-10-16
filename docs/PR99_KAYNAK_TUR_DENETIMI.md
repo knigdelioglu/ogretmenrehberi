@@ -74,6 +74,18 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 
 **Tur K5 kapsamı:** PR #99 öncesi `6f029e0` ile güncel yanıt bankası karşılaştırıldı; beş kaydın `answer`, `entry_type`, `evidence_quotes` ve `answer_sections` alanları aynı kaldı. Basılı kitap JSON sayfaları, s.252'nin `page_text` alanı, Tema 3/4 sunum akışları ile `web-presentation.json` içindeki alıntı indeksleri ve bölüm eşleşmeleri incelendi. Yalnız iki `source_locator` düzeltildi; cevap metinleri, cevap türleri, kanıt listeleri ve öğretmen yönlendirmeleri değiştirilmedi. Video ses dökümü veya QR medya eşleşmesi bu turda yeniden incelenmedi.
 
+## Tur K6 — Ben, Mimar Sinan: tarih, değer, çatışma ve değerlendirme (5 kayıt)
+
+| Kayıt | PR #99 farkı / görev türü | Doğrudan kaynak ve sunum bağı | Karar |
+| --- | --- | --- | --- |
+| `T4-P259-Q02` | `answer` ve `entry_type=question_answer` korunmuş; `source_locator` doğrudan alıntı için s.246'ya genişletilmiş | Basılı s.259 Fark Edelim 2, Enver Töre'nin `Türk Tiyatrosunun Kaynakları` parçasından hareketle Özakman'ın tarih ve millî kimlik yaklaşımını yorumlatır. Oyunda Sinan'ın eserleri ve sanat çevresi s.244; Aydınlı Artemios ve Muğlalı İsodoros'a hitabının başlangıcı s.245, `meslektaşım` ve `yurttaşımsınız` ifadesi ile “tek başıma yenmedim” s.246'dadır. Ayrıca Özakman biyografisi s.246'da yer alır. Sunumda kanıt indeksi 0 mevcut `answer` hedefini gösterir. | **Kaynak kapsamı düzeltildi.** Soru/yardımcı metin, kültürel çevre, iki sayfaya yayılan hitap ve yazar biyografisi ayrıştırıldı |
+| `T4-P260-Q04` | `answer` ve `entry_type=question_answer` aynı; `source_locator` yalnız s.245 alıntısına genişletilmiş | Basılı s.260 Sıra Sizde soru 4, çalışkanlık/estetik/sorumluluk değerlerinin kişilik ve eserlerdeki karşılıklarını ister. İnceleme ve ilk mühendislik görevleri s.243, farklı eserler ve planlardan söz edilmesi s.244, daha büyük yerine daha güzel yapıyı seçmesi ve “Güzellik, büyüklükten daha güçlüdür.” s.245'tedir. Sunumdaki indeks 0 `answer` bölümüne geçerli bağlanır. | **Kaynak kapsamı düzeltildi.** Yanıtın metin içi diğer dayanakları s.243–244 ayrıca belirtildi |
+| `T4-P260-PERF01` | `answer` ve `entry_type=performance_support` değişmemiş; `source_locator` alıntılar için s.243, 245, 246'ya genişletilmiş | Basılı s.260 Ders Dışı Etkinlik `Tiyatro ve Sosyal Bilimler`, bir haftalık çalışmada üç grubun sırasıyla **tarih, psikoloji ve sosyoloji** ilişkisini araştırmasını, farklı tiyatro metinlerinden yararlanmasını ve grup sözcüsüyle paylaşmasını ister. Dört alıntı `İnsan, yapabileceğini…` s.245, `bilgim, azmim…` s.243, `Güzellik, büyüklükten…` s.245, `tek başıma yenmedim` s.246'dadır. Sunumun dört `quote_links` indeksi ve dört birimi geçerli. | **Uygun.** Performans görevinde tarihî olgu ile kurgusal oyun sözü birbirine karıştırılmıyor |
+| `T4-P261-Q01` | `answer` ve `entry_type=question_answer` korunmuş; `source_locator` yalnız s.243 alıntılarıyla genişletilmiş | Basılı s.261 Birlikte Çalışalım, çatışmaları ve bunların metne etkisini altı kişilik grup çalışmasıyla çözümletir. Ayasofya'nın üstünlüğü iddiası ve Sinan'ın tepkisi, Van Gölü görevi, azim/talih s.243'te; büyüklük yerine estetik hedefi, Selimiye'nin inşasındaki `kaygı ve sevinç`, ölümlülük/kalıcılık karşıtlığı ve Selimiye açılışındaki söz s.245'te; ortak miras anlatısı s.246'dadır. Sunumdaki iki kanıt indeksi `conflict-and-evidence` birimindeki mevcut iki alt bölüme bağlanır; `theme-and-effect` bölümleri de vardır. | **Kaynak kapsamı düzeltildi.** s.245–246 yanıtın analiz kapsamına eklendi, çatışma/tematik karşıtlık ayrımı korundu |
+| `T4-P262-PERF01` | `answer` ve `entry_type=performance_support` korunmuş; `source_locator` s.243 ve s.245 alıntılarını eklemiş | Basılı s.262 Süreci Değerlendirebilme, gündelik insan ilişkilerine ilişkin **beyin fırtınası** ve öğrencinin **kendi beğeni ölçütüyle** tablo doldurmasını gerektirir. Oyundan dört `evidence_quotes`: Lütfü Paşa'nın önerisi ve mimarlara saygı s.243'te; `Sana güveniyorum Koca Sinan!` ile `Benim adıma öyle bir bina…` s.245'tedir. `criteria-and-choice` birimi, dört indeks ve mevcut ölçüt/gerekçe bölümleri geçerlidir. | **Uygun.** Öğrenci tercihine açık öz değerlendirme korunuyor |
+
+**Tur K6 yöntem ve sınır:** PR #99 öncesindeki `6f029e0` ile denetim başlangıcındaki güncel `main` karşılaştırıldığında beş kayıtta yalnız `source_locator` değişmişti; `answer`, `entry_type`, alıntı dizileri, cevap bölümleri ve öğretmen yönlendirmeleri korunmuştur. Ders kitabının s.243–246 ve 259–262 sayfalarıyla tema 4 sunum akışları ve `web-presentation.json` içindeki indeks/bölüm bağlantıları denetlendi. Bu turda sadece üç `source_locator` kaydı düzeltildi; video ses/döküm doğrulaması yapılmadı, tüm uygulama testlerinin başarılı olduğu varsayılmadı.
+
 ## Bekleyen kaynak-bağlantısı denetimi
 
 | Tema | Kimlik | Kontrol odağı | Durum |
@@ -98,19 +110,19 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 3 | `T3-P193-PERF03` | Çıkış kartı ve alıntılar | **Uygun** |
 | Tema 4 | `T4-P252-PERF02BC` | Oyun metni alıntı sayfaları | **Uygun** |
 | Tema 4 | `T4-P259-Q01` | Oyun metni alıntı sayfası | **Kaynak kapsamı düzeltildi** |
-| Tema 4 | `T4-P259-Q02` | Oyun metni alıntı sayfası | **Bekliyor** |
-| Tema 4 | `T4-P260-Q04` | Oyun metni alıntı sayfası | **Bekliyor** |
-| Tema 4 | `T4-P260-PERF01` | Tiyatro ve sosyal bilimler metni | **Bekliyor** |
-| Tema 4 | `T4-P261-Q01` | Çatışma ve oyun metni | **Bekliyor** |
-| Tema 4 | `T4-P262-PERF01` | Oyun ve değerlendirme bağı | **Bekliyor** |
+| Tema 4 | `T4-P259-Q02` | Oyun metni alıntı sayfası | **Kaynak kapsamı düzeltildi** |
+| Tema 4 | `T4-P260-Q04` | Oyun metni alıntı sayfası | **Kaynak kapsamı düzeltildi** |
+| Tema 4 | `T4-P260-PERF01` | Tiyatro ve sosyal bilimler metni | **Uygun** |
+| Tema 4 | `T4-P261-Q01` | Çatışma ve oyun metni | **Kaynak kapsamı düzeltildi** |
+| Tema 4 | `T4-P262-PERF01` | Oyun ve değerlendirme bağı | **Uygun** |
 | Tema 4 | `T4-P262-PERFQ01` | Oyun metni kanıt bağı | **Bekliyor** |
 | Tema 4 | `T4-P272-PERF02` | Oyun karşılaştırma alıntıları | **Bekliyor** |
 | Tema 4 | `T4-P277-PERF02` | Diğer oyun metni alıntıları | **Bekliyor** |
 | Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Bekliyor** |
 | Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Bekliyor** |
 
-**İlerleme:** Kaynak/tür değişen **25/35 kayıt incelendi; 10 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
+**İlerleme:** Kaynak/tür değişen **30/35 kayıt incelendi; 5 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
 
 ## Sonraki küçük tur
 
-Önce `T4-P259-Q02`, `T4-P260-Q04`, `T4-P260-PERF01`, `T4-P261-Q01` ve `T4-P262-PERF01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
+Önce `T4-P262-PERFQ01`, `T4-P272-PERF02`, `T4-P277-PERF02`, `T4-P279-PERF01` ve `T4-P304-Q02` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
