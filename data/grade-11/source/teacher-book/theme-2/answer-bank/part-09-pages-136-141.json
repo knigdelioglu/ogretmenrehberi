@@ -149,7 +149,7 @@
       "prompt_summary": "Çağ, canan, sine, kahır, saban kelimelerini atışmadaki bağlamına göre anlamlandırma ve alternatif önerme",
       "answer": "Dökümdeki kullanımlar: **çağ** “Zaman geçen çağ gibiyim”; **canan** “Başı duman cananın dağ gibiyim”; **kahır** “Yel vurması neme kahır”; **saban** “Saban gibi toprakları”; **sine** ise paylaşılan dörtlüklerde yer almıyor. Çağ “devir/dönem”, canan “gönülden sevilen kimse”, kahır “derin üzüntü veya sıkıntı”, saban “toprağı sürmeye yarayan araç” anlamındadır. “Sine” için temel sözlük anlamı göğüs/bağırdır; ancak bu dökümde bağlam örneği yok. Yakın karşılık önerirken dizedeki hece sayısı, uyak, anlam ve imgeyi yeniden değerlendirmek gerekir.",
       "guidance": "Önce beş sözcüğün anlamını tahmin ettirin, ardından sözlükle karşılaştırın. Dökümde geçen dört sözcüğün bulunduğu dizeyi p140 sayfa JSON’undan kullanarak bağlamı tartıştırın. “Sine”nin kullanıcı tarafından sağlanan dörtlüklerde bulunmadığını açıkça belirtin; daha geniş videoda başka yerde geçmediği sonucunu çıkarmayın. Alternatif sözcükleri dizede deneyip anlam, hece ve ahenk etkisini karşılaştırın.",
-      "source_locator": "basılı s.140 / PDF s.141 — 19XU49JV kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrı görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
+      "source_locator": "basılı s.140 / PDF s.141 — 19XU49JV.mp4 kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p140.json; ayrı görsel not: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49JV.md",
       "answer_sections": {
         "çağ": {
           "temel_sozluk_alani": "zaman, dönem, devir",
@@ -229,7 +229,7 @@
       ],
       "explanation": "Kitaptaki koruma/aktarım ilkeleri, kullanıcının sağladığı söyleşide yer alan âşıklık tanımı ve tarihsel çerçeveyle birlikte ele alındı.",
       "guidance": "Metindeki koruma, teşvik, eğitim ve aktarım önerilerini; videodaki uzman görüşünde açıklanan yaşayan sözlü şiir geleneği, sazlı icra ve farklı icra mekânlarıyla ilişkilendirin. Öğrencilerden izinli kayıt, kaynak bilgisi, dinleti veya söyleşi gibi somut bir uygulama önermelerini isteyin.",
-      "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
+      "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG.mp4 kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
       "answer_sections": {
         "Metinden Doğrudan Çıkanlar": [
           "Geleneği belgelemek ve korumak.",
@@ -262,7 +262,7 @@
       ],
       "explanation": "Kültürel miras yanıtı, kitapta basılı ortak miras açıklamalarıyla birlikte kullanıcının sağladığı söyleşi ve dış ses dökümünü de içeriyor.",
       "guidance": "Öğrencilerden “neyi koruyoruz, hangi yollarla aktarıyoruz, kültür mirası için neden önemli?” sorularına dayanaklı yanıt isteyin. Basılı metindeki kuşaktan kuşağa aktarım ve kültürler arası yakınlaşma görüşlerini; kullanıcı dökümündeki ozanlık/âşıklık tarihi, usta-çırak ve sözlü şiir anlatımıyla birleştirebilirler.",
-      "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
+      "source_locator": "basılı s.141 / PDF s.142 — 19XU49MG.mp4 kullanıcı ses ve ekran dökümü: data/book/grade-11/themes/theme-2/pages/p141.json; ayrıca video görsel notu: data/grade-11/source/qr-review-notes/MEDIA-REVIEW-19XU49MG.md",
       "answer_sections": {
         "Kültürel Bellek": "Basılı metnin 'kuşaktan kuşağa aktarılan bir değerler bütünü' tanımı, âşıkların eserlerinin yanında sözlü anlatma/ezgili söyleme geleneğinin ve geçmiş deneyimlerin de korunmasını gerektirir. Yalnız kayıt saklamak değil, geleneğin yaşatılarak aktarılması önemlidir.",
         "Türk Dünyasındaki Yaygınlık": "Kitapta Türkiye için 'ozan, âşık', Kazak Türkleri için 'akın, aytısger', Kırgız Türkleri için 'aytışçı', Türkmen/Özbek sahaları için 'bahsi' gibi adlandırmalar verilir. Adlar ve yerel icra biçimleri farklılaşsa da bu örnekler kültürel bağları karşılaştırmaya imkân verir.",
