@@ -50,6 +50,18 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 
 **Tur K3 sonuç ve kapsam:** Beş kaydın cevap türü `question_answer` kalmıştır. Karşılaştırma PR #99 öncesi `6f029e0` ve güncel `main` JSON kayıtlarıyla yapılmıştır; beşinin `answer` içeriği değişmemiştir. Basılı kitap soru ve alıntıları, sunumdaki `quote_links` sayısal indeksleri, hedef `answer_sections` ve tema-2 akışlarının `answer_id` eşlemeleri kontrol edildi. Orhun video/QR sesi incelenmedi ve tam transkript doğrulaması iddia edilmedi. Üç `source_locator` alanı kapsayıcı kaynak izlenebilirliği için düzeltildi; cevap, kanıt dizisi ve pedagojik yönlendirme değiştirilmedi.
 
+## Tur K4 — Orhun ve Huzur kaynak izlenebilirliği (5 kayıt)
+
+| Kayıt | PR #99 farkı | Basılı kanıt, tür ve sunum bağı | Karar |
+| --- | --- | --- | --- |
+| `T2-P128-Q01` | `answer` sabit, `source_locator` yalnız basılı s.114'e genişletilmiş | Basılı s.128 Süreci Değerlendirebilme soru 1 kişisel beğeniyi gerekçelendirmeyi istiyor. Doğrudan `evidence_quotes[0]` cümlesi “Türk milleti için gece uyumadım, gündüz oturmadım.” s.114'te; `Duygusal Anlatım` bölümünün kullandığı “Görür gözüm görmez gibi, bilir aklım bilmez gibi oldu.” s.115'te. Sunumda indeks 0 geçerli `rhetorical-features` birimine ve `Hitabet Gücü` kanıt bölümüne bağlanıyor. | **Kaynak kapsamı düzeltildi.** s.115 eklendi; cevap ve kanıt listesi değişmedi |
+| `T3-P175-Q02` | `source_locator` alıntı sayfası s.169'u ekliyor; cevap değişmemiş | Basılı s.175 soru 2 konu, tema ve yazılış amacını ayırmayı istiyor. “İstanbul'u tanımadıkça kendimizi bulamayız” ve “Bir hüviyet lâzım” ifadeleri s.169'da. Sunumda indeksler 0→`tema`, 1→`yazilis_amaci`; her iki dayanak ve `konu` bölümü geçerli. Yazar niyeti metinden çıkarım olarak sunuluyor, kesin biyografik beyan sayılmıyor. | **Uygun.** Kaynak ve bölüm eşleşmesi yerinde |
+| `T3-P176-Q03` | `source_locator` roman türlerinin anlatıldığı s.173–176 ile alıntı s.169'u kapsıyordu; modernist değerlendirme için kullanılan biyografi s.171 ayrıca belirtilmemişti | Soru basılı s.176'da; psikolojik/tahlil roman tanımı s.173, modernist roman tanımı s.174, Tanpınar'ın modernist yaklaşıma dair biyografik bilgisi s.171'de. İki doğrudan metin alıntısı (“Mümtaz da, kendisinde muzlim…” ve “İstanbul'u tanımadıkça…”) s.169'da. Sunumdaki indeksler 0→`Psikolojik yönün metin dayanağı`, 1→`Modernist yönün metin dayanağı` bölümlerine geçerli. | **Kaynak kapsamı düzeltildi.** Roman türü tablosu, yazar biyografisi ve metin kanıtı ayrıştırıldı |
+| `T3-P176-Q05` | `source_locator` alıntı sayfası s.169'u ekliyor | Basılı s.176 soru 5 “Bizler, kökü mazide olan atiyiz” sözünü yorumlatıyor; “Bir hüviyet lâzım. Bu hüviyeti her millet mazisinden alıyor.” metin kanıtı s.169'da. Sunumdaki indeks 0 geçerli `metinle_bag` bölümüne bağlı. Geçmiş-gelecek yorumu bir çıkarım olarak korunuyor. | **Uygun.** Soru ile metin kanıtı ayrılmış |
+| `T3-P176-Q13` | `source_locator` alıntı sayfası s.168'i ekliyor | Basılı s.176 soru 13 Nuran ve Mümtaz'ın mekânları müzikle adlandırmasından çıkarım istiyor. “İstanbul manzaralarıyla eski musıkîmiz birleşiyor...” cümlesi ve musiki/mekân birlikteliği s.168'de; indeks 0 `ortak_hatira` bölümüne geçerli bağlanıyor. | **Uygun.** Kaynak ve kanıt bağı doğru |
+
+**Tur K4 kapsamı:** PR #99 öncesindeki `6f029e0` ile güncel cevap kayıtlarının `answer` ve `entry_type` alanları karşılaştırıldı; beş kayıtta ikisi de aynı. Basılı ders kitabının sayfa JSON kayıtları ve tema sunumlarının `quote_links`, `units`, `evidence_sections` ilişkileri incelendi. İki `source_locator` alanı düzeltildi. Cevap, cevap bölümleri, kanıt listesi, öğretmen yönlendirmesi ve sunum davranışı değiştirilmedi. Bu tur video sesini veya QR medyasını doğrulamamaktadır.
+
 ## Bekleyen kaynak-bağlantısı denetimi
 
 | Tema | Kimlik | Kontrol odağı | Durum |
@@ -64,11 +76,11 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 2 | `T2-P112-Q05` | Alıntı metni sayfaları | **Uygun** |
 | Tema 2 | `T2-P117-Q01` | Orhun metni sayfa bağı | **Kaynak kapsamı düzeltildi** |
 | Tema 2 | `T2-P117-BILGE01` | Fark Edelim (Kafesoğlu) / yazıt bağı | **Kaynak kapsamı düzeltildi** |
-| Tema 2 | `T2-P128-Q01` | Orhun metni sayfa bağı | **Bekliyor** |
-| Tema 3 | `T3-P175-Q02` | Metin içi alıntı sayfası | **Bekliyor** |
-| Tema 3 | `T3-P176-Q03` | Soru ve Bilgi Köşesi/metin bağı | **Bekliyor** |
-| Tema 3 | `T3-P176-Q05` | Alıntı sayfası | **Bekliyor** |
-| Tema 3 | `T3-P176-Q13` | Alıntı sayfası | **Bekliyor** |
+| Tema 2 | `T2-P128-Q01` | Orhun metni sayfa bağı | **Kaynak kapsamı düzeltildi** |
+| Tema 3 | `T3-P175-Q02` | Metin içi alıntı sayfası | **Uygun** |
+| Tema 3 | `T3-P176-Q03` | Soru ve Bilgi Köşesi/metin bağı | **Kaynak kapsamı düzeltildi** |
+| Tema 3 | `T3-P176-Q05` | Alıntı sayfası | **Uygun** |
+| Tema 3 | `T3-P176-Q13` | Alıntı sayfası | **Uygun** |
 | Tema 3 | `T3-P178-PERF01` | Okuma çemberi/metin bağı | **Bekliyor** |
 | Tema 3 | `T3-P193-PERF01` | Değerlendirme tablosu ve alıntılar | **Bekliyor** |
 | Tema 3 | `T3-P193-PERF03` | Çıkış kartı ve alıntılar | **Bekliyor** |
@@ -85,8 +97,8 @@ Bu sınıflandırma, yanıt bankası kayıtlarının alan düzeyindeki PR farkla
 | Tema 4 | `T4-P279-PERF01` | Değerlendirme metni | **Bekliyor** |
 | Tema 4 | `T4-P304-Q02` | Soru ve alıntı sayfası | **Bekliyor** |
 
-**İlerleme:** Kaynak/tür değişen **15/35 kayıt incelendi; 20 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
+**İlerleme:** Kaynak/tür değişen **20/35 kayıt incelendi; 15 kayıt bekliyor**. Ayrı olarak 39/39 cevap-metni pedagojik incelemesi kapanmıştır.
 
 ## Sonraki küçük tur
 
-Önce `T2-P128-Q01`, `T3-P175-Q02`, `T3-P176-Q03`, `T3-P176-Q05` ve `T3-P176-Q13` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
+Önce `T3-P178-PERF01`, `T3-P193-PERF01`, `T3-P193-PERF03`, `T4-P252-PERF02BC` ve `T4-P259-Q01` kaynaklarını, basılı metin ve QR sınırlarıyla karşılaştır. Hatalı bir kaynak bulunursa yalnız ilgili bağlantıyı düzelt; doğrulanmamış konuşmayı cevap olarak üretme. Her turda en fazla beş kayıt denetle ve sonuçları buraya işle.
