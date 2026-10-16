@@ -80,6 +80,24 @@
 
 **Kalite durağı:** Yalnız beş kayıt düzenlendi; sonraki soru grubu bu turda açılmadı.
 
+## Tur 6 — Tema 2 s.141–143: kültürel miras, benzetme ve şiir dili
+
+| Soru | PR #99 öncesi öğretim katkısı ve risk | PR #99 / güncel durum | Bu turdaki çözüm |
+| --- | --- | --- | --- |
+| `T2-P141-Q02` | Erman Artun'un aktarım, birlik ve kültür mirası vurgusunu anlattı; Tengri Dağları/Buhara/Tebriz/Kerkük/konuşmacı sözleri doğrulanmış video alıntısı gibi kullanıldı | Video kaynaklı iddialar isabetle çıkarılmış, PR #103 basılı metin temelli genel cevap eklemişti | **Kitabın gerçek s.141'inde bulunan** ozan/akın/aytışçı/bahsi adlandırmalarıyla kültürel süreklilik–yerel farklılık örneklendi; üç basılı alıntı ve sunum bağlantıları korundu |
+| `T2-P142-Q02` | Dizeden benzetme unsurları ve mizah katkısı veriyordu, ancak mısraların ses doğrulaması yoktu | PR #103 benzetmenin işlevini açıklamış fakat çözülmüş gerçek sınıf modeli bulunmuyordu | **Video alıntısı OLMAYAN** 'sözün ırmak gibi akması' örneğiyle benzeyen, benzetilen, yön ve edat analiz edildi; olası atışma işlevi ile gözlenen karşılıklı sazlı icra ayrı belirtildi |
+| `T2-P143-Q02` | Günlük dil ile atışmanın şiir dilini T diyagramında somut sözlerle karşılaştırıyordu; 'altı dörtlük', '-ebilirsen eğer' ses iddiaları bağımsız kanıtsızdı | PR #103 genel karşılaştırmayı geri getirdi, alt bölümler özgün T diyagramına özel değildi | **Benzerlikler / farklılıklar** listeleri, görsel performans ve gerçek dize gerektiren tür özelliklerini ayrıştırarak yeniden yazıldı; Sunum Web bölüm planı eşleştirildi |
+| `T2-P143-Q03` | İcra, söz oyunları, mizah ve canlı karşılık üzerinden dil kullanımı çıkarımı sunuyordu; dize düzeltme repliği kanıtsızdı | Genelleştirilmiş yöntem ve içeriği tekrar eden üç bölüm bulunuyordu | 'Doğrudan gözlem → dilsel olasılık → etki çıkarımı → gerekçe' yapısıyla özgün performans analizi kuruldu; doğrulanmamış diyaloglar geri eklenmedi |
+| `T2-P143-Q04` | Münacaat dizeleriyle atışmayı karşılaştırıyordu; video dizeleri kanıtlanmamıştı | PR #99 sonrasında **basılı Münacaat dizelerinin** edebî çözümlemesi bile kaybolmuştu; PR #103 genel 'soyut/somut' karşılaştırmasıyla sınırlıydı | Kitabın s.143'ünden iki gerçek kısa dize üzerinden alışılmadık bağdaştırma, ocak imgesi, bireysel sorgulama işlendi; atışmanın doğrulanmış sazlı ve karşılıklı performansıyla karşılaştırıldı; iki tür arasında üstünlük yargısı kurulmadı |
+
+**Denetlenen birincil kaynaklar:** `data/book/grade-11/themes/theme-2/pages/p141.json`, `p142.json`, `p143.json`; `data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49MG.md`, `UNVERIFIED-19XU49JV.md`. Üç sürüm karşılaştırıldı: PR #99 öncesi `6f029e0`, PR #99 sonrası `ce8406d` ve tur başı `main`.
+
+**Kaynak disiplini:** `T2-P141-Q02` için üç alıntı kitabın s.141'inden, `T2-P143-Q04` için iki kısa şiir dizesi kitabın s.143'ünden doğrulandı. 19XU49JV/19XU49MG için tam kelimesi kelimesine ses çözümü depoda bulunmuyor; aday MP4'ün EBA kaynağıyla birebir kimliği ayrıca doğrulanmadı. Beş cevapta `source_limited` korundu. Model benzetmesi video repliği değildir.
+
+**Sunum uyumluluğu:** `data/grade-11/presentation/theme-2/web-presentation.json` içindeki `T2-P143-Q02` ve `T2-P143-Q04` bölüm referansları yeni, özgün pedagojik bölümlere eşitlendi. Bu, sunumda yapılandırılmış yanıtların düşmemesi için zorunludur.
+
+**Kalite durağı:** Bu turda beş kayıt kontrol edildi; sıradaki grup testler tamamlanmadan açılmadı.
+
 ## Eksiksiz içerik karşılaştırma kuyruğu (39 kayıt)
 
 | Tema | Cevap kimliği | Parça sayfaları | Soru düzeyinde kalite denetimi |
@@ -109,11 +127,11 @@
 | Tema 2 | `T2-P129-Q03` | 129–135 | **Tur 5: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P140-VOC01` | 136–141 | **Tur 5: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P141-Q01` | 136–141 | **Tur 5: incelendi ve düzeltildi** |
-| Tema 2 | `T2-P141-Q02` | 136–141 | Bekliyor |
-| Tema 2 | `T2-P142-Q02` | 142–147 | Bekliyor |
-| Tema 2 | `T2-P143-Q02` | 142–147 | Bekliyor |
-| Tema 2 | `T2-P143-Q03` | 142–147 | Bekliyor |
-| Tema 2 | `T2-P143-Q04` | 142–147 | Bekliyor |
+| Tema 2 | `T2-P141-Q02` | 136–141 | **Tur 6: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P142-Q02` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P143-Q02` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P143-Q03` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
+| Tema 2 | `T2-P143-Q04` | 142–147 | **Tur 6: incelendi ve düzeltildi** |
 | Tema 2 | `T2-P144-MAP01` | 142–147 | Bekliyor |
 | Tema 2 | `T2-P145-PERF01` | 142–147 | Bekliyor |
 | Tema 2 | `T2-P147-Q01` | 142–147 | Bekliyor |
@@ -124,7 +142,7 @@
 | Tema 4 | `T4-P307-Q13` | 303–307 | Bekliyor |
 | Tema 4 | `T4-P307-Q14` | 303–307 | Bekliyor |
 
-**Tur 1–5 tamamlandı: 25/39 metni değişmiş cevap kaydı. Kalan: 14.**
+**Tur 1–6 tamamlandı: 30/39 metni değişmiş cevap kaydı. Kalan: 9.**
 
 ## İnceleme kalite kapısı
 1. Soru kökünü kitabın orijinal sayfasıyla eşleştir; yalnız JSON özetinden hareketle içerik oluşturma.
@@ -135,4 +153,4 @@
 6. Kaynak yetersizliğinde veya inceleme kalitesi düşerse **o soruda dur**, tamamlanmayan kayıtları belgede bırak.
 
 ## Sonraki tur
-Sıradaki kontrollü beşli: Tema 2 `T2-P141-Q02`, `T2-P142-Q02`, `T2-P143-Q02`, `T2-P143-Q03`, `T2-P143-Q04`; kitap soru kökleri, önceki cevap ve video kanıtlarıyla ayrı değerlendirilecek. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
+Sıradaki beşli: Tema 2 `T2-P144-MAP01`, `T2-P145-PERF01`, `T2-P147-Q01`, `T2-P159-Q08` ve Tema 4 `T4-P286-Q03`. Tamamı önce eski/yeni cevap ve ilgili kaynakla yeniden karşılaştırılacak. Sonraki aşamalarda Tema 2 ve Tema 4, önce PR #103'te kısmen elden geçirilmiş kayıtlar da dâhil karşılaştırılacak. **Bu belgenin kaydı, bütün soruların pedagojik doğruluk açısından tamamlandığı iddiası değildir.**
