@@ -291,13 +291,15 @@
       "question_no": "2",
       "source_locator": "basılı s.293 / PDF s.294 — QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; kısmi görsel not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; ses transkripti yok",
       "prompt_summary": "Anadolu İnsanı / Çalışkanlık videosunun ana düşüncesini belirleme",
-      "answer": "Örnek görüntü notları çalışmayı/üretimi ve kırsal yaşamı tartışmaya açabilir; konuşmalar transkript edilmediği için videonun ana düşüncesi, kişilerin adları, yaşam öyküsü veya ekonomik ayrıntıları doğrulanmış gibi verilemez. Öğrenci doğrudan gözlediği görüntü ile yorumunu ayırmalı.",
-      "guidance": "Sahne özetini olgu; çalışkanlık yorumu olarak ayrı yazın. Dış ses veya kişilerin sözlerini transkript olmadan aktarmayın.",
-      "explanation": "Kaynak notu örnek görsel incelemedir; konuşma içeriği kanıtı sağlamaz.",
+      "answer": "**Örnek ana düşünce:** Çalışkanlık, doğayla iç içe sürdürülen üretimde düzenli emek vermeyi, sorumluluk almayı ve gerektiğinde birlikte çalışmayı gerektirir. Belgeselin kayıtlı görüntülerinde tarım arazileri, bitkilerle ilgilenen kişiler, ürün toplama ve kırsal ortamda bir araya gelme sahneleri vardır. Bu görüntüler, emeğin yalnız tek bir anlık çabadan değil, hazırlık, bakım ve hasat gibi birbirini izleyen işlerden oluştuğunu düşündürür. **Örnek gerekçe:** Ürün toplama sahnesi bir sonuç gösterir; bitkilerin bakımı ve tarladaki çalışma görüntüleri bu sonucun arkasındaki sürekliliğe dikkat çeker. Bu, görsel kaynağa dayanan gerekçeli bir ana düşünce önerisidir; konuşmada dile getirilen kesin mesaj veya kişi öyküsünün tam dökümü değildir.",
+      "guidance": "Ana düşünceyi bir cümleyle kurdurun; ardından en az iki görüntüyü gerekçe olarak yazdırın. 'Gördüğüm üretim aşaması → çıkardığım sonuç → çalışkanlıkla ilişkisi' çizelgesi kullanın. Görsel kayıttan kişilerin adı, kuşak çatışması ve organik ürünlerin fiyatı çıkarılamaz; bu ayrıntılar için öğrencinin gerçek dinleme notu ya da kaynaklı transkript gerekir.",
+      "explanation": "PR #99'un ses kaynağı ihtiyatı korundu. Önceki sürümdeki yıl boyu emek ve üretim gerekçeleri, kaydedilmiş tarla/bakım/hasat sahnelerine dayalı bir örnek ana düşünce içinde yeniden kuruldu. Kişi ve ekonomi ayrıntıları bağımsız kaynak olmadan geri eklenmedi.",
       "answer_sections": {
-        "Görsel gözlem": "Notta görülen sahnelerden birini seçip betimleyin.",
-        "Yorum": "Görüntünün çalışkanlık kavramını nasıl düşündürdüğünü gerekçelendirin.",
-        "Kanıt sınırı": "Sesli anlatı, kişi bilgileri ve neden-sonuç iddiaları doğrulanmadı."
+        "Görsel kanıt": "Kayıtlı örnek karelerde tarım alanları, ağaç/bitki bakımı, ürün toplama, kırsal yaşam ve topluluk/aile birlikteliği görülür. Kişilerin kimliği, ürünlerin ekonomik değeri veya konuşma içeriği bu karelerden kesinleştirilemez.",
+        "Örnek ana düşünce": "Kırsal üretim, süreklilik gösteren emek, doğayla uyum ve ortak sorumlulukla sürdürülebilir. Bu cümle görüntülerden yapılan bir yorumdur, dış sesin birebir ifadesi değildir.",
+        "Kanıt–yorum ilişkisi": "Gözlem: tarla/ürün toplama/bakım görüntüleri → çıkarım: üretimin farklı aşamaları emek ve zaman gerektirir → tema bağlantısı: çalışkanlık düzenli gayretle görünür olur.",
+        "Alternatif gerekçeli yorum": "Öğrenci ortak yemek ve birlikte geçirilen zaman görüntülerini dikkate alarak çalışmanın aile ve topluluk hayatını bir araya getirdiğini savunabilir. Bu yorum diğerlerinden üstün sayılmadan görüntü dayanağıyla tartışılmalıdır.",
+        "Doğrulama sınırı": "Kırtık köyü, Muharrem/Zübeyde, organik üretimin ekonomik değeri veya çocukların ayrılması gibi eski yanıt ayrıntıları görsel inceleme notunda doğrulanmadığı için videonun kanıtlanmış sözlü anlatısı olarak sunulmaz."
       }
     },
     {
@@ -307,14 +309,15 @@
       "question_no": "3",
       "source_locator": "basılı s.293 / PDF s.294 — Fedakârlık QR 5fd2b97cb78fabe367aa3fcde8f9718d / 19XU49LQ.mp4 (kaynak QR s.285; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49LQ.md) ve Çalışkanlık QR cc654606d608113ea65f523584ab801b / 19XU49KB.mp4; not: data/grade-11/source/qr-review-notes/UNVERIFIED-19XU49KB.md; görsel notlar, ses dökümleri değil",
       "prompt_summary": "Fedakârlık ve Çalışkanlık belgesellerini dil, ileti, tür ve içerik bakımından karşılaştırma",
-      "answer": "İki videonun konuşma transkriptleri ve MP4 kökenleri doğrulanmadı; bu nedenle dil, ileti ve içerik bakımından kesin karşılaştırma yapılamaz. Öğrenciler sınıfta doğrulanmış tam izleme notu oluşturana kadar yalnız doğrudan gördükleri sahne özelliklerini karşılaştırmalı, bunları gözlem olarak etiketlemelidir.",
+      "answer": "İki belgesel de Anadolu insanının emek ve sorumlulukla ilişkisini anlatmaya elverişli örnekler sunar; ancak bunları farklı çalışma alanları üzerinden işler. **Fedakârlık:** Demiryolu çevresinde ilerleyen kişi ve doğa görüntüleri vardır; kullanıcı tarafından iletilen anlatım özetinde kaplumbağaları koruma ve fidan dikme çabasından söz edilir. **Çalışkanlık:** Tarlada bakım, tarımsal üretim, ürün toplama ve kırsal birlikte yaşam görüntüleri görülür. **Ortak nokta:** Emeğin başka insanlara, canlılara veya yaşanan çevreye katkı sunması. **Fark:** İlkinde canlıları ve doğayı koruma; ikincisinde üretimde düzenli çalışma daha belirgindir. İki kaydın anlatıcı dili ve sesli iletisini birebir karşılaştırmak için Çalışkanlık konuşma transkripti gerekir.",
       "answer_sections": {
-        "Dil ve Üslup": "Doğrulanmış ses transkripti yok.",
-        "İleti": "Dış sesin ana iletisi kanıtlanmadı.",
-        "Tür": "Görsel biçim tek başına belgesel alt türünü doğrulamaz.",
-        "İçerik": "Kısmi sahne gözlemi ile anlatılan olayları ayırın."
+        "Dil ve Üslup": "Fedakârlık: depodaki kullanıcı kaynaklı anlatım özetinde değerleri tanıtan bir dış ses ve kişinin deneyimlerini aktarması belirtilir; bu, arşivlenmiş sözcüğü sözcüğüne transkript değildir. Çalışkanlık: görsel notta tarla, hasat ve topluluk sahneleri vardır; konuşmacıların kelime seçimi, vurgu ve ses tonu hakkında transkript bulunmadığı için kesin üslup farkı kurulamaz.",
+        "İleti": "Fedakârlık için örnek ileti, anlatım özetindeki kaplumbağaları koruma ve fidan dikme çabalarından hareketle 'canlılara merhamet ve çevreye karşı sorumluluk'tur. Çalışkanlık için görselden hareketle örnek ileti, 'üretim ve bakımın düzenli emek gerektirmesi'dir. Birincisi kullanıcı kaynaklı anlatım özetiyle, ikincisi görüntü yorumuyla desteklendiğinden aynı kanıt düzeyi sanılmamalıdır.",
+        "Tür": "Her iki yapım ders kitabında Anadolu İnsanı serisinin çok modlu belgesel metinleri olarak sunulur. Görüntü ve ses birlikte kullanılabilir; kaynaklardaki doğrulama farkı, iki yapımın kitapta belgesel olarak ele alınmasını ortadan kaldırmaz.",
+        "İçerik": "Fedakârlık görüntüleri demiryolu/doğa çevresini; kullanıcı kaynaklı anlatım özeti kaplumbağa kurtarma ve fidan dikme uğraşını kapsar. Çalışkanlık görüntüleri tarla, bitki bakımı, ürün toplama ve kırsal birlikte yaşamı gösterir. İlkinde çevreyi koruma, ikincisinde üretim emeği belirginleşir; Çalışkanlık videosundaki kişilerin yaşam öyküleri bağımsız olarak doğrulanmadı."
       },
-      "guidance": "Ses veya MP4 kökeni doğrulanana kadar iki videonun sözlü içeriğini karşılaştırmayın; kısmi gözlemleri açıkça sınırlayın."
+      "guidance": "S.293'teki dört ölçütü ayrı koruyun. Dil/üslupta ses kanıtı eksikliğini dürüstçe belirtip görüntülerden ses tonu üretmeyin. İleti bölümünü iki sütunda birer **gerekçeli öneri** olarak yazdırın; kanıt düzeylerini açıkça ayırın. Fedakârlık için kullanıcı kaynaklı anlatım notunu, Çalışkanlık için bağımsız görsel kareleri kullanın. Karşılaştırmayı olgu, çıkarım ve yorum ayrımıyla değerlendirin.",
+      "explanation": "Eski cevabın iki belgeselin emek ve sorumluluk ortaklığına dayalı karşılaştırma değeri yeniden kuruldu. Çalışkanlık için doğrulanmamış Muharrem/Zübeyde aile öyküsü kesin video içeriği olarak aktarılmadı; Fedakârlık için arşivdeki kullanıcı kaynaklı özet bağımsız görüntü/ses kanıtı gibi sunulmadı."
     },
     {
       "question_id": "T4-P294-Q01",
