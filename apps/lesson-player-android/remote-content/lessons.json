@@ -13962,9 +13962,23 @@
           "web": {
             "units": [
               {
-                "id": "Gecikmenin Sorun Oluşturabileceği Durumlar",
+                "id": "Metindeki Bağlam ve Gecikme Durumu",
                 "section_keys": [
-                  "Gecikmenin Sorun Oluşturabileceği Durumlar"
+                  "Metindeki Bağlam ve Gecikme Durumu"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "1. Akademik ve Mesleki İletişim (Gecikmenin Sorun Oluşturduğu Durumlar)",
+                "section_keys": [
+                  "1. Akademik ve Mesleki İletişim (Gecikmenin Sorun Oluşturduğu Durumlar)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13972,9 +13986,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "İlişkisel Boyut",
+                "id": "2. Duygusal ve Sosyal İlişkiler (İlişkisel Boyut)",
                 "section_keys": [
-                  "İlişkisel Boyut"
+                  "2. Duygusal ve Sosyal İlişkiler (İlişkisel Boyut)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -13982,9 +13996,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Doğru Anı Beklemenin Yararlı Olabileceği Durumlar",
+                "id": "3. Kriz Çözümü ve Doğru Anı Beklemenin Yararlı Olabileceği Durumlar",
                 "section_keys": [
-                  "Doğru Anı Beklemenin Yararlı Olabileceği Durumlar"
+                  "3. Kriz Çözümü ve Doğru Anı Beklemenin Yararlı Olabileceği Durumlar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14000,7 +14014,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "İletişimde zamanlamanın önemini günlük hayattan örneklerle açıklayınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14022,14 +14038,21 @@
           "printed_page": 74,
           "question_no": "1",
           "prompt_summary": "İletişimde zamanlamanın önemini günlük hayattan örneklerle açıklama",
-          "answer": "İletişimde zamanlama, mesajın amacına ulaşmasını etkileyen önemli unsurlardan biridir. Bazı durumlarda gecikme mesajın işlevini azaltabilir; bazı durumlarda ise özellikle öfke, yorgunluk veya yoğunluk anlarında kısa bir süre beklemek daha sağlıklı bir iletişim kurulmasına yardım edebilir.",
+          "answer": "İletişimde zamanlama (geri bildirimin vakti), mesajın amacına ulaşmasını, değerini ve alıcı üzerindeki etkisini doğrudan belirleyen temel unsurlardan biridir. Bazı durumlarda gecikme mesajın işlevini azaltabilir veya fırsat kaybına yol açabilir; bazı durumlarda ise özellikle öfke, yorgunluk veya yoğunluk anlarında kısa bir süre beklemek daha sağlıklı bir iletişim kurulmasına yardım edebilir.",
           "answer_sections": {
-            "Gecikmenin Sorun Oluşturabileceği Durumlar": "Son tarihli başvurular, acil sağlık durumları, toplantı/etkinlik bilgileri veya zamanında cevap beklenen resmî işlemlerde gecikme iletiyi işlevsizleştirebilir ya da hak kaybına yol açabilir.",
-            "İlişkisel Boyut": "Tebrik, taziye veya destek mesajlarında zamanında iletişim kurmak yakınlık ve ilgi göstergesi olabilir; gecikmiş bir mesaj bazı kişilerce ilgisizlik olarak algılanabilir, fakat bu etki kişiye ve bağlama göre değişir.",
-            "Doğru Anı Beklemenin Yararlı Olabileceği Durumlar": "Öfke veya yoğun stres anında acele cevap vermek yerine sakinleşip düşünerek konuşmak yanlış anlaşılma ve çatışma riskini azaltabilir."
+            "Metindeki Bağlam ve Gecikme Durumu": "İncelenen metinde yazar; 'İspanyol nezlesi, İstanbullu misafirler, Amerikalılara konferanslar, Bergama seyahatları, Efes ziyaretleri' gibi yoğunluklar yüzünden mektuba geç yanıt verdiğini, zihninde kurguladığı cevapları ise ertesi gün unuttuğu için 'cevapların hepsinin gürültüye gittiğini' ifade etmektedir. Bu durum, geciken geri bildirimin hem iletişimin güncelliğini zedelediğini hem de aktarılmak istenen düşüncelerin unutulmasına veya bağlamından kopmasına yol açtığını gösterir.",
+            "1. Akademik ve Mesleki İletişim (Gecikmenin Sorun Oluşturduğu Durumlar)": "Burs başvurusu, proje teslimi, staj kabulü veya süreli resmî işleme ilişkin e-postaya son tarihten sonra yanıt verilmesi; ileti ne kadar nitelikli olursa olsun, fırsatın ya da hakkın kaybedilmesine yol açabilir.",
+            "2. Duygusal ve Sosyal İlişkiler (İlişkisel Boyut)": "Zor bir gün geçiren, hastalık yaşayan veya önemli bir başarı elde eden bir dosta haftalar sonra 'Geçmiş olsun' ya da 'Tebrik ederim' demek, zamanında gösterilecek ilgi ve paylaşımın duygusal etkisini taşıyamaz. Gecikmiş bir mesaj bazı kişilerce ilgisizlik olarak algılanabilir; ancak bu etki kişiye ve bağlama göre değişir.",
+            "3. Kriz Çözümü ve Doğru Anı Beklemenin Yararlı Olabileceği Durumlar": "Günlük hayatta bir yanlış anlaşılmayı zamanında açıklamak sorunu büyümeden çözer. Bununla birlikte zamanlama yalnızca 'hız' demek değildir; aynı zamanda 'doğru ve uygun anı seçmek'tir. Öfke veya yoğun stres anında acele cevap vermek yerine sakinleşip düşünerek konuşmak yanlış anlaşılma ve çatışma riskini azaltır."
           },
-          "guidance": "Zamanlamayı yalnız 'hızlı olmak' şeklinde ele almayın. Öğrenciden biri gecikmenin, biri de acele etmenin sorun oluşturabileceği iki farklı günlük yaşam örneği isteyin.",
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 1"
+          "evidence_quotes": [
+            "Cevap vermekte geciktim",
+            "İspanyol nezlesi, İstanbullu misafirler, Amerikalılara konferanslar.",
+            "Yalnız bir gün verdiğim cevabı ertesi günü unutduğum için, cevapların hepsi gürültüye gitdi."
+          ],
+          "explanation": "İletişim sürecinde dönüt (geri bildirim) zamanlaması çift yönlü değerlendirilmelidir: Resmî, akademik ve acil konularda gecikmemek iletişimin işlevselliği için şartken; duygusal gerilim veya yoğunluk anlarında uygun zamanı kollamak iletişimin kalitesini korur.",
+          "guidance": "Öğrencilerin iletişim ögelerinden 'dönüt (geri bildirim)' kavramını hatırlamalarını sağlayın. Zamanlamayı yalnız 'hızlı olmak' şeklinde ele almayın; öğrenciden biri gecikmenin, biri de acele etmenin sorun oluşturabileceği iki farklı günlük yaşam örneği isteyin.",
+          "source_locator": "basılı s.74 / PDF s.75 — Edebiyat Atölyesi-2 (Anlatma) / Yazmayı Yönetebilme soru 1"
         },
         "content": null
       },
@@ -14042,21 +14065,32 @@
           "web": {
             "units": [
               {
-                "id": "Olası benzer durum",
+                "id": "Okundu Bilgisi ('Mavi Tik') ve Erteleme",
                 "section_keys": [
-                  "Olası benzer durum"
+                  "Okundu Bilgisi ('Mavi Tik') ve Erteleme"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Zihinsel Yanılsama ve Çoklu Görev (Multitasking) Yoğunluğu",
+                "section_keys": [
+                  "Zihinsel Yanılsama ve Çoklu Görev (Multitasking) Yoğunluğu"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
                 "quote_indexes": [
-                  0
+                  0,
+                  1
                 ]
               },
               {
-                "id": "Değerlendirme sınırı",
+                "id": "Değerlendirme Sınırı",
                 "section_keys": [
-                  "Değerlendirme sınırı"
+                  "Değerlendirme Sınırı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14073,7 +14107,8 @@
         "reveal_order": [
           "guidance",
           "answer",
-          "evidence"
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Bir iletiyi zihinde cevaplayıp göndermeyi unutmaya benzer durumlar günümüzde yaşanabilir mi?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14095,16 +14130,19 @@
           "printed_page": 74,
           "question_no": "2",
           "prompt_summary": "Zihinde cevap verip sonra unutmanın günümüz iletişimindeki benzerleri",
-          "answer": "Bir iletiyi okuyup yanıtı daha sonra yazmayı düşünürken unutmak olası bir benzerliktir. Bunun yaşanıp yaşanmadığını ve etkisini kendi deneyiminizden örnekle değerlendirin. Okundu/görüldü bilgisi tek başına muhatabın kendini dışlanmış ya da önemsenmemiş hissettiğini göstermez; etkiyi beklentiler ve iletişim bağlamıyla birlikte ele alın.",
+          "answer": "Evet, günümüzde iletişim araçları çok hızlanmış olmasına rağmen bir iletiyi okuyup yanıtı daha sonra yazmayı düşünürken gündelik yoğunluk içinde unutmak olası bir benzerliktir. Bunun yaşanıp yaşanmadığını ve etkisini kendi deneyim veya gözlemlerinizden örneklerle değerlendirebilirsiniz; ancak okundu/görüldü bilgisinin muhatapta uyandırdığı duygu iletişim bağlamına ve beklentilere göre değişir.",
           "answer_sections": {
-            "Olası benzer durum": "İleti okunur, yanıt verme daha sonraya bırakılır ve gündelik yoğunluk içinde unutulabilir.",
-            "Değerlendirme sınırı": "Yaygınlık ve muhatabın duygusu hakkında kanıt olmadan genelleme yapılmamalı; olası iletişim etkisi bağlama göre tartışılmalıdır."
+            "Okundu Bilgisi ('Mavi Tik') ve Erteleme": "Günümüzde bir e-postayı veya anlık mesajı hareket hâlindeyken, dersteyken ya da başka bir işle meşgulken okuyup 'Şimdi müsait değilim, akşam detaylıca şunu yazarım.' diye zihnimizden yanıtlarız. Ancak mesaj 'okundu' olarak işaretlendiği için bildirim ekranından düşer ve araya giren yeni uyaranlar nedeniyle unutulabilir.",
+            "Zihinsel Yanılsama ve Çoklu Görev (Multitasking) Yoğunluğu": "Birey, gelen mesaja zihninde güçlü bir cevap kurguladığı için iletişimi tamamlamış gibi algılayabilir; günler sonra karşı taraf hatırlattığında 'Aklımdan cevap vermişim, yazmayı unutmuşum!' durumu yaşanabilir. Yazarın 1957 yılında misafirler, hastalık ve seyahatler yüzünden yaşadığı dikkat dağılması, bugün çok sayıda sekme, sosyal medya bildirimi ve mesajlaşma grubu içinde de yaşanabilmektedir.",
+            "Değerlendirme Sınırı": "Yaygınlık ve muhatabın duygusu hakkında kanıt olmadan kesin genelleme yapılmamalıdır. Okundu/görüldü bilgisi tek başına muhatabın kendini dışlanmış ya da önemsenmemiş hissettiğini göstermez; olası iletişim etkisi beklentiler ve bağlamla birlikte ele alınmalıdır."
           },
           "evidence_quotes": [
-            "Yani zihnen boyuna cevap verdim. Yalnız bir gün verdiğim cevabı ertesi günü unutduğum için, cevapların hepsi gürültüye gitdi."
+            "Yani zihnen boyuna cevap verdim.",
+            "Yalnız bir gün verdiğim cevabı ertesi günü unutduğum için, cevapların hepsi gürültüye gitdi."
           ],
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 2",
-          "guidance": "Öğrenciden benzer bir durumun kendi deneyim veya gözleminde yaşanıp yaşanmadığını değerlendirmesini isteyin; paylaşmak istemediği kişisel bir yaşantıyı açıklamasını zorunlu tutmayın. Yaşandıysa bir örnek ve olası iletişim etkisini açıklasın; yaygınlık iddiasını gözleminden ayırsın. “Görüldü” bilgisinden muhatabın duygusunu kesinleştirmesin."
+          "explanation": "Yazarın 'zihnen boyuna cevap verdim... ertesi günü unutduğum için cevapların hepsi gürültüye gitdi' sözleriyle anlattığı durum, iletişim niyetinin somut bir iletiye dönüşmediği sürece iletişim sürecinin tamamlanmadığını gösterir.",
+          "guidance": "Öğrencilere 'Hiç bir mesaja içinizden cevap verip gerçekte yazmayı unuttuğunuz oldu mu?' sorusunu yönelterek metindeki 1957 yılına ait durum ile günümüz dijital alışkanlıkları arasında bağ kurdurun; ancak paylaşmak istemediği kişisel bir yaşantıyı açıklamasını zorunlu tutmayın ve 'görüldü' bilgisinden muhatabın duygusunu kesinleştirmeyin.",
+          "source_locator": "basılı s.74 / PDF s.75 — Edebiyat Atölyesi-2 (Anlatma) / Yazmayı Yönetebilme soru 2"
         },
         "content": null
       },
@@ -14124,7 +14162,10 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0,
+                  1
+                ]
               },
               {
                 "id": "Dijital İletişimin Savunulabilecek Güçlü Yönleri",
@@ -14137,19 +14178,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Her İki Biçimin Riskleri",
+                "id": "Her İki Biçimin Riskleri ve Sonuç",
                 "section_keys": [
-                  "Her İki Biçimin Riskleri"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Sonuç",
-                "section_keys": [
-                  "Sonuç"
+                  "Her İki Biçimin Riskleri ve Sonuç"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14165,7 +14196,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Mektup veya dijital iletişimden hangisi gelecek kuşaklara daha kalıcı kültürel miras bırakabilir? Gerekçelendiriniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14187,24 +14220,30 @@
           "printed_page": 74,
           "question_no": "3",
           "prompt_summary": "Gelecek kuşaklara daha kalıcı kültürel miras bırakabilecek iletişim biçimini değerlendirme",
-          "answer": "Mektup da dijital iletişim de kalıcı bir kayıt bırakabilir. Kalıcılık yalnızca aracın kâğıt ya da dijital olmasına değil; içeriğin korunmasına, arşivlenmesine, erişilebilirliğine ve gelecekte okunabilirliğine bağlıdır. Tercihinizi bu ölçütlerden hareketle gerekçelendirin.",
+          "answer": "Geleneksel mektup da dijital iletişim de gelecek kuşaklara kalıcı bir kültürel miras bırakabilir. Kalıcılık yalnızca aracın kâğıt ya da dijital olmasına değil; üretilen içeriğin derinliğine, korunmasına, arşivlenmesine, erişilebilirliğine ve gelecekte okunabilirliğine bağlıdır. Tercihinizi bu ölçütlerden hareketle gerekçelendirebilirsiniz.",
           "answer_sections": {
             "Mektubun Savunulabilecek Güçlü Yönleri": [
-              "Fiziksel belge niteliği taşır; el yazısı, kâğıt, tarih, zarf ve benzeri maddi izler kültürel/tarihî değer kazanabilir.",
-              "İyi koşullarda arşivlenen mektuplar uzun yıllar korunabilir ve kitaplaştırılarak yeni kuşaklara aktarılabilir."
+              "Düşünsel Derinlik ve Edebî Özen: Mektup anlık tepkiyle değil, zaman ayrılarak yazılır. Metinde yazarın Homeros'un İlyada destanındaki 'Palamed' (Palamedes) tartışmasından gündelik yaşamına kadar pek çok konuyu derinlikli ve özgün bir üslupla ele alması buna örnektir.",
+              "Dönemin Kültürel ve Tarihsel Tanıklığı: Mektuplar; yazıldığı dönemin dil özelliklerini (unutduğum, gazetada gibi), aydınların tartışma konularını ve sosyal yaşamını (İspanyol nezlesi, Bergama ve Efes ziyaretleri, konferanslar) belgeleyen kültür tarihi kaynaklarıdır.",
+              "Fiziksel Belge ve Kitaplaşma Değeri: El yazısı, daktilo izi, kâğıt ve zarf gibi maddi izler taşır; müzelerde/arşivlerde korunabilir ve Mektuplarıyla Halikarnas Balıkçısı örneğindeki gibi basılarak esere dönüştürülebilir."
             ],
             "Dijital İletişimin Savunulabilecek Güçlü Yönleri": [
-              "Çok sayıda yazışma kolayca kopyalanabilir, yedeklenebilir, aranabilir ve farklı ortamlarda saklanabilir.",
-              "Metin yanında görsel, ses ve ek dosyalarla dönemin çok yönlü bir kaydını bırakabilir."
+              "Yedeklenebilirlik ve Erişim Kolaylığı: E-postalar, bloglar ve dijital yazışmalar kolayca kopyalanabilir, bulut sistemlerinde yedeklenebilir, anahtar kelimelerle aranabilir ve geniş kitlelerin erişimine açılabilir.",
+              "Çok Modlu Kayıt İmkanı: Metin yanında fotoğraf, ses ve görüntü ekleriyle dönemin çok yönlü bir kaydını bırakabilir."
             ],
-            "Her İki Biçimin Riskleri": [
-              "Fiziksel mektuplar kaybolabilir, yanabilir, yıpranabilir veya erişilemez hâle gelebilir.",
-              "Dijital kayıtlar hesap kapanması, veri kaybı, format/cihaz değişimi veya yetersiz arşivleme nedeniyle kaybolabilir."
-            ],
-            "Sonuç": "Seçtiğiniz iletişim biçimini korunabilirlik, erişilebilirlik, özgünlük/maddi iz, yedeklenebilirlik ve gelecekte okunabilirlik ölçütlerinden hareketle gerekçelendirin."
+            "Her İki Biçimin Riskleri ve Sonuç": [
+              "Fiziksel mektuplar tek nüsha olduğunda kaybolabilir, yanabilir, yıpranabilir veya erişilemez kalabilir.",
+              "Dijital kayıtlar ise hesap kapanması, şifre kaybı, veri silinmesi, format/cihaz değişimi veya milyarlarca mesaj yığını içinde yetersiz arşivleme nedeniyle kaybolabilir.",
+              "Sonuç: Seçilen iletişim biçimi korunabilirlik, erişilebilirlik, maddi iz, içerik derinliği ve gelecekte okunabilirlik ölçütleriyle gerekçelendirilmelidir."
+            ]
           },
-          "guidance": "Tek bir zorunlu cevap vermeyin. 'Mektup daha sahicidir' veya 'dijital asla kaybolmaz' gibi genellemeler yerine öğrencinin hangi kalıcılık ölçütünü kullandığını sorgulayın.",
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 3"
+          "evidence_quotes": [
+            "Şimdi mektubunu önüme koydum. Yazdıklarına birer birer cevap vereceğim.",
+            "Ben gazetada Homer İlyada’da “Palamed”den bahsediyor demişdim."
+          ],
+          "explanation": "Soru, edebiyatçı mektuplarının kitaplaştırılması örneğinden hareketle iletişim araçlarının kültürel miras değerini sorgular. Asıl belirleyici olan yalnızca iletişim aracı değil, üretilen içeriğin niteliği ve arşivlenme bilincidir.",
+          "guidance": "Tek bir zorunlu cevap vermeyin. 'Mektup her zaman daha sahicidir' veya 'dijital asla kaybolmaz' gibi genellemeler yerine öğrencinin hangi kalıcılık ölçütünü kullandığını sorgulayın.",
+          "source_locator": "basılı s.74 / PDF s.75 — Edebiyat Atölyesi-2 (Anlatma) / Yazmayı Yönetebilme soru 3"
         },
         "content": null
       },
@@ -14217,34 +14256,18 @@
           "web": {
             "units": [
               {
-                "id": "Telgraf",
+                "id": "Karşılaştırmalı Değerlendirme Tablosu",
                 "section_keys": [
-                  "Telgraf"
+                  "Karşılaştırmalı Değerlendirme Tablosu"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Mektup",
-                "section_keys": [
-                  "Mektup"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Konferans",
-                "section_keys": [
-                  "Konferans"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0,
+                  1,
+                  2
+                ]
               }
             ],
             "answer_text": {
@@ -14255,7 +14278,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Telgraf, mektup ve konferansı etkileyicilik, kalıcılık ve yaygınlık bakımından değerlendiriniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14277,26 +14302,43 @@
           "printed_page": 74,
           "question_no": "4",
           "prompt_summary": "Telgraf, mektup ve konferansı etkileyicilik, kalıcılık ve yaygınlık bakımından değerlendirme",
-          "answer": "Telgraf, mektup ve konferans etkileyicilik, kalıcılık ve kullanım yaygınlığı bakımından farklı güçlü ve sınırlı yönlere sahiptir. Değerlendirme aynı ölçütler kullanılarak ve iletişimin amacı, dönemi ve bağlamı dikkate alınarak yapılmalıdır; tek bir araç her ölçütte üstün değildir.",
+          "answer": "Metinde sözü edilen telgraf, mektup, konferans ve gazete; etkileyicilik, kalıcılık ve kullanım yaygınlığı bakımından farklı güçlü ve sınırlı yönlere sahiptir. Değerlendirme aynı ölçütler kullanılarak ve iletişimin amacı, dönemi ve bağlamı dikkate alınarak yapılmalıdır; tek bir araç her ölçütte üstün değildir.",
           "answer_sections": {
-            "Telgraf": {
-              "Etkileyicilik": "Kısa ve doğrudan yapısı özellikle acil haberlerde güçlü bir etki yaratabilir; ayrıntılı duygu ve düşünce aktarımı sınırlıdır.",
-              "Kalıcılık": "Yazılı telgraf belgesi fiziksel olarak saklanabilir; kalıcılığı korunma koşullarına bağlıdır.",
-              "Kullanım Yaygınlığı": "Geçmişte uzak mesafeli hızlı haberleşmede önemli ve yaygın araçlardan biriyken günümüzde günlük iletişimde kullanımı büyük ölçüde azalmıştır."
-            },
-            "Mektup": {
-              "Etkileyicilik": "Ayrıntılı ve kişisel anlatıma elverişlidir; duygular, düşünceler ve tartışmalar geniş biçimde aktarılabilir.",
-              "Kalıcılık": "Fiziksel olarak arşivlenebilir ve kitaplaştırılabilir; ancak korunmadığında kaybolma veya yıpranma riski vardır.",
-              "Kullanım Yaygınlığı": "Geçmişte temel yazılı haberleşme araçlarından biriydi; günümüzde kişisel haberleşmede dijital kanallara göre daha sınırlı kullanılabilir."
-            },
-            "Konferans": {
-              "Etkileyicilik": "Ses tonu, vurgu, beden dili ve dinleyiciyle eş zamanlı etkileşim anlatımı güçlendirebilir.",
-              "Kalıcılık": "Kayıt alınır, metin yayımlanır veya not tutulursa kalıcı hâle gelebilir; aksi hâlde etkisi büyük ölçüde etkinlik anına ve dinleyicilerin belleğine bağlıdır.",
-              "Kullanım Yaygınlığı": "Eğitim, bilim, kültür ve mesleki alanlarda yüz yüze ya da çevrim içi biçimde kullanılabilir; ne ölçüde yaygın olduğu dönem, alan ve hedef kitleye göre değişir."
-            }
+            "Karşılaştırmalı Değerlendirme Tablosu": [
+              {
+                "İletişim Aracı": "Telgraf",
+                "Etkileyicilik": "Kelime başına ücretlendirildiği ve hız odaklı olduğu için kısa, resmî veya acil haber ifadeleri içerir; edebî ve duygusal derinliği sınırlıdır. Ancak acil haber taşıdığı için alıcıda güçlü bir merak veya heyecan uyandırabilir.",
+                "Kalıcılık": "Yazılı bir belge (telgraf kâğıdı) olduğu için fiziksel olarak saklanabilir; fakat kalıcılığı korunma koşullarına bağlıdır ve metin çok kısa olduğundan düşünsel miras değeri sınırlıdır.",
+                "Kullanım Yaygınlığı": "Geçmişte (19. ve 20. yüzyılda) uzak mesafeli hızlı haberleşmede yaygındı; günümüzde dijital teknolojilerin gelişmesiyle günlük iletişimde kullanımı ortadan kalkmıştır."
+              },
+              {
+                "İletişim Aracı": "Mektup",
+                "Etkileyicilik": "Samimi hitaplar, yazarın iç dünyası, el yazısı ve özgün üslubu sayesinde ayrıntılı duygu, düşünce ve edebî tartışma aktarımına çok elverişlidir.",
+                "Kalıcılık": "Kâğıt üzerinde somutlaşır; arşivlenebilir ve Mektuplarıyla Halikarnas Balıkçısı örneğindeki gibi kitaplaştırılarak edebî esere dönüşebilir; ancak korunmadığında yıpranma/kaybolma riski taşır.",
+                "Kullanım Yaygınlığı": "Geçmişte bireyler arası temel yazılı haberleşme aracıydı; günümüzde kişisel haberleşmede yerini büyük ölçüde e-posta ve anlık mesajlaşmaya bırakmıştır."
+              },
+              {
+                "İletişim Aracı": "Konferans",
+                "Etkileyicilik": "Konuşmacının ses tonu, vurgusu, jest ve mimikleri ile dinleyiciyle aynı anda kurduğu canlı etkileşim anlatımı ve ikna gücünü artırır.",
+                "Kalıcılık": "Sözlü olduğu için kayıt altına alınmazsa etkisi konuşma anı ve dinleyici belleğiyle sınırlıdır; ancak yazılı metne dökülürse veya ses/görüntü kaydı alınırsa kalıcı hâle gelir.",
+                "Kullanım Yaygınlığı": "Eğitim, bilim, kültür ve mesleki alanlarda hem geçmişte hem günümüzde (yüz yüze ya da çevrim içi yayınlarla) kullanılan bir yöntemdir; yaygınlığı döneme, alana ve hedef kitleye göre değişir."
+              },
+              {
+                "İletişim Aracı": "Gazete (Metinde geçen ek araç)",
+                "Etkileyicilik": "Kamuoyu oluşturma ve metinde görüldüğü gibi (İlyada'da Palamed tartışması) entelektüel tartışma başlatma gücü yüksektir.",
+                "Kalıcılık": "Basılı ve dijital süreli yayın olarak kütüphane ve arşivlerde korunur; tarihsel belge niteliği taşır.",
+                "Kullanım Yaygınlığı": "Geçmişte en yaygın kitle iletişim aracıydı; günümüzde basılı yanında dijital gazetecilik yoluyla yaygınlığını sürdürmektedir."
+              }
+            ]
           },
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 4",
-          "guidance": "Önce “yaygınlık” ölçütünü bütün araçlar için aynı anlamda, yani kullanım yaygınlığı olarak ele alın. Geçmiş ve günümüz koşullarını ayırın; öğrenciden her araç için güçlü ve sınırlı bir yönü bağlamıyla açıklamasını isteyin. “En etkili/en kalıcı” gibi bağlamdan bağımsız sıralamalar yapmayın."
+          "evidence_quotes": [
+            "İspanyol nezlesi, İstanbullu misafirler, Amerikalılara konferanslar.",
+            "Telgrafı ve mektubu aldım.",
+            "Ben gazetada Homer İlyada’da “Palamed”den bahsediyor demişdim."
+          ],
+          "explanation": "Soruda geçen 'yaygınlık' ölçütü bütün araçlar için 'kullanım yaygınlığı' anlamında ele alınmalıdır. Her aracın etkileyiciliği ve kalıcılığı da dönem, kayıt olanakları ve iletişim amacıyla birlikte değerlendirilmelidir.",
+          "guidance": "Önce 'yaygınlık' ölçütünü bütün araçlar için aynı anlamda (kullanım yaygınlığı olarak) ele alın. Geçmiş ve günümüz koşullarını ayırın; öğrenciden her araç için güçlü ve sınırlı bir yönü bağlamıyla açıklamasını isteyin. Bağlamdan bağımsız mutlak sıralamalar yapmayın.",
+          "source_locator": "basılı s.74 / PDF s.75 — Edebiyat Atölyesi-2 (Anlatma) / Yazmayı Yönetebilme soru 4"
         },
         "content": null
       },
@@ -14309,19 +14351,22 @@
           "web": {
             "units": [
               {
-                "id": "Metindeki Eski Biçimler",
+                "id": "Metindeki Eski Biçimler ve Günümüzdeki Yazımları",
                 "section_keys": [
-                  "Metindeki Eski Biçimler"
+                  "Metindeki Eski Biçimler ve Günümüzdeki Yazımları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0,
+                  1
+                ]
               },
               {
-                "id": "Çıkarılabilecek Güvenli Sonuç",
+                "id": "Çıkarılabilecek Güvenli Sonuç ve Dilbilimsel Bağlam",
                 "section_keys": [
-                  "Çıkarılabilecek Güvenli Sonuç"
+                  "Çıkarılabilecek Güvenli Sonuç ve Dilbilimsel Bağlam"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14347,7 +14392,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Soru 5a — Eski ve güncel yazım farklılıkları dilin zaman içindeki değişiminin hangi yönünü gösterir?",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14369,19 +14416,26 @@
           "printed_page": 74,
           "question_no": "5a",
           "prompt_summary": "Eski ve güncel yazımlar arasındaki farkın dil değişimi açısından anlamı",
-          "answer": "Metindeki 'unutduğum, gitdi, demişdim, gazetada' gibi biçimlerle günümüzdeki 'unuttuğum, gitti, demiştim, gazetede' yazımları arasındaki fark, yazım tercihleri ve standart imlanın zaman içinde değişebildiğini gösterir.",
+          "answer": "Metindeki 'unutduğum, gitdi, demişdim, gazetada' gibi biçimlerle günümüzdeki 'unuttuğum, gitti, demiştim, gazetede' yazımları arasındaki fark, dilin canlı bir varlık olduğunu; yazım tercihlerinin ve standart imlanın zaman içinde değişip standartlaşabildiğini gösterir.",
           "answer_sections": {
-            "Metindeki Eski Biçimler": [
-              "unutduğum → günümüzde unuttuğum",
-              "gitdi → günümüzde gitti",
-              "demişdim → günümüzde demiştim",
-              "gazetada → günümüzde gazetede"
+            "Metindeki Eski Biçimler ve Günümüzdeki Yazımları": [
+              "unutduğum → günümüzde: unuttuğum",
+              "gitdi → günümüzde: gitti",
+              "etdiğimi / etdiniz → günümüzde: ettiğimi / ettiniz",
+              "demişdim → günümüzde: demiştim",
+              "gazetada → günümüzde: gazetede",
+              "seyahatları → günümüzde: seyahatleri"
             ],
-            "Çıkarılabilecek Güvenli Sonuç": "Dil canlıdır; standart yazım tercihleri ve yazım kuralları zaman içinde değişebilir ve ortak yazım kılavuzlarıyla standartlaşabilir.",
-            "Kaynak Sınırı": "Bu kısa yazım örneklerinden hareketle sözcüklerin geçmişte nasıl telaffuz edildiğini, her biçimin tarihsel nedenini, ağız kökenini veya belirli bir ses kuralının hangi dönemde nasıl standartlaştığını kesin biçimde açıklamak mümkün değildir."
+            "Çıkarılabilecek Güvenli Sonuç ve Dilbilimsel Bağlam": "Dil canlıdır; standart yazım tercihleri ve yazım kuralları zaman içinde değişebilir ve ortak yazım kılavuzlarıyla standartlaşabilir. 1950'li yıllarda sert ünsüzle biten kelimelere gelen -dI/-dIk eklerinin benzeşme gösterilmeden (unut-duğum, git-di, demiş-dim) veya yabancı kökenli kelimelerin 'gazetada' biçiminde yazılabildiği görülürken, günümüzde ünsüz benzeşmesi ve ünlü uyumu doğrultusunda yazım standartlaşmıştır.",
+            "Kaynak Sınırı": "Yalnızca metindeki bu kısa yazım örneklerinden hareketle sözcüklerin geçmişte yazar tarafından nasıl telaffuz edildiğini, her biçimin kesin tarihsel/ağız kökenini veya belirli bir ses kuralının tam hangi yılda standartlaştığını kesin biçimde açıklamak mümkün değildir."
           },
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 5a",
-          "guidance": "Öğrenciye önce eski ve güncel yazımları eşleştirin. Ardından yalnız yazım tercihleri ve standartlaşmanın zaman içinde değişebildiği sonucuna götürün; yazımdaki farktan telaffuzun da değiştiği sonucunu çıkarmayın ve “gazetada halk ağzıdır” gibi kaynakta verilmeyen tarihsel nedenleri kesinleştirmeyin."
+          "evidence_quotes": [
+            "Yalnız bir gün verdiğim cevabı ertesi günü unutduğum için, cevapların hepsi gürültüye gitdi.",
+            "Ben gazetada Homer İlyada’da “Palamed”den bahsediyor demişdim."
+          ],
+          "explanation": "1957 tarihli mektup metnindeki imla örnekleri, yazı dilinin ve imla kurallarının zaman içinde standartlaşma sürecinden geçtiğini somut biçimde gösterir.",
+          "guidance": "Öğrenciye önce eski ve güncel yazımları eşleştirin. Ardından yalnız yazım tercihleri ve standartlaşmanın zaman içinde değişebildiği sonucuna götürün; yazımdaki farktan telaffuzun da değiştiği sonucunu çıkarmayın ve kaynakta verilmeyen tarihsel nedenleri kesinleştirmeyin.",
+          "source_locator": "basılı s.74 / PDF s.75 — Edebiyat Atölyesi-2 (Anlatma) / Yazmayı Yönetebilme soru 5a"
         },
         "content": null
       },
@@ -14394,9 +14448,9 @@
           "web": {
             "units": [
               {
-                "id": "Araştırılabilecek Olumlu / İşlevsel Yönler",
+                "id": "Araştırılabilecek İşlevsel Yönler (Gündelik Dijital Bağlam)",
                 "section_keys": [
-                  "Araştırılabilecek Olumlu / İşlevsel Yönler"
+                  "Araştırılabilecek İşlevsel Yönler (Gündelik Dijital Bağlam)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14404,9 +14458,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Araştırılabilecek Riskler",
+                "id": "Araştırılabilecek Riskler ve Olumsuz Etkiler (Standart Dil Bağlamı)",
                 "section_keys": [
-                  "Araştırılabilecek Riskler"
+                  "Araştırılabilecek Riskler ve Olumsuz Etkiler (Standart Dil Bağlamı)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14421,7 +14475,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
                 "id": "Sonuç İlkesi",
@@ -14442,7 +14498,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Soru 5b — Dijital iletişimdeki kısaltmaların Türkçe üzerindeki etkisini araştırıp değerlendiriniz.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14464,28 +14522,32 @@
           "printed_page": 74,
           "question_no": "5b",
           "prompt_summary": "Dijital iletişimdeki kısaltmaların Türkçe üzerindeki etkisini araştırma",
-          "answer": "Dijital iletişimdeki 'slm, nbr, tmm' gibi kısaltmaların Türkçe üzerindeki etkisi tek yönlü değerlendirilmemelidir. Araştırmada bu kullanımların hız ve grup içi iletişim kolaylığı gibi işlevleri ile standart yazım alışkanlığı, anlaşılırlık ve resmî/akademik bağlamlara taşınması hâlinde doğabilecek sorunlar birlikte incelenmelidir.",
+          "answer": "Dijital iletişimdeki 'slm, nbr, tmm' gibi kısaltmaların Türkçe üzerindeki etkisi tek yönlü değerlendirilmemelidir. Araştırmada bu kullanımların hız ve grup içi iletişim kolaylığı gibi işlevleri ile standart yazım alışkanlığı, Türkçenin ses/hece yapısı, anlaşılırlık ve resmî/akademik bağlamlara taşınması hâlinde doğabilecek sorunlar birlikte incelenmelidir.",
           "answer_sections": {
-            "Araştırılabilecek Olumlu / İşlevsel Yönler": [
-              "Hızlı ve gündelik mesajlaşmada yazma süresini kısaltabilmesi.",
-              "Belirli arkadaş gruplarında ortak bir dijital söyleyiş ve aidiyet oluşturabilmesi.",
+            "Araştırılabilecek İşlevsel Yönler (Gündelik Dijital Bağlam)": [
+              "Hızlı ve gündelik mesajlaşmada yazma süresini kısaltabilmesi (dil ekonomisi).",
+              "Belirli arkadaş gruplarında ortak bir dijital söyleyiş (ağ jargonu) ve aidiyet oluşturabilmesi.",
               "Karakter sınırlaması bulunan veya hızlı tepki beklenen ortamlarda pratiklik sağlaması."
             ],
-            "Araştırılabilecek Riskler": [
-              "Kısaltmaların resmî, akademik veya okul yazılarına taşınması durumunda standart yazımın bozulması ve anlaşılırlığın azalması.",
-              "Farklı yaş/grup kullanıcılarının aynı kısaltmayı anlamaması nedeniyle iletişim sorunları.",
-              "Sürekli kullanımın standart biçimleri hatırlama ve bağlama uygun yazma alışkanlığı üzerindeki olası etkileri."
+            "Araştırılabilecek Riskler ve Olumsuz Etkiler (Standart Dil Bağlamı)": [
+              "Türkçenin Ses ve Hece Yapısı: Ünlü harflerin zenginliğine ve ünlü uyumlarına dayanan Türkçede ünlülerin atılmasıyla (selam > slm, tamam > tmm) kelimelerin ses mimarisinin yazımda aşınması.",
+              "Söz Varlığı ve İfade Gücü: Duygu ve düşünceleri zengin kelimeler ve deyimler yerine kalıp kısaltmalara sıkıştırmanın ifade gücünü daraltma riski.",
+              "Yazım Bilincinin Resmî Yazışmalara Taşması: Gündelik mesajlaşmada alışkanlık hâline gelen kısaltmaların okul ödevlerine, sınav kâğıtlarına ve resmî e-postalara taşınması durumunda standart yazımın bozulması ve kuşaklar arası anlaşılırlığın azalması."
             ],
             "Araştırma Soruları": [
               "Öğrenciler kısaltmaları hangi ortamlarda ve hangi amaçlarla kullanıyor?",
-              "Kısaltma kullanımı standart yazı diline gerçekten taşınıyor mu? Bunu gösteren gözlem veya araştırma var mı?",
-              "Aynı kısaltma farklı gruplarca farklı anlaşılabiliyor mu?",
+              "Kısaltma kullanımı standart yazı diline (ödevlere, resmî e-postalara) gerçekten taşınıyor mu? Bunu gösteren gözlem veya araştırma var mı?",
+              "Aynı kısaltma farklı yaş gruplarınca farklı anlaşılabiliyor mu?",
               "Bağlama göre kısaltma kullanımı ile standart Türkçe arasında nasıl bir denge kurulabilir?"
             ],
-            "Sonuç İlkesi": "Sonuç, 'Türkçeyi bozuyor' veya 'tamamen yararlı' gibi peşin hükümle değil, kullanılan kaynak ve gözlemlere göre kurulmalıdır."
+            "Sonuç İlkesi": "Sonuç, 'Türkçeyi tamamen bozuyor' veya 'tamamen yararlı' gibi peşin hükümle değil, iletişim bağlamı (gündelik mesajlaşma vs. resmî/edebî yazı dili), kullanılan kaynak ve gözlemlere göre kurulmalıdır."
           },
+          "evidence_quotes": [
+            "b) Günümüzde dijital iletişimde (sosyal medya, mesajlaşma uygulamaları vb.) ortaya çıkan kısaltmaların (slm, nbr, tmm vb.) Türkçe üzerindeki etkisini araştırınız."
+          ],
+          "explanation": "Bu basamak bir araştırma görevidir. Öğrencilerin hem dijital iletişimdeki hız/ekonomi eğilimini hem de standart yazı dilinin ve Türkçenin ses yapısının korunması gerekliliğini bağlama göre değerlendirmeleri beklenir.",
           "guidance": "Öğrenciden en az iki farklı bakış açısı ve güvenilir kaynak kullanmasını isteyin. Gündelik dijital dil ile resmî/akademik standart Türkçeyi birbirinden ayırın.",
-          "source_locator": "basılı s.74 / PDF s.75 — Yazmayı Yönetebilme soru 5b"
+          "source_locator": "basılı s.74 / PDF s.75 — Edebiyat Atölyesi-2 (Anlatma) / Yazmayı Yönetebilme soru 5b"
         },
         "content": null
       },
@@ -14498,54 +14560,28 @@
           "web": {
             "units": [
               {
-                "id": "Yazma Amacı",
+                "id": "Model 1 — Okul Yönetimine Resmî Talep Planı (Kütüphane Kullanım Süresi)",
                 "section_keys": [
-                  "Yazma Amacı"
+                  "Model 1 — Okul Yönetimine Resmî Talep Planı (Kütüphane Kullanım Süresi)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
-                "id": "Hedef Kitle ve Alıcı",
+                "id": "Model 2 — Edebiyat Kulübü Söyleşi Daveti Planı (Edebî/Kültürel Bağlam)",
                 "section_keys": [
-                  "Hedef Kitle ve Alıcı"
+                  "Model 2 — Edebiyat Kulübü Söyleşi Daveti Planı (Edebî/Kültürel Bağlam)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Metin Biçimi ve Özellikleri",
-                "section_keys": [
-                  "Metin Biçimi ve Özellikleri"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "İletişim Engellerini Giderme",
-                "section_keys": [
-                  "İletişim Engellerini Giderme"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Yazma Stratejisi",
-                "section_keys": [
-                  "Yazma Stratejisi"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  1
+                ]
               }
             ],
             "answer_text": {
@@ -14556,7 +14592,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "E-posta yazma görevini planlayın",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14576,16 +14614,28 @@
           "printed_page": 75,
           "question_no": "Performans Görevi - Planlama",
           "prompt_summary": "E-posta yazma amacı, hedef kitle ve strateji için örnek plan",
-          "answer": "Örnek e-posta çalışma planı: Yazma amacınızı, muhatabınızı ve bağlamınızı netleştirip hazırlık sürecinizi planlayın.",
-          "guidance": "Öğrenciler farklı bir amaç (gezi izni, münazara salonu tahsisi, kulüp bütçesi vb.) seçebilir. Temel değerlendirme ölçütü; amaç, muhatap, konu satırı ve dil düzeyinin birbiriyle tutarlı olmasıdır.",
-          "source_locator": "basılı s.75 / PDF s.76 — Performans Görevi",
+          "answer": "Örnek e-posta çalışma planı: Yazma amacınızı, muhatabınızı, metin özelliklerini ve bağlamınızı netleştirip hazırlık sürecinizi 5 adımda planlayın.",
           "answer_sections": {
-            "Yazma Amacı": "Okul kütüphanesinin ders bitiminden sonra daha uzun süre açık tutulması için gerekçeli ve resmî bir talep hazırlayın.",
-            "Hedef Kitle ve Alıcı": "Okul Müdürlüğü (resmî kurum yöneticisi).",
-            "Metin Biçimi ve Özellikleri": "Kurumsal nezaket kurallarına uygun resmî e-posta; açık konu başlığı, saygılı hitap, net istek ve resmî kapanış.",
-            "İletişim Engellerini Giderme": "Tek bir odağa yönelen kısa paragraflar kullanın; iddialarınızı doğrulanmış bilgi ve gerekçelerle destekleyin.",
-            "Yazma Stratejisi": "Girişte mevcut durumu ve ihtiyacı açıklayın; gelişmede doğrulanmış gerekçeleri ve gerekiyorsa kısa süreli deneme önerisini sunun; sonuçta saygılı bir değerlendirme isteyin."
-          }
+            "Model 1 — Okul Yönetimine Resmî Talep Planı (Kütüphane Kullanım Süresi)": {
+              "Adım 1 — Yazma Amacı (INST03)": "Okul kütüphanesinin ders bitiminden sonra daha uzun süre açık tutulması için gerekçeli ve resmî bir talep hazırlama.",
+              "Adım 2 — Hedef Kitle ve Metin Özellikleri (INST04)": "Alıcı: Okul Müdürlüğü (resmî kurum yöneticisi). Biçim ve Üslup: Kurumsal nezaket kurallarına uygun resmî e-posta; açık konu başlığı, saygılı hitap, net istek ve resmî kapanış.",
+              "Adım 3 — Yazma Engellerini Giderme (INST05)": "Tek bir odağa yönelen kısa paragraflar kullanma; iddiaları doğrulanmış bilgi ve gerekçelerle destekleme.",
+              "Adım 4 ve 5 — Yazma Stratejisi ve Yapılandırma (INST06-INST07)": "Girişte mevcut durumu ve ihtiyacı açıklama; gelişmede doğrulanmış gerekçeleri ve kısa süreli deneme önerisini sunma; sonuçta saygılı bir değerlendirme isteme."
+            },
+            "Model 2 — Edebiyat Kulübü Söyleşi Daveti Planı (Edebî/Kültürel Bağlam)": {
+              "Adım 1 — Yazma Amacı (INST03)": "Okulun Edebiyat Kulübü adına bir yazarı/akademisyeni 'Geçmişten Günümüze İletişim ve Edebiyat: Mektuptan Dijital Çağa' konulu söyleşiye davet ve ikna etme.",
+              "Adım 2 — Hedef Kitle ve Metin Özellikleri (INST04)": "Alıcı: Edebiyat araştırmacısı / yazar. Dil ve Üslup: Saygılı, ölçülü, açık, kurumsal ve özenli Türkçe. Uzunluk: Alıcının vaktini almayacak 3-4 paragraflık özlü metin.",
+              "Adım 3 — Yazma Engellerini Giderme (INST05)": "Etkinlik tarihi, saati ve yeri gibi bilgileri önceden netleştirme; hitap ve kapanış ifadelerinde tereddüt yaşamamak için resmî e-posta kurallarını gözden geçirme.",
+              "Adım 4 ve 5 — Yazma Stratejisi ve Yapılandırma (INST06-INST07)": "Nedensellik, karşılaştırma ve gerekçelendirme stratejisini kullanarak; girişte tanışma ve etkinliğin amacını belirtme, gelişmede neden kendisinin davet edildiğini gerekçelendirme ve geçmiş-günümüz iletişimini karşılaştırma, sonuçta ek belgeleri sunup nazik bir rica ile yanıt bekleme."
+            }
+          },
+          "evidence_quotes": [
+            "Yazma amacınıza (ikna etme, bilgilendirme, resmî bir talepte bulunma vb.) karar veriniz.",
+            "Yazacağınız metnin özelliklerini (süre, hedef kitle vb.) belirleyiniz."
+          ],
+          "explanation": "Performans görevinin ilk aşaması 'Yazmayı Yönetebilme' becerisine odaklanır. Öğrencinin yazmaya başlamadan önce amacını, muhatabını ve stratejisini planlaması metnin tutarlılığını sağlar.",
+          "guidance": "Öğrenciler farklı bir amaç (kütüphane süresi, yazar daveti, gezi izni, münazara salonu tahsisi, kulüp bütçesi vb.) seçebilir. Temel değerlendirme ölçütü; amaç, muhatap, konu satırı ve dil düzeyinin birbiriyle tutarlı olmasıdır.",
+          "source_locator": "basılı s.75 / PDF s.76 — Performans Görevi: İletişim ve E-posta (Planlama)"
         },
         "content": {
           "lead": "Yazmaya başlamadan önce amaç, alıcı, konu ve stratejiyi birbiriyle uyumlu hâle getirin.",
@@ -14621,7 +14671,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
                 "id": "Tablo ve Veri Çizelgeleri (.xlsx, .pdf)",
@@ -14662,7 +14714,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "E-postaya eklenebilecek belgeler ve kullanım amaçları",
         "display_prompt_mode": "ANSWER_SUMMARY",
@@ -14682,15 +14736,19 @@
           "printed_page": 76,
           "question_no": "2",
           "prompt_summary": "E-postaya eklenebilecek belgeler ve kullanım amaçları",
-          "answer": "E-postanın amacına ve muhatabına göre, mesajı desteklemek, kanıt sunmak veya açıklığı artırmak için uygun dijital ekler kullanılabilir. Ek yalnız gerçekten mevcut ve görevle ilgiliyse eklenmeli; kişisel veri, mahremiyet ve paylaşım izni gözetilmelidir.",
-          "guidance": "Öğrencilerin eki e-postanın amacı ve alıcısına göre seçmesini sağlayın. Yapılmamış anket, bulunmayan veri, çekilmemiş fotoğraf veya izin alınmamış ses/video kaydı varmış gibi gösterilmemelidir. İsteğe bağlı olarak anlaşılır dosya adları ve hizmetin dosya boyutu sınırları hatırlatılabilir.",
-          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 2",
+          "answer": "E-postanın amacına ve muhatabına göre, mesajı desteklemek, kanıt sunmak veya açıklığı artırmak için metin, tablo, görsel, ses veya video gibi dijital ekler kullanılabilir. Ek yalnız gerçekten mevcut ve görevle ilgiliyse eklenmeli; kişisel veri, mahremiyet ve paylaşım izni gözetilmelidir.",
           "answer_sections": {
-            "Metin ve Dilekçe Dosyaları (.pdf, .docx)": "Varsa gerçek proje metni, gerekçeli dilekçe, izinli öğrenci görüşleri veya hazırlanmış bir rapor e-postaya eklenebilir.",
-            "Tablo ve Veri Çizelgeleri (.xlsx, .pdf)": "Varsa gerçekten toplanmış kütüphane kullanım verileri, anket sonuçları veya hazırlanmış çizelgeler sayısal bilgiyi açık biçimde göstermek için eklenebilir.",
-            "Görsel ve Fotoğraflar (.jpg, .png)": "Görev açısından gerekliyse, gerçekten gözlenen bir durumu veya fiziki düzeni gösteren; kişisel veri ve mahremiyeti ihlal etmeyen görseller kullanılabilir. Var olmayan yoğunluk ya da sorun fotoğrafla varmış gibi gösterilmemelidir.",
-            "İşitsel ve Video Kayıtları (.mp3, .mp4)": "Görevle doğrudan ilgili ve paylaşım izni bulunan bir sunum, canlandırma veya etkinlik kaydı gerekiyorsa eklenebilir."
-          }
+            "Metin ve Dilekçe Dosyaları (.pdf, .docx)": "Resmî yazışmalarda dilekçe, öz geçmiş, etkinlik programı, gerçek proje metni, izinli öğrenci görüşleri veya hazırlanmış bir rapor sunmak amacıyla e-postaya eklenebilir.",
+            "Tablo ve Veri Çizelgeleri (.xlsx, .pdf)": "Varsa gerçekten toplanmış kütüphane kullanım verileri, anket sonuçları veya hazırlanmış nöbet/etkinlik çizelgeleri sayısal bilgiyi açık biçimde göstermek için eklenebilir.",
+            "Görsel ve Fotoğraflar (.jpg, .png)": "Düzenlenen bir kültür-sanat etkinliğinin afişini, infografiğini paylaşmak veya gerçekten gözlenen bir durumu/fiziki düzeni kişisel veri ve mahremiyeti ihlal etmeden göstermek amacıyla kullanılabilir.",
+            "İşitsel ve Video Kayıtları (.mp3, .mp4)": "Görevle doğrudan ilgili ve paylaşım izni bulunan bir tanıtım filmi, sesli davet, çok modlu sunum veya sanatsal bir çalışmayı karşı tarafa somut olarak göstermek amacıyla eklenebilir."
+          },
+          "evidence_quotes": [
+            "2. E-postanızın alıcısını göz önünde bulundurarak karşı tarafa aktarabileceğiniz ek belgeleri (müzik, video, resim, metin vb.) belirleyiniz. Bu belgelerin nerelerde ve hangi amaçlarla kullanılabileceği hakkında tahminlerde bulununuz."
+          ],
+          "explanation": "Çok modlu dijital ekler e-postanın ikna ve bilgilendirme gücünü artırır; ancak gerçeklik, izin ve mahremiyet ilkelerine uygun olarak kullanılmalıdır.",
+          "guidance": "Öğrencilerin eki e-postanın amacı ve alıcısına göre seçmesini sağlayın. Yapılmamış anket, bulunmayan veri, çekilmemiş fotoğraf veya izin alınmamış ses/video kaydı varmış gibi gösterilmemelidir.",
+          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 2"
         },
         "content": null
       },
@@ -14705,13 +14763,15 @@
               {
                 "id": "comparison",
                 "section_keys": [
-                  "benzerlikler",
-                  "farkliliklar"
+                  "Benzerlikler",
+                  "Farklılıklar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               }
             ],
             "answer_text": {
@@ -14722,7 +14782,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "E-posta ile mektubun benzer ve farklı yönlerini karşılaştırma",
         "display_prompt_mode": "ANSWER_SUMMARY",
@@ -14743,22 +14805,26 @@
           "question_no": "3",
           "prompt_summary": "E-posta ile mektubun benzer ve farklı yönlerini karşılaştırma",
           "answer": "Mektup ile e-posta aynı temel iletişim ihtiyacını karşılayabilir; ancak iletim kanalı, hız, teknik alanlar ve ek içerik kullanımı bakımından farklılaşır. Samimiyet, resmiyet ve kalıcılık ise yalnız türün adına değil, amaç, muhatap ve kullanım biçimine bağlıdır.",
-          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 3 (T Diyagramı)",
           "answer_sections": {
-            "benzerlikler": [
-              "Her ikisi de bir göndericiden alıcıya duygu, düşünce, haber, bilgi veya talep iletmek için kullanılabilir.",
-              "Hitap, ana ileti, açıklama/gerekçelendirme ve kapanış gibi işlevsel bölümler her iki türde de bulunabilir.",
-              "Dil ve üslup; muhatap, amaç ve bağlama göre samimi, resmî veya yarı resmî olabilir.",
-              "Yazım, noktalama, açıklık ve bağdaşıklık iki türde de anlaşılırlığı destekler."
+            "Benzerlikler": [
+              "Her ikisi de yazılı iletişim aracıdır ve bir göndericiden alıcıya (veya kuruma) duygu, düşünce, haber, bilgi ya da talep iletmek için kullanılır.",
+              "Her ikisinde de alıcıya uygun bir hitap ile başlanır; giriş, gelişme (ana ileti/gerekçelendirme), sonuç bölümleri ve uygun bir esenlik/saygı ifadesi ile kapanış yer alır.",
+              "Gönderici ile alıcı arasındaki yakınlık derecesine, amaca ve bağlama göre özel (samimi), resmî veya yarı resmî üslupla kaleme alınabilir.",
+              "Her iki türde de dil ve anlatım kurallarına, yazım ve noktalamaya, açıklık ve bağdaşıklığa dikkat edilmesi anlaşılırlığı destekler."
             ],
-            "farkliliklar": [
-              "İletim kanalı ve hız: Geleneksel mektup fiziksel posta yoluyla, e-posta ise dijital ağ üzerinden iletilir; e-posta çoğu durumda daha hızlı ulaşır.",
-              "Teknik alanlar: E-postada alıcı, konu, CC/BCC ve ek gibi ayrı teknik alanlar bulunabilir; geleneksel mektupta yerleşim farklıdır.",
-              "Ek içerikler: E-postaya dosya, görsel, ses, video veya bağlantı eklemek kolaydır; mektuba da fotoğraf, belge veya başka fiziksel ekler konabilir.",
-              "Kalıcılık ve maddi iz: Mektup el yazısı, kâğıt, zarf gibi fiziksel izler taşıyabilir; e-posta ise kopyalanabilir, aranabilir ve yedeklenebilir. Her iki biçimin de korunması uygun arşivleme koşullarına bağlıdır."
+            "Farklılıklar": [
+              "İletim Kanalı ve Hız: Mektup kâğıt üzerine yazılıp fiziksel posta yoluyla günler içinde ulaşırken; e-posta dijital ortamda yazılıp internet aracılığıyla saniyeler içinde alıcıya ulaşır.",
+              "Teknik Alanlar ve Çoklu Gönderim: E-postada Gönderici, Kime, Konu, Bilgi (CC), Gizli (BCC) ve Ek gibi teknik alanlar bulunur ve aynı anda çok sayıda kişiye iletilebilir; geleneksel mektupta ise zarf, pul ve fiziksel adres yerleşimi vardır.",
+              "Çok Modlu Ek İmkanı: Mektuba yalnızca fiziksel fotoğraf veya belge konulabilirken; e-postaya yüksek boyutlu ses, müzik, video, sunum ve ağ bağlantıları kolayca eklenebilir.",
+              "Kalıcılık ve Maddi İz: Mektup el yazısı, kâğıt ve zarf gibi fiziksel izler taşır; e-posta ise kopyalanabilir, aranabilir ve yedeklenebilir. Her iki biçimin de korunması uygun arşivleme koşullarına bağlıdır."
             ]
           },
-          "guidance": "“Mektup samimidir, e-posta resmîdir” veya “mektup kalıcıdır, e-posta geçicidir” gibi otomatik eşleştirmelerden kaçının. Öğrenciye amaç, muhatap ve saklama koşullarını da düşündürün."
+          "evidence_quotes": [
+            "3. Tahminleriniz doğrultusunda e-posta ile mektup türünü karşılaştırmak üzere bu türlerin benzerlik ve farklılıklarını aşağıdaki T diyagramına yazınız."
+          ],
+          "explanation": "T diyagramı, yazılı iletişimin geleneksel formu olan mektup ile dijital formu olan e-posta arasındaki yapısal ortaklıkları ve mecra farklarını somutlaştırır.",
+          "guidance": "'Mektup samimidir, e-posta resmîdir' veya 'mektup kalıcıdır, e-posta geçicidir' gibi otomatik eşleştirmelerden kaçının. Öğrenciye amaç, muhatap ve saklama koşullarını da düşündürün.",
+          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 3 (T Diyagramı)"
         },
         "content": null
       },
@@ -14778,7 +14844,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
                 "id": "Örnek Yapısal Unsurlar",
@@ -14791,9 +14859,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Farklı Bağlamlar İçin Alternatif İleti Örnekleri",
+                "id": "Farklı Bağlamlar İçin Ek Alternatif İleti Örnekleri",
                 "section_keys": [
-                  "Farklı Bağlamlar İçin Alternatif İleti Örnekleri"
+                  "Farklı Bağlamlar İçin Ek Alternatif İleti Örnekleri"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14809,7 +14877,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "E-postada verilmek istenen ileti için örnek",
         "display_prompt_mode": "ANSWER_SUMMARY",
@@ -14829,21 +14899,25 @@
           "printed_page": 76,
           "question_no": "4",
           "prompt_summary": "E-postada verilmek istenen ileti için örnek",
-          "answer": "E-postanın ana iletisi talebi muhataba kısa ve doğrudan aktarır. Örnek: “Ders bitiminden sonra kütüphaneden araştırma ve okuma çalışmaları için yararlanma olanağını artırmak amacıyla haftada iki gün birer saat daha açık tutulmasının değerlendirilmesini arz ederim.” Bu yalnız örnek bir iletidir; süre ve gerekçe gerçek duruma göre değiştirilmelidir.",
-          "guidance": "Örnek iletiyi aynen kullanmayı zorunlu tutmayın. Öğrenci talep, gerekçe, tarih, süre ve beklenen yarar gibi ayrıntıları kendi gerçek koşullarına göre yazmalı; varsayılan veri veya sabit tarih üretmemelidir.",
-          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 4",
+          "answer": "E-postanın ana iletisi talebi veya daveti muhataba kısa ve doğrudan aktarır. Örnek 1 (Resmî Talep): 'Ders bitiminden sonra kütüphaneden araştırma ve okuma çalışmaları için yararlanma olanağını artırmak amacıyla haftada iki gün birer saat daha açık tutulmasının değerlendirilmesini arz ederim.' Örnek 2 (Edebî Davet): 'Okulumuz Edebiyat Kulübü tarafından düzenlenecek olan Mektuptan Dijital Çağa İletişim ve Edebiyat konulu panelde, edebî mektup türü üzerine yaptığınız değerli çalışmalardan dolayı sizi konuşmacı olarak ağırlamaktan onur duyarız; etkinliğimize katılımınız öğrencilerimizin Türkçeyi özenli kullanma bilincine katkı sağlayacaktır.'",
           "answer_sections": {
-            "Temel İletinin Amacı": "Talebin ana fikrini muhataba tek ve açık bir cümleyle sunmak.",
+            "Temel İletinin Amacı": "Talebin veya davetin ana fikrini muhataba tek ve açık bir ifadeyle sunmak.",
             "Örnek Yapısal Unsurlar": [
-              "Talep: Kütüphane kullanım süresinin belirli günlerde uzatılmasının değerlendirilmesi.",
-              "Gerekçe: Gerçek ve doğrulanabilir bir ihtiyaç veya gözlem. Örneğin araştırma/okuma için mevcut sürenin yeterli olmadığı gerçekten gözlemleniyorsa bu durum açıklanabilir.",
-              "Beklenen yarar: Talebin hangi ihtiyacı karşılamayı amaçladığını ölçülü biçimde belirtin; “başarıyı artıracaktır” gibi veri gerektiren sonuçları kanıt olmadan kesinleştirmeyin."
+              "Talep / Davet: Kütüphane kullanım süresinin belirli günlerde uzatılması veya söyleşi davetinin değerlendirilmesi.",
+              "Gerekçe: Gerçek ve doğrulanabilir bir ihtiyaç, gözlem veya muhatabın uzmanlık alanı.",
+              "Beklenen Yarar: Talebin hangi ihtiyacı karşılamayı amaçladığını ölçülü biçimde belirtmek; kanıt gerektiren sonuçları veri olmadan kesinleştirmemek."
             ],
-            "Farklı Bağlamlar İçin Alternatif İleti Örnekleri": [
-              "Kültürel Etkinlik Talebi: “Edebiyat Kulübümüzün hazırladığı Yazar-Öğrenci Buluşması için okul konferans salonunun [uygun ve doğrulanmış tarih] tarihinde tahsis edilmesinin değerlendirilmesini arz ederiz.”",
-              "Teşekkür ve Geri Bildirim: “Tiyatro etkinliğimize sağladığınız kostüm ve sahne desteğinden ötürü okul yönetimine öğrencilerimiz adına teşekkür ederiz.”"
+            "Farklı Bağlamlar İçin Ek Alternatif İleti Örnekleri": [
+              "Salon Tahsisi Talebi: 'Edebiyat Kulübümüzün hazırladığı Yazar-Öğrenci Buluşması için okul konferans salonunun [uygun ve doğrulanmış tarih] tarihinde tahsis edilmesinin değerlendirilmesini arz ederiz.'",
+              "Teşekkür ve Geri Bildirim: 'Tiyatro etkinliğimize sağladığınız kostüm ve sahne desteğinden ötürü okul yönetimine öğrencilerimiz adına teşekkür ederiz.'"
             ]
-          }
+          },
+          "evidence_quotes": [
+            "4. Yazma amacınıza ve yazacağınız metnin özelliklerine göre vermek istediğiniz iletiyi aşağıya yazınız."
+          ],
+          "explanation": "Ana ileti cümlesi, öğrencinin e-posta boyunca dağılmadan amacına odaklanmasını sağlar.",
+          "guidance": "Örnek iletiyi aynen kullanmayı zorunlu tutmayın. Öğrenci talep, gerekçe, tarih, süre ve beklenen yarar gibi ayrıntıları kendi gerçek koşullarına göre yazmalıdır.",
+          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme soru 4"
         },
         "content": null
       },
@@ -14856,9 +14930,9 @@
           "web": {
             "units": [
               {
-                "id": "alici",
+                "id": "Alıcı ve Konu (Basamak 5)",
                 "section_keys": [
-                  "alici"
+                  "Alıcı ve Konu (Basamak 5)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14866,59 +14940,45 @@
                 "quote_indexes": []
               },
               {
-                "id": "konu",
+                "id": "Dil İşlevleri ve Anlatım Biçimleri (Basamak 6)",
                 "section_keys": [
-                  "konu"
+                  "Dil İşlevleri ve Anlatım Biçimleri (Basamak 6)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
-                "id": "dil_islevleri",
+                "id": "Söz Varlığı ve Karşılaştırma İçeren İletiler (Basamak 7)",
                 "section_keys": [
-                  "dil_islevleri"
+                  "Söz Varlığı ve Karşılaştırma İçeren İletiler (Basamak 7)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  1
+                ]
               },
               {
-                "id": "soz_varligi_ve_ifade",
+                "id": "Gönderilecek Eklerin Sınıflandırılması (Basamak 8 ve s.77 Basamak 11)",
                 "section_keys": [
-                  "soz_varligi_ve_ifade"
+                  "Gönderilecek Eklerin Sınıflandırılması (Basamak 8 ve s.77 Basamak 11)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  2
+                ]
               },
               {
-                "id": "ekler",
+                "id": "Hitap, Kapanış ve Akran Değerlendirmesi (Basamak 9-13)",
                 "section_keys": [
-                  "ekler"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "hitap",
-                "section_keys": [
-                  "hitap"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "kapanis",
-                "section_keys": [
-                  "kapanis"
+                  "Hitap, Kapanış ve Akran Değerlendirmesi (Basamak 9-13)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -14934,7 +14994,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "E-posta içerik taslağını oluşturun",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -14954,26 +15016,34 @@
           "printed_page": 76,
           "question_no": "5-9",
           "prompt_summary": "E-posta içerik taslağını oluşturma süreci: 5-9. basamaklar",
-          "answer": "Resmî e-posta taslağınızdaki köşeli parantezli alanları gerçek ve doğrulanmış bilgilerinizle doldurun. Uymayan bir talebi kendi okulunuzun koşullarına göre değiştirin; bulunmayan veri veya belgeyi eklemeyin.",
-          "source_locator": "basılı s.76 / PDF s.77 — İçerik Oluşturabilme basamak 5-9",
+          "answer": "E-posta taslağınızdaki alanları gerçek bilgilerinizle veya açıkça 'örnek/kurgusal' olarak işaretlenmiş model verilerle doldurun; dil işlevlerini (rica, gerekçelendirme, koşul, karşılaştırma) ve sınıflandırılmış ekleri amaca uygun yapılandırın.",
           "answer_sections": {
-            "alici": "[Okulun / kurumun gerçek e-posta adresi]",
-            "konu": "Kütüphane Kullanım Süresinin Değerlendirilmesi Talebi",
-            "dil_islevleri": [
-              "Rica / İsteme: “Kütüphanenin ders bitiminden sonra belirli günlerde daha uzun süre açık tutulması talebimin değerlendirilmesini arz ederim.”",
-              "Gerekçelendirme: “Ders çıkışından sonra araştırma ve çalışma yapmak isteyen öğrencilerin kütüphaneden daha uzun süre yararlanabilmesi bu talebin gerekçesidir.”",
-              "Koşul / Alternatif: “Her gün uygulanması mümkün değilse uygun görülen günlerde deneme uygulaması yapılabilir.”",
-              "Karşılaştırma: Mevcut ve önerilen uygulama ancak gerçek saatler biliniyorsa somut saatlerle karşılaştırılmalıdır."
+            "Alıcı ve Konu (Basamak 5)": {
+              "Alıcı": "[Okulun/kurumun gerçek e-posta adresi] veya [Örnek/Kurgusal Alıcı Adresi]",
+              "Konu (Model 1)": "Kütüphane Kullanım Süresinin Değerlendirilmesi Talebi",
+              "Konu (Model 2/3)": "\"Mektuptan Dijital Çağa Edebiyatımızda İletişim\" Söyleşi Daveti Hk."
+            },
+            "Dil İşlevleri ve Anlatım Biçimleri (Basamak 6)": [
+              "Gerekçelendirme: 'Ders çıkışından sonra araştırma yapmak isteyen öğrencilerin kütüphaneden daha uzun süre yararlanabilmesi bu talebin gerekçesidir.' / 'Özellikle Cumhuriyet dönemi yazarlarının mektupları üzerine yaptığınız incelemeler öğrencilerimize ufuk açacağı için...'",
+              "Koşul: 'Her gün uygulanması mümkün değilse uygun görülen günlerde deneme uygulaması yapılabilir.' / 'Programınızın uygun olması hâlinde / Kabul buyurmanız durumunda...'",
+              "Rica / İsteme: 'Talebimin değerlendirilmesini arz ederim.' / 'Etkinlik davetimizi değerlendirmenizi ve uygun gördüğünüz tarihi bizimle paylaşmanızı rica ederiz.'"
             ],
-            "soz_varligi_ve_ifade": "Açık, ölçülü ve resmî bir dil kullanın; kanıtlanmamış “öğrencilerin çoğu istiyor” veya “başarıyı artıracaktır” gibi ifadeleri veri olmadan kesin hüküm olarak yazmayın.",
-            "ekler": [
-              "[Varsa gerçek öğrenci görüş/talep belgesi]",
-              "[Varsa gerçek çizelge, anket sonucu veya gerekçe raporu]"
+            "Söz Varlığı ve Karşılaştırma İçeren İletiler (Basamak 7)": "Geçmişte Halikarnas Balıkçısı ve Ahmet Hamdi Tanpınar gibi usta kalemlerin mektuplarında 'sözün ağırlığı ve sıcaklığı' hissedilirken, günümüz dijital mesajlaşmalarında hız uğruna dilin incelikleri göz ardı edilebilmektedir. (Resmî taleplerde ise mevcut uygulama ile önerilen uygulama doğrulanmış saatlerle karşılaştırılır.)",
+            "Gönderilecek Eklerin Sınıflandırılması (Basamak 8 ve s.77 Basamak 11)": [
+              "1. Yazılı Metin Belgesi: [Varsa gerçek talep/görüş belgesi] veya [Örnek: Etkinlik_Programi_ve_Resmi_Davet_Yazisi.pdf]",
+              "2. Görsel / Tablo Ögesi: [Varsa gerçek kullanım çizelgesi] veya [Örnek: Mektuptan_Epostaya_Soylesi_Afisi.png]",
+              "3. İşitsel / Görsel-İşitsel Öge: [Varsa izinli tanıtım kaydı] veya [Örnek: Okul_Edebiyat_Kulubu_Tanitim_Videosu.mp4]"
             ],
-            "hitap": "Sayın Müdürüm,",
-            "kapanis": "Talebimin değerlendirilmesini saygılarımla arz ederim."
+            "Hitap, Kapanış ve Akran Değerlendirmesi (Basamak 9-13)": "Hitap ('Sayın Müdürüm,' / 'Sayın Prof. Dr. ...') ve kapanış ('Saygılarımla arz ederim.' / 'Saygılarımızı sunarız.') alıcıya uygun seçilir; taslak sınıf arkadaşı ve öğretmenle paylaşılarak geri bildirimlere göre düzenlenir."
           },
-          "guidance": "Modeldeki köşeli parantezleri öğrencinin gerçek bilgileriyle doldurun. Yapılmamış anket, alınmamış imza, belirlenmemiş saat veya var olmayan ek belge üretmeyin."
+          "evidence_quotes": [
+            "Planınızı oluştururken dil işlevlerinden (rica, koşul, gerekçelendirme vb.) hangilerini kullanacağınıza karar veriniz.",
+            "Söz varlığını kullanarak karşılaştırma içeren iletiler oluşturup yazınızın içeriğini düzenleyiniz.",
+            "Göndereceğiniz ekleri sınıflandırınız."
+          ],
+          "explanation": "5–13. basamaklar, öğrencinin e-posta metnini yazmadan önce dil işlevlerini, söz varlığını, karşılaştırma cümlelerini ve ek dosya sınıflandırmasını planlamasını sağlar.",
+          "guidance": "Gerçek bir kuruma gönderilecek e-postalarda yapılmamış anket veya var olmayan ek belge üretilmemesine dikkat ettirin; kurgusal bir yazar daveti çalışılıyorsa kişi, tarih ve eklerin 'örnek/kurgusal çalışma verisi' olduğunu açıkça belirtin.",
+          "source_locator": "basılı s.76-77 / PDF s.77-78 — İçerik Oluşturabilme basamak 5-13"
         },
         "content": {
           "lead": "Taslağı oluştururken e-postanın işlevini ve alıcıya uygun dil kullanımını birlikte planlayın.",
@@ -15025,14 +15095,39 @@
           "web": {
             "units": [
               {
-                "id": "Model E-posta Metni",
+                "id": "Model 1 — Okul Yönetimine Resmî Talep E-postası (Doğrulanabilir Kurumsal Çerçeve)",
                 "section_keys": [
-                  "Model E-posta Metni"
+                  "Model 1 — Okul Yönetimine Resmî Talep E-postası (Doğrulanabilir Kurumsal Çerçeve)"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0
+                ]
+              },
+              {
+                "id": "Model 2 — Edebiyat Kulübü Söyleşi Daveti E-postası (Kısa / Genel Çerçeve)",
+                "section_keys": [
+                  "Model 2 — Edebiyat Kulübü Söyleşi Daveti E-postası (Kısa / Genel Çerçeve)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
                 "quote_indexes": []
+              },
+              {
+                "id": "Model 3 — Edebî Zenginliği Yüksek Söyleşi Daveti E-postası (Satır İçi a–i Ölçüt Eşleştirmeli Örnek)",
+                "section_keys": [
+                  "Model 3 — Edebî Zenginliği Yüksek Söyleşi Daveti E-postası (Satır İçi a–i Ölçüt Eşleştirmeli Örnek)"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  1,
+                  2
+                ]
               },
               {
                 "id": "Gönderme Öncesi Kontrol Listesi",
@@ -15042,12 +15137,14 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  3
+                ]
               },
               {
-                "id": "E-posta yazarken dikkat edilecekler",
+                "id": "Öz Değerlendirme Formu (s.78 Tablo 1) ve Öğretmen İçin Pedagojik Kontrol Noktaları",
                 "section_keys": [
-                  "E-posta yazarken dikkat edilecekler"
+                  "Öz Değerlendirme Formu (s.78 Tablo 1) ve Öğretmen İçin Pedagojik Kontrol Noktaları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -15063,7 +15160,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "E-postayı yazın ve gönderme öncesi kontrol edin",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -15082,33 +15181,79 @@
           "entry_type": "performance_support",
           "printed_page": 77,
           "question_no": "E-posta Yazma",
-          "prompt_summary": "Kitaptaki ölçütlere uygun tamamlanmış örnek e-posta",
-          "answer": "Örnek e-posta. Köşeli parantez içindeki alanları gerçek ve doğrulanmış bilgilerinizle düzenleyin; okulunuzun koşullarına uymayan talebi kendi bağlamınıza göre değiştirin.",
-          "guidance": "Modeli aynen kopyalatmayın. Öğrenci kendi gerçek bağlamını, alıcısını ve gerekçelerini kullanmalı; örnek e-posta yalnız yapıyı ve üslubu göstermelidir.",
-          "source_locator": "basılı s.77 / PDF s.78 — Kural Uygulayabilme",
+          "prompt_summary": "Kitaptaki ölçütlere uygun tamamlanmış örnek e-postalar (resmî talep, genel davet ve satır içi a-i ölçüt eşleştirmeli edebî davet) ile s.78 öğretmen kontrol noktaları",
+          "answer": "Aşağıda farklı bağlam ve üslup düzeyleri için üç ayrı örnek e-posta sunulmuştur: Model 1 (Okul yönetimine resmî talep), Model 2 (Kısa/genel söyleşi daveti) ve Model 3 (Halikarnas Balıkçısı ve Tanpınar göndermeleriyle zenginleştirilmiş, paragrafların hangi a–i yazma ölçütlerini karşıladığını satır içinde gösteren edebî söyleşi daveti). Ayrıca s.78'deki 8 öz değerlendirme ölçütünün öğretmen kontrol açıklamaları tam tablo olarak eklenmiştir.",
           "answer_sections": {
-            "Model E-posta Metni": "Kime: [Kurumun gerçek e-posta adresi]\nKonu: Kütüphane Kullanım Süresinin Değerlendirilmesi Talebi\nEkler: [Varsa gerçek ek belgenin adı]\n\nSayın Müdürüm,\n\nOkul kütüphanesinin ders bitiminden sonra daha uzun süre açık tutulması talebimin değerlendirilmesini arz ederim. Bu talebin gerekçesi şudur: [kütüphane kullanımına ilişkin gerçek ve doğrulanabilir ihtiyaç veya gözlem].\n\nUygun görülmesi hâlinde kütüphanenin belirli günlerde ders bitiminden sonra bir süre daha açık tutulması veya bu konuda kısa süreli bir deneme uygulaması yapılması değerlendirilebilir. Talebi destekleyen gerçek öğrenci görüşleri, kullanım verileri ya da başka belgeler varsa e-postaya eklenebilir.\n\nKütüphane kullanım süresinin öğrencilerin ihtiyaçları ve okulun imkânları doğrultusunda değerlendirilmesini saygılarımla arz ederim.\n\nİyi çalışmalar dilerim.\n\nSaygılarımla,\n[Ad Soyad]\n[Sınıf / Şube / Numara]\n[Varsa görev veya kulüp bilgisi]",
+            "Model 1 — Okul Yönetimine Resmî Talep E-postası (Doğrulanabilir Kurumsal Çerçeve)": "Kime: [Kurumun gerçek e-posta adresi]\nKonu: Kütüphane Kullanım Süresinin Değerlendirilmesi Talebi\nEkler: [Varsa gerçek ek belgenin adı]\n\nSayın Müdürüm,\n\nOkul kütüphanesinin ders bitiminden sonra daha uzun süre açık tutulması talebimin değerlendirilmesini arz ederim. Bu talebin gerekçesi şudur: [kütüphane kullanımına ilişkin gerçek ve doğrulanabilir ihtiyaç veya gözlem].\n\nUygun görülmesi hâlinde kütüphanenin belirli günlerde ders bitiminden sonra bir süre daha açık tutulması veya bu konuda kısa süreli bir deneme uygulaması yapılması değerlendirilebilir. Talebi destekleyen gerçek öğrenci görüşleri, kullanım verileri ya da başka belgeler varsa e-postaya eklenebilir.\n\nKütüphane kullanım süresinin öğrencilerin ihtiyaçları ve okulun imkânları doğrultusunda değerlendirilmesini saygılarımla arz ederim.\n\nİyi çalışmalar dilerim.\n\nSaygılarımla,\n[Ad Soyad]\n[Sınıf / Şube / Numara]\n[Varsa görev veya kulüp bilgisi]",
+            "Model 2 — Edebiyat Kulübü Söyleşi Daveti E-postası (Kısa / Genel Çerçeve)": "Kime: [Davet edilen yazarın/akademisyenin gerçek e-posta adresi]\nKonu: [Okul Adı] Edebiyat Kulübü Söyleşi Daveti Hk.\nEkler: [Varsa gerçekten hazırlanmış afiş taslağı veya taslak program dosyası]\n\nSayın [Muhatabın Unvanı ve Adı Soyadı],\n\nTürk edebiyatında mektup türü ve kültürel bellek üzerine kaleme aldığınız çalışmaları okulumuz Edebiyat Kulübü öğrencileri olarak ilgiyle takip ediyoruz.\n\nÖğrencilerimizde Türkçeyi bilinçli ve özenli kullanma duyarlılığını güçlendirmek amacıyla okulumuzda 'Mektuptan E-postaya Edebiyatımızda İletişim' konulu bir söyleşi düzenlemeyi planlıyoruz. Programınızın ve okul takvimimizin uygun olduğu [uygun tarih aralığı] içinde sizi okulumuzda konuşmacı olarak ağırlamaktan onur duyacağız. Davetimizi değerlendirmenizi ve uygun gördüğünüz takvimi bizimle paylaşmanızı saygıyla rica ederiz.\n\nÇalışmalarınızda kolaylıklar diler, saygılarımızı sunarız.\n\n[Okul Adı] Edebiyat Kulübü Adına\n[Ad Soyad - Sınıf/Şube]",
+            "Model 3 — Edebî Zenginliği Yüksek Söyleşi Daveti E-postası (Satır İçi a–i Ölçüt Eşleştirmeli Örnek)": "Gönderici: edebiyatkulubu@anadolulisesi.meb.k12.tr [Örnek/Kurgusal Adres]\nKime:      prof.dr.ayseerdem@universite.edu.tr [Örnek/Kurgusal Alıcı]\nKonu:      \"Mektuptan Dijital Çağa Edebiyatımızda İletişim\" Söyleşi Daveti Hk. (Uygun konu: a)\n\nSayın Prof. Dr. Ayşe Erdem, (Hitap: b)\n\nTürk edebiyatında mektup türü ve kültürel bellek üzerine kaleme aldığınız ufuk açıcı çalışmaları okulumuz Edebiyat Kulübü öğrencileri olarak büyük bir ilgi ve hayranlıkla takip ediyoruz. (Başlatma ve dikkat çekici giriş: b, c)\n\nBildiğiniz üzere, geçmişte edebiyatçılarımızın kaleme aldığı mektuplar yalnızca iki insan arasındaki haberleşme aracı değil; aynı zamanda bir dönemin ruhunu, dil zevkini ve düşünce dünyasını geleceğe taşıyan birer kültür hazinesiydi. Örneğin Halikarnas Balıkçısı’nın Azra Erhat’la, Ahmet Hamdi Tanpınar’ın genç okurlarıyla paylaştığı mektuplar bugün hâlâ edebiyat dünyamıza ışık tutmaktadır. Oysa günümüzün baş döndürücü dijital iletişim çağında, mesajlarımız saniyeler içinde karşı tarafa ulaşsa da kelimelerin o derin anlam dünyası çoğu zaman hızın gölgesinde kalmakta, anlamlı diyaloglarımız âdeta gürültüye gitmektedir. (Karşılaştırma, örneklendirme, deyim ve örtük/açık ileti kullanımı: ç, d, f, g)\n\nGenç kuşaklarda ana dilimiz Türkçeyi bilinçli, özenli ve estetik bir duyarlılıkla kullanma bilincini güçlendirmek amacıyla okulumuzda \"Bir Diyeceğim Var: Mektuptan E-postaya Edebiyatımızda İletişim\" başlıklı bir kültür-sanat buluşması düzenlemeyi planlıyoruz. (Millî ve kültürel değer vurgusu: h, ı) Programınızın uygun olması hâlinde, [20 Kasım Cuma günü saat 14.00’te — Örnek Tarih/Saat] okul konferans salonumuzda gerçekleştireceğimiz bu etkinlikte sizi konuşmacı olarak ağırlamaktan büyük bir onur duyacağız. (Koşul ve gerekçelendirme: e, ğ)\n\nEtkinliğimizin ayrıntılı akış planını, kulübümüzün hazırladığı afiş tasarımını ve öğrencilerimizin seslendirdiği kısa tanıtım videosunu ekte bilgilerinize sunuyoruz. Davetimizi değerlendirmenizi ve katılım durumunuzla ilgili geri bildiriminizi bizimle paylaşmanızı saygıyla rica ederiz. (Sürdürme ve bitirme ifadeleri, eklerin bildirimi ve bağdaşıklık/imla kontrolü: c, i)\n\nÇalışmalarınızda kolaylıklar ve başarılar diler, saygılarımızı sunarız.\n\nCumhuriyet Anadolu Lisesi Edebiyat Kulübü Adına [Örnek Kurum]\nElif Yılmaz (11-A Sınıfı Temsilcisi) [Örnek Öğrenci]\n\n+ Eklenen Dosyalar (Sınıflandırılmış Örnek Çalışma Ekleri):\n1. [Metin Belgesi] Soylesi_Program_Akisi_ve_Resmi_Davet.pdf\n2. [Görsel Öge] Soylesi_Tanitim_Afisi.jpg\n3. [İşitsel/Görsel Öge] Edebiyat_Kulubu_Sesli_Davet_Videosu.mp4",
             "Gönderme Öncesi Kontrol Listesi": [
-              "Alıcı adresi gerçekten doğru mu?",
+              "Alıcı adresi gerçekten doğru mu (veya kurgusal ödevse örnek olduğu belirtildi mi)?",
               "Konu satırı mesajı açıkça özetliyor mu?",
-              "Talep ve gerekçe anlaşılır mı?",
-              "Metinde geçen ekler gerçekten e-postaya eklendi mi?",
-              "Ad-soyad ve öğrenci bilgileri doğru mu?",
-              "Yapılmamış anket veya doğrulanmamış sayı/iddia var mı?",
+              "Talep/davet ve gerekçe anlaşılır mı?",
+              "Metinde geçen ekler gerçekten hazırlandı ve eklendi mi?",
               "Yazım, noktalama ve üslup son kez kontrol edildi mi?"
             ],
-            "E-posta yazarken dikkat edilecekler": [
-              "Konu satırında talebinizi açıkça belirtin.",
-              "Muhataba uygun resmî bir hitap kullanın ve talebin bağlamını kısaca açıklayın.",
-              "İhtiyacı, öneriyi ve değerlendirme talebini anlaşılır sırayla yazın.",
-              "Gerekçenizi uygun düşünce geliştirme yollarıyla destekleyin.",
-              "Resmî, saygılı ve ölçülü bir dil kullanın.",
-              "Kurum ve talep bağlamına uygun sözcükler seçin.",
-              "Talebinizi doğrudan ve anlaşılır biçimde belirtin.",
-              "Kurumun imkânlarını gözetin; dayanağı olmayan iddialardan kaçının.",
-              "E-postayı göndermeden önce yazım ve noktalamayı kontrol edin."
+            "Öz Değerlendirme Formu (s.78 Tablo 1) ve Öğretmen İçin Pedagojik Kontrol Noktaları": [
+              {
+                "No": "1",
+                "Değerlendirme Ölçütü": "İçeriğe uygun bir taslak oluşturdum.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Giriş, gelişme ve sonuç bölümlerinin planlanıp planlanmadığı kontrol edilir."
+              },
+              {
+                "No": "2",
+                "Değerlendirme Ölçütü": "Göndereceğim ek belgeleri sınıflandırdım.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Metin, görsel ve işitsel eklerin amaca göre ayrıştırılıp ayrıştırılmadığına (ve gerçek/izinli olmasına) bakılır."
+              },
+              {
+                "No": "3",
+                "Değerlendirme Ölçütü": "Göndereceğim elektronik postanın alıcısına uygun dil ve üslup belirledim.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Muhatabın konumuna göre sen/siz dili ve resmî/samimi üslup tutarlılığı denetlenir."
+              },
+              {
+                "No": "4",
+                "Değerlendirme Ölçütü": "Elektronik postamın içeriğine uygun işitsel ve görsel ögeler kullandım.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Seçilen afiş, fotoğraf veya ses/video ekinin iletiyi destekleyip desteklemediği incelenir."
+              },
+              {
+                "No": "5",
+                "Değerlendirme Ölçütü": "Söz varlığını hedef kitleye ve amaca uygun şekilde kullandım.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Deyim, terim ve kelimelerin bağlama uygunluğu kontrol edilir."
+              },
+              {
+                "No": "6",
+                "Değerlendirme Ölçütü": "Düşünceyi geliştirme yollarına başvurdum.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Karşılaştırma, örneklendirme, tanık gösterme gibi yollardan yararlanılıp yararlanılmadığına bakılır."
+              },
+              {
+                "No": "7",
+                "Değerlendirme Ölçütü": "Yazımın içeriğine uygun bir başlık belirledim.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "E-postanın 'Konu' satırının kısa, net ve içeriği yansıtıcı olup olmadığı kontrol edilir."
+              },
+              {
+                "No": "8",
+                "Değerlendirme Ölçütü": "Düşüncelerimi özgün ve tutarlı bir üslupla ifade etmeye özen gösterdim.",
+                "Hedef Profil": "Evet (✔)",
+                "Öğretmen İçin Pedagojik Kontrol Noktası": "Kalıp ifadelerin ötesinde öğrencinin kendi anlatım bütünlüğünü kurup kurmadığı değerlendirilir."
+              }
             ]
-          }
+          },
+          "evidence_quotes": [
+            "Yazınızın içeriğine uygun bir konu belirleyiniz.",
+            "İletinizin alıcı tarafından doğru ve eksiksiz bir şekilde anlaşılması için düşünceyi geliştirme yollarına",
+            "Söz varlığını (deyim, atasözü, mecaz, terim vb.) bağlama uygun şekilde kullanınız.",
+            "Yazdığınız metinde dil yapılarına, bağdaşıklık ögelerine, yazım ve noktalama kurallarına, Türkçeyi bilinçli ve özenli kullanmaya dikkat ediniz."
+          ],
+          "explanation": "Üç farklı model e-posta, öğretmene hem doğrudan kurumsal/resmî dilekçe-talep yazımını (Model 1-2) hem de tema metinleriyle (Halikarnas Balıkçısı, Tanpınar) bütünleşen edebî ve mecazlı davet üslubunu a–i kurallarıyla eşleştirerek gösterme (Model 3) olanağı sunar.",
+          "guidance": "Modelleri aynen kopyalatmayın. Öğrenci kendi bağlamını, alıcısını ve gerekçelerini kullanmalı; kurgusal bir senaryo çalışıyorsa kişi ve adreslerin örnek olduğunu belirtmelidir. Öz değerlendirmede s.78'deki 8 kontrol noktasını tek tek denetleyin.",
+          "source_locator": "basılı s.75, s.77-78 / PDF s.76, s.78-79 — E-posta Oluştur, Kural Uygulayabilme ve Öz Değerlendirme Formu"
         },
         "content": {
           "lead": "E-postayı oluştururken konu, hitap, açık ileti, uygun dil ve teknik doğruluğu birlikte koruyun.",
@@ -15199,9 +15344,9 @@
           "web": {
             "units": [
               {
-                "id": "Üç Yaz",
+                "id": "Öz Değerlendirme Formu (G11-T1-P78-TABLE01) Öğretmen Kontrol Özeti",
                 "section_keys": [
-                  "Üç Yaz"
+                  "Öz Değerlendirme Formu (G11-T1-P78-TABLE01) Öğretmen Kontrol Özeti"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -15209,9 +15354,21 @@
                 "quote_indexes": []
               },
               {
-                "id": "İki Sor",
+                "id": "Üç Yaz (Temayla İlgili Öğrenilen Üç Bilgi — Alternatifli Örnekler)",
                 "section_keys": [
-                  "İki Sor"
+                  "Üç Yaz (Temayla İlgili Öğrenilen Üç Bilgi — Alternatifli Örnekler)"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0
+                ]
+              },
+              {
+                "id": "İki Sor (Merak Edilen Konularla İlgili İki Soru — Alternatifli Örnekler)",
+                "section_keys": [
+                  "İki Sor (Merak Edilen Konularla İlgili İki Soru — Alternatifli Örnekler)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -15219,14 +15376,16 @@
                 "quote_indexes": []
               },
               {
-                "id": "Bir Paylaş",
+                "id": "Bir Paylaş (Öğrenmekte Zorluk Çekilen Bir Konu — Alternatifli Örnekler)",
                 "section_keys": [
-                  "Bir Paylaş"
+                  "Bir Paylaş (Öğrenmekte Zorluk Çekilen Bir Konu — Alternatifli Örnekler)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  1
+                ]
               }
             ],
             "answer_text": {
@@ -15237,7 +15396,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Tema Çıkış Kartı — Üç Yaz · İki Sor · Bir Paylaş",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -15256,22 +15417,40 @@
           "entry_type": "performance_support",
           "printed_page": 78,
           "question_no": "Çıkış Kartı",
-          "prompt_summary": "Bir Diyeceğim Var teması için Üç Yaz - İki Sor - Bir Paylaş örneği",
-          "answer": "Aşağıdaki çıkış kartı yanıtları örnek biçimdir. Temada gerçekten öğrendiklerinizi, merak ettiğiniz konuları ve zorlandığınız bir noktayı kendi deneyiminize göre yazın.",
-          "guidance": "“Bir Paylaş” bölümünde öğrenciden öğrendiği bir görüşü değil, kitabın yönergesine uygun olarak öğrenmekte zorlandığı bir konuyu paylaşmasını isteyin. Cevap gerçekten öğrenciye göre değişmelidir.",
-          "source_locator": "basılı s.78 / PDF s.79 — Süreci Değerlendirebilme Çıkış Kartı",
+          "prompt_summary": "Bir Diyeceğim Var teması için Öz Değerlendirme Kontrolü ve Üç Yaz - İki Sor - Bir Paylaş örneği",
+          "answer": "Sayfa 78'de yer alan Öz Değerlendirme Formu'nun 8 maddelik öğretmen kontrol rehberi ile Tema Sonu Çıkış Kartı (Üç Yaz - İki Sor - Bir Paylaş) örnek yanıtları aşağıda sunulmuştur.",
           "answer_sections": {
-            "Üç Yaz": [
-              "İletişimde yalnız sözcüklerin değil; dinleme, tonlama, beden dili, bağlam ve zamanlamanın da etkili olduğunu öğrendim.",
-              "Mektup ile e-postanın benzer iletişim amaçlarına hizmet edebildiğini, fakat iletim kanalı ve teknik özellikler bakımından farklılaştığını öğrendim.",
-              "Bir talep veya bilgilendirme e-postasında amaç, alıcı, konu, üslup ve gerekçenin birbiriyle uyumlu olması gerektiğini öğrendim."
+            "Öz Değerlendirme Formu (G11-T1-P78-TABLE01) Öğretmen Kontrol Özeti": [
+              "1. Taslak oluşturma → Giriş, gelişme ve sonuç bölümlerinin planlanıp planlanmadığı kontrol edilir.",
+              "2. Ek belgeleri sınıflandırma → Metin, görsel ve işitsel eklerin amaca göre ayrıştırılıp ayrıştırılmadığına bakılır.",
+              "3. Alıcıya uygun dil ve üslup → Muhatabın konumuna göre sen/siz dili ve resmî/samimi üslup tutarlılığı denetlenir.",
+              "4. İşitsel ve görsel ögeler → Seçilen afiş, fotoğraf veya ses/video ekinin iletiyi destekleyip desteklemediği incelenir.",
+              "5. Söz varlığı kullanımı → Deyim, terim ve kelimelerin bağlama uygunluğu kontrol edilir.",
+              "6. Düşünceyi geliştirme yolları → Karşılaştırma, örneklendirme, tanık gösterme gibi yollardan yararlanılıp yararlanılmadığına bakılır.",
+              "7. İçeriğe uygun başlık → E-postanın 'Konu' satırının kısa, net ve içeriği yansıtıcı olup olmadığı kontrol edilir.",
+              "8. Özgün ve tutarlı üslup → Kalıp ifadelerin ötesinde öğrencinin kendi anlatım bütünlüğünü kurup kurmadığı değerlendirilir."
             ],
-            "İki Sor": [
-              "Dijital iletişimde kullanılan yeni söyleyiş biçimleri standart yazı dilini uzun vadede nasıl etkileyebilir?",
-              "Bir e-postanın hem kısa hem de yeterince açıklayıcı olması için hangi ölçütler kullanılabilir?"
+            "Üç Yaz (Temayla İlgili Öğrenilen Üç Bilgi — Alternatifli Örnekler)": [
+              "1. İletişimde yalnız sözcüklerin değil; dinleme, tonlama, beden dili, bağlam ve zamanlamanın da etkili olduğunu; ayrıca geleneksel Türk tiyatrosundan Karagöz oyununda Hacivat ile Karagöz arasındaki yanlış anlaşılmaların (söz oyunlarının) mizah ürettiğini öğrendim.",
+              "2. Mektup ile e-postanın benzer iletişim amaçlarına hizmet edebildiğini; her ikisinde de alıcıya (hedef kitleye) uygun hitap, dil, üslup ve plan gerekirken iletim kanalı, hız ve teknik özellikler bakımından farklılaştıklarını öğrendim.",
+              "3. Dilin canlı bir varlık olduğu için zamanla ses ve yazım bakımından değişime uğradığını; dijital iletişimde ve talep/bilgilendirme e-postalarında Türkçeyi bağlama uygun, bilinçli ve özenli kullanmak gerektiğini öğrendim."
             ],
-            "Bir Paylaş": "Mektup ve e-postada muhataba göre resmiyet düzeyini belirlerken hangi ifadelerin fazla samimi, hangilerinin gereğinden ağır kaldığını ayırt etmekte zorlandım."
-          }
+            "İki Sor (Merak Edilen Konularla İlgili İki Soru — Alternatifli Örnekler)": [
+              "1. Dijital iletişimde kullanılan yeni söyleyiş biçimleri standart yazı dilini uzun vadede nasıl etkileyebilir ve yazar/şair mektuplaşmaları edebiyat tarihini nasıl şekillendirmiştir?",
+              "2. Bir e-postanın hem kısa hem de yeterince açıklayıcı olması için hangi ölçütler kullanılabilir ve geleneksel sahne sanatlarımız (Karagöz, orta oyunu, meddah) dijital/çok modlu ortamlara özgünlüğünü kaybetmeden nasıl uyarlanabilir?"
+            ],
+            "Bir Paylaş (Öğrenmekte Zorluk Çekilen Bir Konu — Alternatifli Örnekler)": [
+              "Örnek 1: Mektup ve e-postada muhataba göre resmiyet düzeyini belirlerken hangi ifadelerin fazla samimi, hangilerinin gereğinden ağır kaldığını ayırt etmekte ve dil işlevlerini (koşul, gerekçelendirme) karşılaştırmalı ifadelerle birleştirmekte zorlandım.",
+              "Örnek 2: Karagöz oyunundaki Osmanlı Türkçesine ait bazı eski kelime ve tamlamaların (muammâ ta’lîk, zann-i âcizâne, tehi vb.) anlamlarını ilk okumada çözümlemekte başlangıçta zorlandım; ancak bağlamdan ve sözlükten yararlanarak bu güçlüğü aştım."
+            ]
+          },
+          "evidence_quotes": [
+            "Çıkış Kartı’nı Bir Diyeceğim Var! temasında yaptığınız çalışmalara göre doldurunuz.",
+            "Okuduğunuz temada öğrenmekte zorluk çektiğiniz bir konuyu paylaşınız."
+          ],
+          "explanation": "Sayfa 78, hem e-posta performans görevinin öz değerlendirme formunu hem de 1. Tema'nın genel çıkış kartını içerir.",
+          "guidance": "'Bir Paylaş' bölümünde öğrenciden öğrendiği bir görüşü değil, kitabın yönergesine uygun olarak öğrenmekte zorlandığı bir konuyu paylaşmasını isteyin. Cevap öğrenciye göre değişmelidir.",
+          "source_locator": "basılı s.78 / PDF s.79 — Süreci Değerlendirebilme: Öz Değerlendirme Formu ve Çıkış Kartı"
         },
         "content": {
           "lead": "Çıkış Kartı'nı Bir Diyeceğim Var! temasında yaptığınız çalışmalara göre doldurunuz.",
@@ -15494,6 +15673,16 @@
                   0,
                   1
                 ]
+              },
+              {
+                "id": "Çeldirici Analizi",
+                "section_keys": [
+                  "Çeldirici Analizi"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
               }
             ],
             "answer_text": {
@@ -15503,6 +15692,7 @@
           }
         },
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence",
           "explanation"
@@ -15530,15 +15720,21 @@
           "answer": "Doğru seçenek: D.",
           "answer_sections": {
             "Gerekçe": [
-              "Müşteri, kasiyerin “ibraz etmek” sözünü ses benzerliğiyle “itiraz etmek” biçiminde yanlış anlar.",
+              "Müşteri, kasiyerin 'ibraz etmek' (göstermek, sunmak) sözünü ses benzerliğiyle 'itiraz etmek' (karşı çıkmak) biçiminde yanlış anlar.",
               "Bu yanlış anlama, Karagöz oyunlarında bilmediği veya ağır bulduğu bir sözü ses benzerliğiyle başka bir sözcüğe çekerek farklı anlamlandırma yoluyla kurulan mizahla örtüşür."
+            ],
+            "Çeldirici Analizi": [
+              "A Seçeneği: Hacivat sinirli ve yanlışta ısrarcı bir tip değildir; bilgi görselinde 'öfkesine hâkim olabilen, anlayışlı' olarak tanımlanmıştır.",
+              "B ve C Seçenekleri: Sorunlara çözüm odaklı yaklaşmak, hoşgörülü ve sabırlı olmak, dilin inceliklerini ve görgü kurallarını bilmek Karagöz'ün değil Hacivat'ın özellikleridir.",
+              "E Seçeneği: Gölge oyununun yapısıyla ve bilgi görselindeki karakter özellikleriyle ilgisi yoktur."
             ]
           },
           "evidence_quotes": [
             "Lütfen ürünün faturasını ibraz edebilir misiniz?",
             "Bir şeye itiraz ettiğim yok hanımefendi!"
           ],
-          "explanation": "Sorunun çözümü için diyalogdaki ses benzerliğine dayalı yanlış anlama yeterlidir: “ibraz” sözü “itiraz” olarak anlaşılır. Karagöz mizahında da benzer biçimde sözcükler ses benzerliği üzerinden başka anlamlara çekilebilir. Burada sözcüklerin kökeni değil, yanlış anlama mekanizması önemlidir.",
+          "explanation": "Sorunun çözümü için diyalogdaki ses benzerliğine dayalı yanlış anlama yeterlidir: 'ibraz' sözü 'itiraz' olarak anlaşılır. Karagöz mizahında da benzer biçimde sözcükler ses benzerliği üzerinden başka anlamlara çekilebilir. Burada sözcüklerin kökeni değil, yanlış anlama mekanizması önemlidir.",
+          "guidance": "Öğrencilere bilgi görselindeki Karagöz ve Hacivat özelliklerini karşılaştırarak okutun; D seçeneğindeki 'ses benzerliğinden dolayı yanlış anlama' ifadesinin gölge oyunundaki muhavere mizahının temel unsuru olduğunu vurgulayın.",
           "source_locator": "basılı s.79 / PDF s.80 — 1. Tema Ölçme ve Değerlendirme soru 1"
         },
         "content": null
@@ -15569,7 +15765,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
                 "id": "3. Boşluk (Hacivat)",
@@ -15579,7 +15777,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  1
+                ]
               },
               {
                 "id": "4. Boşluk (Karagöz)",
@@ -15599,7 +15799,9 @@
           }
         },
         "reveal_order": [
+          "guidance",
           "answer",
+          "evidence",
           "explanation"
         ],
         "display_prompt": "Diyalogdaki boşluklara Karagöz ve Hacivat adlarını doğru sırayla yerleştiriniz.",
@@ -15622,15 +15824,20 @@
           "printed_page": 80,
           "question_no": "2",
           "prompt_summary": "Diyalogdaki boşluklara Karagöz ve Hacivat adlarını yerleştirme",
-          "answer": "Boşluklara yerleştirilecek adlar ve konuşma ipuçları şöyledir:",
-          "source_locator": "basılı s.80 / PDF s.81 — 1. Tema Ölçme ve Değerlendirme soru 2",
+          "answer": "Boşluklara sırasıyla yerleştirilecek adlar: 1. Hacivat, 2. Karagöz, 3. Hacivat, 4. Karagöz.",
           "answer_sections": {
-            "1. Boşluk (Hacivat)": "Sonra efendim, alışveriş yapmak için sokağa çıktım... Beni de kavgacılardan sanıp karakola götürdüler. Oradan da doğru hapishaneye... (Başına gelen talihsizliği ayrıntısıyla ve 'efendim' hitabıyla anlatan kişi Hacivat'tır.)",
+            "1. Boşluk (Hacivat)": "Sonra efendim, alışveriş yapmak için sokağa çıktım... Beni de kavgacılardan sanıp karakola götürdüler. Oradan da doğru hapishaneye... (Başına gelen talihsizliği ayrıntısıyla, 'efendim' hitabıyla ve kavgayı ayırma niyetiyle anlatan kişi Hacivat'tır.)",
             "2. Boşluk (Karagöz)": "Oh oh! Çok sevindim! Güle güle oturunuz, içinden hiç çıkmayınız! (Hacivat'ın hapse girmesini yeni bir eve taşınmış gibi anlayıp tebrik eden, ters anlama nüktesini üreten kişi Karagöz'dür.)",
             "3. Boşluk (Hacivat)": "Aman kardeş, sen ne diyorsun? Beni hapse attılar. (Karagöz'ün yanlış anlamasını düzeltmeye çalışan kişi Hacivat'tır.)",
             "4. Boşluk (Karagöz)": "İyi ya, oh oh! Çok sevindim! Güle güle… (Karagöz, yanlış anlamaya dayalı mizahi karşılığını sürdürür.)"
           },
-          "explanation": "Diyalogda Hacivat hapishaneye düştüğünü anlatırken Karagöz “Güle güle oturunuz” gibi sözlerle durumu başka bir bağlama çekerek ters anlama mizahı oluşturur. Boşlukları belirlerken kişilerin bu konuşma işlevleri esas alınmalıdır."
+          "evidence_quotes": [
+            "Oh oh! Çok sevindim! Güle güle oturunuz, içinden hiç çıkmayınız!",
+            "Aman kardeş, sen ne diyorsun? Beni hapse attılar."
+          ],
+          "explanation": "Diyalogda Hacivat hapishaneye düştüğünü anlatırken Karagöz 'Güle güle oturunuz, içinden hiç çıkmayınız!' gibi yeni bir eve taşınan kişiye söylenen kalıp sözlerle durumu başka bir bağlama çekerek ters anlama mizahı oluşturur.",
+          "guidance": "Bazı öğrenciler s.79'daki bilgi görselinde Karagöz için geçen 'ikide bir zor durumlara düşer' ifadesine odaklanarak hapse düşen ilk konuşmacıyı Karagöz sanabilir. İkinci replikteki 'Oh oh! Çok sevindim! Güle güle oturunuz, içinden hiç çıkmayınız!' cümlesini tekrar okutarak 'Görgü ve bilgi sahibi, anlayışlı Hacivat hapse giren arkadaşına böyle söyler mi?' sorusuyla kalıp sözü bağlam dışı kullanan kişinin Karagöz olduğunu fark ettirin.",
+          "source_locator": "basılı s.80 / PDF s.81 — 1. Tema Ölçme ve Değerlendirme soru 2"
         },
         "content": null
       },
@@ -15643,9 +15850,9 @@
           "web": {
             "units": [
               {
-                "id": "Kelime ve Bilmece Yarışmaları",
+                "id": "1. Televizyon ve Dijital Ortamdaki Bilgi / Kelime Yarışmaları",
                 "section_keys": [
-                  "Kelime ve Bilmece Yarışmaları"
+                  "1. Televizyon ve Dijital Ortamdaki Bilgi / Kelime Yarışmaları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -15653,24 +15860,28 @@
                 "quote_indexes": []
               },
               {
-                "id": "Zekâ ve Mantık Bulmacaları",
+                "id": "2. Gazete, Dergi ve Mobil Uygulamalardaki Bulmacalar ile Zekâ Soruları",
                 "section_keys": [
-                  "Zekâ ve Mantık Bulmacaları"
+                  "2. Gazete, Dergi ve Mobil Uygulamalardaki Bulmacalar ile Zekâ Soruları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  1
+                ]
               },
               {
-                "id": "Şifre / İpucu Temelli Oyunlar",
+                "id": "3. Kültür Etkinliklerindeki 'Hazine Avı', 'Kaçış Oyunu (Escape Room)' ve Münazara/Şiir Atışmaları",
                 "section_keys": [
-                  "Şifre / İpucu Temelli Oyunlar"
+                  "3. Kültür Etkinliklerindeki 'Hazine Avı', 'Kaçış Oyunu (Escape Room)' ve Münazara/Şiir Atışmaları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               }
             ],
             "answer_text": {
@@ -15682,6 +15893,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "explanation"
         ],
         "display_prompt": "Muamma geleneğinin günümüzdeki karşılıklarına örnek verip benzerliği açıklayınız.",
@@ -15704,20 +15916,325 @@
           "printed_page": 80,
           "question_no": "3",
           "prompt_summary": "Muamma geleneğinin günümüzdeki karşılıkları",
-          "answer": "Metnin sözlükçesine göre “muammâ ta'lîk”, âşıklık geleneğinde manzum bilmece yazmaktır; Çelebi muamma asarak âşıkları sınamak ister. Bunun günümüzde birebir devamı olduğunu söylemek yerine, zekâ sınama, sözcüklerle düşünme ve topluluk önünde çözme gibi benzer işlevler taşıyan güncel örneklerle karşılaştırma yapılabilir.",
-          "guidance": "Öğrenciden yalnız güncel bir oyun adı vermesini değil, seçtiği örneğin muammayla hangi işlev bakımından benzediğini açıklamasını isteyin. “Günümüzde aynen sürmektedir” gibi tarihsel süreklilik iddiaları kurmayın; doğrudan devam ile işlevsel benzerliği ayırın.",
-          "source_locator": "basılı s.80 / PDF s.81 — 1. Tema Ölçme ve Değerlendirme soru 3",
+          "answer": "Metnin sözlükçesine göre 'muammâ ta'lîk', âşıklık geleneğinde bir kahvehanenin veya meydanın duvarına asılan, çözülmesi ustalık gerektiren manzum (şiir biçiminde) bilmecedir; Çelebi muamma asarak âşıkları sınamak ve ödüllendirmek ister. Bunun günümüzde birebir devamı olduğunu söylemek yerine; zekâ sınama, sözcüklerle düşünme, ipuçlarından gizli cevaba ulaşma ve topluluk önünde çözme gibi benzer işlevler taşıyan güncel yarışma, bulmaca ve oyun örnekleriyle karşılaştırma yapılabilir.",
           "answer_sections": {
-            "Kelime ve Bilmece Yarışmaları": "Sözcük bilgisi, çağrışım ve hızlı düşünme gerektiren yarışmalar; muammanın söz ustalığı ve topluluk önünde çözme yönleriyle benzerlik kurulabilecek güncel örneklerdir.",
-            "Zekâ ve Mantık Bulmacaları": "İpucu, sözcük veya sembollerden hareketle çözüme ulaşmayı gerektiren bulmacalar, muammanın akıl yürütme ve gizli anlamı çözme yönleriyle karşılaştırılabilir.",
-            "Şifre / İpucu Temelli Oyunlar": "Kaçış oyunu veya şifre çözme etkinlikleri, doğrudan muamma geleneğinin devamı değildir; ancak ipuçlarından gizli cevaba ulaşma bakımından daha dolaylı bir benzerlik kurulabilir."
+            "1. Televizyon ve Dijital Ortamdaki Bilgi / Kelime Yarışmaları": "İpuçlarından hareketle gizli bir kavramı veya kelimeyi bulmaya dayanan televizyon programları (örneğin Kelime Oyunu, Lingo) ve genel kültür yarışmaları; muammanın söz ustalığı, hızlı düşünme, topluluk önünde sınanma ve ödül kazanma yönleriyle işlevsel benzerlik kurulabilecek güncel örneklerdir.",
+            "2. Gazete, Dergi ve Mobil Uygulamalardaki Bulmacalar ile Zekâ Soruları": "Gazetelerin bulmaca ekleri, edebî dergilerdeki ödüllü çengel/kare bulmacalar ve telefonlardaki kelime/mantık oyunları (örneğin Wordle, Sudoku, şifreli sözcük bilmeceleri), muammanın akıl yürütme ve gizli anlamı çözme işleviyle karşılaştırılabilir.",
+            "3. Kültür Etkinliklerindeki 'Hazine Avı', 'Kaçış Oyunu (Escape Room)' ve Münazara/Şiir Atışmaları": "Okullarda, festivallerde veya sosyal medyada panolara/sayfalara asılan şifreli dörtlüklerin ve edebî ipuçlarının çözülmesine dayalı ödüllü 'hazine avı' etkinlikleri, kaçış odası (Escape Room) oyunları veya halk âşıklarının/gençlerin söz ustalığı yarışmaları; doğrudan muamma geleneğinin tarihsel devamı olmasa da ipuçlarından gizli cevaba ulaşma ve hüner sergileme bakımından benzerlik kurulabilecek örneklerdir."
           },
-          "explanation": "Kitap bu soruda âşıklık geleneğindeki manzum bilmece anlamını esas alır. Divan edebiyatındaki muamma ayrı bir gelenektir; gerekiyorsa ek bilgi olarak verilebilir, fakat ana cevabın yerine geçirilmemelidir."
+          "evidence_quotes": [
+            "Buraya bir muammâ ta’lîkıyle bu mahalde âşıkların imtihan olmasını arzu ediyorum.",
+            "muammâ ta’lîk: Âşıklık geleneğinde manzum bilmece"
+          ],
+          "explanation": "Kitap bu soruda âşıklık geleneğindeki manzum bilmece anlamını esas alır (Divan edebiyatındaki isim gizlemeye dayalı muamma ayrı bir gelenektir; gerekiyorsa ek bilgi olarak verilebilir). Somut oyun ve yarışma örnekleri (Kelime Oyunu, Lingo, Wordle, Sudoku, kaçış odası, hazine avı) öğrencilerin işlevsel benzerliği kavramasını kolaylaştırır.",
+          "guidance": "Öğrenciden yalnız güncel bir oyun adı (ör. Kelime Oyunu, Wordle) vermesini değil, seçtiği örneğin muammayla hangi işlev bakımından benzediğini açıklamasını isteyin. 'Günümüzde aynen sürmektedir' gibi tarihsel süreklilik iddiaları kurmayın; doğrudan devam ile işlevsel benzerliği ayırın.",
+          "source_locator": "basılı s.80 / PDF s.81 — 1. Tema Ölçme ve Değerlendirme soru 3"
         },
         "content": null
       },
       {
         "id": "s81-q4",
+        "layout": "question",
+        "density": "comfortable",
+        "sections_layout": "grid",
+        "presentation": {
+          "web": {
+            "units": [
+              {
+                "id": "Gerekçe",
+                "section_keys": [
+                  "Gerekçe"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "Çeldirici Analizi",
+                "section_keys": [
+                  "Çeldirici Analizi"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              }
+            ],
+            "answer_text": {
+              "mode": "omit",
+              "reason": "Yapılandırılmış cevap bölümleri toplu cevabın yerine açılır."
+            }
+          }
+        },
+        "reveal_order": [
+          "guidance",
+          "answer",
+          "evidence",
+          "explanation"
+        ],
+        "display_prompt": "Çelebi'nin Hacivat'ın yanına geliş amacını belirleyiniz.",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T01-S0120",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "81",
+          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+          "task_type": "QUESTION",
+          "prompt": "Soru 4 — Çelebi'nin Hacivat'ın yanına geliş amacını belirleyiniz.",
+          "prompt_mode": "VERIFIED_SUMMARY",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.81 / PDF s.82 — soru 4",
+          "source_status": "VERIFIED"
+        },
+        "answer": {
+          "question_id": "T1-P81-Q04",
+          "entry_type": "question_answer",
+          "printed_page": 81,
+          "question_no": "4",
+          "prompt_summary": "Çelebi'nin Hacivat'ın yanına geliş amacı",
+          "answer": "Doğru seçenek: C — Bir şiir yarışması düzenlemek.",
+          "answer_sections": {
+            "Gerekçe": [
+              "Çelebi, mahalleye bir muamma asıp âşıklarla şairlerin katılacağı bir şiir ve bilmece yarışması düzenlemek ister.",
+              "Hacivat'tan şair ahbaplarını haberdar etmesini ve gerekli masrafı belirlemesini ister."
+            ],
+            "Çeldirici Analizi": [
+              "Çelebi'nin Karagöz'ü sorması (A) veya yarışma masrafları için Hacivat'a yirmi lira bırakması (B), gelişin temel amacı değil yarışma organizasyonunun birer ayrıntısıdır; D ve E seçeneklerine ise metinde değinilmemiştir."
+            ]
+          },
+          "evidence_quotes": [
+            "Buraya bir muammâ ta’lîkıyle bu mahalde âşıkların imtihan olmasını arzu ediyorum.",
+            "Bir muammâ asmak için ne kadar para lâzım?",
+            "Azdan az dört âşık gelse yirmi lira masârif olur."
+          ],
+          "explanation": "Doğru seçeneği belirlemek için metindeki doğrudan kanıt yeterlidir: Çelebi bir muamma asmak, âşıkları imtihan etmek ve bunun için gerekli düzenlemeyi yapmak istemektedir.",
+          "guidance": "Öğrencilerin metinde Çelebi'nin geliş amacını doğrudan açıkladığı cümleyi bularak ana amaç ile yardımcı ayrıntıları ayırt etmelerini sağlayın.",
+          "source_locator": "basılı s.80-81 / PDF s.81-82 — 1. Tema Ölçme ve Değerlendirme soru 4"
+        },
+        "content": null
+      },
+      {
+        "id": "s81-q5",
+        "layout": "structure",
+        "density": "compact",
+        "sections_layout": "grid",
+        "presentation": {
+          "web": {
+            "units": [
+              {
+                "id": "Rol Değişimi İçin Ölçütler",
+                "section_keys": [
+                  "Rol Değişimi İçin Ölçütler"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0
+                ]
+              },
+              {
+                "id": "Örnek Başlangıç",
+                "section_keys": [
+                  "Örnek Başlangıç"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Şairlik Metnine Uyarlanmış Genişletilmiş Örnek Diyalog",
+                "section_keys": [
+                  "Şairlik Metnine Uyarlanmış Genişletilmiş Örnek Diyalog"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              }
+            ],
+            "answer_text": {
+              "mode": "omit",
+              "reason": "Yapılandırılmış cevap bölümleri toplu cevabın yerine açılır."
+            }
+          }
+        },
+        "reveal_order": [
+          "guidance",
+          "answer",
+          "evidence",
+          "explanation"
+        ],
+        "display_prompt": "Çelebi ile Karagöz'ün rollerini değiştirerek kısa bir diyalog oluşturunuz.",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T01-S0121",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "81",
+          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+          "task_type": "QUESTION",
+          "prompt": "Soru 5 — Çelebi ile Karagöz'ün rollerini değiştirerek kısa bir diyalog oluşturunuz.",
+          "prompt_mode": "VERIFIED_SUMMARY",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.81 / PDF s.82 — soru 5",
+          "source_status": "VERIFIED"
+        },
+        "answer": {
+          "question_id": "T1-P81-Q05",
+          "entry_type": "performance_support",
+          "printed_page": 81,
+          "question_no": "5",
+          "prompt_summary": "Çelebi ile Karagöz'ün rollerini değiştirerek kısa diyalog oluşturma",
+          "answer": "Rol değişiminde Karagöz daha ölçülü, kibar ve eğitimli bir söyleyiş kullanırken Çelebi ses benzerliğine dayalı yanlış anlamalar yapabilir. Aşağıdaki başlangıç ve diyalog örnektir; özgün repliklerle tamamlanabilir.",
+          "answer_sections": {
+            "Rol Değişimi İçin Ölçütler": [
+              "Karagöz bu kez daha ölçülü, kibar ve görece eğitimli bir dil kullansın (veya yarışmayı düzenleyen kibar muhatap konumuna geçsin).",
+              "Çelebi ise bir sözü ses benzerliğiyle başka anlama çekerek yanlış anlasın ve içeriden/pencereden müdahale etsin.",
+              "Yanlış anlama kısa bir mizahi çatışma oluştursun.",
+              "Diyalogda iki tipin alışılmış özelliklerinin tersine çevrildiği anlaşılabilsin."
+            ],
+            "Örnek Başlangıç": [
+              "KARAGÖZ — Hoş geldiniz efendim. Sizi burada görmekten memnun oldum.",
+              "ÇELEBİ — Ne dedin, “memur oldum” mu? Ben memur falan olmadım!",
+              "KARAGÖZ — “Memnun oldum” dedim efendim; sizi gördüğüme sevindiğimi söylüyorum."
+            ],
+            "Şairlik Metnine Uyarlanmış Genişletilmiş Örnek Diyalog": [
+              "HACİVAT — Hoş geldiniz Karagöz Beyefendi, safâlar getirdiniz!",
+              "KARAGÖZ — Hoş bulduk Hacivat Efendi, safâda dâim olunuz, afiyettesinizdir inşallah.",
+              "ÇELEBİ — (Pencereden.) Aaa! 'Vefa’da dayım ol' diyor, ne kadar tuhaf bir temenni!",
+              "HACİVAT — Efendim, gelişiniz boşuna değildir; hayırdır inşallah, ne arzu edersiniz?",
+              "KARAGÖZ — Rica ederim Hacivat Efendi, bu mahalde bir muamma tertip edip âşıkları ve şairleri imtihan etmek arzusundayım. Ahbaplarınız arasında mahir bir şair var mıdır?",
+              "ÇELEBİ — (İçeriden.) Fesübhanallah! 'Mahallede bakır bir şair var mıdır?' diyor! Şair bakırdan mı olurmuş?",
+              "KARAGÖZ — 'Bakır' değil Çelebi Efendi, 'mahir' yani usta şair dedim! Buyurunuz Hacivat Efendi, şu yirmi lirayı masraflar için kabul ediniz; ben diğer şairlere haber vereyim."
+            ]
+          },
+          "evidence_quotes": [
+            "5. Çelebi ile Karagöz’ün rollerini değiştirerek diyaloglardan oluşan kısa bir metin oluşturunuz."
+          ],
+          "explanation": "Bu etkinlikte öğrenciler, Karagöz oyunundaki tip özelliklerini (kibar/ölçülü İstanbul Türkçesi ile ses benzerliğine dayalı yanlış anlamayı) tersine çevirerek yeniden üretirler.",
+          "guidance": "Bu bir ölçme sorusudur; hazır diyaloğu nihai cevap olarak kopyalatmayın. Özellikle yönlendirmeye ihtiyaç duyan öğrenciler için ölçütleri ve kısa başlangıç modelini kullanın; fakat son üründe öğrencinin kendi kelime oyununu veya yanlış anlama örneğini üretmesini isteyin.",
+          "source_locator": "basılı s.81 / PDF s.82 — 1. Tema Ölçme ve Değerlendirme soru 5"
+        },
+        "content": null
+      },
+      {
+        "id": "s81-q6",
+        "layout": "comparison",
+        "density": "compact",
+        "sections_layout": "grid",
+        "presentation": {
+          "web": {
+            "units": [
+              {
+                "id": "Seçilebilecek Örnek Sanatçı ve Tipleme Havuzu",
+                "section_keys": [
+                  "Seçilebilecek Örnek Sanatçı ve Tipleme Havuzu"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              },
+              {
+                "id": "Karşılaştırma İçin 6 Temel Ölçüt",
+                "section_keys": [
+                  "Karşılaştırma İçin 6 Temel Ölçüt"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0
+                ]
+              },
+              {
+                "id": "Doğrudan Kullanılabilecek Kapsamlı Sözlü Sunum Örneği (Ferhan Şensoy / Kemal Sunal Tiplemeleri Üzerinden)",
+                "section_keys": [
+                  "Doğrudan Kullanılabilecek Kapsamlı Sözlü Sunum Örneği (Ferhan Şensoy / Kemal Sunal Tiplemeleri Üzerinden)"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": []
+              }
+            ],
+            "answer_text": {
+              "mode": "omit",
+              "reason": "Yapılandırılmış cevap bölümleri toplu cevabın yerine açılır."
+            }
+          }
+        },
+        "reveal_order": [
+          "guidance",
+          "answer",
+          "evidence",
+          "explanation"
+        ],
+        "display_prompt": "Karagöz'ü günümüzden bir mizah/tiyatro sanatçısıyla benzerlik, farklılık ve toplumsal etki bakımından karşılaştırınız.",
+        "display_prompt_mode": "VERIFIED_SUMMARY",
+        "source": {
+          "source_record_id": "T01-S0122",
+          "theme_id": "TEMA_01",
+          "printed_page_range": "81",
+          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
+          "task_type": "QUESTION",
+          "prompt": "Soru 6 — Karagöz'ü günümüzden bir mizah/tiyatro sanatçısıyla benzerlik, farklılık ve toplumsal etki bakımından karşılaştırınız.",
+          "prompt_mode": "VERIFIED_SUMMARY",
+          "rights_mode": "DERIVED_ACTIVITY",
+          "source_locator": "basılı s.81 / PDF s.82 — soru 6",
+          "source_status": "VERIFIED"
+        },
+        "answer": {
+          "question_id": "T1-P81-Q06",
+          "entry_type": "performance_support",
+          "printed_page": 81,
+          "question_no": "6",
+          "prompt_summary": "Karagöz'ü günümüzden mizahi bir sanatçıyla karşılaştırma",
+          "answer": "Karagöz'ü yakın dönem veya günümüz Türk tiyatro ve sahne sanatlarından seçeceğiniz bir mizah sanatçısı (örneğin Ferhan Şensoy, Nejat Uygur, Zeki Alasya - Metin Akpınar, Rasim Öztekin, Kemal Sunal veya güncel bir tiyatro sanatçısı) ya da onun belirli bir oyunu/rolüyle karşılaştırın. Seçiminizle ilgili somut eser veya rol bilgisi kullanın; sanatçının gerçek kişiliği ile canlandırdığı kurmaca tiplemeyi birbirine karıştırmayın.",
+          "answer_sections": {
+            "Seçilebilecek Örnek Sanatçı ve Tipleme Havuzu": [
+              "Geleneksel Türk tiyatrosunun 'kavuk' ve tuluat (doğaçlama) mirasını modern sahneye taşıyan ustalar: Ferhan Şensoy (ör. Ferhangi Şeyler, Şahları da Vururlar), Rasim Öztekin, Münir Özkul, Hasan Kaçan.",
+              "Türk tiyatrosunda doğaçlama, yanlış anlama ve toplumsal hiciv ustaları: Nejat Uygur (ör. Cibali Karakolu, Süt Kardeşler), Zeki Alasya - Metin Akpınar ikilisi (ör. Devekuşu Kabare oyunları: Yasaklar, Deliler), Demet Akbağ, Yılmaz Erdoğan, Ata Demirer.",
+              "Tiyatrodan sinemaya uzanan halk tipi örnekleri: Kemal Sunal (Sanatçının kendisi ile canlandırdığı saf, doğal ve hazırcevap 'Şaban' tiplemesi arasındaki ayrım gözetilerek)."
+            ],
+            "Karşılaştırma İçin 6 Temel Ölçüt": [
+              "1. Mizahın kaynağı: Yanlış anlama, kelime oyunu, durum komiği, hiciv, karakter çatışması vb.",
+              "2. Dil ve üslup: Halk dili, ağız, hazırcevaplık, ironik söyleyiş, sözcük oyunları, doğrudan seyirciye seslenme vb.",
+              "3. Sahneleme biçimi: Gölge perdesi (iki boyutlu tasvir) ile canlı oyunculuk/dekor/ışık gibi araçların farkı.",
+              "4. Tip ve karakter kullanımı: Karagöz'ün kalıplaşmış geleneksel bir tip oluşuyla seçilen modern oyundaki rol/karakter yapısının karşılaştırılması.",
+              "5. Toplumsal eleştiri: Hangi toplumsal durumların mizah yoluyla görünür kılındığı.",
+              "6. Seyirciyle ilişki: Doğrudanlık, güncellik, doğaçlama (tuluat) ve etkileşim."
+            ],
+            "Doğrudan Kullanılabilecek Kapsamlı Sözlü Sunum Örneği (Ferhan Şensoy / Kemal Sunal Tiplemeleri Üzerinden)": {
+              "Benzer Yönleri": [
+                "1. Halkın İçinden Olma ve Doğallık: Tıpkı Karagöz gibi, geleneksel tiyatromuzun kavuğunu taşıyan Ferhan Şensoy ve Rasim Öztekin gibi ustaların sahnedeki tavrı ya da Kemal Sunal'ın canlandırdığı Şaban tiplemesi halkın içinden gelen, samimi, özü sözü bir ve gösterişten uzak insan özelliğini yansıtır.",
+                "2. Dil ve Yanlış Anlama Komiği: Karagöz'ün yabancı ve süslü kelimeleri yanlış anlayarak veya hazırcevaplıkla gülünçlük yaratması gibi, günümüz mizah sanatçıları da bürokratik dili, yapmacık kibarlığı ve toplumsal çelişkileri hazırcevaplıkla, kelime oyunlarıyla ve saf görünüşlü zekâyla eleştirirler.",
+                "3. Zorluklar Karşısında Neşeyi Koruma: Her ikisinde de kahramanlar sık sık zor durumlara düşmelerine rağmen sonunda doğallıkları ve haklılıkları sayesinde güçlüklerin üstesinden gelirler."
+              ],
+              "Farklı Yönleri": [
+                "1. Sahneleme ve Tekniği: Karagöz, perde arkasında tek bir sanatçı (hayalî/hayalbaz) tarafından oynatılan iki boyutlu bir tasvir (gölge oyunu) iken; günümüz tiyatro sanatçısı sahnede kendi bedeni, canlı sesi, jest ve mimikleriyle oyunculuk sergiler.",
+                "2. Metin Yapısı: Karagöz tamamen doğaçlamaya (tuluata) ve geleneksel kalıp bölümlere (mukaddime, muhavere, fasıl, bitiş) dayanırken; modern tiyatro sanatçısı çoğunlukla yazılı bir tiyatro metni veya senaryo üzerinden hareket eder."
+              ],
+              "Toplum Üzerindeki Etkileri": "Hem Karagöz hem de günümüzün usta mizah sanatçıları 'güldürürken düşündürme' işlevini yerine getirirler. Toplumun aksayan yönlerini, iletişim kopukluklarını ve yapmacıklığı mizahın yumuşatıcı diliyle eleştirerek toplumsal farkındalık oluştururlar; aynı zamanda ortak bir gülme kültürü yaratarak toplumsal dayanışmayı ve psikolojik rahatlamayı sağlarlar."
+            }
+          },
+          "evidence_quotes": [
+            "6. Karagöz ile günümüzde mizahi özellikleriyle ön plana çıkmış bir tiyatro sanatçısını benzer ve farklı yönlerini ortaya çıkaracak şekilde karşılaştırınız. Bu kişilerin toplum üzerindeki etkisine dair görüşlerinizi sözlü olarak açıklayınız."
+          ],
+          "explanation": "Soru, geleneksel gölge oyununun mizah ve iletişim kodlarını çağdaş tiyatro/sahne sanatçılarıyla karşılaştırarak öğrencinin sözlü anlatım ve sentez becerisini geliştirmeyi amaçlar.",
+          "guidance": "Önce sanatçı ve somut eser/rol seçtirin. Ardından her yargı için 'Bu özelliği hangi eser/sahne gösteriyor?' sorusunu sorun. Sanatçı ile onun canlandırdığı karakteri (ör. Kemal Sunal ile Şaban tiplemesini) birbirine karıştırmamalarını hatırlatın.",
+          "source_locator": "basılı s.81 / PDF s.82 — 1. Tema Ölçme ve Değerlendirme soru 6"
+        },
+        "content": null
+      },
+      {
+        "id": "s81-q7",
         "layout": "question",
         "density": "comfortable",
         "sections_layout": "grid",
@@ -15746,252 +16263,7 @@
           }
         },
         "reveal_order": [
-          "answer",
-          "evidence",
-          "explanation"
-        ],
-        "display_prompt": "Çelebi'nin Hacivat'ın yanına geliş amacını belirleyiniz.",
-        "display_prompt_mode": "VERIFIED_SUMMARY",
-        "source": {
-          "source_record_id": "T01-S0120",
-          "theme_id": "TEMA_01",
-          "printed_page_range": "81",
-          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
-          "task_type": "QUESTION",
-          "prompt": "Soru 4 — Çelebi'nin Hacivat'ın yanına geliş amacını belirleyiniz.",
-          "prompt_mode": "VERIFIED_SUMMARY",
-          "rights_mode": "DERIVED_ACTIVITY",
-          "source_locator": "basılı s.81 / PDF s.82 — soru 4",
-          "source_status": "VERIFIED"
-        },
-        "answer": {
-          "question_id": "T1-P81-Q04",
-          "entry_type": "question_answer",
-          "printed_page": 81,
-          "question_no": "4",
-          "prompt_summary": "Çelebi'nin Hacivat'ın yanına geliş amacı",
-          "answer": "Doğru seçenek: C — mahallede şiir ve bilmece yarışması düzenlemek.",
-          "answer_sections": {
-            "Gerekçe": [
-              "Çelebi, mahalleye bir muamma asıp âşıklarla şairlerin katılacağı bir şiir ve bilmece yarışması düzenlemek ister.",
-              "Hacivat'tan şair ahbaplarını haberdar etmesini ve gerekli masrafı belirlemesini ister."
-            ]
-          },
-          "evidence_quotes": [
-            "Buraya bir muammâ ta’lîkıyle bu mahalde âşıkların imtihan olmasını arzu ediyorum.",
-            "Bir muammâ asmak için ne kadar para lâzım?",
-            "Azdan az dört âşık gelse yirmi lira masârif olur."
-          ],
-          "explanation": "Doğru seçeneği belirlemek için metindeki doğrudan kanıt yeterlidir: Çelebi bir muamma asmak, âşıkları imtihan etmek ve bunun için gerekli düzenlemeyi yapmak istemektedir. Ek gelenek bilgisi sorunun çözümü için zorunlu değildir.",
-          "source_locator": "basılı s.80-81 / PDF s.81-82 — 1. Tema Ölçme ve Değerlendirme soru 4"
-        },
-        "content": null
-      },
-      {
-        "id": "s81-q5",
-        "layout": "structure",
-        "density": "compact",
-        "sections_layout": "grid",
-        "presentation": {
-          "web": {
-            "units": [
-              {
-                "id": "Rol Değişimi İçin Ölçütler",
-                "section_keys": [
-                  "Rol Değişimi İçin Ölçütler"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Örnek Başlangıç",
-                "section_keys": [
-                  "Örnek Başlangıç"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Tamamlanacak Bölüm",
-                "section_keys": [
-                  "Tamamlanacak Bölüm"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              }
-            ],
-            "answer_text": {
-              "mode": "omit",
-              "reason": "Yapılandırılmış cevap bölümleri toplu cevabın yerine açılır."
-            }
-          }
-        },
-        "reveal_order": [
           "guidance",
-          "answer"
-        ],
-        "display_prompt": "Çelebi ile Karagöz'ün rollerini değiştirerek kısa bir diyalog oluşturunuz.",
-        "display_prompt_mode": "VERIFIED_SUMMARY",
-        "source": {
-          "source_record_id": "T01-S0121",
-          "theme_id": "TEMA_01",
-          "printed_page_range": "81",
-          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
-          "task_type": "QUESTION",
-          "prompt": "Soru 5 — Çelebi ile Karagöz'ün rollerini değiştirerek kısa bir diyalog oluşturunuz.",
-          "prompt_mode": "VERIFIED_SUMMARY",
-          "rights_mode": "DERIVED_ACTIVITY",
-          "source_locator": "basılı s.81 / PDF s.82 — soru 5",
-          "source_status": "VERIFIED"
-        },
-        "answer": {
-          "question_id": "T1-P81-Q05",
-          "entry_type": "performance_support",
-          "printed_page": 81,
-          "question_no": "5",
-          "prompt_summary": "Çelebi ile Karagöz'ün rollerini değiştirerek kısa diyalog oluşturma",
-          "answer": "Rol değişiminde Karagöz daha ölçülü, kibar ve eğitimli bir söyleyiş kullanırken Çelebi ses benzerliğine dayalı yanlış anlamalar yapabilir. Aşağıdaki başlangıç örnektir; diyalog özgün repliklerle tamamlanabilir.",
-          "guidance": "Bu bir ölçme sorusudur; hazır diyaloğu nihai cevap olarak kopyalatmayın. Özellikle yönlendirmeye ihtiyaç duyan öğrenciler için ölçütleri ve kısa başlangıç modelini kullanın; fakat son üründe öğrencinin kendi kelime oyununu veya yanlış anlama örneğini üretmesini isteyin.",
-          "source_locator": "basılı s.81 / PDF s.82 — 1. Tema Ölçme ve Değerlendirme soru 5",
-          "answer_sections": {
-            "Rol Değişimi İçin Ölçütler": [
-              "Karagöz bu kez daha ölçülü, kibar ve görece eğitimli bir dil kullansın.",
-              "Çelebi ise bir sözü ses benzerliğiyle başka anlama çekerek yanlış anlasın.",
-              "Yanlış anlama kısa bir mizahi çatışma oluştursun.",
-              "Diyalogda iki tipin alışılmış özelliklerinin tersine çevrildiği anlaşılabilsin."
-            ],
-            "Örnek Başlangıç": [
-              "KARAGÖZ — Hoş geldiniz efendim. Sizi burada görmekten memnun oldum.",
-              "ÇELEBİ — Ne dedin, “memur oldum” mu? Ben memur falan olmadım!",
-              "KARAGÖZ — “Memnun oldum” dedim efendim; sizi gördüğüme sevindiğimi söylüyorum."
-            ],
-            "Tamamlanacak Bölüm": "Çelebi'nin yeni bir yanlış anlamasıyla diyaloğu 2-4 replik daha sürdürün. Son replikte yanlış anlamayı açıklığa kavuşturabilir veya yeni bir mizahi durumla bitirebilirsiniz."
-          }
-        },
-        "content": null
-      },
-      {
-        "id": "s81-q6",
-        "layout": "comparison",
-        "density": "compact",
-        "sections_layout": "grid",
-        "presentation": {
-          "web": {
-            "units": [
-              {
-                "id": "Karşılaştırma İçin Ölçütler",
-                "section_keys": [
-                  "Karşılaştırma İçin Ölçütler"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Örnek Uygulama Yolu",
-                "section_keys": [
-                  "Örnek Uygulama Yolu"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Sonuç",
-                "section_keys": [
-                  "Sonuç"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              }
-            ],
-            "answer_text": {
-              "mode": "omit",
-              "reason": "Yapılandırılmış cevap bölümleri toplu cevabın yerine açılır."
-            }
-          }
-        },
-        "reveal_order": [
-          "guidance",
-          "answer"
-        ],
-        "display_prompt": "Karagöz'ü günümüzden bir mizah/tiyatro sanatçısıyla benzerlik, farklılık ve toplumsal etki bakımından karşılaştırınız.",
-        "display_prompt_mode": "VERIFIED_SUMMARY",
-        "source": {
-          "source_record_id": "T01-S0122",
-          "theme_id": "TEMA_01",
-          "printed_page_range": "81",
-          "book_heading": "1. Tema Ölçme ve Değerlendirme Soruları",
-          "task_type": "QUESTION",
-          "prompt": "Soru 6 — Karagöz'ü günümüzden bir mizah/tiyatro sanatçısıyla benzerlik, farklılık ve toplumsal etki bakımından karşılaştırınız.",
-          "prompt_mode": "VERIFIED_SUMMARY",
-          "rights_mode": "DERIVED_ACTIVITY",
-          "source_locator": "basılı s.81 / PDF s.82 — soru 6",
-          "source_status": "VERIFIED"
-        },
-        "answer": {
-          "question_id": "T1-P81-Q06",
-          "entry_type": "performance_support",
-          "printed_page": 81,
-          "question_no": "6",
-          "prompt_summary": "Karagöz'ü günümüzden mizahi bir sanatçıyla karşılaştırma",
-          "answer": "Karagöz'ü günümüzden seçeceğiniz tek bir mizahi tiyatro sanatçısı ya da onun belirli bir oyunu/rolüyle karşılaştırın. Seçiminizle ilgili somut eser veya rol bilgisi kullanın; bütün çağdaş mizah sanatçılarına aynı özellikleri yüklemeyin.",
-          "guidance": "Önce sanatçı ve somut eser/rol seçtirin. Ardından her yargı için “Bu özelliği hangi eser/sahne gösteriyor?” sorusunu sorun. Sanatçı ile onun canlandırdığı karakteri birbirine karıştırmayın; dış araştırma bilgilerini kaynaklandırın.",
-          "source_locator": "basılı s.81 / PDF s.82 — 1. Tema Ölçme ve Değerlendirme soru 6",
-          "answer_sections": {
-            "Karşılaştırma İçin Ölçütler": [
-              "Mizahın kaynağı: yanlış anlama, kelime oyunu, durum komiği, hiciv, karakter çatışması vb.",
-              "Dil ve üslup: halk dili, ağız, argo, ironik söyleyiş, sözcük oyunları, doğrudan seyirciye seslenme vb.",
-              "Sahneleme biçimi: gölge perdesi ile canlı oyunculuk/dekor/ışık gibi araçların farkı.",
-              "Tip ve karakter kullanımı: Karagöz'ün kalıplaşmış geleneksel bir tip oluşuyla seçilen modern oyundaki rol/karakter yapısının karşılaştırılması.",
-              "Toplumsal eleştiri: hangi toplumsal durumların mizah yoluyla görünür kılındığı.",
-              "Seyirciyle ilişki: doğrudanlık, güncellik, doğaçlama ve etkileşim."
-            ],
-            "Örnek Uygulama Yolu": "Örneğin Ferhan Şensoy’u seçerseniz, bütün sanat yaşamı hakkında genelleme yapmak yerine belirli bir oyun veya sahneden kanıtlarla dilini, mizah yöntemini ve toplumsal eleştirisini Karagöz’le karşılaştırın.",
-            "Sonuç": "Benzerlik ve farklılıklar seçtiğiniz sanatçıya veya esere göre değişir; tek bir zorunlu çağdaş karşılık yoktur."
-          }
-        },
-        "content": null
-      },
-      {
-        "id": "s81-q7",
-        "layout": "question",
-        "density": "comfortable",
-        "sections_layout": "grid",
-        "presentation": {
-          "web": {
-            "units": [
-              {
-                "id": "Gerekçe",
-                "section_keys": [
-                  "Gerekçe"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": [
-                  0,
-                  1
-                ]
-              }
-            ],
-            "answer_text": {
-              "mode": "omit",
-              "reason": "Yapılandırılmış cevap bölümleri toplu cevabın yerine açılır."
-            }
-          }
-        },
-        "reveal_order": [
           "answer",
           "evidence",
           "explanation"
@@ -16016,18 +16288,20 @@
           "printed_page": 81,
           "question_no": "7",
           "prompt_summary": "Tanpınar'ın Antalyalı genç kıza mektup yazma amacı",
-          "answer": "Doğru seçenek: E.",
+          "answer": "Doğru seçenek: E — Zihninde canlandırdığı hatıralarını aktararak muhatabıyla iletişim kurmak.",
           "answer_sections": {
             "Gerekçe": [
-              "Antalya'da okuyan liseli genç kızın mektubu Tanpınar'a kendi gençlik ve lise yıllarını hatırlatır.",
-              "Yazar, bu hatıraları ve o dönemin atmosferini paylaşmak amacıyla cevap verir."
+              "Antalya'da okuyan liseli genç kızın mektubu Tanpınar'a 1918-1919 yılları arasında Antalya'da geçirdiği kendi gençlik ve lise yıllarını hatırlatır.",
+              "Yazar, bu hatıraları ve o dönemin atmosferini paylaşarak muhatabıyla iletişim kurmak amacıyla cevap verir."
             ]
           },
           "evidence_quotes": [
+            "Yalnız lise talebesisiniz ve Antalya’dasınız. Yani 1918-1919 yılları arasında aşağı yukarı benim yaşadığım hayatı yaşıyorsunuz. İşte size bunun için yazıyorum.",
             "Bu mektubu biraz da çocukluğuma göndermiş gibiyim.",
             "Bana vaktiyle olduğum genç adamı hatırlattınız. Onun heyecan ve şaşkınlığını yaşadım."
           ],
-          "explanation": "E seçeneğini destekleyen temel nokta şudur: Antalya'da okuyan liseli genç kızın mektubu Tanpınar'a kendi çocukluk ve gençlik yıllarını hatırlatır; yazar da bu hatıra ve duyguları muhatabıyla paylaşır. Bunu doğrudan “Bu mektubu biraz da çocukluğuma göndermiş gibiyim.” ve “Bana vaktiyle olduğum genç adamı hatırlattınız.” sözleri destekler.",
+          "explanation": "E seçeneğini destekleyen temel nokta, Antalya'da okuyan liseli genç kızın mektubunun Tanpınar'a kendi çocukluk ve gençlik yıllarını hatırlatması ve yazarın da bu hatıra ve duyguları muhatabıyla paylaşmasıdır.",
+          "guidance": "Öğrencilerin metindeki 'İşte size bunun için yazıyorum.' ve 'Bu mektubu biraz da çocukluğuma göndermiş gibiyim.' cümlelerini bularak cevabı metinsel kanıtla doğrulamalarını sağlayın.",
           "source_locator": "basılı s.81 / PDF s.82 — 1. Tema Ölçme ve Değerlendirme soru 7"
         },
         "content": null
@@ -16041,15 +16315,15 @@
           "web": {
             "units": [
               {
-                "id": "Çalışkanlık",
+                "id": "Çalışkanlık (Emek ve Üretkenlik)",
                 "section_keys": [
-                  "Çalışkanlık"
+                  "Çalışkanlık (Emek ve Üretkenlik)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
                 "quote_indexes": [
-                  0
+                  1
                 ]
               },
               {
@@ -16063,9 +16337,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Yakınlık ve Şefkat",
+                "id": "Yakınlık, Değer Verme ve Şefkat",
                 "section_keys": [
-                  "Yakınlık ve Şefkat"
+                  "Yakınlık, Değer Verme ve Şefkat"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16080,7 +16354,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               }
             ],
             "answer_text": {
@@ -16092,7 +16368,8 @@
         "reveal_order": [
           "guidance",
           "answer",
-          "evidence"
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Mektubun kapanışındaki sözlerin gençlerle hangi değerler üzerinden nasıl bir iletişim kurduğunu açıklayınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -16114,18 +16391,20 @@
           "printed_page": 82,
           "question_no": "8",
           "prompt_summary": "Mektubun kapanışında gençlerle kurulmak istenen iletişim ve değerler",
-          "answer": "Mektubun kapanışı, genç muhataba sıcak bir sesleniş ve iyi dilek içerir.",
+          "answer": "Mektubun 'Mesut ve çalışkan olun, aziz yavrum.' kapanışı; genç muhataba çalışkanlık, mutluluk (iyi dilek), sevgi, şefkat ve tevazu değerleri üzerinden sıcak bir sesleniş ve yol gösterici bir iletişim sunar.",
+          "answer_sections": {
+            "Çalışkanlık (Emek ve Üretkenlik)": "“Çalışkan olun” sözü emek verme, disiplinli olma ve üretken olma yönünde açık ve yapıcı bir öğüt içerir.",
+            "İyi Dilek / Mutluluk": "“Mesut olun” sözü gençler için yalnız kuru bir başarı değil, aynı zamanda yaşama sevinciyle dolu mutlu ve huzurlu bir hayat sürmelerine yönelik temennidir.",
+            "Yakınlık, Değer Verme ve Şefkat": "“Aziz yavrum” hitabı ('aziz': değerli, sevgili) bir büyüğün sevgi, şefkat ve yakınlık taşıyan içten seslenişini oluşturur.",
+            "İletişim Tarzı": "Yazar, eserlerini henüz tam okumamış bir öğrenciye üstenci veya buyurgan bir dil kullanmak yerine; kendisine gençliğini hatırlattığı için teşekkür eden ('Minnettarım'), iyi dilek ve yakınlık taşıyan kuşatıcı bir kapanış kullanır."
+          },
           "evidence_quotes": [
+            "Bana vaktiyle olduğum genç adamı hatırlattınız. Onun heyecan ve şaşkınlığını yaşadım.",
             "Mesut ve çalışkan olun, aziz yavrum."
           ],
-          "source_locator": "basılı s.82 / PDF s.83 — 1. Tema Ölçme ve Değerlendirme soru 8",
-          "answer_sections": {
-            "Çalışkanlık": "“Çalışkan olun” sözü emek verme ve üretken olma yönünde açık bir öğüt içerir.",
-            "İyi Dilek / Mutluluk": "“Mesut olun” sözü muhatabın iyi ve mutlu bir hayat sürmesine yönelik temennidir.",
-            "Yakınlık ve Şefkat": "“Aziz yavrum” hitabı sevgi, şefkat ve yakınlık taşıyan içten bir sesleniş oluşturur.",
-            "İletişim Tarzı": "Yazar, öğüt verirken sert veya buyurgan bir dil yerine iyi dilek ve yakınlık taşıyan kısa bir kapanış kullanır."
-          },
-          "guidance": "Cevabı doğrudan kapanış ifadesindeki sözcüklere dayandırın. Metinde açıkça bulunmayan geniş edebî-felsefi bağlantıları veya yazarın kişiliğine ilişkin değerlendirmeleri zorunlu cevap hâline getirmeyin."
+          "explanation": "Kapanış cümlesi, kuşaklar arası iletişimde yargılayıcı olmak yerine şefkatli ve teşvik edici bir dil kurmanın önemini gösterir.",
+          "guidance": "Cevabı doğrudan kapanış ifadesindeki sözcüklere dayandırın. Metinde açıkça bulunmayan dış biyografik bilgileri zorunlu cevap hâline getirmeyin.",
+          "source_locator": "basılı s.81-82 / PDF s.82-83 — 1. Tema Ölçme ve Değerlendirme soru 8"
         },
         "content": null
       },
@@ -16138,9 +16417,33 @@
           "web": {
             "units": [
               {
-                "id": "Tanpınar’ın mektubunda",
+                "id": "Tanpınar’ın Mektubunda (Doğrudan İletişim)",
                 "section_keys": [
-                  "Tanpınar’ın mektubunda"
+                  "Tanpınar’ın Mektubunda (Doğrudan İletişim)"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  1
+                ]
+              },
+              {
+                "id": "Huzur Hakkında Verilen Çerçeve ve Etkin Okur Beklentisi",
+                "section_keys": [
+                  "Huzur Hakkında Verilen Çerçeve ve Etkin Okur Beklentisi"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  0
+                ]
+              },
+              {
+                "id": "Yaşantının Metne Dönüşümü",
+                "section_keys": [
+                  "Yaşantının Metne Dönüşümü"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16148,29 +16451,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Huzur hakkında verilen çerçeve",
+                "id": "Kanıt Sınırı",
                 "section_keys": [
-                  "Huzur hakkında verilen çerçeve"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Kanıt sınırı",
-                "section_keys": [
-                  "Kanıt sınırı"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Sonuç",
-                "section_keys": [
-                  "Sonuç"
+                  "Kanıt Sınırı"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16186,7 +16469,9 @@
         },
         "reveal_order": [
           "guidance",
-          "answer"
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Mektup ve Huzur örneğinden hareketle yazarın okuyucuya yaklaşımını ve metinle kurduğu iletişimi karşılaştırınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -16208,15 +16493,20 @@
           "printed_page": 82,
           "question_no": "9",
           "prompt_summary": "Tanpınar'ın mektubunda Huzur hakkında yaptığı açıklama ile mektupta muhataba seslenişini karşılaştırma",
-          "answer": "s.82’deki alıntı Huzur romanından alınmış bir parça değil, Tanpınar’ın mektubunda romanı hakkında yaptığı açıklamadır. Sayfadaki çerçeveye göre mektupta belirli muhataba doğrudan sesleniş; romanda ise karakterlerin iç dünyası üzerinden okurla ilişki kurma öne çıkar. Roman metni verilmediğinden daha ayrıntılı anlatım özellikleri bu alıntının kanıtı gibi sunulmamalıdır.",
-          "source_locator": "basılı s.82 / PDF s.83 — 1. Tema Ölçme ve Değerlendirme soru 9",
+          "answer": "Sayfa 82’deki alıntı Huzur romanından alınmış bir kurmaca parça değil, Tanpınar’ın mektubunda romanı hakkında yaptığı açıklamadır. Sayfadaki çerçeveye göre mektupta belirli muhataba doğrudan sesleniş; romanda ise yazarın yaşam izlenimlerinin (Antalya'daki kayalar, deniz, yıldızlı geceler) karakterlerin (Mümtaz'ın) iç dünyasına dönüştürülerek okurla ilişki kurulması öne çıkar.",
           "answer_sections": {
-            "Tanpınar’ın mektubunda": "Yazar, Antalyalı genç kıza doğrudan seslenir; alıntıda da Huzur romanındaki yer ve imgelerin Mümtaz’ın iç dünyasıyla ilişkisini muhatabına açıklar.",
-            "Huzur hakkında verilen çerçeve": "Kitabın yönergesi, romanda okurla ilişkinin karakterlerin iç dünyaları anlatılarak kurulduğunu söyler. Bu, romandan alınmış bir alıntı değil, mektupta roman üzerine yapılan açıklamadan ve sorunun çerçevesinden çıkarılan karşılaştırmadır.",
-            "Kanıt sınırı": "Bu sayfada Huzur’un roman metni yer almadığından anlatıcı, olay örgüsü veya anlatım tekniği hakkında alıntıyla doğrulanmayan ayrıntılar eklenmemelidir.",
-            "Sonuç": "Mektupta belirli muhataba doğrudan iletişim öne çıkar; kitapta verilen Huzur çerçevesi ise okurla ilişkinin karakterlerin iç dünyaları aracılığıyla kurulduğunu belirtir."
+            "Tanpınar’ın Mektubunda (Doğrudan İletişim)": "Yazar, Antalyalı genç kıza aracısız, birinci ağızdan ve doğrudan seslenir; alıntıda da Huzur romanındaki yer ve imgelerin (Hastahanebaşı’ndaki kayalar, Güvercinlik ve deniz) Mümtaz’ın iç dünyasıyla ilişkisini muhatabına açıklar.",
+            "Huzur Hakkında Verilen Çerçeve ve Etkin Okur Beklentisi": "Kitabın yönergesi, romanda okurla ilişkinin karakterlerin iç dünyaları anlatılarak kurulduğunu söyler. Ayrıca yazar 'Fakat dikkatli okumak, gizli bağları bulmak lâzımdır.' diyerek okuyucuyu pasif bir alıcı olarak görmediğini; metindeki sembolleri (dağlar, deniz, yıldızlı geceler) ve iç zemini çözecek dikkatli bir okur beklediğini ortaya koyar.",
+            "Yaşantının Metne Dönüşümü": "Yazar kişisel hatıralarını mektupta doğrudan bir paylaşım unsuru olarak kullanırken, romanda bu izlenimleri karakterin iç dünyasını ören estetik bir malzemeye dönüştürmüştür.",
+            "Kanıt Sınırı": "Bu sayfada Huzur’un roman metni yer almadığından anlatıcı, olay örgüsü veya anlatım tekniği hakkında alıntıyla doğrulanmayan ayrıntılar bu parçanın kanıtı gibi sunulmamalıdır."
           },
-          "guidance": "Alıntının Tanpınar’ın mektubundan olduğunu ve Huzur hakkında bilgi verdiğini açıkça ayırın; onu romandan alınmış bir pasaj gibi okutmayın. Öğrenciden mektuptaki doğrudan seslenişi alıntıyla göstermesini, romanla ilgili karşılaştırmayı ise kitabın verdiği çerçeveyle sınırlamasını isteyin. Huzur’un metni sunulmadığından romandaki anlatıcı ya da dil özellikleri için bu alıntıyı kanıt göstermeyin."
+          "evidence_quotes": [
+            "Huzur romanımda Antalya’dan bahis vardır. Hastahanebaşı’ndaki kayalar, Güvercinlik ve deniz, Mümtaz’ın iç hayatının âdeta örgüsünü yaparlar. Fakat dikkatli okumak, gizli bağları bulmak lâzımdır.",
+            "Tanpınar, mektubunda okuyucuyla doğrudan iletişime geçerken Huzur romanında okuyucuyla karakterlerin iç dünyalarını anlatarak iletişime geçer."
+          ],
+          "explanation": "Soru, öğretici/kişisel metin türü (mektup) ile kurmaca metin türü (roman) arasındaki iletişim farkını ve yazarın kişisel izlenimlerini iki türde nasıl farklı işlediğini değerlendirir.",
+          "guidance": "Alıntının Tanpınar’ın mektubundan olduğunu ve Huzur hakkında bilgi verdiğini açıkça ayırın; onu romandan alınmış bir pasaj gibi okutmayın. Öğrenciden mektuptaki doğrudan seslenişi alıntıyla göstermesini, romanla ilgili karşılaştırmayı ise kitabın verdiği çerçeveyle sınırlamasını isteyin.",
+          "source_locator": "basılı s.82 / PDF s.83 — 1. Tema Ölçme ve Değerlendirme soru 9"
         },
         "content": null
       },
@@ -16229,9 +16519,22 @@
           "web": {
             "units": [
               {
-                "id": "Gerekçe",
+                "id": "Gerekçe (C Seçeneğine Neden Ulaşılamaz?)",
                 "section_keys": [
-                  "Gerekçe"
+                  "Gerekçe (C Seçeneğine Neden Ulaşılamaz?)"
+                ],
+                "array_indices": [],
+                "evidence_sections": [],
+                "inline_quote_indexes": [],
+                "quote_indexes": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "id": "Diğer Seçeneklerin Metindeki Karşılıkları",
+                "section_keys": [
+                  "Diğer Seçeneklerin Metindeki Karşılıkları"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16248,6 +16551,7 @@
           }
         },
         "reveal_order": [
+          "guidance",
           "answer",
           "evidence",
           "explanation"
@@ -16272,19 +16576,28 @@
           "printed_page": 82,
           "question_no": "10",
           "prompt_summary": "Dijitalleşmenin iletişime etkileriyle ilgili metinden ulaşılamayan yargı",
-          "answer": "Doğru seçenek: C (metinden çıkarılamayan yargı).",
+          "answer": "Doğru seçenek C’dir: internetin yaygınlaşmasının insanları daha çok içerik üretmeye teşvik ettiği yargısına metinden ulaşılamaz.",
           "answer_sections": {
-            "Gerekçe": [
+            "Gerekçe (C Seçeneğine Neden Ulaşılamaz?)": [
               "Metin, 1980 ve 1990'larda internetin yaygınlaşmasını e-posta, anlık mesajlaşma ve forumlarla etkileşimin artmasına bağlar.",
-              "Bireylerin içerik üretip bilgi üreten konuma gelmesi ise 2000'lerin başındaki sosyal medya platformlarıyla ilişkilendirilir.",
-              "Bu nedenle içerik üretimindeki artışın internetin yaygınlaşmasıyla başladığı yargısı metinden çıkarılamaz."
+              "Bireylerin kendi içeriklerini üretip 'bilgi üreten' konuma gelmesi ise internetin yaygınlaşması cümlesine değil, 2000'lerin başındaki 'sosyal medya platformlarının ortaya çıkmasına' bağlanır.",
+              "Bu nedenle içerik üretimindeki artışın doğrudan internetin yaygınlaşmasıyla başladığı/teşvik edildiği yargısı metindeki kronolojik ayrımdan çıkarılamaz."
+            ],
+            "Diğer Seçeneklerin Metindeki Karşılıkları": [
+              "A Seçeneği: Bilgisayar ağları, e-posta, anlık mesajlaşma, forumlar ve sosyal medya ile insanlar arasındaki etkileşim artmıştır ('etkileşim kurmaya başlamıştır').",
+              "B Seçeneği: Matbaa ve teknolojik ilerlemelerle 'yazılı bilgi daha geniş kitlelere ulaşmaya başlamıştır'.",
+              "D Seçeneği: 3. paragrafta iletişim araçlarının (televizyon ve radyo) 'özellikle 2. Dünya Savaşı sonrası dönemde toplumların kültürel yapısını ve politik gündemlerini şekillendirmede büyük bir etkiye sahip olduğu' belirtilmiştir.",
+              "E Seçeneği: Radyo ve televizyon döneminde 'iletişim hala büyük ölçüde tek yönlü' iken, internet ve sosyal medyayla insanlar 'sadece bilgi tüketen değil, aynı zamanda bilgi üreten' konuma gelerek tek yönlü iletişimden kurtulmuştur."
             ]
           },
           "evidence_quotes": [
+            "20. yüzyılın ortalarında televizyon ve radyo, kitlesel iletişim araçları olarak önem kazanmış, bu araçlar, özellikle 2. Dünya Savaşı sonrası dönemde toplumların kültürel yapısını ve politik gündemlerini şekillendirmede büyük bir etkiye sahip olmuştur.",
+            "1980’ler ve 1990’larla birlikte internetin yaygınlaşması, iletişimde köklü bir değişimi beraberinde getirmiştir.",
             "2000’lerin başında sosyal medya platformlarının ortaya çıkmasıyla, bireylerin kendi içeriklerini üretme ve paylaşma yeteneği artmıştır."
           ],
-          "explanation": "Çeldirici seçeneklerin tamamı metinden doğrudan çıkarılabilir: A ('etkileşim kurmaya başlamıştır'), B ('yazılı bilgi daha geniş kitlelere ulaşmaya başlamıştır'), D ('özellikle 2. Dünya Savaşı sonrası dönemde toplumların kültürel yapısını ve politik gündemlerini şekillendirmede büyük bir etkiye sahip olmuştur'), E ('tüm bu gelişmelere rağmen iletişim hala büyük ölçüde tek yönlü gerçekleşmiştir... Artık insanlar, sadece bilgi tüketen değil, aynı zamanda bilgi üreten konumuna gelmiştir').",
-          "source_locator": "basılı s.82 / PDF s.83 — 1. Tema Ölçme ve Değerlendirme soru 10"
+          "explanation": "Soru, 4. paragraftaki internetin yaygınlaşması (etkileşim) ile sosyal medyanın doğuşu (içerik üretimi) arasındaki aşamalı farkı yoklamaktadır; ancak soru kökünün 'dijitalleşme' vurgusu nedeniyle D seçeneği de güçlü bir çeldirici niteliği taşımaktadır.",
+          "guidance": "Sınıfta C ve D seçenekleri arasında kalan öğrencilerin düşünme süreçlerini dinleyin: C'nin 4. paragraftaki kronolojik ayrıma (internet = etkileşim vs. sosyal medya = içerik üretimi) dayandığını; D'yi seçenlerin ise soru kökündeki 'dijitalleşme' daraltması ile 3. paragraftaki 'radyo ve televizyon' dönemi arasındaki farkı yakaladığını belirterek her iki okuma dikkatini de pedagojik olarak açıklayın.\n\nC ve D seçenekleri arasındaki öğretmen notu:\n- 1. Öğrenciler Neden D Seçeneğini Güçlü Bir Alternatif Olarak Görebilir? Soru kökünde özel olarak 'Dijitalleşmenin iletişim üzerindeki etkisiyle ilgili aşağıdakilerden hangisine ulaşılamaz?' denmektedir. Oysa D seçeneğindeki 'gündemin değişmesinde etkili olma' yargısı, metnin 3. paragrafında dijitalleşme dönemine değil, dijitalleşme öncesi geleneksel kitle iletişim araçlarına (20. yüzyıl ortası radyo ve televizyona) atfedilmiştir ('toplumların kültürel yapısını ve politik gündemlerini şekillendirmede büyük bir etkiye sahip olmuştur'). Ayrıca bu durum 'dijitalleşmenin iletişim üzerindeki etkisi' değil, kitle iletişim araçlarının siyaset/toplum üzerindeki etkisidir.\n- 2. Öğrenciler Neden C Seçeneğine Ulaşılabileceğini Düşünebilir? 2000'lerin başındaki sosyal medya platformları internet altyapısı üzerinde çalıştığı için, metni bütüncül okuyan bir öğrenci sosyal medyadaki içerik üretimini internetin yaygınlaşmasının doğal bir uzantısı/sonucu olarak yorumlayabilir.\n- 3. Sınıf İçi Değerlendirme Yaklaşımı: Cevap anahtarında C seçeneği (4. paragraftaki 1980-90'lar internet etkileşimi ile 2000'ler sosyal medya içerik üretimi ayrımına dayanarak) esas alınmaktadır. Ancak soru kökündeki 'Dijitalleşmenin iletişim üzerindeki etkisi' sınırına dikkat ederek 3. paragraftaki radyo-televizyon bilgisini dijitalleşme kapsamı dışında değerlendirip D seçeneğine yönelen öğrencinin analitik okuma becerisi de öğretmen tarafından takdir edilmeli; sorunun metin genelindeki tüm iletişim teknolojilerini kapsayacak şekilde kurgulandığı açıklanmalıdır.",
+          "source_locator": "basılı s.82-83 / PDF s.83-84 — 1. Tema Ölçme ve Değerlendirme soru 10"
         },
         "content": null
       },
@@ -16344,7 +16657,10 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0,
+                  1
+                ]
               }
             ],
             "answer_text": {
@@ -16354,7 +16670,10 @@
           }
         },
         "reveal_order": [
-          "answer"
+          "guidance",
+          "answer",
+          "evidence",
+          "explanation"
         ],
         "display_prompt": "Toplumun iletişim alışkanlıklarını değiştiren unsurları metinden örneklerle açıklayınız.",
         "display_prompt_mode": "VERIFIED_SUMMARY",
@@ -16376,15 +16695,21 @@
           "printed_page": 83,
           "question_no": "11",
           "prompt_summary": "Toplumun iletişim alışkanlıklarının değişmesinde etkili olan unsurlar",
-          "answer": "Metin, iletişim alışkanlıklarındaki değişimi matbaadan sosyal medya platformlarına uzanan gelişmelerle açıklar.",
-          "source_locator": "basılı s.82-83 / PDF s.83-84 — 1. Tema Ölçme ve Değerlendirme soru 11",
+          "answer": "Metin, toplumun iletişim alışkanlıklarındaki değişimi teknolojik ilerlemeler ve dijitalleşme çerçevesinde; matbaadan sosyal medya platformlarına uzanan beş temel gelişmeyle açıklar.",
           "answer_sections": {
-            "1. Matbaanın İcadı ve Yazılı Bilginin Yaygınlaşması": "Matbaa, yazılı bilginin daha geniş kitlelere ulaşmasını sağlamıştır.",
+            "1. Matbaanın İcadı ve Yazılı Bilginin Yaygınlaşması": "Matbaa, başlangıçta sınırlı olan yazılı bilginin çoğaltılarak daha geniş kitlelere ulaşmasını sağlamıştır.",
             "2. Telgraf ve Telefon ile Mesafe Engelinin Aşılması": "19. yüzyılın sonlarına doğru telgraf ve telefon, mesafeler arasındaki bariyerleri büyük ölçüde ortadan kaldırmış ve insanları birbirine daha hızlı bağlamıştır.",
             "3. Radyo ve Televizyon ile Kitle İletişiminin Güçlenmesi": "20. yüzyılın ortalarında kitlesel iletişim araçları olarak önem kazanmış, özellikle 2. Dünya Savaşı sonrasında toplumların kültürel yapısını ve politik gündemlerini şekillendirmede büyük etki göstermiştir. Ancak iletişim hâlâ büyük ölçüde tek yönlüdür.",
-            "4. İnternet ve Dijital Ağlar ile Etkileşim": "1980'ler ve 1990'larda internetin yaygınlaşmasıyla insanlar e-posta, anlık mesajlaşma ve forumlar aracılığıyla etkileşim kurmaya başlamıştır.",
+            "4. İnternet ve Dijital Ağlar ile Etkileşim": "1980'ler ve 1990'larda internetin yaygınlaşmasıyla insanlar bilgisayar ağları üzerinden e-posta, anlık mesajlaşma ve forumlar aracılığıyla karşılıklı etkileşim kurmaya başlamıştır.",
             "5. Sosyal Medya Platformları ve İçerik Üreticiliği": "2000'lerin başında sosyal medya platformlarının ortaya çıkmasıyla bireylerin kendi içeriklerini üretme ve paylaşma yeteneği artmış; insanlar yalnız bilgi tüketen değil, bilgi üreten konuma gelmiştir."
-          }
+          },
+          "evidence_quotes": [
+            "Teknolojik ilerlemelerle birlikte bu alan, özellikle son yüzyılda hızlı bir dönüşüm yaşamıştır.",
+            "2000’lerin başında sosyal medya platformlarının ortaya çıkmasıyla, bireylerin kendi içeriklerini üretme ve paylaşma yeteneği artmıştır."
+          ],
+          "explanation": "Metin, iletişim alışkanlıklarının değişimini teknolojik araçların gelişimine paralel olarak tek yönlü kitlesel iletişimden çift yönlü içerik üreticiliğine geçiş süreciyle açıklamaktadır.",
+          "guidance": "Öğrencilerin yalnız iletişim araçlarını sıralamakla yetinmeyip her aracın toplumsal iletişim alışkanlığında neyi değiştirdiğini metinden örneklerle yazmalarını isteyin.",
+          "source_locator": "basılı s.82-83 / PDF s.83-84 — 1. Tema Ölçme ve Değerlendirme soru 11"
         },
         "content": null
       },
@@ -16406,7 +16731,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  0
+                ]
               },
               {
                 "id": "2. Kitle iletişim araçlarından radyo ve televizyon 20. yüzyılda toplum hayatında yerini almıştır.",
@@ -16426,7 +16753,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  2
+                ]
               },
               {
                 "id": "4. Sosyal medya platformları sadece iletişim ve etkileşim ihtiyacını gidermek amacıyla kullanılmıştır.",
@@ -16456,7 +16785,9 @@
                 "array_indices": [],
                 "evidence_sections": [],
                 "inline_quote_indexes": [],
-                "quote_indexes": []
+                "quote_indexes": [
+                  1
+                ]
               },
               {
                 "id": "7. 2. Dünya Savaşı sonrasında toplumsal iletişim uzun süre kesintiye uğramıştır.",
@@ -16488,6 +16819,7 @@
         "reveal_order": [
           "guidance",
           "answer",
+          "evidence",
           "explanation"
         ],
         "display_prompt": "Sekiz cümleyi metne göre Evet, Hayır veya Bilgi yok biçiminde değerlendiriniz.",
@@ -16510,8 +16842,7 @@
           "printed_page": 83,
           "question_no": "12",
           "prompt_summary": "Sekiz cümleyi metne göre Evet, Hayır veya Bilgi yok olarak değerlendirme",
-          "answer": "Kitaptaki sekiz cümlenin metne göre sıralı değerlendirmesi: Evet, Evet, Hayır, Bilgi yok, Bilgi yok, Evet, Hayır, Bilgi yok.",
-          "source_locator": "basılı s.83 / PDF s.84 — 1. Tema Ölçme ve Değerlendirme soru 12",
+          "answer": "Kitaptaki sekiz cümlenin metne göre sıralı değerlendirmesi: 1. Evet, 2. Evet, 3. Hayır, 4. Bilgi yok, 5. Bilgi yok, 6. Evet, 7. Hayır, 8. Bilgi yok.",
           "answer_sections": {
             "1. Telgraf ve telefon, insanlar arasındaki mesafeleri büyük ölçüde ortadan kaldırmıştır.": "Evet — Metinde telgraf ve telefonun “mesafeler arasındaki bariyerleri büyük ölçüde ortadan kaldırdığı” açıkça belirtilir.",
             "2. Kitle iletişim araçlarından radyo ve televizyon 20. yüzyılda toplum hayatında yerini almıştır.": "Evet — Metin, 20. yüzyılın ortalarında televizyon ve radyonun kitlesel iletişim araçları olarak önem kazandığını söyler.",
@@ -16522,8 +16853,14 @@
             "7. 2. Dünya Savaşı sonrasında toplumsal iletişim uzun süre kesintiye uğramıştır.": "Hayır — Metin tersine, bu dönemde radyo ve televizyonun toplumların kültürel yapısını ve politik gündemini şekillendirmede büyük etki gösterdiğini belirtir.",
             "8. Dijitalleşmenin hayatın her alanına yansıması teknolojik araçların kullanım sıklığını artırmıştır.": "Bilgi yok — Metin dijitalleşmeyle iletişimin yeni boyutlar kazandığını anlatır; “hayatın her alanına yansıma” ve araçların kullanım sıklığının artması konusunda açık bilgi vermez."
           },
+          "evidence_quotes": [
+            "19. yüzyılın sonlarına doğru ise telgraf ve telefon, mesafeler arasındaki bariyerleri büyük ölçüde ortadan kaldırmış",
+            "1980’ler ve 1990’larla birlikte internetin yaygınlaşması, iletişimde köklü bir değişimi beraberinde getirmiştir.",
+            "2000’lerin başında sosyal medya platformlarının ortaya çıkmasıyla, bireylerin kendi içeriklerini üretme ve paylaşma yeteneği artmıştır."
+          ],
+          "explanation": "Sekiz cümlenin metni basılı s.83 / PDF s.84 üzerinden doğrulanmış ve her değerlendirme doğrudan ilgili cümlenin metindeki karşılığına bağlanmıştır.",
           "guidance": "Öğrenciye üç seçeneğin ölçütünü açık tutun: “Evet” için cümle metinde doğrudan desteklenmeli, “Hayır” için metindeki bilgi cümleyle çelişmeli, “Bilgi yok” için metin o ayrıntı hakkında yeterli bilgi vermemelidir. Özellikle “sadece”, “uzun süre” ve “hayatın her alanı” gibi sınırlayıcı/genelleyici ifadelere dikkat ettirin.",
-          "explanation": "Sekiz cümlenin metni basılı s.83 / PDF s.84 üzerinden yeniden doğrulanmış ve her değerlendirme ilgili cümlenin kendisine bağlanmıştır."
+          "source_locator": "basılı s.82-83 / PDF s.83-84 — 1. Tema Ölçme ve Değerlendirme soru 12"
         },
         "content": null
       },
@@ -16620,9 +16957,9 @@
           "web": {
             "units": [
               {
-                "id": "Doğrudan görülen görsel unsurlar",
+                "id": "Doğrudan Görülen Görsel Unsurlar",
                 "section_keys": [
-                  "Doğrudan görülen görsel unsurlar"
+                  "Doğrudan Görülen Görsel Unsurlar"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16630,9 +16967,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Gözlemden yoruma",
+                "id": "Şiirin Sözlü ve İmgesel İçeriği (Dilsel Mod)",
                 "section_keys": [
-                  "Gözlemden yoruma"
+                  "Şiirin Sözlü ve İmgesel İçeriği (Dilsel Mod)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16640,9 +16977,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Şiirin sözlü içeriği",
+                "id": "İşitsel Unsurlar (Şairin Kendi Sesinden Okunuşu)",
                 "section_keys": [
-                  "Şiirin sözlü içeriği"
+                  "İşitsel Unsurlar (Şairin Kendi Sesinden Okunuşu)"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16650,19 +16987,9 @@
                 "quote_indexes": []
               },
               {
-                "id": "Ses ve başlık",
+                "id": "Gözlemden Yoruma ve Çok Modlu İlişki",
                 "section_keys": [
-                  "Ses ve başlık"
-                ],
-                "array_indices": [],
-                "evidence_sections": [],
-                "inline_quote_indexes": [],
-                "quote_indexes": []
-              },
-              {
-                "id": "Çok modlu ilişki",
-                "section_keys": [
-                  "Çok modlu ilişki"
+                  "Gözlemden Yoruma ve Çok Modlu İlişki"
                 ],
                 "array_indices": [],
                 "evidence_sections": [],
@@ -16701,21 +17028,21 @@
           "printed_page": 83,
           "question_no": "13",
           "prompt_summary": "Olvido çok modlu metninde şiirin duygusunu aktaran unsurlar",
-          "answer": "Olvido'nun çok modlu sunumunda şiirin duygusu söz, ses ve görüntüyle kurulur. Şiirde akşamüstü, yalnızlık, lavanta kokan keder, pişmanlık, doğulan eski ev, susmuş ninniler ve “yitikler, mağluplar, mahzunlar” imgeleri hüzün, hatırlama, özlem ve kayıp duygularını öne çıkarır. Kullanıcının doğruladığı üzere şiir Ahmet Muhip Dıranas'ın kendi sesinden okunur. Görseldeki eski yazı/kitap görüntüleri, sisli deniz ufku, gün batımı, kuş ve gece ışıkları da şiirin geçmişe ve yitirilmiş olana dönük havasıyla ilişkilendirilebilir. Bu unsurların oluşturduğu çağrışımlar izleyicinin gerekçeli yorumudur.",
-          "guidance": "Önce şiirdeki duygu ve imgeleri belirletin: akşamüstü, yalnızlık, keder, pişmanlık, eski ev ve yitikler. Ardından bunları görüntülerdeki yazı/kitap, deniz, gün batımı ve gece ışıklarıyla ilişkilendirip her eşleştirmeyi gerekçelendirtin. Şiir ve Dıranas'a ait ses bilgisi kullanıcı dökümü olarak p.83 sayfa JSON'unda yer alır; basılı s.83'te şiirin dizeleri bulunmaz.",
-          "explanation": "Kullanıcının sağladığı şiir dökümü ve Dıranas ses atfı, sorunun çok modlu metin bağlamına işlendi. Yanıt şiirdeki yalnızlık, keder, pişmanlık ve yitiklik imgelerini görsel montajla birlikte ele alır; duygu eşleştirmeleri gerekçeli yorum olarak sunulur.",
-          "source_locator": "basılı s.83 / PDF s.84 — Olvido videolu soru; şiir dökümü ve Ahmet Muhip Dıranas ses atfı: kullanıcı tarafından sağlanan p.83 sayfa JSON kaydı; QR-EBA-2952F505E3A7 / resourceId 2952f505e3a7923fe38ce31c2bd92871; MP4: OGM2025TDE118312.mp4",
+          "answer": "Olvido'nun çok modlu sunumunda şiirin duygusu söz, ses ve görüntüyle kurulur. Şiirde akşamüstü, yalnızlık, lavanta kokan keder, pişmanlık, doğulan eski ev, susmuş ninniler ve “yitikler, mağluplar, mahzunlar” imgeleri hüzün, hatırlama, özlem ve kayıp duygularını öne çıkarır. Şiir bizzat şairi Ahmet Muhip Dıranas'ın kendi sesinden okunur. Görseldeki eski mikrofon ve siyah-beyaz el yazması/kitap görüntüleri, mum ışığı, sisli deniz ufku, güvercin, gün batımı ve gece ışıkları da şiirin geçmişe ve yitirilmiş olana dönük havasıyla ilişkilendirilebilir. Bu unsurların oluşturduğu çağrışımlar izleyicinin gerekçeli yorumudur.",
           "answer_sections": {
-            "Doğrudan görülen görsel unsurlar": [
-              "Eski mikrofon ve siyah-beyaz yazma görüntüleri: dönem, geçmiş ve hatıra çağrışımı oluşturabilir.",
-              "Açık kitap, kalem, mürekkep ve mum ışığı: yazının ve anıların korunması izleğiyle ilişkilendirilebilir.",
-              "Sisli deniz ufku, güvercin, gün batımı ve gece ışıkları: sükûnet, uzaklık, hüzün veya özlem duygularıyla yorumlanabilir."
+            "Doğrudan Görülen Görsel Unsurlar": [
+              "Açılışta “ŞAİRİN SESİNDEN”, “Ahmet Muhip Dıranas” ve “Olvido” ekran yazıları görünür.",
+              "Eski mikrofon ve siyah-beyaz yazma görüntüleri: Dönem, geçmiş ve hatıra çağrışımı oluşturabilir.",
+              "Açık kitap, kalem, mürekkep ve mum ışığı: Yazının ve anıların korunması izleğiyle ilişkilendirilebilir.",
+              "Sisli deniz ufku, güvercin, gün batımı ve gece ışıkları: Sükûnet, uzaklık, hüzün veya özlem duygularıyla yorumlanabilir."
             ],
-            "Gözlemden yoruma": "Görselde gün batımının bulunması bir gözlemdir; bunun yalnızlık veya özlem hissettirmesi gerekçelendirilebilecek kişisel yorumdur. Farklı çağrışımlar mümkündür.",
-            "Şiirin sözlü içeriği": "Kullanıcı dökümündeki şiir; akşamüstü, yalnızlık, lavanta kokan keder, pişmanlık, eski ev, susmuş ninniler ve yitiklik imgeleriyle hüzün ve özlem duygusu kurar.",
-            "Ses ve başlık": "Şiir Ahmet Muhip Dıranas'ın kendi sesinden okunur; açılışta “Şairin Sesinden”, “Ahmet Muhip Dıranas” ve “Olvido” yazıları görünür.",
-            "Çok modlu ilişki": "Şiir metnindeki geçmiş, yalnızlık ve kayıp imgeleri; eski yazı/kitap görüntüleri, sisli ufuk, gün batımı ve gece ışıklarıyla ilişkilendirilebilir. Eşleştirme gerekçelendirilen bir yorumdur."
-          }
+            "Şiirin Sözlü ve İmgesel İçeriği (Dilsel Mod)": "Şiirde 'Hoyrattır bu akşamüstüler daima' nakaratı, 'Bir renk çığlığı içinde bahçemizden' (görsel/işitsel imge), 'Lavanta çiçeği kokan kederleri' (kokusal/duygusal imge), 'Yolunu gözlüyor lamba ve merdiven' (kişileştirme), 'Susmuş ninnilerle gıcırdayan beşik' ve 'Ve cümle yitikler, mağluplar, mahzunlar...' dizeleriyle akşamüstü yalnızlığı, pişmanlık, çocukluk evi özlemi ve hüzün duygusu kurulur.",
+            "İşitsel Unsurlar (Şairin Kendi Sesinden Okunuşu)": "Şiirin bizzat şairi Ahmet Muhip Dıranas tarafından tok, dingin ve içli bir ses tonuyla okunması; nakarat dizesindeki vurgusu, duraklamaları ve dizelerin sonundaki alçalan hüzünlü tonlaması şiirdeki melankoliyi doğrudan dinleyiciye aktarır.",
+            "Gözlemden Yoruma ve Çok Modlu İlişki": "Görselde gün batımının, mum ışığının veya sisli denizin bulunması bir gözlemdir; bunun yalnızlık veya özlem hissettirmesi gerekçelendirilebilecek kişisel yorumdur. Şiir metnindeki geçmiş, yalnızlık ve kayıp imgeleri; eski yazı/kitap görüntüleri, sisli ufuk, gün batımı ve gece ışıklarıyla bütünleşerek çok modlu etkiyi oluşturur."
+          },
+          "explanation": "Soru, çok modlu bir metinde (söz + ses + görüntü) her bir modun şiirin ana duygusunu nasıl beslediğini çözümlemeyi amaçlar; yazılı metni okumak ile şairin kendi sesinden ve görsel atmosfer eşliğinde dinlemek/izlemek arasındaki estetik etkiyi ortaya koyar.",
+          "guidance": "Önce şiirdeki duygu ve imgeleri belirletin: akşamüstü, yalnızlık, keder, pişmanlık, eski ev ve yitikler. Ardından bunları görüntülerdeki yazı/kitap, mum ışığı, deniz, gün batımı ve gece ışıklarıyla ilişkilendirip her eşleştirmeyi gerekçelendirtin; doğrudan gözlem ile kişisel yorumu ayırt etmelerini sağlayın.",
+          "source_locator": "basılı s.83 / PDF s.84 — Olvido videolu soru; QR-EBA-2952F505E3A7 / resourceId 2952f505e3a7923fe38ce31c2bd92871; MP4: OGM2025TDE118312.mp4"
         },
         "content": null
       }
